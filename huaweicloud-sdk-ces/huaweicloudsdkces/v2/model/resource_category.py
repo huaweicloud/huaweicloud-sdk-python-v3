@@ -31,7 +31,7 @@ class ResourceCategory:
 
         The model defined in huaweicloud sdk
 
-        :param namespace: 查询服务的命名空间，各服务命名空间请参考[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)
+        :param namespace: 查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”
         :type namespace: str
         :param dimension_names: 资源的维度信息，多个维度通过字母序排序后逗号拼接
         :type dimension_names: list[str]
@@ -50,7 +50,7 @@ class ResourceCategory:
     def namespace(self):
         r"""Gets the namespace of this ResourceCategory.
 
-        查询服务的命名空间，各服务命名空间请参考[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)
+        查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”
 
         :return: The namespace of this ResourceCategory.
         :rtype: str
@@ -61,7 +61,7 @@ class ResourceCategory:
     def namespace(self, namespace):
         r"""Sets the namespace of this ResourceCategory.
 
-        查询服务的命名空间，各服务命名空间请参考[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)
+        查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”
 
         :param namespace: The namespace of this ResourceCategory.
         :type namespace: str

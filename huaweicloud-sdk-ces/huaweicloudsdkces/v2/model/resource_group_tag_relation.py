@@ -18,32 +18,39 @@ class ResourceGroupTagRelation:
 
     openapi_types = {
         'key': 'str',
+        'operator': 'str',
         'value': 'str'
     }
 
     attribute_map = {
         'key': 'key',
+        'operator': 'operator',
         'value': 'value'
     }
 
-    def __init__(self, key=None, value=None):
+    def __init__(self, key=None, operator=None, value=None):
         r"""ResourceGroupTagRelation
 
         The model defined in huaweicloud sdk
 
-        :param key: 键
+        :param key: TMS标签键规范。
         :type key: str
-        :param value: 值
+        :param operator: tag操作符，含义是标签key与value的关系。   include表示包含   prefix表示前缀   suffix表示后缀   notInclude表示不包含   equal表示相等   当operator为equal，value为空字符串时表示为全部   all表示全部 
+        :type operator: str
+        :param value: TMS标签值规范。
         :type value: str
         """
         
         
 
         self._key = None
+        self._operator = None
         self._value = None
         self.discriminator = None
 
         self.key = key
+        if operator is not None:
+            self.operator = operator
         if value is not None:
             self.value = value
 
@@ -51,7 +58,7 @@ class ResourceGroupTagRelation:
     def key(self):
         r"""Gets the key of this ResourceGroupTagRelation.
 
-        键
+        TMS标签键规范。
 
         :return: The key of this ResourceGroupTagRelation.
         :rtype: str
@@ -62,7 +69,7 @@ class ResourceGroupTagRelation:
     def key(self, key):
         r"""Sets the key of this ResourceGroupTagRelation.
 
-        键
+        TMS标签键规范。
 
         :param key: The key of this ResourceGroupTagRelation.
         :type key: str
@@ -70,10 +77,32 @@ class ResourceGroupTagRelation:
         self._key = key
 
     @property
+    def operator(self):
+        r"""Gets the operator of this ResourceGroupTagRelation.
+
+        tag操作符，含义是标签key与value的关系。   include表示包含   prefix表示前缀   suffix表示后缀   notInclude表示不包含   equal表示相等   当operator为equal，value为空字符串时表示为全部   all表示全部 
+
+        :return: The operator of this ResourceGroupTagRelation.
+        :rtype: str
+        """
+        return self._operator
+
+    @operator.setter
+    def operator(self, operator):
+        r"""Sets the operator of this ResourceGroupTagRelation.
+
+        tag操作符，含义是标签key与value的关系。   include表示包含   prefix表示前缀   suffix表示后缀   notInclude表示不包含   equal表示相等   当operator为equal，value为空字符串时表示为全部   all表示全部 
+
+        :param operator: The operator of this ResourceGroupTagRelation.
+        :type operator: str
+        """
+        self._operator = operator
+
+    @property
     def value(self):
         r"""Gets the value of this ResourceGroupTagRelation.
 
-        值
+        TMS标签值规范。
 
         :return: The value of this ResourceGroupTagRelation.
         :rtype: str
@@ -84,7 +113,7 @@ class ResourceGroupTagRelation:
     def value(self, value):
         r"""Sets the value of this ResourceGroupTagRelation.
 
-        值
+        TMS标签值规范。
 
         :param value: The value of this ResourceGroupTagRelation.
         :type value: str

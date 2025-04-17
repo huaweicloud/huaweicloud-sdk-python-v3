@@ -18,29 +18,36 @@ class ListRegionsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'value': 'list[Region]'
+        'value': 'list[Region]',
+        'page_info': 'PageInfo'
     }
 
     attribute_map = {
-        'value': 'value'
+        'value': 'value',
+        'page_info': 'page_info'
     }
 
-    def __init__(self, value=None):
+    def __init__(self, value=None, page_info=None):
         r"""ListRegionsResponse
 
         The model defined in huaweicloud sdk
 
         :param value: 区域信息项列表
         :type value: list[:class:`huaweicloudsdkconfig.v1.Region`]
+        :param page_info: 
+        :type page_info: :class:`huaweicloudsdkconfig.v1.PageInfo`
         """
         
         super(ListRegionsResponse, self).__init__()
 
         self._value = None
+        self._page_info = None
         self.discriminator = None
 
         if value is not None:
             self.value = value
+        if page_info is not None:
+            self.page_info = page_info
 
     @property
     def value(self):
@@ -63,6 +70,24 @@ class ListRegionsResponse(SdkResponse):
         :type value: list[:class:`huaweicloudsdkconfig.v1.Region`]
         """
         self._value = value
+
+    @property
+    def page_info(self):
+        r"""Gets the page_info of this ListRegionsResponse.
+
+        :return: The page_info of this ListRegionsResponse.
+        :rtype: :class:`huaweicloudsdkconfig.v1.PageInfo`
+        """
+        return self._page_info
+
+    @page_info.setter
+    def page_info(self, page_info):
+        r"""Sets the page_info of this ListRegionsResponse.
+
+        :param page_info: The page_info of this ListRegionsResponse.
+        :type page_info: :class:`huaweicloudsdkconfig.v1.PageInfo`
+        """
+        self._page_info = page_info
 
     def to_dict(self):
         """Returns the model properties as a dict"""

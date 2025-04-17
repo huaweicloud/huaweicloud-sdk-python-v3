@@ -262,7 +262,7 @@ class CocAsyncClient(Client):
     def _create_report_custom_event_http_info(self, request):
         http_info = {
             "method": "POST",
-            "resource_path": "/event/huawei/custom/{integration_key}",
+            "resource_path": "/v1/event/huawei/custom/{integration_key}",
             "request_type": request.__class__.__name__,
             "response_type": "CreateReportCustomEventResponse"
             }

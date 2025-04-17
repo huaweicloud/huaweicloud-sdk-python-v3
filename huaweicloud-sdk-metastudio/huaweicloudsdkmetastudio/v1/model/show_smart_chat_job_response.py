@@ -37,6 +37,7 @@ class ShowSmartChatJobResponse(SdkResponse):
         'chat_access_rest_address': 'str',
         'is_transparent': 'bool',
         'default_language': 'str',
+        'client_id': 'str',
         'x_request_id': 'str'
     }
 
@@ -60,10 +61,11 @@ class ShowSmartChatJobResponse(SdkResponse):
         'chat_access_rest_address': 'chat_access_rest_address',
         'is_transparent': 'is_transparent',
         'default_language': 'default_language',
+        'client_id': 'client_id',
         'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, job_id=None, state=None, duration=None, start_time=None, end_time=None, error_info=None, create_time=None, lastupdate_time=None, rtc_room_info=None, chat_subtitle_config=None, video_config=None, voice_config_list=None, chat_state=None, language=None, chat_video_type=None, chat_access_address=None, chat_access_rest_address=None, is_transparent=None, default_language=None, x_request_id=None):
+    def __init__(self, job_id=None, state=None, duration=None, start_time=None, end_time=None, error_info=None, create_time=None, lastupdate_time=None, rtc_room_info=None, chat_subtitle_config=None, video_config=None, voice_config_list=None, chat_state=None, language=None, chat_video_type=None, chat_access_address=None, chat_access_rest_address=None, is_transparent=None, default_language=None, client_id=None, x_request_id=None):
         r"""ShowSmartChatJobResponse
 
         The model defined in huaweicloud sdk
@@ -104,8 +106,10 @@ class ShowSmartChatJobResponse(SdkResponse):
         :type chat_access_rest_address: str
         :param is_transparent: 是否透明背景
         :type is_transparent: bool
-        :param default_language: 默认语言，智能交互接口使用。默认值CN。 * CN：中文。 * EN：英文。
+        :param default_language: 默认语言，智能交互接口使用。默认值CN。 * CN：中文。 * EN：英文。 * ESP：西班牙语（仅海外站点支持） * por：葡萄牙语（仅海外站点支持） * Arabic：阿拉伯语（仅海外站点支持） * Thai：泰语（仅海外站点支持）
         :type default_language: str
+        :param client_id: clientId
+        :type client_id: str
         :param x_request_id: 
         :type x_request_id: str
         """
@@ -131,6 +135,7 @@ class ShowSmartChatJobResponse(SdkResponse):
         self._chat_access_rest_address = None
         self._is_transparent = None
         self._default_language = None
+        self._client_id = None
         self._x_request_id = None
         self.discriminator = None
 
@@ -172,6 +177,8 @@ class ShowSmartChatJobResponse(SdkResponse):
             self.is_transparent = is_transparent
         if default_language is not None:
             self.default_language = default_language
+        if client_id is not None:
+            self.client_id = client_id
         if x_request_id is not None:
             self.x_request_id = x_request_id
 
@@ -555,7 +562,7 @@ class ShowSmartChatJobResponse(SdkResponse):
     def default_language(self):
         r"""Gets the default_language of this ShowSmartChatJobResponse.
 
-        默认语言，智能交互接口使用。默认值CN。 * CN：中文。 * EN：英文。
+        默认语言，智能交互接口使用。默认值CN。 * CN：中文。 * EN：英文。 * ESP：西班牙语（仅海外站点支持） * por：葡萄牙语（仅海外站点支持） * Arabic：阿拉伯语（仅海外站点支持） * Thai：泰语（仅海外站点支持）
 
         :return: The default_language of this ShowSmartChatJobResponse.
         :rtype: str
@@ -566,12 +573,34 @@ class ShowSmartChatJobResponse(SdkResponse):
     def default_language(self, default_language):
         r"""Sets the default_language of this ShowSmartChatJobResponse.
 
-        默认语言，智能交互接口使用。默认值CN。 * CN：中文。 * EN：英文。
+        默认语言，智能交互接口使用。默认值CN。 * CN：中文。 * EN：英文。 * ESP：西班牙语（仅海外站点支持） * por：葡萄牙语（仅海外站点支持） * Arabic：阿拉伯语（仅海外站点支持） * Thai：泰语（仅海外站点支持）
 
         :param default_language: The default_language of this ShowSmartChatJobResponse.
         :type default_language: str
         """
         self._default_language = default_language
+
+    @property
+    def client_id(self):
+        r"""Gets the client_id of this ShowSmartChatJobResponse.
+
+        clientId
+
+        :return: The client_id of this ShowSmartChatJobResponse.
+        :rtype: str
+        """
+        return self._client_id
+
+    @client_id.setter
+    def client_id(self, client_id):
+        r"""Sets the client_id of this ShowSmartChatJobResponse.
+
+        clientId
+
+        :param client_id: The client_id of this ShowSmartChatJobResponse.
+        :type client_id: str
+        """
+        self._client_id = client_id
 
     @property
     def x_request_id(self):

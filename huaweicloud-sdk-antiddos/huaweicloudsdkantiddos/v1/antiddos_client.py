@@ -161,69 +161,6 @@ class AntiDDoSClient(Client):
 
         return http_info
 
-    def show_alert_config(self, request):
-        r"""查询告警配置信息
-
-        查询用户配置信息，用户可以通过此接口查询是否接收某类告警，同时可以配置是手机短信还是电子邮件接收告警信息。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for ShowAlertConfig
-        :type request: :class:`huaweicloudsdkantiddos.v1.ShowAlertConfigRequest`
-        :rtype: :class:`huaweicloudsdkantiddos.v1.ShowAlertConfigResponse`
-        """
-        http_info = self._show_alert_config_http_info(request)
-        return self._call_api(**http_info)
-
-    def show_alert_config_invoker(self, request):
-        http_info = self._show_alert_config_http_info(request)
-        return SyncInvoker(self, http_info)
-
-    @classmethod
-    def _show_alert_config_http_info(cls, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v2/{project_id}/warnalert/alertconfig/query",
-            "request_type": request.__class__.__name__,
-            "response_type": "ShowAlertConfigResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
     def show_default_config(self, request):
         r"""查询Ani-DDoS默认防护策略
 
@@ -287,31 +224,31 @@ class AntiDDoSClient(Client):
 
         return http_info
 
-    def update_alert_config(self, request):
-        r"""更新告警配置信息
+    def enable_defense_policy(self, request):
+        r"""开通DDoS服务
 
-        更新用户配置信息，用户可以通过此接口更新是否接收某类告警，同时可以配置是手机短信还是电子邮件接收告警信息。
+        开通DDoS服务
         
         Please refer to HUAWEI cloud API Explorer for details.
 
-        :param request: Request instance for UpdateAlertConfig
-        :type request: :class:`huaweicloudsdkantiddos.v1.UpdateAlertConfigRequest`
-        :rtype: :class:`huaweicloudsdkantiddos.v1.UpdateAlertConfigResponse`
+        :param request: Request instance for EnableDefensePolicy
+        :type request: :class:`huaweicloudsdkantiddos.v1.EnableDefensePolicyRequest`
+        :rtype: :class:`huaweicloudsdkantiddos.v1.EnableDefensePolicyResponse`
         """
-        http_info = self._update_alert_config_http_info(request)
+        http_info = self._enable_defense_policy_http_info(request)
         return self._call_api(**http_info)
 
-    def update_alert_config_invoker(self, request):
-        http_info = self._update_alert_config_http_info(request)
+    def enable_defense_policy_invoker(self, request):
+        http_info = self._enable_defense_policy_http_info(request)
         return SyncInvoker(self, http_info)
 
     @classmethod
-    def _update_alert_config_http_info(cls, request):
+    def _enable_defense_policy_http_info(cls, request):
         http_info = {
             "method": "POST",
-            "resource_path": "/v2/{project_id}/warnalert/alertconfig/update",
+            "resource_path": "/v1/{project_id}/antiddos/{floating_ip_id}",
             "request_type": request.__class__.__name__,
-            "response_type": "UpdateAlertConfigResponse"
+            "response_type": "EnableDefensePolicyResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -321,6 +258,8 @@ class AntiDDoSClient(Client):
         collection_formats = {}
 
         path_params = {}
+        if 'floating_ip_id' in local_var_params:
+            path_params['floating_ip_id'] = local_var_params['floating_ip_id']
 
         query_params = []
 
@@ -563,31 +502,31 @@ class AntiDDoSClient(Client):
 
         return http_info
 
-    def list_new_configs(self, request):
-        r"""查询Anti-DDoS配置可选范围
+    def list_quota(self, request):
+        r"""查询配额
 
-        查询系统支持的Anti-DDoS防护策略配置的可选范围，用户根据范围列表选择适合自已业务的防护策略进行Anti-DDoS流量清洗。
+        查询配额
         
         Please refer to HUAWEI cloud API Explorer for details.
 
-        :param request: Request instance for ListNewConfigs
-        :type request: :class:`huaweicloudsdkantiddos.v1.ListNewConfigsRequest`
-        :rtype: :class:`huaweicloudsdkantiddos.v1.ListNewConfigsResponse`
+        :param request: Request instance for ListQuota
+        :type request: :class:`huaweicloudsdkantiddos.v1.ListQuotaRequest`
+        :rtype: :class:`huaweicloudsdkantiddos.v1.ListQuotaResponse`
         """
-        http_info = self._list_new_configs_http_info(request)
+        http_info = self._list_quota_http_info(request)
         return self._call_api(**http_info)
 
-    def list_new_configs_invoker(self, request):
-        http_info = self._list_new_configs_http_info(request)
+    def list_quota_invoker(self, request):
+        http_info = self._list_quota_http_info(request)
         return SyncInvoker(self, http_info)
 
     @classmethod
-    def _list_new_configs_http_info(cls, request):
+    def _list_quota_http_info(cls, request):
         http_info = {
             "method": "GET",
-            "resource_path": "/v2/{project_id}/antiddos/query-config-list",
+            "resource_path": "/v1/{project_id}/antiddos/quotas",
             "request_type": request.__class__.__name__,
-            "response_type": "ListNewConfigsResponse"
+            "response_type": "ListQuotaResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -825,31 +764,31 @@ class AntiDDoSClient(Client):
 
         return http_info
 
-    def show_new_task_status(self, request):
-        r"""查询Anti-DDoS任务
+    def show_log_config(self, request):
+        r"""查询全量日志设置
 
-        用户查询指定的Anti-DDoS防护配置任务，得到任务当前执行的状态。
+        查询全量日志设置
         
         Please refer to HUAWEI cloud API Explorer for details.
 
-        :param request: Request instance for ShowNewTaskStatus
-        :type request: :class:`huaweicloudsdkantiddos.v1.ShowNewTaskStatusRequest`
-        :rtype: :class:`huaweicloudsdkantiddos.v1.ShowNewTaskStatusResponse`
+        :param request: Request instance for ShowLogConfig
+        :type request: :class:`huaweicloudsdkantiddos.v1.ShowLogConfigRequest`
+        :rtype: :class:`huaweicloudsdkantiddos.v1.ShowLogConfigResponse`
         """
-        http_info = self._show_new_task_status_http_info(request)
+        http_info = self._show_log_config_http_info(request)
         return self._call_api(**http_info)
 
-    def show_new_task_status_invoker(self, request):
-        http_info = self._show_new_task_status_http_info(request)
+    def show_log_config_invoker(self, request):
+        http_info = self._show_log_config_http_info(request)
         return SyncInvoker(self, http_info)
 
     @classmethod
-    def _show_new_task_status_http_info(cls, request):
+    def _show_log_config_http_info(cls, request):
         http_info = {
             "method": "GET",
-            "resource_path": "/v2/{project_id}/query-task-status",
+            "resource_path": "/v1/{project_id}/antiddos/lts-config",
             "request_type": request.__class__.__name__,
-            "response_type": "ShowNewTaskStatusResponse"
+            "response_type": "ShowLogConfigResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -861,8 +800,8 @@ class AntiDDoSClient(Client):
         path_params = {}
 
         query_params = []
-        if 'task_id' in local_var_params:
-            query_params.append(('task_id', local_var_params['task_id']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 
@@ -930,6 +869,73 @@ class AntiDDoSClient(Client):
         query_params = []
         if 'ip' in local_var_params:
             query_params.append(('ip', local_var_params['ip']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_log_config(self, request):
+        r"""更新用户全量日志设置
+
+        更新用户全量日志设置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateLogConfig
+        :type request: :class:`huaweicloudsdkantiddos.v1.UpdateLogConfigRequest`
+        :rtype: :class:`huaweicloudsdkantiddos.v1.UpdateLogConfigResponse`
+        """
+        http_info = self._update_log_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_log_config_invoker(self, request):
+        http_info = self._update_log_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_log_config_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/antiddos/lts-config",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateLogConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 

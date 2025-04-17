@@ -24,7 +24,8 @@ class ShowResourceGroupResponse(SdkResponse):
         'enterprise_project_id': 'str',
         'type': 'str',
         'association_ep_ids': 'list[str]',
-        'tags': 'list[ResourceGroupTagRelation]'
+        'tags': 'list[ResourceGroupTagRelation]',
+        'instances': 'list[Instance]'
     }
 
     attribute_map = {
@@ -34,10 +35,11 @@ class ShowResourceGroupResponse(SdkResponse):
         'enterprise_project_id': 'enterprise_project_id',
         'type': 'type',
         'association_ep_ids': 'association_ep_ids',
-        'tags': 'tags'
+        'tags': 'tags',
+        'instances': 'instances'
     }
 
-    def __init__(self, group_name=None, group_id=None, create_time=None, enterprise_project_id=None, type=None, association_ep_ids=None, tags=None):
+    def __init__(self, group_name=None, group_id=None, create_time=None, enterprise_project_id=None, type=None, association_ep_ids=None, tags=None, instances=None):
         r"""ShowResourceGroupResponse
 
         The model defined in huaweicloud sdk
@@ -56,6 +58,8 @@ class ShowResourceGroupResponse(SdkResponse):
         :type association_ep_ids: list[str]
         :param tags: 标签动态匹配时的关联标签,type为TAG时该字段不为空
         :type tags: list[:class:`huaweicloudsdkces.v2.ResourceGroupTagRelation`]
+        :param instances: 实例名称匹配参数
+        :type instances: list[:class:`huaweicloudsdkces.v2.Instance`]
         """
         
         super(ShowResourceGroupResponse, self).__init__()
@@ -67,6 +71,7 @@ class ShowResourceGroupResponse(SdkResponse):
         self._type = None
         self._association_ep_ids = None
         self._tags = None
+        self._instances = None
         self.discriminator = None
 
         if group_name is not None:
@@ -83,6 +88,8 @@ class ShowResourceGroupResponse(SdkResponse):
             self.association_ep_ids = association_ep_ids
         if tags is not None:
             self.tags = tags
+        if instances is not None:
+            self.instances = instances
 
     @property
     def group_name(self):
@@ -237,6 +244,28 @@ class ShowResourceGroupResponse(SdkResponse):
         :type tags: list[:class:`huaweicloudsdkces.v2.ResourceGroupTagRelation`]
         """
         self._tags = tags
+
+    @property
+    def instances(self):
+        r"""Gets the instances of this ShowResourceGroupResponse.
+
+        实例名称匹配参数
+
+        :return: The instances of this ShowResourceGroupResponse.
+        :rtype: list[:class:`huaweicloudsdkces.v2.Instance`]
+        """
+        return self._instances
+
+    @instances.setter
+    def instances(self, instances):
+        r"""Sets the instances of this ShowResourceGroupResponse.
+
+        实例名称匹配参数
+
+        :param instances: The instances of this ShowResourceGroupResponse.
+        :type instances: list[:class:`huaweicloudsdkces.v2.Instance`]
+        """
+        self._instances = instances
 
     def to_dict(self):
         """Returns the model properties as a dict"""

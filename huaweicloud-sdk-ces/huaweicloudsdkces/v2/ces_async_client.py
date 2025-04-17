@@ -956,7 +956,7 @@ class CesAsyncClient(Client):
         return http_info
 
     def create_alarm_rules_async(self, request):
-        r"""创建告警规则
+        r"""创建告警规则（推荐）
 
         创建告警规则
         
@@ -1283,7 +1283,7 @@ class CesAsyncClient(Client):
         return http_info
 
     def create_resource_group_async(self, request):
-        r"""创建资源分组
+        r"""创建资源分组（推荐）
 
         创建资源分组
         
@@ -1547,7 +1547,7 @@ class CesAsyncClient(Client):
     def list_agent_dimension_info_async(self, request):
         r"""查询主机监控维度指标信息
 
-        根据ECS/BMS资源ID查询磁盘、挂载点、进程、显卡、RAID控制器维度指标信息。
+        根据ECS/BMS资源ID查询磁盘、挂载点、进程、显卡、RAID控制器维度指标信息；维度NPU已经为原始值，不需要调用该接口进行额外查询获取指标信息
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1655,14 +1655,14 @@ class CesAsyncClient(Client):
         query_params = []
         if 'alarm_id' in local_var_params:
             query_params.append(('alarm_id', local_var_params['alarm_id']))
+            collection_formats['alarm_id'] = 'csv'
         if 'record_id' in local_var_params:
             query_params.append(('record_id', local_var_params['record_id']))
         if 'name' in local_var_params:
             query_params.append(('name', local_var_params['name']))
-        if 'alarm_type' in local_var_params:
-            query_params.append(('alarm_type', local_var_params['alarm_type']))
         if 'status' in local_var_params:
             query_params.append(('status', local_var_params['status']))
+            collection_formats['status'] = 'csv'
         if 'level' in local_var_params:
             query_params.append(('level', local_var_params['level']))
         if 'namespace' in local_var_params:
@@ -1673,6 +1673,12 @@ class CesAsyncClient(Client):
             query_params.append(('from', local_var_params['_from']))
         if 'to' in local_var_params:
             query_params.append(('to', local_var_params['to']))
+        if 'alarm_type' in local_var_params:
+            query_params.append(('alarm_type', local_var_params['alarm_type']))
+        if 'create_time_from' in local_var_params:
+            query_params.append(('create_time_from', local_var_params['create_time_from']))
+        if 'create_time_to' in local_var_params:
+            query_params.append(('create_time_to', local_var_params['create_time_to']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
@@ -1845,7 +1851,7 @@ class CesAsyncClient(Client):
         return http_info
 
     def list_alarm_rules_async(self, request):
-        r"""查询告警规则列表
+        r"""查询告警规则列表（推荐）
 
         查询告警规则列表
         
@@ -1890,6 +1896,10 @@ class CesAsyncClient(Client):
             query_params.append(('resource_id', local_var_params['resource_id']))
         if 'enterprise_project_id' in local_var_params:
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'product_name' in local_var_params:
+            query_params.append(('product_name', local_var_params['product_name']))
+        if 'resource_level' in local_var_params:
+            query_params.append(('resource_level', local_var_params['resource_level']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
@@ -2038,6 +2048,8 @@ class CesAsyncClient(Client):
             query_params.append(('template_type', local_var_params['template_type']))
         if 'template_name' in local_var_params:
             query_params.append(('template_name', local_var_params['template_name']))
+        if 'product_name' in local_var_params:
+            query_params.append(('product_name', local_var_params['product_name']))
 
         header_params = {}
 
@@ -2174,6 +2186,8 @@ class CesAsyncClient(Client):
             query_params.append(('dashboard_name', local_var_params['dashboard_name']))
         if 'dashboard_id' in local_var_params:
             query_params.append(('dashboard_id', local_var_params['dashboard_id']))
+        if 'dashboard_type' in local_var_params:
+            query_params.append(('dashboard_type', local_var_params['dashboard_type']))
 
         header_params = {}
 
@@ -2239,6 +2253,8 @@ class CesAsyncClient(Client):
             path_params['dashboard_id'] = local_var_params['dashboard_id']
 
         query_params = []
+        if 'group_id' in local_var_params:
+            query_params.append(('group_id', local_var_params['group_id']))
 
         header_params = {}
 
@@ -2375,6 +2391,10 @@ class CesAsyncClient(Client):
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
+        if 'sort_key' in local_var_params:
+            query_params.append(('sort_key', local_var_params['sort_key']))
+        if 'sort_dir' in local_var_params:
+            query_params.append(('sort_dir', local_var_params['sort_dir']))
 
         header_params = {}
 
@@ -2657,6 +2677,16 @@ class CesAsyncClient(Client):
             query_params.append(('status', local_var_params['status']))
         if 'dim_value' in local_var_params:
             query_params.append(('dim_value', local_var_params['dim_value']))
+        if 'tag' in local_var_params:
+            query_params.append(('tag', local_var_params['tag']))
+        if 'extend_relation_id' in local_var_params:
+            query_params.append(('extend_relation_id', local_var_params['extend_relation_id']))
+        if 'product_name' in local_var_params:
+            query_params.append(('product_name', local_var_params['product_name']))
+        if 'resource_name' in local_var_params:
+            query_params.append(('resource_name', local_var_params['resource_name']))
+        if 'event_status' in local_var_params:
+            query_params.append(('event_status', local_var_params['event_status']))
 
         header_params = {}
 

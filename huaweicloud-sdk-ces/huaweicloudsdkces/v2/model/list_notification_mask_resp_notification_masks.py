@@ -21,9 +21,16 @@ class ListNotificationMaskRespNotificationMasks:
         'mask_name': 'str',
         'relation_type': 'RelationType',
         'relation_id': 'str',
+        'resource_type': 'MaskResourceType',
+        'metric_names': 'list[str]',
+        'product_metrics': 'list[ProductMetric]',
+        'resource_level': 'str',
+        'product_name': 'str',
         'resources': 'list[ResourceCategory]',
         'mask_status': 'MaskStatus',
         'mask_type': 'MaskType',
+        'create_time': 'int',
+        'update_time': 'int',
         'start_date': 'date',
         'start_time': 'str',
         'end_date': 'date',
@@ -36,9 +43,16 @@ class ListNotificationMaskRespNotificationMasks:
         'mask_name': 'mask_name',
         'relation_type': 'relation_type',
         'relation_id': 'relation_id',
+        'resource_type': 'resource_type',
+        'metric_names': 'metric_names',
+        'product_metrics': 'product_metrics',
+        'resource_level': 'resource_level',
+        'product_name': 'product_name',
         'resources': 'resources',
         'mask_status': 'mask_status',
         'mask_type': 'mask_type',
+        'create_time': 'create_time',
+        'update_time': 'update_time',
         'start_date': 'start_date',
         'start_time': 'start_time',
         'end_date': 'end_date',
@@ -46,7 +60,7 @@ class ListNotificationMaskRespNotificationMasks:
         'policies': 'policies'
     }
 
-    def __init__(self, notification_mask_id=None, mask_name=None, relation_type=None, relation_id=None, resources=None, mask_status=None, mask_type=None, start_date=None, start_time=None, end_date=None, end_time=None, policies=None):
+    def __init__(self, notification_mask_id=None, mask_name=None, relation_type=None, relation_id=None, resource_type=None, metric_names=None, product_metrics=None, resource_level=None, product_name=None, resources=None, mask_status=None, mask_type=None, create_time=None, update_time=None, start_date=None, start_time=None, end_date=None, end_time=None, policies=None):
         r"""ListNotificationMaskRespNotificationMasks
 
         The model defined in huaweicloud sdk
@@ -59,12 +73,26 @@ class ListNotificationMaskRespNotificationMasks:
         :type relation_type: :class:`huaweicloudsdkces.v2.RelationType`
         :param relation_id: 关联编号
         :type relation_id: str
+        :param resource_type: 
+        :type resource_type: :class:`huaweicloudsdkces.v2.MaskResourceType`
+        :param metric_names: 关联指标名称，relation_type为RESOURCE时存在该字段
+        :type metric_names: list[str]
+        :param product_metrics: 按云产品维度屏蔽时的指标信息
+        :type product_metrics: list[:class:`huaweicloudsdkces.v2.ProductMetric`]
+        :param resource_level: dimension: 子维度,product: 云产品
+        :type resource_level: str
+        :param product_name: 资源为云产品时的云产品名称
+        :type product_name: str
         :param resources: 关联资源类型，relation_type为RESOURCE时存在该字段,只需要查询出资源的namespace+维度名即可
         :type resources: list[:class:`huaweicloudsdkces.v2.ResourceCategory`]
         :param mask_status: 
         :type mask_status: :class:`huaweicloudsdkces.v2.MaskStatus`
         :param mask_type: 
         :type mask_type: :class:`huaweicloudsdkces.v2.MaskType`
+        :param create_time: 告警屏蔽的创建时间，UNIX时间戳，单位毫秒。
+        :type create_time: int
+        :param update_time: 告警屏蔽的更新时间，UNIX时间戳，单位毫秒。
+        :type update_time: int
         :param start_date: 屏蔽起始日期，yyyy-MM-dd。
         :type start_date: date
         :param start_time: 屏蔽起始时间，HH:mm:ss。
@@ -83,9 +111,16 @@ class ListNotificationMaskRespNotificationMasks:
         self._mask_name = None
         self._relation_type = None
         self._relation_id = None
+        self._resource_type = None
+        self._metric_names = None
+        self._product_metrics = None
+        self._resource_level = None
+        self._product_name = None
         self._resources = None
         self._mask_status = None
         self._mask_type = None
+        self._create_time = None
+        self._update_time = None
         self._start_date = None
         self._start_time = None
         self._end_date = None
@@ -99,10 +134,24 @@ class ListNotificationMaskRespNotificationMasks:
         self.relation_type = relation_type
         if relation_id is not None:
             self.relation_id = relation_id
+        if resource_type is not None:
+            self.resource_type = resource_type
+        if metric_names is not None:
+            self.metric_names = metric_names
+        if product_metrics is not None:
+            self.product_metrics = product_metrics
+        if resource_level is not None:
+            self.resource_level = resource_level
+        if product_name is not None:
+            self.product_name = product_name
         if resources is not None:
             self.resources = resources
         self.mask_status = mask_status
         self.mask_type = mask_type
+        if create_time is not None:
+            self.create_time = create_time
+        if update_time is not None:
+            self.update_time = update_time
         if start_date is not None:
             self.start_date = start_date
         if start_time is not None:
@@ -199,6 +248,112 @@ class ListNotificationMaskRespNotificationMasks:
         self._relation_id = relation_id
 
     @property
+    def resource_type(self):
+        r"""Gets the resource_type of this ListNotificationMaskRespNotificationMasks.
+
+        :return: The resource_type of this ListNotificationMaskRespNotificationMasks.
+        :rtype: :class:`huaweicloudsdkces.v2.MaskResourceType`
+        """
+        return self._resource_type
+
+    @resource_type.setter
+    def resource_type(self, resource_type):
+        r"""Sets the resource_type of this ListNotificationMaskRespNotificationMasks.
+
+        :param resource_type: The resource_type of this ListNotificationMaskRespNotificationMasks.
+        :type resource_type: :class:`huaweicloudsdkces.v2.MaskResourceType`
+        """
+        self._resource_type = resource_type
+
+    @property
+    def metric_names(self):
+        r"""Gets the metric_names of this ListNotificationMaskRespNotificationMasks.
+
+        关联指标名称，relation_type为RESOURCE时存在该字段
+
+        :return: The metric_names of this ListNotificationMaskRespNotificationMasks.
+        :rtype: list[str]
+        """
+        return self._metric_names
+
+    @metric_names.setter
+    def metric_names(self, metric_names):
+        r"""Sets the metric_names of this ListNotificationMaskRespNotificationMasks.
+
+        关联指标名称，relation_type为RESOURCE时存在该字段
+
+        :param metric_names: The metric_names of this ListNotificationMaskRespNotificationMasks.
+        :type metric_names: list[str]
+        """
+        self._metric_names = metric_names
+
+    @property
+    def product_metrics(self):
+        r"""Gets the product_metrics of this ListNotificationMaskRespNotificationMasks.
+
+        按云产品维度屏蔽时的指标信息
+
+        :return: The product_metrics of this ListNotificationMaskRespNotificationMasks.
+        :rtype: list[:class:`huaweicloudsdkces.v2.ProductMetric`]
+        """
+        return self._product_metrics
+
+    @product_metrics.setter
+    def product_metrics(self, product_metrics):
+        r"""Sets the product_metrics of this ListNotificationMaskRespNotificationMasks.
+
+        按云产品维度屏蔽时的指标信息
+
+        :param product_metrics: The product_metrics of this ListNotificationMaskRespNotificationMasks.
+        :type product_metrics: list[:class:`huaweicloudsdkces.v2.ProductMetric`]
+        """
+        self._product_metrics = product_metrics
+
+    @property
+    def resource_level(self):
+        r"""Gets the resource_level of this ListNotificationMaskRespNotificationMasks.
+
+        dimension: 子维度,product: 云产品
+
+        :return: The resource_level of this ListNotificationMaskRespNotificationMasks.
+        :rtype: str
+        """
+        return self._resource_level
+
+    @resource_level.setter
+    def resource_level(self, resource_level):
+        r"""Sets the resource_level of this ListNotificationMaskRespNotificationMasks.
+
+        dimension: 子维度,product: 云产品
+
+        :param resource_level: The resource_level of this ListNotificationMaskRespNotificationMasks.
+        :type resource_level: str
+        """
+        self._resource_level = resource_level
+
+    @property
+    def product_name(self):
+        r"""Gets the product_name of this ListNotificationMaskRespNotificationMasks.
+
+        资源为云产品时的云产品名称
+
+        :return: The product_name of this ListNotificationMaskRespNotificationMasks.
+        :rtype: str
+        """
+        return self._product_name
+
+    @product_name.setter
+    def product_name(self, product_name):
+        r"""Sets the product_name of this ListNotificationMaskRespNotificationMasks.
+
+        资源为云产品时的云产品名称
+
+        :param product_name: The product_name of this ListNotificationMaskRespNotificationMasks.
+        :type product_name: str
+        """
+        self._product_name = product_name
+
+    @property
     def resources(self):
         r"""Gets the resources of this ListNotificationMaskRespNotificationMasks.
 
@@ -255,6 +410,50 @@ class ListNotificationMaskRespNotificationMasks:
         :type mask_type: :class:`huaweicloudsdkces.v2.MaskType`
         """
         self._mask_type = mask_type
+
+    @property
+    def create_time(self):
+        r"""Gets the create_time of this ListNotificationMaskRespNotificationMasks.
+
+        告警屏蔽的创建时间，UNIX时间戳，单位毫秒。
+
+        :return: The create_time of this ListNotificationMaskRespNotificationMasks.
+        :rtype: int
+        """
+        return self._create_time
+
+    @create_time.setter
+    def create_time(self, create_time):
+        r"""Sets the create_time of this ListNotificationMaskRespNotificationMasks.
+
+        告警屏蔽的创建时间，UNIX时间戳，单位毫秒。
+
+        :param create_time: The create_time of this ListNotificationMaskRespNotificationMasks.
+        :type create_time: int
+        """
+        self._create_time = create_time
+
+    @property
+    def update_time(self):
+        r"""Gets the update_time of this ListNotificationMaskRespNotificationMasks.
+
+        告警屏蔽的更新时间，UNIX时间戳，单位毫秒。
+
+        :return: The update_time of this ListNotificationMaskRespNotificationMasks.
+        :rtype: int
+        """
+        return self._update_time
+
+    @update_time.setter
+    def update_time(self, update_time):
+        r"""Sets the update_time of this ListNotificationMaskRespNotificationMasks.
+
+        告警屏蔽的更新时间，UNIX时间戳，单位毫秒。
+
+        :param update_time: The update_time of this ListNotificationMaskRespNotificationMasks.
+        :type update_time: int
+        """
+        self._update_time = update_time
 
     @property
     def start_date(self):

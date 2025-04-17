@@ -49,7 +49,7 @@ class ListResourceGroupsRequest:
         :type offset: int
         :param limit: 分页查询时每页的条目数，取值[1,100]，默认值为100
         :type limit: int
-        :param type: 资源分组添加资源方式，取值只能为EPS（同步企业项目）,TAG（标签动态匹配）,Manual（手动添加），不传代表查询所有资源分组类型
+        :param type: 资源分组添加资源方式，取值只能为EPS（同步企业项目）,TAG（标签动态匹配）,Manual（手动添加），不传代表查询所有资源分组类型,COMB（智能添加-组合匹配）,NAME（资源名称模糊匹配）
         :type type: str
         """
         
@@ -190,7 +190,7 @@ class ListResourceGroupsRequest:
     def type(self):
         r"""Gets the type of this ListResourceGroupsRequest.
 
-        资源分组添加资源方式，取值只能为EPS（同步企业项目）,TAG（标签动态匹配）,Manual（手动添加），不传代表查询所有资源分组类型
+        资源分组添加资源方式，取值只能为EPS（同步企业项目）,TAG（标签动态匹配）,Manual（手动添加），不传代表查询所有资源分组类型,COMB（智能添加-组合匹配）,NAME（资源名称模糊匹配）
 
         :return: The type of this ListResourceGroupsRequest.
         :rtype: str
@@ -201,7 +201,7 @@ class ListResourceGroupsRequest:
     def type(self, type):
         r"""Sets the type of this ListResourceGroupsRequest.
 
-        资源分组添加资源方式，取值只能为EPS（同步企业项目）,TAG（标签动态匹配）,Manual（手动添加），不传代表查询所有资源分组类型
+        资源分组添加资源方式，取值只能为EPS（同步企业项目）,TAG（标签动态匹配）,Manual（手动添加），不传代表查询所有资源分组类型,COMB（智能添加-组合匹配）,NAME（资源名称模糊匹配）
 
         :param type: The type of this ListResourceGroupsRequest.
         :type type: str

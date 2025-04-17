@@ -31,7 +31,7 @@ class SimplePremiumWafHost:
         'enterprise_project_id': 'str',
         'pool_ids': 'list[str]',
         'loadbalancer_id': 'str',
-        'protocol_port': 'str'
+        'protocol_port': 'int'
     }
 
     attribute_map = {
@@ -86,7 +86,7 @@ class SimplePremiumWafHost:
         :param loadbalancer_id: 云模式elb接入域名返回此字段，表示负载均衡器（ELB）id
         :type loadbalancer_id: str
         :param protocol_port: 云模式elb接入域名返回此字段，表示业务端口
-        :type protocol_port: str
+        :type protocol_port: int
         """
         
         
@@ -450,7 +450,7 @@ class SimplePremiumWafHost:
         云模式elb接入域名返回此字段，表示业务端口
 
         :return: The protocol_port of this SimplePremiumWafHost.
-        :rtype: str
+        :rtype: int
         """
         return self._protocol_port
 
@@ -461,7 +461,7 @@ class SimplePremiumWafHost:
         云模式elb接入域名返回此字段，表示业务端口
 
         :param protocol_port: The protocol_port of this SimplePremiumWafHost.
-        :type protocol_port: str
+        :type protocol_port: int
         """
         self._protocol_port = protocol_port
 

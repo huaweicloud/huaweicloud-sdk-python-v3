@@ -19,17 +19,21 @@ class ListNotificationMaskRequestBody:
     openapi_types = {
         'relation_type': 'ListRelationType',
         'relation_ids': 'list[str]',
+        'metric_name': 'str',
+        'resource_level': 'str',
         'mask_id': 'str',
         'mask_name': 'str',
         'mask_status': 'str',
         'resource_id': 'str',
         'namespace': 'str',
-        'dimensions': 'list[Dimension2]'
+        'dimensions': 'list[ResourceDimension]'
     }
 
     attribute_map = {
         'relation_type': 'relation_type',
         'relation_ids': 'relation_ids',
+        'metric_name': 'metric_name',
+        'resource_level': 'resource_level',
         'mask_id': 'mask_id',
         'mask_name': 'mask_name',
         'mask_status': 'mask_status',
@@ -38,7 +42,7 @@ class ListNotificationMaskRequestBody:
         'dimensions': 'dimensions'
     }
 
-    def __init__(self, relation_type=None, relation_ids=None, mask_id=None, mask_name=None, mask_status=None, resource_id=None, namespace=None, dimensions=None):
+    def __init__(self, relation_type=None, relation_ids=None, metric_name=None, resource_level=None, mask_id=None, mask_name=None, mask_status=None, resource_id=None, namespace=None, dimensions=None):
         r"""ListNotificationMaskRequestBody
 
         The model defined in huaweicloud sdk
@@ -47,6 +51,10 @@ class ListNotificationMaskRequestBody:
         :type relation_type: :class:`huaweicloudsdkces.v2.ListRelationType`
         :param relation_ids: 关联编号（目前是告警规则ID）
         :type relation_ids: list[str]
+        :param metric_name: 资源的监控指标名称，必须以字母开头，只能包含0-9/a-z/A-Z/_，字符长度最短为1，最大为64；如：弹性云服务器中的监控指标cpu_util，表示弹性服务器的CPU使用率；文档数据库中的指标mongo001_command_ps，表示command执行频率；各服务的指标名称可查看：“[服务指标名称](ces_03_0059.xml)”。
+        :type metric_name: str
+        :param resource_level: dimension: 子维度,product: 云产品
+        :type resource_level: str
         :param mask_id: 屏蔽规则ID,可选
         :type mask_id: str
         :param mask_name: 屏蔽规则名称,可选，只能为字母、数字、汉字、-、_，最大长度为64
@@ -55,16 +63,18 @@ class ListNotificationMaskRequestBody:
         :type mask_status: str
         :param resource_id: 资源维度值,提供一个维度的资源ID即可,可选
         :type resource_id: str
-        :param namespace: 查询服务的命名空间，各服务命名空间请参考[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)
+        :param namespace: 查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”
         :type namespace: str
         :param dimensions: 资源的维度信息
-        :type dimensions: list[:class:`huaweicloudsdkces.v2.Dimension2`]
+        :type dimensions: list[:class:`huaweicloudsdkces.v2.ResourceDimension`]
         """
         
         
 
         self._relation_type = None
         self._relation_ids = None
+        self._metric_name = None
+        self._resource_level = None
         self._mask_id = None
         self._mask_name = None
         self._mask_status = None
@@ -75,6 +85,10 @@ class ListNotificationMaskRequestBody:
 
         self.relation_type = relation_type
         self.relation_ids = relation_ids
+        if metric_name is not None:
+            self.metric_name = metric_name
+        if resource_level is not None:
+            self.resource_level = resource_level
         if mask_id is not None:
             self.mask_id = mask_id
         if mask_name is not None:
@@ -127,6 +141,50 @@ class ListNotificationMaskRequestBody:
         :type relation_ids: list[str]
         """
         self._relation_ids = relation_ids
+
+    @property
+    def metric_name(self):
+        r"""Gets the metric_name of this ListNotificationMaskRequestBody.
+
+        资源的监控指标名称，必须以字母开头，只能包含0-9/a-z/A-Z/_，字符长度最短为1，最大为64；如：弹性云服务器中的监控指标cpu_util，表示弹性服务器的CPU使用率；文档数据库中的指标mongo001_command_ps，表示command执行频率；各服务的指标名称可查看：“[服务指标名称](ces_03_0059.xml)”。
+
+        :return: The metric_name of this ListNotificationMaskRequestBody.
+        :rtype: str
+        """
+        return self._metric_name
+
+    @metric_name.setter
+    def metric_name(self, metric_name):
+        r"""Sets the metric_name of this ListNotificationMaskRequestBody.
+
+        资源的监控指标名称，必须以字母开头，只能包含0-9/a-z/A-Z/_，字符长度最短为1，最大为64；如：弹性云服务器中的监控指标cpu_util，表示弹性服务器的CPU使用率；文档数据库中的指标mongo001_command_ps，表示command执行频率；各服务的指标名称可查看：“[服务指标名称](ces_03_0059.xml)”。
+
+        :param metric_name: The metric_name of this ListNotificationMaskRequestBody.
+        :type metric_name: str
+        """
+        self._metric_name = metric_name
+
+    @property
+    def resource_level(self):
+        r"""Gets the resource_level of this ListNotificationMaskRequestBody.
+
+        dimension: 子维度,product: 云产品
+
+        :return: The resource_level of this ListNotificationMaskRequestBody.
+        :rtype: str
+        """
+        return self._resource_level
+
+    @resource_level.setter
+    def resource_level(self, resource_level):
+        r"""Sets the resource_level of this ListNotificationMaskRequestBody.
+
+        dimension: 子维度,product: 云产品
+
+        :param resource_level: The resource_level of this ListNotificationMaskRequestBody.
+        :type resource_level: str
+        """
+        self._resource_level = resource_level
 
     @property
     def mask_id(self):
@@ -220,7 +278,7 @@ class ListNotificationMaskRequestBody:
     def namespace(self):
         r"""Gets the namespace of this ListNotificationMaskRequestBody.
 
-        查询服务的命名空间，各服务命名空间请参考[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)
+        查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”
 
         :return: The namespace of this ListNotificationMaskRequestBody.
         :rtype: str
@@ -231,7 +289,7 @@ class ListNotificationMaskRequestBody:
     def namespace(self, namespace):
         r"""Sets the namespace of this ListNotificationMaskRequestBody.
 
-        查询服务的命名空间，各服务命名空间请参考[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)
+        查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”
 
         :param namespace: The namespace of this ListNotificationMaskRequestBody.
         :type namespace: str
@@ -245,7 +303,7 @@ class ListNotificationMaskRequestBody:
         资源的维度信息
 
         :return: The dimensions of this ListNotificationMaskRequestBody.
-        :rtype: list[:class:`huaweicloudsdkces.v2.Dimension2`]
+        :rtype: list[:class:`huaweicloudsdkces.v2.ResourceDimension`]
         """
         return self._dimensions
 
@@ -256,7 +314,7 @@ class ListNotificationMaskRequestBody:
         资源的维度信息
 
         :param dimensions: The dimensions of this ListNotificationMaskRequestBody.
-        :type dimensions: list[:class:`huaweicloudsdkces.v2.Dimension2`]
+        :type dimensions: list[:class:`huaweicloudsdkces.v2.ResourceDimension`]
         """
         self._dimensions = dimensions
 

@@ -23,7 +23,11 @@ class EnableOneClickAlarmRequestBody:
         'alarm_notifications': 'list[Notification]',
         'ok_notifications': 'list[Notification]',
         'notification_begin_time': 'str',
-        'notification_end_time': 'str'
+        'notification_end_time': 'str',
+        'notification_manner': 'str',
+        'notification_policy_ids': 'list[str]',
+        'is_reset': 'bool',
+        'one_click_update_alarms': 'list[EnableOneClickAlarmRequestBodyOneClickUpdateAlarms]'
     }
 
     attribute_map = {
@@ -33,10 +37,14 @@ class EnableOneClickAlarmRequestBody:
         'alarm_notifications': 'alarm_notifications',
         'ok_notifications': 'ok_notifications',
         'notification_begin_time': 'notification_begin_time',
-        'notification_end_time': 'notification_end_time'
+        'notification_end_time': 'notification_end_time',
+        'notification_manner': 'notification_manner',
+        'notification_policy_ids': 'notification_policy_ids',
+        'is_reset': 'is_reset',
+        'one_click_update_alarms': 'one_click_update_alarms'
     }
 
-    def __init__(self, one_click_alarm_id=None, dimension_names=None, notification_enabled=None, alarm_notifications=None, ok_notifications=None, notification_begin_time=None, notification_end_time=None):
+    def __init__(self, one_click_alarm_id=None, dimension_names=None, notification_enabled=None, alarm_notifications=None, ok_notifications=None, notification_begin_time=None, notification_end_time=None, notification_manner=None, notification_policy_ids=None, is_reset=None, one_click_update_alarms=None):
         r"""EnableOneClickAlarmRequestBody
 
         The model defined in huaweicloud sdk
@@ -55,6 +63,14 @@ class EnableOneClickAlarmRequestBody:
         :type notification_begin_time: str
         :param notification_end_time: 告警通知关闭时间
         :type notification_end_time: str
+        :param notification_manner: NOTIFICATION_GROUP(通知组)/TOPIC_SUBSCRIPTION(主题订阅)/NOTIFICATION_POLICY(通知策略)
+        :type notification_manner: str
+        :param notification_policy_ids: 关联的通知策略ID列表
+        :type notification_policy_ids: list[str]
+        :param is_reset: 是否以默认一键告警规则重置创建
+        :type is_reset: bool
+        :param one_click_update_alarms: 打开一键告警需要同时修改告警策略及通知(当前仅支持通知策略修改)时传递的参数
+        :type one_click_update_alarms: list[:class:`huaweicloudsdkces.v2.EnableOneClickAlarmRequestBodyOneClickUpdateAlarms`]
         """
         
         
@@ -66,6 +82,10 @@ class EnableOneClickAlarmRequestBody:
         self._ok_notifications = None
         self._notification_begin_time = None
         self._notification_end_time = None
+        self._notification_manner = None
+        self._notification_policy_ids = None
+        self._is_reset = None
+        self._one_click_update_alarms = None
         self.discriminator = None
 
         self.one_click_alarm_id = one_click_alarm_id
@@ -79,6 +99,14 @@ class EnableOneClickAlarmRequestBody:
             self.notification_begin_time = notification_begin_time
         if notification_end_time is not None:
             self.notification_end_time = notification_end_time
+        if notification_manner is not None:
+            self.notification_manner = notification_manner
+        if notification_policy_ids is not None:
+            self.notification_policy_ids = notification_policy_ids
+        if is_reset is not None:
+            self.is_reset = is_reset
+        if one_click_update_alarms is not None:
+            self.one_click_update_alarms = one_click_update_alarms
 
     @property
     def one_click_alarm_id(self):
@@ -229,6 +257,94 @@ class EnableOneClickAlarmRequestBody:
         :type notification_end_time: str
         """
         self._notification_end_time = notification_end_time
+
+    @property
+    def notification_manner(self):
+        r"""Gets the notification_manner of this EnableOneClickAlarmRequestBody.
+
+        NOTIFICATION_GROUP(通知组)/TOPIC_SUBSCRIPTION(主题订阅)/NOTIFICATION_POLICY(通知策略)
+
+        :return: The notification_manner of this EnableOneClickAlarmRequestBody.
+        :rtype: str
+        """
+        return self._notification_manner
+
+    @notification_manner.setter
+    def notification_manner(self, notification_manner):
+        r"""Sets the notification_manner of this EnableOneClickAlarmRequestBody.
+
+        NOTIFICATION_GROUP(通知组)/TOPIC_SUBSCRIPTION(主题订阅)/NOTIFICATION_POLICY(通知策略)
+
+        :param notification_manner: The notification_manner of this EnableOneClickAlarmRequestBody.
+        :type notification_manner: str
+        """
+        self._notification_manner = notification_manner
+
+    @property
+    def notification_policy_ids(self):
+        r"""Gets the notification_policy_ids of this EnableOneClickAlarmRequestBody.
+
+        关联的通知策略ID列表
+
+        :return: The notification_policy_ids of this EnableOneClickAlarmRequestBody.
+        :rtype: list[str]
+        """
+        return self._notification_policy_ids
+
+    @notification_policy_ids.setter
+    def notification_policy_ids(self, notification_policy_ids):
+        r"""Sets the notification_policy_ids of this EnableOneClickAlarmRequestBody.
+
+        关联的通知策略ID列表
+
+        :param notification_policy_ids: The notification_policy_ids of this EnableOneClickAlarmRequestBody.
+        :type notification_policy_ids: list[str]
+        """
+        self._notification_policy_ids = notification_policy_ids
+
+    @property
+    def is_reset(self):
+        r"""Gets the is_reset of this EnableOneClickAlarmRequestBody.
+
+        是否以默认一键告警规则重置创建
+
+        :return: The is_reset of this EnableOneClickAlarmRequestBody.
+        :rtype: bool
+        """
+        return self._is_reset
+
+    @is_reset.setter
+    def is_reset(self, is_reset):
+        r"""Sets the is_reset of this EnableOneClickAlarmRequestBody.
+
+        是否以默认一键告警规则重置创建
+
+        :param is_reset: The is_reset of this EnableOneClickAlarmRequestBody.
+        :type is_reset: bool
+        """
+        self._is_reset = is_reset
+
+    @property
+    def one_click_update_alarms(self):
+        r"""Gets the one_click_update_alarms of this EnableOneClickAlarmRequestBody.
+
+        打开一键告警需要同时修改告警策略及通知(当前仅支持通知策略修改)时传递的参数
+
+        :return: The one_click_update_alarms of this EnableOneClickAlarmRequestBody.
+        :rtype: list[:class:`huaweicloudsdkces.v2.EnableOneClickAlarmRequestBodyOneClickUpdateAlarms`]
+        """
+        return self._one_click_update_alarms
+
+    @one_click_update_alarms.setter
+    def one_click_update_alarms(self, one_click_update_alarms):
+        r"""Sets the one_click_update_alarms of this EnableOneClickAlarmRequestBody.
+
+        打开一键告警需要同时修改告警策略及通知(当前仅支持通知策略修改)时传递的参数
+
+        :param one_click_update_alarms: The one_click_update_alarms of this EnableOneClickAlarmRequestBody.
+        :type one_click_update_alarms: list[:class:`huaweicloudsdkces.v2.EnableOneClickAlarmRequestBodyOneClickUpdateAlarms`]
+        """
+        self._one_click_update_alarms = one_click_update_alarms
 
     def to_dict(self):
         """Returns the model properties as a dict"""

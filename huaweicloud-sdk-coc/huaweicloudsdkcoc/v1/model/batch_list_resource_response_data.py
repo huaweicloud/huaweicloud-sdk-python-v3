@@ -30,7 +30,8 @@ class BatchListResourceResponseData:
         'agent_state': 'str',
         'properties': 'dict(str, object)',
         'ingest_properties': 'dict(str, str)',
-        'is_delegated': 'bool'
+        'is_delegated': 'bool',
+        'operable': 'str'
     }
 
     attribute_map = {
@@ -47,10 +48,11 @@ class BatchListResourceResponseData:
         'agent_state': 'agent_state',
         'properties': 'properties',
         'ingest_properties': 'ingest_properties',
-        'is_delegated': 'is_delegated'
+        'is_delegated': 'is_delegated',
+        'operable': 'operable'
     }
 
-    def __init__(self, id=None, resource_id=None, name=None, provider=None, type=None, project_id=None, region_id=None, ep_id=None, tags=None, agent_id=None, agent_state=None, properties=None, ingest_properties=None, is_delegated=None):
+    def __init__(self, id=None, resource_id=None, name=None, provider=None, type=None, project_id=None, region_id=None, ep_id=None, tags=None, agent_id=None, agent_state=None, properties=None, ingest_properties=None, is_delegated=None, operable=None):
         r"""BatchListResourceResponseData
 
         The model defined in huaweicloud sdk
@@ -83,6 +85,8 @@ class BatchListResourceResponseData:
         :type ingest_properties: dict(str, str)
         :param is_delegated: 是否已托管
         :type is_delegated: bool
+        :param operable: 用户定义资源是否可运维实例
+        :type operable: str
         """
         
         
@@ -101,6 +105,7 @@ class BatchListResourceResponseData:
         self._properties = None
         self._ingest_properties = None
         self._is_delegated = None
+        self._operable = None
         self.discriminator = None
 
         if id is not None:
@@ -131,6 +136,8 @@ class BatchListResourceResponseData:
             self.ingest_properties = ingest_properties
         if is_delegated is not None:
             self.is_delegated = is_delegated
+        if operable is not None:
+            self.operable = operable
 
     @property
     def id(self):
@@ -439,6 +446,28 @@ class BatchListResourceResponseData:
         :type is_delegated: bool
         """
         self._is_delegated = is_delegated
+
+    @property
+    def operable(self):
+        r"""Gets the operable of this BatchListResourceResponseData.
+
+        用户定义资源是否可运维实例
+
+        :return: The operable of this BatchListResourceResponseData.
+        :rtype: str
+        """
+        return self._operable
+
+    @operable.setter
+    def operable(self, operable):
+        r"""Sets the operable of this BatchListResourceResponseData.
+
+        用户定义资源是否可运维实例
+
+        :param operable: The operable of this BatchListResourceResponseData.
+        :type operable: str
+        """
+        self._operable = operable
 
     def to_dict(self):
         """Returns the model properties as a dict"""

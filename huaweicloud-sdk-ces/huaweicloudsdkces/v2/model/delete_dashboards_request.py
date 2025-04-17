@@ -17,7 +17,7 @@ class DeleteDashboardsRequest:
     sensitive_list = []
 
     openapi_types = {
-        'body': 'BatchDeleteDashboardRequestBody'
+        'body': 'BatchDeleteDashboardsRequestBody'
     }
 
     attribute_map = {
@@ -30,7 +30,7 @@ class DeleteDashboardsRequest:
         The model defined in huaweicloud sdk
 
         :param body: Body of the DeleteDashboardsRequest
-        :type body: :class:`huaweicloudsdkces.v2.BatchDeleteDashboardRequestBody`
+        :type body: :class:`huaweicloudsdkces.v2.BatchDeleteDashboardsRequestBody`
         """
         
         
@@ -46,7 +46,7 @@ class DeleteDashboardsRequest:
         r"""Gets the body of this DeleteDashboardsRequest.
 
         :return: The body of this DeleteDashboardsRequest.
-        :rtype: :class:`huaweicloudsdkces.v2.BatchDeleteDashboardRequestBody`
+        :rtype: :class:`huaweicloudsdkces.v2.BatchDeleteDashboardsRequestBody`
         """
         return self._body
 
@@ -55,7 +55,7 @@ class DeleteDashboardsRequest:
         r"""Sets the body of this DeleteDashboardsRequest.
 
         :param body: The body of this DeleteDashboardsRequest.
-        :type body: :class:`huaweicloudsdkces.v2.BatchDeleteDashboardRequestBody`
+        :type body: :class:`huaweicloudsdkces.v2.BatchDeleteDashboardsRequestBody`
         """
         self._body = body
 

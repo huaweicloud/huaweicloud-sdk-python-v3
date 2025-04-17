@@ -17,29 +17,43 @@ class ListBuiltInPolicyDefinitionsRequest:
     sensitive_list = []
 
     openapi_types = {
-        'x_language': 'str'
+        'x_language': 'str',
+        'limit': 'int',
+        'marker': 'str'
     }
 
     attribute_map = {
-        'x_language': 'X-Language'
+        'x_language': 'X-Language',
+        'limit': 'limit',
+        'marker': 'marker'
     }
 
-    def __init__(self, x_language=None):
+    def __init__(self, x_language=None, limit=None, marker=None):
         r"""ListBuiltInPolicyDefinitionsRequest
 
         The model defined in huaweicloud sdk
 
         :param x_language: 选择接口返回的信息的语言，默认为\&quot;zh-cn\&quot;中文
         :type x_language: str
+        :param limit: 最大的返回数量
+        :type limit: int
+        :param marker: 分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
+        :type marker: str
         """
         
         
 
         self._x_language = None
+        self._limit = None
+        self._marker = None
         self.discriminator = None
 
         if x_language is not None:
             self.x_language = x_language
+        if limit is not None:
+            self.limit = limit
+        if marker is not None:
+            self.marker = marker
 
     @property
     def x_language(self):
@@ -62,6 +76,50 @@ class ListBuiltInPolicyDefinitionsRequest:
         :type x_language: str
         """
         self._x_language = x_language
+
+    @property
+    def limit(self):
+        r"""Gets the limit of this ListBuiltInPolicyDefinitionsRequest.
+
+        最大的返回数量
+
+        :return: The limit of this ListBuiltInPolicyDefinitionsRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        r"""Sets the limit of this ListBuiltInPolicyDefinitionsRequest.
+
+        最大的返回数量
+
+        :param limit: The limit of this ListBuiltInPolicyDefinitionsRequest.
+        :type limit: int
+        """
+        self._limit = limit
+
+    @property
+    def marker(self):
+        r"""Gets the marker of this ListBuiltInPolicyDefinitionsRequest.
+
+        分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
+
+        :return: The marker of this ListBuiltInPolicyDefinitionsRequest.
+        :rtype: str
+        """
+        return self._marker
+
+    @marker.setter
+    def marker(self, marker):
+        r"""Sets the marker of this ListBuiltInPolicyDefinitionsRequest.
+
+        分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
+
+        :param marker: The marker of this ListBuiltInPolicyDefinitionsRequest.
+        :type marker: str
+        """
+        self._marker = marker
 
     def to_dict(self):
         """Returns the model properties as a dict"""

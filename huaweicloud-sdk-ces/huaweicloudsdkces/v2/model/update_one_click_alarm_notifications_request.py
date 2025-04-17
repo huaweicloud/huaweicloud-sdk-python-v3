@@ -18,7 +18,7 @@ class UpdateOneClickAlarmNotificationsRequest:
 
     openapi_types = {
         'one_click_alarm_id': 'str',
-        'body': 'PutAlarmNotificationReq'
+        'body': 'UpdateOneClickAlarmNotificationsRequestBody'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class UpdateOneClickAlarmNotificationsRequest:
         :param one_click_alarm_id: 一键告警ID
         :type one_click_alarm_id: str
         :param body: Body of the UpdateOneClickAlarmNotificationsRequest
-        :type body: :class:`huaweicloudsdkces.v2.PutAlarmNotificationReq`
+        :type body: :class:`huaweicloudsdkces.v2.UpdateOneClickAlarmNotificationsRequestBody`
         """
         
         
@@ -74,7 +74,7 @@ class UpdateOneClickAlarmNotificationsRequest:
         r"""Gets the body of this UpdateOneClickAlarmNotificationsRequest.
 
         :return: The body of this UpdateOneClickAlarmNotificationsRequest.
-        :rtype: :class:`huaweicloudsdkces.v2.PutAlarmNotificationReq`
+        :rtype: :class:`huaweicloudsdkces.v2.UpdateOneClickAlarmNotificationsRequestBody`
         """
         return self._body
 
@@ -83,7 +83,7 @@ class UpdateOneClickAlarmNotificationsRequest:
         r"""Sets the body of this UpdateOneClickAlarmNotificationsRequest.
 
         :param body: The body of this UpdateOneClickAlarmNotificationsRequest.
-        :type body: :class:`huaweicloudsdkces.v2.PutAlarmNotificationReq`
+        :type body: :class:`huaweicloudsdkces.v2.UpdateOneClickAlarmNotificationsRequestBody`
         """
         self._body = body
 

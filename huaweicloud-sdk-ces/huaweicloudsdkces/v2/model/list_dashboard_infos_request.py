@@ -20,17 +20,19 @@ class ListDashboardInfosRequest:
         'enterprise_id': 'str',
         'is_favorite': 'bool',
         'dashboard_name': 'str',
-        'dashboard_id': 'str'
+        'dashboard_id': 'str',
+        'dashboard_type': 'str'
     }
 
     attribute_map = {
         'enterprise_id': 'enterprise_id',
         'is_favorite': 'is_favorite',
         'dashboard_name': 'dashboard_name',
-        'dashboard_id': 'dashboard_id'
+        'dashboard_id': 'dashboard_id',
+        'dashboard_type': 'dashboard_type'
     }
 
-    def __init__(self, enterprise_id=None, is_favorite=None, dashboard_name=None, dashboard_id=None):
+    def __init__(self, enterprise_id=None, is_favorite=None, dashboard_name=None, dashboard_id=None, dashboard_type=None):
         r"""ListDashboardInfosRequest
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class ListDashboardInfosRequest:
         :type dashboard_name: str
         :param dashboard_id: 监控看板id
         :type dashboard_id: str
+        :param dashboard_type: 监控看板类型, monitor_dashboard表示监控大盘,other表示自定义看板
+        :type dashboard_type: str
         """
         
         
@@ -51,6 +55,7 @@ class ListDashboardInfosRequest:
         self._is_favorite = None
         self._dashboard_name = None
         self._dashboard_id = None
+        self._dashboard_type = None
         self.discriminator = None
 
         if enterprise_id is not None:
@@ -61,6 +66,8 @@ class ListDashboardInfosRequest:
             self.dashboard_name = dashboard_name
         if dashboard_id is not None:
             self.dashboard_id = dashboard_id
+        if dashboard_type is not None:
+            self.dashboard_type = dashboard_type
 
     @property
     def enterprise_id(self):
@@ -149,6 +156,28 @@ class ListDashboardInfosRequest:
         :type dashboard_id: str
         """
         self._dashboard_id = dashboard_id
+
+    @property
+    def dashboard_type(self):
+        r"""Gets the dashboard_type of this ListDashboardInfosRequest.
+
+        监控看板类型, monitor_dashboard表示监控大盘,other表示自定义看板
+
+        :return: The dashboard_type of this ListDashboardInfosRequest.
+        :rtype: str
+        """
+        return self._dashboard_type
+
+    @dashboard_type.setter
+    def dashboard_type(self, dashboard_type):
+        r"""Sets the dashboard_type of this ListDashboardInfosRequest.
+
+        监控看板类型, monitor_dashboard表示监控大盘,other表示自定义看板
+
+        :param dashboard_type: The dashboard_type of this ListDashboardInfosRequest.
+        :type dashboard_type: str
+        """
+        self._dashboard_type = dashboard_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -17,28 +17,36 @@ class ResourcesReq:
     sensitive_list = []
 
     openapi_types = {
-        'resources': 'list[Resource]'
+        'resources': 'list[Resource]',
+        'product_resources': 'list[ProductResource]'
     }
 
     attribute_map = {
-        'resources': 'resources'
+        'resources': 'resources',
+        'product_resources': 'product_resources'
     }
 
-    def __init__(self, resources=None):
+    def __init__(self, resources=None, product_resources=None):
         r"""ResourcesReq
 
         The model defined in huaweicloud sdk
 
         :param resources: 资源信息
         :type resources: list[:class:`huaweicloudsdkces.v2.Resource`]
+        :param product_resources: 手动创建，选择资源层级为云产品时的资源详情
+        :type product_resources: list[:class:`huaweicloudsdkces.v2.ProductResource`]
         """
         
         
 
         self._resources = None
+        self._product_resources = None
         self.discriminator = None
 
-        self.resources = resources
+        if resources is not None:
+            self.resources = resources
+        if product_resources is not None:
+            self.product_resources = product_resources
 
     @property
     def resources(self):
@@ -61,6 +69,28 @@ class ResourcesReq:
         :type resources: list[:class:`huaweicloudsdkces.v2.Resource`]
         """
         self._resources = resources
+
+    @property
+    def product_resources(self):
+        r"""Gets the product_resources of this ResourcesReq.
+
+        手动创建，选择资源层级为云产品时的资源详情
+
+        :return: The product_resources of this ResourcesReq.
+        :rtype: list[:class:`huaweicloudsdkces.v2.ProductResource`]
+        """
+        return self._product_resources
+
+    @product_resources.setter
+    def product_resources(self, product_resources):
+        r"""Sets the product_resources of this ResourcesReq.
+
+        手动创建，选择资源层级为云产品时的资源详情
+
+        :param product_resources: The product_resources of this ResourcesReq.
+        :type product_resources: list[:class:`huaweicloudsdkces.v2.ProductResource`]
+        """
+        self._product_resources = product_resources
 
     def to_dict(self):
         """Returns the model properties as a dict"""

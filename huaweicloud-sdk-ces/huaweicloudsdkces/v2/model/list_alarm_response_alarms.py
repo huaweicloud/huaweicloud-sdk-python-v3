@@ -33,7 +33,7 @@ class ListAlarmResponseAlarms:
         'enterprise_project_id': 'str',
         'alarm_template_id': 'str',
         'product_name': 'str',
-        'resource_level': 'ResourceLevel'
+        'resource_level': 'str'
     }
 
     attribute_map = {
@@ -87,14 +87,14 @@ class ListAlarmResponseAlarms:
         :type notification_begin_time: str
         :param notification_end_time: 告警通知关闭时间
         :type notification_end_time: str
-        :param enterprise_project_id: 企业项目ID，不填时会使用默认的企业项目ID
+        :param enterprise_project_id: 企业项目ID
         :type enterprise_project_id: str
-        :param alarm_template_id: 告警规则关联告警模板ID
+        :param alarm_template_id: 告警规则关联告警模板ID，如果传了，告警规则关联的策略会和告警模板策略联动变化
         :type alarm_template_id: str
-        :param product_name: 产品层级跨纬规则创建时需要指明的规则产品名称，一般由\&quot;服务命名空间,服务首层维度名称\&quot;组成，如\&quot;SYS.ECS,instance_id\&quot;
+        :param product_name: 产品层级跨纬规则需要指明的规则产品名称，一般由\&quot;服务命名空间,服务首层维度名称\&quot;组成，如\&quot;SYS.ECS,instance_id\&quot;
         :type product_name: str
-        :param resource_level: 
-        :type resource_level: :class:`huaweicloudsdkces.v2.ResourceLevel`
+        :param resource_level: 产品层级跨纬规则需要指明为产品层级规则，resource_level取值为product即为产品层级跨纬规则，不填或者取值为dimension则为旧的规则类型
+        :type resource_level: str
         """
         
         
@@ -439,7 +439,7 @@ class ListAlarmResponseAlarms:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this ListAlarmResponseAlarms.
 
-        企业项目ID，不填时会使用默认的企业项目ID
+        企业项目ID
 
         :return: The enterprise_project_id of this ListAlarmResponseAlarms.
         :rtype: str
@@ -450,7 +450,7 @@ class ListAlarmResponseAlarms:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this ListAlarmResponseAlarms.
 
-        企业项目ID，不填时会使用默认的企业项目ID
+        企业项目ID
 
         :param enterprise_project_id: The enterprise_project_id of this ListAlarmResponseAlarms.
         :type enterprise_project_id: str
@@ -461,7 +461,7 @@ class ListAlarmResponseAlarms:
     def alarm_template_id(self):
         r"""Gets the alarm_template_id of this ListAlarmResponseAlarms.
 
-        告警规则关联告警模板ID
+        告警规则关联告警模板ID，如果传了，告警规则关联的策略会和告警模板策略联动变化
 
         :return: The alarm_template_id of this ListAlarmResponseAlarms.
         :rtype: str
@@ -472,7 +472,7 @@ class ListAlarmResponseAlarms:
     def alarm_template_id(self, alarm_template_id):
         r"""Sets the alarm_template_id of this ListAlarmResponseAlarms.
 
-        告警规则关联告警模板ID
+        告警规则关联告警模板ID，如果传了，告警规则关联的策略会和告警模板策略联动变化
 
         :param alarm_template_id: The alarm_template_id of this ListAlarmResponseAlarms.
         :type alarm_template_id: str
@@ -483,7 +483,7 @@ class ListAlarmResponseAlarms:
     def product_name(self):
         r"""Gets the product_name of this ListAlarmResponseAlarms.
 
-        产品层级跨纬规则创建时需要指明的规则产品名称，一般由\"服务命名空间,服务首层维度名称\"组成，如\"SYS.ECS,instance_id\"
+        产品层级跨纬规则需要指明的规则产品名称，一般由\"服务命名空间,服务首层维度名称\"组成，如\"SYS.ECS,instance_id\"
 
         :return: The product_name of this ListAlarmResponseAlarms.
         :rtype: str
@@ -494,7 +494,7 @@ class ListAlarmResponseAlarms:
     def product_name(self, product_name):
         r"""Sets the product_name of this ListAlarmResponseAlarms.
 
-        产品层级跨纬规则创建时需要指明的规则产品名称，一般由\"服务命名空间,服务首层维度名称\"组成，如\"SYS.ECS,instance_id\"
+        产品层级跨纬规则需要指明的规则产品名称，一般由\"服务命名空间,服务首层维度名称\"组成，如\"SYS.ECS,instance_id\"
 
         :param product_name: The product_name of this ListAlarmResponseAlarms.
         :type product_name: str
@@ -505,8 +505,10 @@ class ListAlarmResponseAlarms:
     def resource_level(self):
         r"""Gets the resource_level of this ListAlarmResponseAlarms.
 
+        产品层级跨纬规则需要指明为产品层级规则，resource_level取值为product即为产品层级跨纬规则，不填或者取值为dimension则为旧的规则类型
+
         :return: The resource_level of this ListAlarmResponseAlarms.
-        :rtype: :class:`huaweicloudsdkces.v2.ResourceLevel`
+        :rtype: str
         """
         return self._resource_level
 
@@ -514,8 +516,10 @@ class ListAlarmResponseAlarms:
     def resource_level(self, resource_level):
         r"""Sets the resource_level of this ListAlarmResponseAlarms.
 
+        产品层级跨纬规则需要指明为产品层级规则，resource_level取值为product即为产品层级跨纬规则，不填或者取值为dimension则为旧的规则类型
+
         :param resource_level: The resource_level of this ListAlarmResponseAlarms.
-        :type resource_level: :class:`huaweicloudsdkces.v2.ResourceLevel`
+        :type resource_level: str
         """
         self._resource_level = resource_level
 

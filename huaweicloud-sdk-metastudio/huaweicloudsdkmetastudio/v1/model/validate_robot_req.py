@@ -22,7 +22,8 @@ class ValidateRobotReq:
         'iflytek_aiui_config': 'IflytekAiuiConfig',
         'iflytek_spark': 'IflytekSpark',
         'third_party_model_config': 'ThirdPartyModelConfig',
-        'mobvoi_config': 'MobvoiConfig'
+        'mobvoi_config': 'MobvoiConfig',
+        'wise_brain_config': 'WiseBrainConfig'
     }
 
     attribute_map = {
@@ -31,15 +32,16 @@ class ValidateRobotReq:
         'iflytek_aiui_config': 'iflytek_aiui_config',
         'iflytek_spark': 'iflytek_spark',
         'third_party_model_config': 'third_party_model_config',
-        'mobvoi_config': 'mobvoi_config'
+        'mobvoi_config': 'mobvoi_config',
+        'wise_brain_config': 'wise_brain_config'
     }
 
-    def __init__(self, app_type=None, huawei_ei_cbs=None, iflytek_aiui_config=None, iflytek_spark=None, third_party_model_config=None, mobvoi_config=None):
+    def __init__(self, app_type=None, huawei_ei_cbs=None, iflytek_aiui_config=None, iflytek_spark=None, third_party_model_config=None, mobvoi_config=None, wise_brain_config=None):
         r"""ValidateRobotReq
 
         The model defined in huaweicloud sdk
 
-        :param app_type: 对接第三方应用厂商类型。 &gt; 0：科大讯飞AIUI；1：华为云CBS；2：科大讯飞星火交互认知大模型；6：第三方语言模型；8：奇妙问
+        :param app_type: 对接第三方应用厂商类型。 &gt; 0：科大讯飞AIUI；1：华为云CBS；2：科大讯飞星火交互认知大模型；6：第三方语言模型；7：交互助手；8：奇妙问
         :type app_type: int
         :param huawei_ei_cbs: 
         :type huawei_ei_cbs: :class:`huaweicloudsdkmetastudio.v1.HuaweiEiCbs`
@@ -51,6 +53,8 @@ class ValidateRobotReq:
         :type third_party_model_config: :class:`huaweicloudsdkmetastudio.v1.ThirdPartyModelConfig`
         :param mobvoi_config: 
         :type mobvoi_config: :class:`huaweicloudsdkmetastudio.v1.MobvoiConfig`
+        :param wise_brain_config: 
+        :type wise_brain_config: :class:`huaweicloudsdkmetastudio.v1.WiseBrainConfig`
         """
         
         
@@ -61,6 +65,7 @@ class ValidateRobotReq:
         self._iflytek_spark = None
         self._third_party_model_config = None
         self._mobvoi_config = None
+        self._wise_brain_config = None
         self.discriminator = None
 
         self.app_type = app_type
@@ -74,12 +79,14 @@ class ValidateRobotReq:
             self.third_party_model_config = third_party_model_config
         if mobvoi_config is not None:
             self.mobvoi_config = mobvoi_config
+        if wise_brain_config is not None:
+            self.wise_brain_config = wise_brain_config
 
     @property
     def app_type(self):
         r"""Gets the app_type of this ValidateRobotReq.
 
-        对接第三方应用厂商类型。 > 0：科大讯飞AIUI；1：华为云CBS；2：科大讯飞星火交互认知大模型；6：第三方语言模型；8：奇妙问
+        对接第三方应用厂商类型。 > 0：科大讯飞AIUI；1：华为云CBS；2：科大讯飞星火交互认知大模型；6：第三方语言模型；7：交互助手；8：奇妙问
 
         :return: The app_type of this ValidateRobotReq.
         :rtype: int
@@ -90,7 +97,7 @@ class ValidateRobotReq:
     def app_type(self, app_type):
         r"""Sets the app_type of this ValidateRobotReq.
 
-        对接第三方应用厂商类型。 > 0：科大讯飞AIUI；1：华为云CBS；2：科大讯飞星火交互认知大模型；6：第三方语言模型；8：奇妙问
+        对接第三方应用厂商类型。 > 0：科大讯飞AIUI；1：华为云CBS；2：科大讯飞星火交互认知大模型；6：第三方语言模型；7：交互助手；8：奇妙问
 
         :param app_type: The app_type of this ValidateRobotReq.
         :type app_type: int
@@ -186,6 +193,24 @@ class ValidateRobotReq:
         :type mobvoi_config: :class:`huaweicloudsdkmetastudio.v1.MobvoiConfig`
         """
         self._mobvoi_config = mobvoi_config
+
+    @property
+    def wise_brain_config(self):
+        r"""Gets the wise_brain_config of this ValidateRobotReq.
+
+        :return: The wise_brain_config of this ValidateRobotReq.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.WiseBrainConfig`
+        """
+        return self._wise_brain_config
+
+    @wise_brain_config.setter
+    def wise_brain_config(self, wise_brain_config):
+        r"""Sets the wise_brain_config of this ValidateRobotReq.
+
+        :param wise_brain_config: The wise_brain_config of this ValidateRobotReq.
+        :type wise_brain_config: :class:`huaweicloudsdkmetastudio.v1.WiseBrainConfig`
+        """
+        self._wise_brain_config = wise_brain_config
 
     def to_dict(self):
         """Returns the model properties as a dict"""

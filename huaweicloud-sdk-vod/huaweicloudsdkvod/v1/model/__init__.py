@@ -4,6 +4,7 @@ from __future__ import absolute_import
 
 # import models into model package
 from huaweicloudsdkvod.v1.model.add_subtitle import AddSubtitle
+from huaweicloudsdkvod.v1.model.additional_manifest import AdditionalManifest
 from huaweicloudsdkvod.v1.model.asset_daily_summary_result import AssetDailySummaryResult
 from huaweicloudsdkvod.v1.model.asset_details import AssetDetails
 from huaweicloudsdkvod.v1.model.asset_info import AssetInfo
@@ -121,6 +122,10 @@ from huaweicloudsdkvod.v1.model.publish_assets_response import PublishAssetsResp
 from huaweicloudsdkvod.v1.model.quality_info import QualityInfo
 from huaweicloudsdkvod.v1.model.quality_info_list import QualityInfoList
 from huaweicloudsdkvod.v1.model.query_category_rsp import QueryCategoryRsp
+from huaweicloudsdkvod.v1.model.refresh_asset_request import RefreshAssetRequest
+from huaweicloudsdkvod.v1.model.refresh_asset_response import RefreshAssetResponse
+from huaweicloudsdkvod.v1.model.refresh_result import RefreshResult
+from huaweicloudsdkvod.v1.model.refresh_task_req import RefreshTaskReq
 from huaweicloudsdkvod.v1.model.review import Review
 from huaweicloudsdkvod.v1.model.review_detail import ReviewDetail
 from huaweicloudsdkvod.v1.model.review_info import ReviewInfo
@@ -136,6 +141,8 @@ from huaweicloudsdkvod.v1.model.show_cdn_statistics_request import ShowCdnStatis
 from huaweicloudsdkvod.v1.model.show_cdn_statistics_response import ShowCdnStatisticsResponse
 from huaweicloudsdkvod.v1.model.show_preheating_asset_request import ShowPreheatingAssetRequest
 from huaweicloudsdkvod.v1.model.show_preheating_asset_response import ShowPreheatingAssetResponse
+from huaweicloudsdkvod.v1.model.show_refresh_result_request import ShowRefreshResultRequest
+from huaweicloudsdkvod.v1.model.show_refresh_result_response import ShowRefreshResultResponse
 from huaweicloudsdkvod.v1.model.show_storage_mode_type_request import ShowStorageModeTypeRequest
 from huaweicloudsdkvod.v1.model.show_storage_mode_type_response import ShowStorageModeTypeResponse
 from huaweicloudsdkvod.v1.model.show_take_over_asset_details_request import ShowTakeOverAssetDetailsRequest

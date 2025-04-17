@@ -4143,8 +4143,8 @@ class CloudtestAsyncClient(Client):
         query_params = []
         if 'page_size' in local_var_params:
             query_params.append(('page_size', local_var_params['page_size']))
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
+        if 'page_no' in local_var_params:
+            query_params.append(('page_no', local_var_params['page_no']))
         if 'key_word' in local_var_params:
             query_params.append(('key_word', local_var_params['key_word']))
         if 'own' in local_var_params:
@@ -8969,6 +8969,75 @@ class CloudtestAsyncClient(Client):
             ['application/json'])
 
         auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_testcase_plans_async(self, request):
+        r"""根据测试用例URI或用例编号查询测试用例对应的测试计划
+
+        根据测试用例URI或用例编号查询测试用例对应的测试计划
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListTestcasePlans
+        :type request: :class:`huaweicloudsdkcloudtest.v1.ListTestcasePlansRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ListTestcasePlansResponse`
+        """
+        http_info = self._list_testcase_plans_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_testcase_plans_async_invoker(self, request):
+        http_info = self._list_testcase_plans_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_testcase_plans_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v4/{project_uuid}/branch/{branch_uri}/testcases/plans",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTestcasePlansResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_uuid' in local_var_params:
+            path_params['project_uuid'] = local_var_params['project_uuid']
+        if 'branch_uri' in local_var_params:
+            path_params['branch_uri'] = local_var_params['branch_uri']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats

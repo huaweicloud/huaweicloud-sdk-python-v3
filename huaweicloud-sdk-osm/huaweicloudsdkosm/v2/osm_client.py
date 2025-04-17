@@ -6970,6 +6970,81 @@ class OsmClient(Client):
 
         return http_info
 
+    def upload_accessory(self, request):
+        r"""上传附件
+
+        上传附件接口，使用form-data，上传附件需要满足\&quot;附件限制\&quot;返回的关于大小等限制
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UploadAccessory
+        :type request: :class:`huaweicloudsdkosm.v2.UploadAccessoryRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.UploadAccessoryResponse`
+        """
+        http_info = self._upload_accessory_http_info(request)
+        return self._call_api(**http_info)
+
+    def upload_accessory_invoker(self, request):
+        http_info = self._upload_accessory_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _upload_accessory_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/servicerequest/accessorys",
+            "request_type": request.__class__.__name__,
+            "response_type": "UploadAccessoryResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_site' in local_var_params:
+            header_params['X-Site'] = local_var_params['x_site']
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+        if 'x_time_zone' in local_var_params:
+            header_params['X-Time-Zone'] = local_var_params['x_time_zone']
+
+        form_params = {}
+        if 'file' in local_var_params:
+            form_params['file'] = local_var_params['file']
+        if 'form_data' in local_var_params:
+            form_params['form_data'] = local_var_params['form_data']
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['multipart/form-data'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def upload_json_accessories(self, request):
         r"""上传附件
 

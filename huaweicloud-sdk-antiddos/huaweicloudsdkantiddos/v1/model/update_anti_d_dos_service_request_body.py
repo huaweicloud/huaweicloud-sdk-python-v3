@@ -37,15 +37,15 @@ class UpdateAntiDDosServiceRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param app_type_id: 应用类型ID，可选取值： - 0 - 1
+        :param app_type_id: 应用类型ID，固定值为0
         :type app_type_id: int
-        :param cleaning_access_pos_id: 清洗时访问限制分段ID，取值范围：1～8
+        :param cleaning_access_pos_id: 清洗时访问限制分段ID，取值范围：1：10M;2：30M;3：50M;4：70M;5：100M;6：150M;7：200M;8：250M;9：300M;10：500M;11：800M;88：1000M;99：默认防护。
         :type cleaning_access_pos_id: int
-        :param enable_l7: 是否开启L7层防护
+        :param enable_l7: 是否开启L7层防护，固定值为fasle
         :type enable_l7: bool
-        :param http_request_pos_id: HTTP请求数分段ID，取值范围：1～15
+        :param http_request_pos_id: HTTP请求数分段ID，固定值为1
         :type http_request_pos_id: int
-        :param traffic_pos_id: 流量分段ID，取值范围：1～9
+        :param traffic_pos_id: 流量分段ID，取值范围：1：10M;2：30M;3：50M;4：70M;5：100M;6：150M;7：200M;8：250M;9：300M;10：500M;11：800M;88：1000M;99：默认防护。
         :type traffic_pos_id: int
         """
         
@@ -68,7 +68,7 @@ class UpdateAntiDDosServiceRequestBody:
     def app_type_id(self):
         r"""Gets the app_type_id of this UpdateAntiDDosServiceRequestBody.
 
-        应用类型ID，可选取值： - 0 - 1
+        应用类型ID，固定值为0
 
         :return: The app_type_id of this UpdateAntiDDosServiceRequestBody.
         :rtype: int
@@ -79,7 +79,7 @@ class UpdateAntiDDosServiceRequestBody:
     def app_type_id(self, app_type_id):
         r"""Sets the app_type_id of this UpdateAntiDDosServiceRequestBody.
 
-        应用类型ID，可选取值： - 0 - 1
+        应用类型ID，固定值为0
 
         :param app_type_id: The app_type_id of this UpdateAntiDDosServiceRequestBody.
         :type app_type_id: int
@@ -90,7 +90,7 @@ class UpdateAntiDDosServiceRequestBody:
     def cleaning_access_pos_id(self):
         r"""Gets the cleaning_access_pos_id of this UpdateAntiDDosServiceRequestBody.
 
-        清洗时访问限制分段ID，取值范围：1～8
+        清洗时访问限制分段ID，取值范围：1：10M;2：30M;3：50M;4：70M;5：100M;6：150M;7：200M;8：250M;9：300M;10：500M;11：800M;88：1000M;99：默认防护。
 
         :return: The cleaning_access_pos_id of this UpdateAntiDDosServiceRequestBody.
         :rtype: int
@@ -101,7 +101,7 @@ class UpdateAntiDDosServiceRequestBody:
     def cleaning_access_pos_id(self, cleaning_access_pos_id):
         r"""Sets the cleaning_access_pos_id of this UpdateAntiDDosServiceRequestBody.
 
-        清洗时访问限制分段ID，取值范围：1～8
+        清洗时访问限制分段ID，取值范围：1：10M;2：30M;3：50M;4：70M;5：100M;6：150M;7：200M;8：250M;9：300M;10：500M;11：800M;88：1000M;99：默认防护。
 
         :param cleaning_access_pos_id: The cleaning_access_pos_id of this UpdateAntiDDosServiceRequestBody.
         :type cleaning_access_pos_id: int
@@ -112,7 +112,7 @@ class UpdateAntiDDosServiceRequestBody:
     def enable_l7(self):
         r"""Gets the enable_l7 of this UpdateAntiDDosServiceRequestBody.
 
-        是否开启L7层防护
+        是否开启L7层防护，固定值为fasle
 
         :return: The enable_l7 of this UpdateAntiDDosServiceRequestBody.
         :rtype: bool
@@ -123,7 +123,7 @@ class UpdateAntiDDosServiceRequestBody:
     def enable_l7(self, enable_l7):
         r"""Sets the enable_l7 of this UpdateAntiDDosServiceRequestBody.
 
-        是否开启L7层防护
+        是否开启L7层防护，固定值为fasle
 
         :param enable_l7: The enable_l7 of this UpdateAntiDDosServiceRequestBody.
         :type enable_l7: bool
@@ -134,7 +134,7 @@ class UpdateAntiDDosServiceRequestBody:
     def http_request_pos_id(self):
         r"""Gets the http_request_pos_id of this UpdateAntiDDosServiceRequestBody.
 
-        HTTP请求数分段ID，取值范围：1～15
+        HTTP请求数分段ID，固定值为1
 
         :return: The http_request_pos_id of this UpdateAntiDDosServiceRequestBody.
         :rtype: int
@@ -145,7 +145,7 @@ class UpdateAntiDDosServiceRequestBody:
     def http_request_pos_id(self, http_request_pos_id):
         r"""Sets the http_request_pos_id of this UpdateAntiDDosServiceRequestBody.
 
-        HTTP请求数分段ID，取值范围：1～15
+        HTTP请求数分段ID，固定值为1
 
         :param http_request_pos_id: The http_request_pos_id of this UpdateAntiDDosServiceRequestBody.
         :type http_request_pos_id: int
@@ -156,7 +156,7 @@ class UpdateAntiDDosServiceRequestBody:
     def traffic_pos_id(self):
         r"""Gets the traffic_pos_id of this UpdateAntiDDosServiceRequestBody.
 
-        流量分段ID，取值范围：1～9
+        流量分段ID，取值范围：1：10M;2：30M;3：50M;4：70M;5：100M;6：150M;7：200M;8：250M;9：300M;10：500M;11：800M;88：1000M;99：默认防护。
 
         :return: The traffic_pos_id of this UpdateAntiDDosServiceRequestBody.
         :rtype: int
@@ -167,7 +167,7 @@ class UpdateAntiDDosServiceRequestBody:
     def traffic_pos_id(self, traffic_pos_id):
         r"""Sets the traffic_pos_id of this UpdateAntiDDosServiceRequestBody.
 
-        流量分段ID，取值范围：1～9
+        流量分段ID，取值范围：1：10M;2：30M;3：50M;4：70M;5：100M;6：150M;7：200M;8：250M;9：300M;10：500M;11：800M;88：1000M;99：默认防护。
 
         :param traffic_pos_id: The traffic_pos_id of this UpdateAntiDDosServiceRequestBody.
         :type traffic_pos_id: int

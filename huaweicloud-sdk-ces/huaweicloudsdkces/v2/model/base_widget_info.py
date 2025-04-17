@@ -17,18 +17,20 @@ class BaseWidgetInfo:
     sensitive_list = []
 
     openapi_types = {
+        'group_id': 'str',
         'metrics': 'list[WidgetMetric]',
         'title': 'str',
         'threshold': 'float',
         'threshold_enabled': 'bool',
         'view': 'str',
         'metric_display_mode': 'str',
-        'properties': 'UpdateWidgetInfoProperties',
+        'properties': 'BaseWidgetInfoProperties',
         'location': 'UpdateWidgetInfoLocation',
         'unit': 'str'
     }
 
     attribute_map = {
+        'group_id': 'group_id',
         'metrics': 'metrics',
         'title': 'title',
         'threshold': 'threshold',
@@ -40,11 +42,13 @@ class BaseWidgetInfo:
         'unit': 'unit'
     }
 
-    def __init__(self, metrics=None, title=None, threshold=None, threshold_enabled=None, view=None, metric_display_mode=None, properties=None, location=None, unit=None):
+    def __init__(self, group_id=None, metrics=None, title=None, threshold=None, threshold_enabled=None, view=None, metric_display_mode=None, properties=None, location=None, unit=None):
         r"""BaseWidgetInfo
 
         The model defined in huaweicloud sdk
 
+        :param group_id: 视图分区id
+        :type group_id: str
         :param metrics: 指标列表
         :type metrics: list[:class:`huaweicloudsdkces.v2.WidgetMetric`]
         :param title: 监控视图标题
@@ -53,12 +57,12 @@ class BaseWidgetInfo:
         :type threshold: float
         :param threshold_enabled: 阈值是否展示，true:展示，false:不展示
         :type threshold_enabled: bool
-        :param view: 监控视图图表类型, bar柱状图，line折线图
+        :param view: 监控视图图表类型, bar条形图，line折线图，bar_chart柱状图，table表格，circular_bar环形柱状图，area_chart面积图
         :type view: str
         :param metric_display_mode: 指标展示类型，single 单指标展示，multiple 多指标展示
         :type metric_display_mode: str
         :param properties: 
-        :type properties: :class:`huaweicloudsdkces.v2.UpdateWidgetInfoProperties`
+        :type properties: :class:`huaweicloudsdkces.v2.BaseWidgetInfoProperties`
         :param location: 
         :type location: :class:`huaweicloudsdkces.v2.UpdateWidgetInfoLocation`
         :param unit: 单位
@@ -67,6 +71,7 @@ class BaseWidgetInfo:
         
         
 
+        self._group_id = None
         self._metrics = None
         self._title = None
         self._threshold = None
@@ -78,24 +83,42 @@ class BaseWidgetInfo:
         self._unit = None
         self.discriminator = None
 
-        if metrics is not None:
-            self.metrics = metrics
-        if title is not None:
-            self.title = title
+        if group_id is not None:
+            self.group_id = group_id
+        self.metrics = metrics
+        self.title = title
         if threshold is not None:
             self.threshold = threshold
-        if threshold_enabled is not None:
-            self.threshold_enabled = threshold_enabled
-        if view is not None:
-            self.view = view
-        if metric_display_mode is not None:
-            self.metric_display_mode = metric_display_mode
+        self.threshold_enabled = threshold_enabled
+        self.view = view
+        self.metric_display_mode = metric_display_mode
         if properties is not None:
             self.properties = properties
-        if location is not None:
-            self.location = location
+        self.location = location
         if unit is not None:
             self.unit = unit
+
+    @property
+    def group_id(self):
+        r"""Gets the group_id of this BaseWidgetInfo.
+
+        视图分区id
+
+        :return: The group_id of this BaseWidgetInfo.
+        :rtype: str
+        """
+        return self._group_id
+
+    @group_id.setter
+    def group_id(self, group_id):
+        r"""Sets the group_id of this BaseWidgetInfo.
+
+        视图分区id
+
+        :param group_id: The group_id of this BaseWidgetInfo.
+        :type group_id: str
+        """
+        self._group_id = group_id
 
     @property
     def metrics(self):
@@ -189,7 +212,7 @@ class BaseWidgetInfo:
     def view(self):
         r"""Gets the view of this BaseWidgetInfo.
 
-        监控视图图表类型, bar柱状图，line折线图
+        监控视图图表类型, bar条形图，line折线图，bar_chart柱状图，table表格，circular_bar环形柱状图，area_chart面积图
 
         :return: The view of this BaseWidgetInfo.
         :rtype: str
@@ -200,7 +223,7 @@ class BaseWidgetInfo:
     def view(self, view):
         r"""Sets the view of this BaseWidgetInfo.
 
-        监控视图图表类型, bar柱状图，line折线图
+        监控视图图表类型, bar条形图，line折线图，bar_chart柱状图，table表格，circular_bar环形柱状图，area_chart面积图
 
         :param view: The view of this BaseWidgetInfo.
         :type view: str
@@ -234,7 +257,7 @@ class BaseWidgetInfo:
         r"""Gets the properties of this BaseWidgetInfo.
 
         :return: The properties of this BaseWidgetInfo.
-        :rtype: :class:`huaweicloudsdkces.v2.UpdateWidgetInfoProperties`
+        :rtype: :class:`huaweicloudsdkces.v2.BaseWidgetInfoProperties`
         """
         return self._properties
 
@@ -243,7 +266,7 @@ class BaseWidgetInfo:
         r"""Sets the properties of this BaseWidgetInfo.
 
         :param properties: The properties of this BaseWidgetInfo.
-        :type properties: :class:`huaweicloudsdkces.v2.UpdateWidgetInfoProperties`
+        :type properties: :class:`huaweicloudsdkces.v2.BaseWidgetInfoProperties`
         """
         self._properties = properties
 

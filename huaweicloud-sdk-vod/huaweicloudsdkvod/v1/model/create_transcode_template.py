@@ -20,6 +20,7 @@ class CreateTranscodeTemplate:
         'name': 'str',
         'is_default': 'bool',
         'is_auto_encrypt': 'bool',
+        'additional_manifests': 'list[AdditionalManifest]',
         'quality_info_list': 'list[QualityInfoList]',
         'common': 'CommonInfo',
         'watermark_template_ids': 'list[str]',
@@ -30,13 +31,14 @@ class CreateTranscodeTemplate:
         'name': 'name',
         'is_default': 'is_default',
         'is_auto_encrypt': 'is_auto_encrypt',
+        'additional_manifests': 'additional_manifests',
         'quality_info_list': 'quality_info_list',
         'common': 'common',
         'watermark_template_ids': 'watermark_template_ids',
         'description': 'description'
     }
 
-    def __init__(self, name=None, is_default=None, is_auto_encrypt=None, quality_info_list=None, common=None, watermark_template_ids=None, description=None):
+    def __init__(self, name=None, is_default=None, is_auto_encrypt=None, additional_manifests=None, quality_info_list=None, common=None, watermark_template_ids=None, description=None):
         r"""CreateTranscodeTemplate
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class CreateTranscodeTemplate:
         :type is_default: bool
         :param is_auto_encrypt: 是否开启加密
         :type is_auto_encrypt: bool
+        :param additional_manifests: 自定义索引后缀列表，支持最大设置10个索引后缀。 如果填写索引后缀，则必须指定流名stream_name。 
+        :type additional_manifests: list[:class:`huaweicloudsdkvod.v1.AdditionalManifest`]
         :param quality_info_list: 画质配置信息列表&lt;br/&gt; 
         :type quality_info_list: list[:class:`huaweicloudsdkvod.v1.QualityInfoList`]
         :param common: 
@@ -62,6 +66,7 @@ class CreateTranscodeTemplate:
         self._name = None
         self._is_default = None
         self._is_auto_encrypt = None
+        self._additional_manifests = None
         self._quality_info_list = None
         self._common = None
         self._watermark_template_ids = None
@@ -73,6 +78,8 @@ class CreateTranscodeTemplate:
             self.is_default = is_default
         if is_auto_encrypt is not None:
             self.is_auto_encrypt = is_auto_encrypt
+        if additional_manifests is not None:
+            self.additional_manifests = additional_manifests
         self.quality_info_list = quality_info_list
         self.common = common
         if watermark_template_ids is not None:
@@ -145,6 +152,28 @@ class CreateTranscodeTemplate:
         :type is_auto_encrypt: bool
         """
         self._is_auto_encrypt = is_auto_encrypt
+
+    @property
+    def additional_manifests(self):
+        r"""Gets the additional_manifests of this CreateTranscodeTemplate.
+
+        自定义索引后缀列表，支持最大设置10个索引后缀。 如果填写索引后缀，则必须指定流名stream_name。 
+
+        :return: The additional_manifests of this CreateTranscodeTemplate.
+        :rtype: list[:class:`huaweicloudsdkvod.v1.AdditionalManifest`]
+        """
+        return self._additional_manifests
+
+    @additional_manifests.setter
+    def additional_manifests(self, additional_manifests):
+        r"""Sets the additional_manifests of this CreateTranscodeTemplate.
+
+        自定义索引后缀列表，支持最大设置10个索引后缀。 如果填写索引后缀，则必须指定流名stream_name。 
+
+        :param additional_manifests: The additional_manifests of this CreateTranscodeTemplate.
+        :type additional_manifests: list[:class:`huaweicloudsdkvod.v1.AdditionalManifest`]
+        """
+        self._additional_manifests = additional_manifests
 
     @property
     def quality_info_list(self):

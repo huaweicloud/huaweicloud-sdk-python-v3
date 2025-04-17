@@ -18,7 +18,7 @@ class CreateDashboardWidgetsRequest:
 
     openapi_types = {
         'dashboard_id': 'str',
-        'body': 'list[object]'
+        'body': 'list[BaseWidgetInfo]'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class CreateDashboardWidgetsRequest:
         :param dashboard_id: 监控看板id，以db开头，包含22个字母和数字例：db16564943172807wjOmoLyn&#39;
         :type dashboard_id: str
         :param body: Body of the CreateDashboardWidgetsRequest
-        :type body: list[object]
+        :type body: list[:class:`huaweicloudsdkces.v2.BaseWidgetInfo`]
         """
         
         
@@ -74,7 +74,7 @@ class CreateDashboardWidgetsRequest:
         r"""Gets the body of this CreateDashboardWidgetsRequest.
 
         :return: The body of this CreateDashboardWidgetsRequest.
-        :rtype: list[object]
+        :rtype: list[:class:`huaweicloudsdkces.v2.BaseWidgetInfo`]
         """
         return self._body
 
@@ -83,7 +83,7 @@ class CreateDashboardWidgetsRequest:
         r"""Sets the body of this CreateDashboardWidgetsRequest.
 
         :param body: The body of this CreateDashboardWidgetsRequest.
-        :type body: list[object]
+        :type body: list[:class:`huaweicloudsdkces.v2.BaseWidgetInfo`]
         """
         self._body = body
 

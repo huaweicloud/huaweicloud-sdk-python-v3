@@ -17,6 +17,7 @@ class VideoInfo:
     sensitive_list = []
 
     openapi_types = {
+        'stream_name': 'str',
         'quality': 'str',
         'width': 'int',
         'height': 'int',
@@ -25,6 +26,7 @@ class VideoInfo:
     }
 
     attribute_map = {
+        'stream_name': 'stream_name',
         'quality': 'quality',
         'width': 'width',
         'height': 'height',
@@ -32,11 +34,13 @@ class VideoInfo:
         'frame_rate': 'frame_rate'
     }
 
-    def __init__(self, quality=None, width=None, height=None, bitrate=None, frame_rate=None):
+    def __init__(self, stream_name=None, quality=None, width=None, height=None, bitrate=None, frame_rate=None):
         r"""VideoInfo
 
         The model defined in huaweicloud sdk
 
+        :param stream_name: 流名，流名仅支持数字、字母、下划线、中划线。 如果流名不填，则点播会按照video_stream_l{index}形式，生成一个流名。 
+        :type stream_name: str
         :param quality: 画质&lt;br/&gt; 4K默认分辨率3840*2160，码率8000kbit/s&lt;br/&gt; 2K默认分辨率2560*1440，码率7000kbit/s&lt;br/&gt; FULL_HD默认分辨率1920*1080，码率3000kbit/s&lt;br/&gt; HD默认分辨率1280*720，码率1000kbit/s&lt;br/&gt; SD默认分辨率854*480，码率600kbit/s&lt;br/&gt; FLUENT默认分辨率480*270，码率300kbit/s&lt;br/&gt; 
         :type quality: str
         :param width: 视频宽度&lt;br/&gt; 
@@ -51,6 +55,7 @@ class VideoInfo:
         
         
 
+        self._stream_name = None
         self._quality = None
         self._width = None
         self._height = None
@@ -58,6 +63,8 @@ class VideoInfo:
         self._frame_rate = None
         self.discriminator = None
 
+        if stream_name is not None:
+            self.stream_name = stream_name
         self.quality = quality
         if width is not None:
             self.width = width
@@ -65,6 +72,28 @@ class VideoInfo:
             self.height = height
         self.bitrate = bitrate
         self.frame_rate = frame_rate
+
+    @property
+    def stream_name(self):
+        r"""Gets the stream_name of this VideoInfo.
+
+        流名，流名仅支持数字、字母、下划线、中划线。 如果流名不填，则点播会按照video_stream_l{index}形式，生成一个流名。 
+
+        :return: The stream_name of this VideoInfo.
+        :rtype: str
+        """
+        return self._stream_name
+
+    @stream_name.setter
+    def stream_name(self, stream_name):
+        r"""Sets the stream_name of this VideoInfo.
+
+        流名，流名仅支持数字、字母、下划线、中划线。 如果流名不填，则点播会按照video_stream_l{index}形式，生成一个流名。 
+
+        :param stream_name: The stream_name of this VideoInfo.
+        :type stream_name: str
+        """
+        self._stream_name = stream_name
 
     @property
     def quality(self):

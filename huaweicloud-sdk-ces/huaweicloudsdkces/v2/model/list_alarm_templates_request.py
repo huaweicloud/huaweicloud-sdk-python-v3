@@ -22,7 +22,8 @@ class ListAlarmTemplatesRequest:
         'namespace': 'str',
         'dim_name': 'str',
         'template_type': 'str',
-        'template_name': 'str'
+        'template_name': 'str',
+        'product_name': 'str'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class ListAlarmTemplatesRequest:
         'namespace': 'namespace',
         'dim_name': 'dim_name',
         'template_type': 'template_type',
-        'template_name': 'template_name'
+        'template_name': 'template_name',
+        'product_name': 'product_name'
     }
 
-    def __init__(self, offset=None, limit=None, namespace=None, dim_name=None, template_type=None, template_name=None):
+    def __init__(self, offset=None, limit=None, namespace=None, dim_name=None, template_type=None, template_name=None, product_name=None):
         r"""ListAlarmTemplatesRequest
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class ListAlarmTemplatesRequest:
         :type template_type: str
         :param template_name: 告警模板的名称，以字母或汉字开头，可包含字母、数字、汉字、_、-，长度范围[1,128]，支持模糊匹配
         :type template_name: str
+        :param product_name: 支持按照产品名称粒度进行查询告警模板，产品名称一般由\&quot;服务命名空间,服务首层维度名称\&quot;组成，如\&quot;SYS.ECS,instance_id\&quot;
+        :type product_name: str
         """
         
         
@@ -61,6 +65,7 @@ class ListAlarmTemplatesRequest:
         self._dim_name = None
         self._template_type = None
         self._template_name = None
+        self._product_name = None
         self.discriminator = None
 
         if offset is not None:
@@ -75,6 +80,8 @@ class ListAlarmTemplatesRequest:
             self.template_type = template_type
         if template_name is not None:
             self.template_name = template_name
+        if product_name is not None:
+            self.product_name = product_name
 
     @property
     def offset(self):
@@ -207,6 +214,28 @@ class ListAlarmTemplatesRequest:
         :type template_name: str
         """
         self._template_name = template_name
+
+    @property
+    def product_name(self):
+        r"""Gets the product_name of this ListAlarmTemplatesRequest.
+
+        支持按照产品名称粒度进行查询告警模板，产品名称一般由\"服务命名空间,服务首层维度名称\"组成，如\"SYS.ECS,instance_id\"
+
+        :return: The product_name of this ListAlarmTemplatesRequest.
+        :rtype: str
+        """
+        return self._product_name
+
+    @product_name.setter
+    def product_name(self, product_name):
+        r"""Sets the product_name of this ListAlarmTemplatesRequest.
+
+        支持按照产品名称粒度进行查询告警模板，产品名称一般由\"服务命名空间,服务首层维度名称\"组成，如\"SYS.ECS,instance_id\"
+
+        :param product_name: The product_name of this ListAlarmTemplatesRequest.
+        :type product_name: str
+        """
+        self._product_name = product_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

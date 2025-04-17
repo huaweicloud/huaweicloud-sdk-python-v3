@@ -31,7 +31,7 @@ class BatchDeleteAlarmTemplatesRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param template_ids: 需要批量删除的告警模板的ID列表。未关联告警规则的模板可以批量删除多个；已关联告警规则的告警模板模板单次只允许删除一个，若同时删除多个已关联告警规则的告警模板，将返回异常
+        :param template_ids: 需要批量删除的告警模板的ID列表。未关联告警规则的模板可以批量删除多个；已关联告警规则的告警模板，单次只允许删除一个，若同时删除多个已关联告警规则的告警模板，将返回异常
         :type template_ids: list[str]
         :param delete_associate_alarm: 如果告警模板关联了告警规则，是否级联删除告警规则，true代表级联删除，false代表只删除告警模板
         :type delete_associate_alarm: bool
@@ -50,7 +50,7 @@ class BatchDeleteAlarmTemplatesRequestBody:
     def template_ids(self):
         r"""Gets the template_ids of this BatchDeleteAlarmTemplatesRequestBody.
 
-        需要批量删除的告警模板的ID列表。未关联告警规则的模板可以批量删除多个；已关联告警规则的告警模板模板单次只允许删除一个，若同时删除多个已关联告警规则的告警模板，将返回异常
+        需要批量删除的告警模板的ID列表。未关联告警规则的模板可以批量删除多个；已关联告警规则的告警模板，单次只允许删除一个，若同时删除多个已关联告警规则的告警模板，将返回异常
 
         :return: The template_ids of this BatchDeleteAlarmTemplatesRequestBody.
         :rtype: list[str]
@@ -61,7 +61,7 @@ class BatchDeleteAlarmTemplatesRequestBody:
     def template_ids(self, template_ids):
         r"""Sets the template_ids of this BatchDeleteAlarmTemplatesRequestBody.
 
-        需要批量删除的告警模板的ID列表。未关联告警规则的模板可以批量删除多个；已关联告警规则的告警模板模板单次只允许删除一个，若同时删除多个已关联告警规则的告警模板，将返回异常
+        需要批量删除的告警模板的ID列表。未关联告警规则的模板可以批量删除多个；已关联告警规则的告警模板，单次只允许删除一个，若同时删除多个已关联告警规则的告警模板，将返回异常
 
         :param template_ids: The template_ids of this BatchDeleteAlarmTemplatesRequestBody.
         :type template_ids: list[str]

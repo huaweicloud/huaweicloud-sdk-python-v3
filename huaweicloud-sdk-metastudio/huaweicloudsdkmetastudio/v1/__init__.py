@@ -14,6 +14,7 @@ from huaweicloudsdkmetastudio.v1.model.action_tag_info import ActionTagInfo
 from huaweicloudsdkmetastudio.v1.model.active_code_info import ActiveCodeInfo
 from huaweicloudsdkmetastudio.v1.model.animation_asset_meta import AnimationAssetMeta
 from huaweicloudsdkmetastudio.v1.model.animation_item import AnimationItem
+from huaweicloudsdkmetastudio.v1.model.asr_type_enum import AsrTypeEnum
 from huaweicloudsdkmetastudio.v1.model.asset_action_result import AssetActionResult
 from huaweicloudsdkmetastudio.v1.model.asset_extra_meta import AssetExtraMeta
 from huaweicloudsdkmetastudio.v1.model.asset_file_info import AssetFileInfo
@@ -664,4 +665,5 @@ from huaweicloudsdkmetastudio.v1.model.voice_model_asset_meta import VoiceModelA
 from huaweicloudsdkmetastudio.v1.model.voice_properties import VoiceProperties
 from huaweicloudsdkmetastudio.v1.model.voice_training_allocated_resource import VoiceTrainingAllocatedResource
 from huaweicloudsdkmetastudio.v1.model.welcome_speech_info import WelcomeSpeechInfo
+from huaweicloudsdkmetastudio.v1.model.wise_brain_config import WiseBrainConfig
 

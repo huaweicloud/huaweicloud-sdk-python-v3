@@ -18,7 +18,7 @@ class Resource:
 
     openapi_types = {
         'namespace': 'str',
-        'dimensions': 'list[Dimension2]'
+        'dimensions': 'list[ResourceDimension]'
     }
 
     attribute_map = {
@@ -31,10 +31,10 @@ class Resource:
 
         The model defined in huaweicloud sdk
 
-        :param namespace: 查询服务的命名空间，各服务命名空间请参考[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)
+        :param namespace: 查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”
         :type namespace: str
         :param dimensions: 资源的维度信息
-        :type dimensions: list[:class:`huaweicloudsdkces.v2.Dimension2`]
+        :type dimensions: list[:class:`huaweicloudsdkces.v2.ResourceDimension`]
         """
         
         
@@ -50,7 +50,7 @@ class Resource:
     def namespace(self):
         r"""Gets the namespace of this Resource.
 
-        查询服务的命名空间，各服务命名空间请参考[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)
+        查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”
 
         :return: The namespace of this Resource.
         :rtype: str
@@ -61,7 +61,7 @@ class Resource:
     def namespace(self, namespace):
         r"""Sets the namespace of this Resource.
 
-        查询服务的命名空间，各服务命名空间请参考[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)
+        查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”
 
         :param namespace: The namespace of this Resource.
         :type namespace: str
@@ -75,7 +75,7 @@ class Resource:
         资源的维度信息
 
         :return: The dimensions of this Resource.
-        :rtype: list[:class:`huaweicloudsdkces.v2.Dimension2`]
+        :rtype: list[:class:`huaweicloudsdkces.v2.ResourceDimension`]
         """
         return self._dimensions
 
@@ -86,7 +86,7 @@ class Resource:
         资源的维度信息
 
         :param dimensions: The dimensions of this Resource.
-        :type dimensions: list[:class:`huaweicloudsdkces.v2.Dimension2`]
+        :type dimensions: list[:class:`huaweicloudsdkces.v2.ResourceDimension`]
         """
         self._dimensions = dimensions
 

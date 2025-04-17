@@ -24,6 +24,7 @@ class PoliciesInListResp:
         'filter': 'str',
         'comparison_operator': 'str',
         'value': 'float',
+        'hierarchical_value': 'HierarchicalValue',
         'unit': 'str',
         'count': 'int',
         'type': 'str',
@@ -40,6 +41,7 @@ class PoliciesInListResp:
         'filter': 'filter',
         'comparison_operator': 'comparison_operator',
         'value': 'value',
+        'hierarchical_value': 'hierarchical_value',
         'unit': 'unit',
         'count': 'count',
         'type': 'type',
@@ -48,14 +50,14 @@ class PoliciesInListResp:
         'selected_unit': 'selected_unit'
     }
 
-    def __init__(self, alarm_policy_id=None, metric_name=None, extra_info=None, period=None, filter=None, comparison_operator=None, value=None, unit=None, count=None, type=None, suppress_duration=None, alarm_level=None, selected_unit=None):
+    def __init__(self, alarm_policy_id=None, metric_name=None, extra_info=None, period=None, filter=None, comparison_operator=None, value=None, hierarchical_value=None, unit=None, count=None, type=None, suppress_duration=None, alarm_level=None, selected_unit=None):
         r"""PoliciesInListResp
 
         The model defined in huaweicloud sdk
 
         :param alarm_policy_id: 告警策略ID。
         :type alarm_policy_id: str
-        :param metric_name: 资源的监控指标名称，必须以字母开头，只能包含0-9/a-z/A-Z/_，字符长度最短为1，最大为64；如：弹性云服务器中的监控指标cpu_util，表示弹性服务器的CPU使用率；文档数据库中的指标mongo001_command_ps，表示command执行频率；各服务的指标名称可查看：“[服务指标名称](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
+        :param metric_name: 资源的监控指标名称，必须以字母开头，只能包含0-9/a-z/A-Z/_，字符长度最短为1，最大为64；如：弹性云服务器中的监控指标cpu_util，表示弹性服务器的CPU使用率；文档数据库中的指标mongo001_command_ps，表示command执行频率；各服务的指标名称可查看：“[服务指标名称](ces_03_0059.xml)”。
         :type metric_name: str
         :param extra_info: 
         :type extra_info: :class:`huaweicloudsdkces.v2.MetricExtraInfo`
@@ -63,15 +65,17 @@ class PoliciesInListResp:
         :type period: :class:`huaweicloudsdkces.v2.Period`
         :param filter: 聚合方式, 支持的值为(average|min|max|sum)
         :type filter: str
-        :param comparison_operator: 告警阈值的比较条件，支持的值为(&gt;|&lt;|&gt;&#x3D;|&lt;&#x3D;|&#x3D;|!&#x3D;|cycle_decrease|cycle_increase|cycle_wave)，cycle_decrease为环比下降，cycle_increase为环比上升，cycle_wave为环比波动
+        :param comparison_operator: 阈值符号, 支持的值为(&gt;|&lt;|&gt;&#x3D;|&lt;&#x3D;|&#x3D;|!&#x3D;|cycle_decrease|cycle_increase|cycle_wave);cycle_decrease为环比下降,cycle_increase为环比上升,cycle_wave为环比波动； 指标告警可以使用的阈值符号有&gt;、&gt;&#x3D;、&lt;、&lt;&#x3D;、&#x3D;、!&#x3D;、cycle_decrease、cycle_increase、cycle_wave； 事件告警可以使用的阈值符号为&gt;、&gt;&#x3D;、&lt;、&lt;&#x3D;、&#x3D;、!&#x3D;； 
         :type comparison_operator: str
-        :param value: 阈值
+        :param value: 告警阈值。单一阈值时value和alarm_level配对使用，当hierarchical_value和value同时使用时以hierarchical_value为准。取值范围[0, Number.MAX_VALUE]，Number.MAX_VALUE值为1.7976931348623157e+108。具体阈值取值请参见附录中各服务监控指标中取值范围，如支持监控的服务列表中ECS的CPU使用率cpu_util取值范围可配置80。 [具体阈值取值请参见附录中各服务监控指标中取值范围，如[支持监控的服务列表](ces_03_0059.xml)中ECS的CPU使用率cpu_util取值范围可配置80。](tag: dt,g42,dt_test,hk_g42,hk_sbc,hws,hws_hk,ocb,sbc,tm) 
         :type value: float
-        :param unit: 单位
+        :param hierarchical_value: 
+        :type hierarchical_value: :class:`huaweicloudsdkces.v2.HierarchicalValue`
+        :param unit: 数据的单位。
         :type unit: str
-        :param count: 次数
+        :param count: 告警连续触发次数，事件告警时参数值为1~180（包括1和180）；指标告警和站点告警时，次数采用枚举值，枚举值分别为：1、2、3、4、5、10、15、30、60、90、120、180
         :type count: int
-        :param type: 告警策略类型。
+        :param type: 告警策略类型。（暂时未使用）
         :type type: str
         :param suppress_duration: 
         :type suppress_duration: :class:`huaweicloudsdkces.v2.SuppressDuration`
@@ -90,6 +94,7 @@ class PoliciesInListResp:
         self._filter = None
         self._comparison_operator = None
         self._value = None
+        self._hierarchical_value = None
         self._unit = None
         self._count = None
         self._type = None
@@ -105,7 +110,10 @@ class PoliciesInListResp:
         self.period = period
         self.filter = filter
         self.comparison_operator = comparison_operator
-        self.value = value
+        if value is not None:
+            self.value = value
+        if hierarchical_value is not None:
+            self.hierarchical_value = hierarchical_value
         if unit is not None:
             self.unit = unit
         self.count = count
@@ -144,7 +152,7 @@ class PoliciesInListResp:
     def metric_name(self):
         r"""Gets the metric_name of this PoliciesInListResp.
 
-        资源的监控指标名称，必须以字母开头，只能包含0-9/a-z/A-Z/_，字符长度最短为1，最大为64；如：弹性云服务器中的监控指标cpu_util，表示弹性服务器的CPU使用率；文档数据库中的指标mongo001_command_ps，表示command执行频率；各服务的指标名称可查看：“[服务指标名称](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
+        资源的监控指标名称，必须以字母开头，只能包含0-9/a-z/A-Z/_，字符长度最短为1，最大为64；如：弹性云服务器中的监控指标cpu_util，表示弹性服务器的CPU使用率；文档数据库中的指标mongo001_command_ps，表示command执行频率；各服务的指标名称可查看：“[服务指标名称](ces_03_0059.xml)”。
 
         :return: The metric_name of this PoliciesInListResp.
         :rtype: str
@@ -155,7 +163,7 @@ class PoliciesInListResp:
     def metric_name(self, metric_name):
         r"""Sets the metric_name of this PoliciesInListResp.
 
-        资源的监控指标名称，必须以字母开头，只能包含0-9/a-z/A-Z/_，字符长度最短为1，最大为64；如：弹性云服务器中的监控指标cpu_util，表示弹性服务器的CPU使用率；文档数据库中的指标mongo001_command_ps，表示command执行频率；各服务的指标名称可查看：“[服务指标名称](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
+        资源的监控指标名称，必须以字母开头，只能包含0-9/a-z/A-Z/_，字符长度最短为1，最大为64；如：弹性云服务器中的监控指标cpu_util，表示弹性服务器的CPU使用率；文档数据库中的指标mongo001_command_ps，表示command执行频率；各服务的指标名称可查看：“[服务指标名称](ces_03_0059.xml)”。
 
         :param metric_name: The metric_name of this PoliciesInListResp.
         :type metric_name: str
@@ -224,7 +232,7 @@ class PoliciesInListResp:
     def comparison_operator(self):
         r"""Gets the comparison_operator of this PoliciesInListResp.
 
-        告警阈值的比较条件，支持的值为(>|<|>=|<=|=|!=|cycle_decrease|cycle_increase|cycle_wave)，cycle_decrease为环比下降，cycle_increase为环比上升，cycle_wave为环比波动
+        阈值符号, 支持的值为(>|<|>=|<=|=|!=|cycle_decrease|cycle_increase|cycle_wave);cycle_decrease为环比下降,cycle_increase为环比上升,cycle_wave为环比波动； 指标告警可以使用的阈值符号有>、>=、<、<=、=、!=、cycle_decrease、cycle_increase、cycle_wave； 事件告警可以使用的阈值符号为>、>=、<、<=、=、!=； 
 
         :return: The comparison_operator of this PoliciesInListResp.
         :rtype: str
@@ -235,7 +243,7 @@ class PoliciesInListResp:
     def comparison_operator(self, comparison_operator):
         r"""Sets the comparison_operator of this PoliciesInListResp.
 
-        告警阈值的比较条件，支持的值为(>|<|>=|<=|=|!=|cycle_decrease|cycle_increase|cycle_wave)，cycle_decrease为环比下降，cycle_increase为环比上升，cycle_wave为环比波动
+        阈值符号, 支持的值为(>|<|>=|<=|=|!=|cycle_decrease|cycle_increase|cycle_wave);cycle_decrease为环比下降,cycle_increase为环比上升,cycle_wave为环比波动； 指标告警可以使用的阈值符号有>、>=、<、<=、=、!=、cycle_decrease、cycle_increase、cycle_wave； 事件告警可以使用的阈值符号为>、>=、<、<=、=、!=； 
 
         :param comparison_operator: The comparison_operator of this PoliciesInListResp.
         :type comparison_operator: str
@@ -246,7 +254,7 @@ class PoliciesInListResp:
     def value(self):
         r"""Gets the value of this PoliciesInListResp.
 
-        阈值
+        告警阈值。单一阈值时value和alarm_level配对使用，当hierarchical_value和value同时使用时以hierarchical_value为准。取值范围[0, Number.MAX_VALUE]，Number.MAX_VALUE值为1.7976931348623157e+108。具体阈值取值请参见附录中各服务监控指标中取值范围，如支持监控的服务列表中ECS的CPU使用率cpu_util取值范围可配置80。 [具体阈值取值请参见附录中各服务监控指标中取值范围，如[支持监控的服务列表](ces_03_0059.xml)中ECS的CPU使用率cpu_util取值范围可配置80。](tag: dt,g42,dt_test,hk_g42,hk_sbc,hws,hws_hk,ocb,sbc,tm) 
 
         :return: The value of this PoliciesInListResp.
         :rtype: float
@@ -257,7 +265,7 @@ class PoliciesInListResp:
     def value(self, value):
         r"""Sets the value of this PoliciesInListResp.
 
-        阈值
+        告警阈值。单一阈值时value和alarm_level配对使用，当hierarchical_value和value同时使用时以hierarchical_value为准。取值范围[0, Number.MAX_VALUE]，Number.MAX_VALUE值为1.7976931348623157e+108。具体阈值取值请参见附录中各服务监控指标中取值范围，如支持监控的服务列表中ECS的CPU使用率cpu_util取值范围可配置80。 [具体阈值取值请参见附录中各服务监控指标中取值范围，如[支持监控的服务列表](ces_03_0059.xml)中ECS的CPU使用率cpu_util取值范围可配置80。](tag: dt,g42,dt_test,hk_g42,hk_sbc,hws,hws_hk,ocb,sbc,tm) 
 
         :param value: The value of this PoliciesInListResp.
         :type value: float
@@ -265,10 +273,28 @@ class PoliciesInListResp:
         self._value = value
 
     @property
+    def hierarchical_value(self):
+        r"""Gets the hierarchical_value of this PoliciesInListResp.
+
+        :return: The hierarchical_value of this PoliciesInListResp.
+        :rtype: :class:`huaweicloudsdkces.v2.HierarchicalValue`
+        """
+        return self._hierarchical_value
+
+    @hierarchical_value.setter
+    def hierarchical_value(self, hierarchical_value):
+        r"""Sets the hierarchical_value of this PoliciesInListResp.
+
+        :param hierarchical_value: The hierarchical_value of this PoliciesInListResp.
+        :type hierarchical_value: :class:`huaweicloudsdkces.v2.HierarchicalValue`
+        """
+        self._hierarchical_value = hierarchical_value
+
+    @property
     def unit(self):
         r"""Gets the unit of this PoliciesInListResp.
 
-        单位
+        数据的单位。
 
         :return: The unit of this PoliciesInListResp.
         :rtype: str
@@ -279,7 +305,7 @@ class PoliciesInListResp:
     def unit(self, unit):
         r"""Sets the unit of this PoliciesInListResp.
 
-        单位
+        数据的单位。
 
         :param unit: The unit of this PoliciesInListResp.
         :type unit: str
@@ -290,7 +316,7 @@ class PoliciesInListResp:
     def count(self):
         r"""Gets the count of this PoliciesInListResp.
 
-        次数
+        告警连续触发次数，事件告警时参数值为1~180（包括1和180）；指标告警和站点告警时，次数采用枚举值，枚举值分别为：1、2、3、4、5、10、15、30、60、90、120、180
 
         :return: The count of this PoliciesInListResp.
         :rtype: int
@@ -301,7 +327,7 @@ class PoliciesInListResp:
     def count(self, count):
         r"""Sets the count of this PoliciesInListResp.
 
-        次数
+        告警连续触发次数，事件告警时参数值为1~180（包括1和180）；指标告警和站点告警时，次数采用枚举值，枚举值分别为：1、2、3、4、5、10、15、30、60、90、120、180
 
         :param count: The count of this PoliciesInListResp.
         :type count: int
@@ -312,7 +338,7 @@ class PoliciesInListResp:
     def type(self):
         r"""Gets the type of this PoliciesInListResp.
 
-        告警策略类型。
+        告警策略类型。（暂时未使用）
 
         :return: The type of this PoliciesInListResp.
         :rtype: str
@@ -323,7 +349,7 @@ class PoliciesInListResp:
     def type(self, type):
         r"""Sets the type of this PoliciesInListResp.
 
-        告警策略类型。
+        告警策略类型。（暂时未使用）
 
         :param type: The type of this PoliciesInListResp.
         :type type: str

@@ -2383,6 +2383,71 @@ class VodClient(Client):
 
         return http_info
 
+    def refresh_asset(self, request):
+        r"""CDN刷新
+
+        媒资状态为完成态、删除态、发布态，可通过指定媒资ID或URL向CDN进行刷新。将CDN节点缓存的资源强制过期，用户下次访问时CDN将回源获取最新的资源返回给用户，同时将新的资源缓存到CDN节点。单租户每天最多刷新1000个。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for RefreshAsset
+        :type request: :class:`huaweicloudsdkvod.v1.RefreshAssetRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.RefreshAssetResponse`
+        """
+        http_info = self._refresh_asset_http_info(request)
+        return self._call_api(**http_info)
+
+    def refresh_asset_invoker(self, request):
+        http_info = self._refresh_asset_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _refresh_asset_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/asset/refresh",
+            "request_type": request.__class__.__name__,
+            "response_type": "RefreshAssetResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_asset_cipher(self, request):
         r"""密钥查询
 
@@ -2614,7 +2679,7 @@ class VodClient(Client):
         
         视频分段上传方式和OBS的接口文档保持一致，包括HTTP请求方法、请求头、请求体等各种入参，此接口的作用是为用户生成带有鉴权信息的URL（鉴权信息即query_str），用来替换OBS接口中对应的URL，临时给用户开通向点播服务的桶上传文件的权限。
         
-        调用获取授权接口时需要传入bucket、object_key、http_verb，其中bucket和object_key是由[创建媒资：上传方式](https://support.huaweicloud.com/api-vod/vod_04_0196.html)接口中返回的响应体中的target字段获得的bucket和object，http_verb需要根据指定的操作选择。
+        调用获取授权接口时需要传入bucket、object_key、http_verb，其中bucket和object_key是由[创建媒资：上传方式](https://support.huaweicloud.com/api-vod/vod_04_0196.html)接口中返回的响应体中的target字段获得的bucket和object，http_verb需要根据指定的操作选择。 此接口为v1.1版本，暂不支持前端跨域访问，可以后端访问。如需前端跨域访问，请使用v1.0版本接口，详见[获取分段上传授权](vod_04_0009.xml)。 v1.1版本的接口返回结果不需要拼接url，拿到结果中的sign_str，直接发送请求即可。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2786,6 +2851,71 @@ class VodClient(Client):
             "resource_path": "/v1.0/{project_id}/asset/preheating",
             "request_type": request.__class__.__name__,
             "response_type": "ShowPreheatingAssetResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'task_id' in local_var_params:
+            query_params.append(('task_id', local_var_params['task_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_refresh_result(self, request):
+        r"""查询CDN刷新
+
+        查询刷新结果。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowRefreshResult
+        :type request: :class:`huaweicloudsdkvod.v1.ShowRefreshResultRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.ShowRefreshResultResponse`
+        """
+        http_info = self._show_refresh_result_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_refresh_result_invoker(self, request):
+        http_info = self._show_refresh_result_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_refresh_result_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/asset/refresh",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRefreshResultResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -3821,7 +3951,7 @@ class VodClient(Client):
         return http_info
 
     def upload_meta_data_by_url(self, request):
-        r"""创建媒资：URL拉取注入
+        r"""创建媒资：URL拉取注入（公测中）
 
         基于音视频源文件URL，将音视频文件离线拉取上传到点播服务。
         

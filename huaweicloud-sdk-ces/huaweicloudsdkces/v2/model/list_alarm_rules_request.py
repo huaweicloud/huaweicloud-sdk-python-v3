@@ -22,6 +22,8 @@ class ListAlarmRulesRequest:
         'namespace': 'str',
         'resource_id': 'str',
         'enterprise_project_id': 'str',
+        'product_name': 'str',
+        'resource_level': 'str',
         'offset': 'int',
         'limit': 'int'
     }
@@ -32,11 +34,13 @@ class ListAlarmRulesRequest:
         'namespace': 'namespace',
         'resource_id': 'resource_id',
         'enterprise_project_id': 'enterprise_project_id',
+        'product_name': 'product_name',
+        'resource_level': 'resource_level',
         'offset': 'offset',
         'limit': 'limit'
     }
 
-    def __init__(self, alarm_id=None, name=None, namespace=None, resource_id=None, enterprise_project_id=None, offset=None, limit=None):
+    def __init__(self, alarm_id=None, name=None, namespace=None, resource_id=None, enterprise_project_id=None, product_name=None, resource_level=None, offset=None, limit=None):
         r"""ListAlarmRulesRequest
 
         The model defined in huaweicloud sdk
@@ -45,12 +49,16 @@ class ListAlarmRulesRequest:
         :type alarm_id: str
         :param name: 告警名称, 只能包含0-9/a-z/A-Z/_/-或汉字，长度1-128
         :type name: str
-        :param namespace: 查询服务的命名空间，各服务命名空间请参考[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)
+        :param namespace: 查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”
         :type namespace: str
         :param resource_id: 告警资源ID，多维度情况按字母升序排列并使用逗号分隔
         :type resource_id: str
         :param enterprise_project_id: 企业项目ID
         :type enterprise_project_id: str
+        :param product_name: 产品层级跨纬规则查询时支持产品名称查询，一般由\&quot;服务命名空间,服务首层维度名称\&quot;组成，如\&quot;SYS.ECS,instance_id\&quot;
+        :type product_name: str
+        :param resource_level: 产品层级跨纬规则查询时支持规则所属类型查询，resource_level取值为product即为产品层级跨纬规则，不填或者取值为dimension则为旧的规则类型
+        :type resource_level: str
         :param offset: 分页偏移量
         :type offset: int
         :param limit: 分页大小
@@ -64,6 +72,8 @@ class ListAlarmRulesRequest:
         self._namespace = None
         self._resource_id = None
         self._enterprise_project_id = None
+        self._product_name = None
+        self._resource_level = None
         self._offset = None
         self._limit = None
         self.discriminator = None
@@ -78,6 +88,10 @@ class ListAlarmRulesRequest:
             self.resource_id = resource_id
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if product_name is not None:
+            self.product_name = product_name
+        if resource_level is not None:
+            self.resource_level = resource_level
         if offset is not None:
             self.offset = offset
         if limit is not None:
@@ -131,7 +145,7 @@ class ListAlarmRulesRequest:
     def namespace(self):
         r"""Gets the namespace of this ListAlarmRulesRequest.
 
-        查询服务的命名空间，各服务命名空间请参考[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)
+        查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”
 
         :return: The namespace of this ListAlarmRulesRequest.
         :rtype: str
@@ -142,7 +156,7 @@ class ListAlarmRulesRequest:
     def namespace(self, namespace):
         r"""Sets the namespace of this ListAlarmRulesRequest.
 
-        查询服务的命名空间，各服务命名空间请参考[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)
+        查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”
 
         :param namespace: The namespace of this ListAlarmRulesRequest.
         :type namespace: str
@@ -192,6 +206,50 @@ class ListAlarmRulesRequest:
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def product_name(self):
+        r"""Gets the product_name of this ListAlarmRulesRequest.
+
+        产品层级跨纬规则查询时支持产品名称查询，一般由\"服务命名空间,服务首层维度名称\"组成，如\"SYS.ECS,instance_id\"
+
+        :return: The product_name of this ListAlarmRulesRequest.
+        :rtype: str
+        """
+        return self._product_name
+
+    @product_name.setter
+    def product_name(self, product_name):
+        r"""Sets the product_name of this ListAlarmRulesRequest.
+
+        产品层级跨纬规则查询时支持产品名称查询，一般由\"服务命名空间,服务首层维度名称\"组成，如\"SYS.ECS,instance_id\"
+
+        :param product_name: The product_name of this ListAlarmRulesRequest.
+        :type product_name: str
+        """
+        self._product_name = product_name
+
+    @property
+    def resource_level(self):
+        r"""Gets the resource_level of this ListAlarmRulesRequest.
+
+        产品层级跨纬规则查询时支持规则所属类型查询，resource_level取值为product即为产品层级跨纬规则，不填或者取值为dimension则为旧的规则类型
+
+        :return: The resource_level of this ListAlarmRulesRequest.
+        :rtype: str
+        """
+        return self._resource_level
+
+    @resource_level.setter
+    def resource_level(self, resource_level):
+        r"""Sets the resource_level of this ListAlarmRulesRequest.
+
+        产品层级跨纬规则查询时支持规则所属类型查询，resource_level取值为product即为产品层级跨纬规则，不填或者取值为dimension则为旧的规则类型
+
+        :param resource_level: The resource_level of this ListAlarmRulesRequest.
+        :type resource_level: str
+        """
+        self._resource_level = resource_level
 
     @property
     def offset(self):

@@ -20,6 +20,10 @@ class UpdateNotificationMasksRequestBody:
         'mask_name': 'str',
         'relation_ids': 'list[str]',
         'relation_type': 'RelationType',
+        'metric_names': 'list[str]',
+        'product_metrics': 'list[ProductMetric]',
+        'resource_level': 'str',
+        'product_name': 'str',
         'resources': 'list[Resource]',
         'mask_type': 'MaskType',
         'start_date': 'date',
@@ -32,6 +36,10 @@ class UpdateNotificationMasksRequestBody:
         'mask_name': 'mask_name',
         'relation_ids': 'relation_ids',
         'relation_type': 'relation_type',
+        'metric_names': 'metric_names',
+        'product_metrics': 'product_metrics',
+        'resource_level': 'resource_level',
+        'product_name': 'product_name',
         'resources': 'resources',
         'mask_type': 'mask_type',
         'start_date': 'start_date',
@@ -40,7 +48,7 @@ class UpdateNotificationMasksRequestBody:
         'end_time': 'end_time'
     }
 
-    def __init__(self, mask_name=None, relation_ids=None, relation_type=None, resources=None, mask_type=None, start_date=None, start_time=None, end_date=None, end_time=None):
+    def __init__(self, mask_name=None, relation_ids=None, relation_type=None, metric_names=None, product_metrics=None, resource_level=None, product_name=None, resources=None, mask_type=None, start_date=None, start_time=None, end_date=None, end_time=None):
         r"""UpdateNotificationMasksRequestBody
 
         The model defined in huaweicloud sdk
@@ -51,6 +59,14 @@ class UpdateNotificationMasksRequestBody:
         :type relation_ids: list[str]
         :param relation_type: 
         :type relation_type: :class:`huaweicloudsdkces.v2.RelationType`
+        :param metric_names: 关联指标名称，relation_type为RESOURCE可选填，不填视为对资源所有指标进行告警屏蔽
+        :type metric_names: list[str]
+        :param product_metrics: 按云产品维度屏蔽时的指标信息
+        :type product_metrics: list[:class:`huaweicloudsdkces.v2.ProductMetric`]
+        :param resource_level: dimension: 子维度,product: 云产品
+        :type resource_level: str
+        :param product_name: 资源为云产品时云产品名称
+        :type product_name: str
         :param resources: 关联资源
         :type resources: list[:class:`huaweicloudsdkces.v2.Resource`]
         :param mask_type: 
@@ -70,6 +86,10 @@ class UpdateNotificationMasksRequestBody:
         self._mask_name = None
         self._relation_ids = None
         self._relation_type = None
+        self._metric_names = None
+        self._product_metrics = None
+        self._resource_level = None
+        self._product_name = None
         self._resources = None
         self._mask_type = None
         self._start_date = None
@@ -83,6 +103,14 @@ class UpdateNotificationMasksRequestBody:
             self.relation_ids = relation_ids
         if relation_type is not None:
             self.relation_type = relation_type
+        if metric_names is not None:
+            self.metric_names = metric_names
+        if product_metrics is not None:
+            self.product_metrics = product_metrics
+        if resource_level is not None:
+            self.resource_level = resource_level
+        if product_name is not None:
+            self.product_name = product_name
         self.resources = resources
         self.mask_type = mask_type
         if start_date is not None:
@@ -155,6 +183,94 @@ class UpdateNotificationMasksRequestBody:
         :type relation_type: :class:`huaweicloudsdkces.v2.RelationType`
         """
         self._relation_type = relation_type
+
+    @property
+    def metric_names(self):
+        r"""Gets the metric_names of this UpdateNotificationMasksRequestBody.
+
+        关联指标名称，relation_type为RESOURCE可选填，不填视为对资源所有指标进行告警屏蔽
+
+        :return: The metric_names of this UpdateNotificationMasksRequestBody.
+        :rtype: list[str]
+        """
+        return self._metric_names
+
+    @metric_names.setter
+    def metric_names(self, metric_names):
+        r"""Sets the metric_names of this UpdateNotificationMasksRequestBody.
+
+        关联指标名称，relation_type为RESOURCE可选填，不填视为对资源所有指标进行告警屏蔽
+
+        :param metric_names: The metric_names of this UpdateNotificationMasksRequestBody.
+        :type metric_names: list[str]
+        """
+        self._metric_names = metric_names
+
+    @property
+    def product_metrics(self):
+        r"""Gets the product_metrics of this UpdateNotificationMasksRequestBody.
+
+        按云产品维度屏蔽时的指标信息
+
+        :return: The product_metrics of this UpdateNotificationMasksRequestBody.
+        :rtype: list[:class:`huaweicloudsdkces.v2.ProductMetric`]
+        """
+        return self._product_metrics
+
+    @product_metrics.setter
+    def product_metrics(self, product_metrics):
+        r"""Sets the product_metrics of this UpdateNotificationMasksRequestBody.
+
+        按云产品维度屏蔽时的指标信息
+
+        :param product_metrics: The product_metrics of this UpdateNotificationMasksRequestBody.
+        :type product_metrics: list[:class:`huaweicloudsdkces.v2.ProductMetric`]
+        """
+        self._product_metrics = product_metrics
+
+    @property
+    def resource_level(self):
+        r"""Gets the resource_level of this UpdateNotificationMasksRequestBody.
+
+        dimension: 子维度,product: 云产品
+
+        :return: The resource_level of this UpdateNotificationMasksRequestBody.
+        :rtype: str
+        """
+        return self._resource_level
+
+    @resource_level.setter
+    def resource_level(self, resource_level):
+        r"""Sets the resource_level of this UpdateNotificationMasksRequestBody.
+
+        dimension: 子维度,product: 云产品
+
+        :param resource_level: The resource_level of this UpdateNotificationMasksRequestBody.
+        :type resource_level: str
+        """
+        self._resource_level = resource_level
+
+    @property
+    def product_name(self):
+        r"""Gets the product_name of this UpdateNotificationMasksRequestBody.
+
+        资源为云产品时云产品名称
+
+        :return: The product_name of this UpdateNotificationMasksRequestBody.
+        :rtype: str
+        """
+        return self._product_name
+
+    @product_name.setter
+    def product_name(self, product_name):
+        r"""Sets the product_name of this UpdateNotificationMasksRequestBody.
+
+        资源为云产品时云产品名称
+
+        :param product_name: The product_name of this UpdateNotificationMasksRequestBody.
+        :type product_name: str
+        """
+        self._product_name = product_name
 
     @property
     def resources(self):

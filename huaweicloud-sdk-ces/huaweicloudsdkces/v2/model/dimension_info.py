@@ -33,7 +33,7 @@ class DimensionInfo:
 
         The model defined in huaweicloud sdk
 
-        :param name: 维度名称，多维度用逗号分隔，各服务支持的维度可参考：“[服务维度名称](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”
+        :param name: 维度名称，多维度用逗号分隔，各服务支持的维度可参考：“[服务维度名称](ces_03_0059.xml)”
         :type name: str
         :param filter_type: 资源类型, all_instances: 全部资源, specific_instances: 指定资源
         :type filter_type: str
@@ -57,7 +57,7 @@ class DimensionInfo:
     def name(self):
         r"""Gets the name of this DimensionInfo.
 
-        维度名称，多维度用逗号分隔，各服务支持的维度可参考：“[服务维度名称](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”
+        维度名称，多维度用逗号分隔，各服务支持的维度可参考：“[服务维度名称](ces_03_0059.xml)”
 
         :return: The name of this DimensionInfo.
         :rtype: str
@@ -68,7 +68,7 @@ class DimensionInfo:
     def name(self, name):
         r"""Sets the name of this DimensionInfo.
 
-        维度名称，多维度用逗号分隔，各服务支持的维度可参考：“[服务维度名称](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”
+        维度名称，多维度用逗号分隔，各服务支持的维度可参考：“[服务维度名称](ces_03_0059.xml)”
 
         :param name: The name of this DimensionInfo.
         :type name: str

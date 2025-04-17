@@ -33,7 +33,7 @@ class CreateInstanceDatastoreOption:
 
         :param type: 数据库引擎，不区分大小写，取值如下：  GaussDB。
         :type type: str
-        :param version: 数据库版本。不填时，默认为当前最新版本。  GaussDB支持的版本参考[查询数据库引擎的版本](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product&#x3D;GaussDB&amp;api&#x3D;ListDatastores)。
+        :param version: 数据库版本。不填时，默认为当前最新版本。  GaussDB支持的版本参考[查询数据库引擎的版本](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product&#x3D;GaussDBforopenGauss&amp;api&#x3D;ListDatastores)。
         :type version: str
         """
         
@@ -73,7 +73,7 @@ class CreateInstanceDatastoreOption:
     def version(self):
         r"""Gets the version of this CreateInstanceDatastoreOption.
 
-        数据库版本。不填时，默认为当前最新版本。  GaussDB支持的版本参考[查询数据库引擎的版本](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=GaussDB&api=ListDatastores)。
+        数据库版本。不填时，默认为当前最新版本。  GaussDB支持的版本参考[查询数据库引擎的版本](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=GaussDBforopenGauss&api=ListDatastores)。
 
         :return: The version of this CreateInstanceDatastoreOption.
         :rtype: str
@@ -84,7 +84,7 @@ class CreateInstanceDatastoreOption:
     def version(self, version):
         r"""Sets the version of this CreateInstanceDatastoreOption.
 
-        数据库版本。不填时，默认为当前最新版本。  GaussDB支持的版本参考[查询数据库引擎的版本](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=GaussDB&api=ListDatastores)。
+        数据库版本。不填时，默认为当前最新版本。  GaussDB支持的版本参考[查询数据库引擎的版本](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=GaussDBforopenGauss&api=ListDatastores)。
 
         :param version: The version of this CreateInstanceDatastoreOption.
         :type version: str

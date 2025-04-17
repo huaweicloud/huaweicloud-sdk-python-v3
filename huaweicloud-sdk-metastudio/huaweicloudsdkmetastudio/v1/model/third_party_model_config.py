@@ -24,7 +24,10 @@ class ThirdPartyModelConfig:
         'chat_rounds': 'int',
         'sis_region': 'int',
         'sis_project_id': 'str',
-        'enable_hot_words': 'bool'
+        'enable_hot_words': 'bool',
+        'asr_type': 'AsrTypeEnum',
+        'asr_account': 'str',
+        'asr_secret': 'str'
     }
 
     attribute_map = {
@@ -35,10 +38,13 @@ class ThirdPartyModelConfig:
         'chat_rounds': 'chat_rounds',
         'sis_region': 'sis_region',
         'sis_project_id': 'sis_project_id',
-        'enable_hot_words': 'enable_hot_words'
+        'enable_hot_words': 'enable_hot_words',
+        'asr_type': 'asr_type',
+        'asr_account': 'asr_account',
+        'asr_secret': 'asr_secret'
     }
 
-    def __init__(self, app_id=None, app_key=None, llm_url=None, is_stream=None, chat_rounds=None, sis_region=None, sis_project_id=None, enable_hot_words=None):
+    def __init__(self, app_id=None, app_key=None, llm_url=None, is_stream=None, chat_rounds=None, sis_region=None, sis_project_id=None, enable_hot_words=None, asr_type=None, asr_account=None, asr_secret=None):
         r"""ThirdPartyModelConfig
 
         The model defined in huaweicloud sdk
@@ -57,8 +63,14 @@ class ThirdPartyModelConfig:
         :type sis_region: int
         :param sis_project_id: SIS所在区域的projectId
         :type sis_project_id: str
-        :param enable_hot_words: 是否开启热词
+        :param enable_hot_words: 是否开启热词（asr_type选择EI_SIS时生效）
         :type enable_hot_words: bool
+        :param asr_type: 
+        :type asr_type: :class:`huaweicloudsdkmetastudio.v1.AsrTypeEnum`
+        :param asr_account: ASR帐号（asr_type选择EI_SIS时不需要配置）。
+        :type asr_account: str
+        :param asr_secret: ASR密钥（asr_type选择EI_SIS时不需要配置）。
+        :type asr_secret: str
         """
         
         
@@ -71,6 +83,9 @@ class ThirdPartyModelConfig:
         self._sis_region = None
         self._sis_project_id = None
         self._enable_hot_words = None
+        self._asr_type = None
+        self._asr_account = None
+        self._asr_secret = None
         self.discriminator = None
 
         if app_id is not None:
@@ -89,6 +104,12 @@ class ThirdPartyModelConfig:
             self.sis_project_id = sis_project_id
         if enable_hot_words is not None:
             self.enable_hot_words = enable_hot_words
+        if asr_type is not None:
+            self.asr_type = asr_type
+        if asr_account is not None:
+            self.asr_account = asr_account
+        if asr_secret is not None:
+            self.asr_secret = asr_secret
 
     @property
     def app_id(self):
@@ -248,7 +269,7 @@ class ThirdPartyModelConfig:
     def enable_hot_words(self):
         r"""Gets the enable_hot_words of this ThirdPartyModelConfig.
 
-        是否开启热词
+        是否开启热词（asr_type选择EI_SIS时生效）
 
         :return: The enable_hot_words of this ThirdPartyModelConfig.
         :rtype: bool
@@ -259,12 +280,74 @@ class ThirdPartyModelConfig:
     def enable_hot_words(self, enable_hot_words):
         r"""Sets the enable_hot_words of this ThirdPartyModelConfig.
 
-        是否开启热词
+        是否开启热词（asr_type选择EI_SIS时生效）
 
         :param enable_hot_words: The enable_hot_words of this ThirdPartyModelConfig.
         :type enable_hot_words: bool
         """
         self._enable_hot_words = enable_hot_words
+
+    @property
+    def asr_type(self):
+        r"""Gets the asr_type of this ThirdPartyModelConfig.
+
+        :return: The asr_type of this ThirdPartyModelConfig.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.AsrTypeEnum`
+        """
+        return self._asr_type
+
+    @asr_type.setter
+    def asr_type(self, asr_type):
+        r"""Sets the asr_type of this ThirdPartyModelConfig.
+
+        :param asr_type: The asr_type of this ThirdPartyModelConfig.
+        :type asr_type: :class:`huaweicloudsdkmetastudio.v1.AsrTypeEnum`
+        """
+        self._asr_type = asr_type
+
+    @property
+    def asr_account(self):
+        r"""Gets the asr_account of this ThirdPartyModelConfig.
+
+        ASR帐号（asr_type选择EI_SIS时不需要配置）。
+
+        :return: The asr_account of this ThirdPartyModelConfig.
+        :rtype: str
+        """
+        return self._asr_account
+
+    @asr_account.setter
+    def asr_account(self, asr_account):
+        r"""Sets the asr_account of this ThirdPartyModelConfig.
+
+        ASR帐号（asr_type选择EI_SIS时不需要配置）。
+
+        :param asr_account: The asr_account of this ThirdPartyModelConfig.
+        :type asr_account: str
+        """
+        self._asr_account = asr_account
+
+    @property
+    def asr_secret(self):
+        r"""Gets the asr_secret of this ThirdPartyModelConfig.
+
+        ASR密钥（asr_type选择EI_SIS时不需要配置）。
+
+        :return: The asr_secret of this ThirdPartyModelConfig.
+        :rtype: str
+        """
+        return self._asr_secret
+
+    @asr_secret.setter
+    def asr_secret(self, asr_secret):
+        r"""Sets the asr_secret of this ThirdPartyModelConfig.
+
+        ASR密钥（asr_type选择EI_SIS时不需要配置）。
+
+        :param asr_secret: The asr_secret of this ThirdPartyModelConfig.
+        :type asr_secret: str
+        """
+        self._asr_secret = asr_secret
 
     def to_dict(self):
         """Returns the model properties as a dict"""

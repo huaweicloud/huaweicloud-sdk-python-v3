@@ -17,28 +17,35 @@ class ListDashboardWidgetsRequest:
     sensitive_list = []
 
     openapi_types = {
-        'dashboard_id': 'str'
+        'dashboard_id': 'str',
+        'group_id': 'str'
     }
 
     attribute_map = {
-        'dashboard_id': 'dashboard_id'
+        'dashboard_id': 'dashboard_id',
+        'group_id': 'group_id'
     }
 
-    def __init__(self, dashboard_id=None):
+    def __init__(self, dashboard_id=None, group_id=None):
         r"""ListDashboardWidgetsRequest
 
         The model defined in huaweicloud sdk
 
         :param dashboard_id: 监控看板id，以db开头，包含22个字母和数字例：db16564943172807wjOmoLyn&#39;
         :type dashboard_id: str
+        :param group_id: 视图所在的分组id
+        :type group_id: str
         """
         
         
 
         self._dashboard_id = None
+        self._group_id = None
         self.discriminator = None
 
         self.dashboard_id = dashboard_id
+        if group_id is not None:
+            self.group_id = group_id
 
     @property
     def dashboard_id(self):
@@ -61,6 +68,28 @@ class ListDashboardWidgetsRequest:
         :type dashboard_id: str
         """
         self._dashboard_id = dashboard_id
+
+    @property
+    def group_id(self):
+        r"""Gets the group_id of this ListDashboardWidgetsRequest.
+
+        视图所在的分组id
+
+        :return: The group_id of this ListDashboardWidgetsRequest.
+        :rtype: str
+        """
+        return self._group_id
+
+    @group_id.setter
+    def group_id(self, group_id):
+        r"""Sets the group_id of this ListDashboardWidgetsRequest.
+
+        视图所在的分组id
+
+        :param group_id: The group_id of this ListDashboardWidgetsRequest.
+        :type group_id: str
+        """
+        self._group_id = group_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

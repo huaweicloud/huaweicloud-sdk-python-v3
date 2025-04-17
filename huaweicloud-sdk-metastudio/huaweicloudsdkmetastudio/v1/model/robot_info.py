@@ -38,7 +38,9 @@ class RobotInfo:
         'sis_region': 'int',
         'sis_project_id': 'str',
         'enable_hot_words': 'bool',
-        'enable_question_audit': 'bool'
+        'enable_question_audit': 'bool',
+        'asr_type': 'AsrTypeEnum',
+        'asr_account': 'str'
     }
 
     attribute_map = {
@@ -63,10 +65,12 @@ class RobotInfo:
         'sis_region': 'sis_region',
         'sis_project_id': 'sis_project_id',
         'enable_hot_words': 'enable_hot_words',
-        'enable_question_audit': 'enable_question_audit'
+        'enable_question_audit': 'enable_question_audit',
+        'asr_type': 'asr_type',
+        'asr_account': 'asr_account'
     }
 
-    def __init__(self, robot_id=None, name=None, room_id=None, app_id=None, app_type=None, app_key=None, robot_type=None, language=None, create_time=None, update_time=None, region=None, cbs_project_id=None, llm_url=None, is_stream=None, chat_rounds=None, is_ifly_production=None, tail_silence_time=None, role_id=None, sis_region=None, sis_project_id=None, enable_hot_words=None, enable_question_audit=None):
+    def __init__(self, robot_id=None, name=None, room_id=None, app_id=None, app_type=None, app_key=None, robot_type=None, language=None, create_time=None, update_time=None, region=None, cbs_project_id=None, llm_url=None, is_stream=None, chat_rounds=None, is_ifly_production=None, tail_silence_time=None, role_id=None, sis_region=None, sis_project_id=None, enable_hot_words=None, enable_question_audit=None, asr_type=None, asr_account=None):
         r"""RobotInfo
 
         The model defined in huaweicloud sdk
@@ -79,7 +83,7 @@ class RobotInfo:
         :type room_id: str
         :param app_id: 第三方应用ID。
         :type app_id: str
-        :param app_type: 对接第三方应用厂商类型。 &gt; 0：科大讯飞AIUI；1：华为云CBS；2：科大讯飞星火交互认知大模型；5：第三方驱动；6：第三方语言模型；8：奇妙问
+        :param app_type: 对接第三方应用厂商类型。 &gt; 0：科大讯飞AIUI；1：华为云CBS；2：科大讯飞星火交互认知大模型；5：第三方驱动；6：第三方语言模型；7：交互助手；8：奇妙问
         :type app_type: int
         :param app_key: 应用的AccessKey或帐号。
         :type app_key: str
@@ -115,6 +119,10 @@ class RobotInfo:
         :type enable_hot_words: bool
         :param enable_question_audit: 是否开启提问文本审核开关
         :type enable_question_audit: bool
+        :param asr_type: 
+        :type asr_type: :class:`huaweicloudsdkmetastudio.v1.AsrTypeEnum`
+        :param asr_account: ASR帐号。
+        :type asr_account: str
         """
         
         
@@ -141,6 +149,8 @@ class RobotInfo:
         self._sis_project_id = None
         self._enable_hot_words = None
         self._enable_question_audit = None
+        self._asr_type = None
+        self._asr_account = None
         self.discriminator = None
 
         if robot_id is not None:
@@ -187,6 +197,10 @@ class RobotInfo:
             self.enable_hot_words = enable_hot_words
         if enable_question_audit is not None:
             self.enable_question_audit = enable_question_audit
+        if asr_type is not None:
+            self.asr_type = asr_type
+        if asr_account is not None:
+            self.asr_account = asr_account
 
     @property
     def robot_id(self):
@@ -280,7 +294,7 @@ class RobotInfo:
     def app_type(self):
         r"""Gets the app_type of this RobotInfo.
 
-        对接第三方应用厂商类型。 > 0：科大讯飞AIUI；1：华为云CBS；2：科大讯飞星火交互认知大模型；5：第三方驱动；6：第三方语言模型；8：奇妙问
+        对接第三方应用厂商类型。 > 0：科大讯飞AIUI；1：华为云CBS；2：科大讯飞星火交互认知大模型；5：第三方驱动；6：第三方语言模型；7：交互助手；8：奇妙问
 
         :return: The app_type of this RobotInfo.
         :rtype: int
@@ -291,7 +305,7 @@ class RobotInfo:
     def app_type(self, app_type):
         r"""Sets the app_type of this RobotInfo.
 
-        对接第三方应用厂商类型。 > 0：科大讯飞AIUI；1：华为云CBS；2：科大讯飞星火交互认知大模型；5：第三方驱动；6：第三方语言模型；8：奇妙问
+        对接第三方应用厂商类型。 > 0：科大讯飞AIUI；1：华为云CBS；2：科大讯飞星火交互认知大模型；5：第三方驱动；6：第三方语言模型；7：交互助手；8：奇妙问
 
         :param app_type: The app_type of this RobotInfo.
         :type app_type: int
@@ -663,6 +677,46 @@ class RobotInfo:
         :type enable_question_audit: bool
         """
         self._enable_question_audit = enable_question_audit
+
+    @property
+    def asr_type(self):
+        r"""Gets the asr_type of this RobotInfo.
+
+        :return: The asr_type of this RobotInfo.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.AsrTypeEnum`
+        """
+        return self._asr_type
+
+    @asr_type.setter
+    def asr_type(self, asr_type):
+        r"""Sets the asr_type of this RobotInfo.
+
+        :param asr_type: The asr_type of this RobotInfo.
+        :type asr_type: :class:`huaweicloudsdkmetastudio.v1.AsrTypeEnum`
+        """
+        self._asr_type = asr_type
+
+    @property
+    def asr_account(self):
+        r"""Gets the asr_account of this RobotInfo.
+
+        ASR帐号。
+
+        :return: The asr_account of this RobotInfo.
+        :rtype: str
+        """
+        return self._asr_account
+
+    @asr_account.setter
+    def asr_account(self, asr_account):
+        r"""Sets the asr_account of this RobotInfo.
+
+        ASR帐号。
+
+        :param asr_account: The asr_account of this RobotInfo.
+        :type asr_account: str
+        """
+        self._asr_account = asr_account
 
     def to_dict(self):
         """Returns the model properties as a dict"""

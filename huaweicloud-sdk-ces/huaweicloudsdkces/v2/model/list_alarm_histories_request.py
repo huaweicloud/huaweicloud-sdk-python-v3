@@ -17,16 +17,18 @@ class ListAlarmHistoriesRequest:
     sensitive_list = []
 
     openapi_types = {
-        'alarm_id': 'str',
+        'alarm_id': 'list[str]',
         'record_id': 'str',
         'name': 'str',
-        'alarm_type': 'str',
-        'status': 'str',
+        'status': 'list[str]',
         'level': 'int',
         'namespace': 'str',
         'resource_id': 'str',
         '_from': 'str',
         'to': 'str',
+        'alarm_type': 'str',
+        'create_time_from': 'str',
+        'create_time_to': 'str',
         'offset': 'int',
         'limit': 'int',
         'order_by': 'str'
@@ -36,43 +38,49 @@ class ListAlarmHistoriesRequest:
         'alarm_id': 'alarm_id',
         'record_id': 'record_id',
         'name': 'name',
-        'alarm_type': 'alarm_type',
         'status': 'status',
         'level': 'level',
         'namespace': 'namespace',
         'resource_id': 'resource_id',
         '_from': 'from',
         'to': 'to',
+        'alarm_type': 'alarm_type',
+        'create_time_from': 'create_time_from',
+        'create_time_to': 'create_time_to',
         'offset': 'offset',
         'limit': 'limit',
         'order_by': 'order_by'
     }
 
-    def __init__(self, alarm_id=None, record_id=None, name=None, alarm_type=None, status=None, level=None, namespace=None, resource_id=None, _from=None, to=None, offset=None, limit=None, order_by=None):
+    def __init__(self, alarm_id=None, record_id=None, name=None, status=None, level=None, namespace=None, resource_id=None, _from=None, to=None, alarm_type=None, create_time_from=None, create_time_to=None, offset=None, limit=None, order_by=None):
         r"""ListAlarmHistoriesRequest
 
         The model defined in huaweicloud sdk
 
         :param alarm_id: 告警ID,以al开头，后跟22位由字母或数字组成的字符串
-        :type alarm_id: str
+        :type alarm_id: list[str]
         :param record_id: 告警记录ID,以ah开头，后跟22位由字母或数字组成的字符串
         :type record_id: str
         :param name: 告警规则名称
         :type name: str
-        :param alarm_type: 告警类型，event：查询事件类型告警，metric：查询指标类型告警
-        :type alarm_type: str
         :param status: 告警规则状态, ok为正常，alarm为告警，invalid为已失效
-        :type status: str
+        :type status: list[str]
         :param level: 告警级别, 1为紧急，2为重要，3为次要，4为提示
         :type level: int
-        :param namespace: 查询服务的命名空间，各服务命名空间请参考[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)
+        :param namespace: 查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”
         :type namespace: str
         :param resource_id: 告警资源ID，多维度情况按字母升序排列并使用逗号分隔
         :type resource_id: str
-        :param _from: 查询告警记录的起始时间，例如：2022-02-10T10:05:46+08:00
+        :param _from: 查询告警记录的起始更新时间，例如：2022-02-10T10:05:46+08:00
         :type _from: str
-        :param to: 查询告警记录的截止时间，例如：2022-02-10T10:05:47+08:00
+        :param to: 查询告警记录的截止更新时间，例如：2022-02-10T10:05:47+08:00
         :type to: str
+        :param alarm_type: 告警类型，event：查询事件类型告警，metric：查询指标类型告警
+        :type alarm_type: str
+        :param create_time_from: 查询告警记录的起始创建时间，例如：2022-02-10T10:05:46+08:00
+        :type create_time_from: str
+        :param create_time_to: 查询告警记录的截止创建时间，例如：2022-02-10T10:05:47+08:00
+        :type create_time_to: str
         :param offset: 分页偏移量
         :type offset: int
         :param limit: 分页大小
@@ -86,13 +94,15 @@ class ListAlarmHistoriesRequest:
         self._alarm_id = None
         self._record_id = None
         self._name = None
-        self._alarm_type = None
         self._status = None
         self._level = None
         self._namespace = None
         self._resource_id = None
         self.__from = None
         self._to = None
+        self._alarm_type = None
+        self._create_time_from = None
+        self._create_time_to = None
         self._offset = None
         self._limit = None
         self._order_by = None
@@ -104,8 +114,6 @@ class ListAlarmHistoriesRequest:
             self.record_id = record_id
         if name is not None:
             self.name = name
-        if alarm_type is not None:
-            self.alarm_type = alarm_type
         if status is not None:
             self.status = status
         if level is not None:
@@ -118,6 +126,12 @@ class ListAlarmHistoriesRequest:
             self._from = _from
         if to is not None:
             self.to = to
+        if alarm_type is not None:
+            self.alarm_type = alarm_type
+        if create_time_from is not None:
+            self.create_time_from = create_time_from
+        if create_time_to is not None:
+            self.create_time_to = create_time_to
         if offset is not None:
             self.offset = offset
         if limit is not None:
@@ -132,7 +146,7 @@ class ListAlarmHistoriesRequest:
         告警ID,以al开头，后跟22位由字母或数字组成的字符串
 
         :return: The alarm_id of this ListAlarmHistoriesRequest.
-        :rtype: str
+        :rtype: list[str]
         """
         return self._alarm_id
 
@@ -143,7 +157,7 @@ class ListAlarmHistoriesRequest:
         告警ID,以al开头，后跟22位由字母或数字组成的字符串
 
         :param alarm_id: The alarm_id of this ListAlarmHistoriesRequest.
-        :type alarm_id: str
+        :type alarm_id: list[str]
         """
         self._alarm_id = alarm_id
 
@@ -192,35 +206,13 @@ class ListAlarmHistoriesRequest:
         self._name = name
 
     @property
-    def alarm_type(self):
-        r"""Gets the alarm_type of this ListAlarmHistoriesRequest.
-
-        告警类型，event：查询事件类型告警，metric：查询指标类型告警
-
-        :return: The alarm_type of this ListAlarmHistoriesRequest.
-        :rtype: str
-        """
-        return self._alarm_type
-
-    @alarm_type.setter
-    def alarm_type(self, alarm_type):
-        r"""Sets the alarm_type of this ListAlarmHistoriesRequest.
-
-        告警类型，event：查询事件类型告警，metric：查询指标类型告警
-
-        :param alarm_type: The alarm_type of this ListAlarmHistoriesRequest.
-        :type alarm_type: str
-        """
-        self._alarm_type = alarm_type
-
-    @property
     def status(self):
         r"""Gets the status of this ListAlarmHistoriesRequest.
 
         告警规则状态, ok为正常，alarm为告警，invalid为已失效
 
         :return: The status of this ListAlarmHistoriesRequest.
-        :rtype: str
+        :rtype: list[str]
         """
         return self._status
 
@@ -231,7 +223,7 @@ class ListAlarmHistoriesRequest:
         告警规则状态, ok为正常，alarm为告警，invalid为已失效
 
         :param status: The status of this ListAlarmHistoriesRequest.
-        :type status: str
+        :type status: list[str]
         """
         self._status = status
 
@@ -261,7 +253,7 @@ class ListAlarmHistoriesRequest:
     def namespace(self):
         r"""Gets the namespace of this ListAlarmHistoriesRequest.
 
-        查询服务的命名空间，各服务命名空间请参考[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)
+        查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”
 
         :return: The namespace of this ListAlarmHistoriesRequest.
         :rtype: str
@@ -272,7 +264,7 @@ class ListAlarmHistoriesRequest:
     def namespace(self, namespace):
         r"""Sets the namespace of this ListAlarmHistoriesRequest.
 
-        查询服务的命名空间，各服务命名空间请参考[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)
+        查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”
 
         :param namespace: The namespace of this ListAlarmHistoriesRequest.
         :type namespace: str
@@ -305,7 +297,7 @@ class ListAlarmHistoriesRequest:
     def _from(self):
         r"""Gets the _from of this ListAlarmHistoriesRequest.
 
-        查询告警记录的起始时间，例如：2022-02-10T10:05:46+08:00
+        查询告警记录的起始更新时间，例如：2022-02-10T10:05:46+08:00
 
         :return: The _from of this ListAlarmHistoriesRequest.
         :rtype: str
@@ -316,7 +308,7 @@ class ListAlarmHistoriesRequest:
     def _from(self, _from):
         r"""Sets the _from of this ListAlarmHistoriesRequest.
 
-        查询告警记录的起始时间，例如：2022-02-10T10:05:46+08:00
+        查询告警记录的起始更新时间，例如：2022-02-10T10:05:46+08:00
 
         :param _from: The _from of this ListAlarmHistoriesRequest.
         :type _from: str
@@ -327,7 +319,7 @@ class ListAlarmHistoriesRequest:
     def to(self):
         r"""Gets the to of this ListAlarmHistoriesRequest.
 
-        查询告警记录的截止时间，例如：2022-02-10T10:05:47+08:00
+        查询告警记录的截止更新时间，例如：2022-02-10T10:05:47+08:00
 
         :return: The to of this ListAlarmHistoriesRequest.
         :rtype: str
@@ -338,12 +330,78 @@ class ListAlarmHistoriesRequest:
     def to(self, to):
         r"""Sets the to of this ListAlarmHistoriesRequest.
 
-        查询告警记录的截止时间，例如：2022-02-10T10:05:47+08:00
+        查询告警记录的截止更新时间，例如：2022-02-10T10:05:47+08:00
 
         :param to: The to of this ListAlarmHistoriesRequest.
         :type to: str
         """
         self._to = to
+
+    @property
+    def alarm_type(self):
+        r"""Gets the alarm_type of this ListAlarmHistoriesRequest.
+
+        告警类型，event：查询事件类型告警，metric：查询指标类型告警
+
+        :return: The alarm_type of this ListAlarmHistoriesRequest.
+        :rtype: str
+        """
+        return self._alarm_type
+
+    @alarm_type.setter
+    def alarm_type(self, alarm_type):
+        r"""Sets the alarm_type of this ListAlarmHistoriesRequest.
+
+        告警类型，event：查询事件类型告警，metric：查询指标类型告警
+
+        :param alarm_type: The alarm_type of this ListAlarmHistoriesRequest.
+        :type alarm_type: str
+        """
+        self._alarm_type = alarm_type
+
+    @property
+    def create_time_from(self):
+        r"""Gets the create_time_from of this ListAlarmHistoriesRequest.
+
+        查询告警记录的起始创建时间，例如：2022-02-10T10:05:46+08:00
+
+        :return: The create_time_from of this ListAlarmHistoriesRequest.
+        :rtype: str
+        """
+        return self._create_time_from
+
+    @create_time_from.setter
+    def create_time_from(self, create_time_from):
+        r"""Sets the create_time_from of this ListAlarmHistoriesRequest.
+
+        查询告警记录的起始创建时间，例如：2022-02-10T10:05:46+08:00
+
+        :param create_time_from: The create_time_from of this ListAlarmHistoriesRequest.
+        :type create_time_from: str
+        """
+        self._create_time_from = create_time_from
+
+    @property
+    def create_time_to(self):
+        r"""Gets the create_time_to of this ListAlarmHistoriesRequest.
+
+        查询告警记录的截止创建时间，例如：2022-02-10T10:05:47+08:00
+
+        :return: The create_time_to of this ListAlarmHistoriesRequest.
+        :rtype: str
+        """
+        return self._create_time_to
+
+    @create_time_to.setter
+    def create_time_to(self, create_time_to):
+        r"""Sets the create_time_to of this ListAlarmHistoriesRequest.
+
+        查询告警记录的截止创建时间，例如：2022-02-10T10:05:47+08:00
+
+        :param create_time_to: The create_time_to of this ListAlarmHistoriesRequest.
+        :type create_time_to: str
+        """
+        self._create_time_to = create_time_to
 
     @property
     def offset(self):

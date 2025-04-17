@@ -26,6 +26,9 @@ class ApiBaseInfo:
         'auth_type': 'str',
         'auth_opt': 'AuthOpt',
         'cors': 'bool',
+        'trace_enabled': 'bool',
+        'sampling_strategy': 'str',
+        'sampling_param': 'str',
         'match_mode': 'str',
         'backend_type': 'str',
         'remark': 'str',
@@ -53,6 +56,9 @@ class ApiBaseInfo:
         'auth_type': 'auth_type',
         'auth_opt': 'auth_opt',
         'cors': 'cors',
+        'trace_enabled': 'trace_enabled',
+        'sampling_strategy': 'sampling_strategy',
+        'sampling_param': 'sampling_param',
         'match_mode': 'match_mode',
         'backend_type': 'backend_type',
         'remark': 'remark',
@@ -70,7 +76,7 @@ class ApiBaseInfo:
         'is_send_fg_body_base64': 'is_send_fg_body_base64'
     }
 
-    def __init__(self, name=None, type=None, version=None, req_protocol=None, req_method=None, req_uri=None, auth_type=None, auth_opt=None, cors=None, match_mode=None, backend_type=None, remark=None, group_id=None, body_remark=None, result_normal_sample=None, result_failure_sample=None, authorizer_id=None, tags=None, response_id=None, roma_app_id=None, domain_name=None, tag=None, content_type=None, is_send_fg_body_base64=None):
+    def __init__(self, name=None, type=None, version=None, req_protocol=None, req_method=None, req_uri=None, auth_type=None, auth_opt=None, cors=None, trace_enabled=None, sampling_strategy=None, sampling_param=None, match_mode=None, backend_type=None, remark=None, group_id=None, body_remark=None, result_normal_sample=None, result_failure_sample=None, authorizer_id=None, tags=None, response_id=None, roma_app_id=None, domain_name=None, tag=None, content_type=None, is_send_fg_body_base64=None):
         r"""ApiBaseInfo
 
         The model defined in huaweicloud sdk
@@ -93,6 +99,12 @@ class ApiBaseInfo:
         :type auth_opt: :class:`huaweicloudsdkapig.v2.AuthOpt`
         :param cors: 是否支持跨域 - TRUE：支持 - FALSE：不支持
         :type cors: bool
+        :param trace_enabled: 是否开启链路追踪，默认关闭。
+        :type trace_enabled: bool
+        :param sampling_strategy: 采样策略，当选择开启链路追踪时，此字段必填。 - RATE：按比例采样 
+        :type sampling_strategy: str
+        :param sampling_param: 采样参数。 - 当采样策略为RATE时，此字段取值为字符串化的整数，范围为0-100，缺省为&#39;100&#39;，&#39;100&#39;为采集每个请求，建议与后端应用的采样率保持一致。 
+        :type sampling_param: str
         :param match_mode: API的匹配方式 - SWA：前缀匹配 - NORMAL：正常匹配（绝对匹配） 默认：NORMAL
         :type match_mode: str
         :param backend_type: 后端类型 - HTTP：web后端 - FUNCTION：函数工作流，当backend_type取值为FUNCTION时，func_info字段必须传入 - MOCK：模拟的后端，当backend_type取值为MOCK时，mock_info字段必须传入 - GRPC：grpc后端
@@ -136,6 +148,9 @@ class ApiBaseInfo:
         self._auth_type = None
         self._auth_opt = None
         self._cors = None
+        self._trace_enabled = None
+        self._sampling_strategy = None
+        self._sampling_param = None
         self._match_mode = None
         self._backend_type = None
         self._remark = None
@@ -165,6 +180,12 @@ class ApiBaseInfo:
             self.auth_opt = auth_opt
         if cors is not None:
             self.cors = cors
+        if trace_enabled is not None:
+            self.trace_enabled = trace_enabled
+        if sampling_strategy is not None:
+            self.sampling_strategy = sampling_strategy
+        if sampling_param is not None:
+            self.sampling_param = sampling_param
         if match_mode is not None:
             self.match_mode = match_mode
         self.backend_type = backend_type
@@ -387,6 +408,72 @@ class ApiBaseInfo:
         :type cors: bool
         """
         self._cors = cors
+
+    @property
+    def trace_enabled(self):
+        r"""Gets the trace_enabled of this ApiBaseInfo.
+
+        是否开启链路追踪，默认关闭。
+
+        :return: The trace_enabled of this ApiBaseInfo.
+        :rtype: bool
+        """
+        return self._trace_enabled
+
+    @trace_enabled.setter
+    def trace_enabled(self, trace_enabled):
+        r"""Sets the trace_enabled of this ApiBaseInfo.
+
+        是否开启链路追踪，默认关闭。
+
+        :param trace_enabled: The trace_enabled of this ApiBaseInfo.
+        :type trace_enabled: bool
+        """
+        self._trace_enabled = trace_enabled
+
+    @property
+    def sampling_strategy(self):
+        r"""Gets the sampling_strategy of this ApiBaseInfo.
+
+        采样策略，当选择开启链路追踪时，此字段必填。 - RATE：按比例采样 
+
+        :return: The sampling_strategy of this ApiBaseInfo.
+        :rtype: str
+        """
+        return self._sampling_strategy
+
+    @sampling_strategy.setter
+    def sampling_strategy(self, sampling_strategy):
+        r"""Sets the sampling_strategy of this ApiBaseInfo.
+
+        采样策略，当选择开启链路追踪时，此字段必填。 - RATE：按比例采样 
+
+        :param sampling_strategy: The sampling_strategy of this ApiBaseInfo.
+        :type sampling_strategy: str
+        """
+        self._sampling_strategy = sampling_strategy
+
+    @property
+    def sampling_param(self):
+        r"""Gets the sampling_param of this ApiBaseInfo.
+
+        采样参数。 - 当采样策略为RATE时，此字段取值为字符串化的整数，范围为0-100，缺省为'100'，'100'为采集每个请求，建议与后端应用的采样率保持一致。 
+
+        :return: The sampling_param of this ApiBaseInfo.
+        :rtype: str
+        """
+        return self._sampling_param
+
+    @sampling_param.setter
+    def sampling_param(self, sampling_param):
+        r"""Sets the sampling_param of this ApiBaseInfo.
+
+        采样参数。 - 当采样策略为RATE时，此字段取值为字符串化的整数，范围为0-100，缺省为'100'，'100'为采集每个请求，建议与后端应用的采样率保持一致。 
+
+        :param sampling_param: The sampling_param of this ApiBaseInfo.
+        :type sampling_param: str
+        """
+        self._sampling_param = sampling_param
 
     @property
     def match_mode(self):

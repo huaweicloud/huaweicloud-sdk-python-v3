@@ -445,6 +445,142 @@ class DasClient(Client):
 
         return http_info
 
+    def add_full_sql_task(self, request):
+        r"""创建全量SQL明细解析任务
+
+        创建全量SQL明细解析任务
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for AddFullSqlTask
+        :type request: :class:`huaweicloudsdkdas.v3.AddFullSqlTaskRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.AddFullSqlTaskResponse`
+        """
+        http_info = self._add_full_sql_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def add_full_sql_task_invoker(self, request):
+        http_info = self._add_full_sql_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _add_full_sql_task_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/full-sql/add-task",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddFullSqlTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def change_charge_mode(self, request):
+        r"""设置付费模式
+
+        设置付费实例
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ChangeChargeMode
+        :type request: :class:`huaweicloudsdkdas.v3.ChangeChargeModeRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.ChangeChargeModeResponse`
+        """
+        http_info = self._change_charge_mode_http_info(request)
+        return self._call_api(**http_info)
+
+    def change_charge_mode_invoker(self, request):
+        http_info = self._change_charge_mode_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _change_charge_mode_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/cloud-dba/change-payment-mode",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangeChargeModeResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def change_sql_limit_switch_status(self, request):
         r"""设置SQL限流开关状态
 

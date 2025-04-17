@@ -37,7 +37,7 @@ class ListOneClickAlarmsRespOneClickAlarms:
 
         :param one_click_alarm_id: 一键告警ID
         :type one_click_alarm_id: str
-        :param namespace: 查询服务的命名空间，各服务命名空间请参考[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)
+        :param namespace: 查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”
         :type namespace: str
         :param description: 一键告警描述，长度范围[0,256]，该字段默认值为空字符串
         :type description: str
@@ -84,7 +84,7 @@ class ListOneClickAlarmsRespOneClickAlarms:
     def namespace(self):
         r"""Gets the namespace of this ListOneClickAlarmsRespOneClickAlarms.
 
-        查询服务的命名空间，各服务命名空间请参考[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)
+        查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”
 
         :return: The namespace of this ListOneClickAlarmsRespOneClickAlarms.
         :rtype: str
@@ -95,7 +95,7 @@ class ListOneClickAlarmsRespOneClickAlarms:
     def namespace(self, namespace):
         r"""Sets the namespace of this ListOneClickAlarmsRespOneClickAlarms.
 
-        查询服务的命名空间，各服务命名空间请参考[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)
+        查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”
 
         :param namespace: The namespace of this ListOneClickAlarmsRespOneClickAlarms.
         :type namespace: str

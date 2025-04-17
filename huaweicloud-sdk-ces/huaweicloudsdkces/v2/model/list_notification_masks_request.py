@@ -19,16 +19,20 @@ class ListNotificationMasksRequest:
     openapi_types = {
         'offset': 'int',
         'limit': 'int',
+        'sort_key': 'str',
+        'sort_dir': 'str',
         'body': 'ListNotificationMaskRequestBody'
     }
 
     attribute_map = {
         'offset': 'offset',
         'limit': 'limit',
+        'sort_key': 'sort_key',
+        'sort_dir': 'sort_dir',
         'body': 'body'
     }
 
-    def __init__(self, offset=None, limit=None, body=None):
+    def __init__(self, offset=None, limit=None, sort_key=None, sort_dir=None, body=None):
         r"""ListNotificationMasksRequest
 
         The model defined in huaweicloud sdk
@@ -37,6 +41,10 @@ class ListNotificationMasksRequest:
         :type offset: int
         :param limit: 分页大小
         :type limit: int
+        :param sort_key: 排序关键字，与sort_dir同时使用。 目前只支持create_time与update_time create_time表示按创建时间排序，update_time表示按修改时间排序
+        :type sort_key: str
+        :param sort_dir: 排序顺序，与sort_key同时使用。DESC表示降序排序；ASC表示升序排序；
+        :type sort_dir: str
         :param body: Body of the ListNotificationMasksRequest
         :type body: :class:`huaweicloudsdkces.v2.ListNotificationMaskRequestBody`
         """
@@ -45,6 +53,8 @@ class ListNotificationMasksRequest:
 
         self._offset = None
         self._limit = None
+        self._sort_key = None
+        self._sort_dir = None
         self._body = None
         self.discriminator = None
 
@@ -52,6 +62,10 @@ class ListNotificationMasksRequest:
             self.offset = offset
         if limit is not None:
             self.limit = limit
+        if sort_key is not None:
+            self.sort_key = sort_key
+        if sort_dir is not None:
+            self.sort_dir = sort_dir
         if body is not None:
             self.body = body
 
@@ -98,6 +112,50 @@ class ListNotificationMasksRequest:
         :type limit: int
         """
         self._limit = limit
+
+    @property
+    def sort_key(self):
+        r"""Gets the sort_key of this ListNotificationMasksRequest.
+
+        排序关键字，与sort_dir同时使用。 目前只支持create_time与update_time create_time表示按创建时间排序，update_time表示按修改时间排序
+
+        :return: The sort_key of this ListNotificationMasksRequest.
+        :rtype: str
+        """
+        return self._sort_key
+
+    @sort_key.setter
+    def sort_key(self, sort_key):
+        r"""Sets the sort_key of this ListNotificationMasksRequest.
+
+        排序关键字，与sort_dir同时使用。 目前只支持create_time与update_time create_time表示按创建时间排序，update_time表示按修改时间排序
+
+        :param sort_key: The sort_key of this ListNotificationMasksRequest.
+        :type sort_key: str
+        """
+        self._sort_key = sort_key
+
+    @property
+    def sort_dir(self):
+        r"""Gets the sort_dir of this ListNotificationMasksRequest.
+
+        排序顺序，与sort_key同时使用。DESC表示降序排序；ASC表示升序排序；
+
+        :return: The sort_dir of this ListNotificationMasksRequest.
+        :rtype: str
+        """
+        return self._sort_dir
+
+    @sort_dir.setter
+    def sort_dir(self, sort_dir):
+        r"""Sets the sort_dir of this ListNotificationMasksRequest.
+
+        排序顺序，与sort_key同时使用。DESC表示降序排序；ASC表示升序排序；
+
+        :param sort_dir: The sort_dir of this ListNotificationMasksRequest.
+        :type sort_dir: str
+        """
+        self._sort_dir = sort_dir
 
     @property
     def body(self):

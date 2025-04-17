@@ -18,29 +18,33 @@ class CreateAlarmTemplateRequestBody:
 
     openapi_types = {
         'template_name': 'str',
-        'template_description': 'str',
         'template_type': 'int',
+        'template_description': 'str',
+        'is_overwrite': 'bool',
         'policies': 'list[Policies]'
     }
 
     attribute_map = {
         'template_name': 'template_name',
-        'template_description': 'template_description',
         'template_type': 'template_type',
+        'template_description': 'template_description',
+        'is_overwrite': 'is_overwrite',
         'policies': 'policies'
     }
 
-    def __init__(self, template_name=None, template_description=None, template_type=None, policies=None):
+    def __init__(self, template_name=None, template_type=None, template_description=None, is_overwrite=None, policies=None):
         r"""CreateAlarmTemplateRequestBody
 
         The model defined in huaweicloud sdk
 
         :param template_name: 告警模板的名称，以字母或汉字开头，可包含字母、数字、汉字、_、-，长度范围[1,128]
         :type template_name: str
-        :param template_description: 告警模板的描述，长度范围[0,256]，该字段默认值为空字符串
-        :type template_description: str
         :param template_type: 自定义告警模板类型 0：指标 2： 事件
         :type template_type: int
+        :param template_description: 告警模板的描述，长度范围[0,256]，该字段默认值为空字符串
+        :type template_description: str
+        :param is_overwrite: 是否对模板名称已经存在的告警模板进行覆盖。true:覆盖同名告警模板；false：不覆盖，新建告警模板。
+        :type is_overwrite: bool
         :param policies: 告警模板策略列表
         :type policies: list[:class:`huaweicloudsdkces.v2.Policies`]
         """
@@ -48,16 +52,19 @@ class CreateAlarmTemplateRequestBody:
         
 
         self._template_name = None
-        self._template_description = None
         self._template_type = None
+        self._template_description = None
+        self._is_overwrite = None
         self._policies = None
         self.discriminator = None
 
         self.template_name = template_name
-        if template_description is not None:
-            self.template_description = template_description
         if template_type is not None:
             self.template_type = template_type
+        if template_description is not None:
+            self.template_description = template_description
+        if is_overwrite is not None:
+            self.is_overwrite = is_overwrite
         self.policies = policies
 
     @property
@@ -83,6 +90,28 @@ class CreateAlarmTemplateRequestBody:
         self._template_name = template_name
 
     @property
+    def template_type(self):
+        r"""Gets the template_type of this CreateAlarmTemplateRequestBody.
+
+        自定义告警模板类型 0：指标 2： 事件
+
+        :return: The template_type of this CreateAlarmTemplateRequestBody.
+        :rtype: int
+        """
+        return self._template_type
+
+    @template_type.setter
+    def template_type(self, template_type):
+        r"""Sets the template_type of this CreateAlarmTemplateRequestBody.
+
+        自定义告警模板类型 0：指标 2： 事件
+
+        :param template_type: The template_type of this CreateAlarmTemplateRequestBody.
+        :type template_type: int
+        """
+        self._template_type = template_type
+
+    @property
     def template_description(self):
         r"""Gets the template_description of this CreateAlarmTemplateRequestBody.
 
@@ -105,26 +134,26 @@ class CreateAlarmTemplateRequestBody:
         self._template_description = template_description
 
     @property
-    def template_type(self):
-        r"""Gets the template_type of this CreateAlarmTemplateRequestBody.
+    def is_overwrite(self):
+        r"""Gets the is_overwrite of this CreateAlarmTemplateRequestBody.
 
-        自定义告警模板类型 0：指标 2： 事件
+        是否对模板名称已经存在的告警模板进行覆盖。true:覆盖同名告警模板；false：不覆盖，新建告警模板。
 
-        :return: The template_type of this CreateAlarmTemplateRequestBody.
-        :rtype: int
+        :return: The is_overwrite of this CreateAlarmTemplateRequestBody.
+        :rtype: bool
         """
-        return self._template_type
+        return self._is_overwrite
 
-    @template_type.setter
-    def template_type(self, template_type):
-        r"""Sets the template_type of this CreateAlarmTemplateRequestBody.
+    @is_overwrite.setter
+    def is_overwrite(self, is_overwrite):
+        r"""Sets the is_overwrite of this CreateAlarmTemplateRequestBody.
 
-        自定义告警模板类型 0：指标 2： 事件
+        是否对模板名称已经存在的告警模板进行覆盖。true:覆盖同名告警模板；false：不覆盖，新建告警模板。
 
-        :param template_type: The template_type of this CreateAlarmTemplateRequestBody.
-        :type template_type: int
+        :param is_overwrite: The is_overwrite of this CreateAlarmTemplateRequestBody.
+        :type is_overwrite: bool
         """
-        self._template_type = template_type
+        self._is_overwrite = is_overwrite
 
     @property
     def policies(self):

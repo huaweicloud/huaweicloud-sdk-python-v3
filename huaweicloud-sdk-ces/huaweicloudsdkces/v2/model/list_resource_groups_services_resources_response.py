@@ -34,7 +34,7 @@ class ListResourceGroupsServicesResourcesResponse(SdkResponse):
 
         :param count: 资源总数
         :type count: int
-        :param resources: 资源分组关联资源列表
+        :param resources: 资源分组资源列表
         :type resources: list[:class:`huaweicloudsdkces.v2.GetResourceGroupResources`]
         """
         
@@ -75,7 +75,7 @@ class ListResourceGroupsServicesResourcesResponse(SdkResponse):
     def resources(self):
         r"""Gets the resources of this ListResourceGroupsServicesResourcesResponse.
 
-        资源分组关联资源列表
+        资源分组资源列表
 
         :return: The resources of this ListResourceGroupsServicesResourcesResponse.
         :rtype: list[:class:`huaweicloudsdkces.v2.GetResourceGroupResources`]
@@ -86,7 +86,7 @@ class ListResourceGroupsServicesResourcesResponse(SdkResponse):
     def resources(self, resources):
         r"""Sets the resources of this ListResourceGroupsServicesResourcesResponse.
 
-        资源分组关联资源列表
+        资源分组资源列表
 
         :param resources: The resources of this ListResourceGroupsServicesResourcesResponse.
         :type resources: list[:class:`huaweicloudsdkces.v2.GetResourceGroupResources`]

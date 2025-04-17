@@ -69,7 +69,7 @@ class AlarmHistoryItemV2:
         :type alarm_id: str
         :param name: 告警规则的名称，如：alarm-test01。
         :type name: str
-        :param status: 告警记录的状态，取值为ok，alarm，invalid； ok为正常，alarm为告警，invalid为已失效。
+        :param status: 告警记录的状态，取值为ok，alarm，invalid, ok_manual； ok为正常，alarm为告警，invalid为已失效,ok_manual为手动恢复。
         :type status: str
         :param level: 告警记录的告警级别，值为1,2,3,4；1为紧急，2为重要，3为次要，4为提示。
         :type level: int
@@ -81,7 +81,7 @@ class AlarmHistoryItemV2:
         :type begin_time: datetime
         :param end_time: 结束时间，UTC时间
         :type end_time: datetime
-        :param first_alarm_time: 第一次告警时间戳，UTC时间
+        :param first_alarm_time: 第一次告警时间，UTC时间
         :type first_alarm_time: datetime
         :param last_alarm_time: 最后一次告警时间，UTC时间
         :type last_alarm_time: datetime
@@ -230,7 +230,7 @@ class AlarmHistoryItemV2:
     def status(self):
         r"""Gets the status of this AlarmHistoryItemV2.
 
-        告警记录的状态，取值为ok，alarm，invalid； ok为正常，alarm为告警，invalid为已失效。
+        告警记录的状态，取值为ok，alarm，invalid, ok_manual； ok为正常，alarm为告警，invalid为已失效,ok_manual为手动恢复。
 
         :return: The status of this AlarmHistoryItemV2.
         :rtype: str
@@ -241,7 +241,7 @@ class AlarmHistoryItemV2:
     def status(self, status):
         r"""Sets the status of this AlarmHistoryItemV2.
 
-        告警记录的状态，取值为ok，alarm，invalid； ok为正常，alarm为告警，invalid为已失效。
+        告警记录的状态，取值为ok，alarm，invalid, ok_manual； ok为正常，alarm为告警，invalid为已失效,ok_manual为手动恢复。
 
         :param status: The status of this AlarmHistoryItemV2.
         :type status: str
@@ -358,7 +358,7 @@ class AlarmHistoryItemV2:
     def first_alarm_time(self):
         r"""Gets the first_alarm_time of this AlarmHistoryItemV2.
 
-        第一次告警时间戳，UTC时间
+        第一次告警时间，UTC时间
 
         :return: The first_alarm_time of this AlarmHistoryItemV2.
         :rtype: datetime
@@ -369,7 +369,7 @@ class AlarmHistoryItemV2:
     def first_alarm_time(self, first_alarm_time):
         r"""Sets the first_alarm_time of this AlarmHistoryItemV2.
 
-        第一次告警时间戳，UTC时间
+        第一次告警时间，UTC时间
 
         :param first_alarm_time: The first_alarm_time of this AlarmHistoryItemV2.
         :type first_alarm_time: datetime

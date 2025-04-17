@@ -17,6 +17,7 @@ class UpdateWidgetInfo:
     sensitive_list = []
 
     openapi_types = {
+        'group_id': 'str',
         'widget_id': 'str',
         'metrics': 'list[WidgetMetric]',
         'title': 'str',
@@ -30,6 +31,7 @@ class UpdateWidgetInfo:
     }
 
     attribute_map = {
+        'group_id': 'group_id',
         'widget_id': 'widget_id',
         'metrics': 'metrics',
         'title': 'title',
@@ -42,11 +44,13 @@ class UpdateWidgetInfo:
         'unit': 'unit'
     }
 
-    def __init__(self, widget_id=None, metrics=None, title=None, threshold=None, threshold_enabled=None, view=None, metric_display_mode=None, properties=None, location=None, unit=None):
+    def __init__(self, group_id=None, widget_id=None, metrics=None, title=None, threshold=None, threshold_enabled=None, view=None, metric_display_mode=None, properties=None, location=None, unit=None):
         r"""UpdateWidgetInfo
 
         The model defined in huaweicloud sdk
 
+        :param group_id: 视图分区id
+        :type group_id: str
         :param widget_id: 视图id
         :type widget_id: str
         :param metrics: 指标列表
@@ -57,7 +61,7 @@ class UpdateWidgetInfo:
         :type threshold: float
         :param threshold_enabled: 阈值是否展示，true:展示，false:不展示
         :type threshold_enabled: bool
-        :param view: 监控视图图表类型, bar柱状图，line折线图
+        :param view: 监控视图图表类型, bar条形图，line折线图，bar_chart柱状图，table表格，circular_bar环形柱状图，area_chart面积图
         :type view: str
         :param metric_display_mode: 指标展示类型，single 单指标展示，multiple 多指标展示
         :type metric_display_mode: str
@@ -71,6 +75,7 @@ class UpdateWidgetInfo:
         
         
 
+        self._group_id = None
         self._widget_id = None
         self._metrics = None
         self._title = None
@@ -83,6 +88,8 @@ class UpdateWidgetInfo:
         self._unit = None
         self.discriminator = None
 
+        if group_id is not None:
+            self.group_id = group_id
         self.widget_id = widget_id
         if metrics is not None:
             self.metrics = metrics
@@ -102,6 +109,28 @@ class UpdateWidgetInfo:
             self.location = location
         if unit is not None:
             self.unit = unit
+
+    @property
+    def group_id(self):
+        r"""Gets the group_id of this UpdateWidgetInfo.
+
+        视图分区id
+
+        :return: The group_id of this UpdateWidgetInfo.
+        :rtype: str
+        """
+        return self._group_id
+
+    @group_id.setter
+    def group_id(self, group_id):
+        r"""Sets the group_id of this UpdateWidgetInfo.
+
+        视图分区id
+
+        :param group_id: The group_id of this UpdateWidgetInfo.
+        :type group_id: str
+        """
+        self._group_id = group_id
 
     @property
     def widget_id(self):
@@ -217,7 +246,7 @@ class UpdateWidgetInfo:
     def view(self):
         r"""Gets the view of this UpdateWidgetInfo.
 
-        监控视图图表类型, bar柱状图，line折线图
+        监控视图图表类型, bar条形图，line折线图，bar_chart柱状图，table表格，circular_bar环形柱状图，area_chart面积图
 
         :return: The view of this UpdateWidgetInfo.
         :rtype: str
@@ -228,7 +257,7 @@ class UpdateWidgetInfo:
     def view(self, view):
         r"""Sets the view of this UpdateWidgetInfo.
 
-        监控视图图表类型, bar柱状图，line折线图
+        监控视图图表类型, bar条形图，line折线图，bar_chart柱状图，table表格，circular_bar环形柱状图，area_chart面积图
 
         :param view: The view of this UpdateWidgetInfo.
         :type view: str

@@ -37,7 +37,8 @@ class NodeSpec:
         'initialized_conditions': 'list[str]',
         'extend_param': 'NodeExtendParam',
         'hostname_config': 'HostnameConfig',
-        'server_enterprise_project_id': 'str'
+        'server_enterprise_project_id': 'str',
+        'partition': 'str'
     }
 
     attribute_map = {
@@ -61,10 +62,11 @@ class NodeSpec:
         'initialized_conditions': 'initializedConditions',
         'extend_param': 'extendParam',
         'hostname_config': 'hostnameConfig',
-        'server_enterprise_project_id': 'serverEnterpriseProjectID'
+        'server_enterprise_project_id': 'serverEnterpriseProjectID',
+        'partition': 'partition'
     }
 
-    def __init__(self, flavor=None, az=None, os=None, login=None, root_volume=None, data_volumes=None, storage=None, public_ip=None, node_nic_spec=None, count=None, billing_mode=None, taints=None, k8s_tags=None, ecs_group_id=None, dedicated_host_id=None, user_tags=None, runtime=None, initialized_conditions=None, extend_param=None, hostname_config=None, server_enterprise_project_id=None):
+    def __init__(self, flavor=None, az=None, os=None, login=None, root_volume=None, data_volumes=None, storage=None, public_ip=None, node_nic_spec=None, count=None, billing_mode=None, taints=None, k8s_tags=None, ecs_group_id=None, dedicated_host_id=None, user_tags=None, runtime=None, initialized_conditions=None, extend_param=None, hostname_config=None, server_enterprise_project_id=None, partition=None):
         r"""NodeSpec
 
         The model defined in huaweicloud sdk
@@ -111,6 +113,8 @@ class NodeSpec:
         :type hostname_config: :class:`huaweicloudsdkcce.v3.HostnameConfig`
         :param server_enterprise_project_id: 服务器企业项目ID。CCE服务不实现EPS相关特性，该字段仅用于同步服务器企业项目ID。 创建节点/节点池场景：可指定已存在企业项目，当取值为空时，该字段继承集群企业项目属性。 更新节点池场景：配置修改后仅会对新增节点的服务器生效，存量节点需前往EPS界面迁移。 如果更新时不指定值，不会更新该字段。 当该字段为空时，返回集群企业项目。
         :type server_enterprise_project_id: str
+        :param partition: **参数解释**： 表示节点所属分区。分区可以选择中心云[或者[边缘小站](https://support.huaweicloud.com/usermanual-cloudpond/ies_02_0401.html)。](tag:hws)[或者[边缘小站](https://support.huaweicloud.com/intl/zh-cn/usermanual-cloudpond/ies_02_0401.html)。](tag:hws_hk) **约束限制**： 仅开启了对分布式云支持的Turbo集群支持指定该字段。 **取值范围**： - center: 中心云 - 边缘小站的可用区ID  **默认取值**： 不涉及
+        :type partition: str
         """
         
         
@@ -136,6 +140,7 @@ class NodeSpec:
         self._extend_param = None
         self._hostname_config = None
         self._server_enterprise_project_id = None
+        self._partition = None
         self.discriminator = None
 
         self.flavor = flavor
@@ -175,6 +180,8 @@ class NodeSpec:
             self.hostname_config = hostname_config
         if server_enterprise_project_id is not None:
             self.server_enterprise_project_id = server_enterprise_project_id
+        if partition is not None:
+            self.partition = partition
 
     @property
     def flavor(self):
@@ -605,6 +612,28 @@ class NodeSpec:
         :type server_enterprise_project_id: str
         """
         self._server_enterprise_project_id = server_enterprise_project_id
+
+    @property
+    def partition(self):
+        r"""Gets the partition of this NodeSpec.
+
+        **参数解释**： 表示节点所属分区。分区可以选择中心云[或者[边缘小站](https://support.huaweicloud.com/usermanual-cloudpond/ies_02_0401.html)。](tag:hws)[或者[边缘小站](https://support.huaweicloud.com/intl/zh-cn/usermanual-cloudpond/ies_02_0401.html)。](tag:hws_hk) **约束限制**： 仅开启了对分布式云支持的Turbo集群支持指定该字段。 **取值范围**： - center: 中心云 - 边缘小站的可用区ID  **默认取值**： 不涉及
+
+        :return: The partition of this NodeSpec.
+        :rtype: str
+        """
+        return self._partition
+
+    @partition.setter
+    def partition(self, partition):
+        r"""Sets the partition of this NodeSpec.
+
+        **参数解释**： 表示节点所属分区。分区可以选择中心云[或者[边缘小站](https://support.huaweicloud.com/usermanual-cloudpond/ies_02_0401.html)。](tag:hws)[或者[边缘小站](https://support.huaweicloud.com/intl/zh-cn/usermanual-cloudpond/ies_02_0401.html)。](tag:hws_hk) **约束限制**： 仅开启了对分布式云支持的Turbo集群支持指定该字段。 **取值范围**： - center: 中心云 - 边缘小站的可用区ID  **默认取值**： 不涉及
+
+        :param partition: The partition of this NodeSpec.
+        :type partition: str
+        """
+        self._partition = partition
 
     def to_dict(self):
         """Returns the model properties as a dict"""

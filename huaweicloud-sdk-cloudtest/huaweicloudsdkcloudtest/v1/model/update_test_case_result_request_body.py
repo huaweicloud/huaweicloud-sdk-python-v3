@@ -18,21 +18,25 @@ class UpdateTestCaseResultRequestBody:
 
     openapi_types = {
         'service_id': 'int',
+        'plan_id': 'str',
         'execute_list': 'list[UpdateTestCaseResultBean]'
     }
 
     attribute_map = {
         'service_id': 'service_id',
+        'plan_id': 'plan_id',
         'execute_list': 'execute_list'
     }
 
-    def __init__(self, service_id=None, execute_list=None):
+    def __init__(self, service_id=None, plan_id=None, execute_list=None):
         r"""UpdateTestCaseResultRequestBody
 
         The model defined in huaweicloud sdk
 
         :param service_id: 注册测试类型服务接口返回的服务id
         :type service_id: int
+        :param plan_id: 测试计划id
+        :type plan_id: str
         :param execute_list: 测试用例状态信息，数组长度小于等于50
         :type execute_list: list[:class:`huaweicloudsdkcloudtest.v1.UpdateTestCaseResultBean`]
         """
@@ -40,10 +44,13 @@ class UpdateTestCaseResultRequestBody:
         
 
         self._service_id = None
+        self._plan_id = None
         self._execute_list = None
         self.discriminator = None
 
         self.service_id = service_id
+        if plan_id is not None:
+            self.plan_id = plan_id
         self.execute_list = execute_list
 
     @property
@@ -67,6 +74,28 @@ class UpdateTestCaseResultRequestBody:
         :type service_id: int
         """
         self._service_id = service_id
+
+    @property
+    def plan_id(self):
+        r"""Gets the plan_id of this UpdateTestCaseResultRequestBody.
+
+        测试计划id
+
+        :return: The plan_id of this UpdateTestCaseResultRequestBody.
+        :rtype: str
+        """
+        return self._plan_id
+
+    @plan_id.setter
+    def plan_id(self, plan_id):
+        r"""Sets the plan_id of this UpdateTestCaseResultRequestBody.
+
+        测试计划id
+
+        :param plan_id: The plan_id of this UpdateTestCaseResultRequestBody.
+        :type plan_id: str
+        """
+        self._plan_id = plan_id
 
     @property
     def execute_list(self):

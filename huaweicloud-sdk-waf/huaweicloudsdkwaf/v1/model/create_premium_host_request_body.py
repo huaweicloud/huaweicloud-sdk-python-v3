@@ -29,7 +29,8 @@ class CreatePremiumHostRequestBody:
         'loadbalancer_id': 'str',
         'listener_id': 'str',
         'protocol_port': 'int',
-        'description': 'str'
+        'description': 'str',
+        'web_tag': 'str'
     }
 
     attribute_map = {
@@ -45,10 +46,11 @@ class CreatePremiumHostRequestBody:
         'loadbalancer_id': 'loadbalancer_id',
         'listener_id': 'listener_id',
         'protocol_port': 'protocol_port',
-        'description': 'description'
+        'description': 'description',
+        'web_tag': 'web_tag'
     }
 
-    def __init__(self, certificateid=None, certificatename=None, hostname=None, proxy=None, policyid=None, server=None, block_page=None, forward_header_map=None, mode=None, loadbalancer_id=None, listener_id=None, protocol_port=None, description=None):
+    def __init__(self, certificateid=None, certificatename=None, hostname=None, proxy=None, policyid=None, server=None, block_page=None, forward_header_map=None, mode=None, loadbalancer_id=None, listener_id=None, protocol_port=None, description=None, web_tag=None):
         r"""CreatePremiumHostRequestBody
 
         The model defined in huaweicloud sdk
@@ -79,6 +81,8 @@ class CreatePremiumHostRequestBody:
         :type protocol_port: int
         :param description: 防护域名备注
         :type description: str
+        :param web_tag: 网站名称，对应WAF控制台域名详情中的网站名称
+        :type web_tag: str
         """
         
         
@@ -96,6 +100,7 @@ class CreatePremiumHostRequestBody:
         self._listener_id = None
         self._protocol_port = None
         self._description = None
+        self._web_tag = None
         self.discriminator = None
 
         if certificateid is not None:
@@ -121,6 +126,8 @@ class CreatePremiumHostRequestBody:
             self.protocol_port = protocol_port
         if description is not None:
             self.description = description
+        if web_tag is not None:
+            self.web_tag = web_tag
 
     @property
     def certificateid(self):
@@ -403,6 +410,28 @@ class CreatePremiumHostRequestBody:
         :type description: str
         """
         self._description = description
+
+    @property
+    def web_tag(self):
+        r"""Gets the web_tag of this CreatePremiumHostRequestBody.
+
+        网站名称，对应WAF控制台域名详情中的网站名称
+
+        :return: The web_tag of this CreatePremiumHostRequestBody.
+        :rtype: str
+        """
+        return self._web_tag
+
+    @web_tag.setter
+    def web_tag(self, web_tag):
+        r"""Sets the web_tag of this CreatePremiumHostRequestBody.
+
+        网站名称，对应WAF控制台域名详情中的网站名称
+
+        :param web_tag: The web_tag of this CreatePremiumHostRequestBody.
+        :type web_tag: str
+        """
+        self._web_tag = web_tag
 
     def to_dict(self):
         """Returns the model properties as a dict"""

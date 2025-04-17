@@ -23,7 +23,12 @@ class ListResourceGroupsServicesResourcesRequest:
         'limit': 'str',
         'offset': 'int',
         'status': 'str',
-        'dim_value': 'str'
+        'dim_value': 'str',
+        'tag': 'str',
+        'extend_relation_id': 'str',
+        'product_name': 'str',
+        'resource_name': 'str',
+        'event_status': 'str'
     }
 
     attribute_map = {
@@ -33,10 +38,15 @@ class ListResourceGroupsServicesResourcesRequest:
         'limit': 'limit',
         'offset': 'offset',
         'status': 'status',
-        'dim_value': 'dim_value'
+        'dim_value': 'dim_value',
+        'tag': 'tag',
+        'extend_relation_id': 'extend_relation_id',
+        'product_name': 'product_name',
+        'resource_name': 'resource_name',
+        'event_status': 'event_status'
     }
 
-    def __init__(self, group_id=None, service=None, dim_name=None, limit=None, offset=None, status=None, dim_value=None):
+    def __init__(self, group_id=None, service=None, dim_name=None, limit=None, offset=None, status=None, dim_value=None, tag=None, extend_relation_id=None, product_name=None, resource_name=None, event_status=None):
         r"""ListResourceGroupsServicesResourcesRequest
 
         The model defined in huaweicloud sdk
@@ -55,6 +65,16 @@ class ListResourceGroupsServicesResourcesRequest:
         :type status: str
         :param dim_value: 资源维度值，不支持模糊匹配，但是多维度资源可以只指定一个维度值
         :type dim_value: str
+        :param tag: 资源的标签信息，格式：\&quot;[key]\&quot;:\&quot;[value]\&quot;，样例参考：\&quot;ssss\&quot;:\&quot;1111\&quot;
+        :type tag: str
+        :param extend_relation_id: 企业项目ID
+        :type extend_relation_id: str
+        :param product_name: 资源分组的云产品，一般由\&quot;服务命名空间,服务首层维度名称\&quot;组成，如\&quot;SYS.ECS,instance_id\&quot;
+        :type product_name: str
+        :param resource_name: 资源名称
+        :type resource_name: str
+        :param event_status: 按事件告警状态信息进行过滤，取值只能为health（已设置事件告警规则且无事件告警触发的资源）、unhealthy（已设置事件告警规则且有事件告警触发的资源）、no_alarm_rule（未设置事件告警规则的资源）
+        :type event_status: str
         """
         
         
@@ -66,6 +86,11 @@ class ListResourceGroupsServicesResourcesRequest:
         self._offset = None
         self._status = None
         self._dim_value = None
+        self._tag = None
+        self._extend_relation_id = None
+        self._product_name = None
+        self._resource_name = None
+        self._event_status = None
         self.discriminator = None
 
         self.group_id = group_id
@@ -80,6 +105,16 @@ class ListResourceGroupsServicesResourcesRequest:
             self.status = status
         if dim_value is not None:
             self.dim_value = dim_value
+        if tag is not None:
+            self.tag = tag
+        if extend_relation_id is not None:
+            self.extend_relation_id = extend_relation_id
+        if product_name is not None:
+            self.product_name = product_name
+        if resource_name is not None:
+            self.resource_name = resource_name
+        if event_status is not None:
+            self.event_status = event_status
 
     @property
     def group_id(self):
@@ -234,6 +269,116 @@ class ListResourceGroupsServicesResourcesRequest:
         :type dim_value: str
         """
         self._dim_value = dim_value
+
+    @property
+    def tag(self):
+        r"""Gets the tag of this ListResourceGroupsServicesResourcesRequest.
+
+        资源的标签信息，格式：\"[key]\":\"[value]\"，样例参考：\"ssss\":\"1111\"
+
+        :return: The tag of this ListResourceGroupsServicesResourcesRequest.
+        :rtype: str
+        """
+        return self._tag
+
+    @tag.setter
+    def tag(self, tag):
+        r"""Sets the tag of this ListResourceGroupsServicesResourcesRequest.
+
+        资源的标签信息，格式：\"[key]\":\"[value]\"，样例参考：\"ssss\":\"1111\"
+
+        :param tag: The tag of this ListResourceGroupsServicesResourcesRequest.
+        :type tag: str
+        """
+        self._tag = tag
+
+    @property
+    def extend_relation_id(self):
+        r"""Gets the extend_relation_id of this ListResourceGroupsServicesResourcesRequest.
+
+        企业项目ID
+
+        :return: The extend_relation_id of this ListResourceGroupsServicesResourcesRequest.
+        :rtype: str
+        """
+        return self._extend_relation_id
+
+    @extend_relation_id.setter
+    def extend_relation_id(self, extend_relation_id):
+        r"""Sets the extend_relation_id of this ListResourceGroupsServicesResourcesRequest.
+
+        企业项目ID
+
+        :param extend_relation_id: The extend_relation_id of this ListResourceGroupsServicesResourcesRequest.
+        :type extend_relation_id: str
+        """
+        self._extend_relation_id = extend_relation_id
+
+    @property
+    def product_name(self):
+        r"""Gets the product_name of this ListResourceGroupsServicesResourcesRequest.
+
+        资源分组的云产品，一般由\"服务命名空间,服务首层维度名称\"组成，如\"SYS.ECS,instance_id\"
+
+        :return: The product_name of this ListResourceGroupsServicesResourcesRequest.
+        :rtype: str
+        """
+        return self._product_name
+
+    @product_name.setter
+    def product_name(self, product_name):
+        r"""Sets the product_name of this ListResourceGroupsServicesResourcesRequest.
+
+        资源分组的云产品，一般由\"服务命名空间,服务首层维度名称\"组成，如\"SYS.ECS,instance_id\"
+
+        :param product_name: The product_name of this ListResourceGroupsServicesResourcesRequest.
+        :type product_name: str
+        """
+        self._product_name = product_name
+
+    @property
+    def resource_name(self):
+        r"""Gets the resource_name of this ListResourceGroupsServicesResourcesRequest.
+
+        资源名称
+
+        :return: The resource_name of this ListResourceGroupsServicesResourcesRequest.
+        :rtype: str
+        """
+        return self._resource_name
+
+    @resource_name.setter
+    def resource_name(self, resource_name):
+        r"""Sets the resource_name of this ListResourceGroupsServicesResourcesRequest.
+
+        资源名称
+
+        :param resource_name: The resource_name of this ListResourceGroupsServicesResourcesRequest.
+        :type resource_name: str
+        """
+        self._resource_name = resource_name
+
+    @property
+    def event_status(self):
+        r"""Gets the event_status of this ListResourceGroupsServicesResourcesRequest.
+
+        按事件告警状态信息进行过滤，取值只能为health（已设置事件告警规则且无事件告警触发的资源）、unhealthy（已设置事件告警规则且有事件告警触发的资源）、no_alarm_rule（未设置事件告警规则的资源）
+
+        :return: The event_status of this ListResourceGroupsServicesResourcesRequest.
+        :rtype: str
+        """
+        return self._event_status
+
+    @event_status.setter
+    def event_status(self, event_status):
+        r"""Sets the event_status of this ListResourceGroupsServicesResourcesRequest.
+
+        按事件告警状态信息进行过滤，取值只能为health（已设置事件告警规则且无事件告警触发的资源）、unhealthy（已设置事件告警规则且有事件告警触发的资源）、no_alarm_rule（未设置事件告警规则的资源）
+
+        :param event_status: The event_status of this ListResourceGroupsServicesResourcesRequest.
+        :type event_status: str
+        """
+        self._event_status = event_status
 
     def to_dict(self):
         """Returns the model properties as a dict"""

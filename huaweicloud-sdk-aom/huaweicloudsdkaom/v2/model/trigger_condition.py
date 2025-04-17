@@ -34,7 +34,7 @@ class TriggerCondition:
         'aggregation_window': 'str',
         'cmdb': 'CmdbInfo',
         'query_match': 'str',
-        'query_param': 'str',
+        'query_param': 'object',
         'aom_monitor_level': 'str',
         'aggregate_type': 'str',
         'metric_statistic_method': 'str',
@@ -108,7 +108,7 @@ class TriggerCondition:
         :param query_match: 查询筛选条件。
         :type query_match: str
         :param query_param: 查询参数
-        :type query_param: str
+        :type query_param: object
         :param aom_monitor_level: 监控层级。
         :type aom_monitor_level: str
         :param aggregate_type: 聚合方式。 - “by”：不分组 - “avg” - “max” - “min” - “sum”
@@ -565,7 +565,7 @@ class TriggerCondition:
         查询参数
 
         :return: The query_param of this TriggerCondition.
-        :rtype: str
+        :rtype: object
         """
         return self._query_param
 
@@ -576,7 +576,7 @@ class TriggerCondition:
         查询参数
 
         :param query_param: The query_param of this TriggerCondition.
-        :type query_param: str
+        :type query_param: object
         """
         self._query_param = query_param
 

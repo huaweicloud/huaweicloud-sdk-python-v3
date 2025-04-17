@@ -24,6 +24,7 @@ class Policies:
         'filter': 'str',
         'comparison_operator': 'str',
         'value': 'float',
+        'hierarchical_value': 'HierarchicalValue',
         'unit': 'str',
         'count': 'int',
         'alarm_level': 'int',
@@ -38,31 +39,34 @@ class Policies:
         'filter': 'filter',
         'comparison_operator': 'comparison_operator',
         'value': 'value',
+        'hierarchical_value': 'hierarchical_value',
         'unit': 'unit',
         'count': 'count',
         'alarm_level': 'alarm_level',
         'suppress_duration': 'suppress_duration'
     }
 
-    def __init__(self, namespace=None, dimension_name=None, metric_name=None, period=None, filter=None, comparison_operator=None, value=None, unit=None, count=None, alarm_level=None, suppress_duration=None):
+    def __init__(self, namespace=None, dimension_name=None, metric_name=None, period=None, filter=None, comparison_operator=None, value=None, hierarchical_value=None, unit=None, count=None, alarm_level=None, suppress_duration=None):
         r"""Policies
 
         The model defined in huaweicloud sdk
 
-        :param namespace: 查询服务的命名空间，各服务命名空间请参考[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)
+        :param namespace: 查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”
         :type namespace: str
-        :param dimension_name: 资源维度，必须以字母开头，多维度用\&quot;,\&quot;分割，只能包含0-9/a-z/A-Z/_/-，每个维度的最大长度为32
+        :param dimension_name: 资源维度，必须以字母开头，多维度用\&quot;,\&quot;分割，只能包含0-9/a-z/A-Z/_/-，每个维度的最大长度为32, 事件告警模板DimensionName为空
         :type dimension_name: str
-        :param metric_name: 资源的监控指标名称，必须以字母开头，只能包含0-9/a-z/A-Z/_，字符长度最短为1，最大为64；如：弹性云服务器中的监控指标cpu_util，表示弹性服务器的CPU使用率；文档数据库中的指标mongo001_command_ps，表示command执行频率；各服务的指标名称可查看：“[服务指标名称](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
+        :param metric_name: 资源的监控指标名称，必须以字母开头，只能包含0-9/a-z/A-Z/_，字符长度最短为1，最大为64；如：弹性云服务器中的监控指标cpu_util，表示弹性服务器的CPU使用率；文档数据库中的指标mongo001_command_ps，表示command执行频率；各服务的指标名称可查看：“[服务指标名称](ces_03_0059.xml)”。
         :type metric_name: str
         :param period: 告警条件判断周期,单位为秒
         :type period: int
         :param filter: 数据聚合方式
         :type filter: str
-        :param comparison_operator: 告警阈值的比较条件，支持的值为(&gt;|&lt;|&gt;&#x3D;|&lt;&#x3D;|&#x3D;|!&#x3D;|cycle_decrease|cycle_increase|cycle_wave)，cycle_decrease为环比下降，cycle_increase为环比上升，cycle_wave为环比波动
+        :param comparison_operator: 阈值符号, 支持的值为(&gt;|&lt;|&gt;&#x3D;|&lt;&#x3D;|&#x3D;|!&#x3D;|cycle_decrease|cycle_increase|cycle_wave);cycle_decrease为环比下降,cycle_increase为环比上升,cycle_wave为环比波动； 指标告警可以使用的阈值符号有&gt;、&gt;&#x3D;、&lt;、&lt;&#x3D;、&#x3D;、!&#x3D;、cycle_decrease、cycle_increase、cycle_wave； 事件告警可以使用的阈值符号为&gt;、&gt;&#x3D;、&lt;、&lt;&#x3D;、&#x3D;、!&#x3D;； 
         :type comparison_operator: str
-        :param value: 告警阈值(Number.MAX_VALUE)
+        :param value: 告警阈值(Number.MAX_VALUE)。单一阈值时value和alarm_level配对使用，当hierarchical_value和value同时使用时以hierarchical_value为准。
         :type value: float
+        :param hierarchical_value: 
+        :type hierarchical_value: :class:`huaweicloudsdkces.v2.HierarchicalValue`
         :param unit: 数据的单位字符串，长度不超过32
         :type unit: str
         :param count: 告警连续触发次数，事件告警时参数值为1~180（包括1和180）；指标告警和站点告警时，次数采用枚举值，枚举值分别为：1、2、3、4、5、10、15、30、60、90、120、180
@@ -82,6 +86,7 @@ class Policies:
         self._filter = None
         self._comparison_operator = None
         self._value = None
+        self._hierarchical_value = None
         self._unit = None
         self._count = None
         self._alarm_level = None
@@ -97,6 +102,8 @@ class Policies:
         self.comparison_operator = comparison_operator
         if value is not None:
             self.value = value
+        if hierarchical_value is not None:
+            self.hierarchical_value = hierarchical_value
         if unit is not None:
             self.unit = unit
         self.count = count
@@ -108,7 +115,7 @@ class Policies:
     def namespace(self):
         r"""Gets the namespace of this Policies.
 
-        查询服务的命名空间，各服务命名空间请参考[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)
+        查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”
 
         :return: The namespace of this Policies.
         :rtype: str
@@ -119,7 +126,7 @@ class Policies:
     def namespace(self, namespace):
         r"""Sets the namespace of this Policies.
 
-        查询服务的命名空间，各服务命名空间请参考[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)
+        查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”
 
         :param namespace: The namespace of this Policies.
         :type namespace: str
@@ -130,7 +137,7 @@ class Policies:
     def dimension_name(self):
         r"""Gets the dimension_name of this Policies.
 
-        资源维度，必须以字母开头，多维度用\",\"分割，只能包含0-9/a-z/A-Z/_/-，每个维度的最大长度为32
+        资源维度，必须以字母开头，多维度用\",\"分割，只能包含0-9/a-z/A-Z/_/-，每个维度的最大长度为32, 事件告警模板DimensionName为空
 
         :return: The dimension_name of this Policies.
         :rtype: str
@@ -141,7 +148,7 @@ class Policies:
     def dimension_name(self, dimension_name):
         r"""Sets the dimension_name of this Policies.
 
-        资源维度，必须以字母开头，多维度用\",\"分割，只能包含0-9/a-z/A-Z/_/-，每个维度的最大长度为32
+        资源维度，必须以字母开头，多维度用\",\"分割，只能包含0-9/a-z/A-Z/_/-，每个维度的最大长度为32, 事件告警模板DimensionName为空
 
         :param dimension_name: The dimension_name of this Policies.
         :type dimension_name: str
@@ -152,7 +159,7 @@ class Policies:
     def metric_name(self):
         r"""Gets the metric_name of this Policies.
 
-        资源的监控指标名称，必须以字母开头，只能包含0-9/a-z/A-Z/_，字符长度最短为1，最大为64；如：弹性云服务器中的监控指标cpu_util，表示弹性服务器的CPU使用率；文档数据库中的指标mongo001_command_ps，表示command执行频率；各服务的指标名称可查看：“[服务指标名称](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
+        资源的监控指标名称，必须以字母开头，只能包含0-9/a-z/A-Z/_，字符长度最短为1，最大为64；如：弹性云服务器中的监控指标cpu_util，表示弹性服务器的CPU使用率；文档数据库中的指标mongo001_command_ps，表示command执行频率；各服务的指标名称可查看：“[服务指标名称](ces_03_0059.xml)”。
 
         :return: The metric_name of this Policies.
         :rtype: str
@@ -163,7 +170,7 @@ class Policies:
     def metric_name(self, metric_name):
         r"""Sets the metric_name of this Policies.
 
-        资源的监控指标名称，必须以字母开头，只能包含0-9/a-z/A-Z/_，字符长度最短为1，最大为64；如：弹性云服务器中的监控指标cpu_util，表示弹性服务器的CPU使用率；文档数据库中的指标mongo001_command_ps，表示command执行频率；各服务的指标名称可查看：“[服务指标名称](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
+        资源的监控指标名称，必须以字母开头，只能包含0-9/a-z/A-Z/_，字符长度最短为1，最大为64；如：弹性云服务器中的监控指标cpu_util，表示弹性服务器的CPU使用率；文档数据库中的指标mongo001_command_ps，表示command执行频率；各服务的指标名称可查看：“[服务指标名称](ces_03_0059.xml)”。
 
         :param metric_name: The metric_name of this Policies.
         :type metric_name: str
@@ -218,7 +225,7 @@ class Policies:
     def comparison_operator(self):
         r"""Gets the comparison_operator of this Policies.
 
-        告警阈值的比较条件，支持的值为(>|<|>=|<=|=|!=|cycle_decrease|cycle_increase|cycle_wave)，cycle_decrease为环比下降，cycle_increase为环比上升，cycle_wave为环比波动
+        阈值符号, 支持的值为(>|<|>=|<=|=|!=|cycle_decrease|cycle_increase|cycle_wave);cycle_decrease为环比下降,cycle_increase为环比上升,cycle_wave为环比波动； 指标告警可以使用的阈值符号有>、>=、<、<=、=、!=、cycle_decrease、cycle_increase、cycle_wave； 事件告警可以使用的阈值符号为>、>=、<、<=、=、!=； 
 
         :return: The comparison_operator of this Policies.
         :rtype: str
@@ -229,7 +236,7 @@ class Policies:
     def comparison_operator(self, comparison_operator):
         r"""Sets the comparison_operator of this Policies.
 
-        告警阈值的比较条件，支持的值为(>|<|>=|<=|=|!=|cycle_decrease|cycle_increase|cycle_wave)，cycle_decrease为环比下降，cycle_increase为环比上升，cycle_wave为环比波动
+        阈值符号, 支持的值为(>|<|>=|<=|=|!=|cycle_decrease|cycle_increase|cycle_wave);cycle_decrease为环比下降,cycle_increase为环比上升,cycle_wave为环比波动； 指标告警可以使用的阈值符号有>、>=、<、<=、=、!=、cycle_decrease、cycle_increase、cycle_wave； 事件告警可以使用的阈值符号为>、>=、<、<=、=、!=； 
 
         :param comparison_operator: The comparison_operator of this Policies.
         :type comparison_operator: str
@@ -240,7 +247,7 @@ class Policies:
     def value(self):
         r"""Gets the value of this Policies.
 
-        告警阈值(Number.MAX_VALUE)
+        告警阈值(Number.MAX_VALUE)。单一阈值时value和alarm_level配对使用，当hierarchical_value和value同时使用时以hierarchical_value为准。
 
         :return: The value of this Policies.
         :rtype: float
@@ -251,12 +258,30 @@ class Policies:
     def value(self, value):
         r"""Sets the value of this Policies.
 
-        告警阈值(Number.MAX_VALUE)
+        告警阈值(Number.MAX_VALUE)。单一阈值时value和alarm_level配对使用，当hierarchical_value和value同时使用时以hierarchical_value为准。
 
         :param value: The value of this Policies.
         :type value: float
         """
         self._value = value
+
+    @property
+    def hierarchical_value(self):
+        r"""Gets the hierarchical_value of this Policies.
+
+        :return: The hierarchical_value of this Policies.
+        :rtype: :class:`huaweicloudsdkces.v2.HierarchicalValue`
+        """
+        return self._hierarchical_value
+
+    @hierarchical_value.setter
+    def hierarchical_value(self, hierarchical_value):
+        r"""Sets the hierarchical_value of this Policies.
+
+        :param hierarchical_value: The hierarchical_value of this Policies.
+        :type hierarchical_value: :class:`huaweicloudsdkces.v2.HierarchicalValue`
+        """
+        self._hierarchical_value = hierarchical_value
 
     @property
     def unit(self):

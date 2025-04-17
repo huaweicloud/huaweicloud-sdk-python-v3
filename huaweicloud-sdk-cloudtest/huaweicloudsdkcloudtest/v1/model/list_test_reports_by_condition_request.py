@@ -19,7 +19,7 @@ class ListTestReportsByConditionRequest:
     openapi_types = {
         'project_id': 'str',
         'page_size': 'int',
-        'offset': 'int',
+        'page_no': 'str',
         'key_word': 'str',
         'own': 'bool'
     }
@@ -27,12 +27,12 @@ class ListTestReportsByConditionRequest:
     attribute_map = {
         'project_id': 'project_id',
         'page_size': 'page_size',
-        'offset': 'offset',
+        'page_no': 'page_no',
         'key_word': 'key_word',
         'own': 'own'
     }
 
-    def __init__(self, project_id=None, page_size=None, offset=None, key_word=None, own=None):
+    def __init__(self, project_id=None, page_size=None, page_no=None, key_word=None, own=None):
         r"""ListTestReportsByConditionRequest
 
         The model defined in huaweicloud sdk
@@ -41,8 +41,8 @@ class ListTestReportsByConditionRequest:
         :type project_id: str
         :param page_size: 每页显示的条目数量,最大支持200条
         :type page_size: int
-        :param offset: 页数，page_no大于等于1
-        :type offset: int
+        :param page_no: 当前页数
+        :type page_no: str
         :param key_word: 名称关键词
         :type key_word: str
         :param own: 是否是我的测试报告
@@ -53,14 +53,15 @@ class ListTestReportsByConditionRequest:
 
         self._project_id = None
         self._page_size = None
-        self._offset = None
+        self._page_no = None
         self._key_word = None
         self._own = None
         self.discriminator = None
 
         self.project_id = project_id
         self.page_size = page_size
-        self.offset = offset
+        if page_no is not None:
+            self.page_no = page_no
         if key_word is not None:
             self.key_word = key_word
         if own is not None:
@@ -111,26 +112,26 @@ class ListTestReportsByConditionRequest:
         self._page_size = page_size
 
     @property
-    def offset(self):
-        r"""Gets the offset of this ListTestReportsByConditionRequest.
+    def page_no(self):
+        r"""Gets the page_no of this ListTestReportsByConditionRequest.
 
-        页数，page_no大于等于1
+        当前页数
 
-        :return: The offset of this ListTestReportsByConditionRequest.
-        :rtype: int
+        :return: The page_no of this ListTestReportsByConditionRequest.
+        :rtype: str
         """
-        return self._offset
+        return self._page_no
 
-    @offset.setter
-    def offset(self, offset):
-        r"""Sets the offset of this ListTestReportsByConditionRequest.
+    @page_no.setter
+    def page_no(self, page_no):
+        r"""Sets the page_no of this ListTestReportsByConditionRequest.
 
-        页数，page_no大于等于1
+        当前页数
 
-        :param offset: The offset of this ListTestReportsByConditionRequest.
-        :type offset: int
+        :param page_no: The page_no of this ListTestReportsByConditionRequest.
+        :type page_no: str
         """
-        self._offset = offset
+        self._page_no = page_no
 
     @property
     def key_word(self):

@@ -76,7 +76,7 @@ class StartSmartChatJobResponse(SdkResponse):
         :type chat_access_rest_address: str
         :param is_transparent: 是否透明背景
         :type is_transparent: bool
-        :param default_language: 默认语言，智能交互接口使用。默认值CN。 * CN：中文。 * EN：英文。
+        :param default_language: 默认语言，智能交互接口使用。默认值CN。 * CN：中文。 * EN：英文。 * ESP：西班牙语（仅海外站点支持） * por：葡萄牙语（仅海外站点支持） * Arabic：阿拉伯语（仅海外站点支持） * Thai：泰语（仅海外站点支持）
         :type default_language: str
         :param x_request_id: 
         :type x_request_id: str
@@ -356,7 +356,7 @@ class StartSmartChatJobResponse(SdkResponse):
     def default_language(self):
         r"""Gets the default_language of this StartSmartChatJobResponse.
 
-        默认语言，智能交互接口使用。默认值CN。 * CN：中文。 * EN：英文。
+        默认语言，智能交互接口使用。默认值CN。 * CN：中文。 * EN：英文。 * ESP：西班牙语（仅海外站点支持） * por：葡萄牙语（仅海外站点支持） * Arabic：阿拉伯语（仅海外站点支持） * Thai：泰语（仅海外站点支持）
 
         :return: The default_language of this StartSmartChatJobResponse.
         :rtype: str
@@ -367,7 +367,7 @@ class StartSmartChatJobResponse(SdkResponse):
     def default_language(self, default_language):
         r"""Sets the default_language of this StartSmartChatJobResponse.
 
-        默认语言，智能交互接口使用。默认值CN。 * CN：中文。 * EN：英文。
+        默认语言，智能交互接口使用。默认值CN。 * CN：中文。 * EN：英文。 * ESP：西班牙语（仅海外站点支持） * por：葡萄牙语（仅海外站点支持） * Arabic：阿拉伯语（仅海外站点支持） * Thai：泰语（仅海外站点支持）
 
         :param default_language: The default_language of this StartSmartChatJobResponse.
         :type default_language: str

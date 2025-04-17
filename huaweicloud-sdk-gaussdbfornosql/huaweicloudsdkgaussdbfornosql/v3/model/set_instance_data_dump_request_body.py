@@ -43,8 +43,7 @@ class SetInstanceDataDumpRequestBody:
         self._action = None
         self.discriminator = None
 
-        if bucket_name is not None:
-            self.bucket_name = bucket_name
+        self.bucket_name = bucket_name
         self.action = action
 
     @property

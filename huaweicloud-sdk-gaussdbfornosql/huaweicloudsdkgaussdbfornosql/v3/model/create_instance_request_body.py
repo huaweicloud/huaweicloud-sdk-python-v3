@@ -36,9 +36,7 @@ class CreateInstanceRequestBody:
         'charge_info': 'ChargeInfoOption',
         'restore_info': 'RestoreInfo',
         'port': 'str',
-        'ipv6_enabled': 'bool',
-        'availability_zone_detail': 'AvailabilityZoneDetail',
-        'lb_access_control_settings': 'LbAccessControlSettings'
+        'availability_zone_detail': 'AvailabilityZoneDetail'
     }
 
     attribute_map = {
@@ -61,12 +59,10 @@ class CreateInstanceRequestBody:
         'charge_info': 'charge_info',
         'restore_info': 'restore_info',
         'port': 'port',
-        'ipv6_enabled': 'ipv6_enabled',
-        'availability_zone_detail': 'availability_zone_detail',
-        'lb_access_control_settings': 'lb_access_control_settings'
+        'availability_zone_detail': 'availability_zone_detail'
     }
 
-    def __init__(self, name=None, datastore=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, security_group_id=None, password=None, mode=None, product_type=None, flavor=None, configuration_id=None, backup_strategy=None, enterprise_project_id=None, dedicated_resource_id=None, ssl_option=None, charge_info=None, restore_info=None, port=None, ipv6_enabled=None, availability_zone_detail=None, lb_access_control_settings=None):
+    def __init__(self, name=None, datastore=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, security_group_id=None, password=None, mode=None, product_type=None, flavor=None, configuration_id=None, backup_strategy=None, enterprise_project_id=None, dedicated_resource_id=None, ssl_option=None, charge_info=None, restore_info=None, port=None, availability_zone_detail=None):
         r"""CreateInstanceRequestBody
 
         The model defined in huaweicloud sdk
@@ -109,12 +105,8 @@ class CreateInstanceRequestBody:
         :type restore_info: :class:`huaweicloudsdkgaussdbfornosql.v3.RestoreInfo`
         :param port: 数据库访问端口号。 目前仅支持GeminiDB Redis实例支持自定义端口，取值范围为：1024~65535，禁用端口号为：2180、2887、3887、6377、6378、6380、8018、8079、8091、8479、8484、8999、12017、12333、50069。 不指定端口时，创建GeminiDB Redis实例的访问端口默认为6379。 如果该实例计划用于搭建双活容灾场景，请配置为8635端口。
         :type port: str
-        :param ipv6_enabled: 是否启用IPv6。默认 - true: 启用IPv6。 - false: 不启用IPv6，默认为不启用。
-        :type ipv6_enabled: bool
         :param availability_zone_detail: 
         :type availability_zone_detail: :class:`huaweicloudsdkgaussdbfornosql.v3.AvailabilityZoneDetail`
-        :param lb_access_control_settings: 
-        :type lb_access_control_settings: :class:`huaweicloudsdkgaussdbfornosql.v3.LbAccessControlSettings`
         """
         
         
@@ -138,9 +130,7 @@ class CreateInstanceRequestBody:
         self._charge_info = None
         self._restore_info = None
         self._port = None
-        self._ipv6_enabled = None
         self._availability_zone_detail = None
-        self._lb_access_control_settings = None
         self.discriminator = None
 
         self.name = name
@@ -171,12 +161,8 @@ class CreateInstanceRequestBody:
             self.restore_info = restore_info
         if port is not None:
             self.port = port
-        if ipv6_enabled is not None:
-            self.ipv6_enabled = ipv6_enabled
         if availability_zone_detail is not None:
             self.availability_zone_detail = availability_zone_detail
-        if lb_access_control_settings is not None:
-            self.lb_access_control_settings = lb_access_control_settings
 
     @property
     def name(self):
@@ -581,28 +567,6 @@ class CreateInstanceRequestBody:
         self._port = port
 
     @property
-    def ipv6_enabled(self):
-        r"""Gets the ipv6_enabled of this CreateInstanceRequestBody.
-
-        是否启用IPv6。默认 - true: 启用IPv6。 - false: 不启用IPv6，默认为不启用。
-
-        :return: The ipv6_enabled of this CreateInstanceRequestBody.
-        :rtype: bool
-        """
-        return self._ipv6_enabled
-
-    @ipv6_enabled.setter
-    def ipv6_enabled(self, ipv6_enabled):
-        r"""Sets the ipv6_enabled of this CreateInstanceRequestBody.
-
-        是否启用IPv6。默认 - true: 启用IPv6。 - false: 不启用IPv6，默认为不启用。
-
-        :param ipv6_enabled: The ipv6_enabled of this CreateInstanceRequestBody.
-        :type ipv6_enabled: bool
-        """
-        self._ipv6_enabled = ipv6_enabled
-
-    @property
     def availability_zone_detail(self):
         r"""Gets the availability_zone_detail of this CreateInstanceRequestBody.
 
@@ -619,24 +583,6 @@ class CreateInstanceRequestBody:
         :type availability_zone_detail: :class:`huaweicloudsdkgaussdbfornosql.v3.AvailabilityZoneDetail`
         """
         self._availability_zone_detail = availability_zone_detail
-
-    @property
-    def lb_access_control_settings(self):
-        r"""Gets the lb_access_control_settings of this CreateInstanceRequestBody.
-
-        :return: The lb_access_control_settings of this CreateInstanceRequestBody.
-        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.LbAccessControlSettings`
-        """
-        return self._lb_access_control_settings
-
-    @lb_access_control_settings.setter
-    def lb_access_control_settings(self, lb_access_control_settings):
-        r"""Sets the lb_access_control_settings of this CreateInstanceRequestBody.
-
-        :param lb_access_control_settings: The lb_access_control_settings of this CreateInstanceRequestBody.
-        :type lb_access_control_settings: :class:`huaweicloudsdkgaussdbfornosql.v3.LbAccessControlSettings`
-        """
-        self._lb_access_control_settings = lb_access_control_settings
 
     def to_dict(self):
         """Returns the model properties as a dict"""

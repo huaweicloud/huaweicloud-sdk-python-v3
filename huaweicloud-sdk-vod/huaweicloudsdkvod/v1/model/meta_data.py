@@ -55,7 +55,7 @@ class MetaData:
         :type pack_type: str
         :param codec: 视频编码格式。  取值如下： - MPEG-2 - MPEG-4 - H.264 - H.265 - WMV - Vorbis - AAC - AC-3 - AMR - APE - FLAC - MP3 - MP2 - WMA - PCM - ADPCM - WavPack
         :type codec: str
-        :param duration: 视频时长。  若视频的原时长为非整数，则该字段值为原时长的向下取整。 若视频的原时长小于1，则该字段值为1。
+        :param duration: 视频时长，单位：秒。  若视频的原时长为非整数，则该字段值为原时长的向下取整。 若视频的原时长小于1，则该字段值为1。
         :type duration: int
         :param duration_ms: 视频时长，单位毫秒。
         :type duration_ms: int
@@ -166,7 +166,7 @@ class MetaData:
     def duration(self):
         r"""Gets the duration of this MetaData.
 
-        视频时长。  若视频的原时长为非整数，则该字段值为原时长的向下取整。 若视频的原时长小于1，则该字段值为1。
+        视频时长，单位：秒。  若视频的原时长为非整数，则该字段值为原时长的向下取整。 若视频的原时长小于1，则该字段值为1。
 
         :return: The duration of this MetaData.
         :rtype: int
@@ -177,7 +177,7 @@ class MetaData:
     def duration(self, duration):
         r"""Sets the duration of this MetaData.
 
-        视频时长。  若视频的原时长为非整数，则该字段值为原时长的向下取整。 若视频的原时长小于1，则该字段值为1。
+        视频时长，单位：秒。  若视频的原时长为非整数，则该字段值为原时长的向下取整。 若视频的原时长小于1，则该字段值为1。
 
         :param duration: The duration of this MetaData.
         :type duration: int
