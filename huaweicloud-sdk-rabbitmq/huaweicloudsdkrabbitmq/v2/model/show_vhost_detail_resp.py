@@ -31,9 +31,9 @@ class ShowVhostDetailResp:
 
         The model defined in huaweicloud sdk
 
-        :param name: Vhost名称。
+        :param name: **参数解释**： Vhost名称。 **取值范围**： 不涉及。
         :type name: str
-        :param tracing: 是否开启消息轨迹[（AMQP版本不涉及此字段）](tag:hws,hws_hk)。
+        :param tracing: **参数解释**： 是否开启消息轨迹[（AMQP版本不涉及此字段）](tag:hws,hws_hk)。 **取值范围**： - true：开启。 - false：不开启
         :type tracing: bool
         """
         
@@ -52,7 +52,7 @@ class ShowVhostDetailResp:
     def name(self):
         r"""Gets the name of this ShowVhostDetailResp.
 
-        Vhost名称。
+        **参数解释**： Vhost名称。 **取值范围**： 不涉及。
 
         :return: The name of this ShowVhostDetailResp.
         :rtype: str
@@ -63,7 +63,7 @@ class ShowVhostDetailResp:
     def name(self, name):
         r"""Sets the name of this ShowVhostDetailResp.
 
-        Vhost名称。
+        **参数解释**： Vhost名称。 **取值范围**： 不涉及。
 
         :param name: The name of this ShowVhostDetailResp.
         :type name: str
@@ -74,7 +74,7 @@ class ShowVhostDetailResp:
     def tracing(self):
         r"""Gets the tracing of this ShowVhostDetailResp.
 
-        是否开启消息轨迹[（AMQP版本不涉及此字段）](tag:hws,hws_hk)。
+        **参数解释**： 是否开启消息轨迹[（AMQP版本不涉及此字段）](tag:hws,hws_hk)。 **取值范围**： - true：开启。 - false：不开启
 
         :return: The tracing of this ShowVhostDetailResp.
         :rtype: bool
@@ -85,7 +85,7 @@ class ShowVhostDetailResp:
     def tracing(self, tracing):
         r"""Sets the tracing of this ShowVhostDetailResp.
 
-        是否开启消息轨迹[（AMQP版本不涉及此字段）](tag:hws,hws_hk)。
+        **参数解释**： 是否开启消息轨迹[（AMQP版本不涉及此字段）](tag:hws,hws_hk)。 **取值范围**： - true：开启。 - false：不开启
 
         :param tracing: The tracing of this ShowVhostDetailResp.
         :type tracing: bool

@@ -18,6 +18,9 @@ from huaweicloudsdkims.v2.model.batch_add_or_delete_tags_request_body import Bat
 from huaweicloudsdkims.v2.model.batch_add_or_delete_tags_response import BatchAddOrDeleteTagsResponse
 from huaweicloudsdkims.v2.model.batch_delete_members_request import BatchDeleteMembersRequest
 from huaweicloudsdkims.v2.model.batch_delete_members_response import BatchDeleteMembersResponse
+from huaweicloudsdkims.v2.model.batch_delete_tags_request import BatchDeleteTagsRequest
+from huaweicloudsdkims.v2.model.batch_delete_tags_request_body import BatchDeleteTagsRequestBody
+from huaweicloudsdkims.v2.model.batch_delete_tags_response import BatchDeleteTagsResponse
 from huaweicloudsdkims.v2.model.batch_update_members_request import BatchUpdateMembersRequest
 from huaweicloudsdkims.v2.model.batch_update_members_request_body import BatchUpdateMembersRequestBody
 from huaweicloudsdkims.v2.model.batch_update_members_response import BatchUpdateMembersResponse
@@ -84,6 +87,7 @@ from huaweicloudsdkims.v2.model.glance_update_image_request import GlanceUpdateI
 from huaweicloudsdkims.v2.model.glance_update_image_request_body import GlanceUpdateImageRequestBody
 from huaweicloudsdkims.v2.model.glance_update_image_response import GlanceUpdateImageResponse
 from huaweicloudsdkims.v2.model.image_info import ImageInfo
+from huaweicloudsdkims.v2.model.image_member import ImageMember
 from huaweicloudsdkims.v2.model.image_tag import ImageTag
 from huaweicloudsdkims.v2.model.import_image_quick_request import ImportImageQuickRequest
 from huaweicloudsdkims.v2.model.import_image_quick_response import ImportImageQuickResponse
@@ -94,6 +98,8 @@ from huaweicloudsdkims.v2.model.links import Links
 from huaweicloudsdkims.v2.model.list_image_by_tags_request import ListImageByTagsRequest
 from huaweicloudsdkims.v2.model.list_image_by_tags_request_body import ListImageByTagsRequestBody
 from huaweicloudsdkims.v2.model.list_image_by_tags_response import ListImageByTagsResponse
+from huaweicloudsdkims.v2.model.list_image_members_request import ListImageMembersRequest
+from huaweicloudsdkims.v2.model.list_image_members_response import ListImageMembersResponse
 from huaweicloudsdkims.v2.model.list_image_tags_request import ListImageTagsRequest
 from huaweicloudsdkims.v2.model.list_image_tags_response import ListImageTagsResponse
 from huaweicloudsdkims.v2.model.list_images_request import ListImagesRequest
@@ -118,6 +124,8 @@ from huaweicloudsdkims.v2.model.register_image_request_body import RegisterImage
 from huaweicloudsdkims.v2.model.register_image_response import RegisterImageResponse
 from huaweicloudsdkims.v2.model.resource_tag import ResourceTag
 from huaweicloudsdkims.v2.model.show_image_by_tags_resource import ShowImageByTagsResource
+from huaweicloudsdkims.v2.model.show_image_member_request import ShowImageMemberRequest
+from huaweicloudsdkims.v2.model.show_image_member_response import ShowImageMemberResponse
 from huaweicloudsdkims.v2.model.show_image_quota_request import ShowImageQuotaRequest
 from huaweicloudsdkims.v2.model.show_image_quota_response import ShowImageQuotaResponse
 from huaweicloudsdkims.v2.model.show_job_progress_request import ShowJobProgressRequest

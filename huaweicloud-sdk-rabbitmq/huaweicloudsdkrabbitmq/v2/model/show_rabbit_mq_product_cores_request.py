@@ -5,7 +5,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class VulHostInfoDisabledOperateTypes:
+class ShowRabbitMqProductCoresRequest:
 
     """
     Attributes:
@@ -17,80 +17,78 @@ class VulHostInfoDisabledOperateTypes:
     sensitive_list = []
 
     openapi_types = {
-        'operate_type': 'str',
-        'reason': 'str'
+        'instance_id': 'str',
+        'product_id': 'str'
     }
 
     attribute_map = {
-        'operate_type': 'operate_type',
-        'reason': 'reason'
+        'instance_id': 'instance_id',
+        'product_id': 'product_id'
     }
 
-    def __init__(self, operate_type=None, reason=None):
-        r"""VulHostInfoDisabledOperateTypes
+    def __init__(self, instance_id=None, product_id=None):
+        r"""ShowRabbitMqProductCoresRequest
 
         The model defined in huaweicloud sdk
 
-        :param operate_type: 操作类型 - ignore : 忽略 - not_ignore : 取消忽略 - immediate_repair : 修复 - manual_repair: 人工修复 - verify : 验证 - add_to_whitelist : 加入白名单
-        :type operate_type: str
-        :param reason: 不可进行操作的原因
-        :type reason: str
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param product_id: 产品ID。
+        :type product_id: str
         """
         
         
 
-        self._operate_type = None
-        self._reason = None
+        self._instance_id = None
+        self._product_id = None
         self.discriminator = None
 
-        if operate_type is not None:
-            self.operate_type = operate_type
-        if reason is not None:
-            self.reason = reason
+        self.instance_id = instance_id
+        self.product_id = product_id
 
     @property
-    def operate_type(self):
-        r"""Gets the operate_type of this VulHostInfoDisabledOperateTypes.
+    def instance_id(self):
+        r"""Gets the instance_id of this ShowRabbitMqProductCoresRequest.
 
-        操作类型 - ignore : 忽略 - not_ignore : 取消忽略 - immediate_repair : 修复 - manual_repair: 人工修复 - verify : 验证 - add_to_whitelist : 加入白名单
+        实例ID。
 
-        :return: The operate_type of this VulHostInfoDisabledOperateTypes.
+        :return: The instance_id of this ShowRabbitMqProductCoresRequest.
         :rtype: str
         """
-        return self._operate_type
+        return self._instance_id
 
-    @operate_type.setter
-    def operate_type(self, operate_type):
-        r"""Sets the operate_type of this VulHostInfoDisabledOperateTypes.
+    @instance_id.setter
+    def instance_id(self, instance_id):
+        r"""Sets the instance_id of this ShowRabbitMqProductCoresRequest.
 
-        操作类型 - ignore : 忽略 - not_ignore : 取消忽略 - immediate_repair : 修复 - manual_repair: 人工修复 - verify : 验证 - add_to_whitelist : 加入白名单
+        实例ID。
 
-        :param operate_type: The operate_type of this VulHostInfoDisabledOperateTypes.
-        :type operate_type: str
+        :param instance_id: The instance_id of this ShowRabbitMqProductCoresRequest.
+        :type instance_id: str
         """
-        self._operate_type = operate_type
+        self._instance_id = instance_id
 
     @property
-    def reason(self):
-        r"""Gets the reason of this VulHostInfoDisabledOperateTypes.
+    def product_id(self):
+        r"""Gets the product_id of this ShowRabbitMqProductCoresRequest.
 
-        不可进行操作的原因
+        产品ID。
 
-        :return: The reason of this VulHostInfoDisabledOperateTypes.
+        :return: The product_id of this ShowRabbitMqProductCoresRequest.
         :rtype: str
         """
-        return self._reason
+        return self._product_id
 
-    @reason.setter
-    def reason(self, reason):
-        r"""Sets the reason of this VulHostInfoDisabledOperateTypes.
+    @product_id.setter
+    def product_id(self, product_id):
+        r"""Sets the product_id of this ShowRabbitMqProductCoresRequest.
 
-        不可进行操作的原因
+        产品ID。
 
-        :param reason: The reason of this VulHostInfoDisabledOperateTypes.
-        :type reason: str
+        :param product_id: The product_id of this ShowRabbitMqProductCoresRequest.
+        :type product_id: str
         """
-        self._reason = reason
+        self._product_id = product_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -134,7 +132,7 @@ class VulHostInfoDisabledOperateTypes:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, VulHostInfoDisabledOperateTypes):
+        if not isinstance(other, ShowRabbitMqProductCoresRequest):
             return False
 
         return self.__dict__ == other.__dict__

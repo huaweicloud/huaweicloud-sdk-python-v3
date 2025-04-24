@@ -39,7 +39,7 @@ class VulHostInfo:
         'first_scan_time': 'int',
         'scan_time': 'int',
         'support_restore': 'bool',
-        'disabled_operate_types': 'list[VulHostInfoDisabledOperateTypes]',
+        'disabled_operate_types': 'list[HostVulInfoDisabledOperateTypes]',
         'repair_priority': 'str'
     }
 
@@ -120,7 +120,7 @@ class VulHostInfo:
         :param support_restore: 是否可以回滚到修复漏洞时创建的备份
         :type support_restore: bool
         :param disabled_operate_types: 漏洞在当前主机上不可进行的操作类型列表
-        :type disabled_operate_types: list[:class:`huaweicloudsdkhss.v5.VulHostInfoDisabledOperateTypes`]
+        :type disabled_operate_types: list[:class:`huaweicloudsdkhss.v5.HostVulInfoDisabledOperateTypes`]
         :param repair_priority: 修复优先级,包含如下  - Critical 紧急  - High 高  - Medium 中  - Low 低
         :type repair_priority: str
         """
@@ -693,7 +693,7 @@ class VulHostInfo:
         漏洞在当前主机上不可进行的操作类型列表
 
         :return: The disabled_operate_types of this VulHostInfo.
-        :rtype: list[:class:`huaweicloudsdkhss.v5.VulHostInfoDisabledOperateTypes`]
+        :rtype: list[:class:`huaweicloudsdkhss.v5.HostVulInfoDisabledOperateTypes`]
         """
         return self._disabled_operate_types
 
@@ -704,7 +704,7 @@ class VulHostInfo:
         漏洞在当前主机上不可进行的操作类型列表
 
         :param disabled_operate_types: The disabled_operate_types of this VulHostInfo.
-        :type disabled_operate_types: list[:class:`huaweicloudsdkhss.v5.VulHostInfoDisabledOperateTypes`]
+        :type disabled_operate_types: list[:class:`huaweicloudsdkhss.v5.HostVulInfoDisabledOperateTypes`]
         """
         self._disabled_operate_types = disabled_operate_types
 

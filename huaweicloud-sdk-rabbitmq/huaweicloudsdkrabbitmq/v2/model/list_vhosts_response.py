@@ -34,11 +34,11 @@ class ListVhostsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param size: 当前显示数量
+        :param size: **参数解释**： 当前显示的Vhost数量 **取值范围**： 不涉及。
         :type size: int
-        :param total: 查询结果总数
+        :param total: **参数解释**： 查询到的Vhost总数 **取值范围**： 不涉及。
         :type total: int
-        :param items: 查询的Vhost信息列表
+        :param items: **参数解释**： 查询的Vhost信息列表
         :type items: list[:class:`huaweicloudsdkrabbitmq.v2.ShowVhostDetailResp`]
         """
         
@@ -60,7 +60,7 @@ class ListVhostsResponse(SdkResponse):
     def size(self):
         r"""Gets the size of this ListVhostsResponse.
 
-        当前显示数量
+        **参数解释**： 当前显示的Vhost数量 **取值范围**： 不涉及。
 
         :return: The size of this ListVhostsResponse.
         :rtype: int
@@ -71,7 +71,7 @@ class ListVhostsResponse(SdkResponse):
     def size(self, size):
         r"""Sets the size of this ListVhostsResponse.
 
-        当前显示数量
+        **参数解释**： 当前显示的Vhost数量 **取值范围**： 不涉及。
 
         :param size: The size of this ListVhostsResponse.
         :type size: int
@@ -82,7 +82,7 @@ class ListVhostsResponse(SdkResponse):
     def total(self):
         r"""Gets the total of this ListVhostsResponse.
 
-        查询结果总数
+        **参数解释**： 查询到的Vhost总数 **取值范围**： 不涉及。
 
         :return: The total of this ListVhostsResponse.
         :rtype: int
@@ -93,7 +93,7 @@ class ListVhostsResponse(SdkResponse):
     def total(self, total):
         r"""Sets the total of this ListVhostsResponse.
 
-        查询结果总数
+        **参数解释**： 查询到的Vhost总数 **取值范围**： 不涉及。
 
         :param total: The total of this ListVhostsResponse.
         :type total: int
@@ -104,7 +104,7 @@ class ListVhostsResponse(SdkResponse):
     def items(self):
         r"""Gets the items of this ListVhostsResponse.
 
-        查询的Vhost信息列表
+        **参数解释**： 查询的Vhost信息列表
 
         :return: The items of this ListVhostsResponse.
         :rtype: list[:class:`huaweicloudsdkrabbitmq.v2.ShowVhostDetailResp`]
@@ -115,7 +115,7 @@ class ListVhostsResponse(SdkResponse):
     def items(self, items):
         r"""Sets the items of this ListVhostsResponse.
 
-        查询的Vhost信息列表
+        **参数解释**： 查询的Vhost信息列表
 
         :param items: The items of this ListVhostsResponse.
         :type items: list[:class:`huaweicloudsdkrabbitmq.v2.ShowVhostDetailResp`]

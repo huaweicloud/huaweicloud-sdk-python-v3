@@ -94,6 +94,8 @@ from huaweicloudsdkeg.v1.model.event_streaming_sink import EventStreamingSink
 from huaweicloudsdkeg.v1.model.event_streaming_source import EventStreamingSource
 from huaweicloudsdkeg.v1.model.event_streaming_update_req import EventStreamingUpdateReq
 from huaweicloudsdkeg.v1.model.event_sub_metrics_item import EventSubMetricsItem
+from huaweicloudsdkeg.v1.model.execute_subscription_operation_request import ExecuteSubscriptionOperationRequest
+from huaweicloudsdkeg.v1.model.execute_subscription_operation_response import ExecuteSubscriptionOperationResponse
 from huaweicloudsdkeg.v1.model.header_parameter import HeaderParameter
 from huaweicloudsdkeg.v1.model.invocation_http_parameters import InvocationHttpParameters
 from huaweicloudsdkeg.v1.model.kafka_connection_detail import KafkaConnectionDetail
@@ -138,8 +140,6 @@ from huaweicloudsdkeg.v1.model.list_workflow_triggers_request import ListWorkflo
 from huaweicloudsdkeg.v1.model.list_workflow_triggers_response import ListWorkflowTriggersResponse
 from huaweicloudsdkeg.v1.model.obs_bucket_info import ObsBucketInfo
 from huaweicloudsdkeg.v1.model.obs_bucket_info_owner import ObsBucketInfoOwner
-from huaweicloudsdkeg.v1.model.operate_subscription_request import OperateSubscriptionRequest
-from huaweicloudsdkeg.v1.model.operate_subscription_response import OperateSubscriptionResponse
 from huaweicloudsdkeg.v1.model.put_events_req import PutEventsReq
 from huaweicloudsdkeg.v1.model.put_events_request import PutEventsRequest
 from huaweicloudsdkeg.v1.model.put_events_resp_events import PutEventsRespEvents

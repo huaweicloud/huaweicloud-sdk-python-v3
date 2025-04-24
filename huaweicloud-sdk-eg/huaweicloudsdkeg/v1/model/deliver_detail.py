@@ -35,9 +35,9 @@ class DeliverDetail:
 
         The model defined in huaweicloud sdk
 
-        :param deliver_time: 投递时间 格式 yyyy/mm/dd xx:yy:zz
+        :param deliver_time: 投递时间   格式 yyyy/mm/dd xx:yy:zz
         :type deliver_time: str
-        :param deliver_status: 投递状态 SUCCESS Or FAILED
+        :param deliver_status: 投递状态     SUCCESS Or  FAILED
         :type deliver_status: str
         :param deliver_consuming: 投递耗时，单位ms
         :type deliver_consuming: str
@@ -66,7 +66,7 @@ class DeliverDetail:
     def deliver_time(self):
         r"""Gets the deliver_time of this DeliverDetail.
 
-        投递时间 格式 yyyy/mm/dd xx:yy:zz
+        投递时间   格式 yyyy/mm/dd xx:yy:zz
 
         :return: The deliver_time of this DeliverDetail.
         :rtype: str
@@ -77,7 +77,7 @@ class DeliverDetail:
     def deliver_time(self, deliver_time):
         r"""Sets the deliver_time of this DeliverDetail.
 
-        投递时间 格式 yyyy/mm/dd xx:yy:zz
+        投递时间   格式 yyyy/mm/dd xx:yy:zz
 
         :param deliver_time: The deliver_time of this DeliverDetail.
         :type deliver_time: str
@@ -88,7 +88,7 @@ class DeliverDetail:
     def deliver_status(self):
         r"""Gets the deliver_status of this DeliverDetail.
 
-        投递状态 SUCCESS Or FAILED
+        投递状态     SUCCESS Or  FAILED
 
         :return: The deliver_status of this DeliverDetail.
         :rtype: str
@@ -99,7 +99,7 @@ class DeliverDetail:
     def deliver_status(self, deliver_status):
         r"""Sets the deliver_status of this DeliverDetail.
 
-        投递状态 SUCCESS Or FAILED
+        投递状态     SUCCESS Or  FAILED
 
         :param deliver_status: The deliver_status of this DeliverDetail.
         :type deliver_status: str

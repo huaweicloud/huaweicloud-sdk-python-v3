@@ -31,9 +31,9 @@ class TagEntity:
 
         The model defined in huaweicloud sdk
 
-        :param key: 标签键。  - 不能为空。  - 对于同一个实例，Key值唯一。  - 长度为1~128个字符（中文也可以输入128个字符）。  - 由任意语种字母、数字、空格和字符组成，字符仅支持_ . : &#x3D; + - @  - 不能以_sys_开头。  - 首尾字符不能为空格。
+        :param key: **参数解释**： 标签键。 **取值范围**： 不涉及。
         :type key: str
-        :param value: 标签值。  - 长度为0~255个字符（中文也可以输入255个字符）。  - 由任意语种字母、数字、空格和字符组成，字符仅支持_ . : &#x3D; + - @
+        :param value: **参数解释**： 标签值。 **取值范围**： 不涉及。
         :type value: str
         """
         
@@ -52,7 +52,7 @@ class TagEntity:
     def key(self):
         r"""Gets the key of this TagEntity.
 
-        标签键。  - 不能为空。  - 对于同一个实例，Key值唯一。  - 长度为1~128个字符（中文也可以输入128个字符）。  - 由任意语种字母、数字、空格和字符组成，字符仅支持_ . : = + - @  - 不能以_sys_开头。  - 首尾字符不能为空格。
+        **参数解释**： 标签键。 **取值范围**： 不涉及。
 
         :return: The key of this TagEntity.
         :rtype: str
@@ -63,7 +63,7 @@ class TagEntity:
     def key(self, key):
         r"""Sets the key of this TagEntity.
 
-        标签键。  - 不能为空。  - 对于同一个实例，Key值唯一。  - 长度为1~128个字符（中文也可以输入128个字符）。  - 由任意语种字母、数字、空格和字符组成，字符仅支持_ . : = + - @  - 不能以_sys_开头。  - 首尾字符不能为空格。
+        **参数解释**： 标签键。 **取值范围**： 不涉及。
 
         :param key: The key of this TagEntity.
         :type key: str
@@ -74,7 +74,7 @@ class TagEntity:
     def value(self):
         r"""Gets the value of this TagEntity.
 
-        标签值。  - 长度为0~255个字符（中文也可以输入255个字符）。  - 由任意语种字母、数字、空格和字符组成，字符仅支持_ . : = + - @
+        **参数解释**： 标签值。 **取值范围**： 不涉及。
 
         :return: The value of this TagEntity.
         :rtype: str
@@ -85,7 +85,7 @@ class TagEntity:
     def value(self, value):
         r"""Sets the value of this TagEntity.
 
-        标签值。  - 长度为0~255个字符（中文也可以输入255个字符）。  - 由任意语种字母、数字、空格和字符组成，字符仅支持_ . : = + - @
+        **参数解释**： 标签值。 **取值范围**： 不涉及。
 
         :param value: The value of this TagEntity.
         :type value: str

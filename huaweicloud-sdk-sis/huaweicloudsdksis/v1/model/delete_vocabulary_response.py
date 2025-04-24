@@ -18,20 +18,80 @@ class DeleteVocabularyResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'vocabulary_id': 'str',
+        'message': 'str'
     }
 
     attribute_map = {
+        'vocabulary_id': 'vocabulary_id',
+        'message': 'message'
     }
 
-    def __init__(self):
+    def __init__(self, vocabulary_id=None, message=None):
         r"""DeleteVocabularyResponse
 
         The model defined in huaweicloud sdk
 
+        :param vocabulary_id: 删除的热词表的名称。
+        :type vocabulary_id: str
+        :param message: 删除成功的消息。
+        :type message: str
         """
         
         super(DeleteVocabularyResponse, self).__init__()
+
+        self._vocabulary_id = None
+        self._message = None
         self.discriminator = None
+
+        if vocabulary_id is not None:
+            self.vocabulary_id = vocabulary_id
+        if message is not None:
+            self.message = message
+
+    @property
+    def vocabulary_id(self):
+        r"""Gets the vocabulary_id of this DeleteVocabularyResponse.
+
+        删除的热词表的名称。
+
+        :return: The vocabulary_id of this DeleteVocabularyResponse.
+        :rtype: str
+        """
+        return self._vocabulary_id
+
+    @vocabulary_id.setter
+    def vocabulary_id(self, vocabulary_id):
+        r"""Sets the vocabulary_id of this DeleteVocabularyResponse.
+
+        删除的热词表的名称。
+
+        :param vocabulary_id: The vocabulary_id of this DeleteVocabularyResponse.
+        :type vocabulary_id: str
+        """
+        self._vocabulary_id = vocabulary_id
+
+    @property
+    def message(self):
+        r"""Gets the message of this DeleteVocabularyResponse.
+
+        删除成功的消息。
+
+        :return: The message of this DeleteVocabularyResponse.
+        :rtype: str
+        """
+        return self._message
+
+    @message.setter
+    def message(self, message):
+        r"""Sets the message of this DeleteVocabularyResponse.
+
+        删除成功的消息。
+
+        :param message: The message of this DeleteVocabularyResponse.
+        :type message: str
+        """
+        self._message = message
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -299,6 +299,73 @@ class ImsClient(Client):
 
         return http_info
 
+    def batch_delete_tags(self, request):
+        r"""批量删除镜像标签
+
+        该接口用于为指定镜像批量删除标签。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchDeleteTags
+        :type request: :class:`huaweicloudsdkims.v2.BatchDeleteTagsRequest`
+        :rtype: :class:`huaweicloudsdkims.v2.BatchDeleteTagsResponse`
+        """
+        http_info = self._batch_delete_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_tags_invoker(self, request):
+        http_info = self._batch_delete_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_delete_tags_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/cloudimages/{image_id}/tags/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'image_id' in local_var_params:
+            path_params['image_id'] = local_var_params['image_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def batch_update_members(self, request):
         r"""批量更新镜像成员状态
 
@@ -1039,6 +1106,71 @@ class ImsClient(Client):
 
         return http_info
 
+    def list_image_members(self, request):
+        r"""获取镜像成员列表
+
+        该接口用于共享镜像过程中，获取接受该镜像的成员列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListImageMembers
+        :type request: :class:`huaweicloudsdkims.v2.ListImageMembersRequest`
+        :rtype: :class:`huaweicloudsdkims.v2.ListImageMembersResponse`
+        """
+        http_info = self._list_image_members_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_image_members_invoker(self, request):
+        http_info = self._list_image_members_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_image_members_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cloudimages/{image_id}/members",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListImageMembersResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'image_id' in local_var_params:
+            path_params['image_id'] = local_var_params['image_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_image_tags(self, request):
         r"""查询镜像标签
 
@@ -1522,6 +1654,73 @@ class ImsClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_image_member(self, request):
+        r"""获取镜像成员详情
+
+        该接口主要用于镜像共享中查询某个镜像成员的详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowImageMember
+        :type request: :class:`huaweicloudsdkims.v2.ShowImageMemberRequest`
+        :rtype: :class:`huaweicloudsdkims.v2.ShowImageMemberResponse`
+        """
+        http_info = self._show_image_member_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_image_member_invoker(self, request):
+        http_info = self._show_image_member_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_image_member_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cloudimages/{image_id}/members/{member_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowImageMemberResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'image_id' in local_var_params:
+            path_params['image_id'] = local_var_params['image_id']
+        if 'member_id' in local_var_params:
+            path_params['member_id'] = local_var_params['member_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 

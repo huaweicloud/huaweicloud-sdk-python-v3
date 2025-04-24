@@ -130,107 +130,107 @@ class ShowInstanceResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param access_user: 认证用户名，只能由英文字母、数字、中划线组成，长度为4~64的字符。
+        :param access_user: **参数解释**： 认证用户名。 **取值范围**： 不涉及。
         :type access_user: str
-        :param broker_num: 代理个数。
+        :param broker_num: **参数解释**： 代理个数。 **取值范围**： - 1 - 3 - 5 - 7
         :type broker_num: int
-        :param name: 实例名称。
+        :param name: **参数解释**： 实例名称。 **取值范围**： 不涉及。
         :type name: str
-        :param engine: 消息引擎。
+        :param engine: **参数解释**： 消息引擎。 **取值范围**： 不涉及。
         :type engine: str
-        :param engine_version: 消息引擎版本。
+        :param engine_version: **参数解释**： 消息引擎版本。 **取值范围**： 不涉及。
         :type engine_version: str
-        :param specification: 实例规格。   - RabbitMQ实例单机返回vm规格。   - RabbitMQ实例集群返回vm规格和节点数。
+        :param specification: **参数解释**： 实例规格。 **取值范围**： - 单机实例：返回vm规格。 - 集群实例：返回vm规格和节点数。
         :type specification: str
-        :param storage_space: 消息存储空间，单位：GB。
+        :param storage_space: **参数解释**： 消息存储空间，单位：GB。 **取值范围**： 不涉及。
         :type storage_space: int
-        :param used_storage_space: 已使用的消息存储空间，单位：GB。
+        :param used_storage_space: **参数解释**： 已使用的消息存储空间，单位：GB。 **取值范围**： 不涉及。
         :type used_storage_space: int
-        :param dns_enable: 实例是否开启域名访问功能。 - true：开启 - false：未开启
+        :param dns_enable: **参数解释**： 实例是否开启域名访问功能。 **取值范围**： - true：开启 - false：未开启
         :type dns_enable: bool
-        :param connect_address: 实例内网连接IP地址。
+        :param connect_address: **参数解释**： 实例内网连接IP地址。 **取值范围**： 不涉及。
         :type connect_address: str
-        :param connect_domain_name: 实例内网连接域名。
+        :param connect_domain_name: **参数解释**： 实例内网连接域名。 **取值范围**： 不涉及。
         :type connect_domain_name: str
-        :param public_connect_address: 实例公网连接IP地址。
+        :param public_connect_address: **参数解释**： 实例公网连接IP地址。 **取值范围**： 不涉及。
         :type public_connect_address: str
-        :param public_connect_domain_name: 实例公网连接域名。
+        :param public_connect_domain_name: **参数解释**： 实例公网连接域名。 **取值范围**： 不涉及。
         :type public_connect_domain_name: str
-        :param port: 实例连接端口。
+        :param port: **参数解释**： 实例连接端口。 **取值范围**： 不涉及。
         :type port: int
-        :param status: 实例的状态。
+        :param status: **参数解释**： 实例状态。 **取值范围**： [详细状态说明请参考[实例状态说明](rabbitmq-api-180514012.xml)](tag:hws,hws_eu,hws_hk,cmcc,ctc,sbc,hk_sbc,g42,hk_g42,tm,hk_tm)[详细状态说明请参考[实例状态说明](kafka-api-180514012.xml)](tag:hcs)。
         :type status: str
-        :param description: 实例描述。
+        :param description: **参数解释**： 实例描述。 **取值范围**： 不涉及。
         :type description: str
-        :param instance_id: 实例ID。
+        :param instance_id: **参数解释**： 实例ID。 **取值范围**： 不涉及。
         :type instance_id: str
-        :param resource_spec_code: 资源规格标识。   [- dms.instance.rabbitmq.single.c3.2u4g：RabbitMQ单机，vm规格2u4g   - dms.instance.rabbitmq.single.c3.4u8g：RabbitMQ单机，vm规格4u8g   - dms.instance.rabbitmq.single.c3.8u16g：RabbitMQ单机，vm规格8u16g   - dms.instance.rabbitmq.single.c3.16u32g：RabbitMQ单机，vm规格16u32g   - dms.instance.rabbitmq.cluster.c3.4u8g.3：RabbitMQ集群，vm规格4u8g，3个节点   - dms.instance.rabbitmq.cluster.c3.4u8g.5：RabbitMQ集群，vm规格4u8g，5个节点   - dms.instance.rabbitmq.cluster.c3.4u8g.7：RabbitMQ集群，vm规格4u8g，7个节点   - dms.instance.rabbitmq.cluster.c3.8u16g.3：RabbitMQ集群，vm规格8u16g，3个节点   - dms.instance.rabbitmq.cluster.c3.8u16g.5：RabbitMQ集群，vm规格8u16g，5个节点   - dms.instance.rabbitmq.cluster.c3.8u16g.7：RabbitMQ集群，vm规格8u16g，7个节点   - dms.instance.rabbitmq.cluster.c3.16u32g.3：RabbitMQ集群，vm规格16u32g，3个节点   - dms.instance.rabbitmq.cluster.c3.16u32g.5：RabbitMQ集群，vm规格16u32g，5个节点   - dms.instance.rabbitmq.cluster.c3.16u32g.7：RabbitMQ集群，vm规格16u32g，7个节点](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,sbc)
+        :param resource_spec_code: **参数解释**： 资源规格标识。 **取值范围**： [- dms.instance.rabbitmq.single.c3.2u4g：RabbitMQ单机，vm规格2u4g - dms.instance.rabbitmq.single.c3.4u8g：RabbitMQ单机，vm规格4u8g - dms.instance.rabbitmq.single.c3.8u16g：RabbitMQ单机，vm规格8u16g - dms.instance.rabbitmq.single.c3.16u32g：RabbitMQ单机，vm规格16u32g - dms.instance.rabbitmq.cluster.c3.4u8g.3：RabbitMQ集群，vm规格4u8g，3个节点 - dms.instance.rabbitmq.cluster.c3.4u8g.5：RabbitMQ集群，vm规格4u8g，5个节点 - dms.instance.rabbitmq.cluster.c3.4u8g.7：RabbitMQ集群，vm规格4u8g，7个节点 - dms.instance.rabbitmq.cluster.c3.8u16g.3：RabbitMQ集群，vm规格8u16g，3个节点 - dms.instance.rabbitmq.cluster.c3.8u16g.5：RabbitMQ集群，vm规格8u16g，5个节点 - dms.instance.rabbitmq.cluster.c3.8u16g.7：RabbitMQ集群，vm规格8u16g，7个节点 - dms.instance.rabbitmq.cluster.c3.16u32g.3：RabbitMQ集群，vm规格16u32g，3个节点 - dms.instance.rabbitmq.cluster.c3.16u32g.5：RabbitMQ集群，vm规格16u32g，5个节点 - dms.instance.rabbitmq.cluster.c3.16u32g.7：RabbitMQ集群，vm规格16u32g，7个节点](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,sbc)
         :type resource_spec_code: str
-        :param charging_mode: 付费模式，1表示按需计费，0表示包年/包月计费。
+        :param charging_mode: **参数解释**： 付费模式。 **取值范围**： - 1：按需计费。 - 0：包年/包月计费。
         :type charging_mode: int
-        :param vpc_id: VPC ID。
+        :param vpc_id: **参数解释**： VPC ID。 **取值范围**： 不涉及。
         :type vpc_id: str
-        :param vpc_name: VPC的名称。
+        :param vpc_name: **参数解释**： VPC的名称。 **取值范围**： 不涉及。
         :type vpc_name: str
-        :param created_at: 完成创建时间。格式为时间戳，指从格林威治时间 1970年01月01日00时00分00秒起至指定时间的偏差总毫秒数。
+        :param created_at: **参数解释**： 完成创建时间。格式为时间戳，指从格林威治时间 1970年01月01日00时00分00秒起至指定时间的偏差总毫秒数。 **取值范围**： 不涉及。
         :type created_at: str
-        :param user_id: 用户ID。
+        :param user_id: **参数解释**： 用户ID。 **取值范围**： 不涉及。
         :type user_id: str
-        :param user_name: 用户名。
+        :param user_name: **参数解释**： 用户名。 **取值范围**： 不涉及。
         :type user_name: str
-        :param order_id: 订单ID，只有在包周期计费时才会有order_id值，其他计费方式order_id值为空。
+        :param order_id: **参数解释**： 订单ID，只有在包周期计费时才会有order_id值，其他计费方式order_id值为空。 **取值范围**： 不涉及。
         :type order_id: str
-        :param maintain_begin: 维护时间窗开始时间，格式为HH:mm:ss。
+        :param maintain_begin: **参数解释**： 维护时间窗开始时间，格式为HH:mm:ss。 **取值范围**： 不涉及。
         :type maintain_begin: str
-        :param maintain_end: 维护时间窗结束时间，格式为HH:mm:ss。
+        :param maintain_end: **参数解释**： 维护时间窗结束时间，格式为HH:mm:ss。 **取值范围**： 不涉及。
         :type maintain_end: str
-        :param enable_publicip: RabbitMQ实例是否开启公网访问功能。   - true：开启   - false：未开启
+        :param enable_publicip: **参数解释**： RabbitMQ实例是否开启公网访问功能。 **取值范围**： - true：开启 - false：未开启
         :type enable_publicip: bool
-        :param publicip_address: RabbitMQ实例绑定的弹性IP地址。  如果未开启公网访问功能，该字段值为null。
+        :param publicip_address: **参数解释**： RabbitMQ实例绑定的弹性IP地址。  如果未开启公网访问功能，该字段值为null。 **取值范围**： - true：开启 - false：未开启
         :type publicip_address: str
-        :param publicip_id: RabbitMQ实例绑定的弹性IP地址的ID。  如果未开启公网访问功能，该字段值为null。
+        :param publicip_id: **参数解释**： RabbitMQ实例绑定的弹性IP地址的ID。  如果未开启公网访问功能，该字段值为null。 **取值范围**： 不涉及。
         :type publicip_id: str
-        :param management_connect_address: RabbitMQ实例的管理地址。
+        :param management_connect_address: **参数解释**： RabbitMQ实例的管理地址。 **取值范围**： 不涉及。
         :type management_connect_address: str
-        :param management_connect_domain_name: RabbitMQ实例的管理域名。
+        :param management_connect_domain_name: **参数解释**： RabbitMQ实例的管理域名。 **取值范围**： 不涉及。
         :type management_connect_domain_name: str
-        :param public_management_connect_address: RabbitMQ实例的公网管理地址。
+        :param public_management_connect_address: **参数解释**： RabbitMQ实例的公网管理地址。 **取值范围**： 不涉及。
         :type public_management_connect_address: str
-        :param public_management_connect_domain_name: RabbitMQ实例的公网管理域名。
+        :param public_management_connect_domain_name: **参数解释**： RabbitMQ实例的公网管理域名。 **取值范围**： 不涉及。
         :type public_management_connect_domain_name: str
-        :param ssl_enable: 是否开启安全认证。   - true：开启   - false：未开启
+        :param ssl_enable: **参数解释**： 是否开启安全认证。 **取值范围**： - true：开启 - false：未开启
         :type ssl_enable: bool
-        :param enterprise_project_id: 企业项目ID。
+        :param enterprise_project_id: **参数解释**： 企业项目ID。 **取值范围**： 不涉及。
         :type enterprise_project_id: str
-        :param is_logical_volume: 实例扩容时用于区分老实例与新实例。 - true：新创建的实例，允许磁盘动态扩容不需要重启。 - false：老实例
+        :param is_logical_volume: **参数解释**： 实例扩容时用于区分老实例与新实例。 **取值范围**： - true：新创建的实例，允许磁盘动态扩容不需要重启。 - false：特别老的实例不支持磁盘扩容。
         :type is_logical_volume: bool
-        :param extend_times: 实例扩容磁盘次数，如果超过20次则无法扩容磁盘。
+        :param extend_times: **参数解释**： 实例扩容磁盘次数，如果超过20次则无法扩容磁盘。 **取值范围**： 不涉及。
         :type extend_times: int
-        :param type: 实例类型：集群，cluster。
+        :param type: **参数解释**： 实例类型。 **取值范围**： - single：单机。 - cluster：集群。
         :type type: str
-        :param product_id: 产品标识。
+        :param product_id: **参数解释**： 产品标识。 **取值范围**： 不涉及。
         :type product_id: str
-        :param security_group_id: 安全组ID。
+        :param security_group_id: **参数解释**： 安全组ID。 **取值范围**： 不涉及。
         :type security_group_id: str
-        :param security_group_name: 租户安全组名称。
+        :param security_group_name: **参数解释**： 租户安全组名称。 **取值范围**： 不涉及。
         :type security_group_name: str
-        :param subnet_id: 子网ID。
+        :param subnet_id: **参数解释**： 子网ID。 **取值范围**： 不涉及。
         :type subnet_id: str
-        :param available_zones: 实例节点所在的可用区，返回“可用区ID”。
+        :param available_zones: **参数解释**： 实例节点所在的可用区ID。
         :type available_zones: list[str]
-        :param available_zone_names: 实例节点所在的可用区，返回“可用区名称”。
+        :param available_zone_names: **参数解释**： 实例节点所在的可用区名称。
         :type available_zone_names: list[str]
-        :param total_storage_space: 总共消息存储空间，单位：GB。
+        :param total_storage_space: **参数解释**： 总共消息存储空间，单位：GB。 **取值范围**： 不涉及。
         :type total_storage_space: int
-        :param storage_resource_id: 存储资源ID。
+        :param storage_resource_id: **参数解释**： 存储资源ID。 **取值范围**： 不涉及。
         :type storage_resource_id: str
-        :param storage_spec_code: IO规格。
+        :param storage_spec_code: **参数解释**： IO规格。 **取值范围**： 不涉及。
         :type storage_spec_code: str
-        :param ipv6_enable: 是否开启ipv6。
+        :param ipv6_enable: **参数解释**： 是否开启IPv6。 **取值范围**： - true：开启。 - false：不开启。
         :type ipv6_enable: bool
-        :param ipv6_connect_addresses: IPv6的连接地址。
+        :param ipv6_connect_addresses: **参数解释**： IPv6的连接地址。
         :type ipv6_connect_addresses: list[str]
-        :param tags: 标签列表。
+        :param tags: **参数解释**： 标签列表。
         :type tags: list[:class:`huaweicloudsdkrabbitmq.v2.TagEntity`]
         """
         
@@ -396,7 +396,7 @@ class ShowInstanceResponse(SdkResponse):
     def access_user(self):
         r"""Gets the access_user of this ShowInstanceResponse.
 
-        认证用户名，只能由英文字母、数字、中划线组成，长度为4~64的字符。
+        **参数解释**： 认证用户名。 **取值范围**： 不涉及。
 
         :return: The access_user of this ShowInstanceResponse.
         :rtype: str
@@ -407,7 +407,7 @@ class ShowInstanceResponse(SdkResponse):
     def access_user(self, access_user):
         r"""Sets the access_user of this ShowInstanceResponse.
 
-        认证用户名，只能由英文字母、数字、中划线组成，长度为4~64的字符。
+        **参数解释**： 认证用户名。 **取值范围**： 不涉及。
 
         :param access_user: The access_user of this ShowInstanceResponse.
         :type access_user: str
@@ -418,7 +418,7 @@ class ShowInstanceResponse(SdkResponse):
     def broker_num(self):
         r"""Gets the broker_num of this ShowInstanceResponse.
 
-        代理个数。
+        **参数解释**： 代理个数。 **取值范围**： - 1 - 3 - 5 - 7
 
         :return: The broker_num of this ShowInstanceResponse.
         :rtype: int
@@ -429,7 +429,7 @@ class ShowInstanceResponse(SdkResponse):
     def broker_num(self, broker_num):
         r"""Sets the broker_num of this ShowInstanceResponse.
 
-        代理个数。
+        **参数解释**： 代理个数。 **取值范围**： - 1 - 3 - 5 - 7
 
         :param broker_num: The broker_num of this ShowInstanceResponse.
         :type broker_num: int
@@ -440,7 +440,7 @@ class ShowInstanceResponse(SdkResponse):
     def name(self):
         r"""Gets the name of this ShowInstanceResponse.
 
-        实例名称。
+        **参数解释**： 实例名称。 **取值范围**： 不涉及。
 
         :return: The name of this ShowInstanceResponse.
         :rtype: str
@@ -451,7 +451,7 @@ class ShowInstanceResponse(SdkResponse):
     def name(self, name):
         r"""Sets the name of this ShowInstanceResponse.
 
-        实例名称。
+        **参数解释**： 实例名称。 **取值范围**： 不涉及。
 
         :param name: The name of this ShowInstanceResponse.
         :type name: str
@@ -462,7 +462,7 @@ class ShowInstanceResponse(SdkResponse):
     def engine(self):
         r"""Gets the engine of this ShowInstanceResponse.
 
-        消息引擎。
+        **参数解释**： 消息引擎。 **取值范围**： 不涉及。
 
         :return: The engine of this ShowInstanceResponse.
         :rtype: str
@@ -473,7 +473,7 @@ class ShowInstanceResponse(SdkResponse):
     def engine(self, engine):
         r"""Sets the engine of this ShowInstanceResponse.
 
-        消息引擎。
+        **参数解释**： 消息引擎。 **取值范围**： 不涉及。
 
         :param engine: The engine of this ShowInstanceResponse.
         :type engine: str
@@ -484,7 +484,7 @@ class ShowInstanceResponse(SdkResponse):
     def engine_version(self):
         r"""Gets the engine_version of this ShowInstanceResponse.
 
-        消息引擎版本。
+        **参数解释**： 消息引擎版本。 **取值范围**： 不涉及。
 
         :return: The engine_version of this ShowInstanceResponse.
         :rtype: str
@@ -495,7 +495,7 @@ class ShowInstanceResponse(SdkResponse):
     def engine_version(self, engine_version):
         r"""Sets the engine_version of this ShowInstanceResponse.
 
-        消息引擎版本。
+        **参数解释**： 消息引擎版本。 **取值范围**： 不涉及。
 
         :param engine_version: The engine_version of this ShowInstanceResponse.
         :type engine_version: str
@@ -506,7 +506,7 @@ class ShowInstanceResponse(SdkResponse):
     def specification(self):
         r"""Gets the specification of this ShowInstanceResponse.
 
-        实例规格。   - RabbitMQ实例单机返回vm规格。   - RabbitMQ实例集群返回vm规格和节点数。
+        **参数解释**： 实例规格。 **取值范围**： - 单机实例：返回vm规格。 - 集群实例：返回vm规格和节点数。
 
         :return: The specification of this ShowInstanceResponse.
         :rtype: str
@@ -517,7 +517,7 @@ class ShowInstanceResponse(SdkResponse):
     def specification(self, specification):
         r"""Sets the specification of this ShowInstanceResponse.
 
-        实例规格。   - RabbitMQ实例单机返回vm规格。   - RabbitMQ实例集群返回vm规格和节点数。
+        **参数解释**： 实例规格。 **取值范围**： - 单机实例：返回vm规格。 - 集群实例：返回vm规格和节点数。
 
         :param specification: The specification of this ShowInstanceResponse.
         :type specification: str
@@ -528,7 +528,7 @@ class ShowInstanceResponse(SdkResponse):
     def storage_space(self):
         r"""Gets the storage_space of this ShowInstanceResponse.
 
-        消息存储空间，单位：GB。
+        **参数解释**： 消息存储空间，单位：GB。 **取值范围**： 不涉及。
 
         :return: The storage_space of this ShowInstanceResponse.
         :rtype: int
@@ -539,7 +539,7 @@ class ShowInstanceResponse(SdkResponse):
     def storage_space(self, storage_space):
         r"""Sets the storage_space of this ShowInstanceResponse.
 
-        消息存储空间，单位：GB。
+        **参数解释**： 消息存储空间，单位：GB。 **取值范围**： 不涉及。
 
         :param storage_space: The storage_space of this ShowInstanceResponse.
         :type storage_space: int
@@ -550,7 +550,7 @@ class ShowInstanceResponse(SdkResponse):
     def used_storage_space(self):
         r"""Gets the used_storage_space of this ShowInstanceResponse.
 
-        已使用的消息存储空间，单位：GB。
+        **参数解释**： 已使用的消息存储空间，单位：GB。 **取值范围**： 不涉及。
 
         :return: The used_storage_space of this ShowInstanceResponse.
         :rtype: int
@@ -561,7 +561,7 @@ class ShowInstanceResponse(SdkResponse):
     def used_storage_space(self, used_storage_space):
         r"""Sets the used_storage_space of this ShowInstanceResponse.
 
-        已使用的消息存储空间，单位：GB。
+        **参数解释**： 已使用的消息存储空间，单位：GB。 **取值范围**： 不涉及。
 
         :param used_storage_space: The used_storage_space of this ShowInstanceResponse.
         :type used_storage_space: int
@@ -572,7 +572,7 @@ class ShowInstanceResponse(SdkResponse):
     def dns_enable(self):
         r"""Gets the dns_enable of this ShowInstanceResponse.
 
-        实例是否开启域名访问功能。 - true：开启 - false：未开启
+        **参数解释**： 实例是否开启域名访问功能。 **取值范围**： - true：开启 - false：未开启
 
         :return: The dns_enable of this ShowInstanceResponse.
         :rtype: bool
@@ -583,7 +583,7 @@ class ShowInstanceResponse(SdkResponse):
     def dns_enable(self, dns_enable):
         r"""Sets the dns_enable of this ShowInstanceResponse.
 
-        实例是否开启域名访问功能。 - true：开启 - false：未开启
+        **参数解释**： 实例是否开启域名访问功能。 **取值范围**： - true：开启 - false：未开启
 
         :param dns_enable: The dns_enable of this ShowInstanceResponse.
         :type dns_enable: bool
@@ -594,7 +594,7 @@ class ShowInstanceResponse(SdkResponse):
     def connect_address(self):
         r"""Gets the connect_address of this ShowInstanceResponse.
 
-        实例内网连接IP地址。
+        **参数解释**： 实例内网连接IP地址。 **取值范围**： 不涉及。
 
         :return: The connect_address of this ShowInstanceResponse.
         :rtype: str
@@ -605,7 +605,7 @@ class ShowInstanceResponse(SdkResponse):
     def connect_address(self, connect_address):
         r"""Sets the connect_address of this ShowInstanceResponse.
 
-        实例内网连接IP地址。
+        **参数解释**： 实例内网连接IP地址。 **取值范围**： 不涉及。
 
         :param connect_address: The connect_address of this ShowInstanceResponse.
         :type connect_address: str
@@ -616,7 +616,7 @@ class ShowInstanceResponse(SdkResponse):
     def connect_domain_name(self):
         r"""Gets the connect_domain_name of this ShowInstanceResponse.
 
-        实例内网连接域名。
+        **参数解释**： 实例内网连接域名。 **取值范围**： 不涉及。
 
         :return: The connect_domain_name of this ShowInstanceResponse.
         :rtype: str
@@ -627,7 +627,7 @@ class ShowInstanceResponse(SdkResponse):
     def connect_domain_name(self, connect_domain_name):
         r"""Sets the connect_domain_name of this ShowInstanceResponse.
 
-        实例内网连接域名。
+        **参数解释**： 实例内网连接域名。 **取值范围**： 不涉及。
 
         :param connect_domain_name: The connect_domain_name of this ShowInstanceResponse.
         :type connect_domain_name: str
@@ -638,7 +638,7 @@ class ShowInstanceResponse(SdkResponse):
     def public_connect_address(self):
         r"""Gets the public_connect_address of this ShowInstanceResponse.
 
-        实例公网连接IP地址。
+        **参数解释**： 实例公网连接IP地址。 **取值范围**： 不涉及。
 
         :return: The public_connect_address of this ShowInstanceResponse.
         :rtype: str
@@ -649,7 +649,7 @@ class ShowInstanceResponse(SdkResponse):
     def public_connect_address(self, public_connect_address):
         r"""Sets the public_connect_address of this ShowInstanceResponse.
 
-        实例公网连接IP地址。
+        **参数解释**： 实例公网连接IP地址。 **取值范围**： 不涉及。
 
         :param public_connect_address: The public_connect_address of this ShowInstanceResponse.
         :type public_connect_address: str
@@ -660,7 +660,7 @@ class ShowInstanceResponse(SdkResponse):
     def public_connect_domain_name(self):
         r"""Gets the public_connect_domain_name of this ShowInstanceResponse.
 
-        实例公网连接域名。
+        **参数解释**： 实例公网连接域名。 **取值范围**： 不涉及。
 
         :return: The public_connect_domain_name of this ShowInstanceResponse.
         :rtype: str
@@ -671,7 +671,7 @@ class ShowInstanceResponse(SdkResponse):
     def public_connect_domain_name(self, public_connect_domain_name):
         r"""Sets the public_connect_domain_name of this ShowInstanceResponse.
 
-        实例公网连接域名。
+        **参数解释**： 实例公网连接域名。 **取值范围**： 不涉及。
 
         :param public_connect_domain_name: The public_connect_domain_name of this ShowInstanceResponse.
         :type public_connect_domain_name: str
@@ -682,7 +682,7 @@ class ShowInstanceResponse(SdkResponse):
     def port(self):
         r"""Gets the port of this ShowInstanceResponse.
 
-        实例连接端口。
+        **参数解释**： 实例连接端口。 **取值范围**： 不涉及。
 
         :return: The port of this ShowInstanceResponse.
         :rtype: int
@@ -693,7 +693,7 @@ class ShowInstanceResponse(SdkResponse):
     def port(self, port):
         r"""Sets the port of this ShowInstanceResponse.
 
-        实例连接端口。
+        **参数解释**： 实例连接端口。 **取值范围**： 不涉及。
 
         :param port: The port of this ShowInstanceResponse.
         :type port: int
@@ -704,7 +704,7 @@ class ShowInstanceResponse(SdkResponse):
     def status(self):
         r"""Gets the status of this ShowInstanceResponse.
 
-        实例的状态。
+        **参数解释**： 实例状态。 **取值范围**： [详细状态说明请参考[实例状态说明](rabbitmq-api-180514012.xml)](tag:hws,hws_eu,hws_hk,cmcc,ctc,sbc,hk_sbc,g42,hk_g42,tm,hk_tm)[详细状态说明请参考[实例状态说明](kafka-api-180514012.xml)](tag:hcs)。
 
         :return: The status of this ShowInstanceResponse.
         :rtype: str
@@ -715,7 +715,7 @@ class ShowInstanceResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this ShowInstanceResponse.
 
-        实例的状态。
+        **参数解释**： 实例状态。 **取值范围**： [详细状态说明请参考[实例状态说明](rabbitmq-api-180514012.xml)](tag:hws,hws_eu,hws_hk,cmcc,ctc,sbc,hk_sbc,g42,hk_g42,tm,hk_tm)[详细状态说明请参考[实例状态说明](kafka-api-180514012.xml)](tag:hcs)。
 
         :param status: The status of this ShowInstanceResponse.
         :type status: str
@@ -726,7 +726,7 @@ class ShowInstanceResponse(SdkResponse):
     def description(self):
         r"""Gets the description of this ShowInstanceResponse.
 
-        实例描述。
+        **参数解释**： 实例描述。 **取值范围**： 不涉及。
 
         :return: The description of this ShowInstanceResponse.
         :rtype: str
@@ -737,7 +737,7 @@ class ShowInstanceResponse(SdkResponse):
     def description(self, description):
         r"""Sets the description of this ShowInstanceResponse.
 
-        实例描述。
+        **参数解释**： 实例描述。 **取值范围**： 不涉及。
 
         :param description: The description of this ShowInstanceResponse.
         :type description: str
@@ -748,7 +748,7 @@ class ShowInstanceResponse(SdkResponse):
     def instance_id(self):
         r"""Gets the instance_id of this ShowInstanceResponse.
 
-        实例ID。
+        **参数解释**： 实例ID。 **取值范围**： 不涉及。
 
         :return: The instance_id of this ShowInstanceResponse.
         :rtype: str
@@ -759,7 +759,7 @@ class ShowInstanceResponse(SdkResponse):
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this ShowInstanceResponse.
 
-        实例ID。
+        **参数解释**： 实例ID。 **取值范围**： 不涉及。
 
         :param instance_id: The instance_id of this ShowInstanceResponse.
         :type instance_id: str
@@ -770,7 +770,7 @@ class ShowInstanceResponse(SdkResponse):
     def resource_spec_code(self):
         r"""Gets the resource_spec_code of this ShowInstanceResponse.
 
-        资源规格标识。   [- dms.instance.rabbitmq.single.c3.2u4g：RabbitMQ单机，vm规格2u4g   - dms.instance.rabbitmq.single.c3.4u8g：RabbitMQ单机，vm规格4u8g   - dms.instance.rabbitmq.single.c3.8u16g：RabbitMQ单机，vm规格8u16g   - dms.instance.rabbitmq.single.c3.16u32g：RabbitMQ单机，vm规格16u32g   - dms.instance.rabbitmq.cluster.c3.4u8g.3：RabbitMQ集群，vm规格4u8g，3个节点   - dms.instance.rabbitmq.cluster.c3.4u8g.5：RabbitMQ集群，vm规格4u8g，5个节点   - dms.instance.rabbitmq.cluster.c3.4u8g.7：RabbitMQ集群，vm规格4u8g，7个节点   - dms.instance.rabbitmq.cluster.c3.8u16g.3：RabbitMQ集群，vm规格8u16g，3个节点   - dms.instance.rabbitmq.cluster.c3.8u16g.5：RabbitMQ集群，vm规格8u16g，5个节点   - dms.instance.rabbitmq.cluster.c3.8u16g.7：RabbitMQ集群，vm规格8u16g，7个节点   - dms.instance.rabbitmq.cluster.c3.16u32g.3：RabbitMQ集群，vm规格16u32g，3个节点   - dms.instance.rabbitmq.cluster.c3.16u32g.5：RabbitMQ集群，vm规格16u32g，5个节点   - dms.instance.rabbitmq.cluster.c3.16u32g.7：RabbitMQ集群，vm规格16u32g，7个节点](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,sbc)
+        **参数解释**： 资源规格标识。 **取值范围**： [- dms.instance.rabbitmq.single.c3.2u4g：RabbitMQ单机，vm规格2u4g - dms.instance.rabbitmq.single.c3.4u8g：RabbitMQ单机，vm规格4u8g - dms.instance.rabbitmq.single.c3.8u16g：RabbitMQ单机，vm规格8u16g - dms.instance.rabbitmq.single.c3.16u32g：RabbitMQ单机，vm规格16u32g - dms.instance.rabbitmq.cluster.c3.4u8g.3：RabbitMQ集群，vm规格4u8g，3个节点 - dms.instance.rabbitmq.cluster.c3.4u8g.5：RabbitMQ集群，vm规格4u8g，5个节点 - dms.instance.rabbitmq.cluster.c3.4u8g.7：RabbitMQ集群，vm规格4u8g，7个节点 - dms.instance.rabbitmq.cluster.c3.8u16g.3：RabbitMQ集群，vm规格8u16g，3个节点 - dms.instance.rabbitmq.cluster.c3.8u16g.5：RabbitMQ集群，vm规格8u16g，5个节点 - dms.instance.rabbitmq.cluster.c3.8u16g.7：RabbitMQ集群，vm规格8u16g，7个节点 - dms.instance.rabbitmq.cluster.c3.16u32g.3：RabbitMQ集群，vm规格16u32g，3个节点 - dms.instance.rabbitmq.cluster.c3.16u32g.5：RabbitMQ集群，vm规格16u32g，5个节点 - dms.instance.rabbitmq.cluster.c3.16u32g.7：RabbitMQ集群，vm规格16u32g，7个节点](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,sbc)
 
         :return: The resource_spec_code of this ShowInstanceResponse.
         :rtype: str
@@ -781,7 +781,7 @@ class ShowInstanceResponse(SdkResponse):
     def resource_spec_code(self, resource_spec_code):
         r"""Sets the resource_spec_code of this ShowInstanceResponse.
 
-        资源规格标识。   [- dms.instance.rabbitmq.single.c3.2u4g：RabbitMQ单机，vm规格2u4g   - dms.instance.rabbitmq.single.c3.4u8g：RabbitMQ单机，vm规格4u8g   - dms.instance.rabbitmq.single.c3.8u16g：RabbitMQ单机，vm规格8u16g   - dms.instance.rabbitmq.single.c3.16u32g：RabbitMQ单机，vm规格16u32g   - dms.instance.rabbitmq.cluster.c3.4u8g.3：RabbitMQ集群，vm规格4u8g，3个节点   - dms.instance.rabbitmq.cluster.c3.4u8g.5：RabbitMQ集群，vm规格4u8g，5个节点   - dms.instance.rabbitmq.cluster.c3.4u8g.7：RabbitMQ集群，vm规格4u8g，7个节点   - dms.instance.rabbitmq.cluster.c3.8u16g.3：RabbitMQ集群，vm规格8u16g，3个节点   - dms.instance.rabbitmq.cluster.c3.8u16g.5：RabbitMQ集群，vm规格8u16g，5个节点   - dms.instance.rabbitmq.cluster.c3.8u16g.7：RabbitMQ集群，vm规格8u16g，7个节点   - dms.instance.rabbitmq.cluster.c3.16u32g.3：RabbitMQ集群，vm规格16u32g，3个节点   - dms.instance.rabbitmq.cluster.c3.16u32g.5：RabbitMQ集群，vm规格16u32g，5个节点   - dms.instance.rabbitmq.cluster.c3.16u32g.7：RabbitMQ集群，vm规格16u32g，7个节点](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,sbc)
+        **参数解释**： 资源规格标识。 **取值范围**： [- dms.instance.rabbitmq.single.c3.2u4g：RabbitMQ单机，vm规格2u4g - dms.instance.rabbitmq.single.c3.4u8g：RabbitMQ单机，vm规格4u8g - dms.instance.rabbitmq.single.c3.8u16g：RabbitMQ单机，vm规格8u16g - dms.instance.rabbitmq.single.c3.16u32g：RabbitMQ单机，vm规格16u32g - dms.instance.rabbitmq.cluster.c3.4u8g.3：RabbitMQ集群，vm规格4u8g，3个节点 - dms.instance.rabbitmq.cluster.c3.4u8g.5：RabbitMQ集群，vm规格4u8g，5个节点 - dms.instance.rabbitmq.cluster.c3.4u8g.7：RabbitMQ集群，vm规格4u8g，7个节点 - dms.instance.rabbitmq.cluster.c3.8u16g.3：RabbitMQ集群，vm规格8u16g，3个节点 - dms.instance.rabbitmq.cluster.c3.8u16g.5：RabbitMQ集群，vm规格8u16g，5个节点 - dms.instance.rabbitmq.cluster.c3.8u16g.7：RabbitMQ集群，vm规格8u16g，7个节点 - dms.instance.rabbitmq.cluster.c3.16u32g.3：RabbitMQ集群，vm规格16u32g，3个节点 - dms.instance.rabbitmq.cluster.c3.16u32g.5：RabbitMQ集群，vm规格16u32g，5个节点 - dms.instance.rabbitmq.cluster.c3.16u32g.7：RabbitMQ集群，vm规格16u32g，7个节点](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,sbc)
 
         :param resource_spec_code: The resource_spec_code of this ShowInstanceResponse.
         :type resource_spec_code: str
@@ -792,7 +792,7 @@ class ShowInstanceResponse(SdkResponse):
     def charging_mode(self):
         r"""Gets the charging_mode of this ShowInstanceResponse.
 
-        付费模式，1表示按需计费，0表示包年/包月计费。
+        **参数解释**： 付费模式。 **取值范围**： - 1：按需计费。 - 0：包年/包月计费。
 
         :return: The charging_mode of this ShowInstanceResponse.
         :rtype: int
@@ -803,7 +803,7 @@ class ShowInstanceResponse(SdkResponse):
     def charging_mode(self, charging_mode):
         r"""Sets the charging_mode of this ShowInstanceResponse.
 
-        付费模式，1表示按需计费，0表示包年/包月计费。
+        **参数解释**： 付费模式。 **取值范围**： - 1：按需计费。 - 0：包年/包月计费。
 
         :param charging_mode: The charging_mode of this ShowInstanceResponse.
         :type charging_mode: int
@@ -814,7 +814,7 @@ class ShowInstanceResponse(SdkResponse):
     def vpc_id(self):
         r"""Gets the vpc_id of this ShowInstanceResponse.
 
-        VPC ID。
+        **参数解释**： VPC ID。 **取值范围**： 不涉及。
 
         :return: The vpc_id of this ShowInstanceResponse.
         :rtype: str
@@ -825,7 +825,7 @@ class ShowInstanceResponse(SdkResponse):
     def vpc_id(self, vpc_id):
         r"""Sets the vpc_id of this ShowInstanceResponse.
 
-        VPC ID。
+        **参数解释**： VPC ID。 **取值范围**： 不涉及。
 
         :param vpc_id: The vpc_id of this ShowInstanceResponse.
         :type vpc_id: str
@@ -836,7 +836,7 @@ class ShowInstanceResponse(SdkResponse):
     def vpc_name(self):
         r"""Gets the vpc_name of this ShowInstanceResponse.
 
-        VPC的名称。
+        **参数解释**： VPC的名称。 **取值范围**： 不涉及。
 
         :return: The vpc_name of this ShowInstanceResponse.
         :rtype: str
@@ -847,7 +847,7 @@ class ShowInstanceResponse(SdkResponse):
     def vpc_name(self, vpc_name):
         r"""Sets the vpc_name of this ShowInstanceResponse.
 
-        VPC的名称。
+        **参数解释**： VPC的名称。 **取值范围**： 不涉及。
 
         :param vpc_name: The vpc_name of this ShowInstanceResponse.
         :type vpc_name: str
@@ -858,7 +858,7 @@ class ShowInstanceResponse(SdkResponse):
     def created_at(self):
         r"""Gets the created_at of this ShowInstanceResponse.
 
-        完成创建时间。格式为时间戳，指从格林威治时间 1970年01月01日00时00分00秒起至指定时间的偏差总毫秒数。
+        **参数解释**： 完成创建时间。格式为时间戳，指从格林威治时间 1970年01月01日00时00分00秒起至指定时间的偏差总毫秒数。 **取值范围**： 不涉及。
 
         :return: The created_at of this ShowInstanceResponse.
         :rtype: str
@@ -869,7 +869,7 @@ class ShowInstanceResponse(SdkResponse):
     def created_at(self, created_at):
         r"""Sets the created_at of this ShowInstanceResponse.
 
-        完成创建时间。格式为时间戳，指从格林威治时间 1970年01月01日00时00分00秒起至指定时间的偏差总毫秒数。
+        **参数解释**： 完成创建时间。格式为时间戳，指从格林威治时间 1970年01月01日00时00分00秒起至指定时间的偏差总毫秒数。 **取值范围**： 不涉及。
 
         :param created_at: The created_at of this ShowInstanceResponse.
         :type created_at: str
@@ -880,7 +880,7 @@ class ShowInstanceResponse(SdkResponse):
     def user_id(self):
         r"""Gets the user_id of this ShowInstanceResponse.
 
-        用户ID。
+        **参数解释**： 用户ID。 **取值范围**： 不涉及。
 
         :return: The user_id of this ShowInstanceResponse.
         :rtype: str
@@ -891,7 +891,7 @@ class ShowInstanceResponse(SdkResponse):
     def user_id(self, user_id):
         r"""Sets the user_id of this ShowInstanceResponse.
 
-        用户ID。
+        **参数解释**： 用户ID。 **取值范围**： 不涉及。
 
         :param user_id: The user_id of this ShowInstanceResponse.
         :type user_id: str
@@ -902,7 +902,7 @@ class ShowInstanceResponse(SdkResponse):
     def user_name(self):
         r"""Gets the user_name of this ShowInstanceResponse.
 
-        用户名。
+        **参数解释**： 用户名。 **取值范围**： 不涉及。
 
         :return: The user_name of this ShowInstanceResponse.
         :rtype: str
@@ -913,7 +913,7 @@ class ShowInstanceResponse(SdkResponse):
     def user_name(self, user_name):
         r"""Sets the user_name of this ShowInstanceResponse.
 
-        用户名。
+        **参数解释**： 用户名。 **取值范围**： 不涉及。
 
         :param user_name: The user_name of this ShowInstanceResponse.
         :type user_name: str
@@ -924,7 +924,7 @@ class ShowInstanceResponse(SdkResponse):
     def order_id(self):
         r"""Gets the order_id of this ShowInstanceResponse.
 
-        订单ID，只有在包周期计费时才会有order_id值，其他计费方式order_id值为空。
+        **参数解释**： 订单ID，只有在包周期计费时才会有order_id值，其他计费方式order_id值为空。 **取值范围**： 不涉及。
 
         :return: The order_id of this ShowInstanceResponse.
         :rtype: str
@@ -935,7 +935,7 @@ class ShowInstanceResponse(SdkResponse):
     def order_id(self, order_id):
         r"""Sets the order_id of this ShowInstanceResponse.
 
-        订单ID，只有在包周期计费时才会有order_id值，其他计费方式order_id值为空。
+        **参数解释**： 订单ID，只有在包周期计费时才会有order_id值，其他计费方式order_id值为空。 **取值范围**： 不涉及。
 
         :param order_id: The order_id of this ShowInstanceResponse.
         :type order_id: str
@@ -946,7 +946,7 @@ class ShowInstanceResponse(SdkResponse):
     def maintain_begin(self):
         r"""Gets the maintain_begin of this ShowInstanceResponse.
 
-        维护时间窗开始时间，格式为HH:mm:ss。
+        **参数解释**： 维护时间窗开始时间，格式为HH:mm:ss。 **取值范围**： 不涉及。
 
         :return: The maintain_begin of this ShowInstanceResponse.
         :rtype: str
@@ -957,7 +957,7 @@ class ShowInstanceResponse(SdkResponse):
     def maintain_begin(self, maintain_begin):
         r"""Sets the maintain_begin of this ShowInstanceResponse.
 
-        维护时间窗开始时间，格式为HH:mm:ss。
+        **参数解释**： 维护时间窗开始时间，格式为HH:mm:ss。 **取值范围**： 不涉及。
 
         :param maintain_begin: The maintain_begin of this ShowInstanceResponse.
         :type maintain_begin: str
@@ -968,7 +968,7 @@ class ShowInstanceResponse(SdkResponse):
     def maintain_end(self):
         r"""Gets the maintain_end of this ShowInstanceResponse.
 
-        维护时间窗结束时间，格式为HH:mm:ss。
+        **参数解释**： 维护时间窗结束时间，格式为HH:mm:ss。 **取值范围**： 不涉及。
 
         :return: The maintain_end of this ShowInstanceResponse.
         :rtype: str
@@ -979,7 +979,7 @@ class ShowInstanceResponse(SdkResponse):
     def maintain_end(self, maintain_end):
         r"""Sets the maintain_end of this ShowInstanceResponse.
 
-        维护时间窗结束时间，格式为HH:mm:ss。
+        **参数解释**： 维护时间窗结束时间，格式为HH:mm:ss。 **取值范围**： 不涉及。
 
         :param maintain_end: The maintain_end of this ShowInstanceResponse.
         :type maintain_end: str
@@ -990,7 +990,7 @@ class ShowInstanceResponse(SdkResponse):
     def enable_publicip(self):
         r"""Gets the enable_publicip of this ShowInstanceResponse.
 
-        RabbitMQ实例是否开启公网访问功能。   - true：开启   - false：未开启
+        **参数解释**： RabbitMQ实例是否开启公网访问功能。 **取值范围**： - true：开启 - false：未开启
 
         :return: The enable_publicip of this ShowInstanceResponse.
         :rtype: bool
@@ -1001,7 +1001,7 @@ class ShowInstanceResponse(SdkResponse):
     def enable_publicip(self, enable_publicip):
         r"""Sets the enable_publicip of this ShowInstanceResponse.
 
-        RabbitMQ实例是否开启公网访问功能。   - true：开启   - false：未开启
+        **参数解释**： RabbitMQ实例是否开启公网访问功能。 **取值范围**： - true：开启 - false：未开启
 
         :param enable_publicip: The enable_publicip of this ShowInstanceResponse.
         :type enable_publicip: bool
@@ -1012,7 +1012,7 @@ class ShowInstanceResponse(SdkResponse):
     def publicip_address(self):
         r"""Gets the publicip_address of this ShowInstanceResponse.
 
-        RabbitMQ实例绑定的弹性IP地址。  如果未开启公网访问功能，该字段值为null。
+        **参数解释**： RabbitMQ实例绑定的弹性IP地址。  如果未开启公网访问功能，该字段值为null。 **取值范围**： - true：开启 - false：未开启
 
         :return: The publicip_address of this ShowInstanceResponse.
         :rtype: str
@@ -1023,7 +1023,7 @@ class ShowInstanceResponse(SdkResponse):
     def publicip_address(self, publicip_address):
         r"""Sets the publicip_address of this ShowInstanceResponse.
 
-        RabbitMQ实例绑定的弹性IP地址。  如果未开启公网访问功能，该字段值为null。
+        **参数解释**： RabbitMQ实例绑定的弹性IP地址。  如果未开启公网访问功能，该字段值为null。 **取值范围**： - true：开启 - false：未开启
 
         :param publicip_address: The publicip_address of this ShowInstanceResponse.
         :type publicip_address: str
@@ -1034,7 +1034,7 @@ class ShowInstanceResponse(SdkResponse):
     def publicip_id(self):
         r"""Gets the publicip_id of this ShowInstanceResponse.
 
-        RabbitMQ实例绑定的弹性IP地址的ID。  如果未开启公网访问功能，该字段值为null。
+        **参数解释**： RabbitMQ实例绑定的弹性IP地址的ID。  如果未开启公网访问功能，该字段值为null。 **取值范围**： 不涉及。
 
         :return: The publicip_id of this ShowInstanceResponse.
         :rtype: str
@@ -1045,7 +1045,7 @@ class ShowInstanceResponse(SdkResponse):
     def publicip_id(self, publicip_id):
         r"""Sets the publicip_id of this ShowInstanceResponse.
 
-        RabbitMQ实例绑定的弹性IP地址的ID。  如果未开启公网访问功能，该字段值为null。
+        **参数解释**： RabbitMQ实例绑定的弹性IP地址的ID。  如果未开启公网访问功能，该字段值为null。 **取值范围**： 不涉及。
 
         :param publicip_id: The publicip_id of this ShowInstanceResponse.
         :type publicip_id: str
@@ -1056,7 +1056,7 @@ class ShowInstanceResponse(SdkResponse):
     def management_connect_address(self):
         r"""Gets the management_connect_address of this ShowInstanceResponse.
 
-        RabbitMQ实例的管理地址。
+        **参数解释**： RabbitMQ实例的管理地址。 **取值范围**： 不涉及。
 
         :return: The management_connect_address of this ShowInstanceResponse.
         :rtype: str
@@ -1067,7 +1067,7 @@ class ShowInstanceResponse(SdkResponse):
     def management_connect_address(self, management_connect_address):
         r"""Sets the management_connect_address of this ShowInstanceResponse.
 
-        RabbitMQ实例的管理地址。
+        **参数解释**： RabbitMQ实例的管理地址。 **取值范围**： 不涉及。
 
         :param management_connect_address: The management_connect_address of this ShowInstanceResponse.
         :type management_connect_address: str
@@ -1078,7 +1078,7 @@ class ShowInstanceResponse(SdkResponse):
     def management_connect_domain_name(self):
         r"""Gets the management_connect_domain_name of this ShowInstanceResponse.
 
-        RabbitMQ实例的管理域名。
+        **参数解释**： RabbitMQ实例的管理域名。 **取值范围**： 不涉及。
 
         :return: The management_connect_domain_name of this ShowInstanceResponse.
         :rtype: str
@@ -1089,7 +1089,7 @@ class ShowInstanceResponse(SdkResponse):
     def management_connect_domain_name(self, management_connect_domain_name):
         r"""Sets the management_connect_domain_name of this ShowInstanceResponse.
 
-        RabbitMQ实例的管理域名。
+        **参数解释**： RabbitMQ实例的管理域名。 **取值范围**： 不涉及。
 
         :param management_connect_domain_name: The management_connect_domain_name of this ShowInstanceResponse.
         :type management_connect_domain_name: str
@@ -1100,7 +1100,7 @@ class ShowInstanceResponse(SdkResponse):
     def public_management_connect_address(self):
         r"""Gets the public_management_connect_address of this ShowInstanceResponse.
 
-        RabbitMQ实例的公网管理地址。
+        **参数解释**： RabbitMQ实例的公网管理地址。 **取值范围**： 不涉及。
 
         :return: The public_management_connect_address of this ShowInstanceResponse.
         :rtype: str
@@ -1111,7 +1111,7 @@ class ShowInstanceResponse(SdkResponse):
     def public_management_connect_address(self, public_management_connect_address):
         r"""Sets the public_management_connect_address of this ShowInstanceResponse.
 
-        RabbitMQ实例的公网管理地址。
+        **参数解释**： RabbitMQ实例的公网管理地址。 **取值范围**： 不涉及。
 
         :param public_management_connect_address: The public_management_connect_address of this ShowInstanceResponse.
         :type public_management_connect_address: str
@@ -1122,7 +1122,7 @@ class ShowInstanceResponse(SdkResponse):
     def public_management_connect_domain_name(self):
         r"""Gets the public_management_connect_domain_name of this ShowInstanceResponse.
 
-        RabbitMQ实例的公网管理域名。
+        **参数解释**： RabbitMQ实例的公网管理域名。 **取值范围**： 不涉及。
 
         :return: The public_management_connect_domain_name of this ShowInstanceResponse.
         :rtype: str
@@ -1133,7 +1133,7 @@ class ShowInstanceResponse(SdkResponse):
     def public_management_connect_domain_name(self, public_management_connect_domain_name):
         r"""Sets the public_management_connect_domain_name of this ShowInstanceResponse.
 
-        RabbitMQ实例的公网管理域名。
+        **参数解释**： RabbitMQ实例的公网管理域名。 **取值范围**： 不涉及。
 
         :param public_management_connect_domain_name: The public_management_connect_domain_name of this ShowInstanceResponse.
         :type public_management_connect_domain_name: str
@@ -1144,7 +1144,7 @@ class ShowInstanceResponse(SdkResponse):
     def ssl_enable(self):
         r"""Gets the ssl_enable of this ShowInstanceResponse.
 
-        是否开启安全认证。   - true：开启   - false：未开启
+        **参数解释**： 是否开启安全认证。 **取值范围**： - true：开启 - false：未开启
 
         :return: The ssl_enable of this ShowInstanceResponse.
         :rtype: bool
@@ -1155,7 +1155,7 @@ class ShowInstanceResponse(SdkResponse):
     def ssl_enable(self, ssl_enable):
         r"""Sets the ssl_enable of this ShowInstanceResponse.
 
-        是否开启安全认证。   - true：开启   - false：未开启
+        **参数解释**： 是否开启安全认证。 **取值范围**： - true：开启 - false：未开启
 
         :param ssl_enable: The ssl_enable of this ShowInstanceResponse.
         :type ssl_enable: bool
@@ -1166,7 +1166,7 @@ class ShowInstanceResponse(SdkResponse):
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this ShowInstanceResponse.
 
-        企业项目ID。
+        **参数解释**： 企业项目ID。 **取值范围**： 不涉及。
 
         :return: The enterprise_project_id of this ShowInstanceResponse.
         :rtype: str
@@ -1177,7 +1177,7 @@ class ShowInstanceResponse(SdkResponse):
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this ShowInstanceResponse.
 
-        企业项目ID。
+        **参数解释**： 企业项目ID。 **取值范围**： 不涉及。
 
         :param enterprise_project_id: The enterprise_project_id of this ShowInstanceResponse.
         :type enterprise_project_id: str
@@ -1188,7 +1188,7 @@ class ShowInstanceResponse(SdkResponse):
     def is_logical_volume(self):
         r"""Gets the is_logical_volume of this ShowInstanceResponse.
 
-        实例扩容时用于区分老实例与新实例。 - true：新创建的实例，允许磁盘动态扩容不需要重启。 - false：老实例
+        **参数解释**： 实例扩容时用于区分老实例与新实例。 **取值范围**： - true：新创建的实例，允许磁盘动态扩容不需要重启。 - false：特别老的实例不支持磁盘扩容。
 
         :return: The is_logical_volume of this ShowInstanceResponse.
         :rtype: bool
@@ -1199,7 +1199,7 @@ class ShowInstanceResponse(SdkResponse):
     def is_logical_volume(self, is_logical_volume):
         r"""Sets the is_logical_volume of this ShowInstanceResponse.
 
-        实例扩容时用于区分老实例与新实例。 - true：新创建的实例，允许磁盘动态扩容不需要重启。 - false：老实例
+        **参数解释**： 实例扩容时用于区分老实例与新实例。 **取值范围**： - true：新创建的实例，允许磁盘动态扩容不需要重启。 - false：特别老的实例不支持磁盘扩容。
 
         :param is_logical_volume: The is_logical_volume of this ShowInstanceResponse.
         :type is_logical_volume: bool
@@ -1210,7 +1210,7 @@ class ShowInstanceResponse(SdkResponse):
     def extend_times(self):
         r"""Gets the extend_times of this ShowInstanceResponse.
 
-        实例扩容磁盘次数，如果超过20次则无法扩容磁盘。
+        **参数解释**： 实例扩容磁盘次数，如果超过20次则无法扩容磁盘。 **取值范围**： 不涉及。
 
         :return: The extend_times of this ShowInstanceResponse.
         :rtype: int
@@ -1221,7 +1221,7 @@ class ShowInstanceResponse(SdkResponse):
     def extend_times(self, extend_times):
         r"""Sets the extend_times of this ShowInstanceResponse.
 
-        实例扩容磁盘次数，如果超过20次则无法扩容磁盘。
+        **参数解释**： 实例扩容磁盘次数，如果超过20次则无法扩容磁盘。 **取值范围**： 不涉及。
 
         :param extend_times: The extend_times of this ShowInstanceResponse.
         :type extend_times: int
@@ -1232,7 +1232,7 @@ class ShowInstanceResponse(SdkResponse):
     def type(self):
         r"""Gets the type of this ShowInstanceResponse.
 
-        实例类型：集群，cluster。
+        **参数解释**： 实例类型。 **取值范围**： - single：单机。 - cluster：集群。
 
         :return: The type of this ShowInstanceResponse.
         :rtype: str
@@ -1243,7 +1243,7 @@ class ShowInstanceResponse(SdkResponse):
     def type(self, type):
         r"""Sets the type of this ShowInstanceResponse.
 
-        实例类型：集群，cluster。
+        **参数解释**： 实例类型。 **取值范围**： - single：单机。 - cluster：集群。
 
         :param type: The type of this ShowInstanceResponse.
         :type type: str
@@ -1254,7 +1254,7 @@ class ShowInstanceResponse(SdkResponse):
     def product_id(self):
         r"""Gets the product_id of this ShowInstanceResponse.
 
-        产品标识。
+        **参数解释**： 产品标识。 **取值范围**： 不涉及。
 
         :return: The product_id of this ShowInstanceResponse.
         :rtype: str
@@ -1265,7 +1265,7 @@ class ShowInstanceResponse(SdkResponse):
     def product_id(self, product_id):
         r"""Sets the product_id of this ShowInstanceResponse.
 
-        产品标识。
+        **参数解释**： 产品标识。 **取值范围**： 不涉及。
 
         :param product_id: The product_id of this ShowInstanceResponse.
         :type product_id: str
@@ -1276,7 +1276,7 @@ class ShowInstanceResponse(SdkResponse):
     def security_group_id(self):
         r"""Gets the security_group_id of this ShowInstanceResponse.
 
-        安全组ID。
+        **参数解释**： 安全组ID。 **取值范围**： 不涉及。
 
         :return: The security_group_id of this ShowInstanceResponse.
         :rtype: str
@@ -1287,7 +1287,7 @@ class ShowInstanceResponse(SdkResponse):
     def security_group_id(self, security_group_id):
         r"""Sets the security_group_id of this ShowInstanceResponse.
 
-        安全组ID。
+        **参数解释**： 安全组ID。 **取值范围**： 不涉及。
 
         :param security_group_id: The security_group_id of this ShowInstanceResponse.
         :type security_group_id: str
@@ -1298,7 +1298,7 @@ class ShowInstanceResponse(SdkResponse):
     def security_group_name(self):
         r"""Gets the security_group_name of this ShowInstanceResponse.
 
-        租户安全组名称。
+        **参数解释**： 租户安全组名称。 **取值范围**： 不涉及。
 
         :return: The security_group_name of this ShowInstanceResponse.
         :rtype: str
@@ -1309,7 +1309,7 @@ class ShowInstanceResponse(SdkResponse):
     def security_group_name(self, security_group_name):
         r"""Sets the security_group_name of this ShowInstanceResponse.
 
-        租户安全组名称。
+        **参数解释**： 租户安全组名称。 **取值范围**： 不涉及。
 
         :param security_group_name: The security_group_name of this ShowInstanceResponse.
         :type security_group_name: str
@@ -1320,7 +1320,7 @@ class ShowInstanceResponse(SdkResponse):
     def subnet_id(self):
         r"""Gets the subnet_id of this ShowInstanceResponse.
 
-        子网ID。
+        **参数解释**： 子网ID。 **取值范围**： 不涉及。
 
         :return: The subnet_id of this ShowInstanceResponse.
         :rtype: str
@@ -1331,7 +1331,7 @@ class ShowInstanceResponse(SdkResponse):
     def subnet_id(self, subnet_id):
         r"""Sets the subnet_id of this ShowInstanceResponse.
 
-        子网ID。
+        **参数解释**： 子网ID。 **取值范围**： 不涉及。
 
         :param subnet_id: The subnet_id of this ShowInstanceResponse.
         :type subnet_id: str
@@ -1342,7 +1342,7 @@ class ShowInstanceResponse(SdkResponse):
     def available_zones(self):
         r"""Gets the available_zones of this ShowInstanceResponse.
 
-        实例节点所在的可用区，返回“可用区ID”。
+        **参数解释**： 实例节点所在的可用区ID。
 
         :return: The available_zones of this ShowInstanceResponse.
         :rtype: list[str]
@@ -1353,7 +1353,7 @@ class ShowInstanceResponse(SdkResponse):
     def available_zones(self, available_zones):
         r"""Sets the available_zones of this ShowInstanceResponse.
 
-        实例节点所在的可用区，返回“可用区ID”。
+        **参数解释**： 实例节点所在的可用区ID。
 
         :param available_zones: The available_zones of this ShowInstanceResponse.
         :type available_zones: list[str]
@@ -1364,7 +1364,7 @@ class ShowInstanceResponse(SdkResponse):
     def available_zone_names(self):
         r"""Gets the available_zone_names of this ShowInstanceResponse.
 
-        实例节点所在的可用区，返回“可用区名称”。
+        **参数解释**： 实例节点所在的可用区名称。
 
         :return: The available_zone_names of this ShowInstanceResponse.
         :rtype: list[str]
@@ -1375,7 +1375,7 @@ class ShowInstanceResponse(SdkResponse):
     def available_zone_names(self, available_zone_names):
         r"""Sets the available_zone_names of this ShowInstanceResponse.
 
-        实例节点所在的可用区，返回“可用区名称”。
+        **参数解释**： 实例节点所在的可用区名称。
 
         :param available_zone_names: The available_zone_names of this ShowInstanceResponse.
         :type available_zone_names: list[str]
@@ -1386,7 +1386,7 @@ class ShowInstanceResponse(SdkResponse):
     def total_storage_space(self):
         r"""Gets the total_storage_space of this ShowInstanceResponse.
 
-        总共消息存储空间，单位：GB。
+        **参数解释**： 总共消息存储空间，单位：GB。 **取值范围**： 不涉及。
 
         :return: The total_storage_space of this ShowInstanceResponse.
         :rtype: int
@@ -1397,7 +1397,7 @@ class ShowInstanceResponse(SdkResponse):
     def total_storage_space(self, total_storage_space):
         r"""Sets the total_storage_space of this ShowInstanceResponse.
 
-        总共消息存储空间，单位：GB。
+        **参数解释**： 总共消息存储空间，单位：GB。 **取值范围**： 不涉及。
 
         :param total_storage_space: The total_storage_space of this ShowInstanceResponse.
         :type total_storage_space: int
@@ -1408,7 +1408,7 @@ class ShowInstanceResponse(SdkResponse):
     def storage_resource_id(self):
         r"""Gets the storage_resource_id of this ShowInstanceResponse.
 
-        存储资源ID。
+        **参数解释**： 存储资源ID。 **取值范围**： 不涉及。
 
         :return: The storage_resource_id of this ShowInstanceResponse.
         :rtype: str
@@ -1419,7 +1419,7 @@ class ShowInstanceResponse(SdkResponse):
     def storage_resource_id(self, storage_resource_id):
         r"""Sets the storage_resource_id of this ShowInstanceResponse.
 
-        存储资源ID。
+        **参数解释**： 存储资源ID。 **取值范围**： 不涉及。
 
         :param storage_resource_id: The storage_resource_id of this ShowInstanceResponse.
         :type storage_resource_id: str
@@ -1430,7 +1430,7 @@ class ShowInstanceResponse(SdkResponse):
     def storage_spec_code(self):
         r"""Gets the storage_spec_code of this ShowInstanceResponse.
 
-        IO规格。
+        **参数解释**： IO规格。 **取值范围**： 不涉及。
 
         :return: The storage_spec_code of this ShowInstanceResponse.
         :rtype: str
@@ -1441,7 +1441,7 @@ class ShowInstanceResponse(SdkResponse):
     def storage_spec_code(self, storage_spec_code):
         r"""Sets the storage_spec_code of this ShowInstanceResponse.
 
-        IO规格。
+        **参数解释**： IO规格。 **取值范围**： 不涉及。
 
         :param storage_spec_code: The storage_spec_code of this ShowInstanceResponse.
         :type storage_spec_code: str
@@ -1452,7 +1452,7 @@ class ShowInstanceResponse(SdkResponse):
     def ipv6_enable(self):
         r"""Gets the ipv6_enable of this ShowInstanceResponse.
 
-        是否开启ipv6。
+        **参数解释**： 是否开启IPv6。 **取值范围**： - true：开启。 - false：不开启。
 
         :return: The ipv6_enable of this ShowInstanceResponse.
         :rtype: bool
@@ -1463,7 +1463,7 @@ class ShowInstanceResponse(SdkResponse):
     def ipv6_enable(self, ipv6_enable):
         r"""Sets the ipv6_enable of this ShowInstanceResponse.
 
-        是否开启ipv6。
+        **参数解释**： 是否开启IPv6。 **取值范围**： - true：开启。 - false：不开启。
 
         :param ipv6_enable: The ipv6_enable of this ShowInstanceResponse.
         :type ipv6_enable: bool
@@ -1474,7 +1474,7 @@ class ShowInstanceResponse(SdkResponse):
     def ipv6_connect_addresses(self):
         r"""Gets the ipv6_connect_addresses of this ShowInstanceResponse.
 
-        IPv6的连接地址。
+        **参数解释**： IPv6的连接地址。
 
         :return: The ipv6_connect_addresses of this ShowInstanceResponse.
         :rtype: list[str]
@@ -1485,7 +1485,7 @@ class ShowInstanceResponse(SdkResponse):
     def ipv6_connect_addresses(self, ipv6_connect_addresses):
         r"""Sets the ipv6_connect_addresses of this ShowInstanceResponse.
 
-        IPv6的连接地址。
+        **参数解释**： IPv6的连接地址。
 
         :param ipv6_connect_addresses: The ipv6_connect_addresses of this ShowInstanceResponse.
         :type ipv6_connect_addresses: list[str]
@@ -1496,7 +1496,7 @@ class ShowInstanceResponse(SdkResponse):
     def tags(self):
         r"""Gets the tags of this ShowInstanceResponse.
 
-        标签列表。
+        **参数解释**： 标签列表。
 
         :return: The tags of this ShowInstanceResponse.
         :rtype: list[:class:`huaweicloudsdkrabbitmq.v2.TagEntity`]
@@ -1507,7 +1507,7 @@ class ShowInstanceResponse(SdkResponse):
     def tags(self, tags):
         r"""Sets the tags of this ShowInstanceResponse.
 
-        标签列表。
+        **参数解释**： 标签列表。
 
         :param tags: The tags of this ShowInstanceResponse.
         :type tags: list[:class:`huaweicloudsdkrabbitmq.v2.TagEntity`]

@@ -45,23 +45,23 @@ class ListAvailableZonesRespAvailableZones:
 
         The model defined in huaweicloud sdk
 
-        :param sold_out: 是否售罄。
+        :param sold_out: **参数解释**： 是否售罄。 **取值范围**： - true：售罄 - false：没有售罄
         :type sold_out: bool
-        :param id: 可用区ID。
+        :param id: **参数解释**： 可用区ID。 **取值范围**： 不涉及。
         :type id: str
-        :param code: 可用区编码。
+        :param code: **参数解释**： 可用区编码。 **取值范围**： 不涉及。
         :type code: str
-        :param name: 可用区名称。
+        :param name: **参数解释**： 可用区名称。 **取值范围**： 不涉及。
         :type name: str
-        :param port: 可用区端口号。
+        :param port: **参数解释**： 可用区端口号。 **取值范围**： 不涉及。
         :type port: str
-        :param resource_availability: 分区上是否还有可用资源。
+        :param resource_availability: **参数解释**： 分区上是否还有可用资源。 **取值范围**： - true：有可用资源。 - false：没有可用资源。
         :type resource_availability: str
-        :param default_az: 是否为默认可用区。
+        :param default_az: **参数解释**： 是否为默认可用区。 **取值范围**： - true：默认可用区 - false：不是默认可用区
         :type default_az: bool
-        :param remain_time: 剩余时间。
+        :param remain_time: **参数解释**： 剩余时间，以Unix时间戳显示。 **取值范围**： 不涉及。
         :type remain_time: int
-        :param ipv6_enable: 是否支持IPv6。
+        :param ipv6_enable: **参数解释**： 是否支持IPv6。 **取值范围**： - true：支持IPv6 - false：不支持IPv6
         :type ipv6_enable: bool
         """
         
@@ -101,7 +101,7 @@ class ListAvailableZonesRespAvailableZones:
     def sold_out(self):
         r"""Gets the sold_out of this ListAvailableZonesRespAvailableZones.
 
-        是否售罄。
+        **参数解释**： 是否售罄。 **取值范围**： - true：售罄 - false：没有售罄
 
         :return: The sold_out of this ListAvailableZonesRespAvailableZones.
         :rtype: bool
@@ -112,7 +112,7 @@ class ListAvailableZonesRespAvailableZones:
     def sold_out(self, sold_out):
         r"""Sets the sold_out of this ListAvailableZonesRespAvailableZones.
 
-        是否售罄。
+        **参数解释**： 是否售罄。 **取值范围**： - true：售罄 - false：没有售罄
 
         :param sold_out: The sold_out of this ListAvailableZonesRespAvailableZones.
         :type sold_out: bool
@@ -123,7 +123,7 @@ class ListAvailableZonesRespAvailableZones:
     def id(self):
         r"""Gets the id of this ListAvailableZonesRespAvailableZones.
 
-        可用区ID。
+        **参数解释**： 可用区ID。 **取值范围**： 不涉及。
 
         :return: The id of this ListAvailableZonesRespAvailableZones.
         :rtype: str
@@ -134,7 +134,7 @@ class ListAvailableZonesRespAvailableZones:
     def id(self, id):
         r"""Sets the id of this ListAvailableZonesRespAvailableZones.
 
-        可用区ID。
+        **参数解释**： 可用区ID。 **取值范围**： 不涉及。
 
         :param id: The id of this ListAvailableZonesRespAvailableZones.
         :type id: str
@@ -145,7 +145,7 @@ class ListAvailableZonesRespAvailableZones:
     def code(self):
         r"""Gets the code of this ListAvailableZonesRespAvailableZones.
 
-        可用区编码。
+        **参数解释**： 可用区编码。 **取值范围**： 不涉及。
 
         :return: The code of this ListAvailableZonesRespAvailableZones.
         :rtype: str
@@ -156,7 +156,7 @@ class ListAvailableZonesRespAvailableZones:
     def code(self, code):
         r"""Sets the code of this ListAvailableZonesRespAvailableZones.
 
-        可用区编码。
+        **参数解释**： 可用区编码。 **取值范围**： 不涉及。
 
         :param code: The code of this ListAvailableZonesRespAvailableZones.
         :type code: str
@@ -167,7 +167,7 @@ class ListAvailableZonesRespAvailableZones:
     def name(self):
         r"""Gets the name of this ListAvailableZonesRespAvailableZones.
 
-        可用区名称。
+        **参数解释**： 可用区名称。 **取值范围**： 不涉及。
 
         :return: The name of this ListAvailableZonesRespAvailableZones.
         :rtype: str
@@ -178,7 +178,7 @@ class ListAvailableZonesRespAvailableZones:
     def name(self, name):
         r"""Sets the name of this ListAvailableZonesRespAvailableZones.
 
-        可用区名称。
+        **参数解释**： 可用区名称。 **取值范围**： 不涉及。
 
         :param name: The name of this ListAvailableZonesRespAvailableZones.
         :type name: str
@@ -189,7 +189,7 @@ class ListAvailableZonesRespAvailableZones:
     def port(self):
         r"""Gets the port of this ListAvailableZonesRespAvailableZones.
 
-        可用区端口号。
+        **参数解释**： 可用区端口号。 **取值范围**： 不涉及。
 
         :return: The port of this ListAvailableZonesRespAvailableZones.
         :rtype: str
@@ -200,7 +200,7 @@ class ListAvailableZonesRespAvailableZones:
     def port(self, port):
         r"""Sets the port of this ListAvailableZonesRespAvailableZones.
 
-        可用区端口号。
+        **参数解释**： 可用区端口号。 **取值范围**： 不涉及。
 
         :param port: The port of this ListAvailableZonesRespAvailableZones.
         :type port: str
@@ -211,7 +211,7 @@ class ListAvailableZonesRespAvailableZones:
     def resource_availability(self):
         r"""Gets the resource_availability of this ListAvailableZonesRespAvailableZones.
 
-        分区上是否还有可用资源。
+        **参数解释**： 分区上是否还有可用资源。 **取值范围**： - true：有可用资源。 - false：没有可用资源。
 
         :return: The resource_availability of this ListAvailableZonesRespAvailableZones.
         :rtype: str
@@ -222,7 +222,7 @@ class ListAvailableZonesRespAvailableZones:
     def resource_availability(self, resource_availability):
         r"""Sets the resource_availability of this ListAvailableZonesRespAvailableZones.
 
-        分区上是否还有可用资源。
+        **参数解释**： 分区上是否还有可用资源。 **取值范围**： - true：有可用资源。 - false：没有可用资源。
 
         :param resource_availability: The resource_availability of this ListAvailableZonesRespAvailableZones.
         :type resource_availability: str
@@ -233,7 +233,7 @@ class ListAvailableZonesRespAvailableZones:
     def default_az(self):
         r"""Gets the default_az of this ListAvailableZonesRespAvailableZones.
 
-        是否为默认可用区。
+        **参数解释**： 是否为默认可用区。 **取值范围**： - true：默认可用区 - false：不是默认可用区
 
         :return: The default_az of this ListAvailableZonesRespAvailableZones.
         :rtype: bool
@@ -244,7 +244,7 @@ class ListAvailableZonesRespAvailableZones:
     def default_az(self, default_az):
         r"""Sets the default_az of this ListAvailableZonesRespAvailableZones.
 
-        是否为默认可用区。
+        **参数解释**： 是否为默认可用区。 **取值范围**： - true：默认可用区 - false：不是默认可用区
 
         :param default_az: The default_az of this ListAvailableZonesRespAvailableZones.
         :type default_az: bool
@@ -255,7 +255,7 @@ class ListAvailableZonesRespAvailableZones:
     def remain_time(self):
         r"""Gets the remain_time of this ListAvailableZonesRespAvailableZones.
 
-        剩余时间。
+        **参数解释**： 剩余时间，以Unix时间戳显示。 **取值范围**： 不涉及。
 
         :return: The remain_time of this ListAvailableZonesRespAvailableZones.
         :rtype: int
@@ -266,7 +266,7 @@ class ListAvailableZonesRespAvailableZones:
     def remain_time(self, remain_time):
         r"""Sets the remain_time of this ListAvailableZonesRespAvailableZones.
 
-        剩余时间。
+        **参数解释**： 剩余时间，以Unix时间戳显示。 **取值范围**： 不涉及。
 
         :param remain_time: The remain_time of this ListAvailableZonesRespAvailableZones.
         :type remain_time: int
@@ -277,7 +277,7 @@ class ListAvailableZonesRespAvailableZones:
     def ipv6_enable(self):
         r"""Gets the ipv6_enable of this ListAvailableZonesRespAvailableZones.
 
-        是否支持IPv6。
+        **参数解释**： 是否支持IPv6。 **取值范围**： - true：支持IPv6 - false：不支持IPv6
 
         :return: The ipv6_enable of this ListAvailableZonesRespAvailableZones.
         :rtype: bool
@@ -288,7 +288,7 @@ class ListAvailableZonesRespAvailableZones:
     def ipv6_enable(self, ipv6_enable):
         r"""Sets the ipv6_enable of this ListAvailableZonesRespAvailableZones.
 
-        是否支持IPv6。
+        **参数解释**： 是否支持IPv6。 **取值范围**： - true：支持IPv6 - false：不支持IPv6
 
         :param ipv6_enable: The ipv6_enable of this ListAvailableZonesRespAvailableZones.
         :type ipv6_enable: bool

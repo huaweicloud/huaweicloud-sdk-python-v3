@@ -33,6 +33,77 @@ class CloudtestAsyncClient(Client):
 
         return client_builder
 
+    def add_case_result_four_async(self, request):
+        r"""设置用例结果
+
+        设置用例结果
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for AddCaseResultFour
+        :type request: :class:`huaweicloudsdkcloudtest.v1.AddCaseResultFourRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.AddCaseResultFourResponse`
+        """
+        http_info = self._add_case_result_four_http_info(request)
+        return self._call_api(**http_info)
+
+    def add_case_result_four_async_invoker(self, request):
+        http_info = self._add_case_result_four_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _add_case_result_four_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v4/{project_id}/versions/{version_uri}/testcases/{case_uri}/results",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddCaseResultFourResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'version_uri' in local_var_params:
+            path_params['version_uri'] = local_var_params['version_uri']
+        if 'case_uri' in local_var_params:
+            path_params['case_uri'] = local_var_params['case_uri']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def add_test_case_comment_async(self, request):
         r"""新增用例评论
 
@@ -71,6 +142,77 @@ class CloudtestAsyncClient(Client):
             path_params['project_id'] = local_var_params['project_id']
         if 'testcase_id' in local_var_params:
             path_params['testcase_id'] = local_var_params['testcase_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def add_test_case_result_log_async(self, request):
+        r"""初始化用例执行记录
+
+        初始化用例执行记录
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for AddTestCaseResultLog
+        :type request: :class:`huaweicloudsdkcloudtest.v1.AddTestCaseResultLogRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.AddTestCaseResultLogResponse`
+        """
+        http_info = self._add_test_case_result_log_http_info(request)
+        return self._call_api(**http_info)
+
+    def add_test_case_result_log_async_invoker(self, request):
+        http_info = self._add_test_case_result_log_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _add_test_case_result_log_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v4/{project_id}/versions/{version_uri}/testcases/{case_uri}/results/init",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddTestCaseResultLogResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'version_uri' in local_var_params:
+            path_params['version_uri'] = local_var_params['version_uri']
+        if 'case_uri' in local_var_params:
+            path_params['case_uri'] = local_var_params['case_uri']
 
         query_params = []
 

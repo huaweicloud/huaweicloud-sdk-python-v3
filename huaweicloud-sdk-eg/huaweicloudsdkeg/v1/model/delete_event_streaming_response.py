@@ -18,20 +18,47 @@ class DeleteEventStreamingResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'body': 'object'
     }
 
     attribute_map = {
+        'body': 'body'
     }
 
-    def __init__(self):
+    def __init__(self, body=None):
         r"""DeleteEventStreamingResponse
 
         The model defined in huaweicloud sdk
 
+        :param body: 
+        :type body: object
         """
         
         super(DeleteEventStreamingResponse, self).__init__()
+
+        self._body = None
         self.discriminator = None
+
+        if body is not None:
+            self.body = body
+
+    @property
+    def body(self):
+        r"""Gets the body of this DeleteEventStreamingResponse.
+
+        :return: The body of this DeleteEventStreamingResponse.
+        :rtype: object
+        """
+        return self._body
+
+    @body.setter
+    def body(self, body):
+        r"""Sets the body of this DeleteEventStreamingResponse.
+
+        :param body: The body of this DeleteEventStreamingResponse.
+        :type body: object
+        """
+        self._body = body
 
     def to_dict(self):
         """Returns the model properties as a dict"""

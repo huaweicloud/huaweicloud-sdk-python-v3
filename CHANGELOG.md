@@ -1,3 +1,156 @@
+# 3.1.145 2025-04-24
+
+### HuaweiCloud SDK CDN
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdateDomainMultiCertificates**
+    - changes of response param
+      - `+ result`
+      - `+ status`
+  - **ShowDomainFullConfig**
+    - changes of response param
+      - `+ configs.request_limit_rules.limit_time`
+  - **UpdateDomainFullConfig**
+    - changes of request param
+      - `+ configs.request_limit_rules.limit_time`
+      - `+ configs.url_auth.match_rule`
+
+### HuaweiCloud SDK Cloudtest
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the APIs `AddTestCaseResultLog`, `AddCaseResultFour`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK COC
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListResource**
+    - changes of response param
+      - `+ data.domain_id`
+
+### HuaweiCloud SDK ELB
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListAvailabilityZones**
+    - changes of response param
+      - `- spec_code`
+      - `+ availability_zones.spec_code`
+  - **ListMembers**
+    - changes of response param
+      - `+ members.status.created_at`
+      - `+ members.status.updated_at`
+  - **CreateMember**
+    - changes of response param
+      - `+ member.status.created_at`
+      - `+ member.status.updated_at`
+  - **ShowMember**
+    - changes of response param
+      - `+ member.status.created_at`
+      - `+ member.status.updated_at`
+  - **UpdateMember**
+    - changes of response param
+      - `+ member.status.created_at`
+      - `+ member.status.updated_at`
+  - **ListAllMembers**
+    - changes of response param
+      - `+ members.status.created_at`
+      - `+ members.status.updated_at`
+  - **BatchCreateMembers**
+    - changes of response param
+      - `+ members.status.created_at`
+      - `+ members.status.updated_at`
+  - **BatchUpdateMembers**
+    - changes of response param
+      - `+ members.status.created_at`
+      - `+ members.status.updated_at`
+  - **ListLoadBalancers**
+    - changes of response param
+      - `- loadbalancers.ipv6_bandwidth`
+  - **CreateLoadBalancer**
+    - changes of response param
+      - `- loadbalancer.ipv6_bandwidth`
+  - **ShowLoadBalancer**
+    - changes of response param
+      - `- loadbalancer.ipv6_bandwidth`
+  - **UpdateLoadBalancer**
+    - changes of response param
+      - `- loadbalancer.ipv6_bandwidth`
+  - **BatchAddAvailableZones**
+    - changes of response param
+      - `- loadbalancer.ipv6_bandwidth`
+  - **BatchRemoveAvailableZones**
+    - changes of response param
+      - `- loadbalancer.ipv6_bandwidth`
+  - **ListJobs**
+    - changes of request param
+      - `+ limit`
+      - `+ marker`
+      - `+ page_reverse`
+    - changes of response param
+      - `+ page_info`
+
+### HuaweiCloud SDK GaussDB
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the APIs `ListTaurusDbNodeProcesses`, `DeleteTaurusDbNodeProcesses`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK IMS
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the APIs `ShowImageMember`, `ListImageMembers`, `BatchDeleteTags`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK RabbitMQ
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the API `ShowRabbitMqProductCores`
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateExchange**
+    - changes of response param
+      - `+ arguments`
+  - **ListExchanges**
+    - changes of response param
+      - `+ arguments`
+      - `+ items.arguments`
+
 # 3.1.144 2025-04-17
 
 ### HuaweiCloud SDK AntiDDoS

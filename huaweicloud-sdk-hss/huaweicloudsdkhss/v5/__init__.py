@@ -207,6 +207,7 @@ from huaweicloudsdkhss.v5.model.host_task_status import HostTaskStatus
 from huaweicloudsdkhss.v5.model.host_vul_info import HostVulInfo
 from huaweicloudsdkhss.v5.model.host_vul_info_app_list import HostVulInfoAppList
 from huaweicloudsdkhss.v5.model.host_vul_info_cve_list import HostVulInfoCveList
+from huaweicloudsdkhss.v5.model.host_vul_info_disabled_operate_types import HostVulInfoDisabledOperateTypes
 from huaweicloudsdkhss.v5.model.host_vul_operate_info import HostVulOperateInfo
 from huaweicloudsdkhss.v5.model.ignore_dir import IgnoreDir
 from huaweicloudsdkhss.v5.model.image_check_rule_check_case_response_info import ImageCheckRuleCheckCaseResponseInfo
@@ -559,7 +560,6 @@ from huaweicloudsdkhss.v5.model.user_statistic_info_response_info import UserSta
 from huaweicloudsdkhss.v5.model.virus_num import VirusNum
 from huaweicloudsdkhss.v5.model.vul_cve_info import VulCveInfo
 from huaweicloudsdkhss.v5.model.vul_host_info import VulHostInfo
-from huaweicloudsdkhss.v5.model.vul_host_info_disabled_operate_types import VulHostInfoDisabledOperateTypes
 from huaweicloudsdkhss.v5.model.vul_info import VulInfo
 from huaweicloudsdkhss.v5.model.vul_info_cve_list import VulInfoCveList
 from huaweicloudsdkhss.v5.model.vul_operate_info import VulOperateInfo

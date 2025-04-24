@@ -5,7 +5,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class OperateSubscriptionRequest:
+class ListImageMembersRequest:
 
     """
     Attributes:
@@ -17,76 +17,50 @@ class OperateSubscriptionRequest:
     sensitive_list = []
 
     openapi_types = {
-        'enterprise_project_id': 'str',
-        'body': 'SubscriptionOperateReq'
+        'image_id': 'str'
     }
 
     attribute_map = {
-        'enterprise_project_id': 'enterprise_project_id',
-        'body': 'body'
+        'image_id': 'image_id'
     }
 
-    def __init__(self, enterprise_project_id=None, body=None):
-        r"""OperateSubscriptionRequest
+    def __init__(self, image_id=None):
+        r"""ListImageMembersRequest
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 创建订阅时所使用的企业项目id
-        :type enterprise_project_id: str
-        :param body: Body of the OperateSubscriptionRequest
-        :type body: :class:`huaweicloudsdkeg.v1.SubscriptionOperateReq`
+        :param image_id: 镜像id
+        :type image_id: str
         """
         
         
 
-        self._enterprise_project_id = None
-        self._body = None
+        self._image_id = None
         self.discriminator = None
 
-        if enterprise_project_id is not None:
-            self.enterprise_project_id = enterprise_project_id
-        if body is not None:
-            self.body = body
+        self.image_id = image_id
 
     @property
-    def enterprise_project_id(self):
-        r"""Gets the enterprise_project_id of this OperateSubscriptionRequest.
+    def image_id(self):
+        r"""Gets the image_id of this ListImageMembersRequest.
 
-        创建订阅时所使用的企业项目id
+        镜像id
 
-        :return: The enterprise_project_id of this OperateSubscriptionRequest.
+        :return: The image_id of this ListImageMembersRequest.
         :rtype: str
         """
-        return self._enterprise_project_id
+        return self._image_id
 
-    @enterprise_project_id.setter
-    def enterprise_project_id(self, enterprise_project_id):
-        r"""Sets the enterprise_project_id of this OperateSubscriptionRequest.
+    @image_id.setter
+    def image_id(self, image_id):
+        r"""Sets the image_id of this ListImageMembersRequest.
 
-        创建订阅时所使用的企业项目id
+        镜像id
 
-        :param enterprise_project_id: The enterprise_project_id of this OperateSubscriptionRequest.
-        :type enterprise_project_id: str
+        :param image_id: The image_id of this ListImageMembersRequest.
+        :type image_id: str
         """
-        self._enterprise_project_id = enterprise_project_id
-
-    @property
-    def body(self):
-        r"""Gets the body of this OperateSubscriptionRequest.
-
-        :return: The body of this OperateSubscriptionRequest.
-        :rtype: :class:`huaweicloudsdkeg.v1.SubscriptionOperateReq`
-        """
-        return self._body
-
-    @body.setter
-    def body(self, body):
-        r"""Sets the body of this OperateSubscriptionRequest.
-
-        :param body: The body of this OperateSubscriptionRequest.
-        :type body: :class:`huaweicloudsdkeg.v1.SubscriptionOperateReq`
-        """
-        self._body = body
+        self._image_id = image_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -130,7 +104,7 @@ class OperateSubscriptionRequest:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, OperateSubscriptionRequest):
+        if not isinstance(other, ListImageMembersRequest):
             return False
 
         return self.__dict__ == other.__dict__

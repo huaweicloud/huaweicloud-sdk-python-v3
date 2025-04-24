@@ -113,7 +113,7 @@ class HouseholdRegisterContent:
         :type blood_type: str
         :param education: 文化程度。 
         :type education: str
-        :param marital_status: 婚姻状况。   
+        :param marital_status: 婚姻状况。 
         :type marital_status: str
         :param military_service_status: 兵役情况。 
         :type military_service_status: str
@@ -549,7 +549,7 @@ class HouseholdRegisterContent:
     def marital_status(self):
         r"""Gets the marital_status of this HouseholdRegisterContent.
 
-        婚姻状况。   
+        婚姻状况。 
 
         :return: The marital_status of this HouseholdRegisterContent.
         :rtype: str
@@ -560,7 +560,7 @@ class HouseholdRegisterContent:
     def marital_status(self, marital_status):
         r"""Sets the marital_status of this HouseholdRegisterContent.
 
-        婚姻状况。   
+        婚姻状况。 
 
         :param marital_status: The marital_status of this HouseholdRegisterContent.
         :type marital_status: str

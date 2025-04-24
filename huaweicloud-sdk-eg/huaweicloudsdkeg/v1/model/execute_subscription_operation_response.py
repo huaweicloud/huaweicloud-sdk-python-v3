@@ -6,7 +6,7 @@ from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class OperateSubscriptionResponse(SdkResponse):
+class ExecuteSubscriptionOperationResponse(SdkResponse):
 
     """
     Attributes:
@@ -30,7 +30,7 @@ class OperateSubscriptionResponse(SdkResponse):
     }
 
     def __init__(self, failed_count=None, events=None, x_request_id=None):
-        r"""OperateSubscriptionResponse
+        r"""ExecuteSubscriptionOperationResponse
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class OperateSubscriptionResponse(SdkResponse):
         :type x_request_id: str
         """
         
-        super(OperateSubscriptionResponse, self).__init__()
+        super(ExecuteSubscriptionOperationResponse, self).__init__()
 
         self._failed_count = None
         self._events = None
@@ -58,62 +58,62 @@ class OperateSubscriptionResponse(SdkResponse):
 
     @property
     def failed_count(self):
-        r"""Gets the failed_count of this OperateSubscriptionResponse.
+        r"""Gets the failed_count of this ExecuteSubscriptionOperationResponse.
 
         操作失败的订阅个数
 
-        :return: The failed_count of this OperateSubscriptionResponse.
+        :return: The failed_count of this ExecuteSubscriptionOperationResponse.
         :rtype: int
         """
         return self._failed_count
 
     @failed_count.setter
     def failed_count(self, failed_count):
-        r"""Sets the failed_count of this OperateSubscriptionResponse.
+        r"""Sets the failed_count of this ExecuteSubscriptionOperationResponse.
 
         操作失败的订阅个数
 
-        :param failed_count: The failed_count of this OperateSubscriptionResponse.
+        :param failed_count: The failed_count of this ExecuteSubscriptionOperationResponse.
         :type failed_count: int
         """
         self._failed_count = failed_count
 
     @property
     def events(self):
-        r"""Gets the events of this OperateSubscriptionResponse.
+        r"""Gets the events of this ExecuteSubscriptionOperationResponse.
 
         事件列表
 
-        :return: The events of this OperateSubscriptionResponse.
+        :return: The events of this ExecuteSubscriptionOperationResponse.
         :rtype: list[:class:`huaweicloudsdkeg.v1.SubscriptionOperateRespEvents`]
         """
         return self._events
 
     @events.setter
     def events(self, events):
-        r"""Sets the events of this OperateSubscriptionResponse.
+        r"""Sets the events of this ExecuteSubscriptionOperationResponse.
 
         事件列表
 
-        :param events: The events of this OperateSubscriptionResponse.
+        :param events: The events of this ExecuteSubscriptionOperationResponse.
         :type events: list[:class:`huaweicloudsdkeg.v1.SubscriptionOperateRespEvents`]
         """
         self._events = events
 
     @property
     def x_request_id(self):
-        r"""Gets the x_request_id of this OperateSubscriptionResponse.
+        r"""Gets the x_request_id of this ExecuteSubscriptionOperationResponse.
 
-        :return: The x_request_id of this OperateSubscriptionResponse.
+        :return: The x_request_id of this ExecuteSubscriptionOperationResponse.
         :rtype: str
         """
         return self._x_request_id
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        r"""Sets the x_request_id of this OperateSubscriptionResponse.
+        r"""Sets the x_request_id of this ExecuteSubscriptionOperationResponse.
 
-        :param x_request_id: The x_request_id of this OperateSubscriptionResponse.
+        :param x_request_id: The x_request_id of this ExecuteSubscriptionOperationResponse.
         :type x_request_id: str
         """
         self._x_request_id = x_request_id
@@ -160,7 +160,7 @@ class OperateSubscriptionResponse(SdkResponse):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, OperateSubscriptionResponse):
+        if not isinstance(other, ExecuteSubscriptionOperationResponse):
             return False
 
         return self.__dict__ == other.__dict__

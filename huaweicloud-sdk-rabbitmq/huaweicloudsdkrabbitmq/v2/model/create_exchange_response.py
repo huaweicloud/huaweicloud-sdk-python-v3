@@ -21,6 +21,7 @@ class CreateExchangeResponse(SdkResponse):
         'durable': 'bool',
         'default': 'bool',
         'internal': 'bool',
+        'arguments': 'object',
         'name': 'str',
         'auto_delete': 'bool',
         'type': 'str',
@@ -31,13 +32,14 @@ class CreateExchangeResponse(SdkResponse):
         'durable': 'durable',
         'default': 'default',
         'internal': 'internal',
+        'arguments': 'arguments',
         'name': 'name',
         'auto_delete': 'auto_delete',
         'type': 'type',
         'vhost': 'vhost'
     }
 
-    def __init__(self, durable=None, default=None, internal=None, name=None, auto_delete=None, type=None, vhost=None):
+    def __init__(self, durable=None, default=None, internal=None, arguments=None, name=None, auto_delete=None, type=None, vhost=None):
         r"""CreateExchangeResponse
 
         The model defined in huaweicloud sdk
@@ -48,6 +50,8 @@ class CreateExchangeResponse(SdkResponse):
         :type default: bool
         :param internal: 是否是内部Exchange
         :type internal: bool
+        :param arguments: 参数列表
+        :type arguments: object
         :param name: Exchange名称
         :type name: str
         :param auto_delete: 是否自动删除
@@ -63,6 +67,7 @@ class CreateExchangeResponse(SdkResponse):
         self._durable = None
         self._default = None
         self._internal = None
+        self._arguments = None
         self._name = None
         self._auto_delete = None
         self._type = None
@@ -75,6 +80,8 @@ class CreateExchangeResponse(SdkResponse):
             self.default = default
         if internal is not None:
             self.internal = internal
+        if arguments is not None:
+            self.arguments = arguments
         if name is not None:
             self.name = name
         if auto_delete is not None:
@@ -149,6 +156,28 @@ class CreateExchangeResponse(SdkResponse):
         :type internal: bool
         """
         self._internal = internal
+
+    @property
+    def arguments(self):
+        r"""Gets the arguments of this CreateExchangeResponse.
+
+        参数列表
+
+        :return: The arguments of this CreateExchangeResponse.
+        :rtype: object
+        """
+        return self._arguments
+
+    @arguments.setter
+    def arguments(self, arguments):
+        r"""Sets the arguments of this CreateExchangeResponse.
+
+        参数列表
+
+        :param arguments: The arguments of this CreateExchangeResponse.
+        :type arguments: object
+        """
+        self._arguments = arguments
 
     @property
     def name(self):

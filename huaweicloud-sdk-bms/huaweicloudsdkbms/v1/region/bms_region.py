@@ -54,6 +54,8 @@ class BmsRegion:
                         "https://bms.me-east-1.myhuaweicloud.com")
     CN_EAST_4 = Region("cn-east-4",
                         "https://bms.cn-east-4.myhuaweicloud.com")
+    MY_KUALALUMPUR_1 = Region("my-kualalumpur-1",
+                        "https://bms.my-kualalumpur-1.myhuaweicloud.com")
 
     static_fields = {
         "cn-north-2": CN_NORTH_2,
@@ -80,6 +82,7 @@ class BmsRegion:
         "tr-west-1": TR_WEST_1,
         "me-east-1": ME_EAST_1,
         "cn-east-4": CN_EAST_4,
+        "my-kualalumpur-1": MY_KUALALUMPUR_1,
     }
 
     @classmethod

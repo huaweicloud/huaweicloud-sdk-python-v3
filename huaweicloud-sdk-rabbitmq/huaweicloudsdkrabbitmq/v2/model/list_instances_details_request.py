@@ -45,23 +45,23 @@ class ListInstancesDetailsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param engine: 引擎类型：rabbitmq。
+        :param engine: **参数解释**： 引擎类型：rabbitmq。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type engine: str
-        :param name: 实例名称。
+        :param name: **参数解释**： 实例名称。获取方式：登录RabbitMQ控制台，在RabbitMQ实例详情页面查找实例名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type name: str
-        :param instance_id: 实例ID。
+        :param instance_id: **参数解释**： 实例ID。获取方法如下：登录RabbitMQ控制台，在RabbitMQ实例详情页面查找实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type instance_id: str
-        :param status: 实例状态，[详细状态说明请参考[实例状态说明](rabbitmq-api-180514012.xml)](tag:hws,hws_eu,hws_hk,cmcc,ctc,sbc,hk_sbc,g42,hk_g42,tm,hk_tm)[详细状态说明请参考[实例状态说明](kafka-api-180514012.xml)](tag:hcs)。
+        :param status: **参数解释**： 实例状态，[详细状态说明请参考[实例状态说明](rabbitmq-api-180514012.xml)](tag:hws,hws_eu,hws_hk,cmcc,ctc,sbc,hk_sbc,g42,hk_g42,tm,hk_tm)[详细状态说明请参考[实例状态说明](kafka-api-180514012.xml)](tag:hcs)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type status: str
-        :param include_failure: 是否返回创建失败的实例数。  当参数值为“true”时，返回创建失败的实例数。参数值为“false”或者其他值，不返回创建失败的实例数。
+        :param include_failure: **参数解释**： 是否返回创建失败的实例数。 **约束限制**： 不涉及。 **取值范围**： - true：返回创建失败的实例数。 - false：不返回创建失败的实例数。  **默认取值**： 不涉及。
         :type include_failure: str
-        :param exact_match_name: 是否按照实例名称进行精确匹配查询。  默认为“false”，表示模糊匹配实例名称查询。若参数值为“true”表示按照实例名称进行精确匹配查询。
+        :param exact_match_name: **参数解释**： 是否按照实例名称进行精确匹配查询。 **约束限制**： 不涉及。 **取值范围**： - true：按照实例名称进行精确匹配查询。 - false：按照模糊匹配实例名称查询。  **默认取值**： false
         :type exact_match_name: str
-        :param enterprise_project_id: 企业项目ID。
+        :param enterprise_project_id: **参数解释**： 企业项目ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type enterprise_project_id: str
-        :param offset: 偏移量，表示从此偏移量开始查询， offset大于等于0。
+        :param offset: **参数解释**： 偏移量，表示从此偏移量开始查询。 **约束限制**： 不涉及。 **取值范围**： 大于等于0 **默认取值**： 不涉及。
         :type offset: str
-        :param limit: 当次查询返回的最大实例个数，默认值为10，取值范围为1~50。
+        :param limit: **参数解释**： 当次查询返回的最大实例个数。 **约束限制**： 不涉及。 **取值范围**： 1~50 **默认取值**： 10
         :type limit: str
         """
         
@@ -100,7 +100,7 @@ class ListInstancesDetailsRequest:
     def engine(self):
         r"""Gets the engine of this ListInstancesDetailsRequest.
 
-        引擎类型：rabbitmq。
+        **参数解释**： 引擎类型：rabbitmq。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The engine of this ListInstancesDetailsRequest.
         :rtype: str
@@ -111,7 +111,7 @@ class ListInstancesDetailsRequest:
     def engine(self, engine):
         r"""Sets the engine of this ListInstancesDetailsRequest.
 
-        引擎类型：rabbitmq。
+        **参数解释**： 引擎类型：rabbitmq。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param engine: The engine of this ListInstancesDetailsRequest.
         :type engine: str
@@ -122,7 +122,7 @@ class ListInstancesDetailsRequest:
     def name(self):
         r"""Gets the name of this ListInstancesDetailsRequest.
 
-        实例名称。
+        **参数解释**： 实例名称。获取方式：登录RabbitMQ控制台，在RabbitMQ实例详情页面查找实例名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The name of this ListInstancesDetailsRequest.
         :rtype: str
@@ -133,7 +133,7 @@ class ListInstancesDetailsRequest:
     def name(self, name):
         r"""Sets the name of this ListInstancesDetailsRequest.
 
-        实例名称。
+        **参数解释**： 实例名称。获取方式：登录RabbitMQ控制台，在RabbitMQ实例详情页面查找实例名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param name: The name of this ListInstancesDetailsRequest.
         :type name: str
@@ -144,7 +144,7 @@ class ListInstancesDetailsRequest:
     def instance_id(self):
         r"""Gets the instance_id of this ListInstancesDetailsRequest.
 
-        实例ID。
+        **参数解释**： 实例ID。获取方法如下：登录RabbitMQ控制台，在RabbitMQ实例详情页面查找实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The instance_id of this ListInstancesDetailsRequest.
         :rtype: str
@@ -155,7 +155,7 @@ class ListInstancesDetailsRequest:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this ListInstancesDetailsRequest.
 
-        实例ID。
+        **参数解释**： 实例ID。获取方法如下：登录RabbitMQ控制台，在RabbitMQ实例详情页面查找实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param instance_id: The instance_id of this ListInstancesDetailsRequest.
         :type instance_id: str
@@ -166,7 +166,7 @@ class ListInstancesDetailsRequest:
     def status(self):
         r"""Gets the status of this ListInstancesDetailsRequest.
 
-        实例状态，[详细状态说明请参考[实例状态说明](rabbitmq-api-180514012.xml)](tag:hws,hws_eu,hws_hk,cmcc,ctc,sbc,hk_sbc,g42,hk_g42,tm,hk_tm)[详细状态说明请参考[实例状态说明](kafka-api-180514012.xml)](tag:hcs)。
+        **参数解释**： 实例状态，[详细状态说明请参考[实例状态说明](rabbitmq-api-180514012.xml)](tag:hws,hws_eu,hws_hk,cmcc,ctc,sbc,hk_sbc,g42,hk_g42,tm,hk_tm)[详细状态说明请参考[实例状态说明](kafka-api-180514012.xml)](tag:hcs)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The status of this ListInstancesDetailsRequest.
         :rtype: str
@@ -177,7 +177,7 @@ class ListInstancesDetailsRequest:
     def status(self, status):
         r"""Sets the status of this ListInstancesDetailsRequest.
 
-        实例状态，[详细状态说明请参考[实例状态说明](rabbitmq-api-180514012.xml)](tag:hws,hws_eu,hws_hk,cmcc,ctc,sbc,hk_sbc,g42,hk_g42,tm,hk_tm)[详细状态说明请参考[实例状态说明](kafka-api-180514012.xml)](tag:hcs)。
+        **参数解释**： 实例状态，[详细状态说明请参考[实例状态说明](rabbitmq-api-180514012.xml)](tag:hws,hws_eu,hws_hk,cmcc,ctc,sbc,hk_sbc,g42,hk_g42,tm,hk_tm)[详细状态说明请参考[实例状态说明](kafka-api-180514012.xml)](tag:hcs)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param status: The status of this ListInstancesDetailsRequest.
         :type status: str
@@ -188,7 +188,7 @@ class ListInstancesDetailsRequest:
     def include_failure(self):
         r"""Gets the include_failure of this ListInstancesDetailsRequest.
 
-        是否返回创建失败的实例数。  当参数值为“true”时，返回创建失败的实例数。参数值为“false”或者其他值，不返回创建失败的实例数。
+        **参数解释**： 是否返回创建失败的实例数。 **约束限制**： 不涉及。 **取值范围**： - true：返回创建失败的实例数。 - false：不返回创建失败的实例数。  **默认取值**： 不涉及。
 
         :return: The include_failure of this ListInstancesDetailsRequest.
         :rtype: str
@@ -199,7 +199,7 @@ class ListInstancesDetailsRequest:
     def include_failure(self, include_failure):
         r"""Sets the include_failure of this ListInstancesDetailsRequest.
 
-        是否返回创建失败的实例数。  当参数值为“true”时，返回创建失败的实例数。参数值为“false”或者其他值，不返回创建失败的实例数。
+        **参数解释**： 是否返回创建失败的实例数。 **约束限制**： 不涉及。 **取值范围**： - true：返回创建失败的实例数。 - false：不返回创建失败的实例数。  **默认取值**： 不涉及。
 
         :param include_failure: The include_failure of this ListInstancesDetailsRequest.
         :type include_failure: str
@@ -210,7 +210,7 @@ class ListInstancesDetailsRequest:
     def exact_match_name(self):
         r"""Gets the exact_match_name of this ListInstancesDetailsRequest.
 
-        是否按照实例名称进行精确匹配查询。  默认为“false”，表示模糊匹配实例名称查询。若参数值为“true”表示按照实例名称进行精确匹配查询。
+        **参数解释**： 是否按照实例名称进行精确匹配查询。 **约束限制**： 不涉及。 **取值范围**： - true：按照实例名称进行精确匹配查询。 - false：按照模糊匹配实例名称查询。  **默认取值**： false
 
         :return: The exact_match_name of this ListInstancesDetailsRequest.
         :rtype: str
@@ -221,7 +221,7 @@ class ListInstancesDetailsRequest:
     def exact_match_name(self, exact_match_name):
         r"""Sets the exact_match_name of this ListInstancesDetailsRequest.
 
-        是否按照实例名称进行精确匹配查询。  默认为“false”，表示模糊匹配实例名称查询。若参数值为“true”表示按照实例名称进行精确匹配查询。
+        **参数解释**： 是否按照实例名称进行精确匹配查询。 **约束限制**： 不涉及。 **取值范围**： - true：按照实例名称进行精确匹配查询。 - false：按照模糊匹配实例名称查询。  **默认取值**： false
 
         :param exact_match_name: The exact_match_name of this ListInstancesDetailsRequest.
         :type exact_match_name: str
@@ -232,7 +232,7 @@ class ListInstancesDetailsRequest:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this ListInstancesDetailsRequest.
 
-        企业项目ID。
+        **参数解释**： 企业项目ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The enterprise_project_id of this ListInstancesDetailsRequest.
         :rtype: str
@@ -243,7 +243,7 @@ class ListInstancesDetailsRequest:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this ListInstancesDetailsRequest.
 
-        企业项目ID。
+        **参数解释**： 企业项目ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param enterprise_project_id: The enterprise_project_id of this ListInstancesDetailsRequest.
         :type enterprise_project_id: str
@@ -254,7 +254,7 @@ class ListInstancesDetailsRequest:
     def offset(self):
         r"""Gets the offset of this ListInstancesDetailsRequest.
 
-        偏移量，表示从此偏移量开始查询， offset大于等于0。
+        **参数解释**： 偏移量，表示从此偏移量开始查询。 **约束限制**： 不涉及。 **取值范围**： 大于等于0 **默认取值**： 不涉及。
 
         :return: The offset of this ListInstancesDetailsRequest.
         :rtype: str
@@ -265,7 +265,7 @@ class ListInstancesDetailsRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListInstancesDetailsRequest.
 
-        偏移量，表示从此偏移量开始查询， offset大于等于0。
+        **参数解释**： 偏移量，表示从此偏移量开始查询。 **约束限制**： 不涉及。 **取值范围**： 大于等于0 **默认取值**： 不涉及。
 
         :param offset: The offset of this ListInstancesDetailsRequest.
         :type offset: str
@@ -276,7 +276,7 @@ class ListInstancesDetailsRequest:
     def limit(self):
         r"""Gets the limit of this ListInstancesDetailsRequest.
 
-        当次查询返回的最大实例个数，默认值为10，取值范围为1~50。
+        **参数解释**： 当次查询返回的最大实例个数。 **约束限制**： 不涉及。 **取值范围**： 1~50 **默认取值**： 10
 
         :return: The limit of this ListInstancesDetailsRequest.
         :rtype: str
@@ -287,7 +287,7 @@ class ListInstancesDetailsRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListInstancesDetailsRequest.
 
-        当次查询返回的最大实例个数，默认值为10，取值范围为1~50。
+        **参数解释**： 当次查询返回的最大实例个数。 **约束限制**： 不涉及。 **取值范围**： 1~50 **默认取值**： 10
 
         :param limit: The limit of this ListInstancesDetailsRequest.
         :type limit: str

@@ -34,7 +34,7 @@ class ListLoginCommonLocationResponse(SdkResponse):
 
         :param total_num: 常用登录地已设置的个数
         :type total_num: int
-        :param data_list: 返回常用登陆地信息列表
+        :param data_list: 返回常用登录地信息列表
         :type data_list: list[:class:`huaweicloudsdkhss.v5.LoginCommonLocationResponseInfo`]
         """
         
@@ -75,7 +75,7 @@ class ListLoginCommonLocationResponse(SdkResponse):
     def data_list(self):
         r"""Gets the data_list of this ListLoginCommonLocationResponse.
 
-        返回常用登陆地信息列表
+        返回常用登录地信息列表
 
         :return: The data_list of this ListLoginCommonLocationResponse.
         :rtype: list[:class:`huaweicloudsdkhss.v5.LoginCommonLocationResponseInfo`]
@@ -86,7 +86,7 @@ class ListLoginCommonLocationResponse(SdkResponse):
     def data_list(self, data_list):
         r"""Sets the data_list of this ListLoginCommonLocationResponse.
 
-        返回常用登陆地信息列表
+        返回常用登录地信息列表
 
         :param data_list: The data_list of this ListLoginCommonLocationResponse.
         :type data_list: list[:class:`huaweicloudsdkhss.v5.LoginCommonLocationResponseInfo`]

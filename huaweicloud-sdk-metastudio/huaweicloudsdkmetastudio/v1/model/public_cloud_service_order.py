@@ -41,7 +41,7 @@ class PublicCloudServiceOrder:
 
         :param is_auto_pay: 是否自动支付：下单订购后，是否自动从客户的华为云账户中支付，而不需要客户手动去进行支付；  1：是（会自动选择折扣和优惠券进行优惠，然后自动从客户华为云账户中支付），自动支付失败后会生成订单成功(该订单应付金额是优惠后金额)、但订单状态为“待支付”，等待客户手动支付(手动支付时，客户还可以修改系统自动选择的折扣和优惠券)。 0：否（需要客户手动去支付，客户可以选择折扣和优惠券）。 默认值为“0”。
         :type is_auto_pay: int
-        :param period_type: 订购周期类型： 2：月； 3：年； 6：一次性（chargingMode&#x3D;1 一次性计费场景使用）
+        :param period_type: 订购周期类型： 2：月； 3：年； 6：一次性;
         :type period_type: int
         :param period_num: 订购周期数 取值大于0；小于等于0会报错
         :type period_num: int
@@ -98,7 +98,7 @@ class PublicCloudServiceOrder:
     def period_type(self):
         r"""Gets the period_type of this PublicCloudServiceOrder.
 
-        订购周期类型： 2：月； 3：年； 6：一次性（chargingMode=1 一次性计费场景使用）
+        订购周期类型： 2：月； 3：年； 6：一次性;
 
         :return: The period_type of this PublicCloudServiceOrder.
         :rtype: int
@@ -109,7 +109,7 @@ class PublicCloudServiceOrder:
     def period_type(self, period_type):
         r"""Sets the period_type of this PublicCloudServiceOrder.
 
-        订购周期类型： 2：月； 3：年； 6：一次性（chargingMode=1 一次性计费场景使用）
+        订购周期类型： 2：月； 3：年； 6：一次性;
 
         :param period_type: The period_type of this PublicCloudServiceOrder.
         :type period_type: int
