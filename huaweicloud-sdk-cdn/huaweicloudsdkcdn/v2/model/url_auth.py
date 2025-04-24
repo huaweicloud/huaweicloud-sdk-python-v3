@@ -22,6 +22,7 @@ class UrlAuth:
         'expire_time': 'int',
         'sign_method': 'str',
         'match_type': 'str',
+        'match_rule': 'str',
         'inherit_config': 'InheritConfig',
         'key': 'str',
         'backup_key': 'str',
@@ -36,6 +37,7 @@ class UrlAuth:
         'expire_time': 'expire_time',
         'sign_method': 'sign_method',
         'match_type': 'match_type',
+        'match_rule': 'match_rule',
         'inherit_config': 'inherit_config',
         'key': 'key',
         'backup_key': 'backup_key',
@@ -44,7 +46,7 @@ class UrlAuth:
         'time_arg': 'time_arg'
     }
 
-    def __init__(self, status=None, type=None, expire_time=None, sign_method=None, match_type=None, inherit_config=None, key=None, backup_key=None, sign_arg=None, time_format=None, time_arg=None):
+    def __init__(self, status=None, type=None, expire_time=None, sign_method=None, match_type=None, match_rule=None, inherit_config=None, key=None, backup_key=None, sign_arg=None, time_format=None, time_arg=None):
         r"""UrlAuth
 
         The model defined in huaweicloud sdk
@@ -57,8 +59,10 @@ class UrlAuth:
         :type expire_time: int
         :param sign_method: 加密的算法 可选择md5或sha256。
         :type sign_method: str
-        :param match_type: 鉴权范围，目前仅支持配置所有文件参与鉴权，all：所有文件。
+        :param match_type: 鉴权范围 - all：所有文件 - include_file_extension：指定后缀文件参与鉴权 - exclude_file_extension：指定后缀文件不参与鉴权
         :type match_type: str
+        :param match_rule: 鉴权文件匹配规则，当match_type为all时，置空。当match_type为include_file_extension或exclude_file_extension时，输入文件后缀，后缀以“.”为首字符，多个后缀以“,”分隔，如.jpg,.zip,.exe。
+        :type match_rule: str
         :param inherit_config: 
         :type inherit_config: :class:`huaweicloudsdkcdn.v2.InheritConfig`
         :param key: 鉴权KEY 由6-32位大小写字母、数字构成。
@@ -80,6 +84,7 @@ class UrlAuth:
         self._expire_time = None
         self._sign_method = None
         self._match_type = None
+        self._match_rule = None
         self._inherit_config = None
         self._key = None
         self._backup_key = None
@@ -97,6 +102,8 @@ class UrlAuth:
             self.sign_method = sign_method
         if match_type is not None:
             self.match_type = match_type
+        if match_rule is not None:
+            self.match_rule = match_rule
         if inherit_config is not None:
             self.inherit_config = inherit_config
         if key is not None:
@@ -202,7 +209,7 @@ class UrlAuth:
     def match_type(self):
         r"""Gets the match_type of this UrlAuth.
 
-        鉴权范围，目前仅支持配置所有文件参与鉴权，all：所有文件。
+        鉴权范围 - all：所有文件 - include_file_extension：指定后缀文件参与鉴权 - exclude_file_extension：指定后缀文件不参与鉴权
 
         :return: The match_type of this UrlAuth.
         :rtype: str
@@ -213,12 +220,34 @@ class UrlAuth:
     def match_type(self, match_type):
         r"""Sets the match_type of this UrlAuth.
 
-        鉴权范围，目前仅支持配置所有文件参与鉴权，all：所有文件。
+        鉴权范围 - all：所有文件 - include_file_extension：指定后缀文件参与鉴权 - exclude_file_extension：指定后缀文件不参与鉴权
 
         :param match_type: The match_type of this UrlAuth.
         :type match_type: str
         """
         self._match_type = match_type
+
+    @property
+    def match_rule(self):
+        r"""Gets the match_rule of this UrlAuth.
+
+        鉴权文件匹配规则，当match_type为all时，置空。当match_type为include_file_extension或exclude_file_extension时，输入文件后缀，后缀以“.”为首字符，多个后缀以“,”分隔，如.jpg,.zip,.exe。
+
+        :return: The match_rule of this UrlAuth.
+        :rtype: str
+        """
+        return self._match_rule
+
+    @match_rule.setter
+    def match_rule(self, match_rule):
+        r"""Sets the match_rule of this UrlAuth.
+
+        鉴权文件匹配规则，当match_type为all时，置空。当match_type为include_file_extension或exclude_file_extension时，输入文件后缀，后缀以“.”为首字符，多个后缀以“,”分隔，如.jpg,.zip,.exe。
+
+        :param match_rule: The match_rule of this UrlAuth.
+        :type match_rule: str
+        """
+        self._match_rule = match_rule
 
     @property
     def inherit_config(self):

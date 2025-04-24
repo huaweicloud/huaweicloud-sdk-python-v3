@@ -165,6 +165,7 @@ from huaweicloudsdkelb.v3.model.delete_pool_response import DeletePoolResponse
 from huaweicloudsdkelb.v3.model.delete_security_policy_request import DeleteSecurityPolicyRequest
 from huaweicloudsdkelb.v3.model.delete_security_policy_response import DeleteSecurityPolicyResponse
 from huaweicloudsdkelb.v3.model.eip_info import EipInfo
+from huaweicloudsdkelb.v3.model.extension import Extension
 from huaweicloudsdkelb.v3.model.feature_config import FeatureConfig
 from huaweicloudsdkelb.v3.model.fixted_response_config import FixtedResponseConfig
 from huaweicloudsdkelb.v3.model.flavor import Flavor
@@ -257,6 +258,7 @@ from huaweicloudsdkelb.v3.model.preoccupy_ip import PreoccupyIp
 from huaweicloudsdkelb.v3.model.prepaid_change_charge_mode_option import PrepaidChangeChargeModeOption
 from huaweicloudsdkelb.v3.model.prepaid_create_option import PrepaidCreateOption
 from huaweicloudsdkelb.v3.model.prepaid_update_option import PrepaidUpdateOption
+from huaweicloudsdkelb.v3.model.proxy_protocol_extension import ProxyProtocolExtension
 from huaweicloudsdkelb.v3.model.public_ip_info import PublicIpInfo
 from huaweicloudsdkelb.v3.model.quic_cid_hash_strategy import QuicCidHashStrategy
 from huaweicloudsdkelb.v3.model.quota import Quota

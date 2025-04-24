@@ -2087,6 +2087,75 @@ class GaussDBAsyncClient(Client):
 
         return http_info
 
+    def delete_sql_filter_rule_async(self, request):
+        r"""删除SQL限流规则
+
+        删除SQL限流规则。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteSqlFilterRule
+        :type request: :class:`huaweicloudsdkgaussdb.v3.DeleteSqlFilterRuleRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.DeleteSqlFilterRuleResponse`
+        """
+        http_info = self._delete_sql_filter_rule_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_sql_filter_rule_async_invoker(self, request):
+        http_info = self._delete_sql_filter_rule_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_sql_filter_rule_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/sql-filter/rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteSqlFilterRuleResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_task_record_async(self, request):
         r"""删除指定任务记录
 
@@ -2140,6 +2209,77 @@ class GaussDBAsyncClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_taurus_db_node_processes_async(self, request):
+        r"""终止节点用户会话线程
+
+        终止TaurusDB节点中指定的用户会话线程，执行时将排除传入的内部会话线程。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteTaurusDbNodeProcesses
+        :type request: :class:`huaweicloudsdkgaussdb.v3.DeleteTaurusDbNodeProcessesRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.DeleteTaurusDbNodeProcessesResponse`
+        """
+        http_info = self._delete_taurus_db_node_processes_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_taurus_db_node_processes_async_invoker(self, request):
+        http_info = self._delete_taurus_db_node_processes_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_taurus_db_node_processes_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/nodes/{node_id}/processes",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTaurusDbNodeProcessesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'node_id' in local_var_params:
+            path_params['node_id'] = local_var_params['node_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
@@ -4161,6 +4301,79 @@ class GaussDBAsyncClient(Client):
 
         return http_info
 
+    def list_taurus_db_node_processes_async(self, request):
+        r"""查询节点用户会话线程
+
+        分页查询TaurusDB节点中的用户会话线程，对应于show processlist命令，返回结果不含内部会话线程。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListTaurusDbNodeProcesses
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ListTaurusDbNodeProcessesRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ListTaurusDbNodeProcessesResponse`
+        """
+        http_info = self._list_taurus_db_node_processes_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_taurus_db_node_processes_async_invoker(self, request):
+        http_info = self._list_taurus_db_node_processes_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_taurus_db_node_processes_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/nodes/{node_id}/processes",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTaurusDbNodeProcessesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'node_id' in local_var_params:
+            path_params['node_id'] = local_var_params['node_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def modify_backup_encrypt_status_async(self, request):
         r"""打开或关闭备份加密
 
@@ -5096,6 +5309,75 @@ class GaussDBAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def set_sql_filter_rule_async(self, request):
+        r"""设置SQL限流规则
+
+        设置SQL限流规则。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for SetSqlFilterRule
+        :type request: :class:`huaweicloudsdkgaussdb.v3.SetSqlFilterRuleRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.SetSqlFilterRuleResponse`
+        """
+        http_info = self._set_sql_filter_rule_http_info(request)
+        return self._call_api(**http_info)
+
+    def set_sql_filter_rule_async_invoker(self, request):
+        http_info = self._set_sql_filter_rule_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _set_sql_filter_rule_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/sql-filter/rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetSqlFilterRuleResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
 
         query_params = []
 
@@ -7349,6 +7631,144 @@ class GaussDBAsyncClient(Client):
 
         return http_info
 
+    def show_sql_filter_control_async(self, request):
+        r"""查询SQL限流开关状态
+
+        查询SQL限流开关状态。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowSqlFilterControl
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ShowSqlFilterControlRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowSqlFilterControlResponse`
+        """
+        http_info = self._show_sql_filter_control_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_sql_filter_control_async_invoker(self, request):
+        http_info = self._show_sql_filter_control_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_sql_filter_control_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/sql-filter/switch",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSqlFilterControlResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_sql_filter_rule_async(self, request):
+        r"""查询SQL限流规则
+
+        查询SQL限流规则。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowSqlFilterRule
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ShowSqlFilterRuleRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowSqlFilterRuleResponse`
+        """
+        http_info = self._show_sql_filter_rule_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_sql_filter_rule_async_invoker(self, request):
+        http_info = self._show_sql_filter_rule_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_sql_filter_rule_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/sql-filter/rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSqlFilterRuleResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'node_id' in local_var_params:
+            query_params.append(('node_id', local_var_params['node_id']))
+        if 'sql_type' in local_var_params:
+            query_params.append(('sql_type', local_var_params['sql_type']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def shrink_gauss_my_sql_proxy_async(self, request):
         r"""减少数据库代理节点的数量
 
@@ -9461,6 +9881,75 @@ class GaussDBAsyncClient(Client):
             "resource_path": "/v3/{project_id}/instances/{instance_id}/slowlog/modify",
             "request_type": request.__class__.__name__,
             "response_type": "UpdateSlowlogSensitiveSwitchResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_sql_filter_control_async(self, request):
+        r"""开启或者关闭SQL限流
+
+        开启或者关闭SQL限流。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateSqlFilterControl
+        :type request: :class:`huaweicloudsdkgaussdb.v3.UpdateSqlFilterControlRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateSqlFilterControlResponse`
+        """
+        http_info = self._update_sql_filter_control_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_sql_filter_control_async_invoker(self, request):
+        http_info = self._update_sql_filter_control_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_sql_filter_control_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/sql-filter/switch",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateSqlFilterControlResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -13964,351 +14453,6 @@ class GaussDBAsyncClient(Client):
             "resource_path": "/v3/{project_id}/instances/{instance_id}/starrocks/db-upgrade",
             "request_type": request.__class__.__name__,
             "response_type": "UpgradeSrKernelVersionResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'instance_id' in local_var_params:
-            path_params['instance_id'] = local_var_params['instance_id']
-
-        query_params = []
-
-        header_params = {}
-        if 'x_language' in local_var_params:
-            header_params['X-Language'] = local_var_params['x_language']
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def delete_sql_filter_rule_async(self, request):
-        r"""删除SQL限流规则
-
-        删除SQL限流规则。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for DeleteSqlFilterRule
-        :type request: :class:`huaweicloudsdkgaussdb.v3.DeleteSqlFilterRuleRequest`
-        :rtype: :class:`huaweicloudsdkgaussdb.v3.DeleteSqlFilterRuleResponse`
-        """
-        http_info = self._delete_sql_filter_rule_http_info(request)
-        return self._call_api(**http_info)
-
-    def delete_sql_filter_rule_async_invoker(self, request):
-        http_info = self._delete_sql_filter_rule_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _delete_sql_filter_rule_http_info(self, request):
-        http_info = {
-            "method": "DELETE",
-            "resource_path": "/v3/{project_id}/instances/{instance_id}/sql-filter/rules",
-            "request_type": request.__class__.__name__,
-            "response_type": "DeleteSqlFilterRuleResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'instance_id' in local_var_params:
-            path_params['instance_id'] = local_var_params['instance_id']
-
-        query_params = []
-
-        header_params = {}
-        if 'x_language' in local_var_params:
-            header_params['X-Language'] = local_var_params['x_language']
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def set_sql_filter_rule_async(self, request):
-        r"""设置SQL限流规则
-
-        设置SQL限流规则。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for SetSqlFilterRule
-        :type request: :class:`huaweicloudsdkgaussdb.v3.SetSqlFilterRuleRequest`
-        :rtype: :class:`huaweicloudsdkgaussdb.v3.SetSqlFilterRuleResponse`
-        """
-        http_info = self._set_sql_filter_rule_http_info(request)
-        return self._call_api(**http_info)
-
-    def set_sql_filter_rule_async_invoker(self, request):
-        http_info = self._set_sql_filter_rule_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _set_sql_filter_rule_http_info(self, request):
-        http_info = {
-            "method": "PUT",
-            "resource_path": "/v3/{project_id}/instances/{instance_id}/sql-filter/rules",
-            "request_type": request.__class__.__name__,
-            "response_type": "SetSqlFilterRuleResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'instance_id' in local_var_params:
-            path_params['instance_id'] = local_var_params['instance_id']
-
-        query_params = []
-
-        header_params = {}
-        if 'x_language' in local_var_params:
-            header_params['X-Language'] = local_var_params['x_language']
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def show_sql_filter_control_async(self, request):
-        r"""查询SQL限流开关状态
-
-        查询SQL限流开关状态。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ShowSqlFilterControl
-        :type request: :class:`huaweicloudsdkgaussdb.v3.ShowSqlFilterControlRequest`
-        :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowSqlFilterControlResponse`
-        """
-        http_info = self._show_sql_filter_control_http_info(request)
-        return self._call_api(**http_info)
-
-    def show_sql_filter_control_async_invoker(self, request):
-        http_info = self._show_sql_filter_control_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _show_sql_filter_control_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v3/{project_id}/instances/{instance_id}/sql-filter/switch",
-            "request_type": request.__class__.__name__,
-            "response_type": "ShowSqlFilterControlResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'instance_id' in local_var_params:
-            path_params['instance_id'] = local_var_params['instance_id']
-
-        query_params = []
-
-        header_params = {}
-        if 'x_language' in local_var_params:
-            header_params['X-Language'] = local_var_params['x_language']
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def show_sql_filter_rule_async(self, request):
-        r"""查询SQL限流规则
-
-        查询SQL限流规则。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ShowSqlFilterRule
-        :type request: :class:`huaweicloudsdkgaussdb.v3.ShowSqlFilterRuleRequest`
-        :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowSqlFilterRuleResponse`
-        """
-        http_info = self._show_sql_filter_rule_http_info(request)
-        return self._call_api(**http_info)
-
-    def show_sql_filter_rule_async_invoker(self, request):
-        http_info = self._show_sql_filter_rule_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _show_sql_filter_rule_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v3/{project_id}/instances/{instance_id}/sql-filter/rules",
-            "request_type": request.__class__.__name__,
-            "response_type": "ShowSqlFilterRuleResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'instance_id' in local_var_params:
-            path_params['instance_id'] = local_var_params['instance_id']
-
-        query_params = []
-        if 'node_id' in local_var_params:
-            query_params.append(('node_id', local_var_params['node_id']))
-        if 'sql_type' in local_var_params:
-            query_params.append(('sql_type', local_var_params['sql_type']))
-
-        header_params = {}
-        if 'x_language' in local_var_params:
-            header_params['X-Language'] = local_var_params['x_language']
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def update_sql_filter_control_async(self, request):
-        r"""开启或者关闭SQL限流
-
-        开启或者关闭SQL限流。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for UpdateSqlFilterControl
-        :type request: :class:`huaweicloudsdkgaussdb.v3.UpdateSqlFilterControlRequest`
-        :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateSqlFilterControlResponse`
-        """
-        http_info = self._update_sql_filter_control_http_info(request)
-        return self._call_api(**http_info)
-
-    def update_sql_filter_control_async_invoker(self, request):
-        http_info = self._update_sql_filter_control_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _update_sql_filter_control_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v3/{project_id}/instances/{instance_id}/sql-filter/switch",
-            "request_type": request.__class__.__name__,
-            "response_type": "UpdateSqlFilterControlResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}

@@ -19,6 +19,7 @@ class BatchListResourceResponseData:
     openapi_types = {
         'id': 'str',
         'resource_id': 'str',
+        'domain_id': 'str',
         'name': 'str',
         'provider': 'str',
         'type': 'str',
@@ -37,6 +38,7 @@ class BatchListResourceResponseData:
     attribute_map = {
         'id': 'id',
         'resource_id': 'resource_id',
+        'domain_id': 'domain_id',
         'name': 'name',
         'provider': 'provider',
         'type': 'type',
@@ -52,7 +54,7 @@ class BatchListResourceResponseData:
         'operable': 'operable'
     }
 
-    def __init__(self, id=None, resource_id=None, name=None, provider=None, type=None, project_id=None, region_id=None, ep_id=None, tags=None, agent_id=None, agent_state=None, properties=None, ingest_properties=None, is_delegated=None, operable=None):
+    def __init__(self, id=None, resource_id=None, domain_id=None, name=None, provider=None, type=None, project_id=None, region_id=None, ep_id=None, tags=None, agent_id=None, agent_state=None, properties=None, ingest_properties=None, is_delegated=None, operable=None):
         r"""BatchListResourceResponseData
 
         The model defined in huaweicloud sdk
@@ -61,13 +63,15 @@ class BatchListResourceResponseData:
         :type id: str
         :param resource_id: 云服务分配的资源ID
         :type resource_id: str
+        :param domain_id: 租户ID
+        :type domain_id: str
         :param name: 资源名称
         :type name: str
         :param provider: 云服务名称
         :type provider: str
         :param type: 资源类型
         :type type: str
-        :param project_id: Openstack中的项目I
+        :param project_id: Openstack中的项目ID
         :type project_id: str
         :param region_id: region ID
         :type region_id: str
@@ -93,6 +97,7 @@ class BatchListResourceResponseData:
 
         self._id = None
         self._resource_id = None
+        self._domain_id = None
         self._name = None
         self._provider = None
         self._type = None
@@ -112,6 +117,8 @@ class BatchListResourceResponseData:
             self.id = id
         if resource_id is not None:
             self.resource_id = resource_id
+        if domain_id is not None:
+            self.domain_id = domain_id
         if name is not None:
             self.name = name
         if provider is not None:
@@ -184,6 +191,28 @@ class BatchListResourceResponseData:
         self._resource_id = resource_id
 
     @property
+    def domain_id(self):
+        r"""Gets the domain_id of this BatchListResourceResponseData.
+
+        租户ID
+
+        :return: The domain_id of this BatchListResourceResponseData.
+        :rtype: str
+        """
+        return self._domain_id
+
+    @domain_id.setter
+    def domain_id(self, domain_id):
+        r"""Sets the domain_id of this BatchListResourceResponseData.
+
+        租户ID
+
+        :param domain_id: The domain_id of this BatchListResourceResponseData.
+        :type domain_id: str
+        """
+        self._domain_id = domain_id
+
+    @property
     def name(self):
         r"""Gets the name of this BatchListResourceResponseData.
 
@@ -253,7 +282,7 @@ class BatchListResourceResponseData:
     def project_id(self):
         r"""Gets the project_id of this BatchListResourceResponseData.
 
-        Openstack中的项目I
+        Openstack中的项目ID
 
         :return: The project_id of this BatchListResourceResponseData.
         :rtype: str
@@ -264,7 +293,7 @@ class BatchListResourceResponseData:
     def project_id(self, project_id):
         r"""Sets the project_id of this BatchListResourceResponseData.
 
-        Openstack中的项目I
+        Openstack中的项目ID
 
         :param project_id: The project_id of this BatchListResourceResponseData.
         :type project_id: str

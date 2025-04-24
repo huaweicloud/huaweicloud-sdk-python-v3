@@ -19,17 +19,15 @@ class ListAvailabilityZonesResponse(SdkResponse):
 
     openapi_types = {
         'request_id': 'str',
-        'availability_zones': 'list[list[AvailabilityZone]]',
-        'spec_code': 'str'
+        'availability_zones': 'list[list[AvailabilityZone]]'
     }
 
     attribute_map = {
         'request_id': 'request_id',
-        'availability_zones': 'availability_zones',
-        'spec_code': 'spec_code'
+        'availability_zones': 'availability_zones'
     }
 
-    def __init__(self, request_id=None, availability_zones=None, spec_code=None):
+    def __init__(self, request_id=None, availability_zones=None):
         r"""ListAvailabilityZonesResponse
 
         The model defined in huaweicloud sdk
@@ -38,23 +36,18 @@ class ListAvailabilityZonesResponse(SdkResponse):
         :type request_id: str
         :param availability_zones: 参数解释：返回创建LB时可使用的可用区集合列表。如：[[az1,az2],[az2,az3]] ,则在创建LB时，只能从其中的一个子列表中选择一个或多个可用区，不能跨列表选择。在上述例子中，不能选择az1和az3。
         :type availability_zones: list[list[AvailabilityZone]]
-        :param spec_code: 参数解释：可用区的产品编码，仅边缘场景有效。
-        :type spec_code: str
         """
         
         super(ListAvailabilityZonesResponse, self).__init__()
 
         self._request_id = None
         self._availability_zones = None
-        self._spec_code = None
         self.discriminator = None
 
         if request_id is not None:
             self.request_id = request_id
         if availability_zones is not None:
             self.availability_zones = availability_zones
-        if spec_code is not None:
-            self.spec_code = spec_code
 
     @property
     def request_id(self):
@@ -99,28 +92,6 @@ class ListAvailabilityZonesResponse(SdkResponse):
         :type availability_zones: list[list[AvailabilityZone]]
         """
         self._availability_zones = availability_zones
-
-    @property
-    def spec_code(self):
-        r"""Gets the spec_code of this ListAvailabilityZonesResponse.
-
-        参数解释：可用区的产品编码，仅边缘场景有效。
-
-        :return: The spec_code of this ListAvailabilityZonesResponse.
-        :rtype: str
-        """
-        return self._spec_code
-
-    @spec_code.setter
-    def spec_code(self, spec_code):
-        r"""Sets the spec_code of this ListAvailabilityZonesResponse.
-
-        参数解释：可用区的产品编码，仅边缘场景有效。
-
-        :param spec_code: The spec_code of this ListAvailabilityZonesResponse.
-        :type spec_code: str
-        """
-        self._spec_code = spec_code
 
     def to_dict(self):
         """Returns the model properties as a dict"""

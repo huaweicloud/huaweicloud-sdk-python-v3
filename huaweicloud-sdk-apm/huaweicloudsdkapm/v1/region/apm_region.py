@@ -8,9 +8,12 @@ class ApmRegion:
 
     CN_NORTH_4 = Region("cn-north-4",
                         "https://apm2.cn-north-4.myhuaweicloud.com")
+    RU_MOSCOW_1 = Region("ru-moscow-1",
+                        "https://apm2.ru-moscow-1.myhuaweicloud.com")
 
     static_fields = {
         "cn-north-4": CN_NORTH_4,
+        "ru-moscow-1": RU_MOSCOW_1,
     }
 
     @classmethod

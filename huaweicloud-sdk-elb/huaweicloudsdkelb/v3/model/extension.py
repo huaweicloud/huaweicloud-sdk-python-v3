@@ -5,7 +5,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class DeleteMemberRequest:
+class Extension:
 
     """
     Attributes:
@@ -17,78 +17,80 @@ class DeleteMemberRequest:
     sensitive_list = []
 
     openapi_types = {
-        'pool_id': 'str',
-        'member_id': 'str'
+        'ep_id': 'str',
+        'ep_service_id': 'str'
     }
 
     attribute_map = {
-        'pool_id': 'pool_id',
-        'member_id': 'member_id'
+        'ep_id': 'ep_id',
+        'ep_service_id': 'ep_service_id'
     }
 
-    def __init__(self, pool_id=None, member_id=None):
-        r"""DeleteMemberRequest
+    def __init__(self, ep_id=None, ep_service_id=None):
+        r"""Extension
 
         The model defined in huaweicloud sdk
 
-        :param pool_id: 参数解释：后端服务器组ID。
-        :type pool_id: str
-        :param member_id: 后端服务器ID。 &gt; 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。  member ID可以通过[查询后端服务器列表](ListMembers.xml)获取。
-        :type member_id: str
+        :param ep_id: ep id
+        :type ep_id: str
+        :param ep_service_id: ep service id
+        :type ep_service_id: str
         """
         
         
 
-        self._pool_id = None
-        self._member_id = None
+        self._ep_id = None
+        self._ep_service_id = None
         self.discriminator = None
 
-        self.pool_id = pool_id
-        self.member_id = member_id
+        if ep_id is not None:
+            self.ep_id = ep_id
+        if ep_service_id is not None:
+            self.ep_service_id = ep_service_id
 
     @property
-    def pool_id(self):
-        r"""Gets the pool_id of this DeleteMemberRequest.
+    def ep_id(self):
+        r"""Gets the ep_id of this Extension.
 
-        参数解释：后端服务器组ID。
+        ep id
 
-        :return: The pool_id of this DeleteMemberRequest.
+        :return: The ep_id of this Extension.
         :rtype: str
         """
-        return self._pool_id
+        return self._ep_id
 
-    @pool_id.setter
-    def pool_id(self, pool_id):
-        r"""Sets the pool_id of this DeleteMemberRequest.
+    @ep_id.setter
+    def ep_id(self, ep_id):
+        r"""Sets the ep_id of this Extension.
 
-        参数解释：后端服务器组ID。
+        ep id
 
-        :param pool_id: The pool_id of this DeleteMemberRequest.
-        :type pool_id: str
+        :param ep_id: The ep_id of this Extension.
+        :type ep_id: str
         """
-        self._pool_id = pool_id
+        self._ep_id = ep_id
 
     @property
-    def member_id(self):
-        r"""Gets the member_id of this DeleteMemberRequest.
+    def ep_service_id(self):
+        r"""Gets the ep_service_id of this Extension.
 
-        后端服务器ID。 > 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。  member ID可以通过[查询后端服务器列表](ListMembers.xml)获取。
+        ep service id
 
-        :return: The member_id of this DeleteMemberRequest.
+        :return: The ep_service_id of this Extension.
         :rtype: str
         """
-        return self._member_id
+        return self._ep_service_id
 
-    @member_id.setter
-    def member_id(self, member_id):
-        r"""Sets the member_id of this DeleteMemberRequest.
+    @ep_service_id.setter
+    def ep_service_id(self, ep_service_id):
+        r"""Sets the ep_service_id of this Extension.
 
-        后端服务器ID。 > 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。  member ID可以通过[查询后端服务器列表](ListMembers.xml)获取。
+        ep service id
 
-        :param member_id: The member_id of this DeleteMemberRequest.
-        :type member_id: str
+        :param ep_service_id: The ep_service_id of this Extension.
+        :type ep_service_id: str
         """
-        self._member_id = member_id
+        self._ep_service_id = ep_service_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -132,7 +134,7 @@ class DeleteMemberRequest:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, DeleteMemberRequest):
+        if not isinstance(other, Extension):
             return False
 
         return self.__dict__ == other.__dict__

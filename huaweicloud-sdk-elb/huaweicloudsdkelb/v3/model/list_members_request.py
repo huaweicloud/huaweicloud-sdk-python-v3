@@ -67,7 +67,7 @@ class ListMembersRequest:
         :type limit: int
         :param page_reverse: 是否反向查询。  取值： - true：查询上一页。 - false：查询下一页，默认。  使用说明： - 必须与limit一起使用。 - 当page_reverse&#x3D;true时，若要查询上一页，marker取值为当前页返回值的previous_marker。
         :type page_reverse: bool
-        :param name: 后端服务器名称。  支持多值查询，查询条件格式：*name&#x3D;xxx&amp;name&#x3D;xxx*。
+        :param name: 后端服务器名称。注意：该名称并非ECS名称。  支持多值查询，查询条件格式：*name&#x3D;xxx&amp;name&#x3D;xxx*。
         :type name: list[str]
         :param weight: 后端服务器的权重，请求将根据pool配置的负载均衡算法和后端服务器的权重进行负载分发。 权重值越大，分发的请求越多。权重为0的后端不再接受新的请求。  取值：0-100。  支持多值查询，查询条件格式：*weight&#x3D;xxx&amp;weight&#x3D;xxx*。
         :type weight: list[int]
@@ -237,7 +237,7 @@ class ListMembersRequest:
     def name(self):
         r"""Gets the name of this ListMembersRequest.
 
-        后端服务器名称。  支持多值查询，查询条件格式：*name=xxx&name=xxx*。
+        后端服务器名称。注意：该名称并非ECS名称。  支持多值查询，查询条件格式：*name=xxx&name=xxx*。
 
         :return: The name of this ListMembersRequest.
         :rtype: list[str]
@@ -248,7 +248,7 @@ class ListMembersRequest:
     def name(self, name):
         r"""Sets the name of this ListMembersRequest.
 
-        后端服务器名称。  支持多值查询，查询条件格式：*name=xxx&name=xxx*。
+        后端服务器名称。注意：该名称并非ECS名称。  支持多值查询，查询条件格式：*name=xxx&name=xxx*。
 
         :param name: The name of this ListMembersRequest.
         :type name: list[str]

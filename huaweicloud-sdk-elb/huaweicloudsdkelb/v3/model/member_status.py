@@ -19,16 +19,20 @@ class MemberStatus:
     openapi_types = {
         'listener_id': 'str',
         'operating_status': 'str',
-        'reason': 'MemberHealthCheckFailedReason'
+        'reason': 'MemberHealthCheckFailedReason',
+        'created_at': 'str',
+        'updated_at': 'str'
     }
 
     attribute_map = {
         'listener_id': 'listener_id',
         'operating_status': 'operating_status',
-        'reason': 'reason'
+        'reason': 'reason',
+        'created_at': 'created_at',
+        'updated_at': 'updated_at'
     }
 
-    def __init__(self, listener_id=None, operating_status=None, reason=None):
+    def __init__(self, listener_id=None, operating_status=None, reason=None, created_at=None, updated_at=None):
         r"""MemberStatus
 
         The model defined in huaweicloud sdk
@@ -39,6 +43,10 @@ class MemberStatus:
         :type operating_status: str
         :param reason: 
         :type reason: :class:`huaweicloudsdkelb.v3.MemberHealthCheckFailedReason`
+        :param created_at: 创建时间。格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，UTC时区。
+        :type created_at: str
+        :param updated_at: 更新时间。格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，UTC时区。
+        :type updated_at: str
         """
         
         
@@ -46,12 +54,18 @@ class MemberStatus:
         self._listener_id = None
         self._operating_status = None
         self._reason = None
+        self._created_at = None
+        self._updated_at = None
         self.discriminator = None
 
         self.listener_id = listener_id
         self.operating_status = operating_status
         if reason is not None:
             self.reason = reason
+        if created_at is not None:
+            self.created_at = created_at
+        if updated_at is not None:
+            self.updated_at = updated_at
 
     @property
     def listener_id(self):
@@ -114,6 +128,50 @@ class MemberStatus:
         :type reason: :class:`huaweicloudsdkelb.v3.MemberHealthCheckFailedReason`
         """
         self._reason = reason
+
+    @property
+    def created_at(self):
+        r"""Gets the created_at of this MemberStatus.
+
+        创建时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。
+
+        :return: The created_at of this MemberStatus.
+        :rtype: str
+        """
+        return self._created_at
+
+    @created_at.setter
+    def created_at(self, created_at):
+        r"""Sets the created_at of this MemberStatus.
+
+        创建时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。
+
+        :param created_at: The created_at of this MemberStatus.
+        :type created_at: str
+        """
+        self._created_at = created_at
+
+    @property
+    def updated_at(self):
+        r"""Gets the updated_at of this MemberStatus.
+
+        更新时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。
+
+        :return: The updated_at of this MemberStatus.
+        :rtype: str
+        """
+        return self._updated_at
+
+    @updated_at.setter
+    def updated_at(self, updated_at):
+        r"""Sets the updated_at of this MemberStatus.
+
+        更新时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。
+
+        :param updated_at: The updated_at of this MemberStatus.
+        :type updated_at: str
+        """
+        self._updated_at = updated_at
 
     def to_dict(self):
         """Returns the model properties as a dict"""

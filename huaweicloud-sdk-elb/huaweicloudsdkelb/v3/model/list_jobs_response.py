@@ -19,21 +19,25 @@ class ListJobsResponse(SdkResponse):
 
     openapi_types = {
         'jobs': 'list[MainJob]',
+        'page_info': 'PageInfo',
         'request_id': 'str'
     }
 
     attribute_map = {
         'jobs': 'jobs',
+        'page_info': 'page_info',
         'request_id': 'request_id'
     }
 
-    def __init__(self, jobs=None, request_id=None):
+    def __init__(self, jobs=None, page_info=None, request_id=None):
         r"""ListJobsResponse
 
         The model defined in huaweicloud sdk
 
         :param jobs: 任务列表
         :type jobs: list[:class:`huaweicloudsdkelb.v3.MainJob`]
+        :param page_info: 
+        :type page_info: :class:`huaweicloudsdkelb.v3.PageInfo`
         :param request_id: 请求ID。 注：自动生成 。
         :type request_id: str
         """
@@ -41,11 +45,14 @@ class ListJobsResponse(SdkResponse):
         super(ListJobsResponse, self).__init__()
 
         self._jobs = None
+        self._page_info = None
         self._request_id = None
         self.discriminator = None
 
         if jobs is not None:
             self.jobs = jobs
+        if page_info is not None:
+            self.page_info = page_info
         if request_id is not None:
             self.request_id = request_id
 
@@ -70,6 +77,24 @@ class ListJobsResponse(SdkResponse):
         :type jobs: list[:class:`huaweicloudsdkelb.v3.MainJob`]
         """
         self._jobs = jobs
+
+    @property
+    def page_info(self):
+        r"""Gets the page_info of this ListJobsResponse.
+
+        :return: The page_info of this ListJobsResponse.
+        :rtype: :class:`huaweicloudsdkelb.v3.PageInfo`
+        """
+        return self._page_info
+
+    @page_info.setter
+    def page_info(self, page_info):
+        r"""Sets the page_info of this ListJobsResponse.
+
+        :param page_info: The page_info of this ListJobsResponse.
+        :type page_info: :class:`huaweicloudsdkelb.v3.PageInfo`
+        """
+        self._page_info = page_info
 
     @property
     def request_id(self):

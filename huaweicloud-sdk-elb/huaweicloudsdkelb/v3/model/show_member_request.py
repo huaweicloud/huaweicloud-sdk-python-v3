@@ -33,7 +33,7 @@ class ShowMemberRequest:
 
         :param pool_id: 参数解释：后端服务器组ID。
         :type pool_id: str
-        :param member_id: 后端服务器ID。 &gt;说明： 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
+        :param member_id: 后端服务器ID。 &gt; 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
         :type member_id: str
         """
         
@@ -72,7 +72,7 @@ class ShowMemberRequest:
     def member_id(self):
         r"""Gets the member_id of this ShowMemberRequest.
 
-        后端服务器ID。 >说明： 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
+        后端服务器ID。 > 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
 
         :return: The member_id of this ShowMemberRequest.
         :rtype: str
@@ -83,7 +83,7 @@ class ShowMemberRequest:
     def member_id(self, member_id):
         r"""Sets the member_id of this ShowMemberRequest.
 
-        后端服务器ID。 >说明： 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
+        后端服务器ID。 > 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
 
         :param member_id: The member_id of this ShowMemberRequest.
         :type member_id: str

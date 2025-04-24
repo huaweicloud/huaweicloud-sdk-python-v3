@@ -91,7 +91,7 @@ class CertificateInfo:
         :type enc_certificate: str
         :param enc_private_key: HTTPS协议使用的SM加密证书私钥。  取值：PEM编码格式。  注意：仅在当前局点的SM加密证书特性开启才会返回该字段。
         :type enc_private_key: str
-        :param scm_certificate_id: SCM证书ID
+        :param scm_certificate_id: SCM证书ID。
         :type scm_certificate_id: str
         :param common_name: 证书绑定的主域名。
         :type common_name: str
@@ -460,7 +460,7 @@ class CertificateInfo:
     def scm_certificate_id(self):
         r"""Gets the scm_certificate_id of this CertificateInfo.
 
-        SCM证书ID
+        SCM证书ID。
 
         :return: The scm_certificate_id of this CertificateInfo.
         :rtype: str
@@ -471,7 +471,7 @@ class CertificateInfo:
     def scm_certificate_id(self, scm_certificate_id):
         r"""Sets the scm_certificate_id of this CertificateInfo.
 
-        SCM证书ID
+        SCM证书ID。
 
         :param scm_certificate_id: The scm_certificate_id of this CertificateInfo.
         :type scm_certificate_id: str

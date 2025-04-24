@@ -119,7 +119,7 @@ class CreateListenerOption:
         :type protocol: str
         :param protocol_port: 参数解释：监听器的监听端口。  约束限制： - QUIC监听器端口不能是4789，且不能和UDP监听器端口重复。 - 传0时表示开启监听端口范围的能力，此时port_ranges为必填字段。 [- 共享型LB上的HTTP和TERMINATED_HTTPS监听器不支持设置21端口。](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt)  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt)
         :type protocol_port: int
-        :param sni_container_refs: 参数解释：监听器使用的SNI证书（带域名的服务器证书）ID列表。  约束限制： - 列表对应的所有SNI证书的域名不允许存在重复。 - 列表对应的所有SNI证书的域名总数不超过50。 - QUIC监听器仅支持RSA证书。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt)
+        :param sni_container_refs: 参数解释：监听器使用的SNI证书（带域名的服务器证书）ID列表。  约束限制： - QUIC监听器仅支持RSA证书。 - 列表对应的所有SNI证书的域名不允许存在重复。 - 列表对应的所有SNI证书的域名总数不超过200。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt)
         :type sni_container_refs: list[str]
         :param sni_match_algo: 参数解释：监听器使用的SNI证书泛域名匹配方式。  取值范围： - longest_suffix 表示最长尾缀匹配。 - wildcard 表示标准域名分级匹配。  默认取值：wildcard。
         :type sni_match_algo: str
@@ -143,7 +143,7 @@ class CreateListenerOption:
         :type transparent_client_ip_enable: bool
         :param proxy_protocol_enable: 参数解释：是否开启proxy_protocol。  约束限制：仅TLS监听器可指定，其他协议的监听器该字段不生效，proxy_protocol不开启。
         :type proxy_protocol_enable: bool
-        :param enhance_l7policy_enable: 参数解释：是否开启高级转发策略功能。开启高级转发策略后，支持更灵活的转发策略和转发规则设置。  开启后支持如下场景： - 转发策略的action字段支持指定为REDIRECT_TO_URL, FIXED_RESPONSE，即支持URL重定向和响应固定的内容给客户端。 - 转发策略支持指定priority、redirect_url_config、fixed_response_config字段。 - 转发规则rule的type可以指定METHOD, HEADER, QUERY_STRING, SOURCE_IP这几种取值。 - 转发规则rule的type为HOST_NAME时，转发规则rule的value支持通配符*。 - 转发规则支持指定conditions字段。  约束限制： - 开启后不支持关闭。 - 开启高级转发策略后，监听器关联的转发策略的匹配优先级由转发策略的priority字段来决定，不再自动排序。具体说明详见转发策略的priority字段的说明。  取值范围：true开启，false不开启，默认false。  [荷兰region不支持该字段，请勿使用。](tag:dt)
+        :param enhance_l7policy_enable: 参数解释：是否开启高级转发策略功能。开启高级转发策略后，支持更灵活的转发策略和转发规则设置。  开启后支持如下场景： - 转发策略的action字段支持指定为REDIRECT_TO_URL, FIXED_RESPONSE，即支持URL重定向和响应固定的内容给客户端。 - 转发策略支持指定priority、redirect_url_config、fixed_response_config字段。 - 转发规则rule的type可以指定METHOD, HEADER, QUERY_STRING, SOURCE_IP这几种取值。 - 转发规则rule的type为HOST_NAME时，转发规则rule的value支持通配符*。 - 转发规则支持指定conditions字段。  约束限制： - 开启后不支持关闭。 - 开启高级转发策略后，监听器关联的转发策略的匹配优先级由转发策略的priority字段来决定，不再自动排序。具体说明详见转发策略的priority字段的说明。  取值范围：true开启，false不开启。  默认取值：false。[西南-贵阳一和华南-广州局点，该配置默认true。](tag:hws)  [荷兰region不支持该字段，请勿使用。](tag:dt)
         :type enhance_l7policy_enable: bool
         :param quic_config: 
         :type quic_config: :class:`huaweicloudsdkelb.v3.CreateListenerQuicConfigOption`
@@ -534,7 +534,7 @@ class CreateListenerOption:
     def sni_container_refs(self):
         r"""Gets the sni_container_refs of this CreateListenerOption.
 
-        参数解释：监听器使用的SNI证书（带域名的服务器证书）ID列表。  约束限制： - 列表对应的所有SNI证书的域名不允许存在重复。 - 列表对应的所有SNI证书的域名总数不超过50。 - QUIC监听器仅支持RSA证书。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt)
+        参数解释：监听器使用的SNI证书（带域名的服务器证书）ID列表。  约束限制： - QUIC监听器仅支持RSA证书。 - 列表对应的所有SNI证书的域名不允许存在重复。 - 列表对应的所有SNI证书的域名总数不超过200。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt)
 
         :return: The sni_container_refs of this CreateListenerOption.
         :rtype: list[str]
@@ -545,7 +545,7 @@ class CreateListenerOption:
     def sni_container_refs(self, sni_container_refs):
         r"""Sets the sni_container_refs of this CreateListenerOption.
 
-        参数解释：监听器使用的SNI证书（带域名的服务器证书）ID列表。  约束限制： - 列表对应的所有SNI证书的域名不允许存在重复。 - 列表对应的所有SNI证书的域名总数不超过50。 - QUIC监听器仅支持RSA证书。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt)
+        参数解释：监听器使用的SNI证书（带域名的服务器证书）ID列表。  约束限制： - QUIC监听器仅支持RSA证书。 - 列表对应的所有SNI证书的域名不允许存在重复。 - 列表对应的所有SNI证书的域名总数不超过200。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt)
 
         :param sni_container_refs: The sni_container_refs of this CreateListenerOption.
         :type sni_container_refs: list[str]
@@ -794,7 +794,7 @@ class CreateListenerOption:
     def enhance_l7policy_enable(self):
         r"""Gets the enhance_l7policy_enable of this CreateListenerOption.
 
-        参数解释：是否开启高级转发策略功能。开启高级转发策略后，支持更灵活的转发策略和转发规则设置。  开启后支持如下场景： - 转发策略的action字段支持指定为REDIRECT_TO_URL, FIXED_RESPONSE，即支持URL重定向和响应固定的内容给客户端。 - 转发策略支持指定priority、redirect_url_config、fixed_response_config字段。 - 转发规则rule的type可以指定METHOD, HEADER, QUERY_STRING, SOURCE_IP这几种取值。 - 转发规则rule的type为HOST_NAME时，转发规则rule的value支持通配符*。 - 转发规则支持指定conditions字段。  约束限制： - 开启后不支持关闭。 - 开启高级转发策略后，监听器关联的转发策略的匹配优先级由转发策略的priority字段来决定，不再自动排序。具体说明详见转发策略的priority字段的说明。  取值范围：true开启，false不开启，默认false。  [荷兰region不支持该字段，请勿使用。](tag:dt)
+        参数解释：是否开启高级转发策略功能。开启高级转发策略后，支持更灵活的转发策略和转发规则设置。  开启后支持如下场景： - 转发策略的action字段支持指定为REDIRECT_TO_URL, FIXED_RESPONSE，即支持URL重定向和响应固定的内容给客户端。 - 转发策略支持指定priority、redirect_url_config、fixed_response_config字段。 - 转发规则rule的type可以指定METHOD, HEADER, QUERY_STRING, SOURCE_IP这几种取值。 - 转发规则rule的type为HOST_NAME时，转发规则rule的value支持通配符*。 - 转发规则支持指定conditions字段。  约束限制： - 开启后不支持关闭。 - 开启高级转发策略后，监听器关联的转发策略的匹配优先级由转发策略的priority字段来决定，不再自动排序。具体说明详见转发策略的priority字段的说明。  取值范围：true开启，false不开启。  默认取值：false。[西南-贵阳一和华南-广州局点，该配置默认true。](tag:hws)  [荷兰region不支持该字段，请勿使用。](tag:dt)
 
         :return: The enhance_l7policy_enable of this CreateListenerOption.
         :rtype: bool
@@ -805,7 +805,7 @@ class CreateListenerOption:
     def enhance_l7policy_enable(self, enhance_l7policy_enable):
         r"""Sets the enhance_l7policy_enable of this CreateListenerOption.
 
-        参数解释：是否开启高级转发策略功能。开启高级转发策略后，支持更灵活的转发策略和转发规则设置。  开启后支持如下场景： - 转发策略的action字段支持指定为REDIRECT_TO_URL, FIXED_RESPONSE，即支持URL重定向和响应固定的内容给客户端。 - 转发策略支持指定priority、redirect_url_config、fixed_response_config字段。 - 转发规则rule的type可以指定METHOD, HEADER, QUERY_STRING, SOURCE_IP这几种取值。 - 转发规则rule的type为HOST_NAME时，转发规则rule的value支持通配符*。 - 转发规则支持指定conditions字段。  约束限制： - 开启后不支持关闭。 - 开启高级转发策略后，监听器关联的转发策略的匹配优先级由转发策略的priority字段来决定，不再自动排序。具体说明详见转发策略的priority字段的说明。  取值范围：true开启，false不开启，默认false。  [荷兰region不支持该字段，请勿使用。](tag:dt)
+        参数解释：是否开启高级转发策略功能。开启高级转发策略后，支持更灵活的转发策略和转发规则设置。  开启后支持如下场景： - 转发策略的action字段支持指定为REDIRECT_TO_URL, FIXED_RESPONSE，即支持URL重定向和响应固定的内容给客户端。 - 转发策略支持指定priority、redirect_url_config、fixed_response_config字段。 - 转发规则rule的type可以指定METHOD, HEADER, QUERY_STRING, SOURCE_IP这几种取值。 - 转发规则rule的type为HOST_NAME时，转发规则rule的value支持通配符*。 - 转发规则支持指定conditions字段。  约束限制： - 开启后不支持关闭。 - 开启高级转发策略后，监听器关联的转发策略的匹配优先级由转发策略的priority字段来决定，不再自动排序。具体说明详见转发策略的priority字段的说明。  取值范围：true开启，false不开启。  默认取值：false。[西南-贵阳一和华南-广州局点，该配置默认true。](tag:hws)  [荷兰region不支持该字段，请勿使用。](tag:dt)
 
         :param enhance_l7policy_enable: The enhance_l7policy_enable of this CreateListenerOption.
         :type enhance_l7policy_enable: bool

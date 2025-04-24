@@ -123,15 +123,15 @@ class Pool:
         :type protection_status: str
         :param protection_reason: 参数解释：设置保护的原因。作为protection_status的转态设置的原因。  约束限制：仅当protection_status为consoleProtection时有效。  取值范围：除&#39;&lt;&#39;和&#39;&gt;&#39;外通用Unicode字符集字符，最大255个字符。
         :type protection_reason: str
-        :param any_port_enable: 参数解释：后端是否开启端口透传。开启后，后端服务器端口与前端监听器端口保持一致。关闭后，请求会转发给后端服务器protocol_port字段指定端口。取值：false不开启，true开启。  约束限制： - 仅QUIC,TCP,UDP的pool支持。
+        :param any_port_enable: 参数解释：后端是否开启端口透传。开启后，后端服务器端口与前端监听器端口保持一致。关闭后，请求会转发给后端服务器protocol_port字段指定端口。取值：false不开启，true开启。  约束限制： - 仅QUIC,TCP,UDP的pool支持。  [不支持该字段，请勿使用。](tag:hws_eu,hws_eu_wb,hws_test,dt,hcso_dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,srg,g42,hk_g42)
         :type any_port_enable: bool
         :param connection_drain: 
         :type connection_drain: :class:`huaweicloudsdkelb.v3.ConnectionDrain`
-        :param enterprise_project_id: 参数解释：IP地址组所在的企业项目ID。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
+        :param enterprise_project_id: 参数解释：后端服务器组所在的企业项目ID。
         :type enterprise_project_id: str
         :param pool_health: 
         :type pool_health: :class:`huaweicloudsdkelb.v3.PoolHealth`
-        :param public_border_group: 参数解释：网络公共边界组，如：center
+        :param public_border_group: 参数解释：网络公共边界组，如：center。  [不支持该字段，请勿使用。](tag:hws_eu,hws_eu_wb,hws_test,fcs,dt,hcso_dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,srg,g42,hk_g42)
         :type public_border_group: str
         :param quic_cid_hash_strategy: 
         :type quic_cid_hash_strategy: :class:`huaweicloudsdkelb.v3.QuicCidHashStrategy`
@@ -664,7 +664,7 @@ class Pool:
     def any_port_enable(self):
         r"""Gets the any_port_enable of this Pool.
 
-        参数解释：后端是否开启端口透传。开启后，后端服务器端口与前端监听器端口保持一致。关闭后，请求会转发给后端服务器protocol_port字段指定端口。取值：false不开启，true开启。  约束限制： - 仅QUIC,TCP,UDP的pool支持。
+        参数解释：后端是否开启端口透传。开启后，后端服务器端口与前端监听器端口保持一致。关闭后，请求会转发给后端服务器protocol_port字段指定端口。取值：false不开启，true开启。  约束限制： - 仅QUIC,TCP,UDP的pool支持。  [不支持该字段，请勿使用。](tag:hws_eu,hws_eu_wb,hws_test,dt,hcso_dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,srg,g42,hk_g42)
 
         :return: The any_port_enable of this Pool.
         :rtype: bool
@@ -675,7 +675,7 @@ class Pool:
     def any_port_enable(self, any_port_enable):
         r"""Sets the any_port_enable of this Pool.
 
-        参数解释：后端是否开启端口透传。开启后，后端服务器端口与前端监听器端口保持一致。关闭后，请求会转发给后端服务器protocol_port字段指定端口。取值：false不开启，true开启。  约束限制： - 仅QUIC,TCP,UDP的pool支持。
+        参数解释：后端是否开启端口透传。开启后，后端服务器端口与前端监听器端口保持一致。关闭后，请求会转发给后端服务器protocol_port字段指定端口。取值：false不开启，true开启。  约束限制： - 仅QUIC,TCP,UDP的pool支持。  [不支持该字段，请勿使用。](tag:hws_eu,hws_eu_wb,hws_test,dt,hcso_dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,srg,g42,hk_g42)
 
         :param any_port_enable: The any_port_enable of this Pool.
         :type any_port_enable: bool
@@ -704,7 +704,7 @@ class Pool:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this Pool.
 
-        参数解释：IP地址组所在的企业项目ID。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
+        参数解释：后端服务器组所在的企业项目ID。
 
         :return: The enterprise_project_id of this Pool.
         :rtype: str
@@ -715,7 +715,7 @@ class Pool:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this Pool.
 
-        参数解释：IP地址组所在的企业项目ID。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
+        参数解释：后端服务器组所在的企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this Pool.
         :type enterprise_project_id: str
@@ -744,7 +744,7 @@ class Pool:
     def public_border_group(self):
         r"""Gets the public_border_group of this Pool.
 
-        参数解释：网络公共边界组，如：center
+        参数解释：网络公共边界组，如：center。  [不支持该字段，请勿使用。](tag:hws_eu,hws_eu_wb,hws_test,fcs,dt,hcso_dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,srg,g42,hk_g42)
 
         :return: The public_border_group of this Pool.
         :rtype: str
@@ -755,7 +755,7 @@ class Pool:
     def public_border_group(self, public_border_group):
         r"""Sets the public_border_group of this Pool.
 
-        参数解释：网络公共边界组，如：center
+        参数解释：网络公共边界组，如：center。  [不支持该字段，请勿使用。](tag:hws_eu,hws_eu_wb,hws_test,fcs,dt,hcso_dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,srg,g42,hk_g42)
 
         :param public_border_group: The public_border_group of this Pool.
         :type public_border_group: str

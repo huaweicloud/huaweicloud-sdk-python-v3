@@ -35,7 +35,9 @@ class Quota:
         'listeners_per_loadbalancer': 'int',
         'ipgroups_per_listener': 'int',
         'pools_per_l7policy': 'int',
-        'l7policies_per_listener': 'int'
+        'l7policies_per_listener': 'int',
+        'free_instance_members_per_pool': 'int',
+        'free_instance_listeners_per_loadbalancer': 'int'
     }
 
     attribute_map = {
@@ -57,10 +59,12 @@ class Quota:
         'listeners_per_loadbalancer': 'listeners_per_loadbalancer',
         'ipgroups_per_listener': 'ipgroups_per_listener',
         'pools_per_l7policy': 'pools_per_l7policy',
-        'l7policies_per_listener': 'l7policies_per_listener'
+        'l7policies_per_listener': 'l7policies_per_listener',
+        'free_instance_members_per_pool': 'free_instance_members_per_pool',
+        'free_instance_listeners_per_loadbalancer': 'free_instance_listeners_per_loadbalancer'
     }
 
-    def __init__(self, project_id=None, loadbalancer=None, certificate=None, listener=None, l7policy=None, condition_per_policy=None, pool=None, healthmonitor=None, member=None, members_per_pool=None, listeners_per_pool=None, ipgroup=None, ipgroup_bindings=None, ipgroup_max_length=None, security_policy=None, listeners_per_loadbalancer=None, ipgroups_per_listener=None, pools_per_l7policy=None, l7policies_per_listener=None):
+    def __init__(self, project_id=None, loadbalancer=None, certificate=None, listener=None, l7policy=None, condition_per_policy=None, pool=None, healthmonitor=None, member=None, members_per_pool=None, listeners_per_pool=None, ipgroup=None, ipgroup_bindings=None, ipgroup_max_length=None, security_policy=None, listeners_per_loadbalancer=None, ipgroups_per_listener=None, pools_per_l7policy=None, l7policies_per_listener=None, free_instance_members_per_pool=None, free_instance_listeners_per_loadbalancer=None):
         r"""Quota
 
         The model defined in huaweicloud sdk
@@ -103,6 +107,10 @@ class Quota:
         :type pools_per_l7policy: int
         :param l7policies_per_listener: 单个监听器下的转发策略配额。 取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
         :type l7policies_per_listener: int
+        :param free_instance_members_per_pool: 单个pool实例下的免费member配额。 取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
+        :type free_instance_members_per_pool: int
+        :param free_instance_listeners_per_loadbalancer: 单个LB实例下的免费监听器配额。 取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
+        :type free_instance_listeners_per_loadbalancer: int
         """
         
         
@@ -126,6 +134,8 @@ class Quota:
         self._ipgroups_per_listener = None
         self._pools_per_l7policy = None
         self._l7policies_per_listener = None
+        self._free_instance_members_per_pool = None
+        self._free_instance_listeners_per_loadbalancer = None
         self.discriminator = None
 
         self.project_id = project_id
@@ -147,6 +157,8 @@ class Quota:
         self.ipgroups_per_listener = ipgroups_per_listener
         self.pools_per_l7policy = pools_per_l7policy
         self.l7policies_per_listener = l7policies_per_listener
+        self.free_instance_members_per_pool = free_instance_members_per_pool
+        self.free_instance_listeners_per_loadbalancer = free_instance_listeners_per_loadbalancer
 
     @property
     def project_id(self):
@@ -565,6 +577,50 @@ class Quota:
         :type l7policies_per_listener: int
         """
         self._l7policies_per_listener = l7policies_per_listener
+
+    @property
+    def free_instance_members_per_pool(self):
+        r"""Gets the free_instance_members_per_pool of this Quota.
+
+        单个pool实例下的免费member配额。 取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
+
+        :return: The free_instance_members_per_pool of this Quota.
+        :rtype: int
+        """
+        return self._free_instance_members_per_pool
+
+    @free_instance_members_per_pool.setter
+    def free_instance_members_per_pool(self, free_instance_members_per_pool):
+        r"""Sets the free_instance_members_per_pool of this Quota.
+
+        单个pool实例下的免费member配额。 取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
+
+        :param free_instance_members_per_pool: The free_instance_members_per_pool of this Quota.
+        :type free_instance_members_per_pool: int
+        """
+        self._free_instance_members_per_pool = free_instance_members_per_pool
+
+    @property
+    def free_instance_listeners_per_loadbalancer(self):
+        r"""Gets the free_instance_listeners_per_loadbalancer of this Quota.
+
+        单个LB实例下的免费监听器配额。 取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
+
+        :return: The free_instance_listeners_per_loadbalancer of this Quota.
+        :rtype: int
+        """
+        return self._free_instance_listeners_per_loadbalancer
+
+    @free_instance_listeners_per_loadbalancer.setter
+    def free_instance_listeners_per_loadbalancer(self, free_instance_listeners_per_loadbalancer):
+        r"""Sets the free_instance_listeners_per_loadbalancer of this Quota.
+
+        单个LB实例下的免费监听器配额。 取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
+
+        :param free_instance_listeners_per_loadbalancer: The free_instance_listeners_per_loadbalancer of this Quota.
+        :type free_instance_listeners_per_loadbalancer: int
+        """
+        self._free_instance_listeners_per_loadbalancer = free_instance_listeners_per_loadbalancer
 
     def to_dict(self):
         """Returns the model properties as a dict"""

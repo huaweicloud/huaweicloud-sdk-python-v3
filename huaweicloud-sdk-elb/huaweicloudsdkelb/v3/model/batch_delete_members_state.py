@@ -31,7 +31,7 @@ class BatchDeleteMembersState:
 
         The model defined in huaweicloud sdk
 
-        :param id: 后端服务器ID。  &gt;说明： 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
+        :param id: 后端服务器ID。  &gt; 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
         :type id: str
         :param ret_status: 当前后端服务器删除结果状态。  取值： - successful：删除成功。 - not found：member不存在。
         :type ret_status: str
@@ -50,7 +50,7 @@ class BatchDeleteMembersState:
     def id(self):
         r"""Gets the id of this BatchDeleteMembersState.
 
-        后端服务器ID。  >说明： 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
+        后端服务器ID。  > 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
 
         :return: The id of this BatchDeleteMembersState.
         :rtype: str
@@ -61,7 +61,7 @@ class BatchDeleteMembersState:
     def id(self, id):
         r"""Sets the id of this BatchDeleteMembersState.
 
-        后端服务器ID。  >说明： 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
+        后端服务器ID。  > 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
 
         :param id: The id of this BatchDeleteMembersState.
         :type id: str

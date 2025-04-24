@@ -33,7 +33,7 @@ class BatchDeleteMembersOption:
 
         The model defined in huaweicloud sdk
 
-        :param id: 需要删除的后端服务器ID。  使用说明： - 若传入id则不能传其他参数，否则报错。  &gt;说明： 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
+        :param id: 需要删除的后端服务器ID。  使用说明： - 若传入id则不能传其他参数，否则报错。  &gt; 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
         :type id: str
         :param address: 后端服务器IP地址。  使用说明： - address和protocol_port必须同时传入。 - 不能同时传入ID字段
         :type address: str
@@ -59,7 +59,7 @@ class BatchDeleteMembersOption:
     def id(self):
         r"""Gets the id of this BatchDeleteMembersOption.
 
-        需要删除的后端服务器ID。  使用说明： - 若传入id则不能传其他参数，否则报错。  >说明： 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
+        需要删除的后端服务器ID。  使用说明： - 若传入id则不能传其他参数，否则报错。  > 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
 
         :return: The id of this BatchDeleteMembersOption.
         :rtype: str
@@ -70,7 +70,7 @@ class BatchDeleteMembersOption:
     def id(self, id):
         r"""Sets the id of this BatchDeleteMembersOption.
 
-        需要删除的后端服务器ID。  使用说明： - 若传入id则不能传其他参数，否则报错。  >说明： 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
+        需要删除的后端服务器ID。  使用说明： - 若传入id则不能传其他参数，否则报错。  > 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
 
         :param id: The id of this BatchDeleteMembersOption.
         :type id: str

@@ -73,7 +73,7 @@ class UpdateLoadBalancerOption:
         :type description: str
         :param ipv6_vip_virsubnet_id: 参数解释：双栈类型负载均衡器所在子网的IPv6网络ID，也称为该负载均衡器实例的前端子网。可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_network_id得到。  通过更新ipv6_vip_virsubnet_id可以更新负载均衡器所在IPv6子网，且负载均衡器的内网IPv6地址将发生变化。  约束限制： - ipv6_vip_virsubnet_id 对应的子网必须属于当前负载均衡器所在VPC，且子网需开启支持IPv6。 - 只有guaranteed是true的负载均衡器才支持更新ipv6_vip_virsubnet_id。 - *传入为null表示解绑IPv6子网。* - 更新IPv6子网不会导致IPv4子网发生变化。  [不支持IPv6，请勿使用。](tag:dt)
         :type ipv6_vip_virsubnet_id: str
-        :param vip_subnet_cidr_id: 参数解释：负载均衡器所在的IPv4子网ID，也称为该负载均衡器实例的前端子网。可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_subnet_id得到。  通过更新vip_subnet_cidr_id可以更新负载均衡器所在IPv4子网，并且负载均衡器的内网IPv4地址将发生变化。  约束限制： - 若同时设置了vip_address，则必须保证vip_address对应的IP在vip_subnet_cidr_id的子网网段中。 - vip_subnet_cidr_id对应的子网必须属于当前负载均衡器vpc_id对应的VPC。 - 只有guaranteed是true的负载均衡器才支持更新vip_subnet_cidr_id。 - *传入null表示解绑IPv4子网。* - 更新IPv6子网不会导致IPv4子网发生变化。
+        :param vip_subnet_cidr_id: 参数解释：负载均衡器所在的IPv4子网ID，也称为该负载均衡器实例的前端子网。可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_subnet_id得到。  通过更新vip_subnet_cidr_id可以更新负载均衡器所在IPv4子网，并且负载均衡器的**私网IPv4**地址将发生变化。  约束限制： - 若同时设置了vip_address，则必须保证vip_address对应的IP在vip_subnet_cidr_id的子网网段中。 - vip_subnet_cidr_id对应的子网必须属于当前负载均衡器vpc_id对应的VPC。 - 只有guaranteed是true的负载均衡器才支持更新vip_subnet_cidr_id。 - *传入null表示解绑IPv4子网。* - 更新IPv6子网不会导致IPv4子网发生变化。
         :type vip_subnet_cidr_id: str
         :param vip_address: 参数解释：负载均衡器的IPv4虚拟IP。  约束限制：该地址必须包含在所在子网的IPv4网段内，且未被占用。  注：仅当guaranteed是true的场合，才支持更新。
         :type vip_address: str
@@ -259,7 +259,7 @@ class UpdateLoadBalancerOption:
     def vip_subnet_cidr_id(self):
         r"""Gets the vip_subnet_cidr_id of this UpdateLoadBalancerOption.
 
-        参数解释：负载均衡器所在的IPv4子网ID，也称为该负载均衡器实例的前端子网。可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_subnet_id得到。  通过更新vip_subnet_cidr_id可以更新负载均衡器所在IPv4子网，并且负载均衡器的内网IPv4地址将发生变化。  约束限制： - 若同时设置了vip_address，则必须保证vip_address对应的IP在vip_subnet_cidr_id的子网网段中。 - vip_subnet_cidr_id对应的子网必须属于当前负载均衡器vpc_id对应的VPC。 - 只有guaranteed是true的负载均衡器才支持更新vip_subnet_cidr_id。 - *传入null表示解绑IPv4子网。* - 更新IPv6子网不会导致IPv4子网发生变化。
+        参数解释：负载均衡器所在的IPv4子网ID，也称为该负载均衡器实例的前端子网。可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_subnet_id得到。  通过更新vip_subnet_cidr_id可以更新负载均衡器所在IPv4子网，并且负载均衡器的**私网IPv4**地址将发生变化。  约束限制： - 若同时设置了vip_address，则必须保证vip_address对应的IP在vip_subnet_cidr_id的子网网段中。 - vip_subnet_cidr_id对应的子网必须属于当前负载均衡器vpc_id对应的VPC。 - 只有guaranteed是true的负载均衡器才支持更新vip_subnet_cidr_id。 - *传入null表示解绑IPv4子网。* - 更新IPv6子网不会导致IPv4子网发生变化。
 
         :return: The vip_subnet_cidr_id of this UpdateLoadBalancerOption.
         :rtype: str
@@ -270,7 +270,7 @@ class UpdateLoadBalancerOption:
     def vip_subnet_cidr_id(self, vip_subnet_cidr_id):
         r"""Sets the vip_subnet_cidr_id of this UpdateLoadBalancerOption.
 
-        参数解释：负载均衡器所在的IPv4子网ID，也称为该负载均衡器实例的前端子网。可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_subnet_id得到。  通过更新vip_subnet_cidr_id可以更新负载均衡器所在IPv4子网，并且负载均衡器的内网IPv4地址将发生变化。  约束限制： - 若同时设置了vip_address，则必须保证vip_address对应的IP在vip_subnet_cidr_id的子网网段中。 - vip_subnet_cidr_id对应的子网必须属于当前负载均衡器vpc_id对应的VPC。 - 只有guaranteed是true的负载均衡器才支持更新vip_subnet_cidr_id。 - *传入null表示解绑IPv4子网。* - 更新IPv6子网不会导致IPv4子网发生变化。
+        参数解释：负载均衡器所在的IPv4子网ID，也称为该负载均衡器实例的前端子网。可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_subnet_id得到。  通过更新vip_subnet_cidr_id可以更新负载均衡器所在IPv4子网，并且负载均衡器的**私网IPv4**地址将发生变化。  约束限制： - 若同时设置了vip_address，则必须保证vip_address对应的IP在vip_subnet_cidr_id的子网网段中。 - vip_subnet_cidr_id对应的子网必须属于当前负载均衡器vpc_id对应的VPC。 - 只有guaranteed是true的负载均衡器才支持更新vip_subnet_cidr_id。 - *传入null表示解绑IPv4子网。* - 更新IPv6子网不会导致IPv4子网发生变化。
 
         :param vip_subnet_cidr_id: The vip_subnet_cidr_id of this UpdateLoadBalancerOption.
         :type vip_subnet_cidr_id: str

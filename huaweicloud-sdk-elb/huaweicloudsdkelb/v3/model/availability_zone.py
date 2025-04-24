@@ -21,7 +21,8 @@ class AvailabilityZone:
         'state': 'str',
         'protocol': 'list[str]',
         'public_border_group': 'str',
-        'category': 'int'
+        'category': 'int',
+        'spec_code': 'str'
     }
 
     attribute_map = {
@@ -29,10 +30,11 @@ class AvailabilityZone:
         'state': 'state',
         'protocol': 'protocol',
         'public_border_group': 'public_border_group',
-        'category': 'category'
+        'category': 'category',
+        'spec_code': 'spec_code'
     }
 
-    def __init__(self, code=None, state=None, protocol=None, public_border_group=None, category=None):
+    def __init__(self, code=None, state=None, protocol=None, public_border_group=None, category=None, spec_code=None):
         r"""AvailabilityZone
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class AvailabilityZone:
         :type public_border_group: str
         :param category: 参数解释：范围编码。  取值范围：0表示center，21表示homezone。
         :type category: int
+        :param spec_code: 参数解释：可用区的产品编码，仅边缘场景有效。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
+        :type spec_code: str
         """
         
         
@@ -56,6 +60,7 @@ class AvailabilityZone:
         self._protocol = None
         self._public_border_group = None
         self._category = None
+        self._spec_code = None
         self.discriminator = None
 
         self.code = code
@@ -63,6 +68,8 @@ class AvailabilityZone:
         self.protocol = protocol
         self.public_border_group = public_border_group
         self.category = category
+        if spec_code is not None:
+            self.spec_code = spec_code
 
     @property
     def code(self):
@@ -173,6 +180,28 @@ class AvailabilityZone:
         :type category: int
         """
         self._category = category
+
+    @property
+    def spec_code(self):
+        r"""Gets the spec_code of this AvailabilityZone.
+
+        参数解释：可用区的产品编码，仅边缘场景有效。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
+
+        :return: The spec_code of this AvailabilityZone.
+        :rtype: str
+        """
+        return self._spec_code
+
+    @spec_code.setter
+    def spec_code(self, spec_code):
+        r"""Sets the spec_code of this AvailabilityZone.
+
+        参数解释：可用区的产品编码，仅边缘场景有效。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
+
+        :param spec_code: The spec_code of this AvailabilityZone.
+        :type spec_code: str
+        """
+        self._spec_code = spec_code
 
     def to_dict(self):
         """Returns the model properties as a dict"""

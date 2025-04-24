@@ -1123,7 +1123,7 @@ class ElbClient(Client):
     def create_logtank(self, request):
         r"""创建云日志
 
-        创建云日志。[荷兰region不支持云日志功能，请勿使用。](tag:dt)
+        创建云日志。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2044,7 +2044,7 @@ class ElbClient(Client):
     def delete_logtank(self, request):
         r"""删除云日志
 
-        删除云日志。[荷兰region不支持云日志功能，请勿使用。](tag:dt)
+        删除云日志。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3009,6 +3009,12 @@ class ElbClient(Client):
         path_params = {}
 
         query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'page_reverse' in local_var_params:
+            query_params.append(('page_reverse', local_var_params['page_reverse']))
         if 'job_id' in local_var_params:
             query_params.append(('job_id', local_var_params['job_id']))
         if 'job_type' in local_var_params:
@@ -3626,7 +3632,7 @@ class ElbClient(Client):
     def list_logtanks(self, request):
         r"""查询云日志列表
 
-        查询云日志列表。[荷兰region不支持云日志功能，请勿使用。](tag:dt)
+        查询云日志列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4933,7 +4939,7 @@ class ElbClient(Client):
     def show_logtank(self, request):
         r"""查询云日志详情
 
-        云日志详情。[荷兰region不支持云日志功能，请勿使用。](tag:dt)
+        云日志详情。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -5727,7 +5733,7 @@ class ElbClient(Client):
     def update_logtank(self, request):
         r"""更新云日志
 
-        更新云日志。[荷兰region不支持云日志功能，请勿使用。](tag:dt)
+        更新云日志。
         
         Please refer to HUAWEI cloud API Explorer for details.
 

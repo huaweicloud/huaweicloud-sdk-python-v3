@@ -46,17 +46,22 @@ class LoadBalancer:
         'l4_scale_flavor_id': 'str',
         'l7_flavor_id': 'str',
         'l7_scale_flavor_id': 'str',
+        'gw_flavor_id': 'str',
+        'loadbalancer_type': 'str',
         'publicips': 'list[PublicIpInfo]',
         'global_eips': 'list[GlobalEipInfo]',
         'elb_virsubnet_ids': 'list[str]',
         'elb_virsubnet_type': 'str',
         'ip_target_enable': 'bool',
         'frozen_scene': 'str',
-        'ipv6_bandwidth': 'BandwidthRef',
         'deletion_protection_enable': 'bool',
         'autoscaling': 'AutoscalingRef',
         'public_border_group': 'str',
         'charge_mode': 'str',
+        'service_lb_mode': 'str',
+        'instance_type': 'str',
+        'instance_id': 'str',
+        'proxy_protocol_extensions': 'list[ProxyProtocolExtension]',
         'waf_failure_action': 'str',
         'protection_status': 'str',
         'protection_reason': 'str',
@@ -94,17 +99,22 @@ class LoadBalancer:
         'l4_scale_flavor_id': 'l4_scale_flavor_id',
         'l7_flavor_id': 'l7_flavor_id',
         'l7_scale_flavor_id': 'l7_scale_flavor_id',
+        'gw_flavor_id': 'gw_flavor_id',
+        'loadbalancer_type': 'loadbalancer_type',
         'publicips': 'publicips',
         'global_eips': 'global_eips',
         'elb_virsubnet_ids': 'elb_virsubnet_ids',
         'elb_virsubnet_type': 'elb_virsubnet_type',
         'ip_target_enable': 'ip_target_enable',
         'frozen_scene': 'frozen_scene',
-        'ipv6_bandwidth': 'ipv6_bandwidth',
         'deletion_protection_enable': 'deletion_protection_enable',
         'autoscaling': 'autoscaling',
         'public_border_group': 'public_border_group',
         'charge_mode': 'charge_mode',
+        'service_lb_mode': 'service_lb_mode',
+        'instance_type': 'instance_type',
+        'instance_id': 'instance_id',
+        'proxy_protocol_extensions': 'proxy_protocol_extensions',
         'waf_failure_action': 'waf_failure_action',
         'protection_status': 'protection_status',
         'protection_reason': 'protection_reason',
@@ -112,7 +122,7 @@ class LoadBalancer:
         'log_topic_id': 'log_topic_id'
     }
 
-    def __init__(self, id=None, description=None, provisioning_status=None, admin_state_up=None, provider=None, pools=None, listeners=None, operating_status=None, name=None, project_id=None, vip_subnet_cidr_id=None, vip_address=None, vip_port_id=None, tags=None, created_at=None, updated_at=None, guaranteed=None, vpc_id=None, eips=None, ipv6_vip_address=None, ipv6_vip_virsubnet_id=None, ipv6_vip_port_id=None, availability_zone_list=None, enterprise_project_id=None, billing_info=None, l4_flavor_id=None, l4_scale_flavor_id=None, l7_flavor_id=None, l7_scale_flavor_id=None, publicips=None, global_eips=None, elb_virsubnet_ids=None, elb_virsubnet_type=None, ip_target_enable=None, frozen_scene=None, ipv6_bandwidth=None, deletion_protection_enable=None, autoscaling=None, public_border_group=None, charge_mode=None, waf_failure_action=None, protection_status=None, protection_reason=None, log_group_id=None, log_topic_id=None):
+    def __init__(self, id=None, description=None, provisioning_status=None, admin_state_up=None, provider=None, pools=None, listeners=None, operating_status=None, name=None, project_id=None, vip_subnet_cidr_id=None, vip_address=None, vip_port_id=None, tags=None, created_at=None, updated_at=None, guaranteed=None, vpc_id=None, eips=None, ipv6_vip_address=None, ipv6_vip_virsubnet_id=None, ipv6_vip_port_id=None, availability_zone_list=None, enterprise_project_id=None, billing_info=None, l4_flavor_id=None, l4_scale_flavor_id=None, l7_flavor_id=None, l7_scale_flavor_id=None, gw_flavor_id=None, loadbalancer_type=None, publicips=None, global_eips=None, elb_virsubnet_ids=None, elb_virsubnet_type=None, ip_target_enable=None, frozen_scene=None, deletion_protection_enable=None, autoscaling=None, public_border_group=None, charge_mode=None, service_lb_mode=None, instance_type=None, instance_id=None, proxy_protocol_extensions=None, waf_failure_action=None, protection_status=None, protection_reason=None, log_group_id=None, log_topic_id=None):
         r"""LoadBalancer
 
         The model defined in huaweicloud sdk
@@ -175,6 +185,10 @@ class LoadBalancer:
         :type l7_flavor_id: str
         :param l7_scale_flavor_id: 参数解释：七层弹性Flavor ID。  不支持该字段，请勿使用。
         :type l7_scale_flavor_id: str
+        :param gw_flavor_id: 网关型LB的Flavor ID。  [使用说明：当gw_flavor_id不传时，会使用默认gateway flavor （默认gateway flavor根据不同局点有所不同，具体以实际值为准）。 ](tag:hws,hws_hk,hws_eu,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb)  不支持该字段，请勿使用。
+        :type gw_flavor_id: str
+        :param loadbalancer_type: 参数解释：负载均衡器类别。  取值范围： - gateway 表示网关类型负载均衡器。 - null 表示其他非网关类型负载均衡器。  默认取值：null。  不支持该字段，请勿使用。
+        :type loadbalancer_type: str
         :param publicips: 参数解释：负载均衡器绑定的公网IP。只支持绑定一个公网IP。  注：该字段与eips一致。
         :type publicips: list[:class:`huaweicloudsdkelb.v3.PublicIpInfo`]
         :param global_eips: 参数解释：负载均衡器绑定的global eip。  约束限制：只支持绑定一个globaleip。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42,dt,hcso_dt,hk_vdf,srg,fcs,ctc,ocb,hws_ocb)
@@ -187,16 +201,22 @@ class LoadBalancer:
         :type ip_target_enable: bool
         :param frozen_scene: 参数解释：负载均衡器的冻结场景。 [若负载均衡器有多个冻结场景，用逗号分隔。  取值范围： - POLICE：公安冻结场景。 - ILLEGAL：违规冻结场景。 - VERIFY：客户未实名认证冻结场景。 - PARTNER：合作伙伴冻结（合作伙伴冻结子客户资源）。 - AREAR：欠费冻结场景。](tag:hws,hws_hk)  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42,dt,hcso_dt,ocb,hws_ocb)
         :type frozen_scene: str
-        :param ipv6_bandwidth: 
-        :type ipv6_bandwidth: :class:`huaweicloudsdkelb.v3.BandwidthRef`
         :param deletion_protection_enable: 参数解释：是否开启删除保护。  约束限制： - 仅当前局点启用删除保护特性后才会返回该字段。 - 退场时需要先关闭所有资源的删除保护开关。  取值范围： - false：不开启。 - true：开启。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)  [荷兰region不支持该字段，请勿使用。](tag:dt)
         :type deletion_protection_enable: bool
         :param autoscaling: 
         :type autoscaling: :class:`huaweicloudsdkelb.v3.AutoscalingRef`
         :param public_border_group: 参数解释：LB所属AZ组。
         :type public_border_group: str
-        :param charge_mode: 参数解释：负载均衡器实例的计费模式。  取值范围： - flavor：按规格计费 - lcu：按使用量计费 - 空值：若是共享型表示免费实例。若是独享型则与flavor模式一致，都是按规格计费。
+        :param charge_mode: 参数解释：负载均衡器实例的计费模式。  取值范围： - flavor：按规格计费 - lcu：按使用量计费 - 空值：若是共享型表示免费实例。若是独享型则与flavor模式一致，都是按规格计费。  [不支持该字段，请勿使用。](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,fcs,dt,hcso_dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,srg,g42,hk_g42)
         :type charge_mode: str
+        :param service_lb_mode: 参数解释：lb 模式，默认为lb，ep模式LB支持跨租户访问。  不支持该字段，请勿使用。
+        :type service_lb_mode: str
+        :param instance_type: 参数解释：标识实例归属哪个内部服务。  不支持该字段，请勿使用。
+        :type instance_type: str
+        :param instance_id: 参数解释：标识实例绑定内部服务的实例id。  不支持该字段，请勿使用。
+        :type instance_id: str
+        :param proxy_protocol_extensions: 参数解释：pp扩展。  不支持该字段，请勿使用。
+        :type proxy_protocol_extensions: list[:class:`huaweicloudsdkelb.v3.ProxyProtocolExtension`]
         :param waf_failure_action: 参数解释：WAF故障时的流量处理策略。  约束限制：只有绑定了waf的LB实例，该字段才会生效。  取值范围：discard:丢弃，forward: 转发到后端。  默认取值：forward  [不支持该字段，请勿使用。](tag:hws_eu,hws_test,hcs,hcs_sm,hcso,hk_vdf,srg,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b,hcso_dt,dt,ocb,ctc,cmcc,tm,ct,sbc,g42,hws_ocb,hk_sbc,hk_tm,hk_g42)
         :type waf_failure_action: str
         :param protection_status: 参数解释：修改保护状态。  取值范围： - nonProtection: 不保护。 - consoleProtection: 控制台修改保护。  默认取值：nonProtection
@@ -240,17 +260,22 @@ class LoadBalancer:
         self._l4_scale_flavor_id = None
         self._l7_flavor_id = None
         self._l7_scale_flavor_id = None
+        self._gw_flavor_id = None
+        self._loadbalancer_type = None
         self._publicips = None
         self._global_eips = None
         self._elb_virsubnet_ids = None
         self._elb_virsubnet_type = None
         self._ip_target_enable = None
         self._frozen_scene = None
-        self._ipv6_bandwidth = None
         self._deletion_protection_enable = None
         self._autoscaling = None
         self._public_border_group = None
         self._charge_mode = None
+        self._service_lb_mode = None
+        self._instance_type = None
+        self._instance_id = None
+        self._proxy_protocol_extensions = None
         self._waf_failure_action = None
         self._protection_status = None
         self._protection_reason = None
@@ -287,13 +312,16 @@ class LoadBalancer:
         self.l4_scale_flavor_id = l4_scale_flavor_id
         self.l7_flavor_id = l7_flavor_id
         self.l7_scale_flavor_id = l7_scale_flavor_id
+        if gw_flavor_id is not None:
+            self.gw_flavor_id = gw_flavor_id
+        if loadbalancer_type is not None:
+            self.loadbalancer_type = loadbalancer_type
         self.publicips = publicips
         self.global_eips = global_eips
         self.elb_virsubnet_ids = elb_virsubnet_ids
         self.elb_virsubnet_type = elb_virsubnet_type
         self.ip_target_enable = ip_target_enable
         self.frozen_scene = frozen_scene
-        self.ipv6_bandwidth = ipv6_bandwidth
         if deletion_protection_enable is not None:
             self.deletion_protection_enable = deletion_protection_enable
         if autoscaling is not None:
@@ -302,6 +330,14 @@ class LoadBalancer:
             self.public_border_group = public_border_group
         if charge_mode is not None:
             self.charge_mode = charge_mode
+        if service_lb_mode is not None:
+            self.service_lb_mode = service_lb_mode
+        if instance_type is not None:
+            self.instance_type = instance_type
+        if instance_id is not None:
+            self.instance_id = instance_id
+        if proxy_protocol_extensions is not None:
+            self.proxy_protocol_extensions = proxy_protocol_extensions
         if waf_failure_action is not None:
             self.waf_failure_action = waf_failure_action
         if protection_status is not None:
@@ -952,6 +988,50 @@ class LoadBalancer:
         self._l7_scale_flavor_id = l7_scale_flavor_id
 
     @property
+    def gw_flavor_id(self):
+        r"""Gets the gw_flavor_id of this LoadBalancer.
+
+        网关型LB的Flavor ID。  [使用说明：当gw_flavor_id不传时，会使用默认gateway flavor （默认gateway flavor根据不同局点有所不同，具体以实际值为准）。 ](tag:hws,hws_hk,hws_eu,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb)  不支持该字段，请勿使用。
+
+        :return: The gw_flavor_id of this LoadBalancer.
+        :rtype: str
+        """
+        return self._gw_flavor_id
+
+    @gw_flavor_id.setter
+    def gw_flavor_id(self, gw_flavor_id):
+        r"""Sets the gw_flavor_id of this LoadBalancer.
+
+        网关型LB的Flavor ID。  [使用说明：当gw_flavor_id不传时，会使用默认gateway flavor （默认gateway flavor根据不同局点有所不同，具体以实际值为准）。 ](tag:hws,hws_hk,hws_eu,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb)  不支持该字段，请勿使用。
+
+        :param gw_flavor_id: The gw_flavor_id of this LoadBalancer.
+        :type gw_flavor_id: str
+        """
+        self._gw_flavor_id = gw_flavor_id
+
+    @property
+    def loadbalancer_type(self):
+        r"""Gets the loadbalancer_type of this LoadBalancer.
+
+        参数解释：负载均衡器类别。  取值范围： - gateway 表示网关类型负载均衡器。 - null 表示其他非网关类型负载均衡器。  默认取值：null。  不支持该字段，请勿使用。
+
+        :return: The loadbalancer_type of this LoadBalancer.
+        :rtype: str
+        """
+        return self._loadbalancer_type
+
+    @loadbalancer_type.setter
+    def loadbalancer_type(self, loadbalancer_type):
+        r"""Sets the loadbalancer_type of this LoadBalancer.
+
+        参数解释：负载均衡器类别。  取值范围： - gateway 表示网关类型负载均衡器。 - null 表示其他非网关类型负载均衡器。  默认取值：null。  不支持该字段，请勿使用。
+
+        :param loadbalancer_type: The loadbalancer_type of this LoadBalancer.
+        :type loadbalancer_type: str
+        """
+        self._loadbalancer_type = loadbalancer_type
+
+    @property
     def publicips(self):
         r"""Gets the publicips of this LoadBalancer.
 
@@ -1084,24 +1164,6 @@ class LoadBalancer:
         self._frozen_scene = frozen_scene
 
     @property
-    def ipv6_bandwidth(self):
-        r"""Gets the ipv6_bandwidth of this LoadBalancer.
-
-        :return: The ipv6_bandwidth of this LoadBalancer.
-        :rtype: :class:`huaweicloudsdkelb.v3.BandwidthRef`
-        """
-        return self._ipv6_bandwidth
-
-    @ipv6_bandwidth.setter
-    def ipv6_bandwidth(self, ipv6_bandwidth):
-        r"""Sets the ipv6_bandwidth of this LoadBalancer.
-
-        :param ipv6_bandwidth: The ipv6_bandwidth of this LoadBalancer.
-        :type ipv6_bandwidth: :class:`huaweicloudsdkelb.v3.BandwidthRef`
-        """
-        self._ipv6_bandwidth = ipv6_bandwidth
-
-    @property
     def deletion_protection_enable(self):
         r"""Gets the deletion_protection_enable of this LoadBalancer.
 
@@ -1167,7 +1229,7 @@ class LoadBalancer:
     def charge_mode(self):
         r"""Gets the charge_mode of this LoadBalancer.
 
-        参数解释：负载均衡器实例的计费模式。  取值范围： - flavor：按规格计费 - lcu：按使用量计费 - 空值：若是共享型表示免费实例。若是独享型则与flavor模式一致，都是按规格计费。
+        参数解释：负载均衡器实例的计费模式。  取值范围： - flavor：按规格计费 - lcu：按使用量计费 - 空值：若是共享型表示免费实例。若是独享型则与flavor模式一致，都是按规格计费。  [不支持该字段，请勿使用。](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,fcs,dt,hcso_dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,srg,g42,hk_g42)
 
         :return: The charge_mode of this LoadBalancer.
         :rtype: str
@@ -1178,12 +1240,100 @@ class LoadBalancer:
     def charge_mode(self, charge_mode):
         r"""Sets the charge_mode of this LoadBalancer.
 
-        参数解释：负载均衡器实例的计费模式。  取值范围： - flavor：按规格计费 - lcu：按使用量计费 - 空值：若是共享型表示免费实例。若是独享型则与flavor模式一致，都是按规格计费。
+        参数解释：负载均衡器实例的计费模式。  取值范围： - flavor：按规格计费 - lcu：按使用量计费 - 空值：若是共享型表示免费实例。若是独享型则与flavor模式一致，都是按规格计费。  [不支持该字段，请勿使用。](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,fcs,dt,hcso_dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,srg,g42,hk_g42)
 
         :param charge_mode: The charge_mode of this LoadBalancer.
         :type charge_mode: str
         """
         self._charge_mode = charge_mode
+
+    @property
+    def service_lb_mode(self):
+        r"""Gets the service_lb_mode of this LoadBalancer.
+
+        参数解释：lb 模式，默认为lb，ep模式LB支持跨租户访问。  不支持该字段，请勿使用。
+
+        :return: The service_lb_mode of this LoadBalancer.
+        :rtype: str
+        """
+        return self._service_lb_mode
+
+    @service_lb_mode.setter
+    def service_lb_mode(self, service_lb_mode):
+        r"""Sets the service_lb_mode of this LoadBalancer.
+
+        参数解释：lb 模式，默认为lb，ep模式LB支持跨租户访问。  不支持该字段，请勿使用。
+
+        :param service_lb_mode: The service_lb_mode of this LoadBalancer.
+        :type service_lb_mode: str
+        """
+        self._service_lb_mode = service_lb_mode
+
+    @property
+    def instance_type(self):
+        r"""Gets the instance_type of this LoadBalancer.
+
+        参数解释：标识实例归属哪个内部服务。  不支持该字段，请勿使用。
+
+        :return: The instance_type of this LoadBalancer.
+        :rtype: str
+        """
+        return self._instance_type
+
+    @instance_type.setter
+    def instance_type(self, instance_type):
+        r"""Sets the instance_type of this LoadBalancer.
+
+        参数解释：标识实例归属哪个内部服务。  不支持该字段，请勿使用。
+
+        :param instance_type: The instance_type of this LoadBalancer.
+        :type instance_type: str
+        """
+        self._instance_type = instance_type
+
+    @property
+    def instance_id(self):
+        r"""Gets the instance_id of this LoadBalancer.
+
+        参数解释：标识实例绑定内部服务的实例id。  不支持该字段，请勿使用。
+
+        :return: The instance_id of this LoadBalancer.
+        :rtype: str
+        """
+        return self._instance_id
+
+    @instance_id.setter
+    def instance_id(self, instance_id):
+        r"""Sets the instance_id of this LoadBalancer.
+
+        参数解释：标识实例绑定内部服务的实例id。  不支持该字段，请勿使用。
+
+        :param instance_id: The instance_id of this LoadBalancer.
+        :type instance_id: str
+        """
+        self._instance_id = instance_id
+
+    @property
+    def proxy_protocol_extensions(self):
+        r"""Gets the proxy_protocol_extensions of this LoadBalancer.
+
+        参数解释：pp扩展。  不支持该字段，请勿使用。
+
+        :return: The proxy_protocol_extensions of this LoadBalancer.
+        :rtype: list[:class:`huaweicloudsdkelb.v3.ProxyProtocolExtension`]
+        """
+        return self._proxy_protocol_extensions
+
+    @proxy_protocol_extensions.setter
+    def proxy_protocol_extensions(self, proxy_protocol_extensions):
+        r"""Sets the proxy_protocol_extensions of this LoadBalancer.
+
+        参数解释：pp扩展。  不支持该字段，请勿使用。
+
+        :param proxy_protocol_extensions: The proxy_protocol_extensions of this LoadBalancer.
+        :type proxy_protocol_extensions: list[:class:`huaweicloudsdkelb.v3.ProxyProtocolExtension`]
+        """
+        self._proxy_protocol_extensions = proxy_protocol_extensions
 
     @property
     def waf_failure_action(self):

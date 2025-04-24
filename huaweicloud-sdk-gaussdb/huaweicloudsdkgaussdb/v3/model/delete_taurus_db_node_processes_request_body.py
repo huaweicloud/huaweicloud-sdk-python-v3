@@ -5,7 +5,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class DeleteMemberRequest:
+class DeleteTaurusDbNodeProcessesRequestBody:
 
     """
     Attributes:
@@ -17,78 +17,50 @@ class DeleteMemberRequest:
     sensitive_list = []
 
     openapi_types = {
-        'pool_id': 'str',
-        'member_id': 'str'
+        'processes': 'list[int]'
     }
 
     attribute_map = {
-        'pool_id': 'pool_id',
-        'member_id': 'member_id'
+        'processes': 'processes'
     }
 
-    def __init__(self, pool_id=None, member_id=None):
-        r"""DeleteMemberRequest
+    def __init__(self, processes=None):
+        r"""DeleteTaurusDbNodeProcessesRequestBody
 
         The model defined in huaweicloud sdk
 
-        :param pool_id: 参数解释：后端服务器组ID。
-        :type pool_id: str
-        :param member_id: 后端服务器ID。 &gt; 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。  member ID可以通过[查询后端服务器列表](ListMembers.xml)获取。
-        :type member_id: str
+        :param processes: **参数解释**：  待终止用户会话线程ID列表。  通过查询节点用户会话线程接口，或show processlist命令获取。
+        :type processes: list[int]
         """
         
         
 
-        self._pool_id = None
-        self._member_id = None
+        self._processes = None
         self.discriminator = None
 
-        self.pool_id = pool_id
-        self.member_id = member_id
+        self.processes = processes
 
     @property
-    def pool_id(self):
-        r"""Gets the pool_id of this DeleteMemberRequest.
+    def processes(self):
+        r"""Gets the processes of this DeleteTaurusDbNodeProcessesRequestBody.
 
-        参数解释：后端服务器组ID。
+        **参数解释**：  待终止用户会话线程ID列表。  通过查询节点用户会话线程接口，或show processlist命令获取。
 
-        :return: The pool_id of this DeleteMemberRequest.
-        :rtype: str
+        :return: The processes of this DeleteTaurusDbNodeProcessesRequestBody.
+        :rtype: list[int]
         """
-        return self._pool_id
+        return self._processes
 
-    @pool_id.setter
-    def pool_id(self, pool_id):
-        r"""Sets the pool_id of this DeleteMemberRequest.
+    @processes.setter
+    def processes(self, processes):
+        r"""Sets the processes of this DeleteTaurusDbNodeProcessesRequestBody.
 
-        参数解释：后端服务器组ID。
+        **参数解释**：  待终止用户会话线程ID列表。  通过查询节点用户会话线程接口，或show processlist命令获取。
 
-        :param pool_id: The pool_id of this DeleteMemberRequest.
-        :type pool_id: str
+        :param processes: The processes of this DeleteTaurusDbNodeProcessesRequestBody.
+        :type processes: list[int]
         """
-        self._pool_id = pool_id
-
-    @property
-    def member_id(self):
-        r"""Gets the member_id of this DeleteMemberRequest.
-
-        后端服务器ID。 > 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。  member ID可以通过[查询后端服务器列表](ListMembers.xml)获取。
-
-        :return: The member_id of this DeleteMemberRequest.
-        :rtype: str
-        """
-        return self._member_id
-
-    @member_id.setter
-    def member_id(self, member_id):
-        r"""Sets the member_id of this DeleteMemberRequest.
-
-        后端服务器ID。 > 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。  member ID可以通过[查询后端服务器列表](ListMembers.xml)获取。
-
-        :param member_id: The member_id of this DeleteMemberRequest.
-        :type member_id: str
-        """
-        self._member_id = member_id
+        self._processes = processes
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -132,7 +104,7 @@ class DeleteMemberRequest:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, DeleteMemberRequest):
+        if not isinstance(other, DeleteTaurusDbNodeProcessesRequestBody):
             return False
 
         return self.__dict__ == other.__dict__

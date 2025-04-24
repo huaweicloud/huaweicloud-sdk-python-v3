@@ -23,7 +23,8 @@ class RequestLimitRules:
         'match_value': 'str',
         'type': 'str',
         'limit_rate_after': 'int',
-        'limit_rate_value': 'int'
+        'limit_rate_value': 'int',
+        'limit_time': 'str'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class RequestLimitRules:
         'match_value': 'match_value',
         'type': 'type',
         'limit_rate_after': 'limit_rate_after',
-        'limit_rate_value': 'limit_rate_value'
+        'limit_rate_value': 'limit_rate_value',
+        'limit_time': 'limit_time'
     }
 
-    def __init__(self, status=None, priority=None, match_type=None, match_value=None, type=None, limit_rate_after=None, limit_rate_value=None):
+    def __init__(self, status=None, priority=None, match_type=None, match_value=None, type=None, limit_rate_after=None, limit_rate_value=None, limit_time=None):
         r"""RequestLimitRules
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class RequestLimitRules:
         :type limit_rate_after: int
         :param limit_rate_value: 限速值,单位Bps，取值范围 0-104857600。
         :type limit_rate_value: int
+        :param limit_time: 指明限速的时段，按照每天24小时设置限速时段，格式为：HHMM-HHMM（HH为时，MM为分，时区为UTC+8），多个时段限速时用“,”分隔，最多可配置10个时段，例如：0100-0200,2200-2300。不传或传空时默认值为0000-2400，代表限速对所有时段生效。
+        :type limit_time: str
         """
         
         
@@ -66,6 +70,7 @@ class RequestLimitRules:
         self._type = None
         self._limit_rate_after = None
         self._limit_rate_value = None
+        self._limit_time = None
         self.discriminator = None
 
         if status is not None:
@@ -77,6 +82,8 @@ class RequestLimitRules:
         self.type = type
         self.limit_rate_after = limit_rate_after
         self.limit_rate_value = limit_rate_value
+        if limit_time is not None:
+            self.limit_time = limit_time
 
     @property
     def status(self):
@@ -231,6 +238,28 @@ class RequestLimitRules:
         :type limit_rate_value: int
         """
         self._limit_rate_value = limit_rate_value
+
+    @property
+    def limit_time(self):
+        r"""Gets the limit_time of this RequestLimitRules.
+
+        指明限速的时段，按照每天24小时设置限速时段，格式为：HHMM-HHMM（HH为时，MM为分，时区为UTC+8），多个时段限速时用“,”分隔，最多可配置10个时段，例如：0100-0200,2200-2300。不传或传空时默认值为0000-2400，代表限速对所有时段生效。
+
+        :return: The limit_time of this RequestLimitRules.
+        :rtype: str
+        """
+        return self._limit_time
+
+    @limit_time.setter
+    def limit_time(self, limit_time):
+        r"""Sets the limit_time of this RequestLimitRules.
+
+        指明限速的时段，按照每天24小时设置限速时段，格式为：HHMM-HHMM（HH为时，MM为分，时区为UTC+8），多个时段限速时用“,”分隔，最多可配置10个时段，例如：0100-0200,2200-2300。不传或传空时默认值为0000-2400，代表限速对所有时段生效。
+
+        :param limit_time: The limit_time of this RequestLimitRules.
+        :type limit_time: str
+        """
+        self._limit_time = limit_time
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -17,6 +17,9 @@ class ListJobsRequest:
     sensitive_list = []
 
     openapi_types = {
+        'limit': 'int',
+        'marker': 'str',
+        'page_reverse': 'bool',
         'job_id': 'str',
         'job_type': 'str',
         'status': 'str',
@@ -26,6 +29,9 @@ class ListJobsRequest:
     }
 
     attribute_map = {
+        'limit': 'limit',
+        'marker': 'marker',
+        'page_reverse': 'page_reverse',
         'job_id': 'job_id',
         'job_type': 'job_type',
         'status': 'status',
@@ -34,11 +40,17 @@ class ListJobsRequest:
         'begin_time': 'begin_time'
     }
 
-    def __init__(self, job_id=None, job_type=None, status=None, error_code=None, resource_id=None, begin_time=None):
+    def __init__(self, limit=None, marker=None, page_reverse=None, job_id=None, job_type=None, status=None, error_code=None, resource_id=None, begin_time=None):
         r"""ListJobsRequest
 
         The model defined in huaweicloud sdk
 
+        :param limit: 参数解释：每页返回的个数。  取值范围：0-2000  默认取值：2000
+        :type limit: int
+        :param marker: 上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
+        :type marker: str
+        :param page_reverse: 是否反向查询。  取值： - true：查询上一页。 - false：查询下一页，默认。  使用说明： - 必须与limit一起使用。 - 当page_reverse&#x3D;true时，若要查询上一页，marker取值为当前页返回值的previous_marker
+        :type page_reverse: bool
         :param job_id: 参数解释：任务ID。
         :type job_id: str
         :param job_type: 参数解释：任务类型。
@@ -55,6 +67,9 @@ class ListJobsRequest:
         
         
 
+        self._limit = None
+        self._marker = None
+        self._page_reverse = None
         self._job_id = None
         self._job_type = None
         self._status = None
@@ -63,6 +78,12 @@ class ListJobsRequest:
         self._begin_time = None
         self.discriminator = None
 
+        if limit is not None:
+            self.limit = limit
+        if marker is not None:
+            self.marker = marker
+        if page_reverse is not None:
+            self.page_reverse = page_reverse
         if job_id is not None:
             self.job_id = job_id
         if job_type is not None:
@@ -75,6 +96,72 @@ class ListJobsRequest:
             self.resource_id = resource_id
         if begin_time is not None:
             self.begin_time = begin_time
+
+    @property
+    def limit(self):
+        r"""Gets the limit of this ListJobsRequest.
+
+        参数解释：每页返回的个数。  取值范围：0-2000  默认取值：2000
+
+        :return: The limit of this ListJobsRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        r"""Sets the limit of this ListJobsRequest.
+
+        参数解释：每页返回的个数。  取值范围：0-2000  默认取值：2000
+
+        :param limit: The limit of this ListJobsRequest.
+        :type limit: int
+        """
+        self._limit = limit
+
+    @property
+    def marker(self):
+        r"""Gets the marker of this ListJobsRequest.
+
+        上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
+
+        :return: The marker of this ListJobsRequest.
+        :rtype: str
+        """
+        return self._marker
+
+    @marker.setter
+    def marker(self, marker):
+        r"""Sets the marker of this ListJobsRequest.
+
+        上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
+
+        :param marker: The marker of this ListJobsRequest.
+        :type marker: str
+        """
+        self._marker = marker
+
+    @property
+    def page_reverse(self):
+        r"""Gets the page_reverse of this ListJobsRequest.
+
+        是否反向查询。  取值： - true：查询上一页。 - false：查询下一页，默认。  使用说明： - 必须与limit一起使用。 - 当page_reverse=true时，若要查询上一页，marker取值为当前页返回值的previous_marker
+
+        :return: The page_reverse of this ListJobsRequest.
+        :rtype: bool
+        """
+        return self._page_reverse
+
+    @page_reverse.setter
+    def page_reverse(self, page_reverse):
+        r"""Sets the page_reverse of this ListJobsRequest.
+
+        是否反向查询。  取值： - true：查询上一页。 - false：查询下一页，默认。  使用说明： - 必须与limit一起使用。 - 当page_reverse=true时，若要查询上一页，marker取值为当前页返回值的previous_marker
+
+        :param page_reverse: The page_reverse of this ListJobsRequest.
+        :type page_reverse: bool
+        """
+        self._page_reverse = page_reverse
 
     @property
     def job_id(self):
