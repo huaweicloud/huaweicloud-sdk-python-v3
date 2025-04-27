@@ -29,7 +29,7 @@ class ModifyNodeDataIpRequest:
 
         The model defined in huaweicloud sdk
 
-        :param internal_ip: **参数解释**：              内网IP地址。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认值**：  不涉及。
+        :param internal_ip: **参数解释**：              内网IP地址。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认值**：  不涉及。 
         :type internal_ip: str
         """
         
@@ -44,7 +44,7 @@ class ModifyNodeDataIpRequest:
     def internal_ip(self):
         r"""Gets the internal_ip of this ModifyNodeDataIpRequest.
 
-        **参数解释**：              内网IP地址。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认值**：  不涉及。
+        **参数解释**：              内网IP地址。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认值**：  不涉及。 
 
         :return: The internal_ip of this ModifyNodeDataIpRequest.
         :rtype: str
@@ -55,7 +55,7 @@ class ModifyNodeDataIpRequest:
     def internal_ip(self, internal_ip):
         r"""Sets the internal_ip of this ModifyNodeDataIpRequest.
 
-        **参数解释**：              内网IP地址。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认值**：  不涉及。
+        **参数解释**：              内网IP地址。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认值**：  不涉及。 
 
         :param internal_ip: The internal_ip of this ModifyNodeDataIpRequest.
         :type internal_ip: str

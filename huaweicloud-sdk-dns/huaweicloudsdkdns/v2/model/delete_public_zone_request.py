@@ -29,7 +29,7 @@ class DeletePublicZoneRequest:
 
         The model defined in huaweicloud sdk
 
-        :param zone_id: 待删除zone的ID
+        :param zone_id: 域名ID。
         :type zone_id: str
         """
         
@@ -44,7 +44,7 @@ class DeletePublicZoneRequest:
     def zone_id(self):
         r"""Gets the zone_id of this DeletePublicZoneRequest.
 
-        待删除zone的ID
+        域名ID。
 
         :return: The zone_id of this DeletePublicZoneRequest.
         :rtype: str
@@ -55,7 +55,7 @@ class DeletePublicZoneRequest:
     def zone_id(self, zone_id):
         r"""Sets the zone_id of this DeletePublicZoneRequest.
 
-        待删除zone的ID
+        域名ID。
 
         :param zone_id: The zone_id of this DeletePublicZoneRequest.
         :type zone_id: str

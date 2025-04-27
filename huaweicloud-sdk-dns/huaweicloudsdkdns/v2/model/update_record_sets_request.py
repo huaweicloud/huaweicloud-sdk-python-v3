@@ -33,9 +33,9 @@ class UpdateRecordSetsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param zone_id: 所属zone的ID。
+        :param zone_id: 域名ID。
         :type zone_id: str
-        :param recordset_id: 待查询recordset的ID信息。
+        :param recordset_id: 记录集ID。
         :type recordset_id: str
         :param body: Body of the UpdateRecordSetsRequest
         :type body: :class:`huaweicloudsdkdns.v2.UpdateRecordSetsReq`
@@ -57,7 +57,7 @@ class UpdateRecordSetsRequest:
     def zone_id(self):
         r"""Gets the zone_id of this UpdateRecordSetsRequest.
 
-        所属zone的ID。
+        域名ID。
 
         :return: The zone_id of this UpdateRecordSetsRequest.
         :rtype: str
@@ -68,7 +68,7 @@ class UpdateRecordSetsRequest:
     def zone_id(self, zone_id):
         r"""Sets the zone_id of this UpdateRecordSetsRequest.
 
-        所属zone的ID。
+        域名ID。
 
         :param zone_id: The zone_id of this UpdateRecordSetsRequest.
         :type zone_id: str
@@ -79,7 +79,7 @@ class UpdateRecordSetsRequest:
     def recordset_id(self):
         r"""Gets the recordset_id of this UpdateRecordSetsRequest.
 
-        待查询recordset的ID信息。
+        记录集ID。
 
         :return: The recordset_id of this UpdateRecordSetsRequest.
         :rtype: str
@@ -90,7 +90,7 @@ class UpdateRecordSetsRequest:
     def recordset_id(self, recordset_id):
         r"""Sets the recordset_id of this UpdateRecordSetsRequest.
 
-        待查询recordset的ID信息。
+        记录集ID。
 
         :param recordset_id: The recordset_id of this UpdateRecordSetsRequest.
         :type recordset_id: str

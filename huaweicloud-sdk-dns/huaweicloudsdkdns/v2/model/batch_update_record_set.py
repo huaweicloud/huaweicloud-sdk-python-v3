@@ -37,11 +37,11 @@ class BatchUpdateRecordSet:
 
         The model defined in huaweicloud sdk
 
-        :param id: RecordSet资源ID。
+        :param id: 记录集资源ID。
         :type id: str
-        :param description: RecordSet资源描述。
+        :param description: 记录集资源描述。
         :type description: str
-        :param ttl: Record Set的有效缓存时间，以秒为单位。 取值范围：300-2147483647。 默认值为300s。
+        :param ttl: 记录集的有效缓存时间，以秒为单位。 取值范围：300-2147483647。 默认值为300s。
         :type ttl: int
         :param weight: 解析记录的权重，默认为null。 当weight&#x3D;null时，表示该解析记录不设置权重。 当weight&#x3D;0，表示备用域名解析记录。 当weight&gt;0，表示主用域名解析记录。 取值范围：0~100 在相同域名、类型、线路下的解析记录，规则如下： 全部设置权重，或全部不设置权重。 当不设置权重时，只能创建一个解析记录。 当设置权重时，最多能创建20个解析记录。
         :type weight: int
@@ -71,7 +71,7 @@ class BatchUpdateRecordSet:
     def id(self):
         r"""Gets the id of this BatchUpdateRecordSet.
 
-        RecordSet资源ID。
+        记录集资源ID。
 
         :return: The id of this BatchUpdateRecordSet.
         :rtype: str
@@ -82,7 +82,7 @@ class BatchUpdateRecordSet:
     def id(self, id):
         r"""Sets the id of this BatchUpdateRecordSet.
 
-        RecordSet资源ID。
+        记录集资源ID。
 
         :param id: The id of this BatchUpdateRecordSet.
         :type id: str
@@ -93,7 +93,7 @@ class BatchUpdateRecordSet:
     def description(self):
         r"""Gets the description of this BatchUpdateRecordSet.
 
-        RecordSet资源描述。
+        记录集资源描述。
 
         :return: The description of this BatchUpdateRecordSet.
         :rtype: str
@@ -104,7 +104,7 @@ class BatchUpdateRecordSet:
     def description(self, description):
         r"""Sets the description of this BatchUpdateRecordSet.
 
-        RecordSet资源描述。
+        记录集资源描述。
 
         :param description: The description of this BatchUpdateRecordSet.
         :type description: str
@@ -115,7 +115,7 @@ class BatchUpdateRecordSet:
     def ttl(self):
         r"""Gets the ttl of this BatchUpdateRecordSet.
 
-        Record Set的有效缓存时间，以秒为单位。 取值范围：300-2147483647。 默认值为300s。
+        记录集的有效缓存时间，以秒为单位。 取值范围：300-2147483647。 默认值为300s。
 
         :return: The ttl of this BatchUpdateRecordSet.
         :rtype: int
@@ -126,7 +126,7 @@ class BatchUpdateRecordSet:
     def ttl(self, ttl):
         r"""Sets the ttl of this BatchUpdateRecordSet.
 
-        Record Set的有效缓存时间，以秒为单位。 取值范围：300-2147483647。 默认值为300s。
+        记录集的有效缓存时间，以秒为单位。 取值范围：300-2147483647。 默认值为300s。
 
         :param ttl: The ttl of this BatchUpdateRecordSet.
         :type ttl: int

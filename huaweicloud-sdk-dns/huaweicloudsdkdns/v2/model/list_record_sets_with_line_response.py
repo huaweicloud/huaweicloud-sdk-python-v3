@@ -36,7 +36,7 @@ class ListRecordSetsWithLineResponse(SdkResponse):
 
         :param links: 
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`
-        :param recordsets: recordset列表信息。
+        :param recordsets: 记录集列表信息。
         :type recordsets: list[:class:`huaweicloudsdkdns.v2.QueryRecordSetWithLineAndTagsResp`]
         :param metadata: 
         :type metadata: :class:`huaweicloudsdkdns.v2.Metadata`
@@ -78,7 +78,7 @@ class ListRecordSetsWithLineResponse(SdkResponse):
     def recordsets(self):
         r"""Gets the recordsets of this ListRecordSetsWithLineResponse.
 
-        recordset列表信息。
+        记录集列表信息。
 
         :return: The recordsets of this ListRecordSetsWithLineResponse.
         :rtype: list[:class:`huaweicloudsdkdns.v2.QueryRecordSetWithLineAndTagsResp`]
@@ -89,7 +89,7 @@ class ListRecordSetsWithLineResponse(SdkResponse):
     def recordsets(self, recordsets):
         r"""Sets the recordsets of this ListRecordSetsWithLineResponse.
 
-        recordset列表信息。
+        记录集列表信息。
 
         :param recordsets: The recordsets of this ListRecordSetsWithLineResponse.
         :type recordsets: list[:class:`huaweicloudsdkdns.v2.QueryRecordSetWithLineAndTagsResp`]

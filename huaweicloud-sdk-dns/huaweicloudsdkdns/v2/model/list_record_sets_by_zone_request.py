@@ -51,7 +51,7 @@ class ListRecordSetsByZoneRequest:
 
         The model defined in huaweicloud sdk
 
-        :param zone_id: 所属zone id。
+        :param zone_id: 域名ID。
         :type zone_id: str
         :param search_mode: 查询条件搜索模式。  取值范围：  like：模糊搜索 equal：精确搜索
         :type search_mode: str
@@ -61,19 +61,19 @@ class ListRecordSetsByZoneRequest:
         :type limit: int
         :param offset: 分页查询起始偏移量，表示从偏移量的下一个资源开始查询。  取值范围：0~2147483647  默认值为0。  当前设置marker不为空时，以marker为分页起始标识。
         :type offset: int
-        :param tags: 资源标签。  取值格式：key1,value1|key2,value2  多个标签之间用\&quot;|\&quot;分开，每个标签的键值用英文逗号\&quot;,\&quot;相隔。
+        :param tags: 资源标签。  取值格式：key1,value1|key2,value2  多个标签之间用“|”分开，每个标签的键值用英文逗号“,”相隔。
         :type tags: str
-        :param status: 待查询的Record Set的状态。 取值范围：ACTIVE、ERROR、DISABLE、FREEZE、PENDING_CREATE、PENDING_UPDATE、PENDING_DELETE
+        :param status: 待查询的记录集的状态。 取值范围：ACTIVE、ERROR、DISABLE、FREEZE、PENDING_CREATE、PENDING_UPDATE、PENDING_DELETE
         :type status: str
-        :param type: 待查询的Record Set的记录集类型。 公网域名场景的记录类型: A、AAAA、MX、CNAME、TXT、NS、SRV、CAA。 内网域名场景的记录类型: A、AAAA、MX、CNAME、TXT、SRV。
+        :param type: 待查询的记录集的类型。 公网域名场景的记录类型: A、AAAA、MX、CNAME、TXT、NS、SRV、CAA。 内网域名场景的记录类型: A、AAAA、MX、CNAME、TXT、SRV。
         :type type: str
-        :param name: 待查询的Record Set的域名中包含此name。  搜索模式默认为模糊搜索。  默认值为空。
+        :param name: 待查询的记录集的域名中包含此name。  搜索模式默认为模糊搜索。  默认值为空。
         :type name: str
-        :param id: 待查询的Record Set的id包含此id。
+        :param id: 待查询的记录集ID。
         :type id: str
-        :param sort_key: 查询结果中Record Set列表的排序字段。  取值范围为：  name：记录集名称 type：记录集类型 默认值为空，表示不排序。
+        :param sort_key: 查询结果中记录集列表的排序字段。  取值范围为：  name：记录集名称 type：记录集类型 默认值为空，表示不排序。
         :type sort_key: str
-        :param sort_dir: 查询结果中Record Set列表的排序方式。  取值范围：  desc：降序排序 asc：升序排序 默认值为空，表示不排序。
+        :param sort_dir: 查询结果中记录集列表的排序方式。  取值范围：  desc：降序排序 asc：升序排序 默认值为空，表示不排序。
         :type sort_dir: str
         """
         
@@ -121,7 +121,7 @@ class ListRecordSetsByZoneRequest:
     def zone_id(self):
         r"""Gets the zone_id of this ListRecordSetsByZoneRequest.
 
-        所属zone id。
+        域名ID。
 
         :return: The zone_id of this ListRecordSetsByZoneRequest.
         :rtype: str
@@ -132,7 +132,7 @@ class ListRecordSetsByZoneRequest:
     def zone_id(self, zone_id):
         r"""Sets the zone_id of this ListRecordSetsByZoneRequest.
 
-        所属zone id。
+        域名ID。
 
         :param zone_id: The zone_id of this ListRecordSetsByZoneRequest.
         :type zone_id: str
@@ -231,7 +231,7 @@ class ListRecordSetsByZoneRequest:
     def tags(self):
         r"""Gets the tags of this ListRecordSetsByZoneRequest.
 
-        资源标签。  取值格式：key1,value1|key2,value2  多个标签之间用\"|\"分开，每个标签的键值用英文逗号\",\"相隔。
+        资源标签。  取值格式：key1,value1|key2,value2  多个标签之间用“|”分开，每个标签的键值用英文逗号“,”相隔。
 
         :return: The tags of this ListRecordSetsByZoneRequest.
         :rtype: str
@@ -242,7 +242,7 @@ class ListRecordSetsByZoneRequest:
     def tags(self, tags):
         r"""Sets the tags of this ListRecordSetsByZoneRequest.
 
-        资源标签。  取值格式：key1,value1|key2,value2  多个标签之间用\"|\"分开，每个标签的键值用英文逗号\",\"相隔。
+        资源标签。  取值格式：key1,value1|key2,value2  多个标签之间用“|”分开，每个标签的键值用英文逗号“,”相隔。
 
         :param tags: The tags of this ListRecordSetsByZoneRequest.
         :type tags: str
@@ -253,7 +253,7 @@ class ListRecordSetsByZoneRequest:
     def status(self):
         r"""Gets the status of this ListRecordSetsByZoneRequest.
 
-        待查询的Record Set的状态。 取值范围：ACTIVE、ERROR、DISABLE、FREEZE、PENDING_CREATE、PENDING_UPDATE、PENDING_DELETE
+        待查询的记录集的状态。 取值范围：ACTIVE、ERROR、DISABLE、FREEZE、PENDING_CREATE、PENDING_UPDATE、PENDING_DELETE
 
         :return: The status of this ListRecordSetsByZoneRequest.
         :rtype: str
@@ -264,7 +264,7 @@ class ListRecordSetsByZoneRequest:
     def status(self, status):
         r"""Sets the status of this ListRecordSetsByZoneRequest.
 
-        待查询的Record Set的状态。 取值范围：ACTIVE、ERROR、DISABLE、FREEZE、PENDING_CREATE、PENDING_UPDATE、PENDING_DELETE
+        待查询的记录集的状态。 取值范围：ACTIVE、ERROR、DISABLE、FREEZE、PENDING_CREATE、PENDING_UPDATE、PENDING_DELETE
 
         :param status: The status of this ListRecordSetsByZoneRequest.
         :type status: str
@@ -275,7 +275,7 @@ class ListRecordSetsByZoneRequest:
     def type(self):
         r"""Gets the type of this ListRecordSetsByZoneRequest.
 
-        待查询的Record Set的记录集类型。 公网域名场景的记录类型: A、AAAA、MX、CNAME、TXT、NS、SRV、CAA。 内网域名场景的记录类型: A、AAAA、MX、CNAME、TXT、SRV。
+        待查询的记录集的类型。 公网域名场景的记录类型: A、AAAA、MX、CNAME、TXT、NS、SRV、CAA。 内网域名场景的记录类型: A、AAAA、MX、CNAME、TXT、SRV。
 
         :return: The type of this ListRecordSetsByZoneRequest.
         :rtype: str
@@ -286,7 +286,7 @@ class ListRecordSetsByZoneRequest:
     def type(self, type):
         r"""Sets the type of this ListRecordSetsByZoneRequest.
 
-        待查询的Record Set的记录集类型。 公网域名场景的记录类型: A、AAAA、MX、CNAME、TXT、NS、SRV、CAA。 内网域名场景的记录类型: A、AAAA、MX、CNAME、TXT、SRV。
+        待查询的记录集的类型。 公网域名场景的记录类型: A、AAAA、MX、CNAME、TXT、NS、SRV、CAA。 内网域名场景的记录类型: A、AAAA、MX、CNAME、TXT、SRV。
 
         :param type: The type of this ListRecordSetsByZoneRequest.
         :type type: str
@@ -297,7 +297,7 @@ class ListRecordSetsByZoneRequest:
     def name(self):
         r"""Gets the name of this ListRecordSetsByZoneRequest.
 
-        待查询的Record Set的域名中包含此name。  搜索模式默认为模糊搜索。  默认值为空。
+        待查询的记录集的域名中包含此name。  搜索模式默认为模糊搜索。  默认值为空。
 
         :return: The name of this ListRecordSetsByZoneRequest.
         :rtype: str
@@ -308,7 +308,7 @@ class ListRecordSetsByZoneRequest:
     def name(self, name):
         r"""Sets the name of this ListRecordSetsByZoneRequest.
 
-        待查询的Record Set的域名中包含此name。  搜索模式默认为模糊搜索。  默认值为空。
+        待查询的记录集的域名中包含此name。  搜索模式默认为模糊搜索。  默认值为空。
 
         :param name: The name of this ListRecordSetsByZoneRequest.
         :type name: str
@@ -319,7 +319,7 @@ class ListRecordSetsByZoneRequest:
     def id(self):
         r"""Gets the id of this ListRecordSetsByZoneRequest.
 
-        待查询的Record Set的id包含此id。
+        待查询的记录集ID。
 
         :return: The id of this ListRecordSetsByZoneRequest.
         :rtype: str
@@ -330,7 +330,7 @@ class ListRecordSetsByZoneRequest:
     def id(self, id):
         r"""Sets the id of this ListRecordSetsByZoneRequest.
 
-        待查询的Record Set的id包含此id。
+        待查询的记录集ID。
 
         :param id: The id of this ListRecordSetsByZoneRequest.
         :type id: str
@@ -341,7 +341,7 @@ class ListRecordSetsByZoneRequest:
     def sort_key(self):
         r"""Gets the sort_key of this ListRecordSetsByZoneRequest.
 
-        查询结果中Record Set列表的排序字段。  取值范围为：  name：记录集名称 type：记录集类型 默认值为空，表示不排序。
+        查询结果中记录集列表的排序字段。  取值范围为：  name：记录集名称 type：记录集类型 默认值为空，表示不排序。
 
         :return: The sort_key of this ListRecordSetsByZoneRequest.
         :rtype: str
@@ -352,7 +352,7 @@ class ListRecordSetsByZoneRequest:
     def sort_key(self, sort_key):
         r"""Sets the sort_key of this ListRecordSetsByZoneRequest.
 
-        查询结果中Record Set列表的排序字段。  取值范围为：  name：记录集名称 type：记录集类型 默认值为空，表示不排序。
+        查询结果中记录集列表的排序字段。  取值范围为：  name：记录集名称 type：记录集类型 默认值为空，表示不排序。
 
         :param sort_key: The sort_key of this ListRecordSetsByZoneRequest.
         :type sort_key: str
@@ -363,7 +363,7 @@ class ListRecordSetsByZoneRequest:
     def sort_dir(self):
         r"""Gets the sort_dir of this ListRecordSetsByZoneRequest.
 
-        查询结果中Record Set列表的排序方式。  取值范围：  desc：降序排序 asc：升序排序 默认值为空，表示不排序。
+        查询结果中记录集列表的排序方式。  取值范围：  desc：降序排序 asc：升序排序 默认值为空，表示不排序。
 
         :return: The sort_dir of this ListRecordSetsByZoneRequest.
         :rtype: str
@@ -374,7 +374,7 @@ class ListRecordSetsByZoneRequest:
     def sort_dir(self, sort_dir):
         r"""Sets the sort_dir of this ListRecordSetsByZoneRequest.
 
-        查询结果中Record Set列表的排序方式。  取值范围：  desc：降序排序 asc：升序排序 默认值为空，表示不排序。
+        查询结果中记录集列表的排序方式。  取值范围：  desc：降序排序 asc：升序排序 默认值为空，表示不排序。
 
         :param sort_dir: The sort_dir of this ListRecordSetsByZoneRequest.
         :type sort_dir: str

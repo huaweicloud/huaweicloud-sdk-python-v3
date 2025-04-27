@@ -38,7 +38,7 @@ class ListPrivateZonesResponse(SdkResponse):
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`
         :param metadata: 
         :type metadata: :class:`huaweicloudsdkdns.v2.Metadata`
-        :param zones: zone列表信息。
+        :param zones: 域名列表信息。
         :type zones: list[:class:`huaweicloudsdkdns.v2.PrivateZoneResp`]
         """
         
@@ -96,7 +96,7 @@ class ListPrivateZonesResponse(SdkResponse):
     def zones(self):
         r"""Gets the zones of this ListPrivateZonesResponse.
 
-        zone列表信息。
+        域名列表信息。
 
         :return: The zones of this ListPrivateZonesResponse.
         :rtype: list[:class:`huaweicloudsdkdns.v2.PrivateZoneResp`]
@@ -107,7 +107,7 @@ class ListPrivateZonesResponse(SdkResponse):
     def zones(self, zones):
         r"""Sets the zones of this ListPrivateZonesResponse.
 
-        zone列表信息。
+        域名列表信息。
 
         :param zones: The zones of this ListPrivateZonesResponse.
         :type zones: list[:class:`huaweicloudsdkdns.v2.PrivateZoneResp`]

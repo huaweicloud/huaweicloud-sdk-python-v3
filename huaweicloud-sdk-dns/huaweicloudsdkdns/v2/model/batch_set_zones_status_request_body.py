@@ -31,9 +31,9 @@ class BatchSetZonesStatusRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param status: 待设置Zone状态，当前仅支持DISABLE或ENABLE。
+        :param status: 待设置域名状态，支持DISABLE或ENABLE。
         :type status: str
-        :param zone_ids: 待设置Zone ID列表。 最多支持50个。
+        :param zone_ids: 待设置域名ID列表。 最多支持50个。
         :type zone_ids: list[str]
         """
         
@@ -50,7 +50,7 @@ class BatchSetZonesStatusRequestBody:
     def status(self):
         r"""Gets the status of this BatchSetZonesStatusRequestBody.
 
-        待设置Zone状态，当前仅支持DISABLE或ENABLE。
+        待设置域名状态，支持DISABLE或ENABLE。
 
         :return: The status of this BatchSetZonesStatusRequestBody.
         :rtype: str
@@ -61,7 +61,7 @@ class BatchSetZonesStatusRequestBody:
     def status(self, status):
         r"""Sets the status of this BatchSetZonesStatusRequestBody.
 
-        待设置Zone状态，当前仅支持DISABLE或ENABLE。
+        待设置域名状态，支持DISABLE或ENABLE。
 
         :param status: The status of this BatchSetZonesStatusRequestBody.
         :type status: str
@@ -72,7 +72,7 @@ class BatchSetZonesStatusRequestBody:
     def zone_ids(self):
         r"""Gets the zone_ids of this BatchSetZonesStatusRequestBody.
 
-        待设置Zone ID列表。 最多支持50个。
+        待设置域名ID列表。 最多支持50个。
 
         :return: The zone_ids of this BatchSetZonesStatusRequestBody.
         :rtype: list[str]
@@ -83,7 +83,7 @@ class BatchSetZonesStatusRequestBody:
     def zone_ids(self, zone_ids):
         r"""Sets the zone_ids of this BatchSetZonesStatusRequestBody.
 
-        待设置Zone ID列表。 最多支持50个。
+        待设置域名ID列表。 最多支持50个。
 
         :param zone_ids: The zone_ids of this BatchSetZonesStatusRequestBody.
         :type zone_ids: list[str]

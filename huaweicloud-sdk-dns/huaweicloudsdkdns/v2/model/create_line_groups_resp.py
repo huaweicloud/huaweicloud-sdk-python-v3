@@ -49,7 +49,7 @@ class CreateLineGroupsResp:
         :type status: str
         :param description: 线路分组的描述信息
         :type description: str
-        :param line_id: 线路分组的id。
+        :param line_id: 线路分组的ID。
         :type line_id: str
         :param created_at: 创建时间。 格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSS。
         :type created_at: str
@@ -175,7 +175,7 @@ class CreateLineGroupsResp:
     def line_id(self):
         r"""Gets the line_id of this CreateLineGroupsResp.
 
-        线路分组的id。
+        线路分组的ID。
 
         :return: The line_id of this CreateLineGroupsResp.
         :rtype: str
@@ -186,7 +186,7 @@ class CreateLineGroupsResp:
     def line_id(self, line_id):
         r"""Sets the line_id of this CreateLineGroupsResp.
 
-        线路分组的id。
+        线路分组的ID。
 
         :param line_id: The line_id of this CreateLineGroupsResp.
         :type line_id: str

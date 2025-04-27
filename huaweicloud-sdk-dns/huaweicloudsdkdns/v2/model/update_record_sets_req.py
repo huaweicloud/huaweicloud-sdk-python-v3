@@ -43,7 +43,7 @@ class UpdateRecordSetsReq:
         :type name: str
         :param description: 可选配置，对域名的描述。  长度不超过255个字符。  如果为空，表示维持原值。  默认值为空。
         :type description: str
-        :param type: Record Set的类型。  取值范围：A、AAAA、MX、CNAME、TXT、NS、SRV、CAA。
+        :param type: 记录集的类型。  取值范围：A、AAAA、MX、CNAME、TXT、NS、SRV、CAA。
         :type type: str
         :param ttl: 解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。
         :type ttl: int
@@ -122,7 +122,7 @@ class UpdateRecordSetsReq:
     def type(self):
         r"""Gets the type of this UpdateRecordSetsReq.
 
-        Record Set的类型。  取值范围：A、AAAA、MX、CNAME、TXT、NS、SRV、CAA。
+        记录集的类型。  取值范围：A、AAAA、MX、CNAME、TXT、NS、SRV、CAA。
 
         :return: The type of this UpdateRecordSetsReq.
         :rtype: str
@@ -133,7 +133,7 @@ class UpdateRecordSetsReq:
     def type(self, type):
         r"""Sets the type of this UpdateRecordSetsReq.
 
-        Record Set的类型。  取值范围：A、AAAA、MX、CNAME、TXT、NS、SRV、CAA。
+        记录集的类型。  取值范围：A、AAAA、MX、CNAME、TXT、NS、SRV、CAA。
 
         :param type: The type of this UpdateRecordSetsReq.
         :type type: str

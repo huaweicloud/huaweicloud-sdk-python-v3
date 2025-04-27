@@ -33,6 +33,7 @@ class QueryRecordSetWithLineAndTagsResp:
         'links': 'PageLink',
         'tags': 'list[Tag]',
         'line': 'str',
+        'line_name': 'str',
         'weight': 'int',
         'health_check_id': 'str',
         'alias_target': 'AliasTarget'
@@ -55,25 +56,26 @@ class QueryRecordSetWithLineAndTagsResp:
         'links': 'links',
         'tags': 'tags',
         'line': 'line',
+        'line_name': 'line_name',
         'weight': 'weight',
         'health_check_id': 'health_check_id',
         'alias_target': 'alias_target'
     }
 
-    def __init__(self, id=None, name=None, description=None, zone_id=None, zone_name=None, type=None, ttl=None, records=None, created_at=None, updated_at=None, status=None, default=None, project_id=None, links=None, tags=None, line=None, weight=None, health_check_id=None, alias_target=None):
+    def __init__(self, id=None, name=None, description=None, zone_id=None, zone_name=None, type=None, ttl=None, records=None, created_at=None, updated_at=None, status=None, default=None, project_id=None, links=None, tags=None, line=None, line_name=None, weight=None, health_check_id=None, alias_target=None):
         r"""QueryRecordSetWithLineAndTagsResp
 
         The model defined in huaweicloud sdk
 
-        :param id: Record Set的ID。
+        :param id: 记录集的ID。
         :type id: str
-        :param name: Record Set的名称。
+        :param name: 记录集的名称。
         :type name: str
-        :param description: Record Set的描述信息。
+        :param description: 记录集的描述信息。
         :type description: str
-        :param zone_id: 托管该记录的zone_id。
+        :param zone_id: 托管该记录的域名ID。
         :type zone_id: str
-        :param zone_name: 托管该记录的zone_name。
+        :param zone_name: 托管该记录的域名。
         :type zone_name: str
         :param type: 记录类型。
         :type type: str
@@ -81,15 +83,15 @@ class QueryRecordSetWithLineAndTagsResp:
         :type ttl: int
         :param records: 域名解析后的值。
         :type records: list[str]
-        :param created_at: 创建时间。
+        :param created_at: 创建时间。 格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSS。
         :type created_at: str
-        :param updated_at: 更新时间。
+        :param updated_at: 更新时间。 格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSS。
         :type updated_at: str
         :param status: 资源状态。
         :type status: str
-        :param default: 标识是否由系统默认生成，系统默认生成的Record Set不能删除。
+        :param default: 标识是否由系统默认生成，系统默认生成的记录集不能删除。
         :type default: bool
-        :param project_id: 该Record Set所属的项目ID。
+        :param project_id: 该记录集所属的项目ID。
         :type project_id: str
         :param links: 
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`
@@ -97,6 +99,8 @@ class QueryRecordSetWithLineAndTagsResp:
         :type tags: list[:class:`huaweicloudsdkdns.v2.Tag`]
         :param line: 解析线路ID。
         :type line: str
+        :param line_name: 解析线路名称。
+        :type line_name: str
         :param weight: 解析记录的权重。
         :type weight: int
         :param health_check_id: 健康检查ID。
@@ -123,6 +127,7 @@ class QueryRecordSetWithLineAndTagsResp:
         self._links = None
         self._tags = None
         self._line = None
+        self._line_name = None
         self._weight = None
         self._health_check_id = None
         self._alias_target = None
@@ -160,6 +165,8 @@ class QueryRecordSetWithLineAndTagsResp:
             self.tags = tags
         if line is not None:
             self.line = line
+        if line_name is not None:
+            self.line_name = line_name
         if weight is not None:
             self.weight = weight
         if health_check_id is not None:
@@ -171,7 +178,7 @@ class QueryRecordSetWithLineAndTagsResp:
     def id(self):
         r"""Gets the id of this QueryRecordSetWithLineAndTagsResp.
 
-        Record Set的ID。
+        记录集的ID。
 
         :return: The id of this QueryRecordSetWithLineAndTagsResp.
         :rtype: str
@@ -182,7 +189,7 @@ class QueryRecordSetWithLineAndTagsResp:
     def id(self, id):
         r"""Sets the id of this QueryRecordSetWithLineAndTagsResp.
 
-        Record Set的ID。
+        记录集的ID。
 
         :param id: The id of this QueryRecordSetWithLineAndTagsResp.
         :type id: str
@@ -193,7 +200,7 @@ class QueryRecordSetWithLineAndTagsResp:
     def name(self):
         r"""Gets the name of this QueryRecordSetWithLineAndTagsResp.
 
-        Record Set的名称。
+        记录集的名称。
 
         :return: The name of this QueryRecordSetWithLineAndTagsResp.
         :rtype: str
@@ -204,7 +211,7 @@ class QueryRecordSetWithLineAndTagsResp:
     def name(self, name):
         r"""Sets the name of this QueryRecordSetWithLineAndTagsResp.
 
-        Record Set的名称。
+        记录集的名称。
 
         :param name: The name of this QueryRecordSetWithLineAndTagsResp.
         :type name: str
@@ -215,7 +222,7 @@ class QueryRecordSetWithLineAndTagsResp:
     def description(self):
         r"""Gets the description of this QueryRecordSetWithLineAndTagsResp.
 
-        Record Set的描述信息。
+        记录集的描述信息。
 
         :return: The description of this QueryRecordSetWithLineAndTagsResp.
         :rtype: str
@@ -226,7 +233,7 @@ class QueryRecordSetWithLineAndTagsResp:
     def description(self, description):
         r"""Sets the description of this QueryRecordSetWithLineAndTagsResp.
 
-        Record Set的描述信息。
+        记录集的描述信息。
 
         :param description: The description of this QueryRecordSetWithLineAndTagsResp.
         :type description: str
@@ -237,7 +244,7 @@ class QueryRecordSetWithLineAndTagsResp:
     def zone_id(self):
         r"""Gets the zone_id of this QueryRecordSetWithLineAndTagsResp.
 
-        托管该记录的zone_id。
+        托管该记录的域名ID。
 
         :return: The zone_id of this QueryRecordSetWithLineAndTagsResp.
         :rtype: str
@@ -248,7 +255,7 @@ class QueryRecordSetWithLineAndTagsResp:
     def zone_id(self, zone_id):
         r"""Sets the zone_id of this QueryRecordSetWithLineAndTagsResp.
 
-        托管该记录的zone_id。
+        托管该记录的域名ID。
 
         :param zone_id: The zone_id of this QueryRecordSetWithLineAndTagsResp.
         :type zone_id: str
@@ -259,7 +266,7 @@ class QueryRecordSetWithLineAndTagsResp:
     def zone_name(self):
         r"""Gets the zone_name of this QueryRecordSetWithLineAndTagsResp.
 
-        托管该记录的zone_name。
+        托管该记录的域名。
 
         :return: The zone_name of this QueryRecordSetWithLineAndTagsResp.
         :rtype: str
@@ -270,7 +277,7 @@ class QueryRecordSetWithLineAndTagsResp:
     def zone_name(self, zone_name):
         r"""Sets the zone_name of this QueryRecordSetWithLineAndTagsResp.
 
-        托管该记录的zone_name。
+        托管该记录的域名。
 
         :param zone_name: The zone_name of this QueryRecordSetWithLineAndTagsResp.
         :type zone_name: str
@@ -347,7 +354,7 @@ class QueryRecordSetWithLineAndTagsResp:
     def created_at(self):
         r"""Gets the created_at of this QueryRecordSetWithLineAndTagsResp.
 
-        创建时间。
+        创建时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。
 
         :return: The created_at of this QueryRecordSetWithLineAndTagsResp.
         :rtype: str
@@ -358,7 +365,7 @@ class QueryRecordSetWithLineAndTagsResp:
     def created_at(self, created_at):
         r"""Sets the created_at of this QueryRecordSetWithLineAndTagsResp.
 
-        创建时间。
+        创建时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。
 
         :param created_at: The created_at of this QueryRecordSetWithLineAndTagsResp.
         :type created_at: str
@@ -369,7 +376,7 @@ class QueryRecordSetWithLineAndTagsResp:
     def updated_at(self):
         r"""Gets the updated_at of this QueryRecordSetWithLineAndTagsResp.
 
-        更新时间。
+        更新时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。
 
         :return: The updated_at of this QueryRecordSetWithLineAndTagsResp.
         :rtype: str
@@ -380,7 +387,7 @@ class QueryRecordSetWithLineAndTagsResp:
     def updated_at(self, updated_at):
         r"""Sets the updated_at of this QueryRecordSetWithLineAndTagsResp.
 
-        更新时间。
+        更新时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。
 
         :param updated_at: The updated_at of this QueryRecordSetWithLineAndTagsResp.
         :type updated_at: str
@@ -413,7 +420,7 @@ class QueryRecordSetWithLineAndTagsResp:
     def default(self):
         r"""Gets the default of this QueryRecordSetWithLineAndTagsResp.
 
-        标识是否由系统默认生成，系统默认生成的Record Set不能删除。
+        标识是否由系统默认生成，系统默认生成的记录集不能删除。
 
         :return: The default of this QueryRecordSetWithLineAndTagsResp.
         :rtype: bool
@@ -424,7 +431,7 @@ class QueryRecordSetWithLineAndTagsResp:
     def default(self, default):
         r"""Sets the default of this QueryRecordSetWithLineAndTagsResp.
 
-        标识是否由系统默认生成，系统默认生成的Record Set不能删除。
+        标识是否由系统默认生成，系统默认生成的记录集不能删除。
 
         :param default: The default of this QueryRecordSetWithLineAndTagsResp.
         :type default: bool
@@ -435,7 +442,7 @@ class QueryRecordSetWithLineAndTagsResp:
     def project_id(self):
         r"""Gets the project_id of this QueryRecordSetWithLineAndTagsResp.
 
-        该Record Set所属的项目ID。
+        该记录集所属的项目ID。
 
         :return: The project_id of this QueryRecordSetWithLineAndTagsResp.
         :rtype: str
@@ -446,7 +453,7 @@ class QueryRecordSetWithLineAndTagsResp:
     def project_id(self, project_id):
         r"""Sets the project_id of this QueryRecordSetWithLineAndTagsResp.
 
-        该Record Set所属的项目ID。
+        该记录集所属的项目ID。
 
         :param project_id: The project_id of this QueryRecordSetWithLineAndTagsResp.
         :type project_id: str
@@ -514,6 +521,28 @@ class QueryRecordSetWithLineAndTagsResp:
         :type line: str
         """
         self._line = line
+
+    @property
+    def line_name(self):
+        r"""Gets the line_name of this QueryRecordSetWithLineAndTagsResp.
+
+        解析线路名称。
+
+        :return: The line_name of this QueryRecordSetWithLineAndTagsResp.
+        :rtype: str
+        """
+        return self._line_name
+
+    @line_name.setter
+    def line_name(self, line_name):
+        r"""Sets the line_name of this QueryRecordSetWithLineAndTagsResp.
+
+        解析线路名称。
+
+        :param line_name: The line_name of this QueryRecordSetWithLineAndTagsResp.
+        :type line_name: str
+        """
+        self._line_name = line_name
 
     @property
     def weight(self):

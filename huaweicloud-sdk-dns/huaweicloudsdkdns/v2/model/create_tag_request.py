@@ -35,7 +35,7 @@ class CreateTagRequest:
 
         :param resource_type: 资源的类型：DNS-public_zone，DNS-private_zone，DNS-public_recordset，DNS-private_recordset，DNS-ptr_record。
         :type resource_type: str
-        :param resource_id: 资源id。  
+        :param resource_id: 资源ID。
         :type resource_id: str
         :param body: Body of the CreateTagRequest
         :type body: :class:`huaweicloudsdkdns.v2.CreateTagReq`
@@ -79,7 +79,7 @@ class CreateTagRequest:
     def resource_id(self):
         r"""Gets the resource_id of this CreateTagRequest.
 
-        资源id。  
+        资源ID。
 
         :return: The resource_id of this CreateTagRequest.
         :rtype: str
@@ -90,7 +90,7 @@ class CreateTagRequest:
     def resource_id(self, resource_id):
         r"""Sets the resource_id of this CreateTagRequest.
 
-        资源id。  
+        资源ID。
 
         :param resource_id: The resource_id of this CreateTagRequest.
         :type resource_id: str

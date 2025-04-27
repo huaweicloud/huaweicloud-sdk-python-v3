@@ -44,13 +44,13 @@ class UpdatePtrRecordResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param id: PTR记录的ID，格式形如{region}:{floatingip_id}。
+        :param id: 反向解析记录的ID，格式形如{region}:{floatingip_id}。
         :type id: str
-        :param ptrdname: PTR记录对应的域名。
+        :param ptrdname: 反向解析记录对应的域名。
         :type ptrdname: str
-        :param description: 对PTR记录的描述。
+        :param description: 对反向解析记录的描述。
         :type description: str
-        :param ttl: PTR记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。
+        :param ttl: 反向解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。
         :type ttl: int
         :param address: 弹性公网IP的IP地址。
         :type address: str
@@ -95,7 +95,7 @@ class UpdatePtrRecordResponse(SdkResponse):
     def id(self):
         r"""Gets the id of this UpdatePtrRecordResponse.
 
-        PTR记录的ID，格式形如{region}:{floatingip_id}。
+        反向解析记录的ID，格式形如{region}:{floatingip_id}。
 
         :return: The id of this UpdatePtrRecordResponse.
         :rtype: str
@@ -106,7 +106,7 @@ class UpdatePtrRecordResponse(SdkResponse):
     def id(self, id):
         r"""Sets the id of this UpdatePtrRecordResponse.
 
-        PTR记录的ID，格式形如{region}:{floatingip_id}。
+        反向解析记录的ID，格式形如{region}:{floatingip_id}。
 
         :param id: The id of this UpdatePtrRecordResponse.
         :type id: str
@@ -117,7 +117,7 @@ class UpdatePtrRecordResponse(SdkResponse):
     def ptrdname(self):
         r"""Gets the ptrdname of this UpdatePtrRecordResponse.
 
-        PTR记录对应的域名。
+        反向解析记录对应的域名。
 
         :return: The ptrdname of this UpdatePtrRecordResponse.
         :rtype: str
@@ -128,7 +128,7 @@ class UpdatePtrRecordResponse(SdkResponse):
     def ptrdname(self, ptrdname):
         r"""Sets the ptrdname of this UpdatePtrRecordResponse.
 
-        PTR记录对应的域名。
+        反向解析记录对应的域名。
 
         :param ptrdname: The ptrdname of this UpdatePtrRecordResponse.
         :type ptrdname: str
@@ -139,7 +139,7 @@ class UpdatePtrRecordResponse(SdkResponse):
     def description(self):
         r"""Gets the description of this UpdatePtrRecordResponse.
 
-        对PTR记录的描述。
+        对反向解析记录的描述。
 
         :return: The description of this UpdatePtrRecordResponse.
         :rtype: str
@@ -150,7 +150,7 @@ class UpdatePtrRecordResponse(SdkResponse):
     def description(self, description):
         r"""Sets the description of this UpdatePtrRecordResponse.
 
-        对PTR记录的描述。
+        对反向解析记录的描述。
 
         :param description: The description of this UpdatePtrRecordResponse.
         :type description: str
@@ -161,7 +161,7 @@ class UpdatePtrRecordResponse(SdkResponse):
     def ttl(self):
         r"""Gets the ttl of this UpdatePtrRecordResponse.
 
-        PTR记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。
+        反向解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。
 
         :return: The ttl of this UpdatePtrRecordResponse.
         :rtype: int
@@ -172,7 +172,7 @@ class UpdatePtrRecordResponse(SdkResponse):
     def ttl(self, ttl):
         r"""Sets the ttl of this UpdatePtrRecordResponse.
 
-        PTR记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。
+        反向解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。
 
         :param ttl: The ttl of this UpdatePtrRecordResponse.
         :type ttl: int

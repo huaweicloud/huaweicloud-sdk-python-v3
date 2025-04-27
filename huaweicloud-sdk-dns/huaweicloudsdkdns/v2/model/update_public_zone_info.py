@@ -35,7 +35,7 @@ class UpdatePublicZoneInfo:
 
         :param description: 域名的描述信息。长度不超过255个字符。
         :type description: str
-        :param email: 管理该zone的管理员邮箱，用于生成该Zone的SOA记录。  如果为空，表示维持原值。  默认值为空。
+        :param email: 管理该域名的管理员邮箱，用于生成该域名的SOA记录。  如果为空，表示维持原值。  默认值为空。
         :type email: str
         :param ttl: 用于填写默认生成的SOA记录中有效缓存时间，以秒为单位。
         :type ttl: int
@@ -81,7 +81,7 @@ class UpdatePublicZoneInfo:
     def email(self):
         r"""Gets the email of this UpdatePublicZoneInfo.
 
-        管理该zone的管理员邮箱，用于生成该Zone的SOA记录。  如果为空，表示维持原值。  默认值为空。
+        管理该域名的管理员邮箱，用于生成该域名的SOA记录。  如果为空，表示维持原值。  默认值为空。
 
         :return: The email of this UpdatePublicZoneInfo.
         :rtype: str
@@ -92,7 +92,7 @@ class UpdatePublicZoneInfo:
     def email(self, email):
         r"""Sets the email of this UpdatePublicZoneInfo.
 
-        管理该zone的管理员邮箱，用于生成该Zone的SOA记录。  如果为空，表示维持原值。  默认值为空。
+        管理该域名的管理员邮箱，用于生成该域名的SOA记录。  如果为空，表示维持原值。  默认值为空。
 
         :param email: The email of this UpdatePublicZoneInfo.
         :type email: str

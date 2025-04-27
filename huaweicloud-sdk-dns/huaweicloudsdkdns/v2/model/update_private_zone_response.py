@@ -60,37 +60,37 @@ class UpdatePrivateZoneResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param id: zone的ID，uuid形式的一个资源标识。
+        :param id: 域名的ID，UUID形式的一个资源标识。
         :type id: str
-        :param name: zone名称。
+        :param name: 域名。
         :type name: str
-        :param description: 对zone的描述信息。
+        :param description: 对域名的描述信息。
         :type description: str
-        :param email: 管理该zone的管理员邮箱，用于生成该Zone的SOA记录。
+        :param email: 管理该域名的管理员邮箱，用于生成该域名的SOA记录。
         :type email: str
-        :param zone_type: zone类型，内网（private）。
+        :param zone_type: 域名类型，内网（private）。
         :type zone_type: str
-        :param ttl: 该zone下SOA记录中的ttl值。
+        :param ttl: 该域名下SOA记录中的ttl值。
         :type ttl: int
-        :param serial: 该zone下SOA记录中用于标识zone文件变更的序列值，用于主从节点同步。
+        :param serial: 该域名下SOA记录中用于标识域名文件变更的序列值，用于主从节点同步。
         :type serial: int
         :param status: 资源状态。
         :type status: str
-        :param record_num: 该zone下的recordset个数。
+        :param record_num: 该域名下的记录集个数。
         :type record_num: int
-        :param pool_id: 托管该zone的pool，由系统分配。
+        :param pool_id: 托管该域名的pool，由系统分配。
         :type pool_id: str
-        :param project_id: zone所属的项目ID。
+        :param project_id: 域名所属的项目ID。
         :type project_id: str
-        :param created_at: 创建时间。
+        :param created_at: 创建时间。 格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSS。
         :type created_at: str
-        :param updated_at: 更新时间。
+        :param updated_at: 更新时间。 格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSS。
         :type updated_at: str
         :param links: 
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`
         :param masters: 主从模式中，从DNS服务器获取DNS信息。
         :type masters: list[str]
-        :param routers: 与该zone关联的Router(VPC)列表。
+        :param routers: 与该域名关联的Router(VPC)列表。
         :type routers: list[:class:`huaweicloudsdkdns.v2.RouterWithStatus`]
         """
         
@@ -151,7 +151,7 @@ class UpdatePrivateZoneResponse(SdkResponse):
     def id(self):
         r"""Gets the id of this UpdatePrivateZoneResponse.
 
-        zone的ID，uuid形式的一个资源标识。
+        域名的ID，UUID形式的一个资源标识。
 
         :return: The id of this UpdatePrivateZoneResponse.
         :rtype: str
@@ -162,7 +162,7 @@ class UpdatePrivateZoneResponse(SdkResponse):
     def id(self, id):
         r"""Sets the id of this UpdatePrivateZoneResponse.
 
-        zone的ID，uuid形式的一个资源标识。
+        域名的ID，UUID形式的一个资源标识。
 
         :param id: The id of this UpdatePrivateZoneResponse.
         :type id: str
@@ -173,7 +173,7 @@ class UpdatePrivateZoneResponse(SdkResponse):
     def name(self):
         r"""Gets the name of this UpdatePrivateZoneResponse.
 
-        zone名称。
+        域名。
 
         :return: The name of this UpdatePrivateZoneResponse.
         :rtype: str
@@ -184,7 +184,7 @@ class UpdatePrivateZoneResponse(SdkResponse):
     def name(self, name):
         r"""Sets the name of this UpdatePrivateZoneResponse.
 
-        zone名称。
+        域名。
 
         :param name: The name of this UpdatePrivateZoneResponse.
         :type name: str
@@ -195,7 +195,7 @@ class UpdatePrivateZoneResponse(SdkResponse):
     def description(self):
         r"""Gets the description of this UpdatePrivateZoneResponse.
 
-        对zone的描述信息。
+        对域名的描述信息。
 
         :return: The description of this UpdatePrivateZoneResponse.
         :rtype: str
@@ -206,7 +206,7 @@ class UpdatePrivateZoneResponse(SdkResponse):
     def description(self, description):
         r"""Sets the description of this UpdatePrivateZoneResponse.
 
-        对zone的描述信息。
+        对域名的描述信息。
 
         :param description: The description of this UpdatePrivateZoneResponse.
         :type description: str
@@ -217,7 +217,7 @@ class UpdatePrivateZoneResponse(SdkResponse):
     def email(self):
         r"""Gets the email of this UpdatePrivateZoneResponse.
 
-        管理该zone的管理员邮箱，用于生成该Zone的SOA记录。
+        管理该域名的管理员邮箱，用于生成该域名的SOA记录。
 
         :return: The email of this UpdatePrivateZoneResponse.
         :rtype: str
@@ -228,7 +228,7 @@ class UpdatePrivateZoneResponse(SdkResponse):
     def email(self, email):
         r"""Sets the email of this UpdatePrivateZoneResponse.
 
-        管理该zone的管理员邮箱，用于生成该Zone的SOA记录。
+        管理该域名的管理员邮箱，用于生成该域名的SOA记录。
 
         :param email: The email of this UpdatePrivateZoneResponse.
         :type email: str
@@ -239,7 +239,7 @@ class UpdatePrivateZoneResponse(SdkResponse):
     def zone_type(self):
         r"""Gets the zone_type of this UpdatePrivateZoneResponse.
 
-        zone类型，内网（private）。
+        域名类型，内网（private）。
 
         :return: The zone_type of this UpdatePrivateZoneResponse.
         :rtype: str
@@ -250,7 +250,7 @@ class UpdatePrivateZoneResponse(SdkResponse):
     def zone_type(self, zone_type):
         r"""Sets the zone_type of this UpdatePrivateZoneResponse.
 
-        zone类型，内网（private）。
+        域名类型，内网（private）。
 
         :param zone_type: The zone_type of this UpdatePrivateZoneResponse.
         :type zone_type: str
@@ -261,7 +261,7 @@ class UpdatePrivateZoneResponse(SdkResponse):
     def ttl(self):
         r"""Gets the ttl of this UpdatePrivateZoneResponse.
 
-        该zone下SOA记录中的ttl值。
+        该域名下SOA记录中的ttl值。
 
         :return: The ttl of this UpdatePrivateZoneResponse.
         :rtype: int
@@ -272,7 +272,7 @@ class UpdatePrivateZoneResponse(SdkResponse):
     def ttl(self, ttl):
         r"""Sets the ttl of this UpdatePrivateZoneResponse.
 
-        该zone下SOA记录中的ttl值。
+        该域名下SOA记录中的ttl值。
 
         :param ttl: The ttl of this UpdatePrivateZoneResponse.
         :type ttl: int
@@ -283,7 +283,7 @@ class UpdatePrivateZoneResponse(SdkResponse):
     def serial(self):
         r"""Gets the serial of this UpdatePrivateZoneResponse.
 
-        该zone下SOA记录中用于标识zone文件变更的序列值，用于主从节点同步。
+        该域名下SOA记录中用于标识域名文件变更的序列值，用于主从节点同步。
 
         :return: The serial of this UpdatePrivateZoneResponse.
         :rtype: int
@@ -294,7 +294,7 @@ class UpdatePrivateZoneResponse(SdkResponse):
     def serial(self, serial):
         r"""Sets the serial of this UpdatePrivateZoneResponse.
 
-        该zone下SOA记录中用于标识zone文件变更的序列值，用于主从节点同步。
+        该域名下SOA记录中用于标识域名文件变更的序列值，用于主从节点同步。
 
         :param serial: The serial of this UpdatePrivateZoneResponse.
         :type serial: int
@@ -327,7 +327,7 @@ class UpdatePrivateZoneResponse(SdkResponse):
     def record_num(self):
         r"""Gets the record_num of this UpdatePrivateZoneResponse.
 
-        该zone下的recordset个数。
+        该域名下的记录集个数。
 
         :return: The record_num of this UpdatePrivateZoneResponse.
         :rtype: int
@@ -338,7 +338,7 @@ class UpdatePrivateZoneResponse(SdkResponse):
     def record_num(self, record_num):
         r"""Sets the record_num of this UpdatePrivateZoneResponse.
 
-        该zone下的recordset个数。
+        该域名下的记录集个数。
 
         :param record_num: The record_num of this UpdatePrivateZoneResponse.
         :type record_num: int
@@ -349,7 +349,7 @@ class UpdatePrivateZoneResponse(SdkResponse):
     def pool_id(self):
         r"""Gets the pool_id of this UpdatePrivateZoneResponse.
 
-        托管该zone的pool，由系统分配。
+        托管该域名的pool，由系统分配。
 
         :return: The pool_id of this UpdatePrivateZoneResponse.
         :rtype: str
@@ -360,7 +360,7 @@ class UpdatePrivateZoneResponse(SdkResponse):
     def pool_id(self, pool_id):
         r"""Sets the pool_id of this UpdatePrivateZoneResponse.
 
-        托管该zone的pool，由系统分配。
+        托管该域名的pool，由系统分配。
 
         :param pool_id: The pool_id of this UpdatePrivateZoneResponse.
         :type pool_id: str
@@ -371,7 +371,7 @@ class UpdatePrivateZoneResponse(SdkResponse):
     def project_id(self):
         r"""Gets the project_id of this UpdatePrivateZoneResponse.
 
-        zone所属的项目ID。
+        域名所属的项目ID。
 
         :return: The project_id of this UpdatePrivateZoneResponse.
         :rtype: str
@@ -382,7 +382,7 @@ class UpdatePrivateZoneResponse(SdkResponse):
     def project_id(self, project_id):
         r"""Sets the project_id of this UpdatePrivateZoneResponse.
 
-        zone所属的项目ID。
+        域名所属的项目ID。
 
         :param project_id: The project_id of this UpdatePrivateZoneResponse.
         :type project_id: str
@@ -393,7 +393,7 @@ class UpdatePrivateZoneResponse(SdkResponse):
     def created_at(self):
         r"""Gets the created_at of this UpdatePrivateZoneResponse.
 
-        创建时间。
+        创建时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。
 
         :return: The created_at of this UpdatePrivateZoneResponse.
         :rtype: str
@@ -404,7 +404,7 @@ class UpdatePrivateZoneResponse(SdkResponse):
     def created_at(self, created_at):
         r"""Sets the created_at of this UpdatePrivateZoneResponse.
 
-        创建时间。
+        创建时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。
 
         :param created_at: The created_at of this UpdatePrivateZoneResponse.
         :type created_at: str
@@ -415,7 +415,7 @@ class UpdatePrivateZoneResponse(SdkResponse):
     def updated_at(self):
         r"""Gets the updated_at of this UpdatePrivateZoneResponse.
 
-        更新时间。
+        更新时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。
 
         :return: The updated_at of this UpdatePrivateZoneResponse.
         :rtype: str
@@ -426,7 +426,7 @@ class UpdatePrivateZoneResponse(SdkResponse):
     def updated_at(self, updated_at):
         r"""Sets the updated_at of this UpdatePrivateZoneResponse.
 
-        更新时间。
+        更新时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。
 
         :param updated_at: The updated_at of this UpdatePrivateZoneResponse.
         :type updated_at: str
@@ -477,7 +477,7 @@ class UpdatePrivateZoneResponse(SdkResponse):
     def routers(self):
         r"""Gets the routers of this UpdatePrivateZoneResponse.
 
-        与该zone关联的Router(VPC)列表。
+        与该域名关联的Router(VPC)列表。
 
         :return: The routers of this UpdatePrivateZoneResponse.
         :rtype: list[:class:`huaweicloudsdkdns.v2.RouterWithStatus`]
@@ -488,7 +488,7 @@ class UpdatePrivateZoneResponse(SdkResponse):
     def routers(self, routers):
         r"""Sets the routers of this UpdatePrivateZoneResponse.
 
-        与该zone关联的Router(VPC)列表。
+        与该域名关联的Router(VPC)列表。
 
         :param routers: The routers of this UpdatePrivateZoneResponse.
         :type routers: list[:class:`huaweicloudsdkdns.v2.RouterWithStatus`]

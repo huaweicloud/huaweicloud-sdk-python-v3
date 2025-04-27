@@ -21,16 +21,16 @@ class ZoneData:
         'name': 'str',
         'description': 'str',
         'email': 'str',
-        'ttl': 'str',
-        'serial': 'str',
-        'masters': 'str',
+        'ttl': 'int',
+        'serial': 'int',
+        'masters': 'list[str]',
         'status': 'str',
         'pool_id': 'str',
         'project_id': 'str',
         'zone_type': 'str',
         'created_at': 'str',
         'updated_at': 'str',
-        'record_num': 'str',
+        'record_num': 'int',
         'links': 'Link'
     }
 
@@ -57,34 +57,34 @@ class ZoneData:
 
         The model defined in huaweicloud sdk
 
-        :param id: zone的ID，uuid形式的一个资源标识。
+        :param id: 域名的ID，UUID形式的一个资源标识。
         :type id: str
-        :param name: zone名称。
+        :param name: 域名。
         :type name: str
-        :param description: 对zone的描述信息。
+        :param description: 对域名的描述信息。
         :type description: str
-        :param email: 管理该zone的管理员邮箱，用于生成该Zone的SOA记录。
+        :param email: 管理该域名的管理员邮箱，用于生成该域名的SOA记录。
         :type email: str
-        :param ttl: 该zone下SOA记录中的ttl值。
-        :type ttl: str
-        :param serial: 该zone下SOA记录中用于标识zone文件变更的序列值，用于主从节点同步。
-        :type serial: str
+        :param ttl: 该域名下SOA记录中的ttl值。
+        :type ttl: int
+        :param serial: 该域名下SOA记录中用于标识域名文件变更的序列值，用于主从节点同步。
+        :type serial: int
         :param masters: 主从模式中，从DNS服务器获取DNS信息。
-        :type masters: str
+        :type masters: list[str]
         :param status: 资源状态。
         :type status: str
-        :param pool_id: 托管该zone的pool，由系统分配。
+        :param pool_id: 托管该域名的pool，由系统分配。
         :type pool_id: str
-        :param project_id: zone所属的项目ID。
+        :param project_id: 域名所属的项目ID。
         :type project_id: str
-        :param zone_type: zone类型，取值 public 或 private。
+        :param zone_type: 域名类型，取值public或private。
         :type zone_type: str
-        :param created_at: 创建时间。  采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ。
+        :param created_at: 创建时间。 格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSS。
         :type created_at: str
-        :param updated_at: 更新时间。  采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ。
+        :param updated_at: 更新时间。 格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSS。
         :type updated_at: str
-        :param record_num: 该zone下的recordset个数。
-        :type record_num: str
+        :param record_num: 该域名下的记录集个数。
+        :type record_num: int
         :param links: 
         :type links: :class:`huaweicloudsdkdns.v2.Link`
         """
@@ -143,7 +143,7 @@ class ZoneData:
     def id(self):
         r"""Gets the id of this ZoneData.
 
-        zone的ID，uuid形式的一个资源标识。
+        域名的ID，UUID形式的一个资源标识。
 
         :return: The id of this ZoneData.
         :rtype: str
@@ -154,7 +154,7 @@ class ZoneData:
     def id(self, id):
         r"""Sets the id of this ZoneData.
 
-        zone的ID，uuid形式的一个资源标识。
+        域名的ID，UUID形式的一个资源标识。
 
         :param id: The id of this ZoneData.
         :type id: str
@@ -165,7 +165,7 @@ class ZoneData:
     def name(self):
         r"""Gets the name of this ZoneData.
 
-        zone名称。
+        域名。
 
         :return: The name of this ZoneData.
         :rtype: str
@@ -176,7 +176,7 @@ class ZoneData:
     def name(self, name):
         r"""Sets the name of this ZoneData.
 
-        zone名称。
+        域名。
 
         :param name: The name of this ZoneData.
         :type name: str
@@ -187,7 +187,7 @@ class ZoneData:
     def description(self):
         r"""Gets the description of this ZoneData.
 
-        对zone的描述信息。
+        对域名的描述信息。
 
         :return: The description of this ZoneData.
         :rtype: str
@@ -198,7 +198,7 @@ class ZoneData:
     def description(self, description):
         r"""Sets the description of this ZoneData.
 
-        对zone的描述信息。
+        对域名的描述信息。
 
         :param description: The description of this ZoneData.
         :type description: str
@@ -209,7 +209,7 @@ class ZoneData:
     def email(self):
         r"""Gets the email of this ZoneData.
 
-        管理该zone的管理员邮箱，用于生成该Zone的SOA记录。
+        管理该域名的管理员邮箱，用于生成该域名的SOA记录。
 
         :return: The email of this ZoneData.
         :rtype: str
@@ -220,7 +220,7 @@ class ZoneData:
     def email(self, email):
         r"""Sets the email of this ZoneData.
 
-        管理该zone的管理员邮箱，用于生成该Zone的SOA记录。
+        管理该域名的管理员邮箱，用于生成该域名的SOA记录。
 
         :param email: The email of this ZoneData.
         :type email: str
@@ -231,10 +231,10 @@ class ZoneData:
     def ttl(self):
         r"""Gets the ttl of this ZoneData.
 
-        该zone下SOA记录中的ttl值。
+        该域名下SOA记录中的ttl值。
 
         :return: The ttl of this ZoneData.
-        :rtype: str
+        :rtype: int
         """
         return self._ttl
 
@@ -242,10 +242,10 @@ class ZoneData:
     def ttl(self, ttl):
         r"""Sets the ttl of this ZoneData.
 
-        该zone下SOA记录中的ttl值。
+        该域名下SOA记录中的ttl值。
 
         :param ttl: The ttl of this ZoneData.
-        :type ttl: str
+        :type ttl: int
         """
         self._ttl = ttl
 
@@ -253,10 +253,10 @@ class ZoneData:
     def serial(self):
         r"""Gets the serial of this ZoneData.
 
-        该zone下SOA记录中用于标识zone文件变更的序列值，用于主从节点同步。
+        该域名下SOA记录中用于标识域名文件变更的序列值，用于主从节点同步。
 
         :return: The serial of this ZoneData.
-        :rtype: str
+        :rtype: int
         """
         return self._serial
 
@@ -264,10 +264,10 @@ class ZoneData:
     def serial(self, serial):
         r"""Sets the serial of this ZoneData.
 
-        该zone下SOA记录中用于标识zone文件变更的序列值，用于主从节点同步。
+        该域名下SOA记录中用于标识域名文件变更的序列值，用于主从节点同步。
 
         :param serial: The serial of this ZoneData.
-        :type serial: str
+        :type serial: int
         """
         self._serial = serial
 
@@ -278,7 +278,7 @@ class ZoneData:
         主从模式中，从DNS服务器获取DNS信息。
 
         :return: The masters of this ZoneData.
-        :rtype: str
+        :rtype: list[str]
         """
         return self._masters
 
@@ -289,7 +289,7 @@ class ZoneData:
         主从模式中，从DNS服务器获取DNS信息。
 
         :param masters: The masters of this ZoneData.
-        :type masters: str
+        :type masters: list[str]
         """
         self._masters = masters
 
@@ -319,7 +319,7 @@ class ZoneData:
     def pool_id(self):
         r"""Gets the pool_id of this ZoneData.
 
-        托管该zone的pool，由系统分配。
+        托管该域名的pool，由系统分配。
 
         :return: The pool_id of this ZoneData.
         :rtype: str
@@ -330,7 +330,7 @@ class ZoneData:
     def pool_id(self, pool_id):
         r"""Sets the pool_id of this ZoneData.
 
-        托管该zone的pool，由系统分配。
+        托管该域名的pool，由系统分配。
 
         :param pool_id: The pool_id of this ZoneData.
         :type pool_id: str
@@ -341,7 +341,7 @@ class ZoneData:
     def project_id(self):
         r"""Gets the project_id of this ZoneData.
 
-        zone所属的项目ID。
+        域名所属的项目ID。
 
         :return: The project_id of this ZoneData.
         :rtype: str
@@ -352,7 +352,7 @@ class ZoneData:
     def project_id(self, project_id):
         r"""Sets the project_id of this ZoneData.
 
-        zone所属的项目ID。
+        域名所属的项目ID。
 
         :param project_id: The project_id of this ZoneData.
         :type project_id: str
@@ -363,7 +363,7 @@ class ZoneData:
     def zone_type(self):
         r"""Gets the zone_type of this ZoneData.
 
-        zone类型，取值 public 或 private。
+        域名类型，取值public或private。
 
         :return: The zone_type of this ZoneData.
         :rtype: str
@@ -374,7 +374,7 @@ class ZoneData:
     def zone_type(self, zone_type):
         r"""Sets the zone_type of this ZoneData.
 
-        zone类型，取值 public 或 private。
+        域名类型，取值public或private。
 
         :param zone_type: The zone_type of this ZoneData.
         :type zone_type: str
@@ -385,7 +385,7 @@ class ZoneData:
     def created_at(self):
         r"""Gets the created_at of this ZoneData.
 
-        创建时间。  采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ。
+        创建时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。
 
         :return: The created_at of this ZoneData.
         :rtype: str
@@ -396,7 +396,7 @@ class ZoneData:
     def created_at(self, created_at):
         r"""Sets the created_at of this ZoneData.
 
-        创建时间。  采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ。
+        创建时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。
 
         :param created_at: The created_at of this ZoneData.
         :type created_at: str
@@ -407,7 +407,7 @@ class ZoneData:
     def updated_at(self):
         r"""Gets the updated_at of this ZoneData.
 
-        更新时间。  采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ。
+        更新时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。
 
         :return: The updated_at of this ZoneData.
         :rtype: str
@@ -418,7 +418,7 @@ class ZoneData:
     def updated_at(self, updated_at):
         r"""Sets the updated_at of this ZoneData.
 
-        更新时间。  采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ。
+        更新时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。
 
         :param updated_at: The updated_at of this ZoneData.
         :type updated_at: str
@@ -429,10 +429,10 @@ class ZoneData:
     def record_num(self):
         r"""Gets the record_num of this ZoneData.
 
-        该zone下的recordset个数。
+        该域名下的记录集个数。
 
         :return: The record_num of this ZoneData.
-        :rtype: str
+        :rtype: int
         """
         return self._record_num
 
@@ -440,10 +440,10 @@ class ZoneData:
     def record_num(self, record_num):
         r"""Sets the record_num of this ZoneData.
 
-        该zone下的recordset个数。
+        该域名下的记录集个数。
 
         :param record_num: The record_num of this ZoneData.
-        :type record_num: str
+        :type record_num: int
         """
         self._record_num = record_num
 

@@ -36,7 +36,7 @@ class ShowRecordSetByZoneResponse(SdkResponse):
 
         :param links: 
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`
-        :param recordsets: recordset列表。
+        :param recordsets: 记录集列表。
         :type recordsets: list[:class:`huaweicloudsdkdns.v2.ShowRecordSetByZoneResp`]
         :param metadata: 
         :type metadata: :class:`huaweicloudsdkdns.v2.Metadata`
@@ -78,7 +78,7 @@ class ShowRecordSetByZoneResponse(SdkResponse):
     def recordsets(self):
         r"""Gets the recordsets of this ShowRecordSetByZoneResponse.
 
-        recordset列表。
+        记录集列表。
 
         :return: The recordsets of this ShowRecordSetByZoneResponse.
         :rtype: list[:class:`huaweicloudsdkdns.v2.ShowRecordSetByZoneResp`]
@@ -89,7 +89,7 @@ class ShowRecordSetByZoneResponse(SdkResponse):
     def recordsets(self, recordsets):
         r"""Sets the recordsets of this ShowRecordSetByZoneResponse.
 
-        recordset列表。
+        记录集列表。
 
         :param recordsets: The recordsets of this ShowRecordSetByZoneResponse.
         :type recordsets: list[:class:`huaweicloudsdkdns.v2.ShowRecordSetByZoneResp`]

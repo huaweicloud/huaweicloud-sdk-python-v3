@@ -29,7 +29,7 @@ class ShowPrivateZoneNameServerRequest:
 
         The model defined in huaweicloud sdk
 
-        :param zone_id: 待查询内网zone的ID。
+        :param zone_id: 域名ID。
         :type zone_id: str
         """
         
@@ -44,7 +44,7 @@ class ShowPrivateZoneNameServerRequest:
     def zone_id(self):
         r"""Gets the zone_id of this ShowPrivateZoneNameServerRequest.
 
-        待查询内网zone的ID。
+        域名ID。
 
         :return: The zone_id of this ShowPrivateZoneNameServerRequest.
         :rtype: str
@@ -55,7 +55,7 @@ class ShowPrivateZoneNameServerRequest:
     def zone_id(self, zone_id):
         r"""Sets the zone_id of this ShowPrivateZoneNameServerRequest.
 
-        待查询内网zone的ID。
+        域名ID。
 
         :param zone_id: The zone_id of this ShowPrivateZoneNameServerRequest.
         :type zone_id: str

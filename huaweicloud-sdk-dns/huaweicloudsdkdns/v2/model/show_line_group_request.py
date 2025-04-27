@@ -29,7 +29,7 @@ class ShowLineGroupRequest:
 
         The model defined in huaweicloud sdk
 
-        :param linegroup_id: 线路分组ID
+        :param linegroup_id: 线路分组ID。
         :type linegroup_id: str
         """
         
@@ -44,7 +44,7 @@ class ShowLineGroupRequest:
     def linegroup_id(self):
         r"""Gets the linegroup_id of this ShowLineGroupRequest.
 
-        线路分组ID
+        线路分组ID。
 
         :return: The linegroup_id of this ShowLineGroupRequest.
         :rtype: str
@@ -55,7 +55,7 @@ class ShowLineGroupRequest:
     def linegroup_id(self, linegroup_id):
         r"""Sets the linegroup_id of this ShowLineGroupRequest.
 
-        线路分组ID
+        线路分组ID。
 
         :param linegroup_id: The linegroup_id of this ShowLineGroupRequest.
         :type linegroup_id: str

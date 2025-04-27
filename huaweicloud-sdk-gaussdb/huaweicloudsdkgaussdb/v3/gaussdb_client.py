@@ -4374,6 +4374,75 @@ class GaussDBClient(Client):
 
         return http_info
 
+    def modify_auto_expand_policy(self, request):
+        r"""修改存储空间自动扩容策略。
+
+        修改存储空间自动扩容策略。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ModifyAutoExpandPolicy
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ModifyAutoExpandPolicyRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ModifyAutoExpandPolicyResponse`
+        """
+        http_info = self._modify_auto_expand_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def modify_auto_expand_policy_invoker(self, request):
+        http_info = self._modify_auto_expand_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _modify_auto_expand_policy_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/storage/auto-expand-policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "ModifyAutoExpandPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def modify_backup_encrypt_status(self, request):
         r"""打开或关闭备份加密
 
@@ -5436,6 +5505,73 @@ class GaussDBClient(Client):
             "resource_path": "/v3/{project_id}/instance/{instance_id}/audit-log/switch-status",
             "request_type": request.__class__.__name__,
             "response_type": "ShowAuditLogResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_auto_expand_policy(self, request):
+        r"""查询存储空间自动扩容策略。
+
+        查询存储空间自动扩容策略。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowAutoExpandPolicy
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ShowAutoExpandPolicyRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowAutoExpandPolicyResponse`
+        """
+        http_info = self._show_auto_expand_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_auto_expand_policy_invoker(self, request):
+        http_info = self._show_auto_expand_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_auto_expand_policy_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/storage/auto-expand-policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAutoExpandPolicyResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -7391,6 +7527,81 @@ class GaussDBClient(Client):
         path_params = {}
 
         query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_restore_available_tables(self, request):
+        r"""查询表级时间点恢复可选表
+
+        查询表级时间点恢复可选表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowRestoreAvailableTables
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ShowRestoreAvailableTablesRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowRestoreAvailableTablesResponse`
+        """
+        http_info = self._show_restore_available_tables_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_restore_available_tables_invoker(self, request):
+        http_info = self._show_restore_available_tables_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_restore_available_tables_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3.1/{project_id}/instances/{instance_id}/backups/restore/tables",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRestoreAvailableTablesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'restore_time' in local_var_params:
+            query_params.append(('restore_time', local_var_params['restore_time']))
+        if 'last_table_info' in local_var_params:
+            query_params.append(('last_table_info', local_var_params['last_table_info']))
+        if 'database_name' in local_var_params:
+            query_params.append(('database_name', local_var_params['database_name']))
+        if 'table_name' in local_var_params:
+            query_params.append(('table_name', local_var_params['table_name']))
 
         header_params = {}
         if 'x_language' in local_var_params:

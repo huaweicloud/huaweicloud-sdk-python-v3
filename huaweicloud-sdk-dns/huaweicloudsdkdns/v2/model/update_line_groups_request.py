@@ -31,7 +31,7 @@ class UpdateLineGroupsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param linegroup_id: 线路分组ID
+        :param linegroup_id: 线路分组ID。
         :type linegroup_id: str
         :param body: Body of the UpdateLineGroupsRequest
         :type body: :class:`huaweicloudsdkdns.v2.UpdateLineGroupsRequestBody`
@@ -51,7 +51,7 @@ class UpdateLineGroupsRequest:
     def linegroup_id(self):
         r"""Gets the linegroup_id of this UpdateLineGroupsRequest.
 
-        线路分组ID
+        线路分组ID。
 
         :return: The linegroup_id of this UpdateLineGroupsRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class UpdateLineGroupsRequest:
     def linegroup_id(self, linegroup_id):
         r"""Sets the linegroup_id of this UpdateLineGroupsRequest.
 
-        线路分组ID
+        线路分组ID。
 
         :param linegroup_id: The linegroup_id of this UpdateLineGroupsRequest.
         :type linegroup_id: str

@@ -29,7 +29,7 @@ class RestorePtrReq:
 
         The model defined in huaweicloud sdk
 
-        :param ptrdname: PTR记录对应的域名。  此处值为null。
+        :param ptrdname: 反向解析记录对应的域名。  此处值为null。
         :type ptrdname: object
         """
         
@@ -44,7 +44,7 @@ class RestorePtrReq:
     def ptrdname(self):
         r"""Gets the ptrdname of this RestorePtrReq.
 
-        PTR记录对应的域名。  此处值为null。
+        反向解析记录对应的域名。  此处值为null。
 
         :return: The ptrdname of this RestorePtrReq.
         :rtype: object
@@ -55,7 +55,7 @@ class RestorePtrReq:
     def ptrdname(self, ptrdname):
         r"""Sets the ptrdname of this RestorePtrReq.
 
-        PTR记录对应的域名。  此处值为null。
+        反向解析记录对应的域名。  此处值为null。
 
         :param ptrdname: The ptrdname of this RestorePtrReq.
         :type ptrdname: object

@@ -20,7 +20,6 @@ class RenewalResourcesReq:
         'resource_ids': 'list[str]',
         'period_type': 'int',
         'period_num': 'int',
-        'expire_policy': 'int',
         'is_auto_pay': 'int'
     }
 
@@ -28,11 +27,10 @@ class RenewalResourcesReq:
         'resource_ids': 'resource_ids',
         'period_type': 'period_type',
         'period_num': 'period_num',
-        'expire_policy': 'expire_policy',
         'is_auto_pay': 'is_auto_pay'
     }
 
-    def __init__(self, resource_ids=None, period_type=None, period_num=None, expire_policy=None, is_auto_pay=None):
+    def __init__(self, resource_ids=None, period_type=None, period_num=None, is_auto_pay=None):
         r"""RenewalResourcesReq
 
         The model defined in huaweicloud sdk
@@ -43,8 +41,6 @@ class RenewalResourcesReq:
         :type period_type: int
         :param period_num: 周期数目： 如果是月，目前支持1-11如果是年，目前支持1-3
         :type period_num: int
-        :param expire_policy: 到期策略（字段已废弃，请勿使用该字段。此字段必填，需携带，但携带的枚举实际并不生效）： 0：进入宽限期/保留期1：转按需2：自动退订3：自动续订
-        :type expire_policy: int
         :param is_auto_pay: 是否自动支付。 0：否1：是 此参数不携带或携带值为null时，默认值为“0：否”，即不自动支付。
         :type is_auto_pay: int
         """
@@ -54,15 +50,12 @@ class RenewalResourcesReq:
         self._resource_ids = None
         self._period_type = None
         self._period_num = None
-        self._expire_policy = None
         self._is_auto_pay = None
         self.discriminator = None
 
         self.resource_ids = resource_ids
         self.period_type = period_type
         self.period_num = period_num
-        if expire_policy is not None:
-            self.expire_policy = expire_policy
         if is_auto_pay is not None:
             self.is_auto_pay = is_auto_pay
 
@@ -131,28 +124,6 @@ class RenewalResourcesReq:
         :type period_num: int
         """
         self._period_num = period_num
-
-    @property
-    def expire_policy(self):
-        r"""Gets the expire_policy of this RenewalResourcesReq.
-
-        到期策略（字段已废弃，请勿使用该字段。此字段必填，需携带，但携带的枚举实际并不生效）： 0：进入宽限期/保留期1：转按需2：自动退订3：自动续订
-
-        :return: The expire_policy of this RenewalResourcesReq.
-        :rtype: int
-        """
-        return self._expire_policy
-
-    @expire_policy.setter
-    def expire_policy(self, expire_policy):
-        r"""Sets the expire_policy of this RenewalResourcesReq.
-
-        到期策略（字段已废弃，请勿使用该字段。此字段必填，需携带，但携带的枚举实际并不生效）： 0：进入宽限期/保留期1：转按需2：自动退订3：自动续订
-
-        :param expire_policy: The expire_policy of this RenewalResourcesReq.
-        :type expire_policy: int
-        """
-        self._expire_policy = expire_policy
 
     @property
     def is_auto_pay(self):

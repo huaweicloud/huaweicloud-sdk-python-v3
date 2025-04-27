@@ -18,7 +18,7 @@ class UpdatePublicZoneStatusRequest:
 
     openapi_types = {
         'zone_id': 'str',
-        'body': 'UpdatePublicZoneStatusRequestBody'
+        'body': 'UpdateZoneStatusRequestBody'
     }
 
     attribute_map = {
@@ -31,10 +31,10 @@ class UpdatePublicZoneStatusRequest:
 
         The model defined in huaweicloud sdk
 
-        :param zone_id: 待设置状态Zone的ID
+        :param zone_id: 域名ID。
         :type zone_id: str
         :param body: Body of the UpdatePublicZoneStatusRequest
-        :type body: :class:`huaweicloudsdkdns.v2.UpdatePublicZoneStatusRequestBody`
+        :type body: :class:`huaweicloudsdkdns.v2.UpdateZoneStatusRequestBody`
         """
         
         
@@ -51,7 +51,7 @@ class UpdatePublicZoneStatusRequest:
     def zone_id(self):
         r"""Gets the zone_id of this UpdatePublicZoneStatusRequest.
 
-        待设置状态Zone的ID
+        域名ID。
 
         :return: The zone_id of this UpdatePublicZoneStatusRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class UpdatePublicZoneStatusRequest:
     def zone_id(self, zone_id):
         r"""Sets the zone_id of this UpdatePublicZoneStatusRequest.
 
-        待设置状态Zone的ID
+        域名ID。
 
         :param zone_id: The zone_id of this UpdatePublicZoneStatusRequest.
         :type zone_id: str
@@ -74,7 +74,7 @@ class UpdatePublicZoneStatusRequest:
         r"""Gets the body of this UpdatePublicZoneStatusRequest.
 
         :return: The body of this UpdatePublicZoneStatusRequest.
-        :rtype: :class:`huaweicloudsdkdns.v2.UpdatePublicZoneStatusRequestBody`
+        :rtype: :class:`huaweicloudsdkdns.v2.UpdateZoneStatusRequestBody`
         """
         return self._body
 
@@ -83,7 +83,7 @@ class UpdatePublicZoneStatusRequest:
         r"""Sets the body of this UpdatePublicZoneStatusRequest.
 
         :param body: The body of this UpdatePublicZoneStatusRequest.
-        :type body: :class:`huaweicloudsdkdns.v2.UpdatePublicZoneStatusRequestBody`
+        :type body: :class:`huaweicloudsdkdns.v2.UpdateZoneStatusRequestBody`
         """
         self._body = body
 

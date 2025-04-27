@@ -31,7 +31,7 @@ class AliasTarget:
 
         The model defined in huaweicloud sdk
 
-        :param resource_type: 资源服务类型，支持别名记录的服务。取值：  cloudsite：云速建站 waf：Web应用防火墙
+        :param resource_type: 资源服务类型，支持别名记录的服务。  取值范围： cloudsite：企业门户 waf：Web应用防火墙
         :type resource_type: str
         :param resource_domain_name: 对应服务下的域名，由各服务提供。
         :type resource_domain_name: str
@@ -52,7 +52,7 @@ class AliasTarget:
     def resource_type(self):
         r"""Gets the resource_type of this AliasTarget.
 
-        资源服务类型，支持别名记录的服务。取值：  cloudsite：云速建站 waf：Web应用防火墙
+        资源服务类型，支持别名记录的服务。  取值范围： cloudsite：企业门户 waf：Web应用防火墙
 
         :return: The resource_type of this AliasTarget.
         :rtype: str
@@ -63,7 +63,7 @@ class AliasTarget:
     def resource_type(self, resource_type):
         r"""Sets the resource_type of this AliasTarget.
 
-        资源服务类型，支持别名记录的服务。取值：  cloudsite：云速建站 waf：Web应用防火墙
+        资源服务类型，支持别名记录的服务。  取值范围： cloudsite：企业门户 waf：Web应用防火墙
 
         :param resource_type: The resource_type of this AliasTarget.
         :type resource_type: str

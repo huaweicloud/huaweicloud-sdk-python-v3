@@ -47,9 +47,9 @@ class Line:
         :type name: str
         :param ip_segments: IP地址段。
         :type ip_segments: list[str]
-        :param created_at: 创建时间。
+        :param created_at: 创建时间。 格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSS。
         :type created_at: str
-        :param updated_at: 更新时间。
+        :param updated_at: 更新时间。 格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSS。
         :type updated_at: str
         :param status: 资源状态。
         :type status: str
@@ -153,7 +153,7 @@ class Line:
     def created_at(self):
         r"""Gets the created_at of this Line.
 
-        创建时间。
+        创建时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。
 
         :return: The created_at of this Line.
         :rtype: str
@@ -164,7 +164,7 @@ class Line:
     def created_at(self, created_at):
         r"""Sets the created_at of this Line.
 
-        创建时间。
+        创建时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。
 
         :param created_at: The created_at of this Line.
         :type created_at: str
@@ -175,7 +175,7 @@ class Line:
     def updated_at(self):
         r"""Gets the updated_at of this Line.
 
-        更新时间。
+        更新时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。
 
         :return: The updated_at of this Line.
         :rtype: str
@@ -186,7 +186,7 @@ class Line:
     def updated_at(self, updated_at):
         r"""Sets the updated_at of this Line.
 
-        更新时间。
+        更新时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。
 
         :param updated_at: The updated_at of this Line.
         :type updated_at: str

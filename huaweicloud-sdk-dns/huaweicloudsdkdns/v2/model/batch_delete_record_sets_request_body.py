@@ -31,9 +31,9 @@ class BatchDeleteRecordSetsRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param zone_type: Zone的类型，取值为public或private。
+        :param zone_type: 域名的类型，取值为public或private。
         :type zone_type: str
-        :param recordset_ids: 待删除的Record Set ID列表。 最多支持100个。
+        :param recordset_ids: 待删除的记录集ID列表。 最多支持100个。
         :type recordset_ids: list[str]
         """
         
@@ -50,7 +50,7 @@ class BatchDeleteRecordSetsRequestBody:
     def zone_type(self):
         r"""Gets the zone_type of this BatchDeleteRecordSetsRequestBody.
 
-        Zone的类型，取值为public或private。
+        域名的类型，取值为public或private。
 
         :return: The zone_type of this BatchDeleteRecordSetsRequestBody.
         :rtype: str
@@ -61,7 +61,7 @@ class BatchDeleteRecordSetsRequestBody:
     def zone_type(self, zone_type):
         r"""Sets the zone_type of this BatchDeleteRecordSetsRequestBody.
 
-        Zone的类型，取值为public或private。
+        域名的类型，取值为public或private。
 
         :param zone_type: The zone_type of this BatchDeleteRecordSetsRequestBody.
         :type zone_type: str
@@ -72,7 +72,7 @@ class BatchDeleteRecordSetsRequestBody:
     def recordset_ids(self):
         r"""Gets the recordset_ids of this BatchDeleteRecordSetsRequestBody.
 
-        待删除的Record Set ID列表。 最多支持100个。
+        待删除的记录集ID列表。 最多支持100个。
 
         :return: The recordset_ids of this BatchDeleteRecordSetsRequestBody.
         :rtype: list[str]
@@ -83,7 +83,7 @@ class BatchDeleteRecordSetsRequestBody:
     def recordset_ids(self, recordset_ids):
         r"""Sets the recordset_ids of this BatchDeleteRecordSetsRequestBody.
 
-        待删除的Record Set ID列表。 最多支持100个。
+        待删除的记录集ID列表。 最多支持100个。
 
         :param recordset_ids: The recordset_ids of this BatchDeleteRecordSetsRequestBody.
         :type recordset_ids: list[str]

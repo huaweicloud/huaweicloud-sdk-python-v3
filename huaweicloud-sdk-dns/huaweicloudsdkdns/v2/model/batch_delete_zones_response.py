@@ -32,7 +32,7 @@ class BatchDeleteZonesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param zones: 删除zone的列表响应。
+        :param zones: 删除域名的列表响应。
         :type zones: list[:class:`huaweicloudsdkdns.v2.ZoneData`]
         :param metadata: 
         :type metadata: :class:`huaweicloudsdkdns.v2.Metadata`
@@ -53,7 +53,7 @@ class BatchDeleteZonesResponse(SdkResponse):
     def zones(self):
         r"""Gets the zones of this BatchDeleteZonesResponse.
 
-        删除zone的列表响应。
+        删除域名的列表响应。
 
         :return: The zones of this BatchDeleteZonesResponse.
         :rtype: list[:class:`huaweicloudsdkdns.v2.ZoneData`]
@@ -64,7 +64,7 @@ class BatchDeleteZonesResponse(SdkResponse):
     def zones(self, zones):
         r"""Sets the zones of this BatchDeleteZonesResponse.
 
-        删除zone的列表响应。
+        删除域名的列表响应。
 
         :param zones: The zones of this BatchDeleteZonesResponse.
         :type zones: list[:class:`huaweicloudsdkdns.v2.ZoneData`]

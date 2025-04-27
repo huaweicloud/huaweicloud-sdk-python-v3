@@ -1,1 +1,1 @@
-huaweicloudsdkcore >= 3.1.145
+huaweicloudsdkcore >= 3.1.146

@@ -55,15 +55,15 @@ class ListRecordSets:
 
         The model defined in huaweicloud sdk
 
-        :param id: Record Set的ID。
+        :param id: 记录集的ID。
         :type id: str
-        :param name: Record Set的名称。
+        :param name: 记录集的名称。
         :type name: str
-        :param description: Record Set的描述信息。
+        :param description: 记录集的描述信息。
         :type description: str
-        :param zone_id: 托管该记录的zone_id。
+        :param zone_id: 托管该记录的域名ID。
         :type zone_id: str
-        :param zone_name: 托管该记录的zone_name。
+        :param zone_name: 托管该记录的域名。
         :type zone_name: str
         :param type: 记录类型。
         :type type: str
@@ -71,15 +71,15 @@ class ListRecordSets:
         :type ttl: int
         :param records: 域名解析后的值。
         :type records: list[str]
-        :param create_at: 创建时间。
+        :param create_at: 创建时间。 格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSS。
         :type create_at: str
-        :param update_at: 更新时间。
+        :param update_at: 更新时间。 格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSS。
         :type update_at: str
         :param status: 资源状态。
         :type status: str
-        :param default: 标识是否由系统默认生成，系统默认生成的Record Set不能删除。
+        :param default: 标识是否由系统默认生成，系统默认生成的记录集不能删除。
         :type default: bool
-        :param project_id: 该Record Set所属的项目ID。
+        :param project_id: 该记录集所属的项目ID。
         :type project_id: str
         :param links: 
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`
@@ -136,7 +136,7 @@ class ListRecordSets:
     def id(self):
         r"""Gets the id of this ListRecordSets.
 
-        Record Set的ID。
+        记录集的ID。
 
         :return: The id of this ListRecordSets.
         :rtype: str
@@ -147,7 +147,7 @@ class ListRecordSets:
     def id(self, id):
         r"""Sets the id of this ListRecordSets.
 
-        Record Set的ID。
+        记录集的ID。
 
         :param id: The id of this ListRecordSets.
         :type id: str
@@ -158,7 +158,7 @@ class ListRecordSets:
     def name(self):
         r"""Gets the name of this ListRecordSets.
 
-        Record Set的名称。
+        记录集的名称。
 
         :return: The name of this ListRecordSets.
         :rtype: str
@@ -169,7 +169,7 @@ class ListRecordSets:
     def name(self, name):
         r"""Sets the name of this ListRecordSets.
 
-        Record Set的名称。
+        记录集的名称。
 
         :param name: The name of this ListRecordSets.
         :type name: str
@@ -180,7 +180,7 @@ class ListRecordSets:
     def description(self):
         r"""Gets the description of this ListRecordSets.
 
-        Record Set的描述信息。
+        记录集的描述信息。
 
         :return: The description of this ListRecordSets.
         :rtype: str
@@ -191,7 +191,7 @@ class ListRecordSets:
     def description(self, description):
         r"""Sets the description of this ListRecordSets.
 
-        Record Set的描述信息。
+        记录集的描述信息。
 
         :param description: The description of this ListRecordSets.
         :type description: str
@@ -202,7 +202,7 @@ class ListRecordSets:
     def zone_id(self):
         r"""Gets the zone_id of this ListRecordSets.
 
-        托管该记录的zone_id。
+        托管该记录的域名ID。
 
         :return: The zone_id of this ListRecordSets.
         :rtype: str
@@ -213,7 +213,7 @@ class ListRecordSets:
     def zone_id(self, zone_id):
         r"""Sets the zone_id of this ListRecordSets.
 
-        托管该记录的zone_id。
+        托管该记录的域名ID。
 
         :param zone_id: The zone_id of this ListRecordSets.
         :type zone_id: str
@@ -224,7 +224,7 @@ class ListRecordSets:
     def zone_name(self):
         r"""Gets the zone_name of this ListRecordSets.
 
-        托管该记录的zone_name。
+        托管该记录的域名。
 
         :return: The zone_name of this ListRecordSets.
         :rtype: str
@@ -235,7 +235,7 @@ class ListRecordSets:
     def zone_name(self, zone_name):
         r"""Sets the zone_name of this ListRecordSets.
 
-        托管该记录的zone_name。
+        托管该记录的域名。
 
         :param zone_name: The zone_name of this ListRecordSets.
         :type zone_name: str
@@ -312,7 +312,7 @@ class ListRecordSets:
     def create_at(self):
         r"""Gets the create_at of this ListRecordSets.
 
-        创建时间。
+        创建时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。
 
         :return: The create_at of this ListRecordSets.
         :rtype: str
@@ -323,7 +323,7 @@ class ListRecordSets:
     def create_at(self, create_at):
         r"""Sets the create_at of this ListRecordSets.
 
-        创建时间。
+        创建时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。
 
         :param create_at: The create_at of this ListRecordSets.
         :type create_at: str
@@ -334,7 +334,7 @@ class ListRecordSets:
     def update_at(self):
         r"""Gets the update_at of this ListRecordSets.
 
-        更新时间。
+        更新时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。
 
         :return: The update_at of this ListRecordSets.
         :rtype: str
@@ -345,7 +345,7 @@ class ListRecordSets:
     def update_at(self, update_at):
         r"""Sets the update_at of this ListRecordSets.
 
-        更新时间。
+        更新时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。
 
         :param update_at: The update_at of this ListRecordSets.
         :type update_at: str
@@ -378,7 +378,7 @@ class ListRecordSets:
     def default(self):
         r"""Gets the default of this ListRecordSets.
 
-        标识是否由系统默认生成，系统默认生成的Record Set不能删除。
+        标识是否由系统默认生成，系统默认生成的记录集不能删除。
 
         :return: The default of this ListRecordSets.
         :rtype: bool
@@ -389,7 +389,7 @@ class ListRecordSets:
     def default(self, default):
         r"""Sets the default of this ListRecordSets.
 
-        标识是否由系统默认生成，系统默认生成的Record Set不能删除。
+        标识是否由系统默认生成，系统默认生成的记录集不能删除。
 
         :param default: The default of this ListRecordSets.
         :type default: bool
@@ -400,7 +400,7 @@ class ListRecordSets:
     def project_id(self):
         r"""Gets the project_id of this ListRecordSets.
 
-        该Record Set所属的项目ID。
+        该记录集所属的项目ID。
 
         :return: The project_id of this ListRecordSets.
         :rtype: str
@@ -411,7 +411,7 @@ class ListRecordSets:
     def project_id(self, project_id):
         r"""Sets the project_id of this ListRecordSets.
 
-        该Record Set所属的项目ID。
+        该记录集所属的项目ID。
 
         :param project_id: The project_id of this ListRecordSets.
         :type project_id: str

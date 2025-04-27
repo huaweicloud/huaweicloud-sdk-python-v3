@@ -51,17 +51,17 @@ class CreateRecordSetWithLineRequestBody:
         :type name: str
         :param description: 可选配置，对域名的描述。
         :type description: str
-        :param type: Record Set的类型。
+        :param type: 记录集的类型。
         :type type: str
-        :param status: 解析记录的状态。 取值范围： ENABLE：启用 DISABLE：暂停 默认值为ENABLE。
+        :param status: 解析记录的状态。  取值范围： ENABLE：启用 DISABLE：暂停  默认值为ENABLE。
         :type status: str
         :param ttl: 解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。
         :type ttl: int
         :param records: 解析记录的值。不同类型解析记录对应的值的规则不同。
         :type records: list[str]
-        :param line: 解析线路ID
+        :param line: 解析线路ID。
         :type line: str
-        :param tags:  资源标签
+        :param tags: 资源标签。
         :type tags: list[:class:`huaweicloudsdkdns.v2.Tag`]
         :param weight: 解析记录的权重。
         :type weight: int
@@ -150,7 +150,7 @@ class CreateRecordSetWithLineRequestBody:
     def type(self):
         r"""Gets the type of this CreateRecordSetWithLineRequestBody.
 
-        Record Set的类型。
+        记录集的类型。
 
         :return: The type of this CreateRecordSetWithLineRequestBody.
         :rtype: str
@@ -161,7 +161,7 @@ class CreateRecordSetWithLineRequestBody:
     def type(self, type):
         r"""Sets the type of this CreateRecordSetWithLineRequestBody.
 
-        Record Set的类型。
+        记录集的类型。
 
         :param type: The type of this CreateRecordSetWithLineRequestBody.
         :type type: str
@@ -172,7 +172,7 @@ class CreateRecordSetWithLineRequestBody:
     def status(self):
         r"""Gets the status of this CreateRecordSetWithLineRequestBody.
 
-        解析记录的状态。 取值范围： ENABLE：启用 DISABLE：暂停 默认值为ENABLE。
+        解析记录的状态。  取值范围： ENABLE：启用 DISABLE：暂停  默认值为ENABLE。
 
         :return: The status of this CreateRecordSetWithLineRequestBody.
         :rtype: str
@@ -183,7 +183,7 @@ class CreateRecordSetWithLineRequestBody:
     def status(self, status):
         r"""Sets the status of this CreateRecordSetWithLineRequestBody.
 
-        解析记录的状态。 取值范围： ENABLE：启用 DISABLE：暂停 默认值为ENABLE。
+        解析记录的状态。  取值范围： ENABLE：启用 DISABLE：暂停  默认值为ENABLE。
 
         :param status: The status of this CreateRecordSetWithLineRequestBody.
         :type status: str
@@ -238,7 +238,7 @@ class CreateRecordSetWithLineRequestBody:
     def line(self):
         r"""Gets the line of this CreateRecordSetWithLineRequestBody.
 
-        解析线路ID
+        解析线路ID。
 
         :return: The line of this CreateRecordSetWithLineRequestBody.
         :rtype: str
@@ -249,7 +249,7 @@ class CreateRecordSetWithLineRequestBody:
     def line(self, line):
         r"""Sets the line of this CreateRecordSetWithLineRequestBody.
 
-        解析线路ID
+        解析线路ID。
 
         :param line: The line of this CreateRecordSetWithLineRequestBody.
         :type line: str
@@ -260,7 +260,7 @@ class CreateRecordSetWithLineRequestBody:
     def tags(self):
         r"""Gets the tags of this CreateRecordSetWithLineRequestBody.
 
-         资源标签
+        资源标签。
 
         :return: The tags of this CreateRecordSetWithLineRequestBody.
         :rtype: list[:class:`huaweicloudsdkdns.v2.Tag`]
@@ -271,7 +271,7 @@ class CreateRecordSetWithLineRequestBody:
     def tags(self, tags):
         r"""Sets the tags of this CreateRecordSetWithLineRequestBody.
 
-         资源标签
+        资源标签。
 
         :param tags: The tags of this CreateRecordSetWithLineRequestBody.
         :type tags: list[:class:`huaweicloudsdkdns.v2.Tag`]

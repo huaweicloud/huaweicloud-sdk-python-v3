@@ -41,7 +41,7 @@ class UpdateRecordSetReq:
         :type name: str
         :param description: 可选配置，对域名的描述。
         :type description: str
-        :param type: Record Set的类型。
+        :param type: 记录集的类型。
         :type type: str
         :param ttl: 解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。
         :type ttl: int
@@ -117,7 +117,7 @@ class UpdateRecordSetReq:
     def type(self):
         r"""Gets the type of this UpdateRecordSetReq.
 
-        Record Set的类型。
+        记录集的类型。
 
         :return: The type of this UpdateRecordSetReq.
         :rtype: str
@@ -128,7 +128,7 @@ class UpdateRecordSetReq:
     def type(self, type):
         r"""Sets the type of this UpdateRecordSetReq.
 
-        Record Set的类型。
+        记录集的类型。
 
         :param type: The type of this UpdateRecordSetReq.
         :type type: str

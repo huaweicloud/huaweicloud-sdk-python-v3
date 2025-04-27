@@ -29,7 +29,7 @@ class BatchUpdateRecordSetWithLineRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param recordsets: RecordSet 列表。
+        :param recordsets: 记录集列表。
         :type recordsets: list[:class:`huaweicloudsdkdns.v2.BatchUpdateRecordSet`]
         """
         
@@ -44,7 +44,7 @@ class BatchUpdateRecordSetWithLineRequestBody:
     def recordsets(self):
         r"""Gets the recordsets of this BatchUpdateRecordSetWithLineRequestBody.
 
-        RecordSet 列表。
+        记录集列表。
 
         :return: The recordsets of this BatchUpdateRecordSetWithLineRequestBody.
         :rtype: list[:class:`huaweicloudsdkdns.v2.BatchUpdateRecordSet`]
@@ -55,7 +55,7 @@ class BatchUpdateRecordSetWithLineRequestBody:
     def recordsets(self, recordsets):
         r"""Sets the recordsets of this BatchUpdateRecordSetWithLineRequestBody.
 
-        RecordSet 列表。
+        记录集列表。
 
         :param recordsets: The recordsets of this BatchUpdateRecordSetWithLineRequestBody.
         :type recordsets: list[:class:`huaweicloudsdkdns.v2.BatchUpdateRecordSet`]

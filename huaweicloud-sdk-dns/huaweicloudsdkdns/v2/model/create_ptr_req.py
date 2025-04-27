@@ -37,13 +37,13 @@ class CreatePtrReq:
 
         The model defined in huaweicloud sdk
 
-        :param ptrdname: PTR记录对应的域名。
+        :param ptrdname: 反向解析记录对应的域名。
         :type ptrdname: str
-        :param description: 对PTR记录的描述。
+        :param description: 对反向解析记录的描述。
         :type description: str
-        :param ttl: PTR记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。取值范围：1～2147483647
+        :param ttl: 反向解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。取值范围：1～2147483647
         :type ttl: int
-        :param enterprise_project_id: 反向解析关联的企业项目ID，长度不超过36个字符。
+        :param enterprise_project_id: 反向解析关联的企业项目ID，长度不超过36个字符。默认值为0。
         :type enterprise_project_id: str
         :param tags: 资源标签。
         :type tags: list[:class:`huaweicloudsdkdns.v2.Tag`]
@@ -72,7 +72,7 @@ class CreatePtrReq:
     def ptrdname(self):
         r"""Gets the ptrdname of this CreatePtrReq.
 
-        PTR记录对应的域名。
+        反向解析记录对应的域名。
 
         :return: The ptrdname of this CreatePtrReq.
         :rtype: str
@@ -83,7 +83,7 @@ class CreatePtrReq:
     def ptrdname(self, ptrdname):
         r"""Sets the ptrdname of this CreatePtrReq.
 
-        PTR记录对应的域名。
+        反向解析记录对应的域名。
 
         :param ptrdname: The ptrdname of this CreatePtrReq.
         :type ptrdname: str
@@ -94,7 +94,7 @@ class CreatePtrReq:
     def description(self):
         r"""Gets the description of this CreatePtrReq.
 
-        对PTR记录的描述。
+        对反向解析记录的描述。
 
         :return: The description of this CreatePtrReq.
         :rtype: str
@@ -105,7 +105,7 @@ class CreatePtrReq:
     def description(self, description):
         r"""Sets the description of this CreatePtrReq.
 
-        对PTR记录的描述。
+        对反向解析记录的描述。
 
         :param description: The description of this CreatePtrReq.
         :type description: str
@@ -116,7 +116,7 @@ class CreatePtrReq:
     def ttl(self):
         r"""Gets the ttl of this CreatePtrReq.
 
-        PTR记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。取值范围：1～2147483647
+        反向解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。取值范围：1～2147483647
 
         :return: The ttl of this CreatePtrReq.
         :rtype: int
@@ -127,7 +127,7 @@ class CreatePtrReq:
     def ttl(self, ttl):
         r"""Sets the ttl of this CreatePtrReq.
 
-        PTR记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。取值范围：1～2147483647
+        反向解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。取值范围：1～2147483647
 
         :param ttl: The ttl of this CreatePtrReq.
         :type ttl: int
@@ -138,7 +138,7 @@ class CreatePtrReq:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this CreatePtrReq.
 
-        反向解析关联的企业项目ID，长度不超过36个字符。
+        反向解析关联的企业项目ID，长度不超过36个字符。默认值为0。
 
         :return: The enterprise_project_id of this CreatePtrReq.
         :rtype: str
@@ -149,7 +149,7 @@ class CreatePtrReq:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this CreatePtrReq.
 
-        反向解析关联的企业项目ID，长度不超过36个字符。
+        反向解析关联的企业项目ID，长度不超过36个字符。默认值为0。
 
         :param enterprise_project_id: The enterprise_project_id of this CreatePtrReq.
         :type enterprise_project_id: str

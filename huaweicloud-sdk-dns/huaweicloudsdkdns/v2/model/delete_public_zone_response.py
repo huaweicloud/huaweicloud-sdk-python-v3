@@ -58,33 +58,33 @@ class DeletePublicZoneResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param id: Zone的ID
+        :param id: 域名ID。
         :type id: str
-        :param name: zone名称
+        :param name: 域名。
         :type name: str
-        :param description: 对zone的描述信息
+        :param description: 对域名的描述信息。
         :type description: str
-        :param email: 管理该zone的管理员邮箱，用于生成该Zone的SOA记录。
+        :param email: 管理该域名的管理员邮箱，用于生成该域名的SOA记录。
         :type email: str
-        :param zone_type: zone类型，公网（public）
+        :param zone_type: 域名类型，公网（public）。
         :type zone_type: str
-        :param ttl: 该zone下SOA记录中的ttl值
+        :param ttl: 该域名下SOA记录中的ttl值。
         :type ttl: int
-        :param serial: 该zone下SOA记录中用于标识zone文件变更的序列值，用于主从节点同步
+        :param serial: 该域名下SOA记录中用于标识域名文件变更的序列值，用于主从节点同步。
         :type serial: int
-        :param status: 资源状态
+        :param status: 资源状态。
         :type status: str
-        :param record_num: 该zone下的recordset个数
+        :param record_num: 该域名下的记录集个数。
         :type record_num: int
-        :param pool_id: 托管该zone的pool，由系统分配
+        :param pool_id: 托管该域名的pool，由系统分配。
         :type pool_id: str
-        :param project_id: zone所属的项目ID
+        :param project_id: 域名所属的项目ID。
         :type project_id: str
-        :param created_at: 创建时间
+        :param created_at: 创建时间。 格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSS。
         :type created_at: str
-        :param updated_at: 更新时间
+        :param updated_at: 更新时间。 格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSS。
         :type updated_at: str
-        :param masters: 主从模式中，从DNS服务器获取DNS信息
+        :param masters: 主从模式中，从DNS服务器获取DNS信息。
         :type masters: list[str]
         :param links: 
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`
@@ -144,7 +144,7 @@ class DeletePublicZoneResponse(SdkResponse):
     def id(self):
         r"""Gets the id of this DeletePublicZoneResponse.
 
-        Zone的ID
+        域名ID。
 
         :return: The id of this DeletePublicZoneResponse.
         :rtype: str
@@ -155,7 +155,7 @@ class DeletePublicZoneResponse(SdkResponse):
     def id(self, id):
         r"""Sets the id of this DeletePublicZoneResponse.
 
-        Zone的ID
+        域名ID。
 
         :param id: The id of this DeletePublicZoneResponse.
         :type id: str
@@ -166,7 +166,7 @@ class DeletePublicZoneResponse(SdkResponse):
     def name(self):
         r"""Gets the name of this DeletePublicZoneResponse.
 
-        zone名称
+        域名。
 
         :return: The name of this DeletePublicZoneResponse.
         :rtype: str
@@ -177,7 +177,7 @@ class DeletePublicZoneResponse(SdkResponse):
     def name(self, name):
         r"""Sets the name of this DeletePublicZoneResponse.
 
-        zone名称
+        域名。
 
         :param name: The name of this DeletePublicZoneResponse.
         :type name: str
@@ -188,7 +188,7 @@ class DeletePublicZoneResponse(SdkResponse):
     def description(self):
         r"""Gets the description of this DeletePublicZoneResponse.
 
-        对zone的描述信息
+        对域名的描述信息。
 
         :return: The description of this DeletePublicZoneResponse.
         :rtype: str
@@ -199,7 +199,7 @@ class DeletePublicZoneResponse(SdkResponse):
     def description(self, description):
         r"""Sets the description of this DeletePublicZoneResponse.
 
-        对zone的描述信息
+        对域名的描述信息。
 
         :param description: The description of this DeletePublicZoneResponse.
         :type description: str
@@ -210,7 +210,7 @@ class DeletePublicZoneResponse(SdkResponse):
     def email(self):
         r"""Gets the email of this DeletePublicZoneResponse.
 
-        管理该zone的管理员邮箱，用于生成该Zone的SOA记录。
+        管理该域名的管理员邮箱，用于生成该域名的SOA记录。
 
         :return: The email of this DeletePublicZoneResponse.
         :rtype: str
@@ -221,7 +221,7 @@ class DeletePublicZoneResponse(SdkResponse):
     def email(self, email):
         r"""Sets the email of this DeletePublicZoneResponse.
 
-        管理该zone的管理员邮箱，用于生成该Zone的SOA记录。
+        管理该域名的管理员邮箱，用于生成该域名的SOA记录。
 
         :param email: The email of this DeletePublicZoneResponse.
         :type email: str
@@ -232,7 +232,7 @@ class DeletePublicZoneResponse(SdkResponse):
     def zone_type(self):
         r"""Gets the zone_type of this DeletePublicZoneResponse.
 
-        zone类型，公网（public）
+        域名类型，公网（public）。
 
         :return: The zone_type of this DeletePublicZoneResponse.
         :rtype: str
@@ -243,7 +243,7 @@ class DeletePublicZoneResponse(SdkResponse):
     def zone_type(self, zone_type):
         r"""Sets the zone_type of this DeletePublicZoneResponse.
 
-        zone类型，公网（public）
+        域名类型，公网（public）。
 
         :param zone_type: The zone_type of this DeletePublicZoneResponse.
         :type zone_type: str
@@ -254,7 +254,7 @@ class DeletePublicZoneResponse(SdkResponse):
     def ttl(self):
         r"""Gets the ttl of this DeletePublicZoneResponse.
 
-        该zone下SOA记录中的ttl值
+        该域名下SOA记录中的ttl值。
 
         :return: The ttl of this DeletePublicZoneResponse.
         :rtype: int
@@ -265,7 +265,7 @@ class DeletePublicZoneResponse(SdkResponse):
     def ttl(self, ttl):
         r"""Sets the ttl of this DeletePublicZoneResponse.
 
-        该zone下SOA记录中的ttl值
+        该域名下SOA记录中的ttl值。
 
         :param ttl: The ttl of this DeletePublicZoneResponse.
         :type ttl: int
@@ -276,7 +276,7 @@ class DeletePublicZoneResponse(SdkResponse):
     def serial(self):
         r"""Gets the serial of this DeletePublicZoneResponse.
 
-        该zone下SOA记录中用于标识zone文件变更的序列值，用于主从节点同步
+        该域名下SOA记录中用于标识域名文件变更的序列值，用于主从节点同步。
 
         :return: The serial of this DeletePublicZoneResponse.
         :rtype: int
@@ -287,7 +287,7 @@ class DeletePublicZoneResponse(SdkResponse):
     def serial(self, serial):
         r"""Sets the serial of this DeletePublicZoneResponse.
 
-        该zone下SOA记录中用于标识zone文件变更的序列值，用于主从节点同步
+        该域名下SOA记录中用于标识域名文件变更的序列值，用于主从节点同步。
 
         :param serial: The serial of this DeletePublicZoneResponse.
         :type serial: int
@@ -298,7 +298,7 @@ class DeletePublicZoneResponse(SdkResponse):
     def status(self):
         r"""Gets the status of this DeletePublicZoneResponse.
 
-        资源状态
+        资源状态。
 
         :return: The status of this DeletePublicZoneResponse.
         :rtype: str
@@ -309,7 +309,7 @@ class DeletePublicZoneResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this DeletePublicZoneResponse.
 
-        资源状态
+        资源状态。
 
         :param status: The status of this DeletePublicZoneResponse.
         :type status: str
@@ -320,7 +320,7 @@ class DeletePublicZoneResponse(SdkResponse):
     def record_num(self):
         r"""Gets the record_num of this DeletePublicZoneResponse.
 
-        该zone下的recordset个数
+        该域名下的记录集个数。
 
         :return: The record_num of this DeletePublicZoneResponse.
         :rtype: int
@@ -331,7 +331,7 @@ class DeletePublicZoneResponse(SdkResponse):
     def record_num(self, record_num):
         r"""Sets the record_num of this DeletePublicZoneResponse.
 
-        该zone下的recordset个数
+        该域名下的记录集个数。
 
         :param record_num: The record_num of this DeletePublicZoneResponse.
         :type record_num: int
@@ -342,7 +342,7 @@ class DeletePublicZoneResponse(SdkResponse):
     def pool_id(self):
         r"""Gets the pool_id of this DeletePublicZoneResponse.
 
-        托管该zone的pool，由系统分配
+        托管该域名的pool，由系统分配。
 
         :return: The pool_id of this DeletePublicZoneResponse.
         :rtype: str
@@ -353,7 +353,7 @@ class DeletePublicZoneResponse(SdkResponse):
     def pool_id(self, pool_id):
         r"""Sets the pool_id of this DeletePublicZoneResponse.
 
-        托管该zone的pool，由系统分配
+        托管该域名的pool，由系统分配。
 
         :param pool_id: The pool_id of this DeletePublicZoneResponse.
         :type pool_id: str
@@ -364,7 +364,7 @@ class DeletePublicZoneResponse(SdkResponse):
     def project_id(self):
         r"""Gets the project_id of this DeletePublicZoneResponse.
 
-        zone所属的项目ID
+        域名所属的项目ID。
 
         :return: The project_id of this DeletePublicZoneResponse.
         :rtype: str
@@ -375,7 +375,7 @@ class DeletePublicZoneResponse(SdkResponse):
     def project_id(self, project_id):
         r"""Sets the project_id of this DeletePublicZoneResponse.
 
-        zone所属的项目ID
+        域名所属的项目ID。
 
         :param project_id: The project_id of this DeletePublicZoneResponse.
         :type project_id: str
@@ -386,7 +386,7 @@ class DeletePublicZoneResponse(SdkResponse):
     def created_at(self):
         r"""Gets the created_at of this DeletePublicZoneResponse.
 
-        创建时间
+        创建时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。
 
         :return: The created_at of this DeletePublicZoneResponse.
         :rtype: str
@@ -397,7 +397,7 @@ class DeletePublicZoneResponse(SdkResponse):
     def created_at(self, created_at):
         r"""Sets the created_at of this DeletePublicZoneResponse.
 
-        创建时间
+        创建时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。
 
         :param created_at: The created_at of this DeletePublicZoneResponse.
         :type created_at: str
@@ -408,7 +408,7 @@ class DeletePublicZoneResponse(SdkResponse):
     def updated_at(self):
         r"""Gets the updated_at of this DeletePublicZoneResponse.
 
-        更新时间
+        更新时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。
 
         :return: The updated_at of this DeletePublicZoneResponse.
         :rtype: str
@@ -419,7 +419,7 @@ class DeletePublicZoneResponse(SdkResponse):
     def updated_at(self, updated_at):
         r"""Sets the updated_at of this DeletePublicZoneResponse.
 
-        更新时间
+        更新时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。
 
         :param updated_at: The updated_at of this DeletePublicZoneResponse.
         :type updated_at: str
@@ -430,7 +430,7 @@ class DeletePublicZoneResponse(SdkResponse):
     def masters(self):
         r"""Gets the masters of this DeletePublicZoneResponse.
 
-        主从模式中，从DNS服务器获取DNS信息
+        主从模式中，从DNS服务器获取DNS信息。
 
         :return: The masters of this DeletePublicZoneResponse.
         :rtype: list[str]
@@ -441,7 +441,7 @@ class DeletePublicZoneResponse(SdkResponse):
     def masters(self, masters):
         r"""Sets the masters of this DeletePublicZoneResponse.
 
-        主从模式中，从DNS服务器获取DNS信息
+        主从模式中，从DNS服务器获取DNS信息。
 
         :param masters: The masters of this DeletePublicZoneResponse.
         :type masters: list[str]

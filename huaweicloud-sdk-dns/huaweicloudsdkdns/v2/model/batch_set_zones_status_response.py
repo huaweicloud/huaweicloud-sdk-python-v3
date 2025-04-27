@@ -36,7 +36,7 @@ class BatchSetZonesStatusResponse(SdkResponse):
 
         :param links: 
         :type links: :class:`huaweicloudsdkdns.v2.Link`
-        :param zones: 设置zone的列表响应。
+        :param zones: 设置域名的列表响应。
         :type zones: list[:class:`huaweicloudsdkdns.v2.ZoneData`]
         :param metadata: 
         :type metadata: :class:`huaweicloudsdkdns.v2.Metadata`
@@ -78,7 +78,7 @@ class BatchSetZonesStatusResponse(SdkResponse):
     def zones(self):
         r"""Gets the zones of this BatchSetZonesStatusResponse.
 
-        设置zone的列表响应。
+        设置域名的列表响应。
 
         :return: The zones of this BatchSetZonesStatusResponse.
         :rtype: list[:class:`huaweicloudsdkdns.v2.ZoneData`]
@@ -89,7 +89,7 @@ class BatchSetZonesStatusResponse(SdkResponse):
     def zones(self, zones):
         r"""Sets the zones of this BatchSetZonesStatusResponse.
 
-        设置zone的列表响应。
+        设置域名的列表响应。
 
         :param zones: The zones of this BatchSetZonesStatusResponse.
         :type zones: list[:class:`huaweicloudsdkdns.v2.ZoneData`]

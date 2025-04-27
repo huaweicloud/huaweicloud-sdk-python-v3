@@ -35,11 +35,11 @@ class UpdatePtrReq:
 
         The model defined in huaweicloud sdk
 
-        :param ptrdname: PTR记录对应的域名。
+        :param ptrdname: 反向解析记录对应的域名。
         :type ptrdname: str
-        :param description: 对PTR记录的描述。
+        :param description: 对反向解析记录的描述。
         :type description: str
-        :param ttl: PTR记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。
+        :param ttl: 反向解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。
         :type ttl: int
         :param tags: 资源标签。
         :type tags: list[:class:`huaweicloudsdkdns.v2.Tag`]
@@ -65,7 +65,7 @@ class UpdatePtrReq:
     def ptrdname(self):
         r"""Gets the ptrdname of this UpdatePtrReq.
 
-        PTR记录对应的域名。
+        反向解析记录对应的域名。
 
         :return: The ptrdname of this UpdatePtrReq.
         :rtype: str
@@ -76,7 +76,7 @@ class UpdatePtrReq:
     def ptrdname(self, ptrdname):
         r"""Sets the ptrdname of this UpdatePtrReq.
 
-        PTR记录对应的域名。
+        反向解析记录对应的域名。
 
         :param ptrdname: The ptrdname of this UpdatePtrReq.
         :type ptrdname: str
@@ -87,7 +87,7 @@ class UpdatePtrReq:
     def description(self):
         r"""Gets the description of this UpdatePtrReq.
 
-        对PTR记录的描述。
+        对反向解析记录的描述。
 
         :return: The description of this UpdatePtrReq.
         :rtype: str
@@ -98,7 +98,7 @@ class UpdatePtrReq:
     def description(self, description):
         r"""Sets the description of this UpdatePtrReq.
 
-        对PTR记录的描述。
+        对反向解析记录的描述。
 
         :param description: The description of this UpdatePtrReq.
         :type description: str
@@ -109,7 +109,7 @@ class UpdatePtrReq:
     def ttl(self):
         r"""Gets the ttl of this UpdatePtrReq.
 
-        PTR记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。
+        反向解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。
 
         :return: The ttl of this UpdatePtrReq.
         :rtype: int
@@ -120,7 +120,7 @@ class UpdatePtrReq:
     def ttl(self, ttl):
         r"""Sets the ttl of this UpdatePtrReq.
 
-        PTR记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。
+        反向解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。
 
         :param ttl: The ttl of this UpdatePtrReq.
         :type ttl: int

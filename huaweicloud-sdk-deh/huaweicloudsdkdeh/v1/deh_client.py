@@ -171,6 +171,136 @@ class DeHClient(Client):
 
         return http_info
 
+    def create_dedicated_host(self, request):
+        r"""分配专属主机
+
+        分配一台或多台专属主机，需要设置实例规格、所属AZ、数量等参数。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateDedicatedHost
+        :type request: :class:`huaweicloudsdkdeh.v1.CreateDedicatedHostRequest`
+        :rtype: :class:`huaweicloudsdkdeh.v1.CreateDedicatedHostResponse`
+        """
+        http_info = self._create_dedicated_host_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_dedicated_host_invoker(self, request):
+        http_info = self._create_dedicated_host_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_dedicated_host_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/dedicated-hosts",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDedicatedHostResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_dedicated_host_tags(self, request):
+        r"""查询所有专属主机标签
+
+        查询所有专属主机的标签信息。
+        
+        标签管理服务（TMS）使用该接口查询所有专属主机的标签数据。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListDedicatedHostTags
+        :type request: :class:`huaweicloudsdkdeh.v1.ListDedicatedHostTagsRequest`
+        :rtype: :class:`huaweicloudsdkdeh.v1.ListDedicatedHostTagsResponse`
+        """
+        http_info = self._list_dedicated_host_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_dedicated_host_tags_invoker(self, request):
+        http_info = self._list_dedicated_host_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_dedicated_host_tags_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/dedicated-host-tags/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDedicatedHostTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_dedicated_host_types(self, request):
         r"""查询可用的专属主机类型
 

@@ -48,9 +48,9 @@ class DeleteCustomLineResponse(SdkResponse):
         :type name: str
         :param ip_segments: IP地址段。
         :type ip_segments: list[str]
-        :param created_at: 创建时间。
+        :param created_at: 创建时间。 格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSS。
         :type created_at: str
-        :param updated_at: 更新时间。
+        :param updated_at: 更新时间。 格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSS。
         :type updated_at: str
         :param status: 资源状态。
         :type status: str
@@ -154,7 +154,7 @@ class DeleteCustomLineResponse(SdkResponse):
     def created_at(self):
         r"""Gets the created_at of this DeleteCustomLineResponse.
 
-        创建时间。
+        创建时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。
 
         :return: The created_at of this DeleteCustomLineResponse.
         :rtype: str
@@ -165,7 +165,7 @@ class DeleteCustomLineResponse(SdkResponse):
     def created_at(self, created_at):
         r"""Sets the created_at of this DeleteCustomLineResponse.
 
-        创建时间。
+        创建时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。
 
         :param created_at: The created_at of this DeleteCustomLineResponse.
         :type created_at: str
@@ -176,7 +176,7 @@ class DeleteCustomLineResponse(SdkResponse):
     def updated_at(self):
         r"""Gets the updated_at of this DeleteCustomLineResponse.
 
-        更新时间。
+        更新时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。
 
         :return: The updated_at of this DeleteCustomLineResponse.
         :rtype: str
@@ -187,7 +187,7 @@ class DeleteCustomLineResponse(SdkResponse):
     def updated_at(self, updated_at):
         r"""Sets the updated_at of this DeleteCustomLineResponse.
 
-        更新时间。
+        更新时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。
 
         :param updated_at: The updated_at of this DeleteCustomLineResponse.
         :type updated_at: str

@@ -31,9 +31,9 @@ class DeleteRecordSetRequest:
 
         The model defined in huaweicloud sdk
 
-        :param zone_id: 当前recordset所属的zoneID。
+        :param zone_id: 域名ID。
         :type zone_id: str
-        :param recordset_id: 当前recordset所属的ID信息。
+        :param recordset_id: 记录集ID。
         :type recordset_id: str
         """
         
@@ -50,7 +50,7 @@ class DeleteRecordSetRequest:
     def zone_id(self):
         r"""Gets the zone_id of this DeleteRecordSetRequest.
 
-        当前recordset所属的zoneID。
+        域名ID。
 
         :return: The zone_id of this DeleteRecordSetRequest.
         :rtype: str
@@ -61,7 +61,7 @@ class DeleteRecordSetRequest:
     def zone_id(self, zone_id):
         r"""Sets the zone_id of this DeleteRecordSetRequest.
 
-        当前recordset所属的zoneID。
+        域名ID。
 
         :param zone_id: The zone_id of this DeleteRecordSetRequest.
         :type zone_id: str
@@ -72,7 +72,7 @@ class DeleteRecordSetRequest:
     def recordset_id(self):
         r"""Gets the recordset_id of this DeleteRecordSetRequest.
 
-        当前recordset所属的ID信息。
+        记录集ID。
 
         :return: The recordset_id of this DeleteRecordSetRequest.
         :rtype: str
@@ -83,7 +83,7 @@ class DeleteRecordSetRequest:
     def recordset_id(self, recordset_id):
         r"""Sets the recordset_id of this DeleteRecordSetRequest.
 
-        当前recordset所属的ID信息。
+        记录集ID。
 
         :param recordset_id: The recordset_id of this DeleteRecordSetRequest.
         :type recordset_id: str

@@ -31,7 +31,7 @@ class CreateRecordSetWithLineRequest:
 
         The model defined in huaweicloud sdk
 
-        :param zone_id: 所属zone的ID。
+        :param zone_id: 域名ID。
         :type zone_id: str
         :param body: Body of the CreateRecordSetWithLineRequest
         :type body: :class:`huaweicloudsdkdns.v2.CreateRecordSetWithLineRequestBody`
@@ -51,7 +51,7 @@ class CreateRecordSetWithLineRequest:
     def zone_id(self):
         r"""Gets the zone_id of this CreateRecordSetWithLineRequest.
 
-        所属zone的ID。
+        域名ID。
 
         :return: The zone_id of this CreateRecordSetWithLineRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class CreateRecordSetWithLineRequest:
     def zone_id(self, zone_id):
         r"""Sets the zone_id of this CreateRecordSetWithLineRequest.
 
-        所属zone的ID。
+        域名ID。
 
         :param zone_id: The zone_id of this CreateRecordSetWithLineRequest.
         :type zone_id: str

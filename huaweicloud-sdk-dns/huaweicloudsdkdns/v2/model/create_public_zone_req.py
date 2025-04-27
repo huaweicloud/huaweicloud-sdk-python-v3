@@ -41,17 +41,17 @@ class CreatePublicZoneReq:
 
         The model defined in huaweicloud sdk
 
-        :param name: Zone名称
+        :param name: 域名。
         :type name: str
-        :param description: 描述
+        :param description: 描述。
         :type description: str
         :param zone_type: 域名类型。取值：public。
         :type zone_type: str
-        :param email: 管理该zone的管理员邮箱，用于生成该Zone的SOA记录。
+        :param email: 管理该域名的管理员邮箱，用于生成该域名的SOA记录。
         :type email: str
-        :param ttl: 用于填写默认生成的SOA记录中有效缓存时间，以秒为单位.
+        :param ttl: 用于填写默认生成的SOA记录中有效缓存时间，以秒为单位。
         :type ttl: int
-        :param enterprise_project_id: 域名关联的企业项目ID，长度不超过36个字符.
+        :param enterprise_project_id: 域名关联的企业项目ID，长度不超过36个字符。默认值为0。
         :type enterprise_project_id: str
         :param tags: 资源标签。
         :type tags: list[:class:`huaweicloudsdkdns.v2.Tag`]
@@ -86,7 +86,7 @@ class CreatePublicZoneReq:
     def name(self):
         r"""Gets the name of this CreatePublicZoneReq.
 
-        Zone名称
+        域名。
 
         :return: The name of this CreatePublicZoneReq.
         :rtype: str
@@ -97,7 +97,7 @@ class CreatePublicZoneReq:
     def name(self, name):
         r"""Sets the name of this CreatePublicZoneReq.
 
-        Zone名称
+        域名。
 
         :param name: The name of this CreatePublicZoneReq.
         :type name: str
@@ -108,7 +108,7 @@ class CreatePublicZoneReq:
     def description(self):
         r"""Gets the description of this CreatePublicZoneReq.
 
-        描述
+        描述。
 
         :return: The description of this CreatePublicZoneReq.
         :rtype: str
@@ -119,7 +119,7 @@ class CreatePublicZoneReq:
     def description(self, description):
         r"""Sets the description of this CreatePublicZoneReq.
 
-        描述
+        描述。
 
         :param description: The description of this CreatePublicZoneReq.
         :type description: str
@@ -152,7 +152,7 @@ class CreatePublicZoneReq:
     def email(self):
         r"""Gets the email of this CreatePublicZoneReq.
 
-        管理该zone的管理员邮箱，用于生成该Zone的SOA记录。
+        管理该域名的管理员邮箱，用于生成该域名的SOA记录。
 
         :return: The email of this CreatePublicZoneReq.
         :rtype: str
@@ -163,7 +163,7 @@ class CreatePublicZoneReq:
     def email(self, email):
         r"""Sets the email of this CreatePublicZoneReq.
 
-        管理该zone的管理员邮箱，用于生成该Zone的SOA记录。
+        管理该域名的管理员邮箱，用于生成该域名的SOA记录。
 
         :param email: The email of this CreatePublicZoneReq.
         :type email: str
@@ -174,7 +174,7 @@ class CreatePublicZoneReq:
     def ttl(self):
         r"""Gets the ttl of this CreatePublicZoneReq.
 
-        用于填写默认生成的SOA记录中有效缓存时间，以秒为单位.
+        用于填写默认生成的SOA记录中有效缓存时间，以秒为单位。
 
         :return: The ttl of this CreatePublicZoneReq.
         :rtype: int
@@ -185,7 +185,7 @@ class CreatePublicZoneReq:
     def ttl(self, ttl):
         r"""Sets the ttl of this CreatePublicZoneReq.
 
-        用于填写默认生成的SOA记录中有效缓存时间，以秒为单位.
+        用于填写默认生成的SOA记录中有效缓存时间，以秒为单位。
 
         :param ttl: The ttl of this CreatePublicZoneReq.
         :type ttl: int
@@ -196,7 +196,7 @@ class CreatePublicZoneReq:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this CreatePublicZoneReq.
 
-        域名关联的企业项目ID，长度不超过36个字符.
+        域名关联的企业项目ID，长度不超过36个字符。默认值为0。
 
         :return: The enterprise_project_id of this CreatePublicZoneReq.
         :rtype: str
@@ -207,7 +207,7 @@ class CreatePublicZoneReq:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this CreatePublicZoneReq.
 
-        域名关联的企业项目ID，长度不超过36个字符.
+        域名关联的企业项目ID，长度不超过36个字符。默认值为0。
 
         :param enterprise_project_id: The enterprise_project_id of this CreatePublicZoneReq.
         :type enterprise_project_id: str

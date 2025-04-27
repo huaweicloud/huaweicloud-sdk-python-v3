@@ -31,7 +31,7 @@ class UpdatePrivateZoneRequest:
 
         The model defined in huaweicloud sdk
 
-        :param zone_id: 待修改Zone的ID。
+        :param zone_id: 域名ID。
         :type zone_id: str
         :param body: Body of the UpdatePrivateZoneRequest
         :type body: :class:`huaweicloudsdkdns.v2.UpdatePrivateZoneInfoReq`
@@ -51,7 +51,7 @@ class UpdatePrivateZoneRequest:
     def zone_id(self):
         r"""Gets the zone_id of this UpdatePrivateZoneRequest.
 
-        待修改Zone的ID。
+        域名ID。
 
         :return: The zone_id of this UpdatePrivateZoneRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class UpdatePrivateZoneRequest:
     def zone_id(self, zone_id):
         r"""Sets the zone_id of this UpdatePrivateZoneRequest.
 
-        待修改Zone的ID。
+        域名ID。
 
         :param zone_id: The zone_id of this UpdatePrivateZoneRequest.
         :type zone_id: str

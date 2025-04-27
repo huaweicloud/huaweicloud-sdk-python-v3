@@ -31,7 +31,7 @@ class UpdateCustomLineRequest:
 
         The model defined in huaweicloud sdk
 
-        :param line_id: 自定义线路id
+        :param line_id: 自定义线路ID。
         :type line_id: str
         :param body: Body of the UpdateCustomLineRequest
         :type body: :class:`huaweicloudsdkdns.v2.UpdateCustomLineRequestBody`
@@ -51,7 +51,7 @@ class UpdateCustomLineRequest:
     def line_id(self):
         r"""Gets the line_id of this UpdateCustomLineRequest.
 
-        自定义线路id
+        自定义线路ID。
 
         :return: The line_id of this UpdateCustomLineRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class UpdateCustomLineRequest:
     def line_id(self, line_id):
         r"""Sets the line_id of this UpdateCustomLineRequest.
 
-        自定义线路id
+        自定义线路ID。
 
         :param line_id: The line_id of this UpdateCustomLineRequest.
         :type line_id: str

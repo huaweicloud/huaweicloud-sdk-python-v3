@@ -2,10 +2,11 @@
 
 import six
 
+from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class UpdatePublicZoneStatusRequestBody:
+class UpdateResolverRuleResponse(SdkResponse):
 
     """
     Attributes:
@@ -17,50 +18,47 @@ class UpdatePublicZoneStatusRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'status': 'str'
+        'resolver_rule': 'ResolverRuleParam'
     }
 
     attribute_map = {
-        'status': 'status'
+        'resolver_rule': 'resolver_rule'
     }
 
-    def __init__(self, status=None):
-        r"""UpdatePublicZoneStatusRequestBody
+    def __init__(self, resolver_rule=None):
+        r"""UpdateResolverRuleResponse
 
         The model defined in huaweicloud sdk
 
-        :param status: Zone状态。  取值范围：  ENABLE：启用解析 DISABLE：暂停解析
-        :type status: str
+        :param resolver_rule: 
+        :type resolver_rule: :class:`huaweicloudsdkdns.v2.ResolverRuleParam`
         """
         
-        
+        super(UpdateResolverRuleResponse, self).__init__()
 
-        self._status = None
+        self._resolver_rule = None
         self.discriminator = None
 
-        self.status = status
+        if resolver_rule is not None:
+            self.resolver_rule = resolver_rule
 
     @property
-    def status(self):
-        r"""Gets the status of this UpdatePublicZoneStatusRequestBody.
+    def resolver_rule(self):
+        r"""Gets the resolver_rule of this UpdateResolverRuleResponse.
 
-        Zone状态。  取值范围：  ENABLE：启用解析 DISABLE：暂停解析
-
-        :return: The status of this UpdatePublicZoneStatusRequestBody.
-        :rtype: str
+        :return: The resolver_rule of this UpdateResolverRuleResponse.
+        :rtype: :class:`huaweicloudsdkdns.v2.ResolverRuleParam`
         """
-        return self._status
+        return self._resolver_rule
 
-    @status.setter
-    def status(self, status):
-        r"""Sets the status of this UpdatePublicZoneStatusRequestBody.
+    @resolver_rule.setter
+    def resolver_rule(self, resolver_rule):
+        r"""Sets the resolver_rule of this UpdateResolverRuleResponse.
 
-        Zone状态。  取值范围：  ENABLE：启用解析 DISABLE：暂停解析
-
-        :param status: The status of this UpdatePublicZoneStatusRequestBody.
-        :type status: str
+        :param resolver_rule: The resolver_rule of this UpdateResolverRuleResponse.
+        :type resolver_rule: :class:`huaweicloudsdkdns.v2.ResolverRuleParam`
         """
-        self._status = status
+        self._resolver_rule = resolver_rule
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -104,7 +102,7 @@ class UpdatePublicZoneStatusRequestBody:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, UpdatePublicZoneStatusRequestBody):
+        if not isinstance(other, UpdateResolverRuleResponse):
             return False
 
         return self.__dict__ == other.__dict__

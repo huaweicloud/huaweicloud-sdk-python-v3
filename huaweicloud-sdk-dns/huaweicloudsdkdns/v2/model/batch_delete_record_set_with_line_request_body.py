@@ -29,7 +29,7 @@ class BatchDeleteRecordSetWithLineRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param recordset_ids: Record Set ID列表。最多支持100个。
+        :param recordset_ids: 记录集ID列表。最多支持100个。
         :type recordset_ids: list[str]
         """
         
@@ -44,7 +44,7 @@ class BatchDeleteRecordSetWithLineRequestBody:
     def recordset_ids(self):
         r"""Gets the recordset_ids of this BatchDeleteRecordSetWithLineRequestBody.
 
-        Record Set ID列表。最多支持100个。
+        记录集ID列表。最多支持100个。
 
         :return: The recordset_ids of this BatchDeleteRecordSetWithLineRequestBody.
         :rtype: list[str]
@@ -55,7 +55,7 @@ class BatchDeleteRecordSetWithLineRequestBody:
     def recordset_ids(self, recordset_ids):
         r"""Sets the recordset_ids of this BatchDeleteRecordSetWithLineRequestBody.
 
-        Record Set ID列表。最多支持100个。
+        记录集ID列表。最多支持100个。
 
         :param recordset_ids: The recordset_ids of this BatchDeleteRecordSetWithLineRequestBody.
         :type recordset_ids: list[str]

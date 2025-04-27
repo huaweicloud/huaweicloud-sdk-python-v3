@@ -53,7 +53,7 @@ class ListPrivateZonesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param type: 待查询的zone的类型。  取值范围：private。
+        :param type: 待查询的域名的类型。  取值范围：private。
         :type type: str
         :param limit: 每页返回的资源个数。  取值范围：0~500  取值一般为10，20，50。默认值为500。
         :type limit: int
@@ -63,17 +63,17 @@ class ListPrivateZonesRequest:
         :type offset: int
         :param tags: 资源标签。
         :type tags: str
-        :param name: Zone名称。  搜索模式默认为模糊搜索。
+        :param name: 域名。  搜索模式默认为模糊搜索。
         :type name: str
-        :param id: Zone ID。
+        :param id: 域名ID。
         :type id: str
         :param status: 资源状态。
         :type status: str
         :param search_mode: 查询条件搜索模式。  取值范围：  like：模糊搜索 equal：精确搜索
         :type search_mode: str
-        :param sort_key: 查询结果中zone列表的排序字段。  取值范围为：  name：域名 created_at：创建时间 updated_at：更新时间 默认值为空，表示不排序。
+        :param sort_key: 查询结果中域名列表的排序字段。  取值范围为：  name：域名 created_at：创建时间 updated_at：更新时间 默认值为空，表示不排序。
         :type sort_key: str
-        :param sort_dir: 查询结果中zone列表的排序方式。  取值范围：  desc：降序排序 asc：升序排序 默认值为空，表示不排序。
+        :param sort_dir: 查询结果中域名列表的排序方式。  取值范围：  desc：降序排序 asc：升序排序 默认值为空，表示不排序。
         :type sort_dir: str
         :param enterprise_project_id: 域名关联的企业项目ID，长度不超过36个字符。
         :type enterprise_project_id: str
@@ -128,7 +128,7 @@ class ListPrivateZonesRequest:
     def type(self):
         r"""Gets the type of this ListPrivateZonesRequest.
 
-        待查询的zone的类型。  取值范围：private。
+        待查询的域名的类型。  取值范围：private。
 
         :return: The type of this ListPrivateZonesRequest.
         :rtype: str
@@ -139,7 +139,7 @@ class ListPrivateZonesRequest:
     def type(self, type):
         r"""Sets the type of this ListPrivateZonesRequest.
 
-        待查询的zone的类型。  取值范围：private。
+        待查询的域名的类型。  取值范围：private。
 
         :param type: The type of this ListPrivateZonesRequest.
         :type type: str
@@ -238,7 +238,7 @@ class ListPrivateZonesRequest:
     def name(self):
         r"""Gets the name of this ListPrivateZonesRequest.
 
-        Zone名称。  搜索模式默认为模糊搜索。
+        域名。  搜索模式默认为模糊搜索。
 
         :return: The name of this ListPrivateZonesRequest.
         :rtype: str
@@ -249,7 +249,7 @@ class ListPrivateZonesRequest:
     def name(self, name):
         r"""Sets the name of this ListPrivateZonesRequest.
 
-        Zone名称。  搜索模式默认为模糊搜索。
+        域名。  搜索模式默认为模糊搜索。
 
         :param name: The name of this ListPrivateZonesRequest.
         :type name: str
@@ -260,7 +260,7 @@ class ListPrivateZonesRequest:
     def id(self):
         r"""Gets the id of this ListPrivateZonesRequest.
 
-        Zone ID。
+        域名ID。
 
         :return: The id of this ListPrivateZonesRequest.
         :rtype: str
@@ -271,7 +271,7 @@ class ListPrivateZonesRequest:
     def id(self, id):
         r"""Sets the id of this ListPrivateZonesRequest.
 
-        Zone ID。
+        域名ID。
 
         :param id: The id of this ListPrivateZonesRequest.
         :type id: str
@@ -326,7 +326,7 @@ class ListPrivateZonesRequest:
     def sort_key(self):
         r"""Gets the sort_key of this ListPrivateZonesRequest.
 
-        查询结果中zone列表的排序字段。  取值范围为：  name：域名 created_at：创建时间 updated_at：更新时间 默认值为空，表示不排序。
+        查询结果中域名列表的排序字段。  取值范围为：  name：域名 created_at：创建时间 updated_at：更新时间 默认值为空，表示不排序。
 
         :return: The sort_key of this ListPrivateZonesRequest.
         :rtype: str
@@ -337,7 +337,7 @@ class ListPrivateZonesRequest:
     def sort_key(self, sort_key):
         r"""Sets the sort_key of this ListPrivateZonesRequest.
 
-        查询结果中zone列表的排序字段。  取值范围为：  name：域名 created_at：创建时间 updated_at：更新时间 默认值为空，表示不排序。
+        查询结果中域名列表的排序字段。  取值范围为：  name：域名 created_at：创建时间 updated_at：更新时间 默认值为空，表示不排序。
 
         :param sort_key: The sort_key of this ListPrivateZonesRequest.
         :type sort_key: str
@@ -348,7 +348,7 @@ class ListPrivateZonesRequest:
     def sort_dir(self):
         r"""Gets the sort_dir of this ListPrivateZonesRequest.
 
-        查询结果中zone列表的排序方式。  取值范围：  desc：降序排序 asc：升序排序 默认值为空，表示不排序。
+        查询结果中域名列表的排序方式。  取值范围：  desc：降序排序 asc：升序排序 默认值为空，表示不排序。
 
         :return: The sort_dir of this ListPrivateZonesRequest.
         :rtype: str
@@ -359,7 +359,7 @@ class ListPrivateZonesRequest:
     def sort_dir(self, sort_dir):
         r"""Sets the sort_dir of this ListPrivateZonesRequest.
 
-        查询结果中zone列表的排序方式。  取值范围：  desc：降序排序 asc：升序排序 默认值为空，表示不排序。
+        查询结果中域名列表的排序方式。  取值范围：  desc：降序排序 asc：升序排序 默认值为空，表示不排序。
 
         :param sort_dir: The sort_dir of this ListPrivateZonesRequest.
         :type sort_dir: str

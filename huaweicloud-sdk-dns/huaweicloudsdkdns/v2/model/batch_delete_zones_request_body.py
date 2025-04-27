@@ -31,9 +31,9 @@ class BatchDeleteZonesRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param zone_type: 待删除zone类型，当前仅支持 public 或 private。
+        :param zone_type: 待删除域名类型，支持public或private。
         :type zone_type: str
-        :param zone_ids: 待删除Zone ID列表。 最多支持50个。
+        :param zone_ids: 待删除域名ID列表。 最多支持50个。
         :type zone_ids: list[str]
         """
         
@@ -50,7 +50,7 @@ class BatchDeleteZonesRequestBody:
     def zone_type(self):
         r"""Gets the zone_type of this BatchDeleteZonesRequestBody.
 
-        待删除zone类型，当前仅支持 public 或 private。
+        待删除域名类型，支持public或private。
 
         :return: The zone_type of this BatchDeleteZonesRequestBody.
         :rtype: str
@@ -61,7 +61,7 @@ class BatchDeleteZonesRequestBody:
     def zone_type(self, zone_type):
         r"""Sets the zone_type of this BatchDeleteZonesRequestBody.
 
-        待删除zone类型，当前仅支持 public 或 private。
+        待删除域名类型，支持public或private。
 
         :param zone_type: The zone_type of this BatchDeleteZonesRequestBody.
         :type zone_type: str
@@ -72,7 +72,7 @@ class BatchDeleteZonesRequestBody:
     def zone_ids(self):
         r"""Gets the zone_ids of this BatchDeleteZonesRequestBody.
 
-        待删除Zone ID列表。 最多支持50个。
+        待删除域名ID列表。 最多支持50个。
 
         :return: The zone_ids of this BatchDeleteZonesRequestBody.
         :rtype: list[str]
@@ -83,7 +83,7 @@ class BatchDeleteZonesRequestBody:
     def zone_ids(self, zone_ids):
         r"""Sets the zone_ids of this BatchDeleteZonesRequestBody.
 
-        待删除Zone ID列表。 最多支持50个。
+        待删除域名ID列表。 最多支持50个。
 
         :param zone_ids: The zone_ids of this BatchDeleteZonesRequestBody.
         :type zone_ids: list[str]

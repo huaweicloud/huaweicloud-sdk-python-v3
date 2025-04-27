@@ -60,37 +60,37 @@ class CreatePublicZoneResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param id: zone的ID，uuid形式的一个资源标识。
+        :param id: 域名的ID，UUID形式的一个资源标识。
         :type id: str
-        :param name: zone名称。
+        :param name: 域名。
         :type name: str
-        :param description: 对zone的描述信息。
+        :param description: 对域名的描述信息。
         :type description: str
-        :param email: 管理该zone的管理员邮箱，用于生成该Zone的SOA记录。
+        :param email: 管理该域名的管理员邮箱，用于生成该域名的SOA记录。
         :type email: str
-        :param zone_type: zone类型，公网（public）。
+        :param zone_type: 域名类型，公网（public）。
         :type zone_type: str
-        :param ttl: 该zone下SOA记录中的ttl值。
+        :param ttl: 该域名下SOA记录中的ttl值。
         :type ttl: int
-        :param serial: 该zone下SOA记录中用于标识zone文件变更的序列值，用于主从节点同步。
+        :param serial: 该域名下SOA记录中用于标识域名文件变更的序列值，用于主从节点同步。
         :type serial: int
         :param status: 资源状态。
         :type status: str
-        :param record_num: 该zone下的recordset个数。
+        :param record_num: 该域名下的记录集个数。
         :type record_num: int
-        :param pool_id: 托管该zone的pool，由系统分配。
+        :param pool_id: 托管该域名的pool，由系统分配。
         :type pool_id: str
-        :param project_id: zone所属的项目ID。
+        :param project_id: 域名所属的项目ID。
         :type project_id: str
-        :param created_at: 创建时间。  采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
+        :param created_at: 创建时间。 格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSS。
         :type created_at: str
-        :param updated_at: 更新时间。  采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
+        :param updated_at: 更新时间。 格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSS。
         :type updated_at: str
         :param links: 
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`
         :param enterprise_project_id: 域名关联的企业项目ID，长度不超过36个字符。
         :type enterprise_project_id: str
-        :param masters: 主从模式中，从DNS服务器获取DNS信息。  目前暂未使用。
+        :param masters: 主从模式中，从DNS服务器获取DNS信息。目前暂未使用。
         :type masters: list[str]
         """
         
@@ -151,7 +151,7 @@ class CreatePublicZoneResponse(SdkResponse):
     def id(self):
         r"""Gets the id of this CreatePublicZoneResponse.
 
-        zone的ID，uuid形式的一个资源标识。
+        域名的ID，UUID形式的一个资源标识。
 
         :return: The id of this CreatePublicZoneResponse.
         :rtype: str
@@ -162,7 +162,7 @@ class CreatePublicZoneResponse(SdkResponse):
     def id(self, id):
         r"""Sets the id of this CreatePublicZoneResponse.
 
-        zone的ID，uuid形式的一个资源标识。
+        域名的ID，UUID形式的一个资源标识。
 
         :param id: The id of this CreatePublicZoneResponse.
         :type id: str
@@ -173,7 +173,7 @@ class CreatePublicZoneResponse(SdkResponse):
     def name(self):
         r"""Gets the name of this CreatePublicZoneResponse.
 
-        zone名称。
+        域名。
 
         :return: The name of this CreatePublicZoneResponse.
         :rtype: str
@@ -184,7 +184,7 @@ class CreatePublicZoneResponse(SdkResponse):
     def name(self, name):
         r"""Sets the name of this CreatePublicZoneResponse.
 
-        zone名称。
+        域名。
 
         :param name: The name of this CreatePublicZoneResponse.
         :type name: str
@@ -195,7 +195,7 @@ class CreatePublicZoneResponse(SdkResponse):
     def description(self):
         r"""Gets the description of this CreatePublicZoneResponse.
 
-        对zone的描述信息。
+        对域名的描述信息。
 
         :return: The description of this CreatePublicZoneResponse.
         :rtype: str
@@ -206,7 +206,7 @@ class CreatePublicZoneResponse(SdkResponse):
     def description(self, description):
         r"""Sets the description of this CreatePublicZoneResponse.
 
-        对zone的描述信息。
+        对域名的描述信息。
 
         :param description: The description of this CreatePublicZoneResponse.
         :type description: str
@@ -217,7 +217,7 @@ class CreatePublicZoneResponse(SdkResponse):
     def email(self):
         r"""Gets the email of this CreatePublicZoneResponse.
 
-        管理该zone的管理员邮箱，用于生成该Zone的SOA记录。
+        管理该域名的管理员邮箱，用于生成该域名的SOA记录。
 
         :return: The email of this CreatePublicZoneResponse.
         :rtype: str
@@ -228,7 +228,7 @@ class CreatePublicZoneResponse(SdkResponse):
     def email(self, email):
         r"""Sets the email of this CreatePublicZoneResponse.
 
-        管理该zone的管理员邮箱，用于生成该Zone的SOA记录。
+        管理该域名的管理员邮箱，用于生成该域名的SOA记录。
 
         :param email: The email of this CreatePublicZoneResponse.
         :type email: str
@@ -239,7 +239,7 @@ class CreatePublicZoneResponse(SdkResponse):
     def zone_type(self):
         r"""Gets the zone_type of this CreatePublicZoneResponse.
 
-        zone类型，公网（public）。
+        域名类型，公网（public）。
 
         :return: The zone_type of this CreatePublicZoneResponse.
         :rtype: str
@@ -250,7 +250,7 @@ class CreatePublicZoneResponse(SdkResponse):
     def zone_type(self, zone_type):
         r"""Sets the zone_type of this CreatePublicZoneResponse.
 
-        zone类型，公网（public）。
+        域名类型，公网（public）。
 
         :param zone_type: The zone_type of this CreatePublicZoneResponse.
         :type zone_type: str
@@ -261,7 +261,7 @@ class CreatePublicZoneResponse(SdkResponse):
     def ttl(self):
         r"""Gets the ttl of this CreatePublicZoneResponse.
 
-        该zone下SOA记录中的ttl值。
+        该域名下SOA记录中的ttl值。
 
         :return: The ttl of this CreatePublicZoneResponse.
         :rtype: int
@@ -272,7 +272,7 @@ class CreatePublicZoneResponse(SdkResponse):
     def ttl(self, ttl):
         r"""Sets the ttl of this CreatePublicZoneResponse.
 
-        该zone下SOA记录中的ttl值。
+        该域名下SOA记录中的ttl值。
 
         :param ttl: The ttl of this CreatePublicZoneResponse.
         :type ttl: int
@@ -283,7 +283,7 @@ class CreatePublicZoneResponse(SdkResponse):
     def serial(self):
         r"""Gets the serial of this CreatePublicZoneResponse.
 
-        该zone下SOA记录中用于标识zone文件变更的序列值，用于主从节点同步。
+        该域名下SOA记录中用于标识域名文件变更的序列值，用于主从节点同步。
 
         :return: The serial of this CreatePublicZoneResponse.
         :rtype: int
@@ -294,7 +294,7 @@ class CreatePublicZoneResponse(SdkResponse):
     def serial(self, serial):
         r"""Sets the serial of this CreatePublicZoneResponse.
 
-        该zone下SOA记录中用于标识zone文件变更的序列值，用于主从节点同步。
+        该域名下SOA记录中用于标识域名文件变更的序列值，用于主从节点同步。
 
         :param serial: The serial of this CreatePublicZoneResponse.
         :type serial: int
@@ -327,7 +327,7 @@ class CreatePublicZoneResponse(SdkResponse):
     def record_num(self):
         r"""Gets the record_num of this CreatePublicZoneResponse.
 
-        该zone下的recordset个数。
+        该域名下的记录集个数。
 
         :return: The record_num of this CreatePublicZoneResponse.
         :rtype: int
@@ -338,7 +338,7 @@ class CreatePublicZoneResponse(SdkResponse):
     def record_num(self, record_num):
         r"""Sets the record_num of this CreatePublicZoneResponse.
 
-        该zone下的recordset个数。
+        该域名下的记录集个数。
 
         :param record_num: The record_num of this CreatePublicZoneResponse.
         :type record_num: int
@@ -349,7 +349,7 @@ class CreatePublicZoneResponse(SdkResponse):
     def pool_id(self):
         r"""Gets the pool_id of this CreatePublicZoneResponse.
 
-        托管该zone的pool，由系统分配。
+        托管该域名的pool，由系统分配。
 
         :return: The pool_id of this CreatePublicZoneResponse.
         :rtype: str
@@ -360,7 +360,7 @@ class CreatePublicZoneResponse(SdkResponse):
     def pool_id(self, pool_id):
         r"""Sets the pool_id of this CreatePublicZoneResponse.
 
-        托管该zone的pool，由系统分配。
+        托管该域名的pool，由系统分配。
 
         :param pool_id: The pool_id of this CreatePublicZoneResponse.
         :type pool_id: str
@@ -371,7 +371,7 @@ class CreatePublicZoneResponse(SdkResponse):
     def project_id(self):
         r"""Gets the project_id of this CreatePublicZoneResponse.
 
-        zone所属的项目ID。
+        域名所属的项目ID。
 
         :return: The project_id of this CreatePublicZoneResponse.
         :rtype: str
@@ -382,7 +382,7 @@ class CreatePublicZoneResponse(SdkResponse):
     def project_id(self, project_id):
         r"""Sets the project_id of this CreatePublicZoneResponse.
 
-        zone所属的项目ID。
+        域名所属的项目ID。
 
         :param project_id: The project_id of this CreatePublicZoneResponse.
         :type project_id: str
@@ -393,7 +393,7 @@ class CreatePublicZoneResponse(SdkResponse):
     def created_at(self):
         r"""Gets the created_at of this CreatePublicZoneResponse.
 
-        创建时间。  采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
+        创建时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。
 
         :return: The created_at of this CreatePublicZoneResponse.
         :rtype: str
@@ -404,7 +404,7 @@ class CreatePublicZoneResponse(SdkResponse):
     def created_at(self, created_at):
         r"""Sets the created_at of this CreatePublicZoneResponse.
 
-        创建时间。  采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
+        创建时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。
 
         :param created_at: The created_at of this CreatePublicZoneResponse.
         :type created_at: str
@@ -415,7 +415,7 @@ class CreatePublicZoneResponse(SdkResponse):
     def updated_at(self):
         r"""Gets the updated_at of this CreatePublicZoneResponse.
 
-        更新时间。  采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
+        更新时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。
 
         :return: The updated_at of this CreatePublicZoneResponse.
         :rtype: str
@@ -426,7 +426,7 @@ class CreatePublicZoneResponse(SdkResponse):
     def updated_at(self, updated_at):
         r"""Sets the updated_at of this CreatePublicZoneResponse.
 
-        更新时间。  采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
+        更新时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。
 
         :param updated_at: The updated_at of this CreatePublicZoneResponse.
         :type updated_at: str
@@ -477,7 +477,7 @@ class CreatePublicZoneResponse(SdkResponse):
     def masters(self):
         r"""Gets the masters of this CreatePublicZoneResponse.
 
-        主从模式中，从DNS服务器获取DNS信息。  目前暂未使用。
+        主从模式中，从DNS服务器获取DNS信息。目前暂未使用。
 
         :return: The masters of this CreatePublicZoneResponse.
         :rtype: list[str]
@@ -488,7 +488,7 @@ class CreatePublicZoneResponse(SdkResponse):
     def masters(self, masters):
         r"""Sets the masters of this CreatePublicZoneResponse.
 
-        主从模式中，从DNS服务器获取DNS信息。  目前暂未使用。
+        主从模式中，从DNS服务器获取DNS信息。目前暂未使用。
 
         :param masters: The masters of this CreatePublicZoneResponse.
         :type masters: list[str]

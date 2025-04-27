@@ -63,15 +63,15 @@ class ShowRecordSetByZoneResp:
 
         The model defined in huaweicloud sdk
 
-        :param id: Record Set的ID。
+        :param id: 记录集的ID。
         :type id: str
-        :param name: Record Set的名称。
+        :param name: 记录集的名称。
         :type name: str
-        :param description: Record Set的描述信息。
+        :param description: 记录集的描述信息。
         :type description: str
-        :param zone_id: 托管该记录的zone_id。
+        :param zone_id: 托管该记录的域名ID。
         :type zone_id: str
-        :param zone_name: 托管该记录的zone_name。
+        :param zone_name: 托管该记录的域名。
         :type zone_name: str
         :param type: 记录类型。  取值范围：A、AAAA、MX、CNAME、TXT、NS、SRV、CAA。
         :type type: str
@@ -79,15 +79,15 @@ class ShowRecordSetByZoneResp:
         :type ttl: int
         :param records: 域名解析后的值。
         :type records: list[str]
-        :param created_at: 创建时间。
+        :param created_at: 创建时间。 格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSS。
         :type created_at: str
-        :param updated_at: 更新时间。
+        :param updated_at: 更新时间。 格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSS。
         :type updated_at: str
         :param status: 资源状态。
         :type status: str
-        :param default: 标识是否由系统默认生成，系统默认生成的Record Set不能删除。
+        :param default: 标识是否由系统默认生成，系统默认生成的记录集不能删除。
         :type default: bool
-        :param project_id: 该Record Set所属的项目ID。
+        :param project_id: 该记录集所属的项目ID。
         :type project_id: str
         :param links: 
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`
@@ -164,7 +164,7 @@ class ShowRecordSetByZoneResp:
     def id(self):
         r"""Gets the id of this ShowRecordSetByZoneResp.
 
-        Record Set的ID。
+        记录集的ID。
 
         :return: The id of this ShowRecordSetByZoneResp.
         :rtype: str
@@ -175,7 +175,7 @@ class ShowRecordSetByZoneResp:
     def id(self, id):
         r"""Sets the id of this ShowRecordSetByZoneResp.
 
-        Record Set的ID。
+        记录集的ID。
 
         :param id: The id of this ShowRecordSetByZoneResp.
         :type id: str
@@ -186,7 +186,7 @@ class ShowRecordSetByZoneResp:
     def name(self):
         r"""Gets the name of this ShowRecordSetByZoneResp.
 
-        Record Set的名称。
+        记录集的名称。
 
         :return: The name of this ShowRecordSetByZoneResp.
         :rtype: str
@@ -197,7 +197,7 @@ class ShowRecordSetByZoneResp:
     def name(self, name):
         r"""Sets the name of this ShowRecordSetByZoneResp.
 
-        Record Set的名称。
+        记录集的名称。
 
         :param name: The name of this ShowRecordSetByZoneResp.
         :type name: str
@@ -208,7 +208,7 @@ class ShowRecordSetByZoneResp:
     def description(self):
         r"""Gets the description of this ShowRecordSetByZoneResp.
 
-        Record Set的描述信息。
+        记录集的描述信息。
 
         :return: The description of this ShowRecordSetByZoneResp.
         :rtype: str
@@ -219,7 +219,7 @@ class ShowRecordSetByZoneResp:
     def description(self, description):
         r"""Sets the description of this ShowRecordSetByZoneResp.
 
-        Record Set的描述信息。
+        记录集的描述信息。
 
         :param description: The description of this ShowRecordSetByZoneResp.
         :type description: str
@@ -230,7 +230,7 @@ class ShowRecordSetByZoneResp:
     def zone_id(self):
         r"""Gets the zone_id of this ShowRecordSetByZoneResp.
 
-        托管该记录的zone_id。
+        托管该记录的域名ID。
 
         :return: The zone_id of this ShowRecordSetByZoneResp.
         :rtype: str
@@ -241,7 +241,7 @@ class ShowRecordSetByZoneResp:
     def zone_id(self, zone_id):
         r"""Sets the zone_id of this ShowRecordSetByZoneResp.
 
-        托管该记录的zone_id。
+        托管该记录的域名ID。
 
         :param zone_id: The zone_id of this ShowRecordSetByZoneResp.
         :type zone_id: str
@@ -252,7 +252,7 @@ class ShowRecordSetByZoneResp:
     def zone_name(self):
         r"""Gets the zone_name of this ShowRecordSetByZoneResp.
 
-        托管该记录的zone_name。
+        托管该记录的域名。
 
         :return: The zone_name of this ShowRecordSetByZoneResp.
         :rtype: str
@@ -263,7 +263,7 @@ class ShowRecordSetByZoneResp:
     def zone_name(self, zone_name):
         r"""Sets the zone_name of this ShowRecordSetByZoneResp.
 
-        托管该记录的zone_name。
+        托管该记录的域名。
 
         :param zone_name: The zone_name of this ShowRecordSetByZoneResp.
         :type zone_name: str
@@ -340,7 +340,7 @@ class ShowRecordSetByZoneResp:
     def created_at(self):
         r"""Gets the created_at of this ShowRecordSetByZoneResp.
 
-        创建时间。
+        创建时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。
 
         :return: The created_at of this ShowRecordSetByZoneResp.
         :rtype: str
@@ -351,7 +351,7 @@ class ShowRecordSetByZoneResp:
     def created_at(self, created_at):
         r"""Sets the created_at of this ShowRecordSetByZoneResp.
 
-        创建时间。
+        创建时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。
 
         :param created_at: The created_at of this ShowRecordSetByZoneResp.
         :type created_at: str
@@ -362,7 +362,7 @@ class ShowRecordSetByZoneResp:
     def updated_at(self):
         r"""Gets the updated_at of this ShowRecordSetByZoneResp.
 
-        更新时间。
+        更新时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。
 
         :return: The updated_at of this ShowRecordSetByZoneResp.
         :rtype: str
@@ -373,7 +373,7 @@ class ShowRecordSetByZoneResp:
     def updated_at(self, updated_at):
         r"""Sets the updated_at of this ShowRecordSetByZoneResp.
 
-        更新时间。
+        更新时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。
 
         :param updated_at: The updated_at of this ShowRecordSetByZoneResp.
         :type updated_at: str
@@ -406,7 +406,7 @@ class ShowRecordSetByZoneResp:
     def default(self):
         r"""Gets the default of this ShowRecordSetByZoneResp.
 
-        标识是否由系统默认生成，系统默认生成的Record Set不能删除。
+        标识是否由系统默认生成，系统默认生成的记录集不能删除。
 
         :return: The default of this ShowRecordSetByZoneResp.
         :rtype: bool
@@ -417,7 +417,7 @@ class ShowRecordSetByZoneResp:
     def default(self, default):
         r"""Sets the default of this ShowRecordSetByZoneResp.
 
-        标识是否由系统默认生成，系统默认生成的Record Set不能删除。
+        标识是否由系统默认生成，系统默认生成的记录集不能删除。
 
         :param default: The default of this ShowRecordSetByZoneResp.
         :type default: bool
@@ -428,7 +428,7 @@ class ShowRecordSetByZoneResp:
     def project_id(self):
         r"""Gets the project_id of this ShowRecordSetByZoneResp.
 
-        该Record Set所属的项目ID。
+        该记录集所属的项目ID。
 
         :return: The project_id of this ShowRecordSetByZoneResp.
         :rtype: str
@@ -439,7 +439,7 @@ class ShowRecordSetByZoneResp:
     def project_id(self, project_id):
         r"""Sets the project_id of this ShowRecordSetByZoneResp.
 
-        该Record Set所属的项目ID。
+        该记录集所属的项目ID。
 
         :param project_id: The project_id of this ShowRecordSetByZoneResp.
         :type project_id: str

@@ -31,9 +31,9 @@ class BatchSetRecordSetsStatusRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param status: 待设置Record Set状态，当前仅支持DISABLE或ENABLE。
+        :param status: 待设置记录集状态，支持DISABLE或ENABLE。
         :type status: str
-        :param recordset_ids: 待设置Record Set ID列表。 最多支持50个。
+        :param recordset_ids: 待设置记录集ID列表。 最多支持50个。
         :type recordset_ids: list[str]
         """
         
@@ -50,7 +50,7 @@ class BatchSetRecordSetsStatusRequestBody:
     def status(self):
         r"""Gets the status of this BatchSetRecordSetsStatusRequestBody.
 
-        待设置Record Set状态，当前仅支持DISABLE或ENABLE。
+        待设置记录集状态，支持DISABLE或ENABLE。
 
         :return: The status of this BatchSetRecordSetsStatusRequestBody.
         :rtype: str
@@ -61,7 +61,7 @@ class BatchSetRecordSetsStatusRequestBody:
     def status(self, status):
         r"""Sets the status of this BatchSetRecordSetsStatusRequestBody.
 
-        待设置Record Set状态，当前仅支持DISABLE或ENABLE。
+        待设置记录集状态，支持DISABLE或ENABLE。
 
         :param status: The status of this BatchSetRecordSetsStatusRequestBody.
         :type status: str
@@ -72,7 +72,7 @@ class BatchSetRecordSetsStatusRequestBody:
     def recordset_ids(self):
         r"""Gets the recordset_ids of this BatchSetRecordSetsStatusRequestBody.
 
-        待设置Record Set ID列表。 最多支持50个。
+        待设置记录集ID列表。 最多支持50个。
 
         :return: The recordset_ids of this BatchSetRecordSetsStatusRequestBody.
         :rtype: list[str]
@@ -83,7 +83,7 @@ class BatchSetRecordSetsStatusRequestBody:
     def recordset_ids(self, recordset_ids):
         r"""Sets the recordset_ids of this BatchSetRecordSetsStatusRequestBody.
 
-        待设置Record Set ID列表。 最多支持50个。
+        待设置记录集ID列表。 最多支持50个。
 
         :param recordset_ids: The recordset_ids of this BatchSetRecordSetsStatusRequestBody.
         :type recordset_ids: list[str]
