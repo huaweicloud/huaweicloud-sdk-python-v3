@@ -32,9 +32,9 @@ class ListAvailableZonesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param region_id: 区域ID。
+        :param region_id: **参数解释**： 区域ID。 **取值范围**： 不涉及。
         :type region_id: str
-        :param available_zones: 可用区数组。
+        :param available_zones: **参数解释**： 可用区数组。
         :type available_zones: list[:class:`huaweicloudsdkrocketmq.v2.ListAvailableZonesRespAvailableZones`]
         """
         
@@ -53,7 +53,7 @@ class ListAvailableZonesResponse(SdkResponse):
     def region_id(self):
         r"""Gets the region_id of this ListAvailableZonesResponse.
 
-        区域ID。
+        **参数解释**： 区域ID。 **取值范围**： 不涉及。
 
         :return: The region_id of this ListAvailableZonesResponse.
         :rtype: str
@@ -64,7 +64,7 @@ class ListAvailableZonesResponse(SdkResponse):
     def region_id(self, region_id):
         r"""Sets the region_id of this ListAvailableZonesResponse.
 
-        区域ID。
+        **参数解释**： 区域ID。 **取值范围**： 不涉及。
 
         :param region_id: The region_id of this ListAvailableZonesResponse.
         :type region_id: str
@@ -75,7 +75,7 @@ class ListAvailableZonesResponse(SdkResponse):
     def available_zones(self):
         r"""Gets the available_zones of this ListAvailableZonesResponse.
 
-        可用区数组。
+        **参数解释**： 可用区数组。
 
         :return: The available_zones of this ListAvailableZonesResponse.
         :rtype: list[:class:`huaweicloudsdkrocketmq.v2.ListAvailableZonesRespAvailableZones`]
@@ -86,7 +86,7 @@ class ListAvailableZonesResponse(SdkResponse):
     def available_zones(self, available_zones):
         r"""Sets the available_zones of this ListAvailableZonesResponse.
 
-        可用区数组。
+        **参数解释**： 可用区数组。
 
         :param available_zones: The available_zones of this ListAvailableZonesResponse.
         :type available_zones: list[:class:`huaweicloudsdkrocketmq.v2.ListAvailableZonesRespAvailableZones`]

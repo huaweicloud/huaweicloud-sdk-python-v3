@@ -54,6 +54,8 @@ class SecMasterRegion:
                         "https://secmaster.eu-west-101.myhuaweicloud.com")
     AP_SOUTHEAST_5 = Region("ap-southeast-5",
                         "https://secmaster.ap-southeast-5.myhuaweicloud.com")
+    MY_KUALALUMPUR_1 = Region("my-kualalumpur-1",
+                        "https://secmaster.my-kualalumpur-1.myhuaweicloud.com")
 
     static_fields = {
         "cn-north-4": CN_NORTH_4,
@@ -80,6 +82,7 @@ class SecMasterRegion:
         "la-south-2": LA_SOUTH_2,
         "eu-west-101": EU_WEST_101,
         "ap-southeast-5": AP_SOUTHEAST_5,
+        "my-kualalumpur-1": MY_KUALALUMPUR_1,
     }
 
     @classmethod

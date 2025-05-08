@@ -49,7 +49,9 @@ class CreateFunctionRequestBody:
         'is_stateful_function': 'bool',
         'enable_dynamic_memory': 'bool',
         'enable_lts_log': 'bool',
-        'lts_custom_tag': 'dict(str, str)'
+        'lts_custom_tag': 'dict(str, str)',
+        'user_data_encrypt_kms_key_id': 'str',
+        'code_encrypt_kms_key_id': 'str'
     }
 
     attribute_map = {
@@ -85,10 +87,12 @@ class CreateFunctionRequestBody:
         'is_stateful_function': 'is_stateful_function',
         'enable_dynamic_memory': 'enable_dynamic_memory',
         'enable_lts_log': 'enable_lts_log',
-        'lts_custom_tag': 'lts_custom_tag'
+        'lts_custom_tag': 'lts_custom_tag',
+        'user_data_encrypt_kms_key_id': 'user_data_encrypt_kms_key_id',
+        'code_encrypt_kms_key_id': 'code_encrypt_kms_key_id'
     }
 
-    def __init__(self, func_name=None, package=None, runtime=None, timeout=None, handler=None, depend_version_list=None, func_vpc=None, memory_size=None, gpu_memory=None, gpu_type=None, code_type=None, code_url=None, code_filename=None, custom_image=None, user_data=None, encrypted_user_data=None, xrole=None, app_xrole=None, description=None, func_code=None, mount_config=None, initializer_handler=None, initializer_timeout=None, pre_stop_handler=None, pre_stop_timeout=None, enterprise_project_id=None, type=None, log_config=None, network_controller=None, is_stateful_function=None, enable_dynamic_memory=None, enable_lts_log=None, lts_custom_tag=None):
+    def __init__(self, func_name=None, package=None, runtime=None, timeout=None, handler=None, depend_version_list=None, func_vpc=None, memory_size=None, gpu_memory=None, gpu_type=None, code_type=None, code_url=None, code_filename=None, custom_image=None, user_data=None, encrypted_user_data=None, xrole=None, app_xrole=None, description=None, func_code=None, mount_config=None, initializer_handler=None, initializer_timeout=None, pre_stop_handler=None, pre_stop_timeout=None, enterprise_project_id=None, type=None, log_config=None, network_controller=None, is_stateful_function=None, enable_dynamic_memory=None, enable_lts_log=None, lts_custom_tag=None, user_data_encrypt_kms_key_id=None, code_encrypt_kms_key_id=None):
         r"""CreateFunctionRequestBody
 
         The model defined in huaweicloud sdk
@@ -159,6 +163,10 @@ class CreateFunctionRequestBody:
         :type enable_lts_log: bool
         :param lts_custom_tag: 自定义日志标签。函数执行时，可以按照自定义标签配置上报标签到云日志服务(LTS)，用户可以通过标签对日志进行过滤筛选。
         :type lts_custom_tag: dict(str, str)
+        :param user_data_encrypt_kms_key_id: 用于环境变量加密的kms主秘钥ID。
+        :type user_data_encrypt_kms_key_id: str
+        :param code_encrypt_kms_key_id: 用于用户代码加密的kms主秘钥ID。
+        :type code_encrypt_kms_key_id: str
         """
         
         
@@ -196,6 +204,8 @@ class CreateFunctionRequestBody:
         self._enable_dynamic_memory = None
         self._enable_lts_log = None
         self._lts_custom_tag = None
+        self._user_data_encrypt_kms_key_id = None
+        self._code_encrypt_kms_key_id = None
         self.discriminator = None
 
         self.func_name = func_name
@@ -258,6 +268,10 @@ class CreateFunctionRequestBody:
             self.enable_lts_log = enable_lts_log
         if lts_custom_tag is not None:
             self.lts_custom_tag = lts_custom_tag
+        if user_data_encrypt_kms_key_id is not None:
+            self.user_data_encrypt_kms_key_id = user_data_encrypt_kms_key_id
+        if code_encrypt_kms_key_id is not None:
+            self.code_encrypt_kms_key_id = code_encrypt_kms_key_id
 
     @property
     def func_name(self):
@@ -960,6 +974,50 @@ class CreateFunctionRequestBody:
         :type lts_custom_tag: dict(str, str)
         """
         self._lts_custom_tag = lts_custom_tag
+
+    @property
+    def user_data_encrypt_kms_key_id(self):
+        r"""Gets the user_data_encrypt_kms_key_id of this CreateFunctionRequestBody.
+
+        用于环境变量加密的kms主秘钥ID。
+
+        :return: The user_data_encrypt_kms_key_id of this CreateFunctionRequestBody.
+        :rtype: str
+        """
+        return self._user_data_encrypt_kms_key_id
+
+    @user_data_encrypt_kms_key_id.setter
+    def user_data_encrypt_kms_key_id(self, user_data_encrypt_kms_key_id):
+        r"""Sets the user_data_encrypt_kms_key_id of this CreateFunctionRequestBody.
+
+        用于环境变量加密的kms主秘钥ID。
+
+        :param user_data_encrypt_kms_key_id: The user_data_encrypt_kms_key_id of this CreateFunctionRequestBody.
+        :type user_data_encrypt_kms_key_id: str
+        """
+        self._user_data_encrypt_kms_key_id = user_data_encrypt_kms_key_id
+
+    @property
+    def code_encrypt_kms_key_id(self):
+        r"""Gets the code_encrypt_kms_key_id of this CreateFunctionRequestBody.
+
+        用于用户代码加密的kms主秘钥ID。
+
+        :return: The code_encrypt_kms_key_id of this CreateFunctionRequestBody.
+        :rtype: str
+        """
+        return self._code_encrypt_kms_key_id
+
+    @code_encrypt_kms_key_id.setter
+    def code_encrypt_kms_key_id(self, code_encrypt_kms_key_id):
+        r"""Sets the code_encrypt_kms_key_id of this CreateFunctionRequestBody.
+
+        用于用户代码加密的kms主秘钥ID。
+
+        :param code_encrypt_kms_key_id: The code_encrypt_kms_key_id of this CreateFunctionRequestBody.
+        :type code_encrypt_kms_key_id: str
+        """
+        self._code_encrypt_kms_key_id = code_encrypt_kms_key_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

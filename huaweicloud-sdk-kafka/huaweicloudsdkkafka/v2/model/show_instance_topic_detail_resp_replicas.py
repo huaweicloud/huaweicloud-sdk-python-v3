@@ -37,15 +37,15 @@ class ShowInstanceTopicDetailRespReplicas:
 
         The model defined in huaweicloud sdk
 
-        :param broker: 副本所在的节点ID。
+        :param broker: **参数解释**： 副本所在的节点ID。 **取值范围**： 不涉及
         :type broker: int
-        :param leader: 该副本是否为leader。
+        :param leader: **参数解释**： 该副本是否为leader。 **取值范围**： - true：该副本是leader。 - false：该副本不是leader。
         :type leader: bool
-        :param in_sync: 该副本是否在ISR副本中。
+        :param in_sync: **参数解释**： 该副本是否在ISR副本中。 **取值范围**： - true：在ISR副本中。 - false：不在ISR副本中。
         :type in_sync: bool
-        :param size: 该副本当前日志大小。单位：Byte。
+        :param size: **参数解释**： 该副本当前日志大小。单位：Byte。 **取值范围**： 不涉及
         :type size: int
-        :param lag: 该副本当前落后hw的消息数。
+        :param lag: **参数解释**： 该副本当前落后hw的消息数。 **取值范围**： 不涉及
         :type lag: int
         """
         
@@ -73,7 +73,7 @@ class ShowInstanceTopicDetailRespReplicas:
     def broker(self):
         r"""Gets the broker of this ShowInstanceTopicDetailRespReplicas.
 
-        副本所在的节点ID。
+        **参数解释**： 副本所在的节点ID。 **取值范围**： 不涉及
 
         :return: The broker of this ShowInstanceTopicDetailRespReplicas.
         :rtype: int
@@ -84,7 +84,7 @@ class ShowInstanceTopicDetailRespReplicas:
     def broker(self, broker):
         r"""Sets the broker of this ShowInstanceTopicDetailRespReplicas.
 
-        副本所在的节点ID。
+        **参数解释**： 副本所在的节点ID。 **取值范围**： 不涉及
 
         :param broker: The broker of this ShowInstanceTopicDetailRespReplicas.
         :type broker: int
@@ -95,7 +95,7 @@ class ShowInstanceTopicDetailRespReplicas:
     def leader(self):
         r"""Gets the leader of this ShowInstanceTopicDetailRespReplicas.
 
-        该副本是否为leader。
+        **参数解释**： 该副本是否为leader。 **取值范围**： - true：该副本是leader。 - false：该副本不是leader。
 
         :return: The leader of this ShowInstanceTopicDetailRespReplicas.
         :rtype: bool
@@ -106,7 +106,7 @@ class ShowInstanceTopicDetailRespReplicas:
     def leader(self, leader):
         r"""Sets the leader of this ShowInstanceTopicDetailRespReplicas.
 
-        该副本是否为leader。
+        **参数解释**： 该副本是否为leader。 **取值范围**： - true：该副本是leader。 - false：该副本不是leader。
 
         :param leader: The leader of this ShowInstanceTopicDetailRespReplicas.
         :type leader: bool
@@ -117,7 +117,7 @@ class ShowInstanceTopicDetailRespReplicas:
     def in_sync(self):
         r"""Gets the in_sync of this ShowInstanceTopicDetailRespReplicas.
 
-        该副本是否在ISR副本中。
+        **参数解释**： 该副本是否在ISR副本中。 **取值范围**： - true：在ISR副本中。 - false：不在ISR副本中。
 
         :return: The in_sync of this ShowInstanceTopicDetailRespReplicas.
         :rtype: bool
@@ -128,7 +128,7 @@ class ShowInstanceTopicDetailRespReplicas:
     def in_sync(self, in_sync):
         r"""Sets the in_sync of this ShowInstanceTopicDetailRespReplicas.
 
-        该副本是否在ISR副本中。
+        **参数解释**： 该副本是否在ISR副本中。 **取值范围**： - true：在ISR副本中。 - false：不在ISR副本中。
 
         :param in_sync: The in_sync of this ShowInstanceTopicDetailRespReplicas.
         :type in_sync: bool
@@ -139,7 +139,7 @@ class ShowInstanceTopicDetailRespReplicas:
     def size(self):
         r"""Gets the size of this ShowInstanceTopicDetailRespReplicas.
 
-        该副本当前日志大小。单位：Byte。
+        **参数解释**： 该副本当前日志大小。单位：Byte。 **取值范围**： 不涉及
 
         :return: The size of this ShowInstanceTopicDetailRespReplicas.
         :rtype: int
@@ -150,7 +150,7 @@ class ShowInstanceTopicDetailRespReplicas:
     def size(self, size):
         r"""Sets the size of this ShowInstanceTopicDetailRespReplicas.
 
-        该副本当前日志大小。单位：Byte。
+        **参数解释**： 该副本当前日志大小。单位：Byte。 **取值范围**： 不涉及
 
         :param size: The size of this ShowInstanceTopicDetailRespReplicas.
         :type size: int
@@ -161,7 +161,7 @@ class ShowInstanceTopicDetailRespReplicas:
     def lag(self):
         r"""Gets the lag of this ShowInstanceTopicDetailRespReplicas.
 
-        该副本当前落后hw的消息数。
+        **参数解释**： 该副本当前落后hw的消息数。 **取值范围**： 不涉及
 
         :return: The lag of this ShowInstanceTopicDetailRespReplicas.
         :rtype: int
@@ -172,7 +172,7 @@ class ShowInstanceTopicDetailRespReplicas:
     def lag(self, lag):
         r"""Sets the lag of this ShowInstanceTopicDetailRespReplicas.
 
-        该副本当前落后hw的消息数。
+        **参数解释**： 该副本当前落后hw的消息数。 **取值范围**： 不涉及
 
         :param lag: The lag of this ShowInstanceTopicDetailRespReplicas.
         :type lag: int

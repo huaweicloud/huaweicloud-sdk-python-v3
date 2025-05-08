@@ -37,15 +37,15 @@ class ShowMessagesRespMessages:
 
         The model defined in huaweicloud sdk
 
-        :param topic: topic名称。
+        :param topic: **参数解释**： topic名称。 **取值范围**： 不涉及。
         :type topic: str
-        :param partition: 分区编号。
+        :param partition: **参数解释**： 分区编号。 **取值范围**： 不涉及。
         :type partition: int
-        :param message_offset: 消息编号。
+        :param message_offset: **参数解释**： 消息编号。 **取值范围**： 不涉及。
         :type message_offset: int
-        :param size: 消息大小，单位字节。
+        :param size: **参数解释**： 消息大小，单位字节。 **取值范围**： 不涉及。
         :type size: int
-        :param timestamp: 生产消息的时间。 格式为Unix时间戳。单位为毫秒。
+        :param timestamp: **参数解释**： 生产消息的时间。 格式为Unix时间戳。单位为毫秒。 **取值范围**： 不涉及。
         :type timestamp: int
         """
         
@@ -73,7 +73,7 @@ class ShowMessagesRespMessages:
     def topic(self):
         r"""Gets the topic of this ShowMessagesRespMessages.
 
-        topic名称。
+        **参数解释**： topic名称。 **取值范围**： 不涉及。
 
         :return: The topic of this ShowMessagesRespMessages.
         :rtype: str
@@ -84,7 +84,7 @@ class ShowMessagesRespMessages:
     def topic(self, topic):
         r"""Sets the topic of this ShowMessagesRespMessages.
 
-        topic名称。
+        **参数解释**： topic名称。 **取值范围**： 不涉及。
 
         :param topic: The topic of this ShowMessagesRespMessages.
         :type topic: str
@@ -95,7 +95,7 @@ class ShowMessagesRespMessages:
     def partition(self):
         r"""Gets the partition of this ShowMessagesRespMessages.
 
-        分区编号。
+        **参数解释**： 分区编号。 **取值范围**： 不涉及。
 
         :return: The partition of this ShowMessagesRespMessages.
         :rtype: int
@@ -106,7 +106,7 @@ class ShowMessagesRespMessages:
     def partition(self, partition):
         r"""Sets the partition of this ShowMessagesRespMessages.
 
-        分区编号。
+        **参数解释**： 分区编号。 **取值范围**： 不涉及。
 
         :param partition: The partition of this ShowMessagesRespMessages.
         :type partition: int
@@ -117,7 +117,7 @@ class ShowMessagesRespMessages:
     def message_offset(self):
         r"""Gets the message_offset of this ShowMessagesRespMessages.
 
-        消息编号。
+        **参数解释**： 消息编号。 **取值范围**： 不涉及。
 
         :return: The message_offset of this ShowMessagesRespMessages.
         :rtype: int
@@ -128,7 +128,7 @@ class ShowMessagesRespMessages:
     def message_offset(self, message_offset):
         r"""Sets the message_offset of this ShowMessagesRespMessages.
 
-        消息编号。
+        **参数解释**： 消息编号。 **取值范围**： 不涉及。
 
         :param message_offset: The message_offset of this ShowMessagesRespMessages.
         :type message_offset: int
@@ -139,7 +139,7 @@ class ShowMessagesRespMessages:
     def size(self):
         r"""Gets the size of this ShowMessagesRespMessages.
 
-        消息大小，单位字节。
+        **参数解释**： 消息大小，单位字节。 **取值范围**： 不涉及。
 
         :return: The size of this ShowMessagesRespMessages.
         :rtype: int
@@ -150,7 +150,7 @@ class ShowMessagesRespMessages:
     def size(self, size):
         r"""Sets the size of this ShowMessagesRespMessages.
 
-        消息大小，单位字节。
+        **参数解释**： 消息大小，单位字节。 **取值范围**： 不涉及。
 
         :param size: The size of this ShowMessagesRespMessages.
         :type size: int
@@ -161,7 +161,7 @@ class ShowMessagesRespMessages:
     def timestamp(self):
         r"""Gets the timestamp of this ShowMessagesRespMessages.
 
-        生产消息的时间。 格式为Unix时间戳。单位为毫秒。
+        **参数解释**： 生产消息的时间。 格式为Unix时间戳。单位为毫秒。 **取值范围**： 不涉及。
 
         :return: The timestamp of this ShowMessagesRespMessages.
         :rtype: int
@@ -172,7 +172,7 @@ class ShowMessagesRespMessages:
     def timestamp(self, timestamp):
         r"""Sets the timestamp of this ShowMessagesRespMessages.
 
-        生产消息的时间。 格式为Unix时间戳。单位为毫秒。
+        **参数解释**： 生产消息的时间。 格式为Unix时间戳。单位为毫秒。 **取值范围**： 不涉及。
 
         :param timestamp: The timestamp of this ShowMessagesRespMessages.
         :type timestamp: int

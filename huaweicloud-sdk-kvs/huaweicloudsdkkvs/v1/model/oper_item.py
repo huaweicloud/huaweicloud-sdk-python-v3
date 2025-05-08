@@ -18,15 +18,17 @@ class OperItem:
 
     openapi_types = {
         'put_kv': 'PutKv',
-        'delete_kv': 'DeleteKv'
+        'delete_kv': 'DeleteKv',
+        'update_kv': 'UpdateKv'
     }
 
     attribute_map = {
         'put_kv': 'put_kv',
-        'delete_kv': 'delete_kv'
+        'delete_kv': 'delete_kv',
+        'update_kv': 'update_kv'
     }
 
-    def __init__(self, put_kv=None, delete_kv=None):
+    def __init__(self, put_kv=None, delete_kv=None, update_kv=None):
         r"""OperItem
 
         The model defined in huaweicloud sdk
@@ -35,18 +37,23 @@ class OperItem:
         :type put_kv: :class:`huaweicloudsdkkvs.v1.PutKv`
         :param delete_kv: 
         :type delete_kv: :class:`huaweicloudsdkkvs.v1.DeleteKv`
+        :param update_kv: 
+        :type update_kv: :class:`huaweicloudsdkkvs.v1.UpdateKv`
         """
         
         
 
         self._put_kv = None
         self._delete_kv = None
+        self._update_kv = None
         self.discriminator = None
 
         if put_kv is not None:
             self.put_kv = put_kv
         if delete_kv is not None:
             self.delete_kv = delete_kv
+        if update_kv is not None:
+            self.update_kv = update_kv
 
     @property
     def put_kv(self):
@@ -83,6 +90,24 @@ class OperItem:
         :type delete_kv: :class:`huaweicloudsdkkvs.v1.DeleteKv`
         """
         self._delete_kv = delete_kv
+
+    @property
+    def update_kv(self):
+        r"""Gets the update_kv of this OperItem.
+
+        :return: The update_kv of this OperItem.
+        :rtype: :class:`huaweicloudsdkkvs.v1.UpdateKv`
+        """
+        return self._update_kv
+
+    @update_kv.setter
+    def update_kv(self, update_kv):
+        r"""Sets the update_kv of this OperItem.
+
+        :param update_kv: The update_kv of this OperItem.
+        :type update_kv: :class:`huaweicloudsdkkvs.v1.UpdateKv`
+        """
+        self._update_kv = update_kv
 
     def to_dict(self):
         """Returns the model properties as a dict"""

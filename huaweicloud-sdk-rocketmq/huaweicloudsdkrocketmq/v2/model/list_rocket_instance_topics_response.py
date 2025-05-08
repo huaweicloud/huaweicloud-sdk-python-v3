@@ -40,17 +40,17 @@ class ListRocketInstanceTopicsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total: Topic总数。
+        :param total: **参数解释**： Topic总数。 **取值范围**： 不涉及。
         :type total: int
-        :param max: 最大可创建Topic数量。
+        :param max: **参数解释**： 最大可创建Topic数量。 **取值范围**： 不涉及。
         :type max: int
-        :param remaining: 剩余可创建Topic数量。
+        :param remaining: **参数解释**： 剩余可创建Topic数量。 **取值范围**： 不涉及。
         :type remaining: int
-        :param next_offset: 下个分页的offset。
+        :param next_offset: **参数解释**： 下个分页的offset。 **取值范围**： 不涉及。
         :type next_offset: int
-        :param previous_offset: 上个分页的offset。
+        :param previous_offset: **参数解释**： 上个分页的offset。 **取值范围**： 不涉及。
         :type previous_offset: int
-        :param topics: Topic列表。
+        :param topics: **参数解释**： 剩余可创建Topic数量。
         :type topics: list[:class:`huaweicloudsdkrocketmq.v2.Topic`]
         """
         
@@ -81,7 +81,7 @@ class ListRocketInstanceTopicsResponse(SdkResponse):
     def total(self):
         r"""Gets the total of this ListRocketInstanceTopicsResponse.
 
-        Topic总数。
+        **参数解释**： Topic总数。 **取值范围**： 不涉及。
 
         :return: The total of this ListRocketInstanceTopicsResponse.
         :rtype: int
@@ -92,7 +92,7 @@ class ListRocketInstanceTopicsResponse(SdkResponse):
     def total(self, total):
         r"""Sets the total of this ListRocketInstanceTopicsResponse.
 
-        Topic总数。
+        **参数解释**： Topic总数。 **取值范围**： 不涉及。
 
         :param total: The total of this ListRocketInstanceTopicsResponse.
         :type total: int
@@ -103,7 +103,7 @@ class ListRocketInstanceTopicsResponse(SdkResponse):
     def max(self):
         r"""Gets the max of this ListRocketInstanceTopicsResponse.
 
-        最大可创建Topic数量。
+        **参数解释**： 最大可创建Topic数量。 **取值范围**： 不涉及。
 
         :return: The max of this ListRocketInstanceTopicsResponse.
         :rtype: int
@@ -114,7 +114,7 @@ class ListRocketInstanceTopicsResponse(SdkResponse):
     def max(self, max):
         r"""Sets the max of this ListRocketInstanceTopicsResponse.
 
-        最大可创建Topic数量。
+        **参数解释**： 最大可创建Topic数量。 **取值范围**： 不涉及。
 
         :param max: The max of this ListRocketInstanceTopicsResponse.
         :type max: int
@@ -125,7 +125,7 @@ class ListRocketInstanceTopicsResponse(SdkResponse):
     def remaining(self):
         r"""Gets the remaining of this ListRocketInstanceTopicsResponse.
 
-        剩余可创建Topic数量。
+        **参数解释**： 剩余可创建Topic数量。 **取值范围**： 不涉及。
 
         :return: The remaining of this ListRocketInstanceTopicsResponse.
         :rtype: int
@@ -136,7 +136,7 @@ class ListRocketInstanceTopicsResponse(SdkResponse):
     def remaining(self, remaining):
         r"""Sets the remaining of this ListRocketInstanceTopicsResponse.
 
-        剩余可创建Topic数量。
+        **参数解释**： 剩余可创建Topic数量。 **取值范围**： 不涉及。
 
         :param remaining: The remaining of this ListRocketInstanceTopicsResponse.
         :type remaining: int
@@ -147,7 +147,7 @@ class ListRocketInstanceTopicsResponse(SdkResponse):
     def next_offset(self):
         r"""Gets the next_offset of this ListRocketInstanceTopicsResponse.
 
-        下个分页的offset。
+        **参数解释**： 下个分页的offset。 **取值范围**： 不涉及。
 
         :return: The next_offset of this ListRocketInstanceTopicsResponse.
         :rtype: int
@@ -158,7 +158,7 @@ class ListRocketInstanceTopicsResponse(SdkResponse):
     def next_offset(self, next_offset):
         r"""Sets the next_offset of this ListRocketInstanceTopicsResponse.
 
-        下个分页的offset。
+        **参数解释**： 下个分页的offset。 **取值范围**： 不涉及。
 
         :param next_offset: The next_offset of this ListRocketInstanceTopicsResponse.
         :type next_offset: int
@@ -169,7 +169,7 @@ class ListRocketInstanceTopicsResponse(SdkResponse):
     def previous_offset(self):
         r"""Gets the previous_offset of this ListRocketInstanceTopicsResponse.
 
-        上个分页的offset。
+        **参数解释**： 上个分页的offset。 **取值范围**： 不涉及。
 
         :return: The previous_offset of this ListRocketInstanceTopicsResponse.
         :rtype: int
@@ -180,7 +180,7 @@ class ListRocketInstanceTopicsResponse(SdkResponse):
     def previous_offset(self, previous_offset):
         r"""Sets the previous_offset of this ListRocketInstanceTopicsResponse.
 
-        上个分页的offset。
+        **参数解释**： 上个分页的offset。 **取值范围**： 不涉及。
 
         :param previous_offset: The previous_offset of this ListRocketInstanceTopicsResponse.
         :type previous_offset: int
@@ -191,7 +191,7 @@ class ListRocketInstanceTopicsResponse(SdkResponse):
     def topics(self):
         r"""Gets the topics of this ListRocketInstanceTopicsResponse.
 
-        Topic列表。
+        **参数解释**： 剩余可创建Topic数量。
 
         :return: The topics of this ListRocketInstanceTopicsResponse.
         :rtype: list[:class:`huaweicloudsdkrocketmq.v2.Topic`]
@@ -202,7 +202,7 @@ class ListRocketInstanceTopicsResponse(SdkResponse):
     def topics(self, topics):
         r"""Sets the topics of this ListRocketInstanceTopicsResponse.
 
-        Topic列表。
+        **参数解释**： 剩余可创建Topic数量。
 
         :param topics: The topics of this ListRocketInstanceTopicsResponse.
         :type topics: list[:class:`huaweicloudsdkrocketmq.v2.Topic`]

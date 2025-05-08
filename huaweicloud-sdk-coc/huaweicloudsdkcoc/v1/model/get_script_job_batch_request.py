@@ -78,7 +78,8 @@ class GetScriptJobBatchRequest:
         if status is not None:
             self.status = status
         self.limit = limit
-        self.marker = marker
+        if marker is not None:
+            self.marker = marker
         if x_language is not None:
             self.x_language = x_language
         if x_project_id is not None:

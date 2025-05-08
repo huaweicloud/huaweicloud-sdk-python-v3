@@ -37,15 +37,15 @@ class PartitionReassignRequest:
 
         The model defined in huaweicloud sdk
 
-        :param reassignments: 重平衡分配方案。
+        :param reassignments: 分区平衡分配方案。
         :type reassignments: list[:class:`huaweicloudsdkkafka.v2.PartitionReassignEntity`]
-        :param throttle: 重平衡门限值。
+        :param throttle: 分区平衡门限值。
         :type throttle: int
-        :param is_schedule: 是否作为定时任务执行。若非定时执行，则is_schedule 和execute_at字段可为空；若为定时执行，is_schedule为true，execute_at字段非空。
+        :param is_schedule: 是否作为定时任务执行。若非定时执行，is_schedule和execute_at字段可为空。若为定时执行，is_schedule为true，execute_at字段非空。
         :type is_schedule: bool
         :param execute_at: 定时时间，格式为Unix时间戳，单位为毫秒
         :type execute_at: int
-        :param time_estimate: 设为true表示执行时间预估任务，false为执行重平衡任务。
+        :param time_estimate: 设为true表示执行时间预估任务，false为执行分区平衡任务。
         :type time_estimate: bool
         """
         
@@ -72,7 +72,7 @@ class PartitionReassignRequest:
     def reassignments(self):
         r"""Gets the reassignments of this PartitionReassignRequest.
 
-        重平衡分配方案。
+        分区平衡分配方案。
 
         :return: The reassignments of this PartitionReassignRequest.
         :rtype: list[:class:`huaweicloudsdkkafka.v2.PartitionReassignEntity`]
@@ -83,7 +83,7 @@ class PartitionReassignRequest:
     def reassignments(self, reassignments):
         r"""Sets the reassignments of this PartitionReassignRequest.
 
-        重平衡分配方案。
+        分区平衡分配方案。
 
         :param reassignments: The reassignments of this PartitionReassignRequest.
         :type reassignments: list[:class:`huaweicloudsdkkafka.v2.PartitionReassignEntity`]
@@ -94,7 +94,7 @@ class PartitionReassignRequest:
     def throttle(self):
         r"""Gets the throttle of this PartitionReassignRequest.
 
-        重平衡门限值。
+        分区平衡门限值。
 
         :return: The throttle of this PartitionReassignRequest.
         :rtype: int
@@ -105,7 +105,7 @@ class PartitionReassignRequest:
     def throttle(self, throttle):
         r"""Sets the throttle of this PartitionReassignRequest.
 
-        重平衡门限值。
+        分区平衡门限值。
 
         :param throttle: The throttle of this PartitionReassignRequest.
         :type throttle: int
@@ -116,7 +116,7 @@ class PartitionReassignRequest:
     def is_schedule(self):
         r"""Gets the is_schedule of this PartitionReassignRequest.
 
-        是否作为定时任务执行。若非定时执行，则is_schedule 和execute_at字段可为空；若为定时执行，is_schedule为true，execute_at字段非空。
+        是否作为定时任务执行。若非定时执行，is_schedule和execute_at字段可为空。若为定时执行，is_schedule为true，execute_at字段非空。
 
         :return: The is_schedule of this PartitionReassignRequest.
         :rtype: bool
@@ -127,7 +127,7 @@ class PartitionReassignRequest:
     def is_schedule(self, is_schedule):
         r"""Sets the is_schedule of this PartitionReassignRequest.
 
-        是否作为定时任务执行。若非定时执行，则is_schedule 和execute_at字段可为空；若为定时执行，is_schedule为true，execute_at字段非空。
+        是否作为定时任务执行。若非定时执行，is_schedule和execute_at字段可为空。若为定时执行，is_schedule为true，execute_at字段非空。
 
         :param is_schedule: The is_schedule of this PartitionReassignRequest.
         :type is_schedule: bool
@@ -160,7 +160,7 @@ class PartitionReassignRequest:
     def time_estimate(self):
         r"""Gets the time_estimate of this PartitionReassignRequest.
 
-        设为true表示执行时间预估任务，false为执行重平衡任务。
+        设为true表示执行时间预估任务，false为执行分区平衡任务。
 
         :return: The time_estimate of this PartitionReassignRequest.
         :rtype: bool
@@ -171,7 +171,7 @@ class PartitionReassignRequest:
     def time_estimate(self, time_estimate):
         r"""Sets the time_estimate of this PartitionReassignRequest.
 
-        设为true表示执行时间预估任务，false为执行重平衡任务。
+        设为true表示执行时间预估任务，false为执行分区平衡任务。
 
         :param time_estimate: The time_estimate of this PartitionReassignRequest.
         :type time_estimate: bool

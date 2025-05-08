@@ -37,7 +37,7 @@ class ScriptExecuteParam:
 
         The model defined in huaweicloud sdk
 
-        :param resourceful: 是否资源受限，true表示不受限，false表示受限
+        :param resourceful: 该参数已废弃，传入该参数不会生效。
         :type resourceful: bool
         :param timeout: 超时时间，单位：秒，取值范围待定，5 &lt; timeout &lt; 1800
         :type timeout: int
@@ -70,7 +70,7 @@ class ScriptExecuteParam:
     def resourceful(self):
         r"""Gets the resourceful of this ScriptExecuteParam.
 
-        是否资源受限，true表示不受限，false表示受限
+        该参数已废弃，传入该参数不会生效。
 
         :return: The resourceful of this ScriptExecuteParam.
         :rtype: bool
@@ -81,7 +81,7 @@ class ScriptExecuteParam:
     def resourceful(self, resourceful):
         r"""Sets the resourceful of this ScriptExecuteParam.
 
-        是否资源受限，true表示不受限，false表示受限
+        该参数已废弃，传入该参数不会生效。
 
         :param resourceful: The resourceful of this ScriptExecuteParam.
         :type resourceful: bool

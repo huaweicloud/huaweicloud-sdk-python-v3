@@ -53,12 +53,10 @@ class ResendReq:
         self._msg_id_list = None
         self.discriminator = None
 
-        if group is not None:
-            self.group = group
+        self.group = group
         if topic is not None:
             self.topic = topic
-        if client_id is not None:
-            self.client_id = client_id
+        self.client_id = client_id
         if msg_id_list is not None:
             self.msg_id_list = msg_id_list
 

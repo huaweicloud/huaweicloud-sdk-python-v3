@@ -11720,6 +11720,10 @@ class MetaStudioClient(Client):
         query_params = []
         if 'type' in local_var_params:
             query_params.append(('type', local_var_params['type']))
+        if 'tts_service_name' in local_var_params:
+            query_params.append(('tts_service_name', local_var_params['tts_service_name']))
+        if 'is_vocabulary_config_enable' in local_var_params:
+            query_params.append(('is_vocabulary_config_enable', local_var_params['is_vocabulary_config_enable']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
         if 'offset' in local_var_params:

@@ -61,6 +61,7 @@ from huaweicloudsdkbms.v1.model.extend_param import ExtendParam
 from huaweicloudsdkbms.v1.model.extend_param_eip import ExtendParamEip
 from huaweicloudsdkbms.v1.model.fault import Fault
 from huaweicloudsdkbms.v1.model.fixed_ips import FixedIps
+from huaweicloudsdkbms.v1.model.flavor_detail_infos import FlavorDetailInfos
 from huaweicloudsdkbms.v1.model.flavor_info import FlavorInfo
 from huaweicloudsdkbms.v1.model.flavor_infos import FlavorInfos
 from huaweicloudsdkbms.v1.model.flavors_resp import FlavorsResp
@@ -73,6 +74,8 @@ from huaweicloudsdkbms.v1.model.links import Links
 from huaweicloudsdkbms.v1.model.links_info import LinksInfo
 from huaweicloudsdkbms.v1.model.list_bare_metal_server_details_request import ListBareMetalServerDetailsRequest
 from huaweicloudsdkbms.v1.model.list_bare_metal_server_details_response import ListBareMetalServerDetailsResponse
+from huaweicloudsdkbms.v1.model.list_bare_metal_servers_detail_request import ListBareMetalServersDetailRequest
+from huaweicloudsdkbms.v1.model.list_bare_metal_servers_detail_response import ListBareMetalServersDetailResponse
 from huaweicloudsdkbms.v1.model.list_bare_metal_servers_request import ListBareMetalServersRequest
 from huaweicloudsdkbms.v1.model.list_bare_metal_servers_response import ListBareMetalServersResponse
 from huaweicloudsdkbms.v1.model.list_baremetal_flavor_detail_extends_request import ListBaremetalFlavorDetailExtendsRequest
@@ -108,6 +111,7 @@ from huaweicloudsdkbms.v1.model.security_groups import SecurityGroups
 from huaweicloudsdkbms.v1.model.security_groups_info import SecurityGroupsInfo
 from huaweicloudsdkbms.v1.model.security_groups_list import SecurityGroupsList
 from huaweicloudsdkbms.v1.model.server_details import ServerDetails
+from huaweicloudsdkbms.v1.model.server_list_details import ServerListDetails
 from huaweicloudsdkbms.v1.model.server_nics import ServerNics
 from huaweicloudsdkbms.v1.model.server_nics_req import ServerNicsReq
 from huaweicloudsdkbms.v1.model.server_os_scheduler_hints import ServerOsSchedulerHints

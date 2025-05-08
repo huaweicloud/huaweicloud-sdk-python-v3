@@ -19,16 +19,20 @@ class ShowEngineInstanceExtendProductInfoRequest:
     openapi_types = {
         'engine': 'str',
         'instance_id': 'str',
-        'type': 'str'
+        'type': 'str',
+        'limit': 'int',
+        'offset': 'int'
     }
 
     attribute_map = {
         'engine': 'engine',
         'instance_id': 'instance_id',
-        'type': 'type'
+        'type': 'type',
+        'limit': 'limit',
+        'offset': 'offset'
     }
 
-    def __init__(self, engine=None, instance_id=None, type=None):
+    def __init__(self, engine=None, instance_id=None, type=None, limit=None, offset=None):
         r"""ShowEngineInstanceExtendProductInfoRequest
 
         The model defined in huaweicloud sdk
@@ -39,6 +43,10 @@ class ShowEngineInstanceExtendProductInfoRequest:
         :type instance_id: str
         :param type: 产品的类型。 advanced：专享版。
         :type type: str
+        :param limit: 查询数量。
+        :type limit: int
+        :param offset: 偏移量，表示从此偏移量开始查询，offset大于等于0。
+        :type offset: int
         """
         
         
@@ -46,12 +54,18 @@ class ShowEngineInstanceExtendProductInfoRequest:
         self._engine = None
         self._instance_id = None
         self._type = None
+        self._limit = None
+        self._offset = None
         self.discriminator = None
 
         self.engine = engine
         self.instance_id = instance_id
         if type is not None:
             self.type = type
+        if limit is not None:
+            self.limit = limit
+        if offset is not None:
+            self.offset = offset
 
     @property
     def engine(self):
@@ -118,6 +132,50 @@ class ShowEngineInstanceExtendProductInfoRequest:
         :type type: str
         """
         self._type = type
+
+    @property
+    def limit(self):
+        r"""Gets the limit of this ShowEngineInstanceExtendProductInfoRequest.
+
+        查询数量。
+
+        :return: The limit of this ShowEngineInstanceExtendProductInfoRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        r"""Sets the limit of this ShowEngineInstanceExtendProductInfoRequest.
+
+        查询数量。
+
+        :param limit: The limit of this ShowEngineInstanceExtendProductInfoRequest.
+        :type limit: int
+        """
+        self._limit = limit
+
+    @property
+    def offset(self):
+        r"""Gets the offset of this ShowEngineInstanceExtendProductInfoRequest.
+
+        偏移量，表示从此偏移量开始查询，offset大于等于0。
+
+        :return: The offset of this ShowEngineInstanceExtendProductInfoRequest.
+        :rtype: int
+        """
+        return self._offset
+
+    @offset.setter
+    def offset(self, offset):
+        r"""Sets the offset of this ShowEngineInstanceExtendProductInfoRequest.
+
+        偏移量，表示从此偏移量开始查询，offset大于等于0。
+
+        :param offset: The offset of this ShowEngineInstanceExtendProductInfoRequest.
+        :type offset: int
+        """
+        self._offset = offset
 
     def to_dict(self):
         """Returns the model properties as a dict"""

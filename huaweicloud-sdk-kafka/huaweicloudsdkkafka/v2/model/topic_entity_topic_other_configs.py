@@ -39,17 +39,17 @@ class TopicEntityTopicOtherConfigs:
 
         The model defined in huaweicloud sdk
 
-        :param name: 配置名称
+        :param name: **参数解释**： 配置名称。 **取值范围**： 不涉及
         :type name: str
-        :param valid_values: 配置有效值
+        :param valid_values: **参数解释**： 配置有效值。 **取值范围**： 不涉及
         :type valid_values: str
-        :param default_value: 配置默认值
+        :param default_value: **参数解释**： 配置默认值。 **取值范围**： 不涉及
         :type default_value: str
-        :param config_type: 配置类型：dynamic/static
+        :param config_type: **参数解释**： 配置类型。 **取值范围**： - dynamic：动态。 - static：静态。
         :type config_type: str
-        :param value: 配置值
+        :param value: **参数解释**： 配置值。 **取值范围**： 不涉及
         :type value: str
-        :param value_type: 配置值类型
+        :param value_type: **参数解释**： 配置值类型。 **取值范围**： 不涉及
         :type value_type: str
         """
         
@@ -80,7 +80,7 @@ class TopicEntityTopicOtherConfigs:
     def name(self):
         r"""Gets the name of this TopicEntityTopicOtherConfigs.
 
-        配置名称
+        **参数解释**： 配置名称。 **取值范围**： 不涉及
 
         :return: The name of this TopicEntityTopicOtherConfigs.
         :rtype: str
@@ -91,7 +91,7 @@ class TopicEntityTopicOtherConfigs:
     def name(self, name):
         r"""Sets the name of this TopicEntityTopicOtherConfigs.
 
-        配置名称
+        **参数解释**： 配置名称。 **取值范围**： 不涉及
 
         :param name: The name of this TopicEntityTopicOtherConfigs.
         :type name: str
@@ -102,7 +102,7 @@ class TopicEntityTopicOtherConfigs:
     def valid_values(self):
         r"""Gets the valid_values of this TopicEntityTopicOtherConfigs.
 
-        配置有效值
+        **参数解释**： 配置有效值。 **取值范围**： 不涉及
 
         :return: The valid_values of this TopicEntityTopicOtherConfigs.
         :rtype: str
@@ -113,7 +113,7 @@ class TopicEntityTopicOtherConfigs:
     def valid_values(self, valid_values):
         r"""Sets the valid_values of this TopicEntityTopicOtherConfigs.
 
-        配置有效值
+        **参数解释**： 配置有效值。 **取值范围**： 不涉及
 
         :param valid_values: The valid_values of this TopicEntityTopicOtherConfigs.
         :type valid_values: str
@@ -124,7 +124,7 @@ class TopicEntityTopicOtherConfigs:
     def default_value(self):
         r"""Gets the default_value of this TopicEntityTopicOtherConfigs.
 
-        配置默认值
+        **参数解释**： 配置默认值。 **取值范围**： 不涉及
 
         :return: The default_value of this TopicEntityTopicOtherConfigs.
         :rtype: str
@@ -135,7 +135,7 @@ class TopicEntityTopicOtherConfigs:
     def default_value(self, default_value):
         r"""Sets the default_value of this TopicEntityTopicOtherConfigs.
 
-        配置默认值
+        **参数解释**： 配置默认值。 **取值范围**： 不涉及
 
         :param default_value: The default_value of this TopicEntityTopicOtherConfigs.
         :type default_value: str
@@ -146,7 +146,7 @@ class TopicEntityTopicOtherConfigs:
     def config_type(self):
         r"""Gets the config_type of this TopicEntityTopicOtherConfigs.
 
-        配置类型：dynamic/static
+        **参数解释**： 配置类型。 **取值范围**： - dynamic：动态。 - static：静态。
 
         :return: The config_type of this TopicEntityTopicOtherConfigs.
         :rtype: str
@@ -157,7 +157,7 @@ class TopicEntityTopicOtherConfigs:
     def config_type(self, config_type):
         r"""Sets the config_type of this TopicEntityTopicOtherConfigs.
 
-        配置类型：dynamic/static
+        **参数解释**： 配置类型。 **取值范围**： - dynamic：动态。 - static：静态。
 
         :param config_type: The config_type of this TopicEntityTopicOtherConfigs.
         :type config_type: str
@@ -168,7 +168,7 @@ class TopicEntityTopicOtherConfigs:
     def value(self):
         r"""Gets the value of this TopicEntityTopicOtherConfigs.
 
-        配置值
+        **参数解释**： 配置值。 **取值范围**： 不涉及
 
         :return: The value of this TopicEntityTopicOtherConfigs.
         :rtype: str
@@ -179,7 +179,7 @@ class TopicEntityTopicOtherConfigs:
     def value(self, value):
         r"""Sets the value of this TopicEntityTopicOtherConfigs.
 
-        配置值
+        **参数解释**： 配置值。 **取值范围**： 不涉及
 
         :param value: The value of this TopicEntityTopicOtherConfigs.
         :type value: str
@@ -190,7 +190,7 @@ class TopicEntityTopicOtherConfigs:
     def value_type(self):
         r"""Gets the value_type of this TopicEntityTopicOtherConfigs.
 
-        配置值类型
+        **参数解释**： 配置值类型。 **取值范围**： 不涉及
 
         :return: The value_type of this TopicEntityTopicOtherConfigs.
         :rtype: str
@@ -201,7 +201,7 @@ class TopicEntityTopicOtherConfigs:
     def value_type(self, value_type):
         r"""Sets the value_type of this TopicEntityTopicOtherConfigs.
 
-        配置值类型
+        **参数解释**： 配置值类型。 **取值范围**： 不涉及
 
         :param value_type: The value_type of this TopicEntityTopicOtherConfigs.
         :type value_type: str

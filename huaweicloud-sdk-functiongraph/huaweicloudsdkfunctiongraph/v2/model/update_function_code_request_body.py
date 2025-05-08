@@ -21,7 +21,8 @@ class UpdateFunctionCodeRequestBody:
         'code_url': 'str',
         'code_filename': 'str',
         'func_code': 'FuncCode',
-        'depend_version_list': 'list[str]'
+        'depend_version_list': 'list[str]',
+        'code_encrypt_kms_key_id': 'str'
     }
 
     attribute_map = {
@@ -29,10 +30,11 @@ class UpdateFunctionCodeRequestBody:
         'code_url': 'code_url',
         'code_filename': 'code_filename',
         'func_code': 'func_code',
-        'depend_version_list': 'depend_version_list'
+        'depend_version_list': 'depend_version_list',
+        'code_encrypt_kms_key_id': 'code_encrypt_kms_key_id'
     }
 
-    def __init__(self, code_type=None, code_url=None, code_filename=None, func_code=None, depend_version_list=None):
+    def __init__(self, code_type=None, code_url=None, code_filename=None, func_code=None, depend_version_list=None, code_encrypt_kms_key_id=None):
         r"""UpdateFunctionCodeRequestBody
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class UpdateFunctionCodeRequestBody:
         :type func_code: :class:`huaweicloudsdkfunctiongraph.v2.FuncCode`
         :param depend_version_list: 依赖版本id列表
         :type depend_version_list: list[str]
+        :param code_encrypt_kms_key_id: 用于用户代码加密的kms主秘钥ID。
+        :type code_encrypt_kms_key_id: str
         """
         
         
@@ -56,6 +60,7 @@ class UpdateFunctionCodeRequestBody:
         self._code_filename = None
         self._func_code = None
         self._depend_version_list = None
+        self._code_encrypt_kms_key_id = None
         self.discriminator = None
 
         self.code_type = code_type
@@ -66,6 +71,8 @@ class UpdateFunctionCodeRequestBody:
         self.func_code = func_code
         if depend_version_list is not None:
             self.depend_version_list = depend_version_list
+        if code_encrypt_kms_key_id is not None:
+            self.code_encrypt_kms_key_id = code_encrypt_kms_key_id
 
     @property
     def code_type(self):
@@ -172,6 +179,28 @@ class UpdateFunctionCodeRequestBody:
         :type depend_version_list: list[str]
         """
         self._depend_version_list = depend_version_list
+
+    @property
+    def code_encrypt_kms_key_id(self):
+        r"""Gets the code_encrypt_kms_key_id of this UpdateFunctionCodeRequestBody.
+
+        用于用户代码加密的kms主秘钥ID。
+
+        :return: The code_encrypt_kms_key_id of this UpdateFunctionCodeRequestBody.
+        :rtype: str
+        """
+        return self._code_encrypt_kms_key_id
+
+    @code_encrypt_kms_key_id.setter
+    def code_encrypt_kms_key_id(self, code_encrypt_kms_key_id):
+        r"""Sets the code_encrypt_kms_key_id of this UpdateFunctionCodeRequestBody.
+
+        用于用户代码加密的kms主秘钥ID。
+
+        :param code_encrypt_kms_key_id: The code_encrypt_kms_key_id of this UpdateFunctionCodeRequestBody.
+        :type code_encrypt_kms_key_id: str
+        """
+        self._code_encrypt_kms_key_id = code_encrypt_kms_key_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -32,7 +32,7 @@ class CreateReassignmentTaskResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param job_id: 任务ID（当执行重平衡任务时仅返回job_id）。
+        :param job_id: 任务ID（当执行分区平衡任务时仅返回job_id）。
         :type job_id: str
         :param reassignment_time: 预估时间，单位为秒（当执行预估时间任务时仅返回reassignment_time）。
         :type reassignment_time: int
@@ -53,7 +53,7 @@ class CreateReassignmentTaskResponse(SdkResponse):
     def job_id(self):
         r"""Gets the job_id of this CreateReassignmentTaskResponse.
 
-        任务ID（当执行重平衡任务时仅返回job_id）。
+        任务ID（当执行分区平衡任务时仅返回job_id）。
 
         :return: The job_id of this CreateReassignmentTaskResponse.
         :rtype: str
@@ -64,7 +64,7 @@ class CreateReassignmentTaskResponse(SdkResponse):
     def job_id(self, job_id):
         r"""Sets the job_id of this CreateReassignmentTaskResponse.
 
-        任务ID（当执行重平衡任务时仅返回job_id）。
+        任务ID（当执行分区平衡任务时仅返回job_id）。
 
         :param job_id: The job_id of this CreateReassignmentTaskResponse.
         :type job_id: str

@@ -33,11 +33,11 @@ class KafkaTopicProducerResponseProducers:
 
         The model defined in huaweicloud sdk
 
-        :param producer_address: 生产者地址
+        :param producer_address: **参数解释**： 生产者地址。 **取值范围**： 不涉及
         :type producer_address: str
-        :param broker_address: broker地址
+        :param broker_address: **参数解释**： broker地址。 **取值范围**： 不涉及
         :type broker_address: str
-        :param join_time: 加入时间
+        :param join_time: **参数解释**： 加入时间，以Unix时间戳显示。 **取值范围**： 不涉及
         :type join_time: int
         """
         
@@ -59,7 +59,7 @@ class KafkaTopicProducerResponseProducers:
     def producer_address(self):
         r"""Gets the producer_address of this KafkaTopicProducerResponseProducers.
 
-        生产者地址
+        **参数解释**： 生产者地址。 **取值范围**： 不涉及
 
         :return: The producer_address of this KafkaTopicProducerResponseProducers.
         :rtype: str
@@ -70,7 +70,7 @@ class KafkaTopicProducerResponseProducers:
     def producer_address(self, producer_address):
         r"""Sets the producer_address of this KafkaTopicProducerResponseProducers.
 
-        生产者地址
+        **参数解释**： 生产者地址。 **取值范围**： 不涉及
 
         :param producer_address: The producer_address of this KafkaTopicProducerResponseProducers.
         :type producer_address: str
@@ -81,7 +81,7 @@ class KafkaTopicProducerResponseProducers:
     def broker_address(self):
         r"""Gets the broker_address of this KafkaTopicProducerResponseProducers.
 
-        broker地址
+        **参数解释**： broker地址。 **取值范围**： 不涉及
 
         :return: The broker_address of this KafkaTopicProducerResponseProducers.
         :rtype: str
@@ -92,7 +92,7 @@ class KafkaTopicProducerResponseProducers:
     def broker_address(self, broker_address):
         r"""Sets the broker_address of this KafkaTopicProducerResponseProducers.
 
-        broker地址
+        **参数解释**： broker地址。 **取值范围**： 不涉及
 
         :param broker_address: The broker_address of this KafkaTopicProducerResponseProducers.
         :type broker_address: str
@@ -103,7 +103,7 @@ class KafkaTopicProducerResponseProducers:
     def join_time(self):
         r"""Gets the join_time of this KafkaTopicProducerResponseProducers.
 
-        加入时间
+        **参数解释**： 加入时间，以Unix时间戳显示。 **取值范围**： 不涉及
 
         :return: The join_time of this KafkaTopicProducerResponseProducers.
         :rtype: int
@@ -114,7 +114,7 @@ class KafkaTopicProducerResponseProducers:
     def join_time(self, join_time):
         r"""Sets the join_time of this KafkaTopicProducerResponseProducers.
 
-        加入时间
+        **参数解释**： 加入时间，以Unix时间戳显示。 **取值范围**： 不涉及
 
         :param join_time: The join_time of this KafkaTopicProducerResponseProducers.
         :type join_time: int

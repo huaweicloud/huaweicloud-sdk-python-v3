@@ -31,9 +31,9 @@ class TagMultyValueEntity:
 
         The model defined in huaweicloud sdk
 
-        :param key: 标签键。
+        :param key: **参数解释**： 标签键。 **取值范围**： 不涉及。
         :type key: str
-        :param values: 标签值。
+        :param values: **参数解释**： 标签值。 **取值范围**： 不涉及。
         :type values: list[str]
         """
         
@@ -52,7 +52,7 @@ class TagMultyValueEntity:
     def key(self):
         r"""Gets the key of this TagMultyValueEntity.
 
-        标签键。
+        **参数解释**： 标签键。 **取值范围**： 不涉及。
 
         :return: The key of this TagMultyValueEntity.
         :rtype: str
@@ -63,7 +63,7 @@ class TagMultyValueEntity:
     def key(self, key):
         r"""Sets the key of this TagMultyValueEntity.
 
-        标签键。
+        **参数解释**： 标签键。 **取值范围**： 不涉及。
 
         :param key: The key of this TagMultyValueEntity.
         :type key: str
@@ -74,7 +74,7 @@ class TagMultyValueEntity:
     def values(self):
         r"""Gets the values of this TagMultyValueEntity.
 
-        标签值。
+        **参数解释**： 标签值。 **取值范围**： 不涉及。
 
         :return: The values of this TagMultyValueEntity.
         :rtype: list[str]
@@ -85,7 +85,7 @@ class TagMultyValueEntity:
     def values(self, values):
         r"""Sets the values of this TagMultyValueEntity.
 
-        标签值。
+        **参数解释**： 标签值。 **取值范围**： 不涉及。
 
         :param values: The values of this TagMultyValueEntity.
         :type values: list[str]

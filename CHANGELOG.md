@@ -1,3 +1,479 @@
+# 3.1.147 2025-05-08
+
+### HuaweiCloud SDK BMS
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the API `ListBareMetalServersDetail`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK COC
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the following APIs:
+    - `ListDocuments`
+    - `CreateDocument`
+    - `GetExecution`
+    - `ListExecutionSteps`
+    - `ListExecutionInstances`
+    - `ListExecutions`
+    - `OperateExecution`
+    - `ListDocumentAtomics`
+    - `GetDocumentAtomicInfo`
+    - `GetDocument`
+    - `UpdateDocument`
+    - `ExecuteDocument`
+    - `DeleteDocument`
+    - `ListScriptResourceTags`
+    - `UpdateResourceTags`
+    - `ListInstancesBatch`
+    - `CheckScriptRisk`
+    - `AcceptScript`
+- _Bug Fix_
+  - None
+- _Change_
+  - **GetScriptJobBatch**
+    - changes of request param
+      - `* marker: required -> optional`
+
+### HuaweiCloud SDK DWS
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the following APIs:
+    - `UpdateLogicalClusterPlan`
+    - `DeleteLogicalClusterPlan`
+    - `EnableLogicalClusterPlan`
+    - `DisableLogicalClusterPlan`
+    - `ListLogicalClusterPlans`
+    - `CreateLogicalClusterPlan`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK FunctionGraph
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdateFunctionCode**
+    - changes of request param
+      - `+ code_encrypt_kms_key_id`
+    - changes of response param
+      - `+ code_encrypt_kms_key_id`
+  - **CreateFunction**
+    - changes of request param
+      - `+ user_data_encrypt_kms_key_id`
+      - `+ code_encrypt_kms_key_id`
+      - `+ custom_image.is_public`
+    - changes of response param
+      - `+ code_encrypt_kms_key_id`
+      - `+ user_data_encrypt_kms_key_id`
+      - `+ custom_image.is_public`
+  - **ShowFunctionConfig**
+    - changes of response param
+      - `+ code_encrypt_kms_key_id`
+      - `+ user_data_encrypt_kms_key_id`
+      - `+ custom_image.is_public`
+  - **UpdateFunctionConfig**
+    - changes of request param
+      - `+ user_data_encrypt_kms_key_id`
+      - `+ custom_image.is_public`
+    - changes of response param
+      - `+ user_data_encrypt_kms_key_id`
+      - `+ custom_image.is_public`
+  - **ListFunctionVersions**
+    - changes of response param
+      - `+ versions.custom_image.is_public`
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateCrossCloudConstructDisaster**
+    - changes of request param
+      - `- lite_dr_mode`
+
+### HuaweiCloud SDK Kafka
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the following APIs:
+    - `CreatePostPaidKafkaInstance`
+    - `ShowKafkaInstanceExtendProductInfo`
+    - `ResizeKafkaInstance`
+    - `RestartSmartConnectorTask`
+    - `UpdateKafkaPortProtocol`
+    - `ListInstanceConsumerGroupMessageOffset`
+    - `EnableDns`
+    - `ShowKafkaTopicQuota`
+    - `ModifyKafkaTopicQuota`
+    - `CreateKafkaTopicQuota`
+    - `DeleteKafkaTopicQuota`
+    - `DeleteKafkaMessage`
+    - `ShowQuotas`
+    - `CreateKafkaReassignmentTask`
+    - `ShowKafkaRebalanceLog`
+    - `CreateKafkaRebalanceLogTask`
+    - `StopKafkaRebalanceLogTask`
+    - `UpdateInstanceGroup`
+    - `ListInstanceConsumerGroupTopics`
+    - `DeleteConsumerGroupOffsets`
+    - `ListInstanceConsumerGroupMembers`
+    - `ListInstanceConsumerGroup`
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdateInstanceConsumerGroup**
+    - changes of request param
+      - `* body: object<CreateGroupReq> -> object<GroupCreateReq>`
+  - **CreateInstanceByEngine**
+    - changes of request param
+      - `+ tenant_ips`
+      - `+ port_protocol`
+      - `- kafka_manager_user`
+      - `- kafka_manager_password`
+  - **ShowInstance**
+    - changes of response param
+      - `+ port_protocols`
+      - `+ kafka_private_connect_domain_name`
+      - `+ public_connect_domain_name`
+      - `+ dns_enable`
+      - `- kafka_manager_user`
+      - `- kafka_manager_enable`
+  - **ShowConnectorTask**
+    - changes of response param
+      - `- source_task.redis_address`
+      - `- source_task.redis_type`
+      - `- source_task.dcs_instance_id`
+      - `- source_task.sync_mode`
+      - `- source_task.full_sync_wait_ms`
+      - `- source_task.full_sync_max_retry`
+      - `- source_task.ratelimit`
+      - `- sink_task.redis_address`
+      - `- sink_task.redis_type`
+      - `- sink_task.dcs_instance_id`
+      - `- sink_task.target_db`
+  - **CreatePostPaidInstance**
+    - changes of request param
+      - `+ port_protocol`
+  - **ListInstances**
+    - changes of response param
+      - `+ port_protocols`
+      - `+ kafka_private_connect_domain_name`
+      - `+ public_connect_domain_name`
+      - `+ dns_enable`
+      - `- kafka_manager_user`
+      - `- kafka_manager_enable`
+      - `+ instances.dns_enable`
+      - `+ instances.public_connect_domain_name`
+      - `+ instances.kafka_private_connect_domain_name`
+      - `+ instances.port_protocols`
+      - `- instances.kafka_manager_enable`
+      - `- instances.kafka_manager_user`
+  - **CreateConnectorTask**
+    - changes of request param
+      - `- source_type: enum value [REDIS_REPLICATOR_SOURCE]`
+      - `- sink_type: enum value [REDIS_REPLICATOR_SINK]`
+      - `- source_task.redis_address`
+      - `- source_task.redis_type`
+      - `- source_task.dcs_instance_id`
+      - `- source_task.redis_password`
+      - `- source_task.sync_mode`
+      - `- source_task.full_sync_wait_ms`
+      - `- source_task.full_sync_max_retry`
+      - `- source_task.ratelimit`
+      - `- sink_task.redis_address`
+      - `- sink_task.redis_type`
+      - `- sink_task.dcs_instance_id`
+      - `- sink_task.redis_password`
+    - changes of response param
+      - `- source_task.redis_address`
+      - `- source_task.redis_type`
+      - `- source_task.dcs_instance_id`
+      - `- source_task.sync_mode`
+      - `- source_task.full_sync_wait_ms`
+      - `- source_task.full_sync_max_retry`
+      - `- source_task.ratelimit`
+      - `- sink_task.redis_address`
+      - `- sink_task.redis_type`
+      - `- sink_task.dcs_instance_id`
+      - `- sink_task.target_db`
+  - **ListConnectorTasks**
+    - changes of response param
+      - `- tasks.source_task.redis_address`
+      - `- tasks.source_task.redis_type`
+      - `- tasks.source_task.dcs_instance_id`
+      - `- tasks.source_task.sync_mode`
+      - `- tasks.source_task.full_sync_wait_ms`
+      - `- tasks.source_task.full_sync_max_retry`
+      - `- tasks.source_task.ratelimit`
+      - `- tasks.sink_task.redis_address`
+      - `- tasks.sink_task.redis_type`
+      - `- tasks.sink_task.dcs_instance_id`
+      - `- tasks.sink_task.target_db`
+
+### HuaweiCloud SDK KVS
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdateKv**
+    - changes of request param
+      - `+ update_fields.delete`
+      - `+ update_fields.update_blob`
+  - **BatchWriteKv**
+    - changes of request param
+      - `+ table_opers.kv_opers.update_kv`
+      - `+ table_opers.kv_opers.put_kv.kv_blob`
+      - `+ table_opers.kv_opers.put_kv.condition_expression`
+    - changes of response param
+      - `+ unprocessed_opers.kv_oper_ids.update_kv_ids`
+
+### HuaweiCloud SDK Meeting
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdateRecurringMeeting**
+    - changes of request param
+      - `+ confResType`
+  - **CreateRecurringMeeting**
+    - changes of request param
+      - `+ confResType`
+  - **UpdateMeeting**
+    - changes of request param
+      - `+ confResType`
+  - **CreateMeeting**
+    - changes of request param
+      - `+ confResType`
+
+### HuaweiCloud SDK MetaStudio
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateAsyncTtsJob**
+    - changes of request param
+      - `+ is_concurrent_resource`
+  - **ListTtscVocabularyConfigs**
+    - changes of request param
+      - `+ tts_service_name`
+      - `+ is_vocabulary_config_enable`
+      - `* type: required -> optional`
+    - changes of response param
+      - `+ data.type`
+  - **ShowSmartChatJob**
+    - changes of response param
+      - `+ state: enum value [IDLE,DELETING]`
+
+### HuaweiCloud SDK RocketMQ
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the APIs `EnableDns`, `ShowQuotas`, `ListEngineProducts`, `RestartInstance`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListBrokers**
+    - changes of request param
+      - `+ limit`
+      - `+ offset`
+    - changes of response param
+      - `+ total`
+      - `+ previous_offset`
+      - `+ next_offset`
+  - **ListMessageTrace**
+    - changes of request param
+      - `+ limit`
+      - `+ offset`
+    - changes of response param
+      - `+ total`
+      - `+ previous_offset`
+      - `+ next_offset`
+  - **CreateInstanceByEngine**
+    - changes of request param
+      - `+ engine_version: enum value [[4.8.0](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm,dt)[5.x](tag:hcs)]`
+      - `- engine_version: enum value [[4.8.0](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm)[5.x](tag:hcs)]`
+      - `+ product_id: enum value [[c6.4u8g.cluster.small](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm,dt)[c6.2u8g.single.x86](tag:hcs),[c6.4u8g.cluster](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm,dt)[c6.4u16g.cluster.x86](tag:hcs,fcs),[c6.8u16g.cluster](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm,dt)[c6.8u32g.cluster.x86](tag:hcs,fcs),[c6.12u24g.cluster](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm,dt)[c6.16u64g.cluster.x86](tag:hcs,fcs),[c6.16u32g.cluster](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm,dt)[c6.32u128g.cluster.x86](tag:hcs,fcs),[c6.2u8g.cluster.x86](tag:fcs),[c6.2u8g.cluster.arm](tag:fcs)]`
+      - `- product_id: enum value [[c6.4u8g.cluster.small](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm)[c6.2u8g.single.x86](tag:hcs),[c6.4u8g.cluster](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm)[c6.4u16g.cluster.x86](tag:hcs,fcs),[c6.8u16g.cluster](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm)[c6.8u32g.cluster.x86](tag:hcs,fcs),[c6.12u24g.cluster](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm)[c6.16u64g.cluster.x86](tag:hcs,fcs),[c6.16u32g.cluster](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm)[c6.32u128g.cluster.x86](tag:hcs,fcs)]`
+  - **ShowInstance**
+    - changes of response param
+      - `+ produce_portion`
+      - `+ dns_enable`
+      - `+ public_grpc_domain_name`
+      - `+ tls_mode`
+      - `+ consume_portion`
+      - `+ grpc_domain_name`
+      - `+ namesrv_domain_name`
+      - `+ dr_enable`
+      - `+ config_ssl_need_restart_process`
+      - `+ public_namesrv_domain_name`
+  - **BatchUpdateConsumerGroup**
+    - changes of request param
+      - `- groups.brokers`
+      - `* groups: list<CreateOrUpdateConsumerGroup> -> list<BatchUpdateConsumerGroup>`
+  - **ShowRocketmqTags**
+    - changes of request param
+      - `+ limit`
+      - `+ offset`
+    - changes of response param
+      - `+ total`
+      - `+ previous_offset`
+      - `+ next_offset`
+  - **ShowRocketmqProjectTags**
+    - changes of request param
+      - `+ limit`
+      - `+ offset`
+    - changes of response param
+      - `+ total`
+      - `+ previous_offset`
+      - `+ next_offset`
+  - **ShowRocketMqConfigs**
+    - changes of request param
+      - `+ limit`
+      - `+ offset`
+    - changes of response param
+      - `+ total`
+      - `+ previous_offset`
+      - `+ next_offset`
+  - **CreatePostPaidInstance**
+    - changes of request param
+      - `+ engine_version: enum value [[4.8.0](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm,dt)[5.x](tag:hcs)]`
+      - `- engine_version: enum value [[4.8.0](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm)[5.x](tag:hcs)]`
+      - `+ product_id: enum value [[c6.4u8g.cluster](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm,dt)[c6.4u16g.cluster.x86](tag:hcs,fcs),[c6.8u16g.cluster](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm,dt)[c6.8u32g.cluster.x86](tag:hcs,fcs),[c6.12u24g.cluster](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm,dt)[c6.16u64g.cluster.x86](tag:hcs,fcs),[c6.16u32g.cluster](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm,dt)[c6.32u128g.cluster.x86](tag:hcs,fcs),[c6.2u8g.cluster.x86](tag:fcs),[c6.2u8g.cluster.arm](tag:fcs)]`
+      - `- product_id: enum value [[c6.4u8g.cluster](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm)[c6.4u16g.cluster.x86](tag:hcs,fcs),[c6.8u16g.cluster](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm)[c6.8u32g.cluster.x86](tag:hcs,fcs),[c6.12u24g.cluster](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm)[c6.16u64g.cluster.x86](tag:hcs,fcs),[c6.16u32g.cluster](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm)[c6.32u128g.cluster.x86](tag:hcs,fcs)]`
+  - **ListInstances**
+    - changes of response param
+      - `- storage_type`
+      - `- charging_mode`
+      - `- public_broker_address`
+      - `- vpc_id`
+      - `- used_storage_space`
+      - `- new_spec_billing_enable`
+      - `- type`
+      - `- extend_times`
+      - `- maintain_begin`
+      - `- available_zone_names`
+      - `- enable_acl`
+      - `- namesrv_address`
+      - `- product_id`
+      - `- disk_encrypted`
+      - `- ipv6_enable`
+      - `- ssl_enable`
+      - `- tags`
+      - `- enterprise_project_id`
+      - `- instance_id`
+      - `- user_id`
+      - `- name`
+      - `- node_num`
+      - `- status`
+      - `- publicip_id`
+      - `- vpc_name`
+      - `- grpc_address`
+      - `- user_name`
+      - `- cross_vpc_info`
+      - `- ces_version`
+      - `- description`
+      - `- created_at`
+      - `- security_group_id`
+      - `- total_storage_space`
+      - `- support_features`
+      - `- publicip_address`
+      - `- public_namesrv_address`
+      - `- public_grpc_address`
+      - `- engine`
+      - `- maintain_end`
+      - `- subnet_name`
+      - `- broker_num`
+      - `- subnet_cidr`
+      - `- specification`
+      - `- security_group_name`
+      - `- enable_log_collection`
+      - `- available_zones`
+      - `- service_type`
+      - `- enable_publicip`
+      - `- storage_spec_code`
+      - `- storage_space`
+      - `- subnet_id`
+      - `- broker_address`
+      - `- resource_spec_code`
+      - `- storage_resource_id`
+      - `- engine_version`
+      - `+ instances.dns_enable`
+      - `+ instances.namesrv_domain_name`
+      - `+ instances.public_namesrv_domain_name`
+      - `+ instances.grpc_domain_name`
+      - `+ instances.public_grpc_domain_name`
+      - `+ instances.produce_portion`
+      - `+ instances.consume_portion`
+      - `+ instances.dr_enable`
+      - `+ instances.config_ssl_need_restart_process`
+      - `+ instances.tls_mode`
+      - `- instances.subnet_name`
+      - `* instances: list<ShowInstanceResp> -> list<InstanceDetail>`
+  - **ShowEngineInstanceExtendProductInfo**
+    - changes of request param
+      - `+ limit`
+      - `+ offset`
+    - changes of response param
+      - `+ total`
+      - `+ previous_offset`
+      - `+ next_offset`
+
+### HuaweiCloud SDK VOD
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the following APIs:
+    - `CreateObjectReplication`
+    - `CreateObjectRetrieval`
+    - `DeleteDyAsset`
+    - `ShowObjectMetaData`
+    - `CreateObjectProcessTask`
+    - `CreateEditTask`
+    - `ShowTaskDetail`
+    - `CreateRealTimeClip`
+    - `CreateUploadByUrl`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ModifySubtitle**
+    - changes of request param
+      - `+ add_subtitles.obs_info.region`
+
 # 3.1.146 2025-04-27
 
 ### HuaweiCloud SDK BSS

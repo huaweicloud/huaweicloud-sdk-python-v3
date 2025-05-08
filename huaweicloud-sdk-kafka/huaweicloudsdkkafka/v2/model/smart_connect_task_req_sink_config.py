@@ -17,10 +17,6 @@ class SmartConnectTaskReqSinkConfig:
     sensitive_list = []
 
     openapi_types = {
-        'redis_address': 'str',
-        'redis_type': 'str',
-        'dcs_instance_id': 'str',
-        'redis_password': 'str',
         'consumer_strategy': 'str',
         'destination_file_type': 'str',
         'deliver_time_interval': 'int',
@@ -34,10 +30,6 @@ class SmartConnectTaskReqSinkConfig:
     }
 
     attribute_map = {
-        'redis_address': 'redis_address',
-        'redis_type': 'redis_type',
-        'dcs_instance_id': 'dcs_instance_id',
-        'redis_password': 'redis_password',
         'consumer_strategy': 'consumer_strategy',
         'destination_file_type': 'destination_file_type',
         'deliver_time_interval': 'deliver_time_interval',
@@ -50,19 +42,11 @@ class SmartConnectTaskReqSinkConfig:
         'store_keys': 'store_keys'
     }
 
-    def __init__(self, redis_address=None, redis_type=None, dcs_instance_id=None, redis_password=None, consumer_strategy=None, destination_file_type=None, deliver_time_interval=None, access_key=None, secret_key=None, obs_bucket_name=None, obs_path=None, partition_format=None, record_delimiter=None, store_keys=None):
+    def __init__(self, consumer_strategy=None, destination_file_type=None, deliver_time_interval=None, access_key=None, secret_key=None, obs_bucket_name=None, obs_path=None, partition_format=None, record_delimiter=None, store_keys=None):
         r"""SmartConnectTaskReqSinkConfig
 
         The model defined in huaweicloud sdk
 
-        :param redis_address: Redis实例地址。（仅目标端类型为Redis时需要填写）
-        :type redis_address: str
-        :param redis_type: Redis实例类型。（仅目标端类型为Redis时需要填写）
-        :type redis_type: str
-        :param dcs_instance_id: DCS实例ID。（仅目标端类型为Redis时需要填写）
-        :type dcs_instance_id: str
-        :param redis_password: Redis密码。（仅目标端类型为Redis时需要填写）
-        :type redis_password: str
         :param consumer_strategy: 转储启动偏移量，latest为获取最新的数据，earliest为获取最早的数据。（仅目标端类型为OBS时需要填写）
         :type consumer_strategy: str
         :param destination_file_type: 转储文件格式。当前只支持TEXT。（仅目标端类型为OBS时需要填写）
@@ -87,10 +71,6 @@ class SmartConnectTaskReqSinkConfig:
         
         
 
-        self._redis_address = None
-        self._redis_type = None
-        self._dcs_instance_id = None
-        self._redis_password = None
         self._consumer_strategy = None
         self._destination_file_type = None
         self._deliver_time_interval = None
@@ -103,14 +83,6 @@ class SmartConnectTaskReqSinkConfig:
         self._store_keys = None
         self.discriminator = None
 
-        if redis_address is not None:
-            self.redis_address = redis_address
-        if redis_type is not None:
-            self.redis_type = redis_type
-        if dcs_instance_id is not None:
-            self.dcs_instance_id = dcs_instance_id
-        if redis_password is not None:
-            self.redis_password = redis_password
         if consumer_strategy is not None:
             self.consumer_strategy = consumer_strategy
         if destination_file_type is not None:
@@ -131,94 +103,6 @@ class SmartConnectTaskReqSinkConfig:
             self.record_delimiter = record_delimiter
         if store_keys is not None:
             self.store_keys = store_keys
-
-    @property
-    def redis_address(self):
-        r"""Gets the redis_address of this SmartConnectTaskReqSinkConfig.
-
-        Redis实例地址。（仅目标端类型为Redis时需要填写）
-
-        :return: The redis_address of this SmartConnectTaskReqSinkConfig.
-        :rtype: str
-        """
-        return self._redis_address
-
-    @redis_address.setter
-    def redis_address(self, redis_address):
-        r"""Sets the redis_address of this SmartConnectTaskReqSinkConfig.
-
-        Redis实例地址。（仅目标端类型为Redis时需要填写）
-
-        :param redis_address: The redis_address of this SmartConnectTaskReqSinkConfig.
-        :type redis_address: str
-        """
-        self._redis_address = redis_address
-
-    @property
-    def redis_type(self):
-        r"""Gets the redis_type of this SmartConnectTaskReqSinkConfig.
-
-        Redis实例类型。（仅目标端类型为Redis时需要填写）
-
-        :return: The redis_type of this SmartConnectTaskReqSinkConfig.
-        :rtype: str
-        """
-        return self._redis_type
-
-    @redis_type.setter
-    def redis_type(self, redis_type):
-        r"""Sets the redis_type of this SmartConnectTaskReqSinkConfig.
-
-        Redis实例类型。（仅目标端类型为Redis时需要填写）
-
-        :param redis_type: The redis_type of this SmartConnectTaskReqSinkConfig.
-        :type redis_type: str
-        """
-        self._redis_type = redis_type
-
-    @property
-    def dcs_instance_id(self):
-        r"""Gets the dcs_instance_id of this SmartConnectTaskReqSinkConfig.
-
-        DCS实例ID。（仅目标端类型为Redis时需要填写）
-
-        :return: The dcs_instance_id of this SmartConnectTaskReqSinkConfig.
-        :rtype: str
-        """
-        return self._dcs_instance_id
-
-    @dcs_instance_id.setter
-    def dcs_instance_id(self, dcs_instance_id):
-        r"""Sets the dcs_instance_id of this SmartConnectTaskReqSinkConfig.
-
-        DCS实例ID。（仅目标端类型为Redis时需要填写）
-
-        :param dcs_instance_id: The dcs_instance_id of this SmartConnectTaskReqSinkConfig.
-        :type dcs_instance_id: str
-        """
-        self._dcs_instance_id = dcs_instance_id
-
-    @property
-    def redis_password(self):
-        r"""Gets the redis_password of this SmartConnectTaskReqSinkConfig.
-
-        Redis密码。（仅目标端类型为Redis时需要填写）
-
-        :return: The redis_password of this SmartConnectTaskReqSinkConfig.
-        :rtype: str
-        """
-        return self._redis_password
-
-    @redis_password.setter
-    def redis_password(self, redis_password):
-        r"""Sets the redis_password of this SmartConnectTaskReqSinkConfig.
-
-        Redis密码。（仅目标端类型为Redis时需要填写）
-
-        :param redis_password: The redis_password of this SmartConnectTaskReqSinkConfig.
-        :type redis_password: str
-        """
-        self._redis_password = redis_password
 
     @property
     def consumer_strategy(self):

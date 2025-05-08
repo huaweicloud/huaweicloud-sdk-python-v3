@@ -72,7 +72,7 @@ class ShowSmartChatJobResponse(SdkResponse):
 
         :param job_id: 数字人智能交互对话任务ID。
         :type job_id: str
-        :param state: 数字人智能交互对话任务的状态。 * WAITING: 等待 * PROCESSING: 处理中 * SUCCEED: 成功 * FAILED: 失败 * CANCELED: 取消 * HEARTBEAT: 心跳
+        :param state: 数字人智能交互对话任务的状态。 * WAITING: 等待 * PROCESSING: 处理中 * SUCCEED: 成功 * FAILED: 失败 * CANCELED: 取消 * HEARTBEAT: 心跳 * IDLE: 空闲 * DELETING: 删除中
         :type state: str
         :param duration: 数字人智能交互对话时长，单位秒。
         :type duration: float
@@ -208,7 +208,7 @@ class ShowSmartChatJobResponse(SdkResponse):
     def state(self):
         r"""Gets the state of this ShowSmartChatJobResponse.
 
-        数字人智能交互对话任务的状态。 * WAITING: 等待 * PROCESSING: 处理中 * SUCCEED: 成功 * FAILED: 失败 * CANCELED: 取消 * HEARTBEAT: 心跳
+        数字人智能交互对话任务的状态。 * WAITING: 等待 * PROCESSING: 处理中 * SUCCEED: 成功 * FAILED: 失败 * CANCELED: 取消 * HEARTBEAT: 心跳 * IDLE: 空闲 * DELETING: 删除中
 
         :return: The state of this ShowSmartChatJobResponse.
         :rtype: str
@@ -219,7 +219,7 @@ class ShowSmartChatJobResponse(SdkResponse):
     def state(self, state):
         r"""Sets the state of this ShowSmartChatJobResponse.
 
-        数字人智能交互对话任务的状态。 * WAITING: 等待 * PROCESSING: 处理中 * SUCCEED: 成功 * FAILED: 失败 * CANCELED: 取消 * HEARTBEAT: 心跳
+        数字人智能交互对话任务的状态。 * WAITING: 等待 * PROCESSING: 处理中 * SUCCEED: 成功 * FAILED: 失败 * CANCELED: 取消 * HEARTBEAT: 心跳 * IDLE: 空闲 * DELETING: 删除中
 
         :param state: The state of this ShowSmartChatJobResponse.
         :type state: str

@@ -37,7 +37,7 @@ class PartitionReassignEntity:
 
         :param topic: topic名称
         :type topic: str
-        :param brokers: 分区重平衡到的broker列表，自动生成分配方案时需指定该参数。
+        :param brokers: 分区平衡到的broker列表，自动生成分配方案时需指定该参数。
         :type brokers: list[int]
         :param replication_factor: 副本因子，自动生成分配方案时可指定。
         :type replication_factor: int
@@ -87,7 +87,7 @@ class PartitionReassignEntity:
     def brokers(self):
         r"""Gets the brokers of this PartitionReassignEntity.
 
-        分区重平衡到的broker列表，自动生成分配方案时需指定该参数。
+        分区平衡到的broker列表，自动生成分配方案时需指定该参数。
 
         :return: The brokers of this PartitionReassignEntity.
         :rtype: list[int]
@@ -98,7 +98,7 @@ class PartitionReassignEntity:
     def brokers(self, brokers):
         r"""Sets the brokers of this PartitionReassignEntity.
 
-        分区重平衡到的broker列表，自动生成分配方案时需指定该参数。
+        分区平衡到的broker列表，自动生成分配方案时需指定该参数。
 
         :param brokers: The brokers of this PartitionReassignEntity.
         :type brokers: list[int]

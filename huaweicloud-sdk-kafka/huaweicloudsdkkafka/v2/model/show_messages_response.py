@@ -36,13 +36,13 @@ class ShowMessagesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param messages: 消息列表。
+        :param messages: **参数解释**： 消息列表。
         :type messages: list[:class:`huaweicloudsdkkafka.v2.ShowMessagesRespMessages`]
-        :param messages_count: 消息总数。
+        :param messages_count: **参数解释**： 消息总数。 **取值范围**： 不涉及。
         :type messages_count: int
-        :param offsets_count: 总页数。
+        :param offsets_count: **参数解释**： 总页数。 **取值范围**： 不涉及。
         :type offsets_count: int
-        :param offset: 当前页数。
+        :param offset: **参数解释**： 当前页数。 **取值范围**： 不涉及。
         :type offset: int
         """
         
@@ -67,7 +67,7 @@ class ShowMessagesResponse(SdkResponse):
     def messages(self):
         r"""Gets the messages of this ShowMessagesResponse.
 
-        消息列表。
+        **参数解释**： 消息列表。
 
         :return: The messages of this ShowMessagesResponse.
         :rtype: list[:class:`huaweicloudsdkkafka.v2.ShowMessagesRespMessages`]
@@ -78,7 +78,7 @@ class ShowMessagesResponse(SdkResponse):
     def messages(self, messages):
         r"""Sets the messages of this ShowMessagesResponse.
 
-        消息列表。
+        **参数解释**： 消息列表。
 
         :param messages: The messages of this ShowMessagesResponse.
         :type messages: list[:class:`huaweicloudsdkkafka.v2.ShowMessagesRespMessages`]
@@ -89,7 +89,7 @@ class ShowMessagesResponse(SdkResponse):
     def messages_count(self):
         r"""Gets the messages_count of this ShowMessagesResponse.
 
-        消息总数。
+        **参数解释**： 消息总数。 **取值范围**： 不涉及。
 
         :return: The messages_count of this ShowMessagesResponse.
         :rtype: int
@@ -100,7 +100,7 @@ class ShowMessagesResponse(SdkResponse):
     def messages_count(self, messages_count):
         r"""Sets the messages_count of this ShowMessagesResponse.
 
-        消息总数。
+        **参数解释**： 消息总数。 **取值范围**： 不涉及。
 
         :param messages_count: The messages_count of this ShowMessagesResponse.
         :type messages_count: int
@@ -111,7 +111,7 @@ class ShowMessagesResponse(SdkResponse):
     def offsets_count(self):
         r"""Gets the offsets_count of this ShowMessagesResponse.
 
-        总页数。
+        **参数解释**： 总页数。 **取值范围**： 不涉及。
 
         :return: The offsets_count of this ShowMessagesResponse.
         :rtype: int
@@ -122,7 +122,7 @@ class ShowMessagesResponse(SdkResponse):
     def offsets_count(self, offsets_count):
         r"""Sets the offsets_count of this ShowMessagesResponse.
 
-        总页数。
+        **参数解释**： 总页数。 **取值范围**： 不涉及。
 
         :param offsets_count: The offsets_count of this ShowMessagesResponse.
         :type offsets_count: int
@@ -133,7 +133,7 @@ class ShowMessagesResponse(SdkResponse):
     def offset(self):
         r"""Gets the offset of this ShowMessagesResponse.
 
-        当前页数。
+        **参数解释**： 当前页数。 **取值范围**： 不涉及。
 
         :return: The offset of this ShowMessagesResponse.
         :rtype: int
@@ -144,7 +144,7 @@ class ShowMessagesResponse(SdkResponse):
     def offset(self, offset):
         r"""Sets the offset of this ShowMessagesResponse.
 
-        当前页数。
+        **参数解释**： 当前页数。 **取值范围**： 不涉及。
 
         :param offset: The offset of this ShowMessagesResponse.
         :type offset: int

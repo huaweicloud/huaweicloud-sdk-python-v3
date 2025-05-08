@@ -47,15 +47,15 @@ class ResizeInstanceReq:
         :type new_spec_code: str
         :param new_storage_space: 规格变更后的消息存储空间，单位：GB。 若扩展实例基准带宽，则new_storage_space不能低于基准带宽规定的最小磁盘大小。
         :type new_storage_space: int
-        :param oper_type: 扩容类型, 新规格支持扩容类型：\&quot;horizontal\&quot;、\&quot;vertical\&quot;、\&quot;node\&quot;、\&quot;storage\&quot;四种类型。
+        :param oper_type: 扩容类型， 新规格支持扩容类型：\&quot;horizontal\&quot;、\&quot;vertical\&quot;、\&quot;node\&quot;、\&quot;storage\&quot;四种类型。
         :type oper_type: str
         :param new_broker_num: 扩容后集群节点数。
         :type new_broker_num: int
-        :param new_product_id: 新规格变更后的产品ID。 涉及垂直扩容场景，需指定该项。 [产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。](tag:hws,hws_hk,ctc,cmcc,hws_eu,g42,hk_g42,tm,hk_tm,ocb,hws_ocb,dt) [产品ID可以从[查询产品规格列表](ListProducts.xml)获取。](tag:hk_sbc,sbc)
+        :param new_product_id: 新规格变更后的产品ID。 涉及垂直扩容场景，需指定该项。 [产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。](tag:hws,hws_hk,ocb,hws_ocb,dt,ctc,sbc,fcs,hcs,g42,hk_g42,tm,hk_tm,hws_eu)[产品ID可以从[查询产品规格列表](ListProducts.xml)获取。](tag:cmcc)
         :type new_product_id: str
         :param publicip_id: 实例绑定的弹性IP地址的ID。 以英文逗号隔开多个弹性IP地址的ID。 如果开启了公网再进行扩容，需要填写此参数。
         :type publicip_id: str
-        :param tenant_ips: 创建节点可以手动指定实例节点的内网IP地址，仅支持指定IPv4地址。  指定内网地址数量必须小于等于购买的节点数量。  当小于购买的节点数量时,未指定的节点则随机分配。
+        :param tenant_ips: 创建节点可以手动指定实例节点的内网IP地址，仅支持指定IPv4地址。  指定内网地址数量必须小于等于购买的节点数量。  当小于购买的节点数量时，未指定的节点则随机分配。
         :type tenant_ips: list[str]
         :param second_tenant_subnet_id: 实例扩容时新节点使用备用子网的id。  当实例扩容使用备用子网，则传入此值。  需要联系客服添加白名单才能传入此值。
         :type second_tenant_subnet_id: str
@@ -138,7 +138,7 @@ class ResizeInstanceReq:
     def oper_type(self):
         r"""Gets the oper_type of this ResizeInstanceReq.
 
-        扩容类型, 新规格支持扩容类型：\"horizontal\"、\"vertical\"、\"node\"、\"storage\"四种类型。
+        扩容类型， 新规格支持扩容类型：\"horizontal\"、\"vertical\"、\"node\"、\"storage\"四种类型。
 
         :return: The oper_type of this ResizeInstanceReq.
         :rtype: str
@@ -149,7 +149,7 @@ class ResizeInstanceReq:
     def oper_type(self, oper_type):
         r"""Sets the oper_type of this ResizeInstanceReq.
 
-        扩容类型, 新规格支持扩容类型：\"horizontal\"、\"vertical\"、\"node\"、\"storage\"四种类型。
+        扩容类型， 新规格支持扩容类型：\"horizontal\"、\"vertical\"、\"node\"、\"storage\"四种类型。
 
         :param oper_type: The oper_type of this ResizeInstanceReq.
         :type oper_type: str
@@ -182,7 +182,7 @@ class ResizeInstanceReq:
     def new_product_id(self):
         r"""Gets the new_product_id of this ResizeInstanceReq.
 
-        新规格变更后的产品ID。 涉及垂直扩容场景，需指定该项。 [产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。](tag:hws,hws_hk,ctc,cmcc,hws_eu,g42,hk_g42,tm,hk_tm,ocb,hws_ocb,dt) [产品ID可以从[查询产品规格列表](ListProducts.xml)获取。](tag:hk_sbc,sbc)
+        新规格变更后的产品ID。 涉及垂直扩容场景，需指定该项。 [产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。](tag:hws,hws_hk,ocb,hws_ocb,dt,ctc,sbc,fcs,hcs,g42,hk_g42,tm,hk_tm,hws_eu)[产品ID可以从[查询产品规格列表](ListProducts.xml)获取。](tag:cmcc)
 
         :return: The new_product_id of this ResizeInstanceReq.
         :rtype: str
@@ -193,7 +193,7 @@ class ResizeInstanceReq:
     def new_product_id(self, new_product_id):
         r"""Sets the new_product_id of this ResizeInstanceReq.
 
-        新规格变更后的产品ID。 涉及垂直扩容场景，需指定该项。 [产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。](tag:hws,hws_hk,ctc,cmcc,hws_eu,g42,hk_g42,tm,hk_tm,ocb,hws_ocb,dt) [产品ID可以从[查询产品规格列表](ListProducts.xml)获取。](tag:hk_sbc,sbc)
+        新规格变更后的产品ID。 涉及垂直扩容场景，需指定该项。 [产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。](tag:hws,hws_hk,ocb,hws_ocb,dt,ctc,sbc,fcs,hcs,g42,hk_g42,tm,hk_tm,hws_eu)[产品ID可以从[查询产品规格列表](ListProducts.xml)获取。](tag:cmcc)
 
         :param new_product_id: The new_product_id of this ResizeInstanceReq.
         :type new_product_id: str
@@ -226,7 +226,7 @@ class ResizeInstanceReq:
     def tenant_ips(self):
         r"""Gets the tenant_ips of this ResizeInstanceReq.
 
-        创建节点可以手动指定实例节点的内网IP地址，仅支持指定IPv4地址。  指定内网地址数量必须小于等于购买的节点数量。  当小于购买的节点数量时,未指定的节点则随机分配。
+        创建节点可以手动指定实例节点的内网IP地址，仅支持指定IPv4地址。  指定内网地址数量必须小于等于购买的节点数量。  当小于购买的节点数量时，未指定的节点则随机分配。
 
         :return: The tenant_ips of this ResizeInstanceReq.
         :rtype: list[str]
@@ -237,7 +237,7 @@ class ResizeInstanceReq:
     def tenant_ips(self, tenant_ips):
         r"""Sets the tenant_ips of this ResizeInstanceReq.
 
-        创建节点可以手动指定实例节点的内网IP地址，仅支持指定IPv4地址。  指定内网地址数量必须小于等于购买的节点数量。  当小于购买的节点数量时,未指定的节点则随机分配。
+        创建节点可以手动指定实例节点的内网IP地址，仅支持指定IPv4地址。  指定内网地址数量必须小于等于购买的节点数量。  当小于购买的节点数量时，未指定的节点则随机分配。
 
         :param tenant_ips: The tenant_ips of this ResizeInstanceReq.
         :type tenant_ips: list[str]

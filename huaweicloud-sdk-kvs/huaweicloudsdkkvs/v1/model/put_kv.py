@@ -18,15 +18,19 @@ class PutKv:
 
     openapi_types = {
         'oper_id': 'int',
-        'kv_doc': 'dict'
+        'kv_doc': 'dict',
+        'kv_blob': 'KvBlob',
+        'condition_expression': 'ConditionExpression'
     }
 
     attribute_map = {
         'oper_id': 'oper_id',
-        'kv_doc': 'kv_doc'
+        'kv_doc': 'kv_doc',
+        'kv_blob': 'kv_blob',
+        'condition_expression': 'condition_expression'
     }
 
-    def __init__(self, oper_id=None, kv_doc=None):
+    def __init__(self, oper_id=None, kv_doc=None, kv_blob=None, condition_expression=None):
         r"""PutKv
 
         The model defined in huaweicloud sdk
@@ -35,17 +39,27 @@ class PutKv:
         :type oper_id: int
         :param kv_doc: 用户文档。
         :type kv_doc: dict
+        :param kv_blob: 
+        :type kv_blob: :class:`huaweicloudsdkkvs.v1.KvBlob`
+        :param condition_expression: 
+        :type condition_expression: :class:`huaweicloudsdkkvs.v1.ConditionExpression`
         """
         
         
 
         self._oper_id = None
         self._kv_doc = None
+        self._kv_blob = None
+        self._condition_expression = None
         self.discriminator = None
 
         self.oper_id = oper_id
         if kv_doc is not None:
             self.kv_doc = kv_doc
+        if kv_blob is not None:
+            self.kv_blob = kv_blob
+        if condition_expression is not None:
+            self.condition_expression = condition_expression
 
     @property
     def oper_id(self):
@@ -90,6 +104,42 @@ class PutKv:
         :type kv_doc: dict
         """
         self._kv_doc = kv_doc
+
+    @property
+    def kv_blob(self):
+        r"""Gets the kv_blob of this PutKv.
+
+        :return: The kv_blob of this PutKv.
+        :rtype: :class:`huaweicloudsdkkvs.v1.KvBlob`
+        """
+        return self._kv_blob
+
+    @kv_blob.setter
+    def kv_blob(self, kv_blob):
+        r"""Sets the kv_blob of this PutKv.
+
+        :param kv_blob: The kv_blob of this PutKv.
+        :type kv_blob: :class:`huaweicloudsdkkvs.v1.KvBlob`
+        """
+        self._kv_blob = kv_blob
+
+    @property
+    def condition_expression(self):
+        r"""Gets the condition_expression of this PutKv.
+
+        :return: The condition_expression of this PutKv.
+        :rtype: :class:`huaweicloudsdkkvs.v1.ConditionExpression`
+        """
+        return self._condition_expression
+
+    @condition_expression.setter
+    def condition_expression(self, condition_expression):
+        r"""Sets the condition_expression of this PutKv.
+
+        :param condition_expression: The condition_expression of this PutKv.
+        :type condition_expression: :class:`huaweicloudsdkkvs.v1.ConditionExpression`
+        """
+        self._condition_expression = condition_expression
 
     def to_dict(self):
         """Returns the model properties as a dict"""

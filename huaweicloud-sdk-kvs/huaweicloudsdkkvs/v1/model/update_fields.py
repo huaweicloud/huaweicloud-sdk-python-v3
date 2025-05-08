@@ -21,7 +21,9 @@ class UpdateFields:
         'set': 'dict',
         'add': 'dict',
         'rmv': 'list[str]',
-        'insert': 'dict'
+        'insert': 'dict',
+        'delete': 'dict',
+        'update_blob': 'UpdateBlob'
     }
 
     attribute_map = {
@@ -29,10 +31,12 @@ class UpdateFields:
         'set': 'set',
         'add': 'add',
         'rmv': 'rmv',
-        'insert': 'insert'
+        'insert': 'insert',
+        'delete': 'delete',
+        'update_blob': 'update_blob'
     }
 
-    def __init__(self, upsert=None, set=None, add=None, rmv=None, insert=None):
+    def __init__(self, upsert=None, set=None, add=None, rmv=None, insert=None, delete=None, update_blob=None):
         r"""UpdateFields
 
         The model defined in huaweicloud sdk
@@ -47,6 +51,10 @@ class UpdateFields:
         :type rmv: list[str]
         :param insert: 插入元素到数组中 &gt; 非数组返回失败。
         :type insert: dict
+        :param delete: 从数组中删除某个元素 &gt; 非数组返回失败。
+        :type delete: dict
+        :param update_blob: 
+        :type update_blob: :class:`huaweicloudsdkkvs.v1.UpdateBlob`
         """
         
         
@@ -56,6 +64,8 @@ class UpdateFields:
         self._add = None
         self._rmv = None
         self._insert = None
+        self._delete = None
+        self._update_blob = None
         self.discriminator = None
 
         if upsert is not None:
@@ -68,6 +78,10 @@ class UpdateFields:
             self.rmv = rmv
         if insert is not None:
             self.insert = insert
+        if delete is not None:
+            self.delete = delete
+        if update_blob is not None:
+            self.update_blob = update_blob
 
     @property
     def upsert(self):
@@ -178,6 +192,46 @@ class UpdateFields:
         :type insert: dict
         """
         self._insert = insert
+
+    @property
+    def delete(self):
+        r"""Gets the delete of this UpdateFields.
+
+        从数组中删除某个元素 > 非数组返回失败。
+
+        :return: The delete of this UpdateFields.
+        :rtype: dict
+        """
+        return self._delete
+
+    @delete.setter
+    def delete(self, delete):
+        r"""Sets the delete of this UpdateFields.
+
+        从数组中删除某个元素 > 非数组返回失败。
+
+        :param delete: The delete of this UpdateFields.
+        :type delete: dict
+        """
+        self._delete = delete
+
+    @property
+    def update_blob(self):
+        r"""Gets the update_blob of this UpdateFields.
+
+        :return: The update_blob of this UpdateFields.
+        :rtype: :class:`huaweicloudsdkkvs.v1.UpdateBlob`
+        """
+        return self._update_blob
+
+    @update_blob.setter
+    def update_blob(self, update_blob):
+        r"""Sets the update_blob of this UpdateFields.
+
+        :param update_blob: The update_blob of this UpdateFields.
+        :type update_blob: :class:`huaweicloudsdkkvs.v1.UpdateBlob`
+        """
+        self._update_blob = update_blob
 
     def to_dict(self):
         """Returns the model properties as a dict"""

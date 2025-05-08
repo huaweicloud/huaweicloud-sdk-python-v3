@@ -41,19 +41,19 @@ class ShowPartitionMessageEntity:
 
         The model defined in huaweicloud sdk
 
-        :param key: 消息的key。
+        :param key: **参数解释**： 消息的key。 **取值范围**： 不涉及
         :type key: str
-        :param value: 消息内容。
+        :param value: **参数解释**： 消息内容。 **取值范围**： 不涉及
         :type value: str
-        :param topic: Topic名称。
+        :param topic: **参数解释**： Topic名称。 **取值范围**： 不涉及
         :type topic: str
-        :param partition: 分区编号。
+        :param partition: **参数解释**： 分区编号。 **取值范围**： 不涉及
         :type partition: int
-        :param message_offset: 消息位置。
+        :param message_offset: **参数解释**： 消息位置。 **取值范围**： 不涉及
         :type message_offset: int
-        :param size: 消息大小，单位字节。
+        :param size: **参数解释**： 消息大小，单位字节。 **取值范围**： 不涉及
         :type size: int
-        :param timestamp: 生产消息的时间。 格式为Unix时间戳。单位为毫秒。
+        :param timestamp: **参数解释**： 生产消息的时间。 格式为Unix时间戳。单位为毫秒。 **取值范围**： 不涉及
         :type timestamp: int
         """
         
@@ -87,7 +87,7 @@ class ShowPartitionMessageEntity:
     def key(self):
         r"""Gets the key of this ShowPartitionMessageEntity.
 
-        消息的key。
+        **参数解释**： 消息的key。 **取值范围**： 不涉及
 
         :return: The key of this ShowPartitionMessageEntity.
         :rtype: str
@@ -98,7 +98,7 @@ class ShowPartitionMessageEntity:
     def key(self, key):
         r"""Sets the key of this ShowPartitionMessageEntity.
 
-        消息的key。
+        **参数解释**： 消息的key。 **取值范围**： 不涉及
 
         :param key: The key of this ShowPartitionMessageEntity.
         :type key: str
@@ -109,7 +109,7 @@ class ShowPartitionMessageEntity:
     def value(self):
         r"""Gets the value of this ShowPartitionMessageEntity.
 
-        消息内容。
+        **参数解释**： 消息内容。 **取值范围**： 不涉及
 
         :return: The value of this ShowPartitionMessageEntity.
         :rtype: str
@@ -120,7 +120,7 @@ class ShowPartitionMessageEntity:
     def value(self, value):
         r"""Sets the value of this ShowPartitionMessageEntity.
 
-        消息内容。
+        **参数解释**： 消息内容。 **取值范围**： 不涉及
 
         :param value: The value of this ShowPartitionMessageEntity.
         :type value: str
@@ -131,7 +131,7 @@ class ShowPartitionMessageEntity:
     def topic(self):
         r"""Gets the topic of this ShowPartitionMessageEntity.
 
-        Topic名称。
+        **参数解释**： Topic名称。 **取值范围**： 不涉及
 
         :return: The topic of this ShowPartitionMessageEntity.
         :rtype: str
@@ -142,7 +142,7 @@ class ShowPartitionMessageEntity:
     def topic(self, topic):
         r"""Sets the topic of this ShowPartitionMessageEntity.
 
-        Topic名称。
+        **参数解释**： Topic名称。 **取值范围**： 不涉及
 
         :param topic: The topic of this ShowPartitionMessageEntity.
         :type topic: str
@@ -153,7 +153,7 @@ class ShowPartitionMessageEntity:
     def partition(self):
         r"""Gets the partition of this ShowPartitionMessageEntity.
 
-        分区编号。
+        **参数解释**： 分区编号。 **取值范围**： 不涉及
 
         :return: The partition of this ShowPartitionMessageEntity.
         :rtype: int
@@ -164,7 +164,7 @@ class ShowPartitionMessageEntity:
     def partition(self, partition):
         r"""Sets the partition of this ShowPartitionMessageEntity.
 
-        分区编号。
+        **参数解释**： 分区编号。 **取值范围**： 不涉及
 
         :param partition: The partition of this ShowPartitionMessageEntity.
         :type partition: int
@@ -175,7 +175,7 @@ class ShowPartitionMessageEntity:
     def message_offset(self):
         r"""Gets the message_offset of this ShowPartitionMessageEntity.
 
-        消息位置。
+        **参数解释**： 消息位置。 **取值范围**： 不涉及
 
         :return: The message_offset of this ShowPartitionMessageEntity.
         :rtype: int
@@ -186,7 +186,7 @@ class ShowPartitionMessageEntity:
     def message_offset(self, message_offset):
         r"""Sets the message_offset of this ShowPartitionMessageEntity.
 
-        消息位置。
+        **参数解释**： 消息位置。 **取值范围**： 不涉及
 
         :param message_offset: The message_offset of this ShowPartitionMessageEntity.
         :type message_offset: int
@@ -197,7 +197,7 @@ class ShowPartitionMessageEntity:
     def size(self):
         r"""Gets the size of this ShowPartitionMessageEntity.
 
-        消息大小，单位字节。
+        **参数解释**： 消息大小，单位字节。 **取值范围**： 不涉及
 
         :return: The size of this ShowPartitionMessageEntity.
         :rtype: int
@@ -208,7 +208,7 @@ class ShowPartitionMessageEntity:
     def size(self, size):
         r"""Sets the size of this ShowPartitionMessageEntity.
 
-        消息大小，单位字节。
+        **参数解释**： 消息大小，单位字节。 **取值范围**： 不涉及
 
         :param size: The size of this ShowPartitionMessageEntity.
         :type size: int
@@ -219,7 +219,7 @@ class ShowPartitionMessageEntity:
     def timestamp(self):
         r"""Gets the timestamp of this ShowPartitionMessageEntity.
 
-        生产消息的时间。 格式为Unix时间戳。单位为毫秒。
+        **参数解释**： 生产消息的时间。 格式为Unix时间戳。单位为毫秒。 **取值范围**： 不涉及
 
         :return: The timestamp of this ShowPartitionMessageEntity.
         :rtype: int
@@ -230,7 +230,7 @@ class ShowPartitionMessageEntity:
     def timestamp(self, timestamp):
         r"""Sets the timestamp of this ShowPartitionMessageEntity.
 
-        生产消息的时间。 格式为Unix时间戳。单位为毫秒。
+        **参数解释**： 生产消息的时间。 格式为Unix时间戳。单位为毫秒。 **取值范围**： 不涉及
 
         :param timestamp: The timestamp of this ShowPartitionMessageEntity.
         :type timestamp: int

@@ -1780,6 +1780,73 @@ class DwsClient(Client):
 
         return http_info
 
+    def create_logical_cluster_plan(self, request):
+        r"""添加逻辑集群定时增删计划
+
+        此接口用于添加逻辑集群定时增删计划。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateLogicalClusterPlan
+        :type request: :class:`huaweicloudsdkdws.v2.CreateLogicalClusterPlanRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.CreateLogicalClusterPlanResponse`
+        """
+        http_info = self._create_logical_cluster_plan_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_logical_cluster_plan_invoker(self, request):
+        http_info = self._create_logical_cluster_plan_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_logical_cluster_plan_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/clusters/{cluster_id}/logical-cluster-plans",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateLogicalClusterPlanResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_snapshot(self, request):
         r"""创建快照
 
@@ -2581,6 +2648,73 @@ class DwsClient(Client):
 
         return http_info
 
+    def delete_logical_cluster_plan(self, request):
+        r"""删除逻辑集群定时增删计划
+
+        此接口用于删除逻辑集群定时增删计划。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteLogicalClusterPlan
+        :type request: :class:`huaweicloudsdkdws.v2.DeleteLogicalClusterPlanRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.DeleteLogicalClusterPlanResponse`
+        """
+        http_info = self._delete_logical_cluster_plan_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_logical_cluster_plan_invoker(self, request):
+        http_info = self._delete_logical_cluster_plan_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_logical_cluster_plan_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/clusters/{cluster_id}/logical-cluster-plans/{plan_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteLogicalClusterPlanResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+        if 'plan_id' in local_var_params:
+            path_params['plan_id'] = local_var_params['plan_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_queue_user_list(self, request):
         r"""删除工作负载队列的绑定用户
 
@@ -3052,6 +3186,73 @@ class DwsClient(Client):
 
         return http_info
 
+    def disable_logical_cluster_plan(self, request):
+        r"""停用逻辑集群定时增删计划
+
+        停用逻辑集群定时增删计划
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DisableLogicalClusterPlan
+        :type request: :class:`huaweicloudsdkdws.v2.DisableLogicalClusterPlanRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.DisableLogicalClusterPlanResponse`
+        """
+        http_info = self._disable_logical_cluster_plan_http_info(request)
+        return self._call_api(**http_info)
+
+    def disable_logical_cluster_plan_invoker(self, request):
+        http_info = self._disable_logical_cluster_plan_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _disable_logical_cluster_plan_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/clusters/{cluster_id}/logical-cluster-plans/{plan_id}/disable",
+            "request_type": request.__class__.__name__,
+            "response_type": "DisableLogicalClusterPlanResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+        if 'plan_id' in local_var_params:
+            path_params['plan_id'] = local_var_params['plan_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def disable_lts_logs(self, request):
         r"""关闭云服务日志
 
@@ -3304,6 +3505,73 @@ class DwsClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def enable_logical_cluster_plan(self, request):
+        r"""启用逻辑集群定时增删计划
+
+        启用逻辑集群定时增删计划
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for EnableLogicalClusterPlan
+        :type request: :class:`huaweicloudsdkdws.v2.EnableLogicalClusterPlanRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.EnableLogicalClusterPlanResponse`
+        """
+        http_info = self._enable_logical_cluster_plan_http_info(request)
+        return self._call_api(**http_info)
+
+    def enable_logical_cluster_plan_invoker(self, request):
+        http_info = self._enable_logical_cluster_plan_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _enable_logical_cluster_plan_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/clusters/{cluster_id}/logical-cluster-plans/{plan_id}/enable",
+            "request_type": request.__class__.__name__,
+            "response_type": "EnableLogicalClusterPlanResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+        if 'plan_id' in local_var_params:
+            path_params['plan_id'] = local_var_params['plan_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -5671,6 +5939,71 @@ class DwsClient(Client):
         path_params = {}
         if 'job_id' in local_var_params:
             path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_logical_cluster_plans(self, request):
+        r"""查询逻辑集群定时增删计划
+
+        此接口用于查询逻辑集群定时增删计划。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListLogicalClusterPlans
+        :type request: :class:`huaweicloudsdkdws.v2.ListLogicalClusterPlansRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.ListLogicalClusterPlansResponse`
+        """
+        http_info = self._list_logical_cluster_plans_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_logical_cluster_plans_invoker(self, request):
+        http_info = self._list_logical_cluster_plans_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_logical_cluster_plans_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/clusters/{cluster_id}/logical-cluster-plans",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListLogicalClusterPlansResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
 
         query_params = []
 
@@ -10780,6 +11113,75 @@ class DwsClient(Client):
             path_params['cluster_id'] = local_var_params['cluster_id']
         if 'logical_cluster_id' in local_var_params:
             path_params['logical_cluster_id'] = local_var_params['logical_cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_logical_cluster_plan(self, request):
+        r"""编辑逻辑集群增删计划
+
+        此接口用于编辑修改编辑逻辑集群增删计划。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateLogicalClusterPlan
+        :type request: :class:`huaweicloudsdkdws.v2.UpdateLogicalClusterPlanRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.UpdateLogicalClusterPlanResponse`
+        """
+        http_info = self._update_logical_cluster_plan_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_logical_cluster_plan_invoker(self, request):
+        http_info = self._update_logical_cluster_plan_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_logical_cluster_plan_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/clusters/{cluster_id}/logical-cluster-plans/{plan_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateLogicalClusterPlanResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+        if 'plan_id' in local_var_params:
+            path_params['plan_id'] = local_var_params['plan_id']
 
         query_params = []
 

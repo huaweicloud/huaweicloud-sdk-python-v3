@@ -19,16 +19,20 @@ class ListMessageTraceRequest:
     openapi_types = {
         'engine': 'str',
         'instance_id': 'str',
-        'msg_id': 'str'
+        'msg_id': 'str',
+        'limit': 'int',
+        'offset': 'int'
     }
 
     attribute_map = {
         'engine': 'engine',
         'instance_id': 'instance_id',
-        'msg_id': 'msg_id'
+        'msg_id': 'msg_id',
+        'limit': 'limit',
+        'offset': 'offset'
     }
 
-    def __init__(self, engine=None, instance_id=None, msg_id=None):
+    def __init__(self, engine=None, instance_id=None, msg_id=None, limit=None, offset=None):
         r"""ListMessageTraceRequest
 
         The model defined in huaweicloud sdk
@@ -39,6 +43,10 @@ class ListMessageTraceRequest:
         :type instance_id: str
         :param msg_id: 消息ID。
         :type msg_id: str
+        :param limit: 查询数量。
+        :type limit: int
+        :param offset: 偏移量，表示从此偏移量开始查询，offset大于等于0。
+        :type offset: int
         """
         
         
@@ -46,11 +54,17 @@ class ListMessageTraceRequest:
         self._engine = None
         self._instance_id = None
         self._msg_id = None
+        self._limit = None
+        self._offset = None
         self.discriminator = None
 
         self.engine = engine
         self.instance_id = instance_id
         self.msg_id = msg_id
+        if limit is not None:
+            self.limit = limit
+        if offset is not None:
+            self.offset = offset
 
     @property
     def engine(self):
@@ -117,6 +131,50 @@ class ListMessageTraceRequest:
         :type msg_id: str
         """
         self._msg_id = msg_id
+
+    @property
+    def limit(self):
+        r"""Gets the limit of this ListMessageTraceRequest.
+
+        查询数量。
+
+        :return: The limit of this ListMessageTraceRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        r"""Sets the limit of this ListMessageTraceRequest.
+
+        查询数量。
+
+        :param limit: The limit of this ListMessageTraceRequest.
+        :type limit: int
+        """
+        self._limit = limit
+
+    @property
+    def offset(self):
+        r"""Gets the offset of this ListMessageTraceRequest.
+
+        偏移量，表示从此偏移量开始查询，offset大于等于0。
+
+        :return: The offset of this ListMessageTraceRequest.
+        :rtype: int
+        """
+        return self._offset
+
+    @offset.setter
+    def offset(self, offset):
+        r"""Sets the offset of this ListMessageTraceRequest.
+
+        偏移量，表示从此偏移量开始查询，offset大于等于0。
+
+        :param offset: The offset of this ListMessageTraceRequest.
+        :type offset: int
+        """
+        self._offset = offset
 
     def to_dict(self):
         """Returns the model properties as a dict"""

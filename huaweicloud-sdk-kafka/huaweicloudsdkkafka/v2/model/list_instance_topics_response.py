@@ -40,17 +40,17 @@ class ListInstanceTopicsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total: topic总数。
+        :param total: **参数解释**： Topic总数。 **取值范围**： 不涉及。
         :type total: int
-        :param size: 分页查询的大小。
+        :param size: **参数解释**： 分页查询的大小。 **取值范围**： 不涉及。
         :type size: int
-        :param remain_partitions: 剩余分区数。
+        :param remain_partitions: **参数解释**： 剩余分区数。 **取值范围**： 不涉及。
         :type remain_partitions: int
-        :param max_partitions: 分区总数。
+        :param max_partitions: **参数解释**： 分区总数。 **取值范围**： 不涉及。
         :type max_partitions: int
-        :param topic_max_partitions: 单个topic最大占用分区数。
+        :param topic_max_partitions: **参数解释**： 单个Topic最大占用分区数。 **取值范围**： 不涉及。
         :type topic_max_partitions: int
-        :param topics: topic列表。
+        :param topics: **参数解释**： topic列表。
         :type topics: list[:class:`huaweicloudsdkkafka.v2.TopicEntity`]
         """
         
@@ -81,7 +81,7 @@ class ListInstanceTopicsResponse(SdkResponse):
     def total(self):
         r"""Gets the total of this ListInstanceTopicsResponse.
 
-        topic总数。
+        **参数解释**： Topic总数。 **取值范围**： 不涉及。
 
         :return: The total of this ListInstanceTopicsResponse.
         :rtype: int
@@ -92,7 +92,7 @@ class ListInstanceTopicsResponse(SdkResponse):
     def total(self, total):
         r"""Sets the total of this ListInstanceTopicsResponse.
 
-        topic总数。
+        **参数解释**： Topic总数。 **取值范围**： 不涉及。
 
         :param total: The total of this ListInstanceTopicsResponse.
         :type total: int
@@ -103,7 +103,7 @@ class ListInstanceTopicsResponse(SdkResponse):
     def size(self):
         r"""Gets the size of this ListInstanceTopicsResponse.
 
-        分页查询的大小。
+        **参数解释**： 分页查询的大小。 **取值范围**： 不涉及。
 
         :return: The size of this ListInstanceTopicsResponse.
         :rtype: int
@@ -114,7 +114,7 @@ class ListInstanceTopicsResponse(SdkResponse):
     def size(self, size):
         r"""Sets the size of this ListInstanceTopicsResponse.
 
-        分页查询的大小。
+        **参数解释**： 分页查询的大小。 **取值范围**： 不涉及。
 
         :param size: The size of this ListInstanceTopicsResponse.
         :type size: int
@@ -125,7 +125,7 @@ class ListInstanceTopicsResponse(SdkResponse):
     def remain_partitions(self):
         r"""Gets the remain_partitions of this ListInstanceTopicsResponse.
 
-        剩余分区数。
+        **参数解释**： 剩余分区数。 **取值范围**： 不涉及。
 
         :return: The remain_partitions of this ListInstanceTopicsResponse.
         :rtype: int
@@ -136,7 +136,7 @@ class ListInstanceTopicsResponse(SdkResponse):
     def remain_partitions(self, remain_partitions):
         r"""Sets the remain_partitions of this ListInstanceTopicsResponse.
 
-        剩余分区数。
+        **参数解释**： 剩余分区数。 **取值范围**： 不涉及。
 
         :param remain_partitions: The remain_partitions of this ListInstanceTopicsResponse.
         :type remain_partitions: int
@@ -147,7 +147,7 @@ class ListInstanceTopicsResponse(SdkResponse):
     def max_partitions(self):
         r"""Gets the max_partitions of this ListInstanceTopicsResponse.
 
-        分区总数。
+        **参数解释**： 分区总数。 **取值范围**： 不涉及。
 
         :return: The max_partitions of this ListInstanceTopicsResponse.
         :rtype: int
@@ -158,7 +158,7 @@ class ListInstanceTopicsResponse(SdkResponse):
     def max_partitions(self, max_partitions):
         r"""Sets the max_partitions of this ListInstanceTopicsResponse.
 
-        分区总数。
+        **参数解释**： 分区总数。 **取值范围**： 不涉及。
 
         :param max_partitions: The max_partitions of this ListInstanceTopicsResponse.
         :type max_partitions: int
@@ -169,7 +169,7 @@ class ListInstanceTopicsResponse(SdkResponse):
     def topic_max_partitions(self):
         r"""Gets the topic_max_partitions of this ListInstanceTopicsResponse.
 
-        单个topic最大占用分区数。
+        **参数解释**： 单个Topic最大占用分区数。 **取值范围**： 不涉及。
 
         :return: The topic_max_partitions of this ListInstanceTopicsResponse.
         :rtype: int
@@ -180,7 +180,7 @@ class ListInstanceTopicsResponse(SdkResponse):
     def topic_max_partitions(self, topic_max_partitions):
         r"""Sets the topic_max_partitions of this ListInstanceTopicsResponse.
 
-        单个topic最大占用分区数。
+        **参数解释**： 单个Topic最大占用分区数。 **取值范围**： 不涉及。
 
         :param topic_max_partitions: The topic_max_partitions of this ListInstanceTopicsResponse.
         :type topic_max_partitions: int
@@ -191,7 +191,7 @@ class ListInstanceTopicsResponse(SdkResponse):
     def topics(self):
         r"""Gets the topics of this ListInstanceTopicsResponse.
 
-        topic列表。
+        **参数解释**： topic列表。
 
         :return: The topics of this ListInstanceTopicsResponse.
         :rtype: list[:class:`huaweicloudsdkkafka.v2.TopicEntity`]
@@ -202,7 +202,7 @@ class ListInstanceTopicsResponse(SdkResponse):
     def topics(self, topics):
         r"""Sets the topics of this ListInstanceTopicsResponse.
 
-        topic列表。
+        **参数解释**： topic列表。
 
         :param topics: The topics of this ListInstanceTopicsResponse.
         :type topics: list[:class:`huaweicloudsdkkafka.v2.TopicEntity`]

@@ -30,7 +30,7 @@ class ShowPartitionMessageResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param message: 消息列表。
+        :param message: **参数解释**： 消息列表。
         :type message: list[:class:`huaweicloudsdkkafka.v2.ShowPartitionMessageEntity`]
         """
         
@@ -46,7 +46,7 @@ class ShowPartitionMessageResponse(SdkResponse):
     def message(self):
         r"""Gets the message of this ShowPartitionMessageResponse.
 
-        消息列表。
+        **参数解释**： 消息列表。
 
         :return: The message of this ShowPartitionMessageResponse.
         :rtype: list[:class:`huaweicloudsdkkafka.v2.ShowPartitionMessageEntity`]
@@ -57,7 +57,7 @@ class ShowPartitionMessageResponse(SdkResponse):
     def message(self, message):
         r"""Sets the message of this ShowPartitionMessageResponse.
 
-        消息列表。
+        **参数解释**： 消息列表。
 
         :param message: The message of this ShowPartitionMessageResponse.
         :type message: list[:class:`huaweicloudsdkkafka.v2.ShowPartitionMessageEntity`]

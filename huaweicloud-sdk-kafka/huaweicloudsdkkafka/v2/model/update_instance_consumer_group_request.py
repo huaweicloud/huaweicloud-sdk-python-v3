@@ -20,7 +20,7 @@ class UpdateInstanceConsumerGroupRequest:
         'engine': 'str',
         'instance_id': 'str',
         'group': 'str',
-        'body': 'CreateGroupReq'
+        'body': 'GroupCreateReq'
     }
 
     attribute_map = {
@@ -35,14 +35,14 @@ class UpdateInstanceConsumerGroupRequest:
 
         The model defined in huaweicloud sdk
 
-        :param engine: 消息引擎的类型。
+        :param engine: 引擎。
         :type engine: str
         :param instance_id: 实例ID。
         :type instance_id: str
-        :param group: 消费者组。
+        :param group: 消费组ID。
         :type group: str
         :param body: Body of the UpdateInstanceConsumerGroupRequest
-        :type body: :class:`huaweicloudsdkkafka.v2.CreateGroupReq`
+        :type body: :class:`huaweicloudsdkkafka.v2.GroupCreateReq`
         """
         
         
@@ -63,7 +63,7 @@ class UpdateInstanceConsumerGroupRequest:
     def engine(self):
         r"""Gets the engine of this UpdateInstanceConsumerGroupRequest.
 
-        消息引擎的类型。
+        引擎。
 
         :return: The engine of this UpdateInstanceConsumerGroupRequest.
         :rtype: str
@@ -74,7 +74,7 @@ class UpdateInstanceConsumerGroupRequest:
     def engine(self, engine):
         r"""Sets the engine of this UpdateInstanceConsumerGroupRequest.
 
-        消息引擎的类型。
+        引擎。
 
         :param engine: The engine of this UpdateInstanceConsumerGroupRequest.
         :type engine: str
@@ -107,7 +107,7 @@ class UpdateInstanceConsumerGroupRequest:
     def group(self):
         r"""Gets the group of this UpdateInstanceConsumerGroupRequest.
 
-        消费者组。
+        消费组ID。
 
         :return: The group of this UpdateInstanceConsumerGroupRequest.
         :rtype: str
@@ -118,7 +118,7 @@ class UpdateInstanceConsumerGroupRequest:
     def group(self, group):
         r"""Sets the group of this UpdateInstanceConsumerGroupRequest.
 
-        消费者组。
+        消费组ID。
 
         :param group: The group of this UpdateInstanceConsumerGroupRequest.
         :type group: str
@@ -130,7 +130,7 @@ class UpdateInstanceConsumerGroupRequest:
         r"""Gets the body of this UpdateInstanceConsumerGroupRequest.
 
         :return: The body of this UpdateInstanceConsumerGroupRequest.
-        :rtype: :class:`huaweicloudsdkkafka.v2.CreateGroupReq`
+        :rtype: :class:`huaweicloudsdkkafka.v2.GroupCreateReq`
         """
         return self._body
 
@@ -139,7 +139,7 @@ class UpdateInstanceConsumerGroupRequest:
         r"""Sets the body of this UpdateInstanceConsumerGroupRequest.
 
         :param body: The body of this UpdateInstanceConsumerGroupRequest.
-        :type body: :class:`huaweicloudsdkkafka.v2.CreateGroupReq`
+        :type body: :class:`huaweicloudsdkkafka.v2.GroupCreateReq`
         """
         self._body = body
 

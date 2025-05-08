@@ -33,11 +33,11 @@ class ListRocketInstanceTopicsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: 实例ID。
+        :param instance_id: **参数解释**： 实例ID。获取方法如下：登录RocketMQ控制台，在RocketMQ实例详情页面查找实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type instance_id: str
-        :param limit: 查询数量，取值范围为1~50。
+        :param limit: **参数解释**： 查询数量。 **约束限制**： 不涉及。 **取值范围**： 1~50。 **默认取值**： 不涉及。
         :type limit: int
-        :param offset: 偏移量，表示从此偏移量开始查询， offset大于等于0。
+        :param offset: **参数解释**： 偏移量，表示从此偏移量开始查询。 **约束限制**： 不涉及。 **取值范围**： 大于等于0。 **默认取值**： 不涉及。
         :type offset: int
         """
         
@@ -58,7 +58,7 @@ class ListRocketInstanceTopicsRequest:
     def instance_id(self):
         r"""Gets the instance_id of this ListRocketInstanceTopicsRequest.
 
-        实例ID。
+        **参数解释**： 实例ID。获取方法如下：登录RocketMQ控制台，在RocketMQ实例详情页面查找实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The instance_id of this ListRocketInstanceTopicsRequest.
         :rtype: str
@@ -69,7 +69,7 @@ class ListRocketInstanceTopicsRequest:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this ListRocketInstanceTopicsRequest.
 
-        实例ID。
+        **参数解释**： 实例ID。获取方法如下：登录RocketMQ控制台，在RocketMQ实例详情页面查找实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param instance_id: The instance_id of this ListRocketInstanceTopicsRequest.
         :type instance_id: str
@@ -80,7 +80,7 @@ class ListRocketInstanceTopicsRequest:
     def limit(self):
         r"""Gets the limit of this ListRocketInstanceTopicsRequest.
 
-        查询数量，取值范围为1~50。
+        **参数解释**： 查询数量。 **约束限制**： 不涉及。 **取值范围**： 1~50。 **默认取值**： 不涉及。
 
         :return: The limit of this ListRocketInstanceTopicsRequest.
         :rtype: int
@@ -91,7 +91,7 @@ class ListRocketInstanceTopicsRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListRocketInstanceTopicsRequest.
 
-        查询数量，取值范围为1~50。
+        **参数解释**： 查询数量。 **约束限制**： 不涉及。 **取值范围**： 1~50。 **默认取值**： 不涉及。
 
         :param limit: The limit of this ListRocketInstanceTopicsRequest.
         :type limit: int
@@ -102,7 +102,7 @@ class ListRocketInstanceTopicsRequest:
     def offset(self):
         r"""Gets the offset of this ListRocketInstanceTopicsRequest.
 
-        偏移量，表示从此偏移量开始查询， offset大于等于0。
+        **参数解释**： 偏移量，表示从此偏移量开始查询。 **约束限制**： 不涉及。 **取值范围**： 大于等于0。 **默认取值**： 不涉及。
 
         :return: The offset of this ListRocketInstanceTopicsRequest.
         :rtype: int
@@ -113,7 +113,7 @@ class ListRocketInstanceTopicsRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListRocketInstanceTopicsRequest.
 
-        偏移量，表示从此偏移量开始查询， offset大于等于0。
+        **参数解释**： 偏移量，表示从此偏移量开始查询。 **约束限制**： 不涉及。 **取值范围**： 大于等于0。 **默认取值**： 不涉及。
 
         :param offset: The offset of this ListRocketInstanceTopicsRequest.
         :type offset: int

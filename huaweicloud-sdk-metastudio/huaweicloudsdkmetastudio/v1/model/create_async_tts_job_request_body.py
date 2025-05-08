@@ -36,7 +36,8 @@ class CreateAsyncTtsJobRequestBody:
         'output_external_url': 'str',
         'srt_output_external_url': 'str',
         'action_output_external_url': 'str',
-        'is_vocabulary_config_enable': 'bool'
+        'is_vocabulary_config_enable': 'bool',
+        'is_concurrent_resource': 'bool'
     }
 
     attribute_map = {
@@ -59,10 +60,11 @@ class CreateAsyncTtsJobRequestBody:
         'output_external_url': 'output_external_url',
         'srt_output_external_url': 'srt_output_external_url',
         'action_output_external_url': 'action_output_external_url',
-        'is_vocabulary_config_enable': 'is_vocabulary_config_enable'
+        'is_vocabulary_config_enable': 'is_vocabulary_config_enable',
+        'is_concurrent_resource': 'is_concurrent_resource'
     }
 
-    def __init__(self, text=None, tts_text=None, voice_asset_id=None, speed=None, pitch=None, volume=None, audio_format=None, need_timestamp=None, silence_flag=None, silence_time_ms=None, callback_config=None, gen_srt=None, srt_len=None, srt_line_limit=None, slice_segments=None, channels=None, output_external_url=None, srt_output_external_url=None, action_output_external_url=None, is_vocabulary_config_enable=None):
+    def __init__(self, text=None, tts_text=None, voice_asset_id=None, speed=None, pitch=None, volume=None, audio_format=None, need_timestamp=None, silence_flag=None, silence_time_ms=None, callback_config=None, gen_srt=None, srt_len=None, srt_line_limit=None, slice_segments=None, channels=None, output_external_url=None, srt_output_external_url=None, action_output_external_url=None, is_vocabulary_config_enable=None, is_concurrent_resource=None):
         r"""CreateAsyncTtsJobRequestBody
 
         The model defined in huaweicloud sdk
@@ -107,6 +109,8 @@ class CreateAsyncTtsJobRequestBody:
         :type action_output_external_url: str
         :param is_vocabulary_config_enable: 是否应用当前租户的读法配置
         :type is_vocabulary_config_enable: bool
+        :param is_concurrent_resource: 是否使用包周期路数资源进行计费
+        :type is_concurrent_resource: bool
         """
         
         
@@ -131,6 +135,7 @@ class CreateAsyncTtsJobRequestBody:
         self._srt_output_external_url = None
         self._action_output_external_url = None
         self._is_vocabulary_config_enable = None
+        self._is_concurrent_resource = None
         self.discriminator = None
 
         self.text = text
@@ -171,6 +176,8 @@ class CreateAsyncTtsJobRequestBody:
             self.action_output_external_url = action_output_external_url
         if is_vocabulary_config_enable is not None:
             self.is_vocabulary_config_enable = is_vocabulary_config_enable
+        if is_concurrent_resource is not None:
+            self.is_concurrent_resource = is_concurrent_resource
 
     @property
     def text(self):
@@ -607,6 +614,28 @@ class CreateAsyncTtsJobRequestBody:
         :type is_vocabulary_config_enable: bool
         """
         self._is_vocabulary_config_enable = is_vocabulary_config_enable
+
+    @property
+    def is_concurrent_resource(self):
+        r"""Gets the is_concurrent_resource of this CreateAsyncTtsJobRequestBody.
+
+        是否使用包周期路数资源进行计费
+
+        :return: The is_concurrent_resource of this CreateAsyncTtsJobRequestBody.
+        :rtype: bool
+        """
+        return self._is_concurrent_resource
+
+    @is_concurrent_resource.setter
+    def is_concurrent_resource(self, is_concurrent_resource):
+        r"""Sets the is_concurrent_resource of this CreateAsyncTtsJobRequestBody.
+
+        是否使用包周期路数资源进行计费
+
+        :param is_concurrent_resource: The is_concurrent_resource of this CreateAsyncTtsJobRequestBody.
+        :type is_concurrent_resource: bool
+        """
+        self._is_concurrent_resource = is_concurrent_resource
 
     def to_dict(self):
         """Returns the model properties as a dict"""

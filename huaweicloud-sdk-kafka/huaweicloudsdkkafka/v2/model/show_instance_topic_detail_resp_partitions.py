@@ -41,19 +41,19 @@ class ShowInstanceTopicDetailRespPartitions:
 
         The model defined in huaweicloud sdk
 
-        :param partition: 分区ID。
+        :param partition: **参数解释**： 分区ID。 **取值范围**： 不涉及
         :type partition: int
-        :param leader: leader副本所在节点的id。
+        :param leader: **参数解释**： leader副本所在节点的id。 **取值范围**： 不涉及
         :type leader: int
-        :param leo: 分区leader副本的LEO（Log End Offset）。
+        :param leo: **参数解释**： 分区leader副本的LEO（Log End Offset）。 **取值范围**： 不涉及
         :type leo: int
-        :param hw: 分区高水位（HW，High Watermark）。
+        :param hw: **参数解释**： 分区高水位（HW，High Watermark）。 **取值范围**： 不涉及
         :type hw: int
-        :param lso: 分区leader副本的LSO（Log Start Offset）。
+        :param lso: **参数解释**： 分区leader副本的LSO（Log Start Offset）。 **取值范围**： 不涉及
         :type lso: int
-        :param last_update_timestamp: 分区上次写入消息的时间。  格式为Unix时间戳。  单位：毫秒。
+        :param last_update_timestamp: **参数解释**： 分区上次写入消息的时间。  格式为Unix时间戳。  单位：毫秒。 **取值范围**： 不涉及
         :type last_update_timestamp: int
-        :param replicas: 副本列表。
+        :param replicas: **参数解释**： 副本列表。
         :type replicas: list[:class:`huaweicloudsdkkafka.v2.ShowInstanceTopicDetailRespReplicas`]
         """
         
@@ -87,7 +87,7 @@ class ShowInstanceTopicDetailRespPartitions:
     def partition(self):
         r"""Gets the partition of this ShowInstanceTopicDetailRespPartitions.
 
-        分区ID。
+        **参数解释**： 分区ID。 **取值范围**： 不涉及
 
         :return: The partition of this ShowInstanceTopicDetailRespPartitions.
         :rtype: int
@@ -98,7 +98,7 @@ class ShowInstanceTopicDetailRespPartitions:
     def partition(self, partition):
         r"""Sets the partition of this ShowInstanceTopicDetailRespPartitions.
 
-        分区ID。
+        **参数解释**： 分区ID。 **取值范围**： 不涉及
 
         :param partition: The partition of this ShowInstanceTopicDetailRespPartitions.
         :type partition: int
@@ -109,7 +109,7 @@ class ShowInstanceTopicDetailRespPartitions:
     def leader(self):
         r"""Gets the leader of this ShowInstanceTopicDetailRespPartitions.
 
-        leader副本所在节点的id。
+        **参数解释**： leader副本所在节点的id。 **取值范围**： 不涉及
 
         :return: The leader of this ShowInstanceTopicDetailRespPartitions.
         :rtype: int
@@ -120,7 +120,7 @@ class ShowInstanceTopicDetailRespPartitions:
     def leader(self, leader):
         r"""Sets the leader of this ShowInstanceTopicDetailRespPartitions.
 
-        leader副本所在节点的id。
+        **参数解释**： leader副本所在节点的id。 **取值范围**： 不涉及
 
         :param leader: The leader of this ShowInstanceTopicDetailRespPartitions.
         :type leader: int
@@ -131,7 +131,7 @@ class ShowInstanceTopicDetailRespPartitions:
     def leo(self):
         r"""Gets the leo of this ShowInstanceTopicDetailRespPartitions.
 
-        分区leader副本的LEO（Log End Offset）。
+        **参数解释**： 分区leader副本的LEO（Log End Offset）。 **取值范围**： 不涉及
 
         :return: The leo of this ShowInstanceTopicDetailRespPartitions.
         :rtype: int
@@ -142,7 +142,7 @@ class ShowInstanceTopicDetailRespPartitions:
     def leo(self, leo):
         r"""Sets the leo of this ShowInstanceTopicDetailRespPartitions.
 
-        分区leader副本的LEO（Log End Offset）。
+        **参数解释**： 分区leader副本的LEO（Log End Offset）。 **取值范围**： 不涉及
 
         :param leo: The leo of this ShowInstanceTopicDetailRespPartitions.
         :type leo: int
@@ -153,7 +153,7 @@ class ShowInstanceTopicDetailRespPartitions:
     def hw(self):
         r"""Gets the hw of this ShowInstanceTopicDetailRespPartitions.
 
-        分区高水位（HW，High Watermark）。
+        **参数解释**： 分区高水位（HW，High Watermark）。 **取值范围**： 不涉及
 
         :return: The hw of this ShowInstanceTopicDetailRespPartitions.
         :rtype: int
@@ -164,7 +164,7 @@ class ShowInstanceTopicDetailRespPartitions:
     def hw(self, hw):
         r"""Sets the hw of this ShowInstanceTopicDetailRespPartitions.
 
-        分区高水位（HW，High Watermark）。
+        **参数解释**： 分区高水位（HW，High Watermark）。 **取值范围**： 不涉及
 
         :param hw: The hw of this ShowInstanceTopicDetailRespPartitions.
         :type hw: int
@@ -175,7 +175,7 @@ class ShowInstanceTopicDetailRespPartitions:
     def lso(self):
         r"""Gets the lso of this ShowInstanceTopicDetailRespPartitions.
 
-        分区leader副本的LSO（Log Start Offset）。
+        **参数解释**： 分区leader副本的LSO（Log Start Offset）。 **取值范围**： 不涉及
 
         :return: The lso of this ShowInstanceTopicDetailRespPartitions.
         :rtype: int
@@ -186,7 +186,7 @@ class ShowInstanceTopicDetailRespPartitions:
     def lso(self, lso):
         r"""Sets the lso of this ShowInstanceTopicDetailRespPartitions.
 
-        分区leader副本的LSO（Log Start Offset）。
+        **参数解释**： 分区leader副本的LSO（Log Start Offset）。 **取值范围**： 不涉及
 
         :param lso: The lso of this ShowInstanceTopicDetailRespPartitions.
         :type lso: int
@@ -197,7 +197,7 @@ class ShowInstanceTopicDetailRespPartitions:
     def last_update_timestamp(self):
         r"""Gets the last_update_timestamp of this ShowInstanceTopicDetailRespPartitions.
 
-        分区上次写入消息的时间。  格式为Unix时间戳。  单位：毫秒。
+        **参数解释**： 分区上次写入消息的时间。  格式为Unix时间戳。  单位：毫秒。 **取值范围**： 不涉及
 
         :return: The last_update_timestamp of this ShowInstanceTopicDetailRespPartitions.
         :rtype: int
@@ -208,7 +208,7 @@ class ShowInstanceTopicDetailRespPartitions:
     def last_update_timestamp(self, last_update_timestamp):
         r"""Sets the last_update_timestamp of this ShowInstanceTopicDetailRespPartitions.
 
-        分区上次写入消息的时间。  格式为Unix时间戳。  单位：毫秒。
+        **参数解释**： 分区上次写入消息的时间。  格式为Unix时间戳。  单位：毫秒。 **取值范围**： 不涉及
 
         :param last_update_timestamp: The last_update_timestamp of this ShowInstanceTopicDetailRespPartitions.
         :type last_update_timestamp: int
@@ -219,7 +219,7 @@ class ShowInstanceTopicDetailRespPartitions:
     def replicas(self):
         r"""Gets the replicas of this ShowInstanceTopicDetailRespPartitions.
 
-        副本列表。
+        **参数解释**： 副本列表。
 
         :return: The replicas of this ShowInstanceTopicDetailRespPartitions.
         :rtype: list[:class:`huaweicloudsdkkafka.v2.ShowInstanceTopicDetailRespReplicas`]
@@ -230,7 +230,7 @@ class ShowInstanceTopicDetailRespPartitions:
     def replicas(self, replicas):
         r"""Sets the replicas of this ShowInstanceTopicDetailRespPartitions.
 
-        副本列表。
+        **参数解释**： 副本列表。
 
         :param replicas: The replicas of this ShowInstanceTopicDetailRespPartitions.
         :type replicas: list[:class:`huaweicloudsdkkafka.v2.ShowInstanceTopicDetailRespReplicas`]

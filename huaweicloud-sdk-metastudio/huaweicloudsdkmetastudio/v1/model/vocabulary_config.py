@@ -20,6 +20,7 @@ class VocabularyConfig:
         'id': 'str',
         'key': 'str',
         'value': 'str',
+        'type': 'str',
         'create_time': 'str',
         'update_time': 'str'
     }
@@ -28,11 +29,12 @@ class VocabularyConfig:
         'id': 'id',
         'key': 'key',
         'value': 'value',
+        'type': 'type',
         'create_time': 'create_time',
         'update_time': 'update_time'
     }
 
-    def __init__(self, id=None, key=None, value=None, create_time=None, update_time=None):
+    def __init__(self, id=None, key=None, value=None, type=None, create_time=None, update_time=None):
         r"""VocabularyConfig
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class VocabularyConfig:
         :type key: str
         :param value: 设置的自定义读法
         :type value: str
+        :param type: TTSS支持配置的词表类型 * CHINESE_G2P:拼音 * PHONETIC_SYMBOL:音标 * CONTINUUM:连读 * ALIAS:别名 * SAY_AS:数字英文读法
+        :type type: str
         :param create_time: 创建时间。
         :type create_time: str
         :param update_time: 更新时间。
@@ -54,6 +58,7 @@ class VocabularyConfig:
         self._id = None
         self._key = None
         self._value = None
+        self._type = None
         self._create_time = None
         self._update_time = None
         self.discriminator = None
@@ -64,6 +69,8 @@ class VocabularyConfig:
             self.key = key
         if value is not None:
             self.value = value
+        if type is not None:
+            self.type = type
         if create_time is not None:
             self.create_time = create_time
         if update_time is not None:
@@ -134,6 +141,28 @@ class VocabularyConfig:
         :type value: str
         """
         self._value = value
+
+    @property
+    def type(self):
+        r"""Gets the type of this VocabularyConfig.
+
+        TTSS支持配置的词表类型 * CHINESE_G2P:拼音 * PHONETIC_SYMBOL:音标 * CONTINUUM:连读 * ALIAS:别名 * SAY_AS:数字英文读法
+
+        :return: The type of this VocabularyConfig.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        r"""Sets the type of this VocabularyConfig.
+
+        TTSS支持配置的词表类型 * CHINESE_G2P:拼音 * PHONETIC_SYMBOL:音标 * CONTINUUM:连读 * ALIAS:别名 * SAY_AS:数字英文读法
+
+        :param type: The type of this VocabularyConfig.
+        :type type: str
+        """
+        self._type = type
 
     @property
     def create_time(self):

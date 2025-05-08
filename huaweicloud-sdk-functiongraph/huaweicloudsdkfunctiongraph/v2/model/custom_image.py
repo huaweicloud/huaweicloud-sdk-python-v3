@@ -23,7 +23,8 @@ class CustomImage:
         'args': 'str',
         'working_dir': 'str',
         'uid': 'str',
-        'gid': 'str'
+        'gid': 'str',
+        'is_public': 'bool'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class CustomImage:
         'args': 'args',
         'working_dir': 'working_dir',
         'uid': 'uid',
-        'gid': 'gid'
+        'gid': 'gid',
+        'is_public': 'is_public'
     }
 
-    def __init__(self, enabled=None, image=None, command=None, args=None, working_dir=None, uid=None, gid=None):
+    def __init__(self, enabled=None, image=None, command=None, args=None, working_dir=None, uid=None, gid=None, is_public=None):
         r"""CustomImage
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class CustomImage:
         :type uid: str
         :param gid: 镜像容器的用户组id
         :type gid: str
+        :param is_public: 是否是公共镜像
+        :type is_public: bool
         """
         
         
@@ -66,6 +70,7 @@ class CustomImage:
         self._working_dir = None
         self._uid = None
         self._gid = None
+        self._is_public = None
         self.discriminator = None
 
         if enabled is not None:
@@ -82,6 +87,8 @@ class CustomImage:
             self.uid = uid
         if gid is not None:
             self.gid = gid
+        if is_public is not None:
+            self.is_public = is_public
 
     @property
     def enabled(self):
@@ -236,6 +243,28 @@ class CustomImage:
         :type gid: str
         """
         self._gid = gid
+
+    @property
+    def is_public(self):
+        r"""Gets the is_public of this CustomImage.
+
+        是否是公共镜像
+
+        :return: The is_public of this CustomImage.
+        :rtype: bool
+        """
+        return self._is_public
+
+    @is_public.setter
+    def is_public(self, is_public):
+        r"""Sets the is_public of this CustomImage.
+
+        是否是公共镜像
+
+        :param is_public: The is_public of this CustomImage.
+        :type is_public: bool
+        """
+        self._is_public = is_public
 
     def to_dict(self):
         """Returns the model properties as a dict"""

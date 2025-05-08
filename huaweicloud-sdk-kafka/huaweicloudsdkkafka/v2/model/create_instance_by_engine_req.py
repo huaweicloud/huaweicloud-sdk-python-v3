@@ -30,15 +30,15 @@ class CreateInstanceByEngineReq:
         'subnet_id': 'str',
         'available_zones': 'list[str]',
         'product_id': 'str',
-        'kafka_manager_user': 'str',
-        'kafka_manager_password': 'str',
         'maintain_begin': 'str',
         'maintain_end': 'str',
         'enable_publicip': 'bool',
+        'tenant_ips': 'list[str]',
         'publicip_id': 'str',
         'ssl_enable': 'bool',
         'kafka_security_protocol': 'str',
         'sasl_enabled_mechanisms': 'list[str]',
+        'port_protocol': 'PortProtocol',
         'retention_policy': 'str',
         'ipv6_enable': 'bool',
         'disk_encrypted_enable': 'bool',
@@ -67,15 +67,15 @@ class CreateInstanceByEngineReq:
         'subnet_id': 'subnet_id',
         'available_zones': 'available_zones',
         'product_id': 'product_id',
-        'kafka_manager_user': 'kafka_manager_user',
-        'kafka_manager_password': 'kafka_manager_password',
         'maintain_begin': 'maintain_begin',
         'maintain_end': 'maintain_end',
         'enable_publicip': 'enable_publicip',
+        'tenant_ips': 'tenant_ips',
         'publicip_id': 'publicip_id',
         'ssl_enable': 'ssl_enable',
         'kafka_security_protocol': 'kafka_security_protocol',
         'sasl_enabled_mechanisms': 'sasl_enabled_mechanisms',
+        'port_protocol': 'port_protocol',
         'retention_policy': 'retention_policy',
         'ipv6_enable': 'ipv6_enable',
         'disk_encrypted_enable': 'disk_encrypted_enable',
@@ -90,7 +90,7 @@ class CreateInstanceByEngineReq:
         'bss_param': 'bss_param'
     }
 
-    def __init__(self, name=None, description=None, engine=None, engine_version=None, broker_num=None, storage_space=None, access_user=None, password=None, vpc_id=None, security_group_id=None, subnet_id=None, available_zones=None, product_id=None, kafka_manager_user=None, kafka_manager_password=None, maintain_begin=None, maintain_end=None, enable_publicip=None, publicip_id=None, ssl_enable=None, kafka_security_protocol=None, sasl_enabled_mechanisms=None, retention_policy=None, ipv6_enable=None, disk_encrypted_enable=None, disk_encrypted_key=None, connector_enable=None, enable_auto_topic=None, storage_spec_code=None, enterprise_project_id=None, tags=None, arch_type=None, vpc_client_plain=None, bss_param=None):
+    def __init__(self, name=None, description=None, engine=None, engine_version=None, broker_num=None, storage_space=None, access_user=None, password=None, vpc_id=None, security_group_id=None, subnet_id=None, available_zones=None, product_id=None, maintain_begin=None, maintain_end=None, enable_publicip=None, tenant_ips=None, publicip_id=None, ssl_enable=None, kafka_security_protocol=None, sasl_enabled_mechanisms=None, port_protocol=None, retention_policy=None, ipv6_enable=None, disk_encrypted_enable=None, disk_encrypted_key=None, connector_enable=None, enable_auto_topic=None, storage_spec_code=None, enterprise_project_id=None, tags=None, arch_type=None, vpc_client_plain=None, bss_param=None):
         r"""CreateInstanceByEngineReq
 
         The model defined in huaweicloud sdk
@@ -101,11 +101,11 @@ class CreateInstanceByEngineReq:
         :type description: str
         :param engine: 消息引擎。取值填写为：kafka。
         :type engine: str
-        :param engine_version: 消息引擎的版本。取值填写为：   [- 1.1.0](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt)   [- 2.3.0](tag:g42,tm,hk_g42,ctc,hk_tm,dt)   - 2.7   - 3.x
+        :param engine_version: 消息引擎的版本。取值填写为：   [- 1.1.0](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,sbc)   [- 2.3.0](tag:g42,tm,hk_g42,ctc,hk_tm,dt,sbc)   - 2.7   [- 3.x](tag:hws,hws_hk,dt,sbc,hcs,fcs,ctc,tm,hk_tm,hws_eu)
         :type engine_version: str
         :param broker_num: 代理个数。
         :type broker_num: int
-        :param storage_space: 消息存储空间，单位GB。   [- Kafka实例规格为c6.2u4g.cluster时，存储空间取值范围300GB ~ 300000GB。   - Kafka实例规格为c6.4u8g.cluster时，存储空间取值范围300GB ~ 600000GB。   - Kafka实例规格为c6.8u16g.cluster时，存储空间取值范围300GB ~ 1500000GB。   - Kafka实例规格为c6.12u24g.cluster时，存储空间取值范围300GB ~ 1500000GB。   - Kafka实例规格为c6.16u32g.cluster时，存储空间取值范围300GB ~ 1500000GB。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt)      [- Kafka实例规格为kafka.4u16g.cluster时，存储空间取值范围300GB~600000GB。   - Kafka实例规格为kafka.8u32g.cluster时，存储空间取值范围300GB~1500000GB。   - Kafka实例规格为kafka.16u64g.cluster时，存储空间取值范围300GB~1500000GB。   - Kafka实例规格为kafka.32u128g.cluster时，存储空间取值范围300GB~1500000GB。](tag:hcs,fcs)
+        :param storage_space: 消息存储空间，单位GB。   [- Kafka实例规格为c6.2u4g.cluster时，存储空间取值范围300GB ~ 300000GB。   - Kafka实例规格为c6.4u8g.cluster时，存储空间取值范围300GB ~ 600000GB。   - Kafka实例规格为c6.8u16g.cluster时，存储空间取值范围300GB ~ 1500000GB。   - Kafka实例规格为c6.12u24g.cluster时，存储空间取值范围300GB ~ 1500000GB。   - Kafka实例规格为c6.16u32g.cluster时，存储空间取值范围300GB ~ 1500000GB。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt)      [- Kafka实例规格为kafka.2u8g.cluster时，存储空间取值范围300GB~300000GB。](tag:fcs)   [- Kafka实例规格为kafka.4u16g.cluster时，存储空间取值范围300GB~600000GB。   - Kafka实例规格为kafka.8u32g.cluster时，存储空间取值范围300GB~1500000GB。   - Kafka实例规格为kafka.16u64g.cluster时，存储空间取值范围300GB~1500000GB。   - Kafka实例规格为kafka.32u128g.cluster时，存储空间取值范围300GB~1500000GB。](tag:hcs,fcs)
         :type storage_space: int
         :param access_user: 当ssl_enable为true时，该参数必选，ssl_enable为false时，该参数无效。  认证用户名，只能由英文字母开头且由英文字母、数字、中划线、下划线组成，长度为4~64的字符。
         :type access_user: str
@@ -119,26 +119,26 @@ class CreateInstanceByEngineReq:
         :type subnet_id: str
         :param available_zones: 创建节点到指定且有资源的可用区ID。请参考[查询可用区信息](ListAvailableZones.xml)获取可用区ID。  该参数不能为空数组或者数组的值为空。  创建Kafka实例，支持节点部署在1个或3个及3个以上的可用区。在为节点指定可用区时，用逗号分隔开。
         :type available_zones: list[str]
-        :param product_id: 产品ID。  [产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。](tag:hws,hws_hk,ctc,cmcc,hws_eu,g42,hk_g42,tm,hk_tm,ocb,hws_ocb,dt) [产品ID可以从[查询产品规格列表](ListProducts.xml)获取。](tag:hk_sbc,sbc)
+        :param product_id: 产品ID。  [产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。](tag:hws,hws_hk,ocb,hws_ocb,dt,ctc,sbc,fcs,hcs,g42,hk_g42,tm,hk_tm,hws_eu)[产品ID可以从[查询产品规格列表](ListProducts.xml)获取。](tag:cmcc)
         :type product_id: str
-        :param kafka_manager_user: 表示登录Kafka Manager的用户名。只能由英文字母、数字、中划线、下划线组成，长度为4~64的字符。
-        :type kafka_manager_user: str
-        :param kafka_manager_password: 表示登录Kafka Manager的密码。  复杂度要求：   - 输入长度为8到32位的字符串。   - 必须包含如下四种字符中的三种组合：       - 小写字母       - 大写字母       - 数字       - 特殊字符包括（&#x60;~!@#$%^&amp;*()-_&#x3D;+\\|[{}]:&#39;\&quot;,&lt;.&gt;/?）和空格，并且不能以-开头
-        :type kafka_manager_password: str
         :param maintain_begin: 维护时间窗开始时间，格式为HH:mm。
         :type maintain_begin: str
         :param maintain_end: 维护时间窗结束时间，格式为HH:mm。
         :type maintain_end: str
         :param enable_publicip: 是否开启公网访问功能。默认不开启公网。 - true：开启 - false：不开启
         :type enable_publicip: bool
+        :param tenant_ips: 创建实例时可以手动指定实例节点的内网IP地址，仅支持指定IPv4地址。  指定内网IP地址数量必须小于等于创建的节点数量。  如果指定的内网IP地址数量小于创建的节点数量时，系统会自动为剩余的节点随机分配内网IP地址。
+        :type tenant_ips: list[str]
         :param publicip_id: 实例绑定的弹性IP地址的ID。  以英文逗号隔开多个弹性IP地址的ID。  如果开启了公网访问功能（即enable_publicip为true），该字段为必选。
         :type publicip_id: str
-        :param ssl_enable: 是否打开SSL加密访问。  实例创建后将不支持动态开启和关闭。  - true：打开SSL加密访问。 - false：不打开SSL加密访问。
+        :param ssl_enable: 是否开启SASL加密访问。  [实例创建后将不支持动态开启和关闭。](tag:ocb,hws_ocb,hcs)  - true：开启SASL加密访问。 - false：关闭SASL加密访问。
         :type ssl_enable: bool
-        :param kafka_security_protocol: 开启SASL后使用的安全协议，如果开启了SASL认证功能（即ssl_enable&#x3D;true），该字段为必选。  若该字段值为空，默认开启SASL_SSL认证机制。  实例创建后将不支持动态开启和关闭。  - SASL_SSL: 采用SSL证书进行加密传输，支持账号密码认证，安全性更高。 - SASL_PLAINTEXT: 明文传输，支持账号密码认证，性能更好，建议使用SCRAM-SHA-512机制。  
+        :param kafka_security_protocol: 开启SASL后使用的安全协议。 - SASL_SSL: 使用SSL证书加密传输，支持账号密码认证，安全性更高。 - SASL_PLAINTEXT: 通过明文传输，支持账号密码认证，性能更好。  若该字段值为空，默认开启SASL_SSL认证机制。实例创建后，此参数不支持动态修改。 若创建实例时，使用了port_protocol参数，则Kafka的内网访问安全协议以及公网访问安全协议会使用port_protocol中的值，则此参数无效。
         :type kafka_security_protocol: str
         :param sasl_enabled_mechanisms: 开启SASL后使用的认证机制，如果开启了SASL认证功能（即ssl_enable&#x3D;true），该字段为必选。  若该字段值为空，默认开启PLAIN认证机制。  选择其一进行SASL认证即可，支持同时开启两种认证机制。 取值如下： - PLAIN: 简单的用户名密码校验。 - SCRAM-SHA-512: 用户凭证校验，安全性比PLAIN机制更高。
         :type sasl_enabled_mechanisms: list[str]
+        :param port_protocol: 
+        :type port_protocol: :class:`huaweicloudsdkkafka.v2.PortProtocol`
         :param retention_policy: 磁盘的容量到达容量阈值后，对于消息的处理策略。  取值如下： - produce_reject：表示拒绝消息写入。 - time_base：表示自动删除最老消息。
         :type retention_policy: str
         :param ipv6_enable: 是否开启ipv6。仅在虚拟私有云支持ipv6时生效。
@@ -180,15 +180,15 @@ class CreateInstanceByEngineReq:
         self._subnet_id = None
         self._available_zones = None
         self._product_id = None
-        self._kafka_manager_user = None
-        self._kafka_manager_password = None
         self._maintain_begin = None
         self._maintain_end = None
         self._enable_publicip = None
+        self._tenant_ips = None
         self._publicip_id = None
         self._ssl_enable = None
         self._kafka_security_protocol = None
         self._sasl_enabled_mechanisms = None
+        self._port_protocol = None
         self._retention_policy = None
         self._ipv6_enable = None
         self._disk_encrypted_enable = None
@@ -219,16 +219,14 @@ class CreateInstanceByEngineReq:
         self.subnet_id = subnet_id
         self.available_zones = available_zones
         self.product_id = product_id
-        if kafka_manager_user is not None:
-            self.kafka_manager_user = kafka_manager_user
-        if kafka_manager_password is not None:
-            self.kafka_manager_password = kafka_manager_password
         if maintain_begin is not None:
             self.maintain_begin = maintain_begin
         if maintain_end is not None:
             self.maintain_end = maintain_end
         if enable_publicip is not None:
             self.enable_publicip = enable_publicip
+        if tenant_ips is not None:
+            self.tenant_ips = tenant_ips
         if publicip_id is not None:
             self.publicip_id = publicip_id
         if ssl_enable is not None:
@@ -237,6 +235,8 @@ class CreateInstanceByEngineReq:
             self.kafka_security_protocol = kafka_security_protocol
         if sasl_enabled_mechanisms is not None:
             self.sasl_enabled_mechanisms = sasl_enabled_mechanisms
+        if port_protocol is not None:
+            self.port_protocol = port_protocol
         if retention_policy is not None:
             self.retention_policy = retention_policy
         if ipv6_enable is not None:
@@ -331,7 +331,7 @@ class CreateInstanceByEngineReq:
     def engine_version(self):
         r"""Gets the engine_version of this CreateInstanceByEngineReq.
 
-        消息引擎的版本。取值填写为：   [- 1.1.0](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt)   [- 2.3.0](tag:g42,tm,hk_g42,ctc,hk_tm,dt)   - 2.7   - 3.x
+        消息引擎的版本。取值填写为：   [- 1.1.0](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,sbc)   [- 2.3.0](tag:g42,tm,hk_g42,ctc,hk_tm,dt,sbc)   - 2.7   [- 3.x](tag:hws,hws_hk,dt,sbc,hcs,fcs,ctc,tm,hk_tm,hws_eu)
 
         :return: The engine_version of this CreateInstanceByEngineReq.
         :rtype: str
@@ -342,7 +342,7 @@ class CreateInstanceByEngineReq:
     def engine_version(self, engine_version):
         r"""Sets the engine_version of this CreateInstanceByEngineReq.
 
-        消息引擎的版本。取值填写为：   [- 1.1.0](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt)   [- 2.3.0](tag:g42,tm,hk_g42,ctc,hk_tm,dt)   - 2.7   - 3.x
+        消息引擎的版本。取值填写为：   [- 1.1.0](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,sbc)   [- 2.3.0](tag:g42,tm,hk_g42,ctc,hk_tm,dt,sbc)   - 2.7   [- 3.x](tag:hws,hws_hk,dt,sbc,hcs,fcs,ctc,tm,hk_tm,hws_eu)
 
         :param engine_version: The engine_version of this CreateInstanceByEngineReq.
         :type engine_version: str
@@ -375,7 +375,7 @@ class CreateInstanceByEngineReq:
     def storage_space(self):
         r"""Gets the storage_space of this CreateInstanceByEngineReq.
 
-        消息存储空间，单位GB。   [- Kafka实例规格为c6.2u4g.cluster时，存储空间取值范围300GB ~ 300000GB。   - Kafka实例规格为c6.4u8g.cluster时，存储空间取值范围300GB ~ 600000GB。   - Kafka实例规格为c6.8u16g.cluster时，存储空间取值范围300GB ~ 1500000GB。   - Kafka实例规格为c6.12u24g.cluster时，存储空间取值范围300GB ~ 1500000GB。   - Kafka实例规格为c6.16u32g.cluster时，存储空间取值范围300GB ~ 1500000GB。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt)      [- Kafka实例规格为kafka.4u16g.cluster时，存储空间取值范围300GB~600000GB。   - Kafka实例规格为kafka.8u32g.cluster时，存储空间取值范围300GB~1500000GB。   - Kafka实例规格为kafka.16u64g.cluster时，存储空间取值范围300GB~1500000GB。   - Kafka实例规格为kafka.32u128g.cluster时，存储空间取值范围300GB~1500000GB。](tag:hcs,fcs)
+        消息存储空间，单位GB。   [- Kafka实例规格为c6.2u4g.cluster时，存储空间取值范围300GB ~ 300000GB。   - Kafka实例规格为c6.4u8g.cluster时，存储空间取值范围300GB ~ 600000GB。   - Kafka实例规格为c6.8u16g.cluster时，存储空间取值范围300GB ~ 1500000GB。   - Kafka实例规格为c6.12u24g.cluster时，存储空间取值范围300GB ~ 1500000GB。   - Kafka实例规格为c6.16u32g.cluster时，存储空间取值范围300GB ~ 1500000GB。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt)      [- Kafka实例规格为kafka.2u8g.cluster时，存储空间取值范围300GB~300000GB。](tag:fcs)   [- Kafka实例规格为kafka.4u16g.cluster时，存储空间取值范围300GB~600000GB。   - Kafka实例规格为kafka.8u32g.cluster时，存储空间取值范围300GB~1500000GB。   - Kafka实例规格为kafka.16u64g.cluster时，存储空间取值范围300GB~1500000GB。   - Kafka实例规格为kafka.32u128g.cluster时，存储空间取值范围300GB~1500000GB。](tag:hcs,fcs)
 
         :return: The storage_space of this CreateInstanceByEngineReq.
         :rtype: int
@@ -386,7 +386,7 @@ class CreateInstanceByEngineReq:
     def storage_space(self, storage_space):
         r"""Sets the storage_space of this CreateInstanceByEngineReq.
 
-        消息存储空间，单位GB。   [- Kafka实例规格为c6.2u4g.cluster时，存储空间取值范围300GB ~ 300000GB。   - Kafka实例规格为c6.4u8g.cluster时，存储空间取值范围300GB ~ 600000GB。   - Kafka实例规格为c6.8u16g.cluster时，存储空间取值范围300GB ~ 1500000GB。   - Kafka实例规格为c6.12u24g.cluster时，存储空间取值范围300GB ~ 1500000GB。   - Kafka实例规格为c6.16u32g.cluster时，存储空间取值范围300GB ~ 1500000GB。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt)      [- Kafka实例规格为kafka.4u16g.cluster时，存储空间取值范围300GB~600000GB。   - Kafka实例规格为kafka.8u32g.cluster时，存储空间取值范围300GB~1500000GB。   - Kafka实例规格为kafka.16u64g.cluster时，存储空间取值范围300GB~1500000GB。   - Kafka实例规格为kafka.32u128g.cluster时，存储空间取值范围300GB~1500000GB。](tag:hcs,fcs)
+        消息存储空间，单位GB。   [- Kafka实例规格为c6.2u4g.cluster时，存储空间取值范围300GB ~ 300000GB。   - Kafka实例规格为c6.4u8g.cluster时，存储空间取值范围300GB ~ 600000GB。   - Kafka实例规格为c6.8u16g.cluster时，存储空间取值范围300GB ~ 1500000GB。   - Kafka实例规格为c6.12u24g.cluster时，存储空间取值范围300GB ~ 1500000GB。   - Kafka实例规格为c6.16u32g.cluster时，存储空间取值范围300GB ~ 1500000GB。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt)      [- Kafka实例规格为kafka.2u8g.cluster时，存储空间取值范围300GB~300000GB。](tag:fcs)   [- Kafka实例规格为kafka.4u16g.cluster时，存储空间取值范围300GB~600000GB。   - Kafka实例规格为kafka.8u32g.cluster时，存储空间取值范围300GB~1500000GB。   - Kafka实例规格为kafka.16u64g.cluster时，存储空间取值范围300GB~1500000GB。   - Kafka实例规格为kafka.32u128g.cluster时，存储空间取值范围300GB~1500000GB。](tag:hcs,fcs)
 
         :param storage_space: The storage_space of this CreateInstanceByEngineReq.
         :type storage_space: int
@@ -529,7 +529,7 @@ class CreateInstanceByEngineReq:
     def product_id(self):
         r"""Gets the product_id of this CreateInstanceByEngineReq.
 
-        产品ID。  [产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。](tag:hws,hws_hk,ctc,cmcc,hws_eu,g42,hk_g42,tm,hk_tm,ocb,hws_ocb,dt) [产品ID可以从[查询产品规格列表](ListProducts.xml)获取。](tag:hk_sbc,sbc)
+        产品ID。  [产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。](tag:hws,hws_hk,ocb,hws_ocb,dt,ctc,sbc,fcs,hcs,g42,hk_g42,tm,hk_tm,hws_eu)[产品ID可以从[查询产品规格列表](ListProducts.xml)获取。](tag:cmcc)
 
         :return: The product_id of this CreateInstanceByEngineReq.
         :rtype: str
@@ -540,56 +540,12 @@ class CreateInstanceByEngineReq:
     def product_id(self, product_id):
         r"""Sets the product_id of this CreateInstanceByEngineReq.
 
-        产品ID。  [产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。](tag:hws,hws_hk,ctc,cmcc,hws_eu,g42,hk_g42,tm,hk_tm,ocb,hws_ocb,dt) [产品ID可以从[查询产品规格列表](ListProducts.xml)获取。](tag:hk_sbc,sbc)
+        产品ID。  [产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。](tag:hws,hws_hk,ocb,hws_ocb,dt,ctc,sbc,fcs,hcs,g42,hk_g42,tm,hk_tm,hws_eu)[产品ID可以从[查询产品规格列表](ListProducts.xml)获取。](tag:cmcc)
 
         :param product_id: The product_id of this CreateInstanceByEngineReq.
         :type product_id: str
         """
         self._product_id = product_id
-
-    @property
-    def kafka_manager_user(self):
-        r"""Gets the kafka_manager_user of this CreateInstanceByEngineReq.
-
-        表示登录Kafka Manager的用户名。只能由英文字母、数字、中划线、下划线组成，长度为4~64的字符。
-
-        :return: The kafka_manager_user of this CreateInstanceByEngineReq.
-        :rtype: str
-        """
-        return self._kafka_manager_user
-
-    @kafka_manager_user.setter
-    def kafka_manager_user(self, kafka_manager_user):
-        r"""Sets the kafka_manager_user of this CreateInstanceByEngineReq.
-
-        表示登录Kafka Manager的用户名。只能由英文字母、数字、中划线、下划线组成，长度为4~64的字符。
-
-        :param kafka_manager_user: The kafka_manager_user of this CreateInstanceByEngineReq.
-        :type kafka_manager_user: str
-        """
-        self._kafka_manager_user = kafka_manager_user
-
-    @property
-    def kafka_manager_password(self):
-        r"""Gets the kafka_manager_password of this CreateInstanceByEngineReq.
-
-        表示登录Kafka Manager的密码。  复杂度要求：   - 输入长度为8到32位的字符串。   - 必须包含如下四种字符中的三种组合：       - 小写字母       - 大写字母       - 数字       - 特殊字符包括（`~!@#$%^&*()-_=+\\|[{}]:'\",<.>/?）和空格，并且不能以-开头
-
-        :return: The kafka_manager_password of this CreateInstanceByEngineReq.
-        :rtype: str
-        """
-        return self._kafka_manager_password
-
-    @kafka_manager_password.setter
-    def kafka_manager_password(self, kafka_manager_password):
-        r"""Sets the kafka_manager_password of this CreateInstanceByEngineReq.
-
-        表示登录Kafka Manager的密码。  复杂度要求：   - 输入长度为8到32位的字符串。   - 必须包含如下四种字符中的三种组合：       - 小写字母       - 大写字母       - 数字       - 特殊字符包括（`~!@#$%^&*()-_=+\\|[{}]:'\",<.>/?）和空格，并且不能以-开头
-
-        :param kafka_manager_password: The kafka_manager_password of this CreateInstanceByEngineReq.
-        :type kafka_manager_password: str
-        """
-        self._kafka_manager_password = kafka_manager_password
 
     @property
     def maintain_begin(self):
@@ -658,6 +614,28 @@ class CreateInstanceByEngineReq:
         self._enable_publicip = enable_publicip
 
     @property
+    def tenant_ips(self):
+        r"""Gets the tenant_ips of this CreateInstanceByEngineReq.
+
+        创建实例时可以手动指定实例节点的内网IP地址，仅支持指定IPv4地址。  指定内网IP地址数量必须小于等于创建的节点数量。  如果指定的内网IP地址数量小于创建的节点数量时，系统会自动为剩余的节点随机分配内网IP地址。
+
+        :return: The tenant_ips of this CreateInstanceByEngineReq.
+        :rtype: list[str]
+        """
+        return self._tenant_ips
+
+    @tenant_ips.setter
+    def tenant_ips(self, tenant_ips):
+        r"""Sets the tenant_ips of this CreateInstanceByEngineReq.
+
+        创建实例时可以手动指定实例节点的内网IP地址，仅支持指定IPv4地址。  指定内网IP地址数量必须小于等于创建的节点数量。  如果指定的内网IP地址数量小于创建的节点数量时，系统会自动为剩余的节点随机分配内网IP地址。
+
+        :param tenant_ips: The tenant_ips of this CreateInstanceByEngineReq.
+        :type tenant_ips: list[str]
+        """
+        self._tenant_ips = tenant_ips
+
+    @property
     def publicip_id(self):
         r"""Gets the publicip_id of this CreateInstanceByEngineReq.
 
@@ -683,7 +661,7 @@ class CreateInstanceByEngineReq:
     def ssl_enable(self):
         r"""Gets the ssl_enable of this CreateInstanceByEngineReq.
 
-        是否打开SSL加密访问。  实例创建后将不支持动态开启和关闭。  - true：打开SSL加密访问。 - false：不打开SSL加密访问。
+        是否开启SASL加密访问。  [实例创建后将不支持动态开启和关闭。](tag:ocb,hws_ocb,hcs)  - true：开启SASL加密访问。 - false：关闭SASL加密访问。
 
         :return: The ssl_enable of this CreateInstanceByEngineReq.
         :rtype: bool
@@ -694,7 +672,7 @@ class CreateInstanceByEngineReq:
     def ssl_enable(self, ssl_enable):
         r"""Sets the ssl_enable of this CreateInstanceByEngineReq.
 
-        是否打开SSL加密访问。  实例创建后将不支持动态开启和关闭。  - true：打开SSL加密访问。 - false：不打开SSL加密访问。
+        是否开启SASL加密访问。  [实例创建后将不支持动态开启和关闭。](tag:ocb,hws_ocb,hcs)  - true：开启SASL加密访问。 - false：关闭SASL加密访问。
 
         :param ssl_enable: The ssl_enable of this CreateInstanceByEngineReq.
         :type ssl_enable: bool
@@ -705,7 +683,7 @@ class CreateInstanceByEngineReq:
     def kafka_security_protocol(self):
         r"""Gets the kafka_security_protocol of this CreateInstanceByEngineReq.
 
-        开启SASL后使用的安全协议，如果开启了SASL认证功能（即ssl_enable=true），该字段为必选。  若该字段值为空，默认开启SASL_SSL认证机制。  实例创建后将不支持动态开启和关闭。  - SASL_SSL: 采用SSL证书进行加密传输，支持账号密码认证，安全性更高。 - SASL_PLAINTEXT: 明文传输，支持账号密码认证，性能更好，建议使用SCRAM-SHA-512机制。  
+        开启SASL后使用的安全协议。 - SASL_SSL: 使用SSL证书加密传输，支持账号密码认证，安全性更高。 - SASL_PLAINTEXT: 通过明文传输，支持账号密码认证，性能更好。  若该字段值为空，默认开启SASL_SSL认证机制。实例创建后，此参数不支持动态修改。 若创建实例时，使用了port_protocol参数，则Kafka的内网访问安全协议以及公网访问安全协议会使用port_protocol中的值，则此参数无效。
 
         :return: The kafka_security_protocol of this CreateInstanceByEngineReq.
         :rtype: str
@@ -716,7 +694,7 @@ class CreateInstanceByEngineReq:
     def kafka_security_protocol(self, kafka_security_protocol):
         r"""Sets the kafka_security_protocol of this CreateInstanceByEngineReq.
 
-        开启SASL后使用的安全协议，如果开启了SASL认证功能（即ssl_enable=true），该字段为必选。  若该字段值为空，默认开启SASL_SSL认证机制。  实例创建后将不支持动态开启和关闭。  - SASL_SSL: 采用SSL证书进行加密传输，支持账号密码认证，安全性更高。 - SASL_PLAINTEXT: 明文传输，支持账号密码认证，性能更好，建议使用SCRAM-SHA-512机制。  
+        开启SASL后使用的安全协议。 - SASL_SSL: 使用SSL证书加密传输，支持账号密码认证，安全性更高。 - SASL_PLAINTEXT: 通过明文传输，支持账号密码认证，性能更好。  若该字段值为空，默认开启SASL_SSL认证机制。实例创建后，此参数不支持动态修改。 若创建实例时，使用了port_protocol参数，则Kafka的内网访问安全协议以及公网访问安全协议会使用port_protocol中的值，则此参数无效。
 
         :param kafka_security_protocol: The kafka_security_protocol of this CreateInstanceByEngineReq.
         :type kafka_security_protocol: str
@@ -744,6 +722,24 @@ class CreateInstanceByEngineReq:
         :type sasl_enabled_mechanisms: list[str]
         """
         self._sasl_enabled_mechanisms = sasl_enabled_mechanisms
+
+    @property
+    def port_protocol(self):
+        r"""Gets the port_protocol of this CreateInstanceByEngineReq.
+
+        :return: The port_protocol of this CreateInstanceByEngineReq.
+        :rtype: :class:`huaweicloudsdkkafka.v2.PortProtocol`
+        """
+        return self._port_protocol
+
+    @port_protocol.setter
+    def port_protocol(self, port_protocol):
+        r"""Sets the port_protocol of this CreateInstanceByEngineReq.
+
+        :param port_protocol: The port_protocol of this CreateInstanceByEngineReq.
+        :type port_protocol: :class:`huaweicloudsdkkafka.v2.PortProtocol`
+        """
+        self._port_protocol = port_protocol
 
     @property
     def retention_policy(self):

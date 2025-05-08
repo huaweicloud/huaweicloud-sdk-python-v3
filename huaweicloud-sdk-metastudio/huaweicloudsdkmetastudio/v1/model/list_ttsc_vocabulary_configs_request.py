@@ -20,6 +20,8 @@ class ListTtscVocabularyConfigsRequest:
         'x_request_id': 'str',
         'x_app_user_id': 'str',
         'type': 'str',
+        'tts_service_name': 'str',
+        'is_vocabulary_config_enable': 'str',
         'limit': 'int',
         'offset': 'int',
         'start_time': 'str',
@@ -31,6 +33,8 @@ class ListTtscVocabularyConfigsRequest:
         'x_request_id': 'X-Request-Id',
         'x_app_user_id': 'X-App-UserId',
         'type': 'type',
+        'tts_service_name': 'tts_service_name',
+        'is_vocabulary_config_enable': 'is_vocabulary_config_enable',
         'limit': 'limit',
         'offset': 'offset',
         'start_time': 'start_time',
@@ -38,7 +42,7 @@ class ListTtscVocabularyConfigsRequest:
         'search_key': 'search_key'
     }
 
-    def __init__(self, x_request_id=None, x_app_user_id=None, type=None, limit=None, offset=None, start_time=None, end_time=None, search_key=None):
+    def __init__(self, x_request_id=None, x_app_user_id=None, type=None, tts_service_name=None, is_vocabulary_config_enable=None, limit=None, offset=None, start_time=None, end_time=None, search_key=None):
         r"""ListTtscVocabularyConfigsRequest
 
         The model defined in huaweicloud sdk
@@ -49,6 +53,10 @@ class ListTtscVocabularyConfigsRequest:
         :type x_app_user_id: str
         :param type: 自定义读法类型 CHINESE_G2P：拼音
         :type type: str
+        :param tts_service_name: 声音模型名称
+        :type tts_service_name: str
+        :param is_vocabulary_config_enable: 是否应用词表配置，从周边服务传递
+        :type is_vocabulary_config_enable: str
         :param limit: 每页显示的条目数量。
         :type limit: int
         :param offset: 偏移量，表示从此偏移量开始查询。
@@ -66,6 +74,8 @@ class ListTtscVocabularyConfigsRequest:
         self._x_request_id = None
         self._x_app_user_id = None
         self._type = None
+        self._tts_service_name = None
+        self._is_vocabulary_config_enable = None
         self._limit = None
         self._offset = None
         self._start_time = None
@@ -77,7 +87,12 @@ class ListTtscVocabularyConfigsRequest:
             self.x_request_id = x_request_id
         if x_app_user_id is not None:
             self.x_app_user_id = x_app_user_id
-        self.type = type
+        if type is not None:
+            self.type = type
+        if tts_service_name is not None:
+            self.tts_service_name = tts_service_name
+        if is_vocabulary_config_enable is not None:
+            self.is_vocabulary_config_enable = is_vocabulary_config_enable
         if limit is not None:
             self.limit = limit
         if offset is not None:
@@ -154,6 +169,50 @@ class ListTtscVocabularyConfigsRequest:
         :type type: str
         """
         self._type = type
+
+    @property
+    def tts_service_name(self):
+        r"""Gets the tts_service_name of this ListTtscVocabularyConfigsRequest.
+
+        声音模型名称
+
+        :return: The tts_service_name of this ListTtscVocabularyConfigsRequest.
+        :rtype: str
+        """
+        return self._tts_service_name
+
+    @tts_service_name.setter
+    def tts_service_name(self, tts_service_name):
+        r"""Sets the tts_service_name of this ListTtscVocabularyConfigsRequest.
+
+        声音模型名称
+
+        :param tts_service_name: The tts_service_name of this ListTtscVocabularyConfigsRequest.
+        :type tts_service_name: str
+        """
+        self._tts_service_name = tts_service_name
+
+    @property
+    def is_vocabulary_config_enable(self):
+        r"""Gets the is_vocabulary_config_enable of this ListTtscVocabularyConfigsRequest.
+
+        是否应用词表配置，从周边服务传递
+
+        :return: The is_vocabulary_config_enable of this ListTtscVocabularyConfigsRequest.
+        :rtype: str
+        """
+        return self._is_vocabulary_config_enable
+
+    @is_vocabulary_config_enable.setter
+    def is_vocabulary_config_enable(self, is_vocabulary_config_enable):
+        r"""Sets the is_vocabulary_config_enable of this ListTtscVocabularyConfigsRequest.
+
+        是否应用词表配置，从周边服务传递
+
+        :param is_vocabulary_config_enable: The is_vocabulary_config_enable of this ListTtscVocabularyConfigsRequest.
+        :type is_vocabulary_config_enable: str
+        """
+        self._is_vocabulary_config_enable = is_vocabulary_config_enable
 
     @property
     def limit(self):

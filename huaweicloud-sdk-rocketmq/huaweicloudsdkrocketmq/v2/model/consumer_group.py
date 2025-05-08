@@ -45,23 +45,23 @@ class ConsumerGroup:
 
         The model defined in huaweicloud sdk
 
-        :param enabled: 是否可以消费。
+        :param enabled: **参数解释**： 是否可以消费。 **取值范围**： - true：可以消费。 - false：不可以消费。
         :type enabled: bool
-        :param broadcast: 是否广播。
+        :param broadcast: **参数解释**： 是否广播。 **取值范围**： - true：可以广播。 - false：不可以广播。
         :type broadcast: bool
-        :param brokers: 关联的代理列表。
+        :param brokers: **参数解释**： 关联的代理列表。
         :type brokers: list[str]
-        :param name: 消费组名称，只能由英文字母、数字、百分号、竖线、中划线、下划线组成，长度3~64个字符。
+        :param name: **参数解释**： 消费组名称。 **取值范围**： 不涉及。
         :type name: str
-        :param group_desc: 消费组描述，长度0~200个字符。
+        :param group_desc: **参数解释**： 消费组描述。 **取值范围**： 不涉及。
         :type group_desc: str
-        :param retry_max_time: 最大重试次数，取值范围为1~16。
+        :param retry_max_time: **参数解释**： 最大重试次数。 **取值范围**： 1~16。
         :type retry_max_time: int
-        :param created_at: 创建时间戳。
+        :param created_at: **参数解释**： 创建时间戳。 **取值范围**： 不涉及。
         :type created_at: int
-        :param permissions: 权限集。
+        :param permissions: **参数解释**： 权限集。
         :type permissions: list[str]
-        :param consume_orderly: 是否按顺序消费。
+        :param consume_orderly: **参数解释**： 是否按顺序消费。 **取值范围**： - true：按顺序消费。 - false：不按顺序消费。
         :type consume_orderly: bool
         """
         
@@ -101,7 +101,7 @@ class ConsumerGroup:
     def enabled(self):
         r"""Gets the enabled of this ConsumerGroup.
 
-        是否可以消费。
+        **参数解释**： 是否可以消费。 **取值范围**： - true：可以消费。 - false：不可以消费。
 
         :return: The enabled of this ConsumerGroup.
         :rtype: bool
@@ -112,7 +112,7 @@ class ConsumerGroup:
     def enabled(self, enabled):
         r"""Sets the enabled of this ConsumerGroup.
 
-        是否可以消费。
+        **参数解释**： 是否可以消费。 **取值范围**： - true：可以消费。 - false：不可以消费。
 
         :param enabled: The enabled of this ConsumerGroup.
         :type enabled: bool
@@ -123,7 +123,7 @@ class ConsumerGroup:
     def broadcast(self):
         r"""Gets the broadcast of this ConsumerGroup.
 
-        是否广播。
+        **参数解释**： 是否广播。 **取值范围**： - true：可以广播。 - false：不可以广播。
 
         :return: The broadcast of this ConsumerGroup.
         :rtype: bool
@@ -134,7 +134,7 @@ class ConsumerGroup:
     def broadcast(self, broadcast):
         r"""Sets the broadcast of this ConsumerGroup.
 
-        是否广播。
+        **参数解释**： 是否广播。 **取值范围**： - true：可以广播。 - false：不可以广播。
 
         :param broadcast: The broadcast of this ConsumerGroup.
         :type broadcast: bool
@@ -145,7 +145,7 @@ class ConsumerGroup:
     def brokers(self):
         r"""Gets the brokers of this ConsumerGroup.
 
-        关联的代理列表。
+        **参数解释**： 关联的代理列表。
 
         :return: The brokers of this ConsumerGroup.
         :rtype: list[str]
@@ -156,7 +156,7 @@ class ConsumerGroup:
     def brokers(self, brokers):
         r"""Sets the brokers of this ConsumerGroup.
 
-        关联的代理列表。
+        **参数解释**： 关联的代理列表。
 
         :param brokers: The brokers of this ConsumerGroup.
         :type brokers: list[str]
@@ -167,7 +167,7 @@ class ConsumerGroup:
     def name(self):
         r"""Gets the name of this ConsumerGroup.
 
-        消费组名称，只能由英文字母、数字、百分号、竖线、中划线、下划线组成，长度3~64个字符。
+        **参数解释**： 消费组名称。 **取值范围**： 不涉及。
 
         :return: The name of this ConsumerGroup.
         :rtype: str
@@ -178,7 +178,7 @@ class ConsumerGroup:
     def name(self, name):
         r"""Sets the name of this ConsumerGroup.
 
-        消费组名称，只能由英文字母、数字、百分号、竖线、中划线、下划线组成，长度3~64个字符。
+        **参数解释**： 消费组名称。 **取值范围**： 不涉及。
 
         :param name: The name of this ConsumerGroup.
         :type name: str
@@ -189,7 +189,7 @@ class ConsumerGroup:
     def group_desc(self):
         r"""Gets the group_desc of this ConsumerGroup.
 
-        消费组描述，长度0~200个字符。
+        **参数解释**： 消费组描述。 **取值范围**： 不涉及。
 
         :return: The group_desc of this ConsumerGroup.
         :rtype: str
@@ -200,7 +200,7 @@ class ConsumerGroup:
     def group_desc(self, group_desc):
         r"""Sets the group_desc of this ConsumerGroup.
 
-        消费组描述，长度0~200个字符。
+        **参数解释**： 消费组描述。 **取值范围**： 不涉及。
 
         :param group_desc: The group_desc of this ConsumerGroup.
         :type group_desc: str
@@ -211,7 +211,7 @@ class ConsumerGroup:
     def retry_max_time(self):
         r"""Gets the retry_max_time of this ConsumerGroup.
 
-        最大重试次数，取值范围为1~16。
+        **参数解释**： 最大重试次数。 **取值范围**： 1~16。
 
         :return: The retry_max_time of this ConsumerGroup.
         :rtype: int
@@ -222,7 +222,7 @@ class ConsumerGroup:
     def retry_max_time(self, retry_max_time):
         r"""Sets the retry_max_time of this ConsumerGroup.
 
-        最大重试次数，取值范围为1~16。
+        **参数解释**： 最大重试次数。 **取值范围**： 1~16。
 
         :param retry_max_time: The retry_max_time of this ConsumerGroup.
         :type retry_max_time: int
@@ -233,7 +233,7 @@ class ConsumerGroup:
     def created_at(self):
         r"""Gets the created_at of this ConsumerGroup.
 
-        创建时间戳。
+        **参数解释**： 创建时间戳。 **取值范围**： 不涉及。
 
         :return: The created_at of this ConsumerGroup.
         :rtype: int
@@ -244,7 +244,7 @@ class ConsumerGroup:
     def created_at(self, created_at):
         r"""Sets the created_at of this ConsumerGroup.
 
-        创建时间戳。
+        **参数解释**： 创建时间戳。 **取值范围**： 不涉及。
 
         :param created_at: The created_at of this ConsumerGroup.
         :type created_at: int
@@ -255,7 +255,7 @@ class ConsumerGroup:
     def permissions(self):
         r"""Gets the permissions of this ConsumerGroup.
 
-        权限集。
+        **参数解释**： 权限集。
 
         :return: The permissions of this ConsumerGroup.
         :rtype: list[str]
@@ -266,7 +266,7 @@ class ConsumerGroup:
     def permissions(self, permissions):
         r"""Sets the permissions of this ConsumerGroup.
 
-        权限集。
+        **参数解释**： 权限集。
 
         :param permissions: The permissions of this ConsumerGroup.
         :type permissions: list[str]
@@ -277,7 +277,7 @@ class ConsumerGroup:
     def consume_orderly(self):
         r"""Gets the consume_orderly of this ConsumerGroup.
 
-        是否按顺序消费。
+        **参数解释**： 是否按顺序消费。 **取值范围**： - true：按顺序消费。 - false：不按顺序消费。
 
         :return: The consume_orderly of this ConsumerGroup.
         :rtype: bool
@@ -288,7 +288,7 @@ class ConsumerGroup:
     def consume_orderly(self, consume_orderly):
         r"""Sets the consume_orderly of this ConsumerGroup.
 
-        是否按顺序消费。
+        **参数解释**： 是否按顺序消费。 **取值范围**： - true：按顺序消费。 - false：不按顺序消费。
 
         :param consume_orderly: The consume_orderly of this ConsumerGroup.
         :type consume_orderly: bool

@@ -17,13 +17,6 @@ class SmartConnectTaskRespSourceConfig:
     sensitive_list = []
 
     openapi_types = {
-        'redis_address': 'str',
-        'redis_type': 'str',
-        'dcs_instance_id': 'str',
-        'sync_mode': 'str',
-        'full_sync_wait_ms': 'int',
-        'full_sync_max_retry': 'int',
-        'ratelimit': 'int',
         'current_cluster_name': 'str',
         'cluster_name': 'str',
         'user_name': 'str',
@@ -43,13 +36,6 @@ class SmartConnectTaskRespSourceConfig:
     }
 
     attribute_map = {
-        'redis_address': 'redis_address',
-        'redis_type': 'redis_type',
-        'dcs_instance_id': 'dcs_instance_id',
-        'sync_mode': 'sync_mode',
-        'full_sync_wait_ms': 'full_sync_wait_ms',
-        'full_sync_max_retry': 'full_sync_max_retry',
-        'ratelimit': 'ratelimit',
         'current_cluster_name': 'current_cluster_name',
         'cluster_name': 'cluster_name',
         'user_name': 'user_name',
@@ -68,25 +54,11 @@ class SmartConnectTaskRespSourceConfig:
         'topics_mapping': 'topics_mapping'
     }
 
-    def __init__(self, redis_address=None, redis_type=None, dcs_instance_id=None, sync_mode=None, full_sync_wait_ms=None, full_sync_max_retry=None, ratelimit=None, current_cluster_name=None, cluster_name=None, user_name=None, sasl_mechanism=None, instance_id=None, bootstrap_servers=None, security_protocol=None, direction=None, sync_consumer_offsets_enabled=None, replication_factor=None, task_num=None, rename_topic_enabled=None, provenance_header_enabled=None, consumer_strategy=None, compression_type=None, topics_mapping=None):
+    def __init__(self, current_cluster_name=None, cluster_name=None, user_name=None, sasl_mechanism=None, instance_id=None, bootstrap_servers=None, security_protocol=None, direction=None, sync_consumer_offsets_enabled=None, replication_factor=None, task_num=None, rename_topic_enabled=None, provenance_header_enabled=None, consumer_strategy=None, compression_type=None, topics_mapping=None):
         r"""SmartConnectTaskRespSourceConfig
 
         The model defined in huaweicloud sdk
 
-        :param redis_address: Redis实例地址。（仅源端类型为Redis时会显示）
-        :type redis_address: str
-        :param redis_type: Redis实例类型。（仅源端类型为Redis时会显示）
-        :type redis_type: str
-        :param dcs_instance_id: DCS实例ID。（仅源端类型为Redis时会显示）
-        :type dcs_instance_id: str
-        :param sync_mode: 同步类型，“RDB_ONLY”为全量同步，“CUSTOM_OFFSET”为全量同步+增量同步。（仅源端类型为Redis时会显示）
-        :type sync_mode: str
-        :param full_sync_wait_ms: 全量同步重试间隔时间，单位：毫秒。（仅源端类型为Redis时会显示）
-        :type full_sync_wait_ms: int
-        :param full_sync_max_retry: 全量同步最大重试次数。（仅源端类型为Redis时会显示）
-        :type full_sync_max_retry: int
-        :param ratelimit: 限速，单位为KB/s。-1表示不限速（仅源端类型为Redis时会显示）
-        :type ratelimit: int
         :param current_cluster_name: 当前Kafka实例别名。（仅源端类型为Kafka时会显示）
         :type current_cluster_name: str
         :param cluster_name: 对端Kafka实例别名。（仅源端类型为Kafka时会显示）
@@ -123,13 +95,6 @@ class SmartConnectTaskRespSourceConfig:
         
         
 
-        self._redis_address = None
-        self._redis_type = None
-        self._dcs_instance_id = None
-        self._sync_mode = None
-        self._full_sync_wait_ms = None
-        self._full_sync_max_retry = None
-        self._ratelimit = None
         self._current_cluster_name = None
         self._cluster_name = None
         self._user_name = None
@@ -148,20 +113,6 @@ class SmartConnectTaskRespSourceConfig:
         self._topics_mapping = None
         self.discriminator = None
 
-        if redis_address is not None:
-            self.redis_address = redis_address
-        if redis_type is not None:
-            self.redis_type = redis_type
-        if dcs_instance_id is not None:
-            self.dcs_instance_id = dcs_instance_id
-        if sync_mode is not None:
-            self.sync_mode = sync_mode
-        if full_sync_wait_ms is not None:
-            self.full_sync_wait_ms = full_sync_wait_ms
-        if full_sync_max_retry is not None:
-            self.full_sync_max_retry = full_sync_max_retry
-        if ratelimit is not None:
-            self.ratelimit = ratelimit
         if current_cluster_name is not None:
             self.current_cluster_name = current_cluster_name
         if cluster_name is not None:
@@ -194,160 +145,6 @@ class SmartConnectTaskRespSourceConfig:
             self.compression_type = compression_type
         if topics_mapping is not None:
             self.topics_mapping = topics_mapping
-
-    @property
-    def redis_address(self):
-        r"""Gets the redis_address of this SmartConnectTaskRespSourceConfig.
-
-        Redis实例地址。（仅源端类型为Redis时会显示）
-
-        :return: The redis_address of this SmartConnectTaskRespSourceConfig.
-        :rtype: str
-        """
-        return self._redis_address
-
-    @redis_address.setter
-    def redis_address(self, redis_address):
-        r"""Sets the redis_address of this SmartConnectTaskRespSourceConfig.
-
-        Redis实例地址。（仅源端类型为Redis时会显示）
-
-        :param redis_address: The redis_address of this SmartConnectTaskRespSourceConfig.
-        :type redis_address: str
-        """
-        self._redis_address = redis_address
-
-    @property
-    def redis_type(self):
-        r"""Gets the redis_type of this SmartConnectTaskRespSourceConfig.
-
-        Redis实例类型。（仅源端类型为Redis时会显示）
-
-        :return: The redis_type of this SmartConnectTaskRespSourceConfig.
-        :rtype: str
-        """
-        return self._redis_type
-
-    @redis_type.setter
-    def redis_type(self, redis_type):
-        r"""Sets the redis_type of this SmartConnectTaskRespSourceConfig.
-
-        Redis实例类型。（仅源端类型为Redis时会显示）
-
-        :param redis_type: The redis_type of this SmartConnectTaskRespSourceConfig.
-        :type redis_type: str
-        """
-        self._redis_type = redis_type
-
-    @property
-    def dcs_instance_id(self):
-        r"""Gets the dcs_instance_id of this SmartConnectTaskRespSourceConfig.
-
-        DCS实例ID。（仅源端类型为Redis时会显示）
-
-        :return: The dcs_instance_id of this SmartConnectTaskRespSourceConfig.
-        :rtype: str
-        """
-        return self._dcs_instance_id
-
-    @dcs_instance_id.setter
-    def dcs_instance_id(self, dcs_instance_id):
-        r"""Sets the dcs_instance_id of this SmartConnectTaskRespSourceConfig.
-
-        DCS实例ID。（仅源端类型为Redis时会显示）
-
-        :param dcs_instance_id: The dcs_instance_id of this SmartConnectTaskRespSourceConfig.
-        :type dcs_instance_id: str
-        """
-        self._dcs_instance_id = dcs_instance_id
-
-    @property
-    def sync_mode(self):
-        r"""Gets the sync_mode of this SmartConnectTaskRespSourceConfig.
-
-        同步类型，“RDB_ONLY”为全量同步，“CUSTOM_OFFSET”为全量同步+增量同步。（仅源端类型为Redis时会显示）
-
-        :return: The sync_mode of this SmartConnectTaskRespSourceConfig.
-        :rtype: str
-        """
-        return self._sync_mode
-
-    @sync_mode.setter
-    def sync_mode(self, sync_mode):
-        r"""Sets the sync_mode of this SmartConnectTaskRespSourceConfig.
-
-        同步类型，“RDB_ONLY”为全量同步，“CUSTOM_OFFSET”为全量同步+增量同步。（仅源端类型为Redis时会显示）
-
-        :param sync_mode: The sync_mode of this SmartConnectTaskRespSourceConfig.
-        :type sync_mode: str
-        """
-        self._sync_mode = sync_mode
-
-    @property
-    def full_sync_wait_ms(self):
-        r"""Gets the full_sync_wait_ms of this SmartConnectTaskRespSourceConfig.
-
-        全量同步重试间隔时间，单位：毫秒。（仅源端类型为Redis时会显示）
-
-        :return: The full_sync_wait_ms of this SmartConnectTaskRespSourceConfig.
-        :rtype: int
-        """
-        return self._full_sync_wait_ms
-
-    @full_sync_wait_ms.setter
-    def full_sync_wait_ms(self, full_sync_wait_ms):
-        r"""Sets the full_sync_wait_ms of this SmartConnectTaskRespSourceConfig.
-
-        全量同步重试间隔时间，单位：毫秒。（仅源端类型为Redis时会显示）
-
-        :param full_sync_wait_ms: The full_sync_wait_ms of this SmartConnectTaskRespSourceConfig.
-        :type full_sync_wait_ms: int
-        """
-        self._full_sync_wait_ms = full_sync_wait_ms
-
-    @property
-    def full_sync_max_retry(self):
-        r"""Gets the full_sync_max_retry of this SmartConnectTaskRespSourceConfig.
-
-        全量同步最大重试次数。（仅源端类型为Redis时会显示）
-
-        :return: The full_sync_max_retry of this SmartConnectTaskRespSourceConfig.
-        :rtype: int
-        """
-        return self._full_sync_max_retry
-
-    @full_sync_max_retry.setter
-    def full_sync_max_retry(self, full_sync_max_retry):
-        r"""Sets the full_sync_max_retry of this SmartConnectTaskRespSourceConfig.
-
-        全量同步最大重试次数。（仅源端类型为Redis时会显示）
-
-        :param full_sync_max_retry: The full_sync_max_retry of this SmartConnectTaskRespSourceConfig.
-        :type full_sync_max_retry: int
-        """
-        self._full_sync_max_retry = full_sync_max_retry
-
-    @property
-    def ratelimit(self):
-        r"""Gets the ratelimit of this SmartConnectTaskRespSourceConfig.
-
-        限速，单位为KB/s。-1表示不限速（仅源端类型为Redis时会显示）
-
-        :return: The ratelimit of this SmartConnectTaskRespSourceConfig.
-        :rtype: int
-        """
-        return self._ratelimit
-
-    @ratelimit.setter
-    def ratelimit(self, ratelimit):
-        r"""Sets the ratelimit of this SmartConnectTaskRespSourceConfig.
-
-        限速，单位为KB/s。-1表示不限速（仅源端类型为Redis时会显示）
-
-        :param ratelimit: The ratelimit of this SmartConnectTaskRespSourceConfig.
-        :type ratelimit: int
-        """
-        self._ratelimit = ratelimit
 
     @property
     def current_cluster_name(self):

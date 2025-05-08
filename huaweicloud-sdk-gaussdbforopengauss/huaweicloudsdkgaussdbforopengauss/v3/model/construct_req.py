@@ -21,8 +21,7 @@ class ConstructReq:
         'dr_ip': 'str',
         'dr_user_name': 'str',
         'dr_user_password': 'str',
-        'dr_task_name': 'str',
-        'lite_dr_mode': 'str'
+        'dr_task_name': 'str'
     }
 
     attribute_map = {
@@ -30,11 +29,10 @@ class ConstructReq:
         'dr_ip': 'dr_ip',
         'dr_user_name': 'dr_user_name',
         'dr_user_password': 'dr_user_password',
-        'dr_task_name': 'dr_task_name',
-        'lite_dr_mode': 'lite_dr_mode'
+        'dr_task_name': 'dr_task_name'
     }
 
-    def __init__(self, disaster_type=None, dr_ip=None, dr_user_name=None, dr_user_password=None, dr_task_name=None, lite_dr_mode=None):
+    def __init__(self, disaster_type=None, dr_ip=None, dr_user_name=None, dr_user_password=None, dr_task_name=None):
         r"""ConstructReq
 
         The model defined in huaweicloud sdk
@@ -49,8 +47,6 @@ class ConstructReq:
         :type dr_user_password: str
         :param dr_task_name: 容灾任务名称
         :type dr_task_name: str
-        :param lite_dr_mode: 灾备实例为轻量化部署.
-        :type lite_dr_mode: str
         """
         
         
@@ -60,7 +56,6 @@ class ConstructReq:
         self._dr_user_name = None
         self._dr_user_password = None
         self._dr_task_name = None
-        self._lite_dr_mode = None
         self.discriminator = None
 
         self.disaster_type = disaster_type
@@ -69,8 +64,6 @@ class ConstructReq:
         self.dr_user_password = dr_user_password
         if dr_task_name is not None:
             self.dr_task_name = dr_task_name
-        if lite_dr_mode is not None:
-            self.lite_dr_mode = lite_dr_mode
 
     @property
     def disaster_type(self):
@@ -181,28 +174,6 @@ class ConstructReq:
         :type dr_task_name: str
         """
         self._dr_task_name = dr_task_name
-
-    @property
-    def lite_dr_mode(self):
-        r"""Gets the lite_dr_mode of this ConstructReq.
-
-        灾备实例为轻量化部署.
-
-        :return: The lite_dr_mode of this ConstructReq.
-        :rtype: str
-        """
-        return self._lite_dr_mode
-
-    @lite_dr_mode.setter
-    def lite_dr_mode(self, lite_dr_mode):
-        r"""Sets the lite_dr_mode of this ConstructReq.
-
-        灾备实例为轻量化部署.
-
-        :param lite_dr_mode: The lite_dr_mode of this ConstructReq.
-        :type lite_dr_mode: str
-        """
-        self._lite_dr_mode = lite_dr_mode
 
     def to_dict(self):
         """Returns the model properties as a dict"""

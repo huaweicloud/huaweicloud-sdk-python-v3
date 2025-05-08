@@ -56,6 +56,12 @@ class RocketMQRegion:
                         "https://dms.cn-east-5.myhuaweicloud.com")
     MY_KUALALUMPUR_1 = Region("my-kualalumpur-1",
                         "https://dms.my-kualalumpur-1.myhuaweicloud.com")
+    CN_EAST_4 = Region("cn-east-4",
+                        "https://dms.cn-east-4.myhuaweicloud.com")
+    AF_NORTH_1 = Region("af-north-1",
+                        "https://dms.af-north-1.myhuaweicloud.com")
+    AP_SOUTHEAST_5 = Region("ap-southeast-5",
+                        "https://dms.ap-southeast-5.myhuaweicloud.com")
 
     static_fields = {
         "eu-west-101": EU_WEST_101,
@@ -83,6 +89,9 @@ class RocketMQRegion:
         "na-mexico-1": NA_MEXICO_1,
         "cn-east-5": CN_EAST_5,
         "my-kualalumpur-1": MY_KUALALUMPUR_1,
+        "cn-east-4": CN_EAST_4,
+        "af-north-1": AF_NORTH_1,
+        "ap-southeast-5": AP_SOUTHEAST_5,
     }
 
     @classmethod

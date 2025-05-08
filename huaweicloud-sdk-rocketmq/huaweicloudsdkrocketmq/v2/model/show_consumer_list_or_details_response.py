@@ -40,17 +40,17 @@ class ShowConsumerListOrDetailsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param topics: Topic列表（当查询Topic消费“列表”时才显示此参数）。
+        :param topics: **参数解释**： Topic列表（当查询Topic消费“列表”时才显示此参数）。
         :type topics: list[str]
-        :param total: Topic总数（当查询Topic消费“列表”时才显示此参数）。
+        :param total: **参数解释**： Topic总数（当查询Topic消费“列表”时才显示此参数）。 **取值范围**： 不涉及。
         :type total: int
-        :param lag: 消费堆积总数。
+        :param lag: **参数解释**： 消费堆积总数。 **取值范围**： 不涉及。
         :type lag: int
-        :param max_offset: 消息总数。
+        :param max_offset: **参数解释**： 消息总数。 **取值范围**： 不涉及。
         :type max_offset: int
-        :param consumer_offset: 已消费消息数。
+        :param consumer_offset: **参数解释**： 已消费消息数。 **取值范围**： 不涉及。
         :type consumer_offset: int
-        :param brokers: Topic关联代理（当查询Topic消费“详情”才显示此参数）。
+        :param brokers: **参数解释**： Topic关联代理（当查询Topic消费“详情”才显示此参数）。
         :type brokers: list[:class:`huaweicloudsdkrocketmq.v2.Brokers`]
         """
         
@@ -81,7 +81,7 @@ class ShowConsumerListOrDetailsResponse(SdkResponse):
     def topics(self):
         r"""Gets the topics of this ShowConsumerListOrDetailsResponse.
 
-        Topic列表（当查询Topic消费“列表”时才显示此参数）。
+        **参数解释**： Topic列表（当查询Topic消费“列表”时才显示此参数）。
 
         :return: The topics of this ShowConsumerListOrDetailsResponse.
         :rtype: list[str]
@@ -92,7 +92,7 @@ class ShowConsumerListOrDetailsResponse(SdkResponse):
     def topics(self, topics):
         r"""Sets the topics of this ShowConsumerListOrDetailsResponse.
 
-        Topic列表（当查询Topic消费“列表”时才显示此参数）。
+        **参数解释**： Topic列表（当查询Topic消费“列表”时才显示此参数）。
 
         :param topics: The topics of this ShowConsumerListOrDetailsResponse.
         :type topics: list[str]
@@ -103,7 +103,7 @@ class ShowConsumerListOrDetailsResponse(SdkResponse):
     def total(self):
         r"""Gets the total of this ShowConsumerListOrDetailsResponse.
 
-        Topic总数（当查询Topic消费“列表”时才显示此参数）。
+        **参数解释**： Topic总数（当查询Topic消费“列表”时才显示此参数）。 **取值范围**： 不涉及。
 
         :return: The total of this ShowConsumerListOrDetailsResponse.
         :rtype: int
@@ -114,7 +114,7 @@ class ShowConsumerListOrDetailsResponse(SdkResponse):
     def total(self, total):
         r"""Sets the total of this ShowConsumerListOrDetailsResponse.
 
-        Topic总数（当查询Topic消费“列表”时才显示此参数）。
+        **参数解释**： Topic总数（当查询Topic消费“列表”时才显示此参数）。 **取值范围**： 不涉及。
 
         :param total: The total of this ShowConsumerListOrDetailsResponse.
         :type total: int
@@ -125,7 +125,7 @@ class ShowConsumerListOrDetailsResponse(SdkResponse):
     def lag(self):
         r"""Gets the lag of this ShowConsumerListOrDetailsResponse.
 
-        消费堆积总数。
+        **参数解释**： 消费堆积总数。 **取值范围**： 不涉及。
 
         :return: The lag of this ShowConsumerListOrDetailsResponse.
         :rtype: int
@@ -136,7 +136,7 @@ class ShowConsumerListOrDetailsResponse(SdkResponse):
     def lag(self, lag):
         r"""Sets the lag of this ShowConsumerListOrDetailsResponse.
 
-        消费堆积总数。
+        **参数解释**： 消费堆积总数。 **取值范围**： 不涉及。
 
         :param lag: The lag of this ShowConsumerListOrDetailsResponse.
         :type lag: int
@@ -147,7 +147,7 @@ class ShowConsumerListOrDetailsResponse(SdkResponse):
     def max_offset(self):
         r"""Gets the max_offset of this ShowConsumerListOrDetailsResponse.
 
-        消息总数。
+        **参数解释**： 消息总数。 **取值范围**： 不涉及。
 
         :return: The max_offset of this ShowConsumerListOrDetailsResponse.
         :rtype: int
@@ -158,7 +158,7 @@ class ShowConsumerListOrDetailsResponse(SdkResponse):
     def max_offset(self, max_offset):
         r"""Sets the max_offset of this ShowConsumerListOrDetailsResponse.
 
-        消息总数。
+        **参数解释**： 消息总数。 **取值范围**： 不涉及。
 
         :param max_offset: The max_offset of this ShowConsumerListOrDetailsResponse.
         :type max_offset: int
@@ -169,7 +169,7 @@ class ShowConsumerListOrDetailsResponse(SdkResponse):
     def consumer_offset(self):
         r"""Gets the consumer_offset of this ShowConsumerListOrDetailsResponse.
 
-        已消费消息数。
+        **参数解释**： 已消费消息数。 **取值范围**： 不涉及。
 
         :return: The consumer_offset of this ShowConsumerListOrDetailsResponse.
         :rtype: int
@@ -180,7 +180,7 @@ class ShowConsumerListOrDetailsResponse(SdkResponse):
     def consumer_offset(self, consumer_offset):
         r"""Sets the consumer_offset of this ShowConsumerListOrDetailsResponse.
 
-        已消费消息数。
+        **参数解释**： 已消费消息数。 **取值范围**： 不涉及。
 
         :param consumer_offset: The consumer_offset of this ShowConsumerListOrDetailsResponse.
         :type consumer_offset: int
@@ -191,7 +191,7 @@ class ShowConsumerListOrDetailsResponse(SdkResponse):
     def brokers(self):
         r"""Gets the brokers of this ShowConsumerListOrDetailsResponse.
 
-        Topic关联代理（当查询Topic消费“详情”才显示此参数）。
+        **参数解释**： Topic关联代理（当查询Topic消费“详情”才显示此参数）。
 
         :return: The brokers of this ShowConsumerListOrDetailsResponse.
         :rtype: list[:class:`huaweicloudsdkrocketmq.v2.Brokers`]
@@ -202,7 +202,7 @@ class ShowConsumerListOrDetailsResponse(SdkResponse):
     def brokers(self, brokers):
         r"""Sets the brokers of this ShowConsumerListOrDetailsResponse.
 
-        Topic关联代理（当查询Topic消费“详情”才显示此参数）。
+        **参数解释**： Topic关联代理（当查询Topic消费“详情”才显示此参数）。
 
         :param brokers: The brokers of this ShowConsumerListOrDetailsResponse.
         :type brokers: list[:class:`huaweicloudsdkrocketmq.v2.Brokers`]

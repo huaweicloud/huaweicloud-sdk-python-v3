@@ -31,9 +31,9 @@ class UserTopicPerms:
 
         The model defined in huaweicloud sdk
 
-        :param name: 主题名称。
+        :param name: **参数解释**： 主题名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type name: str
-        :param perm: 权限。
+        :param perm: **参数解释**： Topic权限。 **约束限制**： 不涉及。 **取值范围**： - pub：拥有发布权限。 - sub：拥有订阅权限。 - PUB|sub：拥有发布订阅权限。 - DENY：无权限。  **默认取值**： 不涉及。
         :type perm: str
         """
         
@@ -52,7 +52,7 @@ class UserTopicPerms:
     def name(self):
         r"""Gets the name of this UserTopicPerms.
 
-        主题名称。
+        **参数解释**： 主题名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The name of this UserTopicPerms.
         :rtype: str
@@ -63,7 +63,7 @@ class UserTopicPerms:
     def name(self, name):
         r"""Sets the name of this UserTopicPerms.
 
-        主题名称。
+        **参数解释**： 主题名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param name: The name of this UserTopicPerms.
         :type name: str
@@ -74,7 +74,7 @@ class UserTopicPerms:
     def perm(self):
         r"""Gets the perm of this UserTopicPerms.
 
-        权限。
+        **参数解释**： Topic权限。 **约束限制**： 不涉及。 **取值范围**： - pub：拥有发布权限。 - sub：拥有订阅权限。 - PUB|sub：拥有发布订阅权限。 - DENY：无权限。  **默认取值**： 不涉及。
 
         :return: The perm of this UserTopicPerms.
         :rtype: str
@@ -85,7 +85,7 @@ class UserTopicPerms:
     def perm(self, perm):
         r"""Sets the perm of this UserTopicPerms.
 
-        权限。
+        **参数解释**： Topic权限。 **约束限制**： 不涉及。 **取值范围**： - pub：拥有发布权限。 - sub：拥有订阅权限。 - PUB|sub：拥有发布订阅权限。 - DENY：无权限。  **默认取值**： 不涉及。
 
         :param perm: The perm of this UserTopicPerms.
         :type perm: str

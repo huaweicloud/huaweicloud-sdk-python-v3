@@ -35,13 +35,13 @@ class ListTopicProducersRequest:
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: 实例id
+        :param instance_id: **参数解释**： 实例ID。获取方法如下：登录Kafka控制台，在Kafka实例详情页面查找实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type instance_id: str
-        :param topic: 主题
+        :param topic: **参数解释**： 主题。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type topic: str
-        :param offset: 偏移量，表示查询该偏移量后面的记录
+        :param offset: **参数解释**： 偏移量，表示查询该偏移量后面的记录。 **约束限制**： 不涉及。 **取值范围**： 大于等于0。 **默认取值**： 不涉及。
         :type offset: int
-        :param limit: 查询返回记录的数量限制
+        :param limit: **参数解释**： 查询返回记录的数量限制。 **约束限制**： 不涉及。 **取值范围**： 1~50。 **默认取值**： 不涉及。
         :type limit: int
         """
         
@@ -64,7 +64,7 @@ class ListTopicProducersRequest:
     def instance_id(self):
         r"""Gets the instance_id of this ListTopicProducersRequest.
 
-        实例id
+        **参数解释**： 实例ID。获取方法如下：登录Kafka控制台，在Kafka实例详情页面查找实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The instance_id of this ListTopicProducersRequest.
         :rtype: str
@@ -75,7 +75,7 @@ class ListTopicProducersRequest:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this ListTopicProducersRequest.
 
-        实例id
+        **参数解释**： 实例ID。获取方法如下：登录Kafka控制台，在Kafka实例详情页面查找实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param instance_id: The instance_id of this ListTopicProducersRequest.
         :type instance_id: str
@@ -86,7 +86,7 @@ class ListTopicProducersRequest:
     def topic(self):
         r"""Gets the topic of this ListTopicProducersRequest.
 
-        主题
+        **参数解释**： 主题。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The topic of this ListTopicProducersRequest.
         :rtype: str
@@ -97,7 +97,7 @@ class ListTopicProducersRequest:
     def topic(self, topic):
         r"""Sets the topic of this ListTopicProducersRequest.
 
-        主题
+        **参数解释**： 主题。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param topic: The topic of this ListTopicProducersRequest.
         :type topic: str
@@ -108,7 +108,7 @@ class ListTopicProducersRequest:
     def offset(self):
         r"""Gets the offset of this ListTopicProducersRequest.
 
-        偏移量，表示查询该偏移量后面的记录
+        **参数解释**： 偏移量，表示查询该偏移量后面的记录。 **约束限制**： 不涉及。 **取值范围**： 大于等于0。 **默认取值**： 不涉及。
 
         :return: The offset of this ListTopicProducersRequest.
         :rtype: int
@@ -119,7 +119,7 @@ class ListTopicProducersRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListTopicProducersRequest.
 
-        偏移量，表示查询该偏移量后面的记录
+        **参数解释**： 偏移量，表示查询该偏移量后面的记录。 **约束限制**： 不涉及。 **取值范围**： 大于等于0。 **默认取值**： 不涉及。
 
         :param offset: The offset of this ListTopicProducersRequest.
         :type offset: int
@@ -130,7 +130,7 @@ class ListTopicProducersRequest:
     def limit(self):
         r"""Gets the limit of this ListTopicProducersRequest.
 
-        查询返回记录的数量限制
+        **参数解释**： 查询返回记录的数量限制。 **约束限制**： 不涉及。 **取值范围**： 1~50。 **默认取值**： 不涉及。
 
         :return: The limit of this ListTopicProducersRequest.
         :rtype: int
@@ -141,7 +141,7 @@ class ListTopicProducersRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListTopicProducersRequest.
 
-        查询返回记录的数量限制
+        **参数解释**： 查询返回记录的数量限制。 **约束限制**： 不涉及。 **取值范围**： 1~50。 **默认取值**： 不涉及。
 
         :param limit: The limit of this ListTopicProducersRequest.
         :type limit: int

@@ -28,6 +28,8 @@ class DeHRegion:
                         "https://deh.ap-southeast-3.myhuaweicloud.com")
     MY_KUALALUMPUR_1 = Region("my-kualalumpur-1",
                         "https://deh.my-kualalumpur-1.myhuaweicloud.com")
+    SA_BRAZIL_1 = Region("sa-brazil-1",
+                        "https://deh.sa-brazil-1.myhuaweicloud.com")
 
     static_fields = {
         "cn-north-1": CN_NORTH_1,
@@ -41,6 +43,7 @@ class DeHRegion:
         "ap-southeast-2": AP_SOUTHEAST_2,
         "ap-southeast-3": AP_SOUTHEAST_3,
         "my-kualalumpur-1": MY_KUALALUMPUR_1,
+        "sa-brazil-1": SA_BRAZIL_1,
     }
 
     @classmethod

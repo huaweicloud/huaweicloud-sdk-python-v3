@@ -32,9 +32,9 @@ class ListTopicProducersResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total: 总条数
+        :param total: **参数解释**： 总条数。 **取值范围**： 0~10000。
         :type total: int
-        :param producers: 生产者列表
+        :param producers: **参数解释**： 生产者列表。
         :type producers: list[:class:`huaweicloudsdkkafka.v2.KafkaTopicProducerResponseProducers`]
         """
         
@@ -53,7 +53,7 @@ class ListTopicProducersResponse(SdkResponse):
     def total(self):
         r"""Gets the total of this ListTopicProducersResponse.
 
-        总条数
+        **参数解释**： 总条数。 **取值范围**： 0~10000。
 
         :return: The total of this ListTopicProducersResponse.
         :rtype: int
@@ -64,7 +64,7 @@ class ListTopicProducersResponse(SdkResponse):
     def total(self, total):
         r"""Sets the total of this ListTopicProducersResponse.
 
-        总条数
+        **参数解释**： 总条数。 **取值范围**： 0~10000。
 
         :param total: The total of this ListTopicProducersResponse.
         :type total: int
@@ -75,7 +75,7 @@ class ListTopicProducersResponse(SdkResponse):
     def producers(self):
         r"""Gets the producers of this ListTopicProducersResponse.
 
-        生产者列表
+        **参数解释**： 生产者列表。
 
         :return: The producers of this ListTopicProducersResponse.
         :rtype: list[:class:`huaweicloudsdkkafka.v2.KafkaTopicProducerResponseProducers`]
@@ -86,7 +86,7 @@ class ListTopicProducersResponse(SdkResponse):
     def producers(self, producers):
         r"""Sets the producers of this ListTopicProducersResponse.
 
-        生产者列表
+        **参数解释**： 生产者列表。
 
         :param producers: The producers of this ListTopicProducersResponse.
         :type producers: list[:class:`huaweicloudsdkkafka.v2.KafkaTopicProducerResponseProducers`]

@@ -18,15 +18,17 @@ class ObsInfo:
 
     openapi_types = {
         'bucket': 'str',
-        'object': 'str'
+        'object': 'str',
+        'region': 'str'
     }
 
     attribute_map = {
         'bucket': 'bucket',
-        'object': 'object'
+        'object': 'object',
+        'region': 'region'
     }
 
-    def __init__(self, bucket=None, object=None):
+    def __init__(self, bucket=None, object=None, region=None):
         r"""ObsInfo
 
         The model defined in huaweicloud sdk
@@ -35,16 +37,21 @@ class ObsInfo:
         :type bucket: str
         :param object: OBS对象路径
         :type object: str
+        :param region: 桶所在区域
+        :type region: str
         """
         
         
 
         self._bucket = None
         self._object = None
+        self._region = None
         self.discriminator = None
 
         self.bucket = bucket
         self.object = object
+        if region is not None:
+            self.region = region
 
     @property
     def bucket(self):
@@ -89,6 +96,28 @@ class ObsInfo:
         :type object: str
         """
         self._object = object
+
+    @property
+    def region(self):
+        r"""Gets the region of this ObsInfo.
+
+        桶所在区域
+
+        :return: The region of this ObsInfo.
+        :rtype: str
+        """
+        return self._region
+
+    @region.setter
+    def region(self, region):
+        r"""Sets the region of this ObsInfo.
+
+        桶所在区域
+
+        :param region: The region of this ObsInfo.
+        :type region: str
+        """
+        self._region = region
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -37,7 +37,8 @@ class RestScheduleConfDTO:
         'cycle_params': 'CycleParams',
         'vmr_id': 'str',
         'concurrent_participants': 'int',
-        'support_simultaneous_interpretation': 'bool'
+        'support_simultaneous_interpretation': 'bool',
+        'conf_res_type': 'int'
     }
 
     attribute_map = {
@@ -61,10 +62,11 @@ class RestScheduleConfDTO:
         'cycle_params': 'cycleParams',
         'vmr_id': 'vmrID',
         'concurrent_participants': 'concurrentParticipants',
-        'support_simultaneous_interpretation': 'supportSimultaneousInterpretation'
+        'support_simultaneous_interpretation': 'supportSimultaneousInterpretation',
+        'conf_res_type': 'confResType'
     }
 
-    def __init__(self, start_time=None, length=None, subject=None, media_types=None, groupuri=None, attendees=None, is_auto_record=None, encrypt_mode=None, language=None, time_zone_id=None, record_type=None, live_address=None, aux_address=None, record_aux_stream=None, conf_config_info=None, record_auth_type=None, vmr_flag=None, cycle_params=None, vmr_id=None, concurrent_participants=None, support_simultaneous_interpretation=None):
+    def __init__(self, start_time=None, length=None, subject=None, media_types=None, groupuri=None, attendees=None, is_auto_record=None, encrypt_mode=None, language=None, time_zone_id=None, record_type=None, live_address=None, aux_address=None, record_aux_stream=None, conf_config_info=None, record_auth_type=None, vmr_flag=None, cycle_params=None, vmr_id=None, concurrent_participants=None, support_simultaneous_interpretation=None, conf_res_type=None):
         r"""RestScheduleConfDTO
 
         The model defined in huaweicloud sdk
@@ -111,6 +113,8 @@ class RestScheduleConfDTO:
         :type concurrent_participants: int
         :param support_simultaneous_interpretation: 会议是否支持同声传译。默认值false。 * true:支持 * false:不支持 
         :type support_simultaneous_interpretation: bool
+        :param conf_res_type: 会议资源类型：  * 0: 并发 * 1: 云会议室 * 2: 网络研讨会 * 3: 共享vmr * 4: 共享网络研讨会 
+        :type conf_res_type: int
         """
         
         
@@ -136,6 +140,7 @@ class RestScheduleConfDTO:
         self._vmr_id = None
         self._concurrent_participants = None
         self._support_simultaneous_interpretation = None
+        self._conf_res_type = None
         self.discriminator = None
 
         if start_time is not None:
@@ -179,6 +184,8 @@ class RestScheduleConfDTO:
             self.concurrent_participants = concurrent_participants
         if support_simultaneous_interpretation is not None:
             self.support_simultaneous_interpretation = support_simultaneous_interpretation
+        if conf_res_type is not None:
+            self.conf_res_type = conf_res_type
 
     @property
     def start_time(self):
@@ -633,6 +640,28 @@ class RestScheduleConfDTO:
         :type support_simultaneous_interpretation: bool
         """
         self._support_simultaneous_interpretation = support_simultaneous_interpretation
+
+    @property
+    def conf_res_type(self):
+        r"""Gets the conf_res_type of this RestScheduleConfDTO.
+
+        会议资源类型：  * 0: 并发 * 1: 云会议室 * 2: 网络研讨会 * 3: 共享vmr * 4: 共享网络研讨会 
+
+        :return: The conf_res_type of this RestScheduleConfDTO.
+        :rtype: int
+        """
+        return self._conf_res_type
+
+    @conf_res_type.setter
+    def conf_res_type(self, conf_res_type):
+        r"""Sets the conf_res_type of this RestScheduleConfDTO.
+
+        会议资源类型：  * 0: 并发 * 1: 云会议室 * 2: 网络研讨会 * 3: 共享vmr * 4: 共享网络研讨会 
+
+        :param conf_res_type: The conf_res_type of this RestScheduleConfDTO.
+        :type conf_res_type: int
+        """
+        self._conf_res_type = conf_res_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

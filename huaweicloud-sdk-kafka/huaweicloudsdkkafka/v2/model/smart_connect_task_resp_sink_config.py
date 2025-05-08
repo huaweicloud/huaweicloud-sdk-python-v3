@@ -17,10 +17,6 @@ class SmartConnectTaskRespSinkConfig:
     sensitive_list = []
 
     openapi_types = {
-        'redis_address': 'str',
-        'redis_type': 'str',
-        'dcs_instance_id': 'str',
-        'target_db': 'int',
         'consumer_strategy': 'str',
         'destination_file_type': 'str',
         'deliver_time_interval': 'int',
@@ -40,10 +36,6 @@ class SmartConnectTaskRespSinkConfig:
     }
 
     attribute_map = {
-        'redis_address': 'redis_address',
-        'redis_type': 'redis_type',
-        'dcs_instance_id': 'dcs_instance_id',
-        'target_db': 'target_db',
         'consumer_strategy': 'consumer_strategy',
         'destination_file_type': 'destination_file_type',
         'deliver_time_interval': 'deliver_time_interval',
@@ -62,19 +54,11 @@ class SmartConnectTaskRespSinkConfig:
         'kv_delimiter': 'kv_delimiter'
     }
 
-    def __init__(self, redis_address=None, redis_type=None, dcs_instance_id=None, target_db=None, consumer_strategy=None, destination_file_type=None, deliver_time_interval=None, obs_bucket_name=None, obs_path=None, partition_format=None, record_delimiter=None, store_keys=None, obs_part_size=None, flush_size=None, timezone=None, schema_generator_class=None, partitioner_class=None, value_converter=None, key_converter=None, kv_delimiter=None):
+    def __init__(self, consumer_strategy=None, destination_file_type=None, deliver_time_interval=None, obs_bucket_name=None, obs_path=None, partition_format=None, record_delimiter=None, store_keys=None, obs_part_size=None, flush_size=None, timezone=None, schema_generator_class=None, partitioner_class=None, value_converter=None, key_converter=None, kv_delimiter=None):
         r"""SmartConnectTaskRespSinkConfig
 
         The model defined in huaweicloud sdk
 
-        :param redis_address: Redis实例地址。（仅目标端类型为Redis时会显示）
-        :type redis_address: str
-        :param redis_type: Redis实例类型。（仅目标端类型为Redis时会显示）
-        :type redis_type: str
-        :param dcs_instance_id: DCS实例ID。（仅目标端类型为Redis时会显示）
-        :type dcs_instance_id: str
-        :param target_db: 目标数据库，默认为-1。（仅目标端类型为Redis时会显示）
-        :type target_db: int
         :param consumer_strategy: 转储启动偏移量，latest为获取最新的数据，earliest为获取最早的数据。（仅目标端类型为OBS时会显示）
         :type consumer_strategy: str
         :param destination_file_type: 转储文件格式。当前只支持TEXT。（仅目标端类型为OBS时会显示）
@@ -111,10 +95,6 @@ class SmartConnectTaskRespSinkConfig:
         
         
 
-        self._redis_address = None
-        self._redis_type = None
-        self._dcs_instance_id = None
-        self._target_db = None
         self._consumer_strategy = None
         self._destination_file_type = None
         self._deliver_time_interval = None
@@ -133,14 +113,6 @@ class SmartConnectTaskRespSinkConfig:
         self._kv_delimiter = None
         self.discriminator = None
 
-        if redis_address is not None:
-            self.redis_address = redis_address
-        if redis_type is not None:
-            self.redis_type = redis_type
-        if dcs_instance_id is not None:
-            self.dcs_instance_id = dcs_instance_id
-        if target_db is not None:
-            self.target_db = target_db
         if consumer_strategy is not None:
             self.consumer_strategy = consumer_strategy
         if destination_file_type is not None:
@@ -173,94 +145,6 @@ class SmartConnectTaskRespSinkConfig:
             self.key_converter = key_converter
         if kv_delimiter is not None:
             self.kv_delimiter = kv_delimiter
-
-    @property
-    def redis_address(self):
-        r"""Gets the redis_address of this SmartConnectTaskRespSinkConfig.
-
-        Redis实例地址。（仅目标端类型为Redis时会显示）
-
-        :return: The redis_address of this SmartConnectTaskRespSinkConfig.
-        :rtype: str
-        """
-        return self._redis_address
-
-    @redis_address.setter
-    def redis_address(self, redis_address):
-        r"""Sets the redis_address of this SmartConnectTaskRespSinkConfig.
-
-        Redis实例地址。（仅目标端类型为Redis时会显示）
-
-        :param redis_address: The redis_address of this SmartConnectTaskRespSinkConfig.
-        :type redis_address: str
-        """
-        self._redis_address = redis_address
-
-    @property
-    def redis_type(self):
-        r"""Gets the redis_type of this SmartConnectTaskRespSinkConfig.
-
-        Redis实例类型。（仅目标端类型为Redis时会显示）
-
-        :return: The redis_type of this SmartConnectTaskRespSinkConfig.
-        :rtype: str
-        """
-        return self._redis_type
-
-    @redis_type.setter
-    def redis_type(self, redis_type):
-        r"""Sets the redis_type of this SmartConnectTaskRespSinkConfig.
-
-        Redis实例类型。（仅目标端类型为Redis时会显示）
-
-        :param redis_type: The redis_type of this SmartConnectTaskRespSinkConfig.
-        :type redis_type: str
-        """
-        self._redis_type = redis_type
-
-    @property
-    def dcs_instance_id(self):
-        r"""Gets the dcs_instance_id of this SmartConnectTaskRespSinkConfig.
-
-        DCS实例ID。（仅目标端类型为Redis时会显示）
-
-        :return: The dcs_instance_id of this SmartConnectTaskRespSinkConfig.
-        :rtype: str
-        """
-        return self._dcs_instance_id
-
-    @dcs_instance_id.setter
-    def dcs_instance_id(self, dcs_instance_id):
-        r"""Sets the dcs_instance_id of this SmartConnectTaskRespSinkConfig.
-
-        DCS实例ID。（仅目标端类型为Redis时会显示）
-
-        :param dcs_instance_id: The dcs_instance_id of this SmartConnectTaskRespSinkConfig.
-        :type dcs_instance_id: str
-        """
-        self._dcs_instance_id = dcs_instance_id
-
-    @property
-    def target_db(self):
-        r"""Gets the target_db of this SmartConnectTaskRespSinkConfig.
-
-        目标数据库，默认为-1。（仅目标端类型为Redis时会显示）
-
-        :return: The target_db of this SmartConnectTaskRespSinkConfig.
-        :rtype: int
-        """
-        return self._target_db
-
-    @target_db.setter
-    def target_db(self, target_db):
-        r"""Sets the target_db of this SmartConnectTaskRespSinkConfig.
-
-        目标数据库，默认为-1。（仅目标端类型为Redis时会显示）
-
-        :param target_db: The target_db of this SmartConnectTaskRespSinkConfig.
-        :type target_db: int
-        """
-        self._target_db = target_db
 
     @property
     def consumer_strategy(self):

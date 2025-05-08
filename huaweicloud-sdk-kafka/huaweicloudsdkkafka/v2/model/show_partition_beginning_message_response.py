@@ -36,13 +36,13 @@ class ShowPartitionBeginningMessageResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param topic: Topic名称。
+        :param topic: **参数解释**： Topic名称。 **取值范围**： 不涉及。
         :type topic: str
-        :param partition: 分区编号。
+        :param partition: **参数解释**： 分区编号。 **取值范围**： 不涉及。
         :type partition: int
-        :param offset: 最新消息位置。
+        :param offset: **参数解释**： 消息位置。 **取值范围**： 不涉及。
         :type offset: int
-        :param timestamp: 生产消息的时间。 格式为Unix时间戳。单位为毫秒。
+        :param timestamp: **参数解释**： 生产消息的时间。 格式为Unix时间戳。单位为毫秒。 **取值范围**： 不涉及。
         :type timestamp: int
         """
         
@@ -67,7 +67,7 @@ class ShowPartitionBeginningMessageResponse(SdkResponse):
     def topic(self):
         r"""Gets the topic of this ShowPartitionBeginningMessageResponse.
 
-        Topic名称。
+        **参数解释**： Topic名称。 **取值范围**： 不涉及。
 
         :return: The topic of this ShowPartitionBeginningMessageResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class ShowPartitionBeginningMessageResponse(SdkResponse):
     def topic(self, topic):
         r"""Sets the topic of this ShowPartitionBeginningMessageResponse.
 
-        Topic名称。
+        **参数解释**： Topic名称。 **取值范围**： 不涉及。
 
         :param topic: The topic of this ShowPartitionBeginningMessageResponse.
         :type topic: str
@@ -89,7 +89,7 @@ class ShowPartitionBeginningMessageResponse(SdkResponse):
     def partition(self):
         r"""Gets the partition of this ShowPartitionBeginningMessageResponse.
 
-        分区编号。
+        **参数解释**： 分区编号。 **取值范围**： 不涉及。
 
         :return: The partition of this ShowPartitionBeginningMessageResponse.
         :rtype: int
@@ -100,7 +100,7 @@ class ShowPartitionBeginningMessageResponse(SdkResponse):
     def partition(self, partition):
         r"""Sets the partition of this ShowPartitionBeginningMessageResponse.
 
-        分区编号。
+        **参数解释**： 分区编号。 **取值范围**： 不涉及。
 
         :param partition: The partition of this ShowPartitionBeginningMessageResponse.
         :type partition: int
@@ -111,7 +111,7 @@ class ShowPartitionBeginningMessageResponse(SdkResponse):
     def offset(self):
         r"""Gets the offset of this ShowPartitionBeginningMessageResponse.
 
-        最新消息位置。
+        **参数解释**： 消息位置。 **取值范围**： 不涉及。
 
         :return: The offset of this ShowPartitionBeginningMessageResponse.
         :rtype: int
@@ -122,7 +122,7 @@ class ShowPartitionBeginningMessageResponse(SdkResponse):
     def offset(self, offset):
         r"""Sets the offset of this ShowPartitionBeginningMessageResponse.
 
-        最新消息位置。
+        **参数解释**： 消息位置。 **取值范围**： 不涉及。
 
         :param offset: The offset of this ShowPartitionBeginningMessageResponse.
         :type offset: int
@@ -133,7 +133,7 @@ class ShowPartitionBeginningMessageResponse(SdkResponse):
     def timestamp(self):
         r"""Gets the timestamp of this ShowPartitionBeginningMessageResponse.
 
-        生产消息的时间。 格式为Unix时间戳。单位为毫秒。
+        **参数解释**： 生产消息的时间。 格式为Unix时间戳。单位为毫秒。 **取值范围**： 不涉及。
 
         :return: The timestamp of this ShowPartitionBeginningMessageResponse.
         :rtype: int
@@ -144,7 +144,7 @@ class ShowPartitionBeginningMessageResponse(SdkResponse):
     def timestamp(self, timestamp):
         r"""Sets the timestamp of this ShowPartitionBeginningMessageResponse.
 
-        生产消息的时间。 格式为Unix时间戳。单位为毫秒。
+        **参数解释**： 生产消息的时间。 格式为Unix时间戳。单位为毫秒。 **取值范围**： 不涉及。
 
         :param timestamp: The timestamp of this ShowPartitionBeginningMessageResponse.
         :type timestamp: int

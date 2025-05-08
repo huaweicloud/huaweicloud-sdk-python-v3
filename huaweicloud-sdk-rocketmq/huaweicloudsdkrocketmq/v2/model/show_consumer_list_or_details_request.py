@@ -37,15 +37,15 @@ class ShowConsumerListOrDetailsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: 实例ID。
+        :param instance_id: **参数解释**： 实例ID。获取方法如下：登录RocketMQ控制台，在RocketMQ实例详情页面查找实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type instance_id: str
-        :param group: 消费组名称。
+        :param group: **参数解释**： 消费组名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type group: str
-        :param topic: 待查询的Topic，不指定时查询Topic列表，指定时查询详情。
+        :param topic: **参数解释**： 待查询的Topic，不指定时查询Topic列表，指定时查询详情。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type topic: str
-        :param limit: 当次查询返回的最大个数，默认值为10，取值范围为1~50。
+        :param limit: **参数解释**： 当次查询返回Topic的最大个数。 **约束限制**： 不涉及。 **取值范围**： 1~50。 **默认取值**： 10。
         :type limit: int
-        :param offset: 偏移量，表示从此偏移量开始查询， offset大于等于0。
+        :param offset: **参数解释**： 偏移量，表示从此偏移量开始查询。 **约束限制**： 不涉及。 **取值范围**： 大于等于0。 **默认取值**： 0。
         :type offset: int
         """
         
@@ -71,7 +71,7 @@ class ShowConsumerListOrDetailsRequest:
     def instance_id(self):
         r"""Gets the instance_id of this ShowConsumerListOrDetailsRequest.
 
-        实例ID。
+        **参数解释**： 实例ID。获取方法如下：登录RocketMQ控制台，在RocketMQ实例详情页面查找实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The instance_id of this ShowConsumerListOrDetailsRequest.
         :rtype: str
@@ -82,7 +82,7 @@ class ShowConsumerListOrDetailsRequest:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this ShowConsumerListOrDetailsRequest.
 
-        实例ID。
+        **参数解释**： 实例ID。获取方法如下：登录RocketMQ控制台，在RocketMQ实例详情页面查找实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param instance_id: The instance_id of this ShowConsumerListOrDetailsRequest.
         :type instance_id: str
@@ -93,7 +93,7 @@ class ShowConsumerListOrDetailsRequest:
     def group(self):
         r"""Gets the group of this ShowConsumerListOrDetailsRequest.
 
-        消费组名称。
+        **参数解释**： 消费组名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The group of this ShowConsumerListOrDetailsRequest.
         :rtype: str
@@ -104,7 +104,7 @@ class ShowConsumerListOrDetailsRequest:
     def group(self, group):
         r"""Sets the group of this ShowConsumerListOrDetailsRequest.
 
-        消费组名称。
+        **参数解释**： 消费组名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param group: The group of this ShowConsumerListOrDetailsRequest.
         :type group: str
@@ -115,7 +115,7 @@ class ShowConsumerListOrDetailsRequest:
     def topic(self):
         r"""Gets the topic of this ShowConsumerListOrDetailsRequest.
 
-        待查询的Topic，不指定时查询Topic列表，指定时查询详情。
+        **参数解释**： 待查询的Topic，不指定时查询Topic列表，指定时查询详情。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The topic of this ShowConsumerListOrDetailsRequest.
         :rtype: str
@@ -126,7 +126,7 @@ class ShowConsumerListOrDetailsRequest:
     def topic(self, topic):
         r"""Sets the topic of this ShowConsumerListOrDetailsRequest.
 
-        待查询的Topic，不指定时查询Topic列表，指定时查询详情。
+        **参数解释**： 待查询的Topic，不指定时查询Topic列表，指定时查询详情。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param topic: The topic of this ShowConsumerListOrDetailsRequest.
         :type topic: str
@@ -137,7 +137,7 @@ class ShowConsumerListOrDetailsRequest:
     def limit(self):
         r"""Gets the limit of this ShowConsumerListOrDetailsRequest.
 
-        当次查询返回的最大个数，默认值为10，取值范围为1~50。
+        **参数解释**： 当次查询返回Topic的最大个数。 **约束限制**： 不涉及。 **取值范围**： 1~50。 **默认取值**： 10。
 
         :return: The limit of this ShowConsumerListOrDetailsRequest.
         :rtype: int
@@ -148,7 +148,7 @@ class ShowConsumerListOrDetailsRequest:
     def limit(self, limit):
         r"""Sets the limit of this ShowConsumerListOrDetailsRequest.
 
-        当次查询返回的最大个数，默认值为10，取值范围为1~50。
+        **参数解释**： 当次查询返回Topic的最大个数。 **约束限制**： 不涉及。 **取值范围**： 1~50。 **默认取值**： 10。
 
         :param limit: The limit of this ShowConsumerListOrDetailsRequest.
         :type limit: int
@@ -159,7 +159,7 @@ class ShowConsumerListOrDetailsRequest:
     def offset(self):
         r"""Gets the offset of this ShowConsumerListOrDetailsRequest.
 
-        偏移量，表示从此偏移量开始查询， offset大于等于0。
+        **参数解释**： 偏移量，表示从此偏移量开始查询。 **约束限制**： 不涉及。 **取值范围**： 大于等于0。 **默认取值**： 0。
 
         :return: The offset of this ShowConsumerListOrDetailsRequest.
         :rtype: int
@@ -170,7 +170,7 @@ class ShowConsumerListOrDetailsRequest:
     def offset(self, offset):
         r"""Sets the offset of this ShowConsumerListOrDetailsRequest.
 
-        偏移量，表示从此偏移量开始查询， offset大于等于0。
+        **参数解释**： 偏移量，表示从此偏移量开始查询。 **约束限制**： 不涉及。 **取值范围**： 大于等于0。 **默认取值**： 0。
 
         :param offset: The offset of this ShowConsumerListOrDetailsRequest.
         :type offset: int

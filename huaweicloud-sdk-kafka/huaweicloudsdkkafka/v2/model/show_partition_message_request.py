@@ -35,13 +35,13 @@ class ShowPartitionMessageRequest:
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: 实例ID。
+        :param instance_id: **参数解释**： 实例ID。获取方法如下：登录Kafka控制台，在Kafka实例详情页面查找实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type instance_id: str
-        :param topic: Topic名称。  Topic名称必须以字母开头且只支持大小写字母、中横线、下划线以及数字。
+        :param topic: **参数解释**： Topic名称。 **约束限制**： Topic名称必须以字母开头且只支持大小写字母、中横线、下划线以及数字。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type topic: str
-        :param partition: 分区编号。
+        :param partition: **参数解释**： 分区编号。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type partition: int
-        :param message_offset: 消息位置。
+        :param message_offset: **参数解释**： 消息位置。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type message_offset: str
         """
         
@@ -62,7 +62,7 @@ class ShowPartitionMessageRequest:
     def instance_id(self):
         r"""Gets the instance_id of this ShowPartitionMessageRequest.
 
-        实例ID。
+        **参数解释**： 实例ID。获取方法如下：登录Kafka控制台，在Kafka实例详情页面查找实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The instance_id of this ShowPartitionMessageRequest.
         :rtype: str
@@ -73,7 +73,7 @@ class ShowPartitionMessageRequest:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this ShowPartitionMessageRequest.
 
-        实例ID。
+        **参数解释**： 实例ID。获取方法如下：登录Kafka控制台，在Kafka实例详情页面查找实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param instance_id: The instance_id of this ShowPartitionMessageRequest.
         :type instance_id: str
@@ -84,7 +84,7 @@ class ShowPartitionMessageRequest:
     def topic(self):
         r"""Gets the topic of this ShowPartitionMessageRequest.
 
-        Topic名称。  Topic名称必须以字母开头且只支持大小写字母、中横线、下划线以及数字。
+        **参数解释**： Topic名称。 **约束限制**： Topic名称必须以字母开头且只支持大小写字母、中横线、下划线以及数字。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The topic of this ShowPartitionMessageRequest.
         :rtype: str
@@ -95,7 +95,7 @@ class ShowPartitionMessageRequest:
     def topic(self, topic):
         r"""Sets the topic of this ShowPartitionMessageRequest.
 
-        Topic名称。  Topic名称必须以字母开头且只支持大小写字母、中横线、下划线以及数字。
+        **参数解释**： Topic名称。 **约束限制**： Topic名称必须以字母开头且只支持大小写字母、中横线、下划线以及数字。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param topic: The topic of this ShowPartitionMessageRequest.
         :type topic: str
@@ -106,7 +106,7 @@ class ShowPartitionMessageRequest:
     def partition(self):
         r"""Gets the partition of this ShowPartitionMessageRequest.
 
-        分区编号。
+        **参数解释**： 分区编号。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The partition of this ShowPartitionMessageRequest.
         :rtype: int
@@ -117,7 +117,7 @@ class ShowPartitionMessageRequest:
     def partition(self, partition):
         r"""Sets the partition of this ShowPartitionMessageRequest.
 
-        分区编号。
+        **参数解释**： 分区编号。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param partition: The partition of this ShowPartitionMessageRequest.
         :type partition: int
@@ -128,7 +128,7 @@ class ShowPartitionMessageRequest:
     def message_offset(self):
         r"""Gets the message_offset of this ShowPartitionMessageRequest.
 
-        消息位置。
+        **参数解释**： 消息位置。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The message_offset of this ShowPartitionMessageRequest.
         :rtype: str
@@ -139,7 +139,7 @@ class ShowPartitionMessageRequest:
     def message_offset(self, message_offset):
         r"""Sets the message_offset of this ShowPartitionMessageRequest.
 
-        消息位置。
+        **参数解释**： 消息位置。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param message_offset: The message_offset of this ShowPartitionMessageRequest.
         :type message_offset: str

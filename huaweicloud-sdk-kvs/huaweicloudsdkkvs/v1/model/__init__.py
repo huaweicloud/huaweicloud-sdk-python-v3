@@ -31,6 +31,7 @@ from huaweicloudsdkkvs.v1.model.get_kv_request_body import GetKvRequestBody
 from huaweicloudsdkkvs.v1.model.get_kv_response import GetKvResponse
 from huaweicloudsdkkvs.v1.model.global_secondary_index import GlobalSecondaryIndex
 from huaweicloudsdkkvs.v1.model.global_secondary_index_info import GlobalSecondaryIndexInfo
+from huaweicloudsdkkvs.v1.model.kv_blob import KvBlob
 from huaweicloudsdkkvs.v1.model.kv_oper_ids import KvOperIds
 from huaweicloudsdkkvs.v1.model.list_store_request import ListStoreRequest
 from huaweicloudsdkkvs.v1.model.list_store_request_body import ListStoreRequestBody
@@ -65,7 +66,9 @@ from huaweicloudsdkkvs.v1.model.table_batch import TableBatch
 from huaweicloudsdkkvs.v1.model.table_info import TableInfo
 from huaweicloudsdkkvs.v1.model.table_oper_ids import TableOperIds
 from huaweicloudsdkkvs.v1.model.ttl_specification import TtlSpecification
+from huaweicloudsdkkvs.v1.model.update_blob import UpdateBlob
 from huaweicloudsdkkvs.v1.model.update_fields import UpdateFields
+from huaweicloudsdkkvs.v1.model.update_kv import UpdateKv
 from huaweicloudsdkkvs.v1.model.update_kv_request import UpdateKvRequest
 from huaweicloudsdkkvs.v1.model.update_kv_request_body import UpdateKvRequestBody
 from huaweicloudsdkkvs.v1.model.update_kv_response import UpdateKvResponse

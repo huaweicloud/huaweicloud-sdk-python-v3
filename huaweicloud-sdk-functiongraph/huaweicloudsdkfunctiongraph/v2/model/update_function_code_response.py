@@ -32,7 +32,8 @@ class UpdateFunctionCodeResponse(SdkResponse):
         'depend_list': 'list[str]',
         'depend_version_list': 'list[str]',
         'strategy_config': 'StrategyConfig',
-        'dependencies': 'list[Dependency]'
+        'dependencies': 'list[Dependency]',
+        'code_encrypt_kms_key_id': 'str'
     }
 
     attribute_map = {
@@ -50,10 +51,11 @@ class UpdateFunctionCodeResponse(SdkResponse):
         'depend_list': 'depend_list',
         'depend_version_list': 'depend_version_list',
         'strategy_config': 'strategy_config',
-        'dependencies': 'dependencies'
+        'dependencies': 'dependencies',
+        'code_encrypt_kms_key_id': 'code_encrypt_kms_key_id'
     }
 
-    def __init__(self, func_urn=None, func_name=None, domain_id=None, runtime=None, code_type=None, code_url=None, code_filename=None, code_size=None, digest=None, last_modified=None, func_code=None, depend_list=None, depend_version_list=None, strategy_config=None, dependencies=None):
+    def __init__(self, func_urn=None, func_name=None, domain_id=None, runtime=None, code_type=None, code_url=None, code_filename=None, code_size=None, digest=None, last_modified=None, func_code=None, depend_list=None, depend_version_list=None, strategy_config=None, dependencies=None, code_encrypt_kms_key_id=None):
         r"""UpdateFunctionCodeResponse
 
         The model defined in huaweicloud sdk
@@ -88,6 +90,8 @@ class UpdateFunctionCodeResponse(SdkResponse):
         :type strategy_config: :class:`huaweicloudsdkfunctiongraph.v2.StrategyConfig`
         :param dependencies: 函数依赖代码包列表。
         :type dependencies: list[:class:`huaweicloudsdkfunctiongraph.v2.Dependency`]
+        :param code_encrypt_kms_key_id: 用于用户代码加密的kms主秘钥ID。
+        :type code_encrypt_kms_key_id: str
         """
         
         super(UpdateFunctionCodeResponse, self).__init__()
@@ -107,6 +111,7 @@ class UpdateFunctionCodeResponse(SdkResponse):
         self._depend_version_list = None
         self._strategy_config = None
         self._dependencies = None
+        self._code_encrypt_kms_key_id = None
         self.discriminator = None
 
         if func_urn is not None:
@@ -139,6 +144,8 @@ class UpdateFunctionCodeResponse(SdkResponse):
             self.strategy_config = strategy_config
         if dependencies is not None:
             self.dependencies = dependencies
+        if code_encrypt_kms_key_id is not None:
+            self.code_encrypt_kms_key_id = code_encrypt_kms_key_id
 
     @property
     def func_urn(self):
@@ -461,6 +468,28 @@ class UpdateFunctionCodeResponse(SdkResponse):
         :type dependencies: list[:class:`huaweicloudsdkfunctiongraph.v2.Dependency`]
         """
         self._dependencies = dependencies
+
+    @property
+    def code_encrypt_kms_key_id(self):
+        r"""Gets the code_encrypt_kms_key_id of this UpdateFunctionCodeResponse.
+
+        用于用户代码加密的kms主秘钥ID。
+
+        :return: The code_encrypt_kms_key_id of this UpdateFunctionCodeResponse.
+        :rtype: str
+        """
+        return self._code_encrypt_kms_key_id
+
+    @code_encrypt_kms_key_id.setter
+    def code_encrypt_kms_key_id(self, code_encrypt_kms_key_id):
+        r"""Sets the code_encrypt_kms_key_id of this UpdateFunctionCodeResponse.
+
+        用于用户代码加密的kms主秘钥ID。
+
+        :param code_encrypt_kms_key_id: The code_encrypt_kms_key_id of this UpdateFunctionCodeResponse.
+        :type code_encrypt_kms_key_id: str
+        """
+        self._code_encrypt_kms_key_id = code_encrypt_kms_key_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -51,29 +51,29 @@ class TopicEntity:
 
         The model defined in huaweicloud sdk
 
-        :param policies_only: 是否为默认策略。
+        :param policies_only: **参数解释**： 是否为默认策略。 **取值范围**： - true：默认策略。 - fasle：不是默认策略。
         :type policies_only: bool
-        :param name: topic名称。
+        :param name: **参数解释**： topic名称。 **取值范围**： 不涉及
         :type name: str
-        :param replication: 副本数，配置数据的可靠性。
+        :param replication: **参数解释**： 副本数，配置数据的可靠性。 **取值范围**： 不涉及
         :type replication: int
-        :param partition: topic分区数，设置消费的并发数。
+        :param partition: **参数解释**： topic分区数，设置消费的并发数。 **取值范围**： 不涉及
         :type partition: int
-        :param retention_time: 消息老化时间。
+        :param retention_time: **参数解释**： 消息老化时间。 **取值范围**： 0-720
         :type retention_time: int
-        :param sync_replication: 是否开启同步复制，开启后，客户端生产消息时相应的也要设置acks&#x3D;-1，否则不生效，默认关闭。
+        :param sync_replication: **参数解释**： 是否开启同步复制，默认关闭。 **取值范围**： - true：开启，客户端生产消息时相应的也要设置acks&#x3D;-1，否则不生效。 - false：关闭。
         :type sync_replication: bool
-        :param sync_message_flush: 是否使用同步落盘。默认值为false。同步落盘会导致性能降低。
+        :param sync_message_flush: **参数解释**： 是否使用同步落盘。默认值为false。同步落盘会导致性能降低。 **取值范围**： - true：同步落盘。 - false：不同步落盘。
         :type sync_message_flush: bool
-        :param external_configs: 扩展配置。
+        :param external_configs: **参数解释**： 扩展配置。
         :type external_configs: object
-        :param topic_type: topic类型(0:普通Topic 1:系统(内部)Topic)。
+        :param topic_type: **参数解释**： topic类型。 **取值范围**： - 0：普通Topic。 - 1：系统(内部)Topic。
         :type topic_type: int
-        :param topic_other_configs: topic其他配置
+        :param topic_other_configs: **参数解释**： topic其他配置。
         :type topic_other_configs: list[:class:`huaweicloudsdkkafka.v2.TopicEntityTopicOtherConfigs`]
-        :param topic_desc: topic描述
+        :param topic_desc: **参数解释**： topic描述。 **取值范围**： 不涉及
         :type topic_desc: str
-        :param created_at: topic创建时间
+        :param created_at: **参数解释**： topic创建时间。 **取值范围**： 不涉及
         :type created_at: int
         """
         
@@ -122,7 +122,7 @@ class TopicEntity:
     def policies_only(self):
         r"""Gets the policies_only of this TopicEntity.
 
-        是否为默认策略。
+        **参数解释**： 是否为默认策略。 **取值范围**： - true：默认策略。 - fasle：不是默认策略。
 
         :return: The policies_only of this TopicEntity.
         :rtype: bool
@@ -133,7 +133,7 @@ class TopicEntity:
     def policies_only(self, policies_only):
         r"""Sets the policies_only of this TopicEntity.
 
-        是否为默认策略。
+        **参数解释**： 是否为默认策略。 **取值范围**： - true：默认策略。 - fasle：不是默认策略。
 
         :param policies_only: The policies_only of this TopicEntity.
         :type policies_only: bool
@@ -144,7 +144,7 @@ class TopicEntity:
     def name(self):
         r"""Gets the name of this TopicEntity.
 
-        topic名称。
+        **参数解释**： topic名称。 **取值范围**： 不涉及
 
         :return: The name of this TopicEntity.
         :rtype: str
@@ -155,7 +155,7 @@ class TopicEntity:
     def name(self, name):
         r"""Sets the name of this TopicEntity.
 
-        topic名称。
+        **参数解释**： topic名称。 **取值范围**： 不涉及
 
         :param name: The name of this TopicEntity.
         :type name: str
@@ -166,7 +166,7 @@ class TopicEntity:
     def replication(self):
         r"""Gets the replication of this TopicEntity.
 
-        副本数，配置数据的可靠性。
+        **参数解释**： 副本数，配置数据的可靠性。 **取值范围**： 不涉及
 
         :return: The replication of this TopicEntity.
         :rtype: int
@@ -177,7 +177,7 @@ class TopicEntity:
     def replication(self, replication):
         r"""Sets the replication of this TopicEntity.
 
-        副本数，配置数据的可靠性。
+        **参数解释**： 副本数，配置数据的可靠性。 **取值范围**： 不涉及
 
         :param replication: The replication of this TopicEntity.
         :type replication: int
@@ -188,7 +188,7 @@ class TopicEntity:
     def partition(self):
         r"""Gets the partition of this TopicEntity.
 
-        topic分区数，设置消费的并发数。
+        **参数解释**： topic分区数，设置消费的并发数。 **取值范围**： 不涉及
 
         :return: The partition of this TopicEntity.
         :rtype: int
@@ -199,7 +199,7 @@ class TopicEntity:
     def partition(self, partition):
         r"""Sets the partition of this TopicEntity.
 
-        topic分区数，设置消费的并发数。
+        **参数解释**： topic分区数，设置消费的并发数。 **取值范围**： 不涉及
 
         :param partition: The partition of this TopicEntity.
         :type partition: int
@@ -210,7 +210,7 @@ class TopicEntity:
     def retention_time(self):
         r"""Gets the retention_time of this TopicEntity.
 
-        消息老化时间。
+        **参数解释**： 消息老化时间。 **取值范围**： 0-720
 
         :return: The retention_time of this TopicEntity.
         :rtype: int
@@ -221,7 +221,7 @@ class TopicEntity:
     def retention_time(self, retention_time):
         r"""Sets the retention_time of this TopicEntity.
 
-        消息老化时间。
+        **参数解释**： 消息老化时间。 **取值范围**： 0-720
 
         :param retention_time: The retention_time of this TopicEntity.
         :type retention_time: int
@@ -232,7 +232,7 @@ class TopicEntity:
     def sync_replication(self):
         r"""Gets the sync_replication of this TopicEntity.
 
-        是否开启同步复制，开启后，客户端生产消息时相应的也要设置acks=-1，否则不生效，默认关闭。
+        **参数解释**： 是否开启同步复制，默认关闭。 **取值范围**： - true：开启，客户端生产消息时相应的也要设置acks=-1，否则不生效。 - false：关闭。
 
         :return: The sync_replication of this TopicEntity.
         :rtype: bool
@@ -243,7 +243,7 @@ class TopicEntity:
     def sync_replication(self, sync_replication):
         r"""Sets the sync_replication of this TopicEntity.
 
-        是否开启同步复制，开启后，客户端生产消息时相应的也要设置acks=-1，否则不生效，默认关闭。
+        **参数解释**： 是否开启同步复制，默认关闭。 **取值范围**： - true：开启，客户端生产消息时相应的也要设置acks=-1，否则不生效。 - false：关闭。
 
         :param sync_replication: The sync_replication of this TopicEntity.
         :type sync_replication: bool
@@ -254,7 +254,7 @@ class TopicEntity:
     def sync_message_flush(self):
         r"""Gets the sync_message_flush of this TopicEntity.
 
-        是否使用同步落盘。默认值为false。同步落盘会导致性能降低。
+        **参数解释**： 是否使用同步落盘。默认值为false。同步落盘会导致性能降低。 **取值范围**： - true：同步落盘。 - false：不同步落盘。
 
         :return: The sync_message_flush of this TopicEntity.
         :rtype: bool
@@ -265,7 +265,7 @@ class TopicEntity:
     def sync_message_flush(self, sync_message_flush):
         r"""Sets the sync_message_flush of this TopicEntity.
 
-        是否使用同步落盘。默认值为false。同步落盘会导致性能降低。
+        **参数解释**： 是否使用同步落盘。默认值为false。同步落盘会导致性能降低。 **取值范围**： - true：同步落盘。 - false：不同步落盘。
 
         :param sync_message_flush: The sync_message_flush of this TopicEntity.
         :type sync_message_flush: bool
@@ -276,7 +276,7 @@ class TopicEntity:
     def external_configs(self):
         r"""Gets the external_configs of this TopicEntity.
 
-        扩展配置。
+        **参数解释**： 扩展配置。
 
         :return: The external_configs of this TopicEntity.
         :rtype: object
@@ -287,7 +287,7 @@ class TopicEntity:
     def external_configs(self, external_configs):
         r"""Sets the external_configs of this TopicEntity.
 
-        扩展配置。
+        **参数解释**： 扩展配置。
 
         :param external_configs: The external_configs of this TopicEntity.
         :type external_configs: object
@@ -298,7 +298,7 @@ class TopicEntity:
     def topic_type(self):
         r"""Gets the topic_type of this TopicEntity.
 
-        topic类型(0:普通Topic 1:系统(内部)Topic)。
+        **参数解释**： topic类型。 **取值范围**： - 0：普通Topic。 - 1：系统(内部)Topic。
 
         :return: The topic_type of this TopicEntity.
         :rtype: int
@@ -309,7 +309,7 @@ class TopicEntity:
     def topic_type(self, topic_type):
         r"""Sets the topic_type of this TopicEntity.
 
-        topic类型(0:普通Topic 1:系统(内部)Topic)。
+        **参数解释**： topic类型。 **取值范围**： - 0：普通Topic。 - 1：系统(内部)Topic。
 
         :param topic_type: The topic_type of this TopicEntity.
         :type topic_type: int
@@ -320,7 +320,7 @@ class TopicEntity:
     def topic_other_configs(self):
         r"""Gets the topic_other_configs of this TopicEntity.
 
-        topic其他配置
+        **参数解释**： topic其他配置。
 
         :return: The topic_other_configs of this TopicEntity.
         :rtype: list[:class:`huaweicloudsdkkafka.v2.TopicEntityTopicOtherConfigs`]
@@ -331,7 +331,7 @@ class TopicEntity:
     def topic_other_configs(self, topic_other_configs):
         r"""Sets the topic_other_configs of this TopicEntity.
 
-        topic其他配置
+        **参数解释**： topic其他配置。
 
         :param topic_other_configs: The topic_other_configs of this TopicEntity.
         :type topic_other_configs: list[:class:`huaweicloudsdkkafka.v2.TopicEntityTopicOtherConfigs`]
@@ -342,7 +342,7 @@ class TopicEntity:
     def topic_desc(self):
         r"""Gets the topic_desc of this TopicEntity.
 
-        topic描述
+        **参数解释**： topic描述。 **取值范围**： 不涉及
 
         :return: The topic_desc of this TopicEntity.
         :rtype: str
@@ -353,7 +353,7 @@ class TopicEntity:
     def topic_desc(self, topic_desc):
         r"""Sets the topic_desc of this TopicEntity.
 
-        topic描述
+        **参数解释**： topic描述。 **取值范围**： 不涉及
 
         :param topic_desc: The topic_desc of this TopicEntity.
         :type topic_desc: str
@@ -364,7 +364,7 @@ class TopicEntity:
     def created_at(self):
         r"""Gets the created_at of this TopicEntity.
 
-        topic创建时间
+        **参数解释**： topic创建时间。 **取值范围**： 不涉及
 
         :return: The created_at of this TopicEntity.
         :rtype: int
@@ -375,7 +375,7 @@ class TopicEntity:
     def created_at(self, created_at):
         r"""Sets the created_at of this TopicEntity.
 
-        topic创建时间
+        **参数解释**： topic创建时间。 **取值范围**： 不涉及
 
         :param created_at: The created_at of this TopicEntity.
         :type created_at: int

@@ -44,21 +44,21 @@ class UpdateUserResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param access_key: 用户名，只能英文字母开头，且由英文字母、数字、中划线、下划线组成，长度为7~64个字符。
+        :param access_key: **参数解释**： 用户名。 **约束限制**： 只能英文字母开头，且由英文字母、数字、中划线、下划线组成，长度为7~64个字符。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type access_key: str
-        :param secret_key: 密钥。 8-32个字符。 至少包含以下字符中的3种：   - 大写字母   - 小写字母   - 数字   - 特殊字符&#x60;~!@#$%^&amp;*()-_&#x3D;+\\\\|[{}];:\\&#39;\\\&quot;,&lt;.&gt;/?密钥。 不能与名称或倒序的名称相同。
+        :param secret_key: **参数解释**： 密钥。 **约束限制**： 8-32个字符。 至少包含以下字符中的3种： - 大写字母 - 小写字母 - 数字 - 特殊字符&#x60;~!@#$%^&amp;*()-_&#x3D;+\\\\|[{}];:\\&#39;\\\&quot;,&lt;.&gt;/?密钥。 不能与名称或倒序的名称相同。  **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type secret_key: str
-        :param white_remote_address: IP白名单。
+        :param white_remote_address: **参数解释**： IP白名单。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type white_remote_address: str
-        :param admin: 是否为管理员。
+        :param admin: **参数解释**： 是否为管理员。 **约束限制**： 不涉及。 **取值范围**： - true：是管理员。 - false：不是管理员。  **默认取值**： 不涉及。
         :type admin: bool
-        :param default_topic_perm: 默认的主题权限。
+        :param default_topic_perm: **参数解释**： 默认的主题权限。 **约束限制**： 不涉及。 **取值范围**： - pub：拥有发布权限。 - sub：拥有订阅权限。 - PUB|sub：拥有发布订阅权限。 - DENY：无权限。  **默认取值**： 不涉及。
         :type default_topic_perm: str
-        :param default_group_perm: 默认的消费组权限。
+        :param default_group_perm: **参数解释**： 默认的消费组权限。 **约束限制**： 不涉及。 **取值范围**： - sub：拥有订阅权限。 - DENY：无权限。  **默认取值**： 不涉及。
         :type default_group_perm: str
-        :param topic_perms: 特殊的主题权限。
+        :param topic_perms: **参数解释**： 特殊的主题权限。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type topic_perms: list[:class:`huaweicloudsdkrocketmq.v2.UserTopicPerms`]
-        :param group_perms: 特殊的消费组权限。
+        :param group_perms: **参数解释**： 特殊的消费组权限。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type group_perms: list[:class:`huaweicloudsdkrocketmq.v2.UserGroupPerms`]
         """
         
@@ -95,7 +95,7 @@ class UpdateUserResponse(SdkResponse):
     def access_key(self):
         r"""Gets the access_key of this UpdateUserResponse.
 
-        用户名，只能英文字母开头，且由英文字母、数字、中划线、下划线组成，长度为7~64个字符。
+        **参数解释**： 用户名。 **约束限制**： 只能英文字母开头，且由英文字母、数字、中划线、下划线组成，长度为7~64个字符。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The access_key of this UpdateUserResponse.
         :rtype: str
@@ -106,7 +106,7 @@ class UpdateUserResponse(SdkResponse):
     def access_key(self, access_key):
         r"""Sets the access_key of this UpdateUserResponse.
 
-        用户名，只能英文字母开头，且由英文字母、数字、中划线、下划线组成，长度为7~64个字符。
+        **参数解释**： 用户名。 **约束限制**： 只能英文字母开头，且由英文字母、数字、中划线、下划线组成，长度为7~64个字符。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param access_key: The access_key of this UpdateUserResponse.
         :type access_key: str
@@ -117,7 +117,7 @@ class UpdateUserResponse(SdkResponse):
     def secret_key(self):
         r"""Gets the secret_key of this UpdateUserResponse.
 
-        密钥。 8-32个字符。 至少包含以下字符中的3种：   - 大写字母   - 小写字母   - 数字   - 特殊字符`~!@#$%^&*()-_=+\\\\|[{}];:\\'\\\",<.>/?密钥。 不能与名称或倒序的名称相同。
+        **参数解释**： 密钥。 **约束限制**： 8-32个字符。 至少包含以下字符中的3种： - 大写字母 - 小写字母 - 数字 - 特殊字符`~!@#$%^&*()-_=+\\\\|[{}];:\\'\\\",<.>/?密钥。 不能与名称或倒序的名称相同。  **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The secret_key of this UpdateUserResponse.
         :rtype: str
@@ -128,7 +128,7 @@ class UpdateUserResponse(SdkResponse):
     def secret_key(self, secret_key):
         r"""Sets the secret_key of this UpdateUserResponse.
 
-        密钥。 8-32个字符。 至少包含以下字符中的3种：   - 大写字母   - 小写字母   - 数字   - 特殊字符`~!@#$%^&*()-_=+\\\\|[{}];:\\'\\\",<.>/?密钥。 不能与名称或倒序的名称相同。
+        **参数解释**： 密钥。 **约束限制**： 8-32个字符。 至少包含以下字符中的3种： - 大写字母 - 小写字母 - 数字 - 特殊字符`~!@#$%^&*()-_=+\\\\|[{}];:\\'\\\",<.>/?密钥。 不能与名称或倒序的名称相同。  **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param secret_key: The secret_key of this UpdateUserResponse.
         :type secret_key: str
@@ -139,7 +139,7 @@ class UpdateUserResponse(SdkResponse):
     def white_remote_address(self):
         r"""Gets the white_remote_address of this UpdateUserResponse.
 
-        IP白名单。
+        **参数解释**： IP白名单。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The white_remote_address of this UpdateUserResponse.
         :rtype: str
@@ -150,7 +150,7 @@ class UpdateUserResponse(SdkResponse):
     def white_remote_address(self, white_remote_address):
         r"""Sets the white_remote_address of this UpdateUserResponse.
 
-        IP白名单。
+        **参数解释**： IP白名单。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param white_remote_address: The white_remote_address of this UpdateUserResponse.
         :type white_remote_address: str
@@ -161,7 +161,7 @@ class UpdateUserResponse(SdkResponse):
     def admin(self):
         r"""Gets the admin of this UpdateUserResponse.
 
-        是否为管理员。
+        **参数解释**： 是否为管理员。 **约束限制**： 不涉及。 **取值范围**： - true：是管理员。 - false：不是管理员。  **默认取值**： 不涉及。
 
         :return: The admin of this UpdateUserResponse.
         :rtype: bool
@@ -172,7 +172,7 @@ class UpdateUserResponse(SdkResponse):
     def admin(self, admin):
         r"""Sets the admin of this UpdateUserResponse.
 
-        是否为管理员。
+        **参数解释**： 是否为管理员。 **约束限制**： 不涉及。 **取值范围**： - true：是管理员。 - false：不是管理员。  **默认取值**： 不涉及。
 
         :param admin: The admin of this UpdateUserResponse.
         :type admin: bool
@@ -183,7 +183,7 @@ class UpdateUserResponse(SdkResponse):
     def default_topic_perm(self):
         r"""Gets the default_topic_perm of this UpdateUserResponse.
 
-        默认的主题权限。
+        **参数解释**： 默认的主题权限。 **约束限制**： 不涉及。 **取值范围**： - pub：拥有发布权限。 - sub：拥有订阅权限。 - PUB|sub：拥有发布订阅权限。 - DENY：无权限。  **默认取值**： 不涉及。
 
         :return: The default_topic_perm of this UpdateUserResponse.
         :rtype: str
@@ -194,7 +194,7 @@ class UpdateUserResponse(SdkResponse):
     def default_topic_perm(self, default_topic_perm):
         r"""Sets the default_topic_perm of this UpdateUserResponse.
 
-        默认的主题权限。
+        **参数解释**： 默认的主题权限。 **约束限制**： 不涉及。 **取值范围**： - pub：拥有发布权限。 - sub：拥有订阅权限。 - PUB|sub：拥有发布订阅权限。 - DENY：无权限。  **默认取值**： 不涉及。
 
         :param default_topic_perm: The default_topic_perm of this UpdateUserResponse.
         :type default_topic_perm: str
@@ -205,7 +205,7 @@ class UpdateUserResponse(SdkResponse):
     def default_group_perm(self):
         r"""Gets the default_group_perm of this UpdateUserResponse.
 
-        默认的消费组权限。
+        **参数解释**： 默认的消费组权限。 **约束限制**： 不涉及。 **取值范围**： - sub：拥有订阅权限。 - DENY：无权限。  **默认取值**： 不涉及。
 
         :return: The default_group_perm of this UpdateUserResponse.
         :rtype: str
@@ -216,7 +216,7 @@ class UpdateUserResponse(SdkResponse):
     def default_group_perm(self, default_group_perm):
         r"""Sets the default_group_perm of this UpdateUserResponse.
 
-        默认的消费组权限。
+        **参数解释**： 默认的消费组权限。 **约束限制**： 不涉及。 **取值范围**： - sub：拥有订阅权限。 - DENY：无权限。  **默认取值**： 不涉及。
 
         :param default_group_perm: The default_group_perm of this UpdateUserResponse.
         :type default_group_perm: str
@@ -227,7 +227,7 @@ class UpdateUserResponse(SdkResponse):
     def topic_perms(self):
         r"""Gets the topic_perms of this UpdateUserResponse.
 
-        特殊的主题权限。
+        **参数解释**： 特殊的主题权限。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The topic_perms of this UpdateUserResponse.
         :rtype: list[:class:`huaweicloudsdkrocketmq.v2.UserTopicPerms`]
@@ -238,7 +238,7 @@ class UpdateUserResponse(SdkResponse):
     def topic_perms(self, topic_perms):
         r"""Sets the topic_perms of this UpdateUserResponse.
 
-        特殊的主题权限。
+        **参数解释**： 特殊的主题权限。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param topic_perms: The topic_perms of this UpdateUserResponse.
         :type topic_perms: list[:class:`huaweicloudsdkrocketmq.v2.UserTopicPerms`]
@@ -249,7 +249,7 @@ class UpdateUserResponse(SdkResponse):
     def group_perms(self):
         r"""Gets the group_perms of this UpdateUserResponse.
 
-        特殊的消费组权限。
+        **参数解释**： 特殊的消费组权限。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The group_perms of this UpdateUserResponse.
         :rtype: list[:class:`huaweicloudsdkrocketmq.v2.UserGroupPerms`]
@@ -260,7 +260,7 @@ class UpdateUserResponse(SdkResponse):
     def group_perms(self, group_perms):
         r"""Sets the group_perms of this UpdateUserResponse.
 
-        特殊的消费组权限。
+        **参数解释**： 特殊的消费组权限。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param group_perms: The group_perms of this UpdateUserResponse.
         :type group_perms: list[:class:`huaweicloudsdkrocketmq.v2.UserGroupPerms`]

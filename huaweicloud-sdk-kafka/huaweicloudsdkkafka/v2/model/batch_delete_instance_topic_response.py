@@ -30,7 +30,7 @@ class BatchDeleteInstanceTopicResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param topics: Topic列表。
+        :param topics: **参数解释**： Topic列表。
         :type topics: list[:class:`huaweicloudsdkkafka.v2.BatchDeleteInstanceTopicRespTopics`]
         """
         
@@ -46,7 +46,7 @@ class BatchDeleteInstanceTopicResponse(SdkResponse):
     def topics(self):
         r"""Gets the topics of this BatchDeleteInstanceTopicResponse.
 
-        Topic列表。
+        **参数解释**： Topic列表。
 
         :return: The topics of this BatchDeleteInstanceTopicResponse.
         :rtype: list[:class:`huaweicloudsdkkafka.v2.BatchDeleteInstanceTopicRespTopics`]
@@ -57,7 +57,7 @@ class BatchDeleteInstanceTopicResponse(SdkResponse):
     def topics(self, topics):
         r"""Sets the topics of this BatchDeleteInstanceTopicResponse.
 
-        Topic列表。
+        **参数解释**： Topic列表。
 
         :param topics: The topics of this BatchDeleteInstanceTopicResponse.
         :type topics: list[:class:`huaweicloudsdkkafka.v2.BatchDeleteInstanceTopicRespTopics`]

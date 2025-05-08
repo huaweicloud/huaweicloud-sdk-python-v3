@@ -31,9 +31,9 @@ class BatchDeleteInstanceTopicRespTopics:
 
         The model defined in huaweicloud sdk
 
-        :param id: Topic名称。
+        :param id: **参数解释**： Topic名称。 **取值范围**： 不涉及。
         :type id: str
-        :param success: 是否删除成功。
+        :param success: **参数解释**： 是否删除成功。 **取值范围**： - true：删除成功。 - false：删除失败。
         :type success: bool
         """
         
@@ -52,7 +52,7 @@ class BatchDeleteInstanceTopicRespTopics:
     def id(self):
         r"""Gets the id of this BatchDeleteInstanceTopicRespTopics.
 
-        Topic名称。
+        **参数解释**： Topic名称。 **取值范围**： 不涉及。
 
         :return: The id of this BatchDeleteInstanceTopicRespTopics.
         :rtype: str
@@ -63,7 +63,7 @@ class BatchDeleteInstanceTopicRespTopics:
     def id(self, id):
         r"""Sets the id of this BatchDeleteInstanceTopicRespTopics.
 
-        Topic名称。
+        **参数解释**： Topic名称。 **取值范围**： 不涉及。
 
         :param id: The id of this BatchDeleteInstanceTopicRespTopics.
         :type id: str
@@ -74,7 +74,7 @@ class BatchDeleteInstanceTopicRespTopics:
     def success(self):
         r"""Gets the success of this BatchDeleteInstanceTopicRespTopics.
 
-        是否删除成功。
+        **参数解释**： 是否删除成功。 **取值范围**： - true：删除成功。 - false：删除失败。
 
         :return: The success of this BatchDeleteInstanceTopicRespTopics.
         :rtype: bool
@@ -85,7 +85,7 @@ class BatchDeleteInstanceTopicRespTopics:
     def success(self, success):
         r"""Sets the success of this BatchDeleteInstanceTopicRespTopics.
 
-        是否删除成功。
+        **参数解释**： 是否删除成功。 **取值范围**： - true：删除成功。 - false：删除失败。
 
         :param success: The success of this BatchDeleteInstanceTopicRespTopics.
         :type success: bool

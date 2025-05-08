@@ -624,6 +624,72 @@ class VodAsyncClient(Client):
 
         return http_info
 
+    def create_edit_task_async(self, request):
+        r"""create_edit_task
+
+        ## 典型场景 ##
+          剪辑任务下发。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateEditTask
+        :type request: :class:`huaweicloudsdkvod.v1.CreateEditTaskRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.CreateEditTaskResponse`
+        """
+        http_info = self._create_edit_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_edit_task_async_invoker(self, request):
+        http_info = self._create_edit_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_edit_task_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/asset/customization/edit",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateEditTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_extract_audio_task_async(self, request):
         r"""音频提取
 
@@ -689,6 +755,208 @@ class VodAsyncClient(Client):
 
         return http_info
 
+    def create_object_process_task_async(self, request):
+        r"""创建视频处理任务
+
+        ## 典型场景 ##
+          视频处理。
+        
+        ## 接口功能 ##
+          工作流方式视频处理
+        
+        ## 接口约束 ##
+          无。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateObjectProcessTask
+        :type request: :class:`huaweicloudsdkvod.v1.CreateObjectProcessTaskRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.CreateObjectProcessTaskResponse`
+        """
+        http_info = self._create_object_process_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_object_process_task_async_invoker(self, request):
+        http_info = self._create_object_process_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_object_process_task_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/asset/customization/process",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateObjectProcessTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_object_replication_async(self, request):
+        r"""obs桶内容复制
+
+        ## 典型场景 ##
+          触发从用户obs桶复制内容到用户obs桶，当前仅为斗鱼提供&lt;br/&gt;
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateObjectReplication
+        :type request: :class:`huaweicloudsdkvod.v1.CreateObjectReplicationRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.CreateObjectReplicationResponse`
+        """
+        http_info = self._create_object_replication_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_object_replication_async_invoker(self, request):
+        http_info = self._create_object_replication_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_object_replication_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/asset/customization/object-replication",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateObjectReplicationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_object_retrieval_async(self, request):
+        r"""obs桶内容解冻
+
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateObjectRetrieval
+        :type request: :class:`huaweicloudsdkvod.v1.CreateObjectRetrievalRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.CreateObjectRetrievalResponse`
+        """
+        http_info = self._create_object_retrieval_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_object_retrieval_async_invoker(self, request):
+        http_info = self._create_object_retrieval_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_object_retrieval_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/asset/customization/object-retrieval",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateObjectRetrievalResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_preheating_asset_async(self, request):
         r"""CDN预热
 
@@ -714,6 +982,72 @@ class VodAsyncClient(Client):
             "resource_path": "/v1.0/{project_id}/asset/preheating",
             "request_type": request.__class__.__name__,
             "response_type": "CreatePreheatingAssetResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_real_time_clip_async(self, request):
+        r"""直播内容即时剪辑
+
+        ## 典型场景 ##
+          触发从直播时移桶截取一段流，当前仅为斗鱼提供&lt;br/&gt;
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateRealTimeClip
+        :type request: :class:`huaweicloudsdkvod.v1.CreateRealTimeClipRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.CreateRealTimeClipResponse`
+        """
+        http_info = self._create_real_time_clip_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_real_time_clip_async_invoker(self, request):
+        http_info = self._create_real_time_clip_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_real_time_clip_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/asset/customization/realtime-clip",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateRealTimeClipResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -1016,6 +1350,72 @@ class VodAsyncClient(Client):
 
         return http_info
 
+    def create_upload_by_url_async(self, request):
+        r"""URL拉取上传
+
+        ## 典型场景 ##
+          UGC场景URL拉取上传，当前仅为斗鱼提供&lt;br/&gt;
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateUploadByUrl
+        :type request: :class:`huaweicloudsdkvod.v1.CreateUploadByUrlRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.CreateUploadByUrlResponse`
+        """
+        http_info = self._create_upload_by_url_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_upload_by_url_async_invoker(self, request):
+        http_info = self._create_upload_by_url_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_upload_by_url_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/asset/customization/upload-by-url",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateUploadByUrlResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_watermark_template_async(self, request):
         r"""创建水印模板
 
@@ -1187,6 +1587,79 @@ class VodAsyncClient(Client):
             collection_formats['asset_id'] = 'multi'
         if 'delete_type' in local_var_params:
             query_params.append(('delete_type', local_var_params['delete_type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_dy_asset_async(self, request):
+        r"""删除斗鱼媒资
+
+        ## 典型场景 ##
+          斗鱼删除桶文件及媒资表数据。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteDyAsset
+        :type request: :class:`huaweicloudsdkvod.v1.DeleteDyAssetRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.DeleteDyAssetResponse`
+        """
+        http_info = self._delete_dy_asset_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_dy_asset_async_invoker(self, request):
+        http_info = self._delete_dy_asset_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_dy_asset_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/asset/customization/object",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDyAssetResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'bucket' in local_var_params:
+            query_params.append(('bucket', local_var_params['bucket']))
+        if 'object' in local_var_params:
+            query_params.append(('object', local_var_params['object']))
+            collection_formats['object'] = 'csv'
+        if 'callback_url' in local_var_params:
+            query_params.append(('callback_url', local_var_params['callback_url']))
+        if 'session_context' in local_var_params:
+            query_params.append(('session_context', local_var_params['session_context']))
 
         header_params = {}
 
@@ -2826,6 +3299,77 @@ class VodAsyncClient(Client):
 
         return http_info
 
+    def show_object_meta_data_async(self, request):
+        r"""查询媒体元数据
+
+        查询媒体元数据
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowObjectMetaData
+        :type request: :class:`huaweicloudsdkvod.v1.ShowObjectMetaDataRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.ShowObjectMetaDataResponse`
+        """
+        http_info = self._show_object_meta_data_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_object_meta_data_async_invoker(self, request):
+        http_info = self._show_object_meta_data_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_object_meta_data_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/asset/customization/meta-data",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowObjectMetaDataResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'bucket' in local_var_params:
+            query_params.append(('bucket', local_var_params['bucket']))
+        if 'object' in local_var_params:
+            query_params.append(('object', local_var_params['object']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_preheating_asset_async(self, request):
         r"""查询CDN预热
 
@@ -2992,6 +3536,72 @@ class VodAsyncClient(Client):
         path_params = {}
 
         query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_task_detail_async(self, request):
+        r"""查询任务详情
+
+        ## 典型场景 ##
+          任务详情查询
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowTaskDetail
+        :type request: :class:`huaweicloudsdkvod.v1.ShowTaskDetailRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.ShowTaskDetailResponse`
+        """
+        http_info = self._show_task_detail_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_task_detail_async_invoker(self, request):
+        http_info = self._show_task_detail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_task_detail_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/asset/customization/task/detail",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTaskDetailResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'task_id' in local_var_params:
+            query_params.append(('task_id', local_var_params['task_id']))
 
         header_params = {}
 

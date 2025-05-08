@@ -33,11 +33,11 @@ class TopicBrokers:
 
         The model defined in huaweicloud sdk
 
-        :param broker_name: 代理名称。
+        :param broker_name: **参数解释**： 代理名称。 **取值范围**： 不涉及。
         :type broker_name: str
-        :param read_queue_num: 读队列个数。
+        :param read_queue_num: **参数解释**： 读队列个数。 **取值范围**： 不涉及。
         :type read_queue_num: float
-        :param write_queue_num: 写队列个数。
+        :param write_queue_num: **参数解释**： 写队列个数。 **取值范围**： 不涉及。
         :type write_queue_num: float
         """
         
@@ -59,7 +59,7 @@ class TopicBrokers:
     def broker_name(self):
         r"""Gets the broker_name of this TopicBrokers.
 
-        代理名称。
+        **参数解释**： 代理名称。 **取值范围**： 不涉及。
 
         :return: The broker_name of this TopicBrokers.
         :rtype: str
@@ -70,7 +70,7 @@ class TopicBrokers:
     def broker_name(self, broker_name):
         r"""Sets the broker_name of this TopicBrokers.
 
-        代理名称。
+        **参数解释**： 代理名称。 **取值范围**： 不涉及。
 
         :param broker_name: The broker_name of this TopicBrokers.
         :type broker_name: str
@@ -81,7 +81,7 @@ class TopicBrokers:
     def read_queue_num(self):
         r"""Gets the read_queue_num of this TopicBrokers.
 
-        读队列个数。
+        **参数解释**： 读队列个数。 **取值范围**： 不涉及。
 
         :return: The read_queue_num of this TopicBrokers.
         :rtype: float
@@ -92,7 +92,7 @@ class TopicBrokers:
     def read_queue_num(self, read_queue_num):
         r"""Sets the read_queue_num of this TopicBrokers.
 
-        读队列个数。
+        **参数解释**： 读队列个数。 **取值范围**： 不涉及。
 
         :param read_queue_num: The read_queue_num of this TopicBrokers.
         :type read_queue_num: float
@@ -103,7 +103,7 @@ class TopicBrokers:
     def write_queue_num(self):
         r"""Gets the write_queue_num of this TopicBrokers.
 
-        写队列个数。
+        **参数解释**： 写队列个数。 **取值范围**： 不涉及。
 
         :return: The write_queue_num of this TopicBrokers.
         :rtype: float
@@ -114,7 +114,7 @@ class TopicBrokers:
     def write_queue_num(self, write_queue_num):
         r"""Sets the write_queue_num of this TopicBrokers.
 
-        写队列个数。
+        **参数解释**： 写队列个数。 **取值范围**： 不涉及。
 
         :param write_queue_num: The write_queue_num of this TopicBrokers.
         :type write_queue_num: float

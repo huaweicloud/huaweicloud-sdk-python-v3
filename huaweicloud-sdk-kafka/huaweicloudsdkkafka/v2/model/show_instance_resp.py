@@ -25,6 +25,7 @@ class ShowInstanceResp:
         'storage_space': 'int',
         'partition_num': 'str',
         'used_storage_space': 'int',
+        'dns_enable': 'bool',
         'connect_address': 'str',
         'port': 'int',
         'status': 'str',
@@ -64,6 +65,7 @@ class ShowInstanceResp:
         'available_zone_names': 'list[str]',
         'total_storage_space': 'int',
         'public_connect_address': 'str',
+        'public_connect_domain_name': 'str',
         'storage_resource_id': 'str',
         'storage_spec_code': 'str',
         'service_type': 'str',
@@ -71,8 +73,6 @@ class ShowInstanceResp:
         'retention_policy': 'str',
         'kafka_public_status': 'str',
         'public_bandwidth': 'int',
-        'kafka_manager_enable': 'bool',
-        'kafka_manager_user': 'str',
         'enable_log_collection': 'bool',
         'new_auth_cert': 'bool',
         'cross_vpc_info': 'str',
@@ -93,9 +93,11 @@ class ShowInstanceResp:
         'disk_encrypted': 'bool',
         'disk_encrypted_key': 'str',
         'kafka_private_connect_address': 'str',
+        'kafka_private_connect_domain_name': 'str',
         'ces_version': 'str',
         'public_access_enabled': 'str',
         'node_num': 'int',
+        'port_protocols': 'PortProtocolsEntity',
         'enable_acl': 'bool',
         'new_spec_billing_enable': 'bool',
         'broker_num': 'int',
@@ -112,6 +114,7 @@ class ShowInstanceResp:
         'storage_space': 'storage_space',
         'partition_num': 'partition_num',
         'used_storage_space': 'used_storage_space',
+        'dns_enable': 'dns_enable',
         'connect_address': 'connect_address',
         'port': 'port',
         'status': 'status',
@@ -151,6 +154,7 @@ class ShowInstanceResp:
         'available_zone_names': 'available_zone_names',
         'total_storage_space': 'total_storage_space',
         'public_connect_address': 'public_connect_address',
+        'public_connect_domain_name': 'public_connect_domain_name',
         'storage_resource_id': 'storage_resource_id',
         'storage_spec_code': 'storage_spec_code',
         'service_type': 'service_type',
@@ -158,8 +162,6 @@ class ShowInstanceResp:
         'retention_policy': 'retention_policy',
         'kafka_public_status': 'kafka_public_status',
         'public_bandwidth': 'public_bandwidth',
-        'kafka_manager_enable': 'kafka_manager_enable',
-        'kafka_manager_user': 'kafka_manager_user',
         'enable_log_collection': 'enable_log_collection',
         'new_auth_cert': 'new_auth_cert',
         'cross_vpc_info': 'cross_vpc_info',
@@ -180,9 +182,11 @@ class ShowInstanceResp:
         'disk_encrypted': 'disk_encrypted',
         'disk_encrypted_key': 'disk_encrypted_key',
         'kafka_private_connect_address': 'kafka_private_connect_address',
+        'kafka_private_connect_domain_name': 'kafka_private_connect_domain_name',
         'ces_version': 'ces_version',
         'public_access_enabled': 'public_access_enabled',
         'node_num': 'node_num',
+        'port_protocols': 'port_protocols',
         'enable_acl': 'enable_acl',
         'new_spec_billing_enable': 'new_spec_billing_enable',
         'broker_num': 'broker_num',
@@ -190,7 +194,7 @@ class ShowInstanceResp:
         'dr_enable': 'dr_enable'
     }
 
-    def __init__(self, name=None, engine=None, engine_version=None, description=None, specification=None, storage_space=None, partition_num=None, used_storage_space=None, connect_address=None, port=None, status=None, instance_id=None, resource_spec_code=None, charging_mode=None, vpc_id=None, vpc_name=None, created_at=None, subnet_name=None, subnet_cidr=None, user_id=None, user_name=None, access_user=None, order_id=None, maintain_begin=None, maintain_end=None, enable_publicip=None, management_connect_address=None, ssl_enable=None, broker_ssl_enable=None, kafka_security_protocol=None, sasl_enabled_mechanisms=None, ssl_two_way_enable=None, cert_replaced=None, public_management_connect_address=None, enterprise_project_id=None, is_logical_volume=None, extend_times=None, enable_auto_topic=None, type=None, product_id=None, security_group_id=None, security_group_name=None, subnet_id=None, available_zones=None, available_zone_names=None, total_storage_space=None, public_connect_address=None, storage_resource_id=None, storage_spec_code=None, service_type=None, storage_type=None, retention_policy=None, kafka_public_status=None, public_bandwidth=None, kafka_manager_enable=None, kafka_manager_user=None, enable_log_collection=None, new_auth_cert=None, cross_vpc_info=None, ipv6_enable=None, ipv6_connect_addresses=None, connector_enable=None, connector_node_num=None, connector_id=None, rest_enable=None, rest_connect_address=None, public_boundwidth=None, message_query_inst_enable=None, vpc_client_plain=None, support_features=None, trace_enable=None, agent_enable=None, pod_connect_address=None, disk_encrypted=None, disk_encrypted_key=None, kafka_private_connect_address=None, ces_version=None, public_access_enabled=None, node_num=None, enable_acl=None, new_spec_billing_enable=None, broker_num=None, tags=None, dr_enable=None):
+    def __init__(self, name=None, engine=None, engine_version=None, description=None, specification=None, storage_space=None, partition_num=None, used_storage_space=None, dns_enable=None, connect_address=None, port=None, status=None, instance_id=None, resource_spec_code=None, charging_mode=None, vpc_id=None, vpc_name=None, created_at=None, subnet_name=None, subnet_cidr=None, user_id=None, user_name=None, access_user=None, order_id=None, maintain_begin=None, maintain_end=None, enable_publicip=None, management_connect_address=None, ssl_enable=None, broker_ssl_enable=None, kafka_security_protocol=None, sasl_enabled_mechanisms=None, ssl_two_way_enable=None, cert_replaced=None, public_management_connect_address=None, enterprise_project_id=None, is_logical_volume=None, extend_times=None, enable_auto_topic=None, type=None, product_id=None, security_group_id=None, security_group_name=None, subnet_id=None, available_zones=None, available_zone_names=None, total_storage_space=None, public_connect_address=None, public_connect_domain_name=None, storage_resource_id=None, storage_spec_code=None, service_type=None, storage_type=None, retention_policy=None, kafka_public_status=None, public_bandwidth=None, enable_log_collection=None, new_auth_cert=None, cross_vpc_info=None, ipv6_enable=None, ipv6_connect_addresses=None, connector_enable=None, connector_node_num=None, connector_id=None, rest_enable=None, rest_connect_address=None, public_boundwidth=None, message_query_inst_enable=None, vpc_client_plain=None, support_features=None, trace_enable=None, agent_enable=None, pod_connect_address=None, disk_encrypted=None, disk_encrypted_key=None, kafka_private_connect_address=None, kafka_private_connect_domain_name=None, ces_version=None, public_access_enabled=None, node_num=None, port_protocols=None, enable_acl=None, new_spec_billing_enable=None, broker_num=None, tags=None, dr_enable=None):
         r"""ShowInstanceResp
 
         The model defined in huaweicloud sdk
@@ -211,6 +215,8 @@ class ShowInstanceResp:
         :type partition_num: str
         :param used_storage_space: 已使用的消息存储空间，单位：GB。
         :type used_storage_space: int
+        :param dns_enable: 实例是否开启域名访问功能。 - true：开启 - false：未开启
+        :type dns_enable: bool
         :param connect_address: 实例连接IP地址。
         :type connect_address: str
         :param port: 实例连接端口。
@@ -253,7 +259,7 @@ class ShowInstanceResp:
         :type ssl_enable: bool
         :param broker_ssl_enable: 是否开启broker间副本加密传输。 - true：开启 - false：未开启
         :type broker_ssl_enable: bool
-        :param kafka_security_protocol: 开启SASL后使用的安全协议。 - SASL_SSL: 采用SSL证书进行加密传输，支持账号密码认证，安全性更高。 - SASL_PLAINTEXT: 明文传输，支持账号密码认证，性能更好，建议使用SCRAM-SHA-512机制。  
+        :param kafka_security_protocol: Kafka使用的安全协议。 若实例详情中不存在port_protocols返回参数，则kafka_security_protocol同时代表内网访问、公网访问以及跨VPC访问的安全协议。 若实例详情中存在port_protocols返回参数，则kafka_security_protocol仅代表跨VPC访问的安全协议。内网访问公网访问的安全协议请参考port_protocols参数。  - PLAINTEXT: 既未采用SSL证书进行加密传输，也不支持账号密码认证。性能更好，安全性较低，建议在生产环境下公网访问不使用此方式。 - SASL_SSL: 采用SSL证书进行加密传输，支持账号密码认证，安全性更高。 - SASL_PLAINTEXT: 明文传输，支持账号密码认证，性能更好，建议使用SCRAM-SHA-512机制。
         :type kafka_security_protocol: str
         :param sasl_enabled_mechanisms: 开启SASL后使用的认证机制。 - PLAIN: 简单的用户名密码校验。 - SCRAM-SHA-512: 用户凭证校验，安全性比PLAIN机制更高。
         :type sasl_enabled_mechanisms: list[str]
@@ -289,6 +295,8 @@ class ShowInstanceResp:
         :type total_storage_space: int
         :param public_connect_address: 实例公网连接IP地址。当实例开启了公网访问，实例才包含该参数。
         :type public_connect_address: str
+        :param public_connect_domain_name: 实例公网连接域名。当实例开启了公网访问，实例才包含该参数。
+        :type public_connect_domain_name: str
         :param storage_resource_id: 存储资源ID。
         :type storage_resource_id: str
         :param storage_spec_code: IO规格。
@@ -303,10 +311,6 @@ class ShowInstanceResp:
         :type kafka_public_status: str
         :param public_bandwidth: kafka公网访问带宽。
         :type public_bandwidth: int
-        :param kafka_manager_enable: 是否已开启kafka manager
-        :type kafka_manager_enable: bool
-        :param kafka_manager_user: 登录Kafka Manager的用户名。
-        :type kafka_manager_user: str
         :param enable_log_collection: 是否开启消息收集功能。
         :type enable_log_collection: bool
         :param new_auth_cert: 是否开启新证书。
@@ -345,14 +349,18 @@ class ShowInstanceResp:
         :type disk_encrypted: bool
         :param disk_encrypted_key: 磁盘加密key，未开启磁盘加密时为空。
         :type disk_encrypted_key: str
-        :param kafka_private_connect_address: Kafka实例私有连接地址。
+        :param kafka_private_connect_address: Kafka实例内网连接地址。
         :type kafka_private_connect_address: str
+        :param kafka_private_connect_domain_name: Kafka实例内网连接域名。
+        :type kafka_private_connect_domain_name: str
         :param ces_version: 云监控版本。
         :type ces_version: str
         :param public_access_enabled:  区分实例什么时候开启的公网访问  取值范围：   - true：已开启公网访问   - actived：已开启公网访问   - closed：已关闭公网访问   - false：已关闭公网访问 
         :type public_access_enabled: str
         :param node_num: 节点数。
         :type node_num: int
+        :param port_protocols: 
+        :type port_protocols: :class:`huaweicloudsdkkafka.v2.PortProtocolsEntity`
         :param enable_acl: 是否开启访问控制。
         :type enable_acl: bool
         :param new_spec_billing_enable: 是否启用新规格计费。
@@ -375,6 +383,7 @@ class ShowInstanceResp:
         self._storage_space = None
         self._partition_num = None
         self._used_storage_space = None
+        self._dns_enable = None
         self._connect_address = None
         self._port = None
         self._status = None
@@ -414,6 +423,7 @@ class ShowInstanceResp:
         self._available_zone_names = None
         self._total_storage_space = None
         self._public_connect_address = None
+        self._public_connect_domain_name = None
         self._storage_resource_id = None
         self._storage_spec_code = None
         self._service_type = None
@@ -421,8 +431,6 @@ class ShowInstanceResp:
         self._retention_policy = None
         self._kafka_public_status = None
         self._public_bandwidth = None
-        self._kafka_manager_enable = None
-        self._kafka_manager_user = None
         self._enable_log_collection = None
         self._new_auth_cert = None
         self._cross_vpc_info = None
@@ -443,9 +451,11 @@ class ShowInstanceResp:
         self._disk_encrypted = None
         self._disk_encrypted_key = None
         self._kafka_private_connect_address = None
+        self._kafka_private_connect_domain_name = None
         self._ces_version = None
         self._public_access_enabled = None
         self._node_num = None
+        self._port_protocols = None
         self._enable_acl = None
         self._new_spec_billing_enable = None
         self._broker_num = None
@@ -469,6 +479,8 @@ class ShowInstanceResp:
             self.partition_num = partition_num
         if used_storage_space is not None:
             self.used_storage_space = used_storage_space
+        if dns_enable is not None:
+            self.dns_enable = dns_enable
         if connect_address is not None:
             self.connect_address = connect_address
         if port is not None:
@@ -547,6 +559,8 @@ class ShowInstanceResp:
             self.total_storage_space = total_storage_space
         if public_connect_address is not None:
             self.public_connect_address = public_connect_address
+        if public_connect_domain_name is not None:
+            self.public_connect_domain_name = public_connect_domain_name
         if storage_resource_id is not None:
             self.storage_resource_id = storage_resource_id
         if storage_spec_code is not None:
@@ -561,10 +575,6 @@ class ShowInstanceResp:
             self.kafka_public_status = kafka_public_status
         if public_bandwidth is not None:
             self.public_bandwidth = public_bandwidth
-        if kafka_manager_enable is not None:
-            self.kafka_manager_enable = kafka_manager_enable
-        if kafka_manager_user is not None:
-            self.kafka_manager_user = kafka_manager_user
         if enable_log_collection is not None:
             self.enable_log_collection = enable_log_collection
         if new_auth_cert is not None:
@@ -605,12 +615,16 @@ class ShowInstanceResp:
             self.disk_encrypted_key = disk_encrypted_key
         if kafka_private_connect_address is not None:
             self.kafka_private_connect_address = kafka_private_connect_address
+        if kafka_private_connect_domain_name is not None:
+            self.kafka_private_connect_domain_name = kafka_private_connect_domain_name
         if ces_version is not None:
             self.ces_version = ces_version
         if public_access_enabled is not None:
             self.public_access_enabled = public_access_enabled
         if node_num is not None:
             self.node_num = node_num
+        if port_protocols is not None:
+            self.port_protocols = port_protocols
         if enable_acl is not None:
             self.enable_acl = enable_acl
         if new_spec_billing_enable is not None:
@@ -797,6 +811,28 @@ class ShowInstanceResp:
         :type used_storage_space: int
         """
         self._used_storage_space = used_storage_space
+
+    @property
+    def dns_enable(self):
+        r"""Gets the dns_enable of this ShowInstanceResp.
+
+        实例是否开启域名访问功能。 - true：开启 - false：未开启
+
+        :return: The dns_enable of this ShowInstanceResp.
+        :rtype: bool
+        """
+        return self._dns_enable
+
+    @dns_enable.setter
+    def dns_enable(self, dns_enable):
+        r"""Sets the dns_enable of this ShowInstanceResp.
+
+        实例是否开启域名访问功能。 - true：开启 - false：未开启
+
+        :param dns_enable: The dns_enable of this ShowInstanceResp.
+        :type dns_enable: bool
+        """
+        self._dns_enable = dns_enable
 
     @property
     def connect_address(self):
@@ -1264,7 +1300,7 @@ class ShowInstanceResp:
     def kafka_security_protocol(self):
         r"""Gets the kafka_security_protocol of this ShowInstanceResp.
 
-        开启SASL后使用的安全协议。 - SASL_SSL: 采用SSL证书进行加密传输，支持账号密码认证，安全性更高。 - SASL_PLAINTEXT: 明文传输，支持账号密码认证，性能更好，建议使用SCRAM-SHA-512机制。  
+        Kafka使用的安全协议。 若实例详情中不存在port_protocols返回参数，则kafka_security_protocol同时代表内网访问、公网访问以及跨VPC访问的安全协议。 若实例详情中存在port_protocols返回参数，则kafka_security_protocol仅代表跨VPC访问的安全协议。内网访问公网访问的安全协议请参考port_protocols参数。  - PLAINTEXT: 既未采用SSL证书进行加密传输，也不支持账号密码认证。性能更好，安全性较低，建议在生产环境下公网访问不使用此方式。 - SASL_SSL: 采用SSL证书进行加密传输，支持账号密码认证，安全性更高。 - SASL_PLAINTEXT: 明文传输，支持账号密码认证，性能更好，建议使用SCRAM-SHA-512机制。
 
         :return: The kafka_security_protocol of this ShowInstanceResp.
         :rtype: str
@@ -1275,7 +1311,7 @@ class ShowInstanceResp:
     def kafka_security_protocol(self, kafka_security_protocol):
         r"""Sets the kafka_security_protocol of this ShowInstanceResp.
 
-        开启SASL后使用的安全协议。 - SASL_SSL: 采用SSL证书进行加密传输，支持账号密码认证，安全性更高。 - SASL_PLAINTEXT: 明文传输，支持账号密码认证，性能更好，建议使用SCRAM-SHA-512机制。  
+        Kafka使用的安全协议。 若实例详情中不存在port_protocols返回参数，则kafka_security_protocol同时代表内网访问、公网访问以及跨VPC访问的安全协议。 若实例详情中存在port_protocols返回参数，则kafka_security_protocol仅代表跨VPC访问的安全协议。内网访问公网访问的安全协议请参考port_protocols参数。  - PLAINTEXT: 既未采用SSL证书进行加密传输，也不支持账号密码认证。性能更好，安全性较低，建议在生产环境下公网访问不使用此方式。 - SASL_SSL: 采用SSL证书进行加密传输，支持账号密码认证，安全性更高。 - SASL_PLAINTEXT: 明文传输，支持账号密码认证，性能更好，建议使用SCRAM-SHA-512机制。
 
         :param kafka_security_protocol: The kafka_security_protocol of this ShowInstanceResp.
         :type kafka_security_protocol: str
@@ -1657,6 +1693,28 @@ class ShowInstanceResp:
         self._public_connect_address = public_connect_address
 
     @property
+    def public_connect_domain_name(self):
+        r"""Gets the public_connect_domain_name of this ShowInstanceResp.
+
+        实例公网连接域名。当实例开启了公网访问，实例才包含该参数。
+
+        :return: The public_connect_domain_name of this ShowInstanceResp.
+        :rtype: str
+        """
+        return self._public_connect_domain_name
+
+    @public_connect_domain_name.setter
+    def public_connect_domain_name(self, public_connect_domain_name):
+        r"""Sets the public_connect_domain_name of this ShowInstanceResp.
+
+        实例公网连接域名。当实例开启了公网访问，实例才包含该参数。
+
+        :param public_connect_domain_name: The public_connect_domain_name of this ShowInstanceResp.
+        :type public_connect_domain_name: str
+        """
+        self._public_connect_domain_name = public_connect_domain_name
+
+    @property
     def storage_resource_id(self):
         r"""Gets the storage_resource_id of this ShowInstanceResp.
 
@@ -1809,50 +1867,6 @@ class ShowInstanceResp:
         :type public_bandwidth: int
         """
         self._public_bandwidth = public_bandwidth
-
-    @property
-    def kafka_manager_enable(self):
-        r"""Gets the kafka_manager_enable of this ShowInstanceResp.
-
-        是否已开启kafka manager
-
-        :return: The kafka_manager_enable of this ShowInstanceResp.
-        :rtype: bool
-        """
-        return self._kafka_manager_enable
-
-    @kafka_manager_enable.setter
-    def kafka_manager_enable(self, kafka_manager_enable):
-        r"""Sets the kafka_manager_enable of this ShowInstanceResp.
-
-        是否已开启kafka manager
-
-        :param kafka_manager_enable: The kafka_manager_enable of this ShowInstanceResp.
-        :type kafka_manager_enable: bool
-        """
-        self._kafka_manager_enable = kafka_manager_enable
-
-    @property
-    def kafka_manager_user(self):
-        r"""Gets the kafka_manager_user of this ShowInstanceResp.
-
-        登录Kafka Manager的用户名。
-
-        :return: The kafka_manager_user of this ShowInstanceResp.
-        :rtype: str
-        """
-        return self._kafka_manager_user
-
-    @kafka_manager_user.setter
-    def kafka_manager_user(self, kafka_manager_user):
-        r"""Sets the kafka_manager_user of this ShowInstanceResp.
-
-        登录Kafka Manager的用户名。
-
-        :param kafka_manager_user: The kafka_manager_user of this ShowInstanceResp.
-        :type kafka_manager_user: str
-        """
-        self._kafka_manager_user = kafka_manager_user
 
     @property
     def enable_log_collection(self):
@@ -2276,7 +2290,7 @@ class ShowInstanceResp:
     def kafka_private_connect_address(self):
         r"""Gets the kafka_private_connect_address of this ShowInstanceResp.
 
-        Kafka实例私有连接地址。
+        Kafka实例内网连接地址。
 
         :return: The kafka_private_connect_address of this ShowInstanceResp.
         :rtype: str
@@ -2287,12 +2301,34 @@ class ShowInstanceResp:
     def kafka_private_connect_address(self, kafka_private_connect_address):
         r"""Sets the kafka_private_connect_address of this ShowInstanceResp.
 
-        Kafka实例私有连接地址。
+        Kafka实例内网连接地址。
 
         :param kafka_private_connect_address: The kafka_private_connect_address of this ShowInstanceResp.
         :type kafka_private_connect_address: str
         """
         self._kafka_private_connect_address = kafka_private_connect_address
+
+    @property
+    def kafka_private_connect_domain_name(self):
+        r"""Gets the kafka_private_connect_domain_name of this ShowInstanceResp.
+
+        Kafka实例内网连接域名。
+
+        :return: The kafka_private_connect_domain_name of this ShowInstanceResp.
+        :rtype: str
+        """
+        return self._kafka_private_connect_domain_name
+
+    @kafka_private_connect_domain_name.setter
+    def kafka_private_connect_domain_name(self, kafka_private_connect_domain_name):
+        r"""Sets the kafka_private_connect_domain_name of this ShowInstanceResp.
+
+        Kafka实例内网连接域名。
+
+        :param kafka_private_connect_domain_name: The kafka_private_connect_domain_name of this ShowInstanceResp.
+        :type kafka_private_connect_domain_name: str
+        """
+        self._kafka_private_connect_domain_name = kafka_private_connect_domain_name
 
     @property
     def ces_version(self):
@@ -2359,6 +2395,24 @@ class ShowInstanceResp:
         :type node_num: int
         """
         self._node_num = node_num
+
+    @property
+    def port_protocols(self):
+        r"""Gets the port_protocols of this ShowInstanceResp.
+
+        :return: The port_protocols of this ShowInstanceResp.
+        :rtype: :class:`huaweicloudsdkkafka.v2.PortProtocolsEntity`
+        """
+        return self._port_protocols
+
+    @port_protocols.setter
+    def port_protocols(self, port_protocols):
+        r"""Sets the port_protocols of this ShowInstanceResp.
+
+        :param port_protocols: The port_protocols of this ShowInstanceResp.
+        :type port_protocols: :class:`huaweicloudsdkkafka.v2.PortProtocolsEntity`
+        """
+        self._port_protocols = port_protocols
 
     @property
     def enable_acl(self):

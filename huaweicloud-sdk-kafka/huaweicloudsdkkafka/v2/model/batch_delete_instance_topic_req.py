@@ -29,7 +29,7 @@ class BatchDeleteInstanceTopicReq:
 
         The model defined in huaweicloud sdk
 
-        :param topics: 待删除的topic列表。  批量删除实例topic时，为必选参数。
+        :param topics: **参数解释**： 待删除的Topic列表。 **约束限制**： 不涉及。
         :type topics: list[str]
         """
         
@@ -45,7 +45,7 @@ class BatchDeleteInstanceTopicReq:
     def topics(self):
         r"""Gets the topics of this BatchDeleteInstanceTopicReq.
 
-        待删除的topic列表。  批量删除实例topic时，为必选参数。
+        **参数解释**： 待删除的Topic列表。 **约束限制**： 不涉及。
 
         :return: The topics of this BatchDeleteInstanceTopicReq.
         :rtype: list[str]
@@ -56,7 +56,7 @@ class BatchDeleteInstanceTopicReq:
     def topics(self, topics):
         r"""Sets the topics of this BatchDeleteInstanceTopicReq.
 
-        待删除的topic列表。  批量删除实例topic时，为必选参数。
+        **参数解释**： 待删除的Topic列表。 **约束限制**： 不涉及。
 
         :param topics: The topics of this BatchDeleteInstanceTopicReq.
         :type topics: list[str]

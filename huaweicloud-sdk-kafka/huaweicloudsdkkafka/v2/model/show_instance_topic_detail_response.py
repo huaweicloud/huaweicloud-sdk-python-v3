@@ -34,11 +34,11 @@ class ShowInstanceTopicDetailResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param topic: topic名称。
+        :param topic: **参数解释**： topic名称。 **取值范围**： 不涉及
         :type topic: str
-        :param partitions: 分区列表。
+        :param partitions: **参数解释**： 分区列表。
         :type partitions: list[:class:`huaweicloudsdkkafka.v2.ShowInstanceTopicDetailRespPartitions`]
-        :param group_subscribed: 订阅该topic的消费组名称列表。
+        :param group_subscribed: **参数解释**： 订阅该topic的消费组名称列表。
         :type group_subscribed: list[str]
         """
         
@@ -60,7 +60,7 @@ class ShowInstanceTopicDetailResponse(SdkResponse):
     def topic(self):
         r"""Gets the topic of this ShowInstanceTopicDetailResponse.
 
-        topic名称。
+        **参数解释**： topic名称。 **取值范围**： 不涉及
 
         :return: The topic of this ShowInstanceTopicDetailResponse.
         :rtype: str
@@ -71,7 +71,7 @@ class ShowInstanceTopicDetailResponse(SdkResponse):
     def topic(self, topic):
         r"""Sets the topic of this ShowInstanceTopicDetailResponse.
 
-        topic名称。
+        **参数解释**： topic名称。 **取值范围**： 不涉及
 
         :param topic: The topic of this ShowInstanceTopicDetailResponse.
         :type topic: str
@@ -82,7 +82,7 @@ class ShowInstanceTopicDetailResponse(SdkResponse):
     def partitions(self):
         r"""Gets the partitions of this ShowInstanceTopicDetailResponse.
 
-        分区列表。
+        **参数解释**： 分区列表。
 
         :return: The partitions of this ShowInstanceTopicDetailResponse.
         :rtype: list[:class:`huaweicloudsdkkafka.v2.ShowInstanceTopicDetailRespPartitions`]
@@ -93,7 +93,7 @@ class ShowInstanceTopicDetailResponse(SdkResponse):
     def partitions(self, partitions):
         r"""Sets the partitions of this ShowInstanceTopicDetailResponse.
 
-        分区列表。
+        **参数解释**： 分区列表。
 
         :param partitions: The partitions of this ShowInstanceTopicDetailResponse.
         :type partitions: list[:class:`huaweicloudsdkkafka.v2.ShowInstanceTopicDetailRespPartitions`]
@@ -104,7 +104,7 @@ class ShowInstanceTopicDetailResponse(SdkResponse):
     def group_subscribed(self):
         r"""Gets the group_subscribed of this ShowInstanceTopicDetailResponse.
 
-        订阅该topic的消费组名称列表。
+        **参数解释**： 订阅该topic的消费组名称列表。
 
         :return: The group_subscribed of this ShowInstanceTopicDetailResponse.
         :rtype: list[str]
@@ -115,7 +115,7 @@ class ShowInstanceTopicDetailResponse(SdkResponse):
     def group_subscribed(self, group_subscribed):
         r"""Sets the group_subscribed of this ShowInstanceTopicDetailResponse.
 
-        订阅该topic的消费组名称列表。
+        **参数解释**： 订阅该topic的消费组名称列表。
 
         :param group_subscribed: The group_subscribed of this ShowInstanceTopicDetailResponse.
         :type group_subscribed: list[str]

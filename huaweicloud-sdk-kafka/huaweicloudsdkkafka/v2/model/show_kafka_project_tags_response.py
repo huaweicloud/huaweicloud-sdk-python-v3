@@ -30,7 +30,7 @@ class ShowKafkaProjectTagsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param tags: 标签列表
+        :param tags: **参数解释**： 标签列表。
         :type tags: list[:class:`huaweicloudsdkkafka.v2.TagMultyValueEntity`]
         """
         
@@ -46,7 +46,7 @@ class ShowKafkaProjectTagsResponse(SdkResponse):
     def tags(self):
         r"""Gets the tags of this ShowKafkaProjectTagsResponse.
 
-        标签列表
+        **参数解释**： 标签列表。
 
         :return: The tags of this ShowKafkaProjectTagsResponse.
         :rtype: list[:class:`huaweicloudsdkkafka.v2.TagMultyValueEntity`]
@@ -57,7 +57,7 @@ class ShowKafkaProjectTagsResponse(SdkResponse):
     def tags(self, tags):
         r"""Sets the tags of this ShowKafkaProjectTagsResponse.
 
-        标签列表
+        **参数解释**： 标签列表。
 
         :param tags: The tags of this ShowKafkaProjectTagsResponse.
         :type tags: list[:class:`huaweicloudsdkkafka.v2.TagMultyValueEntity`]
