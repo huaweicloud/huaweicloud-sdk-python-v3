@@ -18,6 +18,7 @@ jobs:
         pip install setuptools wheel twine
     - name: Build packages
       run: |
+        rm -rf huaweicloud-sdk-lms
         for each in $(find "${GITHUB_WORKSPACE}" -maxdepth 1 -mindepth 1 -type d -name "*sdk*")
         do
           cd "${each}" || exit 1
