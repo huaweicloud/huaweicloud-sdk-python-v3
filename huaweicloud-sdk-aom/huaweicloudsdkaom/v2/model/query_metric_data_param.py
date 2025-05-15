@@ -17,7 +17,7 @@ class QueryMetricDataParam:
     sensitive_list = []
 
     openapi_types = {
-        'metrics': 'list[MetricQueryMeritcParam]',
+        'metrics': 'list[MetricQueryMetricParam]',
         'period': 'int',
         'statistics': 'list[str]',
         'timerange': 'str'
@@ -36,7 +36,7 @@ class QueryMetricDataParam:
         The model defined in huaweicloud sdk
 
         :param metrics: 指标对象列表。 取值范围 JSON数组大小不超过20
-        :type metrics: list[:class:`huaweicloudsdkaom.v2.MetricQueryMeritcParam`]
+        :type metrics: list[:class:`huaweicloudsdkaom.v2.MetricQueryMetricParam`]
         :param period: 监控数据粒度。取值范围（枚举）：60（表示粒度为1分钟），300（表示粒度为5分钟），900（表示粒度为15分钟），3600（表示粒度为1小时）。
         :type period: int
         :param statistics: 统计方式。 取值范围 maximum，minimum，sum，average，sampleCount
@@ -65,7 +65,7 @@ class QueryMetricDataParam:
         指标对象列表。 取值范围 JSON数组大小不超过20
 
         :return: The metrics of this QueryMetricDataParam.
-        :rtype: list[:class:`huaweicloudsdkaom.v2.MetricQueryMeritcParam`]
+        :rtype: list[:class:`huaweicloudsdkaom.v2.MetricQueryMetricParam`]
         """
         return self._metrics
 
@@ -76,7 +76,7 @@ class QueryMetricDataParam:
         指标对象列表。 取值范围 JSON数组大小不超过20
 
         :param metrics: The metrics of this QueryMetricDataParam.
-        :type metrics: list[:class:`huaweicloudsdkaom.v2.MetricQueryMeritcParam`]
+        :type metrics: list[:class:`huaweicloudsdkaom.v2.MetricQueryMetricParam`]
         """
         self._metrics = metrics
 

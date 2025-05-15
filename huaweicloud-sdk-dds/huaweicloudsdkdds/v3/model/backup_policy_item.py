@@ -19,16 +19,18 @@ class BackupPolicyItem:
     openapi_types = {
         'keep_days': 'int',
         'start_time': 'str',
-        'period': 'str'
+        'period': 'str',
+        'enable_incremental_backup': 'bool'
     }
 
     attribute_map = {
         'keep_days': 'keep_days',
         'start_time': 'start_time',
-        'period': 'period'
+        'period': 'period',
+        'enable_incremental_backup': 'enable_incremental_backup'
     }
 
-    def __init__(self, keep_days=None, start_time=None, period=None):
+    def __init__(self, keep_days=None, start_time=None, period=None, enable_incremental_backup=None):
         r"""BackupPolicyItem
 
         The model defined in huaweicloud sdk
@@ -39,6 +41,8 @@ class BackupPolicyItem:
         :type start_time: str
         :param period: 备份周期配置。自动备份将在每星期指定的天进行。
         :type period: str
+        :param enable_incremental_backup: 是否开启增量备份。true：表示增量备份策略为开启状态；false：表示增量备份策略为关闭状态。
+        :type enable_incremental_backup: bool
         """
         
         
@@ -46,6 +50,7 @@ class BackupPolicyItem:
         self._keep_days = None
         self._start_time = None
         self._period = None
+        self._enable_incremental_backup = None
         self.discriminator = None
 
         self.keep_days = keep_days
@@ -53,6 +58,8 @@ class BackupPolicyItem:
             self.start_time = start_time
         if period is not None:
             self.period = period
+        if enable_incremental_backup is not None:
+            self.enable_incremental_backup = enable_incremental_backup
 
     @property
     def keep_days(self):
@@ -119,6 +126,28 @@ class BackupPolicyItem:
         :type period: str
         """
         self._period = period
+
+    @property
+    def enable_incremental_backup(self):
+        r"""Gets the enable_incremental_backup of this BackupPolicyItem.
+
+        是否开启增量备份。true：表示增量备份策略为开启状态；false：表示增量备份策略为关闭状态。
+
+        :return: The enable_incremental_backup of this BackupPolicyItem.
+        :rtype: bool
+        """
+        return self._enable_incremental_backup
+
+    @enable_incremental_backup.setter
+    def enable_incremental_backup(self, enable_incremental_backup):
+        r"""Sets the enable_incremental_backup of this BackupPolicyItem.
+
+        是否开启增量备份。true：表示增量备份策略为开启状态；false：表示增量备份策略为关闭状态。
+
+        :param enable_incremental_backup: The enable_incremental_backup of this BackupPolicyItem.
+        :type enable_incremental_backup: bool
+        """
+        self._enable_incremental_backup = enable_incremental_backup
 
     def to_dict(self):
         """Returns the model properties as a dict"""

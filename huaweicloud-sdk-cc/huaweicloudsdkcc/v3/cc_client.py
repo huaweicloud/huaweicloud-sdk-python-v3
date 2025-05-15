@@ -2892,6 +2892,10 @@ class CcClient(Client):
         if 'capability' in local_var_params:
             query_params.append(('capability', local_var_params['capability']))
             collection_formats['capability'] = 'csv'
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
 
         header_params = {}
 
@@ -3742,6 +3746,71 @@ class CcClient(Client):
         body = None
         if 'body' in local_var_params:
             body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_cloud_connection_capabilities(self, request):
+        r"""查询云连接的能力列表
+
+        查询云连接的能力列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListCloudConnectionCapabilities
+        :type request: :class:`huaweicloudsdkcc.v3.ListCloudConnectionCapabilitiesRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.ListCloudConnectionCapabilitiesResponse`
+        """
+        http_info = self._list_cloud_connection_capabilities_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_cloud_connection_capabilities_invoker(self, request):
+        http_info = self._list_cloud_connection_capabilities_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_cloud_connection_capabilities_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{domain_id}/ccaas/capabilities",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCloudConnectionCapabilitiesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'resource_type' in local_var_params:
+            query_params.append(('resource_type', local_var_params['resource_type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -5851,7 +5920,7 @@ class CcClient(Client):
     def list_network_instances(self, request):
         r"""查询网络实例列表
 
-        查询云连接列表。
+        查询网络实例列表。
         分页查询使用的参数为marker、limit。marker和limit一起使用时才会生效，单独使用无效。
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -6740,6 +6809,10 @@ class CcClient(Client):
         if 'specification' in local_var_params:
             query_params.append(('specification', local_var_params['specification']))
             collection_formats['specification'] = 'csv'
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
 
         header_params = {}
 
@@ -6837,10 +6910,142 @@ class CcClient(Client):
 
         return http_info
 
+    def list_area_bandwidth_package_specifications(self, request):
+        r"""查询大区互通类型的带宽包资源规格列表
+
+        查询大区互通类型的带宽包资源规格列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListAreaBandwidthPackageSpecifications
+        :type request: :class:`huaweicloudsdkcc.v3.ListAreaBandwidthPackageSpecificationsRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.ListAreaBandwidthPackageSpecificationsResponse`
+        """
+        http_info = self._list_area_bandwidth_package_specifications_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_area_bandwidth_package_specifications_invoker(self, request):
+        http_info = self._list_area_bandwidth_package_specifications_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_area_bandwidth_package_specifications_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{domain_id}/ccaas/bandwidth-packages/area-specifications",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAreaBandwidthPackageSpecificationsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'local_area_id' in local_var_params:
+            query_params.append(('local_area_id', local_var_params['local_area_id']))
+            collection_formats['local_area_id'] = 'csv'
+        if 'remote_area_id' in local_var_params:
+            query_params.append(('remote_area_id', local_var_params['remote_area_id']))
+            collection_formats['remote_area_id'] = 'csv'
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_areas(self, request):
+        r"""查询当前支持的Area列表
+
+        查询当前支持的大区列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListAreas
+        :type request: :class:`huaweicloudsdkcc.v3.ListAreasRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.ListAreasResponse`
+        """
+        http_info = self._list_areas_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_areas_invoker(self, request):
+        http_info = self._list_areas_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_areas_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{domain_id}/ccaas/areas",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAreasResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_bandwidth_package_levels(self, request):
         r"""查询带宽包等级列表
 
-        查询带宽包等级列表
+        查询带宽包等级列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -6873,6 +7078,10 @@ class CcClient(Client):
         path_params = {}
 
         query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
         if 'level' in local_var_params:
             query_params.append(('level', local_var_params['level']))
         if 'name' in local_var_params:
@@ -6907,7 +7116,7 @@ class CcClient(Client):
     def list_bandwidth_package_lines(self, request):
         r"""查询带宽包线路列表
 
-        查询带宽包线路列表
+        查询带宽包线路列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -6940,6 +7149,10 @@ class CcClient(Client):
         path_params = {}
 
         query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
         if 'level' in local_var_params:
             query_params.append(('level', local_var_params['level']))
         if 'name' in local_var_params:
@@ -6974,7 +7187,7 @@ class CcClient(Client):
     def list_bandwidth_package_sites(self, request):
         r"""查询带宽包站点列表
 
-        查询带宽包站点列表
+        查询带宽包站点列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -7007,12 +7220,146 @@ class CcClient(Client):
         path_params = {}
 
         query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
         if 'site_code' in local_var_params:
             query_params.append(('site_code', local_var_params['site_code']))
         if 'region_id' in local_var_params:
             query_params.append(('region_id', local_var_params['region_id']))
         if 'name' in local_var_params:
             query_params.append(('name', local_var_params['name']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_region_bandwidth_package_specifications(self, request):
+        r"""查询区域互通类型的带宽包规格列表
+
+        查询区域互通类型的带宽包规格列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListRegionBandwidthPackageSpecifications
+        :type request: :class:`huaweicloudsdkcc.v3.ListRegionBandwidthPackageSpecificationsRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.ListRegionBandwidthPackageSpecificationsResponse`
+        """
+        http_info = self._list_region_bandwidth_package_specifications_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_region_bandwidth_package_specifications_invoker(self, request):
+        http_info = self._list_region_bandwidth_package_specifications_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_region_bandwidth_package_specifications_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{domain_id}/ccaas/bandwidth-packages/region-specifications",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRegionBandwidthPackageSpecificationsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'local_region_id' in local_var_params:
+            query_params.append(('local_region_id', local_var_params['local_region_id']))
+        if 'remote_region_id' in local_var_params:
+            query_params.append(('remote_region_id', local_var_params['remote_region_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_regions(self, request):
+        r"""查询当前支持的Region列表
+
+        查询当前支持的Region列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListRegions
+        :type request: :class:`huaweicloudsdkcc.v3.ListRegionsRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.ListRegionsResponse`
+        """
+        http_info = self._list_regions_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_regions_invoker(self, request):
+        http_info = self._list_regions_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_regions_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{domain_id}/ccaas/regions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRegionsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
 
         header_params = {}
 

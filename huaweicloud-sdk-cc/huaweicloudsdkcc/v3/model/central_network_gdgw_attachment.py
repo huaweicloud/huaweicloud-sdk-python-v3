@@ -75,7 +75,7 @@ class CentralNetworkGdgwAttachment:
 
         :param id: 实例ID。
         :type id: str
-        :param name: 实例名字。
+        :param name: 实例名称。
         :type name: str
         :param description: 实例描述。不支持 &lt;&gt;。
         :type description: str
@@ -97,7 +97,7 @@ class CentralNetworkGdgwAttachment:
         :type bandwidth_type: :class:`huaweicloudsdkcc.v3.BandwidthTypeEnum`
         :param bandwidth_size: 带宽值，单位Mbps。
         :type bandwidth_size: int
-        :param is_frozen: 是否冻结
+        :param is_frozen: 是否冻结。
         :type is_frozen: bool
         :param enterprise_router_id: 企业路由器的ID。
         :type enterprise_router_id: str
@@ -117,7 +117,7 @@ class CentralNetworkGdgwAttachment:
         :type global_dc_gateway_region_id: str
         :param enterprise_router_site_code: 中心网络企业路由器的站点编码。
         :type enterprise_router_site_code: str
-        :param global_dc_gateway_site_code: 站点编码定义
+        :param global_dc_gateway_site_code: 站点编码。
         :type global_dc_gateway_site_code: str
         """
         
@@ -203,7 +203,7 @@ class CentralNetworkGdgwAttachment:
     def name(self):
         r"""Gets the name of this CentralNetworkGdgwAttachment.
 
-        实例名字。
+        实例名称。
 
         :return: The name of this CentralNetworkGdgwAttachment.
         :rtype: str
@@ -214,7 +214,7 @@ class CentralNetworkGdgwAttachment:
     def name(self, name):
         r"""Sets the name of this CentralNetworkGdgwAttachment.
 
-        实例名字。
+        实例名称。
 
         :param name: The name of this CentralNetworkGdgwAttachment.
         :type name: str
@@ -437,7 +437,7 @@ class CentralNetworkGdgwAttachment:
     def is_frozen(self):
         r"""Gets the is_frozen of this CentralNetworkGdgwAttachment.
 
-        是否冻结
+        是否冻结。
 
         :return: The is_frozen of this CentralNetworkGdgwAttachment.
         :rtype: bool
@@ -448,7 +448,7 @@ class CentralNetworkGdgwAttachment:
     def is_frozen(self, is_frozen):
         r"""Sets the is_frozen of this CentralNetworkGdgwAttachment.
 
-        是否冻结
+        是否冻结。
 
         :param is_frozen: The is_frozen of this CentralNetworkGdgwAttachment.
         :type is_frozen: bool
@@ -657,7 +657,7 @@ class CentralNetworkGdgwAttachment:
     def global_dc_gateway_site_code(self):
         r"""Gets the global_dc_gateway_site_code of this CentralNetworkGdgwAttachment.
 
-        站点编码定义
+        站点编码。
 
         :return: The global_dc_gateway_site_code of this CentralNetworkGdgwAttachment.
         :rtype: str
@@ -668,7 +668,7 @@ class CentralNetworkGdgwAttachment:
     def global_dc_gateway_site_code(self, global_dc_gateway_site_code):
         r"""Sets the global_dc_gateway_site_code of this CentralNetworkGdgwAttachment.
 
-        站点编码定义
+        站点编码。
 
         :param global_dc_gateway_site_code: The global_dc_gateway_site_code of this CentralNetworkGdgwAttachment.
         :type global_dc_gateway_site_code: str

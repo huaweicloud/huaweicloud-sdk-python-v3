@@ -169,6 +169,73 @@ class OcrAsyncClient(Client):
 
         return http_info
 
+    def recognize_auto_id_doc_classification_async(self, request):
+        r"""智能证件分类
+
+        支持9类证件的分类和告警检测，以JSON格式返回结果。支持的证件类型有秘鲁身份证、柬文身份证、香港身份证、澳门身份证、缅文身份证、缅文驾驶证、泰文身份证、护照和中华人民共和国居民身份证。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for RecognizeAutoIdDocClassification
+        :type request: :class:`huaweicloudsdkocr.v1.RecognizeAutoIdDocClassificationRequest`
+        :rtype: :class:`huaweicloudsdkocr.v1.RecognizeAutoIdDocClassificationResponse`
+        """
+        http_info = self._recognize_auto_id_doc_classification_http_info(request)
+        return self._call_api(**http_info)
+
+    def recognize_auto_id_doc_classification_async_invoker(self, request):
+        http_info = self._recognize_auto_id_doc_classification_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _recognize_auto_id_doc_classification_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/ocr/auto-id-doc-classification",
+            "request_type": request.__class__.__name__,
+            "response_type": "RecognizeAutoIdDocClassificationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def recognize_bank_receipt_async(self, request):
         r"""银行回单识别
 

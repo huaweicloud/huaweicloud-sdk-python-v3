@@ -2,11 +2,10 @@
 
 import six
 
-from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class ListTopIoTrafficsResponse(SdkResponse):
+class ListRegionsRequest:
 
     """
     Attributes:
@@ -18,51 +17,20 @@ class ListTopIoTrafficsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'top_io_infos': 'list[TopIoInfo]'
     }
 
     attribute_map = {
-        'top_io_infos': 'top_io_infos'
     }
 
-    def __init__(self, top_io_infos=None):
-        r"""ListTopIoTrafficsResponse
+    def __init__(self):
+        r"""ListRegionsRequest
 
         The model defined in huaweicloud sdk
 
-        :param top_io_infos: Top IO列表
-        :type top_io_infos: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.TopIoInfo`]
         """
         
-        super(ListTopIoTrafficsResponse, self).__init__()
-
-        self._top_io_infos = None
+        
         self.discriminator = None
-
-        if top_io_infos is not None:
-            self.top_io_infos = top_io_infos
-
-    @property
-    def top_io_infos(self):
-        r"""Gets the top_io_infos of this ListTopIoTrafficsResponse.
-
-        Top IO列表
-
-        :return: The top_io_infos of this ListTopIoTrafficsResponse.
-        :rtype: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.TopIoInfo`]
-        """
-        return self._top_io_infos
-
-    @top_io_infos.setter
-    def top_io_infos(self, top_io_infos):
-        r"""Sets the top_io_infos of this ListTopIoTrafficsResponse.
-
-        Top IO列表
-
-        :param top_io_infos: The top_io_infos of this ListTopIoTrafficsResponse.
-        :type top_io_infos: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.TopIoInfo`]
-        """
-        self._top_io_infos = top_io_infos
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -106,7 +74,7 @@ class ListTopIoTrafficsResponse(SdkResponse):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ListTopIoTrafficsResponse):
+        if not isinstance(other, ListRegionsRequest):
             return False
 
         return self.__dict__ == other.__dict__

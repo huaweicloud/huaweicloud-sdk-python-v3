@@ -19,21 +19,25 @@ class ListSiteNetworkCapabilitiesResponse(SdkResponse):
 
     openapi_types = {
         'request_id': 'str',
+        'page_info': 'PageInfo',
         'capabilities': 'list[SiteNetworkCapabilityEntry]'
     }
 
     attribute_map = {
         'request_id': 'request_id',
+        'page_info': 'page_info',
         'capabilities': 'capabilities'
     }
 
-    def __init__(self, request_id=None, capabilities=None):
+    def __init__(self, request_id=None, page_info=None, capabilities=None):
         r"""ListSiteNetworkCapabilitiesResponse
 
         The model defined in huaweicloud sdk
 
         :param request_id: 请求ID。
         :type request_id: str
+        :param page_info: 
+        :type page_info: :class:`huaweicloudsdkcc.v3.PageInfo`
         :param capabilities: 分支网络租户能力列表。
         :type capabilities: list[:class:`huaweicloudsdkcc.v3.SiteNetworkCapabilityEntry`]
         """
@@ -41,10 +45,13 @@ class ListSiteNetworkCapabilitiesResponse(SdkResponse):
         super(ListSiteNetworkCapabilitiesResponse, self).__init__()
 
         self._request_id = None
+        self._page_info = None
         self._capabilities = None
         self.discriminator = None
 
         self.request_id = request_id
+        if page_info is not None:
+            self.page_info = page_info
         self.capabilities = capabilities
 
     @property
@@ -68,6 +75,24 @@ class ListSiteNetworkCapabilitiesResponse(SdkResponse):
         :type request_id: str
         """
         self._request_id = request_id
+
+    @property
+    def page_info(self):
+        r"""Gets the page_info of this ListSiteNetworkCapabilitiesResponse.
+
+        :return: The page_info of this ListSiteNetworkCapabilitiesResponse.
+        :rtype: :class:`huaweicloudsdkcc.v3.PageInfo`
+        """
+        return self._page_info
+
+    @page_info.setter
+    def page_info(self, page_info):
+        r"""Sets the page_info of this ListSiteNetworkCapabilitiesResponse.
+
+        :param page_info: The page_info of this ListSiteNetworkCapabilitiesResponse.
+        :type page_info: :class:`huaweicloudsdkcc.v3.PageInfo`
+        """
+        self._page_info = page_info
 
     @property
     def capabilities(self):

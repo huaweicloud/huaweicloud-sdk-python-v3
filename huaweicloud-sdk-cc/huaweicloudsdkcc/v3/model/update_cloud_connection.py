@@ -31,7 +31,7 @@ class UpdateCloudConnection:
 
         The model defined in huaweicloud sdk
 
-        :param name: 实例名字。
+        :param name: 实例名称。
         :type name: str
         :param description: 实例描述。不支持 &lt;&gt;。
         :type description: str
@@ -52,7 +52,7 @@ class UpdateCloudConnection:
     def name(self):
         r"""Gets the name of this UpdateCloudConnection.
 
-        实例名字。
+        实例名称。
 
         :return: The name of this UpdateCloudConnection.
         :rtype: str
@@ -63,7 +63,7 @@ class UpdateCloudConnection:
     def name(self, name):
         r"""Sets the name of this UpdateCloudConnection.
 
-        实例名字。
+        实例名称。
 
         :param name: The name of this UpdateCloudConnection.
         :type name: str

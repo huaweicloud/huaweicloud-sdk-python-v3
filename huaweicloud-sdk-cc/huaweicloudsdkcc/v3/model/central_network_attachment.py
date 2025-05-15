@@ -79,7 +79,7 @@ class CentralNetworkAttachment:
 
         :param id: 实例ID。
         :type id: str
-        :param name: 实例名字。
+        :param name: 实例名称。
         :type name: str
         :param description: 实例描述。不支持 &lt;&gt;。
         :type description: str
@@ -101,7 +101,7 @@ class CentralNetworkAttachment:
         :type bandwidth_type: :class:`huaweicloudsdkcc.v3.BandwidthTypeEnum`
         :param bandwidth_size: 带宽值，单位Mbps。
         :type bandwidth_size: int
-        :param is_frozen: 是否冻结
+        :param is_frozen: 是否冻结。
         :type is_frozen: bool
         :param enterprise_router_id: 企业路由器的ID。
         :type enterprise_router_id: str
@@ -216,7 +216,7 @@ class CentralNetworkAttachment:
     def name(self):
         r"""Gets the name of this CentralNetworkAttachment.
 
-        实例名字。
+        实例名称。
 
         :return: The name of this CentralNetworkAttachment.
         :rtype: str
@@ -227,7 +227,7 @@ class CentralNetworkAttachment:
     def name(self, name):
         r"""Sets the name of this CentralNetworkAttachment.
 
-        实例名字。
+        实例名称。
 
         :param name: The name of this CentralNetworkAttachment.
         :type name: str
@@ -450,7 +450,7 @@ class CentralNetworkAttachment:
     def is_frozen(self):
         r"""Gets the is_frozen of this CentralNetworkAttachment.
 
-        是否冻结
+        是否冻结。
 
         :return: The is_frozen of this CentralNetworkAttachment.
         :rtype: bool
@@ -461,7 +461,7 @@ class CentralNetworkAttachment:
     def is_frozen(self, is_frozen):
         r"""Sets the is_frozen of this CentralNetworkAttachment.
 
-        是否冻结
+        是否冻结。
 
         :param is_frozen: The is_frozen of this CentralNetworkAttachment.
         :type is_frozen: bool

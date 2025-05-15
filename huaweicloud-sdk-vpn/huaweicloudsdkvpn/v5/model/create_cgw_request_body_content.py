@@ -45,7 +45,7 @@ class CreateCgwRequestBodyContent:
         :type id_type: str
         :param id_value: 对端网关标识值
         :type id_value: str
-        :param bgp_asn: 网关的bgp asn号，默认值为65000
+        :param bgp_asn: 网关的bgp asn号
         :type bgp_asn: int
         :param ca_certificate: 
         :type ca_certificate: :class:`huaweicloudsdkvpn.v5.CaCertificateRequest`
@@ -145,7 +145,7 @@ class CreateCgwRequestBodyContent:
     def bgp_asn(self):
         r"""Gets the bgp_asn of this CreateCgwRequestBodyContent.
 
-        网关的bgp asn号，默认值为65000
+        网关的bgp asn号
 
         :return: The bgp_asn of this CreateCgwRequestBodyContent.
         :rtype: int
@@ -156,7 +156,7 @@ class CreateCgwRequestBodyContent:
     def bgp_asn(self, bgp_asn):
         r"""Sets the bgp_asn of this CreateCgwRequestBodyContent.
 
-        网关的bgp asn号，默认值为65000
+        网关的bgp asn号
 
         :param bgp_asn: The bgp_asn of this CreateCgwRequestBodyContent.
         :type bgp_asn: int

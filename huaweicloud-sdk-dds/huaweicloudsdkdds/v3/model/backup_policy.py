@@ -19,16 +19,18 @@ class BackupPolicy:
     openapi_types = {
         'keep_days': 'str',
         'start_time': 'str',
-        'period': 'str'
+        'period': 'str',
+        'enable_incremental_backup': 'bool'
     }
 
     attribute_map = {
         'keep_days': 'keep_days',
         'start_time': 'start_time',
-        'period': 'period'
+        'period': 'period',
+        'enable_incremental_backup': 'enable_incremental_backup'
     }
 
-    def __init__(self, keep_days=None, start_time=None, period=None):
+    def __init__(self, keep_days=None, start_time=None, period=None, enable_incremental_backup=None):
         r"""BackupPolicy
 
         The model defined in huaweicloud sdk
@@ -39,6 +41,8 @@ class BackupPolicy:
         :type start_time: str
         :param period: 备份周期配置。自动备份将在每星期指定的天进行。取值范围：格式为半角逗号隔开的数字，数字代表星期。保留天数取值不同，备份周期约束如下： - 0天，不传该参数。 - 1～6天，备份周期全选，取值为：1,2,3,4,5,6,7。 - 7～732天，备份周期至少选择一周中的一天。示例：1,2,3,4。
         :type period: str
+        :param enable_incremental_backup: 增量备份开关。不传这个参数则不对增备状态进行改动。开启增量备份后，系统会自动进行增量备份。增量备份开关的取值和约束如下： - false，代表关闭增量备份，关闭会将之前做的增量备份清理。 - true，代表开启增量备份，开启增量备份会触发一次全量备份。
+        :type enable_incremental_backup: bool
         """
         
         
@@ -46,13 +50,17 @@ class BackupPolicy:
         self._keep_days = None
         self._start_time = None
         self._period = None
+        self._enable_incremental_backup = None
         self.discriminator = None
 
-        self.keep_days = keep_days
+        if keep_days is not None:
+            self.keep_days = keep_days
         if start_time is not None:
             self.start_time = start_time
         if period is not None:
             self.period = period
+        if enable_incremental_backup is not None:
+            self.enable_incremental_backup = enable_incremental_backup
 
     @property
     def keep_days(self):
@@ -119,6 +127,28 @@ class BackupPolicy:
         :type period: str
         """
         self._period = period
+
+    @property
+    def enable_incremental_backup(self):
+        r"""Gets the enable_incremental_backup of this BackupPolicy.
+
+        增量备份开关。不传这个参数则不对增备状态进行改动。开启增量备份后，系统会自动进行增量备份。增量备份开关的取值和约束如下： - false，代表关闭增量备份，关闭会将之前做的增量备份清理。 - true，代表开启增量备份，开启增量备份会触发一次全量备份。
+
+        :return: The enable_incremental_backup of this BackupPolicy.
+        :rtype: bool
+        """
+        return self._enable_incremental_backup
+
+    @enable_incremental_backup.setter
+    def enable_incremental_backup(self, enable_incremental_backup):
+        r"""Sets the enable_incremental_backup of this BackupPolicy.
+
+        增量备份开关。不传这个参数则不对增备状态进行改动。开启增量备份后，系统会自动进行增量备份。增量备份开关的取值和约束如下： - false，代表关闭增量备份，关闭会将之前做的增量备份清理。 - true，代表开启增量备份，开启增量备份会触发一次全量备份。
+
+        :param enable_incremental_backup: The enable_incremental_backup of this BackupPolicy.
+        :type enable_incremental_backup: bool
+        """
+        self._enable_incremental_backup = enable_incremental_backup
 
     def to_dict(self):
         """Returns the model properties as a dict"""

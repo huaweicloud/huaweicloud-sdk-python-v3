@@ -41,9 +41,9 @@ class ListGlobalConnectionBandwidthLineLevelsRequest:
 
         :param limit: 每页返回的个数。 取值范围：1~1000。
         :type limit: int
-        :param marker: 翻页信息，从上次API调用返回的翻页数据中获取，可填写前一页marker或者后一页marker，填入前一页previous_marker就向前翻页，后一页next_marker就向翻页。 翻页过程中，查询条件不能修改，包括过滤条件，排序条件，limit。
+        :param marker: 翻页信息，从上次API调用返回的翻页数据中获取，可填写前一页marker或者后一页marker，填入前一页previous_marker就向前翻页，后一页next_marker就向后翻页。 翻页过程中，查询条件不能修改，包括过滤条件、排序条件、limit。
         :type marker: str
-        :param id: 根据id查询，可查询多个id。
+        :param id: 根据ID查询，可查询多个ID。
         :type id: list[str]
         :param local_area: 线路规格本端接入点编码信息。
         :type local_area: str
@@ -102,7 +102,7 @@ class ListGlobalConnectionBandwidthLineLevelsRequest:
     def marker(self):
         r"""Gets the marker of this ListGlobalConnectionBandwidthLineLevelsRequest.
 
-        翻页信息，从上次API调用返回的翻页数据中获取，可填写前一页marker或者后一页marker，填入前一页previous_marker就向前翻页，后一页next_marker就向翻页。 翻页过程中，查询条件不能修改，包括过滤条件，排序条件，limit。
+        翻页信息，从上次API调用返回的翻页数据中获取，可填写前一页marker或者后一页marker，填入前一页previous_marker就向前翻页，后一页next_marker就向后翻页。 翻页过程中，查询条件不能修改，包括过滤条件、排序条件、limit。
 
         :return: The marker of this ListGlobalConnectionBandwidthLineLevelsRequest.
         :rtype: str
@@ -113,7 +113,7 @@ class ListGlobalConnectionBandwidthLineLevelsRequest:
     def marker(self, marker):
         r"""Sets the marker of this ListGlobalConnectionBandwidthLineLevelsRequest.
 
-        翻页信息，从上次API调用返回的翻页数据中获取，可填写前一页marker或者后一页marker，填入前一页previous_marker就向前翻页，后一页next_marker就向翻页。 翻页过程中，查询条件不能修改，包括过滤条件，排序条件，limit。
+        翻页信息，从上次API调用返回的翻页数据中获取，可填写前一页marker或者后一页marker，填入前一页previous_marker就向前翻页，后一页next_marker就向后翻页。 翻页过程中，查询条件不能修改，包括过滤条件、排序条件、limit。
 
         :param marker: The marker of this ListGlobalConnectionBandwidthLineLevelsRequest.
         :type marker: str
@@ -124,7 +124,7 @@ class ListGlobalConnectionBandwidthLineLevelsRequest:
     def id(self):
         r"""Gets the id of this ListGlobalConnectionBandwidthLineLevelsRequest.
 
-        根据id查询，可查询多个id。
+        根据ID查询，可查询多个ID。
 
         :return: The id of this ListGlobalConnectionBandwidthLineLevelsRequest.
         :rtype: list[str]
@@ -135,7 +135,7 @@ class ListGlobalConnectionBandwidthLineLevelsRequest:
     def id(self, id):
         r"""Sets the id of this ListGlobalConnectionBandwidthLineLevelsRequest.
 
-        根据id查询，可查询多个id。
+        根据ID查询，可查询多个ID。
 
         :param id: The id of this ListGlobalConnectionBandwidthLineLevelsRequest.
         :type id: list[str]

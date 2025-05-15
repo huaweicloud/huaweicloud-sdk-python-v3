@@ -37,7 +37,7 @@ class CentralNetworkPlane:
 
         :param id: 实例ID。
         :type id: str
-        :param name: 实例名字。
+        :param name: 实例名称。
         :type name: str
         :param associate_er_tables: 关联的中心网络ER实例列表。
         :type associate_er_tables: list[:class:`huaweicloudsdkcc.v3.AssociateErTableDocument`]
@@ -86,7 +86,7 @@ class CentralNetworkPlane:
     def name(self):
         r"""Gets the name of this CentralNetworkPlane.
 
-        实例名字。
+        实例名称。
 
         :return: The name of this CentralNetworkPlane.
         :rtype: str
@@ -97,7 +97,7 @@ class CentralNetworkPlane:
     def name(self, name):
         r"""Sets the name of this CentralNetworkPlane.
 
-        实例名字。
+        实例名称。
 
         :param name: The name of this CentralNetworkPlane.
         :type name: str

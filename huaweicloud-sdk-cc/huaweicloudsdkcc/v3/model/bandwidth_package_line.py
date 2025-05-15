@@ -43,13 +43,13 @@ class BandwidthPackageLine:
         :type local_region_id: str
         :param remote_region_id: RegionID。
         :type remote_region_id: str
-        :param local_site_code: 站点编码
+        :param local_site_code: 站点编码。
         :type local_site_code: str
-        :param remote_site_code: 站点编码
+        :param remote_site_code: 站点编码。
         :type remote_site_code: str
-        :param support_levels: 支持的等级列表
+        :param support_levels: 支持的等级列表。
         :type support_levels: list[str]
-        :param spec_codes: 产品编码列表
+        :param spec_codes: 产品编码列表。
         :type spec_codes: list[:class:`huaweicloudsdkcc.v3.BandwidthPackageLineSpecCode`]
         """
         
@@ -124,7 +124,7 @@ class BandwidthPackageLine:
     def local_site_code(self):
         r"""Gets the local_site_code of this BandwidthPackageLine.
 
-        站点编码
+        站点编码。
 
         :return: The local_site_code of this BandwidthPackageLine.
         :rtype: str
@@ -135,7 +135,7 @@ class BandwidthPackageLine:
     def local_site_code(self, local_site_code):
         r"""Sets the local_site_code of this BandwidthPackageLine.
 
-        站点编码
+        站点编码。
 
         :param local_site_code: The local_site_code of this BandwidthPackageLine.
         :type local_site_code: str
@@ -146,7 +146,7 @@ class BandwidthPackageLine:
     def remote_site_code(self):
         r"""Gets the remote_site_code of this BandwidthPackageLine.
 
-        站点编码
+        站点编码。
 
         :return: The remote_site_code of this BandwidthPackageLine.
         :rtype: str
@@ -157,7 +157,7 @@ class BandwidthPackageLine:
     def remote_site_code(self, remote_site_code):
         r"""Sets the remote_site_code of this BandwidthPackageLine.
 
-        站点编码
+        站点编码。
 
         :param remote_site_code: The remote_site_code of this BandwidthPackageLine.
         :type remote_site_code: str
@@ -168,7 +168,7 @@ class BandwidthPackageLine:
     def support_levels(self):
         r"""Gets the support_levels of this BandwidthPackageLine.
 
-        支持的等级列表
+        支持的等级列表。
 
         :return: The support_levels of this BandwidthPackageLine.
         :rtype: list[str]
@@ -179,7 +179,7 @@ class BandwidthPackageLine:
     def support_levels(self, support_levels):
         r"""Sets the support_levels of this BandwidthPackageLine.
 
-        支持的等级列表
+        支持的等级列表。
 
         :param support_levels: The support_levels of this BandwidthPackageLine.
         :type support_levels: list[str]
@@ -190,7 +190,7 @@ class BandwidthPackageLine:
     def spec_codes(self):
         r"""Gets the spec_codes of this BandwidthPackageLine.
 
-        产品编码列表
+        产品编码列表。
 
         :return: The spec_codes of this BandwidthPackageLine.
         :rtype: list[:class:`huaweicloudsdkcc.v3.BandwidthPackageLineSpecCode`]
@@ -201,7 +201,7 @@ class BandwidthPackageLine:
     def spec_codes(self, spec_codes):
         r"""Sets the spec_codes of this BandwidthPackageLine.
 
-        产品编码列表
+        产品编码列表。
 
         :param spec_codes: The spec_codes of this BandwidthPackageLine.
         :type spec_codes: list[:class:`huaweicloudsdkcc.v3.BandwidthPackageLineSpecCode`]

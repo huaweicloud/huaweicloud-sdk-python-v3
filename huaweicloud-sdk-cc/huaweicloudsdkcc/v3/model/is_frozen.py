@@ -29,7 +29,7 @@ class IsFrozen:
 
         The model defined in huaweicloud sdk
 
-        :param is_frozen: 是否冻结
+        :param is_frozen: 是否冻结。
         :type is_frozen: bool
         """
         
@@ -44,7 +44,7 @@ class IsFrozen:
     def is_frozen(self):
         r"""Gets the is_frozen of this IsFrozen.
 
-        是否冻结
+        是否冻结。
 
         :return: The is_frozen of this IsFrozen.
         :rtype: bool
@@ -55,7 +55,7 @@ class IsFrozen:
     def is_frozen(self, is_frozen):
         r"""Sets the is_frozen of this IsFrozen.
 
-        是否冻结
+        是否冻结。
 
         :param is_frozen: The is_frozen of this IsFrozen.
         :type is_frozen: bool

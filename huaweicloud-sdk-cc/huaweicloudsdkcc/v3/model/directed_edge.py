@@ -43,11 +43,11 @@ class DirectedEdge:
         :type id: str
         :param region_id: RegionID。
         :type region_id: str
-        :param gateway_id: 实例ID。
+        :param gateway_id: 网关的ID。
         :type gateway_id: str
         :param gateway_type: 
         :type gateway_type: :class:`huaweicloudsdkcc.v3.GatewayTypeEnum`
-        :param site_code: 站点编码定义
+        :param site_code: 站点编码。
         :type site_code: str
         :param project_id: 实例所属项目ID。
         :type project_id: str
@@ -118,7 +118,7 @@ class DirectedEdge:
     def gateway_id(self):
         r"""Gets the gateway_id of this DirectedEdge.
 
-        实例ID。
+        网关的ID。
 
         :return: The gateway_id of this DirectedEdge.
         :rtype: str
@@ -129,7 +129,7 @@ class DirectedEdge:
     def gateway_id(self, gateway_id):
         r"""Sets the gateway_id of this DirectedEdge.
 
-        实例ID。
+        网关的ID。
 
         :param gateway_id: The gateway_id of this DirectedEdge.
         :type gateway_id: str
@@ -158,7 +158,7 @@ class DirectedEdge:
     def site_code(self):
         r"""Gets the site_code of this DirectedEdge.
 
-        站点编码定义
+        站点编码。
 
         :return: The site_code of this DirectedEdge.
         :rtype: str
@@ -169,7 +169,7 @@ class DirectedEdge:
     def site_code(self, site_code):
         r"""Sets the site_code of this DirectedEdge.
 
-        站点编码定义
+        站点编码。
 
         :param site_code: The site_code of this DirectedEdge.
         :type site_code: str

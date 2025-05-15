@@ -18,7 +18,7 @@ class MetricDataValue:
 
     openapi_types = {
         'data_points': 'list[MetricDataPoints]',
-        'metric': 'MetricQueryMeritcParam'
+        'metric': 'MetricQueryMetricParam'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class MetricDataValue:
         :param data_points: 重点指标。
         :type data_points: list[:class:`huaweicloudsdkaom.v2.MetricDataPoints`]
         :param metric: 
-        :type metric: :class:`huaweicloudsdkaom.v2.MetricQueryMeritcParam`
+        :type metric: :class:`huaweicloudsdkaom.v2.MetricQueryMetricParam`
         """
         
         
@@ -75,7 +75,7 @@ class MetricDataValue:
         r"""Gets the metric of this MetricDataValue.
 
         :return: The metric of this MetricDataValue.
-        :rtype: :class:`huaweicloudsdkaom.v2.MetricQueryMeritcParam`
+        :rtype: :class:`huaweicloudsdkaom.v2.MetricQueryMetricParam`
         """
         return self._metric
 
@@ -84,7 +84,7 @@ class MetricDataValue:
         r"""Sets the metric of this MetricDataValue.
 
         :param metric: The metric of this MetricDataValue.
-        :type metric: :class:`huaweicloudsdkaom.v2.MetricQueryMeritcParam`
+        :type metric: :class:`huaweicloudsdkaom.v2.MetricQueryMetricParam`
         """
         self._metric = metric
 

@@ -39,7 +39,7 @@ class ListCloudConnectionQuotasRequest:
 
         :param limit: 每页返回的个数。 取值范围：1~1000。
         :type limit: int
-        :param marker: 翻页信息，从上次API调用返回的翻页数据中获取，可填写前一页marker或者后一页marker，填入前一页previous_marker就向前翻页，后一页next_marker就向翻页。 翻页过程中，查询条件不能修改，包括过滤条件，排序条件，limit。
+        :param marker: 翻页信息，从上次API调用返回的翻页数据中获取，可填写前一页marker或者后一页marker，填入前一页previous_marker就向前翻页，后一页next_marker就向后翻页。 翻页过程中，查询条件不能修改，包括过滤条件、排序条件、limit。
         :type marker: str
         :param quota_type: 配额类型： - cloud_connection: 可加载的云连接实例数 - cloud_connection_region: 某云连接实例下可加载的Region数 - cloud_connection_route: 某云连接实例下可加载的路由数 - region_network_instance: 某云连接实例下某个Region下可加载的网络实例数
         :type quota_type: str
@@ -94,7 +94,7 @@ class ListCloudConnectionQuotasRequest:
     def marker(self):
         r"""Gets the marker of this ListCloudConnectionQuotasRequest.
 
-        翻页信息，从上次API调用返回的翻页数据中获取，可填写前一页marker或者后一页marker，填入前一页previous_marker就向前翻页，后一页next_marker就向翻页。 翻页过程中，查询条件不能修改，包括过滤条件，排序条件，limit。
+        翻页信息，从上次API调用返回的翻页数据中获取，可填写前一页marker或者后一页marker，填入前一页previous_marker就向前翻页，后一页next_marker就向后翻页。 翻页过程中，查询条件不能修改，包括过滤条件、排序条件、limit。
 
         :return: The marker of this ListCloudConnectionQuotasRequest.
         :rtype: str
@@ -105,7 +105,7 @@ class ListCloudConnectionQuotasRequest:
     def marker(self, marker):
         r"""Sets the marker of this ListCloudConnectionQuotasRequest.
 
-        翻页信息，从上次API调用返回的翻页数据中获取，可填写前一页marker或者后一页marker，填入前一页previous_marker就向前翻页，后一页next_marker就向翻页。 翻页过程中，查询条件不能修改，包括过滤条件，排序条件，limit。
+        翻页信息，从上次API调用返回的翻页数据中获取，可填写前一页marker或者后一页marker，填入前一页previous_marker就向前翻页，后一页next_marker就向后翻页。 翻页过程中，查询条件不能修改，包括过滤条件、排序条件、limit。
 
         :param marker: The marker of this ListCloudConnectionQuotasRequest.
         :type marker: str

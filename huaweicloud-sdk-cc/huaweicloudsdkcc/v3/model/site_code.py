@@ -29,7 +29,7 @@ class SiteCode:
 
         The model defined in huaweicloud sdk
 
-        :param site_code: 站点编码定义
+        :param site_code: 站点编码。
         :type site_code: str
         """
         
@@ -44,7 +44,7 @@ class SiteCode:
     def site_code(self):
         r"""Gets the site_code of this SiteCode.
 
-        站点编码定义
+        站点编码。
 
         :return: The site_code of this SiteCode.
         :rtype: str
@@ -55,7 +55,7 @@ class SiteCode:
     def site_code(self, site_code):
         r"""Sets the site_code of this SiteCode.
 
-        站点编码定义
+        站点编码。
 
         :param site_code: The site_code of this SiteCode.
         :type site_code: str

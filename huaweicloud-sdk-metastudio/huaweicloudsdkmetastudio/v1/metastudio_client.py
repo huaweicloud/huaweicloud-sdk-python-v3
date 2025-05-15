@@ -11972,6 +11972,79 @@ class MetaStudioClient(Client):
 
         return http_info
 
+    def show_tts_phonetic_symbol(self, request):
+        r"""获取英文单词音标
+
+        根据英文单词返回对应音标列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowTtsPhoneticSymbol
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ShowTtsPhoneticSymbolRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ShowTtsPhoneticSymbolResponse`
+        """
+        http_info = self._show_tts_phonetic_symbol_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_tts_phonetic_symbol_invoker(self, request):
+        http_info = self._show_tts_phonetic_symbol_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_tts_phonetic_symbol_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/ttsc/phonetic-symbol",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTtsPhoneticSymbolResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'word' in local_var_params:
+            query_params.append(('word', local_var_params['word']))
+
+        header_params = {}
+        if 'x_request_id' in local_var_params:
+            header_params['X-Request-Id'] = local_var_params['x_request_id']
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_video_motion_capture_job(self, request):
         r"""创建视频驱动任务
 

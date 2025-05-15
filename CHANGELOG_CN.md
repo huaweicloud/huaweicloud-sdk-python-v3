@@ -1,3 +1,204 @@
+# 3.1.148 2025-05-15
+
+### HuaweiCloud SDK APM
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowFlameLineTree**
+    - 请求参数变更
+      - `+ x-business-id`
+
+### HuaweiCloud SDK CC
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持以下接口：
+    - `ListCloudConnectionCapabilities`
+    - `ListRegions`
+    - `ListAreas`
+    - `ListRegionBandwidthPackageSpecifications`
+    - `ListAreaBandwidthPackageSpecifications`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListCentralNetworkPolicyChangeSet**
+    - 响应参数变更
+      - `+ central_network_policy_change_set.operation_id: enum value [SwitchCentralNetworkErTable]`
+  - **ListCentralNetworkCapabilities**
+    - 请求参数变更
+      - `+ limit`
+      - `+ marker`
+    - 响应参数变更
+      - `+ page_info`
+      - `+ capabilities.capability: enum value [custom-connections.is-support,custom-connections.support-regions]`
+  - **ListGlobalConnectionBandwidthConfigs**
+    - 响应参数变更
+      - `+ configs.ces_enabled`
+  - **ListBandwidthPackageSites**
+    - 请求参数变更
+      - `+ limit`
+      - `+ marker`
+  - **ListBandwidthPackageLevels**
+    - 请求参数变更
+      - `+ limit`
+      - `+ marker`
+  - **ListCentralNetworkConnections**
+    - 响应参数变更
+      - `+ central_network_connections.index`
+  - **UpdateCentralNetworkConnection**
+    - 响应参数变更
+      - `+ central_network_connection.index`
+  - **ListSiteNetworkCapabilities**
+    - 请求参数变更
+      - `+ limit`
+      - `+ marker`
+    - 响应参数变更
+      - `+ page_info`
+  - **ListBandwidthPackageLines**
+    - 请求参数变更
+      - `+ limit`
+      - `+ marker`
+    - 响应参数变更
+      - `+ page_info`
+  - **ListCentralNetworks**
+    - 响应参数变更
+      - `+ central_networks.connections.index`
+  - **CreateCentralNetwork**
+    - 响应参数变更
+      - `+ central_network.connections.index`
+  - **ShowCentralNetwork**
+    - 响应参数变更
+      - `+ central_network.connections.index`
+  - **UpdateCentralNetwork**
+    - 响应参数变更
+      - `+ central_network.connections.index`
+  - **DeleteCentralNetwork**
+    - 响应参数变更
+      - `+ central_network.connections.index`
+  - **ListCentralNetworksByTags**
+    - 响应参数变更
+      - `+ central_networks.connections.index`
+  - **ApplyCentralNetworkPolicy**
+    - 响应参数变更
+      - `+ central_network_policy_change_set.operation_id: enum value [SwitchCentralNetworkErTable]`
+
+### HuaweiCloud SDK CES
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 支持接口`UpdateResourceGroupAssociationAlarmTemplate`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK COC
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateReportPrometheusEvent**
+    - 响应参数变更
+      - `+ data`
+  - **CreateReportCustomEvent**
+    - 响应参数变更
+      - `+ data`
+
+### HuaweiCloud SDK DDS
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowBackupPolicy**
+    - 响应参数变更
+      - `+ backup_policy.enable_incremental_backup`
+  - **SetBackupPolicy**
+    - 请求参数变更
+      - `+ backup_policy.enable_incremental_backup`
+
+### HuaweiCloud SDK ECS
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListFlavors**
+    - 请求参数变更
+      - `+ flavor_id`
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除接口`ListTopIoTraffics`
+
+### HuaweiCloud SDK IAM
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListAgencies**
+    - 响应参数变更
+      - `+ agencies.duration`
+  - **CreateAgency**
+    - 响应参数变更
+      - `+ agency.duration`
+  - **ShowAgency**
+    - 响应参数变更
+      - `+ agency.duration`
+  - **UpdateAgency**
+    - 响应参数变更
+      - `+ agency.duration`
+
+### HuaweiCloud SDK MetaStudio
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持接口`ShowTtsPhoneticSymbol`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK OCR
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持接口`RecognizeAutoIdDocClassification`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
 # 3.1.147 2025-05-08
 
 ### HuaweiCloud SDK BMS

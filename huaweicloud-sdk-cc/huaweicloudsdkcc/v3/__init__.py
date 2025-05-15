@@ -9,6 +9,9 @@ from huaweicloudsdkcc.v3.model.apply_central_network_policy_request import Apply
 from huaweicloudsdkcc.v3.model.apply_central_network_policy_response import ApplyCentralNetworkPolicyResponse
 from huaweicloudsdkcc.v3.model.apply_policy_id import ApplyPolicyId
 from huaweicloudsdkcc.v3.model.approved_state_enum import ApprovedStateEnum
+from huaweicloudsdkcc.v3.model.area import Area
+from huaweicloudsdkcc.v3.model.area_bandwidth_package_specification import AreaBandwidthPackageSpecification
+from huaweicloudsdkcc.v3.model.area_id import AreaId
 from huaweicloudsdkcc.v3.model.area_id_def import AreaIdDef
 from huaweicloudsdkcc.v3.model.asn import Asn
 from huaweicloudsdkcc.v3.model.associate_bandwidth_package import AssociateBandwidthPackage
@@ -43,6 +46,7 @@ from huaweicloudsdkcc.v3.model.attachment_parent_instance_id import AttachmentPa
 from huaweicloudsdkcc.v3.model.authorisation import Authorisation
 from huaweicloudsdkcc.v3.model.auto_associate_route_enabled import AutoAssociateRouteEnabled
 from huaweicloudsdkcc.v3.model.auto_propagate_route_enabled import AutoPropagateRouteEnabled
+from huaweicloudsdkcc.v3.model.bandwidth_capability import BandwidthCapability
 from huaweicloudsdkcc.v3.model.bandwidth_package import BandwidthPackage
 from huaweicloudsdkcc.v3.model.bandwidth_package_id import BandwidthPackageId
 from huaweicloudsdkcc.v3.model.bandwidth_package_level import BandwidthPackageLevel
@@ -88,6 +92,7 @@ from huaweicloudsdkcc.v3.model.central_network_quota_key_enum import CentralNetw
 from huaweicloudsdkcc.v3.model.central_network_state import CentralNetworkState
 from huaweicloudsdkcc.v3.model.central_network_state_enum import CentralNetworkStateEnum
 from huaweicloudsdkcc.v3.model.cloud_connection import CloudConnection
+from huaweicloudsdkcc.v3.model.cloud_connection_capability import CloudConnectionCapability
 from huaweicloudsdkcc.v3.model.cloud_connection_id import CloudConnectionId
 from huaweicloudsdkcc.v3.model.cloud_connection_quota import CloudConnectionQuota
 from huaweicloudsdkcc.v3.model.cloud_connection_route import CloudConnectionRoute
@@ -239,11 +244,16 @@ from huaweicloudsdkcc.v3.model.global_dc_gateway_project_id import GlobalDcGatew
 from huaweicloudsdkcc.v3.model.global_dc_gateway_region_id import GlobalDcGatewayRegionId
 from huaweicloudsdkcc.v3.model.hosted_cloud import HostedCloud
 from huaweicloudsdkcc.v3.model.hosted_cloud_enum import HostedCloudEnum
+from huaweicloudsdkcc.v3.model.index import Index
 from huaweicloudsdkcc.v3.model.instance_domain_id import InstanceDomainId
 from huaweicloudsdkcc.v3.model.instance_id import InstanceId
 from huaweicloudsdkcc.v3.model.inter_region import InterRegion
 from huaweicloudsdkcc.v3.model.inter_region_bandwidth import InterRegionBandwidth
 from huaweicloudsdkcc.v3.model.is_frozen import IsFrozen
+from huaweicloudsdkcc.v3.model.list_area_bandwidth_package_specifications_request import ListAreaBandwidthPackageSpecificationsRequest
+from huaweicloudsdkcc.v3.model.list_area_bandwidth_package_specifications_response import ListAreaBandwidthPackageSpecificationsResponse
+from huaweicloudsdkcc.v3.model.list_areas_request import ListAreasRequest
+from huaweicloudsdkcc.v3.model.list_areas_response import ListAreasResponse
 from huaweicloudsdkcc.v3.model.list_authorisations_request import ListAuthorisationsRequest
 from huaweicloudsdkcc.v3.model.list_authorisations_response import ListAuthorisationsResponse
 from huaweicloudsdkcc.v3.model.list_bandwidth_package_levels_request import ListBandwidthPackageLevelsRequest
@@ -282,6 +292,8 @@ from huaweicloudsdkcc.v3.model.list_central_networks_by_tags_request_body import
 from huaweicloudsdkcc.v3.model.list_central_networks_by_tags_response import ListCentralNetworksByTagsResponse
 from huaweicloudsdkcc.v3.model.list_central_networks_request import ListCentralNetworksRequest
 from huaweicloudsdkcc.v3.model.list_central_networks_response import ListCentralNetworksResponse
+from huaweicloudsdkcc.v3.model.list_cloud_connection_capabilities_request import ListCloudConnectionCapabilitiesRequest
+from huaweicloudsdkcc.v3.model.list_cloud_connection_capabilities_response import ListCloudConnectionCapabilitiesResponse
 from huaweicloudsdkcc.v3.model.list_cloud_connection_quotas_request import ListCloudConnectionQuotasRequest
 from huaweicloudsdkcc.v3.model.list_cloud_connection_quotas_response import ListCloudConnectionQuotasResponse
 from huaweicloudsdkcc.v3.model.list_cloud_connection_routes_request import ListCloudConnectionRoutesRequest
@@ -316,6 +328,10 @@ from huaweicloudsdkcc.v3.model.list_network_instances_request import ListNetwork
 from huaweicloudsdkcc.v3.model.list_network_instances_response import ListNetworkInstancesResponse
 from huaweicloudsdkcc.v3.model.list_permissions_request import ListPermissionsRequest
 from huaweicloudsdkcc.v3.model.list_permissions_response import ListPermissionsResponse
+from huaweicloudsdkcc.v3.model.list_region_bandwidth_package_specifications_request import ListRegionBandwidthPackageSpecificationsRequest
+from huaweicloudsdkcc.v3.model.list_region_bandwidth_package_specifications_response import ListRegionBandwidthPackageSpecificationsResponse
+from huaweicloudsdkcc.v3.model.list_regions_request import ListRegionsRequest
+from huaweicloudsdkcc.v3.model.list_regions_response import ListRegionsResponse
 from huaweicloudsdkcc.v3.model.list_response_body import ListResponseBody
 from huaweicloudsdkcc.v3.model.list_site_network_capabilities_request import ListSiteNetworkCapabilitiesRequest
 from huaweicloudsdkcc.v3.model.list_site_network_capabilities_response import ListSiteNetworkCapabilitiesResponse
@@ -326,6 +342,7 @@ from huaweicloudsdkcc.v3.model.list_site_networks_response import ListSiteNetwor
 from huaweicloudsdkcc.v3.model.list_support_binding_connection_bandwidths_request import ListSupportBindingConnectionBandwidthsRequest
 from huaweicloudsdkcc.v3.model.list_support_binding_connection_bandwidths_response import ListSupportBindingConnectionBandwidthsResponse
 from huaweicloudsdkcc.v3.model.local_area_id import LocalAreaId
+from huaweicloudsdkcc.v3.model.local_region_id import LocalRegionId
 from huaweicloudsdkcc.v3.model.multivalued_tag import MultivaluedTag
 from huaweicloudsdkcc.v3.model.name import Name
 from huaweicloudsdkcc.v3.model.name_def import NameDef
@@ -350,9 +367,12 @@ from huaweicloudsdkcc.v3.model.query_tag import QueryTag
 from huaweicloudsdkcc.v3.model.quota_limit import QuotaLimit
 from huaweicloudsdkcc.v3.model.quota_unit import QuotaUnit
 from huaweicloudsdkcc.v3.model.quota_used import QuotaUsed
+from huaweicloudsdkcc.v3.model.region import Region
+from huaweicloudsdkcc.v3.model.region_bandwidth_package_specification import RegionBandwidthPackageSpecification
 from huaweicloudsdkcc.v3.model.region_id import RegionId
 from huaweicloudsdkcc.v3.model.region_id_def import RegionIdDef
 from huaweicloudsdkcc.v3.model.remote_area_id import RemoteAreaId
+from huaweicloudsdkcc.v3.model.remote_region_id import RemoteRegionId
 from huaweicloudsdkcc.v3.model.request_id import RequestId
 from huaweicloudsdkcc.v3.model.required_tag import RequiredTag
 from huaweicloudsdkcc.v3.model.resource_id import ResourceId
@@ -397,6 +417,7 @@ from huaweicloudsdkcc.v3.model.site_network_topology import SiteNetworkTopology
 from huaweicloudsdkcc.v3.model.site_network_topology_enum import SiteNetworkTopologyEnum
 from huaweicloudsdkcc.v3.model.sort_dir import SortDir
 from huaweicloudsdkcc.v3.model.spec_code import SpecCode
+from huaweicloudsdkcc.v3.model.specification_code_info import SpecificationCodeInfo
 from huaweicloudsdkcc.v3.model.tag import Tag
 from huaweicloudsdkcc.v3.model.tag_bandwidth_package_request import TagBandwidthPackageRequest
 from huaweicloudsdkcc.v3.model.tag_bandwidth_package_request_body import TagBandwidthPackageRequestBody
@@ -466,6 +487,8 @@ from huaweicloudsdkcc.v3.model.update_network_instance import UpdateNetworkInsta
 from huaweicloudsdkcc.v3.model.update_network_instance_request import UpdateNetworkInstanceRequest
 from huaweicloudsdkcc.v3.model.update_network_instance_request_body import UpdateNetworkInstanceRequestBody
 from huaweicloudsdkcc.v3.model.update_network_instance_response import UpdateNetworkInstanceResponse
+from huaweicloudsdkcc.v3.model.update_site_connection_bandwidth import UpdateSiteConnectionBandwidth
+from huaweicloudsdkcc.v3.model.update_site_connection_bandwidth_request_body import UpdateSiteConnectionBandwidthRequestBody
 from huaweicloudsdkcc.v3.model.update_site_connection_bandwidth_size import UpdateSiteConnectionBandwidthSize
 from huaweicloudsdkcc.v3.model.update_site_connection_bandwidth_size_request_body import UpdateSiteConnectionBandwidthSizeRequestBody
 from huaweicloudsdkcc.v3.model.update_site_network import UpdateSiteNetwork

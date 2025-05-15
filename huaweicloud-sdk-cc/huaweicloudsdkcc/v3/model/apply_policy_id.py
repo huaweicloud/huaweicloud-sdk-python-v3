@@ -29,7 +29,7 @@ class ApplyPolicyId:
 
         The model defined in huaweicloud sdk
 
-        :param apply_policy_id: 实例ID。
+        :param apply_policy_id: 应用策略ID。
         :type apply_policy_id: str
         """
         
@@ -44,7 +44,7 @@ class ApplyPolicyId:
     def apply_policy_id(self):
         r"""Gets the apply_policy_id of this ApplyPolicyId.
 
-        实例ID。
+        应用策略ID。
 
         :return: The apply_policy_id of this ApplyPolicyId.
         :rtype: str
@@ -55,7 +55,7 @@ class ApplyPolicyId:
     def apply_policy_id(self, apply_policy_id):
         r"""Sets the apply_policy_id of this ApplyPolicyId.
 
-        实例ID。
+        应用策略ID。
 
         :param apply_policy_id: The apply_policy_id of this ApplyPolicyId.
         :type apply_policy_id: str

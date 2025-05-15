@@ -47,15 +47,15 @@ class BandwidthPackageSite:
 
         :param id: 实例ID。
         :type id: str
-        :param site_code: 站点编码
+        :param site_code: 站点编码。
         :type site_code: str
         :param region_id: RegionID。
         :type region_id: str
-        :param site_type: 站点类型。默认Region级别
+        :param site_type: 站点类型。默认Region级别。
         :type site_type: str
-        :param name_cn: 实例名字。
+        :param name_cn: 实例名称。
         :type name_cn: str
-        :param name_en: 实例名字。
+        :param name_en: 实例名称。
         :type name_en: str
         :param description: 描述。不支持 &lt;&gt;。
         :type description: str
@@ -123,7 +123,7 @@ class BandwidthPackageSite:
     def site_code(self):
         r"""Gets the site_code of this BandwidthPackageSite.
 
-        站点编码
+        站点编码。
 
         :return: The site_code of this BandwidthPackageSite.
         :rtype: str
@@ -134,7 +134,7 @@ class BandwidthPackageSite:
     def site_code(self, site_code):
         r"""Sets the site_code of this BandwidthPackageSite.
 
-        站点编码
+        站点编码。
 
         :param site_code: The site_code of this BandwidthPackageSite.
         :type site_code: str
@@ -167,7 +167,7 @@ class BandwidthPackageSite:
     def site_type(self):
         r"""Gets the site_type of this BandwidthPackageSite.
 
-        站点类型。默认Region级别
+        站点类型。默认Region级别。
 
         :return: The site_type of this BandwidthPackageSite.
         :rtype: str
@@ -178,7 +178,7 @@ class BandwidthPackageSite:
     def site_type(self, site_type):
         r"""Sets the site_type of this BandwidthPackageSite.
 
-        站点类型。默认Region级别
+        站点类型。默认Region级别。
 
         :param site_type: The site_type of this BandwidthPackageSite.
         :type site_type: str
@@ -189,7 +189,7 @@ class BandwidthPackageSite:
     def name_cn(self):
         r"""Gets the name_cn of this BandwidthPackageSite.
 
-        实例名字。
+        实例名称。
 
         :return: The name_cn of this BandwidthPackageSite.
         :rtype: str
@@ -200,7 +200,7 @@ class BandwidthPackageSite:
     def name_cn(self, name_cn):
         r"""Sets the name_cn of this BandwidthPackageSite.
 
-        实例名字。
+        实例名称。
 
         :param name_cn: The name_cn of this BandwidthPackageSite.
         :type name_cn: str
@@ -211,7 +211,7 @@ class BandwidthPackageSite:
     def name_en(self):
         r"""Gets the name_en of this BandwidthPackageSite.
 
-        实例名字。
+        实例名称。
 
         :return: The name_en of this BandwidthPackageSite.
         :rtype: str
@@ -222,7 +222,7 @@ class BandwidthPackageSite:
     def name_en(self, name_en):
         r"""Sets the name_en of this BandwidthPackageSite.
 
-        实例名字。
+        实例名称。
 
         :param name_en: The name_en of this BandwidthPackageSite.
         :type name_en: str

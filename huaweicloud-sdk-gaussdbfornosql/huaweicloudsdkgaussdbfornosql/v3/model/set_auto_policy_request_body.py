@@ -51,7 +51,8 @@ class SetAutoPolicyRequestBody:
         self.instance_ids = instance_ids
         if switch_option is not None:
             self.switch_option = switch_option
-        self.policy = policy
+        if policy is not None:
+            self.policy = policy
 
     @property
     def instance_ids(self):

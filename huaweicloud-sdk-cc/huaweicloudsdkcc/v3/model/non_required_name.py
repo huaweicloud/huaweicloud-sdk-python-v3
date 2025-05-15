@@ -29,7 +29,7 @@ class NonRequiredName:
 
         The model defined in huaweicloud sdk
 
-        :param name: 实例名字。
+        :param name: 实例名称。
         :type name: str
         """
         
@@ -45,7 +45,7 @@ class NonRequiredName:
     def name(self):
         r"""Gets the name of this NonRequiredName.
 
-        实例名字。
+        实例名称。
 
         :return: The name of this NonRequiredName.
         :rtype: str
@@ -56,7 +56,7 @@ class NonRequiredName:
     def name(self, name):
         r"""Sets the name of this NonRequiredName.
 
-        实例名字。
+        实例名称。
 
         :param name: The name of this NonRequiredName.
         :type name: str

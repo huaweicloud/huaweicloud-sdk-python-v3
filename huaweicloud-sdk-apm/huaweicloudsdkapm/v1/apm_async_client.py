@@ -1465,6 +1465,8 @@ class ApmAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_business_id' in local_var_params:
+            header_params['x-business-id'] = local_var_params['x_business_id']
 
         form_params = {}
 

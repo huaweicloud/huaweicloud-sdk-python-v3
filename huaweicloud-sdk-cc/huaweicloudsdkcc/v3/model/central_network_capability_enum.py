@@ -21,6 +21,8 @@ class CentralNetworkCapabilityEnum:
     ER_INSTANCE_SUPPORT_DSCP_REGIONS = "er-instance.support-dscp-regions"
     ER_INSTANCE_SUPPORT_STS5_REGIONS = "er-instance.support-sts5-regions"
     ER_INSTANCE_SUPPORT_SITES = "er-instance.support-sites"
+    CUSTOM_CONNECTIONS_IS_SUPPORT = "custom-connections.is-support"
+    CUSTOM_CONNECTIONS_SUPPORT_REGIONS = "custom-connections.support-regions"
     GDGW_INSTANCE_SUPPORT_DSCP_REGIONS = "gdgw-instance.support-dscp-regions"
     GDGW_INSTANCE_SUPPORT_FREEZE_REGIONS = "gdgw-instance.support-freeze-regions"
     GDGW_ATTACHMENT_IS_SUPPORT = "gdgw-attachment.is-support"

@@ -53,7 +53,7 @@ class SiteConnection:
 
         :param id: 实例ID。
         :type id: str
-        :param site_network_id: 实例ID。
+        :param site_network_id: 分支网络ID。
         :type site_network_id: str
         :param state: 
         :type state: :class:`huaweicloudsdkcc.v3.SiteConnectionStateEnum`
@@ -61,7 +61,7 @@ class SiteConnection:
         :type created_at: datetime
         :param updated_at: 实例更新时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
         :type updated_at: datetime
-        :param edge_pair: 分支网络连接的两个端点定义，可能为两个点，也可能为两个单向边，长度固定为2的数组。
+        :param edge_pair: 分支网络连接的两个端点定义，长度固定为2的数组。
         :type edge_pair: list[:class:`huaweicloudsdkcc.v3.DirectedEdge`]
         :param cross_region_type: 
         :type cross_region_type: :class:`huaweicloudsdkcc.v3.CrossRegionTypeEnum`
@@ -69,7 +69,7 @@ class SiteConnection:
         :type global_connection_bandwidth_id: str
         :param bandwidth_size: 带宽值，单位Mbps。
         :type bandwidth_size: int
-        :param is_frozen: 是否冻结
+        :param is_frozen: 是否冻结。
         :type is_frozen: bool
         :param frozen_effect: 
         :type frozen_effect: :class:`huaweicloudsdkcc.v3.FrozenEffectEnum`
@@ -136,7 +136,7 @@ class SiteConnection:
     def site_network_id(self):
         r"""Gets the site_network_id of this SiteConnection.
 
-        实例ID。
+        分支网络ID。
 
         :return: The site_network_id of this SiteConnection.
         :rtype: str
@@ -147,7 +147,7 @@ class SiteConnection:
     def site_network_id(self, site_network_id):
         r"""Sets the site_network_id of this SiteConnection.
 
-        实例ID。
+        分支网络ID。
 
         :param site_network_id: The site_network_id of this SiteConnection.
         :type site_network_id: str
@@ -220,7 +220,7 @@ class SiteConnection:
     def edge_pair(self):
         r"""Gets the edge_pair of this SiteConnection.
 
-        分支网络连接的两个端点定义，可能为两个点，也可能为两个单向边，长度固定为2的数组。
+        分支网络连接的两个端点定义，长度固定为2的数组。
 
         :return: The edge_pair of this SiteConnection.
         :rtype: list[:class:`huaweicloudsdkcc.v3.DirectedEdge`]
@@ -231,7 +231,7 @@ class SiteConnection:
     def edge_pair(self, edge_pair):
         r"""Sets the edge_pair of this SiteConnection.
 
-        分支网络连接的两个端点定义，可能为两个点，也可能为两个单向边，长度固定为2的数组。
+        分支网络连接的两个端点定义，长度固定为2的数组。
 
         :param edge_pair: The edge_pair of this SiteConnection.
         :type edge_pair: list[:class:`huaweicloudsdkcc.v3.DirectedEdge`]
@@ -304,7 +304,7 @@ class SiteConnection:
     def is_frozen(self):
         r"""Gets the is_frozen of this SiteConnection.
 
-        是否冻结
+        是否冻结。
 
         :return: The is_frozen of this SiteConnection.
         :rtype: bool
@@ -315,7 +315,7 @@ class SiteConnection:
     def is_frozen(self, is_frozen):
         r"""Sets the is_frozen of this SiteConnection.
 
-        是否冻结
+        是否冻结。
 
         :param is_frozen: The is_frozen of this SiteConnection.
         :type is_frozen: bool

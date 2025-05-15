@@ -29,7 +29,7 @@ class GatewayId:
 
         The model defined in huaweicloud sdk
 
-        :param gateway_id: 实例ID。
+        :param gateway_id: 网关的ID。
         :type gateway_id: str
         """
         
@@ -44,7 +44,7 @@ class GatewayId:
     def gateway_id(self):
         r"""Gets the gateway_id of this GatewayId.
 
-        实例ID。
+        网关的ID。
 
         :return: The gateway_id of this GatewayId.
         :rtype: str
@@ -55,7 +55,7 @@ class GatewayId:
     def gateway_id(self, gateway_id):
         r"""Sets the gateway_id of this GatewayId.
 
-        实例ID。
+        网关的ID。
 
         :param gateway_id: The gateway_id of this GatewayId.
         :type gateway_id: str

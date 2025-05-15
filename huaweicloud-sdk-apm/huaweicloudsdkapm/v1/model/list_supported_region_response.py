@@ -18,7 +18,7 @@ class ListSupportedRegionResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'region_list': 'list[Region]'
+        'region_list': 'list[RegionParam]'
     }
 
     attribute_map = {
@@ -31,7 +31,7 @@ class ListSupportedRegionResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param region_list: region列表。
-        :type region_list: list[:class:`huaweicloudsdkapm.v1.Region`]
+        :type region_list: list[:class:`huaweicloudsdkapm.v1.RegionParam`]
         """
         
         super(ListSupportedRegionResponse, self).__init__()
@@ -49,7 +49,7 @@ class ListSupportedRegionResponse(SdkResponse):
         region列表。
 
         :return: The region_list of this ListSupportedRegionResponse.
-        :rtype: list[:class:`huaweicloudsdkapm.v1.Region`]
+        :rtype: list[:class:`huaweicloudsdkapm.v1.RegionParam`]
         """
         return self._region_list
 
@@ -60,7 +60,7 @@ class ListSupportedRegionResponse(SdkResponse):
         region列表。
 
         :param region_list: The region_list of this ListSupportedRegionResponse.
-        :type region_list: list[:class:`huaweicloudsdkapm.v1.Region`]
+        :type region_list: list[:class:`huaweicloudsdkapm.v1.RegionParam`]
         """
         self._region_list = region_list
 

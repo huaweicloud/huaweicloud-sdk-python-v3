@@ -17,29 +17,43 @@ class ListSiteNetworkCapabilitiesRequest:
     sensitive_list = []
 
     openapi_types = {
-        'specification': 'list[SiteNetworkSpecificationEnum]'
+        'specification': 'list[SiteNetworkSpecificationEnum]',
+        'limit': 'int',
+        'marker': 'str'
     }
 
     attribute_map = {
-        'specification': 'specification'
+        'specification': 'specification',
+        'limit': 'limit',
+        'marker': 'marker'
     }
 
-    def __init__(self, specification=None):
+    def __init__(self, specification=None, limit=None, marker=None):
         r"""ListSiteNetworkCapabilitiesRequest
 
         The model defined in huaweicloud sdk
 
         :param specification: 根据分支网络租户能力名查询，可查询多个类型。
         :type specification: list[:class:`huaweicloudsdkcc.v3.SiteNetworkSpecificationEnum`]
+        :param limit: 每页返回的个数。 取值范围：1~1000。
+        :type limit: int
+        :param marker: 翻页信息，从上次API调用返回的翻页数据中获取，可填写前一页marker或者后一页marker，填入前一页previous_marker就向前翻页，后一页next_marker就向后翻页。 翻页过程中，查询条件不能修改，包括过滤条件、排序条件、limit。
+        :type marker: str
         """
         
         
 
         self._specification = None
+        self._limit = None
+        self._marker = None
         self.discriminator = None
 
         if specification is not None:
             self.specification = specification
+        if limit is not None:
+            self.limit = limit
+        if marker is not None:
+            self.marker = marker
 
     @property
     def specification(self):
@@ -62,6 +76,50 @@ class ListSiteNetworkCapabilitiesRequest:
         :type specification: list[:class:`huaweicloudsdkcc.v3.SiteNetworkSpecificationEnum`]
         """
         self._specification = specification
+
+    @property
+    def limit(self):
+        r"""Gets the limit of this ListSiteNetworkCapabilitiesRequest.
+
+        每页返回的个数。 取值范围：1~1000。
+
+        :return: The limit of this ListSiteNetworkCapabilitiesRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        r"""Sets the limit of this ListSiteNetworkCapabilitiesRequest.
+
+        每页返回的个数。 取值范围：1~1000。
+
+        :param limit: The limit of this ListSiteNetworkCapabilitiesRequest.
+        :type limit: int
+        """
+        self._limit = limit
+
+    @property
+    def marker(self):
+        r"""Gets the marker of this ListSiteNetworkCapabilitiesRequest.
+
+        翻页信息，从上次API调用返回的翻页数据中获取，可填写前一页marker或者后一页marker，填入前一页previous_marker就向前翻页，后一页next_marker就向后翻页。 翻页过程中，查询条件不能修改，包括过滤条件、排序条件、limit。
+
+        :return: The marker of this ListSiteNetworkCapabilitiesRequest.
+        :rtype: str
+        """
+        return self._marker
+
+    @marker.setter
+    def marker(self, marker):
+        r"""Sets the marker of this ListSiteNetworkCapabilitiesRequest.
+
+        翻页信息，从上次API调用返回的翻页数据中获取，可填写前一页marker或者后一页marker，填入前一页previous_marker就向前翻页，后一页next_marker就向后翻页。 翻页过程中，查询条件不能修改，包括过滤条件、排序条件、limit。
+
+        :param marker: The marker of this ListSiteNetworkCapabilitiesRequest.
+        :type marker: str
+        """
+        self._marker = marker
 
     def to_dict(self):
         """Returns the model properties as a dict"""

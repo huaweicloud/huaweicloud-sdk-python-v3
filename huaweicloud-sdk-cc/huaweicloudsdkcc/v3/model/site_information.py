@@ -45,9 +45,9 @@ class SiteInformation:
         :type project_id: str
         :param gateway_type: 
         :type gateway_type: :class:`huaweicloudsdkcc.v3.GatewayTypeEnum`
-        :param gateway_id: 实例ID。
+        :param gateway_id: 网关的ID。
         :type gateway_id: str
-        :param site_code: 站点编码定义
+        :param site_code: 站点编码。
         :type site_code: str
         :param asn: 网络实例BGP协议的AS号。
         :type asn: int
@@ -136,7 +136,7 @@ class SiteInformation:
     def gateway_id(self):
         r"""Gets the gateway_id of this SiteInformation.
 
-        实例ID。
+        网关的ID。
 
         :return: The gateway_id of this SiteInformation.
         :rtype: str
@@ -147,7 +147,7 @@ class SiteInformation:
     def gateway_id(self, gateway_id):
         r"""Sets the gateway_id of this SiteInformation.
 
-        实例ID。
+        网关的ID。
 
         :param gateway_id: The gateway_id of this SiteInformation.
         :type gateway_id: str
@@ -158,7 +158,7 @@ class SiteInformation:
     def site_code(self):
         r"""Gets the site_code of this SiteInformation.
 
-        站点编码定义
+        站点编码。
 
         :return: The site_code of this SiteInformation.
         :rtype: str
@@ -169,7 +169,7 @@ class SiteInformation:
     def site_code(self, site_code):
         r"""Sets the site_code of this SiteInformation.
 
-        站点编码定义
+        站点编码。
 
         :param site_code: The site_code of this SiteInformation.
         :type site_code: str

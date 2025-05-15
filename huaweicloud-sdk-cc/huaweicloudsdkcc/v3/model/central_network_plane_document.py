@@ -33,7 +33,7 @@ class CentralNetworkPlaneDocument:
 
         The model defined in huaweicloud sdk
 
-        :param name: 实例名字。
+        :param name: 实例名称。
         :type name: str
         :param associate_er_tables: 关联的中心网络ER实例列表。
         :type associate_er_tables: list[:class:`huaweicloudsdkcc.v3.AssociateErTableDocument`]
@@ -58,7 +58,7 @@ class CentralNetworkPlaneDocument:
     def name(self):
         r"""Gets the name of this CentralNetworkPlaneDocument.
 
-        实例名字。
+        实例名称。
 
         :return: The name of this CentralNetworkPlaneDocument.
         :rtype: str
@@ -69,7 +69,7 @@ class CentralNetworkPlaneDocument:
     def name(self, name):
         r"""Sets the name of this CentralNetworkPlaneDocument.
 
-        实例名字。
+        实例名称。
 
         :param name: The name of this CentralNetworkPlaneDocument.
         :type name: str

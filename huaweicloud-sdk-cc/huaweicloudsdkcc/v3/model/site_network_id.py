@@ -29,7 +29,7 @@ class SiteNetworkId:
 
         The model defined in huaweicloud sdk
 
-        :param site_network_id: 实例ID。
+        :param site_network_id: 分支网络ID。
         :type site_network_id: str
         """
         
@@ -44,7 +44,7 @@ class SiteNetworkId:
     def site_network_id(self):
         r"""Gets the site_network_id of this SiteNetworkId.
 
-        实例ID。
+        分支网络ID。
 
         :return: The site_network_id of this SiteNetworkId.
         :rtype: str
@@ -55,7 +55,7 @@ class SiteNetworkId:
     def site_network_id(self, site_network_id):
         r"""Sets the site_network_id of this SiteNetworkId.
 
-        实例ID。
+        分支网络ID。
 
         :param site_network_id: The site_network_id of this SiteNetworkId.
         :type site_network_id: str

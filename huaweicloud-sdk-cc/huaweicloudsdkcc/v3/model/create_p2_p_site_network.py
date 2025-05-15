@@ -37,7 +37,7 @@ class CreateP2PSiteNetwork:
 
         The model defined in huaweicloud sdk
 
-        :param name: 实例名字。
+        :param name: 实例名称。
         :type name: str
         :param description: 实例描述。不支持 &lt;&gt;。
         :type description: str
@@ -45,7 +45,7 @@ class CreateP2PSiteNetwork:
         :type tags: list[:class:`huaweicloudsdkcc.v3.Tag`]
         :param enterprise_project_id: 实例所属企业项目ID。
         :type enterprise_project_id: str
-        :param sites: 端到端(P2P)类型分支网络连接的两个端点定义，长度固定为2的数组。
+        :param sites: 端到端（P2P）类型分支网络连接的两个端点定义，长度固定为2的数组。
         :type sites: list[:class:`huaweicloudsdkcc.v3.CreateSiteInformation`]
         """
         
@@ -71,7 +71,7 @@ class CreateP2PSiteNetwork:
     def name(self):
         r"""Gets the name of this CreateP2PSiteNetwork.
 
-        实例名字。
+        实例名称。
 
         :return: The name of this CreateP2PSiteNetwork.
         :rtype: str
@@ -82,7 +82,7 @@ class CreateP2PSiteNetwork:
     def name(self, name):
         r"""Sets the name of this CreateP2PSiteNetwork.
 
-        实例名字。
+        实例名称。
 
         :param name: The name of this CreateP2PSiteNetwork.
         :type name: str
@@ -159,7 +159,7 @@ class CreateP2PSiteNetwork:
     def sites(self):
         r"""Gets the sites of this CreateP2PSiteNetwork.
 
-        端到端(P2P)类型分支网络连接的两个端点定义，长度固定为2的数组。
+        端到端（P2P）类型分支网络连接的两个端点定义，长度固定为2的数组。
 
         :return: The sites of this CreateP2PSiteNetwork.
         :rtype: list[:class:`huaweicloudsdkcc.v3.CreateSiteInformation`]
@@ -170,7 +170,7 @@ class CreateP2PSiteNetwork:
     def sites(self, sites):
         r"""Sets the sites of this CreateP2PSiteNetwork.
 
-        端到端(P2P)类型分支网络连接的两个端点定义，长度固定为2的数组。
+        端到端（P2P）类型分支网络连接的两个端点定义，长度固定为2的数组。
 
         :param sites: The sites of this CreateP2PSiteNetwork.
         :type sites: list[:class:`huaweicloudsdkcc.v3.CreateSiteInformation`]

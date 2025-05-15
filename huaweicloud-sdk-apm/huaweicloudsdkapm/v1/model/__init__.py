@@ -88,7 +88,7 @@ from huaweicloudsdkapm.v1.model.option_value import OptionValue
 from huaweicloudsdkapm.v1.model.order_param import OrderParam
 from huaweicloudsdkapm.v1.model.raw_table_param import RawTableParam
 from huaweicloudsdkapm.v1.model.raw_table_view import RawTableView
-from huaweicloudsdkapm.v1.model.region import Region
+from huaweicloudsdkapm.v1.model.region_param import RegionParam
 from huaweicloudsdkapm.v1.model.save_monitor_item_config_request import SaveMonitorItemConfigRequest
 from huaweicloudsdkapm.v1.model.save_monitor_item_config_response import SaveMonitorItemConfigResponse
 from huaweicloudsdkapm.v1.model.save_monitor_item_param import SaveMonitorItemParam

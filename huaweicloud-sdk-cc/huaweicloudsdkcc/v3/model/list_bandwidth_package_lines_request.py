@@ -17,42 +17,100 @@ class ListBandwidthPackageLinesRequest:
     sensitive_list = []
 
     openapi_types = {
+        'limit': 'int',
+        'marker': 'str',
         'level': 'str',
         'name': 'str'
     }
 
     attribute_map = {
+        'limit': 'limit',
+        'marker': 'marker',
         'level': 'level',
         'name': 'name'
     }
 
-    def __init__(self, level=None, name=None):
+    def __init__(self, limit=None, marker=None, level=None, name=None):
         r"""ListBandwidthPackageLinesRequest
 
         The model defined in huaweicloud sdk
 
-        :param level: 根据带宽包等级进行查询
+        :param limit: 每页返回的个数。 取值范围：1~1000。
+        :type limit: int
+        :param marker: 翻页信息，从上次API调用返回的翻页数据中获取，可填写前一页marker或者后一页marker，填入前一页previous_marker就向前翻页，后一页next_marker就向后翻页。 翻页过程中，查询条件不能修改，包括过滤条件、排序条件、limit。
+        :type marker: str
+        :param level: 根据带宽包等级进行查询。
         :type level: str
-        :param name: 根据名称进行模糊查询
+        :param name: 根据名称进行模糊查询。
         :type name: str
         """
         
         
 
+        self._limit = None
+        self._marker = None
         self._level = None
         self._name = None
         self.discriminator = None
 
+        if limit is not None:
+            self.limit = limit
+        if marker is not None:
+            self.marker = marker
         if level is not None:
             self.level = level
         if name is not None:
             self.name = name
 
     @property
+    def limit(self):
+        r"""Gets the limit of this ListBandwidthPackageLinesRequest.
+
+        每页返回的个数。 取值范围：1~1000。
+
+        :return: The limit of this ListBandwidthPackageLinesRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        r"""Sets the limit of this ListBandwidthPackageLinesRequest.
+
+        每页返回的个数。 取值范围：1~1000。
+
+        :param limit: The limit of this ListBandwidthPackageLinesRequest.
+        :type limit: int
+        """
+        self._limit = limit
+
+    @property
+    def marker(self):
+        r"""Gets the marker of this ListBandwidthPackageLinesRequest.
+
+        翻页信息，从上次API调用返回的翻页数据中获取，可填写前一页marker或者后一页marker，填入前一页previous_marker就向前翻页，后一页next_marker就向后翻页。 翻页过程中，查询条件不能修改，包括过滤条件、排序条件、limit。
+
+        :return: The marker of this ListBandwidthPackageLinesRequest.
+        :rtype: str
+        """
+        return self._marker
+
+    @marker.setter
+    def marker(self, marker):
+        r"""Sets the marker of this ListBandwidthPackageLinesRequest.
+
+        翻页信息，从上次API调用返回的翻页数据中获取，可填写前一页marker或者后一页marker，填入前一页previous_marker就向前翻页，后一页next_marker就向后翻页。 翻页过程中，查询条件不能修改，包括过滤条件、排序条件、limit。
+
+        :param marker: The marker of this ListBandwidthPackageLinesRequest.
+        :type marker: str
+        """
+        self._marker = marker
+
+    @property
     def level(self):
         r"""Gets the level of this ListBandwidthPackageLinesRequest.
 
-        根据带宽包等级进行查询
+        根据带宽包等级进行查询。
 
         :return: The level of this ListBandwidthPackageLinesRequest.
         :rtype: str
@@ -63,7 +121,7 @@ class ListBandwidthPackageLinesRequest:
     def level(self, level):
         r"""Sets the level of this ListBandwidthPackageLinesRequest.
 
-        根据带宽包等级进行查询
+        根据带宽包等级进行查询。
 
         :param level: The level of this ListBandwidthPackageLinesRequest.
         :type level: str
@@ -74,7 +132,7 @@ class ListBandwidthPackageLinesRequest:
     def name(self):
         r"""Gets the name of this ListBandwidthPackageLinesRequest.
 
-        根据名称进行模糊查询
+        根据名称进行模糊查询。
 
         :return: The name of this ListBandwidthPackageLinesRequest.
         :rtype: str
@@ -85,7 +143,7 @@ class ListBandwidthPackageLinesRequest:
     def name(self, name):
         r"""Sets the name of this ListBandwidthPackageLinesRequest.
 
-        根据名称进行模糊查询
+        根据名称进行模糊查询。
 
         :param name: The name of this ListBandwidthPackageLinesRequest.
         :type name: str

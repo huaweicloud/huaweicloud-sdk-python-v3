@@ -47,7 +47,7 @@ class ConnectionPoint:
         :type project_id: str
         :param region_id: RegionID。
         :type region_id: str
-        :param site_code: 站点编码定义
+        :param site_code: 站点编码。
         :type site_code: str
         :param instance_id: 连接点的实例ID。
         :type instance_id: str
@@ -147,7 +147,7 @@ class ConnectionPoint:
     def site_code(self):
         r"""Gets the site_code of this ConnectionPoint.
 
-        站点编码定义
+        站点编码。
 
         :return: The site_code of this ConnectionPoint.
         :rtype: str
@@ -158,7 +158,7 @@ class ConnectionPoint:
     def site_code(self, site_code):
         r"""Sets the site_code of this ConnectionPoint.
 
-        站点编码定义
+        站点编码。
 
         :param site_code: The site_code of this ConnectionPoint.
         :type site_code: str

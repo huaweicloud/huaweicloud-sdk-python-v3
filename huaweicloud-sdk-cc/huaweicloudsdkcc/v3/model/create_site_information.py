@@ -41,7 +41,7 @@ class CreateSiteInformation:
         :type project_id: str
         :param gateway_type: 
         :type gateway_type: :class:`huaweicloudsdkcc.v3.GatewayTypeEnum`
-        :param gateway_id: 实例ID。
+        :param gateway_id: 网关的ID。
         :type gateway_id: str
         """
         
@@ -124,7 +124,7 @@ class CreateSiteInformation:
     def gateway_id(self):
         r"""Gets the gateway_id of this CreateSiteInformation.
 
-        实例ID。
+        网关的ID。
 
         :return: The gateway_id of this CreateSiteInformation.
         :rtype: str
@@ -135,7 +135,7 @@ class CreateSiteInformation:
     def gateway_id(self, gateway_id):
         r"""Sets the gateway_id of this CreateSiteInformation.
 
-        实例ID。
+        网关的ID。
 
         :param gateway_id: The gateway_id of this CreateSiteInformation.
         :type gateway_id: str

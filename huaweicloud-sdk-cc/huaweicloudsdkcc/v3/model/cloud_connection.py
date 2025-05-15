@@ -57,7 +57,7 @@ class CloudConnection:
 
         :param id: 实例ID。
         :type id: str
-        :param name: 实例名字。
+        :param name: 实例名称。
         :type name: str
         :param description: 实例描述。不支持 &lt;&gt;。
         :type description: str
@@ -153,7 +153,7 @@ class CloudConnection:
     def name(self):
         r"""Gets the name of this CloudConnection.
 
-        实例名字。
+        实例名称。
 
         :return: The name of this CloudConnection.
         :rtype: str
@@ -164,7 +164,7 @@ class CloudConnection:
     def name(self, name):
         r"""Sets the name of this CloudConnection.
 
-        实例名字。
+        实例名称。
 
         :param name: The name of this CloudConnection.
         :type name: str

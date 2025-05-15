@@ -45,13 +45,13 @@ class BandwidthPackageLevel:
 
         :param id: 实例ID。
         :type id: str
-        :param level: 带宽包等级
+        :param level: 带宽包等级。
         :type level: str
-        :param name_cn: 实例名字。
+        :param name_cn: 实例名称。
         :type name_cn: str
-        :param name_en: 实例名字。
+        :param name_en: 实例名称。
         :type name_en: str
-        :param display_priority: 展示优先级，数值越低，优先级越高。 铂金系列优先级范围：1-50 金牌系列优先级范围：51-100 银牌系列优先级范围：101-150 其他：大于151
+        :param display_priority: 展示优先级，数值越低，优先级越高。 铂金系列优先级范围：1-50。 金牌系列优先级范围：51-100。 银牌系列优先级范围：101-150。 其他：大于151。
         :type display_priority: int
         :param description: 描述。不支持 &lt;&gt;。
         :type description: str
@@ -116,7 +116,7 @@ class BandwidthPackageLevel:
     def level(self):
         r"""Gets the level of this BandwidthPackageLevel.
 
-        带宽包等级
+        带宽包等级。
 
         :return: The level of this BandwidthPackageLevel.
         :rtype: str
@@ -127,7 +127,7 @@ class BandwidthPackageLevel:
     def level(self, level):
         r"""Sets the level of this BandwidthPackageLevel.
 
-        带宽包等级
+        带宽包等级。
 
         :param level: The level of this BandwidthPackageLevel.
         :type level: str
@@ -138,7 +138,7 @@ class BandwidthPackageLevel:
     def name_cn(self):
         r"""Gets the name_cn of this BandwidthPackageLevel.
 
-        实例名字。
+        实例名称。
 
         :return: The name_cn of this BandwidthPackageLevel.
         :rtype: str
@@ -149,7 +149,7 @@ class BandwidthPackageLevel:
     def name_cn(self, name_cn):
         r"""Sets the name_cn of this BandwidthPackageLevel.
 
-        实例名字。
+        实例名称。
 
         :param name_cn: The name_cn of this BandwidthPackageLevel.
         :type name_cn: str
@@ -160,7 +160,7 @@ class BandwidthPackageLevel:
     def name_en(self):
         r"""Gets the name_en of this BandwidthPackageLevel.
 
-        实例名字。
+        实例名称。
 
         :return: The name_en of this BandwidthPackageLevel.
         :rtype: str
@@ -171,7 +171,7 @@ class BandwidthPackageLevel:
     def name_en(self, name_en):
         r"""Sets the name_en of this BandwidthPackageLevel.
 
-        实例名字。
+        实例名称。
 
         :param name_en: The name_en of this BandwidthPackageLevel.
         :type name_en: str
@@ -182,7 +182,7 @@ class BandwidthPackageLevel:
     def display_priority(self):
         r"""Gets the display_priority of this BandwidthPackageLevel.
 
-        展示优先级，数值越低，优先级越高。 铂金系列优先级范围：1-50 金牌系列优先级范围：51-100 银牌系列优先级范围：101-150 其他：大于151
+        展示优先级，数值越低，优先级越高。 铂金系列优先级范围：1-50。 金牌系列优先级范围：51-100。 银牌系列优先级范围：101-150。 其他：大于151。
 
         :return: The display_priority of this BandwidthPackageLevel.
         :rtype: int
@@ -193,7 +193,7 @@ class BandwidthPackageLevel:
     def display_priority(self, display_priority):
         r"""Sets the display_priority of this BandwidthPackageLevel.
 
-        展示优先级，数值越低，优先级越高。 铂金系列优先级范围：1-50 金牌系列优先级范围：51-100 银牌系列优先级范围：101-150 其他：大于151
+        展示优先级，数值越低，优先级越高。 铂金系列优先级范围：1-50。 金牌系列优先级范围：51-100。 银牌系列优先级范围：101-150。 其他：大于151。
 
         :param display_priority: The display_priority of this BandwidthPackageLevel.
         :type display_priority: int

@@ -59,7 +59,7 @@ class SiteNetworkEntry:
 
         :param id: 实例ID。
         :type id: str
-        :param name: 实例名字。
+        :param name: 实例名称。
         :type name: str
         :param description: 实例描述。不支持 &lt;&gt;。
         :type description: str
@@ -73,7 +73,7 @@ class SiteNetworkEntry:
         :type state: :class:`huaweicloudsdkcc.v3.SiteNetworkStateEnum`
         :param enterprise_project_id: 实例所属企业项目ID。
         :type enterprise_project_id: str
-        :param apply_policy_id: 实例ID。
+        :param apply_policy_id: 应用策略ID。
         :type apply_policy_id: str
         :param tags: 实例标签。
         :type tags: list[:class:`huaweicloudsdkcc.v3.Tag`]
@@ -81,7 +81,7 @@ class SiteNetworkEntry:
         :type topology: :class:`huaweicloudsdkcc.v3.SiteNetworkTopologyEnum`
         :param connections: 分支连接列表。
         :type connections: list[:class:`huaweicloudsdkcc.v3.SiteConnection`]
-        :param sites: p2p拓扑或者网状(mesh)拓扑中的节点。
+        :param sites: 点对点拓扑或者网状拓扑中的节点。
         :type sites: list[:class:`huaweicloudsdkcc.v3.SiteInformation`]
         :param hub_site: 
         :type hub_site: :class:`huaweicloudsdkcc.v3.SiteInformation`
@@ -156,7 +156,7 @@ class SiteNetworkEntry:
     def name(self):
         r"""Gets the name of this SiteNetworkEntry.
 
-        实例名字。
+        实例名称。
 
         :return: The name of this SiteNetworkEntry.
         :rtype: str
@@ -167,7 +167,7 @@ class SiteNetworkEntry:
     def name(self, name):
         r"""Sets the name of this SiteNetworkEntry.
 
-        实例名字。
+        实例名称。
 
         :param name: The name of this SiteNetworkEntry.
         :type name: str
@@ -306,7 +306,7 @@ class SiteNetworkEntry:
     def apply_policy_id(self):
         r"""Gets the apply_policy_id of this SiteNetworkEntry.
 
-        实例ID。
+        应用策略ID。
 
         :return: The apply_policy_id of this SiteNetworkEntry.
         :rtype: str
@@ -317,7 +317,7 @@ class SiteNetworkEntry:
     def apply_policy_id(self, apply_policy_id):
         r"""Sets the apply_policy_id of this SiteNetworkEntry.
 
-        实例ID。
+        应用策略ID。
 
         :param apply_policy_id: The apply_policy_id of this SiteNetworkEntry.
         :type apply_policy_id: str
@@ -390,7 +390,7 @@ class SiteNetworkEntry:
     def sites(self):
         r"""Gets the sites of this SiteNetworkEntry.
 
-        p2p拓扑或者网状(mesh)拓扑中的节点。
+        点对点拓扑或者网状拓扑中的节点。
 
         :return: The sites of this SiteNetworkEntry.
         :rtype: list[:class:`huaweicloudsdkcc.v3.SiteInformation`]
@@ -401,7 +401,7 @@ class SiteNetworkEntry:
     def sites(self, sites):
         r"""Sets the sites of this SiteNetworkEntry.
 
-        p2p拓扑或者网状(mesh)拓扑中的节点。
+        点对点拓扑或者网状拓扑中的节点。
 
         :param sites: The sites of this SiteNetworkEntry.
         :type sites: list[:class:`huaweicloudsdkcc.v3.SiteInformation`]

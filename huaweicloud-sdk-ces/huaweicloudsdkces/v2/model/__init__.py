@@ -19,6 +19,7 @@ from huaweicloudsdkces.v2.model.alarm_template_id import AlarmTemplateID
 from huaweicloudsdkces.v2.model.alarm_template_policies import AlarmTemplatePolicies
 from huaweicloudsdkces.v2.model.alarm_templates import AlarmTemplates
 from huaweicloudsdkces.v2.model.alarm_type import AlarmType
+from huaweicloudsdkces.v2.model.async_associate_rg_and_templates_req import AsyncAssociateRGAndTemplatesReq
 from huaweicloudsdkces.v2.model.base_widget_info import BaseWidgetInfo
 from huaweicloudsdkces.v2.model.base_widget_info_properties import BaseWidgetInfoProperties
 from huaweicloudsdkces.v2.model.batch_create_resources_request import BatchCreateResourcesRequest
@@ -107,6 +108,7 @@ from huaweicloudsdkces.v2.model.extend_relation_id import ExtendRelationId
 from huaweicloudsdkces.v2.model.extra_info import ExtraInfo
 from huaweicloudsdkces.v2.model.filter_without_tp import FilterWithoutTP
 from huaweicloudsdkces.v2.model.get_resource_group_resources import GetResourceGroupResources
+from huaweicloudsdkces.v2.model.group_id import GroupID
 from huaweicloudsdkces.v2.model.hierarchical_value import HierarchicalValue
 from huaweicloudsdkces.v2.model.instance import Instance
 from huaweicloudsdkces.v2.model.is_favorite_item import IsFavoriteItem
@@ -239,6 +241,8 @@ from huaweicloudsdkces.v2.model.update_one_click_alarm_notifications_request imp
 from huaweicloudsdkces.v2.model.update_one_click_alarm_notifications_request_body import UpdateOneClickAlarmNotificationsRequestBody
 from huaweicloudsdkces.v2.model.update_one_click_alarm_notifications_response import UpdateOneClickAlarmNotificationsResponse
 from huaweicloudsdkces.v2.model.update_policy import UpdatePolicy
+from huaweicloudsdkces.v2.model.update_resource_group_association_alarm_template_request import UpdateResourceGroupAssociationAlarmTemplateRequest
+from huaweicloudsdkces.v2.model.update_resource_group_association_alarm_template_response import UpdateResourceGroupAssociationAlarmTemplateResponse
 from huaweicloudsdkces.v2.model.update_resource_group_request import UpdateResourceGroupRequest
 from huaweicloudsdkces.v2.model.update_resource_group_response import UpdateResourceGroupResponse
 from huaweicloudsdkces.v2.model.update_widget_info import UpdateWidgetInfo

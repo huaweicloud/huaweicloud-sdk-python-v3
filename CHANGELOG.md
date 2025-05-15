@@ -1,3 +1,204 @@
+# 3.1.148 2025-05-15
+
+### HuaweiCloud SDK APM
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowFlameLineTree**
+    - changes of request param
+      - `+ x-business-id`
+
+### HuaweiCloud SDK CC
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the following APIs:
+    - `ListCloudConnectionCapabilities`
+    - `ListRegions`
+    - `ListAreas`
+    - `ListRegionBandwidthPackageSpecifications`
+    - `ListAreaBandwidthPackageSpecifications`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListCentralNetworkPolicyChangeSet**
+    - changes of response param
+      - `+ central_network_policy_change_set.operation_id: enum value [SwitchCentralNetworkErTable]`
+  - **ListCentralNetworkCapabilities**
+    - changes of request param
+      - `+ limit`
+      - `+ marker`
+    - changes of response param
+      - `+ page_info`
+      - `+ capabilities.capability: enum value [custom-connections.is-support,custom-connections.support-regions]`
+  - **ListGlobalConnectionBandwidthConfigs**
+    - changes of response param
+      - `+ configs.ces_enabled`
+  - **ListBandwidthPackageSites**
+    - changes of request param
+      - `+ limit`
+      - `+ marker`
+  - **ListBandwidthPackageLevels**
+    - changes of request param
+      - `+ limit`
+      - `+ marker`
+  - **ListCentralNetworkConnections**
+    - changes of response param
+      - `+ central_network_connections.index`
+  - **UpdateCentralNetworkConnection**
+    - changes of response param
+      - `+ central_network_connection.index`
+  - **ListSiteNetworkCapabilities**
+    - changes of request param
+      - `+ limit`
+      - `+ marker`
+    - changes of response param
+      - `+ page_info`
+  - **ListBandwidthPackageLines**
+    - changes of request param
+      - `+ limit`
+      - `+ marker`
+    - changes of response param
+      - `+ page_info`
+  - **ListCentralNetworks**
+    - changes of response param
+      - `+ central_networks.connections.index`
+  - **CreateCentralNetwork**
+    - changes of response param
+      - `+ central_network.connections.index`
+  - **ShowCentralNetwork**
+    - changes of response param
+      - `+ central_network.connections.index`
+  - **UpdateCentralNetwork**
+    - changes of response param
+      - `+ central_network.connections.index`
+  - **DeleteCentralNetwork**
+    - changes of response param
+      - `+ central_network.connections.index`
+  - **ListCentralNetworksByTags**
+    - changes of response param
+      - `+ central_networks.connections.index`
+  - **ApplyCentralNetworkPolicy**
+    - changes of response param
+      - `+ central_network_policy_change_set.operation_id: enum value [SwitchCentralNetworkErTable]`
+
+### HuaweiCloud SDK CES
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the API `UpdateResourceGroupAssociationAlarmTemplate`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK COC
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateReportPrometheusEvent**
+    - changes of response param
+      - `+ data`
+  - **CreateReportCustomEvent**
+    - changes of response param
+      - `+ data`
+
+### HuaweiCloud SDK DDS
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowBackupPolicy**
+    - changes of response param
+      - `+ backup_policy.enable_incremental_backup`
+  - **SetBackupPolicy**
+    - changes of request param
+      - `+ backup_policy.enable_incremental_backup`
+
+### HuaweiCloud SDK ECS
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListFlavors**
+    - changes of request param
+      - `+ flavor_id`
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the API `ListTopIoTraffics`
+
+### HuaweiCloud SDK IAM
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListAgencies**
+    - changes of response param
+      - `+ agencies.duration`
+  - **CreateAgency**
+    - changes of response param
+      - `+ agency.duration`
+  - **ShowAgency**
+    - changes of response param
+      - `+ agency.duration`
+  - **UpdateAgency**
+    - changes of response param
+      - `+ agency.duration`
+
+### HuaweiCloud SDK MetaStudio
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the API `ShowTtsPhoneticSymbol`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK OCR
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the API `RecognizeAutoIdDocClassification`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
 # 3.1.147 2025-05-08
 
 ### HuaweiCloud SDK BMS

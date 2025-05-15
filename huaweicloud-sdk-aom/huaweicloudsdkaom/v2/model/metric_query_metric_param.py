@@ -5,7 +5,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class MetricQueryMeritcParam:
+class MetricQueryMetricParam:
 
     """
     Attributes:
@@ -29,7 +29,7 @@ class MetricQueryMeritcParam:
     }
 
     def __init__(self, dimensions=None, metric_name=None, namespace=None):
-        r"""MetricQueryMeritcParam
+        r"""MetricQueryMetricParam
 
         The model defined in huaweicloud sdk
 
@@ -54,66 +54,66 @@ class MetricQueryMeritcParam:
 
     @property
     def dimensions(self):
-        r"""Gets the dimensions of this MetricQueryMeritcParam.
+        r"""Gets the dimensions of this MetricQueryMetricParam.
 
         指标维度列表。取值范围：数组不能为空，同时数组中任何一个dimension对象name和value属性的值也不能为空。
 
-        :return: The dimensions of this MetricQueryMeritcParam.
+        :return: The dimensions of this MetricQueryMetricParam.
         :rtype: list[:class:`huaweicloudsdkaom.v2.Dimension`]
         """
         return self._dimensions
 
     @dimensions.setter
     def dimensions(self, dimensions):
-        r"""Sets the dimensions of this MetricQueryMeritcParam.
+        r"""Sets the dimensions of this MetricQueryMetricParam.
 
         指标维度列表。取值范围：数组不能为空，同时数组中任何一个dimension对象name和value属性的值也不能为空。
 
-        :param dimensions: The dimensions of this MetricQueryMeritcParam.
+        :param dimensions: The dimensions of this MetricQueryMetricParam.
         :type dimensions: list[:class:`huaweicloudsdkaom.v2.Dimension`]
         """
         self._dimensions = dimensions
 
     @property
     def metric_name(self):
-        r"""Gets the metric_name of this MetricQueryMeritcParam.
+        r"""Gets the metric_name of this MetricQueryMetricParam.
 
         指标名称。名称长度取值范围为1~255个字符。取值范围：AOM提供的基础指标，cpuUsage、cpuCoreUsed等cpuUsage：cpu使用率；cpuCoreUsed：cpu内核占用；用户上报的自定义指标名称。
 
-        :return: The metric_name of this MetricQueryMeritcParam.
+        :return: The metric_name of this MetricQueryMetricParam.
         :rtype: str
         """
         return self._metric_name
 
     @metric_name.setter
     def metric_name(self, metric_name):
-        r"""Sets the metric_name of this MetricQueryMeritcParam.
+        r"""Sets the metric_name of this MetricQueryMetricParam.
 
         指标名称。名称长度取值范围为1~255个字符。取值范围：AOM提供的基础指标，cpuUsage、cpuCoreUsed等cpuUsage：cpu使用率；cpuCoreUsed：cpu内核占用；用户上报的自定义指标名称。
 
-        :param metric_name: The metric_name of this MetricQueryMeritcParam.
+        :param metric_name: The metric_name of this MetricQueryMetricParam.
         :type metric_name: str
         """
         self._metric_name = metric_name
 
     @property
     def namespace(self):
-        r"""Gets the namespace of this MetricQueryMeritcParam.
+        r"""Gets the namespace of this MetricQueryMetricParam.
 
         指标命名空间。取值范围：PAAS.CONTAINER：组件指标、实例指标、进程指标和容器指标的命名空间，PAAS.NODE： 主机指标、网络指标、磁盘指标和文件系统指标的命名空间，PAAS.SLA：SLA指标的命名空间，PAAS.AGGR：集群指标的命名空间，CUSTOMMETRICS：默认的自定义指标的命名空间。
 
-        :return: The namespace of this MetricQueryMeritcParam.
+        :return: The namespace of this MetricQueryMetricParam.
         :rtype: str
         """
         return self._namespace
 
     @namespace.setter
     def namespace(self, namespace):
-        r"""Sets the namespace of this MetricQueryMeritcParam.
+        r"""Sets the namespace of this MetricQueryMetricParam.
 
         指标命名空间。取值范围：PAAS.CONTAINER：组件指标、实例指标、进程指标和容器指标的命名空间，PAAS.NODE： 主机指标、网络指标、磁盘指标和文件系统指标的命名空间，PAAS.SLA：SLA指标的命名空间，PAAS.AGGR：集群指标的命名空间，CUSTOMMETRICS：默认的自定义指标的命名空间。
 
-        :param namespace: The namespace of this MetricQueryMeritcParam.
+        :param namespace: The namespace of this MetricQueryMetricParam.
         :type namespace: str
         """
         self._namespace = namespace
@@ -160,7 +160,7 @@ class MetricQueryMeritcParam:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, MetricQueryMeritcParam):
+        if not isinstance(other, MetricQueryMetricParam):
             return False
 
         return self.__dict__ == other.__dict__

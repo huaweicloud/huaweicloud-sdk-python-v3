@@ -29,7 +29,7 @@ class CreateSiteInformationPair:
 
         The model defined in huaweicloud sdk
 
-        :param sites: 端到端(P2P)类型分支网络连接的两个端点定义，长度固定为2的数组。
+        :param sites: 端到端（P2P）类型分支网络连接的两个端点定义，长度固定为2的数组。
         :type sites: list[:class:`huaweicloudsdkcc.v3.CreateSiteInformation`]
         """
         
@@ -44,7 +44,7 @@ class CreateSiteInformationPair:
     def sites(self):
         r"""Gets the sites of this CreateSiteInformationPair.
 
-        端到端(P2P)类型分支网络连接的两个端点定义，长度固定为2的数组。
+        端到端（P2P）类型分支网络连接的两个端点定义，长度固定为2的数组。
 
         :return: The sites of this CreateSiteInformationPair.
         :rtype: list[:class:`huaweicloudsdkcc.v3.CreateSiteInformation`]
@@ -55,7 +55,7 @@ class CreateSiteInformationPair:
     def sites(self, sites):
         r"""Sets the sites of this CreateSiteInformationPair.
 
-        端到端(P2P)类型分支网络连接的两个端点定义，长度固定为2的数组。
+        端到端（P2P）类型分支网络连接的两个端点定义，长度固定为2的数组。
 
         :param sites: The sites of this CreateSiteInformationPair.
         :type sites: list[:class:`huaweicloudsdkcc.v3.CreateSiteInformation`]

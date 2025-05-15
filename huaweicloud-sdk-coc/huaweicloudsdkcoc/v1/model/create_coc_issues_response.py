@@ -56,10 +56,8 @@ class CreateCocIssuesResponse(SdkResponse):
 
         self.provider_code = provider_code
         self.error_code = error_code
-        if error_msg is not None:
-            self.error_msg = error_msg
-        if data is not None:
-            self.data = data
+        self.error_msg = error_msg
+        self.data = data
 
     @property
     def provider_code(self):

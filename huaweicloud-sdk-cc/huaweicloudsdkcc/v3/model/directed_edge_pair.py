@@ -29,7 +29,7 @@ class DirectedEdgePair:
 
         The model defined in huaweicloud sdk
 
-        :param edge_pair: 分支网络连接的两个端点定义，可能为两个点，也可能为两个单向边，长度固定为2的数组。
+        :param edge_pair: 分支网络连接的两个端点定义，长度固定为2的数组。
         :type edge_pair: list[:class:`huaweicloudsdkcc.v3.DirectedEdge`]
         """
         
@@ -44,7 +44,7 @@ class DirectedEdgePair:
     def edge_pair(self):
         r"""Gets the edge_pair of this DirectedEdgePair.
 
-        分支网络连接的两个端点定义，可能为两个点，也可能为两个单向边，长度固定为2的数组。
+        分支网络连接的两个端点定义，长度固定为2的数组。
 
         :return: The edge_pair of this DirectedEdgePair.
         :rtype: list[:class:`huaweicloudsdkcc.v3.DirectedEdge`]
@@ -55,7 +55,7 @@ class DirectedEdgePair:
     def edge_pair(self, edge_pair):
         r"""Sets the edge_pair of this DirectedEdgePair.
 
-        分支网络连接的两个端点定义，可能为两个点，也可能为两个单向边，长度固定为2的数组。
+        分支网络连接的两个端点定义，长度固定为2的数组。
 
         :param edge_pair: The edge_pair of this DirectedEdgePair.
         :type edge_pair: list[:class:`huaweicloudsdkcc.v3.DirectedEdge`]

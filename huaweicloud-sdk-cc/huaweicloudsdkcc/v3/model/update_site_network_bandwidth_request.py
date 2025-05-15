@@ -19,7 +19,7 @@ class UpdateSiteNetworkBandwidthRequest:
     openapi_types = {
         'site_network_id': 'str',
         'site_connection_id': 'str',
-        'body': 'AssociateSiteConnectionBandwidthRequestBody'
+        'body': 'UpdateSiteConnectionBandwidthRequestBody'
     }
 
     attribute_map = {
@@ -38,7 +38,7 @@ class UpdateSiteNetworkBandwidthRequest:
         :param site_connection_id: 实例ID。
         :type site_connection_id: str
         :param body: Body of the UpdateSiteNetworkBandwidthRequest
-        :type body: :class:`huaweicloudsdkcc.v3.AssociateSiteConnectionBandwidthRequestBody`
+        :type body: :class:`huaweicloudsdkcc.v3.UpdateSiteConnectionBandwidthRequestBody`
         """
         
         
@@ -102,7 +102,7 @@ class UpdateSiteNetworkBandwidthRequest:
         r"""Gets the body of this UpdateSiteNetworkBandwidthRequest.
 
         :return: The body of this UpdateSiteNetworkBandwidthRequest.
-        :rtype: :class:`huaweicloudsdkcc.v3.AssociateSiteConnectionBandwidthRequestBody`
+        :rtype: :class:`huaweicloudsdkcc.v3.UpdateSiteConnectionBandwidthRequestBody`
         """
         return self._body
 
@@ -111,7 +111,7 @@ class UpdateSiteNetworkBandwidthRequest:
         r"""Sets the body of this UpdateSiteNetworkBandwidthRequest.
 
         :param body: The body of this UpdateSiteNetworkBandwidthRequest.
-        :type body: :class:`huaweicloudsdkcc.v3.AssociateSiteConnectionBandwidthRequestBody`
+        :type body: :class:`huaweicloudsdkcc.v3.UpdateSiteConnectionBandwidthRequestBody`
         """
         self._body = body
 

@@ -2178,6 +2178,8 @@ class EcsClient(Client):
         query_params = []
         if 'availability_zone' in local_var_params:
             query_params.append(('availability_zone', local_var_params['availability_zone']))
+        if 'flavor_id' in local_var_params:
+            query_params.append(('flavor_id', local_var_params['flavor_id']))
 
         header_params = {}
 

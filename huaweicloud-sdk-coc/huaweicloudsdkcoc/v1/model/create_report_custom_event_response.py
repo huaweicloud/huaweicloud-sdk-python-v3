@@ -20,16 +20,18 @@ class CreateReportCustomEventResponse(SdkResponse):
     openapi_types = {
         'provider_code': 'str',
         'error_code': 'str',
-        'error_msg': 'str'
+        'error_msg': 'str',
+        'data': 'object'
     }
 
     attribute_map = {
         'provider_code': 'provider_code',
         'error_code': 'error_code',
-        'error_msg': 'error_msg'
+        'error_msg': 'error_msg',
+        'data': 'data'
     }
 
-    def __init__(self, provider_code=None, error_code=None, error_msg=None):
+    def __init__(self, provider_code=None, error_code=None, error_msg=None, data=None):
         r"""CreateReportCustomEventResponse
 
         The model defined in huaweicloud sdk
@@ -40,6 +42,8 @@ class CreateReportCustomEventResponse(SdkResponse):
         :type error_code: str
         :param error_msg: 请求响应描述
         :type error_msg: str
+        :param data: 响应数据
+        :type data: object
         """
         
         super(CreateReportCustomEventResponse, self).__init__()
@@ -47,6 +51,7 @@ class CreateReportCustomEventResponse(SdkResponse):
         self._provider_code = None
         self._error_code = None
         self._error_msg = None
+        self._data = None
         self.discriminator = None
 
         if provider_code is not None:
@@ -55,6 +60,8 @@ class CreateReportCustomEventResponse(SdkResponse):
             self.error_code = error_code
         if error_msg is not None:
             self.error_msg = error_msg
+        if data is not None:
+            self.data = data
 
     @property
     def provider_code(self):
@@ -121,6 +128,28 @@ class CreateReportCustomEventResponse(SdkResponse):
         :type error_msg: str
         """
         self._error_msg = error_msg
+
+    @property
+    def data(self):
+        r"""Gets the data of this CreateReportCustomEventResponse.
+
+        响应数据
+
+        :return: The data of this CreateReportCustomEventResponse.
+        :rtype: object
+        """
+        return self._data
+
+    @data.setter
+    def data(self, data):
+        r"""Sets the data of this CreateReportCustomEventResponse.
+
+        响应数据
+
+        :param data: The data of this CreateReportCustomEventResponse.
+        :type data: object
+        """
+        self._data = data
 
     def to_dict(self):
         """Returns the model properties as a dict"""

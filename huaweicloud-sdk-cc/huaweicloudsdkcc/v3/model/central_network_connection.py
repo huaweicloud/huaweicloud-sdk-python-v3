@@ -61,7 +61,7 @@ class CentralNetworkConnection:
 
         :param id: 实例ID。
         :type id: str
-        :param name: 实例名字。
+        :param name: 实例名称。
         :type name: str
         :param description: 实例描述。不支持 &lt;&gt;。
         :type description: str
@@ -81,7 +81,7 @@ class CentralNetworkConnection:
         :type bandwidth_size: int
         :param state: 
         :type state: :class:`huaweicloudsdkcc.v3.CentralNetworkConnectionStateEnum`
-        :param is_frozen: 是否冻结
+        :param is_frozen: 是否冻结。
         :type is_frozen: bool
         :param connection_type: 
         :type connection_type: :class:`huaweicloudsdkcc.v3.ConnectionTypeEnum`
@@ -160,7 +160,7 @@ class CentralNetworkConnection:
     def name(self):
         r"""Gets the name of this CentralNetworkConnection.
 
-        实例名字。
+        实例名称。
 
         :return: The name of this CentralNetworkConnection.
         :rtype: str
@@ -171,7 +171,7 @@ class CentralNetworkConnection:
     def name(self, name):
         r"""Sets the name of this CentralNetworkConnection.
 
-        实例名字。
+        实例名称。
 
         :param name: The name of this CentralNetworkConnection.
         :type name: str
@@ -372,7 +372,7 @@ class CentralNetworkConnection:
     def is_frozen(self):
         r"""Gets the is_frozen of this CentralNetworkConnection.
 
-        是否冻结
+        是否冻结。
 
         :return: The is_frozen of this CentralNetworkConnection.
         :rtype: bool
@@ -383,7 +383,7 @@ class CentralNetworkConnection:
     def is_frozen(self, is_frozen):
         r"""Sets the is_frozen of this CentralNetworkConnection.
 
-        是否冻结
+        是否冻结。
 
         :param is_frozen: The is_frozen of this CentralNetworkConnection.
         :type is_frozen: bool

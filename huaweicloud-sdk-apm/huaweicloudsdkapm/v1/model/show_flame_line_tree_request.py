@@ -17,29 +17,57 @@ class ShowFlameLineTreeRequest:
     sensitive_list = []
 
     openapi_types = {
+        'x_business_id': 'int',
         'body': 'FlameLineTreeInfo'
     }
 
     attribute_map = {
+        'x_business_id': 'x-business-id',
         'body': 'body'
     }
 
-    def __init__(self, body=None):
+    def __init__(self, x_business_id=None, body=None):
         r"""ShowFlameLineTreeRequest
 
         The model defined in huaweicloud sdk
 
+        :param x_business_id: 应用id。
+        :type x_business_id: int
         :param body: Body of the ShowFlameLineTreeRequest
         :type body: :class:`huaweicloudsdkapm.v1.FlameLineTreeInfo`
         """
         
         
 
+        self._x_business_id = None
         self._body = None
         self.discriminator = None
 
+        self.x_business_id = x_business_id
         if body is not None:
             self.body = body
+
+    @property
+    def x_business_id(self):
+        r"""Gets the x_business_id of this ShowFlameLineTreeRequest.
+
+        应用id。
+
+        :return: The x_business_id of this ShowFlameLineTreeRequest.
+        :rtype: int
+        """
+        return self._x_business_id
+
+    @x_business_id.setter
+    def x_business_id(self, x_business_id):
+        r"""Sets the x_business_id of this ShowFlameLineTreeRequest.
+
+        应用id。
+
+        :param x_business_id: The x_business_id of this ShowFlameLineTreeRequest.
+        :type x_business_id: int
+        """
+        self._x_business_id = x_business_id
 
     @property
     def body(self):

@@ -29,7 +29,7 @@ class Name:
 
         The model defined in huaweicloud sdk
 
-        :param name: 实例名字。
+        :param name: 实例名称。
         :type name: str
         """
         
@@ -44,7 +44,7 @@ class Name:
     def name(self):
         r"""Gets the name of this Name.
 
-        实例名字。
+        实例名称。
 
         :return: The name of this Name.
         :rtype: str
@@ -55,7 +55,7 @@ class Name:
     def name(self, name):
         r"""Sets the name of this Name.
 
-        实例名字。
+        实例名称。
 
         :param name: The name of this Name.
         :type name: str

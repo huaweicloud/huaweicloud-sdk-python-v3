@@ -17,29 +17,36 @@ class ListFlavorsRequest:
     sensitive_list = []
 
     openapi_types = {
-        'availability_zone': 'str'
+        'availability_zone': 'str',
+        'flavor_id': 'str'
     }
 
     attribute_map = {
-        'availability_zone': 'availability_zone'
+        'availability_zone': 'availability_zone',
+        'flavor_id': 'flavor_id'
     }
 
-    def __init__(self, availability_zone=None):
+    def __init__(self, availability_zone=None, flavor_id=None):
         r"""ListFlavorsRequest
 
         The model defined in huaweicloud sdk
 
         :param availability_zone: 可用区，需要指定可用区（AZ）的名称或者ID或者code。  可通过接口 [查询可用区列表接口](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product&#x3D;ECS&amp;api&#x3D;NovaListAvailabilityZones) 获取，也可参考[地区和终端节点](https://developer.huaweicloud.com/endpoint)获取。
         :type availability_zone: str
+        :param flavor_id: 规格id
+        :type flavor_id: str
         """
         
         
 
         self._availability_zone = None
+        self._flavor_id = None
         self.discriminator = None
 
         if availability_zone is not None:
             self.availability_zone = availability_zone
+        if flavor_id is not None:
+            self.flavor_id = flavor_id
 
     @property
     def availability_zone(self):
@@ -62,6 +69,28 @@ class ListFlavorsRequest:
         :type availability_zone: str
         """
         self._availability_zone = availability_zone
+
+    @property
+    def flavor_id(self):
+        r"""Gets the flavor_id of this ListFlavorsRequest.
+
+        规格id
+
+        :return: The flavor_id of this ListFlavorsRequest.
+        :rtype: str
+        """
+        return self._flavor_id
+
+    @flavor_id.setter
+    def flavor_id(self, flavor_id):
+        r"""Sets the flavor_id of this ListFlavorsRequest.
+
+        规格id
+
+        :param flavor_id: The flavor_id of this ListFlavorsRequest.
+        :type flavor_id: str
+        """
+        self._flavor_id = flavor_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

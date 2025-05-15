@@ -133,7 +133,7 @@ from huaweicloudsdkaom.v2.model.metric_data_points import MetricDataPoints
 from huaweicloudsdkaom.v2.model.metric_data_value import MetricDataValue
 from huaweicloudsdkaom.v2.model.metric_item_info import MetricItemInfo
 from huaweicloudsdkaom.v2.model.metric_item_result_api import MetricItemResultAPI
-from huaweicloudsdkaom.v2.model.metric_query_meritc_param import MetricQueryMeritcParam
+from huaweicloudsdkaom.v2.model.metric_query_metric_param import MetricQueryMetricParam
 from huaweicloudsdkaom.v2.model.mute_config import MuteConfig
 from huaweicloudsdkaom.v2.model.mute_rule import MuteRule
 from huaweicloudsdkaom.v2.model.name_rule import NameRule

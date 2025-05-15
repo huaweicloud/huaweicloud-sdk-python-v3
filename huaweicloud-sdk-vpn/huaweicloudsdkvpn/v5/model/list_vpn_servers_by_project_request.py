@@ -33,7 +33,7 @@ class ListVpnServersByProjectRequest:
 
         :param limit: 分页查询时每页返回的记录数量
         :type limit: int
-        :param marker: 上一页最后一条记录的id，为空时为查询第一页。使用说明：必须与limit一起使用。
+        :param marker: 上一页最后一条资源记录的创建时间，为空时为查询第一页。使用说明：必须与limit一起使用。
         :type marker: str
         """
         
@@ -74,7 +74,7 @@ class ListVpnServersByProjectRequest:
     def marker(self):
         r"""Gets the marker of this ListVpnServersByProjectRequest.
 
-        上一页最后一条记录的id，为空时为查询第一页。使用说明：必须与limit一起使用。
+        上一页最后一条资源记录的创建时间，为空时为查询第一页。使用说明：必须与limit一起使用。
 
         :return: The marker of this ListVpnServersByProjectRequest.
         :rtype: str
@@ -85,7 +85,7 @@ class ListVpnServersByProjectRequest:
     def marker(self, marker):
         r"""Sets the marker of this ListVpnServersByProjectRequest.
 
-        上一页最后一条记录的id，为空时为查询第一页。使用说明：必须与limit一起使用。
+        上一页最后一条资源记录的创建时间，为空时为查询第一页。使用说明：必须与limit一起使用。
 
         :param marker: The marker of this ListVpnServersByProjectRequest.
         :type marker: str

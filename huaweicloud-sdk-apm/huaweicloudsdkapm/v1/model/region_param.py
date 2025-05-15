@@ -5,7 +5,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class Region:
+class RegionParam:
 
     """
     Attributes:
@@ -33,7 +33,7 @@ class Region:
     }
 
     def __init__(self, region_id=None, region_name=None, region=None, project_id=None, status=None):
-        r"""Region
+        r"""RegionParam
 
         The model defined in huaweicloud sdk
 
@@ -71,110 +71,110 @@ class Region:
 
     @property
     def region_id(self):
-        r"""Gets the region_id of this Region.
+        r"""Gets the region_id of this RegionParam.
 
         区域id。
 
-        :return: The region_id of this Region.
+        :return: The region_id of this RegionParam.
         :rtype: str
         """
         return self._region_id
 
     @region_id.setter
     def region_id(self, region_id):
-        r"""Sets the region_id of this Region.
+        r"""Sets the region_id of this RegionParam.
 
         区域id。
 
-        :param region_id: The region_id of this Region.
+        :param region_id: The region_id of this RegionParam.
         :type region_id: str
         """
         self._region_id = region_id
 
     @property
     def region_name(self):
-        r"""Gets the region_name of this Region.
+        r"""Gets the region_name of this RegionParam.
 
         区域名称。
 
-        :return: The region_name of this Region.
+        :return: The region_name of this RegionParam.
         :rtype: str
         """
         return self._region_name
 
     @region_name.setter
     def region_name(self, region_name):
-        r"""Sets the region_name of this Region.
+        r"""Sets the region_name of this RegionParam.
 
         区域名称。
 
-        :param region_name: The region_name of this Region.
+        :param region_name: The region_name of this RegionParam.
         :type region_name: str
         """
         self._region_name = region_name
 
     @property
     def region(self):
-        r"""Gets the region of this Region.
+        r"""Gets the region of this RegionParam.
 
         区域。
 
-        :return: The region of this Region.
+        :return: The region of this RegionParam.
         :rtype: str
         """
         return self._region
 
     @region.setter
     def region(self, region):
-        r"""Sets the region of this Region.
+        r"""Sets the region of this RegionParam.
 
         区域。
 
-        :param region: The region of this Region.
+        :param region: The region of this RegionParam.
         :type region: str
         """
         self._region = region
 
     @property
     def project_id(self):
-        r"""Gets the project_id of this Region.
+        r"""Gets the project_id of this RegionParam.
 
         企业项目id。
 
-        :return: The project_id of this Region.
+        :return: The project_id of this RegionParam.
         :rtype: str
         """
         return self._project_id
 
     @project_id.setter
     def project_id(self, project_id):
-        r"""Sets the project_id of this Region.
+        r"""Sets the project_id of this RegionParam.
 
         企业项目id。
 
-        :param project_id: The project_id of this Region.
+        :param project_id: The project_id of this RegionParam.
         :type project_id: str
         """
         self._project_id = project_id
 
     @property
     def status(self):
-        r"""Gets the status of this Region.
+        r"""Gets the status of this RegionParam.
 
         区域状态。
 
-        :return: The status of this Region.
+        :return: The status of this RegionParam.
         :rtype: str
         """
         return self._status
 
     @status.setter
     def status(self, status):
-        r"""Sets the status of this Region.
+        r"""Sets the status of this RegionParam.
 
         区域状态。
 
-        :param status: The status of this Region.
+        :param status: The status of this RegionParam.
         :type status: str
         """
         self._status = status
@@ -221,7 +221,7 @@ class Region:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, Region):
+        if not isinstance(other, RegionParam):
             return False
 
         return self.__dict__ == other.__dict__

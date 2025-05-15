@@ -85,7 +85,7 @@ class CentralNetworkErRouteTableAttachment:
 
         :param id: 实例ID。
         :type id: str
-        :param name: 实例名字。
+        :param name: 实例名称。
         :type name: str
         :param description: 实例描述。不支持 &lt;&gt;。
         :type description: str
@@ -103,7 +103,7 @@ class CentralNetworkErRouteTableAttachment:
         :type central_network_plane_id: str
         :param global_connection_bandwidth_id: 全域互联带宽ID。
         :type global_connection_bandwidth_id: str
-        :param is_frozen: 是否冻结
+        :param is_frozen: 是否冻结。
         :type is_frozen: bool
         :param bandwidth_type: 
         :type bandwidth_type: :class:`huaweicloudsdkcc.v3.BandwidthTypeEnum`
@@ -235,7 +235,7 @@ class CentralNetworkErRouteTableAttachment:
     def name(self):
         r"""Gets the name of this CentralNetworkErRouteTableAttachment.
 
-        实例名字。
+        实例名称。
 
         :return: The name of this CentralNetworkErRouteTableAttachment.
         :rtype: str
@@ -246,7 +246,7 @@ class CentralNetworkErRouteTableAttachment:
     def name(self, name):
         r"""Sets the name of this CentralNetworkErRouteTableAttachment.
 
-        实例名字。
+        实例名称。
 
         :param name: The name of this CentralNetworkErRouteTableAttachment.
         :type name: str
@@ -429,7 +429,7 @@ class CentralNetworkErRouteTableAttachment:
     def is_frozen(self):
         r"""Gets the is_frozen of this CentralNetworkErRouteTableAttachment.
 
-        是否冻结
+        是否冻结。
 
         :return: The is_frozen of this CentralNetworkErRouteTableAttachment.
         :rtype: bool
@@ -440,7 +440,7 @@ class CentralNetworkErRouteTableAttachment:
     def is_frozen(self, is_frozen):
         r"""Sets the is_frozen of this CentralNetworkErRouteTableAttachment.
 
-        是否冻结
+        是否冻结。
 
         :param is_frozen: The is_frozen of this CentralNetworkErRouteTableAttachment.
         :type is_frozen: bool
