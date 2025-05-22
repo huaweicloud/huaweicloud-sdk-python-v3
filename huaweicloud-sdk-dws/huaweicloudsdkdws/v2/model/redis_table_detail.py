@@ -31,9 +31,9 @@ class RedisTableDetail:
 
         The model defined in huaweicloud sdk
 
-        :param data: 具体数据
+        :param data: **参数解释**： 重分布具体数据。 **取值范围**： 不涉及。
         :type data: list[:class:`huaweicloudsdkdws.v2.RedisTable`]
-        :param total: 总条数
+        :param total: **参数解释**： 重分布表张数。 **取值范围**： 不涉及。
         :type total: int
         """
         
@@ -52,7 +52,7 @@ class RedisTableDetail:
     def data(self):
         r"""Gets the data of this RedisTableDetail.
 
-        具体数据
+        **参数解释**： 重分布具体数据。 **取值范围**： 不涉及。
 
         :return: The data of this RedisTableDetail.
         :rtype: list[:class:`huaweicloudsdkdws.v2.RedisTable`]
@@ -63,7 +63,7 @@ class RedisTableDetail:
     def data(self, data):
         r"""Sets the data of this RedisTableDetail.
 
-        具体数据
+        **参数解释**： 重分布具体数据。 **取值范围**： 不涉及。
 
         :param data: The data of this RedisTableDetail.
         :type data: list[:class:`huaweicloudsdkdws.v2.RedisTable`]
@@ -74,7 +74,7 @@ class RedisTableDetail:
     def total(self):
         r"""Gets the total of this RedisTableDetail.
 
-        总条数
+        **参数解释**： 重分布表张数。 **取值范围**： 不涉及。
 
         :return: The total of this RedisTableDetail.
         :rtype: int
@@ -85,7 +85,7 @@ class RedisTableDetail:
     def total(self, total):
         r"""Sets the total of this RedisTableDetail.
 
-        总条数
+        **参数解释**： 重分布表张数。 **取值范围**： 不涉及。
 
         :param total: The total of this RedisTableDetail.
         :type total: int

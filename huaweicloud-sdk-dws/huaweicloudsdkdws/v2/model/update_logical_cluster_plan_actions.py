@@ -33,11 +33,11 @@ class UpdateLogicalClusterPlanActions:
 
         The model defined in huaweicloud sdk
 
-        :param id: 更新逻辑集群增删行动ID
+        :param id: **参数解释**： 逻辑集群增删行动ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type id: str
-        :param type: 更新逻辑集群增删计划行动类型，取值范围为(create|delete)
+        :param type: **参数解释**： 更新逻辑集群增删计划行动类型。 **约束限制**： 不涉及。 **取值范围**： create：创建 delete：删除 **默认取值**： 不涉及。
         :type type: str
-        :param strategy: 更新逻辑集群增删计划行为Cron策略表达式
+        :param strategy: **参数解释**： 更新逻辑集群增删计划行为Cron策略表达式。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type strategy: str
         """
         
@@ -59,7 +59,7 @@ class UpdateLogicalClusterPlanActions:
     def id(self):
         r"""Gets the id of this UpdateLogicalClusterPlanActions.
 
-        更新逻辑集群增删行动ID
+        **参数解释**： 逻辑集群增删行动ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The id of this UpdateLogicalClusterPlanActions.
         :rtype: str
@@ -70,7 +70,7 @@ class UpdateLogicalClusterPlanActions:
     def id(self, id):
         r"""Sets the id of this UpdateLogicalClusterPlanActions.
 
-        更新逻辑集群增删行动ID
+        **参数解释**： 逻辑集群增删行动ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param id: The id of this UpdateLogicalClusterPlanActions.
         :type id: str
@@ -81,7 +81,7 @@ class UpdateLogicalClusterPlanActions:
     def type(self):
         r"""Gets the type of this UpdateLogicalClusterPlanActions.
 
-        更新逻辑集群增删计划行动类型，取值范围为(create|delete)
+        **参数解释**： 更新逻辑集群增删计划行动类型。 **约束限制**： 不涉及。 **取值范围**： create：创建 delete：删除 **默认取值**： 不涉及。
 
         :return: The type of this UpdateLogicalClusterPlanActions.
         :rtype: str
@@ -92,7 +92,7 @@ class UpdateLogicalClusterPlanActions:
     def type(self, type):
         r"""Sets the type of this UpdateLogicalClusterPlanActions.
 
-        更新逻辑集群增删计划行动类型，取值范围为(create|delete)
+        **参数解释**： 更新逻辑集群增删计划行动类型。 **约束限制**： 不涉及。 **取值范围**： create：创建 delete：删除 **默认取值**： 不涉及。
 
         :param type: The type of this UpdateLogicalClusterPlanActions.
         :type type: str
@@ -103,7 +103,7 @@ class UpdateLogicalClusterPlanActions:
     def strategy(self):
         r"""Gets the strategy of this UpdateLogicalClusterPlanActions.
 
-        更新逻辑集群增删计划行为Cron策略表达式
+        **参数解释**： 更新逻辑集群增删计划行为Cron策略表达式。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The strategy of this UpdateLogicalClusterPlanActions.
         :rtype: str
@@ -114,7 +114,7 @@ class UpdateLogicalClusterPlanActions:
     def strategy(self, strategy):
         r"""Sets the strategy of this UpdateLogicalClusterPlanActions.
 
-        更新逻辑集群增删计划行为Cron策略表达式
+        **参数解释**： 更新逻辑集群增删计划行为Cron策略表达式。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param strategy: The strategy of this UpdateLogicalClusterPlanActions.
         :type strategy: str

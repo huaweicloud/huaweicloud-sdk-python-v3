@@ -32,7 +32,8 @@ class ListMembersRequest:
         'enterprise_project_id': 'list[str]',
         'ip_version': 'list[str]',
         'member_type': 'list[str]',
-        'instance_id': 'list[str]'
+        'instance_id': 'list[str]',
+        'availability_zone': 'list[str]'
     }
 
     attribute_map = {
@@ -51,10 +52,11 @@ class ListMembersRequest:
         'enterprise_project_id': 'enterprise_project_id',
         'ip_version': 'ip_version',
         'member_type': 'member_type',
-        'instance_id': 'instance_id'
+        'instance_id': 'instance_id',
+        'availability_zone': 'availability_zone'
     }
 
-    def __init__(self, pool_id=None, marker=None, limit=None, page_reverse=None, name=None, weight=None, admin_state_up=None, subnet_cidr_id=None, address=None, protocol_port=None, id=None, operating_status=None, enterprise_project_id=None, ip_version=None, member_type=None, instance_id=None):
+    def __init__(self, pool_id=None, marker=None, limit=None, page_reverse=None, name=None, weight=None, admin_state_up=None, subnet_cidr_id=None, address=None, protocol_port=None, id=None, operating_status=None, enterprise_project_id=None, ip_version=None, member_type=None, instance_id=None, availability_zone=None):
         r"""ListMembersRequest
 
         The model defined in huaweicloud sdk
@@ -91,6 +93,8 @@ class ListMembersRequest:
         :type member_type: list[str]
         :param instance_id: member关联的ECS实例ID，空表示跨VPC场景的member。  支持多值查询，查询条件格式：*instance_id&#x3D;xxx&amp;instance_id&#x3D;xxx*。
         :type instance_id: list[str]
+        :param availability_zone: 后端服务器的可用区。  支持多值查询，查询条件格式：*availability_zone&#x3D;xxx&amp;availability_zone&#x3D;xxx*。
+        :type availability_zone: list[str]
         """
         
         
@@ -111,6 +115,7 @@ class ListMembersRequest:
         self._ip_version = None
         self._member_type = None
         self._instance_id = None
+        self._availability_zone = None
         self.discriminator = None
 
         self.pool_id = pool_id
@@ -144,6 +149,8 @@ class ListMembersRequest:
             self.member_type = member_type
         if instance_id is not None:
             self.instance_id = instance_id
+        if availability_zone is not None:
+            self.availability_zone = availability_zone
 
     @property
     def pool_id(self):
@@ -496,6 +503,28 @@ class ListMembersRequest:
         :type instance_id: list[str]
         """
         self._instance_id = instance_id
+
+    @property
+    def availability_zone(self):
+        r"""Gets the availability_zone of this ListMembersRequest.
+
+        后端服务器的可用区。  支持多值查询，查询条件格式：*availability_zone=xxx&availability_zone=xxx*。
+
+        :return: The availability_zone of this ListMembersRequest.
+        :rtype: list[str]
+        """
+        return self._availability_zone
+
+    @availability_zone.setter
+    def availability_zone(self, availability_zone):
+        r"""Sets the availability_zone of this ListMembersRequest.
+
+        后端服务器的可用区。  支持多值查询，查询条件格式：*availability_zone=xxx&availability_zone=xxx*。
+
+        :param availability_zone: The availability_zone of this ListMembersRequest.
+        :type availability_zone: list[str]
+        """
+        self._availability_zone = availability_zone
 
     def to_dict(self):
         """Returns the model properties as a dict"""

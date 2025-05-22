@@ -47,25 +47,25 @@ class TopoInstanceInfo:
 
         The model defined in huaweicloud sdk
 
-        :param id: 实例ID
+        :param id: **参数解释**： 实例ID。 **取值范围**： 不涉及。
         :type id: str
-        :param name: 实例名称
+        :param name: **参数解释**： 实例名称。 **取值范围**： 不涉及。
         :type name: str
-        :param manage_ip: 实例管理IP
+        :param manage_ip: **参数解释**： 实例管理IP。 **取值范围**： 不涉及。
         :type manage_ip: str
-        :param traffic_ip: 业务IP
+        :param traffic_ip: **参数解释**： 业务IP。 **取值范围**： 不涉及。
         :type traffic_ip: str
-        :param internal_ip: 内部通信IP
+        :param internal_ip: **参数解释**： 内部通信IP。 **取值范围**： 不涉及。
         :type internal_ip: str
-        :param internal_mgnt_ip: 内部管理IP
+        :param internal_mgnt_ip: **参数解释**： 内部管理IP。 **取值范围**： 不涉及。
         :type internal_mgnt_ip: str
-        :param eip: EIP
+        :param eip: **参数解释**： 公网IP信息。 **取值范围**： 不涉及。
         :type eip: str
-        :param elb: elb地址
+        :param elb: **参数解释**： elb地址。 **取值范围**： 不涉及。
         :type elb: str
-        :param status: 实例状态
+        :param status: **参数解释**： 实例状态。 **取值范围**： 不涉及。
         :type status: str
-        :param az_code: 可用区编码
+        :param az_code: **参数解释**： 可用区编码。 **取值范围**： 不涉及。
         :type az_code: str
         """
         
@@ -108,7 +108,7 @@ class TopoInstanceInfo:
     def id(self):
         r"""Gets the id of this TopoInstanceInfo.
 
-        实例ID
+        **参数解释**： 实例ID。 **取值范围**： 不涉及。
 
         :return: The id of this TopoInstanceInfo.
         :rtype: str
@@ -119,7 +119,7 @@ class TopoInstanceInfo:
     def id(self, id):
         r"""Sets the id of this TopoInstanceInfo.
 
-        实例ID
+        **参数解释**： 实例ID。 **取值范围**： 不涉及。
 
         :param id: The id of this TopoInstanceInfo.
         :type id: str
@@ -130,7 +130,7 @@ class TopoInstanceInfo:
     def name(self):
         r"""Gets the name of this TopoInstanceInfo.
 
-        实例名称
+        **参数解释**： 实例名称。 **取值范围**： 不涉及。
 
         :return: The name of this TopoInstanceInfo.
         :rtype: str
@@ -141,7 +141,7 @@ class TopoInstanceInfo:
     def name(self, name):
         r"""Sets the name of this TopoInstanceInfo.
 
-        实例名称
+        **参数解释**： 实例名称。 **取值范围**： 不涉及。
 
         :param name: The name of this TopoInstanceInfo.
         :type name: str
@@ -152,7 +152,7 @@ class TopoInstanceInfo:
     def manage_ip(self):
         r"""Gets the manage_ip of this TopoInstanceInfo.
 
-        实例管理IP
+        **参数解释**： 实例管理IP。 **取值范围**： 不涉及。
 
         :return: The manage_ip of this TopoInstanceInfo.
         :rtype: str
@@ -163,7 +163,7 @@ class TopoInstanceInfo:
     def manage_ip(self, manage_ip):
         r"""Sets the manage_ip of this TopoInstanceInfo.
 
-        实例管理IP
+        **参数解释**： 实例管理IP。 **取值范围**： 不涉及。
 
         :param manage_ip: The manage_ip of this TopoInstanceInfo.
         :type manage_ip: str
@@ -174,7 +174,7 @@ class TopoInstanceInfo:
     def traffic_ip(self):
         r"""Gets the traffic_ip of this TopoInstanceInfo.
 
-        业务IP
+        **参数解释**： 业务IP。 **取值范围**： 不涉及。
 
         :return: The traffic_ip of this TopoInstanceInfo.
         :rtype: str
@@ -185,7 +185,7 @@ class TopoInstanceInfo:
     def traffic_ip(self, traffic_ip):
         r"""Sets the traffic_ip of this TopoInstanceInfo.
 
-        业务IP
+        **参数解释**： 业务IP。 **取值范围**： 不涉及。
 
         :param traffic_ip: The traffic_ip of this TopoInstanceInfo.
         :type traffic_ip: str
@@ -196,7 +196,7 @@ class TopoInstanceInfo:
     def internal_ip(self):
         r"""Gets the internal_ip of this TopoInstanceInfo.
 
-        内部通信IP
+        **参数解释**： 内部通信IP。 **取值范围**： 不涉及。
 
         :return: The internal_ip of this TopoInstanceInfo.
         :rtype: str
@@ -207,7 +207,7 @@ class TopoInstanceInfo:
     def internal_ip(self, internal_ip):
         r"""Sets the internal_ip of this TopoInstanceInfo.
 
-        内部通信IP
+        **参数解释**： 内部通信IP。 **取值范围**： 不涉及。
 
         :param internal_ip: The internal_ip of this TopoInstanceInfo.
         :type internal_ip: str
@@ -218,7 +218,7 @@ class TopoInstanceInfo:
     def internal_mgnt_ip(self):
         r"""Gets the internal_mgnt_ip of this TopoInstanceInfo.
 
-        内部管理IP
+        **参数解释**： 内部管理IP。 **取值范围**： 不涉及。
 
         :return: The internal_mgnt_ip of this TopoInstanceInfo.
         :rtype: str
@@ -229,7 +229,7 @@ class TopoInstanceInfo:
     def internal_mgnt_ip(self, internal_mgnt_ip):
         r"""Sets the internal_mgnt_ip of this TopoInstanceInfo.
 
-        内部管理IP
+        **参数解释**： 内部管理IP。 **取值范围**： 不涉及。
 
         :param internal_mgnt_ip: The internal_mgnt_ip of this TopoInstanceInfo.
         :type internal_mgnt_ip: str
@@ -240,7 +240,7 @@ class TopoInstanceInfo:
     def eip(self):
         r"""Gets the eip of this TopoInstanceInfo.
 
-        EIP
+        **参数解释**： 公网IP信息。 **取值范围**： 不涉及。
 
         :return: The eip of this TopoInstanceInfo.
         :rtype: str
@@ -251,7 +251,7 @@ class TopoInstanceInfo:
     def eip(self, eip):
         r"""Sets the eip of this TopoInstanceInfo.
 
-        EIP
+        **参数解释**： 公网IP信息。 **取值范围**： 不涉及。
 
         :param eip: The eip of this TopoInstanceInfo.
         :type eip: str
@@ -262,7 +262,7 @@ class TopoInstanceInfo:
     def elb(self):
         r"""Gets the elb of this TopoInstanceInfo.
 
-        elb地址
+        **参数解释**： elb地址。 **取值范围**： 不涉及。
 
         :return: The elb of this TopoInstanceInfo.
         :rtype: str
@@ -273,7 +273,7 @@ class TopoInstanceInfo:
     def elb(self, elb):
         r"""Sets the elb of this TopoInstanceInfo.
 
-        elb地址
+        **参数解释**： elb地址。 **取值范围**： 不涉及。
 
         :param elb: The elb of this TopoInstanceInfo.
         :type elb: str
@@ -284,7 +284,7 @@ class TopoInstanceInfo:
     def status(self):
         r"""Gets the status of this TopoInstanceInfo.
 
-        实例状态
+        **参数解释**： 实例状态。 **取值范围**： 不涉及。
 
         :return: The status of this TopoInstanceInfo.
         :rtype: str
@@ -295,7 +295,7 @@ class TopoInstanceInfo:
     def status(self, status):
         r"""Sets the status of this TopoInstanceInfo.
 
-        实例状态
+        **参数解释**： 实例状态。 **取值范围**： 不涉及。
 
         :param status: The status of this TopoInstanceInfo.
         :type status: str
@@ -306,7 +306,7 @@ class TopoInstanceInfo:
     def az_code(self):
         r"""Gets the az_code of this TopoInstanceInfo.
 
-        可用区编码
+        **参数解释**： 可用区编码。 **取值范围**： 不涉及。
 
         :return: The az_code of this TopoInstanceInfo.
         :rtype: str
@@ -317,7 +317,7 @@ class TopoInstanceInfo:
     def az_code(self, az_code):
         r"""Sets the az_code of this TopoInstanceInfo.
 
-        可用区编码
+        **参数解释**： 可用区编码。 **取值范围**： 不涉及。
 
         :param az_code: The az_code of this TopoInstanceInfo.
         :type az_code: str

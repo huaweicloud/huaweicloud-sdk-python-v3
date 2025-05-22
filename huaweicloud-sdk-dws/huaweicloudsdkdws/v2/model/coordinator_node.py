@@ -33,11 +33,11 @@ class CoordinatorNode:
 
         The model defined in huaweicloud sdk
 
-        :param id: 节点ID。
+        :param id: **参数解释**： 节点ID。 **取值范围**： 不涉及。
         :type id: str
-        :param name: 节点名称。
+        :param name: **参数解释**： 节点名称。 **取值范围**： 不涉及。
         :type name: str
-        :param private_ip: 内网IP。
+        :param private_ip: **参数解释**： 内网IP。 **取值范围**： 不涉及。
         :type private_ip: str
         """
         
@@ -56,7 +56,7 @@ class CoordinatorNode:
     def id(self):
         r"""Gets the id of this CoordinatorNode.
 
-        节点ID。
+        **参数解释**： 节点ID。 **取值范围**： 不涉及。
 
         :return: The id of this CoordinatorNode.
         :rtype: str
@@ -67,7 +67,7 @@ class CoordinatorNode:
     def id(self, id):
         r"""Sets the id of this CoordinatorNode.
 
-        节点ID。
+        **参数解释**： 节点ID。 **取值范围**： 不涉及。
 
         :param id: The id of this CoordinatorNode.
         :type id: str
@@ -78,7 +78,7 @@ class CoordinatorNode:
     def name(self):
         r"""Gets the name of this CoordinatorNode.
 
-        节点名称。
+        **参数解释**： 节点名称。 **取值范围**： 不涉及。
 
         :return: The name of this CoordinatorNode.
         :rtype: str
@@ -89,7 +89,7 @@ class CoordinatorNode:
     def name(self, name):
         r"""Sets the name of this CoordinatorNode.
 
-        节点名称。
+        **参数解释**： 节点名称。 **取值范围**： 不涉及。
 
         :param name: The name of this CoordinatorNode.
         :type name: str
@@ -100,7 +100,7 @@ class CoordinatorNode:
     def private_ip(self):
         r"""Gets the private_ip of this CoordinatorNode.
 
-        内网IP。
+        **参数解释**： 内网IP。 **取值范围**： 不涉及。
 
         :return: The private_ip of this CoordinatorNode.
         :rtype: str
@@ -111,7 +111,7 @@ class CoordinatorNode:
     def private_ip(self, private_ip):
         r"""Sets the private_ip of this CoordinatorNode.
 
-        内网IP。
+        **参数解释**： 内网IP。 **取值范围**： 不涉及。
 
         :param private_ip: The private_ip of this CoordinatorNode.
         :type private_ip: str

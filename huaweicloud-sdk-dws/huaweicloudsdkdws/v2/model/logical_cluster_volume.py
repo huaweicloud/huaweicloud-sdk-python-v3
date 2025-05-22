@@ -35,13 +35,13 @@ class LogicalClusterVolume:
 
         The model defined in huaweicloud sdk
 
-        :param logical_cluster_name: 逻辑集群名称
+        :param logical_cluster_name: **参数解释**： 逻辑集群名称。 **取值范围**： 不涉及。
         :type logical_cluster_name: str
-        :param usage: 磁盘使用量
+        :param usage: **参数解释**： 磁盘使用量。 **取值范围**： 不涉及。
         :type usage: str
-        :param total: 磁盘总量
+        :param total: **参数解释**： 磁盘总量。 **取值范围**： 不涉及。
         :type total: str
-        :param percent: 磁盘使用比例
+        :param percent: **参数解释**： 磁盘使用比例。 **取值范围**： 不涉及。
         :type percent: str
         """
         
@@ -66,7 +66,7 @@ class LogicalClusterVolume:
     def logical_cluster_name(self):
         r"""Gets the logical_cluster_name of this LogicalClusterVolume.
 
-        逻辑集群名称
+        **参数解释**： 逻辑集群名称。 **取值范围**： 不涉及。
 
         :return: The logical_cluster_name of this LogicalClusterVolume.
         :rtype: str
@@ -77,7 +77,7 @@ class LogicalClusterVolume:
     def logical_cluster_name(self, logical_cluster_name):
         r"""Sets the logical_cluster_name of this LogicalClusterVolume.
 
-        逻辑集群名称
+        **参数解释**： 逻辑集群名称。 **取值范围**： 不涉及。
 
         :param logical_cluster_name: The logical_cluster_name of this LogicalClusterVolume.
         :type logical_cluster_name: str
@@ -88,7 +88,7 @@ class LogicalClusterVolume:
     def usage(self):
         r"""Gets the usage of this LogicalClusterVolume.
 
-        磁盘使用量
+        **参数解释**： 磁盘使用量。 **取值范围**： 不涉及。
 
         :return: The usage of this LogicalClusterVolume.
         :rtype: str
@@ -99,7 +99,7 @@ class LogicalClusterVolume:
     def usage(self, usage):
         r"""Sets the usage of this LogicalClusterVolume.
 
-        磁盘使用量
+        **参数解释**： 磁盘使用量。 **取值范围**： 不涉及。
 
         :param usage: The usage of this LogicalClusterVolume.
         :type usage: str
@@ -110,7 +110,7 @@ class LogicalClusterVolume:
     def total(self):
         r"""Gets the total of this LogicalClusterVolume.
 
-        磁盘总量
+        **参数解释**： 磁盘总量。 **取值范围**： 不涉及。
 
         :return: The total of this LogicalClusterVolume.
         :rtype: str
@@ -121,7 +121,7 @@ class LogicalClusterVolume:
     def total(self, total):
         r"""Sets the total of this LogicalClusterVolume.
 
-        磁盘总量
+        **参数解释**： 磁盘总量。 **取值范围**： 不涉及。
 
         :param total: The total of this LogicalClusterVolume.
         :type total: str
@@ -132,7 +132,7 @@ class LogicalClusterVolume:
     def percent(self):
         r"""Gets the percent of this LogicalClusterVolume.
 
-        磁盘使用比例
+        **参数解释**： 磁盘使用比例。 **取值范围**： 不涉及。
 
         :return: The percent of this LogicalClusterVolume.
         :rtype: str
@@ -143,7 +143,7 @@ class LogicalClusterVolume:
     def percent(self, percent):
         r"""Sets the percent of this LogicalClusterVolume.
 
-        磁盘使用比例
+        **参数解释**： 磁盘使用比例。 **取值范围**： 不涉及。
 
         :param percent: The percent of this LogicalClusterVolume.
         :type percent: str

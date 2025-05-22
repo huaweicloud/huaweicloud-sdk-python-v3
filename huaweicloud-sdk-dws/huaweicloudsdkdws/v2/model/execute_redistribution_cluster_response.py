@@ -18,7 +18,7 @@ class ExecuteRedistributionClusterResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'str'
+        'body': 'object'
     }
 
     attribute_map = {
@@ -30,8 +30,8 @@ class ExecuteRedistributionClusterResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param body: 
-        :type body: str
+        :param body: **参数解释**： 请求成功时的空白响应。 **取值范围**： 不涉及。
+        :type body: object
         """
         
         super(ExecuteRedistributionClusterResponse, self).__init__()
@@ -46,8 +46,10 @@ class ExecuteRedistributionClusterResponse(SdkResponse):
     def body(self):
         r"""Gets the body of this ExecuteRedistributionClusterResponse.
 
+        **参数解释**： 请求成功时的空白响应。 **取值范围**： 不涉及。
+
         :return: The body of this ExecuteRedistributionClusterResponse.
-        :rtype: str
+        :rtype: object
         """
         return self._body
 
@@ -55,8 +57,10 @@ class ExecuteRedistributionClusterResponse(SdkResponse):
     def body(self, body):
         r"""Sets the body of this ExecuteRedistributionClusterResponse.
 
+        **参数解释**： 请求成功时的空白响应。 **取值范围**： 不涉及。
+
         :param body: The body of this ExecuteRedistributionClusterResponse.
-        :type body: str
+        :type body: object
         """
         self._body = body
 

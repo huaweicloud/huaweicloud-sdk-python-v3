@@ -29,7 +29,7 @@ class TopoRingInfo:
 
         The model defined in huaweicloud sdk
 
-        :param instance_info_lists: 集群实例列表信息
+        :param instance_info_lists: **参数解释**： 集群实例列表信息。 **取值范围**： 不涉及。
         :type instance_info_lists: list[:class:`huaweicloudsdkdws.v2.TopoInstanceInfo`]
         """
         
@@ -45,7 +45,7 @@ class TopoRingInfo:
     def instance_info_lists(self):
         r"""Gets the instance_info_lists of this TopoRingInfo.
 
-        集群实例列表信息
+        **参数解释**： 集群实例列表信息。 **取值范围**： 不涉及。
 
         :return: The instance_info_lists of this TopoRingInfo.
         :rtype: list[:class:`huaweicloudsdkdws.v2.TopoInstanceInfo`]
@@ -56,7 +56,7 @@ class TopoRingInfo:
     def instance_info_lists(self, instance_info_lists):
         r"""Sets the instance_info_lists of this TopoRingInfo.
 
-        集群实例列表信息
+        **参数解释**： 集群实例列表信息。 **取值范围**： 不涉及。
 
         :param instance_info_lists: The instance_info_lists of this TopoRingInfo.
         :type instance_info_lists: list[:class:`huaweicloudsdkdws.v2.TopoInstanceInfo`]

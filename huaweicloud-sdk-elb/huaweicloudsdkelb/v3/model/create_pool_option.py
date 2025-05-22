@@ -18,6 +18,7 @@ class CreatePoolOption:
 
     openapi_types = {
         'admin_state_up': 'bool',
+        'az_affinity': 'AzAffinity',
         'description': 'str',
         'lb_algorithm': 'str',
         'listener_id': 'str',
@@ -42,6 +43,7 @@ class CreatePoolOption:
 
     attribute_map = {
         'admin_state_up': 'admin_state_up',
+        'az_affinity': 'az_affinity',
         'description': 'description',
         'lb_algorithm': 'lb_algorithm',
         'listener_id': 'listener_id',
@@ -64,13 +66,15 @@ class CreatePoolOption:
         'quic_cid_hash_strategy': 'quic_cid_hash_strategy'
     }
 
-    def __init__(self, admin_state_up=None, description=None, lb_algorithm=None, listener_id=None, loadbalancer_id=None, name=None, project_id=None, protocol=None, session_persistence=None, slow_start=None, member_deletion_protection_enable=None, vpc_id=None, type=None, ip_version=None, protection_status=None, protection_reason=None, any_port_enable=None, connection_drain=None, pool_health=None, public_border_group=None, quic_cid_hash_strategy=None):
+    def __init__(self, admin_state_up=None, az_affinity=None, description=None, lb_algorithm=None, listener_id=None, loadbalancer_id=None, name=None, project_id=None, protocol=None, session_persistence=None, slow_start=None, member_deletion_protection_enable=None, vpc_id=None, type=None, ip_version=None, protection_status=None, protection_reason=None, any_port_enable=None, connection_drain=None, pool_health=None, public_border_group=None, quic_cid_hash_strategy=None):
         r"""CreatePoolOption
 
         The model defined in huaweicloud sdk
 
         :param admin_state_up: 参数解释：后端服务器组的管理状态，只支持设置为true。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
         :type admin_state_up: bool
+        :param az_affinity: 
+        :type az_affinity: :class:`huaweicloudsdkelb.v3.AzAffinity`
         :param description: 参数解释：后端服务器组的描述信息。
         :type description: str
         :param lb_algorithm: 参数解释：后端服务器组的负载均衡算法。  约束限制： - 当该字段的取值为SOURCE_IP或QUIC_CID时，后端服务器组绑定的后端服务器的weight字段无效。 - 只有pool的protocol为QUIC时，才支持QUIC_CID算法。  取值范围： - ROUND_ROBIN：加权轮询算法。 - LEAST_CONNECTIONS：加权最少连接算法。 - SOURCE_IP：源IP算法。 - QUIC_CID：连接ID算法。 [- 2_TUPLE_HASH：二元组hash算法，仅IP类型的pool支持。 - 3_TUPLE_HASH：三元组hash算法，仅IP类型的pool支持。 - 5_TUPLE_HASH：五元组hash算法，仅IP类型的pool支持。 - IP型pool不指定该字段时，默认设置为5_TUPLE_HASH。](tag:hws_eu)  [不支持QUIC_CID。](tag:tm,hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC_CID。](tag:dt)
@@ -116,6 +120,7 @@ class CreatePoolOption:
         
 
         self._admin_state_up = None
+        self._az_affinity = None
         self._description = None
         self._lb_algorithm = None
         self._listener_id = None
@@ -140,6 +145,8 @@ class CreatePoolOption:
 
         if admin_state_up is not None:
             self.admin_state_up = admin_state_up
+        if az_affinity is not None:
+            self.az_affinity = az_affinity
         if description is not None:
             self.description = description
         self.lb_algorithm = lb_algorithm
@@ -200,6 +207,24 @@ class CreatePoolOption:
         :type admin_state_up: bool
         """
         self._admin_state_up = admin_state_up
+
+    @property
+    def az_affinity(self):
+        r"""Gets the az_affinity of this CreatePoolOption.
+
+        :return: The az_affinity of this CreatePoolOption.
+        :rtype: :class:`huaweicloudsdkelb.v3.AzAffinity`
+        """
+        return self._az_affinity
+
+    @az_affinity.setter
+    def az_affinity(self, az_affinity):
+        r"""Sets the az_affinity of this CreatePoolOption.
+
+        :param az_affinity: The az_affinity of this CreatePoolOption.
+        :type az_affinity: :class:`huaweicloudsdkelb.v3.AzAffinity`
+        """
+        self._az_affinity = az_affinity
 
     @property
     def description(self):

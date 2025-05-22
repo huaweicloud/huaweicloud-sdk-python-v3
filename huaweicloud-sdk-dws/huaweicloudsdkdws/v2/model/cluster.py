@@ -29,7 +29,7 @@ class Cluster:
 
         The model defined in huaweicloud sdk
 
-        :param id: 集群ID
+        :param id: **参数解释**： 集群ID。 **取值范围**： 不涉及。
         :type id: str
         """
         
@@ -44,7 +44,7 @@ class Cluster:
     def id(self):
         r"""Gets the id of this Cluster.
 
-        集群ID
+        **参数解释**： 集群ID。 **取值范围**： 不涉及。
 
         :return: The id of this Cluster.
         :rtype: str
@@ -55,7 +55,7 @@ class Cluster:
     def id(self, id):
         r"""Sets the id of this Cluster.
 
-        集群ID
+        **参数解释**： 集群ID。 **取值范围**： 不涉及。
 
         :param id: The id of this Cluster.
         :type id: str

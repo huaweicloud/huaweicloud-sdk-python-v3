@@ -73,15 +73,15 @@ class PackageResponse:
 
         The model defined in huaweicloud sdk
 
-        :param package_id: 防护包id
+        :param package_id: 实例id
         :type package_id: str
-        :param package_name: 防护包名
+        :param package_name: 实例名
         :type package_name: str
         :param region_id: 资源所属region
         :type region_id: str
         :param protection_type: 防护类型
         :type protection_type: int
-        :param instance_type: 防护包类型。cnad_pro：专业版；cnad_ip：标准版；cnad_ep：铂金版；cnad_full_high：全力防高级版；cnad_vic：按需版；cnad_intl_ep：国际站铂金版
+        :param instance_type: 实例类型。cnad_pro：专业版；cnad_ip：标准版；cnad_ep：铂金版；cnad_full_high：全力防高级版；cnad_vic：按需版；cnad_intl_ep：国际站铂金版
         :type instance_type: str
         :param resource_id: 资源id
         :type resource_id: str
@@ -113,7 +113,7 @@ class PackageResponse:
         :type clean_bandwidth: int
         :param policy_num: 策略模板数
         :type policy_num: int
-        :param is_old: 是否旧防护包（旧防护包不支持升级规格）,默认不传为否
+        :param is_old: 是否旧实例（旧实例不支持升级规格）,默认不传为否
         :type is_old: bool
         :param new_flag: 专业版铂金版合并之后购买的专业版和铂金版均标识为true
         :type new_flag: bool
@@ -191,7 +191,7 @@ class PackageResponse:
     def package_id(self):
         r"""Gets the package_id of this PackageResponse.
 
-        防护包id
+        实例id
 
         :return: The package_id of this PackageResponse.
         :rtype: str
@@ -202,7 +202,7 @@ class PackageResponse:
     def package_id(self, package_id):
         r"""Sets the package_id of this PackageResponse.
 
-        防护包id
+        实例id
 
         :param package_id: The package_id of this PackageResponse.
         :type package_id: str
@@ -213,7 +213,7 @@ class PackageResponse:
     def package_name(self):
         r"""Gets the package_name of this PackageResponse.
 
-        防护包名
+        实例名
 
         :return: The package_name of this PackageResponse.
         :rtype: str
@@ -224,7 +224,7 @@ class PackageResponse:
     def package_name(self, package_name):
         r"""Sets the package_name of this PackageResponse.
 
-        防护包名
+        实例名
 
         :param package_name: The package_name of this PackageResponse.
         :type package_name: str
@@ -279,7 +279,7 @@ class PackageResponse:
     def instance_type(self):
         r"""Gets the instance_type of this PackageResponse.
 
-        防护包类型。cnad_pro：专业版；cnad_ip：标准版；cnad_ep：铂金版；cnad_full_high：全力防高级版；cnad_vic：按需版；cnad_intl_ep：国际站铂金版
+        实例类型。cnad_pro：专业版；cnad_ip：标准版；cnad_ep：铂金版；cnad_full_high：全力防高级版；cnad_vic：按需版；cnad_intl_ep：国际站铂金版
 
         :return: The instance_type of this PackageResponse.
         :rtype: str
@@ -290,7 +290,7 @@ class PackageResponse:
     def instance_type(self, instance_type):
         r"""Sets the instance_type of this PackageResponse.
 
-        防护包类型。cnad_pro：专业版；cnad_ip：标准版；cnad_ep：铂金版；cnad_full_high：全力防高级版；cnad_vic：按需版；cnad_intl_ep：国际站铂金版
+        实例类型。cnad_pro：专业版；cnad_ip：标准版；cnad_ep：铂金版；cnad_full_high：全力防高级版；cnad_vic：按需版；cnad_intl_ep：国际站铂金版
 
         :param instance_type: The instance_type of this PackageResponse.
         :type instance_type: str
@@ -631,7 +631,7 @@ class PackageResponse:
     def is_old(self):
         r"""Gets the is_old of this PackageResponse.
 
-        是否旧防护包（旧防护包不支持升级规格）,默认不传为否
+        是否旧实例（旧实例不支持升级规格）,默认不传为否
 
         :return: The is_old of this PackageResponse.
         :rtype: bool
@@ -642,7 +642,7 @@ class PackageResponse:
     def is_old(self, is_old):
         r"""Sets the is_old of this PackageResponse.
 
-        是否旧防护包（旧防护包不支持升级规格）,默认不传为否
+        是否旧实例（旧实例不支持升级规格）,默认不传为否
 
         :param is_old: The is_old of this PackageResponse.
         :type is_old: bool

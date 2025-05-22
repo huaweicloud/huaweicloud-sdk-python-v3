@@ -34,11 +34,11 @@ class ListClusterCnResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param min_num: 集群支持的最小CN节点数量。
+        :param min_num: **参数解释**： 集群支持的最小CN节点数量。 **取值范围**： 不涉及。
         :type min_num: int
-        :param max_num: 集群支持的最大CN节点数量。
+        :param max_num: **参数解释**： 集群支持的最大CN节点数量。 **取值范围**： 不涉及。
         :type max_num: int
-        :param instances: CN节点详情列表。
+        :param instances: **参数解释**： CN节点详情列表。 **取值范围**： 不涉及。
         :type instances: list[:class:`huaweicloudsdkdws.v2.CoordinatorNode`]
         """
         
@@ -60,7 +60,7 @@ class ListClusterCnResponse(SdkResponse):
     def min_num(self):
         r"""Gets the min_num of this ListClusterCnResponse.
 
-        集群支持的最小CN节点数量。
+        **参数解释**： 集群支持的最小CN节点数量。 **取值范围**： 不涉及。
 
         :return: The min_num of this ListClusterCnResponse.
         :rtype: int
@@ -71,7 +71,7 @@ class ListClusterCnResponse(SdkResponse):
     def min_num(self, min_num):
         r"""Sets the min_num of this ListClusterCnResponse.
 
-        集群支持的最小CN节点数量。
+        **参数解释**： 集群支持的最小CN节点数量。 **取值范围**： 不涉及。
 
         :param min_num: The min_num of this ListClusterCnResponse.
         :type min_num: int
@@ -82,7 +82,7 @@ class ListClusterCnResponse(SdkResponse):
     def max_num(self):
         r"""Gets the max_num of this ListClusterCnResponse.
 
-        集群支持的最大CN节点数量。
+        **参数解释**： 集群支持的最大CN节点数量。 **取值范围**： 不涉及。
 
         :return: The max_num of this ListClusterCnResponse.
         :rtype: int
@@ -93,7 +93,7 @@ class ListClusterCnResponse(SdkResponse):
     def max_num(self, max_num):
         r"""Sets the max_num of this ListClusterCnResponse.
 
-        集群支持的最大CN节点数量。
+        **参数解释**： 集群支持的最大CN节点数量。 **取值范围**： 不涉及。
 
         :param max_num: The max_num of this ListClusterCnResponse.
         :type max_num: int
@@ -104,7 +104,7 @@ class ListClusterCnResponse(SdkResponse):
     def instances(self):
         r"""Gets the instances of this ListClusterCnResponse.
 
-        CN节点详情列表。
+        **参数解释**： CN节点详情列表。 **取值范围**： 不涉及。
 
         :return: The instances of this ListClusterCnResponse.
         :rtype: list[:class:`huaweicloudsdkdws.v2.CoordinatorNode`]
@@ -115,7 +115,7 @@ class ListClusterCnResponse(SdkResponse):
     def instances(self, instances):
         r"""Sets the instances of this ListClusterCnResponse.
 
-        CN节点详情列表。
+        **参数解释**： CN节点详情列表。 **取值范围**： 不涉及。
 
         :param instances: The instances of this ListClusterCnResponse.
         :type instances: list[:class:`huaweicloudsdkdws.v2.CoordinatorNode`]

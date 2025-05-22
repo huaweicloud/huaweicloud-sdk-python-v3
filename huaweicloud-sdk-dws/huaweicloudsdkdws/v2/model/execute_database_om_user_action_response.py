@@ -18,7 +18,7 @@ class ExecuteDatabaseOmUserActionResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'error_code': 'str',
+        'error_code': 'int',
         'error_msg': 'str',
         'om_user_info': 'DatabaseOmUserInfo'
     }
@@ -34,9 +34,9 @@ class ExecuteDatabaseOmUserActionResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param error_code: 错误码
-        :type error_code: str
-        :param error_msg: 错误信息
+        :param error_code: **参数解释**： 错误码。非0皆为异常场景。 **取值范围**： 不涉及。
+        :type error_code: int
+        :param error_msg: **参数解释**： 错误信息。 **取值范围**： 不涉及。
         :type error_msg: str
         :param om_user_info: 
         :type om_user_info: :class:`huaweicloudsdkdws.v2.DatabaseOmUserInfo`
@@ -60,10 +60,10 @@ class ExecuteDatabaseOmUserActionResponse(SdkResponse):
     def error_code(self):
         r"""Gets the error_code of this ExecuteDatabaseOmUserActionResponse.
 
-        错误码
+        **参数解释**： 错误码。非0皆为异常场景。 **取值范围**： 不涉及。
 
         :return: The error_code of this ExecuteDatabaseOmUserActionResponse.
-        :rtype: str
+        :rtype: int
         """
         return self._error_code
 
@@ -71,10 +71,10 @@ class ExecuteDatabaseOmUserActionResponse(SdkResponse):
     def error_code(self, error_code):
         r"""Sets the error_code of this ExecuteDatabaseOmUserActionResponse.
 
-        错误码
+        **参数解释**： 错误码。非0皆为异常场景。 **取值范围**： 不涉及。
 
         :param error_code: The error_code of this ExecuteDatabaseOmUserActionResponse.
-        :type error_code: str
+        :type error_code: int
         """
         self._error_code = error_code
 
@@ -82,7 +82,7 @@ class ExecuteDatabaseOmUserActionResponse(SdkResponse):
     def error_msg(self):
         r"""Gets the error_msg of this ExecuteDatabaseOmUserActionResponse.
 
-        错误信息
+        **参数解释**： 错误信息。 **取值范围**： 不涉及。
 
         :return: The error_msg of this ExecuteDatabaseOmUserActionResponse.
         :rtype: str
@@ -93,7 +93,7 @@ class ExecuteDatabaseOmUserActionResponse(SdkResponse):
     def error_msg(self, error_msg):
         r"""Sets the error_msg of this ExecuteDatabaseOmUserActionResponse.
 
-        错误信息
+        **参数解释**： 错误信息。 **取值范围**： 不涉及。
 
         :param error_msg: The error_msg of this ExecuteDatabaseOmUserActionResponse.
         :type error_msg: str

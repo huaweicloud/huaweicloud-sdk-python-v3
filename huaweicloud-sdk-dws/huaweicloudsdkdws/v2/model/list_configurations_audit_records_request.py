@@ -39,7 +39,7 @@ class ListConfigurationsAuditRecordsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param cluster_id: 集群ID
+        :param cluster_id: **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
         :type cluster_id: str
         :param action_time: 任务时间
         :type action_time: int
@@ -47,9 +47,9 @@ class ListConfigurationsAuditRecordsRequest:
         :type filter_by: str
         :param filter: 过滤条件
         :type filter: str
-        :param limit: 查询条数
+        :param limit: **参数解释**： 分页单页大小。 **约束限制**： 不涉及。 **取值范围**： 大于0。 **默认取值**： 10
         :type limit: int
-        :param offset: 偏移量
+        :param offset: **参数解释**： 分页查询，偏移量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 0
         :type offset: int
         """
         
@@ -79,7 +79,7 @@ class ListConfigurationsAuditRecordsRequest:
     def cluster_id(self):
         r"""Gets the cluster_id of this ListConfigurationsAuditRecordsRequest.
 
-        集群ID
+        **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
 
         :return: The cluster_id of this ListConfigurationsAuditRecordsRequest.
         :rtype: str
@@ -90,7 +90,7 @@ class ListConfigurationsAuditRecordsRequest:
     def cluster_id(self, cluster_id):
         r"""Sets the cluster_id of this ListConfigurationsAuditRecordsRequest.
 
-        集群ID
+        **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
 
         :param cluster_id: The cluster_id of this ListConfigurationsAuditRecordsRequest.
         :type cluster_id: str
@@ -167,7 +167,7 @@ class ListConfigurationsAuditRecordsRequest:
     def limit(self):
         r"""Gets the limit of this ListConfigurationsAuditRecordsRequest.
 
-        查询条数
+        **参数解释**： 分页单页大小。 **约束限制**： 不涉及。 **取值范围**： 大于0。 **默认取值**： 10
 
         :return: The limit of this ListConfigurationsAuditRecordsRequest.
         :rtype: int
@@ -178,7 +178,7 @@ class ListConfigurationsAuditRecordsRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListConfigurationsAuditRecordsRequest.
 
-        查询条数
+        **参数解释**： 分页单页大小。 **约束限制**： 不涉及。 **取值范围**： 大于0。 **默认取值**： 10
 
         :param limit: The limit of this ListConfigurationsAuditRecordsRequest.
         :type limit: int
@@ -189,7 +189,7 @@ class ListConfigurationsAuditRecordsRequest:
     def offset(self):
         r"""Gets the offset of this ListConfigurationsAuditRecordsRequest.
 
-        偏移量
+        **参数解释**： 分页查询，偏移量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 0
 
         :return: The offset of this ListConfigurationsAuditRecordsRequest.
         :rtype: int
@@ -200,7 +200,7 @@ class ListConfigurationsAuditRecordsRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListConfigurationsAuditRecordsRequest.
 
-        偏移量
+        **参数解释**： 分页查询，偏移量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 0
 
         :param offset: The offset of this ListConfigurationsAuditRecordsRequest.
         :type offset: int

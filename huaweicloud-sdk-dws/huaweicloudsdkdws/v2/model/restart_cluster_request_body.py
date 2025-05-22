@@ -29,7 +29,7 @@ class RestartClusterRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param restart: 重启标识
+        :param restart: **参数解释**： 重启标识。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type restart: object
         """
         
@@ -44,7 +44,7 @@ class RestartClusterRequestBody:
     def restart(self):
         r"""Gets the restart of this RestartClusterRequestBody.
 
-        重启标识
+        **参数解释**： 重启标识。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The restart of this RestartClusterRequestBody.
         :rtype: object
@@ -55,7 +55,7 @@ class RestartClusterRequestBody:
     def restart(self, restart):
         r"""Sets the restart of this RestartClusterRequestBody.
 
-        重启标识
+        **参数解释**： 重启标识。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param restart: The restart of this RestartClusterRequestBody.
         :type restart: object

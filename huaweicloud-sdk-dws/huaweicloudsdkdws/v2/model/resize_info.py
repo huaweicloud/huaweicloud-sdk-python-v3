@@ -35,13 +35,13 @@ class ResizeInfo:
 
         The model defined in huaweicloud sdk
 
-        :param target_node_num: 扩容后的节点数量
+        :param target_node_num: **参数解释**： 扩容后的节点数量。 **取值范围**： 不涉及。
         :type target_node_num: int
-        :param origin_node_num: 扩容前的节点数量
+        :param origin_node_num: **参数解释**： 扩容前的节点数量。 **取值范围**： 不涉及。
         :type origin_node_num: int
-        :param resize_status: 扩容状态，取值如下：  - GROWING：扩容中 - RESIZE_FAILURE：扩容失败
+        :param resize_status: **参数解释**： 扩容状态。 **取值范围**： - GROWING：扩容中 - RESIZE_FAILURE：扩容失败。
         :type resize_status: str
-        :param start_time: 扩容开始时间，格式为ISO8601：YYYY-MM-DDThh:mm:ss
+        :param start_time: **参数解释**： 扩容开始时间，格式为ISO8601：YYYY-MM-DDThh:mm:ss **取值范围**： 不涉及。
         :type start_time: str
         """
         
@@ -66,7 +66,7 @@ class ResizeInfo:
     def target_node_num(self):
         r"""Gets the target_node_num of this ResizeInfo.
 
-        扩容后的节点数量
+        **参数解释**： 扩容后的节点数量。 **取值范围**： 不涉及。
 
         :return: The target_node_num of this ResizeInfo.
         :rtype: int
@@ -77,7 +77,7 @@ class ResizeInfo:
     def target_node_num(self, target_node_num):
         r"""Sets the target_node_num of this ResizeInfo.
 
-        扩容后的节点数量
+        **参数解释**： 扩容后的节点数量。 **取值范围**： 不涉及。
 
         :param target_node_num: The target_node_num of this ResizeInfo.
         :type target_node_num: int
@@ -88,7 +88,7 @@ class ResizeInfo:
     def origin_node_num(self):
         r"""Gets the origin_node_num of this ResizeInfo.
 
-        扩容前的节点数量
+        **参数解释**： 扩容前的节点数量。 **取值范围**： 不涉及。
 
         :return: The origin_node_num of this ResizeInfo.
         :rtype: int
@@ -99,7 +99,7 @@ class ResizeInfo:
     def origin_node_num(self, origin_node_num):
         r"""Sets the origin_node_num of this ResizeInfo.
 
-        扩容前的节点数量
+        **参数解释**： 扩容前的节点数量。 **取值范围**： 不涉及。
 
         :param origin_node_num: The origin_node_num of this ResizeInfo.
         :type origin_node_num: int
@@ -110,7 +110,7 @@ class ResizeInfo:
     def resize_status(self):
         r"""Gets the resize_status of this ResizeInfo.
 
-        扩容状态，取值如下：  - GROWING：扩容中 - RESIZE_FAILURE：扩容失败
+        **参数解释**： 扩容状态。 **取值范围**： - GROWING：扩容中 - RESIZE_FAILURE：扩容失败。
 
         :return: The resize_status of this ResizeInfo.
         :rtype: str
@@ -121,7 +121,7 @@ class ResizeInfo:
     def resize_status(self, resize_status):
         r"""Sets the resize_status of this ResizeInfo.
 
-        扩容状态，取值如下：  - GROWING：扩容中 - RESIZE_FAILURE：扩容失败
+        **参数解释**： 扩容状态。 **取值范围**： - GROWING：扩容中 - RESIZE_FAILURE：扩容失败。
 
         :param resize_status: The resize_status of this ResizeInfo.
         :type resize_status: str
@@ -132,7 +132,7 @@ class ResizeInfo:
     def start_time(self):
         r"""Gets the start_time of this ResizeInfo.
 
-        扩容开始时间，格式为ISO8601：YYYY-MM-DDThh:mm:ss
+        **参数解释**： 扩容开始时间，格式为ISO8601：YYYY-MM-DDThh:mm:ss **取值范围**： 不涉及。
 
         :return: The start_time of this ResizeInfo.
         :rtype: str
@@ -143,7 +143,7 @@ class ResizeInfo:
     def start_time(self, start_time):
         r"""Sets the start_time of this ResizeInfo.
 
-        扩容开始时间，格式为ISO8601：YYYY-MM-DDThh:mm:ss
+        **参数解释**： 扩容开始时间，格式为ISO8601：YYYY-MM-DDThh:mm:ss **取值范围**： 不涉及。
 
         :param start_time: The start_time of this ResizeInfo.
         :type start_time: str

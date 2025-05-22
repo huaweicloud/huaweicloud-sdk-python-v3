@@ -43,21 +43,21 @@ class DssPool:
 
         The model defined in huaweicloud sdk
 
-        :param id: 专属分布式存储池名称。
+        :param id: **参数解释**： 专属分布式存储池名称。 **取值范围**： 不涉及。
         :type id: str
-        :param name: 专属分布式存储池ID。
+        :param name: **参数解释**： 专属分布式存储池ID。 **取值范围**： 不涉及。
         :type name: str
-        :param type: 专属分布式存储池的存储类型。 - SSD：超高IO专属分布式存储池。
+        :param type: **参数解释**： 专属分布式存储池的存储类型。 - SSD：超高IO专属分布式存储池。 **取值范围**： 不涉及。
         :type type: str
-        :param project_id: 专属分布式存储池归属的project_id。
+        :param project_id: **参数解释**： 项目ID。获取方式方法请参见[获取项目ID](dws_02_0011.xml)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type project_id: str
-        :param availability_zone: 专属分布式存储池所属可用区。
+        :param availability_zone: **参数解释**： 专属分布式存储池所属可用区。 **取值范围**： 不涉及。
         :type availability_zone: str
-        :param capacity: 申请的专属分布式存储容量，单位TB。
+        :param capacity: **参数解释**： 申请的专属分布式存储容量，单位TB。 **取值范围**： 不涉及。
         :type capacity: int
-        :param status: 专属分布式存储池的状态。 - available：专属分布式存储池处于可用状态。 - deploying：专属分布式存储池处于正在部署的过程中，不可使用。 - extending：专属分布式存储池处于正在扩容的过程中，可使用。
+        :param status: **参数解释**： 专属分布式存储池的状态。 **取值范围**： available：专属分布式存储池处于可用状态。 deploying：专属分布式存储池处于正在部署的过程中，不可使用。 extending：专属分布式存储池处于正在扩容的过程中，可使用。
         :type status: str
-        :param created_at: 专属分布式存储池的创建时间。 - 时间格式：UTC YYYY-MM-DDTHH:MM:SS
+        :param created_at: **参数解释**： 专属分布式存储池的创建时间。 **取值范围**： 时间格式：UTC YYYY-MM-DDTHH:MM:SS
         :type created_at: str
         """
         
@@ -86,7 +86,7 @@ class DssPool:
     def id(self):
         r"""Gets the id of this DssPool.
 
-        专属分布式存储池名称。
+        **参数解释**： 专属分布式存储池名称。 **取值范围**： 不涉及。
 
         :return: The id of this DssPool.
         :rtype: str
@@ -97,7 +97,7 @@ class DssPool:
     def id(self, id):
         r"""Sets the id of this DssPool.
 
-        专属分布式存储池名称。
+        **参数解释**： 专属分布式存储池名称。 **取值范围**： 不涉及。
 
         :param id: The id of this DssPool.
         :type id: str
@@ -108,7 +108,7 @@ class DssPool:
     def name(self):
         r"""Gets the name of this DssPool.
 
-        专属分布式存储池ID。
+        **参数解释**： 专属分布式存储池ID。 **取值范围**： 不涉及。
 
         :return: The name of this DssPool.
         :rtype: str
@@ -119,7 +119,7 @@ class DssPool:
     def name(self, name):
         r"""Sets the name of this DssPool.
 
-        专属分布式存储池ID。
+        **参数解释**： 专属分布式存储池ID。 **取值范围**： 不涉及。
 
         :param name: The name of this DssPool.
         :type name: str
@@ -130,7 +130,7 @@ class DssPool:
     def type(self):
         r"""Gets the type of this DssPool.
 
-        专属分布式存储池的存储类型。 - SSD：超高IO专属分布式存储池。
+        **参数解释**： 专属分布式存储池的存储类型。 - SSD：超高IO专属分布式存储池。 **取值范围**： 不涉及。
 
         :return: The type of this DssPool.
         :rtype: str
@@ -141,7 +141,7 @@ class DssPool:
     def type(self, type):
         r"""Sets the type of this DssPool.
 
-        专属分布式存储池的存储类型。 - SSD：超高IO专属分布式存储池。
+        **参数解释**： 专属分布式存储池的存储类型。 - SSD：超高IO专属分布式存储池。 **取值范围**： 不涉及。
 
         :param type: The type of this DssPool.
         :type type: str
@@ -152,7 +152,7 @@ class DssPool:
     def project_id(self):
         r"""Gets the project_id of this DssPool.
 
-        专属分布式存储池归属的project_id。
+        **参数解释**： 项目ID。获取方式方法请参见[获取项目ID](dws_02_0011.xml)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The project_id of this DssPool.
         :rtype: str
@@ -163,7 +163,7 @@ class DssPool:
     def project_id(self, project_id):
         r"""Sets the project_id of this DssPool.
 
-        专属分布式存储池归属的project_id。
+        **参数解释**： 项目ID。获取方式方法请参见[获取项目ID](dws_02_0011.xml)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param project_id: The project_id of this DssPool.
         :type project_id: str
@@ -174,7 +174,7 @@ class DssPool:
     def availability_zone(self):
         r"""Gets the availability_zone of this DssPool.
 
-        专属分布式存储池所属可用区。
+        **参数解释**： 专属分布式存储池所属可用区。 **取值范围**： 不涉及。
 
         :return: The availability_zone of this DssPool.
         :rtype: str
@@ -185,7 +185,7 @@ class DssPool:
     def availability_zone(self, availability_zone):
         r"""Sets the availability_zone of this DssPool.
 
-        专属分布式存储池所属可用区。
+        **参数解释**： 专属分布式存储池所属可用区。 **取值范围**： 不涉及。
 
         :param availability_zone: The availability_zone of this DssPool.
         :type availability_zone: str
@@ -196,7 +196,7 @@ class DssPool:
     def capacity(self):
         r"""Gets the capacity of this DssPool.
 
-        申请的专属分布式存储容量，单位TB。
+        **参数解释**： 申请的专属分布式存储容量，单位TB。 **取值范围**： 不涉及。
 
         :return: The capacity of this DssPool.
         :rtype: int
@@ -207,7 +207,7 @@ class DssPool:
     def capacity(self, capacity):
         r"""Sets the capacity of this DssPool.
 
-        申请的专属分布式存储容量，单位TB。
+        **参数解释**： 申请的专属分布式存储容量，单位TB。 **取值范围**： 不涉及。
 
         :param capacity: The capacity of this DssPool.
         :type capacity: int
@@ -218,7 +218,7 @@ class DssPool:
     def status(self):
         r"""Gets the status of this DssPool.
 
-        专属分布式存储池的状态。 - available：专属分布式存储池处于可用状态。 - deploying：专属分布式存储池处于正在部署的过程中，不可使用。 - extending：专属分布式存储池处于正在扩容的过程中，可使用。
+        **参数解释**： 专属分布式存储池的状态。 **取值范围**： available：专属分布式存储池处于可用状态。 deploying：专属分布式存储池处于正在部署的过程中，不可使用。 extending：专属分布式存储池处于正在扩容的过程中，可使用。
 
         :return: The status of this DssPool.
         :rtype: str
@@ -229,7 +229,7 @@ class DssPool:
     def status(self, status):
         r"""Sets the status of this DssPool.
 
-        专属分布式存储池的状态。 - available：专属分布式存储池处于可用状态。 - deploying：专属分布式存储池处于正在部署的过程中，不可使用。 - extending：专属分布式存储池处于正在扩容的过程中，可使用。
+        **参数解释**： 专属分布式存储池的状态。 **取值范围**： available：专属分布式存储池处于可用状态。 deploying：专属分布式存储池处于正在部署的过程中，不可使用。 extending：专属分布式存储池处于正在扩容的过程中，可使用。
 
         :param status: The status of this DssPool.
         :type status: str
@@ -240,7 +240,7 @@ class DssPool:
     def created_at(self):
         r"""Gets the created_at of this DssPool.
 
-        专属分布式存储池的创建时间。 - 时间格式：UTC YYYY-MM-DDTHH:MM:SS
+        **参数解释**： 专属分布式存储池的创建时间。 **取值范围**： 时间格式：UTC YYYY-MM-DDTHH:MM:SS
 
         :return: The created_at of this DssPool.
         :rtype: str
@@ -251,7 +251,7 @@ class DssPool:
     def created_at(self, created_at):
         r"""Sets the created_at of this DssPool.
 
-        专属分布式存储池的创建时间。 - 时间格式：UTC YYYY-MM-DDTHH:MM:SS
+        **参数解释**： 专属分布式存储池的创建时间。 **取值范围**： 时间格式：UTC YYYY-MM-DDTHH:MM:SS
 
         :param created_at: The created_at of this DssPool.
         :type created_at: str

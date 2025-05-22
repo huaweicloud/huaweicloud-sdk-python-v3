@@ -33,11 +33,11 @@ class ParameterGroup:
 
         The model defined in huaweicloud sdk
 
-        :param id: 参数组ID
+        :param id: **参数解释**： 参数组ID。 **取值范围**： 不涉及。
         :type id: str
-        :param name: 参数组名称
+        :param name: **参数解释**： 参数组名称。 **取值范围**： 不涉及。
         :type name: str
-        :param status: 集群参数状态，有效值包括：  - In-Sync：已同步 - Applying：应用中 - Pending-Reboot：需重启生效 - Sync-Failure：应用失败
+        :param status: **参数解释**： 集群参数状态。 **取值范围**： - In-Sync：已同步 - Applying：应用中 - Pending-Reboot：需重启生效 - Sync-Failure：应用失败
         :type status: str
         """
         
@@ -56,7 +56,7 @@ class ParameterGroup:
     def id(self):
         r"""Gets the id of this ParameterGroup.
 
-        参数组ID
+        **参数解释**： 参数组ID。 **取值范围**： 不涉及。
 
         :return: The id of this ParameterGroup.
         :rtype: str
@@ -67,7 +67,7 @@ class ParameterGroup:
     def id(self, id):
         r"""Sets the id of this ParameterGroup.
 
-        参数组ID
+        **参数解释**： 参数组ID。 **取值范围**： 不涉及。
 
         :param id: The id of this ParameterGroup.
         :type id: str
@@ -78,7 +78,7 @@ class ParameterGroup:
     def name(self):
         r"""Gets the name of this ParameterGroup.
 
-        参数组名称
+        **参数解释**： 参数组名称。 **取值范围**： 不涉及。
 
         :return: The name of this ParameterGroup.
         :rtype: str
@@ -89,7 +89,7 @@ class ParameterGroup:
     def name(self, name):
         r"""Sets the name of this ParameterGroup.
 
-        参数组名称
+        **参数解释**： 参数组名称。 **取值范围**： 不涉及。
 
         :param name: The name of this ParameterGroup.
         :type name: str
@@ -100,7 +100,7 @@ class ParameterGroup:
     def status(self):
         r"""Gets the status of this ParameterGroup.
 
-        集群参数状态，有效值包括：  - In-Sync：已同步 - Applying：应用中 - Pending-Reboot：需重启生效 - Sync-Failure：应用失败
+        **参数解释**： 集群参数状态。 **取值范围**： - In-Sync：已同步 - Applying：应用中 - Pending-Reboot：需重启生效 - Sync-Failure：应用失败
 
         :return: The status of this ParameterGroup.
         :rtype: str
@@ -111,7 +111,7 @@ class ParameterGroup:
     def status(self, status):
         r"""Sets the status of this ParameterGroup.
 
-        集群参数状态，有效值包括：  - In-Sync：已同步 - Applying：应用中 - Pending-Reboot：需重启生效 - Sync-Failure：应用失败
+        **参数解释**： 集群参数状态。 **取值范围**： - In-Sync：已同步 - Applying：应用中 - Pending-Reboot：需重启生效 - Sync-Failure：应用失败
 
         :param status: The status of this ParameterGroup.
         :type status: str

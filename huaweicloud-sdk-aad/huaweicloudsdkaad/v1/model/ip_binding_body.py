@@ -31,7 +31,7 @@ class IpBindingBody:
 
         The model defined in huaweicloud sdk
 
-        :param package_id: 防护包id
+        :param package_id: 实例id
         :type package_id: str
         :param id_list: 防护ip的id列表
         :type id_list: list[str]
@@ -50,7 +50,7 @@ class IpBindingBody:
     def package_id(self):
         r"""Gets the package_id of this IpBindingBody.
 
-        防护包id
+        实例id
 
         :return: The package_id of this IpBindingBody.
         :rtype: str
@@ -61,7 +61,7 @@ class IpBindingBody:
     def package_id(self, package_id):
         r"""Sets the package_id of this IpBindingBody.
 
-        防护包id
+        实例id
 
         :param package_id: The package_id of this IpBindingBody.
         :type package_id: str

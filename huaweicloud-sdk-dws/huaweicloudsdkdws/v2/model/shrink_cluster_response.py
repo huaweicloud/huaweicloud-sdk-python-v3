@@ -30,7 +30,7 @@ class ShrinkClusterResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param job_id: 缩容job_id。
+        :param job_id: **参数解释**： 缩容的任务ID信息。 **取值范围**： 不涉及。
         :type job_id: str
         """
         
@@ -46,7 +46,7 @@ class ShrinkClusterResponse(SdkResponse):
     def job_id(self):
         r"""Gets the job_id of this ShrinkClusterResponse.
 
-        缩容job_id。
+        **参数解释**： 缩容的任务ID信息。 **取值范围**： 不涉及。
 
         :return: The job_id of this ShrinkClusterResponse.
         :rtype: str
@@ -57,7 +57,7 @@ class ShrinkClusterResponse(SdkResponse):
     def job_id(self, job_id):
         r"""Sets the job_id of this ShrinkClusterResponse.
 
-        缩容job_id。
+        **参数解释**： 缩容的任务ID信息。 **取值范围**： 不涉及。
 
         :param job_id: The job_id of this ShrinkClusterResponse.
         :type job_id: str

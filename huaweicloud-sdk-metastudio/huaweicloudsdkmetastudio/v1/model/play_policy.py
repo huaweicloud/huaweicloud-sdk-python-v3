@@ -22,7 +22,8 @@ class PlayPolicy:
         'play_mode': 'str',
         'random_play_mode': 'str',
         'need_independent_capture_client': 'bool',
-        'live_exit_config': 'LiveExitConfig'
+        'live_exit_config': 'LiveExitConfig',
+        'is_rewrite_delay': 'bool'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class PlayPolicy:
         'play_mode': 'play_mode',
         'random_play_mode': 'random_play_mode',
         'need_independent_capture_client': 'need_independent_capture_client',
-        'live_exit_config': 'live_exit_config'
+        'live_exit_config': 'live_exit_config',
+        'is_rewrite_delay': 'is_rewrite_delay'
     }
 
-    def __init__(self, repeat_count=None, auto_play_script=None, play_mode=None, random_play_mode=None, need_independent_capture_client=None, live_exit_config=None):
+    def __init__(self, repeat_count=None, auto_play_script=None, play_mode=None, random_play_mode=None, need_independent_capture_client=None, live_exit_config=None, is_rewrite_delay=None):
         r"""PlayPolicy
 
         The model defined in huaweicloud sdk
@@ -47,10 +49,12 @@ class PlayPolicy:
         :type play_mode: str
         :param random_play_mode: **参数解释**： 随机播报模式。 **约束限制**： 从第二轮播报开始随机。 **取值范围**： * NONE：不启动随机播报。 * SCENE：按场景随机播报。场景内段落按顺序播报。 * SCRIPT_ITEM：按段落随机播报。场景按顺序播报。 * SCENE_AND_SCRIPT_ITEM：场景和段落都随机播报。
         :type random_play_mode: str
-        :param need_independent_capture_client: **参数解释**： 是否需要独立采集端。用于客户端播放与命令分离场景。 **约束限制**： 不涉及。 **取值范围**： * true：分配CAPTURE、PLAYER两个RTC用户。 * fasle：仅分配PLAYER一个RTC用户。
+        :param need_independent_capture_client: **参数解释**： 是否需要独立采集端。用于客户端播放与命令分离场景。 **约束限制**： 不涉及。 **取值范围**： * true：分配CAPTURE、PLAYER两个RTC用户。 * false：仅分配PLAYER一个RTC用户。
         :type need_independent_capture_client: bool
         :param live_exit_config: 
         :type live_exit_config: :class:`huaweicloudsdkmetastudio.v1.LiveExitConfig`
+        :param is_rewrite_delay: **参数解释**： 动态编辑未播放剧本是否需要下一轮生效。 **约束限制**： 不涉及。 **取值范围**： * true：马上生效。 * fasle：下一轮生效。 **默认取值**： false
+        :type is_rewrite_delay: bool
         """
         
         
@@ -61,6 +65,7 @@ class PlayPolicy:
         self._random_play_mode = None
         self._need_independent_capture_client = None
         self._live_exit_config = None
+        self._is_rewrite_delay = None
         self.discriminator = None
 
         if repeat_count is not None:
@@ -75,6 +80,8 @@ class PlayPolicy:
             self.need_independent_capture_client = need_independent_capture_client
         if live_exit_config is not None:
             self.live_exit_config = live_exit_config
+        if is_rewrite_delay is not None:
+            self.is_rewrite_delay = is_rewrite_delay
 
     @property
     def repeat_count(self):
@@ -168,7 +175,7 @@ class PlayPolicy:
     def need_independent_capture_client(self):
         r"""Gets the need_independent_capture_client of this PlayPolicy.
 
-        **参数解释**： 是否需要独立采集端。用于客户端播放与命令分离场景。 **约束限制**： 不涉及。 **取值范围**： * true：分配CAPTURE、PLAYER两个RTC用户。 * fasle：仅分配PLAYER一个RTC用户。
+        **参数解释**： 是否需要独立采集端。用于客户端播放与命令分离场景。 **约束限制**： 不涉及。 **取值范围**： * true：分配CAPTURE、PLAYER两个RTC用户。 * false：仅分配PLAYER一个RTC用户。
 
         :return: The need_independent_capture_client of this PlayPolicy.
         :rtype: bool
@@ -179,7 +186,7 @@ class PlayPolicy:
     def need_independent_capture_client(self, need_independent_capture_client):
         r"""Sets the need_independent_capture_client of this PlayPolicy.
 
-        **参数解释**： 是否需要独立采集端。用于客户端播放与命令分离场景。 **约束限制**： 不涉及。 **取值范围**： * true：分配CAPTURE、PLAYER两个RTC用户。 * fasle：仅分配PLAYER一个RTC用户。
+        **参数解释**： 是否需要独立采集端。用于客户端播放与命令分离场景。 **约束限制**： 不涉及。 **取值范围**： * true：分配CAPTURE、PLAYER两个RTC用户。 * false：仅分配PLAYER一个RTC用户。
 
         :param need_independent_capture_client: The need_independent_capture_client of this PlayPolicy.
         :type need_independent_capture_client: bool
@@ -203,6 +210,28 @@ class PlayPolicy:
         :type live_exit_config: :class:`huaweicloudsdkmetastudio.v1.LiveExitConfig`
         """
         self._live_exit_config = live_exit_config
+
+    @property
+    def is_rewrite_delay(self):
+        r"""Gets the is_rewrite_delay of this PlayPolicy.
+
+        **参数解释**： 动态编辑未播放剧本是否需要下一轮生效。 **约束限制**： 不涉及。 **取值范围**： * true：马上生效。 * fasle：下一轮生效。 **默认取值**： false
+
+        :return: The is_rewrite_delay of this PlayPolicy.
+        :rtype: bool
+        """
+        return self._is_rewrite_delay
+
+    @is_rewrite_delay.setter
+    def is_rewrite_delay(self, is_rewrite_delay):
+        r"""Sets the is_rewrite_delay of this PlayPolicy.
+
+        **参数解释**： 动态编辑未播放剧本是否需要下一轮生效。 **约束限制**： 不涉及。 **取值范围**： * true：马上生效。 * fasle：下一轮生效。 **默认取值**： false
+
+        :param is_rewrite_delay: The is_rewrite_delay of this PlayPolicy.
+        :type is_rewrite_delay: bool
+        """
+        self._is_rewrite_delay = is_rewrite_delay
 
     def to_dict(self):
         """Returns the model properties as a dict"""

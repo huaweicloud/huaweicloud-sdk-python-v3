@@ -77,53 +77,53 @@ class ClusterInfo:
 
         The model defined in huaweicloud sdk
 
-        :param id: 集群ID。
+        :param id: **参数解释**： 集群ID。 **取值范围**： 不涉及。
         :type id: str
-        :param name: 集群名称
+        :param name: **参数解释**： 集群名称。 **取值范围**： 同一个账号ID下唯一。
         :type name: str
-        :param status: 集群状态，有效值包括： - CREATING：创建中 - ACTIVE：可用 - FAILED：不可用 - CREATE_FAILED：创建失败 - DELETING：删除中 - DELETE_FAILED：删除失败 - DELETED：已删除 - FROZEN：普通冻结 - POLICE_FROZEN：公安冻结
+        :param status: **参数解释**： 集群状态,字符串枚举。 **取值范围**： - CREATING：创建中 - ACTIVE：可用 - FAILED：不可用 - CREATE_FAILED：创建失败 - DELETING：删除中 - DELETE_FAILED：删除失败 - FROZEN：普通冻结 - POLICE_FROZEN：公安冻结
         :type status: str
-        :param version: 数据仓库版本
+        :param version: **参数解释**： 数据仓库集群版本。 **取值范围**： 小数点分割的3~4段字符串，如9.1.0.200，每一段数字越大版本越新。
         :type version: str
-        :param updated: 集群上次修改时间，格式为 ISO8601：YYYY-MM-DDThh:mm:ssZ
+        :param updated: **参数解释**： 集群上次修改时间，格式为ISO8601：YYYY-MM-DDThh:mm:ssZ **取值范围**： 大于等于集群创建时间的ISO8601格式时间。
         :type updated: str
-        :param created: 集群创建时间，格式为 ISO8601：YYYY-MM-DDThh:mm:ssZ。
+        :param created: **参数解释**： 集群创建时间，格式为ISO8601：YYYY-MM-DDThh:mm:ssZ **取值范围**： ISO8601格式的时间。
         :type created: str
-        :param port: 集群服务端口。
+        :param port: **参数解释**： 集群服务端口，创建集群时如未指定则默认8000。 **取值范围**： 8000~30000
         :type port: int
-        :param endpoints: 集群的内网连接信息
+        :param endpoints: **参数解释**： 集群的内网连接信息。 **取值范围**： 不涉及。
         :type endpoints: list[:class:`huaweicloudsdkdws.v2.Endpoints`]
-        :param nodes: 集群实例
+        :param nodes: **参数解释**： 集群实例。 **取值范围**： 列表大小与集群节点数量字段number_of_node相同。
         :type nodes: list[:class:`huaweicloudsdkdws.v2.Nodes`]
-        :param tags: 集群标签
+        :param tags: **参数解释**： 集群标签。 **取值范围**： 默认null。
         :type tags: list[:class:`huaweicloudsdkdws.v2.Tags`]
-        :param user_name: 管理员用户名
+        :param user_name: **参数解释**： 管理员用户名。 **取值范围**： 默认dbadmin。
         :type user_name: str
-        :param number_of_node: 节点数量
+        :param number_of_node: **参数解释**： 节点数量。创建集群时指定。 **取值范围**： 不涉及。
         :type number_of_node: int
-        :param recent_event: 事件数
+        :param recent_event: **参数解释**： 事件数。仅记录用户操作且对集群产生影响的事件，部分按钮开闭类操作不记入集群事件数。 **取值范围**： 不涉及。
         :type recent_event: int
-        :param availability_zone: 可用区
+        :param availability_zone: **参数解释**： 可用区。 **取值范围**： 不涉及。
         :type availability_zone: str
-        :param enterprise_project_id: 企业项目ID。值为0表示默认企业项目“default”
+        :param enterprise_project_id: **参数解释**： 企业项目ID，对集群指定企业项目。如果未指定，则使用默认企业项目“default”的ID，即0。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 0
         :type enterprise_project_id: str
-        :param node_type: 节点类型
+        :param node_type: **参数解释**： 集群规格ID。 **取值范围**： 不涉及。
         :type node_type: str
-        :param vpc_id: 虚拟私有云ID
+        :param vpc_id: **参数解释**： 虚拟私有云ID。 **取值范围**： 不涉及。
         :type vpc_id: str
-        :param subnet_id: 子网ID
+        :param subnet_id: **参数解释**： 子网ID。 **取值范围**： 不涉及。
         :type subnet_id: str
         :param public_ip: 
         :type public_ip: :class:`huaweicloudsdkdws.v2.PublicIp`
-        :param public_endpoints: 集群的公网连接信息，如果未指定，则默认不使用公网连接信息。
+        :param public_endpoints: **参数解释**： 公网IP信息，如果未指定，则默认不支持公网连接。 **取值范围**： 不涉及。
         :type public_endpoints: list[:class:`huaweicloudsdkdws.v2.PublicEndpoints`]
-        :param action_progress: 任务信息，由key、value组成。key值为正在进行的任务，value值为正在进行任务的进度。key值的有效值包括： - CREATING：创建中 - RESTORING：恢复中 - SNAPSHOTTING：快照中 - GROWING：扩容中 - REBOOTING：重启中 - SETTING_CONFIGURATION：安全设置配置中 - CONFIGURING_EXT_DATASOURCE：MRS连接配置中 - ADD_CN_ING：增加CN中 - DEL_CN_ING：删除CN中 - REDISTRIBUTING：重分布中 - ELB_BINDING：弹性负载均衡绑定中 - ELB_UNBINDING：弹性负载均衡解绑中 - ELB_SWITCHING：弹性负载均衡切换中 - NETWORK_CONFIGURING：网络配置中 - DISK_EXPANDING：磁盘扩容中 - ACTIVE_STANDY_SWITCHOVER：主备恢复中 - CLUSTER_SHRINKING：缩容中 - SHRINK_CHECKING：缩容检测中 - FLAVOR_RESIZING：规格变更中 - MANAGE_IP_BINDING：登录开通中 - FINE_GRAINED_RESTORING：细粒度恢复中 - DR_RECOVERING：容灾恢复中 - REPAIRING：修复中
+        :param action_progress: **参数解释**： 任务信息，由key、value组成。key值为正在进行的任务，value值为正在进行任务的进度。 **取值范围**： key值的有效值包括但不限于以下这些： - CREATING：创建中 - RESTORING：恢复中 - SNAPSHOTTING：快照中 - GROWING：扩容中 - REBOOTING：重启中 - SETTING_CONFIGURATION：安全设置配置中 - CONFIGURING_EXT_DATASOURCE：MRS连接配置中 - ADD_CN_ING：增加CN中 - DEL_CN_ING：删除CN中 - REDISTRIBUTING：重分布中 - ELB_BINDING：弹性负载均衡绑定中 - ELB_UNBINDING：弹性负载均衡解绑中 - ELB_SWITCHING：弹性负载均衡切换中 - NETWORK_CONFIGURING：网络配置中 - DISK_EXPANDING：磁盘扩容中 - ACTIVE_STANDY_SWITCHOVER：主备恢复中 - CLUSTER_SHRINKING：缩容中 - SHRINK_CHECKING：缩容检测中 - FLAVOR_RESIZING：规格变更中 - MANAGE_IP_BINDING：登录开通中 - FINE_GRAINED_RESTORING：细粒度恢复中 - DR_RECOVERING：容灾恢复中 - REPAIRING：修复中
         :type action_progress: dict(str, str)
-        :param sub_status: “可用”集群状态的子状态，有效值包括：  - NORMAL：正常 - READONLY：只读 - REDISTRIBUTING：重分布中 - REDISTRIBUTION-FAILURE：重分布失败 - UNBALANCED：非均衡 - UNBALANCED | READONLY：非均衡，只读 - DEGRADED：节点故障 - DEGRADED | READONLY：节点故障，只读 - DEGRADED | UNBALANCED：节点故障，非均衡 - UNBALANCED | REDISTRIBUTING：非均衡，重分布中 - UNBALANCED | REDISTRIBUTION-FAILURE：非均衡，重分布失败 - READONLY | REDISTRIBUTION-FAILURE：只读，重分布失败 - UNBALANCED | READONLY | REDISTRIBUTION-FAILURE：非均衡，只读，重分布失败 - DEGRADED | REDISTRIBUTION-FAILURE：节点故障，重分布失败 - DEGRADED | UNBALANCED | REDISTRIBUTION-FAILURE：节点故障，非均衡，只读，重分布失败 - DEGRADED | UNBALANCED | READONLY | REDISTRIBUTION-FAILURE：节点故障，非均衡，只读，重分布失败 - DEGRADED | UNBALANCED | READONLY：节点故障，非均衡，只读
+        :param sub_status: **参数解释**： “可用”集群状态的子状态。 **取值范围**： 有效值包括： - NORMAL：正常 - READONLY：只读 - REDISTRIBUTING：重分布中 - REDISTRIBUTION-FAILURE：重分布失败 - UNBALANCED：非均衡 - UNBALANCED | READONLY：非均衡，只读 - DEGRADED：节点故障 - DEGRADED | READONLY：节点故障，只读 - DEGRADED | UNBALANCED：节点故障，非均衡 - UNBALANCED | REDISTRIBUTING：非均衡，重分布中 - UNBALANCED | REDISTRIBUTION-FAILURE：非均衡，重分布失败 - READONLY | REDISTRIBUTION-FAILURE：只读，重分布失败 - UNBALANCED | READONLY | REDISTRIBUTION-FAILURE：非均衡，只读，重分布失败 - DEGRADED | REDISTRIBUTION-FAILURE：节点故障，重分布失败 - DEGRADED | UNBALANCED | REDISTRIBUTION-FAILURE：节点故障，非均衡，只读，重分布失败 - DEGRADED | UNBALANCED | READONLY | REDISTRIBUTION-FAILURE：节点故障，非均衡，只读，重分布失败 - DEGRADED | UNBALANCED | READONLY：节点故障，非均衡，只读
         :type sub_status: str
-        :param task_status: 集群管理任务，有效值包括： - UNFREEZING：解冻中 - FREEZING：冻结中 - RESTORING：恢复中 - SNAPSHOTTING：快照中 - GROWING：扩容中 - REBOOTING：重启中 - SETTING_CONFIGURATION：安全设置配置中 - CONFIGURING_EXT_DATASOURCE：MRS连接配置中 - DELETING_EXT_DATASOURCE：删除MRS连接 - REBOOT_FAILURE：重启失败 - RESIZE_FAILURE：扩容失败 - ADD_CN_ING：增加CN中 - DEL_CN_ING：删除CN中 - CREATING_NODE：添加节点 - CREATE_NODE_FAILED：添加节点失败 - DELETING_NODE：删除节点 - DELETE_NODE_FAILED：删除节点失败 - REDISTRIBUTING：重分布中 - REDISTRIBUTE_FAILURE：重分布失败 - WAITING_REDISTRIBUTION：待重分布 - REDISTRIBUTION_PAUSED：重分布暂停 - ELB_BINDING：弹性负载均衡绑定中 - ELB_BIND_FAILED：弹性负载均衡绑定失败 - ELB_UNBINDING：弹性负载均衡解绑中 - ELB_UNBIND_FAILED：弹性负载均衡解绑失败 - ELB_SWITCHING：弹性负载均衡切换中 - ELB_SWITCHING_FAILED：弹性负载均衡切换失败 - NETWORK_CONFIGURING：网络配置中 - NETWORK_CONFIG_FAILED：网络配置失败 - DISK_EXPAND_FAILED：磁盘扩容失败 - DISK_EXPANDING：磁盘扩容中 - ACTIVE_STANDY_SWITCHOVER：主备恢复中 - ACTIVE_STANDY_SWITCHOVER_FAILURE：主备恢复失败 - CLUSTER_SHRINK_FAILED：缩容失败 - CLUSTER_SHRINKING：缩容中 - SHRINK_CHECK_FAILED：缩容检测失败 - SHRINK_CHECKING：缩容检测中 - FLAVOR_RESIZING_FAILED：规格变更失败 - FLAVOR_RESIZING：规格变更中 - MANAGE_IP_BIND_FAILED：登录开通失败 - MANAGE_IP_BINDING：登录开通中 - ORDER_PENDING：订单待支付 - FINE_GRAINED_RESTORING：细粒度恢复中 - DR_RECOVERING：容灾恢复中
+        :param task_status: **参数解释**： 集群管理任务，表示当前正在进行的任务或已执行的任务的结果。 **取值范围**： 有效值包括但不限于以下值： - UNFREEZING：解冻中 - FREEZING：冻结中 - RESTORING：恢复中 - SNAPSHOTTING：快照中 - GROWING：扩容中 - REBOOTING：重启中 - SETTING_CONFIGURATION：安全设置配置中 - CONFIGURING_EXT_DATASOURCE：MRS连接配置中 - DELETING_EXT_DATASOURCE：删除MRS连接 - REBOOT_FAILURE：重启失败 - RESIZE_FAILURE：扩容失败 - ADD_CN_ING：增加CN中 - DEL_CN_ING：删除CN中 - CREATING_NODE：添加节点 - CREATE_NODE_FAILED：添加节点失败 - DELETING_NODE：删除节点 - DELETE_NODE_FAILED：删除节点失败 - REDISTRIBUTING：重分布中 - REDISTRIBUTE_FAILURE：重分布失败 - WAITING_REDISTRIBUTION：待重分布 - REDISTRIBUTION_PAUSED：重分布暂停 - ELB_BINDING：弹性负载均衡绑定中 - ELB_BIND_FAILED：弹性负载均衡绑定失败 - ELB_UNBINDING：弹性负载均衡解绑中 - ELB_UNBIND_FAILED：弹性负载均衡解绑失败 - ELB_SWITCHING：弹性负载均衡切换中 - ELB_SWITCHING_FAILED：弹性负载均衡切换失败 - NETWORK_CONFIGURING：网络配置中 - NETWORK_CONFIG_FAILED：网络配置失败 - DISK_EXPAND_FAILED：磁盘扩容失败 - DISK_EXPANDING：磁盘扩容中 - ACTIVE_STANDY_SWITCHOVER：主备恢复中 - ACTIVE_STANDY_SWITCHOVER_FAILURE：主备恢复失败 - CLUSTER_SHRINK_FAILED：缩容失败 - CLUSTER_SHRINKING：缩容中 - SHRINK_CHECK_FAILED：缩容检测失败 - SHRINK_CHECKING：缩容检测中 - FLAVOR_RESIZING_FAILED：规格变更失败 - FLAVOR_RESIZING：规格变更中 - MANAGE_IP_BIND_FAILED：登录开通失败 - MANAGE_IP_BINDING：登录开通中 - ORDER_PENDING：订单待支付 - FINE_GRAINED_RESTORING：细粒度恢复中 - DR_RECOVERING：容灾恢复中
         :type task_status: str
-        :param security_group_id: 安全组ID
+        :param security_group_id: **参数解释**： 安全组ID。 **取值范围**： 不涉及。
         :type security_group_id: str
         :param failed_reasons: 
         :type failed_reasons: :class:`huaweicloudsdkdws.v2.FailedReason`
@@ -189,7 +189,7 @@ class ClusterInfo:
     def id(self):
         r"""Gets the id of this ClusterInfo.
 
-        集群ID。
+        **参数解释**： 集群ID。 **取值范围**： 不涉及。
 
         :return: The id of this ClusterInfo.
         :rtype: str
@@ -200,7 +200,7 @@ class ClusterInfo:
     def id(self, id):
         r"""Sets the id of this ClusterInfo.
 
-        集群ID。
+        **参数解释**： 集群ID。 **取值范围**： 不涉及。
 
         :param id: The id of this ClusterInfo.
         :type id: str
@@ -211,7 +211,7 @@ class ClusterInfo:
     def name(self):
         r"""Gets the name of this ClusterInfo.
 
-        集群名称
+        **参数解释**： 集群名称。 **取值范围**： 同一个账号ID下唯一。
 
         :return: The name of this ClusterInfo.
         :rtype: str
@@ -222,7 +222,7 @@ class ClusterInfo:
     def name(self, name):
         r"""Sets the name of this ClusterInfo.
 
-        集群名称
+        **参数解释**： 集群名称。 **取值范围**： 同一个账号ID下唯一。
 
         :param name: The name of this ClusterInfo.
         :type name: str
@@ -233,7 +233,7 @@ class ClusterInfo:
     def status(self):
         r"""Gets the status of this ClusterInfo.
 
-        集群状态，有效值包括： - CREATING：创建中 - ACTIVE：可用 - FAILED：不可用 - CREATE_FAILED：创建失败 - DELETING：删除中 - DELETE_FAILED：删除失败 - DELETED：已删除 - FROZEN：普通冻结 - POLICE_FROZEN：公安冻结
+        **参数解释**： 集群状态,字符串枚举。 **取值范围**： - CREATING：创建中 - ACTIVE：可用 - FAILED：不可用 - CREATE_FAILED：创建失败 - DELETING：删除中 - DELETE_FAILED：删除失败 - FROZEN：普通冻结 - POLICE_FROZEN：公安冻结
 
         :return: The status of this ClusterInfo.
         :rtype: str
@@ -244,7 +244,7 @@ class ClusterInfo:
     def status(self, status):
         r"""Sets the status of this ClusterInfo.
 
-        集群状态，有效值包括： - CREATING：创建中 - ACTIVE：可用 - FAILED：不可用 - CREATE_FAILED：创建失败 - DELETING：删除中 - DELETE_FAILED：删除失败 - DELETED：已删除 - FROZEN：普通冻结 - POLICE_FROZEN：公安冻结
+        **参数解释**： 集群状态,字符串枚举。 **取值范围**： - CREATING：创建中 - ACTIVE：可用 - FAILED：不可用 - CREATE_FAILED：创建失败 - DELETING：删除中 - DELETE_FAILED：删除失败 - FROZEN：普通冻结 - POLICE_FROZEN：公安冻结
 
         :param status: The status of this ClusterInfo.
         :type status: str
@@ -255,7 +255,7 @@ class ClusterInfo:
     def version(self):
         r"""Gets the version of this ClusterInfo.
 
-        数据仓库版本
+        **参数解释**： 数据仓库集群版本。 **取值范围**： 小数点分割的3~4段字符串，如9.1.0.200，每一段数字越大版本越新。
 
         :return: The version of this ClusterInfo.
         :rtype: str
@@ -266,7 +266,7 @@ class ClusterInfo:
     def version(self, version):
         r"""Sets the version of this ClusterInfo.
 
-        数据仓库版本
+        **参数解释**： 数据仓库集群版本。 **取值范围**： 小数点分割的3~4段字符串，如9.1.0.200，每一段数字越大版本越新。
 
         :param version: The version of this ClusterInfo.
         :type version: str
@@ -277,7 +277,7 @@ class ClusterInfo:
     def updated(self):
         r"""Gets the updated of this ClusterInfo.
 
-        集群上次修改时间，格式为 ISO8601：YYYY-MM-DDThh:mm:ssZ
+        **参数解释**： 集群上次修改时间，格式为ISO8601：YYYY-MM-DDThh:mm:ssZ **取值范围**： 大于等于集群创建时间的ISO8601格式时间。
 
         :return: The updated of this ClusterInfo.
         :rtype: str
@@ -288,7 +288,7 @@ class ClusterInfo:
     def updated(self, updated):
         r"""Sets the updated of this ClusterInfo.
 
-        集群上次修改时间，格式为 ISO8601：YYYY-MM-DDThh:mm:ssZ
+        **参数解释**： 集群上次修改时间，格式为ISO8601：YYYY-MM-DDThh:mm:ssZ **取值范围**： 大于等于集群创建时间的ISO8601格式时间。
 
         :param updated: The updated of this ClusterInfo.
         :type updated: str
@@ -299,7 +299,7 @@ class ClusterInfo:
     def created(self):
         r"""Gets the created of this ClusterInfo.
 
-        集群创建时间，格式为 ISO8601：YYYY-MM-DDThh:mm:ssZ。
+        **参数解释**： 集群创建时间，格式为ISO8601：YYYY-MM-DDThh:mm:ssZ **取值范围**： ISO8601格式的时间。
 
         :return: The created of this ClusterInfo.
         :rtype: str
@@ -310,7 +310,7 @@ class ClusterInfo:
     def created(self, created):
         r"""Sets the created of this ClusterInfo.
 
-        集群创建时间，格式为 ISO8601：YYYY-MM-DDThh:mm:ssZ。
+        **参数解释**： 集群创建时间，格式为ISO8601：YYYY-MM-DDThh:mm:ssZ **取值范围**： ISO8601格式的时间。
 
         :param created: The created of this ClusterInfo.
         :type created: str
@@ -321,7 +321,7 @@ class ClusterInfo:
     def port(self):
         r"""Gets the port of this ClusterInfo.
 
-        集群服务端口。
+        **参数解释**： 集群服务端口，创建集群时如未指定则默认8000。 **取值范围**： 8000~30000
 
         :return: The port of this ClusterInfo.
         :rtype: int
@@ -332,7 +332,7 @@ class ClusterInfo:
     def port(self, port):
         r"""Sets the port of this ClusterInfo.
 
-        集群服务端口。
+        **参数解释**： 集群服务端口，创建集群时如未指定则默认8000。 **取值范围**： 8000~30000
 
         :param port: The port of this ClusterInfo.
         :type port: int
@@ -343,7 +343,7 @@ class ClusterInfo:
     def endpoints(self):
         r"""Gets the endpoints of this ClusterInfo.
 
-        集群的内网连接信息
+        **参数解释**： 集群的内网连接信息。 **取值范围**： 不涉及。
 
         :return: The endpoints of this ClusterInfo.
         :rtype: list[:class:`huaweicloudsdkdws.v2.Endpoints`]
@@ -354,7 +354,7 @@ class ClusterInfo:
     def endpoints(self, endpoints):
         r"""Sets the endpoints of this ClusterInfo.
 
-        集群的内网连接信息
+        **参数解释**： 集群的内网连接信息。 **取值范围**： 不涉及。
 
         :param endpoints: The endpoints of this ClusterInfo.
         :type endpoints: list[:class:`huaweicloudsdkdws.v2.Endpoints`]
@@ -365,7 +365,7 @@ class ClusterInfo:
     def nodes(self):
         r"""Gets the nodes of this ClusterInfo.
 
-        集群实例
+        **参数解释**： 集群实例。 **取值范围**： 列表大小与集群节点数量字段number_of_node相同。
 
         :return: The nodes of this ClusterInfo.
         :rtype: list[:class:`huaweicloudsdkdws.v2.Nodes`]
@@ -376,7 +376,7 @@ class ClusterInfo:
     def nodes(self, nodes):
         r"""Sets the nodes of this ClusterInfo.
 
-        集群实例
+        **参数解释**： 集群实例。 **取值范围**： 列表大小与集群节点数量字段number_of_node相同。
 
         :param nodes: The nodes of this ClusterInfo.
         :type nodes: list[:class:`huaweicloudsdkdws.v2.Nodes`]
@@ -387,7 +387,7 @@ class ClusterInfo:
     def tags(self):
         r"""Gets the tags of this ClusterInfo.
 
-        集群标签
+        **参数解释**： 集群标签。 **取值范围**： 默认null。
 
         :return: The tags of this ClusterInfo.
         :rtype: list[:class:`huaweicloudsdkdws.v2.Tags`]
@@ -398,7 +398,7 @@ class ClusterInfo:
     def tags(self, tags):
         r"""Sets the tags of this ClusterInfo.
 
-        集群标签
+        **参数解释**： 集群标签。 **取值范围**： 默认null。
 
         :param tags: The tags of this ClusterInfo.
         :type tags: list[:class:`huaweicloudsdkdws.v2.Tags`]
@@ -409,7 +409,7 @@ class ClusterInfo:
     def user_name(self):
         r"""Gets the user_name of this ClusterInfo.
 
-        管理员用户名
+        **参数解释**： 管理员用户名。 **取值范围**： 默认dbadmin。
 
         :return: The user_name of this ClusterInfo.
         :rtype: str
@@ -420,7 +420,7 @@ class ClusterInfo:
     def user_name(self, user_name):
         r"""Sets the user_name of this ClusterInfo.
 
-        管理员用户名
+        **参数解释**： 管理员用户名。 **取值范围**： 默认dbadmin。
 
         :param user_name: The user_name of this ClusterInfo.
         :type user_name: str
@@ -431,7 +431,7 @@ class ClusterInfo:
     def number_of_node(self):
         r"""Gets the number_of_node of this ClusterInfo.
 
-        节点数量
+        **参数解释**： 节点数量。创建集群时指定。 **取值范围**： 不涉及。
 
         :return: The number_of_node of this ClusterInfo.
         :rtype: int
@@ -442,7 +442,7 @@ class ClusterInfo:
     def number_of_node(self, number_of_node):
         r"""Sets the number_of_node of this ClusterInfo.
 
-        节点数量
+        **参数解释**： 节点数量。创建集群时指定。 **取值范围**： 不涉及。
 
         :param number_of_node: The number_of_node of this ClusterInfo.
         :type number_of_node: int
@@ -453,7 +453,7 @@ class ClusterInfo:
     def recent_event(self):
         r"""Gets the recent_event of this ClusterInfo.
 
-        事件数
+        **参数解释**： 事件数。仅记录用户操作且对集群产生影响的事件，部分按钮开闭类操作不记入集群事件数。 **取值范围**： 不涉及。
 
         :return: The recent_event of this ClusterInfo.
         :rtype: int
@@ -464,7 +464,7 @@ class ClusterInfo:
     def recent_event(self, recent_event):
         r"""Sets the recent_event of this ClusterInfo.
 
-        事件数
+        **参数解释**： 事件数。仅记录用户操作且对集群产生影响的事件，部分按钮开闭类操作不记入集群事件数。 **取值范围**： 不涉及。
 
         :param recent_event: The recent_event of this ClusterInfo.
         :type recent_event: int
@@ -475,7 +475,7 @@ class ClusterInfo:
     def availability_zone(self):
         r"""Gets the availability_zone of this ClusterInfo.
 
-        可用区
+        **参数解释**： 可用区。 **取值范围**： 不涉及。
 
         :return: The availability_zone of this ClusterInfo.
         :rtype: str
@@ -486,7 +486,7 @@ class ClusterInfo:
     def availability_zone(self, availability_zone):
         r"""Sets the availability_zone of this ClusterInfo.
 
-        可用区
+        **参数解释**： 可用区。 **取值范围**： 不涉及。
 
         :param availability_zone: The availability_zone of this ClusterInfo.
         :type availability_zone: str
@@ -497,7 +497,7 @@ class ClusterInfo:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this ClusterInfo.
 
-        企业项目ID。值为0表示默认企业项目“default”
+        **参数解释**： 企业项目ID，对集群指定企业项目。如果未指定，则使用默认企业项目“default”的ID，即0。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 0
 
         :return: The enterprise_project_id of this ClusterInfo.
         :rtype: str
@@ -508,7 +508,7 @@ class ClusterInfo:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this ClusterInfo.
 
-        企业项目ID。值为0表示默认企业项目“default”
+        **参数解释**： 企业项目ID，对集群指定企业项目。如果未指定，则使用默认企业项目“default”的ID，即0。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 0
 
         :param enterprise_project_id: The enterprise_project_id of this ClusterInfo.
         :type enterprise_project_id: str
@@ -519,7 +519,7 @@ class ClusterInfo:
     def node_type(self):
         r"""Gets the node_type of this ClusterInfo.
 
-        节点类型
+        **参数解释**： 集群规格ID。 **取值范围**： 不涉及。
 
         :return: The node_type of this ClusterInfo.
         :rtype: str
@@ -530,7 +530,7 @@ class ClusterInfo:
     def node_type(self, node_type):
         r"""Sets the node_type of this ClusterInfo.
 
-        节点类型
+        **参数解释**： 集群规格ID。 **取值范围**： 不涉及。
 
         :param node_type: The node_type of this ClusterInfo.
         :type node_type: str
@@ -541,7 +541,7 @@ class ClusterInfo:
     def vpc_id(self):
         r"""Gets the vpc_id of this ClusterInfo.
 
-        虚拟私有云ID
+        **参数解释**： 虚拟私有云ID。 **取值范围**： 不涉及。
 
         :return: The vpc_id of this ClusterInfo.
         :rtype: str
@@ -552,7 +552,7 @@ class ClusterInfo:
     def vpc_id(self, vpc_id):
         r"""Sets the vpc_id of this ClusterInfo.
 
-        虚拟私有云ID
+        **参数解释**： 虚拟私有云ID。 **取值范围**： 不涉及。
 
         :param vpc_id: The vpc_id of this ClusterInfo.
         :type vpc_id: str
@@ -563,7 +563,7 @@ class ClusterInfo:
     def subnet_id(self):
         r"""Gets the subnet_id of this ClusterInfo.
 
-        子网ID
+        **参数解释**： 子网ID。 **取值范围**： 不涉及。
 
         :return: The subnet_id of this ClusterInfo.
         :rtype: str
@@ -574,7 +574,7 @@ class ClusterInfo:
     def subnet_id(self, subnet_id):
         r"""Sets the subnet_id of this ClusterInfo.
 
-        子网ID
+        **参数解释**： 子网ID。 **取值范围**： 不涉及。
 
         :param subnet_id: The subnet_id of this ClusterInfo.
         :type subnet_id: str
@@ -603,7 +603,7 @@ class ClusterInfo:
     def public_endpoints(self):
         r"""Gets the public_endpoints of this ClusterInfo.
 
-        集群的公网连接信息，如果未指定，则默认不使用公网连接信息。
+        **参数解释**： 公网IP信息，如果未指定，则默认不支持公网连接。 **取值范围**： 不涉及。
 
         :return: The public_endpoints of this ClusterInfo.
         :rtype: list[:class:`huaweicloudsdkdws.v2.PublicEndpoints`]
@@ -614,7 +614,7 @@ class ClusterInfo:
     def public_endpoints(self, public_endpoints):
         r"""Sets the public_endpoints of this ClusterInfo.
 
-        集群的公网连接信息，如果未指定，则默认不使用公网连接信息。
+        **参数解释**： 公网IP信息，如果未指定，则默认不支持公网连接。 **取值范围**： 不涉及。
 
         :param public_endpoints: The public_endpoints of this ClusterInfo.
         :type public_endpoints: list[:class:`huaweicloudsdkdws.v2.PublicEndpoints`]
@@ -625,7 +625,7 @@ class ClusterInfo:
     def action_progress(self):
         r"""Gets the action_progress of this ClusterInfo.
 
-        任务信息，由key、value组成。key值为正在进行的任务，value值为正在进行任务的进度。key值的有效值包括： - CREATING：创建中 - RESTORING：恢复中 - SNAPSHOTTING：快照中 - GROWING：扩容中 - REBOOTING：重启中 - SETTING_CONFIGURATION：安全设置配置中 - CONFIGURING_EXT_DATASOURCE：MRS连接配置中 - ADD_CN_ING：增加CN中 - DEL_CN_ING：删除CN中 - REDISTRIBUTING：重分布中 - ELB_BINDING：弹性负载均衡绑定中 - ELB_UNBINDING：弹性负载均衡解绑中 - ELB_SWITCHING：弹性负载均衡切换中 - NETWORK_CONFIGURING：网络配置中 - DISK_EXPANDING：磁盘扩容中 - ACTIVE_STANDY_SWITCHOVER：主备恢复中 - CLUSTER_SHRINKING：缩容中 - SHRINK_CHECKING：缩容检测中 - FLAVOR_RESIZING：规格变更中 - MANAGE_IP_BINDING：登录开通中 - FINE_GRAINED_RESTORING：细粒度恢复中 - DR_RECOVERING：容灾恢复中 - REPAIRING：修复中
+        **参数解释**： 任务信息，由key、value组成。key值为正在进行的任务，value值为正在进行任务的进度。 **取值范围**： key值的有效值包括但不限于以下这些： - CREATING：创建中 - RESTORING：恢复中 - SNAPSHOTTING：快照中 - GROWING：扩容中 - REBOOTING：重启中 - SETTING_CONFIGURATION：安全设置配置中 - CONFIGURING_EXT_DATASOURCE：MRS连接配置中 - ADD_CN_ING：增加CN中 - DEL_CN_ING：删除CN中 - REDISTRIBUTING：重分布中 - ELB_BINDING：弹性负载均衡绑定中 - ELB_UNBINDING：弹性负载均衡解绑中 - ELB_SWITCHING：弹性负载均衡切换中 - NETWORK_CONFIGURING：网络配置中 - DISK_EXPANDING：磁盘扩容中 - ACTIVE_STANDY_SWITCHOVER：主备恢复中 - CLUSTER_SHRINKING：缩容中 - SHRINK_CHECKING：缩容检测中 - FLAVOR_RESIZING：规格变更中 - MANAGE_IP_BINDING：登录开通中 - FINE_GRAINED_RESTORING：细粒度恢复中 - DR_RECOVERING：容灾恢复中 - REPAIRING：修复中
 
         :return: The action_progress of this ClusterInfo.
         :rtype: dict(str, str)
@@ -636,7 +636,7 @@ class ClusterInfo:
     def action_progress(self, action_progress):
         r"""Sets the action_progress of this ClusterInfo.
 
-        任务信息，由key、value组成。key值为正在进行的任务，value值为正在进行任务的进度。key值的有效值包括： - CREATING：创建中 - RESTORING：恢复中 - SNAPSHOTTING：快照中 - GROWING：扩容中 - REBOOTING：重启中 - SETTING_CONFIGURATION：安全设置配置中 - CONFIGURING_EXT_DATASOURCE：MRS连接配置中 - ADD_CN_ING：增加CN中 - DEL_CN_ING：删除CN中 - REDISTRIBUTING：重分布中 - ELB_BINDING：弹性负载均衡绑定中 - ELB_UNBINDING：弹性负载均衡解绑中 - ELB_SWITCHING：弹性负载均衡切换中 - NETWORK_CONFIGURING：网络配置中 - DISK_EXPANDING：磁盘扩容中 - ACTIVE_STANDY_SWITCHOVER：主备恢复中 - CLUSTER_SHRINKING：缩容中 - SHRINK_CHECKING：缩容检测中 - FLAVOR_RESIZING：规格变更中 - MANAGE_IP_BINDING：登录开通中 - FINE_GRAINED_RESTORING：细粒度恢复中 - DR_RECOVERING：容灾恢复中 - REPAIRING：修复中
+        **参数解释**： 任务信息，由key、value组成。key值为正在进行的任务，value值为正在进行任务的进度。 **取值范围**： key值的有效值包括但不限于以下这些： - CREATING：创建中 - RESTORING：恢复中 - SNAPSHOTTING：快照中 - GROWING：扩容中 - REBOOTING：重启中 - SETTING_CONFIGURATION：安全设置配置中 - CONFIGURING_EXT_DATASOURCE：MRS连接配置中 - ADD_CN_ING：增加CN中 - DEL_CN_ING：删除CN中 - REDISTRIBUTING：重分布中 - ELB_BINDING：弹性负载均衡绑定中 - ELB_UNBINDING：弹性负载均衡解绑中 - ELB_SWITCHING：弹性负载均衡切换中 - NETWORK_CONFIGURING：网络配置中 - DISK_EXPANDING：磁盘扩容中 - ACTIVE_STANDY_SWITCHOVER：主备恢复中 - CLUSTER_SHRINKING：缩容中 - SHRINK_CHECKING：缩容检测中 - FLAVOR_RESIZING：规格变更中 - MANAGE_IP_BINDING：登录开通中 - FINE_GRAINED_RESTORING：细粒度恢复中 - DR_RECOVERING：容灾恢复中 - REPAIRING：修复中
 
         :param action_progress: The action_progress of this ClusterInfo.
         :type action_progress: dict(str, str)
@@ -647,7 +647,7 @@ class ClusterInfo:
     def sub_status(self):
         r"""Gets the sub_status of this ClusterInfo.
 
-        “可用”集群状态的子状态，有效值包括：  - NORMAL：正常 - READONLY：只读 - REDISTRIBUTING：重分布中 - REDISTRIBUTION-FAILURE：重分布失败 - UNBALANCED：非均衡 - UNBALANCED | READONLY：非均衡，只读 - DEGRADED：节点故障 - DEGRADED | READONLY：节点故障，只读 - DEGRADED | UNBALANCED：节点故障，非均衡 - UNBALANCED | REDISTRIBUTING：非均衡，重分布中 - UNBALANCED | REDISTRIBUTION-FAILURE：非均衡，重分布失败 - READONLY | REDISTRIBUTION-FAILURE：只读，重分布失败 - UNBALANCED | READONLY | REDISTRIBUTION-FAILURE：非均衡，只读，重分布失败 - DEGRADED | REDISTRIBUTION-FAILURE：节点故障，重分布失败 - DEGRADED | UNBALANCED | REDISTRIBUTION-FAILURE：节点故障，非均衡，只读，重分布失败 - DEGRADED | UNBALANCED | READONLY | REDISTRIBUTION-FAILURE：节点故障，非均衡，只读，重分布失败 - DEGRADED | UNBALANCED | READONLY：节点故障，非均衡，只读
+        **参数解释**： “可用”集群状态的子状态。 **取值范围**： 有效值包括： - NORMAL：正常 - READONLY：只读 - REDISTRIBUTING：重分布中 - REDISTRIBUTION-FAILURE：重分布失败 - UNBALANCED：非均衡 - UNBALANCED | READONLY：非均衡，只读 - DEGRADED：节点故障 - DEGRADED | READONLY：节点故障，只读 - DEGRADED | UNBALANCED：节点故障，非均衡 - UNBALANCED | REDISTRIBUTING：非均衡，重分布中 - UNBALANCED | REDISTRIBUTION-FAILURE：非均衡，重分布失败 - READONLY | REDISTRIBUTION-FAILURE：只读，重分布失败 - UNBALANCED | READONLY | REDISTRIBUTION-FAILURE：非均衡，只读，重分布失败 - DEGRADED | REDISTRIBUTION-FAILURE：节点故障，重分布失败 - DEGRADED | UNBALANCED | REDISTRIBUTION-FAILURE：节点故障，非均衡，只读，重分布失败 - DEGRADED | UNBALANCED | READONLY | REDISTRIBUTION-FAILURE：节点故障，非均衡，只读，重分布失败 - DEGRADED | UNBALANCED | READONLY：节点故障，非均衡，只读
 
         :return: The sub_status of this ClusterInfo.
         :rtype: str
@@ -658,7 +658,7 @@ class ClusterInfo:
     def sub_status(self, sub_status):
         r"""Sets the sub_status of this ClusterInfo.
 
-        “可用”集群状态的子状态，有效值包括：  - NORMAL：正常 - READONLY：只读 - REDISTRIBUTING：重分布中 - REDISTRIBUTION-FAILURE：重分布失败 - UNBALANCED：非均衡 - UNBALANCED | READONLY：非均衡，只读 - DEGRADED：节点故障 - DEGRADED | READONLY：节点故障，只读 - DEGRADED | UNBALANCED：节点故障，非均衡 - UNBALANCED | REDISTRIBUTING：非均衡，重分布中 - UNBALANCED | REDISTRIBUTION-FAILURE：非均衡，重分布失败 - READONLY | REDISTRIBUTION-FAILURE：只读，重分布失败 - UNBALANCED | READONLY | REDISTRIBUTION-FAILURE：非均衡，只读，重分布失败 - DEGRADED | REDISTRIBUTION-FAILURE：节点故障，重分布失败 - DEGRADED | UNBALANCED | REDISTRIBUTION-FAILURE：节点故障，非均衡，只读，重分布失败 - DEGRADED | UNBALANCED | READONLY | REDISTRIBUTION-FAILURE：节点故障，非均衡，只读，重分布失败 - DEGRADED | UNBALANCED | READONLY：节点故障，非均衡，只读
+        **参数解释**： “可用”集群状态的子状态。 **取值范围**： 有效值包括： - NORMAL：正常 - READONLY：只读 - REDISTRIBUTING：重分布中 - REDISTRIBUTION-FAILURE：重分布失败 - UNBALANCED：非均衡 - UNBALANCED | READONLY：非均衡，只读 - DEGRADED：节点故障 - DEGRADED | READONLY：节点故障，只读 - DEGRADED | UNBALANCED：节点故障，非均衡 - UNBALANCED | REDISTRIBUTING：非均衡，重分布中 - UNBALANCED | REDISTRIBUTION-FAILURE：非均衡，重分布失败 - READONLY | REDISTRIBUTION-FAILURE：只读，重分布失败 - UNBALANCED | READONLY | REDISTRIBUTION-FAILURE：非均衡，只读，重分布失败 - DEGRADED | REDISTRIBUTION-FAILURE：节点故障，重分布失败 - DEGRADED | UNBALANCED | REDISTRIBUTION-FAILURE：节点故障，非均衡，只读，重分布失败 - DEGRADED | UNBALANCED | READONLY | REDISTRIBUTION-FAILURE：节点故障，非均衡，只读，重分布失败 - DEGRADED | UNBALANCED | READONLY：节点故障，非均衡，只读
 
         :param sub_status: The sub_status of this ClusterInfo.
         :type sub_status: str
@@ -669,7 +669,7 @@ class ClusterInfo:
     def task_status(self):
         r"""Gets the task_status of this ClusterInfo.
 
-        集群管理任务，有效值包括： - UNFREEZING：解冻中 - FREEZING：冻结中 - RESTORING：恢复中 - SNAPSHOTTING：快照中 - GROWING：扩容中 - REBOOTING：重启中 - SETTING_CONFIGURATION：安全设置配置中 - CONFIGURING_EXT_DATASOURCE：MRS连接配置中 - DELETING_EXT_DATASOURCE：删除MRS连接 - REBOOT_FAILURE：重启失败 - RESIZE_FAILURE：扩容失败 - ADD_CN_ING：增加CN中 - DEL_CN_ING：删除CN中 - CREATING_NODE：添加节点 - CREATE_NODE_FAILED：添加节点失败 - DELETING_NODE：删除节点 - DELETE_NODE_FAILED：删除节点失败 - REDISTRIBUTING：重分布中 - REDISTRIBUTE_FAILURE：重分布失败 - WAITING_REDISTRIBUTION：待重分布 - REDISTRIBUTION_PAUSED：重分布暂停 - ELB_BINDING：弹性负载均衡绑定中 - ELB_BIND_FAILED：弹性负载均衡绑定失败 - ELB_UNBINDING：弹性负载均衡解绑中 - ELB_UNBIND_FAILED：弹性负载均衡解绑失败 - ELB_SWITCHING：弹性负载均衡切换中 - ELB_SWITCHING_FAILED：弹性负载均衡切换失败 - NETWORK_CONFIGURING：网络配置中 - NETWORK_CONFIG_FAILED：网络配置失败 - DISK_EXPAND_FAILED：磁盘扩容失败 - DISK_EXPANDING：磁盘扩容中 - ACTIVE_STANDY_SWITCHOVER：主备恢复中 - ACTIVE_STANDY_SWITCHOVER_FAILURE：主备恢复失败 - CLUSTER_SHRINK_FAILED：缩容失败 - CLUSTER_SHRINKING：缩容中 - SHRINK_CHECK_FAILED：缩容检测失败 - SHRINK_CHECKING：缩容检测中 - FLAVOR_RESIZING_FAILED：规格变更失败 - FLAVOR_RESIZING：规格变更中 - MANAGE_IP_BIND_FAILED：登录开通失败 - MANAGE_IP_BINDING：登录开通中 - ORDER_PENDING：订单待支付 - FINE_GRAINED_RESTORING：细粒度恢复中 - DR_RECOVERING：容灾恢复中
+        **参数解释**： 集群管理任务，表示当前正在进行的任务或已执行的任务的结果。 **取值范围**： 有效值包括但不限于以下值： - UNFREEZING：解冻中 - FREEZING：冻结中 - RESTORING：恢复中 - SNAPSHOTTING：快照中 - GROWING：扩容中 - REBOOTING：重启中 - SETTING_CONFIGURATION：安全设置配置中 - CONFIGURING_EXT_DATASOURCE：MRS连接配置中 - DELETING_EXT_DATASOURCE：删除MRS连接 - REBOOT_FAILURE：重启失败 - RESIZE_FAILURE：扩容失败 - ADD_CN_ING：增加CN中 - DEL_CN_ING：删除CN中 - CREATING_NODE：添加节点 - CREATE_NODE_FAILED：添加节点失败 - DELETING_NODE：删除节点 - DELETE_NODE_FAILED：删除节点失败 - REDISTRIBUTING：重分布中 - REDISTRIBUTE_FAILURE：重分布失败 - WAITING_REDISTRIBUTION：待重分布 - REDISTRIBUTION_PAUSED：重分布暂停 - ELB_BINDING：弹性负载均衡绑定中 - ELB_BIND_FAILED：弹性负载均衡绑定失败 - ELB_UNBINDING：弹性负载均衡解绑中 - ELB_UNBIND_FAILED：弹性负载均衡解绑失败 - ELB_SWITCHING：弹性负载均衡切换中 - ELB_SWITCHING_FAILED：弹性负载均衡切换失败 - NETWORK_CONFIGURING：网络配置中 - NETWORK_CONFIG_FAILED：网络配置失败 - DISK_EXPAND_FAILED：磁盘扩容失败 - DISK_EXPANDING：磁盘扩容中 - ACTIVE_STANDY_SWITCHOVER：主备恢复中 - ACTIVE_STANDY_SWITCHOVER_FAILURE：主备恢复失败 - CLUSTER_SHRINK_FAILED：缩容失败 - CLUSTER_SHRINKING：缩容中 - SHRINK_CHECK_FAILED：缩容检测失败 - SHRINK_CHECKING：缩容检测中 - FLAVOR_RESIZING_FAILED：规格变更失败 - FLAVOR_RESIZING：规格变更中 - MANAGE_IP_BIND_FAILED：登录开通失败 - MANAGE_IP_BINDING：登录开通中 - ORDER_PENDING：订单待支付 - FINE_GRAINED_RESTORING：细粒度恢复中 - DR_RECOVERING：容灾恢复中
 
         :return: The task_status of this ClusterInfo.
         :rtype: str
@@ -680,7 +680,7 @@ class ClusterInfo:
     def task_status(self, task_status):
         r"""Sets the task_status of this ClusterInfo.
 
-        集群管理任务，有效值包括： - UNFREEZING：解冻中 - FREEZING：冻结中 - RESTORING：恢复中 - SNAPSHOTTING：快照中 - GROWING：扩容中 - REBOOTING：重启中 - SETTING_CONFIGURATION：安全设置配置中 - CONFIGURING_EXT_DATASOURCE：MRS连接配置中 - DELETING_EXT_DATASOURCE：删除MRS连接 - REBOOT_FAILURE：重启失败 - RESIZE_FAILURE：扩容失败 - ADD_CN_ING：增加CN中 - DEL_CN_ING：删除CN中 - CREATING_NODE：添加节点 - CREATE_NODE_FAILED：添加节点失败 - DELETING_NODE：删除节点 - DELETE_NODE_FAILED：删除节点失败 - REDISTRIBUTING：重分布中 - REDISTRIBUTE_FAILURE：重分布失败 - WAITING_REDISTRIBUTION：待重分布 - REDISTRIBUTION_PAUSED：重分布暂停 - ELB_BINDING：弹性负载均衡绑定中 - ELB_BIND_FAILED：弹性负载均衡绑定失败 - ELB_UNBINDING：弹性负载均衡解绑中 - ELB_UNBIND_FAILED：弹性负载均衡解绑失败 - ELB_SWITCHING：弹性负载均衡切换中 - ELB_SWITCHING_FAILED：弹性负载均衡切换失败 - NETWORK_CONFIGURING：网络配置中 - NETWORK_CONFIG_FAILED：网络配置失败 - DISK_EXPAND_FAILED：磁盘扩容失败 - DISK_EXPANDING：磁盘扩容中 - ACTIVE_STANDY_SWITCHOVER：主备恢复中 - ACTIVE_STANDY_SWITCHOVER_FAILURE：主备恢复失败 - CLUSTER_SHRINK_FAILED：缩容失败 - CLUSTER_SHRINKING：缩容中 - SHRINK_CHECK_FAILED：缩容检测失败 - SHRINK_CHECKING：缩容检测中 - FLAVOR_RESIZING_FAILED：规格变更失败 - FLAVOR_RESIZING：规格变更中 - MANAGE_IP_BIND_FAILED：登录开通失败 - MANAGE_IP_BINDING：登录开通中 - ORDER_PENDING：订单待支付 - FINE_GRAINED_RESTORING：细粒度恢复中 - DR_RECOVERING：容灾恢复中
+        **参数解释**： 集群管理任务，表示当前正在进行的任务或已执行的任务的结果。 **取值范围**： 有效值包括但不限于以下值： - UNFREEZING：解冻中 - FREEZING：冻结中 - RESTORING：恢复中 - SNAPSHOTTING：快照中 - GROWING：扩容中 - REBOOTING：重启中 - SETTING_CONFIGURATION：安全设置配置中 - CONFIGURING_EXT_DATASOURCE：MRS连接配置中 - DELETING_EXT_DATASOURCE：删除MRS连接 - REBOOT_FAILURE：重启失败 - RESIZE_FAILURE：扩容失败 - ADD_CN_ING：增加CN中 - DEL_CN_ING：删除CN中 - CREATING_NODE：添加节点 - CREATE_NODE_FAILED：添加节点失败 - DELETING_NODE：删除节点 - DELETE_NODE_FAILED：删除节点失败 - REDISTRIBUTING：重分布中 - REDISTRIBUTE_FAILURE：重分布失败 - WAITING_REDISTRIBUTION：待重分布 - REDISTRIBUTION_PAUSED：重分布暂停 - ELB_BINDING：弹性负载均衡绑定中 - ELB_BIND_FAILED：弹性负载均衡绑定失败 - ELB_UNBINDING：弹性负载均衡解绑中 - ELB_UNBIND_FAILED：弹性负载均衡解绑失败 - ELB_SWITCHING：弹性负载均衡切换中 - ELB_SWITCHING_FAILED：弹性负载均衡切换失败 - NETWORK_CONFIGURING：网络配置中 - NETWORK_CONFIG_FAILED：网络配置失败 - DISK_EXPAND_FAILED：磁盘扩容失败 - DISK_EXPANDING：磁盘扩容中 - ACTIVE_STANDY_SWITCHOVER：主备恢复中 - ACTIVE_STANDY_SWITCHOVER_FAILURE：主备恢复失败 - CLUSTER_SHRINK_FAILED：缩容失败 - CLUSTER_SHRINKING：缩容中 - SHRINK_CHECK_FAILED：缩容检测失败 - SHRINK_CHECKING：缩容检测中 - FLAVOR_RESIZING_FAILED：规格变更失败 - FLAVOR_RESIZING：规格变更中 - MANAGE_IP_BIND_FAILED：登录开通失败 - MANAGE_IP_BINDING：登录开通中 - ORDER_PENDING：订单待支付 - FINE_GRAINED_RESTORING：细粒度恢复中 - DR_RECOVERING：容灾恢复中
 
         :param task_status: The task_status of this ClusterInfo.
         :type task_status: str
@@ -691,7 +691,7 @@ class ClusterInfo:
     def security_group_id(self):
         r"""Gets the security_group_id of this ClusterInfo.
 
-        安全组ID
+        **参数解释**： 安全组ID。 **取值范围**： 不涉及。
 
         :return: The security_group_id of this ClusterInfo.
         :rtype: str
@@ -702,7 +702,7 @@ class ClusterInfo:
     def security_group_id(self, security_group_id):
         r"""Sets the security_group_id of this ClusterInfo.
 
-        安全组ID
+        **参数解释**： 安全组ID。 **取值范围**： 不涉及。
 
         :param security_group_id: The security_group_id of this ClusterInfo.
         :type security_group_id: str

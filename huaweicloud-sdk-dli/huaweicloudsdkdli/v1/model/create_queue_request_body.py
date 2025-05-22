@@ -28,7 +28,8 @@ class CreateQueueRequestBody:
         'labels': 'list[object]',
         'feature': 'str',
         'tags': 'list[Tag]',
-        'elastic_resource_pool_name': 'str'
+        'elastic_resource_pool_name': 'str',
+        'properties': 'CommonQueueProperty'
     }
 
     attribute_map = {
@@ -43,10 +44,11 @@ class CreateQueueRequestBody:
         'labels': 'labels',
         'feature': 'feature',
         'tags': 'tags',
-        'elastic_resource_pool_name': 'elastic_resource_pool_name'
+        'elastic_resource_pool_name': 'elastic_resource_pool_name',
+        'properties': 'properties'
     }
 
-    def __init__(self, queue_name=None, queue_type=None, description=None, cu_count=None, charging_mode=None, enterprise_project_id=None, platform=None, resource_mode=None, labels=None, feature=None, tags=None, elastic_resource_pool_name=None):
+    def __init__(self, queue_name=None, queue_type=None, description=None, cu_count=None, charging_mode=None, enterprise_project_id=None, platform=None, resource_mode=None, labels=None, feature=None, tags=None, elastic_resource_pool_name=None, properties=None):
         r"""CreateQueueRequestBody
 
         The model defined in huaweicloud sdk
@@ -75,6 +77,8 @@ class CreateQueueRequestBody:
         :type tags: list[:class:`huaweicloudsdkdli.v1.Tag`]
         :param elastic_resource_pool_name: 新建的弹性资源池名称，名称只能包含数字、小写英文字母和下划线，但不能是纯数字，且不能以下划线开头。长度限制：1~128个字符。
         :type elastic_resource_pool_name: str
+        :param properties: 
+        :type properties: :class:`huaweicloudsdkdli.v1.CommonQueueProperty`
         """
         
         
@@ -91,6 +95,7 @@ class CreateQueueRequestBody:
         self._feature = None
         self._tags = None
         self._elastic_resource_pool_name = None
+        self._properties = None
         self.discriminator = None
 
         self.queue_name = queue_name
@@ -115,6 +120,8 @@ class CreateQueueRequestBody:
             self.tags = tags
         if elastic_resource_pool_name is not None:
             self.elastic_resource_pool_name = elastic_resource_pool_name
+        if properties is not None:
+            self.properties = properties
 
     @property
     def queue_name(self):
@@ -379,6 +386,24 @@ class CreateQueueRequestBody:
         :type elastic_resource_pool_name: str
         """
         self._elastic_resource_pool_name = elastic_resource_pool_name
+
+    @property
+    def properties(self):
+        r"""Gets the properties of this CreateQueueRequestBody.
+
+        :return: The properties of this CreateQueueRequestBody.
+        :rtype: :class:`huaweicloudsdkdli.v1.CommonQueueProperty`
+        """
+        return self._properties
+
+    @properties.setter
+    def properties(self, properties):
+        r"""Sets the properties of this CreateQueueRequestBody.
+
+        :param properties: The properties of this CreateQueueRequestBody.
+        :type properties: :class:`huaweicloudsdkdli.v1.CommonQueueProperty`
+        """
+        self._properties = properties
 
     def to_dict(self):
         """Returns the model properties as a dict"""

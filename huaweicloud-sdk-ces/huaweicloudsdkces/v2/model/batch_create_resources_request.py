@@ -18,7 +18,7 @@ class BatchCreateResourcesRequest:
 
     openapi_types = {
         'group_id': 'str',
-        'body': 'ResourcesReq'
+        'body': 'AddResourcesReq'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class BatchCreateResourcesRequest:
         :param group_id: 资源分组ID，以rg开头，后跟22位由字母或数字组成的字符串
         :type group_id: str
         :param body: Body of the BatchCreateResourcesRequest
-        :type body: :class:`huaweicloudsdkces.v2.ResourcesReq`
+        :type body: :class:`huaweicloudsdkces.v2.AddResourcesReq`
         """
         
         
@@ -74,7 +74,7 @@ class BatchCreateResourcesRequest:
         r"""Gets the body of this BatchCreateResourcesRequest.
 
         :return: The body of this BatchCreateResourcesRequest.
-        :rtype: :class:`huaweicloudsdkces.v2.ResourcesReq`
+        :rtype: :class:`huaweicloudsdkces.v2.AddResourcesReq`
         """
         return self._body
 
@@ -83,7 +83,7 @@ class BatchCreateResourcesRequest:
         r"""Sets the body of this BatchCreateResourcesRequest.
 
         :param body: The body of this BatchCreateResourcesRequest.
-        :type body: :class:`huaweicloudsdkces.v2.ResourcesReq`
+        :type body: :class:`huaweicloudsdkces.v2.AddResourcesReq`
         """
         self._body = body
 

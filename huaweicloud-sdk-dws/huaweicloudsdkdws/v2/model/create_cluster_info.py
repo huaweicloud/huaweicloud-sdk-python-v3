@@ -55,31 +55,31 @@ class CreateClusterInfo:
 
         The model defined in huaweicloud sdk
 
-        :param node_type: 节点类型
+        :param node_type: **参数解释**： 节点规格ID，需要通过查询规格接口获取，对应的是接口响应的id字段。 **约束限制**： 不涉及。 **取值范围**： 必须是查询规格信息接口返回的规格ID。 **默认取值**： 不涉及。
         :type node_type: str
-        :param number_of_node: 集群节点数量，集群模式取值范围为3~256，实时数仓（单机模式）取值为1。
+        :param number_of_node: **参数解释**： 节点数量。 **约束限制**： 不涉及。 **取值范围**： 集群模式取值范围为3~256，实时数仓（单机模式）取值为1。 **默认取值**： 不涉及。
         :type number_of_node: int
-        :param subnet_id: 指定子网ID，用于集群网络配置。
+        :param subnet_id: **参数解释**： 指定子网ID，用于集群网络配置。 **约束限制**： 不涉及。 **取值范围**： 必须是虚拟私有云ID下的某个子网。 **默认取值**： 不涉及。
         :type subnet_id: str
-        :param security_group_id: 指定安全组ID，用于集群网络配置。
+        :param security_group_id: **参数解释**： 指定安全组ID，用于集群网络配置。 **约束限制**： 不涉及。 **取值范围**： 参数非空时必须是有效的安全组ID。参数为空时将自动创建安全组。 **默认取值**： null
         :type security_group_id: str
-        :param vpc_id: 指定虚拟私有云ID，用于集群网络配置。
+        :param vpc_id: **参数解释**： 指定虚拟私有云ID，用于集群网络配置。 **约束限制**： 不涉及。 **取值范围**： 必须是有效的虚拟私有云ID。 **默认取值**： 不涉及。
         :type vpc_id: str
-        :param availability_zone: 配置集群可用区。
+        :param availability_zone: **参数解释**： 配置集群可用区。 **约束限制**： 不涉及。 **取值范围**： 必须是当前局点下状态有效且当前用户可见的可用区编码。 **默认取值**： 查询可用区时第一个可用的可用区编码。
         :type availability_zone: str
-        :param port: 集群服务端口，取值范围为8000~30000，默认值：8000。
+        :param port: **参数解释**： 集群数据库端口。 **约束限制**： 不涉及。 **取值范围**： 8000~30000 **默认取值**： 8000
         :type port: int
-        :param name: 集群名称，要求唯一性，必须以字母开头并只包含字母、数字、中划线或下划线，长度为4~64个字符。
+        :param name: **参数解释**： 集群名称。 **约束限制**： 要求唯一性，必须以字母开头并只包含字母、数字、中划线或下划线，长度为4~64个字符。 **取值范围**： 4~64个字符。 **默认取值**： 8000
         :type name: str
-        :param user_name: DWS集群管理员用户名。用户命名要求如下：  - 只能由小写字母、数字或下划线组成。 - 必须由小写字母或下划线开头。 - 长度为1~63个字符。 - 用户名不能为DWS数据库的关键字。
+        :param user_name: **参数解释**： DWS集群管理员用户名。 **约束限制**： - 只能由小写字母、数字或下划线组成。 - 必须由小写字母或下划线开头。 - 长度为1~63个字符。 - 用户名不能为DWS数据库的关键字。    **取值范围**：   1~63个字符； **默认取值**： dbadmin
         :type user_name: str
-        :param user_pwd: DWS集群管理员密码。
+        :param user_pwd: **参数解释**： DWS集群管理员密码。 **约束限制**： 不涉及。 **取值范围**： 12~32个字符； 至少包含以下字符的3种：大写字母、小写字母、数字和特殊字符(~!?,.:;_(){}[]/&lt;&gt;@#%^&amp;*+|\\\\&#x3D;-)； 不能与用户名或倒序的用户名相同； **默认取值**： 不涉及。
         :type user_pwd: str
         :param public_ip: 
         :type public_ip: :class:`huaweicloudsdkdws.v2.PublicIp`
-        :param number_of_cn: CN部署量，取值范围为2~集群节点数，最大值为20，默认值为3。
+        :param number_of_cn: **参数解释**： CN部署量。 **约束限制**： 不涉及。 **取值范围**： 2~集群节点数，最大值为20。 **默认取值**： 默认值为3。
         :type number_of_cn: int
-        :param enterprise_project_id: 企业项目ID，对集群指定企业项目，如果未指定，则使用默认企业项目“default”的ID，即0。
+        :param enterprise_project_id: **参数解释**： 企业项目ID，对集群指定企业项目。如果未指定，则使用默认企业项目“default”的ID，即0。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 0
         :type enterprise_project_id: str
         :param tags: 
         :type tags: :class:`huaweicloudsdkdws.v2.Tags`
@@ -128,7 +128,7 @@ class CreateClusterInfo:
     def node_type(self):
         r"""Gets the node_type of this CreateClusterInfo.
 
-        节点类型
+        **参数解释**： 节点规格ID，需要通过查询规格接口获取，对应的是接口响应的id字段。 **约束限制**： 不涉及。 **取值范围**： 必须是查询规格信息接口返回的规格ID。 **默认取值**： 不涉及。
 
         :return: The node_type of this CreateClusterInfo.
         :rtype: str
@@ -139,7 +139,7 @@ class CreateClusterInfo:
     def node_type(self, node_type):
         r"""Sets the node_type of this CreateClusterInfo.
 
-        节点类型
+        **参数解释**： 节点规格ID，需要通过查询规格接口获取，对应的是接口响应的id字段。 **约束限制**： 不涉及。 **取值范围**： 必须是查询规格信息接口返回的规格ID。 **默认取值**： 不涉及。
 
         :param node_type: The node_type of this CreateClusterInfo.
         :type node_type: str
@@ -150,7 +150,7 @@ class CreateClusterInfo:
     def number_of_node(self):
         r"""Gets the number_of_node of this CreateClusterInfo.
 
-        集群节点数量，集群模式取值范围为3~256，实时数仓（单机模式）取值为1。
+        **参数解释**： 节点数量。 **约束限制**： 不涉及。 **取值范围**： 集群模式取值范围为3~256，实时数仓（单机模式）取值为1。 **默认取值**： 不涉及。
 
         :return: The number_of_node of this CreateClusterInfo.
         :rtype: int
@@ -161,7 +161,7 @@ class CreateClusterInfo:
     def number_of_node(self, number_of_node):
         r"""Sets the number_of_node of this CreateClusterInfo.
 
-        集群节点数量，集群模式取值范围为3~256，实时数仓（单机模式）取值为1。
+        **参数解释**： 节点数量。 **约束限制**： 不涉及。 **取值范围**： 集群模式取值范围为3~256，实时数仓（单机模式）取值为1。 **默认取值**： 不涉及。
 
         :param number_of_node: The number_of_node of this CreateClusterInfo.
         :type number_of_node: int
@@ -172,7 +172,7 @@ class CreateClusterInfo:
     def subnet_id(self):
         r"""Gets the subnet_id of this CreateClusterInfo.
 
-        指定子网ID，用于集群网络配置。
+        **参数解释**： 指定子网ID，用于集群网络配置。 **约束限制**： 不涉及。 **取值范围**： 必须是虚拟私有云ID下的某个子网。 **默认取值**： 不涉及。
 
         :return: The subnet_id of this CreateClusterInfo.
         :rtype: str
@@ -183,7 +183,7 @@ class CreateClusterInfo:
     def subnet_id(self, subnet_id):
         r"""Sets the subnet_id of this CreateClusterInfo.
 
-        指定子网ID，用于集群网络配置。
+        **参数解释**： 指定子网ID，用于集群网络配置。 **约束限制**： 不涉及。 **取值范围**： 必须是虚拟私有云ID下的某个子网。 **默认取值**： 不涉及。
 
         :param subnet_id: The subnet_id of this CreateClusterInfo.
         :type subnet_id: str
@@ -194,7 +194,7 @@ class CreateClusterInfo:
     def security_group_id(self):
         r"""Gets the security_group_id of this CreateClusterInfo.
 
-        指定安全组ID，用于集群网络配置。
+        **参数解释**： 指定安全组ID，用于集群网络配置。 **约束限制**： 不涉及。 **取值范围**： 参数非空时必须是有效的安全组ID。参数为空时将自动创建安全组。 **默认取值**： null
 
         :return: The security_group_id of this CreateClusterInfo.
         :rtype: str
@@ -205,7 +205,7 @@ class CreateClusterInfo:
     def security_group_id(self, security_group_id):
         r"""Sets the security_group_id of this CreateClusterInfo.
 
-        指定安全组ID，用于集群网络配置。
+        **参数解释**： 指定安全组ID，用于集群网络配置。 **约束限制**： 不涉及。 **取值范围**： 参数非空时必须是有效的安全组ID。参数为空时将自动创建安全组。 **默认取值**： null
 
         :param security_group_id: The security_group_id of this CreateClusterInfo.
         :type security_group_id: str
@@ -216,7 +216,7 @@ class CreateClusterInfo:
     def vpc_id(self):
         r"""Gets the vpc_id of this CreateClusterInfo.
 
-        指定虚拟私有云ID，用于集群网络配置。
+        **参数解释**： 指定虚拟私有云ID，用于集群网络配置。 **约束限制**： 不涉及。 **取值范围**： 必须是有效的虚拟私有云ID。 **默认取值**： 不涉及。
 
         :return: The vpc_id of this CreateClusterInfo.
         :rtype: str
@@ -227,7 +227,7 @@ class CreateClusterInfo:
     def vpc_id(self, vpc_id):
         r"""Sets the vpc_id of this CreateClusterInfo.
 
-        指定虚拟私有云ID，用于集群网络配置。
+        **参数解释**： 指定虚拟私有云ID，用于集群网络配置。 **约束限制**： 不涉及。 **取值范围**： 必须是有效的虚拟私有云ID。 **默认取值**： 不涉及。
 
         :param vpc_id: The vpc_id of this CreateClusterInfo.
         :type vpc_id: str
@@ -238,7 +238,7 @@ class CreateClusterInfo:
     def availability_zone(self):
         r"""Gets the availability_zone of this CreateClusterInfo.
 
-        配置集群可用区。
+        **参数解释**： 配置集群可用区。 **约束限制**： 不涉及。 **取值范围**： 必须是当前局点下状态有效且当前用户可见的可用区编码。 **默认取值**： 查询可用区时第一个可用的可用区编码。
 
         :return: The availability_zone of this CreateClusterInfo.
         :rtype: str
@@ -249,7 +249,7 @@ class CreateClusterInfo:
     def availability_zone(self, availability_zone):
         r"""Sets the availability_zone of this CreateClusterInfo.
 
-        配置集群可用区。
+        **参数解释**： 配置集群可用区。 **约束限制**： 不涉及。 **取值范围**： 必须是当前局点下状态有效且当前用户可见的可用区编码。 **默认取值**： 查询可用区时第一个可用的可用区编码。
 
         :param availability_zone: The availability_zone of this CreateClusterInfo.
         :type availability_zone: str
@@ -260,7 +260,7 @@ class CreateClusterInfo:
     def port(self):
         r"""Gets the port of this CreateClusterInfo.
 
-        集群服务端口，取值范围为8000~30000，默认值：8000。
+        **参数解释**： 集群数据库端口。 **约束限制**： 不涉及。 **取值范围**： 8000~30000 **默认取值**： 8000
 
         :return: The port of this CreateClusterInfo.
         :rtype: int
@@ -271,7 +271,7 @@ class CreateClusterInfo:
     def port(self, port):
         r"""Sets the port of this CreateClusterInfo.
 
-        集群服务端口，取值范围为8000~30000，默认值：8000。
+        **参数解释**： 集群数据库端口。 **约束限制**： 不涉及。 **取值范围**： 8000~30000 **默认取值**： 8000
 
         :param port: The port of this CreateClusterInfo.
         :type port: int
@@ -282,7 +282,7 @@ class CreateClusterInfo:
     def name(self):
         r"""Gets the name of this CreateClusterInfo.
 
-        集群名称，要求唯一性，必须以字母开头并只包含字母、数字、中划线或下划线，长度为4~64个字符。
+        **参数解释**： 集群名称。 **约束限制**： 要求唯一性，必须以字母开头并只包含字母、数字、中划线或下划线，长度为4~64个字符。 **取值范围**： 4~64个字符。 **默认取值**： 8000
 
         :return: The name of this CreateClusterInfo.
         :rtype: str
@@ -293,7 +293,7 @@ class CreateClusterInfo:
     def name(self, name):
         r"""Sets the name of this CreateClusterInfo.
 
-        集群名称，要求唯一性，必须以字母开头并只包含字母、数字、中划线或下划线，长度为4~64个字符。
+        **参数解释**： 集群名称。 **约束限制**： 要求唯一性，必须以字母开头并只包含字母、数字、中划线或下划线，长度为4~64个字符。 **取值范围**： 4~64个字符。 **默认取值**： 8000
 
         :param name: The name of this CreateClusterInfo.
         :type name: str
@@ -304,7 +304,7 @@ class CreateClusterInfo:
     def user_name(self):
         r"""Gets the user_name of this CreateClusterInfo.
 
-        DWS集群管理员用户名。用户命名要求如下：  - 只能由小写字母、数字或下划线组成。 - 必须由小写字母或下划线开头。 - 长度为1~63个字符。 - 用户名不能为DWS数据库的关键字。
+        **参数解释**： DWS集群管理员用户名。 **约束限制**： - 只能由小写字母、数字或下划线组成。 - 必须由小写字母或下划线开头。 - 长度为1~63个字符。 - 用户名不能为DWS数据库的关键字。    **取值范围**：   1~63个字符； **默认取值**： dbadmin
 
         :return: The user_name of this CreateClusterInfo.
         :rtype: str
@@ -315,7 +315,7 @@ class CreateClusterInfo:
     def user_name(self, user_name):
         r"""Sets the user_name of this CreateClusterInfo.
 
-        DWS集群管理员用户名。用户命名要求如下：  - 只能由小写字母、数字或下划线组成。 - 必须由小写字母或下划线开头。 - 长度为1~63个字符。 - 用户名不能为DWS数据库的关键字。
+        **参数解释**： DWS集群管理员用户名。 **约束限制**： - 只能由小写字母、数字或下划线组成。 - 必须由小写字母或下划线开头。 - 长度为1~63个字符。 - 用户名不能为DWS数据库的关键字。    **取值范围**：   1~63个字符； **默认取值**： dbadmin
 
         :param user_name: The user_name of this CreateClusterInfo.
         :type user_name: str
@@ -326,7 +326,7 @@ class CreateClusterInfo:
     def user_pwd(self):
         r"""Gets the user_pwd of this CreateClusterInfo.
 
-        DWS集群管理员密码。
+        **参数解释**： DWS集群管理员密码。 **约束限制**： 不涉及。 **取值范围**： 12~32个字符； 至少包含以下字符的3种：大写字母、小写字母、数字和特殊字符(~!?,.:;_(){}[]/<>@#%^&*+|\\\\=-)； 不能与用户名或倒序的用户名相同； **默认取值**： 不涉及。
 
         :return: The user_pwd of this CreateClusterInfo.
         :rtype: str
@@ -337,7 +337,7 @@ class CreateClusterInfo:
     def user_pwd(self, user_pwd):
         r"""Sets the user_pwd of this CreateClusterInfo.
 
-        DWS集群管理员密码。
+        **参数解释**： DWS集群管理员密码。 **约束限制**： 不涉及。 **取值范围**： 12~32个字符； 至少包含以下字符的3种：大写字母、小写字母、数字和特殊字符(~!?,.:;_(){}[]/<>@#%^&*+|\\\\=-)； 不能与用户名或倒序的用户名相同； **默认取值**： 不涉及。
 
         :param user_pwd: The user_pwd of this CreateClusterInfo.
         :type user_pwd: str
@@ -366,7 +366,7 @@ class CreateClusterInfo:
     def number_of_cn(self):
         r"""Gets the number_of_cn of this CreateClusterInfo.
 
-        CN部署量，取值范围为2~集群节点数，最大值为20，默认值为3。
+        **参数解释**： CN部署量。 **约束限制**： 不涉及。 **取值范围**： 2~集群节点数，最大值为20。 **默认取值**： 默认值为3。
 
         :return: The number_of_cn of this CreateClusterInfo.
         :rtype: int
@@ -377,7 +377,7 @@ class CreateClusterInfo:
     def number_of_cn(self, number_of_cn):
         r"""Sets the number_of_cn of this CreateClusterInfo.
 
-        CN部署量，取值范围为2~集群节点数，最大值为20，默认值为3。
+        **参数解释**： CN部署量。 **约束限制**： 不涉及。 **取值范围**： 2~集群节点数，最大值为20。 **默认取值**： 默认值为3。
 
         :param number_of_cn: The number_of_cn of this CreateClusterInfo.
         :type number_of_cn: int
@@ -388,7 +388,7 @@ class CreateClusterInfo:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this CreateClusterInfo.
 
-        企业项目ID，对集群指定企业项目，如果未指定，则使用默认企业项目“default”的ID，即0。
+        **参数解释**： 企业项目ID，对集群指定企业项目。如果未指定，则使用默认企业项目“default”的ID，即0。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 0
 
         :return: The enterprise_project_id of this CreateClusterInfo.
         :rtype: str
@@ -399,7 +399,7 @@ class CreateClusterInfo:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this CreateClusterInfo.
 
-        企业项目ID，对集群指定企业项目，如果未指定，则使用默认企业项目“default”的ID，即0。
+        **参数解释**： 企业项目ID，对集群指定企业项目。如果未指定，则使用默认企业项目“default”的ID，即0。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 0
 
         :param enterprise_project_id: The enterprise_project_id of this CreateClusterInfo.
         :type enterprise_project_id: str

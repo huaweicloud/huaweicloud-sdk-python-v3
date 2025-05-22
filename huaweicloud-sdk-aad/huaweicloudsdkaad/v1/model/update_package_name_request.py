@@ -31,7 +31,7 @@ class UpdatePackageNameRequest:
 
         The model defined in huaweicloud sdk
 
-        :param package_id: 防护包id
+        :param package_id: 实例id
         :type package_id: str
         :param body: Body of the UpdatePackageNameRequest
         :type body: :class:`huaweicloudsdkaad.v1.UpdatePackageNameRequestBody`
@@ -51,7 +51,7 @@ class UpdatePackageNameRequest:
     def package_id(self):
         r"""Gets the package_id of this UpdatePackageNameRequest.
 
-        防护包id
+        实例id
 
         :return: The package_id of this UpdatePackageNameRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class UpdatePackageNameRequest:
     def package_id(self, package_id):
         r"""Sets the package_id of this UpdatePackageNameRequest.
 
-        防护包id
+        实例id
 
         :param package_id: The package_id of this UpdatePackageNameRequest.
         :type package_id: str

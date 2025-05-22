@@ -31,9 +31,9 @@ class CreateLogicalClusterInfo:
 
         The model defined in huaweicloud sdk
 
-        :param logical_cluster_name: 逻辑集群名称
+        :param logical_cluster_name: **参数解释**： 逻辑集群名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type logical_cluster_name: str
-        :param cluster_rings: 逻辑集群环信息
+        :param cluster_rings: **参数解释**： 逻辑集群环信息。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type cluster_rings: list[:class:`huaweicloudsdkdws.v2.ClusterRing`]
         """
         
@@ -50,7 +50,7 @@ class CreateLogicalClusterInfo:
     def logical_cluster_name(self):
         r"""Gets the logical_cluster_name of this CreateLogicalClusterInfo.
 
-        逻辑集群名称
+        **参数解释**： 逻辑集群名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The logical_cluster_name of this CreateLogicalClusterInfo.
         :rtype: str
@@ -61,7 +61,7 @@ class CreateLogicalClusterInfo:
     def logical_cluster_name(self, logical_cluster_name):
         r"""Sets the logical_cluster_name of this CreateLogicalClusterInfo.
 
-        逻辑集群名称
+        **参数解释**： 逻辑集群名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param logical_cluster_name: The logical_cluster_name of this CreateLogicalClusterInfo.
         :type logical_cluster_name: str
@@ -72,7 +72,7 @@ class CreateLogicalClusterInfo:
     def cluster_rings(self):
         r"""Gets the cluster_rings of this CreateLogicalClusterInfo.
 
-        逻辑集群环信息
+        **参数解释**： 逻辑集群环信息。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The cluster_rings of this CreateLogicalClusterInfo.
         :rtype: list[:class:`huaweicloudsdkdws.v2.ClusterRing`]
@@ -83,7 +83,7 @@ class CreateLogicalClusterInfo:
     def cluster_rings(self, cluster_rings):
         r"""Sets the cluster_rings of this CreateLogicalClusterInfo.
 
-        逻辑集群环信息
+        **参数解释**： 逻辑集群环信息。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param cluster_rings: The cluster_rings of this CreateLogicalClusterInfo.
         :type cluster_rings: list[:class:`huaweicloudsdkdws.v2.ClusterRing`]

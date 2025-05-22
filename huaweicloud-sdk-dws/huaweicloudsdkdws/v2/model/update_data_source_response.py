@@ -18,29 +18,36 @@ class UpdateDataSourceResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'job_id': 'str'
+        'job_id': 'str',
+        'data_source_id': 'str'
     }
 
     attribute_map = {
-        'job_id': 'job_id'
+        'job_id': 'job_id',
+        'data_source_id': 'data_source_id'
     }
 
-    def __init__(self, job_id=None):
+    def __init__(self, job_id=None, data_source_id=None):
         r"""UpdateDataSourceResponse
 
         The model defined in huaweicloud sdk
 
         :param job_id: 更新数据源job_id。
         :type job_id: str
+        :param data_source_id: 数据源id。
+        :type data_source_id: str
         """
         
         super(UpdateDataSourceResponse, self).__init__()
 
         self._job_id = None
+        self._data_source_id = None
         self.discriminator = None
 
         if job_id is not None:
             self.job_id = job_id
+        if data_source_id is not None:
+            self.data_source_id = data_source_id
 
     @property
     def job_id(self):
@@ -63,6 +70,28 @@ class UpdateDataSourceResponse(SdkResponse):
         :type job_id: str
         """
         self._job_id = job_id
+
+    @property
+    def data_source_id(self):
+        r"""Gets the data_source_id of this UpdateDataSourceResponse.
+
+        数据源id。
+
+        :return: The data_source_id of this UpdateDataSourceResponse.
+        :rtype: str
+        """
+        return self._data_source_id
+
+    @data_source_id.setter
+    def data_source_id(self, data_source_id):
+        r"""Sets the data_source_id of this UpdateDataSourceResponse.
+
+        数据源id。
+
+        :param data_source_id: The data_source_id of this UpdateDataSourceResponse.
+        :type data_source_id: str
+        """
+        self._data_source_id = data_source_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

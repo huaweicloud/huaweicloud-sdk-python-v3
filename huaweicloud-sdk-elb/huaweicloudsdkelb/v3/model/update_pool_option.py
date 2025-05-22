@@ -31,7 +31,8 @@ class UpdatePoolOption:
         'any_port_enable': 'bool',
         'connection_drain': 'ConnectionDrain',
         'pool_health': 'PoolHealth',
-        'quic_cid_hash_strategy': 'QuicCidHashStrategy'
+        'quic_cid_hash_strategy': 'QuicCidHashStrategy',
+        'az_affinity': 'UpdateAzAffinity'
     }
 
     attribute_map = {
@@ -49,10 +50,11 @@ class UpdatePoolOption:
         'any_port_enable': 'any_port_enable',
         'connection_drain': 'connection_drain',
         'pool_health': 'pool_health',
-        'quic_cid_hash_strategy': 'quic_cid_hash_strategy'
+        'quic_cid_hash_strategy': 'quic_cid_hash_strategy',
+        'az_affinity': 'az_affinity'
     }
 
-    def __init__(self, admin_state_up=None, description=None, lb_algorithm=None, name=None, session_persistence=None, slow_start=None, member_deletion_protection_enable=None, vpc_id=None, type=None, protection_status=None, protection_reason=None, any_port_enable=None, connection_drain=None, pool_health=None, quic_cid_hash_strategy=None):
+    def __init__(self, admin_state_up=None, description=None, lb_algorithm=None, name=None, session_persistence=None, slow_start=None, member_deletion_protection_enable=None, vpc_id=None, type=None, protection_status=None, protection_reason=None, any_port_enable=None, connection_drain=None, pool_health=None, quic_cid_hash_strategy=None, az_affinity=None):
         r"""UpdatePoolOption
 
         The model defined in huaweicloud sdk
@@ -87,6 +89,8 @@ class UpdatePoolOption:
         :type pool_health: :class:`huaweicloudsdkelb.v3.PoolHealth`
         :param quic_cid_hash_strategy: 
         :type quic_cid_hash_strategy: :class:`huaweicloudsdkelb.v3.QuicCidHashStrategy`
+        :param az_affinity: 
+        :type az_affinity: :class:`huaweicloudsdkelb.v3.UpdateAzAffinity`
         """
         
         
@@ -106,6 +110,7 @@ class UpdatePoolOption:
         self._connection_drain = None
         self._pool_health = None
         self._quic_cid_hash_strategy = None
+        self._az_affinity = None
         self.discriminator = None
 
         if admin_state_up is not None:
@@ -138,6 +143,8 @@ class UpdatePoolOption:
             self.pool_health = pool_health
         if quic_cid_hash_strategy is not None:
             self.quic_cid_hash_strategy = quic_cid_hash_strategy
+        if az_affinity is not None:
+            self.az_affinity = az_affinity
 
     @property
     def admin_state_up(self):
@@ -448,6 +455,24 @@ class UpdatePoolOption:
         :type quic_cid_hash_strategy: :class:`huaweicloudsdkelb.v3.QuicCidHashStrategy`
         """
         self._quic_cid_hash_strategy = quic_cid_hash_strategy
+
+    @property
+    def az_affinity(self):
+        r"""Gets the az_affinity of this UpdatePoolOption.
+
+        :return: The az_affinity of this UpdatePoolOption.
+        :rtype: :class:`huaweicloudsdkelb.v3.UpdateAzAffinity`
+        """
+        return self._az_affinity
+
+    @az_affinity.setter
+    def az_affinity(self, az_affinity):
+        r"""Sets the az_affinity of this UpdatePoolOption.
+
+        :param az_affinity: The az_affinity of this UpdatePoolOption.
+        :type az_affinity: :class:`huaweicloudsdkelb.v3.UpdateAzAffinity`
+        """
+        self._az_affinity = az_affinity
 
     def to_dict(self):
         """Returns the model properties as a dict"""

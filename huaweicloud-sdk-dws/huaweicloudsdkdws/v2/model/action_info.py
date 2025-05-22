@@ -41,19 +41,19 @@ class ActionInfo:
 
         The model defined in huaweicloud sdk
 
-        :param action_name: 操作名称。当前只允许Create,Expand,Restart,Delete,Shrink
+        :param action_name: **参数解释**： 操作名称。 **取值范围**： Create：创建逻辑集群 Expand：扩容逻辑集群 Restart：重启逻辑集群 Delete：删除逻辑集群 Shrink：缩容逻辑集群
         :type action_name: str
-        :param progress: 操作进度，默认10
+        :param progress: **参数解释**： 操作进度，默认10。 **取值范围**： 0~100
         :type progress: int
-        :param completed: 是否完成操作
+        :param completed: **参数解释**： 操作是否完成。 **取值范围**： 不涉及。
         :type completed: bool
-        :param start_time: 操作开始时间
+        :param start_time: **参数解释**： 操作开始时间。 **取值范围**： 不涉及。
         :type start_time: str
-        :param end_time: 操作结束时间
+        :param end_time: **参数解释**： 操作结束时间。 **取值范围**： 不涉及。
         :type end_time: str
-        :param result: 操作结果。success或者failed，默认空字符串
+        :param result: **参数解释**： 操作结果。。 **取值范围**： success：成功 failed：失败 默认空字符串。
         :type result: str
-        :param logs: 操作日志
+        :param logs: **参数解释**： 操作日志信息。 **取值范围**： 不涉及。
         :type logs: str
         """
         
@@ -87,7 +87,7 @@ class ActionInfo:
     def action_name(self):
         r"""Gets the action_name of this ActionInfo.
 
-        操作名称。当前只允许Create,Expand,Restart,Delete,Shrink
+        **参数解释**： 操作名称。 **取值范围**： Create：创建逻辑集群 Expand：扩容逻辑集群 Restart：重启逻辑集群 Delete：删除逻辑集群 Shrink：缩容逻辑集群
 
         :return: The action_name of this ActionInfo.
         :rtype: str
@@ -98,7 +98,7 @@ class ActionInfo:
     def action_name(self, action_name):
         r"""Sets the action_name of this ActionInfo.
 
-        操作名称。当前只允许Create,Expand,Restart,Delete,Shrink
+        **参数解释**： 操作名称。 **取值范围**： Create：创建逻辑集群 Expand：扩容逻辑集群 Restart：重启逻辑集群 Delete：删除逻辑集群 Shrink：缩容逻辑集群
 
         :param action_name: The action_name of this ActionInfo.
         :type action_name: str
@@ -109,7 +109,7 @@ class ActionInfo:
     def progress(self):
         r"""Gets the progress of this ActionInfo.
 
-        操作进度，默认10
+        **参数解释**： 操作进度，默认10。 **取值范围**： 0~100
 
         :return: The progress of this ActionInfo.
         :rtype: int
@@ -120,7 +120,7 @@ class ActionInfo:
     def progress(self, progress):
         r"""Sets the progress of this ActionInfo.
 
-        操作进度，默认10
+        **参数解释**： 操作进度，默认10。 **取值范围**： 0~100
 
         :param progress: The progress of this ActionInfo.
         :type progress: int
@@ -131,7 +131,7 @@ class ActionInfo:
     def completed(self):
         r"""Gets the completed of this ActionInfo.
 
-        是否完成操作
+        **参数解释**： 操作是否完成。 **取值范围**： 不涉及。
 
         :return: The completed of this ActionInfo.
         :rtype: bool
@@ -142,7 +142,7 @@ class ActionInfo:
     def completed(self, completed):
         r"""Sets the completed of this ActionInfo.
 
-        是否完成操作
+        **参数解释**： 操作是否完成。 **取值范围**： 不涉及。
 
         :param completed: The completed of this ActionInfo.
         :type completed: bool
@@ -153,7 +153,7 @@ class ActionInfo:
     def start_time(self):
         r"""Gets the start_time of this ActionInfo.
 
-        操作开始时间
+        **参数解释**： 操作开始时间。 **取值范围**： 不涉及。
 
         :return: The start_time of this ActionInfo.
         :rtype: str
@@ -164,7 +164,7 @@ class ActionInfo:
     def start_time(self, start_time):
         r"""Sets the start_time of this ActionInfo.
 
-        操作开始时间
+        **参数解释**： 操作开始时间。 **取值范围**： 不涉及。
 
         :param start_time: The start_time of this ActionInfo.
         :type start_time: str
@@ -175,7 +175,7 @@ class ActionInfo:
     def end_time(self):
         r"""Gets the end_time of this ActionInfo.
 
-        操作结束时间
+        **参数解释**： 操作结束时间。 **取值范围**： 不涉及。
 
         :return: The end_time of this ActionInfo.
         :rtype: str
@@ -186,7 +186,7 @@ class ActionInfo:
     def end_time(self, end_time):
         r"""Sets the end_time of this ActionInfo.
 
-        操作结束时间
+        **参数解释**： 操作结束时间。 **取值范围**： 不涉及。
 
         :param end_time: The end_time of this ActionInfo.
         :type end_time: str
@@ -197,7 +197,7 @@ class ActionInfo:
     def result(self):
         r"""Gets the result of this ActionInfo.
 
-        操作结果。success或者failed，默认空字符串
+        **参数解释**： 操作结果。。 **取值范围**： success：成功 failed：失败 默认空字符串。
 
         :return: The result of this ActionInfo.
         :rtype: str
@@ -208,7 +208,7 @@ class ActionInfo:
     def result(self, result):
         r"""Sets the result of this ActionInfo.
 
-        操作结果。success或者failed，默认空字符串
+        **参数解释**： 操作结果。。 **取值范围**： success：成功 failed：失败 默认空字符串。
 
         :param result: The result of this ActionInfo.
         :type result: str
@@ -219,7 +219,7 @@ class ActionInfo:
     def logs(self):
         r"""Gets the logs of this ActionInfo.
 
-        操作日志
+        **参数解释**： 操作日志信息。 **取值范围**： 不涉及。
 
         :return: The logs of this ActionInfo.
         :rtype: str
@@ -230,7 +230,7 @@ class ActionInfo:
     def logs(self, logs):
         r"""Sets the logs of this ActionInfo.
 
-        操作日志
+        **参数解释**： 操作日志信息。 **取值范围**： 不涉及。
 
         :param logs: The logs of this ActionInfo.
         :type logs: str

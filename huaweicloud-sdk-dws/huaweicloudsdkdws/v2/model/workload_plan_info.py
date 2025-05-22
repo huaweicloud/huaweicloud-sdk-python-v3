@@ -45,9 +45,9 @@ class WorkloadPlanInfo:
 
         :param status: 计划状态。
         :type status: int
-        :param project_id: 项目ID。
+        :param project_id: **参数解释**： 项目ID。获取方式方法请参见[获取项目ID](dws_02_0011.xml)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type project_id: str
-        :param cluster_id: 集群ID。
+        :param cluster_id: **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
         :type cluster_id: str
         :param plan_id: 计划ID。
         :type plan_id: str
@@ -112,7 +112,7 @@ class WorkloadPlanInfo:
     def project_id(self):
         r"""Gets the project_id of this WorkloadPlanInfo.
 
-        项目ID。
+        **参数解释**： 项目ID。获取方式方法请参见[获取项目ID](dws_02_0011.xml)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The project_id of this WorkloadPlanInfo.
         :rtype: str
@@ -123,7 +123,7 @@ class WorkloadPlanInfo:
     def project_id(self, project_id):
         r"""Sets the project_id of this WorkloadPlanInfo.
 
-        项目ID。
+        **参数解释**： 项目ID。获取方式方法请参见[获取项目ID](dws_02_0011.xml)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param project_id: The project_id of this WorkloadPlanInfo.
         :type project_id: str
@@ -134,7 +134,7 @@ class WorkloadPlanInfo:
     def cluster_id(self):
         r"""Gets the cluster_id of this WorkloadPlanInfo.
 
-        集群ID。
+        **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
 
         :return: The cluster_id of this WorkloadPlanInfo.
         :rtype: str
@@ -145,7 +145,7 @@ class WorkloadPlanInfo:
     def cluster_id(self, cluster_id):
         r"""Sets the cluster_id of this WorkloadPlanInfo.
 
-        集群ID。
+        **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
 
         :param cluster_id: The cluster_id of this WorkloadPlanInfo.
         :type cluster_id: str

@@ -29,7 +29,7 @@ class BatchCreateCn:
 
         The model defined in huaweicloud sdk
 
-        :param num: 批量增加CN节点任务完成，集群总CN数量。集群支持的CN节点数量与集群当前版本和节点数量相关，具体支持范围可根据“查询集群CN节点”查询，“min_num”为支持的最小数量，max_num为支持的最大数量。
+        :param num: **参数解释**： 批量增加CN节点任务完成后，集群总CN数量。集群支持的CN节点数量与集群当前版本和节点数量相关，具体支持范围可根据“查询集群CN节点”查询，“min_num”为支持的最小数量，max_num为支持的最大数量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type num: int
         """
         
@@ -44,7 +44,7 @@ class BatchCreateCn:
     def num(self):
         r"""Gets the num of this BatchCreateCn.
 
-        批量增加CN节点任务完成，集群总CN数量。集群支持的CN节点数量与集群当前版本和节点数量相关，具体支持范围可根据“查询集群CN节点”查询，“min_num”为支持的最小数量，max_num为支持的最大数量。
+        **参数解释**： 批量增加CN节点任务完成后，集群总CN数量。集群支持的CN节点数量与集群当前版本和节点数量相关，具体支持范围可根据“查询集群CN节点”查询，“min_num”为支持的最小数量，max_num为支持的最大数量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The num of this BatchCreateCn.
         :rtype: int
@@ -55,7 +55,7 @@ class BatchCreateCn:
     def num(self, num):
         r"""Sets the num of this BatchCreateCn.
 
-        批量增加CN节点任务完成，集群总CN数量。集群支持的CN节点数量与集群当前版本和节点数量相关，具体支持范围可根据“查询集群CN节点”查询，“min_num”为支持的最小数量，max_num为支持的最大数量。
+        **参数解释**： 批量增加CN节点任务完成后，集群总CN数量。集群支持的CN节点数量与集群当前版本和节点数量相关，具体支持范围可根据“查询集群CN节点”查询，“min_num”为支持的最小数量，max_num为支持的最大数量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param num: The num of this BatchCreateCn.
         :type num: int

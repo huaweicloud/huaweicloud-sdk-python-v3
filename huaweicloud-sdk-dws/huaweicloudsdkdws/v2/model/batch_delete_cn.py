@@ -29,7 +29,7 @@ class BatchDeleteCn:
 
         The model defined in huaweicloud sdk
 
-        :param instances: 批量删除CN节点ID
+        :param instances: **参数解释**： 批量删除CN节点ID。 **约束限制**： 不涉及。 **取值范围**： 非空。 **默认取值**： 不涉及。
         :type instances: list[str]
         """
         
@@ -45,7 +45,7 @@ class BatchDeleteCn:
     def instances(self):
         r"""Gets the instances of this BatchDeleteCn.
 
-        批量删除CN节点ID
+        **参数解释**： 批量删除CN节点ID。 **约束限制**： 不涉及。 **取值范围**： 非空。 **默认取值**： 不涉及。
 
         :return: The instances of this BatchDeleteCn.
         :rtype: list[str]
@@ -56,7 +56,7 @@ class BatchDeleteCn:
     def instances(self, instances):
         r"""Sets the instances of this BatchDeleteCn.
 
-        批量删除CN节点ID
+        **参数解释**： 批量删除CN节点ID。 **约束限制**： 不涉及。 **取值范围**： 非空。 **默认取值**： 不涉及。
 
         :param instances: The instances of this BatchDeleteCn.
         :type instances: list[str]

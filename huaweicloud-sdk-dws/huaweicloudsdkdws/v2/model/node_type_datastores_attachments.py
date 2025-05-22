@@ -17,8 +17,8 @@ class NodeTypeDatastoresAttachments:
     sensitive_list = []
 
     openapi_types = {
-        'min_cn': 'str',
-        'max_cn': 'str'
+        'min_cn': 'int',
+        'max_cn': 'int'
     }
 
     attribute_map = {
@@ -31,10 +31,10 @@ class NodeTypeDatastoresAttachments:
 
         The model defined in huaweicloud sdk
 
-        :param min_cn: 内核版本支持的最小CN。
-        :type min_cn: str
-        :param max_cn: 内核版本支持的最大CN。
-        :type max_cn: str
+        :param min_cn: **参数解释**： 内核版本支持的最小CN。 **取值范围**： 大于0的正整数。
+        :type min_cn: int
+        :param max_cn: **参数解释**： 内核版本支持的最大CN。 **取值范围**： 大于0的正整数。
+        :type max_cn: int
         """
         
         
@@ -43,17 +43,19 @@ class NodeTypeDatastoresAttachments:
         self._max_cn = None
         self.discriminator = None
 
-        self.min_cn = min_cn
-        self.max_cn = max_cn
+        if min_cn is not None:
+            self.min_cn = min_cn
+        if max_cn is not None:
+            self.max_cn = max_cn
 
     @property
     def min_cn(self):
         r"""Gets the min_cn of this NodeTypeDatastoresAttachments.
 
-        内核版本支持的最小CN。
+        **参数解释**： 内核版本支持的最小CN。 **取值范围**： 大于0的正整数。
 
         :return: The min_cn of this NodeTypeDatastoresAttachments.
-        :rtype: str
+        :rtype: int
         """
         return self._min_cn
 
@@ -61,10 +63,10 @@ class NodeTypeDatastoresAttachments:
     def min_cn(self, min_cn):
         r"""Sets the min_cn of this NodeTypeDatastoresAttachments.
 
-        内核版本支持的最小CN。
+        **参数解释**： 内核版本支持的最小CN。 **取值范围**： 大于0的正整数。
 
         :param min_cn: The min_cn of this NodeTypeDatastoresAttachments.
-        :type min_cn: str
+        :type min_cn: int
         """
         self._min_cn = min_cn
 
@@ -72,10 +74,10 @@ class NodeTypeDatastoresAttachments:
     def max_cn(self):
         r"""Gets the max_cn of this NodeTypeDatastoresAttachments.
 
-        内核版本支持的最大CN。
+        **参数解释**： 内核版本支持的最大CN。 **取值范围**： 大于0的正整数。
 
         :return: The max_cn of this NodeTypeDatastoresAttachments.
-        :rtype: str
+        :rtype: int
         """
         return self._max_cn
 
@@ -83,10 +85,10 @@ class NodeTypeDatastoresAttachments:
     def max_cn(self, max_cn):
         r"""Sets the max_cn of this NodeTypeDatastoresAttachments.
 
-        内核版本支持的最大CN。
+        **参数解释**： 内核版本支持的最大CN。 **取值范围**： 大于0的正整数。
 
         :param max_cn: The max_cn of this NodeTypeDatastoresAttachments.
-        :type max_cn: str
+        :type max_cn: int
         """
         self._max_cn = max_cn
 

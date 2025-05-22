@@ -29,7 +29,7 @@ class ClusterDescriptionInfo:
 
         The model defined in huaweicloud sdk
 
-        :param description_info: 集群描述信息
+        :param description_info: **参数解释**: 集群描述信息。 **取值范围**: 不涉及。
         :type description_info: str
         """
         
@@ -44,7 +44,7 @@ class ClusterDescriptionInfo:
     def description_info(self):
         r"""Gets the description_info of this ClusterDescriptionInfo.
 
-        集群描述信息
+        **参数解释**: 集群描述信息。 **取值范围**: 不涉及。
 
         :return: The description_info of this ClusterDescriptionInfo.
         :rtype: str
@@ -55,7 +55,7 @@ class ClusterDescriptionInfo:
     def description_info(self, description_info):
         r"""Sets the description_info of this ClusterDescriptionInfo.
 
-        集群描述信息
+        **参数解释**: 集群描述信息。 **取值范围**: 不涉及。
 
         :param description_info: The description_info of this ClusterDescriptionInfo.
         :type description_info: str

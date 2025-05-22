@@ -18,7 +18,7 @@ class DatabaseOmUserInfo:
 
     openapi_types = {
         'om_user_status': 'str',
-        'om_user_expires_time': 'date'
+        'om_user_expires_time': 'int'
     }
 
     attribute_map = {
@@ -31,10 +31,10 @@ class DatabaseOmUserInfo:
 
         The model defined in huaweicloud sdk
 
-        :param om_user_status: 运维账户状态
+        :param om_user_status: **参数解释**： 运维账户状态。 **取值范围**： on、off
         :type om_user_status: str
-        :param om_user_expires_time: 运维账户过期状态
-        :type om_user_expires_time: date
+        :param om_user_expires_time: **参数解释**： 运维账户过期状态。格式是有效的时间戳。 **取值范围**： 不涉及。
+        :type om_user_expires_time: int
         """
         
         
@@ -52,7 +52,7 @@ class DatabaseOmUserInfo:
     def om_user_status(self):
         r"""Gets the om_user_status of this DatabaseOmUserInfo.
 
-        运维账户状态
+        **参数解释**： 运维账户状态。 **取值范围**： on、off
 
         :return: The om_user_status of this DatabaseOmUserInfo.
         :rtype: str
@@ -63,7 +63,7 @@ class DatabaseOmUserInfo:
     def om_user_status(self, om_user_status):
         r"""Sets the om_user_status of this DatabaseOmUserInfo.
 
-        运维账户状态
+        **参数解释**： 运维账户状态。 **取值范围**： on、off
 
         :param om_user_status: The om_user_status of this DatabaseOmUserInfo.
         :type om_user_status: str
@@ -74,10 +74,10 @@ class DatabaseOmUserInfo:
     def om_user_expires_time(self):
         r"""Gets the om_user_expires_time of this DatabaseOmUserInfo.
 
-        运维账户过期状态
+        **参数解释**： 运维账户过期状态。格式是有效的时间戳。 **取值范围**： 不涉及。
 
         :return: The om_user_expires_time of this DatabaseOmUserInfo.
-        :rtype: date
+        :rtype: int
         """
         return self._om_user_expires_time
 
@@ -85,10 +85,10 @@ class DatabaseOmUserInfo:
     def om_user_expires_time(self, om_user_expires_time):
         r"""Sets the om_user_expires_time of this DatabaseOmUserInfo.
 
-        运维账户过期状态
+        **参数解释**： 运维账户过期状态。格式是有效的时间戳。 **取值范围**： 不涉及。
 
         :param om_user_expires_time: The om_user_expires_time of this DatabaseOmUserInfo.
-        :type om_user_expires_time: date
+        :type om_user_expires_time: int
         """
         self._om_user_expires_time = om_user_expires_time
 

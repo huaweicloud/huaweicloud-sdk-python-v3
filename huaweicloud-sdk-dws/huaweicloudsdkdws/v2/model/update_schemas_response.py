@@ -30,7 +30,7 @@ class UpdateSchemasResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param ret_code: 响应编码。
+        :param ret_code: **参数解释**： 响应编码。 **取值范围**： 不涉及。
         :type ret_code: int
         """
         
@@ -46,7 +46,7 @@ class UpdateSchemasResponse(SdkResponse):
     def ret_code(self):
         r"""Gets the ret_code of this UpdateSchemasResponse.
 
-        响应编码。
+        **参数解释**： 响应编码。 **取值范围**： 不涉及。
 
         :return: The ret_code of this UpdateSchemasResponse.
         :rtype: int
@@ -57,7 +57,7 @@ class UpdateSchemasResponse(SdkResponse):
     def ret_code(self, ret_code):
         r"""Sets the ret_code of this UpdateSchemasResponse.
 
-        响应编码。
+        **参数解释**： 响应编码。 **取值范围**： 不涉及。
 
         :param ret_code: The ret_code of this UpdateSchemasResponse.
         :type ret_code: int

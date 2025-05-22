@@ -28,7 +28,10 @@ class CreateCertificateOption:
         'enterprise_project_id': 'str',
         'enc_certificate': 'str',
         'enc_private_key': 'str',
-        'scm_certificate_id': 'str'
+        'scm_certificate_id': 'str',
+        'source': 'str',
+        'protection_status': 'str',
+        'protection_reason': 'str'
     }
 
     attribute_map = {
@@ -43,10 +46,13 @@ class CreateCertificateOption:
         'enterprise_project_id': 'enterprise_project_id',
         'enc_certificate': 'enc_certificate',
         'enc_private_key': 'enc_private_key',
-        'scm_certificate_id': 'scm_certificate_id'
+        'scm_certificate_id': 'scm_certificate_id',
+        'source': 'source',
+        'protection_status': 'protection_status',
+        'protection_reason': 'protection_reason'
     }
 
-    def __init__(self, admin_state_up=None, certificate=None, description=None, domain=None, name=None, private_key=None, project_id=None, type=None, enterprise_project_id=None, enc_certificate=None, enc_private_key=None, scm_certificate_id=None):
+    def __init__(self, admin_state_up=None, certificate=None, description=None, domain=None, name=None, private_key=None, project_id=None, type=None, enterprise_project_id=None, enc_certificate=None, enc_private_key=None, scm_certificate_id=None, source=None, protection_status=None, protection_reason=None):
         r"""CreateCertificateOption
 
         The model defined in huaweicloud sdk
@@ -75,6 +81,12 @@ class CreateCertificateOption:
         :type enc_private_key: str
         :param scm_certificate_id: SM证书ID。
         :type scm_certificate_id: str
+        :param source: 参数解释：证书来源 取值范围：无  默认取值：当scm_certificate_id不为空，且未传入source时，默认取值为“scm”； 其他情况下默认为空。
+        :type source: str
+        :param protection_status: 参数解释：修改保护状态  约束限制：无  取值范围： - nonProtection: 不保护  - consoleProtection: 控制台修改保护  默认取值：nonProtection
+        :type protection_status: str
+        :param protection_reason: 参数解释：设置修改保护的原因  约束限制：仅当protection_status为consoleProtection时有效  取值范围：无  默认取值：空
+        :type protection_reason: str
         """
         
         
@@ -91,6 +103,9 @@ class CreateCertificateOption:
         self._enc_certificate = None
         self._enc_private_key = None
         self._scm_certificate_id = None
+        self._source = None
+        self._protection_status = None
+        self._protection_reason = None
         self.discriminator = None
 
         if admin_state_up is not None:
@@ -117,6 +132,12 @@ class CreateCertificateOption:
             self.enc_private_key = enc_private_key
         if scm_certificate_id is not None:
             self.scm_certificate_id = scm_certificate_id
+        if source is not None:
+            self.source = source
+        if protection_status is not None:
+            self.protection_status = protection_status
+        if protection_reason is not None:
+            self.protection_reason = protection_reason
 
     @property
     def admin_state_up(self):
@@ -381,6 +402,72 @@ class CreateCertificateOption:
         :type scm_certificate_id: str
         """
         self._scm_certificate_id = scm_certificate_id
+
+    @property
+    def source(self):
+        r"""Gets the source of this CreateCertificateOption.
+
+        参数解释：证书来源 取值范围：无  默认取值：当scm_certificate_id不为空，且未传入source时，默认取值为“scm”； 其他情况下默认为空。
+
+        :return: The source of this CreateCertificateOption.
+        :rtype: str
+        """
+        return self._source
+
+    @source.setter
+    def source(self, source):
+        r"""Sets the source of this CreateCertificateOption.
+
+        参数解释：证书来源 取值范围：无  默认取值：当scm_certificate_id不为空，且未传入source时，默认取值为“scm”； 其他情况下默认为空。
+
+        :param source: The source of this CreateCertificateOption.
+        :type source: str
+        """
+        self._source = source
+
+    @property
+    def protection_status(self):
+        r"""Gets the protection_status of this CreateCertificateOption.
+
+        参数解释：修改保护状态  约束限制：无  取值范围： - nonProtection: 不保护  - consoleProtection: 控制台修改保护  默认取值：nonProtection
+
+        :return: The protection_status of this CreateCertificateOption.
+        :rtype: str
+        """
+        return self._protection_status
+
+    @protection_status.setter
+    def protection_status(self, protection_status):
+        r"""Sets the protection_status of this CreateCertificateOption.
+
+        参数解释：修改保护状态  约束限制：无  取值范围： - nonProtection: 不保护  - consoleProtection: 控制台修改保护  默认取值：nonProtection
+
+        :param protection_status: The protection_status of this CreateCertificateOption.
+        :type protection_status: str
+        """
+        self._protection_status = protection_status
+
+    @property
+    def protection_reason(self):
+        r"""Gets the protection_reason of this CreateCertificateOption.
+
+        参数解释：设置修改保护的原因  约束限制：仅当protection_status为consoleProtection时有效  取值范围：无  默认取值：空
+
+        :return: The protection_reason of this CreateCertificateOption.
+        :rtype: str
+        """
+        return self._protection_reason
+
+    @protection_reason.setter
+    def protection_reason(self, protection_reason):
+        r"""Sets the protection_reason of this CreateCertificateOption.
+
+        参数解释：设置修改保护的原因  约束限制：仅当protection_status为consoleProtection时有效  取值范围：无  默认取值：空
+
+        :param protection_reason: The protection_reason of this CreateCertificateOption.
+        :type protection_reason: str
+        """
+        self._protection_reason = protection_reason
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -18,6 +18,7 @@ class UpdateMemberOption:
 
     openapi_types = {
         'admin_state_up': 'bool',
+        'availability_zone': 'str',
         'name': 'str',
         'weight': 'int',
         'protocol_port': 'int'
@@ -25,18 +26,21 @@ class UpdateMemberOption:
 
     attribute_map = {
         'admin_state_up': 'admin_state_up',
+        'availability_zone': 'availability_zone',
         'name': 'name',
         'weight': 'weight',
         'protocol_port': 'protocol_port'
     }
 
-    def __init__(self, admin_state_up=None, name=None, weight=None, protocol_port=None):
+    def __init__(self, admin_state_up=None, availability_zone=None, name=None, weight=None, protocol_port=None):
         r"""UpdateMemberOption
 
         The model defined in huaweicloud sdk
 
         :param admin_state_up: 后端服务器的管理状态。  取值：true、false。  虽然创建、更新请求支持该字段，但实际取值决定于后端服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。  请勿传入该字段。
         :type admin_state_up: bool
+        :param availability_zone: 参数解释：后端服务器的可用区。  约束限制： 仅支持iptarget类型的后端服务器更新该字段。且后端服务器组开启可用区亲和时，iptarget类型的后端服务器必须配置该字段，且无法更新为\&quot;\&quot;。 取值范围：本region中ECS可选择的可用区。
+        :type availability_zone: str
         :param name: 后端服务器名称。
         :type name: str
         :param weight: 后端服务器的权重，请求将根据pool配置的负载均衡算法和后端服务器的权重进行负载分发。 权重值越大，分发的请求越多。权重为0的后端不再接受新的请求。  取值：0-100，默认1。  使用说明：若所在pool的lb_algorithm取值为SOURCE_IP或QUIC_CID，该字段无效。
@@ -48,6 +52,7 @@ class UpdateMemberOption:
         
 
         self._admin_state_up = None
+        self._availability_zone = None
         self._name = None
         self._weight = None
         self._protocol_port = None
@@ -55,6 +60,8 @@ class UpdateMemberOption:
 
         if admin_state_up is not None:
             self.admin_state_up = admin_state_up
+        if availability_zone is not None:
+            self.availability_zone = availability_zone
         if name is not None:
             self.name = name
         if weight is not None:
@@ -83,6 +90,28 @@ class UpdateMemberOption:
         :type admin_state_up: bool
         """
         self._admin_state_up = admin_state_up
+
+    @property
+    def availability_zone(self):
+        r"""Gets the availability_zone of this UpdateMemberOption.
+
+        参数解释：后端服务器的可用区。  约束限制： 仅支持iptarget类型的后端服务器更新该字段。且后端服务器组开启可用区亲和时，iptarget类型的后端服务器必须配置该字段，且无法更新为\"\"。 取值范围：本region中ECS可选择的可用区。
+
+        :return: The availability_zone of this UpdateMemberOption.
+        :rtype: str
+        """
+        return self._availability_zone
+
+    @availability_zone.setter
+    def availability_zone(self, availability_zone):
+        r"""Sets the availability_zone of this UpdateMemberOption.
+
+        参数解释：后端服务器的可用区。  约束限制： 仅支持iptarget类型的后端服务器更新该字段。且后端服务器组开启可用区亲和时，iptarget类型的后端服务器必须配置该字段，且无法更新为\"\"。 取值范围：本region中ECS可选择的可用区。
+
+        :param availability_zone: The availability_zone of this UpdateMemberOption.
+        :type availability_zone: str
+        """
+        self._availability_zone = availability_zone
 
     @property
     def name(self):

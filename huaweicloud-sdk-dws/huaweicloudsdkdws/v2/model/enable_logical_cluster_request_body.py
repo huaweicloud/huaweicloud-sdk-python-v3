@@ -29,7 +29,7 @@ class EnableLogicalClusterRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param enable: true-切换开关
+        :param enable: **参数解释**： 切换逻辑集群开关请求。 **约束限制**： 不涉及。 **取值范围**： true：打开开关 false：关闭开关 **默认取值**： 不涉及。
         :type enable: bool
         """
         
@@ -44,7 +44,7 @@ class EnableLogicalClusterRequestBody:
     def enable(self):
         r"""Gets the enable of this EnableLogicalClusterRequestBody.
 
-        true-切换开关
+        **参数解释**： 切换逻辑集群开关请求。 **约束限制**： 不涉及。 **取值范围**： true：打开开关 false：关闭开关 **默认取值**： 不涉及。
 
         :return: The enable of this EnableLogicalClusterRequestBody.
         :rtype: bool
@@ -55,7 +55,7 @@ class EnableLogicalClusterRequestBody:
     def enable(self, enable):
         r"""Sets the enable of this EnableLogicalClusterRequestBody.
 
-        true-切换开关
+        **参数解释**： 切换逻辑集群开关请求。 **约束限制**： 不涉及。 **取值范围**： true：打开开关 false：关闭开关 **默认取值**： 不涉及。
 
         :param enable: The enable of this EnableLogicalClusterRequestBody.
         :type enable: bool

@@ -35,13 +35,13 @@ class FlavorVolumeNodeInfo:
 
         The model defined in huaweicloud sdk
 
-        :param volume_type: 节点使用存储类型
+        :param volume_type: **参数解释**： 节点使用存储类型。 **取值范围**： 不涉及。
         :type volume_type: str
-        :param volume_num: 节点使用的磁盘数量
+        :param volume_num: **参数解释**： 节点使用的磁盘数量。 **取值范围**： 不涉及。
         :type volume_num: int
-        :param capacity: 节点去除副本后的有效容量
+        :param capacity: **参数解释**： 节点去除副本后的有效容量。 **取值范围**： 不涉及。
         :type capacity: int
-        :param volume_size: 节点存的单盘容量
+        :param volume_size: **参数解释**： 节点存的单盘容量。 **取值范围**： 不涉及。
         :type volume_size: int
         """
         
@@ -62,7 +62,7 @@ class FlavorVolumeNodeInfo:
     def volume_type(self):
         r"""Gets the volume_type of this FlavorVolumeNodeInfo.
 
-        节点使用存储类型
+        **参数解释**： 节点使用存储类型。 **取值范围**： 不涉及。
 
         :return: The volume_type of this FlavorVolumeNodeInfo.
         :rtype: str
@@ -73,7 +73,7 @@ class FlavorVolumeNodeInfo:
     def volume_type(self, volume_type):
         r"""Sets the volume_type of this FlavorVolumeNodeInfo.
 
-        节点使用存储类型
+        **参数解释**： 节点使用存储类型。 **取值范围**： 不涉及。
 
         :param volume_type: The volume_type of this FlavorVolumeNodeInfo.
         :type volume_type: str
@@ -84,7 +84,7 @@ class FlavorVolumeNodeInfo:
     def volume_num(self):
         r"""Gets the volume_num of this FlavorVolumeNodeInfo.
 
-        节点使用的磁盘数量
+        **参数解释**： 节点使用的磁盘数量。 **取值范围**： 不涉及。
 
         :return: The volume_num of this FlavorVolumeNodeInfo.
         :rtype: int
@@ -95,7 +95,7 @@ class FlavorVolumeNodeInfo:
     def volume_num(self, volume_num):
         r"""Sets the volume_num of this FlavorVolumeNodeInfo.
 
-        节点使用的磁盘数量
+        **参数解释**： 节点使用的磁盘数量。 **取值范围**： 不涉及。
 
         :param volume_num: The volume_num of this FlavorVolumeNodeInfo.
         :type volume_num: int
@@ -106,7 +106,7 @@ class FlavorVolumeNodeInfo:
     def capacity(self):
         r"""Gets the capacity of this FlavorVolumeNodeInfo.
 
-        节点去除副本后的有效容量
+        **参数解释**： 节点去除副本后的有效容量。 **取值范围**： 不涉及。
 
         :return: The capacity of this FlavorVolumeNodeInfo.
         :rtype: int
@@ -117,7 +117,7 @@ class FlavorVolumeNodeInfo:
     def capacity(self, capacity):
         r"""Sets the capacity of this FlavorVolumeNodeInfo.
 
-        节点去除副本后的有效容量
+        **参数解释**： 节点去除副本后的有效容量。 **取值范围**： 不涉及。
 
         :param capacity: The capacity of this FlavorVolumeNodeInfo.
         :type capacity: int
@@ -128,7 +128,7 @@ class FlavorVolumeNodeInfo:
     def volume_size(self):
         r"""Gets the volume_size of this FlavorVolumeNodeInfo.
 
-        节点存的单盘容量
+        **参数解释**： 节点存的单盘容量。 **取值范围**： 不涉及。
 
         :return: The volume_size of this FlavorVolumeNodeInfo.
         :rtype: int
@@ -139,7 +139,7 @@ class FlavorVolumeNodeInfo:
     def volume_size(self, volume_size):
         r"""Sets the volume_size of this FlavorVolumeNodeInfo.
 
-        节点存的单盘容量
+        **参数解释**： 节点存的单盘容量。 **取值范围**： 不涉及。
 
         :param volume_size: The volume_size of this FlavorVolumeNodeInfo.
         :type volume_size: int

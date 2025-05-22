@@ -40,7 +40,7 @@ class ShowPolicyResponse(SdkResponse):
 
         :param id: 策略id
         :type id: str
-        :param package_id: 防护包id
+        :param package_id: 实例id
         :type package_id: str
         :param name: 策略名
         :type name: str
@@ -96,7 +96,7 @@ class ShowPolicyResponse(SdkResponse):
     def package_id(self):
         r"""Gets the package_id of this ShowPolicyResponse.
 
-        防护包id
+        实例id
 
         :return: The package_id of this ShowPolicyResponse.
         :rtype: str
@@ -107,7 +107,7 @@ class ShowPolicyResponse(SdkResponse):
     def package_id(self, package_id):
         r"""Sets the package_id of this ShowPolicyResponse.
 
-        防护包id
+        实例id
 
         :param package_id: The package_id of this ShowPolicyResponse.
         :type package_id: str

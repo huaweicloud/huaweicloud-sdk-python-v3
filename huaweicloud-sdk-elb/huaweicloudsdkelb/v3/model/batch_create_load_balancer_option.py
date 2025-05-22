@@ -155,7 +155,7 @@ class BatchCreateLoadBalancerOption:
         :type protection_status: str
         :param protection_reason: 参数解释：设置保护的原因。作为protection_status的转态设置的原因。  约束限制：仅当protection_status为consoleProtection时有效。  取值范围：除&lt;和&gt;外通用Unicode字符集字符，最大255个字符。
         :type protection_reason: str
-        :param charge_mode: &#39;创建实例采用的计费模式。flavor: 按实例规格收费，默认值。lcu: 按使用量收费。&#39; 批量创建共享型实例时，该字段不允许指定。
+        :param charge_mode: 创建实例采用的计费模式。flavor: 按实例规格收费，默认值。lcu: 按使用量收费。 批量创建共享型实例时，该字段不允许指定。
         :type charge_mode: str
         :param ipv6_vip_address: 双栈类型负载均衡器的IPv6地址。 当批量创建的number数量大于1时不支持传入该字段，返回400。 批量创建共享型实例的场景，该字段不允许指定。 [不支持IPv6，请勿使用。](tag:dt)
         :type ipv6_vip_address: str
@@ -930,7 +930,7 @@ class BatchCreateLoadBalancerOption:
     def charge_mode(self):
         r"""Gets the charge_mode of this BatchCreateLoadBalancerOption.
 
-        '创建实例采用的计费模式。flavor: 按实例规格收费，默认值。lcu: 按使用量收费。' 批量创建共享型实例时，该字段不允许指定。
+        创建实例采用的计费模式。flavor: 按实例规格收费，默认值。lcu: 按使用量收费。 批量创建共享型实例时，该字段不允许指定。
 
         :return: The charge_mode of this BatchCreateLoadBalancerOption.
         :rtype: str
@@ -941,7 +941,7 @@ class BatchCreateLoadBalancerOption:
     def charge_mode(self, charge_mode):
         r"""Sets the charge_mode of this BatchCreateLoadBalancerOption.
 
-        '创建实例采用的计费模式。flavor: 按实例规格收费，默认值。lcu: 按使用量收费。' 批量创建共享型实例时，该字段不允许指定。
+        创建实例采用的计费模式。flavor: 按实例规格收费，默认值。lcu: 按使用量收费。 批量创建共享型实例时，该字段不允许指定。
 
         :param charge_mode: The charge_mode of this BatchCreateLoadBalancerOption.
         :type charge_mode: str

@@ -24,6 +24,7 @@ class ListEventRequest:
         'to': 'int',
         'attacks': 'list[str]',
         'hosts': 'list[str]',
+        'sips': 'list[str]',
         'page': 'int',
         'pagesize': 'int'
     }
@@ -36,11 +37,12 @@ class ListEventRequest:
         'to': 'to',
         'attacks': 'attacks',
         'hosts': 'hosts',
+        'sips': 'sips',
         'page': 'page',
         'pagesize': 'pagesize'
     }
 
-    def __init__(self, x_language=None, enterprise_project_id=None, recent=None, _from=None, to=None, attacks=None, hosts=None, page=None, pagesize=None):
+    def __init__(self, x_language=None, enterprise_project_id=None, recent=None, _from=None, to=None, attacks=None, hosts=None, sips=None, page=None, pagesize=None):
         r"""ListEventRequest
 
         The model defined in huaweicloud sdk
@@ -59,6 +61,8 @@ class ListEventRequest:
         :type attacks: list[str]
         :param hosts: 域名id，从获取防护网站列表（ListHost）接口获取域名id
         :type hosts: list[str]
+        :param sips: 源ip，Web访问者的IP地址（攻击者IP地址）
+        :type sips: list[str]
         :param page: 分页查询时，返回第几页数据。默认值为1，表示返回第1页数据。
         :type page: int
         :param pagesize: 分页查询时，每页包含多少条结果。范围1-100，默认值为10，表示每页包含10条结果。
@@ -74,6 +78,7 @@ class ListEventRequest:
         self._to = None
         self._attacks = None
         self._hosts = None
+        self._sips = None
         self._page = None
         self._pagesize = None
         self.discriminator = None
@@ -92,6 +97,8 @@ class ListEventRequest:
             self.attacks = attacks
         if hosts is not None:
             self.hosts = hosts
+        if sips is not None:
+            self.sips = sips
         if page is not None:
             self.page = page
         if pagesize is not None:
@@ -250,6 +257,28 @@ class ListEventRequest:
         :type hosts: list[str]
         """
         self._hosts = hosts
+
+    @property
+    def sips(self):
+        r"""Gets the sips of this ListEventRequest.
+
+        源ip，Web访问者的IP地址（攻击者IP地址）
+
+        :return: The sips of this ListEventRequest.
+        :rtype: list[str]
+        """
+        return self._sips
+
+    @sips.setter
+    def sips(self, sips):
+        r"""Sets the sips of this ListEventRequest.
+
+        源ip，Web访问者的IP地址（攻击者IP地址）
+
+        :param sips: The sips of this ListEventRequest.
+        :type sips: list[str]
+        """
+        self._sips = sips
 
     @property
     def page(self):

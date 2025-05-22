@@ -32,9 +32,9 @@ class StartWorkloadPlanResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param workload_res_code: 响应编码。
+        :param workload_res_code: **参数解释**： 响应编码。 **取值范围**： 不涉及。
         :type workload_res_code: int
-        :param workload_res_str: 响应信息。
+        :param workload_res_str: **参数解释**： 响应信息。 **取值范围**： 不涉及。
         :type workload_res_str: str
         """
         
@@ -53,7 +53,7 @@ class StartWorkloadPlanResponse(SdkResponse):
     def workload_res_code(self):
         r"""Gets the workload_res_code of this StartWorkloadPlanResponse.
 
-        响应编码。
+        **参数解释**： 响应编码。 **取值范围**： 不涉及。
 
         :return: The workload_res_code of this StartWorkloadPlanResponse.
         :rtype: int
@@ -64,7 +64,7 @@ class StartWorkloadPlanResponse(SdkResponse):
     def workload_res_code(self, workload_res_code):
         r"""Sets the workload_res_code of this StartWorkloadPlanResponse.
 
-        响应编码。
+        **参数解释**： 响应编码。 **取值范围**： 不涉及。
 
         :param workload_res_code: The workload_res_code of this StartWorkloadPlanResponse.
         :type workload_res_code: int
@@ -75,7 +75,7 @@ class StartWorkloadPlanResponse(SdkResponse):
     def workload_res_str(self):
         r"""Gets the workload_res_str of this StartWorkloadPlanResponse.
 
-        响应信息。
+        **参数解释**： 响应信息。 **取值范围**： 不涉及。
 
         :return: The workload_res_str of this StartWorkloadPlanResponse.
         :rtype: str
@@ -86,7 +86,7 @@ class StartWorkloadPlanResponse(SdkResponse):
     def workload_res_str(self, workload_res_str):
         r"""Sets the workload_res_str of this StartWorkloadPlanResponse.
 
-        响应信息。
+        **参数解释**： 响应信息。 **取值范围**： 不涉及。
 
         :param workload_res_str: The workload_res_str of this StartWorkloadPlanResponse.
         :type workload_res_str: str

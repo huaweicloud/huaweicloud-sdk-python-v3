@@ -29,7 +29,7 @@ class ChangeSecurityGroupRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param security_groups: 安全组ID数组
+        :param security_groups: **参数解释**： 安全组ID数组。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type security_groups: list[str]
         """
         
@@ -44,7 +44,7 @@ class ChangeSecurityGroupRequestBody:
     def security_groups(self):
         r"""Gets the security_groups of this ChangeSecurityGroupRequestBody.
 
-        安全组ID数组
+        **参数解释**： 安全组ID数组。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The security_groups of this ChangeSecurityGroupRequestBody.
         :rtype: list[str]
@@ -55,7 +55,7 @@ class ChangeSecurityGroupRequestBody:
     def security_groups(self, security_groups):
         r"""Sets the security_groups of this ChangeSecurityGroupRequestBody.
 
-        安全组ID数组
+        **参数解释**： 安全组ID数组。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param security_groups: The security_groups of this ChangeSecurityGroupRequestBody.
         :type security_groups: list[str]

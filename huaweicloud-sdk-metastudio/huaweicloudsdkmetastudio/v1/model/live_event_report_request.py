@@ -22,6 +22,8 @@ class LiveEventReportRequest:
         'x_app_user_id': 'str',
         'auth_key': 'str',
         'expires_time': 'int',
+        'x_mss_auth_key': 'str',
+        'x_mss_expires_time': 'int',
         'refresh_url': 'bool',
         'body': 'ReportLiveEventReq'
     }
@@ -32,11 +34,13 @@ class LiveEventReportRequest:
         'x_app_user_id': 'X-App-UserId',
         'auth_key': 'auth_key',
         'expires_time': 'expires_time',
+        'x_mss_auth_key': 'x-mss-auth-key',
+        'x_mss_expires_time': 'x-mss-expires-time',
         'refresh_url': 'refresh_url',
         'body': 'body'
     }
 
-    def __init__(self, room_id=None, job_id=None, x_app_user_id=None, auth_key=None, expires_time=None, refresh_url=None, body=None):
+    def __init__(self, room_id=None, job_id=None, x_app_user_id=None, auth_key=None, expires_time=None, x_mss_auth_key=None, x_mss_expires_time=None, refresh_url=None, body=None):
         r"""LiveEventReportRequest
 
         The model defined in huaweicloud sdk
@@ -49,8 +53,12 @@ class LiveEventReportRequest:
         :type x_app_user_id: str
         :param auth_key: 鉴权Key。通过HmacSHA256生成的鉴权key
         :type auth_key: str
-        :param expires_time: **参数解释**： 鉴权key过期时间。从1970年1月1日（UTC/GMT的午夜）开始所经过的毫秒数。
+        :param expires_time: 鉴权key过期时间。从1970年1月1日（UTC/GMT的午夜）开始所经过的豪秒数。
         :type expires_time: int
+        :param x_mss_auth_key: 鉴权Key。通过HmacSHA256生成的鉴权key
+        :type x_mss_auth_key: str
+        :param x_mss_expires_time: **参数解释**： 鉴权key过期时间。从1970年1月1日（UTC/GMT的午夜）开始所经过的毫秒数。
+        :type x_mss_expires_time: int
         :param refresh_url: 是否刷新URL
         :type refresh_url: bool
         :param body: Body of the LiveEventReportRequest
@@ -64,6 +72,8 @@ class LiveEventReportRequest:
         self._x_app_user_id = None
         self._auth_key = None
         self._expires_time = None
+        self._x_mss_auth_key = None
+        self._x_mss_expires_time = None
         self._refresh_url = None
         self._body = None
         self.discriminator = None
@@ -76,6 +86,10 @@ class LiveEventReportRequest:
             self.auth_key = auth_key
         if expires_time is not None:
             self.expires_time = expires_time
+        if x_mss_auth_key is not None:
+            self.x_mss_auth_key = x_mss_auth_key
+        if x_mss_expires_time is not None:
+            self.x_mss_expires_time = x_mss_expires_time
         if refresh_url is not None:
             self.refresh_url = refresh_url
         if body is not None:
@@ -173,7 +187,7 @@ class LiveEventReportRequest:
     def expires_time(self):
         r"""Gets the expires_time of this LiveEventReportRequest.
 
-        **参数解释**： 鉴权key过期时间。从1970年1月1日（UTC/GMT的午夜）开始所经过的毫秒数。
+        鉴权key过期时间。从1970年1月1日（UTC/GMT的午夜）开始所经过的豪秒数。
 
         :return: The expires_time of this LiveEventReportRequest.
         :rtype: int
@@ -184,12 +198,56 @@ class LiveEventReportRequest:
     def expires_time(self, expires_time):
         r"""Sets the expires_time of this LiveEventReportRequest.
 
-        **参数解释**： 鉴权key过期时间。从1970年1月1日（UTC/GMT的午夜）开始所经过的毫秒数。
+        鉴权key过期时间。从1970年1月1日（UTC/GMT的午夜）开始所经过的豪秒数。
 
         :param expires_time: The expires_time of this LiveEventReportRequest.
         :type expires_time: int
         """
         self._expires_time = expires_time
+
+    @property
+    def x_mss_auth_key(self):
+        r"""Gets the x_mss_auth_key of this LiveEventReportRequest.
+
+        鉴权Key。通过HmacSHA256生成的鉴权key
+
+        :return: The x_mss_auth_key of this LiveEventReportRequest.
+        :rtype: str
+        """
+        return self._x_mss_auth_key
+
+    @x_mss_auth_key.setter
+    def x_mss_auth_key(self, x_mss_auth_key):
+        r"""Sets the x_mss_auth_key of this LiveEventReportRequest.
+
+        鉴权Key。通过HmacSHA256生成的鉴权key
+
+        :param x_mss_auth_key: The x_mss_auth_key of this LiveEventReportRequest.
+        :type x_mss_auth_key: str
+        """
+        self._x_mss_auth_key = x_mss_auth_key
+
+    @property
+    def x_mss_expires_time(self):
+        r"""Gets the x_mss_expires_time of this LiveEventReportRequest.
+
+        **参数解释**： 鉴权key过期时间。从1970年1月1日（UTC/GMT的午夜）开始所经过的毫秒数。
+
+        :return: The x_mss_expires_time of this LiveEventReportRequest.
+        :rtype: int
+        """
+        return self._x_mss_expires_time
+
+    @x_mss_expires_time.setter
+    def x_mss_expires_time(self, x_mss_expires_time):
+        r"""Sets the x_mss_expires_time of this LiveEventReportRequest.
+
+        **参数解释**： 鉴权key过期时间。从1970年1月1日（UTC/GMT的午夜）开始所经过的毫秒数。
+
+        :param x_mss_expires_time: The x_mss_expires_time of this LiveEventReportRequest.
+        :type x_mss_expires_time: int
+        """
+        self._x_mss_expires_time = x_mss_expires_time
 
     @property
     def refresh_url(self):

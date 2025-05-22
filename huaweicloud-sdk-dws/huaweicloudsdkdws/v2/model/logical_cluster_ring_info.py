@@ -29,7 +29,7 @@ class LogicalClusterRingInfo:
 
         The model defined in huaweicloud sdk
 
-        :param ring_hosts: 集群主机环信息
+        :param ring_hosts: **参数解释**： 集群实例环信息。 **取值范围**： 不涉及。
         :type ring_hosts: list[:class:`huaweicloudsdkdws.v2.RingHost`]
         """
         
@@ -45,7 +45,7 @@ class LogicalClusterRingInfo:
     def ring_hosts(self):
         r"""Gets the ring_hosts of this LogicalClusterRingInfo.
 
-        集群主机环信息
+        **参数解释**： 集群实例环信息。 **取值范围**： 不涉及。
 
         :return: The ring_hosts of this LogicalClusterRingInfo.
         :rtype: list[:class:`huaweicloudsdkdws.v2.RingHost`]
@@ -56,7 +56,7 @@ class LogicalClusterRingInfo:
     def ring_hosts(self, ring_hosts):
         r"""Sets the ring_hosts of this LogicalClusterRingInfo.
 
-        集群主机环信息
+        **参数解释**： 集群实例环信息。 **取值范围**： 不涉及。
 
         :param ring_hosts: The ring_hosts of this LogicalClusterRingInfo.
         :type ring_hosts: list[:class:`huaweicloudsdkdws.v2.RingHost`]

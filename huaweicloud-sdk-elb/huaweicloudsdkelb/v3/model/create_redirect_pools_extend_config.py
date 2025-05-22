@@ -22,7 +22,8 @@ class CreateRedirectPoolsExtendConfig:
         'insert_headers_config': 'CreateInsertHeadersConfig',
         'remove_headers_config': 'CreateRemoveHeadersConfig',
         'traffic_limit_config': 'CreateTrafficLimitConfig',
-        'cors_config': 'CreateCorsConfig'
+        'cors_config': 'CreateCorsConfig',
+        'traffic_mirror_config': 'CreateTrafficMirrorConfig'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class CreateRedirectPoolsExtendConfig:
         'insert_headers_config': 'insert_headers_config',
         'remove_headers_config': 'remove_headers_config',
         'traffic_limit_config': 'traffic_limit_config',
-        'cors_config': 'cors_config'
+        'cors_config': 'cors_config',
+        'traffic_mirror_config': 'traffic_mirror_config'
     }
 
-    def __init__(self, rewrite_url_enable=None, rewrite_url_config=None, insert_headers_config=None, remove_headers_config=None, traffic_limit_config=None, cors_config=None):
+    def __init__(self, rewrite_url_enable=None, rewrite_url_config=None, insert_headers_config=None, remove_headers_config=None, traffic_limit_config=None, cors_config=None, traffic_mirror_config=None):
         r"""CreateRedirectPoolsExtendConfig
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class CreateRedirectPoolsExtendConfig:
         :type traffic_limit_config: :class:`huaweicloudsdkelb.v3.CreateTrafficLimitConfig`
         :param cors_config: 
         :type cors_config: :class:`huaweicloudsdkelb.v3.CreateCorsConfig`
+        :param traffic_mirror_config: 
+        :type traffic_mirror_config: :class:`huaweicloudsdkelb.v3.CreateTrafficMirrorConfig`
         """
         
         
@@ -61,6 +65,7 @@ class CreateRedirectPoolsExtendConfig:
         self._remove_headers_config = None
         self._traffic_limit_config = None
         self._cors_config = None
+        self._traffic_mirror_config = None
         self.discriminator = None
 
         if rewrite_url_enable is not None:
@@ -75,6 +80,8 @@ class CreateRedirectPoolsExtendConfig:
             self.traffic_limit_config = traffic_limit_config
         if cors_config is not None:
             self.cors_config = cors_config
+        if traffic_mirror_config is not None:
+            self.traffic_mirror_config = traffic_mirror_config
 
     @property
     def rewrite_url_enable(self):
@@ -187,6 +194,24 @@ class CreateRedirectPoolsExtendConfig:
         :type cors_config: :class:`huaweicloudsdkelb.v3.CreateCorsConfig`
         """
         self._cors_config = cors_config
+
+    @property
+    def traffic_mirror_config(self):
+        r"""Gets the traffic_mirror_config of this CreateRedirectPoolsExtendConfig.
+
+        :return: The traffic_mirror_config of this CreateRedirectPoolsExtendConfig.
+        :rtype: :class:`huaweicloudsdkelb.v3.CreateTrafficMirrorConfig`
+        """
+        return self._traffic_mirror_config
+
+    @traffic_mirror_config.setter
+    def traffic_mirror_config(self, traffic_mirror_config):
+        r"""Sets the traffic_mirror_config of this CreateRedirectPoolsExtendConfig.
+
+        :param traffic_mirror_config: The traffic_mirror_config of this CreateRedirectPoolsExtendConfig.
+        :type traffic_mirror_config: :class:`huaweicloudsdkelb.v3.CreateTrafficMirrorConfig`
+        """
+        self._traffic_mirror_config = traffic_mirror_config
 
     def to_dict(self):
         """Returns the model properties as a dict"""

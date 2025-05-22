@@ -18,6 +18,7 @@ class BatchUpdateMembersOption:
 
     openapi_types = {
         'id': 'str',
+        'availability_zone': 'str',
         'admin_state_up': 'bool',
         'name': 'str',
         'protocol_port': 'int',
@@ -26,19 +27,22 @@ class BatchUpdateMembersOption:
 
     attribute_map = {
         'id': 'id',
+        'availability_zone': 'availability_zone',
         'admin_state_up': 'admin_state_up',
         'name': 'name',
         'protocol_port': 'protocol_port',
         'weight': 'weight'
     }
 
-    def __init__(self, id=None, admin_state_up=None, name=None, protocol_port=None, weight=None):
+    def __init__(self, id=None, availability_zone=None, admin_state_up=None, name=None, protocol_port=None, weight=None):
         r"""BatchUpdateMembersOption
 
         The model defined in huaweicloud sdk
 
         :param id: 后端服务器ID。 &gt;此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
         :type id: str
+        :param availability_zone: 参数解释：后端服务器的可用区。 约束限制：  仅支持iptarget类型的后端服务器设置该字段。且后端服务器组开启可用区亲和时，iptarget类型的后端服务器必须配置该字段为有效非空值。 取值范围：本region中ECS可选择的可用区。
+        :type availability_zone: str
         :param admin_state_up: 后端服务器的管理状态。取值：true、false。  虽然创建、更新请求支持该字段，但实际取值决定于后端服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。  请勿传入该字段。
         :type admin_state_up: bool
         :param name: 后端服务器名称。
@@ -52,6 +56,7 @@ class BatchUpdateMembersOption:
         
 
         self._id = None
+        self._availability_zone = None
         self._admin_state_up = None
         self._name = None
         self._protocol_port = None
@@ -59,6 +64,8 @@ class BatchUpdateMembersOption:
         self.discriminator = None
 
         self.id = id
+        if availability_zone is not None:
+            self.availability_zone = availability_zone
         if admin_state_up is not None:
             self.admin_state_up = admin_state_up
         if name is not None:
@@ -89,6 +96,28 @@ class BatchUpdateMembersOption:
         :type id: str
         """
         self._id = id
+
+    @property
+    def availability_zone(self):
+        r"""Gets the availability_zone of this BatchUpdateMembersOption.
+
+        参数解释：后端服务器的可用区。 约束限制：  仅支持iptarget类型的后端服务器设置该字段。且后端服务器组开启可用区亲和时，iptarget类型的后端服务器必须配置该字段为有效非空值。 取值范围：本region中ECS可选择的可用区。
+
+        :return: The availability_zone of this BatchUpdateMembersOption.
+        :rtype: str
+        """
+        return self._availability_zone
+
+    @availability_zone.setter
+    def availability_zone(self, availability_zone):
+        r"""Sets the availability_zone of this BatchUpdateMembersOption.
+
+        参数解释：后端服务器的可用区。 约束限制：  仅支持iptarget类型的后端服务器设置该字段。且后端服务器组开启可用区亲和时，iptarget类型的后端服务器必须配置该字段为有效非空值。 取值范围：本region中ECS可选择的可用区。
+
+        :param availability_zone: The availability_zone of this BatchUpdateMembersOption.
+        :type availability_zone: str
+        """
+        self._availability_zone = availability_zone
 
     @property
     def admin_state_up(self):

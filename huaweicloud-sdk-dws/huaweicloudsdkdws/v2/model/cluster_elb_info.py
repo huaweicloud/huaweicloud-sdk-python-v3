@@ -51,7 +51,7 @@ class ClusterElbInfo:
 
         :param id: 弹性负载均衡ID
         :type id: str
-        :param cluster_id: 集群ID
+        :param cluster_id: **参数解释**： 集群ID。 **取值范围**： 36位UUID。
         :type cluster_id: str
         :param name: 弹性负载均衡名称
         :type name: str
@@ -137,7 +137,7 @@ class ClusterElbInfo:
     def cluster_id(self):
         r"""Gets the cluster_id of this ClusterElbInfo.
 
-        集群ID
+        **参数解释**： 集群ID。 **取值范围**： 36位UUID。
 
         :return: The cluster_id of this ClusterElbInfo.
         :rtype: str
@@ -148,7 +148,7 @@ class ClusterElbInfo:
     def cluster_id(self, cluster_id):
         r"""Sets the cluster_id of this ClusterElbInfo.
 
-        集群ID
+        **参数解释**： 集群ID。 **取值范围**： 36位UUID。
 
         :param cluster_id: The cluster_id of this ClusterElbInfo.
         :type cluster_id: str

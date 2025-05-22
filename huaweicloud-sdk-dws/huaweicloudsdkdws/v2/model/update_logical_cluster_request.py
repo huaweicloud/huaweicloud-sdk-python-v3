@@ -33,9 +33,9 @@ class UpdateLogicalClusterRequest:
 
         The model defined in huaweicloud sdk
 
-        :param cluster_id: 指定待编辑集群的ID
+        :param cluster_id: **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type cluster_id: str
-        :param logical_cluster_id: 指定待编辑逻辑集群的ID
+        :param logical_cluster_id: **参数解释**： 指定待编辑逻辑集群的ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type logical_cluster_id: str
         :param body: Body of the UpdateLogicalClusterRequest
         :type body: :class:`huaweicloudsdkdws.v2.UpdateLogicalClusterRequestBody`
@@ -57,7 +57,7 @@ class UpdateLogicalClusterRequest:
     def cluster_id(self):
         r"""Gets the cluster_id of this UpdateLogicalClusterRequest.
 
-        指定待编辑集群的ID
+        **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The cluster_id of this UpdateLogicalClusterRequest.
         :rtype: str
@@ -68,7 +68,7 @@ class UpdateLogicalClusterRequest:
     def cluster_id(self, cluster_id):
         r"""Sets the cluster_id of this UpdateLogicalClusterRequest.
 
-        指定待编辑集群的ID
+        **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param cluster_id: The cluster_id of this UpdateLogicalClusterRequest.
         :type cluster_id: str
@@ -79,7 +79,7 @@ class UpdateLogicalClusterRequest:
     def logical_cluster_id(self):
         r"""Gets the logical_cluster_id of this UpdateLogicalClusterRequest.
 
-        指定待编辑逻辑集群的ID
+        **参数解释**： 指定待编辑逻辑集群的ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The logical_cluster_id of this UpdateLogicalClusterRequest.
         :rtype: str
@@ -90,7 +90,7 @@ class UpdateLogicalClusterRequest:
     def logical_cluster_id(self, logical_cluster_id):
         r"""Sets the logical_cluster_id of this UpdateLogicalClusterRequest.
 
-        指定待编辑逻辑集群的ID
+        **参数解释**： 指定待编辑逻辑集群的ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param logical_cluster_id: The logical_cluster_id of this UpdateLogicalClusterRequest.
         :type logical_cluster_id: str

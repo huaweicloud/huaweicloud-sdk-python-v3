@@ -6,6 +6,7 @@ from huaweicloudsdkcdn.v2.cdn_client import CdnClient
 from huaweicloudsdkcdn.v2.cdn_async_client import CdnAsyncClient
 
 from huaweicloudsdkcdn.v2.model.access_area_filter import AccessAreaFilter
+from huaweicloudsdkcdn.v2.model.account_config_modify_request import AccountConfigModifyRequest
 from huaweicloudsdkcdn.v2.model.back_sources import BackSources
 from huaweicloudsdkcdn.v2.model.batch_copy_configs import BatchCopyConfigs
 from huaweicloudsdkcdn.v2.model.batch_copy_d_request_body import BatchCopyDRequestBody
@@ -81,6 +82,8 @@ from huaweicloudsdkcdn.v2.model.list_cdn_domain_top_refers_response import ListC
 from huaweicloudsdkcdn.v2.model.list_domains_request import ListDomainsRequest
 from huaweicloudsdkcdn.v2.model.list_domains_response import ListDomainsResponse
 from huaweicloudsdkcdn.v2.model.log_object import LogObject
+from huaweicloudsdkcdn.v2.model.modify_account_info_request import ModifyAccountInfoRequest
+from huaweicloudsdkcdn.v2.model.modify_account_info_response import ModifyAccountInfoResponse
 from huaweicloudsdkcdn.v2.model.modify_domain_config_request_body import ModifyDomainConfigRequestBody
 from huaweicloudsdkcdn.v2.model.origin_request_header import OriginRequestHeader
 from huaweicloudsdkcdn.v2.model.origin_request_url_rewrite import OriginRequestUrlRewrite

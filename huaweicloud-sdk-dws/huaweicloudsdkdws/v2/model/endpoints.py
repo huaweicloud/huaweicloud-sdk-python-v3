@@ -31,9 +31,9 @@ class Endpoints:
 
         The model defined in huaweicloud sdk
 
-        :param connect_info: 内网连接信息。
+        :param connect_info: **参数解释**： 内网连接信息。 **取值范围**： 不涉及。
         :type connect_info: str
-        :param jdbc_url: 内网JDBC URL，默认格式如下： jdbc:postgresql://&lt;connect_info&gt;/&lt;YOUR_DATABASE_NAME&gt;
+        :param jdbc_url: **参数解释**： 内网JDBC URL。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： jdbc:postgresql://&lt;connect_info&gt;/&lt;YOUR_DATABASE_NAME&gt;
         :type jdbc_url: str
         """
         
@@ -52,7 +52,7 @@ class Endpoints:
     def connect_info(self):
         r"""Gets the connect_info of this Endpoints.
 
-        内网连接信息。
+        **参数解释**： 内网连接信息。 **取值范围**： 不涉及。
 
         :return: The connect_info of this Endpoints.
         :rtype: str
@@ -63,7 +63,7 @@ class Endpoints:
     def connect_info(self, connect_info):
         r"""Sets the connect_info of this Endpoints.
 
-        内网连接信息。
+        **参数解释**： 内网连接信息。 **取值范围**： 不涉及。
 
         :param connect_info: The connect_info of this Endpoints.
         :type connect_info: str
@@ -74,7 +74,7 @@ class Endpoints:
     def jdbc_url(self):
         r"""Gets the jdbc_url of this Endpoints.
 
-        内网JDBC URL，默认格式如下： jdbc:postgresql://<connect_info>/<YOUR_DATABASE_NAME>
+        **参数解释**： 内网JDBC URL。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： jdbc:postgresql://<connect_info>/<YOUR_DATABASE_NAME>
 
         :return: The jdbc_url of this Endpoints.
         :rtype: str
@@ -85,7 +85,7 @@ class Endpoints:
     def jdbc_url(self, jdbc_url):
         r"""Sets the jdbc_url of this Endpoints.
 
-        内网JDBC URL，默认格式如下： jdbc:postgresql://<connect_info>/<YOUR_DATABASE_NAME>
+        **参数解释**： 内网JDBC URL。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： jdbc:postgresql://<connect_info>/<YOUR_DATABASE_NAME>
 
         :param jdbc_url: The jdbc_url of this Endpoints.
         :type jdbc_url: str

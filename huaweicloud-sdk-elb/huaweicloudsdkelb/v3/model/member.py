@@ -18,6 +18,7 @@ class Member:
 
     openapi_types = {
         'id': 'str',
+        'availability_zone': 'str',
         'name': 'str',
         'project_id': 'str',
         'admin_state_up': 'bool',
@@ -37,6 +38,7 @@ class Member:
 
     attribute_map = {
         'id': 'id',
+        'availability_zone': 'availability_zone',
         'name': 'name',
         'project_id': 'project_id',
         'admin_state_up': 'admin_state_up',
@@ -54,13 +56,15 @@ class Member:
         'instance_id': 'instance_id'
     }
 
-    def __init__(self, id=None, name=None, project_id=None, admin_state_up=None, subnet_cidr_id=None, protocol_port=None, weight=None, address=None, ip_version=None, operating_status=None, status=None, reason=None, created_at=None, updated_at=None, member_type=None, instance_id=None):
+    def __init__(self, id=None, availability_zone=None, name=None, project_id=None, admin_state_up=None, subnet_cidr_id=None, protocol_port=None, weight=None, address=None, ip_version=None, operating_status=None, status=None, reason=None, created_at=None, updated_at=None, member_type=None, instance_id=None):
         r"""Member
 
         The model defined in huaweicloud sdk
 
         :param id: 参数解释：后端服务器ID。 &gt; 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
         :type id: str
+        :param availability_zone: 参数解释：后端服务器所在的可用区。
+        :type availability_zone: str
         :param name: 参数解释：后端服务器名称。  注意：该名称并非ECS名称。
         :type name: str
         :param project_id: 参数解释：后端服务器所在的项目ID。
@@ -96,6 +100,7 @@ class Member:
         
 
         self._id = None
+        self._availability_zone = None
         self._name = None
         self._project_id = None
         self._admin_state_up = None
@@ -114,6 +119,7 @@ class Member:
         self.discriminator = None
 
         self.id = id
+        self.availability_zone = availability_zone
         self.name = name
         self.project_id = project_id
         self.admin_state_up = admin_state_up
@@ -157,6 +163,28 @@ class Member:
         :type id: str
         """
         self._id = id
+
+    @property
+    def availability_zone(self):
+        r"""Gets the availability_zone of this Member.
+
+        参数解释：后端服务器所在的可用区。
+
+        :return: The availability_zone of this Member.
+        :rtype: str
+        """
+        return self._availability_zone
+
+    @availability_zone.setter
+    def availability_zone(self, availability_zone):
+        r"""Sets the availability_zone of this Member.
+
+        参数解释：后端服务器所在的可用区。
+
+        :param availability_zone: The availability_zone of this Member.
+        :type availability_zone: str
+        """
+        self._availability_zone = availability_zone
 
     @property
     def name(self):

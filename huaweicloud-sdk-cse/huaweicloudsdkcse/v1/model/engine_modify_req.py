@@ -43,8 +43,7 @@ class EngineModifyReq:
         self._inputs = None
         self.discriminator = None
 
-        if flavor is not None:
-            self.flavor = flavor
+        self.flavor = flavor
         if inputs is not None:
             self.inputs = inputs
 

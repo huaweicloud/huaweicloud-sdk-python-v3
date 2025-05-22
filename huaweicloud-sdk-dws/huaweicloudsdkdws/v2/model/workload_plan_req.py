@@ -31,9 +31,9 @@ class WorkloadPlanReq:
 
         The model defined in huaweicloud sdk
 
-        :param plan_name: 计划名称
+        :param plan_name: **参数解释**： 计划名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type plan_name: str
-        :param logical_cluster_name: 逻辑集群名称
+        :param logical_cluster_name: **参数解释**： 逻辑集群名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type logical_cluster_name: str
         """
         
@@ -51,7 +51,7 @@ class WorkloadPlanReq:
     def plan_name(self):
         r"""Gets the plan_name of this WorkloadPlanReq.
 
-        计划名称
+        **参数解释**： 计划名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The plan_name of this WorkloadPlanReq.
         :rtype: str
@@ -62,7 +62,7 @@ class WorkloadPlanReq:
     def plan_name(self, plan_name):
         r"""Sets the plan_name of this WorkloadPlanReq.
 
-        计划名称
+        **参数解释**： 计划名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param plan_name: The plan_name of this WorkloadPlanReq.
         :type plan_name: str
@@ -73,7 +73,7 @@ class WorkloadPlanReq:
     def logical_cluster_name(self):
         r"""Gets the logical_cluster_name of this WorkloadPlanReq.
 
-        逻辑集群名称
+        **参数解释**： 逻辑集群名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The logical_cluster_name of this WorkloadPlanReq.
         :rtype: str
@@ -84,7 +84,7 @@ class WorkloadPlanReq:
     def logical_cluster_name(self, logical_cluster_name):
         r"""Sets the logical_cluster_name of this WorkloadPlanReq.
 
-        逻辑集群名称
+        **参数解释**： 逻辑集群名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param logical_cluster_name: The logical_cluster_name of this WorkloadPlanReq.
         :type logical_cluster_name: str

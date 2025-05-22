@@ -31,9 +31,9 @@ class NodeTypeAvailableZones:
 
         The model defined in huaweicloud sdk
 
-        :param code: 可用区ID。
+        :param code: **参数解释**： 可用区ID。 **取值范围**： 不涉及。
         :type code: str
-        :param status: 节点类型可用状态。 - normal：可用 - sellout：售罄 - abandon：不可用
+        :param status: **参数解释**： 规格可用状态。 **取值范围**： - normal：可用 - sellout：售罄 - abandon：不可用
         :type status: str
         """
         
@@ -50,7 +50,7 @@ class NodeTypeAvailableZones:
     def code(self):
         r"""Gets the code of this NodeTypeAvailableZones.
 
-        可用区ID。
+        **参数解释**： 可用区ID。 **取值范围**： 不涉及。
 
         :return: The code of this NodeTypeAvailableZones.
         :rtype: str
@@ -61,7 +61,7 @@ class NodeTypeAvailableZones:
     def code(self, code):
         r"""Sets the code of this NodeTypeAvailableZones.
 
-        可用区ID。
+        **参数解释**： 可用区ID。 **取值范围**： 不涉及。
 
         :param code: The code of this NodeTypeAvailableZones.
         :type code: str
@@ -72,7 +72,7 @@ class NodeTypeAvailableZones:
     def status(self):
         r"""Gets the status of this NodeTypeAvailableZones.
 
-        节点类型可用状态。 - normal：可用 - sellout：售罄 - abandon：不可用
+        **参数解释**： 规格可用状态。 **取值范围**： - normal：可用 - sellout：售罄 - abandon：不可用
 
         :return: The status of this NodeTypeAvailableZones.
         :rtype: str
@@ -83,7 +83,7 @@ class NodeTypeAvailableZones:
     def status(self, status):
         r"""Sets the status of this NodeTypeAvailableZones.
 
-        节点类型可用状态。 - normal：可用 - sellout：售罄 - abandon：不可用
+        **参数解释**： 规格可用状态。 **取值范围**： - normal：可用 - sellout：售罄 - abandon：不可用
 
         :param status: The status of this NodeTypeAvailableZones.
         :type status: str

@@ -30,7 +30,9 @@ class CreateSmartChatRoomReq:
         'layer_config': 'list[LayerConfig]',
         'review_config': 'ReviewConfig',
         'chat_subtitle_config': 'ChatSubtitleConfig',
-        'chat_video_type': 'str'
+        'chat_video_type': 'str',
+        'exit_mute_threshold': 'int',
+        'chat_resource_config': 'list[ChatResourceConfig]'
     }
 
     attribute_map = {
@@ -47,10 +49,12 @@ class CreateSmartChatRoomReq:
         'layer_config': 'layer_config',
         'review_config': 'review_config',
         'chat_subtitle_config': 'chat_subtitle_config',
-        'chat_video_type': 'chat_video_type'
+        'chat_video_type': 'chat_video_type',
+        'exit_mute_threshold': 'exit_mute_threshold',
+        'chat_resource_config': 'chat_resource_config'
     }
 
-    def __init__(self, room_name=None, room_description=None, video_config=None, model_asset_id=None, voice_config=None, voice_config_list=None, robot_id=None, concurrency=None, default_language=None, background_config=None, layer_config=None, review_config=None, chat_subtitle_config=None, chat_video_type=None):
+    def __init__(self, room_name=None, room_description=None, video_config=None, model_asset_id=None, voice_config=None, voice_config_list=None, robot_id=None, concurrency=None, default_language=None, background_config=None, layer_config=None, review_config=None, chat_subtitle_config=None, chat_video_type=None, exit_mute_threshold=None, chat_resource_config=None):
         r"""CreateSmartChatRoomReq
 
         The model defined in huaweicloud sdk
@@ -71,7 +75,7 @@ class CreateSmartChatRoomReq:
         :type robot_id: str
         :param concurrency: **参数解释**： 并发路数。
         :type concurrency: int
-        :param default_language: 默认语言，智能交互接口使用。默认值CN。 * CN：简体中文。 * EN：英语。
+        :param default_language: 默认语言，智能交互接口使用。默认值CN。 * CN：简体中文。 * EN：英语。 * ESP：西班牙语（仅海外站点支持） * por：葡萄牙语（仅海外站点支持） * Arabic：阿拉伯语（仅海外站点支持） * Thai：泰语（仅海外站点支持）
         :type default_language: str
         :param background_config: 
         :type background_config: :class:`huaweicloudsdkmetastudio.v1.BackgroundConfigInfo`
@@ -83,6 +87,10 @@ class CreateSmartChatRoomReq:
         :type chat_subtitle_config: :class:`huaweicloudsdkmetastudio.v1.ChatSubtitleConfig`
         :param chat_video_type: 智能交互对话端配置。 * COMPUTER: 电脑端 * MOBILE: 手机端 * HUB: 大屏
         :type chat_video_type: str
+        :param exit_mute_threshold: **参数解释**： 静默退出时长。
+        :type exit_mute_threshold: int
+        :param chat_resource_config: 资源配置。
+        :type chat_resource_config: list[:class:`huaweicloudsdkmetastudio.v1.ChatResourceConfig`]
         """
         
         
@@ -101,6 +109,8 @@ class CreateSmartChatRoomReq:
         self._review_config = None
         self._chat_subtitle_config = None
         self._chat_video_type = None
+        self._exit_mute_threshold = None
+        self._chat_resource_config = None
         self.discriminator = None
 
         self.room_name = room_name
@@ -130,6 +140,10 @@ class CreateSmartChatRoomReq:
             self.chat_subtitle_config = chat_subtitle_config
         if chat_video_type is not None:
             self.chat_video_type = chat_video_type
+        if exit_mute_threshold is not None:
+            self.exit_mute_threshold = exit_mute_threshold
+        if chat_resource_config is not None:
+            self.chat_resource_config = chat_resource_config
 
     @property
     def room_name(self):
@@ -303,7 +317,7 @@ class CreateSmartChatRoomReq:
     def default_language(self):
         r"""Gets the default_language of this CreateSmartChatRoomReq.
 
-        默认语言，智能交互接口使用。默认值CN。 * CN：简体中文。 * EN：英语。
+        默认语言，智能交互接口使用。默认值CN。 * CN：简体中文。 * EN：英语。 * ESP：西班牙语（仅海外站点支持） * por：葡萄牙语（仅海外站点支持） * Arabic：阿拉伯语（仅海外站点支持） * Thai：泰语（仅海外站点支持）
 
         :return: The default_language of this CreateSmartChatRoomReq.
         :rtype: str
@@ -314,7 +328,7 @@ class CreateSmartChatRoomReq:
     def default_language(self, default_language):
         r"""Sets the default_language of this CreateSmartChatRoomReq.
 
-        默认语言，智能交互接口使用。默认值CN。 * CN：简体中文。 * EN：英语。
+        默认语言，智能交互接口使用。默认值CN。 * CN：简体中文。 * EN：英语。 * ESP：西班牙语（仅海外站点支持） * por：葡萄牙语（仅海外站点支持） * Arabic：阿拉伯语（仅海外站点支持） * Thai：泰语（仅海外站点支持）
 
         :param default_language: The default_language of this CreateSmartChatRoomReq.
         :type default_language: str
@@ -418,6 +432,50 @@ class CreateSmartChatRoomReq:
         :type chat_video_type: str
         """
         self._chat_video_type = chat_video_type
+
+    @property
+    def exit_mute_threshold(self):
+        r"""Gets the exit_mute_threshold of this CreateSmartChatRoomReq.
+
+        **参数解释**： 静默退出时长。
+
+        :return: The exit_mute_threshold of this CreateSmartChatRoomReq.
+        :rtype: int
+        """
+        return self._exit_mute_threshold
+
+    @exit_mute_threshold.setter
+    def exit_mute_threshold(self, exit_mute_threshold):
+        r"""Sets the exit_mute_threshold of this CreateSmartChatRoomReq.
+
+        **参数解释**： 静默退出时长。
+
+        :param exit_mute_threshold: The exit_mute_threshold of this CreateSmartChatRoomReq.
+        :type exit_mute_threshold: int
+        """
+        self._exit_mute_threshold = exit_mute_threshold
+
+    @property
+    def chat_resource_config(self):
+        r"""Gets the chat_resource_config of this CreateSmartChatRoomReq.
+
+        资源配置。
+
+        :return: The chat_resource_config of this CreateSmartChatRoomReq.
+        :rtype: list[:class:`huaweicloudsdkmetastudio.v1.ChatResourceConfig`]
+        """
+        return self._chat_resource_config
+
+    @chat_resource_config.setter
+    def chat_resource_config(self, chat_resource_config):
+        r"""Sets the chat_resource_config of this CreateSmartChatRoomReq.
+
+        资源配置。
+
+        :param chat_resource_config: The chat_resource_config of this CreateSmartChatRoomReq.
+        :type chat_resource_config: list[:class:`huaweicloudsdkmetastudio.v1.ChatResourceConfig`]
+        """
+        self._chat_resource_config = chat_resource_config
 
     def to_dict(self):
         """Returns the model properties as a dict"""

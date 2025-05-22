@@ -33,11 +33,11 @@ class Statistic:
 
         The model defined in huaweicloud sdk
 
-        :param name: 资源名称。 - cluster.total：总集群（个）。 - cluster.normal：可用集群（个）。 - instance.total：总节点（个）。 - instance.normal：可用节点（个）。 - storage.total：总容量（GB）。
+        :param name: **参数解释**： 资源名称。 **约束限制**： 不涉及。 **取值范围**： - cluster.total：总集群（个）。 - cluster.normal：可用集群（个）。 - instance.total：总节点（个）。 - instance.normal：可用节点（个）。 - storage.total：总容量（GB）。  **默认取值**： 不涉及。
         :type name: str
-        :param value: 资源数量值。
+        :param value: **参数解释**： 资源数量值。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type value: float
-        :param unit: 资源数量单位。
+        :param unit: **参数解释**： 资源数量单位。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type unit: str
         """
         
@@ -56,7 +56,7 @@ class Statistic:
     def name(self):
         r"""Gets the name of this Statistic.
 
-        资源名称。 - cluster.total：总集群（个）。 - cluster.normal：可用集群（个）。 - instance.total：总节点（个）。 - instance.normal：可用节点（个）。 - storage.total：总容量（GB）。
+        **参数解释**： 资源名称。 **约束限制**： 不涉及。 **取值范围**： - cluster.total：总集群（个）。 - cluster.normal：可用集群（个）。 - instance.total：总节点（个）。 - instance.normal：可用节点（个）。 - storage.total：总容量（GB）。  **默认取值**： 不涉及。
 
         :return: The name of this Statistic.
         :rtype: str
@@ -67,7 +67,7 @@ class Statistic:
     def name(self, name):
         r"""Sets the name of this Statistic.
 
-        资源名称。 - cluster.total：总集群（个）。 - cluster.normal：可用集群（个）。 - instance.total：总节点（个）。 - instance.normal：可用节点（个）。 - storage.total：总容量（GB）。
+        **参数解释**： 资源名称。 **约束限制**： 不涉及。 **取值范围**： - cluster.total：总集群（个）。 - cluster.normal：可用集群（个）。 - instance.total：总节点（个）。 - instance.normal：可用节点（个）。 - storage.total：总容量（GB）。  **默认取值**： 不涉及。
 
         :param name: The name of this Statistic.
         :type name: str
@@ -78,7 +78,7 @@ class Statistic:
     def value(self):
         r"""Gets the value of this Statistic.
 
-        资源数量值。
+        **参数解释**： 资源数量值。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The value of this Statistic.
         :rtype: float
@@ -89,7 +89,7 @@ class Statistic:
     def value(self, value):
         r"""Sets the value of this Statistic.
 
-        资源数量值。
+        **参数解释**： 资源数量值。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param value: The value of this Statistic.
         :type value: float
@@ -100,7 +100,7 @@ class Statistic:
     def unit(self):
         r"""Gets the unit of this Statistic.
 
-        资源数量单位。
+        **参数解释**： 资源数量单位。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The unit of this Statistic.
         :rtype: str
@@ -111,7 +111,7 @@ class Statistic:
     def unit(self, unit):
         r"""Sets the unit of this Statistic.
 
-        资源数量单位。
+        **参数解释**： 资源数量单位。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param unit: The unit of this Statistic.
         :type unit: str

@@ -1317,6 +1317,73 @@ class ElbClient(Client):
 
         return http_info
 
+    def create_member_health_check_job(self, request):
+        r"""创建后端服务器检测任务
+
+        创建后端服务器检测任务。包括后端服务器的配置、ACL规则和安全组规则检查。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateMemberHealthCheckJob
+        :type request: :class:`huaweicloudsdkelb.v3.CreateMemberHealthCheckJobRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.CreateMemberHealthCheckJobResponse`
+        """
+        http_info = self._create_member_health_check_job_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_member_health_check_job_invoker(self, request):
+        http_info = self._create_member_health_check_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_member_health_check_job_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/elb/members/{member_id}/health-check",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateMemberHealthCheckJobResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'member_id' in local_var_params:
+            path_params['member_id'] = local_var_params['member_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_pool(self, request):
         r"""创建后端服务器组
 
@@ -2368,6 +2435,71 @@ class ElbClient(Client):
 
         return http_info
 
+    def delete_recycle_load_balancer(self, request):
+        r"""销毁回收站负载均衡器
+
+        销毁回收站负载均衡器。销毁后无法再还原。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteRecycleLoadBalancer
+        :type request: :class:`huaweicloudsdkelb.v3.DeleteRecycleLoadBalancerRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.DeleteRecycleLoadBalancerResponse`
+        """
+        http_info = self._delete_recycle_load_balancer_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_recycle_load_balancer_invoker(self, request):
+        http_info = self._delete_recycle_load_balancer_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_recycle_load_balancer_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/elb/recycle-bin/loadbalancers/{loadbalancer_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteRecycleLoadBalancerResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'loadbalancer_id' in local_var_params:
+            path_params['loadbalancer_id'] = local_var_params['loadbalancer_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_security_policy(self, request):
         r"""删除自定义安全策略
 
@@ -2682,6 +2814,15 @@ class ElbClient(Client):
         if 'fingerprint' in local_var_params:
             query_params.append(('fingerprint', local_var_params['fingerprint']))
             collection_formats['fingerprint'] = 'multi'
+        if 'source' in local_var_params:
+            query_params.append(('source', local_var_params['source']))
+            collection_formats['source'] = 'csv'
+        if 'protection_status' in local_var_params:
+            query_params.append(('protection_status', local_var_params['protection_status']))
+            collection_formats['protection_status'] = 'csv'
+        if 'protection_reason' in local_var_params:
+            query_params.append(('protection_reason', local_var_params['protection_reason']))
+            collection_formats['protection_reason'] = 'csv'
 
         header_params = {}
 
@@ -3318,6 +3459,8 @@ class ElbClient(Client):
             collection_formats['client_ca_tls_container_ref'] = 'multi'
         if 'admin_state_up' in local_var_params:
             query_params.append(('admin_state_up', local_var_params['admin_state_up']))
+        if 'include_recycle_bin' in local_var_params:
+            query_params.append(('include_recycle_bin', local_var_params['include_recycle_bin']))
         if 'connection_limit' in local_var_params:
             query_params.append(('connection_limit', local_var_params['connection_limit']))
             collection_formats['connection_limit'] = 'multi'
@@ -3454,6 +3597,8 @@ class ElbClient(Client):
             collection_formats['description'] = 'multi'
         if 'admin_state_up' in local_var_params:
             query_params.append(('admin_state_up', local_var_params['admin_state_up']))
+        if 'include_recycle_bin' in local_var_params:
+            query_params.append(('include_recycle_bin', local_var_params['include_recycle_bin']))
         if 'provisioning_status' in local_var_params:
             query_params.append(('provisioning_status', local_var_params['provisioning_status']))
             collection_formats['provisioning_status'] = 'multi'
@@ -3908,6 +4053,9 @@ class ElbClient(Client):
         if 'instance_id' in local_var_params:
             query_params.append(('instance_id', local_var_params['instance_id']))
             collection_formats['instance_id'] = 'csv'
+        if 'availability_zone' in local_var_params:
+            query_params.append(('availability_zone', local_var_params['availability_zone']))
+            collection_formats['availability_zone'] = 'csv'
 
         header_params = {}
 
@@ -4041,6 +4189,9 @@ class ElbClient(Client):
             query_params.append(('quic_cid_len', local_var_params['quic_cid_len']))
         if 'quic_cid_offset' in local_var_params:
             query_params.append(('quic_cid_offset', local_var_params['quic_cid_offset']))
+        if 'az_affinity' in local_var_params:
+            query_params.append(('az_affinity', local_var_params['az_affinity']))
+            collection_formats['az_affinity'] = 'csv'
 
         header_params = {}
 
@@ -4107,6 +4258,160 @@ class ElbClient(Client):
         if 'quota_key' in local_var_params:
             query_params.append(('quota_key', local_var_params['quota_key']))
             collection_formats['quota_key'] = 'csv'
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_recycle_bin_load_balancers(self, request):
+        r"""查询回收站负载均衡器列表
+
+        查询回收站负载均衡器列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListRecycleBinLoadBalancers
+        :type request: :class:`huaweicloudsdkelb.v3.ListRecycleBinLoadBalancersRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.ListRecycleBinLoadBalancersResponse`
+        """
+        http_info = self._list_recycle_bin_load_balancers_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_recycle_bin_load_balancers_invoker(self, request):
+        http_info = self._list_recycle_bin_load_balancers_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_recycle_bin_load_balancers_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/elb/recycle-bin/loadbalancers",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRecycleBinLoadBalancersResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'page_reverse' in local_var_params:
+            query_params.append(('page_reverse', local_var_params['page_reverse']))
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+            collection_formats['id'] = 'multi'
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+            collection_formats['name'] = 'multi'
+        if 'description' in local_var_params:
+            query_params.append(('description', local_var_params['description']))
+            collection_formats['description'] = 'multi'
+        if 'admin_state_up' in local_var_params:
+            query_params.append(('admin_state_up', local_var_params['admin_state_up']))
+        if 'operating_status' in local_var_params:
+            query_params.append(('operating_status', local_var_params['operating_status']))
+            collection_formats['operating_status'] = 'multi'
+        if 'guaranteed' in local_var_params:
+            query_params.append(('guaranteed', local_var_params['guaranteed']))
+        if 'vpc_id' in local_var_params:
+            query_params.append(('vpc_id', local_var_params['vpc_id']))
+            collection_formats['vpc_id'] = 'multi'
+        if 'vip_port_id' in local_var_params:
+            query_params.append(('vip_port_id', local_var_params['vip_port_id']))
+            collection_formats['vip_port_id'] = 'multi'
+        if 'vip_address' in local_var_params:
+            query_params.append(('vip_address', local_var_params['vip_address']))
+            collection_formats['vip_address'] = 'multi'
+        if 'vip_subnet_cidr_id' in local_var_params:
+            query_params.append(('vip_subnet_cidr_id', local_var_params['vip_subnet_cidr_id']))
+            collection_formats['vip_subnet_cidr_id'] = 'multi'
+        if 'ipv6_vip_port_id' in local_var_params:
+            query_params.append(('ipv6_vip_port_id', local_var_params['ipv6_vip_port_id']))
+            collection_formats['ipv6_vip_port_id'] = 'multi'
+        if 'ipv6_vip_address' in local_var_params:
+            query_params.append(('ipv6_vip_address', local_var_params['ipv6_vip_address']))
+            collection_formats['ipv6_vip_address'] = 'multi'
+        if 'ipv6_vip_virsubnet_id' in local_var_params:
+            query_params.append(('ipv6_vip_virsubnet_id', local_var_params['ipv6_vip_virsubnet_id']))
+            collection_formats['ipv6_vip_virsubnet_id'] = 'multi'
+        if 'eips' in local_var_params:
+            query_params.append(('eips', local_var_params['eips']))
+            collection_formats['eips'] = 'multi'
+        if 'publicips' in local_var_params:
+            query_params.append(('publicips', local_var_params['publicips']))
+            collection_formats['publicips'] = 'multi'
+        if 'availability_zone_list' in local_var_params:
+            query_params.append(('availability_zone_list', local_var_params['availability_zone_list']))
+            collection_formats['availability_zone_list'] = 'multi'
+        if 'l4_flavor_id' in local_var_params:
+            query_params.append(('l4_flavor_id', local_var_params['l4_flavor_id']))
+            collection_formats['l4_flavor_id'] = 'multi'
+        if 'l7_flavor_id' in local_var_params:
+            query_params.append(('l7_flavor_id', local_var_params['l7_flavor_id']))
+            collection_formats['l7_flavor_id'] = 'multi'
+        if 'billing_info' in local_var_params:
+            query_params.append(('billing_info', local_var_params['billing_info']))
+            collection_formats['billing_info'] = 'multi'
+        if 'member_device_id' in local_var_params:
+            query_params.append(('member_device_id', local_var_params['member_device_id']))
+            collection_formats['member_device_id'] = 'multi'
+        if 'member_address' in local_var_params:
+            query_params.append(('member_address', local_var_params['member_address']))
+            collection_formats['member_address'] = 'multi'
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+            collection_formats['enterprise_project_id'] = 'multi'
+        if 'ip_version' in local_var_params:
+            query_params.append(('ip_version', local_var_params['ip_version']))
+            collection_formats['ip_version'] = 'multi'
+        if 'deletion_protection_enable' in local_var_params:
+            query_params.append(('deletion_protection_enable', local_var_params['deletion_protection_enable']))
+        if 'elb_virsubnet_type' in local_var_params:
+            query_params.append(('elb_virsubnet_type', local_var_params['elb_virsubnet_type']))
+            collection_formats['elb_virsubnet_type'] = 'csv'
+        if 'autoscaling' in local_var_params:
+            query_params.append(('autoscaling', local_var_params['autoscaling']))
+            collection_formats['autoscaling'] = 'csv'
+        if 'protection_status' in local_var_params:
+            query_params.append(('protection_status', local_var_params['protection_status']))
+            collection_formats['protection_status'] = 'csv'
+        if 'global_eips' in local_var_params:
+            query_params.append(('global_eips', local_var_params['global_eips']))
+            collection_formats['global_eips'] = 'csv'
+        if 'log_topic_id' in local_var_params:
+            query_params.append(('log_topic_id', local_var_params['log_topic_id']))
+        if 'log_group_id' in local_var_params:
+            query_params.append(('log_group_id', local_var_params['log_group_id']))
 
         header_params = {}
 
@@ -4254,6 +4559,71 @@ class ElbClient(Client):
         collection_formats = {}
 
         path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def restore_loadbalancer(self, request):
+        r"""还原负载均衡器
+
+        从回收站中还原负载均衡器
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for RestoreLoadbalancer
+        :type request: :class:`huaweicloudsdkelb.v3.RestoreLoadbalancerRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.RestoreLoadbalancerResponse`
+        """
+        http_info = self._restore_loadbalancer_http_info(request)
+        return self._call_api(**http_info)
+
+    def restore_loadbalancer_invoker(self, request):
+        http_info = self._restore_loadbalancer_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _restore_loadbalancer_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/elb/recycle-bin/loadbalancers/{loadbalancer_id}/recover",
+            "request_type": request.__class__.__name__,
+            "response_type": "RestoreLoadbalancerResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'loadbalancer_id' in local_var_params:
+            path_params['loadbalancer_id'] = local_var_params['loadbalancer_id']
 
         query_params = []
 
@@ -5133,6 +5503,71 @@ class ElbClient(Client):
 
         return http_info
 
+    def show_member_health_check_job(self, request):
+        r"""查询后端服务器检测任务的结果
+
+        查询后端服务器检测任务的结果。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowMemberHealthCheckJob
+        :type request: :class:`huaweicloudsdkelb.v3.ShowMemberHealthCheckJobRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.ShowMemberHealthCheckJobResponse`
+        """
+        http_info = self._show_member_health_check_job_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_member_health_check_job_invoker(self, request):
+        http_info = self._show_member_health_check_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_member_health_check_job_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/elb/members/check/jobs/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowMemberHealthCheckJobResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_pool(self, request):
         r"""查询后端服务器组详情
 
@@ -5223,6 +5658,69 @@ class ElbClient(Client):
             "resource_path": "/v3/{project_id}/elb/quotas",
             "request_type": request.__class__.__name__,
             "response_type": "ShowQuotaResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_recycle_bin(self, request):
+        r"""查询回收站的配置
+
+        查询回收站的配置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowRecycleBin
+        :type request: :class:`huaweicloudsdkelb.v3.ShowRecycleBinRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.ShowRecycleBinResponse`
+        """
+        http_info = self._show_recycle_bin_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_recycle_bin_invoker(self, request):
+        http_info = self._show_recycle_bin_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_recycle_bin_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/elb/recycle-bin",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRecycleBinResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -5919,6 +6417,136 @@ class ElbClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_recycle_bin_enable(self, request):
+        r"""开关回收站
+
+        开启或关闭回收站功能。开启后删除的LB可以进入回收站，否则将不进入回收站而是直接被删除无法恢复。关闭回收站前需要先将回收站中的实例还原或销毁。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateRecycleBinEnable
+        :type request: :class:`huaweicloudsdkelb.v3.UpdateRecycleBinEnableRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.UpdateRecycleBinEnableResponse`
+        """
+        http_info = self._update_recycle_bin_enable_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_recycle_bin_enable_invoker(self, request):
+        http_info = self._update_recycle_bin_enable_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_recycle_bin_enable_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/elb/recycle-bin",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateRecycleBinEnableResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_recycle_bin_policy(self, request):
+        r"""更新回收站的配置
+
+        更新回收站的配置。若回收站未开启，则更新会报错。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateRecycleBinPolicy
+        :type request: :class:`huaweicloudsdkelb.v3.UpdateRecycleBinPolicyRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.UpdateRecycleBinPolicyResponse`
+        """
+        http_info = self._update_recycle_bin_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_recycle_bin_policy_invoker(self, request):
+        http_info = self._update_recycle_bin_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_recycle_bin_policy_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/elb/recycle-bin/policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateRecycleBinPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 

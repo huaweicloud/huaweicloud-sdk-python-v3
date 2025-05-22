@@ -33,11 +33,11 @@ class RestorePoint:
 
         The model defined in huaweicloud sdk
 
-        :param back_ref: 快照ID
+        :param back_ref: **参数解释**： 快照ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type back_ref: str
-        :param restore_time: 恢复时间
+        :param restore_time: **参数解释**： 恢复时间。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type restore_time: int
-        :param cluster_id: 集群ID
+        :param cluster_id: **参数解释**： 原始集群ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type cluster_id: str
         """
         
@@ -59,7 +59,7 @@ class RestorePoint:
     def back_ref(self):
         r"""Gets the back_ref of this RestorePoint.
 
-        快照ID
+        **参数解释**： 快照ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The back_ref of this RestorePoint.
         :rtype: str
@@ -70,7 +70,7 @@ class RestorePoint:
     def back_ref(self, back_ref):
         r"""Sets the back_ref of this RestorePoint.
 
-        快照ID
+        **参数解释**： 快照ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param back_ref: The back_ref of this RestorePoint.
         :type back_ref: str
@@ -81,7 +81,7 @@ class RestorePoint:
     def restore_time(self):
         r"""Gets the restore_time of this RestorePoint.
 
-        恢复时间
+        **参数解释**： 恢复时间。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The restore_time of this RestorePoint.
         :rtype: int
@@ -92,7 +92,7 @@ class RestorePoint:
     def restore_time(self, restore_time):
         r"""Sets the restore_time of this RestorePoint.
 
-        恢复时间
+        **参数解释**： 恢复时间。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param restore_time: The restore_time of this RestorePoint.
         :type restore_time: int
@@ -103,7 +103,7 @@ class RestorePoint:
     def cluster_id(self):
         r"""Gets the cluster_id of this RestorePoint.
 
-        集群ID
+        **参数解释**： 原始集群ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The cluster_id of this RestorePoint.
         :rtype: str
@@ -114,7 +114,7 @@ class RestorePoint:
     def cluster_id(self, cluster_id):
         r"""Sets the cluster_id of this RestorePoint.
 
-        集群ID
+        **参数解释**： 原始集群ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param cluster_id: The cluster_id of this RestorePoint.
         :type cluster_id: str

@@ -26,6 +26,10 @@ class CodeArtsBuildRegion:
                         "https://cloudbuild-ext.sa-brazil-1.myhuaweicloud.com")
     LA_NORTH_2 = Region("la-north-2",
                         "https://cloudbuild-ext.la-north-2.myhuaweicloud.com")
+    LA_SOUTH_2 = Region("la-south-2",
+                        "https://cloudbuild-ext.la-south-2.myhuaweicloud.com")
+    TR_WEST_1 = Region("tr-west-1",
+                        "https://cloudbuild-ext.tr-west-1.myhuaweicloud.com")
 
     static_fields = {
         "cn-north-4": CN_NORTH_4,
@@ -38,6 +42,8 @@ class CodeArtsBuildRegion:
         "ap-southeast-3": AP_SOUTHEAST_3,
         "sa-brazil-1": SA_BRAZIL_1,
         "la-north-2": LA_NORTH_2,
+        "la-south-2": LA_SOUTH_2,
+        "tr-west-1": TR_WEST_1,
     }
 
     @classmethod

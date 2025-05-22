@@ -42,7 +42,8 @@ class ListInstancesResult:
         'actions': 'list[str]',
         'lb_ip_address': 'str',
         'lb_port': 'str',
-        'availability_zone': 'str'
+        'availability_zone': 'str',
+        'dual_active_info': 'DualActiveInfo'
     }
 
     attribute_map = {
@@ -71,10 +72,11 @@ class ListInstancesResult:
         'actions': 'actions',
         'lb_ip_address': 'lb_ip_address',
         'lb_port': 'lb_port',
-        'availability_zone': 'availability_zone'
+        'availability_zone': 'availability_zone',
+        'dual_active_info': 'dual_active_info'
     }
 
-    def __init__(self, id=None, name=None, status=None, port=None, region=None, datastore=None, mode=None, product_type=None, engine=None, created=None, updated=None, db_user_name=None, vpc_id=None, subnet_id=None, security_group_id=None, backup_strategy=None, pay_mode=None, maintenance_window=None, groups=None, enterprise_project_id=None, dedicated_resource_id=None, time_zone=None, actions=None, lb_ip_address=None, lb_port=None, availability_zone=None):
+    def __init__(self, id=None, name=None, status=None, port=None, region=None, datastore=None, mode=None, product_type=None, engine=None, created=None, updated=None, db_user_name=None, vpc_id=None, subnet_id=None, security_group_id=None, backup_strategy=None, pay_mode=None, maintenance_window=None, groups=None, enterprise_project_id=None, dedicated_resource_id=None, time_zone=None, actions=None, lb_ip_address=None, lb_port=None, availability_zone=None, dual_active_info=None):
         r"""ListInstancesResult
 
         The model defined in huaweicloud sdk
@@ -131,6 +133,8 @@ class ListInstancesResult:
         :type lb_port: str
         :param availability_zone: 实例可用区。
         :type availability_zone: str
+        :param dual_active_info: 
+        :type dual_active_info: :class:`huaweicloudsdkgaussdbfornosql.v3.DualActiveInfo`
         """
         
         
@@ -161,6 +165,7 @@ class ListInstancesResult:
         self._lb_ip_address = None
         self._lb_port = None
         self._availability_zone = None
+        self._dual_active_info = None
         self.discriminator = None
 
         self.id = id
@@ -194,6 +199,8 @@ class ListInstancesResult:
             self.lb_port = lb_port
         if availability_zone is not None:
             self.availability_zone = availability_zone
+        if dual_active_info is not None:
+            self.dual_active_info = dual_active_info
 
     @property
     def id(self):
@@ -758,6 +765,24 @@ class ListInstancesResult:
         :type availability_zone: str
         """
         self._availability_zone = availability_zone
+
+    @property
+    def dual_active_info(self):
+        r"""Gets the dual_active_info of this ListInstancesResult.
+
+        :return: The dual_active_info of this ListInstancesResult.
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.DualActiveInfo`
+        """
+        return self._dual_active_info
+
+    @dual_active_info.setter
+    def dual_active_info(self, dual_active_info):
+        r"""Sets the dual_active_info of this ListInstancesResult.
+
+        :param dual_active_info: The dual_active_info of this ListInstancesResult.
+        :type dual_active_info: :class:`huaweicloudsdkgaussdbfornosql.v3.DualActiveInfo`
+        """
+        self._dual_active_info = dual_active_info
 
     def to_dict(self):
         """Returns the model properties as a dict"""

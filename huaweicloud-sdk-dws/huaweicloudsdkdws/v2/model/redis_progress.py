@@ -55,33 +55,33 @@ class RedisProgress:
 
         The model defined in huaweicloud sdk
 
-        :param bytes_done: 已完成字节数
+        :param bytes_done: **参数解释**： 已完成字节数。 **取值范围**： 不涉及。
         :type bytes_done: int
-        :param byte_left: 剩余字节数
+        :param byte_left: **参数解释**： 剩余字节数。 **取值范围**： 不涉及。
         :type byte_left: int
-        :param tables_done: 完成表数量
+        :param tables_done: **参数解释**： 完成表数量。 **取值范围**： 不涉及。
         :type tables_done: int
-        :param tables_left: 剩余表数量
+        :param tables_left: **参数解释**： 剩余表数量。 **取值范围**： 不涉及。
         :type tables_left: int
-        :param table_progress: 表重分布进度
+        :param table_progress: **参数解释**： 表重分布进度。 **取值范围**： 1~100。
         :type table_progress: int
-        :param total_progress: 总进度
+        :param total_progress: **参数解释**： 总进度。 **取值范围**： 1~100。
         :type total_progress: int
-        :param redis_rate: 重分布比例
+        :param redis_rate: **参数解释**： 重分布速度。 **取值范围**： 不涉及。
         :type redis_rate: str
-        :param estimated_time: 预计时间
+        :param estimated_time: **参数解释**： 预估时间。 **取值范围**： 不涉及。
         :type estimated_time: str
-        :param completed: 是否已完成
+        :param completed: **参数解释**： 是否已完成。 **取值范围**： 不涉及。
         :type completed: bool
-        :param initialed: 是否完成初始化
+        :param initialed: **参数解释**： 是否完成初始化。 **取值范围**： 不涉及。
         :type initialed: bool
-        :param fail_count: 失败总数
+        :param fail_count: **参数解释**： 失败次数。 **取值范围**： 不涉及。
         :type fail_count: int
-        :param redistributing: cm_ctl 结果
+        :param redistributing: **参数解释**： cm_ctl查询的重分布结果。 **取值范围**： 不涉及。
         :type redistributing: bool
-        :param status: 状态
+        :param status: **参数解释**： 状态。 **取值范围**： 不涉及。
         :type status: str
-        :param pause_by_user: 是否用户暂停
+        :param pause_by_user: **参数解释**： 是否用户暂停。 **取值范围**： 不涉及。
         :type pause_by_user: bool
         """
         
@@ -136,7 +136,7 @@ class RedisProgress:
     def bytes_done(self):
         r"""Gets the bytes_done of this RedisProgress.
 
-        已完成字节数
+        **参数解释**： 已完成字节数。 **取值范围**： 不涉及。
 
         :return: The bytes_done of this RedisProgress.
         :rtype: int
@@ -147,7 +147,7 @@ class RedisProgress:
     def bytes_done(self, bytes_done):
         r"""Sets the bytes_done of this RedisProgress.
 
-        已完成字节数
+        **参数解释**： 已完成字节数。 **取值范围**： 不涉及。
 
         :param bytes_done: The bytes_done of this RedisProgress.
         :type bytes_done: int
@@ -158,7 +158,7 @@ class RedisProgress:
     def byte_left(self):
         r"""Gets the byte_left of this RedisProgress.
 
-        剩余字节数
+        **参数解释**： 剩余字节数。 **取值范围**： 不涉及。
 
         :return: The byte_left of this RedisProgress.
         :rtype: int
@@ -169,7 +169,7 @@ class RedisProgress:
     def byte_left(self, byte_left):
         r"""Sets the byte_left of this RedisProgress.
 
-        剩余字节数
+        **参数解释**： 剩余字节数。 **取值范围**： 不涉及。
 
         :param byte_left: The byte_left of this RedisProgress.
         :type byte_left: int
@@ -180,7 +180,7 @@ class RedisProgress:
     def tables_done(self):
         r"""Gets the tables_done of this RedisProgress.
 
-        完成表数量
+        **参数解释**： 完成表数量。 **取值范围**： 不涉及。
 
         :return: The tables_done of this RedisProgress.
         :rtype: int
@@ -191,7 +191,7 @@ class RedisProgress:
     def tables_done(self, tables_done):
         r"""Sets the tables_done of this RedisProgress.
 
-        完成表数量
+        **参数解释**： 完成表数量。 **取值范围**： 不涉及。
 
         :param tables_done: The tables_done of this RedisProgress.
         :type tables_done: int
@@ -202,7 +202,7 @@ class RedisProgress:
     def tables_left(self):
         r"""Gets the tables_left of this RedisProgress.
 
-        剩余表数量
+        **参数解释**： 剩余表数量。 **取值范围**： 不涉及。
 
         :return: The tables_left of this RedisProgress.
         :rtype: int
@@ -213,7 +213,7 @@ class RedisProgress:
     def tables_left(self, tables_left):
         r"""Sets the tables_left of this RedisProgress.
 
-        剩余表数量
+        **参数解释**： 剩余表数量。 **取值范围**： 不涉及。
 
         :param tables_left: The tables_left of this RedisProgress.
         :type tables_left: int
@@ -224,7 +224,7 @@ class RedisProgress:
     def table_progress(self):
         r"""Gets the table_progress of this RedisProgress.
 
-        表重分布进度
+        **参数解释**： 表重分布进度。 **取值范围**： 1~100。
 
         :return: The table_progress of this RedisProgress.
         :rtype: int
@@ -235,7 +235,7 @@ class RedisProgress:
     def table_progress(self, table_progress):
         r"""Sets the table_progress of this RedisProgress.
 
-        表重分布进度
+        **参数解释**： 表重分布进度。 **取值范围**： 1~100。
 
         :param table_progress: The table_progress of this RedisProgress.
         :type table_progress: int
@@ -246,7 +246,7 @@ class RedisProgress:
     def total_progress(self):
         r"""Gets the total_progress of this RedisProgress.
 
-        总进度
+        **参数解释**： 总进度。 **取值范围**： 1~100。
 
         :return: The total_progress of this RedisProgress.
         :rtype: int
@@ -257,7 +257,7 @@ class RedisProgress:
     def total_progress(self, total_progress):
         r"""Sets the total_progress of this RedisProgress.
 
-        总进度
+        **参数解释**： 总进度。 **取值范围**： 1~100。
 
         :param total_progress: The total_progress of this RedisProgress.
         :type total_progress: int
@@ -268,7 +268,7 @@ class RedisProgress:
     def redis_rate(self):
         r"""Gets the redis_rate of this RedisProgress.
 
-        重分布比例
+        **参数解释**： 重分布速度。 **取值范围**： 不涉及。
 
         :return: The redis_rate of this RedisProgress.
         :rtype: str
@@ -279,7 +279,7 @@ class RedisProgress:
     def redis_rate(self, redis_rate):
         r"""Sets the redis_rate of this RedisProgress.
 
-        重分布比例
+        **参数解释**： 重分布速度。 **取值范围**： 不涉及。
 
         :param redis_rate: The redis_rate of this RedisProgress.
         :type redis_rate: str
@@ -290,7 +290,7 @@ class RedisProgress:
     def estimated_time(self):
         r"""Gets the estimated_time of this RedisProgress.
 
-        预计时间
+        **参数解释**： 预估时间。 **取值范围**： 不涉及。
 
         :return: The estimated_time of this RedisProgress.
         :rtype: str
@@ -301,7 +301,7 @@ class RedisProgress:
     def estimated_time(self, estimated_time):
         r"""Sets the estimated_time of this RedisProgress.
 
-        预计时间
+        **参数解释**： 预估时间。 **取值范围**： 不涉及。
 
         :param estimated_time: The estimated_time of this RedisProgress.
         :type estimated_time: str
@@ -312,7 +312,7 @@ class RedisProgress:
     def completed(self):
         r"""Gets the completed of this RedisProgress.
 
-        是否已完成
+        **参数解释**： 是否已完成。 **取值范围**： 不涉及。
 
         :return: The completed of this RedisProgress.
         :rtype: bool
@@ -323,7 +323,7 @@ class RedisProgress:
     def completed(self, completed):
         r"""Sets the completed of this RedisProgress.
 
-        是否已完成
+        **参数解释**： 是否已完成。 **取值范围**： 不涉及。
 
         :param completed: The completed of this RedisProgress.
         :type completed: bool
@@ -334,7 +334,7 @@ class RedisProgress:
     def initialed(self):
         r"""Gets the initialed of this RedisProgress.
 
-        是否完成初始化
+        **参数解释**： 是否完成初始化。 **取值范围**： 不涉及。
 
         :return: The initialed of this RedisProgress.
         :rtype: bool
@@ -345,7 +345,7 @@ class RedisProgress:
     def initialed(self, initialed):
         r"""Sets the initialed of this RedisProgress.
 
-        是否完成初始化
+        **参数解释**： 是否完成初始化。 **取值范围**： 不涉及。
 
         :param initialed: The initialed of this RedisProgress.
         :type initialed: bool
@@ -356,7 +356,7 @@ class RedisProgress:
     def fail_count(self):
         r"""Gets the fail_count of this RedisProgress.
 
-        失败总数
+        **参数解释**： 失败次数。 **取值范围**： 不涉及。
 
         :return: The fail_count of this RedisProgress.
         :rtype: int
@@ -367,7 +367,7 @@ class RedisProgress:
     def fail_count(self, fail_count):
         r"""Sets the fail_count of this RedisProgress.
 
-        失败总数
+        **参数解释**： 失败次数。 **取值范围**： 不涉及。
 
         :param fail_count: The fail_count of this RedisProgress.
         :type fail_count: int
@@ -378,7 +378,7 @@ class RedisProgress:
     def redistributing(self):
         r"""Gets the redistributing of this RedisProgress.
 
-        cm_ctl 结果
+        **参数解释**： cm_ctl查询的重分布结果。 **取值范围**： 不涉及。
 
         :return: The redistributing of this RedisProgress.
         :rtype: bool
@@ -389,7 +389,7 @@ class RedisProgress:
     def redistributing(self, redistributing):
         r"""Sets the redistributing of this RedisProgress.
 
-        cm_ctl 结果
+        **参数解释**： cm_ctl查询的重分布结果。 **取值范围**： 不涉及。
 
         :param redistributing: The redistributing of this RedisProgress.
         :type redistributing: bool
@@ -400,7 +400,7 @@ class RedisProgress:
     def status(self):
         r"""Gets the status of this RedisProgress.
 
-        状态
+        **参数解释**： 状态。 **取值范围**： 不涉及。
 
         :return: The status of this RedisProgress.
         :rtype: str
@@ -411,7 +411,7 @@ class RedisProgress:
     def status(self, status):
         r"""Sets the status of this RedisProgress.
 
-        状态
+        **参数解释**： 状态。 **取值范围**： 不涉及。
 
         :param status: The status of this RedisProgress.
         :type status: str
@@ -422,7 +422,7 @@ class RedisProgress:
     def pause_by_user(self):
         r"""Gets the pause_by_user of this RedisProgress.
 
-        是否用户暂停
+        **参数解释**： 是否用户暂停。 **取值范围**： 不涉及。
 
         :return: The pause_by_user of this RedisProgress.
         :rtype: bool
@@ -433,7 +433,7 @@ class RedisProgress:
     def pause_by_user(self, pause_by_user):
         r"""Sets the pause_by_user of this RedisProgress.
 
-        是否用户暂停
+        **参数解释**： 是否用户暂停。 **取值范围**： 不涉及。
 
         :param pause_by_user: The pause_by_user of this RedisProgress.
         :type pause_by_user: bool

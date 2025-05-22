@@ -23,7 +23,8 @@ class BackupStrategyDetail:
         'backup_type': 'str',
         'backup_level': 'str',
         'next_fire_time': 'str',
-        'update_time': 'str'
+        'update_time': 'str',
+        'time_zone_offset': 'int'
     }
 
     attribute_map = {
@@ -33,28 +34,31 @@ class BackupStrategyDetail:
         'backup_type': 'backup_type',
         'backup_level': 'backup_level',
         'next_fire_time': 'next_fire_time',
-        'update_time': 'update_time'
+        'update_time': 'update_time',
+        'time_zone_offset': 'time_zone_offset'
     }
 
-    def __init__(self, policy_id=None, policy_name=None, backup_strategy=None, backup_type=None, backup_level=None, next_fire_time=None, update_time=None):
+    def __init__(self, policy_id=None, policy_name=None, backup_strategy=None, backup_type=None, backup_level=None, next_fire_time=None, update_time=None, time_zone_offset=None):
         r"""BackupStrategyDetail
 
         The model defined in huaweicloud sdk
 
-        :param policy_id: 策略ID。
+        :param policy_id: **参数解释**： 策略ID。 **取值范围**： 不涉及。
         :type policy_id: str
-        :param policy_name: 策略名称。
+        :param policy_name: **参数解释**： 策略名称。 **取值范围**： 不涉及。
         :type policy_name: str
-        :param backup_strategy: 执行策略。
+        :param backup_strategy: **参数解释**： 执行策略，一般为crontab表达式。 **取值范围**： 不涉及。
         :type backup_strategy: str
-        :param backup_type: 备份类型。
+        :param backup_type: **参数解释**： 备份类型。 **取值范围**： 不涉及。
         :type backup_type: str
-        :param backup_level: 备份级别。
+        :param backup_level: **参数解释**： 备份级别。 **取值范围**： 不涉及。
         :type backup_level: str
-        :param next_fire_time: 下次触发时间。
+        :param next_fire_time: **参数解释**： 下次触发时间（预估，与其它任务冲突时不执行）。 **取值范围**： 不涉及。
         :type next_fire_time: str
-        :param update_time: 更新时间。
+        :param update_time: **参数解释**： 更新时间。 **取值范围**： 不涉及。
         :type update_time: str
+        :param time_zone_offset: **参数解释**： 时区偏移量（相比UTC时间）。 **取值范围**： 0~23
+        :type time_zone_offset: int
         """
         
         
@@ -66,6 +70,7 @@ class BackupStrategyDetail:
         self._backup_level = None
         self._next_fire_time = None
         self._update_time = None
+        self._time_zone_offset = None
         self.discriminator = None
 
         if policy_id is not None:
@@ -82,12 +87,14 @@ class BackupStrategyDetail:
             self.next_fire_time = next_fire_time
         if update_time is not None:
             self.update_time = update_time
+        if time_zone_offset is not None:
+            self.time_zone_offset = time_zone_offset
 
     @property
     def policy_id(self):
         r"""Gets the policy_id of this BackupStrategyDetail.
 
-        策略ID。
+        **参数解释**： 策略ID。 **取值范围**： 不涉及。
 
         :return: The policy_id of this BackupStrategyDetail.
         :rtype: str
@@ -98,7 +105,7 @@ class BackupStrategyDetail:
     def policy_id(self, policy_id):
         r"""Sets the policy_id of this BackupStrategyDetail.
 
-        策略ID。
+        **参数解释**： 策略ID。 **取值范围**： 不涉及。
 
         :param policy_id: The policy_id of this BackupStrategyDetail.
         :type policy_id: str
@@ -109,7 +116,7 @@ class BackupStrategyDetail:
     def policy_name(self):
         r"""Gets the policy_name of this BackupStrategyDetail.
 
-        策略名称。
+        **参数解释**： 策略名称。 **取值范围**： 不涉及。
 
         :return: The policy_name of this BackupStrategyDetail.
         :rtype: str
@@ -120,7 +127,7 @@ class BackupStrategyDetail:
     def policy_name(self, policy_name):
         r"""Sets the policy_name of this BackupStrategyDetail.
 
-        策略名称。
+        **参数解释**： 策略名称。 **取值范围**： 不涉及。
 
         :param policy_name: The policy_name of this BackupStrategyDetail.
         :type policy_name: str
@@ -131,7 +138,7 @@ class BackupStrategyDetail:
     def backup_strategy(self):
         r"""Gets the backup_strategy of this BackupStrategyDetail.
 
-        执行策略。
+        **参数解释**： 执行策略，一般为crontab表达式。 **取值范围**： 不涉及。
 
         :return: The backup_strategy of this BackupStrategyDetail.
         :rtype: str
@@ -142,7 +149,7 @@ class BackupStrategyDetail:
     def backup_strategy(self, backup_strategy):
         r"""Sets the backup_strategy of this BackupStrategyDetail.
 
-        执行策略。
+        **参数解释**： 执行策略，一般为crontab表达式。 **取值范围**： 不涉及。
 
         :param backup_strategy: The backup_strategy of this BackupStrategyDetail.
         :type backup_strategy: str
@@ -153,7 +160,7 @@ class BackupStrategyDetail:
     def backup_type(self):
         r"""Gets the backup_type of this BackupStrategyDetail.
 
-        备份类型。
+        **参数解释**： 备份类型。 **取值范围**： 不涉及。
 
         :return: The backup_type of this BackupStrategyDetail.
         :rtype: str
@@ -164,7 +171,7 @@ class BackupStrategyDetail:
     def backup_type(self, backup_type):
         r"""Sets the backup_type of this BackupStrategyDetail.
 
-        备份类型。
+        **参数解释**： 备份类型。 **取值范围**： 不涉及。
 
         :param backup_type: The backup_type of this BackupStrategyDetail.
         :type backup_type: str
@@ -175,7 +182,7 @@ class BackupStrategyDetail:
     def backup_level(self):
         r"""Gets the backup_level of this BackupStrategyDetail.
 
-        备份级别。
+        **参数解释**： 备份级别。 **取值范围**： 不涉及。
 
         :return: The backup_level of this BackupStrategyDetail.
         :rtype: str
@@ -186,7 +193,7 @@ class BackupStrategyDetail:
     def backup_level(self, backup_level):
         r"""Sets the backup_level of this BackupStrategyDetail.
 
-        备份级别。
+        **参数解释**： 备份级别。 **取值范围**： 不涉及。
 
         :param backup_level: The backup_level of this BackupStrategyDetail.
         :type backup_level: str
@@ -197,7 +204,7 @@ class BackupStrategyDetail:
     def next_fire_time(self):
         r"""Gets the next_fire_time of this BackupStrategyDetail.
 
-        下次触发时间。
+        **参数解释**： 下次触发时间（预估，与其它任务冲突时不执行）。 **取值范围**： 不涉及。
 
         :return: The next_fire_time of this BackupStrategyDetail.
         :rtype: str
@@ -208,7 +215,7 @@ class BackupStrategyDetail:
     def next_fire_time(self, next_fire_time):
         r"""Sets the next_fire_time of this BackupStrategyDetail.
 
-        下次触发时间。
+        **参数解释**： 下次触发时间（预估，与其它任务冲突时不执行）。 **取值范围**： 不涉及。
 
         :param next_fire_time: The next_fire_time of this BackupStrategyDetail.
         :type next_fire_time: str
@@ -219,7 +226,7 @@ class BackupStrategyDetail:
     def update_time(self):
         r"""Gets the update_time of this BackupStrategyDetail.
 
-        更新时间。
+        **参数解释**： 更新时间。 **取值范围**： 不涉及。
 
         :return: The update_time of this BackupStrategyDetail.
         :rtype: str
@@ -230,12 +237,34 @@ class BackupStrategyDetail:
     def update_time(self, update_time):
         r"""Sets the update_time of this BackupStrategyDetail.
 
-        更新时间。
+        **参数解释**： 更新时间。 **取值范围**： 不涉及。
 
         :param update_time: The update_time of this BackupStrategyDetail.
         :type update_time: str
         """
         self._update_time = update_time
+
+    @property
+    def time_zone_offset(self):
+        r"""Gets the time_zone_offset of this BackupStrategyDetail.
+
+        **参数解释**： 时区偏移量（相比UTC时间）。 **取值范围**： 0~23
+
+        :return: The time_zone_offset of this BackupStrategyDetail.
+        :rtype: int
+        """
+        return self._time_zone_offset
+
+    @time_zone_offset.setter
+    def time_zone_offset(self, time_zone_offset):
+        r"""Sets the time_zone_offset of this BackupStrategyDetail.
+
+        **参数解释**： 时区偏移量（相比UTC时间）。 **取值范围**： 0~23
+
+        :param time_zone_offset: The time_zone_offset of this BackupStrategyDetail.
+        :type time_zone_offset: int
+        """
+        self._time_zone_offset = time_zone_offset
 
     def to_dict(self):
         """Returns the model properties as a dict"""

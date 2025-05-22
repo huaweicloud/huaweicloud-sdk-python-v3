@@ -33,11 +33,11 @@ class CompatibleConfigurationResp:
 
         The model defined in huaweicloud sdk
 
-        :param id: ID
+        :param id: **参数解释**： 参数组ID。 **取值范围**： 不涉及。
         :type id: str
-        :param name: 名称
+        :param name: **参数解释**： 参数组名称。 **取值范围**： 不涉及。
         :type name: str
-        :param links: 连接
+        :param links: **参数解释**： 连接信息。 **取值范围**： 不涉及。
         :type links: list[:class:`huaweicloudsdkdws.v2.LinkResp`]
         """
         
@@ -59,7 +59,7 @@ class CompatibleConfigurationResp:
     def id(self):
         r"""Gets the id of this CompatibleConfigurationResp.
 
-        ID
+        **参数解释**： 参数组ID。 **取值范围**： 不涉及。
 
         :return: The id of this CompatibleConfigurationResp.
         :rtype: str
@@ -70,7 +70,7 @@ class CompatibleConfigurationResp:
     def id(self, id):
         r"""Sets the id of this CompatibleConfigurationResp.
 
-        ID
+        **参数解释**： 参数组ID。 **取值范围**： 不涉及。
 
         :param id: The id of this CompatibleConfigurationResp.
         :type id: str
@@ -81,7 +81,7 @@ class CompatibleConfigurationResp:
     def name(self):
         r"""Gets the name of this CompatibleConfigurationResp.
 
-        名称
+        **参数解释**： 参数组名称。 **取值范围**： 不涉及。
 
         :return: The name of this CompatibleConfigurationResp.
         :rtype: str
@@ -92,7 +92,7 @@ class CompatibleConfigurationResp:
     def name(self, name):
         r"""Sets the name of this CompatibleConfigurationResp.
 
-        名称
+        **参数解释**： 参数组名称。 **取值范围**： 不涉及。
 
         :param name: The name of this CompatibleConfigurationResp.
         :type name: str
@@ -103,7 +103,7 @@ class CompatibleConfigurationResp:
     def links(self):
         r"""Gets the links of this CompatibleConfigurationResp.
 
-        连接
+        **参数解释**： 连接信息。 **取值范围**： 不涉及。
 
         :return: The links of this CompatibleConfigurationResp.
         :rtype: list[:class:`huaweicloudsdkdws.v2.LinkResp`]
@@ -114,7 +114,7 @@ class CompatibleConfigurationResp:
     def links(self, links):
         r"""Sets the links of this CompatibleConfigurationResp.
 
-        连接
+        **参数解释**： 连接信息。 **取值范围**： 不涉及。
 
         :param links: The links of this CompatibleConfigurationResp.
         :type links: list[:class:`huaweicloudsdkdws.v2.LinkResp`]

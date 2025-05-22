@@ -43,21 +43,21 @@ class ClusterNodeInfo:
 
         The model defined in huaweicloud sdk
 
-        :param id: 节点ID
+        :param id: **参数解释**： 节点ID。 **取值范围**： 不涉及。
         :type id: str
-        :param name: 节点名称
+        :param name: **参数解释**： 节点名称。 **取值范围**： 不涉及。
         :type name: str
-        :param status: 节点状态
+        :param status: **参数解释**： 节点状态。 **取值范围**： 不涉及。
         :type status: str
-        :param sub_status: 节点子状态
+        :param sub_status: **参数解释**： 节点子状态。 **取值范围**： 不涉及。
         :type sub_status: str
-        :param spec: 节点规格
+        :param spec: **参数解释**： 节点规格。 **取值范围**： 不涉及。
         :type spec: str
-        :param inst_create_type: 实例创建类型
+        :param inst_create_type: **参数解释**： 实例创建类型。 **取值范围**： - INST：已使用 - NODE：空闲节点
         :type inst_create_type: str
-        :param alias_name: 节点别名
+        :param alias_name: **参数解释**： 节点别名。 **取值范围**： 不涉及。
         :type alias_name: str
-        :param az_code: 可用区编码
+        :param az_code: **参数解释**： 可用区编码。 **取值范围**： 不涉及。
         :type az_code: str
         """
         
@@ -94,7 +94,7 @@ class ClusterNodeInfo:
     def id(self):
         r"""Gets the id of this ClusterNodeInfo.
 
-        节点ID
+        **参数解释**： 节点ID。 **取值范围**： 不涉及。
 
         :return: The id of this ClusterNodeInfo.
         :rtype: str
@@ -105,7 +105,7 @@ class ClusterNodeInfo:
     def id(self, id):
         r"""Sets the id of this ClusterNodeInfo.
 
-        节点ID
+        **参数解释**： 节点ID。 **取值范围**： 不涉及。
 
         :param id: The id of this ClusterNodeInfo.
         :type id: str
@@ -116,7 +116,7 @@ class ClusterNodeInfo:
     def name(self):
         r"""Gets the name of this ClusterNodeInfo.
 
-        节点名称
+        **参数解释**： 节点名称。 **取值范围**： 不涉及。
 
         :return: The name of this ClusterNodeInfo.
         :rtype: str
@@ -127,7 +127,7 @@ class ClusterNodeInfo:
     def name(self, name):
         r"""Sets the name of this ClusterNodeInfo.
 
-        节点名称
+        **参数解释**： 节点名称。 **取值范围**： 不涉及。
 
         :param name: The name of this ClusterNodeInfo.
         :type name: str
@@ -138,7 +138,7 @@ class ClusterNodeInfo:
     def status(self):
         r"""Gets the status of this ClusterNodeInfo.
 
-        节点状态
+        **参数解释**： 节点状态。 **取值范围**： 不涉及。
 
         :return: The status of this ClusterNodeInfo.
         :rtype: str
@@ -149,7 +149,7 @@ class ClusterNodeInfo:
     def status(self, status):
         r"""Sets the status of this ClusterNodeInfo.
 
-        节点状态
+        **参数解释**： 节点状态。 **取值范围**： 不涉及。
 
         :param status: The status of this ClusterNodeInfo.
         :type status: str
@@ -160,7 +160,7 @@ class ClusterNodeInfo:
     def sub_status(self):
         r"""Gets the sub_status of this ClusterNodeInfo.
 
-        节点子状态
+        **参数解释**： 节点子状态。 **取值范围**： 不涉及。
 
         :return: The sub_status of this ClusterNodeInfo.
         :rtype: str
@@ -171,7 +171,7 @@ class ClusterNodeInfo:
     def sub_status(self, sub_status):
         r"""Sets the sub_status of this ClusterNodeInfo.
 
-        节点子状态
+        **参数解释**： 节点子状态。 **取值范围**： 不涉及。
 
         :param sub_status: The sub_status of this ClusterNodeInfo.
         :type sub_status: str
@@ -182,7 +182,7 @@ class ClusterNodeInfo:
     def spec(self):
         r"""Gets the spec of this ClusterNodeInfo.
 
-        节点规格
+        **参数解释**： 节点规格。 **取值范围**： 不涉及。
 
         :return: The spec of this ClusterNodeInfo.
         :rtype: str
@@ -193,7 +193,7 @@ class ClusterNodeInfo:
     def spec(self, spec):
         r"""Sets the spec of this ClusterNodeInfo.
 
-        节点规格
+        **参数解释**： 节点规格。 **取值范围**： 不涉及。
 
         :param spec: The spec of this ClusterNodeInfo.
         :type spec: str
@@ -204,7 +204,7 @@ class ClusterNodeInfo:
     def inst_create_type(self):
         r"""Gets the inst_create_type of this ClusterNodeInfo.
 
-        实例创建类型
+        **参数解释**： 实例创建类型。 **取值范围**： - INST：已使用 - NODE：空闲节点
 
         :return: The inst_create_type of this ClusterNodeInfo.
         :rtype: str
@@ -215,7 +215,7 @@ class ClusterNodeInfo:
     def inst_create_type(self, inst_create_type):
         r"""Sets the inst_create_type of this ClusterNodeInfo.
 
-        实例创建类型
+        **参数解释**： 实例创建类型。 **取值范围**： - INST：已使用 - NODE：空闲节点
 
         :param inst_create_type: The inst_create_type of this ClusterNodeInfo.
         :type inst_create_type: str
@@ -226,7 +226,7 @@ class ClusterNodeInfo:
     def alias_name(self):
         r"""Gets the alias_name of this ClusterNodeInfo.
 
-        节点别名
+        **参数解释**： 节点别名。 **取值范围**： 不涉及。
 
         :return: The alias_name of this ClusterNodeInfo.
         :rtype: str
@@ -237,7 +237,7 @@ class ClusterNodeInfo:
     def alias_name(self, alias_name):
         r"""Sets the alias_name of this ClusterNodeInfo.
 
-        节点别名
+        **参数解释**： 节点别名。 **取值范围**： 不涉及。
 
         :param alias_name: The alias_name of this ClusterNodeInfo.
         :type alias_name: str
@@ -248,7 +248,7 @@ class ClusterNodeInfo:
     def az_code(self):
         r"""Gets the az_code of this ClusterNodeInfo.
 
-        可用区编码
+        **参数解释**： 可用区编码。 **取值范围**： 不涉及。
 
         :return: The az_code of this ClusterNodeInfo.
         :rtype: str
@@ -259,7 +259,7 @@ class ClusterNodeInfo:
     def az_code(self, az_code):
         r"""Sets the az_code of this ClusterNodeInfo.
 
-        可用区编码
+        **参数解释**： 可用区编码。 **取值范围**： 不涉及。
 
         :param az_code: The az_code of this ClusterNodeInfo.
         :type az_code: str

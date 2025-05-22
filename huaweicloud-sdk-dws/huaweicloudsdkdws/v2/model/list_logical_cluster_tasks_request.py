@@ -41,19 +41,19 @@ class ListLogicalClusterTasksRequest:
 
         The model defined in huaweicloud sdk
 
-        :param cluster_id: 集群ID
+        :param cluster_id: **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
         :type cluster_id: str
-        :param offset: 分页查询，偏移
+        :param offset: **参数解释**： 分页查询，偏移量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 0
         :type offset: int
-        :param limit: 分页查询，每页显示的条目数量
+        :param limit: **参数解释**： 分页单页大小。 **约束限制**： 不涉及。 **取值范围**： 大于0。 **默认取值**： 10
         :type limit: int
-        :param logical_cluster_name: 集群名称
+        :param logical_cluster_name: **参数解释**： 集群名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type logical_cluster_name: str
-        :param type: 类型
+        :param type: **参数解释**： 类型。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type type: str
-        :param order_by: 排序字段
+        :param order_by: **参数解释**： 排序字段。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type order_by: str
-        :param order: 排序：升序/降序
+        :param order: **参数解释**： 排序：升序/降序。 **约束限制**： 不涉及。 **取值范围**： ASC：表示按升序排序。 DESC：表示按降序排序。 **默认取值**： 不涉及。
         :type order: str
         """
         
@@ -86,7 +86,7 @@ class ListLogicalClusterTasksRequest:
     def cluster_id(self):
         r"""Gets the cluster_id of this ListLogicalClusterTasksRequest.
 
-        集群ID
+        **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
 
         :return: The cluster_id of this ListLogicalClusterTasksRequest.
         :rtype: str
@@ -97,7 +97,7 @@ class ListLogicalClusterTasksRequest:
     def cluster_id(self, cluster_id):
         r"""Sets the cluster_id of this ListLogicalClusterTasksRequest.
 
-        集群ID
+        **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
 
         :param cluster_id: The cluster_id of this ListLogicalClusterTasksRequest.
         :type cluster_id: str
@@ -108,7 +108,7 @@ class ListLogicalClusterTasksRequest:
     def offset(self):
         r"""Gets the offset of this ListLogicalClusterTasksRequest.
 
-        分页查询，偏移
+        **参数解释**： 分页查询，偏移量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 0
 
         :return: The offset of this ListLogicalClusterTasksRequest.
         :rtype: int
@@ -119,7 +119,7 @@ class ListLogicalClusterTasksRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListLogicalClusterTasksRequest.
 
-        分页查询，偏移
+        **参数解释**： 分页查询，偏移量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 0
 
         :param offset: The offset of this ListLogicalClusterTasksRequest.
         :type offset: int
@@ -130,7 +130,7 @@ class ListLogicalClusterTasksRequest:
     def limit(self):
         r"""Gets the limit of this ListLogicalClusterTasksRequest.
 
-        分页查询，每页显示的条目数量
+        **参数解释**： 分页单页大小。 **约束限制**： 不涉及。 **取值范围**： 大于0。 **默认取值**： 10
 
         :return: The limit of this ListLogicalClusterTasksRequest.
         :rtype: int
@@ -141,7 +141,7 @@ class ListLogicalClusterTasksRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListLogicalClusterTasksRequest.
 
-        分页查询，每页显示的条目数量
+        **参数解释**： 分页单页大小。 **约束限制**： 不涉及。 **取值范围**： 大于0。 **默认取值**： 10
 
         :param limit: The limit of this ListLogicalClusterTasksRequest.
         :type limit: int
@@ -152,7 +152,7 @@ class ListLogicalClusterTasksRequest:
     def logical_cluster_name(self):
         r"""Gets the logical_cluster_name of this ListLogicalClusterTasksRequest.
 
-        集群名称
+        **参数解释**： 集群名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The logical_cluster_name of this ListLogicalClusterTasksRequest.
         :rtype: str
@@ -163,7 +163,7 @@ class ListLogicalClusterTasksRequest:
     def logical_cluster_name(self, logical_cluster_name):
         r"""Sets the logical_cluster_name of this ListLogicalClusterTasksRequest.
 
-        集群名称
+        **参数解释**： 集群名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param logical_cluster_name: The logical_cluster_name of this ListLogicalClusterTasksRequest.
         :type logical_cluster_name: str
@@ -174,7 +174,7 @@ class ListLogicalClusterTasksRequest:
     def type(self):
         r"""Gets the type of this ListLogicalClusterTasksRequest.
 
-        类型
+        **参数解释**： 类型。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The type of this ListLogicalClusterTasksRequest.
         :rtype: str
@@ -185,7 +185,7 @@ class ListLogicalClusterTasksRequest:
     def type(self, type):
         r"""Sets the type of this ListLogicalClusterTasksRequest.
 
-        类型
+        **参数解释**： 类型。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param type: The type of this ListLogicalClusterTasksRequest.
         :type type: str
@@ -196,7 +196,7 @@ class ListLogicalClusterTasksRequest:
     def order_by(self):
         r"""Gets the order_by of this ListLogicalClusterTasksRequest.
 
-        排序字段
+        **参数解释**： 排序字段。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The order_by of this ListLogicalClusterTasksRequest.
         :rtype: str
@@ -207,7 +207,7 @@ class ListLogicalClusterTasksRequest:
     def order_by(self, order_by):
         r"""Sets the order_by of this ListLogicalClusterTasksRequest.
 
-        排序字段
+        **参数解释**： 排序字段。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param order_by: The order_by of this ListLogicalClusterTasksRequest.
         :type order_by: str
@@ -218,7 +218,7 @@ class ListLogicalClusterTasksRequest:
     def order(self):
         r"""Gets the order of this ListLogicalClusterTasksRequest.
 
-        排序：升序/降序
+        **参数解释**： 排序：升序/降序。 **约束限制**： 不涉及。 **取值范围**： ASC：表示按升序排序。 DESC：表示按降序排序。 **默认取值**： 不涉及。
 
         :return: The order of this ListLogicalClusterTasksRequest.
         :rtype: str
@@ -229,7 +229,7 @@ class ListLogicalClusterTasksRequest:
     def order(self, order):
         r"""Sets the order of this ListLogicalClusterTasksRequest.
 
-        排序：升序/降序
+        **参数解释**： 排序：升序/降序。 **约束限制**： 不涉及。 **取值范围**： ASC：表示按升序排序。 DESC：表示按降序排序。 **默认取值**： 不涉及。
 
         :param order: The order of this ListLogicalClusterTasksRequest.
         :type order: str

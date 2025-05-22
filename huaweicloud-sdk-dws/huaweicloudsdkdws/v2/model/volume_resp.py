@@ -31,9 +31,9 @@ class VolumeResp:
 
         The model defined in huaweicloud sdk
 
-        :param type: 磁盘类型，仅支持SSD。
+        :param type: **参数解释**： 磁盘类型，仅支持SSD。 **取值范围**： 仅支持SSD。
         :type type: str
-        :param size: 磁盘可用容量。
+        :param size: **参数解释**： 磁盘可用容量。 **取值范围**： 仅支持SSD。
         :type size: int
         """
         
@@ -50,7 +50,7 @@ class VolumeResp:
     def type(self):
         r"""Gets the type of this VolumeResp.
 
-        磁盘类型，仅支持SSD。
+        **参数解释**： 磁盘类型，仅支持SSD。 **取值范围**： 仅支持SSD。
 
         :return: The type of this VolumeResp.
         :rtype: str
@@ -61,7 +61,7 @@ class VolumeResp:
     def type(self, type):
         r"""Sets the type of this VolumeResp.
 
-        磁盘类型，仅支持SSD。
+        **参数解释**： 磁盘类型，仅支持SSD。 **取值范围**： 仅支持SSD。
 
         :param type: The type of this VolumeResp.
         :type type: str
@@ -72,7 +72,7 @@ class VolumeResp:
     def size(self):
         r"""Gets the size of this VolumeResp.
 
-        磁盘可用容量。
+        **参数解释**： 磁盘可用容量。 **取值范围**： 仅支持SSD。
 
         :return: The size of this VolumeResp.
         :rtype: int
@@ -83,7 +83,7 @@ class VolumeResp:
     def size(self, size):
         r"""Sets the size of this VolumeResp.
 
-        磁盘可用容量。
+        **参数解释**： 磁盘可用容量。 **取值范围**： 仅支持SSD。
 
         :param size: The size of this VolumeResp.
         :type size: int

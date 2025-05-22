@@ -32,9 +32,9 @@ class ListLogicalClusterTasksResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param logical_cluster_tasks: 逻辑集群任务信息
+        :param logical_cluster_tasks: **参数解释**： 逻辑集群任务信息。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type logical_cluster_tasks: list[:class:`huaweicloudsdkdws.v2.LogicalClusterTaskInfo`]
-        :param count: 逻辑集群任务总数
+        :param count: **参数解释**： 逻辑集群任务总数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type count: int
         """
         
@@ -53,7 +53,7 @@ class ListLogicalClusterTasksResponse(SdkResponse):
     def logical_cluster_tasks(self):
         r"""Gets the logical_cluster_tasks of this ListLogicalClusterTasksResponse.
 
-        逻辑集群任务信息
+        **参数解释**： 逻辑集群任务信息。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The logical_cluster_tasks of this ListLogicalClusterTasksResponse.
         :rtype: list[:class:`huaweicloudsdkdws.v2.LogicalClusterTaskInfo`]
@@ -64,7 +64,7 @@ class ListLogicalClusterTasksResponse(SdkResponse):
     def logical_cluster_tasks(self, logical_cluster_tasks):
         r"""Sets the logical_cluster_tasks of this ListLogicalClusterTasksResponse.
 
-        逻辑集群任务信息
+        **参数解释**： 逻辑集群任务信息。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param logical_cluster_tasks: The logical_cluster_tasks of this ListLogicalClusterTasksResponse.
         :type logical_cluster_tasks: list[:class:`huaweicloudsdkdws.v2.LogicalClusterTaskInfo`]
@@ -75,7 +75,7 @@ class ListLogicalClusterTasksResponse(SdkResponse):
     def count(self):
         r"""Gets the count of this ListLogicalClusterTasksResponse.
 
-        逻辑集群任务总数
+        **参数解释**： 逻辑集群任务总数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The count of this ListLogicalClusterTasksResponse.
         :rtype: int
@@ -86,7 +86,7 @@ class ListLogicalClusterTasksResponse(SdkResponse):
     def count(self, count):
         r"""Sets the count of this ListLogicalClusterTasksResponse.
 
-        逻辑集群任务总数
+        **参数解释**： 逻辑集群任务总数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param count: The count of this ListLogicalClusterTasksResponse.
         :type count: int

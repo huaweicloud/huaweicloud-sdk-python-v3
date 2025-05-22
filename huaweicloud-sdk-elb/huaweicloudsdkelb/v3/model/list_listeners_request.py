@@ -26,6 +26,7 @@ class ListListenersRequest:
         'default_tls_container_ref': 'list[str]',
         'client_ca_tls_container_ref': 'list[str]',
         'admin_state_up': 'bool',
+        'include_recycle_bin': 'bool',
         'connection_limit': 'list[int]',
         'default_pool_id': 'list[str]',
         'id': 'list[str]',
@@ -59,6 +60,7 @@ class ListListenersRequest:
         'default_tls_container_ref': 'default_tls_container_ref',
         'client_ca_tls_container_ref': 'client_ca_tls_container_ref',
         'admin_state_up': 'admin_state_up',
+        'include_recycle_bin': 'include_recycle_bin',
         'connection_limit': 'connection_limit',
         'default_pool_id': 'default_pool_id',
         'id': 'id',
@@ -82,7 +84,7 @@ class ListListenersRequest:
         'nat64_enable': 'nat64_enable'
     }
 
-    def __init__(self, limit=None, marker=None, page_reverse=None, protocol_port=None, protocol=None, description=None, default_tls_container_ref=None, client_ca_tls_container_ref=None, admin_state_up=None, connection_limit=None, default_pool_id=None, id=None, name=None, http2_enable=None, loadbalancer_id=None, tls_ciphers_policy=None, member_address=None, member_device_id=None, enterprise_project_id=None, enable_member_retry=None, member_timeout=None, client_timeout=None, keepalive_timeout=None, transparent_client_ip_enable=None, proxy_protocol_enable=None, enhance_l7policy_enable=None, member_instance_id=None, protection_status=None, ssl_early_data_enable=None, nat64_enable=None):
+    def __init__(self, limit=None, marker=None, page_reverse=None, protocol_port=None, protocol=None, description=None, default_tls_container_ref=None, client_ca_tls_container_ref=None, admin_state_up=None, include_recycle_bin=None, connection_limit=None, default_pool_id=None, id=None, name=None, http2_enable=None, loadbalancer_id=None, tls_ciphers_policy=None, member_address=None, member_device_id=None, enterprise_project_id=None, enable_member_retry=None, member_timeout=None, client_timeout=None, keepalive_timeout=None, transparent_client_ip_enable=None, proxy_protocol_enable=None, enhance_l7policy_enable=None, member_instance_id=None, protection_status=None, ssl_early_data_enable=None, nat64_enable=None):
         r"""ListListenersRequest
 
         The model defined in huaweicloud sdk
@@ -105,6 +107,8 @@ class ListListenersRequest:
         :type client_ca_tls_container_ref: list[str]
         :param admin_state_up: 监听器的管理状态。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
         :type admin_state_up: bool
+        :param include_recycle_bin: 参数解释：查询结果是否包含回收站负载均衡器的监听器  取值范围： - true ：包含回收站elb的监听器。 - false：不包含回收站elb的监听器。
+        :type include_recycle_bin: bool
         :param connection_limit: ​监听器的最大连接数。  取值：-1表示不限制连接数。  支持多值查询，查询条件格式：*connection_limit&#x3D;xxx&amp;connection_limit&#x3D;xxx*。  不支持该字段，请勿使用。
         :type connection_limit: list[int]
         :param default_pool_id: 监听器的默认后端服务器组ID。当请求没有匹配的转发策略时，转发到默认后端服务器上处理。  支持多值查询，查询条件格式：*default_pool_id&#x3D;xxx&amp;default_pool_id&#x3D;xxx*。
@@ -160,6 +164,7 @@ class ListListenersRequest:
         self._default_tls_container_ref = None
         self._client_ca_tls_container_ref = None
         self._admin_state_up = None
+        self._include_recycle_bin = None
         self._connection_limit = None
         self._default_pool_id = None
         self._id = None
@@ -201,6 +206,8 @@ class ListListenersRequest:
             self.client_ca_tls_container_ref = client_ca_tls_container_ref
         if admin_state_up is not None:
             self.admin_state_up = admin_state_up
+        if include_recycle_bin is not None:
+            self.include_recycle_bin = include_recycle_bin
         if connection_limit is not None:
             self.connection_limit = connection_limit
         if default_pool_id is not None:
@@ -441,6 +448,28 @@ class ListListenersRequest:
         :type admin_state_up: bool
         """
         self._admin_state_up = admin_state_up
+
+    @property
+    def include_recycle_bin(self):
+        r"""Gets the include_recycle_bin of this ListListenersRequest.
+
+        参数解释：查询结果是否包含回收站负载均衡器的监听器  取值范围： - true ：包含回收站elb的监听器。 - false：不包含回收站elb的监听器。
+
+        :return: The include_recycle_bin of this ListListenersRequest.
+        :rtype: bool
+        """
+        return self._include_recycle_bin
+
+    @include_recycle_bin.setter
+    def include_recycle_bin(self, include_recycle_bin):
+        r"""Sets the include_recycle_bin of this ListListenersRequest.
+
+        参数解释：查询结果是否包含回收站负载均衡器的监听器  取值范围： - true ：包含回收站elb的监听器。 - false：不包含回收站elb的监听器。
+
+        :param include_recycle_bin: The include_recycle_bin of this ListListenersRequest.
+        :type include_recycle_bin: bool
+        """
+        self._include_recycle_bin = include_recycle_bin
 
     @property
     def connection_limit(self):

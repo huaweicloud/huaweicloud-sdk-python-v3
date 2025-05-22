@@ -33,9 +33,9 @@ class SaveClusterDescriptionInfoRequest:
 
         The model defined in huaweicloud sdk
 
-        :param cluster_id: 集群ID
+        :param cluster_id: **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
         :type cluster_id: str
-        :param namespace: 命名空间
+        :param namespace: **参数解释**： 命名空间。 **约束限制**： 固定值DWS，不填也是DWS。 **取值范围**： DWS **默认取值**： DWS
         :type namespace: str
         :param body: Body of the SaveClusterDescriptionInfoRequest
         :type body: :class:`huaweicloudsdkdws.v2.ClusterDescriptionInfo`
@@ -58,7 +58,7 @@ class SaveClusterDescriptionInfoRequest:
     def cluster_id(self):
         r"""Gets the cluster_id of this SaveClusterDescriptionInfoRequest.
 
-        集群ID
+        **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
 
         :return: The cluster_id of this SaveClusterDescriptionInfoRequest.
         :rtype: str
@@ -69,7 +69,7 @@ class SaveClusterDescriptionInfoRequest:
     def cluster_id(self, cluster_id):
         r"""Sets the cluster_id of this SaveClusterDescriptionInfoRequest.
 
-        集群ID
+        **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
 
         :param cluster_id: The cluster_id of this SaveClusterDescriptionInfoRequest.
         :type cluster_id: str
@@ -80,7 +80,7 @@ class SaveClusterDescriptionInfoRequest:
     def namespace(self):
         r"""Gets the namespace of this SaveClusterDescriptionInfoRequest.
 
-        命名空间
+        **参数解释**： 命名空间。 **约束限制**： 固定值DWS，不填也是DWS。 **取值范围**： DWS **默认取值**： DWS
 
         :return: The namespace of this SaveClusterDescriptionInfoRequest.
         :rtype: str
@@ -91,7 +91,7 @@ class SaveClusterDescriptionInfoRequest:
     def namespace(self, namespace):
         r"""Sets the namespace of this SaveClusterDescriptionInfoRequest.
 
-        命名空间
+        **参数解释**： 命名空间。 **约束限制**： 固定值DWS，不填也是DWS。 **取值范围**： DWS **默认取值**： DWS
 
         :param namespace: The namespace of this SaveClusterDescriptionInfoRequest.
         :type namespace: str

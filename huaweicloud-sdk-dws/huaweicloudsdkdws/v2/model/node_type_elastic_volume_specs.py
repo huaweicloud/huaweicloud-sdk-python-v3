@@ -18,7 +18,7 @@ class NodeTypeElasticVolumeSpecs:
 
     openapi_types = {
         'type': 'str',
-        'step': 'str',
+        'step': 'int',
         'min_size': 'int',
         'max_size': 'int'
     }
@@ -35,13 +35,13 @@ class NodeTypeElasticVolumeSpecs:
 
         The model defined in huaweicloud sdk
 
-        :param type: 云盘存储类型。
+        :param type: **参数解释**： 云盘存储类型。 **取值范围**： 不涉及。
         :type type: str
-        :param step: 云盘容量调整步长。
-        :type step: str
-        :param min_size: 云盘支持的最小容量。
+        :param step: **参数解释**： 云盘容量调整步长。 **取值范围**： 不涉及。
+        :type step: int
+        :param min_size: **参数解释**： 云盘支持的最小容量。 **取值范围**： 不涉及。
         :type min_size: int
-        :param max_size: 云盘支持的最大容量。
+        :param max_size: **参数解释**： 云盘支持的最大容量。 **取值范围**： 不涉及。
         :type max_size: int
         """
         
@@ -62,7 +62,7 @@ class NodeTypeElasticVolumeSpecs:
     def type(self):
         r"""Gets the type of this NodeTypeElasticVolumeSpecs.
 
-        云盘存储类型。
+        **参数解释**： 云盘存储类型。 **取值范围**： 不涉及。
 
         :return: The type of this NodeTypeElasticVolumeSpecs.
         :rtype: str
@@ -73,7 +73,7 @@ class NodeTypeElasticVolumeSpecs:
     def type(self, type):
         r"""Sets the type of this NodeTypeElasticVolumeSpecs.
 
-        云盘存储类型。
+        **参数解释**： 云盘存储类型。 **取值范围**： 不涉及。
 
         :param type: The type of this NodeTypeElasticVolumeSpecs.
         :type type: str
@@ -84,10 +84,10 @@ class NodeTypeElasticVolumeSpecs:
     def step(self):
         r"""Gets the step of this NodeTypeElasticVolumeSpecs.
 
-        云盘容量调整步长。
+        **参数解释**： 云盘容量调整步长。 **取值范围**： 不涉及。
 
         :return: The step of this NodeTypeElasticVolumeSpecs.
-        :rtype: str
+        :rtype: int
         """
         return self._step
 
@@ -95,10 +95,10 @@ class NodeTypeElasticVolumeSpecs:
     def step(self, step):
         r"""Sets the step of this NodeTypeElasticVolumeSpecs.
 
-        云盘容量调整步长。
+        **参数解释**： 云盘容量调整步长。 **取值范围**： 不涉及。
 
         :param step: The step of this NodeTypeElasticVolumeSpecs.
-        :type step: str
+        :type step: int
         """
         self._step = step
 
@@ -106,7 +106,7 @@ class NodeTypeElasticVolumeSpecs:
     def min_size(self):
         r"""Gets the min_size of this NodeTypeElasticVolumeSpecs.
 
-        云盘支持的最小容量。
+        **参数解释**： 云盘支持的最小容量。 **取值范围**： 不涉及。
 
         :return: The min_size of this NodeTypeElasticVolumeSpecs.
         :rtype: int
@@ -117,7 +117,7 @@ class NodeTypeElasticVolumeSpecs:
     def min_size(self, min_size):
         r"""Sets the min_size of this NodeTypeElasticVolumeSpecs.
 
-        云盘支持的最小容量。
+        **参数解释**： 云盘支持的最小容量。 **取值范围**： 不涉及。
 
         :param min_size: The min_size of this NodeTypeElasticVolumeSpecs.
         :type min_size: int
@@ -128,7 +128,7 @@ class NodeTypeElasticVolumeSpecs:
     def max_size(self):
         r"""Gets the max_size of this NodeTypeElasticVolumeSpecs.
 
-        云盘支持的最大容量。
+        **参数解释**： 云盘支持的最大容量。 **取值范围**： 不涉及。
 
         :return: The max_size of this NodeTypeElasticVolumeSpecs.
         :rtype: int
@@ -139,7 +139,7 @@ class NodeTypeElasticVolumeSpecs:
     def max_size(self, max_size):
         r"""Sets the max_size of this NodeTypeElasticVolumeSpecs.
 
-        云盘支持的最大容量。
+        **参数解释**： 云盘支持的最大容量。 **取值范围**： 不涉及。
 
         :param max_size: The max_size of this NodeTypeElasticVolumeSpecs.
         :type max_size: int

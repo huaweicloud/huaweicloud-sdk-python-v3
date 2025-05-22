@@ -67,45 +67,45 @@ class ClusterCheckBody:
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 企业项目ID
+        :param enterprise_project_id: **参数解释**： 企业项目ID，对集群指定企业项目。如果未指定，则使用默认企业项目“default”的ID，即0。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 0
         :type enterprise_project_id: str
-        :param flavor: 集群规格名称
+        :param flavor: **参数解释**： 集群规格名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type flavor: str
-        :param availability_zones: 可用区列表
+        :param availability_zones: **参数解释**： 可用区列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type availability_zones: list[str]
-        :param num_node: 实例节点个数
+        :param num_node: **参数解释**： 实例节点个数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type num_node: int
-        :param security_group_id: 集群安全组ID
+        :param security_group_id: **参数解释**： 安全组ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type security_group_id: str
-        :param datastore_version: 集群版本
+        :param datastore_version: **参数解释**： 集群版本。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type datastore_version: str
-        :param vpc_id: 集群虚拟私有云ID
+        :param vpc_id: **参数解释**： 集群虚拟私有云ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type vpc_id: str
-        :param subnet_id: 集群子网ID
+        :param subnet_id: **参数解释**： 集群子网ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type subnet_id: str
         :param public_ip: 
         :type public_ip: :class:`huaweicloudsdkdws.v2.OpenPublicIp`
-        :param cross_spec_restore: 跨规格恢复
+        :param cross_spec_restore: **参数解释**： 跨规格恢复信息。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： null
         :type cross_spec_restore: str
         :param volume: 
         :type volume: :class:`huaweicloudsdkdws.v2.Volume`
-        :param old_cluster_hostname: 旧主机名
+        :param old_cluster_hostname: **参数解释**： 旧主机名。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： null
         :type old_cluster_hostname: str
         :param restore_point: 
         :type restore_point: :class:`huaweicloudsdkdws.v2.RestorePoint`
-        :param tag_list: 标签列表
+        :param tag_list: **参数解释**： 标签列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： null
         :type tag_list: list[:class:`huaweicloudsdkdws.v2.Tag`]
-        :param dss_pool_id: 存储池ID
+        :param dss_pool_id: **参数解释**： 存储池ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： null
         :type dss_pool_id: str
-        :param db_port: 数据库端口
+        :param db_port: **参数解释**： 数据库端口。 **约束限制**： 不涉及。 **取值范围**： 8000~30000 **默认取值**： 8000
         :type db_port: str
-        :param db_password: 管理员密码
+        :param db_password: **参数解释**： 管理员密码。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type db_password: str
-        :param db_name: 管理员用户
+        :param db_name: **参数解释**： 管理员用户。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： dbadmin
         :type db_name: str
-        :param num_cn: cn节点数量
+        :param num_cn: **参数解释**： cn节点数量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type num_cn: int
-        :param name: 集群名称
+        :param name: **参数解释**： 集群名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type name: str
         """
         
@@ -172,7 +172,7 @@ class ClusterCheckBody:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this ClusterCheckBody.
 
-        企业项目ID
+        **参数解释**： 企业项目ID，对集群指定企业项目。如果未指定，则使用默认企业项目“default”的ID，即0。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 0
 
         :return: The enterprise_project_id of this ClusterCheckBody.
         :rtype: str
@@ -183,7 +183,7 @@ class ClusterCheckBody:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this ClusterCheckBody.
 
-        企业项目ID
+        **参数解释**： 企业项目ID，对集群指定企业项目。如果未指定，则使用默认企业项目“default”的ID，即0。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 0
 
         :param enterprise_project_id: The enterprise_project_id of this ClusterCheckBody.
         :type enterprise_project_id: str
@@ -194,7 +194,7 @@ class ClusterCheckBody:
     def flavor(self):
         r"""Gets the flavor of this ClusterCheckBody.
 
-        集群规格名称
+        **参数解释**： 集群规格名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The flavor of this ClusterCheckBody.
         :rtype: str
@@ -205,7 +205,7 @@ class ClusterCheckBody:
     def flavor(self, flavor):
         r"""Sets the flavor of this ClusterCheckBody.
 
-        集群规格名称
+        **参数解释**： 集群规格名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param flavor: The flavor of this ClusterCheckBody.
         :type flavor: str
@@ -216,7 +216,7 @@ class ClusterCheckBody:
     def availability_zones(self):
         r"""Gets the availability_zones of this ClusterCheckBody.
 
-        可用区列表
+        **参数解释**： 可用区列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The availability_zones of this ClusterCheckBody.
         :rtype: list[str]
@@ -227,7 +227,7 @@ class ClusterCheckBody:
     def availability_zones(self, availability_zones):
         r"""Sets the availability_zones of this ClusterCheckBody.
 
-        可用区列表
+        **参数解释**： 可用区列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param availability_zones: The availability_zones of this ClusterCheckBody.
         :type availability_zones: list[str]
@@ -238,7 +238,7 @@ class ClusterCheckBody:
     def num_node(self):
         r"""Gets the num_node of this ClusterCheckBody.
 
-        实例节点个数
+        **参数解释**： 实例节点个数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The num_node of this ClusterCheckBody.
         :rtype: int
@@ -249,7 +249,7 @@ class ClusterCheckBody:
     def num_node(self, num_node):
         r"""Sets the num_node of this ClusterCheckBody.
 
-        实例节点个数
+        **参数解释**： 实例节点个数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param num_node: The num_node of this ClusterCheckBody.
         :type num_node: int
@@ -260,7 +260,7 @@ class ClusterCheckBody:
     def security_group_id(self):
         r"""Gets the security_group_id of this ClusterCheckBody.
 
-        集群安全组ID
+        **参数解释**： 安全组ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The security_group_id of this ClusterCheckBody.
         :rtype: str
@@ -271,7 +271,7 @@ class ClusterCheckBody:
     def security_group_id(self, security_group_id):
         r"""Sets the security_group_id of this ClusterCheckBody.
 
-        集群安全组ID
+        **参数解释**： 安全组ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param security_group_id: The security_group_id of this ClusterCheckBody.
         :type security_group_id: str
@@ -282,7 +282,7 @@ class ClusterCheckBody:
     def datastore_version(self):
         r"""Gets the datastore_version of this ClusterCheckBody.
 
-        集群版本
+        **参数解释**： 集群版本。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The datastore_version of this ClusterCheckBody.
         :rtype: str
@@ -293,7 +293,7 @@ class ClusterCheckBody:
     def datastore_version(self, datastore_version):
         r"""Sets the datastore_version of this ClusterCheckBody.
 
-        集群版本
+        **参数解释**： 集群版本。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param datastore_version: The datastore_version of this ClusterCheckBody.
         :type datastore_version: str
@@ -304,7 +304,7 @@ class ClusterCheckBody:
     def vpc_id(self):
         r"""Gets the vpc_id of this ClusterCheckBody.
 
-        集群虚拟私有云ID
+        **参数解释**： 集群虚拟私有云ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The vpc_id of this ClusterCheckBody.
         :rtype: str
@@ -315,7 +315,7 @@ class ClusterCheckBody:
     def vpc_id(self, vpc_id):
         r"""Sets the vpc_id of this ClusterCheckBody.
 
-        集群虚拟私有云ID
+        **参数解释**： 集群虚拟私有云ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param vpc_id: The vpc_id of this ClusterCheckBody.
         :type vpc_id: str
@@ -326,7 +326,7 @@ class ClusterCheckBody:
     def subnet_id(self):
         r"""Gets the subnet_id of this ClusterCheckBody.
 
-        集群子网ID
+        **参数解释**： 集群子网ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The subnet_id of this ClusterCheckBody.
         :rtype: str
@@ -337,7 +337,7 @@ class ClusterCheckBody:
     def subnet_id(self, subnet_id):
         r"""Sets the subnet_id of this ClusterCheckBody.
 
-        集群子网ID
+        **参数解释**： 集群子网ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param subnet_id: The subnet_id of this ClusterCheckBody.
         :type subnet_id: str
@@ -366,7 +366,7 @@ class ClusterCheckBody:
     def cross_spec_restore(self):
         r"""Gets the cross_spec_restore of this ClusterCheckBody.
 
-        跨规格恢复
+        **参数解释**： 跨规格恢复信息。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： null
 
         :return: The cross_spec_restore of this ClusterCheckBody.
         :rtype: str
@@ -377,7 +377,7 @@ class ClusterCheckBody:
     def cross_spec_restore(self, cross_spec_restore):
         r"""Sets the cross_spec_restore of this ClusterCheckBody.
 
-        跨规格恢复
+        **参数解释**： 跨规格恢复信息。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： null
 
         :param cross_spec_restore: The cross_spec_restore of this ClusterCheckBody.
         :type cross_spec_restore: str
@@ -406,7 +406,7 @@ class ClusterCheckBody:
     def old_cluster_hostname(self):
         r"""Gets the old_cluster_hostname of this ClusterCheckBody.
 
-        旧主机名
+        **参数解释**： 旧主机名。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： null
 
         :return: The old_cluster_hostname of this ClusterCheckBody.
         :rtype: str
@@ -417,7 +417,7 @@ class ClusterCheckBody:
     def old_cluster_hostname(self, old_cluster_hostname):
         r"""Sets the old_cluster_hostname of this ClusterCheckBody.
 
-        旧主机名
+        **参数解释**： 旧主机名。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： null
 
         :param old_cluster_hostname: The old_cluster_hostname of this ClusterCheckBody.
         :type old_cluster_hostname: str
@@ -446,7 +446,7 @@ class ClusterCheckBody:
     def tag_list(self):
         r"""Gets the tag_list of this ClusterCheckBody.
 
-        标签列表
+        **参数解释**： 标签列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： null
 
         :return: The tag_list of this ClusterCheckBody.
         :rtype: list[:class:`huaweicloudsdkdws.v2.Tag`]
@@ -457,7 +457,7 @@ class ClusterCheckBody:
     def tag_list(self, tag_list):
         r"""Sets the tag_list of this ClusterCheckBody.
 
-        标签列表
+        **参数解释**： 标签列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： null
 
         :param tag_list: The tag_list of this ClusterCheckBody.
         :type tag_list: list[:class:`huaweicloudsdkdws.v2.Tag`]
@@ -468,7 +468,7 @@ class ClusterCheckBody:
     def dss_pool_id(self):
         r"""Gets the dss_pool_id of this ClusterCheckBody.
 
-        存储池ID
+        **参数解释**： 存储池ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： null
 
         :return: The dss_pool_id of this ClusterCheckBody.
         :rtype: str
@@ -479,7 +479,7 @@ class ClusterCheckBody:
     def dss_pool_id(self, dss_pool_id):
         r"""Sets the dss_pool_id of this ClusterCheckBody.
 
-        存储池ID
+        **参数解释**： 存储池ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： null
 
         :param dss_pool_id: The dss_pool_id of this ClusterCheckBody.
         :type dss_pool_id: str
@@ -490,7 +490,7 @@ class ClusterCheckBody:
     def db_port(self):
         r"""Gets the db_port of this ClusterCheckBody.
 
-        数据库端口
+        **参数解释**： 数据库端口。 **约束限制**： 不涉及。 **取值范围**： 8000~30000 **默认取值**： 8000
 
         :return: The db_port of this ClusterCheckBody.
         :rtype: str
@@ -501,7 +501,7 @@ class ClusterCheckBody:
     def db_port(self, db_port):
         r"""Sets the db_port of this ClusterCheckBody.
 
-        数据库端口
+        **参数解释**： 数据库端口。 **约束限制**： 不涉及。 **取值范围**： 8000~30000 **默认取值**： 8000
 
         :param db_port: The db_port of this ClusterCheckBody.
         :type db_port: str
@@ -512,7 +512,7 @@ class ClusterCheckBody:
     def db_password(self):
         r"""Gets the db_password of this ClusterCheckBody.
 
-        管理员密码
+        **参数解释**： 管理员密码。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The db_password of this ClusterCheckBody.
         :rtype: str
@@ -523,7 +523,7 @@ class ClusterCheckBody:
     def db_password(self, db_password):
         r"""Sets the db_password of this ClusterCheckBody.
 
-        管理员密码
+        **参数解释**： 管理员密码。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param db_password: The db_password of this ClusterCheckBody.
         :type db_password: str
@@ -534,7 +534,7 @@ class ClusterCheckBody:
     def db_name(self):
         r"""Gets the db_name of this ClusterCheckBody.
 
-        管理员用户
+        **参数解释**： 管理员用户。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： dbadmin
 
         :return: The db_name of this ClusterCheckBody.
         :rtype: str
@@ -545,7 +545,7 @@ class ClusterCheckBody:
     def db_name(self, db_name):
         r"""Sets the db_name of this ClusterCheckBody.
 
-        管理员用户
+        **参数解释**： 管理员用户。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： dbadmin
 
         :param db_name: The db_name of this ClusterCheckBody.
         :type db_name: str
@@ -556,7 +556,7 @@ class ClusterCheckBody:
     def num_cn(self):
         r"""Gets the num_cn of this ClusterCheckBody.
 
-        cn节点数量
+        **参数解释**： cn节点数量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The num_cn of this ClusterCheckBody.
         :rtype: int
@@ -567,7 +567,7 @@ class ClusterCheckBody:
     def num_cn(self, num_cn):
         r"""Sets the num_cn of this ClusterCheckBody.
 
-        cn节点数量
+        **参数解释**： cn节点数量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param num_cn: The num_cn of this ClusterCheckBody.
         :type num_cn: int
@@ -578,7 +578,7 @@ class ClusterCheckBody:
     def name(self):
         r"""Gets the name of this ClusterCheckBody.
 
-        集群名称
+        **参数解释**： 集群名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The name of this ClusterCheckBody.
         :rtype: str
@@ -589,7 +589,7 @@ class ClusterCheckBody:
     def name(self, name):
         r"""Sets the name of this ClusterCheckBody.
 
-        集群名称
+        **参数解释**： 集群名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param name: The name of this ClusterCheckBody.
         :type name: str

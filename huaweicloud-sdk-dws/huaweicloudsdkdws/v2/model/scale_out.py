@@ -31,9 +31,9 @@ class ScaleOut:
 
         The model defined in huaweicloud sdk
 
-        :param count: 扩容节点数。
+        :param count: **参数解释**： 扩容节点数。 **取值范围**： 大于等于3。
         :type count: int
-        :param subnet_id: 指定子网ID。
+        :param subnet_id: **参数解释**： 子网ID。 **取值范围**： 同VPC下有效的子网ID。
         :type subnet_id: str
         """
         
@@ -51,7 +51,7 @@ class ScaleOut:
     def count(self):
         r"""Gets the count of this ScaleOut.
 
-        扩容节点数。
+        **参数解释**： 扩容节点数。 **取值范围**： 大于等于3。
 
         :return: The count of this ScaleOut.
         :rtype: int
@@ -62,7 +62,7 @@ class ScaleOut:
     def count(self, count):
         r"""Sets the count of this ScaleOut.
 
-        扩容节点数。
+        **参数解释**： 扩容节点数。 **取值范围**： 大于等于3。
 
         :param count: The count of this ScaleOut.
         :type count: int
@@ -73,7 +73,7 @@ class ScaleOut:
     def subnet_id(self):
         r"""Gets the subnet_id of this ScaleOut.
 
-        指定子网ID。
+        **参数解释**： 子网ID。 **取值范围**： 同VPC下有效的子网ID。
 
         :return: The subnet_id of this ScaleOut.
         :rtype: str
@@ -84,7 +84,7 @@ class ScaleOut:
     def subnet_id(self, subnet_id):
         r"""Sets the subnet_id of this ScaleOut.
 
-        指定子网ID。
+        **参数解释**： 子网ID。 **取值范围**： 同VPC下有效的子网ID。
 
         :param subnet_id: The subnet_id of this ScaleOut.
         :type subnet_id: str

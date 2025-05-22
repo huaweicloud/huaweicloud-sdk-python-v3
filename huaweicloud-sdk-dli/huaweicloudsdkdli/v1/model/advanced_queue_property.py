@@ -20,17 +20,21 @@ class AdvancedQueueProperty:
         'compute_engine_max_instance': 'int',
         'job_max_concurrent': 'int',
         'compute_engine_max_prefetch_instance': 'int',
-        'network_cidr_in_vpc': 'str'
+        'compute_engine_spark_native_enabled': 'str',
+        'network_cidr_in_vpc': 'str',
+        'job_save_job_result_to_job_bucket': 'str'
     }
 
     attribute_map = {
         'compute_engine_max_instance': 'computeEngine.maxInstance',
         'job_max_concurrent': 'job.maxConcurrent',
         'compute_engine_max_prefetch_instance': 'computeEngine.maxPrefetchInstance',
-        'network_cidr_in_vpc': 'network.cidrInVpc'
+        'compute_engine_spark_native_enabled': 'computeEngine.spark.nativeEnabled',
+        'network_cidr_in_vpc': 'network.cidrInVpc',
+        'job_save_job_result_to_job_bucket': 'job.saveJobResultToJobBucket'
     }
 
-    def __init__(self, compute_engine_max_instance=None, job_max_concurrent=None, compute_engine_max_prefetch_instance=None, network_cidr_in_vpc=None):
+    def __init__(self, compute_engine_max_instance=None, job_max_concurrent=None, compute_engine_max_prefetch_instance=None, compute_engine_spark_native_enabled=None, network_cidr_in_vpc=None, job_save_job_result_to_job_bucket=None):
         r"""AdvancedQueueProperty
 
         The model defined in huaweicloud sdk
@@ -41,8 +45,12 @@ class AdvancedQueueProperty:
         :type job_max_concurrent: int
         :param compute_engine_max_prefetch_instance: 队列预先启动的最大spark driver数量
         :type compute_engine_max_prefetch_instance: int
+        :param compute_engine_spark_native_enabled: 是否使用DLI Native。当前只涉及开启两种算子：Scan 和 Filter。修改现有队列的本属性，需要重启队列才会生效。
+        :type compute_engine_spark_native_enabled: str
         :param network_cidr_in_vpc: 设置队列网段
         :type network_cidr_in_vpc: str
+        :param job_save_job_result_to_job_bucket: 是否使用作业桶保存SQL查询结果
+        :type job_save_job_result_to_job_bucket: str
         """
         
         
@@ -50,7 +58,9 @@ class AdvancedQueueProperty:
         self._compute_engine_max_instance = None
         self._job_max_concurrent = None
         self._compute_engine_max_prefetch_instance = None
+        self._compute_engine_spark_native_enabled = None
         self._network_cidr_in_vpc = None
+        self._job_save_job_result_to_job_bucket = None
         self.discriminator = None
 
         if compute_engine_max_instance is not None:
@@ -59,8 +69,12 @@ class AdvancedQueueProperty:
             self.job_max_concurrent = job_max_concurrent
         if compute_engine_max_prefetch_instance is not None:
             self.compute_engine_max_prefetch_instance = compute_engine_max_prefetch_instance
+        if compute_engine_spark_native_enabled is not None:
+            self.compute_engine_spark_native_enabled = compute_engine_spark_native_enabled
         if network_cidr_in_vpc is not None:
             self.network_cidr_in_vpc = network_cidr_in_vpc
+        if job_save_job_result_to_job_bucket is not None:
+            self.job_save_job_result_to_job_bucket = job_save_job_result_to_job_bucket
 
     @property
     def compute_engine_max_instance(self):
@@ -129,6 +143,28 @@ class AdvancedQueueProperty:
         self._compute_engine_max_prefetch_instance = compute_engine_max_prefetch_instance
 
     @property
+    def compute_engine_spark_native_enabled(self):
+        r"""Gets the compute_engine_spark_native_enabled of this AdvancedQueueProperty.
+
+        是否使用DLI Native。当前只涉及开启两种算子：Scan 和 Filter。修改现有队列的本属性，需要重启队列才会生效。
+
+        :return: The compute_engine_spark_native_enabled of this AdvancedQueueProperty.
+        :rtype: str
+        """
+        return self._compute_engine_spark_native_enabled
+
+    @compute_engine_spark_native_enabled.setter
+    def compute_engine_spark_native_enabled(self, compute_engine_spark_native_enabled):
+        r"""Sets the compute_engine_spark_native_enabled of this AdvancedQueueProperty.
+
+        是否使用DLI Native。当前只涉及开启两种算子：Scan 和 Filter。修改现有队列的本属性，需要重启队列才会生效。
+
+        :param compute_engine_spark_native_enabled: The compute_engine_spark_native_enabled of this AdvancedQueueProperty.
+        :type compute_engine_spark_native_enabled: str
+        """
+        self._compute_engine_spark_native_enabled = compute_engine_spark_native_enabled
+
+    @property
     def network_cidr_in_vpc(self):
         r"""Gets the network_cidr_in_vpc of this AdvancedQueueProperty.
 
@@ -149,6 +185,28 @@ class AdvancedQueueProperty:
         :type network_cidr_in_vpc: str
         """
         self._network_cidr_in_vpc = network_cidr_in_vpc
+
+    @property
+    def job_save_job_result_to_job_bucket(self):
+        r"""Gets the job_save_job_result_to_job_bucket of this AdvancedQueueProperty.
+
+        是否使用作业桶保存SQL查询结果
+
+        :return: The job_save_job_result_to_job_bucket of this AdvancedQueueProperty.
+        :rtype: str
+        """
+        return self._job_save_job_result_to_job_bucket
+
+    @job_save_job_result_to_job_bucket.setter
+    def job_save_job_result_to_job_bucket(self, job_save_job_result_to_job_bucket):
+        r"""Sets the job_save_job_result_to_job_bucket of this AdvancedQueueProperty.
+
+        是否使用作业桶保存SQL查询结果
+
+        :param job_save_job_result_to_job_bucket: The job_save_job_result_to_job_bucket of this AdvancedQueueProperty.
+        :type job_save_job_result_to_job_bucket: str
+        """
+        self._job_save_job_result_to_job_bucket = job_save_job_result_to_job_bucket
 
     def to_dict(self):
         """Returns the model properties as a dict"""

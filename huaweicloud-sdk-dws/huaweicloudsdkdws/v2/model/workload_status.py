@@ -31,9 +31,9 @@ class WorkloadStatus:
 
         The model defined in huaweicloud sdk
 
-        :param workload_switch: 开关。
+        :param workload_switch: **参数解释**： 开关。 **约束限制**： 不涉及。 **取值范围**： on：开启 off：关闭 **默认取值**： 不涉及。
         :type workload_switch: str
-        :param max_concurrency_num: 最大并发数。
+        :param max_concurrency_num: **参数解释**： 最大并发数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type max_concurrency_num: str
         """
         
@@ -51,7 +51,7 @@ class WorkloadStatus:
     def workload_switch(self):
         r"""Gets the workload_switch of this WorkloadStatus.
 
-        开关。
+        **参数解释**： 开关。 **约束限制**： 不涉及。 **取值范围**： on：开启 off：关闭 **默认取值**： 不涉及。
 
         :return: The workload_switch of this WorkloadStatus.
         :rtype: str
@@ -62,7 +62,7 @@ class WorkloadStatus:
     def workload_switch(self, workload_switch):
         r"""Sets the workload_switch of this WorkloadStatus.
 
-        开关。
+        **参数解释**： 开关。 **约束限制**： 不涉及。 **取值范围**： on：开启 off：关闭 **默认取值**： 不涉及。
 
         :param workload_switch: The workload_switch of this WorkloadStatus.
         :type workload_switch: str
@@ -73,7 +73,7 @@ class WorkloadStatus:
     def max_concurrency_num(self):
         r"""Gets the max_concurrency_num of this WorkloadStatus.
 
-        最大并发数。
+        **参数解释**： 最大并发数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The max_concurrency_num of this WorkloadStatus.
         :rtype: str
@@ -84,7 +84,7 @@ class WorkloadStatus:
     def max_concurrency_num(self, max_concurrency_num):
         r"""Sets the max_concurrency_num of this WorkloadStatus.
 
-        最大并发数。
+        **参数解释**： 最大并发数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param max_concurrency_num: The max_concurrency_num of this WorkloadStatus.
         :type max_concurrency_num: str

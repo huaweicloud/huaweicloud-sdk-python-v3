@@ -77,7 +77,7 @@ class UpdateHostRequestBody:
         :type cipher: str
         :param http2_enable: 是否支持http2   - true：表示支持http2   - false：表示不支持http2
         :type http2_enable: bool
-        :param ipv6_enable: 是否开启IPv6防护，仅专业版（原企业版）和铂金版（原旗舰版）支持IPv6防护。   - true：开启IPv6防护   - false：关闭IPV6防护
+        :param ipv6_enable: 是否开启IPv6防护，仅专业版和企业版支持IPv6防护。   - true：开启IPv6防护   - false：关闭IPV6防护
         :type ipv6_enable: bool
         :param web_tag: 网站名称，对应WAF控制台域名详情中的网站名称
         :type web_tag: str
@@ -318,7 +318,7 @@ class UpdateHostRequestBody:
     def ipv6_enable(self):
         r"""Gets the ipv6_enable of this UpdateHostRequestBody.
 
-        是否开启IPv6防护，仅专业版（原企业版）和铂金版（原旗舰版）支持IPv6防护。   - true：开启IPv6防护   - false：关闭IPV6防护
+        是否开启IPv6防护，仅专业版和企业版支持IPv6防护。   - true：开启IPv6防护   - false：关闭IPV6防护
 
         :return: The ipv6_enable of this UpdateHostRequestBody.
         :rtype: bool
@@ -329,7 +329,7 @@ class UpdateHostRequestBody:
     def ipv6_enable(self, ipv6_enable):
         r"""Sets the ipv6_enable of this UpdateHostRequestBody.
 
-        是否开启IPv6防护，仅专业版（原企业版）和铂金版（原旗舰版）支持IPv6防护。   - true：开启IPv6防护   - false：关闭IPV6防护
+        是否开启IPv6防护，仅专业版和企业版支持IPv6防护。   - true：开启IPv6防护   - false：关闭IPV6防护
 
         :param ipv6_enable: The ipv6_enable of this UpdateHostRequestBody.
         :type ipv6_enable: bool

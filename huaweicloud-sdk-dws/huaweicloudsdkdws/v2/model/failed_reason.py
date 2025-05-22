@@ -31,9 +31,9 @@ class FailedReason:
 
         The model defined in huaweicloud sdk
 
-        :param error_code: 错误码。
+        :param error_code: **参数解释**： 错误码。 **取值范围**： 不涉及。
         :type error_code: str
-        :param error_msg: 错误信息。
+        :param error_msg: **参数解释**： 错误信息。 **取值范围**： 不涉及。
         :type error_msg: str
         """
         
@@ -52,7 +52,7 @@ class FailedReason:
     def error_code(self):
         r"""Gets the error_code of this FailedReason.
 
-        错误码。
+        **参数解释**： 错误码。 **取值范围**： 不涉及。
 
         :return: The error_code of this FailedReason.
         :rtype: str
@@ -63,7 +63,7 @@ class FailedReason:
     def error_code(self, error_code):
         r"""Sets the error_code of this FailedReason.
 
-        错误码。
+        **参数解释**： 错误码。 **取值范围**： 不涉及。
 
         :param error_code: The error_code of this FailedReason.
         :type error_code: str
@@ -74,7 +74,7 @@ class FailedReason:
     def error_msg(self):
         r"""Gets the error_msg of this FailedReason.
 
-        错误信息。
+        **参数解释**： 错误信息。 **取值范围**： 不涉及。
 
         :return: The error_msg of this FailedReason.
         :rtype: str
@@ -85,7 +85,7 @@ class FailedReason:
     def error_msg(self, error_msg):
         r"""Sets the error_msg of this FailedReason.
 
-        错误信息。
+        **参数解释**： 错误信息。 **取值范围**： 不涉及。
 
         :param error_msg: The error_msg of this FailedReason.
         :type error_msg: str

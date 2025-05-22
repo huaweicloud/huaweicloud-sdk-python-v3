@@ -18,6 +18,7 @@ class MemberInfo:
 
     openapi_types = {
         'id': 'str',
+        'availability_zone': 'str',
         'name': 'str',
         'project_id': 'str',
         'pool_id': 'str',
@@ -42,6 +43,7 @@ class MemberInfo:
 
     attribute_map = {
         'id': 'id',
+        'availability_zone': 'availability_zone',
         'name': 'name',
         'project_id': 'project_id',
         'pool_id': 'pool_id',
@@ -64,13 +66,15 @@ class MemberInfo:
         'reason': 'reason'
     }
 
-    def __init__(self, id=None, name=None, project_id=None, pool_id=None, admin_state_up=None, subnet_cidr_id=None, protocol_port=None, weight=None, address=None, ip_version=None, device_owner=None, device_id=None, operating_status=None, status=None, loadbalancer_id=None, loadbalancers=None, created_at=None, updated_at=None, member_type=None, instance_id=None, reason=None):
+    def __init__(self, id=None, availability_zone=None, name=None, project_id=None, pool_id=None, admin_state_up=None, subnet_cidr_id=None, protocol_port=None, weight=None, address=None, ip_version=None, device_owner=None, device_id=None, operating_status=None, status=None, loadbalancer_id=None, loadbalancers=None, created_at=None, updated_at=None, member_type=None, instance_id=None, reason=None):
         r"""MemberInfo
 
         The model defined in huaweicloud sdk
 
         :param id: 后端服务器ID。 &gt; 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
         :type id: str
+        :param availability_zone: 后端服务器所在的可用区。
+        :type availability_zone: str
         :param name: 后端服务器名称。注意：该名称并非ECS名称。
         :type name: str
         :param project_id: 后端服务器所在的项目ID。
@@ -116,6 +120,7 @@ class MemberInfo:
         
 
         self._id = None
+        self._availability_zone = None
         self._name = None
         self._project_id = None
         self._pool_id = None
@@ -139,6 +144,7 @@ class MemberInfo:
         self.discriminator = None
 
         self.id = id
+        self.availability_zone = availability_zone
         self.name = name
         self.project_id = project_id
         if pool_id is not None:
@@ -192,6 +198,28 @@ class MemberInfo:
         :type id: str
         """
         self._id = id
+
+    @property
+    def availability_zone(self):
+        r"""Gets the availability_zone of this MemberInfo.
+
+        后端服务器所在的可用区。
+
+        :return: The availability_zone of this MemberInfo.
+        :rtype: str
+        """
+        return self._availability_zone
+
+    @availability_zone.setter
+    def availability_zone(self, availability_zone):
+        r"""Sets the availability_zone of this MemberInfo.
+
+        后端服务器所在的可用区。
+
+        :param availability_zone: The availability_zone of this MemberInfo.
+        :type availability_zone: str
+        """
+        self._availability_zone = availability_zone
 
     @property
     def name(self):

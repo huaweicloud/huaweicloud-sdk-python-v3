@@ -21,7 +21,7 @@ class ShowFlowGraphResponse(SdkResponse):
         'success': 'bool',
         'message': 'str',
         'err_code': 'str',
-        'result': 'FlowGraphResult'
+        'result': 'FlowGraph2Result'
     }
 
     attribute_map = {
@@ -43,7 +43,7 @@ class ShowFlowGraphResponse(SdkResponse):
         :param err_code: 错误码
         :type err_code: str
         :param result: 
-        :type result: :class:`huaweicloudsdkcodeartsbuild.v3.FlowGraphResult`
+        :type result: :class:`huaweicloudsdkcodeartsbuild.v3.FlowGraph2Result`
         """
         
         super(ShowFlowGraphResponse, self).__init__()
@@ -134,7 +134,7 @@ class ShowFlowGraphResponse(SdkResponse):
         r"""Gets the result of this ShowFlowGraphResponse.
 
         :return: The result of this ShowFlowGraphResponse.
-        :rtype: :class:`huaweicloudsdkcodeartsbuild.v3.FlowGraphResult`
+        :rtype: :class:`huaweicloudsdkcodeartsbuild.v3.FlowGraph2Result`
         """
         return self._result
 
@@ -143,7 +143,7 @@ class ShowFlowGraphResponse(SdkResponse):
         r"""Sets the result of this ShowFlowGraphResponse.
 
         :param result: The result of this ShowFlowGraphResponse.
-        :type result: :class:`huaweicloudsdkcodeartsbuild.v3.FlowGraphResult`
+        :type result: :class:`huaweicloudsdkcodeartsbuild.v3.FlowGraph2Result`
         """
         self._result = result
 

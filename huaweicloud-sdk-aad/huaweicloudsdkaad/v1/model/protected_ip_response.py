@@ -71,9 +71,9 @@ class ProtectedIpResponse:
         :type policy_name: str
         :param region: 所属region
         :type region: str
-        :param package_id: 防护包id
+        :param package_id: 实例id
         :type package_id: str
-        :param package_name: 防护包名
+        :param package_name: 实例名
         :type package_name: str
         :param tags: TMS标签
         :type tags: str
@@ -298,7 +298,7 @@ class ProtectedIpResponse:
     def package_id(self):
         r"""Gets the package_id of this ProtectedIpResponse.
 
-        防护包id
+        实例id
 
         :return: The package_id of this ProtectedIpResponse.
         :rtype: str
@@ -309,7 +309,7 @@ class ProtectedIpResponse:
     def package_id(self, package_id):
         r"""Sets the package_id of this ProtectedIpResponse.
 
-        防护包id
+        实例id
 
         :param package_id: The package_id of this ProtectedIpResponse.
         :type package_id: str
@@ -320,7 +320,7 @@ class ProtectedIpResponse:
     def package_name(self):
         r"""Gets the package_name of this ProtectedIpResponse.
 
-        防护包名
+        实例名
 
         :return: The package_name of this ProtectedIpResponse.
         :rtype: str
@@ -331,7 +331,7 @@ class ProtectedIpResponse:
     def package_name(self, package_name):
         r"""Sets the package_name of this ProtectedIpResponse.
 
-        防护包名
+        实例名
 
         :param package_name: The package_name of this ProtectedIpResponse.
         :type package_name: str

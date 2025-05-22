@@ -18,6 +18,7 @@ class PrepaidChangeChargeModeOption:
 
     openapi_types = {
         'include_publicip': 'bool',
+        'publicip_ids': 'list[str]',
         'period_type': 'str',
         'period_num': 'int',
         'auto_renew': 'bool',
@@ -26,19 +27,22 @@ class PrepaidChangeChargeModeOption:
 
     attribute_map = {
         'include_publicip': 'include_publicip',
+        'publicip_ids': 'publicip_ids',
         'period_type': 'period_type',
         'period_num': 'period_num',
         'auto_renew': 'auto_renew',
         'auto_pay': 'auto_pay'
     }
 
-    def __init__(self, include_publicip=None, period_type=None, period_num=None, auto_renew=None, auto_pay=None):
+    def __init__(self, include_publicip=None, publicip_ids=None, period_type=None, period_num=None, auto_renew=None, auto_pay=None):
         r"""PrepaidChangeChargeModeOption
 
         The model defined in huaweicloud sdk
 
         :param include_publicip: 是否连同独享按带宽计费的弹性公网IP一起转包周期。 1. 弹性公网IP转包周期之后可以单独解绑，绑定到其他实例，删除 2. 只有独享且按带宽计费的弹性公网IP才被允许转包周期 默认值：false
         :type include_publicip: bool
+        :param publicip_ids: 需要一起按需转包的弹性公网IP的ID。 若include_publicip为false，不能指定该字段。 若include_publicip为true，该字段为未指定时，表示所有绑定的v4 eip都需要一起转包周期。 若include_publicip为true，该字段列表非空，表示只将指定的v4 eip转包。 若include_publicip为true，该字段列表为空，表示不指定任一eip转包，与include_publicip为false等效。
+        :type publicip_ids: list[str]
         :param period_type: 订购周期类型，当前支持包月和包年： month：月（默认）； year：年；
         :type period_type: str
         :param period_num: 订购周期数（默认1），取值会随运营策略变化。 period_type为month时，为[1,9]， period_type为year时，为[1,3]
@@ -52,6 +56,7 @@ class PrepaidChangeChargeModeOption:
         
 
         self._include_publicip = None
+        self._publicip_ids = None
         self._period_type = None
         self._period_num = None
         self._auto_renew = None
@@ -60,6 +65,8 @@ class PrepaidChangeChargeModeOption:
 
         if include_publicip is not None:
             self.include_publicip = include_publicip
+        if publicip_ids is not None:
+            self.publicip_ids = publicip_ids
         self.period_type = period_type
         if period_num is not None:
             self.period_num = period_num
@@ -89,6 +96,28 @@ class PrepaidChangeChargeModeOption:
         :type include_publicip: bool
         """
         self._include_publicip = include_publicip
+
+    @property
+    def publicip_ids(self):
+        r"""Gets the publicip_ids of this PrepaidChangeChargeModeOption.
+
+        需要一起按需转包的弹性公网IP的ID。 若include_publicip为false，不能指定该字段。 若include_publicip为true，该字段为未指定时，表示所有绑定的v4 eip都需要一起转包周期。 若include_publicip为true，该字段列表非空，表示只将指定的v4 eip转包。 若include_publicip为true，该字段列表为空，表示不指定任一eip转包，与include_publicip为false等效。
+
+        :return: The publicip_ids of this PrepaidChangeChargeModeOption.
+        :rtype: list[str]
+        """
+        return self._publicip_ids
+
+    @publicip_ids.setter
+    def publicip_ids(self, publicip_ids):
+        r"""Sets the publicip_ids of this PrepaidChangeChargeModeOption.
+
+        需要一起按需转包的弹性公网IP的ID。 若include_publicip为false，不能指定该字段。 若include_publicip为true，该字段为未指定时，表示所有绑定的v4 eip都需要一起转包周期。 若include_publicip为true，该字段列表非空，表示只将指定的v4 eip转包。 若include_publicip为true，该字段列表为空，表示不指定任一eip转包，与include_publicip为false等效。
+
+        :param publicip_ids: The publicip_ids of this PrepaidChangeChargeModeOption.
+        :type publicip_ids: list[str]
+        """
+        self._publicip_ids = publicip_ids
 
     @property
     def period_type(self):

@@ -32,9 +32,9 @@ class ListTopoRingsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param cluster_rings: 集群拓扑环列表信息
+        :param cluster_rings: **参数解释**： 集群拓扑环列表信息。 **取值范围**： 不涉及。
         :type cluster_rings: list[:class:`huaweicloudsdkdws.v2.TopoRingInfo`]
-        :param count: 集群环数量
+        :param count: **参数解释**： 集群环数量。 **取值范围**： 不涉及。
         :type count: int
         """
         
@@ -53,7 +53,7 @@ class ListTopoRingsResponse(SdkResponse):
     def cluster_rings(self):
         r"""Gets the cluster_rings of this ListTopoRingsResponse.
 
-        集群拓扑环列表信息
+        **参数解释**： 集群拓扑环列表信息。 **取值范围**： 不涉及。
 
         :return: The cluster_rings of this ListTopoRingsResponse.
         :rtype: list[:class:`huaweicloudsdkdws.v2.TopoRingInfo`]
@@ -64,7 +64,7 @@ class ListTopoRingsResponse(SdkResponse):
     def cluster_rings(self, cluster_rings):
         r"""Sets the cluster_rings of this ListTopoRingsResponse.
 
-        集群拓扑环列表信息
+        **参数解释**： 集群拓扑环列表信息。 **取值范围**： 不涉及。
 
         :param cluster_rings: The cluster_rings of this ListTopoRingsResponse.
         :type cluster_rings: list[:class:`huaweicloudsdkdws.v2.TopoRingInfo`]
@@ -75,7 +75,7 @@ class ListTopoRingsResponse(SdkResponse):
     def count(self):
         r"""Gets the count of this ListTopoRingsResponse.
 
-        集群环数量
+        **参数解释**： 集群环数量。 **取值范围**： 不涉及。
 
         :return: The count of this ListTopoRingsResponse.
         :rtype: int
@@ -86,7 +86,7 @@ class ListTopoRingsResponse(SdkResponse):
     def count(self, count):
         r"""Sets the count of this ListTopoRingsResponse.
 
-        集群环数量
+        **参数解释**： 集群环数量。 **取值范围**： 不涉及。
 
         :param count: The count of this ListTopoRingsResponse.
         :type count: int

@@ -18,7 +18,7 @@ class BatchDeleteResourcesRequest:
 
     openapi_types = {
         'group_id': 'str',
-        'body': 'ResourcesReq'
+        'body': 'DelResourcesReq'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class BatchDeleteResourcesRequest:
         :param group_id: 资源分组ID，以rg开头，后跟22位由字母或数字组成的字符串
         :type group_id: str
         :param body: Body of the BatchDeleteResourcesRequest
-        :type body: :class:`huaweicloudsdkces.v2.ResourcesReq`
+        :type body: :class:`huaweicloudsdkces.v2.DelResourcesReq`
         """
         
         
@@ -74,7 +74,7 @@ class BatchDeleteResourcesRequest:
         r"""Gets the body of this BatchDeleteResourcesRequest.
 
         :return: The body of this BatchDeleteResourcesRequest.
-        :rtype: :class:`huaweicloudsdkces.v2.ResourcesReq`
+        :rtype: :class:`huaweicloudsdkces.v2.DelResourcesReq`
         """
         return self._body
 
@@ -83,7 +83,7 @@ class BatchDeleteResourcesRequest:
         r"""Sets the body of this BatchDeleteResourcesRequest.
 
         :param body: The body of this BatchDeleteResourcesRequest.
-        :type body: :class:`huaweicloudsdkces.v2.ResourcesReq`
+        :type body: :class:`huaweicloudsdkces.v2.DelResourcesReq`
         """
         self._body = body
 

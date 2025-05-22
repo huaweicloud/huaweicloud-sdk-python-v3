@@ -92,17 +92,69 @@ class Credentials(DerivedCredentials, TempCredentials, FederalCredentials):
 
     def __init__(self, ak=None, sk=None):
         super(Credentials, self).__init__()
-        self.ak = ak
-        self.sk = sk
-        self.idp_id = None
-        self.id_token_file = None
-        self.iam_endpoint = None
-        self.security_token = None
+        self._ak = ak
+        self._sk = sk
+        self._idp_id = None
+        self._id_token_file = None
+        self._iam_endpoint = None
+        self._security_token = None
         self._derived_auth_service_name = None
         self._derived_predicate = None
         self._expired_at = None
         self._auth_token = None
         self._region_id = None
+
+    @property
+    def ak(self):
+        return self._ak
+
+    @ak.setter
+    def ak(self, value):
+        if not value:
+            raise ValueError("ak cannot be None or empty")
+        self._ak = value
+
+    @property
+    def sk(self):
+        return self._sk
+
+    @sk.setter
+    def sk(self, value):
+        if not value:
+            raise ValueError("sk cannot be None or empty")
+        self._sk = value
+
+    @property
+    def idp_id(self):
+        return self._idp_id
+
+    @idp_id.setter
+    def idp_id(self, value):
+        self._idp_id = value
+
+    @property
+    def id_token_file(self):
+        return self._id_token_file
+
+    @id_token_file.setter
+    def id_token_file(self, value):
+        self._id_token_file = value
+
+    @property
+    def iam_endpoint(self):
+        return self._iam_endpoint
+
+    @iam_endpoint.setter
+    def iam_endpoint(self, value):
+        self._iam_endpoint = value
+
+    @property
+    def security_token(self):
+        return self._security_token
+
+    @security_token.setter
+    def security_token(self, value):
+        self._security_token = value
 
     def with_ak(self, ak):
         self.ak = ak
@@ -224,7 +276,15 @@ class BasicCredentials(Credentials):
         :param project_id: The ID of your project depending on your region which you want to operate
         """
         super(BasicCredentials, self).__init__(ak, sk)
-        self.project_id = project_id
+        self._project_id = project_id
+
+    @property
+    def project_id(self):
+        return self._project_id
+
+    @project_id.setter
+    def project_id(self, value):
+        self._project_id = value
 
     def with_project_id(self, project_id):
         self.project_id = project_id
@@ -320,7 +380,15 @@ class GlobalCredentials(Credentials):
         :param domain_id: The account ID of Huawei Cloud
         """
         super(GlobalCredentials, self).__init__(ak, sk)
-        self.domain_id = domain_id
+        self._domain_id = domain_id
+
+    @property
+    def domain_id(self):
+        return self._domain_id
+
+    @domain_id.setter
+    def domain_id(self, value):
+        self._domain_id = value
 
     def with_domain_id(self, domain_id):
         self.domain_id = domain_id

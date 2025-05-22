@@ -35,13 +35,13 @@ class ListWorkloadPlansRequest:
 
         The model defined in huaweicloud sdk
 
-        :param cluster_id: 集群ID
+        :param cluster_id: **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
         :type cluster_id: str
-        :param logical_cluster_name: 逻辑集群名称
+        :param logical_cluster_name: **参数解释**： 逻辑集群名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type logical_cluster_name: str
-        :param limit: 查询条数
+        :param limit: **参数解释**： 分页单页大小。 **约束限制**： 不涉及。 **取值范围**： 大于0。 **默认取值**： 10
         :type limit: int
-        :param offset: 偏移量
+        :param offset: **参数解释**： 分页查询，偏移量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 0
         :type offset: int
         """
         
@@ -65,7 +65,7 @@ class ListWorkloadPlansRequest:
     def cluster_id(self):
         r"""Gets the cluster_id of this ListWorkloadPlansRequest.
 
-        集群ID
+        **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
 
         :return: The cluster_id of this ListWorkloadPlansRequest.
         :rtype: str
@@ -76,7 +76,7 @@ class ListWorkloadPlansRequest:
     def cluster_id(self, cluster_id):
         r"""Sets the cluster_id of this ListWorkloadPlansRequest.
 
-        集群ID
+        **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
 
         :param cluster_id: The cluster_id of this ListWorkloadPlansRequest.
         :type cluster_id: str
@@ -87,7 +87,7 @@ class ListWorkloadPlansRequest:
     def logical_cluster_name(self):
         r"""Gets the logical_cluster_name of this ListWorkloadPlansRequest.
 
-        逻辑集群名称
+        **参数解释**： 逻辑集群名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The logical_cluster_name of this ListWorkloadPlansRequest.
         :rtype: str
@@ -98,7 +98,7 @@ class ListWorkloadPlansRequest:
     def logical_cluster_name(self, logical_cluster_name):
         r"""Sets the logical_cluster_name of this ListWorkloadPlansRequest.
 
-        逻辑集群名称
+        **参数解释**： 逻辑集群名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param logical_cluster_name: The logical_cluster_name of this ListWorkloadPlansRequest.
         :type logical_cluster_name: str
@@ -109,7 +109,7 @@ class ListWorkloadPlansRequest:
     def limit(self):
         r"""Gets the limit of this ListWorkloadPlansRequest.
 
-        查询条数
+        **参数解释**： 分页单页大小。 **约束限制**： 不涉及。 **取值范围**： 大于0。 **默认取值**： 10
 
         :return: The limit of this ListWorkloadPlansRequest.
         :rtype: int
@@ -120,7 +120,7 @@ class ListWorkloadPlansRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListWorkloadPlansRequest.
 
-        查询条数
+        **参数解释**： 分页单页大小。 **约束限制**： 不涉及。 **取值范围**： 大于0。 **默认取值**： 10
 
         :param limit: The limit of this ListWorkloadPlansRequest.
         :type limit: int
@@ -131,7 +131,7 @@ class ListWorkloadPlansRequest:
     def offset(self):
         r"""Gets the offset of this ListWorkloadPlansRequest.
 
-        偏移量
+        **参数解释**： 分页查询，偏移量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 0
 
         :return: The offset of this ListWorkloadPlansRequest.
         :rtype: int
@@ -142,7 +142,7 @@ class ListWorkloadPlansRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListWorkloadPlansRequest.
 
-        偏移量
+        **参数解释**： 分页查询，偏移量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 0
 
         :param offset: The offset of this ListWorkloadPlansRequest.
         :type offset: int

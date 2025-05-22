@@ -32,10 +32,13 @@ class UpdateSmartChatRoomResponse(SdkResponse):
         'review_config': 'ReviewConfig',
         'chat_subtitle_config': 'ChatSubtitleConfig',
         'chat_video_type': 'str',
+        'exit_mute_threshold': 'int',
         'room_id': 'str',
         'create_time': 'str',
         'update_time': 'str',
         'cover_url': 'str',
+        'is_pool_mode': 'bool',
+        'chat_resource_config': 'list[ChatResourceConfigInfo]',
         'x_request_id': 'str'
     }
 
@@ -54,14 +57,17 @@ class UpdateSmartChatRoomResponse(SdkResponse):
         'review_config': 'review_config',
         'chat_subtitle_config': 'chat_subtitle_config',
         'chat_video_type': 'chat_video_type',
+        'exit_mute_threshold': 'exit_mute_threshold',
         'room_id': 'room_id',
         'create_time': 'create_time',
         'update_time': 'update_time',
         'cover_url': 'cover_url',
+        'is_pool_mode': 'is_pool_mode',
+        'chat_resource_config': 'chat_resource_config',
         'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, room_name=None, room_description=None, video_config=None, model_asset_id=None, voice_config=None, voice_config_list=None, robot_id=None, concurrency=None, default_language=None, background_config=None, layer_config=None, review_config=None, chat_subtitle_config=None, chat_video_type=None, room_id=None, create_time=None, update_time=None, cover_url=None, x_request_id=None):
+    def __init__(self, room_name=None, room_description=None, video_config=None, model_asset_id=None, voice_config=None, voice_config_list=None, robot_id=None, concurrency=None, default_language=None, background_config=None, layer_config=None, review_config=None, chat_subtitle_config=None, chat_video_type=None, exit_mute_threshold=None, room_id=None, create_time=None, update_time=None, cover_url=None, is_pool_mode=None, chat_resource_config=None, x_request_id=None):
         r"""UpdateSmartChatRoomResponse
 
         The model defined in huaweicloud sdk
@@ -82,7 +88,7 @@ class UpdateSmartChatRoomResponse(SdkResponse):
         :type robot_id: str
         :param concurrency: **参数解释**： 并发路数。
         :type concurrency: int
-        :param default_language: 默认语言，智能交互接口使用。默认值CN。 * CN：简体中文。 * EN：英语。
+        :param default_language: 默认语言，智能交互接口使用。默认值CN。 * CN：简体中文。 * EN：英语。 * ESP：西班牙语（仅海外站点支持） * por：葡萄牙语（仅海外站点支持） * Arabic：阿拉伯语（仅海外站点支持） * Thai：泰语（仅海外站点支持）
         :type default_language: str
         :param background_config: 
         :type background_config: :class:`huaweicloudsdkmetastudio.v1.BackgroundConfigInfo`
@@ -94,6 +100,8 @@ class UpdateSmartChatRoomResponse(SdkResponse):
         :type chat_subtitle_config: :class:`huaweicloudsdkmetastudio.v1.ChatSubtitleConfig`
         :param chat_video_type: 智能交互对话端配置。 * COMPUTER: 电脑端 * MOBILE: 手机端 * HUB: 大屏
         :type chat_video_type: str
+        :param exit_mute_threshold: **参数解释**： 静默退出时长。
+        :type exit_mute_threshold: int
         :param room_id: 对话ID。
         :type room_id: str
         :param create_time: 智能交互对话创建时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
@@ -102,6 +110,10 @@ class UpdateSmartChatRoomResponse(SdkResponse):
         :type update_time: str
         :param cover_url: 对话封面图URL
         :type cover_url: str
+        :param is_pool_mode: 是否是资源池模式
+        :type is_pool_mode: bool
+        :param chat_resource_config: 资源配置。
+        :type chat_resource_config: list[:class:`huaweicloudsdkmetastudio.v1.ChatResourceConfigInfo`]
         :param x_request_id: 
         :type x_request_id: str
         """
@@ -122,10 +134,13 @@ class UpdateSmartChatRoomResponse(SdkResponse):
         self._review_config = None
         self._chat_subtitle_config = None
         self._chat_video_type = None
+        self._exit_mute_threshold = None
         self._room_id = None
         self._create_time = None
         self._update_time = None
         self._cover_url = None
+        self._is_pool_mode = None
+        self._chat_resource_config = None
         self._x_request_id = None
         self.discriminator = None
 
@@ -156,6 +171,8 @@ class UpdateSmartChatRoomResponse(SdkResponse):
             self.chat_subtitle_config = chat_subtitle_config
         if chat_video_type is not None:
             self.chat_video_type = chat_video_type
+        if exit_mute_threshold is not None:
+            self.exit_mute_threshold = exit_mute_threshold
         if room_id is not None:
             self.room_id = room_id
         if create_time is not None:
@@ -164,6 +181,10 @@ class UpdateSmartChatRoomResponse(SdkResponse):
             self.update_time = update_time
         if cover_url is not None:
             self.cover_url = cover_url
+        if is_pool_mode is not None:
+            self.is_pool_mode = is_pool_mode
+        if chat_resource_config is not None:
+            self.chat_resource_config = chat_resource_config
         if x_request_id is not None:
             self.x_request_id = x_request_id
 
@@ -339,7 +360,7 @@ class UpdateSmartChatRoomResponse(SdkResponse):
     def default_language(self):
         r"""Gets the default_language of this UpdateSmartChatRoomResponse.
 
-        默认语言，智能交互接口使用。默认值CN。 * CN：简体中文。 * EN：英语。
+        默认语言，智能交互接口使用。默认值CN。 * CN：简体中文。 * EN：英语。 * ESP：西班牙语（仅海外站点支持） * por：葡萄牙语（仅海外站点支持） * Arabic：阿拉伯语（仅海外站点支持） * Thai：泰语（仅海外站点支持）
 
         :return: The default_language of this UpdateSmartChatRoomResponse.
         :rtype: str
@@ -350,7 +371,7 @@ class UpdateSmartChatRoomResponse(SdkResponse):
     def default_language(self, default_language):
         r"""Sets the default_language of this UpdateSmartChatRoomResponse.
 
-        默认语言，智能交互接口使用。默认值CN。 * CN：简体中文。 * EN：英语。
+        默认语言，智能交互接口使用。默认值CN。 * CN：简体中文。 * EN：英语。 * ESP：西班牙语（仅海外站点支持） * por：葡萄牙语（仅海外站点支持） * Arabic：阿拉伯语（仅海外站点支持） * Thai：泰语（仅海外站点支持）
 
         :param default_language: The default_language of this UpdateSmartChatRoomResponse.
         :type default_language: str
@@ -456,6 +477,28 @@ class UpdateSmartChatRoomResponse(SdkResponse):
         self._chat_video_type = chat_video_type
 
     @property
+    def exit_mute_threshold(self):
+        r"""Gets the exit_mute_threshold of this UpdateSmartChatRoomResponse.
+
+        **参数解释**： 静默退出时长。
+
+        :return: The exit_mute_threshold of this UpdateSmartChatRoomResponse.
+        :rtype: int
+        """
+        return self._exit_mute_threshold
+
+    @exit_mute_threshold.setter
+    def exit_mute_threshold(self, exit_mute_threshold):
+        r"""Sets the exit_mute_threshold of this UpdateSmartChatRoomResponse.
+
+        **参数解释**： 静默退出时长。
+
+        :param exit_mute_threshold: The exit_mute_threshold of this UpdateSmartChatRoomResponse.
+        :type exit_mute_threshold: int
+        """
+        self._exit_mute_threshold = exit_mute_threshold
+
+    @property
     def room_id(self):
         r"""Gets the room_id of this UpdateSmartChatRoomResponse.
 
@@ -542,6 +585,50 @@ class UpdateSmartChatRoomResponse(SdkResponse):
         :type cover_url: str
         """
         self._cover_url = cover_url
+
+    @property
+    def is_pool_mode(self):
+        r"""Gets the is_pool_mode of this UpdateSmartChatRoomResponse.
+
+        是否是资源池模式
+
+        :return: The is_pool_mode of this UpdateSmartChatRoomResponse.
+        :rtype: bool
+        """
+        return self._is_pool_mode
+
+    @is_pool_mode.setter
+    def is_pool_mode(self, is_pool_mode):
+        r"""Sets the is_pool_mode of this UpdateSmartChatRoomResponse.
+
+        是否是资源池模式
+
+        :param is_pool_mode: The is_pool_mode of this UpdateSmartChatRoomResponse.
+        :type is_pool_mode: bool
+        """
+        self._is_pool_mode = is_pool_mode
+
+    @property
+    def chat_resource_config(self):
+        r"""Gets the chat_resource_config of this UpdateSmartChatRoomResponse.
+
+        资源配置。
+
+        :return: The chat_resource_config of this UpdateSmartChatRoomResponse.
+        :rtype: list[:class:`huaweicloudsdkmetastudio.v1.ChatResourceConfigInfo`]
+        """
+        return self._chat_resource_config
+
+    @chat_resource_config.setter
+    def chat_resource_config(self, chat_resource_config):
+        r"""Sets the chat_resource_config of this UpdateSmartChatRoomResponse.
+
+        资源配置。
+
+        :param chat_resource_config: The chat_resource_config of this UpdateSmartChatRoomResponse.
+        :type chat_resource_config: list[:class:`huaweicloudsdkmetastudio.v1.ChatResourceConfigInfo`]
+        """
+        self._chat_resource_config = chat_resource_config
 
     @property
     def x_request_id(self):

@@ -31,9 +31,9 @@ class NodeSpecUpdateNodeNicSpecUpdatePrimaryNic:
 
         The model defined in huaweicloud sdk
 
-        :param subnet_id: 网卡所在子网的网络ID。主网卡创建时若未指定subnetId,将使用集群子网。若节点池同时配置了subnetList，则节点池扩容子网以subnetList字段为准。扩展网卡创建时必须指定subnetId。  
+        :param subnet_id: **参数解释**： 网卡所在子网的网络ID。 **约束限制**： 主网卡创建时若未指定subnetId,将使用集群子网。若节点池同时配置了subnetList，则节点池扩容子网以subnetList字段为准。扩展网卡创建时必须指定subnetId。 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type subnet_id: str
-        :param subnet_list: 网卡所在子网的网络ID列表，支持节点池配置多个子网，最多支持配置20个子网。
+        :param subnet_list: **参数解释**： 网卡所在子网的网络ID列表，支持节点池配置多个子网。 **约束限制**： 最多支持配置20个子网。 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type subnet_list: list[str]
         """
         
@@ -52,7 +52,7 @@ class NodeSpecUpdateNodeNicSpecUpdatePrimaryNic:
     def subnet_id(self):
         r"""Gets the subnet_id of this NodeSpecUpdateNodeNicSpecUpdatePrimaryNic.
 
-        网卡所在子网的网络ID。主网卡创建时若未指定subnetId,将使用集群子网。若节点池同时配置了subnetList，则节点池扩容子网以subnetList字段为准。扩展网卡创建时必须指定subnetId。  
+        **参数解释**： 网卡所在子网的网络ID。 **约束限制**： 主网卡创建时若未指定subnetId,将使用集群子网。若节点池同时配置了subnetList，则节点池扩容子网以subnetList字段为准。扩展网卡创建时必须指定subnetId。 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The subnet_id of this NodeSpecUpdateNodeNicSpecUpdatePrimaryNic.
         :rtype: str
@@ -63,7 +63,7 @@ class NodeSpecUpdateNodeNicSpecUpdatePrimaryNic:
     def subnet_id(self, subnet_id):
         r"""Sets the subnet_id of this NodeSpecUpdateNodeNicSpecUpdatePrimaryNic.
 
-        网卡所在子网的网络ID。主网卡创建时若未指定subnetId,将使用集群子网。若节点池同时配置了subnetList，则节点池扩容子网以subnetList字段为准。扩展网卡创建时必须指定subnetId。  
+        **参数解释**： 网卡所在子网的网络ID。 **约束限制**： 主网卡创建时若未指定subnetId,将使用集群子网。若节点池同时配置了subnetList，则节点池扩容子网以subnetList字段为准。扩展网卡创建时必须指定subnetId。 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param subnet_id: The subnet_id of this NodeSpecUpdateNodeNicSpecUpdatePrimaryNic.
         :type subnet_id: str
@@ -74,7 +74,7 @@ class NodeSpecUpdateNodeNicSpecUpdatePrimaryNic:
     def subnet_list(self):
         r"""Gets the subnet_list of this NodeSpecUpdateNodeNicSpecUpdatePrimaryNic.
 
-        网卡所在子网的网络ID列表，支持节点池配置多个子网，最多支持配置20个子网。
+        **参数解释**： 网卡所在子网的网络ID列表，支持节点池配置多个子网。 **约束限制**： 最多支持配置20个子网。 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The subnet_list of this NodeSpecUpdateNodeNicSpecUpdatePrimaryNic.
         :rtype: list[str]
@@ -85,7 +85,7 @@ class NodeSpecUpdateNodeNicSpecUpdatePrimaryNic:
     def subnet_list(self, subnet_list):
         r"""Sets the subnet_list of this NodeSpecUpdateNodeNicSpecUpdatePrimaryNic.
 
-        网卡所在子网的网络ID列表，支持节点池配置多个子网，最多支持配置20个子网。
+        **参数解释**： 网卡所在子网的网络ID列表，支持节点池配置多个子网。 **约束限制**： 最多支持配置20个子网。 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param subnet_list: The subnet_list of this NodeSpecUpdateNodeNicSpecUpdatePrimaryNic.
         :type subnet_list: list[str]

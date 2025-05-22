@@ -33,11 +33,11 @@ class WorkloadQueueInfo:
 
         The model defined in huaweicloud sdk
 
-        :param workload_queue_name: 资源池名称。
+        :param workload_queue_name: **参数解释**： 资源池名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type workload_queue_name: str
-        :param logical_cluster_name: 逻辑集群名称。
+        :param logical_cluster_name: **参数解释**： 逻辑集群名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type logical_cluster_name: str
-        :param resource_item_list: 资源配置队列。
+        :param resource_item_list: **参数解释**： 资源配置队列。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type resource_item_list: list[:class:`huaweicloudsdkdws.v2.WorkloadResourceItem`]
         """
         
@@ -57,7 +57,7 @@ class WorkloadQueueInfo:
     def workload_queue_name(self):
         r"""Gets the workload_queue_name of this WorkloadQueueInfo.
 
-        资源池名称。
+        **参数解释**： 资源池名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The workload_queue_name of this WorkloadQueueInfo.
         :rtype: str
@@ -68,7 +68,7 @@ class WorkloadQueueInfo:
     def workload_queue_name(self, workload_queue_name):
         r"""Sets the workload_queue_name of this WorkloadQueueInfo.
 
-        资源池名称。
+        **参数解释**： 资源池名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param workload_queue_name: The workload_queue_name of this WorkloadQueueInfo.
         :type workload_queue_name: str
@@ -79,7 +79,7 @@ class WorkloadQueueInfo:
     def logical_cluster_name(self):
         r"""Gets the logical_cluster_name of this WorkloadQueueInfo.
 
-        逻辑集群名称。
+        **参数解释**： 逻辑集群名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The logical_cluster_name of this WorkloadQueueInfo.
         :rtype: str
@@ -90,7 +90,7 @@ class WorkloadQueueInfo:
     def logical_cluster_name(self, logical_cluster_name):
         r"""Sets the logical_cluster_name of this WorkloadQueueInfo.
 
-        逻辑集群名称。
+        **参数解释**： 逻辑集群名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param logical_cluster_name: The logical_cluster_name of this WorkloadQueueInfo.
         :type logical_cluster_name: str
@@ -101,7 +101,7 @@ class WorkloadQueueInfo:
     def resource_item_list(self):
         r"""Gets the resource_item_list of this WorkloadQueueInfo.
 
-        资源配置队列。
+        **参数解释**： 资源配置队列。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The resource_item_list of this WorkloadQueueInfo.
         :rtype: list[:class:`huaweicloudsdkdws.v2.WorkloadResourceItem`]
@@ -112,7 +112,7 @@ class WorkloadQueueInfo:
     def resource_item_list(self, resource_item_list):
         r"""Sets the resource_item_list of this WorkloadQueueInfo.
 
-        资源配置队列。
+        **参数解释**： 资源配置队列。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param resource_item_list: The resource_item_list of this WorkloadQueueInfo.
         :type resource_item_list: list[:class:`huaweicloudsdkdws.v2.WorkloadResourceItem`]

@@ -31,9 +31,9 @@ class ListEventSubsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param offset: 偏移量
+        :param offset: **参数解释**： 分页查询，偏移量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 0
         :type offset: str
-        :param limit: 限制条目数
+        :param limit: **参数解释**： 分页单页大小。 **约束限制**： 不涉及。 **取值范围**： 大于0。 **默认取值**： 1000
         :type limit: str
         """
         
@@ -52,7 +52,7 @@ class ListEventSubsRequest:
     def offset(self):
         r"""Gets the offset of this ListEventSubsRequest.
 
-        偏移量
+        **参数解释**： 分页查询，偏移量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 0
 
         :return: The offset of this ListEventSubsRequest.
         :rtype: str
@@ -63,7 +63,7 @@ class ListEventSubsRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListEventSubsRequest.
 
-        偏移量
+        **参数解释**： 分页查询，偏移量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 0
 
         :param offset: The offset of this ListEventSubsRequest.
         :type offset: str
@@ -74,7 +74,7 @@ class ListEventSubsRequest:
     def limit(self):
         r"""Gets the limit of this ListEventSubsRequest.
 
-        限制条目数
+        **参数解释**： 分页单页大小。 **约束限制**： 不涉及。 **取值范围**： 大于0。 **默认取值**： 1000
 
         :return: The limit of this ListEventSubsRequest.
         :rtype: str
@@ -85,7 +85,7 @@ class ListEventSubsRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListEventSubsRequest.
 
-        限制条目数
+        **参数解释**： 分页单页大小。 **约束限制**： 不涉及。 **取值范围**： 大于0。 **默认取值**： 1000
 
         :param limit: The limit of this ListEventSubsRequest.
         :type limit: str

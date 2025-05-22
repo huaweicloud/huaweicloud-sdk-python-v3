@@ -35,7 +35,7 @@ class CreatePolicyRequestBody:
 
         :param name: 策略名
         :type name: str
-        :param package_id: 防护包id
+        :param package_id: 实例id
         :type package_id: str
         :param description: 描述
         :type description: str
@@ -79,7 +79,7 @@ class CreatePolicyRequestBody:
     def package_id(self):
         r"""Gets the package_id of this CreatePolicyRequestBody.
 
-        防护包id
+        实例id
 
         :return: The package_id of this CreatePolicyRequestBody.
         :rtype: str
@@ -90,7 +90,7 @@ class CreatePolicyRequestBody:
     def package_id(self, package_id):
         r"""Sets the package_id of this CreatePolicyRequestBody.
 
-        防护包id
+        实例id
 
         :param package_id: The package_id of this CreatePolicyRequestBody.
         :type package_id: str

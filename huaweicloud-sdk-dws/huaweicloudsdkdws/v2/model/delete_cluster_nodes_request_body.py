@@ -31,9 +31,9 @@ class DeleteClusterNodesRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param node_list: 逻辑集群节点ID列表
+        :param node_list: **参数解释**： 空闲节点ID列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type node_list: list[str]
-        :param operate_type: 操作类型，clear|delete
+        :param operate_type: **参数解释**： 操作类型，一般传delete即可。 **约束限制**： 不涉及。 **取值范围**： clear：清理创建失败的空闲节点 delete：删除空闲节点 **默认取值**： 不涉及。
         :type operate_type: str
         """
         
@@ -50,7 +50,7 @@ class DeleteClusterNodesRequestBody:
     def node_list(self):
         r"""Gets the node_list of this DeleteClusterNodesRequestBody.
 
-        逻辑集群节点ID列表
+        **参数解释**： 空闲节点ID列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The node_list of this DeleteClusterNodesRequestBody.
         :rtype: list[str]
@@ -61,7 +61,7 @@ class DeleteClusterNodesRequestBody:
     def node_list(self, node_list):
         r"""Sets the node_list of this DeleteClusterNodesRequestBody.
 
-        逻辑集群节点ID列表
+        **参数解释**： 空闲节点ID列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param node_list: The node_list of this DeleteClusterNodesRequestBody.
         :type node_list: list[str]
@@ -72,7 +72,7 @@ class DeleteClusterNodesRequestBody:
     def operate_type(self):
         r"""Gets the operate_type of this DeleteClusterNodesRequestBody.
 
-        操作类型，clear|delete
+        **参数解释**： 操作类型，一般传delete即可。 **约束限制**： 不涉及。 **取值范围**： clear：清理创建失败的空闲节点 delete：删除空闲节点 **默认取值**： 不涉及。
 
         :return: The operate_type of this DeleteClusterNodesRequestBody.
         :rtype: str
@@ -83,7 +83,7 @@ class DeleteClusterNodesRequestBody:
     def operate_type(self, operate_type):
         r"""Sets the operate_type of this DeleteClusterNodesRequestBody.
 
-        操作类型，clear|delete
+        **参数解释**： 操作类型，一般传delete即可。 **约束限制**： 不涉及。 **取值范围**： clear：清理创建失败的空闲节点 delete：删除空闲节点 **默认取值**： 不涉及。
 
         :param operate_type: The operate_type of this DeleteClusterNodesRequestBody.
         :type operate_type: str

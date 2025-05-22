@@ -47,25 +47,25 @@ class LogicalClusterPlanVo:
 
         The model defined in huaweicloud sdk
 
-        :param id: 增删逻辑集群计划ID
+        :param id: **参数解释**： 增删逻辑集群计划ID。 **取值范围**： 不涉及。
         :type id: str
-        :param logical_cluster_name: 逻辑集群名字
+        :param logical_cluster_name: **参数解释**： 逻辑集群名字。 **取值范围**： 不涉及。
         :type logical_cluster_name: str
-        :param node_num: 逻辑集群节点个数
+        :param node_num: **参数解释**： 逻辑集群节点个数。 **取值范围**： 不涉及。
         :type node_num: int
-        :param plan_type: 逻辑集群增删计划类型，取值范围为 (once|periodicity)，表示单次或周期性
+        :param plan_type: **参数解释**： 逻辑集群增删计划类型，取值范围为 (once|periodicity)，表示单次或周期性。 **取值范围**： 不涉及。
         :type plan_type: str
-        :param status: 逻辑集群增删计划状态，取值范围为(running|waiting|deleted|finished|disabled|failed)
+        :param status: **参数解释**： 逻辑集群增删计划状态。 **取值范围**： running：运行中 waiting：等待中 deleted：已删除 finished：已完成 disabled：已禁用 failed：失败
         :type status: str
-        :param start_time: 逻辑集群增删计划开始时间
+        :param start_time: **参数解释**： 逻辑集群增删计划开始时间。 **取值范围**： 不涉及。
         :type start_time: str
-        :param end_time: 逻辑集群增删计划结束时间
+        :param end_time: **参数解释**： 逻辑集群增删计划结束时间。 **取值范围**： 不涉及。
         :type end_time: str
-        :param update_time: 逻辑集群增删计划更新时间
+        :param update_time: **参数解释**： 逻辑集群增删计划更新时间。 **取值范围**： 不涉及。
         :type update_time: str
-        :param user: 逻辑集群增删计划绑定的用户
+        :param user: **参数解释**： 逻辑集群增删计划绑定的用户。 **取值范围**： 不涉及。
         :type user: str
-        :param actions: 逻辑集群增删计划行动
+        :param actions: **参数解释**： 任务信息。 **取值范围**： 不涉及。
         :type actions: list[:class:`huaweicloudsdkdws.v2.LogicalClusterPlanActions`]
         """
         
@@ -108,7 +108,7 @@ class LogicalClusterPlanVo:
     def id(self):
         r"""Gets the id of this LogicalClusterPlanVo.
 
-        增删逻辑集群计划ID
+        **参数解释**： 增删逻辑集群计划ID。 **取值范围**： 不涉及。
 
         :return: The id of this LogicalClusterPlanVo.
         :rtype: str
@@ -119,7 +119,7 @@ class LogicalClusterPlanVo:
     def id(self, id):
         r"""Sets the id of this LogicalClusterPlanVo.
 
-        增删逻辑集群计划ID
+        **参数解释**： 增删逻辑集群计划ID。 **取值范围**： 不涉及。
 
         :param id: The id of this LogicalClusterPlanVo.
         :type id: str
@@ -130,7 +130,7 @@ class LogicalClusterPlanVo:
     def logical_cluster_name(self):
         r"""Gets the logical_cluster_name of this LogicalClusterPlanVo.
 
-        逻辑集群名字
+        **参数解释**： 逻辑集群名字。 **取值范围**： 不涉及。
 
         :return: The logical_cluster_name of this LogicalClusterPlanVo.
         :rtype: str
@@ -141,7 +141,7 @@ class LogicalClusterPlanVo:
     def logical_cluster_name(self, logical_cluster_name):
         r"""Sets the logical_cluster_name of this LogicalClusterPlanVo.
 
-        逻辑集群名字
+        **参数解释**： 逻辑集群名字。 **取值范围**： 不涉及。
 
         :param logical_cluster_name: The logical_cluster_name of this LogicalClusterPlanVo.
         :type logical_cluster_name: str
@@ -152,7 +152,7 @@ class LogicalClusterPlanVo:
     def node_num(self):
         r"""Gets the node_num of this LogicalClusterPlanVo.
 
-        逻辑集群节点个数
+        **参数解释**： 逻辑集群节点个数。 **取值范围**： 不涉及。
 
         :return: The node_num of this LogicalClusterPlanVo.
         :rtype: int
@@ -163,7 +163,7 @@ class LogicalClusterPlanVo:
     def node_num(self, node_num):
         r"""Sets the node_num of this LogicalClusterPlanVo.
 
-        逻辑集群节点个数
+        **参数解释**： 逻辑集群节点个数。 **取值范围**： 不涉及。
 
         :param node_num: The node_num of this LogicalClusterPlanVo.
         :type node_num: int
@@ -174,7 +174,7 @@ class LogicalClusterPlanVo:
     def plan_type(self):
         r"""Gets the plan_type of this LogicalClusterPlanVo.
 
-        逻辑集群增删计划类型，取值范围为 (once|periodicity)，表示单次或周期性
+        **参数解释**： 逻辑集群增删计划类型，取值范围为 (once|periodicity)，表示单次或周期性。 **取值范围**： 不涉及。
 
         :return: The plan_type of this LogicalClusterPlanVo.
         :rtype: str
@@ -185,7 +185,7 @@ class LogicalClusterPlanVo:
     def plan_type(self, plan_type):
         r"""Sets the plan_type of this LogicalClusterPlanVo.
 
-        逻辑集群增删计划类型，取值范围为 (once|periodicity)，表示单次或周期性
+        **参数解释**： 逻辑集群增删计划类型，取值范围为 (once|periodicity)，表示单次或周期性。 **取值范围**： 不涉及。
 
         :param plan_type: The plan_type of this LogicalClusterPlanVo.
         :type plan_type: str
@@ -196,7 +196,7 @@ class LogicalClusterPlanVo:
     def status(self):
         r"""Gets the status of this LogicalClusterPlanVo.
 
-        逻辑集群增删计划状态，取值范围为(running|waiting|deleted|finished|disabled|failed)
+        **参数解释**： 逻辑集群增删计划状态。 **取值范围**： running：运行中 waiting：等待中 deleted：已删除 finished：已完成 disabled：已禁用 failed：失败
 
         :return: The status of this LogicalClusterPlanVo.
         :rtype: str
@@ -207,7 +207,7 @@ class LogicalClusterPlanVo:
     def status(self, status):
         r"""Sets the status of this LogicalClusterPlanVo.
 
-        逻辑集群增删计划状态，取值范围为(running|waiting|deleted|finished|disabled|failed)
+        **参数解释**： 逻辑集群增删计划状态。 **取值范围**： running：运行中 waiting：等待中 deleted：已删除 finished：已完成 disabled：已禁用 failed：失败
 
         :param status: The status of this LogicalClusterPlanVo.
         :type status: str
@@ -218,7 +218,7 @@ class LogicalClusterPlanVo:
     def start_time(self):
         r"""Gets the start_time of this LogicalClusterPlanVo.
 
-        逻辑集群增删计划开始时间
+        **参数解释**： 逻辑集群增删计划开始时间。 **取值范围**： 不涉及。
 
         :return: The start_time of this LogicalClusterPlanVo.
         :rtype: str
@@ -229,7 +229,7 @@ class LogicalClusterPlanVo:
     def start_time(self, start_time):
         r"""Sets the start_time of this LogicalClusterPlanVo.
 
-        逻辑集群增删计划开始时间
+        **参数解释**： 逻辑集群增删计划开始时间。 **取值范围**： 不涉及。
 
         :param start_time: The start_time of this LogicalClusterPlanVo.
         :type start_time: str
@@ -240,7 +240,7 @@ class LogicalClusterPlanVo:
     def end_time(self):
         r"""Gets the end_time of this LogicalClusterPlanVo.
 
-        逻辑集群增删计划结束时间
+        **参数解释**： 逻辑集群增删计划结束时间。 **取值范围**： 不涉及。
 
         :return: The end_time of this LogicalClusterPlanVo.
         :rtype: str
@@ -251,7 +251,7 @@ class LogicalClusterPlanVo:
     def end_time(self, end_time):
         r"""Sets the end_time of this LogicalClusterPlanVo.
 
-        逻辑集群增删计划结束时间
+        **参数解释**： 逻辑集群增删计划结束时间。 **取值范围**： 不涉及。
 
         :param end_time: The end_time of this LogicalClusterPlanVo.
         :type end_time: str
@@ -262,7 +262,7 @@ class LogicalClusterPlanVo:
     def update_time(self):
         r"""Gets the update_time of this LogicalClusterPlanVo.
 
-        逻辑集群增删计划更新时间
+        **参数解释**： 逻辑集群增删计划更新时间。 **取值范围**： 不涉及。
 
         :return: The update_time of this LogicalClusterPlanVo.
         :rtype: str
@@ -273,7 +273,7 @@ class LogicalClusterPlanVo:
     def update_time(self, update_time):
         r"""Sets the update_time of this LogicalClusterPlanVo.
 
-        逻辑集群增删计划更新时间
+        **参数解释**： 逻辑集群增删计划更新时间。 **取值范围**： 不涉及。
 
         :param update_time: The update_time of this LogicalClusterPlanVo.
         :type update_time: str
@@ -284,7 +284,7 @@ class LogicalClusterPlanVo:
     def user(self):
         r"""Gets the user of this LogicalClusterPlanVo.
 
-        逻辑集群增删计划绑定的用户
+        **参数解释**： 逻辑集群增删计划绑定的用户。 **取值范围**： 不涉及。
 
         :return: The user of this LogicalClusterPlanVo.
         :rtype: str
@@ -295,7 +295,7 @@ class LogicalClusterPlanVo:
     def user(self, user):
         r"""Sets the user of this LogicalClusterPlanVo.
 
-        逻辑集群增删计划绑定的用户
+        **参数解释**： 逻辑集群增删计划绑定的用户。 **取值范围**： 不涉及。
 
         :param user: The user of this LogicalClusterPlanVo.
         :type user: str
@@ -306,7 +306,7 @@ class LogicalClusterPlanVo:
     def actions(self):
         r"""Gets the actions of this LogicalClusterPlanVo.
 
-        逻辑集群增删计划行动
+        **参数解释**： 任务信息。 **取值范围**： 不涉及。
 
         :return: The actions of this LogicalClusterPlanVo.
         :rtype: list[:class:`huaweicloudsdkdws.v2.LogicalClusterPlanActions`]
@@ -317,7 +317,7 @@ class LogicalClusterPlanVo:
     def actions(self, actions):
         r"""Sets the actions of this LogicalClusterPlanVo.
 
-        逻辑集群增删计划行动
+        **参数解释**： 任务信息。 **取值范围**： 不涉及。
 
         :param actions: The actions of this LogicalClusterPlanVo.
         :type actions: list[:class:`huaweicloudsdkdws.v2.LogicalClusterPlanActions`]

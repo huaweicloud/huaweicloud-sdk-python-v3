@@ -41,7 +41,7 @@ class InteractionRuleGroupDetail:
         :type group_id: str
         :param group_name: 互动规则库名称
         :type group_name: str
-        :param interaction_rules: 互动规则列表
+        :param interaction_rules: 互动规则列表。 &gt; 查询互动规则库列表接口不再返回该内容。请使用查询互动规则库详情接口查具体某个库的规则列表。
         :type interaction_rules: list[:class:`huaweicloudsdkmetastudio.v1.InteractionRuleDetailInfo`]
         :param create_time: 创建时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
         :type create_time: str
@@ -116,7 +116,7 @@ class InteractionRuleGroupDetail:
     def interaction_rules(self):
         r"""Gets the interaction_rules of this InteractionRuleGroupDetail.
 
-        互动规则列表
+        互动规则列表。 > 查询互动规则库列表接口不再返回该内容。请使用查询互动规则库详情接口查具体某个库的规则列表。
 
         :return: The interaction_rules of this InteractionRuleGroupDetail.
         :rtype: list[:class:`huaweicloudsdkmetastudio.v1.InteractionRuleDetailInfo`]
@@ -127,7 +127,7 @@ class InteractionRuleGroupDetail:
     def interaction_rules(self, interaction_rules):
         r"""Sets the interaction_rules of this InteractionRuleGroupDetail.
 
-        互动规则列表
+        互动规则列表。 > 查询互动规则库列表接口不再返回该内容。请使用查询互动规则库详情接口查具体某个库的规则列表。
 
         :param interaction_rules: The interaction_rules of this InteractionRuleGroupDetail.
         :type interaction_rules: list[:class:`huaweicloudsdkmetastudio.v1.InteractionRuleDetailInfo`]

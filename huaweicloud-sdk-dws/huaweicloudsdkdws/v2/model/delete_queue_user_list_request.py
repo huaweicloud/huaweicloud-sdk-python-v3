@@ -33,9 +33,9 @@ class DeleteQueueUserListRequest:
 
         The model defined in huaweicloud sdk
 
-        :param cluster_id: 集群ID
+        :param cluster_id: **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
         :type cluster_id: str
-        :param queue_name: 队列名称
+        :param queue_name: **参数解释**： 队列名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type queue_name: str
         :param body: Body of the DeleteQueueUserListRequest
         :type body: :class:`huaweicloudsdkdws.v2.WorkloadQueueUserReq`
@@ -57,7 +57,7 @@ class DeleteQueueUserListRequest:
     def cluster_id(self):
         r"""Gets the cluster_id of this DeleteQueueUserListRequest.
 
-        集群ID
+        **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
 
         :return: The cluster_id of this DeleteQueueUserListRequest.
         :rtype: str
@@ -68,7 +68,7 @@ class DeleteQueueUserListRequest:
     def cluster_id(self, cluster_id):
         r"""Sets the cluster_id of this DeleteQueueUserListRequest.
 
-        集群ID
+        **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
 
         :param cluster_id: The cluster_id of this DeleteQueueUserListRequest.
         :type cluster_id: str
@@ -79,7 +79,7 @@ class DeleteQueueUserListRequest:
     def queue_name(self):
         r"""Gets the queue_name of this DeleteQueueUserListRequest.
 
-        队列名称
+        **参数解释**： 队列名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The queue_name of this DeleteQueueUserListRequest.
         :rtype: str
@@ -90,7 +90,7 @@ class DeleteQueueUserListRequest:
     def queue_name(self, queue_name):
         r"""Sets the queue_name of this DeleteQueueUserListRequest.
 
-        队列名称
+        **参数解释**： 队列名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param queue_name: The queue_name of this DeleteQueueUserListRequest.
         :type queue_name: str

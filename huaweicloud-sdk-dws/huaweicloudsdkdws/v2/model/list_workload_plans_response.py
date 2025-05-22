@@ -36,13 +36,13 @@ class ListWorkloadPlansResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param workload_res_code: 结果状态码。
+        :param workload_res_code: **参数解释**： 结果状态码。 **取值范围**： 不涉及。
         :type workload_res_code: int
-        :param workload_res_str: 结果描述。
+        :param workload_res_str: **参数解释**： 结果描述。 **取值范围**： 不涉及。
         :type workload_res_str: str
-        :param plan_list: 资源池名称。
+        :param plan_list: **参数解释**： 资源池名称。 **取值范围**： 不涉及。
         :type plan_list: list[:class:`huaweicloudsdkdws.v2.WorkloadPlanInfo`]
-        :param count: 总数量
+        :param count: **参数解释**： 总数量。 **取值范围**： 不涉及。
         :type count: int
         """
         
@@ -67,7 +67,7 @@ class ListWorkloadPlansResponse(SdkResponse):
     def workload_res_code(self):
         r"""Gets the workload_res_code of this ListWorkloadPlansResponse.
 
-        结果状态码。
+        **参数解释**： 结果状态码。 **取值范围**： 不涉及。
 
         :return: The workload_res_code of this ListWorkloadPlansResponse.
         :rtype: int
@@ -78,7 +78,7 @@ class ListWorkloadPlansResponse(SdkResponse):
     def workload_res_code(self, workload_res_code):
         r"""Sets the workload_res_code of this ListWorkloadPlansResponse.
 
-        结果状态码。
+        **参数解释**： 结果状态码。 **取值范围**： 不涉及。
 
         :param workload_res_code: The workload_res_code of this ListWorkloadPlansResponse.
         :type workload_res_code: int
@@ -89,7 +89,7 @@ class ListWorkloadPlansResponse(SdkResponse):
     def workload_res_str(self):
         r"""Gets the workload_res_str of this ListWorkloadPlansResponse.
 
-        结果描述。
+        **参数解释**： 结果描述。 **取值范围**： 不涉及。
 
         :return: The workload_res_str of this ListWorkloadPlansResponse.
         :rtype: str
@@ -100,7 +100,7 @@ class ListWorkloadPlansResponse(SdkResponse):
     def workload_res_str(self, workload_res_str):
         r"""Sets the workload_res_str of this ListWorkloadPlansResponse.
 
-        结果描述。
+        **参数解释**： 结果描述。 **取值范围**： 不涉及。
 
         :param workload_res_str: The workload_res_str of this ListWorkloadPlansResponse.
         :type workload_res_str: str
@@ -111,7 +111,7 @@ class ListWorkloadPlansResponse(SdkResponse):
     def plan_list(self):
         r"""Gets the plan_list of this ListWorkloadPlansResponse.
 
-        资源池名称。
+        **参数解释**： 资源池名称。 **取值范围**： 不涉及。
 
         :return: The plan_list of this ListWorkloadPlansResponse.
         :rtype: list[:class:`huaweicloudsdkdws.v2.WorkloadPlanInfo`]
@@ -122,7 +122,7 @@ class ListWorkloadPlansResponse(SdkResponse):
     def plan_list(self, plan_list):
         r"""Sets the plan_list of this ListWorkloadPlansResponse.
 
-        资源池名称。
+        **参数解释**： 资源池名称。 **取值范围**： 不涉及。
 
         :param plan_list: The plan_list of this ListWorkloadPlansResponse.
         :type plan_list: list[:class:`huaweicloudsdkdws.v2.WorkloadPlanInfo`]
@@ -133,7 +133,7 @@ class ListWorkloadPlansResponse(SdkResponse):
     def count(self):
         r"""Gets the count of this ListWorkloadPlansResponse.
 
-        总数量
+        **参数解释**： 总数量。 **取值范围**： 不涉及。
 
         :return: The count of this ListWorkloadPlansResponse.
         :rtype: int
@@ -144,7 +144,7 @@ class ListWorkloadPlansResponse(SdkResponse):
     def count(self, count):
         r"""Sets the count of this ListWorkloadPlansResponse.
 
-        总数量
+        **参数解释**： 总数量。 **取值范围**： 不涉及。
 
         :param count: The count of this ListWorkloadPlansResponse.
         :type count: int

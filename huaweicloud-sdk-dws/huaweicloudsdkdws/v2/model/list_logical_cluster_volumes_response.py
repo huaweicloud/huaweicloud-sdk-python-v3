@@ -32,9 +32,9 @@ class ListLogicalClusterVolumesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param volumes: 逻辑集群磁盘信息列表
+        :param volumes: **参数解释**： 逻辑集群磁盘信息列表。 **取值范围**： 不涉及。
         :type volumes: list[:class:`huaweicloudsdkdws.v2.LogicalClusterVolume`]
-        :param count: 逻辑集群磁盘总数
+        :param count: **参数解释**： 逻辑集群磁盘总数。 **取值范围**： 不涉及。
         :type count: int
         """
         
@@ -53,7 +53,7 @@ class ListLogicalClusterVolumesResponse(SdkResponse):
     def volumes(self):
         r"""Gets the volumes of this ListLogicalClusterVolumesResponse.
 
-        逻辑集群磁盘信息列表
+        **参数解释**： 逻辑集群磁盘信息列表。 **取值范围**： 不涉及。
 
         :return: The volumes of this ListLogicalClusterVolumesResponse.
         :rtype: list[:class:`huaweicloudsdkdws.v2.LogicalClusterVolume`]
@@ -64,7 +64,7 @@ class ListLogicalClusterVolumesResponse(SdkResponse):
     def volumes(self, volumes):
         r"""Sets the volumes of this ListLogicalClusterVolumesResponse.
 
-        逻辑集群磁盘信息列表
+        **参数解释**： 逻辑集群磁盘信息列表。 **取值范围**： 不涉及。
 
         :param volumes: The volumes of this ListLogicalClusterVolumesResponse.
         :type volumes: list[:class:`huaweicloudsdkdws.v2.LogicalClusterVolume`]
@@ -75,7 +75,7 @@ class ListLogicalClusterVolumesResponse(SdkResponse):
     def count(self):
         r"""Gets the count of this ListLogicalClusterVolumesResponse.
 
-        逻辑集群磁盘总数
+        **参数解释**： 逻辑集群磁盘总数。 **取值范围**： 不涉及。
 
         :return: The count of this ListLogicalClusterVolumesResponse.
         :rtype: int
@@ -86,7 +86,7 @@ class ListLogicalClusterVolumesResponse(SdkResponse):
     def count(self, count):
         r"""Sets the count of this ListLogicalClusterVolumesResponse.
 
-        逻辑集群磁盘总数
+        **参数解释**： 逻辑集群磁盘总数。 **取值范围**： 不涉及。
 
         :param count: The count of this ListLogicalClusterVolumesResponse.
         :type count: int

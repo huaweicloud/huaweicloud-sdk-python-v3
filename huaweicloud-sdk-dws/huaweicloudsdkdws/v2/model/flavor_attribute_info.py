@@ -31,9 +31,9 @@ class FlavorAttributeInfo:
 
         The model defined in huaweicloud sdk
 
-        :param code: 属性编码
+        :param code: **参数解释**： 属性编码。 **取值范围**： 不涉及。
         :type code: str
-        :param value: 属性值
+        :param value: **参数解释**： 属性值。 **取值范围**： 不涉及。
         :type value: str
         """
         
@@ -50,7 +50,7 @@ class FlavorAttributeInfo:
     def code(self):
         r"""Gets the code of this FlavorAttributeInfo.
 
-        属性编码
+        **参数解释**： 属性编码。 **取值范围**： 不涉及。
 
         :return: The code of this FlavorAttributeInfo.
         :rtype: str
@@ -61,7 +61,7 @@ class FlavorAttributeInfo:
     def code(self, code):
         r"""Sets the code of this FlavorAttributeInfo.
 
-        属性编码
+        **参数解释**： 属性编码。 **取值范围**： 不涉及。
 
         :param code: The code of this FlavorAttributeInfo.
         :type code: str
@@ -72,7 +72,7 @@ class FlavorAttributeInfo:
     def value(self):
         r"""Gets the value of this FlavorAttributeInfo.
 
-        属性值
+        **参数解释**： 属性值。 **取值范围**： 不涉及。
 
         :return: The value of this FlavorAttributeInfo.
         :rtype: str
@@ -83,7 +83,7 @@ class FlavorAttributeInfo:
     def value(self, value):
         r"""Sets the value of this FlavorAttributeInfo.
 
-        属性值
+        **参数解释**： 属性值。 **取值范围**： 不涉及。
 
         :param value: The value of this FlavorAttributeInfo.
         :type value: str

@@ -32,9 +32,9 @@ class ListAvailabilityZonesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param availability_zones: 可用区列表对象。
+        :param availability_zones: **参数解释**： 可用区列表。 **取值范围**： 非空对象列表。
         :type availability_zones: list[:class:`huaweicloudsdkdws.v2.AvailabilityZone`]
-        :param count: 可用区数量。
+        :param count: **参数解释**： 可用区数量。 **取值范围**： 不涉及。
         :type count: int
         """
         
@@ -53,7 +53,7 @@ class ListAvailabilityZonesResponse(SdkResponse):
     def availability_zones(self):
         r"""Gets the availability_zones of this ListAvailabilityZonesResponse.
 
-        可用区列表对象。
+        **参数解释**： 可用区列表。 **取值范围**： 非空对象列表。
 
         :return: The availability_zones of this ListAvailabilityZonesResponse.
         :rtype: list[:class:`huaweicloudsdkdws.v2.AvailabilityZone`]
@@ -64,7 +64,7 @@ class ListAvailabilityZonesResponse(SdkResponse):
     def availability_zones(self, availability_zones):
         r"""Sets the availability_zones of this ListAvailabilityZonesResponse.
 
-        可用区列表对象。
+        **参数解释**： 可用区列表。 **取值范围**： 非空对象列表。
 
         :param availability_zones: The availability_zones of this ListAvailabilityZonesResponse.
         :type availability_zones: list[:class:`huaweicloudsdkdws.v2.AvailabilityZone`]
@@ -75,7 +75,7 @@ class ListAvailabilityZonesResponse(SdkResponse):
     def count(self):
         r"""Gets the count of this ListAvailabilityZonesResponse.
 
-        可用区数量。
+        **参数解释**： 可用区数量。 **取值范围**： 不涉及。
 
         :return: The count of this ListAvailabilityZonesResponse.
         :rtype: int
@@ -86,7 +86,7 @@ class ListAvailabilityZonesResponse(SdkResponse):
     def count(self, count):
         r"""Sets the count of this ListAvailabilityZonesResponse.
 
-        可用区数量。
+        **参数解释**： 可用区数量。 **取值范围**： 不涉及。
 
         :param count: The count of this ListAvailabilityZonesResponse.
         :type count: int

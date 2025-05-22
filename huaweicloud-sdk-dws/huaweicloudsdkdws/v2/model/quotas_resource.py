@@ -18,9 +18,9 @@ class QuotasResource:
 
     openapi_types = {
         'type': 'str',
-        'used': 'str',
+        'used': 'int',
         'quota': 'int',
-        'unit': 'int'
+        'unit': 'str'
     }
 
     attribute_map = {
@@ -38,11 +38,11 @@ class QuotasResource:
         :param type: 项目资源类型。
         :type type: str
         :param used: 已使用的资源数量。
-        :type used: str
+        :type used: int
         :param quota: 项目资源配额。
         :type quota: int
         :param unit: 资源计量单位。
-        :type unit: int
+        :type unit: str
         """
         
         
@@ -87,7 +87,7 @@ class QuotasResource:
         已使用的资源数量。
 
         :return: The used of this QuotasResource.
-        :rtype: str
+        :rtype: int
         """
         return self._used
 
@@ -98,7 +98,7 @@ class QuotasResource:
         已使用的资源数量。
 
         :param used: The used of this QuotasResource.
-        :type used: str
+        :type used: int
         """
         self._used = used
 
@@ -131,7 +131,7 @@ class QuotasResource:
         资源计量单位。
 
         :return: The unit of this QuotasResource.
-        :rtype: int
+        :rtype: str
         """
         return self._unit
 
@@ -142,7 +142,7 @@ class QuotasResource:
         资源计量单位。
 
         :param unit: The unit of this QuotasResource.
-        :type unit: int
+        :type unit: str
         """
         self._unit = unit
 

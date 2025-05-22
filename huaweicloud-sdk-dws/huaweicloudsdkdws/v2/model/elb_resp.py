@@ -39,17 +39,17 @@ class ElbResp:
 
         The model defined in huaweicloud sdk
 
-        :param public_ip: 公网ip
+        :param public_ip: **参数解释**： 公网ip。 **取值范围**： 有效的公网ipv4地址。
         :type public_ip: str
-        :param private_ip: 内网ip
+        :param private_ip: **参数解释**： 内网ip。 **取值范围**： 有效的内网ipv4地址。
         :type private_ip: str
-        :param private_endpoint: Elb终端地址
+        :param private_endpoint: **参数解释**： Elb终端地址。 **取值范围**： 不涉及。
         :type private_endpoint: str
-        :param name: Elb名称
+        :param name: **参数解释**： Elb名称。 **取值范围**： 不涉及。
         :type name: str
-        :param id: Elb的ID
+        :param id: **参数解释**： Elb的ID。 **取值范围**： 不涉及。
         :type id: str
-        :param vpc_id: Elb所属VPC的ID
+        :param vpc_id: **参数解释**： Elb所属VPC的ID。 **取值范围**： 不涉及。
         :type vpc_id: str
         """
         
@@ -80,7 +80,7 @@ class ElbResp:
     def public_ip(self):
         r"""Gets the public_ip of this ElbResp.
 
-        公网ip
+        **参数解释**： 公网ip。 **取值范围**： 有效的公网ipv4地址。
 
         :return: The public_ip of this ElbResp.
         :rtype: str
@@ -91,7 +91,7 @@ class ElbResp:
     def public_ip(self, public_ip):
         r"""Sets the public_ip of this ElbResp.
 
-        公网ip
+        **参数解释**： 公网ip。 **取值范围**： 有效的公网ipv4地址。
 
         :param public_ip: The public_ip of this ElbResp.
         :type public_ip: str
@@ -102,7 +102,7 @@ class ElbResp:
     def private_ip(self):
         r"""Gets the private_ip of this ElbResp.
 
-        内网ip
+        **参数解释**： 内网ip。 **取值范围**： 有效的内网ipv4地址。
 
         :return: The private_ip of this ElbResp.
         :rtype: str
@@ -113,7 +113,7 @@ class ElbResp:
     def private_ip(self, private_ip):
         r"""Sets the private_ip of this ElbResp.
 
-        内网ip
+        **参数解释**： 内网ip。 **取值范围**： 有效的内网ipv4地址。
 
         :param private_ip: The private_ip of this ElbResp.
         :type private_ip: str
@@ -124,7 +124,7 @@ class ElbResp:
     def private_endpoint(self):
         r"""Gets the private_endpoint of this ElbResp.
 
-        Elb终端地址
+        **参数解释**： Elb终端地址。 **取值范围**： 不涉及。
 
         :return: The private_endpoint of this ElbResp.
         :rtype: str
@@ -135,7 +135,7 @@ class ElbResp:
     def private_endpoint(self, private_endpoint):
         r"""Sets the private_endpoint of this ElbResp.
 
-        Elb终端地址
+        **参数解释**： Elb终端地址。 **取值范围**： 不涉及。
 
         :param private_endpoint: The private_endpoint of this ElbResp.
         :type private_endpoint: str
@@ -146,7 +146,7 @@ class ElbResp:
     def name(self):
         r"""Gets the name of this ElbResp.
 
-        Elb名称
+        **参数解释**： Elb名称。 **取值范围**： 不涉及。
 
         :return: The name of this ElbResp.
         :rtype: str
@@ -157,7 +157,7 @@ class ElbResp:
     def name(self, name):
         r"""Sets the name of this ElbResp.
 
-        Elb名称
+        **参数解释**： Elb名称。 **取值范围**： 不涉及。
 
         :param name: The name of this ElbResp.
         :type name: str
@@ -168,7 +168,7 @@ class ElbResp:
     def id(self):
         r"""Gets the id of this ElbResp.
 
-        Elb的ID
+        **参数解释**： Elb的ID。 **取值范围**： 不涉及。
 
         :return: The id of this ElbResp.
         :rtype: str
@@ -179,7 +179,7 @@ class ElbResp:
     def id(self, id):
         r"""Sets the id of this ElbResp.
 
-        Elb的ID
+        **参数解释**： Elb的ID。 **取值范围**： 不涉及。
 
         :param id: The id of this ElbResp.
         :type id: str
@@ -190,7 +190,7 @@ class ElbResp:
     def vpc_id(self):
         r"""Gets the vpc_id of this ElbResp.
 
-        Elb所属VPC的ID
+        **参数解释**： Elb所属VPC的ID。 **取值范围**： 不涉及。
 
         :return: The vpc_id of this ElbResp.
         :rtype: str
@@ -201,7 +201,7 @@ class ElbResp:
     def vpc_id(self, vpc_id):
         r"""Sets the vpc_id of this ElbResp.
 
-        Elb所属VPC的ID
+        **参数解释**： Elb所属VPC的ID。 **取值范围**： 不涉及。
 
         :param vpc_id: The vpc_id of this ElbResp.
         :type vpc_id: str

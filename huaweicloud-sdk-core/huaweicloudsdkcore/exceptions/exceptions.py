@@ -29,7 +29,15 @@ class SdkException(Exception):
         The base exception class.
         """
         super(SdkException, self).__init__()
-        self.error_msg = error_msg
+        self._error_msg = error_msg
+
+    @property
+    def error_msg(self):
+        return self._error_msg
+
+    @error_msg.setter
+    def error_msg(self, value):
+        self._error_msg = value
 
     def __str__(self):
         return "%s - %s" % (self.__class__.__name__, self.error_msg)
@@ -65,10 +73,42 @@ class ServiceResponseException(SdkException):
         The base exception class of service response exceptions.
         """
         super(ServiceResponseException, self).__init__(sdk_error.error_msg)
-        self.status_code = status_code
-        self.error_code = sdk_error.error_code
-        self.request_id = sdk_error.request_id
-        self.encoded_auth_msg = sdk_error.encoded_auth_msg
+        self._status_code = status_code
+        self._error_code = sdk_error.error_code
+        self._request_id = sdk_error.request_id
+        self._encoded_auth_msg = sdk_error.encoded_auth_msg
+
+    @property
+    def status_code(self):
+        return self._status_code
+
+    @status_code.setter
+    def status_code(self, value):
+        self._status_code = value
+
+    @property
+    def error_code(self):
+        return self._error_code
+
+    @error_code.setter
+    def error_code(self, value):
+        self._error_code = value
+
+    @property
+    def request_id(self):
+        return self._request_id
+
+    @request_id.setter
+    def request_id(self, value):
+        self._request_id = value
+
+    @property
+    def encoded_auth_msg(self):
+        return self._encoded_auth_msg
+
+    @encoded_auth_msg.setter
+    def encoded_auth_msg(self, value):
+        self._encoded_auth_msg = value
 
     def __str__(self):
         return "%s - {status_code:%s,request_id:%s,error_code:%s,error_msg:%s,encoded_authorization_message:%s }" % (
@@ -118,10 +158,42 @@ class RetryOutageException(RequestTimeoutException):
 
 class SdkError(object):
     def __init__(self, request_id=None, error_code=None, error_msg=None, encoded_auth_msg=None):
-        self.error_msg = error_msg
-        self.error_code = error_code
-        self.request_id = request_id
-        self.encoded_auth_msg = encoded_auth_msg
+        self._error_msg = error_msg
+        self._error_code = error_code
+        self._request_id = request_id
+        self._encoded_auth_msg = encoded_auth_msg
+
+    @property
+    def error_msg(self):
+        return self._error_msg
+
+    @error_msg.setter
+    def error_msg(self, value):
+        self._error_msg = value
+
+    @property
+    def error_code(self):
+        return self._error_code
+
+    @error_code.setter
+    def error_code(self, value):
+        self._error_code = value
+
+    @property
+    def request_id(self):
+        return self._request_id
+
+    @request_id.setter
+    def request_id(self, value):
+        self._request_id = value
+
+    @property
+    def encoded_auth_msg(self):
+        return self._encoded_auth_msg
+
+    @encoded_auth_msg.setter
+    def encoded_auth_msg(self, value):
+        self._encoded_auth_msg = value
 
 
 def render_path(path_to_item):

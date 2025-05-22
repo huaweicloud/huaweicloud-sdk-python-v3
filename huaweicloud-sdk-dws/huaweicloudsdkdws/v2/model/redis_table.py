@@ -39,17 +39,17 @@ class RedisTable:
 
         The model defined in huaweicloud sdk
 
-        :param table_name: 表名
+        :param table_name: **参数解释**： 表名。 **取值范围**： 不涉及。
         :type table_name: str
-        :param id: 表唯一id
+        :param id: **参数解释**： 表唯一id。 **取值范围**： 不涉及。
         :type id: int
-        :param schema_name: schema名
+        :param schema_name: **参数解释**： schema名。 **取值范围**： 不涉及。
         :type schema_name: str
-        :param logical_cluster_name: 逻辑集群名
+        :param logical_cluster_name: **参数解释**： 逻辑集群名。 **取值范围**： 不涉及。
         :type logical_cluster_name: str
-        :param size: 表大小
+        :param size: **参数解释**： 表大小。 **取值范围**： 不涉及。
         :type size: int
-        :param status: 重分布类型 i：重分布中； y：重分布完成； n：未开始
+        :param status: **参数解释**： 重分布类型。 **取值范围**： i：重分布中； y：重分布完成； n：未开始。
         :type status: str
         """
         
@@ -80,7 +80,7 @@ class RedisTable:
     def table_name(self):
         r"""Gets the table_name of this RedisTable.
 
-        表名
+        **参数解释**： 表名。 **取值范围**： 不涉及。
 
         :return: The table_name of this RedisTable.
         :rtype: str
@@ -91,7 +91,7 @@ class RedisTable:
     def table_name(self, table_name):
         r"""Sets the table_name of this RedisTable.
 
-        表名
+        **参数解释**： 表名。 **取值范围**： 不涉及。
 
         :param table_name: The table_name of this RedisTable.
         :type table_name: str
@@ -102,7 +102,7 @@ class RedisTable:
     def id(self):
         r"""Gets the id of this RedisTable.
 
-        表唯一id
+        **参数解释**： 表唯一id。 **取值范围**： 不涉及。
 
         :return: The id of this RedisTable.
         :rtype: int
@@ -113,7 +113,7 @@ class RedisTable:
     def id(self, id):
         r"""Sets the id of this RedisTable.
 
-        表唯一id
+        **参数解释**： 表唯一id。 **取值范围**： 不涉及。
 
         :param id: The id of this RedisTable.
         :type id: int
@@ -124,7 +124,7 @@ class RedisTable:
     def schema_name(self):
         r"""Gets the schema_name of this RedisTable.
 
-        schema名
+        **参数解释**： schema名。 **取值范围**： 不涉及。
 
         :return: The schema_name of this RedisTable.
         :rtype: str
@@ -135,7 +135,7 @@ class RedisTable:
     def schema_name(self, schema_name):
         r"""Sets the schema_name of this RedisTable.
 
-        schema名
+        **参数解释**： schema名。 **取值范围**： 不涉及。
 
         :param schema_name: The schema_name of this RedisTable.
         :type schema_name: str
@@ -146,7 +146,7 @@ class RedisTable:
     def logical_cluster_name(self):
         r"""Gets the logical_cluster_name of this RedisTable.
 
-        逻辑集群名
+        **参数解释**： 逻辑集群名。 **取值范围**： 不涉及。
 
         :return: The logical_cluster_name of this RedisTable.
         :rtype: str
@@ -157,7 +157,7 @@ class RedisTable:
     def logical_cluster_name(self, logical_cluster_name):
         r"""Sets the logical_cluster_name of this RedisTable.
 
-        逻辑集群名
+        **参数解释**： 逻辑集群名。 **取值范围**： 不涉及。
 
         :param logical_cluster_name: The logical_cluster_name of this RedisTable.
         :type logical_cluster_name: str
@@ -168,7 +168,7 @@ class RedisTable:
     def size(self):
         r"""Gets the size of this RedisTable.
 
-        表大小
+        **参数解释**： 表大小。 **取值范围**： 不涉及。
 
         :return: The size of this RedisTable.
         :rtype: int
@@ -179,7 +179,7 @@ class RedisTable:
     def size(self, size):
         r"""Sets the size of this RedisTable.
 
-        表大小
+        **参数解释**： 表大小。 **取值范围**： 不涉及。
 
         :param size: The size of this RedisTable.
         :type size: int
@@ -190,7 +190,7 @@ class RedisTable:
     def status(self):
         r"""Gets the status of this RedisTable.
 
-        重分布类型 i：重分布中； y：重分布完成； n：未开始
+        **参数解释**： 重分布类型。 **取值范围**： i：重分布中； y：重分布完成； n：未开始。
 
         :return: The status of this RedisTable.
         :rtype: str
@@ -201,7 +201,7 @@ class RedisTable:
     def status(self, status):
         r"""Sets the status of this RedisTable.
 
-        重分布类型 i：重分布中； y：重分布完成； n：未开始
+        **参数解释**： 重分布类型。 **取值范围**： i：重分布中； y：重分布完成； n：未开始。
 
         :param status: The status of this RedisTable.
         :type status: str

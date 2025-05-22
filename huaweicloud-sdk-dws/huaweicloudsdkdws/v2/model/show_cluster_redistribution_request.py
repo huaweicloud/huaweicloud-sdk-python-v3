@@ -39,17 +39,17 @@ class ShowClusterRedistributionRequest:
 
         The model defined in huaweicloud sdk
 
-        :param cluster_id: 集群ID
+        :param cluster_id: **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
         :type cluster_id: str
-        :param limit: 分页查询，每页大小
+        :param limit: **参数解释**： 分页查询，每页大小。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 10
         :type limit: int
-        :param offset: 分页查询，偏移
+        :param offset: **参数解释**： 分页偏移量，从0开始，页数减1。 **约束限制**： 不涉及。 **取值范围**： 大于等于0 **默认取值**： 0
         :type offset: int
-        :param db_name: 数据库名称
+        :param db_name: **参数解释**： 数据库名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： null
         :type db_name: str
-        :param table_name: 表名称
+        :param table_name: **参数解释**： 表名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： null
         :type table_name: str
-        :param type: 类型
+        :param type: **参数解释**： 类型，取值来自public.pgxc_redistb表的redistributed字段。多个可用逗号分割。 **约束限制**： 不涉及。 **取值范围**： i：重分布中； y：已完成； n：未开始； **默认取值**： null，即不过滤。
         :type type: str
         """
         
@@ -79,7 +79,7 @@ class ShowClusterRedistributionRequest:
     def cluster_id(self):
         r"""Gets the cluster_id of this ShowClusterRedistributionRequest.
 
-        集群ID
+        **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
 
         :return: The cluster_id of this ShowClusterRedistributionRequest.
         :rtype: str
@@ -90,7 +90,7 @@ class ShowClusterRedistributionRequest:
     def cluster_id(self, cluster_id):
         r"""Sets the cluster_id of this ShowClusterRedistributionRequest.
 
-        集群ID
+        **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
 
         :param cluster_id: The cluster_id of this ShowClusterRedistributionRequest.
         :type cluster_id: str
@@ -101,7 +101,7 @@ class ShowClusterRedistributionRequest:
     def limit(self):
         r"""Gets the limit of this ShowClusterRedistributionRequest.
 
-        分页查询，每页大小
+        **参数解释**： 分页查询，每页大小。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 10
 
         :return: The limit of this ShowClusterRedistributionRequest.
         :rtype: int
@@ -112,7 +112,7 @@ class ShowClusterRedistributionRequest:
     def limit(self, limit):
         r"""Sets the limit of this ShowClusterRedistributionRequest.
 
-        分页查询，每页大小
+        **参数解释**： 分页查询，每页大小。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 10
 
         :param limit: The limit of this ShowClusterRedistributionRequest.
         :type limit: int
@@ -123,7 +123,7 @@ class ShowClusterRedistributionRequest:
     def offset(self):
         r"""Gets the offset of this ShowClusterRedistributionRequest.
 
-        分页查询，偏移
+        **参数解释**： 分页偏移量，从0开始，页数减1。 **约束限制**： 不涉及。 **取值范围**： 大于等于0 **默认取值**： 0
 
         :return: The offset of this ShowClusterRedistributionRequest.
         :rtype: int
@@ -134,7 +134,7 @@ class ShowClusterRedistributionRequest:
     def offset(self, offset):
         r"""Sets the offset of this ShowClusterRedistributionRequest.
 
-        分页查询，偏移
+        **参数解释**： 分页偏移量，从0开始，页数减1。 **约束限制**： 不涉及。 **取值范围**： 大于等于0 **默认取值**： 0
 
         :param offset: The offset of this ShowClusterRedistributionRequest.
         :type offset: int
@@ -145,7 +145,7 @@ class ShowClusterRedistributionRequest:
     def db_name(self):
         r"""Gets the db_name of this ShowClusterRedistributionRequest.
 
-        数据库名称
+        **参数解释**： 数据库名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： null
 
         :return: The db_name of this ShowClusterRedistributionRequest.
         :rtype: str
@@ -156,7 +156,7 @@ class ShowClusterRedistributionRequest:
     def db_name(self, db_name):
         r"""Sets the db_name of this ShowClusterRedistributionRequest.
 
-        数据库名称
+        **参数解释**： 数据库名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： null
 
         :param db_name: The db_name of this ShowClusterRedistributionRequest.
         :type db_name: str
@@ -167,7 +167,7 @@ class ShowClusterRedistributionRequest:
     def table_name(self):
         r"""Gets the table_name of this ShowClusterRedistributionRequest.
 
-        表名称
+        **参数解释**： 表名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： null
 
         :return: The table_name of this ShowClusterRedistributionRequest.
         :rtype: str
@@ -178,7 +178,7 @@ class ShowClusterRedistributionRequest:
     def table_name(self, table_name):
         r"""Sets the table_name of this ShowClusterRedistributionRequest.
 
-        表名称
+        **参数解释**： 表名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： null
 
         :param table_name: The table_name of this ShowClusterRedistributionRequest.
         :type table_name: str
@@ -189,7 +189,7 @@ class ShowClusterRedistributionRequest:
     def type(self):
         r"""Gets the type of this ShowClusterRedistributionRequest.
 
-        类型
+        **参数解释**： 类型，取值来自public.pgxc_redistb表的redistributed字段。多个可用逗号分割。 **约束限制**： 不涉及。 **取值范围**： i：重分布中； y：已完成； n：未开始； **默认取值**： null，即不过滤。
 
         :return: The type of this ShowClusterRedistributionRequest.
         :rtype: str
@@ -200,7 +200,7 @@ class ShowClusterRedistributionRequest:
     def type(self, type):
         r"""Sets the type of this ShowClusterRedistributionRequest.
 
-        类型
+        **参数解释**： 类型，取值来自public.pgxc_redistb表的redistributed字段。多个可用逗号分割。 **约束限制**： 不涉及。 **取值范围**： i：重分布中； y：已完成； n：未开始； **默认取值**： null，即不过滤。
 
         :param type: The type of this ShowClusterRedistributionRequest.
         :type type: str

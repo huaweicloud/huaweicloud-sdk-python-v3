@@ -23,7 +23,8 @@ class CreateMemberOption:
         'project_id': 'str',
         'protocol_port': 'int',
         'subnet_cidr_id': 'str',
-        'weight': 'int'
+        'weight': 'int',
+        'availability_zone': 'str'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class CreateMemberOption:
         'project_id': 'project_id',
         'protocol_port': 'protocol_port',
         'subnet_cidr_id': 'subnet_cidr_id',
-        'weight': 'weight'
+        'weight': 'weight',
+        'availability_zone': 'availability_zone'
     }
 
-    def __init__(self, address=None, admin_state_up=None, name=None, project_id=None, protocol_port=None, subnet_cidr_id=None, weight=None):
+    def __init__(self, address=None, admin_state_up=None, name=None, project_id=None, protocol_port=None, subnet_cidr_id=None, weight=None, availability_zone=None):
         r"""CreateMemberOption
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class CreateMemberOption:
         :type subnet_cidr_id: str
         :param weight: 参数解释：后端服务器的权重，请求将根据pool配置的负载均衡算法和后端服务器的权重进行负载分发。 权重值越大，分发的请求越多。权重为0的后端不再接受新的请求。  约束限制：若所在pool的lb_algorithm取值为SOURCE_IP或QUIC_CID，该字段无效。  取值范围：0-100，默认1。
         :type weight: int
+        :param availability_zone: 参数解释：后端服务器的可用区。 约束限制： - 仅支持iptarget类型的后端服务器设置该字段。且后端服务器组开启可用区亲和时，iptarget类型的后端服务器必须配置该字段为有效非空值。  取值范围：本region中ECS可选择的可用区。
+        :type availability_zone: str
         """
         
         
@@ -66,6 +70,7 @@ class CreateMemberOption:
         self._protocol_port = None
         self._subnet_cidr_id = None
         self._weight = None
+        self._availability_zone = None
         self.discriminator = None
 
         self.address = address
@@ -81,6 +86,8 @@ class CreateMemberOption:
             self.subnet_cidr_id = subnet_cidr_id
         if weight is not None:
             self.weight = weight
+        if availability_zone is not None:
+            self.availability_zone = availability_zone
 
     @property
     def address(self):
@@ -235,6 +242,28 @@ class CreateMemberOption:
         :type weight: int
         """
         self._weight = weight
+
+    @property
+    def availability_zone(self):
+        r"""Gets the availability_zone of this CreateMemberOption.
+
+        参数解释：后端服务器的可用区。 约束限制： - 仅支持iptarget类型的后端服务器设置该字段。且后端服务器组开启可用区亲和时，iptarget类型的后端服务器必须配置该字段为有效非空值。  取值范围：本region中ECS可选择的可用区。
+
+        :return: The availability_zone of this CreateMemberOption.
+        :rtype: str
+        """
+        return self._availability_zone
+
+    @availability_zone.setter
+    def availability_zone(self, availability_zone):
+        r"""Sets the availability_zone of this CreateMemberOption.
+
+        参数解释：后端服务器的可用区。 约束限制： - 仅支持iptarget类型的后端服务器设置该字段。且后端服务器组开启可用区亲和时，iptarget类型的后端服务器必须配置该字段为有效非空值。  取值范围：本region中ECS可选择的可用区。
+
+        :param availability_zone: The availability_zone of this CreateMemberOption.
+        :type availability_zone: str
+        """
+        self._availability_zone = availability_zone
 
     def to_dict(self):
         """Returns the model properties as a dict"""

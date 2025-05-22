@@ -31,9 +31,9 @@ class RedistributionReq:
 
         The model defined in huaweicloud sdk
 
-        :param redis_mode: 重分布模式
+        :param redis_mode: **参数解释**： 重分布模式 **约束限制**： 不涉及。 **取值范围**： online：在线重分布； offline：离线重分布； **默认取值**： offline
         :type redis_mode: str
-        :param parallel_jobs: 重分布并发数
+        :param parallel_jobs: **参数解释**： 重分布并发数。 **约束限制**： 不涉及。 **取值范围**： 4~200 **默认取值**： 4
         :type parallel_jobs: int
         """
         
@@ -50,7 +50,7 @@ class RedistributionReq:
     def redis_mode(self):
         r"""Gets the redis_mode of this RedistributionReq.
 
-        重分布模式
+        **参数解释**： 重分布模式 **约束限制**： 不涉及。 **取值范围**： online：在线重分布； offline：离线重分布； **默认取值**： offline
 
         :return: The redis_mode of this RedistributionReq.
         :rtype: str
@@ -61,7 +61,7 @@ class RedistributionReq:
     def redis_mode(self, redis_mode):
         r"""Sets the redis_mode of this RedistributionReq.
 
-        重分布模式
+        **参数解释**： 重分布模式 **约束限制**： 不涉及。 **取值范围**： online：在线重分布； offline：离线重分布； **默认取值**： offline
 
         :param redis_mode: The redis_mode of this RedistributionReq.
         :type redis_mode: str
@@ -72,7 +72,7 @@ class RedistributionReq:
     def parallel_jobs(self):
         r"""Gets the parallel_jobs of this RedistributionReq.
 
-        重分布并发数
+        **参数解释**： 重分布并发数。 **约束限制**： 不涉及。 **取值范围**： 4~200 **默认取值**： 4
 
         :return: The parallel_jobs of this RedistributionReq.
         :rtype: int
@@ -83,7 +83,7 @@ class RedistributionReq:
     def parallel_jobs(self, parallel_jobs):
         r"""Sets the parallel_jobs of this RedistributionReq.
 
-        重分布并发数
+        **参数解释**： 重分布并发数。 **约束限制**： 不涉及。 **取值范围**： 4~200 **默认取值**： 4
 
         :param parallel_jobs: The parallel_jobs of this RedistributionReq.
         :type parallel_jobs: int

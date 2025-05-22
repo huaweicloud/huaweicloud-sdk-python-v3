@@ -24,6 +24,7 @@ class ListLoadBalancersRequest:
         'name': 'list[str]',
         'description': 'list[str]',
         'admin_state_up': 'bool',
+        'include_recycle_bin': 'bool',
         'provisioning_status': 'list[str]',
         'operating_status': 'list[str]',
         'guaranteed': 'bool',
@@ -63,6 +64,7 @@ class ListLoadBalancersRequest:
         'name': 'name',
         'description': 'description',
         'admin_state_up': 'admin_state_up',
+        'include_recycle_bin': 'include_recycle_bin',
         'provisioning_status': 'provisioning_status',
         'operating_status': 'operating_status',
         'guaranteed': 'guaranteed',
@@ -94,7 +96,7 @@ class ListLoadBalancersRequest:
         'log_group_id': 'log_group_id'
     }
 
-    def __init__(self, marker=None, limit=None, page_reverse=None, id=None, name=None, description=None, admin_state_up=None, provisioning_status=None, operating_status=None, guaranteed=None, vpc_id=None, vip_port_id=None, vip_address=None, vip_subnet_cidr_id=None, ipv6_vip_port_id=None, ipv6_vip_address=None, ipv6_vip_virsubnet_id=None, eips=None, publicips=None, availability_zone_list=None, l4_flavor_id=None, l4_scale_flavor_id=None, l7_flavor_id=None, l7_scale_flavor_id=None, billing_info=None, member_device_id=None, member_address=None, enterprise_project_id=None, ip_version=None, deletion_protection_enable=None, elb_virsubnet_type=None, autoscaling=None, protection_status=None, global_eips=None, log_topic_id=None, log_group_id=None):
+    def __init__(self, marker=None, limit=None, page_reverse=None, id=None, name=None, description=None, admin_state_up=None, include_recycle_bin=None, provisioning_status=None, operating_status=None, guaranteed=None, vpc_id=None, vip_port_id=None, vip_address=None, vip_subnet_cidr_id=None, ipv6_vip_port_id=None, ipv6_vip_address=None, ipv6_vip_virsubnet_id=None, eips=None, publicips=None, availability_zone_list=None, l4_flavor_id=None, l4_scale_flavor_id=None, l7_flavor_id=None, l7_scale_flavor_id=None, billing_info=None, member_device_id=None, member_address=None, enterprise_project_id=None, ip_version=None, deletion_protection_enable=None, elb_virsubnet_type=None, autoscaling=None, protection_status=None, global_eips=None, log_topic_id=None, log_group_id=None):
         r"""ListLoadBalancersRequest
 
         The model defined in huaweicloud sdk
@@ -113,6 +115,8 @@ class ListLoadBalancersRequest:
         :type description: list[str]
         :param admin_state_up: 参数解释：负载均衡器的启用状态。  取值范围： - true ：启用。 - false：停用。  [不支持该字段，请勿使用。](tag:dt)
         :type admin_state_up: bool
+        :param include_recycle_bin: 参数解释：查询结果是否包含回收站负载均衡器  取值范围： - true ：包含回收站elb。 - false：不包含回收站elb。
+        :type include_recycle_bin: bool
         :param provisioning_status: 负载均衡器的配置状态。  取值： - ACTIVE：使用中。 - PENDING_DELETE：删除中。  支持多值查询，查询条件格式：*provisioning_status&#x3D;xxx&amp;provisioning_status&#x3D;xxx*。
         :type provisioning_status: list[str]
         :param operating_status: 负载均衡器的操作状态。  取值： - ONLINE：正常运行。 - FROZEN：已冻结。  支持多值查询，查询条件格式：*operating_status&#x3D;xxx&amp;operating_status&#x3D;xxx*。
@@ -182,6 +186,7 @@ class ListLoadBalancersRequest:
         self._name = None
         self._description = None
         self._admin_state_up = None
+        self._include_recycle_bin = None
         self._provisioning_status = None
         self._operating_status = None
         self._guaranteed = None
@@ -227,6 +232,8 @@ class ListLoadBalancersRequest:
             self.description = description
         if admin_state_up is not None:
             self.admin_state_up = admin_state_up
+        if include_recycle_bin is not None:
+            self.include_recycle_bin = include_recycle_bin
         if provisioning_status is not None:
             self.provisioning_status = provisioning_status
         if operating_status is not None:
@@ -439,6 +446,28 @@ class ListLoadBalancersRequest:
         :type admin_state_up: bool
         """
         self._admin_state_up = admin_state_up
+
+    @property
+    def include_recycle_bin(self):
+        r"""Gets the include_recycle_bin of this ListLoadBalancersRequest.
+
+        参数解释：查询结果是否包含回收站负载均衡器  取值范围： - true ：包含回收站elb。 - false：不包含回收站elb。
+
+        :return: The include_recycle_bin of this ListLoadBalancersRequest.
+        :rtype: bool
+        """
+        return self._include_recycle_bin
+
+    @include_recycle_bin.setter
+    def include_recycle_bin(self, include_recycle_bin):
+        r"""Sets the include_recycle_bin of this ListLoadBalancersRequest.
+
+        参数解释：查询结果是否包含回收站负载均衡器  取值范围： - true ：包含回收站elb。 - false：不包含回收站elb。
+
+        :param include_recycle_bin: The include_recycle_bin of this ListLoadBalancersRequest.
+        :type include_recycle_bin: bool
+        """
+        self._include_recycle_bin = include_recycle_bin
 
     @property
     def provisioning_status(self):

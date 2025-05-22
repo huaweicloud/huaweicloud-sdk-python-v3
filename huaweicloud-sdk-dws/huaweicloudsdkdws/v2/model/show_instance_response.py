@@ -88,41 +88,41 @@ class ShowInstanceResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param configuration_status: 配置状态
+        :param configuration_status: **参数解释**： 配置状态。 **取值范围**： 不涉及。
         :type configuration_status: str
-        :param params_group_id: 参数组ID
+        :param params_group_id: **参数解释**： 参数组ID。 **取值范围**： 不涉及。
         :type params_group_id: str
-        :param type: 类型
+        :param type: **参数解释**： 类型。 **取值范围**： 不涉及。
         :type type: str
-        :param subnet_id: 子网ID
+        :param subnet_id: **参数解释**： 子网ID。 **取值范围**： 不涉及。
         :type subnet_id: str
-        :param role: 角色
+        :param role: **参数解释**： 角色。 **取值范围**： 不涉及。
         :type role: str
-        :param internal_subnet_id: 内部子网ID
+        :param internal_subnet_id: **参数解释**： 内部子网ID。 **取值范围**： 不涉及。
         :type internal_subnet_id: str
-        :param group: 组
+        :param group: **参数解释**： 分组信息。 **取值范围**： 不涉及。
         :type group: str
-        :param secure_group: 安全组
+        :param secure_group: **参数解释**： 安全组。 **取值范围**： 不涉及。
         :type secure_group: str
-        :param vpc: VPC
+        :param vpc: **参数解释**： VPC ID。 **取值范围**： 不涉及。
         :type vpc: str
-        :param azcode: 编码
+        :param azcode: **参数解释**： 可用区编码。 **取值范围**： 不涉及。
         :type azcode: str
-        :param region: 区域
+        :param region: **参数解释**： 局点编码。 **取值范围**： 不涉及。
         :type region: str
-        :param cluster_id: 集群ID
+        :param cluster_id: **参数解释**： 集群ID。 **取值范围**： 不涉及。
         :type cluster_id: str
-        :param created: 被创建的
+        :param created: **参数解释**： 创建时间。 **取值范围**： 不涉及。
         :type created: str
-        :param updated: 被更新的
+        :param updated: **参数解释**： 更新时间。 **取值范围**： 不涉及。
         :type updated: str
-        :param status: 状态
+        :param status: **参数解释**： 状态。 **取值范围**： 不涉及。
         :type status: str
-        :param name: 名称
+        :param name: **参数解释**： 节点名称。 **取值范围**： 不涉及。
         :type name: str
-        :param links: 连接
+        :param links: **参数解释**： 链接信息。 **取值范围**： 不涉及。
         :type links: list[:class:`huaweicloudsdkdws.v2.LinkResp`]
-        :param id: ID
+        :param id: **参数解释**： 节点ID。 **取值范围**： 不涉及。
         :type id: str
         :param flavor: 
         :type flavor: :class:`huaweicloudsdkdws.v2.ClusterFlavorResp`
@@ -134,19 +134,19 @@ class ShowInstanceResponse(SdkResponse):
         :type fault: :class:`huaweicloudsdkdws.v2.CompatibleFaultResp`
         :param configuration: 
         :type configuration: :class:`huaweicloudsdkdws.v2.CompatibleConfigurationResp`
-        :param locality: 地点
+        :param locality: **参数解释**： 废弃字段，无实际含义。 **取值范围**： 不涉及。
         :type locality: str
-        :param replicas: 备份
+        :param replicas: **参数解释**： 废弃字段，无实际含义。 **取值范围**： 不涉及。
         :type replicas: list[:class:`huaweicloudsdkdws.v2.CompatibleReplicasResp`]
-        :param db_user: 数据库用户
+        :param db_user: **参数解释**： 数据库用户。 **取值范围**： 不涉及。
         :type db_user: str
-        :param storage_engine: 存储引擎
+        :param storage_engine: **参数解释**： 存储引擎。 **取值范围**： 不涉及。
         :type storage_engine: str
-        :param pay_model: 付款方式
+        :param pay_model: **参数解释**： 付款方式。 **取值范围**： 不涉及。
         :type pay_model: int
-        :param public_ip: 公网IP
+        :param public_ip: **参数解释**： 公网IP。 **取值范围**： 不涉及。
         :type public_ip: str
-        :param traffic_ip: 流量IP
+        :param traffic_ip: **参数解释**： 流量IP。 **取值范围**： 不涉及。
         :type traffic_ip: str
         """
         
@@ -249,7 +249,7 @@ class ShowInstanceResponse(SdkResponse):
     def configuration_status(self):
         r"""Gets the configuration_status of this ShowInstanceResponse.
 
-        配置状态
+        **参数解释**： 配置状态。 **取值范围**： 不涉及。
 
         :return: The configuration_status of this ShowInstanceResponse.
         :rtype: str
@@ -260,7 +260,7 @@ class ShowInstanceResponse(SdkResponse):
     def configuration_status(self, configuration_status):
         r"""Sets the configuration_status of this ShowInstanceResponse.
 
-        配置状态
+        **参数解释**： 配置状态。 **取值范围**： 不涉及。
 
         :param configuration_status: The configuration_status of this ShowInstanceResponse.
         :type configuration_status: str
@@ -271,7 +271,7 @@ class ShowInstanceResponse(SdkResponse):
     def params_group_id(self):
         r"""Gets the params_group_id of this ShowInstanceResponse.
 
-        参数组ID
+        **参数解释**： 参数组ID。 **取值范围**： 不涉及。
 
         :return: The params_group_id of this ShowInstanceResponse.
         :rtype: str
@@ -282,7 +282,7 @@ class ShowInstanceResponse(SdkResponse):
     def params_group_id(self, params_group_id):
         r"""Sets the params_group_id of this ShowInstanceResponse.
 
-        参数组ID
+        **参数解释**： 参数组ID。 **取值范围**： 不涉及。
 
         :param params_group_id: The params_group_id of this ShowInstanceResponse.
         :type params_group_id: str
@@ -293,7 +293,7 @@ class ShowInstanceResponse(SdkResponse):
     def type(self):
         r"""Gets the type of this ShowInstanceResponse.
 
-        类型
+        **参数解释**： 类型。 **取值范围**： 不涉及。
 
         :return: The type of this ShowInstanceResponse.
         :rtype: str
@@ -304,7 +304,7 @@ class ShowInstanceResponse(SdkResponse):
     def type(self, type):
         r"""Sets the type of this ShowInstanceResponse.
 
-        类型
+        **参数解释**： 类型。 **取值范围**： 不涉及。
 
         :param type: The type of this ShowInstanceResponse.
         :type type: str
@@ -315,7 +315,7 @@ class ShowInstanceResponse(SdkResponse):
     def subnet_id(self):
         r"""Gets the subnet_id of this ShowInstanceResponse.
 
-        子网ID
+        **参数解释**： 子网ID。 **取值范围**： 不涉及。
 
         :return: The subnet_id of this ShowInstanceResponse.
         :rtype: str
@@ -326,7 +326,7 @@ class ShowInstanceResponse(SdkResponse):
     def subnet_id(self, subnet_id):
         r"""Sets the subnet_id of this ShowInstanceResponse.
 
-        子网ID
+        **参数解释**： 子网ID。 **取值范围**： 不涉及。
 
         :param subnet_id: The subnet_id of this ShowInstanceResponse.
         :type subnet_id: str
@@ -337,7 +337,7 @@ class ShowInstanceResponse(SdkResponse):
     def role(self):
         r"""Gets the role of this ShowInstanceResponse.
 
-        角色
+        **参数解释**： 角色。 **取值范围**： 不涉及。
 
         :return: The role of this ShowInstanceResponse.
         :rtype: str
@@ -348,7 +348,7 @@ class ShowInstanceResponse(SdkResponse):
     def role(self, role):
         r"""Sets the role of this ShowInstanceResponse.
 
-        角色
+        **参数解释**： 角色。 **取值范围**： 不涉及。
 
         :param role: The role of this ShowInstanceResponse.
         :type role: str
@@ -359,7 +359,7 @@ class ShowInstanceResponse(SdkResponse):
     def internal_subnet_id(self):
         r"""Gets the internal_subnet_id of this ShowInstanceResponse.
 
-        内部子网ID
+        **参数解释**： 内部子网ID。 **取值范围**： 不涉及。
 
         :return: The internal_subnet_id of this ShowInstanceResponse.
         :rtype: str
@@ -370,7 +370,7 @@ class ShowInstanceResponse(SdkResponse):
     def internal_subnet_id(self, internal_subnet_id):
         r"""Sets the internal_subnet_id of this ShowInstanceResponse.
 
-        内部子网ID
+        **参数解释**： 内部子网ID。 **取值范围**： 不涉及。
 
         :param internal_subnet_id: The internal_subnet_id of this ShowInstanceResponse.
         :type internal_subnet_id: str
@@ -381,7 +381,7 @@ class ShowInstanceResponse(SdkResponse):
     def group(self):
         r"""Gets the group of this ShowInstanceResponse.
 
-        组
+        **参数解释**： 分组信息。 **取值范围**： 不涉及。
 
         :return: The group of this ShowInstanceResponse.
         :rtype: str
@@ -392,7 +392,7 @@ class ShowInstanceResponse(SdkResponse):
     def group(self, group):
         r"""Sets the group of this ShowInstanceResponse.
 
-        组
+        **参数解释**： 分组信息。 **取值范围**： 不涉及。
 
         :param group: The group of this ShowInstanceResponse.
         :type group: str
@@ -403,7 +403,7 @@ class ShowInstanceResponse(SdkResponse):
     def secure_group(self):
         r"""Gets the secure_group of this ShowInstanceResponse.
 
-        安全组
+        **参数解释**： 安全组。 **取值范围**： 不涉及。
 
         :return: The secure_group of this ShowInstanceResponse.
         :rtype: str
@@ -414,7 +414,7 @@ class ShowInstanceResponse(SdkResponse):
     def secure_group(self, secure_group):
         r"""Sets the secure_group of this ShowInstanceResponse.
 
-        安全组
+        **参数解释**： 安全组。 **取值范围**： 不涉及。
 
         :param secure_group: The secure_group of this ShowInstanceResponse.
         :type secure_group: str
@@ -425,7 +425,7 @@ class ShowInstanceResponse(SdkResponse):
     def vpc(self):
         r"""Gets the vpc of this ShowInstanceResponse.
 
-        VPC
+        **参数解释**： VPC ID。 **取值范围**： 不涉及。
 
         :return: The vpc of this ShowInstanceResponse.
         :rtype: str
@@ -436,7 +436,7 @@ class ShowInstanceResponse(SdkResponse):
     def vpc(self, vpc):
         r"""Sets the vpc of this ShowInstanceResponse.
 
-        VPC
+        **参数解释**： VPC ID。 **取值范围**： 不涉及。
 
         :param vpc: The vpc of this ShowInstanceResponse.
         :type vpc: str
@@ -447,7 +447,7 @@ class ShowInstanceResponse(SdkResponse):
     def azcode(self):
         r"""Gets the azcode of this ShowInstanceResponse.
 
-        编码
+        **参数解释**： 可用区编码。 **取值范围**： 不涉及。
 
         :return: The azcode of this ShowInstanceResponse.
         :rtype: str
@@ -458,7 +458,7 @@ class ShowInstanceResponse(SdkResponse):
     def azcode(self, azcode):
         r"""Sets the azcode of this ShowInstanceResponse.
 
-        编码
+        **参数解释**： 可用区编码。 **取值范围**： 不涉及。
 
         :param azcode: The azcode of this ShowInstanceResponse.
         :type azcode: str
@@ -469,7 +469,7 @@ class ShowInstanceResponse(SdkResponse):
     def region(self):
         r"""Gets the region of this ShowInstanceResponse.
 
-        区域
+        **参数解释**： 局点编码。 **取值范围**： 不涉及。
 
         :return: The region of this ShowInstanceResponse.
         :rtype: str
@@ -480,7 +480,7 @@ class ShowInstanceResponse(SdkResponse):
     def region(self, region):
         r"""Sets the region of this ShowInstanceResponse.
 
-        区域
+        **参数解释**： 局点编码。 **取值范围**： 不涉及。
 
         :param region: The region of this ShowInstanceResponse.
         :type region: str
@@ -491,7 +491,7 @@ class ShowInstanceResponse(SdkResponse):
     def cluster_id(self):
         r"""Gets the cluster_id of this ShowInstanceResponse.
 
-        集群ID
+        **参数解释**： 集群ID。 **取值范围**： 不涉及。
 
         :return: The cluster_id of this ShowInstanceResponse.
         :rtype: str
@@ -502,7 +502,7 @@ class ShowInstanceResponse(SdkResponse):
     def cluster_id(self, cluster_id):
         r"""Sets the cluster_id of this ShowInstanceResponse.
 
-        集群ID
+        **参数解释**： 集群ID。 **取值范围**： 不涉及。
 
         :param cluster_id: The cluster_id of this ShowInstanceResponse.
         :type cluster_id: str
@@ -513,7 +513,7 @@ class ShowInstanceResponse(SdkResponse):
     def created(self):
         r"""Gets the created of this ShowInstanceResponse.
 
-        被创建的
+        **参数解释**： 创建时间。 **取值范围**： 不涉及。
 
         :return: The created of this ShowInstanceResponse.
         :rtype: str
@@ -524,7 +524,7 @@ class ShowInstanceResponse(SdkResponse):
     def created(self, created):
         r"""Sets the created of this ShowInstanceResponse.
 
-        被创建的
+        **参数解释**： 创建时间。 **取值范围**： 不涉及。
 
         :param created: The created of this ShowInstanceResponse.
         :type created: str
@@ -535,7 +535,7 @@ class ShowInstanceResponse(SdkResponse):
     def updated(self):
         r"""Gets the updated of this ShowInstanceResponse.
 
-        被更新的
+        **参数解释**： 更新时间。 **取值范围**： 不涉及。
 
         :return: The updated of this ShowInstanceResponse.
         :rtype: str
@@ -546,7 +546,7 @@ class ShowInstanceResponse(SdkResponse):
     def updated(self, updated):
         r"""Sets the updated of this ShowInstanceResponse.
 
-        被更新的
+        **参数解释**： 更新时间。 **取值范围**： 不涉及。
 
         :param updated: The updated of this ShowInstanceResponse.
         :type updated: str
@@ -557,7 +557,7 @@ class ShowInstanceResponse(SdkResponse):
     def status(self):
         r"""Gets the status of this ShowInstanceResponse.
 
-        状态
+        **参数解释**： 状态。 **取值范围**： 不涉及。
 
         :return: The status of this ShowInstanceResponse.
         :rtype: str
@@ -568,7 +568,7 @@ class ShowInstanceResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this ShowInstanceResponse.
 
-        状态
+        **参数解释**： 状态。 **取值范围**： 不涉及。
 
         :param status: The status of this ShowInstanceResponse.
         :type status: str
@@ -579,7 +579,7 @@ class ShowInstanceResponse(SdkResponse):
     def name(self):
         r"""Gets the name of this ShowInstanceResponse.
 
-        名称
+        **参数解释**： 节点名称。 **取值范围**： 不涉及。
 
         :return: The name of this ShowInstanceResponse.
         :rtype: str
@@ -590,7 +590,7 @@ class ShowInstanceResponse(SdkResponse):
     def name(self, name):
         r"""Sets the name of this ShowInstanceResponse.
 
-        名称
+        **参数解释**： 节点名称。 **取值范围**： 不涉及。
 
         :param name: The name of this ShowInstanceResponse.
         :type name: str
@@ -601,7 +601,7 @@ class ShowInstanceResponse(SdkResponse):
     def links(self):
         r"""Gets the links of this ShowInstanceResponse.
 
-        连接
+        **参数解释**： 链接信息。 **取值范围**： 不涉及。
 
         :return: The links of this ShowInstanceResponse.
         :rtype: list[:class:`huaweicloudsdkdws.v2.LinkResp`]
@@ -612,7 +612,7 @@ class ShowInstanceResponse(SdkResponse):
     def links(self, links):
         r"""Sets the links of this ShowInstanceResponse.
 
-        连接
+        **参数解释**： 链接信息。 **取值范围**： 不涉及。
 
         :param links: The links of this ShowInstanceResponse.
         :type links: list[:class:`huaweicloudsdkdws.v2.LinkResp`]
@@ -623,7 +623,7 @@ class ShowInstanceResponse(SdkResponse):
     def id(self):
         r"""Gets the id of this ShowInstanceResponse.
 
-        ID
+        **参数解释**： 节点ID。 **取值范围**： 不涉及。
 
         :return: The id of this ShowInstanceResponse.
         :rtype: str
@@ -634,7 +634,7 @@ class ShowInstanceResponse(SdkResponse):
     def id(self, id):
         r"""Sets the id of this ShowInstanceResponse.
 
-        ID
+        **参数解释**： 节点ID。 **取值范围**： 不涉及。
 
         :param id: The id of this ShowInstanceResponse.
         :type id: str
@@ -735,7 +735,7 @@ class ShowInstanceResponse(SdkResponse):
     def locality(self):
         r"""Gets the locality of this ShowInstanceResponse.
 
-        地点
+        **参数解释**： 废弃字段，无实际含义。 **取值范围**： 不涉及。
 
         :return: The locality of this ShowInstanceResponse.
         :rtype: str
@@ -746,7 +746,7 @@ class ShowInstanceResponse(SdkResponse):
     def locality(self, locality):
         r"""Sets the locality of this ShowInstanceResponse.
 
-        地点
+        **参数解释**： 废弃字段，无实际含义。 **取值范围**： 不涉及。
 
         :param locality: The locality of this ShowInstanceResponse.
         :type locality: str
@@ -757,7 +757,7 @@ class ShowInstanceResponse(SdkResponse):
     def replicas(self):
         r"""Gets the replicas of this ShowInstanceResponse.
 
-        备份
+        **参数解释**： 废弃字段，无实际含义。 **取值范围**： 不涉及。
 
         :return: The replicas of this ShowInstanceResponse.
         :rtype: list[:class:`huaweicloudsdkdws.v2.CompatibleReplicasResp`]
@@ -768,7 +768,7 @@ class ShowInstanceResponse(SdkResponse):
     def replicas(self, replicas):
         r"""Sets the replicas of this ShowInstanceResponse.
 
-        备份
+        **参数解释**： 废弃字段，无实际含义。 **取值范围**： 不涉及。
 
         :param replicas: The replicas of this ShowInstanceResponse.
         :type replicas: list[:class:`huaweicloudsdkdws.v2.CompatibleReplicasResp`]
@@ -779,7 +779,7 @@ class ShowInstanceResponse(SdkResponse):
     def db_user(self):
         r"""Gets the db_user of this ShowInstanceResponse.
 
-        数据库用户
+        **参数解释**： 数据库用户。 **取值范围**： 不涉及。
 
         :return: The db_user of this ShowInstanceResponse.
         :rtype: str
@@ -790,7 +790,7 @@ class ShowInstanceResponse(SdkResponse):
     def db_user(self, db_user):
         r"""Sets the db_user of this ShowInstanceResponse.
 
-        数据库用户
+        **参数解释**： 数据库用户。 **取值范围**： 不涉及。
 
         :param db_user: The db_user of this ShowInstanceResponse.
         :type db_user: str
@@ -801,7 +801,7 @@ class ShowInstanceResponse(SdkResponse):
     def storage_engine(self):
         r"""Gets the storage_engine of this ShowInstanceResponse.
 
-        存储引擎
+        **参数解释**： 存储引擎。 **取值范围**： 不涉及。
 
         :return: The storage_engine of this ShowInstanceResponse.
         :rtype: str
@@ -812,7 +812,7 @@ class ShowInstanceResponse(SdkResponse):
     def storage_engine(self, storage_engine):
         r"""Sets the storage_engine of this ShowInstanceResponse.
 
-        存储引擎
+        **参数解释**： 存储引擎。 **取值范围**： 不涉及。
 
         :param storage_engine: The storage_engine of this ShowInstanceResponse.
         :type storage_engine: str
@@ -823,7 +823,7 @@ class ShowInstanceResponse(SdkResponse):
     def pay_model(self):
         r"""Gets the pay_model of this ShowInstanceResponse.
 
-        付款方式
+        **参数解释**： 付款方式。 **取值范围**： 不涉及。
 
         :return: The pay_model of this ShowInstanceResponse.
         :rtype: int
@@ -834,7 +834,7 @@ class ShowInstanceResponse(SdkResponse):
     def pay_model(self, pay_model):
         r"""Sets the pay_model of this ShowInstanceResponse.
 
-        付款方式
+        **参数解释**： 付款方式。 **取值范围**： 不涉及。
 
         :param pay_model: The pay_model of this ShowInstanceResponse.
         :type pay_model: int
@@ -845,7 +845,7 @@ class ShowInstanceResponse(SdkResponse):
     def public_ip(self):
         r"""Gets the public_ip of this ShowInstanceResponse.
 
-        公网IP
+        **参数解释**： 公网IP。 **取值范围**： 不涉及。
 
         :return: The public_ip of this ShowInstanceResponse.
         :rtype: str
@@ -856,7 +856,7 @@ class ShowInstanceResponse(SdkResponse):
     def public_ip(self, public_ip):
         r"""Sets the public_ip of this ShowInstanceResponse.
 
-        公网IP
+        **参数解释**： 公网IP。 **取值范围**： 不涉及。
 
         :param public_ip: The public_ip of this ShowInstanceResponse.
         :type public_ip: str
@@ -867,7 +867,7 @@ class ShowInstanceResponse(SdkResponse):
     def traffic_ip(self):
         r"""Gets the traffic_ip of this ShowInstanceResponse.
 
-        流量IP
+        **参数解释**： 流量IP。 **取值范围**： 不涉及。
 
         :return: The traffic_ip of this ShowInstanceResponse.
         :rtype: str
@@ -878,7 +878,7 @@ class ShowInstanceResponse(SdkResponse):
     def traffic_ip(self, traffic_ip):
         r"""Sets the traffic_ip of this ShowInstanceResponse.
 
-        流量IP
+        **参数解释**： 流量IP。 **取值范围**： 不涉及。
 
         :param traffic_ip: The traffic_ip of this ShowInstanceResponse.
         :type traffic_ip: str

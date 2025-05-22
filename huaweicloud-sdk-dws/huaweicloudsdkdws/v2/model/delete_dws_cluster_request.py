@@ -33,11 +33,11 @@ class DeleteDwsClusterRequest:
 
         The model defined in huaweicloud sdk
 
-        :param cluster_id: 集群ID
+        :param cluster_id: **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
         :type cluster_id: str
-        :param keep_last_manual_backup: 集群需要保留的快照数
+        :param keep_last_manual_backup: **参数解释**： 集群需要保留的快照数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 0
         :type keep_last_manual_backup: str
-        :param release_eip_type: 集群是否释放弹性公网IP，默认是NO_RELEASE不释放绑定的弹性公网IP，RELEASE_BINDING释放绑定的弹性公网IP
+        :param release_eip_type: **参数解释**： 集群是否释放弹性公网IP，默认是NO_RELEASE，不释放绑定的弹性公网IP。 **约束限制**： 不涉及。 **取值范围**： NO_RELEASE：不释放绑定的弹性公网IP； RELEASE_BINDING：释放绑定的弹性公网IP； **默认取值**： NO_RELEASE
         :type release_eip_type: str
         """
         
@@ -58,7 +58,7 @@ class DeleteDwsClusterRequest:
     def cluster_id(self):
         r"""Gets the cluster_id of this DeleteDwsClusterRequest.
 
-        集群ID
+        **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
 
         :return: The cluster_id of this DeleteDwsClusterRequest.
         :rtype: str
@@ -69,7 +69,7 @@ class DeleteDwsClusterRequest:
     def cluster_id(self, cluster_id):
         r"""Sets the cluster_id of this DeleteDwsClusterRequest.
 
-        集群ID
+        **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
 
         :param cluster_id: The cluster_id of this DeleteDwsClusterRequest.
         :type cluster_id: str
@@ -80,7 +80,7 @@ class DeleteDwsClusterRequest:
     def keep_last_manual_backup(self):
         r"""Gets the keep_last_manual_backup of this DeleteDwsClusterRequest.
 
-        集群需要保留的快照数
+        **参数解释**： 集群需要保留的快照数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 0
 
         :return: The keep_last_manual_backup of this DeleteDwsClusterRequest.
         :rtype: str
@@ -91,7 +91,7 @@ class DeleteDwsClusterRequest:
     def keep_last_manual_backup(self, keep_last_manual_backup):
         r"""Sets the keep_last_manual_backup of this DeleteDwsClusterRequest.
 
-        集群需要保留的快照数
+        **参数解释**： 集群需要保留的快照数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 0
 
         :param keep_last_manual_backup: The keep_last_manual_backup of this DeleteDwsClusterRequest.
         :type keep_last_manual_backup: str
@@ -102,7 +102,7 @@ class DeleteDwsClusterRequest:
     def release_eip_type(self):
         r"""Gets the release_eip_type of this DeleteDwsClusterRequest.
 
-        集群是否释放弹性公网IP，默认是NO_RELEASE不释放绑定的弹性公网IP，RELEASE_BINDING释放绑定的弹性公网IP
+        **参数解释**： 集群是否释放弹性公网IP，默认是NO_RELEASE，不释放绑定的弹性公网IP。 **约束限制**： 不涉及。 **取值范围**： NO_RELEASE：不释放绑定的弹性公网IP； RELEASE_BINDING：释放绑定的弹性公网IP； **默认取值**： NO_RELEASE
 
         :return: The release_eip_type of this DeleteDwsClusterRequest.
         :rtype: str
@@ -113,7 +113,7 @@ class DeleteDwsClusterRequest:
     def release_eip_type(self, release_eip_type):
         r"""Sets the release_eip_type of this DeleteDwsClusterRequest.
 
-        集群是否释放弹性公网IP，默认是NO_RELEASE不释放绑定的弹性公网IP，RELEASE_BINDING释放绑定的弹性公网IP
+        **参数解释**： 集群是否释放弹性公网IP，默认是NO_RELEASE，不释放绑定的弹性公网IP。 **约束限制**： 不涉及。 **取值范围**： NO_RELEASE：不释放绑定的弹性公网IP； RELEASE_BINDING：释放绑定的弹性公网IP； **默认取值**： NO_RELEASE
 
         :param release_eip_type: The release_eip_type of this DeleteDwsClusterRequest.
         :type release_eip_type: str

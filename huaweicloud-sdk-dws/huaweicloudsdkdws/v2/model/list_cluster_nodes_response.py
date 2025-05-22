@@ -34,11 +34,11 @@ class ListClusterNodesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param node_list: 逻辑集群节点列表
+        :param node_list: **参数解释**： 集群节点列表。 **取值范围**： 不涉及。
         :type node_list: list[:class:`huaweicloudsdkdws.v2.ClusterNodeInfo`]
-        :param count: 逻辑集群节点总数
+        :param count: **参数解释**： 集群节点总数。 **取值范围**： 大于0的整数。
         :type count: int
-        :param failed_count: 逻辑集群节点失败总数
+        :param failed_count: **参数解释**： 逻辑集群节点失败总数。一般为0。 **取值范围**： 大于等于0的整数。
         :type failed_count: int
         """
         
@@ -60,7 +60,7 @@ class ListClusterNodesResponse(SdkResponse):
     def node_list(self):
         r"""Gets the node_list of this ListClusterNodesResponse.
 
-        逻辑集群节点列表
+        **参数解释**： 集群节点列表。 **取值范围**： 不涉及。
 
         :return: The node_list of this ListClusterNodesResponse.
         :rtype: list[:class:`huaweicloudsdkdws.v2.ClusterNodeInfo`]
@@ -71,7 +71,7 @@ class ListClusterNodesResponse(SdkResponse):
     def node_list(self, node_list):
         r"""Sets the node_list of this ListClusterNodesResponse.
 
-        逻辑集群节点列表
+        **参数解释**： 集群节点列表。 **取值范围**： 不涉及。
 
         :param node_list: The node_list of this ListClusterNodesResponse.
         :type node_list: list[:class:`huaweicloudsdkdws.v2.ClusterNodeInfo`]
@@ -82,7 +82,7 @@ class ListClusterNodesResponse(SdkResponse):
     def count(self):
         r"""Gets the count of this ListClusterNodesResponse.
 
-        逻辑集群节点总数
+        **参数解释**： 集群节点总数。 **取值范围**： 大于0的整数。
 
         :return: The count of this ListClusterNodesResponse.
         :rtype: int
@@ -93,7 +93,7 @@ class ListClusterNodesResponse(SdkResponse):
     def count(self, count):
         r"""Sets the count of this ListClusterNodesResponse.
 
-        逻辑集群节点总数
+        **参数解释**： 集群节点总数。 **取值范围**： 大于0的整数。
 
         :param count: The count of this ListClusterNodesResponse.
         :type count: int
@@ -104,7 +104,7 @@ class ListClusterNodesResponse(SdkResponse):
     def failed_count(self):
         r"""Gets the failed_count of this ListClusterNodesResponse.
 
-        逻辑集群节点失败总数
+        **参数解释**： 逻辑集群节点失败总数。一般为0。 **取值范围**： 大于等于0的整数。
 
         :return: The failed_count of this ListClusterNodesResponse.
         :rtype: int
@@ -115,7 +115,7 @@ class ListClusterNodesResponse(SdkResponse):
     def failed_count(self, failed_count):
         r"""Sets the failed_count of this ListClusterNodesResponse.
 
-        逻辑集群节点失败总数
+        **参数解释**： 逻辑集群节点失败总数。一般为0。 **取值范围**： 大于等于0的整数。
 
         :param failed_count: The failed_count of this ListClusterNodesResponse.
         :type failed_count: int

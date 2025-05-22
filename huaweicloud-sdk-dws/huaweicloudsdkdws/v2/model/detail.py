@@ -33,11 +33,11 @@ class Detail:
 
         The model defined in huaweicloud sdk
 
-        :param type: 属性类型。
+        :param type: **参数解释**： 属性类型。 **取值范围**： 不涉及。
         :type type: str
-        :param value: 属性值。
+        :param value: **参数解释**： 属性值。 **取值范围**： 不涉及。
         :type value: str
-        :param unit: 属性单位。
+        :param unit: **参数解释**： 属性单位。 **取值范围**： 不涉及。
         :type unit: str
         """
         
@@ -51,13 +51,14 @@ class Detail:
         if type is not None:
             self.type = type
         self.value = value
-        self.unit = unit
+        if unit is not None:
+            self.unit = unit
 
     @property
     def type(self):
         r"""Gets the type of this Detail.
 
-        属性类型。
+        **参数解释**： 属性类型。 **取值范围**： 不涉及。
 
         :return: The type of this Detail.
         :rtype: str
@@ -68,7 +69,7 @@ class Detail:
     def type(self, type):
         r"""Sets the type of this Detail.
 
-        属性类型。
+        **参数解释**： 属性类型。 **取值范围**： 不涉及。
 
         :param type: The type of this Detail.
         :type type: str
@@ -79,7 +80,7 @@ class Detail:
     def value(self):
         r"""Gets the value of this Detail.
 
-        属性值。
+        **参数解释**： 属性值。 **取值范围**： 不涉及。
 
         :return: The value of this Detail.
         :rtype: str
@@ -90,7 +91,7 @@ class Detail:
     def value(self, value):
         r"""Sets the value of this Detail.
 
-        属性值。
+        **参数解释**： 属性值。 **取值范围**： 不涉及。
 
         :param value: The value of this Detail.
         :type value: str
@@ -101,7 +102,7 @@ class Detail:
     def unit(self):
         r"""Gets the unit of this Detail.
 
-        属性单位。
+        **参数解释**： 属性单位。 **取值范围**： 不涉及。
 
         :return: The unit of this Detail.
         :rtype: str
@@ -112,7 +113,7 @@ class Detail:
     def unit(self, unit):
         r"""Sets the unit of this Detail.
 
-        属性单位。
+        **参数解释**： 属性单位。 **取值范围**： 不涉及。
 
         :param unit: The unit of this Detail.
         :type unit: str

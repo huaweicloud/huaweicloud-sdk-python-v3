@@ -18,20 +18,51 @@ class StopRedistributionResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'body': 'object'
     }
 
     attribute_map = {
+        'body': 'body'
     }
 
-    def __init__(self):
+    def __init__(self, body=None):
         r"""StopRedistributionResponse
 
         The model defined in huaweicloud sdk
 
+        :param body: **参数解释**： 请求成功时的空白响应。 **取值范围**： 不涉及。
+        :type body: object
         """
         
         super(StopRedistributionResponse, self).__init__()
+
+        self._body = None
         self.discriminator = None
+
+        if body is not None:
+            self.body = body
+
+    @property
+    def body(self):
+        r"""Gets the body of this StopRedistributionResponse.
+
+        **参数解释**： 请求成功时的空白响应。 **取值范围**： 不涉及。
+
+        :return: The body of this StopRedistributionResponse.
+        :rtype: object
+        """
+        return self._body
+
+    @body.setter
+    def body(self, body):
+        r"""Sets the body of this StopRedistributionResponse.
+
+        **参数解释**： 请求成功时的空白响应。 **取值范围**： 不涉及。
+
+        :param body: The body of this StopRedistributionResponse.
+        :type body: object
+        """
+        self._body = body
 
     def to_dict(self):
         """Returns the model properties as a dict"""

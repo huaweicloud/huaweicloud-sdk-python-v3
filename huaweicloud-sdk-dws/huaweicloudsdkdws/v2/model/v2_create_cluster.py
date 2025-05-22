@@ -69,47 +69,47 @@ class V2CreateCluster:
 
         The model defined in huaweicloud sdk
 
-        :param name: 集群名称，要求唯一性，必须以字母开头并只包含字母、数字、中划线或下划线，长度为4~64个字符。
+        :param name: **参数解释**： 集群名称，要求唯一性。 **约束限制**： 不涉及。 **取值范围**： 要求唯一性，必须以字母开头并只包含字母、数字、中划线或下划线，长度为4~64个字符。 **默认取值**： 不涉及。
         :type name: str
-        :param flavor: 集群规格名称。节点类型详情请参见数据仓库类型数据仓库类型。
+        :param flavor: **参数解释**： 集群规格编码。 **约束限制**： 不涉及。 **取值范围**： 请参见集群规格接口返回的规格编码。 **默认取值**： 不涉及。
         :type flavor: str
-        :param num_cn: 集群CN数量，取值范围为2~集群节点数，最大值为20，默认值为3。
+        :param num_cn: **参数解释**： 集群CN数量。 **约束限制**： 不涉及。 **取值范围**： 取值范围为2~集群节点数，最大值为20，默认值为3。 **默认取值**： 不涉及。
         :type num_cn: int
-        :param num_node: 集群节点数量，集群模式取值范围为3~256，实时数仓（单机模式）取值为1。
+        :param num_node: **参数解释**： 集群节点数量。 **约束限制**： 不涉及。 **取值范围**： 集群模式取值范围为3~256，实时数仓（单机模式）取值为1。 **默认取值**： 不涉及。
         :type num_node: int
-        :param db_name: 管理员用户名称。用户命名要求如下： 只能由小写字母、数字或下划线组成。 必须由小写字母或下划线开头。 长度为1~63个字符。用户名不能为DWS数据库的关键字。
+        :param db_name: **参数解释**： 管理员用户名称。 **约束限制**： 不涉及。 **取值范围**： 只能由小写字母、数字或下划线组成。 必须由小写字母或下划线开头。 长度为1~63个字符。 用户名不能为DWS数据库的关键字。 **默认取值**： 不涉及。
         :type db_name: str
-        :param db_password: 管理员用户密码。 12~32个字符 至少包含以下字符中的3种：大写字母、小写字母、数字和特殊字符（~!?,.:;-_(){}[]/&lt;&gt;@#%^&amp;*+|\\&#x3D;）。不能与用户名或倒序的用户名相同。
+        :param db_password: **参数解释**： 管理员用户密码。 **约束限制**： 不涉及。 **取值范围**： 12~32个字符； 至少包含以下字符中的3种：大写字母、小写字母、数字和特殊字符（~!?,.:;-_(){}[]/&lt;&gt;@#%^&amp;*+|\\&#x3D;）。 不能与用户名或倒序的用户名相同。 **默认取值**： 不涉及。
         :type db_password: str
-        :param db_port: 集群数据库端口，取值范围为8000~30000，默认值：8000。
+        :param db_port: **参数解释**： 集群数据库端口。 **约束限制**： 不涉及。 **取值范围**： 8000~30000 **默认取值**： 8000
         :type db_port: int
-        :param dss_pool_id: 专属存储池ID
+        :param dss_pool_id: **参数解释**： 专属存储池ID，一般不需要填写。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： null
         :type dss_pool_id: str
-        :param availability_zones: 可用区列表。集群可用区选择详情请参见地区和终端节点地区和终端节点。
+        :param availability_zones: **参数解释**： 可用区列表。 **约束限制**： 不涉及。 **取值范围**： 集群可用区选择详情请参见地区和终端节点地区和终端节点。 **默认取值**： 不涉及。
         :type availability_zones: list[str]
-        :param tags: 标签列表
+        :param tags: **参数解释**： 标签信息。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type tags: list[:class:`huaweicloudsdkdws.v2.Tags`]
-        :param vpc_id: 指定虚拟私有云ID，用于集群网络配置。
+        :param vpc_id: **参数解释**： 指定虚拟私有云ID，用于集群网络配置。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type vpc_id: str
-        :param subnet_id: 指定子网ID，用于集群网络配置。
+        :param subnet_id: **参数解释**： 指定子网ID，用于集群网络配置。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type subnet_id: str
-        :param security_group_id: 指定安全组ID，用于集群网络配置。
+        :param security_group_id: **参数解释**： 指定安全组ID，用于集群网络配置。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type security_group_id: str
         :param public_ip: 
         :type public_ip: :class:`huaweicloudsdkdws.v2.PublicIp`
-        :param datastore_version: 集群版本
+        :param datastore_version: **参数解释**： 集群版本。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type datastore_version: str
-        :param master_key_id: 密钥ID
+        :param master_key_id: **参数解释**： KMS密钥ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type master_key_id: str
-        :param master_key_name: 密钥名称
+        :param master_key_name: **参数解释**： KMS密钥名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type master_key_name: str
-        :param crypt_algorithm: 加密算法
+        :param crypt_algorithm: **参数解释**： KMS加密算法。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type crypt_algorithm: str
         :param volume: 
         :type volume: :class:`huaweicloudsdkdws.v2.Volume`
-        :param enterprise_project_id: 企业项目ID，对集群指定企业项目，如果未指定，则使用默认企业项目“default”的ID，即0。
+        :param enterprise_project_id: **参数解释**： 企业项目ID，对集群指定企业项目。如果未指定，则使用默认企业项目“default”的ID，即0。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 0
         :type enterprise_project_id: str
-        :param ipv6_enable: 指定网络协议类型，表明是否支持IPv6,默认不使用IPv6。
+        :param ipv6_enable: **参数解释**： 指定网络协议类型，表明是否支持IPv6，默认不使用IPv6。使用ipv6时必须所选择的子网也支持ipv6。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type ipv6_enable: bool
         """
         
@@ -140,7 +140,8 @@ class V2CreateCluster:
 
         self.name = name
         self.flavor = flavor
-        self.num_cn = num_cn
+        if num_cn is not None:
+            self.num_cn = num_cn
         self.num_node = num_node
         self.db_name = db_name
         self.db_password = db_password
@@ -173,7 +174,7 @@ class V2CreateCluster:
     def name(self):
         r"""Gets the name of this V2CreateCluster.
 
-        集群名称，要求唯一性，必须以字母开头并只包含字母、数字、中划线或下划线，长度为4~64个字符。
+        **参数解释**： 集群名称，要求唯一性。 **约束限制**： 不涉及。 **取值范围**： 要求唯一性，必须以字母开头并只包含字母、数字、中划线或下划线，长度为4~64个字符。 **默认取值**： 不涉及。
 
         :return: The name of this V2CreateCluster.
         :rtype: str
@@ -184,7 +185,7 @@ class V2CreateCluster:
     def name(self, name):
         r"""Sets the name of this V2CreateCluster.
 
-        集群名称，要求唯一性，必须以字母开头并只包含字母、数字、中划线或下划线，长度为4~64个字符。
+        **参数解释**： 集群名称，要求唯一性。 **约束限制**： 不涉及。 **取值范围**： 要求唯一性，必须以字母开头并只包含字母、数字、中划线或下划线，长度为4~64个字符。 **默认取值**： 不涉及。
 
         :param name: The name of this V2CreateCluster.
         :type name: str
@@ -195,7 +196,7 @@ class V2CreateCluster:
     def flavor(self):
         r"""Gets the flavor of this V2CreateCluster.
 
-        集群规格名称。节点类型详情请参见数据仓库类型数据仓库类型。
+        **参数解释**： 集群规格编码。 **约束限制**： 不涉及。 **取值范围**： 请参见集群规格接口返回的规格编码。 **默认取值**： 不涉及。
 
         :return: The flavor of this V2CreateCluster.
         :rtype: str
@@ -206,7 +207,7 @@ class V2CreateCluster:
     def flavor(self, flavor):
         r"""Sets the flavor of this V2CreateCluster.
 
-        集群规格名称。节点类型详情请参见数据仓库类型数据仓库类型。
+        **参数解释**： 集群规格编码。 **约束限制**： 不涉及。 **取值范围**： 请参见集群规格接口返回的规格编码。 **默认取值**： 不涉及。
 
         :param flavor: The flavor of this V2CreateCluster.
         :type flavor: str
@@ -217,7 +218,7 @@ class V2CreateCluster:
     def num_cn(self):
         r"""Gets the num_cn of this V2CreateCluster.
 
-        集群CN数量，取值范围为2~集群节点数，最大值为20，默认值为3。
+        **参数解释**： 集群CN数量。 **约束限制**： 不涉及。 **取值范围**： 取值范围为2~集群节点数，最大值为20，默认值为3。 **默认取值**： 不涉及。
 
         :return: The num_cn of this V2CreateCluster.
         :rtype: int
@@ -228,7 +229,7 @@ class V2CreateCluster:
     def num_cn(self, num_cn):
         r"""Sets the num_cn of this V2CreateCluster.
 
-        集群CN数量，取值范围为2~集群节点数，最大值为20，默认值为3。
+        **参数解释**： 集群CN数量。 **约束限制**： 不涉及。 **取值范围**： 取值范围为2~集群节点数，最大值为20，默认值为3。 **默认取值**： 不涉及。
 
         :param num_cn: The num_cn of this V2CreateCluster.
         :type num_cn: int
@@ -239,7 +240,7 @@ class V2CreateCluster:
     def num_node(self):
         r"""Gets the num_node of this V2CreateCluster.
 
-        集群节点数量，集群模式取值范围为3~256，实时数仓（单机模式）取值为1。
+        **参数解释**： 集群节点数量。 **约束限制**： 不涉及。 **取值范围**： 集群模式取值范围为3~256，实时数仓（单机模式）取值为1。 **默认取值**： 不涉及。
 
         :return: The num_node of this V2CreateCluster.
         :rtype: int
@@ -250,7 +251,7 @@ class V2CreateCluster:
     def num_node(self, num_node):
         r"""Sets the num_node of this V2CreateCluster.
 
-        集群节点数量，集群模式取值范围为3~256，实时数仓（单机模式）取值为1。
+        **参数解释**： 集群节点数量。 **约束限制**： 不涉及。 **取值范围**： 集群模式取值范围为3~256，实时数仓（单机模式）取值为1。 **默认取值**： 不涉及。
 
         :param num_node: The num_node of this V2CreateCluster.
         :type num_node: int
@@ -261,7 +262,7 @@ class V2CreateCluster:
     def db_name(self):
         r"""Gets the db_name of this V2CreateCluster.
 
-        管理员用户名称。用户命名要求如下： 只能由小写字母、数字或下划线组成。 必须由小写字母或下划线开头。 长度为1~63个字符。用户名不能为DWS数据库的关键字。
+        **参数解释**： 管理员用户名称。 **约束限制**： 不涉及。 **取值范围**： 只能由小写字母、数字或下划线组成。 必须由小写字母或下划线开头。 长度为1~63个字符。 用户名不能为DWS数据库的关键字。 **默认取值**： 不涉及。
 
         :return: The db_name of this V2CreateCluster.
         :rtype: str
@@ -272,7 +273,7 @@ class V2CreateCluster:
     def db_name(self, db_name):
         r"""Sets the db_name of this V2CreateCluster.
 
-        管理员用户名称。用户命名要求如下： 只能由小写字母、数字或下划线组成。 必须由小写字母或下划线开头。 长度为1~63个字符。用户名不能为DWS数据库的关键字。
+        **参数解释**： 管理员用户名称。 **约束限制**： 不涉及。 **取值范围**： 只能由小写字母、数字或下划线组成。 必须由小写字母或下划线开头。 长度为1~63个字符。 用户名不能为DWS数据库的关键字。 **默认取值**： 不涉及。
 
         :param db_name: The db_name of this V2CreateCluster.
         :type db_name: str
@@ -283,7 +284,7 @@ class V2CreateCluster:
     def db_password(self):
         r"""Gets the db_password of this V2CreateCluster.
 
-        管理员用户密码。 12~32个字符 至少包含以下字符中的3种：大写字母、小写字母、数字和特殊字符（~!?,.:;-_(){}[]/<>@#%^&*+|\\=）。不能与用户名或倒序的用户名相同。
+        **参数解释**： 管理员用户密码。 **约束限制**： 不涉及。 **取值范围**： 12~32个字符； 至少包含以下字符中的3种：大写字母、小写字母、数字和特殊字符（~!?,.:;-_(){}[]/<>@#%^&*+|\\=）。 不能与用户名或倒序的用户名相同。 **默认取值**： 不涉及。
 
         :return: The db_password of this V2CreateCluster.
         :rtype: str
@@ -294,7 +295,7 @@ class V2CreateCluster:
     def db_password(self, db_password):
         r"""Sets the db_password of this V2CreateCluster.
 
-        管理员用户密码。 12~32个字符 至少包含以下字符中的3种：大写字母、小写字母、数字和特殊字符（~!?,.:;-_(){}[]/<>@#%^&*+|\\=）。不能与用户名或倒序的用户名相同。
+        **参数解释**： 管理员用户密码。 **约束限制**： 不涉及。 **取值范围**： 12~32个字符； 至少包含以下字符中的3种：大写字母、小写字母、数字和特殊字符（~!?,.:;-_(){}[]/<>@#%^&*+|\\=）。 不能与用户名或倒序的用户名相同。 **默认取值**： 不涉及。
 
         :param db_password: The db_password of this V2CreateCluster.
         :type db_password: str
@@ -305,7 +306,7 @@ class V2CreateCluster:
     def db_port(self):
         r"""Gets the db_port of this V2CreateCluster.
 
-        集群数据库端口，取值范围为8000~30000，默认值：8000。
+        **参数解释**： 集群数据库端口。 **约束限制**： 不涉及。 **取值范围**： 8000~30000 **默认取值**： 8000
 
         :return: The db_port of this V2CreateCluster.
         :rtype: int
@@ -316,7 +317,7 @@ class V2CreateCluster:
     def db_port(self, db_port):
         r"""Sets the db_port of this V2CreateCluster.
 
-        集群数据库端口，取值范围为8000~30000，默认值：8000。
+        **参数解释**： 集群数据库端口。 **约束限制**： 不涉及。 **取值范围**： 8000~30000 **默认取值**： 8000
 
         :param db_port: The db_port of this V2CreateCluster.
         :type db_port: int
@@ -327,7 +328,7 @@ class V2CreateCluster:
     def dss_pool_id(self):
         r"""Gets the dss_pool_id of this V2CreateCluster.
 
-        专属存储池ID
+        **参数解释**： 专属存储池ID，一般不需要填写。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： null
 
         :return: The dss_pool_id of this V2CreateCluster.
         :rtype: str
@@ -338,7 +339,7 @@ class V2CreateCluster:
     def dss_pool_id(self, dss_pool_id):
         r"""Sets the dss_pool_id of this V2CreateCluster.
 
-        专属存储池ID
+        **参数解释**： 专属存储池ID，一般不需要填写。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： null
 
         :param dss_pool_id: The dss_pool_id of this V2CreateCluster.
         :type dss_pool_id: str
@@ -349,7 +350,7 @@ class V2CreateCluster:
     def availability_zones(self):
         r"""Gets the availability_zones of this V2CreateCluster.
 
-        可用区列表。集群可用区选择详情请参见地区和终端节点地区和终端节点。
+        **参数解释**： 可用区列表。 **约束限制**： 不涉及。 **取值范围**： 集群可用区选择详情请参见地区和终端节点地区和终端节点。 **默认取值**： 不涉及。
 
         :return: The availability_zones of this V2CreateCluster.
         :rtype: list[str]
@@ -360,7 +361,7 @@ class V2CreateCluster:
     def availability_zones(self, availability_zones):
         r"""Sets the availability_zones of this V2CreateCluster.
 
-        可用区列表。集群可用区选择详情请参见地区和终端节点地区和终端节点。
+        **参数解释**： 可用区列表。 **约束限制**： 不涉及。 **取值范围**： 集群可用区选择详情请参见地区和终端节点地区和终端节点。 **默认取值**： 不涉及。
 
         :param availability_zones: The availability_zones of this V2CreateCluster.
         :type availability_zones: list[str]
@@ -371,7 +372,7 @@ class V2CreateCluster:
     def tags(self):
         r"""Gets the tags of this V2CreateCluster.
 
-        标签列表
+        **参数解释**： 标签信息。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The tags of this V2CreateCluster.
         :rtype: list[:class:`huaweicloudsdkdws.v2.Tags`]
@@ -382,7 +383,7 @@ class V2CreateCluster:
     def tags(self, tags):
         r"""Sets the tags of this V2CreateCluster.
 
-        标签列表
+        **参数解释**： 标签信息。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param tags: The tags of this V2CreateCluster.
         :type tags: list[:class:`huaweicloudsdkdws.v2.Tags`]
@@ -393,7 +394,7 @@ class V2CreateCluster:
     def vpc_id(self):
         r"""Gets the vpc_id of this V2CreateCluster.
 
-        指定虚拟私有云ID，用于集群网络配置。
+        **参数解释**： 指定虚拟私有云ID，用于集群网络配置。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The vpc_id of this V2CreateCluster.
         :rtype: str
@@ -404,7 +405,7 @@ class V2CreateCluster:
     def vpc_id(self, vpc_id):
         r"""Sets the vpc_id of this V2CreateCluster.
 
-        指定虚拟私有云ID，用于集群网络配置。
+        **参数解释**： 指定虚拟私有云ID，用于集群网络配置。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param vpc_id: The vpc_id of this V2CreateCluster.
         :type vpc_id: str
@@ -415,7 +416,7 @@ class V2CreateCluster:
     def subnet_id(self):
         r"""Gets the subnet_id of this V2CreateCluster.
 
-        指定子网ID，用于集群网络配置。
+        **参数解释**： 指定子网ID，用于集群网络配置。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The subnet_id of this V2CreateCluster.
         :rtype: str
@@ -426,7 +427,7 @@ class V2CreateCluster:
     def subnet_id(self, subnet_id):
         r"""Sets the subnet_id of this V2CreateCluster.
 
-        指定子网ID，用于集群网络配置。
+        **参数解释**： 指定子网ID，用于集群网络配置。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param subnet_id: The subnet_id of this V2CreateCluster.
         :type subnet_id: str
@@ -437,7 +438,7 @@ class V2CreateCluster:
     def security_group_id(self):
         r"""Gets the security_group_id of this V2CreateCluster.
 
-        指定安全组ID，用于集群网络配置。
+        **参数解释**： 指定安全组ID，用于集群网络配置。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The security_group_id of this V2CreateCluster.
         :rtype: str
@@ -448,7 +449,7 @@ class V2CreateCluster:
     def security_group_id(self, security_group_id):
         r"""Sets the security_group_id of this V2CreateCluster.
 
-        指定安全组ID，用于集群网络配置。
+        **参数解释**： 指定安全组ID，用于集群网络配置。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param security_group_id: The security_group_id of this V2CreateCluster.
         :type security_group_id: str
@@ -477,7 +478,7 @@ class V2CreateCluster:
     def datastore_version(self):
         r"""Gets the datastore_version of this V2CreateCluster.
 
-        集群版本
+        **参数解释**： 集群版本。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The datastore_version of this V2CreateCluster.
         :rtype: str
@@ -488,7 +489,7 @@ class V2CreateCluster:
     def datastore_version(self, datastore_version):
         r"""Sets the datastore_version of this V2CreateCluster.
 
-        集群版本
+        **参数解释**： 集群版本。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param datastore_version: The datastore_version of this V2CreateCluster.
         :type datastore_version: str
@@ -499,7 +500,7 @@ class V2CreateCluster:
     def master_key_id(self):
         r"""Gets the master_key_id of this V2CreateCluster.
 
-        密钥ID
+        **参数解释**： KMS密钥ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The master_key_id of this V2CreateCluster.
         :rtype: str
@@ -510,7 +511,7 @@ class V2CreateCluster:
     def master_key_id(self, master_key_id):
         r"""Sets the master_key_id of this V2CreateCluster.
 
-        密钥ID
+        **参数解释**： KMS密钥ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param master_key_id: The master_key_id of this V2CreateCluster.
         :type master_key_id: str
@@ -521,7 +522,7 @@ class V2CreateCluster:
     def master_key_name(self):
         r"""Gets the master_key_name of this V2CreateCluster.
 
-        密钥名称
+        **参数解释**： KMS密钥名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The master_key_name of this V2CreateCluster.
         :rtype: str
@@ -532,7 +533,7 @@ class V2CreateCluster:
     def master_key_name(self, master_key_name):
         r"""Sets the master_key_name of this V2CreateCluster.
 
-        密钥名称
+        **参数解释**： KMS密钥名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param master_key_name: The master_key_name of this V2CreateCluster.
         :type master_key_name: str
@@ -543,7 +544,7 @@ class V2CreateCluster:
     def crypt_algorithm(self):
         r"""Gets the crypt_algorithm of this V2CreateCluster.
 
-        加密算法
+        **参数解释**： KMS加密算法。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The crypt_algorithm of this V2CreateCluster.
         :rtype: str
@@ -554,7 +555,7 @@ class V2CreateCluster:
     def crypt_algorithm(self, crypt_algorithm):
         r"""Sets the crypt_algorithm of this V2CreateCluster.
 
-        加密算法
+        **参数解释**： KMS加密算法。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param crypt_algorithm: The crypt_algorithm of this V2CreateCluster.
         :type crypt_algorithm: str
@@ -583,7 +584,7 @@ class V2CreateCluster:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this V2CreateCluster.
 
-        企业项目ID，对集群指定企业项目，如果未指定，则使用默认企业项目“default”的ID，即0。
+        **参数解释**： 企业项目ID，对集群指定企业项目。如果未指定，则使用默认企业项目“default”的ID，即0。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 0
 
         :return: The enterprise_project_id of this V2CreateCluster.
         :rtype: str
@@ -594,7 +595,7 @@ class V2CreateCluster:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this V2CreateCluster.
 
-        企业项目ID，对集群指定企业项目，如果未指定，则使用默认企业项目“default”的ID，即0。
+        **参数解释**： 企业项目ID，对集群指定企业项目。如果未指定，则使用默认企业项目“default”的ID，即0。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 0
 
         :param enterprise_project_id: The enterprise_project_id of this V2CreateCluster.
         :type enterprise_project_id: str
@@ -605,7 +606,7 @@ class V2CreateCluster:
     def ipv6_enable(self):
         r"""Gets the ipv6_enable of this V2CreateCluster.
 
-        指定网络协议类型，表明是否支持IPv6,默认不使用IPv6。
+        **参数解释**： 指定网络协议类型，表明是否支持IPv6，默认不使用IPv6。使用ipv6时必须所选择的子网也支持ipv6。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The ipv6_enable of this V2CreateCluster.
         :rtype: bool
@@ -616,7 +617,7 @@ class V2CreateCluster:
     def ipv6_enable(self, ipv6_enable):
         r"""Sets the ipv6_enable of this V2CreateCluster.
 
-        指定网络协议类型，表明是否支持IPv6,默认不使用IPv6。
+        **参数解释**： 指定网络协议类型，表明是否支持IPv6，默认不使用IPv6。使用ipv6时必须所选择的子网也支持ipv6。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param ipv6_enable: The ipv6_enable of this V2CreateCluster.
         :type ipv6_enable: bool

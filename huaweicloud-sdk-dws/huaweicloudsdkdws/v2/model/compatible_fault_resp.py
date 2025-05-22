@@ -33,11 +33,11 @@ class CompatibleFaultResp:
 
         The model defined in huaweicloud sdk
 
-        :param message: 信息
+        :param message: **参数解释**： 信息。 **取值范围**： 不涉及。
         :type message: str
-        :param created: 创建者
+        :param created: **参数解释**： 创建者。 **取值范围**： 不涉及。
         :type created: str
-        :param details: 详细
+        :param details: **参数解释**： 详细内容。 **取值范围**： 不涉及。
         :type details: str
         """
         
@@ -59,7 +59,7 @@ class CompatibleFaultResp:
     def message(self):
         r"""Gets the message of this CompatibleFaultResp.
 
-        信息
+        **参数解释**： 信息。 **取值范围**： 不涉及。
 
         :return: The message of this CompatibleFaultResp.
         :rtype: str
@@ -70,7 +70,7 @@ class CompatibleFaultResp:
     def message(self, message):
         r"""Sets the message of this CompatibleFaultResp.
 
-        信息
+        **参数解释**： 信息。 **取值范围**： 不涉及。
 
         :param message: The message of this CompatibleFaultResp.
         :type message: str
@@ -81,7 +81,7 @@ class CompatibleFaultResp:
     def created(self):
         r"""Gets the created of this CompatibleFaultResp.
 
-        创建者
+        **参数解释**： 创建者。 **取值范围**： 不涉及。
 
         :return: The created of this CompatibleFaultResp.
         :rtype: str
@@ -92,7 +92,7 @@ class CompatibleFaultResp:
     def created(self, created):
         r"""Sets the created of this CompatibleFaultResp.
 
-        创建者
+        **参数解释**： 创建者。 **取值范围**： 不涉及。
 
         :param created: The created of this CompatibleFaultResp.
         :type created: str
@@ -103,7 +103,7 @@ class CompatibleFaultResp:
     def details(self):
         r"""Gets the details of this CompatibleFaultResp.
 
-        详细
+        **参数解释**： 详细内容。 **取值范围**： 不涉及。
 
         :return: The details of this CompatibleFaultResp.
         :rtype: str
@@ -114,7 +114,7 @@ class CompatibleFaultResp:
     def details(self, details):
         r"""Sets the details of this CompatibleFaultResp.
 
-        详细
+        **参数解释**： 详细内容。 **取值范围**： 不涉及。
 
         :param details: The details of this CompatibleFaultResp.
         :type details: str

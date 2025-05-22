@@ -32,9 +32,9 @@ class ListDssPoolsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param pools: 专属分布式存储池详情列表。
+        :param pools: **参数解释**： 专属分布式存储池详情列表。 **取值范围**： 不涉及。
         :type pools: list[:class:`huaweicloudsdkdws.v2.DssPool`]
-        :param count: 专属分布式存储池个数。
+        :param count: **参数解释**： 专属分布式存储池个数。 **取值范围**： 不涉及。
         :type count: int
         """
         
@@ -53,7 +53,7 @@ class ListDssPoolsResponse(SdkResponse):
     def pools(self):
         r"""Gets the pools of this ListDssPoolsResponse.
 
-        专属分布式存储池详情列表。
+        **参数解释**： 专属分布式存储池详情列表。 **取值范围**： 不涉及。
 
         :return: The pools of this ListDssPoolsResponse.
         :rtype: list[:class:`huaweicloudsdkdws.v2.DssPool`]
@@ -64,7 +64,7 @@ class ListDssPoolsResponse(SdkResponse):
     def pools(self, pools):
         r"""Sets the pools of this ListDssPoolsResponse.
 
-        专属分布式存储池详情列表。
+        **参数解释**： 专属分布式存储池详情列表。 **取值范围**： 不涉及。
 
         :param pools: The pools of this ListDssPoolsResponse.
         :type pools: list[:class:`huaweicloudsdkdws.v2.DssPool`]
@@ -75,7 +75,7 @@ class ListDssPoolsResponse(SdkResponse):
     def count(self):
         r"""Gets the count of this ListDssPoolsResponse.
 
-        专属分布式存储池个数。
+        **参数解释**： 专属分布式存储池个数。 **取值范围**： 不涉及。
 
         :return: The count of this ListDssPoolsResponse.
         :rtype: int
@@ -86,7 +86,7 @@ class ListDssPoolsResponse(SdkResponse):
     def count(self, count):
         r"""Sets the count of this ListDssPoolsResponse.
 
-        专属分布式存储池个数。
+        **参数解释**： 专属分布式存储池个数。 **取值范围**： 不涉及。
 
         :param count: The count of this ListDssPoolsResponse.
         :type count: int

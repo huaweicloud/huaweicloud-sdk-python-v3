@@ -41,19 +41,19 @@ class ListSchemasRequest:
 
         The model defined in huaweicloud sdk
 
-        :param cluster_id: 集群ID
+        :param cluster_id: **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
         :type cluster_id: str
         :param database_name: 数据库名称
         :type database_name: str
-        :param sort_key: 排序字段
+        :param sort_key: **参数解释**： 排序字段。 **约束限制**： 不涉及。 **取值范围**： schemaName：模式名称排序。 **默认取值**： 不涉及。
         :type sort_key: str
-        :param sort_dir: 排序字段
+        :param sort_dir: **参数解释**： 排序字段。 **约束限制**： 不涉及。 **取值范围**： ASC：表示按升序排序。  DESC：表示按降序排序。 **默认取值**： 不涉及。
         :type sort_dir: str
-        :param keywords: 查询关键词
+        :param keywords: **参数解释**： 查询关键词。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type keywords: str
-        :param limit: 查询条数
+        :param limit: **参数解释**： 分页单页大小。 **约束限制**： 不涉及。 **取值范围**： 大于0。 **默认取值**： 10
         :type limit: int
-        :param offset: 偏移量
+        :param offset: **参数解释**： 分页查询，偏移量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 0
         :type offset: int
         """
         
@@ -85,7 +85,7 @@ class ListSchemasRequest:
     def cluster_id(self):
         r"""Gets the cluster_id of this ListSchemasRequest.
 
-        集群ID
+        **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
 
         :return: The cluster_id of this ListSchemasRequest.
         :rtype: str
@@ -96,7 +96,7 @@ class ListSchemasRequest:
     def cluster_id(self, cluster_id):
         r"""Sets the cluster_id of this ListSchemasRequest.
 
-        集群ID
+        **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
 
         :param cluster_id: The cluster_id of this ListSchemasRequest.
         :type cluster_id: str
@@ -129,7 +129,7 @@ class ListSchemasRequest:
     def sort_key(self):
         r"""Gets the sort_key of this ListSchemasRequest.
 
-        排序字段
+        **参数解释**： 排序字段。 **约束限制**： 不涉及。 **取值范围**： schemaName：模式名称排序。 **默认取值**： 不涉及。
 
         :return: The sort_key of this ListSchemasRequest.
         :rtype: str
@@ -140,7 +140,7 @@ class ListSchemasRequest:
     def sort_key(self, sort_key):
         r"""Sets the sort_key of this ListSchemasRequest.
 
-        排序字段
+        **参数解释**： 排序字段。 **约束限制**： 不涉及。 **取值范围**： schemaName：模式名称排序。 **默认取值**： 不涉及。
 
         :param sort_key: The sort_key of this ListSchemasRequest.
         :type sort_key: str
@@ -151,7 +151,7 @@ class ListSchemasRequest:
     def sort_dir(self):
         r"""Gets the sort_dir of this ListSchemasRequest.
 
-        排序字段
+        **参数解释**： 排序字段。 **约束限制**： 不涉及。 **取值范围**： ASC：表示按升序排序。  DESC：表示按降序排序。 **默认取值**： 不涉及。
 
         :return: The sort_dir of this ListSchemasRequest.
         :rtype: str
@@ -162,7 +162,7 @@ class ListSchemasRequest:
     def sort_dir(self, sort_dir):
         r"""Sets the sort_dir of this ListSchemasRequest.
 
-        排序字段
+        **参数解释**： 排序字段。 **约束限制**： 不涉及。 **取值范围**： ASC：表示按升序排序。  DESC：表示按降序排序。 **默认取值**： 不涉及。
 
         :param sort_dir: The sort_dir of this ListSchemasRequest.
         :type sort_dir: str
@@ -173,7 +173,7 @@ class ListSchemasRequest:
     def keywords(self):
         r"""Gets the keywords of this ListSchemasRequest.
 
-        查询关键词
+        **参数解释**： 查询关键词。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The keywords of this ListSchemasRequest.
         :rtype: str
@@ -184,7 +184,7 @@ class ListSchemasRequest:
     def keywords(self, keywords):
         r"""Sets the keywords of this ListSchemasRequest.
 
-        查询关键词
+        **参数解释**： 查询关键词。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param keywords: The keywords of this ListSchemasRequest.
         :type keywords: str
@@ -195,7 +195,7 @@ class ListSchemasRequest:
     def limit(self):
         r"""Gets the limit of this ListSchemasRequest.
 
-        查询条数
+        **参数解释**： 分页单页大小。 **约束限制**： 不涉及。 **取值范围**： 大于0。 **默认取值**： 10
 
         :return: The limit of this ListSchemasRequest.
         :rtype: int
@@ -206,7 +206,7 @@ class ListSchemasRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListSchemasRequest.
 
-        查询条数
+        **参数解释**： 分页单页大小。 **约束限制**： 不涉及。 **取值范围**： 大于0。 **默认取值**： 10
 
         :param limit: The limit of this ListSchemasRequest.
         :type limit: int
@@ -217,7 +217,7 @@ class ListSchemasRequest:
     def offset(self):
         r"""Gets the offset of this ListSchemasRequest.
 
-        偏移量
+        **参数解释**： 分页查询，偏移量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 0
 
         :return: The offset of this ListSchemasRequest.
         :rtype: int
@@ -228,7 +228,7 @@ class ListSchemasRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListSchemasRequest.
 
-        偏移量
+        **参数解释**： 分页查询，偏移量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 0
 
         :param offset: The offset of this ListSchemasRequest.
         :type offset: int

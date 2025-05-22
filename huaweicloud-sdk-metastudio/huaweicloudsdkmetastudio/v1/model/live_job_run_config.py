@@ -31,7 +31,7 @@ class LiveJobRunConfig:
 
         The model defined in huaweicloud sdk
 
-        :param allow_resource_type: 允许使用资源类型。 * PERIOD：使用包周期资源 * ONDEMAND：使用按需资源 * UNLIMITED：不限制资源类型
+        :param allow_resource_type: 允许使用资源类型。 * PERIOD：使用包周期资源 * ONDEMAND：使用按需资源 * UNLIMITED：不限制资源类型 * ONE_TIME：一次性资源
         :type allow_resource_type: str
         :param single_job_in_room: 一个直播间是否仅允许一个正在直播的任务。 * true: 限制直播间仅允许一个任务运行。 * false: 不限制直播间任务运行数量。
         :type single_job_in_room: bool
@@ -52,7 +52,7 @@ class LiveJobRunConfig:
     def allow_resource_type(self):
         r"""Gets the allow_resource_type of this LiveJobRunConfig.
 
-        允许使用资源类型。 * PERIOD：使用包周期资源 * ONDEMAND：使用按需资源 * UNLIMITED：不限制资源类型
+        允许使用资源类型。 * PERIOD：使用包周期资源 * ONDEMAND：使用按需资源 * UNLIMITED：不限制资源类型 * ONE_TIME：一次性资源
 
         :return: The allow_resource_type of this LiveJobRunConfig.
         :rtype: str
@@ -63,7 +63,7 @@ class LiveJobRunConfig:
     def allow_resource_type(self, allow_resource_type):
         r"""Sets the allow_resource_type of this LiveJobRunConfig.
 
-        允许使用资源类型。 * PERIOD：使用包周期资源 * ONDEMAND：使用按需资源 * UNLIMITED：不限制资源类型
+        允许使用资源类型。 * PERIOD：使用包周期资源 * ONDEMAND：使用按需资源 * UNLIMITED：不限制资源类型 * ONE_TIME：一次性资源
 
         :param allow_resource_type: The allow_resource_type of this LiveJobRunConfig.
         :type allow_resource_type: str

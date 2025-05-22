@@ -37,15 +37,15 @@ class WorkloadQueueItem:
 
         The model defined in huaweicloud sdk
 
-        :param queue_name: 资源池名称。
+        :param queue_name: **参数解释**： 资源池名称。 **取值范围**： 不涉及。
         :type queue_name: str
-        :param logical_cluster_name: 逻辑集群名称。
+        :param logical_cluster_name: **参数解释**： 逻辑集群名称。 **取值范围**： 不涉及。
         :type logical_cluster_name: str
-        :param short_query_optimize: 工作负载队列短查询加速开关。
+        :param short_query_optimize: **参数解释**： 工作负载队列短查询加速开关。 **取值范围**： 不涉及。
         :type short_query_optimize: str
-        :param short_query_concurrency_num: 工作负载队列短查询并发数。
+        :param short_query_concurrency_num: **参数解释**： 工作负载队列短查询并发数。 **取值范围**： 不涉及。
         :type short_query_concurrency_num: int
-        :param resource_item_list: 资源配置队列。
+        :param resource_item_list: **参数解释**： 资源配置队列。 **取值范围**： 不涉及。
         :type resource_item_list: list[:class:`huaweicloudsdkdws.v2.WorkloadResourceItem`]
         """
         
@@ -71,7 +71,7 @@ class WorkloadQueueItem:
     def queue_name(self):
         r"""Gets the queue_name of this WorkloadQueueItem.
 
-        资源池名称。
+        **参数解释**： 资源池名称。 **取值范围**： 不涉及。
 
         :return: The queue_name of this WorkloadQueueItem.
         :rtype: str
@@ -82,7 +82,7 @@ class WorkloadQueueItem:
     def queue_name(self, queue_name):
         r"""Sets the queue_name of this WorkloadQueueItem.
 
-        资源池名称。
+        **参数解释**： 资源池名称。 **取值范围**： 不涉及。
 
         :param queue_name: The queue_name of this WorkloadQueueItem.
         :type queue_name: str
@@ -93,7 +93,7 @@ class WorkloadQueueItem:
     def logical_cluster_name(self):
         r"""Gets the logical_cluster_name of this WorkloadQueueItem.
 
-        逻辑集群名称。
+        **参数解释**： 逻辑集群名称。 **取值范围**： 不涉及。
 
         :return: The logical_cluster_name of this WorkloadQueueItem.
         :rtype: str
@@ -104,7 +104,7 @@ class WorkloadQueueItem:
     def logical_cluster_name(self, logical_cluster_name):
         r"""Sets the logical_cluster_name of this WorkloadQueueItem.
 
-        逻辑集群名称。
+        **参数解释**： 逻辑集群名称。 **取值范围**： 不涉及。
 
         :param logical_cluster_name: The logical_cluster_name of this WorkloadQueueItem.
         :type logical_cluster_name: str
@@ -115,7 +115,7 @@ class WorkloadQueueItem:
     def short_query_optimize(self):
         r"""Gets the short_query_optimize of this WorkloadQueueItem.
 
-        工作负载队列短查询加速开关。
+        **参数解释**： 工作负载队列短查询加速开关。 **取值范围**： 不涉及。
 
         :return: The short_query_optimize of this WorkloadQueueItem.
         :rtype: str
@@ -126,7 +126,7 @@ class WorkloadQueueItem:
     def short_query_optimize(self, short_query_optimize):
         r"""Sets the short_query_optimize of this WorkloadQueueItem.
 
-        工作负载队列短查询加速开关。
+        **参数解释**： 工作负载队列短查询加速开关。 **取值范围**： 不涉及。
 
         :param short_query_optimize: The short_query_optimize of this WorkloadQueueItem.
         :type short_query_optimize: str
@@ -137,7 +137,7 @@ class WorkloadQueueItem:
     def short_query_concurrency_num(self):
         r"""Gets the short_query_concurrency_num of this WorkloadQueueItem.
 
-        工作负载队列短查询并发数。
+        **参数解释**： 工作负载队列短查询并发数。 **取值范围**： 不涉及。
 
         :return: The short_query_concurrency_num of this WorkloadQueueItem.
         :rtype: int
@@ -148,7 +148,7 @@ class WorkloadQueueItem:
     def short_query_concurrency_num(self, short_query_concurrency_num):
         r"""Sets the short_query_concurrency_num of this WorkloadQueueItem.
 
-        工作负载队列短查询并发数。
+        **参数解释**： 工作负载队列短查询并发数。 **取值范围**： 不涉及。
 
         :param short_query_concurrency_num: The short_query_concurrency_num of this WorkloadQueueItem.
         :type short_query_concurrency_num: int
@@ -159,7 +159,7 @@ class WorkloadQueueItem:
     def resource_item_list(self):
         r"""Gets the resource_item_list of this WorkloadQueueItem.
 
-        资源配置队列。
+        **参数解释**： 资源配置队列。 **取值范围**： 不涉及。
 
         :return: The resource_item_list of this WorkloadQueueItem.
         :rtype: list[:class:`huaweicloudsdkdws.v2.WorkloadResourceItem`]
@@ -170,7 +170,7 @@ class WorkloadQueueItem:
     def resource_item_list(self, resource_item_list):
         r"""Sets the resource_item_list of this WorkloadQueueItem.
 
-        资源配置队列。
+        **参数解释**： 资源配置队列。 **取值范围**： 不涉及。
 
         :param resource_item_list: The resource_item_list of this WorkloadQueueItem.
         :type resource_item_list: list[:class:`huaweicloudsdkdws.v2.WorkloadResourceItem`]

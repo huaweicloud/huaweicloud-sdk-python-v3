@@ -39,7 +39,7 @@ class HttpClient(object):
         self._exception_handler = exception_handler
         self._http_handler = http_handler
         self._config = config
-        self._proxy = config.get_proxy()
+        self._proxy = config.proxy
 
         if config.ssl_ca_cert is not None:
             self._verify = config.ssl_ca_cert if not config.ignore_ssl_verification else config.ignore_ssl_verification

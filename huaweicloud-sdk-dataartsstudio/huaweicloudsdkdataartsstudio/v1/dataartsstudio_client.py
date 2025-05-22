@@ -3858,6 +3858,75 @@ class DataArtsStudioClient(Client):
 
         return http_info
 
+    def create_factory_pending_items_package(self, request):
+        r"""待发布包发布
+
+        待发布包发布
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateFactoryPendingItemsPackage
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.CreateFactoryPendingItemsPackageRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CreateFactoryPendingItemsPackageResponse`
+        """
+        http_info = self._create_factory_pending_items_package_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_factory_pending_items_package_invoker(self, request):
+        http_info = self._create_factory_pending_items_package_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_factory_pending_items_package_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/factory/pending-items/package",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateFactoryPendingItemsPackageResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_factory_supplement_data_instance(self, request):
         r"""创建补数据实例
 
@@ -12037,6 +12106,81 @@ class DataArtsStudioClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_factory_pending_items(self, request):
+        r"""查询待发布包列表
+
+        查询待发布包列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListFactoryPendingItems
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListFactoryPendingItemsRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListFactoryPendingItemsResponse`
+        """
+        http_info = self._list_factory_pending_items_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_factory_pending_items_invoker(self, request):
+        http_info = self._list_factory_pending_items_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_factory_pending_items_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/factory/pending-items",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListFactoryPendingItemsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'submit_user_name' in local_var_params:
+            query_params.append(('submit_user_name', local_var_params['submit_user_name']))
+        if 'item_name' in local_var_params:
+            query_params.append(('item_name', local_var_params['item_name']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 

@@ -165,6 +165,71 @@ class CsmsAsyncClient(Client):
 
         return http_info
 
+    def check_secrets_async(self, request):
+        r"""检测传入凭据的凭据强度
+
+        检测传入的凭据。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CheckSecrets
+        :type request: :class:`huaweicloudsdkcsms.v1.CheckSecretsRequest`
+        :rtype: :class:`huaweicloudsdkcsms.v1.CheckSecretsResponse`
+        """
+        http_info = self._check_secrets_http_info(request)
+        return self._call_api(**http_info)
+
+    def check_secrets_async_invoker(self, request):
+        http_info = self._check_secrets_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _check_secrets_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/secrets/checker/check",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckSecretsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_agency_async(self, request):
         r"""创建服务委托
 
@@ -2292,6 +2357,69 @@ class CsmsAsyncClient(Client):
 
         return http_info
 
+    def show_secrets_config_async(self, request):
+        r"""获取租户的凭据检测配置
+
+        获取租户的凭据检测配置。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowSecretsConfig
+        :type request: :class:`huaweicloudsdkcsms.v1.ShowSecretsConfigRequest`
+        :rtype: :class:`huaweicloudsdkcsms.v1.ShowSecretsConfigResponse`
+        """
+        http_info = self._show_secrets_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_secrets_config_async_invoker(self, request):
+        http_info = self._show_secrets_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_secrets_config_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/secrets/checker/config",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSecretsConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_user_detail_async(self, request):
         r"""获取用户详情
 
@@ -2613,6 +2741,71 @@ class CsmsAsyncClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_secrets_config_async(self, request):
+        r"""更改获取租户的凭据检测配置
+
+        更改获取租户的凭据检测配置。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateSecretsConfig
+        :type request: :class:`huaweicloudsdkcsms.v1.UpdateSecretsConfigRequest`
+        :rtype: :class:`huaweicloudsdkcsms.v1.UpdateSecretsConfigResponse`
+        """
+        http_info = self._update_secrets_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_secrets_config_async_invoker(self, request):
+        http_info = self._update_secrets_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_secrets_config_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/secrets/checker/config",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateSecretsConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 

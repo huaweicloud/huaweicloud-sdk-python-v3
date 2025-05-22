@@ -53,31 +53,31 @@ class LogicalClusterInfo:
 
         The model defined in huaweicloud sdk
 
-        :param logical_cluster_id: 逻辑集群ID
+        :param logical_cluster_id: **参数解释**： 逻辑集群ID。 **取值范围**： 不涉及。
         :type logical_cluster_id: str
-        :param logical_cluster_name: 逻辑集群名称
+        :param logical_cluster_name: **参数解释**： 逻辑集群名称。 **取值范围**： 不涉及。
         :type logical_cluster_name: str
-        :param cluster_rings: 逻辑集群主机信息
+        :param cluster_rings: **参数解释**： 逻辑集群主机信息。 **取值范围**： 不涉及。
         :type cluster_rings: list[:class:`huaweicloudsdkdws.v2.ClusterRing`]
-        :param status: 逻辑集群状态
+        :param status: **参数解释**： 逻辑集群状态。 **取值范围**： 不涉及。
         :type status: str
-        :param first_logical_cluster: 是否为第一个逻辑集群。第1个创建或者转换的逻辑集群不能删除，因为其中包含了一些系统视图
+        :param first_logical_cluster: **参数解释**： 是否为第一个逻辑集群。历史版本中第1个创建或者转换的逻辑集群不能删除，因为其中包含了一些系统视图。 **取值范围**： 不涉及。
         :type first_logical_cluster: bool
         :param action_info: 
         :type action_info: :class:`huaweicloudsdkdws.v2.ActionInfo`
-        :param edit_enable: 是否允许编辑
+        :param edit_enable: **参数解释**： 是否允许编辑。 **取值范围**： 不涉及。
         :type edit_enable: bool
-        :param restart_enable: 是否允许重启
+        :param restart_enable: **参数解释**： 是否允许重启。 **取值范围**： 不涉及。
         :type restart_enable: bool
-        :param delete_enable: 是否允许删除
+        :param delete_enable: **参数解释**： 是否允许删除。 **取值范围**： 不涉及。
         :type delete_enable: bool
-        :param add_to_elastic: 是否允许弹性伸缩
+        :param add_to_elastic: **参数解释**： 是否允许弹性伸缩。 **取值范围**： 不涉及。
         :type add_to_elastic: bool
-        :param mode: 逻辑集群模式
+        :param mode: **参数解释**： 逻辑集群模式。 **取值范围**： 不涉及。
         :type mode: str
-        :param waiting_for_killing: 等待被销毁
+        :param waiting_for_killing: **参数解释**： 作业等待时间。 **取值范围**： 不涉及。
         :type waiting_for_killing: int
-        :param cluster_type: 集群类型
+        :param cluster_type: **参数解释**： 集群类型。 **取值范围**： 不涉及。
         :type cluster_type: str
         """
         
@@ -129,7 +129,7 @@ class LogicalClusterInfo:
     def logical_cluster_id(self):
         r"""Gets the logical_cluster_id of this LogicalClusterInfo.
 
-        逻辑集群ID
+        **参数解释**： 逻辑集群ID。 **取值范围**： 不涉及。
 
         :return: The logical_cluster_id of this LogicalClusterInfo.
         :rtype: str
@@ -140,7 +140,7 @@ class LogicalClusterInfo:
     def logical_cluster_id(self, logical_cluster_id):
         r"""Sets the logical_cluster_id of this LogicalClusterInfo.
 
-        逻辑集群ID
+        **参数解释**： 逻辑集群ID。 **取值范围**： 不涉及。
 
         :param logical_cluster_id: The logical_cluster_id of this LogicalClusterInfo.
         :type logical_cluster_id: str
@@ -151,7 +151,7 @@ class LogicalClusterInfo:
     def logical_cluster_name(self):
         r"""Gets the logical_cluster_name of this LogicalClusterInfo.
 
-        逻辑集群名称
+        **参数解释**： 逻辑集群名称。 **取值范围**： 不涉及。
 
         :return: The logical_cluster_name of this LogicalClusterInfo.
         :rtype: str
@@ -162,7 +162,7 @@ class LogicalClusterInfo:
     def logical_cluster_name(self, logical_cluster_name):
         r"""Sets the logical_cluster_name of this LogicalClusterInfo.
 
-        逻辑集群名称
+        **参数解释**： 逻辑集群名称。 **取值范围**： 不涉及。
 
         :param logical_cluster_name: The logical_cluster_name of this LogicalClusterInfo.
         :type logical_cluster_name: str
@@ -173,7 +173,7 @@ class LogicalClusterInfo:
     def cluster_rings(self):
         r"""Gets the cluster_rings of this LogicalClusterInfo.
 
-        逻辑集群主机信息
+        **参数解释**： 逻辑集群主机信息。 **取值范围**： 不涉及。
 
         :return: The cluster_rings of this LogicalClusterInfo.
         :rtype: list[:class:`huaweicloudsdkdws.v2.ClusterRing`]
@@ -184,7 +184,7 @@ class LogicalClusterInfo:
     def cluster_rings(self, cluster_rings):
         r"""Sets the cluster_rings of this LogicalClusterInfo.
 
-        逻辑集群主机信息
+        **参数解释**： 逻辑集群主机信息。 **取值范围**： 不涉及。
 
         :param cluster_rings: The cluster_rings of this LogicalClusterInfo.
         :type cluster_rings: list[:class:`huaweicloudsdkdws.v2.ClusterRing`]
@@ -195,7 +195,7 @@ class LogicalClusterInfo:
     def status(self):
         r"""Gets the status of this LogicalClusterInfo.
 
-        逻辑集群状态
+        **参数解释**： 逻辑集群状态。 **取值范围**： 不涉及。
 
         :return: The status of this LogicalClusterInfo.
         :rtype: str
@@ -206,7 +206,7 @@ class LogicalClusterInfo:
     def status(self, status):
         r"""Sets the status of this LogicalClusterInfo.
 
-        逻辑集群状态
+        **参数解释**： 逻辑集群状态。 **取值范围**： 不涉及。
 
         :param status: The status of this LogicalClusterInfo.
         :type status: str
@@ -217,7 +217,7 @@ class LogicalClusterInfo:
     def first_logical_cluster(self):
         r"""Gets the first_logical_cluster of this LogicalClusterInfo.
 
-        是否为第一个逻辑集群。第1个创建或者转换的逻辑集群不能删除，因为其中包含了一些系统视图
+        **参数解释**： 是否为第一个逻辑集群。历史版本中第1个创建或者转换的逻辑集群不能删除，因为其中包含了一些系统视图。 **取值范围**： 不涉及。
 
         :return: The first_logical_cluster of this LogicalClusterInfo.
         :rtype: bool
@@ -228,7 +228,7 @@ class LogicalClusterInfo:
     def first_logical_cluster(self, first_logical_cluster):
         r"""Sets the first_logical_cluster of this LogicalClusterInfo.
 
-        是否为第一个逻辑集群。第1个创建或者转换的逻辑集群不能删除，因为其中包含了一些系统视图
+        **参数解释**： 是否为第一个逻辑集群。历史版本中第1个创建或者转换的逻辑集群不能删除，因为其中包含了一些系统视图。 **取值范围**： 不涉及。
 
         :param first_logical_cluster: The first_logical_cluster of this LogicalClusterInfo.
         :type first_logical_cluster: bool
@@ -257,7 +257,7 @@ class LogicalClusterInfo:
     def edit_enable(self):
         r"""Gets the edit_enable of this LogicalClusterInfo.
 
-        是否允许编辑
+        **参数解释**： 是否允许编辑。 **取值范围**： 不涉及。
 
         :return: The edit_enable of this LogicalClusterInfo.
         :rtype: bool
@@ -268,7 +268,7 @@ class LogicalClusterInfo:
     def edit_enable(self, edit_enable):
         r"""Sets the edit_enable of this LogicalClusterInfo.
 
-        是否允许编辑
+        **参数解释**： 是否允许编辑。 **取值范围**： 不涉及。
 
         :param edit_enable: The edit_enable of this LogicalClusterInfo.
         :type edit_enable: bool
@@ -279,7 +279,7 @@ class LogicalClusterInfo:
     def restart_enable(self):
         r"""Gets the restart_enable of this LogicalClusterInfo.
 
-        是否允许重启
+        **参数解释**： 是否允许重启。 **取值范围**： 不涉及。
 
         :return: The restart_enable of this LogicalClusterInfo.
         :rtype: bool
@@ -290,7 +290,7 @@ class LogicalClusterInfo:
     def restart_enable(self, restart_enable):
         r"""Sets the restart_enable of this LogicalClusterInfo.
 
-        是否允许重启
+        **参数解释**： 是否允许重启。 **取值范围**： 不涉及。
 
         :param restart_enable: The restart_enable of this LogicalClusterInfo.
         :type restart_enable: bool
@@ -301,7 +301,7 @@ class LogicalClusterInfo:
     def delete_enable(self):
         r"""Gets the delete_enable of this LogicalClusterInfo.
 
-        是否允许删除
+        **参数解释**： 是否允许删除。 **取值范围**： 不涉及。
 
         :return: The delete_enable of this LogicalClusterInfo.
         :rtype: bool
@@ -312,7 +312,7 @@ class LogicalClusterInfo:
     def delete_enable(self, delete_enable):
         r"""Sets the delete_enable of this LogicalClusterInfo.
 
-        是否允许删除
+        **参数解释**： 是否允许删除。 **取值范围**： 不涉及。
 
         :param delete_enable: The delete_enable of this LogicalClusterInfo.
         :type delete_enable: bool
@@ -323,7 +323,7 @@ class LogicalClusterInfo:
     def add_to_elastic(self):
         r"""Gets the add_to_elastic of this LogicalClusterInfo.
 
-        是否允许弹性伸缩
+        **参数解释**： 是否允许弹性伸缩。 **取值范围**： 不涉及。
 
         :return: The add_to_elastic of this LogicalClusterInfo.
         :rtype: bool
@@ -334,7 +334,7 @@ class LogicalClusterInfo:
     def add_to_elastic(self, add_to_elastic):
         r"""Sets the add_to_elastic of this LogicalClusterInfo.
 
-        是否允许弹性伸缩
+        **参数解释**： 是否允许弹性伸缩。 **取值范围**： 不涉及。
 
         :param add_to_elastic: The add_to_elastic of this LogicalClusterInfo.
         :type add_to_elastic: bool
@@ -345,7 +345,7 @@ class LogicalClusterInfo:
     def mode(self):
         r"""Gets the mode of this LogicalClusterInfo.
 
-        逻辑集群模式
+        **参数解释**： 逻辑集群模式。 **取值范围**： 不涉及。
 
         :return: The mode of this LogicalClusterInfo.
         :rtype: str
@@ -356,7 +356,7 @@ class LogicalClusterInfo:
     def mode(self, mode):
         r"""Sets the mode of this LogicalClusterInfo.
 
-        逻辑集群模式
+        **参数解释**： 逻辑集群模式。 **取值范围**： 不涉及。
 
         :param mode: The mode of this LogicalClusterInfo.
         :type mode: str
@@ -367,7 +367,7 @@ class LogicalClusterInfo:
     def waiting_for_killing(self):
         r"""Gets the waiting_for_killing of this LogicalClusterInfo.
 
-        等待被销毁
+        **参数解释**： 作业等待时间。 **取值范围**： 不涉及。
 
         :return: The waiting_for_killing of this LogicalClusterInfo.
         :rtype: int
@@ -378,7 +378,7 @@ class LogicalClusterInfo:
     def waiting_for_killing(self, waiting_for_killing):
         r"""Sets the waiting_for_killing of this LogicalClusterInfo.
 
-        等待被销毁
+        **参数解释**： 作业等待时间。 **取值范围**： 不涉及。
 
         :param waiting_for_killing: The waiting_for_killing of this LogicalClusterInfo.
         :type waiting_for_killing: int
@@ -389,7 +389,7 @@ class LogicalClusterInfo:
     def cluster_type(self):
         r"""Gets the cluster_type of this LogicalClusterInfo.
 
-        集群类型
+        **参数解释**： 集群类型。 **取值范围**： 不涉及。
 
         :return: The cluster_type of this LogicalClusterInfo.
         :rtype: str
@@ -400,7 +400,7 @@ class LogicalClusterInfo:
     def cluster_type(self, cluster_type):
         r"""Sets the cluster_type of this LogicalClusterInfo.
 
-        集群类型
+        **参数解释**： 集群类型。 **取值范围**： 不涉及。
 
         :param cluster_type: The cluster_type of this LogicalClusterInfo.
         :type cluster_type: str

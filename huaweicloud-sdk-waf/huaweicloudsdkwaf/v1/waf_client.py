@@ -3333,6 +3333,9 @@ class WafClient(Client):
         if 'hosts' in local_var_params:
             query_params.append(('hosts', local_var_params['hosts']))
             collection_formats['hosts'] = 'multi'
+        if 'sips' in local_var_params:
+            query_params.append(('sips', local_var_params['sips']))
+            collection_formats['sips'] = 'multi'
         if 'page' in local_var_params:
             query_params.append(('page', local_var_params['page']))
         if 'pagesize' in local_var_params:

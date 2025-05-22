@@ -48,6 +48,7 @@ class ShowDeployTaskDetailResponse(SdkResponse):
         'role_id': 'int',
         'id': 'str',
         'release_id': 'int',
+        'app_id': 'str',
         'is_disable': 'bool',
         'duration': 'str',
         'execution_state': 'str',
@@ -87,6 +88,7 @@ class ShowDeployTaskDetailResponse(SdkResponse):
         'role_id': 'role_id',
         'id': 'id',
         'release_id': 'release_id',
+        'app_id': 'app_id',
         'is_disable': 'is_disable',
         'duration': 'duration',
         'execution_state': 'execution_state',
@@ -95,7 +97,7 @@ class ShowDeployTaskDetailResponse(SdkResponse):
         'steps': 'steps'
     }
 
-    def __init__(self, task_id=None, name=None, project_id=None, project_name=None, deploy_system=None, create_time=None, update_time=None, state=None, execution_time=None, description=None, is_defaut_permission=None, template_id=None, owner=None, nick_name=None, owner_id=None, tenant_id=None, tenant_name=None, slave_cluster_id=None, is_care=None, can_modify=None, can_delete=None, can_view=None, can_execute=None, can_copy=None, can_manage=None, can_disable=None, app_component_list=None, role_id=None, id=None, release_id=None, is_disable=None, duration=None, execution_state=None, executor_id=None, executor_nick_name=None, steps=None):
+    def __init__(self, task_id=None, name=None, project_id=None, project_name=None, deploy_system=None, create_time=None, update_time=None, state=None, execution_time=None, description=None, is_defaut_permission=None, template_id=None, owner=None, nick_name=None, owner_id=None, tenant_id=None, tenant_name=None, slave_cluster_id=None, is_care=None, can_modify=None, can_delete=None, can_view=None, can_execute=None, can_copy=None, can_manage=None, can_disable=None, app_component_list=None, role_id=None, id=None, release_id=None, app_id=None, is_disable=None, duration=None, execution_state=None, executor_id=None, executor_nick_name=None, steps=None):
         r"""ShowDeployTaskDetailResponse
 
         The model defined in huaweicloud sdk
@@ -160,6 +162,8 @@ class ShowDeployTaskDetailResponse(SdkResponse):
         :type id: str
         :param release_id: 部署记录序列号
         :type release_id: int
+        :param app_id: 部署应用id
+        :type app_id: str
         :param is_disable: 当前应用是否被禁用
         :type is_disable: bool
         :param duration: 部署时间
@@ -206,6 +210,7 @@ class ShowDeployTaskDetailResponse(SdkResponse):
         self._role_id = None
         self._id = None
         self._release_id = None
+        self._app_id = None
         self._is_disable = None
         self._duration = None
         self._execution_state = None
@@ -274,6 +279,8 @@ class ShowDeployTaskDetailResponse(SdkResponse):
             self.id = id
         if release_id is not None:
             self.release_id = release_id
+        if app_id is not None:
+            self.app_id = app_id
         if is_disable is not None:
             self.is_disable = is_disable
         if duration is not None:
@@ -946,6 +953,28 @@ class ShowDeployTaskDetailResponse(SdkResponse):
         :type release_id: int
         """
         self._release_id = release_id
+
+    @property
+    def app_id(self):
+        r"""Gets the app_id of this ShowDeployTaskDetailResponse.
+
+        部署应用id
+
+        :return: The app_id of this ShowDeployTaskDetailResponse.
+        :rtype: str
+        """
+        return self._app_id
+
+    @app_id.setter
+    def app_id(self, app_id):
+        r"""Sets the app_id of this ShowDeployTaskDetailResponse.
+
+        部署应用id
+
+        :param app_id: The app_id of this ShowDeployTaskDetailResponse.
+        :type app_id: str
+        """
+        self._app_id = app_id
 
     @property
     def is_disable(self):

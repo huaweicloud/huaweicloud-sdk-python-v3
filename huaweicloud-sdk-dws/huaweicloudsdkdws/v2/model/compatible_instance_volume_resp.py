@@ -33,11 +33,11 @@ class CompatibleInstanceVolumeResp:
 
         The model defined in huaweicloud sdk
 
-        :param type: 类型
+        :param type: **参数解释**： 类型。 **取值范围**： 不涉及。
         :type type: str
-        :param used: 连接
+        :param used: **参数解释**： 已使用空间。 **取值范围**： 不涉及。
         :type used: float
-        :param size: 大小
+        :param size: **参数解释**： 总大小。 **取值范围**： 不涉及。
         :type size: int
         """
         
@@ -59,7 +59,7 @@ class CompatibleInstanceVolumeResp:
     def type(self):
         r"""Gets the type of this CompatibleInstanceVolumeResp.
 
-        类型
+        **参数解释**： 类型。 **取值范围**： 不涉及。
 
         :return: The type of this CompatibleInstanceVolumeResp.
         :rtype: str
@@ -70,7 +70,7 @@ class CompatibleInstanceVolumeResp:
     def type(self, type):
         r"""Sets the type of this CompatibleInstanceVolumeResp.
 
-        类型
+        **参数解释**： 类型。 **取值范围**： 不涉及。
 
         :param type: The type of this CompatibleInstanceVolumeResp.
         :type type: str
@@ -81,7 +81,7 @@ class CompatibleInstanceVolumeResp:
     def used(self):
         r"""Gets the used of this CompatibleInstanceVolumeResp.
 
-        连接
+        **参数解释**： 已使用空间。 **取值范围**： 不涉及。
 
         :return: The used of this CompatibleInstanceVolumeResp.
         :rtype: float
@@ -92,7 +92,7 @@ class CompatibleInstanceVolumeResp:
     def used(self, used):
         r"""Sets the used of this CompatibleInstanceVolumeResp.
 
-        连接
+        **参数解释**： 已使用空间。 **取值范围**： 不涉及。
 
         :param used: The used of this CompatibleInstanceVolumeResp.
         :type used: float
@@ -103,7 +103,7 @@ class CompatibleInstanceVolumeResp:
     def size(self):
         r"""Gets the size of this CompatibleInstanceVolumeResp.
 
-        大小
+        **参数解释**： 总大小。 **取值范围**： 不涉及。
 
         :return: The size of this CompatibleInstanceVolumeResp.
         :rtype: int
@@ -114,7 +114,7 @@ class CompatibleInstanceVolumeResp:
     def size(self, size):
         r"""Sets the size of this CompatibleInstanceVolumeResp.
 
-        大小
+        **参数解释**： 总大小。 **取值范围**： 不涉及。
 
         :param size: The size of this CompatibleInstanceVolumeResp.
         :type size: int

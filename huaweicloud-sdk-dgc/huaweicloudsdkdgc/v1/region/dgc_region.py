@@ -30,6 +30,8 @@ class DgcRegion:
                         "https://dayu-dlf.my-kualalumpur-1.myhuaweicloud.com")
     TR_WEST_1 = Region("tr-west-1",
                         "https://dayu-dlf.tr-west-1.myhuaweicloud.com")
+    CN_NORTH_9 = Region("cn-north-9",
+                        "https://dayu-dlf.cn-north-9.myhuaweicloud.com")
 
     static_fields = {
         "cn-north-1": CN_NORTH_1,
@@ -44,6 +46,7 @@ class DgcRegion:
         "ru-moscow-1": RU_MOSCOW_1,
         "my-kualalumpur-1": MY_KUALALUMPUR_1,
         "tr-west-1": TR_WEST_1,
+        "cn-north-9": CN_NORTH_9,
     }
 
     @classmethod

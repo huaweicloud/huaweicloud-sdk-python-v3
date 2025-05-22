@@ -41,19 +41,19 @@ class LogicalClusterPlanActions:
 
         The model defined in huaweicloud sdk
 
-        :param next_fire_time: 行动下一次触发时间
+        :param next_fire_time: **参数解释**： 下一次触发时间。 **取值范围**： 不涉及。
         :type next_fire_time: str
-        :param failed_reason: 行动失败原因
+        :param failed_reason: **参数解释**： 失败原因。 **取值范围**： 不涉及。
         :type failed_reason: str
-        :param id: 行动ID
+        :param id: **参数解释**： 任务ID。 **取值范围**： 不涉及。
         :type id: str
-        :param type: 行动类型，取值范围为(create|delete)
+        :param type: **参数解释**： 类型。 **取值范围**： create：创建 delete：删除
         :type type: str
-        :param strategy: 行动周期性Cron表达式：如\&quot;0 0 0 ? * 3\&quot;
+        :param strategy: **参数解释**： 周期信息。Cron表达式：如\&quot;0 0 0 ? * 3\&quot;。 **取值范围**： 不涉及。
         :type strategy: str
         :param status: 行动状态，取值范围为(running|waiting|deleted|finished|disabled|failed)
         :type status: str
-        :param pre_fire_time: 计划上一次触发时间
+        :param pre_fire_time: **参数解释**： 上一次触发时间。 **取值范围**： 不涉及。
         :type pre_fire_time: date
         """
         
@@ -87,7 +87,7 @@ class LogicalClusterPlanActions:
     def next_fire_time(self):
         r"""Gets the next_fire_time of this LogicalClusterPlanActions.
 
-        行动下一次触发时间
+        **参数解释**： 下一次触发时间。 **取值范围**： 不涉及。
 
         :return: The next_fire_time of this LogicalClusterPlanActions.
         :rtype: str
@@ -98,7 +98,7 @@ class LogicalClusterPlanActions:
     def next_fire_time(self, next_fire_time):
         r"""Sets the next_fire_time of this LogicalClusterPlanActions.
 
-        行动下一次触发时间
+        **参数解释**： 下一次触发时间。 **取值范围**： 不涉及。
 
         :param next_fire_time: The next_fire_time of this LogicalClusterPlanActions.
         :type next_fire_time: str
@@ -109,7 +109,7 @@ class LogicalClusterPlanActions:
     def failed_reason(self):
         r"""Gets the failed_reason of this LogicalClusterPlanActions.
 
-        行动失败原因
+        **参数解释**： 失败原因。 **取值范围**： 不涉及。
 
         :return: The failed_reason of this LogicalClusterPlanActions.
         :rtype: str
@@ -120,7 +120,7 @@ class LogicalClusterPlanActions:
     def failed_reason(self, failed_reason):
         r"""Sets the failed_reason of this LogicalClusterPlanActions.
 
-        行动失败原因
+        **参数解释**： 失败原因。 **取值范围**： 不涉及。
 
         :param failed_reason: The failed_reason of this LogicalClusterPlanActions.
         :type failed_reason: str
@@ -131,7 +131,7 @@ class LogicalClusterPlanActions:
     def id(self):
         r"""Gets the id of this LogicalClusterPlanActions.
 
-        行动ID
+        **参数解释**： 任务ID。 **取值范围**： 不涉及。
 
         :return: The id of this LogicalClusterPlanActions.
         :rtype: str
@@ -142,7 +142,7 @@ class LogicalClusterPlanActions:
     def id(self, id):
         r"""Sets the id of this LogicalClusterPlanActions.
 
-        行动ID
+        **参数解释**： 任务ID。 **取值范围**： 不涉及。
 
         :param id: The id of this LogicalClusterPlanActions.
         :type id: str
@@ -153,7 +153,7 @@ class LogicalClusterPlanActions:
     def type(self):
         r"""Gets the type of this LogicalClusterPlanActions.
 
-        行动类型，取值范围为(create|delete)
+        **参数解释**： 类型。 **取值范围**： create：创建 delete：删除
 
         :return: The type of this LogicalClusterPlanActions.
         :rtype: str
@@ -164,7 +164,7 @@ class LogicalClusterPlanActions:
     def type(self, type):
         r"""Sets the type of this LogicalClusterPlanActions.
 
-        行动类型，取值范围为(create|delete)
+        **参数解释**： 类型。 **取值范围**： create：创建 delete：删除
 
         :param type: The type of this LogicalClusterPlanActions.
         :type type: str
@@ -175,7 +175,7 @@ class LogicalClusterPlanActions:
     def strategy(self):
         r"""Gets the strategy of this LogicalClusterPlanActions.
 
-        行动周期性Cron表达式：如\"0 0 0 ? * 3\"
+        **参数解释**： 周期信息。Cron表达式：如\"0 0 0 ? * 3\"。 **取值范围**： 不涉及。
 
         :return: The strategy of this LogicalClusterPlanActions.
         :rtype: str
@@ -186,7 +186,7 @@ class LogicalClusterPlanActions:
     def strategy(self, strategy):
         r"""Sets the strategy of this LogicalClusterPlanActions.
 
-        行动周期性Cron表达式：如\"0 0 0 ? * 3\"
+        **参数解释**： 周期信息。Cron表达式：如\"0 0 0 ? * 3\"。 **取值范围**： 不涉及。
 
         :param strategy: The strategy of this LogicalClusterPlanActions.
         :type strategy: str
@@ -219,7 +219,7 @@ class LogicalClusterPlanActions:
     def pre_fire_time(self):
         r"""Gets the pre_fire_time of this LogicalClusterPlanActions.
 
-        计划上一次触发时间
+        **参数解释**： 上一次触发时间。 **取值范围**： 不涉及。
 
         :return: The pre_fire_time of this LogicalClusterPlanActions.
         :rtype: date
@@ -230,7 +230,7 @@ class LogicalClusterPlanActions:
     def pre_fire_time(self, pre_fire_time):
         r"""Sets the pre_fire_time of this LogicalClusterPlanActions.
 
-        计划上一次触发时间
+        **参数解释**： 上一次触发时间。 **取值范围**： 不涉及。
 
         :param pre_fire_time: The pre_fire_time of this LogicalClusterPlanActions.
         :type pre_fire_time: date

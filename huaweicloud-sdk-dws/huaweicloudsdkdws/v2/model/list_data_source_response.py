@@ -40,9 +40,9 @@ class ListDataSourceResponse(SdkResponse):
 
         :param data_sources: 数据源列表。
         :type data_sources: list[:class:`huaweicloudsdkdws.v2.ExtDataSource`]
-        :param project_id: 项目ID。
+        :param project_id: **参数解释**： 项目ID。获取方式方法请参见[获取项目ID](dws_02_0011.xml)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type project_id: str
-        :param cluster_id: 集群ID。
+        :param cluster_id: **参数解释**： 集群ID。 **取值范围**： 36位UUID。
         :type cluster_id: str
         :param type: 数据源类型。
         :type type: str
@@ -96,7 +96,7 @@ class ListDataSourceResponse(SdkResponse):
     def project_id(self):
         r"""Gets the project_id of this ListDataSourceResponse.
 
-        项目ID。
+        **参数解释**： 项目ID。获取方式方法请参见[获取项目ID](dws_02_0011.xml)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The project_id of this ListDataSourceResponse.
         :rtype: str
@@ -107,7 +107,7 @@ class ListDataSourceResponse(SdkResponse):
     def project_id(self, project_id):
         r"""Sets the project_id of this ListDataSourceResponse.
 
-        项目ID。
+        **参数解释**： 项目ID。获取方式方法请参见[获取项目ID](dws_02_0011.xml)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param project_id: The project_id of this ListDataSourceResponse.
         :type project_id: str
@@ -118,7 +118,7 @@ class ListDataSourceResponse(SdkResponse):
     def cluster_id(self):
         r"""Gets the cluster_id of this ListDataSourceResponse.
 
-        集群ID。
+        **参数解释**： 集群ID。 **取值范围**： 36位UUID。
 
         :return: The cluster_id of this ListDataSourceResponse.
         :rtype: str
@@ -129,7 +129,7 @@ class ListDataSourceResponse(SdkResponse):
     def cluster_id(self, cluster_id):
         r"""Sets the cluster_id of this ListDataSourceResponse.
 
-        集群ID。
+        **参数解释**： 集群ID。 **取值范围**： 36位UUID。
 
         :param cluster_id: The cluster_id of this ListDataSourceResponse.
         :type cluster_id: str

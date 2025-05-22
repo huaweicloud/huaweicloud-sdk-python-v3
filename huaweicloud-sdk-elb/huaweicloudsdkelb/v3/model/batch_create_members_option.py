@@ -18,6 +18,7 @@ class BatchCreateMembersOption:
 
     openapi_types = {
         'name': 'str',
+        'availability_zone': 'str',
         'address': 'str',
         'protocol_port': 'int',
         'subnet_cidr_id': 'str',
@@ -26,19 +27,22 @@ class BatchCreateMembersOption:
 
     attribute_map = {
         'name': 'name',
+        'availability_zone': 'availability_zone',
         'address': 'address',
         'protocol_port': 'protocol_port',
         'subnet_cidr_id': 'subnet_cidr_id',
         'weight': 'weight'
     }
 
-    def __init__(self, name=None, address=None, protocol_port=None, subnet_cidr_id=None, weight=None):
+    def __init__(self, name=None, availability_zone=None, address=None, protocol_port=None, subnet_cidr_id=None, weight=None):
         r"""BatchCreateMembersOption
 
         The model defined in huaweicloud sdk
 
         :param name: 后端服务器名称。
         :type name: str
+        :param availability_zone: 参数解释：后端服务器的可用区。 约束限制：  仅支持iptarget类型的后端服务器设置该字段。且后端服务器组开启可用区亲和时，iptarget类型的后端服务器必须配置该字段为有效非空值。 取值范围：本region中ECS可选择的可用区。
+        :type availability_zone: str
         :param address: 后端服务器的对应的IP地址，这个IP必须在subnet_cidr_id字段的子网网段中。例如：192.168.3.11。  subnet_cidr_id为空代表添加跨VPC后端，此时address必须为**私网IPv4**地址。
         :type address: str
         :param protocol_port: 后端服务器业务端口。  [网关型LB，即pool协议为IP时，protocol_port必须设置为0。](tag:hws_eu)  &gt;在开启端口透传的pool下创建member传该字段不生效，可不传该字段。
@@ -52,6 +56,7 @@ class BatchCreateMembersOption:
         
 
         self._name = None
+        self._availability_zone = None
         self._address = None
         self._protocol_port = None
         self._subnet_cidr_id = None
@@ -60,6 +65,8 @@ class BatchCreateMembersOption:
 
         if name is not None:
             self.name = name
+        if availability_zone is not None:
+            self.availability_zone = availability_zone
         self.address = address
         self.protocol_port = protocol_port
         if subnet_cidr_id is not None:
@@ -88,6 +95,28 @@ class BatchCreateMembersOption:
         :type name: str
         """
         self._name = name
+
+    @property
+    def availability_zone(self):
+        r"""Gets the availability_zone of this BatchCreateMembersOption.
+
+        参数解释：后端服务器的可用区。 约束限制：  仅支持iptarget类型的后端服务器设置该字段。且后端服务器组开启可用区亲和时，iptarget类型的后端服务器必须配置该字段为有效非空值。 取值范围：本region中ECS可选择的可用区。
+
+        :return: The availability_zone of this BatchCreateMembersOption.
+        :rtype: str
+        """
+        return self._availability_zone
+
+    @availability_zone.setter
+    def availability_zone(self, availability_zone):
+        r"""Sets the availability_zone of this BatchCreateMembersOption.
+
+        参数解释：后端服务器的可用区。 约束限制：  仅支持iptarget类型的后端服务器设置该字段。且后端服务器组开启可用区亲和时，iptarget类型的后端服务器必须配置该字段为有效非空值。 取值范围：本region中ECS可选择的可用区。
+
+        :param availability_zone: The availability_zone of this BatchCreateMembersOption.
+        :type availability_zone: str
+        """
+        self._availability_zone = availability_zone
 
     @property
     def address(self):

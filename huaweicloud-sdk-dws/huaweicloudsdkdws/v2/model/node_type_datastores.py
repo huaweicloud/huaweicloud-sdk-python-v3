@@ -18,39 +18,47 @@ class NodeTypeDatastores:
 
     openapi_types = {
         'version': 'str',
-        'attachments': 'NodeTypeDatastoresAttachments'
+        'attachments': 'NodeTypeDatastoresAttachments',
+        'role': 'str'
     }
 
     attribute_map = {
         'version': 'version',
-        'attachments': 'attachments'
+        'attachments': 'attachments',
+        'role': 'role'
     }
 
-    def __init__(self, version=None, attachments=None):
+    def __init__(self, version=None, attachments=None, role=None):
         r"""NodeTypeDatastores
 
         The model defined in huaweicloud sdk
 
-        :param version: 内核版本号。
+        :param version: **参数解释**： 内核版本号。 **取值范围**： 数字、小数点，格式一般如 9.1.0、9.1.1.100。
         :type version: str
         :param attachments: 
         :type attachments: :class:`huaweicloudsdkdws.v2.NodeTypeDatastoresAttachments`
+        :param role: **参数解释**： 版本类型。 **取值范围**： - STABLE：稳定版 - PREVIEW：预览版
+        :type role: str
         """
         
         
 
         self._version = None
         self._attachments = None
+        self._role = None
         self.discriminator = None
 
         self.version = version
-        self.attachments = attachments
+        if attachments is not None:
+            self.attachments = attachments
+        if role is not None:
+            self.role = role
 
     @property
     def version(self):
         r"""Gets the version of this NodeTypeDatastores.
 
-        内核版本号。
+        **参数解释**： 内核版本号。 **取值范围**： 数字、小数点，格式一般如 9.1.0、9.1.1.100。
 
         :return: The version of this NodeTypeDatastores.
         :rtype: str
@@ -61,7 +69,7 @@ class NodeTypeDatastores:
     def version(self, version):
         r"""Sets the version of this NodeTypeDatastores.
 
-        内核版本号。
+        **参数解释**： 内核版本号。 **取值范围**： 数字、小数点，格式一般如 9.1.0、9.1.1.100。
 
         :param version: The version of this NodeTypeDatastores.
         :type version: str
@@ -85,6 +93,28 @@ class NodeTypeDatastores:
         :type attachments: :class:`huaweicloudsdkdws.v2.NodeTypeDatastoresAttachments`
         """
         self._attachments = attachments
+
+    @property
+    def role(self):
+        r"""Gets the role of this NodeTypeDatastores.
+
+        **参数解释**： 版本类型。 **取值范围**： - STABLE：稳定版 - PREVIEW：预览版
+
+        :return: The role of this NodeTypeDatastores.
+        :rtype: str
+        """
+        return self._role
+
+    @role.setter
+    def role(self, role):
+        r"""Sets the role of this NodeTypeDatastores.
+
+        **参数解释**： 版本类型。 **取值范围**： - STABLE：稳定版 - PREVIEW：预览版
+
+        :param role: The role of this NodeTypeDatastores.
+        :type role: str
+        """
+        self._role = role
 
     def to_dict(self):
         """Returns the model properties as a dict"""

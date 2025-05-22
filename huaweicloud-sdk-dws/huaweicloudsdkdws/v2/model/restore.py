@@ -59,7 +59,7 @@ class Restore:
         :type port: int
         :param public_ip: 
         :type public_ip: :class:`huaweicloudsdkdws.v2.PublicIp`
-        :param enterprise_project_id: 企业项目ID，对集群指定企业项目，如果未指定，则使用默认企业项目“default”的ID，即0。
+        :param enterprise_project_id: **参数解释**： 企业项目ID，对集群指定企业项目。如果未指定，则使用默认企业项目“default”的ID，即0。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 0
         :type enterprise_project_id: str
         :param ipv6_enable: 指定网络协议类型，表明是否支持IPv6,默认不使用IPv6。
         :type ipv6_enable: bool
@@ -250,7 +250,7 @@ class Restore:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this Restore.
 
-        企业项目ID，对集群指定企业项目，如果未指定，则使用默认企业项目“default”的ID，即0。
+        **参数解释**： 企业项目ID，对集群指定企业项目。如果未指定，则使用默认企业项目“default”的ID，即0。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 0
 
         :return: The enterprise_project_id of this Restore.
         :rtype: str
@@ -261,7 +261,7 @@ class Restore:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this Restore.
 
-        企业项目ID，对集群指定企业项目，如果未指定，则使用默认企业项目“default”的ID，即0。
+        **参数解释**： 企业项目ID，对集群指定企业项目。如果未指定，则使用默认企业项目“default”的ID，即0。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 0
 
         :param enterprise_project_id: The enterprise_project_id of this Restore.
         :type enterprise_project_id: str

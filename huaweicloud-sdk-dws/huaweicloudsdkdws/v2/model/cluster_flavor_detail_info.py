@@ -45,21 +45,21 @@ class ClusterFlavorDetailInfo:
 
         The model defined in huaweicloud sdk
 
-        :param id: 规格ID
+        :param id: **参数解释**： 规格ID。 **取值范围**： 不涉及。
         :type id: str
-        :param spec_name: 规格编码
+        :param spec_name: **参数解释**： 规格编码。 **取值范围**： 不涉及。
         :type spec_name: str
-        :param current_node: 当前节点数量
+        :param current_node: **参数解释**： 当前节点数量。 **取值范围**： 不涉及。
         :type current_node: int
-        :param min_node: 最小节点阈值
+        :param min_node: **参数解释**： 最小节点阈值。 **取值范围**： 不涉及。
         :type min_node: int
-        :param max_node: 最大节点阈值
+        :param max_node: **参数解释**： 最大节点阈值。 **取值范围**： 不涉及。
         :type max_node: int
-        :param classify: 规格类型
+        :param classify: **参数解释**： 规格类型。 **取值范围**： 不涉及。
         :type classify: str
-        :param datastore_version: 数据仓库版本
+        :param datastore_version: **参数解释**： 数据仓库版本。 **取值范围**： 不涉及。
         :type datastore_version: str
-        :param attribute: 扩展信息
+        :param attribute: **参数解释**： 扩展信息。 **取值范围**： 不涉及。
         :type attribute: list[:class:`huaweicloudsdkdws.v2.FlavorAttributeInfo`]
         :param volume_node: 
         :type volume_node: :class:`huaweicloudsdkdws.v2.FlavorVolumeNodeInfo`
@@ -92,7 +92,7 @@ class ClusterFlavorDetailInfo:
     def id(self):
         r"""Gets the id of this ClusterFlavorDetailInfo.
 
-        规格ID
+        **参数解释**： 规格ID。 **取值范围**： 不涉及。
 
         :return: The id of this ClusterFlavorDetailInfo.
         :rtype: str
@@ -103,7 +103,7 @@ class ClusterFlavorDetailInfo:
     def id(self, id):
         r"""Sets the id of this ClusterFlavorDetailInfo.
 
-        规格ID
+        **参数解释**： 规格ID。 **取值范围**： 不涉及。
 
         :param id: The id of this ClusterFlavorDetailInfo.
         :type id: str
@@ -114,7 +114,7 @@ class ClusterFlavorDetailInfo:
     def spec_name(self):
         r"""Gets the spec_name of this ClusterFlavorDetailInfo.
 
-        规格编码
+        **参数解释**： 规格编码。 **取值范围**： 不涉及。
 
         :return: The spec_name of this ClusterFlavorDetailInfo.
         :rtype: str
@@ -125,7 +125,7 @@ class ClusterFlavorDetailInfo:
     def spec_name(self, spec_name):
         r"""Sets the spec_name of this ClusterFlavorDetailInfo.
 
-        规格编码
+        **参数解释**： 规格编码。 **取值范围**： 不涉及。
 
         :param spec_name: The spec_name of this ClusterFlavorDetailInfo.
         :type spec_name: str
@@ -136,7 +136,7 @@ class ClusterFlavorDetailInfo:
     def current_node(self):
         r"""Gets the current_node of this ClusterFlavorDetailInfo.
 
-        当前节点数量
+        **参数解释**： 当前节点数量。 **取值范围**： 不涉及。
 
         :return: The current_node of this ClusterFlavorDetailInfo.
         :rtype: int
@@ -147,7 +147,7 @@ class ClusterFlavorDetailInfo:
     def current_node(self, current_node):
         r"""Sets the current_node of this ClusterFlavorDetailInfo.
 
-        当前节点数量
+        **参数解释**： 当前节点数量。 **取值范围**： 不涉及。
 
         :param current_node: The current_node of this ClusterFlavorDetailInfo.
         :type current_node: int
@@ -158,7 +158,7 @@ class ClusterFlavorDetailInfo:
     def min_node(self):
         r"""Gets the min_node of this ClusterFlavorDetailInfo.
 
-        最小节点阈值
+        **参数解释**： 最小节点阈值。 **取值范围**： 不涉及。
 
         :return: The min_node of this ClusterFlavorDetailInfo.
         :rtype: int
@@ -169,7 +169,7 @@ class ClusterFlavorDetailInfo:
     def min_node(self, min_node):
         r"""Sets the min_node of this ClusterFlavorDetailInfo.
 
-        最小节点阈值
+        **参数解释**： 最小节点阈值。 **取值范围**： 不涉及。
 
         :param min_node: The min_node of this ClusterFlavorDetailInfo.
         :type min_node: int
@@ -180,7 +180,7 @@ class ClusterFlavorDetailInfo:
     def max_node(self):
         r"""Gets the max_node of this ClusterFlavorDetailInfo.
 
-        最大节点阈值
+        **参数解释**： 最大节点阈值。 **取值范围**： 不涉及。
 
         :return: The max_node of this ClusterFlavorDetailInfo.
         :rtype: int
@@ -191,7 +191,7 @@ class ClusterFlavorDetailInfo:
     def max_node(self, max_node):
         r"""Sets the max_node of this ClusterFlavorDetailInfo.
 
-        最大节点阈值
+        **参数解释**： 最大节点阈值。 **取值范围**： 不涉及。
 
         :param max_node: The max_node of this ClusterFlavorDetailInfo.
         :type max_node: int
@@ -202,7 +202,7 @@ class ClusterFlavorDetailInfo:
     def classify(self):
         r"""Gets the classify of this ClusterFlavorDetailInfo.
 
-        规格类型
+        **参数解释**： 规格类型。 **取值范围**： 不涉及。
 
         :return: The classify of this ClusterFlavorDetailInfo.
         :rtype: str
@@ -213,7 +213,7 @@ class ClusterFlavorDetailInfo:
     def classify(self, classify):
         r"""Sets the classify of this ClusterFlavorDetailInfo.
 
-        规格类型
+        **参数解释**： 规格类型。 **取值范围**： 不涉及。
 
         :param classify: The classify of this ClusterFlavorDetailInfo.
         :type classify: str
@@ -224,7 +224,7 @@ class ClusterFlavorDetailInfo:
     def datastore_version(self):
         r"""Gets the datastore_version of this ClusterFlavorDetailInfo.
 
-        数据仓库版本
+        **参数解释**： 数据仓库版本。 **取值范围**： 不涉及。
 
         :return: The datastore_version of this ClusterFlavorDetailInfo.
         :rtype: str
@@ -235,7 +235,7 @@ class ClusterFlavorDetailInfo:
     def datastore_version(self, datastore_version):
         r"""Sets the datastore_version of this ClusterFlavorDetailInfo.
 
-        数据仓库版本
+        **参数解释**： 数据仓库版本。 **取值范围**： 不涉及。
 
         :param datastore_version: The datastore_version of this ClusterFlavorDetailInfo.
         :type datastore_version: str
@@ -246,7 +246,7 @@ class ClusterFlavorDetailInfo:
     def attribute(self):
         r"""Gets the attribute of this ClusterFlavorDetailInfo.
 
-        扩展信息
+        **参数解释**： 扩展信息。 **取值范围**： 不涉及。
 
         :return: The attribute of this ClusterFlavorDetailInfo.
         :rtype: list[:class:`huaweicloudsdkdws.v2.FlavorAttributeInfo`]
@@ -257,7 +257,7 @@ class ClusterFlavorDetailInfo:
     def attribute(self, attribute):
         r"""Sets the attribute of this ClusterFlavorDetailInfo.
 
-        扩展信息
+        **参数解释**： 扩展信息。 **取值范围**： 不涉及。
 
         :param attribute: The attribute of this ClusterFlavorDetailInfo.
         :type attribute: list[:class:`huaweicloudsdkdws.v2.FlavorAttributeInfo`]

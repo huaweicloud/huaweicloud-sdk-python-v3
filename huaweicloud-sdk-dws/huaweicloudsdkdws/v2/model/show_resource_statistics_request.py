@@ -29,7 +29,7 @@ class ShowResourceStatisticsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param namespace: 命名空间
+        :param namespace: **参数解释**： 命名空间。 **约束限制**： 不涉及。 **取值范围**： 固定值dws。 **默认取值**： dws。
         :type namespace: str
         """
         
@@ -45,7 +45,7 @@ class ShowResourceStatisticsRequest:
     def namespace(self):
         r"""Gets the namespace of this ShowResourceStatisticsRequest.
 
-        命名空间
+        **参数解释**： 命名空间。 **约束限制**： 不涉及。 **取值范围**： 固定值dws。 **默认取值**： dws。
 
         :return: The namespace of this ShowResourceStatisticsRequest.
         :rtype: str
@@ -56,7 +56,7 @@ class ShowResourceStatisticsRequest:
     def namespace(self, namespace):
         r"""Sets the namespace of this ShowResourceStatisticsRequest.
 
-        命名空间
+        **参数解释**： 命名空间。 **约束限制**： 不涉及。 **取值范围**： 固定值dws。 **默认取值**： dws。
 
         :param namespace: The namespace of this ShowResourceStatisticsRequest.
         :type namespace: str

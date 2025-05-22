@@ -31,9 +31,9 @@ class WorkloadResource:
 
         The model defined in huaweicloud sdk
 
-        :param resource_name: 资源名称。
+        :param resource_name: **参数解释**： 资源名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type resource_name: str
-        :param resource_value: 资源属性值。
+        :param resource_value: **参数解释**： 资源属性值。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type resource_value: int
         """
         
@@ -50,7 +50,7 @@ class WorkloadResource:
     def resource_name(self):
         r"""Gets the resource_name of this WorkloadResource.
 
-        资源名称。
+        **参数解释**： 资源名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The resource_name of this WorkloadResource.
         :rtype: str
@@ -61,7 +61,7 @@ class WorkloadResource:
     def resource_name(self, resource_name):
         r"""Sets the resource_name of this WorkloadResource.
 
-        资源名称。
+        **参数解释**： 资源名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param resource_name: The resource_name of this WorkloadResource.
         :type resource_name: str
@@ -72,7 +72,7 @@ class WorkloadResource:
     def resource_value(self):
         r"""Gets the resource_value of this WorkloadResource.
 
-        资源属性值。
+        **参数解释**： 资源属性值。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The resource_value of this WorkloadResource.
         :rtype: int
@@ -83,7 +83,7 @@ class WorkloadResource:
     def resource_value(self, resource_value):
         r"""Sets the resource_value of this WorkloadResource.
 
-        资源属性值。
+        **参数解释**： 资源属性值。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param resource_value: The resource_value of this WorkloadResource.
         :type resource_value: int

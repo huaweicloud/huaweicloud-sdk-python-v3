@@ -30,7 +30,7 @@ class ListStatisticsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param statistics: 资源数量信息列表。
+        :param statistics: **参数解释**： 资源数量信息列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type statistics: list[:class:`huaweicloudsdkdws.v2.Statistic`]
         """
         
@@ -46,7 +46,7 @@ class ListStatisticsResponse(SdkResponse):
     def statistics(self):
         r"""Gets the statistics of this ListStatisticsResponse.
 
-        资源数量信息列表。
+        **参数解释**： 资源数量信息列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The statistics of this ListStatisticsResponse.
         :rtype: list[:class:`huaweicloudsdkdws.v2.Statistic`]
@@ -57,7 +57,7 @@ class ListStatisticsResponse(SdkResponse):
     def statistics(self, statistics):
         r"""Sets the statistics of this ListStatisticsResponse.
 
-        资源数量信息列表。
+        **参数解释**： 资源数量信息列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param statistics: The statistics of this ListStatisticsResponse.
         :type statistics: list[:class:`huaweicloudsdkdws.v2.Statistic`]

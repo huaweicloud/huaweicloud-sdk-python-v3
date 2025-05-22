@@ -247,6 +247,9 @@ from huaweicloudsdkcce.v3.model.list_upgrade_cluster_tasks_request import ListUp
 from huaweicloudsdkcce.v3.model.list_upgrade_cluster_tasks_response import ListUpgradeClusterTasksResponse
 from huaweicloudsdkcce.v3.model.list_upgrade_work_flows_request import ListUpgradeWorkFlowsRequest
 from huaweicloudsdkcce.v3.model.list_upgrade_work_flows_response import ListUpgradeWorkFlowsResponse
+from huaweicloudsdkcce.v3.model.lock_node_scaledown_request_body import LockNodeScaledownRequestBody
+from huaweicloudsdkcce.v3.model.lock_nodepool_node_scale_down_request import LockNodepoolNodeScaleDownRequest
+from huaweicloudsdkcce.v3.model.lock_nodepool_node_scale_down_response import LockNodepoolNodeScaleDownResponse
 from huaweicloudsdkcce.v3.model.login import Login
 from huaweicloudsdkcce.v3.model.maintenance_window import MaintenanceWindow
 from huaweicloudsdkcce.v3.model.master_eip_request import MasterEIPRequest
@@ -287,6 +290,7 @@ from huaweicloudsdkcce.v3.model.node_pool_spec import NodePoolSpec
 from huaweicloudsdkcce.v3.model.node_pool_spec_update import NodePoolSpecUpdate
 from huaweicloudsdkcce.v3.model.node_pool_status import NodePoolStatus
 from huaweicloudsdkcce.v3.model.node_pool_update import NodePoolUpdate
+from huaweicloudsdkcce.v3.model.node_pool_update_extend_param import NodePoolUpdateExtendParam
 from huaweicloudsdkcce.v3.model.node_pool_upgrade_spec import NodePoolUpgradeSpec
 from huaweicloudsdkcce.v3.model.node_priority import NodePriority
 from huaweicloudsdkcce.v3.model.node_public_ip import NodePublicIP
@@ -294,6 +298,7 @@ from huaweicloudsdkcce.v3.model.node_risks import NodeRisks
 from huaweicloudsdkcce.v3.model.node_selector import NodeSelector
 from huaweicloudsdkcce.v3.model.node_spec import NodeSpec
 from huaweicloudsdkcce.v3.model.node_spec_update import NodeSpecUpdate
+from huaweicloudsdkcce.v3.model.node_spec_update_node_name_template import NodeSpecUpdateNodeNameTemplate
 from huaweicloudsdkcce.v3.model.node_spec_update_node_nic_spec_update import NodeSpecUpdateNodeNicSpecUpdate
 from huaweicloudsdkcce.v3.model.node_spec_update_node_nic_spec_update_primary_nic import NodeSpecUpdateNodeNicSpecUpdatePrimaryNic
 from huaweicloudsdkcce.v3.model.node_stage_status import NodeStageStatus
@@ -486,6 +491,9 @@ from huaweicloudsdkcce.v3.model.taint import Taint
 from huaweicloudsdkcce.v3.model.task_status import TaskStatus
 from huaweicloudsdkcce.v3.model.task_type import TaskType
 from huaweicloudsdkcce.v3.model.templatespec import Templatespec
+from huaweicloudsdkcce.v3.model.unlock_node_scaledown_request_body import UnlockNodeScaledownRequestBody
+from huaweicloudsdkcce.v3.model.unlock_nodepool_node_scale_down_request import UnlockNodepoolNodeScaleDownRequest
+from huaweicloudsdkcce.v3.model.unlock_nodepool_node_scale_down_response import UnlockNodepoolNodeScaleDownResponse
 from huaweicloudsdkcce.v3.model.update_addon_instance_request import UpdateAddonInstanceRequest
 from huaweicloudsdkcce.v3.model.update_addon_instance_response import UpdateAddonInstanceResponse
 from huaweicloudsdkcce.v3.model.update_autopilot_addon_instance_request import UpdateAutopilotAddonInstanceRequest

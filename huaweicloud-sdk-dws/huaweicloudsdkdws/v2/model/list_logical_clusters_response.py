@@ -34,11 +34,11 @@ class ListLogicalClustersResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param logical_clusters: 逻辑集群列表信息
+        :param logical_clusters: **参数解释**： 逻辑集群列表信息。 **取值范围**： 不涉及。
         :type logical_clusters: list[:class:`huaweicloudsdkdws.v2.LogicalClusterInfo`]
-        :param count: 逻辑集群总数量
+        :param count: **参数解释**： 逻辑集群总数量。 **取值范围**： 不涉及。
         :type count: int
-        :param add_enable: 作为互斥结果，如果集群内有其他运维操作，该值为false，此时不能添加逻辑集群
+        :param add_enable: **参数解释**： 作为互斥结果，如果集群内有其他运维操作，该值为false，此时不能添加逻辑集群。 **取值范围**： 不涉及。
         :type add_enable: bool
         """
         
@@ -60,7 +60,7 @@ class ListLogicalClustersResponse(SdkResponse):
     def logical_clusters(self):
         r"""Gets the logical_clusters of this ListLogicalClustersResponse.
 
-        逻辑集群列表信息
+        **参数解释**： 逻辑集群列表信息。 **取值范围**： 不涉及。
 
         :return: The logical_clusters of this ListLogicalClustersResponse.
         :rtype: list[:class:`huaweicloudsdkdws.v2.LogicalClusterInfo`]
@@ -71,7 +71,7 @@ class ListLogicalClustersResponse(SdkResponse):
     def logical_clusters(self, logical_clusters):
         r"""Sets the logical_clusters of this ListLogicalClustersResponse.
 
-        逻辑集群列表信息
+        **参数解释**： 逻辑集群列表信息。 **取值范围**： 不涉及。
 
         :param logical_clusters: The logical_clusters of this ListLogicalClustersResponse.
         :type logical_clusters: list[:class:`huaweicloudsdkdws.v2.LogicalClusterInfo`]
@@ -82,7 +82,7 @@ class ListLogicalClustersResponse(SdkResponse):
     def count(self):
         r"""Gets the count of this ListLogicalClustersResponse.
 
-        逻辑集群总数量
+        **参数解释**： 逻辑集群总数量。 **取值范围**： 不涉及。
 
         :return: The count of this ListLogicalClustersResponse.
         :rtype: int
@@ -93,7 +93,7 @@ class ListLogicalClustersResponse(SdkResponse):
     def count(self, count):
         r"""Sets the count of this ListLogicalClustersResponse.
 
-        逻辑集群总数量
+        **参数解释**： 逻辑集群总数量。 **取值范围**： 不涉及。
 
         :param count: The count of this ListLogicalClustersResponse.
         :type count: int
@@ -104,7 +104,7 @@ class ListLogicalClustersResponse(SdkResponse):
     def add_enable(self):
         r"""Gets the add_enable of this ListLogicalClustersResponse.
 
-        作为互斥结果，如果集群内有其他运维操作，该值为false，此时不能添加逻辑集群
+        **参数解释**： 作为互斥结果，如果集群内有其他运维操作，该值为false，此时不能添加逻辑集群。 **取值范围**： 不涉及。
 
         :return: The add_enable of this ListLogicalClustersResponse.
         :rtype: bool
@@ -115,7 +115,7 @@ class ListLogicalClustersResponse(SdkResponse):
     def add_enable(self, add_enable):
         r"""Sets the add_enable of this ListLogicalClustersResponse.
 
-        作为互斥结果，如果集群内有其他运维操作，该值为false，此时不能添加逻辑集群
+        **参数解释**： 作为互斥结果，如果集群内有其他运维操作，该值为false，此时不能添加逻辑集群。 **取值范围**： 不涉及。
 
         :param add_enable: The add_enable of this ListLogicalClustersResponse.
         :type add_enable: bool

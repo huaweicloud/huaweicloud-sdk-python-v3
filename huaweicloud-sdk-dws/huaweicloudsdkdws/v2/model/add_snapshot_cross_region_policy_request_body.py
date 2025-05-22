@@ -37,7 +37,7 @@ class AddSnapshotCrossRegionPolicyRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param cluster_id: 集群ID
+        :param cluster_id: **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
         :type cluster_id: str
         :param destination_project_id: 目的项目ID
         :type destination_project_id: str
@@ -68,7 +68,7 @@ class AddSnapshotCrossRegionPolicyRequestBody:
     def cluster_id(self):
         r"""Gets the cluster_id of this AddSnapshotCrossRegionPolicyRequestBody.
 
-        集群ID
+        **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
 
         :return: The cluster_id of this AddSnapshotCrossRegionPolicyRequestBody.
         :rtype: str
@@ -79,7 +79,7 @@ class AddSnapshotCrossRegionPolicyRequestBody:
     def cluster_id(self, cluster_id):
         r"""Sets the cluster_id of this AddSnapshotCrossRegionPolicyRequestBody.
 
-        集群ID
+        **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
 
         :param cluster_id: The cluster_id of this AddSnapshotCrossRegionPolicyRequestBody.
         :type cluster_id: str

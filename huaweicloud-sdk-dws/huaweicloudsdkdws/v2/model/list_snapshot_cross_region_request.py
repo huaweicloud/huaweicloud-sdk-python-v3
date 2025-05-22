@@ -31,9 +31,9 @@ class ListSnapshotCrossRegionRequest:
 
         The model defined in huaweicloud sdk
 
-        :param offset: 分页偏移，默认0
+        :param offset: **参数解释**： 分页查询，偏移量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 0
         :type offset: int
-        :param limit: 分页大小，默认10
+        :param limit: **参数解释**： 分页单页大小。 **约束限制**： 不涉及。 **取值范围**： 大于0。 **默认取值**： 10
         :type limit: int
         """
         
@@ -52,7 +52,7 @@ class ListSnapshotCrossRegionRequest:
     def offset(self):
         r"""Gets the offset of this ListSnapshotCrossRegionRequest.
 
-        分页偏移，默认0
+        **参数解释**： 分页查询，偏移量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 0
 
         :return: The offset of this ListSnapshotCrossRegionRequest.
         :rtype: int
@@ -63,7 +63,7 @@ class ListSnapshotCrossRegionRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListSnapshotCrossRegionRequest.
 
-        分页偏移，默认0
+        **参数解释**： 分页查询，偏移量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 0
 
         :param offset: The offset of this ListSnapshotCrossRegionRequest.
         :type offset: int
@@ -74,7 +74,7 @@ class ListSnapshotCrossRegionRequest:
     def limit(self):
         r"""Gets the limit of this ListSnapshotCrossRegionRequest.
 
-        分页大小，默认10
+        **参数解释**： 分页单页大小。 **约束限制**： 不涉及。 **取值范围**： 大于0。 **默认取值**： 10
 
         :return: The limit of this ListSnapshotCrossRegionRequest.
         :rtype: int
@@ -85,7 +85,7 @@ class ListSnapshotCrossRegionRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListSnapshotCrossRegionRequest.
 
-        分页大小，默认10
+        **参数解释**： 分页单页大小。 **约束限制**： 不涉及。 **取值范围**： 大于0。 **默认取值**： 10
 
         :param limit: The limit of this ListSnapshotCrossRegionRequest.
         :type limit: int

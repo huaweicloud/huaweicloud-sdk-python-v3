@@ -32,9 +32,9 @@ class DisableLogicalClusterPlanResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param error_code: 错误码
+        :param error_code: **参数解释**： 错误码。 **取值范围**： 不涉及。
         :type error_code: str
-        :param error_msg: 错误信息
+        :param error_msg: **参数解释**： 错误信息。 **取值范围**： 不涉及。
         :type error_msg: str
         """
         
@@ -53,7 +53,7 @@ class DisableLogicalClusterPlanResponse(SdkResponse):
     def error_code(self):
         r"""Gets the error_code of this DisableLogicalClusterPlanResponse.
 
-        错误码
+        **参数解释**： 错误码。 **取值范围**： 不涉及。
 
         :return: The error_code of this DisableLogicalClusterPlanResponse.
         :rtype: str
@@ -64,7 +64,7 @@ class DisableLogicalClusterPlanResponse(SdkResponse):
     def error_code(self, error_code):
         r"""Sets the error_code of this DisableLogicalClusterPlanResponse.
 
-        错误码
+        **参数解释**： 错误码。 **取值范围**： 不涉及。
 
         :param error_code: The error_code of this DisableLogicalClusterPlanResponse.
         :type error_code: str
@@ -75,7 +75,7 @@ class DisableLogicalClusterPlanResponse(SdkResponse):
     def error_msg(self):
         r"""Gets the error_msg of this DisableLogicalClusterPlanResponse.
 
-        错误信息
+        **参数解释**： 错误信息。 **取值范围**： 不涉及。
 
         :return: The error_msg of this DisableLogicalClusterPlanResponse.
         :rtype: str
@@ -86,7 +86,7 @@ class DisableLogicalClusterPlanResponse(SdkResponse):
     def error_msg(self, error_msg):
         r"""Sets the error_msg of this DisableLogicalClusterPlanResponse.
 
-        错误信息
+        **参数解释**： 错误信息。 **取值范围**： 不涉及。
 
         :param error_msg: The error_msg of this DisableLogicalClusterPlanResponse.
         :type error_msg: str

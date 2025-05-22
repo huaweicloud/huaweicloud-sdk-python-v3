@@ -19,63 +19,75 @@ class ClusterShrinkReq:
     openapi_types = {
         'shrink_number': 'int',
         'online': 'bool',
-        'type': 'str',
         'retry': 'bool',
-        'force_backup': 'bool',
-        'need_agency': 'bool'
+        'need_agency': 'bool',
+        'parallel_jobs': 'int',
+        'type': 'str',
+        'force_backup': 'bool'
     }
 
     attribute_map = {
         'shrink_number': 'shrink_number',
         'online': 'online',
-        'type': 'type',
         'retry': 'retry',
-        'force_backup': 'force_backup',
-        'need_agency': 'need_agency'
+        'need_agency': 'need_agency',
+        'parallel_jobs': 'parallel_jobs',
+        'type': 'type',
+        'force_backup': 'force_backup'
     }
 
-    def __init__(self, shrink_number=None, online=None, type=None, retry=None, force_backup=None, need_agency=None):
+    def __init__(self, shrink_number=None, online=None, retry=None, need_agency=None, parallel_jobs=None, type=None, force_backup=None):
         r"""ClusterShrinkReq
 
         The model defined in huaweicloud sdk
 
-        :param shrink_number: 缩容数
+        :param shrink_number: **参数解释**：  缩容节点个数。  **约束限制**：  该值不能为空。  **取值范围**：  大于0的整数。  **默认取值**：  不涉及。
         :type shrink_number: int
-        :param online: 在线
+        :param online: **参数解释**：  是否是在线缩容。  **约束限制**：  不涉及。  **取值范围**：  false|true。  **默认取值**：  false。
         :type online: bool
-        :param type: 数据库类型
-        :type type: str
-        :param retry: 重试
+        :param retry: **参数解释**：  是否是缩容失败后重试。  **约束限制**：  不涉及。  **取值范围**：  false|true。  **默认取值**：  false。
         :type retry: bool
-        :param force_backup: 执行备份
-        :type force_backup: bool
-        :param need_agency: 是否需要委托
+        :param need_agency: **参数解释**：  是否需要委托。  **约束限制**：  不涉及。  **取值范围**：  false或true。  **默认取值**：  false。
         :type need_agency: bool
+        :param parallel_jobs: **参数解释**：  重分布并发配置数。  **约束限制**：  不涉及。  **取值范围**：  1~200。  **默认取值**：  4。
+        :type parallel_jobs: int
+        :param type: **参数解释**：  类型字段，字段已废弃不再生效。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        :type type: str
+        :param force_backup: **参数解释**：  操作前是否执行备份，字段已废弃不再生效。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        :type force_backup: bool
         """
         
         
 
         self._shrink_number = None
         self._online = None
-        self._type = None
         self._retry = None
-        self._force_backup = None
         self._need_agency = None
+        self._parallel_jobs = None
+        self._type = None
+        self._force_backup = None
         self.discriminator = None
 
-        self.shrink_number = shrink_number
-        self.online = online
-        self.type = type
+        if shrink_number is not None:
+            self.shrink_number = shrink_number
+        if online is not None:
+            self.online = online
         if retry is not None:
             self.retry = retry
-        self.force_backup = force_backup
-        self.need_agency = need_agency
+        if need_agency is not None:
+            self.need_agency = need_agency
+        if parallel_jobs is not None:
+            self.parallel_jobs = parallel_jobs
+        if type is not None:
+            self.type = type
+        if force_backup is not None:
+            self.force_backup = force_backup
 
     @property
     def shrink_number(self):
         r"""Gets the shrink_number of this ClusterShrinkReq.
 
-        缩容数
+        **参数解释**：  缩容节点个数。  **约束限制**：  该值不能为空。  **取值范围**：  大于0的整数。  **默认取值**：  不涉及。
 
         :return: The shrink_number of this ClusterShrinkReq.
         :rtype: int
@@ -86,7 +98,7 @@ class ClusterShrinkReq:
     def shrink_number(self, shrink_number):
         r"""Sets the shrink_number of this ClusterShrinkReq.
 
-        缩容数
+        **参数解释**：  缩容节点个数。  **约束限制**：  该值不能为空。  **取值范围**：  大于0的整数。  **默认取值**：  不涉及。
 
         :param shrink_number: The shrink_number of this ClusterShrinkReq.
         :type shrink_number: int
@@ -97,7 +109,7 @@ class ClusterShrinkReq:
     def online(self):
         r"""Gets the online of this ClusterShrinkReq.
 
-        在线
+        **参数解释**：  是否是在线缩容。  **约束限制**：  不涉及。  **取值范围**：  false|true。  **默认取值**：  false。
 
         :return: The online of this ClusterShrinkReq.
         :rtype: bool
@@ -108,7 +120,7 @@ class ClusterShrinkReq:
     def online(self, online):
         r"""Sets the online of this ClusterShrinkReq.
 
-        在线
+        **参数解释**：  是否是在线缩容。  **约束限制**：  不涉及。  **取值范围**：  false|true。  **默认取值**：  false。
 
         :param online: The online of this ClusterShrinkReq.
         :type online: bool
@@ -116,32 +128,10 @@ class ClusterShrinkReq:
         self._online = online
 
     @property
-    def type(self):
-        r"""Gets the type of this ClusterShrinkReq.
-
-        数据库类型
-
-        :return: The type of this ClusterShrinkReq.
-        :rtype: str
-        """
-        return self._type
-
-    @type.setter
-    def type(self, type):
-        r"""Sets the type of this ClusterShrinkReq.
-
-        数据库类型
-
-        :param type: The type of this ClusterShrinkReq.
-        :type type: str
-        """
-        self._type = type
-
-    @property
     def retry(self):
         r"""Gets the retry of this ClusterShrinkReq.
 
-        重试
+        **参数解释**：  是否是缩容失败后重试。  **约束限制**：  不涉及。  **取值范围**：  false|true。  **默认取值**：  false。
 
         :return: The retry of this ClusterShrinkReq.
         :rtype: bool
@@ -152,7 +142,7 @@ class ClusterShrinkReq:
     def retry(self, retry):
         r"""Sets the retry of this ClusterShrinkReq.
 
-        重试
+        **参数解释**：  是否是缩容失败后重试。  **约束限制**：  不涉及。  **取值范围**：  false|true。  **默认取值**：  false。
 
         :param retry: The retry of this ClusterShrinkReq.
         :type retry: bool
@@ -160,32 +150,10 @@ class ClusterShrinkReq:
         self._retry = retry
 
     @property
-    def force_backup(self):
-        r"""Gets the force_backup of this ClusterShrinkReq.
-
-        执行备份
-
-        :return: The force_backup of this ClusterShrinkReq.
-        :rtype: bool
-        """
-        return self._force_backup
-
-    @force_backup.setter
-    def force_backup(self, force_backup):
-        r"""Sets the force_backup of this ClusterShrinkReq.
-
-        执行备份
-
-        :param force_backup: The force_backup of this ClusterShrinkReq.
-        :type force_backup: bool
-        """
-        self._force_backup = force_backup
-
-    @property
     def need_agency(self):
         r"""Gets the need_agency of this ClusterShrinkReq.
 
-        是否需要委托
+        **参数解释**：  是否需要委托。  **约束限制**：  不涉及。  **取值范围**：  false或true。  **默认取值**：  false。
 
         :return: The need_agency of this ClusterShrinkReq.
         :rtype: bool
@@ -196,12 +164,78 @@ class ClusterShrinkReq:
     def need_agency(self, need_agency):
         r"""Sets the need_agency of this ClusterShrinkReq.
 
-        是否需要委托
+        **参数解释**：  是否需要委托。  **约束限制**：  不涉及。  **取值范围**：  false或true。  **默认取值**：  false。
 
         :param need_agency: The need_agency of this ClusterShrinkReq.
         :type need_agency: bool
         """
         self._need_agency = need_agency
+
+    @property
+    def parallel_jobs(self):
+        r"""Gets the parallel_jobs of this ClusterShrinkReq.
+
+        **参数解释**：  重分布并发配置数。  **约束限制**：  不涉及。  **取值范围**：  1~200。  **默认取值**：  4。
+
+        :return: The parallel_jobs of this ClusterShrinkReq.
+        :rtype: int
+        """
+        return self._parallel_jobs
+
+    @parallel_jobs.setter
+    def parallel_jobs(self, parallel_jobs):
+        r"""Sets the parallel_jobs of this ClusterShrinkReq.
+
+        **参数解释**：  重分布并发配置数。  **约束限制**：  不涉及。  **取值范围**：  1~200。  **默认取值**：  4。
+
+        :param parallel_jobs: The parallel_jobs of this ClusterShrinkReq.
+        :type parallel_jobs: int
+        """
+        self._parallel_jobs = parallel_jobs
+
+    @property
+    def type(self):
+        r"""Gets the type of this ClusterShrinkReq.
+
+        **参数解释**：  类型字段，字段已废弃不再生效。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+
+        :return: The type of this ClusterShrinkReq.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        r"""Sets the type of this ClusterShrinkReq.
+
+        **参数解释**：  类型字段，字段已废弃不再生效。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+
+        :param type: The type of this ClusterShrinkReq.
+        :type type: str
+        """
+        self._type = type
+
+    @property
+    def force_backup(self):
+        r"""Gets the force_backup of this ClusterShrinkReq.
+
+        **参数解释**：  操作前是否执行备份，字段已废弃不再生效。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+
+        :return: The force_backup of this ClusterShrinkReq.
+        :rtype: bool
+        """
+        return self._force_backup
+
+    @force_backup.setter
+    def force_backup(self, force_backup):
+        r"""Sets the force_backup of this ClusterShrinkReq.
+
+        **参数解释**：  操作前是否执行备份，字段已废弃不再生效。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+
+        :param force_backup: The force_backup of this ClusterShrinkReq.
+        :type force_backup: bool
+        """
+        self._force_backup = force_backup
 
     def to_dict(self):
         """Returns the model properties as a dict"""

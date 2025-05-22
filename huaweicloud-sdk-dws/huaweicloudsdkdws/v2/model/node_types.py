@@ -49,27 +49,27 @@ class NodeTypes:
 
         The model defined in huaweicloud sdk
 
-        :param spec_name: 节点类型名称。
+        :param spec_name: **参数解释**： 规格名称。 **取值范围**： 字母、数字、小数点、下划线、短横线。
         :type spec_name: str
-        :param detail: 节点类型详细。
+        :param detail: **参数解释**： 规格详细信息。 **取值范围**： 不涉及。
         :type detail: list[:class:`huaweicloudsdkdws.v2.Detail`]
-        :param id: 节点类型ID。
+        :param id: **参数解释**： 规格ID。 **取值范围**： 一般为UUID。
         :type id: str
-        :param datastore_type: 产品类型 - dws：云数仓。 - hybrid：实时数仓。 - stream：IoT数仓。
+        :param datastore_type: **参数解释**： 产品类型。 **取值范围**： - dws：云数仓。 - hybrid：实时数仓。 - stream：IoT数仓。
         :type datastore_type: str
-        :param architecture: 架构类型 - x86。 - arm。
+        :param architecture: **参数解释**： 架构类型。 **取值范围**： - x86； - arm；
         :type architecture: str
-        :param available_zones: 支持的可用区及状态信息。
+        :param available_zones: **参数解释**： 支持的可用区及状态信息。 **取值范围**： 不涉及。
         :type available_zones: list[:class:`huaweicloudsdkdws.v2.NodeTypeAvailableZones`]
-        :param ram: 内存大小。
+        :param ram: **参数解释**： 内存大小。单位：GB。 **取值范围**： 大于0的正整数。
         :type ram: int
-        :param vcpus: CPU数量。
+        :param vcpus: **参数解释**： CPU数量。 **取值范围**： 大于0的正整数。
         :type vcpus: int
-        :param datastores: 内核版本信息。
+        :param datastores: **参数解释**： 内核版本信息。 **取值范围**： 不涉及。
         :type datastores: list[:class:`huaweicloudsdkdws.v2.NodeTypeDatastores`]
         :param volume: 
         :type volume: :class:`huaweicloudsdkdws.v2.VolumeResp`
-        :param elastic_volume_specs: 如果规格为弹性容量规格，则该属性为规格典配的弹性容量信息，包括存储类型、最小容量、最大容量以及步长信息，如果为固定存储规格，则该属性为null。
+        :param elastic_volume_specs: **参数解释**： 弹性弹性容量规格的规格容量信息 **取值范围**： 如果规格为弹性容量规格，则该属性为规格典配的弹性容量信息，包括存储类型、最小容量、最大容量以及步长信息，如果为固定存储规格，则该属性为null。
         :type elastic_volume_specs: list[:class:`huaweicloudsdkdws.v2.NodeTypeElasticVolumeSpecs`]
         """
         
@@ -104,7 +104,7 @@ class NodeTypes:
     def spec_name(self):
         r"""Gets the spec_name of this NodeTypes.
 
-        节点类型名称。
+        **参数解释**： 规格名称。 **取值范围**： 字母、数字、小数点、下划线、短横线。
 
         :return: The spec_name of this NodeTypes.
         :rtype: str
@@ -115,7 +115,7 @@ class NodeTypes:
     def spec_name(self, spec_name):
         r"""Sets the spec_name of this NodeTypes.
 
-        节点类型名称。
+        **参数解释**： 规格名称。 **取值范围**： 字母、数字、小数点、下划线、短横线。
 
         :param spec_name: The spec_name of this NodeTypes.
         :type spec_name: str
@@ -126,7 +126,7 @@ class NodeTypes:
     def detail(self):
         r"""Gets the detail of this NodeTypes.
 
-        节点类型详细。
+        **参数解释**： 规格详细信息。 **取值范围**： 不涉及。
 
         :return: The detail of this NodeTypes.
         :rtype: list[:class:`huaweicloudsdkdws.v2.Detail`]
@@ -137,7 +137,7 @@ class NodeTypes:
     def detail(self, detail):
         r"""Sets the detail of this NodeTypes.
 
-        节点类型详细。
+        **参数解释**： 规格详细信息。 **取值范围**： 不涉及。
 
         :param detail: The detail of this NodeTypes.
         :type detail: list[:class:`huaweicloudsdkdws.v2.Detail`]
@@ -148,7 +148,7 @@ class NodeTypes:
     def id(self):
         r"""Gets the id of this NodeTypes.
 
-        节点类型ID。
+        **参数解释**： 规格ID。 **取值范围**： 一般为UUID。
 
         :return: The id of this NodeTypes.
         :rtype: str
@@ -159,7 +159,7 @@ class NodeTypes:
     def id(self, id):
         r"""Sets the id of this NodeTypes.
 
-        节点类型ID。
+        **参数解释**： 规格ID。 **取值范围**： 一般为UUID。
 
         :param id: The id of this NodeTypes.
         :type id: str
@@ -170,7 +170,7 @@ class NodeTypes:
     def datastore_type(self):
         r"""Gets the datastore_type of this NodeTypes.
 
-        产品类型 - dws：云数仓。 - hybrid：实时数仓。 - stream：IoT数仓。
+        **参数解释**： 产品类型。 **取值范围**： - dws：云数仓。 - hybrid：实时数仓。 - stream：IoT数仓。
 
         :return: The datastore_type of this NodeTypes.
         :rtype: str
@@ -181,7 +181,7 @@ class NodeTypes:
     def datastore_type(self, datastore_type):
         r"""Sets the datastore_type of this NodeTypes.
 
-        产品类型 - dws：云数仓。 - hybrid：实时数仓。 - stream：IoT数仓。
+        **参数解释**： 产品类型。 **取值范围**： - dws：云数仓。 - hybrid：实时数仓。 - stream：IoT数仓。
 
         :param datastore_type: The datastore_type of this NodeTypes.
         :type datastore_type: str
@@ -192,7 +192,7 @@ class NodeTypes:
     def architecture(self):
         r"""Gets the architecture of this NodeTypes.
 
-        架构类型 - x86。 - arm。
+        **参数解释**： 架构类型。 **取值范围**： - x86； - arm；
 
         :return: The architecture of this NodeTypes.
         :rtype: str
@@ -203,7 +203,7 @@ class NodeTypes:
     def architecture(self, architecture):
         r"""Sets the architecture of this NodeTypes.
 
-        架构类型 - x86。 - arm。
+        **参数解释**： 架构类型。 **取值范围**： - x86； - arm；
 
         :param architecture: The architecture of this NodeTypes.
         :type architecture: str
@@ -214,7 +214,7 @@ class NodeTypes:
     def available_zones(self):
         r"""Gets the available_zones of this NodeTypes.
 
-        支持的可用区及状态信息。
+        **参数解释**： 支持的可用区及状态信息。 **取值范围**： 不涉及。
 
         :return: The available_zones of this NodeTypes.
         :rtype: list[:class:`huaweicloudsdkdws.v2.NodeTypeAvailableZones`]
@@ -225,7 +225,7 @@ class NodeTypes:
     def available_zones(self, available_zones):
         r"""Sets the available_zones of this NodeTypes.
 
-        支持的可用区及状态信息。
+        **参数解释**： 支持的可用区及状态信息。 **取值范围**： 不涉及。
 
         :param available_zones: The available_zones of this NodeTypes.
         :type available_zones: list[:class:`huaweicloudsdkdws.v2.NodeTypeAvailableZones`]
@@ -236,7 +236,7 @@ class NodeTypes:
     def ram(self):
         r"""Gets the ram of this NodeTypes.
 
-        内存大小。
+        **参数解释**： 内存大小。单位：GB。 **取值范围**： 大于0的正整数。
 
         :return: The ram of this NodeTypes.
         :rtype: int
@@ -247,7 +247,7 @@ class NodeTypes:
     def ram(self, ram):
         r"""Sets the ram of this NodeTypes.
 
-        内存大小。
+        **参数解释**： 内存大小。单位：GB。 **取值范围**： 大于0的正整数。
 
         :param ram: The ram of this NodeTypes.
         :type ram: int
@@ -258,7 +258,7 @@ class NodeTypes:
     def vcpus(self):
         r"""Gets the vcpus of this NodeTypes.
 
-        CPU数量。
+        **参数解释**： CPU数量。 **取值范围**： 大于0的正整数。
 
         :return: The vcpus of this NodeTypes.
         :rtype: int
@@ -269,7 +269,7 @@ class NodeTypes:
     def vcpus(self, vcpus):
         r"""Sets the vcpus of this NodeTypes.
 
-        CPU数量。
+        **参数解释**： CPU数量。 **取值范围**： 大于0的正整数。
 
         :param vcpus: The vcpus of this NodeTypes.
         :type vcpus: int
@@ -280,7 +280,7 @@ class NodeTypes:
     def datastores(self):
         r"""Gets the datastores of this NodeTypes.
 
-        内核版本信息。
+        **参数解释**： 内核版本信息。 **取值范围**： 不涉及。
 
         :return: The datastores of this NodeTypes.
         :rtype: list[:class:`huaweicloudsdkdws.v2.NodeTypeDatastores`]
@@ -291,7 +291,7 @@ class NodeTypes:
     def datastores(self, datastores):
         r"""Sets the datastores of this NodeTypes.
 
-        内核版本信息。
+        **参数解释**： 内核版本信息。 **取值范围**： 不涉及。
 
         :param datastores: The datastores of this NodeTypes.
         :type datastores: list[:class:`huaweicloudsdkdws.v2.NodeTypeDatastores`]
@@ -320,7 +320,7 @@ class NodeTypes:
     def elastic_volume_specs(self):
         r"""Gets the elastic_volume_specs of this NodeTypes.
 
-        如果规格为弹性容量规格，则该属性为规格典配的弹性容量信息，包括存储类型、最小容量、最大容量以及步长信息，如果为固定存储规格，则该属性为null。
+        **参数解释**： 弹性弹性容量规格的规格容量信息 **取值范围**： 如果规格为弹性容量规格，则该属性为规格典配的弹性容量信息，包括存储类型、最小容量、最大容量以及步长信息，如果为固定存储规格，则该属性为null。
 
         :return: The elastic_volume_specs of this NodeTypes.
         :rtype: list[:class:`huaweicloudsdkdws.v2.NodeTypeElasticVolumeSpecs`]
@@ -331,7 +331,7 @@ class NodeTypes:
     def elastic_volume_specs(self, elastic_volume_specs):
         r"""Sets the elastic_volume_specs of this NodeTypes.
 
-        如果规格为弹性容量规格，则该属性为规格典配的弹性容量信息，包括存储类型、最小容量、最大容量以及步长信息，如果为固定存储规格，则该属性为null。
+        **参数解释**： 弹性弹性容量规格的规格容量信息 **取值范围**： 如果规格为弹性容量规格，则该属性为规格典配的弹性容量信息，包括存储类型、最小容量、最大容量以及步长信息，如果为固定存储规格，则该属性为null。
 
         :param elastic_volume_specs: The elastic_volume_specs of this NodeTypes.
         :type elastic_volume_specs: list[:class:`huaweicloudsdkdws.v2.NodeTypeElasticVolumeSpecs`]

@@ -31,9 +31,9 @@ class LinkResp:
 
         The model defined in huaweicloud sdk
 
-        :param rel: 关联
+        :param rel: **参数解释**： 关联信息。 **取值范围**： 不涉及。
         :type rel: str
-        :param href: 连接
+        :param href: **参数解释**： 链接信息。 **取值范围**： 不涉及。
         :type href: str
         """
         
@@ -52,7 +52,7 @@ class LinkResp:
     def rel(self):
         r"""Gets the rel of this LinkResp.
 
-        关联
+        **参数解释**： 关联信息。 **取值范围**： 不涉及。
 
         :return: The rel of this LinkResp.
         :rtype: str
@@ -63,7 +63,7 @@ class LinkResp:
     def rel(self, rel):
         r"""Sets the rel of this LinkResp.
 
-        关联
+        **参数解释**： 关联信息。 **取值范围**： 不涉及。
 
         :param rel: The rel of this LinkResp.
         :type rel: str
@@ -74,7 +74,7 @@ class LinkResp:
     def href(self):
         r"""Gets the href of this LinkResp.
 
-        连接
+        **参数解释**： 链接信息。 **取值范围**： 不涉及。
 
         :return: The href of this LinkResp.
         :rtype: str
@@ -85,7 +85,7 @@ class LinkResp:
     def href(self, href):
         r"""Sets the href of this LinkResp.
 
-        连接
+        **参数解释**： 链接信息。 **取值范围**： 不涉及。
 
         :param href: The href of this LinkResp.
         :type href: str

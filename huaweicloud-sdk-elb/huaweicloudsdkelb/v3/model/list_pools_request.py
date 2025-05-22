@@ -43,7 +43,8 @@ class ListPoolsRequest:
         'any_port_enable': 'bool',
         'public_border_group': 'str',
         'quic_cid_len': 'int',
-        'quic_cid_offset': 'int'
+        'quic_cid_offset': 'int',
+        'az_affinity': 'list[str]'
     }
 
     attribute_map = {
@@ -73,10 +74,11 @@ class ListPoolsRequest:
         'any_port_enable': 'any_port_enable',
         'public_border_group': 'public_border_group',
         'quic_cid_len': 'quic_cid_len',
-        'quic_cid_offset': 'quic_cid_offset'
+        'quic_cid_offset': 'quic_cid_offset',
+        'az_affinity': 'az_affinity'
     }
 
-    def __init__(self, marker=None, limit=None, page_reverse=None, description=None, admin_state_up=None, healthmonitor_id=None, id=None, name=None, loadbalancer_id=None, protocol=None, lb_algorithm=None, enterprise_project_id=None, ip_version=None, member_address=None, member_device_id=None, member_deletion_protection_enable=None, listener_id=None, member_instance_id=None, vpc_id=None, type=None, protection_status=None, connection_drain=None, pool_health=None, any_port_enable=None, public_border_group=None, quic_cid_len=None, quic_cid_offset=None):
+    def __init__(self, marker=None, limit=None, page_reverse=None, description=None, admin_state_up=None, healthmonitor_id=None, id=None, name=None, loadbalancer_id=None, protocol=None, lb_algorithm=None, enterprise_project_id=None, ip_version=None, member_address=None, member_device_id=None, member_deletion_protection_enable=None, listener_id=None, member_instance_id=None, vpc_id=None, type=None, protection_status=None, connection_drain=None, pool_health=None, any_port_enable=None, public_border_group=None, quic_cid_len=None, quic_cid_offset=None, az_affinity=None):
         r"""ListPoolsRequest
 
         The model defined in huaweicloud sdk
@@ -135,6 +137,8 @@ class ListPoolsRequest:
         :type quic_cid_len: int
         :param quic_cid_offset: 查询相同QUIC CID策略配置的后端服务器组，仅用于查询条件，不作为响应参数字段。 支持多值查询，查询条件格式：*quic_cid_offset&#x3D;1&amp;quic_cid_offset&#x3D;3*
         :type quic_cid_offset: int
+        :param az_affinity: 查询后端服务器组可用区亲和性策略是否开启。示例如下： \&quot;az_affinity\&quot;: {             \&quot;enable\&quot;: \&quot;true\&quot;         }  支持多值查询，查询条件格式：  *az_affinity&#x3D;enable&#x3D;true&amp;az_affinity&#x3D;enable&#x3D;false*。
+        :type az_affinity: list[str]
         """
         
         
@@ -166,6 +170,7 @@ class ListPoolsRequest:
         self._public_border_group = None
         self._quic_cid_len = None
         self._quic_cid_offset = None
+        self._az_affinity = None
         self.discriminator = None
 
         if marker is not None:
@@ -222,6 +227,8 @@ class ListPoolsRequest:
             self.quic_cid_len = quic_cid_len
         if quic_cid_offset is not None:
             self.quic_cid_offset = quic_cid_offset
+        if az_affinity is not None:
+            self.az_affinity = az_affinity
 
     @property
     def marker(self):
@@ -816,6 +823,28 @@ class ListPoolsRequest:
         :type quic_cid_offset: int
         """
         self._quic_cid_offset = quic_cid_offset
+
+    @property
+    def az_affinity(self):
+        r"""Gets the az_affinity of this ListPoolsRequest.
+
+        查询后端服务器组可用区亲和性策略是否开启。示例如下： \"az_affinity\": {             \"enable\": \"true\"         }  支持多值查询，查询条件格式：  *az_affinity=enable=true&az_affinity=enable=false*。
+
+        :return: The az_affinity of this ListPoolsRequest.
+        :rtype: list[str]
+        """
+        return self._az_affinity
+
+    @az_affinity.setter
+    def az_affinity(self, az_affinity):
+        r"""Sets the az_affinity of this ListPoolsRequest.
+
+        查询后端服务器组可用区亲和性策略是否开启。示例如下： \"az_affinity\": {             \"enable\": \"true\"         }  支持多值查询，查询条件格式：  *az_affinity=enable=true&az_affinity=enable=false*。
+
+        :param az_affinity: The az_affinity of this ListPoolsRequest.
+        :type az_affinity: list[str]
+        """
+        self._az_affinity = az_affinity
 
     def to_dict(self):
         """Returns the model properties as a dict"""

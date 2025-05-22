@@ -43,15 +43,15 @@ class RdsRedisInfo:
 
         The model defined in huaweicloud sdk
 
-        :param id: ID
+        :param id: **参数解释**： 重分布信息ID。 **取值范围**： 不涉及。
         :type id: str
-        :param cluster_id: 集群ID
+        :param cluster_id: **参数解释**： 集群ID。 **取值范围**： 不涉及。
         :type cluster_id: str
-        :param start_time: 开始时间
+        :param start_time: **参数解释**： 开始时间。 **取值范围**： 不涉及。
         :type start_time: str
-        :param end_time: 结束时间
+        :param end_time: **参数解释**： 结束时间。 **取值范围**： 不涉及。
         :type end_time: str
-        :param status: 状态
+        :param status: **参数解释**： 状态。 **取值范围**： PREPARE|RUNNING|WAITING|PAUSE|PAUSING|SUCCESS|FAIL。
         :type status: str
         :param redis_conf: 
         :type redis_conf: :class:`huaweicloudsdkdws.v2.RedisConf`
@@ -94,7 +94,7 @@ class RdsRedisInfo:
     def id(self):
         r"""Gets the id of this RdsRedisInfo.
 
-        ID
+        **参数解释**： 重分布信息ID。 **取值范围**： 不涉及。
 
         :return: The id of this RdsRedisInfo.
         :rtype: str
@@ -105,7 +105,7 @@ class RdsRedisInfo:
     def id(self, id):
         r"""Sets the id of this RdsRedisInfo.
 
-        ID
+        **参数解释**： 重分布信息ID。 **取值范围**： 不涉及。
 
         :param id: The id of this RdsRedisInfo.
         :type id: str
@@ -116,7 +116,7 @@ class RdsRedisInfo:
     def cluster_id(self):
         r"""Gets the cluster_id of this RdsRedisInfo.
 
-        集群ID
+        **参数解释**： 集群ID。 **取值范围**： 不涉及。
 
         :return: The cluster_id of this RdsRedisInfo.
         :rtype: str
@@ -127,7 +127,7 @@ class RdsRedisInfo:
     def cluster_id(self, cluster_id):
         r"""Sets the cluster_id of this RdsRedisInfo.
 
-        集群ID
+        **参数解释**： 集群ID。 **取值范围**： 不涉及。
 
         :param cluster_id: The cluster_id of this RdsRedisInfo.
         :type cluster_id: str
@@ -138,7 +138,7 @@ class RdsRedisInfo:
     def start_time(self):
         r"""Gets the start_time of this RdsRedisInfo.
 
-        开始时间
+        **参数解释**： 开始时间。 **取值范围**： 不涉及。
 
         :return: The start_time of this RdsRedisInfo.
         :rtype: str
@@ -149,7 +149,7 @@ class RdsRedisInfo:
     def start_time(self, start_time):
         r"""Sets the start_time of this RdsRedisInfo.
 
-        开始时间
+        **参数解释**： 开始时间。 **取值范围**： 不涉及。
 
         :param start_time: The start_time of this RdsRedisInfo.
         :type start_time: str
@@ -160,7 +160,7 @@ class RdsRedisInfo:
     def end_time(self):
         r"""Gets the end_time of this RdsRedisInfo.
 
-        结束时间
+        **参数解释**： 结束时间。 **取值范围**： 不涉及。
 
         :return: The end_time of this RdsRedisInfo.
         :rtype: str
@@ -171,7 +171,7 @@ class RdsRedisInfo:
     def end_time(self, end_time):
         r"""Sets the end_time of this RdsRedisInfo.
 
-        结束时间
+        **参数解释**： 结束时间。 **取值范围**： 不涉及。
 
         :param end_time: The end_time of this RdsRedisInfo.
         :type end_time: str
@@ -182,7 +182,7 @@ class RdsRedisInfo:
     def status(self):
         r"""Gets the status of this RdsRedisInfo.
 
-        状态
+        **参数解释**： 状态。 **取值范围**： PREPARE|RUNNING|WAITING|PAUSE|PAUSING|SUCCESS|FAIL。
 
         :return: The status of this RdsRedisInfo.
         :rtype: str
@@ -193,7 +193,7 @@ class RdsRedisInfo:
     def status(self, status):
         r"""Sets the status of this RdsRedisInfo.
 
-        状态
+        **参数解释**： 状态。 **取值范围**： PREPARE|RUNNING|WAITING|PAUSE|PAUSING|SUCCESS|FAIL。
 
         :param status: The status of this RdsRedisInfo.
         :type status: str

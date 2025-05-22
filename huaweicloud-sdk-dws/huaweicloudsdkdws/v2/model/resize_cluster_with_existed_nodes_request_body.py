@@ -43,15 +43,15 @@ class ResizeClusterWithExistedNodesRequestBody:
 
         :param scale_out: 
         :type scale_out: :class:`huaweicloudsdkdws.v2.ScaleOut`
-        :param force_backup: 是否强制备份
+        :param force_backup: **参数解释**： 是否强制备份。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type force_backup: bool
-        :param mode: 扩容备份模式，不传默认离线read-only。
+        :param mode: **参数解释**： 扩容模式，不传默认离线read-only。 **约束限制**： 在线模式在大部分低版本集群不支持，请在联系运维人员确认后方才可用。 **取值范围**： read-only：离线模式 insert：在线模式 **默认取值**： 不涉及。
         :type mode: str
-        :param logical_cluster_name: 逻辑集群名称。非逻辑集群模式下该字段不填，逻辑集群模式下不传默认elastic_group。
+        :param logical_cluster_name: **参数解释**： 逻辑集群名称。 **约束限制**： 不涉及。 **取值范围**： 非逻辑集群模式下该字段不填，逻辑集群模式下不传默认elastic_group。 **默认取值**： elastic_group
         :type logical_cluster_name: str
-        :param expand_with_existed_node: 是否是使用已添加的空闲节点进行扩容
+        :param expand_with_existed_node: **参数解释**： 是否是使用已添加的空闲节点进行扩容。 **约束限制**： 不涉及。 **取值范围**： true：使用空闲节点扩容 false：不使用空闲节点扩容 **默认取值**： false
         :type expand_with_existed_node: bool
-        :param auto_redistribute: 扩容完成后是否自动启动重分布，默认true
+        :param auto_redistribute: **参数解释**： 扩容完成后是否自动启动重分布，默认true。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： true
         :type auto_redistribute: bool
         :param redis_conf: 
         :type redis_conf: :class:`huaweicloudsdkdws.v2.RedisConfReq`
@@ -103,7 +103,7 @@ class ResizeClusterWithExistedNodesRequestBody:
     def force_backup(self):
         r"""Gets the force_backup of this ResizeClusterWithExistedNodesRequestBody.
 
-        是否强制备份
+        **参数解释**： 是否强制备份。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The force_backup of this ResizeClusterWithExistedNodesRequestBody.
         :rtype: bool
@@ -114,7 +114,7 @@ class ResizeClusterWithExistedNodesRequestBody:
     def force_backup(self, force_backup):
         r"""Sets the force_backup of this ResizeClusterWithExistedNodesRequestBody.
 
-        是否强制备份
+        **参数解释**： 是否强制备份。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param force_backup: The force_backup of this ResizeClusterWithExistedNodesRequestBody.
         :type force_backup: bool
@@ -125,7 +125,7 @@ class ResizeClusterWithExistedNodesRequestBody:
     def mode(self):
         r"""Gets the mode of this ResizeClusterWithExistedNodesRequestBody.
 
-        扩容备份模式，不传默认离线read-only。
+        **参数解释**： 扩容模式，不传默认离线read-only。 **约束限制**： 在线模式在大部分低版本集群不支持，请在联系运维人员确认后方才可用。 **取值范围**： read-only：离线模式 insert：在线模式 **默认取值**： 不涉及。
 
         :return: The mode of this ResizeClusterWithExistedNodesRequestBody.
         :rtype: str
@@ -136,7 +136,7 @@ class ResizeClusterWithExistedNodesRequestBody:
     def mode(self, mode):
         r"""Sets the mode of this ResizeClusterWithExistedNodesRequestBody.
 
-        扩容备份模式，不传默认离线read-only。
+        **参数解释**： 扩容模式，不传默认离线read-only。 **约束限制**： 在线模式在大部分低版本集群不支持，请在联系运维人员确认后方才可用。 **取值范围**： read-only：离线模式 insert：在线模式 **默认取值**： 不涉及。
 
         :param mode: The mode of this ResizeClusterWithExistedNodesRequestBody.
         :type mode: str
@@ -147,7 +147,7 @@ class ResizeClusterWithExistedNodesRequestBody:
     def logical_cluster_name(self):
         r"""Gets the logical_cluster_name of this ResizeClusterWithExistedNodesRequestBody.
 
-        逻辑集群名称。非逻辑集群模式下该字段不填，逻辑集群模式下不传默认elastic_group。
+        **参数解释**： 逻辑集群名称。 **约束限制**： 不涉及。 **取值范围**： 非逻辑集群模式下该字段不填，逻辑集群模式下不传默认elastic_group。 **默认取值**： elastic_group
 
         :return: The logical_cluster_name of this ResizeClusterWithExistedNodesRequestBody.
         :rtype: str
@@ -158,7 +158,7 @@ class ResizeClusterWithExistedNodesRequestBody:
     def logical_cluster_name(self, logical_cluster_name):
         r"""Sets the logical_cluster_name of this ResizeClusterWithExistedNodesRequestBody.
 
-        逻辑集群名称。非逻辑集群模式下该字段不填，逻辑集群模式下不传默认elastic_group。
+        **参数解释**： 逻辑集群名称。 **约束限制**： 不涉及。 **取值范围**： 非逻辑集群模式下该字段不填，逻辑集群模式下不传默认elastic_group。 **默认取值**： elastic_group
 
         :param logical_cluster_name: The logical_cluster_name of this ResizeClusterWithExistedNodesRequestBody.
         :type logical_cluster_name: str
@@ -169,7 +169,7 @@ class ResizeClusterWithExistedNodesRequestBody:
     def expand_with_existed_node(self):
         r"""Gets the expand_with_existed_node of this ResizeClusterWithExistedNodesRequestBody.
 
-        是否是使用已添加的空闲节点进行扩容
+        **参数解释**： 是否是使用已添加的空闲节点进行扩容。 **约束限制**： 不涉及。 **取值范围**： true：使用空闲节点扩容 false：不使用空闲节点扩容 **默认取值**： false
 
         :return: The expand_with_existed_node of this ResizeClusterWithExistedNodesRequestBody.
         :rtype: bool
@@ -180,7 +180,7 @@ class ResizeClusterWithExistedNodesRequestBody:
     def expand_with_existed_node(self, expand_with_existed_node):
         r"""Sets the expand_with_existed_node of this ResizeClusterWithExistedNodesRequestBody.
 
-        是否是使用已添加的空闲节点进行扩容
+        **参数解释**： 是否是使用已添加的空闲节点进行扩容。 **约束限制**： 不涉及。 **取值范围**： true：使用空闲节点扩容 false：不使用空闲节点扩容 **默认取值**： false
 
         :param expand_with_existed_node: The expand_with_existed_node of this ResizeClusterWithExistedNodesRequestBody.
         :type expand_with_existed_node: bool
@@ -191,7 +191,7 @@ class ResizeClusterWithExistedNodesRequestBody:
     def auto_redistribute(self):
         r"""Gets the auto_redistribute of this ResizeClusterWithExistedNodesRequestBody.
 
-        扩容完成后是否自动启动重分布，默认true
+        **参数解释**： 扩容完成后是否自动启动重分布，默认true。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： true
 
         :return: The auto_redistribute of this ResizeClusterWithExistedNodesRequestBody.
         :rtype: bool
@@ -202,7 +202,7 @@ class ResizeClusterWithExistedNodesRequestBody:
     def auto_redistribute(self, auto_redistribute):
         r"""Sets the auto_redistribute of this ResizeClusterWithExistedNodesRequestBody.
 
-        扩容完成后是否自动启动重分布，默认true
+        **参数解释**： 扩容完成后是否自动启动重分布，默认true。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： true
 
         :param auto_redistribute: The auto_redistribute of this ResizeClusterWithExistedNodesRequestBody.
         :type auto_redistribute: bool

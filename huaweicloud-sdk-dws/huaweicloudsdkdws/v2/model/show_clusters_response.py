@@ -32,9 +32,9 @@ class ShowClustersResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param clusters: 集群对象列表。
+        :param clusters: **参数解释**： 集群对象列表。 **取值范围**： 不涉及。
         :type clusters: list[:class:`huaweicloudsdkdws.v2.ClusterInfo`]
-        :param count: 集群对象列表总数。
+        :param count: **参数解释**： 集群对象列表总数。 **取值范围**： 不涉及。
         :type count: int
         """
         
@@ -53,7 +53,7 @@ class ShowClustersResponse(SdkResponse):
     def clusters(self):
         r"""Gets the clusters of this ShowClustersResponse.
 
-        集群对象列表。
+        **参数解释**： 集群对象列表。 **取值范围**： 不涉及。
 
         :return: The clusters of this ShowClustersResponse.
         :rtype: list[:class:`huaweicloudsdkdws.v2.ClusterInfo`]
@@ -64,7 +64,7 @@ class ShowClustersResponse(SdkResponse):
     def clusters(self, clusters):
         r"""Sets the clusters of this ShowClustersResponse.
 
-        集群对象列表。
+        **参数解释**： 集群对象列表。 **取值范围**： 不涉及。
 
         :param clusters: The clusters of this ShowClustersResponse.
         :type clusters: list[:class:`huaweicloudsdkdws.v2.ClusterInfo`]
@@ -75,7 +75,7 @@ class ShowClustersResponse(SdkResponse):
     def count(self):
         r"""Gets the count of this ShowClustersResponse.
 
-        集群对象列表总数。
+        **参数解释**： 集群对象列表总数。 **取值范围**： 不涉及。
 
         :return: The count of this ShowClustersResponse.
         :rtype: int
@@ -86,7 +86,7 @@ class ShowClustersResponse(SdkResponse):
     def count(self, count):
         r"""Sets the count of this ShowClustersResponse.
 
-        集群对象列表总数。
+        **参数解释**： 集群对象列表总数。 **取值范围**： 不涉及。
 
         :param count: The count of this ShowClustersResponse.
         :type count: int

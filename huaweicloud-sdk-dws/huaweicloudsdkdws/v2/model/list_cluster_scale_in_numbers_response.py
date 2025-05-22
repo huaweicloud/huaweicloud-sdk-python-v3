@@ -30,7 +30,7 @@ class ListClusterScaleInNumbersResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param shrink_sequence: 合适的缩容数
+        :param shrink_sequence: 参数解释: 合适的缩容数。 取值范围: 不涉及。
         :type shrink_sequence: list[str]
         """
         
@@ -46,7 +46,7 @@ class ListClusterScaleInNumbersResponse(SdkResponse):
     def shrink_sequence(self):
         r"""Gets the shrink_sequence of this ListClusterScaleInNumbersResponse.
 
-        合适的缩容数
+        参数解释: 合适的缩容数。 取值范围: 不涉及。
 
         :return: The shrink_sequence of this ListClusterScaleInNumbersResponse.
         :rtype: list[str]
@@ -57,7 +57,7 @@ class ListClusterScaleInNumbersResponse(SdkResponse):
     def shrink_sequence(self, shrink_sequence):
         r"""Sets the shrink_sequence of this ListClusterScaleInNumbersResponse.
 
-        合适的缩容数
+        参数解释: 合适的缩容数。 取值范围: 不涉及。
 
         :param shrink_sequence: The shrink_sequence of this ListClusterScaleInNumbersResponse.
         :type shrink_sequence: list[str]

@@ -233,9 +233,9 @@ class AadClient(Client):
         return http_info
 
     def associate_ip_to_policy_and_package(self, request):
-        r"""策略和防护包绑定防护对象
+        r"""策略和实例绑定防护对象
 
-        策略和防护包绑定防护对象
+        策略和实例绑定防护对象
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -895,9 +895,9 @@ class AadClient(Client):
         return http_info
 
     def disassociate_ip_from_policy_and_package(self, request):
-        r"""策略和防护包解绑防护对象
+        r"""策略和实例解绑防护对象
 
-        策略和防护包解绑防护对象
+        策略和实例解绑防护对象
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1220,9 +1220,9 @@ class AadClient(Client):
         return http_info
 
     def list_package(self, request):
-        r"""查询防护包列表
+        r"""查询实例列表
 
-        查询防护包列表
+        查询实例列表
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2091,9 +2091,9 @@ class AadClient(Client):
         return http_info
 
     def update_package_ip(self, request):
-        r"""更新防护包绑定的全量防护对象
+        r"""更新实例绑定的全量防护对象
 
-        更新防护包绑定的全量防护对象
+        更新实例绑定的全量防护对象
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2158,9 +2158,9 @@ class AadClient(Client):
         return http_info
 
     def update_package_name(self, request):
-        r"""更新防护包名字
+        r"""更新实例名字
 
-        更新防护包名字
+        更新实例名字
         
         Please refer to HUAWEI cloud API Explorer for details.
 

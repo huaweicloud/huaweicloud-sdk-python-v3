@@ -43,7 +43,7 @@ class ListProtectedIpRequest:
         :type offset: int
         :param limit: 每页显示的条目数量,默认值:2000
         :type limit: int
-        :param package_id: 防护包id
+        :param package_id: 实例id
         :type package_id: str
         :param policy_id: 策略id
         :type policy_id: str
@@ -124,7 +124,7 @@ class ListProtectedIpRequest:
     def package_id(self):
         r"""Gets the package_id of this ListProtectedIpRequest.
 
-        防护包id
+        实例id
 
         :return: The package_id of this ListProtectedIpRequest.
         :rtype: str
@@ -135,7 +135,7 @@ class ListProtectedIpRequest:
     def package_id(self, package_id):
         r"""Sets the package_id of this ListProtectedIpRequest.
 
-        防护包id
+        实例id
 
         :param package_id: The package_id of this ListProtectedIpRequest.
         :type package_id: str

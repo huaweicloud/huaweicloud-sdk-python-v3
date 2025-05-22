@@ -30,7 +30,7 @@ class CreateLogicalClusterPlanResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param plan_id: 逻辑集群增删计划id
+        :param plan_id: **参数解释**： 逻辑集群增删计划ID。 **取值范围**： 不涉及。
         :type plan_id: str
         """
         
@@ -46,7 +46,7 @@ class CreateLogicalClusterPlanResponse(SdkResponse):
     def plan_id(self):
         r"""Gets the plan_id of this CreateLogicalClusterPlanResponse.
 
-        逻辑集群增删计划id
+        **参数解释**： 逻辑集群增删计划ID。 **取值范围**： 不涉及。
 
         :return: The plan_id of this CreateLogicalClusterPlanResponse.
         :rtype: str
@@ -57,7 +57,7 @@ class CreateLogicalClusterPlanResponse(SdkResponse):
     def plan_id(self, plan_id):
         r"""Sets the plan_id of this CreateLogicalClusterPlanResponse.
 
-        逻辑集群增删计划id
+        **参数解释**： 逻辑集群增删计划ID。 **取值范围**： 不涉及。
 
         :param plan_id: The plan_id of this CreateLogicalClusterPlanResponse.
         :type plan_id: str

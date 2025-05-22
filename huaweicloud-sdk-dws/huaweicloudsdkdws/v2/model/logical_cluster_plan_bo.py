@@ -43,21 +43,21 @@ class LogicalClusterPlanBo:
 
         The model defined in huaweicloud sdk
 
-        :param logical_cluster_name: 逻辑集群名字
+        :param logical_cluster_name: **参数解释**： 逻辑集群名字。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type logical_cluster_name: str
-        :param user: 逻辑集群绑定的用户，若绑定了主逻辑集群，不能绑定用户
+        :param user: **参数解释**： 逻辑集群绑定的用户，若绑定了主逻辑集群，不能绑定用户。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type user: str
-        :param node_num: 逻辑集群节点的个数
+        :param node_num: **参数解释**： 逻辑集群节点的个数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type node_num: int
-        :param main_logical_cluster: 逻辑集群的绑定的主逻辑集群，若绑定了用户，不能绑定主逻辑集群
+        :param main_logical_cluster: **参数解释**： 逻辑集群的绑定的主逻辑集群，若绑定了用户，不能绑定主逻辑集群。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type main_logical_cluster: str
-        :param plan_type: 计划类型，取值范围为(once|periodicity)
+        :param plan_type: **参数解释**： 计划类型，取值范围为(once|periodicity)。 **约束限制**： 不涉及。 **取值范围**： once：一次性计划 periodicity：周期性计划 **默认取值**： 不涉及。
         :type plan_type: str
-        :param start_time: 逻辑集群定时增删计划起始时间
+        :param start_time: **参数解释**： 逻辑集群定时增删计划起始时间。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type start_time: str
-        :param end_time: 逻辑集群定时增删计划终止时间
+        :param end_time: **参数解释**： 逻辑集群定时增删计划终止时间。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type end_time: str
-        :param actions: 逻辑集群定时增删计划细节
+        :param actions: **参数解释**： 逻辑集群定时增删计划细节。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type actions: list[:class:`huaweicloudsdkdws.v2.LogicalClusterPlanActionsParam`]
         """
         
@@ -92,7 +92,7 @@ class LogicalClusterPlanBo:
     def logical_cluster_name(self):
         r"""Gets the logical_cluster_name of this LogicalClusterPlanBo.
 
-        逻辑集群名字
+        **参数解释**： 逻辑集群名字。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The logical_cluster_name of this LogicalClusterPlanBo.
         :rtype: str
@@ -103,7 +103,7 @@ class LogicalClusterPlanBo:
     def logical_cluster_name(self, logical_cluster_name):
         r"""Sets the logical_cluster_name of this LogicalClusterPlanBo.
 
-        逻辑集群名字
+        **参数解释**： 逻辑集群名字。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param logical_cluster_name: The logical_cluster_name of this LogicalClusterPlanBo.
         :type logical_cluster_name: str
@@ -114,7 +114,7 @@ class LogicalClusterPlanBo:
     def user(self):
         r"""Gets the user of this LogicalClusterPlanBo.
 
-        逻辑集群绑定的用户，若绑定了主逻辑集群，不能绑定用户
+        **参数解释**： 逻辑集群绑定的用户，若绑定了主逻辑集群，不能绑定用户。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The user of this LogicalClusterPlanBo.
         :rtype: str
@@ -125,7 +125,7 @@ class LogicalClusterPlanBo:
     def user(self, user):
         r"""Sets the user of this LogicalClusterPlanBo.
 
-        逻辑集群绑定的用户，若绑定了主逻辑集群，不能绑定用户
+        **参数解释**： 逻辑集群绑定的用户，若绑定了主逻辑集群，不能绑定用户。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param user: The user of this LogicalClusterPlanBo.
         :type user: str
@@ -136,7 +136,7 @@ class LogicalClusterPlanBo:
     def node_num(self):
         r"""Gets the node_num of this LogicalClusterPlanBo.
 
-        逻辑集群节点的个数
+        **参数解释**： 逻辑集群节点的个数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The node_num of this LogicalClusterPlanBo.
         :rtype: int
@@ -147,7 +147,7 @@ class LogicalClusterPlanBo:
     def node_num(self, node_num):
         r"""Sets the node_num of this LogicalClusterPlanBo.
 
-        逻辑集群节点的个数
+        **参数解释**： 逻辑集群节点的个数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param node_num: The node_num of this LogicalClusterPlanBo.
         :type node_num: int
@@ -158,7 +158,7 @@ class LogicalClusterPlanBo:
     def main_logical_cluster(self):
         r"""Gets the main_logical_cluster of this LogicalClusterPlanBo.
 
-        逻辑集群的绑定的主逻辑集群，若绑定了用户，不能绑定主逻辑集群
+        **参数解释**： 逻辑集群的绑定的主逻辑集群，若绑定了用户，不能绑定主逻辑集群。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The main_logical_cluster of this LogicalClusterPlanBo.
         :rtype: str
@@ -169,7 +169,7 @@ class LogicalClusterPlanBo:
     def main_logical_cluster(self, main_logical_cluster):
         r"""Sets the main_logical_cluster of this LogicalClusterPlanBo.
 
-        逻辑集群的绑定的主逻辑集群，若绑定了用户，不能绑定主逻辑集群
+        **参数解释**： 逻辑集群的绑定的主逻辑集群，若绑定了用户，不能绑定主逻辑集群。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param main_logical_cluster: The main_logical_cluster of this LogicalClusterPlanBo.
         :type main_logical_cluster: str
@@ -180,7 +180,7 @@ class LogicalClusterPlanBo:
     def plan_type(self):
         r"""Gets the plan_type of this LogicalClusterPlanBo.
 
-        计划类型，取值范围为(once|periodicity)
+        **参数解释**： 计划类型，取值范围为(once|periodicity)。 **约束限制**： 不涉及。 **取值范围**： once：一次性计划 periodicity：周期性计划 **默认取值**： 不涉及。
 
         :return: The plan_type of this LogicalClusterPlanBo.
         :rtype: str
@@ -191,7 +191,7 @@ class LogicalClusterPlanBo:
     def plan_type(self, plan_type):
         r"""Sets the plan_type of this LogicalClusterPlanBo.
 
-        计划类型，取值范围为(once|periodicity)
+        **参数解释**： 计划类型，取值范围为(once|periodicity)。 **约束限制**： 不涉及。 **取值范围**： once：一次性计划 periodicity：周期性计划 **默认取值**： 不涉及。
 
         :param plan_type: The plan_type of this LogicalClusterPlanBo.
         :type plan_type: str
@@ -202,7 +202,7 @@ class LogicalClusterPlanBo:
     def start_time(self):
         r"""Gets the start_time of this LogicalClusterPlanBo.
 
-        逻辑集群定时增删计划起始时间
+        **参数解释**： 逻辑集群定时增删计划起始时间。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The start_time of this LogicalClusterPlanBo.
         :rtype: str
@@ -213,7 +213,7 @@ class LogicalClusterPlanBo:
     def start_time(self, start_time):
         r"""Sets the start_time of this LogicalClusterPlanBo.
 
-        逻辑集群定时增删计划起始时间
+        **参数解释**： 逻辑集群定时增删计划起始时间。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param start_time: The start_time of this LogicalClusterPlanBo.
         :type start_time: str
@@ -224,7 +224,7 @@ class LogicalClusterPlanBo:
     def end_time(self):
         r"""Gets the end_time of this LogicalClusterPlanBo.
 
-        逻辑集群定时增删计划终止时间
+        **参数解释**： 逻辑集群定时增删计划终止时间。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The end_time of this LogicalClusterPlanBo.
         :rtype: str
@@ -235,7 +235,7 @@ class LogicalClusterPlanBo:
     def end_time(self, end_time):
         r"""Sets the end_time of this LogicalClusterPlanBo.
 
-        逻辑集群定时增删计划终止时间
+        **参数解释**： 逻辑集群定时增删计划终止时间。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param end_time: The end_time of this LogicalClusterPlanBo.
         :type end_time: str
@@ -246,7 +246,7 @@ class LogicalClusterPlanBo:
     def actions(self):
         r"""Gets the actions of this LogicalClusterPlanBo.
 
-        逻辑集群定时增删计划细节
+        **参数解释**： 逻辑集群定时增删计划细节。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The actions of this LogicalClusterPlanBo.
         :rtype: list[:class:`huaweicloudsdkdws.v2.LogicalClusterPlanActionsParam`]
@@ -257,7 +257,7 @@ class LogicalClusterPlanBo:
     def actions(self, actions):
         r"""Sets the actions of this LogicalClusterPlanBo.
 
-        逻辑集群定时增删计划细节
+        **参数解释**： 逻辑集群定时增删计划细节。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param actions: The actions of this LogicalClusterPlanBo.
         :type actions: list[:class:`huaweicloudsdkdws.v2.LogicalClusterPlanActionsParam`]

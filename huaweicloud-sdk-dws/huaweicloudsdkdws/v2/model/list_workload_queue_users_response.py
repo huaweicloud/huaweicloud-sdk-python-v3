@@ -38,15 +38,15 @@ class ListWorkloadQueueUsersResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param workload_res_code: 结果状态码。
+        :param workload_res_code: **参数解释**： 结果状态码。 **取值范围**： 不涉及。
         :type workload_res_code: int
-        :param workload_res_str: 结果描述。
+        :param workload_res_str: **参数解释**： 结果描述。 **取值范围**： 不涉及。
         :type workload_res_str: str
-        :param queue_name: 队列名称。
+        :param queue_name: **参数解释**： 队列名称。 **取值范围**： 不涉及。
         :type queue_name: str
-        :param user_list: 队列用户列表。
+        :param user_list: **参数解释**： 队列用户列表。 **取值范围**： 不涉及。
         :type user_list: list[:class:`huaweicloudsdkdws.v2.WorkloadQueueUser`]
-        :param count: 总数量
+        :param count: **参数解释**： 总数量。 **取值范围**： 不涉及。
         :type count: int
         """
         
@@ -74,7 +74,7 @@ class ListWorkloadQueueUsersResponse(SdkResponse):
     def workload_res_code(self):
         r"""Gets the workload_res_code of this ListWorkloadQueueUsersResponse.
 
-        结果状态码。
+        **参数解释**： 结果状态码。 **取值范围**： 不涉及。
 
         :return: The workload_res_code of this ListWorkloadQueueUsersResponse.
         :rtype: int
@@ -85,7 +85,7 @@ class ListWorkloadQueueUsersResponse(SdkResponse):
     def workload_res_code(self, workload_res_code):
         r"""Sets the workload_res_code of this ListWorkloadQueueUsersResponse.
 
-        结果状态码。
+        **参数解释**： 结果状态码。 **取值范围**： 不涉及。
 
         :param workload_res_code: The workload_res_code of this ListWorkloadQueueUsersResponse.
         :type workload_res_code: int
@@ -96,7 +96,7 @@ class ListWorkloadQueueUsersResponse(SdkResponse):
     def workload_res_str(self):
         r"""Gets the workload_res_str of this ListWorkloadQueueUsersResponse.
 
-        结果描述。
+        **参数解释**： 结果描述。 **取值范围**： 不涉及。
 
         :return: The workload_res_str of this ListWorkloadQueueUsersResponse.
         :rtype: str
@@ -107,7 +107,7 @@ class ListWorkloadQueueUsersResponse(SdkResponse):
     def workload_res_str(self, workload_res_str):
         r"""Sets the workload_res_str of this ListWorkloadQueueUsersResponse.
 
-        结果描述。
+        **参数解释**： 结果描述。 **取值范围**： 不涉及。
 
         :param workload_res_str: The workload_res_str of this ListWorkloadQueueUsersResponse.
         :type workload_res_str: str
@@ -118,7 +118,7 @@ class ListWorkloadQueueUsersResponse(SdkResponse):
     def queue_name(self):
         r"""Gets the queue_name of this ListWorkloadQueueUsersResponse.
 
-        队列名称。
+        **参数解释**： 队列名称。 **取值范围**： 不涉及。
 
         :return: The queue_name of this ListWorkloadQueueUsersResponse.
         :rtype: str
@@ -129,7 +129,7 @@ class ListWorkloadQueueUsersResponse(SdkResponse):
     def queue_name(self, queue_name):
         r"""Sets the queue_name of this ListWorkloadQueueUsersResponse.
 
-        队列名称。
+        **参数解释**： 队列名称。 **取值范围**： 不涉及。
 
         :param queue_name: The queue_name of this ListWorkloadQueueUsersResponse.
         :type queue_name: str
@@ -140,7 +140,7 @@ class ListWorkloadQueueUsersResponse(SdkResponse):
     def user_list(self):
         r"""Gets the user_list of this ListWorkloadQueueUsersResponse.
 
-        队列用户列表。
+        **参数解释**： 队列用户列表。 **取值范围**： 不涉及。
 
         :return: The user_list of this ListWorkloadQueueUsersResponse.
         :rtype: list[:class:`huaweicloudsdkdws.v2.WorkloadQueueUser`]
@@ -151,7 +151,7 @@ class ListWorkloadQueueUsersResponse(SdkResponse):
     def user_list(self, user_list):
         r"""Sets the user_list of this ListWorkloadQueueUsersResponse.
 
-        队列用户列表。
+        **参数解释**： 队列用户列表。 **取值范围**： 不涉及。
 
         :param user_list: The user_list of this ListWorkloadQueueUsersResponse.
         :type user_list: list[:class:`huaweicloudsdkdws.v2.WorkloadQueueUser`]
@@ -162,7 +162,7 @@ class ListWorkloadQueueUsersResponse(SdkResponse):
     def count(self):
         r"""Gets the count of this ListWorkloadQueueUsersResponse.
 
-        总数量
+        **参数解释**： 总数量。 **取值范围**： 不涉及。
 
         :return: The count of this ListWorkloadQueueUsersResponse.
         :rtype: int
@@ -173,7 +173,7 @@ class ListWorkloadQueueUsersResponse(SdkResponse):
     def count(self, count):
         r"""Sets the count of this ListWorkloadQueueUsersResponse.
 
-        总数量
+        **参数解释**： 总数量。 **取值范围**： 不涉及。
 
         :param count: The count of this ListWorkloadQueueUsersResponse.
         :type count: int

@@ -136,7 +136,7 @@ class UpdateHostResponse(SdkResponse):
         :type traffic_mark: :class:`huaweicloudsdkwaf.v1.TrafficMark`
         :param circuit_breaker: 
         :type circuit_breaker: :class:`huaweicloudsdkwaf.v1.CircuitBreaker`
-        :param lb_algorithm: LB负载均衡，仅专业版（原企业版）和铂金版（原旗舰版）支持配置负载均衡算法   - 源IP Hash：将某个IP的请求定向到同一个服务器   - 加权轮询：所有请求将按权重轮流分配给源站服务器   - Session Hash：将某个Session标识的请求定向到同一个源站服务器，请确保在域名添加完毕后配置攻击惩罚的流量标识，否则Session Hash配置不生效
+        :param lb_algorithm: LB负载均衡，仅专业版和企业版支持配置负载均衡算法   - 源IP Hash：将某个IP的请求定向到同一个服务器   - 加权轮询：所有请求将按权重轮流分配给源站服务器   - Session Hash：将某个Session标识的请求定向到同一个源站服务器，请确保在域名添加完毕后配置攻击惩罚的流量标识，否则Session Hash配置不生效
         :type lb_algorithm: str
         :param timeout_config: 
         :type timeout_config: :class:`huaweicloudsdkwaf.v1.TimeoutConfig`
@@ -750,7 +750,7 @@ class UpdateHostResponse(SdkResponse):
     def lb_algorithm(self):
         r"""Gets the lb_algorithm of this UpdateHostResponse.
 
-        LB负载均衡，仅专业版（原企业版）和铂金版（原旗舰版）支持配置负载均衡算法   - 源IP Hash：将某个IP的请求定向到同一个服务器   - 加权轮询：所有请求将按权重轮流分配给源站服务器   - Session Hash：将某个Session标识的请求定向到同一个源站服务器，请确保在域名添加完毕后配置攻击惩罚的流量标识，否则Session Hash配置不生效
+        LB负载均衡，仅专业版和企业版支持配置负载均衡算法   - 源IP Hash：将某个IP的请求定向到同一个服务器   - 加权轮询：所有请求将按权重轮流分配给源站服务器   - Session Hash：将某个Session标识的请求定向到同一个源站服务器，请确保在域名添加完毕后配置攻击惩罚的流量标识，否则Session Hash配置不生效
 
         :return: The lb_algorithm of this UpdateHostResponse.
         :rtype: str
@@ -761,7 +761,7 @@ class UpdateHostResponse(SdkResponse):
     def lb_algorithm(self, lb_algorithm):
         r"""Sets the lb_algorithm of this UpdateHostResponse.
 
-        LB负载均衡，仅专业版（原企业版）和铂金版（原旗舰版）支持配置负载均衡算法   - 源IP Hash：将某个IP的请求定向到同一个服务器   - 加权轮询：所有请求将按权重轮流分配给源站服务器   - Session Hash：将某个Session标识的请求定向到同一个源站服务器，请确保在域名添加完毕后配置攻击惩罚的流量标识，否则Session Hash配置不生效
+        LB负载均衡，仅专业版和企业版支持配置负载均衡算法   - 源IP Hash：将某个IP的请求定向到同一个服务器   - 加权轮询：所有请求将按权重轮流分配给源站服务器   - Session Hash：将某个Session标识的请求定向到同一个源站服务器，请确保在域名添加完毕后配置攻击惩罚的流量标识，否则Session Hash配置不生效
 
         :param lb_algorithm: The lb_algorithm of this UpdateHostResponse.
         :type lb_algorithm: str

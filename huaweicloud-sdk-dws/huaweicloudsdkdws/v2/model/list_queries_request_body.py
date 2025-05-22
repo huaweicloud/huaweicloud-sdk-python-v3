@@ -41,9 +41,9 @@ class ListQueriesRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param cluster_id: 集群ID。
+        :param cluster_id: **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
         :type cluster_id: str
-        :param project_id: 项目ID。
+        :param project_id: **参数解释**： 项目ID。获取方式方法请参见[获取项目ID](dws_02_0011.xml)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type project_id: str
         :param offset: 偏移量，表示从此偏移量开始查询，offset&gt;&#x3D;0。
         :type offset: str
@@ -81,7 +81,7 @@ class ListQueriesRequestBody:
     def cluster_id(self):
         r"""Gets the cluster_id of this ListQueriesRequestBody.
 
-        集群ID。
+        **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
 
         :return: The cluster_id of this ListQueriesRequestBody.
         :rtype: str
@@ -92,7 +92,7 @@ class ListQueriesRequestBody:
     def cluster_id(self, cluster_id):
         r"""Sets the cluster_id of this ListQueriesRequestBody.
 
-        集群ID。
+        **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
 
         :param cluster_id: The cluster_id of this ListQueriesRequestBody.
         :type cluster_id: str
@@ -103,7 +103,7 @@ class ListQueriesRequestBody:
     def project_id(self):
         r"""Gets the project_id of this ListQueriesRequestBody.
 
-        项目ID。
+        **参数解释**： 项目ID。获取方式方法请参见[获取项目ID](dws_02_0011.xml)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The project_id of this ListQueriesRequestBody.
         :rtype: str
@@ -114,7 +114,7 @@ class ListQueriesRequestBody:
     def project_id(self, project_id):
         r"""Sets the project_id of this ListQueriesRequestBody.
 
-        项目ID。
+        **参数解释**： 项目ID。获取方式方法请参见[获取项目ID](dws_02_0011.xml)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param project_id: The project_id of this ListQueriesRequestBody.
         :type project_id: str

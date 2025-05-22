@@ -28,7 +28,9 @@ class UpdatePolicy:
         'type': 'str',
         'count': 'int',
         'suppress_duration': 'int',
-        'level': 'int'
+        'level': 'int',
+        'namespace': 'str',
+        'dimension_name': 'str'
     }
 
     attribute_map = {
@@ -43,10 +45,12 @@ class UpdatePolicy:
         'type': 'type',
         'count': 'count',
         'suppress_duration': 'suppress_duration',
-        'level': 'level'
+        'level': 'level',
+        'namespace': 'namespace',
+        'dimension_name': 'dimension_name'
     }
 
-    def __init__(self, metric_name=None, extra_info=None, period=None, filter=None, comparison_operator=None, value=None, hierarchical_value=None, unit=None, type=None, count=None, suppress_duration=None, level=None):
+    def __init__(self, metric_name=None, extra_info=None, period=None, filter=None, comparison_operator=None, value=None, hierarchical_value=None, unit=None, type=None, count=None, suppress_duration=None, level=None, namespace=None, dimension_name=None):
         r"""UpdatePolicy
 
         The model defined in huaweicloud sdk
@@ -75,6 +79,10 @@ class UpdatePolicy:
         :type suppress_duration: int
         :param level: 告警级别, 1为紧急，2为重要，3为次要，4为提示。默认值为2。
         :type level: int
+        :param namespace: 产品层级规则增加namespace（服务命名空间）和dimension_name（服务维度名称）指明生效策略归属。各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”
+        :type namespace: str
+        :param dimension_name: 产品层级规则增加namespace（服务命名空间）和dimension_name（服务维度名称）指明生效策略归属，目前最大支持4个维度，各服务资源的指标维度名称可查看：“[服务维度名称](ces_03_0059.xml)”
+        :type dimension_name: str
         """
         
         
@@ -91,6 +99,8 @@ class UpdatePolicy:
         self._count = None
         self._suppress_duration = None
         self._level = None
+        self._namespace = None
+        self._dimension_name = None
         self.discriminator = None
 
         self.metric_name = metric_name
@@ -112,6 +122,10 @@ class UpdatePolicy:
             self.suppress_duration = suppress_duration
         if level is not None:
             self.level = level
+        if namespace is not None:
+            self.namespace = namespace
+        if dimension_name is not None:
+            self.dimension_name = dimension_name
 
     @property
     def metric_name(self):
@@ -368,6 +382,50 @@ class UpdatePolicy:
         :type level: int
         """
         self._level = level
+
+    @property
+    def namespace(self):
+        r"""Gets the namespace of this UpdatePolicy.
+
+        产品层级规则增加namespace（服务命名空间）和dimension_name（服务维度名称）指明生效策略归属。各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”
+
+        :return: The namespace of this UpdatePolicy.
+        :rtype: str
+        """
+        return self._namespace
+
+    @namespace.setter
+    def namespace(self, namespace):
+        r"""Sets the namespace of this UpdatePolicy.
+
+        产品层级规则增加namespace（服务命名空间）和dimension_name（服务维度名称）指明生效策略归属。各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”
+
+        :param namespace: The namespace of this UpdatePolicy.
+        :type namespace: str
+        """
+        self._namespace = namespace
+
+    @property
+    def dimension_name(self):
+        r"""Gets the dimension_name of this UpdatePolicy.
+
+        产品层级规则增加namespace（服务命名空间）和dimension_name（服务维度名称）指明生效策略归属，目前最大支持4个维度，各服务资源的指标维度名称可查看：“[服务维度名称](ces_03_0059.xml)”
+
+        :return: The dimension_name of this UpdatePolicy.
+        :rtype: str
+        """
+        return self._dimension_name
+
+    @dimension_name.setter
+    def dimension_name(self, dimension_name):
+        r"""Sets the dimension_name of this UpdatePolicy.
+
+        产品层级规则增加namespace（服务命名空间）和dimension_name（服务维度名称）指明生效策略归属，目前最大支持4个维度，各服务资源的指标维度名称可查看：“[服务维度名称](ces_03_0059.xml)”
+
+        :param dimension_name: The dimension_name of this UpdatePolicy.
+        :type dimension_name: str
+        """
+        self._dimension_name = dimension_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -29,7 +29,7 @@ class ListClustersRequest:
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 企业项目ID，查询所有绑定eps集群，值为all_granted_eps
+        :param enterprise_project_id: **参数解释**： 企业项目ID。查询所有绑定eps集群，则值为all_granted_eps。 **约束限制**： 不涉及。 **取值范围**： all_granted_eps、0等，0表示默认默认企业项目“default”的ID。 **默认取值**： 不涉及。
         :type enterprise_project_id: str
         """
         
@@ -45,7 +45,7 @@ class ListClustersRequest:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this ListClustersRequest.
 
-        企业项目ID，查询所有绑定eps集群，值为all_granted_eps
+        **参数解释**： 企业项目ID。查询所有绑定eps集群，则值为all_granted_eps。 **约束限制**： 不涉及。 **取值范围**： all_granted_eps、0等，0表示默认默认企业项目“default”的ID。 **默认取值**： 不涉及。
 
         :return: The enterprise_project_id of this ListClustersRequest.
         :rtype: str
@@ -56,7 +56,7 @@ class ListClustersRequest:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this ListClustersRequest.
 
-        企业项目ID，查询所有绑定eps集群，值为all_granted_eps
+        **参数解释**： 企业项目ID。查询所有绑定eps集群，则值为all_granted_eps。 **约束限制**： 不涉及。 **取值范围**： all_granted_eps、0等，0表示默认默认企业项目“default”的ID。 **默认取值**： 不涉及。
 
         :param enterprise_project_id: The enterprise_project_id of this ListClustersRequest.
         :type enterprise_project_id: str

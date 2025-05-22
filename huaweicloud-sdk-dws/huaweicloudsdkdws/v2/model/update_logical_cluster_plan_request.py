@@ -33,9 +33,9 @@ class UpdateLogicalClusterPlanRequest:
 
         The model defined in huaweicloud sdk
 
-        :param cluster_id: 指定待编辑集群的ID
+        :param cluster_id: **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type cluster_id: str
-        :param plan_id: 逻辑集群增删计划ID
+        :param plan_id: **参数解释**： 逻辑集群增删计划ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type plan_id: str
         :param body: Body of the UpdateLogicalClusterPlanRequest
         :type body: :class:`huaweicloudsdkdws.v2.UpdateLogicalClusterPlanBo`
@@ -57,7 +57,7 @@ class UpdateLogicalClusterPlanRequest:
     def cluster_id(self):
         r"""Gets the cluster_id of this UpdateLogicalClusterPlanRequest.
 
-        指定待编辑集群的ID
+        **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The cluster_id of this UpdateLogicalClusterPlanRequest.
         :rtype: str
@@ -68,7 +68,7 @@ class UpdateLogicalClusterPlanRequest:
     def cluster_id(self, cluster_id):
         r"""Sets the cluster_id of this UpdateLogicalClusterPlanRequest.
 
-        指定待编辑集群的ID
+        **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param cluster_id: The cluster_id of this UpdateLogicalClusterPlanRequest.
         :type cluster_id: str
@@ -79,7 +79,7 @@ class UpdateLogicalClusterPlanRequest:
     def plan_id(self):
         r"""Gets the plan_id of this UpdateLogicalClusterPlanRequest.
 
-        逻辑集群增删计划ID
+        **参数解释**： 逻辑集群增删计划ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The plan_id of this UpdateLogicalClusterPlanRequest.
         :rtype: str
@@ -90,7 +90,7 @@ class UpdateLogicalClusterPlanRequest:
     def plan_id(self, plan_id):
         r"""Sets the plan_id of this UpdateLogicalClusterPlanRequest.
 
-        逻辑集群增删计划ID
+        **参数解释**： 逻辑集群增删计划ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param plan_id: The plan_id of this UpdateLogicalClusterPlanRequest.
         :type plan_id: str

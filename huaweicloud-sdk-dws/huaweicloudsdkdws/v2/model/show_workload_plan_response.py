@@ -34,9 +34,9 @@ class ShowWorkloadPlanResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param workload_res_code: 结果状态码。
+        :param workload_res_code: **参数解释**： 结果状态码。 **取值范围**： 不涉及。
         :type workload_res_code: int
-        :param workload_res_str: 结果描述。
+        :param workload_res_str: **参数解释**： 结果描述。 **取值范围**： 不涉及。
         :type workload_res_str: str
         :param workload_plan: 
         :type workload_plan: :class:`huaweicloudsdkdws.v2.WorkloadPlanInfo`
@@ -60,7 +60,7 @@ class ShowWorkloadPlanResponse(SdkResponse):
     def workload_res_code(self):
         r"""Gets the workload_res_code of this ShowWorkloadPlanResponse.
 
-        结果状态码。
+        **参数解释**： 结果状态码。 **取值范围**： 不涉及。
 
         :return: The workload_res_code of this ShowWorkloadPlanResponse.
         :rtype: int
@@ -71,7 +71,7 @@ class ShowWorkloadPlanResponse(SdkResponse):
     def workload_res_code(self, workload_res_code):
         r"""Sets the workload_res_code of this ShowWorkloadPlanResponse.
 
-        结果状态码。
+        **参数解释**： 结果状态码。 **取值范围**： 不涉及。
 
         :param workload_res_code: The workload_res_code of this ShowWorkloadPlanResponse.
         :type workload_res_code: int
@@ -82,7 +82,7 @@ class ShowWorkloadPlanResponse(SdkResponse):
     def workload_res_str(self):
         r"""Gets the workload_res_str of this ShowWorkloadPlanResponse.
 
-        结果描述。
+        **参数解释**： 结果描述。 **取值范围**： 不涉及。
 
         :return: The workload_res_str of this ShowWorkloadPlanResponse.
         :rtype: str
@@ -93,7 +93,7 @@ class ShowWorkloadPlanResponse(SdkResponse):
     def workload_res_str(self, workload_res_str):
         r"""Sets the workload_res_str of this ShowWorkloadPlanResponse.
 
-        结果描述。
+        **参数解释**： 结果描述。 **取值范围**： 不涉及。
 
         :param workload_res_str: The workload_res_str of this ShowWorkloadPlanResponse.
         :type workload_res_str: str

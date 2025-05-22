@@ -35,13 +35,13 @@ class AvailabilityZone:
 
         The model defined in huaweicloud sdk
 
-        :param code: 可用区唯一编码。
+        :param code: **参数解释**： 可用区唯一编码。 **取值范围**： 不涉及。
         :type code: str
-        :param name: 可用区名称。
+        :param name: **参数解释**： 可用区名称。 **取值范围**： 不涉及。
         :type name: str
-        :param status: 可用区状态。 - available：可用。 - unavailable：不可用。
+        :param status: **参数解释**： 可用区状态。 **取值范围**： available：可用。 unavailable：不可用。
         :type status: str
-        :param public_border_group: 可用区组，如：center。
+        :param public_border_group: **参数解释**： 可用区组，如：center。 **取值范围**： 不涉及。
         :type public_border_group: str
         """
         
@@ -62,7 +62,7 @@ class AvailabilityZone:
     def code(self):
         r"""Gets the code of this AvailabilityZone.
 
-        可用区唯一编码。
+        **参数解释**： 可用区唯一编码。 **取值范围**： 不涉及。
 
         :return: The code of this AvailabilityZone.
         :rtype: str
@@ -73,7 +73,7 @@ class AvailabilityZone:
     def code(self, code):
         r"""Sets the code of this AvailabilityZone.
 
-        可用区唯一编码。
+        **参数解释**： 可用区唯一编码。 **取值范围**： 不涉及。
 
         :param code: The code of this AvailabilityZone.
         :type code: str
@@ -84,7 +84,7 @@ class AvailabilityZone:
     def name(self):
         r"""Gets the name of this AvailabilityZone.
 
-        可用区名称。
+        **参数解释**： 可用区名称。 **取值范围**： 不涉及。
 
         :return: The name of this AvailabilityZone.
         :rtype: str
@@ -95,7 +95,7 @@ class AvailabilityZone:
     def name(self, name):
         r"""Sets the name of this AvailabilityZone.
 
-        可用区名称。
+        **参数解释**： 可用区名称。 **取值范围**： 不涉及。
 
         :param name: The name of this AvailabilityZone.
         :type name: str
@@ -106,7 +106,7 @@ class AvailabilityZone:
     def status(self):
         r"""Gets the status of this AvailabilityZone.
 
-        可用区状态。 - available：可用。 - unavailable：不可用。
+        **参数解释**： 可用区状态。 **取值范围**： available：可用。 unavailable：不可用。
 
         :return: The status of this AvailabilityZone.
         :rtype: str
@@ -117,7 +117,7 @@ class AvailabilityZone:
     def status(self, status):
         r"""Sets the status of this AvailabilityZone.
 
-        可用区状态。 - available：可用。 - unavailable：不可用。
+        **参数解释**： 可用区状态。 **取值范围**： available：可用。 unavailable：不可用。
 
         :param status: The status of this AvailabilityZone.
         :type status: str
@@ -128,7 +128,7 @@ class AvailabilityZone:
     def public_border_group(self):
         r"""Gets the public_border_group of this AvailabilityZone.
 
-        可用区组，如：center。
+        **参数解释**： 可用区组，如：center。 **取值范围**： 不涉及。
 
         :return: The public_border_group of this AvailabilityZone.
         :rtype: str
@@ -139,7 +139,7 @@ class AvailabilityZone:
     def public_border_group(self, public_border_group):
         r"""Sets the public_border_group of this AvailabilityZone.
 
-        可用区组，如：center。
+        **参数解释**： 可用区组，如：center。 **取值范围**： 不涉及。
 
         :param public_border_group: The public_border_group of this AvailabilityZone.
         :type public_border_group: str

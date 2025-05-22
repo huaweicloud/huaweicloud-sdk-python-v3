@@ -37,8 +37,7 @@ class OcrRegion:
                         "https://ocr.af-south-1.myhuaweicloud.com",
                         "https://ocr.af-south-1.myhuaweicloud.cn")
     LA_NORTH_2 = Region("la-north-2",
-                        "https://ocr.la-north-2.myhuaweicloud.com",
-                        "https://ocr.la-north-2.myhuaweicloud.lat")
+                        "https://ocr.la-north-2.myhuaweicloud.com")
 
     static_fields = {
         "cn-north-4": CN_NORTH_4,

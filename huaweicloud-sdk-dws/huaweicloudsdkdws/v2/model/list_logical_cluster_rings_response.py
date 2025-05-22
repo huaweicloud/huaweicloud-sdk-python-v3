@@ -32,9 +32,9 @@ class ListLogicalClusterRingsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param cluster_rings: 集群环列表信息
+        :param cluster_rings: **参数解释**： 集群环列表信息。 **取值范围**： 不涉及。
         :type cluster_rings: list[:class:`huaweicloudsdkdws.v2.LogicalClusterRingInfo`]
-        :param count: 集群环数量
+        :param count: **参数解释**： 集群环数量。 **取值范围**： 不涉及。
         :type count: int
         """
         
@@ -53,7 +53,7 @@ class ListLogicalClusterRingsResponse(SdkResponse):
     def cluster_rings(self):
         r"""Gets the cluster_rings of this ListLogicalClusterRingsResponse.
 
-        集群环列表信息
+        **参数解释**： 集群环列表信息。 **取值范围**： 不涉及。
 
         :return: The cluster_rings of this ListLogicalClusterRingsResponse.
         :rtype: list[:class:`huaweicloudsdkdws.v2.LogicalClusterRingInfo`]
@@ -64,7 +64,7 @@ class ListLogicalClusterRingsResponse(SdkResponse):
     def cluster_rings(self, cluster_rings):
         r"""Sets the cluster_rings of this ListLogicalClusterRingsResponse.
 
-        集群环列表信息
+        **参数解释**： 集群环列表信息。 **取值范围**： 不涉及。
 
         :param cluster_rings: The cluster_rings of this ListLogicalClusterRingsResponse.
         :type cluster_rings: list[:class:`huaweicloudsdkdws.v2.LogicalClusterRingInfo`]
@@ -75,7 +75,7 @@ class ListLogicalClusterRingsResponse(SdkResponse):
     def count(self):
         r"""Gets the count of this ListLogicalClusterRingsResponse.
 
-        集群环数量
+        **参数解释**： 集群环数量。 **取值范围**： 不涉及。
 
         :return: The count of this ListLogicalClusterRingsResponse.
         :rtype: int
@@ -86,7 +86,7 @@ class ListLogicalClusterRingsResponse(SdkResponse):
     def count(self, count):
         r"""Sets the count of this ListLogicalClusterRingsResponse.
 
-        集群环数量
+        **参数解释**： 集群环数量。 **取值范围**： 不涉及。
 
         :param count: The count of this ListLogicalClusterRingsResponse.
         :type count: int

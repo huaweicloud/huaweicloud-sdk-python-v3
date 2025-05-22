@@ -31,9 +31,9 @@ class LogicalClusterPlanActionsParam:
 
         The model defined in huaweicloud sdk
 
-        :param type: 定时增删计划行为类型，取值范围为（create|delete）
+        :param type: **参数解释**： 定时增删计划行为类型，取值范围为（create|delete）。 **约束限制**： 不涉及。 **取值范围**： create：创建 delete：删除 **默认取值**： 不涉及。
         :type type: str
-        :param strategy: 周期性定时增删计划，Cron策略表达式：如\&quot;0 0 0 ? * 3\&quot;
+        :param strategy: **参数解释**： 周期性定时增删计划，Cron策略表达式：如\&quot;0 0 0 ? * 3\&quot;。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type strategy: str
         """
         
@@ -51,7 +51,7 @@ class LogicalClusterPlanActionsParam:
     def type(self):
         r"""Gets the type of this LogicalClusterPlanActionsParam.
 
-        定时增删计划行为类型，取值范围为（create|delete）
+        **参数解释**： 定时增删计划行为类型，取值范围为（create|delete）。 **约束限制**： 不涉及。 **取值范围**： create：创建 delete：删除 **默认取值**： 不涉及。
 
         :return: The type of this LogicalClusterPlanActionsParam.
         :rtype: str
@@ -62,7 +62,7 @@ class LogicalClusterPlanActionsParam:
     def type(self, type):
         r"""Sets the type of this LogicalClusterPlanActionsParam.
 
-        定时增删计划行为类型，取值范围为（create|delete）
+        **参数解释**： 定时增删计划行为类型，取值范围为（create|delete）。 **约束限制**： 不涉及。 **取值范围**： create：创建 delete：删除 **默认取值**： 不涉及。
 
         :param type: The type of this LogicalClusterPlanActionsParam.
         :type type: str
@@ -73,7 +73,7 @@ class LogicalClusterPlanActionsParam:
     def strategy(self):
         r"""Gets the strategy of this LogicalClusterPlanActionsParam.
 
-        周期性定时增删计划，Cron策略表达式：如\"0 0 0 ? * 3\"
+        **参数解释**： 周期性定时增删计划，Cron策略表达式：如\"0 0 0 ? * 3\"。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The strategy of this LogicalClusterPlanActionsParam.
         :rtype: str
@@ -84,7 +84,7 @@ class LogicalClusterPlanActionsParam:
     def strategy(self, strategy):
         r"""Sets the strategy of this LogicalClusterPlanActionsParam.
 
-        周期性定时增删计划，Cron策略表达式：如\"0 0 0 ? * 3\"
+        **参数解释**： 周期性定时增删计划，Cron策略表达式：如\"0 0 0 ? * 3\"。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param strategy: The strategy of this LogicalClusterPlanActionsParam.
         :type strategy: str

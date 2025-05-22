@@ -45,9 +45,9 @@ class PolicyResponse:
 
         :param id: id
         :type id: str
-        :param package_id: 防护包id
+        :param package_id: 实例id
         :type package_id: str
-        :param package_name: 防护包名
+        :param package_name: 实例名
         :type package_name: str
         :param name: 策略名
         :type name: str
@@ -108,7 +108,7 @@ class PolicyResponse:
     def package_id(self):
         r"""Gets the package_id of this PolicyResponse.
 
-        防护包id
+        实例id
 
         :return: The package_id of this PolicyResponse.
         :rtype: str
@@ -119,7 +119,7 @@ class PolicyResponse:
     def package_id(self, package_id):
         r"""Sets the package_id of this PolicyResponse.
 
-        防护包id
+        实例id
 
         :param package_id: The package_id of this PolicyResponse.
         :type package_id: str
@@ -130,7 +130,7 @@ class PolicyResponse:
     def package_name(self):
         r"""Gets the package_name of this PolicyResponse.
 
-        防护包名
+        实例名
 
         :return: The package_name of this PolicyResponse.
         :rtype: str
@@ -141,7 +141,7 @@ class PolicyResponse:
     def package_name(self, package_name):
         r"""Sets the package_name of this PolicyResponse.
 
-        防护包名
+        实例名
 
         :param package_name: The package_name of this PolicyResponse.
         :type package_name: str

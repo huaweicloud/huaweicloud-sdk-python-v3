@@ -8,6 +8,7 @@ from huaweicloudsdkelb.v3.elb_async_client import ElbAsyncClient
 from huaweicloudsdkelb.v3.model.api_version_info import ApiVersionInfo
 from huaweicloudsdkelb.v3.model.autoscaling_ref import AutoscalingRef
 from huaweicloudsdkelb.v3.model.availability_zone import AvailabilityZone
+from huaweicloudsdkelb.v3.model.az_affinity import AzAffinity
 from huaweicloudsdkelb.v3.model.bandwidth_ref import BandwidthRef
 from huaweicloudsdkelb.v3.model.base_job import BaseJob
 from huaweicloudsdkelb.v3.model.batch_add_available_zones_request import BatchAddAvailableZonesRequest
@@ -106,6 +107,10 @@ from huaweicloudsdkelb.v3.model.create_master_slave_pool_option import CreateMas
 from huaweicloudsdkelb.v3.model.create_master_slave_pool_request import CreateMasterSlavePoolRequest
 from huaweicloudsdkelb.v3.model.create_master_slave_pool_request_body import CreateMasterSlavePoolRequestBody
 from huaweicloudsdkelb.v3.model.create_master_slave_pool_response import CreateMasterSlavePoolResponse
+from huaweicloudsdkelb.v3.model.create_member_health_check_job_option import CreateMemberHealthCheckJobOption
+from huaweicloudsdkelb.v3.model.create_member_health_check_job_request import CreateMemberHealthCheckJobRequest
+from huaweicloudsdkelb.v3.model.create_member_health_check_job_request_body import CreateMemberHealthCheckJobRequestBody
+from huaweicloudsdkelb.v3.model.create_member_health_check_job_response import CreateMemberHealthCheckJobResponse
 from huaweicloudsdkelb.v3.model.create_member_option import CreateMemberOption
 from huaweicloudsdkelb.v3.model.create_member_request import CreateMemberRequest
 from huaweicloudsdkelb.v3.model.create_member_request_body import CreateMemberRequestBody
@@ -130,6 +135,7 @@ from huaweicloudsdkelb.v3.model.create_security_policy_request import CreateSecu
 from huaweicloudsdkelb.v3.model.create_security_policy_request_body import CreateSecurityPolicyRequestBody
 from huaweicloudsdkelb.v3.model.create_security_policy_response import CreateSecurityPolicyResponse
 from huaweicloudsdkelb.v3.model.create_traffic_limit_config import CreateTrafficLimitConfig
+from huaweicloudsdkelb.v3.model.create_traffic_mirror_config import CreateTrafficMirrorConfig
 from huaweicloudsdkelb.v3.model.delete_certificate_request import DeleteCertificateRequest
 from huaweicloudsdkelb.v3.model.delete_certificate_response import DeleteCertificateResponse
 from huaweicloudsdkelb.v3.model.delete_health_monitor_request import DeleteHealthMonitorRequest
@@ -162,6 +168,8 @@ from huaweicloudsdkelb.v3.model.delete_pool_cascade_request import DeletePoolCas
 from huaweicloudsdkelb.v3.model.delete_pool_cascade_response import DeletePoolCascadeResponse
 from huaweicloudsdkelb.v3.model.delete_pool_request import DeletePoolRequest
 from huaweicloudsdkelb.v3.model.delete_pool_response import DeletePoolResponse
+from huaweicloudsdkelb.v3.model.delete_recycle_load_balancer_request import DeleteRecycleLoadBalancerRequest
+from huaweicloudsdkelb.v3.model.delete_recycle_load_balancer_response import DeleteRecycleLoadBalancerResponse
 from huaweicloudsdkelb.v3.model.delete_security_policy_request import DeleteSecurityPolicyRequest
 from huaweicloudsdkelb.v3.model.delete_security_policy_response import DeleteSecurityPolicyResponse
 from huaweicloudsdkelb.v3.model.eip_info import EipInfo
@@ -218,6 +226,8 @@ from huaweicloudsdkelb.v3.model.list_pools_request import ListPoolsRequest
 from huaweicloudsdkelb.v3.model.list_pools_response import ListPoolsResponse
 from huaweicloudsdkelb.v3.model.list_quota_details_request import ListQuotaDetailsRequest
 from huaweicloudsdkelb.v3.model.list_quota_details_response import ListQuotaDetailsResponse
+from huaweicloudsdkelb.v3.model.list_recycle_bin_load_balancers_request import ListRecycleBinLoadBalancersRequest
+from huaweicloudsdkelb.v3.model.list_recycle_bin_load_balancers_response import ListRecycleBinLoadBalancersResponse
 from huaweicloudsdkelb.v3.model.list_security_policies_request import ListSecurityPoliciesRequest
 from huaweicloudsdkelb.v3.model.list_security_policies_response import ListSecurityPoliciesResponse
 from huaweicloudsdkelb.v3.model.list_system_security_policies_request import ListSystemSecurityPoliciesRequest
@@ -245,6 +255,11 @@ from huaweicloudsdkelb.v3.model.master_slave_health_monitor import MasterSlaveHe
 from huaweicloudsdkelb.v3.model.master_slave_member import MasterSlaveMember
 from huaweicloudsdkelb.v3.model.master_slave_pool import MasterSlavePool
 from huaweicloudsdkelb.v3.model.member import Member
+from huaweicloudsdkelb.v3.model.member_check_job import MemberCheckJob
+from huaweicloudsdkelb.v3.model.member_check_job_info import MemberCheckJobInfo
+from huaweicloudsdkelb.v3.model.member_check_job_result import MemberCheckJobResult
+from huaweicloudsdkelb.v3.model.member_check_job_result_group import MemberCheckJobResultGroup
+from huaweicloudsdkelb.v3.model.member_check_job_result_item import MemberCheckJobResultItem
 from huaweicloudsdkelb.v3.model.member_health_check_failed_reason import MemberHealthCheckFailedReason
 from huaweicloudsdkelb.v3.model.member_info import MemberInfo
 from huaweicloudsdkelb.v3.model.member_ref import MemberRef
@@ -263,6 +278,11 @@ from huaweicloudsdkelb.v3.model.public_ip_info import PublicIpInfo
 from huaweicloudsdkelb.v3.model.quic_cid_hash_strategy import QuicCidHashStrategy
 from huaweicloudsdkelb.v3.model.quota import Quota
 from huaweicloudsdkelb.v3.model.quota_info import QuotaInfo
+from huaweicloudsdkelb.v3.model.recycle_bin_policy import RecycleBinPolicy
+from huaweicloudsdkelb.v3.model.recycle_bin_policy_request_body import RecycleBinPolicyRequestBody
+from huaweicloudsdkelb.v3.model.recycle_bin_request_body import RecycleBinRequestBody
+from huaweicloudsdkelb.v3.model.recycle_bin_response_body import RecycleBinResponseBody
+from huaweicloudsdkelb.v3.model.recycle_load_balancer import RecycleLoadBalancer
 from huaweicloudsdkelb.v3.model.redirect_pools_config import RedirectPoolsConfig
 from huaweicloudsdkelb.v3.model.redirect_pools_extend_config import RedirectPoolsExtendConfig
 from huaweicloudsdkelb.v3.model.redirect_pools_sticky_session_config import RedirectPoolsStickySessionConfig
@@ -270,6 +290,8 @@ from huaweicloudsdkelb.v3.model.redirect_url_config import RedirectUrlConfig
 from huaweicloudsdkelb.v3.model.remove_header_config import RemoveHeaderConfig
 from huaweicloudsdkelb.v3.model.remove_headers_config import RemoveHeadersConfig
 from huaweicloudsdkelb.v3.model.resource_id import ResourceID
+from huaweicloudsdkelb.v3.model.restore_loadbalancer_request import RestoreLoadbalancerRequest
+from huaweicloudsdkelb.v3.model.restore_loadbalancer_response import RestoreLoadbalancerResponse
 from huaweicloudsdkelb.v3.model.rewrite_url_config import RewriteUrlConfig
 from huaweicloudsdkelb.v3.model.rule_condition import RuleCondition
 from huaweicloudsdkelb.v3.model.rule_ref import RuleRef
@@ -303,12 +325,16 @@ from huaweicloudsdkelb.v3.model.show_logtank_request import ShowLogtankRequest
 from huaweicloudsdkelb.v3.model.show_logtank_response import ShowLogtankResponse
 from huaweicloudsdkelb.v3.model.show_master_slave_pool_request import ShowMasterSlavePoolRequest
 from huaweicloudsdkelb.v3.model.show_master_slave_pool_response import ShowMasterSlavePoolResponse
+from huaweicloudsdkelb.v3.model.show_member_health_check_job_request import ShowMemberHealthCheckJobRequest
+from huaweicloudsdkelb.v3.model.show_member_health_check_job_response import ShowMemberHealthCheckJobResponse
 from huaweicloudsdkelb.v3.model.show_member_request import ShowMemberRequest
 from huaweicloudsdkelb.v3.model.show_member_response import ShowMemberResponse
 from huaweicloudsdkelb.v3.model.show_pool_request import ShowPoolRequest
 from huaweicloudsdkelb.v3.model.show_pool_response import ShowPoolResponse
 from huaweicloudsdkelb.v3.model.show_quota_request import ShowQuotaRequest
 from huaweicloudsdkelb.v3.model.show_quota_response import ShowQuotaResponse
+from huaweicloudsdkelb.v3.model.show_recycle_bin_request import ShowRecycleBinRequest
+from huaweicloudsdkelb.v3.model.show_recycle_bin_response import ShowRecycleBinResponse
 from huaweicloudsdkelb.v3.model.show_security_policy_request import ShowSecurityPolicyRequest
 from huaweicloudsdkelb.v3.model.show_security_policy_response import ShowSecurityPolicyResponse
 from huaweicloudsdkelb.v3.model.slow_start import SlowStart
@@ -317,7 +343,9 @@ from huaweicloudsdkelb.v3.model.system_security_policy import SystemSecurityPoli
 from huaweicloudsdkelb.v3.model.tag import Tag
 from huaweicloudsdkelb.v3.model.target_loadbalancer_param import TargetLoadbalancerParam
 from huaweicloudsdkelb.v3.model.traffic_limit_config import TrafficLimitConfig
+from huaweicloudsdkelb.v3.model.traffic_mirror_config import TrafficMirrorConfig
 from huaweicloudsdkelb.v3.model.upadate_ip_group_ip_option import UpadateIpGroupIpOption
+from huaweicloudsdkelb.v3.model.update_az_affinity import UpdateAzAffinity
 from huaweicloudsdkelb.v3.model.update_certificate_option import UpdateCertificateOption
 from huaweicloudsdkelb.v3.model.update_certificate_request import UpdateCertificateRequest
 from huaweicloudsdkelb.v3.model.update_certificate_request_body import UpdateCertificateRequestBody
@@ -370,6 +398,12 @@ from huaweicloudsdkelb.v3.model.update_pool_request_body import UpdatePoolReques
 from huaweicloudsdkelb.v3.model.update_pool_response import UpdatePoolResponse
 from huaweicloudsdkelb.v3.model.update_pool_session_persistence_option import UpdatePoolSessionPersistenceOption
 from huaweicloudsdkelb.v3.model.update_pool_slow_start_option import UpdatePoolSlowStartOption
+from huaweicloudsdkelb.v3.model.update_recycle_bin_enable_request import UpdateRecycleBinEnableRequest
+from huaweicloudsdkelb.v3.model.update_recycle_bin_enable_request_body import UpdateRecycleBinEnableRequestBody
+from huaweicloudsdkelb.v3.model.update_recycle_bin_enable_response import UpdateRecycleBinEnableResponse
+from huaweicloudsdkelb.v3.model.update_recycle_bin_policy_request import UpdateRecycleBinPolicyRequest
+from huaweicloudsdkelb.v3.model.update_recycle_bin_policy_request_body import UpdateRecycleBinPolicyRequestBody
+from huaweicloudsdkelb.v3.model.update_recycle_bin_policy_response import UpdateRecycleBinPolicyResponse
 from huaweicloudsdkelb.v3.model.update_redirect_pools_config import UpdateRedirectPoolsConfig
 from huaweicloudsdkelb.v3.model.update_redirect_pools_extend_config import UpdateRedirectPoolsExtendConfig
 from huaweicloudsdkelb.v3.model.update_redirect_pools_sticky_session_config import UpdateRedirectPoolsStickySessionConfig

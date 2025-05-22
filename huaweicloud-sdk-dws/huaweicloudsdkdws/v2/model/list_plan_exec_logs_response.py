@@ -36,13 +36,13 @@ class ListPlanExecLogsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param workload_res_code: 结果状态码。
+        :param workload_res_code: **参数解释**： 结果状态码。 **取值范围**： 不涉及。
         :type workload_res_code: int
-        :param workload_res_str: 结果描述。
+        :param workload_res_str: **参数解释**： 结果描述。 **取值范围**： 不涉及。
         :type workload_res_str: str
-        :param plan_logs: 资源池名称。
+        :param plan_logs: **参数解释**： 资源池名称。 **取值范围**： 不涉及。
         :type plan_logs: list[:class:`huaweicloudsdkdws.v2.PlanLog`]
-        :param count: 总数量
+        :param count: **参数解释**： 总数量。 **取值范围**： 不涉及。
         :type count: int
         """
         
@@ -67,7 +67,7 @@ class ListPlanExecLogsResponse(SdkResponse):
     def workload_res_code(self):
         r"""Gets the workload_res_code of this ListPlanExecLogsResponse.
 
-        结果状态码。
+        **参数解释**： 结果状态码。 **取值范围**： 不涉及。
 
         :return: The workload_res_code of this ListPlanExecLogsResponse.
         :rtype: int
@@ -78,7 +78,7 @@ class ListPlanExecLogsResponse(SdkResponse):
     def workload_res_code(self, workload_res_code):
         r"""Sets the workload_res_code of this ListPlanExecLogsResponse.
 
-        结果状态码。
+        **参数解释**： 结果状态码。 **取值范围**： 不涉及。
 
         :param workload_res_code: The workload_res_code of this ListPlanExecLogsResponse.
         :type workload_res_code: int
@@ -89,7 +89,7 @@ class ListPlanExecLogsResponse(SdkResponse):
     def workload_res_str(self):
         r"""Gets the workload_res_str of this ListPlanExecLogsResponse.
 
-        结果描述。
+        **参数解释**： 结果描述。 **取值范围**： 不涉及。
 
         :return: The workload_res_str of this ListPlanExecLogsResponse.
         :rtype: str
@@ -100,7 +100,7 @@ class ListPlanExecLogsResponse(SdkResponse):
     def workload_res_str(self, workload_res_str):
         r"""Sets the workload_res_str of this ListPlanExecLogsResponse.
 
-        结果描述。
+        **参数解释**： 结果描述。 **取值范围**： 不涉及。
 
         :param workload_res_str: The workload_res_str of this ListPlanExecLogsResponse.
         :type workload_res_str: str
@@ -111,7 +111,7 @@ class ListPlanExecLogsResponse(SdkResponse):
     def plan_logs(self):
         r"""Gets the plan_logs of this ListPlanExecLogsResponse.
 
-        资源池名称。
+        **参数解释**： 资源池名称。 **取值范围**： 不涉及。
 
         :return: The plan_logs of this ListPlanExecLogsResponse.
         :rtype: list[:class:`huaweicloudsdkdws.v2.PlanLog`]
@@ -122,7 +122,7 @@ class ListPlanExecLogsResponse(SdkResponse):
     def plan_logs(self, plan_logs):
         r"""Sets the plan_logs of this ListPlanExecLogsResponse.
 
-        资源池名称。
+        **参数解释**： 资源池名称。 **取值范围**： 不涉及。
 
         :param plan_logs: The plan_logs of this ListPlanExecLogsResponse.
         :type plan_logs: list[:class:`huaweicloudsdkdws.v2.PlanLog`]
@@ -133,7 +133,7 @@ class ListPlanExecLogsResponse(SdkResponse):
     def count(self):
         r"""Gets the count of this ListPlanExecLogsResponse.
 
-        总数量
+        **参数解释**： 总数量。 **取值范围**： 不涉及。
 
         :return: The count of this ListPlanExecLogsResponse.
         :rtype: int
@@ -144,7 +144,7 @@ class ListPlanExecLogsResponse(SdkResponse):
     def count(self, count):
         r"""Sets the count of this ListPlanExecLogsResponse.
 
-        总数量
+        **参数解释**： 总数量。 **取值范围**： 不涉及。
 
         :param count: The count of this ListPlanExecLogsResponse.
         :type count: int

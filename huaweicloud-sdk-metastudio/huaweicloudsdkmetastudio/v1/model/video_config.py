@@ -59,9 +59,9 @@ class VideoConfig:
         :type codec: str
         :param bitrate: **参数解释**： 输出平均码率。单位：kbps。 **约束限制**： * 分身数字人视频制作采用质量优先，可能会超过设置的码率。 * 分身数字人直播码率范围[1000, 8000]。  **默认取值**： 不涉及
         :type bitrate: int
-        :param width: **参数解释**： 视频宽度。单位：像素。 **约束限制**： * clip_mode&#x3D;RESIZE时，当前支持1920x1080、1080x1920、1280x720、720x1280、3840x2160、2160x3840六种分辨率。4K分辨率视频需要分身数字人模型支持4K的情况下才能使用。 * clip_mode&#x3D;CROP，裁剪后视频，（dx,dy）为原点，保留视频像宽度为width。 * 分身数字人直播目前只支持1080x1920、1920x1080。  **默认取值**： 不涉及
+        :param width: **参数解释**： 视频宽度。单位：像素。 **约束限制**： * clip_mode&#x3D;RESIZE时，当前支持1920x1080、1080x1920、1280x720、720x1280、3840x2160、2160x3840六种分辨率。4K分辨率视频需要分身数字人模型支持4K的情况下才能使用。 * clip_mode&#x3D;CROP，裁剪后视频，（dx,dy）为原点，保留视频像宽度为width。 * 分身数字人直播和智能交互目前只支持1080x1920、1920x1080。  **默认取值**： 不涉及
         :type width: int
-        :param height: **参数解释**： 视频高度。  单位：像素。 **约束限制**： * clip_mode&#x3D;RESIZE时，当前支持1920x1080、1080x1920、1280x720、720x1280、3840x2160、2160x3840六种分辨率分辨率。 * clip_mode&#x3D;CROP，裁剪后视频，（dx,dy）为原点，保留视频像高度为height。 * 分身数字人直播目前只支持1080x1920、1920x1080。  **默认取值**： 不涉及
+        :param height: **参数解释**： 视频高度。  单位：像素。 **约束限制**： * clip_mode&#x3D;RESIZE时，当前支持1920x1080、1080x1920、1280x720、720x1280、3840x2160、2160x3840六种分辨率分辨率。 * clip_mode&#x3D;CROP，裁剪后视频，（dx,dy）为原点，保留视频像高度为height。 * 分身数字人直播和智能交互目前只支持1080x1920、1920x1080。  **默认取值**： 不涉及
         :type height: int
         :param frame_rate: **参数解释**： 帧率。单位：FPS。 **约束限制**： 分身数字人视频固定25FPS。
         :type frame_rate: str
@@ -192,7 +192,7 @@ class VideoConfig:
     def width(self):
         r"""Gets the width of this VideoConfig.
 
-        **参数解释**： 视频宽度。单位：像素。 **约束限制**： * clip_mode=RESIZE时，当前支持1920x1080、1080x1920、1280x720、720x1280、3840x2160、2160x3840六种分辨率。4K分辨率视频需要分身数字人模型支持4K的情况下才能使用。 * clip_mode=CROP，裁剪后视频，（dx,dy）为原点，保留视频像宽度为width。 * 分身数字人直播目前只支持1080x1920、1920x1080。  **默认取值**： 不涉及
+        **参数解释**： 视频宽度。单位：像素。 **约束限制**： * clip_mode=RESIZE时，当前支持1920x1080、1080x1920、1280x720、720x1280、3840x2160、2160x3840六种分辨率。4K分辨率视频需要分身数字人模型支持4K的情况下才能使用。 * clip_mode=CROP，裁剪后视频，（dx,dy）为原点，保留视频像宽度为width。 * 分身数字人直播和智能交互目前只支持1080x1920、1920x1080。  **默认取值**： 不涉及
 
         :return: The width of this VideoConfig.
         :rtype: int
@@ -203,7 +203,7 @@ class VideoConfig:
     def width(self, width):
         r"""Sets the width of this VideoConfig.
 
-        **参数解释**： 视频宽度。单位：像素。 **约束限制**： * clip_mode=RESIZE时，当前支持1920x1080、1080x1920、1280x720、720x1280、3840x2160、2160x3840六种分辨率。4K分辨率视频需要分身数字人模型支持4K的情况下才能使用。 * clip_mode=CROP，裁剪后视频，（dx,dy）为原点，保留视频像宽度为width。 * 分身数字人直播目前只支持1080x1920、1920x1080。  **默认取值**： 不涉及
+        **参数解释**： 视频宽度。单位：像素。 **约束限制**： * clip_mode=RESIZE时，当前支持1920x1080、1080x1920、1280x720、720x1280、3840x2160、2160x3840六种分辨率。4K分辨率视频需要分身数字人模型支持4K的情况下才能使用。 * clip_mode=CROP，裁剪后视频，（dx,dy）为原点，保留视频像宽度为width。 * 分身数字人直播和智能交互目前只支持1080x1920、1920x1080。  **默认取值**： 不涉及
 
         :param width: The width of this VideoConfig.
         :type width: int
@@ -214,7 +214,7 @@ class VideoConfig:
     def height(self):
         r"""Gets the height of this VideoConfig.
 
-        **参数解释**： 视频高度。  单位：像素。 **约束限制**： * clip_mode=RESIZE时，当前支持1920x1080、1080x1920、1280x720、720x1280、3840x2160、2160x3840六种分辨率分辨率。 * clip_mode=CROP，裁剪后视频，（dx,dy）为原点，保留视频像高度为height。 * 分身数字人直播目前只支持1080x1920、1920x1080。  **默认取值**： 不涉及
+        **参数解释**： 视频高度。  单位：像素。 **约束限制**： * clip_mode=RESIZE时，当前支持1920x1080、1080x1920、1280x720、720x1280、3840x2160、2160x3840六种分辨率分辨率。 * clip_mode=CROP，裁剪后视频，（dx,dy）为原点，保留视频像高度为height。 * 分身数字人直播和智能交互目前只支持1080x1920、1920x1080。  **默认取值**： 不涉及
 
         :return: The height of this VideoConfig.
         :rtype: int
@@ -225,7 +225,7 @@ class VideoConfig:
     def height(self, height):
         r"""Sets the height of this VideoConfig.
 
-        **参数解释**： 视频高度。  单位：像素。 **约束限制**： * clip_mode=RESIZE时，当前支持1920x1080、1080x1920、1280x720、720x1280、3840x2160、2160x3840六种分辨率分辨率。 * clip_mode=CROP，裁剪后视频，（dx,dy）为原点，保留视频像高度为height。 * 分身数字人直播目前只支持1080x1920、1920x1080。  **默认取值**： 不涉及
+        **参数解释**： 视频高度。  单位：像素。 **约束限制**： * clip_mode=RESIZE时，当前支持1920x1080、1080x1920、1280x720、720x1280、3840x2160、2160x3840六种分辨率分辨率。 * clip_mode=CROP，裁剪后视频，（dx,dy）为原点，保留视频像高度为height。 * 分身数字人直播和智能交互目前只支持1080x1920、1920x1080。  **默认取值**： 不涉及
 
         :param height: The height of this VideoConfig.
         :type height: int

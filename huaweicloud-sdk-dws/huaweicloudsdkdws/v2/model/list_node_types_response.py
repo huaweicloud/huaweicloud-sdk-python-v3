@@ -32,9 +32,9 @@ class ListNodeTypesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param node_types: 节点类型对象列表。
+        :param node_types: **参数解释**： 可用的规格列表。 **取值范围**： 非空对象列表。
         :type node_types: list[:class:`huaweicloudsdkdws.v2.NodeTypes`]
-        :param count: 节点类型总数
+        :param count: **参数解释**： 规格总数 **取值范围**： 大于等于0的正整数。
         :type count: int
         """
         
@@ -53,7 +53,7 @@ class ListNodeTypesResponse(SdkResponse):
     def node_types(self):
         r"""Gets the node_types of this ListNodeTypesResponse.
 
-        节点类型对象列表。
+        **参数解释**： 可用的规格列表。 **取值范围**： 非空对象列表。
 
         :return: The node_types of this ListNodeTypesResponse.
         :rtype: list[:class:`huaweicloudsdkdws.v2.NodeTypes`]
@@ -64,7 +64,7 @@ class ListNodeTypesResponse(SdkResponse):
     def node_types(self, node_types):
         r"""Sets the node_types of this ListNodeTypesResponse.
 
-        节点类型对象列表。
+        **参数解释**： 可用的规格列表。 **取值范围**： 非空对象列表。
 
         :param node_types: The node_types of this ListNodeTypesResponse.
         :type node_types: list[:class:`huaweicloudsdkdws.v2.NodeTypes`]
@@ -75,7 +75,7 @@ class ListNodeTypesResponse(SdkResponse):
     def count(self):
         r"""Gets the count of this ListNodeTypesResponse.
 
-        节点类型总数
+        **参数解释**： 规格总数 **取值范围**： 大于等于0的正整数。
 
         :return: The count of this ListNodeTypesResponse.
         :rtype: int
@@ -86,7 +86,7 @@ class ListNodeTypesResponse(SdkResponse):
     def count(self, count):
         r"""Sets the count of this ListNodeTypesResponse.
 
-        节点类型总数
+        **参数解释**： 规格总数 **取值范围**： 大于等于0的正整数。
 
         :param count: The count of this ListNodeTypesResponse.
         :type count: int

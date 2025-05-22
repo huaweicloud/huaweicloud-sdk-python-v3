@@ -3730,6 +3730,284 @@ class MetaStudioClient(Client):
 
         return http_info
 
+    def create_interaction_rule_group(self, request):
+        r"""创建智能直播间互动规则库
+
+        该接口用于创建智能直播间互动规则库。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateInteractionRuleGroup
+        :type request: :class:`huaweicloudsdkmetastudio.v1.CreateInteractionRuleGroupRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.CreateInteractionRuleGroupResponse`
+        """
+        http_info = self._create_interaction_rule_group_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_interaction_rule_group_invoker(self, request):
+        http_info = self._create_interaction_rule_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_interaction_rule_group_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/smart-live-interaction-rule-groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateInteractionRuleGroupResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_interaction_rule_group(self, request):
+        r"""删除智能直播间互动规则库
+
+        该接口用于删除智能直播间互动规则库。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteInteractionRuleGroup
+        :type request: :class:`huaweicloudsdkmetastudio.v1.DeleteInteractionRuleGroupRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.DeleteInteractionRuleGroupResponse`
+        """
+        http_info = self._delete_interaction_rule_group_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_interaction_rule_group_invoker(self, request):
+        http_info = self._delete_interaction_rule_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_interaction_rule_group_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/smart-live-interaction-rule-groups/{group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteInteractionRuleGroupResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_interaction_rule_groups(self, request):
+        r"""查询智能直播间互动规则库列表
+
+        该接口用于智能直播间互动规则库列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListInteractionRuleGroups
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ListInteractionRuleGroupsRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ListInteractionRuleGroupsResponse`
+        """
+        http_info = self._list_interaction_rule_groups_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_interaction_rule_groups_invoker(self, request):
+        http_info = self._list_interaction_rule_groups_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_interaction_rule_groups_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/smart-live-interaction-rule-groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListInteractionRuleGroupsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'create_since' in local_var_params:
+            query_params.append(('create_since', local_var_params['create_since']))
+        if 'create_until' in local_var_params:
+            query_params.append(('create_until', local_var_params['create_until']))
+        if 'group_name' in local_var_params:
+            query_params.append(('group_name', local_var_params['group_name']))
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_interaction_rule_group(self, request):
+        r"""更新智能直播间互动规则库
+
+        该接口用于更新智能直播间互动规则库。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateInteractionRuleGroup
+        :type request: :class:`huaweicloudsdkmetastudio.v1.UpdateInteractionRuleGroupRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.UpdateInteractionRuleGroupResponse`
+        """
+        http_info = self._update_interaction_rule_group_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_interaction_rule_group_invoker(self, request):
+        http_info = self._update_interaction_rule_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_interaction_rule_group_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/smart-live-interaction-rule-groups/{group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateInteractionRuleGroupResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_intent_and_question(self, request):
         r"""创建知识库意图和问法
 
@@ -8278,6 +8556,10 @@ class MetaStudioClient(Client):
         header_params = {}
         if 'x_app_user_id' in local_var_params:
             header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+        if 'x_mss_auth_key' in local_var_params:
+            header_params['x-mss-auth-key'] = local_var_params['x_mss_auth_key']
+        if 'x_mss_expires_time' in local_var_params:
+            header_params['x-mss-expires-time'] = local_var_params['x_mss_expires_time']
 
         form_params = {}
 
@@ -8581,73 +8863,6 @@ class MetaStudioClient(Client):
 
         return http_info
 
-    def create_interaction_rule_group(self, request):
-        r"""创建智能直播间互动规则库
-
-        该接口用于创建智能直播间互动规则库。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for CreateInteractionRuleGroup
-        :type request: :class:`huaweicloudsdkmetastudio.v1.CreateInteractionRuleGroupRequest`
-        :rtype: :class:`huaweicloudsdkmetastudio.v1.CreateInteractionRuleGroupResponse`
-        """
-        http_info = self._create_interaction_rule_group_http_info(request)
-        return self._call_api(**http_info)
-
-    def create_interaction_rule_group_invoker(self, request):
-        http_info = self._create_interaction_rule_group_http_info(request)
-        return SyncInvoker(self, http_info)
-
-    @classmethod
-    def _create_interaction_rule_group_http_info(cls, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v1/{project_id}/smart-live-interaction-rule-groups",
-            "request_type": request.__class__.__name__,
-            "response_type": "CreateInteractionRuleGroupResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-        if 'x_app_user_id' in local_var_params:
-            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["X-Request-Id", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
     def create_smart_live_room(self, request):
         r"""创建智能直播间
 
@@ -8715,73 +8930,6 @@ class MetaStudioClient(Client):
 
         return http_info
 
-    def delete_interaction_rule_group(self, request):
-        r"""删除智能直播间互动规则库
-
-        该接口用于删除智能直播间互动规则库。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for DeleteInteractionRuleGroup
-        :type request: :class:`huaweicloudsdkmetastudio.v1.DeleteInteractionRuleGroupRequest`
-        :rtype: :class:`huaweicloudsdkmetastudio.v1.DeleteInteractionRuleGroupResponse`
-        """
-        http_info = self._delete_interaction_rule_group_http_info(request)
-        return self._call_api(**http_info)
-
-    def delete_interaction_rule_group_invoker(self, request):
-        http_info = self._delete_interaction_rule_group_http_info(request)
-        return SyncInvoker(self, http_info)
-
-    @classmethod
-    def _delete_interaction_rule_group_http_info(cls, request):
-        http_info = {
-            "method": "DELETE",
-            "resource_path": "/v1/{project_id}/smart-live-interaction-rule-groups/{group_id}",
-            "request_type": request.__class__.__name__,
-            "response_type": "DeleteInteractionRuleGroupResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'group_id' in local_var_params:
-            path_params['group_id'] = local_var_params['group_id']
-
-        query_params = []
-
-        header_params = {}
-        if 'x_app_user_id' in local_var_params:
-            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["X-Request-Id", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
     def delete_smart_live_room(self, request):
         r"""删除智能直播间
 
@@ -8820,81 +8968,6 @@ class MetaStudioClient(Client):
             path_params['room_id'] = local_var_params['room_id']
 
         query_params = []
-
-        header_params = {}
-        if 'x_app_user_id' in local_var_params:
-            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["X-Request-Id", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def list_interaction_rule_groups(self, request):
-        r"""查询智能直播间互动规则库列表
-
-        该接口用于智能直播间互动规则库列表。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for ListInteractionRuleGroups
-        :type request: :class:`huaweicloudsdkmetastudio.v1.ListInteractionRuleGroupsRequest`
-        :rtype: :class:`huaweicloudsdkmetastudio.v1.ListInteractionRuleGroupsResponse`
-        """
-        http_info = self._list_interaction_rule_groups_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_interaction_rule_groups_invoker(self, request):
-        http_info = self._list_interaction_rule_groups_http_info(request)
-        return SyncInvoker(self, http_info)
-
-    @classmethod
-    def _list_interaction_rule_groups_http_info(cls, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v1/{project_id}/smart-live-interaction-rule-groups",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListInteractionRuleGroupsResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-        if 'create_since' in local_var_params:
-            query_params.append(('create_since', local_var_params['create_since']))
-        if 'create_until' in local_var_params:
-            query_params.append(('create_until', local_var_params['create_until']))
-        if 'group_name' in local_var_params:
-            query_params.append(('group_name', local_var_params['group_name']))
 
         header_params = {}
         if 'x_app_user_id' in local_var_params:
@@ -9012,9 +9085,9 @@ class MetaStudioClient(Client):
         return http_info
 
     def show_smart_live_room(self, request):
-        r"""查询智能直播剧本详情
+        r"""查询智能直播间剧本详情
 
-        该接口用于查询智能直播剧本详情。
+        该接口用于查询智能直播间剧本详情。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -9057,75 +9130,6 @@ class MetaStudioClient(Client):
         form_params = {}
 
         body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["X-Request-Id", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def update_interaction_rule_group(self, request):
-        r"""更新智能直播间互动规则库
-
-        该接口用于更新智能直播间互动规则库。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for UpdateInteractionRuleGroup
-        :type request: :class:`huaweicloudsdkmetastudio.v1.UpdateInteractionRuleGroupRequest`
-        :rtype: :class:`huaweicloudsdkmetastudio.v1.UpdateInteractionRuleGroupResponse`
-        """
-        http_info = self._update_interaction_rule_group_http_info(request)
-        return self._call_api(**http_info)
-
-    def update_interaction_rule_group_invoker(self, request):
-        http_info = self._update_interaction_rule_group_http_info(request)
-        return SyncInvoker(self, http_info)
-
-    @classmethod
-    def _update_interaction_rule_group_http_info(cls, request):
-        http_info = {
-            "method": "PUT",
-            "resource_path": "/v1/{project_id}/smart-live-interaction-rule-groups/{group_id}",
-            "request_type": request.__class__.__name__,
-            "response_type": "UpdateInteractionRuleGroupResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'group_id' in local_var_params:
-            path_params['group_id'] = local_var_params['group_id']
-
-        query_params = []
-
-        header_params = {}
-        if 'x_app_user_id' in local_var_params:
-            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -11399,7 +11403,7 @@ class MetaStudioClient(Client):
     def create_async_tts_job(self, request):
         r"""创建TTS异步任务
 
-        该接口用于对外生成音频文件
+        该接口用于对外生成音频文件。每个预制音色的计费标准详见[预置音色计费标准](metastudio_02_0060.xml)。
         
         &gt; 使用本接口前，需要在MetaStudio控制台服务概览页面，开通“声音合成”的按需计费。
         &gt; 详细操作为：单击“声音合成”卡片中的“去开通”，在弹出的“开通按需计费服务提示”对话框中，勾选同意协议。单击“确定”，开通按需计费。

@@ -29,7 +29,7 @@ class UpdateLogicalClusterPlanBo:
 
         The model defined in huaweicloud sdk
 
-        :param actions: 更新逻辑集群增删计划细节信息列表
+        :param actions: **参数解释**： 更新逻辑集群增删计划细节信息列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type actions: list[:class:`huaweicloudsdkdws.v2.UpdateLogicalClusterPlanActions`]
         """
         
@@ -44,7 +44,7 @@ class UpdateLogicalClusterPlanBo:
     def actions(self):
         r"""Gets the actions of this UpdateLogicalClusterPlanBo.
 
-        更新逻辑集群增删计划细节信息列表
+        **参数解释**： 更新逻辑集群增删计划细节信息列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The actions of this UpdateLogicalClusterPlanBo.
         :rtype: list[:class:`huaweicloudsdkdws.v2.UpdateLogicalClusterPlanActions`]
@@ -55,7 +55,7 @@ class UpdateLogicalClusterPlanBo:
     def actions(self, actions):
         r"""Sets the actions of this UpdateLogicalClusterPlanBo.
 
-        更新逻辑集群增删计划细节信息列表
+        **参数解释**： 更新逻辑集群增删计划细节信息列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param actions: The actions of this UpdateLogicalClusterPlanBo.
         :type actions: list[:class:`huaweicloudsdkdws.v2.UpdateLogicalClusterPlanActions`]

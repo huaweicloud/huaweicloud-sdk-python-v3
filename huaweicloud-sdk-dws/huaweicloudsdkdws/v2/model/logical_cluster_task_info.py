@@ -39,17 +39,17 @@ class LogicalClusterTaskInfo:
 
         The model defined in huaweicloud sdk
 
-        :param type: 任务类型
+        :param type: **参数解释**： 任务类型。 **取值范围**： 不涉及。
         :type type: str
-        :param logical_cluster_name: 逻辑集群名称
+        :param logical_cluster_name: **参数解释**： 逻辑集群名称。 **取值范围**： 不涉及。
         :type logical_cluster_name: str
-        :param start_time: 任务开始时间
+        :param start_time: **参数解释**： 任务开始时间。 **取值范围**： 不涉及。
         :type start_time: str
-        :param end_time: 任务结束时间
+        :param end_time: **参数解释**： 任务结束时间。 **取值范围**： 不涉及。
         :type end_time: str
-        :param result: 任务执行结果
+        :param result: **参数解释**： 任务执行结果。 **取值范围**： 不涉及。
         :type result: str
-        :param log: 任务执行日志
+        :param log: **参数解释**： 任务执行日志。 **取值范围**： 不涉及。
         :type log: str
         """
         
@@ -80,7 +80,7 @@ class LogicalClusterTaskInfo:
     def type(self):
         r"""Gets the type of this LogicalClusterTaskInfo.
 
-        任务类型
+        **参数解释**： 任务类型。 **取值范围**： 不涉及。
 
         :return: The type of this LogicalClusterTaskInfo.
         :rtype: str
@@ -91,7 +91,7 @@ class LogicalClusterTaskInfo:
     def type(self, type):
         r"""Sets the type of this LogicalClusterTaskInfo.
 
-        任务类型
+        **参数解释**： 任务类型。 **取值范围**： 不涉及。
 
         :param type: The type of this LogicalClusterTaskInfo.
         :type type: str
@@ -102,7 +102,7 @@ class LogicalClusterTaskInfo:
     def logical_cluster_name(self):
         r"""Gets the logical_cluster_name of this LogicalClusterTaskInfo.
 
-        逻辑集群名称
+        **参数解释**： 逻辑集群名称。 **取值范围**： 不涉及。
 
         :return: The logical_cluster_name of this LogicalClusterTaskInfo.
         :rtype: str
@@ -113,7 +113,7 @@ class LogicalClusterTaskInfo:
     def logical_cluster_name(self, logical_cluster_name):
         r"""Sets the logical_cluster_name of this LogicalClusterTaskInfo.
 
-        逻辑集群名称
+        **参数解释**： 逻辑集群名称。 **取值范围**： 不涉及。
 
         :param logical_cluster_name: The logical_cluster_name of this LogicalClusterTaskInfo.
         :type logical_cluster_name: str
@@ -124,7 +124,7 @@ class LogicalClusterTaskInfo:
     def start_time(self):
         r"""Gets the start_time of this LogicalClusterTaskInfo.
 
-        任务开始时间
+        **参数解释**： 任务开始时间。 **取值范围**： 不涉及。
 
         :return: The start_time of this LogicalClusterTaskInfo.
         :rtype: str
@@ -135,7 +135,7 @@ class LogicalClusterTaskInfo:
     def start_time(self, start_time):
         r"""Sets the start_time of this LogicalClusterTaskInfo.
 
-        任务开始时间
+        **参数解释**： 任务开始时间。 **取值范围**： 不涉及。
 
         :param start_time: The start_time of this LogicalClusterTaskInfo.
         :type start_time: str
@@ -146,7 +146,7 @@ class LogicalClusterTaskInfo:
     def end_time(self):
         r"""Gets the end_time of this LogicalClusterTaskInfo.
 
-        任务结束时间
+        **参数解释**： 任务结束时间。 **取值范围**： 不涉及。
 
         :return: The end_time of this LogicalClusterTaskInfo.
         :rtype: str
@@ -157,7 +157,7 @@ class LogicalClusterTaskInfo:
     def end_time(self, end_time):
         r"""Sets the end_time of this LogicalClusterTaskInfo.
 
-        任务结束时间
+        **参数解释**： 任务结束时间。 **取值范围**： 不涉及。
 
         :param end_time: The end_time of this LogicalClusterTaskInfo.
         :type end_time: str
@@ -168,7 +168,7 @@ class LogicalClusterTaskInfo:
     def result(self):
         r"""Gets the result of this LogicalClusterTaskInfo.
 
-        任务执行结果
+        **参数解释**： 任务执行结果。 **取值范围**： 不涉及。
 
         :return: The result of this LogicalClusterTaskInfo.
         :rtype: str
@@ -179,7 +179,7 @@ class LogicalClusterTaskInfo:
     def result(self, result):
         r"""Sets the result of this LogicalClusterTaskInfo.
 
-        任务执行结果
+        **参数解释**： 任务执行结果。 **取值范围**： 不涉及。
 
         :param result: The result of this LogicalClusterTaskInfo.
         :type result: str
@@ -190,7 +190,7 @@ class LogicalClusterTaskInfo:
     def log(self):
         r"""Gets the log of this LogicalClusterTaskInfo.
 
-        任务执行日志
+        **参数解释**： 任务执行日志。 **取值范围**： 不涉及。
 
         :return: The log of this LogicalClusterTaskInfo.
         :rtype: str
@@ -201,7 +201,7 @@ class LogicalClusterTaskInfo:
     def log(self, log):
         r"""Sets the log of this LogicalClusterTaskInfo.
 
-        任务执行日志
+        **参数解释**： 任务执行日志。 **取值范围**： 不涉及。
 
         :param log: The log of this LogicalClusterTaskInfo.
         :type log: str

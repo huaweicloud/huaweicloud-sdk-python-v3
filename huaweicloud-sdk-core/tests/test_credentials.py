@@ -46,10 +46,9 @@ def mocked_responses():
 @pytest.fixture
 def mocked_http_client():
     http_client = HttpClient(HttpConfig.get_default_config(), HttpHandler(), DefaultExceptionHandler(),
-               logging.getLogger("test"))
+                             logging.getLogger("test"))
     yield http_client
     http_client.close()
-
 
 
 def test_basic_credentials_sign_with_auth_token(sdk_request):
@@ -177,6 +176,40 @@ def test_empty_domain_id(mocked_http_client, mocked_responses):
         assert ("Failed to get domain id automatically, X-IAM-Trace-Id=trace-id. "
                 "Please confirm that you have 'iam:users:getUser' permission, "
                 "or set domain id manully: GlobalCredentials(ak, sk, domain_id)") == e.error_msg
+
+
+def test_new_basic_credentials():
+    basic = BasicCredentials()
+    basic.ak = "ak"
+    basic.sk = "sk"
+    basic.project_id = "project_id"
+    basic.idp_id = "idp_id"
+    basic.id_token_file = "id_token_file"
+    basic.iam_endpoint = "iam_endpoint"
+
+    assert basic.ak == "ak"
+    assert basic.sk == "sk"
+    assert basic.project_id == "project_id"
+    assert basic.idp_id == "idp_id"
+    assert basic.id_token_file == "id_token_file"
+    assert basic.iam_endpoint == "iam_endpoint"
+
+
+def test_new_global_credentials():
+    glob = GlobalCredentials()
+    glob.ak = "ak"
+    glob.sk = "sk"
+    glob.domain_id = "domain_id"
+    glob.idp_id = "idp_id"
+    glob.id_token_file = "id_token_file"
+    glob.iam_endpoint = "iam_endpoint"
+
+    assert glob.ak == "ak"
+    assert glob.sk == "sk"
+    assert glob.domain_id == "domain_id"
+    assert glob.idp_id == "idp_id"
+    assert glob.id_token_file == "id_token_file"
+    assert glob.iam_endpoint == "iam_endpoint"
 
 
 if __name__ == '__main__':

@@ -29,7 +29,7 @@ class ClusterRing:
 
         The model defined in huaweicloud sdk
 
-        :param ring_hosts: 集群主机信息
+        :param ring_hosts: **参数解释**： 集群主机信息。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type ring_hosts: list[:class:`huaweicloudsdkdws.v2.RingHost`]
         """
         
@@ -44,7 +44,7 @@ class ClusterRing:
     def ring_hosts(self):
         r"""Gets the ring_hosts of this ClusterRing.
 
-        集群主机信息
+        **参数解释**： 集群主机信息。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The ring_hosts of this ClusterRing.
         :rtype: list[:class:`huaweicloudsdkdws.v2.RingHost`]
@@ -55,7 +55,7 @@ class ClusterRing:
     def ring_hosts(self, ring_hosts):
         r"""Sets the ring_hosts of this ClusterRing.
 
-        集群主机信息
+        **参数解释**： 集群主机信息。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param ring_hosts: The ring_hosts of this ClusterRing.
         :type ring_hosts: list[:class:`huaweicloudsdkdws.v2.RingHost`]

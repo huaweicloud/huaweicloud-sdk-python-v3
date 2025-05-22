@@ -19,16 +19,18 @@ class CommonQueueProperty:
     openapi_types = {
         'compute_engine_max_instance': 'int',
         'job_max_concurrent': 'int',
-        'compute_engine_max_prefetch_instance': 'int'
+        'compute_engine_max_prefetch_instance': 'int',
+        'compute_engine_spark_native_enabled': 'str'
     }
 
     attribute_map = {
         'compute_engine_max_instance': 'computeEngine.maxInstance',
         'job_max_concurrent': 'job.maxConcurrent',
-        'compute_engine_max_prefetch_instance': 'computeEngine.maxPrefetchInstance'
+        'compute_engine_max_prefetch_instance': 'computeEngine.maxPrefetchInstance',
+        'compute_engine_spark_native_enabled': 'computeEngine.spark.nativeEnabled'
     }
 
-    def __init__(self, compute_engine_max_instance=None, job_max_concurrent=None, compute_engine_max_prefetch_instance=None):
+    def __init__(self, compute_engine_max_instance=None, job_max_concurrent=None, compute_engine_max_prefetch_instance=None, compute_engine_spark_native_enabled=None):
         r"""CommonQueueProperty
 
         The model defined in huaweicloud sdk
@@ -39,6 +41,8 @@ class CommonQueueProperty:
         :type job_max_concurrent: int
         :param compute_engine_max_prefetch_instance: 队列预先启动的最大spark driver数量
         :type compute_engine_max_prefetch_instance: int
+        :param compute_engine_spark_native_enabled: 是否使用DLI Native。当前只涉及开启两种算子：Scan 和 Filter。修改现有队列的本属性，需要重启队列才会生效。
+        :type compute_engine_spark_native_enabled: str
         """
         
         
@@ -46,6 +50,7 @@ class CommonQueueProperty:
         self._compute_engine_max_instance = None
         self._job_max_concurrent = None
         self._compute_engine_max_prefetch_instance = None
+        self._compute_engine_spark_native_enabled = None
         self.discriminator = None
 
         if compute_engine_max_instance is not None:
@@ -54,6 +59,8 @@ class CommonQueueProperty:
             self.job_max_concurrent = job_max_concurrent
         if compute_engine_max_prefetch_instance is not None:
             self.compute_engine_max_prefetch_instance = compute_engine_max_prefetch_instance
+        if compute_engine_spark_native_enabled is not None:
+            self.compute_engine_spark_native_enabled = compute_engine_spark_native_enabled
 
     @property
     def compute_engine_max_instance(self):
@@ -120,6 +127,28 @@ class CommonQueueProperty:
         :type compute_engine_max_prefetch_instance: int
         """
         self._compute_engine_max_prefetch_instance = compute_engine_max_prefetch_instance
+
+    @property
+    def compute_engine_spark_native_enabled(self):
+        r"""Gets the compute_engine_spark_native_enabled of this CommonQueueProperty.
+
+        是否使用DLI Native。当前只涉及开启两种算子：Scan 和 Filter。修改现有队列的本属性，需要重启队列才会生效。
+
+        :return: The compute_engine_spark_native_enabled of this CommonQueueProperty.
+        :rtype: str
+        """
+        return self._compute_engine_spark_native_enabled
+
+    @compute_engine_spark_native_enabled.setter
+    def compute_engine_spark_native_enabled(self, compute_engine_spark_native_enabled):
+        r"""Sets the compute_engine_spark_native_enabled of this CommonQueueProperty.
+
+        是否使用DLI Native。当前只涉及开启两种算子：Scan 和 Filter。修改现有队列的本属性，需要重启队列才会生效。
+
+        :param compute_engine_spark_native_enabled: The compute_engine_spark_native_enabled of this CommonQueueProperty.
+        :type compute_engine_spark_native_enabled: str
+        """
+        self._compute_engine_spark_native_enabled = compute_engine_spark_native_enabled
 
     def to_dict(self):
         """Returns the model properties as a dict"""

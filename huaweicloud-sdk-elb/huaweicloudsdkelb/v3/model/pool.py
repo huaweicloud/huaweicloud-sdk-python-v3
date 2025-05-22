@@ -18,6 +18,7 @@ class Pool:
 
     openapi_types = {
         'admin_state_up': 'bool',
+        'az_affinity': 'AzAffinity',
         'description': 'str',
         'healthmonitor_id': 'str',
         'id': 'str',
@@ -48,6 +49,7 @@ class Pool:
 
     attribute_map = {
         'admin_state_up': 'admin_state_up',
+        'az_affinity': 'az_affinity',
         'description': 'description',
         'healthmonitor_id': 'healthmonitor_id',
         'id': 'id',
@@ -76,13 +78,15 @@ class Pool:
         'quic_cid_hash_strategy': 'quic_cid_hash_strategy'
     }
 
-    def __init__(self, admin_state_up=None, description=None, healthmonitor_id=None, id=None, lb_algorithm=None, listeners=None, loadbalancers=None, members=None, name=None, project_id=None, protocol=None, session_persistence=None, ip_version=None, slow_start=None, member_deletion_protection_enable=None, created_at=None, updated_at=None, vpc_id=None, type=None, protection_status=None, protection_reason=None, any_port_enable=None, connection_drain=None, enterprise_project_id=None, pool_health=None, public_border_group=None, quic_cid_hash_strategy=None):
+    def __init__(self, admin_state_up=None, az_affinity=None, description=None, healthmonitor_id=None, id=None, lb_algorithm=None, listeners=None, loadbalancers=None, members=None, name=None, project_id=None, protocol=None, session_persistence=None, ip_version=None, slow_start=None, member_deletion_protection_enable=None, created_at=None, updated_at=None, vpc_id=None, type=None, protection_status=None, protection_reason=None, any_port_enable=None, connection_drain=None, enterprise_project_id=None, pool_health=None, public_border_group=None, quic_cid_hash_strategy=None):
         r"""Pool
 
         The model defined in huaweicloud sdk
 
         :param admin_state_up: 参数解释：后端服务器组的管理状态。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
         :type admin_state_up: bool
+        :param az_affinity: 
+        :type az_affinity: :class:`huaweicloudsdkelb.v3.AzAffinity`
         :param description: 参数解释：后端服务器组的描述信息。
         :type description: str
         :param healthmonitor_id: 参数解释：后端服务器组关联的健康检查的ID。
@@ -127,7 +131,7 @@ class Pool:
         :type any_port_enable: bool
         :param connection_drain: 
         :type connection_drain: :class:`huaweicloudsdkelb.v3.ConnectionDrain`
-        :param enterprise_project_id: 参数解释：后端服务器组所在的企业项目ID。
+        :param enterprise_project_id: 参数解释：IP地址组所在的企业项目ID。
         :type enterprise_project_id: str
         :param pool_health: 
         :type pool_health: :class:`huaweicloudsdkelb.v3.PoolHealth`
@@ -140,6 +144,7 @@ class Pool:
         
 
         self._admin_state_up = None
+        self._az_affinity = None
         self._description = None
         self._healthmonitor_id = None
         self._id = None
@@ -169,6 +174,8 @@ class Pool:
         self.discriminator = None
 
         self.admin_state_up = admin_state_up
+        if az_affinity is not None:
+            self.az_affinity = az_affinity
         self.description = description
         self.healthmonitor_id = healthmonitor_id
         self.id = id
@@ -227,6 +234,24 @@ class Pool:
         :type admin_state_up: bool
         """
         self._admin_state_up = admin_state_up
+
+    @property
+    def az_affinity(self):
+        r"""Gets the az_affinity of this Pool.
+
+        :return: The az_affinity of this Pool.
+        :rtype: :class:`huaweicloudsdkelb.v3.AzAffinity`
+        """
+        return self._az_affinity
+
+    @az_affinity.setter
+    def az_affinity(self, az_affinity):
+        r"""Sets the az_affinity of this Pool.
+
+        :param az_affinity: The az_affinity of this Pool.
+        :type az_affinity: :class:`huaweicloudsdkelb.v3.AzAffinity`
+        """
+        self._az_affinity = az_affinity
 
     @property
     def description(self):
@@ -704,7 +729,7 @@ class Pool:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this Pool.
 
-        参数解释：后端服务器组所在的企业项目ID。
+        参数解释：IP地址组所在的企业项目ID。
 
         :return: The enterprise_project_id of this Pool.
         :rtype: str
@@ -715,7 +740,7 @@ class Pool:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this Pool.
 
-        参数解释：后端服务器组所在的企业项目ID。
+        参数解释：IP地址组所在的企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this Pool.
         :type enterprise_project_id: str

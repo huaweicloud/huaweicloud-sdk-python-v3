@@ -5,6 +5,7 @@ from __future__ import absolute_import
 # import models into model package
 from huaweicloudsdkces.v2.model.add_alarm_rule_resources_request import AddAlarmRuleResourcesRequest
 from huaweicloudsdkces.v2.model.add_alarm_rule_resources_response import AddAlarmRuleResourcesResponse
+from huaweicloudsdkces.v2.model.add_resources_req import AddResourcesReq
 from huaweicloudsdkces.v2.model.additional_info import AdditionalInfo
 from huaweicloudsdkces.v2.model.agent_dimension import AgentDimension
 from huaweicloudsdkces.v2.model.alarm_condition import AlarmCondition
@@ -84,6 +85,7 @@ from huaweicloudsdkces.v2.model.dash_board_id_item import DashBoardIdItem
 from huaweicloudsdkces.v2.model.dash_board_info import DashBoardInfo
 from huaweicloudsdkces.v2.model.dash_board_name_item import DashBoardNameItem
 from huaweicloudsdkces.v2.model.data_point_info import DataPointInfo
+from huaweicloudsdkces.v2.model.del_resources_req import DelResourcesReq
 from huaweicloudsdkces.v2.model.delete_alarm_rule_resources_request import DeleteAlarmRuleResourcesRequest
 from huaweicloudsdkces.v2.model.delete_alarm_rule_resources_response import DeleteAlarmRuleResourcesResponse
 from huaweicloudsdkces.v2.model.delete_dashboards_request import DeleteDashboardsRequest
@@ -198,7 +200,6 @@ from huaweicloudsdkces.v2.model.resource_name_item import ResourceNameItem
 from huaweicloudsdkces.v2.model.resource_namespace import ResourceNamespace
 from huaweicloudsdkces.v2.model.resource_tag import ResourceTag
 from huaweicloudsdkces.v2.model.resources_in_list_resp import ResourcesInListResp
-from huaweicloudsdkces.v2.model.resources_req import ResourcesReq
 from huaweicloudsdkces.v2.model.resources_req_v2 import ResourcesReqV2
 from huaweicloudsdkces.v2.model.rollup_dimension import RollupDimension
 from huaweicloudsdkces.v2.model.rollup_enable import RollupEnable

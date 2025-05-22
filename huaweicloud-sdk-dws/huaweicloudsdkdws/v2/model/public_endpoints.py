@@ -31,9 +31,9 @@ class PublicEndpoints:
 
         The model defined in huaweicloud sdk
 
-        :param public_connect_info: 公网连接信息
+        :param public_connect_info: **参数解释**： 公网连接信息。 **取值范围**： 不涉及。
         :type public_connect_info: str
-        :param jdbc_url: 公网JDBC URL，默认格式如下： jdbc:postgresql://&lt;public_connect_info&gt;/&lt;YOUR_DATABASE_name&gt;
+        :param jdbc_url: **参数解释**： 公网JDBC连接串。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： jdbc:postgresql://&lt;public_connect_info&gt;/&lt;YOUR_DATABASE_name&gt;
         :type jdbc_url: str
         """
         
@@ -52,7 +52,7 @@ class PublicEndpoints:
     def public_connect_info(self):
         r"""Gets the public_connect_info of this PublicEndpoints.
 
-        公网连接信息
+        **参数解释**： 公网连接信息。 **取值范围**： 不涉及。
 
         :return: The public_connect_info of this PublicEndpoints.
         :rtype: str
@@ -63,7 +63,7 @@ class PublicEndpoints:
     def public_connect_info(self, public_connect_info):
         r"""Sets the public_connect_info of this PublicEndpoints.
 
-        公网连接信息
+        **参数解释**： 公网连接信息。 **取值范围**： 不涉及。
 
         :param public_connect_info: The public_connect_info of this PublicEndpoints.
         :type public_connect_info: str
@@ -74,7 +74,7 @@ class PublicEndpoints:
     def jdbc_url(self):
         r"""Gets the jdbc_url of this PublicEndpoints.
 
-        公网JDBC URL，默认格式如下： jdbc:postgresql://<public_connect_info>/<YOUR_DATABASE_name>
+        **参数解释**： 公网JDBC连接串。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： jdbc:postgresql://<public_connect_info>/<YOUR_DATABASE_name>
 
         :return: The jdbc_url of this PublicEndpoints.
         :rtype: str
@@ -85,7 +85,7 @@ class PublicEndpoints:
     def jdbc_url(self, jdbc_url):
         r"""Sets the jdbc_url of this PublicEndpoints.
 
-        公网JDBC URL，默认格式如下： jdbc:postgresql://<public_connect_info>/<YOUR_DATABASE_name>
+        **参数解释**： 公网JDBC连接串。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： jdbc:postgresql://<public_connect_info>/<YOUR_DATABASE_name>
 
         :param jdbc_url: The jdbc_url of this PublicEndpoints.
         :type jdbc_url: str

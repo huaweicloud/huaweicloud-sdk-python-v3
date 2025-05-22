@@ -33,11 +33,11 @@ class MaintainWindow:
 
         The model defined in huaweicloud sdk
 
-        :param day: 每周的维护时间，以天为粒度，取值如下：  - Mon：星期一 - Tue：星期二 - Wed：星期三 - Thu：星期四 - Fri：星期五 - Sat：星期六 - Sun：星期日
+        :param day: **参数解释**： 每周的维护时间，以天为粒度。 **取值范围**： - Mon：星期一 - Tue：星期二 - Wed：星期三 - Thu：星期四 - Fri：星期五 - Sat：星期六 - Sun：星期日
         :type day: str
-        :param start_time: 维护开始时间，显示格式为 HH：mm，时区为GMT+0。
+        :param start_time: **参数解释**： 维护开始时间，显示格式为 HH：mm，时区为GMT+0。 **取值范围**： 不涉及。
         :type start_time: str
-        :param end_time: 维护结束时间，显示格式为 HH：mm, 时区为GMT+0。
+        :param end_time: **参数解释**： 维护结束时间，显示格式为 HH：mm, 时区为GMT+0。 **取值范围**： 不涉及。
         :type end_time: str
         """
         
@@ -59,7 +59,7 @@ class MaintainWindow:
     def day(self):
         r"""Gets the day of this MaintainWindow.
 
-        每周的维护时间，以天为粒度，取值如下：  - Mon：星期一 - Tue：星期二 - Wed：星期三 - Thu：星期四 - Fri：星期五 - Sat：星期六 - Sun：星期日
+        **参数解释**： 每周的维护时间，以天为粒度。 **取值范围**： - Mon：星期一 - Tue：星期二 - Wed：星期三 - Thu：星期四 - Fri：星期五 - Sat：星期六 - Sun：星期日
 
         :return: The day of this MaintainWindow.
         :rtype: str
@@ -70,7 +70,7 @@ class MaintainWindow:
     def day(self, day):
         r"""Sets the day of this MaintainWindow.
 
-        每周的维护时间，以天为粒度，取值如下：  - Mon：星期一 - Tue：星期二 - Wed：星期三 - Thu：星期四 - Fri：星期五 - Sat：星期六 - Sun：星期日
+        **参数解释**： 每周的维护时间，以天为粒度。 **取值范围**： - Mon：星期一 - Tue：星期二 - Wed：星期三 - Thu：星期四 - Fri：星期五 - Sat：星期六 - Sun：星期日
 
         :param day: The day of this MaintainWindow.
         :type day: str
@@ -81,7 +81,7 @@ class MaintainWindow:
     def start_time(self):
         r"""Gets the start_time of this MaintainWindow.
 
-        维护开始时间，显示格式为 HH：mm，时区为GMT+0。
+        **参数解释**： 维护开始时间，显示格式为 HH：mm，时区为GMT+0。 **取值范围**： 不涉及。
 
         :return: The start_time of this MaintainWindow.
         :rtype: str
@@ -92,7 +92,7 @@ class MaintainWindow:
     def start_time(self, start_time):
         r"""Sets the start_time of this MaintainWindow.
 
-        维护开始时间，显示格式为 HH：mm，时区为GMT+0。
+        **参数解释**： 维护开始时间，显示格式为 HH：mm，时区为GMT+0。 **取值范围**： 不涉及。
 
         :param start_time: The start_time of this MaintainWindow.
         :type start_time: str
@@ -103,7 +103,7 @@ class MaintainWindow:
     def end_time(self):
         r"""Gets the end_time of this MaintainWindow.
 
-        维护结束时间，显示格式为 HH：mm, 时区为GMT+0。
+        **参数解释**： 维护结束时间，显示格式为 HH：mm, 时区为GMT+0。 **取值范围**： 不涉及。
 
         :return: The end_time of this MaintainWindow.
         :rtype: str
@@ -114,7 +114,7 @@ class MaintainWindow:
     def end_time(self, end_time):
         r"""Sets the end_time of this MaintainWindow.
 
-        维护结束时间，显示格式为 HH：mm, 时区为GMT+0。
+        **参数解释**： 维护结束时间，显示格式为 HH：mm, 时区为GMT+0。 **取值范围**： 不涉及。
 
         :param end_time: The end_time of this MaintainWindow.
         :type end_time: str

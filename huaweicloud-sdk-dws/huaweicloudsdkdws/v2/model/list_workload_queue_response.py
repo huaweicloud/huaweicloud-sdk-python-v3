@@ -34,11 +34,11 @@ class ListWorkloadQueueResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param workload_queue_name_list: 工作负载队列名称。
+        :param workload_queue_name_list: **参数解释**： 工作负载队列名称。 **取值范围**： 不涉及。
         :type workload_queue_name_list: list[str]
-        :param workload_res_code: 结果状态码。
+        :param workload_res_code: **参数解释**： 结果状态码。 **取值范围**： 不涉及。
         :type workload_res_code: int
-        :param workload_res_str: 结果描述。
+        :param workload_res_str: **参数解释**： 结果描述。 **取值范围**： 不涉及。
         :type workload_res_str: str
         """
         
@@ -60,7 +60,7 @@ class ListWorkloadQueueResponse(SdkResponse):
     def workload_queue_name_list(self):
         r"""Gets the workload_queue_name_list of this ListWorkloadQueueResponse.
 
-        工作负载队列名称。
+        **参数解释**： 工作负载队列名称。 **取值范围**： 不涉及。
 
         :return: The workload_queue_name_list of this ListWorkloadQueueResponse.
         :rtype: list[str]
@@ -71,7 +71,7 @@ class ListWorkloadQueueResponse(SdkResponse):
     def workload_queue_name_list(self, workload_queue_name_list):
         r"""Sets the workload_queue_name_list of this ListWorkloadQueueResponse.
 
-        工作负载队列名称。
+        **参数解释**： 工作负载队列名称。 **取值范围**： 不涉及。
 
         :param workload_queue_name_list: The workload_queue_name_list of this ListWorkloadQueueResponse.
         :type workload_queue_name_list: list[str]
@@ -82,7 +82,7 @@ class ListWorkloadQueueResponse(SdkResponse):
     def workload_res_code(self):
         r"""Gets the workload_res_code of this ListWorkloadQueueResponse.
 
-        结果状态码。
+        **参数解释**： 结果状态码。 **取值范围**： 不涉及。
 
         :return: The workload_res_code of this ListWorkloadQueueResponse.
         :rtype: int
@@ -93,7 +93,7 @@ class ListWorkloadQueueResponse(SdkResponse):
     def workload_res_code(self, workload_res_code):
         r"""Sets the workload_res_code of this ListWorkloadQueueResponse.
 
-        结果状态码。
+        **参数解释**： 结果状态码。 **取值范围**： 不涉及。
 
         :param workload_res_code: The workload_res_code of this ListWorkloadQueueResponse.
         :type workload_res_code: int
@@ -104,7 +104,7 @@ class ListWorkloadQueueResponse(SdkResponse):
     def workload_res_str(self):
         r"""Gets the workload_res_str of this ListWorkloadQueueResponse.
 
-        结果描述。
+        **参数解释**： 结果描述。 **取值范围**： 不涉及。
 
         :return: The workload_res_str of this ListWorkloadQueueResponse.
         :rtype: str
@@ -115,7 +115,7 @@ class ListWorkloadQueueResponse(SdkResponse):
     def workload_res_str(self, workload_res_str):
         r"""Sets the workload_res_str of this ListWorkloadQueueResponse.
 
-        结果描述。
+        **参数解释**： 结果描述。 **取值范围**： 不涉及。
 
         :param workload_res_str: The workload_res_str of this ListWorkloadQueueResponse.
         :type workload_res_str: str

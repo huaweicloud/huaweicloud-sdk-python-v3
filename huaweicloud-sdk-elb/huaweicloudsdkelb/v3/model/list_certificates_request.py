@@ -28,7 +28,10 @@ class ListCertificatesRequest:
         'type': 'list[str]',
         'scm_certificate_id': 'list[str]',
         'common_name': 'list[str]',
-        'fingerprint': 'list[str]'
+        'fingerprint': 'list[str]',
+        'source': 'list[str]',
+        'protection_status': 'list[str]',
+        'protection_reason': 'list[str]'
     }
 
     attribute_map = {
@@ -43,10 +46,13 @@ class ListCertificatesRequest:
         'type': 'type',
         'scm_certificate_id': 'scm_certificate_id',
         'common_name': 'common_name',
-        'fingerprint': 'fingerprint'
+        'fingerprint': 'fingerprint',
+        'source': 'source',
+        'protection_status': 'protection_status',
+        'protection_reason': 'protection_reason'
     }
 
-    def __init__(self, marker=None, limit=None, page_reverse=None, id=None, name=None, description=None, admin_state_up=None, domain=None, type=None, scm_certificate_id=None, common_name=None, fingerprint=None):
+    def __init__(self, marker=None, limit=None, page_reverse=None, id=None, name=None, description=None, admin_state_up=None, domain=None, type=None, scm_certificate_id=None, common_name=None, fingerprint=None, source=None, protection_status=None, protection_reason=None):
         r"""ListCertificatesRequest
 
         The model defined in huaweicloud sdk
@@ -75,6 +81,12 @@ class ListCertificatesRequest:
         :type common_name: list[str]
         :param fingerprint: 证书的指纹。  支持多值查询，查询条件格式：fingerprint&#x3D;xxx&amp;fingerprint&#x3D;xxx。
         :type fingerprint: list[str]
+        :param source: 证书来源。  支持多值查询，查询条件格式：source&#x3D;xxx&amp;source&#x3D;xxx。
+        :type source: list[str]
+        :param protection_status: 修改保护状态。  支持多值查询，查询条件格式：protection_status&#x3D;xxx&amp;protection_status&#x3D;xxx。
+        :type protection_status: list[str]
+        :param protection_reason: 设置修改保护的原因。  支持多值查询，查询条件格式：protection_reason&#x3D;xxx&amp;protection_reason&#x3D;xxx。
+        :type protection_reason: list[str]
         """
         
         
@@ -91,6 +103,9 @@ class ListCertificatesRequest:
         self._scm_certificate_id = None
         self._common_name = None
         self._fingerprint = None
+        self._source = None
+        self._protection_status = None
+        self._protection_reason = None
         self.discriminator = None
 
         if marker is not None:
@@ -117,6 +132,12 @@ class ListCertificatesRequest:
             self.common_name = common_name
         if fingerprint is not None:
             self.fingerprint = fingerprint
+        if source is not None:
+            self.source = source
+        if protection_status is not None:
+            self.protection_status = protection_status
+        if protection_reason is not None:
+            self.protection_reason = protection_reason
 
     @property
     def marker(self):
@@ -381,6 +402,72 @@ class ListCertificatesRequest:
         :type fingerprint: list[str]
         """
         self._fingerprint = fingerprint
+
+    @property
+    def source(self):
+        r"""Gets the source of this ListCertificatesRequest.
+
+        证书来源。  支持多值查询，查询条件格式：source=xxx&source=xxx。
+
+        :return: The source of this ListCertificatesRequest.
+        :rtype: list[str]
+        """
+        return self._source
+
+    @source.setter
+    def source(self, source):
+        r"""Sets the source of this ListCertificatesRequest.
+
+        证书来源。  支持多值查询，查询条件格式：source=xxx&source=xxx。
+
+        :param source: The source of this ListCertificatesRequest.
+        :type source: list[str]
+        """
+        self._source = source
+
+    @property
+    def protection_status(self):
+        r"""Gets the protection_status of this ListCertificatesRequest.
+
+        修改保护状态。  支持多值查询，查询条件格式：protection_status=xxx&protection_status=xxx。
+
+        :return: The protection_status of this ListCertificatesRequest.
+        :rtype: list[str]
+        """
+        return self._protection_status
+
+    @protection_status.setter
+    def protection_status(self, protection_status):
+        r"""Sets the protection_status of this ListCertificatesRequest.
+
+        修改保护状态。  支持多值查询，查询条件格式：protection_status=xxx&protection_status=xxx。
+
+        :param protection_status: The protection_status of this ListCertificatesRequest.
+        :type protection_status: list[str]
+        """
+        self._protection_status = protection_status
+
+    @property
+    def protection_reason(self):
+        r"""Gets the protection_reason of this ListCertificatesRequest.
+
+        设置修改保护的原因。  支持多值查询，查询条件格式：protection_reason=xxx&protection_reason=xxx。
+
+        :return: The protection_reason of this ListCertificatesRequest.
+        :rtype: list[str]
+        """
+        return self._protection_reason
+
+    @protection_reason.setter
+    def protection_reason(self, protection_reason):
+        r"""Sets the protection_reason of this ListCertificatesRequest.
+
+        设置修改保护的原因。  支持多值查询，查询条件格式：protection_reason=xxx&protection_reason=xxx。
+
+        :param protection_reason: The protection_reason of this ListCertificatesRequest.
+        :type protection_reason: list[str]
+        """
+        self._protection_reason = protection_reason
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -88,25 +88,157 @@ class HttpConfig(object):
          default, value is HMAC_SHA256
         :type signing_algorithm: SigningAlgorithm
         """
-        self.proxy_protocol = proxy_protocol
-        self.proxy_host = proxy_host
-        self.proxy_port = proxy_port
-        self.proxy_user = proxy_user
-        self.proxy_password = proxy_password
+        self._proxy_protocol = proxy_protocol
+        self._proxy_host = proxy_host
+        self._proxy_port = proxy_port
+        self._proxy_user = proxy_user
+        self._proxy_password = proxy_password
 
-        self.ignore_ssl_verification = ignore_ssl_verification
-        self.allow_redirects = allow_redirects
+        self._ignore_ssl_verification = ignore_ssl_verification
+        self._allow_redirects = allow_redirects
 
-        self.ssl_ca_cert = ssl_ca_cert
-        self.cert_file = cert_file
-        self.key_file = key_file
+        self._ssl_ca_cert = ssl_ca_cert
+        self._cert_file = cert_file
+        self._key_file = key_file
 
-        self.timeout = timeout
-        self.retry_times = retry_times
-        self.pool_connections = pool_connections
-        self.pool_maxsize = pool_maxsize
-        self.ignore_content_type_for_get_request = ignore_content_type_for_get_request
-        self.signing_algorithm = signing_algorithm
+        self._timeout = timeout
+        self._retry_times = retry_times
+        self._pool_connections = pool_connections
+        self._pool_maxsize = pool_maxsize
+        self._ignore_content_type_for_get_request = ignore_content_type_for_get_request
+        self._signing_algorithm = signing_algorithm
+
+    @property
+    def proxy_protocol(self):
+        return self._proxy_protocol
+
+    @proxy_protocol.setter
+    def proxy_protocol(self, value):
+        self._proxy_protocol = value
+
+    @property
+    def proxy_host(self):
+        return self._proxy_host
+
+    @proxy_host.setter
+    def proxy_host(self, value):
+        self._proxy_host = value
+
+    @property
+    def proxy_port(self):
+        return self._proxy_port
+
+    @proxy_port.setter
+    def proxy_port(self, value):
+        self._proxy_port = value
+
+    @property
+    def proxy_user(self):
+        return self._proxy_user
+
+    @proxy_user.setter
+    def proxy_user(self, value):
+        self._proxy_user = value
+
+    @property
+    def proxy_password(self):
+        return self._proxy_password
+
+    @proxy_password.setter
+    def proxy_password(self, value):
+        self._proxy_password = value
+
+    @property
+    def ignore_ssl_verification(self):
+        return self._ignore_ssl_verification
+
+    @ignore_ssl_verification.setter
+    def ignore_ssl_verification(self, value):
+        self._ignore_ssl_verification = value
+
+    @property
+    def allow_redirects(self):
+        return self._allow_redirects
+
+    @allow_redirects.setter
+    def allow_redirects(self, value):
+        self._allow_redirects = value
+
+    @property
+    def ssl_ca_cert(self):
+        return self._ssl_ca_cert
+
+    @ssl_ca_cert.setter
+    def ssl_ca_cert(self, value):
+        self._ssl_ca_cert = value
+
+    @property
+    def cert_file(self):
+        return self._cert_file
+
+    @cert_file.setter
+    def cert_file(self, value):
+        self._cert_file = value
+
+    @property
+    def key_file(self):
+        return self._key_file
+
+    @key_file.setter
+    def key_file(self, value):
+        self._key_file = value
+
+    @property
+    def timeout(self):
+        return self._timeout
+
+    @timeout.setter
+    def timeout(self, value):
+        self._timeout = value
+
+    @property
+    def retry_times(self):
+        return self._retry_times
+
+    @retry_times.setter
+    def retry_times(self, value):
+        self._retry_times = value
+
+    @property
+    def pool_connections(self):
+        return self._pool_connections
+
+    @pool_connections.setter
+    def pool_connections(self, value):
+        self._pool_connections = value
+
+    @property
+    def pool_maxsize(self):
+        return self._pool_maxsize
+
+    @pool_maxsize.setter
+    def pool_maxsize(self, value):
+        self._pool_maxsize = value
+
+    @property
+    def ignore_content_type_for_get_request(self):
+        return self._ignore_content_type_for_get_request
+
+    @ignore_content_type_for_get_request.setter
+    def ignore_content_type_for_get_request(self, value):
+        self._ignore_content_type_for_get_request = value
+
+    @property
+    def signing_algorithm(self):
+        return self._signing_algorithm
+
+    @signing_algorithm.setter
+    def signing_algorithm(self, value):
+        self._signing_algorithm = value
+
+    @property
+    def proxy(self):
+        return self.get_proxy()
 
     def get_proxy(self):
         if self.proxy_host is None:

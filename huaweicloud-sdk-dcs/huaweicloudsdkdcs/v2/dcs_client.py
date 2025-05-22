@@ -2296,6 +2296,73 @@ class DcsClient(Client):
 
         return http_info
 
+    def download_hot_key(self, request):
+        r"""下载热key
+
+        下载热key。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DownloadHotKey
+        :type request: :class:`huaweicloudsdkdcs.v2.DownloadHotKeyRequest`
+        :rtype: :class:`huaweicloudsdkdcs.v2.DownloadHotKeyResponse`
+        """
+        http_info = self._download_hot_key_http_info(request)
+        return self._call_api(**http_info)
+
+    def download_hot_key_invoker(self, request):
+        http_info = self._download_hot_key_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _download_hot_key_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/hotkey/{task_id}/export",
+            "request_type": request.__class__.__name__,
+            "response_type": "DownloadHotKeyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def download_ssl_cert(self, request):
         r"""下载实例SSL证书
 
@@ -4924,6 +4991,73 @@ class DcsClient(Client):
 
         return http_info
 
+    def migrate_az(self, request):
+        r"""变更可用区
+
+        迁移缓存实例可用区，完成单可用区实例跨可用区改造。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for MigrateAz
+        :type request: :class:`huaweicloudsdkdcs.v2.MigrateAzRequest`
+        :rtype: :class:`huaweicloudsdkdcs.v2.MigrateAzResponse`
+        """
+        http_info = self._migrate_az_http_info(request)
+        return self._call_api(**http_info)
+
+    def migrate_az_invoker(self, request):
+        http_info = self._migrate_az_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _migrate_az_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/available-zones",
+            "request_type": request.__class__.__name__,
+            "response_type": "MigrateAzResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def reset_acl_account_pass_word(self, request):
         r"""重置ACL账号密码
 
@@ -5248,6 +5382,71 @@ class DcsClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def rollback_exchange_instance_ip(self, request):
+        r"""IP交换回滚
+
+        IP交换回滚。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for RollbackExchangeInstanceIp
+        :type request: :class:`huaweicloudsdkdcs.v2.RollbackExchangeInstanceIpRequest`
+        :rtype: :class:`huaweicloudsdkdcs.v2.RollbackExchangeInstanceIpResponse`
+        """
+        http_info = self._rollback_exchange_instance_ip_http_info(request)
+        return self._call_api(**http_info)
+
+    def rollback_exchange_instance_ip_invoker(self, request):
+        http_info = self._rollback_exchange_instance_ip_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _rollback_exchange_instance_ip_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/migration-task/{task_id}/rollback-ip",
+            "request_type": request.__class__.__name__,
+            "response_type": "RollbackExchangeInstanceIpResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -6347,6 +6546,71 @@ class DcsClient(Client):
             "resource_path": "/v2/{project_id}/instances/{instance_id}/ssl",
             "request_type": request.__class__.__name__,
             "response_type": "ShowInstanceSslDetailResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_instance_topology(self, request):
+        r"""查询集群实例拓扑关系图
+
+        查询集群实例拓扑关系图。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowInstanceTopology
+        :type request: :class:`huaweicloudsdkdcs.v2.ShowInstanceTopologyRequest`
+        :rtype: :class:`huaweicloudsdkdcs.v2.ShowInstanceTopologyResponse`
+        """
+        http_info = self._show_instance_topology_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_instance_topology_invoker(self, request):
+        http_info = self._show_instance_topology_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_instance_topology_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/nodes",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowInstanceTopologyResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -8048,6 +8312,74 @@ class DcsClient(Client):
 
         return http_info
 
+    def update_ip_whitelist_async(self, request):
+        r"""设置IP白名单分组异步接口
+
+        为指定实例设置IP白名单分组，包含创建、停用、编辑、删除白名单四个功能。返回异步任务jobId，设置白名单分组信息会覆盖掉已有的白名单信息，因此在新增IP白名单分组时，需保留已有的白名单信息后再编辑新的白名单分组信息。
+        [仅Redis 4.0及以上版本的实例支持设置IP白名单分组，Redis 3.0实例不支持该功能。](tag:dt)
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateIpWhitelistAsync
+        :type request: :class:`huaweicloudsdkdcs.v2.UpdateIpWhitelistAsyncRequest`
+        :rtype: :class:`huaweicloudsdkdcs.v2.UpdateIpWhitelistAsyncResponse`
+        """
+        http_info = self._update_ip_whitelist_async_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_ip_whitelist_async_invoker(self, request):
+        http_info = self._update_ip_whitelist_async_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_ip_whitelist_async_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/instance/{instance_id}/whitelist-async",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateIpWhitelistAsyncResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def update_migration_task(self, request):
         r"""设置迁移任务自动重连
 
@@ -8637,6 +8969,278 @@ class DcsClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_offline_key_analysis(self, request):
+        r"""创建离线全量key分析任务
+
+        创建离线全量key分析任务。离线全量key分析用于分析实例指定节点备份文件中的TOP100大key，每种数据类型前缀数量TOP50的key和每种数据类型key的内存占用和数量的分布情况。仅Redis 4.0、5.0、6.0版本及Redis企业版实例支持。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateOfflineKeyAnalysis
+        :type request: :class:`huaweicloudsdkdcs.v2.CreateOfflineKeyAnalysisRequest`
+        :rtype: :class:`huaweicloudsdkdcs.v2.CreateOfflineKeyAnalysisResponse`
+        """
+        http_info = self._create_offline_key_analysis_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_offline_key_analysis_invoker(self, request):
+        http_info = self._create_offline_key_analysis_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_offline_key_analysis_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/offline/key-analysis",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateOfflineKeyAnalysisResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_offline_key_analysis_task(self, request):
+        r"""删除离线全量key分析记录
+
+        删除离线全量key分析记录。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteOfflineKeyAnalysisTask
+        :type request: :class:`huaweicloudsdkdcs.v2.DeleteOfflineKeyAnalysisTaskRequest`
+        :rtype: :class:`huaweicloudsdkdcs.v2.DeleteOfflineKeyAnalysisTaskResponse`
+        """
+        http_info = self._delete_offline_key_analysis_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_offline_key_analysis_task_invoker(self, request):
+        http_info = self._delete_offline_key_analysis_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_offline_key_analysis_task_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/offline/key-analysis/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteOfflineKeyAnalysisTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_offline_key_analysis_task(self, request):
+        r"""查询离线全量key分析任务列表
+
+        查询离线全量key分析任务列表，支持Redis4.0、5.0、6.0版本及Redis企业版。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListOfflineKeyAnalysisTask
+        :type request: :class:`huaweicloudsdkdcs.v2.ListOfflineKeyAnalysisTaskRequest`
+        :rtype: :class:`huaweicloudsdkdcs.v2.ListOfflineKeyAnalysisTaskResponse`
+        """
+        http_info = self._list_offline_key_analysis_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_offline_key_analysis_task_invoker(self, request):
+        http_info = self._list_offline_key_analysis_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_offline_key_analysis_task_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/offline/key-analysis",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListOfflineKeyAnalysisTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_offline_key_analysis_task(self, request):
+        r"""查询离线全量key分析详情
+
+        查询离线全量key分析详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowOfflineKeyAnalysisTask
+        :type request: :class:`huaweicloudsdkdcs.v2.ShowOfflineKeyAnalysisTaskRequest`
+        :rtype: :class:`huaweicloudsdkdcs.v2.ShowOfflineKeyAnalysisTaskResponse`
+        """
+        http_info = self._show_offline_key_analysis_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_offline_key_analysis_task_invoker(self, request):
+        http_info = self._show_offline_key_analysis_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_offline_key_analysis_task_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/offline/key-analysis/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowOfflineKeyAnalysisTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 

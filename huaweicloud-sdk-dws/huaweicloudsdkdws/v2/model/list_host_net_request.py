@@ -35,13 +35,13 @@ class ListHostNetRequest:
 
         The model defined in huaweicloud sdk
 
-        :param cluster_id: 集群ID。获取方法，请参见9.6-获取集群ID。
+        :param cluster_id: **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
         :type cluster_id: str
         :param instance_name: 实例名称。
         :type instance_name: str
-        :param limit: 数据条目数。
+        :param limit: **参数解释**： 分页单页大小。 **约束限制**： 不涉及。 **取值范围**： 大于0。 **默认取值**： 不限制。
         :type limit: int
-        :param offset: 数据偏移量。
+        :param offset: **参数解释**： 分页查询，偏移量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 0
         :type offset: int
         """
         
@@ -57,14 +57,16 @@ class ListHostNetRequest:
             self.cluster_id = cluster_id
         if instance_name is not None:
             self.instance_name = instance_name
-        self.limit = limit
-        self.offset = offset
+        if limit is not None:
+            self.limit = limit
+        if offset is not None:
+            self.offset = offset
 
     @property
     def cluster_id(self):
         r"""Gets the cluster_id of this ListHostNetRequest.
 
-        集群ID。获取方法，请参见9.6-获取集群ID。
+        **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
 
         :return: The cluster_id of this ListHostNetRequest.
         :rtype: str
@@ -75,7 +77,7 @@ class ListHostNetRequest:
     def cluster_id(self, cluster_id):
         r"""Sets the cluster_id of this ListHostNetRequest.
 
-        集群ID。获取方法，请参见9.6-获取集群ID。
+        **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
 
         :param cluster_id: The cluster_id of this ListHostNetRequest.
         :type cluster_id: str
@@ -108,7 +110,7 @@ class ListHostNetRequest:
     def limit(self):
         r"""Gets the limit of this ListHostNetRequest.
 
-        数据条目数。
+        **参数解释**： 分页单页大小。 **约束限制**： 不涉及。 **取值范围**： 大于0。 **默认取值**： 不限制。
 
         :return: The limit of this ListHostNetRequest.
         :rtype: int
@@ -119,7 +121,7 @@ class ListHostNetRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListHostNetRequest.
 
-        数据条目数。
+        **参数解释**： 分页单页大小。 **约束限制**： 不涉及。 **取值范围**： 大于0。 **默认取值**： 不限制。
 
         :param limit: The limit of this ListHostNetRequest.
         :type limit: int
@@ -130,7 +132,7 @@ class ListHostNetRequest:
     def offset(self):
         r"""Gets the offset of this ListHostNetRequest.
 
-        数据偏移量。
+        **参数解释**： 分页查询，偏移量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 0
 
         :return: The offset of this ListHostNetRequest.
         :rtype: int
@@ -141,7 +143,7 @@ class ListHostNetRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListHostNetRequest.
 
-        数据偏移量。
+        **参数解释**： 分页查询，偏移量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 0
 
         :param offset: The offset of this ListHostNetRequest.
         :type offset: int

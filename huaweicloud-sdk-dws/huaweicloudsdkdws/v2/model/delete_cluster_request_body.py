@@ -29,7 +29,7 @@ class DeleteClusterRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param keep_last_manual_snapshot: 集群需要保留的快照数
+        :param keep_last_manual_snapshot: **参数解释**： 集群需要保留的快照数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type keep_last_manual_snapshot: int
         """
         
@@ -44,7 +44,7 @@ class DeleteClusterRequestBody:
     def keep_last_manual_snapshot(self):
         r"""Gets the keep_last_manual_snapshot of this DeleteClusterRequestBody.
 
-        集群需要保留的快照数
+        **参数解释**： 集群需要保留的快照数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The keep_last_manual_snapshot of this DeleteClusterRequestBody.
         :rtype: int
@@ -55,7 +55,7 @@ class DeleteClusterRequestBody:
     def keep_last_manual_snapshot(self, keep_last_manual_snapshot):
         r"""Sets the keep_last_manual_snapshot of this DeleteClusterRequestBody.
 
-        集群需要保留的快照数
+        **参数解释**： 集群需要保留的快照数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param keep_last_manual_snapshot: The keep_last_manual_snapshot of this DeleteClusterRequestBody.
         :type keep_last_manual_snapshot: int

@@ -33,11 +33,11 @@ class UpdateLogicalClusterRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param cluster_rings: 逻辑集群编辑环列表信息
+        :param cluster_rings: **参数解释**： 逻辑集群编辑环列表信息。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type cluster_rings: list[:class:`huaweicloudsdkdws.v2.ClusterRing`]
-        :param mode: 模式
+        :param mode: **参数解释**： 重分布模式。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type mode: str
-        :param waiting_for_killing: 是否等待销毁
+        :param waiting_for_killing: **参数解释**： 查杀作业等待时间。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type waiting_for_killing: int
         """
         
@@ -58,7 +58,7 @@ class UpdateLogicalClusterRequestBody:
     def cluster_rings(self):
         r"""Gets the cluster_rings of this UpdateLogicalClusterRequestBody.
 
-        逻辑集群编辑环列表信息
+        **参数解释**： 逻辑集群编辑环列表信息。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The cluster_rings of this UpdateLogicalClusterRequestBody.
         :rtype: list[:class:`huaweicloudsdkdws.v2.ClusterRing`]
@@ -69,7 +69,7 @@ class UpdateLogicalClusterRequestBody:
     def cluster_rings(self, cluster_rings):
         r"""Sets the cluster_rings of this UpdateLogicalClusterRequestBody.
 
-        逻辑集群编辑环列表信息
+        **参数解释**： 逻辑集群编辑环列表信息。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param cluster_rings: The cluster_rings of this UpdateLogicalClusterRequestBody.
         :type cluster_rings: list[:class:`huaweicloudsdkdws.v2.ClusterRing`]
@@ -80,7 +80,7 @@ class UpdateLogicalClusterRequestBody:
     def mode(self):
         r"""Gets the mode of this UpdateLogicalClusterRequestBody.
 
-        模式
+        **参数解释**： 重分布模式。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The mode of this UpdateLogicalClusterRequestBody.
         :rtype: str
@@ -91,7 +91,7 @@ class UpdateLogicalClusterRequestBody:
     def mode(self, mode):
         r"""Sets the mode of this UpdateLogicalClusterRequestBody.
 
-        模式
+        **参数解释**： 重分布模式。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param mode: The mode of this UpdateLogicalClusterRequestBody.
         :type mode: str
@@ -102,7 +102,7 @@ class UpdateLogicalClusterRequestBody:
     def waiting_for_killing(self):
         r"""Gets the waiting_for_killing of this UpdateLogicalClusterRequestBody.
 
-        是否等待销毁
+        **参数解释**： 查杀作业等待时间。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The waiting_for_killing of this UpdateLogicalClusterRequestBody.
         :rtype: int
@@ -113,7 +113,7 @@ class UpdateLogicalClusterRequestBody:
     def waiting_for_killing(self, waiting_for_killing):
         r"""Sets the waiting_for_killing of this UpdateLogicalClusterRequestBody.
 
-        是否等待销毁
+        **参数解释**： 查杀作业等待时间。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param waiting_for_killing: The waiting_for_killing of this UpdateLogicalClusterRequestBody.
         :type waiting_for_killing: int

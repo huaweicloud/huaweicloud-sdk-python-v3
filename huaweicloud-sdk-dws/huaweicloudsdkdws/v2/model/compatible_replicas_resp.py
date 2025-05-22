@@ -33,11 +33,11 @@ class CompatibleReplicasResp:
 
         The model defined in huaweicloud sdk
 
-        :param id: ID
+        :param id: **参数解释**： ID。 **取值范围**： 不涉及。
         :type id: str
-        :param name: 名称
+        :param name: **参数解释**： 名称。 **取值范围**： 不涉及。
         :type name: str
-        :param links: 连接
+        :param links: **参数解释**： 链接。 **取值范围**： 不涉及。
         :type links: list[:class:`huaweicloudsdkdws.v2.LinkResp`]
         """
         
@@ -59,7 +59,7 @@ class CompatibleReplicasResp:
     def id(self):
         r"""Gets the id of this CompatibleReplicasResp.
 
-        ID
+        **参数解释**： ID。 **取值范围**： 不涉及。
 
         :return: The id of this CompatibleReplicasResp.
         :rtype: str
@@ -70,7 +70,7 @@ class CompatibleReplicasResp:
     def id(self, id):
         r"""Sets the id of this CompatibleReplicasResp.
 
-        ID
+        **参数解释**： ID。 **取值范围**： 不涉及。
 
         :param id: The id of this CompatibleReplicasResp.
         :type id: str
@@ -81,7 +81,7 @@ class CompatibleReplicasResp:
     def name(self):
         r"""Gets the name of this CompatibleReplicasResp.
 
-        名称
+        **参数解释**： 名称。 **取值范围**： 不涉及。
 
         :return: The name of this CompatibleReplicasResp.
         :rtype: str
@@ -92,7 +92,7 @@ class CompatibleReplicasResp:
     def name(self, name):
         r"""Sets the name of this CompatibleReplicasResp.
 
-        名称
+        **参数解释**： 名称。 **取值范围**： 不涉及。
 
         :param name: The name of this CompatibleReplicasResp.
         :type name: str
@@ -103,7 +103,7 @@ class CompatibleReplicasResp:
     def links(self):
         r"""Gets the links of this CompatibleReplicasResp.
 
-        连接
+        **参数解释**： 链接。 **取值范围**： 不涉及。
 
         :return: The links of this CompatibleReplicasResp.
         :rtype: list[:class:`huaweicloudsdkdws.v2.LinkResp`]
@@ -114,7 +114,7 @@ class CompatibleReplicasResp:
     def links(self, links):
         r"""Sets the links of this CompatibleReplicasResp.
 
-        连接
+        **参数解释**： 链接。 **取值范围**： 不涉及。
 
         :param links: The links of this CompatibleReplicasResp.
         :type links: list[:class:`huaweicloudsdkdws.v2.LinkResp`]

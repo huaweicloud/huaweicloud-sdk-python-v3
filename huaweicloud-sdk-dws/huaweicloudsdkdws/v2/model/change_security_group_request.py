@@ -31,7 +31,7 @@ class ChangeSecurityGroupRequest:
 
         The model defined in huaweicloud sdk
 
-        :param cluster_id: 集群ID
+        :param cluster_id: **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type cluster_id: str
         :param body: Body of the ChangeSecurityGroupRequest
         :type body: :class:`huaweicloudsdkdws.v2.ChangeSecurityGroupRequestBody`
@@ -51,7 +51,7 @@ class ChangeSecurityGroupRequest:
     def cluster_id(self):
         r"""Gets the cluster_id of this ChangeSecurityGroupRequest.
 
-        集群ID
+        **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The cluster_id of this ChangeSecurityGroupRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class ChangeSecurityGroupRequest:
     def cluster_id(self, cluster_id):
         r"""Sets the cluster_id of this ChangeSecurityGroupRequest.
 
-        集群ID
+        **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param cluster_id: The cluster_id of this ChangeSecurityGroupRequest.
         :type cluster_id: str

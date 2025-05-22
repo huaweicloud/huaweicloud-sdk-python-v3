@@ -33,11 +33,11 @@ class DeleteWorkloadQueueRequest:
 
         The model defined in huaweicloud sdk
 
-        :param cluster_id: 集群ID。
+        :param cluster_id: **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
         :type cluster_id: str
-        :param logical_cluster_name: 逻辑集群名称。逻辑集群模式下该字段必填。
+        :param logical_cluster_name: **参数解释**： 逻辑集群名称。逻辑集群模式下该字段必填。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type logical_cluster_name: str
-        :param workload_queue_name: 工作负载队列名称。
+        :param workload_queue_name: **参数解释**： 工作负载队列名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type workload_queue_name: str
         """
         
@@ -57,7 +57,7 @@ class DeleteWorkloadQueueRequest:
     def cluster_id(self):
         r"""Gets the cluster_id of this DeleteWorkloadQueueRequest.
 
-        集群ID。
+        **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
 
         :return: The cluster_id of this DeleteWorkloadQueueRequest.
         :rtype: str
@@ -68,7 +68,7 @@ class DeleteWorkloadQueueRequest:
     def cluster_id(self, cluster_id):
         r"""Sets the cluster_id of this DeleteWorkloadQueueRequest.
 
-        集群ID。
+        **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
 
         :param cluster_id: The cluster_id of this DeleteWorkloadQueueRequest.
         :type cluster_id: str
@@ -79,7 +79,7 @@ class DeleteWorkloadQueueRequest:
     def logical_cluster_name(self):
         r"""Gets the logical_cluster_name of this DeleteWorkloadQueueRequest.
 
-        逻辑集群名称。逻辑集群模式下该字段必填。
+        **参数解释**： 逻辑集群名称。逻辑集群模式下该字段必填。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The logical_cluster_name of this DeleteWorkloadQueueRequest.
         :rtype: str
@@ -90,7 +90,7 @@ class DeleteWorkloadQueueRequest:
     def logical_cluster_name(self, logical_cluster_name):
         r"""Sets the logical_cluster_name of this DeleteWorkloadQueueRequest.
 
-        逻辑集群名称。逻辑集群模式下该字段必填。
+        **参数解释**： 逻辑集群名称。逻辑集群模式下该字段必填。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param logical_cluster_name: The logical_cluster_name of this DeleteWorkloadQueueRequest.
         :type logical_cluster_name: str
@@ -101,7 +101,7 @@ class DeleteWorkloadQueueRequest:
     def workload_queue_name(self):
         r"""Gets the workload_queue_name of this DeleteWorkloadQueueRequest.
 
-        工作负载队列名称。
+        **参数解释**： 工作负载队列名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The workload_queue_name of this DeleteWorkloadQueueRequest.
         :rtype: str
@@ -112,7 +112,7 @@ class DeleteWorkloadQueueRequest:
     def workload_queue_name(self, workload_queue_name):
         r"""Sets the workload_queue_name of this DeleteWorkloadQueueRequest.
 
-        工作负载队列名称。
+        **参数解释**： 工作负载队列名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param workload_queue_name: The workload_queue_name of this DeleteWorkloadQueueRequest.
         :type workload_queue_name: str

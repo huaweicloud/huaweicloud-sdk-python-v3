@@ -31,9 +31,9 @@ class OpenPublicIp:
 
         The model defined in huaweicloud sdk
 
-        :param public_bind_type: 弹性IP绑定类型，取值如下： auto_assign：自动绑定 not_use：暂未使用 bind_existing ：使用已有
+        :param public_bind_type: **参数解释**： 弹性IP绑定类型。 **约束限制**： 不涉及。 **取值范围**： - auto_assign：自动绑定 - not_use：暂未使用 - bind_existing ：使用已有  **默认取值**： 不涉及。
         :type public_bind_type: str
-        :param eip_id: 弹性IP的ID
+        :param eip_id: **参数解释**： 弹性IP的ID **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type eip_id: str
         """
         
@@ -52,7 +52,7 @@ class OpenPublicIp:
     def public_bind_type(self):
         r"""Gets the public_bind_type of this OpenPublicIp.
 
-        弹性IP绑定类型，取值如下： auto_assign：自动绑定 not_use：暂未使用 bind_existing ：使用已有
+        **参数解释**： 弹性IP绑定类型。 **约束限制**： 不涉及。 **取值范围**： - auto_assign：自动绑定 - not_use：暂未使用 - bind_existing ：使用已有  **默认取值**： 不涉及。
 
         :return: The public_bind_type of this OpenPublicIp.
         :rtype: str
@@ -63,7 +63,7 @@ class OpenPublicIp:
     def public_bind_type(self, public_bind_type):
         r"""Sets the public_bind_type of this OpenPublicIp.
 
-        弹性IP绑定类型，取值如下： auto_assign：自动绑定 not_use：暂未使用 bind_existing ：使用已有
+        **参数解释**： 弹性IP绑定类型。 **约束限制**： 不涉及。 **取值范围**： - auto_assign：自动绑定 - not_use：暂未使用 - bind_existing ：使用已有  **默认取值**： 不涉及。
 
         :param public_bind_type: The public_bind_type of this OpenPublicIp.
         :type public_bind_type: str
@@ -74,7 +74,7 @@ class OpenPublicIp:
     def eip_id(self):
         r"""Gets the eip_id of this OpenPublicIp.
 
-        弹性IP的ID
+        **参数解释**： 弹性IP的ID **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The eip_id of this OpenPublicIp.
         :rtype: str
@@ -85,7 +85,7 @@ class OpenPublicIp:
     def eip_id(self, eip_id):
         r"""Sets the eip_id of this OpenPublicIp.
 
-        弹性IP的ID
+        **参数解释**： 弹性IP的ID **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param eip_id: The eip_id of this OpenPublicIp.
         :type eip_id: str

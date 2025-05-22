@@ -31,9 +31,9 @@ class RestartLogicalClusterRequest:
 
         The model defined in huaweicloud sdk
 
-        :param cluster_id: 指定重启集群的ID
+        :param cluster_id: **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type cluster_id: str
-        :param logical_cluster_id: 指定待重启逻辑集群的ID
+        :param logical_cluster_id: **参数解释**： 待重启的逻辑集群的ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type logical_cluster_id: str
         """
         
@@ -50,7 +50,7 @@ class RestartLogicalClusterRequest:
     def cluster_id(self):
         r"""Gets the cluster_id of this RestartLogicalClusterRequest.
 
-        指定重启集群的ID
+        **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The cluster_id of this RestartLogicalClusterRequest.
         :rtype: str
@@ -61,7 +61,7 @@ class RestartLogicalClusterRequest:
     def cluster_id(self, cluster_id):
         r"""Sets the cluster_id of this RestartLogicalClusterRequest.
 
-        指定重启集群的ID
+        **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param cluster_id: The cluster_id of this RestartLogicalClusterRequest.
         :type cluster_id: str
@@ -72,7 +72,7 @@ class RestartLogicalClusterRequest:
     def logical_cluster_id(self):
         r"""Gets the logical_cluster_id of this RestartLogicalClusterRequest.
 
-        指定待重启逻辑集群的ID
+        **参数解释**： 待重启的逻辑集群的ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The logical_cluster_id of this RestartLogicalClusterRequest.
         :rtype: str
@@ -83,7 +83,7 @@ class RestartLogicalClusterRequest:
     def logical_cluster_id(self, logical_cluster_id):
         r"""Sets the logical_cluster_id of this RestartLogicalClusterRequest.
 
-        指定待重启逻辑集群的ID
+        **参数解释**： 待重启的逻辑集群的ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param logical_cluster_id: The logical_cluster_id of this RestartLogicalClusterRequest.
         :type logical_cluster_id: str

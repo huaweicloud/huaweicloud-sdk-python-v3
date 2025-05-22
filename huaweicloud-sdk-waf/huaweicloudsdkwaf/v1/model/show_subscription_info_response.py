@@ -36,7 +36,7 @@ class ShowSubscriptionInfoResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param type: 云模式版本   - -2：已冻结   - -1：未订购   - 2：标准版   - 3：专业版   - 4：铂金版   - 7:入门版   - 22：按需版本
+        :param type: 云模式版本   - -2：已冻结   - -1：未订购   - 2：标准版   - 3：专业版   - 4：企业版   - 7:入门版   - 22：按需版本
         :type type: int
         :param resources: 资源列表
         :type resources: list[:class:`huaweicloudsdkwaf.v1.ResourceResponse`]
@@ -67,7 +67,7 @@ class ShowSubscriptionInfoResponse(SdkResponse):
     def type(self):
         r"""Gets the type of this ShowSubscriptionInfoResponse.
 
-        云模式版本   - -2：已冻结   - -1：未订购   - 2：标准版   - 3：专业版   - 4：铂金版   - 7:入门版   - 22：按需版本
+        云模式版本   - -2：已冻结   - -1：未订购   - 2：标准版   - 3：专业版   - 4：企业版   - 7:入门版   - 22：按需版本
 
         :return: The type of this ShowSubscriptionInfoResponse.
         :rtype: int
@@ -78,7 +78,7 @@ class ShowSubscriptionInfoResponse(SdkResponse):
     def type(self, type):
         r"""Sets the type of this ShowSubscriptionInfoResponse.
 
-        云模式版本   - -2：已冻结   - -1：未订购   - 2：标准版   - 3：专业版   - 4：铂金版   - 7:入门版   - 22：按需版本
+        云模式版本   - -2：已冻结   - -1：未订购   - 2：标准版   - 3：专业版   - 4：企业版   - 7:入门版   - 22：按需版本
 
         :param type: The type of this ShowSubscriptionInfoResponse.
         :type type: int

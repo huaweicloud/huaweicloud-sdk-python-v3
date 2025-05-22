@@ -49,7 +49,7 @@ class ChatVoiceConfig:
         :type volume: int
         :param provider: 第三方TTS供应商类型。 * XIMALAYA：喜马拉雅TTS * HUAWEI_EI：EI TTS * MOBVOI：出门问问TTS
         :type provider: str
-        :param language: 语言类型。默认值CN。 * CN：简体中文。 * EN：英语。
+        :param language: 语言类型。默认值CN。 * CN：简体中文。 * EN：英语。 * ESP：西班牙语（仅海外站点支持） * por：葡萄牙语（仅海外站点支持） * Arabic：阿拉伯语（仅海外站点支持） * Thai：泰语（仅海外站点支持）
         :type language: str
         """
         
@@ -190,7 +190,7 @@ class ChatVoiceConfig:
     def language(self):
         r"""Gets the language of this ChatVoiceConfig.
 
-        语言类型。默认值CN。 * CN：简体中文。 * EN：英语。
+        语言类型。默认值CN。 * CN：简体中文。 * EN：英语。 * ESP：西班牙语（仅海外站点支持） * por：葡萄牙语（仅海外站点支持） * Arabic：阿拉伯语（仅海外站点支持） * Thai：泰语（仅海外站点支持）
 
         :return: The language of this ChatVoiceConfig.
         :rtype: str
@@ -201,7 +201,7 @@ class ChatVoiceConfig:
     def language(self, language):
         r"""Sets the language of this ChatVoiceConfig.
 
-        语言类型。默认值CN。 * CN：简体中文。 * EN：英语。
+        语言类型。默认值CN。 * CN：简体中文。 * EN：英语。 * ESP：西班牙语（仅海外站点支持） * por：葡萄牙语（仅海外站点支持） * Arabic：阿拉伯语（仅海外站点支持） * Thai：泰语（仅海外站点支持）
 
         :param language: The language of this ChatVoiceConfig.
         :type language: str

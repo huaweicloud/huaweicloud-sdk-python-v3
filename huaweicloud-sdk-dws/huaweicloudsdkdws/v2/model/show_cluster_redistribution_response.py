@@ -44,17 +44,17 @@ class ShowClusterRedistributionResponse(SdkResponse):
 
         :param redis_info: 
         :type redis_info: :class:`huaweicloudsdkdws.v2.RdsRedisInfo`
-        :param schedule_mode: 调度模式
+        :param schedule_mode: **参数解释**： 调度模式。 **取值范围**： false：非调度模式；true：调度模式。
         :type schedule_mode: bool
-        :param pause_enable: 是否允许暂停
+        :param pause_enable: **参数解释**： 是否允许暂停。 **取值范围**： false：不允许暂停；true：允许暂停。
         :type pause_enable: bool
-        :param recover_enable: 是否允许恢复
+        :param recover_enable: **参数解释**： 是否允许恢复。 **取值范围**： false：不允许恢复；true：允许恢复。
         :type recover_enable: bool
-        :param retry_enable: 是否允许重试
+        :param retry_enable: **参数解释**： 是否允许重试。 **取值范围**： false：不允许重试；true：允许重试。
         :type retry_enable: bool
-        :param update_enable: 是否允许更新
+        :param update_enable: **参数解释**： 是否允许更新。 **取值范围**： false：不允许更新；true：允许更新，该参数仅仅适用于调度模式。
         :type update_enable: bool
-        :param control_enable: 是否允许控制
+        :param control_enable: **参数解释**： 是否允许控制。 **取值范围**： false：不允许控制；true：允许控制，该参数仅仅适用于调度模式。
         :type control_enable: bool
         """
         
@@ -106,7 +106,7 @@ class ShowClusterRedistributionResponse(SdkResponse):
     def schedule_mode(self):
         r"""Gets the schedule_mode of this ShowClusterRedistributionResponse.
 
-        调度模式
+        **参数解释**： 调度模式。 **取值范围**： false：非调度模式；true：调度模式。
 
         :return: The schedule_mode of this ShowClusterRedistributionResponse.
         :rtype: bool
@@ -117,7 +117,7 @@ class ShowClusterRedistributionResponse(SdkResponse):
     def schedule_mode(self, schedule_mode):
         r"""Sets the schedule_mode of this ShowClusterRedistributionResponse.
 
-        调度模式
+        **参数解释**： 调度模式。 **取值范围**： false：非调度模式；true：调度模式。
 
         :param schedule_mode: The schedule_mode of this ShowClusterRedistributionResponse.
         :type schedule_mode: bool
@@ -128,7 +128,7 @@ class ShowClusterRedistributionResponse(SdkResponse):
     def pause_enable(self):
         r"""Gets the pause_enable of this ShowClusterRedistributionResponse.
 
-        是否允许暂停
+        **参数解释**： 是否允许暂停。 **取值范围**： false：不允许暂停；true：允许暂停。
 
         :return: The pause_enable of this ShowClusterRedistributionResponse.
         :rtype: bool
@@ -139,7 +139,7 @@ class ShowClusterRedistributionResponse(SdkResponse):
     def pause_enable(self, pause_enable):
         r"""Sets the pause_enable of this ShowClusterRedistributionResponse.
 
-        是否允许暂停
+        **参数解释**： 是否允许暂停。 **取值范围**： false：不允许暂停；true：允许暂停。
 
         :param pause_enable: The pause_enable of this ShowClusterRedistributionResponse.
         :type pause_enable: bool
@@ -150,7 +150,7 @@ class ShowClusterRedistributionResponse(SdkResponse):
     def recover_enable(self):
         r"""Gets the recover_enable of this ShowClusterRedistributionResponse.
 
-        是否允许恢复
+        **参数解释**： 是否允许恢复。 **取值范围**： false：不允许恢复；true：允许恢复。
 
         :return: The recover_enable of this ShowClusterRedistributionResponse.
         :rtype: bool
@@ -161,7 +161,7 @@ class ShowClusterRedistributionResponse(SdkResponse):
     def recover_enable(self, recover_enable):
         r"""Sets the recover_enable of this ShowClusterRedistributionResponse.
 
-        是否允许恢复
+        **参数解释**： 是否允许恢复。 **取值范围**： false：不允许恢复；true：允许恢复。
 
         :param recover_enable: The recover_enable of this ShowClusterRedistributionResponse.
         :type recover_enable: bool
@@ -172,7 +172,7 @@ class ShowClusterRedistributionResponse(SdkResponse):
     def retry_enable(self):
         r"""Gets the retry_enable of this ShowClusterRedistributionResponse.
 
-        是否允许重试
+        **参数解释**： 是否允许重试。 **取值范围**： false：不允许重试；true：允许重试。
 
         :return: The retry_enable of this ShowClusterRedistributionResponse.
         :rtype: bool
@@ -183,7 +183,7 @@ class ShowClusterRedistributionResponse(SdkResponse):
     def retry_enable(self, retry_enable):
         r"""Sets the retry_enable of this ShowClusterRedistributionResponse.
 
-        是否允许重试
+        **参数解释**： 是否允许重试。 **取值范围**： false：不允许重试；true：允许重试。
 
         :param retry_enable: The retry_enable of this ShowClusterRedistributionResponse.
         :type retry_enable: bool
@@ -194,7 +194,7 @@ class ShowClusterRedistributionResponse(SdkResponse):
     def update_enable(self):
         r"""Gets the update_enable of this ShowClusterRedistributionResponse.
 
-        是否允许更新
+        **参数解释**： 是否允许更新。 **取值范围**： false：不允许更新；true：允许更新，该参数仅仅适用于调度模式。
 
         :return: The update_enable of this ShowClusterRedistributionResponse.
         :rtype: bool
@@ -205,7 +205,7 @@ class ShowClusterRedistributionResponse(SdkResponse):
     def update_enable(self, update_enable):
         r"""Sets the update_enable of this ShowClusterRedistributionResponse.
 
-        是否允许更新
+        **参数解释**： 是否允许更新。 **取值范围**： false：不允许更新；true：允许更新，该参数仅仅适用于调度模式。
 
         :param update_enable: The update_enable of this ShowClusterRedistributionResponse.
         :type update_enable: bool
@@ -216,7 +216,7 @@ class ShowClusterRedistributionResponse(SdkResponse):
     def control_enable(self):
         r"""Gets the control_enable of this ShowClusterRedistributionResponse.
 
-        是否允许控制
+        **参数解释**： 是否允许控制。 **取值范围**： false：不允许控制；true：允许控制，该参数仅仅适用于调度模式。
 
         :return: The control_enable of this ShowClusterRedistributionResponse.
         :rtype: bool
@@ -227,7 +227,7 @@ class ShowClusterRedistributionResponse(SdkResponse):
     def control_enable(self, control_enable):
         r"""Sets the control_enable of this ShowClusterRedistributionResponse.
 
-        是否允许控制
+        **参数解释**： 是否允许控制。 **取值范围**： false：不允许控制；true：允许控制，该参数仅仅适用于调度模式。
 
         :param control_enable: The control_enable of this ShowClusterRedistributionResponse.
         :type control_enable: bool

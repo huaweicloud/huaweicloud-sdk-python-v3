@@ -18,7 +18,7 @@ class AuditDumpRecord:
 
     openapi_types = {
         'cluster_id': 'str',
-        'exector_time': 'str',
+        'executor_time': 'str',
         'begin_time': 'str',
         'end_time': 'str',
         'bucket_name': 'str',
@@ -29,7 +29,7 @@ class AuditDumpRecord:
 
     attribute_map = {
         'cluster_id': 'cluster_id',
-        'exector_time': 'exector_time',
+        'executor_time': 'executor_time',
         'begin_time': 'begin_time',
         'end_time': 'end_time',
         'bucket_name': 'bucket_name',
@@ -38,15 +38,15 @@ class AuditDumpRecord:
         'failed_reason': 'failed_reason'
     }
 
-    def __init__(self, cluster_id=None, exector_time=None, begin_time=None, end_time=None, bucket_name=None, location_prefix=None, result=None, failed_reason=None):
+    def __init__(self, cluster_id=None, executor_time=None, begin_time=None, end_time=None, bucket_name=None, location_prefix=None, result=None, failed_reason=None):
         r"""AuditDumpRecord
 
         The model defined in huaweicloud sdk
 
-        :param cluster_id: 集群id。
+        :param cluster_id: **参数解释**： 集群ID。 **取值范围**： 36位UUID。
         :type cluster_id: str
-        :param exector_time: 执行时间。
-        :type exector_time: str
+        :param executor_time: 执行时间。
+        :type executor_time: str
         :param begin_time: 开始时间。
         :type begin_time: str
         :param end_time: 结束时间。
@@ -64,7 +64,7 @@ class AuditDumpRecord:
         
 
         self._cluster_id = None
-        self._exector_time = None
+        self._executor_time = None
         self._begin_time = None
         self._end_time = None
         self._bucket_name = None
@@ -75,8 +75,8 @@ class AuditDumpRecord:
 
         if cluster_id is not None:
             self.cluster_id = cluster_id
-        if exector_time is not None:
-            self.exector_time = exector_time
+        if executor_time is not None:
+            self.executor_time = executor_time
         if begin_time is not None:
             self.begin_time = begin_time
         if end_time is not None:
@@ -94,7 +94,7 @@ class AuditDumpRecord:
     def cluster_id(self):
         r"""Gets the cluster_id of this AuditDumpRecord.
 
-        集群id。
+        **参数解释**： 集群ID。 **取值范围**： 36位UUID。
 
         :return: The cluster_id of this AuditDumpRecord.
         :rtype: str
@@ -105,7 +105,7 @@ class AuditDumpRecord:
     def cluster_id(self, cluster_id):
         r"""Sets the cluster_id of this AuditDumpRecord.
 
-        集群id。
+        **参数解释**： 集群ID。 **取值范围**： 36位UUID。
 
         :param cluster_id: The cluster_id of this AuditDumpRecord.
         :type cluster_id: str
@@ -113,26 +113,26 @@ class AuditDumpRecord:
         self._cluster_id = cluster_id
 
     @property
-    def exector_time(self):
-        r"""Gets the exector_time of this AuditDumpRecord.
+    def executor_time(self):
+        r"""Gets the executor_time of this AuditDumpRecord.
 
         执行时间。
 
-        :return: The exector_time of this AuditDumpRecord.
+        :return: The executor_time of this AuditDumpRecord.
         :rtype: str
         """
-        return self._exector_time
+        return self._executor_time
 
-    @exector_time.setter
-    def exector_time(self, exector_time):
-        r"""Sets the exector_time of this AuditDumpRecord.
+    @executor_time.setter
+    def executor_time(self, executor_time):
+        r"""Sets the executor_time of this AuditDumpRecord.
 
         执行时间。
 
-        :param exector_time: The exector_time of this AuditDumpRecord.
-        :type exector_time: str
+        :param executor_time: The executor_time of this AuditDumpRecord.
+        :type executor_time: str
         """
-        self._exector_time = exector_time
+        self._executor_time = executor_time
 
     @property
     def begin_time(self):

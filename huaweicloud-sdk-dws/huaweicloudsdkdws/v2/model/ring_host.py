@@ -37,15 +37,15 @@ class RingHost:
 
         The model defined in huaweicloud sdk
 
-        :param host_name: 主机名称
+        :param host_name: **参数解释**： 主机名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type host_name: str
-        :param back_ip: 后端IP地址
+        :param back_ip: **参数解释**： 后端IP地址。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type back_ip: str
-        :param cpu_cores: 主机CPU核数
+        :param cpu_cores: **参数解释**： 主机CPU核数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type cpu_cores: int
-        :param memory: 主机内存
+        :param memory: **参数解释**： 主机内存。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type memory: float
-        :param disk_size: 主机磁盘大小
+        :param disk_size: **参数解释**： 主机磁盘大小。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type disk_size: float
         """
         
@@ -68,7 +68,7 @@ class RingHost:
     def host_name(self):
         r"""Gets the host_name of this RingHost.
 
-        主机名称
+        **参数解释**： 主机名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The host_name of this RingHost.
         :rtype: str
@@ -79,7 +79,7 @@ class RingHost:
     def host_name(self, host_name):
         r"""Sets the host_name of this RingHost.
 
-        主机名称
+        **参数解释**： 主机名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param host_name: The host_name of this RingHost.
         :type host_name: str
@@ -90,7 +90,7 @@ class RingHost:
     def back_ip(self):
         r"""Gets the back_ip of this RingHost.
 
-        后端IP地址
+        **参数解释**： 后端IP地址。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The back_ip of this RingHost.
         :rtype: str
@@ -101,7 +101,7 @@ class RingHost:
     def back_ip(self, back_ip):
         r"""Sets the back_ip of this RingHost.
 
-        后端IP地址
+        **参数解释**： 后端IP地址。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param back_ip: The back_ip of this RingHost.
         :type back_ip: str
@@ -112,7 +112,7 @@ class RingHost:
     def cpu_cores(self):
         r"""Gets the cpu_cores of this RingHost.
 
-        主机CPU核数
+        **参数解释**： 主机CPU核数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The cpu_cores of this RingHost.
         :rtype: int
@@ -123,7 +123,7 @@ class RingHost:
     def cpu_cores(self, cpu_cores):
         r"""Sets the cpu_cores of this RingHost.
 
-        主机CPU核数
+        **参数解释**： 主机CPU核数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param cpu_cores: The cpu_cores of this RingHost.
         :type cpu_cores: int
@@ -134,7 +134,7 @@ class RingHost:
     def memory(self):
         r"""Gets the memory of this RingHost.
 
-        主机内存
+        **参数解释**： 主机内存。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The memory of this RingHost.
         :rtype: float
@@ -145,7 +145,7 @@ class RingHost:
     def memory(self, memory):
         r"""Sets the memory of this RingHost.
 
-        主机内存
+        **参数解释**： 主机内存。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param memory: The memory of this RingHost.
         :type memory: float
@@ -156,7 +156,7 @@ class RingHost:
     def disk_size(self):
         r"""Gets the disk_size of this RingHost.
 
-        主机磁盘大小
+        **参数解释**： 主机磁盘大小。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The disk_size of this RingHost.
         :rtype: float
@@ -167,7 +167,7 @@ class RingHost:
     def disk_size(self, disk_size):
         r"""Sets the disk_size of this RingHost.
 
-        主机磁盘大小
+        **参数解释**： 主机磁盘大小。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param disk_size: The disk_size of this RingHost.
         :type disk_size: float

@@ -33,7 +33,7 @@ class ListUnboundProtectedIpRequest:
 
         The model defined in huaweicloud sdk
 
-        :param package_id: 防护包id
+        :param package_id: 实例id
         :type package_id: str
         :param offset: 开始查询的偏移量,默认值:0
         :type offset: int
@@ -58,7 +58,7 @@ class ListUnboundProtectedIpRequest:
     def package_id(self):
         r"""Gets the package_id of this ListUnboundProtectedIpRequest.
 
-        防护包id
+        实例id
 
         :return: The package_id of this ListUnboundProtectedIpRequest.
         :rtype: str
@@ -69,7 +69,7 @@ class ListUnboundProtectedIpRequest:
     def package_id(self, package_id):
         r"""Sets the package_id of this ListUnboundProtectedIpRequest.
 
-        防护包id
+        实例id
 
         :param package_id: The package_id of this ListUnboundProtectedIpRequest.
         :type package_id: str

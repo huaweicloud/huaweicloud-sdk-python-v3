@@ -28,7 +28,8 @@ class SmartChatRoomBaseInfo:
         'voice_config_list': 'list[VoiceConfigRsp]',
         'default_language': 'str',
         'create_time': 'str',
-        'update_time': 'str'
+        'update_time': 'str',
+        'exit_mute_threshold': 'int'
     }
 
     attribute_map = {
@@ -43,10 +44,11 @@ class SmartChatRoomBaseInfo:
         'voice_config_list': 'voice_config_list',
         'default_language': 'default_language',
         'create_time': 'create_time',
-        'update_time': 'update_time'
+        'update_time': 'update_time',
+        'exit_mute_threshold': 'exit_mute_threshold'
     }
 
-    def __init__(self, room_id=None, room_name=None, room_description=None, robot_id=None, cover_url=None, model_infos=None, voice_config=None, concurrency=None, voice_config_list=None, default_language=None, create_time=None, update_time=None):
+    def __init__(self, room_id=None, room_name=None, room_description=None, robot_id=None, cover_url=None, model_infos=None, voice_config=None, concurrency=None, voice_config_list=None, default_language=None, create_time=None, update_time=None, exit_mute_threshold=None):
         r"""SmartChatRoomBaseInfo
 
         The model defined in huaweicloud sdk
@@ -69,12 +71,14 @@ class SmartChatRoomBaseInfo:
         :type concurrency: int
         :param voice_config_list: 语音配置参数列表。
         :type voice_config_list: list[:class:`huaweicloudsdkmetastudio.v1.VoiceConfigRsp`]
-        :param default_language: 默认语言，智能交互接口使用。默认值CN。 * CN：简体中文。 * EN：英语。
+        :param default_language: 默认语言，智能交互接口使用。默认值CN。 * CN：简体中文。 * EN：英语。 * ESP：西班牙语（仅海外站点支持） * por：葡萄牙语（仅海外站点支持） * Arabic：阿拉伯语（仅海外站点支持） * Thai：泰语（仅海外站点支持）
         :type default_language: str
         :param create_time: 创建时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
         :type create_time: str
         :param update_time: 更新时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
         :type update_time: str
+        :param exit_mute_threshold: **参数解释**： 静默退出时长。
+        :type exit_mute_threshold: int
         """
         
         
@@ -91,6 +95,7 @@ class SmartChatRoomBaseInfo:
         self._default_language = None
         self._create_time = None
         self._update_time = None
+        self._exit_mute_threshold = None
         self.discriminator = None
 
         if room_id is not None:
@@ -117,6 +122,8 @@ class SmartChatRoomBaseInfo:
             self.create_time = create_time
         if update_time is not None:
             self.update_time = update_time
+        if exit_mute_threshold is not None:
+            self.exit_mute_threshold = exit_mute_threshold
 
     @property
     def room_id(self):
@@ -312,7 +319,7 @@ class SmartChatRoomBaseInfo:
     def default_language(self):
         r"""Gets the default_language of this SmartChatRoomBaseInfo.
 
-        默认语言，智能交互接口使用。默认值CN。 * CN：简体中文。 * EN：英语。
+        默认语言，智能交互接口使用。默认值CN。 * CN：简体中文。 * EN：英语。 * ESP：西班牙语（仅海外站点支持） * por：葡萄牙语（仅海外站点支持） * Arabic：阿拉伯语（仅海外站点支持） * Thai：泰语（仅海外站点支持）
 
         :return: The default_language of this SmartChatRoomBaseInfo.
         :rtype: str
@@ -323,7 +330,7 @@ class SmartChatRoomBaseInfo:
     def default_language(self, default_language):
         r"""Sets the default_language of this SmartChatRoomBaseInfo.
 
-        默认语言，智能交互接口使用。默认值CN。 * CN：简体中文。 * EN：英语。
+        默认语言，智能交互接口使用。默认值CN。 * CN：简体中文。 * EN：英语。 * ESP：西班牙语（仅海外站点支持） * por：葡萄牙语（仅海外站点支持） * Arabic：阿拉伯语（仅海外站点支持） * Thai：泰语（仅海外站点支持）
 
         :param default_language: The default_language of this SmartChatRoomBaseInfo.
         :type default_language: str
@@ -373,6 +380,28 @@ class SmartChatRoomBaseInfo:
         :type update_time: str
         """
         self._update_time = update_time
+
+    @property
+    def exit_mute_threshold(self):
+        r"""Gets the exit_mute_threshold of this SmartChatRoomBaseInfo.
+
+        **参数解释**： 静默退出时长。
+
+        :return: The exit_mute_threshold of this SmartChatRoomBaseInfo.
+        :rtype: int
+        """
+        return self._exit_mute_threshold
+
+    @exit_mute_threshold.setter
+    def exit_mute_threshold(self, exit_mute_threshold):
+        r"""Sets the exit_mute_threshold of this SmartChatRoomBaseInfo.
+
+        **参数解释**： 静默退出时长。
+
+        :param exit_mute_threshold: The exit_mute_threshold of this SmartChatRoomBaseInfo.
+        :type exit_mute_threshold: int
+        """
+        self._exit_mute_threshold = exit_mute_threshold
 
     def to_dict(self):
         """Returns the model properties as a dict"""

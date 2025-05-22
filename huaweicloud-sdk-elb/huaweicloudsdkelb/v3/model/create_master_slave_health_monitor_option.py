@@ -53,7 +53,7 @@ class CreateMasterSlaveHealthMonitorOption:
         :type delay: int
         :param domain_name: 发送健康检查请求的域名。  取值：以数字或字母开头，只能包含数字、字母、’-’、’.’。 默认为空，表示使用负载均衡器的vip作为http请求的目的地址。  使用说明：当type为HTTP/HTTPS时生效。
         :type domain_name: str
-        :param expected_codes: 期望响应状态码。  取值： - 单值：单个返回码，例如200。 - 列表：多个特定返回码，例如200，202。 - 区间：一个返回码区间，例如200-204。  默认值：200。  仅支持HTTP/HTTPS/GRPC设置该字段，其他协议设置不会生效。
+        :param expected_codes: 期望响应状态码。  取值： - 单值：单个返回码，例如200。 - 列表：多个特定返回码，例如200，202。 - 区间：一个返回码区间，例如200-204。  默认值：200。  该字段仅在HTTP/HTTPS/GRPC协议下有效，其他协议可以设置但不会生效。
         :type expected_codes: str
         :param http_method: HTTP请求方法。  取值：GET、HEAD、POST，默认GET。  使用说明：当type为HTTP/HTTPS时生效。
         :type http_method: str
@@ -155,7 +155,7 @@ class CreateMasterSlaveHealthMonitorOption:
     def expected_codes(self):
         r"""Gets the expected_codes of this CreateMasterSlaveHealthMonitorOption.
 
-        期望响应状态码。  取值： - 单值：单个返回码，例如200。 - 列表：多个特定返回码，例如200，202。 - 区间：一个返回码区间，例如200-204。  默认值：200。  仅支持HTTP/HTTPS/GRPC设置该字段，其他协议设置不会生效。
+        期望响应状态码。  取值： - 单值：单个返回码，例如200。 - 列表：多个特定返回码，例如200，202。 - 区间：一个返回码区间，例如200-204。  默认值：200。  该字段仅在HTTP/HTTPS/GRPC协议下有效，其他协议可以设置但不会生效。
 
         :return: The expected_codes of this CreateMasterSlaveHealthMonitorOption.
         :rtype: str
@@ -166,7 +166,7 @@ class CreateMasterSlaveHealthMonitorOption:
     def expected_codes(self, expected_codes):
         r"""Sets the expected_codes of this CreateMasterSlaveHealthMonitorOption.
 
-        期望响应状态码。  取值： - 单值：单个返回码，例如200。 - 列表：多个特定返回码，例如200，202。 - 区间：一个返回码区间，例如200-204。  默认值：200。  仅支持HTTP/HTTPS/GRPC设置该字段，其他协议设置不会生效。
+        期望响应状态码。  取值： - 单值：单个返回码，例如200。 - 列表：多个特定返回码，例如200，202。 - 区间：一个返回码区间，例如200-204。  默认值：200。  该字段仅在HTTP/HTTPS/GRPC协议下有效，其他协议可以设置但不会生效。
 
         :param expected_codes: The expected_codes of this CreateMasterSlaveHealthMonitorOption.
         :type expected_codes: str

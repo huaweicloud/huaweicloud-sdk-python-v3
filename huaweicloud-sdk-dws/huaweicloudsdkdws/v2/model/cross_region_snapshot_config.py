@@ -45,7 +45,7 @@ class CrossRegionSnapshotConfig:
 
         The model defined in huaweicloud sdk
 
-        :param cluster_id: 集群ID
+        :param cluster_id: **参数解释**： 集群ID。 **取值范围**： 36位UUID。
         :type cluster_id: str
         :param cluster_name: 集群名称
         :type cluster_name: str
@@ -101,7 +101,7 @@ class CrossRegionSnapshotConfig:
     def cluster_id(self):
         r"""Gets the cluster_id of this CrossRegionSnapshotConfig.
 
-        集群ID
+        **参数解释**： 集群ID。 **取值范围**： 36位UUID。
 
         :return: The cluster_id of this CrossRegionSnapshotConfig.
         :rtype: str
@@ -112,7 +112,7 @@ class CrossRegionSnapshotConfig:
     def cluster_id(self, cluster_id):
         r"""Sets the cluster_id of this CrossRegionSnapshotConfig.
 
-        集群ID
+        **参数解释**： 集群ID。 **取值范围**： 36位UUID。
 
         :param cluster_id: The cluster_id of this CrossRegionSnapshotConfig.
         :type cluster_id: str

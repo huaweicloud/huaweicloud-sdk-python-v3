@@ -31,9 +31,9 @@ class WorkloadSchemaReq:
 
         The model defined in huaweicloud sdk
 
-        :param schema_name: 模式空间名称
+        :param schema_name: **参数解释**： 模式空间名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type schema_name: str
-        :param perm_space: Schema空间阈值
+        :param perm_space: **参数解释**： 模式空间阈值。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type perm_space: str
         """
         
@@ -50,7 +50,7 @@ class WorkloadSchemaReq:
     def schema_name(self):
         r"""Gets the schema_name of this WorkloadSchemaReq.
 
-        模式空间名称
+        **参数解释**： 模式空间名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The schema_name of this WorkloadSchemaReq.
         :rtype: str
@@ -61,7 +61,7 @@ class WorkloadSchemaReq:
     def schema_name(self, schema_name):
         r"""Sets the schema_name of this WorkloadSchemaReq.
 
-        模式空间名称
+        **参数解释**： 模式空间名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param schema_name: The schema_name of this WorkloadSchemaReq.
         :type schema_name: str
@@ -72,7 +72,7 @@ class WorkloadSchemaReq:
     def perm_space(self):
         r"""Gets the perm_space of this WorkloadSchemaReq.
 
-        Schema空间阈值
+        **参数解释**： 模式空间阈值。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The perm_space of this WorkloadSchemaReq.
         :rtype: str
@@ -83,7 +83,7 @@ class WorkloadSchemaReq:
     def perm_space(self, perm_space):
         r"""Sets the perm_space of this WorkloadSchemaReq.
 
-        Schema空间阈值
+        **参数解释**： 模式空间阈值。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param perm_space: The perm_space of this WorkloadSchemaReq.
         :type perm_space: str

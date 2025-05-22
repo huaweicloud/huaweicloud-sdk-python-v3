@@ -31,9 +31,9 @@ class StatusStatistics:
 
         The model defined in huaweicloud sdk
 
-        :param active: 活跃资源
+        :param active: **参数解释**： 活跃资源。 **取值范围**： 不涉及。
         :type active: int
-        :param total: 总资源
+        :param total: **参数解释**： 总资源。 **取值范围**： 不涉及。
         :type total: int
         """
         
@@ -52,7 +52,7 @@ class StatusStatistics:
     def active(self):
         r"""Gets the active of this StatusStatistics.
 
-        活跃资源
+        **参数解释**： 活跃资源。 **取值范围**： 不涉及。
 
         :return: The active of this StatusStatistics.
         :rtype: int
@@ -63,7 +63,7 @@ class StatusStatistics:
     def active(self, active):
         r"""Sets the active of this StatusStatistics.
 
-        活跃资源
+        **参数解释**： 活跃资源。 **取值范围**： 不涉及。
 
         :param active: The active of this StatusStatistics.
         :type active: int
@@ -74,7 +74,7 @@ class StatusStatistics:
     def total(self):
         r"""Gets the total of this StatusStatistics.
 
-        总资源
+        **参数解释**： 总资源。 **取值范围**： 不涉及。
 
         :return: The total of this StatusStatistics.
         :rtype: int
@@ -85,7 +85,7 @@ class StatusStatistics:
     def total(self, total):
         r"""Sets the total of this StatusStatistics.
 
-        总资源
+        **参数解释**： 总资源。 **取值范围**： 不涉及。
 
         :param total: The total of this StatusStatistics.
         :type total: int

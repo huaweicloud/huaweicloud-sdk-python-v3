@@ -31,7 +31,7 @@ class DisasterRecoveryClusterVo:
 
         The model defined in huaweicloud sdk
 
-        :param id: 集群ID
+        :param id: **参数解释**： 集群ID。 **取值范围**： 36位UUID。
         :type id: str
         :param name: 集群名称
         :type name: str
@@ -52,7 +52,7 @@ class DisasterRecoveryClusterVo:
     def id(self):
         r"""Gets the id of this DisasterRecoveryClusterVo.
 
-        集群ID
+        **参数解释**： 集群ID。 **取值范围**： 36位UUID。
 
         :return: The id of this DisasterRecoveryClusterVo.
         :rtype: str
@@ -63,7 +63,7 @@ class DisasterRecoveryClusterVo:
     def id(self, id):
         r"""Sets the id of this DisasterRecoveryClusterVo.
 
-        集群ID
+        **参数解释**： 集群ID。 **取值范围**： 36位UUID。
 
         :param id: The id of this DisasterRecoveryClusterVo.
         :type id: str

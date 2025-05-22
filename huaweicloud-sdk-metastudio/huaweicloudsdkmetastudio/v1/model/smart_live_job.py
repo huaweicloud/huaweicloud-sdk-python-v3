@@ -109,7 +109,7 @@ class SmartLiveJob:
         :type live_job_log: :class:`huaweicloudsdkmetastudio.v1.LiveJobLog`
         :param relation_live_platform_info: 
         :type relation_live_platform_info: :class:`huaweicloudsdkmetastudio.v1.PlatformLiveDetailInfo`
-        :param used_resource_type: 使用的资源类型。 * PERIOD：包周期资源 * ONDEMAND：按需资源 * UNKNOW：未知资源类型。
+        :param used_resource_type: 使用的资源类型。 * PERIOD：包周期资源 * ONDEMAND：按需资源 * ONE_TIME：一次性资源 * UNKNOW：未知资源类型。
         :type used_resource_type: str
         """
         
@@ -597,7 +597,7 @@ class SmartLiveJob:
     def used_resource_type(self):
         r"""Gets the used_resource_type of this SmartLiveJob.
 
-        使用的资源类型。 * PERIOD：包周期资源 * ONDEMAND：按需资源 * UNKNOW：未知资源类型。
+        使用的资源类型。 * PERIOD：包周期资源 * ONDEMAND：按需资源 * ONE_TIME：一次性资源 * UNKNOW：未知资源类型。
 
         :return: The used_resource_type of this SmartLiveJob.
         :rtype: str
@@ -608,7 +608,7 @@ class SmartLiveJob:
     def used_resource_type(self, used_resource_type):
         r"""Sets the used_resource_type of this SmartLiveJob.
 
-        使用的资源类型。 * PERIOD：包周期资源 * ONDEMAND：按需资源 * UNKNOW：未知资源类型。
+        使用的资源类型。 * PERIOD：包周期资源 * ONDEMAND：按需资源 * ONE_TIME：一次性资源 * UNKNOW：未知资源类型。
 
         :param used_resource_type: The used_resource_type of this SmartLiveJob.
         :type used_resource_type: str

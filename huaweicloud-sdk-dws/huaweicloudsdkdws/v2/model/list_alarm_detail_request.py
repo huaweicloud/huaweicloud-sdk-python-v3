@@ -35,9 +35,9 @@ class ListAlarmDetailRequest:
 
         :param time_zone: 时区
         :type time_zone: str
-        :param offset: 当前页
+        :param offset: **参数解释**： 分页查询，偏移量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 0
         :type offset: str
-        :param limit: 总页数
+        :param limit: **参数解释**： 分页单页大小。 **约束限制**： 不涉及。 **取值范围**： 大于0。 **默认取值**： 不限制。
         :type limit: str
         """
         
@@ -80,7 +80,7 @@ class ListAlarmDetailRequest:
     def offset(self):
         r"""Gets the offset of this ListAlarmDetailRequest.
 
-        当前页
+        **参数解释**： 分页查询，偏移量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 0
 
         :return: The offset of this ListAlarmDetailRequest.
         :rtype: str
@@ -91,7 +91,7 @@ class ListAlarmDetailRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListAlarmDetailRequest.
 
-        当前页
+        **参数解释**： 分页查询，偏移量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 0
 
         :param offset: The offset of this ListAlarmDetailRequest.
         :type offset: str
@@ -102,7 +102,7 @@ class ListAlarmDetailRequest:
     def limit(self):
         r"""Gets the limit of this ListAlarmDetailRequest.
 
-        总页数
+        **参数解释**： 分页单页大小。 **约束限制**： 不涉及。 **取值范围**： 大于0。 **默认取值**： 不限制。
 
         :return: The limit of this ListAlarmDetailRequest.
         :rtype: str
@@ -113,7 +113,7 @@ class ListAlarmDetailRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListAlarmDetailRequest.
 
-        总页数
+        **参数解释**： 分页单页大小。 **约束限制**： 不涉及。 **取值范围**： 大于0。 **默认取值**： 不限制。
 
         :param limit: The limit of this ListAlarmDetailRequest.
         :type limit: str

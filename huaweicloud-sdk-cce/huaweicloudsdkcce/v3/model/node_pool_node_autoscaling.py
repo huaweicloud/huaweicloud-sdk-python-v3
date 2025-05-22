@@ -21,7 +21,9 @@ class NodePoolNodeAutoscaling:
         'min_node_count': 'int',
         'max_node_count': 'int',
         'scale_down_cooldown_time': 'int',
-        'priority': 'int'
+        'priority': 'int',
+        'scale_down_unneeded_time': 'int',
+        'scale_down_utilization_threshold': 'float'
     }
 
     attribute_map = {
@@ -29,10 +31,12 @@ class NodePoolNodeAutoscaling:
         'min_node_count': 'minNodeCount',
         'max_node_count': 'maxNodeCount',
         'scale_down_cooldown_time': 'scaleDownCooldownTime',
-        'priority': 'priority'
+        'priority': 'priority',
+        'scale_down_unneeded_time': 'scaleDownUnneededTime',
+        'scale_down_utilization_threshold': 'scaleDownUtilizationThreshold'
     }
 
-    def __init__(self, enable=None, min_node_count=None, max_node_count=None, scale_down_cooldown_time=None, priority=None):
+    def __init__(self, enable=None, min_node_count=None, max_node_count=None, scale_down_cooldown_time=None, priority=None, scale_down_unneeded_time=None, scale_down_utilization_threshold=None):
         r"""NodePoolNodeAutoscaling
 
         The model defined in huaweicloud sdk
@@ -47,6 +51,10 @@ class NodePoolNodeAutoscaling:
         :type scale_down_cooldown_time: int
         :param priority: 节点池权重，更高的权重在扩容时拥有更高的优先级
         :type priority: int
+        :param scale_down_unneeded_time: **参数解释**： 缩容非必要时间。单位为分钟，该参数用于指定在确定可以进行缩容操作之前，节点处于不需要状态的持续时间。 当节点在指定的这段时间内一直处于不需要的状态时，autoscaler 插件才会考虑对其进行缩容操作。 这样可以避免因资源的短暂波动而频繁触发缩容，增强系统的稳定性。如果未设置该参数，autoscaler 插件插件会使用默认的时间阈值。 **约束限制**： 不涉及 **取值范围**： 0-2147483647。 &gt; 注意：如果传值为-1，代表取值为空。  **默认取值**： 默认为空
+        :type scale_down_unneeded_time: int
+        :param scale_down_utilization_threshold: **参数解释**： 缩容利用率阈值。运行在该节点上的所有 Pod 的 CPU 或内存总和除以该节点相应的可分配资源， 当该比值低于此阈值时，该节点可被考虑进行缩容。例如，设置为 0.3 表示当资源利用率低于 30% 时， 会触发缩容操作的评估。如果未设置该参数，autoscaler 插件会使用默认的利用率阈值。 **约束限制**： 不涉及 **取值范围**： 0-1。 &gt; 注意：如果传值为-1，代表取值为空。  **默认取值**： 默认为空
+        :type scale_down_utilization_threshold: float
         """
         
         
@@ -56,6 +64,8 @@ class NodePoolNodeAutoscaling:
         self._max_node_count = None
         self._scale_down_cooldown_time = None
         self._priority = None
+        self._scale_down_unneeded_time = None
+        self._scale_down_utilization_threshold = None
         self.discriminator = None
 
         if enable is not None:
@@ -68,6 +78,10 @@ class NodePoolNodeAutoscaling:
             self.scale_down_cooldown_time = scale_down_cooldown_time
         if priority is not None:
             self.priority = priority
+        if scale_down_unneeded_time is not None:
+            self.scale_down_unneeded_time = scale_down_unneeded_time
+        if scale_down_utilization_threshold is not None:
+            self.scale_down_utilization_threshold = scale_down_utilization_threshold
 
     @property
     def enable(self):
@@ -178,6 +192,50 @@ class NodePoolNodeAutoscaling:
         :type priority: int
         """
         self._priority = priority
+
+    @property
+    def scale_down_unneeded_time(self):
+        r"""Gets the scale_down_unneeded_time of this NodePoolNodeAutoscaling.
+
+        **参数解释**： 缩容非必要时间。单位为分钟，该参数用于指定在确定可以进行缩容操作之前，节点处于不需要状态的持续时间。 当节点在指定的这段时间内一直处于不需要的状态时，autoscaler 插件才会考虑对其进行缩容操作。 这样可以避免因资源的短暂波动而频繁触发缩容，增强系统的稳定性。如果未设置该参数，autoscaler 插件插件会使用默认的时间阈值。 **约束限制**： 不涉及 **取值范围**： 0-2147483647。 > 注意：如果传值为-1，代表取值为空。  **默认取值**： 默认为空
+
+        :return: The scale_down_unneeded_time of this NodePoolNodeAutoscaling.
+        :rtype: int
+        """
+        return self._scale_down_unneeded_time
+
+    @scale_down_unneeded_time.setter
+    def scale_down_unneeded_time(self, scale_down_unneeded_time):
+        r"""Sets the scale_down_unneeded_time of this NodePoolNodeAutoscaling.
+
+        **参数解释**： 缩容非必要时间。单位为分钟，该参数用于指定在确定可以进行缩容操作之前，节点处于不需要状态的持续时间。 当节点在指定的这段时间内一直处于不需要的状态时，autoscaler 插件才会考虑对其进行缩容操作。 这样可以避免因资源的短暂波动而频繁触发缩容，增强系统的稳定性。如果未设置该参数，autoscaler 插件插件会使用默认的时间阈值。 **约束限制**： 不涉及 **取值范围**： 0-2147483647。 > 注意：如果传值为-1，代表取值为空。  **默认取值**： 默认为空
+
+        :param scale_down_unneeded_time: The scale_down_unneeded_time of this NodePoolNodeAutoscaling.
+        :type scale_down_unneeded_time: int
+        """
+        self._scale_down_unneeded_time = scale_down_unneeded_time
+
+    @property
+    def scale_down_utilization_threshold(self):
+        r"""Gets the scale_down_utilization_threshold of this NodePoolNodeAutoscaling.
+
+        **参数解释**： 缩容利用率阈值。运行在该节点上的所有 Pod 的 CPU 或内存总和除以该节点相应的可分配资源， 当该比值低于此阈值时，该节点可被考虑进行缩容。例如，设置为 0.3 表示当资源利用率低于 30% 时， 会触发缩容操作的评估。如果未设置该参数，autoscaler 插件会使用默认的利用率阈值。 **约束限制**： 不涉及 **取值范围**： 0-1。 > 注意：如果传值为-1，代表取值为空。  **默认取值**： 默认为空
+
+        :return: The scale_down_utilization_threshold of this NodePoolNodeAutoscaling.
+        :rtype: float
+        """
+        return self._scale_down_utilization_threshold
+
+    @scale_down_utilization_threshold.setter
+    def scale_down_utilization_threshold(self, scale_down_utilization_threshold):
+        r"""Sets the scale_down_utilization_threshold of this NodePoolNodeAutoscaling.
+
+        **参数解释**： 缩容利用率阈值。运行在该节点上的所有 Pod 的 CPU 或内存总和除以该节点相应的可分配资源， 当该比值低于此阈值时，该节点可被考虑进行缩容。例如，设置为 0.3 表示当资源利用率低于 30% 时， 会触发缩容操作的评估。如果未设置该参数，autoscaler 插件会使用默认的利用率阈值。 **约束限制**： 不涉及 **取值范围**： 0-1。 > 注意：如果传值为-1，代表取值为空。  **默认取值**： 默认为空
+
+        :param scale_down_utilization_threshold: The scale_down_utilization_threshold of this NodePoolNodeAutoscaling.
+        :type scale_down_utilization_threshold: float
+        """
+        self._scale_down_utilization_threshold = scale_down_utilization_threshold
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -32,7 +32,8 @@ class BatchUpdateMember:
         'instance_id': 'str',
         'port_id': 'str',
         'created_at': 'str',
-        'updated_at': 'str'
+        'updated_at': 'str',
+        'availability_zone': 'str'
     }
 
     attribute_map = {
@@ -51,10 +52,11 @@ class BatchUpdateMember:
         'instance_id': 'instance_id',
         'port_id': 'port_id',
         'created_at': 'created_at',
-        'updated_at': 'updated_at'
+        'updated_at': 'updated_at',
+        'availability_zone': 'availability_zone'
     }
 
-    def __init__(self, id=None, name=None, project_id=None, admin_state_up=None, subnet_cidr_id=None, protocol_port=None, weight=None, address=None, operating_status=None, reason=None, status=None, member_type=None, instance_id=None, port_id=None, created_at=None, updated_at=None):
+    def __init__(self, id=None, name=None, project_id=None, admin_state_up=None, subnet_cidr_id=None, protocol_port=None, weight=None, address=None, operating_status=None, reason=None, status=None, member_type=None, instance_id=None, port_id=None, created_at=None, updated_at=None, availability_zone=None):
         r"""BatchUpdateMember
 
         The model defined in huaweicloud sdk
@@ -91,6 +93,8 @@ class BatchUpdateMember:
         :type created_at: str
         :param updated_at: 更新时间。格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，UTC时区。  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt,hk_tm)
         :type updated_at: str
+        :param availability_zone: 后端服务器所在的可用区。
+        :type availability_zone: str
         """
         
         
@@ -111,6 +115,7 @@ class BatchUpdateMember:
         self._port_id = None
         self._created_at = None
         self._updated_at = None
+        self._availability_zone = None
         self.discriminator = None
 
         self.id = id
@@ -136,6 +141,8 @@ class BatchUpdateMember:
             self.created_at = created_at
         if updated_at is not None:
             self.updated_at = updated_at
+        if availability_zone is not None:
+            self.availability_zone = availability_zone
 
     @property
     def id(self):
@@ -484,6 +491,28 @@ class BatchUpdateMember:
         :type updated_at: str
         """
         self._updated_at = updated_at
+
+    @property
+    def availability_zone(self):
+        r"""Gets the availability_zone of this BatchUpdateMember.
+
+        后端服务器所在的可用区。
+
+        :return: The availability_zone of this BatchUpdateMember.
+        :rtype: str
+        """
+        return self._availability_zone
+
+    @availability_zone.setter
+    def availability_zone(self, availability_zone):
+        r"""Sets the availability_zone of this BatchUpdateMember.
+
+        后端服务器所在的可用区。
+
+        :param availability_zone: The availability_zone of this BatchUpdateMember.
+        :type availability_zone: str
+        """
+        self._availability_zone = availability_zone
 
     def to_dict(self):
         """Returns the model properties as a dict"""
