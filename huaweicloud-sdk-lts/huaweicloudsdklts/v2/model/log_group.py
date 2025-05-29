@@ -21,7 +21,8 @@ class LogGroup:
         'log_group_name': 'str',
         'log_group_id': 'str',
         'ttl_in_days': 'int',
-        'tag': 'dict(str, str)'
+        'tag': 'dict(str, str)',
+        'log_group_name_alias': 'str'
     }
 
     attribute_map = {
@@ -29,10 +30,11 @@ class LogGroup:
         'log_group_name': 'log_group_name',
         'log_group_id': 'log_group_id',
         'ttl_in_days': 'ttl_in_days',
-        'tag': 'tag'
+        'tag': 'tag',
+        'log_group_name_alias': 'log_group_name_alias'
     }
 
-    def __init__(self, creation_time=None, log_group_name=None, log_group_id=None, ttl_in_days=None, tag=None):
+    def __init__(self, creation_time=None, log_group_name=None, log_group_id=None, ttl_in_days=None, tag=None, log_group_name_alias=None):
         r"""LogGroup
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class LogGroup:
         :type ttl_in_days: int
         :param tag: 日志流所属标签
         :type tag: dict(str, str)
+        :param log_group_name_alias: 日志组别名
+        :type log_group_name_alias: str
         """
         
         
@@ -56,6 +60,7 @@ class LogGroup:
         self._log_group_id = None
         self._ttl_in_days = None
         self._tag = None
+        self._log_group_name_alias = None
         self.discriminator = None
 
         self.creation_time = creation_time
@@ -64,6 +69,8 @@ class LogGroup:
         self.ttl_in_days = ttl_in_days
         if tag is not None:
             self.tag = tag
+        if log_group_name_alias is not None:
+            self.log_group_name_alias = log_group_name_alias
 
     @property
     def creation_time(self):
@@ -174,6 +181,28 @@ class LogGroup:
         :type tag: dict(str, str)
         """
         self._tag = tag
+
+    @property
+    def log_group_name_alias(self):
+        r"""Gets the log_group_name_alias of this LogGroup.
+
+        日志组别名
+
+        :return: The log_group_name_alias of this LogGroup.
+        :rtype: str
+        """
+        return self._log_group_name_alias
+
+    @log_group_name_alias.setter
+    def log_group_name_alias(self, log_group_name_alias):
+        r"""Sets the log_group_name_alias of this LogGroup.
+
+        日志组别名
+
+        :param log_group_name_alias: The log_group_name_alias of this LogGroup.
+        :type log_group_name_alias: str
+        """
+        self._log_group_name_alias = log_group_name_alias
 
     def to_dict(self):
         """Returns the model properties as a dict"""

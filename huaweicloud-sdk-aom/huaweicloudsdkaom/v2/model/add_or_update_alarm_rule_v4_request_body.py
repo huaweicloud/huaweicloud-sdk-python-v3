@@ -24,7 +24,8 @@ class AddOrUpdateAlarmRuleV4RequestBody:
         'alarm_rule_type': 'str',
         'event_alarm_spec': 'EventAlarmSpec',
         'metric_alarm_spec': 'MetricAlarmSpec',
-        'prom_instance_id': 'str'
+        'prom_instance_id': 'str',
+        'alias': 'str'
     }
 
     attribute_map = {
@@ -35,10 +36,11 @@ class AddOrUpdateAlarmRuleV4RequestBody:
         'alarm_rule_type': 'alarm_rule_type',
         'event_alarm_spec': 'event_alarm_spec',
         'metric_alarm_spec': 'metric_alarm_spec',
-        'prom_instance_id': 'prom_instance_id'
+        'prom_instance_id': 'prom_instance_id',
+        'alias': 'alias'
     }
 
-    def __init__(self, alarm_notifications=None, alarm_rule_description=None, alarm_rule_enable=None, alarm_rule_name=None, alarm_rule_type=None, event_alarm_spec=None, metric_alarm_spec=None, prom_instance_id=None):
+    def __init__(self, alarm_notifications=None, alarm_rule_description=None, alarm_rule_enable=None, alarm_rule_name=None, alarm_rule_type=None, event_alarm_spec=None, metric_alarm_spec=None, prom_instance_id=None, alias=None):
         r"""AddOrUpdateAlarmRuleV4RequestBody
 
         The model defined in huaweicloud sdk
@@ -59,6 +61,8 @@ class AddOrUpdateAlarmRuleV4RequestBody:
         :type metric_alarm_spec: :class:`huaweicloudsdkaom.v2.MetricAlarmSpec`
         :param prom_instance_id: Prometheus实例id。
         :type prom_instance_id: str
+        :param alias: 告警规则别名。最多可输入256个字符，只能包含中文、字母、数字、特殊字符（_-【】），开头、结尾不允许输入中划线、下划线。
+        :type alias: str
         """
         
         
@@ -71,6 +75,7 @@ class AddOrUpdateAlarmRuleV4RequestBody:
         self._event_alarm_spec = None
         self._metric_alarm_spec = None
         self._prom_instance_id = None
+        self._alias = None
         self.discriminator = None
 
         if alarm_notifications is not None:
@@ -87,6 +92,8 @@ class AddOrUpdateAlarmRuleV4RequestBody:
             self.metric_alarm_spec = metric_alarm_spec
         if prom_instance_id is not None:
             self.prom_instance_id = prom_instance_id
+        if alias is not None:
+            self.alias = alias
 
     @property
     def alarm_notifications(self):
@@ -251,6 +258,28 @@ class AddOrUpdateAlarmRuleV4RequestBody:
         :type prom_instance_id: str
         """
         self._prom_instance_id = prom_instance_id
+
+    @property
+    def alias(self):
+        r"""Gets the alias of this AddOrUpdateAlarmRuleV4RequestBody.
+
+        告警规则别名。最多可输入256个字符，只能包含中文、字母、数字、特殊字符（_-【】），开头、结尾不允许输入中划线、下划线。
+
+        :return: The alias of this AddOrUpdateAlarmRuleV4RequestBody.
+        :rtype: str
+        """
+        return self._alias
+
+    @alias.setter
+    def alias(self, alias):
+        r"""Sets the alias of this AddOrUpdateAlarmRuleV4RequestBody.
+
+        告警规则别名。最多可输入256个字符，只能包含中文、字母、数字、特殊字符（_-【】），开头、结尾不允许输入中划线、下划线。
+
+        :param alias: The alias of this AddOrUpdateAlarmRuleV4RequestBody.
+        :type alias: str
+        """
+        self._alias = alias
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -63,7 +63,7 @@ class OptionalDiscountRatingResult:
         :type discount_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         :param measure_id: 价格度量单位标识。 1：元
         :type measure_id: int
-        :param discount_type: 折扣优惠类型。 合同商务折扣：605：华为云BE场景下的合同商务折扣606：分销商BE场景下的合同商务折扣 伙伴授予折扣：607：合作伙伴授予折扣-折扣率
+        :param discount_type: 折扣优惠类型。商务授权折扣：605(华为云BE场景下的合同商务折扣)、伙伴授予折扣：606(分销商BE场景下的合同商务折扣)、伙伴设置折扣：607(合作伙伴设置折扣-折扣率)
         :type discount_type: int
         :param discount_name: 折扣名称。
         :type discount_name: str
@@ -239,7 +239,7 @@ class OptionalDiscountRatingResult:
     def discount_type(self):
         r"""Gets the discount_type of this OptionalDiscountRatingResult.
 
-        折扣优惠类型。 合同商务折扣：605：华为云BE场景下的合同商务折扣606：分销商BE场景下的合同商务折扣 伙伴授予折扣：607：合作伙伴授予折扣-折扣率
+        折扣优惠类型。商务授权折扣：605(华为云BE场景下的合同商务折扣)、伙伴授予折扣：606(分销商BE场景下的合同商务折扣)、伙伴设置折扣：607(合作伙伴设置折扣-折扣率)
 
         :return: The discount_type of this OptionalDiscountRatingResult.
         :rtype: int
@@ -250,7 +250,7 @@ class OptionalDiscountRatingResult:
     def discount_type(self, discount_type):
         r"""Sets the discount_type of this OptionalDiscountRatingResult.
 
-        折扣优惠类型。 合同商务折扣：605：华为云BE场景下的合同商务折扣606：分销商BE场景下的合同商务折扣 伙伴授予折扣：607：合作伙伴授予折扣-折扣率
+        折扣优惠类型。商务授权折扣：605(华为云BE场景下的合同商务折扣)、伙伴授予折扣：606(分销商BE场景下的合同商务折扣)、伙伴设置折扣：607(合作伙伴设置折扣-折扣率)
 
         :param discount_type: The discount_type of this OptionalDiscountRatingResult.
         :type discount_type: int

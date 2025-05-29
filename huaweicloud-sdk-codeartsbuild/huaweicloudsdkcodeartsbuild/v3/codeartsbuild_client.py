@@ -837,6 +837,79 @@ class CodeArtsBuildClient(Client):
 
         return http_info
 
+    def list_build_info_record_by_job_id(self, request):
+        r"""获取任务构建记录列表v1
+
+        获取任务构建记录列表v1
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListBuildInfoRecordByJobId
+        :type request: :class:`huaweicloudsdkcodeartsbuild.v3.ListBuildInfoRecordByJobIdRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsbuild.v3.ListBuildInfoRecordByJobIdResponse`
+        """
+        http_info = self._list_build_info_record_by_job_id_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_build_info_record_by_job_id_invoker(self, request):
+        http_info = self._list_build_info_record_by_job_id_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_build_info_record_by_job_id_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/record/{job_id}/list",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListBuildInfoRecordByJobIdResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'page_index' in local_var_params:
+            query_params.append(('page_index', local_var_params['page_index']))
+        if 'page_size' in local_var_params:
+            query_params.append(('page_size', local_var_params['page_size']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_job_config(self, request):
         r"""获取构建任务详情
 
@@ -942,6 +1015,227 @@ class CodeArtsBuildClient(Client):
             path_params['job_id'] = local_var_params['job_id']
 
         query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_official_template(self, request):
+        r"""查询官方模版
+
+        查询官方模版
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListOfficialTemplate
+        :type request: :class:`huaweicloudsdkcodeartsbuild.v3.ListOfficialTemplateRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsbuild.v3.ListOfficialTemplateResponse`
+        """
+        http_info = self._list_official_template_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_official_template_invoker(self, request):
+        http_info = self._list_official_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_official_template_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/template/officialtemplates",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListOfficialTemplateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'page' in local_var_params:
+            query_params.append(('page', local_var_params['page']))
+        if 'page_size' in local_var_params:
+            query_params.append(('page_size', local_var_params['page_size']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_project_jobs(self, request):
+        r"""查询项目任务列表
+
+        查询项目任务列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListProjectJobs
+        :type request: :class:`huaweicloudsdkcodeartsbuild.v3.ListProjectJobsRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsbuild.v3.ListProjectJobsResponse`
+        """
+        http_info = self._list_project_jobs_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_project_jobs_invoker(self, request):
+        http_info = self._list_project_jobs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_project_jobs_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/job/{project_id}/list",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProjectJobsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+        if 'page_index' in local_var_params:
+            query_params.append(('page_index', local_var_params['page_index']))
+        if 'page_size' in local_var_params:
+            query_params.append(('page_size', local_var_params['page_size']))
+        if 'search' in local_var_params:
+            query_params.append(('search', local_var_params['search']))
+        if 'sort_field' in local_var_params:
+            query_params.append(('sort_field', local_var_params['sort_field']))
+        if 'sort_order' in local_var_params:
+            query_params.append(('sort_order', local_var_params['sort_order']))
+        if 'creator_id' in local_var_params:
+            query_params.append(('creator_id', local_var_params['creator_id']))
+        if 'build_status' in local_var_params:
+            query_params.append(('build_status', local_var_params['build_status']))
+        if 'by_group' in local_var_params:
+            query_params.append(('by_group', local_var_params['by_group']))
+        if 'group_path_id' in local_var_params:
+            query_params.append(('group_path_id', local_var_params['group_path_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_recycling_job(self, request):
+        r"""查看回收站中删除的构建任务列表
+
+        查看回收站中删除的构建任务列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListRecyclingJob
+        :type request: :class:`huaweicloudsdkcodeartsbuild.v3.ListRecyclingJobRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsbuild.v3.ListRecyclingJobResponse`
+        """
+        http_info = self._list_recycling_job_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_recycling_job_invoker(self, request):
+        http_info = self._list_recycling_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_recycling_job_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/job/recycling-jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRecyclingJobResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'page_size' in local_var_params:
+            query_params.append(('page_size', local_var_params['page_size']))
+        if 'page_no' in local_var_params:
+            query_params.append(('page_no', local_var_params['page_no']))
+        if 'search' in local_var_params:
+            query_params.append(('search', local_var_params['search']))
 
         header_params = {}
 
@@ -1103,6 +1397,199 @@ class CodeArtsBuildClient(Client):
 
         return http_info
 
+    def show_build_params_list(self, request):
+        r"""编辑页获取参数类型的接口
+
+        编辑页获取参数类型的接口
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowBuildParamsList
+        :type request: :class:`huaweicloudsdkcodeartsbuild.v3.ShowBuildParamsListRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsbuild.v3.ShowBuildParamsListResponse`
+        """
+        http_info = self._show_build_params_list_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_build_params_list_invoker(self, request):
+        http_info = self._show_build_params_list_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_build_params_list_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/job/build-params",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowBuildParamsListResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_build_record(self, request):
+        r"""查询指定构建记录详情
+
+        查询指定构建记录详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowBuildRecord
+        :type request: :class:`huaweicloudsdkcodeartsbuild.v3.ShowBuildRecordRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsbuild.v3.ShowBuildRecordResponse`
+        """
+        http_info = self._show_build_record_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_build_record_invoker(self, request):
+        http_info = self._show_build_record_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_build_record_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/record/{record_id}/info",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowBuildRecordResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'record_id' in local_var_params:
+            path_params['record_id'] = local_var_params['record_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_build_record_build_script(self, request):
+        r"""获取构建记录的构建脚本
+
+        获取构建记录的构建脚本
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowBuildRecordBuildScript
+        :type request: :class:`huaweicloudsdkcodeartsbuild.v3.ShowBuildRecordBuildScriptRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsbuild.v3.ShowBuildRecordBuildScriptResponse`
+        """
+        http_info = self._show_build_record_build_script_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_build_record_build_script_invoker(self, request):
+        http_info = self._show_build_record_build_script_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_build_record_build_script_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/record/{record_id}/build-script",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowBuildRecordBuildScriptResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'record_id' in local_var_params:
+            path_params['record_id'] = local_var_params['record_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_build_record_full_stages(self, request):
         r"""获取任务各阶段信息
 
@@ -1237,6 +1724,69 @@ class CodeArtsBuildClient(Client):
 
         return http_info
 
+    def show_image_template_list(self, request):
+        r"""获取镜像模板列表
+
+        获取镜像模板列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowImageTemplateList
+        :type request: :class:`huaweicloudsdkcodeartsbuild.v3.ShowImageTemplateListRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsbuild.v3.ShowImageTemplateListResponse`
+        """
+        http_info = self._show_image_template_list_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_image_template_list_invoker(self, request):
+        http_info = self._show_image_template_list_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_image_template_list_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/image/templates",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowImageTemplateListResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_job_build_success_ratio(self, request):
         r"""查询构建成功率
 
@@ -1308,6 +1858,278 @@ class CodeArtsBuildClient(Client):
 
         return http_info
 
+    def show_job_build_time(self, request):
+        r"""洞察构建时长
+
+        洞察构建时长
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowJobBuildTime
+        :type request: :class:`huaweicloudsdkcodeartsbuild.v3.ShowJobBuildTimeRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsbuild.v3.ShowJobBuildTimeResponse`
+        """
+        http_info = self._show_job_build_time_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_job_build_time_invoker(self, request):
+        http_info = self._show_job_build_time_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_job_build_time_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/report/time",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowJobBuildTimeResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'job_id' in local_var_params:
+            query_params.append(('job_id', local_var_params['job_id']))
+        if 'repository_name' in local_var_params:
+            query_params.append(('repository_name', local_var_params['repository_name']))
+        if 'branch' in local_var_params:
+            query_params.append(('branch', local_var_params['branch']))
+        if 'interval' in local_var_params:
+            query_params.append(('interval', local_var_params['interval']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_job_config(self, request):
+        r"""获取构建任务详情
+
+        获取构建任务详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowJobConfig
+        :type request: :class:`huaweicloudsdkcodeartsbuild.v3.ShowJobConfigRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsbuild.v3.ShowJobConfigResponse`
+        """
+        http_info = self._show_job_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_job_config_invoker(self, request):
+        http_info = self._show_job_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_job_config_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/job/{job_id}/config",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowJobConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+        if 'get_all_params' in local_var_params:
+            query_params.append(('get_all_params', local_var_params['get_all_params']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_job_config_diff(self, request):
+        r"""获取构建任务配置的对比差异
+
+        获取构建任务配置的对比差异
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowJobConfigDiff
+        :type request: :class:`huaweicloudsdkcodeartsbuild.v3.ShowJobConfigDiffRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsbuild.v3.ShowJobConfigDiffResponse`
+        """
+        http_info = self._show_job_config_diff_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_job_config_diff_invoker(self, request):
+        http_info = self._show_job_config_diff_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_job_config_diff_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/job/{job_id}/diff",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowJobConfigDiffResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+        if 'revisedl_no' in local_var_params:
+            query_params.append(('revisedl_no', local_var_params['revisedl_no']))
+        if 'original_no' in local_var_params:
+            query_params.append(('original_no', local_var_params['original_no']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_job_info(self, request):
+        r"""查看构建任务构建信息
+
+        查看构建任务构建信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowJobInfo
+        :type request: :class:`huaweicloudsdkcodeartsbuild.v3.ShowJobInfoRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsbuild.v3.ShowJobInfoResponse`
+        """
+        http_info = self._show_job_info_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_job_info_invoker(self, request):
+        http_info = self._show_job_info_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_job_info_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/job/{job_id}/info",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowJobInfoResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_job_list_by_project_id(self, request):
         r"""查看项目下用户的构建任务列表
 
@@ -1350,6 +2172,71 @@ class CodeArtsBuildClient(Client):
             query_params.append(('page_index', local_var_params['page_index']))
         if 'page_size' in local_var_params:
             query_params.append(('page_size', local_var_params['page_size']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_job_role_permission(self, request):
+        r"""获取构建任务的角色权限矩阵信息
+
+        获取构建任务的角色权限矩阵信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowJobRolePermission
+        :type request: :class:`huaweicloudsdkcodeartsbuild.v3.ShowJobRolePermissionRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsbuild.v3.ShowJobRolePermissionResponse`
+        """
+        http_info = self._show_job_role_permission_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_job_role_permission_invoker(self, request):
+        http_info = self._show_job_role_permission_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_job_role_permission_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/job/permission/role",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowJobRolePermissionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'job_id' in local_var_params:
+            query_params.append(('job_id', local_var_params['job_id']))
 
         header_params = {}
 
@@ -1484,6 +2371,69 @@ class CodeArtsBuildClient(Client):
             query_params.append(('start_time', local_var_params['start_time']))
         if 'end_time' in local_var_params:
             query_params.append(('end_time', local_var_params['end_time']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_job_system_parameters(self, request):
+        r"""查看系统预定义参数
+
+        查看系统预定义参数
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowJobSystemParameters
+        :type request: :class:`huaweicloudsdkcodeartsbuild.v3.ShowJobSystemParametersRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsbuild.v3.ShowJobSystemParametersResponse`
+        """
+        http_info = self._show_job_system_parameters_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_job_system_parameters_invoker(self, request):
+        http_info = self._show_job_system_parameters_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_job_system_parameters_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/job/system-parameters",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowJobSystemParametersResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
 
         header_params = {}
 
@@ -1762,6 +2712,71 @@ class CodeArtsBuildClient(Client):
             path_params['build_no'] = local_var_params['build_no']
 
         query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_project_permission(self, request):
+        r"""获取用户权限
+
+        获取用户权限
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowProjectPermission
+        :type request: :class:`huaweicloudsdkcodeartsbuild.v3.ShowProjectPermissionRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsbuild.v3.ShowProjectPermissionResponse`
+        """
+        http_info = self._show_project_permission_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_project_permission_invoker(self, request):
+        http_info = self._show_project_permission_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_project_permission_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/domain/user-permission",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowProjectPermissionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'project_id' in local_var_params:
+            query_params.append(('project_id', local_var_params['project_id']))
 
         header_params = {}
 

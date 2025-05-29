@@ -18,6 +18,7 @@ class PostPaidServerNic:
 
     openapi_types = {
         'subnet_id': 'str',
+        'port_id': 'str',
         'ip_address': 'str',
         'ipv6_enable': 'bool',
         'ipv6_bandwidth': 'PostPaidServerIpv6Bandwidth',
@@ -26,19 +27,22 @@ class PostPaidServerNic:
 
     attribute_map = {
         'subnet_id': 'subnet_id',
+        'port_id': 'port_id',
         'ip_address': 'ip_address',
         'ipv6_enable': 'ipv6_enable',
         'ipv6_bandwidth': 'ipv6_bandwidth',
         'allowed_address_pairs': 'allowed_address_pairs'
     }
 
-    def __init__(self, subnet_id=None, ip_address=None, ipv6_enable=None, ipv6_bandwidth=None, allowed_address_pairs=None):
+    def __init__(self, subnet_id=None, port_id=None, ip_address=None, ipv6_enable=None, ipv6_bandwidth=None, allowed_address_pairs=None):
         r"""PostPaidServerNic
 
         The model defined in huaweicloud sdk
 
         :param subnet_id: 待创建云服务器所在的子网信息，需要指定vpcid对应VPC下的子网ID，UUID格式。  可以通过VPC服务 [查询子网](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product&#x3D;VPC&amp;api&#x3D;ListSubnets) 接口查询，该接口支持通过创建云服务器填写的vpcid进行过滤查询。
         :type subnet_id: str
+        :param port_id: 网卡ID，UUID格式。 当该字段不为空时，表示挂载指定的网卡。port_id和subnet_id不能同时为空。 网卡ID可以从虚拟私有云的“查询端口列表”章节查询到。 约束： 网卡状态必须为DOWN。 网卡的vpcid必须和传入的vpcid一致。 当port_id和subnet_id同时存在的时候，优先使用port_id。当选择port_id不为空时，代表此时使用的是弹性网卡，此时security_groups和ip_address等参数不生效。
+        :type port_id: str
         :param ip_address: 待创建云服务器网卡的IP地址，IPv4格式。  约束：  - 不填或空字符串，默认在子网（subnet）中自动分配一个未使用的IP作网卡的IP地址。 - 若指定IP地址，该IP地址必须在子网（subnet）对应的网段内，且未被使用。
         :type ip_address: str
         :param ipv6_enable: 是否支持ipv6。  取值为true时，标识此网卡支持ipv6。
@@ -52,13 +56,17 @@ class PostPaidServerNic:
         
 
         self._subnet_id = None
+        self._port_id = None
         self._ip_address = None
         self._ipv6_enable = None
         self._ipv6_bandwidth = None
         self._allowed_address_pairs = None
         self.discriminator = None
 
-        self.subnet_id = subnet_id
+        if subnet_id is not None:
+            self.subnet_id = subnet_id
+        if port_id is not None:
+            self.port_id = port_id
         if ip_address is not None:
             self.ip_address = ip_address
         if ipv6_enable is not None:
@@ -89,6 +97,28 @@ class PostPaidServerNic:
         :type subnet_id: str
         """
         self._subnet_id = subnet_id
+
+    @property
+    def port_id(self):
+        r"""Gets the port_id of this PostPaidServerNic.
+
+        网卡ID，UUID格式。 当该字段不为空时，表示挂载指定的网卡。port_id和subnet_id不能同时为空。 网卡ID可以从虚拟私有云的“查询端口列表”章节查询到。 约束： 网卡状态必须为DOWN。 网卡的vpcid必须和传入的vpcid一致。 当port_id和subnet_id同时存在的时候，优先使用port_id。当选择port_id不为空时，代表此时使用的是弹性网卡，此时security_groups和ip_address等参数不生效。
+
+        :return: The port_id of this PostPaidServerNic.
+        :rtype: str
+        """
+        return self._port_id
+
+    @port_id.setter
+    def port_id(self, port_id):
+        r"""Sets the port_id of this PostPaidServerNic.
+
+        网卡ID，UUID格式。 当该字段不为空时，表示挂载指定的网卡。port_id和subnet_id不能同时为空。 网卡ID可以从虚拟私有云的“查询端口列表”章节查询到。 约束： 网卡状态必须为DOWN。 网卡的vpcid必须和传入的vpcid一致。 当port_id和subnet_id同时存在的时候，优先使用port_id。当选择port_id不为空时，代表此时使用的是弹性网卡，此时security_groups和ip_address等参数不生效。
+
+        :param port_id: The port_id of this PostPaidServerNic.
+        :type port_id: str
+        """
+        self._port_id = port_id
 
     @property
     def ip_address(self):

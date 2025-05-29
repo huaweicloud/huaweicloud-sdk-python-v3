@@ -23,11 +23,11 @@ class EdgeSecAsyncClient(Client):
     @classmethod
     def new_builder(cls, clazz=None):
         if not clazz:
-            client_builder = ClientBuilder(cls)
+            client_builder = ClientBuilder(cls, "GlobalCredentials,BasicCredentials")
         else:
             if clazz.__name__ != "EdgeSecAsyncClient":
                 raise TypeError("client type error, support client type is EdgeSecAsyncClient")
-            client_builder = ClientBuilder(clazz)
+            client_builder = ClientBuilder(clazz, "GlobalCredentials,BasicCredentials")
 
         
 

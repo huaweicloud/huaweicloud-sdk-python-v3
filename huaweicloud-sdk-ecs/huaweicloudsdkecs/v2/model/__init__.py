@@ -303,6 +303,7 @@ from huaweicloudsdkecs.v2.model.resize_server_request_body import ResizeServerRe
 from huaweicloudsdkecs.v2.model.resize_server_response import ResizeServerResponse
 from huaweicloudsdkecs.v2.model.resource_tag import ResourceTag
 from huaweicloudsdkecs.v2.model.security_group import SecurityGroup
+from huaweicloudsdkecs.v2.model.serial_console_options import SerialConsoleOptions
 from huaweicloudsdkecs.v2.model.server_address import ServerAddress
 from huaweicloudsdkecs.v2.model.server_attachable_quantity import ServerAttachableQuantity
 from huaweicloudsdkecs.v2.model.server_block_device import ServerBlockDevice

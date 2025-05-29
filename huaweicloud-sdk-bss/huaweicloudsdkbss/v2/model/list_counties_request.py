@@ -35,7 +35,7 @@ class ListCountiesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param x_language: 语言。zh_CN：中文en_us：英文缺省为zh_CN。
+        :param x_language: 语言，字段预留,目前仅支持中文。默认zh_cn，枚举：zh_cn：中文 en_us：英文
         :type x_language: str
         :param city_code: 城市的编码。
         :type city_code: str
@@ -65,7 +65,7 @@ class ListCountiesRequest:
     def x_language(self):
         r"""Gets the x_language of this ListCountiesRequest.
 
-        语言。zh_CN：中文en_us：英文缺省为zh_CN。
+        语言，字段预留,目前仅支持中文。默认zh_cn，枚举：zh_cn：中文 en_us：英文
 
         :return: The x_language of this ListCountiesRequest.
         :rtype: str
@@ -76,7 +76,7 @@ class ListCountiesRequest:
     def x_language(self, x_language):
         r"""Sets the x_language of this ListCountiesRequest.
 
-        语言。zh_CN：中文en_us：英文缺省为zh_CN。
+        语言，字段预留,目前仅支持中文。默认zh_cn，枚举：zh_cn：中文 en_us：英文
 
         :param x_language: The x_language of this ListCountiesRequest.
         :type x_language: str

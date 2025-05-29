@@ -57,7 +57,7 @@ class OptionalDiscountRatingResultV2:
         :type official_website_amount: str
         :param discount_amount: |参数名称：可选折扣优惠额，如商务折扣、伙伴折扣、促销折扣和折扣券选用时的优惠额。单位为| |参数约束及描述：可选折扣优惠额，如商务折扣、伙伴折扣、促销折扣和折扣券选用时的优惠额。单位为|
         :type discount_amount: str
-        :param discount_type: |参数名称：折扣优惠类型。合同商务折扣：605：华为云BE场景下的合同商务折扣606：分销商BE场景下的合同商务折扣伙伴授予折扣：607：合作伙伴授予折扣-折扣率| |参数的约束及描述：折扣优惠类型。合同商务折扣：605：华为云BE场景下的合同商务折扣606：分销商BE场景下的合同商务折扣伙伴授予折扣：607：合作伙伴授予折扣-折扣率|
+        :param discount_type: |参数名称：折扣优惠类型| |参数约束及描述：折扣优惠类型。商务授权折扣：605(华为云BE场景下的合同商务折扣)、伙伴授予折扣：606(分销商BE场景下的合同商务折扣)、伙伴设置折扣：607(合作伙伴设置折扣-折扣率)|
         :type discount_type: int
         :param discount_name: |参数名称：折扣名称| |参数约束及描述：折扣名称|
         :type discount_name: str
@@ -203,7 +203,7 @@ class OptionalDiscountRatingResultV2:
     def discount_type(self):
         r"""Gets the discount_type of this OptionalDiscountRatingResultV2.
 
-        |参数名称：折扣优惠类型。合同商务折扣：605：华为云BE场景下的合同商务折扣606：分销商BE场景下的合同商务折扣伙伴授予折扣：607：合作伙伴授予折扣-折扣率| |参数的约束及描述：折扣优惠类型。合同商务折扣：605：华为云BE场景下的合同商务折扣606：分销商BE场景下的合同商务折扣伙伴授予折扣：607：合作伙伴授予折扣-折扣率|
+        |参数名称：折扣优惠类型| |参数约束及描述：折扣优惠类型。商务授权折扣：605(华为云BE场景下的合同商务折扣)、伙伴授予折扣：606(分销商BE场景下的合同商务折扣)、伙伴设置折扣：607(合作伙伴设置折扣-折扣率)|
 
         :return: The discount_type of this OptionalDiscountRatingResultV2.
         :rtype: int
@@ -214,7 +214,7 @@ class OptionalDiscountRatingResultV2:
     def discount_type(self, discount_type):
         r"""Sets the discount_type of this OptionalDiscountRatingResultV2.
 
-        |参数名称：折扣优惠类型。合同商务折扣：605：华为云BE场景下的合同商务折扣606：分销商BE场景下的合同商务折扣伙伴授予折扣：607：合作伙伴授予折扣-折扣率| |参数的约束及描述：折扣优惠类型。合同商务折扣：605：华为云BE场景下的合同商务折扣606：分销商BE场景下的合同商务折扣伙伴授予折扣：607：合作伙伴授予折扣-折扣率|
+        |参数名称：折扣优惠类型| |参数约束及描述：折扣优惠类型。商务授权折扣：605(华为云BE场景下的合同商务折扣)、伙伴授予折扣：606(分销商BE场景下的合同商务折扣)、伙伴设置折扣：607(合作伙伴设置折扣-折扣率)|
 
         :param discount_type: The discount_type of this OptionalDiscountRatingResultV2.
         :type discount_type: int

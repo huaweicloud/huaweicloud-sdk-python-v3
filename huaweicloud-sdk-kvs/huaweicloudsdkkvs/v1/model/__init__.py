@@ -3,6 +3,10 @@
 from __future__ import absolute_import
 
 # import models into model package
+from huaweicloudsdkkvs.v1.model.batch_get_kv_of_table import BatchGetKvOfTable
+from huaweicloudsdkkvs.v1.model.batch_get_kv_request import BatchGetKvRequest
+from huaweicloudsdkkvs.v1.model.batch_get_kv_request_body import BatchGetKvRequestBody
+from huaweicloudsdkkvs.v1.model.batch_get_kv_response import BatchGetKvResponse
 from huaweicloudsdkkvs.v1.model.batch_write_kv_request import BatchWriteKvRequest
 from huaweicloudsdkkvs.v1.model.batch_write_kv_request_body import BatchWriteKvRequestBody
 from huaweicloudsdkkvs.v1.model.batch_write_kv_response import BatchWriteKvResponse
@@ -24,11 +28,15 @@ from huaweicloudsdkkvs.v1.model.delete_table_response import DeleteTableResponse
 from huaweicloudsdkkvs.v1.model.describe_table_request import DescribeTableRequest
 from huaweicloudsdkkvs.v1.model.describe_table_request_body import DescribeTableRequestBody
 from huaweicloudsdkkvs.v1.model.describe_table_response import DescribeTableResponse
+from huaweicloudsdkkvs.v1.model.exception_opers_of_table import ExceptionOpersOfTable
 from huaweicloudsdkkvs.v1.model.expression import Expression
+from huaweicloudsdkkvs.v1.model.fail import Fail
 from huaweicloudsdkkvs.v1.model.field import Field
+from huaweicloudsdkkvs.v1.model.get_kv import GetKv
 from huaweicloudsdkkvs.v1.model.get_kv_request import GetKvRequest
 from huaweicloudsdkkvs.v1.model.get_kv_request_body import GetKvRequestBody
 from huaweicloudsdkkvs.v1.model.get_kv_response import GetKvResponse
+from huaweicloudsdkkvs.v1.model.get_oper import GetOper
 from huaweicloudsdkkvs.v1.model.global_secondary_index import GlobalSecondaryIndex
 from huaweicloudsdkkvs.v1.model.global_secondary_index_info import GlobalSecondaryIndexInfo
 from huaweicloudsdkkvs.v1.model.kv_blob import KvBlob
@@ -49,6 +57,7 @@ from huaweicloudsdkkvs.v1.model.put_kv_request import PutKvRequest
 from huaweicloudsdkkvs.v1.model.put_kv_request_body import PutKvRequestBody
 from huaweicloudsdkkvs.v1.model.put_kv_response import PutKvResponse
 from huaweicloudsdkkvs.v1.model.returned_kv_item import ReturnedKvItem
+from huaweicloudsdkkvs.v1.model.returned_kv_items_of_table import ReturnedKvItemsOfTable
 from huaweicloudsdkkvs.v1.model.returned_segment_item import ReturnedSegmentItem
 from huaweicloudsdkkvs.v1.model.run_time_info import RunTimeInfo
 from huaweicloudsdkkvs.v1.model.scan_kv_request import ScanKvRequest

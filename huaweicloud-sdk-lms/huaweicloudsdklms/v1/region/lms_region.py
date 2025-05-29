@@ -7,10 +7,13 @@ class LmsRegion:
     _PROVIDER = RegionProviderChain.get_default_region_provider_chain("LMS")
 
     CN_SOUTHWEST_2 = Region("cn-southwest-2",
-                        "https://dws-lms.cn-southwest-2.myhuaweicloud.com")
+                        "https://dwr-lms.cn-southwest-2.myhuaweicloud.com")
+    CN_NORTH_11 = Region("cn-north-11",
+                        "https://dwr-lms.cn-north-11.myhuaweicloud.com")
 
     static_fields = {
         "cn-southwest-2": CN_SOUTHWEST_2,
+        "cn-north-11": CN_NORTH_11,
     }
 
     @classmethod

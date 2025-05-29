@@ -18,15 +18,17 @@ class UpdateLogStreamParams:
 
     openapi_types = {
         'ttl_in_days': 'int',
-        'tags': 'list[TagsBody]'
+        'tags': 'list[TagsBody]',
+        'whether_log_storage': 'bool'
     }
 
     attribute_map = {
         'ttl_in_days': 'ttl_in_days',
-        'tags': 'tags'
+        'tags': 'tags',
+        'whether_log_storage': 'whether_log_storage'
     }
 
-    def __init__(self, ttl_in_days=None, tags=None):
+    def __init__(self, ttl_in_days=None, tags=None, whether_log_storage=None):
         r"""UpdateLogStreamParams
 
         The model defined in huaweicloud sdk
@@ -35,17 +37,22 @@ class UpdateLogStreamParams:
         :type ttl_in_days: int
         :param tags: 标签字段信息
         :type tags: list[:class:`huaweicloudsdklts.v2.TagsBody`]
+        :param whether_log_storage: 日志是否存储
+        :type whether_log_storage: bool
         """
         
         
 
         self._ttl_in_days = None
         self._tags = None
+        self._whether_log_storage = None
         self.discriminator = None
 
         self.ttl_in_days = ttl_in_days
         if tags is not None:
             self.tags = tags
+        if whether_log_storage is not None:
+            self.whether_log_storage = whether_log_storage
 
     @property
     def ttl_in_days(self):
@@ -90,6 +97,28 @@ class UpdateLogStreamParams:
         :type tags: list[:class:`huaweicloudsdklts.v2.TagsBody`]
         """
         self._tags = tags
+
+    @property
+    def whether_log_storage(self):
+        r"""Gets the whether_log_storage of this UpdateLogStreamParams.
+
+        日志是否存储
+
+        :return: The whether_log_storage of this UpdateLogStreamParams.
+        :rtype: bool
+        """
+        return self._whether_log_storage
+
+    @whether_log_storage.setter
+    def whether_log_storage(self, whether_log_storage):
+        r"""Sets the whether_log_storage of this UpdateLogStreamParams.
+
+        日志是否存储
+
+        :param whether_log_storage: The whether_log_storage of this UpdateLogStreamParams.
+        :type whether_log_storage: bool
+        """
+        self._whether_log_storage = whether_log_storage
 
     def to_dict(self):
         """Returns the model properties as a dict"""

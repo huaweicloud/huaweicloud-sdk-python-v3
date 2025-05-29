@@ -22,6 +22,7 @@
 
 import json
 import os
+import time
 import warnings
 
 import requests
@@ -45,34 +46,62 @@ _NO_PROJECT_ID_ERR_MSG = '''no project id found, please select one of the follow
   3. Replace the ak/sk of the IAM account with the ak/sk of the domain account'''
 
 
-class Metadata(object):
-    TIME_OUT = 3
-    URL = "http://169.254.169.254/openstack/latest/securitykey"
+class MetadataAccessor(object):
+    METADATA_ENDPOINT = "http://169.254.169.254"
+    GET_TOKEN_PATH = "/meta-data/latest/api/token"
+    GET_SECURITY_KEY_PATH = "/openstack/latest/securitykey"
+    X_METADATA_TOKEN = "X-Metadata-Token"
+    X_METADATA_TOKEN_TTL_SECONDS = "X-Metadata-Token-Ttl-Seconds"
+    CONFIG_AGENCY_ERROR = "Please configure Cloud Service Agency first"
+    DEFAULT_TOKEN_TTL_SECONDS = 6 * 60 * 60  # 6h
+    DEFAULT_CHECK_TOKEN_DURATION_SECONDS = 24 * 60 * 60  # 24h
+    DEFAULT_TIME_OUT = (3, 3)
 
-    @classmethod
-    def get_credential_from_metadata(cls):
-        resp = None
-        try:
-            resp = requests.get(cls.URL, timeout=cls.TIME_OUT)
-            resp.raise_for_status()
-        except ConnectionError as conn_err:
-            for each in conn_err.args:
-                if isinstance(each.reason, SSLError):
-                    raise exceptions.SslHandShakeException(str(each.reason))
-                if isinstance(each.reason, NewConnectionError):
-                    raise exceptions.ConnectionException(str(each.reason))
-        except HTTPError as http_err:
-            sdk_error = exceptions.SdkError("", http_err.response.status_code, http_err.response.text)
-            raise exceptions.ClientRequestException(http_err.response.status_code, sdk_error)
+    def __init__(self):
+        self._last_call_seconds = None
+        self._token = None
 
-        if not resp or not resp.content:
-            raise exceptions.ApiValueError("Failed to get credential from metadata, metadata is empty")
+    def _get_token(self):
+        url = self.METADATA_ENDPOINT + self.GET_TOKEN_PATH
+        headers = {self.X_METADATA_TOKEN_TTL_SECONDS: str(self.DEFAULT_TOKEN_TTL_SECONDS)}
+        return requests.put(url=url, headers=headers, timeout=self.DEFAULT_TIME_OUT)
 
-        try:
-            credential = json.loads(resp.content).get("credential")
-            return credential
-        except JSON_DECODE_ERROR as decode_err:
-            raise exceptions.ApiValueError("Failed to get credential from metadata: {}".format(decode_err))
+    def _try_update_token(self, raise_on_failure):
+        self._last_call_seconds = time.time()
+        resp = self._get_token()
+        if resp.status_code == 200:
+            self._token = resp.text
+        elif resp.status_code in (404, 405):
+            if raise_on_failure:
+                sdk_error = exceptions.SdkError("", resp.status_code, resp.text)
+                raise exceptions.ClientRequestException(resp.status_code, sdk_error)
+            else:
+                self._token = None
+        else:
+            sdk_error = exceptions.SdkError("", resp.status_code, resp.text)
+            raise exceptions.ClientRequestException(resp.status_code, sdk_error)
+
+    def get_credentials(self):
+        if not self._token and (not self._last_call_seconds or
+                                time.time() - self._last_call_seconds > self.DEFAULT_CHECK_TOKEN_DURATION_SECONDS):
+            self._try_update_token(False)
+
+        url = self.METADATA_ENDPOINT + self.GET_SECURITY_KEY_PATH
+        headers = {}
+        if self._token:
+            headers[self.X_METADATA_TOKEN] = self._token
+
+        resp = requests.get(url=url, headers=headers, timeout=self.DEFAULT_TIME_OUT)
+        if resp.status_code == 401 and self.CONFIG_AGENCY_ERROR not in resp.text:
+            self._try_update_token(True)
+            headers[self.X_METADATA_TOKEN] = self._token
+            resp = requests.get(url=url, headers=headers, timeout=self.DEFAULT_TIME_OUT)
+
+        if resp.status_code >= 400:
+            sdk_error = exceptions.SdkError("", resp.status_code, resp.text)
+            raise exceptions.ClientRequestException(resp.status_code, sdk_error)
+
+        return json.loads(resp.text).get("credential")
 
 
 class Iam(object):

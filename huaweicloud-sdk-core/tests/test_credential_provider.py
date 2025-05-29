@@ -24,6 +24,8 @@ import stat
 import pytest
 
 from huaweicloudsdkcore.auth import provider
+from huaweicloudsdkcore.auth.provider import MetadataGlobalCredentialProvider, MetadataCredentialProvider, \
+    MetadataBasicCredentialProvider
 from huaweicloudsdkcore.utils import filepath_utils
 from huaweicloudsdkcore.auth.credentials import BasicCredentials, GlobalCredentials
 from huaweicloudsdkcore.exceptions.exceptions import ApiValueError
@@ -63,6 +65,15 @@ def _get_credentials_file_dir():
     if home_path:
         return home_path
     return os.path.abspath(os.curdir)
+
+
+class TestMetadataCredentialProvider(object):
+    def test_metadata_credential_provider(self):
+        basic = MetadataCredentialProvider.get_basic_credential_metadata_provider()
+        assert isinstance(basic, MetadataBasicCredentialProvider)
+
+        glob = MetadataCredentialProvider.get_global_credential_metadata_provider()
+        assert isinstance(glob, MetadataGlobalCredentialProvider)
 
 
 class TestEnvCredentialProvider:

@@ -31,7 +31,7 @@ class ListCostsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param x_language: 语言。中文：zh_CN英文：en_US。缺省为zh_CN。
+        :param x_language: 语言，字段预留。默认zh_cn，枚举：zh_cn：中文 en_us：英文
         :type x_language: str
         :param body: Body of the ListCostsRequest
         :type body: :class:`huaweicloudsdkbssintl.v2.ListCostsReq`
@@ -52,7 +52,7 @@ class ListCostsRequest:
     def x_language(self):
         r"""Gets the x_language of this ListCostsRequest.
 
-        语言。中文：zh_CN英文：en_US。缺省为zh_CN。
+        语言，字段预留。默认zh_cn，枚举：zh_cn：中文 en_us：英文
 
         :return: The x_language of this ListCostsRequest.
         :rtype: str
@@ -63,7 +63,7 @@ class ListCostsRequest:
     def x_language(self, x_language):
         r"""Sets the x_language of this ListCostsRequest.
 
-        语言。中文：zh_CN英文：en_US。缺省为zh_CN。
+        语言，字段预留。默认zh_cn，枚举：zh_cn：中文 en_us：英文
 
         :param x_language: The x_language of this ListCostsRequest.
         :type x_language: str

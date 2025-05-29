@@ -20196,6 +20196,105 @@ class DataArtsStudioAsyncClient(Client):
 
         return http_info
 
+    def show_factory_full_text_async(self, request):
+        r"""全局搜索
+
+        全局搜索
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowFactoryFullText
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowFactoryFullTextRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowFactoryFullTextResponse`
+        """
+        http_info = self._show_factory_full_text_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_factory_full_text_async_invoker(self, request):
+        http_info = self._show_factory_full_text_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_factory_full_text_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/factory/search",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowFactoryFullTextResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'workspace_id' in local_var_params:
+            query_params.append(('workspace_id', local_var_params['workspace_id']))
+        if 'search_text' in local_var_params:
+            query_params.append(('search_text', local_var_params['search_text']))
+        if 'job_type' in local_var_params:
+            query_params.append(('job_type', local_var_params['job_type']))
+        if 'script_type' in local_var_params:
+            query_params.append(('script_type', local_var_params['script_type']))
+        if 'node_type' in local_var_params:
+            query_params.append(('node_type', local_var_params['node_type']))
+        if 'new_save_or_commit' in local_var_params:
+            query_params.append(('new_save_or_commit', local_var_params['new_save_or_commit']))
+        if 'owners' in local_var_params:
+            query_params.append(('owners', local_var_params['owners']))
+        if 'doc_types' in local_var_params:
+            query_params.append(('doc_types', local_var_params['doc_types']))
+        if 'begin_time' in local_var_params:
+            query_params.append(('begin_time', local_var_params['begin_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'if_query_parameters' in local_var_params:
+            query_params.append(('if_query_parameters', local_var_params['if_query_parameters']))
+        if 'match_type' in local_var_params:
+            query_params.append(('match_type', local_var_params['match_type']))
+        if 'schedule_state' in local_var_params:
+            query_params.append(('schedule_state', local_var_params['schedule_state']))
+        if 'is_exact' in local_var_params:
+            query_params.append(('is_exact', local_var_params['is_exact']))
+        if 'exact_field' in local_var_params:
+            query_params.append(('exact_field', local_var_params['exact_field']))
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_factory_package_detail_async(self, request):
         r"""查询指定发布包详情
 

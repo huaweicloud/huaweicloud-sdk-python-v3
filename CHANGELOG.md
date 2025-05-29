@@ -1,3 +1,277 @@
+# 3.1.150 2025-05-29
+
+### HuaweiCloud SDK Core
+
+- _Features_
+  - Adapt IMDSv2
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK AOM
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **AddOrUpdateMetricOrEventAlarmRule**
+    - changes of request param
+      - `+ alias`
+
+### HuaweiCloud SDK BMS
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ReinstallBaremetalServerOs**
+    - changes of request param
+      - `+ os-reinstall.metadata.__system__encrypted`
+      - `+ os-reinstall.metadata.__system__cmkid`
+  - **ChangeBaremetalServerOs**
+    - changes of request param
+      - `+ os-change.metadata.__system__encrypted`
+      - `+ os-change.metadata.__system__cmkid`
+  - **ListBareMetalServersDetail**
+    - changes of response param
+      - `+ servers.in_recycle_bin`
+      - `- servers.in_recycle_in`
+  - **CreateBareMetalServers**
+    - changes of request param
+      - `+ server.root_volume.metadata`
+      - `+ server.data_volumes.metadata`
+
+### HuaweiCloud SDK BSS
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the API `SetResourcesRenewConfig`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK BSSINTL
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the APIs `ShowCustomerMonthlySum`, `SetResourcesRenewConfig`
+- _Bug Fix_
+  - None
+- _Change_
+  - Deprecate the API `ListMonthlyExpenditures`
+
+### HuaweiCloud SDK CCE
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowClusterConfig**
+    - changes of response param
+      - `+ log_configs.type`
+  - **UpdateClusterLogConfig**
+    - changes of request param
+      - `+ log_configs.type`
+    - changes of response param
+      - `+ log_configs.type`
+
+### HuaweiCloud SDK CFW
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the API `UpdateObjectConfigDesc`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK Cloudtest
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the APIs `ListTaskResults`, `ListTaskResultsDetail`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK COC
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the following APIs:
+    - `ShowPatchBaseline`
+    - `ListCceCompliant`
+    - `ShowAccount`
+    - `ListPersonnel`
+    - `SyncAddPersonnel`
+    - `ShowAlarm`
+    - `ListAlarmHandleHistories`
+    - `ShowSloDetail`
+    - `ListInterruptRecords`
+    - `ShowSlaOrder`
+    - `ShowSlaCustomizedTemplate`
+
+### HuaweiCloud SDK CodeArtsBuild
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the following APIs:
+    - `ListRecyclingJob`
+    - `ListOfficialTemplate`
+    - `ShowJobSystemParameters`
+    - `ShowBuildRecord`
+    - `ShowJobInfo`
+    - `ShowBuildParamsList`
+    - `ShowBuildRecordBuildScript`
+    - `ShowJobConfigDiff`
+    - `ShowJobRolePermission`
+    - `ListProjectJobs`
+    - `ShowJobBuildTime`
+    - `ShowProjectPermission`
+    - `ListBuildInfoRecordByJobId`
+    - `ShowJobConfig`
+    - `ShowImageTemplateList`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the API `ShowFactoryFullText`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DDS
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the API `DeleteMongosNode`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DLI
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListSqlJobs**
+    - changes of request param
+      - `+ job-id`
+
+### HuaweiCloud SDK ECS
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **BatchAddServerNics**
+    - changes of request param
+      - `+ nics.port_id`
+  - **CreateServers**
+    - changes of request param
+      - `+ server.serial_console_options`
+      - `+ server.nics.port_id`
+  - **CreatePostPaidServers**
+    - changes of request param
+      - `+ server.serial_console_options`
+      - `+ server.nics.port_id`
+
+### HuaweiCloud SDK GaussDB
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the API `SwitchGaussMySqlProxyEip`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK KVS
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the API `BatchGetKv`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK LTS
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListLogGroups**
+    - changes of response param
+      - `+ log_groups.log_group_name_alias`
+  - **UpdateLogStream**
+    - changes of request param
+      - `+ whether_log_storage`
+  - **ListTransfers**
+    - changes of request param
+      - `- offset`
+      - `- limit`
+
+### HuaweiCloud SDK SCM
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the following APIs:
+    - `ListCertificatesByTag`
+    - `BatchCreateOrDeleteTags`
+    - `ListTagsByCertificate`
+    - `CreateCertificateTag`
+    - `ListAllTags`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
 # 3.1.149 2025-05-22
 
 ### HuaweiCloud SDK APM

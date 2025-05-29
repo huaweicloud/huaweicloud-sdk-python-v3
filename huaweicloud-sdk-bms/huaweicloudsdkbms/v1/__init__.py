@@ -44,6 +44,7 @@ from huaweicloudsdkbms.v1.model.create_scheduler_hints import CreateSchedulerHin
 from huaweicloudsdkbms.v1.model.create_server_nic_allowed_address_pairs import CreateServerNicAllowedAddressPairs
 from huaweicloudsdkbms.v1.model.create_servers import CreateServers
 from huaweicloudsdkbms.v1.model.data_volumes import DataVolumes
+from huaweicloudsdkbms.v1.model.data_volumes_metadata import DataVolumesMetadata
 from huaweicloudsdkbms.v1.model.delete_baremetal_body import DeleteBaremetalBody
 from huaweicloudsdkbms.v1.model.delete_baremetal_server_request import DeleteBaremetalServerRequest
 from huaweicloudsdkbms.v1.model.delete_baremetal_server_response import DeleteBaremetalServerResponse
@@ -105,6 +106,7 @@ from huaweicloudsdkbms.v1.model.reset_password_body import ResetPasswordBody
 from huaweicloudsdkbms.v1.model.reset_pwd_one_click_request import ResetPwdOneClickRequest
 from huaweicloudsdkbms.v1.model.reset_pwd_one_click_response import ResetPwdOneClickResponse
 from huaweicloudsdkbms.v1.model.root_volume import RootVolume
+from huaweicloudsdkbms.v1.model.root_volume_metadata import RootVolumeMetadata
 from huaweicloudsdkbms.v1.model.scheduler_hints import SchedulerHints
 from huaweicloudsdkbms.v1.model.security_group_info import SecurityGroupInfo
 from huaweicloudsdkbms.v1.model.security_groups import SecurityGroups

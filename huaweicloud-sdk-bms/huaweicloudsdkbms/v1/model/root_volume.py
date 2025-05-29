@@ -20,17 +20,19 @@ class RootVolume:
         'volumetype': 'str',
         'size': 'int',
         'cluster_id': 'str',
-        'cluster_type': 'str'
+        'cluster_type': 'str',
+        'metadata': 'RootVolumeMetadata'
     }
 
     attribute_map = {
         'volumetype': 'volumetype',
         'size': 'size',
         'cluster_id': 'cluster_id',
-        'cluster_type': 'cluster_type'
+        'cluster_type': 'cluster_type',
+        'metadata': 'metadata'
     }
 
-    def __init__(self, volumetype=None, size=None, cluster_id=None, cluster_type=None):
+    def __init__(self, volumetype=None, size=None, cluster_id=None, cluster_type=None, metadata=None):
         r"""RootVolume
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class RootVolume:
         :type cluster_id: str
         :param cluster_type: 裸金属服务器系统盘对应的磁盘存储类型。磁盘存储类型枚举值：DSS（专属分布式存储）。 说明：使用专属分布式存储时需要该字段。存储池类型可以从管理控制台或者参考《专属分布式存储API参考》的“获取专属分布式存储池详情列表”章节获取。
         :type cluster_type: str
+        :param metadata: 
+        :type metadata: :class:`huaweicloudsdkbms.v1.RootVolumeMetadata`
         """
         
         
@@ -51,6 +55,7 @@ class RootVolume:
         self._size = None
         self._cluster_id = None
         self._cluster_type = None
+        self._metadata = None
         self.discriminator = None
 
         self.volumetype = volumetype
@@ -59,6 +64,8 @@ class RootVolume:
             self.cluster_id = cluster_id
         if cluster_type is not None:
             self.cluster_type = cluster_type
+        if metadata is not None:
+            self.metadata = metadata
 
     @property
     def volumetype(self):
@@ -147,6 +154,24 @@ class RootVolume:
         :type cluster_type: str
         """
         self._cluster_type = cluster_type
+
+    @property
+    def metadata(self):
+        r"""Gets the metadata of this RootVolume.
+
+        :return: The metadata of this RootVolume.
+        :rtype: :class:`huaweicloudsdkbms.v1.RootVolumeMetadata`
+        """
+        return self._metadata
+
+    @metadata.setter
+    def metadata(self, metadata):
+        r"""Sets the metadata of this RootVolume.
+
+        :param metadata: The metadata of this RootVolume.
+        :type metadata: :class:`huaweicloudsdkbms.v1.RootVolumeMetadata`
+        """
+        self._metadata = metadata
 
     def to_dict(self):
         """Returns the model properties as a dict"""

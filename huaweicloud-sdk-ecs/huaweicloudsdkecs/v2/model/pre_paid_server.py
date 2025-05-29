@@ -40,7 +40,8 @@ class PrePaidServer:
         'tags': 'list[str]',
         'server_tags': 'list[PrePaidServerTag]',
         'description': 'str',
-        'cpu_options': 'CpuOptions'
+        'cpu_options': 'CpuOptions',
+        'serial_console_options': 'SerialConsoleOptions'
     }
 
     attribute_map = {
@@ -67,10 +68,11 @@ class PrePaidServer:
         'tags': 'tags',
         'server_tags': 'server_tags',
         'description': 'description',
-        'cpu_options': 'cpu_options'
+        'cpu_options': 'cpu_options',
+        'serial_console_options': 'serial_console_options'
     }
 
-    def __init__(self, auto_terminate_time=None, image_ref=None, flavor_ref=None, name=None, user_data=None, admin_pass=None, key_name=None, vpcid=None, nics=None, publicip=None, count=None, is_auto_rename=None, root_volume=None, data_volumes=None, security_groups=None, availability_zone=None, batch_create_in_multi_az=None, extendparam=None, metadata=None, osscheduler_hints=None, tags=None, server_tags=None, description=None, cpu_options=None):
+    def __init__(self, auto_terminate_time=None, image_ref=None, flavor_ref=None, name=None, user_data=None, admin_pass=None, key_name=None, vpcid=None, nics=None, publicip=None, count=None, is_auto_rename=None, root_volume=None, data_volumes=None, security_groups=None, availability_zone=None, batch_create_in_multi_az=None, extendparam=None, metadata=None, osscheduler_hints=None, tags=None, server_tags=None, description=None, cpu_options=None, serial_console_options=None):
         r"""PrePaidServer
 
         The model defined in huaweicloud sdk
@@ -123,6 +125,8 @@ class PrePaidServer:
         :type description: str
         :param cpu_options: 
         :type cpu_options: :class:`huaweicloudsdkecs.v2.CpuOptions`
+        :param serial_console_options: 
+        :type serial_console_options: :class:`huaweicloudsdkecs.v2.SerialConsoleOptions`
         """
         
         
@@ -151,6 +155,7 @@ class PrePaidServer:
         self._server_tags = None
         self._description = None
         self._cpu_options = None
+        self._serial_console_options = None
         self.discriminator = None
 
         if auto_terminate_time is not None:
@@ -195,6 +200,8 @@ class PrePaidServer:
             self.description = description
         if cpu_options is not None:
             self.cpu_options = cpu_options
+        if serial_console_options is not None:
+            self.serial_console_options = serial_console_options
 
     @property
     def auto_terminate_time(self):
@@ -703,6 +710,24 @@ class PrePaidServer:
         :type cpu_options: :class:`huaweicloudsdkecs.v2.CpuOptions`
         """
         self._cpu_options = cpu_options
+
+    @property
+    def serial_console_options(self):
+        r"""Gets the serial_console_options of this PrePaidServer.
+
+        :return: The serial_console_options of this PrePaidServer.
+        :rtype: :class:`huaweicloudsdkecs.v2.SerialConsoleOptions`
+        """
+        return self._serial_console_options
+
+    @serial_console_options.setter
+    def serial_console_options(self, serial_console_options):
+        r"""Sets the serial_console_options of this PrePaidServer.
+
+        :param serial_console_options: The serial_console_options of this PrePaidServer.
+        :type serial_console_options: :class:`huaweicloudsdkecs.v2.SerialConsoleOptions`
+        """
+        self._serial_console_options = serial_console_options
 
     def to_dict(self):
         """Returns the model properties as a dict"""

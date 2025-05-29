@@ -100,6 +100,73 @@ class ScmAsyncClient(Client):
 
         return http_info
 
+    def batch_create_or_delete_tags_async(self, request):
+        r"""批量创建或删除标签
+
+        批量创建或删除标签。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchCreateOrDeleteTags
+        :type request: :class:`huaweicloudsdkscm.v3.BatchCreateOrDeleteTagsRequest`
+        :rtype: :class:`huaweicloudsdkscm.v3.BatchCreateOrDeleteTagsResponse`
+        """
+        http_info = self._batch_create_or_delete_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_create_or_delete_tags_async_invoker(self, request):
+        http_info = self._batch_create_or_delete_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_create_or_delete_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/scm/{resource_id}/tags/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreateOrDeleteTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_id' in local_var_params:
+            path_params['resource_id'] = local_var_params['resource_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def batch_push_certificate_async(self, request):
         r"""批量推送证书
 
@@ -211,6 +278,73 @@ class ScmAsyncClient(Client):
         form_params = {}
 
         body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_certificate_tag_async(self, request):
+        r"""创建标签
+
+        创建标签。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateCertificateTag
+        :type request: :class:`huaweicloudsdkscm.v3.CreateCertificateTagRequest`
+        :rtype: :class:`huaweicloudsdkscm.v3.CreateCertificateTagResponse`
+        """
+        http_info = self._create_certificate_tag_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_certificate_tag_async_invoker(self, request):
+        http_info = self._create_certificate_tag_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_certificate_tag_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/scm/{resource_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateCertificateTagResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_id' in local_var_params:
+            path_params['resource_id'] = local_var_params['resource_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -494,6 +628,69 @@ class ScmAsyncClient(Client):
 
         return http_info
 
+    def list_all_tags_async(self, request):
+        r"""查询所有标签列表
+
+        查询所有标签列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListAllTags
+        :type request: :class:`huaweicloudsdkscm.v3.ListAllTagsRequest`
+        :rtype: :class:`huaweicloudsdkscm.v3.ListAllTagsResponse`
+        """
+        http_info = self._list_all_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_all_tags_async_invoker(self, request):
+        http_info = self._list_all_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_all_tags_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/scm/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAllTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_certificates_async(self, request):
         r"""查询证书列表
 
@@ -575,6 +772,73 @@ class ScmAsyncClient(Client):
 
         return http_info
 
+    def list_certificates_by_tag_async(self, request):
+        r"""根据标签查询证书列表
+
+        根据标签查询证书列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListCertificatesByTag
+        :type request: :class:`huaweicloudsdkscm.v3.ListCertificatesByTagRequest`
+        :rtype: :class:`huaweicloudsdkscm.v3.ListCertificatesByTagResponse`
+        """
+        http_info = self._list_certificates_by_tag_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_certificates_by_tag_async_invoker(self, request):
+        http_info = self._list_certificates_by_tag_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_certificates_by_tag_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/scm/{resource_instances}/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCertificatesByTagResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_instances' in local_var_params:
+            path_params['resource_instances'] = local_var_params['resource_instances']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_deployed_resources_async(self, request):
         r"""查询已部署资源
 
@@ -619,6 +883,71 @@ class ScmAsyncClient(Client):
         body = None
         if 'body' in local_var_params:
             body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_tags_by_certificate_async(self, request):
+        r"""根据证书ID查询标签列表
+
+        根据证书ID查询标签列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListTagsByCertificate
+        :type request: :class:`huaweicloudsdkscm.v3.ListTagsByCertificateRequest`
+        :rtype: :class:`huaweicloudsdkscm.v3.ListTagsByCertificateResponse`
+        """
+        http_info = self._list_tags_by_certificate_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_tags_by_certificate_async_invoker(self, request):
+        http_info = self._list_tags_by_certificate_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_tags_by_certificate_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/scm/{resource_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTagsByCertificateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_id' in local_var_params:
+            path_params['resource_id'] = local_var_params['resource_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 

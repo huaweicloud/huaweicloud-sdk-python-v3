@@ -22,6 +22,7 @@ class ListSqlJobsRequest:
         'end': 'int',
         'engine_type': 'str',
         'job_status': 'str',
+        'job_id': 'str',
         'job_type': 'str',
         'order': 'str',
         'owner': 'str',
@@ -39,6 +40,7 @@ class ListSqlJobsRequest:
         'end': 'end',
         'engine_type': 'engine-type',
         'job_status': 'job-status',
+        'job_id': 'job-id',
         'job_type': 'job-type',
         'order': 'order',
         'owner': 'owner',
@@ -50,7 +52,7 @@ class ListSqlJobsRequest:
         'tags': 'tags'
     }
 
-    def __init__(self, current_page=None, db_name=None, end=None, engine_type=None, job_status=None, job_type=None, order=None, owner=None, page_size=None, queue_name=None, sql_pattern=None, start=None, table_name=None, tags=None):
+    def __init__(self, current_page=None, db_name=None, end=None, engine_type=None, job_status=None, job_id=None, job_type=None, order=None, owner=None, page_size=None, queue_name=None, sql_pattern=None, start=None, table_name=None, tags=None):
         r"""ListSqlJobsRequest
 
         The model defined in huaweicloud sdk
@@ -65,6 +67,8 @@ class ListSqlJobsRequest:
         :type engine_type: str
         :param job_status: 
         :type job_status: str
+        :param job_id: 
+        :type job_id: str
         :param job_type: 指定查询的作业类型，包含DDL、DCL、IMPORT、EXPORT、QUERY、INSERT，若要查询所有类型的作业，则传入ALL。
         :type job_type: str
         :param order: 指定作业排序方式，默认为start_time_desc（作业提交时间降序），支持duration_desc（作业运行时长降序）、duration_asc（作业运行时长升序）、start_time_desc（作业提交时间降序）、start_time_asc（作业提交时间升序）四种排序方式。
@@ -92,6 +96,7 @@ class ListSqlJobsRequest:
         self._end = None
         self._engine_type = None
         self._job_status = None
+        self._job_id = None
         self._job_type = None
         self._order = None
         self._owner = None
@@ -113,6 +118,8 @@ class ListSqlJobsRequest:
             self.engine_type = engine_type
         if job_status is not None:
             self.job_status = job_status
+        if job_id is not None:
+            self.job_id = job_id
         if job_type is not None:
             self.job_type = job_type
         if order is not None:
@@ -229,6 +236,24 @@ class ListSqlJobsRequest:
         :type job_status: str
         """
         self._job_status = job_status
+
+    @property
+    def job_id(self):
+        r"""Gets the job_id of this ListSqlJobsRequest.
+
+        :return: The job_id of this ListSqlJobsRequest.
+        :rtype: str
+        """
+        return self._job_id
+
+    @job_id.setter
+    def job_id(self, job_id):
+        r"""Sets the job_id of this ListSqlJobsRequest.
+
+        :param job_id: The job_id of this ListSqlJobsRequest.
+        :type job_id: str
+        """
+        self._job_id = job_id
 
     @property
     def job_type(self):

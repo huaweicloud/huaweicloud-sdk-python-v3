@@ -29,7 +29,7 @@ class ServerListDetails:
         'vm_state': 'str',
         'availability_zone': 'str',
         'fault': 'Fault',
-        'in_recycle_in': 'bool'
+        'in_recycle_bin': 'bool'
     }
 
     attribute_map = {
@@ -45,10 +45,10 @@ class ServerListDetails:
         'vm_state': 'vm_state',
         'availability_zone': 'availability_zone',
         'fault': 'fault',
-        'in_recycle_in': 'in_recycle_in'
+        'in_recycle_bin': 'in_recycle_bin'
     }
 
-    def __init__(self, id=None, user_id=None, name=None, created=None, updated=None, tenant_id=None, flavor=None, status=None, task_state=None, vm_state=None, availability_zone=None, fault=None, in_recycle_in=None):
+    def __init__(self, id=None, user_id=None, name=None, created=None, updated=None, tenant_id=None, flavor=None, status=None, task_state=None, vm_state=None, availability_zone=None, fault=None, in_recycle_bin=None):
         r"""ServerListDetails
 
         The model defined in huaweicloud sdk
@@ -77,8 +77,8 @@ class ServerListDetails:
         :type availability_zone: str
         :param fault: 
         :type fault: :class:`huaweicloudsdkbms.v1.Fault`
-        :param in_recycle_in: 裸机是否在回收站中
-        :type in_recycle_in: bool
+        :param in_recycle_bin: 裸机是否在回收站中
+        :type in_recycle_bin: bool
         """
         
         
@@ -95,7 +95,7 @@ class ServerListDetails:
         self._vm_state = None
         self._availability_zone = None
         self._fault = None
-        self._in_recycle_in = None
+        self._in_recycle_bin = None
         self.discriminator = None
 
         self.id = id
@@ -118,8 +118,8 @@ class ServerListDetails:
             self.availability_zone = availability_zone
         if fault is not None:
             self.fault = fault
-        if in_recycle_in is not None:
-            self.in_recycle_in = in_recycle_in
+        if in_recycle_bin is not None:
+            self.in_recycle_bin = in_recycle_bin
 
     @property
     def id(self):
@@ -378,26 +378,26 @@ class ServerListDetails:
         self._fault = fault
 
     @property
-    def in_recycle_in(self):
-        r"""Gets the in_recycle_in of this ServerListDetails.
+    def in_recycle_bin(self):
+        r"""Gets the in_recycle_bin of this ServerListDetails.
 
         裸机是否在回收站中
 
-        :return: The in_recycle_in of this ServerListDetails.
+        :return: The in_recycle_bin of this ServerListDetails.
         :rtype: bool
         """
-        return self._in_recycle_in
+        return self._in_recycle_bin
 
-    @in_recycle_in.setter
-    def in_recycle_in(self, in_recycle_in):
-        r"""Sets the in_recycle_in of this ServerListDetails.
+    @in_recycle_bin.setter
+    def in_recycle_bin(self, in_recycle_bin):
+        r"""Sets the in_recycle_bin of this ServerListDetails.
 
         裸机是否在回收站中
 
-        :param in_recycle_in: The in_recycle_in of this ServerListDetails.
-        :type in_recycle_in: bool
+        :param in_recycle_bin: The in_recycle_bin of this ServerListDetails.
+        :type in_recycle_bin: bool
         """
-        self._in_recycle_in = in_recycle_in
+        self._in_recycle_bin = in_recycle_bin
 
     def to_dict(self):
         """Returns the model properties as a dict"""

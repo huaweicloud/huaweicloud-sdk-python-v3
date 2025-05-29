@@ -46,6 +46,14 @@ class KvsAsyncClientInterface(ABC):
         pass
 
     @abstractmethod
+    def batch_get_kv_async(self, request):
+        pass
+
+    @abstractmethod
+    def batch_get_kv_async_invoker(self, request):
+        pass
+
+    @abstractmethod
     def batch_write_kv_async(self, request):
         pass
 

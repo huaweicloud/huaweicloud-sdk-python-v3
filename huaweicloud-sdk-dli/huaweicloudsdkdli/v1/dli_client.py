@@ -4758,6 +4758,8 @@ class DliClient(Client):
             query_params.append(('engine-type', local_var_params['engine_type']))
         if 'job_status' in local_var_params:
             query_params.append(('job-status', local_var_params['job_status']))
+        if 'job_id' in local_var_params:
+            query_params.append(('job-id', local_var_params['job_id']))
         if 'job_type' in local_var_params:
             query_params.append(('job-type', local_var_params['job_type']))
         if 'order' in local_var_params:

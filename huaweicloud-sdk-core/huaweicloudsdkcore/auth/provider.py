@@ -167,20 +167,57 @@ class ProfileCredentialProvider(CredentialProvider):
 class MetadataCredentialProvider(CredentialProvider):
     @staticmethod
     def get_basic_credential_metadata_provider():
-        return MetadataCredentialProvider(_CredentialType.BASIC)
+        return MetadataBasicCredentialProvider()
 
     @staticmethod
     def get_global_credential_metadata_provider():
-        return MetadataCredentialProvider(_CredentialType.GLOBAL)
+        return MetadataGlobalCredentialProvider()
 
     def get_credentials(self):
         if self._credential_type.startswith(_CredentialType.BASIC):
-            credentials = BasicCredentials()
+            credentials = MetadataBasicCredentialProvider().get_credentials()
         elif self._credential_type.startswith(_CredentialType.GLOBAL):
-            credentials = GlobalCredentials()
+            credentials = MetadataGlobalCredentialProvider().get_credentials()
         else:
             raise ApiTypeError("unsupported credential type: " + self._credential_type)
 
+        return credentials
+
+
+class MetadataBasicCredentialProvider(MetadataCredentialProvider):
+    def __init__(self, credential_type=_CredentialType.BASIC):
+        super(MetadataBasicCredentialProvider, self).__init__(credential_type)
+        self._project_id = None
+
+    @property
+    def project_id(self):
+        return self._project_id
+
+    @project_id.setter
+    def project_id(self, value):
+        self._project_id = value
+
+    def get_credentials(self):
+        credentials = BasicCredentials(project_id=self._project_id)
+        credentials.update_security_token_from_metadata()
+        return credentials
+
+
+class MetadataGlobalCredentialProvider(MetadataCredentialProvider):
+    def __init__(self, credential_type=_CredentialType.GLOBAL):
+        super(MetadataGlobalCredentialProvider, self).__init__(credential_type)
+        self._domain_id = None
+
+    @property
+    def domain_id(self):
+        return self._domain_id
+
+    @domain_id.setter
+    def domain_id(self, value):
+        self._domain_id = value
+
+    def get_credentials(self):
+        credentials = GlobalCredentials(domain_id=self._domain_id)
         credentials.update_security_token_from_metadata()
         return credentials
 

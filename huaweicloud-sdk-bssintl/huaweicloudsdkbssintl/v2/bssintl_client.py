@@ -34,7 +34,7 @@ class BssintlClient(Client):
         return client_builder
 
     def list_conversions(self, request):
-        r"""查询使用量单位进制
+        r"""查询度量单位进制
 
         功能描述：伙伴在伙伴销售平台上查询使用量单位的进制转换信息，用于不同度量单位之间的转换。
         
@@ -1489,10 +1489,12 @@ class BssintlClient(Client):
         :type request: :class:`huaweicloudsdkbssintl.v2.ListMonthlyExpendituresRequest`
         :rtype: :class:`huaweicloudsdkbssintl.v2.ListMonthlyExpendituresResponse`
         """
+        warnings.warn("Method 'list_monthly_expenditures' of BssintlClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_monthly_expenditures_http_info(request)
         return self._call_api(**http_info)
 
     def list_monthly_expenditures_invoker(self, request):
+        warnings.warn("Method 'list_monthly_expenditures_invoker' of BssintlClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_monthly_expenditures_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -2265,6 +2267,85 @@ class BssintlClient(Client):
         path_params = {}
 
         query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_customer_monthly_sum(self, request):
+        r"""查询汇总账单
+
+        客户在自建平台查询自身的消费汇总账单，此账单按月汇总消费数据。
+        
+        客户登录费用中心查询自身的消费汇总账单请参见[这里](https://support.huaweicloud.com/intl/zh-cn/usermanual-billing/bills-topic_0000108.html)的“查看汇总”。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowCustomerMonthlySum
+        :type request: :class:`huaweicloudsdkbssintl.v2.ShowCustomerMonthlySumRequest`
+        :rtype: :class:`huaweicloudsdkbssintl.v2.ShowCustomerMonthlySumResponse`
+        """
+        http_info = self._show_customer_monthly_sum_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_customer_monthly_sum_invoker(self, request):
+        http_info = self._show_customer_monthly_sum_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_customer_monthly_sum_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/bills/customer-bills/monthly-sum",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCustomerMonthlySumResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'bill_cycle' in local_var_params:
+            query_params.append(('bill_cycle', local_var_params['bill_cycle']))
+        if 'service_type_code' in local_var_params:
+            query_params.append(('service_type_code', local_var_params['service_type_code']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'method' in local_var_params:
+            query_params.append(('method', local_var_params['method']))
+        if 'sub_customer_id' in local_var_params:
+            query_params.append(('sub_customer_id', local_var_params['sub_customer_id']))
 
         header_params = {}
 
@@ -3188,6 +3269,71 @@ class BssintlClient(Client):
             "resource_path": "/v2/orders/subscriptions/resources/renew",
             "request_type": request.__class__.__name__,
             "response_type": "RenewalResourcesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def set_resources_renew_config(self, request):
+        r"""设置包年/包月资源自动续费扣款日和续费后资源统一到期日
+
+        功能描述：客户的包年/包月资源可进行设置自动续费扣款日和续费后统一到期日
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for SetResourcesRenewConfig
+        :type request: :class:`huaweicloudsdkbssintl.v2.SetResourcesRenewConfigRequest`
+        :rtype: :class:`huaweicloudsdkbssintl.v2.SetResourcesRenewConfigResponse`
+        """
+        http_info = self._set_resources_renew_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def set_resources_renew_config_invoker(self, request):
+        http_info = self._set_resources_renew_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _set_resources_renew_config_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/orders/subscriptions/resources/renew/config",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetResourcesRenewConfigResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}

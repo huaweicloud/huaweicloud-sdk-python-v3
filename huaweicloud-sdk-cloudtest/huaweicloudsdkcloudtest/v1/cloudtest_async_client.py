@@ -3762,6 +3762,81 @@ class CloudtestAsyncClient(Client):
 
         return http_info
 
+    def list_task_results_detail_async(self, request):
+        r"""查询单次测试套执行的详细结果
+
+        查询单次测试套执行的详细结果
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListTaskResultsDetail
+        :type request: :class:`huaweicloudsdkcloudtest.v1.ListTaskResultsDetailRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ListTaskResultsDetailResponse`
+        """
+        http_info = self._list_task_results_detail_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_task_results_detail_async_invoker(self, request):
+        http_info = self._list_task_results_detail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_task_results_detail_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/{project_uuid}/tasks/{task_uri}/results/{result_uri}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTaskResultsDetailResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_uuid' in local_var_params:
+            path_params['project_uuid'] = local_var_params['project_uuid']
+        if 'task_uri' in local_var_params:
+            path_params['task_uri'] = local_var_params['task_uri']
+        if 'result_uri' in local_var_params:
+            path_params['result_uri'] = local_var_params['result_uri']
+
+        query_params = []
+        if 'page_no' in local_var_params:
+            query_params.append(('page_no', local_var_params['page_no']))
+        if 'page_size' in local_var_params:
+            query_params.append(('page_size', local_var_params['page_size']))
+        if 'result' in local_var_params:
+            query_params.append(('result', local_var_params['result']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_task_test_cases_async(self, request):
         r"""查询用例关联的测试任务列表
 
@@ -10802,6 +10877,81 @@ class CloudtestAsyncClient(Client):
             ['application/json'])
 
         auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_task_results_async(self, request):
+        r"""根据任务uri查询测试任务执行历史
+
+        根据任务uri查询测试任务执行历史
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListTaskResults
+        :type request: :class:`huaweicloudsdkcloudtest.v1.ListTaskResultsRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ListTaskResultsResponse`
+        """
+        http_info = self._list_task_results_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_task_results_async_invoker(self, request):
+        http_info = self._list_task_results_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_task_results_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/{project_uuid}/tasks/{task_uri}/results",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTaskResultsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_uuid' in local_var_params:
+            path_params['project_uuid'] = local_var_params['project_uuid']
+        if 'task_uri' in local_var_params:
+            path_params['task_uri'] = local_var_params['task_uri']
+
+        query_params = []
+        if 'iterator_uri' in local_var_params:
+            query_params.append(('iterator_uri', local_var_params['iterator_uri']))
+        if 'page_no' in local_var_params:
+            query_params.append(('page_no', local_var_params['page_no']))
+        if 'page_size' in local_var_params:
+            query_params.append(('page_size', local_var_params['page_size']))
+        if 'release_dev' in local_var_params:
+            query_params.append(('release_dev', local_var_params['release_dev']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats

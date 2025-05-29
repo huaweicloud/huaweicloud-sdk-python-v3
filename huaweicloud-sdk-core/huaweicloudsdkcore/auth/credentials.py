@@ -25,7 +25,7 @@ import re
 from abc import abstractmethod
 
 from huaweicloudsdkcore.auth.cache import AuthCache
-from huaweicloudsdkcore.auth.internal import Iam, Metadata
+from huaweicloudsdkcore.auth.internal import Iam, MetadataAccessor
 from huaweicloudsdkcore.exceptions.exceptions import ApiValueError, ServiceResponseException, SdkException
 from huaweicloudsdkcore.signer.algorithm import SigningAlgorithm
 from huaweicloudsdkcore.signer.signer import Signer, SM3Signer, DerivationAKSKSigner, P256SHA256Signer, SM2SM3Signer
@@ -58,7 +58,7 @@ class DerivedCredentials(six_utils.get_abstract_meta_class()):
 
 class TempCredentials(six_utils.get_abstract_meta_class()):
     @abstractmethod
-    def _need_update_security_token(self):
+    def _need_update_security_token_from_metadata(self):
         # type: () -> bool
         pass
 
@@ -69,7 +69,7 @@ class TempCredentials(six_utils.get_abstract_meta_class()):
 
 class FederalCredentials(six_utils.get_abstract_meta_class()):
     @abstractmethod
-    def _need_update_auth_token(self):
+    def _need_update_federal_auth_token(self):
         # type: () -> bool
         pass
 
@@ -83,6 +83,7 @@ class Credentials(DerivedCredentials, TempCredentials, FederalCredentials):
     _X_SECURITY_TOKEN = "X-Security-Token"
     _X_AUTH_TOKEN = "X-Auth-Token"
     _AUTHORIZATION = "Authorization"
+    _DEFAULT_EXPIRATION_THRESHOLD_SECONDS = 2 * 60 * 60 # 2h
     _SIGNER_CASE = {
         SigningAlgorithm.HMAC_SHA256: Signer,
         SigningAlgorithm.HMAC_SM3: SM3Signer,
@@ -103,6 +104,7 @@ class Credentials(DerivedCredentials, TempCredentials, FederalCredentials):
         self._expired_at = None
         self._auth_token = None
         self._region_id = None
+        self._metadata_accessor = None
 
     @property
     def ak(self):
@@ -156,6 +158,14 @@ class Credentials(DerivedCredentials, TempCredentials, FederalCredentials):
     def security_token(self, value):
         self._security_token = value
 
+    @property
+    def metadata_accessor(self):
+        return self._metadata_accessor
+
+    @metadata_accessor.setter
+    def metadata_accessor(self, value):
+        self._metadata_accessor = value
+
     def with_ak(self, ak):
         self.ak = ak
         return self
@@ -189,9 +199,9 @@ class Credentials(DerivedCredentials, TempCredentials, FederalCredentials):
         pass
 
     def process_auth_request(self, request, http_client):
-        if self._need_update_auth_token():
+        if self._need_update_federal_auth_token():
             self._update_auth_token_by_id_token(http_client)
-        elif self._need_update_security_token():
+        elif self._need_update_security_token_from_metadata():
             self.update_security_token_from_metadata()
 
         return http_client.executor.submit(self.sign_request, request)
@@ -231,25 +241,27 @@ class Credentials(DerivedCredentials, TempCredentials, FederalCredentials):
     def _process_derived_auth_params(self, derived_auth_service_name, region_id):
         pass
 
-    def _need_update_security_token(self):
+    def _need_update_security_token_from_metadata(self):
         if not self._expired_at or not self.security_token:
             return False
-        return self._expired_at - time_utils.get_timestamp_utc() < 60
+        return self._expired_at - time_utils.get_timestamp_utc() < self._DEFAULT_EXPIRATION_THRESHOLD_SECONDS
 
     def update_security_token_from_metadata(self):
-        credential = Metadata.get_credential_from_metadata()
+        if not self.metadata_accessor:
+            self.metadata_accessor = MetadataAccessor()
+        credential = self.metadata_accessor.get_credentials()
 
         self.ak = credential.get("access")
         self.sk = credential.get("secret")
         self.security_token = credential.get("securitytoken")
         self._expired_at = time_utils.get_timestamp_from_str(credential.get("expires_at"), self._TIME_FORMAT)
 
-    def _need_update_auth_token(self):
+    def _need_update_federal_auth_token(self):
         if not self.idp_id or not self.id_token_file:
             return False
         if not self._auth_token or not self._expired_at:
             return True
-        return self._expired_at - time_utils.get_timestamp_utc() < 60
+        return self._expired_at - time_utils.get_timestamp_utc() < self._DEFAULT_EXPIRATION_THRESHOLD_SECONDS
 
     def _update_auth_token_by_id_token(self, http_client):
         pass

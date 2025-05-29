@@ -46,6 +46,14 @@ class KvsClientInterface(ABC):
         pass
 
     @abstractmethod
+    def batch_get_kv(self, request):
+        pass
+
+    @abstractmethod
+    def batch_get_kv_invoker(self, request):
+        pass
+
+    @abstractmethod
     def batch_write_kv(self, request):
         pass
 

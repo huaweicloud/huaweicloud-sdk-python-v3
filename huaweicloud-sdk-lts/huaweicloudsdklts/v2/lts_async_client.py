@@ -3714,10 +3714,6 @@ class LtsAsyncClient(Client):
             query_params.append(('log_group_name', local_var_params['log_group_name']))
         if 'log_stream_name' in local_var_params:
             query_params.append(('log_stream_name', local_var_params['log_stream_name']))
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
 

@@ -265,6 +265,7 @@ from huaweicloudsdkcfw.v1.model.list_service_sets_request import ListServiceSets
 from huaweicloudsdkcfw.v1.model.list_service_sets_response import ListServiceSetsResponse
 from huaweicloudsdkcfw.v1.model.log_config_dto import LogConfigDto
 from huaweicloudsdkcfw.v1.model.mapstringstring import Mapstringstring
+from huaweicloudsdkcfw.v1.model.object_info_dto import ObjectInfoDto
 from huaweicloudsdkcfw.v1.model.order_rule_acl_dto import OrderRuleAclDto
 from huaweicloudsdkcfw.v1.model.order_rule_id import OrderRuleId
 from huaweicloudsdkcfw.v1.model.packet_message import PacketMessage
@@ -347,6 +348,8 @@ from huaweicloudsdkcfw.v1.model.update_domain_set_request import UpdateDomainSet
 from huaweicloudsdkcfw.v1.model.update_domain_set_response import UpdateDomainSetResponse
 from huaweicloudsdkcfw.v1.model.update_log_config_request import UpdateLogConfigRequest
 from huaweicloudsdkcfw.v1.model.update_log_config_response import UpdateLogConfigResponse
+from huaweicloudsdkcfw.v1.model.update_object_config_desc_request import UpdateObjectConfigDescRequest
+from huaweicloudsdkcfw.v1.model.update_object_config_desc_response import UpdateObjectConfigDescResponse
 from huaweicloudsdkcfw.v1.model.update_rule_acl_dto import UpdateRuleAclDto
 from huaweicloudsdkcfw.v1.model.update_security_polcies_action_dto import UpdateSecurityPolciesActionDto
 from huaweicloudsdkcfw.v1.model.update_service_set_request import UpdateServiceSetRequest

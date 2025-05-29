@@ -153,6 +153,23 @@ class MultichannelKvsAsyncClient(AbstractMultichannelKvsClient, KvsAsyncClientIn
         return self.get_kvs_client_by_polling().client.list_table_invoker(request)
 
 
+    def batch_get_kv_async(self, request):
+        retry_count = 0
+        while retry_count < self._config.api_retry_count:
+            managed_client = self.get_kvs_client_by_polling_with_retry(retry_count)
+            try:
+                return managed_client.client.batch_get_kv_async(request)
+            except (ConnectionException, RequestTimeoutException) as e:
+                managed_client.is_usable = False
+                retry_count += 1
+                self._logger.info("this is client: %s BatchGetKv throwing Exception %d time. errorInfo: %s",
+                                  managed_client.endpoint.name, retry_count, e)
+        raise SdkException("retry BatchGetKv " + str(retry_count) + " times, and failed!")
+
+    def batch_get_kv_async_invoker(self, request):
+        return self.get_kvs_client_by_polling().client.batch_get_kv_invoker(request)
+
+
     def batch_write_kv_async(self, request):
         retry_count = 0
         while retry_count < self._config.api_retry_count:

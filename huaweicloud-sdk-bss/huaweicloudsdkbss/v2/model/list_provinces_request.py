@@ -33,7 +33,7 @@ class ListProvincesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param x_language: 语言。zh_CN：中文en_us：英文缺省为zh_CN。
+        :param x_language: 语言，字段预留,目前仅支持中文。默认zh_cn，枚举：zh_cn：中文 en_us：英文
         :type x_language: str
         :param offset: 偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset &#x3D; 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
         :type offset: int
@@ -59,7 +59,7 @@ class ListProvincesRequest:
     def x_language(self):
         r"""Gets the x_language of this ListProvincesRequest.
 
-        语言。zh_CN：中文en_us：英文缺省为zh_CN。
+        语言，字段预留,目前仅支持中文。默认zh_cn，枚举：zh_cn：中文 en_us：英文
 
         :return: The x_language of this ListProvincesRequest.
         :rtype: str
@@ -70,7 +70,7 @@ class ListProvincesRequest:
     def x_language(self, x_language):
         r"""Sets the x_language of this ListProvincesRequest.
 
-        语言。zh_CN：中文en_us：英文缺省为zh_CN。
+        语言，字段预留,目前仅支持中文。默认zh_cn，枚举：zh_cn：中文 en_us：英文
 
         :param x_language: The x_language of this ListProvincesRequest.
         :type x_language: str

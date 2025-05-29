@@ -371,6 +371,73 @@ class KvsAsyncClient(Client, KvsAsyncClientInterface):
 
         return http_info
 
+    def batch_get_kv_async(self, request):
+        r"""批量读请求
+
+        批量读请求，其中可以携带一或多个表的不同kv的查询操作。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchGetKv
+        :type request: :class:`huaweicloudsdkkvs.v1.BatchGetKvRequest`
+        :rtype: :class:`huaweicloudsdkkvs.v1.BatchGetKvResponse`
+        """
+        http_info = self._batch_get_kv_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_get_kv_async_invoker(self, request):
+        http_info = self._batch_get_kv_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_get_kv_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/batch-get-kv",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchGetKvResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'store_name' in local_var_params:
+            cname = local_var_params['store_name']
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/bson'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def batch_write_kv_async(self, request):
         r"""批量写请求
 

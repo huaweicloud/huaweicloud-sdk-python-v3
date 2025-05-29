@@ -18,15 +18,17 @@ class ClusterLogConfigLogConfigs:
 
     openapi_types = {
         'name': 'str',
-        'enable': 'bool'
+        'enable': 'bool',
+        'type': 'str'
     }
 
     attribute_map = {
         'name': 'name',
-        'enable': 'enable'
+        'enable': 'enable',
+        'type': 'type'
     }
 
-    def __init__(self, name=None, enable=None):
+    def __init__(self, name=None, enable=None, type=None):
         r"""ClusterLogConfigLogConfigs
 
         The model defined in huaweicloud sdk
@@ -35,18 +37,23 @@ class ClusterLogConfigLogConfigs:
         :type name: str
         :param enable: 是否采集
         :type enable: bool
+        :param type: 组件类型
+        :type type: str
         """
         
         
 
         self._name = None
         self._enable = None
+        self._type = None
         self.discriminator = None
 
         if name is not None:
             self.name = name
         if enable is not None:
             self.enable = enable
+        if type is not None:
+            self.type = type
 
     @property
     def name(self):
@@ -91,6 +98,28 @@ class ClusterLogConfigLogConfigs:
         :type enable: bool
         """
         self._enable = enable
+
+    @property
+    def type(self):
+        r"""Gets the type of this ClusterLogConfigLogConfigs.
+
+        组件类型
+
+        :return: The type of this ClusterLogConfigLogConfigs.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        r"""Sets the type of this ClusterLogConfigLogConfigs.
+
+        组件类型
+
+        :param type: The type of this ClusterLogConfigLogConfigs.
+        :type type: str
+        """
+        self._type = type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

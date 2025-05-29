@@ -43,7 +43,7 @@ class ListResourceUsageRequest:
 
         The model defined in huaweicloud sdk
 
-        :param x_language: 语言。en_US：英文；zh_CN：中文。默认：zh_CN：中文
+        :param x_language: 语言，字段预留。默认zh_CN，枚举：zh_CN：中文 en_US：英文
         :type x_language: str
         :param bill_cycle: 账期，东八区时间，格式为yyyy-MM。
         :type bill_cycle: str
@@ -89,7 +89,7 @@ class ListResourceUsageRequest:
     def x_language(self):
         r"""Gets the x_language of this ListResourceUsageRequest.
 
-        语言。en_US：英文；zh_CN：中文。默认：zh_CN：中文
+        语言，字段预留。默认zh_CN，枚举：zh_CN：中文 en_US：英文
 
         :return: The x_language of this ListResourceUsageRequest.
         :rtype: str
@@ -100,7 +100,7 @@ class ListResourceUsageRequest:
     def x_language(self, x_language):
         r"""Sets the x_language of this ListResourceUsageRequest.
 
-        语言。en_US：英文；zh_CN：中文。默认：zh_CN：中文
+        语言，字段预留。默认zh_CN，枚举：zh_CN：中文 en_US：英文
 
         :param x_language: The x_language of this ListResourceUsageRequest.
         :type x_language: str

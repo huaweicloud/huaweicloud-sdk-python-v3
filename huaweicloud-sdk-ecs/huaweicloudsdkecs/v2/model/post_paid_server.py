@@ -40,7 +40,8 @@ class PostPaidServer:
         'user_data': 'str',
         'vpcid': 'str',
         'description': 'str',
-        'cpu_options': 'CpuOptions'
+        'cpu_options': 'CpuOptions',
+        'serial_console_options': 'SerialConsoleOptions'
     }
 
     attribute_map = {
@@ -67,10 +68,11 @@ class PostPaidServer:
         'user_data': 'user_data',
         'vpcid': 'vpcid',
         'description': 'description',
-        'cpu_options': 'cpu_options'
+        'cpu_options': 'cpu_options',
+        'serial_console_options': 'serial_console_options'
     }
 
-    def __init__(self, auto_terminate_time=None, admin_pass=None, availability_zone=None, batch_create_in_multi_az=None, count=None, data_volumes=None, extendparam=None, flavor_ref=None, image_ref=None, is_auto_rename=None, key_name=None, metadata=None, name=None, nics=None, osscheduler_hints=None, publicip=None, root_volume=None, security_groups=None, server_tags=None, tags=None, user_data=None, vpcid=None, description=None, cpu_options=None):
+    def __init__(self, auto_terminate_time=None, admin_pass=None, availability_zone=None, batch_create_in_multi_az=None, count=None, data_volumes=None, extendparam=None, flavor_ref=None, image_ref=None, is_auto_rename=None, key_name=None, metadata=None, name=None, nics=None, osscheduler_hints=None, publicip=None, root_volume=None, security_groups=None, server_tags=None, tags=None, user_data=None, vpcid=None, description=None, cpu_options=None, serial_console_options=None):
         r"""PostPaidServer
 
         The model defined in huaweicloud sdk
@@ -123,6 +125,8 @@ class PostPaidServer:
         :type description: str
         :param cpu_options: 
         :type cpu_options: :class:`huaweicloudsdkecs.v2.CpuOptions`
+        :param serial_console_options: 
+        :type serial_console_options: :class:`huaweicloudsdkecs.v2.SerialConsoleOptions`
         """
         
         
@@ -151,6 +155,7 @@ class PostPaidServer:
         self._vpcid = None
         self._description = None
         self._cpu_options = None
+        self._serial_console_options = None
         self.discriminator = None
 
         if auto_terminate_time is not None:
@@ -195,6 +200,8 @@ class PostPaidServer:
             self.description = description
         if cpu_options is not None:
             self.cpu_options = cpu_options
+        if serial_console_options is not None:
+            self.serial_console_options = serial_console_options
 
     @property
     def auto_terminate_time(self):
@@ -703,6 +710,24 @@ class PostPaidServer:
         :type cpu_options: :class:`huaweicloudsdkecs.v2.CpuOptions`
         """
         self._cpu_options = cpu_options
+
+    @property
+    def serial_console_options(self):
+        r"""Gets the serial_console_options of this PostPaidServer.
+
+        :return: The serial_console_options of this PostPaidServer.
+        :rtype: :class:`huaweicloudsdkecs.v2.SerialConsoleOptions`
+        """
+        return self._serial_console_options
+
+    @serial_console_options.setter
+    def serial_console_options(self, serial_console_options):
+        r"""Sets the serial_console_options of this PostPaidServer.
+
+        :param serial_console_options: The serial_console_options of this PostPaidServer.
+        :type serial_console_options: :class:`huaweicloudsdkecs.v2.SerialConsoleOptions`
+        """
+        self._serial_console_options = serial_console_options
 
     def to_dict(self):
         """Returns the model properties as a dict"""
