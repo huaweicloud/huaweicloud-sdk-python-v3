@@ -96,6 +96,7 @@ from huaweicloudsdkces.v2.model.dimension import Dimension
 from huaweicloudsdkces.v2.model.dimension_info import DimensionInfo
 from huaweicloudsdkces.v2.model.dimension_name_allow_empty import DimensionNameAllowEmpty
 from huaweicloudsdkces.v2.model.dimension_names import DimensionNames
+from huaweicloudsdkces.v2.model.effective_timezone import EffectiveTimezone
 from huaweicloudsdkces.v2.model.enable_one_click_alarm_request_body import EnableOneClickAlarmRequestBody
 from huaweicloudsdkces.v2.model.enable_one_click_alarm_request_body_one_click_update_alarms import EnableOneClickAlarmRequestBodyOneClickUpdateAlarms
 from huaweicloudsdkces.v2.model.enabled import Enabled
@@ -183,6 +184,7 @@ from huaweicloudsdkces.v2.model.policies import Policies
 from huaweicloudsdkces.v2.model.policies_in_list_resp import PoliciesInListResp
 from huaweicloudsdkces.v2.model.policies_req_v2 import PoliciesReqV2
 from huaweicloudsdkces.v2.model.policy import Policy
+from huaweicloudsdkces.v2.model.policy_enabled import PolicyEnabled
 from huaweicloudsdkces.v2.model.post_alarms_req_v2 import PostAlarmsReqV2
 from huaweicloudsdkces.v2.model.product_instance import ProductInstance
 from huaweicloudsdkces.v2.model.product_metric import ProductMetric

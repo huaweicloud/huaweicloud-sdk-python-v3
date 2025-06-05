@@ -914,6 +914,270 @@ class MetaStudioAsyncClient(Client):
 
         return http_info
 
+    def create_dialog_report_config_async(self, request):
+        r"""创建对话结果上报配置
+
+        该接口用于创建对话结果上报配置。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateDialogReportConfig
+        :type request: :class:`huaweicloudsdkmetastudio.v1.CreateDialogReportConfigRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.CreateDialogReportConfigResponse`
+        """
+        http_info = self._create_dialog_report_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_dialog_report_config_async_invoker(self, request):
+        http_info = self._create_dialog_report_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_dialog_report_config_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/digital-human-chat/dialog-report-config",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDialogReportConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_dialog_report_config_async(self, request):
+        r"""删除对话结果上报配置
+
+        该接口用于删除对话结果上报配置。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteDialogReportConfig
+        :type request: :class:`huaweicloudsdkmetastudio.v1.DeleteDialogReportConfigRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.DeleteDialogReportConfigResponse`
+        """
+        http_info = self._delete_dialog_report_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_dialog_report_config_async_invoker(self, request):
+        http_info = self._delete_dialog_report_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_dialog_report_config_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/digital-human-chat/dialog-report-config",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDialogReportConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_dialog_report_config_async(self, request):
+        r"""查询对话结果上报配置
+
+        该接口用于查询对话结果上报配置。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowDialogReportConfig
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ShowDialogReportConfigRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ShowDialogReportConfigResponse`
+        """
+        http_info = self._show_dialog_report_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_dialog_report_config_async_invoker(self, request):
+        http_info = self._show_dialog_report_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_dialog_report_config_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/digital-human-chat/dialog-report-config",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDialogReportConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_dialog_report_config_async(self, request):
+        r"""修改对话结果上报配置
+
+        该接口用于修改对话结果上报配置。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateDialogReportConfig
+        :type request: :class:`huaweicloudsdkmetastudio.v1.UpdateDialogReportConfigRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.UpdateDialogReportConfigResponse`
+        """
+        http_info = self._update_dialog_report_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_dialog_report_config_async_invoker(self, request):
+        http_info = self._update_dialog_report_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_dialog_report_config_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/digital-human-chat/dialog-report-config",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDialogReportConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def batch_execute_asset_action_async(self, request):
         r"""批量资产操作
 

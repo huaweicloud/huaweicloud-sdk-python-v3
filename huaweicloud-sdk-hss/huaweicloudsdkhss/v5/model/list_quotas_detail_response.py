@@ -24,6 +24,7 @@ class ListQuotasDetailResponse(SdkResponse):
         'idle_num': 'int',
         'normal_num': 'int',
         'expired_num': 'int',
+        'create_time': 'int',
         'freeze_num': 'int',
         'quota_statistics_list': 'list[QuotaStatisticsResponseInfo]',
         'total_num': 'int',
@@ -37,13 +38,14 @@ class ListQuotasDetailResponse(SdkResponse):
         'idle_num': 'idle_num',
         'normal_num': 'normal_num',
         'expired_num': 'expired_num',
+        'create_time': 'create_time',
         'freeze_num': 'freeze_num',
         'quota_statistics_list': 'quota_statistics_list',
         'total_num': 'total_num',
         'data_list': 'data_list'
     }
 
-    def __init__(self, packet_cycle_num=None, on_demand_num=None, used_num=None, idle_num=None, normal_num=None, expired_num=None, freeze_num=None, quota_statistics_list=None, total_num=None, data_list=None):
+    def __init__(self, packet_cycle_num=None, on_demand_num=None, used_num=None, idle_num=None, normal_num=None, expired_num=None, create_time=None, freeze_num=None, quota_statistics_list=None, total_num=None, data_list=None):
         r"""ListQuotasDetailResponse
 
         The model defined in huaweicloud sdk
@@ -60,6 +62,8 @@ class ListQuotasDetailResponse(SdkResponse):
         :type normal_num: int
         :param expired_num: 过期配额数
         :type expired_num: int
+        :param create_time: 创建时间
+        :type create_time: int
         :param freeze_num: 冻结配额数
         :type freeze_num: int
         :param quota_statistics_list: 配额统计列表
@@ -78,6 +82,7 @@ class ListQuotasDetailResponse(SdkResponse):
         self._idle_num = None
         self._normal_num = None
         self._expired_num = None
+        self._create_time = None
         self._freeze_num = None
         self._quota_statistics_list = None
         self._total_num = None
@@ -96,6 +101,8 @@ class ListQuotasDetailResponse(SdkResponse):
             self.normal_num = normal_num
         if expired_num is not None:
             self.expired_num = expired_num
+        if create_time is not None:
+            self.create_time = create_time
         if freeze_num is not None:
             self.freeze_num = freeze_num
         if quota_statistics_list is not None:
@@ -236,6 +243,28 @@ class ListQuotasDetailResponse(SdkResponse):
         :type expired_num: int
         """
         self._expired_num = expired_num
+
+    @property
+    def create_time(self):
+        r"""Gets the create_time of this ListQuotasDetailResponse.
+
+        创建时间
+
+        :return: The create_time of this ListQuotasDetailResponse.
+        :rtype: int
+        """
+        return self._create_time
+
+    @create_time.setter
+    def create_time(self, create_time):
+        r"""Sets the create_time of this ListQuotasDetailResponse.
+
+        创建时间
+
+        :param create_time: The create_time of this ListQuotasDetailResponse.
+        :type create_time: int
+        """
+        self._create_time = create_time
 
     @property
     def freeze_num(self):

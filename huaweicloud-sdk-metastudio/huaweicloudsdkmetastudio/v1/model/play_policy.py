@@ -53,7 +53,7 @@ class PlayPolicy:
         :type need_independent_capture_client: bool
         :param live_exit_config: 
         :type live_exit_config: :class:`huaweicloudsdkmetastudio.v1.LiveExitConfig`
-        :param is_rewrite_delay: **参数解释**： 动态编辑未播放剧本是否需要下一轮生效。 **约束限制**： 不涉及。 **取值范围**： * true：马上生效。 * fasle：下一轮生效。 **默认取值**： false
+        :param is_rewrite_delay: **参数解释**： 动态编辑未播放剧本是否需要下一轮生效。 **约束限制**： 不涉及。 **取值范围**： * true：下一轮生效。 * false：马上生效。 **默认取值**： false
         :type is_rewrite_delay: bool
         """
         
@@ -215,7 +215,7 @@ class PlayPolicy:
     def is_rewrite_delay(self):
         r"""Gets the is_rewrite_delay of this PlayPolicy.
 
-        **参数解释**： 动态编辑未播放剧本是否需要下一轮生效。 **约束限制**： 不涉及。 **取值范围**： * true：马上生效。 * fasle：下一轮生效。 **默认取值**： false
+        **参数解释**： 动态编辑未播放剧本是否需要下一轮生效。 **约束限制**： 不涉及。 **取值范围**： * true：下一轮生效。 * false：马上生效。 **默认取值**： false
 
         :return: The is_rewrite_delay of this PlayPolicy.
         :rtype: bool
@@ -226,7 +226,7 @@ class PlayPolicy:
     def is_rewrite_delay(self, is_rewrite_delay):
         r"""Sets the is_rewrite_delay of this PlayPolicy.
 
-        **参数解释**： 动态编辑未播放剧本是否需要下一轮生效。 **约束限制**： 不涉及。 **取值范围**： * true：马上生效。 * fasle：下一轮生效。 **默认取值**： false
+        **参数解释**： 动态编辑未播放剧本是否需要下一轮生效。 **约束限制**： 不涉及。 **取值范围**： * true：下一轮生效。 * false：马上生效。 **默认取值**： false
 
         :param is_rewrite_delay: The is_rewrite_delay of this PlayPolicy.
         :type is_rewrite_delay: bool

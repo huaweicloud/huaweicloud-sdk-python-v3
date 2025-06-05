@@ -1,3 +1,354 @@
+# 3.1.151 2025-06-05
+
+### HuaweiCloud SDK Core
+
+- _Features_
+  - None
+- _Bug Fix_
+  - 429 status code should throw ClientRequestException exception type
+- _Change_
+  - None
+
+### HuaweiCloud SDK CES
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdateAlarmRulePolicies**
+    - changes of request param
+      - `* policies.extra_info: object<MetricExtraInfo> -> object<ExtraInfo>`
+    - changes of response param
+      - `* policies.extra_info: object<MetricExtraInfo> -> object<ExtraInfo>`
+  - **ListNotificationMasks**
+    - changes of response param
+      - `+ notification_masks.effective_timezone`
+  - **ListOneClickAlarmRules**
+    - changes of response param
+      - `+ alarms.effective_timezone`
+      - `+ alarms.policies.hierarchical_value`
+      - `+ alarms.policies.selected_unit`
+
+### HuaweiCloud SDK Cloudtest
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the API `CreateTaskDefaultResult`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK CodeArtsBuild
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the following APIs:
+    - `ShowJobNoticeConfigInfo`
+    - `ShowRelatedProject`
+    - `ListRecords`
+    - `ShowBuildInfoRecord`
+    - `DownloadKeystoreByName`
+    - `ShowDefaultBuildParameters`
+    - `ShowKeystorePermission`
+    - `ListRelatedProjectInfo`
+    - `ListKeystore`
+    - `ShowDockerfileTemplate`
+    - `CheckJobNameIsExists`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the APIs `ListEntityDetails`, `ListCategoriesTree`, `ListLogicEntities`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowFactoryFullText**
+    - changes of request param
+      - `* search_text: optional -> required`
+    - changes of response param
+      - `* total_hits: int32 -> int64`
+
+### HuaweiCloud SDK DDS
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListSessions**
+    - changes of response param
+      - `+ sessions.db`
+      - `+ sessions.user`
+
+### HuaweiCloud SDK DGC
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListJobInstances**
+    - changes of response param
+      - `+ instances.errorMessage`
+
+### HuaweiCloud SDK DLI
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateQueue**
+    - changes of request param
+      - `- properties.computeEngine.maxInstance`
+      - `- properties.job.maxConcurrent`
+      - `- properties.computeEngine.maxPrefetchInstance`
+      - `* properties: object<CommonQueueProperty> -> object`
+
+### HuaweiCloud SDK eiHealth
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the following APIs:
+    - `InitializePlatform`
+    - `ListSfsTurbos`
+    - `ShowAgency`
+    - `UpdateAgency`
+    - `ListUserNotebook`
+    - `ListUserImage`
+    - `UpdateTopProject`
+    - `ListUserApp`
+    - `ListUserJob`
+    - `ListUserWorkflow`
+    - `ListUserDrugJob`
+    - `ListProjectStatistics`
+    - `ListComputingCluster`
+    - `CreateComputingCluster`
+    - `DeleteComputingCluster`
+    - `ListCceCluster`
+    - `ListClusterInstallStep`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK HSS
+
+- _API Version_
+  - V5
+- _Features_
+  - Support the APIs `BatchStartProtection`, `ShowAntivirusPayPerScanStatus`, `ShowAgentDaemonsetDetailInfo`, `CreateAgentDaemonset`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListDownloadExportedFile**
+    - changes of request param
+      - `* region: required -> optional`
+  - **ListQueryExportTask**
+    - changes of request param
+      - `* region: required -> optional`
+  - **AssociatePolicyGroup**
+    - changes of request param
+      - `* region: required -> optional`
+      - `+ deploy_type`
+  - **CreateQuotasOrder**
+    - changes of request param
+      - `* region: required -> optional`
+  - **StopProtection**
+    - changes of request param
+      - `* region: required -> optional`
+  - **SetRaspSwitch**
+    - changes of request param
+      - `* region: required -> optional`
+  - **SetWtpProtectionStatusInfo**
+    - changes of request param
+      - `* region: required -> optional`
+  - **DeleteAccount**
+    - changes of request param
+      - `* region: required -> optional`
+  - **ListAccounts**
+    - changes of request param
+      - `* region: required -> optional`
+  - **BatchAddAccounts**
+    - changes of request param
+      - `* region: required -> optional`
+  - **ListOrganizationTree**
+    - changes of request param
+      - `* region: required -> optional`
+  - **ListUsers**
+    - changes of response param
+      - `+ data_list.first_scan_time`
+  - **ListPasswordComplexity**
+    - changes of response param
+      - `+ data_list.min_length_num`
+      - `+ data_list.min_uppercase_letter`
+      - `+ data_list.min_lowercase_letter`
+      - `+ data_list.min_number`
+      - `+ data_list.min_special_character`
+      - `+ data_list.update_time`
+  - **ListRiskConfigs**
+    - changes of response param
+      - `+ data_list.executable_file_path`
+  - **ListContainers**
+    - changes of response param
+      - `+ data_list.id`
+      - `+ data_list.region_id`
+  - **ListContainerNodes**
+    - changes of request param
+      - `* region: required -> optional`
+  - **ListHostStatus**
+    - changes of request param
+      - `+ cluster_id`
+  - **SwitchHostsProtectStatus**
+    - changes of request param
+      - `* region: required -> optional`
+  - **ListProtectionServer**
+    - changes of request param
+      - `* region: required -> optional`
+  - **ListVulHandleHistory**
+    - changes of response param
+      - `+ data_list.container_name`
+      - `+ data_list.container_id`
+  - **ListHostRaspProtectHistoryInfo**
+    - changes of request param
+      - `* region: required -> optional`
+  - **ListHostProtectHistoryInfo**
+    - changes of request param
+      - `* region: required -> optional`
+  - **ShowBackupPolicyInfo**
+    - changes of request param
+      - `* region: required -> optional`
+  - **UpdateBackupPolicyInfo**
+    - changes of request param
+      - `* region: required -> optional`
+  - **ListQuotasDetail**
+    - changes of response param
+      - `+ create_time`
+      - `+ data_list.create_time`
+  - **ListBlockedIp**
+    - changes of request param
+      - `* region: required -> optional`
+  - **ChangeBlockedIp**
+    - changes of request param
+      - `* region: required -> optional`
+  - **ListAlarmWhiteList**
+    - changes of request param
+      - `* region: required -> optional`
+  - **DeleteHostsGroup**
+    - changes of request param
+      - `* region: required -> optional`
+  - **AddHostsGroup**
+    - changes of request param
+      - `* region: required -> optional`
+  - **ChangeHostsGroup**
+    - changes of request param
+      - `* region: required -> optional`
+  - **ListHostGroups**
+    - changes of request param
+      - `* region: required -> optional`
+  - **ListSwrImageRepository**
+    - changes of request param
+      - `* region: required -> optional`
+  - **ListPolicyGroup**
+    - changes of request param
+      - `* region: required -> optional`
+  - **ShowProductdataOfferingInfos**
+    - changes of request param
+      - `* region: required -> optional`
+  - **UpdateProtectionPolicy**
+    - changes of request param
+      - `* region: required -> optional`
+      - `+ deploy_mode`
+  - **ListProtectionPolicy**
+    - changes of request param
+      - `* region: required -> optional`
+    - changes of response param
+      - `+ data_list.ai_protection_status`
+  - **ListWtpProtectHost**
+    - changes of request param
+      - `* region: required -> optional`
+  - **ListSecurityEvents**
+    - changes of request param
+      - `* region: required -> optional`
+  - **ChangeEvent**
+    - changes of request param
+      - `* region: required -> optional`
+  - **StartProtection**
+    - changes of request param
+      - `* region: required -> optional`
+  - **ChangeIsolatedFile**
+    - changes of request param
+      - `* region: required -> optional`
+  - **ListIsolatedFile**
+    - changes of request param
+      - `* region: required -> optional`
+
+### HuaweiCloud SDK LTS
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListLogStreams**
+    - changes of response param
+      - `+ log_streams.log_group_id`
+
+### HuaweiCloud SDK MetaStudio
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the APIs `ShowDialogReportConfig`, `UpdateDialogReportConfig`, `CreateDialogReportConfig`, `DeleteDialogReportConfig`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowPacifyWordsSwitch**
+    - changes of request param
+      - `+ language: enum value [ESP,por,Arabic,Thai]`
+  - **ShowPacifyWordsTriggerTime**
+    - changes of request param
+      - `+ language: enum value [ESP,por,Arabic,Thai]`
+  - **ListPacifyWords**
+    - changes of request param
+      - `+ language: enum value [ESP,por,Arabic,Thai]`
+
+### HuaweiCloud SDK RocketMQ
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreatePostPaidInstance**
+    - changes of request param
+      - `+ proxy_enable`
+      - `+ arch_type`
+      - `+ tls_mode`
+
 # 3.1.150 2025-05-29
 
 ### HuaweiCloud SDK Core

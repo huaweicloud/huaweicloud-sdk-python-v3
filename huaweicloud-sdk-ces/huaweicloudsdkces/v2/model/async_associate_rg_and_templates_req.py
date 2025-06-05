@@ -47,7 +47,7 @@ class AsyncAssociateRGAndTemplatesReq:
 
         :param template_ids: 告警模板编号列表，当ID列表为空时，将删除该资源分组已关联的告警模板所创建的告警规则
         :type template_ids: list[str]
-        :param notification_enabled: 是否开启告警通知
+        :param notification_enabled: 是否开启告警通知。true:开启，false:关闭。
         :type notification_enabled: bool
         :param alarm_notifications: 告警触发通知列表
         :type alarm_notifications: list[:class:`huaweicloudsdkces.v2.Notification`]
@@ -121,7 +121,7 @@ class AsyncAssociateRGAndTemplatesReq:
     def notification_enabled(self):
         r"""Gets the notification_enabled of this AsyncAssociateRGAndTemplatesReq.
 
-        是否开启告警通知
+        是否开启告警通知。true:开启，false:关闭。
 
         :return: The notification_enabled of this AsyncAssociateRGAndTemplatesReq.
         :rtype: bool
@@ -132,7 +132,7 @@ class AsyncAssociateRGAndTemplatesReq:
     def notification_enabled(self, notification_enabled):
         r"""Sets the notification_enabled of this AsyncAssociateRGAndTemplatesReq.
 
-        是否开启告警通知
+        是否开启告警通知。true:开启，false:关闭。
 
         :param notification_enabled: The notification_enabled of this AsyncAssociateRGAndTemplatesReq.
         :type notification_enabled: bool

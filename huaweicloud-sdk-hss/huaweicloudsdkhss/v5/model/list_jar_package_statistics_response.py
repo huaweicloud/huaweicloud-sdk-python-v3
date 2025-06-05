@@ -32,9 +32,9 @@ class ListJarPackageStatisticsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total_num: Jar包统计信息总数
+        :param total_num: **参数解释**: 中间件包的统计信息总数 **取值范围**: 取值0-10000
         :type total_num: int
-        :param data_list: Jar包统计信息列表
+        :param data_list: **参数解释**: 中间件包统计信息列表
         :type data_list: list[:class:`huaweicloudsdkhss.v5.JarPackageStatisticsResponseInfo`]
         """
         
@@ -53,7 +53,7 @@ class ListJarPackageStatisticsResponse(SdkResponse):
     def total_num(self):
         r"""Gets the total_num of this ListJarPackageStatisticsResponse.
 
-        Jar包统计信息总数
+        **参数解释**: 中间件包的统计信息总数 **取值范围**: 取值0-10000
 
         :return: The total_num of this ListJarPackageStatisticsResponse.
         :rtype: int
@@ -64,7 +64,7 @@ class ListJarPackageStatisticsResponse(SdkResponse):
     def total_num(self, total_num):
         r"""Sets the total_num of this ListJarPackageStatisticsResponse.
 
-        Jar包统计信息总数
+        **参数解释**: 中间件包的统计信息总数 **取值范围**: 取值0-10000
 
         :param total_num: The total_num of this ListJarPackageStatisticsResponse.
         :type total_num: int
@@ -75,7 +75,7 @@ class ListJarPackageStatisticsResponse(SdkResponse):
     def data_list(self):
         r"""Gets the data_list of this ListJarPackageStatisticsResponse.
 
-        Jar包统计信息列表
+        **参数解释**: 中间件包统计信息列表
 
         :return: The data_list of this ListJarPackageStatisticsResponse.
         :rtype: list[:class:`huaweicloudsdkhss.v5.JarPackageStatisticsResponseInfo`]
@@ -86,7 +86,7 @@ class ListJarPackageStatisticsResponse(SdkResponse):
     def data_list(self, data_list):
         r"""Sets the data_list of this ListJarPackageStatisticsResponse.
 
-        Jar包统计信息列表
+        **参数解释**: 中间件包统计信息列表
 
         :param data_list: The data_list of this ListJarPackageStatisticsResponse.
         :type data_list: list[:class:`huaweicloudsdkhss.v5.JarPackageStatisticsResponseInfo`]

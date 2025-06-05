@@ -58,7 +58,8 @@ class ChangeEventRequest:
         self._body = None
         self.discriminator = None
 
-        self.region = region
+        if region is not None:
+            self.region = region
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
         if container_name is not None:

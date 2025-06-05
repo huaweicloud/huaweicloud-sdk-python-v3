@@ -23,11 +23,14 @@ import json
 
 import pytest
 import responses
+from requests import HTTPError
+from requests.exceptions import RetryError
 from responses import matchers
+from urllib3.exceptions import MaxRetryError, ResponseError
 
 from huaweicloudsdkcore.auth.credentials import BasicCredentials
 from huaweicloudsdkcore.client import Client
-from huaweicloudsdkcore.exceptions.exceptions import ServerResponseException
+from huaweicloudsdkcore.exceptions.exceptions import ServerResponseException, ClientRequestException
 from huaweicloudsdkcore.http.http_config import HttpConfig
 from huaweicloudsdkcore.invoker.invoker import SyncInvoker
 from huaweicloudsdkcore.retry.backoff_strategy import BackoffStrategies
@@ -262,6 +265,23 @@ class TestRetry(object):
             assert False, "should have raised ServerResponseException"
         except ServerResponseException as e:
             assert e.status_code == 502
+            assert responses.assert_call_count(self.URL, 1)
+
+    @responses.activate
+    def test_retry8(self, mocked_client):
+        """
+        429重试
+        """
+        responses.add(responses.GET, self.URL, status=429)
+        try:
+            (SyncInvoker(mocked_client, self.mock_http_info()).
+             with_retry(retry_condition=lambda _, exc: False,
+                        max_retries=3,
+                        backoff_strategy=BackoffStrategies.NONE)
+             .invoke())
+            assert False, "should have raised ClientRequestException"
+        except ClientRequestException as e:
+            assert e.status_code == 429
             assert responses.assert_call_count(self.URL, 1)
 
 

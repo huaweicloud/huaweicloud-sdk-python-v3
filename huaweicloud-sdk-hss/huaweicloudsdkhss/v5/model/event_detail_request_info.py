@@ -53,7 +53,7 @@ class EventDetailRequestInfo:
 
         :param agent_id: Agent ID
         :type agent_id: str
-        :param process_pid: 进程id
+        :param process_pid: 进程ID
         :type process_pid: int
         :param file_hash: 文件哈希
         :type file_hash: str
@@ -144,7 +144,7 @@ class EventDetailRequestInfo:
     def process_pid(self):
         r"""Gets the process_pid of this EventDetailRequestInfo.
 
-        进程id
+        进程ID
 
         :return: The process_pid of this EventDetailRequestInfo.
         :rtype: int
@@ -155,7 +155,7 @@ class EventDetailRequestInfo:
     def process_pid(self, process_pid):
         r"""Sets the process_pid of this EventDetailRequestInfo.
 
-        进程id
+        进程ID
 
         :param process_pid: The process_pid of this EventDetailRequestInfo.
         :type process_pid: int

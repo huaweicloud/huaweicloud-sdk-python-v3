@@ -27,6 +27,12 @@ class PwdPolicyInfoResponseInfo:
         'lowercase_letter': 'bool',
         'number': 'bool',
         'special_character': 'bool',
+        'min_length_num': 'int',
+        'min_uppercase_letter': 'int',
+        'min_lowercase_letter': 'int',
+        'min_number': 'int',
+        'min_special_character': 'int',
+        'update_time': 'int',
         'suggestion': 'str'
     }
 
@@ -41,10 +47,16 @@ class PwdPolicyInfoResponseInfo:
         'lowercase_letter': 'lowercase_letter',
         'number': 'number',
         'special_character': 'special_character',
+        'min_length_num': 'min_length_num',
+        'min_uppercase_letter': 'min_uppercase_letter',
+        'min_lowercase_letter': 'min_lowercase_letter',
+        'min_number': 'min_number',
+        'min_special_character': 'min_special_character',
+        'update_time': 'update_time',
         'suggestion': 'suggestion'
     }
 
-    def __init__(self, host_id=None, host_name=None, host_ip=None, private_ip=None, public_ip=None, min_length=None, uppercase_letter=None, lowercase_letter=None, number=None, special_character=None, suggestion=None):
+    def __init__(self, host_id=None, host_name=None, host_ip=None, private_ip=None, public_ip=None, min_length=None, uppercase_letter=None, lowercase_letter=None, number=None, special_character=None, min_length_num=None, min_uppercase_letter=None, min_lowercase_letter=None, min_number=None, min_special_character=None, update_time=None, suggestion=None):
         r"""PwdPolicyInfoResponseInfo
 
         The model defined in huaweicloud sdk
@@ -69,6 +81,18 @@ class PwdPolicyInfoResponseInfo:
         :type number: bool
         :param special_character: 特殊字符的设置是否符合要求，符合为true，不符合为false
         :type special_character: bool
+        :param min_length_num: 复杂口令策略中定义的口令最小长度
+        :type min_length_num: int
+        :param min_uppercase_letter: 复杂口令策略中定义的最少包含的大写字母数
+        :type min_uppercase_letter: int
+        :param min_lowercase_letter: 复杂口令策略中定义的最少包含的小写字母数
+        :type min_lowercase_letter: int
+        :param min_number: 复杂口令策略中定义的最少包含的数字数
+        :type min_number: int
+        :param min_special_character: 复杂口令策略中定义的最少包含的特殊字母数
+        :type min_special_character: int
+        :param update_time: 最近扫描时间
+        :type update_time: int
         :param suggestion: 修改建议
         :type suggestion: str
         """
@@ -85,6 +109,12 @@ class PwdPolicyInfoResponseInfo:
         self._lowercase_letter = None
         self._number = None
         self._special_character = None
+        self._min_length_num = None
+        self._min_uppercase_letter = None
+        self._min_lowercase_letter = None
+        self._min_number = None
+        self._min_special_character = None
+        self._update_time = None
         self._suggestion = None
         self.discriminator = None
 
@@ -108,6 +138,18 @@ class PwdPolicyInfoResponseInfo:
             self.number = number
         if special_character is not None:
             self.special_character = special_character
+        if min_length_num is not None:
+            self.min_length_num = min_length_num
+        if min_uppercase_letter is not None:
+            self.min_uppercase_letter = min_uppercase_letter
+        if min_lowercase_letter is not None:
+            self.min_lowercase_letter = min_lowercase_letter
+        if min_number is not None:
+            self.min_number = min_number
+        if min_special_character is not None:
+            self.min_special_character = min_special_character
+        if update_time is not None:
+            self.update_time = update_time
         if suggestion is not None:
             self.suggestion = suggestion
 
@@ -330,6 +372,138 @@ class PwdPolicyInfoResponseInfo:
         :type special_character: bool
         """
         self._special_character = special_character
+
+    @property
+    def min_length_num(self):
+        r"""Gets the min_length_num of this PwdPolicyInfoResponseInfo.
+
+        复杂口令策略中定义的口令最小长度
+
+        :return: The min_length_num of this PwdPolicyInfoResponseInfo.
+        :rtype: int
+        """
+        return self._min_length_num
+
+    @min_length_num.setter
+    def min_length_num(self, min_length_num):
+        r"""Sets the min_length_num of this PwdPolicyInfoResponseInfo.
+
+        复杂口令策略中定义的口令最小长度
+
+        :param min_length_num: The min_length_num of this PwdPolicyInfoResponseInfo.
+        :type min_length_num: int
+        """
+        self._min_length_num = min_length_num
+
+    @property
+    def min_uppercase_letter(self):
+        r"""Gets the min_uppercase_letter of this PwdPolicyInfoResponseInfo.
+
+        复杂口令策略中定义的最少包含的大写字母数
+
+        :return: The min_uppercase_letter of this PwdPolicyInfoResponseInfo.
+        :rtype: int
+        """
+        return self._min_uppercase_letter
+
+    @min_uppercase_letter.setter
+    def min_uppercase_letter(self, min_uppercase_letter):
+        r"""Sets the min_uppercase_letter of this PwdPolicyInfoResponseInfo.
+
+        复杂口令策略中定义的最少包含的大写字母数
+
+        :param min_uppercase_letter: The min_uppercase_letter of this PwdPolicyInfoResponseInfo.
+        :type min_uppercase_letter: int
+        """
+        self._min_uppercase_letter = min_uppercase_letter
+
+    @property
+    def min_lowercase_letter(self):
+        r"""Gets the min_lowercase_letter of this PwdPolicyInfoResponseInfo.
+
+        复杂口令策略中定义的最少包含的小写字母数
+
+        :return: The min_lowercase_letter of this PwdPolicyInfoResponseInfo.
+        :rtype: int
+        """
+        return self._min_lowercase_letter
+
+    @min_lowercase_letter.setter
+    def min_lowercase_letter(self, min_lowercase_letter):
+        r"""Sets the min_lowercase_letter of this PwdPolicyInfoResponseInfo.
+
+        复杂口令策略中定义的最少包含的小写字母数
+
+        :param min_lowercase_letter: The min_lowercase_letter of this PwdPolicyInfoResponseInfo.
+        :type min_lowercase_letter: int
+        """
+        self._min_lowercase_letter = min_lowercase_letter
+
+    @property
+    def min_number(self):
+        r"""Gets the min_number of this PwdPolicyInfoResponseInfo.
+
+        复杂口令策略中定义的最少包含的数字数
+
+        :return: The min_number of this PwdPolicyInfoResponseInfo.
+        :rtype: int
+        """
+        return self._min_number
+
+    @min_number.setter
+    def min_number(self, min_number):
+        r"""Sets the min_number of this PwdPolicyInfoResponseInfo.
+
+        复杂口令策略中定义的最少包含的数字数
+
+        :param min_number: The min_number of this PwdPolicyInfoResponseInfo.
+        :type min_number: int
+        """
+        self._min_number = min_number
+
+    @property
+    def min_special_character(self):
+        r"""Gets the min_special_character of this PwdPolicyInfoResponseInfo.
+
+        复杂口令策略中定义的最少包含的特殊字母数
+
+        :return: The min_special_character of this PwdPolicyInfoResponseInfo.
+        :rtype: int
+        """
+        return self._min_special_character
+
+    @min_special_character.setter
+    def min_special_character(self, min_special_character):
+        r"""Sets the min_special_character of this PwdPolicyInfoResponseInfo.
+
+        复杂口令策略中定义的最少包含的特殊字母数
+
+        :param min_special_character: The min_special_character of this PwdPolicyInfoResponseInfo.
+        :type min_special_character: int
+        """
+        self._min_special_character = min_special_character
+
+    @property
+    def update_time(self):
+        r"""Gets the update_time of this PwdPolicyInfoResponseInfo.
+
+        最近扫描时间
+
+        :return: The update_time of this PwdPolicyInfoResponseInfo.
+        :rtype: int
+        """
+        return self._update_time
+
+    @update_time.setter
+    def update_time(self, update_time):
+        r"""Sets the update_time of this PwdPolicyInfoResponseInfo.
+
+        最近扫描时间
+
+        :param update_time: The update_time of this PwdPolicyInfoResponseInfo.
+        :type update_time: int
+        """
+        self._update_time = update_time
 
     @property
     def suggestion(self):

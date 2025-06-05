@@ -30,7 +30,7 @@ class VulInfo:
         'description': 'str',
         'type': 'str',
         'host_id_list': 'list[str]',
-        'cve_list': 'list[VulInfoCveList]',
+        'cve_list': 'list[ShowVulReportDataResponseInfoCveList]',
         'patch_url': 'str',
         'repair_priority': 'str',
         'hosts_num': 'VulnerabilityHostNumberInfo',
@@ -98,7 +98,7 @@ class VulInfo:
         :param host_id_list: 可处置该漏洞的主机列表
         :type host_id_list: list[str]
         :param cve_list: CVE列表
-        :type cve_list: list[:class:`huaweicloudsdkhss.v5.VulInfoCveList`]
+        :type cve_list: list[:class:`huaweicloudsdkhss.v5.ShowVulReportDataResponseInfoCveList`]
         :param patch_url: 补丁地址
         :type patch_url: str
         :param repair_priority: 修复优先级 Critical 紧急 High 高 Medium 中 Low 低
@@ -481,7 +481,7 @@ class VulInfo:
         CVE列表
 
         :return: The cve_list of this VulInfo.
-        :rtype: list[:class:`huaweicloudsdkhss.v5.VulInfoCveList`]
+        :rtype: list[:class:`huaweicloudsdkhss.v5.ShowVulReportDataResponseInfoCveList`]
         """
         return self._cve_list
 
@@ -492,7 +492,7 @@ class VulInfo:
         CVE列表
 
         :param cve_list: The cve_list of this VulInfo.
-        :type cve_list: list[:class:`huaweicloudsdkhss.v5.VulInfoCveList`]
+        :type cve_list: list[:class:`huaweicloudsdkhss.v5.ShowVulReportDataResponseInfoCveList`]
         """
         self._cve_list = cve_list
 

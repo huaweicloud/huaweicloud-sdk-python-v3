@@ -36,7 +36,9 @@ class VulhandleHistoryResponseInfoDataList:
         'app_path': 'str',
         'app_version': 'str',
         'handle_type': 'str',
-        'cluster_id': 'str'
+        'cluster_id': 'str',
+        'container_name': 'str',
+        'container_id': 'str'
     }
 
     attribute_map = {
@@ -59,10 +61,12 @@ class VulhandleHistoryResponseInfoDataList:
         'app_path': 'app_path',
         'app_version': 'app_version',
         'handle_type': 'handle_type',
-        'cluster_id': 'cluster_id'
+        'cluster_id': 'cluster_id',
+        'container_name': 'container_name',
+        'container_id': 'container_id'
     }
 
-    def __init__(self, id=None, user_name=None, type=None, host_id=None, host_name=None, public_ip=None, private_ip=None, handle_time=None, status=None, failed_reason=None, description=None, vul_id=None, vul_name=None, asset_value=None, cve_list=None, app_name=None, app_path=None, app_version=None, handle_type=None, cluster_id=None):
+    def __init__(self, id=None, user_name=None, type=None, host_id=None, host_name=None, public_ip=None, private_ip=None, handle_time=None, status=None, failed_reason=None, description=None, vul_id=None, vul_name=None, asset_value=None, cve_list=None, app_name=None, app_path=None, app_version=None, handle_type=None, cluster_id=None, container_name=None, container_id=None):
         r"""VulhandleHistoryResponseInfoDataList
 
         The model defined in huaweicloud sdk
@@ -77,9 +81,9 @@ class VulhandleHistoryResponseInfoDataList:
         :type host_id: str
         :param host_name: 服务器名称
         :type host_name: str
-        :param public_ip: 服务器公网ip
+        :param public_ip: 服务器公网IP
         :type public_ip: str
-        :param private_ip: 服务器私网ip
+        :param private_ip: 服务器私网IP
         :type private_ip: str
         :param handle_time: 处置时间
         :type handle_time: str
@@ -107,6 +111,10 @@ class VulhandleHistoryResponseInfoDataList:
         :type handle_type: str
         :param cluster_id: 集群ID
         :type cluster_id: str
+        :param container_name: 容器名称
+        :type container_name: str
+        :param container_id: 容器ID
+        :type container_id: str
         """
         
         
@@ -131,6 +139,8 @@ class VulhandleHistoryResponseInfoDataList:
         self._app_version = None
         self._handle_type = None
         self._cluster_id = None
+        self._container_name = None
+        self._container_id = None
         self.discriminator = None
 
         if id is not None:
@@ -173,6 +183,10 @@ class VulhandleHistoryResponseInfoDataList:
             self.handle_type = handle_type
         if cluster_id is not None:
             self.cluster_id = cluster_id
+        if container_name is not None:
+            self.container_name = container_name
+        if container_id is not None:
+            self.container_id = container_id
 
     @property
     def id(self):
@@ -288,7 +302,7 @@ class VulhandleHistoryResponseInfoDataList:
     def public_ip(self):
         r"""Gets the public_ip of this VulhandleHistoryResponseInfoDataList.
 
-        服务器公网ip
+        服务器公网IP
 
         :return: The public_ip of this VulhandleHistoryResponseInfoDataList.
         :rtype: str
@@ -299,7 +313,7 @@ class VulhandleHistoryResponseInfoDataList:
     def public_ip(self, public_ip):
         r"""Sets the public_ip of this VulhandleHistoryResponseInfoDataList.
 
-        服务器公网ip
+        服务器公网IP
 
         :param public_ip: The public_ip of this VulhandleHistoryResponseInfoDataList.
         :type public_ip: str
@@ -310,7 +324,7 @@ class VulhandleHistoryResponseInfoDataList:
     def private_ip(self):
         r"""Gets the private_ip of this VulhandleHistoryResponseInfoDataList.
 
-        服务器私网ip
+        服务器私网IP
 
         :return: The private_ip of this VulhandleHistoryResponseInfoDataList.
         :rtype: str
@@ -321,7 +335,7 @@ class VulhandleHistoryResponseInfoDataList:
     def private_ip(self, private_ip):
         r"""Sets the private_ip of this VulhandleHistoryResponseInfoDataList.
 
-        服务器私网ip
+        服务器私网IP
 
         :param private_ip: The private_ip of this VulhandleHistoryResponseInfoDataList.
         :type private_ip: str
@@ -613,6 +627,50 @@ class VulhandleHistoryResponseInfoDataList:
         :type cluster_id: str
         """
         self._cluster_id = cluster_id
+
+    @property
+    def container_name(self):
+        r"""Gets the container_name of this VulhandleHistoryResponseInfoDataList.
+
+        容器名称
+
+        :return: The container_name of this VulhandleHistoryResponseInfoDataList.
+        :rtype: str
+        """
+        return self._container_name
+
+    @container_name.setter
+    def container_name(self, container_name):
+        r"""Sets the container_name of this VulhandleHistoryResponseInfoDataList.
+
+        容器名称
+
+        :param container_name: The container_name of this VulhandleHistoryResponseInfoDataList.
+        :type container_name: str
+        """
+        self._container_name = container_name
+
+    @property
+    def container_id(self):
+        r"""Gets the container_id of this VulhandleHistoryResponseInfoDataList.
+
+        容器ID
+
+        :return: The container_id of this VulhandleHistoryResponseInfoDataList.
+        :rtype: str
+        """
+        return self._container_id
+
+    @container_id.setter
+    def container_id(self, container_id):
+        r"""Sets the container_id of this VulhandleHistoryResponseInfoDataList.
+
+        容器ID
+
+        :param container_id: The container_id of this VulhandleHistoryResponseInfoDataList.
+        :type container_id: str
+        """
+        self._container_id = container_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

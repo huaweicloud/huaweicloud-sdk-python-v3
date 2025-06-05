@@ -31,9 +31,9 @@ class AddResourcesReq:
 
         The model defined in huaweicloud sdk
 
-        :param resources: 手动创建，选择资源层级为子维度时的资源信息。每次修改资源时只需要传递新增的资源
+        :param resources: 当资源添加方式为手动创建、资源层级为子维度时，资源分组新增资源时只需传递新增的资源信息
         :type resources: list[:class:`huaweicloudsdkces.v2.Resource`]
-        :param product_resources: 手动创建，选择资源层级为云产品时的资源详情。每次修改资源时需要将已有资源和新增的资源一起传递
+        :param product_resources: 当资源添加方式为手动创建、资源层级为云产品时，资源分组新增资源时需要将已有资源信息和新增的资源信息一起传递
         :type product_resources: list[:class:`huaweicloudsdkces.v2.ProductResource`]
         """
         
@@ -52,7 +52,7 @@ class AddResourcesReq:
     def resources(self):
         r"""Gets the resources of this AddResourcesReq.
 
-        手动创建，选择资源层级为子维度时的资源信息。每次修改资源时只需要传递新增的资源
+        当资源添加方式为手动创建、资源层级为子维度时，资源分组新增资源时只需传递新增的资源信息
 
         :return: The resources of this AddResourcesReq.
         :rtype: list[:class:`huaweicloudsdkces.v2.Resource`]
@@ -63,7 +63,7 @@ class AddResourcesReq:
     def resources(self, resources):
         r"""Sets the resources of this AddResourcesReq.
 
-        手动创建，选择资源层级为子维度时的资源信息。每次修改资源时只需要传递新增的资源
+        当资源添加方式为手动创建、资源层级为子维度时，资源分组新增资源时只需传递新增的资源信息
 
         :param resources: The resources of this AddResourcesReq.
         :type resources: list[:class:`huaweicloudsdkces.v2.Resource`]
@@ -74,7 +74,7 @@ class AddResourcesReq:
     def product_resources(self):
         r"""Gets the product_resources of this AddResourcesReq.
 
-        手动创建，选择资源层级为云产品时的资源详情。每次修改资源时需要将已有资源和新增的资源一起传递
+        当资源添加方式为手动创建、资源层级为云产品时，资源分组新增资源时需要将已有资源信息和新增的资源信息一起传递
 
         :return: The product_resources of this AddResourcesReq.
         :rtype: list[:class:`huaweicloudsdkces.v2.ProductResource`]
@@ -85,7 +85,7 @@ class AddResourcesReq:
     def product_resources(self, product_resources):
         r"""Sets the product_resources of this AddResourcesReq.
 
-        手动创建，选择资源层级为云产品时的资源详情。每次修改资源时需要将已有资源和新增的资源一起传递
+        当资源添加方式为手动创建、资源层级为云产品时，资源分组新增资源时需要将已有资源信息和新增的资源信息一起传递
 
         :param product_resources: The product_resources of this AddResourcesReq.
         :type product_resources: list[:class:`huaweicloudsdkces.v2.ProductResource`]

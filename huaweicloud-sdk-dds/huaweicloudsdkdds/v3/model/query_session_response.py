@@ -26,7 +26,9 @@ class QuerySessionResponse:
         'host': 'str',
         'client': 'str',
         'description': 'str',
-        'namespace': 'str'
+        'namespace': 'str',
+        'db': 'str',
+        'user': 'str'
     }
 
     attribute_map = {
@@ -39,10 +41,12 @@ class QuerySessionResponse:
         'host': 'host',
         'client': 'client',
         'description': 'description',
-        'namespace': 'namespace'
+        'namespace': 'namespace',
+        'db': 'db',
+        'user': 'user'
     }
 
-    def __init__(self, id=None, active=None, operation=None, type=None, cost_time=None, plan_summary=None, host=None, client=None, description=None, namespace=None):
+    def __init__(self, id=None, active=None, operation=None, type=None, cost_time=None, plan_summary=None, host=None, client=None, description=None, namespace=None, db=None, user=None):
         r"""QuerySessionResponse
 
         The model defined in huaweicloud sdk
@@ -67,6 +71,10 @@ class QuerySessionResponse:
         :type description: str
         :param namespace: 命名空间。
         :type namespace: str
+        :param db: 正在操作的数据库名称。
+        :type db: str
+        :param user: 用户名称。仅支持4.2及以上版本,如果无法显示该字段，请升级内核版本。
+        :type user: str
         """
         
         
@@ -81,6 +89,8 @@ class QuerySessionResponse:
         self._client = None
         self._description = None
         self._namespace = None
+        self._db = None
+        self._user = None
         self.discriminator = None
 
         self.id = id
@@ -93,6 +103,10 @@ class QuerySessionResponse:
         self.client = client
         self.description = description
         self.namespace = namespace
+        if db is not None:
+            self.db = db
+        if user is not None:
+            self.user = user
 
     @property
     def id(self):
@@ -313,6 +327,50 @@ class QuerySessionResponse:
         :type namespace: str
         """
         self._namespace = namespace
+
+    @property
+    def db(self):
+        r"""Gets the db of this QuerySessionResponse.
+
+        正在操作的数据库名称。
+
+        :return: The db of this QuerySessionResponse.
+        :rtype: str
+        """
+        return self._db
+
+    @db.setter
+    def db(self, db):
+        r"""Sets the db of this QuerySessionResponse.
+
+        正在操作的数据库名称。
+
+        :param db: The db of this QuerySessionResponse.
+        :type db: str
+        """
+        self._db = db
+
+    @property
+    def user(self):
+        r"""Gets the user of this QuerySessionResponse.
+
+        用户名称。仅支持4.2及以上版本,如果无法显示该字段，请升级内核版本。
+
+        :return: The user of this QuerySessionResponse.
+        :rtype: str
+        """
+        return self._user
+
+    @user.setter
+    def user(self, user):
+        r"""Sets the user of this QuerySessionResponse.
+
+        用户名称。仅支持4.2及以上版本,如果无法显示该字段，请升级内核版本。
+
+        :param user: The user of this QuerySessionResponse.
+        :type user: str
+        """
+        self._user = user
 
     def to_dict(self):
         """Returns the model properties as a dict"""

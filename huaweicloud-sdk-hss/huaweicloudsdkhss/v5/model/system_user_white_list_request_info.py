@@ -31,7 +31,7 @@ class SystemUserWhiteListRequestInfo:
 
         The model defined in huaweicloud sdk
 
-        :param host_id: 主机ID
+        :param host_id: 服务器ID
         :type host_id: str
         :param system_user_name_list: 系统用户名列表
         :type system_user_name_list: list[str]
@@ -52,7 +52,7 @@ class SystemUserWhiteListRequestInfo:
     def host_id(self):
         r"""Gets the host_id of this SystemUserWhiteListRequestInfo.
 
-        主机ID
+        服务器ID
 
         :return: The host_id of this SystemUserWhiteListRequestInfo.
         :rtype: str
@@ -63,7 +63,7 @@ class SystemUserWhiteListRequestInfo:
     def host_id(self, host_id):
         r"""Sets the host_id of this SystemUserWhiteListRequestInfo.
 
-        主机ID
+        服务器ID
 
         :param host_id: The host_id of this SystemUserWhiteListRequestInfo.
         :type host_id: str

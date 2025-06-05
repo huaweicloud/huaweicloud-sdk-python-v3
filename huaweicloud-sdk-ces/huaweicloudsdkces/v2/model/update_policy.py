@@ -18,7 +18,7 @@ class UpdatePolicy:
 
     openapi_types = {
         'metric_name': 'str',
-        'extra_info': 'MetricExtraInfo',
+        'extra_info': 'ExtraInfo',
         'period': 'int',
         'filter': 'str',
         'comparison_operator': 'str',
@@ -58,7 +58,7 @@ class UpdatePolicy:
         :param metric_name: 资源的监控指标名称，必须以字母开头，只能包含0-9/a-z/A-Z/_，字符长度最短为1，最大为64；如：弹性云服务器中的监控指标cpu_util，表示弹性服务器的CPU使用率；文档数据库中的指标mongo001_command_ps，表示command执行频率；各服务的指标名称可查看：“[服务指标名称](ces_03_0059.xml)”。
         :type metric_name: str
         :param extra_info: 
-        :type extra_info: :class:`huaweicloudsdkces.v2.MetricExtraInfo`
+        :type extra_info: :class:`huaweicloudsdkces.v2.ExtraInfo`
         :param period: 指标周期，单位是秒； 0是默认值，例如事件类告警该字段就用0即可； 1代表指标的原始周期，比如RDS监控指标原始周期是60s，表示该RDS指标按60s周期为一个数据点参与告警计算；如想了解各个云服务的指标原始周期可以参考“[支持服务列表](ces_03_0059.xml)”，300代表指标按5分钟聚合周期为一个数据点参与告警计算。
         :type period: int
         :param filter: 聚合方式, 支持的值为(average|min|max|sum)
@@ -154,7 +154,7 @@ class UpdatePolicy:
         r"""Gets the extra_info of this UpdatePolicy.
 
         :return: The extra_info of this UpdatePolicy.
-        :rtype: :class:`huaweicloudsdkces.v2.MetricExtraInfo`
+        :rtype: :class:`huaweicloudsdkces.v2.ExtraInfo`
         """
         return self._extra_info
 
@@ -163,7 +163,7 @@ class UpdatePolicy:
         r"""Sets the extra_info of this UpdatePolicy.
 
         :param extra_info: The extra_info of this UpdatePolicy.
-        :type extra_info: :class:`huaweicloudsdkces.v2.MetricExtraInfo`
+        :type extra_info: :class:`huaweicloudsdkces.v2.ExtraInfo`
         """
         self._extra_info = extra_info
 

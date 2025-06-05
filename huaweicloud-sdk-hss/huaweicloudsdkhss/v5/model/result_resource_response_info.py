@@ -53,7 +53,7 @@ class ResultResourceResponseInfo:
 
         :param host_name: 服务器名称
         :type host_name: str
-        :param host_id: 主机ID
+        :param host_id: 服务器ID
         :type host_id: str
         :param agent_id: Agent ID
         :type agent_id: str
@@ -144,7 +144,7 @@ class ResultResourceResponseInfo:
     def host_id(self):
         r"""Gets the host_id of this ResultResourceResponseInfo.
 
-        主机ID
+        服务器ID
 
         :return: The host_id of this ResultResourceResponseInfo.
         :rtype: str
@@ -155,7 +155,7 @@ class ResultResourceResponseInfo:
     def host_id(self, host_id):
         r"""Sets the host_id of this ResultResourceResponseInfo.
 
-        主机ID
+        服务器ID
 
         :param host_id: The host_id of this ResultResourceResponseInfo.
         :type host_id: str

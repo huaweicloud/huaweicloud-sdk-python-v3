@@ -30,7 +30,8 @@ class JobInstance:
         'instance_type': 'int',
         'version': 'int',
         'ignore_success': 'bool',
-        'force_success': 'bool'
+        'force_success': 'bool',
+        'error_message': 'str'
     }
 
     attribute_map = {
@@ -47,10 +48,11 @@ class JobInstance:
         'instance_type': 'instanceType',
         'version': 'version',
         'ignore_success': 'ignoreSuccess',
-        'force_success': 'forceSuccess'
+        'force_success': 'forceSuccess',
+        'error_message': 'errorMessage'
     }
 
-    def __init__(self, job_name=None, status=None, plan_time=None, start_time=None, end_time=None, execute_time=None, submit_time=None, instance_id=None, job_id=None, job_instance_name=None, instance_type=None, version=None, ignore_success=None, force_success=None):
+    def __init__(self, job_name=None, status=None, plan_time=None, start_time=None, end_time=None, execute_time=None, submit_time=None, instance_id=None, job_id=None, job_instance_name=None, instance_type=None, version=None, ignore_success=None, force_success=None, error_message=None):
         r"""JobInstance
 
         The model defined in huaweicloud sdk
@@ -83,6 +85,8 @@ class JobInstance:
         :type ignore_success: bool
         :param force_success: 作业成功状态，是否强制成功
         :type force_success: bool
+        :param error_message: 作业实例失败的错误信息。
+        :type error_message: str
         """
         
         
@@ -101,6 +105,7 @@ class JobInstance:
         self._version = None
         self._ignore_success = None
         self._force_success = None
+        self._error_message = None
         self.discriminator = None
 
         if job_name is not None:
@@ -131,6 +136,8 @@ class JobInstance:
             self.ignore_success = ignore_success
         if force_success is not None:
             self.force_success = force_success
+        if error_message is not None:
+            self.error_message = error_message
 
     @property
     def job_name(self):
@@ -439,6 +446,28 @@ class JobInstance:
         :type force_success: bool
         """
         self._force_success = force_success
+
+    @property
+    def error_message(self):
+        r"""Gets the error_message of this JobInstance.
+
+        作业实例失败的错误信息。
+
+        :return: The error_message of this JobInstance.
+        :rtype: str
+        """
+        return self._error_message
+
+    @error_message.setter
+    def error_message(self, error_message):
+        r"""Sets the error_message of this JobInstance.
+
+        作业实例失败的错误信息。
+
+        :param error_message: The error_message of this JobInstance.
+        :type error_message: str
+        """
+        self._error_message = error_message
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -25,11 +25,11 @@ from concurrent.futures import ThreadPoolExecutor
 import requests
 from requests import HTTPError, Timeout, TooManyRedirects
 from requests.adapters import HTTPAdapter
-from requests.exceptions import ConnectionError
+from requests.exceptions import ConnectionError, RetryError
 from requests.packages.urllib3.util import Retry
 
 from huaweicloudsdkcore.exceptions import exceptions
-from huaweicloudsdkcore.exceptions.exception_handler import process_connection_error
+from huaweicloudsdkcore.exceptions.exception_handler import process_connection_error, process_retry_error
 from huaweicloudsdkcore.http.future_session import FutureSession
 
 
@@ -96,6 +96,8 @@ class HttpClient(object):
             )
         except ConnectionError as conn_err:
             raise process_connection_error(conn_err, self._logger)
+        except RetryError as retry_error:
+            raise process_retry_error(retry_error, self._logger)
 
         self.response_error_hook_factory()(response)
         return response

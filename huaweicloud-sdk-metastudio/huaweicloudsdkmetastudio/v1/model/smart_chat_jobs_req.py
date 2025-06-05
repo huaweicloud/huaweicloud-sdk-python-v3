@@ -29,7 +29,7 @@ class SmartChatJobsReq:
 
         The model defined in huaweicloud sdk
 
-        :param extend_param: 扩展参数，按照Json格式携带 * city:所在城市
+        :param extend_param: 扩展参数，按照Json格式携带。 * city：所在城市 * client_id：客户端ID
         :type extend_param: str
         """
         
@@ -45,7 +45,7 @@ class SmartChatJobsReq:
     def extend_param(self):
         r"""Gets the extend_param of this SmartChatJobsReq.
 
-        扩展参数，按照Json格式携带 * city:所在城市
+        扩展参数，按照Json格式携带。 * city：所在城市 * client_id：客户端ID
 
         :return: The extend_param of this SmartChatJobsReq.
         :rtype: str
@@ -56,7 +56,7 @@ class SmartChatJobsReq:
     def extend_param(self, extend_param):
         r"""Sets the extend_param of this SmartChatJobsReq.
 
-        扩展参数，按照Json格式携带 * city:所在城市
+        扩展参数，按照Json格式携带。 * city：所在城市 * client_id：客户端ID
 
         :param extend_param: The extend_param of this SmartChatJobsReq.
         :type extend_param: str

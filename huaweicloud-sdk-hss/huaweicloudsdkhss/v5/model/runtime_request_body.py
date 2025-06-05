@@ -31,7 +31,7 @@ class RuntimeRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param runtime_name: 运行时名称：   - crio_endpoint：CRIO   - containerd_endpoint：Containerd   - docker_endpoint：Docker   - isulad_endpoint：Isulad   - podman_endpoint：Podman
+        :param runtime_name: 运行时名称：   - crio_endpoint：CRIO   - containerd_endpoint：Containerd   - docker_endpoint：Docker   - isulad_endpoint：Isulad   - podman_endpoint：Podman 
         :type runtime_name: str
         :param runtime_path: 运行时路径
         :type runtime_path: str
@@ -52,7 +52,7 @@ class RuntimeRequestBody:
     def runtime_name(self):
         r"""Gets the runtime_name of this RuntimeRequestBody.
 
-        运行时名称：   - crio_endpoint：CRIO   - containerd_endpoint：Containerd   - docker_endpoint：Docker   - isulad_endpoint：Isulad   - podman_endpoint：Podman
+        运行时名称：   - crio_endpoint：CRIO   - containerd_endpoint：Containerd   - docker_endpoint：Docker   - isulad_endpoint：Isulad   - podman_endpoint：Podman 
 
         :return: The runtime_name of this RuntimeRequestBody.
         :rtype: str
@@ -63,7 +63,7 @@ class RuntimeRequestBody:
     def runtime_name(self, runtime_name):
         r"""Sets the runtime_name of this RuntimeRequestBody.
 
-        运行时名称：   - crio_endpoint：CRIO   - containerd_endpoint：Containerd   - docker_endpoint：Docker   - isulad_endpoint：Isulad   - podman_endpoint：Podman
+        运行时名称：   - crio_endpoint：CRIO   - containerd_endpoint：Containerd   - docker_endpoint：Docker   - isulad_endpoint：Isulad   - podman_endpoint：Podman 
 
         :param runtime_name: The runtime_name of this RuntimeRequestBody.
         :type runtime_name: str

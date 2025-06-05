@@ -73,7 +73,7 @@ class CreateSmartChatRoomReq:
         :type voice_config_list: list[:class:`huaweicloudsdkmetastudio.v1.ChatVoiceConfig`]
         :param robot_id: 机器人ID。获取方法请参考[创建应用](CreateRobot.xml)。
         :type robot_id: str
-        :param concurrency: **参数解释**： 并发路数。
+        :param concurrency: **参数解释**： 并发路数。 **约束限制**： 默认没有并发路数，如果不配置并发数量，则无法启动智能交互对话任务。
         :type concurrency: int
         :param default_language: 默认语言，智能交互接口使用。默认值CN。 * CN：简体中文。 * EN：英语。 * ESP：西班牙语（仅海外站点支持） * por：葡萄牙语（仅海外站点支持） * Arabic：阿拉伯语（仅海外站点支持） * Thai：泰语（仅海外站点支持）
         :type default_language: str
@@ -295,7 +295,7 @@ class CreateSmartChatRoomReq:
     def concurrency(self):
         r"""Gets the concurrency of this CreateSmartChatRoomReq.
 
-        **参数解释**： 并发路数。
+        **参数解释**： 并发路数。 **约束限制**： 默认没有并发路数，如果不配置并发数量，则无法启动智能交互对话任务。
 
         :return: The concurrency of this CreateSmartChatRoomReq.
         :rtype: int
@@ -306,7 +306,7 @@ class CreateSmartChatRoomReq:
     def concurrency(self, concurrency):
         r"""Sets the concurrency of this CreateSmartChatRoomReq.
 
-        **参数解释**： 并发路数。
+        **参数解释**： 并发路数。 **约束限制**： 默认没有并发路数，如果不配置并发数量，则无法启动智能交互对话任务。
 
         :param concurrency: The concurrency of this CreateSmartChatRoomReq.
         :type concurrency: int

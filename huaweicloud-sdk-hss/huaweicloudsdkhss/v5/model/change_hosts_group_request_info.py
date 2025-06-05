@@ -37,7 +37,7 @@ class ChangeHostsGroupRequestInfo:
         :type group_name: str
         :param group_id: 服务器组ID
         :type group_id: str
-        :param host_id_list: 服务器ID列表
+        :param host_id_list: 主机id列表
         :type host_id_list: list[str]
         """
         
@@ -102,7 +102,7 @@ class ChangeHostsGroupRequestInfo:
     def host_id_list(self):
         r"""Gets the host_id_list of this ChangeHostsGroupRequestInfo.
 
-        服务器ID列表
+        主机id列表
 
         :return: The host_id_list of this ChangeHostsGroupRequestInfo.
         :rtype: list[str]
@@ -113,7 +113,7 @@ class ChangeHostsGroupRequestInfo:
     def host_id_list(self, host_id_list):
         r"""Sets the host_id_list of this ChangeHostsGroupRequestInfo.
 
-        服务器ID列表
+        主机id列表
 
         :param host_id_list: The host_id_list of this ChangeHostsGroupRequestInfo.
         :type host_id_list: list[str]

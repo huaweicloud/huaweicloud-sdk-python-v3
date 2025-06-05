@@ -1,3 +1,354 @@
+# 3.1.151 2025-06-05
+
+### HuaweiCloud SDK Core
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 状态码429应抛出ClientRequestException类型异常
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK CES
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpdateAlarmRulePolicies**
+    - 请求参数变更
+      - `* policies.extra_info: object<MetricExtraInfo> -> object<ExtraInfo>`
+    - 响应参数变更
+      - `* policies.extra_info: object<MetricExtraInfo> -> object<ExtraInfo>`
+  - **ListNotificationMasks**
+    - 响应参数变更
+      - `+ notification_masks.effective_timezone`
+  - **ListOneClickAlarmRules**
+    - 响应参数变更
+      - `+ alarms.effective_timezone`
+      - `+ alarms.policies.hierarchical_value`
+      - `+ alarms.policies.selected_unit`
+
+### HuaweiCloud SDK Cloudtest
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持接口`CreateTaskDefaultResult`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK CodeArtsBuild
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持以下接口：
+    - `ShowJobNoticeConfigInfo`
+    - `ShowRelatedProject`
+    - `ListRecords`
+    - `ShowBuildInfoRecord`
+    - `DownloadKeystoreByName`
+    - `ShowDefaultBuildParameters`
+    - `ShowKeystorePermission`
+    - `ListRelatedProjectInfo`
+    - `ListKeystore`
+    - `ShowDockerfileTemplate`
+    - `CheckJobNameIsExists`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持接口`ListEntityDetails`、`ListCategoriesTree`、`ListLogicEntities`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowFactoryFullText**
+    - 请求参数变更
+      - `* search_text: optional -> required`
+    - 响应参数变更
+      - `* total_hits: int32 -> int64`
+
+### HuaweiCloud SDK DDS
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListSessions**
+    - 响应参数变更
+      - `+ sessions.db`
+      - `+ sessions.user`
+
+### HuaweiCloud SDK DGC
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListJobInstances**
+    - 响应参数变更
+      - `+ instances.errorMessage`
+
+### HuaweiCloud SDK DLI
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateQueue**
+    - 请求参数变更
+      - `- properties.computeEngine.maxInstance`
+      - `- properties.job.maxConcurrent`
+      - `- properties.computeEngine.maxPrefetchInstance`
+      - `* properties: object<CommonQueueProperty> -> object`
+
+### HuaweiCloud SDK eiHealth
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持以下接口：
+    - `InitializePlatform`
+    - `ListSfsTurbos`
+    - `ShowAgency`
+    - `UpdateAgency`
+    - `ListUserNotebook`
+    - `ListUserImage`
+    - `UpdateTopProject`
+    - `ListUserApp`
+    - `ListUserJob`
+    - `ListUserWorkflow`
+    - `ListUserDrugJob`
+    - `ListProjectStatistics`
+    - `ListComputingCluster`
+    - `CreateComputingCluster`
+    - `DeleteComputingCluster`
+    - `ListCceCluster`
+    - `ListClusterInstallStep`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK HSS
+
+- _接口版本_
+  - V5
+- _新增特性_
+  - 支持接口`BatchStartProtection`、`ShowAntivirusPayPerScanStatus`、`ShowAgentDaemonsetDetailInfo`、`CreateAgentDaemonset`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListDownloadExportedFile**
+    - 请求参数变更
+      - `* region: required -> optional`
+  - **ListQueryExportTask**
+    - 请求参数变更
+      - `* region: required -> optional`
+  - **AssociatePolicyGroup**
+    - 请求参数变更
+      - `* region: required -> optional`
+      - `+ deploy_type`
+  - **CreateQuotasOrder**
+    - 请求参数变更
+      - `* region: required -> optional`
+  - **StopProtection**
+    - 请求参数变更
+      - `* region: required -> optional`
+  - **SetRaspSwitch**
+    - 请求参数变更
+      - `* region: required -> optional`
+  - **SetWtpProtectionStatusInfo**
+    - 请求参数变更
+      - `* region: required -> optional`
+  - **DeleteAccount**
+    - 请求参数变更
+      - `* region: required -> optional`
+  - **ListAccounts**
+    - 请求参数变更
+      - `* region: required -> optional`
+  - **BatchAddAccounts**
+    - 请求参数变更
+      - `* region: required -> optional`
+  - **ListOrganizationTree**
+    - 请求参数变更
+      - `* region: required -> optional`
+  - **ListUsers**
+    - 响应参数变更
+      - `+ data_list.first_scan_time`
+  - **ListPasswordComplexity**
+    - 响应参数变更
+      - `+ data_list.min_length_num`
+      - `+ data_list.min_uppercase_letter`
+      - `+ data_list.min_lowercase_letter`
+      - `+ data_list.min_number`
+      - `+ data_list.min_special_character`
+      - `+ data_list.update_time`
+  - **ListRiskConfigs**
+    - 响应参数变更
+      - `+ data_list.executable_file_path`
+  - **ListContainers**
+    - 响应参数变更
+      - `+ data_list.id`
+      - `+ data_list.region_id`
+  - **ListContainerNodes**
+    - 请求参数变更
+      - `* region: required -> optional`
+  - **ListHostStatus**
+    - 请求参数变更
+      - `+ cluster_id`
+  - **SwitchHostsProtectStatus**
+    - 请求参数变更
+      - `* region: required -> optional`
+  - **ListProtectionServer**
+    - 请求参数变更
+      - `* region: required -> optional`
+  - **ListVulHandleHistory**
+    - 响应参数变更
+      - `+ data_list.container_name`
+      - `+ data_list.container_id`
+  - **ListHostRaspProtectHistoryInfo**
+    - 请求参数变更
+      - `* region: required -> optional`
+  - **ListHostProtectHistoryInfo**
+    - 请求参数变更
+      - `* region: required -> optional`
+  - **ShowBackupPolicyInfo**
+    - 请求参数变更
+      - `* region: required -> optional`
+  - **UpdateBackupPolicyInfo**
+    - 请求参数变更
+      - `* region: required -> optional`
+  - **ListQuotasDetail**
+    - 响应参数变更
+      - `+ create_time`
+      - `+ data_list.create_time`
+  - **ListBlockedIp**
+    - 请求参数变更
+      - `* region: required -> optional`
+  - **ChangeBlockedIp**
+    - 请求参数变更
+      - `* region: required -> optional`
+  - **ListAlarmWhiteList**
+    - 请求参数变更
+      - `* region: required -> optional`
+  - **DeleteHostsGroup**
+    - 请求参数变更
+      - `* region: required -> optional`
+  - **AddHostsGroup**
+    - 请求参数变更
+      - `* region: required -> optional`
+  - **ChangeHostsGroup**
+    - 请求参数变更
+      - `* region: required -> optional`
+  - **ListHostGroups**
+    - 请求参数变更
+      - `* region: required -> optional`
+  - **ListSwrImageRepository**
+    - 请求参数变更
+      - `* region: required -> optional`
+  - **ListPolicyGroup**
+    - 请求参数变更
+      - `* region: required -> optional`
+  - **ShowProductdataOfferingInfos**
+    - 请求参数变更
+      - `* region: required -> optional`
+  - **UpdateProtectionPolicy**
+    - 请求参数变更
+      - `* region: required -> optional`
+      - `+ deploy_mode`
+  - **ListProtectionPolicy**
+    - 请求参数变更
+      - `* region: required -> optional`
+    - 响应参数变更
+      - `+ data_list.ai_protection_status`
+  - **ListWtpProtectHost**
+    - 请求参数变更
+      - `* region: required -> optional`
+  - **ListSecurityEvents**
+    - 请求参数变更
+      - `* region: required -> optional`
+  - **ChangeEvent**
+    - 请求参数变更
+      - `* region: required -> optional`
+  - **StartProtection**
+    - 请求参数变更
+      - `* region: required -> optional`
+  - **ChangeIsolatedFile**
+    - 请求参数变更
+      - `* region: required -> optional`
+  - **ListIsolatedFile**
+    - 请求参数变更
+      - `* region: required -> optional`
+
+### HuaweiCloud SDK LTS
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListLogStreams**
+    - 响应参数变更
+      - `+ log_streams.log_group_id`
+
+### HuaweiCloud SDK MetaStudio
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持接口`ShowDialogReportConfig`、`UpdateDialogReportConfig`、`CreateDialogReportConfig`、`DeleteDialogReportConfig`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowPacifyWordsSwitch**
+    - 请求参数变更
+      - `+ language: enum value [ESP,por,Arabic,Thai]`
+  - **ShowPacifyWordsTriggerTime**
+    - 请求参数变更
+      - `+ language: enum value [ESP,por,Arabic,Thai]`
+  - **ListPacifyWords**
+    - 请求参数变更
+      - `+ language: enum value [ESP,por,Arabic,Thai]`
+
+### HuaweiCloud SDK RocketMQ
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreatePostPaidInstance**
+    - 请求参数变更
+      - `+ proxy_enable`
+      - `+ arch_type`
+      - `+ tls_mode`
+
 # 3.1.150 2025-05-29
 
 ### HuaweiCloud SDK Core

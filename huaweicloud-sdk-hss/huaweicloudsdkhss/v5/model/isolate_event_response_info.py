@@ -133,15 +133,15 @@ class IsolateEventResponseInfo:
         :type event_type: int
         :param event_name: 事件名称
         :type event_name: str
-        :param severity: 威胁等级，包含如下:   - Security : 安全   - Low : 低危   - Medium : 中危   - High : 高危   - Critical : 危急
+        :param severity: 威胁等级，包含如下:   - Security：安全   - Low: 低危   - Medium: 中危   - High: 高危   - Critical: 危急
         :type severity: str
-        :param container_name: 容器实例名称，只有容器类型的告警有
+        :param container_name: 容器实例名称
         :type container_name: str
         :param image_name: 镜像名称，只有容器类型的告警有
         :type image_name: str
         :param host_name: 服务器名称
         :type host_name: str
-        :param host_id: 主机ID
+        :param host_id: 服务器ID
         :type host_id: str
         :param private_ip: 服务器私有IP
         :type private_ip: str
@@ -167,7 +167,7 @@ class IsolateEventResponseInfo:
         :type recent_time: int
         :param handle_time: 处置时间，毫秒，已处理的告警才有
         :type handle_time: int
-        :param handle_status: 处理状态，包含如下:   - unhandled ：未处理   - handled : 已处理
+        :param handle_status: 处置状态，包含如下:   - unhandled：未处理   - handled: 已处理
         :type handle_status: str
         :param handle_method: 处理方式，已处理的告警才有，包含如下:   - mark_as_handled : 手动处理   - ignore : 忽略   - add_to_alarm_whitelist : 加入告警白名单   - add_to_login_whitelist : 加入登录白名单   - isolate_and_kill : 隔离查杀
         :type handle_method: str
@@ -469,7 +469,7 @@ class IsolateEventResponseInfo:
     def severity(self):
         r"""Gets the severity of this IsolateEventResponseInfo.
 
-        威胁等级，包含如下:   - Security : 安全   - Low : 低危   - Medium : 中危   - High : 高危   - Critical : 危急
+        威胁等级，包含如下:   - Security：安全   - Low: 低危   - Medium: 中危   - High: 高危   - Critical: 危急
 
         :return: The severity of this IsolateEventResponseInfo.
         :rtype: str
@@ -480,7 +480,7 @@ class IsolateEventResponseInfo:
     def severity(self, severity):
         r"""Sets the severity of this IsolateEventResponseInfo.
 
-        威胁等级，包含如下:   - Security : 安全   - Low : 低危   - Medium : 中危   - High : 高危   - Critical : 危急
+        威胁等级，包含如下:   - Security：安全   - Low: 低危   - Medium: 中危   - High: 高危   - Critical: 危急
 
         :param severity: The severity of this IsolateEventResponseInfo.
         :type severity: str
@@ -491,7 +491,7 @@ class IsolateEventResponseInfo:
     def container_name(self):
         r"""Gets the container_name of this IsolateEventResponseInfo.
 
-        容器实例名称，只有容器类型的告警有
+        容器实例名称
 
         :return: The container_name of this IsolateEventResponseInfo.
         :rtype: str
@@ -502,7 +502,7 @@ class IsolateEventResponseInfo:
     def container_name(self, container_name):
         r"""Sets the container_name of this IsolateEventResponseInfo.
 
-        容器实例名称，只有容器类型的告警有
+        容器实例名称
 
         :param container_name: The container_name of this IsolateEventResponseInfo.
         :type container_name: str
@@ -557,7 +557,7 @@ class IsolateEventResponseInfo:
     def host_id(self):
         r"""Gets the host_id of this IsolateEventResponseInfo.
 
-        主机ID
+        服务器ID
 
         :return: The host_id of this IsolateEventResponseInfo.
         :rtype: str
@@ -568,7 +568,7 @@ class IsolateEventResponseInfo:
     def host_id(self, host_id):
         r"""Sets the host_id of this IsolateEventResponseInfo.
 
-        主机ID
+        服务器ID
 
         :param host_id: The host_id of this IsolateEventResponseInfo.
         :type host_id: str
@@ -843,7 +843,7 @@ class IsolateEventResponseInfo:
     def handle_status(self):
         r"""Gets the handle_status of this IsolateEventResponseInfo.
 
-        处理状态，包含如下:   - unhandled ：未处理   - handled : 已处理
+        处置状态，包含如下:   - unhandled：未处理   - handled: 已处理
 
         :return: The handle_status of this IsolateEventResponseInfo.
         :rtype: str
@@ -854,7 +854,7 @@ class IsolateEventResponseInfo:
     def handle_status(self, handle_status):
         r"""Sets the handle_status of this IsolateEventResponseInfo.
 
-        处理状态，包含如下:   - unhandled ：未处理   - handled : 已处理
+        处置状态，包含如下:   - unhandled：未处理   - handled: 已处理
 
         :param handle_status: The handle_status of this IsolateEventResponseInfo.
         :type handle_status: str

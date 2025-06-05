@@ -79,7 +79,7 @@ class AntiVirusResultResponseInfo:
         :type event_type: int
         :param occur_time: 发生时间，毫秒
         :type occur_time: int
-        :param handle_status: 处理状态，包含如下:   - unhandled ：未处理   - handled : 已处理
+        :param handle_status: 处置状态，包含如下:   - unhandled：未处理   - handled: 已处理
         :type handle_status: str
         :param handle_method: 处理方式，包含如下:   - mark_as_handled : 手动处理   - ignore : 忽略   - add_to_alarm_whitelist : 加入告警白名单   - isolate_and_kill : 隔离文件
         :type handle_method: str
@@ -362,7 +362,7 @@ class AntiVirusResultResponseInfo:
     def handle_status(self):
         r"""Gets the handle_status of this AntiVirusResultResponseInfo.
 
-        处理状态，包含如下:   - unhandled ：未处理   - handled : 已处理
+        处置状态，包含如下:   - unhandled：未处理   - handled: 已处理
 
         :return: The handle_status of this AntiVirusResultResponseInfo.
         :rtype: str
@@ -373,7 +373,7 @@ class AntiVirusResultResponseInfo:
     def handle_status(self, handle_status):
         r"""Sets the handle_status of this AntiVirusResultResponseInfo.
 
-        处理状态，包含如下:   - unhandled ：未处理   - handled : 已处理
+        处置状态，包含如下:   - unhandled：未处理   - handled: 已处理
 
         :param handle_status: The handle_status of this AntiVirusResultResponseInfo.
         :type handle_status: str

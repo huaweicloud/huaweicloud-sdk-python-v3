@@ -27,7 +27,8 @@ class ListLogStreamsResponseBody1LogStreams:
         'hot_cold_separation': 'bool',
         'auth_web_tracking': 'bool',
         'ttl_in_days': 'int',
-        'hot_storage_days': 'int'
+        'hot_storage_days': 'int',
+        'log_group_id': 'str'
     }
 
     attribute_map = {
@@ -41,10 +42,11 @@ class ListLogStreamsResponseBody1LogStreams:
         'hot_cold_separation': 'hot_cold_separation',
         'auth_web_tracking': 'auth_web_tracking',
         'ttl_in_days': 'ttl_in_days',
-        'hot_storage_days': 'hot_storage_days'
+        'hot_storage_days': 'hot_storage_days',
+        'log_group_id': 'log_group_id'
     }
 
-    def __init__(self, creation_time=None, log_stream_id=None, log_stream_name=None, log_stream_name_alias=None, tag=None, filter_count=None, whether_log_storage=None, hot_cold_separation=None, auth_web_tracking=None, ttl_in_days=None, hot_storage_days=None):
+    def __init__(self, creation_time=None, log_stream_id=None, log_stream_name=None, log_stream_name_alias=None, tag=None, filter_count=None, whether_log_storage=None, hot_cold_separation=None, auth_web_tracking=None, ttl_in_days=None, hot_storage_days=None, log_group_id=None):
         r"""ListLogStreamsResponseBody1LogStreams
 
         The model defined in huaweicloud sdk
@@ -71,6 +73,8 @@ class ListLogStreamsResponseBody1LogStreams:
         :type ttl_in_days: int
         :param hot_storage_days: 标准存储时间
         :type hot_storage_days: int
+        :param log_group_id: 日志组ID
+        :type log_group_id: str
         """
         
         
@@ -86,6 +90,7 @@ class ListLogStreamsResponseBody1LogStreams:
         self._auth_web_tracking = None
         self._ttl_in_days = None
         self._hot_storage_days = None
+        self._log_group_id = None
         self.discriminator = None
 
         self.creation_time = creation_time
@@ -105,6 +110,8 @@ class ListLogStreamsResponseBody1LogStreams:
             self.ttl_in_days = ttl_in_days
         if hot_storage_days is not None:
             self.hot_storage_days = hot_storage_days
+        if log_group_id is not None:
+            self.log_group_id = log_group_id
 
     @property
     def creation_time(self):
@@ -347,6 +354,28 @@ class ListLogStreamsResponseBody1LogStreams:
         :type hot_storage_days: int
         """
         self._hot_storage_days = hot_storage_days
+
+    @property
+    def log_group_id(self):
+        r"""Gets the log_group_id of this ListLogStreamsResponseBody1LogStreams.
+
+        日志组ID
+
+        :return: The log_group_id of this ListLogStreamsResponseBody1LogStreams.
+        :rtype: str
+        """
+        return self._log_group_id
+
+    @log_group_id.setter
+    def log_group_id(self, log_group_id):
+        r"""Sets the log_group_id of this ListLogStreamsResponseBody1LogStreams.
+
+        日志组ID
+
+        :param log_group_id: The log_group_id of this ListLogStreamsResponseBody1LogStreams.
+        :type log_group_id: str
+        """
+        self._log_group_id = log_group_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

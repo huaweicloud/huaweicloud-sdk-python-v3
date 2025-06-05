@@ -30,7 +30,7 @@ class ListAgentInstallScriptResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param install_script_list: agent安装脚本
+        :param install_script_list: 安装脚本列表
         :type install_script_list: list[:class:`huaweicloudsdkhss.v5.AgentInstallScriptResponseInfo`]
         """
         
@@ -46,7 +46,7 @@ class ListAgentInstallScriptResponse(SdkResponse):
     def install_script_list(self):
         r"""Gets the install_script_list of this ListAgentInstallScriptResponse.
 
-        agent安装脚本
+        安装脚本列表
 
         :return: The install_script_list of this ListAgentInstallScriptResponse.
         :rtype: list[:class:`huaweicloudsdkhss.v5.AgentInstallScriptResponseInfo`]
@@ -57,7 +57,7 @@ class ListAgentInstallScriptResponse(SdkResponse):
     def install_script_list(self, install_script_list):
         r"""Sets the install_script_list of this ListAgentInstallScriptResponse.
 
-        agent安装脚本
+        安装脚本列表
 
         :param install_script_list: The install_script_list of this ListAgentInstallScriptResponse.
         :type install_script_list: list[:class:`huaweicloudsdkhss.v5.AgentInstallScriptResponseInfo`]

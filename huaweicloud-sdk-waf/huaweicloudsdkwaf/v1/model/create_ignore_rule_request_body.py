@@ -39,7 +39,7 @@ class CreateIgnoreRuleRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param domain: 防护域名或防护网站，数组长度为0时，代表规则对全部域名或防护网站生效
+        :param domain: 防护域名或防护网站，数组长度为0时，代表规则对全部域名或防护网站生效。当防护域名的接入模式为云模式-ELB接入时，该参数需以&lt;域名&gt;:&lt;id&gt;格式填写（如www.example.com:id），若域名绑定的负载均衡器（ELB）下所有监听器都接入WAF防护，填入的id为负载均衡器（ELB）id，否则填入的id为指定监听器id；可在WAF控制台域名详情页查询与该域名绑定的ELB实例id，在ELB侧监听器页签下查询其监听器id
         :type domain: list[str]
         :param conditions: 条件列表
         :type conditions: list[:class:`huaweicloudsdkwaf.v1.CreateCondition`]
@@ -76,7 +76,7 @@ class CreateIgnoreRuleRequestBody:
     def domain(self):
         r"""Gets the domain of this CreateIgnoreRuleRequestBody.
 
-        防护域名或防护网站，数组长度为0时，代表规则对全部域名或防护网站生效
+        防护域名或防护网站，数组长度为0时，代表规则对全部域名或防护网站生效。当防护域名的接入模式为云模式-ELB接入时，该参数需以<域名>:<id>格式填写（如www.example.com:id），若域名绑定的负载均衡器（ELB）下所有监听器都接入WAF防护，填入的id为负载均衡器（ELB）id，否则填入的id为指定监听器id；可在WAF控制台域名详情页查询与该域名绑定的ELB实例id，在ELB侧监听器页签下查询其监听器id
 
         :return: The domain of this CreateIgnoreRuleRequestBody.
         :rtype: list[str]
@@ -87,7 +87,7 @@ class CreateIgnoreRuleRequestBody:
     def domain(self, domain):
         r"""Sets the domain of this CreateIgnoreRuleRequestBody.
 
-        防护域名或防护网站，数组长度为0时，代表规则对全部域名或防护网站生效
+        防护域名或防护网站，数组长度为0时，代表规则对全部域名或防护网站生效。当防护域名的接入模式为云模式-ELB接入时，该参数需以<域名>:<id>格式填写（如www.example.com:id），若域名绑定的负载均衡器（ELB）下所有监听器都接入WAF防护，填入的id为负载均衡器（ELB）id，否则填入的id为指定监听器id；可在WAF控制台域名详情页查询与该域名绑定的ELB实例id，在ELB侧监听器页签下查询其监听器id
 
         :param domain: The domain of this CreateIgnoreRuleRequestBody.
         :type domain: list[str]

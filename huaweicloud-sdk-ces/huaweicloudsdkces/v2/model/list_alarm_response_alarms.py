@@ -75,9 +75,9 @@ class ListAlarmResponseAlarms:
         :type resources: list[:class:`huaweicloudsdkces.v2.ResourcesInListResp`]
         :param type: 
         :type type: :class:`huaweicloudsdkces.v2.AlarmType`
-        :param enabled: 告警开关
+        :param enabled: 是否开启告警规则。true:开启，false:关闭。
         :type enabled: bool
-        :param notification_enabled: 是否开启告警通知
+        :param notification_enabled: 是否开启告警通知。true:开启，false:关闭。
         :type notification_enabled: bool
         :param alarm_notifications: 告警触发的动作
         :type alarm_notifications: list[:class:`huaweicloudsdkces.v2.Notification`]
@@ -307,7 +307,7 @@ class ListAlarmResponseAlarms:
     def enabled(self):
         r"""Gets the enabled of this ListAlarmResponseAlarms.
 
-        告警开关
+        是否开启告警规则。true:开启，false:关闭。
 
         :return: The enabled of this ListAlarmResponseAlarms.
         :rtype: bool
@@ -318,7 +318,7 @@ class ListAlarmResponseAlarms:
     def enabled(self, enabled):
         r"""Sets the enabled of this ListAlarmResponseAlarms.
 
-        告警开关
+        是否开启告警规则。true:开启，false:关闭。
 
         :param enabled: The enabled of this ListAlarmResponseAlarms.
         :type enabled: bool
@@ -329,7 +329,7 @@ class ListAlarmResponseAlarms:
     def notification_enabled(self):
         r"""Gets the notification_enabled of this ListAlarmResponseAlarms.
 
-        是否开启告警通知
+        是否开启告警通知。true:开启，false:关闭。
 
         :return: The notification_enabled of this ListAlarmResponseAlarms.
         :rtype: bool
@@ -340,7 +340,7 @@ class ListAlarmResponseAlarms:
     def notification_enabled(self, notification_enabled):
         r"""Sets the notification_enabled of this ListAlarmResponseAlarms.
 
-        是否开启告警通知
+        是否开启告警通知。true:开启，false:关闭。
 
         :param notification_enabled: The notification_enabled of this ListAlarmResponseAlarms.
         :type notification_enabled: bool

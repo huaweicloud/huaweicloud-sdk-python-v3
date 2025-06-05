@@ -28,6 +28,7 @@ class UserResponseInfo:
         'user_home_dir': 'str',
         'shell': 'str',
         'recent_scan_time': 'int',
+        'first_scan_time': 'int',
         'container_id': 'str',
         'container_name': 'str'
     }
@@ -44,11 +45,12 @@ class UserResponseInfo:
         'user_home_dir': 'user_home_dir',
         'shell': 'shell',
         'recent_scan_time': 'recent_scan_time',
+        'first_scan_time': 'first_scan_time',
         'container_id': 'container_id',
         'container_name': 'container_name'
     }
 
-    def __init__(self, agent_id=None, host_id=None, host_name=None, host_ip=None, user_name=None, login_permission=None, root_permission=None, user_group_name=None, user_home_dir=None, shell=None, recent_scan_time=None, container_id=None, container_name=None):
+    def __init__(self, agent_id=None, host_id=None, host_name=None, host_ip=None, user_name=None, login_permission=None, root_permission=None, user_group_name=None, user_home_dir=None, shell=None, recent_scan_time=None, first_scan_time=None, container_id=None, container_name=None):
         r"""UserResponseInfo
 
         The model defined in huaweicloud sdk
@@ -75,6 +77,8 @@ class UserResponseInfo:
         :type shell: str
         :param recent_scan_time: 最近扫描时间
         :type recent_scan_time: int
+        :param first_scan_time: 首次扫描时间
+        :type first_scan_time: int
         :param container_id: 容器id
         :type container_id: str
         :param container_name: 容器名称
@@ -94,6 +98,7 @@ class UserResponseInfo:
         self._user_home_dir = None
         self._shell = None
         self._recent_scan_time = None
+        self._first_scan_time = None
         self._container_id = None
         self._container_name = None
         self.discriminator = None
@@ -120,6 +125,8 @@ class UserResponseInfo:
             self.shell = shell
         if recent_scan_time is not None:
             self.recent_scan_time = recent_scan_time
+        if first_scan_time is not None:
+            self.first_scan_time = first_scan_time
         if container_id is not None:
             self.container_id = container_id
         if container_name is not None:
@@ -366,6 +373,28 @@ class UserResponseInfo:
         :type recent_scan_time: int
         """
         self._recent_scan_time = recent_scan_time
+
+    @property
+    def first_scan_time(self):
+        r"""Gets the first_scan_time of this UserResponseInfo.
+
+        首次扫描时间
+
+        :return: The first_scan_time of this UserResponseInfo.
+        :rtype: int
+        """
+        return self._first_scan_time
+
+    @first_scan_time.setter
+    def first_scan_time(self, first_scan_time):
+        r"""Sets the first_scan_time of this UserResponseInfo.
+
+        首次扫描时间
+
+        :param first_scan_time: The first_scan_time of this UserResponseInfo.
+        :type first_scan_time: int
+        """
+        self._first_scan_time = first_scan_time
 
     @property
     def container_id(self):

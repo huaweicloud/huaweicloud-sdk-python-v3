@@ -63,7 +63,7 @@ class AntiVirusHandleHistory:
         :type malware_type: str
         :param malware_name: 病毒名称
         :type malware_name: str
-        :param severity: 威胁等级，包含如下:   - Security : 安全   - Low : 低危   - Medium : 中危   - High : 高危   - Critical : 危急
+        :param severity: 威胁等级，包含如下:   - Security：安全   - Low: 低危   - Medium: 中危   - High: 高危   - Critical: 危急
         :type severity: str
         :param file_path: 文件路径
         :type file_path: str
@@ -77,7 +77,7 @@ class AntiVirusHandleHistory:
         :type asset_value: str
         :param occur_time: 发生时间，毫秒
         :type occur_time: int
-        :param handle_status: 处理状态，包含如下:   - unhandled ：未处理   - handled : 已处理
+        :param handle_status: 处置状态，包含如下:   - unhandled：未处理   - handled: 已处理
         :type handle_status: str
         :param handle_method: 处理方式，包含如下:   - mark_as_handled : 手动处理   - ignore : 忽略   - add_to_alarm_whitelist : 加入告警白名单   - isolate_and_kill : 隔离文件
         :type handle_method: str
@@ -209,7 +209,7 @@ class AntiVirusHandleHistory:
     def severity(self):
         r"""Gets the severity of this AntiVirusHandleHistory.
 
-        威胁等级，包含如下:   - Security : 安全   - Low : 低危   - Medium : 中危   - High : 高危   - Critical : 危急
+        威胁等级，包含如下:   - Security：安全   - Low: 低危   - Medium: 中危   - High: 高危   - Critical: 危急
 
         :return: The severity of this AntiVirusHandleHistory.
         :rtype: str
@@ -220,7 +220,7 @@ class AntiVirusHandleHistory:
     def severity(self, severity):
         r"""Sets the severity of this AntiVirusHandleHistory.
 
-        威胁等级，包含如下:   - Security : 安全   - Low : 低危   - Medium : 中危   - High : 高危   - Critical : 危急
+        威胁等级，包含如下:   - Security：安全   - Low: 低危   - Medium: 中危   - High: 高危   - Critical: 危急
 
         :param severity: The severity of this AntiVirusHandleHistory.
         :type severity: str
@@ -363,7 +363,7 @@ class AntiVirusHandleHistory:
     def handle_status(self):
         r"""Gets the handle_status of this AntiVirusHandleHistory.
 
-        处理状态，包含如下:   - unhandled ：未处理   - handled : 已处理
+        处置状态，包含如下:   - unhandled：未处理   - handled: 已处理
 
         :return: The handle_status of this AntiVirusHandleHistory.
         :rtype: str
@@ -374,7 +374,7 @@ class AntiVirusHandleHistory:
     def handle_status(self, handle_status):
         r"""Sets the handle_status of this AntiVirusHandleHistory.
 
-        处理状态，包含如下:   - unhandled ：未处理   - handled : 已处理
+        处置状态，包含如下:   - unhandled：未处理   - handled: 已处理
 
         :param handle_status: The handle_status of this AntiVirusHandleHistory.
         :type handle_status: str

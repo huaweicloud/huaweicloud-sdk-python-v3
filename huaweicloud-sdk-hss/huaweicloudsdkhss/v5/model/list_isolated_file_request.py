@@ -103,7 +103,8 @@ class ListIsolatedFileRequest:
         self._end_time = None
         self.discriminator = None
 
-        self.region = region
+        if region is not None:
+            self.region = region
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
         if file_path is not None:

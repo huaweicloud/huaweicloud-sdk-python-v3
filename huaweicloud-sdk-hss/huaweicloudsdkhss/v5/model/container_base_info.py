@@ -17,6 +17,8 @@ class ContainerBaseInfo:
     sensitive_list = []
 
     openapi_types = {
+        'id': 'str',
+        'region_id': 'str',
         'container_id': 'str',
         'container_name': 'str',
         'image_name': 'str',
@@ -37,6 +39,8 @@ class ContainerBaseInfo:
     }
 
     attribute_map = {
+        'id': 'id',
+        'region_id': 'region_id',
         'container_id': 'container_id',
         'container_name': 'container_name',
         'image_name': 'image_name',
@@ -56,11 +60,15 @@ class ContainerBaseInfo:
         'fatal_risk': 'fatal_risk'
     }
 
-    def __init__(self, container_id=None, container_name=None, image_name=None, status=None, create_time=None, cpu_limit=None, memory_limit=None, restart_count=None, pod_name=None, cluster_name=None, cluster_id=None, cluster_type=None, risky=None, low_risk=None, medium_risk=None, high_risk=None, fatal_risk=None):
+    def __init__(self, id=None, region_id=None, container_id=None, container_name=None, image_name=None, status=None, create_time=None, cpu_limit=None, memory_limit=None, restart_count=None, pod_name=None, cluster_name=None, cluster_id=None, cluster_type=None, risky=None, low_risk=None, medium_risk=None, high_risk=None, fatal_risk=None):
         r"""ContainerBaseInfo
 
         The model defined in huaweicloud sdk
 
+        :param id: ID
+        :type id: str
+        :param region_id: 区域
+        :type region_id: str
         :param container_id: 容器ID
         :type container_id: str
         :param container_name: 容器名称
@@ -99,6 +107,8 @@ class ContainerBaseInfo:
         
         
 
+        self._id = None
+        self._region_id = None
         self._container_id = None
         self._container_name = None
         self._image_name = None
@@ -118,6 +128,10 @@ class ContainerBaseInfo:
         self._fatal_risk = None
         self.discriminator = None
 
+        if id is not None:
+            self.id = id
+        if region_id is not None:
+            self.region_id = region_id
         if container_id is not None:
             self.container_id = container_id
         if container_name is not None:
@@ -152,6 +166,50 @@ class ContainerBaseInfo:
             self.high_risk = high_risk
         if fatal_risk is not None:
             self.fatal_risk = fatal_risk
+
+    @property
+    def id(self):
+        r"""Gets the id of this ContainerBaseInfo.
+
+        ID
+
+        :return: The id of this ContainerBaseInfo.
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        r"""Sets the id of this ContainerBaseInfo.
+
+        ID
+
+        :param id: The id of this ContainerBaseInfo.
+        :type id: str
+        """
+        self._id = id
+
+    @property
+    def region_id(self):
+        r"""Gets the region_id of this ContainerBaseInfo.
+
+        区域
+
+        :return: The region_id of this ContainerBaseInfo.
+        :rtype: str
+        """
+        return self._region_id
+
+    @region_id.setter
+    def region_id(self, region_id):
+        r"""Sets the region_id of this ContainerBaseInfo.
+
+        区域
+
+        :param region_id: The region_id of this ContainerBaseInfo.
+        :type region_id: str
+        """
+        self._region_id = region_id
 
     @property
     def container_id(self):

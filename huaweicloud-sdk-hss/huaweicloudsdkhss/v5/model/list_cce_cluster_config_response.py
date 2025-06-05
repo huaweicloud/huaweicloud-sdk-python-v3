@@ -34,7 +34,7 @@ class ListCceClusterConfigResponse(SdkResponse):
 
         :param total_num: 配置总数
         :type total_num: int
-        :param data_list: data list
+        :param data_list: 配置信息列表
         :type data_list: list[:class:`huaweicloudsdkhss.v5.ClusterConfigResponseInfo`]
         """
         
@@ -75,7 +75,7 @@ class ListCceClusterConfigResponse(SdkResponse):
     def data_list(self):
         r"""Gets the data_list of this ListCceClusterConfigResponse.
 
-        data list
+        配置信息列表
 
         :return: The data_list of this ListCceClusterConfigResponse.
         :rtype: list[:class:`huaweicloudsdkhss.v5.ClusterConfigResponseInfo`]
@@ -86,7 +86,7 @@ class ListCceClusterConfigResponse(SdkResponse):
     def data_list(self, data_list):
         r"""Sets the data_list of this ListCceClusterConfigResponse.
 
-        data list
+        配置信息列表
 
         :param data_list: The data_list of this ListCceClusterConfigResponse.
         :type data_list: list[:class:`huaweicloudsdkhss.v5.ClusterConfigResponseInfo`]

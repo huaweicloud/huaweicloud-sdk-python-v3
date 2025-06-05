@@ -87,7 +87,7 @@ class AntiVirusPolicyResponseInfo:
         :type action: str
         :param invalidate: 失效，包含如下:   - true ：是   - fasle ：否
         :type invalidate: bool
-        :param host_num: 关联服务器数
+        :param host_num: 影响主机数量
         :type host_num: int
         :param host_info_list: 主机信息
         :type host_info_list: list[:class:`huaweicloudsdkhss.v5.AntiVirusPolicyHostResponseInfo`]
@@ -443,7 +443,7 @@ class AntiVirusPolicyResponseInfo:
     def host_num(self):
         r"""Gets the host_num of this AntiVirusPolicyResponseInfo.
 
-        关联服务器数
+        影响主机数量
 
         :return: The host_num of this AntiVirusPolicyResponseInfo.
         :rtype: int
@@ -454,7 +454,7 @@ class AntiVirusPolicyResponseInfo:
     def host_num(self, host_num):
         r"""Sets the host_num of this AntiVirusPolicyResponseInfo.
 
-        关联服务器数
+        影响主机数量
 
         :param host_num: The host_num of this AntiVirusPolicyResponseInfo.
         :type host_num: int

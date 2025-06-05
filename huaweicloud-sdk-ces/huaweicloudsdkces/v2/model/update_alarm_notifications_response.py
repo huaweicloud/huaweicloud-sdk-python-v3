@@ -38,7 +38,7 @@ class UpdateAlarmNotificationsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param notification_enabled: 是否开启告警通知
+        :param notification_enabled: 是否开启告警通知。true:开启，false:关闭。
         :type notification_enabled: bool
         :param alarm_notifications: 告警触发的动作
         :type alarm_notifications: list[:class:`huaweicloudsdkces.v2.Notification`]
@@ -74,7 +74,7 @@ class UpdateAlarmNotificationsResponse(SdkResponse):
     def notification_enabled(self):
         r"""Gets the notification_enabled of this UpdateAlarmNotificationsResponse.
 
-        是否开启告警通知
+        是否开启告警通知。true:开启，false:关闭。
 
         :return: The notification_enabled of this UpdateAlarmNotificationsResponse.
         :rtype: bool
@@ -85,7 +85,7 @@ class UpdateAlarmNotificationsResponse(SdkResponse):
     def notification_enabled(self, notification_enabled):
         r"""Sets the notification_enabled of this UpdateAlarmNotificationsResponse.
 
-        是否开启告警通知
+        是否开启告警通知。true:开启，false:关闭。
 
         :param notification_enabled: The notification_enabled of this UpdateAlarmNotificationsResponse.
         :type notification_enabled: bool

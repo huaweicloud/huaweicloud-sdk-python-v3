@@ -2,10 +2,11 @@
 
 import six
 
+from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class UpdateDaemonsetRequestBodyScheduleInfo:
+class DeleteDialogReportConfigResponse(SdkResponse):
 
     """
     Attributes:
@@ -17,80 +18,47 @@ class UpdateDaemonsetRequestBodyScheduleInfo:
     sensitive_list = []
 
     openapi_types = {
-        'node_selector': 'list[str]',
-        'pod_tolerances': 'list[str]'
+        'x_request_id': 'str'
     }
 
     attribute_map = {
-        'node_selector': 'node_selector',
-        'pod_tolerances': 'pod_tolerances'
+        'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, node_selector=None, pod_tolerances=None):
-        r"""UpdateDaemonsetRequestBodyScheduleInfo
+    def __init__(self, x_request_id=None):
+        r"""DeleteDialogReportConfigResponse
 
         The model defined in huaweicloud sdk
 
-        :param node_selector: 节点选择器
-        :type node_selector: list[str]
-        :param pod_tolerances: pod容忍度
-        :type pod_tolerances: list[str]
+        :param x_request_id: 
+        :type x_request_id: str
         """
         
-        
+        super(DeleteDialogReportConfigResponse, self).__init__()
 
-        self._node_selector = None
-        self._pod_tolerances = None
+        self._x_request_id = None
         self.discriminator = None
 
-        if node_selector is not None:
-            self.node_selector = node_selector
-        if pod_tolerances is not None:
-            self.pod_tolerances = pod_tolerances
+        if x_request_id is not None:
+            self.x_request_id = x_request_id
 
     @property
-    def node_selector(self):
-        r"""Gets the node_selector of this UpdateDaemonsetRequestBodyScheduleInfo.
+    def x_request_id(self):
+        r"""Gets the x_request_id of this DeleteDialogReportConfigResponse.
 
-        节点选择器
-
-        :return: The node_selector of this UpdateDaemonsetRequestBodyScheduleInfo.
-        :rtype: list[str]
+        :return: The x_request_id of this DeleteDialogReportConfigResponse.
+        :rtype: str
         """
-        return self._node_selector
+        return self._x_request_id
 
-    @node_selector.setter
-    def node_selector(self, node_selector):
-        r"""Sets the node_selector of this UpdateDaemonsetRequestBodyScheduleInfo.
+    @x_request_id.setter
+    def x_request_id(self, x_request_id):
+        r"""Sets the x_request_id of this DeleteDialogReportConfigResponse.
 
-        节点选择器
-
-        :param node_selector: The node_selector of this UpdateDaemonsetRequestBodyScheduleInfo.
-        :type node_selector: list[str]
+        :param x_request_id: The x_request_id of this DeleteDialogReportConfigResponse.
+        :type x_request_id: str
         """
-        self._node_selector = node_selector
-
-    @property
-    def pod_tolerances(self):
-        r"""Gets the pod_tolerances of this UpdateDaemonsetRequestBodyScheduleInfo.
-
-        pod容忍度
-
-        :return: The pod_tolerances of this UpdateDaemonsetRequestBodyScheduleInfo.
-        :rtype: list[str]
-        """
-        return self._pod_tolerances
-
-    @pod_tolerances.setter
-    def pod_tolerances(self, pod_tolerances):
-        r"""Sets the pod_tolerances of this UpdateDaemonsetRequestBodyScheduleInfo.
-
-        pod容忍度
-
-        :param pod_tolerances: The pod_tolerances of this UpdateDaemonsetRequestBodyScheduleInfo.
-        :type pod_tolerances: list[str]
-        """
-        self._pod_tolerances = pod_tolerances
+        self._x_request_id = x_request_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -134,7 +102,7 @@ class UpdateDaemonsetRequestBodyScheduleInfo:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, UpdateDaemonsetRequestBodyScheduleInfo):
+        if not isinstance(other, DeleteDialogReportConfigResponse):
             return False
 
         return self.__dict__ == other.__dict__

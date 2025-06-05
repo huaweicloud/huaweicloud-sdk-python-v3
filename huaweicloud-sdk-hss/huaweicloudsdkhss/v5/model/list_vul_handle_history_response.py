@@ -32,7 +32,7 @@ class ListVulHandleHistoryResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param data_list: 列表
+        :param data_list: 详情
         :type data_list: list[:class:`huaweicloudsdkhss.v5.VulhandleHistoryResponseInfoDataList`]
         :param total_num: 总数
         :type total_num: int
@@ -53,7 +53,7 @@ class ListVulHandleHistoryResponse(SdkResponse):
     def data_list(self):
         r"""Gets the data_list of this ListVulHandleHistoryResponse.
 
-        列表
+        详情
 
         :return: The data_list of this ListVulHandleHistoryResponse.
         :rtype: list[:class:`huaweicloudsdkhss.v5.VulhandleHistoryResponseInfoDataList`]
@@ -64,7 +64,7 @@ class ListVulHandleHistoryResponse(SdkResponse):
     def data_list(self, data_list):
         r"""Sets the data_list of this ListVulHandleHistoryResponse.
 
-        列表
+        详情
 
         :param data_list: The data_list of this ListVulHandleHistoryResponse.
         :type data_list: list[:class:`huaweicloudsdkhss.v5.VulhandleHistoryResponseInfoDataList`]

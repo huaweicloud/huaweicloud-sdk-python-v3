@@ -61,7 +61,8 @@ class ListAccountsRequest:
 
         if x_security_token is not None:
             self.x_security_token = x_security_token
-        self.region = region
+        if region is not None:
+            self.region = region
         if limit is not None:
             self.limit = limit
         if offset is not None:

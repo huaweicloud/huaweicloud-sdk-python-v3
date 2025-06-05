@@ -41,7 +41,7 @@ class OrganizationNodeResponseInfo:
 
         :param parent_id: 父节点Id
         :type parent_id: str
-        :param id: 节点account_id
+        :param id: 节点Id
         :type id: str
         :param urn: 组织的统一资源名称,格式：organizations::{management_account_id}:xxxxx:{org_id}/xxxxxxxx。
         :type urn: str
@@ -102,7 +102,7 @@ class OrganizationNodeResponseInfo:
     def id(self):
         r"""Gets the id of this OrganizationNodeResponseInfo.
 
-        节点account_id
+        节点Id
 
         :return: The id of this OrganizationNodeResponseInfo.
         :rtype: str
@@ -113,7 +113,7 @@ class OrganizationNodeResponseInfo:
     def id(self, id):
         r"""Sets the id of this OrganizationNodeResponseInfo.
 
-        节点account_id
+        节点Id
 
         :param id: The id of this OrganizationNodeResponseInfo.
         :type id: str

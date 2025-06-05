@@ -35,9 +35,9 @@ class UpdateBackupPolicyRequestInfo1:
 
         The model defined in huaweicloud sdk
 
-        :param enabled: 策略是否启用，缺省值：true
+        :param enabled: **参数解释**: 策略是否启用，缺省值：true **约束限制**: 不涉及 **取值范围**: true或者false **默认取值**: true 
         :type enabled: bool
-        :param policy_id: 策略ID,若开启防护时开启备份防护，该字段必选
+        :param policy_id: **参数解释**: 策略ID,若开启防护时开启备份防护，该字段必选 **约束限制**: 不涉及 **取值范围**: 字符长度1-256 **默认取值**: 不涉及 
         :type policy_id: str
         :param operation_definition: 
         :type operation_definition: :class:`huaweicloudsdkhss.v5.OperationDefinitionRequestInfo`
@@ -66,7 +66,7 @@ class UpdateBackupPolicyRequestInfo1:
     def enabled(self):
         r"""Gets the enabled of this UpdateBackupPolicyRequestInfo1.
 
-        策略是否启用，缺省值：true
+        **参数解释**: 策略是否启用，缺省值：true **约束限制**: 不涉及 **取值范围**: true或者false **默认取值**: true 
 
         :return: The enabled of this UpdateBackupPolicyRequestInfo1.
         :rtype: bool
@@ -77,7 +77,7 @@ class UpdateBackupPolicyRequestInfo1:
     def enabled(self, enabled):
         r"""Sets the enabled of this UpdateBackupPolicyRequestInfo1.
 
-        策略是否启用，缺省值：true
+        **参数解释**: 策略是否启用，缺省值：true **约束限制**: 不涉及 **取值范围**: true或者false **默认取值**: true 
 
         :param enabled: The enabled of this UpdateBackupPolicyRequestInfo1.
         :type enabled: bool
@@ -88,7 +88,7 @@ class UpdateBackupPolicyRequestInfo1:
     def policy_id(self):
         r"""Gets the policy_id of this UpdateBackupPolicyRequestInfo1.
 
-        策略ID,若开启防护时开启备份防护，该字段必选
+        **参数解释**: 策略ID,若开启防护时开启备份防护，该字段必选 **约束限制**: 不涉及 **取值范围**: 字符长度1-256 **默认取值**: 不涉及 
 
         :return: The policy_id of this UpdateBackupPolicyRequestInfo1.
         :rtype: str
@@ -99,7 +99,7 @@ class UpdateBackupPolicyRequestInfo1:
     def policy_id(self, policy_id):
         r"""Sets the policy_id of this UpdateBackupPolicyRequestInfo1.
 
-        策略ID,若开启防护时开启备份防护，该字段必选
+        **参数解释**: 策略ID,若开启防护时开启备份防护，该字段必选 **约束限制**: 不涉及 **取值范围**: 字符长度1-256 **默认取值**: 不涉及 
 
         :param policy_id: The policy_id of this UpdateBackupPolicyRequestInfo1.
         :type policy_id: str

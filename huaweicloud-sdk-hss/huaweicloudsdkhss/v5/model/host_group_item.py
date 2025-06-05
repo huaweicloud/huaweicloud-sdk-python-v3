@@ -45,13 +45,13 @@ class HostGroupItem:
         :type group_id: str
         :param group_name: 服务器组名称
         :type group_name: str
-        :param host_num: 关联服务器数
+        :param host_num: 影响主机数量
         :type host_num: int
         :param risk_host_num: 有风险服务器数
         :type risk_host_num: int
         :param unprotect_host_num: 未防护服务器数
         :type unprotect_host_num: int
-        :param host_id_list: 服务器ID列表
+        :param host_id_list: 主机id列表
         :type host_id_list: list[str]
         :param is_outside: 是否是线下数据中心服务器组
         :type is_outside: bool
@@ -131,7 +131,7 @@ class HostGroupItem:
     def host_num(self):
         r"""Gets the host_num of this HostGroupItem.
 
-        关联服务器数
+        影响主机数量
 
         :return: The host_num of this HostGroupItem.
         :rtype: int
@@ -142,7 +142,7 @@ class HostGroupItem:
     def host_num(self, host_num):
         r"""Sets the host_num of this HostGroupItem.
 
-        关联服务器数
+        影响主机数量
 
         :param host_num: The host_num of this HostGroupItem.
         :type host_num: int
@@ -197,7 +197,7 @@ class HostGroupItem:
     def host_id_list(self):
         r"""Gets the host_id_list of this HostGroupItem.
 
-        服务器ID列表
+        主机id列表
 
         :return: The host_id_list of this HostGroupItem.
         :rtype: list[str]
@@ -208,7 +208,7 @@ class HostGroupItem:
     def host_id_list(self, host_id_list):
         r"""Sets the host_id_list of this HostGroupItem.
 
-        服务器ID列表
+        主机id列表
 
         :param host_id_list: The host_id_list of this HostGroupItem.
         :type host_id_list: list[str]

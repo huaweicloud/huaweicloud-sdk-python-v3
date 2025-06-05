@@ -23,11 +23,13 @@ class OneClickAlarmPolicy:
         'filter': 'str',
         'comparison_operator': 'str',
         'value': 'float',
+        'hierarchical_value': 'HierarchicalValue',
         'unit': 'str',
         'count': 'int',
         'suppress_duration': 'SuppressDuration',
         'level': 'int',
-        'enabled': 'bool'
+        'enabled': 'bool',
+        'selected_unit': 'str'
     }
 
     attribute_map = {
@@ -37,14 +39,16 @@ class OneClickAlarmPolicy:
         'filter': 'filter',
         'comparison_operator': 'comparison_operator',
         'value': 'value',
+        'hierarchical_value': 'hierarchical_value',
         'unit': 'unit',
         'count': 'count',
         'suppress_duration': 'suppress_duration',
         'level': 'level',
-        'enabled': 'enabled'
+        'enabled': 'enabled',
+        'selected_unit': 'selected_unit'
     }
 
-    def __init__(self, alarm_policy_id=None, metric_name=None, period=None, filter=None, comparison_operator=None, value=None, unit=None, count=None, suppress_duration=None, level=None, enabled=None):
+    def __init__(self, alarm_policy_id=None, metric_name=None, period=None, filter=None, comparison_operator=None, value=None, hierarchical_value=None, unit=None, count=None, suppress_duration=None, level=None, enabled=None, selected_unit=None):
         r"""OneClickAlarmPolicy
 
         The model defined in huaweicloud sdk
@@ -61,6 +65,8 @@ class OneClickAlarmPolicy:
         :type comparison_operator: str
         :param value: 告警阈值。单一阈值时value和alarm_level配对使用，当hierarchical_value和value同时使用时以hierarchical_value为准。取值范围[0, Number.MAX_VALUE]，Number.MAX_VALUE值为1.7976931348623157e+108。具体阈值取值请参见附录中各服务监控指标中取值范围，如支持监控的服务列表中ECS的CPU使用率cpu_util取值范围可配置80。 [具体阈值取值请参见附录中各服务监控指标中取值范围，如[支持监控的服务列表](ces_03_0059.xml)中ECS的CPU使用率cpu_util取值范围可配置80。](tag: dt,g42,dt_test,hk_g42,hk_sbc,hws,hws_hk,ocb,sbc,tm) 
         :type value: float
+        :param hierarchical_value: 
+        :type hierarchical_value: :class:`huaweicloudsdkces.v2.HierarchicalValue`
         :param unit: 数据的单位。
         :type unit: str
         :param count: 告警连续触发次数，事件告警时参数值为1~180（包括1和180）；指标告警和站点告警时，次数采用枚举值，枚举值分别为：1、2、3、4、5、10、15、30、60、90、120、180
@@ -69,8 +75,10 @@ class OneClickAlarmPolicy:
         :type suppress_duration: :class:`huaweicloudsdkces.v2.SuppressDuration`
         :param level: 告警级别, 1为紧急，2为重要，3为次要，4为提示。默认值为2。
         :type level: int
-        :param enabled: 开关
+        :param enabled: 是否启用告警策略。true:开启，false:关闭。
         :type enabled: bool
+        :param selected_unit: 用户在页面中选择的指标单位， 用于后续指标数据回显和计算
+        :type selected_unit: str
         """
         
         
@@ -81,11 +89,13 @@ class OneClickAlarmPolicy:
         self._filter = None
         self._comparison_operator = None
         self._value = None
+        self._hierarchical_value = None
         self._unit = None
         self._count = None
         self._suppress_duration = None
         self._level = None
         self._enabled = None
+        self._selected_unit = None
         self.discriminator = None
 
         self.alarm_policy_id = alarm_policy_id
@@ -94,6 +104,8 @@ class OneClickAlarmPolicy:
         self.filter = filter
         self.comparison_operator = comparison_operator
         self.value = value
+        if hierarchical_value is not None:
+            self.hierarchical_value = hierarchical_value
         if unit is not None:
             self.unit = unit
         self.count = count
@@ -102,6 +114,8 @@ class OneClickAlarmPolicy:
         if level is not None:
             self.level = level
         self.enabled = enabled
+        if selected_unit is not None:
+            self.selected_unit = selected_unit
 
     @property
     def alarm_policy_id(self):
@@ -232,6 +246,24 @@ class OneClickAlarmPolicy:
         self._value = value
 
     @property
+    def hierarchical_value(self):
+        r"""Gets the hierarchical_value of this OneClickAlarmPolicy.
+
+        :return: The hierarchical_value of this OneClickAlarmPolicy.
+        :rtype: :class:`huaweicloudsdkces.v2.HierarchicalValue`
+        """
+        return self._hierarchical_value
+
+    @hierarchical_value.setter
+    def hierarchical_value(self, hierarchical_value):
+        r"""Sets the hierarchical_value of this OneClickAlarmPolicy.
+
+        :param hierarchical_value: The hierarchical_value of this OneClickAlarmPolicy.
+        :type hierarchical_value: :class:`huaweicloudsdkces.v2.HierarchicalValue`
+        """
+        self._hierarchical_value = hierarchical_value
+
+    @property
     def unit(self):
         r"""Gets the unit of this OneClickAlarmPolicy.
 
@@ -319,7 +351,7 @@ class OneClickAlarmPolicy:
     def enabled(self):
         r"""Gets the enabled of this OneClickAlarmPolicy.
 
-        开关
+        是否启用告警策略。true:开启，false:关闭。
 
         :return: The enabled of this OneClickAlarmPolicy.
         :rtype: bool
@@ -330,12 +362,34 @@ class OneClickAlarmPolicy:
     def enabled(self, enabled):
         r"""Sets the enabled of this OneClickAlarmPolicy.
 
-        开关
+        是否启用告警策略。true:开启，false:关闭。
 
         :param enabled: The enabled of this OneClickAlarmPolicy.
         :type enabled: bool
         """
         self._enabled = enabled
+
+    @property
+    def selected_unit(self):
+        r"""Gets the selected_unit of this OneClickAlarmPolicy.
+
+        用户在页面中选择的指标单位， 用于后续指标数据回显和计算
+
+        :return: The selected_unit of this OneClickAlarmPolicy.
+        :rtype: str
+        """
+        return self._selected_unit
+
+    @selected_unit.setter
+    def selected_unit(self, selected_unit):
+        r"""Sets the selected_unit of this OneClickAlarmPolicy.
+
+        用户在页面中选择的指标单位， 用于后续指标数据回显和计算
+
+        :param selected_unit: The selected_unit of this OneClickAlarmPolicy.
+        :type selected_unit: str
+        """
+        self._selected_unit = selected_unit
 
     def to_dict(self):
         """Returns the model properties as a dict"""

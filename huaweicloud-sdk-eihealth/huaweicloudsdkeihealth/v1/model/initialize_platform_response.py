@@ -2,10 +2,11 @@
 
 import six
 
+from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class HostVulInfoCveList:
+class InitializePlatformResponse(SdkResponse):
 
     """
     Attributes:
@@ -17,80 +18,20 @@ class HostVulInfoCveList:
     sensitive_list = []
 
     openapi_types = {
-        'cve_id': 'str',
-        'cvss': 'float'
     }
 
     attribute_map = {
-        'cve_id': 'cve_id',
-        'cvss': 'cvss'
     }
 
-    def __init__(self, cve_id=None, cvss=None):
-        r"""HostVulInfoCveList
+    def __init__(self):
+        r"""InitializePlatformResponse
 
         The model defined in huaweicloud sdk
 
-        :param cve_id: CVE ID
-        :type cve_id: str
-        :param cvss: CVSS分值
-        :type cvss: float
         """
         
-        
-
-        self._cve_id = None
-        self._cvss = None
+        super(InitializePlatformResponse, self).__init__()
         self.discriminator = None
-
-        if cve_id is not None:
-            self.cve_id = cve_id
-        if cvss is not None:
-            self.cvss = cvss
-
-    @property
-    def cve_id(self):
-        r"""Gets the cve_id of this HostVulInfoCveList.
-
-        CVE ID
-
-        :return: The cve_id of this HostVulInfoCveList.
-        :rtype: str
-        """
-        return self._cve_id
-
-    @cve_id.setter
-    def cve_id(self, cve_id):
-        r"""Sets the cve_id of this HostVulInfoCveList.
-
-        CVE ID
-
-        :param cve_id: The cve_id of this HostVulInfoCveList.
-        :type cve_id: str
-        """
-        self._cve_id = cve_id
-
-    @property
-    def cvss(self):
-        r"""Gets the cvss of this HostVulInfoCveList.
-
-        CVSS分值
-
-        :return: The cvss of this HostVulInfoCveList.
-        :rtype: float
-        """
-        return self._cvss
-
-    @cvss.setter
-    def cvss(self, cvss):
-        r"""Sets the cvss of this HostVulInfoCveList.
-
-        CVSS分值
-
-        :param cvss: The cvss of this HostVulInfoCveList.
-        :type cvss: float
-        """
-        self._cvss = cvss
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -134,7 +75,7 @@ class HostVulInfoCveList:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, HostVulInfoCveList):
+        if not isinstance(other, InitializePlatformResponse):
             return False
 
         return self.__dict__ == other.__dict__

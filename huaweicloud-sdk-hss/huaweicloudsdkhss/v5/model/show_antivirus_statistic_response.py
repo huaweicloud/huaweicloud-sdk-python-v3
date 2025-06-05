@@ -42,7 +42,7 @@ class ShowAntivirusStatisticResponse(SdkResponse):
 
         :param total_malware_num: 病毒总数
         :type total_malware_num: int
-        :param malware_host_num: 关联服务器数
+        :param malware_host_num: 影响主机数量
         :type malware_host_num: int
         :param total_task_num: 累计扫描任务数
         :type total_task_num: int
@@ -103,7 +103,7 @@ class ShowAntivirusStatisticResponse(SdkResponse):
     def malware_host_num(self):
         r"""Gets the malware_host_num of this ShowAntivirusStatisticResponse.
 
-        关联服务器数
+        影响主机数量
 
         :return: The malware_host_num of this ShowAntivirusStatisticResponse.
         :rtype: int
@@ -114,7 +114,7 @@ class ShowAntivirusStatisticResponse(SdkResponse):
     def malware_host_num(self, malware_host_num):
         r"""Sets the malware_host_num of this ShowAntivirusStatisticResponse.
 
-        关联服务器数
+        影响主机数量
 
         :param malware_host_num: The malware_host_num of this ShowAntivirusStatisticResponse.
         :type malware_host_num: int

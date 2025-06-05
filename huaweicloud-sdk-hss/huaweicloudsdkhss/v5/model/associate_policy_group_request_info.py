@@ -19,25 +19,29 @@ class AssociatePolicyGroupRequestInfo:
     openapi_types = {
         'target_policy_group_id': 'str',
         'operate_all': 'bool',
+        'deploy_type': 'str',
         'host_id_list': 'list[str]'
     }
 
     attribute_map = {
         'target_policy_group_id': 'target_policy_group_id',
         'operate_all': 'operate_all',
+        'deploy_type': 'deploy_type',
         'host_id_list': 'host_id_list'
     }
 
-    def __init__(self, target_policy_group_id=None, operate_all=None, host_id_list=None):
+    def __init__(self, target_policy_group_id=None, operate_all=None, deploy_type=None, host_id_list=None):
         r"""AssociatePolicyGroupRequestInfo
 
         The model defined in huaweicloud sdk
 
         :param target_policy_group_id: 部署的目标策略组ID
         :type target_policy_group_id: str
-        :param operate_all: 是否要对全量主机部署策略，如果为true的话，不需填写host_id_list，如果为false的话，需要填写host_id_list
+        :param operate_all: 是否要对全量主机/pod实例/工作负载/集群部署策略，如果为true的话，不需填写host_id_list，如果为false的话，需要填写host_id_list
         :type operate_all: bool
-        :param host_id_list: 需要部署策略组的主机ID列表
+        :param deploy_type: 策略部署类型: - host: 主机 - pod: pod实例 - workload: 工作负载 - cluster: 集群
+        :type deploy_type: str
+        :param host_id_list: 需要部署策略组的主机/pod实例/负载/集群ID列表
         :type host_id_list: list[str]
         """
         
@@ -45,12 +49,15 @@ class AssociatePolicyGroupRequestInfo:
 
         self._target_policy_group_id = None
         self._operate_all = None
+        self._deploy_type = None
         self._host_id_list = None
         self.discriminator = None
 
         self.target_policy_group_id = target_policy_group_id
         if operate_all is not None:
             self.operate_all = operate_all
+        if deploy_type is not None:
+            self.deploy_type = deploy_type
         if host_id_list is not None:
             self.host_id_list = host_id_list
 
@@ -80,7 +87,7 @@ class AssociatePolicyGroupRequestInfo:
     def operate_all(self):
         r"""Gets the operate_all of this AssociatePolicyGroupRequestInfo.
 
-        是否要对全量主机部署策略，如果为true的话，不需填写host_id_list，如果为false的话，需要填写host_id_list
+        是否要对全量主机/pod实例/工作负载/集群部署策略，如果为true的话，不需填写host_id_list，如果为false的话，需要填写host_id_list
 
         :return: The operate_all of this AssociatePolicyGroupRequestInfo.
         :rtype: bool
@@ -91,7 +98,7 @@ class AssociatePolicyGroupRequestInfo:
     def operate_all(self, operate_all):
         r"""Sets the operate_all of this AssociatePolicyGroupRequestInfo.
 
-        是否要对全量主机部署策略，如果为true的话，不需填写host_id_list，如果为false的话，需要填写host_id_list
+        是否要对全量主机/pod实例/工作负载/集群部署策略，如果为true的话，不需填写host_id_list，如果为false的话，需要填写host_id_list
 
         :param operate_all: The operate_all of this AssociatePolicyGroupRequestInfo.
         :type operate_all: bool
@@ -99,10 +106,32 @@ class AssociatePolicyGroupRequestInfo:
         self._operate_all = operate_all
 
     @property
+    def deploy_type(self):
+        r"""Gets the deploy_type of this AssociatePolicyGroupRequestInfo.
+
+        策略部署类型: - host: 主机 - pod: pod实例 - workload: 工作负载 - cluster: 集群
+
+        :return: The deploy_type of this AssociatePolicyGroupRequestInfo.
+        :rtype: str
+        """
+        return self._deploy_type
+
+    @deploy_type.setter
+    def deploy_type(self, deploy_type):
+        r"""Sets the deploy_type of this AssociatePolicyGroupRequestInfo.
+
+        策略部署类型: - host: 主机 - pod: pod实例 - workload: 工作负载 - cluster: 集群
+
+        :param deploy_type: The deploy_type of this AssociatePolicyGroupRequestInfo.
+        :type deploy_type: str
+        """
+        self._deploy_type = deploy_type
+
+    @property
     def host_id_list(self):
         r"""Gets the host_id_list of this AssociatePolicyGroupRequestInfo.
 
-        需要部署策略组的主机ID列表
+        需要部署策略组的主机/pod实例/负载/集群ID列表
 
         :return: The host_id_list of this AssociatePolicyGroupRequestInfo.
         :rtype: list[str]
@@ -113,7 +142,7 @@ class AssociatePolicyGroupRequestInfo:
     def host_id_list(self, host_id_list):
         r"""Sets the host_id_list of this AssociatePolicyGroupRequestInfo.
 
-        需要部署策略组的主机ID列表
+        需要部署策略组的主机/pod实例/负载/集群ID列表
 
         :param host_id_list: The host_id_list of this AssociatePolicyGroupRequestInfo.
         :type host_id_list: list[str]

@@ -30,6 +30,7 @@ class ListAlarmsRespAlarms:
         'ok_notifications': 'list[Notification]',
         'notification_begin_time': 'str',
         'notification_end_time': 'str',
+        'effective_timezone': 'str',
         'notification_manner': 'str',
         'notification_policy_ids': 'list[str]'
     }
@@ -48,11 +49,12 @@ class ListAlarmsRespAlarms:
         'ok_notifications': 'ok_notifications',
         'notification_begin_time': 'notification_begin_time',
         'notification_end_time': 'notification_end_time',
+        'effective_timezone': 'effective_timezone',
         'notification_manner': 'notification_manner',
         'notification_policy_ids': 'notification_policy_ids'
     }
 
-    def __init__(self, alarm_id=None, name=None, description=None, namespace=None, policies=None, resources=None, type=None, enabled=None, notification_enabled=None, alarm_notifications=None, ok_notifications=None, notification_begin_time=None, notification_end_time=None, notification_manner=None, notification_policy_ids=None):
+    def __init__(self, alarm_id=None, name=None, description=None, namespace=None, policies=None, resources=None, type=None, enabled=None, notification_enabled=None, alarm_notifications=None, ok_notifications=None, notification_begin_time=None, notification_end_time=None, effective_timezone=None, notification_manner=None, notification_policy_ids=None):
         r"""ListAlarmsRespAlarms
 
         The model defined in huaweicloud sdk
@@ -71,9 +73,9 @@ class ListAlarmsRespAlarms:
         :type resources: list[:class:`huaweicloudsdkces.v2.ResourcesInListResp`]
         :param type: 
         :type type: :class:`huaweicloudsdkces.v2.AlarmType`
-        :param enabled: 告警开关
+        :param enabled: 是否开启告警规则。true:开启，false:关闭。
         :type enabled: bool
-        :param notification_enabled: 是否开启告警通知
+        :param notification_enabled: 是否开启告警通知。true:开启，false:关闭。
         :type notification_enabled: bool
         :param alarm_notifications: 告警触发的动作
         :type alarm_notifications: list[:class:`huaweicloudsdkces.v2.Notification`]
@@ -83,6 +85,8 @@ class ListAlarmsRespAlarms:
         :type notification_begin_time: str
         :param notification_end_time: 告警通知关闭时间
         :type notification_end_time: str
+        :param effective_timezone: 时区，形如：\&quot;GMT-08:00\&quot;、\&quot;GMT+08:00\&quot;、\&quot;GMT+0:00\&quot;
+        :type effective_timezone: str
         :param notification_manner: NOTIFICATION_GROUP(通知组)/TOPIC_SUBSCRIPTION(主题订阅)/NOTIFICATION_POLICY(通知策略)
         :type notification_manner: str
         :param notification_policy_ids: 关联的通知策略ID列表
@@ -104,6 +108,7 @@ class ListAlarmsRespAlarms:
         self._ok_notifications = None
         self._notification_begin_time = None
         self._notification_end_time = None
+        self._effective_timezone = None
         self._notification_manner = None
         self._notification_policy_ids = None
         self.discriminator = None
@@ -134,6 +139,8 @@ class ListAlarmsRespAlarms:
             self.notification_begin_time = notification_begin_time
         if notification_end_time is not None:
             self.notification_end_time = notification_end_time
+        if effective_timezone is not None:
+            self.effective_timezone = effective_timezone
         if notification_manner is not None:
             self.notification_manner = notification_manner
         if notification_policy_ids is not None:
@@ -293,7 +300,7 @@ class ListAlarmsRespAlarms:
     def enabled(self):
         r"""Gets the enabled of this ListAlarmsRespAlarms.
 
-        告警开关
+        是否开启告警规则。true:开启，false:关闭。
 
         :return: The enabled of this ListAlarmsRespAlarms.
         :rtype: bool
@@ -304,7 +311,7 @@ class ListAlarmsRespAlarms:
     def enabled(self, enabled):
         r"""Sets the enabled of this ListAlarmsRespAlarms.
 
-        告警开关
+        是否开启告警规则。true:开启，false:关闭。
 
         :param enabled: The enabled of this ListAlarmsRespAlarms.
         :type enabled: bool
@@ -315,7 +322,7 @@ class ListAlarmsRespAlarms:
     def notification_enabled(self):
         r"""Gets the notification_enabled of this ListAlarmsRespAlarms.
 
-        是否开启告警通知
+        是否开启告警通知。true:开启，false:关闭。
 
         :return: The notification_enabled of this ListAlarmsRespAlarms.
         :rtype: bool
@@ -326,7 +333,7 @@ class ListAlarmsRespAlarms:
     def notification_enabled(self, notification_enabled):
         r"""Sets the notification_enabled of this ListAlarmsRespAlarms.
 
-        是否开启告警通知
+        是否开启告警通知。true:开启，false:关闭。
 
         :param notification_enabled: The notification_enabled of this ListAlarmsRespAlarms.
         :type notification_enabled: bool
@@ -420,6 +427,28 @@ class ListAlarmsRespAlarms:
         :type notification_end_time: str
         """
         self._notification_end_time = notification_end_time
+
+    @property
+    def effective_timezone(self):
+        r"""Gets the effective_timezone of this ListAlarmsRespAlarms.
+
+        时区，形如：\"GMT-08:00\"、\"GMT+08:00\"、\"GMT+0:00\"
+
+        :return: The effective_timezone of this ListAlarmsRespAlarms.
+        :rtype: str
+        """
+        return self._effective_timezone
+
+    @effective_timezone.setter
+    def effective_timezone(self, effective_timezone):
+        r"""Sets the effective_timezone of this ListAlarmsRespAlarms.
+
+        时区，形如：\"GMT-08:00\"、\"GMT+08:00\"、\"GMT+0:00\"
+
+        :param effective_timezone: The effective_timezone of this ListAlarmsRespAlarms.
+        :type effective_timezone: str
+        """
+        self._effective_timezone = effective_timezone
 
     @property
     def notification_manner(self):

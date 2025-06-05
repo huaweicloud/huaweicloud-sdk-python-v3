@@ -53,7 +53,7 @@ class ListWtpProtectHostRequest:
 
         The model defined in huaweicloud sdk
 
-        :param region: Region Id
+        :param region: Region ID
         :type region: str
         :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
         :type enterprise_project_id: str
@@ -98,7 +98,8 @@ class ListWtpProtectHostRequest:
         self._offset = None
         self.discriminator = None
 
-        self.region = region
+        if region is not None:
+            self.region = region
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
         if host_name is not None:
@@ -128,7 +129,7 @@ class ListWtpProtectHostRequest:
     def region(self):
         r"""Gets the region of this ListWtpProtectHostRequest.
 
-        Region Id
+        Region ID
 
         :return: The region of this ListWtpProtectHostRequest.
         :rtype: str
@@ -139,7 +140,7 @@ class ListWtpProtectHostRequest:
     def region(self, region):
         r"""Sets the region of this ListWtpProtectHostRequest.
 
-        Region Id
+        Region ID
 
         :param region: The region of this ListWtpProtectHostRequest.
         :type region: str

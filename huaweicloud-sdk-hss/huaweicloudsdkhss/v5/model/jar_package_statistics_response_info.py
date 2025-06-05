@@ -31,9 +31,9 @@ class JarPackageStatisticsResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param file_name: Jar包名称
+        :param file_name: **参数解释**: 中间件包名称 **取值范围**: 字符长度0-256
         :type file_name: str
-        :param num: Jar包统计信息总数
+        :param num: **参数解释**: 中间件包统计信息总数 **取值范围**: 取值0-300000
         :type num: int
         """
         
@@ -52,7 +52,7 @@ class JarPackageStatisticsResponseInfo:
     def file_name(self):
         r"""Gets the file_name of this JarPackageStatisticsResponseInfo.
 
-        Jar包名称
+        **参数解释**: 中间件包名称 **取值范围**: 字符长度0-256
 
         :return: The file_name of this JarPackageStatisticsResponseInfo.
         :rtype: str
@@ -63,7 +63,7 @@ class JarPackageStatisticsResponseInfo:
     def file_name(self, file_name):
         r"""Sets the file_name of this JarPackageStatisticsResponseInfo.
 
-        Jar包名称
+        **参数解释**: 中间件包名称 **取值范围**: 字符长度0-256
 
         :param file_name: The file_name of this JarPackageStatisticsResponseInfo.
         :type file_name: str
@@ -74,7 +74,7 @@ class JarPackageStatisticsResponseInfo:
     def num(self):
         r"""Gets the num of this JarPackageStatisticsResponseInfo.
 
-        Jar包统计信息总数
+        **参数解释**: 中间件包统计信息总数 **取值范围**: 取值0-300000
 
         :return: The num of this JarPackageStatisticsResponseInfo.
         :rtype: int
@@ -85,7 +85,7 @@ class JarPackageStatisticsResponseInfo:
     def num(self, num):
         r"""Sets the num of this JarPackageStatisticsResponseInfo.
 
-        Jar包统计信息总数
+        **参数解释**: 中间件包统计信息总数 **取值范围**: 取值0-300000
 
         :param num: The num of this JarPackageStatisticsResponseInfo.
         :type num: int

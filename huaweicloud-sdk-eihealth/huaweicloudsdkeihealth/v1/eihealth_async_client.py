@@ -1836,6 +1836,71 @@ class EiHealthAsyncClient(Client):
 
         return http_info
 
+    def create_computing_cluster_async(self, request):
+        r"""绑定计算集群
+
+        绑定计算集群。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateComputingCluster
+        :type request: :class:`huaweicloudsdkeihealth.v1.CreateComputingClusterRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.CreateComputingClusterResponse`
+        """
+        http_info = self._create_computing_cluster_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_computing_cluster_async_invoker(self, request):
+        http_info = self._create_computing_cluster_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_computing_cluster_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/system/computing-clusters",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateComputingClusterResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_computing_resource_async(self, request):
         r"""购买计算资源
 
@@ -4071,6 +4136,71 @@ class EiHealthAsyncClient(Client):
             path_params['backup_id'] = local_var_params['backup_id']
         if 'eihealth_project_id' in local_var_params:
             path_params['eihealth_project_id'] = local_var_params['eihealth_project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_computing_cluster_async(self, request):
+        r"""解绑计算集群
+
+        解绑计算集群。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteComputingCluster
+        :type request: :class:`huaweicloudsdkeihealth.v1.DeleteComputingClusterRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteComputingClusterResponse`
+        """
+        http_info = self._delete_computing_cluster_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_computing_cluster_async_invoker(self, request):
+        http_info = self._delete_computing_cluster_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_computing_cluster_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/system/computing-clusters/{cluster_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteComputingClusterResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
 
         query_params = []
 
@@ -6630,6 +6760,69 @@ class EiHealthAsyncClient(Client):
 
         return http_info
 
+    def initialize_platform_async(self, request):
+        r"""初始化平台
+
+        初始化平台。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for InitializePlatform
+        :type request: :class:`huaweicloudsdkeihealth.v1.InitializePlatformRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.InitializePlatformResponse`
+        """
+        http_info = self._initialize_platform_http_info(request)
+        return self._call_api(**http_info)
+
+    def initialize_platform_async_invoker(self, request):
+        http_info = self._initialize_platform_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _initialize_platform_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/system/init",
+            "request_type": request.__class__.__name__,
+            "response_type": "InitializePlatformResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_app_async(self, request):
         r"""获取应用列表
 
@@ -7125,6 +7318,69 @@ class EiHealthAsyncClient(Client):
 
         return http_info
 
+    def list_cce_cluster_async(self, request):
+        r"""获取CCE集群列表
+
+        获取CCE集群列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListCceCluster
+        :type request: :class:`huaweicloudsdkeihealth.v1.ListCceClusterRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.ListCceClusterResponse`
+        """
+        http_info = self._list_cce_cluster_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_cce_cluster_async_invoker(self, request):
+        http_info = self._list_cce_cluster_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_cce_cluster_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/system/cce-clusters",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCceClusterResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_checkpoint_async(self, request):
         r"""获取数据作业执行日志
 
@@ -7228,6 +7484,138 @@ class EiHealthAsyncClient(Client):
         path_params = {}
 
         query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_cluster_install_step_async(self, request):
+        r"""查询指定集群安装步骤列表
+
+        查询指定集群安装步骤列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListClusterInstallStep
+        :type request: :class:`huaweicloudsdkeihealth.v1.ListClusterInstallStepRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.ListClusterInstallStepResponse`
+        """
+        http_info = self._list_cluster_install_step_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_cluster_install_step_async_invoker(self, request):
+        http_info = self._list_cluster_install_step_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_cluster_install_step_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/system/computing-clusters/{cluster_id}/steps",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListClusterInstallStepResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_computing_cluster_async(self, request):
+        r"""获取计算集群列表
+
+        获取计算集群列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListComputingCluster
+        :type request: :class:`huaweicloudsdkeihealth.v1.ListComputingClusterRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.ListComputingClusterResponse`
+        """
+        http_info = self._list_computing_cluster_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_computing_cluster_async_invoker(self, request):
+        http_info = self._list_computing_cluster_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_computing_cluster_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/system/computing-clusters",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListComputingClusterResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
 
         header_params = {}
 
@@ -9508,6 +9896,69 @@ class EiHealthAsyncClient(Client):
 
         return http_info
 
+    def list_project_statistics_async(self, request):
+        r"""获取当前用户所属空间资源统计信息
+
+        获取当前用户所属空间资源统计信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListProjectStatistics
+        :type request: :class:`huaweicloudsdkeihealth.v1.ListProjectStatisticsRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.ListProjectStatisticsResponse`
+        """
+        http_info = self._list_project_statistics_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_project_statistics_async_invoker(self, request):
+        http_info = self._list_project_statistics_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_project_statistics_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects/statistics",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProjectStatisticsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_property_async(self, request):
         r"""获取属性值列表
 
@@ -9737,6 +10188,73 @@ class EiHealthAsyncClient(Client):
             path_params['id'] = local_var_params['id']
 
         query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_sfs_turbos_async(self, request):
+        r"""获取sfs-turbo资源列表
+
+        获取sfs-turbo资源列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListSfsTurbos
+        :type request: :class:`huaweicloudsdkeihealth.v1.ListSfsTurbosRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.ListSfsTurbosResponse`
+        """
+        http_info = self._list_sfs_turbos_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_sfs_turbos_async_invoker(self, request):
+        http_info = self._list_sfs_turbos_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_sfs_turbos_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/system/sfs-turbos",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSfsTurbosResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
 
         header_params = {}
 
@@ -10121,6 +10639,477 @@ class EiHealthAsyncClient(Client):
         path_params = {}
 
         query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_user_app_async(self, request):
+        r"""获取用户所属空间的应用列表
+
+        获取用户所属空间的应用列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListUserApp
+        :type request: :class:`huaweicloudsdkeihealth.v1.ListUserAppRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.ListUserAppResponse`
+        """
+        http_info = self._list_user_app_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_user_app_async_invoker(self, request):
+        http_info = self._list_user_app_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_user_app_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects/apps",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListUserAppResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'is_creator' in local_var_params:
+            query_params.append(('is_creator', local_var_params['is_creator']))
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'summary' in local_var_params:
+            query_params.append(('summary', local_var_params['summary']))
+        if 'eihealth_project_names' in local_var_params:
+            query_params.append(('eihealth_project_names', local_var_params['eihealth_project_names']))
+            collection_formats['eihealth_project_names'] = 'csv'
+        if 'labels' in local_var_params:
+            query_params.append(('labels', local_var_params['labels']))
+            collection_formats['labels'] = 'csv'
+        if 'start_create_time' in local_var_params:
+            query_params.append(('start_create_time', local_var_params['start_create_time']))
+        if 'end_create_time' in local_var_params:
+            query_params.append(('end_create_time', local_var_params['end_create_time']))
+        if 'start_update_time' in local_var_params:
+            query_params.append(('start_update_time', local_var_params['start_update_time']))
+        if 'end_update_time' in local_var_params:
+            query_params.append(('end_update_time', local_var_params['end_update_time']))
+        if 'sort_by' in local_var_params:
+            query_params.append(('sort_by', local_var_params['sort_by']))
+        if 'sort_dir' in local_var_params:
+            query_params.append(('sort_dir', local_var_params['sort_dir']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_user_drug_job_async(self, request):
+        r"""获取用户所属空间的药物作业列表
+
+        获取用户所属空间的药物作业列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListUserDrugJob
+        :type request: :class:`huaweicloudsdkeihealth.v1.ListUserDrugJobRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.ListUserDrugJobResponse`
+        """
+        http_info = self._list_user_drug_job_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_user_drug_job_async_invoker(self, request):
+        http_info = self._list_user_drug_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_user_drug_job_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects/drug-jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListUserDrugJobResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'is_creator' in local_var_params:
+            query_params.append(('is_creator', local_var_params['is_creator']))
+        if 'job_name' in local_var_params:
+            query_params.append(('job_name', local_var_params['job_name']))
+        if 'eihealth_project_names' in local_var_params:
+            query_params.append(('eihealth_project_names', local_var_params['eihealth_project_names']))
+            collection_formats['eihealth_project_names'] = 'csv'
+        if 'labels' in local_var_params:
+            query_params.append(('labels', local_var_params['labels']))
+            collection_formats['labels'] = 'csv'
+        if 'status_list' in local_var_params:
+            query_params.append(('status_list', local_var_params['status_list']))
+            collection_formats['status_list'] = 'csv'
+        if 'types' in local_var_params:
+            query_params.append(('types', local_var_params['types']))
+            collection_formats['types'] = 'csv'
+        if 'create_start_time' in local_var_params:
+            query_params.append(('create_start_time', local_var_params['create_start_time']))
+        if 'create_end_time' in local_var_params:
+            query_params.append(('create_end_time', local_var_params['create_end_time']))
+        if 'finish_start_time' in local_var_params:
+            query_params.append(('finish_start_time', local_var_params['finish_start_time']))
+        if 'finish_end_time' in local_var_params:
+            query_params.append(('finish_end_time', local_var_params['finish_end_time']))
+        if 'sort_dir' in local_var_params:
+            query_params.append(('sort_dir', local_var_params['sort_dir']))
+        if 'sort_key' in local_var_params:
+            query_params.append(('sort_key', local_var_params['sort_key']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_user_image_async(self, request):
+        r"""获取用户所属空间的镜像列表
+
+        获取用户所属空间的镜像列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListUserImage
+        :type request: :class:`huaweicloudsdkeihealth.v1.ListUserImageRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.ListUserImageResponse`
+        """
+        http_info = self._list_user_image_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_user_image_async_invoker(self, request):
+        http_info = self._list_user_image_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_user_image_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects/images",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListUserImageResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'is_creator' in local_var_params:
+            query_params.append(('is_creator', local_var_params['is_creator']))
+        if 'image_id' in local_var_params:
+            query_params.append(('image_id', local_var_params['image_id']))
+        if 'image_name' in local_var_params:
+            query_params.append(('image_name', local_var_params['image_name']))
+        if 'description' in local_var_params:
+            query_params.append(('description', local_var_params['description']))
+        if 'eihealth_project_names' in local_var_params:
+            query_params.append(('eihealth_project_names', local_var_params['eihealth_project_names']))
+            collection_formats['eihealth_project_names'] = 'csv'
+        if 'source_project_name' in local_var_params:
+            query_params.append(('source_project_name', local_var_params['source_project_name']))
+        if 'types' in local_var_params:
+            query_params.append(('types', local_var_params['types']))
+            collection_formats['types'] = 'csv'
+        if 'start_create_time' in local_var_params:
+            query_params.append(('start_create_time', local_var_params['start_create_time']))
+        if 'end_create_time' in local_var_params:
+            query_params.append(('end_create_time', local_var_params['end_create_time']))
+        if 'start_update_time' in local_var_params:
+            query_params.append(('start_update_time', local_var_params['start_update_time']))
+        if 'end_update_time' in local_var_params:
+            query_params.append(('end_update_time', local_var_params['end_update_time']))
+        if 'sort_by' in local_var_params:
+            query_params.append(('sort_by', local_var_params['sort_by']))
+        if 'sort_dir' in local_var_params:
+            query_params.append(('sort_dir', local_var_params['sort_dir']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_user_job_async(self, request):
+        r"""获取用户所属空间的作业列表
+
+        获取用户所属空间的作业列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListUserJob
+        :type request: :class:`huaweicloudsdkeihealth.v1.ListUserJobRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.ListUserJobResponse`
+        """
+        http_info = self._list_user_job_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_user_job_async_invoker(self, request):
+        http_info = self._list_user_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_user_job_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects/jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListUserJobResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'is_creator' in local_var_params:
+            query_params.append(('is_creator', local_var_params['is_creator']))
+        if 'job_name' in local_var_params:
+            query_params.append(('job_name', local_var_params['job_name']))
+        if 'eihealth_project_names' in local_var_params:
+            query_params.append(('eihealth_project_names', local_var_params['eihealth_project_names']))
+            collection_formats['eihealth_project_names'] = 'csv'
+        if 'types' in local_var_params:
+            query_params.append(('types', local_var_params['types']))
+            collection_formats['types'] = 'csv'
+        if 'status_list' in local_var_params:
+            query_params.append(('status_list', local_var_params['status_list']))
+            collection_formats['status_list'] = 'csv'
+        if 'labels' in local_var_params:
+            query_params.append(('labels', local_var_params['labels']))
+            collection_formats['labels'] = 'csv'
+        if 'start_create_time' in local_var_params:
+            query_params.append(('start_create_time', local_var_params['start_create_time']))
+        if 'end_create_time' in local_var_params:
+            query_params.append(('end_create_time', local_var_params['end_create_time']))
+        if 'start_finish_time' in local_var_params:
+            query_params.append(('start_finish_time', local_var_params['start_finish_time']))
+        if 'end_finish_time' in local_var_params:
+            query_params.append(('end_finish_time', local_var_params['end_finish_time']))
+        if 'sort_key' in local_var_params:
+            query_params.append(('sort_key', local_var_params['sort_key']))
+        if 'sort_dir' in local_var_params:
+            query_params.append(('sort_dir', local_var_params['sort_dir']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_user_workflow_async(self, request):
+        r"""获取用户所属空间的流程列表
+
+        获取用户所属空间的流程列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListUserWorkflow
+        :type request: :class:`huaweicloudsdkeihealth.v1.ListUserWorkflowRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.ListUserWorkflowResponse`
+        """
+        http_info = self._list_user_workflow_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_user_workflow_async_invoker(self, request):
+        http_info = self._list_user_workflow_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_user_workflow_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects/workflows",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListUserWorkflowResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'is_creator' in local_var_params:
+            query_params.append(('is_creator', local_var_params['is_creator']))
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'summary' in local_var_params:
+            query_params.append(('summary', local_var_params['summary']))
+        if 'eihealth_project_names' in local_var_params:
+            query_params.append(('eihealth_project_names', local_var_params['eihealth_project_names']))
+            collection_formats['eihealth_project_names'] = 'csv'
+        if 'labels' in local_var_params:
+            query_params.append(('labels', local_var_params['labels']))
+            collection_formats['labels'] = 'csv'
+        if 'start_create_time' in local_var_params:
+            query_params.append(('start_create_time', local_var_params['start_create_time']))
+        if 'end_create_time' in local_var_params:
+            query_params.append(('end_create_time', local_var_params['end_create_time']))
+        if 'start_update_time' in local_var_params:
+            query_params.append(('start_update_time', local_var_params['start_update_time']))
+        if 'end_update_time' in local_var_params:
+            query_params.append(('end_update_time', local_var_params['end_update_time']))
+        if 'sort_dir' in local_var_params:
+            query_params.append(('sort_dir', local_var_params['sort_dir']))
+        if 'sort_key' in local_var_params:
+            query_params.append(('sort_key', local_var_params['sort_key']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
 
         header_params = {}
 
@@ -11266,6 +12255,69 @@ class EiHealthAsyncClient(Client):
             path_params['eihealth_project_id'] = local_var_params['eihealth_project_id']
         if 'job_id' in local_var_params:
             path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_agency_async(self, request):
+        r"""获取业务委托
+
+        获取业务委托。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowAgency
+        :type request: :class:`huaweicloudsdkeihealth.v1.ShowAgencyRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.ShowAgencyResponse`
+        """
+        http_info = self._show_agency_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_agency_async_invoker(self, request):
+        http_info = self._show_agency_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_agency_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/system/agencies",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAgencyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
 
         query_params = []
 
@@ -15518,6 +16570,69 @@ class EiHealthAsyncClient(Client):
 
         return http_info
 
+    def update_agency_async(self, request):
+        r"""更新业务委托
+
+        更新业务委托。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateAgency
+        :type request: :class:`huaweicloudsdkeihealth.v1.UpdateAgencyRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateAgencyResponse`
+        """
+        http_info = self._update_agency_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_agency_async_invoker(self, request):
+        http_info = self._update_agency_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_agency_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/system/agencies",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAgencyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def update_app_async(self, request):
         r"""更新应用
 
@@ -17178,6 +18293,73 @@ class EiHealthAsyncClient(Client):
         form_params = {}
 
         body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_top_project_async(self, request):
+        r"""置顶空间
+
+        置顶空间。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateTopProject
+        :type request: :class:`huaweicloudsdkeihealth.v1.UpdateTopProjectRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateTopProjectResponse`
+        """
+        http_info = self._update_top_project_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_top_project_async_invoker(self, request):
+        http_info = self._update_top_project_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_top_project_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/top",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateTopProjectResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'eihealth_project_id' in local_var_params:
+            path_params['eihealth_project_id'] = local_var_params['eihealth_project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -22060,6 +23242,99 @@ class EiHealthAsyncClient(Client):
             path_params['eihealth_project_id'] = local_var_params['eihealth_project_id']
 
         query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_user_notebook_async(self, request):
+        r"""获取用户所属空间的notebook列表
+
+        获取用户所属空间的notebook列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListUserNotebook
+        :type request: :class:`huaweicloudsdkeihealth.v1.ListUserNotebookRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.ListUserNotebookResponse`
+        """
+        http_info = self._list_user_notebook_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_user_notebook_async_invoker(self, request):
+        http_info = self._list_user_notebook_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_user_notebook_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects/notebooks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListUserNotebookResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'notebook_name' in local_var_params:
+            query_params.append(('notebook_name', local_var_params['notebook_name']))
+        if 'description' in local_var_params:
+            query_params.append(('description', local_var_params['description']))
+        if 'image_name' in local_var_params:
+            query_params.append(('image_name', local_var_params['image_name']))
+        if 'is_creator' in local_var_params:
+            query_params.append(('is_creator', local_var_params['is_creator']))
+        if 'eihealth_project_names' in local_var_params:
+            query_params.append(('eihealth_project_names', local_var_params['eihealth_project_names']))
+            collection_formats['eihealth_project_names'] = 'csv'
+        if 'statuses' in local_var_params:
+            query_params.append(('statuses', local_var_params['statuses']))
+            collection_formats['statuses'] = 'csv'
+        if 'start_create_time' in local_var_params:
+            query_params.append(('start_create_time', local_var_params['start_create_time']))
+        if 'end_create_time' in local_var_params:
+            query_params.append(('end_create_time', local_var_params['end_create_time']))
+        if 'start_update_time' in local_var_params:
+            query_params.append(('start_update_time', local_var_params['start_update_time']))
+        if 'end_update_time' in local_var_params:
+            query_params.append(('end_update_time', local_var_params['end_update_time']))
+        if 'sort_dir' in local_var_params:
+            query_params.append(('sort_dir', local_var_params['sort_dir']))
+        if 'sort_by' in local_var_params:
+            query_params.append(('sort_by', local_var_params['sort_by']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
 
         header_params = {}
 

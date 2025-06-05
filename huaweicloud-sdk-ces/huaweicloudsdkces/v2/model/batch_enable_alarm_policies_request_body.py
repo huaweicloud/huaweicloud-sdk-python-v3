@@ -33,7 +33,7 @@ class BatchEnableAlarmPoliciesRequestBody:
 
         :param alarm_policy_ids: 需要批量启停的告警规则策略的ID列表
         :type alarm_policy_ids: list[str]
-        :param enabled: 开关
+        :param enabled: 是否启用告警策略。true:开启，false:关闭。
         :type enabled: bool
         """
         
@@ -72,7 +72,7 @@ class BatchEnableAlarmPoliciesRequestBody:
     def enabled(self):
         r"""Gets the enabled of this BatchEnableAlarmPoliciesRequestBody.
 
-        开关
+        是否启用告警策略。true:开启，false:关闭。
 
         :return: The enabled of this BatchEnableAlarmPoliciesRequestBody.
         :rtype: bool
@@ -83,7 +83,7 @@ class BatchEnableAlarmPoliciesRequestBody:
     def enabled(self, enabled):
         r"""Sets the enabled of this BatchEnableAlarmPoliciesRequestBody.
 
-        开关
+        是否启用告警策略。true:开启，false:关闭。
 
         :param enabled: The enabled of this BatchEnableAlarmPoliciesRequestBody.
         :type enabled: bool

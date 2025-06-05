@@ -35,6 +35,7 @@ class ListNotificationMaskRespNotificationMasks:
         'start_time': 'str',
         'end_date': 'date',
         'end_time': 'str',
+        'effective_timezone': 'str',
         'policies': 'list[PoliciesInListResp]'
     }
 
@@ -57,10 +58,11 @@ class ListNotificationMaskRespNotificationMasks:
         'start_time': 'start_time',
         'end_date': 'end_date',
         'end_time': 'end_time',
+        'effective_timezone': 'effective_timezone',
         'policies': 'policies'
     }
 
-    def __init__(self, notification_mask_id=None, mask_name=None, relation_type=None, relation_id=None, resource_type=None, metric_names=None, product_metrics=None, resource_level=None, product_name=None, resources=None, mask_status=None, mask_type=None, create_time=None, update_time=None, start_date=None, start_time=None, end_date=None, end_time=None, policies=None):
+    def __init__(self, notification_mask_id=None, mask_name=None, relation_type=None, relation_id=None, resource_type=None, metric_names=None, product_metrics=None, resource_level=None, product_name=None, resources=None, mask_status=None, mask_type=None, create_time=None, update_time=None, start_date=None, start_time=None, end_date=None, end_time=None, effective_timezone=None, policies=None):
         r"""ListNotificationMaskRespNotificationMasks
 
         The model defined in huaweicloud sdk
@@ -101,6 +103,8 @@ class ListNotificationMaskRespNotificationMasks:
         :type end_date: date
         :param end_time: 屏蔽截止时间，HH:mm:ss。
         :type end_time: str
+        :param effective_timezone: 时区，形如：\&quot;GMT-08:00\&quot;、\&quot;GMT+08:00\&quot;、\&quot;GMT+0:00\&quot;
+        :type effective_timezone: str
         :param policies: 告警策略列表。
         :type policies: list[:class:`huaweicloudsdkces.v2.PoliciesInListResp`]
         """
@@ -125,6 +129,7 @@ class ListNotificationMaskRespNotificationMasks:
         self._start_time = None
         self._end_date = None
         self._end_time = None
+        self._effective_timezone = None
         self._policies = None
         self.discriminator = None
 
@@ -160,6 +165,8 @@ class ListNotificationMaskRespNotificationMasks:
             self.end_date = end_date
         if end_time is not None:
             self.end_time = end_time
+        if effective_timezone is not None:
+            self.effective_timezone = effective_timezone
         if policies is not None:
             self.policies = policies
 
@@ -542,6 +549,28 @@ class ListNotificationMaskRespNotificationMasks:
         :type end_time: str
         """
         self._end_time = end_time
+
+    @property
+    def effective_timezone(self):
+        r"""Gets the effective_timezone of this ListNotificationMaskRespNotificationMasks.
+
+        时区，形如：\"GMT-08:00\"、\"GMT+08:00\"、\"GMT+0:00\"
+
+        :return: The effective_timezone of this ListNotificationMaskRespNotificationMasks.
+        :rtype: str
+        """
+        return self._effective_timezone
+
+    @effective_timezone.setter
+    def effective_timezone(self, effective_timezone):
+        r"""Sets the effective_timezone of this ListNotificationMaskRespNotificationMasks.
+
+        时区，形如：\"GMT-08:00\"、\"GMT+08:00\"、\"GMT+0:00\"
+
+        :param effective_timezone: The effective_timezone of this ListNotificationMaskRespNotificationMasks.
+        :type effective_timezone: str
+        """
+        self._effective_timezone = effective_timezone
 
     @property
     def policies(self):

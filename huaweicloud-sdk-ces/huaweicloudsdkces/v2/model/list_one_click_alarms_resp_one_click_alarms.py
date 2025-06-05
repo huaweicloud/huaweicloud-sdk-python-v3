@@ -41,7 +41,7 @@ class ListOneClickAlarmsRespOneClickAlarms:
         :type namespace: str
         :param description: 一键告警描述，长度范围[0,256]，该字段默认值为空字符串
         :type description: str
-        :param enabled: 开关
+        :param enabled: 是否启用一键告警。true:开启，false：关闭。
         :type enabled: bool
         """
         
@@ -128,7 +128,7 @@ class ListOneClickAlarmsRespOneClickAlarms:
     def enabled(self):
         r"""Gets the enabled of this ListOneClickAlarmsRespOneClickAlarms.
 
-        开关
+        是否启用一键告警。true:开启，false：关闭。
 
         :return: The enabled of this ListOneClickAlarmsRespOneClickAlarms.
         :rtype: bool
@@ -139,7 +139,7 @@ class ListOneClickAlarmsRespOneClickAlarms:
     def enabled(self, enabled):
         r"""Sets the enabled of this ListOneClickAlarmsRespOneClickAlarms.
 
-        开关
+        是否启用一键告警。true:开启，false：关闭。
 
         :param enabled: The enabled of this ListOneClickAlarmsRespOneClickAlarms.
         :type enabled: bool

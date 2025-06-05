@@ -73,7 +73,7 @@ class PortHostResponseInfo:
         :type type: str
         :param container_name: 容器名称
         :type container_name: str
-        :param agent_id: Agent ID
+        :param agent_id: agent id
         :type agent_id: str
         """
         
@@ -364,7 +364,7 @@ class PortHostResponseInfo:
     def agent_id(self):
         r"""Gets the agent_id of this PortHostResponseInfo.
 
-        Agent ID
+        agent id
 
         :return: The agent_id of this PortHostResponseInfo.
         :rtype: str
@@ -375,7 +375,7 @@ class PortHostResponseInfo:
     def agent_id(self, agent_id):
         r"""Sets the agent_id of this PortHostResponseInfo.
 
-        Agent ID
+        agent id
 
         :param agent_id: The agent_id of this PortHostResponseInfo.
         :type agent_id: str

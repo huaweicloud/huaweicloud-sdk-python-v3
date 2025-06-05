@@ -33,7 +33,7 @@ class VulCveInfo:
 
         The model defined in huaweicloud sdk
 
-        :param cve_id: cve id
+        :param cve_id: cve ID
         :type cve_id: str
         :param cvss: cve评分
         :type cvss: float
@@ -59,7 +59,7 @@ class VulCveInfo:
     def cve_id(self):
         r"""Gets the cve_id of this VulCveInfo.
 
-        cve id
+        cve ID
 
         :return: The cve_id of this VulCveInfo.
         :rtype: str
@@ -70,7 +70,7 @@ class VulCveInfo:
     def cve_id(self, cve_id):
         r"""Sets the cve_id of this VulCveInfo.
 
-        cve id
+        cve ID
 
         :param cve_id: The cve_id of this VulCveInfo.
         :type cve_id: str

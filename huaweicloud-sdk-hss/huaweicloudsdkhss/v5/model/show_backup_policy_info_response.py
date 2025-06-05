@@ -40,13 +40,13 @@ class ShowBackupPolicyInfoResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param enabled: 策略是否启用
+        :param enabled: **参数解释**: 策略是否启用 **约束限制**: 不涉及 **取值范围**: true或者false **默认取值**: 不涉及 
         :type enabled: bool
-        :param id: 策略ID
+        :param id: **参数解释**: 策略ID **约束限制**: 不涉及 **取值范围**: 字符长度1-128 **默认取值**: 不涉及 
         :type id: str
-        :param name: 策略名称
+        :param name: **参数解释**: 策略名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-128 **默认取值**: 不涉及 
         :type name: str
-        :param operation_type: 备份类型。当前包含如下1种。   - backup ：备份
+        :param operation_type: **参数解释**: 备份类型。当前包含如下1种。   - backup ：备份 **约束限制**: 不涉及 **取值范围**: 字符长度1-128 **默认取值**: 不涉及
         :type operation_type: str
         :param operation_definition: 
         :type operation_definition: :class:`huaweicloudsdkhss.v5.OperationDefinitionInfo`
@@ -81,7 +81,7 @@ class ShowBackupPolicyInfoResponse(SdkResponse):
     def enabled(self):
         r"""Gets the enabled of this ShowBackupPolicyInfoResponse.
 
-        策略是否启用
+        **参数解释**: 策略是否启用 **约束限制**: 不涉及 **取值范围**: true或者false **默认取值**: 不涉及 
 
         :return: The enabled of this ShowBackupPolicyInfoResponse.
         :rtype: bool
@@ -92,7 +92,7 @@ class ShowBackupPolicyInfoResponse(SdkResponse):
     def enabled(self, enabled):
         r"""Sets the enabled of this ShowBackupPolicyInfoResponse.
 
-        策略是否启用
+        **参数解释**: 策略是否启用 **约束限制**: 不涉及 **取值范围**: true或者false **默认取值**: 不涉及 
 
         :param enabled: The enabled of this ShowBackupPolicyInfoResponse.
         :type enabled: bool
@@ -103,7 +103,7 @@ class ShowBackupPolicyInfoResponse(SdkResponse):
     def id(self):
         r"""Gets the id of this ShowBackupPolicyInfoResponse.
 
-        策略ID
+        **参数解释**: 策略ID **约束限制**: 不涉及 **取值范围**: 字符长度1-128 **默认取值**: 不涉及 
 
         :return: The id of this ShowBackupPolicyInfoResponse.
         :rtype: str
@@ -114,7 +114,7 @@ class ShowBackupPolicyInfoResponse(SdkResponse):
     def id(self, id):
         r"""Sets the id of this ShowBackupPolicyInfoResponse.
 
-        策略ID
+        **参数解释**: 策略ID **约束限制**: 不涉及 **取值范围**: 字符长度1-128 **默认取值**: 不涉及 
 
         :param id: The id of this ShowBackupPolicyInfoResponse.
         :type id: str
@@ -125,7 +125,7 @@ class ShowBackupPolicyInfoResponse(SdkResponse):
     def name(self):
         r"""Gets the name of this ShowBackupPolicyInfoResponse.
 
-        策略名称
+        **参数解释**: 策略名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-128 **默认取值**: 不涉及 
 
         :return: The name of this ShowBackupPolicyInfoResponse.
         :rtype: str
@@ -136,7 +136,7 @@ class ShowBackupPolicyInfoResponse(SdkResponse):
     def name(self, name):
         r"""Sets the name of this ShowBackupPolicyInfoResponse.
 
-        策略名称
+        **参数解释**: 策略名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-128 **默认取值**: 不涉及 
 
         :param name: The name of this ShowBackupPolicyInfoResponse.
         :type name: str
@@ -147,7 +147,7 @@ class ShowBackupPolicyInfoResponse(SdkResponse):
     def operation_type(self):
         r"""Gets the operation_type of this ShowBackupPolicyInfoResponse.
 
-        备份类型。当前包含如下1种。   - backup ：备份
+        **参数解释**: 备份类型。当前包含如下1种。   - backup ：备份 **约束限制**: 不涉及 **取值范围**: 字符长度1-128 **默认取值**: 不涉及
 
         :return: The operation_type of this ShowBackupPolicyInfoResponse.
         :rtype: str
@@ -158,7 +158,7 @@ class ShowBackupPolicyInfoResponse(SdkResponse):
     def operation_type(self, operation_type):
         r"""Sets the operation_type of this ShowBackupPolicyInfoResponse.
 
-        备份类型。当前包含如下1种。   - backup ：备份
+        **参数解释**: 备份类型。当前包含如下1种。   - backup ：备份 **约束限制**: 不涉及 **取值范围**: 字符长度1-128 **默认取值**: 不涉及
 
         :param operation_type: The operation_type of this ShowBackupPolicyInfoResponse.
         :type operation_type: str

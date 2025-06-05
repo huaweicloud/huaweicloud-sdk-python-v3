@@ -69,7 +69,7 @@ class AntiVirusTaskHostResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param host_id: 主机ID
+        :param host_id: 服务器ID
         :type host_id: str
         :param host_name: 服务器名称
         :type host_name: str
@@ -185,7 +185,7 @@ class AntiVirusTaskHostResponseInfo:
     def host_id(self):
         r"""Gets the host_id of this AntiVirusTaskHostResponseInfo.
 
-        主机ID
+        服务器ID
 
         :return: The host_id of this AntiVirusTaskHostResponseInfo.
         :rtype: str
@@ -196,7 +196,7 @@ class AntiVirusTaskHostResponseInfo:
     def host_id(self, host_id):
         r"""Sets the host_id of this AntiVirusTaskHostResponseInfo.
 
-        主机ID
+        服务器ID
 
         :param host_id: The host_id of this AntiVirusTaskHostResponseInfo.
         :type host_id: str

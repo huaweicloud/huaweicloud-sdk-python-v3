@@ -56,7 +56,8 @@ class DeleteAccountRequest:
 
         if x_security_token is not None:
             self.x_security_token = x_security_token
-        self.region = region
+        if region is not None:
+            self.region = region
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
         if body is not None:

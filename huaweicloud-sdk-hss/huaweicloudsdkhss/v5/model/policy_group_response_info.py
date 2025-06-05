@@ -51,7 +51,7 @@ class PolicyGroupResponseInfo:
         :type description: str
         :param deletable: 是否允许删除该策略组
         :type deletable: bool
-        :param host_num: 关联服务器数
+        :param host_num: 影响主机数量
         :type host_num: int
         :param default_group: 是否是默认策略组
         :type default_group: bool
@@ -182,7 +182,7 @@ class PolicyGroupResponseInfo:
     def host_num(self):
         r"""Gets the host_num of this PolicyGroupResponseInfo.
 
-        关联服务器数
+        影响主机数量
 
         :return: The host_num of this PolicyGroupResponseInfo.
         :rtype: int
@@ -193,7 +193,7 @@ class PolicyGroupResponseInfo:
     def host_num(self, host_num):
         r"""Sets the host_num of this PolicyGroupResponseInfo.
 
-        关联服务器数
+        影响主机数量
 
         :param host_num: The host_num of this PolicyGroupResponseInfo.
         :type host_num: int

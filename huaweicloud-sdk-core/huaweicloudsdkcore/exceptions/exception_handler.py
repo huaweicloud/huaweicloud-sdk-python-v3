@@ -23,10 +23,9 @@
 import json
 from abc import abstractmethod
 
-import bson
 import six
-from urllib3.exceptions import SSLError, NewConnectionError
 from requests import Request, Response
+from urllib3.exceptions import SSLError, NewConnectionError
 
 from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import six_utils
@@ -107,14 +106,29 @@ def process_connection_error(connection_error, logger):
         reason_str = str(each.reason)
         if isinstance(each.reason, SSLError):
             logger.error("SslHandShakeException occurred. %s", reason_str)
-            raise exceptions.SslHandShakeException(reason_str)
+            return exceptions.SslHandShakeException(reason_str)
 
         if isinstance(each.reason, NewConnectionError):
             if reason_str.endswith("getaddrinfo failed") or reason_str.endswith("Name or service not known"):
                 logger.error("HostUnreachableException occurred. %s", reason_str)
-                raise exceptions.HostUnreachableException(reason_str)
+                return exceptions.HostUnreachableException(reason_str)
 
             logger.error("ConnectionException occurred. %s", reason_str)
-            raise exceptions.ConnectionException(reason_str)
+            return exceptions.ConnectionException(reason_str)
     logger.error("ConnectionException occurred. %s", connection_error)
-    raise exceptions.ConnectionException(str(connection_error))
+    return exceptions.ConnectionException(str(connection_error))
+
+
+def process_retry_error(retry_error, logger):
+    err_msg = str(retry_error)
+    logger.error("RetryError occurred. %s", err_msg)
+
+    if "too many 429 error responses" in err_msg:
+        sdk_error = exceptions.SdkError(
+            request_id="",
+            error_msg=err_msg,
+            error_code="429"
+        )
+        return exceptions.ClientRequestException(status_code=429, sdk_error=sdk_error)
+
+    return exceptions.SdkException(err_msg)

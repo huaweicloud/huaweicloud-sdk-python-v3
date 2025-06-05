@@ -71,49 +71,49 @@ class JarPackageHostInfo:
 
         The model defined in huaweicloud sdk
 
-        :param agent_id: Agent ID
+        :param agent_id: **参数解释** agent_id **取值范围**: 字符长度1-64位
         :type agent_id: str
-        :param host_id: 主机id
+        :param host_id: **参数解释** 主机id **取值范围**: 字符长度0-128位
         :type host_id: str
-        :param host_name: 服务器名称
+        :param host_name: **参数解释** 服务器名称 **取值范围**: 字符长度0-256位
         :type host_name: str
-        :param host_ip: 服务器ip
+        :param host_ip: **参数解释** 服务器ip **取值范围**: 字符长度0-128位
         :type host_ip: str
-        :param file_name: Jar包名称
+        :param file_name: **参数解释** 中间件包名称 **取值范围**: 字符长度0-256位
         :type file_name: str
-        :param name: Jar包名称(不带后缀)
+        :param name: **参数解释** 中间件包名称(不带后缀) **取值范围**: 字符长度0-256位\&quot;
         :type name: str
-        :param catalogue: Jar包类型
+        :param catalogue: **参数解释** 中间件包类型 **取值范围**: 字符长度0-32位
         :type catalogue: str
-        :param file_type: Jar包后缀
+        :param file_type: **参数解释** 中间件包后缀 **取值范围**: 字符长度0-32位
         :type file_type: str
-        :param version: Jar包版本
+        :param version: **参数解释** 中间件包版本 **取值范围**: 字符长度0-64位
         :type version: str
-        :param path: Jar包路径
+        :param path: **参数解释** 中间件包路径 **取值范围**: 字符长度0-512位
         :type path: str
-        :param hash: Jar包hash
+        :param hash: **参数解释** 中间件包hash **取值范围**: 字符长度0-512位
         :type hash: str
-        :param size: Jar包大小
+        :param size: **参数解释** 中间件包大小 **取值范围**: 取值0-2147483647
         :type size: int
-        :param uid: uid
+        :param uid: **参数解释** uid **取值范围**: 取值0-2147483647
         :type uid: int
-        :param gid: gid
+        :param gid: **参数解释** gid **取值范围**: 取值0-2147483647
         :type gid: int
-        :param mode: 文件权限
+        :param mode: **参数解释** 文件权限 **取值范围**: 字符长度0-32位
         :type mode: str
-        :param pid: 进程id
+        :param pid: **参数解释** 进程id **取值范围**: 取值0-2147483647
         :type pid: int
-        :param proc_path: 进程可执行文件路径
+        :param proc_path: **参数解释** 进程可执行文件路径 **取值范围**: 字符长度0-1024位
         :type proc_path: str
-        :param container_id: 容器实例id
+        :param container_id: **参数解释** 容器实例id **取值范围**: 字符长度0-128位
         :type container_id: str
-        :param container_name: 容器名称
+        :param container_name: **参数解释** 容器名称 **取值范围**: 字符长度0-256位
         :type container_name: str
-        :param package_path: 包路径
+        :param package_path: **参数解释** 包路径 **取值范围**: 字符长度0-1024位
         :type package_path: str
-        :param is_embedded: 显示的是否是嵌套包
+        :param is_embedded: **参数解释** 是否是嵌套包 **取值范围**: - 0: 不是嵌套包 - 1: 是嵌套包
         :type is_embedded: int
-        :param record_time: 扫描时间
+        :param record_time: **参数解释** 扫描时间 **取值范围**: 取值0-4070880000000
         :type record_time: int
         """
         
@@ -192,7 +192,7 @@ class JarPackageHostInfo:
     def agent_id(self):
         r"""Gets the agent_id of this JarPackageHostInfo.
 
-        Agent ID
+        **参数解释** agent_id **取值范围**: 字符长度1-64位
 
         :return: The agent_id of this JarPackageHostInfo.
         :rtype: str
@@ -203,7 +203,7 @@ class JarPackageHostInfo:
     def agent_id(self, agent_id):
         r"""Sets the agent_id of this JarPackageHostInfo.
 
-        Agent ID
+        **参数解释** agent_id **取值范围**: 字符长度1-64位
 
         :param agent_id: The agent_id of this JarPackageHostInfo.
         :type agent_id: str
@@ -214,7 +214,7 @@ class JarPackageHostInfo:
     def host_id(self):
         r"""Gets the host_id of this JarPackageHostInfo.
 
-        主机id
+        **参数解释** 主机id **取值范围**: 字符长度0-128位
 
         :return: The host_id of this JarPackageHostInfo.
         :rtype: str
@@ -225,7 +225,7 @@ class JarPackageHostInfo:
     def host_id(self, host_id):
         r"""Sets the host_id of this JarPackageHostInfo.
 
-        主机id
+        **参数解释** 主机id **取值范围**: 字符长度0-128位
 
         :param host_id: The host_id of this JarPackageHostInfo.
         :type host_id: str
@@ -236,7 +236,7 @@ class JarPackageHostInfo:
     def host_name(self):
         r"""Gets the host_name of this JarPackageHostInfo.
 
-        服务器名称
+        **参数解释** 服务器名称 **取值范围**: 字符长度0-256位
 
         :return: The host_name of this JarPackageHostInfo.
         :rtype: str
@@ -247,7 +247,7 @@ class JarPackageHostInfo:
     def host_name(self, host_name):
         r"""Sets the host_name of this JarPackageHostInfo.
 
-        服务器名称
+        **参数解释** 服务器名称 **取值范围**: 字符长度0-256位
 
         :param host_name: The host_name of this JarPackageHostInfo.
         :type host_name: str
@@ -258,7 +258,7 @@ class JarPackageHostInfo:
     def host_ip(self):
         r"""Gets the host_ip of this JarPackageHostInfo.
 
-        服务器ip
+        **参数解释** 服务器ip **取值范围**: 字符长度0-128位
 
         :return: The host_ip of this JarPackageHostInfo.
         :rtype: str
@@ -269,7 +269,7 @@ class JarPackageHostInfo:
     def host_ip(self, host_ip):
         r"""Sets the host_ip of this JarPackageHostInfo.
 
-        服务器ip
+        **参数解释** 服务器ip **取值范围**: 字符长度0-128位
 
         :param host_ip: The host_ip of this JarPackageHostInfo.
         :type host_ip: str
@@ -280,7 +280,7 @@ class JarPackageHostInfo:
     def file_name(self):
         r"""Gets the file_name of this JarPackageHostInfo.
 
-        Jar包名称
+        **参数解释** 中间件包名称 **取值范围**: 字符长度0-256位
 
         :return: The file_name of this JarPackageHostInfo.
         :rtype: str
@@ -291,7 +291,7 @@ class JarPackageHostInfo:
     def file_name(self, file_name):
         r"""Sets the file_name of this JarPackageHostInfo.
 
-        Jar包名称
+        **参数解释** 中间件包名称 **取值范围**: 字符长度0-256位
 
         :param file_name: The file_name of this JarPackageHostInfo.
         :type file_name: str
@@ -302,7 +302,7 @@ class JarPackageHostInfo:
     def name(self):
         r"""Gets the name of this JarPackageHostInfo.
 
-        Jar包名称(不带后缀)
+        **参数解释** 中间件包名称(不带后缀) **取值范围**: 字符长度0-256位\"
 
         :return: The name of this JarPackageHostInfo.
         :rtype: str
@@ -313,7 +313,7 @@ class JarPackageHostInfo:
     def name(self, name):
         r"""Sets the name of this JarPackageHostInfo.
 
-        Jar包名称(不带后缀)
+        **参数解释** 中间件包名称(不带后缀) **取值范围**: 字符长度0-256位\"
 
         :param name: The name of this JarPackageHostInfo.
         :type name: str
@@ -324,7 +324,7 @@ class JarPackageHostInfo:
     def catalogue(self):
         r"""Gets the catalogue of this JarPackageHostInfo.
 
-        Jar包类型
+        **参数解释** 中间件包类型 **取值范围**: 字符长度0-32位
 
         :return: The catalogue of this JarPackageHostInfo.
         :rtype: str
@@ -335,7 +335,7 @@ class JarPackageHostInfo:
     def catalogue(self, catalogue):
         r"""Sets the catalogue of this JarPackageHostInfo.
 
-        Jar包类型
+        **参数解释** 中间件包类型 **取值范围**: 字符长度0-32位
 
         :param catalogue: The catalogue of this JarPackageHostInfo.
         :type catalogue: str
@@ -346,7 +346,7 @@ class JarPackageHostInfo:
     def file_type(self):
         r"""Gets the file_type of this JarPackageHostInfo.
 
-        Jar包后缀
+        **参数解释** 中间件包后缀 **取值范围**: 字符长度0-32位
 
         :return: The file_type of this JarPackageHostInfo.
         :rtype: str
@@ -357,7 +357,7 @@ class JarPackageHostInfo:
     def file_type(self, file_type):
         r"""Sets the file_type of this JarPackageHostInfo.
 
-        Jar包后缀
+        **参数解释** 中间件包后缀 **取值范围**: 字符长度0-32位
 
         :param file_type: The file_type of this JarPackageHostInfo.
         :type file_type: str
@@ -368,7 +368,7 @@ class JarPackageHostInfo:
     def version(self):
         r"""Gets the version of this JarPackageHostInfo.
 
-        Jar包版本
+        **参数解释** 中间件包版本 **取值范围**: 字符长度0-64位
 
         :return: The version of this JarPackageHostInfo.
         :rtype: str
@@ -379,7 +379,7 @@ class JarPackageHostInfo:
     def version(self, version):
         r"""Sets the version of this JarPackageHostInfo.
 
-        Jar包版本
+        **参数解释** 中间件包版本 **取值范围**: 字符长度0-64位
 
         :param version: The version of this JarPackageHostInfo.
         :type version: str
@@ -390,7 +390,7 @@ class JarPackageHostInfo:
     def path(self):
         r"""Gets the path of this JarPackageHostInfo.
 
-        Jar包路径
+        **参数解释** 中间件包路径 **取值范围**: 字符长度0-512位
 
         :return: The path of this JarPackageHostInfo.
         :rtype: str
@@ -401,7 +401,7 @@ class JarPackageHostInfo:
     def path(self, path):
         r"""Sets the path of this JarPackageHostInfo.
 
-        Jar包路径
+        **参数解释** 中间件包路径 **取值范围**: 字符长度0-512位
 
         :param path: The path of this JarPackageHostInfo.
         :type path: str
@@ -412,7 +412,7 @@ class JarPackageHostInfo:
     def hash(self):
         r"""Gets the hash of this JarPackageHostInfo.
 
-        Jar包hash
+        **参数解释** 中间件包hash **取值范围**: 字符长度0-512位
 
         :return: The hash of this JarPackageHostInfo.
         :rtype: str
@@ -423,7 +423,7 @@ class JarPackageHostInfo:
     def hash(self, hash):
         r"""Sets the hash of this JarPackageHostInfo.
 
-        Jar包hash
+        **参数解释** 中间件包hash **取值范围**: 字符长度0-512位
 
         :param hash: The hash of this JarPackageHostInfo.
         :type hash: str
@@ -434,7 +434,7 @@ class JarPackageHostInfo:
     def size(self):
         r"""Gets the size of this JarPackageHostInfo.
 
-        Jar包大小
+        **参数解释** 中间件包大小 **取值范围**: 取值0-2147483647
 
         :return: The size of this JarPackageHostInfo.
         :rtype: int
@@ -445,7 +445,7 @@ class JarPackageHostInfo:
     def size(self, size):
         r"""Sets the size of this JarPackageHostInfo.
 
-        Jar包大小
+        **参数解释** 中间件包大小 **取值范围**: 取值0-2147483647
 
         :param size: The size of this JarPackageHostInfo.
         :type size: int
@@ -456,7 +456,7 @@ class JarPackageHostInfo:
     def uid(self):
         r"""Gets the uid of this JarPackageHostInfo.
 
-        uid
+        **参数解释** uid **取值范围**: 取值0-2147483647
 
         :return: The uid of this JarPackageHostInfo.
         :rtype: int
@@ -467,7 +467,7 @@ class JarPackageHostInfo:
     def uid(self, uid):
         r"""Sets the uid of this JarPackageHostInfo.
 
-        uid
+        **参数解释** uid **取值范围**: 取值0-2147483647
 
         :param uid: The uid of this JarPackageHostInfo.
         :type uid: int
@@ -478,7 +478,7 @@ class JarPackageHostInfo:
     def gid(self):
         r"""Gets the gid of this JarPackageHostInfo.
 
-        gid
+        **参数解释** gid **取值范围**: 取值0-2147483647
 
         :return: The gid of this JarPackageHostInfo.
         :rtype: int
@@ -489,7 +489,7 @@ class JarPackageHostInfo:
     def gid(self, gid):
         r"""Sets the gid of this JarPackageHostInfo.
 
-        gid
+        **参数解释** gid **取值范围**: 取值0-2147483647
 
         :param gid: The gid of this JarPackageHostInfo.
         :type gid: int
@@ -500,7 +500,7 @@ class JarPackageHostInfo:
     def mode(self):
         r"""Gets the mode of this JarPackageHostInfo.
 
-        文件权限
+        **参数解释** 文件权限 **取值范围**: 字符长度0-32位
 
         :return: The mode of this JarPackageHostInfo.
         :rtype: str
@@ -511,7 +511,7 @@ class JarPackageHostInfo:
     def mode(self, mode):
         r"""Sets the mode of this JarPackageHostInfo.
 
-        文件权限
+        **参数解释** 文件权限 **取值范围**: 字符长度0-32位
 
         :param mode: The mode of this JarPackageHostInfo.
         :type mode: str
@@ -522,7 +522,7 @@ class JarPackageHostInfo:
     def pid(self):
         r"""Gets the pid of this JarPackageHostInfo.
 
-        进程id
+        **参数解释** 进程id **取值范围**: 取值0-2147483647
 
         :return: The pid of this JarPackageHostInfo.
         :rtype: int
@@ -533,7 +533,7 @@ class JarPackageHostInfo:
     def pid(self, pid):
         r"""Sets the pid of this JarPackageHostInfo.
 
-        进程id
+        **参数解释** 进程id **取值范围**: 取值0-2147483647
 
         :param pid: The pid of this JarPackageHostInfo.
         :type pid: int
@@ -544,7 +544,7 @@ class JarPackageHostInfo:
     def proc_path(self):
         r"""Gets the proc_path of this JarPackageHostInfo.
 
-        进程可执行文件路径
+        **参数解释** 进程可执行文件路径 **取值范围**: 字符长度0-1024位
 
         :return: The proc_path of this JarPackageHostInfo.
         :rtype: str
@@ -555,7 +555,7 @@ class JarPackageHostInfo:
     def proc_path(self, proc_path):
         r"""Sets the proc_path of this JarPackageHostInfo.
 
-        进程可执行文件路径
+        **参数解释** 进程可执行文件路径 **取值范围**: 字符长度0-1024位
 
         :param proc_path: The proc_path of this JarPackageHostInfo.
         :type proc_path: str
@@ -566,7 +566,7 @@ class JarPackageHostInfo:
     def container_id(self):
         r"""Gets the container_id of this JarPackageHostInfo.
 
-        容器实例id
+        **参数解释** 容器实例id **取值范围**: 字符长度0-128位
 
         :return: The container_id of this JarPackageHostInfo.
         :rtype: str
@@ -577,7 +577,7 @@ class JarPackageHostInfo:
     def container_id(self, container_id):
         r"""Sets the container_id of this JarPackageHostInfo.
 
-        容器实例id
+        **参数解释** 容器实例id **取值范围**: 字符长度0-128位
 
         :param container_id: The container_id of this JarPackageHostInfo.
         :type container_id: str
@@ -588,7 +588,7 @@ class JarPackageHostInfo:
     def container_name(self):
         r"""Gets the container_name of this JarPackageHostInfo.
 
-        容器名称
+        **参数解释** 容器名称 **取值范围**: 字符长度0-256位
 
         :return: The container_name of this JarPackageHostInfo.
         :rtype: str
@@ -599,7 +599,7 @@ class JarPackageHostInfo:
     def container_name(self, container_name):
         r"""Sets the container_name of this JarPackageHostInfo.
 
-        容器名称
+        **参数解释** 容器名称 **取值范围**: 字符长度0-256位
 
         :param container_name: The container_name of this JarPackageHostInfo.
         :type container_name: str
@@ -610,7 +610,7 @@ class JarPackageHostInfo:
     def package_path(self):
         r"""Gets the package_path of this JarPackageHostInfo.
 
-        包路径
+        **参数解释** 包路径 **取值范围**: 字符长度0-1024位
 
         :return: The package_path of this JarPackageHostInfo.
         :rtype: str
@@ -621,7 +621,7 @@ class JarPackageHostInfo:
     def package_path(self, package_path):
         r"""Sets the package_path of this JarPackageHostInfo.
 
-        包路径
+        **参数解释** 包路径 **取值范围**: 字符长度0-1024位
 
         :param package_path: The package_path of this JarPackageHostInfo.
         :type package_path: str
@@ -632,7 +632,7 @@ class JarPackageHostInfo:
     def is_embedded(self):
         r"""Gets the is_embedded of this JarPackageHostInfo.
 
-        显示的是否是嵌套包
+        **参数解释** 是否是嵌套包 **取值范围**: - 0: 不是嵌套包 - 1: 是嵌套包
 
         :return: The is_embedded of this JarPackageHostInfo.
         :rtype: int
@@ -643,7 +643,7 @@ class JarPackageHostInfo:
     def is_embedded(self, is_embedded):
         r"""Sets the is_embedded of this JarPackageHostInfo.
 
-        显示的是否是嵌套包
+        **参数解释** 是否是嵌套包 **取值范围**: - 0: 不是嵌套包 - 1: 是嵌套包
 
         :param is_embedded: The is_embedded of this JarPackageHostInfo.
         :type is_embedded: int
@@ -654,7 +654,7 @@ class JarPackageHostInfo:
     def record_time(self):
         r"""Gets the record_time of this JarPackageHostInfo.
 
-        扫描时间
+        **参数解释** 扫描时间 **取值范围**: 取值0-4070880000000
 
         :return: The record_time of this JarPackageHostInfo.
         :rtype: int
@@ -665,7 +665,7 @@ class JarPackageHostInfo:
     def record_time(self, record_time):
         r"""Sets the record_time of this JarPackageHostInfo.
 
-        扫描时间
+        **参数解释** 扫描时间 **取值范围**: 取值0-4070880000000
 
         :param record_time: The record_time of this JarPackageHostInfo.
         :type record_time: int

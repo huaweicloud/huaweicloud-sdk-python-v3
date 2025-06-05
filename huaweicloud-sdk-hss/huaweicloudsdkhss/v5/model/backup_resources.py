@@ -31,7 +31,7 @@ class BackupResources:
 
         The model defined in huaweicloud sdk
 
-        :param vault_id: 选择需要绑定的存储库ID，不为空
+        :param vault_id: **参数解释**: 选择需要绑定的存储库ID，不为空 **约束限制**: 不涉及 **取值范围**: 字符长度0-64 **默认取值**: 不涉及 
         :type vault_id: str
         :param resource_list: 需要开启备份功能的主机情况列表
         :type resource_list: list[:class:`huaweicloudsdkhss.v5.ResourceInfo`]
@@ -52,7 +52,7 @@ class BackupResources:
     def vault_id(self):
         r"""Gets the vault_id of this BackupResources.
 
-        选择需要绑定的存储库ID，不为空
+        **参数解释**: 选择需要绑定的存储库ID，不为空 **约束限制**: 不涉及 **取值范围**: 字符长度0-64 **默认取值**: 不涉及 
 
         :return: The vault_id of this BackupResources.
         :rtype: str
@@ -63,7 +63,7 @@ class BackupResources:
     def vault_id(self, vault_id):
         r"""Sets the vault_id of this BackupResources.
 
-        选择需要绑定的存储库ID，不为空
+        **参数解释**: 选择需要绑定的存储库ID，不为空 **约束限制**: 不涉及 **取值范围**: 字符长度0-64 **默认取值**: 不涉及 
 
         :param vault_id: The vault_id of this BackupResources.
         :type vault_id: str

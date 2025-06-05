@@ -107,11 +107,11 @@ class SearchDetailV2:
         :type job_params: str
         :param node_name: 节点名称
         :type node_name: str
-        :param node_type: 节点类型: （多选）节点类型列表。 默认为全部。   - com.cloud.datacraft.processactivity.ExecuteHiveJob: MRS Hive SQL   - com.cloud.datacraft.activity.ExecuteSparkSQL: MRS Spark SQL   - com.cloud.datacraft.activity.MRSSparkPython: MRS Spark Python   - com.cloud.datacraft.processactivity.ExecuteImpalaJob: MRS Impala SQL   - [com.cloud.datacraft.activity.DLISQL: DLI SQL](tag:nohcs)   - [com.cloud.datacraft.activity.DliFlinkJob: DLI Flink Job](tag:nohcs)   - com.cloud.datacraft.processactivity.ExecuteDWSJob: DWS SQL   - com.cloud.datacraft.activity.ExecuteQuery: RDS SQL   - com.cloud.datacraft.activity.MRSPrestoSQL: MRS Presto SQL   - com.cloud.datacraft.processactivity.ExecuteScript: Shell   - com.cloud.datacraft.processactivity.ExecutePythonScript: Python   - com.cloud.datacraft.processactivity.ExecuteClickHouseJob: ClickHouse   - com.cloud.datacraft.processactivity.ExecuteHetuEngineJob: HetuEngine   - com.cloud.datacraft.activity.DataMigration: DataMigration
+        :param node_type: 节点类型: （多选）节点类型列表。 默认为全部。   - com.cloud.datacraft.processactivity.ExecuteHiveJob: MRS Hive SQL   - com.cloud.datacraft.activity.ExecuteSparkSQL: MRS Spark SQL   - com.cloud.datacraft.activity.MRSSparkPython: MRS Spark Python   - com.cloud.datacraft.processactivity.ExecuteImpalaJob: MRS Impala SQL   - com.cloud.datacraft.activity.DLISQL: DLI SQL   - com.cloud.datacraft.activity.DliFlinkJob: DLI Flink Job   - com.cloud.datacraft.processactivity.ExecuteDWSJob: DWS SQL   - com.cloud.datacraft.activity.ExecuteQuery: RDS SQL   - com.cloud.datacraft.activity.MRSPrestoSQL: MRS Presto SQL   - com.cloud.datacraft.processactivity.ExecuteScript: Shell   - com.cloud.datacraft.processactivity.ExecutePythonScript: Python   - com.cloud.datacraft.processactivity.ExecuteClickHouseJob: ClickHouse   - com.cloud.datacraft.processactivity.ExecuteHetuEngineJob: HetuEngine   - com.cloud.datacraft.activity.DataMigration: DataMigration
         :type node_type: str
         :param script_name: 脚本名称
         :type script_name: str
-        :param script_type: 脚本类型: （多选）样例: script_type&#x3D;HIVE,DLI。 默认为全部，不过滤任何类型脚本。 - HIVE: Hive SQL - [DLI: DLI SQL](tag:nohcs) - DWS: DWS SQL - SparkSQL: Spark SQL - Spark Python: Spark Python - FlinkSQL: Flink SQL - [RDS: RDS SQL](tag:nohcs) - PRESTO: Presto SQL - HETUENGINE: HeruEngine - ClickHouse: ClickHouse - IMPALA: Impala SQL - SHELL: Shell - PYTHON: Python
+        :param script_type: 脚本类型: （多选）样例: script_type&#x3D;HIVE,DLI。 默认为全部，不过滤任何类型脚本。 - HIVE: Hive SQL - DLI: DLI SQL - DWS: DWS SQL - SparkSQL: Spark SQL - Spark Python: Spark Python - FlinkSQL: Flink SQL - RDS: RDS SQL - PRESTO: Presto SQL - HETUENGINE: HeruEngine - ClickHouse: ClickHouse - IMPALA: Impala SQL - SHELL: Shell - PYTHON: Python
         :type script_type: str
         :param script_params: 脚本参数
         :type script_params: str
@@ -528,7 +528,7 @@ class SearchDetailV2:
     def node_type(self):
         r"""Gets the node_type of this SearchDetailV2.
 
-        节点类型: （多选）节点类型列表。 默认为全部。   - com.cloud.datacraft.processactivity.ExecuteHiveJob: MRS Hive SQL   - com.cloud.datacraft.activity.ExecuteSparkSQL: MRS Spark SQL   - com.cloud.datacraft.activity.MRSSparkPython: MRS Spark Python   - com.cloud.datacraft.processactivity.ExecuteImpalaJob: MRS Impala SQL   - [com.cloud.datacraft.activity.DLISQL: DLI SQL](tag:nohcs)   - [com.cloud.datacraft.activity.DliFlinkJob: DLI Flink Job](tag:nohcs)   - com.cloud.datacraft.processactivity.ExecuteDWSJob: DWS SQL   - com.cloud.datacraft.activity.ExecuteQuery: RDS SQL   - com.cloud.datacraft.activity.MRSPrestoSQL: MRS Presto SQL   - com.cloud.datacraft.processactivity.ExecuteScript: Shell   - com.cloud.datacraft.processactivity.ExecutePythonScript: Python   - com.cloud.datacraft.processactivity.ExecuteClickHouseJob: ClickHouse   - com.cloud.datacraft.processactivity.ExecuteHetuEngineJob: HetuEngine   - com.cloud.datacraft.activity.DataMigration: DataMigration
+        节点类型: （多选）节点类型列表。 默认为全部。   - com.cloud.datacraft.processactivity.ExecuteHiveJob: MRS Hive SQL   - com.cloud.datacraft.activity.ExecuteSparkSQL: MRS Spark SQL   - com.cloud.datacraft.activity.MRSSparkPython: MRS Spark Python   - com.cloud.datacraft.processactivity.ExecuteImpalaJob: MRS Impala SQL   - com.cloud.datacraft.activity.DLISQL: DLI SQL   - com.cloud.datacraft.activity.DliFlinkJob: DLI Flink Job   - com.cloud.datacraft.processactivity.ExecuteDWSJob: DWS SQL   - com.cloud.datacraft.activity.ExecuteQuery: RDS SQL   - com.cloud.datacraft.activity.MRSPrestoSQL: MRS Presto SQL   - com.cloud.datacraft.processactivity.ExecuteScript: Shell   - com.cloud.datacraft.processactivity.ExecutePythonScript: Python   - com.cloud.datacraft.processactivity.ExecuteClickHouseJob: ClickHouse   - com.cloud.datacraft.processactivity.ExecuteHetuEngineJob: HetuEngine   - com.cloud.datacraft.activity.DataMigration: DataMigration
 
         :return: The node_type of this SearchDetailV2.
         :rtype: str
@@ -539,7 +539,7 @@ class SearchDetailV2:
     def node_type(self, node_type):
         r"""Sets the node_type of this SearchDetailV2.
 
-        节点类型: （多选）节点类型列表。 默认为全部。   - com.cloud.datacraft.processactivity.ExecuteHiveJob: MRS Hive SQL   - com.cloud.datacraft.activity.ExecuteSparkSQL: MRS Spark SQL   - com.cloud.datacraft.activity.MRSSparkPython: MRS Spark Python   - com.cloud.datacraft.processactivity.ExecuteImpalaJob: MRS Impala SQL   - [com.cloud.datacraft.activity.DLISQL: DLI SQL](tag:nohcs)   - [com.cloud.datacraft.activity.DliFlinkJob: DLI Flink Job](tag:nohcs)   - com.cloud.datacraft.processactivity.ExecuteDWSJob: DWS SQL   - com.cloud.datacraft.activity.ExecuteQuery: RDS SQL   - com.cloud.datacraft.activity.MRSPrestoSQL: MRS Presto SQL   - com.cloud.datacraft.processactivity.ExecuteScript: Shell   - com.cloud.datacraft.processactivity.ExecutePythonScript: Python   - com.cloud.datacraft.processactivity.ExecuteClickHouseJob: ClickHouse   - com.cloud.datacraft.processactivity.ExecuteHetuEngineJob: HetuEngine   - com.cloud.datacraft.activity.DataMigration: DataMigration
+        节点类型: （多选）节点类型列表。 默认为全部。   - com.cloud.datacraft.processactivity.ExecuteHiveJob: MRS Hive SQL   - com.cloud.datacraft.activity.ExecuteSparkSQL: MRS Spark SQL   - com.cloud.datacraft.activity.MRSSparkPython: MRS Spark Python   - com.cloud.datacraft.processactivity.ExecuteImpalaJob: MRS Impala SQL   - com.cloud.datacraft.activity.DLISQL: DLI SQL   - com.cloud.datacraft.activity.DliFlinkJob: DLI Flink Job   - com.cloud.datacraft.processactivity.ExecuteDWSJob: DWS SQL   - com.cloud.datacraft.activity.ExecuteQuery: RDS SQL   - com.cloud.datacraft.activity.MRSPrestoSQL: MRS Presto SQL   - com.cloud.datacraft.processactivity.ExecuteScript: Shell   - com.cloud.datacraft.processactivity.ExecutePythonScript: Python   - com.cloud.datacraft.processactivity.ExecuteClickHouseJob: ClickHouse   - com.cloud.datacraft.processactivity.ExecuteHetuEngineJob: HetuEngine   - com.cloud.datacraft.activity.DataMigration: DataMigration
 
         :param node_type: The node_type of this SearchDetailV2.
         :type node_type: str
@@ -572,7 +572,7 @@ class SearchDetailV2:
     def script_type(self):
         r"""Gets the script_type of this SearchDetailV2.
 
-        脚本类型: （多选）样例: script_type=HIVE,DLI。 默认为全部，不过滤任何类型脚本。 - HIVE: Hive SQL - [DLI: DLI SQL](tag:nohcs) - DWS: DWS SQL - SparkSQL: Spark SQL - Spark Python: Spark Python - FlinkSQL: Flink SQL - [RDS: RDS SQL](tag:nohcs) - PRESTO: Presto SQL - HETUENGINE: HeruEngine - ClickHouse: ClickHouse - IMPALA: Impala SQL - SHELL: Shell - PYTHON: Python
+        脚本类型: （多选）样例: script_type=HIVE,DLI。 默认为全部，不过滤任何类型脚本。 - HIVE: Hive SQL - DLI: DLI SQL - DWS: DWS SQL - SparkSQL: Spark SQL - Spark Python: Spark Python - FlinkSQL: Flink SQL - RDS: RDS SQL - PRESTO: Presto SQL - HETUENGINE: HeruEngine - ClickHouse: ClickHouse - IMPALA: Impala SQL - SHELL: Shell - PYTHON: Python
 
         :return: The script_type of this SearchDetailV2.
         :rtype: str
@@ -583,7 +583,7 @@ class SearchDetailV2:
     def script_type(self, script_type):
         r"""Sets the script_type of this SearchDetailV2.
 
-        脚本类型: （多选）样例: script_type=HIVE,DLI。 默认为全部，不过滤任何类型脚本。 - HIVE: Hive SQL - [DLI: DLI SQL](tag:nohcs) - DWS: DWS SQL - SparkSQL: Spark SQL - Spark Python: Spark Python - FlinkSQL: Flink SQL - [RDS: RDS SQL](tag:nohcs) - PRESTO: Presto SQL - HETUENGINE: HeruEngine - ClickHouse: ClickHouse - IMPALA: Impala SQL - SHELL: Shell - PYTHON: Python
+        脚本类型: （多选）样例: script_type=HIVE,DLI。 默认为全部，不过滤任何类型脚本。 - HIVE: Hive SQL - DLI: DLI SQL - DWS: DWS SQL - SparkSQL: Spark SQL - Spark Python: Spark Python - FlinkSQL: Flink SQL - RDS: RDS SQL - PRESTO: Presto SQL - HETUENGINE: HeruEngine - ClickHouse: ClickHouse - IMPALA: Impala SQL - SHELL: Shell - PYTHON: Python
 
         :param script_type: The script_type of this SearchDetailV2.
         :type script_type: str

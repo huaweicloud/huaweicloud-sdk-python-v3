@@ -47,7 +47,7 @@ class AppResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param agent_id: Agent ID
+        :param agent_id: HSS的Agent ID
         :type agent_id: str
         :param host_id: 主机id
         :type host_id: str
@@ -108,7 +108,7 @@ class AppResponseInfo:
     def agent_id(self):
         r"""Gets the agent_id of this AppResponseInfo.
 
-        Agent ID
+        HSS的Agent ID
 
         :return: The agent_id of this AppResponseInfo.
         :rtype: str
@@ -119,7 +119,7 @@ class AppResponseInfo:
     def agent_id(self, agent_id):
         r"""Sets the agent_id of this AppResponseInfo.
 
-        Agent ID
+        HSS的Agent ID
 
         :param agent_id: The agent_id of this AppResponseInfo.
         :type agent_id: str

@@ -56,7 +56,8 @@ class ListOrganizationTreeRequest:
 
         if x_security_token is not None:
             self.x_security_token = x_security_token
-        self.region = region
+        if region is not None:
+            self.region = region
         if is_refresh is not None:
             self.is_refresh = is_refresh
         if enterprise_project_id is not None:

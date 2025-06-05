@@ -154,7 +154,8 @@ class ListSecurityEventsRequest:
         self.discriminator = None
 
         self.category = category
-        self.region = region
+        if region is not None:
+            self.region = region
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
         if last_days is not None:

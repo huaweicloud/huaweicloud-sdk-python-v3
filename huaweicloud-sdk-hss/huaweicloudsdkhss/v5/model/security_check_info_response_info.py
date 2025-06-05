@@ -21,6 +21,7 @@ class SecurityCheckInfoResponseInfo:
         'check_name': 'str',
         'check_type': 'str',
         'standard': 'str',
+        'executable_file_path': 'str',
         'check_rule_num': 'int',
         'failed_rule_num': 'int',
         'host_num': 'int',
@@ -33,6 +34,7 @@ class SecurityCheckInfoResponseInfo:
         'check_name': 'check_name',
         'check_type': 'check_type',
         'standard': 'standard',
+        'executable_file_path': 'executable_file_path',
         'check_rule_num': 'check_rule_num',
         'failed_rule_num': 'failed_rule_num',
         'host_num': 'host_num',
@@ -40,7 +42,7 @@ class SecurityCheckInfoResponseInfo:
         'check_type_desc': 'check_type_desc'
     }
 
-    def __init__(self, severity=None, check_name=None, check_type=None, standard=None, check_rule_num=None, failed_rule_num=None, host_num=None, scan_time=None, check_type_desc=None):
+    def __init__(self, severity=None, check_name=None, check_type=None, standard=None, executable_file_path=None, check_rule_num=None, failed_rule_num=None, host_num=None, scan_time=None, check_type_desc=None):
         r"""SecurityCheckInfoResponseInfo
 
         The model defined in huaweicloud sdk
@@ -53,6 +55,8 @@ class SecurityCheckInfoResponseInfo:
         :type check_type: str
         :param standard: 标准类型，包含如下:   - cn_standard : 等保合规标准   - hw_standard : 云安全实践标准
         :type standard: str
+        :param executable_file_path: 配置检查（基线）的路径信息
+        :type executable_file_path: str
         :param check_rule_num: 当前配置检查（基线）类型下，用户共检测了多少个检查项。例如标准类型为hw_standard的SSH基线，主机安全提供了17个检查项，但用户所有主机都只检测了SSH基线的其中5个检查项，check_rule_num就是5。用户有一台主机进行了全量检查项检测，check_rule_num就是17。
         :type check_rule_num: int
         :param failed_rule_num: 未通过的检查项数量，check_rule_num中只要有一台主机没通过某个检查项，这个检查项就会被计算在failed_rule_num中
@@ -71,6 +75,7 @@ class SecurityCheckInfoResponseInfo:
         self._check_name = None
         self._check_type = None
         self._standard = None
+        self._executable_file_path = None
         self._check_rule_num = None
         self._failed_rule_num = None
         self._host_num = None
@@ -86,6 +91,8 @@ class SecurityCheckInfoResponseInfo:
             self.check_type = check_type
         if standard is not None:
             self.standard = standard
+        if executable_file_path is not None:
+            self.executable_file_path = executable_file_path
         if check_rule_num is not None:
             self.check_rule_num = check_rule_num
         if failed_rule_num is not None:
@@ -184,6 +191,28 @@ class SecurityCheckInfoResponseInfo:
         :type standard: str
         """
         self._standard = standard
+
+    @property
+    def executable_file_path(self):
+        r"""Gets the executable_file_path of this SecurityCheckInfoResponseInfo.
+
+        配置检查（基线）的路径信息
+
+        :return: The executable_file_path of this SecurityCheckInfoResponseInfo.
+        :rtype: str
+        """
+        return self._executable_file_path
+
+    @executable_file_path.setter
+    def executable_file_path(self, executable_file_path):
+        r"""Sets the executable_file_path of this SecurityCheckInfoResponseInfo.
+
+        配置检查（基线）的路径信息
+
+        :param executable_file_path: The executable_file_path of this SecurityCheckInfoResponseInfo.
+        :type executable_file_path: str
+        """
+        self._executable_file_path = executable_file_path
 
     @property
     def check_rule_num(self):

@@ -51,7 +51,7 @@ class EventDetailResponseInfo:
 
         :param agent_id: Agent ID
         :type agent_id: str
-        :param process_pid: 进程id
+        :param process_pid: 进程ID
         :type process_pid: int
         :param is_parent: 是否是父进程
         :type is_parent: bool
@@ -137,7 +137,7 @@ class EventDetailResponseInfo:
     def process_pid(self):
         r"""Gets the process_pid of this EventDetailResponseInfo.
 
-        进程id
+        进程ID
 
         :return: The process_pid of this EventDetailResponseInfo.
         :rtype: int
@@ -148,7 +148,7 @@ class EventDetailResponseInfo:
     def process_pid(self, process_pid):
         r"""Sets the process_pid of this EventDetailResponseInfo.
 
-        进程id
+        进程ID
 
         :param process_pid: The process_pid of this EventDetailResponseInfo.
         :type process_pid: int

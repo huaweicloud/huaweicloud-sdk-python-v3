@@ -29,7 +29,7 @@ class CreateQueueRequestBody:
         'feature': 'str',
         'tags': 'list[Tag]',
         'elastic_resource_pool_name': 'str',
-        'properties': 'CommonQueueProperty'
+        'properties': 'CreateQueueRequestBodyProperties'
     }
 
     attribute_map = {
@@ -78,7 +78,7 @@ class CreateQueueRequestBody:
         :param elastic_resource_pool_name: 新建的弹性资源池名称，名称只能包含数字、小写英文字母和下划线，但不能是纯数字，且不能以下划线开头。长度限制：1~128个字符。
         :type elastic_resource_pool_name: str
         :param properties: 
-        :type properties: :class:`huaweicloudsdkdli.v1.CommonQueueProperty`
+        :type properties: :class:`huaweicloudsdkdli.v1.CreateQueueRequestBodyProperties`
         """
         
         
@@ -392,7 +392,7 @@ class CreateQueueRequestBody:
         r"""Gets the properties of this CreateQueueRequestBody.
 
         :return: The properties of this CreateQueueRequestBody.
-        :rtype: :class:`huaweicloudsdkdli.v1.CommonQueueProperty`
+        :rtype: :class:`huaweicloudsdkdli.v1.CreateQueueRequestBodyProperties`
         """
         return self._properties
 
@@ -401,7 +401,7 @@ class CreateQueueRequestBody:
         r"""Sets the properties of this CreateQueueRequestBody.
 
         :param properties: The properties of this CreateQueueRequestBody.
-        :type properties: :class:`huaweicloudsdkdli.v1.CommonQueueProperty`
+        :type properties: :class:`huaweicloudsdkdli.v1.CreateQueueRequestBodyProperties`
         """
         self._properties = properties
 

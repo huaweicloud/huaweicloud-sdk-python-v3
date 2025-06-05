@@ -40,7 +40,7 @@ class ListQueryExportTaskResponse(SdkResponse):
 
         :param task_id: 任务ID
         :type task_id: str
-        :param task_name: 任务ID
+        :param task_name: 任务名称
         :type task_name: str
         :param task_status: 导出任务状态，success:成功，failure:失败，running:运行中
         :type task_status: str
@@ -96,7 +96,7 @@ class ListQueryExportTaskResponse(SdkResponse):
     def task_name(self):
         r"""Gets the task_name of this ListQueryExportTaskResponse.
 
-        任务ID
+        任务名称
 
         :return: The task_name of this ListQueryExportTaskResponse.
         :rtype: str
@@ -107,7 +107,7 @@ class ListQueryExportTaskResponse(SdkResponse):
     def task_name(self, task_name):
         r"""Sets the task_name of this ListQueryExportTaskResponse.
 
-        任务ID
+        任务名称
 
         :param task_name: The task_name of this ListQueryExportTaskResponse.
         :type task_name: str

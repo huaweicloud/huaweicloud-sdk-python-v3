@@ -113,7 +113,7 @@ class RestScheduleConfDTO:
         :type concurrent_participants: int
         :param support_simultaneous_interpretation: 会议是否支持同声传译。默认值false。 * true:支持 * false:不支持 
         :type support_simultaneous_interpretation: bool
-        :param conf_res_type: 会议资源类型：  * 0: 并发 * 1: 云会议室 * 2: 网络研讨会 * 3: 预留模式，暂未开放 
+        :param conf_res_type: 会议资源类型，此参数创建后不支持修改：  * 0: 并发 * 1: 云会议室 * 2: 网络研讨会 * 3: 预留模式，暂未开放 
         :type conf_res_type: int
         """
         
@@ -645,7 +645,7 @@ class RestScheduleConfDTO:
     def conf_res_type(self):
         r"""Gets the conf_res_type of this RestScheduleConfDTO.
 
-        会议资源类型：  * 0: 并发 * 1: 云会议室 * 2: 网络研讨会 * 3: 预留模式，暂未开放 
+        会议资源类型，此参数创建后不支持修改：  * 0: 并发 * 1: 云会议室 * 2: 网络研讨会 * 3: 预留模式，暂未开放 
 
         :return: The conf_res_type of this RestScheduleConfDTO.
         :rtype: int
@@ -656,7 +656,7 @@ class RestScheduleConfDTO:
     def conf_res_type(self, conf_res_type):
         r"""Sets the conf_res_type of this RestScheduleConfDTO.
 
-        会议资源类型：  * 0: 并发 * 1: 云会议室 * 2: 网络研讨会 * 3: 预留模式，暂未开放 
+        会议资源类型，此参数创建后不支持修改：  * 0: 并发 * 1: 云会议室 * 2: 网络研讨会 * 3: 预留模式，暂未开放 
 
         :param conf_res_type: The conf_res_type of this RestScheduleConfDTO.
         :type conf_res_type: int

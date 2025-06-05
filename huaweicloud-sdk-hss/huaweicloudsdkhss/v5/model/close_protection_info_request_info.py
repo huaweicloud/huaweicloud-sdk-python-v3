@@ -33,11 +33,11 @@ class CloseProtectionInfoRequestInfo:
 
         The model defined in huaweicloud sdk
 
-        :param host_id_list: 需要关闭勒索防护的主机ID列表
+        :param host_id_list: **参数解释**: 需要关闭勒索防护的主机ID列表 **约束限制**: 不涉及 **取值范围**: 列表条数0-64 **默认取值**: 不涉及 
         :type host_id_list: list[str]
-        :param agent_id_list: 需要关闭勒索防护的agentID列表
+        :param agent_id_list: **参数解释**: 需要关闭勒索防护的agentID列表 **约束限制**: 不涉及 **取值范围**: 列表条数0-64 **默认取值**: 不涉及 
         :type agent_id_list: list[str]
-        :param close_protection_type: 关闭防护类型，包含如下：   - close_anti : 关闭勒索防护；暂不支持关闭备份防护，若需要解绑存储库，请前往cbr服务进行操作。
+        :param close_protection_type: **参数解释**: 关闭防护类型，包含如下：   - close_anti : 关闭勒索防护；暂不支持关闭备份防护，若需要解绑存储库，请前往cbr服务进行操作。 **约束限制**: 不涉及 **取值范围**: 字符长度0-64 **默认取值**: 不涉及
         :type close_protection_type: str
         """
         
@@ -56,7 +56,7 @@ class CloseProtectionInfoRequestInfo:
     def host_id_list(self):
         r"""Gets the host_id_list of this CloseProtectionInfoRequestInfo.
 
-        需要关闭勒索防护的主机ID列表
+        **参数解释**: 需要关闭勒索防护的主机ID列表 **约束限制**: 不涉及 **取值范围**: 列表条数0-64 **默认取值**: 不涉及 
 
         :return: The host_id_list of this CloseProtectionInfoRequestInfo.
         :rtype: list[str]
@@ -67,7 +67,7 @@ class CloseProtectionInfoRequestInfo:
     def host_id_list(self, host_id_list):
         r"""Sets the host_id_list of this CloseProtectionInfoRequestInfo.
 
-        需要关闭勒索防护的主机ID列表
+        **参数解释**: 需要关闭勒索防护的主机ID列表 **约束限制**: 不涉及 **取值范围**: 列表条数0-64 **默认取值**: 不涉及 
 
         :param host_id_list: The host_id_list of this CloseProtectionInfoRequestInfo.
         :type host_id_list: list[str]
@@ -78,7 +78,7 @@ class CloseProtectionInfoRequestInfo:
     def agent_id_list(self):
         r"""Gets the agent_id_list of this CloseProtectionInfoRequestInfo.
 
-        需要关闭勒索防护的agentID列表
+        **参数解释**: 需要关闭勒索防护的agentID列表 **约束限制**: 不涉及 **取值范围**: 列表条数0-64 **默认取值**: 不涉及 
 
         :return: The agent_id_list of this CloseProtectionInfoRequestInfo.
         :rtype: list[str]
@@ -89,7 +89,7 @@ class CloseProtectionInfoRequestInfo:
     def agent_id_list(self, agent_id_list):
         r"""Sets the agent_id_list of this CloseProtectionInfoRequestInfo.
 
-        需要关闭勒索防护的agentID列表
+        **参数解释**: 需要关闭勒索防护的agentID列表 **约束限制**: 不涉及 **取值范围**: 列表条数0-64 **默认取值**: 不涉及 
 
         :param agent_id_list: The agent_id_list of this CloseProtectionInfoRequestInfo.
         :type agent_id_list: list[str]
@@ -100,7 +100,7 @@ class CloseProtectionInfoRequestInfo:
     def close_protection_type(self):
         r"""Gets the close_protection_type of this CloseProtectionInfoRequestInfo.
 
-        关闭防护类型，包含如下：   - close_anti : 关闭勒索防护；暂不支持关闭备份防护，若需要解绑存储库，请前往cbr服务进行操作。
+        **参数解释**: 关闭防护类型，包含如下：   - close_anti : 关闭勒索防护；暂不支持关闭备份防护，若需要解绑存储库，请前往cbr服务进行操作。 **约束限制**: 不涉及 **取值范围**: 字符长度0-64 **默认取值**: 不涉及
 
         :return: The close_protection_type of this CloseProtectionInfoRequestInfo.
         :rtype: str
@@ -111,7 +111,7 @@ class CloseProtectionInfoRequestInfo:
     def close_protection_type(self, close_protection_type):
         r"""Sets the close_protection_type of this CloseProtectionInfoRequestInfo.
 
-        关闭防护类型，包含如下：   - close_anti : 关闭勒索防护；暂不支持关闭备份防护，若需要解绑存储库，请前往cbr服务进行操作。
+        **参数解释**: 关闭防护类型，包含如下：   - close_anti : 关闭勒索防护；暂不支持关闭备份防护，若需要解绑存储库，请前往cbr服务进行操作。 **约束限制**: 不涉及 **取值范围**: 字符长度0-64 **默认取值**: 不涉及
 
         :param close_protection_type: The close_protection_type of this CloseProtectionInfoRequestInfo.
         :type close_protection_type: str

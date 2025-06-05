@@ -87,9 +87,9 @@ class PostAlarmsReqV2:
         :type notification_end_time: str
         :param enterprise_project_id: 企业项目ID
         :type enterprise_project_id: str
-        :param enabled: 告警开关
+        :param enabled: 是否开启告警规则。true:开启，false:关闭。
         :type enabled: bool
-        :param notification_enabled: 是否开启告警通知
+        :param notification_enabled: 是否开启告警通知。true:开启，false:关闭。
         :type notification_enabled: bool
         :param alarm_template_id: 告警规则关联告警模板ID，如果传了，告警规则关联的策略会和告警模板策略联动变化
         :type alarm_template_id: str
@@ -418,7 +418,7 @@ class PostAlarmsReqV2:
     def enabled(self):
         r"""Gets the enabled of this PostAlarmsReqV2.
 
-        告警开关
+        是否开启告警规则。true:开启，false:关闭。
 
         :return: The enabled of this PostAlarmsReqV2.
         :rtype: bool
@@ -429,7 +429,7 @@ class PostAlarmsReqV2:
     def enabled(self, enabled):
         r"""Sets the enabled of this PostAlarmsReqV2.
 
-        告警开关
+        是否开启告警规则。true:开启，false:关闭。
 
         :param enabled: The enabled of this PostAlarmsReqV2.
         :type enabled: bool
@@ -440,7 +440,7 @@ class PostAlarmsReqV2:
     def notification_enabled(self):
         r"""Gets the notification_enabled of this PostAlarmsReqV2.
 
-        是否开启告警通知
+        是否开启告警通知。true:开启，false:关闭。
 
         :return: The notification_enabled of this PostAlarmsReqV2.
         :rtype: bool
@@ -451,7 +451,7 @@ class PostAlarmsReqV2:
     def notification_enabled(self, notification_enabled):
         r"""Sets the notification_enabled of this PostAlarmsReqV2.
 
-        是否开启告警通知
+        是否开启告警通知。true:开启，false:关闭。
 
         :param notification_enabled: The notification_enabled of this PostAlarmsReqV2.
         :type notification_enabled: bool

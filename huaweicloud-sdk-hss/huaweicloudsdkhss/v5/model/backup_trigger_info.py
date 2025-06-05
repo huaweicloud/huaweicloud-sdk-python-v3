@@ -35,11 +35,11 @@ class BackupTriggerInfo:
 
         The model defined in huaweicloud sdk
 
-        :param id: 调度器id
+        :param id: **参数解释**: 调度器id **取值范围**: 字符长度0-256 
         :type id: str
-        :param name: 调度器名称
+        :param name: **参数解释**: 调度器名称 **取值范围**: 字符长度0-256 
         :type name: str
-        :param type: 调度器类型,目前只支持 time,定时调度。
+        :param type: **参数解释**: 调度器类型,目前只支持 time,定时调度。 **取值范围**: 字符长度0-256 
         :type type: str
         :param properties: 
         :type properties: :class:`huaweicloudsdkhss.v5.BackupTriggerPropertiesInfo`
@@ -66,7 +66,7 @@ class BackupTriggerInfo:
     def id(self):
         r"""Gets the id of this BackupTriggerInfo.
 
-        调度器id
+        **参数解释**: 调度器id **取值范围**: 字符长度0-256 
 
         :return: The id of this BackupTriggerInfo.
         :rtype: str
@@ -77,7 +77,7 @@ class BackupTriggerInfo:
     def id(self, id):
         r"""Sets the id of this BackupTriggerInfo.
 
-        调度器id
+        **参数解释**: 调度器id **取值范围**: 字符长度0-256 
 
         :param id: The id of this BackupTriggerInfo.
         :type id: str
@@ -88,7 +88,7 @@ class BackupTriggerInfo:
     def name(self):
         r"""Gets the name of this BackupTriggerInfo.
 
-        调度器名称
+        **参数解释**: 调度器名称 **取值范围**: 字符长度0-256 
 
         :return: The name of this BackupTriggerInfo.
         :rtype: str
@@ -99,7 +99,7 @@ class BackupTriggerInfo:
     def name(self, name):
         r"""Sets the name of this BackupTriggerInfo.
 
-        调度器名称
+        **参数解释**: 调度器名称 **取值范围**: 字符长度0-256 
 
         :param name: The name of this BackupTriggerInfo.
         :type name: str
@@ -110,7 +110,7 @@ class BackupTriggerInfo:
     def type(self):
         r"""Gets the type of this BackupTriggerInfo.
 
-        调度器类型,目前只支持 time,定时调度。
+        **参数解释**: 调度器类型,目前只支持 time,定时调度。 **取值范围**: 字符长度0-256 
 
         :return: The type of this BackupTriggerInfo.
         :rtype: str
@@ -121,7 +121,7 @@ class BackupTriggerInfo:
     def type(self, type):
         r"""Sets the type of this BackupTriggerInfo.
 
-        调度器类型,目前只支持 time,定时调度。
+        **参数解释**: 调度器类型,目前只支持 time,定时调度。 **取值范围**: 字符长度0-256 
 
         :param type: The type of this BackupTriggerInfo.
         :type type: str

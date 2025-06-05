@@ -33,7 +33,7 @@ class BatchEnableAlarmsRequestBody:
 
         :param alarm_ids: 需要批量启停的告警规则的ID列表
         :type alarm_ids: list[str]
-        :param alarm_enabled: 告警开关
+        :param alarm_enabled: 是否开启告警规则。true:开启，false:关闭。
         :type alarm_enabled: bool
         """
         
@@ -72,7 +72,7 @@ class BatchEnableAlarmsRequestBody:
     def alarm_enabled(self):
         r"""Gets the alarm_enabled of this BatchEnableAlarmsRequestBody.
 
-        告警开关
+        是否开启告警规则。true:开启，false:关闭。
 
         :return: The alarm_enabled of this BatchEnableAlarmsRequestBody.
         :rtype: bool
@@ -83,7 +83,7 @@ class BatchEnableAlarmsRequestBody:
     def alarm_enabled(self, alarm_enabled):
         r"""Sets the alarm_enabled of this BatchEnableAlarmsRequestBody.
 
-        告警开关
+        是否开启告警规则。true:开启，false:关闭。
 
         :param alarm_enabled: The alarm_enabled of this BatchEnableAlarmsRequestBody.
         :type alarm_enabled: bool

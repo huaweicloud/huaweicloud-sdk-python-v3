@@ -21,7 +21,7 @@ class UpdateDaemonsetRequestBody:
         'cluster_name': 'str',
         'auto_upgrade': 'bool',
         'runtime_info': 'list[RuntimeRequestBody]',
-        'schedule_info': 'UpdateDaemonsetRequestBodyScheduleInfo',
+        'schedule_info': 'CreateDaemonsetRequestBodyScheduleInfo',
         'invoked_service': 'str',
         'charging_mode': 'str',
         'cce_protection_type': 'str',
@@ -54,7 +54,7 @@ class UpdateDaemonsetRequestBody:
         :param runtime_info: 容器运行时配置
         :type runtime_info: list[:class:`huaweicloudsdkhss.v5.RuntimeRequestBody`]
         :param schedule_info: 
-        :type schedule_info: :class:`huaweicloudsdkhss.v5.UpdateDaemonsetRequestBodyScheduleInfo`
+        :type schedule_info: :class:`huaweicloudsdkhss.v5.CreateDaemonsetRequestBodyScheduleInfo`
         :param invoked_service: 调用服务，默认hss，cce集成防护调用场景使用:   - hss：hss服务    - cce：cce服务
         :type invoked_service: str
         :param charging_mode: 付费模式，cce集成防护调用场景使用:   - on_demand:按需    - free_security_check:免费安全体检
@@ -190,7 +190,7 @@ class UpdateDaemonsetRequestBody:
         r"""Gets the schedule_info of this UpdateDaemonsetRequestBody.
 
         :return: The schedule_info of this UpdateDaemonsetRequestBody.
-        :rtype: :class:`huaweicloudsdkhss.v5.UpdateDaemonsetRequestBodyScheduleInfo`
+        :rtype: :class:`huaweicloudsdkhss.v5.CreateDaemonsetRequestBodyScheduleInfo`
         """
         return self._schedule_info
 
@@ -199,7 +199,7 @@ class UpdateDaemonsetRequestBody:
         r"""Sets the schedule_info of this UpdateDaemonsetRequestBody.
 
         :param schedule_info: The schedule_info of this UpdateDaemonsetRequestBody.
-        :type schedule_info: :class:`huaweicloudsdkhss.v5.UpdateDaemonsetRequestBodyScheduleInfo`
+        :type schedule_info: :class:`huaweicloudsdkhss.v5.CreateDaemonsetRequestBodyScheduleInfo`
         """
         self._schedule_info = schedule_info
 

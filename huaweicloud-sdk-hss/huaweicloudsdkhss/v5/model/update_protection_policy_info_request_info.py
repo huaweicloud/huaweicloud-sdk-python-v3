@@ -21,6 +21,7 @@ class UpdateProtectionPolicyInfoRequestInfo:
         'policy_name': 'str',
         'protection_mode': 'str',
         'bait_protection_status': 'str',
+        'deploy_mode': 'str',
         'protection_directory': 'str',
         'protection_type': 'str',
         'exclude_directory': 'str',
@@ -36,6 +37,7 @@ class UpdateProtectionPolicyInfoRequestInfo:
         'policy_name': 'policy_name',
         'protection_mode': 'protection_mode',
         'bait_protection_status': 'bait_protection_status',
+        'deploy_mode': 'deploy_mode',
         'protection_directory': 'protection_directory',
         'protection_type': 'protection_type',
         'exclude_directory': 'exclude_directory',
@@ -46,34 +48,36 @@ class UpdateProtectionPolicyInfoRequestInfo:
         'ai_protection_status': 'ai_protection_status'
     }
 
-    def __init__(self, policy_id=None, policy_name=None, protection_mode=None, bait_protection_status=None, protection_directory=None, protection_type=None, exclude_directory=None, agent_id_list=None, operating_system=None, runtime_detection_status=None, process_whitelist=None, ai_protection_status=None):
+    def __init__(self, policy_id=None, policy_name=None, protection_mode=None, bait_protection_status=None, deploy_mode=None, protection_directory=None, protection_type=None, exclude_directory=None, agent_id_list=None, operating_system=None, runtime_detection_status=None, process_whitelist=None, ai_protection_status=None):
         r"""UpdateProtectionPolicyInfoRequestInfo
 
         The model defined in huaweicloud sdk
 
-        :param policy_id: 策略ID
+        :param policy_id: **参数解释**: 策略ID **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
         :type policy_id: str
-        :param policy_name: 策略名称
+        :param policy_name: **参数解释**: 策略名称 **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
         :type policy_name: str
-        :param protection_mode: 防护动作，包含如下2种。   - alarm_and_isolation ：告警并自动隔离。   - alarm_only ：仅告警。
+        :param protection_mode: **参数解释**: 防护动作 **约束限制**: 不涉及 **取值范围**: 包含两种：   - alarm_and_isolation ：告警并自动隔离。   - alarm_only ：仅告警。 **默认取值**: 不涉及 
         :type protection_mode: str
-        :param bait_protection_status: 是否开启诱饵防护，包含如下1种, 默认为开启防护诱饵防护。   - opened ：开启。   - closed ：关闭。
+        :param bait_protection_status: **参数解释**: 是否开启诱饵防护 **约束限制**: 不涉及 **取值范围**:   - opened ：开启。 **默认取值**: 不涉及 
         :type bait_protection_status: str
-        :param protection_directory: 防护目录,多个目录请用英文分号隔开，最多支持填写20个防护目录
+        :param deploy_mode: **参数解释**: 是否开启动态诱饵，包含如下2种, 默认为关闭防护动态诱饵防护。 **约束限制**: 不涉及 **取值范围**: 包含两种：   - opened ：开启。   - closed ：关闭。   **默认取值**: closed 
+        :type deploy_mode: str
+        :param protection_directory: **参数解释**: 防护目录,多个目录请用英文分号隔开，最多支持填写20个防护目录 **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
         :type protection_directory: str
-        :param protection_type: 防护文件类型，例如：docx，txt，avi
+        :param protection_type: **参数解释**: 防护文件类型，例如：docx，txt，avi **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及         
         :type protection_type: str
-        :param exclude_directory: 排除目录(选填)，多个目录请用英文分号隔开，最多支持填写20个排除目录
+        :param exclude_directory: **参数解释**: 排除目录(选填)，多个目录请用英文分号隔开，最多支持填写20个排除目录 **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及    
         :type exclude_directory: str
-        :param agent_id_list: 开启了此勒索防护策略的agent的id列表
+        :param agent_id_list: **参数解释**: 开启了此勒索防护策略的agent的id列表 **约束限制**: 不涉及 **取值范围**: 列表最大1000条，字符长度0-128位 **默认取值**: 不涉及  
         :type agent_id_list: list[str]
-        :param operating_system: 支持该策略的操作系统，包含如下：   - Windows : Windows系统   - Linux : Linux系统
+        :param operating_system: **参数解释**: 支持该策略的操作系统 **约束限制**: 不涉及 **取值范围**: 包含两种：   - Windows : Windows系统   - Linux : Linux系统 **默认取值**: 不涉及
         :type operating_system: str
-        :param runtime_detection_status: 是否运行时检测，包含如下2种，暂时只有关闭一种状态，为保留字段。   - opened ：开启。   - closed ：关闭。
+        :param runtime_detection_status: **参数解释**: 是否运行时检测，包含如下2种，暂时只有关闭一种状态，为保留字段。   - opened ：开启。   - closed ：关闭。 **约束限制**: 不涉及 **取值范围**: 包含两种： 不涉及 **默认取值**: 不涉及
         :type runtime_detection_status: str
         :param process_whitelist: 进程白名单
         :type process_whitelist: list[:class:`huaweicloudsdkhss.v5.TrustProcessInfo`]
-        :param ai_protection_status: 是否开启AI勒索防护，包含如下1种, 默认为开启AI勒索防护。   - opened ：开启。   - closed ：关闭。            
+        :param ai_protection_status: **参数解释**: 是否开启AI勒索防护，包含如下2种, 默认为关闭AI勒索防护。当前只有Windows系统涉及 **约束限制**: 不涉及 **取值范围**: 包含两种：   - opened ：开启。   - closed ：关闭。 **默认取值**: closed
         :type ai_protection_status: str
         """
         
@@ -83,6 +87,7 @@ class UpdateProtectionPolicyInfoRequestInfo:
         self._policy_name = None
         self._protection_mode = None
         self._bait_protection_status = None
+        self._deploy_mode = None
         self._protection_directory = None
         self._protection_type = None
         self._exclude_directory = None
@@ -98,6 +103,8 @@ class UpdateProtectionPolicyInfoRequestInfo:
         self.protection_mode = protection_mode
         if bait_protection_status is not None:
             self.bait_protection_status = bait_protection_status
+        if deploy_mode is not None:
+            self.deploy_mode = deploy_mode
         self.protection_directory = protection_directory
         self.protection_type = protection_type
         if exclude_directory is not None:
@@ -116,7 +123,7 @@ class UpdateProtectionPolicyInfoRequestInfo:
     def policy_id(self):
         r"""Gets the policy_id of this UpdateProtectionPolicyInfoRequestInfo.
 
-        策略ID
+        **参数解释**: 策略ID **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
 
         :return: The policy_id of this UpdateProtectionPolicyInfoRequestInfo.
         :rtype: str
@@ -127,7 +134,7 @@ class UpdateProtectionPolicyInfoRequestInfo:
     def policy_id(self, policy_id):
         r"""Sets the policy_id of this UpdateProtectionPolicyInfoRequestInfo.
 
-        策略ID
+        **参数解释**: 策略ID **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
 
         :param policy_id: The policy_id of this UpdateProtectionPolicyInfoRequestInfo.
         :type policy_id: str
@@ -138,7 +145,7 @@ class UpdateProtectionPolicyInfoRequestInfo:
     def policy_name(self):
         r"""Gets the policy_name of this UpdateProtectionPolicyInfoRequestInfo.
 
-        策略名称
+        **参数解释**: 策略名称 **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
 
         :return: The policy_name of this UpdateProtectionPolicyInfoRequestInfo.
         :rtype: str
@@ -149,7 +156,7 @@ class UpdateProtectionPolicyInfoRequestInfo:
     def policy_name(self, policy_name):
         r"""Sets the policy_name of this UpdateProtectionPolicyInfoRequestInfo.
 
-        策略名称
+        **参数解释**: 策略名称 **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
 
         :param policy_name: The policy_name of this UpdateProtectionPolicyInfoRequestInfo.
         :type policy_name: str
@@ -160,7 +167,7 @@ class UpdateProtectionPolicyInfoRequestInfo:
     def protection_mode(self):
         r"""Gets the protection_mode of this UpdateProtectionPolicyInfoRequestInfo.
 
-        防护动作，包含如下2种。   - alarm_and_isolation ：告警并自动隔离。   - alarm_only ：仅告警。
+        **参数解释**: 防护动作 **约束限制**: 不涉及 **取值范围**: 包含两种：   - alarm_and_isolation ：告警并自动隔离。   - alarm_only ：仅告警。 **默认取值**: 不涉及 
 
         :return: The protection_mode of this UpdateProtectionPolicyInfoRequestInfo.
         :rtype: str
@@ -171,7 +178,7 @@ class UpdateProtectionPolicyInfoRequestInfo:
     def protection_mode(self, protection_mode):
         r"""Sets the protection_mode of this UpdateProtectionPolicyInfoRequestInfo.
 
-        防护动作，包含如下2种。   - alarm_and_isolation ：告警并自动隔离。   - alarm_only ：仅告警。
+        **参数解释**: 防护动作 **约束限制**: 不涉及 **取值范围**: 包含两种：   - alarm_and_isolation ：告警并自动隔离。   - alarm_only ：仅告警。 **默认取值**: 不涉及 
 
         :param protection_mode: The protection_mode of this UpdateProtectionPolicyInfoRequestInfo.
         :type protection_mode: str
@@ -182,7 +189,7 @@ class UpdateProtectionPolicyInfoRequestInfo:
     def bait_protection_status(self):
         r"""Gets the bait_protection_status of this UpdateProtectionPolicyInfoRequestInfo.
 
-        是否开启诱饵防护，包含如下1种, 默认为开启防护诱饵防护。   - opened ：开启。   - closed ：关闭。
+        **参数解释**: 是否开启诱饵防护 **约束限制**: 不涉及 **取值范围**:   - opened ：开启。 **默认取值**: 不涉及 
 
         :return: The bait_protection_status of this UpdateProtectionPolicyInfoRequestInfo.
         :rtype: str
@@ -193,7 +200,7 @@ class UpdateProtectionPolicyInfoRequestInfo:
     def bait_protection_status(self, bait_protection_status):
         r"""Sets the bait_protection_status of this UpdateProtectionPolicyInfoRequestInfo.
 
-        是否开启诱饵防护，包含如下1种, 默认为开启防护诱饵防护。   - opened ：开启。   - closed ：关闭。
+        **参数解释**: 是否开启诱饵防护 **约束限制**: 不涉及 **取值范围**:   - opened ：开启。 **默认取值**: 不涉及 
 
         :param bait_protection_status: The bait_protection_status of this UpdateProtectionPolicyInfoRequestInfo.
         :type bait_protection_status: str
@@ -201,10 +208,32 @@ class UpdateProtectionPolicyInfoRequestInfo:
         self._bait_protection_status = bait_protection_status
 
     @property
+    def deploy_mode(self):
+        r"""Gets the deploy_mode of this UpdateProtectionPolicyInfoRequestInfo.
+
+        **参数解释**: 是否开启动态诱饵，包含如下2种, 默认为关闭防护动态诱饵防护。 **约束限制**: 不涉及 **取值范围**: 包含两种：   - opened ：开启。   - closed ：关闭。   **默认取值**: closed 
+
+        :return: The deploy_mode of this UpdateProtectionPolicyInfoRequestInfo.
+        :rtype: str
+        """
+        return self._deploy_mode
+
+    @deploy_mode.setter
+    def deploy_mode(self, deploy_mode):
+        r"""Sets the deploy_mode of this UpdateProtectionPolicyInfoRequestInfo.
+
+        **参数解释**: 是否开启动态诱饵，包含如下2种, 默认为关闭防护动态诱饵防护。 **约束限制**: 不涉及 **取值范围**: 包含两种：   - opened ：开启。   - closed ：关闭。   **默认取值**: closed 
+
+        :param deploy_mode: The deploy_mode of this UpdateProtectionPolicyInfoRequestInfo.
+        :type deploy_mode: str
+        """
+        self._deploy_mode = deploy_mode
+
+    @property
     def protection_directory(self):
         r"""Gets the protection_directory of this UpdateProtectionPolicyInfoRequestInfo.
 
-        防护目录,多个目录请用英文分号隔开，最多支持填写20个防护目录
+        **参数解释**: 防护目录,多个目录请用英文分号隔开，最多支持填写20个防护目录 **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
 
         :return: The protection_directory of this UpdateProtectionPolicyInfoRequestInfo.
         :rtype: str
@@ -215,7 +244,7 @@ class UpdateProtectionPolicyInfoRequestInfo:
     def protection_directory(self, protection_directory):
         r"""Sets the protection_directory of this UpdateProtectionPolicyInfoRequestInfo.
 
-        防护目录,多个目录请用英文分号隔开，最多支持填写20个防护目录
+        **参数解释**: 防护目录,多个目录请用英文分号隔开，最多支持填写20个防护目录 **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
 
         :param protection_directory: The protection_directory of this UpdateProtectionPolicyInfoRequestInfo.
         :type protection_directory: str
@@ -226,7 +255,7 @@ class UpdateProtectionPolicyInfoRequestInfo:
     def protection_type(self):
         r"""Gets the protection_type of this UpdateProtectionPolicyInfoRequestInfo.
 
-        防护文件类型，例如：docx，txt，avi
+        **参数解释**: 防护文件类型，例如：docx，txt，avi **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及         
 
         :return: The protection_type of this UpdateProtectionPolicyInfoRequestInfo.
         :rtype: str
@@ -237,7 +266,7 @@ class UpdateProtectionPolicyInfoRequestInfo:
     def protection_type(self, protection_type):
         r"""Sets the protection_type of this UpdateProtectionPolicyInfoRequestInfo.
 
-        防护文件类型，例如：docx，txt，avi
+        **参数解释**: 防护文件类型，例如：docx，txt，avi **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及         
 
         :param protection_type: The protection_type of this UpdateProtectionPolicyInfoRequestInfo.
         :type protection_type: str
@@ -248,7 +277,7 @@ class UpdateProtectionPolicyInfoRequestInfo:
     def exclude_directory(self):
         r"""Gets the exclude_directory of this UpdateProtectionPolicyInfoRequestInfo.
 
-        排除目录(选填)，多个目录请用英文分号隔开，最多支持填写20个排除目录
+        **参数解释**: 排除目录(选填)，多个目录请用英文分号隔开，最多支持填写20个排除目录 **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及    
 
         :return: The exclude_directory of this UpdateProtectionPolicyInfoRequestInfo.
         :rtype: str
@@ -259,7 +288,7 @@ class UpdateProtectionPolicyInfoRequestInfo:
     def exclude_directory(self, exclude_directory):
         r"""Sets the exclude_directory of this UpdateProtectionPolicyInfoRequestInfo.
 
-        排除目录(选填)，多个目录请用英文分号隔开，最多支持填写20个排除目录
+        **参数解释**: 排除目录(选填)，多个目录请用英文分号隔开，最多支持填写20个排除目录 **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及    
 
         :param exclude_directory: The exclude_directory of this UpdateProtectionPolicyInfoRequestInfo.
         :type exclude_directory: str
@@ -270,7 +299,7 @@ class UpdateProtectionPolicyInfoRequestInfo:
     def agent_id_list(self):
         r"""Gets the agent_id_list of this UpdateProtectionPolicyInfoRequestInfo.
 
-        开启了此勒索防护策略的agent的id列表
+        **参数解释**: 开启了此勒索防护策略的agent的id列表 **约束限制**: 不涉及 **取值范围**: 列表最大1000条，字符长度0-128位 **默认取值**: 不涉及  
 
         :return: The agent_id_list of this UpdateProtectionPolicyInfoRequestInfo.
         :rtype: list[str]
@@ -281,7 +310,7 @@ class UpdateProtectionPolicyInfoRequestInfo:
     def agent_id_list(self, agent_id_list):
         r"""Sets the agent_id_list of this UpdateProtectionPolicyInfoRequestInfo.
 
-        开启了此勒索防护策略的agent的id列表
+        **参数解释**: 开启了此勒索防护策略的agent的id列表 **约束限制**: 不涉及 **取值范围**: 列表最大1000条，字符长度0-128位 **默认取值**: 不涉及  
 
         :param agent_id_list: The agent_id_list of this UpdateProtectionPolicyInfoRequestInfo.
         :type agent_id_list: list[str]
@@ -292,7 +321,7 @@ class UpdateProtectionPolicyInfoRequestInfo:
     def operating_system(self):
         r"""Gets the operating_system of this UpdateProtectionPolicyInfoRequestInfo.
 
-        支持该策略的操作系统，包含如下：   - Windows : Windows系统   - Linux : Linux系统
+        **参数解释**: 支持该策略的操作系统 **约束限制**: 不涉及 **取值范围**: 包含两种：   - Windows : Windows系统   - Linux : Linux系统 **默认取值**: 不涉及
 
         :return: The operating_system of this UpdateProtectionPolicyInfoRequestInfo.
         :rtype: str
@@ -303,7 +332,7 @@ class UpdateProtectionPolicyInfoRequestInfo:
     def operating_system(self, operating_system):
         r"""Sets the operating_system of this UpdateProtectionPolicyInfoRequestInfo.
 
-        支持该策略的操作系统，包含如下：   - Windows : Windows系统   - Linux : Linux系统
+        **参数解释**: 支持该策略的操作系统 **约束限制**: 不涉及 **取值范围**: 包含两种：   - Windows : Windows系统   - Linux : Linux系统 **默认取值**: 不涉及
 
         :param operating_system: The operating_system of this UpdateProtectionPolicyInfoRequestInfo.
         :type operating_system: str
@@ -314,7 +343,7 @@ class UpdateProtectionPolicyInfoRequestInfo:
     def runtime_detection_status(self):
         r"""Gets the runtime_detection_status of this UpdateProtectionPolicyInfoRequestInfo.
 
-        是否运行时检测，包含如下2种，暂时只有关闭一种状态，为保留字段。   - opened ：开启。   - closed ：关闭。
+        **参数解释**: 是否运行时检测，包含如下2种，暂时只有关闭一种状态，为保留字段。   - opened ：开启。   - closed ：关闭。 **约束限制**: 不涉及 **取值范围**: 包含两种： 不涉及 **默认取值**: 不涉及
 
         :return: The runtime_detection_status of this UpdateProtectionPolicyInfoRequestInfo.
         :rtype: str
@@ -325,7 +354,7 @@ class UpdateProtectionPolicyInfoRequestInfo:
     def runtime_detection_status(self, runtime_detection_status):
         r"""Sets the runtime_detection_status of this UpdateProtectionPolicyInfoRequestInfo.
 
-        是否运行时检测，包含如下2种，暂时只有关闭一种状态，为保留字段。   - opened ：开启。   - closed ：关闭。
+        **参数解释**: 是否运行时检测，包含如下2种，暂时只有关闭一种状态，为保留字段。   - opened ：开启。   - closed ：关闭。 **约束限制**: 不涉及 **取值范围**: 包含两种： 不涉及 **默认取值**: 不涉及
 
         :param runtime_detection_status: The runtime_detection_status of this UpdateProtectionPolicyInfoRequestInfo.
         :type runtime_detection_status: str
@@ -358,7 +387,7 @@ class UpdateProtectionPolicyInfoRequestInfo:
     def ai_protection_status(self):
         r"""Gets the ai_protection_status of this UpdateProtectionPolicyInfoRequestInfo.
 
-        是否开启AI勒索防护，包含如下1种, 默认为开启AI勒索防护。   - opened ：开启。   - closed ：关闭。            
+        **参数解释**: 是否开启AI勒索防护，包含如下2种, 默认为关闭AI勒索防护。当前只有Windows系统涉及 **约束限制**: 不涉及 **取值范围**: 包含两种：   - opened ：开启。   - closed ：关闭。 **默认取值**: closed
 
         :return: The ai_protection_status of this UpdateProtectionPolicyInfoRequestInfo.
         :rtype: str
@@ -369,7 +398,7 @@ class UpdateProtectionPolicyInfoRequestInfo:
     def ai_protection_status(self, ai_protection_status):
         r"""Sets the ai_protection_status of this UpdateProtectionPolicyInfoRequestInfo.
 
-        是否开启AI勒索防护，包含如下1种, 默认为开启AI勒索防护。   - opened ：开启。   - closed ：关闭。            
+        **参数解释**: 是否开启AI勒索防护，包含如下2种, 默认为关闭AI勒索防护。当前只有Windows系统涉及 **约束限制**: 不涉及 **取值范围**: 包含两种：   - opened ：开启。   - closed ：关闭。 **默认取值**: closed
 
         :param ai_protection_status: The ai_protection_status of this UpdateProtectionPolicyInfoRequestInfo.
         :type ai_protection_status: str

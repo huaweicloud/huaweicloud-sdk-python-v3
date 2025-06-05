@@ -31,7 +31,7 @@ class HostVulInfo:
         'repair_cmd': 'str',
         'status': 'str',
         'repair_success_num': 'int',
-        'cve_list': 'list[HostVulInfoCveList]',
+        'cve_list': 'list[GeneralImageVulsResponseInfoCveList]',
         'is_affect_business': 'bool',
         'first_scan_time': 'int',
         'app_name': 'str',
@@ -104,7 +104,7 @@ class HostVulInfo:
         :param repair_success_num: HSS全网修复该漏洞的次数
         :type repair_success_num: int
         :param cve_list: CVE列表
-        :type cve_list: list[:class:`huaweicloudsdkhss.v5.HostVulInfoCveList`]
+        :type cve_list: list[:class:`huaweicloudsdkhss.v5.GeneralImageVulsResponseInfoCveList`]
         :param is_affect_business: 是否影响业务
         :type is_affect_business: bool
         :param first_scan_time: 首次扫描时间
@@ -517,7 +517,7 @@ class HostVulInfo:
         CVE列表
 
         :return: The cve_list of this HostVulInfo.
-        :rtype: list[:class:`huaweicloudsdkhss.v5.HostVulInfoCveList`]
+        :rtype: list[:class:`huaweicloudsdkhss.v5.GeneralImageVulsResponseInfoCveList`]
         """
         return self._cve_list
 
@@ -528,7 +528,7 @@ class HostVulInfo:
         CVE列表
 
         :param cve_list: The cve_list of this HostVulInfo.
-        :type cve_list: list[:class:`huaweicloudsdkhss.v5.HostVulInfoCveList`]
+        :type cve_list: list[:class:`huaweicloudsdkhss.v5.GeneralImageVulsResponseInfoCveList`]
         """
         self._cve_list = cve_list
 

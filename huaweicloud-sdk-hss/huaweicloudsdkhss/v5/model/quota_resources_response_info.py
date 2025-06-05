@@ -26,6 +26,7 @@ class QuotaResourcesResponseInfo:
         'charging_mode': 'str',
         'tags': 'list[TagInfo]',
         'expire_time': 'int',
+        'create_time': 'int',
         'shared_quota': 'str',
         'enterprise_project_id': 'str',
         'enterprise_project_name': 'str'
@@ -41,12 +42,13 @@ class QuotaResourcesResponseInfo:
         'charging_mode': 'charging_mode',
         'tags': 'tags',
         'expire_time': 'expire_time',
+        'create_time': 'create_time',
         'shared_quota': 'shared_quota',
         'enterprise_project_id': 'enterprise_project_id',
         'enterprise_project_name': 'enterprise_project_name'
     }
 
-    def __init__(self, resource_id=None, version=None, quota_status=None, used_status=None, host_id=None, host_name=None, charging_mode=None, tags=None, expire_time=None, shared_quota=None, enterprise_project_id=None, enterprise_project_name=None):
+    def __init__(self, resource_id=None, version=None, quota_status=None, used_status=None, host_id=None, host_name=None, charging_mode=None, tags=None, expire_time=None, create_time=None, shared_quota=None, enterprise_project_id=None, enterprise_project_name=None):
         r"""QuotaResourcesResponseInfo
 
         The model defined in huaweicloud sdk
@@ -69,6 +71,8 @@ class QuotaResourcesResponseInfo:
         :type tags: list[:class:`huaweicloudsdkhss.v5.TagInfo`]
         :param expire_time: 过期时间，-1表示没有到期时间
         :type expire_time: int
+        :param create_time: 创建时间
+        :type create_time: int
         :param shared_quota: 是否共享配额   - shared：共享的   - unshared：非共享的
         :type shared_quota: str
         :param enterprise_project_id: 企业项目ID
@@ -88,6 +92,7 @@ class QuotaResourcesResponseInfo:
         self._charging_mode = None
         self._tags = None
         self._expire_time = None
+        self._create_time = None
         self._shared_quota = None
         self._enterprise_project_id = None
         self._enterprise_project_name = None
@@ -111,6 +116,8 @@ class QuotaResourcesResponseInfo:
             self.tags = tags
         if expire_time is not None:
             self.expire_time = expire_time
+        if create_time is not None:
+            self.create_time = create_time
         if shared_quota is not None:
             self.shared_quota = shared_quota
         if enterprise_project_id is not None:
@@ -315,6 +322,28 @@ class QuotaResourcesResponseInfo:
         :type expire_time: int
         """
         self._expire_time = expire_time
+
+    @property
+    def create_time(self):
+        r"""Gets the create_time of this QuotaResourcesResponseInfo.
+
+        创建时间
+
+        :return: The create_time of this QuotaResourcesResponseInfo.
+        :rtype: int
+        """
+        return self._create_time
+
+    @create_time.setter
+    def create_time(self, create_time):
+        r"""Sets the create_time of this QuotaResourcesResponseInfo.
+
+        创建时间
+
+        :param create_time: The create_time of this QuotaResourcesResponseInfo.
+        :type create_time: int
+        """
+        self._create_time = create_time
 
     @property
     def shared_quota(self):

@@ -59,7 +59,7 @@ class PortResponseInfo:
         :type pid: int
         :param path: 进程可执行文件路径
         :type path: str
-        :param agent_id: Agent ID
+        :param agent_id: agent id
         :type agent_id: str
         :param container_id: 容器id
         :type container_id: str
@@ -255,7 +255,7 @@ class PortResponseInfo:
     def agent_id(self):
         r"""Gets the agent_id of this PortResponseInfo.
 
-        Agent ID
+        agent id
 
         :return: The agent_id of this PortResponseInfo.
         :rtype: str
@@ -266,7 +266,7 @@ class PortResponseInfo:
     def agent_id(self, agent_id):
         r"""Sets the agent_id of this PortResponseInfo.
 
-        Agent ID
+        agent id
 
         :param agent_id: The agent_id of this PortResponseInfo.
         :type agent_id: str

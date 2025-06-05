@@ -45,7 +45,7 @@ class SystemUserWhiteListResponseInfo:
 
         :param enterprise_project_name: 企业项目名称
         :type enterprise_project_name: str
-        :param host_id: 主机ID
+        :param host_id: 服务器ID
         :type host_id: str
         :param host_name: 服务器名称
         :type host_name: str
@@ -116,7 +116,7 @@ class SystemUserWhiteListResponseInfo:
     def host_id(self):
         r"""Gets the host_id of this SystemUserWhiteListResponseInfo.
 
-        主机ID
+        服务器ID
 
         :return: The host_id of this SystemUserWhiteListResponseInfo.
         :rtype: str
@@ -127,7 +127,7 @@ class SystemUserWhiteListResponseInfo:
     def host_id(self, host_id):
         r"""Sets the host_id of this SystemUserWhiteListResponseInfo.
 
-        主机ID
+        服务器ID
 
         :param host_id: The host_id of this SystemUserWhiteListResponseInfo.
         :type host_id: str

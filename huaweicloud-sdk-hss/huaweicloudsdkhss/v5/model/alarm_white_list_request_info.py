@@ -61,7 +61,7 @@ class AlarmWhiteListRequestInfo:
         :type field_value: str
         :param file_hash: 文件哈希
         :type file_hash: str
-        :param file_path: 文件路径,需要对特殊字符进行转义，包含/等
+        :param file_path: 文件路径
         :type file_path: str
         """
         
@@ -277,7 +277,7 @@ class AlarmWhiteListRequestInfo:
     def file_path(self):
         r"""Gets the file_path of this AlarmWhiteListRequestInfo.
 
-        文件路径,需要对特殊字符进行转义，包含/等
+        文件路径
 
         :return: The file_path of this AlarmWhiteListRequestInfo.
         :rtype: str
@@ -288,7 +288,7 @@ class AlarmWhiteListRequestInfo:
     def file_path(self, file_path):
         r"""Sets the file_path of this AlarmWhiteListRequestInfo.
 
-        文件路径,需要对特殊字符进行转义，包含/等
+        文件路径
 
         :param file_path: The file_path of this AlarmWhiteListRequestInfo.
         :type file_path: str

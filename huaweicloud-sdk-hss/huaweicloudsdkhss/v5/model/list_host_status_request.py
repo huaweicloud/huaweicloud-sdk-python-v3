@@ -54,6 +54,7 @@ class ListHostStatusRequest:
         'protect_interrupt': 'bool',
         'incluster': 'bool',
         'protect_degradation': 'bool',
+        'cluster_id': 'str',
         'limit': 'int',
         'offset': 'int'
     }
@@ -96,11 +97,12 @@ class ListHostStatusRequest:
         'protect_interrupt': 'protect_interrupt',
         'incluster': 'incluster',
         'protect_degradation': 'protect_degradation',
+        'cluster_id': 'cluster_id',
         'limit': 'limit',
         'offset': 'offset'
     }
 
-    def __init__(self, enterprise_project_id=None, version=None, agent_status=None, detect_result=None, host_name=None, host_id=None, host_status=None, os_type=None, private_ip=None, public_ip=None, ip_addr=None, protect_status=None, group_id=None, group_name=None, vpc_id=None, region=None, has_intrusion=None, has_vul=None, has_baseline=None, sort_key=None, sort_dir=None, policy_group_id=None, policy_group_name=None, charging_mode=None, refresh=None, get_common_login_locations=None, above_version=None, outside_host=None, asset_value=None, label=None, server_group=None, agent_upgradable=None, install_mode=None, binding_key=None, protect_interrupt=None, incluster=None, protect_degradation=None, limit=None, offset=None):
+    def __init__(self, enterprise_project_id=None, version=None, agent_status=None, detect_result=None, host_name=None, host_id=None, host_status=None, os_type=None, private_ip=None, public_ip=None, ip_addr=None, protect_status=None, group_id=None, group_name=None, vpc_id=None, region=None, has_intrusion=None, has_vul=None, has_baseline=None, sort_key=None, sort_dir=None, policy_group_id=None, policy_group_name=None, charging_mode=None, refresh=None, get_common_login_locations=None, above_version=None, outside_host=None, asset_value=None, label=None, server_group=None, agent_upgradable=None, install_mode=None, binding_key=None, protect_interrupt=None, incluster=None, protect_degradation=None, cluster_id=None, limit=None, offset=None):
         r"""ListHostStatusRequest
 
         The model defined in huaweicloud sdk
@@ -179,6 +181,8 @@ class ListHostStatusRequest:
         :type incluster: bool
         :param protect_degradation: 是否防护降级
         :type protect_degradation: bool
+        :param cluster_id: 集群ID
+        :type cluster_id: str
         :param limit: 每页显示数量
         :type limit: int
         :param offset: 偏移量：指定返回记录的开始位置
@@ -224,6 +228,7 @@ class ListHostStatusRequest:
         self._protect_interrupt = None
         self._incluster = None
         self._protect_degradation = None
+        self._cluster_id = None
         self._limit = None
         self._offset = None
         self.discriminator = None
@@ -302,6 +307,8 @@ class ListHostStatusRequest:
             self.incluster = incluster
         if protect_degradation is not None:
             self.protect_degradation = protect_degradation
+        if cluster_id is not None:
+            self.cluster_id = cluster_id
         if limit is not None:
             self.limit = limit
         if offset is not None:
@@ -1120,6 +1127,28 @@ class ListHostStatusRequest:
         :type protect_degradation: bool
         """
         self._protect_degradation = protect_degradation
+
+    @property
+    def cluster_id(self):
+        r"""Gets the cluster_id of this ListHostStatusRequest.
+
+        集群ID
+
+        :return: The cluster_id of this ListHostStatusRequest.
+        :rtype: str
+        """
+        return self._cluster_id
+
+    @cluster_id.setter
+    def cluster_id(self, cluster_id):
+        r"""Sets the cluster_id of this ListHostStatusRequest.
+
+        集群ID
+
+        :param cluster_id: The cluster_id of this ListHostStatusRequest.
+        :type cluster_id: str
+        """
+        self._cluster_id = cluster_id
 
     @property
     def limit(self):

@@ -31,9 +31,9 @@ class DelResourcesReq:
 
         The model defined in huaweicloud sdk
 
-        :param resources: 手动创建，选择资源层级为子维度时的资源信息。只需要传递删除的资源
+        :param resources: 当资源添加方式为手动创建、资源层级为子维度时，删除资源分组中的资源只需传递删除的资源信息
         :type resources: list[:class:`huaweicloudsdkces.v2.Resource`]
-        :param product_resources: 手动创建，选择资源层级为云产品时的资源详情。只需要传递删除的资源
+        :param product_resources: 当资源添加方式为手动创建、资源层级为云产品时，删除资源分组中的资源只需传递删除的资源信息
         :type product_resources: list[:class:`huaweicloudsdkces.v2.ProductResource`]
         """
         
@@ -52,7 +52,7 @@ class DelResourcesReq:
     def resources(self):
         r"""Gets the resources of this DelResourcesReq.
 
-        手动创建，选择资源层级为子维度时的资源信息。只需要传递删除的资源
+        当资源添加方式为手动创建、资源层级为子维度时，删除资源分组中的资源只需传递删除的资源信息
 
         :return: The resources of this DelResourcesReq.
         :rtype: list[:class:`huaweicloudsdkces.v2.Resource`]
@@ -63,7 +63,7 @@ class DelResourcesReq:
     def resources(self, resources):
         r"""Sets the resources of this DelResourcesReq.
 
-        手动创建，选择资源层级为子维度时的资源信息。只需要传递删除的资源
+        当资源添加方式为手动创建、资源层级为子维度时，删除资源分组中的资源只需传递删除的资源信息
 
         :param resources: The resources of this DelResourcesReq.
         :type resources: list[:class:`huaweicloudsdkces.v2.Resource`]
@@ -74,7 +74,7 @@ class DelResourcesReq:
     def product_resources(self):
         r"""Gets the product_resources of this DelResourcesReq.
 
-        手动创建，选择资源层级为云产品时的资源详情。只需要传递删除的资源
+        当资源添加方式为手动创建、资源层级为云产品时，删除资源分组中的资源只需传递删除的资源信息
 
         :return: The product_resources of this DelResourcesReq.
         :rtype: list[:class:`huaweicloudsdkces.v2.ProductResource`]
@@ -85,7 +85,7 @@ class DelResourcesReq:
     def product_resources(self, product_resources):
         r"""Sets the product_resources of this DelResourcesReq.
 
-        手动创建，选择资源层级为云产品时的资源详情。只需要传递删除的资源
+        当资源添加方式为手动创建、资源层级为云产品时，删除资源分组中的资源只需传递删除的资源信息
 
         :param product_resources: The product_resources of this DelResourcesReq.
         :type product_resources: list[:class:`huaweicloudsdkces.v2.ProductResource`]
