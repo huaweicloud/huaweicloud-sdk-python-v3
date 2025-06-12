@@ -65,11 +65,10 @@ class ListTaskResultsRequest:
 
         self.project_uuid = project_uuid
         self.task_uri = task_uri
-        self.iterator_uri = iterator_uri
-        if page_no is not None:
-            self.page_no = page_no
-        if page_size is not None:
-            self.page_size = page_size
+        if iterator_uri is not None:
+            self.iterator_uri = iterator_uri
+        self.page_no = page_no
+        self.page_size = page_size
         if release_dev is not None:
             self.release_dev = release_dev
 

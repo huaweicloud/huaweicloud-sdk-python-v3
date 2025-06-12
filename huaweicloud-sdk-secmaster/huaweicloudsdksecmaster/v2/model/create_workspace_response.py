@@ -106,7 +106,7 @@ class CreateWorkspaceResponse(SdkResponse):
         :type view_bind_id: str
         :param view_bind_name: 视图绑定的空间名称
         :type view_bind_name: str
-        :param workspace_agency_list: 仅用于视图场景，列出了该视图纳管的空间列表
+        :param workspace_agency_list: 纳管空间列表
         :type workspace_agency_list: list[:class:`huaweicloudsdksecmaster.v2.CreateWorkspaceResponseBodyWorkspaceAgencyList`]
         """
         
@@ -597,7 +597,7 @@ class CreateWorkspaceResponse(SdkResponse):
     def workspace_agency_list(self):
         r"""Gets the workspace_agency_list of this CreateWorkspaceResponse.
 
-        仅用于视图场景，列出了该视图纳管的空间列表
+        纳管空间列表
 
         :return: The workspace_agency_list of this CreateWorkspaceResponse.
         :rtype: list[:class:`huaweicloudsdksecmaster.v2.CreateWorkspaceResponseBodyWorkspaceAgencyList`]
@@ -608,7 +608,7 @@ class CreateWorkspaceResponse(SdkResponse):
     def workspace_agency_list(self, workspace_agency_list):
         r"""Sets the workspace_agency_list of this CreateWorkspaceResponse.
 
-        仅用于视图场景，列出了该视图纳管的空间列表
+        纳管空间列表
 
         :param workspace_agency_list: The workspace_agency_list of this CreateWorkspaceResponse.
         :type workspace_agency_list: list[:class:`huaweicloudsdksecmaster.v2.CreateWorkspaceResponseBodyWorkspaceAgencyList`]

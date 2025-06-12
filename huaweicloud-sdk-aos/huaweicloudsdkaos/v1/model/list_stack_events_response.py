@@ -18,29 +18,36 @@ class ListStackEventsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'stack_events': 'list[StackEvent]'
+        'stack_events': 'list[StackEvent]',
+        'page_info': 'PageInfo'
     }
 
     attribute_map = {
-        'stack_events': 'stack_events'
+        'stack_events': 'stack_events',
+        'page_info': 'page_info'
     }
 
-    def __init__(self, stack_events=None):
+    def __init__(self, stack_events=None, page_info=None):
         r"""ListStackEventsResponse
 
         The model defined in huaweicloud sdk
 
         :param stack_events: 资源栈事件列表
         :type stack_events: list[:class:`huaweicloudsdkaos.v1.StackEvent`]
+        :param page_info: 
+        :type page_info: :class:`huaweicloudsdkaos.v1.PageInfo`
         """
         
         super(ListStackEventsResponse, self).__init__()
 
         self._stack_events = None
+        self._page_info = None
         self.discriminator = None
 
         if stack_events is not None:
             self.stack_events = stack_events
+        if page_info is not None:
+            self.page_info = page_info
 
     @property
     def stack_events(self):
@@ -63,6 +70,24 @@ class ListStackEventsResponse(SdkResponse):
         :type stack_events: list[:class:`huaweicloudsdkaos.v1.StackEvent`]
         """
         self._stack_events = stack_events
+
+    @property
+    def page_info(self):
+        r"""Gets the page_info of this ListStackEventsResponse.
+
+        :return: The page_info of this ListStackEventsResponse.
+        :rtype: :class:`huaweicloudsdkaos.v1.PageInfo`
+        """
+        return self._page_info
+
+    @page_info.setter
+    def page_info(self, page_info):
+        r"""Sets the page_info of this ListStackEventsResponse.
+
+        :param page_info: The page_info of this ListStackEventsResponse.
+        :type page_info: :class:`huaweicloudsdkaos.v1.PageInfo`
+        """
+        self._page_info = page_info
 
     def to_dict(self):
         """Returns the model properties as a dict"""

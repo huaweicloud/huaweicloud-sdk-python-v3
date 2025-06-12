@@ -55,7 +55,7 @@ class ProductPostPaid:
         :type cloud_service_type: str
         :param resource_type: 用户购买云服务产品的资源类型，例如SecMaster中的典型场景配置，资源类型为hws.resource.type.secmaster.typical
         :type resource_type: str
-        :param resource_spec_code: 用户购买云服务产品的资源规格，例如安全云脑中的的基础版，资源规格为secmaster.basic
+        :param resource_spec_code: 用户购买云服务产品的资源规格，例如安全云脑中的基础版，资源规格为secmaster.basic
         :type resource_spec_code: str
         :param usage_measure_id: 使用量单位标识，按需询价必填，例如按小时询价，使用量值为1，使用量单位为小时，枚举值如下： 4：小时 10：GB（带宽按流量询价使用） 11：MB（带宽按流量询价使用）
         :type usage_measure_id: int
@@ -187,7 +187,7 @@ class ProductPostPaid:
     def resource_spec_code(self):
         r"""Gets the resource_spec_code of this ProductPostPaid.
 
-        用户购买云服务产品的资源规格，例如安全云脑中的的基础版，资源规格为secmaster.basic
+        用户购买云服务产品的资源规格，例如安全云脑中的基础版，资源规格为secmaster.basic
 
         :return: The resource_spec_code of this ProductPostPaid.
         :rtype: str
@@ -198,7 +198,7 @@ class ProductPostPaid:
     def resource_spec_code(self, resource_spec_code):
         r"""Sets the resource_spec_code of this ProductPostPaid.
 
-        用户购买云服务产品的资源规格，例如安全云脑中的的基础版，资源规格为secmaster.basic
+        用户购买云服务产品的资源规格，例如安全云脑中的基础版，资源规格为secmaster.basic
 
         :param resource_spec_code: The resource_spec_code of this ProductPostPaid.
         :type resource_spec_code: str

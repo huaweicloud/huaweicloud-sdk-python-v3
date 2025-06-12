@@ -43,13 +43,13 @@ class AlertDataSource:
 
         The model defined in huaweicloud sdk
 
-        :param source_type: 数据源类型，取值范围如下： 1 - 华为产品 2 - 第三方产品 3 - 租户私有产品
+        :param source_type: 数据源类型，取值范围如下： 1 - 云上产品 2 - 第三方产品 3 - 租户私有产品
         :type source_type: int
         :param domain_id: 数据源产品所属账号的id
         :type domain_id: str
         :param project_id: 数据源产品所属项目的id
         :type project_id: str
-        :param region_id: 数据源产品所在区域，具体取值范围查看华为云地区和终端节点定义，例如cn-north-1
+        :param region_id: 数据源产品所在区域，具体取值范围查看云地区和终端节点定义
         :type region_id: str
         :param company_name: 数据源产品所属公司的名称
         :type company_name: str
@@ -94,7 +94,7 @@ class AlertDataSource:
     def source_type(self):
         r"""Gets the source_type of this AlertDataSource.
 
-        数据源类型，取值范围如下： 1 - 华为产品 2 - 第三方产品 3 - 租户私有产品
+        数据源类型，取值范围如下： 1 - 云上产品 2 - 第三方产品 3 - 租户私有产品
 
         :return: The source_type of this AlertDataSource.
         :rtype: int
@@ -105,7 +105,7 @@ class AlertDataSource:
     def source_type(self, source_type):
         r"""Sets the source_type of this AlertDataSource.
 
-        数据源类型，取值范围如下： 1 - 华为产品 2 - 第三方产品 3 - 租户私有产品
+        数据源类型，取值范围如下： 1 - 云上产品 2 - 第三方产品 3 - 租户私有产品
 
         :param source_type: The source_type of this AlertDataSource.
         :type source_type: int
@@ -160,7 +160,7 @@ class AlertDataSource:
     def region_id(self):
         r"""Gets the region_id of this AlertDataSource.
 
-        数据源产品所在区域，具体取值范围查看华为云地区和终端节点定义，例如cn-north-1
+        数据源产品所在区域，具体取值范围查看云地区和终端节点定义
 
         :return: The region_id of this AlertDataSource.
         :rtype: str
@@ -171,7 +171,7 @@ class AlertDataSource:
     def region_id(self, region_id):
         r"""Sets the region_id of this AlertDataSource.
 
-        数据源产品所在区域，具体取值范围查看华为云地区和终端节点定义，例如cn-north-1
+        数据源产品所在区域，具体取值范围查看云地区和终端节点定义
 
         :param region_id: The region_id of this AlertDataSource.
         :type region_id: str

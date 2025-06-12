@@ -33,7 +33,7 @@ class ShowConnectorTaskRequest:
 
         :param instance_id: 实例ID。
         :type instance_id: str
-        :param task_id: Smart Connector任务ID。
+        :param task_id: Smart Connect任务ID。
         :type task_id: str
         """
         
@@ -72,7 +72,7 @@ class ShowConnectorTaskRequest:
     def task_id(self):
         r"""Gets the task_id of this ShowConnectorTaskRequest.
 
-        Smart Connector任务ID。
+        Smart Connect任务ID。
 
         :return: The task_id of this ShowConnectorTaskRequest.
         :rtype: str
@@ -83,7 +83,7 @@ class ShowConnectorTaskRequest:
     def task_id(self, task_id):
         r"""Sets the task_id of this ShowConnectorTaskRequest.
 
-        Smart Connector任务ID。
+        Smart Connect任务ID。
 
         :param task_id: The task_id of this ShowConnectorTaskRequest.
         :type task_id: str

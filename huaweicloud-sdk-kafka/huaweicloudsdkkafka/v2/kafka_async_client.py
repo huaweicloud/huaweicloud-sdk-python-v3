@@ -905,9 +905,9 @@ class KafkaAsyncClient(Client):
         return http_info
 
     def create_kafka_topic_quota_async(self, request):
-        r"""创建topic流控配置
+        r"""创建Topic流控配置
 
-        该接口用于向Kafka实例提交创建topic级别的流控任务，若成功则返回流控任务的job_id。
+        该接口用于向Kafka实例提交创建Topic级别的流控任务，若成功则返回流控任务的job_id。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1175,7 +1175,7 @@ class KafkaAsyncClient(Client):
 
         创建实例。
         
-        [该接口支持创建按需和包周期两种计费方式的实例。](tag:hws,hws_eu,hws_hk,ctc)
+        [该接口支持创建按需和包周期两种计费方式的实例。](tag:hws,hws_eu,hws_hk,ctc,cmcc)
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1575,9 +1575,9 @@ class KafkaAsyncClient(Client):
         return http_info
 
     def delete_kafka_topic_quota_async(self, request):
-        r"""删除topic流控配置
+        r"""删除Topic流控配置
 
-        该接口用于向Kafka实例提交删除topic级别的流控任务，若成功则返回流控任务的job_id。
+        该接口用于向Kafka实例提交删除Topic级别的流控任务，若成功则返回流控任务的job_id。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2849,9 +2849,9 @@ class KafkaAsyncClient(Client):
         return http_info
 
     def modify_kafka_topic_quota_async(self, request):
-        r"""修改topic流控配置
+        r"""修改Topic流控配置
 
-        该接口用于向Kafka实例提交修改topic级别的流控任务，若成功则返回流控任务的job_id。
+        该接口用于向Kafka实例提交修改Topic级别的流控任务，若成功则返回流控任务的job_id。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4815,9 +4815,9 @@ class KafkaAsyncClient(Client):
         return http_info
 
     def show_kafka_topic_quota_async(self, request):
-        r"""查询topic流控配置
+        r"""查询Topic流控配置
 
-        该接口用于查询topic级别的流控任务。
+        该接口用于查询Topic级别的流控任务。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -5639,9 +5639,9 @@ class KafkaAsyncClient(Client):
         return http_info
 
     def update_instance_auto_create_topic_async(self, request):
-        r"""开启或关闭实例自动创建topic功能
+        r"""开启或关闭实例自动创建Topic功能
 
-        开启或关闭实例自动创建topic功能。
+        开启或关闭实例自动创建Topic功能。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -6526,9 +6526,9 @@ class KafkaAsyncClient(Client):
         return http_info
 
     def delete_connector_task_async(self, request):
-        r"""删除Smart Connector任务
+        r"""删除Smart Connect任务
 
-        删除Smart Connector任务。
+        删除Smart Connect任务。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -6640,6 +6640,75 @@ class KafkaAsyncClient(Client):
         form_params = {}
 
         body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def modify_connector_task_async(self, request):
+        r"""修改Smart Connect任务配置。
+
+        修改Smart Connect任务配置。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ModifyConnectorTask
+        :type request: :class:`huaweicloudsdkkafka.v2.ModifyConnectorTaskRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.ModifyConnectorTaskResponse`
+        """
+        http_info = self._modify_connector_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def modify_connector_task_async_invoker(self, request):
+        http_info = self._modify_connector_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _modify_connector_task_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/connector/tasks/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ModifyConnectorTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -6930,9 +6999,9 @@ class KafkaAsyncClient(Client):
         return http_info
 
     def show_connector_task_async(self, request):
-        r"""查询Smart Connector任务详情
+        r"""查询Smart Connect任务详情
 
-        查询Smart Connector任务详情。
+        查询Smart Connect任务详情。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -6975,6 +7044,73 @@ class KafkaAsyncClient(Client):
         form_params = {}
 
         body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def validate_connector_connectivity_async(self, request):
+        r"""校验Connector连通性
+
+        校验Connector连通性。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ValidateConnectorConnectivity
+        :type request: :class:`huaweicloudsdkkafka.v2.ValidateConnectorConnectivityRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.ValidateConnectorConnectivityResponse`
+        """
+        http_info = self._validate_connector_connectivity_http_info(request)
+        return self._call_api(**http_info)
+
+    def validate_connector_connectivity_async_invoker(self, request):
+        http_info = self._validate_connector_connectivity_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _validate_connector_connectivity_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/connector/validate",
+            "request_type": request.__class__.__name__,
+            "response_type": "ValidateConnectorConnectivityResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 

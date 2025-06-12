@@ -29,7 +29,7 @@ class UpdateInstanceAutoCreateTopicReq:
 
         The model defined in huaweicloud sdk
 
-        :param enable_auto_topic: 是否开启自动创建topic功能。
+        :param enable_auto_topic: 是否开启自动创建Topic功能。
         :type enable_auto_topic: bool
         """
         
@@ -44,7 +44,7 @@ class UpdateInstanceAutoCreateTopicReq:
     def enable_auto_topic(self):
         r"""Gets the enable_auto_topic of this UpdateInstanceAutoCreateTopicReq.
 
-        是否开启自动创建topic功能。
+        是否开启自动创建Topic功能。
 
         :return: The enable_auto_topic of this UpdateInstanceAutoCreateTopicReq.
         :rtype: bool
@@ -55,7 +55,7 @@ class UpdateInstanceAutoCreateTopicReq:
     def enable_auto_topic(self, enable_auto_topic):
         r"""Sets the enable_auto_topic of this UpdateInstanceAutoCreateTopicReq.
 
-        是否开启自动创建topic功能。
+        是否开启自动创建Topic功能。
 
         :param enable_auto_topic: The enable_auto_topic of this UpdateInstanceAutoCreateTopicReq.
         :type enable_auto_topic: bool

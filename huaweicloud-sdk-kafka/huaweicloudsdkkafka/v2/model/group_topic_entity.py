@@ -33,7 +33,7 @@ class GroupTopicEntity:
 
         The model defined in huaweicloud sdk
 
-        :param topic: TOPIC名称
+        :param topic: Topic名称
         :type topic: str
         :param partitions: 分区
         :type partitions: int
@@ -59,7 +59,7 @@ class GroupTopicEntity:
     def topic(self):
         r"""Gets the topic of this GroupTopicEntity.
 
-        TOPIC名称
+        Topic名称
 
         :return: The topic of this GroupTopicEntity.
         :rtype: str
@@ -70,7 +70,7 @@ class GroupTopicEntity:
     def topic(self, topic):
         r"""Sets the topic of this GroupTopicEntity.
 
-        TOPIC名称
+        Topic名称
 
         :param topic: The topic of this GroupTopicEntity.
         :type topic: str

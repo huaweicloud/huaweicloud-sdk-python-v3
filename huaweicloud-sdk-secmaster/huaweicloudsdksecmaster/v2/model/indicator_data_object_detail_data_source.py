@@ -35,7 +35,7 @@ class IndicatorDataObjectDetailDataSource:
 
         The model defined in huaweicloud sdk
 
-        :param source_type: 数据源类型，取值范围如下：1 - 华为产品 2 - 第三方产品 3 - 租户私有产品
+        :param source_type: 数据源类型，取值范围如下：1 - 云上产品 2 - 第三方产品 3 - 租户私有产品
         :type source_type: int
         :param domain_id: 租户ID
         :type domain_id: str
@@ -66,7 +66,7 @@ class IndicatorDataObjectDetailDataSource:
     def source_type(self):
         r"""Gets the source_type of this IndicatorDataObjectDetailDataSource.
 
-        数据源类型，取值范围如下：1 - 华为产品 2 - 第三方产品 3 - 租户私有产品
+        数据源类型，取值范围如下：1 - 云上产品 2 - 第三方产品 3 - 租户私有产品
 
         :return: The source_type of this IndicatorDataObjectDetailDataSource.
         :rtype: int
@@ -77,7 +77,7 @@ class IndicatorDataObjectDetailDataSource:
     def source_type(self, source_type):
         r"""Sets the source_type of this IndicatorDataObjectDetailDataSource.
 
-        数据源类型，取值范围如下：1 - 华为产品 2 - 第三方产品 3 - 租户私有产品
+        数据源类型，取值范围如下：1 - 云上产品 2 - 第三方产品 3 - 租户私有产品
 
         :param source_type: The source_type of this IndicatorDataObjectDetailDataSource.
         :type source_type: int

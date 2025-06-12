@@ -18,6 +18,7 @@ class DeviceResource:
 
     openapi_types = {
         'device_name': 'ParameterRef',
+        'device_id': 'ParameterRef',
         'node_id': 'ParameterRef',
         'product_id': 'object',
         'tags': 'list[TagRef]'
@@ -25,18 +26,21 @@ class DeviceResource:
 
     attribute_map = {
         'device_name': 'device_name',
+        'device_id': 'device_id',
         'node_id': 'node_id',
         'product_id': 'product_id',
         'tags': 'tags'
     }
 
-    def __init__(self, device_name=None, node_id=None, product_id=None, tags=None):
+    def __init__(self, device_name=None, device_id=None, node_id=None, product_id=None, tags=None):
         r"""DeviceResource
 
         The model defined in huaweicloud sdk
 
         :param device_name: 
         :type device_name: :class:`huaweicloudsdkiotda.v5.ParameterRef`
+        :param device_id: 
+        :type device_id: :class:`huaweicloudsdkiotda.v5.ParameterRef`
         :param node_id: 
         :type node_id: :class:`huaweicloudsdkiotda.v5.ParameterRef`
         :param product_id: **参数说明**：设备所属的产品id，可以是一个明确的静态字符串id，也可以是动态的模板参数引用 - 明确的静态字符串：\&quot;642bf260f2f9030e44210d8d\&quot;。**取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。\&quot; - 参数引用: {\&quot;ref\&quot; : \&quot;iotda::certificate::country\&quot;}
@@ -48,6 +52,7 @@ class DeviceResource:
         
 
         self._device_name = None
+        self._device_id = None
         self._node_id = None
         self._product_id = None
         self._tags = None
@@ -55,6 +60,8 @@ class DeviceResource:
 
         if device_name is not None:
             self.device_name = device_name
+        if device_id is not None:
+            self.device_id = device_id
         self.node_id = node_id
         self.product_id = product_id
         if tags is not None:
@@ -77,6 +84,24 @@ class DeviceResource:
         :type device_name: :class:`huaweicloudsdkiotda.v5.ParameterRef`
         """
         self._device_name = device_name
+
+    @property
+    def device_id(self):
+        r"""Gets the device_id of this DeviceResource.
+
+        :return: The device_id of this DeviceResource.
+        :rtype: :class:`huaweicloudsdkiotda.v5.ParameterRef`
+        """
+        return self._device_id
+
+    @device_id.setter
+    def device_id(self, device_id):
+        r"""Sets the device_id of this DeviceResource.
+
+        :param device_id: The device_id of this DeviceResource.
+        :type device_id: :class:`huaweicloudsdkiotda.v5.ParameterRef`
+        """
+        self._device_id = device_id
 
     @property
     def node_id(self):

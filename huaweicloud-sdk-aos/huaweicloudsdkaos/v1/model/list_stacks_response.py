@@ -18,29 +18,36 @@ class ListStacksResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'stacks': 'list[Stack]'
+        'stacks': 'list[Stack]',
+        'page_info': 'PageInfo'
     }
 
     attribute_map = {
-        'stacks': 'stacks'
+        'stacks': 'stacks',
+        'page_info': 'page_info'
     }
 
-    def __init__(self, stacks=None):
+    def __init__(self, stacks=None, page_info=None):
         r"""ListStacksResponse
 
         The model defined in huaweicloud sdk
 
         :param stacks: 资源栈列表。默认按照生成时间降序排序，最新生成的在最前
         :type stacks: list[:class:`huaweicloudsdkaos.v1.Stack`]
+        :param page_info: 
+        :type page_info: :class:`huaweicloudsdkaos.v1.PageInfo`
         """
         
         super(ListStacksResponse, self).__init__()
 
         self._stacks = None
+        self._page_info = None
         self.discriminator = None
 
         if stacks is not None:
             self.stacks = stacks
+        if page_info is not None:
+            self.page_info = page_info
 
     @property
     def stacks(self):
@@ -63,6 +70,24 @@ class ListStacksResponse(SdkResponse):
         :type stacks: list[:class:`huaweicloudsdkaos.v1.Stack`]
         """
         self._stacks = stacks
+
+    @property
+    def page_info(self):
+        r"""Gets the page_info of this ListStacksResponse.
+
+        :return: The page_info of this ListStacksResponse.
+        :rtype: :class:`huaweicloudsdkaos.v1.PageInfo`
+        """
+        return self._page_info
+
+    @page_info.setter
+    def page_info(self, page_info):
+        r"""Sets the page_info of this ListStacksResponse.
+
+        :param page_info: The page_info of this ListStacksResponse.
+        :type page_info: :class:`huaweicloudsdkaos.v1.PageInfo`
+        """
+        self._page_info = page_info
 
     def to_dict(self):
         """Returns the model properties as a dict"""

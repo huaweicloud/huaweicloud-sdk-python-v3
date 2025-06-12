@@ -19,16 +19,18 @@ class ListFunctionsRequest:
     openapi_types = {
         'marker': 'str',
         'maxitems': 'str',
-        'package_name': 'str'
+        'package_name': 'str',
+        'func_name': 'str'
     }
 
     attribute_map = {
         'marker': 'marker',
         'maxitems': 'maxitems',
-        'package_name': 'package_name'
+        'package_name': 'package_name',
+        'func_name': 'func_name'
     }
 
-    def __init__(self, marker=None, maxitems=None, package_name=None):
+    def __init__(self, marker=None, maxitems=None, package_name=None, func_name=None):
         r"""ListFunctionsRequest
 
         The model defined in huaweicloud sdk
@@ -39,6 +41,8 @@ class ListFunctionsRequest:
         :type maxitems: str
         :param package_name: 自定义分组名称。
         :type package_name: str
+        :param func_name: 函数名称。支持模糊查询
+        :type func_name: str
         """
         
         
@@ -46,6 +50,7 @@ class ListFunctionsRequest:
         self._marker = None
         self._maxitems = None
         self._package_name = None
+        self._func_name = None
         self.discriminator = None
 
         if marker is not None:
@@ -54,6 +59,8 @@ class ListFunctionsRequest:
             self.maxitems = maxitems
         if package_name is not None:
             self.package_name = package_name
+        if func_name is not None:
+            self.func_name = func_name
 
     @property
     def marker(self):
@@ -120,6 +127,28 @@ class ListFunctionsRequest:
         :type package_name: str
         """
         self._package_name = package_name
+
+    @property
+    def func_name(self):
+        r"""Gets the func_name of this ListFunctionsRequest.
+
+        函数名称。支持模糊查询
+
+        :return: The func_name of this ListFunctionsRequest.
+        :rtype: str
+        """
+        return self._func_name
+
+    @func_name.setter
+    def func_name(self, func_name):
+        r"""Sets the func_name of this ListFunctionsRequest.
+
+        函数名称。支持模糊查询
+
+        :param func_name: The func_name of this ListFunctionsRequest.
+        :type func_name: str
+        """
+        self._func_name = func_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

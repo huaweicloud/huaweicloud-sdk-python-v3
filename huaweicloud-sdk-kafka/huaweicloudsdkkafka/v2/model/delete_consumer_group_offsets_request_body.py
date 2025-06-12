@@ -29,7 +29,7 @@ class DeleteConsumerGroupOffsetsRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param topics: topic列表
+        :param topics: Topic列表
         :type topics: list[str]
         """
         
@@ -45,7 +45,7 @@ class DeleteConsumerGroupOffsetsRequestBody:
     def topics(self):
         r"""Gets the topics of this DeleteConsumerGroupOffsetsRequestBody.
 
-        topic列表
+        Topic列表
 
         :return: The topics of this DeleteConsumerGroupOffsetsRequestBody.
         :rtype: list[str]
@@ -56,7 +56,7 @@ class DeleteConsumerGroupOffsetsRequestBody:
     def topics(self, topics):
         r"""Sets the topics of this DeleteConsumerGroupOffsetsRequestBody.
 
-        topic列表
+        Topic列表
 
         :param topics: The topics of this DeleteConsumerGroupOffsetsRequestBody.
         :type topics: list[str]

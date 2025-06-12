@@ -61,7 +61,7 @@ class CreateWorkspaceRequestBody:
         :type description: str
         :param project_name: 项目名称
         :type project_name: str
-        :param tags: 通过给账号下的资源添加标签，可以对资源进行自定义标记，实现资源的分类。可到标签管理服务使用可视化表格操作资源标签，并对标签进行批量编辑。
+        :param tags: 标签数组
         :type tags: list[:class:`huaweicloudsdksecmaster.v2.TagsPojo`]
         """
         
@@ -274,7 +274,7 @@ class CreateWorkspaceRequestBody:
     def tags(self):
         r"""Gets the tags of this CreateWorkspaceRequestBody.
 
-        通过给账号下的资源添加标签，可以对资源进行自定义标记，实现资源的分类。可到标签管理服务使用可视化表格操作资源标签，并对标签进行批量编辑。
+        标签数组
 
         :return: The tags of this CreateWorkspaceRequestBody.
         :rtype: list[:class:`huaweicloudsdksecmaster.v2.TagsPojo`]
@@ -285,7 +285,7 @@ class CreateWorkspaceRequestBody:
     def tags(self, tags):
         r"""Sets the tags of this CreateWorkspaceRequestBody.
 
-        通过给账号下的资源添加标签，可以对资源进行自定义标记，实现资源的分类。可到标签管理服务使用可视化表格操作资源标签，并对标签进行批量编辑。
+        标签数组
 
         :param tags: The tags of this CreateWorkspaceRequestBody.
         :type tags: list[:class:`huaweicloudsdksecmaster.v2.TagsPojo`]

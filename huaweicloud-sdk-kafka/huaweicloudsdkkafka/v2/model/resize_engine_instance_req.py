@@ -41,13 +41,13 @@ class ResizeEngineInstanceReq:
 
         The model defined in huaweicloud sdk
 
-        :param oper_type: 变更类型。  取值范围：   [- storage：存储空间扩容，代理数量不变。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,fcs,sbc,hcs)    - horizontal：代理数量扩容，每个broker的存储空间不变。    [- vertical：垂直扩容，broker的底层虚机规格变更，代理数量和存储空间不变。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,fcs,sbc,hcs)
+        :param oper_type: 变更类型。  取值范围：   [- storage：存储空间扩容，代理数量不变。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,fcs,sbc,hcs,cmcc)    - horizontal：代理数量扩容，每个broker的存储空间不变。    [- vertical：垂直扩容，broker的底层虚机规格变更，代理数量和存储空间不变。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,fcs,sbc,hcs)
         :type oper_type: str
-        :param new_storage_space: 扩容后的存储空间。  [当oper_type类型是storage或horizontal时，该参数有效且必填。  实例存储空间 &#x3D; 代理数量 * 每个broker的存储空间。  当oper_type类型是storage时，代理数量不变，每个broker存储空间最少扩容100GB。  当oper_type类型是horizontal时，每个broker的存储空间不变。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,fcs,sbc,hcs)  [实例存储空间 &#x3D; 代理数量 * 每个broker的存储空间。 每个broker的存储空间不变。](tag:hcs,fcs)
+        :param new_storage_space: 扩容后的存储空间。  [当oper_type类型是storage或horizontal时，该参数有效且必填。  实例存储空间 &#x3D; 代理数量 * 每个broker的存储空间。  当oper_type类型是storage时，代理数量不变，每个broker存储空间最少扩容100GB。  当oper_type类型是horizontal时，每个broker的存储空间不变。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,fcs,sbc,hcs,cmcc)  [实例存储空间 &#x3D; 代理数量 * 每个broker的存储空间。 每个broker的存储空间不变。](tag:hcs,fcs)
         :type new_storage_space: int
         :param new_broker_num: 当oper_type参数为horizontal时，该参数有效。  [取值范围：最多支持30个broker。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,sbc,hk_sbc,g42,hk_g42,tm,hk_tm)
         :type new_broker_num: int
-        :param new_product_id: 垂直扩容时的新产品ID。  当oper_type类型是vertical时，该参数才有效且必填。  [产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。](tag:hws,hws_hk,ocb,hws_ocb,dt,ctc,sbc,fcs,hcs,g42,hk_g42,tm,hk_tm,hws_eu)[产品ID可以从[查询产品规格列表](ListProducts.xml)获取。](tag:cmcc)
+        :param new_product_id: 垂直扩容时的新产品ID。  当oper_type类型是vertical时，该参数才有效且必填。  产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。
         :type new_product_id: str
         :param publicip_id: 实例绑定的弹性IP地址的ID。  以英文逗号隔开多个弹性IP地址的ID。  当oper_type类型是horizontal时，该参数必填。
         :type publicip_id: str
@@ -86,7 +86,7 @@ class ResizeEngineInstanceReq:
     def oper_type(self):
         r"""Gets the oper_type of this ResizeEngineInstanceReq.
 
-        变更类型。  取值范围：   [- storage：存储空间扩容，代理数量不变。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,fcs,sbc,hcs)    - horizontal：代理数量扩容，每个broker的存储空间不变。    [- vertical：垂直扩容，broker的底层虚机规格变更，代理数量和存储空间不变。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,fcs,sbc,hcs)
+        变更类型。  取值范围：   [- storage：存储空间扩容，代理数量不变。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,fcs,sbc,hcs,cmcc)    - horizontal：代理数量扩容，每个broker的存储空间不变。    [- vertical：垂直扩容，broker的底层虚机规格变更，代理数量和存储空间不变。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,fcs,sbc,hcs)
 
         :return: The oper_type of this ResizeEngineInstanceReq.
         :rtype: str
@@ -97,7 +97,7 @@ class ResizeEngineInstanceReq:
     def oper_type(self, oper_type):
         r"""Sets the oper_type of this ResizeEngineInstanceReq.
 
-        变更类型。  取值范围：   [- storage：存储空间扩容，代理数量不变。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,fcs,sbc,hcs)    - horizontal：代理数量扩容，每个broker的存储空间不变。    [- vertical：垂直扩容，broker的底层虚机规格变更，代理数量和存储空间不变。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,fcs,sbc,hcs)
+        变更类型。  取值范围：   [- storage：存储空间扩容，代理数量不变。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,fcs,sbc,hcs,cmcc)    - horizontal：代理数量扩容，每个broker的存储空间不变。    [- vertical：垂直扩容，broker的底层虚机规格变更，代理数量和存储空间不变。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,fcs,sbc,hcs)
 
         :param oper_type: The oper_type of this ResizeEngineInstanceReq.
         :type oper_type: str
@@ -108,7 +108,7 @@ class ResizeEngineInstanceReq:
     def new_storage_space(self):
         r"""Gets the new_storage_space of this ResizeEngineInstanceReq.
 
-        扩容后的存储空间。  [当oper_type类型是storage或horizontal时，该参数有效且必填。  实例存储空间 = 代理数量 * 每个broker的存储空间。  当oper_type类型是storage时，代理数量不变，每个broker存储空间最少扩容100GB。  当oper_type类型是horizontal时，每个broker的存储空间不变。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,fcs,sbc,hcs)  [实例存储空间 = 代理数量 * 每个broker的存储空间。 每个broker的存储空间不变。](tag:hcs,fcs)
+        扩容后的存储空间。  [当oper_type类型是storage或horizontal时，该参数有效且必填。  实例存储空间 = 代理数量 * 每个broker的存储空间。  当oper_type类型是storage时，代理数量不变，每个broker存储空间最少扩容100GB。  当oper_type类型是horizontal时，每个broker的存储空间不变。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,fcs,sbc,hcs,cmcc)  [实例存储空间 = 代理数量 * 每个broker的存储空间。 每个broker的存储空间不变。](tag:hcs,fcs)
 
         :return: The new_storage_space of this ResizeEngineInstanceReq.
         :rtype: int
@@ -119,7 +119,7 @@ class ResizeEngineInstanceReq:
     def new_storage_space(self, new_storage_space):
         r"""Sets the new_storage_space of this ResizeEngineInstanceReq.
 
-        扩容后的存储空间。  [当oper_type类型是storage或horizontal时，该参数有效且必填。  实例存储空间 = 代理数量 * 每个broker的存储空间。  当oper_type类型是storage时，代理数量不变，每个broker存储空间最少扩容100GB。  当oper_type类型是horizontal时，每个broker的存储空间不变。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,fcs,sbc,hcs)  [实例存储空间 = 代理数量 * 每个broker的存储空间。 每个broker的存储空间不变。](tag:hcs,fcs)
+        扩容后的存储空间。  [当oper_type类型是storage或horizontal时，该参数有效且必填。  实例存储空间 = 代理数量 * 每个broker的存储空间。  当oper_type类型是storage时，代理数量不变，每个broker存储空间最少扩容100GB。  当oper_type类型是horizontal时，每个broker的存储空间不变。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,fcs,sbc,hcs,cmcc)  [实例存储空间 = 代理数量 * 每个broker的存储空间。 每个broker的存储空间不变。](tag:hcs,fcs)
 
         :param new_storage_space: The new_storage_space of this ResizeEngineInstanceReq.
         :type new_storage_space: int
@@ -152,7 +152,7 @@ class ResizeEngineInstanceReq:
     def new_product_id(self):
         r"""Gets the new_product_id of this ResizeEngineInstanceReq.
 
-        垂直扩容时的新产品ID。  当oper_type类型是vertical时，该参数才有效且必填。  [产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。](tag:hws,hws_hk,ocb,hws_ocb,dt,ctc,sbc,fcs,hcs,g42,hk_g42,tm,hk_tm,hws_eu)[产品ID可以从[查询产品规格列表](ListProducts.xml)获取。](tag:cmcc)
+        垂直扩容时的新产品ID。  当oper_type类型是vertical时，该参数才有效且必填。  产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。
 
         :return: The new_product_id of this ResizeEngineInstanceReq.
         :rtype: str
@@ -163,7 +163,7 @@ class ResizeEngineInstanceReq:
     def new_product_id(self, new_product_id):
         r"""Sets the new_product_id of this ResizeEngineInstanceReq.
 
-        垂直扩容时的新产品ID。  当oper_type类型是vertical时，该参数才有效且必填。  [产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。](tag:hws,hws_hk,ocb,hws_ocb,dt,ctc,sbc,fcs,hcs,g42,hk_g42,tm,hk_tm,hws_eu)[产品ID可以从[查询产品规格列表](ListProducts.xml)获取。](tag:cmcc)
+        垂直扩容时的新产品ID。  当oper_type类型是vertical时，该参数才有效且必填。  产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。
 
         :param new_product_id: The new_product_id of this ResizeEngineInstanceReq.
         :type new_product_id: str

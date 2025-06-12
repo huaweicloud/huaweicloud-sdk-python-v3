@@ -49,7 +49,7 @@ class MessagesEntity:
 
         The model defined in huaweicloud sdk
 
-        :param topic: topic名称。
+        :param topic: Topic名称。
         :type topic: str
         :param partition: 消息所在的分区。
         :type partition: int
@@ -115,7 +115,7 @@ class MessagesEntity:
     def topic(self):
         r"""Gets the topic of this MessagesEntity.
 
-        topic名称。
+        Topic名称。
 
         :return: The topic of this MessagesEntity.
         :rtype: str
@@ -126,7 +126,7 @@ class MessagesEntity:
     def topic(self, topic):
         r"""Sets the topic of this MessagesEntity.
 
-        topic名称。
+        Topic名称。
 
         :param topic: The topic of this MessagesEntity.
         :type topic: str

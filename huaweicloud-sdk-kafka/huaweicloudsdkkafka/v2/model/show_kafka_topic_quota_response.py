@@ -18,51 +18,80 @@ class ShowKafkaTopicQuotaResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'partitions': 'list[KafkaTopicQuota]'
+        'quotas': 'list[KafkaTopicQuota]',
+        'count': 'int'
     }
 
     attribute_map = {
-        'partitions': 'partitions'
+        'quotas': 'quotas',
+        'count': 'count'
     }
 
-    def __init__(self, partitions=None):
+    def __init__(self, quotas=None, count=None):
         r"""ShowKafkaTopicQuotaResponse
 
         The model defined in huaweicloud sdk
 
-        :param partitions: topic流控配置
-        :type partitions: list[:class:`huaweicloudsdkkafka.v2.KafkaTopicQuota`]
+        :param quotas: Topic流控配置
+        :type quotas: list[:class:`huaweicloudsdkkafka.v2.KafkaTopicQuota`]
+        :param count: Topic流控数量
+        :type count: int
         """
         
         super(ShowKafkaTopicQuotaResponse, self).__init__()
 
-        self._partitions = None
+        self._quotas = None
+        self._count = None
         self.discriminator = None
 
-        if partitions is not None:
-            self.partitions = partitions
+        if quotas is not None:
+            self.quotas = quotas
+        if count is not None:
+            self.count = count
 
     @property
-    def partitions(self):
-        r"""Gets the partitions of this ShowKafkaTopicQuotaResponse.
+    def quotas(self):
+        r"""Gets the quotas of this ShowKafkaTopicQuotaResponse.
 
-        topic流控配置
+        Topic流控配置
 
-        :return: The partitions of this ShowKafkaTopicQuotaResponse.
+        :return: The quotas of this ShowKafkaTopicQuotaResponse.
         :rtype: list[:class:`huaweicloudsdkkafka.v2.KafkaTopicQuota`]
         """
-        return self._partitions
+        return self._quotas
 
-    @partitions.setter
-    def partitions(self, partitions):
-        r"""Sets the partitions of this ShowKafkaTopicQuotaResponse.
+    @quotas.setter
+    def quotas(self, quotas):
+        r"""Sets the quotas of this ShowKafkaTopicQuotaResponse.
 
-        topic流控配置
+        Topic流控配置
 
-        :param partitions: The partitions of this ShowKafkaTopicQuotaResponse.
-        :type partitions: list[:class:`huaweicloudsdkkafka.v2.KafkaTopicQuota`]
+        :param quotas: The quotas of this ShowKafkaTopicQuotaResponse.
+        :type quotas: list[:class:`huaweicloudsdkkafka.v2.KafkaTopicQuota`]
         """
-        self._partitions = partitions
+        self._quotas = quotas
+
+    @property
+    def count(self):
+        r"""Gets the count of this ShowKafkaTopicQuotaResponse.
+
+        Topic流控数量
+
+        :return: The count of this ShowKafkaTopicQuotaResponse.
+        :rtype: int
+        """
+        return self._count
+
+    @count.setter
+    def count(self, count):
+        r"""Sets the count of this ShowKafkaTopicQuotaResponse.
+
+        Topic流控数量
+
+        :param count: The count of this ShowKafkaTopicQuotaResponse.
+        :type count: int
+        """
+        self._count = count
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -25,7 +25,8 @@ class DbObjectSpaceInfo:
         'index_size': 'int',
         'free_size': 'int',
         'free_rate': 'float',
-        'estimated_rows': 'int'
+        'estimated_rows': 'int',
+        'db_name': 'str'
     }
 
     attribute_map = {
@@ -37,10 +38,11 @@ class DbObjectSpaceInfo:
         'index_size': 'index_size',
         'free_size': 'free_size',
         'free_rate': 'free_rate',
-        'estimated_rows': 'estimated_rows'
+        'estimated_rows': 'estimated_rows',
+        'db_name': 'db_name'
     }
 
-    def __init__(self, object_type=None, object_name=None, object_id=None, used_size=None, data_size=None, index_size=None, free_size=None, free_rate=None, estimated_rows=None):
+    def __init__(self, object_type=None, object_name=None, object_id=None, used_size=None, data_size=None, index_size=None, free_size=None, free_rate=None, estimated_rows=None, db_name=None):
         r"""DbObjectSpaceInfo
 
         The model defined in huaweicloud sdk
@@ -63,6 +65,8 @@ class DbObjectSpaceInfo:
         :type free_rate: float
         :param estimated_rows: 估算值行数，以字节为单位
         :type estimated_rows: int
+        :param db_name: 数据库名称
+        :type db_name: str
         """
         
         
@@ -76,6 +80,7 @@ class DbObjectSpaceInfo:
         self._free_size = None
         self._free_rate = None
         self._estimated_rows = None
+        self._db_name = None
         self.discriminator = None
 
         self.object_type = object_type
@@ -94,6 +99,8 @@ class DbObjectSpaceInfo:
             self.free_rate = free_rate
         if estimated_rows is not None:
             self.estimated_rows = estimated_rows
+        if db_name is not None:
+            self.db_name = db_name
 
     @property
     def object_type(self):
@@ -292,6 +299,28 @@ class DbObjectSpaceInfo:
         :type estimated_rows: int
         """
         self._estimated_rows = estimated_rows
+
+    @property
+    def db_name(self):
+        r"""Gets the db_name of this DbObjectSpaceInfo.
+
+        数据库名称
+
+        :return: The db_name of this DbObjectSpaceInfo.
+        :rtype: str
+        """
+        return self._db_name
+
+    @db_name.setter
+    def db_name(self, db_name):
+        r"""Sets the db_name of this DbObjectSpaceInfo.
+
+        数据库名称
+
+        :param db_name: The db_name of this DbObjectSpaceInfo.
+        :type db_name: str
+        """
+        self._db_name = db_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

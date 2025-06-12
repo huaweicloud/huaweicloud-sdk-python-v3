@@ -35,7 +35,7 @@ class ResetMessageOffsetReq:
 
         The model defined in huaweicloud sdk
 
-        :param topic: topic名称。
+        :param topic: Topic名称。
         :type topic: str
         :param partition: 分区编号，默认值为-1，若传入值为-1，则重置所有分区。
         :type partition: int
@@ -65,7 +65,7 @@ class ResetMessageOffsetReq:
     def topic(self):
         r"""Gets the topic of this ResetMessageOffsetReq.
 
-        topic名称。
+        Topic名称。
 
         :return: The topic of this ResetMessageOffsetReq.
         :rtype: str
@@ -76,7 +76,7 @@ class ResetMessageOffsetReq:
     def topic(self, topic):
         r"""Sets the topic of this ResetMessageOffsetReq.
 
-        topic名称。
+        Topic名称。
 
         :param topic: The topic of this ResetMessageOffsetReq.
         :type topic: str

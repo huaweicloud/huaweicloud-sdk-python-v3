@@ -39,7 +39,7 @@ class AlertDestGeo:
         :type latitude: float
         :param longitude: 经度
         :type longitude: float
-        :param city_code: 城市编码，Beijing | Shanghai
+        :param city_code: 城市编码
         :type city_code: str
         :param country_code: 国家简码，参考ISO 3166-1 alpha-2，例如：CN | US | DE | IT | SG
         :type country_code: str
@@ -110,7 +110,7 @@ class AlertDestGeo:
     def city_code(self):
         r"""Gets the city_code of this AlertDestGeo.
 
-        城市编码，Beijing | Shanghai
+        城市编码
 
         :return: The city_code of this AlertDestGeo.
         :rtype: str
@@ -121,7 +121,7 @@ class AlertDestGeo:
     def city_code(self, city_code):
         r"""Sets the city_code of this AlertDestGeo.
 
-        城市编码，Beijing | Shanghai
+        城市编码
 
         :param city_code: The city_code of this AlertDestGeo.
         :type city_code: str

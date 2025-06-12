@@ -43,11 +43,11 @@ class AutoIdDocClassificationAlarmResult:
 
         :param detect_blur_result: 证件图像模糊告警结果。 - true：表示证件图片较模糊。 - false：表示证件清晰。  
         :type detect_blur_result: bool
-        :param detect_glare_result: 证件图像反光告警结果。 - true：表示证件图片较模糊。 - false：表示证件清晰。 
+        :param detect_glare_result: 证件图像反光告警结果。 - true：表示证件图片存在反光。 - false：表示证件图片不存在反光。 
         :type detect_glare_result: bool
-        :param detect_blocking_within_border_result: 证件图像框内遮挡告警结果。 - true：表示证件图片较模糊。 - false：表示证件清晰。 
+        :param detect_blocking_within_border_result: 证件图像框内遮挡告警结果。 - true：表示证件图片存在框内遮挡。 - false：表示证件图片不存在框内遮挡。 
         :type detect_blocking_within_border_result: bool
-        :param detect_insufficient_lighting_result: 证件图像过暗告警结果。 - true：表示证件图片较模糊。 - false：表示证件清晰。 
+        :param detect_insufficient_lighting_result: 证件图像过暗告警结果。 - true：表示证件图片过暗。 - false：表示证件图片光线正常。 
         :type detect_insufficient_lighting_result: bool
         :param detect_copy_result: 证件图像是否黑白复印件告警结果。 - true：表示证件是复印件。 - false：表示证件是原件。  
         :type detect_copy_result: bool
@@ -109,7 +109,7 @@ class AutoIdDocClassificationAlarmResult:
     def detect_glare_result(self):
         r"""Gets the detect_glare_result of this AutoIdDocClassificationAlarmResult.
 
-        证件图像反光告警结果。 - true：表示证件图片较模糊。 - false：表示证件清晰。 
+        证件图像反光告警结果。 - true：表示证件图片存在反光。 - false：表示证件图片不存在反光。 
 
         :return: The detect_glare_result of this AutoIdDocClassificationAlarmResult.
         :rtype: bool
@@ -120,7 +120,7 @@ class AutoIdDocClassificationAlarmResult:
     def detect_glare_result(self, detect_glare_result):
         r"""Sets the detect_glare_result of this AutoIdDocClassificationAlarmResult.
 
-        证件图像反光告警结果。 - true：表示证件图片较模糊。 - false：表示证件清晰。 
+        证件图像反光告警结果。 - true：表示证件图片存在反光。 - false：表示证件图片不存在反光。 
 
         :param detect_glare_result: The detect_glare_result of this AutoIdDocClassificationAlarmResult.
         :type detect_glare_result: bool
@@ -131,7 +131,7 @@ class AutoIdDocClassificationAlarmResult:
     def detect_blocking_within_border_result(self):
         r"""Gets the detect_blocking_within_border_result of this AutoIdDocClassificationAlarmResult.
 
-        证件图像框内遮挡告警结果。 - true：表示证件图片较模糊。 - false：表示证件清晰。 
+        证件图像框内遮挡告警结果。 - true：表示证件图片存在框内遮挡。 - false：表示证件图片不存在框内遮挡。 
 
         :return: The detect_blocking_within_border_result of this AutoIdDocClassificationAlarmResult.
         :rtype: bool
@@ -142,7 +142,7 @@ class AutoIdDocClassificationAlarmResult:
     def detect_blocking_within_border_result(self, detect_blocking_within_border_result):
         r"""Sets the detect_blocking_within_border_result of this AutoIdDocClassificationAlarmResult.
 
-        证件图像框内遮挡告警结果。 - true：表示证件图片较模糊。 - false：表示证件清晰。 
+        证件图像框内遮挡告警结果。 - true：表示证件图片存在框内遮挡。 - false：表示证件图片不存在框内遮挡。 
 
         :param detect_blocking_within_border_result: The detect_blocking_within_border_result of this AutoIdDocClassificationAlarmResult.
         :type detect_blocking_within_border_result: bool
@@ -153,7 +153,7 @@ class AutoIdDocClassificationAlarmResult:
     def detect_insufficient_lighting_result(self):
         r"""Gets the detect_insufficient_lighting_result of this AutoIdDocClassificationAlarmResult.
 
-        证件图像过暗告警结果。 - true：表示证件图片较模糊。 - false：表示证件清晰。 
+        证件图像过暗告警结果。 - true：表示证件图片过暗。 - false：表示证件图片光线正常。 
 
         :return: The detect_insufficient_lighting_result of this AutoIdDocClassificationAlarmResult.
         :rtype: bool
@@ -164,7 +164,7 @@ class AutoIdDocClassificationAlarmResult:
     def detect_insufficient_lighting_result(self, detect_insufficient_lighting_result):
         r"""Sets the detect_insufficient_lighting_result of this AutoIdDocClassificationAlarmResult.
 
-        证件图像过暗告警结果。 - true：表示证件图片较模糊。 - false：表示证件清晰。 
+        证件图像过暗告警结果。 - true：表示证件图片过暗。 - false：表示证件图片光线正常。 
 
         :param detect_insufficient_lighting_result: The detect_insufficient_lighting_result of this AutoIdDocClassificationAlarmResult.
         :type detect_insufficient_lighting_result: bool

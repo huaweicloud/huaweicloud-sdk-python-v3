@@ -17,34 +17,42 @@ class CreateServerRequestServerCertificate:
     sensitive_list = []
 
     openapi_types = {
-        'id': 'str'
+        'id': 'str',
+        'source': 'str'
     }
 
     attribute_map = {
-        'id': 'id'
+        'id': 'id',
+        'source': 'source'
     }
 
-    def __init__(self, id=None):
+    def __init__(self, id=None, source=None):
         r"""CreateServerRequestServerCertificate
 
         The model defined in huaweicloud sdk
 
-        :param id: 服务端证书ID,为CCM服务中的证书ID
+        :param id: 服务端证书ID,为CCM服务中的证书ID。服务端证书类型为CCM时，必填
         :type id: str
+        :param source: 证书来源
+        :type source: str
         """
         
         
 
         self._id = None
+        self._source = None
         self.discriminator = None
 
-        self.id = id
+        if id is not None:
+            self.id = id
+        if source is not None:
+            self.source = source
 
     @property
     def id(self):
         r"""Gets the id of this CreateServerRequestServerCertificate.
 
-        服务端证书ID,为CCM服务中的证书ID
+        服务端证书ID,为CCM服务中的证书ID。服务端证书类型为CCM时，必填
 
         :return: The id of this CreateServerRequestServerCertificate.
         :rtype: str
@@ -55,12 +63,34 @@ class CreateServerRequestServerCertificate:
     def id(self, id):
         r"""Sets the id of this CreateServerRequestServerCertificate.
 
-        服务端证书ID,为CCM服务中的证书ID
+        服务端证书ID,为CCM服务中的证书ID。服务端证书类型为CCM时，必填
 
         :param id: The id of this CreateServerRequestServerCertificate.
         :type id: str
         """
         self._id = id
+
+    @property
+    def source(self):
+        r"""Gets the source of this CreateServerRequestServerCertificate.
+
+        证书来源
+
+        :return: The source of this CreateServerRequestServerCertificate.
+        :rtype: str
+        """
+        return self._source
+
+    @source.setter
+    def source(self, source):
+        r"""Sets the source of this CreateServerRequestServerCertificate.
+
+        证书来源
+
+        :param source: The source of this CreateServerRequestServerCertificate.
+        :type source: str
+        """
+        self._source = source
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -53,7 +53,7 @@ class DiskusageEntity:
         :type data_disk_use_percentage: str
         :param status: 消息标签。
         :type status: str
-        :param topic_list: topic磁盘容量使用列表。
+        :param topic_list: Topic磁盘容量使用列表。
         :type topic_list: list[:class:`huaweicloudsdkkafka.v2.DiskusageTopicEntity`]
         """
         
@@ -219,7 +219,7 @@ class DiskusageEntity:
     def topic_list(self):
         r"""Gets the topic_list of this DiskusageEntity.
 
-        topic磁盘容量使用列表。
+        Topic磁盘容量使用列表。
 
         :return: The topic_list of this DiskusageEntity.
         :rtype: list[:class:`huaweicloudsdkkafka.v2.DiskusageTopicEntity`]
@@ -230,7 +230,7 @@ class DiskusageEntity:
     def topic_list(self, topic_list):
         r"""Sets the topic_list of this DiskusageEntity.
 
-        topic磁盘容量使用列表。
+        Topic磁盘容量使用列表。
 
         :param topic_list: The topic_list of this DiskusageEntity.
         :type topic_list: list[:class:`huaweicloudsdkkafka.v2.DiskusageTopicEntity`]

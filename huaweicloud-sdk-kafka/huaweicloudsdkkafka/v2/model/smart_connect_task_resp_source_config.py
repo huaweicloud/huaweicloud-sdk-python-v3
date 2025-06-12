@@ -89,7 +89,7 @@ class SmartConnectTaskRespSourceConfig:
         :type consumer_strategy: str
         :param compression_type: 压缩算法。（仅源端类型为Kafka时会显示）
         :type compression_type: str
-        :param topics_mapping: topic映射。（仅源端类型为Kafka时会显示）
+        :param topics_mapping: Topic映射。（仅源端类型为Kafka时会显示）
         :type topics_mapping: str
         """
         
@@ -480,7 +480,7 @@ class SmartConnectTaskRespSourceConfig:
     def topics_mapping(self):
         r"""Gets the topics_mapping of this SmartConnectTaskRespSourceConfig.
 
-        topic映射。（仅源端类型为Kafka时会显示）
+        Topic映射。（仅源端类型为Kafka时会显示）
 
         :return: The topics_mapping of this SmartConnectTaskRespSourceConfig.
         :rtype: str
@@ -491,7 +491,7 @@ class SmartConnectTaskRespSourceConfig:
     def topics_mapping(self, topics_mapping):
         r"""Sets the topics_mapping of this SmartConnectTaskRespSourceConfig.
 
-        topic映射。（仅源端类型为Kafka时会显示）
+        Topic映射。（仅源端类型为Kafka时会显示）
 
         :param topics_mapping: The topics_mapping of this SmartConnectTaskRespSourceConfig.
         :type topics_mapping: str

@@ -34,7 +34,7 @@ class ShowEngineInstanceExtendProductInfoResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param engine: 消息引擎类型:kafka。
+        :param engine: 消息引擎类型：kafka。
         :type engine: str
         :param versions: 消息引擎支持的版本。
         :type versions: list[str]
@@ -60,7 +60,7 @@ class ShowEngineInstanceExtendProductInfoResponse(SdkResponse):
     def engine(self):
         r"""Gets the engine of this ShowEngineInstanceExtendProductInfoResponse.
 
-        消息引擎类型:kafka。
+        消息引擎类型：kafka。
 
         :return: The engine of this ShowEngineInstanceExtendProductInfoResponse.
         :rtype: str
@@ -71,7 +71,7 @@ class ShowEngineInstanceExtendProductInfoResponse(SdkResponse):
     def engine(self, engine):
         r"""Sets the engine of this ShowEngineInstanceExtendProductInfoResponse.
 
-        消息引擎类型:kafka。
+        消息引擎类型：kafka。
 
         :param engine: The engine of this ShowEngineInstanceExtendProductInfoResponse.
         :type engine: str

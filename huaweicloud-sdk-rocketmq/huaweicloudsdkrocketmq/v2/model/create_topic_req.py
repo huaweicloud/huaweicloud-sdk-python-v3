@@ -43,7 +43,7 @@ class CreateTopicReq:
         :type name: str
         :param brokers: 关联的代理（仅RocketMQ实例4.8.0版本需要填写此参数）。
         :type brokers: list[str]
-        :param queue_num: 队列数，范围1~50。
+        :param queue_num: 总队列数，范围1~50。
         :type queue_num: float
         :param queues: 队列（仅RocketMQ实例4.8.0版本需要填写此参数）。
         :type queues: list[:class:`huaweicloudsdkrocketmq.v2.CreateTopicReqQueues`]
@@ -124,7 +124,7 @@ class CreateTopicReq:
     def queue_num(self):
         r"""Gets the queue_num of this CreateTopicReq.
 
-        队列数，范围1~50。
+        总队列数，范围1~50。
 
         :return: The queue_num of this CreateTopicReq.
         :rtype: float
@@ -135,7 +135,7 @@ class CreateTopicReq:
     def queue_num(self, queue_num):
         r"""Sets the queue_num of this CreateTopicReq.
 
-        队列数，范围1~50。
+        总队列数，范围1~50。
 
         :param queue_num: The queue_num of this CreateTopicReq.
         :type queue_num: float

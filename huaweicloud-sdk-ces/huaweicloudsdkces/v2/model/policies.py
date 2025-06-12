@@ -51,7 +51,7 @@ class Policies:
 
         The model defined in huaweicloud sdk
 
-        :param namespace: 查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”
+        :param namespace: 服务的命名空间，查询各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”
         :type namespace: str
         :param dimension_name: 资源维度，必须以字母开头，多维度用\&quot;,\&quot;分割，只能包含0-9/a-z/A-Z/_/-，每个维度的最大长度为32, 事件告警模板DimensionName为空
         :type dimension_name: str
@@ -115,7 +115,7 @@ class Policies:
     def namespace(self):
         r"""Gets the namespace of this Policies.
 
-        查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”
+        服务的命名空间，查询各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”
 
         :return: The namespace of this Policies.
         :rtype: str
@@ -126,7 +126,7 @@ class Policies:
     def namespace(self, namespace):
         r"""Sets the namespace of this Policies.
 
-        查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”
+        服务的命名空间，查询各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”
 
         :param namespace: The namespace of this Policies.
         :type namespace: str

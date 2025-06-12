@@ -33,7 +33,7 @@ class KafkaTopicQuota:
 
         The model defined in huaweicloud sdk
 
-        :param topic: topic名称
+        :param topic: Topic名称
         :type topic: str
         :param producer_byte_rate: 生产者速率
         :type producer_byte_rate: int
@@ -59,7 +59,7 @@ class KafkaTopicQuota:
     def topic(self):
         r"""Gets the topic of this KafkaTopicQuota.
 
-        topic名称
+        Topic名称
 
         :return: The topic of this KafkaTopicQuota.
         :rtype: str
@@ -70,7 +70,7 @@ class KafkaTopicQuota:
     def topic(self, topic):
         r"""Sets the topic of this KafkaTopicQuota.
 
-        topic名称
+        Topic名称
 
         :param topic: The topic of this KafkaTopicQuota.
         :type topic: str

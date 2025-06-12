@@ -41,7 +41,7 @@ class ShowGroupsRespGroupGroupMessageOffsets:
         :type partition: int
         :param lag: 剩余可消费消息数，即消息堆积数。
         :type lag: int
-        :param topic: topic名称。
+        :param topic: Topic名称。
         :type topic: str
         :param message_current_offset: 当前消费进度。
         :type message_current_offset: int
@@ -117,7 +117,7 @@ class ShowGroupsRespGroupGroupMessageOffsets:
     def topic(self):
         r"""Gets the topic of this ShowGroupsRespGroupGroupMessageOffsets.
 
-        topic名称。
+        Topic名称。
 
         :return: The topic of this ShowGroupsRespGroupGroupMessageOffsets.
         :rtype: str
@@ -128,7 +128,7 @@ class ShowGroupsRespGroupGroupMessageOffsets:
     def topic(self, topic):
         r"""Sets the topic of this ShowGroupsRespGroupGroupMessageOffsets.
 
-        topic名称。
+        Topic名称。
 
         :param topic: The topic of this ShowGroupsRespGroupGroupMessageOffsets.
         :type topic: str

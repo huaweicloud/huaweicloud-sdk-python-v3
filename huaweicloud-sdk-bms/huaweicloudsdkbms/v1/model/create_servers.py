@@ -34,7 +34,8 @@ class CreateServers:
         'data_volumes': 'list[DataVolumes]',
         'extendparam': 'ExtendParam',
         'scheduler_hints': 'CreateSchedulerHints',
-        'server_tags': 'list[SystemTags]'
+        'server_tags': 'list[SystemTags]',
+        'metadata_options': 'UpdateBaremetalServerMetadataOptionsRequestBody'
     }
 
     attribute_map = {
@@ -55,10 +56,11 @@ class CreateServers:
         'data_volumes': 'data_volumes',
         'extendparam': 'extendparam',
         'scheduler_hints': 'schedulerHints',
-        'server_tags': 'server_tags'
+        'server_tags': 'server_tags',
+        'metadata_options': 'metadata_options'
     }
 
-    def __init__(self, image_ref=None, flavor_ref=None, name=None, metadata=None, user_data=None, admin_pass=None, key_name=None, security_groups=None, nics=None, availability_zone=None, vpcid=None, publicip=None, count=None, root_volume=None, data_volumes=None, extendparam=None, scheduler_hints=None, server_tags=None):
+    def __init__(self, image_ref=None, flavor_ref=None, name=None, metadata=None, user_data=None, admin_pass=None, key_name=None, security_groups=None, nics=None, availability_zone=None, vpcid=None, publicip=None, count=None, root_volume=None, data_volumes=None, extendparam=None, scheduler_hints=None, server_tags=None, metadata_options=None):
         r"""CreateServers
 
         The model defined in huaweicloud sdk
@@ -99,6 +101,8 @@ class CreateServers:
         :type scheduler_hints: :class:`huaweicloudsdkbms.v1.CreateSchedulerHints`
         :param server_tags: 裸金属服务器的标签。详情请参见表 server_tags字段数据结构说明。 说明：创建裸金属服务器时，一台裸金属服务器最多可以添加10个标签。其中，__type_baremetal为系统内部标签，因此实际能添加的标签为9个。
         :type server_tags: list[:class:`huaweicloudsdkbms.v1.SystemTags`]
+        :param metadata_options: 
+        :type metadata_options: :class:`huaweicloudsdkbms.v1.UpdateBaremetalServerMetadataOptionsRequestBody`
         """
         
         
@@ -121,6 +125,7 @@ class CreateServers:
         self._extendparam = None
         self._scheduler_hints = None
         self._server_tags = None
+        self._metadata_options = None
         self.discriminator = None
 
         self.image_ref = image_ref
@@ -151,6 +156,8 @@ class CreateServers:
             self.scheduler_hints = scheduler_hints
         if server_tags is not None:
             self.server_tags = server_tags
+        if metadata_options is not None:
+            self.metadata_options = metadata_options
 
     @property
     def image_ref(self):
@@ -527,6 +534,24 @@ class CreateServers:
         :type server_tags: list[:class:`huaweicloudsdkbms.v1.SystemTags`]
         """
         self._server_tags = server_tags
+
+    @property
+    def metadata_options(self):
+        r"""Gets the metadata_options of this CreateServers.
+
+        :return: The metadata_options of this CreateServers.
+        :rtype: :class:`huaweicloudsdkbms.v1.UpdateBaremetalServerMetadataOptionsRequestBody`
+        """
+        return self._metadata_options
+
+    @metadata_options.setter
+    def metadata_options(self, metadata_options):
+        r"""Sets the metadata_options of this CreateServers.
+
+        :param metadata_options: The metadata_options of this CreateServers.
+        :type metadata_options: :class:`huaweicloudsdkbms.v1.UpdateBaremetalServerMetadataOptionsRequestBody`
+        """
+        self._metadata_options = metadata_options
 
     def to_dict(self):
         """Returns the model properties as a dict"""

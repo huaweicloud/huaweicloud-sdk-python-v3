@@ -18,29 +18,36 @@ class ListStackSetOperationsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'stack_set_operations': 'list[StackSetOperation]'
+        'stack_set_operations': 'list[StackSetOperation]',
+        'page_info': 'PageInfo'
     }
 
     attribute_map = {
-        'stack_set_operations': 'stack_set_operations'
+        'stack_set_operations': 'stack_set_operations',
+        'page_info': 'page_info'
     }
 
-    def __init__(self, stack_set_operations=None):
+    def __init__(self, stack_set_operations=None, page_info=None):
         r"""ListStackSetOperationsResponse
 
         The model defined in huaweicloud sdk
 
         :param stack_set_operations: 资源栈集操作列表
         :type stack_set_operations: list[:class:`huaweicloudsdkaos.v1.StackSetOperation`]
+        :param page_info: 
+        :type page_info: :class:`huaweicloudsdkaos.v1.PageInfo`
         """
         
         super(ListStackSetOperationsResponse, self).__init__()
 
         self._stack_set_operations = None
+        self._page_info = None
         self.discriminator = None
 
         if stack_set_operations is not None:
             self.stack_set_operations = stack_set_operations
+        if page_info is not None:
+            self.page_info = page_info
 
     @property
     def stack_set_operations(self):
@@ -63,6 +70,24 @@ class ListStackSetOperationsResponse(SdkResponse):
         :type stack_set_operations: list[:class:`huaweicloudsdkaos.v1.StackSetOperation`]
         """
         self._stack_set_operations = stack_set_operations
+
+    @property
+    def page_info(self):
+        r"""Gets the page_info of this ListStackSetOperationsResponse.
+
+        :return: The page_info of this ListStackSetOperationsResponse.
+        :rtype: :class:`huaweicloudsdkaos.v1.PageInfo`
+        """
+        return self._page_info
+
+    @page_info.setter
+    def page_info(self, page_info):
+        r"""Sets the page_info of this ListStackSetOperationsResponse.
+
+        :param page_info: The page_info of this ListStackSetOperationsResponse.
+        :type page_info: :class:`huaweicloudsdkaos.v1.PageInfo`
+        """
+        self._page_info = page_info
 
     def to_dict(self):
         """Returns the model properties as a dict"""

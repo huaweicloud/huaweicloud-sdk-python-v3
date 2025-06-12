@@ -51,7 +51,7 @@ class KafkaMessageDiagnosisReportInfoEntity:
         :type end_time: str
         :param group_name: 该次诊断任务诊断的消费组名称
         :type group_name: str
-        :param topic_name: 该次诊断任务诊断的topic名称
+        :param topic_name: 该次诊断任务诊断的Topic名称
         :type topic_name: str
         :param accumulated_partitions: 该次诊断任务发现的存在消息堆积的分区数
         :type accumulated_partitions: int
@@ -191,7 +191,7 @@ class KafkaMessageDiagnosisReportInfoEntity:
     def topic_name(self):
         r"""Gets the topic_name of this KafkaMessageDiagnosisReportInfoEntity.
 
-        该次诊断任务诊断的topic名称
+        该次诊断任务诊断的Topic名称
 
         :return: The topic_name of this KafkaMessageDiagnosisReportInfoEntity.
         :rtype: str
@@ -202,7 +202,7 @@ class KafkaMessageDiagnosisReportInfoEntity:
     def topic_name(self, topic_name):
         r"""Sets the topic_name of this KafkaMessageDiagnosisReportInfoEntity.
 
-        该次诊断任务诊断的topic名称
+        该次诊断任务诊断的Topic名称
 
         :param topic_name: The topic_name of this KafkaMessageDiagnosisReportInfoEntity.
         :type topic_name: str

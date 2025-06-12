@@ -63,6 +63,7 @@ class ServerDetail:
         'enterprise_project_id': 'str',
         'sys_tags': 'list[ServerSystemTag]',
         'cpu_options': 'CpuOptions',
+        'security_options': 'SecurityOptions',
         'hypervisor': 'Hypervisor'
     }
 
@@ -113,10 +114,11 @@ class ServerDetail:
         'enterprise_project_id': 'enterprise_project_id',
         'sys_tags': 'sys_tags',
         'cpu_options': 'cpu_options',
+        'security_options': 'security_options',
         'hypervisor': 'hypervisor'
     }
 
-    def __init__(self, status=None, updated=None, auto_terminate_time=None, host_id=None, os_ext_srv_att_rhost=None, addresses=None, key_name=None, image=None, os_ext_st_stask_state=None, os_ext_st_svm_state=None, os_ext_srv_att_rinstance_name=None, os_ext_srv_att_rhypervisor_hostname=None, flavor=None, id=None, security_groups=None, os_ext_a_zavailability_zone=None, user_id=None, name=None, created=None, tenant_id=None, os_dc_fdisk_config=None, access_i_pv4=None, access_i_pv6=None, fault=None, progress=None, os_ext_st_spower_state=None, config_drive=None, metadata=None, os_srv_us_glaunched_at=None, os_srv_us_gterminated_at=None, os_extended_volumesvolumes_attached=None, description=None, host_status=None, os_ext_srv_att_rhostname=None, os_ext_srv_att_rreservation_id=None, os_ext_srv_att_rlaunch_index=None, os_ext_srv_att_rkernel_id=None, os_ext_srv_att_rramdisk_id=None, os_ext_srv_att_rroot_device_name=None, os_ext_srv_att_ruser_data=None, locked=None, tags=None, osscheduler_hints=None, enterprise_project_id=None, sys_tags=None, cpu_options=None, hypervisor=None):
+    def __init__(self, status=None, updated=None, auto_terminate_time=None, host_id=None, os_ext_srv_att_rhost=None, addresses=None, key_name=None, image=None, os_ext_st_stask_state=None, os_ext_st_svm_state=None, os_ext_srv_att_rinstance_name=None, os_ext_srv_att_rhypervisor_hostname=None, flavor=None, id=None, security_groups=None, os_ext_a_zavailability_zone=None, user_id=None, name=None, created=None, tenant_id=None, os_dc_fdisk_config=None, access_i_pv4=None, access_i_pv6=None, fault=None, progress=None, os_ext_st_spower_state=None, config_drive=None, metadata=None, os_srv_us_glaunched_at=None, os_srv_us_gterminated_at=None, os_extended_volumesvolumes_attached=None, description=None, host_status=None, os_ext_srv_att_rhostname=None, os_ext_srv_att_rreservation_id=None, os_ext_srv_att_rlaunch_index=None, os_ext_srv_att_rkernel_id=None, os_ext_srv_att_rramdisk_id=None, os_ext_srv_att_rroot_device_name=None, os_ext_srv_att_ruser_data=None, locked=None, tags=None, osscheduler_hints=None, enterprise_project_id=None, sys_tags=None, cpu_options=None, security_options=None, hypervisor=None):
         r"""ServerDetail
 
         The model defined in huaweicloud sdk
@@ -213,6 +215,8 @@ class ServerDetail:
         :type sys_tags: list[:class:`huaweicloudsdkecs.v2.ServerSystemTag`]
         :param cpu_options: 
         :type cpu_options: :class:`huaweicloudsdkecs.v2.CpuOptions`
+        :param security_options: 
+        :type security_options: :class:`huaweicloudsdkecs.v2.SecurityOptions`
         :param hypervisor: 
         :type hypervisor: :class:`huaweicloudsdkecs.v2.Hypervisor`
         """
@@ -265,6 +269,7 @@ class ServerDetail:
         self._enterprise_project_id = None
         self._sys_tags = None
         self._cpu_options = None
+        self._security_options = None
         self._hypervisor = None
         self.discriminator = None
 
@@ -325,6 +330,8 @@ class ServerDetail:
             self.sys_tags = sys_tags
         if cpu_options is not None:
             self.cpu_options = cpu_options
+        if security_options is not None:
+            self.security_options = security_options
         if hypervisor is not None:
             self.hypervisor = hypervisor
 
@@ -1323,6 +1330,24 @@ class ServerDetail:
         :type cpu_options: :class:`huaweicloudsdkecs.v2.CpuOptions`
         """
         self._cpu_options = cpu_options
+
+    @property
+    def security_options(self):
+        r"""Gets the security_options of this ServerDetail.
+
+        :return: The security_options of this ServerDetail.
+        :rtype: :class:`huaweicloudsdkecs.v2.SecurityOptions`
+        """
+        return self._security_options
+
+    @security_options.setter
+    def security_options(self, security_options):
+        r"""Sets the security_options of this ServerDetail.
+
+        :param security_options: The security_options of this ServerDetail.
+        :type security_options: :class:`huaweicloudsdkecs.v2.SecurityOptions`
+        """
+        self._security_options = security_options
 
     @property
     def hypervisor(self):

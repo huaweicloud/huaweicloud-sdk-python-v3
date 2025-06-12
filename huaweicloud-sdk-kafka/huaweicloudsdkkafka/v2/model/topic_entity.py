@@ -51,13 +51,13 @@ class TopicEntity:
 
         The model defined in huaweicloud sdk
 
-        :param policies_only: **参数解释**： 是否为默认策略。 **取值范围**： - true：默认策略。 - fasle：不是默认策略。
+        :param policies_only: **参数解释**： 是否为默认策略。 **取值范围**： - true：默认策略。 - false：不是默认策略。
         :type policies_only: bool
-        :param name: **参数解释**： topic名称。 **取值范围**： 不涉及
+        :param name: **参数解释**： Topic名称。 **取值范围**： 不涉及
         :type name: str
         :param replication: **参数解释**： 副本数，配置数据的可靠性。 **取值范围**： 不涉及
         :type replication: int
-        :param partition: **参数解释**： topic分区数，设置消费的并发数。 **取值范围**： 不涉及
+        :param partition: **参数解释**： Topic分区数，设置消费的并发数。 **取值范围**： 不涉及
         :type partition: int
         :param retention_time: **参数解释**： 消息老化时间。 **取值范围**： 0-720
         :type retention_time: int
@@ -67,13 +67,13 @@ class TopicEntity:
         :type sync_message_flush: bool
         :param external_configs: **参数解释**： 扩展配置。
         :type external_configs: object
-        :param topic_type: **参数解释**： topic类型。 **取值范围**： - 0：普通Topic。 - 1：系统(内部)Topic。
+        :param topic_type: **参数解释**： Topic类型。 **取值范围**： - 0：普通Topic。 - 1：系统(内部)Topic。
         :type topic_type: int
-        :param topic_other_configs: **参数解释**： topic其他配置。
+        :param topic_other_configs: **参数解释**： Topic其他配置。
         :type topic_other_configs: list[:class:`huaweicloudsdkkafka.v2.TopicEntityTopicOtherConfigs`]
-        :param topic_desc: **参数解释**： topic描述。 **取值范围**： 不涉及
+        :param topic_desc: **参数解释**： Topic描述。 **取值范围**： 不涉及
         :type topic_desc: str
-        :param created_at: **参数解释**： topic创建时间。 **取值范围**： 不涉及
+        :param created_at: **参数解释**： Topic创建时间。 **取值范围**： 不涉及
         :type created_at: int
         """
         
@@ -122,7 +122,7 @@ class TopicEntity:
     def policies_only(self):
         r"""Gets the policies_only of this TopicEntity.
 
-        **参数解释**： 是否为默认策略。 **取值范围**： - true：默认策略。 - fasle：不是默认策略。
+        **参数解释**： 是否为默认策略。 **取值范围**： - true：默认策略。 - false：不是默认策略。
 
         :return: The policies_only of this TopicEntity.
         :rtype: bool
@@ -133,7 +133,7 @@ class TopicEntity:
     def policies_only(self, policies_only):
         r"""Sets the policies_only of this TopicEntity.
 
-        **参数解释**： 是否为默认策略。 **取值范围**： - true：默认策略。 - fasle：不是默认策略。
+        **参数解释**： 是否为默认策略。 **取值范围**： - true：默认策略。 - false：不是默认策略。
 
         :param policies_only: The policies_only of this TopicEntity.
         :type policies_only: bool
@@ -144,7 +144,7 @@ class TopicEntity:
     def name(self):
         r"""Gets the name of this TopicEntity.
 
-        **参数解释**： topic名称。 **取值范围**： 不涉及
+        **参数解释**： Topic名称。 **取值范围**： 不涉及
 
         :return: The name of this TopicEntity.
         :rtype: str
@@ -155,7 +155,7 @@ class TopicEntity:
     def name(self, name):
         r"""Sets the name of this TopicEntity.
 
-        **参数解释**： topic名称。 **取值范围**： 不涉及
+        **参数解释**： Topic名称。 **取值范围**： 不涉及
 
         :param name: The name of this TopicEntity.
         :type name: str
@@ -188,7 +188,7 @@ class TopicEntity:
     def partition(self):
         r"""Gets the partition of this TopicEntity.
 
-        **参数解释**： topic分区数，设置消费的并发数。 **取值范围**： 不涉及
+        **参数解释**： Topic分区数，设置消费的并发数。 **取值范围**： 不涉及
 
         :return: The partition of this TopicEntity.
         :rtype: int
@@ -199,7 +199,7 @@ class TopicEntity:
     def partition(self, partition):
         r"""Sets the partition of this TopicEntity.
 
-        **参数解释**： topic分区数，设置消费的并发数。 **取值范围**： 不涉及
+        **参数解释**： Topic分区数，设置消费的并发数。 **取值范围**： 不涉及
 
         :param partition: The partition of this TopicEntity.
         :type partition: int
@@ -298,7 +298,7 @@ class TopicEntity:
     def topic_type(self):
         r"""Gets the topic_type of this TopicEntity.
 
-        **参数解释**： topic类型。 **取值范围**： - 0：普通Topic。 - 1：系统(内部)Topic。
+        **参数解释**： Topic类型。 **取值范围**： - 0：普通Topic。 - 1：系统(内部)Topic。
 
         :return: The topic_type of this TopicEntity.
         :rtype: int
@@ -309,7 +309,7 @@ class TopicEntity:
     def topic_type(self, topic_type):
         r"""Sets the topic_type of this TopicEntity.
 
-        **参数解释**： topic类型。 **取值范围**： - 0：普通Topic。 - 1：系统(内部)Topic。
+        **参数解释**： Topic类型。 **取值范围**： - 0：普通Topic。 - 1：系统(内部)Topic。
 
         :param topic_type: The topic_type of this TopicEntity.
         :type topic_type: int
@@ -320,7 +320,7 @@ class TopicEntity:
     def topic_other_configs(self):
         r"""Gets the topic_other_configs of this TopicEntity.
 
-        **参数解释**： topic其他配置。
+        **参数解释**： Topic其他配置。
 
         :return: The topic_other_configs of this TopicEntity.
         :rtype: list[:class:`huaweicloudsdkkafka.v2.TopicEntityTopicOtherConfigs`]
@@ -331,7 +331,7 @@ class TopicEntity:
     def topic_other_configs(self, topic_other_configs):
         r"""Sets the topic_other_configs of this TopicEntity.
 
-        **参数解释**： topic其他配置。
+        **参数解释**： Topic其他配置。
 
         :param topic_other_configs: The topic_other_configs of this TopicEntity.
         :type topic_other_configs: list[:class:`huaweicloudsdkkafka.v2.TopicEntityTopicOtherConfigs`]
@@ -342,7 +342,7 @@ class TopicEntity:
     def topic_desc(self):
         r"""Gets the topic_desc of this TopicEntity.
 
-        **参数解释**： topic描述。 **取值范围**： 不涉及
+        **参数解释**： Topic描述。 **取值范围**： 不涉及
 
         :return: The topic_desc of this TopicEntity.
         :rtype: str
@@ -353,7 +353,7 @@ class TopicEntity:
     def topic_desc(self, topic_desc):
         r"""Sets the topic_desc of this TopicEntity.
 
-        **参数解释**： topic描述。 **取值范围**： 不涉及
+        **参数解释**： Topic描述。 **取值范围**： 不涉及
 
         :param topic_desc: The topic_desc of this TopicEntity.
         :type topic_desc: str
@@ -364,7 +364,7 @@ class TopicEntity:
     def created_at(self):
         r"""Gets the created_at of this TopicEntity.
 
-        **参数解释**： topic创建时间。 **取值范围**： 不涉及
+        **参数解释**： Topic创建时间。 **取值范围**： 不涉及
 
         :return: The created_at of this TopicEntity.
         :rtype: int
@@ -375,7 +375,7 @@ class TopicEntity:
     def created_at(self, created_at):
         r"""Sets the created_at of this TopicEntity.
 
-        **参数解释**： topic创建时间。 **取值范围**： 不涉及
+        **参数解释**： Topic创建时间。 **取值范围**： 不涉及
 
         :param created_at: The created_at of this TopicEntity.
         :type created_at: int

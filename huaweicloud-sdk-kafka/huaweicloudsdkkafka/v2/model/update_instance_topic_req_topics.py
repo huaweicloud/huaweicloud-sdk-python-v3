@@ -43,7 +43,7 @@ class UpdateInstanceTopicReqTopics:
 
         The model defined in huaweicloud sdk
 
-        :param id: topic名称，不支持修改。
+        :param id: Topic名称，不支持修改。
         :type id: str
         :param retention_time: 老化时间，单位小时。
         :type retention_time: int
@@ -55,9 +55,9 @@ class UpdateInstanceTopicReqTopics:
         :type new_partition_numbers: int
         :param new_partition_brokers: 增加分区时指定broker列表
         :type new_partition_brokers: list[int]
-        :param topic_other_configs: topic配置
+        :param topic_other_configs: Topic配置
         :type topic_other_configs: list[:class:`huaweicloudsdkkafka.v2.CreateInstanceTopicReqTopicOtherConfigs`]
-        :param topic_desc: topic描述
+        :param topic_desc: Topic描述
         :type topic_desc: str
         """
         
@@ -93,7 +93,7 @@ class UpdateInstanceTopicReqTopics:
     def id(self):
         r"""Gets the id of this UpdateInstanceTopicReqTopics.
 
-        topic名称，不支持修改。
+        Topic名称，不支持修改。
 
         :return: The id of this UpdateInstanceTopicReqTopics.
         :rtype: str
@@ -104,7 +104,7 @@ class UpdateInstanceTopicReqTopics:
     def id(self, id):
         r"""Sets the id of this UpdateInstanceTopicReqTopics.
 
-        topic名称，不支持修改。
+        Topic名称，不支持修改。
 
         :param id: The id of this UpdateInstanceTopicReqTopics.
         :type id: str
@@ -225,7 +225,7 @@ class UpdateInstanceTopicReqTopics:
     def topic_other_configs(self):
         r"""Gets the topic_other_configs of this UpdateInstanceTopicReqTopics.
 
-        topic配置
+        Topic配置
 
         :return: The topic_other_configs of this UpdateInstanceTopicReqTopics.
         :rtype: list[:class:`huaweicloudsdkkafka.v2.CreateInstanceTopicReqTopicOtherConfigs`]
@@ -236,7 +236,7 @@ class UpdateInstanceTopicReqTopics:
     def topic_other_configs(self, topic_other_configs):
         r"""Sets the topic_other_configs of this UpdateInstanceTopicReqTopics.
 
-        topic配置
+        Topic配置
 
         :param topic_other_configs: The topic_other_configs of this UpdateInstanceTopicReqTopics.
         :type topic_other_configs: list[:class:`huaweicloudsdkkafka.v2.CreateInstanceTopicReqTopicOtherConfigs`]
@@ -247,7 +247,7 @@ class UpdateInstanceTopicReqTopics:
     def topic_desc(self):
         r"""Gets the topic_desc of this UpdateInstanceTopicReqTopics.
 
-        topic描述
+        Topic描述
 
         :return: The topic_desc of this UpdateInstanceTopicReqTopics.
         :rtype: str
@@ -258,7 +258,7 @@ class UpdateInstanceTopicReqTopics:
     def topic_desc(self, topic_desc):
         r"""Sets the topic_desc of this UpdateInstanceTopicReqTopics.
 
-        topic描述
+        Topic描述
 
         :param topic_desc: The topic_desc of this UpdateInstanceTopicReqTopics.
         :type topic_desc: str

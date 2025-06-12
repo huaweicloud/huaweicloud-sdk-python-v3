@@ -29,7 +29,7 @@ class UpdateTopicAccessPolicyReq:
 
         The model defined in huaweicloud sdk
 
-        :param topics: topic列表。
+        :param topics: Topic列表。
         :type topics: list[:class:`huaweicloudsdkkafka.v2.AccessPolicyTopicEntity`]
         """
         
@@ -44,7 +44,7 @@ class UpdateTopicAccessPolicyReq:
     def topics(self):
         r"""Gets the topics of this UpdateTopicAccessPolicyReq.
 
-        topic列表。
+        Topic列表。
 
         :return: The topics of this UpdateTopicAccessPolicyReq.
         :rtype: list[:class:`huaweicloudsdkkafka.v2.AccessPolicyTopicEntity`]
@@ -55,7 +55,7 @@ class UpdateTopicAccessPolicyReq:
     def topics(self, topics):
         r"""Sets the topics of this UpdateTopicAccessPolicyReq.
 
-        topic列表。
+        Topic列表。
 
         :param topics: The topics of this UpdateTopicAccessPolicyReq.
         :type topics: list[:class:`huaweicloudsdkkafka.v2.AccessPolicyTopicEntity`]

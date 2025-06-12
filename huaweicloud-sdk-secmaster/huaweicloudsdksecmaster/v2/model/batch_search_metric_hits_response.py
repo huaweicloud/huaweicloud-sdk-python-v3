@@ -30,7 +30,7 @@ class BatchSearchMetricHitsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param body: 
+        :param body: 批量查询指标结果
         :type body: list[:class:`huaweicloudsdksecmaster.v2.ShowMetricResultResponseBody`]
         """
         
@@ -46,6 +46,8 @@ class BatchSearchMetricHitsResponse(SdkResponse):
     def body(self):
         r"""Gets the body of this BatchSearchMetricHitsResponse.
 
+        批量查询指标结果
+
         :return: The body of this BatchSearchMetricHitsResponse.
         :rtype: list[:class:`huaweicloudsdksecmaster.v2.ShowMetricResultResponseBody`]
         """
@@ -54,6 +56,8 @@ class BatchSearchMetricHitsResponse(SdkResponse):
     @body.setter
     def body(self, body):
         r"""Sets the body of this BatchSearchMetricHitsResponse.
+
+        批量查询指标结果
 
         :param body: The body of this BatchSearchMetricHitsResponse.
         :type body: list[:class:`huaweicloudsdksecmaster.v2.ShowMetricResultResponseBody`]

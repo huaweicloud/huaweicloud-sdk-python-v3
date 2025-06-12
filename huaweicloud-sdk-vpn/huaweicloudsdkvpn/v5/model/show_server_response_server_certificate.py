@@ -23,7 +23,8 @@ class ShowServerResponseServerCertificate:
         'subject': 'str',
         'serial_number': 'str',
         'expiration_time': 'datetime',
-        'signature_algorithm': 'str'
+        'signature_algorithm': 'str',
+        'source': 'str'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class ShowServerResponseServerCertificate:
         'subject': 'subject',
         'serial_number': 'serial_number',
         'expiration_time': 'expiration_time',
-        'signature_algorithm': 'signature_algorithm'
+        'signature_algorithm': 'signature_algorithm',
+        'source': 'source'
     }
 
-    def __init__(self, id=None, name=None, issuer=None, subject=None, serial_number=None, expiration_time=None, signature_algorithm=None):
+    def __init__(self, id=None, name=None, issuer=None, subject=None, serial_number=None, expiration_time=None, signature_algorithm=None, source=None):
         r"""ShowServerResponseServerCertificate
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class ShowServerResponseServerCertificate:
         :type expiration_time: datetime
         :param signature_algorithm: 证书签名算法
         :type signature_algorithm: str
+        :param source: 证书来源
+        :type source: str
         """
         
         
@@ -66,6 +70,7 @@ class ShowServerResponseServerCertificate:
         self._serial_number = None
         self._expiration_time = None
         self._signature_algorithm = None
+        self._source = None
         self.discriminator = None
 
         if id is not None:
@@ -82,6 +87,8 @@ class ShowServerResponseServerCertificate:
             self.expiration_time = expiration_time
         if signature_algorithm is not None:
             self.signature_algorithm = signature_algorithm
+        if source is not None:
+            self.source = source
 
     @property
     def id(self):
@@ -236,6 +243,28 @@ class ShowServerResponseServerCertificate:
         :type signature_algorithm: str
         """
         self._signature_algorithm = signature_algorithm
+
+    @property
+    def source(self):
+        r"""Gets the source of this ShowServerResponseServerCertificate.
+
+        证书来源
+
+        :return: The source of this ShowServerResponseServerCertificate.
+        :rtype: str
+        """
+        return self._source
+
+    @source.setter
+    def source(self, source):
+        r"""Sets the source of this ShowServerResponseServerCertificate.
+
+        证书来源
+
+        :param source: The source of this ShowServerResponseServerCertificate.
+        :type source: str
+        """
+        self._source = source
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -37,7 +37,7 @@ class DiskusageTopicEntity:
 
         :param size: 磁盘使用量。
         :type size: str
-        :param topic_name: topic名称。
+        :param topic_name: Topic名称。
         :type topic_name: str
         :param topic_partition: 分区。
         :type topic_partition: str
@@ -88,7 +88,7 @@ class DiskusageTopicEntity:
     def topic_name(self):
         r"""Gets the topic_name of this DiskusageTopicEntity.
 
-        topic名称。
+        Topic名称。
 
         :return: The topic_name of this DiskusageTopicEntity.
         :rtype: str
@@ -99,7 +99,7 @@ class DiskusageTopicEntity:
     def topic_name(self, topic_name):
         r"""Sets the topic_name of this DiskusageTopicEntity.
 
-        topic名称。
+        Topic名称。
 
         :param topic_name: The topic_name of this DiskusageTopicEntity.
         :type topic_name: str

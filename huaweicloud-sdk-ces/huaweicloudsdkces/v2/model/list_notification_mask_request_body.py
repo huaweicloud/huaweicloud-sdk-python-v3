@@ -63,7 +63,7 @@ class ListNotificationMaskRequestBody:
         :type mask_status: str
         :param resource_id: 资源维度值,提供一个维度的资源ID即可,可选
         :type resource_id: str
-        :param namespace: 查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”
+        :param namespace: 服务的命名空间，查询各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”
         :type namespace: str
         :param dimensions: 资源的维度信息
         :type dimensions: list[:class:`huaweicloudsdkces.v2.ResourceDimension`]
@@ -278,7 +278,7 @@ class ListNotificationMaskRequestBody:
     def namespace(self):
         r"""Gets the namespace of this ListNotificationMaskRequestBody.
 
-        查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”
+        服务的命名空间，查询各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”
 
         :return: The namespace of this ListNotificationMaskRequestBody.
         :rtype: str
@@ -289,7 +289,7 @@ class ListNotificationMaskRequestBody:
     def namespace(self, namespace):
         r"""Sets the namespace of this ListNotificationMaskRequestBody.
 
-        查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”
+        服务的命名空间，查询各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”
 
         :param namespace: The namespace of this ListNotificationMaskRequestBody.
         :type namespace: str

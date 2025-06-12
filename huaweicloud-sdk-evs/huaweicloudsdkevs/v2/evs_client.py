@@ -170,6 +170,75 @@ class EvsClient(Client):
 
         return http_info
 
+    def batch_resize_volumes(self, request):
+        r"""批量扩容云硬盘
+
+        对按需或者包周期云硬盘进行批量扩容。
+        [在批量扩容存在包周期云硬盘的场景下：](tag:hws)
+        - [如果您需要查看订单可用的优惠券，请参考\&quot;[查询订单可用优惠券](https://support.huaweicloud.com/api-oce/zh-cn_topic_0092953630.html)\&quot;。](tag:hws)
+        - [如果您需要支付订单，请参考\&quot;[支付包周期产品订单](https://support.huaweicloud.com/api-oce/api_order_00030.html)\&quot;。](tag:hws)
+        - [如果您需要退订该包周期资源，请参考“[退订包周期资源](https://support.huaweicloud.com/api-oce/zh-cn_topic_0082522030.html)”。](tag:hws)
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchResizeVolumes
+        :type request: :class:`huaweicloudsdkevs.v2.BatchResizeVolumesRequest`
+        :rtype: :class:`huaweicloudsdkevs.v2.BatchResizeVolumesResponse`
+        """
+        http_info = self._batch_resize_volumes_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_resize_volumes_invoker(self, request):
+        http_info = self._batch_resize_volumes_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_resize_volumes_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/volumes/batch-extend",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchResizeVolumesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def cinder_accept_volume_transfer(self, request):
         r"""接受云硬盘过户
 

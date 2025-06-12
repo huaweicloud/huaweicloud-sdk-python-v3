@@ -31,7 +31,7 @@ class ModifyKafkaTopicQuotaRequest:
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: 实例ID。
+        :param instance_id: **参数解释**： 实例ID。获取方法如下：登录Kafka控制台，在Kafka实例详情页面查找实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type instance_id: str
         :param body: Body of the ModifyKafkaTopicQuotaRequest
         :type body: :class:`huaweicloudsdkkafka.v2.KafkaTopicQuota`
@@ -51,7 +51,7 @@ class ModifyKafkaTopicQuotaRequest:
     def instance_id(self):
         r"""Gets the instance_id of this ModifyKafkaTopicQuotaRequest.
 
-        实例ID。
+        **参数解释**： 实例ID。获取方法如下：登录Kafka控制台，在Kafka实例详情页面查找实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The instance_id of this ModifyKafkaTopicQuotaRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class ModifyKafkaTopicQuotaRequest:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this ModifyKafkaTopicQuotaRequest.
 
-        实例ID。
+        **参数解释**： 实例ID。获取方法如下：登录Kafka控制台，在Kafka实例详情页面查找实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param instance_id: The instance_id of this ModifyKafkaTopicQuotaRequest.
         :type instance_id: str

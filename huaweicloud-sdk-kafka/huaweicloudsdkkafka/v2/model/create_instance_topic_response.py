@@ -30,7 +30,7 @@ class CreateInstanceTopicResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param name: topic名称。
+        :param name: Topic名称。
         :type name: str
         """
         
@@ -46,7 +46,7 @@ class CreateInstanceTopicResponse(SdkResponse):
     def name(self):
         r"""Gets the name of this CreateInstanceTopicResponse.
 
-        topic名称。
+        Topic名称。
 
         :return: The name of this CreateInstanceTopicResponse.
         :rtype: str
@@ -57,7 +57,7 @@ class CreateInstanceTopicResponse(SdkResponse):
     def name(self, name):
         r"""Sets the name of this CreateInstanceTopicResponse.
 
-        topic名称。
+        Topic名称。
 
         :param name: The name of this CreateInstanceTopicResponse.
         :type name: str

@@ -44,7 +44,8 @@ class CreateInstanceBody:
         'enable_publicip': 'bool',
         'port': 'int',
         'rename_commands': 'object',
-        'template_id': 'str'
+        'template_id': 'str',
+        'spec_param': 'SpecParam'
     }
 
     attribute_map = {
@@ -75,10 +76,11 @@ class CreateInstanceBody:
         'enable_publicip': 'enable_publicip',
         'port': 'port',
         'rename_commands': 'rename_commands',
-        'template_id': 'template_id'
+        'template_id': 'template_id',
+        'spec_param': 'spec_param'
     }
 
-    def __init__(self, name=None, engine=None, engine_version=None, capacity=None, spec_code=None, az_codes=None, vpc_id=None, subnet_id=None, security_group_id=None, publicip_id=None, enterprise_project_id=None, enterprise_project_name=None, description=None, enable_ssl=None, private_ip=None, instance_num=None, maintain_begin=None, maintain_end=None, password=None, no_password_access=None, bss_param=None, instance_backup_policy=None, tags=None, access_user=None, enable_publicip=None, port=None, rename_commands=None, template_id=None):
+    def __init__(self, name=None, engine=None, engine_version=None, capacity=None, spec_code=None, az_codes=None, vpc_id=None, subnet_id=None, security_group_id=None, publicip_id=None, enterprise_project_id=None, enterprise_project_name=None, description=None, enable_ssl=None, private_ip=None, instance_num=None, maintain_begin=None, maintain_end=None, password=None, no_password_access=None, bss_param=None, instance_backup_policy=None, tags=None, access_user=None, enable_publicip=None, port=None, rename_commands=None, template_id=None, spec_param=None):
         r"""CreateInstanceBody
 
         The model defined in huaweicloud sdk
@@ -139,6 +141,8 @@ class CreateInstanceBody:
         :type rename_commands: object
         :param template_id: 参数模板ID
         :type template_id: str
+        :param spec_param: 
+        :type spec_param: :class:`huaweicloudsdkdcs.v2.SpecParam`
         """
         
         
@@ -171,6 +175,7 @@ class CreateInstanceBody:
         self._port = None
         self._rename_commands = None
         self._template_id = None
+        self._spec_param = None
         self.discriminator = None
 
         self.name = name
@@ -222,6 +227,8 @@ class CreateInstanceBody:
             self.rename_commands = rename_commands
         if template_id is not None:
             self.template_id = template_id
+        if spec_param is not None:
+            self.spec_param = spec_param
 
     @property
     def name(self):
@@ -830,6 +837,24 @@ class CreateInstanceBody:
         :type template_id: str
         """
         self._template_id = template_id
+
+    @property
+    def spec_param(self):
+        r"""Gets the spec_param of this CreateInstanceBody.
+
+        :return: The spec_param of this CreateInstanceBody.
+        :rtype: :class:`huaweicloudsdkdcs.v2.SpecParam`
+        """
+        return self._spec_param
+
+    @spec_param.setter
+    def spec_param(self, spec_param):
+        r"""Sets the spec_param of this CreateInstanceBody.
+
+        :param spec_param: The spec_param of this CreateInstanceBody.
+        :type spec_param: :class:`huaweicloudsdkdcs.v2.SpecParam`
+        """
+        self._spec_param = spec_param
 
     def to_dict(self):
         """Returns the model properties as a dict"""

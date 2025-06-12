@@ -19,16 +19,20 @@ class ListExecutionPlansRequest:
     openapi_types = {
         'client_request_id': 'str',
         'stack_name': 'str',
-        'stack_id': 'str'
+        'stack_id': 'str',
+        'marker': 'str',
+        'limit': 'int'
     }
 
     attribute_map = {
         'client_request_id': 'Client-Request-Id',
         'stack_name': 'stack_name',
-        'stack_id': 'stack_id'
+        'stack_id': 'stack_id',
+        'marker': 'marker',
+        'limit': 'limit'
     }
 
-    def __init__(self, client_request_id=None, stack_name=None, stack_id=None):
+    def __init__(self, client_request_id=None, stack_name=None, stack_id=None, marker=None, limit=None):
         r"""ListExecutionPlansRequest
 
         The model defined in huaweicloud sdk
@@ -39,6 +43,10 @@ class ListExecutionPlansRequest:
         :type stack_name: str
         :param stack_id: 资源栈（stack）的唯一Id。  此Id由资源编排服务在生成资源栈的时候生成，为UUID。  由于资源栈名仅仅在同一时间下唯一，即用户允许先生成一个叫HelloWorld的资源栈，删除，再重新创建一个同名资源栈。  对于团队并行开发，用户可能希望确保，当前我操作的资源栈就是我认为的那个，而不是其他队友删除后创建的同名资源栈。因此，使用ID就可以做到强匹配。  资源编排服务保证每次创建的资源栈所对应的ID都不相同，更新不会影响ID。如果给予的stack_id和当前资源栈的ID不一致，则返回400
         :type stack_id: str
+        :param marker: 分页标记。当一页无法返回所有结果，上一次的请求将返回next_marker以指引还有更多页数，用户可以将next_marker中的值放到此处以查询下一页的信息。此marker只能用于与上一请求指定的相同参数的请求。不指定时默认从第一页开始查询。
+        :type marker: str
+        :param limit: 每页返回的最多结果数量
+        :type limit: int
         """
         
         
@@ -46,12 +54,18 @@ class ListExecutionPlansRequest:
         self._client_request_id = None
         self._stack_name = None
         self._stack_id = None
+        self._marker = None
+        self._limit = None
         self.discriminator = None
 
         self.client_request_id = client_request_id
         self.stack_name = stack_name
         if stack_id is not None:
             self.stack_id = stack_id
+        if marker is not None:
+            self.marker = marker
+        if limit is not None:
+            self.limit = limit
 
     @property
     def client_request_id(self):
@@ -118,6 +132,50 @@ class ListExecutionPlansRequest:
         :type stack_id: str
         """
         self._stack_id = stack_id
+
+    @property
+    def marker(self):
+        r"""Gets the marker of this ListExecutionPlansRequest.
+
+        分页标记。当一页无法返回所有结果，上一次的请求将返回next_marker以指引还有更多页数，用户可以将next_marker中的值放到此处以查询下一页的信息。此marker只能用于与上一请求指定的相同参数的请求。不指定时默认从第一页开始查询。
+
+        :return: The marker of this ListExecutionPlansRequest.
+        :rtype: str
+        """
+        return self._marker
+
+    @marker.setter
+    def marker(self, marker):
+        r"""Sets the marker of this ListExecutionPlansRequest.
+
+        分页标记。当一页无法返回所有结果，上一次的请求将返回next_marker以指引还有更多页数，用户可以将next_marker中的值放到此处以查询下一页的信息。此marker只能用于与上一请求指定的相同参数的请求。不指定时默认从第一页开始查询。
+
+        :param marker: The marker of this ListExecutionPlansRequest.
+        :type marker: str
+        """
+        self._marker = marker
+
+    @property
+    def limit(self):
+        r"""Gets the limit of this ListExecutionPlansRequest.
+
+        每页返回的最多结果数量
+
+        :return: The limit of this ListExecutionPlansRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        r"""Sets the limit of this ListExecutionPlansRequest.
+
+        每页返回的最多结果数量
+
+        :param limit: The limit of this ListExecutionPlansRequest.
+        :type limit: int
+        """
+        self._limit = limit
 
     def to_dict(self):
         """Returns the model properties as a dict"""

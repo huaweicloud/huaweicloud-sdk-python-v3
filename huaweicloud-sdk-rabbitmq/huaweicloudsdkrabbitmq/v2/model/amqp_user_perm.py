@@ -53,14 +53,10 @@ class AMQPUserPerm:
         self._read = None
         self.discriminator = None
 
-        if vhost is not None:
-            self.vhost = vhost
-        if conf is not None:
-            self.conf = conf
-        if write is not None:
-            self.write = write
-        if read is not None:
-            self.read = read
+        self.vhost = vhost
+        self.conf = conf
+        self.write = write
+        self.read = read
 
     @property
     def vhost(self):

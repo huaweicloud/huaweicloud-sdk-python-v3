@@ -167,6 +167,211 @@ class DliAsyncClient(Client):
 
         return http_info
 
+    def batch_create_resource_tags_async(self, request):
+        r"""批量添加资源标签
+
+        批量添加资源标签。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchCreateResourceTags
+        :type request: :class:`huaweicloudsdkdli.v1.BatchCreateResourceTagsRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.BatchCreateResourceTagsResponse`
+        """
+        http_info = self._batch_create_resource_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_create_resource_tags_async_invoker(self, request):
+        http_info = self._batch_create_resource_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_create_resource_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/{resource_type}/{resource_id}/tags/create",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreateResourceTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_type' in local_var_params:
+            path_params['resource_type'] = local_var_params['resource_type']
+        if 'resource_id' in local_var_params:
+            path_params['resource_id'] = local_var_params['resource_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_delete_resource_tags_async(self, request):
+        r"""批量删除资源标签
+
+        批量删除资源标签。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchDeleteResourceTags
+        :type request: :class:`huaweicloudsdkdli.v1.BatchDeleteResourceTagsRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.BatchDeleteResourceTagsResponse`
+        """
+        http_info = self._batch_delete_resource_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_resource_tags_async_invoker(self, request):
+        http_info = self._batch_delete_resource_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_delete_resource_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/{resource_type}/{resource_id}/tags/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteResourceTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_type' in local_var_params:
+            path_params['resource_type'] = local_var_params['resource_type']
+        if 'resource_id' in local_var_params:
+            path_params['resource_id'] = local_var_params['resource_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def count_resources_by_tags_async(self, request):
+        r"""查询资源实例数量
+
+        查询资源实例数量。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CountResourcesByTags
+        :type request: :class:`huaweicloudsdkdli.v1.CountResourcesByTagsRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.CountResourcesByTagsResponse`
+        """
+        http_info = self._count_resources_by_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def count_resources_by_tags_async_invoker(self, request):
+        http_info = self._count_resources_by_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _count_resources_by_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/{resource_type}/resource-instances/count",
+            "request_type": request.__class__.__name__,
+            "response_type": "CountResourcesByTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_type' in local_var_params:
+            path_params['resource_type'] = local_var_params['resource_type']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_connectivity_task_async(self, request):
         r"""创建地址连通性请求
 
@@ -1921,6 +2126,142 @@ class DliAsyncClient(Client):
 
         return http_info
 
+    def list_resources_by_tags_async(self, request):
+        r"""查询资源实例列表
+
+        查询资源实例列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListResourcesByTags
+        :type request: :class:`huaweicloudsdkdli.v1.ListResourcesByTagsRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.ListResourcesByTagsResponse`
+        """
+        http_info = self._list_resources_by_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_resources_by_tags_async_invoker(self, request):
+        http_info = self._list_resources_by_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_resources_by_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/{resource_type}/resource-instances/filter",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListResourcesByTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_type' in local_var_params:
+            path_params['resource_type'] = local_var_params['resource_type']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_resources_tags_async(self, request):
+        r"""查询指定资源类型的标签信息
+
+        查询指定资源类型的标签信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListResourcesTags
+        :type request: :class:`huaweicloudsdkdli.v1.ListResourcesTagsRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.ListResourcesTagsResponse`
+        """
+        http_info = self._list_resources_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_resources_tags_async_invoker(self, request):
+        http_info = self._list_resources_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_resources_tags_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/{resource_type}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListResourcesTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_type' in local_var_params:
+            path_params['resource_type'] = local_var_params['resource_type']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def run_authorization_action_async(self, request):
         r"""数据赋权（用户、项目）
 
@@ -2482,6 +2823,77 @@ class DliAsyncClient(Client):
         path_params = {}
 
         query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_resource_tags_async(self, request):
+        r"""查询指定资源实例的标签信息
+
+        查询指定资源实例的标签信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowResourceTags
+        :type request: :class:`huaweicloudsdkdli.v1.ShowResourceTagsRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.ShowResourceTagsResponse`
+        """
+        http_info = self._show_resource_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_resource_tags_async_invoker(self, request):
+        http_info = self._show_resource_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_resource_tags_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/{resource_type}/{resource_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowResourceTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_type' in local_var_params:
+            path_params['resource_type'] = local_var_params['resource_type']
+        if 'resource_id' in local_var_params:
+            path_params['resource_id'] = local_var_params['resource_id']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
 
         header_params = {}
 

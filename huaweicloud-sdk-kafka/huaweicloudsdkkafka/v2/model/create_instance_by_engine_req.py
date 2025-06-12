@@ -101,7 +101,7 @@ class CreateInstanceByEngineReq:
         :type description: str
         :param engine: 消息引擎。取值填写为：kafka。
         :type engine: str
-        :param engine_version: 消息引擎的版本。取值填写为：   [- 1.1.0](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,sbc)   [- 2.3.0](tag:g42,tm,hk_g42,ctc,hk_tm,dt,sbc)   - 2.7   [- 3.x](tag:hws,hws_hk,dt,sbc,hcs,fcs,ctc,tm,hk_tm,hws_eu)
+        :param engine_version: 消息引擎的版本。取值填写为：   [- 1.1.0](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,sbc,cmcc)   [- 2.3.0](tag:g42,tm,hk_g42,ctc,hk_tm,dt,sbc,cmcc)   - 2.7   [- 3.x](tag:hws,hws_hk,dt,sbc,hcs,fcs,ctc,tm,hk_tm,hws_eu)
         :type engine_version: str
         :param broker_num: 代理个数。
         :type broker_num: int
@@ -119,7 +119,7 @@ class CreateInstanceByEngineReq:
         :type subnet_id: str
         :param available_zones: 创建节点到指定且有资源的可用区ID。请参考[查询可用区信息](ListAvailableZones.xml)获取可用区ID。  该参数不能为空数组或者数组的值为空。  创建Kafka实例，支持节点部署在1个或3个及3个以上的可用区。在为节点指定可用区时，用逗号分隔开。
         :type available_zones: list[str]
-        :param product_id: 产品ID。  [产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。](tag:hws,hws_hk,ocb,hws_ocb,dt,ctc,sbc,fcs,hcs,g42,hk_g42,tm,hk_tm,hws_eu)[产品ID可以从[查询产品规格列表](ListProducts.xml)获取。](tag:cmcc)
+        :param product_id: 产品ID。  产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。
         :type product_id: str
         :param maintain_begin: 维护时间窗开始时间，格式为HH:mm。
         :type maintain_begin: str
@@ -149,7 +149,7 @@ class CreateInstanceByEngineReq:
         :type disk_encrypted_key: str
         :param connector_enable: 是否开启消息转储功能。  默认不开启消息转储。
         :type connector_enable: bool
-        :param enable_auto_topic: 是否打开kafka自动创建topic功能。 - true：开启 - false：关闭  当您选择开启，表示生产或消费一个未创建的Topic时，会自动创建一个包含3个分区和3个副本的Topic。  默认是false关闭。
+        :param enable_auto_topic: 是否打开kafka自动创建Topic功能。 - true：开启 - false：关闭  当您选择开启，表示生产或消费一个未创建的Topic时，会自动创建一个包含3个分区和3个副本的Topic。  默认是false关闭。
         :type enable_auto_topic: bool
         :param storage_spec_code: 存储IO规格。  取值范围：   - dms.physical.storage.high.v2：使用高IO的磁盘类型。   - dms.physical.storage.ultra.v2：使用超高IO的磁盘类型。  [如何选择磁盘类型请参考《云硬盘 [产品介绍](tag:hws,hws_hk,hws_eu,cmcc)[用户指南](tag:dt,g42,hk_g42,ctc,tm,hk_tm,sbc,ocb,hws_ocb)》的“磁盘类型及性能介绍”。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt)
         :type storage_spec_code: str
@@ -157,7 +157,7 @@ class CreateInstanceByEngineReq:
         :type enterprise_project_id: str
         :param tags: 标签列表。
         :type tags: list[:class:`huaweicloudsdkkafka.v2.TagEntity`]
-        :param arch_type: CPU架构。当前只支持X86架构[以及arm架构](tag:hcs,fcs)。  取值范围：   - X86   [- arm](tag:hcs,fcs)
+        :param arch_type: CPU架构。当前只支持X86架构[以及arm架构](tag:hcs,fcs,ctc)。  取值范围：   - X86   [- arm](tag:hcs,fcs,ctc)
         :type arch_type: str
         :param vpc_client_plain: VPC内网明文访问。
         :type vpc_client_plain: bool
@@ -331,7 +331,7 @@ class CreateInstanceByEngineReq:
     def engine_version(self):
         r"""Gets the engine_version of this CreateInstanceByEngineReq.
 
-        消息引擎的版本。取值填写为：   [- 1.1.0](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,sbc)   [- 2.3.0](tag:g42,tm,hk_g42,ctc,hk_tm,dt,sbc)   - 2.7   [- 3.x](tag:hws,hws_hk,dt,sbc,hcs,fcs,ctc,tm,hk_tm,hws_eu)
+        消息引擎的版本。取值填写为：   [- 1.1.0](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,sbc,cmcc)   [- 2.3.0](tag:g42,tm,hk_g42,ctc,hk_tm,dt,sbc,cmcc)   - 2.7   [- 3.x](tag:hws,hws_hk,dt,sbc,hcs,fcs,ctc,tm,hk_tm,hws_eu)
 
         :return: The engine_version of this CreateInstanceByEngineReq.
         :rtype: str
@@ -342,7 +342,7 @@ class CreateInstanceByEngineReq:
     def engine_version(self, engine_version):
         r"""Sets the engine_version of this CreateInstanceByEngineReq.
 
-        消息引擎的版本。取值填写为：   [- 1.1.0](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,sbc)   [- 2.3.0](tag:g42,tm,hk_g42,ctc,hk_tm,dt,sbc)   - 2.7   [- 3.x](tag:hws,hws_hk,dt,sbc,hcs,fcs,ctc,tm,hk_tm,hws_eu)
+        消息引擎的版本。取值填写为：   [- 1.1.0](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,sbc,cmcc)   [- 2.3.0](tag:g42,tm,hk_g42,ctc,hk_tm,dt,sbc,cmcc)   - 2.7   [- 3.x](tag:hws,hws_hk,dt,sbc,hcs,fcs,ctc,tm,hk_tm,hws_eu)
 
         :param engine_version: The engine_version of this CreateInstanceByEngineReq.
         :type engine_version: str
@@ -529,7 +529,7 @@ class CreateInstanceByEngineReq:
     def product_id(self):
         r"""Gets the product_id of this CreateInstanceByEngineReq.
 
-        产品ID。  [产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。](tag:hws,hws_hk,ocb,hws_ocb,dt,ctc,sbc,fcs,hcs,g42,hk_g42,tm,hk_tm,hws_eu)[产品ID可以从[查询产品规格列表](ListProducts.xml)获取。](tag:cmcc)
+        产品ID。  产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。
 
         :return: The product_id of this CreateInstanceByEngineReq.
         :rtype: str
@@ -540,7 +540,7 @@ class CreateInstanceByEngineReq:
     def product_id(self, product_id):
         r"""Sets the product_id of this CreateInstanceByEngineReq.
 
-        产品ID。  [产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。](tag:hws,hws_hk,ocb,hws_ocb,dt,ctc,sbc,fcs,hcs,g42,hk_g42,tm,hk_tm,hws_eu)[产品ID可以从[查询产品规格列表](ListProducts.xml)获取。](tag:cmcc)
+        产品ID。  产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。
 
         :param product_id: The product_id of this CreateInstanceByEngineReq.
         :type product_id: str
@@ -855,7 +855,7 @@ class CreateInstanceByEngineReq:
     def enable_auto_topic(self):
         r"""Gets the enable_auto_topic of this CreateInstanceByEngineReq.
 
-        是否打开kafka自动创建topic功能。 - true：开启 - false：关闭  当您选择开启，表示生产或消费一个未创建的Topic时，会自动创建一个包含3个分区和3个副本的Topic。  默认是false关闭。
+        是否打开kafka自动创建Topic功能。 - true：开启 - false：关闭  当您选择开启，表示生产或消费一个未创建的Topic时，会自动创建一个包含3个分区和3个副本的Topic。  默认是false关闭。
 
         :return: The enable_auto_topic of this CreateInstanceByEngineReq.
         :rtype: bool
@@ -866,7 +866,7 @@ class CreateInstanceByEngineReq:
     def enable_auto_topic(self, enable_auto_topic):
         r"""Sets the enable_auto_topic of this CreateInstanceByEngineReq.
 
-        是否打开kafka自动创建topic功能。 - true：开启 - false：关闭  当您选择开启，表示生产或消费一个未创建的Topic时，会自动创建一个包含3个分区和3个副本的Topic。  默认是false关闭。
+        是否打开kafka自动创建Topic功能。 - true：开启 - false：关闭  当您选择开启，表示生产或消费一个未创建的Topic时，会自动创建一个包含3个分区和3个副本的Topic。  默认是false关闭。
 
         :param enable_auto_topic: The enable_auto_topic of this CreateInstanceByEngineReq.
         :type enable_auto_topic: bool
@@ -943,7 +943,7 @@ class CreateInstanceByEngineReq:
     def arch_type(self):
         r"""Gets the arch_type of this CreateInstanceByEngineReq.
 
-        CPU架构。当前只支持X86架构[以及arm架构](tag:hcs,fcs)。  取值范围：   - X86   [- arm](tag:hcs,fcs)
+        CPU架构。当前只支持X86架构[以及arm架构](tag:hcs,fcs,ctc)。  取值范围：   - X86   [- arm](tag:hcs,fcs,ctc)
 
         :return: The arch_type of this CreateInstanceByEngineReq.
         :rtype: str
@@ -954,7 +954,7 @@ class CreateInstanceByEngineReq:
     def arch_type(self, arch_type):
         r"""Sets the arch_type of this CreateInstanceByEngineReq.
 
-        CPU架构。当前只支持X86架构[以及arm架构](tag:hcs,fcs)。  取值范围：   - X86   [- arm](tag:hcs,fcs)
+        CPU架构。当前只支持X86架构[以及arm架构](tag:hcs,fcs,ctc)。  取值范围：   - X86   [- arm](tag:hcs,fcs,ctc)
 
         :param arch_type: The arch_type of this CreateInstanceByEngineReq.
         :type arch_type: str

@@ -1,3 +1,571 @@
+# 3.1.152 2025-06-12
+
+### HuaweiCloud SDK AOS
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the following APIs:
+    - `DeletePrivateProvider`
+    - `ShowPrivateProviderMetadata`
+    - `UpdatePrivateProviderMetadata`
+    - `DeletePrivateProviderVersion`
+    - `ShowPrivateProviderVersionMetadata`
+    - `ListPrivateProviders`
+    - `ListPrivateProviderVersions`
+    - `CreateTemplate`
+    - `CreateTemplateVersion`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListStackEvents**
+    - changes of request param
+      - `+ marker`
+      - `+ limit`
+    - changes of response param
+      - `+ page_info`
+  - **ListStackOutputs**
+    - changes of request param
+      - `+ marker`
+      - `+ limit`
+    - changes of response param
+      - `+ page_info`
+  - **ListPrivateHooks**
+    - changes of request param
+      - `+ marker`
+      - `+ limit`
+    - changes of response param
+      - `+ page_info`
+  - **ListPrivateModules**
+    - changes of request param
+      - `+ marker`
+      - `+ limit`
+    - changes of response param
+      - `+ page_info`
+  - **ListPrivateModuleVersions**
+    - changes of request param
+      - `+ marker`
+      - `+ limit`
+    - changes of response param
+      - `+ page_info`
+  - **ListStackSets**
+    - changes of request param
+      - `+ marker`
+      - `+ limit`
+    - changes of response param
+      - `+ page_info`
+  - **ListStackSetOperations**
+    - changes of request param
+      - `+ marker`
+      - `+ limit`
+    - changes of response param
+      - `+ page_info`
+  - **ListStackInstances**
+    - changes of request param
+      - `+ marker`
+      - `+ limit`
+    - changes of response param
+      - `+ page_info`
+  - **ListStackResources**
+    - changes of request param
+      - `+ marker`
+      - `+ limit`
+    - changes of response param
+      - `+ page_info`
+  - **ListExecutionPlans**
+    - changes of request param
+      - `+ marker`
+      - `+ limit`
+    - changes of response param
+      - `+ page_info`
+  - **ListStacks**
+    - changes of request param
+      - `+ marker`
+      - `+ limit`
+    - changes of response param
+      - `+ page_info`
+
+### HuaweiCloud SDK BMS
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the APIs `ShowBaremetalServerMetadataOptions`, `UpdateBaremetalServerMetadataOptions`
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateBareMetalServers**
+    - changes of request param
+      - `+ server.metadata_options`
+
+### HuaweiCloud SDK CCE
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowNode**
+    - changes of response param
+      - `+ spec.publicIP.iptype`
+      - `+ spec.publicIP.bandwidth`
+  - **UpdateNode**
+    - changes of response param
+      - `+ spec.publicIP.iptype`
+      - `+ spec.publicIP.bandwidth`
+  - **DeleteNode**
+    - changes of response param
+      - `+ spec.publicIP.iptype`
+      - `+ spec.publicIP.bandwidth`
+  - **CreateNode**
+    - changes of request param
+      - `+ spec.publicIP.iptype`
+      - `+ spec.publicIP.bandwidth`
+    - changes of response param
+      - `+ spec.publicIP.iptype`
+      - `+ spec.publicIP.bandwidth`
+  - **ListNodes**
+    - changes of response param
+      - `+ items.spec.publicIP.iptype`
+      - `+ items.spec.publicIP.bandwidth`
+  - **ShowNodePool**
+    - changes of response param
+      - `+ spec.nodeTemplate.publicIP.iptype`
+      - `+ spec.nodeTemplate.publicIP.bandwidth`
+  - **UpdateNodePool**
+    - changes of request param
+      - `+ spec.nodeTemplate.publicIP`
+    - changes of response param
+      - `+ spec.nodeTemplate.publicIP.iptype`
+      - `+ spec.nodeTemplate.publicIP.bandwidth`
+  - **DeleteNodePool**
+    - changes of response param
+      - `+ spec.nodeTemplate.publicIP.iptype`
+      - `+ spec.nodeTemplate.publicIP.bandwidth`
+  - **CreateNodePool**
+    - changes of request param
+      - `+ spec.nodeTemplate.publicIP.iptype`
+      - `+ spec.nodeTemplate.publicIP.bandwidth`
+    - changes of response param
+      - `+ spec.nodeTemplate.publicIP.iptype`
+      - `+ spec.nodeTemplate.publicIP.bandwidth`
+  - **ListNodePools**
+    - changes of response param
+      - `+ items.spec.nodeTemplate.publicIP.iptype`
+      - `+ items.spec.nodeTemplate.publicIP.bandwidth`
+
+### HuaweiCloud SDK Cloudtest
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateTaskDefaultResult**
+    - changes of response param
+      - `+ result`
+      - `+ server_address`
+      - `+ error`
+      - `+ request_id`
+      - `+ status`
+  - **ListTaskResults**
+    - changes of request param
+      - `* iterator_uri: required -> optional`
+      - `* page_no: optional -> required`
+      - `* page_size: optional -> required`
+
+### HuaweiCloud SDK CodeArtsBuild
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the following APIs:
+    - `ShowDisable`
+    - `ShowCopyName`
+    - `ShowJobStepStatus`
+    - `ShowDefaultProjectPermission`
+    - `ListUpdateJobHistory`
+    - `ShowBuildRecordFlowGraph`
+    - `ListJunitCoverageSummary`
+    - `ListJob`
+    - `ShowJobBuildRecordDetail`
+    - `ListRepository`
+    - `ListCustomTemplate`
+    - `ShowSummaryBuildJobInfo`
+    - `ListRepoBranch`
+    - `ListKeystoreSearch`
+    - `CheckJobCountIsTopLimit`
+    - `DownloadJunitCoverageZip`
+    - `ListBuildParameter`
+    - `ShowUserOverPackageQuota`
+    - `ShowJobTotal`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DAS
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListSpaceAnalysis**
+    - changes of response param
+      - `+ db_objects.db_name`
+
+### HuaweiCloud SDK DCS
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateInstance**
+    - changes of request param
+      - `+ spec_param`
+
+### HuaweiCloud SDK DLI
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the following APIs:
+    - `ListResourcesTags`
+    - `ListResourcesByTags`
+    - `CountResourcesByTags`
+    - `BatchCreateResourceTags`
+    - `BatchDeleteResourceTags`
+    - `ShowResourceTags`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK ECS
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the following APIs:
+    - `ShowServerMetadataOptions`
+    - `UpdateServerMetadataOptions`
+    - `ShowRecycleBin`
+    - `UpdateRecycleBin`
+    - `ShowRecycleBinServer`
+    - `DeleteRecycleBinServer`
+    - `ListRecycleBinServers`
+    - `UpdateRecycleBinPolicy`
+    - `RevertRecycleBinServer`
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdateServer**
+    - changes of request param
+      - `+ server.security_options`
+  - **ShowServer**
+    - changes of response param
+      - `+ server.security_options`
+  - **ListServersDetails**
+    - changes of response param
+      - `+ servers.security_options`
+  - **CreateServers**
+    - changes of request param
+      - `+ server.security_options`
+      - `+ server.metadata_options`
+  - **CreatePostPaidServers**
+    - changes of request param
+      - `+ server.security_options`
+      - `+ server.metadata_options`
+
+### HuaweiCloud SDK EVS
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the API `BatchResizeVolumes`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK FunctionGraph
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ImportFunction**
+    - changes of response param
+      - `+ func_vpc.is_safety`
+  - **ListFunctions**
+    - changes of request param
+      - `+ func_name`
+  - **CreateFunction**
+    - changes of request param
+      - `+ func_vpc.is_safety`
+    - changes of response param
+      - `+ func_vpc.is_safety`
+  - **ShowFunctionConfig**
+    - changes of response param
+      - `+ func_vpc.is_safety`
+  - **UpdateFunctionConfig**
+    - changes of request param
+      - `+ func_vpc.is_safety`
+    - changes of response param
+      - `+ func_vpc.is_safety`
+  - **UpdateFunctionMaxInstanceConfig**
+    - changes of response param
+      - `+ func_vpc.is_safety`
+  - **CreateFunctionVersion**
+    - changes of response param
+      - `+ func_vpc.is_safety`
+
+### HuaweiCloud SDK IoTDA
+
+- _API Version_
+  - V5
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateProvisioningTemplate**
+    - changes of request param
+      - `+ template_body.resources.device.device_id`
+    - changes of response param
+      - `+ template_body.resources.device.device_id`
+  - **ShowProvisioningTemplate**
+    - changes of response param
+      - `+ template_body.resources.device.device_id`
+  - **UpdateProvisioningTemplate**
+    - changes of request param
+      - `+ template_body.resources.device.device_id`
+    - changes of response param
+      - `+ template_body.resources.device.device_id`
+
+### HuaweiCloud SDK Kafka
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the APIs `ValidateConnectorConnectivity`, `ModifyConnectorTask`
+- _Bug Fix_
+  - None
+- _Change_
+  - **BatchRestartOrDeleteInstances**
+    - changes of request param
+      - `+ force_delete`
+  - **ShowKafkaTopicQuota**
+    - changes of response param
+      - `+ quotas`
+      - `+ count`
+      - `- partitions`
+
+### HuaweiCloud SDK OCR
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **RecognizeTransportationLicense**
+    - changes of request param
+      - `+ return_image_location`
+      - `+ return_adjusted_image`
+    - changes of response param
+      - `+ result.image_location`
+      - `+ result.adjusted_image`
+
+### HuaweiCloud SDK RabbitMQ
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateExchange**
+    - changes of request param
+      - `+ arguments`
+
+### HuaweiCloud SDK RocketMQ
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the following APIs:
+    - `ListDiagnosisReports`
+    - `CreateDiagnosisTask`
+    - `BatchDeleteDiagnosisReport`
+    - `ShowDiagnosisReport`
+    - `ShowDiagnosisStack`
+    - `ModifyInstanceSslConfig`
+    - `ListBackgroundTasks`
+    - `DeleteBackgroundTask`
+    - `SendMessage`
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the API `RestartInstance`
+  - **UpdateTopic**
+    - changes of request param
+      - `+ queues`
+      - `+ topic_desc`
+  - **CreateInstanceByEngine**
+    - changes of request param
+      - `+ proxy_enable`
+      - `+ arch_type`
+      - `+ tls_mode`
+  - **ListMessages**
+    - changes of request param
+      - `+ queue`
+
+### HuaweiCloud SDK SecMaster
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the APIs `ShowWorkspace`, `UpdateWorkspace`, `DeleteWorkspace`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListAlerts**
+    - changes of response param
+      - `+ data.data_object.alert_list`
+      - `+ data.data_object.incident_list`
+      - `+ data.data_object.indicator_list`
+      - `+ data.data_object.origin_id`
+      - `+ data.data_object.ttd`
+      - `+ data.data_object.ttr`
+      - `+ data.data_object.is_auto_closed`
+      - `+ data.data_object.ipdrr_phase: enum value [Preparation,Contain，Eradication& Recovery]`
+      - `- data.data_object.ipdrr_phase: enum value [Prepartion,Containm，Eradication& Recovery]`
+      - `+ data.data_object.chop_phase: enum value [Preparation,Contain，Eradication& Recovery]`
+      - `- data.data_object.chop_phase: enum value [Prepartion,Containm，Eradication& Recovery]`
+      - `+ data.data_object.ppdr_phase: enum value [Preparation,Contain，Eradication& Recovery]`
+      - `- data.data_object.ppdr_phase: enum value [Prepartion,Containm，Eradication& Recovery]`
+  - **CreateAlert**
+    - changes of request param
+      - `+ data_object.ipdrr_phase: enum value [Preparation,Contain，Eradication& Recovery]`
+      - `- data_object.ipdrr_phase: enum value [Prepartion,Containm，Eradication& Recovery]`
+    - changes of response param
+      - `+ data.data_object.ipdrr_phase: enum value [Preparation,Contain，Eradication& Recovery]`
+      - `- data.data_object.ipdrr_phase: enum value [Prepartion,Containm，Eradication& Recovery]`
+  - **ShowAlert**
+    - changes of response param
+      - `+ data.data_object.ipdrr_phase: enum value [Preparation,Contain，Eradication& Recovery]`
+      - `- data.data_object.ipdrr_phase: enum value [Prepartion,Containm，Eradication& Recovery]`
+  - **ChangeAlert**
+    - changes of request param
+      - `+ data_object.ipdrr_phase: enum value [Preparation,Contain，Eradication& Recovery]`
+      - `- data_object.ipdrr_phase: enum value [Prepartion,Containm，Eradication& Recovery]`
+    - changes of response param
+      - `+ data.data_object.ipdrr_phase: enum value [Preparation,Contain，Eradication& Recovery]`
+      - `- data.data_object.ipdrr_phase: enum value [Prepartion,Containm，Eradication& Recovery]`
+  - **ListIncidents**
+    - changes of response param
+      - `+ data.data_object.ipdrr_phase: enum value [Preparation,Contain，Eradication& Recovery]`
+      - `- data.data_object.ipdrr_phase: enum value [Prepartion,Containm，Eradication& Recovery]`
+  - **CreateIncident**
+    - changes of request param
+      - `+ data_object.ipdrr_phase: enum value [Preparation,Contain，Eradication& Recovery]`
+      - `- data_object.ipdrr_phase: enum value [Prepartion,Containm，Eradication& Recovery]`
+    - changes of response param
+      - `+ data.data_object.ipdrr_phase: enum value [Preparation,Contain，Eradication& Recovery]`
+      - `- data.data_object.ipdrr_phase: enum value [Prepartion,Containm，Eradication& Recovery]`
+  - **ShowIncident**
+    - changes of response param
+      - `+ data.data_object.ipdrr_phase: enum value [Preparation,Contain，Eradication& Recovery]`
+      - `- data.data_object.ipdrr_phase: enum value [Prepartion,Containm，Eradication& Recovery]`
+  - **ChangeIncident**
+    - changes of request param
+      - `+ data_object.ipdrr_phase: enum value [Preparation,Contain，Eradication& Recovery]`
+      - `- data_object.ipdrr_phase: enum value [Prepartion,Containm，Eradication& Recovery]`
+    - changes of response param
+      - `+ data.data_object.ipdrr_phase: enum value [Preparation,Contain，Eradication& Recovery]`
+      - `- data.data_object.ipdrr_phase: enum value [Prepartion,Containm，Eradication& Recovery]`
+  - **ListDataobjectRelations**
+    - changes of response param
+      - `+ data.data_object.ipdrr_phase: enum value [Preparation,Contain，Eradication& Recovery]`
+      - `- data.data_object.ipdrr_phase: enum value [Prepartion,Containm，Eradication& Recovery]`
+
+### HuaweiCloud SDK SMS
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdateTaskStatus**
+    - changes of request param
+      - `+ operation: enum value [migration_test]`
+  - **UpdateTaskSpeed**
+    - changes of request param
+      - `+ need_migration_test`
+  - **ShowServer**
+    - changes of response param
+      - `+ state: enum value [skipping,premigready,premiging,premiged,premigfailed]`
+  - **ListTasks**
+    - changes of response param
+      - `+ tasks.need_migration_test`
+      - `+ tasks.source_server.state: enum value [skipping,premigready,premiging,premiged,premigfailed]`
+  - **ShowTask**
+    - changes of response param
+      - `+ need_migration_test`
+      - `+ source_server.state: enum value [skipping,premigready,premiging,premiged,premigfailed]`
+  - **UpdateTask**
+    - changes of request param
+      - `+ source_server.state: enum value [skipping]`
+  - **RegisterServer**
+    - changes of request param
+      - `+ state: enum value [skipping]`
+
+### HuaweiCloud SDK VPN
+
+- _API Version_
+  - V5
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListVpnAccessPolicies**
+    - changes of response param
+      - `+ access_policies.type`
+  - **ShowVpnAccessPolicy**
+    - changes of response param
+      - `+ access_policy.type`
+  - **UpdateVpnAccessPolicy**
+    - changes of response param
+      - `+ access_policy.type`
+  - **CreateVpnServer**
+    - changes of request param
+      - `+ vpn_server.server_certificate.source`
+  - **ListVpnServersByVgw**
+    - changes of response param
+      - `+ vpn_servers.server_certificate.source`
+  - **ListVpnServersByProject**
+    - changes of response param
+      - `+ vpn_servers.server_certificate.source`
+
 # 3.1.151 2025-06-05
 
 ### HuaweiCloud SDK Core

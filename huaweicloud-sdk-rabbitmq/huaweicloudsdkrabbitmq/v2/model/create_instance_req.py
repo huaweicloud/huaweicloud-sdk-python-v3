@@ -97,7 +97,7 @@ class CreateInstanceReq:
         :type subnet_id: str
         :param available_zones: 创建节点到指定且有资源的可用区ID。请参考[查询可用区信息](ListAvailableZones.xml)获取可用区ID。  该参数不能为空数组或者数组的值为空。
         :type available_zones: list[str]
-        :param product_id: 产品标识。  [产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。](tag:hws,hws_hk,ctc,hws_eu,g42,hk_g42,tm,hk_tm,sbc,hcs) [产品ID可以从[查询产品规格列表](ListProducts.xml)获取。](tag:cmcc)  如果产品ID为集群类型（即对应的type为cluster），broker_num字段为必选。
+        :param product_id: 产品标识。  产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。  如果产品ID为集群类型（即对应的type为cluster），broker_num字段为必选。
         :type product_id: str
         :param broker_num: 代理个数。  当产品为单机类型，代理个数只能为1；当产品为集群类型，可选3、5、7个代理个数。  产品类型为single时:   - 1  产品类型为cluster时:   - 3   - 5   - 7
         :type broker_num: int
@@ -453,7 +453,7 @@ class CreateInstanceReq:
     def product_id(self):
         r"""Gets the product_id of this CreateInstanceReq.
 
-        产品标识。  [产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。](tag:hws,hws_hk,ctc,hws_eu,g42,hk_g42,tm,hk_tm,sbc,hcs) [产品ID可以从[查询产品规格列表](ListProducts.xml)获取。](tag:cmcc)  如果产品ID为集群类型（即对应的type为cluster），broker_num字段为必选。
+        产品标识。  产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。  如果产品ID为集群类型（即对应的type为cluster），broker_num字段为必选。
 
         :return: The product_id of this CreateInstanceReq.
         :rtype: str
@@ -464,7 +464,7 @@ class CreateInstanceReq:
     def product_id(self, product_id):
         r"""Sets the product_id of this CreateInstanceReq.
 
-        产品标识。  [产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。](tag:hws,hws_hk,ctc,hws_eu,g42,hk_g42,tm,hk_tm,sbc,hcs) [产品ID可以从[查询产品规格列表](ListProducts.xml)获取。](tag:cmcc)  如果产品ID为集群类型（即对应的type为cluster），broker_num字段为必选。
+        产品标识。  产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。  如果产品ID为集群类型（即对应的type为cluster），broker_num字段为必选。
 
         :param product_id: The product_id of this CreateInstanceReq.
         :type product_id: str

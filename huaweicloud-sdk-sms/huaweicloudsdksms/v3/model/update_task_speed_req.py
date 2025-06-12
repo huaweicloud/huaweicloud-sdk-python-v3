@@ -31,6 +31,7 @@ class UpdateTaskSpeedReq:
         'agent_mem_usage': 'float',
         'total_disk_io': 'float',
         'agent_disk_io': 'float',
+        'need_migration_test': 'bool',
         'agent_time': 'str'
     }
 
@@ -49,10 +50,11 @@ class UpdateTaskSpeedReq:
         'agent_mem_usage': 'agent_mem_usage',
         'total_disk_io': 'total_disk_io',
         'agent_disk_io': 'agent_disk_io',
+        'need_migration_test': 'need_migration_test',
         'agent_time': 'agent_time'
     }
 
-    def __init__(self, subtask_name=None, progress=None, replicatesize=None, totalsize=None, process_trace=None, migrate_speed=None, compress_rate=None, remain_time=None, total_cpu_usage=None, agent_cpu_usage=None, total_mem_usage=None, agent_mem_usage=None, total_disk_io=None, agent_disk_io=None, agent_time=None):
+    def __init__(self, subtask_name=None, progress=None, replicatesize=None, totalsize=None, process_trace=None, migrate_speed=None, compress_rate=None, remain_time=None, total_cpu_usage=None, agent_cpu_usage=None, total_mem_usage=None, agent_mem_usage=None, total_disk_io=None, agent_disk_io=None, need_migration_test=None, agent_time=None):
         r"""UpdateTaskSpeedReq
 
         The model defined in huaweicloud sdk
@@ -85,6 +87,8 @@ class UpdateTaskSpeedReq:
         :type total_disk_io: float
         :param agent_disk_io: Agent的磁盘I/O值，单位是MB/s
         :type agent_disk_io: float
+        :param need_migration_test: 是否开启迁移演练
+        :type need_migration_test: bool
         :param agent_time: Agent的当前时间，用于超速检测，因为限速值是可以分时间段设置的
         :type agent_time: str
         """
@@ -105,6 +109,7 @@ class UpdateTaskSpeedReq:
         self._agent_mem_usage = None
         self._total_disk_io = None
         self._agent_disk_io = None
+        self._need_migration_test = None
         self._agent_time = None
         self.discriminator = None
 
@@ -131,6 +136,8 @@ class UpdateTaskSpeedReq:
             self.total_disk_io = total_disk_io
         if agent_disk_io is not None:
             self.agent_disk_io = agent_disk_io
+        if need_migration_test is not None:
+            self.need_migration_test = need_migration_test
         if agent_time is not None:
             self.agent_time = agent_time
 
@@ -441,6 +448,28 @@ class UpdateTaskSpeedReq:
         :type agent_disk_io: float
         """
         self._agent_disk_io = agent_disk_io
+
+    @property
+    def need_migration_test(self):
+        r"""Gets the need_migration_test of this UpdateTaskSpeedReq.
+
+        是否开启迁移演练
+
+        :return: The need_migration_test of this UpdateTaskSpeedReq.
+        :rtype: bool
+        """
+        return self._need_migration_test
+
+    @need_migration_test.setter
+    def need_migration_test(self, need_migration_test):
+        r"""Sets the need_migration_test of this UpdateTaskSpeedReq.
+
+        是否开启迁移演练
+
+        :param need_migration_test: The need_migration_test of this UpdateTaskSpeedReq.
+        :type need_migration_test: bool
+        """
+        self._need_migration_test = need_migration_test
 
     @property
     def agent_time(self):

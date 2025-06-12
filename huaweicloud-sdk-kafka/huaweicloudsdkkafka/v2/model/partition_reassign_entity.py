@@ -35,7 +35,7 @@ class PartitionReassignEntity:
 
         The model defined in huaweicloud sdk
 
-        :param topic: topic名称
+        :param topic: Topic名称
         :type topic: str
         :param brokers: 分区平衡到的broker列表，自动生成分配方案时需指定该参数。
         :type brokers: list[int]
@@ -65,7 +65,7 @@ class PartitionReassignEntity:
     def topic(self):
         r"""Gets the topic of this PartitionReassignEntity.
 
-        topic名称
+        Topic名称
 
         :return: The topic of this PartitionReassignEntity.
         :rtype: str
@@ -76,7 +76,7 @@ class PartitionReassignEntity:
     def topic(self, topic):
         r"""Sets the topic of this PartitionReassignEntity.
 
-        topic名称
+        Topic名称
 
         :param topic: The topic of this PartitionReassignEntity.
         :type topic: str

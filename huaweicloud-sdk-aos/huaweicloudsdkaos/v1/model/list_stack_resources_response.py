@@ -18,29 +18,36 @@ class ListStackResourcesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'stack_resources': 'list[StackResource]'
+        'stack_resources': 'list[StackResource]',
+        'page_info': 'PageInfo'
     }
 
     attribute_map = {
-        'stack_resources': 'stack_resources'
+        'stack_resources': 'stack_resources',
+        'page_info': 'page_info'
     }
 
-    def __init__(self, stack_resources=None):
+    def __init__(self, stack_resources=None, page_info=None):
         r"""ListStackResourcesResponse
 
         The model defined in huaweicloud sdk
 
         :param stack_resources: 资源栈中所管理的资源信息列表
         :type stack_resources: list[:class:`huaweicloudsdkaos.v1.StackResource`]
+        :param page_info: 
+        :type page_info: :class:`huaweicloudsdkaos.v1.PageInfo`
         """
         
         super(ListStackResourcesResponse, self).__init__()
 
         self._stack_resources = None
+        self._page_info = None
         self.discriminator = None
 
         if stack_resources is not None:
             self.stack_resources = stack_resources
+        if page_info is not None:
+            self.page_info = page_info
 
     @property
     def stack_resources(self):
@@ -63,6 +70,24 @@ class ListStackResourcesResponse(SdkResponse):
         :type stack_resources: list[:class:`huaweicloudsdkaos.v1.StackResource`]
         """
         self._stack_resources = stack_resources
+
+    @property
+    def page_info(self):
+        r"""Gets the page_info of this ListStackResourcesResponse.
+
+        :return: The page_info of this ListStackResourcesResponse.
+        :rtype: :class:`huaweicloudsdkaos.v1.PageInfo`
+        """
+        return self._page_info
+
+    @page_info.setter
+    def page_info(self, page_info):
+        r"""Sets the page_info of this ListStackResourcesResponse.
+
+        :param page_info: The page_info of this ListStackResourcesResponse.
+        :type page_info: :class:`huaweicloudsdkaos.v1.PageInfo`
+        """
+        self._page_info = page_info
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -31,7 +31,7 @@ class ShowCeshierarchyRespQueues1:
 
         The model defined in huaweicloud sdk
 
-        :param name: topic名称。
+        :param name: Topic名称。
         :type name: str
         :param partitions: 分区信息。
         :type partitions: list[:class:`huaweicloudsdkkafka.v2.ShowCeshierarchyRespPartitions`]
@@ -52,7 +52,7 @@ class ShowCeshierarchyRespQueues1:
     def name(self):
         r"""Gets the name of this ShowCeshierarchyRespQueues1.
 
-        topic名称。
+        Topic名称。
 
         :return: The name of this ShowCeshierarchyRespQueues1.
         :rtype: str
@@ -63,7 +63,7 @@ class ShowCeshierarchyRespQueues1:
     def name(self, name):
         r"""Sets the name of this ShowCeshierarchyRespQueues1.
 
-        topic名称。
+        Topic名称。
 
         :param name: The name of this ShowCeshierarchyRespQueues1.
         :type name: str

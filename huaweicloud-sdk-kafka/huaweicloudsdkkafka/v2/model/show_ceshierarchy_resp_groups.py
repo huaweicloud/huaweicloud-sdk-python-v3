@@ -33,7 +33,7 @@ class ShowCeshierarchyRespGroups:
 
         :param name: 消费组名称。
         :type name: str
-        :param queues: topic信息。
+        :param queues: Topic信息。
         :type queues: list[:class:`huaweicloudsdkkafka.v2.ShowCeshierarchyRespQueues1`]
         """
         
@@ -74,7 +74,7 @@ class ShowCeshierarchyRespGroups:
     def queues(self):
         r"""Gets the queues of this ShowCeshierarchyRespGroups.
 
-        topic信息。
+        Topic信息。
 
         :return: The queues of this ShowCeshierarchyRespGroups.
         :rtype: list[:class:`huaweicloudsdkkafka.v2.ShowCeshierarchyRespQueues1`]
@@ -85,7 +85,7 @@ class ShowCeshierarchyRespGroups:
     def queues(self, queues):
         r"""Sets the queues of this ShowCeshierarchyRespGroups.
 
-        topic信息。
+        Topic信息。
 
         :param queues: The queues of this ShowCeshierarchyRespGroups.
         :type queues: list[:class:`huaweicloudsdkkafka.v2.ShowCeshierarchyRespQueues1`]

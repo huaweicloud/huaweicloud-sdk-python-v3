@@ -32,7 +32,8 @@ class NodeSpecUpdate:
         'initialized_conditions': 'list[str]',
         'server_enterprise_project_id': 'str',
         'node_nic_spec_update': 'NodeSpecUpdateNodeNicSpecUpdate',
-        'extend_param': 'NodePoolUpdateExtendParam'
+        'extend_param': 'NodePoolUpdateExtendParam',
+        'public_ip': 'NodeEIPSpec'
     }
 
     attribute_map = {
@@ -51,10 +52,11 @@ class NodeSpecUpdate:
         'initialized_conditions': 'initializedConditions',
         'server_enterprise_project_id': 'serverEnterpriseProjectID',
         'node_nic_spec_update': 'nodeNicSpecUpdate',
-        'extend_param': 'extendParam'
+        'extend_param': 'extendParam',
+        'public_ip': 'publicIP'
     }
 
-    def __init__(self, flavor=None, os=None, login=None, root_volume_update=None, data_volumes_update=None, storage=None, runtime=None, taints=None, k8s_tags=None, ecs_group_id=None, user_tags=None, node_name_template=None, initialized_conditions=None, server_enterprise_project_id=None, node_nic_spec_update=None, extend_param=None):
+    def __init__(self, flavor=None, os=None, login=None, root_volume_update=None, data_volumes_update=None, storage=None, runtime=None, taints=None, k8s_tags=None, ecs_group_id=None, user_tags=None, node_name_template=None, initialized_conditions=None, server_enterprise_project_id=None, node_nic_spec_update=None, extend_param=None, public_ip=None):
         r"""NodeSpecUpdate
 
         The model defined in huaweicloud sdk
@@ -91,6 +93,8 @@ class NodeSpecUpdate:
         :type node_nic_spec_update: :class:`huaweicloudsdkcce.v3.NodeSpecUpdateNodeNicSpecUpdate`
         :param extend_param: 
         :type extend_param: :class:`huaweicloudsdkcce.v3.NodePoolUpdateExtendParam`
+        :param public_ip: 
+        :type public_ip: :class:`huaweicloudsdkcce.v3.NodeEIPSpec`
         """
         
         
@@ -111,6 +115,7 @@ class NodeSpecUpdate:
         self._server_enterprise_project_id = None
         self._node_nic_spec_update = None
         self._extend_param = None
+        self._public_ip = None
         self.discriminator = None
 
         if flavor is not None:
@@ -142,6 +147,8 @@ class NodeSpecUpdate:
             self.node_nic_spec_update = node_nic_spec_update
         if extend_param is not None:
             self.extend_param = extend_param
+        if public_ip is not None:
+            self.public_ip = public_ip
 
     @property
     def flavor(self):
@@ -466,6 +473,24 @@ class NodeSpecUpdate:
         :type extend_param: :class:`huaweicloudsdkcce.v3.NodePoolUpdateExtendParam`
         """
         self._extend_param = extend_param
+
+    @property
+    def public_ip(self):
+        r"""Gets the public_ip of this NodeSpecUpdate.
+
+        :return: The public_ip of this NodeSpecUpdate.
+        :rtype: :class:`huaweicloudsdkcce.v3.NodeEIPSpec`
+        """
+        return self._public_ip
+
+    @public_ip.setter
+    def public_ip(self, public_ip):
+        r"""Sets the public_ip of this NodeSpecUpdate.
+
+        :param public_ip: The public_ip of this NodeSpecUpdate.
+        :type public_ip: :class:`huaweicloudsdkcce.v3.NodeEIPSpec`
+        """
+        self._public_ip = public_ip
 
     def to_dict(self):
         """Returns the model properties as a dict"""

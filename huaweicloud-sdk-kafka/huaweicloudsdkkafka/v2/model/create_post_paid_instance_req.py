@@ -119,7 +119,7 @@ class CreatePostPaidInstanceReq:
         :type subnet_id: str
         :param available_zones: 创建节点到指定且有资源的可用区ID。请参考[查询可用区信息](ListAvailableZones.xml)获取可用区ID。  该参数不能为空数组或者数组的值为空。 创建Kafka实例，支持节点部署在1个或3个及3个以上的可用区。在为节点指定可用区时，用逗号分隔开。
         :type available_zones: list[str]
-        :param product_id: 产品ID。  [产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。](tag:hws,hws_hk,ctc,hws_eu,g42,hk_g42,tm,hk_tm,ocb,hws_ocb,dt,hk_sbc,sbc) [产品ID可以从[查询产品规格列表](ListProducts.xml)获取。](tag:cmcc) [创建kafka实例,支持的产品规格有: (product_id/specification/partition_num/storage_space)  00300-30308-0--0/100MB/300/600;  00300-30310-0--0/300MB/900/1200;  00300-30312-0--0/600MB/1800/2400;  00300-30314-0--0/1200MB/1800/4800](tag:dt)
+        :param product_id: 产品ID。  产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。 [创建kafka实例,支持的产品规格有: (product_id/specification/partition_num/storage_space)  00300-30308-0--0/100MB/300/600;  00300-30310-0--0/300MB/900/1200;  00300-30312-0--0/600MB/1800/2400;  00300-30314-0--0/1200MB/1800/4800](tag:dt)
         :type product_id: str
         :param maintain_begin: 维护时间窗开始时间，格式为HH:mm。
         :type maintain_begin: str
@@ -560,7 +560,7 @@ class CreatePostPaidInstanceReq:
     def product_id(self):
         r"""Gets the product_id of this CreatePostPaidInstanceReq.
 
-        产品ID。  [产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。](tag:hws,hws_hk,ctc,hws_eu,g42,hk_g42,tm,hk_tm,ocb,hws_ocb,dt,hk_sbc,sbc) [产品ID可以从[查询产品规格列表](ListProducts.xml)获取。](tag:cmcc) [创建kafka实例,支持的产品规格有: (product_id/specification/partition_num/storage_space)  00300-30308-0--0/100MB/300/600;  00300-30310-0--0/300MB/900/1200;  00300-30312-0--0/600MB/1800/2400;  00300-30314-0--0/1200MB/1800/4800](tag:dt)
+        产品ID。  产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。 [创建kafka实例,支持的产品规格有: (product_id/specification/partition_num/storage_space)  00300-30308-0--0/100MB/300/600;  00300-30310-0--0/300MB/900/1200;  00300-30312-0--0/600MB/1800/2400;  00300-30314-0--0/1200MB/1800/4800](tag:dt)
 
         :return: The product_id of this CreatePostPaidInstanceReq.
         :rtype: str
@@ -571,7 +571,7 @@ class CreatePostPaidInstanceReq:
     def product_id(self, product_id):
         r"""Sets the product_id of this CreatePostPaidInstanceReq.
 
-        产品ID。  [产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。](tag:hws,hws_hk,ctc,hws_eu,g42,hk_g42,tm,hk_tm,ocb,hws_ocb,dt,hk_sbc,sbc) [产品ID可以从[查询产品规格列表](ListProducts.xml)获取。](tag:cmcc) [创建kafka实例,支持的产品规格有: (product_id/specification/partition_num/storage_space)  00300-30308-0--0/100MB/300/600;  00300-30310-0--0/300MB/900/1200;  00300-30312-0--0/600MB/1800/2400;  00300-30314-0--0/1200MB/1800/4800](tag:dt)
+        产品ID。  产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。 [创建kafka实例,支持的产品规格有: (product_id/specification/partition_num/storage_space)  00300-30308-0--0/100MB/300/600;  00300-30310-0--0/300MB/900/1200;  00300-30312-0--0/600MB/1800/2400;  00300-30314-0--0/1200MB/1800/4800](tag:dt)
 
         :param product_id: The product_id of this CreatePostPaidInstanceReq.
         :type product_id: str

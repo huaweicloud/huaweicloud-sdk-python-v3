@@ -32,9 +32,12 @@ class CreateInstanceByEngineReq:
         'enterprise_project_id': 'str',
         'enable_acl': 'bool',
         'ipv6_enable': 'bool',
+        'proxy_enable': 'bool',
         'enable_publicip': 'bool',
         'publicip_id': 'str',
         'broker_num': 'int',
+        'arch_type': 'str',
+        'tls_mode': 'str',
         'bss_param': 'BssParam'
     }
 
@@ -54,13 +57,16 @@ class CreateInstanceByEngineReq:
         'enterprise_project_id': 'enterprise_project_id',
         'enable_acl': 'enable_acl',
         'ipv6_enable': 'ipv6_enable',
+        'proxy_enable': 'proxy_enable',
         'enable_publicip': 'enable_publicip',
         'publicip_id': 'publicip_id',
         'broker_num': 'broker_num',
+        'arch_type': 'arch_type',
+        'tls_mode': 'tls_mode',
         'bss_param': 'bss_param'
     }
 
-    def __init__(self, name=None, description=None, engine=None, engine_version=None, storage_space=None, vpc_id=None, subnet_id=None, security_group_id=None, available_zones=None, product_id=None, ssl_enable=None, storage_spec_code=None, enterprise_project_id=None, enable_acl=None, ipv6_enable=None, enable_publicip=None, publicip_id=None, broker_num=None, bss_param=None):
+    def __init__(self, name=None, description=None, engine=None, engine_version=None, storage_space=None, vpc_id=None, subnet_id=None, security_group_id=None, available_zones=None, product_id=None, ssl_enable=None, storage_spec_code=None, enterprise_project_id=None, enable_acl=None, ipv6_enable=None, proxy_enable=None, enable_publicip=None, publicip_id=None, broker_num=None, arch_type=None, tls_mode=None, bss_param=None):
         r"""CreateInstanceByEngineReq
 
         The model defined in huaweicloud sdk
@@ -95,12 +101,18 @@ class CreateInstanceByEngineReq:
         :type enable_acl: bool
         :param ipv6_enable: 是否支持IPv6。   - true：支持   - false：不支持
         :type ipv6_enable: bool
+        :param proxy_enable: 是否开启Proxy功能。   - true：支持   - false：不支持
+        :type proxy_enable: bool
         :param enable_publicip: 是否开启公网访问功能。默认不开启公网。 - true：开启 - false：不开启
         :type enable_publicip: bool
         :param publicip_id: 实例绑定的弹性IP地址的ID。  以英文逗号隔开多个弹性IP地址的ID。  如果开启了公网访问功能（即enable_publicip为true），该字段为必选。
         :type publicip_id: str
         :param broker_num: 代理个数。
         :type broker_num: int
+        :param arch_type: 架构类型。
+        :type arch_type: str
+        :param tls_mode: 实例使用的安全协议。
+        :type tls_mode: str
         :param bss_param: 
         :type bss_param: :class:`huaweicloudsdkrocketmq.v2.BssParam`
         """
@@ -122,9 +134,12 @@ class CreateInstanceByEngineReq:
         self._enterprise_project_id = None
         self._enable_acl = None
         self._ipv6_enable = None
+        self._proxy_enable = None
         self._enable_publicip = None
         self._publicip_id = None
         self._broker_num = None
+        self._arch_type = None
+        self._tls_mode = None
         self._bss_param = None
         self.discriminator = None
 
@@ -148,11 +163,17 @@ class CreateInstanceByEngineReq:
             self.enable_acl = enable_acl
         if ipv6_enable is not None:
             self.ipv6_enable = ipv6_enable
+        if proxy_enable is not None:
+            self.proxy_enable = proxy_enable
         if enable_publicip is not None:
             self.enable_publicip = enable_publicip
         if publicip_id is not None:
             self.publicip_id = publicip_id
         self.broker_num = broker_num
+        if arch_type is not None:
+            self.arch_type = arch_type
+        if tls_mode is not None:
+            self.tls_mode = tls_mode
         if bss_param is not None:
             self.bss_param = bss_param
 
@@ -487,6 +508,28 @@ class CreateInstanceByEngineReq:
         self._ipv6_enable = ipv6_enable
 
     @property
+    def proxy_enable(self):
+        r"""Gets the proxy_enable of this CreateInstanceByEngineReq.
+
+        是否开启Proxy功能。   - true：支持   - false：不支持
+
+        :return: The proxy_enable of this CreateInstanceByEngineReq.
+        :rtype: bool
+        """
+        return self._proxy_enable
+
+    @proxy_enable.setter
+    def proxy_enable(self, proxy_enable):
+        r"""Sets the proxy_enable of this CreateInstanceByEngineReq.
+
+        是否开启Proxy功能。   - true：支持   - false：不支持
+
+        :param proxy_enable: The proxy_enable of this CreateInstanceByEngineReq.
+        :type proxy_enable: bool
+        """
+        self._proxy_enable = proxy_enable
+
+    @property
     def enable_publicip(self):
         r"""Gets the enable_publicip of this CreateInstanceByEngineReq.
 
@@ -551,6 +594,50 @@ class CreateInstanceByEngineReq:
         :type broker_num: int
         """
         self._broker_num = broker_num
+
+    @property
+    def arch_type(self):
+        r"""Gets the arch_type of this CreateInstanceByEngineReq.
+
+        架构类型。
+
+        :return: The arch_type of this CreateInstanceByEngineReq.
+        :rtype: str
+        """
+        return self._arch_type
+
+    @arch_type.setter
+    def arch_type(self, arch_type):
+        r"""Sets the arch_type of this CreateInstanceByEngineReq.
+
+        架构类型。
+
+        :param arch_type: The arch_type of this CreateInstanceByEngineReq.
+        :type arch_type: str
+        """
+        self._arch_type = arch_type
+
+    @property
+    def tls_mode(self):
+        r"""Gets the tls_mode of this CreateInstanceByEngineReq.
+
+        实例使用的安全协议。
+
+        :return: The tls_mode of this CreateInstanceByEngineReq.
+        :rtype: str
+        """
+        return self._tls_mode
+
+    @tls_mode.setter
+    def tls_mode(self, tls_mode):
+        r"""Sets the tls_mode of this CreateInstanceByEngineReq.
+
+        实例使用的安全协议。
+
+        :param tls_mode: The tls_mode of this CreateInstanceByEngineReq.
+        :type tls_mode: str
+        """
+        self._tls_mode = tls_mode
 
     @property
     def bss_param(self):

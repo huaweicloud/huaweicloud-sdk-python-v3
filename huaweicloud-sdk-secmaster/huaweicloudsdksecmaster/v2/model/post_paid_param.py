@@ -37,7 +37,7 @@ class PostPaidParam:
 
         The model defined in huaweicloud sdk
 
-        :param region_id: 区域ID，如cn-north-4
+        :param region_id: 区域ID
         :type region_id: str
         :param domain_id: domainId
         :type domain_id: str
@@ -71,7 +71,7 @@ class PostPaidParam:
     def region_id(self):
         r"""Gets the region_id of this PostPaidParam.
 
-        区域ID，如cn-north-4
+        区域ID
 
         :return: The region_id of this PostPaidParam.
         :rtype: str
@@ -82,7 +82,7 @@ class PostPaidParam:
     def region_id(self, region_id):
         r"""Sets the region_id of this PostPaidParam.
 
-        区域ID，如cn-north-4
+        区域ID
 
         :param region_id: The region_id of this PostPaidParam.
         :type region_id: str

@@ -31,7 +31,7 @@ class ShowGroupsRespGroupAssignment:
 
         The model defined in huaweicloud sdk
 
-        :param topic: topic名称。
+        :param topic: Topic名称。
         :type topic: str
         :param partitions: 分区列表。
         :type partitions: list[int]
@@ -52,7 +52,7 @@ class ShowGroupsRespGroupAssignment:
     def topic(self):
         r"""Gets the topic of this ShowGroupsRespGroupAssignment.
 
-        topic名称。
+        Topic名称。
 
         :return: The topic of this ShowGroupsRespGroupAssignment.
         :rtype: str
@@ -63,7 +63,7 @@ class ShowGroupsRespGroupAssignment:
     def topic(self, topic):
         r"""Sets the topic of this ShowGroupsRespGroupAssignment.
 
-        topic名称。
+        Topic名称。
 
         :param topic: The topic of this ShowGroupsRespGroupAssignment.
         :type topic: str

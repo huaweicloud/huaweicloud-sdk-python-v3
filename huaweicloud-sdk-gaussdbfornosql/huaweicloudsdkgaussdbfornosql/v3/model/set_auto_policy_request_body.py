@@ -19,7 +19,7 @@ class SetAutoPolicyRequestBody:
     openapi_types = {
         'instance_ids': 'list[str]',
         'switch_option': 'str',
-        'policy': 'list[DiskAutoExpansionPolicy]'
+        'policy': 'DiskAutoExpansionPolicy'
     }
 
     attribute_map = {
@@ -37,8 +37,8 @@ class SetAutoPolicyRequestBody:
         :type instance_ids: list[str]
         :param switch_option: 自动扩容开关。  “on”，表示开启磁盘自动扩容策略。  “off”，表示关闭磁盘自动扩容策略。 默认值为“on”。
         :type switch_option: str
-        :param policy: 磁盘自动扩容策略
-        :type policy: list[:class:`huaweicloudsdkgaussdbfornosql.v3.DiskAutoExpansionPolicy`]
+        :param policy: 
+        :type policy: :class:`huaweicloudsdkgaussdbfornosql.v3.DiskAutoExpansionPolicy`
         """
         
         
@@ -102,10 +102,8 @@ class SetAutoPolicyRequestBody:
     def policy(self):
         r"""Gets the policy of this SetAutoPolicyRequestBody.
 
-        磁盘自动扩容策略
-
         :return: The policy of this SetAutoPolicyRequestBody.
-        :rtype: list[:class:`huaweicloudsdkgaussdbfornosql.v3.DiskAutoExpansionPolicy`]
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.DiskAutoExpansionPolicy`
         """
         return self._policy
 
@@ -113,10 +111,8 @@ class SetAutoPolicyRequestBody:
     def policy(self, policy):
         r"""Sets the policy of this SetAutoPolicyRequestBody.
 
-        磁盘自动扩容策略
-
         :param policy: The policy of this SetAutoPolicyRequestBody.
-        :type policy: list[:class:`huaweicloudsdkgaussdbfornosql.v3.DiskAutoExpansionPolicy`]
+        :type policy: :class:`huaweicloudsdkgaussdbfornosql.v3.DiskAutoExpansionPolicy`
         """
         self._policy = policy
 

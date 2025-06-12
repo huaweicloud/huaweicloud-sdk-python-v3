@@ -18,29 +18,36 @@ class ListPrivateModulesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'modules': 'list[PrivateModuleSummary]'
+        'modules': 'list[PrivateModuleSummary]',
+        'page_info': 'PageInfo'
     }
 
     attribute_map = {
-        'modules': 'modules'
+        'modules': 'modules',
+        'page_info': 'page_info'
     }
 
-    def __init__(self, modules=None):
+    def __init__(self, modules=None, page_info=None):
         r"""ListPrivateModulesResponse
 
         The model defined in huaweicloud sdk
 
         :param modules: 私有模块的列表。默认以创建时间升序排序。
         :type modules: list[:class:`huaweicloudsdkaos.v1.PrivateModuleSummary`]
+        :param page_info: 
+        :type page_info: :class:`huaweicloudsdkaos.v1.PageInfo`
         """
         
         super(ListPrivateModulesResponse, self).__init__()
 
         self._modules = None
+        self._page_info = None
         self.discriminator = None
 
         if modules is not None:
             self.modules = modules
+        if page_info is not None:
+            self.page_info = page_info
 
     @property
     def modules(self):
@@ -63,6 +70,24 @@ class ListPrivateModulesResponse(SdkResponse):
         :type modules: list[:class:`huaweicloudsdkaos.v1.PrivateModuleSummary`]
         """
         self._modules = modules
+
+    @property
+    def page_info(self):
+        r"""Gets the page_info of this ListPrivateModulesResponse.
+
+        :return: The page_info of this ListPrivateModulesResponse.
+        :rtype: :class:`huaweicloudsdkaos.v1.PageInfo`
+        """
+        return self._page_info
+
+    @page_info.setter
+    def page_info(self, page_info):
+        r"""Sets the page_info of this ListPrivateModulesResponse.
+
+        :param page_info: The page_info of this ListPrivateModulesResponse.
+        :type page_info: :class:`huaweicloudsdkaos.v1.PageInfo`
+        """
+        self._page_info = page_info
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -33,7 +33,7 @@ class DeleteConsumerGroupOffsetsResponseEntity:
 
         The model defined in huaweicloud sdk
 
-        :param name: topic名称
+        :param name: Topic名称
         :type name: str
         :param success: 消费位点删除是否成功
         :type success: bool
@@ -57,7 +57,7 @@ class DeleteConsumerGroupOffsetsResponseEntity:
     def name(self):
         r"""Gets the name of this DeleteConsumerGroupOffsetsResponseEntity.
 
-        topic名称
+        Topic名称
 
         :return: The name of this DeleteConsumerGroupOffsetsResponseEntity.
         :rtype: str
@@ -68,7 +68,7 @@ class DeleteConsumerGroupOffsetsResponseEntity:
     def name(self, name):
         r"""Sets the name of this DeleteConsumerGroupOffsetsResponseEntity.
 
-        topic名称
+        Topic名称
 
         :param name: The name of this DeleteConsumerGroupOffsetsResponseEntity.
         :type name: str

@@ -18,29 +18,54 @@ class ListPrivateHooksResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'page_info': 'PageInfo',
         'hooks': 'list[PrivateHookSummary]'
     }
 
     attribute_map = {
+        'page_info': 'page_info',
         'hooks': 'hooks'
     }
 
-    def __init__(self, hooks=None):
+    def __init__(self, page_info=None, hooks=None):
         r"""ListPrivateHooksResponse
 
         The model defined in huaweicloud sdk
 
+        :param page_info: 
+        :type page_info: :class:`huaweicloudsdkaos.v1.PageInfo`
         :param hooks: 私有hook的列表。默认以创建时间降序排序。
         :type hooks: list[:class:`huaweicloudsdkaos.v1.PrivateHookSummary`]
         """
         
         super(ListPrivateHooksResponse, self).__init__()
 
+        self._page_info = None
         self._hooks = None
         self.discriminator = None
 
+        if page_info is not None:
+            self.page_info = page_info
         if hooks is not None:
             self.hooks = hooks
+
+    @property
+    def page_info(self):
+        r"""Gets the page_info of this ListPrivateHooksResponse.
+
+        :return: The page_info of this ListPrivateHooksResponse.
+        :rtype: :class:`huaweicloudsdkaos.v1.PageInfo`
+        """
+        return self._page_info
+
+    @page_info.setter
+    def page_info(self, page_info):
+        r"""Sets the page_info of this ListPrivateHooksResponse.
+
+        :param page_info: The page_info of this ListPrivateHooksResponse.
+        :type page_info: :class:`huaweicloudsdkaos.v1.PageInfo`
+        """
+        self._page_info = page_info
 
     @property
     def hooks(self):

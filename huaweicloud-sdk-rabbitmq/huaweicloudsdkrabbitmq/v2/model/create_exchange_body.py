@@ -21,7 +21,8 @@ class CreateExchangeBody:
         'type': 'str',
         'durable': 'bool',
         'auto_delete': 'bool',
-        'internal': 'bool'
+        'internal': 'bool',
+        'arguments': 'object'
     }
 
     attribute_map = {
@@ -29,10 +30,11 @@ class CreateExchangeBody:
         'type': 'type',
         'durable': 'durable',
         'auto_delete': 'auto_delete',
-        'internal': 'internal'
+        'internal': 'internal',
+        'arguments': 'arguments'
     }
 
-    def __init__(self, name=None, type=None, durable=None, auto_delete=None, internal=None):
+    def __init__(self, name=None, type=None, durable=None, auto_delete=None, internal=None, arguments=None):
         r"""CreateExchangeBody
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class CreateExchangeBody:
         :type auto_delete: bool
         :param internal: 内部Exchange[（AMQP版本不支持内部Exchange，不涉及此参数）](tag:hws,hws_hk)。
         :type internal: bool
+        :param arguments: 参数列表
+        :type arguments: object
         """
         
         
@@ -56,6 +60,7 @@ class CreateExchangeBody:
         self._durable = None
         self._auto_delete = None
         self._internal = None
+        self._arguments = None
         self.discriminator = None
 
         self.name = name
@@ -65,6 +70,8 @@ class CreateExchangeBody:
         self.auto_delete = auto_delete
         if internal is not None:
             self.internal = internal
+        if arguments is not None:
+            self.arguments = arguments
 
     @property
     def name(self):
@@ -175,6 +182,28 @@ class CreateExchangeBody:
         :type internal: bool
         """
         self._internal = internal
+
+    @property
+    def arguments(self):
+        r"""Gets the arguments of this CreateExchangeBody.
+
+        参数列表
+
+        :return: The arguments of this CreateExchangeBody.
+        :rtype: object
+        """
+        return self._arguments
+
+    @arguments.setter
+    def arguments(self, arguments):
+        r"""Sets the arguments of this CreateExchangeBody.
+
+        参数列表
+
+        :param arguments: The arguments of this CreateExchangeBody.
+        :type arguments: object
+        """
+        self._arguments = arguments
 
     def to_dict(self):
         """Returns the model properties as a dict"""

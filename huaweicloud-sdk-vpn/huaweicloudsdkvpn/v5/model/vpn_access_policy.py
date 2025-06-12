@@ -19,6 +19,7 @@ class VpnAccessPolicy:
     openapi_types = {
         'id': 'str',
         'name': 'str',
+        'type': 'str',
         'user_group_id': 'str',
         'user_group_name': 'str',
         'description': 'str',
@@ -30,6 +31,7 @@ class VpnAccessPolicy:
     attribute_map = {
         'id': 'id',
         'name': 'name',
+        'type': 'type',
         'user_group_id': 'user_group_id',
         'user_group_name': 'user_group_name',
         'description': 'description',
@@ -38,7 +40,7 @@ class VpnAccessPolicy:
         'updated_at': 'updated_at'
     }
 
-    def __init__(self, id=None, name=None, user_group_id=None, user_group_name=None, description=None, dest_ip_cidrs=None, created_at=None, updated_at=None):
+    def __init__(self, id=None, name=None, type=None, user_group_id=None, user_group_name=None, description=None, dest_ip_cidrs=None, created_at=None, updated_at=None):
         r"""VpnAccessPolicy
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class VpnAccessPolicy:
         :type id: str
         :param name: 访问策略名称
         :type name: str
+        :param type: 访问策略类型
+        :type type: str
         :param user_group_id: 关联用户组ID
         :type user_group_id: str
         :param user_group_name: 关联用户组名称
@@ -65,6 +69,7 @@ class VpnAccessPolicy:
 
         self._id = None
         self._name = None
+        self._type = None
         self._user_group_id = None
         self._user_group_name = None
         self._description = None
@@ -77,6 +82,8 @@ class VpnAccessPolicy:
             self.id = id
         if name is not None:
             self.name = name
+        if type is not None:
+            self.type = type
         if user_group_id is not None:
             self.user_group_id = user_group_id
         if user_group_name is not None:
@@ -133,6 +140,28 @@ class VpnAccessPolicy:
         :type name: str
         """
         self._name = name
+
+    @property
+    def type(self):
+        r"""Gets the type of this VpnAccessPolicy.
+
+        访问策略类型
+
+        :return: The type of this VpnAccessPolicy.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        r"""Sets the type of this VpnAccessPolicy.
+
+        访问策略类型
+
+        :param type: The type of this VpnAccessPolicy.
+        :type type: str
+        """
+        self._type = type
 
     @property
     def user_group_id(self):

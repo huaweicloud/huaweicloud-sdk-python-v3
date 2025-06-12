@@ -43,21 +43,21 @@ class CreateInstanceTopicReq:
 
         The model defined in huaweicloud sdk
 
-        :param id: topic名称，长度为3-200，以字母开头且只支持大小写字母、中横线、下划线、点以及数字。
+        :param id: Topic名称，长度为3-200，以字母开头且只支持大小写字母、中横线、下划线、点以及数字。
         :type id: str
         :param replication: 副本数，配置数据的可靠性。 取值范围：1-3。
         :type replication: int
         :param sync_message_flush: 是否使用同步落盘。默认值为false。同步落盘会导致性能降低。
         :type sync_message_flush: bool
-        :param partition: topic分区数，设置消费的并发数。 取值范围：1-200。
+        :param partition: Topic分区数，设置消费的并发数。 取值范围：1-200。
         :type partition: int
         :param sync_replication: 是否开启同步复制，开启后，客户端生产消息时相应的也要设置acks&#x3D;-1，否则不生效，默认关闭。
         :type sync_replication: bool
         :param retention_time: 消息老化时间。默认值为72。 取值范围1-720，单位小时。
         :type retention_time: int
-        :param topic_other_configs: topic配置
+        :param topic_other_configs: Topic配置
         :type topic_other_configs: list[:class:`huaweicloudsdkkafka.v2.CreateInstanceTopicReqTopicOtherConfigs`]
-        :param topic_desc: topic描述
+        :param topic_desc: Topic描述
         :type topic_desc: str
         """
         
@@ -93,7 +93,7 @@ class CreateInstanceTopicReq:
     def id(self):
         r"""Gets the id of this CreateInstanceTopicReq.
 
-        topic名称，长度为3-200，以字母开头且只支持大小写字母、中横线、下划线、点以及数字。
+        Topic名称，长度为3-200，以字母开头且只支持大小写字母、中横线、下划线、点以及数字。
 
         :return: The id of this CreateInstanceTopicReq.
         :rtype: str
@@ -104,7 +104,7 @@ class CreateInstanceTopicReq:
     def id(self, id):
         r"""Sets the id of this CreateInstanceTopicReq.
 
-        topic名称，长度为3-200，以字母开头且只支持大小写字母、中横线、下划线、点以及数字。
+        Topic名称，长度为3-200，以字母开头且只支持大小写字母、中横线、下划线、点以及数字。
 
         :param id: The id of this CreateInstanceTopicReq.
         :type id: str
@@ -159,7 +159,7 @@ class CreateInstanceTopicReq:
     def partition(self):
         r"""Gets the partition of this CreateInstanceTopicReq.
 
-        topic分区数，设置消费的并发数。 取值范围：1-200。
+        Topic分区数，设置消费的并发数。 取值范围：1-200。
 
         :return: The partition of this CreateInstanceTopicReq.
         :rtype: int
@@ -170,7 +170,7 @@ class CreateInstanceTopicReq:
     def partition(self, partition):
         r"""Sets the partition of this CreateInstanceTopicReq.
 
-        topic分区数，设置消费的并发数。 取值范围：1-200。
+        Topic分区数，设置消费的并发数。 取值范围：1-200。
 
         :param partition: The partition of this CreateInstanceTopicReq.
         :type partition: int
@@ -225,7 +225,7 @@ class CreateInstanceTopicReq:
     def topic_other_configs(self):
         r"""Gets the topic_other_configs of this CreateInstanceTopicReq.
 
-        topic配置
+        Topic配置
 
         :return: The topic_other_configs of this CreateInstanceTopicReq.
         :rtype: list[:class:`huaweicloudsdkkafka.v2.CreateInstanceTopicReqTopicOtherConfigs`]
@@ -236,7 +236,7 @@ class CreateInstanceTopicReq:
     def topic_other_configs(self, topic_other_configs):
         r"""Sets the topic_other_configs of this CreateInstanceTopicReq.
 
-        topic配置
+        Topic配置
 
         :param topic_other_configs: The topic_other_configs of this CreateInstanceTopicReq.
         :type topic_other_configs: list[:class:`huaweicloudsdkkafka.v2.CreateInstanceTopicReqTopicOtherConfigs`]
@@ -247,7 +247,7 @@ class CreateInstanceTopicReq:
     def topic_desc(self):
         r"""Gets the topic_desc of this CreateInstanceTopicReq.
 
-        topic描述
+        Topic描述
 
         :return: The topic_desc of this CreateInstanceTopicReq.
         :rtype: str
@@ -258,7 +258,7 @@ class CreateInstanceTopicReq:
     def topic_desc(self, topic_desc):
         r"""Sets the topic_desc of this CreateInstanceTopicReq.
 
-        topic描述
+        Topic描述
 
         :param topic_desc: The topic_desc of this CreateInstanceTopicReq.
         :type topic_desc: str

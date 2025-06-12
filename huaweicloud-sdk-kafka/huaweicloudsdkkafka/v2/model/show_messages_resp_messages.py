@@ -37,7 +37,7 @@ class ShowMessagesRespMessages:
 
         The model defined in huaweicloud sdk
 
-        :param topic: **参数解释**： topic名称。 **取值范围**： 不涉及。
+        :param topic: **参数解释**： Topic名称。 **取值范围**： 不涉及。
         :type topic: str
         :param partition: **参数解释**： 分区编号。 **取值范围**： 不涉及。
         :type partition: int
@@ -73,7 +73,7 @@ class ShowMessagesRespMessages:
     def topic(self):
         r"""Gets the topic of this ShowMessagesRespMessages.
 
-        **参数解释**： topic名称。 **取值范围**： 不涉及。
+        **参数解释**： Topic名称。 **取值范围**： 不涉及。
 
         :return: The topic of this ShowMessagesRespMessages.
         :rtype: str
@@ -84,7 +84,7 @@ class ShowMessagesRespMessages:
     def topic(self, topic):
         r"""Sets the topic of this ShowMessagesRespMessages.
 
-        **参数解释**： topic名称。 **取值范围**： 不涉及。
+        **参数解释**： Topic名称。 **取值范围**： 不涉及。
 
         :param topic: The topic of this ShowMessagesRespMessages.
         :type topic: str

@@ -31,7 +31,7 @@ class AccessPolicyTopicEntity:
 
         The model defined in huaweicloud sdk
 
-        :param name: topic名称。
+        :param name: Topic名称。
         :type name: str
         :param policies: 权限列表。
         :type policies: list[:class:`huaweicloudsdkkafka.v2.AccessPolicyEntity`]
@@ -50,7 +50,7 @@ class AccessPolicyTopicEntity:
     def name(self):
         r"""Gets the name of this AccessPolicyTopicEntity.
 
-        topic名称。
+        Topic名称。
 
         :return: The name of this AccessPolicyTopicEntity.
         :rtype: str
@@ -61,7 +61,7 @@ class AccessPolicyTopicEntity:
     def name(self, name):
         r"""Sets the name of this AccessPolicyTopicEntity.
 
-        topic名称。
+        Topic名称。
 
         :param name: The name of this AccessPolicyTopicEntity.
         :type name: str

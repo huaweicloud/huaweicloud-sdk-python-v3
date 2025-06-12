@@ -33,11 +33,11 @@ class SendKafkaMessageRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param topic: Kafka的topic
+        :param topic: Kafka的Topic
         :type topic: str
         :param body: 消息内容
         :type body: str
-        :param property_list: topic的分区信息等
+        :param property_list: Topic的分区信息等
         :type property_list: list[:class:`huaweicloudsdkkafka.v2.SendKafkaMessageRequestBodyPropertyList`]
         """
         
@@ -56,7 +56,7 @@ class SendKafkaMessageRequestBody:
     def topic(self):
         r"""Gets the topic of this SendKafkaMessageRequestBody.
 
-        Kafka的topic
+        Kafka的Topic
 
         :return: The topic of this SendKafkaMessageRequestBody.
         :rtype: str
@@ -67,7 +67,7 @@ class SendKafkaMessageRequestBody:
     def topic(self, topic):
         r"""Sets the topic of this SendKafkaMessageRequestBody.
 
-        Kafka的topic
+        Kafka的Topic
 
         :param topic: The topic of this SendKafkaMessageRequestBody.
         :type topic: str
@@ -100,7 +100,7 @@ class SendKafkaMessageRequestBody:
     def property_list(self):
         r"""Gets the property_list of this SendKafkaMessageRequestBody.
 
-        topic的分区信息等
+        Topic的分区信息等
 
         :return: The property_list of this SendKafkaMessageRequestBody.
         :rtype: list[:class:`huaweicloudsdkkafka.v2.SendKafkaMessageRequestBodyPropertyList`]
@@ -111,7 +111,7 @@ class SendKafkaMessageRequestBody:
     def property_list(self, property_list):
         r"""Sets the property_list of this SendKafkaMessageRequestBody.
 
-        topic的分区信息等
+        Topic的分区信息等
 
         :param property_list: The property_list of this SendKafkaMessageRequestBody.
         :type property_list: list[:class:`huaweicloudsdkkafka.v2.SendKafkaMessageRequestBodyPropertyList`]

@@ -32,7 +32,7 @@ class ListWorkspacesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param workspaces: 空间信息
+        :param workspaces: list of informations of workspaces
         :type workspaces: list[:class:`huaweicloudsdksecmaster.v2.CreateWorkspaceResponseBody`]
         :param count: 数据总量
         :type count: float
@@ -53,7 +53,7 @@ class ListWorkspacesResponse(SdkResponse):
     def workspaces(self):
         r"""Gets the workspaces of this ListWorkspacesResponse.
 
-        空间信息
+        list of informations of workspaces
 
         :return: The workspaces of this ListWorkspacesResponse.
         :rtype: list[:class:`huaweicloudsdksecmaster.v2.CreateWorkspaceResponseBody`]
@@ -64,7 +64,7 @@ class ListWorkspacesResponse(SdkResponse):
     def workspaces(self, workspaces):
         r"""Sets the workspaces of this ListWorkspacesResponse.
 
-        空间信息
+        list of informations of workspaces
 
         :param workspaces: The workspaces of this ListWorkspacesResponse.
         :type workspaces: list[:class:`huaweicloudsdksecmaster.v2.CreateWorkspaceResponseBody`]

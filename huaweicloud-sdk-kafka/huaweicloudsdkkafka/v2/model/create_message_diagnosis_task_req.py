@@ -33,7 +33,7 @@ class CreateMessageDiagnosisTaskReq:
 
         :param group_name: 消费组名称
         :type group_name: str
-        :param topic_name: topic名称
+        :param topic_name: Topic名称
         :type topic_name: str
         """
         
@@ -72,7 +72,7 @@ class CreateMessageDiagnosisTaskReq:
     def topic_name(self):
         r"""Gets the topic_name of this CreateMessageDiagnosisTaskReq.
 
-        topic名称
+        Topic名称
 
         :return: The topic_name of this CreateMessageDiagnosisTaskReq.
         :rtype: str
@@ -83,7 +83,7 @@ class CreateMessageDiagnosisTaskReq:
     def topic_name(self, topic_name):
         r"""Sets the topic_name of this CreateMessageDiagnosisTaskReq.
 
-        topic名称
+        Topic名称
 
         :param topic_name: The topic_name of this CreateMessageDiagnosisTaskReq.
         :type topic_name: str

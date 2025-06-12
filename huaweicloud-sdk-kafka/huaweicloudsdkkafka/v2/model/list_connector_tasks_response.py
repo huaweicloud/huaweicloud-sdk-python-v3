@@ -36,13 +36,13 @@ class ListConnectorTasksResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param tasks: Smart Connector任务详情。
+        :param tasks: Smart Connect任务详情。
         :type tasks: list[:class:`huaweicloudsdkkafka.v2.SmartConnectTaskEntity`]
-        :param total_number: Smart Connector任务数。
+        :param total_number: Smart Connect任务数。
         :type total_number: int
-        :param max_tasks: Smart Connector最大任务数。
+        :param max_tasks: Smart Connect最大任务数。
         :type max_tasks: int
-        :param quota_tasks: Smart Connector任务配额。
+        :param quota_tasks: Smart Connect任务配额。
         :type quota_tasks: int
         """
         
@@ -67,7 +67,7 @@ class ListConnectorTasksResponse(SdkResponse):
     def tasks(self):
         r"""Gets the tasks of this ListConnectorTasksResponse.
 
-        Smart Connector任务详情。
+        Smart Connect任务详情。
 
         :return: The tasks of this ListConnectorTasksResponse.
         :rtype: list[:class:`huaweicloudsdkkafka.v2.SmartConnectTaskEntity`]
@@ -78,7 +78,7 @@ class ListConnectorTasksResponse(SdkResponse):
     def tasks(self, tasks):
         r"""Sets the tasks of this ListConnectorTasksResponse.
 
-        Smart Connector任务详情。
+        Smart Connect任务详情。
 
         :param tasks: The tasks of this ListConnectorTasksResponse.
         :type tasks: list[:class:`huaweicloudsdkkafka.v2.SmartConnectTaskEntity`]
@@ -89,7 +89,7 @@ class ListConnectorTasksResponse(SdkResponse):
     def total_number(self):
         r"""Gets the total_number of this ListConnectorTasksResponse.
 
-        Smart Connector任务数。
+        Smart Connect任务数。
 
         :return: The total_number of this ListConnectorTasksResponse.
         :rtype: int
@@ -100,7 +100,7 @@ class ListConnectorTasksResponse(SdkResponse):
     def total_number(self, total_number):
         r"""Sets the total_number of this ListConnectorTasksResponse.
 
-        Smart Connector任务数。
+        Smart Connect任务数。
 
         :param total_number: The total_number of this ListConnectorTasksResponse.
         :type total_number: int
@@ -111,7 +111,7 @@ class ListConnectorTasksResponse(SdkResponse):
     def max_tasks(self):
         r"""Gets the max_tasks of this ListConnectorTasksResponse.
 
-        Smart Connector最大任务数。
+        Smart Connect最大任务数。
 
         :return: The max_tasks of this ListConnectorTasksResponse.
         :rtype: int
@@ -122,7 +122,7 @@ class ListConnectorTasksResponse(SdkResponse):
     def max_tasks(self, max_tasks):
         r"""Sets the max_tasks of this ListConnectorTasksResponse.
 
-        Smart Connector最大任务数。
+        Smart Connect最大任务数。
 
         :param max_tasks: The max_tasks of this ListConnectorTasksResponse.
         :type max_tasks: int
@@ -133,7 +133,7 @@ class ListConnectorTasksResponse(SdkResponse):
     def quota_tasks(self):
         r"""Gets the quota_tasks of this ListConnectorTasksResponse.
 
-        Smart Connector任务配额。
+        Smart Connect任务配额。
 
         :return: The quota_tasks of this ListConnectorTasksResponse.
         :rtype: int
@@ -144,7 +144,7 @@ class ListConnectorTasksResponse(SdkResponse):
     def quota_tasks(self, quota_tasks):
         r"""Sets the quota_tasks of this ListConnectorTasksResponse.
 
-        Smart Connector任务配额。
+        Smart Connect任务配额。
 
         :param quota_tasks: The quota_tasks of this ListConnectorTasksResponse.
         :type quota_tasks: int

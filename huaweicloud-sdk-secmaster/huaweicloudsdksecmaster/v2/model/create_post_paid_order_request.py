@@ -33,7 +33,7 @@ class CreatePostPaidOrderRequest:
 
         The model defined in huaweicloud sdk
 
-        :param x_language: 用户当前语言环境
+        :param x_language: 用户当前语言环境 zh-cn or en-us.
         :type x_language: str
         :param project_id: 租户项目ID
         :type project_id: str
@@ -57,7 +57,7 @@ class CreatePostPaidOrderRequest:
     def x_language(self):
         r"""Gets the x_language of this CreatePostPaidOrderRequest.
 
-        用户当前语言环境
+        用户当前语言环境 zh-cn or en-us.
 
         :return: The x_language of this CreatePostPaidOrderRequest.
         :rtype: str
@@ -68,7 +68,7 @@ class CreatePostPaidOrderRequest:
     def x_language(self, x_language):
         r"""Sets the x_language of this CreatePostPaidOrderRequest.
 
-        用户当前语言环境
+        用户当前语言环境 zh-cn or en-us.
 
         :param x_language: The x_language of this CreatePostPaidOrderRequest.
         :type x_language: str

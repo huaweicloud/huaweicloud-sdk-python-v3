@@ -20,6 +20,7 @@ class UpdateServerOption:
         'name': 'str',
         'description': 'str',
         'hostname': 'str',
+        'security_options': 'SecurityOptions',
         'user_data': 'str'
     }
 
@@ -27,10 +28,11 @@ class UpdateServerOption:
         'name': 'name',
         'description': 'description',
         'hostname': 'hostname',
+        'security_options': 'security_options',
         'user_data': 'user_data'
     }
 
-    def __init__(self, name=None, description=None, hostname=None, user_data=None):
+    def __init__(self, name=None, description=None, hostname=None, security_options=None, user_data=None):
         r"""UpdateServerOption
 
         The model defined in huaweicloud sdk
@@ -41,6 +43,8 @@ class UpdateServerOption:
         :type description: str
         :param hostname: 修改云服务hostname。  命令规范：长度为 [1-64] 个字符，允许使用点号(.)分隔字符成多段，每段允许使用大小写字母、数字或连字符(-)，但不能连续使用点号(.)或连字符(-),不能以点号(.)或连字符(-)开头或结尾，不能出现（.-）和（-.）。
         :type hostname: str
+        :param security_options: 
+        :type security_options: :class:`huaweicloudsdkecs.v2.SecurityOptions`
         :param user_data: 修改云服务器云主机过程中待注入实例自定义数据。支持注入文本、文本文件。  示例：  base64编码前：   Linux服务器：     #!/bin/bash     echo user_test &gt; /home/user.txt   Windows服务器：     rem cmd     echo 111 &gt; c:\\aaa.txt  base64编码后：   Linux服务器：IyEvYmluL2Jhc2gKZWNobyB1c2VyX3Rlc3QgPiAvaG9tZS91c2VyLnR4dA&#x3D;&#x3D;   Windows服务器：cmVtIGNtZA0KZWNobyAxMTEgJmd0OyBjOlxhYWEudHh0
         :type user_data: str
         """
@@ -50,6 +54,7 @@ class UpdateServerOption:
         self._name = None
         self._description = None
         self._hostname = None
+        self._security_options = None
         self._user_data = None
         self.discriminator = None
 
@@ -59,6 +64,8 @@ class UpdateServerOption:
             self.description = description
         if hostname is not None:
             self.hostname = hostname
+        if security_options is not None:
+            self.security_options = security_options
         if user_data is not None:
             self.user_data = user_data
 
@@ -127,6 +134,24 @@ class UpdateServerOption:
         :type hostname: str
         """
         self._hostname = hostname
+
+    @property
+    def security_options(self):
+        r"""Gets the security_options of this UpdateServerOption.
+
+        :return: The security_options of this UpdateServerOption.
+        :rtype: :class:`huaweicloudsdkecs.v2.SecurityOptions`
+        """
+        return self._security_options
+
+    @security_options.setter
+    def security_options(self, security_options):
+        r"""Sets the security_options of this UpdateServerOption.
+
+        :param security_options: The security_options of this UpdateServerOption.
+        :type security_options: :class:`huaweicloudsdkecs.v2.SecurityOptions`
+        """
+        self._security_options = security_options
 
     @property
     def user_data(self):

@@ -51,13 +51,13 @@ class ListInstanceConsumerGroupTopicsRequest:
         :type group: str
         :param offset: 偏移量，表示从此偏移量开始查询， offset大于等于0。
         :type offset: int
-        :param limit: 当次查询返回的最大topic个数，默认值为10，取值范围为1~50。
+        :param limit: 当次查询返回的最大Topic个数，默认值为10，取值范围为1~50。
         :type limit: int
-        :param sort_key: 排序规则： - topic：按topic名称排序。 - partition：按分区数排序。 - messages：按消息数量排序，默认方式。
+        :param sort_key: 排序规则： - topic：按Topic名称排序。 - partition：按分区数排序。 - messages：按消息数量排序，默认方式。
         :type sort_key: str
         :param sort_dir: 排序方式。 - asc：升序。 - desc：降序，默认方式。
         :type sort_dir: str
-        :param topic: topic名称。
+        :param topic: Topic名称。
         :type topic: str
         """
         
@@ -179,7 +179,7 @@ class ListInstanceConsumerGroupTopicsRequest:
     def limit(self):
         r"""Gets the limit of this ListInstanceConsumerGroupTopicsRequest.
 
-        当次查询返回的最大topic个数，默认值为10，取值范围为1~50。
+        当次查询返回的最大Topic个数，默认值为10，取值范围为1~50。
 
         :return: The limit of this ListInstanceConsumerGroupTopicsRequest.
         :rtype: int
@@ -190,7 +190,7 @@ class ListInstanceConsumerGroupTopicsRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListInstanceConsumerGroupTopicsRequest.
 
-        当次查询返回的最大topic个数，默认值为10，取值范围为1~50。
+        当次查询返回的最大Topic个数，默认值为10，取值范围为1~50。
 
         :param limit: The limit of this ListInstanceConsumerGroupTopicsRequest.
         :type limit: int
@@ -201,7 +201,7 @@ class ListInstanceConsumerGroupTopicsRequest:
     def sort_key(self):
         r"""Gets the sort_key of this ListInstanceConsumerGroupTopicsRequest.
 
-        排序规则： - topic：按topic名称排序。 - partition：按分区数排序。 - messages：按消息数量排序，默认方式。
+        排序规则： - topic：按Topic名称排序。 - partition：按分区数排序。 - messages：按消息数量排序，默认方式。
 
         :return: The sort_key of this ListInstanceConsumerGroupTopicsRequest.
         :rtype: str
@@ -212,7 +212,7 @@ class ListInstanceConsumerGroupTopicsRequest:
     def sort_key(self, sort_key):
         r"""Sets the sort_key of this ListInstanceConsumerGroupTopicsRequest.
 
-        排序规则： - topic：按topic名称排序。 - partition：按分区数排序。 - messages：按消息数量排序，默认方式。
+        排序规则： - topic：按Topic名称排序。 - partition：按分区数排序。 - messages：按消息数量排序，默认方式。
 
         :param sort_key: The sort_key of this ListInstanceConsumerGroupTopicsRequest.
         :type sort_key: str
@@ -245,7 +245,7 @@ class ListInstanceConsumerGroupTopicsRequest:
     def topic(self):
         r"""Gets the topic of this ListInstanceConsumerGroupTopicsRequest.
 
-        topic名称。
+        Topic名称。
 
         :return: The topic of this ListInstanceConsumerGroupTopicsRequest.
         :rtype: str
@@ -256,7 +256,7 @@ class ListInstanceConsumerGroupTopicsRequest:
     def topic(self, topic):
         r"""Sets the topic of this ListInstanceConsumerGroupTopicsRequest.
 
-        topic名称。
+        Topic名称。
 
         :param topic: The topic of this ListInstanceConsumerGroupTopicsRequest.
         :type topic: str

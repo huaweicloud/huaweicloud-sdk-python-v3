@@ -48,12 +48,9 @@ class AMQPUser:
         self._vhosts = None
         self.discriminator = None
 
-        if access_key is not None:
-            self.access_key = access_key
-        if secret_key is not None:
-            self.secret_key = secret_key
-        if vhosts is not None:
-            self.vhosts = vhosts
+        self.access_key = access_key
+        self.secret_key = secret_key
+        self.vhosts = vhosts
 
     @property
     def access_key(self):

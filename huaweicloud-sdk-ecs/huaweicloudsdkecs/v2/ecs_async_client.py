@@ -1480,6 +1480,70 @@ class EcsAsyncClient(Client):
 
         return http_info
 
+    def delete_recycle_bin_server_async(self, request):
+        r"""删除回收站中虚拟机
+
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteRecycleBinServer
+        :type request: :class:`huaweicloudsdkecs.v2.DeleteRecycleBinServerRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.DeleteRecycleBinServerResponse`
+        """
+        http_info = self._delete_recycle_bin_server_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_recycle_bin_server_async_invoker(self, request):
+        http_info = self._delete_recycle_bin_server_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_recycle_bin_server_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/recycle-bin/cloudservers/{server_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteRecycleBinServerResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'server_id' in local_var_params:
+            path_params['server_id'] = local_var_params['server_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_server_group_async(self, request):
         r"""删除云服务器组
 
@@ -2180,6 +2244,90 @@ class EcsAsyncClient(Client):
             query_params.append(('availability_zone', local_var_params['availability_zone']))
         if 'flavor_id' in local_var_params:
             query_params.append(('flavor_id', local_var_params['flavor_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_recycle_bin_servers_async(self, request):
+        r"""查询回收站中虚拟机列表
+
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListRecycleBinServers
+        :type request: :class:`huaweicloudsdkecs.v2.ListRecycleBinServersRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.ListRecycleBinServersResponse`
+        """
+        http_info = self._list_recycle_bin_servers_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_recycle_bin_servers_async_invoker(self, request):
+        http_info = self._list_recycle_bin_servers_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_recycle_bin_servers_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/recycle-bin/cloudservers",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRecycleBinServersResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'all_tenants' in local_var_params:
+            query_params.append(('all_tenants', local_var_params['all_tenants']))
+        if 'availability_zone' in local_var_params:
+            query_params.append(('availability_zone', local_var_params['availability_zone']))
+        if 'expect_fields' in local_var_params:
+            query_params.append(('expect-fields', local_var_params['expect_fields']))
+        if 'ip_address' in local_var_params:
+            query_params.append(('ip_address', local_var_params['ip_address']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'tags' in local_var_params:
+            query_params.append(('tags', local_var_params['tags']))
+            collection_formats['tags'] = 'csv'
+        if 'tags_key' in local_var_params:
+            query_params.append(('tags_key', local_var_params['tags_key']))
+            collection_formats['tags_key'] = 'csv'
 
         header_params = {}
 
@@ -4433,6 +4581,198 @@ class EcsAsyncClient(Client):
 
         return http_info
 
+    def revert_recycle_bin_server_async(self, request):
+        r"""恢复回收站中虚拟机
+
+        回收站中的虚拟机从回收站中恢复
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for RevertRecycleBinServer
+        :type request: :class:`huaweicloudsdkecs.v2.RevertRecycleBinServerRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.RevertRecycleBinServerResponse`
+        """
+        http_info = self._revert_recycle_bin_server_http_info(request)
+        return self._call_api(**http_info)
+
+    def revert_recycle_bin_server_async_invoker(self, request):
+        http_info = self._revert_recycle_bin_server_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _revert_recycle_bin_server_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/recycle-bin/cloudservers/{server_id}/actions/revert",
+            "request_type": request.__class__.__name__,
+            "response_type": "RevertRecycleBinServerResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'server_id' in local_var_params:
+            path_params['server_id'] = local_var_params['server_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_recycle_bin_async(self, request):
+        r"""查询回收站配置
+
+        查询回收站配置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowRecycleBin
+        :type request: :class:`huaweicloudsdkecs.v2.ShowRecycleBinRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.ShowRecycleBinResponse`
+        """
+        http_info = self._show_recycle_bin_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_recycle_bin_async_invoker(self, request):
+        http_info = self._show_recycle_bin_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_recycle_bin_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/recycle-bin",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRecycleBinResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_recycle_bin_server_async(self, request):
+        r"""查询回收站中指定云服务器
+
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowRecycleBinServer
+        :type request: :class:`huaweicloudsdkecs.v2.ShowRecycleBinServerRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.ShowRecycleBinServerResponse`
+        """
+        http_info = self._show_recycle_bin_server_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_recycle_bin_server_async_invoker(self, request):
+        http_info = self._show_recycle_bin_server_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_recycle_bin_server_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/recycle-bin/cloudservers/{server_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRecycleBinServerResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'server_id' in local_var_params:
+            path_params['server_id'] = local_var_params['server_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_reset_password_flag_async(self, request):
         r"""查询是否支持一键重置密码
 
@@ -4762,6 +5102,71 @@ class EcsAsyncClient(Client):
 
         return http_info
 
+    def show_server_metadata_options_async(self, request):
+        r"""查询云服务器元数据配置
+
+        查询云服务器元数据配置，通过本接口，您可以查询指定云服务器的元数据配置。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowServerMetadataOptions
+        :type request: :class:`huaweicloudsdkecs.v2.ShowServerMetadataOptionsRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.ShowServerMetadataOptionsResponse`
+        """
+        http_info = self._show_server_metadata_options_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_server_metadata_options_async_invoker(self, request):
+        http_info = self._show_server_metadata_options_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_server_metadata_options_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cloudservers/{server_id}/metadata-options",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowServerMetadataOptionsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'server_id' in local_var_params:
+            path_params['server_id'] = local_var_params['server_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_server_password_async(self, request):
         r"""云服务器获取密码(企业项目)
 
@@ -4947,6 +5352,136 @@ class EcsAsyncClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_recycle_bin_async(self, request):
+        r"""更新回收站配置
+
+        更新回收站属性信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateRecycleBin
+        :type request: :class:`huaweicloudsdkecs.v2.UpdateRecycleBinRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.UpdateRecycleBinResponse`
+        """
+        http_info = self._update_recycle_bin_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_recycle_bin_async_invoker(self, request):
+        http_info = self._update_recycle_bin_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_recycle_bin_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/recycle-bin",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateRecycleBinResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_recycle_bin_policy_async(self, request):
+        r"""更新回收站策略
+
+        更新回收站策略
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateRecycleBinPolicy
+        :type request: :class:`huaweicloudsdkecs.v2.UpdateRecycleBinPolicyRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.UpdateRecycleBinPolicyResponse`
+        """
+        http_info = self._update_recycle_bin_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_recycle_bin_policy_async_invoker(self, request):
+        http_info = self._update_recycle_bin_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_recycle_bin_policy_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/recycle-bin/policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateRecycleBinPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
@@ -5266,6 +5801,73 @@ class EcsAsyncClient(Client):
             "resource_path": "/v1/{project_id}/cloudservers/{server_id}/metadata",
             "request_type": request.__class__.__name__,
             "response_type": "UpdateServerMetadataResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'server_id' in local_var_params:
+            path_params['server_id'] = local_var_params['server_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_server_metadata_options_async(self, request):
+        r"""更新云服务器元数据配置
+
+        更新云服务器元数据配置，通过本接口，您可以选择启用或关闭IMDS服务，也可以选择IMDS服务的版本。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateServerMetadataOptions
+        :type request: :class:`huaweicloudsdkecs.v2.UpdateServerMetadataOptionsRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.UpdateServerMetadataOptionsResponse`
+        """
+        http_info = self._update_server_metadata_options_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_server_metadata_options_async_invoker(self, request):
+        http_info = self._update_server_metadata_options_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_server_metadata_options_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/cloudservers/{server_id}/metadata-options",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateServerMetadataOptionsResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}

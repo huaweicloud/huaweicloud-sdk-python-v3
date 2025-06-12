@@ -61,7 +61,7 @@ class CreateWorkspaceResponseBodyWorkspaceAgencyList:
         :type region_id: str
         :param workspace_attribution: THIS_ACCOUNT:本账号空间,CROSS_ACCOUNT:跨账号空间
         :type workspace_attribution: str
-        :param agency_version: 用户创建托管空间时使用的IAM委托版本，V3或者V5
+        :param agency_version: 委托版本
         :type agency_version: str
         :param domain_id: 委托租户id
         :type domain_id: str
@@ -232,7 +232,7 @@ class CreateWorkspaceResponseBodyWorkspaceAgencyList:
     def agency_version(self):
         r"""Gets the agency_version of this CreateWorkspaceResponseBodyWorkspaceAgencyList.
 
-        用户创建托管空间时使用的IAM委托版本，V3或者V5
+        委托版本
 
         :return: The agency_version of this CreateWorkspaceResponseBodyWorkspaceAgencyList.
         :rtype: str
@@ -243,7 +243,7 @@ class CreateWorkspaceResponseBodyWorkspaceAgencyList:
     def agency_version(self, agency_version):
         r"""Sets the agency_version of this CreateWorkspaceResponseBodyWorkspaceAgencyList.
 
-        用户创建托管空间时使用的IAM委托版本，V3或者V5
+        委托版本
 
         :param agency_version: The agency_version of this CreateWorkspaceResponseBodyWorkspaceAgencyList.
         :type agency_version: str

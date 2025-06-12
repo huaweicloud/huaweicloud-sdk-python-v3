@@ -21,7 +21,9 @@ class ListStackSetsRequest:
         'filter': 'str',
         'sort_key': 'list[str]',
         'sort_dir': 'list[str]',
-        'call_identity': 'str'
+        'call_identity': 'str',
+        'marker': 'str',
+        'limit': 'int'
     }
 
     attribute_map = {
@@ -29,10 +31,12 @@ class ListStackSetsRequest:
         'filter': 'filter',
         'sort_key': 'sort_key',
         'sort_dir': 'sort_dir',
-        'call_identity': 'call_identity'
+        'call_identity': 'call_identity',
+        'marker': 'marker',
+        'limit': 'limit'
     }
 
-    def __init__(self, client_request_id=None, filter=None, sort_key=None, sort_dir=None, call_identity=None):
+    def __init__(self, client_request_id=None, filter=None, sort_key=None, sort_dir=None, call_identity=None, marker=None, limit=None):
         r"""ListStackSetsRequest
 
         The model defined in huaweicloud sdk
@@ -47,6 +51,10 @@ class ListStackSetsRequest:
         :type sort_dir: list[str]
         :param call_identity: 仅支持资源栈集权限模式为SERVICE_MANAGED时指定该参数。用于指定用户是以组织管理账号还是成员账号中的服务委托管理员身份调用资源栈集。默认为SELF。 * 无论指定何种用户身份，创建或部署的资源栈集始终在组织管理账号名下。*   * &#x60;SELF&#x60; - 以组织管理账号身份调用。   * &#x60;DELEGATED_ADMIN&#x60; - 以服务委托管理员身份调用。用户的华为云账号必须在组织中已经被注册为”资源编排资源栈集服务“的委托管理员。
         :type call_identity: str
+        :param marker: 分页标记。当一页无法返回所有结果，上一次的请求将返回next_marker以指引还有更多页数，用户可以将next_marker中的值放到此处以查询下一页的信息。此marker只能用于与上一请求指定的相同参数的请求。不指定时默认从第一页开始查询。
+        :type marker: str
+        :param limit: 每页返回的最多结果数量
+        :type limit: int
         """
         
         
@@ -56,6 +64,8 @@ class ListStackSetsRequest:
         self._sort_key = None
         self._sort_dir = None
         self._call_identity = None
+        self._marker = None
+        self._limit = None
         self.discriminator = None
 
         self.client_request_id = client_request_id
@@ -67,6 +77,10 @@ class ListStackSetsRequest:
             self.sort_dir = sort_dir
         if call_identity is not None:
             self.call_identity = call_identity
+        if marker is not None:
+            self.marker = marker
+        if limit is not None:
+            self.limit = limit
 
     @property
     def client_request_id(self):
@@ -177,6 +191,50 @@ class ListStackSetsRequest:
         :type call_identity: str
         """
         self._call_identity = call_identity
+
+    @property
+    def marker(self):
+        r"""Gets the marker of this ListStackSetsRequest.
+
+        分页标记。当一页无法返回所有结果，上一次的请求将返回next_marker以指引还有更多页数，用户可以将next_marker中的值放到此处以查询下一页的信息。此marker只能用于与上一请求指定的相同参数的请求。不指定时默认从第一页开始查询。
+
+        :return: The marker of this ListStackSetsRequest.
+        :rtype: str
+        """
+        return self._marker
+
+    @marker.setter
+    def marker(self, marker):
+        r"""Sets the marker of this ListStackSetsRequest.
+
+        分页标记。当一页无法返回所有结果，上一次的请求将返回next_marker以指引还有更多页数，用户可以将next_marker中的值放到此处以查询下一页的信息。此marker只能用于与上一请求指定的相同参数的请求。不指定时默认从第一页开始查询。
+
+        :param marker: The marker of this ListStackSetsRequest.
+        :type marker: str
+        """
+        self._marker = marker
+
+    @property
+    def limit(self):
+        r"""Gets the limit of this ListStackSetsRequest.
+
+        每页返回的最多结果数量
+
+        :return: The limit of this ListStackSetsRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        r"""Sets the limit of this ListStackSetsRequest.
+
+        每页返回的最多结果数量
+
+        :param limit: The limit of this ListStackSetsRequest.
+        :type limit: int
+        """
+        self._limit = limit
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -25,7 +25,8 @@ class FuncVpc:
         'subnet_id': 'str',
         'cidr': 'str',
         'gateway': 'str',
-        'security_groups': 'list[str]'
+        'security_groups': 'list[str]',
+        'is_safety': 'bool'
     }
 
     attribute_map = {
@@ -37,10 +38,11 @@ class FuncVpc:
         'subnet_id': 'subnet_id',
         'cidr': 'cidr',
         'gateway': 'gateway',
-        'security_groups': 'security_groups'
+        'security_groups': 'security_groups',
+        'is_safety': 'is_safety'
     }
 
-    def __init__(self, domain_id=None, namespace=None, vpc_name=None, vpc_id=None, subnet_name=None, subnet_id=None, cidr=None, gateway=None, security_groups=None):
+    def __init__(self, domain_id=None, namespace=None, vpc_name=None, vpc_id=None, subnet_name=None, subnet_id=None, cidr=None, gateway=None, security_groups=None, is_safety=None):
         r"""FuncVpc
 
         The model defined in huaweicloud sdk
@@ -63,6 +65,8 @@ class FuncVpc:
         :type gateway: str
         :param security_groups: 安全组
         :type security_groups: list[str]
+        :param is_safety: 是否开启安全访问。开启时，需要您自行配置VPCEP网络但可以提供更安全的VPC连接访问并打通内网域名。注意：开启后无法关闭。
+        :type is_safety: bool
         """
         
         
@@ -76,6 +80,7 @@ class FuncVpc:
         self._cidr = None
         self._gateway = None
         self._security_groups = None
+        self._is_safety = None
         self.discriminator = None
 
         if domain_id is not None:
@@ -94,6 +99,8 @@ class FuncVpc:
             self.gateway = gateway
         if security_groups is not None:
             self.security_groups = security_groups
+        if is_safety is not None:
+            self.is_safety = is_safety
 
     @property
     def domain_id(self):
@@ -292,6 +299,28 @@ class FuncVpc:
         :type security_groups: list[str]
         """
         self._security_groups = security_groups
+
+    @property
+    def is_safety(self):
+        r"""Gets the is_safety of this FuncVpc.
+
+        是否开启安全访问。开启时，需要您自行配置VPCEP网络但可以提供更安全的VPC连接访问并打通内网域名。注意：开启后无法关闭。
+
+        :return: The is_safety of this FuncVpc.
+        :rtype: bool
+        """
+        return self._is_safety
+
+    @is_safety.setter
+    def is_safety(self, is_safety):
+        r"""Sets the is_safety of this FuncVpc.
+
+        是否开启安全访问。开启时，需要您自行配置VPCEP网络但可以提供更安全的VPC连接访问并打通内网域名。注意：开启后无法关闭。
+
+        :param is_safety: The is_safety of this FuncVpc.
+        :type is_safety: bool
+        """
+        self._is_safety = is_safety
 
     def to_dict(self):
         """Returns the model properties as a dict"""

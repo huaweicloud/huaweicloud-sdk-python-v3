@@ -3212,6 +3212,8 @@ class FunctionGraphAsyncClient(Client):
             query_params.append(('maxitems', local_var_params['maxitems']))
         if 'package_name' in local_var_params:
             query_params.append(('package_name', local_var_params['package_name']))
+        if 'func_name' in local_var_params:
+            query_params.append(('func_name', local_var_params['func_name']))
 
         header_params = {}
 

@@ -50,7 +50,7 @@ class ListInstanceTopicsResponse(SdkResponse):
         :type max_partitions: int
         :param topic_max_partitions: **参数解释**： 单个Topic最大占用分区数。 **取值范围**： 不涉及。
         :type topic_max_partitions: int
-        :param topics: **参数解释**： topic列表。
+        :param topics: **参数解释**： Topic列表。
         :type topics: list[:class:`huaweicloudsdkkafka.v2.TopicEntity`]
         """
         
@@ -191,7 +191,7 @@ class ListInstanceTopicsResponse(SdkResponse):
     def topics(self):
         r"""Gets the topics of this ListInstanceTopicsResponse.
 
-        **参数解释**： topic列表。
+        **参数解释**： Topic列表。
 
         :return: The topics of this ListInstanceTopicsResponse.
         :rtype: list[:class:`huaweicloudsdkkafka.v2.TopicEntity`]
@@ -202,7 +202,7 @@ class ListInstanceTopicsResponse(SdkResponse):
     def topics(self, topics):
         r"""Sets the topics of this ListInstanceTopicsResponse.
 
-        **参数解释**： topic列表。
+        **参数解释**： Topic列表。
 
         :param topics: The topics of this ListInstanceTopicsResponse.
         :type topics: list[:class:`huaweicloudsdkkafka.v2.TopicEntity`]

@@ -37,7 +37,7 @@ class AlertEnvironment:
 
         The model defined in huaweicloud sdk
 
-        :param vendor_type: 环境供应商：HWCP/HWC/AWS/Azure/GCP
+        :param vendor_type: 环境供应商
         :type vendor_type: str
         :param domain_id: 租户id
         :type domain_id: str
@@ -73,7 +73,7 @@ class AlertEnvironment:
     def vendor_type(self):
         r"""Gets the vendor_type of this AlertEnvironment.
 
-        环境供应商：HWCP/HWC/AWS/Azure/GCP
+        环境供应商
 
         :return: The vendor_type of this AlertEnvironment.
         :rtype: str
@@ -84,7 +84,7 @@ class AlertEnvironment:
     def vendor_type(self, vendor_type):
         r"""Sets the vendor_type of this AlertEnvironment.
 
-        环境供应商：HWCP/HWC/AWS/Azure/GCP
+        环境供应商
 
         :param vendor_type: The vendor_type of this AlertEnvironment.
         :type vendor_type: str

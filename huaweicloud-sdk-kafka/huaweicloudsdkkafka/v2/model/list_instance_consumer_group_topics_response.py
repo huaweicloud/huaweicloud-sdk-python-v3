@@ -32,7 +32,7 @@ class ListInstanceConsumerGroupTopicsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param topics: 消费组TOPIC
+        :param topics: 消费组Topic
         :type topics: list[:class:`huaweicloudsdkkafka.v2.GroupTopicEntity`]
         :param total: 统计数量
         :type total: int
@@ -53,7 +53,7 @@ class ListInstanceConsumerGroupTopicsResponse(SdkResponse):
     def topics(self):
         r"""Gets the topics of this ListInstanceConsumerGroupTopicsResponse.
 
-        消费组TOPIC
+        消费组Topic
 
         :return: The topics of this ListInstanceConsumerGroupTopicsResponse.
         :rtype: list[:class:`huaweicloudsdkkafka.v2.GroupTopicEntity`]
@@ -64,7 +64,7 @@ class ListInstanceConsumerGroupTopicsResponse(SdkResponse):
     def topics(self, topics):
         r"""Sets the topics of this ListInstanceConsumerGroupTopicsResponse.
 
-        消费组TOPIC
+        消费组Topic
 
         :param topics: The topics of this ListInstanceConsumerGroupTopicsResponse.
         :type topics: list[:class:`huaweicloudsdkkafka.v2.GroupTopicEntity`]

@@ -20,6 +20,7 @@ class ListMessagesRequest:
         'engine': 'str',
         'instance_id': 'str',
         'topic': 'str',
+        'queue': 'str',
         'limit': 'str',
         'offset': 'str',
         'key': 'str',
@@ -32,6 +33,7 @@ class ListMessagesRequest:
         'engine': 'engine',
         'instance_id': 'instance_id',
         'topic': 'topic',
+        'queue': 'queue',
         'limit': 'limit',
         'offset': 'offset',
         'key': 'key',
@@ -40,7 +42,7 @@ class ListMessagesRequest:
         'msg_id': 'msg_id'
     }
 
-    def __init__(self, engine=None, instance_id=None, topic=None, limit=None, offset=None, key=None, start_time=None, end_time=None, msg_id=None):
+    def __init__(self, engine=None, instance_id=None, topic=None, queue=None, limit=None, offset=None, key=None, start_time=None, end_time=None, msg_id=None):
         r"""ListMessagesRequest
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class ListMessagesRequest:
         :type instance_id: str
         :param topic: 主题名称。
         :type topic: str
+        :param queue: 队列。
+        :type queue: str
         :param limit: 查询数量。
         :type limit: str
         :param offset: 偏移量，表示从此偏移量开始查询， offset大于等于0。
@@ -70,6 +74,7 @@ class ListMessagesRequest:
         self._engine = None
         self._instance_id = None
         self._topic = None
+        self._queue = None
         self._limit = None
         self._offset = None
         self._key = None
@@ -81,6 +86,8 @@ class ListMessagesRequest:
         self.engine = engine
         self.instance_id = instance_id
         self.topic = topic
+        if queue is not None:
+            self.queue = queue
         if limit is not None:
             self.limit = limit
         if offset is not None:
@@ -159,6 +166,28 @@ class ListMessagesRequest:
         :type topic: str
         """
         self._topic = topic
+
+    @property
+    def queue(self):
+        r"""Gets the queue of this ListMessagesRequest.
+
+        队列。
+
+        :return: The queue of this ListMessagesRequest.
+        :rtype: str
+        """
+        return self._queue
+
+    @queue.setter
+    def queue(self, queue):
+        r"""Sets the queue of this ListMessagesRequest.
+
+        队列。
+
+        :param queue: The queue of this ListMessagesRequest.
+        :type queue: str
+        """
+        self._queue = queue
 
     @property
     def limit(self):

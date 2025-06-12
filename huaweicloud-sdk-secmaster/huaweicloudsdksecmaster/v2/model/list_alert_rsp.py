@@ -54,11 +54,18 @@ class ListAlertRsp:
         'creator': 'str',
         'close_reason': 'str',
         'close_comment': 'str',
+        'alert_list': 'list[str]',
+        'incident_list': 'list[str]',
+        'indicator_list': 'list[str]',
         'malware': 'ShowAlertRspMalware',
         'system_info': 'object',
         'process': 'list[AlertProcess]',
         'user_info': 'list[AlertUserInfo]',
         'file_info': 'list[AlertFileInfo]',
+        'origin_id': 'str',
+        'ttd': 'int',
+        'ttr': 'int',
+        'is_auto_closed': 'str',
         'system_alert_table': 'object'
     }
 
@@ -100,20 +107,27 @@ class ListAlertRsp:
         'creator': 'creator',
         'close_reason': 'close_reason',
         'close_comment': 'close_comment',
+        'alert_list': 'alert_list',
+        'incident_list': 'incident_list',
+        'indicator_list': 'indicator_list',
         'malware': 'malware',
         'system_info': 'system_info',
         'process': 'process',
         'user_info': 'user_info',
         'file_info': 'file_info',
+        'origin_id': 'origin_id',
+        'ttd': 'ttd',
+        'ttr': 'ttr',
+        'is_auto_closed': 'is_auto_closed',
         'system_alert_table': 'system_alert_table'
     }
 
-    def __init__(self, version=None, id=None, domain_id=None, region_id=None, workspace_id=None, labels=None, environment=None, data_source=None, first_observed_time=None, last_observed_time=None, create_time=None, arrive_time=None, title=None, description=None, source_url=None, count=None, confidence=None, severity=None, criticality=None, alert_type=None, network_list=None, resource_list=None, remediation=None, verification_state=None, handle_status=None, sla=None, update_time=None, close_time=None, ipdrr_phase=None, chop_phase=None, ppdr_phase=None, simulation=None, actor=None, owner=None, creator=None, close_reason=None, close_comment=None, malware=None, system_info=None, process=None, user_info=None, file_info=None, system_alert_table=None):
+    def __init__(self, version=None, id=None, domain_id=None, region_id=None, workspace_id=None, labels=None, environment=None, data_source=None, first_observed_time=None, last_observed_time=None, create_time=None, arrive_time=None, title=None, description=None, source_url=None, count=None, confidence=None, severity=None, criticality=None, alert_type=None, network_list=None, resource_list=None, remediation=None, verification_state=None, handle_status=None, sla=None, update_time=None, close_time=None, ipdrr_phase=None, chop_phase=None, ppdr_phase=None, simulation=None, actor=None, owner=None, creator=None, close_reason=None, close_comment=None, alert_list=None, incident_list=None, indicator_list=None, malware=None, system_info=None, process=None, user_info=None, file_info=None, origin_id=None, ttd=None, ttr=None, is_auto_closed=None, system_alert_table=None):
         r"""ListAlertRsp
 
         The model defined in huaweicloud sdk
 
-        :param version: 告警对象的版本，该字段的值必须为华为云SSA服务确定的官方发布版本之一
+        :param version: 告警对象的版本，该字段的值必须为云SSA服务确定的官方发布版本之一
         :type version: str
         :param id: 事件唯一标识，UUID格式，最大36个字符
         :type id: str
@@ -169,11 +183,11 @@ class ListAlertRsp:
         :type update_time: str
         :param close_time: 关闭时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区
         :type close_time: str
-        :param ipdrr_phase: 周期/处置阶段编号 Prepartion|Detection and Analysis|Containm，Eradication&amp; Recovery|Post-Incident-Activity
+        :param ipdrr_phase: 周期/处置阶段编号 Preparation|Detection and Analysis|Contain，Eradication&amp; Recovery|Post-Incident-Activity
         :type ipdrr_phase: str
-        :param chop_phase: 周期/处置阶段编号 Prepartion|Detection and Analysis|Containm，Eradication&amp; Recovery|Post-Incident-Activity
+        :param chop_phase: 周期/处置阶段编号 Preparation|Detection and Analysis|Contain，Eradication&amp; Recovery|Post-Incident-Activity
         :type chop_phase: str
-        :param ppdr_phase: 周期/处置阶段编号 Prepartion|Detection and Analysis|Containm，Eradication&amp; Recovery|Post-Incident-Activity
+        :param ppdr_phase: 周期/处置阶段编号 Preparation|Detection and Analysis|Contain，Eradication&amp; Recovery|Post-Incident-Activity
         :type ppdr_phase: str
         :param simulation: 调试字段
         :type simulation: str
@@ -187,6 +201,12 @@ class ListAlertRsp:
         :type close_reason: str
         :param close_comment: 关闭评论
         :type close_comment: str
+        :param alert_list: 告警id列表，告警/事件/指标关联的告警列表
+        :type alert_list: list[str]
+        :param incident_list: 事件id列表，告警/事件/指标关联的告警列表
+        :type incident_list: list[str]
+        :param indicator_list: 指标列表，告警/事件关联的指标列表
+        :type indicator_list: list[str]
         :param malware: 
         :type malware: :class:`huaweicloudsdksecmaster.v2.ShowAlertRspMalware`
         :param system_info: 系统信息
@@ -197,6 +217,14 @@ class ListAlertRsp:
         :type user_info: list[:class:`huaweicloudsdksecmaster.v2.AlertUserInfo`]
         :param file_info: 文件信息
         :type file_info: list[:class:`huaweicloudsdksecmaster.v2.AlertFileInfo`]
+        :param origin_id: 告警事件原始来源id，最大128个字符
+        :type origin_id: str
+        :param ttd: 检测时间。单位：分钟
+        :type ttd: int
+        :param ttr: 响应时间。单位：分钟
+        :type ttr: int
+        :param is_auto_closed: 是否自动关闭，取值范围： AutoClosed - SOAR自动化关闭 Manual - 人工关闭
+        :type is_auto_closed: str
         :param system_alert_table: 告警管理列表的布局字段
         :type system_alert_table: object
         """
@@ -240,11 +268,18 @@ class ListAlertRsp:
         self._creator = None
         self._close_reason = None
         self._close_comment = None
+        self._alert_list = None
+        self._incident_list = None
+        self._indicator_list = None
         self._malware = None
         self._system_info = None
         self._process = None
         self._user_info = None
         self._file_info = None
+        self._origin_id = None
+        self._ttd = None
+        self._ttr = None
+        self._is_auto_closed = None
         self._system_alert_table = None
         self.discriminator = None
 
@@ -322,6 +357,12 @@ class ListAlertRsp:
             self.close_reason = close_reason
         if close_comment is not None:
             self.close_comment = close_comment
+        if alert_list is not None:
+            self.alert_list = alert_list
+        if incident_list is not None:
+            self.incident_list = incident_list
+        if indicator_list is not None:
+            self.indicator_list = indicator_list
         if malware is not None:
             self.malware = malware
         if system_info is not None:
@@ -332,6 +373,14 @@ class ListAlertRsp:
             self.user_info = user_info
         if file_info is not None:
             self.file_info = file_info
+        if origin_id is not None:
+            self.origin_id = origin_id
+        if ttd is not None:
+            self.ttd = ttd
+        if ttr is not None:
+            self.ttr = ttr
+        if is_auto_closed is not None:
+            self.is_auto_closed = is_auto_closed
         if system_alert_table is not None:
             self.system_alert_table = system_alert_table
 
@@ -339,7 +388,7 @@ class ListAlertRsp:
     def version(self):
         r"""Gets the version of this ListAlertRsp.
 
-        告警对象的版本，该字段的值必须为华为云SSA服务确定的官方发布版本之一
+        告警对象的版本，该字段的值必须为云SSA服务确定的官方发布版本之一
 
         :return: The version of this ListAlertRsp.
         :rtype: str
@@ -350,7 +399,7 @@ class ListAlertRsp:
     def version(self, version):
         r"""Sets the version of this ListAlertRsp.
 
-        告警对象的版本，该字段的值必须为华为云SSA服务确定的官方发布版本之一
+        告警对象的版本，该字段的值必须为云SSA服务确定的官方发布版本之一
 
         :param version: The version of this ListAlertRsp.
         :type version: str
@@ -939,7 +988,7 @@ class ListAlertRsp:
     def ipdrr_phase(self):
         r"""Gets the ipdrr_phase of this ListAlertRsp.
 
-        周期/处置阶段编号 Prepartion|Detection and Analysis|Containm，Eradication& Recovery|Post-Incident-Activity
+        周期/处置阶段编号 Preparation|Detection and Analysis|Contain，Eradication& Recovery|Post-Incident-Activity
 
         :return: The ipdrr_phase of this ListAlertRsp.
         :rtype: str
@@ -950,7 +999,7 @@ class ListAlertRsp:
     def ipdrr_phase(self, ipdrr_phase):
         r"""Sets the ipdrr_phase of this ListAlertRsp.
 
-        周期/处置阶段编号 Prepartion|Detection and Analysis|Containm，Eradication& Recovery|Post-Incident-Activity
+        周期/处置阶段编号 Preparation|Detection and Analysis|Contain，Eradication& Recovery|Post-Incident-Activity
 
         :param ipdrr_phase: The ipdrr_phase of this ListAlertRsp.
         :type ipdrr_phase: str
@@ -961,7 +1010,7 @@ class ListAlertRsp:
     def chop_phase(self):
         r"""Gets the chop_phase of this ListAlertRsp.
 
-        周期/处置阶段编号 Prepartion|Detection and Analysis|Containm，Eradication& Recovery|Post-Incident-Activity
+        周期/处置阶段编号 Preparation|Detection and Analysis|Contain，Eradication& Recovery|Post-Incident-Activity
 
         :return: The chop_phase of this ListAlertRsp.
         :rtype: str
@@ -972,7 +1021,7 @@ class ListAlertRsp:
     def chop_phase(self, chop_phase):
         r"""Sets the chop_phase of this ListAlertRsp.
 
-        周期/处置阶段编号 Prepartion|Detection and Analysis|Containm，Eradication& Recovery|Post-Incident-Activity
+        周期/处置阶段编号 Preparation|Detection and Analysis|Contain，Eradication& Recovery|Post-Incident-Activity
 
         :param chop_phase: The chop_phase of this ListAlertRsp.
         :type chop_phase: str
@@ -983,7 +1032,7 @@ class ListAlertRsp:
     def ppdr_phase(self):
         r"""Gets the ppdr_phase of this ListAlertRsp.
 
-        周期/处置阶段编号 Prepartion|Detection and Analysis|Containm，Eradication& Recovery|Post-Incident-Activity
+        周期/处置阶段编号 Preparation|Detection and Analysis|Contain，Eradication& Recovery|Post-Incident-Activity
 
         :return: The ppdr_phase of this ListAlertRsp.
         :rtype: str
@@ -994,7 +1043,7 @@ class ListAlertRsp:
     def ppdr_phase(self, ppdr_phase):
         r"""Sets the ppdr_phase of this ListAlertRsp.
 
-        周期/处置阶段编号 Prepartion|Detection and Analysis|Containm，Eradication& Recovery|Post-Incident-Activity
+        周期/处置阶段编号 Preparation|Detection and Analysis|Contain，Eradication& Recovery|Post-Incident-Activity
 
         :param ppdr_phase: The ppdr_phase of this ListAlertRsp.
         :type ppdr_phase: str
@@ -1134,6 +1183,72 @@ class ListAlertRsp:
         self._close_comment = close_comment
 
     @property
+    def alert_list(self):
+        r"""Gets the alert_list of this ListAlertRsp.
+
+        告警id列表，告警/事件/指标关联的告警列表
+
+        :return: The alert_list of this ListAlertRsp.
+        :rtype: list[str]
+        """
+        return self._alert_list
+
+    @alert_list.setter
+    def alert_list(self, alert_list):
+        r"""Sets the alert_list of this ListAlertRsp.
+
+        告警id列表，告警/事件/指标关联的告警列表
+
+        :param alert_list: The alert_list of this ListAlertRsp.
+        :type alert_list: list[str]
+        """
+        self._alert_list = alert_list
+
+    @property
+    def incident_list(self):
+        r"""Gets the incident_list of this ListAlertRsp.
+
+        事件id列表，告警/事件/指标关联的告警列表
+
+        :return: The incident_list of this ListAlertRsp.
+        :rtype: list[str]
+        """
+        return self._incident_list
+
+    @incident_list.setter
+    def incident_list(self, incident_list):
+        r"""Sets the incident_list of this ListAlertRsp.
+
+        事件id列表，告警/事件/指标关联的告警列表
+
+        :param incident_list: The incident_list of this ListAlertRsp.
+        :type incident_list: list[str]
+        """
+        self._incident_list = incident_list
+
+    @property
+    def indicator_list(self):
+        r"""Gets the indicator_list of this ListAlertRsp.
+
+        指标列表，告警/事件关联的指标列表
+
+        :return: The indicator_list of this ListAlertRsp.
+        :rtype: list[str]
+        """
+        return self._indicator_list
+
+    @indicator_list.setter
+    def indicator_list(self, indicator_list):
+        r"""Sets the indicator_list of this ListAlertRsp.
+
+        指标列表，告警/事件关联的指标列表
+
+        :param indicator_list: The indicator_list of this ListAlertRsp.
+        :type indicator_list: list[str]
+        """
+        self._indicator_list = indicator_list
+
+    @property
     def malware(self):
         r"""Gets the malware of this ListAlertRsp.
 
@@ -1238,6 +1353,94 @@ class ListAlertRsp:
         :type file_info: list[:class:`huaweicloudsdksecmaster.v2.AlertFileInfo`]
         """
         self._file_info = file_info
+
+    @property
+    def origin_id(self):
+        r"""Gets the origin_id of this ListAlertRsp.
+
+        告警事件原始来源id，最大128个字符
+
+        :return: The origin_id of this ListAlertRsp.
+        :rtype: str
+        """
+        return self._origin_id
+
+    @origin_id.setter
+    def origin_id(self, origin_id):
+        r"""Sets the origin_id of this ListAlertRsp.
+
+        告警事件原始来源id，最大128个字符
+
+        :param origin_id: The origin_id of this ListAlertRsp.
+        :type origin_id: str
+        """
+        self._origin_id = origin_id
+
+    @property
+    def ttd(self):
+        r"""Gets the ttd of this ListAlertRsp.
+
+        检测时间。单位：分钟
+
+        :return: The ttd of this ListAlertRsp.
+        :rtype: int
+        """
+        return self._ttd
+
+    @ttd.setter
+    def ttd(self, ttd):
+        r"""Sets the ttd of this ListAlertRsp.
+
+        检测时间。单位：分钟
+
+        :param ttd: The ttd of this ListAlertRsp.
+        :type ttd: int
+        """
+        self._ttd = ttd
+
+    @property
+    def ttr(self):
+        r"""Gets the ttr of this ListAlertRsp.
+
+        响应时间。单位：分钟
+
+        :return: The ttr of this ListAlertRsp.
+        :rtype: int
+        """
+        return self._ttr
+
+    @ttr.setter
+    def ttr(self, ttr):
+        r"""Sets the ttr of this ListAlertRsp.
+
+        响应时间。单位：分钟
+
+        :param ttr: The ttr of this ListAlertRsp.
+        :type ttr: int
+        """
+        self._ttr = ttr
+
+    @property
+    def is_auto_closed(self):
+        r"""Gets the is_auto_closed of this ListAlertRsp.
+
+        是否自动关闭，取值范围： AutoClosed - SOAR自动化关闭 Manual - 人工关闭
+
+        :return: The is_auto_closed of this ListAlertRsp.
+        :rtype: str
+        """
+        return self._is_auto_closed
+
+    @is_auto_closed.setter
+    def is_auto_closed(self, is_auto_closed):
+        r"""Sets the is_auto_closed of this ListAlertRsp.
+
+        是否自动关闭，取值范围： AutoClosed - SOAR自动化关闭 Manual - 人工关闭
+
+        :param is_auto_closed: The is_auto_closed of this ListAlertRsp.
+        :type is_auto_closed: str
+        """
+        self._is_auto_closed = is_auto_closed
 
     @property
     def system_alert_table(self):

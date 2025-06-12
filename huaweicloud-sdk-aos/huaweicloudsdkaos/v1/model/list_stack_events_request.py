@@ -22,7 +22,9 @@ class ListStackEventsRequest:
         'stack_id': 'str',
         'deployment_id': 'str',
         'filter': 'str',
-        'field': 'str'
+        'field': 'str',
+        'marker': 'str',
+        'limit': 'int'
     }
 
     attribute_map = {
@@ -31,10 +33,12 @@ class ListStackEventsRequest:
         'stack_id': 'stack_id',
         'deployment_id': 'deployment_id',
         'filter': 'filter',
-        'field': 'field'
+        'field': 'field',
+        'marker': 'marker',
+        'limit': 'limit'
     }
 
-    def __init__(self, client_request_id=None, stack_name=None, stack_id=None, deployment_id=None, filter=None, field=None):
+    def __init__(self, client_request_id=None, stack_name=None, stack_id=None, deployment_id=None, filter=None, field=None, marker=None, limit=None):
         r"""ListStackEventsRequest
 
         The model defined in huaweicloud sdk
@@ -51,6 +55,10 @@ class ListStackEventsRequest:
         :type filter: str
         :param field: 选择的属性名称  * 属性名仅支持包含大小写英文、数字和下划线 * 多个属性名称之间以逗号（,）分隔
         :type field: str
+        :param marker: 分页标记。当一页无法返回所有结果，上一次的请求将返回next_marker以指引还有更多页数，用户可以将next_marker中的值放到此处以查询下一页的信息。此marker只能用于与上一请求指定的相同参数的请求。不指定时默认从第一页开始查询。
+        :type marker: str
+        :param limit: 每页返回的最多结果数量
+        :type limit: int
         """
         
         
@@ -61,6 +69,8 @@ class ListStackEventsRequest:
         self._deployment_id = None
         self._filter = None
         self._field = None
+        self._marker = None
+        self._limit = None
         self.discriminator = None
 
         self.client_request_id = client_request_id
@@ -73,6 +83,10 @@ class ListStackEventsRequest:
             self.filter = filter
         if field is not None:
             self.field = field
+        if marker is not None:
+            self.marker = marker
+        if limit is not None:
+            self.limit = limit
 
     @property
     def client_request_id(self):
@@ -205,6 +219,50 @@ class ListStackEventsRequest:
         :type field: str
         """
         self._field = field
+
+    @property
+    def marker(self):
+        r"""Gets the marker of this ListStackEventsRequest.
+
+        分页标记。当一页无法返回所有结果，上一次的请求将返回next_marker以指引还有更多页数，用户可以将next_marker中的值放到此处以查询下一页的信息。此marker只能用于与上一请求指定的相同参数的请求。不指定时默认从第一页开始查询。
+
+        :return: The marker of this ListStackEventsRequest.
+        :rtype: str
+        """
+        return self._marker
+
+    @marker.setter
+    def marker(self, marker):
+        r"""Sets the marker of this ListStackEventsRequest.
+
+        分页标记。当一页无法返回所有结果，上一次的请求将返回next_marker以指引还有更多页数，用户可以将next_marker中的值放到此处以查询下一页的信息。此marker只能用于与上一请求指定的相同参数的请求。不指定时默认从第一页开始查询。
+
+        :param marker: The marker of this ListStackEventsRequest.
+        :type marker: str
+        """
+        self._marker = marker
+
+    @property
+    def limit(self):
+        r"""Gets the limit of this ListStackEventsRequest.
+
+        每页返回的最多结果数量
+
+        :return: The limit of this ListStackEventsRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        r"""Sets the limit of this ListStackEventsRequest.
+
+        每页返回的最多结果数量
+
+        :param limit: The limit of this ListStackEventsRequest.
+        :type limit: int
+        """
+        self._limit = limit
 
     def to_dict(self):
         """Returns the model properties as a dict"""

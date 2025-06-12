@@ -37,15 +37,15 @@ class ShowKafkaTopicQuotaRequest:
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: 实例ID。
+        :param instance_id: **参数解释**： 实例ID。获取方法如下：登录Kafka控制台，在Kafka实例详情页面查找实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type instance_id: str
-        :param type: 查询类型，默认为topic。
+        :param type: **参数解释**： 查询类型。 **约束限制**： 查询类型必须以字母开头且只支持大小写字母、中横线、下划线以及数字。 **取值范围**： 默认为topic **默认取值**： topic
         :type type: str
-        :param limit: 每一页显示的流控数量。
+        :param limit: **参数解释**： 每一页显示的流控数量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type limit: str
-        :param offset: 页数。
+        :param offset: **参数解释**： 页数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type offset: str
-        :param keyword: 查询关键字。
+        :param keyword: **参数解释**： 查询关键字。 **约束限制**： 查询关键字必须以字母开头且只支持大小写字母、中横线、下划线以及数字。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type keyword: str
         """
         
@@ -72,7 +72,7 @@ class ShowKafkaTopicQuotaRequest:
     def instance_id(self):
         r"""Gets the instance_id of this ShowKafkaTopicQuotaRequest.
 
-        实例ID。
+        **参数解释**： 实例ID。获取方法如下：登录Kafka控制台，在Kafka实例详情页面查找实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The instance_id of this ShowKafkaTopicQuotaRequest.
         :rtype: str
@@ -83,7 +83,7 @@ class ShowKafkaTopicQuotaRequest:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this ShowKafkaTopicQuotaRequest.
 
-        实例ID。
+        **参数解释**： 实例ID。获取方法如下：登录Kafka控制台，在Kafka实例详情页面查找实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param instance_id: The instance_id of this ShowKafkaTopicQuotaRequest.
         :type instance_id: str
@@ -94,7 +94,7 @@ class ShowKafkaTopicQuotaRequest:
     def type(self):
         r"""Gets the type of this ShowKafkaTopicQuotaRequest.
 
-        查询类型，默认为topic。
+        **参数解释**： 查询类型。 **约束限制**： 查询类型必须以字母开头且只支持大小写字母、中横线、下划线以及数字。 **取值范围**： 默认为topic **默认取值**： topic
 
         :return: The type of this ShowKafkaTopicQuotaRequest.
         :rtype: str
@@ -105,7 +105,7 @@ class ShowKafkaTopicQuotaRequest:
     def type(self, type):
         r"""Sets the type of this ShowKafkaTopicQuotaRequest.
 
-        查询类型，默认为topic。
+        **参数解释**： 查询类型。 **约束限制**： 查询类型必须以字母开头且只支持大小写字母、中横线、下划线以及数字。 **取值范围**： 默认为topic **默认取值**： topic
 
         :param type: The type of this ShowKafkaTopicQuotaRequest.
         :type type: str
@@ -116,7 +116,7 @@ class ShowKafkaTopicQuotaRequest:
     def limit(self):
         r"""Gets the limit of this ShowKafkaTopicQuotaRequest.
 
-        每一页显示的流控数量。
+        **参数解释**： 每一页显示的流控数量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The limit of this ShowKafkaTopicQuotaRequest.
         :rtype: str
@@ -127,7 +127,7 @@ class ShowKafkaTopicQuotaRequest:
     def limit(self, limit):
         r"""Sets the limit of this ShowKafkaTopicQuotaRequest.
 
-        每一页显示的流控数量。
+        **参数解释**： 每一页显示的流控数量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param limit: The limit of this ShowKafkaTopicQuotaRequest.
         :type limit: str
@@ -138,7 +138,7 @@ class ShowKafkaTopicQuotaRequest:
     def offset(self):
         r"""Gets the offset of this ShowKafkaTopicQuotaRequest.
 
-        页数。
+        **参数解释**： 页数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The offset of this ShowKafkaTopicQuotaRequest.
         :rtype: str
@@ -149,7 +149,7 @@ class ShowKafkaTopicQuotaRequest:
     def offset(self, offset):
         r"""Sets the offset of this ShowKafkaTopicQuotaRequest.
 
-        页数。
+        **参数解释**： 页数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param offset: The offset of this ShowKafkaTopicQuotaRequest.
         :type offset: str
@@ -160,7 +160,7 @@ class ShowKafkaTopicQuotaRequest:
     def keyword(self):
         r"""Gets the keyword of this ShowKafkaTopicQuotaRequest.
 
-        查询关键字。
+        **参数解释**： 查询关键字。 **约束限制**： 查询关键字必须以字母开头且只支持大小写字母、中横线、下划线以及数字。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The keyword of this ShowKafkaTopicQuotaRequest.
         :rtype: str
@@ -171,7 +171,7 @@ class ShowKafkaTopicQuotaRequest:
     def keyword(self, keyword):
         r"""Sets the keyword of this ShowKafkaTopicQuotaRequest.
 
-        查询关键字。
+        **参数解释**： 查询关键字。 **约束限制**： 查询关键字必须以字母开头且只支持大小写字母、中横线、下划线以及数字。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param keyword: The keyword of this ShowKafkaTopicQuotaRequest.
         :type keyword: str

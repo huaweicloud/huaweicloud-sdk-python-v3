@@ -34,11 +34,11 @@ class SendKafkaMessageResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param topic: Kafka的topic
+        :param topic: Kafka的Topic
         :type topic: str
         :param body: 消息内容
         :type body: str
-        :param property_list: topic的分区信息等
+        :param property_list: Topic的分区信息等
         :type property_list: list[object]
         """
         
@@ -60,7 +60,7 @@ class SendKafkaMessageResponse(SdkResponse):
     def topic(self):
         r"""Gets the topic of this SendKafkaMessageResponse.
 
-        Kafka的topic
+        Kafka的Topic
 
         :return: The topic of this SendKafkaMessageResponse.
         :rtype: str
@@ -71,7 +71,7 @@ class SendKafkaMessageResponse(SdkResponse):
     def topic(self, topic):
         r"""Sets the topic of this SendKafkaMessageResponse.
 
-        Kafka的topic
+        Kafka的Topic
 
         :param topic: The topic of this SendKafkaMessageResponse.
         :type topic: str
@@ -104,7 +104,7 @@ class SendKafkaMessageResponse(SdkResponse):
     def property_list(self):
         r"""Gets the property_list of this SendKafkaMessageResponse.
 
-        topic的分区信息等
+        Topic的分区信息等
 
         :return: The property_list of this SendKafkaMessageResponse.
         :rtype: list[object]
@@ -115,7 +115,7 @@ class SendKafkaMessageResponse(SdkResponse):
     def property_list(self, property_list):
         r"""Sets the property_list of this SendKafkaMessageResponse.
 
-        topic的分区信息等
+        Topic的分区信息等
 
         :param property_list: The property_list of this SendKafkaMessageResponse.
         :type property_list: list[object]

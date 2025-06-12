@@ -275,7 +275,7 @@ class ShowInstanceResp:
         :type is_logical_volume: bool
         :param extend_times: 实例扩容磁盘次数，如果超过20次则无法扩容磁盘。
         :type extend_times: int
-        :param enable_auto_topic: 是否打开kafka自动创建topic功能。   - true：开启   - false：关闭
+        :param enable_auto_topic: 是否打开kafka自动创建Topic功能。   - true：开启   - false：关闭
         :type enable_auto_topic: bool
         :param type: 实例类型：集群，cluster。
         :type type: str
@@ -1476,7 +1476,7 @@ class ShowInstanceResp:
     def enable_auto_topic(self):
         r"""Gets the enable_auto_topic of this ShowInstanceResp.
 
-        是否打开kafka自动创建topic功能。   - true：开启   - false：关闭
+        是否打开kafka自动创建Topic功能。   - true：开启   - false：关闭
 
         :return: The enable_auto_topic of this ShowInstanceResp.
         :rtype: bool
@@ -1487,7 +1487,7 @@ class ShowInstanceResp:
     def enable_auto_topic(self, enable_auto_topic):
         r"""Sets the enable_auto_topic of this ShowInstanceResp.
 
-        是否打开kafka自动创建topic功能。   - true：开启   - false：关闭
+        是否打开kafka自动创建Topic功能。   - true：开启   - false：关闭
 
         :param enable_auto_topic: The enable_auto_topic of this ShowInstanceResp.
         :type enable_auto_topic: bool

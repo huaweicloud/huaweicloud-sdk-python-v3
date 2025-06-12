@@ -11,6 +11,9 @@ from huaweicloudsdkevs.v2.model.batch_create_volume_tags_response import BatchCr
 from huaweicloudsdkevs.v2.model.batch_delete_volume_tags_request import BatchDeleteVolumeTagsRequest
 from huaweicloudsdkevs.v2.model.batch_delete_volume_tags_request_body import BatchDeleteVolumeTagsRequestBody
 from huaweicloudsdkevs.v2.model.batch_delete_volume_tags_response import BatchDeleteVolumeTagsResponse
+from huaweicloudsdkevs.v2.model.batch_resize_volume_request_body import BatchResizeVolumeRequestBody
+from huaweicloudsdkevs.v2.model.batch_resize_volumes_request import BatchResizeVolumesRequest
+from huaweicloudsdkevs.v2.model.batch_resize_volumes_response import BatchResizeVolumesResponse
 from huaweicloudsdkevs.v2.model.bss_param_for_create_volume import BssParamForCreateVolume
 from huaweicloudsdkevs.v2.model.bss_param_for_resize_volume import BssParamForResizeVolume
 from huaweicloudsdkevs.v2.model.bss_param_for_retype_volume import BssParamForRetypeVolume
@@ -70,6 +73,7 @@ from huaweicloudsdkevs.v2.model.modify_volume_qo_s_request import ModifyVolumeQo
 from huaweicloudsdkevs.v2.model.modify_volume_qo_s_request_body import ModifyVolumeQoSRequestBody
 from huaweicloudsdkevs.v2.model.modify_volume_qo_s_response import ModifyVolumeQoSResponse
 from huaweicloudsdkevs.v2.model.os_extend import OsExtend
+from huaweicloudsdkevs.v2.model.prepaid_param_for_batch_resize_volume import PrepaidParamForBatchResizeVolume
 from huaweicloudsdkevs.v2.model.quota_detail import QuotaDetail
 from huaweicloudsdkevs.v2.model.quota_detail_backup_gigabytes import QuotaDetailBackupGigabytes
 from huaweicloudsdkevs.v2.model.quota_detail_backups import QuotaDetailBackups
@@ -144,4 +148,5 @@ from huaweicloudsdkevs.v2.model.volume_transfer import VolumeTransfer
 from huaweicloudsdkevs.v2.model.volume_transfer_summary import VolumeTransferSummary
 from huaweicloudsdkevs.v2.model.volume_type import VolumeType
 from huaweicloudsdkevs.v2.model.volume_type_extra_specs import VolumeTypeExtraSpecs
+from huaweicloudsdkevs.v2.model.volumes_for_batch_resize_volume import VolumesForBatchResizeVolume
 from huaweicloudsdkevs.v2.model.zone_state import ZoneState

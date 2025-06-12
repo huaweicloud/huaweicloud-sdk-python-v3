@@ -18,29 +18,36 @@ class ListStackOutputsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'outputs': 'list[StackOutput]'
+        'outputs': 'list[StackOutput]',
+        'page_info': 'PageInfo'
     }
 
     attribute_map = {
-        'outputs': 'outputs'
+        'outputs': 'outputs',
+        'page_info': 'page_info'
     }
 
-    def __init__(self, outputs=None):
+    def __init__(self, outputs=None, page_info=None):
         r"""ListStackOutputsResponse
 
         The model defined in huaweicloud sdk
 
         :param outputs: 资源栈输出列表
         :type outputs: list[:class:`huaweicloudsdkaos.v1.StackOutput`]
+        :param page_info: 
+        :type page_info: :class:`huaweicloudsdkaos.v1.PageInfo`
         """
         
         super(ListStackOutputsResponse, self).__init__()
 
         self._outputs = None
+        self._page_info = None
         self.discriminator = None
 
         if outputs is not None:
             self.outputs = outputs
+        if page_info is not None:
+            self.page_info = page_info
 
     @property
     def outputs(self):
@@ -63,6 +70,24 @@ class ListStackOutputsResponse(SdkResponse):
         :type outputs: list[:class:`huaweicloudsdkaos.v1.StackOutput`]
         """
         self._outputs = outputs
+
+    @property
+    def page_info(self):
+        r"""Gets the page_info of this ListStackOutputsResponse.
+
+        :return: The page_info of this ListStackOutputsResponse.
+        :rtype: :class:`huaweicloudsdkaos.v1.PageInfo`
+        """
+        return self._page_info
+
+    @page_info.setter
+    def page_info(self, page_info):
+        r"""Sets the page_info of this ListStackOutputsResponse.
+
+        :param page_info: The page_info of this ListStackOutputsResponse.
+        :type page_info: :class:`huaweicloudsdkaos.v1.PageInfo`
+        """
+        self._page_info = page_info
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -109,7 +109,7 @@ class Alert:
 
         The model defined in huaweicloud sdk
 
-        :param version: 告警对象的版本，该字段的值必须为华为云SSA服务确定的官方发布版本之一
+        :param version: 告警对象的版本，该字段的值必须为云SSA服务确定的官方发布版本之一
         :type version: str
         :param id: 事件唯一标识，UUID格式，最大36个字符
         :type id: str
@@ -165,7 +165,7 @@ class Alert:
         :type update_time: str
         :param close_time: 关闭时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区
         :type close_time: str
-        :param ipdrr_phase: 周期/处置阶段编号 Prepartion|Detection and Analysis|Containm，Eradication&amp; Recovery|Post-Incident-Activity
+        :param ipdrr_phase: 周期/处置阶段编号 Preparation|Detection and Analysis|Contain，Eradication&amp; Recovery|Post-Incident-Activity
         :type ipdrr_phase: str
         :param simulation: 调试字段
         :type simulation: str
@@ -325,7 +325,7 @@ class Alert:
     def version(self):
         r"""Gets the version of this Alert.
 
-        告警对象的版本，该字段的值必须为华为云SSA服务确定的官方发布版本之一
+        告警对象的版本，该字段的值必须为云SSA服务确定的官方发布版本之一
 
         :return: The version of this Alert.
         :rtype: str
@@ -336,7 +336,7 @@ class Alert:
     def version(self, version):
         r"""Sets the version of this Alert.
 
-        告警对象的版本，该字段的值必须为华为云SSA服务确定的官方发布版本之一
+        告警对象的版本，该字段的值必须为云SSA服务确定的官方发布版本之一
 
         :param version: The version of this Alert.
         :type version: str
@@ -925,7 +925,7 @@ class Alert:
     def ipdrr_phase(self):
         r"""Gets the ipdrr_phase of this Alert.
 
-        周期/处置阶段编号 Prepartion|Detection and Analysis|Containm，Eradication& Recovery|Post-Incident-Activity
+        周期/处置阶段编号 Preparation|Detection and Analysis|Contain，Eradication& Recovery|Post-Incident-Activity
 
         :return: The ipdrr_phase of this Alert.
         :rtype: str
@@ -936,7 +936,7 @@ class Alert:
     def ipdrr_phase(self, ipdrr_phase):
         r"""Sets the ipdrr_phase of this Alert.
 
-        周期/处置阶段编号 Prepartion|Detection and Analysis|Containm，Eradication& Recovery|Post-Incident-Activity
+        周期/处置阶段编号 Preparation|Detection and Analysis|Contain，Eradication& Recovery|Post-Incident-Activity
 
         :param ipdrr_phase: The ipdrr_phase of this Alert.
         :type ipdrr_phase: str

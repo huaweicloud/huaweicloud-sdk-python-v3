@@ -51,11 +51,11 @@ class AlertResourceList:
         :type id: str
         :param name: 资源名称
         :type name: str
-        :param type: 资源类型；引用华为云RMS type字段
+        :param type: 资源类型；引用云RMS type字段
         :type type: str
-        :param provider: 云服务名称；引用华为云RMS provider字段
+        :param provider: 云服务名称；引用云RMS provider字段
         :type provider: str
-        :param region_id: 区域；按照华为云regionId填写，如cn-north-1等
+        :param region_id: 区域；按照云regionId填写
         :type region_id: str
         :param domain_id: 资源所属账号ID，UUID格式
         :type domain_id: str
@@ -152,7 +152,7 @@ class AlertResourceList:
     def type(self):
         r"""Gets the type of this AlertResourceList.
 
-        资源类型；引用华为云RMS type字段
+        资源类型；引用云RMS type字段
 
         :return: The type of this AlertResourceList.
         :rtype: str
@@ -163,7 +163,7 @@ class AlertResourceList:
     def type(self, type):
         r"""Sets the type of this AlertResourceList.
 
-        资源类型；引用华为云RMS type字段
+        资源类型；引用云RMS type字段
 
         :param type: The type of this AlertResourceList.
         :type type: str
@@ -174,7 +174,7 @@ class AlertResourceList:
     def provider(self):
         r"""Gets the provider of this AlertResourceList.
 
-        云服务名称；引用华为云RMS provider字段
+        云服务名称；引用云RMS provider字段
 
         :return: The provider of this AlertResourceList.
         :rtype: str
@@ -185,7 +185,7 @@ class AlertResourceList:
     def provider(self, provider):
         r"""Sets the provider of this AlertResourceList.
 
-        云服务名称；引用华为云RMS provider字段
+        云服务名称；引用云RMS provider字段
 
         :param provider: The provider of this AlertResourceList.
         :type provider: str
@@ -196,7 +196,7 @@ class AlertResourceList:
     def region_id(self):
         r"""Gets the region_id of this AlertResourceList.
 
-        区域；按照华为云regionId填写，如cn-north-1等
+        区域；按照云regionId填写
 
         :return: The region_id of this AlertResourceList.
         :rtype: str
@@ -207,7 +207,7 @@ class AlertResourceList:
     def region_id(self, region_id):
         r"""Sets the region_id of this AlertResourceList.
 
-        区域；按照华为云regionId填写，如cn-north-1等
+        区域；按照云regionId填写
 
         :param region_id: The region_id of this AlertResourceList.
         :type region_id: str

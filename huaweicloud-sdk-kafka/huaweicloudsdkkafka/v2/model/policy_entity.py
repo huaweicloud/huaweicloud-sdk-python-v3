@@ -33,7 +33,7 @@ class PolicyEntity:
 
         The model defined in huaweicloud sdk
 
-        :param owner: 是否为创建topic时所选择的用户。
+        :param owner: 是否为创建Topic时所选择的用户。
         :type owner: bool
         :param user_name: 用户名。
         :type user_name: str
@@ -59,7 +59,7 @@ class PolicyEntity:
     def owner(self):
         r"""Gets the owner of this PolicyEntity.
 
-        是否为创建topic时所选择的用户。
+        是否为创建Topic时所选择的用户。
 
         :return: The owner of this PolicyEntity.
         :rtype: bool
@@ -70,7 +70,7 @@ class PolicyEntity:
     def owner(self, owner):
         r"""Sets the owner of this PolicyEntity.
 
-        是否为创建topic时所选择的用户。
+        是否为创建Topic时所选择的用户。
 
         :param owner: The owner of this PolicyEntity.
         :type owner: bool
