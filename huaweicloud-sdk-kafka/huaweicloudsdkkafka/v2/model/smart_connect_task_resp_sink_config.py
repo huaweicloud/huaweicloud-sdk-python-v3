@@ -59,37 +59,37 @@ class SmartConnectTaskRespSinkConfig:
 
         The model defined in huaweicloud sdk
 
-        :param consumer_strategy: 转储启动偏移量，latest为获取最新的数据，earliest为获取最早的数据。（仅目标端类型为OBS时会显示）
+        :param consumer_strategy: **参数解释**： 转储启动偏移量。（仅目标端类型为OBS时会显示） **取值范围**： - latest：获取最新的数据。 - earliest：获取最早的数据。
         :type consumer_strategy: str
-        :param destination_file_type: 转储文件格式。当前只支持TEXT。（仅目标端类型为OBS时会显示）
+        :param destination_file_type: **参数解释**： 转储文件格式。当前只支持TEXT。（仅目标端类型为OBS时会显示） **取值范围**： 不涉及。
         :type destination_file_type: str
-        :param deliver_time_interval: 记数据转储周期（秒）。（仅目标端类型为OBS时会显示）
+        :param deliver_time_interval: **参数解释**： 数据转储周期（秒）。（仅目标端类型为OBS时会显示） **取值范围**： 不涉及。
         :type deliver_time_interval: int
-        :param obs_bucket_name: 转储地址。（仅目标端类型为OBS时会显示）
+        :param obs_bucket_name: **参数解释**： 转储地址。（仅目标端类型为OBS时会显示） **取值范围**： 不涉及。
         :type obs_bucket_name: str
-        :param obs_path: 转储目录。（仅目标端类型为OBS时会显示）
+        :param obs_path: **参数解释**： 转储目录。（仅目标端类型为OBS时会显示） **取值范围**： 不涉及。
         :type obs_path: str
-        :param partition_format: 时间目录格式。（仅目标端类型为OBS时会显示）
+        :param partition_format: **参数解释**： 时间目录格式。（仅目标端类型为OBS时会显示） **取值范围**： 不涉及。
         :type partition_format: str
-        :param record_delimiter: 记录分行符。（仅目标端类型为OBS时会显示）
+        :param record_delimiter: **参数解释**： 记录分行符。（仅目标端类型为OBS时会显示） **取值范围**： 不涉及。
         :type record_delimiter: str
-        :param store_keys: 存储Key。（仅目标端类型为OBS时会显示）
+        :param store_keys: **参数解释**： 存储Key。（仅目标端类型为OBS时会显示） **取值范围**： 不涉及。
         :type store_keys: bool
-        :param obs_part_size: 每个传输文件多大后就开始上传，单位为byte；默认值5242880。（仅目标端类型为OBS时会显示）
+        :param obs_part_size: **参数解释**： 每个传输文件多大后就开始上传，单位为byte；默认值5242880。（仅目标端类型为OBS时会显示） **取值范围**： 不涉及。
         :type obs_part_size: int
-        :param flush_size: flush_size。（仅目标端类型为OBS时会显示）
+        :param flush_size: **参数解释**： 刷写数量。（仅目标端类型为OBS时会显示） **取值范围**： 不涉及。
         :type flush_size: int
-        :param timezone: 时区。（仅目标端类型为OBS时会显示）
+        :param timezone: **参数解释**： 时区。（仅目标端类型为OBS时会显示） **取值范围**： 不涉及。
         :type timezone: str
-        :param schema_generator_class: schema_generator类，默认为\&quot;io.confluent.connect.storage.hive.schema.DefaultSchemaGenerator\&quot;。（仅目标端类型为OBS时会显示）
+        :param schema_generator_class: **参数解释**： schema_generator类，默认为\&quot;io.confluent.connect.storage.hive.schema.DefaultSchemaGenerator\&quot;。（仅目标端类型为OBS时会显示） **取值范围**： 不涉及。
         :type schema_generator_class: str
-        :param partitioner_class: partitioner类，默认\&quot;io.confluent.connect.storage.partitioner.TimeBasedPartitioner\&quot;。（仅目标端类型为OBS时会显示）
+        :param partitioner_class: **参数解释**： partitioner类，默认\&quot;io.confluent.connect.storage.partitioner.TimeBasedPartitioner\&quot;。（仅目标端类型为OBS时会显示） **取值范围**： 不涉及。
         :type partitioner_class: str
-        :param value_converter: value_converter，默认为\&quot;org.apache.kafka.connect.converters.ByteArrayConverter\&quot;。（仅目标端类型为OBS时会显示）
+        :param value_converter: **参数解释**： 值转换器，默认为\&quot;org.apache.kafka.connect.converters.ByteArrayConverter\&quot;。（仅目标端类型为OBS时会显示） **取值范围**： 不涉及。
         :type value_converter: str
-        :param key_converter: key_converter，默认为\&quot;org.apache.kafka.connect.converters.ByteArrayConverter\&quot;。（仅目标端类型为OBS时会显示）
+        :param key_converter: **参数解释**： 键转换器，默认为\&quot;org.apache.kafka.connect.converters.ByteArrayConverter\&quot;。（仅目标端类型为OBS时会显示） **取值范围**： 不涉及。
         :type key_converter: str
-        :param kv_delimiter: kv_delimiter，默认为\&quot;:\&quot;。（仅目标端类型为OBS时会显示）
+        :param kv_delimiter: **参数解释**： 键值分隔符，默认为\&quot;:\&quot;。（仅目标端类型为OBS时会显示） **取值范围**： 不涉及。
         :type kv_delimiter: str
         """
         
@@ -150,7 +150,7 @@ class SmartConnectTaskRespSinkConfig:
     def consumer_strategy(self):
         r"""Gets the consumer_strategy of this SmartConnectTaskRespSinkConfig.
 
-        转储启动偏移量，latest为获取最新的数据，earliest为获取最早的数据。（仅目标端类型为OBS时会显示）
+        **参数解释**： 转储启动偏移量。（仅目标端类型为OBS时会显示） **取值范围**： - latest：获取最新的数据。 - earliest：获取最早的数据。
 
         :return: The consumer_strategy of this SmartConnectTaskRespSinkConfig.
         :rtype: str
@@ -161,7 +161,7 @@ class SmartConnectTaskRespSinkConfig:
     def consumer_strategy(self, consumer_strategy):
         r"""Sets the consumer_strategy of this SmartConnectTaskRespSinkConfig.
 
-        转储启动偏移量，latest为获取最新的数据，earliest为获取最早的数据。（仅目标端类型为OBS时会显示）
+        **参数解释**： 转储启动偏移量。（仅目标端类型为OBS时会显示） **取值范围**： - latest：获取最新的数据。 - earliest：获取最早的数据。
 
         :param consumer_strategy: The consumer_strategy of this SmartConnectTaskRespSinkConfig.
         :type consumer_strategy: str
@@ -172,7 +172,7 @@ class SmartConnectTaskRespSinkConfig:
     def destination_file_type(self):
         r"""Gets the destination_file_type of this SmartConnectTaskRespSinkConfig.
 
-        转储文件格式。当前只支持TEXT。（仅目标端类型为OBS时会显示）
+        **参数解释**： 转储文件格式。当前只支持TEXT。（仅目标端类型为OBS时会显示） **取值范围**： 不涉及。
 
         :return: The destination_file_type of this SmartConnectTaskRespSinkConfig.
         :rtype: str
@@ -183,7 +183,7 @@ class SmartConnectTaskRespSinkConfig:
     def destination_file_type(self, destination_file_type):
         r"""Sets the destination_file_type of this SmartConnectTaskRespSinkConfig.
 
-        转储文件格式。当前只支持TEXT。（仅目标端类型为OBS时会显示）
+        **参数解释**： 转储文件格式。当前只支持TEXT。（仅目标端类型为OBS时会显示） **取值范围**： 不涉及。
 
         :param destination_file_type: The destination_file_type of this SmartConnectTaskRespSinkConfig.
         :type destination_file_type: str
@@ -194,7 +194,7 @@ class SmartConnectTaskRespSinkConfig:
     def deliver_time_interval(self):
         r"""Gets the deliver_time_interval of this SmartConnectTaskRespSinkConfig.
 
-        记数据转储周期（秒）。（仅目标端类型为OBS时会显示）
+        **参数解释**： 数据转储周期（秒）。（仅目标端类型为OBS时会显示） **取值范围**： 不涉及。
 
         :return: The deliver_time_interval of this SmartConnectTaskRespSinkConfig.
         :rtype: int
@@ -205,7 +205,7 @@ class SmartConnectTaskRespSinkConfig:
     def deliver_time_interval(self, deliver_time_interval):
         r"""Sets the deliver_time_interval of this SmartConnectTaskRespSinkConfig.
 
-        记数据转储周期（秒）。（仅目标端类型为OBS时会显示）
+        **参数解释**： 数据转储周期（秒）。（仅目标端类型为OBS时会显示） **取值范围**： 不涉及。
 
         :param deliver_time_interval: The deliver_time_interval of this SmartConnectTaskRespSinkConfig.
         :type deliver_time_interval: int
@@ -216,7 +216,7 @@ class SmartConnectTaskRespSinkConfig:
     def obs_bucket_name(self):
         r"""Gets the obs_bucket_name of this SmartConnectTaskRespSinkConfig.
 
-        转储地址。（仅目标端类型为OBS时会显示）
+        **参数解释**： 转储地址。（仅目标端类型为OBS时会显示） **取值范围**： 不涉及。
 
         :return: The obs_bucket_name of this SmartConnectTaskRespSinkConfig.
         :rtype: str
@@ -227,7 +227,7 @@ class SmartConnectTaskRespSinkConfig:
     def obs_bucket_name(self, obs_bucket_name):
         r"""Sets the obs_bucket_name of this SmartConnectTaskRespSinkConfig.
 
-        转储地址。（仅目标端类型为OBS时会显示）
+        **参数解释**： 转储地址。（仅目标端类型为OBS时会显示） **取值范围**： 不涉及。
 
         :param obs_bucket_name: The obs_bucket_name of this SmartConnectTaskRespSinkConfig.
         :type obs_bucket_name: str
@@ -238,7 +238,7 @@ class SmartConnectTaskRespSinkConfig:
     def obs_path(self):
         r"""Gets the obs_path of this SmartConnectTaskRespSinkConfig.
 
-        转储目录。（仅目标端类型为OBS时会显示）
+        **参数解释**： 转储目录。（仅目标端类型为OBS时会显示） **取值范围**： 不涉及。
 
         :return: The obs_path of this SmartConnectTaskRespSinkConfig.
         :rtype: str
@@ -249,7 +249,7 @@ class SmartConnectTaskRespSinkConfig:
     def obs_path(self, obs_path):
         r"""Sets the obs_path of this SmartConnectTaskRespSinkConfig.
 
-        转储目录。（仅目标端类型为OBS时会显示）
+        **参数解释**： 转储目录。（仅目标端类型为OBS时会显示） **取值范围**： 不涉及。
 
         :param obs_path: The obs_path of this SmartConnectTaskRespSinkConfig.
         :type obs_path: str
@@ -260,7 +260,7 @@ class SmartConnectTaskRespSinkConfig:
     def partition_format(self):
         r"""Gets the partition_format of this SmartConnectTaskRespSinkConfig.
 
-        时间目录格式。（仅目标端类型为OBS时会显示）
+        **参数解释**： 时间目录格式。（仅目标端类型为OBS时会显示） **取值范围**： 不涉及。
 
         :return: The partition_format of this SmartConnectTaskRespSinkConfig.
         :rtype: str
@@ -271,7 +271,7 @@ class SmartConnectTaskRespSinkConfig:
     def partition_format(self, partition_format):
         r"""Sets the partition_format of this SmartConnectTaskRespSinkConfig.
 
-        时间目录格式。（仅目标端类型为OBS时会显示）
+        **参数解释**： 时间目录格式。（仅目标端类型为OBS时会显示） **取值范围**： 不涉及。
 
         :param partition_format: The partition_format of this SmartConnectTaskRespSinkConfig.
         :type partition_format: str
@@ -282,7 +282,7 @@ class SmartConnectTaskRespSinkConfig:
     def record_delimiter(self):
         r"""Gets the record_delimiter of this SmartConnectTaskRespSinkConfig.
 
-        记录分行符。（仅目标端类型为OBS时会显示）
+        **参数解释**： 记录分行符。（仅目标端类型为OBS时会显示） **取值范围**： 不涉及。
 
         :return: The record_delimiter of this SmartConnectTaskRespSinkConfig.
         :rtype: str
@@ -293,7 +293,7 @@ class SmartConnectTaskRespSinkConfig:
     def record_delimiter(self, record_delimiter):
         r"""Sets the record_delimiter of this SmartConnectTaskRespSinkConfig.
 
-        记录分行符。（仅目标端类型为OBS时会显示）
+        **参数解释**： 记录分行符。（仅目标端类型为OBS时会显示） **取值范围**： 不涉及。
 
         :param record_delimiter: The record_delimiter of this SmartConnectTaskRespSinkConfig.
         :type record_delimiter: str
@@ -304,7 +304,7 @@ class SmartConnectTaskRespSinkConfig:
     def store_keys(self):
         r"""Gets the store_keys of this SmartConnectTaskRespSinkConfig.
 
-        存储Key。（仅目标端类型为OBS时会显示）
+        **参数解释**： 存储Key。（仅目标端类型为OBS时会显示） **取值范围**： 不涉及。
 
         :return: The store_keys of this SmartConnectTaskRespSinkConfig.
         :rtype: bool
@@ -315,7 +315,7 @@ class SmartConnectTaskRespSinkConfig:
     def store_keys(self, store_keys):
         r"""Sets the store_keys of this SmartConnectTaskRespSinkConfig.
 
-        存储Key。（仅目标端类型为OBS时会显示）
+        **参数解释**： 存储Key。（仅目标端类型为OBS时会显示） **取值范围**： 不涉及。
 
         :param store_keys: The store_keys of this SmartConnectTaskRespSinkConfig.
         :type store_keys: bool
@@ -326,7 +326,7 @@ class SmartConnectTaskRespSinkConfig:
     def obs_part_size(self):
         r"""Gets the obs_part_size of this SmartConnectTaskRespSinkConfig.
 
-        每个传输文件多大后就开始上传，单位为byte；默认值5242880。（仅目标端类型为OBS时会显示）
+        **参数解释**： 每个传输文件多大后就开始上传，单位为byte；默认值5242880。（仅目标端类型为OBS时会显示） **取值范围**： 不涉及。
 
         :return: The obs_part_size of this SmartConnectTaskRespSinkConfig.
         :rtype: int
@@ -337,7 +337,7 @@ class SmartConnectTaskRespSinkConfig:
     def obs_part_size(self, obs_part_size):
         r"""Sets the obs_part_size of this SmartConnectTaskRespSinkConfig.
 
-        每个传输文件多大后就开始上传，单位为byte；默认值5242880。（仅目标端类型为OBS时会显示）
+        **参数解释**： 每个传输文件多大后就开始上传，单位为byte；默认值5242880。（仅目标端类型为OBS时会显示） **取值范围**： 不涉及。
 
         :param obs_part_size: The obs_part_size of this SmartConnectTaskRespSinkConfig.
         :type obs_part_size: int
@@ -348,7 +348,7 @@ class SmartConnectTaskRespSinkConfig:
     def flush_size(self):
         r"""Gets the flush_size of this SmartConnectTaskRespSinkConfig.
 
-        flush_size。（仅目标端类型为OBS时会显示）
+        **参数解释**： 刷写数量。（仅目标端类型为OBS时会显示） **取值范围**： 不涉及。
 
         :return: The flush_size of this SmartConnectTaskRespSinkConfig.
         :rtype: int
@@ -359,7 +359,7 @@ class SmartConnectTaskRespSinkConfig:
     def flush_size(self, flush_size):
         r"""Sets the flush_size of this SmartConnectTaskRespSinkConfig.
 
-        flush_size。（仅目标端类型为OBS时会显示）
+        **参数解释**： 刷写数量。（仅目标端类型为OBS时会显示） **取值范围**： 不涉及。
 
         :param flush_size: The flush_size of this SmartConnectTaskRespSinkConfig.
         :type flush_size: int
@@ -370,7 +370,7 @@ class SmartConnectTaskRespSinkConfig:
     def timezone(self):
         r"""Gets the timezone of this SmartConnectTaskRespSinkConfig.
 
-        时区。（仅目标端类型为OBS时会显示）
+        **参数解释**： 时区。（仅目标端类型为OBS时会显示） **取值范围**： 不涉及。
 
         :return: The timezone of this SmartConnectTaskRespSinkConfig.
         :rtype: str
@@ -381,7 +381,7 @@ class SmartConnectTaskRespSinkConfig:
     def timezone(self, timezone):
         r"""Sets the timezone of this SmartConnectTaskRespSinkConfig.
 
-        时区。（仅目标端类型为OBS时会显示）
+        **参数解释**： 时区。（仅目标端类型为OBS时会显示） **取值范围**： 不涉及。
 
         :param timezone: The timezone of this SmartConnectTaskRespSinkConfig.
         :type timezone: str
@@ -392,7 +392,7 @@ class SmartConnectTaskRespSinkConfig:
     def schema_generator_class(self):
         r"""Gets the schema_generator_class of this SmartConnectTaskRespSinkConfig.
 
-        schema_generator类，默认为\"io.confluent.connect.storage.hive.schema.DefaultSchemaGenerator\"。（仅目标端类型为OBS时会显示）
+        **参数解释**： schema_generator类，默认为\"io.confluent.connect.storage.hive.schema.DefaultSchemaGenerator\"。（仅目标端类型为OBS时会显示） **取值范围**： 不涉及。
 
         :return: The schema_generator_class of this SmartConnectTaskRespSinkConfig.
         :rtype: str
@@ -403,7 +403,7 @@ class SmartConnectTaskRespSinkConfig:
     def schema_generator_class(self, schema_generator_class):
         r"""Sets the schema_generator_class of this SmartConnectTaskRespSinkConfig.
 
-        schema_generator类，默认为\"io.confluent.connect.storage.hive.schema.DefaultSchemaGenerator\"。（仅目标端类型为OBS时会显示）
+        **参数解释**： schema_generator类，默认为\"io.confluent.connect.storage.hive.schema.DefaultSchemaGenerator\"。（仅目标端类型为OBS时会显示） **取值范围**： 不涉及。
 
         :param schema_generator_class: The schema_generator_class of this SmartConnectTaskRespSinkConfig.
         :type schema_generator_class: str
@@ -414,7 +414,7 @@ class SmartConnectTaskRespSinkConfig:
     def partitioner_class(self):
         r"""Gets the partitioner_class of this SmartConnectTaskRespSinkConfig.
 
-        partitioner类，默认\"io.confluent.connect.storage.partitioner.TimeBasedPartitioner\"。（仅目标端类型为OBS时会显示）
+        **参数解释**： partitioner类，默认\"io.confluent.connect.storage.partitioner.TimeBasedPartitioner\"。（仅目标端类型为OBS时会显示） **取值范围**： 不涉及。
 
         :return: The partitioner_class of this SmartConnectTaskRespSinkConfig.
         :rtype: str
@@ -425,7 +425,7 @@ class SmartConnectTaskRespSinkConfig:
     def partitioner_class(self, partitioner_class):
         r"""Sets the partitioner_class of this SmartConnectTaskRespSinkConfig.
 
-        partitioner类，默认\"io.confluent.connect.storage.partitioner.TimeBasedPartitioner\"。（仅目标端类型为OBS时会显示）
+        **参数解释**： partitioner类，默认\"io.confluent.connect.storage.partitioner.TimeBasedPartitioner\"。（仅目标端类型为OBS时会显示） **取值范围**： 不涉及。
 
         :param partitioner_class: The partitioner_class of this SmartConnectTaskRespSinkConfig.
         :type partitioner_class: str
@@ -436,7 +436,7 @@ class SmartConnectTaskRespSinkConfig:
     def value_converter(self):
         r"""Gets the value_converter of this SmartConnectTaskRespSinkConfig.
 
-        value_converter，默认为\"org.apache.kafka.connect.converters.ByteArrayConverter\"。（仅目标端类型为OBS时会显示）
+        **参数解释**： 值转换器，默认为\"org.apache.kafka.connect.converters.ByteArrayConverter\"。（仅目标端类型为OBS时会显示） **取值范围**： 不涉及。
 
         :return: The value_converter of this SmartConnectTaskRespSinkConfig.
         :rtype: str
@@ -447,7 +447,7 @@ class SmartConnectTaskRespSinkConfig:
     def value_converter(self, value_converter):
         r"""Sets the value_converter of this SmartConnectTaskRespSinkConfig.
 
-        value_converter，默认为\"org.apache.kafka.connect.converters.ByteArrayConverter\"。（仅目标端类型为OBS时会显示）
+        **参数解释**： 值转换器，默认为\"org.apache.kafka.connect.converters.ByteArrayConverter\"。（仅目标端类型为OBS时会显示） **取值范围**： 不涉及。
 
         :param value_converter: The value_converter of this SmartConnectTaskRespSinkConfig.
         :type value_converter: str
@@ -458,7 +458,7 @@ class SmartConnectTaskRespSinkConfig:
     def key_converter(self):
         r"""Gets the key_converter of this SmartConnectTaskRespSinkConfig.
 
-        key_converter，默认为\"org.apache.kafka.connect.converters.ByteArrayConverter\"。（仅目标端类型为OBS时会显示）
+        **参数解释**： 键转换器，默认为\"org.apache.kafka.connect.converters.ByteArrayConverter\"。（仅目标端类型为OBS时会显示） **取值范围**： 不涉及。
 
         :return: The key_converter of this SmartConnectTaskRespSinkConfig.
         :rtype: str
@@ -469,7 +469,7 @@ class SmartConnectTaskRespSinkConfig:
     def key_converter(self, key_converter):
         r"""Sets the key_converter of this SmartConnectTaskRespSinkConfig.
 
-        key_converter，默认为\"org.apache.kafka.connect.converters.ByteArrayConverter\"。（仅目标端类型为OBS时会显示）
+        **参数解释**： 键转换器，默认为\"org.apache.kafka.connect.converters.ByteArrayConverter\"。（仅目标端类型为OBS时会显示） **取值范围**： 不涉及。
 
         :param key_converter: The key_converter of this SmartConnectTaskRespSinkConfig.
         :type key_converter: str
@@ -480,7 +480,7 @@ class SmartConnectTaskRespSinkConfig:
     def kv_delimiter(self):
         r"""Gets the kv_delimiter of this SmartConnectTaskRespSinkConfig.
 
-        kv_delimiter，默认为\":\"。（仅目标端类型为OBS时会显示）
+        **参数解释**： 键值分隔符，默认为\":\"。（仅目标端类型为OBS时会显示） **取值范围**： 不涉及。
 
         :return: The kv_delimiter of this SmartConnectTaskRespSinkConfig.
         :rtype: str
@@ -491,7 +491,7 @@ class SmartConnectTaskRespSinkConfig:
     def kv_delimiter(self, kv_delimiter):
         r"""Sets the kv_delimiter of this SmartConnectTaskRespSinkConfig.
 
-        kv_delimiter，默认为\":\"。（仅目标端类型为OBS时会显示）
+        **参数解释**： 键值分隔符，默认为\":\"。（仅目标端类型为OBS时会显示） **取值范围**： 不涉及。
 
         :param kv_delimiter: The kv_delimiter of this SmartConnectTaskRespSinkConfig.
         :type kv_delimiter: str

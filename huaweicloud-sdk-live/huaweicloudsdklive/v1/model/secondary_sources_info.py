@@ -23,6 +23,7 @@ class SecondarySourcesInfo:
         'height': 'int',
         'bitrate_for3u8': 'bool',
         'passphrase': 'str',
+        'pbkeylen': 'int',
         'backup_urls': 'list[str]',
         'stream_id': 'str',
         'latency': 'int'
@@ -35,12 +36,13 @@ class SecondarySourcesInfo:
         'height': 'height',
         'bitrate_for3u8': 'bitrate_for3u8',
         'passphrase': 'passphrase',
+        'pbkeylen': 'pbkeylen',
         'backup_urls': 'backup_urls',
         'stream_id': 'stream_id',
         'latency': 'latency'
     }
 
-    def __init__(self, url=None, bitrate=None, width=None, height=None, bitrate_for3u8=None, passphrase=None, backup_urls=None, stream_id=None, latency=None):
+    def __init__(self, url=None, bitrate=None, width=None, height=None, bitrate_for3u8=None, passphrase=None, pbkeylen=None, backup_urls=None, stream_id=None, latency=None):
         r"""SecondarySourcesInfo
 
         The model defined in huaweicloud sdk
@@ -57,6 +59,8 @@ class SecondarySourcesInfo:
         :type bitrate_for3u8: bool
         :param passphrase: 协议为SRT_PUSH时的加密信息
         :type passphrase: str
+        :param pbkeylen: srt加密算法
+        :type pbkeylen: int
         :param backup_urls: 备入流地址列表
         :type backup_urls: list[str]
         :param stream_id: 频道为SRT_PULL类型时，拉流地址的Stream ID。
@@ -73,6 +77,7 @@ class SecondarySourcesInfo:
         self._height = None
         self._bitrate_for3u8 = None
         self._passphrase = None
+        self._pbkeylen = None
         self._backup_urls = None
         self._stream_id = None
         self._latency = None
@@ -90,6 +95,8 @@ class SecondarySourcesInfo:
             self.bitrate_for3u8 = bitrate_for3u8
         if passphrase is not None:
             self.passphrase = passphrase
+        if pbkeylen is not None:
+            self.pbkeylen = pbkeylen
         if backup_urls is not None:
             self.backup_urls = backup_urls
         if stream_id is not None:
@@ -228,6 +235,28 @@ class SecondarySourcesInfo:
         :type passphrase: str
         """
         self._passphrase = passphrase
+
+    @property
+    def pbkeylen(self):
+        r"""Gets the pbkeylen of this SecondarySourcesInfo.
+
+        srt加密算法
+
+        :return: The pbkeylen of this SecondarySourcesInfo.
+        :rtype: int
+        """
+        return self._pbkeylen
+
+    @pbkeylen.setter
+    def pbkeylen(self, pbkeylen):
+        r"""Sets the pbkeylen of this SecondarySourcesInfo.
+
+        srt加密算法
+
+        :param pbkeylen: The pbkeylen of this SecondarySourcesInfo.
+        :type pbkeylen: int
+        """
+        self._pbkeylen = pbkeylen
 
     @property
     def backup_urls(self):

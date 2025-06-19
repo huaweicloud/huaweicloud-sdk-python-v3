@@ -51,29 +51,29 @@ class ListFlinkJobsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param job_type: 作业类型
+        :param job_type: 参数解释:  作业类型 示例: flink_jar_job 约束限制:  无 取值范围: flink_sql_job（flink sql作业） flink_opensource_sql_job（flink opensource sql作业） flink_sql_edge_job（flink sql边缘作业） flink_jar_job（flink自定义作业） 默认取值: 无
         :type job_type: str
-        :param limit: 返回的数据条数。默认为10。
+        :param limit: 参数解释:  返回的数据条数。默认为10 示例: 100 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 10
         :type limit: int
-        :param name: 作业名称。长度限制：0-57个字符。
+        :param name: 参数解释:  作业名称 示例: myjob 约束限制:  长度在[0,57]的字符串 取值范围: 无 默认取值: 无
         :type name: str
-        :param offset: 作业偏移量。
+        :param offset: 参数解释:  作业偏移量 示例: 10000 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 0
         :type offset: int
-        :param order: 查询结果排序，升序asc和降序desc两种可选，默认降序。
+        :param order: 参数解释:  查询结果排序 示例: asc 约束限制:  无 取值范围: asc desc 默认取值: desc
         :type order: str
-        :param queue_name: 队列名称。
+        :param queue_name: 参数解释:  队列名称 示例: queue1 约束限制:  无 取值范围: 无 默认取值: 无
         :type queue_name: str
-        :param root_job_id: 边缘父作业ID, 用于查询指定边缘作业的子作业。不带该参数时, 查询所有非边缘作业和边缘父作业, 不包括边缘子作业。
+        :param root_job_id: 参数解释:  边缘父作业ID, 用于查询指定边缘作业的子作业。不带该参数时, 查询所有非边缘作业和边缘父作业, 不包括边缘子作业 示例: 548483 约束限制:  无 取值范围: 无 默认取值: 无
         :type root_job_id: int
-        :param show_detail: 是否返回作业详情信息。默认为false。
+        :param show_detail: 参数解释:  是否返回作业详情信息 示例: false 约束限制:  无 取值范围: true,false 默认取值: false
         :type show_detail: bool
-        :param status: 作业状态。 作业的状态如下： job_init：草稿 job_submitting：提交中 job_submit_fail：提交失败 job_running：运行中（开始计费，提交作业后，返回正常结果） job_running_exception：运行异常（停止计费。作业发生运行时异常，停止运行作业） job_downloading：下载中 job_idle：空闲 job_canceling：停止中 job_cancel_success：已停止 job_cancel_fail：停止失败 job_savepointing：保存点创建中 job_arrearage_stopped：因欠费被停止（结束计费。用户账户欠费，作业停止） job_arrearage_recovering：欠费作业恢复中（用户账户欠费，账户充值，作业恢复中） job_finish：已完成
+        :param status: 参数解释:  作业状态 示例: job_submitting 约束限制:  无 取值范围: job_init（草稿） job_submitting（提交中） job_submit_fail（提交失败） job_running（运行中） job_running_exception（运行异常） job_downloading（下载中） job_idle（空闲） job_canceling（停止中） job_cancel_success（已停止） job_cancel_fail（停止失败） job_savepointing（保存点创建中） job_arrearage_stopped（因欠费被停止） job_arrearage_recovering（欠费作业恢复中） job_finish（已完成） 默认取值: 无
         :type status: str
-        :param sys_enterprise_project_name: 
+        :param sys_enterprise_project_name: 参数解释:  企业项目名称 示例: DLI 约束限制:  无 取值范围: 无 默认取值: 无
         :type sys_enterprise_project_name: str
-        :param tags: 
+        :param tags: 参数解释:  标签列表 示例: key_zy1&#x3D;zy01,AA&#x3D;aa 约束限制:  符合键值对格式(如“key&#x3D;value”)的字符串 取值范围: 无 默认取值: 无
         :type tags: str
-        :param user_name: 用户名，可作为筛选条件
+        :param user_name: 参数解释:  用户名，可作为筛选条件 示例: ei_dlics_d00352431 约束限制:  无 取值范围: 无 默认取值: 无
         :type user_name: str
         """
         
@@ -122,7 +122,7 @@ class ListFlinkJobsRequest:
     def job_type(self):
         r"""Gets the job_type of this ListFlinkJobsRequest.
 
-        作业类型
+        参数解释:  作业类型 示例: flink_jar_job 约束限制:  无 取值范围: flink_sql_job（flink sql作业） flink_opensource_sql_job（flink opensource sql作业） flink_sql_edge_job（flink sql边缘作业） flink_jar_job（flink自定义作业） 默认取值: 无
 
         :return: The job_type of this ListFlinkJobsRequest.
         :rtype: str
@@ -133,7 +133,7 @@ class ListFlinkJobsRequest:
     def job_type(self, job_type):
         r"""Sets the job_type of this ListFlinkJobsRequest.
 
-        作业类型
+        参数解释:  作业类型 示例: flink_jar_job 约束限制:  无 取值范围: flink_sql_job（flink sql作业） flink_opensource_sql_job（flink opensource sql作业） flink_sql_edge_job（flink sql边缘作业） flink_jar_job（flink自定义作业） 默认取值: 无
 
         :param job_type: The job_type of this ListFlinkJobsRequest.
         :type job_type: str
@@ -144,7 +144,7 @@ class ListFlinkJobsRequest:
     def limit(self):
         r"""Gets the limit of this ListFlinkJobsRequest.
 
-        返回的数据条数。默认为10。
+        参数解释:  返回的数据条数。默认为10 示例: 100 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 10
 
         :return: The limit of this ListFlinkJobsRequest.
         :rtype: int
@@ -155,7 +155,7 @@ class ListFlinkJobsRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListFlinkJobsRequest.
 
-        返回的数据条数。默认为10。
+        参数解释:  返回的数据条数。默认为10 示例: 100 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 10
 
         :param limit: The limit of this ListFlinkJobsRequest.
         :type limit: int
@@ -166,7 +166,7 @@ class ListFlinkJobsRequest:
     def name(self):
         r"""Gets the name of this ListFlinkJobsRequest.
 
-        作业名称。长度限制：0-57个字符。
+        参数解释:  作业名称 示例: myjob 约束限制:  长度在[0,57]的字符串 取值范围: 无 默认取值: 无
 
         :return: The name of this ListFlinkJobsRequest.
         :rtype: str
@@ -177,7 +177,7 @@ class ListFlinkJobsRequest:
     def name(self, name):
         r"""Sets the name of this ListFlinkJobsRequest.
 
-        作业名称。长度限制：0-57个字符。
+        参数解释:  作业名称 示例: myjob 约束限制:  长度在[0,57]的字符串 取值范围: 无 默认取值: 无
 
         :param name: The name of this ListFlinkJobsRequest.
         :type name: str
@@ -188,7 +188,7 @@ class ListFlinkJobsRequest:
     def offset(self):
         r"""Gets the offset of this ListFlinkJobsRequest.
 
-        作业偏移量。
+        参数解释:  作业偏移量 示例: 10000 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 0
 
         :return: The offset of this ListFlinkJobsRequest.
         :rtype: int
@@ -199,7 +199,7 @@ class ListFlinkJobsRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListFlinkJobsRequest.
 
-        作业偏移量。
+        参数解释:  作业偏移量 示例: 10000 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 0
 
         :param offset: The offset of this ListFlinkJobsRequest.
         :type offset: int
@@ -210,7 +210,7 @@ class ListFlinkJobsRequest:
     def order(self):
         r"""Gets the order of this ListFlinkJobsRequest.
 
-        查询结果排序，升序asc和降序desc两种可选，默认降序。
+        参数解释:  查询结果排序 示例: asc 约束限制:  无 取值范围: asc desc 默认取值: desc
 
         :return: The order of this ListFlinkJobsRequest.
         :rtype: str
@@ -221,7 +221,7 @@ class ListFlinkJobsRequest:
     def order(self, order):
         r"""Sets the order of this ListFlinkJobsRequest.
 
-        查询结果排序，升序asc和降序desc两种可选，默认降序。
+        参数解释:  查询结果排序 示例: asc 约束限制:  无 取值范围: asc desc 默认取值: desc
 
         :param order: The order of this ListFlinkJobsRequest.
         :type order: str
@@ -232,7 +232,7 @@ class ListFlinkJobsRequest:
     def queue_name(self):
         r"""Gets the queue_name of this ListFlinkJobsRequest.
 
-        队列名称。
+        参数解释:  队列名称 示例: queue1 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The queue_name of this ListFlinkJobsRequest.
         :rtype: str
@@ -243,7 +243,7 @@ class ListFlinkJobsRequest:
     def queue_name(self, queue_name):
         r"""Sets the queue_name of this ListFlinkJobsRequest.
 
-        队列名称。
+        参数解释:  队列名称 示例: queue1 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param queue_name: The queue_name of this ListFlinkJobsRequest.
         :type queue_name: str
@@ -254,7 +254,7 @@ class ListFlinkJobsRequest:
     def root_job_id(self):
         r"""Gets the root_job_id of this ListFlinkJobsRequest.
 
-        边缘父作业ID, 用于查询指定边缘作业的子作业。不带该参数时, 查询所有非边缘作业和边缘父作业, 不包括边缘子作业。
+        参数解释:  边缘父作业ID, 用于查询指定边缘作业的子作业。不带该参数时, 查询所有非边缘作业和边缘父作业, 不包括边缘子作业 示例: 548483 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The root_job_id of this ListFlinkJobsRequest.
         :rtype: int
@@ -265,7 +265,7 @@ class ListFlinkJobsRequest:
     def root_job_id(self, root_job_id):
         r"""Sets the root_job_id of this ListFlinkJobsRequest.
 
-        边缘父作业ID, 用于查询指定边缘作业的子作业。不带该参数时, 查询所有非边缘作业和边缘父作业, 不包括边缘子作业。
+        参数解释:  边缘父作业ID, 用于查询指定边缘作业的子作业。不带该参数时, 查询所有非边缘作业和边缘父作业, 不包括边缘子作业 示例: 548483 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param root_job_id: The root_job_id of this ListFlinkJobsRequest.
         :type root_job_id: int
@@ -276,7 +276,7 @@ class ListFlinkJobsRequest:
     def show_detail(self):
         r"""Gets the show_detail of this ListFlinkJobsRequest.
 
-        是否返回作业详情信息。默认为false。
+        参数解释:  是否返回作业详情信息 示例: false 约束限制:  无 取值范围: true,false 默认取值: false
 
         :return: The show_detail of this ListFlinkJobsRequest.
         :rtype: bool
@@ -287,7 +287,7 @@ class ListFlinkJobsRequest:
     def show_detail(self, show_detail):
         r"""Sets the show_detail of this ListFlinkJobsRequest.
 
-        是否返回作业详情信息。默认为false。
+        参数解释:  是否返回作业详情信息 示例: false 约束限制:  无 取值范围: true,false 默认取值: false
 
         :param show_detail: The show_detail of this ListFlinkJobsRequest.
         :type show_detail: bool
@@ -298,7 +298,7 @@ class ListFlinkJobsRequest:
     def status(self):
         r"""Gets the status of this ListFlinkJobsRequest.
 
-        作业状态。 作业的状态如下： job_init：草稿 job_submitting：提交中 job_submit_fail：提交失败 job_running：运行中（开始计费，提交作业后，返回正常结果） job_running_exception：运行异常（停止计费。作业发生运行时异常，停止运行作业） job_downloading：下载中 job_idle：空闲 job_canceling：停止中 job_cancel_success：已停止 job_cancel_fail：停止失败 job_savepointing：保存点创建中 job_arrearage_stopped：因欠费被停止（结束计费。用户账户欠费，作业停止） job_arrearage_recovering：欠费作业恢复中（用户账户欠费，账户充值，作业恢复中） job_finish：已完成
+        参数解释:  作业状态 示例: job_submitting 约束限制:  无 取值范围: job_init（草稿） job_submitting（提交中） job_submit_fail（提交失败） job_running（运行中） job_running_exception（运行异常） job_downloading（下载中） job_idle（空闲） job_canceling（停止中） job_cancel_success（已停止） job_cancel_fail（停止失败） job_savepointing（保存点创建中） job_arrearage_stopped（因欠费被停止） job_arrearage_recovering（欠费作业恢复中） job_finish（已完成） 默认取值: 无
 
         :return: The status of this ListFlinkJobsRequest.
         :rtype: str
@@ -309,7 +309,7 @@ class ListFlinkJobsRequest:
     def status(self, status):
         r"""Sets the status of this ListFlinkJobsRequest.
 
-        作业状态。 作业的状态如下： job_init：草稿 job_submitting：提交中 job_submit_fail：提交失败 job_running：运行中（开始计费，提交作业后，返回正常结果） job_running_exception：运行异常（停止计费。作业发生运行时异常，停止运行作业） job_downloading：下载中 job_idle：空闲 job_canceling：停止中 job_cancel_success：已停止 job_cancel_fail：停止失败 job_savepointing：保存点创建中 job_arrearage_stopped：因欠费被停止（结束计费。用户账户欠费，作业停止） job_arrearage_recovering：欠费作业恢复中（用户账户欠费，账户充值，作业恢复中） job_finish：已完成
+        参数解释:  作业状态 示例: job_submitting 约束限制:  无 取值范围: job_init（草稿） job_submitting（提交中） job_submit_fail（提交失败） job_running（运行中） job_running_exception（运行异常） job_downloading（下载中） job_idle（空闲） job_canceling（停止中） job_cancel_success（已停止） job_cancel_fail（停止失败） job_savepointing（保存点创建中） job_arrearage_stopped（因欠费被停止） job_arrearage_recovering（欠费作业恢复中） job_finish（已完成） 默认取值: 无
 
         :param status: The status of this ListFlinkJobsRequest.
         :type status: str
@@ -320,6 +320,8 @@ class ListFlinkJobsRequest:
     def sys_enterprise_project_name(self):
         r"""Gets the sys_enterprise_project_name of this ListFlinkJobsRequest.
 
+        参数解释:  企业项目名称 示例: DLI 约束限制:  无 取值范围: 无 默认取值: 无
+
         :return: The sys_enterprise_project_name of this ListFlinkJobsRequest.
         :rtype: str
         """
@@ -328,6 +330,8 @@ class ListFlinkJobsRequest:
     @sys_enterprise_project_name.setter
     def sys_enterprise_project_name(self, sys_enterprise_project_name):
         r"""Sets the sys_enterprise_project_name of this ListFlinkJobsRequest.
+
+        参数解释:  企业项目名称 示例: DLI 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param sys_enterprise_project_name: The sys_enterprise_project_name of this ListFlinkJobsRequest.
         :type sys_enterprise_project_name: str
@@ -338,6 +342,8 @@ class ListFlinkJobsRequest:
     def tags(self):
         r"""Gets the tags of this ListFlinkJobsRequest.
 
+        参数解释:  标签列表 示例: key_zy1=zy01,AA=aa 约束限制:  符合键值对格式(如“key=value”)的字符串 取值范围: 无 默认取值: 无
+
         :return: The tags of this ListFlinkJobsRequest.
         :rtype: str
         """
@@ -346,6 +352,8 @@ class ListFlinkJobsRequest:
     @tags.setter
     def tags(self, tags):
         r"""Sets the tags of this ListFlinkJobsRequest.
+
+        参数解释:  标签列表 示例: key_zy1=zy01,AA=aa 约束限制:  符合键值对格式(如“key=value”)的字符串 取值范围: 无 默认取值: 无
 
         :param tags: The tags of this ListFlinkJobsRequest.
         :type tags: str
@@ -356,7 +364,7 @@ class ListFlinkJobsRequest:
     def user_name(self):
         r"""Gets the user_name of this ListFlinkJobsRequest.
 
-        用户名，可作为筛选条件
+        参数解释:  用户名，可作为筛选条件 示例: ei_dlics_d00352431 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The user_name of this ListFlinkJobsRequest.
         :rtype: str
@@ -367,7 +375,7 @@ class ListFlinkJobsRequest:
     def user_name(self, user_name):
         r"""Sets the user_name of this ListFlinkJobsRequest.
 
-        用户名，可作为筛选条件
+        参数解释:  用户名，可作为筛选条件 示例: ei_dlics_d00352431 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param user_name: The user_name of this ListFlinkJobsRequest.
         :type user_name: str

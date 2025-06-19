@@ -1685,6 +1685,73 @@ class CfwAsyncClient(Client):
 
         return http_info
 
+    def delete_ip_blacklist_async(self, request):
+        r"""删除已经导入的IP黑名单
+
+        删除流量过滤功能下已经导入的IP黑名单，指定生效范围进行删除。 标准版的墙只会存在生效范围为EIP的IP黑名单，专业版的墙会存在生效范围为EIP和NAT的IP黑名单。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteIpBlacklist
+        :type request: :class:`huaweicloudsdkcfw.v1.DeleteIpBlacklistRequest`
+        :rtype: :class:`huaweicloudsdkcfw.v1.DeleteIpBlacklistResponse`
+        """
+        http_info = self._delete_ip_blacklist_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_ip_blacklist_async_invoker(self, request):
+        http_info = self._delete_ip_blacklist_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_ip_blacklist_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/ptf/ip-blacklist",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteIpBlacklistResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'fw_instance_id' in local_var_params:
+            query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_service_item_async(self, request):
         r"""删除服务成员
 
@@ -1861,6 +1928,210 @@ class CfwAsyncClient(Client):
             path_params['fw_instance_id'] = local_var_params['fw_instance_id']
 
         query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def enable_ip_blacklist_async(self, request):
+        r"""开启或者关闭流量过滤的IP黑名单功能
+
+        开启或者关闭流量过滤功能，当前流量过滤是通过导入IP黑名单实现的。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for EnableIpBlacklist
+        :type request: :class:`huaweicloudsdkcfw.v1.EnableIpBlacklistRequest`
+        :rtype: :class:`huaweicloudsdkcfw.v1.EnableIpBlacklistResponse`
+        """
+        http_info = self._enable_ip_blacklist_http_info(request)
+        return self._call_api(**http_info)
+
+    def enable_ip_blacklist_async_invoker(self, request):
+        http_info = self._enable_ip_blacklist_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _enable_ip_blacklist_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/ptf/ip-blacklist/switch",
+            "request_type": request.__class__.__name__,
+            "response_type": "EnableIpBlacklistResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'fw_instance_id' in local_var_params:
+            query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def export_ip_blacklist_async(self, request):
+        r"""导出用于流量过滤的IP黑名单
+
+        指定IP黑名单的名字进行导出，当前只有两种文件名，在EIP生效的文件名为ip-blacklist-eip.txt，在 NAT生效的文件名为ip-blacklist-nat.txt。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ExportIpBlacklist
+        :type request: :class:`huaweicloudsdkcfw.v1.ExportIpBlacklistRequest`
+        :rtype: :class:`huaweicloudsdkcfw.v1.ExportIpBlacklistResponse`
+        """
+        http_info = self._export_ip_blacklist_http_info(request)
+        return self._call_api(**http_info)
+
+    def export_ip_blacklist_async_invoker(self, request):
+        http_info = self._export_ip_blacklist_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _export_ip_blacklist_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/ptf/ip-blacklist/export",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExportIpBlacklistResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'fw_instance_id' in local_var_params:
+            query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["Content-Disposition", "Content-Length", "Content-Type", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def import_ip_blacklist_async(self, request):
+        r"""导入IP黑名单用于流量过滤
+
+        此接口用来导入IP黑名单，IP列表保存在request的body中，IP列表支持的格式如下：
+        单个IP地址，例如：100.1.1.10
+        连续的IP地址段，例如：80.1.1.3-80.1.1.30
+        掩码格式的网段，例如：6.6.6.0/24
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ImportIpBlacklist
+        :type request: :class:`huaweicloudsdkcfw.v1.ImportIpBlacklistRequest`
+        :rtype: :class:`huaweicloudsdkcfw.v1.ImportIpBlacklistResponse`
+        """
+        http_info = self._import_ip_blacklist_http_info(request)
+        return self._call_api(**http_info)
+
+    def import_ip_blacklist_async_invoker(self, request):
+        http_info = self._import_ip_blacklist_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _import_ip_blacklist_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/ptf/ip-blacklist/import",
+            "request_type": request.__class__.__name__,
+            "response_type": "ImportIpBlacklistResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'fw_instance_id' in local_var_params:
+            query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
 
         header_params = {}
 
@@ -3274,6 +3545,140 @@ class CfwAsyncClient(Client):
 
         return http_info
 
+    def list_ip_blacklist_async(self, request):
+        r"""获取导入的IP黑名单列表信息
+
+        获取防火墙实例中已经导入的IP黑名单信息，标准版防火墙只会显示一条EIP的记录，专业版防火墙可能显示EIP、NAT或EIP和NAT的记录，根据导入的情况确定。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListIpBlacklist
+        :type request: :class:`huaweicloudsdkcfw.v1.ListIpBlacklistRequest`
+        :rtype: :class:`huaweicloudsdkcfw.v1.ListIpBlacklistResponse`
+        """
+        http_info = self._list_ip_blacklist_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_ip_blacklist_async_invoker(self, request):
+        http_info = self._list_ip_blacklist_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_ip_blacklist_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/ptf/ip-blacklist",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListIpBlacklistResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'fw_instance_id' in local_var_params:
+            query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_ip_blacklist_switch_async(self, request):
+        r"""获取流量过滤功能的开关信息
+
+        流量过滤功能可以打开或者关闭，通过此接口可以获取当前的开关信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListIpBlacklistSwitch
+        :type request: :class:`huaweicloudsdkcfw.v1.ListIpBlacklistSwitchRequest`
+        :rtype: :class:`huaweicloudsdkcfw.v1.ListIpBlacklistSwitchResponse`
+        """
+        http_info = self._list_ip_blacklist_switch_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_ip_blacklist_switch_async_invoker(self, request):
+        http_info = self._list_ip_blacklist_switch_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_ip_blacklist_switch_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/ptf/ip-blacklist/switch",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListIpBlacklistSwitchResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'fw_instance_id' in local_var_params:
+            query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_job_async(self, request):
         r"""获取CFW任务执行状态
 
@@ -3809,6 +4214,73 @@ class CfwAsyncClient(Client):
             query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
         if 'query_service_set_type' in local_var_params:
             query_params.append(('query_service_set_type', local_var_params['query_service_set_type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def retry_ip_blacklist_async(self, request):
+        r"""用于流量过滤的IP黑名单导入失败后进行重新导入
+
+        用于流量过滤的IP黑名单导入失败后，调用此接口进行重试。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for RetryIpBlacklist
+        :type request: :class:`huaweicloudsdkcfw.v1.RetryIpBlacklistRequest`
+        :rtype: :class:`huaweicloudsdkcfw.v1.RetryIpBlacklistResponse`
+        """
+        http_info = self._retry_ip_blacklist_http_info(request)
+        return self._call_api(**http_info)
+
+    def retry_ip_blacklist_async_invoker(self, request):
+        http_info = self._retry_ip_blacklist_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _retry_ip_blacklist_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/ptf/ip-blacklist/retry",
+            "request_type": request.__class__.__name__,
+            "response_type": "RetryIpBlacklistResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'fw_instance_id' in local_var_params:
+            query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
 
         header_params = {}
 

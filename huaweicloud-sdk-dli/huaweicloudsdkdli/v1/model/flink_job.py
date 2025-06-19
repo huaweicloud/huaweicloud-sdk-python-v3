@@ -79,55 +79,55 @@ class FlinkJob:
 
         The model defined in huaweicloud sdk
 
-        :param job_id: 作业ID。
+        :param job_id: 参数解释:  作业ID 示例: 50320 约束限制:  无 取值范围: 无 默认取值: 无
         :type job_id: int
-        :param name: 作业名称。长度限制：0-57个字符。
+        :param name: 参数解释:  作业名称 示例: test 约束限制:  长度在[0,57]范围内的字符串 取值范围: 无 默认取值: 无
         :type name: str
-        :param desc: 作业描述。长度限制：0-2048个字符。
+        :param desc: 参数解释:  作业描述 示例: 作业描述 约束限制:  长度在[0,2048]范围内的字符串 取值范围: 无 默认取值: 无
         :type desc: str
-        :param user_name: 用户名，当“show_detail”为“false”时独有。
+        :param user_name: 参数解释:  用户名称 示例: testuser 约束限制:  长度在[1,128]范围内的字符串 取值范围: 无 默认取值: 无
         :type user_name: str
-        :param job_type: 作业类型。
+        :param job_type: 参数解释:  作业类型 示例: flink_jar_job 约束限制:  无 取值范围: flink_sql_job（flink sql作业） flink_opensource_sql_job（flink opensource sql作业） flink_sql_edge_job（flink sql边缘作业） flink_jar_job（flink自定义作业） 默认取值: 无
         :type job_type: str
-        :param status: 作业状态。
+        :param status: 参数解释:  作业状态 示例: job_running 约束限制:  无 取值范围: job_init（草稿） job_submitting（提交中） job_submit_fail（提交失败） job_running（运行中） job_running_exception（运行异常） job_downloading（下载中） job_idle（空闲） job_canceling（停止中） job_cancel_success（已停止） job_cancel_fail（停止失败） job_savepointing（保存点创建中） job_arrearage_stopped（因欠费被停止） job_arrearage_recovering（欠费作业恢复中） job_finish（已完成） 默认取值: 无
         :type status: str
-        :param status_desc: 作业状态描述。
+        :param status_desc: 参数解释:  用户名称 示例: 作业状态描述 约束限制:  无 取值范围: 无 默认取值: 无
         :type status_desc: str
-        :param create_time: 作业创建时间。
+        :param create_time: 参数解释:  作业创建时间 示例: 1516952770835 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
         :type create_time: int
-        :param start_time: 作业开始时间。
+        :param start_time: 参数解释:  作业开始时间 示例: 1516952710740 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
         :type start_time: int
-        :param duration: 作业运行时长, 单位ms，当“show_detail”为“false”时独有。
+        :param duration: 参数解释:  作业运行时长，单位ms，当“show_detail”为“false”时独有 示例: 30000 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
         :type duration: int
-        :param root_id: 父作业ID，“show_detail”为“false”时独有。
+        :param root_id: 参数解释:  父作业ID，“show_detail”为“false”时独有 示例: -1 约束限制:  无 取值范围: 无 默认取值: 无
         :type root_id: int
-        :param user_id: 作业所属用户标识，“show_detail”为“true”时独有。
+        :param user_id: 参数解释:  作业所属用户标识，“show_detail”为“true”时独有 示例: ac4eaa303639409c8ab099d55eb1538e 约束限制:  无 取值范围: 无 默认取值: 无
         :type user_id: str
-        :param project_id: 作业所属项目标识，“show_detail”为“true”时独有。
+        :param project_id: 参数解释:  作业所属用户标识，“show_detail”为“true”时独有 示例: 48cc2c48765f481480c7db940d6409d1 约束限制:  无 取值范围: 无 默认取值: 无
         :type project_id: str
-        :param sql_body: Stream SQL语句，“show_detail”为“false”时独有。
+        :param sql_body: 参数解释:  Stream SQL语句，“show_detail”为“false”时独有 示例: select * from source_table 约束限制:  无 取值范围: 无 默认取值: 无
         :type sql_body: str
-        :param run_mode: 作业运行模式： shared_cluster：共享。 exclusive_cluster：独享。 edge_node：边缘节点。 show_detail为true时独有.
+        :param run_mode: 参数解释:  作业运行模式，show_detail为true时独有 示例: shared_cluster 约束限制:  无 取值范围: shared_cluster（共享） exclusive_cluster（独享） edge_node（边缘节点） 默认取值: 无
         :type run_mode: str
-        :param main_class: jar包主类，“show_detail”为“false”时独有。
+        :param main_class: 参数解释:  jar包主类，“show_detail”为“false”时独有 示例: org.apache.spark.examples.streaming.JavaQueueStream 约束限制:  无 取值范围: 无 默认取值: 无
         :type main_class: str
-        :param entrypoint_args: jar包作业运行参数，多个参数之间用空格分隔。show_detail为true时独有的。
+        :param entrypoint_args: 参数解释:  jar包作业运行参数，多个参数之间用空格分隔。show_detail为true时独有的 示例: custom.dir&#x3D;/usr custom.prefix&#x3D;dli 约束限制:  无 取值范围: 无 默认取值: 无
         :type entrypoint_args: str
-        :param execution_graph: 作业执行计划，“show_detail”为“false”时独有。
+        :param execution_graph: 参数解释:  作业执行计划，“show_detail”为“false”时独有 约束限制:  无 取值范围: 无 默认取值: 无
         :type execution_graph: str
-        :param update_time: 作业更新时间，“show_detail”为“false”时独有。
+        :param update_time: 参数解释:  作业更新时间，“show_detail”为“false”时独有 示例: 1516952770835 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
         :type update_time: int
-        :param graph_editor_enabled: 作业的流图是否可编辑。“true”表示作业的流图可以编辑，“false”表示作业的流图不可以编辑。
+        :param graph_editor_enabled: 参数解释:  作业的流图是否可编辑。“true”表示作业的流图可以编辑，“false”表示作业的流图不可以编辑 示例: false 约束限制:  无 取值范围: true,false 默认取值: 无
         :type graph_editor_enabled: bool
-        :param has_savepoint: 作业是否有保存点。“true”表示作业有保存点，“false”表示作业没有保存点。
+        :param has_savepoint: 参数解释:  作业是否有保存点。“true”表示作业有保存点，“false”表示作业没有保存点 示例: false 约束限制:  无 取值范围: true,false 默认取值: 无
         :type has_savepoint: bool
-        :param queue_name: 队列名字。
+        :param queue_name: 参数解释:  队列名称 示例: flink_17_queue 约束限制:  无 取值范围: 无 默认取值: 无
         :type queue_name: str
-        :param edge_group_ids: 边缘计算组ID列表。
+        :param edge_group_ids: 参数解释:  边缘计算组ID列表 示例: 62de1e1c-066e-48a8-a79d-f461a31b2ee1,2eb00f85-99f2-4144-bcb7-d39ff47f9002 约束限制:  无 取值范围: 无 默认取值: 无
         :type edge_group_ids: list[str]
-        :param restart_times: 重启次数。
+        :param restart_times: 参数解释:  重启次数 示例: 0 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
         :type restart_times: int
-        :param savepoint_path: 保存点路径。
+        :param savepoint_path: 参数解释:  保存点路径 示例: obs://cwk/savepoint/ 约束限制:  无 取值范围: 无 默认取值: 无
         :type savepoint_path: str
         :param job_config: 
         :type job_config: :class:`huaweicloudsdkdli.v1.FlinkJobConfig`
@@ -218,7 +218,7 @@ class FlinkJob:
     def job_id(self):
         r"""Gets the job_id of this FlinkJob.
 
-        作业ID。
+        参数解释:  作业ID 示例: 50320 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The job_id of this FlinkJob.
         :rtype: int
@@ -229,7 +229,7 @@ class FlinkJob:
     def job_id(self, job_id):
         r"""Sets the job_id of this FlinkJob.
 
-        作业ID。
+        参数解释:  作业ID 示例: 50320 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param job_id: The job_id of this FlinkJob.
         :type job_id: int
@@ -240,7 +240,7 @@ class FlinkJob:
     def name(self):
         r"""Gets the name of this FlinkJob.
 
-        作业名称。长度限制：0-57个字符。
+        参数解释:  作业名称 示例: test 约束限制:  长度在[0,57]范围内的字符串 取值范围: 无 默认取值: 无
 
         :return: The name of this FlinkJob.
         :rtype: str
@@ -251,7 +251,7 @@ class FlinkJob:
     def name(self, name):
         r"""Sets the name of this FlinkJob.
 
-        作业名称。长度限制：0-57个字符。
+        参数解释:  作业名称 示例: test 约束限制:  长度在[0,57]范围内的字符串 取值范围: 无 默认取值: 无
 
         :param name: The name of this FlinkJob.
         :type name: str
@@ -262,7 +262,7 @@ class FlinkJob:
     def desc(self):
         r"""Gets the desc of this FlinkJob.
 
-        作业描述。长度限制：0-2048个字符。
+        参数解释:  作业描述 示例: 作业描述 约束限制:  长度在[0,2048]范围内的字符串 取值范围: 无 默认取值: 无
 
         :return: The desc of this FlinkJob.
         :rtype: str
@@ -273,7 +273,7 @@ class FlinkJob:
     def desc(self, desc):
         r"""Sets the desc of this FlinkJob.
 
-        作业描述。长度限制：0-2048个字符。
+        参数解释:  作业描述 示例: 作业描述 约束限制:  长度在[0,2048]范围内的字符串 取值范围: 无 默认取值: 无
 
         :param desc: The desc of this FlinkJob.
         :type desc: str
@@ -284,7 +284,7 @@ class FlinkJob:
     def user_name(self):
         r"""Gets the user_name of this FlinkJob.
 
-        用户名，当“show_detail”为“false”时独有。
+        参数解释:  用户名称 示例: testuser 约束限制:  长度在[1,128]范围内的字符串 取值范围: 无 默认取值: 无
 
         :return: The user_name of this FlinkJob.
         :rtype: str
@@ -295,7 +295,7 @@ class FlinkJob:
     def user_name(self, user_name):
         r"""Sets the user_name of this FlinkJob.
 
-        用户名，当“show_detail”为“false”时独有。
+        参数解释:  用户名称 示例: testuser 约束限制:  长度在[1,128]范围内的字符串 取值范围: 无 默认取值: 无
 
         :param user_name: The user_name of this FlinkJob.
         :type user_name: str
@@ -306,7 +306,7 @@ class FlinkJob:
     def job_type(self):
         r"""Gets the job_type of this FlinkJob.
 
-        作业类型。
+        参数解释:  作业类型 示例: flink_jar_job 约束限制:  无 取值范围: flink_sql_job（flink sql作业） flink_opensource_sql_job（flink opensource sql作业） flink_sql_edge_job（flink sql边缘作业） flink_jar_job（flink自定义作业） 默认取值: 无
 
         :return: The job_type of this FlinkJob.
         :rtype: str
@@ -317,7 +317,7 @@ class FlinkJob:
     def job_type(self, job_type):
         r"""Sets the job_type of this FlinkJob.
 
-        作业类型。
+        参数解释:  作业类型 示例: flink_jar_job 约束限制:  无 取值范围: flink_sql_job（flink sql作业） flink_opensource_sql_job（flink opensource sql作业） flink_sql_edge_job（flink sql边缘作业） flink_jar_job（flink自定义作业） 默认取值: 无
 
         :param job_type: The job_type of this FlinkJob.
         :type job_type: str
@@ -328,7 +328,7 @@ class FlinkJob:
     def status(self):
         r"""Gets the status of this FlinkJob.
 
-        作业状态。
+        参数解释:  作业状态 示例: job_running 约束限制:  无 取值范围: job_init（草稿） job_submitting（提交中） job_submit_fail（提交失败） job_running（运行中） job_running_exception（运行异常） job_downloading（下载中） job_idle（空闲） job_canceling（停止中） job_cancel_success（已停止） job_cancel_fail（停止失败） job_savepointing（保存点创建中） job_arrearage_stopped（因欠费被停止） job_arrearage_recovering（欠费作业恢复中） job_finish（已完成） 默认取值: 无
 
         :return: The status of this FlinkJob.
         :rtype: str
@@ -339,7 +339,7 @@ class FlinkJob:
     def status(self, status):
         r"""Sets the status of this FlinkJob.
 
-        作业状态。
+        参数解释:  作业状态 示例: job_running 约束限制:  无 取值范围: job_init（草稿） job_submitting（提交中） job_submit_fail（提交失败） job_running（运行中） job_running_exception（运行异常） job_downloading（下载中） job_idle（空闲） job_canceling（停止中） job_cancel_success（已停止） job_cancel_fail（停止失败） job_savepointing（保存点创建中） job_arrearage_stopped（因欠费被停止） job_arrearage_recovering（欠费作业恢复中） job_finish（已完成） 默认取值: 无
 
         :param status: The status of this FlinkJob.
         :type status: str
@@ -350,7 +350,7 @@ class FlinkJob:
     def status_desc(self):
         r"""Gets the status_desc of this FlinkJob.
 
-        作业状态描述。
+        参数解释:  用户名称 示例: 作业状态描述 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The status_desc of this FlinkJob.
         :rtype: str
@@ -361,7 +361,7 @@ class FlinkJob:
     def status_desc(self, status_desc):
         r"""Sets the status_desc of this FlinkJob.
 
-        作业状态描述。
+        参数解释:  用户名称 示例: 作业状态描述 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param status_desc: The status_desc of this FlinkJob.
         :type status_desc: str
@@ -372,7 +372,7 @@ class FlinkJob:
     def create_time(self):
         r"""Gets the create_time of this FlinkJob.
 
-        作业创建时间。
+        参数解释:  作业创建时间 示例: 1516952770835 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
 
         :return: The create_time of this FlinkJob.
         :rtype: int
@@ -383,7 +383,7 @@ class FlinkJob:
     def create_time(self, create_time):
         r"""Sets the create_time of this FlinkJob.
 
-        作业创建时间。
+        参数解释:  作业创建时间 示例: 1516952770835 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
 
         :param create_time: The create_time of this FlinkJob.
         :type create_time: int
@@ -394,7 +394,7 @@ class FlinkJob:
     def start_time(self):
         r"""Gets the start_time of this FlinkJob.
 
-        作业开始时间。
+        参数解释:  作业开始时间 示例: 1516952710740 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
 
         :return: The start_time of this FlinkJob.
         :rtype: int
@@ -405,7 +405,7 @@ class FlinkJob:
     def start_time(self, start_time):
         r"""Sets the start_time of this FlinkJob.
 
-        作业开始时间。
+        参数解释:  作业开始时间 示例: 1516952710740 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
 
         :param start_time: The start_time of this FlinkJob.
         :type start_time: int
@@ -416,7 +416,7 @@ class FlinkJob:
     def duration(self):
         r"""Gets the duration of this FlinkJob.
 
-        作业运行时长, 单位ms，当“show_detail”为“false”时独有。
+        参数解释:  作业运行时长，单位ms，当“show_detail”为“false”时独有 示例: 30000 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
 
         :return: The duration of this FlinkJob.
         :rtype: int
@@ -427,7 +427,7 @@ class FlinkJob:
     def duration(self, duration):
         r"""Sets the duration of this FlinkJob.
 
-        作业运行时长, 单位ms，当“show_detail”为“false”时独有。
+        参数解释:  作业运行时长，单位ms，当“show_detail”为“false”时独有 示例: 30000 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
 
         :param duration: The duration of this FlinkJob.
         :type duration: int
@@ -438,7 +438,7 @@ class FlinkJob:
     def root_id(self):
         r"""Gets the root_id of this FlinkJob.
 
-        父作业ID，“show_detail”为“false”时独有。
+        参数解释:  父作业ID，“show_detail”为“false”时独有 示例: -1 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The root_id of this FlinkJob.
         :rtype: int
@@ -449,7 +449,7 @@ class FlinkJob:
     def root_id(self, root_id):
         r"""Sets the root_id of this FlinkJob.
 
-        父作业ID，“show_detail”为“false”时独有。
+        参数解释:  父作业ID，“show_detail”为“false”时独有 示例: -1 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param root_id: The root_id of this FlinkJob.
         :type root_id: int
@@ -460,7 +460,7 @@ class FlinkJob:
     def user_id(self):
         r"""Gets the user_id of this FlinkJob.
 
-        作业所属用户标识，“show_detail”为“true”时独有。
+        参数解释:  作业所属用户标识，“show_detail”为“true”时独有 示例: ac4eaa303639409c8ab099d55eb1538e 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The user_id of this FlinkJob.
         :rtype: str
@@ -471,7 +471,7 @@ class FlinkJob:
     def user_id(self, user_id):
         r"""Sets the user_id of this FlinkJob.
 
-        作业所属用户标识，“show_detail”为“true”时独有。
+        参数解释:  作业所属用户标识，“show_detail”为“true”时独有 示例: ac4eaa303639409c8ab099d55eb1538e 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param user_id: The user_id of this FlinkJob.
         :type user_id: str
@@ -482,7 +482,7 @@ class FlinkJob:
     def project_id(self):
         r"""Gets the project_id of this FlinkJob.
 
-        作业所属项目标识，“show_detail”为“true”时独有。
+        参数解释:  作业所属用户标识，“show_detail”为“true”时独有 示例: 48cc2c48765f481480c7db940d6409d1 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The project_id of this FlinkJob.
         :rtype: str
@@ -493,7 +493,7 @@ class FlinkJob:
     def project_id(self, project_id):
         r"""Sets the project_id of this FlinkJob.
 
-        作业所属项目标识，“show_detail”为“true”时独有。
+        参数解释:  作业所属用户标识，“show_detail”为“true”时独有 示例: 48cc2c48765f481480c7db940d6409d1 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param project_id: The project_id of this FlinkJob.
         :type project_id: str
@@ -504,7 +504,7 @@ class FlinkJob:
     def sql_body(self):
         r"""Gets the sql_body of this FlinkJob.
 
-        Stream SQL语句，“show_detail”为“false”时独有。
+        参数解释:  Stream SQL语句，“show_detail”为“false”时独有 示例: select * from source_table 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The sql_body of this FlinkJob.
         :rtype: str
@@ -515,7 +515,7 @@ class FlinkJob:
     def sql_body(self, sql_body):
         r"""Sets the sql_body of this FlinkJob.
 
-        Stream SQL语句，“show_detail”为“false”时独有。
+        参数解释:  Stream SQL语句，“show_detail”为“false”时独有 示例: select * from source_table 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param sql_body: The sql_body of this FlinkJob.
         :type sql_body: str
@@ -526,7 +526,7 @@ class FlinkJob:
     def run_mode(self):
         r"""Gets the run_mode of this FlinkJob.
 
-        作业运行模式： shared_cluster：共享。 exclusive_cluster：独享。 edge_node：边缘节点。 show_detail为true时独有.
+        参数解释:  作业运行模式，show_detail为true时独有 示例: shared_cluster 约束限制:  无 取值范围: shared_cluster（共享） exclusive_cluster（独享） edge_node（边缘节点） 默认取值: 无
 
         :return: The run_mode of this FlinkJob.
         :rtype: str
@@ -537,7 +537,7 @@ class FlinkJob:
     def run_mode(self, run_mode):
         r"""Sets the run_mode of this FlinkJob.
 
-        作业运行模式： shared_cluster：共享。 exclusive_cluster：独享。 edge_node：边缘节点。 show_detail为true时独有.
+        参数解释:  作业运行模式，show_detail为true时独有 示例: shared_cluster 约束限制:  无 取值范围: shared_cluster（共享） exclusive_cluster（独享） edge_node（边缘节点） 默认取值: 无
 
         :param run_mode: The run_mode of this FlinkJob.
         :type run_mode: str
@@ -548,7 +548,7 @@ class FlinkJob:
     def main_class(self):
         r"""Gets the main_class of this FlinkJob.
 
-        jar包主类，“show_detail”为“false”时独有。
+        参数解释:  jar包主类，“show_detail”为“false”时独有 示例: org.apache.spark.examples.streaming.JavaQueueStream 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The main_class of this FlinkJob.
         :rtype: str
@@ -559,7 +559,7 @@ class FlinkJob:
     def main_class(self, main_class):
         r"""Sets the main_class of this FlinkJob.
 
-        jar包主类，“show_detail”为“false”时独有。
+        参数解释:  jar包主类，“show_detail”为“false”时独有 示例: org.apache.spark.examples.streaming.JavaQueueStream 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param main_class: The main_class of this FlinkJob.
         :type main_class: str
@@ -570,7 +570,7 @@ class FlinkJob:
     def entrypoint_args(self):
         r"""Gets the entrypoint_args of this FlinkJob.
 
-        jar包作业运行参数，多个参数之间用空格分隔。show_detail为true时独有的。
+        参数解释:  jar包作业运行参数，多个参数之间用空格分隔。show_detail为true时独有的 示例: custom.dir=/usr custom.prefix=dli 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The entrypoint_args of this FlinkJob.
         :rtype: str
@@ -581,7 +581,7 @@ class FlinkJob:
     def entrypoint_args(self, entrypoint_args):
         r"""Sets the entrypoint_args of this FlinkJob.
 
-        jar包作业运行参数，多个参数之间用空格分隔。show_detail为true时独有的。
+        参数解释:  jar包作业运行参数，多个参数之间用空格分隔。show_detail为true时独有的 示例: custom.dir=/usr custom.prefix=dli 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param entrypoint_args: The entrypoint_args of this FlinkJob.
         :type entrypoint_args: str
@@ -592,7 +592,7 @@ class FlinkJob:
     def execution_graph(self):
         r"""Gets the execution_graph of this FlinkJob.
 
-        作业执行计划，“show_detail”为“false”时独有。
+        参数解释:  作业执行计划，“show_detail”为“false”时独有 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The execution_graph of this FlinkJob.
         :rtype: str
@@ -603,7 +603,7 @@ class FlinkJob:
     def execution_graph(self, execution_graph):
         r"""Sets the execution_graph of this FlinkJob.
 
-        作业执行计划，“show_detail”为“false”时独有。
+        参数解释:  作业执行计划，“show_detail”为“false”时独有 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param execution_graph: The execution_graph of this FlinkJob.
         :type execution_graph: str
@@ -614,7 +614,7 @@ class FlinkJob:
     def update_time(self):
         r"""Gets the update_time of this FlinkJob.
 
-        作业更新时间，“show_detail”为“false”时独有。
+        参数解释:  作业更新时间，“show_detail”为“false”时独有 示例: 1516952770835 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
 
         :return: The update_time of this FlinkJob.
         :rtype: int
@@ -625,7 +625,7 @@ class FlinkJob:
     def update_time(self, update_time):
         r"""Sets the update_time of this FlinkJob.
 
-        作业更新时间，“show_detail”为“false”时独有。
+        参数解释:  作业更新时间，“show_detail”为“false”时独有 示例: 1516952770835 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
 
         :param update_time: The update_time of this FlinkJob.
         :type update_time: int
@@ -636,7 +636,7 @@ class FlinkJob:
     def graph_editor_enabled(self):
         r"""Gets the graph_editor_enabled of this FlinkJob.
 
-        作业的流图是否可编辑。“true”表示作业的流图可以编辑，“false”表示作业的流图不可以编辑。
+        参数解释:  作业的流图是否可编辑。“true”表示作业的流图可以编辑，“false”表示作业的流图不可以编辑 示例: false 约束限制:  无 取值范围: true,false 默认取值: 无
 
         :return: The graph_editor_enabled of this FlinkJob.
         :rtype: bool
@@ -647,7 +647,7 @@ class FlinkJob:
     def graph_editor_enabled(self, graph_editor_enabled):
         r"""Sets the graph_editor_enabled of this FlinkJob.
 
-        作业的流图是否可编辑。“true”表示作业的流图可以编辑，“false”表示作业的流图不可以编辑。
+        参数解释:  作业的流图是否可编辑。“true”表示作业的流图可以编辑，“false”表示作业的流图不可以编辑 示例: false 约束限制:  无 取值范围: true,false 默认取值: 无
 
         :param graph_editor_enabled: The graph_editor_enabled of this FlinkJob.
         :type graph_editor_enabled: bool
@@ -658,7 +658,7 @@ class FlinkJob:
     def has_savepoint(self):
         r"""Gets the has_savepoint of this FlinkJob.
 
-        作业是否有保存点。“true”表示作业有保存点，“false”表示作业没有保存点。
+        参数解释:  作业是否有保存点。“true”表示作业有保存点，“false”表示作业没有保存点 示例: false 约束限制:  无 取值范围: true,false 默认取值: 无
 
         :return: The has_savepoint of this FlinkJob.
         :rtype: bool
@@ -669,7 +669,7 @@ class FlinkJob:
     def has_savepoint(self, has_savepoint):
         r"""Sets the has_savepoint of this FlinkJob.
 
-        作业是否有保存点。“true”表示作业有保存点，“false”表示作业没有保存点。
+        参数解释:  作业是否有保存点。“true”表示作业有保存点，“false”表示作业没有保存点 示例: false 约束限制:  无 取值范围: true,false 默认取值: 无
 
         :param has_savepoint: The has_savepoint of this FlinkJob.
         :type has_savepoint: bool
@@ -680,7 +680,7 @@ class FlinkJob:
     def queue_name(self):
         r"""Gets the queue_name of this FlinkJob.
 
-        队列名字。
+        参数解释:  队列名称 示例: flink_17_queue 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The queue_name of this FlinkJob.
         :rtype: str
@@ -691,7 +691,7 @@ class FlinkJob:
     def queue_name(self, queue_name):
         r"""Sets the queue_name of this FlinkJob.
 
-        队列名字。
+        参数解释:  队列名称 示例: flink_17_queue 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param queue_name: The queue_name of this FlinkJob.
         :type queue_name: str
@@ -702,7 +702,7 @@ class FlinkJob:
     def edge_group_ids(self):
         r"""Gets the edge_group_ids of this FlinkJob.
 
-        边缘计算组ID列表。
+        参数解释:  边缘计算组ID列表 示例: 62de1e1c-066e-48a8-a79d-f461a31b2ee1,2eb00f85-99f2-4144-bcb7-d39ff47f9002 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The edge_group_ids of this FlinkJob.
         :rtype: list[str]
@@ -713,7 +713,7 @@ class FlinkJob:
     def edge_group_ids(self, edge_group_ids):
         r"""Sets the edge_group_ids of this FlinkJob.
 
-        边缘计算组ID列表。
+        参数解释:  边缘计算组ID列表 示例: 62de1e1c-066e-48a8-a79d-f461a31b2ee1,2eb00f85-99f2-4144-bcb7-d39ff47f9002 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param edge_group_ids: The edge_group_ids of this FlinkJob.
         :type edge_group_ids: list[str]
@@ -724,7 +724,7 @@ class FlinkJob:
     def restart_times(self):
         r"""Gets the restart_times of this FlinkJob.
 
-        重启次数。
+        参数解释:  重启次数 示例: 0 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
 
         :return: The restart_times of this FlinkJob.
         :rtype: int
@@ -735,7 +735,7 @@ class FlinkJob:
     def restart_times(self, restart_times):
         r"""Sets the restart_times of this FlinkJob.
 
-        重启次数。
+        参数解释:  重启次数 示例: 0 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
 
         :param restart_times: The restart_times of this FlinkJob.
         :type restart_times: int
@@ -746,7 +746,7 @@ class FlinkJob:
     def savepoint_path(self):
         r"""Gets the savepoint_path of this FlinkJob.
 
-        保存点路径。
+        参数解释:  保存点路径 示例: obs://cwk/savepoint/ 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The savepoint_path of this FlinkJob.
         :rtype: str
@@ -757,7 +757,7 @@ class FlinkJob:
     def savepoint_path(self, savepoint_path):
         r"""Sets the savepoint_path of this FlinkJob.
 
-        保存点路径。
+        参数解释:  保存点路径 示例: obs://cwk/savepoint/ 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param savepoint_path: The savepoint_path of this FlinkJob.
         :type savepoint_path: str

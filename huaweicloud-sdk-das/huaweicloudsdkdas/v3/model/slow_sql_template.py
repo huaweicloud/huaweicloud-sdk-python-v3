@@ -18,6 +18,7 @@ class SlowSqlTemplate:
 
     openapi_types = {
         'sql_template': 'str',
+        'sql_template_id': 'str',
         'sql_sample': 'str',
         'sql_sample_user': 'str',
         'db_names': 'list[str]',
@@ -34,6 +35,7 @@ class SlowSqlTemplate:
 
     attribute_map = {
         'sql_template': 'sql_template',
+        'sql_template_id': 'sql_template_id',
         'sql_sample': 'sql_sample',
         'sql_sample_user': 'sql_sample_user',
         'db_names': 'db_names',
@@ -48,13 +50,15 @@ class SlowSqlTemplate:
         'max_rows_sent': 'max_rows_sent'
     }
 
-    def __init__(self, sql_template=None, sql_sample=None, sql_sample_user=None, db_names=None, execute_count=None, avg_execute_time=None, max_execute_time=None, avg_lock_wait_time=None, max_lock_wait_time=None, avg_rows_examined=None, max_rows_examined=None, avg_rows_sent=None, max_rows_sent=None):
+    def __init__(self, sql_template=None, sql_template_id=None, sql_sample=None, sql_sample_user=None, db_names=None, execute_count=None, avg_execute_time=None, max_execute_time=None, avg_lock_wait_time=None, max_lock_wait_time=None, avg_rows_examined=None, max_rows_examined=None, avg_rows_sent=None, max_rows_sent=None):
         r"""SlowSqlTemplate
 
         The model defined in huaweicloud sdk
 
         :param sql_template: SQL模板。
         :type sql_template: str
+        :param sql_template_id: SQL模板ID。
+        :type sql_template_id: str
         :param sql_sample: SQL样本。
         :type sql_sample: str
         :param sql_sample_user: SQL样本执行用户。
@@ -84,6 +88,7 @@ class SlowSqlTemplate:
         
 
         self._sql_template = None
+        self._sql_template_id = None
         self._sql_sample = None
         self._sql_sample_user = None
         self._db_names = None
@@ -99,6 +104,7 @@ class SlowSqlTemplate:
         self.discriminator = None
 
         self.sql_template = sql_template
+        self.sql_template_id = sql_template_id
         if sql_sample is not None:
             self.sql_sample = sql_sample
         if sql_sample_user is not None:
@@ -135,6 +141,28 @@ class SlowSqlTemplate:
         :type sql_template: str
         """
         self._sql_template = sql_template
+
+    @property
+    def sql_template_id(self):
+        r"""Gets the sql_template_id of this SlowSqlTemplate.
+
+        SQL模板ID。
+
+        :return: The sql_template_id of this SlowSqlTemplate.
+        :rtype: str
+        """
+        return self._sql_template_id
+
+    @sql_template_id.setter
+    def sql_template_id(self, sql_template_id):
+        r"""Sets the sql_template_id of this SlowSqlTemplate.
+
+        SQL模板ID。
+
+        :param sql_template_id: The sql_template_id of this SlowSqlTemplate.
+        :type sql_template_id: str
+        """
+        self._sql_template_id = sql_template_id
 
     @property
     def sql_sample(self):

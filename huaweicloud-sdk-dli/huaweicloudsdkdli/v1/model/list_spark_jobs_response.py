@@ -36,13 +36,13 @@ class ListSparkJobsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param _from: 起始批处理作业的索引号。
+        :param _from: 参数解释:   起始批处理作业的索引号 示例: 0 约束限制:  无 取值范围: 无 默认取值: 无
         :type _from: int
-        :param total: 返回批处理作业的总数。
+        :param total: 参数解释:   返回批处理作业的总数 示例: 1 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
         :type total: int
         :param sessions: 批处理作业信息。
         :type sessions: list[:class:`huaweicloudsdkdli.v1.SparkJob`]
-        :param create_time: 批处理作业的创建时间。
+        :param create_time: 参数解释:   批处理作业的创建时间 示例: 1747169165821 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
         :type create_time: int
         """
         
@@ -67,7 +67,7 @@ class ListSparkJobsResponse(SdkResponse):
     def _from(self):
         r"""Gets the _from of this ListSparkJobsResponse.
 
-        起始批处理作业的索引号。
+        参数解释:   起始批处理作业的索引号 示例: 0 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The _from of this ListSparkJobsResponse.
         :rtype: int
@@ -78,7 +78,7 @@ class ListSparkJobsResponse(SdkResponse):
     def _from(self, _from):
         r"""Sets the _from of this ListSparkJobsResponse.
 
-        起始批处理作业的索引号。
+        参数解释:   起始批处理作业的索引号 示例: 0 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param _from: The _from of this ListSparkJobsResponse.
         :type _from: int
@@ -89,7 +89,7 @@ class ListSparkJobsResponse(SdkResponse):
     def total(self):
         r"""Gets the total of this ListSparkJobsResponse.
 
-        返回批处理作业的总数。
+        参数解释:   返回批处理作业的总数 示例: 1 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
 
         :return: The total of this ListSparkJobsResponse.
         :rtype: int
@@ -100,7 +100,7 @@ class ListSparkJobsResponse(SdkResponse):
     def total(self, total):
         r"""Sets the total of this ListSparkJobsResponse.
 
-        返回批处理作业的总数。
+        参数解释:   返回批处理作业的总数 示例: 1 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
 
         :param total: The total of this ListSparkJobsResponse.
         :type total: int
@@ -133,7 +133,7 @@ class ListSparkJobsResponse(SdkResponse):
     def create_time(self):
         r"""Gets the create_time of this ListSparkJobsResponse.
 
-        批处理作业的创建时间。
+        参数解释:   批处理作业的创建时间 示例: 1747169165821 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
 
         :return: The create_time of this ListSparkJobsResponse.
         :rtype: int
@@ -144,7 +144,7 @@ class ListSparkJobsResponse(SdkResponse):
     def create_time(self, create_time):
         r"""Sets the create_time of this ListSparkJobsResponse.
 
-        批处理作业的创建时间。
+        参数解释:   批处理作业的创建时间 示例: 1747169165821 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
 
         :param create_time: The create_time of this ListSparkJobsResponse.
         :type create_time: int

@@ -18,35 +18,42 @@ class ShowResourceTagsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'tags': 'list[Tag]'
+        'tags': 'list[Tag]',
+        'count': 'int'
     }
 
     attribute_map = {
-        'tags': 'tags'
+        'tags': 'tags',
+        'count': 'count'
     }
 
-    def __init__(self, tags=None):
+    def __init__(self, tags=None, count=None):
         r"""ShowResourceTagsResponse
 
         The model defined in huaweicloud sdk
 
-        :param tags: 标签列表
+        :param tags: 标签列表。
         :type tags: list[:class:`huaweicloudsdkdli.v1.Tag`]
+        :param count: 标签数量。
+        :type count: int
         """
         
         super(ShowResourceTagsResponse, self).__init__()
 
         self._tags = None
+        self._count = None
         self.discriminator = None
 
         if tags is not None:
             self.tags = tags
+        if count is not None:
+            self.count = count
 
     @property
     def tags(self):
         r"""Gets the tags of this ShowResourceTagsResponse.
 
-        标签列表
+        标签列表。
 
         :return: The tags of this ShowResourceTagsResponse.
         :rtype: list[:class:`huaweicloudsdkdli.v1.Tag`]
@@ -57,12 +64,34 @@ class ShowResourceTagsResponse(SdkResponse):
     def tags(self, tags):
         r"""Sets the tags of this ShowResourceTagsResponse.
 
-        标签列表
+        标签列表。
 
         :param tags: The tags of this ShowResourceTagsResponse.
         :type tags: list[:class:`huaweicloudsdkdli.v1.Tag`]
         """
         self._tags = tags
+
+    @property
+    def count(self):
+        r"""Gets the count of this ShowResourceTagsResponse.
+
+        标签数量。
+
+        :return: The count of this ShowResourceTagsResponse.
+        :rtype: int
+        """
+        return self._count
+
+    @count.setter
+    def count(self, count):
+        r"""Sets the count of this ShowResourceTagsResponse.
+
+        标签数量。
+
+        :param count: The count of this ShowResourceTagsResponse.
+        :type count: int
+        """
+        self._count = count
 
     def to_dict(self):
         """Returns the model properties as a dict"""

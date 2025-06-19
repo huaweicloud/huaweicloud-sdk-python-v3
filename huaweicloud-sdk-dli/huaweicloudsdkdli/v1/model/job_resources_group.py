@@ -31,7 +31,7 @@ class JobResourcesGroup:
 
         The model defined in huaweicloud sdk
 
-        :param name: 用户组名称。
+        :param name: 参数解释:   用户组名称 示例: group.tesddws 约束限制:  无 取值范围: 无 默认取值: 无
         :type name: str
         :param resources: 用户组资源。
         :type resources: list[:class:`huaweicloudsdkdli.v1.JobResource`]
@@ -52,7 +52,7 @@ class JobResourcesGroup:
     def name(self):
         r"""Gets the name of this JobResourcesGroup.
 
-        用户组名称。
+        参数解释:   用户组名称 示例: group.tesddws 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The name of this JobResourcesGroup.
         :rtype: str
@@ -63,7 +63,7 @@ class JobResourcesGroup:
     def name(self, name):
         r"""Sets the name of this JobResourcesGroup.
 
-        用户组名称。
+        参数解释:   用户组名称 示例: group.tesddws 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param name: The name of this JobResourcesGroup.
         :type name: str

@@ -18,47 +18,80 @@ class ListResourcesByTagsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'str'
+        'total_count': 'int',
+        'resources': 'list[Resource]'
     }
 
     attribute_map = {
-        'body': 'body'
+        'total_count': 'total_count',
+        'resources': 'resources'
     }
 
-    def __init__(self, body=None):
+    def __init__(self, total_count=None, resources=None):
         r"""ListResourcesByTagsResponse
 
         The model defined in huaweicloud sdk
 
-        :param body: 
-        :type body: str
+        :param total_count: 总记录数。
+        :type total_count: int
+        :param resources: 资源实例列表。
+        :type resources: list[:class:`huaweicloudsdkdli.v1.Resource`]
         """
         
         super(ListResourcesByTagsResponse, self).__init__()
 
-        self._body = None
+        self._total_count = None
+        self._resources = None
         self.discriminator = None
 
-        if body is not None:
-            self.body = body
+        if total_count is not None:
+            self.total_count = total_count
+        if resources is not None:
+            self.resources = resources
 
     @property
-    def body(self):
-        r"""Gets the body of this ListResourcesByTagsResponse.
+    def total_count(self):
+        r"""Gets the total_count of this ListResourcesByTagsResponse.
 
-        :return: The body of this ListResourcesByTagsResponse.
-        :rtype: str
+        总记录数。
+
+        :return: The total_count of this ListResourcesByTagsResponse.
+        :rtype: int
         """
-        return self._body
+        return self._total_count
 
-    @body.setter
-    def body(self, body):
-        r"""Sets the body of this ListResourcesByTagsResponse.
+    @total_count.setter
+    def total_count(self, total_count):
+        r"""Sets the total_count of this ListResourcesByTagsResponse.
 
-        :param body: The body of this ListResourcesByTagsResponse.
-        :type body: str
+        总记录数。
+
+        :param total_count: The total_count of this ListResourcesByTagsResponse.
+        :type total_count: int
         """
-        self._body = body
+        self._total_count = total_count
+
+    @property
+    def resources(self):
+        r"""Gets the resources of this ListResourcesByTagsResponse.
+
+        资源实例列表。
+
+        :return: The resources of this ListResourcesByTagsResponse.
+        :rtype: list[:class:`huaweicloudsdkdli.v1.Resource`]
+        """
+        return self._resources
+
+    @resources.setter
+    def resources(self, resources):
+        r"""Sets the resources of this ListResourcesByTagsResponse.
+
+        资源实例列表。
+
+        :param resources: The resources of this ListResourcesByTagsResponse.
+        :type resources: list[:class:`huaweicloudsdkdli.v1.Resource`]
+        """
+        self._resources = resources
 
     def to_dict(self):
         """Returns the model properties as a dict"""

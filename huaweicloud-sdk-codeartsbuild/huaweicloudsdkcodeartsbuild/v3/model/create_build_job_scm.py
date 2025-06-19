@@ -23,10 +23,13 @@ class CreateBuildJobScm:
         'web_url': 'str',
         'scm_type': 'str',
         'is_auto_build': 'bool',
+        'enable_git_lfs': 'bool',
         'build_type': 'str',
         'depth': 'str',
         'end_point_id': 'str',
-        'source': 'str'
+        'source': 'str',
+        'group_name': 'str',
+        'repo_name': 'str'
     }
 
     attribute_map = {
@@ -36,13 +39,16 @@ class CreateBuildJobScm:
         'web_url': 'web_url',
         'scm_type': 'scm_type',
         'is_auto_build': 'is_auto_build',
+        'enable_git_lfs': 'enable_git_lfs',
         'build_type': 'build_type',
         'depth': 'depth',
         'end_point_id': 'end_point_id',
-        'source': 'source'
+        'source': 'source',
+        'group_name': 'group_name',
+        'repo_name': 'repo_name'
     }
 
-    def __init__(self, branch=None, url=None, repo_id=None, web_url=None, scm_type=None, is_auto_build=None, build_type=None, depth=None, end_point_id=None, source=None):
+    def __init__(self, branch=None, url=None, repo_id=None, web_url=None, scm_type=None, is_auto_build=None, enable_git_lfs=None, build_type=None, depth=None, end_point_id=None, source=None, group_name=None, repo_name=None):
         r"""CreateBuildJobScm
 
         The model defined in huaweicloud sdk
@@ -59,6 +65,8 @@ class CreateBuildJobScm:
         :type scm_type: str
         :param is_auto_build: 是否自动构建
         :type is_auto_build: bool
+        :param enable_git_lfs: 是否启用gitlfs
+        :type enable_git_lfs: bool
         :param build_type: 构建类别
         :type build_type: str
         :param depth: 克隆深度
@@ -67,6 +75,10 @@ class CreateBuildJobScm:
         :type end_point_id: str
         :param source: source
         :type source: str
+        :param group_name: 仓库分组
+        :type group_name: str
+        :param repo_name: 仓库名称
+        :type repo_name: str
         """
         
         
@@ -77,10 +89,13 @@ class CreateBuildJobScm:
         self._web_url = None
         self._scm_type = None
         self._is_auto_build = None
+        self._enable_git_lfs = None
         self._build_type = None
         self._depth = None
         self._end_point_id = None
         self._source = None
+        self._group_name = None
+        self._repo_name = None
         self.discriminator = None
 
         if branch is not None:
@@ -93,6 +108,8 @@ class CreateBuildJobScm:
         self.scm_type = scm_type
         if is_auto_build is not None:
             self.is_auto_build = is_auto_build
+        if enable_git_lfs is not None:
+            self.enable_git_lfs = enable_git_lfs
         if build_type is not None:
             self.build_type = build_type
         if depth is not None:
@@ -101,6 +118,10 @@ class CreateBuildJobScm:
             self.end_point_id = end_point_id
         if source is not None:
             self.source = source
+        if group_name is not None:
+            self.group_name = group_name
+        if repo_name is not None:
+            self.repo_name = repo_name
 
     @property
     def branch(self):
@@ -235,6 +256,28 @@ class CreateBuildJobScm:
         self._is_auto_build = is_auto_build
 
     @property
+    def enable_git_lfs(self):
+        r"""Gets the enable_git_lfs of this CreateBuildJobScm.
+
+        是否启用gitlfs
+
+        :return: The enable_git_lfs of this CreateBuildJobScm.
+        :rtype: bool
+        """
+        return self._enable_git_lfs
+
+    @enable_git_lfs.setter
+    def enable_git_lfs(self, enable_git_lfs):
+        r"""Sets the enable_git_lfs of this CreateBuildJobScm.
+
+        是否启用gitlfs
+
+        :param enable_git_lfs: The enable_git_lfs of this CreateBuildJobScm.
+        :type enable_git_lfs: bool
+        """
+        self._enable_git_lfs = enable_git_lfs
+
+    @property
     def build_type(self):
         r"""Gets the build_type of this CreateBuildJobScm.
 
@@ -321,6 +364,50 @@ class CreateBuildJobScm:
         :type source: str
         """
         self._source = source
+
+    @property
+    def group_name(self):
+        r"""Gets the group_name of this CreateBuildJobScm.
+
+        仓库分组
+
+        :return: The group_name of this CreateBuildJobScm.
+        :rtype: str
+        """
+        return self._group_name
+
+    @group_name.setter
+    def group_name(self, group_name):
+        r"""Sets the group_name of this CreateBuildJobScm.
+
+        仓库分组
+
+        :param group_name: The group_name of this CreateBuildJobScm.
+        :type group_name: str
+        """
+        self._group_name = group_name
+
+    @property
+    def repo_name(self):
+        r"""Gets the repo_name of this CreateBuildJobScm.
+
+        仓库名称
+
+        :return: The repo_name of this CreateBuildJobScm.
+        :rtype: str
+        """
+        return self._repo_name
+
+    @repo_name.setter
+    def repo_name(self, repo_name):
+        r"""Sets the repo_name of this CreateBuildJobScm.
+
+        仓库名称
+
+        :param repo_name: The repo_name of this CreateBuildJobScm.
+        :type repo_name: str
+        """
+        self._repo_name = repo_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

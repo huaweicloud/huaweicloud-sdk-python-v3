@@ -21,6 +21,7 @@ class RuleAclListResponseDTODataRecords:
         'applications': 'list[str]',
         'address_type': 'int',
         'name': 'str',
+        'order_id': 'int',
         'direction': 'int',
         'action_type': 'int',
         'status': 'int',
@@ -44,6 +45,7 @@ class RuleAclListResponseDTODataRecords:
         'applications': 'applications',
         'address_type': 'address_type',
         'name': 'name',
+        'order_id': 'order_id',
         'direction': 'direction',
         'action_type': 'action_type',
         'status': 'status',
@@ -62,7 +64,7 @@ class RuleAclListResponseDTODataRecords:
         'tag': 'tag'
     }
 
-    def __init__(self, rule_id=None, applications=None, address_type=None, name=None, direction=None, action_type=None, status=None, description=None, long_connect_time=None, long_connect_enable=None, long_connect_time_hour=None, long_connect_time_minute=None, long_connect_time_second=None, source=None, destination=None, service=None, type=None, created_date=None, last_open_time=None, tag=None):
+    def __init__(self, rule_id=None, applications=None, address_type=None, name=None, order_id=None, direction=None, action_type=None, status=None, description=None, long_connect_time=None, long_connect_enable=None, long_connect_time_hour=None, long_connect_time_minute=None, long_connect_time_second=None, source=None, destination=None, service=None, type=None, created_date=None, last_open_time=None, tag=None):
         r"""RuleAclListResponseDTODataRecords
 
         The model defined in huaweicloud sdk
@@ -75,6 +77,8 @@ class RuleAclListResponseDTODataRecords:
         :type address_type: int
         :param name: 规则名称
         :type name: str
+        :param order_id: 排序id
+        :type order_id: int
         :param direction: 规则方向0：外到内1：内到外
         :type direction: int
         :param action_type: 动作0：permit，1：deny
@@ -115,6 +119,7 @@ class RuleAclListResponseDTODataRecords:
         self._applications = None
         self._address_type = None
         self._name = None
+        self._order_id = None
         self._direction = None
         self._action_type = None
         self._status = None
@@ -141,6 +146,8 @@ class RuleAclListResponseDTODataRecords:
             self.address_type = address_type
         if name is not None:
             self.name = name
+        if order_id is not None:
+            self.order_id = order_id
         if direction is not None:
             self.direction = direction
         if action_type is not None:
@@ -261,6 +268,28 @@ class RuleAclListResponseDTODataRecords:
         :type name: str
         """
         self._name = name
+
+    @property
+    def order_id(self):
+        r"""Gets the order_id of this RuleAclListResponseDTODataRecords.
+
+        排序id
+
+        :return: The order_id of this RuleAclListResponseDTODataRecords.
+        :rtype: int
+        """
+        return self._order_id
+
+    @order_id.setter
+    def order_id(self, order_id):
+        r"""Sets the order_id of this RuleAclListResponseDTODataRecords.
+
+        排序id
+
+        :param order_id: The order_id of this RuleAclListResponseDTODataRecords.
+        :type order_id: int
+        """
+        self._order_id = order_id
 
     @property
     def direction(self):

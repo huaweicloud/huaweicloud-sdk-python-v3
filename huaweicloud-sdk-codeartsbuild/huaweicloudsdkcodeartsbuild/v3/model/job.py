@@ -33,7 +33,16 @@ class Job:
         'is_execute': 'bool',
         'is_copy': 'bool',
         'is_forbidden': 'bool',
-        'is_view': 'bool'
+        'is_view': 'bool',
+        'last_build_user': 'str',
+        'trigger_type': 'str',
+        'build_time': 'int',
+        'scm_web_url': 'str',
+        'scm_type': 'str',
+        'repo_id': 'str',
+        'build_project_id': 'str',
+        'last_job_running_status': 'str',
+        'last_build_user_id': 'str'
     }
 
     attribute_map = {
@@ -53,10 +62,19 @@ class Job:
         'is_execute': 'is_execute',
         'is_copy': 'is_copy',
         'is_forbidden': 'is_forbidden',
-        'is_view': 'is_view'
+        'is_view': 'is_view',
+        'last_build_user': 'last_build_user',
+        'trigger_type': 'trigger_type',
+        'build_time': 'build_time',
+        'scm_web_url': 'scm_web_url',
+        'scm_type': 'scm_type',
+        'repo_id': 'repo_id',
+        'build_project_id': 'build_project_id',
+        'last_job_running_status': 'last_job_running_status',
+        'last_build_user_id': 'last_build_user_id'
     }
 
-    def __init__(self, id=None, job_name=None, job_creator=None, user_name=None, last_build_time=None, health_score=None, source_code=None, last_build_status=None, is_finished=None, disabled=None, favorite=None, is_modify=None, is_delete=None, is_execute=None, is_copy=None, is_forbidden=None, is_view=None):
+    def __init__(self, id=None, job_name=None, job_creator=None, user_name=None, last_build_time=None, health_score=None, source_code=None, last_build_status=None, is_finished=None, disabled=None, favorite=None, is_modify=None, is_delete=None, is_execute=None, is_copy=None, is_forbidden=None, is_view=None, last_build_user=None, trigger_type=None, build_time=None, scm_web_url=None, scm_type=None, repo_id=None, build_project_id=None, last_job_running_status=None, last_build_user_id=None):
         r"""Job
 
         The model defined in huaweicloud sdk
@@ -95,6 +113,24 @@ class Job:
         :type is_forbidden: bool
         :param is_view: 是否有查看任务权限
         :type is_view: bool
+        :param last_build_user: 最后一次构建用户
+        :type last_build_user: str
+        :param trigger_type: 触发类型
+        :type trigger_type: str
+        :param build_time: 构建时间
+        :type build_time: int
+        :param scm_web_url: 代码仓web地址
+        :type scm_web_url: str
+        :param scm_type: 代码仓类型
+        :type scm_type: str
+        :param repo_id: 代码仓ID
+        :type repo_id: str
+        :param build_project_id: 构建项目ID
+        :type build_project_id: str
+        :param last_job_running_status: 最后一次构建时间
+        :type last_job_running_status: str
+        :param last_build_user_id: 最后一次构建用户ID
+        :type last_build_user_id: str
         """
         
         
@@ -116,6 +152,15 @@ class Job:
         self._is_copy = None
         self._is_forbidden = None
         self._is_view = None
+        self._last_build_user = None
+        self._trigger_type = None
+        self._build_time = None
+        self._scm_web_url = None
+        self._scm_type = None
+        self._repo_id = None
+        self._build_project_id = None
+        self._last_job_running_status = None
+        self._last_build_user_id = None
         self.discriminator = None
 
         if id is not None:
@@ -152,6 +197,24 @@ class Job:
             self.is_forbidden = is_forbidden
         if is_view is not None:
             self.is_view = is_view
+        if last_build_user is not None:
+            self.last_build_user = last_build_user
+        if trigger_type is not None:
+            self.trigger_type = trigger_type
+        if build_time is not None:
+            self.build_time = build_time
+        if scm_web_url is not None:
+            self.scm_web_url = scm_web_url
+        if scm_type is not None:
+            self.scm_type = scm_type
+        if repo_id is not None:
+            self.repo_id = repo_id
+        if build_project_id is not None:
+            self.build_project_id = build_project_id
+        if last_job_running_status is not None:
+            self.last_job_running_status = last_job_running_status
+        if last_build_user_id is not None:
+            self.last_build_user_id = last_build_user_id
 
     @property
     def id(self):
@@ -526,6 +589,204 @@ class Job:
         :type is_view: bool
         """
         self._is_view = is_view
+
+    @property
+    def last_build_user(self):
+        r"""Gets the last_build_user of this Job.
+
+        最后一次构建用户
+
+        :return: The last_build_user of this Job.
+        :rtype: str
+        """
+        return self._last_build_user
+
+    @last_build_user.setter
+    def last_build_user(self, last_build_user):
+        r"""Sets the last_build_user of this Job.
+
+        最后一次构建用户
+
+        :param last_build_user: The last_build_user of this Job.
+        :type last_build_user: str
+        """
+        self._last_build_user = last_build_user
+
+    @property
+    def trigger_type(self):
+        r"""Gets the trigger_type of this Job.
+
+        触发类型
+
+        :return: The trigger_type of this Job.
+        :rtype: str
+        """
+        return self._trigger_type
+
+    @trigger_type.setter
+    def trigger_type(self, trigger_type):
+        r"""Sets the trigger_type of this Job.
+
+        触发类型
+
+        :param trigger_type: The trigger_type of this Job.
+        :type trigger_type: str
+        """
+        self._trigger_type = trigger_type
+
+    @property
+    def build_time(self):
+        r"""Gets the build_time of this Job.
+
+        构建时间
+
+        :return: The build_time of this Job.
+        :rtype: int
+        """
+        return self._build_time
+
+    @build_time.setter
+    def build_time(self, build_time):
+        r"""Sets the build_time of this Job.
+
+        构建时间
+
+        :param build_time: The build_time of this Job.
+        :type build_time: int
+        """
+        self._build_time = build_time
+
+    @property
+    def scm_web_url(self):
+        r"""Gets the scm_web_url of this Job.
+
+        代码仓web地址
+
+        :return: The scm_web_url of this Job.
+        :rtype: str
+        """
+        return self._scm_web_url
+
+    @scm_web_url.setter
+    def scm_web_url(self, scm_web_url):
+        r"""Sets the scm_web_url of this Job.
+
+        代码仓web地址
+
+        :param scm_web_url: The scm_web_url of this Job.
+        :type scm_web_url: str
+        """
+        self._scm_web_url = scm_web_url
+
+    @property
+    def scm_type(self):
+        r"""Gets the scm_type of this Job.
+
+        代码仓类型
+
+        :return: The scm_type of this Job.
+        :rtype: str
+        """
+        return self._scm_type
+
+    @scm_type.setter
+    def scm_type(self, scm_type):
+        r"""Sets the scm_type of this Job.
+
+        代码仓类型
+
+        :param scm_type: The scm_type of this Job.
+        :type scm_type: str
+        """
+        self._scm_type = scm_type
+
+    @property
+    def repo_id(self):
+        r"""Gets the repo_id of this Job.
+
+        代码仓ID
+
+        :return: The repo_id of this Job.
+        :rtype: str
+        """
+        return self._repo_id
+
+    @repo_id.setter
+    def repo_id(self, repo_id):
+        r"""Sets the repo_id of this Job.
+
+        代码仓ID
+
+        :param repo_id: The repo_id of this Job.
+        :type repo_id: str
+        """
+        self._repo_id = repo_id
+
+    @property
+    def build_project_id(self):
+        r"""Gets the build_project_id of this Job.
+
+        构建项目ID
+
+        :return: The build_project_id of this Job.
+        :rtype: str
+        """
+        return self._build_project_id
+
+    @build_project_id.setter
+    def build_project_id(self, build_project_id):
+        r"""Sets the build_project_id of this Job.
+
+        构建项目ID
+
+        :param build_project_id: The build_project_id of this Job.
+        :type build_project_id: str
+        """
+        self._build_project_id = build_project_id
+
+    @property
+    def last_job_running_status(self):
+        r"""Gets the last_job_running_status of this Job.
+
+        最后一次构建时间
+
+        :return: The last_job_running_status of this Job.
+        :rtype: str
+        """
+        return self._last_job_running_status
+
+    @last_job_running_status.setter
+    def last_job_running_status(self, last_job_running_status):
+        r"""Sets the last_job_running_status of this Job.
+
+        最后一次构建时间
+
+        :param last_job_running_status: The last_job_running_status of this Job.
+        :type last_job_running_status: str
+        """
+        self._last_job_running_status = last_job_running_status
+
+    @property
+    def last_build_user_id(self):
+        r"""Gets the last_build_user_id of this Job.
+
+        最后一次构建用户ID
+
+        :return: The last_build_user_id of this Job.
+        :rtype: str
+        """
+        return self._last_build_user_id
+
+    @last_build_user_id.setter
+    def last_build_user_id(self, last_build_user_id):
+        r"""Sets the last_build_user_id of this Job.
+
+        最后一次构建用户ID
+
+        :param last_build_user_id: The last_build_user_id of this Job.
+        :type last_build_user_id: str
+        """
+        self._last_build_user_id = last_build_user_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

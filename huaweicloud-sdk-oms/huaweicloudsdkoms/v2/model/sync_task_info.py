@@ -65,7 +65,7 @@ class SyncTaskInfo:
 
         :param sync_task_id: 同步任务ID
         :type sync_task_id: str
-        :param src_cloud_type: 源端云服务提供商。  可选值有AWS、Azure、Aliyun、Tencent、HuaweiCloud、QingCloud、KingsoftCloud、Baidu、Qiniu、UCloud。默认值为Aliyun。
+        :param src_cloud_type: 源端云服务提供商。  可选值有AWS、Azure、Aliyun、Tencent、HuaweiCloud、QingCloud、KingsoftCloud、Baidu、Qiniu、UCloud、Google。默认值为Aliyun。
         :type src_cloud_type: str
         :param src_region: 源端桶所处的区域
         :type src_region: str
@@ -186,7 +186,7 @@ class SyncTaskInfo:
     def src_cloud_type(self):
         r"""Gets the src_cloud_type of this SyncTaskInfo.
 
-        源端云服务提供商。  可选值有AWS、Azure、Aliyun、Tencent、HuaweiCloud、QingCloud、KingsoftCloud、Baidu、Qiniu、UCloud。默认值为Aliyun。
+        源端云服务提供商。  可选值有AWS、Azure、Aliyun、Tencent、HuaweiCloud、QingCloud、KingsoftCloud、Baidu、Qiniu、UCloud、Google。默认值为Aliyun。
 
         :return: The src_cloud_type of this SyncTaskInfo.
         :rtype: str
@@ -197,7 +197,7 @@ class SyncTaskInfo:
     def src_cloud_type(self, src_cloud_type):
         r"""Sets the src_cloud_type of this SyncTaskInfo.
 
-        源端云服务提供商。  可选值有AWS、Azure、Aliyun、Tencent、HuaweiCloud、QingCloud、KingsoftCloud、Baidu、Qiniu、UCloud。默认值为Aliyun。
+        源端云服务提供商。  可选值有AWS、Azure、Aliyun、Tencent、HuaweiCloud、QingCloud、KingsoftCloud、Baidu、Qiniu、UCloud、Google。默认值为Aliyun。
 
         :param src_cloud_type: The src_cloud_type of this SyncTaskInfo.
         :type src_cloud_type: str

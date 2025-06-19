@@ -28,7 +28,8 @@ class ShowEnhancedConnectionResponse(SdkResponse):
         'dest_vpc_id': 'str',
         'dest_network_id': 'str',
         'create_time': 'int',
-        'hosts': 'list[EnhancedConnectionHost]'
+        'hosts': 'list[EnhancedConnectionHost]',
+        'ipv6_enable': 'bool'
     }
 
     attribute_map = {
@@ -42,10 +43,11 @@ class ShowEnhancedConnectionResponse(SdkResponse):
         'dest_vpc_id': 'dest_vpc_id',
         'dest_network_id': 'dest_network_id',
         'create_time': 'create_time',
-        'hosts': 'hosts'
+        'hosts': 'hosts',
+        'ipv6_enable': 'ipv6_enable'
     }
 
-    def __init__(self, is_success=None, message=None, id=None, name=None, status=None, available_queue_info=None, elastic_resource_pools=None, dest_vpc_id=None, dest_network_id=None, create_time=None, hosts=None):
+    def __init__(self, is_success=None, message=None, id=None, name=None, status=None, available_queue_info=None, elastic_resource_pools=None, dest_vpc_id=None, dest_network_id=None, create_time=None, hosts=None, ipv6_enable=None):
         r"""ShowEnhancedConnectionResponse
 
         The model defined in huaweicloud sdk
@@ -72,6 +74,8 @@ class ShowEnhancedConnectionResponse(SdkResponse):
         :type create_time: int
         :param hosts: 用户自定义主机信息。
         :type hosts: list[:class:`huaweicloudsdkdli.v1.EnhancedConnectionHost`]
+        :param ipv6_enable: 是否启用IPv6
+        :type ipv6_enable: bool
         """
         
         super(ShowEnhancedConnectionResponse, self).__init__()
@@ -87,6 +91,7 @@ class ShowEnhancedConnectionResponse(SdkResponse):
         self._dest_network_id = None
         self._create_time = None
         self._hosts = None
+        self._ipv6_enable = None
         self.discriminator = None
 
         if is_success is not None:
@@ -111,6 +116,8 @@ class ShowEnhancedConnectionResponse(SdkResponse):
             self.create_time = create_time
         if hosts is not None:
             self.hosts = hosts
+        if ipv6_enable is not None:
+            self.ipv6_enable = ipv6_enable
 
     @property
     def is_success(self):
@@ -353,6 +360,28 @@ class ShowEnhancedConnectionResponse(SdkResponse):
         :type hosts: list[:class:`huaweicloudsdkdli.v1.EnhancedConnectionHost`]
         """
         self._hosts = hosts
+
+    @property
+    def ipv6_enable(self):
+        r"""Gets the ipv6_enable of this ShowEnhancedConnectionResponse.
+
+        是否启用IPv6
+
+        :return: The ipv6_enable of this ShowEnhancedConnectionResponse.
+        :rtype: bool
+        """
+        return self._ipv6_enable
+
+    @ipv6_enable.setter
+    def ipv6_enable(self, ipv6_enable):
+        r"""Sets the ipv6_enable of this ShowEnhancedConnectionResponse.
+
+        是否启用IPv6
+
+        :param ipv6_enable: The ipv6_enable of this ShowEnhancedConnectionResponse.
+        :type ipv6_enable: bool
+        """
+        self._ipv6_enable = ipv6_enable
 
     def to_dict(self):
         """Returns the model properties as a dict"""

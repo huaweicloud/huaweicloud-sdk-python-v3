@@ -35,13 +35,13 @@ class ListQueuesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param queue_type: 队列的类型,。有如下三种类型： sql general all 如果不指定，默认为sql。
+        :param queue_type: 参数解释:  队列的类型 示例: sql 约束限制:  无 取值范围: sql, general, all 默认取值: sql
         :type queue_type: str
-        :param tags: 查询根据标签进行过滤
+        :param tags: 参数解释: 查询根据标签进行过滤 示例: taga&#x3D;tagb,owner&#x3D;ph 约束限制:  符合“key1&#x3D;value1,key2&#x3D;value2”的字符串 取值范围: 无 默认取值: 无
         :type tags: str
-        :param with_charge_info: 是否返回收费信息
+        :param with_charge_info: 是否返回收费信息 示例: true 约束限制:  无 取值范围: true, false 默认取值: 无
         :type with_charge_info: bool
-        :param with_priv: 是否返回权限信息。
+        :param with_priv: 是否返回权限信息 示例: true 约束限制:  无 取值范围: true, false 默认取值: 无
         :type with_priv: bool
         """
         
@@ -66,7 +66,7 @@ class ListQueuesRequest:
     def queue_type(self):
         r"""Gets the queue_type of this ListQueuesRequest.
 
-        队列的类型,。有如下三种类型： sql general all 如果不指定，默认为sql。
+        参数解释:  队列的类型 示例: sql 约束限制:  无 取值范围: sql, general, all 默认取值: sql
 
         :return: The queue_type of this ListQueuesRequest.
         :rtype: str
@@ -77,7 +77,7 @@ class ListQueuesRequest:
     def queue_type(self, queue_type):
         r"""Sets the queue_type of this ListQueuesRequest.
 
-        队列的类型,。有如下三种类型： sql general all 如果不指定，默认为sql。
+        参数解释:  队列的类型 示例: sql 约束限制:  无 取值范围: sql, general, all 默认取值: sql
 
         :param queue_type: The queue_type of this ListQueuesRequest.
         :type queue_type: str
@@ -88,7 +88,7 @@ class ListQueuesRequest:
     def tags(self):
         r"""Gets the tags of this ListQueuesRequest.
 
-        查询根据标签进行过滤
+        参数解释: 查询根据标签进行过滤 示例: taga=tagb,owner=ph 约束限制:  符合“key1=value1,key2=value2”的字符串 取值范围: 无 默认取值: 无
 
         :return: The tags of this ListQueuesRequest.
         :rtype: str
@@ -99,7 +99,7 @@ class ListQueuesRequest:
     def tags(self, tags):
         r"""Sets the tags of this ListQueuesRequest.
 
-        查询根据标签进行过滤
+        参数解释: 查询根据标签进行过滤 示例: taga=tagb,owner=ph 约束限制:  符合“key1=value1,key2=value2”的字符串 取值范围: 无 默认取值: 无
 
         :param tags: The tags of this ListQueuesRequest.
         :type tags: str
@@ -110,7 +110,7 @@ class ListQueuesRequest:
     def with_charge_info(self):
         r"""Gets the with_charge_info of this ListQueuesRequest.
 
-        是否返回收费信息
+        是否返回收费信息 示例: true 约束限制:  无 取值范围: true, false 默认取值: 无
 
         :return: The with_charge_info of this ListQueuesRequest.
         :rtype: bool
@@ -121,7 +121,7 @@ class ListQueuesRequest:
     def with_charge_info(self, with_charge_info):
         r"""Sets the with_charge_info of this ListQueuesRequest.
 
-        是否返回收费信息
+        是否返回收费信息 示例: true 约束限制:  无 取值范围: true, false 默认取值: 无
 
         :param with_charge_info: The with_charge_info of this ListQueuesRequest.
         :type with_charge_info: bool
@@ -132,7 +132,7 @@ class ListQueuesRequest:
     def with_priv(self):
         r"""Gets the with_priv of this ListQueuesRequest.
 
-        是否返回权限信息。
+        是否返回权限信息 示例: true 约束限制:  无 取值范围: true, false 默认取值: 无
 
         :return: The with_priv of this ListQueuesRequest.
         :rtype: bool
@@ -143,7 +143,7 @@ class ListQueuesRequest:
     def with_priv(self, with_priv):
         r"""Sets the with_priv of this ListQueuesRequest.
 
-        是否返回权限信息。
+        是否返回权限信息 示例: true 约束限制:  无 取值范围: true, false 默认取值: 无
 
         :param with_priv: The with_priv of this ListQueuesRequest.
         :type with_priv: bool

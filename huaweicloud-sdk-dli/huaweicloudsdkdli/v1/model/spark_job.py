@@ -59,37 +59,37 @@ class SparkJob:
 
         The model defined in huaweicloud sdk
 
-        :param id: Batch作业的id。
+        :param id: 参数解释:  Batch作业的id。 示例: 80ceaaff-3cfc-4162-a56f-70031ea4fa91 约束限制:  无 取值范围: 无 默认取值: 无
         :type id: str
-        :param state: Batch作业的状态。包括： starting：正在启动；running：正在执行任务；dead：session已退出；success：session停止成功；recovering：正在恢复。
+        :param state: 参数解释:  Batch作业的状态 示例: starting 约束限制:  无 取值范围: starting：正在启动；running：正在执行任务；dead：session已退出；success：session停止成功；recovering：正在恢复 默认取值: 无
         :type state: str
-        :param app_id: 批处理作业的后台app id。
+        :param app_id: 参数解释:  批处理作业的后台app id 示例: batch-session-1f49b734-757a-419c-9519-7754520cb03c:31309 约束限制:  无 取值范围: 无 默认取值: 无
         :type app_id: str
-        :param log: 显示当前Batch作业的最后10条记录。
+        :param log: 参数解释:  显示当前Batch作业的最后10条记录 约束限制:  无 取值范围: 无 默认取值: 无
         :type log: list[str]
-        :param sc_type: 计算资源类型。用户自定义时返回CUSTOMIZED。
+        :param sc_type: 参数解释:   计算资源类型，目前可接受参数A, B, C。如果不指定，则按最小类型创建。 示例: A 约束限制:  无 取值范围: A：物理资源：8核32G内存，driverCores：2；executorCores：1；driverMemory：7G；executorMemory：4G；numExecutor：6。 B：16核64G内存,2,2,7G,8G,7。 C：32核128G内存,4,2,15G,8G,14。 默认取值: 无
         :type sc_type: str
-        :param cluster_name: 会话所在队列。
+        :param cluster_name: 参数解释:  会话所在队列 示例: test 约束限制:  无 取值范围: 无 默认取值: 无
         :type cluster_name: str
-        :param create_time: Batch的创建时间。是单位为“毫秒”的时间戳。
+        :param create_time: 参数解释:  Batch的创建时间。是单位为“毫秒”的时间戳 示例: 1747169165821 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
         :type create_time: int
-        :param name: 创建时用户指定的批处理名称，不能超过128个字符。
+        :param name: 参数解释:  创建时用户指定的批处理名称，不能超过128个字符 示例: test_pyFiles 约束限制:  无 取值范围: 无 默认取值: 无
         :type name: str
-        :param owner: 批处理作业所属用户
+        :param owner: 参数解释:  批处理作业所属用户 示例: ei_dlics_d00352431 约束限制:  无 取值范围: 无 默认取值: 无
         :type owner: str
-        :param proxy_user: 批处理作业所属代理用户（资源租户）。
+        :param proxy_user: 参数解释:  批处理作业所属代理用户（资源租户） 示例: tenant1 约束限制:  无 取值范围: 无 默认取值: 无
         :type proxy_user: str
-        :param kind: 批处理作业类型，只支持spark类型参数。
+        :param kind: 参数解释:   批处理作业类型，只支持spark类型参数 示例: spark 约束限制:  无 取值范围: spark 默认取值: 无
         :type kind: str
-        :param queue: 用于指定队列，填写已创建DLI的队列名
+        :param queue: 参数解释:   用于指定队列，填写已创建DLI的队列名 示例: gen_native 约束限制:  无 取值范围: 无 默认取值: 无
         :type queue: str
-        :param image: 自定义镜像。格式为：组织名/镜像名:镜像版本。
+        :param image: 参数解释:   自定义镜像。格式为：组织名/镜像名:镜像版本 示例: ceshi/spark_general-x86_64:3.3.1-2.3.8.1020240906885119450448000 约束限制:  格式为: 组织名/镜像名:镜像版本的字符串 取值范围: 无 默认取值: 无
         :type image: str
-        :param req_body: 请求参数详情
+        :param req_body: 参数解释:   请求参数详情 示例: {\\\&quot;jars\\\&quot;:[\\\&quot;spark-examples_2.11-2.4.5-h0.cbu.dli.300.20240725.r1.jar\\\&quot;],\\\&quot;pyFiles\\\&quot;:[],\\\&quot;files\\\&quot;:[],\\\&quot;modelFiles\\\&quot;:[],\\\&quot;resources\\\&quot;:[],\\\&quot;modules\\\&quot;:[],\\\&quot;groups\\\&quot;:[],\\\&quot;archives\\\&quot;:[],\\\&quot;queue\\\&quot;:\\\&quot;gen0218\\\&quot;,\\\&quot;name\\\&quot;:\\\&quot;\\\&quot;,\\\&quot;conf\\\&quot;:{},\\\&quot;execution_agency_urn\\\&quot;:\\\&quot;agency\\\&quot;,\\\&quot;file\\\&quot;:\\\&quot;obs://dli-wzy/package/job/spark/longrunning.py\\\&quot;,\\\&quot;args\\\&quot;:[],\\\&quot;className\\\&quot;:\\\&quot;\\\&quot;,\\\&quot;autoRecovery\\\&quot;:false,\\\&quot;minRecoveryDelayTime\\\&quot;:10000,\\\&quot;maxRetryTimes\\\&quot;:20,\\\&quot;obs_bucket\\\&quot;:\\\&quot;rain3\\\&quot;,\\\&quot;image\\\&quot;:\\\&quot;ceshi/spark_general-x86_64:3.3.1-2.3.8.1020240906885119450448000\\\&quot;,\\\&quot;feature\\\&quot;:\\\&quot;custom\\\&quot;,\\\&quot;spark_version\\\&quot;:\\\&quot;3.3.1\\\&quot;} 约束限制:  符合Json格式的字符串 取值范围: 无 默认取值: 无
         :type req_body: str
-        :param update_time: 更新时间
+        :param update_time: 参数解释:   更新时间 示例: 1739867996988 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
         :type update_time: int
-        :param duration: 作业运行时长，单位毫秒。
+        :param duration: 参数解释:   作业运行时长，单位毫秒 示例: 141079 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
         :type duration: int
         """
         
@@ -150,7 +150,7 @@ class SparkJob:
     def id(self):
         r"""Gets the id of this SparkJob.
 
-        Batch作业的id。
+        参数解释:  Batch作业的id。 示例: 80ceaaff-3cfc-4162-a56f-70031ea4fa91 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The id of this SparkJob.
         :rtype: str
@@ -161,7 +161,7 @@ class SparkJob:
     def id(self, id):
         r"""Sets the id of this SparkJob.
 
-        Batch作业的id。
+        参数解释:  Batch作业的id。 示例: 80ceaaff-3cfc-4162-a56f-70031ea4fa91 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param id: The id of this SparkJob.
         :type id: str
@@ -172,7 +172,7 @@ class SparkJob:
     def state(self):
         r"""Gets the state of this SparkJob.
 
-        Batch作业的状态。包括： starting：正在启动；running：正在执行任务；dead：session已退出；success：session停止成功；recovering：正在恢复。
+        参数解释:  Batch作业的状态 示例: starting 约束限制:  无 取值范围: starting：正在启动；running：正在执行任务；dead：session已退出；success：session停止成功；recovering：正在恢复 默认取值: 无
 
         :return: The state of this SparkJob.
         :rtype: str
@@ -183,7 +183,7 @@ class SparkJob:
     def state(self, state):
         r"""Sets the state of this SparkJob.
 
-        Batch作业的状态。包括： starting：正在启动；running：正在执行任务；dead：session已退出；success：session停止成功；recovering：正在恢复。
+        参数解释:  Batch作业的状态 示例: starting 约束限制:  无 取值范围: starting：正在启动；running：正在执行任务；dead：session已退出；success：session停止成功；recovering：正在恢复 默认取值: 无
 
         :param state: The state of this SparkJob.
         :type state: str
@@ -194,7 +194,7 @@ class SparkJob:
     def app_id(self):
         r"""Gets the app_id of this SparkJob.
 
-        批处理作业的后台app id。
+        参数解释:  批处理作业的后台app id 示例: batch-session-1f49b734-757a-419c-9519-7754520cb03c:31309 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The app_id of this SparkJob.
         :rtype: str
@@ -205,7 +205,7 @@ class SparkJob:
     def app_id(self, app_id):
         r"""Sets the app_id of this SparkJob.
 
-        批处理作业的后台app id。
+        参数解释:  批处理作业的后台app id 示例: batch-session-1f49b734-757a-419c-9519-7754520cb03c:31309 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param app_id: The app_id of this SparkJob.
         :type app_id: str
@@ -216,7 +216,7 @@ class SparkJob:
     def log(self):
         r"""Gets the log of this SparkJob.
 
-        显示当前Batch作业的最后10条记录。
+        参数解释:  显示当前Batch作业的最后10条记录 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The log of this SparkJob.
         :rtype: list[str]
@@ -227,7 +227,7 @@ class SparkJob:
     def log(self, log):
         r"""Sets the log of this SparkJob.
 
-        显示当前Batch作业的最后10条记录。
+        参数解释:  显示当前Batch作业的最后10条记录 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param log: The log of this SparkJob.
         :type log: list[str]
@@ -238,7 +238,7 @@ class SparkJob:
     def sc_type(self):
         r"""Gets the sc_type of this SparkJob.
 
-        计算资源类型。用户自定义时返回CUSTOMIZED。
+        参数解释:   计算资源类型，目前可接受参数A, B, C。如果不指定，则按最小类型创建。 示例: A 约束限制:  无 取值范围: A：物理资源：8核32G内存，driverCores：2；executorCores：1；driverMemory：7G；executorMemory：4G；numExecutor：6。 B：16核64G内存,2,2,7G,8G,7。 C：32核128G内存,4,2,15G,8G,14。 默认取值: 无
 
         :return: The sc_type of this SparkJob.
         :rtype: str
@@ -249,7 +249,7 @@ class SparkJob:
     def sc_type(self, sc_type):
         r"""Sets the sc_type of this SparkJob.
 
-        计算资源类型。用户自定义时返回CUSTOMIZED。
+        参数解释:   计算资源类型，目前可接受参数A, B, C。如果不指定，则按最小类型创建。 示例: A 约束限制:  无 取值范围: A：物理资源：8核32G内存，driverCores：2；executorCores：1；driverMemory：7G；executorMemory：4G；numExecutor：6。 B：16核64G内存,2,2,7G,8G,7。 C：32核128G内存,4,2,15G,8G,14。 默认取值: 无
 
         :param sc_type: The sc_type of this SparkJob.
         :type sc_type: str
@@ -260,7 +260,7 @@ class SparkJob:
     def cluster_name(self):
         r"""Gets the cluster_name of this SparkJob.
 
-        会话所在队列。
+        参数解释:  会话所在队列 示例: test 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The cluster_name of this SparkJob.
         :rtype: str
@@ -271,7 +271,7 @@ class SparkJob:
     def cluster_name(self, cluster_name):
         r"""Sets the cluster_name of this SparkJob.
 
-        会话所在队列。
+        参数解释:  会话所在队列 示例: test 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param cluster_name: The cluster_name of this SparkJob.
         :type cluster_name: str
@@ -282,7 +282,7 @@ class SparkJob:
     def create_time(self):
         r"""Gets the create_time of this SparkJob.
 
-        Batch的创建时间。是单位为“毫秒”的时间戳。
+        参数解释:  Batch的创建时间。是单位为“毫秒”的时间戳 示例: 1747169165821 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
 
         :return: The create_time of this SparkJob.
         :rtype: int
@@ -293,7 +293,7 @@ class SparkJob:
     def create_time(self, create_time):
         r"""Sets the create_time of this SparkJob.
 
-        Batch的创建时间。是单位为“毫秒”的时间戳。
+        参数解释:  Batch的创建时间。是单位为“毫秒”的时间戳 示例: 1747169165821 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
 
         :param create_time: The create_time of this SparkJob.
         :type create_time: int
@@ -304,7 +304,7 @@ class SparkJob:
     def name(self):
         r"""Gets the name of this SparkJob.
 
-        创建时用户指定的批处理名称，不能超过128个字符。
+        参数解释:  创建时用户指定的批处理名称，不能超过128个字符 示例: test_pyFiles 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The name of this SparkJob.
         :rtype: str
@@ -315,7 +315,7 @@ class SparkJob:
     def name(self, name):
         r"""Sets the name of this SparkJob.
 
-        创建时用户指定的批处理名称，不能超过128个字符。
+        参数解释:  创建时用户指定的批处理名称，不能超过128个字符 示例: test_pyFiles 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param name: The name of this SparkJob.
         :type name: str
@@ -326,7 +326,7 @@ class SparkJob:
     def owner(self):
         r"""Gets the owner of this SparkJob.
 
-        批处理作业所属用户
+        参数解释:  批处理作业所属用户 示例: ei_dlics_d00352431 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The owner of this SparkJob.
         :rtype: str
@@ -337,7 +337,7 @@ class SparkJob:
     def owner(self, owner):
         r"""Sets the owner of this SparkJob.
 
-        批处理作业所属用户
+        参数解释:  批处理作业所属用户 示例: ei_dlics_d00352431 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param owner: The owner of this SparkJob.
         :type owner: str
@@ -348,7 +348,7 @@ class SparkJob:
     def proxy_user(self):
         r"""Gets the proxy_user of this SparkJob.
 
-        批处理作业所属代理用户（资源租户）。
+        参数解释:  批处理作业所属代理用户（资源租户） 示例: tenant1 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The proxy_user of this SparkJob.
         :rtype: str
@@ -359,7 +359,7 @@ class SparkJob:
     def proxy_user(self, proxy_user):
         r"""Sets the proxy_user of this SparkJob.
 
-        批处理作业所属代理用户（资源租户）。
+        参数解释:  批处理作业所属代理用户（资源租户） 示例: tenant1 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param proxy_user: The proxy_user of this SparkJob.
         :type proxy_user: str
@@ -370,7 +370,7 @@ class SparkJob:
     def kind(self):
         r"""Gets the kind of this SparkJob.
 
-        批处理作业类型，只支持spark类型参数。
+        参数解释:   批处理作业类型，只支持spark类型参数 示例: spark 约束限制:  无 取值范围: spark 默认取值: 无
 
         :return: The kind of this SparkJob.
         :rtype: str
@@ -381,7 +381,7 @@ class SparkJob:
     def kind(self, kind):
         r"""Sets the kind of this SparkJob.
 
-        批处理作业类型，只支持spark类型参数。
+        参数解释:   批处理作业类型，只支持spark类型参数 示例: spark 约束限制:  无 取值范围: spark 默认取值: 无
 
         :param kind: The kind of this SparkJob.
         :type kind: str
@@ -392,7 +392,7 @@ class SparkJob:
     def queue(self):
         r"""Gets the queue of this SparkJob.
 
-        用于指定队列，填写已创建DLI的队列名
+        参数解释:   用于指定队列，填写已创建DLI的队列名 示例: gen_native 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The queue of this SparkJob.
         :rtype: str
@@ -403,7 +403,7 @@ class SparkJob:
     def queue(self, queue):
         r"""Sets the queue of this SparkJob.
 
-        用于指定队列，填写已创建DLI的队列名
+        参数解释:   用于指定队列，填写已创建DLI的队列名 示例: gen_native 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param queue: The queue of this SparkJob.
         :type queue: str
@@ -414,7 +414,7 @@ class SparkJob:
     def image(self):
         r"""Gets the image of this SparkJob.
 
-        自定义镜像。格式为：组织名/镜像名:镜像版本。
+        参数解释:   自定义镜像。格式为：组织名/镜像名:镜像版本 示例: ceshi/spark_general-x86_64:3.3.1-2.3.8.1020240906885119450448000 约束限制:  格式为: 组织名/镜像名:镜像版本的字符串 取值范围: 无 默认取值: 无
 
         :return: The image of this SparkJob.
         :rtype: str
@@ -425,7 +425,7 @@ class SparkJob:
     def image(self, image):
         r"""Sets the image of this SparkJob.
 
-        自定义镜像。格式为：组织名/镜像名:镜像版本。
+        参数解释:   自定义镜像。格式为：组织名/镜像名:镜像版本 示例: ceshi/spark_general-x86_64:3.3.1-2.3.8.1020240906885119450448000 约束限制:  格式为: 组织名/镜像名:镜像版本的字符串 取值范围: 无 默认取值: 无
 
         :param image: The image of this SparkJob.
         :type image: str
@@ -436,7 +436,7 @@ class SparkJob:
     def req_body(self):
         r"""Gets the req_body of this SparkJob.
 
-        请求参数详情
+        参数解释:   请求参数详情 示例: {\\\"jars\\\":[\\\"spark-examples_2.11-2.4.5-h0.cbu.dli.300.20240725.r1.jar\\\"],\\\"pyFiles\\\":[],\\\"files\\\":[],\\\"modelFiles\\\":[],\\\"resources\\\":[],\\\"modules\\\":[],\\\"groups\\\":[],\\\"archives\\\":[],\\\"queue\\\":\\\"gen0218\\\",\\\"name\\\":\\\"\\\",\\\"conf\\\":{},\\\"execution_agency_urn\\\":\\\"agency\\\",\\\"file\\\":\\\"obs://dli-wzy/package/job/spark/longrunning.py\\\",\\\"args\\\":[],\\\"className\\\":\\\"\\\",\\\"autoRecovery\\\":false,\\\"minRecoveryDelayTime\\\":10000,\\\"maxRetryTimes\\\":20,\\\"obs_bucket\\\":\\\"rain3\\\",\\\"image\\\":\\\"ceshi/spark_general-x86_64:3.3.1-2.3.8.1020240906885119450448000\\\",\\\"feature\\\":\\\"custom\\\",\\\"spark_version\\\":\\\"3.3.1\\\"} 约束限制:  符合Json格式的字符串 取值范围: 无 默认取值: 无
 
         :return: The req_body of this SparkJob.
         :rtype: str
@@ -447,7 +447,7 @@ class SparkJob:
     def req_body(self, req_body):
         r"""Sets the req_body of this SparkJob.
 
-        请求参数详情
+        参数解释:   请求参数详情 示例: {\\\"jars\\\":[\\\"spark-examples_2.11-2.4.5-h0.cbu.dli.300.20240725.r1.jar\\\"],\\\"pyFiles\\\":[],\\\"files\\\":[],\\\"modelFiles\\\":[],\\\"resources\\\":[],\\\"modules\\\":[],\\\"groups\\\":[],\\\"archives\\\":[],\\\"queue\\\":\\\"gen0218\\\",\\\"name\\\":\\\"\\\",\\\"conf\\\":{},\\\"execution_agency_urn\\\":\\\"agency\\\",\\\"file\\\":\\\"obs://dli-wzy/package/job/spark/longrunning.py\\\",\\\"args\\\":[],\\\"className\\\":\\\"\\\",\\\"autoRecovery\\\":false,\\\"minRecoveryDelayTime\\\":10000,\\\"maxRetryTimes\\\":20,\\\"obs_bucket\\\":\\\"rain3\\\",\\\"image\\\":\\\"ceshi/spark_general-x86_64:3.3.1-2.3.8.1020240906885119450448000\\\",\\\"feature\\\":\\\"custom\\\",\\\"spark_version\\\":\\\"3.3.1\\\"} 约束限制:  符合Json格式的字符串 取值范围: 无 默认取值: 无
 
         :param req_body: The req_body of this SparkJob.
         :type req_body: str
@@ -458,7 +458,7 @@ class SparkJob:
     def update_time(self):
         r"""Gets the update_time of this SparkJob.
 
-        更新时间
+        参数解释:   更新时间 示例: 1739867996988 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
 
         :return: The update_time of this SparkJob.
         :rtype: int
@@ -469,7 +469,7 @@ class SparkJob:
     def update_time(self, update_time):
         r"""Sets the update_time of this SparkJob.
 
-        更新时间
+        参数解释:   更新时间 示例: 1739867996988 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
 
         :param update_time: The update_time of this SparkJob.
         :type update_time: int
@@ -480,7 +480,7 @@ class SparkJob:
     def duration(self):
         r"""Gets the duration of this SparkJob.
 
-        作业运行时长，单位毫秒。
+        参数解释:   作业运行时长，单位毫秒 示例: 141079 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
 
         :return: The duration of this SparkJob.
         :rtype: int
@@ -491,7 +491,7 @@ class SparkJob:
     def duration(self, duration):
         r"""Sets the duration of this SparkJob.
 
-        作业运行时长，单位毫秒。
+        参数解释:   作业运行时长，单位毫秒 示例: 141079 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
 
         :param duration: The duration of this SparkJob.
         :type duration: int

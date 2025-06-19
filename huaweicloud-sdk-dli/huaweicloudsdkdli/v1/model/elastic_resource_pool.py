@@ -36,7 +36,9 @@ class ElasticResourcePool:
         'prepay_cu': 'int',
         'charging_mode': 'int',
         'manager': 'str',
-        'label': 'dict(str, str)'
+        'label': 'dict(str, str)',
+        'ipv6_enable': 'bool',
+        'ipv6_cidr_in_subnet': 'str'
     }
 
     attribute_map = {
@@ -59,10 +61,12 @@ class ElasticResourcePool:
         'prepay_cu': 'prepay_cu',
         'charging_mode': 'charging_mode',
         'manager': 'manager',
-        'label': 'label'
+        'label': 'label',
+        'ipv6_enable': 'ipv6_enable',
+        'ipv6_cidr_in_subnet': 'ipv6_cidr_in_subnet'
     }
 
-    def __init__(self, elastic_resource_pool_name=None, id=None, update_time=None, queues=None, owner=None, description=None, max_cu=None, min_cu=None, actual_cu=None, cidr_in_vpc=None, create_time=None, current_cu=None, status=None, resource_id=None, fail_reason=None, enterprise_project_id=None, prepay_cu=None, charging_mode=None, manager=None, label=None):
+    def __init__(self, elastic_resource_pool_name=None, id=None, update_time=None, queues=None, owner=None, description=None, max_cu=None, min_cu=None, actual_cu=None, cidr_in_vpc=None, create_time=None, current_cu=None, status=None, resource_id=None, fail_reason=None, enterprise_project_id=None, prepay_cu=None, charging_mode=None, manager=None, label=None, ipv6_enable=None, ipv6_cidr_in_subnet=None):
         r"""ElasticResourcePool
 
         The model defined in huaweicloud sdk
@@ -107,6 +111,10 @@ class ElasticResourcePool:
         :type manager: str
         :param label: 弹性资源池属性字段。默认为标准版弹性资源池；{\&quot;spec\&quot;:\&quot;basic\&quot;}标识基础版弹性资源池；{\&quot;billing_spec_code\&quot;:\&quot;developer\&quot;}标识开发者弹性资源池。目前不支持其它属性设置。
         :type label: dict(str, str)
+        :param ipv6_enable: 是否启用IPv6
+        :type ipv6_enable: bool
+        :param ipv6_cidr_in_subnet: IPv6子网网段
+        :type ipv6_cidr_in_subnet: str
         """
         
         
@@ -131,6 +139,8 @@ class ElasticResourcePool:
         self._charging_mode = None
         self._manager = None
         self._label = None
+        self._ipv6_enable = None
+        self._ipv6_cidr_in_subnet = None
         self.discriminator = None
 
         if elastic_resource_pool_name is not None:
@@ -173,6 +183,10 @@ class ElasticResourcePool:
             self.manager = manager
         if label is not None:
             self.label = label
+        if ipv6_enable is not None:
+            self.ipv6_enable = ipv6_enable
+        if ipv6_cidr_in_subnet is not None:
+            self.ipv6_cidr_in_subnet = ipv6_cidr_in_subnet
 
     @property
     def elastic_resource_pool_name(self):
@@ -609,6 +623,50 @@ class ElasticResourcePool:
         :type label: dict(str, str)
         """
         self._label = label
+
+    @property
+    def ipv6_enable(self):
+        r"""Gets the ipv6_enable of this ElasticResourcePool.
+
+        是否启用IPv6
+
+        :return: The ipv6_enable of this ElasticResourcePool.
+        :rtype: bool
+        """
+        return self._ipv6_enable
+
+    @ipv6_enable.setter
+    def ipv6_enable(self, ipv6_enable):
+        r"""Sets the ipv6_enable of this ElasticResourcePool.
+
+        是否启用IPv6
+
+        :param ipv6_enable: The ipv6_enable of this ElasticResourcePool.
+        :type ipv6_enable: bool
+        """
+        self._ipv6_enable = ipv6_enable
+
+    @property
+    def ipv6_cidr_in_subnet(self):
+        r"""Gets the ipv6_cidr_in_subnet of this ElasticResourcePool.
+
+        IPv6子网网段
+
+        :return: The ipv6_cidr_in_subnet of this ElasticResourcePool.
+        :rtype: str
+        """
+        return self._ipv6_cidr_in_subnet
+
+    @ipv6_cidr_in_subnet.setter
+    def ipv6_cidr_in_subnet(self, ipv6_cidr_in_subnet):
+        r"""Sets the ipv6_cidr_in_subnet of this ElasticResourcePool.
+
+        IPv6子网网段
+
+        :param ipv6_cidr_in_subnet: The ipv6_cidr_in_subnet of this ElasticResourcePool.
+        :type ipv6_cidr_in_subnet: str
+        """
+        self._ipv6_cidr_in_subnet = ipv6_cidr_in_subnet
 
     def to_dict(self):
         """Returns the model properties as a dict"""

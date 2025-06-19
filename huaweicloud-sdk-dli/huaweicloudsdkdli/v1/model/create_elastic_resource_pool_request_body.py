@@ -25,7 +25,8 @@ class CreateElasticResourcePoolRequestBody:
         'min_cu': 'int',
         'enterprise_project_id': 'str',
         'tags': 'list[Tag]',
-        'label': 'dict(str, str)'
+        'label': 'dict(str, str)',
+        'ipv6_enable': 'bool'
     }
 
     attribute_map = {
@@ -37,10 +38,11 @@ class CreateElasticResourcePoolRequestBody:
         'min_cu': 'min_cu',
         'enterprise_project_id': 'enterprise_project_id',
         'tags': 'tags',
-        'label': 'label'
+        'label': 'label',
+        'ipv6_enable': 'ipv6_enable'
     }
 
-    def __init__(self, elastic_resource_pool_name=None, description=None, cidr_in_vpc=None, max_cu=None, charging_mode=None, min_cu=None, enterprise_project_id=None, tags=None, label=None):
+    def __init__(self, elastic_resource_pool_name=None, description=None, cidr_in_vpc=None, max_cu=None, charging_mode=None, min_cu=None, enterprise_project_id=None, tags=None, label=None, ipv6_enable=None):
         r"""CreateElasticResourcePoolRequestBody
 
         The model defined in huaweicloud sdk
@@ -63,6 +65,8 @@ class CreateElasticResourcePoolRequestBody:
         :type tags: list[:class:`huaweicloudsdkdli.v1.Tag`]
         :param label: 弹性资源池属性字段。默认为标准版弹性资源池；{\&quot;spec\&quot;:\&quot;basic\&quot;}标识基础版弹性资源池；{\&quot;billing_spec_code\&quot;:\&quot;developer\&quot;}标识开发者弹性资源池。目前不支持其它属性设置。
         :type label: dict(str, str)
+        :param ipv6_enable: 是否启用IPv6。开启IPv6后，将自动为资源池分配IPv6网段，暂不支持自定义IPv6网段。该功能一旦开启，将不能关闭。
+        :type ipv6_enable: bool
         """
         
         
@@ -76,6 +80,7 @@ class CreateElasticResourcePoolRequestBody:
         self._enterprise_project_id = None
         self._tags = None
         self._label = None
+        self._ipv6_enable = None
         self.discriminator = None
 
         self.elastic_resource_pool_name = elastic_resource_pool_name
@@ -93,6 +98,8 @@ class CreateElasticResourcePoolRequestBody:
             self.tags = tags
         if label is not None:
             self.label = label
+        if ipv6_enable is not None:
+            self.ipv6_enable = ipv6_enable
 
     @property
     def elastic_resource_pool_name(self):
@@ -291,6 +298,28 @@ class CreateElasticResourcePoolRequestBody:
         :type label: dict(str, str)
         """
         self._label = label
+
+    @property
+    def ipv6_enable(self):
+        r"""Gets the ipv6_enable of this CreateElasticResourcePoolRequestBody.
+
+        是否启用IPv6。开启IPv6后，将自动为资源池分配IPv6网段，暂不支持自定义IPv6网段。该功能一旦开启，将不能关闭。
+
+        :return: The ipv6_enable of this CreateElasticResourcePoolRequestBody.
+        :rtype: bool
+        """
+        return self._ipv6_enable
+
+    @ipv6_enable.setter
+    def ipv6_enable(self, ipv6_enable):
+        r"""Sets the ipv6_enable of this CreateElasticResourcePoolRequestBody.
+
+        是否启用IPv6。开启IPv6后，将自动为资源池分配IPv6网段，暂不支持自定义IPv6网段。该功能一旦开启，将不能关闭。
+
+        :param ipv6_enable: The ipv6_enable of this CreateElasticResourcePoolRequestBody.
+        :type ipv6_enable: bool
+        """
+        self._ipv6_enable = ipv6_enable
 
     def to_dict(self):
         """Returns the model properties as a dict"""

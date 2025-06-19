@@ -2956,6 +2956,77 @@ class RocketMQAsyncClient(Client):
 
         return http_info
 
+    def show_instance_nodes_async(self, request):
+        r"""查询实例节点
+
+        查询实例节点信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowInstanceNodes
+        :type request: :class:`huaweicloudsdkrocketmq.v2.ShowInstanceNodesRequest`
+        :rtype: :class:`huaweicloudsdkrocketmq.v2.ShowInstanceNodesResponse`
+        """
+        http_info = self._show_instance_nodes_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_instance_nodes_async_invoker(self, request):
+        http_info = self._show_instance_nodes_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_instance_nodes_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/{engine}/instances/{instance_id}/nodes",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowInstanceNodesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'engine' in local_var_params:
+            path_params['engine'] = local_var_params['engine']
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_quotas_async(self, request):
         r"""查看租户配额
 

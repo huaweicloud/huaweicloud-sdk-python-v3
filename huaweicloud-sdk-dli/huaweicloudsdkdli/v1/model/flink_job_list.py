@@ -31,7 +31,7 @@ class FlinkJobList:
 
         The model defined in huaweicloud sdk
 
-        :param total_count: 作业查询结果条数。
+        :param total_count: 参数解释:  作业查询结果条数 示例: 1 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
         :type total_count: int
         :param jobs: 作业信息
         :type jobs: list[:class:`huaweicloudsdkdli.v1.FlinkJob`]
@@ -52,7 +52,7 @@ class FlinkJobList:
     def total_count(self):
         r"""Gets the total_count of this FlinkJobList.
 
-        作业查询结果条数。
+        参数解释:  作业查询结果条数 示例: 1 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
 
         :return: The total_count of this FlinkJobList.
         :rtype: int
@@ -63,7 +63,7 @@ class FlinkJobList:
     def total_count(self, total_count):
         r"""Sets the total_count of this FlinkJobList.
 
-        作业查询结果条数。
+        参数解释:  作业查询结果条数 示例: 1 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
 
         :param total_count: The total_count of this FlinkJobList.
         :type total_count: int

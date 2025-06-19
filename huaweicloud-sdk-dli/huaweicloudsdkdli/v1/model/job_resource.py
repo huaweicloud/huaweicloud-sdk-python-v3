@@ -31,9 +31,9 @@ class JobResource:
 
         The model defined in huaweicloud sdk
 
-        :param name: 资源名称。
+        :param name: 参数解释:   资源名称 示例: group.tesddws/gsjdbc3.jar 约束限制:  无 取值范围: 无 默认取值: 无
         :type name: str
-        :param type: 资源类型。
+        :param type: 参数解释:   资源类型 示例: jar 约束限制:  无 取值范围: 无 默认取值: 无
         :type type: str
         """
         
@@ -52,7 +52,7 @@ class JobResource:
     def name(self):
         r"""Gets the name of this JobResource.
 
-        资源名称。
+        参数解释:   资源名称 示例: group.tesddws/gsjdbc3.jar 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The name of this JobResource.
         :rtype: str
@@ -63,7 +63,7 @@ class JobResource:
     def name(self, name):
         r"""Sets the name of this JobResource.
 
-        资源名称。
+        参数解释:   资源名称 示例: group.tesddws/gsjdbc3.jar 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param name: The name of this JobResource.
         :type name: str
@@ -74,7 +74,7 @@ class JobResource:
     def type(self):
         r"""Gets the type of this JobResource.
 
-        资源类型。
+        参数解释:   资源类型 示例: jar 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The type of this JobResource.
         :rtype: str
@@ -85,7 +85,7 @@ class JobResource:
     def type(self, type):
         r"""Sets the type of this JobResource.
 
-        资源类型。
+        参数解释:   资源类型 示例: jar 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param type: The type of this JobResource.
         :type type: str

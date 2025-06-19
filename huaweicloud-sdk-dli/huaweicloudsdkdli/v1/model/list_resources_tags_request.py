@@ -17,28 +17,42 @@ class ListResourcesTagsRequest:
     sensitive_list = []
 
     openapi_types = {
-        'resource_type': 'str'
+        'resource_type': 'str',
+        'limit': 'int',
+        'offset': 'int'
     }
 
     attribute_map = {
-        'resource_type': 'resource_type'
+        'resource_type': 'resource_type',
+        'limit': 'limit',
+        'offset': 'offset'
     }
 
-    def __init__(self, resource_type=None):
+    def __init__(self, resource_type=None, limit=None, offset=None):
         r"""ListResourcesTagsRequest
 
         The model defined in huaweicloud sdk
 
         :param resource_type: 资源类型
         :type resource_type: str
+        :param limit: 查询记录数。
+        :type limit: int
+        :param offset: 索引位置偏移量。
+        :type offset: int
         """
         
         
 
         self._resource_type = None
+        self._limit = None
+        self._offset = None
         self.discriminator = None
 
         self.resource_type = resource_type
+        if limit is not None:
+            self.limit = limit
+        if offset is not None:
+            self.offset = offset
 
     @property
     def resource_type(self):
@@ -61,6 +75,50 @@ class ListResourcesTagsRequest:
         :type resource_type: str
         """
         self._resource_type = resource_type
+
+    @property
+    def limit(self):
+        r"""Gets the limit of this ListResourcesTagsRequest.
+
+        查询记录数。
+
+        :return: The limit of this ListResourcesTagsRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        r"""Sets the limit of this ListResourcesTagsRequest.
+
+        查询记录数。
+
+        :param limit: The limit of this ListResourcesTagsRequest.
+        :type limit: int
+        """
+        self._limit = limit
+
+    @property
+    def offset(self):
+        r"""Gets the offset of this ListResourcesTagsRequest.
+
+        索引位置偏移量。
+
+        :return: The offset of this ListResourcesTagsRequest.
+        :rtype: int
+        """
+        return self._offset
+
+    @offset.setter
+    def offset(self, offset):
+        r"""Sets the offset of this ListResourcesTagsRequest.
+
+        索引位置偏移量。
+
+        :param offset: The offset of this ListResourcesTagsRequest.
+        :type offset: int
+        """
+        self._offset = offset
 
     def to_dict(self):
         """Returns the model properties as a dict"""

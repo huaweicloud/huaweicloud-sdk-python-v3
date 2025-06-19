@@ -18,7 +18,7 @@ class DeleteBuildJobResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'result': 'DeleteBuildJobResponseBodyResult',
+        'result': 'DeleteTheJobResponseBodyResult',
         'status': 'str'
     }
 
@@ -33,7 +33,7 @@ class DeleteBuildJobResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param result: 
-        :type result: :class:`huaweicloudsdkcodeartsbuild.v3.DeleteBuildJobResponseBodyResult`
+        :type result: :class:`huaweicloudsdkcodeartsbuild.v3.DeleteTheJobResponseBodyResult`
         :param status: 状态信息
         :type status: str
         """
@@ -54,7 +54,7 @@ class DeleteBuildJobResponse(SdkResponse):
         r"""Gets the result of this DeleteBuildJobResponse.
 
         :return: The result of this DeleteBuildJobResponse.
-        :rtype: :class:`huaweicloudsdkcodeartsbuild.v3.DeleteBuildJobResponseBodyResult`
+        :rtype: :class:`huaweicloudsdkcodeartsbuild.v3.DeleteTheJobResponseBodyResult`
         """
         return self._result
 
@@ -63,7 +63,7 @@ class DeleteBuildJobResponse(SdkResponse):
         r"""Sets the result of this DeleteBuildJobResponse.
 
         :param result: The result of this DeleteBuildJobResponse.
-        :type result: :class:`huaweicloudsdkcodeartsbuild.v3.DeleteBuildJobResponseBodyResult`
+        :type result: :class:`huaweicloudsdkcodeartsbuild.v3.DeleteTheJobResponseBodyResult`
         """
         self._result = result
 

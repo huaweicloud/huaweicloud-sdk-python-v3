@@ -37,7 +37,10 @@ class SqlJob:
         'message': 'str',
         'end_time': 'int',
         'cpu_cost': 'str',
-        'output_byte': 'str'
+        'output_byte': 'str',
+        'result_path': 'str',
+        'result_format': 'str',
+        'execution_details_path': 'str'
     }
 
     attribute_map = {
@@ -61,56 +64,65 @@ class SqlJob:
         'message': 'message',
         'end_time': 'end_time',
         'cpu_cost': 'cpu_cost',
-        'output_byte': 'output_byte'
+        'output_byte': 'output_byte',
+        'result_path': 'result_path',
+        'result_format': 'result_format',
+        'execution_details_path': 'execution_details_path'
     }
 
-    def __init__(self, job_id=None, job_type=None, queue_name=None, owner=None, start_time=None, duration=None, status=None, input_row_count=None, bad_row_count=None, input_size=None, result_count=None, database_name=None, table_name=None, with_column_header=None, detail=None, statement=None, tags=None, message=None, end_time=None, cpu_cost=None, output_byte=None):
+    def __init__(self, job_id=None, job_type=None, queue_name=None, owner=None, start_time=None, duration=None, status=None, input_row_count=None, bad_row_count=None, input_size=None, result_count=None, database_name=None, table_name=None, with_column_header=None, detail=None, statement=None, tags=None, message=None, end_time=None, cpu_cost=None, output_byte=None, result_path=None, result_format=None, execution_details_path=None):
         r"""SqlJob
 
         The model defined in huaweicloud sdk
 
-        :param job_id: 作业ID。
+        :param job_id: 参数解释:  作业ID 示例: 6d2146a0-c2d5-41bd-8ca0-ca9694ada992 约束限制:  无 取值范围: 无 默认取值: 无
         :type job_id: str
-        :param job_type: 作业类型。
+        :param job_type: 参数解释:  指定查询的作业类型，包含DDL、DCL、IMPORT、EXPORT、QUERY、INSERT、DATA_MIGRATION、UPDATE、DELETE、RESTART_QUEUE、SCALE_QUEUE，若要查询所有类型的作业，则传入ALL。 示例: QUERY 约束限制:  无 取值范围: DDL、DCL、IMPORT、EXPORT、QUERY、INSERT、DATA_MIGRATION、UPDATE、DELETE、RESTART_QUEUE、SCALE_QUEUE、ALL 默认取值: 无
         :type job_type: str
-        :param queue_name: 作业提交的队列。
+        :param queue_name: 作业提交的对列 示例: ci_sql 约束限制:  无 取值范围: 无 默认取值: 无
         :type queue_name: str
-        :param owner: 提交作业的用户。
+        :param owner: 提交作业的用户 示例: tenant1 约束限制:  无 取值范围: 无 默认取值: 无
         :type owner: str
-        :param start_time: 作业开始的时间。是单位为“毫秒”的时间戳。
+        :param start_time: 作业开始的时间。是单位为“毫秒”的时间戳 示例: 1502349803729 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
         :type start_time: int
-        :param duration: 作业运行时长，单位毫秒。
+        :param duration: 作业运行时长，单位毫秒 示例: 30000 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
         :type duration: int
-        :param status: 此作业的当前状态，包含提交（LAUNCHING）、运行中（RUNNING）、完成（FINISHED）、失败（FAILED）、取消（CANCELLED）。
+        :param status: 此作业的当前状态 示例: CANCELLED 约束限制:  无 取值范围: LAUNCHING（提交中） RUNNING（运行中） FINISHED（完成） FAILED（失败） CANCELLED（取消） 默认取值: 无
         :type status: str
-        :param input_row_count: Insert作业执行过程中扫描的记录条数。
+        :param input_row_count: Insert作业执行过程中扫描的记录条数 示例: 66 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
         :type input_row_count: int
-        :param bad_row_count: Insert作业执行过程中扫描到的错误记录数。
+        :param bad_row_count: Insert作业执行过程中扫描到的错误记录数 示例: 666 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
         :type bad_row_count: int
-        :param input_size: 作业执行过程中扫描文件的大小。
+        :param input_size: 作业执行过程中扫描文件的大小 示例: 5 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
         :type input_size: int
-        :param result_count: 当前作业返回的结果总条数或insert作业插入的总条数。
+        :param result_count: 当前作业返回的结果总条数或insert作业插入的总条数 示例: 55 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
         :type result_count: int
-        :param database_name: 记录其操作的表所在的数据库名称。类型为Import和Export作业才有“database_name”属性。
+        :param database_name: 记录其操作的表所在的数据库名称。类型为Import和Export作业才有“database_name”属性 示例: db2 约束限制:  无 取值范围: 无 默认取值: 无
         :type database_name: str
-        :param table_name: 记录其操作的表名称。类型为Import和Export作业才有“table_name”属性。
+        :param table_name: 记录其操作的表名称。类型为Import和Export作业才有“table_name”属性 示例: t2 约束限制:  无 取值范围: 无 默认取值: 无
         :type table_name: str
-        :param with_column_header: Import类型的作业，记录其导入的数据是否包括列名。
+        :param with_column_header: Import类型的作业，记录其导入的数据是否包括列名 示例: true 约束限制:  无 取值范围: true, false 默认取值: 无
         :type with_column_header: bool
-        :param detail: SQL查询的相关列信息的Json字符串。
+        :param detail: SQL查询的相关列信息的Json字符串 示例: {\\\&quot;type\\\&quot;:\\\&quot;struct\\\&quot;,\\\&quot;fields\\\&quot;:[{\\\&quot;name\\\&quot;:\\\&quot;name\\\&quot;,\\\&quot;type\\\&quot;:\\\&quot;string\\\&quot;,\\\&quot;nullable\\\&quot;:true,\\\&quot;metadata\\\&quot;:{}},{\\\&quot;name\\\&quot;:\\\&quot;age\\\&quot;,\\\&quot;type\\\&quot;:\\\&quot;integer\\\&quot;,\\\&quot;nullable\\\&quot;:true,\\\&quot;metadata\\\&quot;:{}}]} 约束限制:  符合Json格式的字符串 取值范围: 无 默认取值: 无
         :type detail: str
-        :param statement: 作业执行的SQL语句。
+        :param statement: 作业执行的SQL语句 示例: select * from t_json_002 约束限制:  无 取值范围: 无 默认取值: 无
         :type statement: str
         :param tags: 作业标签
         :type tags: list[:class:`huaweicloudsdkdli.v1.Tag`]
-        :param message: 系统提示信息。
+        :param message: 系统提示信息 示例: Navicat Data Modeler enables you to build high-quality conceptual, logical and physical data models for a wide variety of audiences. Navicat 15 has added support for the system-wide dark mode. Creativity is intelligence having fun. The On Startup feature allows you to control what tabs appear when you launch Navicat. In the Objects tab, you can use the List List, Detail Detail and ER Diagram ER Diagram buttons to change the object view. If your Internet Service Provider (ISP) does not provide direct access to its server, Secure Tunneling Protocol (SSH) / HTTP is another solution. A man’s best friends are his ten fingers. Export Wizard allows you to export data from tables, collections, views, or query results to any available formats. Navicat 15 has added support for the system-wide dark mode. Secure Sockets Layer(SSL) is a protocol for transmitting private documents via the Internet. A man’s best friends are his ten fingers. Navicat Monitor is a safe, simple and agentless remote server monitoring tool that is packed with powerful features to make your monitoring effective as possible. The past has no power over the present moment. Such sessions are also susceptible to session hijacking, where a malicious user takes over your session once you have authenticated. A man is not old until regrets take the place of dreams. Secure SHell (SSH) is a program to log in into another computer over a network, execute commands on a remote server, and move files from one machine to another. Secure SHell (SSH) is a program to log in into another computer over a network, execute commands on a remote server, and move files from one machine to another. Champions keep playing until they get it right. All journeys have secret destinations of which the traveler is unaware. Flexible settings enable you to set up a custom key for comparison and synchronization. Navicat authorizes you to make connection to remote servers running on different platforms (i.e. Windows, macOS, Linux and UNIX), and supports PAM and GSSAPI authentication. To successfully establish a new connection to local/remote server - no matter via SSL, SSH or HTTP, set the database login information in the General tab. It can also manage cloud databases such as Amazon Redshift, Amazon RDS, Alibaba Cloud. Features in Navicat are sophisticated enough to provide professional developers for all their specific needs, yet easy to learn for users who are new to database server. After logged in the Navicat Cloud feature, the Navigation pane will be divided into Navicat Cloud and My Connections sections. 约束限制:  无 取值范围: 无 默认取值: 无
         :type message: str
-        :param end_time: 作业结束的时间。是单位为“毫秒”的时间戳。
+        :param end_time: 作业结束的时间。是单位为“毫秒”的时间戳 示例: 1502349803729 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
         :type end_time: int
-        :param cpu_cost: 作业的CPU累计使用量
+        :param cpu_cost: 作业的CPU累计使用量 示例: 15376 约束限制:  无 取值范围: 无 默认取值: 无
         :type cpu_cost: str
-        :param output_byte: 作业的输出字节数
+        :param output_byte: 作业的输出字节数 示例: 35 约束限制:  无 取值范围: 无 默认取值: 无
         :type output_byte: str
+        :param result_path: 作业结果的存储路径。
+        :type result_path: str
+        :param result_format: 作业结果的存储格式，当前只支持csv
+        :type result_format: str
+        :param execution_details_path: 作业执行计划的存储路径。
+        :type execution_details_path: str
         """
         
         
@@ -136,6 +148,9 @@ class SqlJob:
         self._end_time = None
         self._cpu_cost = None
         self._output_byte = None
+        self._result_path = None
+        self._result_format = None
+        self._execution_details_path = None
         self.discriminator = None
 
         self.job_id = job_id
@@ -170,12 +185,18 @@ class SqlJob:
             self.cpu_cost = cpu_cost
         if output_byte is not None:
             self.output_byte = output_byte
+        if result_path is not None:
+            self.result_path = result_path
+        if result_format is not None:
+            self.result_format = result_format
+        if execution_details_path is not None:
+            self.execution_details_path = execution_details_path
 
     @property
     def job_id(self):
         r"""Gets the job_id of this SqlJob.
 
-        作业ID。
+        参数解释:  作业ID 示例: 6d2146a0-c2d5-41bd-8ca0-ca9694ada992 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The job_id of this SqlJob.
         :rtype: str
@@ -186,7 +207,7 @@ class SqlJob:
     def job_id(self, job_id):
         r"""Sets the job_id of this SqlJob.
 
-        作业ID。
+        参数解释:  作业ID 示例: 6d2146a0-c2d5-41bd-8ca0-ca9694ada992 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param job_id: The job_id of this SqlJob.
         :type job_id: str
@@ -197,7 +218,7 @@ class SqlJob:
     def job_type(self):
         r"""Gets the job_type of this SqlJob.
 
-        作业类型。
+        参数解释:  指定查询的作业类型，包含DDL、DCL、IMPORT、EXPORT、QUERY、INSERT、DATA_MIGRATION、UPDATE、DELETE、RESTART_QUEUE、SCALE_QUEUE，若要查询所有类型的作业，则传入ALL。 示例: QUERY 约束限制:  无 取值范围: DDL、DCL、IMPORT、EXPORT、QUERY、INSERT、DATA_MIGRATION、UPDATE、DELETE、RESTART_QUEUE、SCALE_QUEUE、ALL 默认取值: 无
 
         :return: The job_type of this SqlJob.
         :rtype: str
@@ -208,7 +229,7 @@ class SqlJob:
     def job_type(self, job_type):
         r"""Sets the job_type of this SqlJob.
 
-        作业类型。
+        参数解释:  指定查询的作业类型，包含DDL、DCL、IMPORT、EXPORT、QUERY、INSERT、DATA_MIGRATION、UPDATE、DELETE、RESTART_QUEUE、SCALE_QUEUE，若要查询所有类型的作业，则传入ALL。 示例: QUERY 约束限制:  无 取值范围: DDL、DCL、IMPORT、EXPORT、QUERY、INSERT、DATA_MIGRATION、UPDATE、DELETE、RESTART_QUEUE、SCALE_QUEUE、ALL 默认取值: 无
 
         :param job_type: The job_type of this SqlJob.
         :type job_type: str
@@ -219,7 +240,7 @@ class SqlJob:
     def queue_name(self):
         r"""Gets the queue_name of this SqlJob.
 
-        作业提交的队列。
+        作业提交的对列 示例: ci_sql 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The queue_name of this SqlJob.
         :rtype: str
@@ -230,7 +251,7 @@ class SqlJob:
     def queue_name(self, queue_name):
         r"""Sets the queue_name of this SqlJob.
 
-        作业提交的队列。
+        作业提交的对列 示例: ci_sql 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param queue_name: The queue_name of this SqlJob.
         :type queue_name: str
@@ -241,7 +262,7 @@ class SqlJob:
     def owner(self):
         r"""Gets the owner of this SqlJob.
 
-        提交作业的用户。
+        提交作业的用户 示例: tenant1 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The owner of this SqlJob.
         :rtype: str
@@ -252,7 +273,7 @@ class SqlJob:
     def owner(self, owner):
         r"""Sets the owner of this SqlJob.
 
-        提交作业的用户。
+        提交作业的用户 示例: tenant1 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param owner: The owner of this SqlJob.
         :type owner: str
@@ -263,7 +284,7 @@ class SqlJob:
     def start_time(self):
         r"""Gets the start_time of this SqlJob.
 
-        作业开始的时间。是单位为“毫秒”的时间戳。
+        作业开始的时间。是单位为“毫秒”的时间戳 示例: 1502349803729 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
 
         :return: The start_time of this SqlJob.
         :rtype: int
@@ -274,7 +295,7 @@ class SqlJob:
     def start_time(self, start_time):
         r"""Sets the start_time of this SqlJob.
 
-        作业开始的时间。是单位为“毫秒”的时间戳。
+        作业开始的时间。是单位为“毫秒”的时间戳 示例: 1502349803729 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
 
         :param start_time: The start_time of this SqlJob.
         :type start_time: int
@@ -285,7 +306,7 @@ class SqlJob:
     def duration(self):
         r"""Gets the duration of this SqlJob.
 
-        作业运行时长，单位毫秒。
+        作业运行时长，单位毫秒 示例: 30000 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
 
         :return: The duration of this SqlJob.
         :rtype: int
@@ -296,7 +317,7 @@ class SqlJob:
     def duration(self, duration):
         r"""Sets the duration of this SqlJob.
 
-        作业运行时长，单位毫秒。
+        作业运行时长，单位毫秒 示例: 30000 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
 
         :param duration: The duration of this SqlJob.
         :type duration: int
@@ -307,7 +328,7 @@ class SqlJob:
     def status(self):
         r"""Gets the status of this SqlJob.
 
-        此作业的当前状态，包含提交（LAUNCHING）、运行中（RUNNING）、完成（FINISHED）、失败（FAILED）、取消（CANCELLED）。
+        此作业的当前状态 示例: CANCELLED 约束限制:  无 取值范围: LAUNCHING（提交中） RUNNING（运行中） FINISHED（完成） FAILED（失败） CANCELLED（取消） 默认取值: 无
 
         :return: The status of this SqlJob.
         :rtype: str
@@ -318,7 +339,7 @@ class SqlJob:
     def status(self, status):
         r"""Sets the status of this SqlJob.
 
-        此作业的当前状态，包含提交（LAUNCHING）、运行中（RUNNING）、完成（FINISHED）、失败（FAILED）、取消（CANCELLED）。
+        此作业的当前状态 示例: CANCELLED 约束限制:  无 取值范围: LAUNCHING（提交中） RUNNING（运行中） FINISHED（完成） FAILED（失败） CANCELLED（取消） 默认取值: 无
 
         :param status: The status of this SqlJob.
         :type status: str
@@ -329,7 +350,7 @@ class SqlJob:
     def input_row_count(self):
         r"""Gets the input_row_count of this SqlJob.
 
-        Insert作业执行过程中扫描的记录条数。
+        Insert作业执行过程中扫描的记录条数 示例: 66 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
 
         :return: The input_row_count of this SqlJob.
         :rtype: int
@@ -340,7 +361,7 @@ class SqlJob:
     def input_row_count(self, input_row_count):
         r"""Sets the input_row_count of this SqlJob.
 
-        Insert作业执行过程中扫描的记录条数。
+        Insert作业执行过程中扫描的记录条数 示例: 66 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
 
         :param input_row_count: The input_row_count of this SqlJob.
         :type input_row_count: int
@@ -351,7 +372,7 @@ class SqlJob:
     def bad_row_count(self):
         r"""Gets the bad_row_count of this SqlJob.
 
-        Insert作业执行过程中扫描到的错误记录数。
+        Insert作业执行过程中扫描到的错误记录数 示例: 666 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
 
         :return: The bad_row_count of this SqlJob.
         :rtype: int
@@ -362,7 +383,7 @@ class SqlJob:
     def bad_row_count(self, bad_row_count):
         r"""Sets the bad_row_count of this SqlJob.
 
-        Insert作业执行过程中扫描到的错误记录数。
+        Insert作业执行过程中扫描到的错误记录数 示例: 666 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
 
         :param bad_row_count: The bad_row_count of this SqlJob.
         :type bad_row_count: int
@@ -373,7 +394,7 @@ class SqlJob:
     def input_size(self):
         r"""Gets the input_size of this SqlJob.
 
-        作业执行过程中扫描文件的大小。
+        作业执行过程中扫描文件的大小 示例: 5 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
 
         :return: The input_size of this SqlJob.
         :rtype: int
@@ -384,7 +405,7 @@ class SqlJob:
     def input_size(self, input_size):
         r"""Sets the input_size of this SqlJob.
 
-        作业执行过程中扫描文件的大小。
+        作业执行过程中扫描文件的大小 示例: 5 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
 
         :param input_size: The input_size of this SqlJob.
         :type input_size: int
@@ -395,7 +416,7 @@ class SqlJob:
     def result_count(self):
         r"""Gets the result_count of this SqlJob.
 
-        当前作业返回的结果总条数或insert作业插入的总条数。
+        当前作业返回的结果总条数或insert作业插入的总条数 示例: 55 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
 
         :return: The result_count of this SqlJob.
         :rtype: int
@@ -406,7 +427,7 @@ class SqlJob:
     def result_count(self, result_count):
         r"""Sets the result_count of this SqlJob.
 
-        当前作业返回的结果总条数或insert作业插入的总条数。
+        当前作业返回的结果总条数或insert作业插入的总条数 示例: 55 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
 
         :param result_count: The result_count of this SqlJob.
         :type result_count: int
@@ -417,7 +438,7 @@ class SqlJob:
     def database_name(self):
         r"""Gets the database_name of this SqlJob.
 
-        记录其操作的表所在的数据库名称。类型为Import和Export作业才有“database_name”属性。
+        记录其操作的表所在的数据库名称。类型为Import和Export作业才有“database_name”属性 示例: db2 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The database_name of this SqlJob.
         :rtype: str
@@ -428,7 +449,7 @@ class SqlJob:
     def database_name(self, database_name):
         r"""Sets the database_name of this SqlJob.
 
-        记录其操作的表所在的数据库名称。类型为Import和Export作业才有“database_name”属性。
+        记录其操作的表所在的数据库名称。类型为Import和Export作业才有“database_name”属性 示例: db2 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param database_name: The database_name of this SqlJob.
         :type database_name: str
@@ -439,7 +460,7 @@ class SqlJob:
     def table_name(self):
         r"""Gets the table_name of this SqlJob.
 
-        记录其操作的表名称。类型为Import和Export作业才有“table_name”属性。
+        记录其操作的表名称。类型为Import和Export作业才有“table_name”属性 示例: t2 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The table_name of this SqlJob.
         :rtype: str
@@ -450,7 +471,7 @@ class SqlJob:
     def table_name(self, table_name):
         r"""Sets the table_name of this SqlJob.
 
-        记录其操作的表名称。类型为Import和Export作业才有“table_name”属性。
+        记录其操作的表名称。类型为Import和Export作业才有“table_name”属性 示例: t2 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param table_name: The table_name of this SqlJob.
         :type table_name: str
@@ -461,7 +482,7 @@ class SqlJob:
     def with_column_header(self):
         r"""Gets the with_column_header of this SqlJob.
 
-        Import类型的作业，记录其导入的数据是否包括列名。
+        Import类型的作业，记录其导入的数据是否包括列名 示例: true 约束限制:  无 取值范围: true, false 默认取值: 无
 
         :return: The with_column_header of this SqlJob.
         :rtype: bool
@@ -472,7 +493,7 @@ class SqlJob:
     def with_column_header(self, with_column_header):
         r"""Sets the with_column_header of this SqlJob.
 
-        Import类型的作业，记录其导入的数据是否包括列名。
+        Import类型的作业，记录其导入的数据是否包括列名 示例: true 约束限制:  无 取值范围: true, false 默认取值: 无
 
         :param with_column_header: The with_column_header of this SqlJob.
         :type with_column_header: bool
@@ -483,7 +504,7 @@ class SqlJob:
     def detail(self):
         r"""Gets the detail of this SqlJob.
 
-        SQL查询的相关列信息的Json字符串。
+        SQL查询的相关列信息的Json字符串 示例: {\\\"type\\\":\\\"struct\\\",\\\"fields\\\":[{\\\"name\\\":\\\"name\\\",\\\"type\\\":\\\"string\\\",\\\"nullable\\\":true,\\\"metadata\\\":{}},{\\\"name\\\":\\\"age\\\",\\\"type\\\":\\\"integer\\\",\\\"nullable\\\":true,\\\"metadata\\\":{}}]} 约束限制:  符合Json格式的字符串 取值范围: 无 默认取值: 无
 
         :return: The detail of this SqlJob.
         :rtype: str
@@ -494,7 +515,7 @@ class SqlJob:
     def detail(self, detail):
         r"""Sets the detail of this SqlJob.
 
-        SQL查询的相关列信息的Json字符串。
+        SQL查询的相关列信息的Json字符串 示例: {\\\"type\\\":\\\"struct\\\",\\\"fields\\\":[{\\\"name\\\":\\\"name\\\",\\\"type\\\":\\\"string\\\",\\\"nullable\\\":true,\\\"metadata\\\":{}},{\\\"name\\\":\\\"age\\\",\\\"type\\\":\\\"integer\\\",\\\"nullable\\\":true,\\\"metadata\\\":{}}]} 约束限制:  符合Json格式的字符串 取值范围: 无 默认取值: 无
 
         :param detail: The detail of this SqlJob.
         :type detail: str
@@ -505,7 +526,7 @@ class SqlJob:
     def statement(self):
         r"""Gets the statement of this SqlJob.
 
-        作业执行的SQL语句。
+        作业执行的SQL语句 示例: select * from t_json_002 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The statement of this SqlJob.
         :rtype: str
@@ -516,7 +537,7 @@ class SqlJob:
     def statement(self, statement):
         r"""Sets the statement of this SqlJob.
 
-        作业执行的SQL语句。
+        作业执行的SQL语句 示例: select * from t_json_002 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param statement: The statement of this SqlJob.
         :type statement: str
@@ -549,7 +570,7 @@ class SqlJob:
     def message(self):
         r"""Gets the message of this SqlJob.
 
-        系统提示信息。
+        系统提示信息 示例: Navicat Data Modeler enables you to build high-quality conceptual, logical and physical data models for a wide variety of audiences. Navicat 15 has added support for the system-wide dark mode. Creativity is intelligence having fun. The On Startup feature allows you to control what tabs appear when you launch Navicat. In the Objects tab, you can use the List List, Detail Detail and ER Diagram ER Diagram buttons to change the object view. If your Internet Service Provider (ISP) does not provide direct access to its server, Secure Tunneling Protocol (SSH) / HTTP is another solution. A man’s best friends are his ten fingers. Export Wizard allows you to export data from tables, collections, views, or query results to any available formats. Navicat 15 has added support for the system-wide dark mode. Secure Sockets Layer(SSL) is a protocol for transmitting private documents via the Internet. A man’s best friends are his ten fingers. Navicat Monitor is a safe, simple and agentless remote server monitoring tool that is packed with powerful features to make your monitoring effective as possible. The past has no power over the present moment. Such sessions are also susceptible to session hijacking, where a malicious user takes over your session once you have authenticated. A man is not old until regrets take the place of dreams. Secure SHell (SSH) is a program to log in into another computer over a network, execute commands on a remote server, and move files from one machine to another. Secure SHell (SSH) is a program to log in into another computer over a network, execute commands on a remote server, and move files from one machine to another. Champions keep playing until they get it right. All journeys have secret destinations of which the traveler is unaware. Flexible settings enable you to set up a custom key for comparison and synchronization. Navicat authorizes you to make connection to remote servers running on different platforms (i.e. Windows, macOS, Linux and UNIX), and supports PAM and GSSAPI authentication. To successfully establish a new connection to local/remote server - no matter via SSL, SSH or HTTP, set the database login information in the General tab. It can also manage cloud databases such as Amazon Redshift, Amazon RDS, Alibaba Cloud. Features in Navicat are sophisticated enough to provide professional developers for all their specific needs, yet easy to learn for users who are new to database server. After logged in the Navicat Cloud feature, the Navigation pane will be divided into Navicat Cloud and My Connections sections. 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The message of this SqlJob.
         :rtype: str
@@ -560,7 +581,7 @@ class SqlJob:
     def message(self, message):
         r"""Sets the message of this SqlJob.
 
-        系统提示信息。
+        系统提示信息 示例: Navicat Data Modeler enables you to build high-quality conceptual, logical and physical data models for a wide variety of audiences. Navicat 15 has added support for the system-wide dark mode. Creativity is intelligence having fun. The On Startup feature allows you to control what tabs appear when you launch Navicat. In the Objects tab, you can use the List List, Detail Detail and ER Diagram ER Diagram buttons to change the object view. If your Internet Service Provider (ISP) does not provide direct access to its server, Secure Tunneling Protocol (SSH) / HTTP is another solution. A man’s best friends are his ten fingers. Export Wizard allows you to export data from tables, collections, views, or query results to any available formats. Navicat 15 has added support for the system-wide dark mode. Secure Sockets Layer(SSL) is a protocol for transmitting private documents via the Internet. A man’s best friends are his ten fingers. Navicat Monitor is a safe, simple and agentless remote server monitoring tool that is packed with powerful features to make your monitoring effective as possible. The past has no power over the present moment. Such sessions are also susceptible to session hijacking, where a malicious user takes over your session once you have authenticated. A man is not old until regrets take the place of dreams. Secure SHell (SSH) is a program to log in into another computer over a network, execute commands on a remote server, and move files from one machine to another. Secure SHell (SSH) is a program to log in into another computer over a network, execute commands on a remote server, and move files from one machine to another. Champions keep playing until they get it right. All journeys have secret destinations of which the traveler is unaware. Flexible settings enable you to set up a custom key for comparison and synchronization. Navicat authorizes you to make connection to remote servers running on different platforms (i.e. Windows, macOS, Linux and UNIX), and supports PAM and GSSAPI authentication. To successfully establish a new connection to local/remote server - no matter via SSL, SSH or HTTP, set the database login information in the General tab. It can also manage cloud databases such as Amazon Redshift, Amazon RDS, Alibaba Cloud. Features in Navicat are sophisticated enough to provide professional developers for all their specific needs, yet easy to learn for users who are new to database server. After logged in the Navicat Cloud feature, the Navigation pane will be divided into Navicat Cloud and My Connections sections. 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param message: The message of this SqlJob.
         :type message: str
@@ -571,7 +592,7 @@ class SqlJob:
     def end_time(self):
         r"""Gets the end_time of this SqlJob.
 
-        作业结束的时间。是单位为“毫秒”的时间戳。
+        作业结束的时间。是单位为“毫秒”的时间戳 示例: 1502349803729 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
 
         :return: The end_time of this SqlJob.
         :rtype: int
@@ -582,7 +603,7 @@ class SqlJob:
     def end_time(self, end_time):
         r"""Sets the end_time of this SqlJob.
 
-        作业结束的时间。是单位为“毫秒”的时间戳。
+        作业结束的时间。是单位为“毫秒”的时间戳 示例: 1502349803729 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
 
         :param end_time: The end_time of this SqlJob.
         :type end_time: int
@@ -593,7 +614,7 @@ class SqlJob:
     def cpu_cost(self):
         r"""Gets the cpu_cost of this SqlJob.
 
-        作业的CPU累计使用量
+        作业的CPU累计使用量 示例: 15376 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The cpu_cost of this SqlJob.
         :rtype: str
@@ -604,7 +625,7 @@ class SqlJob:
     def cpu_cost(self, cpu_cost):
         r"""Sets the cpu_cost of this SqlJob.
 
-        作业的CPU累计使用量
+        作业的CPU累计使用量 示例: 15376 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param cpu_cost: The cpu_cost of this SqlJob.
         :type cpu_cost: str
@@ -615,7 +636,7 @@ class SqlJob:
     def output_byte(self):
         r"""Gets the output_byte of this SqlJob.
 
-        作业的输出字节数
+        作业的输出字节数 示例: 35 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The output_byte of this SqlJob.
         :rtype: str
@@ -626,12 +647,78 @@ class SqlJob:
     def output_byte(self, output_byte):
         r"""Sets the output_byte of this SqlJob.
 
-        作业的输出字节数
+        作业的输出字节数 示例: 35 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param output_byte: The output_byte of this SqlJob.
         :type output_byte: str
         """
         self._output_byte = output_byte
+
+    @property
+    def result_path(self):
+        r"""Gets the result_path of this SqlJob.
+
+        作业结果的存储路径。
+
+        :return: The result_path of this SqlJob.
+        :rtype: str
+        """
+        return self._result_path
+
+    @result_path.setter
+    def result_path(self, result_path):
+        r"""Sets the result_path of this SqlJob.
+
+        作业结果的存储路径。
+
+        :param result_path: The result_path of this SqlJob.
+        :type result_path: str
+        """
+        self._result_path = result_path
+
+    @property
+    def result_format(self):
+        r"""Gets the result_format of this SqlJob.
+
+        作业结果的存储格式，当前只支持csv
+
+        :return: The result_format of this SqlJob.
+        :rtype: str
+        """
+        return self._result_format
+
+    @result_format.setter
+    def result_format(self, result_format):
+        r"""Sets the result_format of this SqlJob.
+
+        作业结果的存储格式，当前只支持csv
+
+        :param result_format: The result_format of this SqlJob.
+        :type result_format: str
+        """
+        self._result_format = result_format
+
+    @property
+    def execution_details_path(self):
+        r"""Gets the execution_details_path of this SqlJob.
+
+        作业执行计划的存储路径。
+
+        :return: The execution_details_path of this SqlJob.
+        :rtype: str
+        """
+        return self._execution_details_path
+
+    @execution_details_path.setter
+    def execution_details_path(self, execution_details_path):
+        r"""Sets the execution_details_path of this SqlJob.
+
+        作业执行计划的存储路径。
+
+        :param execution_details_path: The execution_details_path of this SqlJob.
+        :type execution_details_path: str
+        """
+        self._execution_details_path = execution_details_path
 
     def to_dict(self):
         """Returns the model properties as a dict"""

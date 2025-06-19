@@ -43,7 +43,10 @@ class UpdateFlinkSqlJobRequestBody:
         'runtime_config': 'str',
         'operator_config': 'str',
         'static_estimator_config': 'str',
-        'flink_version': 'str'
+        'flink_version': 'str',
+        'execution_agency_urn': 'str',
+        'resource_config_version': 'str',
+        'resource_config': 'ResourceConfig'
     }
 
     attribute_map = {
@@ -73,10 +76,13 @@ class UpdateFlinkSqlJobRequestBody:
         'runtime_config': 'runtime_config',
         'operator_config': 'operator_config',
         'static_estimator_config': 'static_estimator_config',
-        'flink_version': 'flink_version'
+        'flink_version': 'flink_version',
+        'execution_agency_urn': 'execution_agency_urn',
+        'resource_config_version': 'resource_config_version',
+        'resource_config': 'resource_config'
     }
 
-    def __init__(self, name=None, desc=None, queue_name=None, sql_body=None, run_mode=None, cu_number=None, parallel_number=None, checkpoint_enabled=None, checkpoint_mode=None, checkpoint_interval=None, obs_bucket=None, log_enabled=None, smn_topic=None, restart_when_exception=None, idle_state_retention=None, edge_group_ids=None, dirty_data_strategy=None, udf_jar_url=None, manager_cu_number=None, tm_cus=None, tm_slot_num=None, resume_checkpoint=None, resume_max_num=None, runtime_config=None, operator_config=None, static_estimator_config=None, flink_version=None):
+    def __init__(self, name=None, desc=None, queue_name=None, sql_body=None, run_mode=None, cu_number=None, parallel_number=None, checkpoint_enabled=None, checkpoint_mode=None, checkpoint_interval=None, obs_bucket=None, log_enabled=None, smn_topic=None, restart_when_exception=None, idle_state_retention=None, edge_group_ids=None, dirty_data_strategy=None, udf_jar_url=None, manager_cu_number=None, tm_cus=None, tm_slot_num=None, resume_checkpoint=None, resume_max_num=None, runtime_config=None, operator_config=None, static_estimator_config=None, flink_version=None, execution_agency_urn=None, resource_config_version=None, resource_config=None):
         r"""UpdateFlinkSqlJobRequestBody
 
         The model defined in huaweicloud sdk
@@ -135,6 +141,12 @@ class UpdateFlinkSqlJobRequestBody:
         :type static_estimator_config: str
         :param flink_version: Flink版本。当前只支持1.10和1.12。
         :type flink_version: str
+        :param execution_agency_urn: 授权给DLI的委托名。Flink1.15版本时支持配置该参数。
+        :type execution_agency_urn: str
+        :param resource_config_version: 资源配置版本。可选值 \&quot;v1\&quot; ,\&quot;v2\&quot;.默认为“v1”。v2版本对比于v1模版不支持设置CU数量，支持直接设置Job Manager Memory和Task Manager Memory。v1：适用于Flink 1.12、Flink 1.13、Flink 1.15。v2：适用于Flink 1.13、Flink 1.15、Flink 1.17。优先推荐使用V2版本的参数设置。
+        :type resource_config_version: str
+        :param resource_config: 
+        :type resource_config: :class:`huaweicloudsdkdli.v1.ResourceConfig`
         """
         
         
@@ -166,6 +178,9 @@ class UpdateFlinkSqlJobRequestBody:
         self._operator_config = None
         self._static_estimator_config = None
         self._flink_version = None
+        self._execution_agency_urn = None
+        self._resource_config_version = None
+        self._resource_config = None
         self.discriminator = None
 
         if name is not None:
@@ -222,6 +237,12 @@ class UpdateFlinkSqlJobRequestBody:
             self.static_estimator_config = static_estimator_config
         if flink_version is not None:
             self.flink_version = flink_version
+        if execution_agency_urn is not None:
+            self.execution_agency_urn = execution_agency_urn
+        if resource_config_version is not None:
+            self.resource_config_version = resource_config_version
+        if resource_config is not None:
+            self.resource_config = resource_config
 
     @property
     def name(self):
@@ -816,6 +837,68 @@ class UpdateFlinkSqlJobRequestBody:
         :type flink_version: str
         """
         self._flink_version = flink_version
+
+    @property
+    def execution_agency_urn(self):
+        r"""Gets the execution_agency_urn of this UpdateFlinkSqlJobRequestBody.
+
+        授权给DLI的委托名。Flink1.15版本时支持配置该参数。
+
+        :return: The execution_agency_urn of this UpdateFlinkSqlJobRequestBody.
+        :rtype: str
+        """
+        return self._execution_agency_urn
+
+    @execution_agency_urn.setter
+    def execution_agency_urn(self, execution_agency_urn):
+        r"""Sets the execution_agency_urn of this UpdateFlinkSqlJobRequestBody.
+
+        授权给DLI的委托名。Flink1.15版本时支持配置该参数。
+
+        :param execution_agency_urn: The execution_agency_urn of this UpdateFlinkSqlJobRequestBody.
+        :type execution_agency_urn: str
+        """
+        self._execution_agency_urn = execution_agency_urn
+
+    @property
+    def resource_config_version(self):
+        r"""Gets the resource_config_version of this UpdateFlinkSqlJobRequestBody.
+
+        资源配置版本。可选值 \"v1\" ,\"v2\".默认为“v1”。v2版本对比于v1模版不支持设置CU数量，支持直接设置Job Manager Memory和Task Manager Memory。v1：适用于Flink 1.12、Flink 1.13、Flink 1.15。v2：适用于Flink 1.13、Flink 1.15、Flink 1.17。优先推荐使用V2版本的参数设置。
+
+        :return: The resource_config_version of this UpdateFlinkSqlJobRequestBody.
+        :rtype: str
+        """
+        return self._resource_config_version
+
+    @resource_config_version.setter
+    def resource_config_version(self, resource_config_version):
+        r"""Sets the resource_config_version of this UpdateFlinkSqlJobRequestBody.
+
+        资源配置版本。可选值 \"v1\" ,\"v2\".默认为“v1”。v2版本对比于v1模版不支持设置CU数量，支持直接设置Job Manager Memory和Task Manager Memory。v1：适用于Flink 1.12、Flink 1.13、Flink 1.15。v2：适用于Flink 1.13、Flink 1.15、Flink 1.17。优先推荐使用V2版本的参数设置。
+
+        :param resource_config_version: The resource_config_version of this UpdateFlinkSqlJobRequestBody.
+        :type resource_config_version: str
+        """
+        self._resource_config_version = resource_config_version
+
+    @property
+    def resource_config(self):
+        r"""Gets the resource_config of this UpdateFlinkSqlJobRequestBody.
+
+        :return: The resource_config of this UpdateFlinkSqlJobRequestBody.
+        :rtype: :class:`huaweicloudsdkdli.v1.ResourceConfig`
+        """
+        return self._resource_config
+
+    @resource_config.setter
+    def resource_config(self, resource_config):
+        r"""Sets the resource_config of this UpdateFlinkSqlJobRequestBody.
+
+        :param resource_config: The resource_config of this UpdateFlinkSqlJobRequestBody.
+        :type resource_config: :class:`huaweicloudsdkdli.v1.ResourceConfig`
+        """
+        self._resource_config = resource_config
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -41,7 +41,9 @@ class CreateFlinkJarJobRequestBody:
         'resume_max_num': 'int',
         'checkpoint_path': 'str',
         'runtime_config': 'str',
-        'tags': 'list[Tag]'
+        'tags': 'list[Tag]',
+        'resource_config': 'ResourceConfig',
+        'resource_config_version': 'str'
     }
 
     attribute_map = {
@@ -69,10 +71,12 @@ class CreateFlinkJarJobRequestBody:
         'resume_max_num': 'resume_max_num',
         'checkpoint_path': 'checkpoint_path',
         'runtime_config': 'runtime_config',
-        'tags': 'tags'
+        'tags': 'tags',
+        'resource_config': 'resource_config',
+        'resource_config_version': 'resource_config_version'
     }
 
-    def __init__(self, name=None, desc=None, queue_name=None, cu_number=None, manager_cu_number=None, parallel_number=None, log_enabled=None, obs_bucket=None, smn_topic=None, main_class=None, entrypoint_args=None, restart_when_exception=None, entrypoint=None, dependency_jars=None, dependency_files=None, flink_version=None, image=None, tm_slot_num=None, tm_cus=None, feature=None, resume_checkpoint=None, resume_max_num=None, checkpoint_path=None, runtime_config=None, tags=None):
+    def __init__(self, name=None, desc=None, queue_name=None, cu_number=None, manager_cu_number=None, parallel_number=None, log_enabled=None, obs_bucket=None, smn_topic=None, main_class=None, entrypoint_args=None, restart_when_exception=None, entrypoint=None, dependency_jars=None, dependency_files=None, flink_version=None, image=None, tm_slot_num=None, tm_cus=None, feature=None, resume_checkpoint=None, resume_max_num=None, checkpoint_path=None, runtime_config=None, tags=None, resource_config=None, resource_config_version=None):
         r"""CreateFlinkJarJobRequestBody
 
         The model defined in huaweicloud sdk
@@ -127,6 +131,10 @@ class CreateFlinkJarJobRequestBody:
         :type runtime_config: str
         :param tags: 标签
         :type tags: list[:class:`huaweicloudsdkdli.v1.Tag`]
+        :param resource_config: 
+        :type resource_config: :class:`huaweicloudsdkdli.v1.ResourceConfig`
+        :param resource_config_version: 资源配置版本。可选值 \&quot;v1\&quot; ,\&quot;v2\&quot;.默认为“v1”。
+        :type resource_config_version: str
         """
         
         
@@ -156,6 +164,8 @@ class CreateFlinkJarJobRequestBody:
         self._checkpoint_path = None
         self._runtime_config = None
         self._tags = None
+        self._resource_config = None
+        self._resource_config_version = None
         self.discriminator = None
 
         self.name = name
@@ -207,6 +217,10 @@ class CreateFlinkJarJobRequestBody:
             self.runtime_config = runtime_config
         if tags is not None:
             self.tags = tags
+        if resource_config is not None:
+            self.resource_config = resource_config
+        if resource_config_version is not None:
+            self.resource_config_version = resource_config_version
 
     @property
     def name(self):
@@ -757,6 +771,46 @@ class CreateFlinkJarJobRequestBody:
         :type tags: list[:class:`huaweicloudsdkdli.v1.Tag`]
         """
         self._tags = tags
+
+    @property
+    def resource_config(self):
+        r"""Gets the resource_config of this CreateFlinkJarJobRequestBody.
+
+        :return: The resource_config of this CreateFlinkJarJobRequestBody.
+        :rtype: :class:`huaweicloudsdkdli.v1.ResourceConfig`
+        """
+        return self._resource_config
+
+    @resource_config.setter
+    def resource_config(self, resource_config):
+        r"""Sets the resource_config of this CreateFlinkJarJobRequestBody.
+
+        :param resource_config: The resource_config of this CreateFlinkJarJobRequestBody.
+        :type resource_config: :class:`huaweicloudsdkdli.v1.ResourceConfig`
+        """
+        self._resource_config = resource_config
+
+    @property
+    def resource_config_version(self):
+        r"""Gets the resource_config_version of this CreateFlinkJarJobRequestBody.
+
+        资源配置版本。可选值 \"v1\" ,\"v2\".默认为“v1”。
+
+        :return: The resource_config_version of this CreateFlinkJarJobRequestBody.
+        :rtype: str
+        """
+        return self._resource_config_version
+
+    @resource_config_version.setter
+    def resource_config_version(self, resource_config_version):
+        r"""Sets the resource_config_version of this CreateFlinkJarJobRequestBody.
+
+        资源配置版本。可选值 \"v1\" ,\"v2\".默认为“v1”。
+
+        :param resource_config_version: The resource_config_version of this CreateFlinkJarJobRequestBody.
+        :type resource_config_version: str
+        """
+        self._resource_config_version = resource_config_version
 
     def to_dict(self):
         """Returns the model properties as a dict"""

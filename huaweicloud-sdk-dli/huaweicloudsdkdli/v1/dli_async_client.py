@@ -699,6 +699,71 @@ class DliAsyncClient(Client):
 
         return http_info
 
+    def create_period_elastic_resource_pool_spec_change_order_async(self, request):
+        r"""包周期弹性资源池规格变更下单接口
+
+        包周期弹性资源池规格变更下单接口
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreatePeriodElasticResourcePoolSpecChangeOrder
+        :type request: :class:`huaweicloudsdkdli.v1.CreatePeriodElasticResourcePoolSpecChangeOrderRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.CreatePeriodElasticResourcePoolSpecChangeOrderResponse`
+        """
+        http_info = self._create_period_elastic_resource_pool_spec_change_order_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_period_elastic_resource_pool_spec_change_order_async_invoker(self, request):
+        http_info = self._create_period_elastic_resource_pool_spec_change_order_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_period_elastic_resource_pool_spec_change_order_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/orders/elastic-resource-pools/specification-change",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePeriodElasticResourcePoolSpecChangeOrderResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_queue_async(self, request):
         r"""创建队列
 
@@ -2235,6 +2300,10 @@ class DliAsyncClient(Client):
             path_params['resource_type'] = local_var_params['resource_type']
 
         query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
 
         header_params = {}
 
@@ -4927,6 +4996,71 @@ class DliAsyncClient(Client):
 
         return http_info
 
+    def create_sql_job_defend_rule_async(self, request):
+        r"""创建SQL拦截规则
+
+        该API用于创建SQL拦截规则，拦截匹配规则的SQL。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateSqlJobDefendRule
+        :type request: :class:`huaweicloudsdkdli.v1.CreateSqlJobDefendRuleRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.CreateSqlJobDefendRuleResponse`
+        """
+        http_info = self._create_sql_job_defend_rule_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_sql_job_defend_rule_async_invoker(self, request):
+        http_info = self._create_sql_job_defend_rule_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_sql_job_defend_rule_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/sql-defend-rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSqlJobDefendRuleResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_sql_job_template_async(self, request):
         r"""存储指定SQL语句
 
@@ -4971,6 +5105,71 @@ class DliAsyncClient(Client):
         body = None
         if 'body' in local_var_params:
             body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_sql_job_defend_rule_async(self, request):
+        r"""删除SQL拦截规则
+
+        该API用于删除SQL拦截规则。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteSqlJobDefendRule
+        :type request: :class:`huaweicloudsdkdli.v1.DeleteSqlJobDefendRuleRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.DeleteSqlJobDefendRuleResponse`
+        """
+        http_info = self._delete_sql_job_defend_rule_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_sql_job_defend_rule_async_invoker(self, request):
+        http_info = self._delete_sql_job_defend_rule_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_sql_job_defend_rule_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/sql-defend-rules/{rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteSqlJobDefendRuleResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'rule_id' in local_var_params:
+            path_params['rule_id'] = local_var_params['rule_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -5038,6 +5237,140 @@ class DliAsyncClient(Client):
         body = None
         if 'body' in local_var_params:
             body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_sql_job_defend_rules_async(self, request):
+        r"""批量获取SQL拦截规则
+
+        该API用于批量获取SQL拦截规则。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListSqlJobDefendRules
+        :type request: :class:`huaweicloudsdkdli.v1.ListSqlJobDefendRulesRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.ListSqlJobDefendRulesResponse`
+        """
+        http_info = self._list_sql_job_defend_rules_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_sql_job_defend_rules_async_invoker(self, request):
+        http_info = self._list_sql_job_defend_rules_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_sql_job_defend_rules_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/sql-defend-rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSqlJobDefendRulesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'queue_name' in local_var_params:
+            query_params.append(('queue_name', local_var_params['queue_name']))
+        if 'rule_name' in local_var_params:
+            query_params.append(('rule_name', local_var_params['rule_name']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_sql_job_system_defend_rules_async(self, request):
+        r"""批量获取系统预制SQL拦截规则
+
+        该API用于获取系统预制SQL拦截规则。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListSqlJobSystemDefendRules
+        :type request: :class:`huaweicloudsdkdli.v1.ListSqlJobSystemDefendRulesRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.ListSqlJobSystemDefendRulesResponse`
+        """
+        http_info = self._list_sql_job_system_defend_rules_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_sql_job_system_defend_rules_async_invoker(self, request):
+        http_info = self._list_sql_job_system_defend_rules_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_sql_job_system_defend_rules_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/sql-defend-sys-rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSqlJobSystemDefendRulesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -5190,6 +5523,9 @@ class DliAsyncClient(Client):
             query_params.append(('table_name', local_var_params['table_name']))
         if 'tags' in local_var_params:
             query_params.append(('tags', local_var_params['tags']))
+        if 'job_types' in local_var_params:
+            query_params.append(('job_types', local_var_params['job_types']))
+            collection_formats['job_types'] = 'csv'
 
         header_params = {}
 
@@ -5258,6 +5594,71 @@ class DliAsyncClient(Client):
         query_params = []
         if 'queue_name' in local_var_params:
             query_params.append(('queue-name', local_var_params['queue_name']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_sql_job_defend_rule_async(self, request):
+        r"""获取SQL拦截规则
+
+        该API用于获取单个SQL拦截规则。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowSqlJobDefendRule
+        :type request: :class:`huaweicloudsdkdli.v1.ShowSqlJobDefendRuleRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.ShowSqlJobDefendRuleResponse`
+        """
+        http_info = self._show_sql_job_defend_rule_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_sql_job_defend_rule_async_invoker(self, request):
+        http_info = self._show_sql_job_defend_rule_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_sql_job_defend_rule_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/sql-defend-rules/{rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSqlJobDefendRuleResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'rule_id' in local_var_params:
+            path_params['rule_id'] = local_var_params['rule_id']
+
+        query_params = []
 
         header_params = {}
 
@@ -5459,6 +5860,138 @@ class DliAsyncClient(Client):
         form_params = {}
 
         body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_sql_job_system_defend_rule_async(self, request):
+        r"""获取单个系统预制SQL拦截规则
+
+        该API用于获取系统预制SQL拦截规则。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowSqlJobSystemDefendRule
+        :type request: :class:`huaweicloudsdkdli.v1.ShowSqlJobSystemDefendRuleRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.ShowSqlJobSystemDefendRuleResponse`
+        """
+        http_info = self._show_sql_job_system_defend_rule_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_sql_job_system_defend_rule_async_invoker(self, request):
+        http_info = self._show_sql_job_system_defend_rule_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_sql_job_system_defend_rule_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/sql-defend-sys-rules/{rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSqlJobSystemDefendRuleResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'rule_id' in local_var_params:
+            path_params['rule_id'] = local_var_params['rule_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_sql_job_defend_rule_async(self, request):
+        r"""更新SQL拦截规则
+
+        该API用于更新SQL拦截规则，拦截匹配规则的SQL。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateSqlJobDefendRule
+        :type request: :class:`huaweicloudsdkdli.v1.UpdateSqlJobDefendRuleRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.UpdateSqlJobDefendRuleResponse`
+        """
+        http_info = self._update_sql_job_defend_rule_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_sql_job_defend_rule_async_invoker(self, request):
+        http_info = self._update_sql_job_defend_rule_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_sql_job_defend_rule_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/sql-defend-rules/{rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateSqlJobDefendRuleResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'rule_id' in local_var_params:
+            path_params['rule_id'] = local_var_params['rule_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 

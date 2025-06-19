@@ -29,7 +29,7 @@ class ShowSqlJobStatusRequest:
 
         The model defined in huaweicloud sdk
 
-        :param job_id: 作业ID。
+        :param job_id: 参数解释:  作业ID 示例: 6d2146a0-c2d5-41bd-8ca0-ca9694ada992 约束限制:  无 取值范围: 无 默认取值: 无
         :type job_id: str
         """
         
@@ -44,7 +44,7 @@ class ShowSqlJobStatusRequest:
     def job_id(self):
         r"""Gets the job_id of this ShowSqlJobStatusRequest.
 
-        作业ID。
+        参数解释:  作业ID 示例: 6d2146a0-c2d5-41bd-8ca0-ca9694ada992 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The job_id of this ShowSqlJobStatusRequest.
         :rtype: str
@@ -55,7 +55,7 @@ class ShowSqlJobStatusRequest:
     def job_id(self, job_id):
         r"""Sets the job_id of this ShowSqlJobStatusRequest.
 
-        作业ID。
+        参数解释:  作业ID 示例: 6d2146a0-c2d5-41bd-8ca0-ca9694ada992 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param job_id: The job_id of this ShowSqlJobStatusRequest.
         :type job_id: str

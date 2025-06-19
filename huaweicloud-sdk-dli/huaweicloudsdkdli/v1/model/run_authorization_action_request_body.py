@@ -18,6 +18,7 @@ class RunAuthorizationActionRequestBody:
 
     openapi_types = {
         'user_name': 'str',
+        'project_id': 'str',
         'grant_project_id': 'str',
         'action': 'str',
         'privileges': 'list[Privilege]'
@@ -25,18 +26,21 @@ class RunAuthorizationActionRequestBody:
 
     attribute_map = {
         'user_name': 'user_name',
+        'project_id': 'projectId',
         'grant_project_id': 'grant_project_id',
         'action': 'action',
         'privileges': 'privileges'
     }
 
-    def __init__(self, user_name=None, grant_project_id=None, action=None, privileges=None):
+    def __init__(self, user_name=None, project_id=None, grant_project_id=None, action=None, privileges=None):
         r"""RunAuthorizationActionRequestBody
 
         The model defined in huaweicloud sdk
 
         :param user_name: 被赋权的用户名称，该用户将有权访问指定的DLI资源权限，被收回或者更新访问权限。
         :type user_name: str
+        :param project_id: 被赋权的项目ID，数据赋权给其他项目后，该项目的管理员将有权访问指定的数据库或数据表。
+        :type project_id: str
         :param grant_project_id: 被赋权的项目ID，数据赋权给其他项目后，该项目的管理员将 有权访问指定的DLI资源权限，被收回或者更新访问权限。
         :type grant_project_id: str
         :param action: 指定赋权或回收。值为：grant，revoke或update。  说明：当用户同时拥有grant和revoke权限的时候才有权限使用update操作。
@@ -48,6 +52,7 @@ class RunAuthorizationActionRequestBody:
         
 
         self._user_name = None
+        self._project_id = None
         self._grant_project_id = None
         self._action = None
         self._privileges = None
@@ -55,6 +60,8 @@ class RunAuthorizationActionRequestBody:
 
         if user_name is not None:
             self.user_name = user_name
+        if project_id is not None:
+            self.project_id = project_id
         if grant_project_id is not None:
             self.grant_project_id = grant_project_id
         self.action = action
@@ -81,6 +88,28 @@ class RunAuthorizationActionRequestBody:
         :type user_name: str
         """
         self._user_name = user_name
+
+    @property
+    def project_id(self):
+        r"""Gets the project_id of this RunAuthorizationActionRequestBody.
+
+        被赋权的项目ID，数据赋权给其他项目后，该项目的管理员将有权访问指定的数据库或数据表。
+
+        :return: The project_id of this RunAuthorizationActionRequestBody.
+        :rtype: str
+        """
+        return self._project_id
+
+    @project_id.setter
+    def project_id(self, project_id):
+        r"""Sets the project_id of this RunAuthorizationActionRequestBody.
+
+        被赋权的项目ID，数据赋权给其他项目后，该项目的管理员将有权访问指定的数据库或数据表。
+
+        :param project_id: The project_id of this RunAuthorizationActionRequestBody.
+        :type project_id: str
+        """
+        self._project_id = project_id
 
     @property
     def grant_project_id(self):

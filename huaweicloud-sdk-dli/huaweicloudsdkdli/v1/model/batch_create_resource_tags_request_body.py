@@ -17,38 +17,44 @@ class BatchCreateResourceTagsRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'tags': 'list[Tag]'
+        'tags': 'list[TagWithValues]',
+        'count': 'int'
     }
 
     attribute_map = {
-        'tags': 'tags'
+        'tags': 'tags',
+        'count': 'count'
     }
 
-    def __init__(self, tags=None):
+    def __init__(self, tags=None, count=None):
         r"""BatchCreateResourceTagsRequestBody
 
         The model defined in huaweicloud sdk
 
-        :param tags: 标签列表
-        :type tags: list[:class:`huaweicloudsdkdli.v1.Tag`]
+        :param tags: 标签列表。
+        :type tags: list[:class:`huaweicloudsdkdli.v1.TagWithValues`]
+        :param count: 标签数量。
+        :type count: int
         """
         
         
 
         self._tags = None
+        self._count = None
         self.discriminator = None
 
-        if tags is not None:
-            self.tags = tags
+        self.tags = tags
+        if count is not None:
+            self.count = count
 
     @property
     def tags(self):
         r"""Gets the tags of this BatchCreateResourceTagsRequestBody.
 
-        标签列表
+        标签列表。
 
         :return: The tags of this BatchCreateResourceTagsRequestBody.
-        :rtype: list[:class:`huaweicloudsdkdli.v1.Tag`]
+        :rtype: list[:class:`huaweicloudsdkdli.v1.TagWithValues`]
         """
         return self._tags
 
@@ -56,12 +62,34 @@ class BatchCreateResourceTagsRequestBody:
     def tags(self, tags):
         r"""Sets the tags of this BatchCreateResourceTagsRequestBody.
 
-        标签列表
+        标签列表。
 
         :param tags: The tags of this BatchCreateResourceTagsRequestBody.
-        :type tags: list[:class:`huaweicloudsdkdli.v1.Tag`]
+        :type tags: list[:class:`huaweicloudsdkdli.v1.TagWithValues`]
         """
         self._tags = tags
+
+    @property
+    def count(self):
+        r"""Gets the count of this BatchCreateResourceTagsRequestBody.
+
+        标签数量。
+
+        :return: The count of this BatchCreateResourceTagsRequestBody.
+        :rtype: int
+        """
+        return self._count
+
+    @count.setter
+    def count(self, count):
+        r"""Sets the count of this BatchCreateResourceTagsRequestBody.
+
+        标签数量。
+
+        :param count: The count of this BatchCreateResourceTagsRequestBody.
+        :type count: int
+        """
+        self._count = count
 
     def to_dict(self):
         """Returns the model properties as a dict"""

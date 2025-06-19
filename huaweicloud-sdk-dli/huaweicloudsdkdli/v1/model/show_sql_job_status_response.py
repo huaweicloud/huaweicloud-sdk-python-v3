@@ -74,49 +74,49 @@ class ShowSqlJobStatusResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param job_id: 作业ID。
+        :param job_id: 参数解释:  作业ID 示例: 6d2146a0-c2d5-41bd-8ca0-ca9694ada992 约束限制:  无 取值范围: 任意字符串 默认取值: 无
         :type job_id: str
-        :param job_type: 作业类型。
+        :param job_type: 参数解释:  作业类型 示例: 指定查询的作业类型，包含DDL、DCL、IMPORT、EXPORT、QUERY、INSERT、DATA_MIGRATION、UPDATE、DELETE、RESTART_QUEUE、SCALE_QUEUE，若要查询所有类型的作业，则传入ALL。 约束限制:  无 取值范围: DDL、DCL、IMPORT、EXPORT、QUERY、INSERT、DATA_MIGRATION、UPDATE、DELETE、RESTART_QUEUE、SCALE_QUEUE、ALL 默认取值: 无
         :type job_type: str
-        :param queue_name: 作业提交的队列。
+        :param queue_name: 参数解释:  作业提交的队列 示例: dli_sql 约束限制:  无 取值范围: 无 默认取值: 无
         :type queue_name: str
-        :param owner: 提交作业的用户。
+        :param owner: 参数解释:  提交作业的用户 示例: ei_dlics_d00352431 约束限制:  无 取值范围: 无 默认取值: 无
         :type owner: str
-        :param start_time: 作业开始的时间。是单位为“毫秒”的时间戳。
+        :param start_time: 参数解释:  作业开始的时间。是单位为“毫秒”的时间戳 示例: 1502349803729 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
         :type start_time: int
-        :param duration: 作业运行时长，单位毫秒。
+        :param duration: 参数解释:  作业运行时长，单位毫秒 示例: 1000 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
         :type duration: int
-        :param status: 此作业的当前状态，包含提交（LAUNCHING）、运行中（RUNNING）、完成（FINISHED）、失败（FAILED）、取消（CANCELLED）。
+        :param status: 参数解释:  此作业的当前状态 示例: CANCELLED 约束限制:  无 取值范围: LAUNCHING（提交） RUNNING（运行中） FINISH（完成） FAILED（失败） CANCELLED（取消） 默认取值: 无
         :type status: str
-        :param input_row_count: Insert作业执行过程中扫描的记录条数。
+        :param input_row_count: 参数解释:  Insert作业执行过程中扫描的记录条数 示例: 66 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
         :type input_row_count: int
-        :param bad_row_count: Insert作业执行过程中扫描到的错误记录数。
+        :param bad_row_count: 参数解释:  Insert作业执行过程中扫描到的错误记录数 示例: 666 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
         :type bad_row_count: int
-        :param input_size: 作业执行过程中扫描文件的大小。
+        :param input_size: 参数解释:  作业执行过程中扫描文件的大小 示例: 5 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
         :type input_size: int
-        :param result_count: 当前作业返回的结果总条数或insert作业插入的总条数。
+        :param result_count: 参数解释:  当前作业返回的结果总条数或insert作业插入的总条数 示例: 55 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
         :type result_count: int
-        :param database_name: 记录其操作的表所在的数据库名称。类型为Import和Export作业才有“database_name”属性。
+        :param database_name: 参数解释:  记录其操作的表所在的数据库名称。类型为Import和Export作业才有“database_name”属性 示例: db2 约束限制:  无 取值范围: 无 默认取值: 无
         :type database_name: str
-        :param table_name: 记录其操作的表名称。类型为Import和Export作业才有“table_name”属性。
+        :param table_name: 参数解释:  记录其操作的表名称。类型为Import和Export作业才有“table_name”属性 示例: t2 约束限制:  无 取值范围: 无 默认取值: 无
         :type table_name: str
-        :param detail: SQL查询的相关列信息的Json字符串。
+        :param detail: 参数解释:  SQL查询的相关列信息的Json字符串 示例: {\\\&quot;type\\\&quot;:\\\&quot;struct\\\&quot;,\\\&quot;fields\\\&quot;:[{\\\&quot;name\\\&quot;:\\\&quot;name\\\&quot;,\\\&quot;type\\\&quot;:\\\&quot;string\\\&quot;,\\\&quot;nullable\\\&quot;:true,\\\&quot;metadata\\\&quot;:{}},{\\\&quot;name\\\&quot;:\\\&quot;age\\\&quot;,\\\&quot;type\\\&quot;:\\\&quot;integer\\\&quot;,\\\&quot;nullable\\\&quot;:true,\\\&quot;metadata\\\&quot;:{}}]} 约束限制:  符合JSON格式 取值范围: 无 默认取值: 无
         :type detail: str
-        :param user_conf: SQL配置参数信息Json字符串。
+        :param user_conf: 参数解释:  SQL配置参数信息Json字符串 示例: {\\\&quot;type\\\&quot;:\\\&quot;struct\\\&quot;,\\\&quot;fields\\\&quot;:[{\\\&quot;name\\\&quot;:\\\&quot;name\\\&quot;,\\\&quot;type\\\&quot;:\\\&quot;string\\\&quot;,\\\&quot;nullable\\\&quot;:true,\\\&quot;metadata\\\&quot;:{}},{\\\&quot;name\\\&quot;:\\\&quot;age\\\&quot;,\\\&quot;type\\\&quot;:\\\&quot;integer\\\&quot;,\\\&quot;nullable\\\&quot;:true,\\\&quot;metadata\\\&quot;:{}}]} 约束限制:  符合JSON格式 取值范围: 无 默认取值: 无
         :type user_conf: str
-        :param result_path: 查询结果OBS路径
+        :param result_path: 参数解释:  查询结果OBS路径 示例: obs://bucketName/jobs/result/011c99a26ae84a1bb963a75e7637d3fd/2023/11/10/229b23ad-5033-40ed-ad70-fda900f2f04e 约束限制:  符合OBS路径格式，obs://* 取值范围: 无 默认取值: 无
         :type result_path: str
-        :param execution_details_path: 查询作业执行计划OBS路径
+        :param execution_details_path: 参数解释:  查询作业执行计划OBS路径 示例: obs://bucketName/jobs/execution_details/011c99a26ae84a1bb963a75e7637d3fd/2023/11/10/229b23ad-5033-40ed-ad70-fda900f2f04e 约束限制:  符合OBS路径格式，obs://* 取值范围: 无 默认取值: 无
         :type execution_details_path: str
-        :param result_format: 查询结果格式
+        :param result_format: 参数解释:  查询结果格式 示例: csv 约束限制:  无 取值范围: csv 默认取值: 无
         :type result_format: str
-        :param statement: 作业执行的SQL语句。
+        :param statement: 参数解释:  作业执行的SQL语句 示例: select * from t_json_002 约束限制:  符合SQL格式 取值范围: 无 默认取值: 无
         :type statement: str
-        :param is_success: 执行请求是否成功。“true”表示请求执行成功。
+        :param is_success: 参数解释:  执行请求是否成功。true表示请求执行成功 示例: true 约束限制:  无 取值范围: true、false 默认取值: 无
         :type is_success: bool
-        :param message: 系统提示信息，执行成功时，信息可能为空。
+        :param message: 参数解释:  系统提示信息，执行成功时，信息可能为空 示例: success 约束限制:  无 取值范围: 无 默认取值: 无
         :type message: str
-        :param job_mode: 作业执行方式
+        :param job_mode: 参数解释:  作业执行方式 示例: async 约束限制:  无 取值范围: async（同步） sync（异步） 默认取值: 无
         :type job_mode: str
         :param tags: 作业标签
         :type tags: list[:class:`huaweicloudsdkdli.v1.Tag`]
@@ -200,7 +200,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
     def job_id(self):
         r"""Gets the job_id of this ShowSqlJobStatusResponse.
 
-        作业ID。
+        参数解释:  作业ID 示例: 6d2146a0-c2d5-41bd-8ca0-ca9694ada992 约束限制:  无 取值范围: 任意字符串 默认取值: 无
 
         :return: The job_id of this ShowSqlJobStatusResponse.
         :rtype: str
@@ -211,7 +211,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
     def job_id(self, job_id):
         r"""Sets the job_id of this ShowSqlJobStatusResponse.
 
-        作业ID。
+        参数解释:  作业ID 示例: 6d2146a0-c2d5-41bd-8ca0-ca9694ada992 约束限制:  无 取值范围: 任意字符串 默认取值: 无
 
         :param job_id: The job_id of this ShowSqlJobStatusResponse.
         :type job_id: str
@@ -222,7 +222,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
     def job_type(self):
         r"""Gets the job_type of this ShowSqlJobStatusResponse.
 
-        作业类型。
+        参数解释:  作业类型 示例: 指定查询的作业类型，包含DDL、DCL、IMPORT、EXPORT、QUERY、INSERT、DATA_MIGRATION、UPDATE、DELETE、RESTART_QUEUE、SCALE_QUEUE，若要查询所有类型的作业，则传入ALL。 约束限制:  无 取值范围: DDL、DCL、IMPORT、EXPORT、QUERY、INSERT、DATA_MIGRATION、UPDATE、DELETE、RESTART_QUEUE、SCALE_QUEUE、ALL 默认取值: 无
 
         :return: The job_type of this ShowSqlJobStatusResponse.
         :rtype: str
@@ -233,7 +233,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
     def job_type(self, job_type):
         r"""Sets the job_type of this ShowSqlJobStatusResponse.
 
-        作业类型。
+        参数解释:  作业类型 示例: 指定查询的作业类型，包含DDL、DCL、IMPORT、EXPORT、QUERY、INSERT、DATA_MIGRATION、UPDATE、DELETE、RESTART_QUEUE、SCALE_QUEUE，若要查询所有类型的作业，则传入ALL。 约束限制:  无 取值范围: DDL、DCL、IMPORT、EXPORT、QUERY、INSERT、DATA_MIGRATION、UPDATE、DELETE、RESTART_QUEUE、SCALE_QUEUE、ALL 默认取值: 无
 
         :param job_type: The job_type of this ShowSqlJobStatusResponse.
         :type job_type: str
@@ -244,7 +244,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
     def queue_name(self):
         r"""Gets the queue_name of this ShowSqlJobStatusResponse.
 
-        作业提交的队列。
+        参数解释:  作业提交的队列 示例: dli_sql 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The queue_name of this ShowSqlJobStatusResponse.
         :rtype: str
@@ -255,7 +255,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
     def queue_name(self, queue_name):
         r"""Sets the queue_name of this ShowSqlJobStatusResponse.
 
-        作业提交的队列。
+        参数解释:  作业提交的队列 示例: dli_sql 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param queue_name: The queue_name of this ShowSqlJobStatusResponse.
         :type queue_name: str
@@ -266,7 +266,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
     def owner(self):
         r"""Gets the owner of this ShowSqlJobStatusResponse.
 
-        提交作业的用户。
+        参数解释:  提交作业的用户 示例: ei_dlics_d00352431 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The owner of this ShowSqlJobStatusResponse.
         :rtype: str
@@ -277,7 +277,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
     def owner(self, owner):
         r"""Sets the owner of this ShowSqlJobStatusResponse.
 
-        提交作业的用户。
+        参数解释:  提交作业的用户 示例: ei_dlics_d00352431 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param owner: The owner of this ShowSqlJobStatusResponse.
         :type owner: str
@@ -288,7 +288,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
     def start_time(self):
         r"""Gets the start_time of this ShowSqlJobStatusResponse.
 
-        作业开始的时间。是单位为“毫秒”的时间戳。
+        参数解释:  作业开始的时间。是单位为“毫秒”的时间戳 示例: 1502349803729 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
 
         :return: The start_time of this ShowSqlJobStatusResponse.
         :rtype: int
@@ -299,7 +299,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
     def start_time(self, start_time):
         r"""Sets the start_time of this ShowSqlJobStatusResponse.
 
-        作业开始的时间。是单位为“毫秒”的时间戳。
+        参数解释:  作业开始的时间。是单位为“毫秒”的时间戳 示例: 1502349803729 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
 
         :param start_time: The start_time of this ShowSqlJobStatusResponse.
         :type start_time: int
@@ -310,7 +310,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
     def duration(self):
         r"""Gets the duration of this ShowSqlJobStatusResponse.
 
-        作业运行时长，单位毫秒。
+        参数解释:  作业运行时长，单位毫秒 示例: 1000 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
 
         :return: The duration of this ShowSqlJobStatusResponse.
         :rtype: int
@@ -321,7 +321,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
     def duration(self, duration):
         r"""Sets the duration of this ShowSqlJobStatusResponse.
 
-        作业运行时长，单位毫秒。
+        参数解释:  作业运行时长，单位毫秒 示例: 1000 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
 
         :param duration: The duration of this ShowSqlJobStatusResponse.
         :type duration: int
@@ -332,7 +332,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
     def status(self):
         r"""Gets the status of this ShowSqlJobStatusResponse.
 
-        此作业的当前状态，包含提交（LAUNCHING）、运行中（RUNNING）、完成（FINISHED）、失败（FAILED）、取消（CANCELLED）。
+        参数解释:  此作业的当前状态 示例: CANCELLED 约束限制:  无 取值范围: LAUNCHING（提交） RUNNING（运行中） FINISH（完成） FAILED（失败） CANCELLED（取消） 默认取值: 无
 
         :return: The status of this ShowSqlJobStatusResponse.
         :rtype: str
@@ -343,7 +343,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this ShowSqlJobStatusResponse.
 
-        此作业的当前状态，包含提交（LAUNCHING）、运行中（RUNNING）、完成（FINISHED）、失败（FAILED）、取消（CANCELLED）。
+        参数解释:  此作业的当前状态 示例: CANCELLED 约束限制:  无 取值范围: LAUNCHING（提交） RUNNING（运行中） FINISH（完成） FAILED（失败） CANCELLED（取消） 默认取值: 无
 
         :param status: The status of this ShowSqlJobStatusResponse.
         :type status: str
@@ -354,7 +354,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
     def input_row_count(self):
         r"""Gets the input_row_count of this ShowSqlJobStatusResponse.
 
-        Insert作业执行过程中扫描的记录条数。
+        参数解释:  Insert作业执行过程中扫描的记录条数 示例: 66 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
 
         :return: The input_row_count of this ShowSqlJobStatusResponse.
         :rtype: int
@@ -365,7 +365,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
     def input_row_count(self, input_row_count):
         r"""Sets the input_row_count of this ShowSqlJobStatusResponse.
 
-        Insert作业执行过程中扫描的记录条数。
+        参数解释:  Insert作业执行过程中扫描的记录条数 示例: 66 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
 
         :param input_row_count: The input_row_count of this ShowSqlJobStatusResponse.
         :type input_row_count: int
@@ -376,7 +376,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
     def bad_row_count(self):
         r"""Gets the bad_row_count of this ShowSqlJobStatusResponse.
 
-        Insert作业执行过程中扫描到的错误记录数。
+        参数解释:  Insert作业执行过程中扫描到的错误记录数 示例: 666 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
 
         :return: The bad_row_count of this ShowSqlJobStatusResponse.
         :rtype: int
@@ -387,7 +387,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
     def bad_row_count(self, bad_row_count):
         r"""Sets the bad_row_count of this ShowSqlJobStatusResponse.
 
-        Insert作业执行过程中扫描到的错误记录数。
+        参数解释:  Insert作业执行过程中扫描到的错误记录数 示例: 666 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
 
         :param bad_row_count: The bad_row_count of this ShowSqlJobStatusResponse.
         :type bad_row_count: int
@@ -398,7 +398,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
     def input_size(self):
         r"""Gets the input_size of this ShowSqlJobStatusResponse.
 
-        作业执行过程中扫描文件的大小。
+        参数解释:  作业执行过程中扫描文件的大小 示例: 5 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
 
         :return: The input_size of this ShowSqlJobStatusResponse.
         :rtype: int
@@ -409,7 +409,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
     def input_size(self, input_size):
         r"""Sets the input_size of this ShowSqlJobStatusResponse.
 
-        作业执行过程中扫描文件的大小。
+        参数解释:  作业执行过程中扫描文件的大小 示例: 5 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
 
         :param input_size: The input_size of this ShowSqlJobStatusResponse.
         :type input_size: int
@@ -420,7 +420,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
     def result_count(self):
         r"""Gets the result_count of this ShowSqlJobStatusResponse.
 
-        当前作业返回的结果总条数或insert作业插入的总条数。
+        参数解释:  当前作业返回的结果总条数或insert作业插入的总条数 示例: 55 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
 
         :return: The result_count of this ShowSqlJobStatusResponse.
         :rtype: int
@@ -431,7 +431,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
     def result_count(self, result_count):
         r"""Sets the result_count of this ShowSqlJobStatusResponse.
 
-        当前作业返回的结果总条数或insert作业插入的总条数。
+        参数解释:  当前作业返回的结果总条数或insert作业插入的总条数 示例: 55 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
 
         :param result_count: The result_count of this ShowSqlJobStatusResponse.
         :type result_count: int
@@ -442,7 +442,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
     def database_name(self):
         r"""Gets the database_name of this ShowSqlJobStatusResponse.
 
-        记录其操作的表所在的数据库名称。类型为Import和Export作业才有“database_name”属性。
+        参数解释:  记录其操作的表所在的数据库名称。类型为Import和Export作业才有“database_name”属性 示例: db2 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The database_name of this ShowSqlJobStatusResponse.
         :rtype: str
@@ -453,7 +453,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
     def database_name(self, database_name):
         r"""Sets the database_name of this ShowSqlJobStatusResponse.
 
-        记录其操作的表所在的数据库名称。类型为Import和Export作业才有“database_name”属性。
+        参数解释:  记录其操作的表所在的数据库名称。类型为Import和Export作业才有“database_name”属性 示例: db2 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param database_name: The database_name of this ShowSqlJobStatusResponse.
         :type database_name: str
@@ -464,7 +464,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
     def table_name(self):
         r"""Gets the table_name of this ShowSqlJobStatusResponse.
 
-        记录其操作的表名称。类型为Import和Export作业才有“table_name”属性。
+        参数解释:  记录其操作的表名称。类型为Import和Export作业才有“table_name”属性 示例: t2 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The table_name of this ShowSqlJobStatusResponse.
         :rtype: str
@@ -475,7 +475,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
     def table_name(self, table_name):
         r"""Sets the table_name of this ShowSqlJobStatusResponse.
 
-        记录其操作的表名称。类型为Import和Export作业才有“table_name”属性。
+        参数解释:  记录其操作的表名称。类型为Import和Export作业才有“table_name”属性 示例: t2 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param table_name: The table_name of this ShowSqlJobStatusResponse.
         :type table_name: str
@@ -486,7 +486,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
     def detail(self):
         r"""Gets the detail of this ShowSqlJobStatusResponse.
 
-        SQL查询的相关列信息的Json字符串。
+        参数解释:  SQL查询的相关列信息的Json字符串 示例: {\\\"type\\\":\\\"struct\\\",\\\"fields\\\":[{\\\"name\\\":\\\"name\\\",\\\"type\\\":\\\"string\\\",\\\"nullable\\\":true,\\\"metadata\\\":{}},{\\\"name\\\":\\\"age\\\",\\\"type\\\":\\\"integer\\\",\\\"nullable\\\":true,\\\"metadata\\\":{}}]} 约束限制:  符合JSON格式 取值范围: 无 默认取值: 无
 
         :return: The detail of this ShowSqlJobStatusResponse.
         :rtype: str
@@ -497,7 +497,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
     def detail(self, detail):
         r"""Sets the detail of this ShowSqlJobStatusResponse.
 
-        SQL查询的相关列信息的Json字符串。
+        参数解释:  SQL查询的相关列信息的Json字符串 示例: {\\\"type\\\":\\\"struct\\\",\\\"fields\\\":[{\\\"name\\\":\\\"name\\\",\\\"type\\\":\\\"string\\\",\\\"nullable\\\":true,\\\"metadata\\\":{}},{\\\"name\\\":\\\"age\\\",\\\"type\\\":\\\"integer\\\",\\\"nullable\\\":true,\\\"metadata\\\":{}}]} 约束限制:  符合JSON格式 取值范围: 无 默认取值: 无
 
         :param detail: The detail of this ShowSqlJobStatusResponse.
         :type detail: str
@@ -508,7 +508,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
     def user_conf(self):
         r"""Gets the user_conf of this ShowSqlJobStatusResponse.
 
-        SQL配置参数信息Json字符串。
+        参数解释:  SQL配置参数信息Json字符串 示例: {\\\"type\\\":\\\"struct\\\",\\\"fields\\\":[{\\\"name\\\":\\\"name\\\",\\\"type\\\":\\\"string\\\",\\\"nullable\\\":true,\\\"metadata\\\":{}},{\\\"name\\\":\\\"age\\\",\\\"type\\\":\\\"integer\\\",\\\"nullable\\\":true,\\\"metadata\\\":{}}]} 约束限制:  符合JSON格式 取值范围: 无 默认取值: 无
 
         :return: The user_conf of this ShowSqlJobStatusResponse.
         :rtype: str
@@ -519,7 +519,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
     def user_conf(self, user_conf):
         r"""Sets the user_conf of this ShowSqlJobStatusResponse.
 
-        SQL配置参数信息Json字符串。
+        参数解释:  SQL配置参数信息Json字符串 示例: {\\\"type\\\":\\\"struct\\\",\\\"fields\\\":[{\\\"name\\\":\\\"name\\\",\\\"type\\\":\\\"string\\\",\\\"nullable\\\":true,\\\"metadata\\\":{}},{\\\"name\\\":\\\"age\\\",\\\"type\\\":\\\"integer\\\",\\\"nullable\\\":true,\\\"metadata\\\":{}}]} 约束限制:  符合JSON格式 取值范围: 无 默认取值: 无
 
         :param user_conf: The user_conf of this ShowSqlJobStatusResponse.
         :type user_conf: str
@@ -530,7 +530,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
     def result_path(self):
         r"""Gets the result_path of this ShowSqlJobStatusResponse.
 
-        查询结果OBS路径
+        参数解释:  查询结果OBS路径 示例: obs://bucketName/jobs/result/011c99a26ae84a1bb963a75e7637d3fd/2023/11/10/229b23ad-5033-40ed-ad70-fda900f2f04e 约束限制:  符合OBS路径格式，obs://* 取值范围: 无 默认取值: 无
 
         :return: The result_path of this ShowSqlJobStatusResponse.
         :rtype: str
@@ -541,7 +541,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
     def result_path(self, result_path):
         r"""Sets the result_path of this ShowSqlJobStatusResponse.
 
-        查询结果OBS路径
+        参数解释:  查询结果OBS路径 示例: obs://bucketName/jobs/result/011c99a26ae84a1bb963a75e7637d3fd/2023/11/10/229b23ad-5033-40ed-ad70-fda900f2f04e 约束限制:  符合OBS路径格式，obs://* 取值范围: 无 默认取值: 无
 
         :param result_path: The result_path of this ShowSqlJobStatusResponse.
         :type result_path: str
@@ -552,7 +552,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
     def execution_details_path(self):
         r"""Gets the execution_details_path of this ShowSqlJobStatusResponse.
 
-        查询作业执行计划OBS路径
+        参数解释:  查询作业执行计划OBS路径 示例: obs://bucketName/jobs/execution_details/011c99a26ae84a1bb963a75e7637d3fd/2023/11/10/229b23ad-5033-40ed-ad70-fda900f2f04e 约束限制:  符合OBS路径格式，obs://* 取值范围: 无 默认取值: 无
 
         :return: The execution_details_path of this ShowSqlJobStatusResponse.
         :rtype: str
@@ -563,7 +563,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
     def execution_details_path(self, execution_details_path):
         r"""Sets the execution_details_path of this ShowSqlJobStatusResponse.
 
-        查询作业执行计划OBS路径
+        参数解释:  查询作业执行计划OBS路径 示例: obs://bucketName/jobs/execution_details/011c99a26ae84a1bb963a75e7637d3fd/2023/11/10/229b23ad-5033-40ed-ad70-fda900f2f04e 约束限制:  符合OBS路径格式，obs://* 取值范围: 无 默认取值: 无
 
         :param execution_details_path: The execution_details_path of this ShowSqlJobStatusResponse.
         :type execution_details_path: str
@@ -574,7 +574,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
     def result_format(self):
         r"""Gets the result_format of this ShowSqlJobStatusResponse.
 
-        查询结果格式
+        参数解释:  查询结果格式 示例: csv 约束限制:  无 取值范围: csv 默认取值: 无
 
         :return: The result_format of this ShowSqlJobStatusResponse.
         :rtype: str
@@ -585,7 +585,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
     def result_format(self, result_format):
         r"""Sets the result_format of this ShowSqlJobStatusResponse.
 
-        查询结果格式
+        参数解释:  查询结果格式 示例: csv 约束限制:  无 取值范围: csv 默认取值: 无
 
         :param result_format: The result_format of this ShowSqlJobStatusResponse.
         :type result_format: str
@@ -596,7 +596,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
     def statement(self):
         r"""Gets the statement of this ShowSqlJobStatusResponse.
 
-        作业执行的SQL语句。
+        参数解释:  作业执行的SQL语句 示例: select * from t_json_002 约束限制:  符合SQL格式 取值范围: 无 默认取值: 无
 
         :return: The statement of this ShowSqlJobStatusResponse.
         :rtype: str
@@ -607,7 +607,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
     def statement(self, statement):
         r"""Sets the statement of this ShowSqlJobStatusResponse.
 
-        作业执行的SQL语句。
+        参数解释:  作业执行的SQL语句 示例: select * from t_json_002 约束限制:  符合SQL格式 取值范围: 无 默认取值: 无
 
         :param statement: The statement of this ShowSqlJobStatusResponse.
         :type statement: str
@@ -618,7 +618,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
     def is_success(self):
         r"""Gets the is_success of this ShowSqlJobStatusResponse.
 
-        执行请求是否成功。“true”表示请求执行成功。
+        参数解释:  执行请求是否成功。true表示请求执行成功 示例: true 约束限制:  无 取值范围: true、false 默认取值: 无
 
         :return: The is_success of this ShowSqlJobStatusResponse.
         :rtype: bool
@@ -629,7 +629,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
     def is_success(self, is_success):
         r"""Sets the is_success of this ShowSqlJobStatusResponse.
 
-        执行请求是否成功。“true”表示请求执行成功。
+        参数解释:  执行请求是否成功。true表示请求执行成功 示例: true 约束限制:  无 取值范围: true、false 默认取值: 无
 
         :param is_success: The is_success of this ShowSqlJobStatusResponse.
         :type is_success: bool
@@ -640,7 +640,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
     def message(self):
         r"""Gets the message of this ShowSqlJobStatusResponse.
 
-        系统提示信息，执行成功时，信息可能为空。
+        参数解释:  系统提示信息，执行成功时，信息可能为空 示例: success 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The message of this ShowSqlJobStatusResponse.
         :rtype: str
@@ -651,7 +651,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
     def message(self, message):
         r"""Sets the message of this ShowSqlJobStatusResponse.
 
-        系统提示信息，执行成功时，信息可能为空。
+        参数解释:  系统提示信息，执行成功时，信息可能为空 示例: success 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param message: The message of this ShowSqlJobStatusResponse.
         :type message: str
@@ -662,7 +662,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
     def job_mode(self):
         r"""Gets the job_mode of this ShowSqlJobStatusResponse.
 
-        作业执行方式
+        参数解释:  作业执行方式 示例: async 约束限制:  无 取值范围: async（同步） sync（异步） 默认取值: 无
 
         :return: The job_mode of this ShowSqlJobStatusResponse.
         :rtype: str
@@ -673,7 +673,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
     def job_mode(self, job_mode):
         r"""Sets the job_mode of this ShowSqlJobStatusResponse.
 
-        作业执行方式
+        参数解释:  作业执行方式 示例: async 约束限制:  无 取值范围: async（同步） sync（异步） 默认取值: 无
 
         :param job_mode: The job_mode of this ShowSqlJobStatusResponse.
         :type job_mode: str

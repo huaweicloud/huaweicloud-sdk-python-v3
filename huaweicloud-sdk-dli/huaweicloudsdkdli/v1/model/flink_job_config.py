@@ -97,75 +97,75 @@ class FlinkJobConfig:
 
         The model defined in huaweicloud sdk
 
-        :param checkpoint_enabled: 是否开启作业自动快照功能。 开启：true； 关闭：false； 默认：false。
+        :param checkpoint_enabled: 参数解释:  是否开启作业自动快照功能 示例: false 约束限制:  无 取值范围: true,false 默认取值: false
         :type checkpoint_enabled: bool
-        :param checkpoint_mode: 快照模式： exactly_once：数据只被消费一次。 at_least_once：数据至少被消费一次。 默认值为exactly_once。
+        :param checkpoint_mode: 参数解释:  快照模式 示例: exactly_once 约束限制:  无 取值范围: exactly_once（数据只被消费一次） at_least_once（数据至少被消费一次） 默认取值: 无
         :type checkpoint_mode: str
-        :param checkpoint_interval: 快照时间间隔, 单位为秒，默认值为10。
+        :param checkpoint_interval: 参数解释:  快照时间间隔, 单位为秒 示例: 10 约束限制:  无 取值范围: 无 默认取值: 10
         :type checkpoint_interval: int
-        :param log_enabled: 是否启用日志存储。默认为false。
+        :param log_enabled: 参数解释:  是否启用日志存储 示例: false 约束限制:  无 取值范围: true,false 默认取值: false
         :type log_enabled: bool
-        :param obs_bucket: OBS桶名。
+        :param obs_bucket: 参数解释:  OBS桶名 示例: obs-demo 约束限制:  无 取值范围: 无 默认取值: 无
         :type obs_bucket: str
-        :param smn_topic: 当作业异常时，向该SMN主题推送告警信息。
+        :param smn_topic: 参数解释:  当作业异常时，向该SMN主题推送告警信息 示例: cs_job_exception 约束限制:  无 取值范围: 无 默认取值: 无
         :type smn_topic: str
-        :param edge_group_ids: 边缘计算组ID列表。
+        :param edge_group_ids: 参数解释:  边缘计算组ID列表 示例: 62de1e1c-066e-48a8-a79d-f461a31b2ee1,2eb00f85-99f2-4144-bcb7-d39ff47f9002 约束限制:  无 取值范围: 无 默认取值: 无
         :type edge_group_ids: list[str]
-        :param root_id: 父作业ID。
+        :param root_id: 参数解释:  父作业ID 示例: 11 约束限制:  无 取值范围: 无 默认取值: 无
         :type root_id: int
-        :param manager_cu_number: 管理单元CU数。默认为1。
+        :param manager_cu_number: 参数解释:  管理单元CU数 示例: 1 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
         :type manager_cu_number: int
-        :param cu_number: 用户为作业选择的CU数量, “show_detail”。默认为2。
+        :param cu_number: 参数解释:  用户为作业选择的CU数量 示例: 2 约束限制:  无 取值范围: [2,400] 默认取值: 2
         :type cu_number: int
-        :param parallel_number: 用户设置的作业并行数， “show_detail”为“true”时独有。默认值为1。 最小值：1，最大值：2000。
+        :param parallel_number: 参数解释:  用户设置的作业并行数， “show_detail”为“true”时独有 示例: 1 约束限制:  无 取值范围: [1,2000] 默认取值: 1
         :type parallel_number: int
-        :param restart_when_exception: 是否开启异常重启功能。
+        :param restart_when_exception: 参数解释:  是否开启异常重启功能 示例: false 约束限制:  无 取值范围: true,false 默认取值: 无
         :type restart_when_exception: bool
-        :param idle_state_retention: 空闲状态过期周期。
+        :param idle_state_retention: 参数解释:  空闲状态过期周期 示例: 3600 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
         :type idle_state_retention: int
-        :param udf_jar_url: 用户已上传到DLI资源管理系统的资源包名，用户sql作业的udf jar通过该参数传入。
+        :param udf_jar_url: 参数解释:  用户已上传到DLI资源管理系统的资源包名，用户sql作业的udf jar通过该参数传入 示例: obs://cs-append/jar/udf/flink-1.13-demo-1.0-udf.jar obs://onlyci-7/flink/udx.jar 约束限制:  无 取值范围: 无 默认取值: 无
         :type udf_jar_url: str
-        :param dirty_data_strategy: 作业脏数据策略。 “2:obs-wan-wulan3/jobs”：保存 “1”：抛出异常 “0”：忽略
+        :param dirty_data_strategy: 参数解释:  作业脏数据策略 示例: 0 约束限制:  无 取值范围: 0（忽略） 1（抛出异常） 2:obsDir（保存，obsDir表示脏数据存储路径） 默认取值: 无
         :type dirty_data_strategy: str
-        :param entrypoint: 用户已上传到DLI资源管理系统的资源包名，用户自定义作业主类所在的jar包.
+        :param entrypoint: 参数解释:  用户已上传到DLI资源管理系统的资源包名，用户自定义作业主类所在的jar包 示例: obs://test/demo/WindowJoin.jar 约束限制:  无 取值范围: 无 默认取值: 无
         :type entrypoint: str
-        :param dependency_jars: 用户已上传到DLI资源管理系统的资源包名，用户自定义作业的其他依赖包
+        :param dependency_jars: 参数解释:  用户已上传到DLI资源管理系统的资源包名，用户自定义作业的其他依赖包 示例: [\&quot;zsdas/wordcount.jar\&quot;,\&quot;ygj/flink-dis-to-kafka-v5.jar\&quot;] 约束限制:  无 取值范围: 无 默认取值: 无
         :type dependency_jars: list[str]
-        :param dependency_files: 用户已上传到DLI资源管理系统的资源包名，用户自定义作业的依赖文件.
+        :param dependency_files: 参数解释:  用户已上传到DLI资源管理系统的资源包名，用户自定义作业的依赖文件 示例: [\&quot;zsdas/wordcount.jar\&quot;,\&quot;ygj/flink-dis-to-kafka-v5.jar\&quot;] 约束限制:  无 取值范围: 无 默认取值: 无
         :type dependency_files: list[str]
-        :param executor_number: 作业使用计算节点个数
+        :param executor_number: 参数解释:  作业使用计算节点个数 示例: 0 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
         :type executor_number: int
-        :param executor_cu_number: 计算节点cu数
+        :param executor_cu_number: 参数解释:  计算节点cu数 示例: 0 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
         :type executor_cu_number: int
-        :param resume_checkpoint: 异常自动重启时，是否从最新checkpoint恢复，默认false
+        :param resume_checkpoint: 参数解释:  异常自动重启时，是否从最新checkpoint恢复，默认false 示例: 0 约束限制:  无 取值范围: true,false 默认取值: false
         :type resume_checkpoint: bool
-        :param runtime_config: Flink作业运行时自定义优化参数。
+        :param runtime_config: 参数解释: Flink作业运行时自定义优化参数 示例: [{\\\&quot;key\\\&quot;:\\\&quot;high-availability\\\&quot;,\\\&quot;value\\\&quot;:\\\&quot;org.apache.flink.kubernetes.highavailability.KubernetesHaServicesFactory\\\&quot; },{ \\\&quot;key\\\&quot;:\\\&quot;kubernetes.jobmanager.replicas\\\&quot;,\\\&quot;value\\\&quot;:\\\&quot;2\\\&quot; },{ \\\&quot;key\\\&quot;:\\\&quot;high-availability.storageDir\\\&quot;,\\\&quot;value\\\&quot;:\\\&quot;obs://fz-test/test\\\&quot;}] 约束限制:  无 取值范围: 无 默认取值: 无
         :type runtime_config: str
-        :param graph_editor_enabled: 流图编辑开关。默认为“false。
+        :param graph_editor_enabled: 参数解释: 流图编辑开关 示例: false 约束限制:  无 取值范围: 无 默认取值: false
         :type graph_editor_enabled: bool
-        :param graph_editor_data: 流图编辑数据。默认为null。
+        :param graph_editor_data: 参数解释: 流图编辑数据 约束限制:  无 取值范围: 无 默认取值: 无
         :type graph_editor_data: str
-        :param resume_max_num: 异常重试最大次数。-1代表无限。
+        :param resume_max_num: 参数解释: 异常重试最大次数。-1代表无限 示例: -1 约束限制:  无 取值范围: 无 默认取值: 无
         :type resume_max_num: int
-        :param checkpoint_path: 检查点保存路径。
+        :param checkpoint_path: 参数解释: 检查点保存路径 示例: obs://cwk/checkpoint/ 约束限制:  无 取值范围: 无 默认取值: 无
         :type checkpoint_path: str
-        :param config_url: 用户上传的config包OBS路径。
+        :param config_url: 参数解释: 用户上传的config包OBS路径。 示例: obs://bucket-62099355b894428e8916573ae635f1f9/di-flink/lib/client.jks,obs://bucket-62099355b894428e8916573ae635f1f9/di-flink/lib/client.jks 约束限制:  无 取值范围: 无 默认取值: 无
         :type config_url: str
-        :param tm_cus: 单TM所占CU数。
+        :param tm_cus: 参数解释: 单TM所占CU数 示例: 1 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
         :type tm_cus: int
-        :param tm_slot_num: 单TM Slot数。
+        :param tm_slot_num: 参数解释: 单TM Slot数 示例: 1 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
         :type tm_slot_num: int
-        :param image: 自定义镜像。格式为：组织名/镜像名:镜像版本。当用户设置“feature”为“custom”时，该参数生效。用户可通过与“feature”参数配合使用，指定作业运行使用自定义的Flink镜像。
+        :param image: 参数解释: 自定义镜像。格式为：组织名/镜像名:镜像版本。当用户设置“feature”为“custom”时，该参数生效。用户可通过与“feature”参数配合使用，指定作业运行使用自定义的Flink镜像 示例: dli/spark:2.4.8 约束限制:  无 取值范围: 无 默认取值: 无
         :type image: str
-        :param feature: 自定义作业特性。表示用户作业使用的Flink镜像类型。basic：表示使用DLI提供的基础Flink镜像。custom：表示使用用户自定义的Flink镜像。
+        :param feature: 参数解释: 自定义作业特性。表示用户作业使用的Flink镜像类型。basic：表示使用DLI提供的基础Flink镜像。custom：表示使用用户自定义的Flink镜像 示例: basic 约束限制:  无 取值范围: basic：表示使用DLI提供的基础Flink镜像 custom：表示使用用户自定义的Flink镜像 默认取值: 无
         :type feature: str
-        :param flink_version: Flink版本。当用户设置“feature”为“basic”时，该参数生效。用户可通过与“feature”参数配合使用，指定作业运行使用的DLI基础Flink镜像的版本。
+        :param flink_version: 参数解释: Flink版本。当用户设置“feature”为“basic”时，该参数生效。用户可通过与“feature”参数配合使用，指定作业运行使用的DLI基础Flink镜像的版本 示例: 1.17 约束限制:  无 取值范围: 无 默认取值: 无
         :type flink_version: str
-        :param operator_config: 各算子并行度参数，以json的形式展示各算子id和并行度。
+        :param operator_config: 参数解释: 各算子并行度参数，以json的形式展示各算子id和并行度 示例: &#39;{\&quot;operator_list\&quot;:[{\&quot;id\&quot;:\&quot;0a448493b4782967b150582570326227\&quot;,\&quot;parallelism\&quot;:1},{\&quot;id\&quot;:\&quot;6d2677a0ecc3fd8df0b72ec675edf8f4\&quot;,\&quot;parallelism\&quot;:1},{\&quot;id\&quot;:\&quot;ea632d67b7d595e5b851708ae9ad79d6\&quot;,\&quot;parallelism\&quot;:1},{\&quot;id\&quot;:\&quot;ddb598ad156ed281023ba4eebbe487e3\&quot;,\&quot;parallelism\&quot;:1},{\&quot;id\&quot;:\&quot;bc764cd8ddf7a0cff126f51c16239658\&quot;,\&quot;parallelism\&quot;:1}]}&#39; 约束限制:  符合Json格式的字符串 取值范围: 无 默认取值: 无
         :type operator_config: str
-        :param static_estimator_config: 静态流图资源预估参数，以json的形式展示。
+        :param static_estimator_config: 参数解释: 静态流图资源预估参数，以json的形式展示 示例: &#39;{\&quot;operator_list\&quot;:[{\&quot;id\&quot;:\&quot;0a448493b4782967b150582570326227\&quot;,\&quot;parallelism\&quot;:1},{\&quot;id\&quot;:\&quot;6d2677a0ecc3fd8df0b72ec675edf8f4\&quot;,\&quot;parallelism\&quot;:1},{\&quot;id\&quot;:\&quot;ea632d67b7d595e5b851708ae9ad79d6\&quot;,\&quot;parallelism\&quot;:1},{\&quot;id\&quot;:\&quot;ddb598ad156ed281023ba4eebbe487e3\&quot;,\&quot;parallelism\&quot;:1},{\&quot;id\&quot;:\&quot;bc764cd8ddf7a0cff126f51c16239658\&quot;,\&quot;parallelism\&quot;:1}]}&#39; 约束限制:  符合Json格式的字符串 取值范围: 无 默认取值: 无
         :type static_estimator_config: str
-        :param real_cu_number: 
+        :param real_cu_number: 参数解释: 实际使用的CU数 示例: 0 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 0
         :type real_cu_number: int
         """
         
@@ -283,7 +283,7 @@ class FlinkJobConfig:
     def checkpoint_enabled(self):
         r"""Gets the checkpoint_enabled of this FlinkJobConfig.
 
-        是否开启作业自动快照功能。 开启：true； 关闭：false； 默认：false。
+        参数解释:  是否开启作业自动快照功能 示例: false 约束限制:  无 取值范围: true,false 默认取值: false
 
         :return: The checkpoint_enabled of this FlinkJobConfig.
         :rtype: bool
@@ -294,7 +294,7 @@ class FlinkJobConfig:
     def checkpoint_enabled(self, checkpoint_enabled):
         r"""Sets the checkpoint_enabled of this FlinkJobConfig.
 
-        是否开启作业自动快照功能。 开启：true； 关闭：false； 默认：false。
+        参数解释:  是否开启作业自动快照功能 示例: false 约束限制:  无 取值范围: true,false 默认取值: false
 
         :param checkpoint_enabled: The checkpoint_enabled of this FlinkJobConfig.
         :type checkpoint_enabled: bool
@@ -305,7 +305,7 @@ class FlinkJobConfig:
     def checkpoint_mode(self):
         r"""Gets the checkpoint_mode of this FlinkJobConfig.
 
-        快照模式： exactly_once：数据只被消费一次。 at_least_once：数据至少被消费一次。 默认值为exactly_once。
+        参数解释:  快照模式 示例: exactly_once 约束限制:  无 取值范围: exactly_once（数据只被消费一次） at_least_once（数据至少被消费一次） 默认取值: 无
 
         :return: The checkpoint_mode of this FlinkJobConfig.
         :rtype: str
@@ -316,7 +316,7 @@ class FlinkJobConfig:
     def checkpoint_mode(self, checkpoint_mode):
         r"""Sets the checkpoint_mode of this FlinkJobConfig.
 
-        快照模式： exactly_once：数据只被消费一次。 at_least_once：数据至少被消费一次。 默认值为exactly_once。
+        参数解释:  快照模式 示例: exactly_once 约束限制:  无 取值范围: exactly_once（数据只被消费一次） at_least_once（数据至少被消费一次） 默认取值: 无
 
         :param checkpoint_mode: The checkpoint_mode of this FlinkJobConfig.
         :type checkpoint_mode: str
@@ -327,7 +327,7 @@ class FlinkJobConfig:
     def checkpoint_interval(self):
         r"""Gets the checkpoint_interval of this FlinkJobConfig.
 
-        快照时间间隔, 单位为秒，默认值为10。
+        参数解释:  快照时间间隔, 单位为秒 示例: 10 约束限制:  无 取值范围: 无 默认取值: 10
 
         :return: The checkpoint_interval of this FlinkJobConfig.
         :rtype: int
@@ -338,7 +338,7 @@ class FlinkJobConfig:
     def checkpoint_interval(self, checkpoint_interval):
         r"""Sets the checkpoint_interval of this FlinkJobConfig.
 
-        快照时间间隔, 单位为秒，默认值为10。
+        参数解释:  快照时间间隔, 单位为秒 示例: 10 约束限制:  无 取值范围: 无 默认取值: 10
 
         :param checkpoint_interval: The checkpoint_interval of this FlinkJobConfig.
         :type checkpoint_interval: int
@@ -349,7 +349,7 @@ class FlinkJobConfig:
     def log_enabled(self):
         r"""Gets the log_enabled of this FlinkJobConfig.
 
-        是否启用日志存储。默认为false。
+        参数解释:  是否启用日志存储 示例: false 约束限制:  无 取值范围: true,false 默认取值: false
 
         :return: The log_enabled of this FlinkJobConfig.
         :rtype: bool
@@ -360,7 +360,7 @@ class FlinkJobConfig:
     def log_enabled(self, log_enabled):
         r"""Sets the log_enabled of this FlinkJobConfig.
 
-        是否启用日志存储。默认为false。
+        参数解释:  是否启用日志存储 示例: false 约束限制:  无 取值范围: true,false 默认取值: false
 
         :param log_enabled: The log_enabled of this FlinkJobConfig.
         :type log_enabled: bool
@@ -371,7 +371,7 @@ class FlinkJobConfig:
     def obs_bucket(self):
         r"""Gets the obs_bucket of this FlinkJobConfig.
 
-        OBS桶名。
+        参数解释:  OBS桶名 示例: obs-demo 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The obs_bucket of this FlinkJobConfig.
         :rtype: str
@@ -382,7 +382,7 @@ class FlinkJobConfig:
     def obs_bucket(self, obs_bucket):
         r"""Sets the obs_bucket of this FlinkJobConfig.
 
-        OBS桶名。
+        参数解释:  OBS桶名 示例: obs-demo 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param obs_bucket: The obs_bucket of this FlinkJobConfig.
         :type obs_bucket: str
@@ -393,7 +393,7 @@ class FlinkJobConfig:
     def smn_topic(self):
         r"""Gets the smn_topic of this FlinkJobConfig.
 
-        当作业异常时，向该SMN主题推送告警信息。
+        参数解释:  当作业异常时，向该SMN主题推送告警信息 示例: cs_job_exception 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The smn_topic of this FlinkJobConfig.
         :rtype: str
@@ -404,7 +404,7 @@ class FlinkJobConfig:
     def smn_topic(self, smn_topic):
         r"""Sets the smn_topic of this FlinkJobConfig.
 
-        当作业异常时，向该SMN主题推送告警信息。
+        参数解释:  当作业异常时，向该SMN主题推送告警信息 示例: cs_job_exception 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param smn_topic: The smn_topic of this FlinkJobConfig.
         :type smn_topic: str
@@ -415,7 +415,7 @@ class FlinkJobConfig:
     def edge_group_ids(self):
         r"""Gets the edge_group_ids of this FlinkJobConfig.
 
-        边缘计算组ID列表。
+        参数解释:  边缘计算组ID列表 示例: 62de1e1c-066e-48a8-a79d-f461a31b2ee1,2eb00f85-99f2-4144-bcb7-d39ff47f9002 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The edge_group_ids of this FlinkJobConfig.
         :rtype: list[str]
@@ -426,7 +426,7 @@ class FlinkJobConfig:
     def edge_group_ids(self, edge_group_ids):
         r"""Sets the edge_group_ids of this FlinkJobConfig.
 
-        边缘计算组ID列表。
+        参数解释:  边缘计算组ID列表 示例: 62de1e1c-066e-48a8-a79d-f461a31b2ee1,2eb00f85-99f2-4144-bcb7-d39ff47f9002 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param edge_group_ids: The edge_group_ids of this FlinkJobConfig.
         :type edge_group_ids: list[str]
@@ -437,7 +437,7 @@ class FlinkJobConfig:
     def root_id(self):
         r"""Gets the root_id of this FlinkJobConfig.
 
-        父作业ID。
+        参数解释:  父作业ID 示例: 11 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The root_id of this FlinkJobConfig.
         :rtype: int
@@ -448,7 +448,7 @@ class FlinkJobConfig:
     def root_id(self, root_id):
         r"""Sets the root_id of this FlinkJobConfig.
 
-        父作业ID。
+        参数解释:  父作业ID 示例: 11 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param root_id: The root_id of this FlinkJobConfig.
         :type root_id: int
@@ -459,7 +459,7 @@ class FlinkJobConfig:
     def manager_cu_number(self):
         r"""Gets the manager_cu_number of this FlinkJobConfig.
 
-        管理单元CU数。默认为1。
+        参数解释:  管理单元CU数 示例: 1 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
 
         :return: The manager_cu_number of this FlinkJobConfig.
         :rtype: int
@@ -470,7 +470,7 @@ class FlinkJobConfig:
     def manager_cu_number(self, manager_cu_number):
         r"""Sets the manager_cu_number of this FlinkJobConfig.
 
-        管理单元CU数。默认为1。
+        参数解释:  管理单元CU数 示例: 1 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
 
         :param manager_cu_number: The manager_cu_number of this FlinkJobConfig.
         :type manager_cu_number: int
@@ -481,7 +481,7 @@ class FlinkJobConfig:
     def cu_number(self):
         r"""Gets the cu_number of this FlinkJobConfig.
 
-        用户为作业选择的CU数量, “show_detail”。默认为2。
+        参数解释:  用户为作业选择的CU数量 示例: 2 约束限制:  无 取值范围: [2,400] 默认取值: 2
 
         :return: The cu_number of this FlinkJobConfig.
         :rtype: int
@@ -492,7 +492,7 @@ class FlinkJobConfig:
     def cu_number(self, cu_number):
         r"""Sets the cu_number of this FlinkJobConfig.
 
-        用户为作业选择的CU数量, “show_detail”。默认为2。
+        参数解释:  用户为作业选择的CU数量 示例: 2 约束限制:  无 取值范围: [2,400] 默认取值: 2
 
         :param cu_number: The cu_number of this FlinkJobConfig.
         :type cu_number: int
@@ -503,7 +503,7 @@ class FlinkJobConfig:
     def parallel_number(self):
         r"""Gets the parallel_number of this FlinkJobConfig.
 
-        用户设置的作业并行数， “show_detail”为“true”时独有。默认值为1。 最小值：1，最大值：2000。
+        参数解释:  用户设置的作业并行数， “show_detail”为“true”时独有 示例: 1 约束限制:  无 取值范围: [1,2000] 默认取值: 1
 
         :return: The parallel_number of this FlinkJobConfig.
         :rtype: int
@@ -514,7 +514,7 @@ class FlinkJobConfig:
     def parallel_number(self, parallel_number):
         r"""Sets the parallel_number of this FlinkJobConfig.
 
-        用户设置的作业并行数， “show_detail”为“true”时独有。默认值为1。 最小值：1，最大值：2000。
+        参数解释:  用户设置的作业并行数， “show_detail”为“true”时独有 示例: 1 约束限制:  无 取值范围: [1,2000] 默认取值: 1
 
         :param parallel_number: The parallel_number of this FlinkJobConfig.
         :type parallel_number: int
@@ -525,7 +525,7 @@ class FlinkJobConfig:
     def restart_when_exception(self):
         r"""Gets the restart_when_exception of this FlinkJobConfig.
 
-        是否开启异常重启功能。
+        参数解释:  是否开启异常重启功能 示例: false 约束限制:  无 取值范围: true,false 默认取值: 无
 
         :return: The restart_when_exception of this FlinkJobConfig.
         :rtype: bool
@@ -536,7 +536,7 @@ class FlinkJobConfig:
     def restart_when_exception(self, restart_when_exception):
         r"""Sets the restart_when_exception of this FlinkJobConfig.
 
-        是否开启异常重启功能。
+        参数解释:  是否开启异常重启功能 示例: false 约束限制:  无 取值范围: true,false 默认取值: 无
 
         :param restart_when_exception: The restart_when_exception of this FlinkJobConfig.
         :type restart_when_exception: bool
@@ -547,7 +547,7 @@ class FlinkJobConfig:
     def idle_state_retention(self):
         r"""Gets the idle_state_retention of this FlinkJobConfig.
 
-        空闲状态过期周期。
+        参数解释:  空闲状态过期周期 示例: 3600 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
 
         :return: The idle_state_retention of this FlinkJobConfig.
         :rtype: int
@@ -558,7 +558,7 @@ class FlinkJobConfig:
     def idle_state_retention(self, idle_state_retention):
         r"""Sets the idle_state_retention of this FlinkJobConfig.
 
-        空闲状态过期周期。
+        参数解释:  空闲状态过期周期 示例: 3600 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
 
         :param idle_state_retention: The idle_state_retention of this FlinkJobConfig.
         :type idle_state_retention: int
@@ -569,7 +569,7 @@ class FlinkJobConfig:
     def udf_jar_url(self):
         r"""Gets the udf_jar_url of this FlinkJobConfig.
 
-        用户已上传到DLI资源管理系统的资源包名，用户sql作业的udf jar通过该参数传入。
+        参数解释:  用户已上传到DLI资源管理系统的资源包名，用户sql作业的udf jar通过该参数传入 示例: obs://cs-append/jar/udf/flink-1.13-demo-1.0-udf.jar obs://onlyci-7/flink/udx.jar 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The udf_jar_url of this FlinkJobConfig.
         :rtype: str
@@ -580,7 +580,7 @@ class FlinkJobConfig:
     def udf_jar_url(self, udf_jar_url):
         r"""Sets the udf_jar_url of this FlinkJobConfig.
 
-        用户已上传到DLI资源管理系统的资源包名，用户sql作业的udf jar通过该参数传入。
+        参数解释:  用户已上传到DLI资源管理系统的资源包名，用户sql作业的udf jar通过该参数传入 示例: obs://cs-append/jar/udf/flink-1.13-demo-1.0-udf.jar obs://onlyci-7/flink/udx.jar 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param udf_jar_url: The udf_jar_url of this FlinkJobConfig.
         :type udf_jar_url: str
@@ -591,7 +591,7 @@ class FlinkJobConfig:
     def dirty_data_strategy(self):
         r"""Gets the dirty_data_strategy of this FlinkJobConfig.
 
-        作业脏数据策略。 “2:obs-wan-wulan3/jobs”：保存 “1”：抛出异常 “0”：忽略
+        参数解释:  作业脏数据策略 示例: 0 约束限制:  无 取值范围: 0（忽略） 1（抛出异常） 2:obsDir（保存，obsDir表示脏数据存储路径） 默认取值: 无
 
         :return: The dirty_data_strategy of this FlinkJobConfig.
         :rtype: str
@@ -602,7 +602,7 @@ class FlinkJobConfig:
     def dirty_data_strategy(self, dirty_data_strategy):
         r"""Sets the dirty_data_strategy of this FlinkJobConfig.
 
-        作业脏数据策略。 “2:obs-wan-wulan3/jobs”：保存 “1”：抛出异常 “0”：忽略
+        参数解释:  作业脏数据策略 示例: 0 约束限制:  无 取值范围: 0（忽略） 1（抛出异常） 2:obsDir（保存，obsDir表示脏数据存储路径） 默认取值: 无
 
         :param dirty_data_strategy: The dirty_data_strategy of this FlinkJobConfig.
         :type dirty_data_strategy: str
@@ -613,7 +613,7 @@ class FlinkJobConfig:
     def entrypoint(self):
         r"""Gets the entrypoint of this FlinkJobConfig.
 
-        用户已上传到DLI资源管理系统的资源包名，用户自定义作业主类所在的jar包.
+        参数解释:  用户已上传到DLI资源管理系统的资源包名，用户自定义作业主类所在的jar包 示例: obs://test/demo/WindowJoin.jar 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The entrypoint of this FlinkJobConfig.
         :rtype: str
@@ -624,7 +624,7 @@ class FlinkJobConfig:
     def entrypoint(self, entrypoint):
         r"""Sets the entrypoint of this FlinkJobConfig.
 
-        用户已上传到DLI资源管理系统的资源包名，用户自定义作业主类所在的jar包.
+        参数解释:  用户已上传到DLI资源管理系统的资源包名，用户自定义作业主类所在的jar包 示例: obs://test/demo/WindowJoin.jar 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param entrypoint: The entrypoint of this FlinkJobConfig.
         :type entrypoint: str
@@ -635,7 +635,7 @@ class FlinkJobConfig:
     def dependency_jars(self):
         r"""Gets the dependency_jars of this FlinkJobConfig.
 
-        用户已上传到DLI资源管理系统的资源包名，用户自定义作业的其他依赖包
+        参数解释:  用户已上传到DLI资源管理系统的资源包名，用户自定义作业的其他依赖包 示例: [\"zsdas/wordcount.jar\",\"ygj/flink-dis-to-kafka-v5.jar\"] 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The dependency_jars of this FlinkJobConfig.
         :rtype: list[str]
@@ -646,7 +646,7 @@ class FlinkJobConfig:
     def dependency_jars(self, dependency_jars):
         r"""Sets the dependency_jars of this FlinkJobConfig.
 
-        用户已上传到DLI资源管理系统的资源包名，用户自定义作业的其他依赖包
+        参数解释:  用户已上传到DLI资源管理系统的资源包名，用户自定义作业的其他依赖包 示例: [\"zsdas/wordcount.jar\",\"ygj/flink-dis-to-kafka-v5.jar\"] 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param dependency_jars: The dependency_jars of this FlinkJobConfig.
         :type dependency_jars: list[str]
@@ -657,7 +657,7 @@ class FlinkJobConfig:
     def dependency_files(self):
         r"""Gets the dependency_files of this FlinkJobConfig.
 
-        用户已上传到DLI资源管理系统的资源包名，用户自定义作业的依赖文件.
+        参数解释:  用户已上传到DLI资源管理系统的资源包名，用户自定义作业的依赖文件 示例: [\"zsdas/wordcount.jar\",\"ygj/flink-dis-to-kafka-v5.jar\"] 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The dependency_files of this FlinkJobConfig.
         :rtype: list[str]
@@ -668,7 +668,7 @@ class FlinkJobConfig:
     def dependency_files(self, dependency_files):
         r"""Sets the dependency_files of this FlinkJobConfig.
 
-        用户已上传到DLI资源管理系统的资源包名，用户自定义作业的依赖文件.
+        参数解释:  用户已上传到DLI资源管理系统的资源包名，用户自定义作业的依赖文件 示例: [\"zsdas/wordcount.jar\",\"ygj/flink-dis-to-kafka-v5.jar\"] 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param dependency_files: The dependency_files of this FlinkJobConfig.
         :type dependency_files: list[str]
@@ -679,7 +679,7 @@ class FlinkJobConfig:
     def executor_number(self):
         r"""Gets the executor_number of this FlinkJobConfig.
 
-        作业使用计算节点个数
+        参数解释:  作业使用计算节点个数 示例: 0 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
 
         :return: The executor_number of this FlinkJobConfig.
         :rtype: int
@@ -690,7 +690,7 @@ class FlinkJobConfig:
     def executor_number(self, executor_number):
         r"""Sets the executor_number of this FlinkJobConfig.
 
-        作业使用计算节点个数
+        参数解释:  作业使用计算节点个数 示例: 0 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
 
         :param executor_number: The executor_number of this FlinkJobConfig.
         :type executor_number: int
@@ -701,7 +701,7 @@ class FlinkJobConfig:
     def executor_cu_number(self):
         r"""Gets the executor_cu_number of this FlinkJobConfig.
 
-        计算节点cu数
+        参数解释:  计算节点cu数 示例: 0 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
 
         :return: The executor_cu_number of this FlinkJobConfig.
         :rtype: int
@@ -712,7 +712,7 @@ class FlinkJobConfig:
     def executor_cu_number(self, executor_cu_number):
         r"""Sets the executor_cu_number of this FlinkJobConfig.
 
-        计算节点cu数
+        参数解释:  计算节点cu数 示例: 0 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
 
         :param executor_cu_number: The executor_cu_number of this FlinkJobConfig.
         :type executor_cu_number: int
@@ -723,7 +723,7 @@ class FlinkJobConfig:
     def resume_checkpoint(self):
         r"""Gets the resume_checkpoint of this FlinkJobConfig.
 
-        异常自动重启时，是否从最新checkpoint恢复，默认false
+        参数解释:  异常自动重启时，是否从最新checkpoint恢复，默认false 示例: 0 约束限制:  无 取值范围: true,false 默认取值: false
 
         :return: The resume_checkpoint of this FlinkJobConfig.
         :rtype: bool
@@ -734,7 +734,7 @@ class FlinkJobConfig:
     def resume_checkpoint(self, resume_checkpoint):
         r"""Sets the resume_checkpoint of this FlinkJobConfig.
 
-        异常自动重启时，是否从最新checkpoint恢复，默认false
+        参数解释:  异常自动重启时，是否从最新checkpoint恢复，默认false 示例: 0 约束限制:  无 取值范围: true,false 默认取值: false
 
         :param resume_checkpoint: The resume_checkpoint of this FlinkJobConfig.
         :type resume_checkpoint: bool
@@ -745,7 +745,7 @@ class FlinkJobConfig:
     def runtime_config(self):
         r"""Gets the runtime_config of this FlinkJobConfig.
 
-        Flink作业运行时自定义优化参数。
+        参数解释: Flink作业运行时自定义优化参数 示例: [{\\\"key\\\":\\\"high-availability\\\",\\\"value\\\":\\\"org.apache.flink.kubernetes.highavailability.KubernetesHaServicesFactory\\\" },{ \\\"key\\\":\\\"kubernetes.jobmanager.replicas\\\",\\\"value\\\":\\\"2\\\" },{ \\\"key\\\":\\\"high-availability.storageDir\\\",\\\"value\\\":\\\"obs://fz-test/test\\\"}] 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The runtime_config of this FlinkJobConfig.
         :rtype: str
@@ -756,7 +756,7 @@ class FlinkJobConfig:
     def runtime_config(self, runtime_config):
         r"""Sets the runtime_config of this FlinkJobConfig.
 
-        Flink作业运行时自定义优化参数。
+        参数解释: Flink作业运行时自定义优化参数 示例: [{\\\"key\\\":\\\"high-availability\\\",\\\"value\\\":\\\"org.apache.flink.kubernetes.highavailability.KubernetesHaServicesFactory\\\" },{ \\\"key\\\":\\\"kubernetes.jobmanager.replicas\\\",\\\"value\\\":\\\"2\\\" },{ \\\"key\\\":\\\"high-availability.storageDir\\\",\\\"value\\\":\\\"obs://fz-test/test\\\"}] 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param runtime_config: The runtime_config of this FlinkJobConfig.
         :type runtime_config: str
@@ -767,7 +767,7 @@ class FlinkJobConfig:
     def graph_editor_enabled(self):
         r"""Gets the graph_editor_enabled of this FlinkJobConfig.
 
-        流图编辑开关。默认为“false。
+        参数解释: 流图编辑开关 示例: false 约束限制:  无 取值范围: 无 默认取值: false
 
         :return: The graph_editor_enabled of this FlinkJobConfig.
         :rtype: bool
@@ -778,7 +778,7 @@ class FlinkJobConfig:
     def graph_editor_enabled(self, graph_editor_enabled):
         r"""Sets the graph_editor_enabled of this FlinkJobConfig.
 
-        流图编辑开关。默认为“false。
+        参数解释: 流图编辑开关 示例: false 约束限制:  无 取值范围: 无 默认取值: false
 
         :param graph_editor_enabled: The graph_editor_enabled of this FlinkJobConfig.
         :type graph_editor_enabled: bool
@@ -789,7 +789,7 @@ class FlinkJobConfig:
     def graph_editor_data(self):
         r"""Gets the graph_editor_data of this FlinkJobConfig.
 
-        流图编辑数据。默认为null。
+        参数解释: 流图编辑数据 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The graph_editor_data of this FlinkJobConfig.
         :rtype: str
@@ -800,7 +800,7 @@ class FlinkJobConfig:
     def graph_editor_data(self, graph_editor_data):
         r"""Sets the graph_editor_data of this FlinkJobConfig.
 
-        流图编辑数据。默认为null。
+        参数解释: 流图编辑数据 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param graph_editor_data: The graph_editor_data of this FlinkJobConfig.
         :type graph_editor_data: str
@@ -811,7 +811,7 @@ class FlinkJobConfig:
     def resume_max_num(self):
         r"""Gets the resume_max_num of this FlinkJobConfig.
 
-        异常重试最大次数。-1代表无限。
+        参数解释: 异常重试最大次数。-1代表无限 示例: -1 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The resume_max_num of this FlinkJobConfig.
         :rtype: int
@@ -822,7 +822,7 @@ class FlinkJobConfig:
     def resume_max_num(self, resume_max_num):
         r"""Sets the resume_max_num of this FlinkJobConfig.
 
-        异常重试最大次数。-1代表无限。
+        参数解释: 异常重试最大次数。-1代表无限 示例: -1 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param resume_max_num: The resume_max_num of this FlinkJobConfig.
         :type resume_max_num: int
@@ -833,7 +833,7 @@ class FlinkJobConfig:
     def checkpoint_path(self):
         r"""Gets the checkpoint_path of this FlinkJobConfig.
 
-        检查点保存路径。
+        参数解释: 检查点保存路径 示例: obs://cwk/checkpoint/ 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The checkpoint_path of this FlinkJobConfig.
         :rtype: str
@@ -844,7 +844,7 @@ class FlinkJobConfig:
     def checkpoint_path(self, checkpoint_path):
         r"""Sets the checkpoint_path of this FlinkJobConfig.
 
-        检查点保存路径。
+        参数解释: 检查点保存路径 示例: obs://cwk/checkpoint/ 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param checkpoint_path: The checkpoint_path of this FlinkJobConfig.
         :type checkpoint_path: str
@@ -855,7 +855,7 @@ class FlinkJobConfig:
     def config_url(self):
         r"""Gets the config_url of this FlinkJobConfig.
 
-        用户上传的config包OBS路径。
+        参数解释: 用户上传的config包OBS路径。 示例: obs://bucket-62099355b894428e8916573ae635f1f9/di-flink/lib/client.jks,obs://bucket-62099355b894428e8916573ae635f1f9/di-flink/lib/client.jks 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The config_url of this FlinkJobConfig.
         :rtype: str
@@ -866,7 +866,7 @@ class FlinkJobConfig:
     def config_url(self, config_url):
         r"""Sets the config_url of this FlinkJobConfig.
 
-        用户上传的config包OBS路径。
+        参数解释: 用户上传的config包OBS路径。 示例: obs://bucket-62099355b894428e8916573ae635f1f9/di-flink/lib/client.jks,obs://bucket-62099355b894428e8916573ae635f1f9/di-flink/lib/client.jks 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param config_url: The config_url of this FlinkJobConfig.
         :type config_url: str
@@ -877,7 +877,7 @@ class FlinkJobConfig:
     def tm_cus(self):
         r"""Gets the tm_cus of this FlinkJobConfig.
 
-        单TM所占CU数。
+        参数解释: 单TM所占CU数 示例: 1 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
 
         :return: The tm_cus of this FlinkJobConfig.
         :rtype: int
@@ -888,7 +888,7 @@ class FlinkJobConfig:
     def tm_cus(self, tm_cus):
         r"""Sets the tm_cus of this FlinkJobConfig.
 
-        单TM所占CU数。
+        参数解释: 单TM所占CU数 示例: 1 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
 
         :param tm_cus: The tm_cus of this FlinkJobConfig.
         :type tm_cus: int
@@ -899,7 +899,7 @@ class FlinkJobConfig:
     def tm_slot_num(self):
         r"""Gets the tm_slot_num of this FlinkJobConfig.
 
-        单TM Slot数。
+        参数解释: 单TM Slot数 示例: 1 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
 
         :return: The tm_slot_num of this FlinkJobConfig.
         :rtype: int
@@ -910,7 +910,7 @@ class FlinkJobConfig:
     def tm_slot_num(self, tm_slot_num):
         r"""Sets the tm_slot_num of this FlinkJobConfig.
 
-        单TM Slot数。
+        参数解释: 单TM Slot数 示例: 1 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
 
         :param tm_slot_num: The tm_slot_num of this FlinkJobConfig.
         :type tm_slot_num: int
@@ -921,7 +921,7 @@ class FlinkJobConfig:
     def image(self):
         r"""Gets the image of this FlinkJobConfig.
 
-        自定义镜像。格式为：组织名/镜像名:镜像版本。当用户设置“feature”为“custom”时，该参数生效。用户可通过与“feature”参数配合使用，指定作业运行使用自定义的Flink镜像。
+        参数解释: 自定义镜像。格式为：组织名/镜像名:镜像版本。当用户设置“feature”为“custom”时，该参数生效。用户可通过与“feature”参数配合使用，指定作业运行使用自定义的Flink镜像 示例: dli/spark:2.4.8 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The image of this FlinkJobConfig.
         :rtype: str
@@ -932,7 +932,7 @@ class FlinkJobConfig:
     def image(self, image):
         r"""Sets the image of this FlinkJobConfig.
 
-        自定义镜像。格式为：组织名/镜像名:镜像版本。当用户设置“feature”为“custom”时，该参数生效。用户可通过与“feature”参数配合使用，指定作业运行使用自定义的Flink镜像。
+        参数解释: 自定义镜像。格式为：组织名/镜像名:镜像版本。当用户设置“feature”为“custom”时，该参数生效。用户可通过与“feature”参数配合使用，指定作业运行使用自定义的Flink镜像 示例: dli/spark:2.4.8 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param image: The image of this FlinkJobConfig.
         :type image: str
@@ -943,7 +943,7 @@ class FlinkJobConfig:
     def feature(self):
         r"""Gets the feature of this FlinkJobConfig.
 
-        自定义作业特性。表示用户作业使用的Flink镜像类型。basic：表示使用DLI提供的基础Flink镜像。custom：表示使用用户自定义的Flink镜像。
+        参数解释: 自定义作业特性。表示用户作业使用的Flink镜像类型。basic：表示使用DLI提供的基础Flink镜像。custom：表示使用用户自定义的Flink镜像 示例: basic 约束限制:  无 取值范围: basic：表示使用DLI提供的基础Flink镜像 custom：表示使用用户自定义的Flink镜像 默认取值: 无
 
         :return: The feature of this FlinkJobConfig.
         :rtype: str
@@ -954,7 +954,7 @@ class FlinkJobConfig:
     def feature(self, feature):
         r"""Sets the feature of this FlinkJobConfig.
 
-        自定义作业特性。表示用户作业使用的Flink镜像类型。basic：表示使用DLI提供的基础Flink镜像。custom：表示使用用户自定义的Flink镜像。
+        参数解释: 自定义作业特性。表示用户作业使用的Flink镜像类型。basic：表示使用DLI提供的基础Flink镜像。custom：表示使用用户自定义的Flink镜像 示例: basic 约束限制:  无 取值范围: basic：表示使用DLI提供的基础Flink镜像 custom：表示使用用户自定义的Flink镜像 默认取值: 无
 
         :param feature: The feature of this FlinkJobConfig.
         :type feature: str
@@ -965,7 +965,7 @@ class FlinkJobConfig:
     def flink_version(self):
         r"""Gets the flink_version of this FlinkJobConfig.
 
-        Flink版本。当用户设置“feature”为“basic”时，该参数生效。用户可通过与“feature”参数配合使用，指定作业运行使用的DLI基础Flink镜像的版本。
+        参数解释: Flink版本。当用户设置“feature”为“basic”时，该参数生效。用户可通过与“feature”参数配合使用，指定作业运行使用的DLI基础Flink镜像的版本 示例: 1.17 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The flink_version of this FlinkJobConfig.
         :rtype: str
@@ -976,7 +976,7 @@ class FlinkJobConfig:
     def flink_version(self, flink_version):
         r"""Sets the flink_version of this FlinkJobConfig.
 
-        Flink版本。当用户设置“feature”为“basic”时，该参数生效。用户可通过与“feature”参数配合使用，指定作业运行使用的DLI基础Flink镜像的版本。
+        参数解释: Flink版本。当用户设置“feature”为“basic”时，该参数生效。用户可通过与“feature”参数配合使用，指定作业运行使用的DLI基础Flink镜像的版本 示例: 1.17 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param flink_version: The flink_version of this FlinkJobConfig.
         :type flink_version: str
@@ -987,7 +987,7 @@ class FlinkJobConfig:
     def operator_config(self):
         r"""Gets the operator_config of this FlinkJobConfig.
 
-        各算子并行度参数，以json的形式展示各算子id和并行度。
+        参数解释: 各算子并行度参数，以json的形式展示各算子id和并行度 示例: '{\"operator_list\":[{\"id\":\"0a448493b4782967b150582570326227\",\"parallelism\":1},{\"id\":\"6d2677a0ecc3fd8df0b72ec675edf8f4\",\"parallelism\":1},{\"id\":\"ea632d67b7d595e5b851708ae9ad79d6\",\"parallelism\":1},{\"id\":\"ddb598ad156ed281023ba4eebbe487e3\",\"parallelism\":1},{\"id\":\"bc764cd8ddf7a0cff126f51c16239658\",\"parallelism\":1}]}' 约束限制:  符合Json格式的字符串 取值范围: 无 默认取值: 无
 
         :return: The operator_config of this FlinkJobConfig.
         :rtype: str
@@ -998,7 +998,7 @@ class FlinkJobConfig:
     def operator_config(self, operator_config):
         r"""Sets the operator_config of this FlinkJobConfig.
 
-        各算子并行度参数，以json的形式展示各算子id和并行度。
+        参数解释: 各算子并行度参数，以json的形式展示各算子id和并行度 示例: '{\"operator_list\":[{\"id\":\"0a448493b4782967b150582570326227\",\"parallelism\":1},{\"id\":\"6d2677a0ecc3fd8df0b72ec675edf8f4\",\"parallelism\":1},{\"id\":\"ea632d67b7d595e5b851708ae9ad79d6\",\"parallelism\":1},{\"id\":\"ddb598ad156ed281023ba4eebbe487e3\",\"parallelism\":1},{\"id\":\"bc764cd8ddf7a0cff126f51c16239658\",\"parallelism\":1}]}' 约束限制:  符合Json格式的字符串 取值范围: 无 默认取值: 无
 
         :param operator_config: The operator_config of this FlinkJobConfig.
         :type operator_config: str
@@ -1009,7 +1009,7 @@ class FlinkJobConfig:
     def static_estimator_config(self):
         r"""Gets the static_estimator_config of this FlinkJobConfig.
 
-        静态流图资源预估参数，以json的形式展示。
+        参数解释: 静态流图资源预估参数，以json的形式展示 示例: '{\"operator_list\":[{\"id\":\"0a448493b4782967b150582570326227\",\"parallelism\":1},{\"id\":\"6d2677a0ecc3fd8df0b72ec675edf8f4\",\"parallelism\":1},{\"id\":\"ea632d67b7d595e5b851708ae9ad79d6\",\"parallelism\":1},{\"id\":\"ddb598ad156ed281023ba4eebbe487e3\",\"parallelism\":1},{\"id\":\"bc764cd8ddf7a0cff126f51c16239658\",\"parallelism\":1}]}' 约束限制:  符合Json格式的字符串 取值范围: 无 默认取值: 无
 
         :return: The static_estimator_config of this FlinkJobConfig.
         :rtype: str
@@ -1020,7 +1020,7 @@ class FlinkJobConfig:
     def static_estimator_config(self, static_estimator_config):
         r"""Sets the static_estimator_config of this FlinkJobConfig.
 
-        静态流图资源预估参数，以json的形式展示。
+        参数解释: 静态流图资源预估参数，以json的形式展示 示例: '{\"operator_list\":[{\"id\":\"0a448493b4782967b150582570326227\",\"parallelism\":1},{\"id\":\"6d2677a0ecc3fd8df0b72ec675edf8f4\",\"parallelism\":1},{\"id\":\"ea632d67b7d595e5b851708ae9ad79d6\",\"parallelism\":1},{\"id\":\"ddb598ad156ed281023ba4eebbe487e3\",\"parallelism\":1},{\"id\":\"bc764cd8ddf7a0cff126f51c16239658\",\"parallelism\":1}]}' 约束限制:  符合Json格式的字符串 取值范围: 无 默认取值: 无
 
         :param static_estimator_config: The static_estimator_config of this FlinkJobConfig.
         :type static_estimator_config: str
@@ -1031,6 +1031,8 @@ class FlinkJobConfig:
     def real_cu_number(self):
         r"""Gets the real_cu_number of this FlinkJobConfig.
 
+        参数解释: 实际使用的CU数 示例: 0 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 0
+
         :return: The real_cu_number of this FlinkJobConfig.
         :rtype: int
         """
@@ -1039,6 +1041,8 @@ class FlinkJobConfig:
     @real_cu_number.setter
     def real_cu_number(self, real_cu_number):
         r"""Sets the real_cu_number of this FlinkJobConfig.
+
+        参数解释: 实际使用的CU数 示例: 0 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 0
 
         :param real_cu_number: The real_cu_number of this FlinkJobConfig.
         :type real_cu_number: int

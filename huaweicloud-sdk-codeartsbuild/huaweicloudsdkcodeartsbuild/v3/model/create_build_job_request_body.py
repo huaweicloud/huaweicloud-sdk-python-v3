@@ -23,10 +23,14 @@ class CreateBuildJobRequestBody:
         'auto_update_sub_module': 'str',
         'flavor': 'str',
         'parameters': 'list[CreateBuildJobParameter]',
+        'group_id': 'str',
+        'timeout': 'CreateBuildTimeout',
         'scms': 'list[CreateBuildJobScm]',
         'steps': 'list[CreateBuildJobSteps]',
         'host_type': 'str',
-        'build_config_type': 'str'
+        'build_config_type': 'str',
+        'build_if_code_updated': 'bool',
+        'triggers': 'list[Trigger]'
     }
 
     attribute_map = {
@@ -36,13 +40,17 @@ class CreateBuildJobRequestBody:
         'auto_update_sub_module': 'auto_update_sub_module',
         'flavor': 'flavor',
         'parameters': 'parameters',
+        'group_id': 'group_id',
+        'timeout': 'timeout',
         'scms': 'scms',
         'steps': 'steps',
         'host_type': 'host_type',
-        'build_config_type': 'build_config_type'
+        'build_config_type': 'build_config_type',
+        'build_if_code_updated': 'build_if_code_updated',
+        'triggers': 'triggers'
     }
 
-    def __init__(self, arch=None, project_id=None, job_name=None, auto_update_sub_module=None, flavor=None, parameters=None, scms=None, steps=None, host_type=None, build_config_type=None):
+    def __init__(self, arch=None, project_id=None, job_name=None, auto_update_sub_module=None, flavor=None, parameters=None, group_id=None, timeout=None, scms=None, steps=None, host_type=None, build_config_type=None, build_if_code_updated=None, triggers=None):
         r"""CreateBuildJobRequestBody
 
         The model defined in huaweicloud sdk
@@ -59,6 +67,10 @@ class CreateBuildJobRequestBody:
         :type flavor: str
         :param parameters: 构建执行参数列表
         :type parameters: list[:class:`huaweicloudsdkcodeartsbuild.v3.CreateBuildJobParameter`]
+        :param group_id: 任务分组id
+        :type group_id: str
+        :param timeout: 
+        :type timeout: :class:`huaweicloudsdkcodeartsbuild.v3.CreateBuildTimeout`
         :param scms: 构建执行SCM
         :type scms: list[:class:`huaweicloudsdkcodeartsbuild.v3.CreateBuildJobScm`]
         :param steps: 构建执行的步骤
@@ -67,6 +79,10 @@ class CreateBuildJobRequestBody:
         :type host_type: str
         :param build_config_type: 构建的配置类型
         :type build_config_type: str
+        :param build_if_code_updated: 提交代码触发构建开关
+        :type build_if_code_updated: bool
+        :param triggers: 定时任务触发器集合
+        :type triggers: list[:class:`huaweicloudsdkcodeartsbuild.v3.Trigger`]
         """
         
         
@@ -77,10 +93,14 @@ class CreateBuildJobRequestBody:
         self._auto_update_sub_module = None
         self._flavor = None
         self._parameters = None
+        self._group_id = None
+        self._timeout = None
         self._scms = None
         self._steps = None
         self._host_type = None
         self._build_config_type = None
+        self._build_if_code_updated = None
+        self._triggers = None
         self.discriminator = None
 
         self.arch = arch
@@ -92,6 +112,10 @@ class CreateBuildJobRequestBody:
             self.flavor = flavor
         if parameters is not None:
             self.parameters = parameters
+        if group_id is not None:
+            self.group_id = group_id
+        if timeout is not None:
+            self.timeout = timeout
         if scms is not None:
             self.scms = scms
         self.steps = steps
@@ -99,6 +123,10 @@ class CreateBuildJobRequestBody:
             self.host_type = host_type
         if build_config_type is not None:
             self.build_config_type = build_config_type
+        if build_if_code_updated is not None:
+            self.build_if_code_updated = build_if_code_updated
+        if triggers is not None:
+            self.triggers = triggers
 
     @property
     def arch(self):
@@ -233,6 +261,46 @@ class CreateBuildJobRequestBody:
         self._parameters = parameters
 
     @property
+    def group_id(self):
+        r"""Gets the group_id of this CreateBuildJobRequestBody.
+
+        任务分组id
+
+        :return: The group_id of this CreateBuildJobRequestBody.
+        :rtype: str
+        """
+        return self._group_id
+
+    @group_id.setter
+    def group_id(self, group_id):
+        r"""Sets the group_id of this CreateBuildJobRequestBody.
+
+        任务分组id
+
+        :param group_id: The group_id of this CreateBuildJobRequestBody.
+        :type group_id: str
+        """
+        self._group_id = group_id
+
+    @property
+    def timeout(self):
+        r"""Gets the timeout of this CreateBuildJobRequestBody.
+
+        :return: The timeout of this CreateBuildJobRequestBody.
+        :rtype: :class:`huaweicloudsdkcodeartsbuild.v3.CreateBuildTimeout`
+        """
+        return self._timeout
+
+    @timeout.setter
+    def timeout(self, timeout):
+        r"""Sets the timeout of this CreateBuildJobRequestBody.
+
+        :param timeout: The timeout of this CreateBuildJobRequestBody.
+        :type timeout: :class:`huaweicloudsdkcodeartsbuild.v3.CreateBuildTimeout`
+        """
+        self._timeout = timeout
+
+    @property
     def scms(self):
         r"""Gets the scms of this CreateBuildJobRequestBody.
 
@@ -319,6 +387,50 @@ class CreateBuildJobRequestBody:
         :type build_config_type: str
         """
         self._build_config_type = build_config_type
+
+    @property
+    def build_if_code_updated(self):
+        r"""Gets the build_if_code_updated of this CreateBuildJobRequestBody.
+
+        提交代码触发构建开关
+
+        :return: The build_if_code_updated of this CreateBuildJobRequestBody.
+        :rtype: bool
+        """
+        return self._build_if_code_updated
+
+    @build_if_code_updated.setter
+    def build_if_code_updated(self, build_if_code_updated):
+        r"""Sets the build_if_code_updated of this CreateBuildJobRequestBody.
+
+        提交代码触发构建开关
+
+        :param build_if_code_updated: The build_if_code_updated of this CreateBuildJobRequestBody.
+        :type build_if_code_updated: bool
+        """
+        self._build_if_code_updated = build_if_code_updated
+
+    @property
+    def triggers(self):
+        r"""Gets the triggers of this CreateBuildJobRequestBody.
+
+        定时任务触发器集合
+
+        :return: The triggers of this CreateBuildJobRequestBody.
+        :rtype: list[:class:`huaweicloudsdkcodeartsbuild.v3.Trigger`]
+        """
+        return self._triggers
+
+    @triggers.setter
+    def triggers(self, triggers):
+        r"""Sets the triggers of this CreateBuildJobRequestBody.
+
+        定时任务触发器集合
+
+        :param triggers: The triggers of this CreateBuildJobRequestBody.
+        :type triggers: list[:class:`huaweicloudsdkcodeartsbuild.v3.Trigger`]
+        """
+        self._triggers = triggers
 
     def to_dict(self):
         """Returns the model properties as a dict"""

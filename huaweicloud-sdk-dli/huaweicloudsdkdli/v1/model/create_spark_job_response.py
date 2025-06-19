@@ -58,35 +58,35 @@ class CreateSparkJobResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param id: Batch作业的id。
+        :param id: 参数解释:   Batch作业的id 示例: 80ceaaff-3cfc-4162-a56f-70031ea4fa91 约束限制:  无 取值范围: 无 默认取值: 无
         :type id: str
-        :param state: Batch作业的状态。包括： starting：正在启动；running：正在执行任务；dead：session已退出；success：session停止成功；recovering：正在恢复。
+        :param state: 参数解释:   Batch作业的状态 示例: starting 约束限制:  无 取值范围: starting：正在启动 running：正在执行任务 dead：session已退出 success：session停止成功 recovering：正在恢复 默认取值: 无
         :type state: str
-        :param app_id: 批处理作业的后台app id。
+        :param app_id: 参数解释:   批处理作业的后台app id 示例: batch-session-ca2a4042-0db9-45ab-bc7f-ae6a56846348:30671 约束限制:  无 取值范围: 无 默认取值: 无
         :type app_id: str
-        :param log: 显示当前Batch作业的最后10条记录。
+        :param log: 参数解释:   显示当前Batch作业的最后10条记录 约束限制:  无 取值范围: 无 默认取值: 无
         :type log: list[str]
-        :param sc_type: 计算资源类型。用户自定义时返回CUSTOMIZED。
+        :param sc_type: 参数解释: 计算资源类型，目前可接受参数A, B, C。如果不指定，则按最小类型创建。 示例: A 约束限制: 无 取值范围: A：物理资源：8核32G内存，driverCores：2；executorCores：1；driverMemory：7G；executorMemory：4G；numExecutor：6 B：16核64G内存,2,2,7G,8G,7 C：32核128G内存,4,2,15G,8G,14 默认取值: 无
         :type sc_type: str
-        :param cluster_name: 会话所在队列。
+        :param cluster_name: 参数解释:   会话所在队列 约束限制:  无 取值范围: 无 默认取值: 无
         :type cluster_name: str
-        :param create_time: Batch的创建时间。是单位为“毫秒”的时间戳。
+        :param create_time: 参数解释:   Batch的创建时间。是单位为“毫秒”的时间戳 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
         :type create_time: int
-        :param name: 创建时用户指定的批处理名称，不能超过128个字符。
+        :param name: 参数解释:   创建时用户指定的批处理名称，不能超过128个字符 示例: test_spark 约束限制:  不超过128个字符的字符串 取值范围: 无 默认取值: 无
         :type name: str
-        :param owner: 批处理作业所属用户
+        :param owner: 参数解释:   批处理作业所属用户 示例: ei_dlics_d00352431 约束限制:  无 取值范围: 无 默认取值: 无
         :type owner: str
-        :param proxy_user: 批处理作业所属代理用户（资源租户）。
+        :param proxy_user: 参数解释:  批处理作业所属代理用户（资源租户） 示例: tenant1 约束限制:  无 取值范围: 无 默认取值: 无
         :type proxy_user: str
-        :param kind: 批处理作业类型，只支持spark类型参数。
+        :param kind: 参数解释:  批处理作业类型，只支持spark类型参数 示例: spark 约束限制:  无 取值范围: spark 默认取值: 无
         :type kind: str
-        :param queue: 用于指定队列，填写已创建DLI的队列名
+        :param queue: 参数解释:  用于指定队列，填写已创建DLI的队列名 示例: gen0218 约束限制:  无 取值范围: 无 默认取值: 无
         :type queue: str
-        :param image: 自定义镜像。格式为：组织名/镜像名:镜像版本。
+        :param image: 参数解释:  自定义镜像。格式为：组织名/镜像名:镜像版本 示例: ceshi/spark_general-x86_64:3.3.1-2.3.7.1720240718867424736954752.tensorflow 约束限制:  无 取值范围: 无 默认取值: 无
         :type image: str
-        :param update_time: 更新时间
+        :param update_time: 参数解释:  批处理作业的更新时间。是单位为“毫秒”的时间戳 示例: 1739867779341 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
         :type update_time: int
-        :param duration: 作业运行时长，单位毫秒。
+        :param duration: 参数解释:  作业运行时长，单位毫秒 示例: 213038 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
         :type duration: int
         """
         
@@ -144,7 +144,7 @@ class CreateSparkJobResponse(SdkResponse):
     def id(self):
         r"""Gets the id of this CreateSparkJobResponse.
 
-        Batch作业的id。
+        参数解释:   Batch作业的id 示例: 80ceaaff-3cfc-4162-a56f-70031ea4fa91 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The id of this CreateSparkJobResponse.
         :rtype: str
@@ -155,7 +155,7 @@ class CreateSparkJobResponse(SdkResponse):
     def id(self, id):
         r"""Sets the id of this CreateSparkJobResponse.
 
-        Batch作业的id。
+        参数解释:   Batch作业的id 示例: 80ceaaff-3cfc-4162-a56f-70031ea4fa91 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param id: The id of this CreateSparkJobResponse.
         :type id: str
@@ -166,7 +166,7 @@ class CreateSparkJobResponse(SdkResponse):
     def state(self):
         r"""Gets the state of this CreateSparkJobResponse.
 
-        Batch作业的状态。包括： starting：正在启动；running：正在执行任务；dead：session已退出；success：session停止成功；recovering：正在恢复。
+        参数解释:   Batch作业的状态 示例: starting 约束限制:  无 取值范围: starting：正在启动 running：正在执行任务 dead：session已退出 success：session停止成功 recovering：正在恢复 默认取值: 无
 
         :return: The state of this CreateSparkJobResponse.
         :rtype: str
@@ -177,7 +177,7 @@ class CreateSparkJobResponse(SdkResponse):
     def state(self, state):
         r"""Sets the state of this CreateSparkJobResponse.
 
-        Batch作业的状态。包括： starting：正在启动；running：正在执行任务；dead：session已退出；success：session停止成功；recovering：正在恢复。
+        参数解释:   Batch作业的状态 示例: starting 约束限制:  无 取值范围: starting：正在启动 running：正在执行任务 dead：session已退出 success：session停止成功 recovering：正在恢复 默认取值: 无
 
         :param state: The state of this CreateSparkJobResponse.
         :type state: str
@@ -188,7 +188,7 @@ class CreateSparkJobResponse(SdkResponse):
     def app_id(self):
         r"""Gets the app_id of this CreateSparkJobResponse.
 
-        批处理作业的后台app id。
+        参数解释:   批处理作业的后台app id 示例: batch-session-ca2a4042-0db9-45ab-bc7f-ae6a56846348:30671 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The app_id of this CreateSparkJobResponse.
         :rtype: str
@@ -199,7 +199,7 @@ class CreateSparkJobResponse(SdkResponse):
     def app_id(self, app_id):
         r"""Sets the app_id of this CreateSparkJobResponse.
 
-        批处理作业的后台app id。
+        参数解释:   批处理作业的后台app id 示例: batch-session-ca2a4042-0db9-45ab-bc7f-ae6a56846348:30671 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param app_id: The app_id of this CreateSparkJobResponse.
         :type app_id: str
@@ -210,7 +210,7 @@ class CreateSparkJobResponse(SdkResponse):
     def log(self):
         r"""Gets the log of this CreateSparkJobResponse.
 
-        显示当前Batch作业的最后10条记录。
+        参数解释:   显示当前Batch作业的最后10条记录 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The log of this CreateSparkJobResponse.
         :rtype: list[str]
@@ -221,7 +221,7 @@ class CreateSparkJobResponse(SdkResponse):
     def log(self, log):
         r"""Sets the log of this CreateSparkJobResponse.
 
-        显示当前Batch作业的最后10条记录。
+        参数解释:   显示当前Batch作业的最后10条记录 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param log: The log of this CreateSparkJobResponse.
         :type log: list[str]
@@ -232,7 +232,7 @@ class CreateSparkJobResponse(SdkResponse):
     def sc_type(self):
         r"""Gets the sc_type of this CreateSparkJobResponse.
 
-        计算资源类型。用户自定义时返回CUSTOMIZED。
+        参数解释: 计算资源类型，目前可接受参数A, B, C。如果不指定，则按最小类型创建。 示例: A 约束限制: 无 取值范围: A：物理资源：8核32G内存，driverCores：2；executorCores：1；driverMemory：7G；executorMemory：4G；numExecutor：6 B：16核64G内存,2,2,7G,8G,7 C：32核128G内存,4,2,15G,8G,14 默认取值: 无
 
         :return: The sc_type of this CreateSparkJobResponse.
         :rtype: str
@@ -243,7 +243,7 @@ class CreateSparkJobResponse(SdkResponse):
     def sc_type(self, sc_type):
         r"""Sets the sc_type of this CreateSparkJobResponse.
 
-        计算资源类型。用户自定义时返回CUSTOMIZED。
+        参数解释: 计算资源类型，目前可接受参数A, B, C。如果不指定，则按最小类型创建。 示例: A 约束限制: 无 取值范围: A：物理资源：8核32G内存，driverCores：2；executorCores：1；driverMemory：7G；executorMemory：4G；numExecutor：6 B：16核64G内存,2,2,7G,8G,7 C：32核128G内存,4,2,15G,8G,14 默认取值: 无
 
         :param sc_type: The sc_type of this CreateSparkJobResponse.
         :type sc_type: str
@@ -254,7 +254,7 @@ class CreateSparkJobResponse(SdkResponse):
     def cluster_name(self):
         r"""Gets the cluster_name of this CreateSparkJobResponse.
 
-        会话所在队列。
+        参数解释:   会话所在队列 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The cluster_name of this CreateSparkJobResponse.
         :rtype: str
@@ -265,7 +265,7 @@ class CreateSparkJobResponse(SdkResponse):
     def cluster_name(self, cluster_name):
         r"""Sets the cluster_name of this CreateSparkJobResponse.
 
-        会话所在队列。
+        参数解释:   会话所在队列 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param cluster_name: The cluster_name of this CreateSparkJobResponse.
         :type cluster_name: str
@@ -276,7 +276,7 @@ class CreateSparkJobResponse(SdkResponse):
     def create_time(self):
         r"""Gets the create_time of this CreateSparkJobResponse.
 
-        Batch的创建时间。是单位为“毫秒”的时间戳。
+        参数解释:   Batch的创建时间。是单位为“毫秒”的时间戳 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
 
         :return: The create_time of this CreateSparkJobResponse.
         :rtype: int
@@ -287,7 +287,7 @@ class CreateSparkJobResponse(SdkResponse):
     def create_time(self, create_time):
         r"""Sets the create_time of this CreateSparkJobResponse.
 
-        Batch的创建时间。是单位为“毫秒”的时间戳。
+        参数解释:   Batch的创建时间。是单位为“毫秒”的时间戳 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
 
         :param create_time: The create_time of this CreateSparkJobResponse.
         :type create_time: int
@@ -298,7 +298,7 @@ class CreateSparkJobResponse(SdkResponse):
     def name(self):
         r"""Gets the name of this CreateSparkJobResponse.
 
-        创建时用户指定的批处理名称，不能超过128个字符。
+        参数解释:   创建时用户指定的批处理名称，不能超过128个字符 示例: test_spark 约束限制:  不超过128个字符的字符串 取值范围: 无 默认取值: 无
 
         :return: The name of this CreateSparkJobResponse.
         :rtype: str
@@ -309,7 +309,7 @@ class CreateSparkJobResponse(SdkResponse):
     def name(self, name):
         r"""Sets the name of this CreateSparkJobResponse.
 
-        创建时用户指定的批处理名称，不能超过128个字符。
+        参数解释:   创建时用户指定的批处理名称，不能超过128个字符 示例: test_spark 约束限制:  不超过128个字符的字符串 取值范围: 无 默认取值: 无
 
         :param name: The name of this CreateSparkJobResponse.
         :type name: str
@@ -320,7 +320,7 @@ class CreateSparkJobResponse(SdkResponse):
     def owner(self):
         r"""Gets the owner of this CreateSparkJobResponse.
 
-        批处理作业所属用户
+        参数解释:   批处理作业所属用户 示例: ei_dlics_d00352431 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The owner of this CreateSparkJobResponse.
         :rtype: str
@@ -331,7 +331,7 @@ class CreateSparkJobResponse(SdkResponse):
     def owner(self, owner):
         r"""Sets the owner of this CreateSparkJobResponse.
 
-        批处理作业所属用户
+        参数解释:   批处理作业所属用户 示例: ei_dlics_d00352431 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param owner: The owner of this CreateSparkJobResponse.
         :type owner: str
@@ -342,7 +342,7 @@ class CreateSparkJobResponse(SdkResponse):
     def proxy_user(self):
         r"""Gets the proxy_user of this CreateSparkJobResponse.
 
-        批处理作业所属代理用户（资源租户）。
+        参数解释:  批处理作业所属代理用户（资源租户） 示例: tenant1 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The proxy_user of this CreateSparkJobResponse.
         :rtype: str
@@ -353,7 +353,7 @@ class CreateSparkJobResponse(SdkResponse):
     def proxy_user(self, proxy_user):
         r"""Sets the proxy_user of this CreateSparkJobResponse.
 
-        批处理作业所属代理用户（资源租户）。
+        参数解释:  批处理作业所属代理用户（资源租户） 示例: tenant1 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param proxy_user: The proxy_user of this CreateSparkJobResponse.
         :type proxy_user: str
@@ -364,7 +364,7 @@ class CreateSparkJobResponse(SdkResponse):
     def kind(self):
         r"""Gets the kind of this CreateSparkJobResponse.
 
-        批处理作业类型，只支持spark类型参数。
+        参数解释:  批处理作业类型，只支持spark类型参数 示例: spark 约束限制:  无 取值范围: spark 默认取值: 无
 
         :return: The kind of this CreateSparkJobResponse.
         :rtype: str
@@ -375,7 +375,7 @@ class CreateSparkJobResponse(SdkResponse):
     def kind(self, kind):
         r"""Sets the kind of this CreateSparkJobResponse.
 
-        批处理作业类型，只支持spark类型参数。
+        参数解释:  批处理作业类型，只支持spark类型参数 示例: spark 约束限制:  无 取值范围: spark 默认取值: 无
 
         :param kind: The kind of this CreateSparkJobResponse.
         :type kind: str
@@ -386,7 +386,7 @@ class CreateSparkJobResponse(SdkResponse):
     def queue(self):
         r"""Gets the queue of this CreateSparkJobResponse.
 
-        用于指定队列，填写已创建DLI的队列名
+        参数解释:  用于指定队列，填写已创建DLI的队列名 示例: gen0218 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The queue of this CreateSparkJobResponse.
         :rtype: str
@@ -397,7 +397,7 @@ class CreateSparkJobResponse(SdkResponse):
     def queue(self, queue):
         r"""Sets the queue of this CreateSparkJobResponse.
 
-        用于指定队列，填写已创建DLI的队列名
+        参数解释:  用于指定队列，填写已创建DLI的队列名 示例: gen0218 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param queue: The queue of this CreateSparkJobResponse.
         :type queue: str
@@ -408,7 +408,7 @@ class CreateSparkJobResponse(SdkResponse):
     def image(self):
         r"""Gets the image of this CreateSparkJobResponse.
 
-        自定义镜像。格式为：组织名/镜像名:镜像版本。
+        参数解释:  自定义镜像。格式为：组织名/镜像名:镜像版本 示例: ceshi/spark_general-x86_64:3.3.1-2.3.7.1720240718867424736954752.tensorflow 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The image of this CreateSparkJobResponse.
         :rtype: str
@@ -419,7 +419,7 @@ class CreateSparkJobResponse(SdkResponse):
     def image(self, image):
         r"""Sets the image of this CreateSparkJobResponse.
 
-        自定义镜像。格式为：组织名/镜像名:镜像版本。
+        参数解释:  自定义镜像。格式为：组织名/镜像名:镜像版本 示例: ceshi/spark_general-x86_64:3.3.1-2.3.7.1720240718867424736954752.tensorflow 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param image: The image of this CreateSparkJobResponse.
         :type image: str
@@ -430,7 +430,7 @@ class CreateSparkJobResponse(SdkResponse):
     def update_time(self):
         r"""Gets the update_time of this CreateSparkJobResponse.
 
-        更新时间
+        参数解释:  批处理作业的更新时间。是单位为“毫秒”的时间戳 示例: 1739867779341 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
 
         :return: The update_time of this CreateSparkJobResponse.
         :rtype: int
@@ -441,7 +441,7 @@ class CreateSparkJobResponse(SdkResponse):
     def update_time(self, update_time):
         r"""Sets the update_time of this CreateSparkJobResponse.
 
-        更新时间
+        参数解释:  批处理作业的更新时间。是单位为“毫秒”的时间戳 示例: 1739867779341 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
 
         :param update_time: The update_time of this CreateSparkJobResponse.
         :type update_time: int
@@ -452,7 +452,7 @@ class CreateSparkJobResponse(SdkResponse):
     def duration(self):
         r"""Gets the duration of this CreateSparkJobResponse.
 
-        作业运行时长，单位毫秒。
+        参数解释:  作业运行时长，单位毫秒 示例: 213038 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
 
         :return: The duration of this CreateSparkJobResponse.
         :rtype: int
@@ -463,7 +463,7 @@ class CreateSparkJobResponse(SdkResponse):
     def duration(self, duration):
         r"""Sets the duration of this CreateSparkJobResponse.
 
-        作业运行时长，单位毫秒。
+        参数解释:  作业运行时长，单位毫秒 示例: 213038 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
 
         :param duration: The duration of this CreateSparkJobResponse.
         :type duration: int

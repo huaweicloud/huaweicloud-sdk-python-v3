@@ -26,7 +26,8 @@ class EnhancedConnection:
         'dest_network_id': 'str',
         'create_time': 'int',
         'hosts': 'list[EnhancedConnectionHost]',
-        'is_privis': 'bool'
+        'is_privis': 'bool',
+        'ipv6_enable': 'bool'
     }
 
     attribute_map = {
@@ -39,10 +40,11 @@ class EnhancedConnection:
         'dest_network_id': 'dest_network_id',
         'create_time': 'create_time',
         'hosts': 'hosts',
-        'is_privis': 'isPrivis'
+        'is_privis': 'isPrivis',
+        'ipv6_enable': 'ipv6_enable'
     }
 
-    def __init__(self, id=None, name=None, status=None, available_queue_info=None, elastic_resource_pools=None, dest_vpc_id=None, dest_network_id=None, create_time=None, hosts=None, is_privis=None):
+    def __init__(self, id=None, name=None, status=None, available_queue_info=None, elastic_resource_pools=None, dest_vpc_id=None, dest_network_id=None, create_time=None, hosts=None, is_privis=None, ipv6_enable=None):
         r"""EnhancedConnection
 
         The model defined in huaweicloud sdk
@@ -67,6 +69,8 @@ class EnhancedConnection:
         :type hosts: list[:class:`huaweicloudsdkdli.v1.EnhancedConnectionHost`]
         :param is_privis: 该增强跨源连接如果做过项目赋权，则该字段是\&quot;false\&quot;，否则为\&quot;true\&quot;。
         :type is_privis: bool
+        :param ipv6_enable: 是否启用IPv6。
+        :type ipv6_enable: bool
         """
         
         
@@ -81,6 +85,7 @@ class EnhancedConnection:
         self._create_time = None
         self._hosts = None
         self._is_privis = None
+        self._ipv6_enable = None
         self.discriminator = None
 
         if id is not None:
@@ -103,6 +108,8 @@ class EnhancedConnection:
             self.hosts = hosts
         if is_privis is not None:
             self.is_privis = is_privis
+        if ipv6_enable is not None:
+            self.ipv6_enable = ipv6_enable
 
     @property
     def id(self):
@@ -323,6 +330,28 @@ class EnhancedConnection:
         :type is_privis: bool
         """
         self._is_privis = is_privis
+
+    @property
+    def ipv6_enable(self):
+        r"""Gets the ipv6_enable of this EnhancedConnection.
+
+        是否启用IPv6。
+
+        :return: The ipv6_enable of this EnhancedConnection.
+        :rtype: bool
+        """
+        return self._ipv6_enable
+
+    @ipv6_enable.setter
+    def ipv6_enable(self, ipv6_enable):
+        r"""Sets the ipv6_enable of this EnhancedConnection.
+
+        是否启用IPv6。
+
+        :param ipv6_enable: The ipv6_enable of this EnhancedConnection.
+        :type ipv6_enable: bool
+        """
+        self._ipv6_enable = ipv6_enable
 
     def to_dict(self):
         """Returns the model properties as a dict"""

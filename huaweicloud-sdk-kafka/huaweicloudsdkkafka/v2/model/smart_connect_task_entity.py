@@ -47,25 +47,25 @@ class SmartConnectTaskEntity:
 
         The model defined in huaweicloud sdk
 
-        :param task_name: SmartConnect任务名称。
+        :param task_name: **参数解释**： Smart Connect任务名称。 **取值范围**： 不涉及。
         :type task_name: str
-        :param topics: SmartConnect任务配置的Topic。
+        :param topics: **参数解释**： Smart Connect任务配置的Topic。 **取值范围**： 不涉及。
         :type topics: str
-        :param topics_regex: SmartConnect任务配置的Topic正则表达式。
+        :param topics_regex: **参数解释**： Smart Connect任务配置的Topic正则表达式。 **取值范围**： 不涉及。
         :type topics_regex: str
-        :param source_type: SmartConnect任务的源端类型。
+        :param source_type: **参数解释**： Smart Connect任务的源端类型。 **取值范围**： - NONE：不配置。 - KAFKA_REPLICATOR_SOURCE：Kafka数据复制。
         :type source_type: str
         :param source_task: 
         :type source_task: :class:`huaweicloudsdkkafka.v2.SmartConnectTaskRespSourceConfig`
-        :param sink_type: SmartConnect任务的目标端类型。
+        :param sink_type: **参数解释**： Smart Connect任务的目标端类型。 **取值范围**： - NONE：不配置。 - OBS_SINK：转储。
         :type sink_type: str
         :param sink_task: 
         :type sink_task: :class:`huaweicloudsdkkafka.v2.SmartConnectTaskRespSinkConfig`
-        :param id: SmartConnect任务的id。
+        :param id: **参数解释**： Smart Connect任务的id。 **取值范围**： 不涉及。
         :type id: str
-        :param status: SmartConnect任务的状态。
+        :param status: **参数解释**： Smart Connect任务的状态。 **取值范围**： 不涉及。
         :type status: str
-        :param create_time: SmartConnect任务的创建时间。
+        :param create_time: **参数解释**： Smart Connect任务的创建时间。 **取值范围**： 不涉及。
         :type create_time: int
         """
         
@@ -108,7 +108,7 @@ class SmartConnectTaskEntity:
     def task_name(self):
         r"""Gets the task_name of this SmartConnectTaskEntity.
 
-        SmartConnect任务名称。
+        **参数解释**： Smart Connect任务名称。 **取值范围**： 不涉及。
 
         :return: The task_name of this SmartConnectTaskEntity.
         :rtype: str
@@ -119,7 +119,7 @@ class SmartConnectTaskEntity:
     def task_name(self, task_name):
         r"""Sets the task_name of this SmartConnectTaskEntity.
 
-        SmartConnect任务名称。
+        **参数解释**： Smart Connect任务名称。 **取值范围**： 不涉及。
 
         :param task_name: The task_name of this SmartConnectTaskEntity.
         :type task_name: str
@@ -130,7 +130,7 @@ class SmartConnectTaskEntity:
     def topics(self):
         r"""Gets the topics of this SmartConnectTaskEntity.
 
-        SmartConnect任务配置的Topic。
+        **参数解释**： Smart Connect任务配置的Topic。 **取值范围**： 不涉及。
 
         :return: The topics of this SmartConnectTaskEntity.
         :rtype: str
@@ -141,7 +141,7 @@ class SmartConnectTaskEntity:
     def topics(self, topics):
         r"""Sets the topics of this SmartConnectTaskEntity.
 
-        SmartConnect任务配置的Topic。
+        **参数解释**： Smart Connect任务配置的Topic。 **取值范围**： 不涉及。
 
         :param topics: The topics of this SmartConnectTaskEntity.
         :type topics: str
@@ -152,7 +152,7 @@ class SmartConnectTaskEntity:
     def topics_regex(self):
         r"""Gets the topics_regex of this SmartConnectTaskEntity.
 
-        SmartConnect任务配置的Topic正则表达式。
+        **参数解释**： Smart Connect任务配置的Topic正则表达式。 **取值范围**： 不涉及。
 
         :return: The topics_regex of this SmartConnectTaskEntity.
         :rtype: str
@@ -163,7 +163,7 @@ class SmartConnectTaskEntity:
     def topics_regex(self, topics_regex):
         r"""Sets the topics_regex of this SmartConnectTaskEntity.
 
-        SmartConnect任务配置的Topic正则表达式。
+        **参数解释**： Smart Connect任务配置的Topic正则表达式。 **取值范围**： 不涉及。
 
         :param topics_regex: The topics_regex of this SmartConnectTaskEntity.
         :type topics_regex: str
@@ -174,7 +174,7 @@ class SmartConnectTaskEntity:
     def source_type(self):
         r"""Gets the source_type of this SmartConnectTaskEntity.
 
-        SmartConnect任务的源端类型。
+        **参数解释**： Smart Connect任务的源端类型。 **取值范围**： - NONE：不配置。 - KAFKA_REPLICATOR_SOURCE：Kafka数据复制。
 
         :return: The source_type of this SmartConnectTaskEntity.
         :rtype: str
@@ -185,7 +185,7 @@ class SmartConnectTaskEntity:
     def source_type(self, source_type):
         r"""Sets the source_type of this SmartConnectTaskEntity.
 
-        SmartConnect任务的源端类型。
+        **参数解释**： Smart Connect任务的源端类型。 **取值范围**： - NONE：不配置。 - KAFKA_REPLICATOR_SOURCE：Kafka数据复制。
 
         :param source_type: The source_type of this SmartConnectTaskEntity.
         :type source_type: str
@@ -214,7 +214,7 @@ class SmartConnectTaskEntity:
     def sink_type(self):
         r"""Gets the sink_type of this SmartConnectTaskEntity.
 
-        SmartConnect任务的目标端类型。
+        **参数解释**： Smart Connect任务的目标端类型。 **取值范围**： - NONE：不配置。 - OBS_SINK：转储。
 
         :return: The sink_type of this SmartConnectTaskEntity.
         :rtype: str
@@ -225,7 +225,7 @@ class SmartConnectTaskEntity:
     def sink_type(self, sink_type):
         r"""Sets the sink_type of this SmartConnectTaskEntity.
 
-        SmartConnect任务的目标端类型。
+        **参数解释**： Smart Connect任务的目标端类型。 **取值范围**： - NONE：不配置。 - OBS_SINK：转储。
 
         :param sink_type: The sink_type of this SmartConnectTaskEntity.
         :type sink_type: str
@@ -254,7 +254,7 @@ class SmartConnectTaskEntity:
     def id(self):
         r"""Gets the id of this SmartConnectTaskEntity.
 
-        SmartConnect任务的id。
+        **参数解释**： Smart Connect任务的id。 **取值范围**： 不涉及。
 
         :return: The id of this SmartConnectTaskEntity.
         :rtype: str
@@ -265,7 +265,7 @@ class SmartConnectTaskEntity:
     def id(self, id):
         r"""Sets the id of this SmartConnectTaskEntity.
 
-        SmartConnect任务的id。
+        **参数解释**： Smart Connect任务的id。 **取值范围**： 不涉及。
 
         :param id: The id of this SmartConnectTaskEntity.
         :type id: str
@@ -276,7 +276,7 @@ class SmartConnectTaskEntity:
     def status(self):
         r"""Gets the status of this SmartConnectTaskEntity.
 
-        SmartConnect任务的状态。
+        **参数解释**： Smart Connect任务的状态。 **取值范围**： 不涉及。
 
         :return: The status of this SmartConnectTaskEntity.
         :rtype: str
@@ -287,7 +287,7 @@ class SmartConnectTaskEntity:
     def status(self, status):
         r"""Sets the status of this SmartConnectTaskEntity.
 
-        SmartConnect任务的状态。
+        **参数解释**： Smart Connect任务的状态。 **取值范围**： 不涉及。
 
         :param status: The status of this SmartConnectTaskEntity.
         :type status: str
@@ -298,7 +298,7 @@ class SmartConnectTaskEntity:
     def create_time(self):
         r"""Gets the create_time of this SmartConnectTaskEntity.
 
-        SmartConnect任务的创建时间。
+        **参数解释**： Smart Connect任务的创建时间。 **取值范围**： 不涉及。
 
         :return: The create_time of this SmartConnectTaskEntity.
         :rtype: int
@@ -309,7 +309,7 @@ class SmartConnectTaskEntity:
     def create_time(self, create_time):
         r"""Sets the create_time of this SmartConnectTaskEntity.
 
-        SmartConnect任务的创建时间。
+        **参数解释**： Smart Connect任务的创建时间。 **取值范围**： 不涉及。
 
         :param create_time: The create_time of this SmartConnectTaskEntity.
         :type create_time: int

@@ -24592,6 +24592,77 @@ class DataArtsStudioClient(Client):
 
         return http_info
 
+    def update_entity_attribute(self, request):
+        r"""修改资产指定属性
+
+        修改资产指定属性。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateEntityAttribute
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.UpdateEntityAttributeRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.UpdateEntityAttributeResponse`
+        """
+        http_info = self._update_entity_attribute_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_entity_attribute_invoker(self, request):
+        http_info = self._update_entity_attribute_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_entity_attribute_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/asset/guid/{guid}/attribute",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateEntityAttributeResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'guid' in local_var_params:
+            path_params['guid'] = local_var_params['guid']
+
+        query_params = []
+        if 'attr_name' in local_var_params:
+            query_params.append(('attr_name', local_var_params['attr_name']))
+        if 'attr_value' in local_var_params:
+            query_params.append(('attr_value', local_var_params['attr_value']))
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def update_factory_job_name(self, request):
         r"""修改作业名称
 

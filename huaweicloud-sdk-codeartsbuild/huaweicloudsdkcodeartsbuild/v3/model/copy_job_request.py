@@ -5,7 +5,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class DeleteBuildJobResponseBodyResult:
+class CopyJobRequest:
 
     """
     Attributes:
@@ -17,80 +17,47 @@ class DeleteBuildJobResponseBodyResult:
     sensitive_list = []
 
     openapi_types = {
-        'job_id': 'str',
-        'project_id': 'str'
+        'body': 'CopyBuildJobRequestBody'
     }
 
     attribute_map = {
-        'job_id': 'job_id',
-        'project_id': 'project_id'
+        'body': 'body'
     }
 
-    def __init__(self, job_id=None, project_id=None):
-        r"""DeleteBuildJobResponseBodyResult
+    def __init__(self, body=None):
+        r"""CopyJobRequest
 
         The model defined in huaweicloud sdk
 
-        :param job_id: 构建任务ID
-        :type job_id: str
-        :param project_id: 构建任务所在项目的ID
-        :type project_id: str
+        :param body: Body of the CopyJobRequest
+        :type body: :class:`huaweicloudsdkcodeartsbuild.v3.CopyBuildJobRequestBody`
         """
         
         
 
-        self._job_id = None
-        self._project_id = None
+        self._body = None
         self.discriminator = None
 
-        if job_id is not None:
-            self.job_id = job_id
-        if project_id is not None:
-            self.project_id = project_id
+        if body is not None:
+            self.body = body
 
     @property
-    def job_id(self):
-        r"""Gets the job_id of this DeleteBuildJobResponseBodyResult.
+    def body(self):
+        r"""Gets the body of this CopyJobRequest.
 
-        构建任务ID
-
-        :return: The job_id of this DeleteBuildJobResponseBodyResult.
-        :rtype: str
+        :return: The body of this CopyJobRequest.
+        :rtype: :class:`huaweicloudsdkcodeartsbuild.v3.CopyBuildJobRequestBody`
         """
-        return self._job_id
+        return self._body
 
-    @job_id.setter
-    def job_id(self, job_id):
-        r"""Sets the job_id of this DeleteBuildJobResponseBodyResult.
+    @body.setter
+    def body(self, body):
+        r"""Sets the body of this CopyJobRequest.
 
-        构建任务ID
-
-        :param job_id: The job_id of this DeleteBuildJobResponseBodyResult.
-        :type job_id: str
+        :param body: The body of this CopyJobRequest.
+        :type body: :class:`huaweicloudsdkcodeartsbuild.v3.CopyBuildJobRequestBody`
         """
-        self._job_id = job_id
-
-    @property
-    def project_id(self):
-        r"""Gets the project_id of this DeleteBuildJobResponseBodyResult.
-
-        构建任务所在项目的ID
-
-        :return: The project_id of this DeleteBuildJobResponseBodyResult.
-        :rtype: str
-        """
-        return self._project_id
-
-    @project_id.setter
-    def project_id(self, project_id):
-        r"""Sets the project_id of this DeleteBuildJobResponseBodyResult.
-
-        构建任务所在项目的ID
-
-        :param project_id: The project_id of this DeleteBuildJobResponseBodyResult.
-        :type project_id: str
-        """
-        self._project_id = project_id
+        self._body = body
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -134,7 +101,7 @@ class DeleteBuildJobResponseBodyResult:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, DeleteBuildJobResponseBodyResult):
+        if not isinstance(other, CopyJobRequest):
             return False
 
         return self.__dict__ == other.__dict__

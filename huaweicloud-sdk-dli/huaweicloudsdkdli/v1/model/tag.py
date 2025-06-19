@@ -31,9 +31,9 @@ class Tag:
 
         The model defined in huaweicloud sdk
 
-        :param key: 键
+        :param key: 参数解释:  键 示例: key 约束限制:  长度大于等于1且小于等于128 取值范围: 无 默认取值: 无
         :type key: str
-        :param value: 值
+        :param value: 参数解释:  值 示例: value 约束限制:  长度大于等于1且小于等于255 取值范围: 无 默认取值: 无
         :type value: str
         """
         
@@ -50,7 +50,7 @@ class Tag:
     def key(self):
         r"""Gets the key of this Tag.
 
-        键
+        参数解释:  键 示例: key 约束限制:  长度大于等于1且小于等于128 取值范围: 无 默认取值: 无
 
         :return: The key of this Tag.
         :rtype: str
@@ -61,7 +61,7 @@ class Tag:
     def key(self, key):
         r"""Sets the key of this Tag.
 
-        键
+        参数解释:  键 示例: key 约束限制:  长度大于等于1且小于等于128 取值范围: 无 默认取值: 无
 
         :param key: The key of this Tag.
         :type key: str
@@ -72,7 +72,7 @@ class Tag:
     def value(self):
         r"""Gets the value of this Tag.
 
-        值
+        参数解释:  值 示例: value 约束限制:  长度大于等于1且小于等于255 取值范围: 无 默认取值: 无
 
         :return: The value of this Tag.
         :rtype: str
@@ -83,7 +83,7 @@ class Tag:
     def value(self, value):
         r"""Sets the value of this Tag.
 
-        值
+        参数解释:  值 示例: value 约束限制:  长度大于等于1且小于等于255 取值范围: 无 默认取值: 无
 
         :param value: The value of this Tag.
         :type value: str

@@ -23,7 +23,7 @@ class UpdateInstanceTopicReqTopics:
         'sync_message_flush': 'bool',
         'new_partition_numbers': 'int',
         'new_partition_brokers': 'list[int]',
-        'topic_other_configs': 'list[CreateInstanceTopicReqTopicOtherConfigs]',
+        'topic_other_configs': 'list[UpdateInstanceTopicReqTopicOtherConfigs]',
         'topic_desc': 'str'
     }
 
@@ -56,7 +56,7 @@ class UpdateInstanceTopicReqTopics:
         :param new_partition_brokers: 增加分区时指定broker列表
         :type new_partition_brokers: list[int]
         :param topic_other_configs: Topic配置
-        :type topic_other_configs: list[:class:`huaweicloudsdkkafka.v2.CreateInstanceTopicReqTopicOtherConfigs`]
+        :type topic_other_configs: list[:class:`huaweicloudsdkkafka.v2.UpdateInstanceTopicReqTopicOtherConfigs`]
         :param topic_desc: Topic描述
         :type topic_desc: str
         """
@@ -228,7 +228,7 @@ class UpdateInstanceTopicReqTopics:
         Topic配置
 
         :return: The topic_other_configs of this UpdateInstanceTopicReqTopics.
-        :rtype: list[:class:`huaweicloudsdkkafka.v2.CreateInstanceTopicReqTopicOtherConfigs`]
+        :rtype: list[:class:`huaweicloudsdkkafka.v2.UpdateInstanceTopicReqTopicOtherConfigs`]
         """
         return self._topic_other_configs
 
@@ -239,7 +239,7 @@ class UpdateInstanceTopicReqTopics:
         Topic配置
 
         :param topic_other_configs: The topic_other_configs of this UpdateInstanceTopicReqTopics.
-        :type topic_other_configs: list[:class:`huaweicloudsdkkafka.v2.CreateInstanceTopicReqTopicOtherConfigs`]
+        :type topic_other_configs: list[:class:`huaweicloudsdkkafka.v2.UpdateInstanceTopicReqTopicOtherConfigs`]
         """
         self._topic_other_configs = topic_other_configs
 

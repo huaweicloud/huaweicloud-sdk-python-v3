@@ -31,7 +31,7 @@ class CreateSparkJobRequest:
 
         The model defined in huaweicloud sdk
 
-        :param user_id: 
+        :param user_id: 参数解释:   用户ID 示例: 48cc2c48765f481480c7db940d6409d1 约束限制:  无 取值范围: 无 默认取值: 无
         :type user_id: str
         :param body: Body of the CreateSparkJobRequest
         :type body: :class:`huaweicloudsdkdli.v1.CreateSparkJobRequestBody`
@@ -52,6 +52,8 @@ class CreateSparkJobRequest:
     def user_id(self):
         r"""Gets the user_id of this CreateSparkJobRequest.
 
+        参数解释:   用户ID 示例: 48cc2c48765f481480c7db940d6409d1 约束限制:  无 取值范围: 无 默认取值: 无
+
         :return: The user_id of this CreateSparkJobRequest.
         :rtype: str
         """
@@ -60,6 +62,8 @@ class CreateSparkJobRequest:
     @user_id.setter
     def user_id(self, user_id):
         r"""Sets the user_id of this CreateSparkJobRequest.
+
+        参数解释:   用户ID 示例: 48cc2c48765f481480c7db940d6409d1 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param user_id: The user_id of this CreateSparkJobRequest.
         :type user_id: str

@@ -33,7 +33,7 @@ class SmartConnectValidateEntity:
 
         :param task: 
         :type task: :class:`huaweicloudsdkkafka.v2.SmartConnectTaskRespSourceConfig`
-        :param type: SmartConnect任务类型。
+        :param type: **参数解释**： Smart Connect任务类型。 **取值范围**： - OBS_SINK：转储。 - KAFKA_REPLICATOR_SOURCE：Kafka数据复制。
         :type type: str
         """
         
@@ -70,7 +70,7 @@ class SmartConnectValidateEntity:
     def type(self):
         r"""Gets the type of this SmartConnectValidateEntity.
 
-        SmartConnect任务类型。
+        **参数解释**： Smart Connect任务类型。 **取值范围**： - OBS_SINK：转储。 - KAFKA_REPLICATOR_SOURCE：Kafka数据复制。
 
         :return: The type of this SmartConnectValidateEntity.
         :rtype: str
@@ -81,7 +81,7 @@ class SmartConnectValidateEntity:
     def type(self, type):
         r"""Sets the type of this SmartConnectValidateEntity.
 
-        SmartConnect任务类型。
+        **参数解释**： Smart Connect任务类型。 **取值范围**： - OBS_SINK：转储。 - KAFKA_REPLICATOR_SOURCE：Kafka数据复制。
 
         :param type: The type of this SmartConnectValidateEntity.
         :type type: str

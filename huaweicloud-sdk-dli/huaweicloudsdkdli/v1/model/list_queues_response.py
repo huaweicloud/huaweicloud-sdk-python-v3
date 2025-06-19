@@ -34,9 +34,9 @@ class ListQueuesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param is_success: 请求执行是否成功。“true”表示请求执行成功。
+        :param is_success: 参数解释: 请求执行是否成功。“true”表示请求执行成功 示例: true 约束限制:  无 取值范围: 无 默认取值: 无
         :type is_success: bool
-        :param message: 系统提示信息，执行成功时，信息可能为空。
+        :param message: 参数解释: 系统提示信息，执行成功时，信息可能为空 示例: test 约束限制:  无 取值范围: 无 默认取值: 无
         :type message: str
         :param queues: 队列信息。
         :type queues: list[:class:`huaweicloudsdkdli.v1.Queue`]
@@ -60,7 +60,7 @@ class ListQueuesResponse(SdkResponse):
     def is_success(self):
         r"""Gets the is_success of this ListQueuesResponse.
 
-        请求执行是否成功。“true”表示请求执行成功。
+        参数解释: 请求执行是否成功。“true”表示请求执行成功 示例: true 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The is_success of this ListQueuesResponse.
         :rtype: bool
@@ -71,7 +71,7 @@ class ListQueuesResponse(SdkResponse):
     def is_success(self, is_success):
         r"""Sets the is_success of this ListQueuesResponse.
 
-        请求执行是否成功。“true”表示请求执行成功。
+        参数解释: 请求执行是否成功。“true”表示请求执行成功 示例: true 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param is_success: The is_success of this ListQueuesResponse.
         :type is_success: bool
@@ -82,7 +82,7 @@ class ListQueuesResponse(SdkResponse):
     def message(self):
         r"""Gets the message of this ListQueuesResponse.
 
-        系统提示信息，执行成功时，信息可能为空。
+        参数解释: 系统提示信息，执行成功时，信息可能为空 示例: test 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The message of this ListQueuesResponse.
         :rtype: str
@@ -93,7 +93,7 @@ class ListQueuesResponse(SdkResponse):
     def message(self, message):
         r"""Sets the message of this ListQueuesResponse.
 
-        系统提示信息，执行成功时，信息可能为空。
+        参数解释: 系统提示信息，执行成功时，信息可能为空 示例: test 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param message: The message of this ListQueuesResponse.
         :type message: str

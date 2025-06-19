@@ -17,7 +17,7 @@ class FlinkSuccessResponse:
     sensitive_list = []
 
     openapi_types = {
-        'is_success': 'str',
+        'is_success': 'bool',
         'message': 'str'
     }
 
@@ -32,7 +32,7 @@ class FlinkSuccessResponse:
         The model defined in huaweicloud sdk
 
         :param is_success: 执行请求是否成功。“true”表示请求执行成功。
-        :type is_success: str
+        :type is_success: bool
         :param message: 系统提示信息，执行成功时，信息可能为空。
         :type message: str
         """
@@ -55,7 +55,7 @@ class FlinkSuccessResponse:
         执行请求是否成功。“true”表示请求执行成功。
 
         :return: The is_success of this FlinkSuccessResponse.
-        :rtype: str
+        :rtype: bool
         """
         return self._is_success
 
@@ -66,7 +66,7 @@ class FlinkSuccessResponse:
         执行请求是否成功。“true”表示请求执行成功。
 
         :param is_success: The is_success of this FlinkSuccessResponse.
-        :type is_success: str
+        :type is_success: bool
         """
         self._is_success = is_success
 

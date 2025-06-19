@@ -42,19 +42,19 @@ class CreateSqlJobResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param is_success: 当“job_type”为“DCL”时，为请求执行是否成功。“true”表示请求执行成功。
+        :param is_success: 参数解释: 当“job_type”为“DCL”时，为请求执行是否成功。“true”表示请求执行成功 示例: true 约束限制:  无 取值范围: true,false 默认取值: 无
         :type is_success: bool
-        :param message: 系统提示信息，执行成功时，信息可能为空。
+        :param message: 参数解释: 系统提示信息，执行成功时，信息可能为空 示例: success 约束限制:  无 取值范围: 无 默认取值: 无
         :type message: str
-        :param job_id: 此SQL语句将生成并提交一个新作业，返回此作业的ID，可用于获取作业状态和作业结果。
+        :param job_id: 参数解释: 此SQL语句将生成并提交一个新作业，返回此作业的ID，可用于获取作业状态和作业结果 示例: 8ecb0777-9c70-4529-9935-29ea0946039c 约束限制:  无 取值范围: 无 默认取值: 无
         :type job_id: str
-        :param job_type: 作业类型。  DDL DCL IMPORT EXPORT QUERY INSERT
+        :param job_type: 参数解释:  指定查询的作业类型，包含DDL、DCL、IMPORT、EXPORT、QUERY、INSERT、DATA_MIGRATION、UPDATE、DELETE、RESTART_QUEUE、SCALE_QUEUE，若要查询所有类型的作业，则传入ALL。 示例: QUERY 约束限制:  无 取值范围: DDL、DCL、IMPORT、EXPORT、QUERY、INSERT、DATA_MIGRATION、UPDATE、DELETE、RESTART_QUEUE、SCALE_QUEUE、ALL 默认取值: 无
         :type job_type: str
-        :param schema: 当语句类型为DDL时，返回其结果的列名称及类型。
+        :param schema: 参数解释:  当语句类型为DDL时，返回其结果的列名称及类型 示例: [{\&quot;col_name\&quot;: \&quot;string\&quot;},{\&quot;data_type\&quot;: \&quot;string\&quot;},{\&quot;comment\&quot;: \&quot;string\&quot;}] 约束限制:  无 取值范围: 无 默认取值: 无
         :type schema: list[object]
-        :param rows: 当语句类型为DDL时，直接返回其执行结果。
+        :param rows: 参数解释:  当语句类型为DDL时，直接返回其执行结果 示例: [[\&quot;c1\&quot;,\&quot;int\&quot;,null],[\&quot;c2\&quot;,\&quot;string\&quot;,null]] 约束限制:  无 取值范围: 无 默认取值: 无
         :type rows: list[list[object]]
-        :param job_mode: 表示作业执行方式，是同步还是异步的
+        :param job_mode: 参数解释:  表示作业执行方式，是同步还是异步的 示例: async 约束限制:  无 取值范围: async（异步） sync（同步） 默认取值: 无
         :type job_mode: str
         """
         
@@ -88,7 +88,7 @@ class CreateSqlJobResponse(SdkResponse):
     def is_success(self):
         r"""Gets the is_success of this CreateSqlJobResponse.
 
-        当“job_type”为“DCL”时，为请求执行是否成功。“true”表示请求执行成功。
+        参数解释: 当“job_type”为“DCL”时，为请求执行是否成功。“true”表示请求执行成功 示例: true 约束限制:  无 取值范围: true,false 默认取值: 无
 
         :return: The is_success of this CreateSqlJobResponse.
         :rtype: bool
@@ -99,7 +99,7 @@ class CreateSqlJobResponse(SdkResponse):
     def is_success(self, is_success):
         r"""Sets the is_success of this CreateSqlJobResponse.
 
-        当“job_type”为“DCL”时，为请求执行是否成功。“true”表示请求执行成功。
+        参数解释: 当“job_type”为“DCL”时，为请求执行是否成功。“true”表示请求执行成功 示例: true 约束限制:  无 取值范围: true,false 默认取值: 无
 
         :param is_success: The is_success of this CreateSqlJobResponse.
         :type is_success: bool
@@ -110,7 +110,7 @@ class CreateSqlJobResponse(SdkResponse):
     def message(self):
         r"""Gets the message of this CreateSqlJobResponse.
 
-        系统提示信息，执行成功时，信息可能为空。
+        参数解释: 系统提示信息，执行成功时，信息可能为空 示例: success 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The message of this CreateSqlJobResponse.
         :rtype: str
@@ -121,7 +121,7 @@ class CreateSqlJobResponse(SdkResponse):
     def message(self, message):
         r"""Sets the message of this CreateSqlJobResponse.
 
-        系统提示信息，执行成功时，信息可能为空。
+        参数解释: 系统提示信息，执行成功时，信息可能为空 示例: success 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param message: The message of this CreateSqlJobResponse.
         :type message: str
@@ -132,7 +132,7 @@ class CreateSqlJobResponse(SdkResponse):
     def job_id(self):
         r"""Gets the job_id of this CreateSqlJobResponse.
 
-        此SQL语句将生成并提交一个新作业，返回此作业的ID，可用于获取作业状态和作业结果。
+        参数解释: 此SQL语句将生成并提交一个新作业，返回此作业的ID，可用于获取作业状态和作业结果 示例: 8ecb0777-9c70-4529-9935-29ea0946039c 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The job_id of this CreateSqlJobResponse.
         :rtype: str
@@ -143,7 +143,7 @@ class CreateSqlJobResponse(SdkResponse):
     def job_id(self, job_id):
         r"""Sets the job_id of this CreateSqlJobResponse.
 
-        此SQL语句将生成并提交一个新作业，返回此作业的ID，可用于获取作业状态和作业结果。
+        参数解释: 此SQL语句将生成并提交一个新作业，返回此作业的ID，可用于获取作业状态和作业结果 示例: 8ecb0777-9c70-4529-9935-29ea0946039c 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param job_id: The job_id of this CreateSqlJobResponse.
         :type job_id: str
@@ -154,7 +154,7 @@ class CreateSqlJobResponse(SdkResponse):
     def job_type(self):
         r"""Gets the job_type of this CreateSqlJobResponse.
 
-        作业类型。  DDL DCL IMPORT EXPORT QUERY INSERT
+        参数解释:  指定查询的作业类型，包含DDL、DCL、IMPORT、EXPORT、QUERY、INSERT、DATA_MIGRATION、UPDATE、DELETE、RESTART_QUEUE、SCALE_QUEUE，若要查询所有类型的作业，则传入ALL。 示例: QUERY 约束限制:  无 取值范围: DDL、DCL、IMPORT、EXPORT、QUERY、INSERT、DATA_MIGRATION、UPDATE、DELETE、RESTART_QUEUE、SCALE_QUEUE、ALL 默认取值: 无
 
         :return: The job_type of this CreateSqlJobResponse.
         :rtype: str
@@ -165,7 +165,7 @@ class CreateSqlJobResponse(SdkResponse):
     def job_type(self, job_type):
         r"""Sets the job_type of this CreateSqlJobResponse.
 
-        作业类型。  DDL DCL IMPORT EXPORT QUERY INSERT
+        参数解释:  指定查询的作业类型，包含DDL、DCL、IMPORT、EXPORT、QUERY、INSERT、DATA_MIGRATION、UPDATE、DELETE、RESTART_QUEUE、SCALE_QUEUE，若要查询所有类型的作业，则传入ALL。 示例: QUERY 约束限制:  无 取值范围: DDL、DCL、IMPORT、EXPORT、QUERY、INSERT、DATA_MIGRATION、UPDATE、DELETE、RESTART_QUEUE、SCALE_QUEUE、ALL 默认取值: 无
 
         :param job_type: The job_type of this CreateSqlJobResponse.
         :type job_type: str
@@ -176,7 +176,7 @@ class CreateSqlJobResponse(SdkResponse):
     def schema(self):
         r"""Gets the schema of this CreateSqlJobResponse.
 
-        当语句类型为DDL时，返回其结果的列名称及类型。
+        参数解释:  当语句类型为DDL时，返回其结果的列名称及类型 示例: [{\"col_name\": \"string\"},{\"data_type\": \"string\"},{\"comment\": \"string\"}] 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The schema of this CreateSqlJobResponse.
         :rtype: list[object]
@@ -187,7 +187,7 @@ class CreateSqlJobResponse(SdkResponse):
     def schema(self, schema):
         r"""Sets the schema of this CreateSqlJobResponse.
 
-        当语句类型为DDL时，返回其结果的列名称及类型。
+        参数解释:  当语句类型为DDL时，返回其结果的列名称及类型 示例: [{\"col_name\": \"string\"},{\"data_type\": \"string\"},{\"comment\": \"string\"}] 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param schema: The schema of this CreateSqlJobResponse.
         :type schema: list[object]
@@ -198,7 +198,7 @@ class CreateSqlJobResponse(SdkResponse):
     def rows(self):
         r"""Gets the rows of this CreateSqlJobResponse.
 
-        当语句类型为DDL时，直接返回其执行结果。
+        参数解释:  当语句类型为DDL时，直接返回其执行结果 示例: [[\"c1\",\"int\",null],[\"c2\",\"string\",null]] 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The rows of this CreateSqlJobResponse.
         :rtype: list[list[object]]
@@ -209,7 +209,7 @@ class CreateSqlJobResponse(SdkResponse):
     def rows(self, rows):
         r"""Sets the rows of this CreateSqlJobResponse.
 
-        当语句类型为DDL时，直接返回其执行结果。
+        参数解释:  当语句类型为DDL时，直接返回其执行结果 示例: [[\"c1\",\"int\",null],[\"c2\",\"string\",null]] 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param rows: The rows of this CreateSqlJobResponse.
         :type rows: list[list[object]]
@@ -220,7 +220,7 @@ class CreateSqlJobResponse(SdkResponse):
     def job_mode(self):
         r"""Gets the job_mode of this CreateSqlJobResponse.
 
-        表示作业执行方式，是同步还是异步的
+        参数解释:  表示作业执行方式，是同步还是异步的 示例: async 约束限制:  无 取值范围: async（异步） sync（同步） 默认取值: 无
 
         :return: The job_mode of this CreateSqlJobResponse.
         :rtype: str
@@ -231,7 +231,7 @@ class CreateSqlJobResponse(SdkResponse):
     def job_mode(self, job_mode):
         r"""Sets the job_mode of this CreateSqlJobResponse.
 
-        表示作业执行方式，是同步还是异步的
+        参数解释:  表示作业执行方式，是同步还是异步的 示例: async 约束限制:  无 取值范围: async（异步） sync（同步） 默认取值: 无
 
         :param job_mode: The job_mode of this CreateSqlJobResponse.
         :type job_mode: str

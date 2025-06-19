@@ -39,7 +39,7 @@ class ShowKafkaTopicPartitionDiskusageRequest:
         :type instance_id: str
         :param min_size: 占用磁盘大小，默认值1G (1K，1M，1G)。
         :type min_size: str
-        :param top: 占用磁盘大小，查询top N。
+        :param top: **参数解释**： 占用磁盘大小，查询top N。 **约束限制**： 不涉及。 **取值范围**： 1~1000。 **默认取值**： 不涉及。
         :type top: str
         :param percentage: 占用磁盘大小，查询大于占比的分区。
         :type percentage: str
@@ -109,7 +109,7 @@ class ShowKafkaTopicPartitionDiskusageRequest:
     def top(self):
         r"""Gets the top of this ShowKafkaTopicPartitionDiskusageRequest.
 
-        占用磁盘大小，查询top N。
+        **参数解释**： 占用磁盘大小，查询top N。 **约束限制**： 不涉及。 **取值范围**： 1~1000。 **默认取值**： 不涉及。
 
         :return: The top of this ShowKafkaTopicPartitionDiskusageRequest.
         :rtype: str
@@ -120,7 +120,7 @@ class ShowKafkaTopicPartitionDiskusageRequest:
     def top(self, top):
         r"""Sets the top of this ShowKafkaTopicPartitionDiskusageRequest.
 
-        占用磁盘大小，查询top N。
+        **参数解释**： 占用磁盘大小，查询top N。 **约束限制**： 不涉及。 **取值范围**： 1~1000。 **默认取值**： 不涉及。
 
         :param top: The top of this ShowKafkaTopicPartitionDiskusageRequest.
         :type top: str

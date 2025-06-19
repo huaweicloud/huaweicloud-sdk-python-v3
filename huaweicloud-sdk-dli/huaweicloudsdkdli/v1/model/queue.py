@@ -89,67 +89,67 @@ class Queue:
 
         The model defined in huaweicloud sdk
 
-        :param queue_id: 队列ID。
+        :param queue_id: 参数解释: 队列ID 示例: 10 约束限制:  无 取值范围: 无 默认取值: 无
         :type queue_id: int
-        :param queue_name: 队列名称。
+        :param queue_name: 参数解释: 队列名称 示例: datasource_connection 约束限制:  无 取值范围: 无 默认取值: 无
         :type queue_name: str
-        :param description: 队列描述信息。
+        :param description: 参数解释: 队列描述信息 示例: des 约束限制:  无 取值范围: 无 默认取值: 无
         :type description: str
-        :param owner: 创建队列的用户。
+        :param owner: 参数解释: 创建队列的用户 示例: ei_dlics_c00228924 约束限制:  无 取值范围: 无 默认取值: 无
         :type owner: str
-        :param create_time: 创建队列的时间。是单位为“毫秒”的时间戳。
+        :param create_time: 参数解释: 创建队列的时间。是单位为“毫秒”的时间戳 示例: 1553168198000 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
         :type create_time: int
-        :param queue_type: 队列的类型。： sql general all 如果不指定，默认为“sql”。
+        :param queue_type: 参数解释: 队列的类型 示例: sql 约束限制:  无 取值范围: sql, general, all 默认取值: all
         :type queue_type: str
-        :param cu_count: 队列的实际CU。
+        :param cu_count: 参数解释: 与该队列绑定的计算单元数，即当前队列的CU数 示例: 16 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
         :type cu_count: int
-        :param charging_mode: 队列的收费模式。 “1”表示按照CU时收费。 “2”表示按照包年包月收费。
+        :param charging_mode: 参数解释: 队列的收费模式。 “1”表示按照CU时收费。 “2”表示按照包年包月收费。 示例: 16 约束限制:  无 取值范围: 1, 2 默认取值: 无
         :type charging_mode: int
-        :param resource_id: 队列的资源ID。
+        :param resource_id: 参数解释: 队列的资源ID 示例: 26afb850-d3c9-42c1-81c0-583d1163e80f 约束限制:  无 取值范围: 无 默认取值: 无
         :type resource_id: str
-        :param enterprise_project_id: 企业项目ID。0”表示default，即默认的企业项目。 说明： 开通了企业管理服务的用户可设置该参数绑定指定的项目。
+        :param enterprise_project_id: 参数解释: 企业项目ID。0”表示default，即默认的企业项目。说明：开通了企业管理服务的用户可设置该参数绑定指定的项目。 示例: 0 约束限制:  无 取值范围: 无 默认取值: 无
         :type enterprise_project_id: str
-        :param cidr_in_vpc: 队列的虚拟私有云（VPC）的网段。建议使用网段：10.0.0.0/8~28，172.16.0.0/12~28，192.168.0.0/16~28。
+        :param cidr_in_vpc: 参数解释: 队列的虚拟私有云（VPC）的网段。建议使用网段：10.0.0.0/8~28，172.16.0.0/12~28，192.168.0.0/16~28 示例: 10.0.0.0/8 约束限制:  符合网段格式的字符串 取值范围: 无 默认取值: 无
         :type cidr_in_vpc: str
-        :param cidr_in_mgntsubnet: 管理子网的网段。
+        :param cidr_in_mgntsubnet: 参数解释: 管理子网的网段 示例: 10.23.128.0/24 约束限制:  符合网段格式的字符串 取值范围: 无 默认取值: 无
         :type cidr_in_mgntsubnet: str
-        :param cidr_in_subnet: 子网网段。
+        :param cidr_in_subnet: 参数解释: 子网网段 示例: 10.23.128.0/24 约束限制:  符合网段格式的字符串 取值范围: 无 默认取值: 无
         :type cidr_in_subnet: str
-        :param resource_mode: 队列类型。 0：共享队列 1：专属队列
+        :param resource_mode: 参数解释: 队列类型。0：共享队列,1：专属队列 示例: 0 约束限制:  无 取值范围: 0,1 默认取值: 无
         :type resource_mode: int
-        :param platform: 队列计算资源的cpu架构。
+        :param platform: 参数解释: 队列计算资源的cpu架构 示例: 0 约束限制:  符合cpu架构格式的字符串 取值范围: 无 默认取值: 无
         :type platform: str
-        :param is_restarting: 是否在重启状态。默认值为“false”。
+        :param is_restarting: 参数解释: 是否在重启状态。默认值为“false” 示例: false 约束限制:  无 取值范围: true,false 默认取值: false
         :type is_restarting: bool
-        :param labels: 队列的标签信息，目前只支持设置跨az配置，multi_az&#x3D;2
+        :param labels: 参数解释: 队列的标签信息，目前只支持设置跨az配置，multi_az&#x3D;2 示例: {\\\&quot;multi_az\\\&quot;:\\\&quot;2\\\&quot;} 约束限制:  符合Json格式的字符串 取值范围: 无 默认取值: 无
         :type labels: str
-        :param feature: 队列特性。支持以下两种类型：basic：基础型ai：AI增强型（仅SQL的x86_64专属队列支持选择）默认值为“basic”。
+        :param feature: 参数解释: 队列特性 示例: basic 约束限制:  无 取值范围: basic（基础型） ai（AI增强型，仅SQL的x86_64专属队列支持选择） 默认取值: basic
         :type feature: str
-        :param resource_type: 队列所属资源类型, vm或container。
+        :param resource_type: 参数解释: 队列所属资源类型 示例: vm 约束限制:  无 取值范围: vm container 默认取值: 无
         :type resource_type: str
-        :param cu_spec: 队列的规格大小。对于包周期队列，表示包周期部分的CU值；对于按需队列，表示用户购买队列时的初始值。
+        :param cu_spec: 参数解释: 队列的规格大小。对于包周期队列，表示包周期部分的CU值；对于按需队列，表示用户购买队列时的初始值 示例: 0 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
         :type cu_spec: int
-        :param cu_scale_out_limit: 当前队列弹性扩缩容的CU值上限。
+        :param cu_scale_out_limit: 参数解释: 当前队列弹性扩缩容的CU值上限 示例: 0 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
         :type cu_scale_out_limit: int
-        :param cu_scale_in_limit: 当前队列弹性扩缩容的CU值下限。
+        :param cu_scale_in_limit: 参数解释: 当前队列弹性扩缩容的CU值下限 示例: 0 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
         :type cu_scale_in_limit: int
-        :param elastic_resource_pool_name: 弹性资源池名称。
+        :param elastic_resource_pool_name: 参数解释: 弹性资源池名称 示例: dli_pool_0509 约束限制:  无 取值范围: 无 默认取值: 无
         :type elastic_resource_pool_name: str
-        :param support_spark_versions: 队列支持的Spark版本。
+        :param support_spark_versions: 参数解释: 队列支持的Spark版本 示例: [2.4.5] 约束限制:  无 取值范围: 无 默认取值: 无
         :type support_spark_versions: list[str]
-        :param default_spark_version: 队列默认的Spark版本。
+        :param default_spark_version: 参数解释: 队列默认的Spark版本 示例: 2.4.5 约束限制:  无 取值范围: 无 默认取值: 无
         :type default_spark_version: str
-        :param support_hetu_engine_versions: 队列支持的HetuEngine版本。
+        :param support_hetu_engine_versions: 参数解释: 队列支持的HetuEngine版本 示例: [2.1.0] 约束限制:  无 取值范围: 无 默认取值: 无
         :type support_hetu_engine_versions: list[str]
-        :param default_hetu_engine_version: 队列默认的HetuEngine版本。
+        :param default_hetu_engine_version: 参数解释: 队列默认的HetuEngine版本 示例: 2.1.0 约束限制:  无 取值范围: 无 默认取值: 无
         :type default_hetu_engine_version: str
-        :param support_flink_sql_versions: 队列支持的Flink SQL版本。
+        :param support_flink_sql_versions: 参数解释: 队列支持的Flink SQL版本 示例: [1.17] 约束限制:  无 取值范围: 无 默认取值: 无
         :type support_flink_sql_versions: list[str]
-        :param default_flink_sql_version: 队列默认的Flink SQL版本。
+        :param default_flink_sql_version: 参数解释: 队列默认的Flink SQL版本 示例: 1.17 约束限制:  无 取值范围: 无 默认取值: 无
         :type default_flink_sql_version: str
-        :param support_flink_jar_versions: 队列支持的Flink JAR版本。
+        :param support_flink_jar_versions: 参数解释: 队列支持的Flink JAR版本 示例: [1.17] 约束限制:  无 取值范围: 无 默认取值: 无
         :type support_flink_jar_versions: list[str]
-        :param default_flink_jar_version: 队列默认的Flink JAR版本。
+        :param default_flink_jar_version: 参数解释: 队列默认的Flink JAR版本 示例: 1.17 约束限制:  无 取值范围: 无 默认取值: 无
         :type default_flink_jar_version: str
         """
         
@@ -255,7 +255,7 @@ class Queue:
     def queue_id(self):
         r"""Gets the queue_id of this Queue.
 
-        队列ID。
+        参数解释: 队列ID 示例: 10 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The queue_id of this Queue.
         :rtype: int
@@ -266,7 +266,7 @@ class Queue:
     def queue_id(self, queue_id):
         r"""Sets the queue_id of this Queue.
 
-        队列ID。
+        参数解释: 队列ID 示例: 10 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param queue_id: The queue_id of this Queue.
         :type queue_id: int
@@ -277,7 +277,7 @@ class Queue:
     def queue_name(self):
         r"""Gets the queue_name of this Queue.
 
-        队列名称。
+        参数解释: 队列名称 示例: datasource_connection 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The queue_name of this Queue.
         :rtype: str
@@ -288,7 +288,7 @@ class Queue:
     def queue_name(self, queue_name):
         r"""Sets the queue_name of this Queue.
 
-        队列名称。
+        参数解释: 队列名称 示例: datasource_connection 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param queue_name: The queue_name of this Queue.
         :type queue_name: str
@@ -299,7 +299,7 @@ class Queue:
     def description(self):
         r"""Gets the description of this Queue.
 
-        队列描述信息。
+        参数解释: 队列描述信息 示例: des 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The description of this Queue.
         :rtype: str
@@ -310,7 +310,7 @@ class Queue:
     def description(self, description):
         r"""Sets the description of this Queue.
 
-        队列描述信息。
+        参数解释: 队列描述信息 示例: des 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param description: The description of this Queue.
         :type description: str
@@ -321,7 +321,7 @@ class Queue:
     def owner(self):
         r"""Gets the owner of this Queue.
 
-        创建队列的用户。
+        参数解释: 创建队列的用户 示例: ei_dlics_c00228924 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The owner of this Queue.
         :rtype: str
@@ -332,7 +332,7 @@ class Queue:
     def owner(self, owner):
         r"""Sets the owner of this Queue.
 
-        创建队列的用户。
+        参数解释: 创建队列的用户 示例: ei_dlics_c00228924 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param owner: The owner of this Queue.
         :type owner: str
@@ -343,7 +343,7 @@ class Queue:
     def create_time(self):
         r"""Gets the create_time of this Queue.
 
-        创建队列的时间。是单位为“毫秒”的时间戳。
+        参数解释: 创建队列的时间。是单位为“毫秒”的时间戳 示例: 1553168198000 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
 
         :return: The create_time of this Queue.
         :rtype: int
@@ -354,7 +354,7 @@ class Queue:
     def create_time(self, create_time):
         r"""Sets the create_time of this Queue.
 
-        创建队列的时间。是单位为“毫秒”的时间戳。
+        参数解释: 创建队列的时间。是单位为“毫秒”的时间戳 示例: 1553168198000 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
 
         :param create_time: The create_time of this Queue.
         :type create_time: int
@@ -365,7 +365,7 @@ class Queue:
     def queue_type(self):
         r"""Gets the queue_type of this Queue.
 
-        队列的类型。： sql general all 如果不指定，默认为“sql”。
+        参数解释: 队列的类型 示例: sql 约束限制:  无 取值范围: sql, general, all 默认取值: all
 
         :return: The queue_type of this Queue.
         :rtype: str
@@ -376,7 +376,7 @@ class Queue:
     def queue_type(self, queue_type):
         r"""Sets the queue_type of this Queue.
 
-        队列的类型。： sql general all 如果不指定，默认为“sql”。
+        参数解释: 队列的类型 示例: sql 约束限制:  无 取值范围: sql, general, all 默认取值: all
 
         :param queue_type: The queue_type of this Queue.
         :type queue_type: str
@@ -387,7 +387,7 @@ class Queue:
     def cu_count(self):
         r"""Gets the cu_count of this Queue.
 
-        队列的实际CU。
+        参数解释: 与该队列绑定的计算单元数，即当前队列的CU数 示例: 16 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
 
         :return: The cu_count of this Queue.
         :rtype: int
@@ -398,7 +398,7 @@ class Queue:
     def cu_count(self, cu_count):
         r"""Sets the cu_count of this Queue.
 
-        队列的实际CU。
+        参数解释: 与该队列绑定的计算单元数，即当前队列的CU数 示例: 16 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
 
         :param cu_count: The cu_count of this Queue.
         :type cu_count: int
@@ -409,7 +409,7 @@ class Queue:
     def charging_mode(self):
         r"""Gets the charging_mode of this Queue.
 
-        队列的收费模式。 “1”表示按照CU时收费。 “2”表示按照包年包月收费。
+        参数解释: 队列的收费模式。 “1”表示按照CU时收费。 “2”表示按照包年包月收费。 示例: 16 约束限制:  无 取值范围: 1, 2 默认取值: 无
 
         :return: The charging_mode of this Queue.
         :rtype: int
@@ -420,7 +420,7 @@ class Queue:
     def charging_mode(self, charging_mode):
         r"""Sets the charging_mode of this Queue.
 
-        队列的收费模式。 “1”表示按照CU时收费。 “2”表示按照包年包月收费。
+        参数解释: 队列的收费模式。 “1”表示按照CU时收费。 “2”表示按照包年包月收费。 示例: 16 约束限制:  无 取值范围: 1, 2 默认取值: 无
 
         :param charging_mode: The charging_mode of this Queue.
         :type charging_mode: int
@@ -431,7 +431,7 @@ class Queue:
     def resource_id(self):
         r"""Gets the resource_id of this Queue.
 
-        队列的资源ID。
+        参数解释: 队列的资源ID 示例: 26afb850-d3c9-42c1-81c0-583d1163e80f 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The resource_id of this Queue.
         :rtype: str
@@ -442,7 +442,7 @@ class Queue:
     def resource_id(self, resource_id):
         r"""Sets the resource_id of this Queue.
 
-        队列的资源ID。
+        参数解释: 队列的资源ID 示例: 26afb850-d3c9-42c1-81c0-583d1163e80f 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param resource_id: The resource_id of this Queue.
         :type resource_id: str
@@ -453,7 +453,7 @@ class Queue:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this Queue.
 
-        企业项目ID。0”表示default，即默认的企业项目。 说明： 开通了企业管理服务的用户可设置该参数绑定指定的项目。
+        参数解释: 企业项目ID。0”表示default，即默认的企业项目。说明：开通了企业管理服务的用户可设置该参数绑定指定的项目。 示例: 0 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The enterprise_project_id of this Queue.
         :rtype: str
@@ -464,7 +464,7 @@ class Queue:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this Queue.
 
-        企业项目ID。0”表示default，即默认的企业项目。 说明： 开通了企业管理服务的用户可设置该参数绑定指定的项目。
+        参数解释: 企业项目ID。0”表示default，即默认的企业项目。说明：开通了企业管理服务的用户可设置该参数绑定指定的项目。 示例: 0 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param enterprise_project_id: The enterprise_project_id of this Queue.
         :type enterprise_project_id: str
@@ -475,7 +475,7 @@ class Queue:
     def cidr_in_vpc(self):
         r"""Gets the cidr_in_vpc of this Queue.
 
-        队列的虚拟私有云（VPC）的网段。建议使用网段：10.0.0.0/8~28，172.16.0.0/12~28，192.168.0.0/16~28。
+        参数解释: 队列的虚拟私有云（VPC）的网段。建议使用网段：10.0.0.0/8~28，172.16.0.0/12~28，192.168.0.0/16~28 示例: 10.0.0.0/8 约束限制:  符合网段格式的字符串 取值范围: 无 默认取值: 无
 
         :return: The cidr_in_vpc of this Queue.
         :rtype: str
@@ -486,7 +486,7 @@ class Queue:
     def cidr_in_vpc(self, cidr_in_vpc):
         r"""Sets the cidr_in_vpc of this Queue.
 
-        队列的虚拟私有云（VPC）的网段。建议使用网段：10.0.0.0/8~28，172.16.0.0/12~28，192.168.0.0/16~28。
+        参数解释: 队列的虚拟私有云（VPC）的网段。建议使用网段：10.0.0.0/8~28，172.16.0.0/12~28，192.168.0.0/16~28 示例: 10.0.0.0/8 约束限制:  符合网段格式的字符串 取值范围: 无 默认取值: 无
 
         :param cidr_in_vpc: The cidr_in_vpc of this Queue.
         :type cidr_in_vpc: str
@@ -497,7 +497,7 @@ class Queue:
     def cidr_in_mgntsubnet(self):
         r"""Gets the cidr_in_mgntsubnet of this Queue.
 
-        管理子网的网段。
+        参数解释: 管理子网的网段 示例: 10.23.128.0/24 约束限制:  符合网段格式的字符串 取值范围: 无 默认取值: 无
 
         :return: The cidr_in_mgntsubnet of this Queue.
         :rtype: str
@@ -508,7 +508,7 @@ class Queue:
     def cidr_in_mgntsubnet(self, cidr_in_mgntsubnet):
         r"""Sets the cidr_in_mgntsubnet of this Queue.
 
-        管理子网的网段。
+        参数解释: 管理子网的网段 示例: 10.23.128.0/24 约束限制:  符合网段格式的字符串 取值范围: 无 默认取值: 无
 
         :param cidr_in_mgntsubnet: The cidr_in_mgntsubnet of this Queue.
         :type cidr_in_mgntsubnet: str
@@ -519,7 +519,7 @@ class Queue:
     def cidr_in_subnet(self):
         r"""Gets the cidr_in_subnet of this Queue.
 
-        子网网段。
+        参数解释: 子网网段 示例: 10.23.128.0/24 约束限制:  符合网段格式的字符串 取值范围: 无 默认取值: 无
 
         :return: The cidr_in_subnet of this Queue.
         :rtype: str
@@ -530,7 +530,7 @@ class Queue:
     def cidr_in_subnet(self, cidr_in_subnet):
         r"""Sets the cidr_in_subnet of this Queue.
 
-        子网网段。
+        参数解释: 子网网段 示例: 10.23.128.0/24 约束限制:  符合网段格式的字符串 取值范围: 无 默认取值: 无
 
         :param cidr_in_subnet: The cidr_in_subnet of this Queue.
         :type cidr_in_subnet: str
@@ -541,7 +541,7 @@ class Queue:
     def resource_mode(self):
         r"""Gets the resource_mode of this Queue.
 
-        队列类型。 0：共享队列 1：专属队列
+        参数解释: 队列类型。0：共享队列,1：专属队列 示例: 0 约束限制:  无 取值范围: 0,1 默认取值: 无
 
         :return: The resource_mode of this Queue.
         :rtype: int
@@ -552,7 +552,7 @@ class Queue:
     def resource_mode(self, resource_mode):
         r"""Sets the resource_mode of this Queue.
 
-        队列类型。 0：共享队列 1：专属队列
+        参数解释: 队列类型。0：共享队列,1：专属队列 示例: 0 约束限制:  无 取值范围: 0,1 默认取值: 无
 
         :param resource_mode: The resource_mode of this Queue.
         :type resource_mode: int
@@ -563,7 +563,7 @@ class Queue:
     def platform(self):
         r"""Gets the platform of this Queue.
 
-        队列计算资源的cpu架构。
+        参数解释: 队列计算资源的cpu架构 示例: 0 约束限制:  符合cpu架构格式的字符串 取值范围: 无 默认取值: 无
 
         :return: The platform of this Queue.
         :rtype: str
@@ -574,7 +574,7 @@ class Queue:
     def platform(self, platform):
         r"""Sets the platform of this Queue.
 
-        队列计算资源的cpu架构。
+        参数解释: 队列计算资源的cpu架构 示例: 0 约束限制:  符合cpu架构格式的字符串 取值范围: 无 默认取值: 无
 
         :param platform: The platform of this Queue.
         :type platform: str
@@ -585,7 +585,7 @@ class Queue:
     def is_restarting(self):
         r"""Gets the is_restarting of this Queue.
 
-        是否在重启状态。默认值为“false”。
+        参数解释: 是否在重启状态。默认值为“false” 示例: false 约束限制:  无 取值范围: true,false 默认取值: false
 
         :return: The is_restarting of this Queue.
         :rtype: bool
@@ -596,7 +596,7 @@ class Queue:
     def is_restarting(self, is_restarting):
         r"""Sets the is_restarting of this Queue.
 
-        是否在重启状态。默认值为“false”。
+        参数解释: 是否在重启状态。默认值为“false” 示例: false 约束限制:  无 取值范围: true,false 默认取值: false
 
         :param is_restarting: The is_restarting of this Queue.
         :type is_restarting: bool
@@ -607,7 +607,7 @@ class Queue:
     def labels(self):
         r"""Gets the labels of this Queue.
 
-        队列的标签信息，目前只支持设置跨az配置，multi_az=2
+        参数解释: 队列的标签信息，目前只支持设置跨az配置，multi_az=2 示例: {\\\"multi_az\\\":\\\"2\\\"} 约束限制:  符合Json格式的字符串 取值范围: 无 默认取值: 无
 
         :return: The labels of this Queue.
         :rtype: str
@@ -618,7 +618,7 @@ class Queue:
     def labels(self, labels):
         r"""Sets the labels of this Queue.
 
-        队列的标签信息，目前只支持设置跨az配置，multi_az=2
+        参数解释: 队列的标签信息，目前只支持设置跨az配置，multi_az=2 示例: {\\\"multi_az\\\":\\\"2\\\"} 约束限制:  符合Json格式的字符串 取值范围: 无 默认取值: 无
 
         :param labels: The labels of this Queue.
         :type labels: str
@@ -629,7 +629,7 @@ class Queue:
     def feature(self):
         r"""Gets the feature of this Queue.
 
-        队列特性。支持以下两种类型：basic：基础型ai：AI增强型（仅SQL的x86_64专属队列支持选择）默认值为“basic”。
+        参数解释: 队列特性 示例: basic 约束限制:  无 取值范围: basic（基础型） ai（AI增强型，仅SQL的x86_64专属队列支持选择） 默认取值: basic
 
         :return: The feature of this Queue.
         :rtype: str
@@ -640,7 +640,7 @@ class Queue:
     def feature(self, feature):
         r"""Sets the feature of this Queue.
 
-        队列特性。支持以下两种类型：basic：基础型ai：AI增强型（仅SQL的x86_64专属队列支持选择）默认值为“basic”。
+        参数解释: 队列特性 示例: basic 约束限制:  无 取值范围: basic（基础型） ai（AI增强型，仅SQL的x86_64专属队列支持选择） 默认取值: basic
 
         :param feature: The feature of this Queue.
         :type feature: str
@@ -651,7 +651,7 @@ class Queue:
     def resource_type(self):
         r"""Gets the resource_type of this Queue.
 
-        队列所属资源类型, vm或container。
+        参数解释: 队列所属资源类型 示例: vm 约束限制:  无 取值范围: vm container 默认取值: 无
 
         :return: The resource_type of this Queue.
         :rtype: str
@@ -662,7 +662,7 @@ class Queue:
     def resource_type(self, resource_type):
         r"""Sets the resource_type of this Queue.
 
-        队列所属资源类型, vm或container。
+        参数解释: 队列所属资源类型 示例: vm 约束限制:  无 取值范围: vm container 默认取值: 无
 
         :param resource_type: The resource_type of this Queue.
         :type resource_type: str
@@ -673,7 +673,7 @@ class Queue:
     def cu_spec(self):
         r"""Gets the cu_spec of this Queue.
 
-        队列的规格大小。对于包周期队列，表示包周期部分的CU值；对于按需队列，表示用户购买队列时的初始值。
+        参数解释: 队列的规格大小。对于包周期队列，表示包周期部分的CU值；对于按需队列，表示用户购买队列时的初始值 示例: 0 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
 
         :return: The cu_spec of this Queue.
         :rtype: int
@@ -684,7 +684,7 @@ class Queue:
     def cu_spec(self, cu_spec):
         r"""Sets the cu_spec of this Queue.
 
-        队列的规格大小。对于包周期队列，表示包周期部分的CU值；对于按需队列，表示用户购买队列时的初始值。
+        参数解释: 队列的规格大小。对于包周期队列，表示包周期部分的CU值；对于按需队列，表示用户购买队列时的初始值 示例: 0 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
 
         :param cu_spec: The cu_spec of this Queue.
         :type cu_spec: int
@@ -695,7 +695,7 @@ class Queue:
     def cu_scale_out_limit(self):
         r"""Gets the cu_scale_out_limit of this Queue.
 
-        当前队列弹性扩缩容的CU值上限。
+        参数解释: 当前队列弹性扩缩容的CU值上限 示例: 0 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
 
         :return: The cu_scale_out_limit of this Queue.
         :rtype: int
@@ -706,7 +706,7 @@ class Queue:
     def cu_scale_out_limit(self, cu_scale_out_limit):
         r"""Sets the cu_scale_out_limit of this Queue.
 
-        当前队列弹性扩缩容的CU值上限。
+        参数解释: 当前队列弹性扩缩容的CU值上限 示例: 0 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
 
         :param cu_scale_out_limit: The cu_scale_out_limit of this Queue.
         :type cu_scale_out_limit: int
@@ -717,7 +717,7 @@ class Queue:
     def cu_scale_in_limit(self):
         r"""Gets the cu_scale_in_limit of this Queue.
 
-        当前队列弹性扩缩容的CU值下限。
+        参数解释: 当前队列弹性扩缩容的CU值下限 示例: 0 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
 
         :return: The cu_scale_in_limit of this Queue.
         :rtype: int
@@ -728,7 +728,7 @@ class Queue:
     def cu_scale_in_limit(self, cu_scale_in_limit):
         r"""Sets the cu_scale_in_limit of this Queue.
 
-        当前队列弹性扩缩容的CU值下限。
+        参数解释: 当前队列弹性扩缩容的CU值下限 示例: 0 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
 
         :param cu_scale_in_limit: The cu_scale_in_limit of this Queue.
         :type cu_scale_in_limit: int
@@ -739,7 +739,7 @@ class Queue:
     def elastic_resource_pool_name(self):
         r"""Gets the elastic_resource_pool_name of this Queue.
 
-        弹性资源池名称。
+        参数解释: 弹性资源池名称 示例: dli_pool_0509 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The elastic_resource_pool_name of this Queue.
         :rtype: str
@@ -750,7 +750,7 @@ class Queue:
     def elastic_resource_pool_name(self, elastic_resource_pool_name):
         r"""Sets the elastic_resource_pool_name of this Queue.
 
-        弹性资源池名称。
+        参数解释: 弹性资源池名称 示例: dli_pool_0509 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param elastic_resource_pool_name: The elastic_resource_pool_name of this Queue.
         :type elastic_resource_pool_name: str
@@ -761,7 +761,7 @@ class Queue:
     def support_spark_versions(self):
         r"""Gets the support_spark_versions of this Queue.
 
-        队列支持的Spark版本。
+        参数解释: 队列支持的Spark版本 示例: [2.4.5] 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The support_spark_versions of this Queue.
         :rtype: list[str]
@@ -772,7 +772,7 @@ class Queue:
     def support_spark_versions(self, support_spark_versions):
         r"""Sets the support_spark_versions of this Queue.
 
-        队列支持的Spark版本。
+        参数解释: 队列支持的Spark版本 示例: [2.4.5] 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param support_spark_versions: The support_spark_versions of this Queue.
         :type support_spark_versions: list[str]
@@ -783,7 +783,7 @@ class Queue:
     def default_spark_version(self):
         r"""Gets the default_spark_version of this Queue.
 
-        队列默认的Spark版本。
+        参数解释: 队列默认的Spark版本 示例: 2.4.5 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The default_spark_version of this Queue.
         :rtype: str
@@ -794,7 +794,7 @@ class Queue:
     def default_spark_version(self, default_spark_version):
         r"""Sets the default_spark_version of this Queue.
 
-        队列默认的Spark版本。
+        参数解释: 队列默认的Spark版本 示例: 2.4.5 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param default_spark_version: The default_spark_version of this Queue.
         :type default_spark_version: str
@@ -805,7 +805,7 @@ class Queue:
     def support_hetu_engine_versions(self):
         r"""Gets the support_hetu_engine_versions of this Queue.
 
-        队列支持的HetuEngine版本。
+        参数解释: 队列支持的HetuEngine版本 示例: [2.1.0] 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The support_hetu_engine_versions of this Queue.
         :rtype: list[str]
@@ -816,7 +816,7 @@ class Queue:
     def support_hetu_engine_versions(self, support_hetu_engine_versions):
         r"""Sets the support_hetu_engine_versions of this Queue.
 
-        队列支持的HetuEngine版本。
+        参数解释: 队列支持的HetuEngine版本 示例: [2.1.0] 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param support_hetu_engine_versions: The support_hetu_engine_versions of this Queue.
         :type support_hetu_engine_versions: list[str]
@@ -827,7 +827,7 @@ class Queue:
     def default_hetu_engine_version(self):
         r"""Gets the default_hetu_engine_version of this Queue.
 
-        队列默认的HetuEngine版本。
+        参数解释: 队列默认的HetuEngine版本 示例: 2.1.0 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The default_hetu_engine_version of this Queue.
         :rtype: str
@@ -838,7 +838,7 @@ class Queue:
     def default_hetu_engine_version(self, default_hetu_engine_version):
         r"""Sets the default_hetu_engine_version of this Queue.
 
-        队列默认的HetuEngine版本。
+        参数解释: 队列默认的HetuEngine版本 示例: 2.1.0 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param default_hetu_engine_version: The default_hetu_engine_version of this Queue.
         :type default_hetu_engine_version: str
@@ -849,7 +849,7 @@ class Queue:
     def support_flink_sql_versions(self):
         r"""Gets the support_flink_sql_versions of this Queue.
 
-        队列支持的Flink SQL版本。
+        参数解释: 队列支持的Flink SQL版本 示例: [1.17] 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The support_flink_sql_versions of this Queue.
         :rtype: list[str]
@@ -860,7 +860,7 @@ class Queue:
     def support_flink_sql_versions(self, support_flink_sql_versions):
         r"""Sets the support_flink_sql_versions of this Queue.
 
-        队列支持的Flink SQL版本。
+        参数解释: 队列支持的Flink SQL版本 示例: [1.17] 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param support_flink_sql_versions: The support_flink_sql_versions of this Queue.
         :type support_flink_sql_versions: list[str]
@@ -871,7 +871,7 @@ class Queue:
     def default_flink_sql_version(self):
         r"""Gets the default_flink_sql_version of this Queue.
 
-        队列默认的Flink SQL版本。
+        参数解释: 队列默认的Flink SQL版本 示例: 1.17 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The default_flink_sql_version of this Queue.
         :rtype: str
@@ -882,7 +882,7 @@ class Queue:
     def default_flink_sql_version(self, default_flink_sql_version):
         r"""Sets the default_flink_sql_version of this Queue.
 
-        队列默认的Flink SQL版本。
+        参数解释: 队列默认的Flink SQL版本 示例: 1.17 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param default_flink_sql_version: The default_flink_sql_version of this Queue.
         :type default_flink_sql_version: str
@@ -893,7 +893,7 @@ class Queue:
     def support_flink_jar_versions(self):
         r"""Gets the support_flink_jar_versions of this Queue.
 
-        队列支持的Flink JAR版本。
+        参数解释: 队列支持的Flink JAR版本 示例: [1.17] 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The support_flink_jar_versions of this Queue.
         :rtype: list[str]
@@ -904,7 +904,7 @@ class Queue:
     def support_flink_jar_versions(self, support_flink_jar_versions):
         r"""Sets the support_flink_jar_versions of this Queue.
 
-        队列支持的Flink JAR版本。
+        参数解释: 队列支持的Flink JAR版本 示例: [1.17] 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param support_flink_jar_versions: The support_flink_jar_versions of this Queue.
         :type support_flink_jar_versions: list[str]
@@ -915,7 +915,7 @@ class Queue:
     def default_flink_jar_version(self):
         r"""Gets the default_flink_jar_version of this Queue.
 
-        队列默认的Flink JAR版本。
+        参数解释: 队列默认的Flink JAR版本 示例: 1.17 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The default_flink_jar_version of this Queue.
         :rtype: str
@@ -926,7 +926,7 @@ class Queue:
     def default_flink_jar_version(self, default_flink_jar_version):
         r"""Sets the default_flink_jar_version of this Queue.
 
-        队列默认的Flink JAR版本。
+        参数解释: 队列默认的Flink JAR版本 示例: 1.17 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param default_flink_jar_version: The default_flink_jar_version of this Queue.
         :type default_flink_jar_version: str

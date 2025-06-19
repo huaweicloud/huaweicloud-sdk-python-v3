@@ -29,7 +29,7 @@ class ShowSparkJobRequest:
 
         The model defined in huaweicloud sdk
 
-        :param batch_id: 批处理作业的ID。
+        :param batch_id: 参数解释:  批处理作业的ID 示例: 0a324461-d9d9-45da-a52a-3b3c7a3d809e 约束限制:  无 取值范围: 无 默认取值: 无
         :type batch_id: str
         """
         
@@ -44,7 +44,7 @@ class ShowSparkJobRequest:
     def batch_id(self):
         r"""Gets the batch_id of this ShowSparkJobRequest.
 
-        批处理作业的ID。
+        参数解释:  批处理作业的ID 示例: 0a324461-d9d9-45da-a52a-3b3c7a3d809e 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The batch_id of this ShowSparkJobRequest.
         :rtype: str
@@ -55,7 +55,7 @@ class ShowSparkJobRequest:
     def batch_id(self, batch_id):
         r"""Sets the batch_id of this ShowSparkJobRequest.
 
-        批处理作业的ID。
+        参数解释:  批处理作业的ID 示例: 0a324461-d9d9-45da-a52a-3b3c7a3d809e 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param batch_id: The batch_id of this ShowSparkJobRequest.
         :type batch_id: str

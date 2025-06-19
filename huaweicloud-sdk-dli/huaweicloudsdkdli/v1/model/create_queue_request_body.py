@@ -29,7 +29,8 @@ class CreateQueueRequestBody:
         'feature': 'str',
         'tags': 'list[Tag]',
         'elastic_resource_pool_name': 'str',
-        'properties': 'CreateQueueRequestBodyProperties'
+        'properties': 'CreateQueueRequestBodyProperties',
+        'engine': 'str'
     }
 
     attribute_map = {
@@ -45,10 +46,11 @@ class CreateQueueRequestBody:
         'feature': 'feature',
         'tags': 'tags',
         'elastic_resource_pool_name': 'elastic_resource_pool_name',
-        'properties': 'properties'
+        'properties': 'properties',
+        'engine': 'engine'
     }
 
-    def __init__(self, queue_name=None, queue_type=None, description=None, cu_count=None, charging_mode=None, enterprise_project_id=None, platform=None, resource_mode=None, labels=None, feature=None, tags=None, elastic_resource_pool_name=None, properties=None):
+    def __init__(self, queue_name=None, queue_type=None, description=None, cu_count=None, charging_mode=None, enterprise_project_id=None, platform=None, resource_mode=None, labels=None, feature=None, tags=None, elastic_resource_pool_name=None, properties=None, engine=None):
         r"""CreateQueueRequestBody
 
         The model defined in huaweicloud sdk
@@ -79,6 +81,8 @@ class CreateQueueRequestBody:
         :type elastic_resource_pool_name: str
         :param properties: 
         :type properties: :class:`huaweicloudsdkdli.v1.CreateQueueRequestBodyProperties`
+        :param engine: 只有在queue_type是sql条件下才可配置，默认是spark。可以选择spark引擎或hetuEngin。
+        :type engine: str
         """
         
         
@@ -96,6 +100,7 @@ class CreateQueueRequestBody:
         self._tags = None
         self._elastic_resource_pool_name = None
         self._properties = None
+        self._engine = None
         self.discriminator = None
 
         self.queue_name = queue_name
@@ -122,6 +127,8 @@ class CreateQueueRequestBody:
             self.elastic_resource_pool_name = elastic_resource_pool_name
         if properties is not None:
             self.properties = properties
+        if engine is not None:
+            self.engine = engine
 
     @property
     def queue_name(self):
@@ -404,6 +411,28 @@ class CreateQueueRequestBody:
         :type properties: :class:`huaweicloudsdkdli.v1.CreateQueueRequestBodyProperties`
         """
         self._properties = properties
+
+    @property
+    def engine(self):
+        r"""Gets the engine of this CreateQueueRequestBody.
+
+        只有在queue_type是sql条件下才可配置，默认是spark。可以选择spark引擎或hetuEngin。
+
+        :return: The engine of this CreateQueueRequestBody.
+        :rtype: str
+        """
+        return self._engine
+
+    @engine.setter
+    def engine(self, engine):
+        r"""Sets the engine of this CreateQueueRequestBody.
+
+        只有在queue_type是sql条件下才可配置，默认是spark。可以选择spark引擎或hetuEngin。
+
+        :param engine: The engine of this CreateQueueRequestBody.
+        :type engine: str
+        """
+        self._engine = engine
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -32,9 +32,9 @@ class ShowSparkJobStatusResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param id: 批处理作业的ID，采用UUID（通用唯一识别码）格式。
+        :param id: 参数解释:  批处理作业的ID，采用UUID（通用唯一识别码）格式 示例: 0a324461-d9d9-45da-a52a-3b3c7a3d809e 约束限制:  无 取值范围: 无 默认取值: 无
         :type id: str
-        :param state: 批处理作业的状态。starting：正在启动；running：正在执行任务；dead：session已退出；success：session停止成功；recovering：正在恢复。
+        :param state: 参数解释:  批处理作业的状态。starting：正在启动；running：正在执行任务；dead：session已退出；success：session停止成功；recovering：正在恢复 示例: success 约束限制:  无 取值范围: starting（批处理作业正在启动） running（批处理作业正在执行任务） dead（批处理作业已退出） success（批处理作业执行成功） recovering（批处理作业正在恢复） 默认取值: 无
         :type state: str
         """
         
@@ -53,7 +53,7 @@ class ShowSparkJobStatusResponse(SdkResponse):
     def id(self):
         r"""Gets the id of this ShowSparkJobStatusResponse.
 
-        批处理作业的ID，采用UUID（通用唯一识别码）格式。
+        参数解释:  批处理作业的ID，采用UUID（通用唯一识别码）格式 示例: 0a324461-d9d9-45da-a52a-3b3c7a3d809e 约束限制:  无 取值范围: 无 默认取值: 无
 
         :return: The id of this ShowSparkJobStatusResponse.
         :rtype: str
@@ -64,7 +64,7 @@ class ShowSparkJobStatusResponse(SdkResponse):
     def id(self, id):
         r"""Sets the id of this ShowSparkJobStatusResponse.
 
-        批处理作业的ID，采用UUID（通用唯一识别码）格式。
+        参数解释:  批处理作业的ID，采用UUID（通用唯一识别码）格式 示例: 0a324461-d9d9-45da-a52a-3b3c7a3d809e 约束限制:  无 取值范围: 无 默认取值: 无
 
         :param id: The id of this ShowSparkJobStatusResponse.
         :type id: str
@@ -75,7 +75,7 @@ class ShowSparkJobStatusResponse(SdkResponse):
     def state(self):
         r"""Gets the state of this ShowSparkJobStatusResponse.
 
-        批处理作业的状态。starting：正在启动；running：正在执行任务；dead：session已退出；success：session停止成功；recovering：正在恢复。
+        参数解释:  批处理作业的状态。starting：正在启动；running：正在执行任务；dead：session已退出；success：session停止成功；recovering：正在恢复 示例: success 约束限制:  无 取值范围: starting（批处理作业正在启动） running（批处理作业正在执行任务） dead（批处理作业已退出） success（批处理作业执行成功） recovering（批处理作业正在恢复） 默认取值: 无
 
         :return: The state of this ShowSparkJobStatusResponse.
         :rtype: str
@@ -86,7 +86,7 @@ class ShowSparkJobStatusResponse(SdkResponse):
     def state(self, state):
         r"""Sets the state of this ShowSparkJobStatusResponse.
 
-        批处理作业的状态。starting：正在启动；running：正在执行任务；dead：session已退出；success：session停止成功；recovering：正在恢复。
+        参数解释:  批处理作业的状态。starting：正在启动；running：正在执行任务；dead：session已退出；success：session停止成功；recovering：正在恢复 示例: success 约束限制:  无 取值范围: starting（批处理作业正在启动） running（批处理作业正在执行任务） dead（批处理作业已退出） success（批处理作业执行成功） recovering（批处理作业正在恢复） 默认取值: 无
 
         :param state: The state of this ShowSparkJobStatusResponse.
         :type state: str

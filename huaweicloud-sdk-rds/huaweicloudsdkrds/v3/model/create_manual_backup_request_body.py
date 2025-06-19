@@ -43,9 +43,9 @@ class CreateManualBackupRequestBody:
         :type name: str
         :param description: 备份描述，不能包含&gt;!&lt;\&quot;&amp;&#39;&#x3D;特殊字符，不大于256个字符。
         :type description: str
-        :param databases: 只支持Microsoft SQL Server，局部备份的用户自建数据库名列表，当有此参数时以局部备份为准。
+        :param databases: 只支持Microsoft SQL Server和RDS for PostgreSQL，局部备份的用户自建数据库名列表，当有此参数时以局部备份为准。
         :type databases: list[:class:`huaweicloudsdkrds.v3.BackupDatabase`]
-        :param backup_database_individually: 是否分库备份，只适用于SQLServer，默认为false
+        :param backup_database_individually: 是否分库备份，只适用于SQLServer、RDS for PostgreSQL，默认为false
         :type backup_database_individually: bool
         """
         
@@ -137,7 +137,7 @@ class CreateManualBackupRequestBody:
     def databases(self):
         r"""Gets the databases of this CreateManualBackupRequestBody.
 
-        只支持Microsoft SQL Server，局部备份的用户自建数据库名列表，当有此参数时以局部备份为准。
+        只支持Microsoft SQL Server和RDS for PostgreSQL，局部备份的用户自建数据库名列表，当有此参数时以局部备份为准。
 
         :return: The databases of this CreateManualBackupRequestBody.
         :rtype: list[:class:`huaweicloudsdkrds.v3.BackupDatabase`]
@@ -148,7 +148,7 @@ class CreateManualBackupRequestBody:
     def databases(self, databases):
         r"""Sets the databases of this CreateManualBackupRequestBody.
 
-        只支持Microsoft SQL Server，局部备份的用户自建数据库名列表，当有此参数时以局部备份为准。
+        只支持Microsoft SQL Server和RDS for PostgreSQL，局部备份的用户自建数据库名列表，当有此参数时以局部备份为准。
 
         :param databases: The databases of this CreateManualBackupRequestBody.
         :type databases: list[:class:`huaweicloudsdkrds.v3.BackupDatabase`]
@@ -159,7 +159,7 @@ class CreateManualBackupRequestBody:
     def backup_database_individually(self):
         r"""Gets the backup_database_individually of this CreateManualBackupRequestBody.
 
-        是否分库备份，只适用于SQLServer，默认为false
+        是否分库备份，只适用于SQLServer、RDS for PostgreSQL，默认为false
 
         :return: The backup_database_individually of this CreateManualBackupRequestBody.
         :rtype: bool
@@ -170,7 +170,7 @@ class CreateManualBackupRequestBody:
     def backup_database_individually(self, backup_database_individually):
         r"""Sets the backup_database_individually of this CreateManualBackupRequestBody.
 
-        是否分库备份，只适用于SQLServer，默认为false
+        是否分库备份，只适用于SQLServer、RDS for PostgreSQL，默认为false
 
         :param backup_database_individually: The backup_database_individually of this CreateManualBackupRequestBody.
         :type backup_database_individually: bool

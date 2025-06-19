@@ -59,37 +59,37 @@ class SmartConnectTaskRespSourceConfig:
 
         The model defined in huaweicloud sdk
 
-        :param current_cluster_name: 当前Kafka实例别名。（仅源端类型为Kafka时会显示）
+        :param current_cluster_name: **参数解释**： 当前Kafka实例别名。（仅源端类型为Kafka时会显示） **取值范围**： 不涉及。
         :type current_cluster_name: str
-        :param cluster_name: 对端Kafka实例别名。（仅源端类型为Kafka时会显示）
+        :param cluster_name: **参数解释**： 对端Kafka实例别名。（仅源端类型为Kafka时会显示） **取值范围**： 不涉及。
         :type cluster_name: str
-        :param user_name: 对端Kafka用户名。（仅源端类型为Kafka时会显示）
+        :param user_name: **参数解释**： 对端Kafka用户名。（仅源端类型为Kafka时会显示） **取值范围**： 不涉及。
         :type user_name: str
-        :param sasl_mechanism: 对端Kafka认证机制。（仅源端类型为Kafka时会显示）
+        :param sasl_mechanism: **参数解释**： 对端Kafka认证机制。（仅源端类型为Kafka时会显示） **取值范围**： - PLAIN - SCRAM-SHA-512
         :type sasl_mechanism: str
-        :param instance_id: 对端Kafka实例ID。（仅源端类型为Kafka时会显示）
+        :param instance_id: **参数解释**： 对端Kafka实例ID。（仅源端类型为Kafka时会显示） **取值范围**： 不涉及。
         :type instance_id: str
-        :param bootstrap_servers: 对端Kafka实例地址。（仅源端类型为Kafka时会显示）
+        :param bootstrap_servers: **参数解释**： 对端Kafka实例地址。（仅源端类型为Kafka时会显示） **取值范围**： 不涉及。
         :type bootstrap_servers: str
-        :param security_protocol: 对端Kafka认证方式。（仅源端类型为Kafka时会显示）
+        :param security_protocol: **参数解释**： 对端Kafka认证方式。（仅源端类型为Kafka时会显示） **取值范围**： - PLAINTEXT：不开启SSL，明文传输。 - SASL_SSL：采用SASL方式进行认证，数据通过SSL证书进行加密传输，安全性更高。 - SASL_PLAINTEXT：采用SASL方式进行认证，数据通过明文传输，性能更好。
         :type security_protocol: str
-        :param direction: 同步方向。（仅源端类型为Kafka时会显示）
+        :param direction: **参数解释**： 同步方向。（仅源端类型为Kafka时会显示） **取值范围**： - pull：拉取。 - push：推送。 - two-way：双向。
         :type direction: str
-        :param sync_consumer_offsets_enabled: 是否同步消费进度。（仅源端类型为Kafka时会显示）
+        :param sync_consumer_offsets_enabled: **参数解释**： 是否同步消费进度。（仅源端类型为Kafka时会显示） **取值范围**： - true：同步消费进度 - false：不同步消费进度
         :type sync_consumer_offsets_enabled: bool
-        :param replication_factor: 副本数。（仅源端类型为Kafka时会显示）
+        :param replication_factor: **参数解释**： 副本数。（仅源端类型为Kafka时会显示） **取值范围**： 不涉及。
         :type replication_factor: int
-        :param task_num: 任务数。（仅源端类型为Kafka时会显示）
+        :param task_num: **参数解释**： 任务数。（仅源端类型为Kafka时会显示） **取值范围**： 不涉及。
         :type task_num: int
-        :param rename_topic_enabled: 是否重命名Topic。（仅源端类型为Kafka时会显示）
+        :param rename_topic_enabled: **参数解释**： 是否重命名Topic。（仅源端类型为Kafka时会显示） **取值范围**： - true：重命名Topic。 - false：不进行重命名Topic。
         :type rename_topic_enabled: bool
-        :param provenance_header_enabled: 是否添加来源header。（仅源端类型为Kafka时会显示）
+        :param provenance_header_enabled: **参数解释**： 是否添加来源header。（仅源端类型为Kafka时会显示） **取值范围**： - true：添加来源header。 - false：不添加来源header。
         :type provenance_header_enabled: bool
-        :param consumer_strategy: 启动偏移量，latest为获取最新的数据，earliest为获取最早的数据。（仅源端类型为Kafka时会显示）
+        :param consumer_strategy: **参数解释**： 启动偏移量。（仅源端类型为Kafka时会显示） **取值范围**： - latest：获取最新的数据。 - earliest：获取最早的数据。
         :type consumer_strategy: str
-        :param compression_type: 压缩算法。（仅源端类型为Kafka时会显示）
+        :param compression_type: **参数解释**： 压缩算法。（仅源端类型为Kafka时会显示） **取值范围**： - none - gzip - snappy - lz4 - zstd
         :type compression_type: str
-        :param topics_mapping: Topic映射。（仅源端类型为Kafka时会显示）
+        :param topics_mapping: **参数解释**： Topic映射。（仅源端类型为Kafka时会显示） **取值范围**： 不涉及。
         :type topics_mapping: str
         """
         
@@ -150,7 +150,7 @@ class SmartConnectTaskRespSourceConfig:
     def current_cluster_name(self):
         r"""Gets the current_cluster_name of this SmartConnectTaskRespSourceConfig.
 
-        当前Kafka实例别名。（仅源端类型为Kafka时会显示）
+        **参数解释**： 当前Kafka实例别名。（仅源端类型为Kafka时会显示） **取值范围**： 不涉及。
 
         :return: The current_cluster_name of this SmartConnectTaskRespSourceConfig.
         :rtype: str
@@ -161,7 +161,7 @@ class SmartConnectTaskRespSourceConfig:
     def current_cluster_name(self, current_cluster_name):
         r"""Sets the current_cluster_name of this SmartConnectTaskRespSourceConfig.
 
-        当前Kafka实例别名。（仅源端类型为Kafka时会显示）
+        **参数解释**： 当前Kafka实例别名。（仅源端类型为Kafka时会显示） **取值范围**： 不涉及。
 
         :param current_cluster_name: The current_cluster_name of this SmartConnectTaskRespSourceConfig.
         :type current_cluster_name: str
@@ -172,7 +172,7 @@ class SmartConnectTaskRespSourceConfig:
     def cluster_name(self):
         r"""Gets the cluster_name of this SmartConnectTaskRespSourceConfig.
 
-        对端Kafka实例别名。（仅源端类型为Kafka时会显示）
+        **参数解释**： 对端Kafka实例别名。（仅源端类型为Kafka时会显示） **取值范围**： 不涉及。
 
         :return: The cluster_name of this SmartConnectTaskRespSourceConfig.
         :rtype: str
@@ -183,7 +183,7 @@ class SmartConnectTaskRespSourceConfig:
     def cluster_name(self, cluster_name):
         r"""Sets the cluster_name of this SmartConnectTaskRespSourceConfig.
 
-        对端Kafka实例别名。（仅源端类型为Kafka时会显示）
+        **参数解释**： 对端Kafka实例别名。（仅源端类型为Kafka时会显示） **取值范围**： 不涉及。
 
         :param cluster_name: The cluster_name of this SmartConnectTaskRespSourceConfig.
         :type cluster_name: str
@@ -194,7 +194,7 @@ class SmartConnectTaskRespSourceConfig:
     def user_name(self):
         r"""Gets the user_name of this SmartConnectTaskRespSourceConfig.
 
-        对端Kafka用户名。（仅源端类型为Kafka时会显示）
+        **参数解释**： 对端Kafka用户名。（仅源端类型为Kafka时会显示） **取值范围**： 不涉及。
 
         :return: The user_name of this SmartConnectTaskRespSourceConfig.
         :rtype: str
@@ -205,7 +205,7 @@ class SmartConnectTaskRespSourceConfig:
     def user_name(self, user_name):
         r"""Sets the user_name of this SmartConnectTaskRespSourceConfig.
 
-        对端Kafka用户名。（仅源端类型为Kafka时会显示）
+        **参数解释**： 对端Kafka用户名。（仅源端类型为Kafka时会显示） **取值范围**： 不涉及。
 
         :param user_name: The user_name of this SmartConnectTaskRespSourceConfig.
         :type user_name: str
@@ -216,7 +216,7 @@ class SmartConnectTaskRespSourceConfig:
     def sasl_mechanism(self):
         r"""Gets the sasl_mechanism of this SmartConnectTaskRespSourceConfig.
 
-        对端Kafka认证机制。（仅源端类型为Kafka时会显示）
+        **参数解释**： 对端Kafka认证机制。（仅源端类型为Kafka时会显示） **取值范围**： - PLAIN - SCRAM-SHA-512
 
         :return: The sasl_mechanism of this SmartConnectTaskRespSourceConfig.
         :rtype: str
@@ -227,7 +227,7 @@ class SmartConnectTaskRespSourceConfig:
     def sasl_mechanism(self, sasl_mechanism):
         r"""Sets the sasl_mechanism of this SmartConnectTaskRespSourceConfig.
 
-        对端Kafka认证机制。（仅源端类型为Kafka时会显示）
+        **参数解释**： 对端Kafka认证机制。（仅源端类型为Kafka时会显示） **取值范围**： - PLAIN - SCRAM-SHA-512
 
         :param sasl_mechanism: The sasl_mechanism of this SmartConnectTaskRespSourceConfig.
         :type sasl_mechanism: str
@@ -238,7 +238,7 @@ class SmartConnectTaskRespSourceConfig:
     def instance_id(self):
         r"""Gets the instance_id of this SmartConnectTaskRespSourceConfig.
 
-        对端Kafka实例ID。（仅源端类型为Kafka时会显示）
+        **参数解释**： 对端Kafka实例ID。（仅源端类型为Kafka时会显示） **取值范围**： 不涉及。
 
         :return: The instance_id of this SmartConnectTaskRespSourceConfig.
         :rtype: str
@@ -249,7 +249,7 @@ class SmartConnectTaskRespSourceConfig:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this SmartConnectTaskRespSourceConfig.
 
-        对端Kafka实例ID。（仅源端类型为Kafka时会显示）
+        **参数解释**： 对端Kafka实例ID。（仅源端类型为Kafka时会显示） **取值范围**： 不涉及。
 
         :param instance_id: The instance_id of this SmartConnectTaskRespSourceConfig.
         :type instance_id: str
@@ -260,7 +260,7 @@ class SmartConnectTaskRespSourceConfig:
     def bootstrap_servers(self):
         r"""Gets the bootstrap_servers of this SmartConnectTaskRespSourceConfig.
 
-        对端Kafka实例地址。（仅源端类型为Kafka时会显示）
+        **参数解释**： 对端Kafka实例地址。（仅源端类型为Kafka时会显示） **取值范围**： 不涉及。
 
         :return: The bootstrap_servers of this SmartConnectTaskRespSourceConfig.
         :rtype: str
@@ -271,7 +271,7 @@ class SmartConnectTaskRespSourceConfig:
     def bootstrap_servers(self, bootstrap_servers):
         r"""Sets the bootstrap_servers of this SmartConnectTaskRespSourceConfig.
 
-        对端Kafka实例地址。（仅源端类型为Kafka时会显示）
+        **参数解释**： 对端Kafka实例地址。（仅源端类型为Kafka时会显示） **取值范围**： 不涉及。
 
         :param bootstrap_servers: The bootstrap_servers of this SmartConnectTaskRespSourceConfig.
         :type bootstrap_servers: str
@@ -282,7 +282,7 @@ class SmartConnectTaskRespSourceConfig:
     def security_protocol(self):
         r"""Gets the security_protocol of this SmartConnectTaskRespSourceConfig.
 
-        对端Kafka认证方式。（仅源端类型为Kafka时会显示）
+        **参数解释**： 对端Kafka认证方式。（仅源端类型为Kafka时会显示） **取值范围**： - PLAINTEXT：不开启SSL，明文传输。 - SASL_SSL：采用SASL方式进行认证，数据通过SSL证书进行加密传输，安全性更高。 - SASL_PLAINTEXT：采用SASL方式进行认证，数据通过明文传输，性能更好。
 
         :return: The security_protocol of this SmartConnectTaskRespSourceConfig.
         :rtype: str
@@ -293,7 +293,7 @@ class SmartConnectTaskRespSourceConfig:
     def security_protocol(self, security_protocol):
         r"""Sets the security_protocol of this SmartConnectTaskRespSourceConfig.
 
-        对端Kafka认证方式。（仅源端类型为Kafka时会显示）
+        **参数解释**： 对端Kafka认证方式。（仅源端类型为Kafka时会显示） **取值范围**： - PLAINTEXT：不开启SSL，明文传输。 - SASL_SSL：采用SASL方式进行认证，数据通过SSL证书进行加密传输，安全性更高。 - SASL_PLAINTEXT：采用SASL方式进行认证，数据通过明文传输，性能更好。
 
         :param security_protocol: The security_protocol of this SmartConnectTaskRespSourceConfig.
         :type security_protocol: str
@@ -304,7 +304,7 @@ class SmartConnectTaskRespSourceConfig:
     def direction(self):
         r"""Gets the direction of this SmartConnectTaskRespSourceConfig.
 
-        同步方向。（仅源端类型为Kafka时会显示）
+        **参数解释**： 同步方向。（仅源端类型为Kafka时会显示） **取值范围**： - pull：拉取。 - push：推送。 - two-way：双向。
 
         :return: The direction of this SmartConnectTaskRespSourceConfig.
         :rtype: str
@@ -315,7 +315,7 @@ class SmartConnectTaskRespSourceConfig:
     def direction(self, direction):
         r"""Sets the direction of this SmartConnectTaskRespSourceConfig.
 
-        同步方向。（仅源端类型为Kafka时会显示）
+        **参数解释**： 同步方向。（仅源端类型为Kafka时会显示） **取值范围**： - pull：拉取。 - push：推送。 - two-way：双向。
 
         :param direction: The direction of this SmartConnectTaskRespSourceConfig.
         :type direction: str
@@ -326,7 +326,7 @@ class SmartConnectTaskRespSourceConfig:
     def sync_consumer_offsets_enabled(self):
         r"""Gets the sync_consumer_offsets_enabled of this SmartConnectTaskRespSourceConfig.
 
-        是否同步消费进度。（仅源端类型为Kafka时会显示）
+        **参数解释**： 是否同步消费进度。（仅源端类型为Kafka时会显示） **取值范围**： - true：同步消费进度 - false：不同步消费进度
 
         :return: The sync_consumer_offsets_enabled of this SmartConnectTaskRespSourceConfig.
         :rtype: bool
@@ -337,7 +337,7 @@ class SmartConnectTaskRespSourceConfig:
     def sync_consumer_offsets_enabled(self, sync_consumer_offsets_enabled):
         r"""Sets the sync_consumer_offsets_enabled of this SmartConnectTaskRespSourceConfig.
 
-        是否同步消费进度。（仅源端类型为Kafka时会显示）
+        **参数解释**： 是否同步消费进度。（仅源端类型为Kafka时会显示） **取值范围**： - true：同步消费进度 - false：不同步消费进度
 
         :param sync_consumer_offsets_enabled: The sync_consumer_offsets_enabled of this SmartConnectTaskRespSourceConfig.
         :type sync_consumer_offsets_enabled: bool
@@ -348,7 +348,7 @@ class SmartConnectTaskRespSourceConfig:
     def replication_factor(self):
         r"""Gets the replication_factor of this SmartConnectTaskRespSourceConfig.
 
-        副本数。（仅源端类型为Kafka时会显示）
+        **参数解释**： 副本数。（仅源端类型为Kafka时会显示） **取值范围**： 不涉及。
 
         :return: The replication_factor of this SmartConnectTaskRespSourceConfig.
         :rtype: int
@@ -359,7 +359,7 @@ class SmartConnectTaskRespSourceConfig:
     def replication_factor(self, replication_factor):
         r"""Sets the replication_factor of this SmartConnectTaskRespSourceConfig.
 
-        副本数。（仅源端类型为Kafka时会显示）
+        **参数解释**： 副本数。（仅源端类型为Kafka时会显示） **取值范围**： 不涉及。
 
         :param replication_factor: The replication_factor of this SmartConnectTaskRespSourceConfig.
         :type replication_factor: int
@@ -370,7 +370,7 @@ class SmartConnectTaskRespSourceConfig:
     def task_num(self):
         r"""Gets the task_num of this SmartConnectTaskRespSourceConfig.
 
-        任务数。（仅源端类型为Kafka时会显示）
+        **参数解释**： 任务数。（仅源端类型为Kafka时会显示） **取值范围**： 不涉及。
 
         :return: The task_num of this SmartConnectTaskRespSourceConfig.
         :rtype: int
@@ -381,7 +381,7 @@ class SmartConnectTaskRespSourceConfig:
     def task_num(self, task_num):
         r"""Sets the task_num of this SmartConnectTaskRespSourceConfig.
 
-        任务数。（仅源端类型为Kafka时会显示）
+        **参数解释**： 任务数。（仅源端类型为Kafka时会显示） **取值范围**： 不涉及。
 
         :param task_num: The task_num of this SmartConnectTaskRespSourceConfig.
         :type task_num: int
@@ -392,7 +392,7 @@ class SmartConnectTaskRespSourceConfig:
     def rename_topic_enabled(self):
         r"""Gets the rename_topic_enabled of this SmartConnectTaskRespSourceConfig.
 
-        是否重命名Topic。（仅源端类型为Kafka时会显示）
+        **参数解释**： 是否重命名Topic。（仅源端类型为Kafka时会显示） **取值范围**： - true：重命名Topic。 - false：不进行重命名Topic。
 
         :return: The rename_topic_enabled of this SmartConnectTaskRespSourceConfig.
         :rtype: bool
@@ -403,7 +403,7 @@ class SmartConnectTaskRespSourceConfig:
     def rename_topic_enabled(self, rename_topic_enabled):
         r"""Sets the rename_topic_enabled of this SmartConnectTaskRespSourceConfig.
 
-        是否重命名Topic。（仅源端类型为Kafka时会显示）
+        **参数解释**： 是否重命名Topic。（仅源端类型为Kafka时会显示） **取值范围**： - true：重命名Topic。 - false：不进行重命名Topic。
 
         :param rename_topic_enabled: The rename_topic_enabled of this SmartConnectTaskRespSourceConfig.
         :type rename_topic_enabled: bool
@@ -414,7 +414,7 @@ class SmartConnectTaskRespSourceConfig:
     def provenance_header_enabled(self):
         r"""Gets the provenance_header_enabled of this SmartConnectTaskRespSourceConfig.
 
-        是否添加来源header。（仅源端类型为Kafka时会显示）
+        **参数解释**： 是否添加来源header。（仅源端类型为Kafka时会显示） **取值范围**： - true：添加来源header。 - false：不添加来源header。
 
         :return: The provenance_header_enabled of this SmartConnectTaskRespSourceConfig.
         :rtype: bool
@@ -425,7 +425,7 @@ class SmartConnectTaskRespSourceConfig:
     def provenance_header_enabled(self, provenance_header_enabled):
         r"""Sets the provenance_header_enabled of this SmartConnectTaskRespSourceConfig.
 
-        是否添加来源header。（仅源端类型为Kafka时会显示）
+        **参数解释**： 是否添加来源header。（仅源端类型为Kafka时会显示） **取值范围**： - true：添加来源header。 - false：不添加来源header。
 
         :param provenance_header_enabled: The provenance_header_enabled of this SmartConnectTaskRespSourceConfig.
         :type provenance_header_enabled: bool
@@ -436,7 +436,7 @@ class SmartConnectTaskRespSourceConfig:
     def consumer_strategy(self):
         r"""Gets the consumer_strategy of this SmartConnectTaskRespSourceConfig.
 
-        启动偏移量，latest为获取最新的数据，earliest为获取最早的数据。（仅源端类型为Kafka时会显示）
+        **参数解释**： 启动偏移量。（仅源端类型为Kafka时会显示） **取值范围**： - latest：获取最新的数据。 - earliest：获取最早的数据。
 
         :return: The consumer_strategy of this SmartConnectTaskRespSourceConfig.
         :rtype: str
@@ -447,7 +447,7 @@ class SmartConnectTaskRespSourceConfig:
     def consumer_strategy(self, consumer_strategy):
         r"""Sets the consumer_strategy of this SmartConnectTaskRespSourceConfig.
 
-        启动偏移量，latest为获取最新的数据，earliest为获取最早的数据。（仅源端类型为Kafka时会显示）
+        **参数解释**： 启动偏移量。（仅源端类型为Kafka时会显示） **取值范围**： - latest：获取最新的数据。 - earliest：获取最早的数据。
 
         :param consumer_strategy: The consumer_strategy of this SmartConnectTaskRespSourceConfig.
         :type consumer_strategy: str
@@ -458,7 +458,7 @@ class SmartConnectTaskRespSourceConfig:
     def compression_type(self):
         r"""Gets the compression_type of this SmartConnectTaskRespSourceConfig.
 
-        压缩算法。（仅源端类型为Kafka时会显示）
+        **参数解释**： 压缩算法。（仅源端类型为Kafka时会显示） **取值范围**： - none - gzip - snappy - lz4 - zstd
 
         :return: The compression_type of this SmartConnectTaskRespSourceConfig.
         :rtype: str
@@ -469,7 +469,7 @@ class SmartConnectTaskRespSourceConfig:
     def compression_type(self, compression_type):
         r"""Sets the compression_type of this SmartConnectTaskRespSourceConfig.
 
-        压缩算法。（仅源端类型为Kafka时会显示）
+        **参数解释**： 压缩算法。（仅源端类型为Kafka时会显示） **取值范围**： - none - gzip - snappy - lz4 - zstd
 
         :param compression_type: The compression_type of this SmartConnectTaskRespSourceConfig.
         :type compression_type: str
@@ -480,7 +480,7 @@ class SmartConnectTaskRespSourceConfig:
     def topics_mapping(self):
         r"""Gets the topics_mapping of this SmartConnectTaskRespSourceConfig.
 
-        Topic映射。（仅源端类型为Kafka时会显示）
+        **参数解释**： Topic映射。（仅源端类型为Kafka时会显示） **取值范围**： 不涉及。
 
         :return: The topics_mapping of this SmartConnectTaskRespSourceConfig.
         :rtype: str
@@ -491,7 +491,7 @@ class SmartConnectTaskRespSourceConfig:
     def topics_mapping(self, topics_mapping):
         r"""Sets the topics_mapping of this SmartConnectTaskRespSourceConfig.
 
-        Topic映射。（仅源端类型为Kafka时会显示）
+        **参数解释**： Topic映射。（仅源端类型为Kafka时会显示） **取值范围**： 不涉及。
 
         :param topics_mapping: The topics_mapping of this SmartConnectTaskRespSourceConfig.
         :type topics_mapping: str
