@@ -36,13 +36,13 @@ class ListQueriesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param code: 响应码。
+        :param code: **参数解释**： 响应码。 **取值范围**： 不涉及。
         :type code: int
-        :param msg: 响应信息。
+        :param msg: **参数解释**： 响应信息。 **取值范围**： 不涉及。
         :type msg: str
         :param data: 
         :type data: :class:`huaweicloudsdkdws.v2.ListQueriesData`
-        :param count: 总条数。
+        :param count: **参数解释**： 总条数。 **取值范围**： 不涉及。
         :type count: int
         """
         
@@ -67,7 +67,7 @@ class ListQueriesResponse(SdkResponse):
     def code(self):
         r"""Gets the code of this ListQueriesResponse.
 
-        响应码。
+        **参数解释**： 响应码。 **取值范围**： 不涉及。
 
         :return: The code of this ListQueriesResponse.
         :rtype: int
@@ -78,7 +78,7 @@ class ListQueriesResponse(SdkResponse):
     def code(self, code):
         r"""Sets the code of this ListQueriesResponse.
 
-        响应码。
+        **参数解释**： 响应码。 **取值范围**： 不涉及。
 
         :param code: The code of this ListQueriesResponse.
         :type code: int
@@ -89,7 +89,7 @@ class ListQueriesResponse(SdkResponse):
     def msg(self):
         r"""Gets the msg of this ListQueriesResponse.
 
-        响应信息。
+        **参数解释**： 响应信息。 **取值范围**： 不涉及。
 
         :return: The msg of this ListQueriesResponse.
         :rtype: str
@@ -100,7 +100,7 @@ class ListQueriesResponse(SdkResponse):
     def msg(self, msg):
         r"""Sets the msg of this ListQueriesResponse.
 
-        响应信息。
+        **参数解释**： 响应信息。 **取值范围**： 不涉及。
 
         :param msg: The msg of this ListQueriesResponse.
         :type msg: str
@@ -129,7 +129,7 @@ class ListQueriesResponse(SdkResponse):
     def count(self):
         r"""Gets the count of this ListQueriesResponse.
 
-        总条数。
+        **参数解释**： 总条数。 **取值范围**： 不涉及。
 
         :return: The count of this ListQueriesResponse.
         :rtype: int
@@ -140,7 +140,7 @@ class ListQueriesResponse(SdkResponse):
     def count(self, count):
         r"""Sets the count of this ListQueriesResponse.
 
-        总条数。
+        **参数解释**： 总条数。 **取值范围**： 不涉及。
 
         :param count: The count of this ListQueriesResponse.
         :type count: int

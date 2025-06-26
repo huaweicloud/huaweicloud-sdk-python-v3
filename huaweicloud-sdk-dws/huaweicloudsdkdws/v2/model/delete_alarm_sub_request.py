@@ -29,7 +29,7 @@ class DeleteAlarmSubRequest:
 
         The model defined in huaweicloud sdk
 
-        :param alarm_sub_id: 告警订阅ID
+        :param alarm_sub_id: **参数解释**： 告警订阅ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type alarm_sub_id: str
         """
         
@@ -44,7 +44,7 @@ class DeleteAlarmSubRequest:
     def alarm_sub_id(self):
         r"""Gets the alarm_sub_id of this DeleteAlarmSubRequest.
 
-        告警订阅ID
+        **参数解释**： 告警订阅ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The alarm_sub_id of this DeleteAlarmSubRequest.
         :rtype: str
@@ -55,7 +55,7 @@ class DeleteAlarmSubRequest:
     def alarm_sub_id(self, alarm_sub_id):
         r"""Sets the alarm_sub_id of this DeleteAlarmSubRequest.
 
-        告警订阅ID
+        **参数解释**： 告警订阅ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param alarm_sub_id: The alarm_sub_id of this DeleteAlarmSubRequest.
         :type alarm_sub_id: str

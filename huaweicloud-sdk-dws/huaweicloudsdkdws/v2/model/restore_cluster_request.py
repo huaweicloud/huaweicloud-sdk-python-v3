@@ -31,7 +31,7 @@ class RestoreClusterRequest:
 
         The model defined in huaweicloud sdk
 
-        :param snapshot_id: 待恢复的快照ID。
+        :param snapshot_id: **参数解释**： 待恢复的快照ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type snapshot_id: str
         :param body: Body of the RestoreClusterRequest
         :type body: :class:`huaweicloudsdkdws.v2.RestoreClusterRequestBody`
@@ -51,7 +51,7 @@ class RestoreClusterRequest:
     def snapshot_id(self):
         r"""Gets the snapshot_id of this RestoreClusterRequest.
 
-        待恢复的快照ID。
+        **参数解释**： 待恢复的快照ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The snapshot_id of this RestoreClusterRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class RestoreClusterRequest:
     def snapshot_id(self, snapshot_id):
         r"""Sets the snapshot_id of this RestoreClusterRequest.
 
-        待恢复的快照ID。
+        **参数解释**： 待恢复的快照ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param snapshot_id: The snapshot_id of this RestoreClusterRequest.
         :type snapshot_id: str

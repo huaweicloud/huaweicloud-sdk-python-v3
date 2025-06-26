@@ -45,23 +45,23 @@ class UpdateItemResp:
 
         The model defined in huaweicloud sdk
 
-        :param id: 升级项ID
+        :param id: **参数解释**： 升级项ID。 **取值范围**： 不涉及。
         :type id: str
-        :param _from: 起始版本
+        :param _from: **参数解释**： 起始版本。 **取值范围**： 不涉及。
         :type _from: str
-        :param to: 目标版本
+        :param to: **参数解释**： 目标版本。 **取值范围**： 不涉及。
         :type to: str
-        :param status: 升级路径状态
+        :param status: **参数解释**： 升级路径状态。 **取值范围**： 不涉及。
         :type status: str
-        :param process: 升级进度
+        :param process: **参数解释**： 升级进度。 **取值范围**： 不涉及。
         :type process: str
-        :param start_time: 起始时间
+        :param start_time: **参数解释**： 起始时间。 **取值范围**： 不涉及。
         :type start_time: str
-        :param end_time: 结束时间
+        :param end_time: **参数解释**： 结束时间。 **取值范围**： 不涉及。
         :type end_time: str
-        :param job_id: 升级任务ID
+        :param job_id: **参数解释**： 升级任务ID。 **取值范围**： 不涉及。
         :type job_id: str
-        :param failed_reason: 失败原因
+        :param failed_reason: **参数解释**： 失败原因。 **取值范围**： 不涉及。
         :type failed_reason: str
         """
         
@@ -101,7 +101,7 @@ class UpdateItemResp:
     def id(self):
         r"""Gets the id of this UpdateItemResp.
 
-        升级项ID
+        **参数解释**： 升级项ID。 **取值范围**： 不涉及。
 
         :return: The id of this UpdateItemResp.
         :rtype: str
@@ -112,7 +112,7 @@ class UpdateItemResp:
     def id(self, id):
         r"""Sets the id of this UpdateItemResp.
 
-        升级项ID
+        **参数解释**： 升级项ID。 **取值范围**： 不涉及。
 
         :param id: The id of this UpdateItemResp.
         :type id: str
@@ -123,7 +123,7 @@ class UpdateItemResp:
     def _from(self):
         r"""Gets the _from of this UpdateItemResp.
 
-        起始版本
+        **参数解释**： 起始版本。 **取值范围**： 不涉及。
 
         :return: The _from of this UpdateItemResp.
         :rtype: str
@@ -134,7 +134,7 @@ class UpdateItemResp:
     def _from(self, _from):
         r"""Sets the _from of this UpdateItemResp.
 
-        起始版本
+        **参数解释**： 起始版本。 **取值范围**： 不涉及。
 
         :param _from: The _from of this UpdateItemResp.
         :type _from: str
@@ -145,7 +145,7 @@ class UpdateItemResp:
     def to(self):
         r"""Gets the to of this UpdateItemResp.
 
-        目标版本
+        **参数解释**： 目标版本。 **取值范围**： 不涉及。
 
         :return: The to of this UpdateItemResp.
         :rtype: str
@@ -156,7 +156,7 @@ class UpdateItemResp:
     def to(self, to):
         r"""Sets the to of this UpdateItemResp.
 
-        目标版本
+        **参数解释**： 目标版本。 **取值范围**： 不涉及。
 
         :param to: The to of this UpdateItemResp.
         :type to: str
@@ -167,7 +167,7 @@ class UpdateItemResp:
     def status(self):
         r"""Gets the status of this UpdateItemResp.
 
-        升级路径状态
+        **参数解释**： 升级路径状态。 **取值范围**： 不涉及。
 
         :return: The status of this UpdateItemResp.
         :rtype: str
@@ -178,7 +178,7 @@ class UpdateItemResp:
     def status(self, status):
         r"""Sets the status of this UpdateItemResp.
 
-        升级路径状态
+        **参数解释**： 升级路径状态。 **取值范围**： 不涉及。
 
         :param status: The status of this UpdateItemResp.
         :type status: str
@@ -189,7 +189,7 @@ class UpdateItemResp:
     def process(self):
         r"""Gets the process of this UpdateItemResp.
 
-        升级进度
+        **参数解释**： 升级进度。 **取值范围**： 不涉及。
 
         :return: The process of this UpdateItemResp.
         :rtype: str
@@ -200,7 +200,7 @@ class UpdateItemResp:
     def process(self, process):
         r"""Sets the process of this UpdateItemResp.
 
-        升级进度
+        **参数解释**： 升级进度。 **取值范围**： 不涉及。
 
         :param process: The process of this UpdateItemResp.
         :type process: str
@@ -211,7 +211,7 @@ class UpdateItemResp:
     def start_time(self):
         r"""Gets the start_time of this UpdateItemResp.
 
-        起始时间
+        **参数解释**： 起始时间。 **取值范围**： 不涉及。
 
         :return: The start_time of this UpdateItemResp.
         :rtype: str
@@ -222,7 +222,7 @@ class UpdateItemResp:
     def start_time(self, start_time):
         r"""Sets the start_time of this UpdateItemResp.
 
-        起始时间
+        **参数解释**： 起始时间。 **取值范围**： 不涉及。
 
         :param start_time: The start_time of this UpdateItemResp.
         :type start_time: str
@@ -233,7 +233,7 @@ class UpdateItemResp:
     def end_time(self):
         r"""Gets the end_time of this UpdateItemResp.
 
-        结束时间
+        **参数解释**： 结束时间。 **取值范围**： 不涉及。
 
         :return: The end_time of this UpdateItemResp.
         :rtype: str
@@ -244,7 +244,7 @@ class UpdateItemResp:
     def end_time(self, end_time):
         r"""Sets the end_time of this UpdateItemResp.
 
-        结束时间
+        **参数解释**： 结束时间。 **取值范围**： 不涉及。
 
         :param end_time: The end_time of this UpdateItemResp.
         :type end_time: str
@@ -255,7 +255,7 @@ class UpdateItemResp:
     def job_id(self):
         r"""Gets the job_id of this UpdateItemResp.
 
-        升级任务ID
+        **参数解释**： 升级任务ID。 **取值范围**： 不涉及。
 
         :return: The job_id of this UpdateItemResp.
         :rtype: str
@@ -266,7 +266,7 @@ class UpdateItemResp:
     def job_id(self, job_id):
         r"""Sets the job_id of this UpdateItemResp.
 
-        升级任务ID
+        **参数解释**： 升级任务ID。 **取值范围**： 不涉及。
 
         :param job_id: The job_id of this UpdateItemResp.
         :type job_id: str
@@ -277,7 +277,7 @@ class UpdateItemResp:
     def failed_reason(self):
         r"""Gets the failed_reason of this UpdateItemResp.
 
-        失败原因
+        **参数解释**： 失败原因。 **取值范围**： 不涉及。
 
         :return: The failed_reason of this UpdateItemResp.
         :rtype: str
@@ -288,7 +288,7 @@ class UpdateItemResp:
     def failed_reason(self, failed_reason):
         r"""Sets the failed_reason of this UpdateItemResp.
 
-        失败原因
+        **参数解释**： 失败原因。 **取值范围**： 不涉及。
 
         :param failed_reason: The failed_reason of this UpdateItemResp.
         :type failed_reason: str

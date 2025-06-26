@@ -30,7 +30,7 @@ class ListElbsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param elbs: 弹性负载均衡列表
+        :param elbs: **参数解释**： 弹性负载均衡列表。 **取值范围**： 不涉及。
         :type elbs: list[:class:`huaweicloudsdkdws.v2.ClusterElbInfo`]
         """
         
@@ -46,7 +46,7 @@ class ListElbsResponse(SdkResponse):
     def elbs(self):
         r"""Gets the elbs of this ListElbsResponse.
 
-        弹性负载均衡列表
+        **参数解释**： 弹性负载均衡列表。 **取值范围**： 不涉及。
 
         :return: The elbs of this ListElbsResponse.
         :rtype: list[:class:`huaweicloudsdkdws.v2.ClusterElbInfo`]
@@ -57,7 +57,7 @@ class ListElbsResponse(SdkResponse):
     def elbs(self, elbs):
         r"""Sets the elbs of this ListElbsResponse.
 
-        弹性负载均衡列表
+        **参数解释**： 弹性负载均衡列表。 **取值范围**： 不涉及。
 
         :param elbs: The elbs of this ListElbsResponse.
         :type elbs: list[:class:`huaweicloudsdkdws.v2.ClusterElbInfo`]

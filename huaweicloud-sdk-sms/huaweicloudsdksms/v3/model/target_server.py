@@ -81,27 +81,27 @@ class TargetServer:
 
         The model defined in huaweicloud sdk
 
-        :param id: 源端在SMS数据库中的ID
+        :param id: 服务器在SMS数据库中的ID
         :type id: str
-        :param ip: 源端服务器IP，注册源端时必选，更新非必选
+        :param ip: 服务器IP，注册源端时必选，更新非必选
         :type ip: str
-        :param name: 用来区分不同源端服务器的名称
+        :param name: 用来区分不同服务器的名称
         :type name: str
-        :param hostname: 源端主机名，注册源端必选，更新非必选
+        :param hostname: 主机名，注册源端必选，更新非必选
         :type hostname: str
-        :param os_type: 源端服务器的OS类型，分为Windows和Linux，注册必选，更新非必选
+        :param os_type: 服务器的OS类型，分为Windows和Linux，注册必选，更新非必选
         :type os_type: str
         :param os_version: 操作系统版本，注册必选，更新非必选
         :type os_version: str
-        :param firmware: 源端服务器启动类型，如BIOS或者UEFI
+        :param firmware: 服务器启动类型，如BIOS或者UEFI
         :type firmware: str
         :param cpu_quantity: CPU个数，单位vCPU
         :type cpu_quantity: int
         :param memory: 内存大小，单位MB
         :type memory: int
-        :param btrfs_list: Linux 必选，源端的Btrfs信息。如果源端不存在Btrfs，则为[]
+        :param btrfs_list: Linux 必选，服务器的Btrfs信息。如果不存在Btrfs，则为[]
         :type btrfs_list: list[:class:`huaweicloudsdksms.v3.BtrfsFileSystem`]
-        :param networks: 源端服务器的网卡信息
+        :param networks: 服务器的网卡信息
         :type networks: list[:class:`huaweicloudsdksms.v3.NetWork`]
         :param domain_id: 租户的domainId
         :type domain_id: str
@@ -223,7 +223,7 @@ class TargetServer:
     def id(self):
         r"""Gets the id of this TargetServer.
 
-        源端在SMS数据库中的ID
+        服务器在SMS数据库中的ID
 
         :return: The id of this TargetServer.
         :rtype: str
@@ -234,7 +234,7 @@ class TargetServer:
     def id(self, id):
         r"""Sets the id of this TargetServer.
 
-        源端在SMS数据库中的ID
+        服务器在SMS数据库中的ID
 
         :param id: The id of this TargetServer.
         :type id: str
@@ -245,7 +245,7 @@ class TargetServer:
     def ip(self):
         r"""Gets the ip of this TargetServer.
 
-        源端服务器IP，注册源端时必选，更新非必选
+        服务器IP，注册源端时必选，更新非必选
 
         :return: The ip of this TargetServer.
         :rtype: str
@@ -256,7 +256,7 @@ class TargetServer:
     def ip(self, ip):
         r"""Sets the ip of this TargetServer.
 
-        源端服务器IP，注册源端时必选，更新非必选
+        服务器IP，注册源端时必选，更新非必选
 
         :param ip: The ip of this TargetServer.
         :type ip: str
@@ -267,7 +267,7 @@ class TargetServer:
     def name(self):
         r"""Gets the name of this TargetServer.
 
-        用来区分不同源端服务器的名称
+        用来区分不同服务器的名称
 
         :return: The name of this TargetServer.
         :rtype: str
@@ -278,7 +278,7 @@ class TargetServer:
     def name(self, name):
         r"""Sets the name of this TargetServer.
 
-        用来区分不同源端服务器的名称
+        用来区分不同服务器的名称
 
         :param name: The name of this TargetServer.
         :type name: str
@@ -289,7 +289,7 @@ class TargetServer:
     def hostname(self):
         r"""Gets the hostname of this TargetServer.
 
-        源端主机名，注册源端必选，更新非必选
+        主机名，注册源端必选，更新非必选
 
         :return: The hostname of this TargetServer.
         :rtype: str
@@ -300,7 +300,7 @@ class TargetServer:
     def hostname(self, hostname):
         r"""Sets the hostname of this TargetServer.
 
-        源端主机名，注册源端必选，更新非必选
+        主机名，注册源端必选，更新非必选
 
         :param hostname: The hostname of this TargetServer.
         :type hostname: str
@@ -311,7 +311,7 @@ class TargetServer:
     def os_type(self):
         r"""Gets the os_type of this TargetServer.
 
-        源端服务器的OS类型，分为Windows和Linux，注册必选，更新非必选
+        服务器的OS类型，分为Windows和Linux，注册必选，更新非必选
 
         :return: The os_type of this TargetServer.
         :rtype: str
@@ -322,7 +322,7 @@ class TargetServer:
     def os_type(self, os_type):
         r"""Sets the os_type of this TargetServer.
 
-        源端服务器的OS类型，分为Windows和Linux，注册必选，更新非必选
+        服务器的OS类型，分为Windows和Linux，注册必选，更新非必选
 
         :param os_type: The os_type of this TargetServer.
         :type os_type: str
@@ -355,7 +355,7 @@ class TargetServer:
     def firmware(self):
         r"""Gets the firmware of this TargetServer.
 
-        源端服务器启动类型，如BIOS或者UEFI
+        服务器启动类型，如BIOS或者UEFI
 
         :return: The firmware of this TargetServer.
         :rtype: str
@@ -366,7 +366,7 @@ class TargetServer:
     def firmware(self, firmware):
         r"""Sets the firmware of this TargetServer.
 
-        源端服务器启动类型，如BIOS或者UEFI
+        服务器启动类型，如BIOS或者UEFI
 
         :param firmware: The firmware of this TargetServer.
         :type firmware: str
@@ -421,7 +421,7 @@ class TargetServer:
     def btrfs_list(self):
         r"""Gets the btrfs_list of this TargetServer.
 
-        Linux 必选，源端的Btrfs信息。如果源端不存在Btrfs，则为[]
+        Linux 必选，服务器的Btrfs信息。如果不存在Btrfs，则为[]
 
         :return: The btrfs_list of this TargetServer.
         :rtype: list[:class:`huaweicloudsdksms.v3.BtrfsFileSystem`]
@@ -432,7 +432,7 @@ class TargetServer:
     def btrfs_list(self, btrfs_list):
         r"""Sets the btrfs_list of this TargetServer.
 
-        Linux 必选，源端的Btrfs信息。如果源端不存在Btrfs，则为[]
+        Linux 必选，服务器的Btrfs信息。如果不存在Btrfs，则为[]
 
         :param btrfs_list: The btrfs_list of this TargetServer.
         :type btrfs_list: list[:class:`huaweicloudsdksms.v3.BtrfsFileSystem`]
@@ -443,7 +443,7 @@ class TargetServer:
     def networks(self):
         r"""Gets the networks of this TargetServer.
 
-        源端服务器的网卡信息
+        服务器的网卡信息
 
         :return: The networks of this TargetServer.
         :rtype: list[:class:`huaweicloudsdksms.v3.NetWork`]
@@ -454,7 +454,7 @@ class TargetServer:
     def networks(self, networks):
         r"""Sets the networks of this TargetServer.
 
-        源端服务器的网卡信息
+        服务器的网卡信息
 
         :param networks: The networks of this TargetServer.
         :type networks: list[:class:`huaweicloudsdksms.v3.NetWork`]

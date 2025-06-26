@@ -50,27 +50,27 @@ class DeleteAlarmSubResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param id: 告警订阅ID
+        :param id: **参数解释**： 告警订阅ID。 **取值范围**： 不涉及。
         :type id: str
-        :param name: 告警订阅名称
+        :param name: **参数解释**： 告警订阅名称。 **取值范围**： 不涉及。
         :type name: str
-        :param enable: 是否开启订阅
+        :param enable: **参数解释**： 是否开启订阅。 **取值范围**： 不涉及。
         :type enable: int
-        :param alarm_level: 告警级别
+        :param alarm_level: **参数解释**： 告警级别。 **取值范围**： 不涉及。
         :type alarm_level: str
-        :param project_id: 租户凭证ID
+        :param project_id: **参数解释**： 项目ID。 **取值范围**： 不涉及。
         :type project_id: str
-        :param name_space: 所属服务，支持DWS,DLI,DGC,CloudTable,CDM,GES,CSS
+        :param name_space: **参数解释**： 所属服务。 **取值范围**： 不涉及。
         :type name_space: str
-        :param notification_target: 消息主题地址
+        :param notification_target: **参数解释**： 消息主题地址。 **取值范围**： 不涉及。
         :type notification_target: str
-        :param notification_target_name: 消息主题名称
+        :param notification_target_name: **参数解释**： 消息主题名称。 **取值范围**： 不涉及。
         :type notification_target_name: str
-        :param notification_target_type: 消息主题类型
+        :param notification_target_type: **参数解释**： 消息主题类型。 **取值范围**： 不涉及。
         :type notification_target_type: str
-        :param language: 语言
+        :param language: **参数解释**： 语言。 **取值范围**： 不涉及。
         :type language: str
-        :param time_zone: 时区
+        :param time_zone: **参数解释**： 时区。 **取值范围**： 不涉及。
         :type time_zone: str
         """
         
@@ -116,7 +116,7 @@ class DeleteAlarmSubResponse(SdkResponse):
     def id(self):
         r"""Gets the id of this DeleteAlarmSubResponse.
 
-        告警订阅ID
+        **参数解释**： 告警订阅ID。 **取值范围**： 不涉及。
 
         :return: The id of this DeleteAlarmSubResponse.
         :rtype: str
@@ -127,7 +127,7 @@ class DeleteAlarmSubResponse(SdkResponse):
     def id(self, id):
         r"""Sets the id of this DeleteAlarmSubResponse.
 
-        告警订阅ID
+        **参数解释**： 告警订阅ID。 **取值范围**： 不涉及。
 
         :param id: The id of this DeleteAlarmSubResponse.
         :type id: str
@@ -138,7 +138,7 @@ class DeleteAlarmSubResponse(SdkResponse):
     def name(self):
         r"""Gets the name of this DeleteAlarmSubResponse.
 
-        告警订阅名称
+        **参数解释**： 告警订阅名称。 **取值范围**： 不涉及。
 
         :return: The name of this DeleteAlarmSubResponse.
         :rtype: str
@@ -149,7 +149,7 @@ class DeleteAlarmSubResponse(SdkResponse):
     def name(self, name):
         r"""Sets the name of this DeleteAlarmSubResponse.
 
-        告警订阅名称
+        **参数解释**： 告警订阅名称。 **取值范围**： 不涉及。
 
         :param name: The name of this DeleteAlarmSubResponse.
         :type name: str
@@ -160,7 +160,7 @@ class DeleteAlarmSubResponse(SdkResponse):
     def enable(self):
         r"""Gets the enable of this DeleteAlarmSubResponse.
 
-        是否开启订阅
+        **参数解释**： 是否开启订阅。 **取值范围**： 不涉及。
 
         :return: The enable of this DeleteAlarmSubResponse.
         :rtype: int
@@ -171,7 +171,7 @@ class DeleteAlarmSubResponse(SdkResponse):
     def enable(self, enable):
         r"""Sets the enable of this DeleteAlarmSubResponse.
 
-        是否开启订阅
+        **参数解释**： 是否开启订阅。 **取值范围**： 不涉及。
 
         :param enable: The enable of this DeleteAlarmSubResponse.
         :type enable: int
@@ -182,7 +182,7 @@ class DeleteAlarmSubResponse(SdkResponse):
     def alarm_level(self):
         r"""Gets the alarm_level of this DeleteAlarmSubResponse.
 
-        告警级别
+        **参数解释**： 告警级别。 **取值范围**： 不涉及。
 
         :return: The alarm_level of this DeleteAlarmSubResponse.
         :rtype: str
@@ -193,7 +193,7 @@ class DeleteAlarmSubResponse(SdkResponse):
     def alarm_level(self, alarm_level):
         r"""Sets the alarm_level of this DeleteAlarmSubResponse.
 
-        告警级别
+        **参数解释**： 告警级别。 **取值范围**： 不涉及。
 
         :param alarm_level: The alarm_level of this DeleteAlarmSubResponse.
         :type alarm_level: str
@@ -204,7 +204,7 @@ class DeleteAlarmSubResponse(SdkResponse):
     def project_id(self):
         r"""Gets the project_id of this DeleteAlarmSubResponse.
 
-        租户凭证ID
+        **参数解释**： 项目ID。 **取值范围**： 不涉及。
 
         :return: The project_id of this DeleteAlarmSubResponse.
         :rtype: str
@@ -215,7 +215,7 @@ class DeleteAlarmSubResponse(SdkResponse):
     def project_id(self, project_id):
         r"""Sets the project_id of this DeleteAlarmSubResponse.
 
-        租户凭证ID
+        **参数解释**： 项目ID。 **取值范围**： 不涉及。
 
         :param project_id: The project_id of this DeleteAlarmSubResponse.
         :type project_id: str
@@ -226,7 +226,7 @@ class DeleteAlarmSubResponse(SdkResponse):
     def name_space(self):
         r"""Gets the name_space of this DeleteAlarmSubResponse.
 
-        所属服务，支持DWS,DLI,DGC,CloudTable,CDM,GES,CSS
+        **参数解释**： 所属服务。 **取值范围**： 不涉及。
 
         :return: The name_space of this DeleteAlarmSubResponse.
         :rtype: str
@@ -237,7 +237,7 @@ class DeleteAlarmSubResponse(SdkResponse):
     def name_space(self, name_space):
         r"""Sets the name_space of this DeleteAlarmSubResponse.
 
-        所属服务，支持DWS,DLI,DGC,CloudTable,CDM,GES,CSS
+        **参数解释**： 所属服务。 **取值范围**： 不涉及。
 
         :param name_space: The name_space of this DeleteAlarmSubResponse.
         :type name_space: str
@@ -248,7 +248,7 @@ class DeleteAlarmSubResponse(SdkResponse):
     def notification_target(self):
         r"""Gets the notification_target of this DeleteAlarmSubResponse.
 
-        消息主题地址
+        **参数解释**： 消息主题地址。 **取值范围**： 不涉及。
 
         :return: The notification_target of this DeleteAlarmSubResponse.
         :rtype: str
@@ -259,7 +259,7 @@ class DeleteAlarmSubResponse(SdkResponse):
     def notification_target(self, notification_target):
         r"""Sets the notification_target of this DeleteAlarmSubResponse.
 
-        消息主题地址
+        **参数解释**： 消息主题地址。 **取值范围**： 不涉及。
 
         :param notification_target: The notification_target of this DeleteAlarmSubResponse.
         :type notification_target: str
@@ -270,7 +270,7 @@ class DeleteAlarmSubResponse(SdkResponse):
     def notification_target_name(self):
         r"""Gets the notification_target_name of this DeleteAlarmSubResponse.
 
-        消息主题名称
+        **参数解释**： 消息主题名称。 **取值范围**： 不涉及。
 
         :return: The notification_target_name of this DeleteAlarmSubResponse.
         :rtype: str
@@ -281,7 +281,7 @@ class DeleteAlarmSubResponse(SdkResponse):
     def notification_target_name(self, notification_target_name):
         r"""Sets the notification_target_name of this DeleteAlarmSubResponse.
 
-        消息主题名称
+        **参数解释**： 消息主题名称。 **取值范围**： 不涉及。
 
         :param notification_target_name: The notification_target_name of this DeleteAlarmSubResponse.
         :type notification_target_name: str
@@ -292,7 +292,7 @@ class DeleteAlarmSubResponse(SdkResponse):
     def notification_target_type(self):
         r"""Gets the notification_target_type of this DeleteAlarmSubResponse.
 
-        消息主题类型
+        **参数解释**： 消息主题类型。 **取值范围**： 不涉及。
 
         :return: The notification_target_type of this DeleteAlarmSubResponse.
         :rtype: str
@@ -303,7 +303,7 @@ class DeleteAlarmSubResponse(SdkResponse):
     def notification_target_type(self, notification_target_type):
         r"""Sets the notification_target_type of this DeleteAlarmSubResponse.
 
-        消息主题类型
+        **参数解释**： 消息主题类型。 **取值范围**： 不涉及。
 
         :param notification_target_type: The notification_target_type of this DeleteAlarmSubResponse.
         :type notification_target_type: str
@@ -314,7 +314,7 @@ class DeleteAlarmSubResponse(SdkResponse):
     def language(self):
         r"""Gets the language of this DeleteAlarmSubResponse.
 
-        语言
+        **参数解释**： 语言。 **取值范围**： 不涉及。
 
         :return: The language of this DeleteAlarmSubResponse.
         :rtype: str
@@ -325,7 +325,7 @@ class DeleteAlarmSubResponse(SdkResponse):
     def language(self, language):
         r"""Sets the language of this DeleteAlarmSubResponse.
 
-        语言
+        **参数解释**： 语言。 **取值范围**： 不涉及。
 
         :param language: The language of this DeleteAlarmSubResponse.
         :type language: str
@@ -336,7 +336,7 @@ class DeleteAlarmSubResponse(SdkResponse):
     def time_zone(self):
         r"""Gets the time_zone of this DeleteAlarmSubResponse.
 
-        时区
+        **参数解释**： 时区。 **取值范围**： 不涉及。
 
         :return: The time_zone of this DeleteAlarmSubResponse.
         :rtype: str
@@ -347,7 +347,7 @@ class DeleteAlarmSubResponse(SdkResponse):
     def time_zone(self, time_zone):
         r"""Sets the time_zone of this DeleteAlarmSubResponse.
 
-        时区
+        **参数解释**： 时区。 **取值范围**： 不涉及。
 
         :param time_zone: The time_zone of this DeleteAlarmSubResponse.
         :type time_zone: str

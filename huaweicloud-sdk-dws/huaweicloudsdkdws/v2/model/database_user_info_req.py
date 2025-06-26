@@ -51,29 +51,29 @@ class DatabaseUserInfoReq:
 
         The model defined in huaweicloud sdk
 
-        :param login: 是否可以登陆
+        :param login: **参数解释**： 是否可以登录。 **取值范围**： 不涉及。
         :type login: bool
-        :param createrole: 创建角色权限
+        :param createrole: **参数解释**： 创建角色权限。 **取值范围**： 不涉及。
         :type createrole: bool
-        :param createdb: 创建数据库权限
+        :param createdb: **参数解释**： 创建数据库权限。 **取值范围**： 不涉及。
         :type createdb: bool
-        :param systemadmin: 系统管理员
+        :param systemadmin: **参数解释**： 系统管理员。 **取值范围**： 不涉及。
         :type systemadmin: bool
-        :param auditadmin: 审计管理员
+        :param auditadmin: **参数解释**： 审计管理员。 **取值范围**： 不涉及。
         :type auditadmin: bool
-        :param inherit: 继承所在组权限
+        :param inherit: **参数解释**： 继承所在组权限。 **取值范围**： 不涉及。
         :type inherit: bool
-        :param useft: 访问外表权限
+        :param useft: **参数解释**： 访问外表权限。 **取值范围**： 不涉及。
         :type useft: bool
-        :param conn_limit: 连接数限制
+        :param conn_limit: **参数解释**： 连接数限制。 **取值范围**： 不涉及。
         :type conn_limit: int
-        :param replication: 是否允许流复制
+        :param replication: **参数解释**： 是否允许流复制。 **取值范围**： 不涉及。
         :type replication: bool
-        :param valid_begin: 角色生效时间 yyyy-MM-ddTHH:mm:ssZ
+        :param valid_begin: **参数解释**： 角色生效时间。格式：yyyy-MM-ddTHH:mm:ssZ。 **取值范围**： 不涉及。
         :type valid_begin: str
-        :param valid_until: 角色过期时间 yyyy-MM-ddTHH:mm:ssZ
+        :param valid_until: **参数解释**： 角色过期时间。格式：yyyy-MM-ddTHH:mm:ssZ。 **取值范围**： 不涉及。
         :type valid_until: str
-        :param lock: 是否锁定
+        :param lock: **参数解释**： 是否锁定。 **取值范围**： 不涉及。
         :type lock: bool
         """
         
@@ -122,7 +122,7 @@ class DatabaseUserInfoReq:
     def login(self):
         r"""Gets the login of this DatabaseUserInfoReq.
 
-        是否可以登陆
+        **参数解释**： 是否可以登录。 **取值范围**： 不涉及。
 
         :return: The login of this DatabaseUserInfoReq.
         :rtype: bool
@@ -133,7 +133,7 @@ class DatabaseUserInfoReq:
     def login(self, login):
         r"""Sets the login of this DatabaseUserInfoReq.
 
-        是否可以登陆
+        **参数解释**： 是否可以登录。 **取值范围**： 不涉及。
 
         :param login: The login of this DatabaseUserInfoReq.
         :type login: bool
@@ -144,7 +144,7 @@ class DatabaseUserInfoReq:
     def createrole(self):
         r"""Gets the createrole of this DatabaseUserInfoReq.
 
-        创建角色权限
+        **参数解释**： 创建角色权限。 **取值范围**： 不涉及。
 
         :return: The createrole of this DatabaseUserInfoReq.
         :rtype: bool
@@ -155,7 +155,7 @@ class DatabaseUserInfoReq:
     def createrole(self, createrole):
         r"""Sets the createrole of this DatabaseUserInfoReq.
 
-        创建角色权限
+        **参数解释**： 创建角色权限。 **取值范围**： 不涉及。
 
         :param createrole: The createrole of this DatabaseUserInfoReq.
         :type createrole: bool
@@ -166,7 +166,7 @@ class DatabaseUserInfoReq:
     def createdb(self):
         r"""Gets the createdb of this DatabaseUserInfoReq.
 
-        创建数据库权限
+        **参数解释**： 创建数据库权限。 **取值范围**： 不涉及。
 
         :return: The createdb of this DatabaseUserInfoReq.
         :rtype: bool
@@ -177,7 +177,7 @@ class DatabaseUserInfoReq:
     def createdb(self, createdb):
         r"""Sets the createdb of this DatabaseUserInfoReq.
 
-        创建数据库权限
+        **参数解释**： 创建数据库权限。 **取值范围**： 不涉及。
 
         :param createdb: The createdb of this DatabaseUserInfoReq.
         :type createdb: bool
@@ -188,7 +188,7 @@ class DatabaseUserInfoReq:
     def systemadmin(self):
         r"""Gets the systemadmin of this DatabaseUserInfoReq.
 
-        系统管理员
+        **参数解释**： 系统管理员。 **取值范围**： 不涉及。
 
         :return: The systemadmin of this DatabaseUserInfoReq.
         :rtype: bool
@@ -199,7 +199,7 @@ class DatabaseUserInfoReq:
     def systemadmin(self, systemadmin):
         r"""Sets the systemadmin of this DatabaseUserInfoReq.
 
-        系统管理员
+        **参数解释**： 系统管理员。 **取值范围**： 不涉及。
 
         :param systemadmin: The systemadmin of this DatabaseUserInfoReq.
         :type systemadmin: bool
@@ -210,7 +210,7 @@ class DatabaseUserInfoReq:
     def auditadmin(self):
         r"""Gets the auditadmin of this DatabaseUserInfoReq.
 
-        审计管理员
+        **参数解释**： 审计管理员。 **取值范围**： 不涉及。
 
         :return: The auditadmin of this DatabaseUserInfoReq.
         :rtype: bool
@@ -221,7 +221,7 @@ class DatabaseUserInfoReq:
     def auditadmin(self, auditadmin):
         r"""Sets the auditadmin of this DatabaseUserInfoReq.
 
-        审计管理员
+        **参数解释**： 审计管理员。 **取值范围**： 不涉及。
 
         :param auditadmin: The auditadmin of this DatabaseUserInfoReq.
         :type auditadmin: bool
@@ -232,7 +232,7 @@ class DatabaseUserInfoReq:
     def inherit(self):
         r"""Gets the inherit of this DatabaseUserInfoReq.
 
-        继承所在组权限
+        **参数解释**： 继承所在组权限。 **取值范围**： 不涉及。
 
         :return: The inherit of this DatabaseUserInfoReq.
         :rtype: bool
@@ -243,7 +243,7 @@ class DatabaseUserInfoReq:
     def inherit(self, inherit):
         r"""Sets the inherit of this DatabaseUserInfoReq.
 
-        继承所在组权限
+        **参数解释**： 继承所在组权限。 **取值范围**： 不涉及。
 
         :param inherit: The inherit of this DatabaseUserInfoReq.
         :type inherit: bool
@@ -254,7 +254,7 @@ class DatabaseUserInfoReq:
     def useft(self):
         r"""Gets the useft of this DatabaseUserInfoReq.
 
-        访问外表权限
+        **参数解释**： 访问外表权限。 **取值范围**： 不涉及。
 
         :return: The useft of this DatabaseUserInfoReq.
         :rtype: bool
@@ -265,7 +265,7 @@ class DatabaseUserInfoReq:
     def useft(self, useft):
         r"""Sets the useft of this DatabaseUserInfoReq.
 
-        访问外表权限
+        **参数解释**： 访问外表权限。 **取值范围**： 不涉及。
 
         :param useft: The useft of this DatabaseUserInfoReq.
         :type useft: bool
@@ -276,7 +276,7 @@ class DatabaseUserInfoReq:
     def conn_limit(self):
         r"""Gets the conn_limit of this DatabaseUserInfoReq.
 
-        连接数限制
+        **参数解释**： 连接数限制。 **取值范围**： 不涉及。
 
         :return: The conn_limit of this DatabaseUserInfoReq.
         :rtype: int
@@ -287,7 +287,7 @@ class DatabaseUserInfoReq:
     def conn_limit(self, conn_limit):
         r"""Sets the conn_limit of this DatabaseUserInfoReq.
 
-        连接数限制
+        **参数解释**： 连接数限制。 **取值范围**： 不涉及。
 
         :param conn_limit: The conn_limit of this DatabaseUserInfoReq.
         :type conn_limit: int
@@ -298,7 +298,7 @@ class DatabaseUserInfoReq:
     def replication(self):
         r"""Gets the replication of this DatabaseUserInfoReq.
 
-        是否允许流复制
+        **参数解释**： 是否允许流复制。 **取值范围**： 不涉及。
 
         :return: The replication of this DatabaseUserInfoReq.
         :rtype: bool
@@ -309,7 +309,7 @@ class DatabaseUserInfoReq:
     def replication(self, replication):
         r"""Sets the replication of this DatabaseUserInfoReq.
 
-        是否允许流复制
+        **参数解释**： 是否允许流复制。 **取值范围**： 不涉及。
 
         :param replication: The replication of this DatabaseUserInfoReq.
         :type replication: bool
@@ -320,7 +320,7 @@ class DatabaseUserInfoReq:
     def valid_begin(self):
         r"""Gets the valid_begin of this DatabaseUserInfoReq.
 
-        角色生效时间 yyyy-MM-ddTHH:mm:ssZ
+        **参数解释**： 角色生效时间。格式：yyyy-MM-ddTHH:mm:ssZ。 **取值范围**： 不涉及。
 
         :return: The valid_begin of this DatabaseUserInfoReq.
         :rtype: str
@@ -331,7 +331,7 @@ class DatabaseUserInfoReq:
     def valid_begin(self, valid_begin):
         r"""Sets the valid_begin of this DatabaseUserInfoReq.
 
-        角色生效时间 yyyy-MM-ddTHH:mm:ssZ
+        **参数解释**： 角色生效时间。格式：yyyy-MM-ddTHH:mm:ssZ。 **取值范围**： 不涉及。
 
         :param valid_begin: The valid_begin of this DatabaseUserInfoReq.
         :type valid_begin: str
@@ -342,7 +342,7 @@ class DatabaseUserInfoReq:
     def valid_until(self):
         r"""Gets the valid_until of this DatabaseUserInfoReq.
 
-        角色过期时间 yyyy-MM-ddTHH:mm:ssZ
+        **参数解释**： 角色过期时间。格式：yyyy-MM-ddTHH:mm:ssZ。 **取值范围**： 不涉及。
 
         :return: The valid_until of this DatabaseUserInfoReq.
         :rtype: str
@@ -353,7 +353,7 @@ class DatabaseUserInfoReq:
     def valid_until(self, valid_until):
         r"""Sets the valid_until of this DatabaseUserInfoReq.
 
-        角色过期时间 yyyy-MM-ddTHH:mm:ssZ
+        **参数解释**： 角色过期时间。格式：yyyy-MM-ddTHH:mm:ssZ。 **取值范围**： 不涉及。
 
         :param valid_until: The valid_until of this DatabaseUserInfoReq.
         :type valid_until: str
@@ -364,7 +364,7 @@ class DatabaseUserInfoReq:
     def lock(self):
         r"""Gets the lock of this DatabaseUserInfoReq.
 
-        是否锁定
+        **参数解释**： 是否锁定。 **取值范围**： 不涉及。
 
         :return: The lock of this DatabaseUserInfoReq.
         :rtype: bool
@@ -375,7 +375,7 @@ class DatabaseUserInfoReq:
     def lock(self, lock):
         r"""Sets the lock of this DatabaseUserInfoReq.
 
-        是否锁定
+        **参数解释**： 是否锁定。 **取值范围**： 不涉及。
 
         :param lock: The lock of this DatabaseUserInfoReq.
         :type lock: bool

@@ -31,9 +31,9 @@ class TableDetail:
 
         The model defined in huaweicloud sdk
 
-        :param schema_name: schema名称
+        :param schema_name: **参数解释**： Schema名称。 **取值范围**： 不涉及。
         :type schema_name: str
-        :param table_name: 表名称
+        :param table_name: **参数解释**： 表名称。 **取值范围**： 不涉及。
         :type table_name: str
         """
         
@@ -50,7 +50,7 @@ class TableDetail:
     def schema_name(self):
         r"""Gets the schema_name of this TableDetail.
 
-        schema名称
+        **参数解释**： Schema名称。 **取值范围**： 不涉及。
 
         :return: The schema_name of this TableDetail.
         :rtype: str
@@ -61,7 +61,7 @@ class TableDetail:
     def schema_name(self, schema_name):
         r"""Sets the schema_name of this TableDetail.
 
-        schema名称
+        **参数解释**： Schema名称。 **取值范围**： 不涉及。
 
         :param schema_name: The schema_name of this TableDetail.
         :type schema_name: str
@@ -72,7 +72,7 @@ class TableDetail:
     def table_name(self):
         r"""Gets the table_name of this TableDetail.
 
-        表名称
+        **参数解释**： 表名称。 **取值范围**： 不涉及。
 
         :return: The table_name of this TableDetail.
         :rtype: str
@@ -83,7 +83,7 @@ class TableDetail:
     def table_name(self, table_name):
         r"""Sets the table_name of this TableDetail.
 
-        表名称
+        **参数解释**： 表名称。 **取值范围**： 不涉及。
 
         :param table_name: The table_name of this TableDetail.
         :type table_name: str

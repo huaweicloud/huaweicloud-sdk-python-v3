@@ -45,23 +45,23 @@ class EventSpecResponse:
 
         The model defined in huaweicloud sdk
 
-        :param id: 事件配置ID
+        :param id: **参数解释**： 事件配置ID。 **取值范围**： 不涉及。
         :type id: str
-        :param name: 事件配置定义名称
+        :param name: **参数解释**： 事件配置定义名称。 **取值范围**： 不涉及。
         :type name: str
-        :param display_name: 事件配置显示名称
+        :param display_name: **参数解释**： 事件配置显示名称。 **取值范围**： 不涉及。
         :type display_name: str
-        :param description: 事件配置描述
+        :param description: **参数解释**： 事件配置描述。 **取值范围**： 不涉及。
         :type description: str
-        :param subject: 事件主题
+        :param subject: **参数解释**： 事件主题。 **取值范围**： 不涉及。
         :type subject: str
-        :param category: 事件类别
+        :param category: **参数解释**： 事件类别。 **取值范围**： 不涉及。
         :type category: str
-        :param severity: 事件级别
+        :param severity: **参数解释**： 事件级别。 **取值范围**： 不涉及。
         :type severity: str
-        :param source_type: 事件源类型
+        :param source_type: **参数解释**： 事件源类型。 **取值范围**： 不涉及。
         :type source_type: str
-        :param name_space: 所属服务
+        :param name_space: **参数解释**： 所属服务。 **取值范围**： 不涉及。
         :type name_space: str
         """
         
@@ -101,7 +101,7 @@ class EventSpecResponse:
     def id(self):
         r"""Gets the id of this EventSpecResponse.
 
-        事件配置ID
+        **参数解释**： 事件配置ID。 **取值范围**： 不涉及。
 
         :return: The id of this EventSpecResponse.
         :rtype: str
@@ -112,7 +112,7 @@ class EventSpecResponse:
     def id(self, id):
         r"""Sets the id of this EventSpecResponse.
 
-        事件配置ID
+        **参数解释**： 事件配置ID。 **取值范围**： 不涉及。
 
         :param id: The id of this EventSpecResponse.
         :type id: str
@@ -123,7 +123,7 @@ class EventSpecResponse:
     def name(self):
         r"""Gets the name of this EventSpecResponse.
 
-        事件配置定义名称
+        **参数解释**： 事件配置定义名称。 **取值范围**： 不涉及。
 
         :return: The name of this EventSpecResponse.
         :rtype: str
@@ -134,7 +134,7 @@ class EventSpecResponse:
     def name(self, name):
         r"""Sets the name of this EventSpecResponse.
 
-        事件配置定义名称
+        **参数解释**： 事件配置定义名称。 **取值范围**： 不涉及。
 
         :param name: The name of this EventSpecResponse.
         :type name: str
@@ -145,7 +145,7 @@ class EventSpecResponse:
     def display_name(self):
         r"""Gets the display_name of this EventSpecResponse.
 
-        事件配置显示名称
+        **参数解释**： 事件配置显示名称。 **取值范围**： 不涉及。
 
         :return: The display_name of this EventSpecResponse.
         :rtype: str
@@ -156,7 +156,7 @@ class EventSpecResponse:
     def display_name(self, display_name):
         r"""Sets the display_name of this EventSpecResponse.
 
-        事件配置显示名称
+        **参数解释**： 事件配置显示名称。 **取值范围**： 不涉及。
 
         :param display_name: The display_name of this EventSpecResponse.
         :type display_name: str
@@ -167,7 +167,7 @@ class EventSpecResponse:
     def description(self):
         r"""Gets the description of this EventSpecResponse.
 
-        事件配置描述
+        **参数解释**： 事件配置描述。 **取值范围**： 不涉及。
 
         :return: The description of this EventSpecResponse.
         :rtype: str
@@ -178,7 +178,7 @@ class EventSpecResponse:
     def description(self, description):
         r"""Sets the description of this EventSpecResponse.
 
-        事件配置描述
+        **参数解释**： 事件配置描述。 **取值范围**： 不涉及。
 
         :param description: The description of this EventSpecResponse.
         :type description: str
@@ -189,7 +189,7 @@ class EventSpecResponse:
     def subject(self):
         r"""Gets the subject of this EventSpecResponse.
 
-        事件主题
+        **参数解释**： 事件主题。 **取值范围**： 不涉及。
 
         :return: The subject of this EventSpecResponse.
         :rtype: str
@@ -200,7 +200,7 @@ class EventSpecResponse:
     def subject(self, subject):
         r"""Sets the subject of this EventSpecResponse.
 
-        事件主题
+        **参数解释**： 事件主题。 **取值范围**： 不涉及。
 
         :param subject: The subject of this EventSpecResponse.
         :type subject: str
@@ -211,7 +211,7 @@ class EventSpecResponse:
     def category(self):
         r"""Gets the category of this EventSpecResponse.
 
-        事件类别
+        **参数解释**： 事件类别。 **取值范围**： 不涉及。
 
         :return: The category of this EventSpecResponse.
         :rtype: str
@@ -222,7 +222,7 @@ class EventSpecResponse:
     def category(self, category):
         r"""Sets the category of this EventSpecResponse.
 
-        事件类别
+        **参数解释**： 事件类别。 **取值范围**： 不涉及。
 
         :param category: The category of this EventSpecResponse.
         :type category: str
@@ -233,7 +233,7 @@ class EventSpecResponse:
     def severity(self):
         r"""Gets the severity of this EventSpecResponse.
 
-        事件级别
+        **参数解释**： 事件级别。 **取值范围**： 不涉及。
 
         :return: The severity of this EventSpecResponse.
         :rtype: str
@@ -244,7 +244,7 @@ class EventSpecResponse:
     def severity(self, severity):
         r"""Sets the severity of this EventSpecResponse.
 
-        事件级别
+        **参数解释**： 事件级别。 **取值范围**： 不涉及。
 
         :param severity: The severity of this EventSpecResponse.
         :type severity: str
@@ -255,7 +255,7 @@ class EventSpecResponse:
     def source_type(self):
         r"""Gets the source_type of this EventSpecResponse.
 
-        事件源类型
+        **参数解释**： 事件源类型。 **取值范围**： 不涉及。
 
         :return: The source_type of this EventSpecResponse.
         :rtype: str
@@ -266,7 +266,7 @@ class EventSpecResponse:
     def source_type(self, source_type):
         r"""Sets the source_type of this EventSpecResponse.
 
-        事件源类型
+        **参数解释**： 事件源类型。 **取值范围**： 不涉及。
 
         :param source_type: The source_type of this EventSpecResponse.
         :type source_type: str
@@ -277,7 +277,7 @@ class EventSpecResponse:
     def name_space(self):
         r"""Gets the name_space of this EventSpecResponse.
 
-        所属服务
+        **参数解释**： 所属服务。 **取值范围**： 不涉及。
 
         :return: The name_space of this EventSpecResponse.
         :rtype: str
@@ -288,7 +288,7 @@ class EventSpecResponse:
     def name_space(self, name_space):
         r"""Sets the name_space of this EventSpecResponse.
 
-        所属服务
+        **参数解释**： 所属服务。 **取值范围**： 不涉及。
 
         :param name_space: The name_space of this EventSpecResponse.
         :type name_space: str

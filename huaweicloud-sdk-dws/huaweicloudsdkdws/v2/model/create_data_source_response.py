@@ -32,9 +32,9 @@ class CreateDataSourceResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param id: 数据源id。
+        :param id: **参数解释**： 数据源ID。 **取值范围**： 不涉及。
         :type id: str
-        :param job_id: 创建数据源job_id。
+        :param job_id: **参数解释**： 创建数据源任务ID。 **取值范围**： 不涉及。
         :type job_id: str
         """
         
@@ -53,7 +53,7 @@ class CreateDataSourceResponse(SdkResponse):
     def id(self):
         r"""Gets the id of this CreateDataSourceResponse.
 
-        数据源id。
+        **参数解释**： 数据源ID。 **取值范围**： 不涉及。
 
         :return: The id of this CreateDataSourceResponse.
         :rtype: str
@@ -64,7 +64,7 @@ class CreateDataSourceResponse(SdkResponse):
     def id(self, id):
         r"""Sets the id of this CreateDataSourceResponse.
 
-        数据源id。
+        **参数解释**： 数据源ID。 **取值范围**： 不涉及。
 
         :param id: The id of this CreateDataSourceResponse.
         :type id: str
@@ -75,7 +75,7 @@ class CreateDataSourceResponse(SdkResponse):
     def job_id(self):
         r"""Gets the job_id of this CreateDataSourceResponse.
 
-        创建数据源job_id。
+        **参数解释**： 创建数据源任务ID。 **取值范围**： 不涉及。
 
         :return: The job_id of this CreateDataSourceResponse.
         :rtype: str
@@ -86,7 +86,7 @@ class CreateDataSourceResponse(SdkResponse):
     def job_id(self, job_id):
         r"""Sets the job_id of this CreateDataSourceResponse.
 
-        创建数据源job_id。
+        **参数解释**： 创建数据源任务ID。 **取值范围**： 不涉及。
 
         :param job_id: The job_id of this CreateDataSourceResponse.
         :type job_id: str

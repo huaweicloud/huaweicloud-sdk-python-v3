@@ -33,7 +33,7 @@ class DeleteDatabaseUserRequest:
 
         The model defined in huaweicloud sdk
 
-        :param cluster_id: **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :param cluster_id: **参数解释**： 集群ID。获取方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type cluster_id: str
         :param name: **参数解释**： 数据库用户名。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type name: str
@@ -57,7 +57,7 @@ class DeleteDatabaseUserRequest:
     def cluster_id(self):
         r"""Gets the cluster_id of this DeleteDatabaseUserRequest.
 
-        **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 集群ID。获取方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The cluster_id of this DeleteDatabaseUserRequest.
         :rtype: str
@@ -68,7 +68,7 @@ class DeleteDatabaseUserRequest:
     def cluster_id(self, cluster_id):
         r"""Sets the cluster_id of this DeleteDatabaseUserRequest.
 
-        **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 集群ID。获取方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param cluster_id: The cluster_id of this DeleteDatabaseUserRequest.
         :type cluster_id: str

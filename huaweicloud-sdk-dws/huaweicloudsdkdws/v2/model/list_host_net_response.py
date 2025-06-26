@@ -30,7 +30,7 @@ class ListHostNetResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param body: 
+        :param body: **参数解释**： 网卡状态响应体。 **取值范围**： 不涉及。
         :type body: list[:class:`huaweicloudsdkdws.v2.NetResp`]
         """
         
@@ -46,6 +46,8 @@ class ListHostNetResponse(SdkResponse):
     def body(self):
         r"""Gets the body of this ListHostNetResponse.
 
+        **参数解释**： 网卡状态响应体。 **取值范围**： 不涉及。
+
         :return: The body of this ListHostNetResponse.
         :rtype: list[:class:`huaweicloudsdkdws.v2.NetResp`]
         """
@@ -54,6 +56,8 @@ class ListHostNetResponse(SdkResponse):
     @body.setter
     def body(self, body):
         r"""Sets the body of this ListHostNetResponse.
+
+        **参数解释**： 网卡状态响应体。 **取值范围**： 不涉及。
 
         :param body: The body of this ListHostNetResponse.
         :type body: list[:class:`huaweicloudsdkdws.v2.NetResp`]

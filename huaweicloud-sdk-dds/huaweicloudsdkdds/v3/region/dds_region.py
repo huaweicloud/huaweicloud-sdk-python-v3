@@ -58,6 +58,16 @@ class DdsRegion:
                         "https://dds.ru-moscow-1.myhuaweicloud.com")
     AE_AD_1 = Region("ae-ad-1",
                         "https://dds.ae-ad-1.myhuaweicloud.com")
+    CN_EAST_5 = Region("cn-east-5",
+                        "https://dds.cn-east-5.myhuaweicloud.com")
+    CN_EAST_4 = Region("cn-east-4",
+                        "https://dds.cn-east-4.myhuaweicloud.com")
+    CN_NORTH_12 = Region("cn-north-12",
+                        "https://dds.cn-north-12.myhuaweicloud.com")
+    AF_NORTH_1 = Region("af-north-1",
+                        "https://dds.af-north-1.myhuaweicloud.com")
+    AP_SOUTHEAST_5 = Region("ap-southeast-5",
+                        "https://dds.ap-southeast-5.myhuaweicloud.com")
 
     static_fields = {
         "eu-west-101": EU_WEST_101,
@@ -86,6 +96,11 @@ class DdsRegion:
         "my-kualalumpur-1": MY_KUALALUMPUR_1,
         "ru-moscow-1": RU_MOSCOW_1,
         "ae-ad-1": AE_AD_1,
+        "cn-east-5": CN_EAST_5,
+        "cn-east-4": CN_EAST_4,
+        "cn-north-12": CN_NORTH_12,
+        "af-north-1": AF_NORTH_1,
+        "ap-southeast-5": AP_SOUTHEAST_5,
     }
 
     @classmethod

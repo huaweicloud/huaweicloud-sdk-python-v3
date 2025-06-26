@@ -44,21 +44,21 @@ class ListJobDetailsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param job_id: 任务ID
+        :param job_id: **参数解释**： 任务ID。 **取值范围**： 不涉及。
         :type job_id: str
-        :param job_name: 任务名称
+        :param job_name: **参数解释**： 任务名称。 **取值范围**： 不涉及。
         :type job_name: str
-        :param begin_time: 任务开始时间
+        :param begin_time: **参数解释**： 任务开始时间。 **取值范围**： 不涉及。
         :type begin_time: str
-        :param end_time: 任务结束时间
+        :param end_time: **参数解释**： 任务结束时间。 **取值范围**： 不涉及。
         :type end_time: str
-        :param status: 任务当前状态
+        :param status: **参数解释**： 任务当前状态。 **取值范围**： 不涉及。
         :type status: str
-        :param failed_code: 任务失败错误码
+        :param failed_code: **参数解释**： 任务失败错误码。 **取值范围**： 不涉及。
         :type failed_code: str
-        :param failed_detail: 任务失败错误详情
+        :param failed_detail: **参数解释**： 任务失败错误详情。 **取值范围**： 不涉及。
         :type failed_detail: str
-        :param progress: 任务进度
+        :param progress: **参数解释**： 任务进度。 **取值范围**： 不涉及。
         :type progress: str
         """
         
@@ -95,7 +95,7 @@ class ListJobDetailsResponse(SdkResponse):
     def job_id(self):
         r"""Gets the job_id of this ListJobDetailsResponse.
 
-        任务ID
+        **参数解释**： 任务ID。 **取值范围**： 不涉及。
 
         :return: The job_id of this ListJobDetailsResponse.
         :rtype: str
@@ -106,7 +106,7 @@ class ListJobDetailsResponse(SdkResponse):
     def job_id(self, job_id):
         r"""Sets the job_id of this ListJobDetailsResponse.
 
-        任务ID
+        **参数解释**： 任务ID。 **取值范围**： 不涉及。
 
         :param job_id: The job_id of this ListJobDetailsResponse.
         :type job_id: str
@@ -117,7 +117,7 @@ class ListJobDetailsResponse(SdkResponse):
     def job_name(self):
         r"""Gets the job_name of this ListJobDetailsResponse.
 
-        任务名称
+        **参数解释**： 任务名称。 **取值范围**： 不涉及。
 
         :return: The job_name of this ListJobDetailsResponse.
         :rtype: str
@@ -128,7 +128,7 @@ class ListJobDetailsResponse(SdkResponse):
     def job_name(self, job_name):
         r"""Sets the job_name of this ListJobDetailsResponse.
 
-        任务名称
+        **参数解释**： 任务名称。 **取值范围**： 不涉及。
 
         :param job_name: The job_name of this ListJobDetailsResponse.
         :type job_name: str
@@ -139,7 +139,7 @@ class ListJobDetailsResponse(SdkResponse):
     def begin_time(self):
         r"""Gets the begin_time of this ListJobDetailsResponse.
 
-        任务开始时间
+        **参数解释**： 任务开始时间。 **取值范围**： 不涉及。
 
         :return: The begin_time of this ListJobDetailsResponse.
         :rtype: str
@@ -150,7 +150,7 @@ class ListJobDetailsResponse(SdkResponse):
     def begin_time(self, begin_time):
         r"""Sets the begin_time of this ListJobDetailsResponse.
 
-        任务开始时间
+        **参数解释**： 任务开始时间。 **取值范围**： 不涉及。
 
         :param begin_time: The begin_time of this ListJobDetailsResponse.
         :type begin_time: str
@@ -161,7 +161,7 @@ class ListJobDetailsResponse(SdkResponse):
     def end_time(self):
         r"""Gets the end_time of this ListJobDetailsResponse.
 
-        任务结束时间
+        **参数解释**： 任务结束时间。 **取值范围**： 不涉及。
 
         :return: The end_time of this ListJobDetailsResponse.
         :rtype: str
@@ -172,7 +172,7 @@ class ListJobDetailsResponse(SdkResponse):
     def end_time(self, end_time):
         r"""Sets the end_time of this ListJobDetailsResponse.
 
-        任务结束时间
+        **参数解释**： 任务结束时间。 **取值范围**： 不涉及。
 
         :param end_time: The end_time of this ListJobDetailsResponse.
         :type end_time: str
@@ -183,7 +183,7 @@ class ListJobDetailsResponse(SdkResponse):
     def status(self):
         r"""Gets the status of this ListJobDetailsResponse.
 
-        任务当前状态
+        **参数解释**： 任务当前状态。 **取值范围**： 不涉及。
 
         :return: The status of this ListJobDetailsResponse.
         :rtype: str
@@ -194,7 +194,7 @@ class ListJobDetailsResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this ListJobDetailsResponse.
 
-        任务当前状态
+        **参数解释**： 任务当前状态。 **取值范围**： 不涉及。
 
         :param status: The status of this ListJobDetailsResponse.
         :type status: str
@@ -205,7 +205,7 @@ class ListJobDetailsResponse(SdkResponse):
     def failed_code(self):
         r"""Gets the failed_code of this ListJobDetailsResponse.
 
-        任务失败错误码
+        **参数解释**： 任务失败错误码。 **取值范围**： 不涉及。
 
         :return: The failed_code of this ListJobDetailsResponse.
         :rtype: str
@@ -216,7 +216,7 @@ class ListJobDetailsResponse(SdkResponse):
     def failed_code(self, failed_code):
         r"""Sets the failed_code of this ListJobDetailsResponse.
 
-        任务失败错误码
+        **参数解释**： 任务失败错误码。 **取值范围**： 不涉及。
 
         :param failed_code: The failed_code of this ListJobDetailsResponse.
         :type failed_code: str
@@ -227,7 +227,7 @@ class ListJobDetailsResponse(SdkResponse):
     def failed_detail(self):
         r"""Gets the failed_detail of this ListJobDetailsResponse.
 
-        任务失败错误详情
+        **参数解释**： 任务失败错误详情。 **取值范围**： 不涉及。
 
         :return: The failed_detail of this ListJobDetailsResponse.
         :rtype: str
@@ -238,7 +238,7 @@ class ListJobDetailsResponse(SdkResponse):
     def failed_detail(self, failed_detail):
         r"""Sets the failed_detail of this ListJobDetailsResponse.
 
-        任务失败错误详情
+        **参数解释**： 任务失败错误详情。 **取值范围**： 不涉及。
 
         :param failed_detail: The failed_detail of this ListJobDetailsResponse.
         :type failed_detail: str
@@ -249,7 +249,7 @@ class ListJobDetailsResponse(SdkResponse):
     def progress(self):
         r"""Gets the progress of this ListJobDetailsResponse.
 
-        任务进度
+        **参数解释**： 任务进度。 **取值范围**： 不涉及。
 
         :return: The progress of this ListJobDetailsResponse.
         :rtype: str
@@ -260,7 +260,7 @@ class ListJobDetailsResponse(SdkResponse):
     def progress(self, progress):
         r"""Sets the progress of this ListJobDetailsResponse.
 
-        任务进度
+        **参数解释**： 任务进度。 **取值范围**： 不涉及。
 
         :param progress: The progress of this ListJobDetailsResponse.
         :type progress: str

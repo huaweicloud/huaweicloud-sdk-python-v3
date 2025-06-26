@@ -18,29 +18,21 @@ class CreatePeriodElasticResourcePoolSpecChangeOrderRequestBody:
 
     openapi_types = {
         'elastic_resource_pool_name': 'str',
-        'cloud_service_console_url': 'str',
-        'promotion_info': 'str',
         'target_cu': 'int'
     }
 
     attribute_map = {
         'elastic_resource_pool_name': 'elastic_resource_pool_name',
-        'cloud_service_console_url': 'cloud_service_console_url',
-        'promotion_info': 'promotion_info',
         'target_cu': 'target_cu'
     }
 
-    def __init__(self, elastic_resource_pool_name=None, cloud_service_console_url=None, promotion_info=None, target_cu=None):
+    def __init__(self, elastic_resource_pool_name=None, target_cu=None):
         r"""CreatePeriodElasticResourcePoolSpecChangeOrderRequestBody
 
         The model defined in huaweicloud sdk
 
         :param elastic_resource_pool_name: 弹性资源池名称，名称只能包含数字、小写英文字母和下划线，但不能是纯数字，且不能以下划线开头。长度限制：1~128个字符。
         :type elastic_resource_pool_name: str
-        :param cloud_service_console_url: CBC订单跳转DLI console链接
-        :type cloud_service_console_url: str
-        :param promotion_info: 优惠信息
-        :type promotion_info: str
         :param target_cu: 包周期目标CU大小
         :type target_cu: int
         """
@@ -48,16 +40,10 @@ class CreatePeriodElasticResourcePoolSpecChangeOrderRequestBody:
         
 
         self._elastic_resource_pool_name = None
-        self._cloud_service_console_url = None
-        self._promotion_info = None
         self._target_cu = None
         self.discriminator = None
 
         self.elastic_resource_pool_name = elastic_resource_pool_name
-        if cloud_service_console_url is not None:
-            self.cloud_service_console_url = cloud_service_console_url
-        if promotion_info is not None:
-            self.promotion_info = promotion_info
         self.target_cu = target_cu
 
     @property
@@ -81,50 +67,6 @@ class CreatePeriodElasticResourcePoolSpecChangeOrderRequestBody:
         :type elastic_resource_pool_name: str
         """
         self._elastic_resource_pool_name = elastic_resource_pool_name
-
-    @property
-    def cloud_service_console_url(self):
-        r"""Gets the cloud_service_console_url of this CreatePeriodElasticResourcePoolSpecChangeOrderRequestBody.
-
-        CBC订单跳转DLI console链接
-
-        :return: The cloud_service_console_url of this CreatePeriodElasticResourcePoolSpecChangeOrderRequestBody.
-        :rtype: str
-        """
-        return self._cloud_service_console_url
-
-    @cloud_service_console_url.setter
-    def cloud_service_console_url(self, cloud_service_console_url):
-        r"""Sets the cloud_service_console_url of this CreatePeriodElasticResourcePoolSpecChangeOrderRequestBody.
-
-        CBC订单跳转DLI console链接
-
-        :param cloud_service_console_url: The cloud_service_console_url of this CreatePeriodElasticResourcePoolSpecChangeOrderRequestBody.
-        :type cloud_service_console_url: str
-        """
-        self._cloud_service_console_url = cloud_service_console_url
-
-    @property
-    def promotion_info(self):
-        r"""Gets the promotion_info of this CreatePeriodElasticResourcePoolSpecChangeOrderRequestBody.
-
-        优惠信息
-
-        :return: The promotion_info of this CreatePeriodElasticResourcePoolSpecChangeOrderRequestBody.
-        :rtype: str
-        """
-        return self._promotion_info
-
-    @promotion_info.setter
-    def promotion_info(self, promotion_info):
-        r"""Sets the promotion_info of this CreatePeriodElasticResourcePoolSpecChangeOrderRequestBody.
-
-        优惠信息
-
-        :param promotion_info: The promotion_info of this CreatePeriodElasticResourcePoolSpecChangeOrderRequestBody.
-        :type promotion_info: str
-        """
-        self._promotion_info = promotion_info
 
     @property
     def target_cu(self):

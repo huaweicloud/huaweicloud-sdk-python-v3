@@ -37,15 +37,15 @@ class ClusterConfiguration:
 
         The model defined in huaweicloud sdk
 
-        :param id: 参数组ID。
+        :param id: **参数解释**： 参数组ID。 **取值范围**： 不涉及。
         :type id: str
-        :param name: 参数组名称。
+        :param name: **参数解释**： 参数组名称。 **取值范围**： 不涉及。
         :type name: str
-        :param type: 参数组类型。
+        :param type: **参数解释**： 参数组类型。 **取值范围**： 不涉及。
         :type type: str
-        :param status: 集群参数状态。 - In-Sync：已同步。 - Applying：应用中。 - Pending-Reboot：需重启生效。 - Sync-Failure：应用失败。
+        :param status: **参数解释**： 集群参数状态。 **取值范围**： In-Sync：已同步。 Applying：应用中。 Pending-Reboot：需重启生效。 Sync-Failure：应用失败。
         :type status: str
-        :param fail_reason: 参数应用失败原因。
+        :param fail_reason: **参数解释**： 参数应用失败原因。 **取值范围**： 不涉及。
         :type fail_reason: str
         """
         
@@ -68,7 +68,7 @@ class ClusterConfiguration:
     def id(self):
         r"""Gets the id of this ClusterConfiguration.
 
-        参数组ID。
+        **参数解释**： 参数组ID。 **取值范围**： 不涉及。
 
         :return: The id of this ClusterConfiguration.
         :rtype: str
@@ -79,7 +79,7 @@ class ClusterConfiguration:
     def id(self, id):
         r"""Sets the id of this ClusterConfiguration.
 
-        参数组ID。
+        **参数解释**： 参数组ID。 **取值范围**： 不涉及。
 
         :param id: The id of this ClusterConfiguration.
         :type id: str
@@ -90,7 +90,7 @@ class ClusterConfiguration:
     def name(self):
         r"""Gets the name of this ClusterConfiguration.
 
-        参数组名称。
+        **参数解释**： 参数组名称。 **取值范围**： 不涉及。
 
         :return: The name of this ClusterConfiguration.
         :rtype: str
@@ -101,7 +101,7 @@ class ClusterConfiguration:
     def name(self, name):
         r"""Sets the name of this ClusterConfiguration.
 
-        参数组名称。
+        **参数解释**： 参数组名称。 **取值范围**： 不涉及。
 
         :param name: The name of this ClusterConfiguration.
         :type name: str
@@ -112,7 +112,7 @@ class ClusterConfiguration:
     def type(self):
         r"""Gets the type of this ClusterConfiguration.
 
-        参数组类型。
+        **参数解释**： 参数组类型。 **取值范围**： 不涉及。
 
         :return: The type of this ClusterConfiguration.
         :rtype: str
@@ -123,7 +123,7 @@ class ClusterConfiguration:
     def type(self, type):
         r"""Sets the type of this ClusterConfiguration.
 
-        参数组类型。
+        **参数解释**： 参数组类型。 **取值范围**： 不涉及。
 
         :param type: The type of this ClusterConfiguration.
         :type type: str
@@ -134,7 +134,7 @@ class ClusterConfiguration:
     def status(self):
         r"""Gets the status of this ClusterConfiguration.
 
-        集群参数状态。 - In-Sync：已同步。 - Applying：应用中。 - Pending-Reboot：需重启生效。 - Sync-Failure：应用失败。
+        **参数解释**： 集群参数状态。 **取值范围**： In-Sync：已同步。 Applying：应用中。 Pending-Reboot：需重启生效。 Sync-Failure：应用失败。
 
         :return: The status of this ClusterConfiguration.
         :rtype: str
@@ -145,7 +145,7 @@ class ClusterConfiguration:
     def status(self, status):
         r"""Sets the status of this ClusterConfiguration.
 
-        集群参数状态。 - In-Sync：已同步。 - Applying：应用中。 - Pending-Reboot：需重启生效。 - Sync-Failure：应用失败。
+        **参数解释**： 集群参数状态。 **取值范围**： In-Sync：已同步。 Applying：应用中。 Pending-Reboot：需重启生效。 Sync-Failure：应用失败。
 
         :param status: The status of this ClusterConfiguration.
         :type status: str
@@ -156,7 +156,7 @@ class ClusterConfiguration:
     def fail_reason(self):
         r"""Gets the fail_reason of this ClusterConfiguration.
 
-        参数应用失败原因。
+        **参数解释**： 参数应用失败原因。 **取值范围**： 不涉及。
 
         :return: The fail_reason of this ClusterConfiguration.
         :rtype: str
@@ -167,7 +167,7 @@ class ClusterConfiguration:
     def fail_reason(self, fail_reason):
         r"""Sets the fail_reason of this ClusterConfiguration.
 
-        参数应用失败原因。
+        **参数解释**： 参数应用失败原因。 **取值范围**： 不涉及。
 
         :param fail_reason: The fail_reason of this ClusterConfiguration.
         :type fail_reason: str

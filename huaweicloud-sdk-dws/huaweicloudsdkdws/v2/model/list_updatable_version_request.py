@@ -35,13 +35,13 @@ class ListUpdatableVersionRequest:
 
         The model defined in huaweicloud sdk
 
-        :param cluster_id: **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
+        :param cluster_id: **参数解释**： 集群ID。获取方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
         :type cluster_id: str
-        :param offset: **参数解释**： 分页查询，偏移量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 0
+        :param offset: **参数解释**： 分页偏移量，从0开始，页数减1。 **约束限制**： 不涉及。 **取值范围**： 大于等于0。 **默认取值**： 0
         :type offset: int
         :param limit: **参数解释**： 分页单页大小。 **约束限制**： 不涉及。 **取值范围**： 大于0。 **默认取值**： 10
         :type limit: int
-        :param type: 升级类型 cluster:集群升级 hotpatch:热补丁升级
+        :param type: **参数解释**： 升级类型。 **约束限制**： 不涉及。 **取值范围**： cluster：集群升级。 hotpatch：热补丁升级。 **默认取值**： 不涉及。
         :type type: str
         """
         
@@ -65,7 +65,7 @@ class ListUpdatableVersionRequest:
     def cluster_id(self):
         r"""Gets the cluster_id of this ListUpdatableVersionRequest.
 
-        **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
+        **参数解释**： 集群ID。获取方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
 
         :return: The cluster_id of this ListUpdatableVersionRequest.
         :rtype: str
@@ -76,7 +76,7 @@ class ListUpdatableVersionRequest:
     def cluster_id(self, cluster_id):
         r"""Sets the cluster_id of this ListUpdatableVersionRequest.
 
-        **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
+        **参数解释**： 集群ID。获取方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
 
         :param cluster_id: The cluster_id of this ListUpdatableVersionRequest.
         :type cluster_id: str
@@ -87,7 +87,7 @@ class ListUpdatableVersionRequest:
     def offset(self):
         r"""Gets the offset of this ListUpdatableVersionRequest.
 
-        **参数解释**： 分页查询，偏移量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 0
+        **参数解释**： 分页偏移量，从0开始，页数减1。 **约束限制**： 不涉及。 **取值范围**： 大于等于0。 **默认取值**： 0
 
         :return: The offset of this ListUpdatableVersionRequest.
         :rtype: int
@@ -98,7 +98,7 @@ class ListUpdatableVersionRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListUpdatableVersionRequest.
 
-        **参数解释**： 分页查询，偏移量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 0
+        **参数解释**： 分页偏移量，从0开始，页数减1。 **约束限制**： 不涉及。 **取值范围**： 大于等于0。 **默认取值**： 0
 
         :param offset: The offset of this ListUpdatableVersionRequest.
         :type offset: int
@@ -131,7 +131,7 @@ class ListUpdatableVersionRequest:
     def type(self):
         r"""Gets the type of this ListUpdatableVersionRequest.
 
-        升级类型 cluster:集群升级 hotpatch:热补丁升级
+        **参数解释**： 升级类型。 **约束限制**： 不涉及。 **取值范围**： cluster：集群升级。 hotpatch：热补丁升级。 **默认取值**： 不涉及。
 
         :return: The type of this ListUpdatableVersionRequest.
         :rtype: str
@@ -142,7 +142,7 @@ class ListUpdatableVersionRequest:
     def type(self, type):
         r"""Sets the type of this ListUpdatableVersionRequest.
 
-        升级类型 cluster:集群升级 hotpatch:热补丁升级
+        **参数解释**： 升级类型。 **约束限制**： 不涉及。 **取值范围**： cluster：集群升级。 hotpatch：热补丁升级。 **默认取值**： 不涉及。
 
         :param type: The type of this ListUpdatableVersionRequest.
         :type type: str

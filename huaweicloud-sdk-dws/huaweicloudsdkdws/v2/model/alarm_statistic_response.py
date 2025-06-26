@@ -37,15 +37,15 @@ class AlarmStatisticResponse:
 
         The model defined in huaweicloud sdk
 
-        :param date: 日期
+        :param date: **参数解释**： 日期。 **取值范围**： 不涉及。
         :type date: str
-        :param urgent: 紧急
+        :param urgent: **参数解释**： 紧急。 **取值范围**： 不涉及。
         :type urgent: str
-        :param important: 重要
+        :param important: **参数解释**： 重要。 **取值范围**： 不涉及。
         :type important: str
-        :param minor: 次要
+        :param minor: **参数解释**： 次要。 **取值范围**： 不涉及。
         :type minor: str
-        :param prompt: 提示
+        :param prompt: **参数解释**： 提示。 **取值范围**： 不涉及。
         :type prompt: str
         """
         
@@ -73,7 +73,7 @@ class AlarmStatisticResponse:
     def date(self):
         r"""Gets the date of this AlarmStatisticResponse.
 
-        日期
+        **参数解释**： 日期。 **取值范围**： 不涉及。
 
         :return: The date of this AlarmStatisticResponse.
         :rtype: str
@@ -84,7 +84,7 @@ class AlarmStatisticResponse:
     def date(self, date):
         r"""Sets the date of this AlarmStatisticResponse.
 
-        日期
+        **参数解释**： 日期。 **取值范围**： 不涉及。
 
         :param date: The date of this AlarmStatisticResponse.
         :type date: str
@@ -95,7 +95,7 @@ class AlarmStatisticResponse:
     def urgent(self):
         r"""Gets the urgent of this AlarmStatisticResponse.
 
-        紧急
+        **参数解释**： 紧急。 **取值范围**： 不涉及。
 
         :return: The urgent of this AlarmStatisticResponse.
         :rtype: str
@@ -106,7 +106,7 @@ class AlarmStatisticResponse:
     def urgent(self, urgent):
         r"""Sets the urgent of this AlarmStatisticResponse.
 
-        紧急
+        **参数解释**： 紧急。 **取值范围**： 不涉及。
 
         :param urgent: The urgent of this AlarmStatisticResponse.
         :type urgent: str
@@ -117,7 +117,7 @@ class AlarmStatisticResponse:
     def important(self):
         r"""Gets the important of this AlarmStatisticResponse.
 
-        重要
+        **参数解释**： 重要。 **取值范围**： 不涉及。
 
         :return: The important of this AlarmStatisticResponse.
         :rtype: str
@@ -128,7 +128,7 @@ class AlarmStatisticResponse:
     def important(self, important):
         r"""Sets the important of this AlarmStatisticResponse.
 
-        重要
+        **参数解释**： 重要。 **取值范围**： 不涉及。
 
         :param important: The important of this AlarmStatisticResponse.
         :type important: str
@@ -139,7 +139,7 @@ class AlarmStatisticResponse:
     def minor(self):
         r"""Gets the minor of this AlarmStatisticResponse.
 
-        次要
+        **参数解释**： 次要。 **取值范围**： 不涉及。
 
         :return: The minor of this AlarmStatisticResponse.
         :rtype: str
@@ -150,7 +150,7 @@ class AlarmStatisticResponse:
     def minor(self, minor):
         r"""Sets the minor of this AlarmStatisticResponse.
 
-        次要
+        **参数解释**： 次要。 **取值范围**： 不涉及。
 
         :param minor: The minor of this AlarmStatisticResponse.
         :type minor: str
@@ -161,7 +161,7 @@ class AlarmStatisticResponse:
     def prompt(self):
         r"""Gets the prompt of this AlarmStatisticResponse.
 
-        提示
+        **参数解释**： 提示。 **取值范围**： 不涉及。
 
         :return: The prompt of this AlarmStatisticResponse.
         :rtype: str
@@ -172,7 +172,7 @@ class AlarmStatisticResponse:
     def prompt(self, prompt):
         r"""Sets the prompt of this AlarmStatisticResponse.
 
-        提示
+        **参数解释**： 提示。 **取值范围**： 不涉及。
 
         :param prompt: The prompt of this AlarmStatisticResponse.
         :type prompt: str

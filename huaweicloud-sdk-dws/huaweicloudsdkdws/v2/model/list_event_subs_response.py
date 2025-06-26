@@ -32,9 +32,9 @@ class ListEventSubsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param count: 事件订阅总数
+        :param count: **参数解释**： 事件订阅总数。 **取值范围**： 不涉及。
         :type count: int
-        :param event_subscriptions: 事件订阅详情列表
+        :param event_subscriptions: **参数解释**： 事件订阅详情列表。 **取值范围**： 不涉及。
         :type event_subscriptions: list[:class:`huaweicloudsdkdws.v2.EventSubscriptionResponse`]
         """
         
@@ -53,7 +53,7 @@ class ListEventSubsResponse(SdkResponse):
     def count(self):
         r"""Gets the count of this ListEventSubsResponse.
 
-        事件订阅总数
+        **参数解释**： 事件订阅总数。 **取值范围**： 不涉及。
 
         :return: The count of this ListEventSubsResponse.
         :rtype: int
@@ -64,7 +64,7 @@ class ListEventSubsResponse(SdkResponse):
     def count(self, count):
         r"""Sets the count of this ListEventSubsResponse.
 
-        事件订阅总数
+        **参数解释**： 事件订阅总数。 **取值范围**： 不涉及。
 
         :param count: The count of this ListEventSubsResponse.
         :type count: int
@@ -75,7 +75,7 @@ class ListEventSubsResponse(SdkResponse):
     def event_subscriptions(self):
         r"""Gets the event_subscriptions of this ListEventSubsResponse.
 
-        事件订阅详情列表
+        **参数解释**： 事件订阅详情列表。 **取值范围**： 不涉及。
 
         :return: The event_subscriptions of this ListEventSubsResponse.
         :rtype: list[:class:`huaweicloudsdkdws.v2.EventSubscriptionResponse`]
@@ -86,7 +86,7 @@ class ListEventSubsResponse(SdkResponse):
     def event_subscriptions(self, event_subscriptions):
         r"""Sets the event_subscriptions of this ListEventSubsResponse.
 
-        事件订阅详情列表
+        **参数解释**： 事件订阅详情列表。 **取值范围**： 不涉及。
 
         :param event_subscriptions: The event_subscriptions of this ListEventSubsResponse.
         :type event_subscriptions: list[:class:`huaweicloudsdkdws.v2.EventSubscriptionResponse`]

@@ -34,11 +34,11 @@ class ListTablesStatisticResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param collect_time: 数据采集时间毫秒级时间戳。
+        :param collect_time: **参数解释**： 数据采集时间毫秒级时间戳。 **取值范围**： 不涉及。
         :type collect_time: int
-        :param data: 表倾斜率或脏页率列表。
+        :param data: **参数解释**： 表倾斜率或脏页率列表。 **取值范围**： 不涉及。
         :type data: list[:class:`huaweicloudsdkdws.v2.ListTablesStatisticDto`]
-        :param count: 总列表大小。
+        :param count: **参数解释**： 总列表大小。 **取值范围**： 不涉及。
         :type count: int
         """
         
@@ -60,7 +60,7 @@ class ListTablesStatisticResponse(SdkResponse):
     def collect_time(self):
         r"""Gets the collect_time of this ListTablesStatisticResponse.
 
-        数据采集时间毫秒级时间戳。
+        **参数解释**： 数据采集时间毫秒级时间戳。 **取值范围**： 不涉及。
 
         :return: The collect_time of this ListTablesStatisticResponse.
         :rtype: int
@@ -71,7 +71,7 @@ class ListTablesStatisticResponse(SdkResponse):
     def collect_time(self, collect_time):
         r"""Sets the collect_time of this ListTablesStatisticResponse.
 
-        数据采集时间毫秒级时间戳。
+        **参数解释**： 数据采集时间毫秒级时间戳。 **取值范围**： 不涉及。
 
         :param collect_time: The collect_time of this ListTablesStatisticResponse.
         :type collect_time: int
@@ -82,7 +82,7 @@ class ListTablesStatisticResponse(SdkResponse):
     def data(self):
         r"""Gets the data of this ListTablesStatisticResponse.
 
-        表倾斜率或脏页率列表。
+        **参数解释**： 表倾斜率或脏页率列表。 **取值范围**： 不涉及。
 
         :return: The data of this ListTablesStatisticResponse.
         :rtype: list[:class:`huaweicloudsdkdws.v2.ListTablesStatisticDto`]
@@ -93,7 +93,7 @@ class ListTablesStatisticResponse(SdkResponse):
     def data(self, data):
         r"""Sets the data of this ListTablesStatisticResponse.
 
-        表倾斜率或脏页率列表。
+        **参数解释**： 表倾斜率或脏页率列表。 **取值范围**： 不涉及。
 
         :param data: The data of this ListTablesStatisticResponse.
         :type data: list[:class:`huaweicloudsdkdws.v2.ListTablesStatisticDto`]
@@ -104,7 +104,7 @@ class ListTablesStatisticResponse(SdkResponse):
     def count(self):
         r"""Gets the count of this ListTablesStatisticResponse.
 
-        总列表大小。
+        **参数解释**： 总列表大小。 **取值范围**： 不涉及。
 
         :return: The count of this ListTablesStatisticResponse.
         :rtype: int
@@ -115,7 +115,7 @@ class ListTablesStatisticResponse(SdkResponse):
     def count(self, count):
         r"""Sets the count of this ListTablesStatisticResponse.
 
-        总列表大小。
+        **参数解释**： 总列表大小。 **取值范围**： 不涉及。
 
         :param count: The count of this ListTablesStatisticResponse.
         :type count: int

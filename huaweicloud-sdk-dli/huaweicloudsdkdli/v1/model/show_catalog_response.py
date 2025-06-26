@@ -21,17 +21,21 @@ class ShowCatalogResponse(SdkResponse):
         'is_success': 'bool',
         'name': 'str',
         'create_time': 'int',
-        'parameters': 'dict(str, str)'
+        'parameters': 'dict(str, str)',
+        'description': 'str',
+        'status': 'str'
     }
 
     attribute_map = {
         'is_success': 'is_success',
         'name': 'name',
         'create_time': 'create_time',
-        'parameters': 'parameters'
+        'parameters': 'parameters',
+        'description': 'description',
+        'status': 'status'
     }
 
-    def __init__(self, is_success=None, name=None, create_time=None, parameters=None):
+    def __init__(self, is_success=None, name=None, create_time=None, parameters=None, description=None, status=None):
         r"""ShowCatalogResponse
 
         The model defined in huaweicloud sdk
@@ -44,6 +48,10 @@ class ShowCatalogResponse(SdkResponse):
         :type create_time: int
         :param parameters: 
         :type parameters: dict(str, str)
+        :param description: 描述
+        :type description: str
+        :param status: catalog状态。CREATING：catalog创建中；ACTIVE：catalog可使用；FAILED：catalog创建失败。
+        :type status: str
         """
         
         super(ShowCatalogResponse, self).__init__()
@@ -52,6 +60,8 @@ class ShowCatalogResponse(SdkResponse):
         self._name = None
         self._create_time = None
         self._parameters = None
+        self._description = None
+        self._status = None
         self.discriminator = None
 
         if is_success is not None:
@@ -62,6 +72,10 @@ class ShowCatalogResponse(SdkResponse):
             self.create_time = create_time
         if parameters is not None:
             self.parameters = parameters
+        if description is not None:
+            self.description = description
+        if status is not None:
+            self.status = status
 
     @property
     def is_success(self):
@@ -146,6 +160,50 @@ class ShowCatalogResponse(SdkResponse):
         :type parameters: dict(str, str)
         """
         self._parameters = parameters
+
+    @property
+    def description(self):
+        r"""Gets the description of this ShowCatalogResponse.
+
+        描述
+
+        :return: The description of this ShowCatalogResponse.
+        :rtype: str
+        """
+        return self._description
+
+    @description.setter
+    def description(self, description):
+        r"""Sets the description of this ShowCatalogResponse.
+
+        描述
+
+        :param description: The description of this ShowCatalogResponse.
+        :type description: str
+        """
+        self._description = description
+
+    @property
+    def status(self):
+        r"""Gets the status of this ShowCatalogResponse.
+
+        catalog状态。CREATING：catalog创建中；ACTIVE：catalog可使用；FAILED：catalog创建失败。
+
+        :return: The status of this ShowCatalogResponse.
+        :rtype: str
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        r"""Sets the status of this ShowCatalogResponse.
+
+        catalog状态。CREATING：catalog创建中；ACTIVE：catalog可使用；FAILED：catalog创建失败。
+
+        :param status: The status of this ShowCatalogResponse.
+        :type status: str
+        """
+        self._status = status
 
     def to_dict(self):
         """Returns the model properties as a dict"""

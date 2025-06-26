@@ -30,7 +30,7 @@ class ListDatabaseUsersResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param users: user list
+        :param users: **参数解释**： 用户/角色列表。 **取值范围**： 不涉及。
         :type users: list[:class:`huaweicloudsdkdws.v2.DatabaseUser`]
         """
         
@@ -46,7 +46,7 @@ class ListDatabaseUsersResponse(SdkResponse):
     def users(self):
         r"""Gets the users of this ListDatabaseUsersResponse.
 
-        user list
+        **参数解释**： 用户/角色列表。 **取值范围**： 不涉及。
 
         :return: The users of this ListDatabaseUsersResponse.
         :rtype: list[:class:`huaweicloudsdkdws.v2.DatabaseUser`]
@@ -57,7 +57,7 @@ class ListDatabaseUsersResponse(SdkResponse):
     def users(self, users):
         r"""Sets the users of this ListDatabaseUsersResponse.
 
-        user list
+        **参数解释**： 用户/角色列表。 **取值范围**： 不涉及。
 
         :param users: The users of this ListDatabaseUsersResponse.
         :type users: list[:class:`huaweicloudsdkdws.v2.DatabaseUser`]

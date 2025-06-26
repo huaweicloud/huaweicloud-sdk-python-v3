@@ -51,7 +51,7 @@ class LogicalClusterPlanActions:
         :type type: str
         :param strategy: **参数解释**： 周期信息。Cron表达式：如\&quot;0 0 0 ? * 3\&quot;。 **取值范围**： 不涉及。
         :type strategy: str
-        :param status: 行动状态，取值范围为(running|waiting|deleted|finished|disabled|failed)
+        :param status: **参数解释**： 任务状态。 **取值范围**： running|waiting|deleted|finished|disabled|failed。
         :type status: str
         :param pre_fire_time: **参数解释**： 上一次触发时间。 **取值范围**： 不涉及。
         :type pre_fire_time: date
@@ -197,7 +197,7 @@ class LogicalClusterPlanActions:
     def status(self):
         r"""Gets the status of this LogicalClusterPlanActions.
 
-        行动状态，取值范围为(running|waiting|deleted|finished|disabled|failed)
+        **参数解释**： 任务状态。 **取值范围**： running|waiting|deleted|finished|disabled|failed。
 
         :return: The status of this LogicalClusterPlanActions.
         :rtype: str
@@ -208,7 +208,7 @@ class LogicalClusterPlanActions:
     def status(self, status):
         r"""Sets the status of this LogicalClusterPlanActions.
 
-        行动状态，取值范围为(running|waiting|deleted|finished|disabled|failed)
+        **参数解释**： 任务状态。 **取值范围**： running|waiting|deleted|finished|disabled|failed。
 
         :param status: The status of this LogicalClusterPlanActions.
         :type status: str

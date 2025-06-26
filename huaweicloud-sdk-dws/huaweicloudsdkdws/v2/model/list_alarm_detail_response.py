@@ -32,9 +32,9 @@ class ListAlarmDetailResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param count: 告警详情总数
+        :param count: **参数解释**： 告警详情总数。 **取值范围**： 不涉及。
         :type count: int
-        :param alarm_details: 告警列表
+        :param alarm_details: **参数解释**： 告警列表。 **取值范围**： 不涉及。
         :type alarm_details: list[:class:`huaweicloudsdkdws.v2.AlarmDetailResponse`]
         """
         
@@ -53,7 +53,7 @@ class ListAlarmDetailResponse(SdkResponse):
     def count(self):
         r"""Gets the count of this ListAlarmDetailResponse.
 
-        告警详情总数
+        **参数解释**： 告警详情总数。 **取值范围**： 不涉及。
 
         :return: The count of this ListAlarmDetailResponse.
         :rtype: int
@@ -64,7 +64,7 @@ class ListAlarmDetailResponse(SdkResponse):
     def count(self, count):
         r"""Sets the count of this ListAlarmDetailResponse.
 
-        告警详情总数
+        **参数解释**： 告警详情总数。 **取值范围**： 不涉及。
 
         :param count: The count of this ListAlarmDetailResponse.
         :type count: int
@@ -75,7 +75,7 @@ class ListAlarmDetailResponse(SdkResponse):
     def alarm_details(self):
         r"""Gets the alarm_details of this ListAlarmDetailResponse.
 
-        告警列表
+        **参数解释**： 告警列表。 **取值范围**： 不涉及。
 
         :return: The alarm_details of this ListAlarmDetailResponse.
         :rtype: list[:class:`huaweicloudsdkdws.v2.AlarmDetailResponse`]
@@ -86,7 +86,7 @@ class ListAlarmDetailResponse(SdkResponse):
     def alarm_details(self, alarm_details):
         r"""Sets the alarm_details of this ListAlarmDetailResponse.
 
-        告警列表
+        **参数解释**： 告警列表。 **取值范围**： 不涉及。
 
         :param alarm_details: The alarm_details of this ListAlarmDetailResponse.
         :type alarm_details: list[:class:`huaweicloudsdkdws.v2.AlarmDetailResponse`]

@@ -29,7 +29,7 @@ class WorkloadPlanStageIdReq:
 
         The model defined in huaweicloud sdk
 
-        :param stage_id: 计划阶段ID
+        :param stage_id: **参数解释**： 资源管理计划阶段ID。 **取值范围**： 不涉及。
         :type stage_id: str
         """
         
@@ -44,7 +44,7 @@ class WorkloadPlanStageIdReq:
     def stage_id(self):
         r"""Gets the stage_id of this WorkloadPlanStageIdReq.
 
-        计划阶段ID
+        **参数解释**： 资源管理计划阶段ID。 **取值范围**： 不涉及。
 
         :return: The stage_id of this WorkloadPlanStageIdReq.
         :rtype: str
@@ -55,7 +55,7 @@ class WorkloadPlanStageIdReq:
     def stage_id(self, stage_id):
         r"""Sets the stage_id of this WorkloadPlanStageIdReq.
 
-        计划阶段ID
+        **参数解释**： 资源管理计划阶段ID。 **取值范围**： 不涉及。
 
         :param stage_id: The stage_id of this WorkloadPlanStageIdReq.
         :type stage_id: str

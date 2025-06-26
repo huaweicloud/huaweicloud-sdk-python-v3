@@ -29,7 +29,7 @@ class QuotasQuotas:
 
         The model defined in huaweicloud sdk
 
-        :param resources: 资源列表对象。
+        :param resources: **参数解释**： 资源列表对象。 **取值范围**： 不涉及。
         :type resources: list[:class:`huaweicloudsdkdws.v2.QuotasResource`]
         """
         
@@ -45,7 +45,7 @@ class QuotasQuotas:
     def resources(self):
         r"""Gets the resources of this QuotasQuotas.
 
-        资源列表对象。
+        **参数解释**： 资源列表对象。 **取值范围**： 不涉及。
 
         :return: The resources of this QuotasQuotas.
         :rtype: list[:class:`huaweicloudsdkdws.v2.QuotasResource`]
@@ -56,7 +56,7 @@ class QuotasQuotas:
     def resources(self, resources):
         r"""Sets the resources of this QuotasQuotas.
 
-        资源列表对象。
+        **参数解释**： 资源列表对象。 **取值范围**： 不涉及。
 
         :param resources: The resources of this QuotasQuotas.
         :type resources: list[:class:`huaweicloudsdkdws.v2.QuotasResource`]

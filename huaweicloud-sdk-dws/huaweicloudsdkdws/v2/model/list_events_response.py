@@ -32,9 +32,9 @@ class ListEventsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param events: 事件详情列表
+        :param events: **参数解释**： 事件详情列表。 **取值范围**： 不涉及。
         :type events: list[:class:`huaweicloudsdkdws.v2.EventResponse`]
-        :param count: 事件总数
+        :param count: **参数解释**： 事件总数。 **取值范围**： 不涉及。
         :type count: int
         """
         
@@ -53,7 +53,7 @@ class ListEventsResponse(SdkResponse):
     def events(self):
         r"""Gets the events of this ListEventsResponse.
 
-        事件详情列表
+        **参数解释**： 事件详情列表。 **取值范围**： 不涉及。
 
         :return: The events of this ListEventsResponse.
         :rtype: list[:class:`huaweicloudsdkdws.v2.EventResponse`]
@@ -64,7 +64,7 @@ class ListEventsResponse(SdkResponse):
     def events(self, events):
         r"""Sets the events of this ListEventsResponse.
 
-        事件详情列表
+        **参数解释**： 事件详情列表。 **取值范围**： 不涉及。
 
         :param events: The events of this ListEventsResponse.
         :type events: list[:class:`huaweicloudsdkdws.v2.EventResponse`]
@@ -75,7 +75,7 @@ class ListEventsResponse(SdkResponse):
     def count(self):
         r"""Gets the count of this ListEventsResponse.
 
-        事件总数
+        **参数解释**： 事件总数。 **取值范围**： 不涉及。
 
         :return: The count of this ListEventsResponse.
         :rtype: int
@@ -86,7 +86,7 @@ class ListEventsResponse(SdkResponse):
     def count(self, count):
         r"""Sets the count of this ListEventsResponse.
 
-        事件总数
+        **参数解释**： 事件总数。 **取值范围**： 不涉及。
 
         :param count: The count of this ListEventsResponse.
         :type count: int

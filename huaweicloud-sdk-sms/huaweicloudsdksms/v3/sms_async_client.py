@@ -33,79 +33,6 @@ class SmsAsyncClient(Client):
 
         return client_builder
 
-    def check_net_acl_async(self, request):
-        r"""检查网卡安全组端口是否符合要求
-
-        检查网卡安全组。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for CheckNetAcl
-        :type request: :class:`huaweicloudsdksms.v3.CheckNetAclRequest`
-        :rtype: :class:`huaweicloudsdksms.v3.CheckNetAclResponse`
-        """
-        warnings.warn("Method 'check_net_acl_async' of SmsAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._check_net_acl_http_info(request)
-        return self._call_api(**http_info)
-
-    def check_net_acl_async_invoker(self, request):
-        warnings.warn("Method 'check_net_acl_async_invoker' of SmsAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._check_net_acl_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _check_net_acl_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v3/tasks/{t_project_id}/networkacl/{t_network_id}/check",
-            "request_type": request.__class__.__name__,
-            "response_type": "CheckNetAclResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 't_project_id' in local_var_params:
-            path_params['t_project_id'] = local_var_params['t_project_id']
-        if 't_network_id' in local_var_params:
-            path_params['t_network_id'] = local_var_params['t_network_id']
-
-        query_params = []
-        if 'region_id' in local_var_params:
-            query_params.append(('region_id', local_var_params['region_id']))
-        if 'os_type' in local_var_params:
-            query_params.append(('os_type', local_var_params['os_type']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
     def collect_log_async(self, request):
         r"""上传迁移任务的日志
 
@@ -872,6 +799,73 @@ class SmsAsyncClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def export_consistency_results_async(self, request):
+        r"""批量获取一致性校验结果
+
+        使用该接口批量导出一致性校验结果
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ExportConsistencyResults
+        :type request: :class:`huaweicloudsdksms.v3.ExportConsistencyResultsRequest`
+        :rtype: :class:`huaweicloudsdksms.v3.ExportConsistencyResultsResponse`
+        """
+        http_info = self._export_consistency_results_http_info(request)
+        return self._call_api(**http_info)
+
+    def export_consistency_results_async_invoker(self, request):
+        http_info = self._export_consistency_results_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _export_consistency_results_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/tasks/consistency-results/export",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExportConsistencyResultsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
@@ -1909,73 +1903,6 @@ class SmsAsyncClient(Client):
 
         return http_info
 
-    def show_sha256_async(self, request):
-        r"""计算sha256
-
-        计算sha256，加密字段值为uuid。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ShowSha256
-        :type request: :class:`huaweicloudsdksms.v3.ShowSha256Request`
-        :rtype: :class:`huaweicloudsdksms.v3.ShowSha256Response`
-        """
-        warnings.warn("Method 'show_sha256_async' of SmsAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._show_sha256_http_info(request)
-        return self._call_api(**http_info)
-
-    def show_sha256_async_invoker(self, request):
-        warnings.warn("Method 'show_sha256_async_invoker' of SmsAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._show_sha256_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _show_sha256_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v3/sha256/{key}",
-            "request_type": request.__class__.__name__,
-            "response_type": "ShowSha256Response"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'key' in local_var_params:
-            path_params['key'] = local_var_params['key']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
     def show_target_password_async(self, request):
         r"""查询指定ID的模板中的目的端服务器的密码
 
@@ -2196,73 +2123,6 @@ class SmsAsyncClient(Client):
             "resource_path": "/v3/tasks/{task_id}/speed-limit",
             "request_type": request.__class__.__name__,
             "response_type": "ShowsSpeedLimitsResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'task_id' in local_var_params:
-            path_params['task_id'] = local_var_params['task_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def unlock_target_ecs_async(self, request):
-        r"""解锁指定任务的目的端服务器
-
-        解锁指定任务的目的端服务器。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for UnlockTargetEcs
-        :type request: :class:`huaweicloudsdksms.v3.UnlockTargetEcsRequest`
-        :rtype: :class:`huaweicloudsdksms.v3.UnlockTargetEcsResponse`
-        """
-        warnings.warn("Method 'unlock_target_ecs_async' of SmsAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._unlock_target_ecs_http_info(request)
-        return self._call_api(**http_info)
-
-    def unlock_target_ecs_async_invoker(self, request):
-        warnings.warn("Method 'unlock_target_ecs_async_invoker' of SmsAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._unlock_target_ecs_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _unlock_target_ecs_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v3/tasks/{task_id}/unlock",
-            "request_type": request.__class__.__name__,
-            "response_type": "UnlockTargetEcsResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -3240,6 +3100,79 @@ class SmsAsyncClient(Client):
 
         return http_info
 
+    def check_net_acl_async(self, request):
+        r"""检查网卡安全组端口是否符合要求
+
+        检查网卡安全组。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CheckNetAcl
+        :type request: :class:`huaweicloudsdksms.v3.CheckNetAclRequest`
+        :rtype: :class:`huaweicloudsdksms.v3.CheckNetAclResponse`
+        """
+        warnings.warn("Method 'check_net_acl_async' of SmsAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._check_net_acl_http_info(request)
+        return self._call_api(**http_info)
+
+    def check_net_acl_async_invoker(self, request):
+        warnings.warn("Method 'check_net_acl_async_invoker' of SmsAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._check_net_acl_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _check_net_acl_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/tasks/{t_project_id}/networkacl/{t_network_id}/check",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckNetAclResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 't_project_id' in local_var_params:
+            path_params['t_project_id'] = local_var_params['t_project_id']
+        if 't_network_id' in local_var_params:
+            path_params['t_network_id'] = local_var_params['t_network_id']
+
+        query_params = []
+        if 'region_id' in local_var_params:
+            query_params.append(('region_id', local_var_params['region_id']))
+        if 'os_type' in local_var_params:
+            query_params.append(('os_type', local_var_params['os_type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_api_version_async(self, request):
         r"""查询主机迁移服务的API版本信息
 
@@ -3339,6 +3272,140 @@ class SmsAsyncClient(Client):
         path_params = {}
         if 'version' in local_var_params:
             path_params['version'] = local_var_params['version']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_sha256_async(self, request):
+        r"""计算sha256
+
+        计算sha256，加密字段值为uuid。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowSha256
+        :type request: :class:`huaweicloudsdksms.v3.ShowSha256Request`
+        :rtype: :class:`huaweicloudsdksms.v3.ShowSha256Response`
+        """
+        warnings.warn("Method 'show_sha256_async' of SmsAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._show_sha256_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_sha256_async_invoker(self, request):
+        warnings.warn("Method 'show_sha256_async_invoker' of SmsAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._show_sha256_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_sha256_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/sha256/{key}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSha256Response"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'key' in local_var_params:
+            path_params['key'] = local_var_params['key']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def unlock_target_ecs_async(self, request):
+        r"""解锁指定任务的目的端服务器
+
+        解锁指定任务的目的端服务器。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UnlockTargetEcs
+        :type request: :class:`huaweicloudsdksms.v3.UnlockTargetEcsRequest`
+        :rtype: :class:`huaweicloudsdksms.v3.UnlockTargetEcsResponse`
+        """
+        warnings.warn("Method 'unlock_target_ecs_async' of SmsAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._unlock_target_ecs_http_info(request)
+        return self._call_api(**http_info)
+
+    def unlock_target_ecs_async_invoker(self, request):
+        warnings.warn("Method 'unlock_target_ecs_async_invoker' of SmsAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
+        http_info = self._unlock_target_ecs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _unlock_target_ecs_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/tasks/{task_id}/unlock",
+            "request_type": request.__class__.__name__,
+            "response_type": "UnlockTargetEcsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
 
         query_params = []
 

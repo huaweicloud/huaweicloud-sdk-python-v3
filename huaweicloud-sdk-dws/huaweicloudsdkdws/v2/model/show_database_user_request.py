@@ -31,9 +31,9 @@ class ShowDatabaseUserRequest:
 
         The model defined in huaweicloud sdk
 
-        :param cluster_id: cluster_id
+        :param cluster_id: **参数解释**： 集群ID。获取方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type cluster_id: str
-        :param name: name
+        :param name: **参数解释**： 用户名/角色名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type name: str
         """
         
@@ -50,7 +50,7 @@ class ShowDatabaseUserRequest:
     def cluster_id(self):
         r"""Gets the cluster_id of this ShowDatabaseUserRequest.
 
-        cluster_id
+        **参数解释**： 集群ID。获取方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The cluster_id of this ShowDatabaseUserRequest.
         :rtype: str
@@ -61,7 +61,7 @@ class ShowDatabaseUserRequest:
     def cluster_id(self, cluster_id):
         r"""Sets the cluster_id of this ShowDatabaseUserRequest.
 
-        cluster_id
+        **参数解释**： 集群ID。获取方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param cluster_id: The cluster_id of this ShowDatabaseUserRequest.
         :type cluster_id: str
@@ -72,7 +72,7 @@ class ShowDatabaseUserRequest:
     def name(self):
         r"""Gets the name of this ShowDatabaseUserRequest.
 
-        name
+        **参数解释**： 用户名/角色名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The name of this ShowDatabaseUserRequest.
         :rtype: str
@@ -83,7 +83,7 @@ class ShowDatabaseUserRequest:
     def name(self, name):
         r"""Sets the name of this ShowDatabaseUserRequest.
 
-        name
+        **参数解释**： 用户名/角色名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param name: The name of this ShowDatabaseUserRequest.
         :type name: str

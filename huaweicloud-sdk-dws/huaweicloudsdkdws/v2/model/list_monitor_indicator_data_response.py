@@ -30,7 +30,7 @@ class ListMonitorIndicatorDataResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param body: 
+        :param body: **参数解释**： 历史监控数据响应。 **取值范围**： 不涉及。
         :type body: list[:class:`huaweicloudsdkdws.v2.TrendQueryDataResp`]
         """
         
@@ -46,6 +46,8 @@ class ListMonitorIndicatorDataResponse(SdkResponse):
     def body(self):
         r"""Gets the body of this ListMonitorIndicatorDataResponse.
 
+        **参数解释**： 历史监控数据响应。 **取值范围**： 不涉及。
+
         :return: The body of this ListMonitorIndicatorDataResponse.
         :rtype: list[:class:`huaweicloudsdkdws.v2.TrendQueryDataResp`]
         """
@@ -54,6 +56,8 @@ class ListMonitorIndicatorDataResponse(SdkResponse):
     @body.setter
     def body(self, body):
         r"""Sets the body of this ListMonitorIndicatorDataResponse.
+
+        **参数解释**： 历史监控数据响应。 **取值范围**： 不涉及。
 
         :param body: The body of this ListMonitorIndicatorDataResponse.
         :type body: list[:class:`huaweicloudsdkdws.v2.TrendQueryDataResp`]

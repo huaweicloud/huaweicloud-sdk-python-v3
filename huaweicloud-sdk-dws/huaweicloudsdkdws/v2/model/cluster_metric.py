@@ -39,17 +39,17 @@ class ClusterMetric:
 
         The model defined in huaweicloud sdk
 
-        :param scope: 指标名称。
+        :param scope: **参数解释**： 指标名称。 **取值范围**： 不涉及。
         :type scope: str
-        :param fields: 指标表相关字段信息。
+        :param fields: **参数解释**： 指标表相关字段信息。 **取值范围**： 不涉及。
         :type fields: list[:class:`huaweicloudsdkdws.v2.SimpleFieldDto`]
-        :param metric_name: 作用域。
+        :param metric_name: **参数解释**： 作用域。 **取值范围**： 不涉及。
         :type metric_name: str
-        :param collect_rate: 采集速率。
+        :param collect_rate: **参数解释**： 采集速率。 **取值范围**： 不涉及。
         :type collect_rate: int
-        :param collect_range: 采集时间范围。
+        :param collect_range: **参数解释**： 采集时间范围。 **取值范围**： 不涉及。
         :type collect_range: list[str]
-        :param create_time: 创建时间。
+        :param create_time: **参数解释**： 创建时间。 **取值范围**： 不涉及。
         :type create_time: str
         """
         
@@ -80,7 +80,7 @@ class ClusterMetric:
     def scope(self):
         r"""Gets the scope of this ClusterMetric.
 
-        指标名称。
+        **参数解释**： 指标名称。 **取值范围**： 不涉及。
 
         :return: The scope of this ClusterMetric.
         :rtype: str
@@ -91,7 +91,7 @@ class ClusterMetric:
     def scope(self, scope):
         r"""Sets the scope of this ClusterMetric.
 
-        指标名称。
+        **参数解释**： 指标名称。 **取值范围**： 不涉及。
 
         :param scope: The scope of this ClusterMetric.
         :type scope: str
@@ -102,7 +102,7 @@ class ClusterMetric:
     def fields(self):
         r"""Gets the fields of this ClusterMetric.
 
-        指标表相关字段信息。
+        **参数解释**： 指标表相关字段信息。 **取值范围**： 不涉及。
 
         :return: The fields of this ClusterMetric.
         :rtype: list[:class:`huaweicloudsdkdws.v2.SimpleFieldDto`]
@@ -113,7 +113,7 @@ class ClusterMetric:
     def fields(self, fields):
         r"""Sets the fields of this ClusterMetric.
 
-        指标表相关字段信息。
+        **参数解释**： 指标表相关字段信息。 **取值范围**： 不涉及。
 
         :param fields: The fields of this ClusterMetric.
         :type fields: list[:class:`huaweicloudsdkdws.v2.SimpleFieldDto`]
@@ -124,7 +124,7 @@ class ClusterMetric:
     def metric_name(self):
         r"""Gets the metric_name of this ClusterMetric.
 
-        作用域。
+        **参数解释**： 作用域。 **取值范围**： 不涉及。
 
         :return: The metric_name of this ClusterMetric.
         :rtype: str
@@ -135,7 +135,7 @@ class ClusterMetric:
     def metric_name(self, metric_name):
         r"""Sets the metric_name of this ClusterMetric.
 
-        作用域。
+        **参数解释**： 作用域。 **取值范围**： 不涉及。
 
         :param metric_name: The metric_name of this ClusterMetric.
         :type metric_name: str
@@ -146,7 +146,7 @@ class ClusterMetric:
     def collect_rate(self):
         r"""Gets the collect_rate of this ClusterMetric.
 
-        采集速率。
+        **参数解释**： 采集速率。 **取值范围**： 不涉及。
 
         :return: The collect_rate of this ClusterMetric.
         :rtype: int
@@ -157,7 +157,7 @@ class ClusterMetric:
     def collect_rate(self, collect_rate):
         r"""Sets the collect_rate of this ClusterMetric.
 
-        采集速率。
+        **参数解释**： 采集速率。 **取值范围**： 不涉及。
 
         :param collect_rate: The collect_rate of this ClusterMetric.
         :type collect_rate: int
@@ -168,7 +168,7 @@ class ClusterMetric:
     def collect_range(self):
         r"""Gets the collect_range of this ClusterMetric.
 
-        采集时间范围。
+        **参数解释**： 采集时间范围。 **取值范围**： 不涉及。
 
         :return: The collect_range of this ClusterMetric.
         :rtype: list[str]
@@ -179,7 +179,7 @@ class ClusterMetric:
     def collect_range(self, collect_range):
         r"""Sets the collect_range of this ClusterMetric.
 
-        采集时间范围。
+        **参数解释**： 采集时间范围。 **取值范围**： 不涉及。
 
         :param collect_range: The collect_range of this ClusterMetric.
         :type collect_range: list[str]
@@ -190,7 +190,7 @@ class ClusterMetric:
     def create_time(self):
         r"""Gets the create_time of this ClusterMetric.
 
-        创建时间。
+        **参数解释**： 创建时间。 **取值范围**： 不涉及。
 
         :return: The create_time of this ClusterMetric.
         :rtype: str
@@ -201,7 +201,7 @@ class ClusterMetric:
     def create_time(self, create_time):
         r"""Sets the create_time of this ClusterMetric.
 
-        创建时间。
+        **参数解释**： 创建时间。 **取值范围**： 不涉及。
 
         :param create_time: The create_time of this ClusterMetric.
         :type create_time: str

@@ -39,17 +39,17 @@ class AlarmSubUpdateRequest:
 
         The model defined in huaweicloud sdk
 
-        :param name: 告警订阅名称
+        :param name: **参数解释**： 告警订阅名称。 **取值范围**： 不涉及。
         :type name: str
-        :param enable: 是否开启订阅
+        :param enable: **参数解释**： 是否开启订阅。 **取值范围**： 不涉及。
         :type enable: int
-        :param alarm_level: 告警级别
+        :param alarm_level: **参数解释**： 告警级别。 **取值范围**： 不涉及。
         :type alarm_level: str
-        :param notification_target: 消息主题地址
+        :param notification_target: **参数解释**： 消息主题地址。 **取值范围**： 不涉及。
         :type notification_target: str
-        :param notification_target_name: 消息主题名称
+        :param notification_target_name: **参数解释**： 消息主题名称。 **取值范围**： 不涉及。
         :type notification_target_name: str
-        :param notification_target_type: 消息主题类型，支持SMN
+        :param notification_target_type: **参数解释**： 消息主题类型，支持SMN。 **取值范围**： 不涉及。
         :type notification_target_type: str
         """
         
@@ -76,7 +76,7 @@ class AlarmSubUpdateRequest:
     def name(self):
         r"""Gets the name of this AlarmSubUpdateRequest.
 
-        告警订阅名称
+        **参数解释**： 告警订阅名称。 **取值范围**： 不涉及。
 
         :return: The name of this AlarmSubUpdateRequest.
         :rtype: str
@@ -87,7 +87,7 @@ class AlarmSubUpdateRequest:
     def name(self, name):
         r"""Sets the name of this AlarmSubUpdateRequest.
 
-        告警订阅名称
+        **参数解释**： 告警订阅名称。 **取值范围**： 不涉及。
 
         :param name: The name of this AlarmSubUpdateRequest.
         :type name: str
@@ -98,7 +98,7 @@ class AlarmSubUpdateRequest:
     def enable(self):
         r"""Gets the enable of this AlarmSubUpdateRequest.
 
-        是否开启订阅
+        **参数解释**： 是否开启订阅。 **取值范围**： 不涉及。
 
         :return: The enable of this AlarmSubUpdateRequest.
         :rtype: int
@@ -109,7 +109,7 @@ class AlarmSubUpdateRequest:
     def enable(self, enable):
         r"""Sets the enable of this AlarmSubUpdateRequest.
 
-        是否开启订阅
+        **参数解释**： 是否开启订阅。 **取值范围**： 不涉及。
 
         :param enable: The enable of this AlarmSubUpdateRequest.
         :type enable: int
@@ -120,7 +120,7 @@ class AlarmSubUpdateRequest:
     def alarm_level(self):
         r"""Gets the alarm_level of this AlarmSubUpdateRequest.
 
-        告警级别
+        **参数解释**： 告警级别。 **取值范围**： 不涉及。
 
         :return: The alarm_level of this AlarmSubUpdateRequest.
         :rtype: str
@@ -131,7 +131,7 @@ class AlarmSubUpdateRequest:
     def alarm_level(self, alarm_level):
         r"""Sets the alarm_level of this AlarmSubUpdateRequest.
 
-        告警级别
+        **参数解释**： 告警级别。 **取值范围**： 不涉及。
 
         :param alarm_level: The alarm_level of this AlarmSubUpdateRequest.
         :type alarm_level: str
@@ -142,7 +142,7 @@ class AlarmSubUpdateRequest:
     def notification_target(self):
         r"""Gets the notification_target of this AlarmSubUpdateRequest.
 
-        消息主题地址
+        **参数解释**： 消息主题地址。 **取值范围**： 不涉及。
 
         :return: The notification_target of this AlarmSubUpdateRequest.
         :rtype: str
@@ -153,7 +153,7 @@ class AlarmSubUpdateRequest:
     def notification_target(self, notification_target):
         r"""Sets the notification_target of this AlarmSubUpdateRequest.
 
-        消息主题地址
+        **参数解释**： 消息主题地址。 **取值范围**： 不涉及。
 
         :param notification_target: The notification_target of this AlarmSubUpdateRequest.
         :type notification_target: str
@@ -164,7 +164,7 @@ class AlarmSubUpdateRequest:
     def notification_target_name(self):
         r"""Gets the notification_target_name of this AlarmSubUpdateRequest.
 
-        消息主题名称
+        **参数解释**： 消息主题名称。 **取值范围**： 不涉及。
 
         :return: The notification_target_name of this AlarmSubUpdateRequest.
         :rtype: str
@@ -175,7 +175,7 @@ class AlarmSubUpdateRequest:
     def notification_target_name(self, notification_target_name):
         r"""Sets the notification_target_name of this AlarmSubUpdateRequest.
 
-        消息主题名称
+        **参数解释**： 消息主题名称。 **取值范围**： 不涉及。
 
         :param notification_target_name: The notification_target_name of this AlarmSubUpdateRequest.
         :type notification_target_name: str
@@ -186,7 +186,7 @@ class AlarmSubUpdateRequest:
     def notification_target_type(self):
         r"""Gets the notification_target_type of this AlarmSubUpdateRequest.
 
-        消息主题类型，支持SMN
+        **参数解释**： 消息主题类型，支持SMN。 **取值范围**： 不涉及。
 
         :return: The notification_target_type of this AlarmSubUpdateRequest.
         :rtype: str
@@ -197,7 +197,7 @@ class AlarmSubUpdateRequest:
     def notification_target_type(self, notification_target_type):
         r"""Sets the notification_target_type of this AlarmSubUpdateRequest.
 
-        消息主题类型，支持SMN
+        **参数解释**： 消息主题类型，支持SMN。 **取值范围**： 不涉及。
 
         :param notification_target_type: The notification_target_type of this AlarmSubUpdateRequest.
         :type notification_target_type: str

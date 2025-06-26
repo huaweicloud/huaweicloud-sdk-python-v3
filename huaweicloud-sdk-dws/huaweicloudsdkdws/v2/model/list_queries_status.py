@@ -37,15 +37,15 @@ class ListQueriesStatus:
 
         The model defined in huaweicloud sdk
 
-        :param average_query_waiting_time: 平均查询等待时间。
+        :param average_query_waiting_time: **参数解释**： 平均查询等待时间。 **取值范围**： 不涉及。
         :type average_query_waiting_time: float
-        :param average_time_consumption_of_queries: 平均查询耗时。
+        :param average_time_consumption_of_queries: **参数解释**： 平均查询耗时。 **取值范围**： 不涉及。
         :type average_time_consumption_of_queries: float
-        :param average_time_consumption_of_sessions: 平均会话耗时。
+        :param average_time_consumption_of_sessions: **参数解释**： 平均会话耗时。 **取值范围**： 不涉及。
         :type average_time_consumption_of_sessions: float
-        :param queries_count: 查询数量。
+        :param queries_count: **参数解释**： 查询数量。 **取值范围**： 不涉及。
         :type queries_count: int
-        :param session_count: 会话数量。
+        :param session_count: **参数解释**： 会话数量。 **取值范围**： 不涉及。
         :type session_count: int
         """
         
@@ -73,7 +73,7 @@ class ListQueriesStatus:
     def average_query_waiting_time(self):
         r"""Gets the average_query_waiting_time of this ListQueriesStatus.
 
-        平均查询等待时间。
+        **参数解释**： 平均查询等待时间。 **取值范围**： 不涉及。
 
         :return: The average_query_waiting_time of this ListQueriesStatus.
         :rtype: float
@@ -84,7 +84,7 @@ class ListQueriesStatus:
     def average_query_waiting_time(self, average_query_waiting_time):
         r"""Sets the average_query_waiting_time of this ListQueriesStatus.
 
-        平均查询等待时间。
+        **参数解释**： 平均查询等待时间。 **取值范围**： 不涉及。
 
         :param average_query_waiting_time: The average_query_waiting_time of this ListQueriesStatus.
         :type average_query_waiting_time: float
@@ -95,7 +95,7 @@ class ListQueriesStatus:
     def average_time_consumption_of_queries(self):
         r"""Gets the average_time_consumption_of_queries of this ListQueriesStatus.
 
-        平均查询耗时。
+        **参数解释**： 平均查询耗时。 **取值范围**： 不涉及。
 
         :return: The average_time_consumption_of_queries of this ListQueriesStatus.
         :rtype: float
@@ -106,7 +106,7 @@ class ListQueriesStatus:
     def average_time_consumption_of_queries(self, average_time_consumption_of_queries):
         r"""Sets the average_time_consumption_of_queries of this ListQueriesStatus.
 
-        平均查询耗时。
+        **参数解释**： 平均查询耗时。 **取值范围**： 不涉及。
 
         :param average_time_consumption_of_queries: The average_time_consumption_of_queries of this ListQueriesStatus.
         :type average_time_consumption_of_queries: float
@@ -117,7 +117,7 @@ class ListQueriesStatus:
     def average_time_consumption_of_sessions(self):
         r"""Gets the average_time_consumption_of_sessions of this ListQueriesStatus.
 
-        平均会话耗时。
+        **参数解释**： 平均会话耗时。 **取值范围**： 不涉及。
 
         :return: The average_time_consumption_of_sessions of this ListQueriesStatus.
         :rtype: float
@@ -128,7 +128,7 @@ class ListQueriesStatus:
     def average_time_consumption_of_sessions(self, average_time_consumption_of_sessions):
         r"""Sets the average_time_consumption_of_sessions of this ListQueriesStatus.
 
-        平均会话耗时。
+        **参数解释**： 平均会话耗时。 **取值范围**： 不涉及。
 
         :param average_time_consumption_of_sessions: The average_time_consumption_of_sessions of this ListQueriesStatus.
         :type average_time_consumption_of_sessions: float
@@ -139,7 +139,7 @@ class ListQueriesStatus:
     def queries_count(self):
         r"""Gets the queries_count of this ListQueriesStatus.
 
-        查询数量。
+        **参数解释**： 查询数量。 **取值范围**： 不涉及。
 
         :return: The queries_count of this ListQueriesStatus.
         :rtype: int
@@ -150,7 +150,7 @@ class ListQueriesStatus:
     def queries_count(self, queries_count):
         r"""Sets the queries_count of this ListQueriesStatus.
 
-        查询数量。
+        **参数解释**： 查询数量。 **取值范围**： 不涉及。
 
         :param queries_count: The queries_count of this ListQueriesStatus.
         :type queries_count: int
@@ -161,7 +161,7 @@ class ListQueriesStatus:
     def session_count(self):
         r"""Gets the session_count of this ListQueriesStatus.
 
-        会话数量。
+        **参数解释**： 会话数量。 **取值范围**： 不涉及。
 
         :return: The session_count of this ListQueriesStatus.
         :rtype: int
@@ -172,7 +172,7 @@ class ListQueriesStatus:
     def session_count(self, session_count):
         r"""Sets the session_count of this ListQueriesStatus.
 
-        会话数量。
+        **参数解释**： 会话数量。 **取值范围**： 不涉及。
 
         :param session_count: The session_count of this ListQueriesStatus.
         :type session_count: int

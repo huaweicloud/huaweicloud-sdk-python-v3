@@ -39,17 +39,17 @@ class ShowDatabaseAuthorityRequest:
 
         The model defined in huaweicloud sdk
 
-        :param cluster_id: cluster_id
+        :param cluster_id: **参数解释**： 集群ID。获取方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type cluster_id: str
-        :param type: 对象类型 [DATABASE | SCHEMA | TABLE | VIEW | COLUMN| FUNCTION|| SEQUENCE| NODEGROUP]
+        :param type: **参数解释**： 对象类型。 **约束限制**： 不涉及。 **取值范围**： DATABASE、SCHEMA、TABLE、VIEW、COLUMN、FUNCTION、SEQUENCE、NODEGROUP **默认取值**： 不涉及。
         :type type: str
-        :param name: 对象名称
+        :param name: **参数解释**： 对象名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type name: list[str]
-        :param database: 数据库名
+        :param database: **参数解释**： 数据库名。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type database: str
-        :param schema: 模式名，对象类型为TABLE、VIEW、COLUMN、FUNCTION、SEQUENCE时必选
+        :param schema: **参数解释**： 模式名，对象类型为TABLE、VIEW、COLUMN、FUNCTION、SEQUENCE时必选。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type schema: str
-        :param table: 表名，对象类型为COLUMN时必选
+        :param table: **参数解释**： 表名，对象类型为COLUMN时必选。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type table: str
         """
         
@@ -76,7 +76,7 @@ class ShowDatabaseAuthorityRequest:
     def cluster_id(self):
         r"""Gets the cluster_id of this ShowDatabaseAuthorityRequest.
 
-        cluster_id
+        **参数解释**： 集群ID。获取方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The cluster_id of this ShowDatabaseAuthorityRequest.
         :rtype: str
@@ -87,7 +87,7 @@ class ShowDatabaseAuthorityRequest:
     def cluster_id(self, cluster_id):
         r"""Sets the cluster_id of this ShowDatabaseAuthorityRequest.
 
-        cluster_id
+        **参数解释**： 集群ID。获取方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param cluster_id: The cluster_id of this ShowDatabaseAuthorityRequest.
         :type cluster_id: str
@@ -98,7 +98,7 @@ class ShowDatabaseAuthorityRequest:
     def type(self):
         r"""Gets the type of this ShowDatabaseAuthorityRequest.
 
-        对象类型 [DATABASE | SCHEMA | TABLE | VIEW | COLUMN| FUNCTION|| SEQUENCE| NODEGROUP]
+        **参数解释**： 对象类型。 **约束限制**： 不涉及。 **取值范围**： DATABASE、SCHEMA、TABLE、VIEW、COLUMN、FUNCTION、SEQUENCE、NODEGROUP **默认取值**： 不涉及。
 
         :return: The type of this ShowDatabaseAuthorityRequest.
         :rtype: str
@@ -109,7 +109,7 @@ class ShowDatabaseAuthorityRequest:
     def type(self, type):
         r"""Sets the type of this ShowDatabaseAuthorityRequest.
 
-        对象类型 [DATABASE | SCHEMA | TABLE | VIEW | COLUMN| FUNCTION|| SEQUENCE| NODEGROUP]
+        **参数解释**： 对象类型。 **约束限制**： 不涉及。 **取值范围**： DATABASE、SCHEMA、TABLE、VIEW、COLUMN、FUNCTION、SEQUENCE、NODEGROUP **默认取值**： 不涉及。
 
         :param type: The type of this ShowDatabaseAuthorityRequest.
         :type type: str
@@ -120,7 +120,7 @@ class ShowDatabaseAuthorityRequest:
     def name(self):
         r"""Gets the name of this ShowDatabaseAuthorityRequest.
 
-        对象名称
+        **参数解释**： 对象名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The name of this ShowDatabaseAuthorityRequest.
         :rtype: list[str]
@@ -131,7 +131,7 @@ class ShowDatabaseAuthorityRequest:
     def name(self, name):
         r"""Sets the name of this ShowDatabaseAuthorityRequest.
 
-        对象名称
+        **参数解释**： 对象名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param name: The name of this ShowDatabaseAuthorityRequest.
         :type name: list[str]
@@ -142,7 +142,7 @@ class ShowDatabaseAuthorityRequest:
     def database(self):
         r"""Gets the database of this ShowDatabaseAuthorityRequest.
 
-        数据库名
+        **参数解释**： 数据库名。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The database of this ShowDatabaseAuthorityRequest.
         :rtype: str
@@ -153,7 +153,7 @@ class ShowDatabaseAuthorityRequest:
     def database(self, database):
         r"""Sets the database of this ShowDatabaseAuthorityRequest.
 
-        数据库名
+        **参数解释**： 数据库名。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param database: The database of this ShowDatabaseAuthorityRequest.
         :type database: str
@@ -164,7 +164,7 @@ class ShowDatabaseAuthorityRequest:
     def schema(self):
         r"""Gets the schema of this ShowDatabaseAuthorityRequest.
 
-        模式名，对象类型为TABLE、VIEW、COLUMN、FUNCTION、SEQUENCE时必选
+        **参数解释**： 模式名，对象类型为TABLE、VIEW、COLUMN、FUNCTION、SEQUENCE时必选。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The schema of this ShowDatabaseAuthorityRequest.
         :rtype: str
@@ -175,7 +175,7 @@ class ShowDatabaseAuthorityRequest:
     def schema(self, schema):
         r"""Sets the schema of this ShowDatabaseAuthorityRequest.
 
-        模式名，对象类型为TABLE、VIEW、COLUMN、FUNCTION、SEQUENCE时必选
+        **参数解释**： 模式名，对象类型为TABLE、VIEW、COLUMN、FUNCTION、SEQUENCE时必选。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param schema: The schema of this ShowDatabaseAuthorityRequest.
         :type schema: str
@@ -186,7 +186,7 @@ class ShowDatabaseAuthorityRequest:
     def table(self):
         r"""Gets the table of this ShowDatabaseAuthorityRequest.
 
-        表名，对象类型为COLUMN时必选
+        **参数解释**： 表名，对象类型为COLUMN时必选。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The table of this ShowDatabaseAuthorityRequest.
         :rtype: str
@@ -197,7 +197,7 @@ class ShowDatabaseAuthorityRequest:
     def table(self, table):
         r"""Sets the table of this ShowDatabaseAuthorityRequest.
 
-        表名，对象类型为COLUMN时必选
+        **参数解释**： 表名，对象类型为COLUMN时必选。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param table: The table of this ShowDatabaseAuthorityRequest.
         :type table: str

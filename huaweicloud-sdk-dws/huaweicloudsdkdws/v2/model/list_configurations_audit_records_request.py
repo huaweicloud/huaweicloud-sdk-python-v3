@@ -39,17 +39,17 @@ class ListConfigurationsAuditRecordsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param cluster_id: **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
+        :param cluster_id: **参数解释**： 集群ID。获取方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
         :type cluster_id: str
-        :param action_time: 任务时间
+        :param action_time: **参数解释**： 任务时间。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type action_time: int
-        :param filter_by: 过滤配置信息
+        :param filter_by: **参数解释**： 过滤配置信息。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type filter_by: str
-        :param filter: 过滤条件
+        :param filter: **参数解释**： 过滤内容。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type filter: str
         :param limit: **参数解释**： 分页单页大小。 **约束限制**： 不涉及。 **取值范围**： 大于0。 **默认取值**： 10
         :type limit: int
-        :param offset: **参数解释**： 分页查询，偏移量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 0
+        :param offset: **参数解释**： 分页偏移量，从0开始，页数减1。 **约束限制**： 不涉及。 **取值范围**： 大于等于0。 **默认取值**： 0
         :type offset: int
         """
         
@@ -79,7 +79,7 @@ class ListConfigurationsAuditRecordsRequest:
     def cluster_id(self):
         r"""Gets the cluster_id of this ListConfigurationsAuditRecordsRequest.
 
-        **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
+        **参数解释**： 集群ID。获取方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
 
         :return: The cluster_id of this ListConfigurationsAuditRecordsRequest.
         :rtype: str
@@ -90,7 +90,7 @@ class ListConfigurationsAuditRecordsRequest:
     def cluster_id(self, cluster_id):
         r"""Sets the cluster_id of this ListConfigurationsAuditRecordsRequest.
 
-        **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
+        **参数解释**： 集群ID。获取方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
 
         :param cluster_id: The cluster_id of this ListConfigurationsAuditRecordsRequest.
         :type cluster_id: str
@@ -101,7 +101,7 @@ class ListConfigurationsAuditRecordsRequest:
     def action_time(self):
         r"""Gets the action_time of this ListConfigurationsAuditRecordsRequest.
 
-        任务时间
+        **参数解释**： 任务时间。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The action_time of this ListConfigurationsAuditRecordsRequest.
         :rtype: int
@@ -112,7 +112,7 @@ class ListConfigurationsAuditRecordsRequest:
     def action_time(self, action_time):
         r"""Sets the action_time of this ListConfigurationsAuditRecordsRequest.
 
-        任务时间
+        **参数解释**： 任务时间。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param action_time: The action_time of this ListConfigurationsAuditRecordsRequest.
         :type action_time: int
@@ -123,7 +123,7 @@ class ListConfigurationsAuditRecordsRequest:
     def filter_by(self):
         r"""Gets the filter_by of this ListConfigurationsAuditRecordsRequest.
 
-        过滤配置信息
+        **参数解释**： 过滤配置信息。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The filter_by of this ListConfigurationsAuditRecordsRequest.
         :rtype: str
@@ -134,7 +134,7 @@ class ListConfigurationsAuditRecordsRequest:
     def filter_by(self, filter_by):
         r"""Sets the filter_by of this ListConfigurationsAuditRecordsRequest.
 
-        过滤配置信息
+        **参数解释**： 过滤配置信息。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param filter_by: The filter_by of this ListConfigurationsAuditRecordsRequest.
         :type filter_by: str
@@ -145,7 +145,7 @@ class ListConfigurationsAuditRecordsRequest:
     def filter(self):
         r"""Gets the filter of this ListConfigurationsAuditRecordsRequest.
 
-        过滤条件
+        **参数解释**： 过滤内容。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The filter of this ListConfigurationsAuditRecordsRequest.
         :rtype: str
@@ -156,7 +156,7 @@ class ListConfigurationsAuditRecordsRequest:
     def filter(self, filter):
         r"""Sets the filter of this ListConfigurationsAuditRecordsRequest.
 
-        过滤条件
+        **参数解释**： 过滤内容。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param filter: The filter of this ListConfigurationsAuditRecordsRequest.
         :type filter: str
@@ -189,7 +189,7 @@ class ListConfigurationsAuditRecordsRequest:
     def offset(self):
         r"""Gets the offset of this ListConfigurationsAuditRecordsRequest.
 
-        **参数解释**： 分页查询，偏移量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 0
+        **参数解释**： 分页偏移量，从0开始，页数减1。 **约束限制**： 不涉及。 **取值范围**： 大于等于0。 **默认取值**： 0
 
         :return: The offset of this ListConfigurationsAuditRecordsRequest.
         :rtype: int
@@ -200,7 +200,7 @@ class ListConfigurationsAuditRecordsRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListConfigurationsAuditRecordsRequest.
 
-        **参数解释**： 分页查询，偏移量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 0
+        **参数解释**： 分页偏移量，从0开始，页数减1。 **约束限制**： 不涉及。 **取值范围**： 大于等于0。 **默认取值**： 0
 
         :param offset: The offset of this ListConfigurationsAuditRecordsRequest.
         :type offset: int

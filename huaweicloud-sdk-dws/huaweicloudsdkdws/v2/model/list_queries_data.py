@@ -31,7 +31,7 @@ class ListQueriesData:
 
         The model defined in huaweicloud sdk
 
-        :param queries: 查询数据列表。
+        :param queries: **参数解释**： 查询数据列表。 **取值范围**： 不涉及。
         :type queries: list[:class:`huaweicloudsdkdws.v2.ListQueriesDto`]
         :param status: 
         :type status: :class:`huaweicloudsdkdws.v2.ListQueriesStatus`
@@ -52,7 +52,7 @@ class ListQueriesData:
     def queries(self):
         r"""Gets the queries of this ListQueriesData.
 
-        查询数据列表。
+        **参数解释**： 查询数据列表。 **取值范围**： 不涉及。
 
         :return: The queries of this ListQueriesData.
         :rtype: list[:class:`huaweicloudsdkdws.v2.ListQueriesDto`]
@@ -63,7 +63,7 @@ class ListQueriesData:
     def queries(self, queries):
         r"""Sets the queries of this ListQueriesData.
 
-        查询数据列表。
+        **参数解释**： 查询数据列表。 **取值范围**： 不涉及。
 
         :param queries: The queries of this ListQueriesData.
         :type queries: list[:class:`huaweicloudsdkdws.v2.ListQueriesDto`]

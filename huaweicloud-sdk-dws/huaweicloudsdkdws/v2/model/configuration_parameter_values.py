@@ -29,7 +29,7 @@ class ConfigurationParameterValues:
 
         The model defined in huaweicloud sdk
 
-        :param configurations: 集群参数配置列表
+        :param configurations: **参数解释**： 集群参数配置列表。 **取值范围**： 不涉及。
         :type configurations: list[:class:`huaweicloudsdkdws.v2.ConfigurationParameterValue`]
         """
         
@@ -44,7 +44,7 @@ class ConfigurationParameterValues:
     def configurations(self):
         r"""Gets the configurations of this ConfigurationParameterValues.
 
-        集群参数配置列表
+        **参数解释**： 集群参数配置列表。 **取值范围**： 不涉及。
 
         :return: The configurations of this ConfigurationParameterValues.
         :rtype: list[:class:`huaweicloudsdkdws.v2.ConfigurationParameterValue`]
@@ -55,7 +55,7 @@ class ConfigurationParameterValues:
     def configurations(self, configurations):
         r"""Sets the configurations of this ConfigurationParameterValues.
 
-        集群参数配置列表
+        **参数解释**： 集群参数配置列表。 **取值范围**： 不涉及。
 
         :param configurations: The configurations of this ConfigurationParameterValues.
         :type configurations: list[:class:`huaweicloudsdkdws.v2.ConfigurationParameterValue`]

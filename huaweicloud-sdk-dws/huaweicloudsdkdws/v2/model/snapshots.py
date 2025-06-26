@@ -45,23 +45,23 @@ class Snapshots:
 
         The model defined in huaweicloud sdk
 
-        :param id: 快照ID。
+        :param id: **参数解释**： 快照ID。 **取值范围**： 不涉及。
         :type id: str
-        :param name: 快照名称。
+        :param name: **参数解释**： 快照名称。 **取值范围**： 不涉及。
         :type name: str
-        :param description: 快照描述。
+        :param description: **参数解释**： 快照描述。 **取值范围**： 不涉及。
         :type description: str
-        :param started: 快照创建的日期时间，格式为 ISO8601: YYYY-MM-DDThh:mm:ssZ。
+        :param started: **参数解释**： 快照创建的日期时间，格式为 ISO8601: YYYY-MM-DDThh:mm:ssZ。 **取值范围**： 不涉及。
         :type started: str
-        :param finished: 快照完成的日期时间，格式为 ISO8601: YYYY-MM-DDThh:mm:ssZ。
+        :param finished: **参数解释**： 快照完成的日期时间，格式为 ISO8601: YYYY-MM-DDThh:mm:ssZ。 **取值范围**： 不涉及。
         :type finished: str
-        :param size: 快照大小，单位 GB。
+        :param size: **参数解释**： 快照大小，单位 GB。 **取值范围**： 不涉及。
         :type size: float
-        :param status: 快照状态：  - CREATING：创建中。 - AVAILABLE：可用。 - UNAVAILABLE：不可用。 - FROZEN： 普通冻结。 - POLICE_FROZEN： 公安冻结。
+        :param status: **参数解释**： 快照状态。 **取值范围**： - CREATING：创建中。 - AVAILABLE：可用。 - UNAVAILABLE：不可用。 - FROZEN： 普通冻结。 - POLICE_FROZEN： 公安冻结。
         :type status: str
-        :param type: 快照创建类型
+        :param type: **参数解释**： 快照创建类型。 **取值范围**： 不涉及。
         :type type: str
-        :param cluster_id: 快照对应的集群ID
+        :param cluster_id: **参数解释**： 快照对应的集群ID。 **取值范围**： 不涉及。
         :type cluster_id: str
         """
         
@@ -92,7 +92,7 @@ class Snapshots:
     def id(self):
         r"""Gets the id of this Snapshots.
 
-        快照ID。
+        **参数解释**： 快照ID。 **取值范围**： 不涉及。
 
         :return: The id of this Snapshots.
         :rtype: str
@@ -103,7 +103,7 @@ class Snapshots:
     def id(self, id):
         r"""Sets the id of this Snapshots.
 
-        快照ID。
+        **参数解释**： 快照ID。 **取值范围**： 不涉及。
 
         :param id: The id of this Snapshots.
         :type id: str
@@ -114,7 +114,7 @@ class Snapshots:
     def name(self):
         r"""Gets the name of this Snapshots.
 
-        快照名称。
+        **参数解释**： 快照名称。 **取值范围**： 不涉及。
 
         :return: The name of this Snapshots.
         :rtype: str
@@ -125,7 +125,7 @@ class Snapshots:
     def name(self, name):
         r"""Sets the name of this Snapshots.
 
-        快照名称。
+        **参数解释**： 快照名称。 **取值范围**： 不涉及。
 
         :param name: The name of this Snapshots.
         :type name: str
@@ -136,7 +136,7 @@ class Snapshots:
     def description(self):
         r"""Gets the description of this Snapshots.
 
-        快照描述。
+        **参数解释**： 快照描述。 **取值范围**： 不涉及。
 
         :return: The description of this Snapshots.
         :rtype: str
@@ -147,7 +147,7 @@ class Snapshots:
     def description(self, description):
         r"""Sets the description of this Snapshots.
 
-        快照描述。
+        **参数解释**： 快照描述。 **取值范围**： 不涉及。
 
         :param description: The description of this Snapshots.
         :type description: str
@@ -158,7 +158,7 @@ class Snapshots:
     def started(self):
         r"""Gets the started of this Snapshots.
 
-        快照创建的日期时间，格式为 ISO8601: YYYY-MM-DDThh:mm:ssZ。
+        **参数解释**： 快照创建的日期时间，格式为 ISO8601: YYYY-MM-DDThh:mm:ssZ。 **取值范围**： 不涉及。
 
         :return: The started of this Snapshots.
         :rtype: str
@@ -169,7 +169,7 @@ class Snapshots:
     def started(self, started):
         r"""Sets the started of this Snapshots.
 
-        快照创建的日期时间，格式为 ISO8601: YYYY-MM-DDThh:mm:ssZ。
+        **参数解释**： 快照创建的日期时间，格式为 ISO8601: YYYY-MM-DDThh:mm:ssZ。 **取值范围**： 不涉及。
 
         :param started: The started of this Snapshots.
         :type started: str
@@ -180,7 +180,7 @@ class Snapshots:
     def finished(self):
         r"""Gets the finished of this Snapshots.
 
-        快照完成的日期时间，格式为 ISO8601: YYYY-MM-DDThh:mm:ssZ。
+        **参数解释**： 快照完成的日期时间，格式为 ISO8601: YYYY-MM-DDThh:mm:ssZ。 **取值范围**： 不涉及。
 
         :return: The finished of this Snapshots.
         :rtype: str
@@ -191,7 +191,7 @@ class Snapshots:
     def finished(self, finished):
         r"""Sets the finished of this Snapshots.
 
-        快照完成的日期时间，格式为 ISO8601: YYYY-MM-DDThh:mm:ssZ。
+        **参数解释**： 快照完成的日期时间，格式为 ISO8601: YYYY-MM-DDThh:mm:ssZ。 **取值范围**： 不涉及。
 
         :param finished: The finished of this Snapshots.
         :type finished: str
@@ -202,7 +202,7 @@ class Snapshots:
     def size(self):
         r"""Gets the size of this Snapshots.
 
-        快照大小，单位 GB。
+        **参数解释**： 快照大小，单位 GB。 **取值范围**： 不涉及。
 
         :return: The size of this Snapshots.
         :rtype: float
@@ -213,7 +213,7 @@ class Snapshots:
     def size(self, size):
         r"""Sets the size of this Snapshots.
 
-        快照大小，单位 GB。
+        **参数解释**： 快照大小，单位 GB。 **取值范围**： 不涉及。
 
         :param size: The size of this Snapshots.
         :type size: float
@@ -224,7 +224,7 @@ class Snapshots:
     def status(self):
         r"""Gets the status of this Snapshots.
 
-        快照状态：  - CREATING：创建中。 - AVAILABLE：可用。 - UNAVAILABLE：不可用。 - FROZEN： 普通冻结。 - POLICE_FROZEN： 公安冻结。
+        **参数解释**： 快照状态。 **取值范围**： - CREATING：创建中。 - AVAILABLE：可用。 - UNAVAILABLE：不可用。 - FROZEN： 普通冻结。 - POLICE_FROZEN： 公安冻结。
 
         :return: The status of this Snapshots.
         :rtype: str
@@ -235,7 +235,7 @@ class Snapshots:
     def status(self, status):
         r"""Sets the status of this Snapshots.
 
-        快照状态：  - CREATING：创建中。 - AVAILABLE：可用。 - UNAVAILABLE：不可用。 - FROZEN： 普通冻结。 - POLICE_FROZEN： 公安冻结。
+        **参数解释**： 快照状态。 **取值范围**： - CREATING：创建中。 - AVAILABLE：可用。 - UNAVAILABLE：不可用。 - FROZEN： 普通冻结。 - POLICE_FROZEN： 公安冻结。
 
         :param status: The status of this Snapshots.
         :type status: str
@@ -246,7 +246,7 @@ class Snapshots:
     def type(self):
         r"""Gets the type of this Snapshots.
 
-        快照创建类型
+        **参数解释**： 快照创建类型。 **取值范围**： 不涉及。
 
         :return: The type of this Snapshots.
         :rtype: str
@@ -257,7 +257,7 @@ class Snapshots:
     def type(self, type):
         r"""Sets the type of this Snapshots.
 
-        快照创建类型
+        **参数解释**： 快照创建类型。 **取值范围**： 不涉及。
 
         :param type: The type of this Snapshots.
         :type type: str
@@ -268,7 +268,7 @@ class Snapshots:
     def cluster_id(self):
         r"""Gets the cluster_id of this Snapshots.
 
-        快照对应的集群ID
+        **参数解释**： 快照对应的集群ID。 **取值范围**： 不涉及。
 
         :return: The cluster_id of this Snapshots.
         :rtype: str
@@ -279,7 +279,7 @@ class Snapshots:
     def cluster_id(self, cluster_id):
         r"""Sets the cluster_id of this Snapshots.
 
-        快照对应的集群ID
+        **参数解释**： 快照对应的集群ID。 **取值范围**： 不涉及。
 
         :param cluster_id: The cluster_id of this Snapshots.
         :type cluster_id: str

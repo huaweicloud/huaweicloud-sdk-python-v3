@@ -18,15 +18,17 @@ class UpdateVpnUserRequestBodyContent:
 
     openapi_types = {
         'description': 'str',
-        'user_group_id': 'str'
+        'user_group_id': 'str',
+        'static_ip': 'str'
     }
 
     attribute_map = {
         'description': 'description',
-        'user_group_id': 'user_group_id'
+        'user_group_id': 'user_group_id',
+        'static_ip': 'static_ip'
     }
 
-    def __init__(self, description=None, user_group_id=None):
+    def __init__(self, description=None, user_group_id=None, static_ip=None):
         r"""UpdateVpnUserRequestBodyContent
 
         The model defined in huaweicloud sdk
@@ -35,18 +37,23 @@ class UpdateVpnUserRequestBodyContent:
         :type description: str
         :param user_group_id: 所属用户组ID
         :type user_group_id: str
+        :param static_ip: 静态客户端IP地址，disable表示随机分配客户端IP
+        :type static_ip: str
         """
         
         
 
         self._description = None
         self._user_group_id = None
+        self._static_ip = None
         self.discriminator = None
 
         if description is not None:
             self.description = description
         if user_group_id is not None:
             self.user_group_id = user_group_id
+        if static_ip is not None:
+            self.static_ip = static_ip
 
     @property
     def description(self):
@@ -91,6 +98,28 @@ class UpdateVpnUserRequestBodyContent:
         :type user_group_id: str
         """
         self._user_group_id = user_group_id
+
+    @property
+    def static_ip(self):
+        r"""Gets the static_ip of this UpdateVpnUserRequestBodyContent.
+
+        静态客户端IP地址，disable表示随机分配客户端IP
+
+        :return: The static_ip of this UpdateVpnUserRequestBodyContent.
+        :rtype: str
+        """
+        return self._static_ip
+
+    @static_ip.setter
+    def static_ip(self, static_ip):
+        r"""Sets the static_ip of this UpdateVpnUserRequestBodyContent.
+
+        静态客户端IP地址，disable表示随机分配客户端IP
+
+        :param static_ip: The static_ip of this UpdateVpnUserRequestBodyContent.
+        :type static_ip: str
+        """
+        self._static_ip = static_ip
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -35,13 +35,13 @@ class WorkloadQueueUser:
 
         The model defined in huaweicloud sdk
 
-        :param user_name: 用户名
+        :param user_name: **参数解释**： 用户名。 **取值范围**： 不涉及。
         :type user_name: str
-        :param occupy_resource_list: 执行计划阶段
+        :param occupy_resource_list: **参数解释**： 执行计划阶段。 **取值范围**： 不涉及。
         :type occupy_resource_list: list[:class:`huaweicloudsdkdws.v2.OccupyResource`]
-        :param exec_result: 执行结果。
+        :param exec_result: **参数解释**： 执行结果。 **取值范围**： 不涉及。
         :type exec_result: int
-        :param exec_log: 执行日志。
+        :param exec_log: **参数解释**： 执行日志。 **取值范围**： 不涉及。
         :type exec_log: str
         """
         
@@ -64,7 +64,7 @@ class WorkloadQueueUser:
     def user_name(self):
         r"""Gets the user_name of this WorkloadQueueUser.
 
-        用户名
+        **参数解释**： 用户名。 **取值范围**： 不涉及。
 
         :return: The user_name of this WorkloadQueueUser.
         :rtype: str
@@ -75,7 +75,7 @@ class WorkloadQueueUser:
     def user_name(self, user_name):
         r"""Sets the user_name of this WorkloadQueueUser.
 
-        用户名
+        **参数解释**： 用户名。 **取值范围**： 不涉及。
 
         :param user_name: The user_name of this WorkloadQueueUser.
         :type user_name: str
@@ -86,7 +86,7 @@ class WorkloadQueueUser:
     def occupy_resource_list(self):
         r"""Gets the occupy_resource_list of this WorkloadQueueUser.
 
-        执行计划阶段
+        **参数解释**： 执行计划阶段。 **取值范围**： 不涉及。
 
         :return: The occupy_resource_list of this WorkloadQueueUser.
         :rtype: list[:class:`huaweicloudsdkdws.v2.OccupyResource`]
@@ -97,7 +97,7 @@ class WorkloadQueueUser:
     def occupy_resource_list(self, occupy_resource_list):
         r"""Sets the occupy_resource_list of this WorkloadQueueUser.
 
-        执行计划阶段
+        **参数解释**： 执行计划阶段。 **取值范围**： 不涉及。
 
         :param occupy_resource_list: The occupy_resource_list of this WorkloadQueueUser.
         :type occupy_resource_list: list[:class:`huaweicloudsdkdws.v2.OccupyResource`]
@@ -108,7 +108,7 @@ class WorkloadQueueUser:
     def exec_result(self):
         r"""Gets the exec_result of this WorkloadQueueUser.
 
-        执行结果。
+        **参数解释**： 执行结果。 **取值范围**： 不涉及。
 
         :return: The exec_result of this WorkloadQueueUser.
         :rtype: int
@@ -119,7 +119,7 @@ class WorkloadQueueUser:
     def exec_result(self, exec_result):
         r"""Sets the exec_result of this WorkloadQueueUser.
 
-        执行结果。
+        **参数解释**： 执行结果。 **取值范围**： 不涉及。
 
         :param exec_result: The exec_result of this WorkloadQueueUser.
         :type exec_result: int
@@ -130,7 +130,7 @@ class WorkloadQueueUser:
     def exec_log(self):
         r"""Gets the exec_log of this WorkloadQueueUser.
 
-        执行日志。
+        **参数解释**： 执行日志。 **取值范围**： 不涉及。
 
         :return: The exec_log of this WorkloadQueueUser.
         :rtype: str
@@ -141,7 +141,7 @@ class WorkloadQueueUser:
     def exec_log(self, exec_log):
         r"""Sets the exec_log of this WorkloadQueueUser.
 
-        执行日志。
+        **参数解释**： 执行日志。 **取值范围**： 不涉及。
 
         :param exec_log: The exec_log of this WorkloadQueueUser.
         :type exec_log: str

@@ -24,7 +24,7 @@ class ScenarioListSrlz:
         'labels': 'list[LabelBriefSrlz]',
         'gen_scenario': 'str',
         'road_scenario': 'str',
-        'simulator': 'SimulatorEnum',
+        'simulator': 'str',
         'version': 'ScenarioVersionEnum',
         'filename': 'str',
         'map_filename': 'str',
@@ -79,8 +79,8 @@ class ScenarioListSrlz:
         :type gen_scenario: str
         :param road_scenario: 
         :type road_scenario: str
-        :param simulator: 
-        :type simulator: :class:`huaweicloudsdkoctopus.v2.SimulatorEnum`
+        :param simulator: 仿真器名称,取值范围:A,B,C,D,E
+        :type simulator: str
         :param version: 
         :type version: :class:`huaweicloudsdkoctopus.v2.ScenarioVersionEnum`
         :param filename: 
@@ -280,8 +280,10 @@ class ScenarioListSrlz:
     def simulator(self):
         r"""Gets the simulator of this ScenarioListSrlz.
 
+        仿真器名称,取值范围:A,B,C,D,E
+
         :return: The simulator of this ScenarioListSrlz.
-        :rtype: :class:`huaweicloudsdkoctopus.v2.SimulatorEnum`
+        :rtype: str
         """
         return self._simulator
 
@@ -289,8 +291,10 @@ class ScenarioListSrlz:
     def simulator(self, simulator):
         r"""Sets the simulator of this ScenarioListSrlz.
 
+        仿真器名称,取值范围:A,B,C,D,E
+
         :param simulator: The simulator of this ScenarioListSrlz.
-        :type simulator: :class:`huaweicloudsdkoctopus.v2.SimulatorEnum`
+        :type simulator: str
         """
         self._simulator = simulator
 

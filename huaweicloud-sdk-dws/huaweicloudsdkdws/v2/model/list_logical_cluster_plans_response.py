@@ -30,7 +30,7 @@ class ListLogicalClusterPlansResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param plans: **参数解释**： 逻辑集群增删计划对象列表。 **取值范围**： 不涉及。
+        :param plans: **参数解释**： 逻辑集群增删计划对象列表。列表最大返回一般不超过20条。 **取值范围**： 不涉及。
         :type plans: list[:class:`huaweicloudsdkdws.v2.LogicalClusterPlanVo`]
         """
         
@@ -46,7 +46,7 @@ class ListLogicalClusterPlansResponse(SdkResponse):
     def plans(self):
         r"""Gets the plans of this ListLogicalClusterPlansResponse.
 
-        **参数解释**： 逻辑集群增删计划对象列表。 **取值范围**： 不涉及。
+        **参数解释**： 逻辑集群增删计划对象列表。列表最大返回一般不超过20条。 **取值范围**： 不涉及。
 
         :return: The plans of this ListLogicalClusterPlansResponse.
         :rtype: list[:class:`huaweicloudsdkdws.v2.LogicalClusterPlanVo`]
@@ -57,7 +57,7 @@ class ListLogicalClusterPlansResponse(SdkResponse):
     def plans(self, plans):
         r"""Sets the plans of this ListLogicalClusterPlansResponse.
 
-        **参数解释**： 逻辑集群增删计划对象列表。 **取值范围**： 不涉及。
+        **参数解释**： 逻辑集群增删计划对象列表。列表最大返回一般不超过20条。 **取值范围**： 不涉及。
 
         :param plans: The plans of this ListLogicalClusterPlansResponse.
         :type plans: list[:class:`huaweicloudsdkdws.v2.LogicalClusterPlanVo`]

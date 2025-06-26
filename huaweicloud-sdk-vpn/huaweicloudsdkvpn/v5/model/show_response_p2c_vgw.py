@@ -34,7 +34,8 @@ class ShowResponseP2cVgw:
         'frozen_effect': 'int',
         'version': 'str',
         'created_at': 'datetime',
-        'updated_at': 'datetime'
+        'updated_at': 'datetime',
+        'applied_at': 'datetime'
     }
 
     attribute_map = {
@@ -55,10 +56,11 @@ class ShowResponseP2cVgw:
         'frozen_effect': 'frozen_effect',
         'version': 'version',
         'created_at': 'created_at',
-        'updated_at': 'updated_at'
+        'updated_at': 'updated_at',
+        'applied_at': 'applied_at'
     }
 
-    def __init__(self, id=None, name=None, status=None, vpc_id=None, connect_subnet=None, flavor=None, availability_zone_ids=None, eip=None, max_connection_number=None, current_connection_number=None, enterprise_project_id=None, tags=None, order_id=None, admin_state_up=None, frozen_effect=None, version=None, created_at=None, updated_at=None):
+    def __init__(self, id=None, name=None, status=None, vpc_id=None, connect_subnet=None, flavor=None, availability_zone_ids=None, eip=None, max_connection_number=None, current_connection_number=None, enterprise_project_id=None, tags=None, order_id=None, admin_state_up=None, frozen_effect=None, version=None, created_at=None, updated_at=None, applied_at=None):
         r"""ShowResponseP2cVgw
 
         The model defined in huaweicloud sdk
@@ -99,6 +101,8 @@ class ShowResponseP2cVgw:
         :type created_at: datetime
         :param updated_at: 更新时间
         :type updated_at: datetime
+        :param applied_at: 生效时间
+        :type applied_at: datetime
         """
         
         
@@ -121,6 +125,7 @@ class ShowResponseP2cVgw:
         self._version = None
         self._created_at = None
         self._updated_at = None
+        self._applied_at = None
         self.discriminator = None
 
         if id is not None:
@@ -159,6 +164,8 @@ class ShowResponseP2cVgw:
             self.created_at = created_at
         if updated_at is not None:
             self.updated_at = updated_at
+        if applied_at is not None:
+            self.applied_at = applied_at
 
     @property
     def id(self):
@@ -551,6 +558,28 @@ class ShowResponseP2cVgw:
         :type updated_at: datetime
         """
         self._updated_at = updated_at
+
+    @property
+    def applied_at(self):
+        r"""Gets the applied_at of this ShowResponseP2cVgw.
+
+        生效时间
+
+        :return: The applied_at of this ShowResponseP2cVgw.
+        :rtype: datetime
+        """
+        return self._applied_at
+
+    @applied_at.setter
+    def applied_at(self, applied_at):
+        r"""Sets the applied_at of this ShowResponseP2cVgw.
+
+        生效时间
+
+        :param applied_at: The applied_at of this ShowResponseP2cVgw.
+        :type applied_at: datetime
+        """
+        self._applied_at = applied_at
 
     def to_dict(self):
         """Returns the model properties as a dict"""

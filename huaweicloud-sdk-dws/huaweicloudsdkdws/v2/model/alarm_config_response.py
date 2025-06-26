@@ -45,23 +45,23 @@ class AlarmConfigResponse:
 
         The model defined in huaweicloud sdk
 
-        :param id: 告警配置ID
+        :param id: **参数解释**： 告警配置ID。 **取值范围**： 不涉及。
         :type id: str
-        :param alarm_id: 告警ID
+        :param alarm_id: **参数解释**： 告警ID。 **取值范围**： 不涉及。
         :type alarm_id: str
-        :param alarm_name: 告警名称
+        :param alarm_name: **参数解释**： 告警名称。 **取值范围**： 不涉及。
         :type alarm_name: str
-        :param name_space: 所属服务，支持DWS,DLI,DGC,CloudTable,CDM,GES,CSS
+        :param name_space: **参数解释**： 所属服务。 **取值范围**： 不涉及。
         :type name_space: str
-        :param alarm_level: 告警级别
+        :param alarm_level: **参数解释**： 告警级别。 **取值范围**： 不涉及。
         :type alarm_level: str
-        :param is_user_visible: 用户是否可见
+        :param is_user_visible: **参数解释**： 用户是否可见。 **取值范围**： 不涉及。
         :type is_user_visible: str
-        :param is_converge: 是否覆盖
+        :param is_converge: **参数解释**： 是否覆盖。 **取值范围**： 不涉及。
         :type is_converge: str
-        :param converge_time: 覆盖时间
+        :param converge_time: **参数解释**： 覆盖时间。 **取值范围**： 不涉及。
         :type converge_time: int
-        :param is_maintain_visible: 运维是否可见
+        :param is_maintain_visible: **参数解释**： 运维是否可见。 **取值范围**： 不涉及。
         :type is_maintain_visible: str
         """
         
@@ -101,7 +101,7 @@ class AlarmConfigResponse:
     def id(self):
         r"""Gets the id of this AlarmConfigResponse.
 
-        告警配置ID
+        **参数解释**： 告警配置ID。 **取值范围**： 不涉及。
 
         :return: The id of this AlarmConfigResponse.
         :rtype: str
@@ -112,7 +112,7 @@ class AlarmConfigResponse:
     def id(self, id):
         r"""Sets the id of this AlarmConfigResponse.
 
-        告警配置ID
+        **参数解释**： 告警配置ID。 **取值范围**： 不涉及。
 
         :param id: The id of this AlarmConfigResponse.
         :type id: str
@@ -123,7 +123,7 @@ class AlarmConfigResponse:
     def alarm_id(self):
         r"""Gets the alarm_id of this AlarmConfigResponse.
 
-        告警ID
+        **参数解释**： 告警ID。 **取值范围**： 不涉及。
 
         :return: The alarm_id of this AlarmConfigResponse.
         :rtype: str
@@ -134,7 +134,7 @@ class AlarmConfigResponse:
     def alarm_id(self, alarm_id):
         r"""Sets the alarm_id of this AlarmConfigResponse.
 
-        告警ID
+        **参数解释**： 告警ID。 **取值范围**： 不涉及。
 
         :param alarm_id: The alarm_id of this AlarmConfigResponse.
         :type alarm_id: str
@@ -145,7 +145,7 @@ class AlarmConfigResponse:
     def alarm_name(self):
         r"""Gets the alarm_name of this AlarmConfigResponse.
 
-        告警名称
+        **参数解释**： 告警名称。 **取值范围**： 不涉及。
 
         :return: The alarm_name of this AlarmConfigResponse.
         :rtype: str
@@ -156,7 +156,7 @@ class AlarmConfigResponse:
     def alarm_name(self, alarm_name):
         r"""Sets the alarm_name of this AlarmConfigResponse.
 
-        告警名称
+        **参数解释**： 告警名称。 **取值范围**： 不涉及。
 
         :param alarm_name: The alarm_name of this AlarmConfigResponse.
         :type alarm_name: str
@@ -167,7 +167,7 @@ class AlarmConfigResponse:
     def name_space(self):
         r"""Gets the name_space of this AlarmConfigResponse.
 
-        所属服务，支持DWS,DLI,DGC,CloudTable,CDM,GES,CSS
+        **参数解释**： 所属服务。 **取值范围**： 不涉及。
 
         :return: The name_space of this AlarmConfigResponse.
         :rtype: str
@@ -178,7 +178,7 @@ class AlarmConfigResponse:
     def name_space(self, name_space):
         r"""Sets the name_space of this AlarmConfigResponse.
 
-        所属服务，支持DWS,DLI,DGC,CloudTable,CDM,GES,CSS
+        **参数解释**： 所属服务。 **取值范围**： 不涉及。
 
         :param name_space: The name_space of this AlarmConfigResponse.
         :type name_space: str
@@ -189,7 +189,7 @@ class AlarmConfigResponse:
     def alarm_level(self):
         r"""Gets the alarm_level of this AlarmConfigResponse.
 
-        告警级别
+        **参数解释**： 告警级别。 **取值范围**： 不涉及。
 
         :return: The alarm_level of this AlarmConfigResponse.
         :rtype: str
@@ -200,7 +200,7 @@ class AlarmConfigResponse:
     def alarm_level(self, alarm_level):
         r"""Sets the alarm_level of this AlarmConfigResponse.
 
-        告警级别
+        **参数解释**： 告警级别。 **取值范围**： 不涉及。
 
         :param alarm_level: The alarm_level of this AlarmConfigResponse.
         :type alarm_level: str
@@ -211,7 +211,7 @@ class AlarmConfigResponse:
     def is_user_visible(self):
         r"""Gets the is_user_visible of this AlarmConfigResponse.
 
-        用户是否可见
+        **参数解释**： 用户是否可见。 **取值范围**： 不涉及。
 
         :return: The is_user_visible of this AlarmConfigResponse.
         :rtype: str
@@ -222,7 +222,7 @@ class AlarmConfigResponse:
     def is_user_visible(self, is_user_visible):
         r"""Sets the is_user_visible of this AlarmConfigResponse.
 
-        用户是否可见
+        **参数解释**： 用户是否可见。 **取值范围**： 不涉及。
 
         :param is_user_visible: The is_user_visible of this AlarmConfigResponse.
         :type is_user_visible: str
@@ -233,7 +233,7 @@ class AlarmConfigResponse:
     def is_converge(self):
         r"""Gets the is_converge of this AlarmConfigResponse.
 
-        是否覆盖
+        **参数解释**： 是否覆盖。 **取值范围**： 不涉及。
 
         :return: The is_converge of this AlarmConfigResponse.
         :rtype: str
@@ -244,7 +244,7 @@ class AlarmConfigResponse:
     def is_converge(self, is_converge):
         r"""Sets the is_converge of this AlarmConfigResponse.
 
-        是否覆盖
+        **参数解释**： 是否覆盖。 **取值范围**： 不涉及。
 
         :param is_converge: The is_converge of this AlarmConfigResponse.
         :type is_converge: str
@@ -255,7 +255,7 @@ class AlarmConfigResponse:
     def converge_time(self):
         r"""Gets the converge_time of this AlarmConfigResponse.
 
-        覆盖时间
+        **参数解释**： 覆盖时间。 **取值范围**： 不涉及。
 
         :return: The converge_time of this AlarmConfigResponse.
         :rtype: int
@@ -266,7 +266,7 @@ class AlarmConfigResponse:
     def converge_time(self, converge_time):
         r"""Sets the converge_time of this AlarmConfigResponse.
 
-        覆盖时间
+        **参数解释**： 覆盖时间。 **取值范围**： 不涉及。
 
         :param converge_time: The converge_time of this AlarmConfigResponse.
         :type converge_time: int
@@ -277,7 +277,7 @@ class AlarmConfigResponse:
     def is_maintain_visible(self):
         r"""Gets the is_maintain_visible of this AlarmConfigResponse.
 
-        运维是否可见
+        **参数解释**： 运维是否可见。 **取值范围**： 不涉及。
 
         :return: The is_maintain_visible of this AlarmConfigResponse.
         :rtype: str
@@ -288,7 +288,7 @@ class AlarmConfigResponse:
     def is_maintain_visible(self, is_maintain_visible):
         r"""Sets the is_maintain_visible of this AlarmConfigResponse.
 
-        运维是否可见
+        **参数解释**： 运维是否可见。 **取值范围**： 不涉及。
 
         :param is_maintain_visible: The is_maintain_visible of this AlarmConfigResponse.
         :type is_maintain_visible: str

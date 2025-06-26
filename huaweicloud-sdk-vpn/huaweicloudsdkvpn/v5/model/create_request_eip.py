@@ -21,7 +21,8 @@ class CreateRequestEip:
         'type': 'str',
         'charge_mode': 'str',
         'bandwidth_size': 'int',
-        'bandwidth_name': 'str'
+        'bandwidth_name': 'str',
+        'bandwidth_id': 'str'
     }
 
     attribute_map = {
@@ -29,10 +30,11 @@ class CreateRequestEip:
         'type': 'type',
         'charge_mode': 'charge_mode',
         'bandwidth_size': 'bandwidth_size',
-        'bandwidth_name': 'bandwidth_name'
+        'bandwidth_name': 'bandwidth_name',
+        'bandwidth_id': 'bandwidth_id'
     }
 
-    def __init__(self, id=None, type=None, charge_mode=None, bandwidth_size=None, bandwidth_name=None):
+    def __init__(self, id=None, type=None, charge_mode=None, bandwidth_size=None, bandwidth_name=None, bandwidth_id=None):
         r"""CreateRequestEip
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class CreateRequestEip:
         :type bandwidth_size: int
         :param bandwidth_name: 带宽名称
         :type bandwidth_name: str
+        :param bandwidth_id: 功能说明：带宽ID，创建弹性IP弹性公网IP时可以指定已有的共享带宽  取值范围：共享（WHOLE类型）带宽ID  约束：指定带宽ID时，带宽的其他字段会被忽略；不指定ID时，size/name/charge_mode/share_type必选，用于创建绑定公网IP的独享带宽
+        :type bandwidth_id: str
         """
         
         
@@ -56,6 +60,7 @@ class CreateRequestEip:
         self._charge_mode = None
         self._bandwidth_size = None
         self._bandwidth_name = None
+        self._bandwidth_id = None
         self.discriminator = None
 
         if id is not None:
@@ -68,6 +73,8 @@ class CreateRequestEip:
             self.bandwidth_size = bandwidth_size
         if bandwidth_name is not None:
             self.bandwidth_name = bandwidth_name
+        if bandwidth_id is not None:
+            self.bandwidth_id = bandwidth_id
 
     @property
     def id(self):
@@ -178,6 +185,28 @@ class CreateRequestEip:
         :type bandwidth_name: str
         """
         self._bandwidth_name = bandwidth_name
+
+    @property
+    def bandwidth_id(self):
+        r"""Gets the bandwidth_id of this CreateRequestEip.
+
+        功能说明：带宽ID，创建弹性IP弹性公网IP时可以指定已有的共享带宽  取值范围：共享（WHOLE类型）带宽ID  约束：指定带宽ID时，带宽的其他字段会被忽略；不指定ID时，size/name/charge_mode/share_type必选，用于创建绑定公网IP的独享带宽
+
+        :return: The bandwidth_id of this CreateRequestEip.
+        :rtype: str
+        """
+        return self._bandwidth_id
+
+    @bandwidth_id.setter
+    def bandwidth_id(self, bandwidth_id):
+        r"""Sets the bandwidth_id of this CreateRequestEip.
+
+        功能说明：带宽ID，创建弹性IP弹性公网IP时可以指定已有的共享带宽  取值范围：共享（WHOLE类型）带宽ID  约束：指定带宽ID时，带宽的其他字段会被忽略；不指定ID时，size/name/charge_mode/share_type必选，用于创建绑定公网IP的独享带宽
+
+        :param bandwidth_id: The bandwidth_id of this CreateRequestEip.
+        :type bandwidth_id: str
+        """
+        self._bandwidth_id = bandwidth_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

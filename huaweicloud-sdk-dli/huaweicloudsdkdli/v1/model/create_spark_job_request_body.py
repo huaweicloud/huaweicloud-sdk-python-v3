@@ -41,6 +41,7 @@ class CreateSparkJobRequestBody:
         'auto_recovery': 'bool',
         'max_retry_times': 'int',
         'image': 'str',
+        'execution_agency_urn': 'str',
         'obs_bucket': 'str',
         'catalog_name': 'str'
     }
@@ -70,11 +71,12 @@ class CreateSparkJobRequestBody:
         'auto_recovery': 'auto_recovery',
         'max_retry_times': 'max_retry_times',
         'image': 'image',
+        'execution_agency_urn': 'execution_agency_urn',
         'obs_bucket': 'obs_bucket',
         'catalog_name': 'catalog_name'
     }
 
-    def __init__(self, file=None, class_name=None, cluster_name=None, args=None, sc_type=None, jars=None, py_files=None, files=None, modules=None, resources=None, groups=None, conf=None, name=None, driver_memory=None, driver_cores=None, executor_memory=None, executor_cores=None, num_executors=None, feature=None, spark_version=None, queue=None, auto_recovery=None, max_retry_times=None, image=None, obs_bucket=None, catalog_name=None):
+    def __init__(self, file=None, class_name=None, cluster_name=None, args=None, sc_type=None, jars=None, py_files=None, files=None, modules=None, resources=None, groups=None, conf=None, name=None, driver_memory=None, driver_cores=None, executor_memory=None, executor_cores=None, num_executors=None, feature=None, spark_version=None, queue=None, auto_recovery=None, max_retry_times=None, image=None, execution_agency_urn=None, obs_bucket=None, catalog_name=None):
         r"""CreateSparkJobRequestBody
 
         The model defined in huaweicloud sdk
@@ -127,6 +129,8 @@ class CreateSparkJobRequestBody:
         :type max_retry_times: int
         :param image: 参数解释:   自定义镜像。格式为：组织名/镜像名:镜像版本。当用户设置“feature”为“custom”时，该参数生效。用户可通过与“feature”参数配合使用，指定作业运行使用自定义的Spark镜像。关于如何使用自定义镜像，请参考《数据湖探索用户指南》 示例: ceshi/spark_general-x86_64:3.3.1-2.3.7.1720240718867424736954752.tensorflow  约束限制:  无 取值范围: 无 默认取值: 无
         :type image: str
+        :param execution_agency_urn: 参数解释:   授权给DLI的委托名。Spark3.3.1版本时支持配置该参数。 示例: agency 约束限制:  无 取值范围: 无 默认取值: 无
+        :type execution_agency_urn: str
         :param obs_bucket: 参数解释:   保存Spark作业的obs桶，需要保存作业时配置该参数 示例: rain3 约束限制:  无 取值范围: 无 默认取值: 无
         :type obs_bucket: str
         :param catalog_name: 访问元数据时，需要将该参数配置为dli。
@@ -159,6 +163,7 @@ class CreateSparkJobRequestBody:
         self._auto_recovery = None
         self._max_retry_times = None
         self._image = None
+        self._execution_agency_urn = None
         self._obs_bucket = None
         self._catalog_name = None
         self.discriminator = None
@@ -209,6 +214,8 @@ class CreateSparkJobRequestBody:
             self.max_retry_times = max_retry_times
         if image is not None:
             self.image = image
+        if execution_agency_urn is not None:
+            self.execution_agency_urn = execution_agency_urn
         if obs_bucket is not None:
             self.obs_bucket = obs_bucket
         if catalog_name is not None:
@@ -741,6 +748,28 @@ class CreateSparkJobRequestBody:
         :type image: str
         """
         self._image = image
+
+    @property
+    def execution_agency_urn(self):
+        r"""Gets the execution_agency_urn of this CreateSparkJobRequestBody.
+
+        参数解释:   授权给DLI的委托名。Spark3.3.1版本时支持配置该参数。 示例: agency 约束限制:  无 取值范围: 无 默认取值: 无
+
+        :return: The execution_agency_urn of this CreateSparkJobRequestBody.
+        :rtype: str
+        """
+        return self._execution_agency_urn
+
+    @execution_agency_urn.setter
+    def execution_agency_urn(self, execution_agency_urn):
+        r"""Sets the execution_agency_urn of this CreateSparkJobRequestBody.
+
+        参数解释:   授权给DLI的委托名。Spark3.3.1版本时支持配置该参数。 示例: agency 约束限制:  无 取值范围: 无 默认取值: 无
+
+        :param execution_agency_urn: The execution_agency_urn of this CreateSparkJobRequestBody.
+        :type execution_agency_urn: str
+        """
+        self._execution_agency_urn = execution_agency_urn
 
     @property
     def obs_bucket(self):

@@ -35,13 +35,13 @@ class PlanLog:
 
         The model defined in huaweicloud sdk
 
-        :param exec_time: 执行时间
+        :param exec_time: **参数解释**： 执行时间。 **取值范围**： 不涉及。
         :type exec_time: str
-        :param stage_info: 执行计划阶段
+        :param stage_info: **参数解释**： 执行计划阶段。 **取值范围**： 不涉及。
         :type stage_info: str
-        :param exec_result: 执行结果。
+        :param exec_result: **参数解释**： 执行结果。 **取值范围**： 不涉及。
         :type exec_result: int
-        :param exec_log: 执行日志。
+        :param exec_log: **参数解释**： 执行日志。 **取值范围**： 不涉及。
         :type exec_log: str
         """
         
@@ -62,7 +62,7 @@ class PlanLog:
     def exec_time(self):
         r"""Gets the exec_time of this PlanLog.
 
-        执行时间
+        **参数解释**： 执行时间。 **取值范围**： 不涉及。
 
         :return: The exec_time of this PlanLog.
         :rtype: str
@@ -73,7 +73,7 @@ class PlanLog:
     def exec_time(self, exec_time):
         r"""Sets the exec_time of this PlanLog.
 
-        执行时间
+        **参数解释**： 执行时间。 **取值范围**： 不涉及。
 
         :param exec_time: The exec_time of this PlanLog.
         :type exec_time: str
@@ -84,7 +84,7 @@ class PlanLog:
     def stage_info(self):
         r"""Gets the stage_info of this PlanLog.
 
-        执行计划阶段
+        **参数解释**： 执行计划阶段。 **取值范围**： 不涉及。
 
         :return: The stage_info of this PlanLog.
         :rtype: str
@@ -95,7 +95,7 @@ class PlanLog:
     def stage_info(self, stage_info):
         r"""Sets the stage_info of this PlanLog.
 
-        执行计划阶段
+        **参数解释**： 执行计划阶段。 **取值范围**： 不涉及。
 
         :param stage_info: The stage_info of this PlanLog.
         :type stage_info: str
@@ -106,7 +106,7 @@ class PlanLog:
     def exec_result(self):
         r"""Gets the exec_result of this PlanLog.
 
-        执行结果。
+        **参数解释**： 执行结果。 **取值范围**： 不涉及。
 
         :return: The exec_result of this PlanLog.
         :rtype: int
@@ -117,7 +117,7 @@ class PlanLog:
     def exec_result(self, exec_result):
         r"""Sets the exec_result of this PlanLog.
 
-        执行结果。
+        **参数解释**： 执行结果。 **取值范围**： 不涉及。
 
         :param exec_result: The exec_result of this PlanLog.
         :type exec_result: int
@@ -128,7 +128,7 @@ class PlanLog:
     def exec_log(self):
         r"""Gets the exec_log of this PlanLog.
 
-        执行日志。
+        **参数解释**： 执行日志。 **取值范围**： 不涉及。
 
         :return: The exec_log of this PlanLog.
         :rtype: str
@@ -139,7 +139,7 @@ class PlanLog:
     def exec_log(self, exec_log):
         r"""Sets the exec_log of this PlanLog.
 
-        执行日志。
+        **参数解释**： 执行日志。 **取值范围**： 不涉及。
 
         :param exec_log: The exec_log of this PlanLog.
         :type exec_log: str

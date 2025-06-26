@@ -47,21 +47,21 @@ class CrossRegionSnapshotConfig:
 
         :param cluster_id: **参数解释**： 集群ID。 **取值范围**： 36位UUID。
         :type cluster_id: str
-        :param cluster_name: 集群名称
+        :param cluster_name: **参数解释**： 集群名称。 **取值范围**： 不涉及。
         :type cluster_name: str
-        :param source_region: 源区域
+        :param source_region: **参数解释**： 源区域。 **取值范围**： 不涉及。
         :type source_region: str
-        :param source_project_id: 源项目ID
+        :param source_project_id: **参数解释**： 源项目ID。 **取值范围**： 不涉及。
         :type source_project_id: str
-        :param destination_region: 目的区域
+        :param destination_region: **参数解释**： 目的区域。 **取值范围**： 不涉及。
         :type destination_region: str
-        :param destination_project_id: 目的项目ID
+        :param destination_project_id: **参数解释**： 目的项目ID。 **取值范围**： 不涉及。
         :type destination_project_id: str
-        :param status: 状态
+        :param status: **参数解释**： 状态。 **取值范围**： 不涉及。
         :type status: bool
-        :param back_keep_day: 保存时间
+        :param back_keep_day: **参数解释**： 保存时间。 **取值范围**： 不涉及。
         :type back_keep_day: int
-        :param total_size: 总大小
+        :param total_size: **参数解释**： 总大小。 **取值范围**： 大于等于0。
         :type total_size: int
         """
         
@@ -123,7 +123,7 @@ class CrossRegionSnapshotConfig:
     def cluster_name(self):
         r"""Gets the cluster_name of this CrossRegionSnapshotConfig.
 
-        集群名称
+        **参数解释**： 集群名称。 **取值范围**： 不涉及。
 
         :return: The cluster_name of this CrossRegionSnapshotConfig.
         :rtype: str
@@ -134,7 +134,7 @@ class CrossRegionSnapshotConfig:
     def cluster_name(self, cluster_name):
         r"""Sets the cluster_name of this CrossRegionSnapshotConfig.
 
-        集群名称
+        **参数解释**： 集群名称。 **取值范围**： 不涉及。
 
         :param cluster_name: The cluster_name of this CrossRegionSnapshotConfig.
         :type cluster_name: str
@@ -145,7 +145,7 @@ class CrossRegionSnapshotConfig:
     def source_region(self):
         r"""Gets the source_region of this CrossRegionSnapshotConfig.
 
-        源区域
+        **参数解释**： 源区域。 **取值范围**： 不涉及。
 
         :return: The source_region of this CrossRegionSnapshotConfig.
         :rtype: str
@@ -156,7 +156,7 @@ class CrossRegionSnapshotConfig:
     def source_region(self, source_region):
         r"""Sets the source_region of this CrossRegionSnapshotConfig.
 
-        源区域
+        **参数解释**： 源区域。 **取值范围**： 不涉及。
 
         :param source_region: The source_region of this CrossRegionSnapshotConfig.
         :type source_region: str
@@ -167,7 +167,7 @@ class CrossRegionSnapshotConfig:
     def source_project_id(self):
         r"""Gets the source_project_id of this CrossRegionSnapshotConfig.
 
-        源项目ID
+        **参数解释**： 源项目ID。 **取值范围**： 不涉及。
 
         :return: The source_project_id of this CrossRegionSnapshotConfig.
         :rtype: str
@@ -178,7 +178,7 @@ class CrossRegionSnapshotConfig:
     def source_project_id(self, source_project_id):
         r"""Sets the source_project_id of this CrossRegionSnapshotConfig.
 
-        源项目ID
+        **参数解释**： 源项目ID。 **取值范围**： 不涉及。
 
         :param source_project_id: The source_project_id of this CrossRegionSnapshotConfig.
         :type source_project_id: str
@@ -189,7 +189,7 @@ class CrossRegionSnapshotConfig:
     def destination_region(self):
         r"""Gets the destination_region of this CrossRegionSnapshotConfig.
 
-        目的区域
+        **参数解释**： 目的区域。 **取值范围**： 不涉及。
 
         :return: The destination_region of this CrossRegionSnapshotConfig.
         :rtype: str
@@ -200,7 +200,7 @@ class CrossRegionSnapshotConfig:
     def destination_region(self, destination_region):
         r"""Sets the destination_region of this CrossRegionSnapshotConfig.
 
-        目的区域
+        **参数解释**： 目的区域。 **取值范围**： 不涉及。
 
         :param destination_region: The destination_region of this CrossRegionSnapshotConfig.
         :type destination_region: str
@@ -211,7 +211,7 @@ class CrossRegionSnapshotConfig:
     def destination_project_id(self):
         r"""Gets the destination_project_id of this CrossRegionSnapshotConfig.
 
-        目的项目ID
+        **参数解释**： 目的项目ID。 **取值范围**： 不涉及。
 
         :return: The destination_project_id of this CrossRegionSnapshotConfig.
         :rtype: str
@@ -222,7 +222,7 @@ class CrossRegionSnapshotConfig:
     def destination_project_id(self, destination_project_id):
         r"""Sets the destination_project_id of this CrossRegionSnapshotConfig.
 
-        目的项目ID
+        **参数解释**： 目的项目ID。 **取值范围**： 不涉及。
 
         :param destination_project_id: The destination_project_id of this CrossRegionSnapshotConfig.
         :type destination_project_id: str
@@ -233,7 +233,7 @@ class CrossRegionSnapshotConfig:
     def status(self):
         r"""Gets the status of this CrossRegionSnapshotConfig.
 
-        状态
+        **参数解释**： 状态。 **取值范围**： 不涉及。
 
         :return: The status of this CrossRegionSnapshotConfig.
         :rtype: bool
@@ -244,7 +244,7 @@ class CrossRegionSnapshotConfig:
     def status(self, status):
         r"""Sets the status of this CrossRegionSnapshotConfig.
 
-        状态
+        **参数解释**： 状态。 **取值范围**： 不涉及。
 
         :param status: The status of this CrossRegionSnapshotConfig.
         :type status: bool
@@ -255,7 +255,7 @@ class CrossRegionSnapshotConfig:
     def back_keep_day(self):
         r"""Gets the back_keep_day of this CrossRegionSnapshotConfig.
 
-        保存时间
+        **参数解释**： 保存时间。 **取值范围**： 不涉及。
 
         :return: The back_keep_day of this CrossRegionSnapshotConfig.
         :rtype: int
@@ -266,7 +266,7 @@ class CrossRegionSnapshotConfig:
     def back_keep_day(self, back_keep_day):
         r"""Sets the back_keep_day of this CrossRegionSnapshotConfig.
 
-        保存时间
+        **参数解释**： 保存时间。 **取值范围**： 不涉及。
 
         :param back_keep_day: The back_keep_day of this CrossRegionSnapshotConfig.
         :type back_keep_day: int
@@ -277,7 +277,7 @@ class CrossRegionSnapshotConfig:
     def total_size(self):
         r"""Gets the total_size of this CrossRegionSnapshotConfig.
 
-        总大小
+        **参数解释**： 总大小。 **取值范围**： 大于等于0。
 
         :return: The total_size of this CrossRegionSnapshotConfig.
         :rtype: int
@@ -288,7 +288,7 @@ class CrossRegionSnapshotConfig:
     def total_size(self, total_size):
         r"""Sets the total_size of this CrossRegionSnapshotConfig.
 
-        总大小
+        **参数解释**： 总大小。 **取值范围**： 大于等于0。
 
         :param total_size: The total_size of this CrossRegionSnapshotConfig.
         :type total_size: int

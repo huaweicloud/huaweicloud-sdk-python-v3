@@ -33,11 +33,11 @@ class FineGrainedSnapshotDetail:
 
         The model defined in huaweicloud sdk
 
-        :param database: 数据库。
+        :param database: **参数解释**： 数据库。 **取值范围**： 不涉及。
         :type database: str
-        :param schema_list: 模式列表。
+        :param schema_list: **参数解释**： 模式列表。 **取值范围**： 不涉及。
         :type schema_list: list[str]
-        :param table_list: 表集合。
+        :param table_list: **参数解释**： 表集合。 **取值范围**： 不涉及。
         :type table_list: list[str]
         """
         
@@ -59,7 +59,7 @@ class FineGrainedSnapshotDetail:
     def database(self):
         r"""Gets the database of this FineGrainedSnapshotDetail.
 
-        数据库。
+        **参数解释**： 数据库。 **取值范围**： 不涉及。
 
         :return: The database of this FineGrainedSnapshotDetail.
         :rtype: str
@@ -70,7 +70,7 @@ class FineGrainedSnapshotDetail:
     def database(self, database):
         r"""Sets the database of this FineGrainedSnapshotDetail.
 
-        数据库。
+        **参数解释**： 数据库。 **取值范围**： 不涉及。
 
         :param database: The database of this FineGrainedSnapshotDetail.
         :type database: str
@@ -81,7 +81,7 @@ class FineGrainedSnapshotDetail:
     def schema_list(self):
         r"""Gets the schema_list of this FineGrainedSnapshotDetail.
 
-        模式列表。
+        **参数解释**： 模式列表。 **取值范围**： 不涉及。
 
         :return: The schema_list of this FineGrainedSnapshotDetail.
         :rtype: list[str]
@@ -92,7 +92,7 @@ class FineGrainedSnapshotDetail:
     def schema_list(self, schema_list):
         r"""Sets the schema_list of this FineGrainedSnapshotDetail.
 
-        模式列表。
+        **参数解释**： 模式列表。 **取值范围**： 不涉及。
 
         :param schema_list: The schema_list of this FineGrainedSnapshotDetail.
         :type schema_list: list[str]
@@ -103,7 +103,7 @@ class FineGrainedSnapshotDetail:
     def table_list(self):
         r"""Gets the table_list of this FineGrainedSnapshotDetail.
 
-        表集合。
+        **参数解释**： 表集合。 **取值范围**： 不涉及。
 
         :return: The table_list of this FineGrainedSnapshotDetail.
         :rtype: list[str]
@@ -114,7 +114,7 @@ class FineGrainedSnapshotDetail:
     def table_list(self, table_list):
         r"""Sets the table_list of this FineGrainedSnapshotDetail.
 
-        表集合。
+        **参数解释**： 表集合。 **取值范围**： 不涉及。
 
         :param table_list: The table_list of this FineGrainedSnapshotDetail.
         :type table_list: list[str]

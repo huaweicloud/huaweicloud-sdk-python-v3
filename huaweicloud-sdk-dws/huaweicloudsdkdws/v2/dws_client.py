@@ -34,9 +34,9 @@ class DwsClient(Client):
         return client_builder
 
     def add_queue_user_list(self, request):
-        r"""添加工作负载队列的绑定用户
+        r"""添加资源池的绑定用户
 
-        添加工作负载队列的绑定用户。
+        添加资源池的绑定用户。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -168,9 +168,9 @@ class DwsClient(Client):
         return http_info
 
     def add_workload_plan_stage(self, request):
-        r"""添加工作负载计划阶段
+        r"""添加资源管理计划阶段
 
-        添加工作负载计划阶段。
+        添加资源管理计划阶段。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -237,9 +237,9 @@ class DwsClient(Client):
         return http_info
 
     def add_workload_queue(self, request):
-        r"""添加工作负载队列
+        r"""添加资源池
 
-        添加工作负载队列。
+        添加资源池。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -347,13 +347,15 @@ class DwsClient(Client):
         form_params = {}
 
         body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
         response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
@@ -779,7 +781,9 @@ class DwsClient(Client):
     def cancel_readonly_cluster(self, request):
         r"""解除只读
 
-        当集群进入只读状态时，无法进行数据库相关操作，用户可以在管理控制台解除集群的只读状态。触发只读状态可能是由于磁盘使用率过高，因此需要对集群数据进行清理或扩容。 - 解除只读支持1.7.2及以上版本。
+        当集群进入只读状态时，无法进行数据库相关操作，用户可以在管理控制台解除集群的只读状态。触发只读状态可能是由于磁盘使用率过高，因此需要对集群数据进行清理或扩容。 
+         **约束限制**：
+         解除只读支持1.7.2及以上版本。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1116,7 +1120,7 @@ class DwsClient(Client):
     def check_grow_cluster(self, request):
         r"""集群扩容前检查
 
-        此接口用于集群扩容前检查，提前识别子网不足、权限不足等问题导致的扩容失败。
+        集群扩容前检查，提前识别子网不足、权限不足等问题导致的扩容失败。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2050,7 +2054,7 @@ class DwsClient(Client):
     def create_logical_cluster_plan(self, request):
         r"""添加逻辑集群定时增删计划
 
-        此接口用于添加逻辑集群定时增删计划。
+        添加逻辑集群定时增删计划。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2247,9 +2251,9 @@ class DwsClient(Client):
         return http_info
 
     def create_workload_plan(self, request):
-        r"""添加工作负载计划
+        r"""添加资源管理计划
 
-        添加工作负载计划。
+        添加资源管理计划。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2381,7 +2385,7 @@ class DwsClient(Client):
     def delete_cluster(self, request):
         r"""删除集群
 
-        此接口用于删除集群。集群删除后将释放此集群的所有资源，包括客户数据。为了安全起见，请在删除集群前为这个集群创建快照。
+        删除集群。集群删除后将释放此集群的所有资源，包括客户数据。为了安全起见，请在删除集群前为这个集群创建快照。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2515,7 +2519,7 @@ class DwsClient(Client):
     def delete_cluster_nodes(self, request):
         r"""删除空闲节点
 
-        此接口用于删除空闲节点。
+        删除空闲节点。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2786,7 +2790,7 @@ class DwsClient(Client):
     def delete_dws_cluster(self, request):
         r"""删除集群V2
 
-        此接口用于删除集群。集群删除后将释放此集群的所有资源，包括客户数据。为了安全起见，请在删除集群前为这个集群创建快照。
+        删除集群。集群删除后将释放此集群的所有资源，包括客户数据。为了安全起见，请在删除集群前为这个集群创建快照。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2920,7 +2924,7 @@ class DwsClient(Client):
     def delete_logical_cluster(self, request):
         r"""删除逻辑集群
 
-        此接口用于删除逻辑集群。
+        删除逻辑集群。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2987,7 +2991,7 @@ class DwsClient(Client):
     def delete_logical_cluster_plan(self, request):
         r"""删除逻辑集群定时增删计划
 
-        此接口用于删除逻辑集群定时增删计划。
+        删除逻辑集群定时增删计划。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3052,9 +3056,9 @@ class DwsClient(Client):
         return http_info
 
     def delete_queue_user_list(self, request):
-        r"""删除工作负载队列的绑定用户
+        r"""删除资源池的绑定用户
 
-        删除工作负载队列的绑定用户。
+        删除资源池的绑定用户。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3318,9 +3322,9 @@ class DwsClient(Client):
         return http_info
 
     def delete_workload_plan(self, request):
-        r"""删除工作负载计划
+        r"""删除资源管理计划
 
-        删除工作负载计划。
+        删除资源管理计划。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3385,9 +3389,9 @@ class DwsClient(Client):
         return http_info
 
     def delete_workload_plan_stage(self, request):
-        r"""删除工作负载计划阶段
+        r"""删除资源管理计划阶段
 
-        删除工作负载计划删除工作负载计划阶段。
+        删除资源管理计划阶段。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3495,6 +3499,73 @@ class DwsClient(Client):
             query_params.append(('logical_cluster_name', local_var_params['logical_cluster_name']))
         if 'workload_queue_name' in local_var_params:
             query_params.append(('workload_queue_name', local_var_params['workload_queue_name']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_workload_rule(self, request):
+        r"""删除异常规则
+
+        删除异常规则。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteWorkloadRule
+        :type request: :class:`huaweicloudsdkdws.v2.DeleteWorkloadRuleRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.DeleteWorkloadRuleResponse`
+        """
+        http_info = self._delete_workload_rule_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_workload_rule_invoker(self, request):
+        http_info = self._delete_workload_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_workload_rule_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/clusters/{cluster_id}/workload/rules/{rule_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteWorkloadRuleResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+        if 'rule_name' in local_var_params:
+            path_params['rule_name'] = local_var_params['rule_name']
+
+        query_params = []
 
         header_params = {}
 
@@ -3791,7 +3862,8 @@ class DwsClient(Client):
     def enable_logical_cluster(self, request):
         r"""切换逻辑集群开关
 
-        此接口用于切换逻辑集群开关，仅用于控制逻辑集群相关功能模块是否在页面展示。在集群已经是逻辑集群的场景下，修改该接口无任何作用及影响。
+        切换逻辑集群开关，仅用于控制逻辑集群相关功能模块是否在页面展示。
+        在集群已经是逻辑集群的场景下，修改该接口无任何作用及影响。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4336,8 +4408,9 @@ class DwsClient(Client):
         r"""磁盘扩容
 
         随着客户业务的发展，磁盘空间往往最先出现资源瓶颈，在其他资源尚且充足的情况下，通过磁盘扩容可快速缓解存储资源瓶颈现象，操作过程中无需暂停业务，并且不会造成CPU、内存等资源浪费。  
-        - 磁盘扩容功能仅8.1.1.203及以上版本支持，并且创建集群规格需要为云数仓SSD云盘或实时数仓类型。  
-        - 按需+折扣套餐包消费模式下，存储扩容后超出折扣套餐包部分将按需收费。
+         **约束限制**：
+        磁盘扩容功能仅8.1.1.203及以上版本支持，并且创建集群规格需要为云数仓SSD云盘或实时数仓类型。  
+        按需+折扣套餐包消费模式下，存储扩容后超出折扣套餐包部分将按需收费。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4977,6 +5050,8 @@ class DwsClient(Client):
         query_params = []
         if 'primary_cluster_id' in local_var_params:
             query_params.append(('primary_cluster_id', local_var_params['primary_cluster_id']))
+        if 'standby_az_code' in local_var_params:
+            query_params.append(('standby_az_code', local_var_params['standby_az_code']))
         if 'primary_spec_id' in local_var_params:
             query_params.append(('primary_spec_id', local_var_params['primary_spec_id']))
         if 'primary_cluster_dn_num' in local_var_params:
@@ -4985,8 +5060,6 @@ class DwsClient(Client):
             query_params.append(('standby_region', local_var_params['standby_region']))
         if 'standby_project_id' in local_var_params:
             query_params.append(('standby_project_id', local_var_params['standby_project_id']))
-        if 'standby_az_code' in local_var_params:
-            query_params.append(('standby_az_code', local_var_params['standby_az_code']))
         if 'dr_type' in local_var_params:
             query_params.append(('dr_type', local_var_params['dr_type']))
         if 'datastore_type' in local_var_params:
@@ -5287,7 +5360,7 @@ class DwsClient(Client):
     def list_cluster_details(self, request):
         r"""查询集群详情
 
-        该接口用于查询集群详情。
+        查询集群详情。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -5700,9 +5773,9 @@ class DwsClient(Client):
         return http_info
 
     def list_cluster_workload(self, request):
-        r"""查询资源管理
+        r"""查询资源管理开关状态
 
-        查询资管管理开关。
+        查询资源管理开关状态。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -5767,7 +5840,7 @@ class DwsClient(Client):
     def list_clusters(self, request):
         r"""查询集群列表
 
-        该接口用于查询并显示集群列表。
+        查询集群列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -5969,6 +6042,89 @@ class DwsClient(Client):
 
         return http_info
 
+    def list_database_objects(self, request):
+        r"""查询数据库对象
+
+        查询数据库对象。
+        **约束限制**：
+        集群guestAgent插件大于等于8.2.1.1开始支持。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListDatabaseObjects
+        :type request: :class:`huaweicloudsdkdws.v2.ListDatabaseObjectsRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.ListDatabaseObjectsResponse`
+        """
+        http_info = self._list_database_objects_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_database_objects_invoker(self, request):
+        http_info = self._list_database_objects_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_database_objects_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/clusters/{cluster_id}/db-manager/objects",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDatabaseObjectsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'database' in local_var_params:
+            query_params.append(('database', local_var_params['database']))
+        if 'schema' in local_var_params:
+            query_params.append(('schema', local_var_params['schema']))
+        if 'table' in local_var_params:
+            query_params.append(('table', local_var_params['table']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'is_fine_grained_disaster' in local_var_params:
+            query_params.append(('is_fine_grained_disaster', local_var_params['is_fine_grained_disaster']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_database_user_authorities(self, request):
         r"""查询用户/角色拥有权限
 
@@ -6078,6 +6234,14 @@ class DwsClient(Client):
             path_params['cluster_id'] = local_var_params['cluster_id']
 
         query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'user_type' in local_var_params:
+            query_params.append(('user_type', local_var_params['user_type']))
 
         header_params = {}
 
@@ -6235,7 +6399,7 @@ class DwsClient(Client):
     def list_elbs(self, request):
         r"""获取集群可绑定的ELB列表
 
-        查询集群可以关联的Elb列表。
+        查询集群可以关联的ELB列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -6509,9 +6673,9 @@ class DwsClient(Client):
         return http_info
 
     def list_host_disk(self, request):
-        r"""openApi查询磁盘信息
+        r"""查询磁盘信息
 
-        openApi查询磁盘信息。
+        查询磁盘信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -6582,9 +6746,9 @@ class DwsClient(Client):
         return http_info
 
     def list_host_net(self, request):
-        r"""openapi获取网卡状态
+        r"""获取网卡状态
 
-        openapi获取网卡状态。
+        获取网卡状态。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -6653,9 +6817,9 @@ class DwsClient(Client):
         return http_info
 
     def list_host_overview(self, request):
-        r"""openApi查询主机概览
+        r"""查询主机概览
 
-        openApi查询主机概览。
+        查询主机概览。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -6791,7 +6955,7 @@ class DwsClient(Client):
     def list_logical_cluster_plans(self, request):
         r"""查询逻辑集群定时增删计划
 
-        此接口用于查询逻辑集群定时增删计划。
+        查询逻辑集群定时增删计划。定时增删计划业务支持最多保存20条数据，接口最大返回20条数据。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -6854,9 +7018,9 @@ class DwsClient(Client):
         return http_info
 
     def list_logical_cluster_rings(self, request):
-        r"""查询逻辑集群可用ring环节点信息
+        r"""查询逻辑集群可用环节点信息
 
-        查询逻辑集群可用ring环节点信息。
+        查询逻辑集群可用环节点信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -7359,9 +7523,9 @@ class DwsClient(Client):
         return http_info
 
     def list_monitor_indicator_data(self, request):
-        r"""openApi查询历史监控数据
+        r"""查询历史监控数据
 
-        openApi查询历史监控数据。
+        查询历史监控数据。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -8113,6 +8277,77 @@ class DwsClient(Client):
 
         return http_info
 
+    def list_snapshot_flavor_info(self, request):
+        r"""根据快照ID查询规格信息
+
+        根据快照ID查询规格信息。支持用来查询某个快照的规格信息，或者快照可恢复到的目标规格信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListSnapshotFlavorInfo
+        :type request: :class:`huaweicloudsdkdws.v2.ListSnapshotFlavorInfoRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.ListSnapshotFlavorInfoResponse`
+        """
+        http_info = self._list_snapshot_flavor_info_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_snapshot_flavor_info_invoker(self, request):
+        http_info = self._list_snapshot_flavor_info_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_snapshot_flavor_info_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/snapshots/{snapshot_id}/flavors",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSnapshotFlavorInfoResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'snapshot_id' in local_var_params:
+            path_params['snapshot_id'] = local_var_params['snapshot_id']
+
+        query_params = []
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'az_code' in local_var_params:
+            query_params.append(('az_code', local_var_params['az_code']))
+        if 'fine_grained_restore' in local_var_params:
+            query_params.append(('fine_grained_restore', local_var_params['fine_grained_restore']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_snapshot_policy(self, request):
         r"""查询快照策略
 
@@ -8654,7 +8889,7 @@ class DwsClient(Client):
     def list_target_flavors(self, request):
         r"""查询支持变更的目标规格列表
 
-        查询支持变更的目标规格列表。
+        查询支持变更的目标规格列表。接口返回的规格列表最多为20条。
         **约束限制**：
         无cluster_id时：可查询所有支持转换的目标规格，但是由于配额等原因，部分规格可能存在售罄无法使用。
         存在cluster_id时：会自动关联此集群所在可用区下的配额充足的目标规格。
@@ -9002,9 +9237,9 @@ class DwsClient(Client):
         return http_info
 
     def list_workload_queue(self, request):
-        r"""查询工作负载队列
+        r"""查询资源池
 
-        查询工作负载队列。
+        查询资源池。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -9069,9 +9304,9 @@ class DwsClient(Client):
         return http_info
 
     def list_workload_queue_users(self, request):
-        r"""获得工作负载队列的绑定用户列表
+        r"""获得资源池的绑定用户列表
 
-        获得工作负载队列的绑定用户列表。
+        获得资源池的绑定用户列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -9421,7 +9656,7 @@ class DwsClient(Client):
     def reset_password(self, request):
         r"""重置密码
 
-        此接口用于重置集群管理员密码。
+        重置集群管理员密码。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -9488,7 +9723,7 @@ class DwsClient(Client):
     def resize_cluster(self, request):
         r"""扩容集群
 
-        此接口用于扩容集群，亦可用于添加空闲节点。默认情况下：表示执行扩容操作。
+        扩容集群，亦可用于添加空闲节点。默认情况下：表示执行扩容操作。
         通过create_node_only字段用以区分当前是**扩容**、**添加空闲节点**：
         - true：仅添加空闲节点
         - false：表示执行扩容操作
@@ -9558,7 +9793,7 @@ class DwsClient(Client):
     def resize_cluster_with_existed_nodes(self, request):
         r"""从空闲节点扩容
 
-        此接口用于从空闲节点扩容。
+        从空闲节点扩容。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -9625,7 +9860,7 @@ class DwsClient(Client):
     def restart_cluster(self, request):
         r"""重启集群
 
-        此接口用于重启集群。
+        重启集群。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -9692,7 +9927,7 @@ class DwsClient(Client):
     def restart_logical_cluster(self, request):
         r"""重启逻辑集群
 
-        此接口用于重启逻辑集群。
+        重启逻辑集群。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -9894,7 +10129,7 @@ class DwsClient(Client):
     def restore_redistribution(self, request):
         r"""恢复重分布
 
-        此接口用于恢复暂停状态下的重分布操作，仅支持DWS2.0集群。
+        恢复暂停状态下的重分布操作，仅支持DWS2.0集群。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -10441,9 +10676,9 @@ class DwsClient(Client):
         r"""查询磁盘扩容范围
 
         此接口可用于查看磁盘扩容操作时支持的扩容范围。
-        
-         - 磁盘扩容功能仅8.1.1.203及以上版本支持，并且创建集群规格需要为云数仓SSD云盘或实时数仓类型。
-         - 按需+折扣套餐包消费模式下，存储扩容后超出折扣套餐包部分将按需收费。
+        **约束限制**：
+        磁盘扩容功能仅8.1.1.203及以上版本支持，并且创建集群规格需要为云数仓SSD云盘或实时数仓类型。
+        按需+折扣套餐包消费模式下，存储扩容后超出折扣套餐包部分将按需收费。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -10907,7 +11142,7 @@ class DwsClient(Client):
         return http_info
 
     def show_disaster_progress(self, request):
-        r"""容灾-查询容灾进度详情
+        r"""查询容灾进度详情
 
         该接口用于查询容灾进度详情信息操作。
         
@@ -10974,7 +11209,7 @@ class DwsClient(Client):
     def show_instance(self, request):
         r"""查询单个实例
 
-        查询单个实例。
+        查询单个实例信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -11171,9 +11406,9 @@ class DwsClient(Client):
         return http_info
 
     def show_workload_plan(self, request):
-        r"""查询某个工作负载计划详细信息
+        r"""查询某个资源管理计划详细信息
 
-        查询某个工作负载计划详细信息。
+        查询某个资源管理计划详细信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -11238,9 +11473,9 @@ class DwsClient(Client):
         return http_info
 
     def show_workload_plan_stage(self, request):
-        r"""查询工作负载计划阶段详细信息
+        r"""查询资源管理计划阶段详细信息
 
-        查询工作负载计划阶段详细信息。
+        查询资源管理计划阶段详细信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -11307,9 +11542,9 @@ class DwsClient(Client):
         return http_info
 
     def show_workload_queue(self, request):
-        r"""获得工作负载队列详细信息
+        r"""获得资源池详细信息
 
-        获得工作负载队列详细信息。
+        获得资源池详细信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -11646,9 +11881,9 @@ class DwsClient(Client):
         return http_info
 
     def start_workload_plan(self, request):
-        r"""启动工作负载计划
+        r"""启动资源管理计划
 
-        启动工作负载计划。
+        启动资源管理计划。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -11844,9 +12079,9 @@ class DwsClient(Client):
         return http_info
 
     def stop_workload_plan(self, request):
-        r"""停止工作负载计划
+        r"""停止资源管理计划
 
-        停止工作负载计划。
+        停止资源管理计划。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -11982,9 +12217,10 @@ class DwsClient(Client):
     def switch_over_cluster(self, request):
         r"""主备恢复
 
-        当集群状态为“非均衡”时会出现某些节点主实例增多，从而负载压力较大。这种情况下集群状态是正常的，但整体性能要低于均衡状态。可进行集群主备恢复操作将集群状态切换为“可用“状态。
-        - 集群主备恢复仅8.1.1.202及以上版本支持。
-        - 集群主备恢复将会短暂中断业务，中断时间根据用户自身业务量所决定，建议用户在业务低峰期执行此操作。
+        当集群状态为“非均衡”时会出现某些节点主实例增多，从而负载压力较大。这种情况下集群状态是正常的，但整体性能要低于均衡状态。可进行集群主备恢复操作将集群状态切换为“可用”状态。  
+        **约束限制**：
+         集群主备恢复仅8.1.1.202及以上版本支持。 
+         集群主备恢复将会短暂中断业务，中断时间根据用户自身业务量所决定，建议用户在业务低峰期执行此操作。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -12047,9 +12283,9 @@ class DwsClient(Client):
         return http_info
 
     def switch_plan_stage(self, request):
-        r"""切换工作负载计划阶段
+        r"""切换资源管理计划阶段
 
-        切换工作负载计划阶段。
+        切换资源管理计划阶段。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -12799,7 +13035,9 @@ class DwsClient(Client):
     def update_logical_cluster(self, request):
         r"""编辑逻辑集群
 
-        此接口用于编辑修改逻辑集群。
+        编辑修改逻辑集群。接口根据提交的请求体判断当前操作是逻辑集群缩容或者扩容。
+        场景一：原始的逻辑集群有6个节点（两个环），提交请求时的请求体只有1个环，此时为逻辑集群缩容。
+        场景二：原始的逻辑集群有6个节点（两个环），提交请求时的请求体中有3个环，此时为逻辑集群扩容。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -12868,7 +13106,7 @@ class DwsClient(Client):
     def update_logical_cluster_plan(self, request):
         r"""编辑逻辑集群增删计划
 
-        此接口用于编辑修改编辑逻辑集群增删计划。
+        编辑逻辑集群增删计划。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -13002,9 +13240,9 @@ class DwsClient(Client):
         return http_info
 
     def update_queue_resources(self, request):
-        r"""更新工作负载队列资源配置信息
+        r"""更新资源池资源配置信息
 
-        更新工作负载队列资源配置信息。
+        更新资源池资源配置信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -13246,6 +13484,75 @@ class DwsClient(Client):
             path_params['plan_id'] = local_var_params['plan_id']
         if 'stage_id' in local_var_params:
             path_params['stage_id'] = local_var_params['stage_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_workload_rule(self, request):
+        r"""更新异常规则
+
+        更新异常规则。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateWorkloadRule
+        :type request: :class:`huaweicloudsdkdws.v2.UpdateWorkloadRuleRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.UpdateWorkloadRuleResponse`
+        """
+        http_info = self._update_workload_rule_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_workload_rule_invoker(self, request):
+        http_info = self._update_workload_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_workload_rule_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/clusters/{cluster_id}/workload/rules/{rule_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateWorkloadRuleResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+        if 'rule_name' in local_var_params:
+            path_params['rule_name'] = local_var_params['rule_name']
 
         query_params = []
 

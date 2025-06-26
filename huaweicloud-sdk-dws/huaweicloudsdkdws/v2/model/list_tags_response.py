@@ -30,7 +30,7 @@ class ListTagsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param tags: 标签列表对象。
+        :param tags: **参数解释**： 标签列表对象。 **取值范围**： 不涉及。
         :type tags: list[:class:`huaweicloudsdkdws.v2.ProjectTag`]
         """
         
@@ -46,7 +46,7 @@ class ListTagsResponse(SdkResponse):
     def tags(self):
         r"""Gets the tags of this ListTagsResponse.
 
-        标签列表对象。
+        **参数解释**： 标签列表对象。 **取值范围**： 不涉及。
 
         :return: The tags of this ListTagsResponse.
         :rtype: list[:class:`huaweicloudsdkdws.v2.ProjectTag`]
@@ -57,7 +57,7 @@ class ListTagsResponse(SdkResponse):
     def tags(self, tags):
         r"""Sets the tags of this ListTagsResponse.
 
-        标签列表对象。
+        **参数解释**： 标签列表对象。 **取值范围**： 不涉及。
 
         :param tags: The tags of this ListTagsResponse.
         :type tags: list[:class:`huaweicloudsdkdws.v2.ProjectTag`]

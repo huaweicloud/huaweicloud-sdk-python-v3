@@ -37,7 +37,7 @@ class SqlJobDefendRule:
         'rule_id': 'rule_id',
         'category': 'category',
         'engine_rules': 'engine_rules',
-        'queue_names': 'queueNames',
+        'queue_names': 'queue_names',
         'desc': 'desc',
         'sys_desc': 'sys_desc',
         'create_time': 'create_time',

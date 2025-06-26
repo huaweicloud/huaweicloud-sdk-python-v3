@@ -55,9 +55,9 @@ class NodeTypes:
         :type detail: list[:class:`huaweicloudsdkdws.v2.Detail`]
         :param id: **参数解释**： 规格ID。 **取值范围**： 一般为UUID。
         :type id: str
-        :param datastore_type: **参数解释**： 产品类型。 **取值范围**： - dws：云数仓。 - hybrid：实时数仓。 - stream：IoT数仓。
+        :param datastore_type: **参数解释**： 产品类型。 **取值范围**： - dws：云数仓。 - hybrid：实时数仓。
         :type datastore_type: str
-        :param architecture: **参数解释**： 架构类型。 **取值范围**： - x86； - arm；
+        :param architecture: **参数解释**： 架构类型。 **取值范围**： - x86。 - arm。
         :type architecture: str
         :param available_zones: **参数解释**： 支持的可用区及状态信息。 **取值范围**： 不涉及。
         :type available_zones: list[:class:`huaweicloudsdkdws.v2.NodeTypeAvailableZones`]
@@ -69,7 +69,7 @@ class NodeTypes:
         :type datastores: list[:class:`huaweicloudsdkdws.v2.NodeTypeDatastores`]
         :param volume: 
         :type volume: :class:`huaweicloudsdkdws.v2.VolumeResp`
-        :param elastic_volume_specs: **参数解释**： 弹性弹性容量规格的规格容量信息 **取值范围**： 如果规格为弹性容量规格，则该属性为规格典配的弹性容量信息，包括存储类型、最小容量、最大容量以及步长信息，如果为固定存储规格，则该属性为null。
+        :param elastic_volume_specs: **参数解释**： 弹性容量规格的规格容量信息。 **取值范围**： 如果规格为弹性容量规格，则该属性为规格典配的弹性容量信息，包括存储类型、最小容量、最大容量以及步长信息，如果为固定存储规格，则该属性为null。
         :type elastic_volume_specs: list[:class:`huaweicloudsdkdws.v2.NodeTypeElasticVolumeSpecs`]
         """
         
@@ -170,7 +170,7 @@ class NodeTypes:
     def datastore_type(self):
         r"""Gets the datastore_type of this NodeTypes.
 
-        **参数解释**： 产品类型。 **取值范围**： - dws：云数仓。 - hybrid：实时数仓。 - stream：IoT数仓。
+        **参数解释**： 产品类型。 **取值范围**： - dws：云数仓。 - hybrid：实时数仓。
 
         :return: The datastore_type of this NodeTypes.
         :rtype: str
@@ -181,7 +181,7 @@ class NodeTypes:
     def datastore_type(self, datastore_type):
         r"""Sets the datastore_type of this NodeTypes.
 
-        **参数解释**： 产品类型。 **取值范围**： - dws：云数仓。 - hybrid：实时数仓。 - stream：IoT数仓。
+        **参数解释**： 产品类型。 **取值范围**： - dws：云数仓。 - hybrid：实时数仓。
 
         :param datastore_type: The datastore_type of this NodeTypes.
         :type datastore_type: str
@@ -192,7 +192,7 @@ class NodeTypes:
     def architecture(self):
         r"""Gets the architecture of this NodeTypes.
 
-        **参数解释**： 架构类型。 **取值范围**： - x86； - arm；
+        **参数解释**： 架构类型。 **取值范围**： - x86。 - arm。
 
         :return: The architecture of this NodeTypes.
         :rtype: str
@@ -203,7 +203,7 @@ class NodeTypes:
     def architecture(self, architecture):
         r"""Sets the architecture of this NodeTypes.
 
-        **参数解释**： 架构类型。 **取值范围**： - x86； - arm；
+        **参数解释**： 架构类型。 **取值范围**： - x86。 - arm。
 
         :param architecture: The architecture of this NodeTypes.
         :type architecture: str
@@ -320,7 +320,7 @@ class NodeTypes:
     def elastic_volume_specs(self):
         r"""Gets the elastic_volume_specs of this NodeTypes.
 
-        **参数解释**： 弹性弹性容量规格的规格容量信息 **取值范围**： 如果规格为弹性容量规格，则该属性为规格典配的弹性容量信息，包括存储类型、最小容量、最大容量以及步长信息，如果为固定存储规格，则该属性为null。
+        **参数解释**： 弹性容量规格的规格容量信息。 **取值范围**： 如果规格为弹性容量规格，则该属性为规格典配的弹性容量信息，包括存储类型、最小容量、最大容量以及步长信息，如果为固定存储规格，则该属性为null。
 
         :return: The elastic_volume_specs of this NodeTypes.
         :rtype: list[:class:`huaweicloudsdkdws.v2.NodeTypeElasticVolumeSpecs`]
@@ -331,7 +331,7 @@ class NodeTypes:
     def elastic_volume_specs(self, elastic_volume_specs):
         r"""Sets the elastic_volume_specs of this NodeTypes.
 
-        **参数解释**： 弹性弹性容量规格的规格容量信息 **取值范围**： 如果规格为弹性容量规格，则该属性为规格典配的弹性容量信息，包括存储类型、最小容量、最大容量以及步长信息，如果为固定存储规格，则该属性为null。
+        **参数解释**： 弹性容量规格的规格容量信息。 **取值范围**： 如果规格为弹性容量规格，则该属性为规格典配的弹性容量信息，包括存储类型、最小容量、最大容量以及步长信息，如果为固定存储规格，则该属性为null。
 
         :param elastic_volume_specs: The elastic_volume_specs of this NodeTypes.
         :type elastic_volume_specs: list[:class:`huaweicloudsdkdws.v2.NodeTypeElasticVolumeSpecs`]

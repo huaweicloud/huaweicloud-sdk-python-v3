@@ -31,9 +31,9 @@ class DisassociateElbRequest:
 
         The model defined in huaweicloud sdk
 
-        :param cluster_id: **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
+        :param cluster_id: **参数解释**： 集群ID。获取方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
         :type cluster_id: str
-        :param elb_id: 集群已绑定的弹性负载均衡ID
+        :param elb_id: **参数解释**： 集群已绑定的弹性负载均衡ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type elb_id: str
         """
         
@@ -50,7 +50,7 @@ class DisassociateElbRequest:
     def cluster_id(self):
         r"""Gets the cluster_id of this DisassociateElbRequest.
 
-        **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
+        **参数解释**： 集群ID。获取方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
 
         :return: The cluster_id of this DisassociateElbRequest.
         :rtype: str
@@ -61,7 +61,7 @@ class DisassociateElbRequest:
     def cluster_id(self, cluster_id):
         r"""Sets the cluster_id of this DisassociateElbRequest.
 
-        **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
+        **参数解释**： 集群ID。获取方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
 
         :param cluster_id: The cluster_id of this DisassociateElbRequest.
         :type cluster_id: str
@@ -72,7 +72,7 @@ class DisassociateElbRequest:
     def elb_id(self):
         r"""Gets the elb_id of this DisassociateElbRequest.
 
-        集群已绑定的弹性负载均衡ID
+        **参数解释**： 集群已绑定的弹性负载均衡ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The elb_id of this DisassociateElbRequest.
         :rtype: str
@@ -83,7 +83,7 @@ class DisassociateElbRequest:
     def elb_id(self, elb_id):
         r"""Sets the elb_id of this DisassociateElbRequest.
 
-        集群已绑定的弹性负载均衡ID
+        **参数解释**： 集群已绑定的弹性负载均衡ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param elb_id: The elb_id of this DisassociateElbRequest.
         :type elb_id: str

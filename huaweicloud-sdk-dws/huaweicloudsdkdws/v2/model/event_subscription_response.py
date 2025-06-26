@@ -57,35 +57,35 @@ class EventSubscriptionResponse:
 
         The model defined in huaweicloud sdk
 
-        :param id: 订阅ID
+        :param id: **参数解释**： 订阅ID。 **取值范围**： 不涉及。
         :type id: str
-        :param name: 订阅名称
+        :param name: **参数解释**： 订阅名称。 **取值范围**： 不涉及。
         :type name: str
-        :param source_type: 事件源类型
+        :param source_type: **参数解释**： 事件源类型。 **取值范围**： 不涉及。
         :type source_type: str
-        :param source_id: 事件源ID
+        :param source_id: **参数解释**： 事件源ID。 **取值范围**： 不涉及。
         :type source_id: str
-        :param category: 事件类别
+        :param category: **参数解释**： 事件类别。 **取值范围**： 不涉及。
         :type category: str
-        :param severity: 事件级别
+        :param severity: **参数解释**： 事件级别。 **取值范围**： 不涉及。
         :type severity: str
-        :param tag: 事件标签
+        :param tag: **参数解释**： 事件标签。 **取值范围**： 不涉及。
         :type tag: str
-        :param enable: 是否开启订阅 1为开启，0为关闭
+        :param enable: **参数解释**： 是否开启订阅。 **取值范围**： 1为开启，0为关闭。
         :type enable: int
-        :param project_id: 租户凭证ID
+        :param project_id: **参数解释**： 项目ID。 **取值范围**： 不涉及。
         :type project_id: str
-        :param name_space: 所属服务
+        :param name_space: **参数解释**： 所属服务。 **取值范围**： 不涉及。
         :type name_space: str
-        :param notification_target: 消息通知主题地址
+        :param notification_target: **参数解释**： 消息通知主题地址。 **取值范围**： 不涉及。
         :type notification_target: str
-        :param notification_target_name: 消息通知主题名称
+        :param notification_target_name: **参数解释**： 消息通知主题名称。 **取值范围**： 不涉及。
         :type notification_target_name: str
-        :param notification_target_type: 消息通知类型
+        :param notification_target_type: **参数解释**： 消息通知类型。 **取值范围**： 不涉及。
         :type notification_target_type: str
-        :param language: 语言
+        :param language: **参数解释**： 语言。 **取值范围**： 不涉及。
         :type language: str
-        :param time_zone: 时区
+        :param time_zone: **参数解释**： 时区。 **取值范围**： 不涉及。
         :type time_zone: str
         """
         
@@ -143,7 +143,7 @@ class EventSubscriptionResponse:
     def id(self):
         r"""Gets the id of this EventSubscriptionResponse.
 
-        订阅ID
+        **参数解释**： 订阅ID。 **取值范围**： 不涉及。
 
         :return: The id of this EventSubscriptionResponse.
         :rtype: str
@@ -154,7 +154,7 @@ class EventSubscriptionResponse:
     def id(self, id):
         r"""Sets the id of this EventSubscriptionResponse.
 
-        订阅ID
+        **参数解释**： 订阅ID。 **取值范围**： 不涉及。
 
         :param id: The id of this EventSubscriptionResponse.
         :type id: str
@@ -165,7 +165,7 @@ class EventSubscriptionResponse:
     def name(self):
         r"""Gets the name of this EventSubscriptionResponse.
 
-        订阅名称
+        **参数解释**： 订阅名称。 **取值范围**： 不涉及。
 
         :return: The name of this EventSubscriptionResponse.
         :rtype: str
@@ -176,7 +176,7 @@ class EventSubscriptionResponse:
     def name(self, name):
         r"""Sets the name of this EventSubscriptionResponse.
 
-        订阅名称
+        **参数解释**： 订阅名称。 **取值范围**： 不涉及。
 
         :param name: The name of this EventSubscriptionResponse.
         :type name: str
@@ -187,7 +187,7 @@ class EventSubscriptionResponse:
     def source_type(self):
         r"""Gets the source_type of this EventSubscriptionResponse.
 
-        事件源类型
+        **参数解释**： 事件源类型。 **取值范围**： 不涉及。
 
         :return: The source_type of this EventSubscriptionResponse.
         :rtype: str
@@ -198,7 +198,7 @@ class EventSubscriptionResponse:
     def source_type(self, source_type):
         r"""Sets the source_type of this EventSubscriptionResponse.
 
-        事件源类型
+        **参数解释**： 事件源类型。 **取值范围**： 不涉及。
 
         :param source_type: The source_type of this EventSubscriptionResponse.
         :type source_type: str
@@ -209,7 +209,7 @@ class EventSubscriptionResponse:
     def source_id(self):
         r"""Gets the source_id of this EventSubscriptionResponse.
 
-        事件源ID
+        **参数解释**： 事件源ID。 **取值范围**： 不涉及。
 
         :return: The source_id of this EventSubscriptionResponse.
         :rtype: str
@@ -220,7 +220,7 @@ class EventSubscriptionResponse:
     def source_id(self, source_id):
         r"""Sets the source_id of this EventSubscriptionResponse.
 
-        事件源ID
+        **参数解释**： 事件源ID。 **取值范围**： 不涉及。
 
         :param source_id: The source_id of this EventSubscriptionResponse.
         :type source_id: str
@@ -231,7 +231,7 @@ class EventSubscriptionResponse:
     def category(self):
         r"""Gets the category of this EventSubscriptionResponse.
 
-        事件类别
+        **参数解释**： 事件类别。 **取值范围**： 不涉及。
 
         :return: The category of this EventSubscriptionResponse.
         :rtype: str
@@ -242,7 +242,7 @@ class EventSubscriptionResponse:
     def category(self, category):
         r"""Sets the category of this EventSubscriptionResponse.
 
-        事件类别
+        **参数解释**： 事件类别。 **取值范围**： 不涉及。
 
         :param category: The category of this EventSubscriptionResponse.
         :type category: str
@@ -253,7 +253,7 @@ class EventSubscriptionResponse:
     def severity(self):
         r"""Gets the severity of this EventSubscriptionResponse.
 
-        事件级别
+        **参数解释**： 事件级别。 **取值范围**： 不涉及。
 
         :return: The severity of this EventSubscriptionResponse.
         :rtype: str
@@ -264,7 +264,7 @@ class EventSubscriptionResponse:
     def severity(self, severity):
         r"""Sets the severity of this EventSubscriptionResponse.
 
-        事件级别
+        **参数解释**： 事件级别。 **取值范围**： 不涉及。
 
         :param severity: The severity of this EventSubscriptionResponse.
         :type severity: str
@@ -275,7 +275,7 @@ class EventSubscriptionResponse:
     def tag(self):
         r"""Gets the tag of this EventSubscriptionResponse.
 
-        事件标签
+        **参数解释**： 事件标签。 **取值范围**： 不涉及。
 
         :return: The tag of this EventSubscriptionResponse.
         :rtype: str
@@ -286,7 +286,7 @@ class EventSubscriptionResponse:
     def tag(self, tag):
         r"""Sets the tag of this EventSubscriptionResponse.
 
-        事件标签
+        **参数解释**： 事件标签。 **取值范围**： 不涉及。
 
         :param tag: The tag of this EventSubscriptionResponse.
         :type tag: str
@@ -297,7 +297,7 @@ class EventSubscriptionResponse:
     def enable(self):
         r"""Gets the enable of this EventSubscriptionResponse.
 
-        是否开启订阅 1为开启，0为关闭
+        **参数解释**： 是否开启订阅。 **取值范围**： 1为开启，0为关闭。
 
         :return: The enable of this EventSubscriptionResponse.
         :rtype: int
@@ -308,7 +308,7 @@ class EventSubscriptionResponse:
     def enable(self, enable):
         r"""Sets the enable of this EventSubscriptionResponse.
 
-        是否开启订阅 1为开启，0为关闭
+        **参数解释**： 是否开启订阅。 **取值范围**： 1为开启，0为关闭。
 
         :param enable: The enable of this EventSubscriptionResponse.
         :type enable: int
@@ -319,7 +319,7 @@ class EventSubscriptionResponse:
     def project_id(self):
         r"""Gets the project_id of this EventSubscriptionResponse.
 
-        租户凭证ID
+        **参数解释**： 项目ID。 **取值范围**： 不涉及。
 
         :return: The project_id of this EventSubscriptionResponse.
         :rtype: str
@@ -330,7 +330,7 @@ class EventSubscriptionResponse:
     def project_id(self, project_id):
         r"""Sets the project_id of this EventSubscriptionResponse.
 
-        租户凭证ID
+        **参数解释**： 项目ID。 **取值范围**： 不涉及。
 
         :param project_id: The project_id of this EventSubscriptionResponse.
         :type project_id: str
@@ -341,7 +341,7 @@ class EventSubscriptionResponse:
     def name_space(self):
         r"""Gets the name_space of this EventSubscriptionResponse.
 
-        所属服务
+        **参数解释**： 所属服务。 **取值范围**： 不涉及。
 
         :return: The name_space of this EventSubscriptionResponse.
         :rtype: str
@@ -352,7 +352,7 @@ class EventSubscriptionResponse:
     def name_space(self, name_space):
         r"""Sets the name_space of this EventSubscriptionResponse.
 
-        所属服务
+        **参数解释**： 所属服务。 **取值范围**： 不涉及。
 
         :param name_space: The name_space of this EventSubscriptionResponse.
         :type name_space: str
@@ -363,7 +363,7 @@ class EventSubscriptionResponse:
     def notification_target(self):
         r"""Gets the notification_target of this EventSubscriptionResponse.
 
-        消息通知主题地址
+        **参数解释**： 消息通知主题地址。 **取值范围**： 不涉及。
 
         :return: The notification_target of this EventSubscriptionResponse.
         :rtype: str
@@ -374,7 +374,7 @@ class EventSubscriptionResponse:
     def notification_target(self, notification_target):
         r"""Sets the notification_target of this EventSubscriptionResponse.
 
-        消息通知主题地址
+        **参数解释**： 消息通知主题地址。 **取值范围**： 不涉及。
 
         :param notification_target: The notification_target of this EventSubscriptionResponse.
         :type notification_target: str
@@ -385,7 +385,7 @@ class EventSubscriptionResponse:
     def notification_target_name(self):
         r"""Gets the notification_target_name of this EventSubscriptionResponse.
 
-        消息通知主题名称
+        **参数解释**： 消息通知主题名称。 **取值范围**： 不涉及。
 
         :return: The notification_target_name of this EventSubscriptionResponse.
         :rtype: str
@@ -396,7 +396,7 @@ class EventSubscriptionResponse:
     def notification_target_name(self, notification_target_name):
         r"""Sets the notification_target_name of this EventSubscriptionResponse.
 
-        消息通知主题名称
+        **参数解释**： 消息通知主题名称。 **取值范围**： 不涉及。
 
         :param notification_target_name: The notification_target_name of this EventSubscriptionResponse.
         :type notification_target_name: str
@@ -407,7 +407,7 @@ class EventSubscriptionResponse:
     def notification_target_type(self):
         r"""Gets the notification_target_type of this EventSubscriptionResponse.
 
-        消息通知类型
+        **参数解释**： 消息通知类型。 **取值范围**： 不涉及。
 
         :return: The notification_target_type of this EventSubscriptionResponse.
         :rtype: str
@@ -418,7 +418,7 @@ class EventSubscriptionResponse:
     def notification_target_type(self, notification_target_type):
         r"""Sets the notification_target_type of this EventSubscriptionResponse.
 
-        消息通知类型
+        **参数解释**： 消息通知类型。 **取值范围**： 不涉及。
 
         :param notification_target_type: The notification_target_type of this EventSubscriptionResponse.
         :type notification_target_type: str
@@ -429,7 +429,7 @@ class EventSubscriptionResponse:
     def language(self):
         r"""Gets the language of this EventSubscriptionResponse.
 
-        语言
+        **参数解释**： 语言。 **取值范围**： 不涉及。
 
         :return: The language of this EventSubscriptionResponse.
         :rtype: str
@@ -440,7 +440,7 @@ class EventSubscriptionResponse:
     def language(self, language):
         r"""Sets the language of this EventSubscriptionResponse.
 
-        语言
+        **参数解释**： 语言。 **取值范围**： 不涉及。
 
         :param language: The language of this EventSubscriptionResponse.
         :type language: str
@@ -451,7 +451,7 @@ class EventSubscriptionResponse:
     def time_zone(self):
         r"""Gets the time_zone of this EventSubscriptionResponse.
 
-        时区
+        **参数解释**： 时区。 **取值范围**： 不涉及。
 
         :return: The time_zone of this EventSubscriptionResponse.
         :rtype: str
@@ -462,7 +462,7 @@ class EventSubscriptionResponse:
     def time_zone(self, time_zone):
         r"""Sets the time_zone of this EventSubscriptionResponse.
 
-        时区
+        **参数解释**： 时区。 **取值范围**： 不涉及。
 
         :param time_zone: The time_zone of this EventSubscriptionResponse.
         :type time_zone: str

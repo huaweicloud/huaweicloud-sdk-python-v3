@@ -37,13 +37,13 @@ class ListRedistributionSchemaRequest:
 
         The model defined in huaweicloud sdk
 
-        :param cluster_id: **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :param cluster_id: **参数解释**： 集群ID。获取方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type cluster_id: str
         :param db_name: **参数解释**： 分页偏移量。 **约束限制**： 不涉及。 **取值范围**： ^[a-zA-Z0-9\\u4e00-\\u9fa5_.+&#x3D; :@!#-]{0,255}$ **默认取值**： null
         :type db_name: str
         :param limit: **参数解释**： 分页条数。 **约束限制**： 不涉及。 **取值范围**： 有效值：大于等于1。 **默认取值**： 10
         :type limit: int
-        :param offset: **参数解释**： 分页偏移量。 **约束限制**： 不涉及。 **取值范围**： 有效值：大于等于0。 **默认取值**： 0
+        :param offset: **参数解释**： 分页偏移量，从0开始，页数减1。 **约束限制**： 不涉及。 **取值范围**： 有效值：大于等于0。 **默认取值**： 0
         :type offset: int
         :param schema_name: **参数解释**： schema名称。 **约束限制**： 不涉及。 **取值范围**： ^[a-zA-Z0-9\\u4e00-\\u9fa5_.+&#x3D; ,:@!#-]{0,2048}$ **默认取值**： null
         :type schema_name: str
@@ -71,7 +71,7 @@ class ListRedistributionSchemaRequest:
     def cluster_id(self):
         r"""Gets the cluster_id of this ListRedistributionSchemaRequest.
 
-        **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 集群ID。获取方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The cluster_id of this ListRedistributionSchemaRequest.
         :rtype: str
@@ -82,7 +82,7 @@ class ListRedistributionSchemaRequest:
     def cluster_id(self, cluster_id):
         r"""Sets the cluster_id of this ListRedistributionSchemaRequest.
 
-        **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 集群ID。获取方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param cluster_id: The cluster_id of this ListRedistributionSchemaRequest.
         :type cluster_id: str
@@ -137,7 +137,7 @@ class ListRedistributionSchemaRequest:
     def offset(self):
         r"""Gets the offset of this ListRedistributionSchemaRequest.
 
-        **参数解释**： 分页偏移量。 **约束限制**： 不涉及。 **取值范围**： 有效值：大于等于0。 **默认取值**： 0
+        **参数解释**： 分页偏移量，从0开始，页数减1。 **约束限制**： 不涉及。 **取值范围**： 有效值：大于等于0。 **默认取值**： 0
 
         :return: The offset of this ListRedistributionSchemaRequest.
         :rtype: int
@@ -148,7 +148,7 @@ class ListRedistributionSchemaRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListRedistributionSchemaRequest.
 
-        **参数解释**： 分页偏移量。 **约束限制**： 不涉及。 **取值范围**： 有效值：大于等于0。 **默认取值**： 0
+        **参数解释**： 分页偏移量，从0开始，页数减1。 **约束限制**： 不涉及。 **取值范围**： 有效值：大于等于0。 **默认取值**： 0
 
         :param offset: The offset of this ListRedistributionSchemaRequest.
         :type offset: int

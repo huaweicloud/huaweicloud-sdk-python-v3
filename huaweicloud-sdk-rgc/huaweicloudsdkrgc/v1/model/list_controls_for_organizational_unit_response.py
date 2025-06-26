@@ -19,25 +19,21 @@ class ListControlsForOrganizationalUnitResponse(SdkResponse):
 
     openapi_types = {
         'control_summaries': 'list[TargetControl]',
-        'state': 'str',
         'page_info': 'PageInfoDto'
     }
 
     attribute_map = {
         'control_summaries': 'control_summaries',
-        'state': 'state',
         'page_info': 'page_info'
     }
 
-    def __init__(self, control_summaries=None, state=None, page_info=None):
+    def __init__(self, control_summaries=None, page_info=None):
         r"""ListControlsForOrganizationalUnitResponse
 
         The model defined in huaweicloud sdk
 
         :param control_summaries: 治理策略概要。
         :type control_summaries: list[:class:`huaweicloudsdkrgc.v1.TargetControl`]
-        :param state: 控制策略启用状态。
-        :type state: str
         :param page_info: 
         :type page_info: :class:`huaweicloudsdkrgc.v1.PageInfoDto`
         """
@@ -45,14 +41,11 @@ class ListControlsForOrganizationalUnitResponse(SdkResponse):
         super(ListControlsForOrganizationalUnitResponse, self).__init__()
 
         self._control_summaries = None
-        self._state = None
         self._page_info = None
         self.discriminator = None
 
         if control_summaries is not None:
             self.control_summaries = control_summaries
-        if state is not None:
-            self.state = state
         if page_info is not None:
             self.page_info = page_info
 
@@ -77,28 +70,6 @@ class ListControlsForOrganizationalUnitResponse(SdkResponse):
         :type control_summaries: list[:class:`huaweicloudsdkrgc.v1.TargetControl`]
         """
         self._control_summaries = control_summaries
-
-    @property
-    def state(self):
-        r"""Gets the state of this ListControlsForOrganizationalUnitResponse.
-
-        控制策略启用状态。
-
-        :return: The state of this ListControlsForOrganizationalUnitResponse.
-        :rtype: str
-        """
-        return self._state
-
-    @state.setter
-    def state(self, state):
-        r"""Sets the state of this ListControlsForOrganizationalUnitResponse.
-
-        控制策略启用状态。
-
-        :param state: The state of this ListControlsForOrganizationalUnitResponse.
-        :type state: str
-        """
-        self._state = state
 
     @property
     def page_info(self):

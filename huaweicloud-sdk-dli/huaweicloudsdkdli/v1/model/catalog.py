@@ -20,17 +20,19 @@ class Catalog:
         'name': 'str',
         'create_time': 'int',
         'parameters': 'dict(str, str)',
-        'description': 'str'
+        'description': 'str',
+        'status': 'str'
     }
 
     attribute_map = {
         'name': 'name',
         'create_time': 'create_time',
         'parameters': 'parameters',
-        'description': 'description'
+        'description': 'description',
+        'status': 'status'
     }
 
-    def __init__(self, name=None, create_time=None, parameters=None, description=None):
+    def __init__(self, name=None, create_time=None, parameters=None, description=None, status=None):
         r"""Catalog
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class Catalog:
         :type parameters: dict(str, str)
         :param description: 描述
         :type description: str
+        :param status: catalog状态。CREATING：catalog创建中；ACTIVE：catalog可使用；FAILED：catalog创建失败。
+        :type status: str
         """
         
         
@@ -51,6 +55,7 @@ class Catalog:
         self._create_time = None
         self._parameters = None
         self._description = None
+        self._status = None
         self.discriminator = None
 
         if name is not None:
@@ -61,6 +66,8 @@ class Catalog:
             self.parameters = parameters
         if description is not None:
             self.description = description
+        if status is not None:
+            self.status = status
 
     @property
     def name(self):
@@ -149,6 +156,28 @@ class Catalog:
         :type description: str
         """
         self._description = description
+
+    @property
+    def status(self):
+        r"""Gets the status of this Catalog.
+
+        catalog状态。CREATING：catalog创建中；ACTIVE：catalog可使用；FAILED：catalog创建失败。
+
+        :return: The status of this Catalog.
+        :rtype: str
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        r"""Sets the status of this Catalog.
+
+        catalog状态。CREATING：catalog创建中；ACTIVE：catalog可使用；FAILED：catalog创建失败。
+
+        :param status: The status of this Catalog.
+        :type status: str
+        """
+        self._status = status
 
     def to_dict(self):
         """Returns the model properties as a dict"""

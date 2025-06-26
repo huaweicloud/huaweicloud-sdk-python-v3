@@ -17,34 +17,41 @@ class AddWorkloadRuleRequest:
     sensitive_list = []
 
     openapi_types = {
-        'cluster_id': 'str'
+        'cluster_id': 'str',
+        'body': 'AddExceptRuleReq'
     }
 
     attribute_map = {
-        'cluster_id': 'cluster_id'
+        'cluster_id': 'cluster_id',
+        'body': 'body'
     }
 
-    def __init__(self, cluster_id=None):
+    def __init__(self, cluster_id=None, body=None):
         r"""AddWorkloadRuleRequest
 
         The model defined in huaweicloud sdk
 
-        :param cluster_id: **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
+        :param cluster_id: **参数解释**： 集群ID。获取方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
         :type cluster_id: str
+        :param body: Body of the AddWorkloadRuleRequest
+        :type body: :class:`huaweicloudsdkdws.v2.AddExceptRuleReq`
         """
         
         
 
         self._cluster_id = None
+        self._body = None
         self.discriminator = None
 
         self.cluster_id = cluster_id
+        if body is not None:
+            self.body = body
 
     @property
     def cluster_id(self):
         r"""Gets the cluster_id of this AddWorkloadRuleRequest.
 
-        **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
+        **参数解释**： 集群ID。获取方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
 
         :return: The cluster_id of this AddWorkloadRuleRequest.
         :rtype: str
@@ -55,12 +62,30 @@ class AddWorkloadRuleRequest:
     def cluster_id(self, cluster_id):
         r"""Sets the cluster_id of this AddWorkloadRuleRequest.
 
-        **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
+        **参数解释**： 集群ID。获取方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
 
         :param cluster_id: The cluster_id of this AddWorkloadRuleRequest.
         :type cluster_id: str
         """
         self._cluster_id = cluster_id
+
+    @property
+    def body(self):
+        r"""Gets the body of this AddWorkloadRuleRequest.
+
+        :return: The body of this AddWorkloadRuleRequest.
+        :rtype: :class:`huaweicloudsdkdws.v2.AddExceptRuleReq`
+        """
+        return self._body
+
+    @body.setter
+    def body(self, body):
+        r"""Sets the body of this AddWorkloadRuleRequest.
+
+        :param body: The body of this AddWorkloadRuleRequest.
+        :type body: :class:`huaweicloudsdkdws.v2.AddExceptRuleReq`
+        """
+        self._body = body
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -49,27 +49,27 @@ class EventSubRequest:
 
         The model defined in huaweicloud sdk
 
-        :param name: 事件订阅名称
+        :param name: **参数解释**： 事件订阅名称。 **取值范围**： 不涉及。
         :type name: str
-        :param source_type: 事件源类型支持cluster，backup，disaster-recovery
+        :param source_type: **参数解释**： 事件源类型。 **取值范围**： 支持cluster，backup，disaster-recovery。
         :type source_type: str
-        :param source_id: 事件源ID
+        :param source_id: **参数解释**： 事件源ID。 **取值范围**： 不涉及。
         :type source_id: str
-        :param category: 事件类别支持management，monitor，security，system alarm
+        :param category: **参数解释**： 事件类别。 **取值范围**： 支持management、monitor、security、system alarm。
         :type category: str
-        :param severity: 事件级别支持normal，warning
+        :param severity: **参数解释**： 事件级别。 **取值范围**： 支持normal、warning。
         :type severity: str
-        :param tag: 事件标签
+        :param tag: **参数解释**： 事件标签。 **取值范围**： 不涉及。
         :type tag: str
-        :param enable: 是否开启订阅 1为开启，0为关闭
+        :param enable: **参数解释**： 是否开启订阅。 **取值范围**： 1为开启，0为关闭。
         :type enable: int
-        :param notification_target: 消息通知地址
+        :param notification_target: **参数解释**： 消息通知地址。 **取值范围**： 不涉及。
         :type notification_target: str
-        :param notification_target_name: 消息主题名称
+        :param notification_target_name: **参数解释**： 消息主题名称。 **取值范围**： 不涉及。
         :type notification_target_name: str
-        :param notification_target_type: 消息通知类型只支持SMN
+        :param notification_target_type: **参数解释**： 消息通知类型只支持SMN。 **取值范围**： 不涉及。
         :type notification_target_type: str
-        :param time_zone: 时区
+        :param time_zone: **参数解释**： 时区。 **取值范围**： 不涉及。
         :type time_zone: str
         """
         
@@ -111,7 +111,7 @@ class EventSubRequest:
     def name(self):
         r"""Gets the name of this EventSubRequest.
 
-        事件订阅名称
+        **参数解释**： 事件订阅名称。 **取值范围**： 不涉及。
 
         :return: The name of this EventSubRequest.
         :rtype: str
@@ -122,7 +122,7 @@ class EventSubRequest:
     def name(self, name):
         r"""Sets the name of this EventSubRequest.
 
-        事件订阅名称
+        **参数解释**： 事件订阅名称。 **取值范围**： 不涉及。
 
         :param name: The name of this EventSubRequest.
         :type name: str
@@ -133,7 +133,7 @@ class EventSubRequest:
     def source_type(self):
         r"""Gets the source_type of this EventSubRequest.
 
-        事件源类型支持cluster，backup，disaster-recovery
+        **参数解释**： 事件源类型。 **取值范围**： 支持cluster，backup，disaster-recovery。
 
         :return: The source_type of this EventSubRequest.
         :rtype: str
@@ -144,7 +144,7 @@ class EventSubRequest:
     def source_type(self, source_type):
         r"""Sets the source_type of this EventSubRequest.
 
-        事件源类型支持cluster，backup，disaster-recovery
+        **参数解释**： 事件源类型。 **取值范围**： 支持cluster，backup，disaster-recovery。
 
         :param source_type: The source_type of this EventSubRequest.
         :type source_type: str
@@ -155,7 +155,7 @@ class EventSubRequest:
     def source_id(self):
         r"""Gets the source_id of this EventSubRequest.
 
-        事件源ID
+        **参数解释**： 事件源ID。 **取值范围**： 不涉及。
 
         :return: The source_id of this EventSubRequest.
         :rtype: str
@@ -166,7 +166,7 @@ class EventSubRequest:
     def source_id(self, source_id):
         r"""Sets the source_id of this EventSubRequest.
 
-        事件源ID
+        **参数解释**： 事件源ID。 **取值范围**： 不涉及。
 
         :param source_id: The source_id of this EventSubRequest.
         :type source_id: str
@@ -177,7 +177,7 @@ class EventSubRequest:
     def category(self):
         r"""Gets the category of this EventSubRequest.
 
-        事件类别支持management，monitor，security，system alarm
+        **参数解释**： 事件类别。 **取值范围**： 支持management、monitor、security、system alarm。
 
         :return: The category of this EventSubRequest.
         :rtype: str
@@ -188,7 +188,7 @@ class EventSubRequest:
     def category(self, category):
         r"""Sets the category of this EventSubRequest.
 
-        事件类别支持management，monitor，security，system alarm
+        **参数解释**： 事件类别。 **取值范围**： 支持management、monitor、security、system alarm。
 
         :param category: The category of this EventSubRequest.
         :type category: str
@@ -199,7 +199,7 @@ class EventSubRequest:
     def severity(self):
         r"""Gets the severity of this EventSubRequest.
 
-        事件级别支持normal，warning
+        **参数解释**： 事件级别。 **取值范围**： 支持normal、warning。
 
         :return: The severity of this EventSubRequest.
         :rtype: str
@@ -210,7 +210,7 @@ class EventSubRequest:
     def severity(self, severity):
         r"""Sets the severity of this EventSubRequest.
 
-        事件级别支持normal，warning
+        **参数解释**： 事件级别。 **取值范围**： 支持normal、warning。
 
         :param severity: The severity of this EventSubRequest.
         :type severity: str
@@ -221,7 +221,7 @@ class EventSubRequest:
     def tag(self):
         r"""Gets the tag of this EventSubRequest.
 
-        事件标签
+        **参数解释**： 事件标签。 **取值范围**： 不涉及。
 
         :return: The tag of this EventSubRequest.
         :rtype: str
@@ -232,7 +232,7 @@ class EventSubRequest:
     def tag(self, tag):
         r"""Sets the tag of this EventSubRequest.
 
-        事件标签
+        **参数解释**： 事件标签。 **取值范围**： 不涉及。
 
         :param tag: The tag of this EventSubRequest.
         :type tag: str
@@ -243,7 +243,7 @@ class EventSubRequest:
     def enable(self):
         r"""Gets the enable of this EventSubRequest.
 
-        是否开启订阅 1为开启，0为关闭
+        **参数解释**： 是否开启订阅。 **取值范围**： 1为开启，0为关闭。
 
         :return: The enable of this EventSubRequest.
         :rtype: int
@@ -254,7 +254,7 @@ class EventSubRequest:
     def enable(self, enable):
         r"""Sets the enable of this EventSubRequest.
 
-        是否开启订阅 1为开启，0为关闭
+        **参数解释**： 是否开启订阅。 **取值范围**： 1为开启，0为关闭。
 
         :param enable: The enable of this EventSubRequest.
         :type enable: int
@@ -265,7 +265,7 @@ class EventSubRequest:
     def notification_target(self):
         r"""Gets the notification_target of this EventSubRequest.
 
-        消息通知地址
+        **参数解释**： 消息通知地址。 **取值范围**： 不涉及。
 
         :return: The notification_target of this EventSubRequest.
         :rtype: str
@@ -276,7 +276,7 @@ class EventSubRequest:
     def notification_target(self, notification_target):
         r"""Sets the notification_target of this EventSubRequest.
 
-        消息通知地址
+        **参数解释**： 消息通知地址。 **取值范围**： 不涉及。
 
         :param notification_target: The notification_target of this EventSubRequest.
         :type notification_target: str
@@ -287,7 +287,7 @@ class EventSubRequest:
     def notification_target_name(self):
         r"""Gets the notification_target_name of this EventSubRequest.
 
-        消息主题名称
+        **参数解释**： 消息主题名称。 **取值范围**： 不涉及。
 
         :return: The notification_target_name of this EventSubRequest.
         :rtype: str
@@ -298,7 +298,7 @@ class EventSubRequest:
     def notification_target_name(self, notification_target_name):
         r"""Sets the notification_target_name of this EventSubRequest.
 
-        消息主题名称
+        **参数解释**： 消息主题名称。 **取值范围**： 不涉及。
 
         :param notification_target_name: The notification_target_name of this EventSubRequest.
         :type notification_target_name: str
@@ -309,7 +309,7 @@ class EventSubRequest:
     def notification_target_type(self):
         r"""Gets the notification_target_type of this EventSubRequest.
 
-        消息通知类型只支持SMN
+        **参数解释**： 消息通知类型只支持SMN。 **取值范围**： 不涉及。
 
         :return: The notification_target_type of this EventSubRequest.
         :rtype: str
@@ -320,7 +320,7 @@ class EventSubRequest:
     def notification_target_type(self, notification_target_type):
         r"""Sets the notification_target_type of this EventSubRequest.
 
-        消息通知类型只支持SMN
+        **参数解释**： 消息通知类型只支持SMN。 **取值范围**： 不涉及。
 
         :param notification_target_type: The notification_target_type of this EventSubRequest.
         :type notification_target_type: str
@@ -331,7 +331,7 @@ class EventSubRequest:
     def time_zone(self):
         r"""Gets the time_zone of this EventSubRequest.
 
-        时区
+        **参数解释**： 时区。 **取值范围**： 不涉及。
 
         :return: The time_zone of this EventSubRequest.
         :rtype: str
@@ -342,7 +342,7 @@ class EventSubRequest:
     def time_zone(self, time_zone):
         r"""Sets the time_zone of this EventSubRequest.
 
-        时区
+        **参数解释**： 时区。 **取值范围**： 不涉及。
 
         :param time_zone: The time_zone of this EventSubRequest.
         :type time_zone: str

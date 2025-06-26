@@ -43,21 +43,21 @@ class ConfigurationParameter:
 
         The model defined in huaweicloud sdk
 
-        :param name: 参数名称。
+        :param name: **参数解释**： 参数名称。 **取值范围**： 不涉及。
         :type name: str
-        :param values: 参数值。
+        :param values: **参数解释**： 参数值。 **取值范围**： 不涉及。
         :type values: list[:class:`huaweicloudsdkdws.v2.ConfigurationParameterUnit`]
-        :param unit: 参数单位。
+        :param unit: **参数解释**： 参数单位。 **取值范围**： 不涉及。
         :type unit: str
-        :param type: 参数类型，包括boolean、string、integer、float、list。
+        :param type: **参数解释**： 参数类型。 **取值范围**： 包括boolean、string、integer、float、list。
         :type type: str
-        :param readonly: 是否只读。
+        :param readonly: **参数解释**： 是否只读。 **取值范围**： 不涉及。
         :type readonly: bool
-        :param value_range: 参数值范围。
+        :param value_range: **参数解释**： 参数值范围。 **取值范围**： 不涉及。
         :type value_range: str
-        :param restart_required: 是否需要重启。
+        :param restart_required: **参数解释**： 是否需要重启。 **取值范围**： 不涉及。
         :type restart_required: bool
-        :param description: 参数描述。
+        :param description: **参数解释**： 参数描述。 **取值范围**： 不涉及。
         :type description: str
         """
         
@@ -86,7 +86,7 @@ class ConfigurationParameter:
     def name(self):
         r"""Gets the name of this ConfigurationParameter.
 
-        参数名称。
+        **参数解释**： 参数名称。 **取值范围**： 不涉及。
 
         :return: The name of this ConfigurationParameter.
         :rtype: str
@@ -97,7 +97,7 @@ class ConfigurationParameter:
     def name(self, name):
         r"""Sets the name of this ConfigurationParameter.
 
-        参数名称。
+        **参数解释**： 参数名称。 **取值范围**： 不涉及。
 
         :param name: The name of this ConfigurationParameter.
         :type name: str
@@ -108,7 +108,7 @@ class ConfigurationParameter:
     def values(self):
         r"""Gets the values of this ConfigurationParameter.
 
-        参数值。
+        **参数解释**： 参数值。 **取值范围**： 不涉及。
 
         :return: The values of this ConfigurationParameter.
         :rtype: list[:class:`huaweicloudsdkdws.v2.ConfigurationParameterUnit`]
@@ -119,7 +119,7 @@ class ConfigurationParameter:
     def values(self, values):
         r"""Sets the values of this ConfigurationParameter.
 
-        参数值。
+        **参数解释**： 参数值。 **取值范围**： 不涉及。
 
         :param values: The values of this ConfigurationParameter.
         :type values: list[:class:`huaweicloudsdkdws.v2.ConfigurationParameterUnit`]
@@ -130,7 +130,7 @@ class ConfigurationParameter:
     def unit(self):
         r"""Gets the unit of this ConfigurationParameter.
 
-        参数单位。
+        **参数解释**： 参数单位。 **取值范围**： 不涉及。
 
         :return: The unit of this ConfigurationParameter.
         :rtype: str
@@ -141,7 +141,7 @@ class ConfigurationParameter:
     def unit(self, unit):
         r"""Sets the unit of this ConfigurationParameter.
 
-        参数单位。
+        **参数解释**： 参数单位。 **取值范围**： 不涉及。
 
         :param unit: The unit of this ConfigurationParameter.
         :type unit: str
@@ -152,7 +152,7 @@ class ConfigurationParameter:
     def type(self):
         r"""Gets the type of this ConfigurationParameter.
 
-        参数类型，包括boolean、string、integer、float、list。
+        **参数解释**： 参数类型。 **取值范围**： 包括boolean、string、integer、float、list。
 
         :return: The type of this ConfigurationParameter.
         :rtype: str
@@ -163,7 +163,7 @@ class ConfigurationParameter:
     def type(self, type):
         r"""Sets the type of this ConfigurationParameter.
 
-        参数类型，包括boolean、string、integer、float、list。
+        **参数解释**： 参数类型。 **取值范围**： 包括boolean、string、integer、float、list。
 
         :param type: The type of this ConfigurationParameter.
         :type type: str
@@ -174,7 +174,7 @@ class ConfigurationParameter:
     def readonly(self):
         r"""Gets the readonly of this ConfigurationParameter.
 
-        是否只读。
+        **参数解释**： 是否只读。 **取值范围**： 不涉及。
 
         :return: The readonly of this ConfigurationParameter.
         :rtype: bool
@@ -185,7 +185,7 @@ class ConfigurationParameter:
     def readonly(self, readonly):
         r"""Sets the readonly of this ConfigurationParameter.
 
-        是否只读。
+        **参数解释**： 是否只读。 **取值范围**： 不涉及。
 
         :param readonly: The readonly of this ConfigurationParameter.
         :type readonly: bool
@@ -196,7 +196,7 @@ class ConfigurationParameter:
     def value_range(self):
         r"""Gets the value_range of this ConfigurationParameter.
 
-        参数值范围。
+        **参数解释**： 参数值范围。 **取值范围**： 不涉及。
 
         :return: The value_range of this ConfigurationParameter.
         :rtype: str
@@ -207,7 +207,7 @@ class ConfigurationParameter:
     def value_range(self, value_range):
         r"""Sets the value_range of this ConfigurationParameter.
 
-        参数值范围。
+        **参数解释**： 参数值范围。 **取值范围**： 不涉及。
 
         :param value_range: The value_range of this ConfigurationParameter.
         :type value_range: str
@@ -218,7 +218,7 @@ class ConfigurationParameter:
     def restart_required(self):
         r"""Gets the restart_required of this ConfigurationParameter.
 
-        是否需要重启。
+        **参数解释**： 是否需要重启。 **取值范围**： 不涉及。
 
         :return: The restart_required of this ConfigurationParameter.
         :rtype: bool
@@ -229,7 +229,7 @@ class ConfigurationParameter:
     def restart_required(self, restart_required):
         r"""Sets the restart_required of this ConfigurationParameter.
 
-        是否需要重启。
+        **参数解释**： 是否需要重启。 **取值范围**： 不涉及。
 
         :param restart_required: The restart_required of this ConfigurationParameter.
         :type restart_required: bool
@@ -240,7 +240,7 @@ class ConfigurationParameter:
     def description(self):
         r"""Gets the description of this ConfigurationParameter.
 
-        参数描述。
+        **参数解释**： 参数描述。 **取值范围**： 不涉及。
 
         :return: The description of this ConfigurationParameter.
         :rtype: str
@@ -251,7 +251,7 @@ class ConfigurationParameter:
     def description(self, description):
         r"""Sets the description of this ConfigurationParameter.
 
-        参数描述。
+        **参数解释**： 参数描述。 **取值范围**： 不涉及。
 
         :param description: The description of this ConfigurationParameter.
         :type description: str

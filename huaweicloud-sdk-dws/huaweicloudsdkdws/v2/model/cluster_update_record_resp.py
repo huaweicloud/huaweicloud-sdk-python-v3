@@ -45,23 +45,23 @@ class ClusterUpdateRecordResp:
 
         The model defined in huaweicloud sdk
 
-        :param item_id: 升级项目ID
+        :param item_id: **参数解释**： 升级项目ID。 **取值范围**： 不涉及。
         :type item_id: str
-        :param status: 升级状态
+        :param status: **参数解释**： 升级状态。 **取值范围**： 不涉及。
         :type status: str
-        :param record_type: 升级类型
+        :param record_type: **参数解释**： 升级类型。 **取值范围**： 不涉及。
         :type record_type: str
-        :param from_version: 升级前版本
+        :param from_version: **参数解释**： 升级前版本。 **取值范围**： 不涉及。
         :type from_version: str
-        :param to_version: 目标版本
+        :param to_version: **参数解释**： 目标版本。 **取值范围**： 不涉及。
         :type to_version: str
-        :param start_time: 开始时间
+        :param start_time: **参数解释**： 开始时间。 **取值范围**： 不涉及。
         :type start_time: str
-        :param end_time: 结束时间
+        :param end_time: **参数解释**： 结束时间。 **取值范围**： 不涉及。
         :type end_time: str
-        :param job_id: 升级任务ID
+        :param job_id: **参数解释**： 升级任务ID。 **取值范围**： 不涉及。
         :type job_id: str
-        :param failed_reason: 失败原因
+        :param failed_reason: **参数解释**： 失败原因。 **取值范围**： 不涉及。
         :type failed_reason: str
         """
         
@@ -101,7 +101,7 @@ class ClusterUpdateRecordResp:
     def item_id(self):
         r"""Gets the item_id of this ClusterUpdateRecordResp.
 
-        升级项目ID
+        **参数解释**： 升级项目ID。 **取值范围**： 不涉及。
 
         :return: The item_id of this ClusterUpdateRecordResp.
         :rtype: str
@@ -112,7 +112,7 @@ class ClusterUpdateRecordResp:
     def item_id(self, item_id):
         r"""Sets the item_id of this ClusterUpdateRecordResp.
 
-        升级项目ID
+        **参数解释**： 升级项目ID。 **取值范围**： 不涉及。
 
         :param item_id: The item_id of this ClusterUpdateRecordResp.
         :type item_id: str
@@ -123,7 +123,7 @@ class ClusterUpdateRecordResp:
     def status(self):
         r"""Gets the status of this ClusterUpdateRecordResp.
 
-        升级状态
+        **参数解释**： 升级状态。 **取值范围**： 不涉及。
 
         :return: The status of this ClusterUpdateRecordResp.
         :rtype: str
@@ -134,7 +134,7 @@ class ClusterUpdateRecordResp:
     def status(self, status):
         r"""Sets the status of this ClusterUpdateRecordResp.
 
-        升级状态
+        **参数解释**： 升级状态。 **取值范围**： 不涉及。
 
         :param status: The status of this ClusterUpdateRecordResp.
         :type status: str
@@ -145,7 +145,7 @@ class ClusterUpdateRecordResp:
     def record_type(self):
         r"""Gets the record_type of this ClusterUpdateRecordResp.
 
-        升级类型
+        **参数解释**： 升级类型。 **取值范围**： 不涉及。
 
         :return: The record_type of this ClusterUpdateRecordResp.
         :rtype: str
@@ -156,7 +156,7 @@ class ClusterUpdateRecordResp:
     def record_type(self, record_type):
         r"""Sets the record_type of this ClusterUpdateRecordResp.
 
-        升级类型
+        **参数解释**： 升级类型。 **取值范围**： 不涉及。
 
         :param record_type: The record_type of this ClusterUpdateRecordResp.
         :type record_type: str
@@ -167,7 +167,7 @@ class ClusterUpdateRecordResp:
     def from_version(self):
         r"""Gets the from_version of this ClusterUpdateRecordResp.
 
-        升级前版本
+        **参数解释**： 升级前版本。 **取值范围**： 不涉及。
 
         :return: The from_version of this ClusterUpdateRecordResp.
         :rtype: str
@@ -178,7 +178,7 @@ class ClusterUpdateRecordResp:
     def from_version(self, from_version):
         r"""Sets the from_version of this ClusterUpdateRecordResp.
 
-        升级前版本
+        **参数解释**： 升级前版本。 **取值范围**： 不涉及。
 
         :param from_version: The from_version of this ClusterUpdateRecordResp.
         :type from_version: str
@@ -189,7 +189,7 @@ class ClusterUpdateRecordResp:
     def to_version(self):
         r"""Gets the to_version of this ClusterUpdateRecordResp.
 
-        目标版本
+        **参数解释**： 目标版本。 **取值范围**： 不涉及。
 
         :return: The to_version of this ClusterUpdateRecordResp.
         :rtype: str
@@ -200,7 +200,7 @@ class ClusterUpdateRecordResp:
     def to_version(self, to_version):
         r"""Sets the to_version of this ClusterUpdateRecordResp.
 
-        目标版本
+        **参数解释**： 目标版本。 **取值范围**： 不涉及。
 
         :param to_version: The to_version of this ClusterUpdateRecordResp.
         :type to_version: str
@@ -211,7 +211,7 @@ class ClusterUpdateRecordResp:
     def start_time(self):
         r"""Gets the start_time of this ClusterUpdateRecordResp.
 
-        开始时间
+        **参数解释**： 开始时间。 **取值范围**： 不涉及。
 
         :return: The start_time of this ClusterUpdateRecordResp.
         :rtype: str
@@ -222,7 +222,7 @@ class ClusterUpdateRecordResp:
     def start_time(self, start_time):
         r"""Sets the start_time of this ClusterUpdateRecordResp.
 
-        开始时间
+        **参数解释**： 开始时间。 **取值范围**： 不涉及。
 
         :param start_time: The start_time of this ClusterUpdateRecordResp.
         :type start_time: str
@@ -233,7 +233,7 @@ class ClusterUpdateRecordResp:
     def end_time(self):
         r"""Gets the end_time of this ClusterUpdateRecordResp.
 
-        结束时间
+        **参数解释**： 结束时间。 **取值范围**： 不涉及。
 
         :return: The end_time of this ClusterUpdateRecordResp.
         :rtype: str
@@ -244,7 +244,7 @@ class ClusterUpdateRecordResp:
     def end_time(self, end_time):
         r"""Sets the end_time of this ClusterUpdateRecordResp.
 
-        结束时间
+        **参数解释**： 结束时间。 **取值范围**： 不涉及。
 
         :param end_time: The end_time of this ClusterUpdateRecordResp.
         :type end_time: str
@@ -255,7 +255,7 @@ class ClusterUpdateRecordResp:
     def job_id(self):
         r"""Gets the job_id of this ClusterUpdateRecordResp.
 
-        升级任务ID
+        **参数解释**： 升级任务ID。 **取值范围**： 不涉及。
 
         :return: The job_id of this ClusterUpdateRecordResp.
         :rtype: str
@@ -266,7 +266,7 @@ class ClusterUpdateRecordResp:
     def job_id(self, job_id):
         r"""Sets the job_id of this ClusterUpdateRecordResp.
 
-        升级任务ID
+        **参数解释**： 升级任务ID。 **取值范围**： 不涉及。
 
         :param job_id: The job_id of this ClusterUpdateRecordResp.
         :type job_id: str
@@ -277,7 +277,7 @@ class ClusterUpdateRecordResp:
     def failed_reason(self):
         r"""Gets the failed_reason of this ClusterUpdateRecordResp.
 
-        失败原因
+        **参数解释**： 失败原因。 **取值范围**： 不涉及。
 
         :return: The failed_reason of this ClusterUpdateRecordResp.
         :rtype: str
@@ -288,7 +288,7 @@ class ClusterUpdateRecordResp:
     def failed_reason(self, failed_reason):
         r"""Sets the failed_reason of this ClusterUpdateRecordResp.
 
-        失败原因
+        **参数解释**： 失败原因。 **取值范围**： 不涉及。
 
         :param failed_reason: The failed_reason of this ClusterUpdateRecordResp.
         :type failed_reason: str

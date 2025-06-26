@@ -23,7 +23,8 @@ class CreateServerRequest:
         'client_auth_type': 'str',
         'server_certificate': 'CreateServerRequestServerCertificate',
         'client_ca_certificates': 'list[CreateServerRequestClientCaCertificates]',
-        'ssl_options': 'CreateServerRequestSslOptions'
+        'ssl_options': 'CreateServerRequestSslOptions',
+        'dns_servers': 'list[str]'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class CreateServerRequest:
         'client_auth_type': 'client_auth_type',
         'server_certificate': 'server_certificate',
         'client_ca_certificates': 'client_ca_certificates',
-        'ssl_options': 'ssl_options'
+        'ssl_options': 'ssl_options',
+        'dns_servers': 'dns_servers'
     }
 
-    def __init__(self, tunnel_protocol=None, client_cidr=None, local_subnets=None, client_auth_type=None, server_certificate=None, client_ca_certificates=None, ssl_options=None):
+    def __init__(self, tunnel_protocol=None, client_cidr=None, local_subnets=None, client_auth_type=None, server_certificate=None, client_ca_certificates=None, ssl_options=None, dns_servers=None):
         r"""CreateServerRequest
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class CreateServerRequest:
         :type client_ca_certificates: list[:class:`huaweicloudsdkvpn.v5.CreateServerRequestClientCaCertificates`]
         :param ssl_options: 
         :type ssl_options: :class:`huaweicloudsdkvpn.v5.CreateServerRequestSslOptions`
+        :param dns_servers: DNS服务器列表，最多两个DNS
+        :type dns_servers: list[str]
         """
         
         
@@ -66,6 +70,7 @@ class CreateServerRequest:
         self._server_certificate = None
         self._client_ca_certificates = None
         self._ssl_options = None
+        self._dns_servers = None
         self.discriminator = None
 
         if tunnel_protocol is not None:
@@ -80,6 +85,8 @@ class CreateServerRequest:
             self.client_ca_certificates = client_ca_certificates
         if ssl_options is not None:
             self.ssl_options = ssl_options
+        if dns_servers is not None:
+            self.dns_servers = dns_servers
 
     @property
     def tunnel_protocol(self):
@@ -226,6 +233,28 @@ class CreateServerRequest:
         :type ssl_options: :class:`huaweicloudsdkvpn.v5.CreateServerRequestSslOptions`
         """
         self._ssl_options = ssl_options
+
+    @property
+    def dns_servers(self):
+        r"""Gets the dns_servers of this CreateServerRequest.
+
+        DNS服务器列表，最多两个DNS
+
+        :return: The dns_servers of this CreateServerRequest.
+        :rtype: list[str]
+        """
+        return self._dns_servers
+
+    @dns_servers.setter
+    def dns_servers(self, dns_servers):
+        r"""Sets the dns_servers of this CreateServerRequest.
+
+        DNS服务器列表，最多两个DNS
+
+        :param dns_servers: The dns_servers of this CreateServerRequest.
+        :type dns_servers: list[str]
+        """
+        self._dns_servers = dns_servers
 
     def to_dict(self):
         """Returns the model properties as a dict"""

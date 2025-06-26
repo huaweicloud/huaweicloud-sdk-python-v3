@@ -39,17 +39,17 @@ class UpdateDisasterRecoveryReq:
 
         The model defined in huaweicloud sdk
 
-        :param dr_sync_period: 容灾同步周期
+        :param dr_sync_period: **参数解释**： 容灾同步周期。 **取值范围**： 不涉及。
         :type dr_sync_period: str
-        :param send_request: 是否发送请求
+        :param send_request: **参数解释**： 是否发送请求。 **取值范围**： 不涉及。
         :type send_request: int
-        :param primary_to_role: 主集群角色
+        :param primary_to_role: **参数解释**： 主集群角色。 **取值范围**： 不涉及。
         :type primary_to_role: str
-        :param reset_action: 设置容灾动作
+        :param reset_action: **参数解释**： 设置容灾动作。 **取值范围**： 不涉及。
         :type reset_action: str
-        :param standby_to_role: 备集群角色
+        :param standby_to_role: **参数解释**： 备集群角色。 **取值范围**： 不涉及。
         :type standby_to_role: str
-        :param dr_status: 容灾状态
+        :param dr_status: **参数解释**： 容灾状态。 **取值范围**： 不涉及。
         :type dr_status: str
         """
         
@@ -80,7 +80,7 @@ class UpdateDisasterRecoveryReq:
     def dr_sync_period(self):
         r"""Gets the dr_sync_period of this UpdateDisasterRecoveryReq.
 
-        容灾同步周期
+        **参数解释**： 容灾同步周期。 **取值范围**： 不涉及。
 
         :return: The dr_sync_period of this UpdateDisasterRecoveryReq.
         :rtype: str
@@ -91,7 +91,7 @@ class UpdateDisasterRecoveryReq:
     def dr_sync_period(self, dr_sync_period):
         r"""Sets the dr_sync_period of this UpdateDisasterRecoveryReq.
 
-        容灾同步周期
+        **参数解释**： 容灾同步周期。 **取值范围**： 不涉及。
 
         :param dr_sync_period: The dr_sync_period of this UpdateDisasterRecoveryReq.
         :type dr_sync_period: str
@@ -102,7 +102,7 @@ class UpdateDisasterRecoveryReq:
     def send_request(self):
         r"""Gets the send_request of this UpdateDisasterRecoveryReq.
 
-        是否发送请求
+        **参数解释**： 是否发送请求。 **取值范围**： 不涉及。
 
         :return: The send_request of this UpdateDisasterRecoveryReq.
         :rtype: int
@@ -113,7 +113,7 @@ class UpdateDisasterRecoveryReq:
     def send_request(self, send_request):
         r"""Sets the send_request of this UpdateDisasterRecoveryReq.
 
-        是否发送请求
+        **参数解释**： 是否发送请求。 **取值范围**： 不涉及。
 
         :param send_request: The send_request of this UpdateDisasterRecoveryReq.
         :type send_request: int
@@ -124,7 +124,7 @@ class UpdateDisasterRecoveryReq:
     def primary_to_role(self):
         r"""Gets the primary_to_role of this UpdateDisasterRecoveryReq.
 
-        主集群角色
+        **参数解释**： 主集群角色。 **取值范围**： 不涉及。
 
         :return: The primary_to_role of this UpdateDisasterRecoveryReq.
         :rtype: str
@@ -135,7 +135,7 @@ class UpdateDisasterRecoveryReq:
     def primary_to_role(self, primary_to_role):
         r"""Sets the primary_to_role of this UpdateDisasterRecoveryReq.
 
-        主集群角色
+        **参数解释**： 主集群角色。 **取值范围**： 不涉及。
 
         :param primary_to_role: The primary_to_role of this UpdateDisasterRecoveryReq.
         :type primary_to_role: str
@@ -146,7 +146,7 @@ class UpdateDisasterRecoveryReq:
     def reset_action(self):
         r"""Gets the reset_action of this UpdateDisasterRecoveryReq.
 
-        设置容灾动作
+        **参数解释**： 设置容灾动作。 **取值范围**： 不涉及。
 
         :return: The reset_action of this UpdateDisasterRecoveryReq.
         :rtype: str
@@ -157,7 +157,7 @@ class UpdateDisasterRecoveryReq:
     def reset_action(self, reset_action):
         r"""Sets the reset_action of this UpdateDisasterRecoveryReq.
 
-        设置容灾动作
+        **参数解释**： 设置容灾动作。 **取值范围**： 不涉及。
 
         :param reset_action: The reset_action of this UpdateDisasterRecoveryReq.
         :type reset_action: str
@@ -168,7 +168,7 @@ class UpdateDisasterRecoveryReq:
     def standby_to_role(self):
         r"""Gets the standby_to_role of this UpdateDisasterRecoveryReq.
 
-        备集群角色
+        **参数解释**： 备集群角色。 **取值范围**： 不涉及。
 
         :return: The standby_to_role of this UpdateDisasterRecoveryReq.
         :rtype: str
@@ -179,7 +179,7 @@ class UpdateDisasterRecoveryReq:
     def standby_to_role(self, standby_to_role):
         r"""Sets the standby_to_role of this UpdateDisasterRecoveryReq.
 
-        备集群角色
+        **参数解释**： 备集群角色。 **取值范围**： 不涉及。
 
         :param standby_to_role: The standby_to_role of this UpdateDisasterRecoveryReq.
         :type standby_to_role: str
@@ -190,7 +190,7 @@ class UpdateDisasterRecoveryReq:
     def dr_status(self):
         r"""Gets the dr_status of this UpdateDisasterRecoveryReq.
 
-        容灾状态
+        **参数解释**： 容灾状态。 **取值范围**： 不涉及。
 
         :return: The dr_status of this UpdateDisasterRecoveryReq.
         :rtype: str
@@ -201,7 +201,7 @@ class UpdateDisasterRecoveryReq:
     def dr_status(self, dr_status):
         r"""Sets the dr_status of this UpdateDisasterRecoveryReq.
 
-        容灾状态
+        **参数解释**： 容灾状态。 **取值范围**： 不涉及。
 
         :param dr_status: The dr_status of this UpdateDisasterRecoveryReq.
         :type dr_status: str

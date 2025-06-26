@@ -45,23 +45,23 @@ class DisasterRecoveryCluster:
 
         The model defined in huaweicloud sdk
 
-        :param id: 容灾集群信息ID
+        :param id: **参数解释**： 容灾集群信息ID。 **取值范围**： 不涉及。
         :type id: str
-        :param name: 容灾集群名称
+        :param name: **参数解释**： 容灾集群名称。 **取值范围**： 不涉及。
         :type name: str
-        :param cluster_az: 容灾集群所在AZ
+        :param cluster_az: **参数解释**： 容灾集群所在可用区。 **取值范围**： 不涉及。
         :type cluster_az: str
-        :param role: 容灾集群角色
+        :param role: **参数解释**： 容灾集群角色。 **取值范围**： 不涉及。
         :type role: str
-        :param region: 容灾集群所在region
+        :param region: **参数解释**： 容灾集群所在region。 **取值范围**： 不涉及。
         :type region: str
-        :param status: 容灾集群状态
+        :param status: **参数解释**： 容灾集群状态。 **取值范围**： 不涉及。
         :type status: str
-        :param progress: 容灾进度
+        :param progress: **参数解释**： 容灾进度。 **取值范围**： 不涉及。
         :type progress: str
-        :param last_success_time: 上一次容灾时间
+        :param last_success_time: **参数解释**： 上一次容灾时间。 **取值范围**： 不涉及。
         :type last_success_time: str
-        :param obs_bucket_name: OBS桶名称
+        :param obs_bucket_name: **参数解释**： OBS桶名称。 **取值范围**： 不涉及。
         :type obs_bucket_name: str
         """
         
@@ -101,7 +101,7 @@ class DisasterRecoveryCluster:
     def id(self):
         r"""Gets the id of this DisasterRecoveryCluster.
 
-        容灾集群信息ID
+        **参数解释**： 容灾集群信息ID。 **取值范围**： 不涉及。
 
         :return: The id of this DisasterRecoveryCluster.
         :rtype: str
@@ -112,7 +112,7 @@ class DisasterRecoveryCluster:
     def id(self, id):
         r"""Sets the id of this DisasterRecoveryCluster.
 
-        容灾集群信息ID
+        **参数解释**： 容灾集群信息ID。 **取值范围**： 不涉及。
 
         :param id: The id of this DisasterRecoveryCluster.
         :type id: str
@@ -123,7 +123,7 @@ class DisasterRecoveryCluster:
     def name(self):
         r"""Gets the name of this DisasterRecoveryCluster.
 
-        容灾集群名称
+        **参数解释**： 容灾集群名称。 **取值范围**： 不涉及。
 
         :return: The name of this DisasterRecoveryCluster.
         :rtype: str
@@ -134,7 +134,7 @@ class DisasterRecoveryCluster:
     def name(self, name):
         r"""Sets the name of this DisasterRecoveryCluster.
 
-        容灾集群名称
+        **参数解释**： 容灾集群名称。 **取值范围**： 不涉及。
 
         :param name: The name of this DisasterRecoveryCluster.
         :type name: str
@@ -145,7 +145,7 @@ class DisasterRecoveryCluster:
     def cluster_az(self):
         r"""Gets the cluster_az of this DisasterRecoveryCluster.
 
-        容灾集群所在AZ
+        **参数解释**： 容灾集群所在可用区。 **取值范围**： 不涉及。
 
         :return: The cluster_az of this DisasterRecoveryCluster.
         :rtype: str
@@ -156,7 +156,7 @@ class DisasterRecoveryCluster:
     def cluster_az(self, cluster_az):
         r"""Sets the cluster_az of this DisasterRecoveryCluster.
 
-        容灾集群所在AZ
+        **参数解释**： 容灾集群所在可用区。 **取值范围**： 不涉及。
 
         :param cluster_az: The cluster_az of this DisasterRecoveryCluster.
         :type cluster_az: str
@@ -167,7 +167,7 @@ class DisasterRecoveryCluster:
     def role(self):
         r"""Gets the role of this DisasterRecoveryCluster.
 
-        容灾集群角色
+        **参数解释**： 容灾集群角色。 **取值范围**： 不涉及。
 
         :return: The role of this DisasterRecoveryCluster.
         :rtype: str
@@ -178,7 +178,7 @@ class DisasterRecoveryCluster:
     def role(self, role):
         r"""Sets the role of this DisasterRecoveryCluster.
 
-        容灾集群角色
+        **参数解释**： 容灾集群角色。 **取值范围**： 不涉及。
 
         :param role: The role of this DisasterRecoveryCluster.
         :type role: str
@@ -189,7 +189,7 @@ class DisasterRecoveryCluster:
     def region(self):
         r"""Gets the region of this DisasterRecoveryCluster.
 
-        容灾集群所在region
+        **参数解释**： 容灾集群所在region。 **取值范围**： 不涉及。
 
         :return: The region of this DisasterRecoveryCluster.
         :rtype: str
@@ -200,7 +200,7 @@ class DisasterRecoveryCluster:
     def region(self, region):
         r"""Sets the region of this DisasterRecoveryCluster.
 
-        容灾集群所在region
+        **参数解释**： 容灾集群所在region。 **取值范围**： 不涉及。
 
         :param region: The region of this DisasterRecoveryCluster.
         :type region: str
@@ -211,7 +211,7 @@ class DisasterRecoveryCluster:
     def status(self):
         r"""Gets the status of this DisasterRecoveryCluster.
 
-        容灾集群状态
+        **参数解释**： 容灾集群状态。 **取值范围**： 不涉及。
 
         :return: The status of this DisasterRecoveryCluster.
         :rtype: str
@@ -222,7 +222,7 @@ class DisasterRecoveryCluster:
     def status(self, status):
         r"""Sets the status of this DisasterRecoveryCluster.
 
-        容灾集群状态
+        **参数解释**： 容灾集群状态。 **取值范围**： 不涉及。
 
         :param status: The status of this DisasterRecoveryCluster.
         :type status: str
@@ -233,7 +233,7 @@ class DisasterRecoveryCluster:
     def progress(self):
         r"""Gets the progress of this DisasterRecoveryCluster.
 
-        容灾进度
+        **参数解释**： 容灾进度。 **取值范围**： 不涉及。
 
         :return: The progress of this DisasterRecoveryCluster.
         :rtype: str
@@ -244,7 +244,7 @@ class DisasterRecoveryCluster:
     def progress(self, progress):
         r"""Sets the progress of this DisasterRecoveryCluster.
 
-        容灾进度
+        **参数解释**： 容灾进度。 **取值范围**： 不涉及。
 
         :param progress: The progress of this DisasterRecoveryCluster.
         :type progress: str
@@ -255,7 +255,7 @@ class DisasterRecoveryCluster:
     def last_success_time(self):
         r"""Gets the last_success_time of this DisasterRecoveryCluster.
 
-        上一次容灾时间
+        **参数解释**： 上一次容灾时间。 **取值范围**： 不涉及。
 
         :return: The last_success_time of this DisasterRecoveryCluster.
         :rtype: str
@@ -266,7 +266,7 @@ class DisasterRecoveryCluster:
     def last_success_time(self, last_success_time):
         r"""Sets the last_success_time of this DisasterRecoveryCluster.
 
-        上一次容灾时间
+        **参数解释**： 上一次容灾时间。 **取值范围**： 不涉及。
 
         :param last_success_time: The last_success_time of this DisasterRecoveryCluster.
         :type last_success_time: str
@@ -277,7 +277,7 @@ class DisasterRecoveryCluster:
     def obs_bucket_name(self):
         r"""Gets the obs_bucket_name of this DisasterRecoveryCluster.
 
-        OBS桶名称
+        **参数解释**： OBS桶名称。 **取值范围**： 不涉及。
 
         :return: The obs_bucket_name of this DisasterRecoveryCluster.
         :rtype: str
@@ -288,7 +288,7 @@ class DisasterRecoveryCluster:
     def obs_bucket_name(self, obs_bucket_name):
         r"""Sets the obs_bucket_name of this DisasterRecoveryCluster.
 
-        OBS桶名称
+        **参数解释**： OBS桶名称。 **取值范围**： 不涉及。
 
         :param obs_bucket_name: The obs_bucket_name of this DisasterRecoveryCluster.
         :type obs_bucket_name: str

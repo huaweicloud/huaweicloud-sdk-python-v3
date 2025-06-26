@@ -49,27 +49,27 @@ class ClusterElbInfo:
 
         The model defined in huaweicloud sdk
 
-        :param id: 弹性负载均衡ID
+        :param id: **参数解释**： 弹性负载均衡ID。 **取值范围**： 不涉及。
         :type id: str
         :param cluster_id: **参数解释**： 集群ID。 **取值范围**： 36位UUID。
         :type cluster_id: str
-        :param name: 弹性负载均衡名称
+        :param name: **参数解释**： 弹性负载均衡名称。 **取值范围**： 不涉及。
         :type name: str
-        :param description: 弹性负载均衡描述
+        :param description: **参数解释**： 弹性负载均衡描述。 **取值范围**： 不涉及。
         :type description: str
-        :param vip_address: 弹性负载均衡地址
+        :param vip_address: **参数解释**： 弹性负载均衡地址。 **取值范围**： 不涉及。
         :type vip_address: str
-        :param vip_subnet_id: 子网ID
+        :param vip_subnet_id: **参数解释**： 子网ID。 **取值范围**： 不涉及。
         :type vip_subnet_id: str
-        :param tenant_id: 租户ID
+        :param tenant_id: **参数解释**： 租户ID。 **取值范围**： 不涉及。
         :type tenant_id: str
-        :param type: 弹性负载均衡类型。枚举值：Internal,External
+        :param type: **参数解释**： 弹性负载均衡类型。 **取值范围**： Internal：独享型。 External：共享型。
         :type type: str
-        :param admin_state_up: 弹性负载均衡的管理状态。枚举值：ACTIVE,PENDING_CREATE,ERROR
+        :param admin_state_up: **参数解释**： 弹性负载均衡的管理状态。 **取值范围**： ACTIVE：使用中 PENDING_CREATE：创建中 ERROR：表示当前策略与同一监听器下的其他策略存在相同的规格配置。
         :type admin_state_up: bool
-        :param bandwidth: 绑定状态： 0为未绑定，1为已绑定
+        :param bandwidth: **参数解释**： 带宽信息。 **取值范围**： 大于等于0的正整数。
         :type bandwidth: int
-        :param vpc_id: 虚拟私有云ID
+        :param vpc_id: **参数解释**： 虚拟私有云ID。 **取值范围**： 不涉及。
         :type vpc_id: str
         """
         
@@ -115,7 +115,7 @@ class ClusterElbInfo:
     def id(self):
         r"""Gets the id of this ClusterElbInfo.
 
-        弹性负载均衡ID
+        **参数解释**： 弹性负载均衡ID。 **取值范围**： 不涉及。
 
         :return: The id of this ClusterElbInfo.
         :rtype: str
@@ -126,7 +126,7 @@ class ClusterElbInfo:
     def id(self, id):
         r"""Sets the id of this ClusterElbInfo.
 
-        弹性负载均衡ID
+        **参数解释**： 弹性负载均衡ID。 **取值范围**： 不涉及。
 
         :param id: The id of this ClusterElbInfo.
         :type id: str
@@ -159,7 +159,7 @@ class ClusterElbInfo:
     def name(self):
         r"""Gets the name of this ClusterElbInfo.
 
-        弹性负载均衡名称
+        **参数解释**： 弹性负载均衡名称。 **取值范围**： 不涉及。
 
         :return: The name of this ClusterElbInfo.
         :rtype: str
@@ -170,7 +170,7 @@ class ClusterElbInfo:
     def name(self, name):
         r"""Sets the name of this ClusterElbInfo.
 
-        弹性负载均衡名称
+        **参数解释**： 弹性负载均衡名称。 **取值范围**： 不涉及。
 
         :param name: The name of this ClusterElbInfo.
         :type name: str
@@ -181,7 +181,7 @@ class ClusterElbInfo:
     def description(self):
         r"""Gets the description of this ClusterElbInfo.
 
-        弹性负载均衡描述
+        **参数解释**： 弹性负载均衡描述。 **取值范围**： 不涉及。
 
         :return: The description of this ClusterElbInfo.
         :rtype: str
@@ -192,7 +192,7 @@ class ClusterElbInfo:
     def description(self, description):
         r"""Sets the description of this ClusterElbInfo.
 
-        弹性负载均衡描述
+        **参数解释**： 弹性负载均衡描述。 **取值范围**： 不涉及。
 
         :param description: The description of this ClusterElbInfo.
         :type description: str
@@ -203,7 +203,7 @@ class ClusterElbInfo:
     def vip_address(self):
         r"""Gets the vip_address of this ClusterElbInfo.
 
-        弹性负载均衡地址
+        **参数解释**： 弹性负载均衡地址。 **取值范围**： 不涉及。
 
         :return: The vip_address of this ClusterElbInfo.
         :rtype: str
@@ -214,7 +214,7 @@ class ClusterElbInfo:
     def vip_address(self, vip_address):
         r"""Sets the vip_address of this ClusterElbInfo.
 
-        弹性负载均衡地址
+        **参数解释**： 弹性负载均衡地址。 **取值范围**： 不涉及。
 
         :param vip_address: The vip_address of this ClusterElbInfo.
         :type vip_address: str
@@ -225,7 +225,7 @@ class ClusterElbInfo:
     def vip_subnet_id(self):
         r"""Gets the vip_subnet_id of this ClusterElbInfo.
 
-        子网ID
+        **参数解释**： 子网ID。 **取值范围**： 不涉及。
 
         :return: The vip_subnet_id of this ClusterElbInfo.
         :rtype: str
@@ -236,7 +236,7 @@ class ClusterElbInfo:
     def vip_subnet_id(self, vip_subnet_id):
         r"""Sets the vip_subnet_id of this ClusterElbInfo.
 
-        子网ID
+        **参数解释**： 子网ID。 **取值范围**： 不涉及。
 
         :param vip_subnet_id: The vip_subnet_id of this ClusterElbInfo.
         :type vip_subnet_id: str
@@ -247,7 +247,7 @@ class ClusterElbInfo:
     def tenant_id(self):
         r"""Gets the tenant_id of this ClusterElbInfo.
 
-        租户ID
+        **参数解释**： 租户ID。 **取值范围**： 不涉及。
 
         :return: The tenant_id of this ClusterElbInfo.
         :rtype: str
@@ -258,7 +258,7 @@ class ClusterElbInfo:
     def tenant_id(self, tenant_id):
         r"""Sets the tenant_id of this ClusterElbInfo.
 
-        租户ID
+        **参数解释**： 租户ID。 **取值范围**： 不涉及。
 
         :param tenant_id: The tenant_id of this ClusterElbInfo.
         :type tenant_id: str
@@ -269,7 +269,7 @@ class ClusterElbInfo:
     def type(self):
         r"""Gets the type of this ClusterElbInfo.
 
-        弹性负载均衡类型。枚举值：Internal,External
+        **参数解释**： 弹性负载均衡类型。 **取值范围**： Internal：独享型。 External：共享型。
 
         :return: The type of this ClusterElbInfo.
         :rtype: str
@@ -280,7 +280,7 @@ class ClusterElbInfo:
     def type(self, type):
         r"""Sets the type of this ClusterElbInfo.
 
-        弹性负载均衡类型。枚举值：Internal,External
+        **参数解释**： 弹性负载均衡类型。 **取值范围**： Internal：独享型。 External：共享型。
 
         :param type: The type of this ClusterElbInfo.
         :type type: str
@@ -291,7 +291,7 @@ class ClusterElbInfo:
     def admin_state_up(self):
         r"""Gets the admin_state_up of this ClusterElbInfo.
 
-        弹性负载均衡的管理状态。枚举值：ACTIVE,PENDING_CREATE,ERROR
+        **参数解释**： 弹性负载均衡的管理状态。 **取值范围**： ACTIVE：使用中 PENDING_CREATE：创建中 ERROR：表示当前策略与同一监听器下的其他策略存在相同的规格配置。
 
         :return: The admin_state_up of this ClusterElbInfo.
         :rtype: bool
@@ -302,7 +302,7 @@ class ClusterElbInfo:
     def admin_state_up(self, admin_state_up):
         r"""Sets the admin_state_up of this ClusterElbInfo.
 
-        弹性负载均衡的管理状态。枚举值：ACTIVE,PENDING_CREATE,ERROR
+        **参数解释**： 弹性负载均衡的管理状态。 **取值范围**： ACTIVE：使用中 PENDING_CREATE：创建中 ERROR：表示当前策略与同一监听器下的其他策略存在相同的规格配置。
 
         :param admin_state_up: The admin_state_up of this ClusterElbInfo.
         :type admin_state_up: bool
@@ -313,7 +313,7 @@ class ClusterElbInfo:
     def bandwidth(self):
         r"""Gets the bandwidth of this ClusterElbInfo.
 
-        绑定状态： 0为未绑定，1为已绑定
+        **参数解释**： 带宽信息。 **取值范围**： 大于等于0的正整数。
 
         :return: The bandwidth of this ClusterElbInfo.
         :rtype: int
@@ -324,7 +324,7 @@ class ClusterElbInfo:
     def bandwidth(self, bandwidth):
         r"""Sets the bandwidth of this ClusterElbInfo.
 
-        绑定状态： 0为未绑定，1为已绑定
+        **参数解释**： 带宽信息。 **取值范围**： 大于等于0的正整数。
 
         :param bandwidth: The bandwidth of this ClusterElbInfo.
         :type bandwidth: int
@@ -335,7 +335,7 @@ class ClusterElbInfo:
     def vpc_id(self):
         r"""Gets the vpc_id of this ClusterElbInfo.
 
-        虚拟私有云ID
+        **参数解释**： 虚拟私有云ID。 **取值范围**： 不涉及。
 
         :return: The vpc_id of this ClusterElbInfo.
         :rtype: str
@@ -346,7 +346,7 @@ class ClusterElbInfo:
     def vpc_id(self, vpc_id):
         r"""Sets the vpc_id of this ClusterElbInfo.
 
-        虚拟私有云ID
+        **参数解释**： 虚拟私有云ID。 **取值范围**： 不涉及。
 
         :param vpc_id: The vpc_id of this ClusterElbInfo.
         :type vpc_id: str

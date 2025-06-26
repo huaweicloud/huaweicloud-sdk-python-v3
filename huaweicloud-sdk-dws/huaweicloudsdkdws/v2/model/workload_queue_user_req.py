@@ -31,9 +31,9 @@ class WorkloadQueueUserReq:
 
         The model defined in huaweicloud sdk
 
-        :param queue_name: **参数解释**： 工作负载队列名称。。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :param queue_name: **参数解释**： 资源池名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type queue_name: str
-        :param user_list: **参数解释**： 工作负载队列用户列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :param user_list: **参数解释**： 资源池用户列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type user_list: list[:class:`huaweicloudsdkdws.v2.WorkloadQueueUserReqUserList`]
         """
         
@@ -50,7 +50,7 @@ class WorkloadQueueUserReq:
     def queue_name(self):
         r"""Gets the queue_name of this WorkloadQueueUserReq.
 
-        **参数解释**： 工作负载队列名称。。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 资源池名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The queue_name of this WorkloadQueueUserReq.
         :rtype: str
@@ -61,7 +61,7 @@ class WorkloadQueueUserReq:
     def queue_name(self, queue_name):
         r"""Sets the queue_name of this WorkloadQueueUserReq.
 
-        **参数解释**： 工作负载队列名称。。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 资源池名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param queue_name: The queue_name of this WorkloadQueueUserReq.
         :type queue_name: str
@@ -72,7 +72,7 @@ class WorkloadQueueUserReq:
     def user_list(self):
         r"""Gets the user_list of this WorkloadQueueUserReq.
 
-        **参数解释**： 工作负载队列用户列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 资源池用户列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The user_list of this WorkloadQueueUserReq.
         :rtype: list[:class:`huaweicloudsdkdws.v2.WorkloadQueueUserReqUserList`]
@@ -83,7 +83,7 @@ class WorkloadQueueUserReq:
     def user_list(self, user_list):
         r"""Sets the user_list of this WorkloadQueueUserReq.
 
-        **参数解释**： 工作负载队列用户列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 资源池用户列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param user_list: The user_list of this WorkloadQueueUserReq.
         :type user_list: list[:class:`huaweicloudsdkdws.v2.WorkloadQueueUserReqUserList`]

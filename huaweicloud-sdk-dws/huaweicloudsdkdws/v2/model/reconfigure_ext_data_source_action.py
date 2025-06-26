@@ -31,9 +31,9 @@ class ReconfigureExtDataSourceAction:
 
         The model defined in huaweicloud sdk
 
-        :param reboot: 重启。
+        :param reboot: **参数解释**： 重启。 **取值范围**： 不涉及。
         :type reboot: bool
-        :param agency: 委托。
+        :param agency: **参数解释**： 委托。 **取值范围**： 不涉及。
         :type agency: str
         """
         
@@ -52,7 +52,7 @@ class ReconfigureExtDataSourceAction:
     def reboot(self):
         r"""Gets the reboot of this ReconfigureExtDataSourceAction.
 
-        重启。
+        **参数解释**： 重启。 **取值范围**： 不涉及。
 
         :return: The reboot of this ReconfigureExtDataSourceAction.
         :rtype: bool
@@ -63,7 +63,7 @@ class ReconfigureExtDataSourceAction:
     def reboot(self, reboot):
         r"""Sets the reboot of this ReconfigureExtDataSourceAction.
 
-        重启。
+        **参数解释**： 重启。 **取值范围**： 不涉及。
 
         :param reboot: The reboot of this ReconfigureExtDataSourceAction.
         :type reboot: bool
@@ -74,7 +74,7 @@ class ReconfigureExtDataSourceAction:
     def agency(self):
         r"""Gets the agency of this ReconfigureExtDataSourceAction.
 
-        委托。
+        **参数解释**： 委托。 **取值范围**： 不涉及。
 
         :return: The agency of this ReconfigureExtDataSourceAction.
         :rtype: str
@@ -85,7 +85,7 @@ class ReconfigureExtDataSourceAction:
     def agency(self, agency):
         r"""Sets the agency of this ReconfigureExtDataSourceAction.
 
-        委托。
+        **参数解释**： 委托。 **取值范围**： 不涉及。
 
         :param agency: The agency of this ReconfigureExtDataSourceAction.
         :type agency: str

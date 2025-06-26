@@ -38,6 +38,7 @@ class TaskByServerSources:
         'clone_server': 'CloneServer',
         'remain_seconds': 'int',
         'log_bucket': 'str',
+        'log_expire': 'int',
         'log_upload_time': 'int',
         'log_share_url': 'str'
     }
@@ -64,11 +65,12 @@ class TaskByServerSources:
         'clone_server': 'clone_server',
         'remain_seconds': 'remain_seconds',
         'log_bucket': 'log_bucket',
+        'log_expire': 'log_expire',
         'log_upload_time': 'log_upload_time',
         'log_share_url': 'log_share_url'
     }
 
-    def __init__(self, id=None, name=None, type=None, state=None, estimate_complete_time=None, start_date=None, speed_limit=None, migrate_speed=None, compress_rate=None, start_target_server=None, vm_template_id=None, region_id=None, project_name=None, project_id=None, target_server=None, log_collect_status=None, exist_server=None, use_public_ip=None, clone_server=None, remain_seconds=None, log_bucket=None, log_upload_time=None, log_share_url=None):
+    def __init__(self, id=None, name=None, type=None, state=None, estimate_complete_time=None, start_date=None, speed_limit=None, migrate_speed=None, compress_rate=None, start_target_server=None, vm_template_id=None, region_id=None, project_name=None, project_id=None, target_server=None, log_collect_status=None, exist_server=None, use_public_ip=None, clone_server=None, remain_seconds=None, log_bucket=None, log_expire=None, log_upload_time=None, log_share_url=None):
         r"""TaskByServerSources
 
         The model defined in huaweicloud sdk
@@ -115,6 +117,8 @@ class TaskByServerSources:
         :type remain_seconds: int
         :param log_bucket: 上传日志指定桶名称
         :type log_bucket: str
+        :param log_expire: 分享链接有效期
+        :type log_expire: int
         :param log_upload_time: 日志上传时间
         :type log_upload_time: int
         :param log_share_url: 分享链接url
@@ -144,6 +148,7 @@ class TaskByServerSources:
         self._clone_server = None
         self._remain_seconds = None
         self._log_bucket = None
+        self._log_expire = None
         self._log_upload_time = None
         self._log_share_url = None
         self.discriminator = None
@@ -190,6 +195,8 @@ class TaskByServerSources:
             self.remain_seconds = remain_seconds
         if log_bucket is not None:
             self.log_bucket = log_bucket
+        if log_expire is not None:
+            self.log_expire = log_expire
         if log_upload_time is not None:
             self.log_upload_time = log_upload_time
         if log_share_url is not None:
@@ -648,6 +655,28 @@ class TaskByServerSources:
         :type log_bucket: str
         """
         self._log_bucket = log_bucket
+
+    @property
+    def log_expire(self):
+        r"""Gets the log_expire of this TaskByServerSources.
+
+        分享链接有效期
+
+        :return: The log_expire of this TaskByServerSources.
+        :rtype: int
+        """
+        return self._log_expire
+
+    @log_expire.setter
+    def log_expire(self, log_expire):
+        r"""Sets the log_expire of this TaskByServerSources.
+
+        分享链接有效期
+
+        :param log_expire: The log_expire of this TaskByServerSources.
+        :type log_expire: int
+        """
+        self._log_expire = log_expire
 
     @property
     def log_upload_time(self):

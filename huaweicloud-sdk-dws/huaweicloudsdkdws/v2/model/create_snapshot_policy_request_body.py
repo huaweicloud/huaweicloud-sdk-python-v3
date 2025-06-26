@@ -39,17 +39,17 @@ class CreateSnapshotPolicyRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param keep_day: 保留天数。输入值必须在1-31之间。
+        :param keep_day: **参数解释**： 保留天数。 **取值范围**： 输入值必须在1-31之间。
         :type keep_day: int
-        :param backup_strategies: 策略列表信息。当需要添加策略时该参数为必选。
+        :param backup_strategies: **参数解释**： 策略列表信息。当需要添加策略时该参数为必选。 **取值范围**： 不涉及。
         :type backup_strategies: list[:class:`huaweicloudsdkdws.v2.BackupStrategyRequest`]
-        :param device_name: 备份设备。支持OBS、NBU和NFS。
+        :param device_name: **参数解释**： 备份设备。支持OBS、NBU和NFS。 **取值范围**： 不涉及。
         :type device_name: str
-        :param server_port: NBU备份介质端口。备份介质为NBU时该字段必填。
+        :param server_port: **参数解释**： NBU备份介质端口。备份介质为NBU时该字段必填。 **取值范围**： 不涉及。
         :type server_port: str
-        :param backup_param: NBU备份参数。备份介质为NBU时该字段必选。
+        :param backup_param: **参数解释**： NBU备份参数。备份介质为NBU时该字段必选。 **取值范围**： 不涉及。
         :type backup_param: str
-        :param server_ips: 备份介质服务IP。备份介质为NBU和NFS时该字段必填。备份介质为NBU时表示NBU服务器地址，备份介质为NFS时表示NFS服务器地址。
+        :param server_ips: **参数解释**： 备份介质服务IP。备份介质为NBU和NFS时该字段必填。备份介质为NBU时表示NBU服务器地址，备份介质为NFS时表示NFS服务器地址。 **取值范围**： 不涉及。
         :type server_ips: list[str]
         """
         
@@ -80,7 +80,7 @@ class CreateSnapshotPolicyRequestBody:
     def keep_day(self):
         r"""Gets the keep_day of this CreateSnapshotPolicyRequestBody.
 
-        保留天数。输入值必须在1-31之间。
+        **参数解释**： 保留天数。 **取值范围**： 输入值必须在1-31之间。
 
         :return: The keep_day of this CreateSnapshotPolicyRequestBody.
         :rtype: int
@@ -91,7 +91,7 @@ class CreateSnapshotPolicyRequestBody:
     def keep_day(self, keep_day):
         r"""Sets the keep_day of this CreateSnapshotPolicyRequestBody.
 
-        保留天数。输入值必须在1-31之间。
+        **参数解释**： 保留天数。 **取值范围**： 输入值必须在1-31之间。
 
         :param keep_day: The keep_day of this CreateSnapshotPolicyRequestBody.
         :type keep_day: int
@@ -102,7 +102,7 @@ class CreateSnapshotPolicyRequestBody:
     def backup_strategies(self):
         r"""Gets the backup_strategies of this CreateSnapshotPolicyRequestBody.
 
-        策略列表信息。当需要添加策略时该参数为必选。
+        **参数解释**： 策略列表信息。当需要添加策略时该参数为必选。 **取值范围**： 不涉及。
 
         :return: The backup_strategies of this CreateSnapshotPolicyRequestBody.
         :rtype: list[:class:`huaweicloudsdkdws.v2.BackupStrategyRequest`]
@@ -113,7 +113,7 @@ class CreateSnapshotPolicyRequestBody:
     def backup_strategies(self, backup_strategies):
         r"""Sets the backup_strategies of this CreateSnapshotPolicyRequestBody.
 
-        策略列表信息。当需要添加策略时该参数为必选。
+        **参数解释**： 策略列表信息。当需要添加策略时该参数为必选。 **取值范围**： 不涉及。
 
         :param backup_strategies: The backup_strategies of this CreateSnapshotPolicyRequestBody.
         :type backup_strategies: list[:class:`huaweicloudsdkdws.v2.BackupStrategyRequest`]
@@ -124,7 +124,7 @@ class CreateSnapshotPolicyRequestBody:
     def device_name(self):
         r"""Gets the device_name of this CreateSnapshotPolicyRequestBody.
 
-        备份设备。支持OBS、NBU和NFS。
+        **参数解释**： 备份设备。支持OBS、NBU和NFS。 **取值范围**： 不涉及。
 
         :return: The device_name of this CreateSnapshotPolicyRequestBody.
         :rtype: str
@@ -135,7 +135,7 @@ class CreateSnapshotPolicyRequestBody:
     def device_name(self, device_name):
         r"""Sets the device_name of this CreateSnapshotPolicyRequestBody.
 
-        备份设备。支持OBS、NBU和NFS。
+        **参数解释**： 备份设备。支持OBS、NBU和NFS。 **取值范围**： 不涉及。
 
         :param device_name: The device_name of this CreateSnapshotPolicyRequestBody.
         :type device_name: str
@@ -146,7 +146,7 @@ class CreateSnapshotPolicyRequestBody:
     def server_port(self):
         r"""Gets the server_port of this CreateSnapshotPolicyRequestBody.
 
-        NBU备份介质端口。备份介质为NBU时该字段必填。
+        **参数解释**： NBU备份介质端口。备份介质为NBU时该字段必填。 **取值范围**： 不涉及。
 
         :return: The server_port of this CreateSnapshotPolicyRequestBody.
         :rtype: str
@@ -157,7 +157,7 @@ class CreateSnapshotPolicyRequestBody:
     def server_port(self, server_port):
         r"""Sets the server_port of this CreateSnapshotPolicyRequestBody.
 
-        NBU备份介质端口。备份介质为NBU时该字段必填。
+        **参数解释**： NBU备份介质端口。备份介质为NBU时该字段必填。 **取值范围**： 不涉及。
 
         :param server_port: The server_port of this CreateSnapshotPolicyRequestBody.
         :type server_port: str
@@ -168,7 +168,7 @@ class CreateSnapshotPolicyRequestBody:
     def backup_param(self):
         r"""Gets the backup_param of this CreateSnapshotPolicyRequestBody.
 
-        NBU备份参数。备份介质为NBU时该字段必选。
+        **参数解释**： NBU备份参数。备份介质为NBU时该字段必选。 **取值范围**： 不涉及。
 
         :return: The backup_param of this CreateSnapshotPolicyRequestBody.
         :rtype: str
@@ -179,7 +179,7 @@ class CreateSnapshotPolicyRequestBody:
     def backup_param(self, backup_param):
         r"""Sets the backup_param of this CreateSnapshotPolicyRequestBody.
 
-        NBU备份参数。备份介质为NBU时该字段必选。
+        **参数解释**： NBU备份参数。备份介质为NBU时该字段必选。 **取值范围**： 不涉及。
 
         :param backup_param: The backup_param of this CreateSnapshotPolicyRequestBody.
         :type backup_param: str
@@ -190,7 +190,7 @@ class CreateSnapshotPolicyRequestBody:
     def server_ips(self):
         r"""Gets the server_ips of this CreateSnapshotPolicyRequestBody.
 
-        备份介质服务IP。备份介质为NBU和NFS时该字段必填。备份介质为NBU时表示NBU服务器地址，备份介质为NFS时表示NFS服务器地址。
+        **参数解释**： 备份介质服务IP。备份介质为NBU和NFS时该字段必填。备份介质为NBU时表示NBU服务器地址，备份介质为NFS时表示NFS服务器地址。 **取值范围**： 不涉及。
 
         :return: The server_ips of this CreateSnapshotPolicyRequestBody.
         :rtype: list[str]
@@ -201,7 +201,7 @@ class CreateSnapshotPolicyRequestBody:
     def server_ips(self, server_ips):
         r"""Sets the server_ips of this CreateSnapshotPolicyRequestBody.
 
-        备份介质服务IP。备份介质为NBU和NFS时该字段必填。备份介质为NBU时表示NBU服务器地址，备份介质为NFS时表示NFS服务器地址。
+        **参数解释**： 备份介质服务IP。备份介质为NBU和NFS时该字段必填。备份介质为NBU时表示NBU服务器地址，备份介质为NFS时表示NFS服务器地址。 **取值范围**： 不涉及。
 
         :param server_ips: The server_ips of this CreateSnapshotPolicyRequestBody.
         :type server_ips: list[str]

@@ -30,7 +30,7 @@ class DeleteDataSourceResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param job_id: 删除数据源job_id。
+        :param job_id: **参数解释**： 删除数据源任务ID。 **取值范围**： 不涉及。
         :type job_id: str
         """
         
@@ -46,7 +46,7 @@ class DeleteDataSourceResponse(SdkResponse):
     def job_id(self):
         r"""Gets the job_id of this DeleteDataSourceResponse.
 
-        删除数据源job_id。
+        **参数解释**： 删除数据源任务ID。 **取值范围**： 不涉及。
 
         :return: The job_id of this DeleteDataSourceResponse.
         :rtype: str
@@ -57,7 +57,7 @@ class DeleteDataSourceResponse(SdkResponse):
     def job_id(self, job_id):
         r"""Sets the job_id of this DeleteDataSourceResponse.
 
-        删除数据源job_id。
+        **参数解释**： 删除数据源任务ID。 **取值范围**： 不涉及。
 
         :param job_id: The job_id of this DeleteDataSourceResponse.
         :type job_id: str

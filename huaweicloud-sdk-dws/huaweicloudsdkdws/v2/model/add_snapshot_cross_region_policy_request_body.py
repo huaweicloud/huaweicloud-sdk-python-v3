@@ -37,15 +37,15 @@ class AddSnapshotCrossRegionPolicyRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param cluster_id: **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
+        :param cluster_id: **参数解释**： 集群ID。获取方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
         :type cluster_id: str
-        :param destination_project_id: 目的项目ID
+        :param destination_project_id: **参数解释**： 目的项目ID。 **取值范围**： 不涉及。
         :type destination_project_id: str
-        :param destination_region: 目的区域
+        :param destination_region: **参数解释**： 目的区域。 **取值范围**： 不涉及。
         :type destination_region: str
-        :param status: 状态
+        :param status: **参数解释**： 状态。 **取值范围**： 不涉及。
         :type status: bool
-        :param back_keep_day: 保留天数
+        :param back_keep_day: **参数解释**： 保留天数。 **取值范围**： 不涉及。
         :type back_keep_day: int
         """
         
@@ -68,7 +68,7 @@ class AddSnapshotCrossRegionPolicyRequestBody:
     def cluster_id(self):
         r"""Gets the cluster_id of this AddSnapshotCrossRegionPolicyRequestBody.
 
-        **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
+        **参数解释**： 集群ID。获取方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
 
         :return: The cluster_id of this AddSnapshotCrossRegionPolicyRequestBody.
         :rtype: str
@@ -79,7 +79,7 @@ class AddSnapshotCrossRegionPolicyRequestBody:
     def cluster_id(self, cluster_id):
         r"""Sets the cluster_id of this AddSnapshotCrossRegionPolicyRequestBody.
 
-        **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
+        **参数解释**： 集群ID。获取方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
 
         :param cluster_id: The cluster_id of this AddSnapshotCrossRegionPolicyRequestBody.
         :type cluster_id: str
@@ -90,7 +90,7 @@ class AddSnapshotCrossRegionPolicyRequestBody:
     def destination_project_id(self):
         r"""Gets the destination_project_id of this AddSnapshotCrossRegionPolicyRequestBody.
 
-        目的项目ID
+        **参数解释**： 目的项目ID。 **取值范围**： 不涉及。
 
         :return: The destination_project_id of this AddSnapshotCrossRegionPolicyRequestBody.
         :rtype: str
@@ -101,7 +101,7 @@ class AddSnapshotCrossRegionPolicyRequestBody:
     def destination_project_id(self, destination_project_id):
         r"""Sets the destination_project_id of this AddSnapshotCrossRegionPolicyRequestBody.
 
-        目的项目ID
+        **参数解释**： 目的项目ID。 **取值范围**： 不涉及。
 
         :param destination_project_id: The destination_project_id of this AddSnapshotCrossRegionPolicyRequestBody.
         :type destination_project_id: str
@@ -112,7 +112,7 @@ class AddSnapshotCrossRegionPolicyRequestBody:
     def destination_region(self):
         r"""Gets the destination_region of this AddSnapshotCrossRegionPolicyRequestBody.
 
-        目的区域
+        **参数解释**： 目的区域。 **取值范围**： 不涉及。
 
         :return: The destination_region of this AddSnapshotCrossRegionPolicyRequestBody.
         :rtype: str
@@ -123,7 +123,7 @@ class AddSnapshotCrossRegionPolicyRequestBody:
     def destination_region(self, destination_region):
         r"""Sets the destination_region of this AddSnapshotCrossRegionPolicyRequestBody.
 
-        目的区域
+        **参数解释**： 目的区域。 **取值范围**： 不涉及。
 
         :param destination_region: The destination_region of this AddSnapshotCrossRegionPolicyRequestBody.
         :type destination_region: str
@@ -134,7 +134,7 @@ class AddSnapshotCrossRegionPolicyRequestBody:
     def status(self):
         r"""Gets the status of this AddSnapshotCrossRegionPolicyRequestBody.
 
-        状态
+        **参数解释**： 状态。 **取值范围**： 不涉及。
 
         :return: The status of this AddSnapshotCrossRegionPolicyRequestBody.
         :rtype: bool
@@ -145,7 +145,7 @@ class AddSnapshotCrossRegionPolicyRequestBody:
     def status(self, status):
         r"""Sets the status of this AddSnapshotCrossRegionPolicyRequestBody.
 
-        状态
+        **参数解释**： 状态。 **取值范围**： 不涉及。
 
         :param status: The status of this AddSnapshotCrossRegionPolicyRequestBody.
         :type status: bool
@@ -156,7 +156,7 @@ class AddSnapshotCrossRegionPolicyRequestBody:
     def back_keep_day(self):
         r"""Gets the back_keep_day of this AddSnapshotCrossRegionPolicyRequestBody.
 
-        保留天数
+        **参数解释**： 保留天数。 **取值范围**： 不涉及。
 
         :return: The back_keep_day of this AddSnapshotCrossRegionPolicyRequestBody.
         :rtype: int
@@ -167,7 +167,7 @@ class AddSnapshotCrossRegionPolicyRequestBody:
     def back_keep_day(self, back_keep_day):
         r"""Sets the back_keep_day of this AddSnapshotCrossRegionPolicyRequestBody.
 
-        保留天数
+        **参数解释**： 保留天数。 **取值范围**： 不涉及。
 
         :param back_keep_day: The back_keep_day of this AddSnapshotCrossRegionPolicyRequestBody.
         :type back_keep_day: int

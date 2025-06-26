@@ -31,9 +31,9 @@ class DisassociateEipRequest:
 
         The model defined in huaweicloud sdk
 
-        :param cluster_id: **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
+        :param cluster_id: **参数解释**： 集群ID。获取方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
         :type cluster_id: str
-        :param eip_id: 集群绑定的弹性IP
+        :param eip_id: **参数解释**： 集群绑定的弹性IP。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type eip_id: str
         """
         
@@ -50,7 +50,7 @@ class DisassociateEipRequest:
     def cluster_id(self):
         r"""Gets the cluster_id of this DisassociateEipRequest.
 
-        **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
+        **参数解释**： 集群ID。获取方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
 
         :return: The cluster_id of this DisassociateEipRequest.
         :rtype: str
@@ -61,7 +61,7 @@ class DisassociateEipRequest:
     def cluster_id(self, cluster_id):
         r"""Sets the cluster_id of this DisassociateEipRequest.
 
-        **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
+        **参数解释**： 集群ID。获取方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
 
         :param cluster_id: The cluster_id of this DisassociateEipRequest.
         :type cluster_id: str
@@ -72,7 +72,7 @@ class DisassociateEipRequest:
     def eip_id(self):
         r"""Gets the eip_id of this DisassociateEipRequest.
 
-        集群绑定的弹性IP
+        **参数解释**： 集群绑定的弹性IP。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The eip_id of this DisassociateEipRequest.
         :rtype: str
@@ -83,7 +83,7 @@ class DisassociateEipRequest:
     def eip_id(self, eip_id):
         r"""Sets the eip_id of this DisassociateEipRequest.
 
-        集群绑定的弹性IP
+        **参数解释**： 集群绑定的弹性IP。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param eip_id: The eip_id of this DisassociateEipRequest.
         :type eip_id: str

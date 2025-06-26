@@ -32,9 +32,9 @@ class ListSchemasResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param schemas: 集群模式空间信息列表。
+        :param schemas: **参数解释**： 集群模式空间信息列表。 **取值范围**： 不涉及。
         :type schemas: list[:class:`huaweicloudsdkdws.v2.SchemaInfo`]
-        :param count: 总数量
+        :param count: **参数解释**： 总数量。 **取值范围**： 不涉及。
         :type count: int
         """
         
@@ -53,7 +53,7 @@ class ListSchemasResponse(SdkResponse):
     def schemas(self):
         r"""Gets the schemas of this ListSchemasResponse.
 
-        集群模式空间信息列表。
+        **参数解释**： 集群模式空间信息列表。 **取值范围**： 不涉及。
 
         :return: The schemas of this ListSchemasResponse.
         :rtype: list[:class:`huaweicloudsdkdws.v2.SchemaInfo`]
@@ -64,7 +64,7 @@ class ListSchemasResponse(SdkResponse):
     def schemas(self, schemas):
         r"""Sets the schemas of this ListSchemasResponse.
 
-        集群模式空间信息列表。
+        **参数解释**： 集群模式空间信息列表。 **取值范围**： 不涉及。
 
         :param schemas: The schemas of this ListSchemasResponse.
         :type schemas: list[:class:`huaweicloudsdkdws.v2.SchemaInfo`]
@@ -75,7 +75,7 @@ class ListSchemasResponse(SdkResponse):
     def count(self):
         r"""Gets the count of this ListSchemasResponse.
 
-        总数量
+        **参数解释**： 总数量。 **取值范围**： 不涉及。
 
         :return: The count of this ListSchemasResponse.
         :rtype: int
@@ -86,7 +86,7 @@ class ListSchemasResponse(SdkResponse):
     def count(self, count):
         r"""Sets the count of this ListSchemasResponse.
 
-        总数量
+        **参数解释**： 总数量。 **取值范围**： 不涉及。
 
         :param count: The count of this ListSchemasResponse.
         :type count: int

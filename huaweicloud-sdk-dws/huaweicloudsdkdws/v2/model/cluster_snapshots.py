@@ -83,61 +83,61 @@ class ClusterSnapshots:
 
         The model defined in huaweicloud sdk
 
-        :param id: 快照ID。
+        :param id: **参数解释**： 快照ID。 **取值范围**： 不涉及。
         :type id: str
-        :param name: 快照名称。
+        :param name: **参数解释**： 快照名称。 **取值范围**： 不涉及。
         :type name: str
-        :param description: 快照描述。
+        :param description: **参数解释**： 快照描述。 **取值范围**： 不涉及。
         :type description: str
-        :param started: 快照创建的日期时间，格式为 ISO8601: YYYY-MM-DDThh:mm:ssZ。
+        :param started: **参数解释**： 快照创建的日期时间，格式为 ISO8601: YYYY-MM-DDThh:mm:ssZ。 **取值范围**： 不涉及。
         :type started: str
-        :param size: 快照大小，单位 GB。
+        :param size: **参数解释**： 快照大小，单位 GB。 **取值范围**： 不涉及。
         :type size: float
-        :param status: 快照状态： - CREATING：创建中。 - AVAILABLE：可用。 - UNAVAILABLE：不可用。 - RESTORING：恢复中。 - FROZEN： 普通冻结。 - POLICE_FROZEN： 公安冻结。
+        :param status: **参数解释**： 快照状态。 **取值范围**： CREATING：创建中。 AVAILABLE：可用。 UNAVAILABLE：不可用。 RESTORING：恢复中。 FROZEN： 普通冻结。 POLICE_FROZEN： 公安冻结。
         :type status: str
-        :param cluster_id: 快照对应的集群ID
+        :param cluster_id: **参数解释**： 快照对应的集群ID。 **取值范围**： 不涉及。
         :type cluster_id: str
         :param datastore: 
         :type datastore: :class:`huaweicloudsdkdws.v2.Datastore`
-        :param cluster_name: 快照对应的集群名称。
+        :param cluster_name: **参数解释**： 快照对应的集群名称。 **取值范围**： 不涉及。
         :type cluster_name: str
-        :param updated: 快照更新时间。
+        :param updated: **参数解释**： 快照更新时间。 **取值范围**： 不涉及。
         :type updated: str
-        :param type: 快照类型： - MANUAL :手动快照， - AUTO :自动快照。
+        :param type: **参数解释**： 快照类型。 **取值范围**： MANUAL：手动快照。 AUTO：自动快照。
         :type type: str
-        :param bak_expected_start_time: 快照预计开始时间。
+        :param bak_expected_start_time: **参数解释**： 快照预计开始时间。 **取值范围**： 不涉及。
         :type bak_expected_start_time: str
-        :param bak_keep_day: 快照保留天数。
+        :param bak_keep_day: **参数解释**： 快照保留天数。 **取值范围**： 不涉及。
         :type bak_keep_day: int
-        :param bak_period: 快照策略。
+        :param bak_period: **参数解释**： 快照策略。 **取值范围**： 不涉及。
         :type bak_period: str
-        :param db_user: 数据库用户。
+        :param db_user: **参数解释**： 数据库用户。 **取值范围**： 不涉及。
         :type db_user: str
-        :param progress: 快照进度。
+        :param progress: **参数解释**： 快照进度。 **取值范围**： 不涉及。
         :type progress: str
-        :param backup_key: 快照BakcupKey。
+        :param backup_key: **参数解释**： 快照备份key。 **取值范围**： 不涉及。
         :type backup_key: str
-        :param prior_backup_key: 增量快照，使用的前一个快照BakcupKey。
+        :param prior_backup_key: **参数解释**： 增量快照，使用的前一个快照备份key。 **取值范围**： 不涉及。
         :type prior_backup_key: str
-        :param base_backup_key: 对应全量快照BakcupKey。
+        :param base_backup_key: **参数解释**： 对应全量快照备份key。 **取值范围**： 不涉及。
         :type base_backup_key: str
-        :param backup_device: 备份介质。
+        :param backup_device: **参数解释**： 备份介质。 **取值范围**： 不涉及。
         :type backup_device: str
-        :param total_backup_size: 累计快照大小。
+        :param total_backup_size: **参数解释**： 累计快照大小。 **取值范围**： 不涉及。
         :type total_backup_size: int
-        :param base_backup_name: 对应全量快照名称。
+        :param base_backup_name: **参数解释**： 对应全量快照名称。 **取值范围**： 不涉及。
         :type base_backup_name: str
-        :param support_inplace_restore: 是否支持就地恢复。
+        :param support_inplace_restore: **参数解释**： 是否支持就地恢复。 **取值范围**： 不涉及。
         :type support_inplace_restore: bool
-        :param fine_grained_backup: 是否是细粒度备份。
+        :param fine_grained_backup: **参数解释**： 是否是细粒度备份。 **取值范围**： 不涉及。
         :type fine_grained_backup: bool
-        :param backup_level: 备份级别。
+        :param backup_level: **参数解释**： 备份级别。 **取值范围**： 不涉及。
         :type backup_level: str
         :param fine_grained_backup_detail: 
         :type fine_grained_backup_detail: :class:`huaweicloudsdkdws.v2.FineGrainedSnapshotDetail`
-        :param guest_agent_version: guestAgent版本。
+        :param guest_agent_version: **参数解释**： guestAgent版本。 **取值范围**： 不涉及。
         :type guest_agent_version: str
-        :param cluster_status: 集群状态。
+        :param cluster_status: **参数解释**： 集群状态。 **取值范围**： 不涉及。
         :type cluster_status: str
         """
         
@@ -234,7 +234,7 @@ class ClusterSnapshots:
     def id(self):
         r"""Gets the id of this ClusterSnapshots.
 
-        快照ID。
+        **参数解释**： 快照ID。 **取值范围**： 不涉及。
 
         :return: The id of this ClusterSnapshots.
         :rtype: str
@@ -245,7 +245,7 @@ class ClusterSnapshots:
     def id(self, id):
         r"""Sets the id of this ClusterSnapshots.
 
-        快照ID。
+        **参数解释**： 快照ID。 **取值范围**： 不涉及。
 
         :param id: The id of this ClusterSnapshots.
         :type id: str
@@ -256,7 +256,7 @@ class ClusterSnapshots:
     def name(self):
         r"""Gets the name of this ClusterSnapshots.
 
-        快照名称。
+        **参数解释**： 快照名称。 **取值范围**： 不涉及。
 
         :return: The name of this ClusterSnapshots.
         :rtype: str
@@ -267,7 +267,7 @@ class ClusterSnapshots:
     def name(self, name):
         r"""Sets the name of this ClusterSnapshots.
 
-        快照名称。
+        **参数解释**： 快照名称。 **取值范围**： 不涉及。
 
         :param name: The name of this ClusterSnapshots.
         :type name: str
@@ -278,7 +278,7 @@ class ClusterSnapshots:
     def description(self):
         r"""Gets the description of this ClusterSnapshots.
 
-        快照描述。
+        **参数解释**： 快照描述。 **取值范围**： 不涉及。
 
         :return: The description of this ClusterSnapshots.
         :rtype: str
@@ -289,7 +289,7 @@ class ClusterSnapshots:
     def description(self, description):
         r"""Sets the description of this ClusterSnapshots.
 
-        快照描述。
+        **参数解释**： 快照描述。 **取值范围**： 不涉及。
 
         :param description: The description of this ClusterSnapshots.
         :type description: str
@@ -300,7 +300,7 @@ class ClusterSnapshots:
     def started(self):
         r"""Gets the started of this ClusterSnapshots.
 
-        快照创建的日期时间，格式为 ISO8601: YYYY-MM-DDThh:mm:ssZ。
+        **参数解释**： 快照创建的日期时间，格式为 ISO8601: YYYY-MM-DDThh:mm:ssZ。 **取值范围**： 不涉及。
 
         :return: The started of this ClusterSnapshots.
         :rtype: str
@@ -311,7 +311,7 @@ class ClusterSnapshots:
     def started(self, started):
         r"""Sets the started of this ClusterSnapshots.
 
-        快照创建的日期时间，格式为 ISO8601: YYYY-MM-DDThh:mm:ssZ。
+        **参数解释**： 快照创建的日期时间，格式为 ISO8601: YYYY-MM-DDThh:mm:ssZ。 **取值范围**： 不涉及。
 
         :param started: The started of this ClusterSnapshots.
         :type started: str
@@ -322,7 +322,7 @@ class ClusterSnapshots:
     def size(self):
         r"""Gets the size of this ClusterSnapshots.
 
-        快照大小，单位 GB。
+        **参数解释**： 快照大小，单位 GB。 **取值范围**： 不涉及。
 
         :return: The size of this ClusterSnapshots.
         :rtype: float
@@ -333,7 +333,7 @@ class ClusterSnapshots:
     def size(self, size):
         r"""Sets the size of this ClusterSnapshots.
 
-        快照大小，单位 GB。
+        **参数解释**： 快照大小，单位 GB。 **取值范围**： 不涉及。
 
         :param size: The size of this ClusterSnapshots.
         :type size: float
@@ -344,7 +344,7 @@ class ClusterSnapshots:
     def status(self):
         r"""Gets the status of this ClusterSnapshots.
 
-        快照状态： - CREATING：创建中。 - AVAILABLE：可用。 - UNAVAILABLE：不可用。 - RESTORING：恢复中。 - FROZEN： 普通冻结。 - POLICE_FROZEN： 公安冻结。
+        **参数解释**： 快照状态。 **取值范围**： CREATING：创建中。 AVAILABLE：可用。 UNAVAILABLE：不可用。 RESTORING：恢复中。 FROZEN： 普通冻结。 POLICE_FROZEN： 公安冻结。
 
         :return: The status of this ClusterSnapshots.
         :rtype: str
@@ -355,7 +355,7 @@ class ClusterSnapshots:
     def status(self, status):
         r"""Sets the status of this ClusterSnapshots.
 
-        快照状态： - CREATING：创建中。 - AVAILABLE：可用。 - UNAVAILABLE：不可用。 - RESTORING：恢复中。 - FROZEN： 普通冻结。 - POLICE_FROZEN： 公安冻结。
+        **参数解释**： 快照状态。 **取值范围**： CREATING：创建中。 AVAILABLE：可用。 UNAVAILABLE：不可用。 RESTORING：恢复中。 FROZEN： 普通冻结。 POLICE_FROZEN： 公安冻结。
 
         :param status: The status of this ClusterSnapshots.
         :type status: str
@@ -366,7 +366,7 @@ class ClusterSnapshots:
     def cluster_id(self):
         r"""Gets the cluster_id of this ClusterSnapshots.
 
-        快照对应的集群ID
+        **参数解释**： 快照对应的集群ID。 **取值范围**： 不涉及。
 
         :return: The cluster_id of this ClusterSnapshots.
         :rtype: str
@@ -377,7 +377,7 @@ class ClusterSnapshots:
     def cluster_id(self, cluster_id):
         r"""Sets the cluster_id of this ClusterSnapshots.
 
-        快照对应的集群ID
+        **参数解释**： 快照对应的集群ID。 **取值范围**： 不涉及。
 
         :param cluster_id: The cluster_id of this ClusterSnapshots.
         :type cluster_id: str
@@ -406,7 +406,7 @@ class ClusterSnapshots:
     def cluster_name(self):
         r"""Gets the cluster_name of this ClusterSnapshots.
 
-        快照对应的集群名称。
+        **参数解释**： 快照对应的集群名称。 **取值范围**： 不涉及。
 
         :return: The cluster_name of this ClusterSnapshots.
         :rtype: str
@@ -417,7 +417,7 @@ class ClusterSnapshots:
     def cluster_name(self, cluster_name):
         r"""Sets the cluster_name of this ClusterSnapshots.
 
-        快照对应的集群名称。
+        **参数解释**： 快照对应的集群名称。 **取值范围**： 不涉及。
 
         :param cluster_name: The cluster_name of this ClusterSnapshots.
         :type cluster_name: str
@@ -428,7 +428,7 @@ class ClusterSnapshots:
     def updated(self):
         r"""Gets the updated of this ClusterSnapshots.
 
-        快照更新时间。
+        **参数解释**： 快照更新时间。 **取值范围**： 不涉及。
 
         :return: The updated of this ClusterSnapshots.
         :rtype: str
@@ -439,7 +439,7 @@ class ClusterSnapshots:
     def updated(self, updated):
         r"""Sets the updated of this ClusterSnapshots.
 
-        快照更新时间。
+        **参数解释**： 快照更新时间。 **取值范围**： 不涉及。
 
         :param updated: The updated of this ClusterSnapshots.
         :type updated: str
@@ -450,7 +450,7 @@ class ClusterSnapshots:
     def type(self):
         r"""Gets the type of this ClusterSnapshots.
 
-        快照类型： - MANUAL :手动快照， - AUTO :自动快照。
+        **参数解释**： 快照类型。 **取值范围**： MANUAL：手动快照。 AUTO：自动快照。
 
         :return: The type of this ClusterSnapshots.
         :rtype: str
@@ -461,7 +461,7 @@ class ClusterSnapshots:
     def type(self, type):
         r"""Sets the type of this ClusterSnapshots.
 
-        快照类型： - MANUAL :手动快照， - AUTO :自动快照。
+        **参数解释**： 快照类型。 **取值范围**： MANUAL：手动快照。 AUTO：自动快照。
 
         :param type: The type of this ClusterSnapshots.
         :type type: str
@@ -472,7 +472,7 @@ class ClusterSnapshots:
     def bak_expected_start_time(self):
         r"""Gets the bak_expected_start_time of this ClusterSnapshots.
 
-        快照预计开始时间。
+        **参数解释**： 快照预计开始时间。 **取值范围**： 不涉及。
 
         :return: The bak_expected_start_time of this ClusterSnapshots.
         :rtype: str
@@ -483,7 +483,7 @@ class ClusterSnapshots:
     def bak_expected_start_time(self, bak_expected_start_time):
         r"""Sets the bak_expected_start_time of this ClusterSnapshots.
 
-        快照预计开始时间。
+        **参数解释**： 快照预计开始时间。 **取值范围**： 不涉及。
 
         :param bak_expected_start_time: The bak_expected_start_time of this ClusterSnapshots.
         :type bak_expected_start_time: str
@@ -494,7 +494,7 @@ class ClusterSnapshots:
     def bak_keep_day(self):
         r"""Gets the bak_keep_day of this ClusterSnapshots.
 
-        快照保留天数。
+        **参数解释**： 快照保留天数。 **取值范围**： 不涉及。
 
         :return: The bak_keep_day of this ClusterSnapshots.
         :rtype: int
@@ -505,7 +505,7 @@ class ClusterSnapshots:
     def bak_keep_day(self, bak_keep_day):
         r"""Sets the bak_keep_day of this ClusterSnapshots.
 
-        快照保留天数。
+        **参数解释**： 快照保留天数。 **取值范围**： 不涉及。
 
         :param bak_keep_day: The bak_keep_day of this ClusterSnapshots.
         :type bak_keep_day: int
@@ -516,7 +516,7 @@ class ClusterSnapshots:
     def bak_period(self):
         r"""Gets the bak_period of this ClusterSnapshots.
 
-        快照策略。
+        **参数解释**： 快照策略。 **取值范围**： 不涉及。
 
         :return: The bak_period of this ClusterSnapshots.
         :rtype: str
@@ -527,7 +527,7 @@ class ClusterSnapshots:
     def bak_period(self, bak_period):
         r"""Sets the bak_period of this ClusterSnapshots.
 
-        快照策略。
+        **参数解释**： 快照策略。 **取值范围**： 不涉及。
 
         :param bak_period: The bak_period of this ClusterSnapshots.
         :type bak_period: str
@@ -538,7 +538,7 @@ class ClusterSnapshots:
     def db_user(self):
         r"""Gets the db_user of this ClusterSnapshots.
 
-        数据库用户。
+        **参数解释**： 数据库用户。 **取值范围**： 不涉及。
 
         :return: The db_user of this ClusterSnapshots.
         :rtype: str
@@ -549,7 +549,7 @@ class ClusterSnapshots:
     def db_user(self, db_user):
         r"""Sets the db_user of this ClusterSnapshots.
 
-        数据库用户。
+        **参数解释**： 数据库用户。 **取值范围**： 不涉及。
 
         :param db_user: The db_user of this ClusterSnapshots.
         :type db_user: str
@@ -560,7 +560,7 @@ class ClusterSnapshots:
     def progress(self):
         r"""Gets the progress of this ClusterSnapshots.
 
-        快照进度。
+        **参数解释**： 快照进度。 **取值范围**： 不涉及。
 
         :return: The progress of this ClusterSnapshots.
         :rtype: str
@@ -571,7 +571,7 @@ class ClusterSnapshots:
     def progress(self, progress):
         r"""Sets the progress of this ClusterSnapshots.
 
-        快照进度。
+        **参数解释**： 快照进度。 **取值范围**： 不涉及。
 
         :param progress: The progress of this ClusterSnapshots.
         :type progress: str
@@ -582,7 +582,7 @@ class ClusterSnapshots:
     def backup_key(self):
         r"""Gets the backup_key of this ClusterSnapshots.
 
-        快照BakcupKey。
+        **参数解释**： 快照备份key。 **取值范围**： 不涉及。
 
         :return: The backup_key of this ClusterSnapshots.
         :rtype: str
@@ -593,7 +593,7 @@ class ClusterSnapshots:
     def backup_key(self, backup_key):
         r"""Sets the backup_key of this ClusterSnapshots.
 
-        快照BakcupKey。
+        **参数解释**： 快照备份key。 **取值范围**： 不涉及。
 
         :param backup_key: The backup_key of this ClusterSnapshots.
         :type backup_key: str
@@ -604,7 +604,7 @@ class ClusterSnapshots:
     def prior_backup_key(self):
         r"""Gets the prior_backup_key of this ClusterSnapshots.
 
-        增量快照，使用的前一个快照BakcupKey。
+        **参数解释**： 增量快照，使用的前一个快照备份key。 **取值范围**： 不涉及。
 
         :return: The prior_backup_key of this ClusterSnapshots.
         :rtype: str
@@ -615,7 +615,7 @@ class ClusterSnapshots:
     def prior_backup_key(self, prior_backup_key):
         r"""Sets the prior_backup_key of this ClusterSnapshots.
 
-        增量快照，使用的前一个快照BakcupKey。
+        **参数解释**： 增量快照，使用的前一个快照备份key。 **取值范围**： 不涉及。
 
         :param prior_backup_key: The prior_backup_key of this ClusterSnapshots.
         :type prior_backup_key: str
@@ -626,7 +626,7 @@ class ClusterSnapshots:
     def base_backup_key(self):
         r"""Gets the base_backup_key of this ClusterSnapshots.
 
-        对应全量快照BakcupKey。
+        **参数解释**： 对应全量快照备份key。 **取值范围**： 不涉及。
 
         :return: The base_backup_key of this ClusterSnapshots.
         :rtype: str
@@ -637,7 +637,7 @@ class ClusterSnapshots:
     def base_backup_key(self, base_backup_key):
         r"""Sets the base_backup_key of this ClusterSnapshots.
 
-        对应全量快照BakcupKey。
+        **参数解释**： 对应全量快照备份key。 **取值范围**： 不涉及。
 
         :param base_backup_key: The base_backup_key of this ClusterSnapshots.
         :type base_backup_key: str
@@ -648,7 +648,7 @@ class ClusterSnapshots:
     def backup_device(self):
         r"""Gets the backup_device of this ClusterSnapshots.
 
-        备份介质。
+        **参数解释**： 备份介质。 **取值范围**： 不涉及。
 
         :return: The backup_device of this ClusterSnapshots.
         :rtype: str
@@ -659,7 +659,7 @@ class ClusterSnapshots:
     def backup_device(self, backup_device):
         r"""Sets the backup_device of this ClusterSnapshots.
 
-        备份介质。
+        **参数解释**： 备份介质。 **取值范围**： 不涉及。
 
         :param backup_device: The backup_device of this ClusterSnapshots.
         :type backup_device: str
@@ -670,7 +670,7 @@ class ClusterSnapshots:
     def total_backup_size(self):
         r"""Gets the total_backup_size of this ClusterSnapshots.
 
-        累计快照大小。
+        **参数解释**： 累计快照大小。 **取值范围**： 不涉及。
 
         :return: The total_backup_size of this ClusterSnapshots.
         :rtype: int
@@ -681,7 +681,7 @@ class ClusterSnapshots:
     def total_backup_size(self, total_backup_size):
         r"""Sets the total_backup_size of this ClusterSnapshots.
 
-        累计快照大小。
+        **参数解释**： 累计快照大小。 **取值范围**： 不涉及。
 
         :param total_backup_size: The total_backup_size of this ClusterSnapshots.
         :type total_backup_size: int
@@ -692,7 +692,7 @@ class ClusterSnapshots:
     def base_backup_name(self):
         r"""Gets the base_backup_name of this ClusterSnapshots.
 
-        对应全量快照名称。
+        **参数解释**： 对应全量快照名称。 **取值范围**： 不涉及。
 
         :return: The base_backup_name of this ClusterSnapshots.
         :rtype: str
@@ -703,7 +703,7 @@ class ClusterSnapshots:
     def base_backup_name(self, base_backup_name):
         r"""Sets the base_backup_name of this ClusterSnapshots.
 
-        对应全量快照名称。
+        **参数解释**： 对应全量快照名称。 **取值范围**： 不涉及。
 
         :param base_backup_name: The base_backup_name of this ClusterSnapshots.
         :type base_backup_name: str
@@ -714,7 +714,7 @@ class ClusterSnapshots:
     def support_inplace_restore(self):
         r"""Gets the support_inplace_restore of this ClusterSnapshots.
 
-        是否支持就地恢复。
+        **参数解释**： 是否支持就地恢复。 **取值范围**： 不涉及。
 
         :return: The support_inplace_restore of this ClusterSnapshots.
         :rtype: bool
@@ -725,7 +725,7 @@ class ClusterSnapshots:
     def support_inplace_restore(self, support_inplace_restore):
         r"""Sets the support_inplace_restore of this ClusterSnapshots.
 
-        是否支持就地恢复。
+        **参数解释**： 是否支持就地恢复。 **取值范围**： 不涉及。
 
         :param support_inplace_restore: The support_inplace_restore of this ClusterSnapshots.
         :type support_inplace_restore: bool
@@ -736,7 +736,7 @@ class ClusterSnapshots:
     def fine_grained_backup(self):
         r"""Gets the fine_grained_backup of this ClusterSnapshots.
 
-        是否是细粒度备份。
+        **参数解释**： 是否是细粒度备份。 **取值范围**： 不涉及。
 
         :return: The fine_grained_backup of this ClusterSnapshots.
         :rtype: bool
@@ -747,7 +747,7 @@ class ClusterSnapshots:
     def fine_grained_backup(self, fine_grained_backup):
         r"""Sets the fine_grained_backup of this ClusterSnapshots.
 
-        是否是细粒度备份。
+        **参数解释**： 是否是细粒度备份。 **取值范围**： 不涉及。
 
         :param fine_grained_backup: The fine_grained_backup of this ClusterSnapshots.
         :type fine_grained_backup: bool
@@ -758,7 +758,7 @@ class ClusterSnapshots:
     def backup_level(self):
         r"""Gets the backup_level of this ClusterSnapshots.
 
-        备份级别。
+        **参数解释**： 备份级别。 **取值范围**： 不涉及。
 
         :return: The backup_level of this ClusterSnapshots.
         :rtype: str
@@ -769,7 +769,7 @@ class ClusterSnapshots:
     def backup_level(self, backup_level):
         r"""Sets the backup_level of this ClusterSnapshots.
 
-        备份级别。
+        **参数解释**： 备份级别。 **取值范围**： 不涉及。
 
         :param backup_level: The backup_level of this ClusterSnapshots.
         :type backup_level: str
@@ -798,7 +798,7 @@ class ClusterSnapshots:
     def guest_agent_version(self):
         r"""Gets the guest_agent_version of this ClusterSnapshots.
 
-        guestAgent版本。
+        **参数解释**： guestAgent版本。 **取值范围**： 不涉及。
 
         :return: The guest_agent_version of this ClusterSnapshots.
         :rtype: str
@@ -809,7 +809,7 @@ class ClusterSnapshots:
     def guest_agent_version(self, guest_agent_version):
         r"""Sets the guest_agent_version of this ClusterSnapshots.
 
-        guestAgent版本。
+        **参数解释**： guestAgent版本。 **取值范围**： 不涉及。
 
         :param guest_agent_version: The guest_agent_version of this ClusterSnapshots.
         :type guest_agent_version: str
@@ -820,7 +820,7 @@ class ClusterSnapshots:
     def cluster_status(self):
         r"""Gets the cluster_status of this ClusterSnapshots.
 
-        集群状态。
+        **参数解释**： 集群状态。 **取值范围**： 不涉及。
 
         :return: The cluster_status of this ClusterSnapshots.
         :rtype: str
@@ -831,7 +831,7 @@ class ClusterSnapshots:
     def cluster_status(self, cluster_status):
         r"""Sets the cluster_status of this ClusterSnapshots.
 
-        集群状态。
+        **参数解释**： 集群状态。 **取值范围**： 不涉及。
 
         :param cluster_status: The cluster_status of this ClusterSnapshots.
         :type cluster_status: str

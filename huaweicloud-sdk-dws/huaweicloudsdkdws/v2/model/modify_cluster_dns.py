@@ -33,11 +33,11 @@ class ModifyClusterDns:
 
         The model defined in huaweicloud sdk
 
-        :param name: 待修改的域名。
+        :param name: **参数解释**： 待修改的域名。 **取值范围**： 不涉及。
         :type name: str
-        :param type: 域名类型。 - public：公网域名。 - private：内网域名。
+        :param type: **参数解释**： 域名类型。 **取值范围**： public：公网域名。 private：内网域名。
         :type type: str
-        :param ttl: 用于填写默认生成的SOA记录中有效缓存时间，以秒为单位。 - 取值范围：300~2147483647。 - 默认值为300s。
+        :param ttl: **参数解释**： 用于填写默认生成的SOA记录中有效缓存时间，以秒为单位。默认值为300s。 **取值范围**： 300~2147483647。
         :type ttl: int
         """
         
@@ -56,7 +56,7 @@ class ModifyClusterDns:
     def name(self):
         r"""Gets the name of this ModifyClusterDns.
 
-        待修改的域名。
+        **参数解释**： 待修改的域名。 **取值范围**： 不涉及。
 
         :return: The name of this ModifyClusterDns.
         :rtype: str
@@ -67,7 +67,7 @@ class ModifyClusterDns:
     def name(self, name):
         r"""Sets the name of this ModifyClusterDns.
 
-        待修改的域名。
+        **参数解释**： 待修改的域名。 **取值范围**： 不涉及。
 
         :param name: The name of this ModifyClusterDns.
         :type name: str
@@ -78,7 +78,7 @@ class ModifyClusterDns:
     def type(self):
         r"""Gets the type of this ModifyClusterDns.
 
-        域名类型。 - public：公网域名。 - private：内网域名。
+        **参数解释**： 域名类型。 **取值范围**： public：公网域名。 private：内网域名。
 
         :return: The type of this ModifyClusterDns.
         :rtype: str
@@ -89,7 +89,7 @@ class ModifyClusterDns:
     def type(self, type):
         r"""Sets the type of this ModifyClusterDns.
 
-        域名类型。 - public：公网域名。 - private：内网域名。
+        **参数解释**： 域名类型。 **取值范围**： public：公网域名。 private：内网域名。
 
         :param type: The type of this ModifyClusterDns.
         :type type: str
@@ -100,7 +100,7 @@ class ModifyClusterDns:
     def ttl(self):
         r"""Gets the ttl of this ModifyClusterDns.
 
-        用于填写默认生成的SOA记录中有效缓存时间，以秒为单位。 - 取值范围：300~2147483647。 - 默认值为300s。
+        **参数解释**： 用于填写默认生成的SOA记录中有效缓存时间，以秒为单位。默认值为300s。 **取值范围**： 300~2147483647。
 
         :return: The ttl of this ModifyClusterDns.
         :rtype: int
@@ -111,7 +111,7 @@ class ModifyClusterDns:
     def ttl(self, ttl):
         r"""Sets the ttl of this ModifyClusterDns.
 
-        用于填写默认生成的SOA记录中有效缓存时间，以秒为单位。 - 取值范围：300~2147483647。 - 默认值为300s。
+        **参数解释**： 用于填写默认生成的SOA记录中有效缓存时间，以秒为单位。默认值为300s。 **取值范围**： 300~2147483647。
 
         :param ttl: The ttl of this ModifyClusterDns.
         :type ttl: int

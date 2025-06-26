@@ -43,21 +43,21 @@ class ListMetricsDataRequest:
 
         The model defined in huaweicloud sdk
 
-        :param cluster_id: **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
+        :param cluster_id: **参数解释**： 集群ID。获取方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
         :type cluster_id: str
-        :param metric_name: 指标名称。
+        :param metric_name: **参数解释**： 指标名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type metric_name: str
-        :param offset: **参数解释**： 分页查询，偏移量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 0
+        :param offset: **参数解释**： 分页偏移量，从0开始，页数减1。 **约束限制**： 不涉及。 **取值范围**： 大于等于0。 **默认取值**： 0
         :type offset: int
         :param limit: **参数解释**： 分页单页大小。 **约束限制**： 不涉及。 **取值范围**： 大于0，最大1000。 **默认取值**： 不限制。
         :type limit: int
-        :param _from: 采集开始时间，13位时间戳。
+        :param _from: **参数解释**： 采集开始时间，13位时间戳。 **约束限制**： 不涉及。 **取值范围**： 13位时间戳。 **默认取值**： 不涉及。
         :type _from: int
-        :param to: 采集结束时间，13位时间戳。开始时间到结束时间最多不超过一天。
+        :param to: **参数解释**： 采集结束时间，13位时间戳。 **约束限制**： 开始时间到结束时间最多不超过一天。 **取值范围**： 13位时间戳。 **默认取值**： 不涉及。
         :type to: int
-        :param order_by: 排序字段。固定取值。 ctime：采集时间。
+        :param order_by: **参数解释**： 排序字段，固定取值。 **约束限制**： 不涉及。 **取值范围**： ctime：采集时间。 **默认取值**： 不涉及。
         :type order_by: str
-        :param sort_by: 正序还是倒叙。固定取值。 asc：正序。 desc：倒序。
+        :param sort_by: **参数解释**： 描述信息请求。 **约束限制**： 正序还是倒序，固定取值。 **取值范围**： asc：正序。 desc：倒序。 **默认取值**： 不涉及。
         :type sort_by: str
         """
         
@@ -88,7 +88,7 @@ class ListMetricsDataRequest:
     def cluster_id(self):
         r"""Gets the cluster_id of this ListMetricsDataRequest.
 
-        **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
+        **参数解释**： 集群ID。获取方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
 
         :return: The cluster_id of this ListMetricsDataRequest.
         :rtype: str
@@ -99,7 +99,7 @@ class ListMetricsDataRequest:
     def cluster_id(self, cluster_id):
         r"""Sets the cluster_id of this ListMetricsDataRequest.
 
-        **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
+        **参数解释**： 集群ID。获取方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
 
         :param cluster_id: The cluster_id of this ListMetricsDataRequest.
         :type cluster_id: str
@@ -110,7 +110,7 @@ class ListMetricsDataRequest:
     def metric_name(self):
         r"""Gets the metric_name of this ListMetricsDataRequest.
 
-        指标名称。
+        **参数解释**： 指标名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The metric_name of this ListMetricsDataRequest.
         :rtype: str
@@ -121,7 +121,7 @@ class ListMetricsDataRequest:
     def metric_name(self, metric_name):
         r"""Sets the metric_name of this ListMetricsDataRequest.
 
-        指标名称。
+        **参数解释**： 指标名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param metric_name: The metric_name of this ListMetricsDataRequest.
         :type metric_name: str
@@ -132,7 +132,7 @@ class ListMetricsDataRequest:
     def offset(self):
         r"""Gets the offset of this ListMetricsDataRequest.
 
-        **参数解释**： 分页查询，偏移量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 0
+        **参数解释**： 分页偏移量，从0开始，页数减1。 **约束限制**： 不涉及。 **取值范围**： 大于等于0。 **默认取值**： 0
 
         :return: The offset of this ListMetricsDataRequest.
         :rtype: int
@@ -143,7 +143,7 @@ class ListMetricsDataRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListMetricsDataRequest.
 
-        **参数解释**： 分页查询，偏移量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 0
+        **参数解释**： 分页偏移量，从0开始，页数减1。 **约束限制**： 不涉及。 **取值范围**： 大于等于0。 **默认取值**： 0
 
         :param offset: The offset of this ListMetricsDataRequest.
         :type offset: int
@@ -176,7 +176,7 @@ class ListMetricsDataRequest:
     def _from(self):
         r"""Gets the _from of this ListMetricsDataRequest.
 
-        采集开始时间，13位时间戳。
+        **参数解释**： 采集开始时间，13位时间戳。 **约束限制**： 不涉及。 **取值范围**： 13位时间戳。 **默认取值**： 不涉及。
 
         :return: The _from of this ListMetricsDataRequest.
         :rtype: int
@@ -187,7 +187,7 @@ class ListMetricsDataRequest:
     def _from(self, _from):
         r"""Sets the _from of this ListMetricsDataRequest.
 
-        采集开始时间，13位时间戳。
+        **参数解释**： 采集开始时间，13位时间戳。 **约束限制**： 不涉及。 **取值范围**： 13位时间戳。 **默认取值**： 不涉及。
 
         :param _from: The _from of this ListMetricsDataRequest.
         :type _from: int
@@ -198,7 +198,7 @@ class ListMetricsDataRequest:
     def to(self):
         r"""Gets the to of this ListMetricsDataRequest.
 
-        采集结束时间，13位时间戳。开始时间到结束时间最多不超过一天。
+        **参数解释**： 采集结束时间，13位时间戳。 **约束限制**： 开始时间到结束时间最多不超过一天。 **取值范围**： 13位时间戳。 **默认取值**： 不涉及。
 
         :return: The to of this ListMetricsDataRequest.
         :rtype: int
@@ -209,7 +209,7 @@ class ListMetricsDataRequest:
     def to(self, to):
         r"""Sets the to of this ListMetricsDataRequest.
 
-        采集结束时间，13位时间戳。开始时间到结束时间最多不超过一天。
+        **参数解释**： 采集结束时间，13位时间戳。 **约束限制**： 开始时间到结束时间最多不超过一天。 **取值范围**： 13位时间戳。 **默认取值**： 不涉及。
 
         :param to: The to of this ListMetricsDataRequest.
         :type to: int
@@ -220,7 +220,7 @@ class ListMetricsDataRequest:
     def order_by(self):
         r"""Gets the order_by of this ListMetricsDataRequest.
 
-        排序字段。固定取值。 ctime：采集时间。
+        **参数解释**： 排序字段，固定取值。 **约束限制**： 不涉及。 **取值范围**： ctime：采集时间。 **默认取值**： 不涉及。
 
         :return: The order_by of this ListMetricsDataRequest.
         :rtype: str
@@ -231,7 +231,7 @@ class ListMetricsDataRequest:
     def order_by(self, order_by):
         r"""Sets the order_by of this ListMetricsDataRequest.
 
-        排序字段。固定取值。 ctime：采集时间。
+        **参数解释**： 排序字段，固定取值。 **约束限制**： 不涉及。 **取值范围**： ctime：采集时间。 **默认取值**： 不涉及。
 
         :param order_by: The order_by of this ListMetricsDataRequest.
         :type order_by: str
@@ -242,7 +242,7 @@ class ListMetricsDataRequest:
     def sort_by(self):
         r"""Gets the sort_by of this ListMetricsDataRequest.
 
-        正序还是倒叙。固定取值。 asc：正序。 desc：倒序。
+        **参数解释**： 描述信息请求。 **约束限制**： 正序还是倒序，固定取值。 **取值范围**： asc：正序。 desc：倒序。 **默认取值**： 不涉及。
 
         :return: The sort_by of this ListMetricsDataRequest.
         :rtype: str
@@ -253,7 +253,7 @@ class ListMetricsDataRequest:
     def sort_by(self, sort_by):
         r"""Sets the sort_by of this ListMetricsDataRequest.
 
-        正序还是倒叙。固定取值。 asc：正序。 desc：倒序。
+        **参数解释**： 描述信息请求。 **约束限制**： 正序还是倒序，固定取值。 **取值范围**： asc：正序。 desc：倒序。 **默认取值**： 不涉及。
 
         :param sort_by: The sort_by of this ListMetricsDataRequest.
         :type sort_by: str

@@ -20,7 +20,7 @@ class ScenarioCreateReqSrlz:
         'gen_scenario': 'str',
         'description': 'MutableFileSrlz',
         'file': 'FileCreateReqSrlz',
-        'simulator': 'SimulatorEnum',
+        'simulator': 'str',
         'version': 'ScenarioVersionEnum',
         'map_filename': 'str',
         'model_filename': 'str',
@@ -59,8 +59,8 @@ class ScenarioCreateReqSrlz:
         :type description: :class:`huaweicloudsdkoctopus.v2.MutableFileSrlz`
         :param file: 文件
         :type file: :class:`huaweicloudsdkoctopus.v2.FileCreateReqSrlz`
-        :param simulator: 
-        :type simulator: :class:`huaweicloudsdkoctopus.v2.SimulatorEnum`
+        :param simulator: 仿真器名称,取值范围:A,B,C,D,E
+        :type simulator: str
         :param version: 
         :type version: :class:`huaweicloudsdkoctopus.v2.ScenarioVersionEnum`
         :param map_filename: 地图文件名
@@ -179,8 +179,10 @@ class ScenarioCreateReqSrlz:
     def simulator(self):
         r"""Gets the simulator of this ScenarioCreateReqSrlz.
 
+        仿真器名称,取值范围:A,B,C,D,E
+
         :return: The simulator of this ScenarioCreateReqSrlz.
-        :rtype: :class:`huaweicloudsdkoctopus.v2.SimulatorEnum`
+        :rtype: str
         """
         return self._simulator
 
@@ -188,8 +190,10 @@ class ScenarioCreateReqSrlz:
     def simulator(self, simulator):
         r"""Sets the simulator of this ScenarioCreateReqSrlz.
 
+        仿真器名称,取值范围:A,B,C,D,E
+
         :param simulator: The simulator of this ScenarioCreateReqSrlz.
-        :type simulator: :class:`huaweicloudsdkoctopus.v2.SimulatorEnum`
+        :type simulator: str
         """
         self._simulator = simulator
 

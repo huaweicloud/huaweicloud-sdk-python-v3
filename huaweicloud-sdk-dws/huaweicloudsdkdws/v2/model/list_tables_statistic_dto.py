@@ -41,19 +41,19 @@ class ListTablesStatisticDto:
 
         The model defined in huaweicloud sdk
 
-        :param db_name: 数据库名称。
+        :param db_name: **参数解释**： 数据库名称。 **取值范围**： 不涉及。
         :type db_name: str
-        :param schema_name: schema名称。
+        :param schema_name: **参数解释**： 模式名称。 **取值范围**： 不涉及。
         :type schema_name: str
-        :param table_name: 表名。
+        :param table_name: **参数解释**： 表名。 **取值范围**： 不涉及。
         :type table_name: str
-        :param table_owner: 所属用户。
+        :param table_owner: **参数解释**： 所属用户。 **取值范围**： 不涉及。
         :type table_owner: str
-        :param table_size: 表大小。
+        :param table_size: **参数解释**： 表大小。 **取值范围**： 不涉及。
         :type table_size: str
-        :param skew_rate: 表倾斜率。
+        :param skew_rate: **参数解释**： 表倾斜率。 **取值范围**： 不涉及。
         :type skew_rate: float
-        :param dirty_page_rate: 脏页率。
+        :param dirty_page_rate: **参数解释**： 脏页率。 **取值范围**： 不涉及。
         :type dirty_page_rate: float
         """
         
@@ -87,7 +87,7 @@ class ListTablesStatisticDto:
     def db_name(self):
         r"""Gets the db_name of this ListTablesStatisticDto.
 
-        数据库名称。
+        **参数解释**： 数据库名称。 **取值范围**： 不涉及。
 
         :return: The db_name of this ListTablesStatisticDto.
         :rtype: str
@@ -98,7 +98,7 @@ class ListTablesStatisticDto:
     def db_name(self, db_name):
         r"""Sets the db_name of this ListTablesStatisticDto.
 
-        数据库名称。
+        **参数解释**： 数据库名称。 **取值范围**： 不涉及。
 
         :param db_name: The db_name of this ListTablesStatisticDto.
         :type db_name: str
@@ -109,7 +109,7 @@ class ListTablesStatisticDto:
     def schema_name(self):
         r"""Gets the schema_name of this ListTablesStatisticDto.
 
-        schema名称。
+        **参数解释**： 模式名称。 **取值范围**： 不涉及。
 
         :return: The schema_name of this ListTablesStatisticDto.
         :rtype: str
@@ -120,7 +120,7 @@ class ListTablesStatisticDto:
     def schema_name(self, schema_name):
         r"""Sets the schema_name of this ListTablesStatisticDto.
 
-        schema名称。
+        **参数解释**： 模式名称。 **取值范围**： 不涉及。
 
         :param schema_name: The schema_name of this ListTablesStatisticDto.
         :type schema_name: str
@@ -131,7 +131,7 @@ class ListTablesStatisticDto:
     def table_name(self):
         r"""Gets the table_name of this ListTablesStatisticDto.
 
-        表名。
+        **参数解释**： 表名。 **取值范围**： 不涉及。
 
         :return: The table_name of this ListTablesStatisticDto.
         :rtype: str
@@ -142,7 +142,7 @@ class ListTablesStatisticDto:
     def table_name(self, table_name):
         r"""Sets the table_name of this ListTablesStatisticDto.
 
-        表名。
+        **参数解释**： 表名。 **取值范围**： 不涉及。
 
         :param table_name: The table_name of this ListTablesStatisticDto.
         :type table_name: str
@@ -153,7 +153,7 @@ class ListTablesStatisticDto:
     def table_owner(self):
         r"""Gets the table_owner of this ListTablesStatisticDto.
 
-        所属用户。
+        **参数解释**： 所属用户。 **取值范围**： 不涉及。
 
         :return: The table_owner of this ListTablesStatisticDto.
         :rtype: str
@@ -164,7 +164,7 @@ class ListTablesStatisticDto:
     def table_owner(self, table_owner):
         r"""Sets the table_owner of this ListTablesStatisticDto.
 
-        所属用户。
+        **参数解释**： 所属用户。 **取值范围**： 不涉及。
 
         :param table_owner: The table_owner of this ListTablesStatisticDto.
         :type table_owner: str
@@ -175,7 +175,7 @@ class ListTablesStatisticDto:
     def table_size(self):
         r"""Gets the table_size of this ListTablesStatisticDto.
 
-        表大小。
+        **参数解释**： 表大小。 **取值范围**： 不涉及。
 
         :return: The table_size of this ListTablesStatisticDto.
         :rtype: str
@@ -186,7 +186,7 @@ class ListTablesStatisticDto:
     def table_size(self, table_size):
         r"""Sets the table_size of this ListTablesStatisticDto.
 
-        表大小。
+        **参数解释**： 表大小。 **取值范围**： 不涉及。
 
         :param table_size: The table_size of this ListTablesStatisticDto.
         :type table_size: str
@@ -197,7 +197,7 @@ class ListTablesStatisticDto:
     def skew_rate(self):
         r"""Gets the skew_rate of this ListTablesStatisticDto.
 
-        表倾斜率。
+        **参数解释**： 表倾斜率。 **取值范围**： 不涉及。
 
         :return: The skew_rate of this ListTablesStatisticDto.
         :rtype: float
@@ -208,7 +208,7 @@ class ListTablesStatisticDto:
     def skew_rate(self, skew_rate):
         r"""Sets the skew_rate of this ListTablesStatisticDto.
 
-        表倾斜率。
+        **参数解释**： 表倾斜率。 **取值范围**： 不涉及。
 
         :param skew_rate: The skew_rate of this ListTablesStatisticDto.
         :type skew_rate: float
@@ -219,7 +219,7 @@ class ListTablesStatisticDto:
     def dirty_page_rate(self):
         r"""Gets the dirty_page_rate of this ListTablesStatisticDto.
 
-        脏页率。
+        **参数解释**： 脏页率。 **取值范围**： 不涉及。
 
         :return: The dirty_page_rate of this ListTablesStatisticDto.
         :rtype: float
@@ -230,7 +230,7 @@ class ListTablesStatisticDto:
     def dirty_page_rate(self, dirty_page_rate):
         r"""Sets the dirty_page_rate of this ListTablesStatisticDto.
 
-        脏页率。
+        **参数解释**： 脏页率。 **取值范围**： 不涉及。
 
         :param dirty_page_rate: The dirty_page_rate of this ListTablesStatisticDto.
         :type dirty_page_rate: float

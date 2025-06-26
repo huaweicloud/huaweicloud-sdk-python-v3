@@ -37,6 +37,7 @@ class FlinkJobConfig:
         'dependency_files': 'list[str]',
         'executor_number': 'int',
         'executor_cu_number': 'int',
+        'execution_agency_urn': 'str',
         'resume_checkpoint': 'bool',
         'runtime_config': 'str',
         'graph_editor_enabled': 'bool',
@@ -75,6 +76,7 @@ class FlinkJobConfig:
         'dependency_files': 'dependency_files',
         'executor_number': 'executor_number',
         'executor_cu_number': 'executor_cu_number',
+        'execution_agency_urn': 'execution_agency_urn',
         'resume_checkpoint': 'resume_checkpoint',
         'runtime_config': 'runtime_config',
         'graph_editor_enabled': 'graph_editor_enabled',
@@ -92,7 +94,7 @@ class FlinkJobConfig:
         'real_cu_number': 'real_cu_number'
     }
 
-    def __init__(self, checkpoint_enabled=None, checkpoint_mode=None, checkpoint_interval=None, log_enabled=None, obs_bucket=None, smn_topic=None, edge_group_ids=None, root_id=None, manager_cu_number=None, cu_number=None, parallel_number=None, restart_when_exception=None, idle_state_retention=None, udf_jar_url=None, dirty_data_strategy=None, entrypoint=None, dependency_jars=None, dependency_files=None, executor_number=None, executor_cu_number=None, resume_checkpoint=None, runtime_config=None, graph_editor_enabled=None, graph_editor_data=None, resume_max_num=None, checkpoint_path=None, config_url=None, tm_cus=None, tm_slot_num=None, image=None, feature=None, flink_version=None, operator_config=None, static_estimator_config=None, real_cu_number=None):
+    def __init__(self, checkpoint_enabled=None, checkpoint_mode=None, checkpoint_interval=None, log_enabled=None, obs_bucket=None, smn_topic=None, edge_group_ids=None, root_id=None, manager_cu_number=None, cu_number=None, parallel_number=None, restart_when_exception=None, idle_state_retention=None, udf_jar_url=None, dirty_data_strategy=None, entrypoint=None, dependency_jars=None, dependency_files=None, executor_number=None, executor_cu_number=None, execution_agency_urn=None, resume_checkpoint=None, runtime_config=None, graph_editor_enabled=None, graph_editor_data=None, resume_max_num=None, checkpoint_path=None, config_url=None, tm_cus=None, tm_slot_num=None, image=None, feature=None, flink_version=None, operator_config=None, static_estimator_config=None, real_cu_number=None):
         r"""FlinkJobConfig
 
         The model defined in huaweicloud sdk
@@ -137,6 +139,8 @@ class FlinkJobConfig:
         :type executor_number: int
         :param executor_cu_number: 参数解释:  计算节点cu数 示例: 0 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
         :type executor_cu_number: int
+        :param execution_agency_urn: 参数解释:  授权给DLI的委托名。Flink1.15版本时支持配置该参数。 示例: agency 约束限制:  无 取值范围: 无 默认取值: 无
+        :type execution_agency_urn: str
         :param resume_checkpoint: 参数解释:  异常自动重启时，是否从最新checkpoint恢复，默认false 示例: 0 约束限制:  无 取值范围: true,false 默认取值: false
         :type resume_checkpoint: bool
         :param runtime_config: 参数解释: Flink作业运行时自定义优化参数 示例: [{\\\&quot;key\\\&quot;:\\\&quot;high-availability\\\&quot;,\\\&quot;value\\\&quot;:\\\&quot;org.apache.flink.kubernetes.highavailability.KubernetesHaServicesFactory\\\&quot; },{ \\\&quot;key\\\&quot;:\\\&quot;kubernetes.jobmanager.replicas\\\&quot;,\\\&quot;value\\\&quot;:\\\&quot;2\\\&quot; },{ \\\&quot;key\\\&quot;:\\\&quot;high-availability.storageDir\\\&quot;,\\\&quot;value\\\&quot;:\\\&quot;obs://fz-test/test\\\&quot;}] 约束限制:  无 取值范围: 无 默认取值: 无
@@ -191,6 +195,7 @@ class FlinkJobConfig:
         self._dependency_files = None
         self._executor_number = None
         self._executor_cu_number = None
+        self._execution_agency_urn = None
         self._resume_checkpoint = None
         self._runtime_config = None
         self._graph_editor_enabled = None
@@ -248,6 +253,8 @@ class FlinkJobConfig:
             self.executor_number = executor_number
         if executor_cu_number is not None:
             self.executor_cu_number = executor_cu_number
+        if execution_agency_urn is not None:
+            self.execution_agency_urn = execution_agency_urn
         if resume_checkpoint is not None:
             self.resume_checkpoint = resume_checkpoint
         if runtime_config is not None:
@@ -718,6 +725,28 @@ class FlinkJobConfig:
         :type executor_cu_number: int
         """
         self._executor_cu_number = executor_cu_number
+
+    @property
+    def execution_agency_urn(self):
+        r"""Gets the execution_agency_urn of this FlinkJobConfig.
+
+        参数解释:  授权给DLI的委托名。Flink1.15版本时支持配置该参数。 示例: agency 约束限制:  无 取值范围: 无 默认取值: 无
+
+        :return: The execution_agency_urn of this FlinkJobConfig.
+        :rtype: str
+        """
+        return self._execution_agency_urn
+
+    @execution_agency_urn.setter
+    def execution_agency_urn(self, execution_agency_urn):
+        r"""Sets the execution_agency_urn of this FlinkJobConfig.
+
+        参数解释:  授权给DLI的委托名。Flink1.15版本时支持配置该参数。 示例: agency 约束限制:  无 取值范围: 无 默认取值: 无
+
+        :param execution_agency_urn: The execution_agency_urn of this FlinkJobConfig.
+        :type execution_agency_urn: str
+        """
+        self._execution_agency_urn = execution_agency_urn
 
     @property
     def resume_checkpoint(self):

@@ -31,9 +31,9 @@ class RoleAuthority:
 
         The model defined in huaweicloud sdk
 
-        :param role: 角色名称
+        :param role: **参数解释**： 角色名称。 **取值范围**： 不涉及。
         :type role: str
-        :param right_list: 权限列表
+        :param right_list: **参数解释**： 权限列表。 **取值范围**： 不涉及。
         :type right_list: list[str]
         """
         
@@ -52,7 +52,7 @@ class RoleAuthority:
     def role(self):
         r"""Gets the role of this RoleAuthority.
 
-        角色名称
+        **参数解释**： 角色名称。 **取值范围**： 不涉及。
 
         :return: The role of this RoleAuthority.
         :rtype: str
@@ -63,7 +63,7 @@ class RoleAuthority:
     def role(self, role):
         r"""Sets the role of this RoleAuthority.
 
-        角色名称
+        **参数解释**： 角色名称。 **取值范围**： 不涉及。
 
         :param role: The role of this RoleAuthority.
         :type role: str
@@ -74,7 +74,7 @@ class RoleAuthority:
     def right_list(self):
         r"""Gets the right_list of this RoleAuthority.
 
-        权限列表
+        **参数解释**： 权限列表。 **取值范围**： 不涉及。
 
         :return: The right_list of this RoleAuthority.
         :rtype: list[str]
@@ -85,7 +85,7 @@ class RoleAuthority:
     def right_list(self, right_list):
         r"""Sets the right_list of this RoleAuthority.
 
-        权限列表
+        **参数解释**： 权限列表。 **取值范围**： 不涉及。
 
         :param right_list: The right_list of this RoleAuthority.
         :type right_list: list[str]

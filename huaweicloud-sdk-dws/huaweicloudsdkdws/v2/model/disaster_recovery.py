@@ -65,43 +65,43 @@ class DisasterRecovery:
 
         The model defined in huaweicloud sdk
 
-        :param id: ID
+        :param id: **参数解释**： 容灾ID。 **取值范围**： 不涉及。
         :type id: str
-        :param status: 状态
+        :param status: **参数解释**： 状态。 **取值范围**： 不涉及。
         :type status: str
-        :param name: 名称
+        :param name: **参数解释**： 名称。 **取值范围**： 不涉及。
         :type name: str
-        :param dr_type: 容灾类型
+        :param dr_type: **参数解释**： 容灾类型。 **取值范围**： 不涉及。
         :type dr_type: str
-        :param primary_cluster_id: 主集群ID
+        :param primary_cluster_id: **参数解释**： 主集群ID。 **取值范围**： 不涉及。
         :type primary_cluster_id: str
-        :param primary_cluster_name: 主集群名称
+        :param primary_cluster_name: **参数解释**： 主集群名称。 **取值范围**： 不涉及。
         :type primary_cluster_name: str
-        :param standby_cluster_id: 备集群ID
+        :param standby_cluster_id: **参数解释**： 备集群ID。 **取值范围**： 不涉及。
         :type standby_cluster_id: str
-        :param standby_cluster_name: 备集群名称
+        :param standby_cluster_name: **参数解释**： 备集群名称。 **取值范围**： 不涉及。
         :type standby_cluster_name: str
-        :param primary_cluster_role: 主集群角色
+        :param primary_cluster_role: **参数解释**： 主集群角色。 **取值范围**： 不涉及。
         :type primary_cluster_role: str
-        :param standby_cluster_role: 备集群角色
+        :param standby_cluster_role: **参数解释**： 备集群角色。 **取值范围**： 不涉及。
         :type standby_cluster_role: str
-        :param primary_cluster_status: 主集群状态
+        :param primary_cluster_status: **参数解释**： 主集群状态。 **取值范围**： 不涉及。
         :type primary_cluster_status: str
-        :param standby_cluster_status: 备集群状态
+        :param standby_cluster_status: **参数解释**： 备集群状态。 **取值范围**： 不涉及。
         :type standby_cluster_status: str
-        :param primary_cluster_region: 主集群region
+        :param primary_cluster_region: **参数解释**： 主集群region。 **取值范围**： 不涉及。
         :type primary_cluster_region: str
-        :param standby_cluster_region: 备集群region
+        :param standby_cluster_region: **参数解释**： 备集群region。 **取值范围**： 不涉及。
         :type standby_cluster_region: str
-        :param primary_cluster_project_id: 主集群project_id
+        :param primary_cluster_project_id: **参数解释**： 主集群项目ID。 **取值范围**： 不涉及。
         :type primary_cluster_project_id: str
-        :param standby_cluster_project_id: 备集群project_id
+        :param standby_cluster_project_id: **参数解释**： 备集群项目ID。 **取值范围**： 不涉及。
         :type standby_cluster_project_id: str
-        :param last_disaster_time: 最近同步时间
+        :param last_disaster_time: **参数解释**： 最近同步时间。 **取值范围**： 不涉及。
         :type last_disaster_time: str
-        :param start_time: 启动时间
+        :param start_time: **参数解释**： 启动时间。 **取值范围**： 不涉及。
         :type start_time: str
-        :param create_time: 创建时间
+        :param create_time: **参数解释**： 创建时间。 **取值范围**： 不涉及。
         :type create_time: str
         """
         
@@ -171,7 +171,7 @@ class DisasterRecovery:
     def id(self):
         r"""Gets the id of this DisasterRecovery.
 
-        ID
+        **参数解释**： 容灾ID。 **取值范围**： 不涉及。
 
         :return: The id of this DisasterRecovery.
         :rtype: str
@@ -182,7 +182,7 @@ class DisasterRecovery:
     def id(self, id):
         r"""Sets the id of this DisasterRecovery.
 
-        ID
+        **参数解释**： 容灾ID。 **取值范围**： 不涉及。
 
         :param id: The id of this DisasterRecovery.
         :type id: str
@@ -193,7 +193,7 @@ class DisasterRecovery:
     def status(self):
         r"""Gets the status of this DisasterRecovery.
 
-        状态
+        **参数解释**： 状态。 **取值范围**： 不涉及。
 
         :return: The status of this DisasterRecovery.
         :rtype: str
@@ -204,7 +204,7 @@ class DisasterRecovery:
     def status(self, status):
         r"""Sets the status of this DisasterRecovery.
 
-        状态
+        **参数解释**： 状态。 **取值范围**： 不涉及。
 
         :param status: The status of this DisasterRecovery.
         :type status: str
@@ -215,7 +215,7 @@ class DisasterRecovery:
     def name(self):
         r"""Gets the name of this DisasterRecovery.
 
-        名称
+        **参数解释**： 名称。 **取值范围**： 不涉及。
 
         :return: The name of this DisasterRecovery.
         :rtype: str
@@ -226,7 +226,7 @@ class DisasterRecovery:
     def name(self, name):
         r"""Sets the name of this DisasterRecovery.
 
-        名称
+        **参数解释**： 名称。 **取值范围**： 不涉及。
 
         :param name: The name of this DisasterRecovery.
         :type name: str
@@ -237,7 +237,7 @@ class DisasterRecovery:
     def dr_type(self):
         r"""Gets the dr_type of this DisasterRecovery.
 
-        容灾类型
+        **参数解释**： 容灾类型。 **取值范围**： 不涉及。
 
         :return: The dr_type of this DisasterRecovery.
         :rtype: str
@@ -248,7 +248,7 @@ class DisasterRecovery:
     def dr_type(self, dr_type):
         r"""Sets the dr_type of this DisasterRecovery.
 
-        容灾类型
+        **参数解释**： 容灾类型。 **取值范围**： 不涉及。
 
         :param dr_type: The dr_type of this DisasterRecovery.
         :type dr_type: str
@@ -259,7 +259,7 @@ class DisasterRecovery:
     def primary_cluster_id(self):
         r"""Gets the primary_cluster_id of this DisasterRecovery.
 
-        主集群ID
+        **参数解释**： 主集群ID。 **取值范围**： 不涉及。
 
         :return: The primary_cluster_id of this DisasterRecovery.
         :rtype: str
@@ -270,7 +270,7 @@ class DisasterRecovery:
     def primary_cluster_id(self, primary_cluster_id):
         r"""Sets the primary_cluster_id of this DisasterRecovery.
 
-        主集群ID
+        **参数解释**： 主集群ID。 **取值范围**： 不涉及。
 
         :param primary_cluster_id: The primary_cluster_id of this DisasterRecovery.
         :type primary_cluster_id: str
@@ -281,7 +281,7 @@ class DisasterRecovery:
     def primary_cluster_name(self):
         r"""Gets the primary_cluster_name of this DisasterRecovery.
 
-        主集群名称
+        **参数解释**： 主集群名称。 **取值范围**： 不涉及。
 
         :return: The primary_cluster_name of this DisasterRecovery.
         :rtype: str
@@ -292,7 +292,7 @@ class DisasterRecovery:
     def primary_cluster_name(self, primary_cluster_name):
         r"""Sets the primary_cluster_name of this DisasterRecovery.
 
-        主集群名称
+        **参数解释**： 主集群名称。 **取值范围**： 不涉及。
 
         :param primary_cluster_name: The primary_cluster_name of this DisasterRecovery.
         :type primary_cluster_name: str
@@ -303,7 +303,7 @@ class DisasterRecovery:
     def standby_cluster_id(self):
         r"""Gets the standby_cluster_id of this DisasterRecovery.
 
-        备集群ID
+        **参数解释**： 备集群ID。 **取值范围**： 不涉及。
 
         :return: The standby_cluster_id of this DisasterRecovery.
         :rtype: str
@@ -314,7 +314,7 @@ class DisasterRecovery:
     def standby_cluster_id(self, standby_cluster_id):
         r"""Sets the standby_cluster_id of this DisasterRecovery.
 
-        备集群ID
+        **参数解释**： 备集群ID。 **取值范围**： 不涉及。
 
         :param standby_cluster_id: The standby_cluster_id of this DisasterRecovery.
         :type standby_cluster_id: str
@@ -325,7 +325,7 @@ class DisasterRecovery:
     def standby_cluster_name(self):
         r"""Gets the standby_cluster_name of this DisasterRecovery.
 
-        备集群名称
+        **参数解释**： 备集群名称。 **取值范围**： 不涉及。
 
         :return: The standby_cluster_name of this DisasterRecovery.
         :rtype: str
@@ -336,7 +336,7 @@ class DisasterRecovery:
     def standby_cluster_name(self, standby_cluster_name):
         r"""Sets the standby_cluster_name of this DisasterRecovery.
 
-        备集群名称
+        **参数解释**： 备集群名称。 **取值范围**： 不涉及。
 
         :param standby_cluster_name: The standby_cluster_name of this DisasterRecovery.
         :type standby_cluster_name: str
@@ -347,7 +347,7 @@ class DisasterRecovery:
     def primary_cluster_role(self):
         r"""Gets the primary_cluster_role of this DisasterRecovery.
 
-        主集群角色
+        **参数解释**： 主集群角色。 **取值范围**： 不涉及。
 
         :return: The primary_cluster_role of this DisasterRecovery.
         :rtype: str
@@ -358,7 +358,7 @@ class DisasterRecovery:
     def primary_cluster_role(self, primary_cluster_role):
         r"""Sets the primary_cluster_role of this DisasterRecovery.
 
-        主集群角色
+        **参数解释**： 主集群角色。 **取值范围**： 不涉及。
 
         :param primary_cluster_role: The primary_cluster_role of this DisasterRecovery.
         :type primary_cluster_role: str
@@ -369,7 +369,7 @@ class DisasterRecovery:
     def standby_cluster_role(self):
         r"""Gets the standby_cluster_role of this DisasterRecovery.
 
-        备集群角色
+        **参数解释**： 备集群角色。 **取值范围**： 不涉及。
 
         :return: The standby_cluster_role of this DisasterRecovery.
         :rtype: str
@@ -380,7 +380,7 @@ class DisasterRecovery:
     def standby_cluster_role(self, standby_cluster_role):
         r"""Sets the standby_cluster_role of this DisasterRecovery.
 
-        备集群角色
+        **参数解释**： 备集群角色。 **取值范围**： 不涉及。
 
         :param standby_cluster_role: The standby_cluster_role of this DisasterRecovery.
         :type standby_cluster_role: str
@@ -391,7 +391,7 @@ class DisasterRecovery:
     def primary_cluster_status(self):
         r"""Gets the primary_cluster_status of this DisasterRecovery.
 
-        主集群状态
+        **参数解释**： 主集群状态。 **取值范围**： 不涉及。
 
         :return: The primary_cluster_status of this DisasterRecovery.
         :rtype: str
@@ -402,7 +402,7 @@ class DisasterRecovery:
     def primary_cluster_status(self, primary_cluster_status):
         r"""Sets the primary_cluster_status of this DisasterRecovery.
 
-        主集群状态
+        **参数解释**： 主集群状态。 **取值范围**： 不涉及。
 
         :param primary_cluster_status: The primary_cluster_status of this DisasterRecovery.
         :type primary_cluster_status: str
@@ -413,7 +413,7 @@ class DisasterRecovery:
     def standby_cluster_status(self):
         r"""Gets the standby_cluster_status of this DisasterRecovery.
 
-        备集群状态
+        **参数解释**： 备集群状态。 **取值范围**： 不涉及。
 
         :return: The standby_cluster_status of this DisasterRecovery.
         :rtype: str
@@ -424,7 +424,7 @@ class DisasterRecovery:
     def standby_cluster_status(self, standby_cluster_status):
         r"""Sets the standby_cluster_status of this DisasterRecovery.
 
-        备集群状态
+        **参数解释**： 备集群状态。 **取值范围**： 不涉及。
 
         :param standby_cluster_status: The standby_cluster_status of this DisasterRecovery.
         :type standby_cluster_status: str
@@ -435,7 +435,7 @@ class DisasterRecovery:
     def primary_cluster_region(self):
         r"""Gets the primary_cluster_region of this DisasterRecovery.
 
-        主集群region
+        **参数解释**： 主集群region。 **取值范围**： 不涉及。
 
         :return: The primary_cluster_region of this DisasterRecovery.
         :rtype: str
@@ -446,7 +446,7 @@ class DisasterRecovery:
     def primary_cluster_region(self, primary_cluster_region):
         r"""Sets the primary_cluster_region of this DisasterRecovery.
 
-        主集群region
+        **参数解释**： 主集群region。 **取值范围**： 不涉及。
 
         :param primary_cluster_region: The primary_cluster_region of this DisasterRecovery.
         :type primary_cluster_region: str
@@ -457,7 +457,7 @@ class DisasterRecovery:
     def standby_cluster_region(self):
         r"""Gets the standby_cluster_region of this DisasterRecovery.
 
-        备集群region
+        **参数解释**： 备集群region。 **取值范围**： 不涉及。
 
         :return: The standby_cluster_region of this DisasterRecovery.
         :rtype: str
@@ -468,7 +468,7 @@ class DisasterRecovery:
     def standby_cluster_region(self, standby_cluster_region):
         r"""Sets the standby_cluster_region of this DisasterRecovery.
 
-        备集群region
+        **参数解释**： 备集群region。 **取值范围**： 不涉及。
 
         :param standby_cluster_region: The standby_cluster_region of this DisasterRecovery.
         :type standby_cluster_region: str
@@ -479,7 +479,7 @@ class DisasterRecovery:
     def primary_cluster_project_id(self):
         r"""Gets the primary_cluster_project_id of this DisasterRecovery.
 
-        主集群project_id
+        **参数解释**： 主集群项目ID。 **取值范围**： 不涉及。
 
         :return: The primary_cluster_project_id of this DisasterRecovery.
         :rtype: str
@@ -490,7 +490,7 @@ class DisasterRecovery:
     def primary_cluster_project_id(self, primary_cluster_project_id):
         r"""Sets the primary_cluster_project_id of this DisasterRecovery.
 
-        主集群project_id
+        **参数解释**： 主集群项目ID。 **取值范围**： 不涉及。
 
         :param primary_cluster_project_id: The primary_cluster_project_id of this DisasterRecovery.
         :type primary_cluster_project_id: str
@@ -501,7 +501,7 @@ class DisasterRecovery:
     def standby_cluster_project_id(self):
         r"""Gets the standby_cluster_project_id of this DisasterRecovery.
 
-        备集群project_id
+        **参数解释**： 备集群项目ID。 **取值范围**： 不涉及。
 
         :return: The standby_cluster_project_id of this DisasterRecovery.
         :rtype: str
@@ -512,7 +512,7 @@ class DisasterRecovery:
     def standby_cluster_project_id(self, standby_cluster_project_id):
         r"""Sets the standby_cluster_project_id of this DisasterRecovery.
 
-        备集群project_id
+        **参数解释**： 备集群项目ID。 **取值范围**： 不涉及。
 
         :param standby_cluster_project_id: The standby_cluster_project_id of this DisasterRecovery.
         :type standby_cluster_project_id: str
@@ -523,7 +523,7 @@ class DisasterRecovery:
     def last_disaster_time(self):
         r"""Gets the last_disaster_time of this DisasterRecovery.
 
-        最近同步时间
+        **参数解释**： 最近同步时间。 **取值范围**： 不涉及。
 
         :return: The last_disaster_time of this DisasterRecovery.
         :rtype: str
@@ -534,7 +534,7 @@ class DisasterRecovery:
     def last_disaster_time(self, last_disaster_time):
         r"""Sets the last_disaster_time of this DisasterRecovery.
 
-        最近同步时间
+        **参数解释**： 最近同步时间。 **取值范围**： 不涉及。
 
         :param last_disaster_time: The last_disaster_time of this DisasterRecovery.
         :type last_disaster_time: str
@@ -545,7 +545,7 @@ class DisasterRecovery:
     def start_time(self):
         r"""Gets the start_time of this DisasterRecovery.
 
-        启动时间
+        **参数解释**： 启动时间。 **取值范围**： 不涉及。
 
         :return: The start_time of this DisasterRecovery.
         :rtype: str
@@ -556,7 +556,7 @@ class DisasterRecovery:
     def start_time(self, start_time):
         r"""Sets the start_time of this DisasterRecovery.
 
-        启动时间
+        **参数解释**： 启动时间。 **取值范围**： 不涉及。
 
         :param start_time: The start_time of this DisasterRecovery.
         :type start_time: str
@@ -567,7 +567,7 @@ class DisasterRecovery:
     def create_time(self):
         r"""Gets the create_time of this DisasterRecovery.
 
-        创建时间
+        **参数解释**： 创建时间。 **取值范围**： 不涉及。
 
         :return: The create_time of this DisasterRecovery.
         :rtype: str
@@ -578,7 +578,7 @@ class DisasterRecovery:
     def create_time(self, create_time):
         r"""Sets the create_time of this DisasterRecovery.
 
-        创建时间
+        **参数解释**： 创建时间。 **取值范围**： 不涉及。
 
         :param create_time: The create_time of this DisasterRecovery.
         :type create_time: str

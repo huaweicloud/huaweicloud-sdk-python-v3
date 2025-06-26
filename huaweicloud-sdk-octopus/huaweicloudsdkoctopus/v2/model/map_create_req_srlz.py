@@ -18,15 +18,17 @@ class MapCreateReqSrlz:
 
     openapi_types = {
         'file': 'FileCreateReqSrlz',
-        'version': 'MapVersionEnum'
+        'version': 'MapVersionEnum',
+        'agreement_confirm': 'bool'
     }
 
     attribute_map = {
         'file': 'file',
-        'version': 'version'
+        'version': 'version',
+        'agreement_confirm': 'agreement_confirm'
     }
 
-    def __init__(self, file=None, version=None):
+    def __init__(self, file=None, version=None, agreement_confirm=None):
         r"""MapCreateReqSrlz
 
         The model defined in huaweicloud sdk
@@ -35,16 +37,20 @@ class MapCreateReqSrlz:
         :type file: :class:`huaweicloudsdkoctopus.v2.FileCreateReqSrlz`
         :param version: 
         :type version: :class:`huaweicloudsdkoctopus.v2.MapVersionEnum`
+        :param agreement_confirm: 是否同意协议，必须为true
+        :type agreement_confirm: bool
         """
         
         
 
         self._file = None
         self._version = None
+        self._agreement_confirm = None
         self.discriminator = None
 
         self.file = file
         self.version = version
+        self.agreement_confirm = agreement_confirm
 
     @property
     def file(self):
@@ -81,6 +87,28 @@ class MapCreateReqSrlz:
         :type version: :class:`huaweicloudsdkoctopus.v2.MapVersionEnum`
         """
         self._version = version
+
+    @property
+    def agreement_confirm(self):
+        r"""Gets the agreement_confirm of this MapCreateReqSrlz.
+
+        是否同意协议，必须为true
+
+        :return: The agreement_confirm of this MapCreateReqSrlz.
+        :rtype: bool
+        """
+        return self._agreement_confirm
+
+    @agreement_confirm.setter
+    def agreement_confirm(self, agreement_confirm):
+        r"""Sets the agreement_confirm of this MapCreateReqSrlz.
+
+        是否同意协议，必须为true
+
+        :param agreement_confirm: The agreement_confirm of this MapCreateReqSrlz.
+        :type agreement_confirm: bool
+        """
+        self._agreement_confirm = agreement_confirm
 
     def to_dict(self):
         """Returns the model properties as a dict"""

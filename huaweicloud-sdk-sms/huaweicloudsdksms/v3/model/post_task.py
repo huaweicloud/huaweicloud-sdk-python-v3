@@ -38,7 +38,8 @@ class PostTask:
         'start_network_check': 'bool',
         'speed_limit': 'int',
         'over_speed_threshold': 'float',
-        'is_need_consistency_check': 'bool'
+        'is_need_consistency_check': 'bool',
+        'need_migration_test': 'bool'
     }
 
     attribute_map = {
@@ -63,10 +64,11 @@ class PostTask:
         'start_network_check': 'start_network_check',
         'speed_limit': 'speed_limit',
         'over_speed_threshold': 'over_speed_threshold',
-        'is_need_consistency_check': 'is_need_consistency_check'
+        'is_need_consistency_check': 'is_need_consistency_check',
+        'need_migration_test': 'need_migration_test'
     }
 
-    def __init__(self, name=None, type=None, start_target_server=None, auto_start=None, os_type=None, source_server=None, target_server=None, migration_ip=None, region_name=None, region_id=None, project_name=None, project_id=None, priority=None, vm_template_id=None, use_public_ip=None, use_ipv6=None, syncing=None, exist_server=None, start_network_check=None, speed_limit=None, over_speed_threshold=None, is_need_consistency_check=None):
+    def __init__(self, name=None, type=None, start_target_server=None, auto_start=None, os_type=None, source_server=None, target_server=None, migration_ip=None, region_name=None, region_id=None, project_name=None, project_id=None, priority=None, vm_template_id=None, use_public_ip=None, use_ipv6=None, syncing=None, exist_server=None, start_network_check=None, speed_limit=None, over_speed_threshold=None, is_need_consistency_check=None, need_migration_test=None):
         r"""PostTask
 
         The model defined in huaweicloud sdk
@@ -115,6 +117,8 @@ class PostTask:
         :type over_speed_threshold: float
         :param is_need_consistency_check: 是否进行一致性校验
         :type is_need_consistency_check: bool
+        :param need_migration_test: 是否开启迁移演练
+        :type need_migration_test: bool
         """
         
         
@@ -141,6 +145,7 @@ class PostTask:
         self._speed_limit = None
         self._over_speed_threshold = None
         self._is_need_consistency_check = None
+        self._need_migration_test = None
         self.discriminator = None
 
         self.name = name
@@ -178,6 +183,8 @@ class PostTask:
             self.over_speed_threshold = over_speed_threshold
         if is_need_consistency_check is not None:
             self.is_need_consistency_check = is_need_consistency_check
+        if need_migration_test is not None:
+            self.need_migration_test = need_migration_test
 
     @property
     def name(self):
@@ -654,6 +661,28 @@ class PostTask:
         :type is_need_consistency_check: bool
         """
         self._is_need_consistency_check = is_need_consistency_check
+
+    @property
+    def need_migration_test(self):
+        r"""Gets the need_migration_test of this PostTask.
+
+        是否开启迁移演练
+
+        :return: The need_migration_test of this PostTask.
+        :rtype: bool
+        """
+        return self._need_migration_test
+
+    @need_migration_test.setter
+    def need_migration_test(self, need_migration_test):
+        r"""Sets the need_migration_test of this PostTask.
+
+        是否开启迁移演练
+
+        :param need_migration_test: The need_migration_test of this PostTask.
+        :type need_migration_test: bool
+        """
+        self._need_migration_test = need_migration_test
 
     def to_dict(self):
         """Returns the model properties as a dict"""

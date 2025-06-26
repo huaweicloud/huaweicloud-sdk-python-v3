@@ -29,7 +29,7 @@ class DeleteDisasterRecoveryRequest:
 
         The model defined in huaweicloud sdk
 
-        :param disaster_recovery_id: **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :param disaster_recovery_id: **参数解释**： 集群ID。获取方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type disaster_recovery_id: str
         """
         
@@ -44,7 +44,7 @@ class DeleteDisasterRecoveryRequest:
     def disaster_recovery_id(self):
         r"""Gets the disaster_recovery_id of this DeleteDisasterRecoveryRequest.
 
-        **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 集群ID。获取方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The disaster_recovery_id of this DeleteDisasterRecoveryRequest.
         :rtype: str
@@ -55,7 +55,7 @@ class DeleteDisasterRecoveryRequest:
     def disaster_recovery_id(self, disaster_recovery_id):
         r"""Sets the disaster_recovery_id of this DeleteDisasterRecoveryRequest.
 
-        **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 集群ID。获取方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param disaster_recovery_id: The disaster_recovery_id of this DeleteDisasterRecoveryRequest.
         :type disaster_recovery_id: str

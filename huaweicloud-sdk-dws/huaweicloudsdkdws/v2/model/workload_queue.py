@@ -33,7 +33,7 @@ class WorkloadQueue:
 
         The model defined in huaweicloud sdk
 
-        :param workload_queue_name: **参数解释**： 工作负载队列名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :param workload_queue_name: **参数解释**： 资源池名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type workload_queue_name: str
         :param logical_cluster_name: **参数解释**： 逻辑集群名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type logical_cluster_name: str
@@ -57,7 +57,7 @@ class WorkloadQueue:
     def workload_queue_name(self):
         r"""Gets the workload_queue_name of this WorkloadQueue.
 
-        **参数解释**： 工作负载队列名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 资源池名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The workload_queue_name of this WorkloadQueue.
         :rtype: str
@@ -68,7 +68,7 @@ class WorkloadQueue:
     def workload_queue_name(self, workload_queue_name):
         r"""Sets the workload_queue_name of this WorkloadQueue.
 
-        **参数解释**： 工作负载队列名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 资源池名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param workload_queue_name: The workload_queue_name of this WorkloadQueue.
         :type workload_queue_name: str

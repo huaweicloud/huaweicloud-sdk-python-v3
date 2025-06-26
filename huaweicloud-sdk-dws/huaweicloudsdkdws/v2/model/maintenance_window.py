@@ -33,11 +33,11 @@ class MaintenanceWindow:
 
         The model defined in huaweicloud sdk
 
-        :param day: 日期，范围：Mon、Tue、Wed、Thu、Fri、Sat、Sun。
+        :param day: **参数解释**： 日期，范围：Mon、Tue、Wed、Thu、Fri、Sat、Sun。 **取值范围**： 不涉及。
         :type day: str
-        :param start_time: 开始时间，UTC时间，格式为HH:mm，例如：22:00。 - 时间必须是整点。 - 开始时间和结束时间必须间隔4小时。
+        :param start_time: **参数解释**： 开始时间，UTC时间，格式为HH:mm，例如：22:00。 时间必须是整点，且开始时间和结束时间必须间隔4小时。 **取值范围**： 不涉及。
         :type start_time: str
-        :param end_time: 结束时间，UTC时间，格式为HH:mm，例如：02:00。 - 时间必须是整点。 - 开始时间和结束时间必须间隔4小时。
+        :param end_time: **参数解释**： 结束时间，UTC时间，格式为HH:mm，例如：22:00。 时间必须是整点，且开始时间和结束时间必须间隔4小时。 **取值范围**： 不涉及。
         :type end_time: str
         """
         
@@ -56,7 +56,7 @@ class MaintenanceWindow:
     def day(self):
         r"""Gets the day of this MaintenanceWindow.
 
-        日期，范围：Mon、Tue、Wed、Thu、Fri、Sat、Sun。
+        **参数解释**： 日期，范围：Mon、Tue、Wed、Thu、Fri、Sat、Sun。 **取值范围**： 不涉及。
 
         :return: The day of this MaintenanceWindow.
         :rtype: str
@@ -67,7 +67,7 @@ class MaintenanceWindow:
     def day(self, day):
         r"""Sets the day of this MaintenanceWindow.
 
-        日期，范围：Mon、Tue、Wed、Thu、Fri、Sat、Sun。
+        **参数解释**： 日期，范围：Mon、Tue、Wed、Thu、Fri、Sat、Sun。 **取值范围**： 不涉及。
 
         :param day: The day of this MaintenanceWindow.
         :type day: str
@@ -78,7 +78,7 @@ class MaintenanceWindow:
     def start_time(self):
         r"""Gets the start_time of this MaintenanceWindow.
 
-        开始时间，UTC时间，格式为HH:mm，例如：22:00。 - 时间必须是整点。 - 开始时间和结束时间必须间隔4小时。
+        **参数解释**： 开始时间，UTC时间，格式为HH:mm，例如：22:00。 时间必须是整点，且开始时间和结束时间必须间隔4小时。 **取值范围**： 不涉及。
 
         :return: The start_time of this MaintenanceWindow.
         :rtype: str
@@ -89,7 +89,7 @@ class MaintenanceWindow:
     def start_time(self, start_time):
         r"""Sets the start_time of this MaintenanceWindow.
 
-        开始时间，UTC时间，格式为HH:mm，例如：22:00。 - 时间必须是整点。 - 开始时间和结束时间必须间隔4小时。
+        **参数解释**： 开始时间，UTC时间，格式为HH:mm，例如：22:00。 时间必须是整点，且开始时间和结束时间必须间隔4小时。 **取值范围**： 不涉及。
 
         :param start_time: The start_time of this MaintenanceWindow.
         :type start_time: str
@@ -100,7 +100,7 @@ class MaintenanceWindow:
     def end_time(self):
         r"""Gets the end_time of this MaintenanceWindow.
 
-        结束时间，UTC时间，格式为HH:mm，例如：02:00。 - 时间必须是整点。 - 开始时间和结束时间必须间隔4小时。
+        **参数解释**： 结束时间，UTC时间，格式为HH:mm，例如：22:00。 时间必须是整点，且开始时间和结束时间必须间隔4小时。 **取值范围**： 不涉及。
 
         :return: The end_time of this MaintenanceWindow.
         :rtype: str
@@ -111,7 +111,7 @@ class MaintenanceWindow:
     def end_time(self, end_time):
         r"""Sets the end_time of this MaintenanceWindow.
 
-        结束时间，UTC时间，格式为HH:mm，例如：02:00。 - 时间必须是整点。 - 开始时间和结束时间必须间隔4小时。
+        **参数解释**： 结束时间，UTC时间，格式为HH:mm，例如：22:00。 时间必须是整点，且开始时间和结束时间必须间隔4小时。 **取值范围**： 不涉及。
 
         :param end_time: The end_time of this MaintenanceWindow.
         :type end_time: str

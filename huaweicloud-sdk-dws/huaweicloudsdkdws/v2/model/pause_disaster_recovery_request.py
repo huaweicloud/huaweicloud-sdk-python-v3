@@ -29,7 +29,7 @@ class PauseDisasterRecoveryRequest:
 
         The model defined in huaweicloud sdk
 
-        :param disaster_recovery_id: 容灾ID
+        :param disaster_recovery_id: **参数解释**： 容灾ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type disaster_recovery_id: str
         """
         
@@ -44,7 +44,7 @@ class PauseDisasterRecoveryRequest:
     def disaster_recovery_id(self):
         r"""Gets the disaster_recovery_id of this PauseDisasterRecoveryRequest.
 
-        容灾ID
+        **参数解释**： 容灾ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The disaster_recovery_id of this PauseDisasterRecoveryRequest.
         :rtype: str
@@ -55,7 +55,7 @@ class PauseDisasterRecoveryRequest:
     def disaster_recovery_id(self, disaster_recovery_id):
         r"""Sets the disaster_recovery_id of this PauseDisasterRecoveryRequest.
 
-        容灾ID
+        **参数解释**： 容灾ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param disaster_recovery_id: The disaster_recovery_id of this PauseDisasterRecoveryRequest.
         :type disaster_recovery_id: str

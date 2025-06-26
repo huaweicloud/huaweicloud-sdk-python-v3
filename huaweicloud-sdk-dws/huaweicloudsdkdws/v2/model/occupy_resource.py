@@ -35,13 +35,13 @@ class OccupyResource:
 
         The model defined in huaweicloud sdk
 
-        :param resource_name: 资源项名称
+        :param resource_name: **参数解释**： 资源项名称。 **取值范围**： 不涉及。
         :type resource_name: str
-        :param resource_value: 资源属性数值
+        :param resource_value: **参数解释**： 资源属性数值。 **取值范围**： 不涉及。
         :type resource_value: int
-        :param value_unit: 资源属性单位
+        :param value_unit: **参数解释**： 资源属性单位。 **取值范围**： 不涉及。
         :type value_unit: str
-        :param resource_description: 资源附加描述
+        :param resource_description: **参数解释**： 资源附加描述。 **取值范围**： 不涉及。
         :type resource_description: str
         """
         
@@ -66,7 +66,7 @@ class OccupyResource:
     def resource_name(self):
         r"""Gets the resource_name of this OccupyResource.
 
-        资源项名称
+        **参数解释**： 资源项名称。 **取值范围**： 不涉及。
 
         :return: The resource_name of this OccupyResource.
         :rtype: str
@@ -77,7 +77,7 @@ class OccupyResource:
     def resource_name(self, resource_name):
         r"""Sets the resource_name of this OccupyResource.
 
-        资源项名称
+        **参数解释**： 资源项名称。 **取值范围**： 不涉及。
 
         :param resource_name: The resource_name of this OccupyResource.
         :type resource_name: str
@@ -88,7 +88,7 @@ class OccupyResource:
     def resource_value(self):
         r"""Gets the resource_value of this OccupyResource.
 
-        资源属性数值
+        **参数解释**： 资源属性数值。 **取值范围**： 不涉及。
 
         :return: The resource_value of this OccupyResource.
         :rtype: int
@@ -99,7 +99,7 @@ class OccupyResource:
     def resource_value(self, resource_value):
         r"""Sets the resource_value of this OccupyResource.
 
-        资源属性数值
+        **参数解释**： 资源属性数值。 **取值范围**： 不涉及。
 
         :param resource_value: The resource_value of this OccupyResource.
         :type resource_value: int
@@ -110,7 +110,7 @@ class OccupyResource:
     def value_unit(self):
         r"""Gets the value_unit of this OccupyResource.
 
-        资源属性单位
+        **参数解释**： 资源属性单位。 **取值范围**： 不涉及。
 
         :return: The value_unit of this OccupyResource.
         :rtype: str
@@ -121,7 +121,7 @@ class OccupyResource:
     def value_unit(self, value_unit):
         r"""Sets the value_unit of this OccupyResource.
 
-        资源属性单位
+        **参数解释**： 资源属性单位。 **取值范围**： 不涉及。
 
         :param value_unit: The value_unit of this OccupyResource.
         :type value_unit: str
@@ -132,7 +132,7 @@ class OccupyResource:
     def resource_description(self):
         r"""Gets the resource_description of this OccupyResource.
 
-        资源附加描述
+        **参数解释**： 资源附加描述。 **取值范围**： 不涉及。
 
         :return: The resource_description of this OccupyResource.
         :rtype: str
@@ -143,7 +143,7 @@ class OccupyResource:
     def resource_description(self, resource_description):
         r"""Sets the resource_description of this OccupyResource.
 
-        资源附加描述
+        **参数解释**： 资源附加描述。 **取值范围**： 不涉及。
 
         :param resource_description: The resource_description of this OccupyResource.
         :type resource_description: str

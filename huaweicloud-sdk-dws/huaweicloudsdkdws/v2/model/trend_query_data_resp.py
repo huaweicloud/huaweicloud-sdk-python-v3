@@ -39,17 +39,17 @@ class TrendQueryDataResp:
 
         The model defined in huaweicloud sdk
 
-        :param query_time: 查询时间。
+        :param query_time: **参数解释**： 查询时间。 **取值范围**： 不涉及。
         :type query_time: int
-        :param indicator_name: 监控指标名称。
+        :param indicator_name: **参数解释**： 监控指标名称。 **取值范围**： 不涉及。
         :type indicator_name: str
-        :param object_id: 监控对象id。
+        :param object_id: **参数解释**： 监控对象ID。 **取值范围**： 不涉及。
         :type object_id: str
-        :param unit: 单位。
+        :param unit: **参数解释**： 单位。 **取值范围**： 不涉及。
         :type unit: str
-        :param sub_object_id: 次级监控id。
+        :param sub_object_id: **参数解释**： 次级监控ID。 **取值范围**： 不涉及。
         :type sub_object_id: str
-        :param data_points: 节点数据。
+        :param data_points: **参数解释**： 节点数据。 **取值范围**： 不涉及。
         :type data_points: list[:class:`huaweicloudsdkdws.v2.TrendQueryData`]
         """
         
@@ -80,7 +80,7 @@ class TrendQueryDataResp:
     def query_time(self):
         r"""Gets the query_time of this TrendQueryDataResp.
 
-        查询时间。
+        **参数解释**： 查询时间。 **取值范围**： 不涉及。
 
         :return: The query_time of this TrendQueryDataResp.
         :rtype: int
@@ -91,7 +91,7 @@ class TrendQueryDataResp:
     def query_time(self, query_time):
         r"""Sets the query_time of this TrendQueryDataResp.
 
-        查询时间。
+        **参数解释**： 查询时间。 **取值范围**： 不涉及。
 
         :param query_time: The query_time of this TrendQueryDataResp.
         :type query_time: int
@@ -102,7 +102,7 @@ class TrendQueryDataResp:
     def indicator_name(self):
         r"""Gets the indicator_name of this TrendQueryDataResp.
 
-        监控指标名称。
+        **参数解释**： 监控指标名称。 **取值范围**： 不涉及。
 
         :return: The indicator_name of this TrendQueryDataResp.
         :rtype: str
@@ -113,7 +113,7 @@ class TrendQueryDataResp:
     def indicator_name(self, indicator_name):
         r"""Sets the indicator_name of this TrendQueryDataResp.
 
-        监控指标名称。
+        **参数解释**： 监控指标名称。 **取值范围**： 不涉及。
 
         :param indicator_name: The indicator_name of this TrendQueryDataResp.
         :type indicator_name: str
@@ -124,7 +124,7 @@ class TrendQueryDataResp:
     def object_id(self):
         r"""Gets the object_id of this TrendQueryDataResp.
 
-        监控对象id。
+        **参数解释**： 监控对象ID。 **取值范围**： 不涉及。
 
         :return: The object_id of this TrendQueryDataResp.
         :rtype: str
@@ -135,7 +135,7 @@ class TrendQueryDataResp:
     def object_id(self, object_id):
         r"""Sets the object_id of this TrendQueryDataResp.
 
-        监控对象id。
+        **参数解释**： 监控对象ID。 **取值范围**： 不涉及。
 
         :param object_id: The object_id of this TrendQueryDataResp.
         :type object_id: str
@@ -146,7 +146,7 @@ class TrendQueryDataResp:
     def unit(self):
         r"""Gets the unit of this TrendQueryDataResp.
 
-        单位。
+        **参数解释**： 单位。 **取值范围**： 不涉及。
 
         :return: The unit of this TrendQueryDataResp.
         :rtype: str
@@ -157,7 +157,7 @@ class TrendQueryDataResp:
     def unit(self, unit):
         r"""Sets the unit of this TrendQueryDataResp.
 
-        单位。
+        **参数解释**： 单位。 **取值范围**： 不涉及。
 
         :param unit: The unit of this TrendQueryDataResp.
         :type unit: str
@@ -168,7 +168,7 @@ class TrendQueryDataResp:
     def sub_object_id(self):
         r"""Gets the sub_object_id of this TrendQueryDataResp.
 
-        次级监控id。
+        **参数解释**： 次级监控ID。 **取值范围**： 不涉及。
 
         :return: The sub_object_id of this TrendQueryDataResp.
         :rtype: str
@@ -179,7 +179,7 @@ class TrendQueryDataResp:
     def sub_object_id(self, sub_object_id):
         r"""Sets the sub_object_id of this TrendQueryDataResp.
 
-        次级监控id。
+        **参数解释**： 次级监控ID。 **取值范围**： 不涉及。
 
         :param sub_object_id: The sub_object_id of this TrendQueryDataResp.
         :type sub_object_id: str
@@ -190,7 +190,7 @@ class TrendQueryDataResp:
     def data_points(self):
         r"""Gets the data_points of this TrendQueryDataResp.
 
-        节点数据。
+        **参数解释**： 节点数据。 **取值范围**： 不涉及。
 
         :return: The data_points of this TrendQueryDataResp.
         :rtype: list[:class:`huaweicloudsdkdws.v2.TrendQueryData`]
@@ -201,7 +201,7 @@ class TrendQueryDataResp:
     def data_points(self, data_points):
         r"""Sets the data_points of this TrendQueryDataResp.
 
-        节点数据。
+        **参数解释**： 节点数据。 **取值范围**： 不涉及。
 
         :param data_points: The data_points of this TrendQueryDataResp.
         :type data_points: list[:class:`huaweicloudsdkdws.v2.TrendQueryData`]

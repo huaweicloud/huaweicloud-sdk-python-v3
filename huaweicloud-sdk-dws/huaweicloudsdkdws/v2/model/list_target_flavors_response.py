@@ -34,7 +34,7 @@ class ListTargetFlavorsResponse(SdkResponse):
 
         :param count: **参数解释**： 规格数量。 **取值范围**： 不涉及。
         :type count: int
-        :param flavors: **参数解释**： 规格详情列表。 **取值范围**： 不涉及。
+        :param flavors: **参数解释**： 规格详情列表。接口返回的规格列表最多为20条。 **取值范围**： 不涉及。
         :type flavors: list[:class:`huaweicloudsdkdws.v2.FlavorInfoResponse`]
         """
         
@@ -75,7 +75,7 @@ class ListTargetFlavorsResponse(SdkResponse):
     def flavors(self):
         r"""Gets the flavors of this ListTargetFlavorsResponse.
 
-        **参数解释**： 规格详情列表。 **取值范围**： 不涉及。
+        **参数解释**： 规格详情列表。接口返回的规格列表最多为20条。 **取值范围**： 不涉及。
 
         :return: The flavors of this ListTargetFlavorsResponse.
         :rtype: list[:class:`huaweicloudsdkdws.v2.FlavorInfoResponse`]
@@ -86,7 +86,7 @@ class ListTargetFlavorsResponse(SdkResponse):
     def flavors(self, flavors):
         r"""Sets the flavors of this ListTargetFlavorsResponse.
 
-        **参数解释**： 规格详情列表。 **取值范围**： 不涉及。
+        **参数解释**： 规格详情列表。接口返回的规格列表最多为20条。 **取值范围**： 不涉及。
 
         :param flavors: The flavors of this ListTargetFlavorsResponse.
         :type flavors: list[:class:`huaweicloudsdkdws.v2.FlavorInfoResponse`]

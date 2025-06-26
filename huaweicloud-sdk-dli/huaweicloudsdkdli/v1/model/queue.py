@@ -21,6 +21,9 @@ class Queue:
         'queue_name': 'str',
         'description': 'str',
         'owner': 'str',
+        'engine': 'str',
+        'used_cu': 'float',
+        'support_opensource_flink_versions': 'list[str]',
         'create_time': 'int',
         'queue_type': 'str',
         'cu_count': 'int',
@@ -35,7 +38,7 @@ class Queue:
         'is_restarting': 'bool',
         'labels': 'str',
         'feature': 'str',
-        'resource_type': 'str',
+        'queue_resource_type': 'str',
         'cu_spec': 'int',
         'cu_scale_out_limit': 'int',
         'cu_scale_in_limit': 'int',
@@ -55,6 +58,9 @@ class Queue:
         'queue_name': 'queue_name',
         'description': 'description',
         'owner': 'owner',
+        'engine': 'engine',
+        'used_cu': 'used_cu',
+        'support_opensource_flink_versions': 'support_opensource_flink_versions',
         'create_time': 'create_time',
         'queue_type': 'queue_type',
         'cu_count': 'cu_count',
@@ -69,7 +75,7 @@ class Queue:
         'is_restarting': 'is_restarting',
         'labels': 'labels',
         'feature': 'feature',
-        'resource_type': 'resource_type',
+        'queue_resource_type': 'queue_resource_type',
         'cu_spec': 'cu_spec',
         'cu_scale_out_limit': 'cu_scale_out_limit',
         'cu_scale_in_limit': 'cu_scale_in_limit',
@@ -84,7 +90,7 @@ class Queue:
         'default_flink_jar_version': 'default_flink_jar_version'
     }
 
-    def __init__(self, queue_id=None, queue_name=None, description=None, owner=None, create_time=None, queue_type=None, cu_count=None, charging_mode=None, resource_id=None, enterprise_project_id=None, cidr_in_vpc=None, cidr_in_mgntsubnet=None, cidr_in_subnet=None, resource_mode=None, platform=None, is_restarting=None, labels=None, feature=None, resource_type=None, cu_spec=None, cu_scale_out_limit=None, cu_scale_in_limit=None, elastic_resource_pool_name=None, support_spark_versions=None, default_spark_version=None, support_hetu_engine_versions=None, default_hetu_engine_version=None, support_flink_sql_versions=None, default_flink_sql_version=None, support_flink_jar_versions=None, default_flink_jar_version=None):
+    def __init__(self, queue_id=None, queue_name=None, description=None, owner=None, engine=None, used_cu=None, support_opensource_flink_versions=None, create_time=None, queue_type=None, cu_count=None, charging_mode=None, resource_id=None, enterprise_project_id=None, cidr_in_vpc=None, cidr_in_mgntsubnet=None, cidr_in_subnet=None, resource_mode=None, platform=None, is_restarting=None, labels=None, feature=None, queue_resource_type=None, cu_spec=None, cu_scale_out_limit=None, cu_scale_in_limit=None, elastic_resource_pool_name=None, support_spark_versions=None, default_spark_version=None, support_hetu_engine_versions=None, default_hetu_engine_version=None, support_flink_sql_versions=None, default_flink_sql_version=None, support_flink_jar_versions=None, default_flink_jar_version=None):
         r"""Queue
 
         The model defined in huaweicloud sdk
@@ -97,6 +103,12 @@ class Queue:
         :type description: str
         :param owner: 参数解释: 创建队列的用户 示例: ei_dlics_c00228924 约束限制:  无 取值范围: 无 默认取值: 无
         :type owner: str
+        :param engine: 参数解释: 引擎 示例: spark 约束限制:  无 取值范围: spark, hetuEngine 默认取值: 无
+        :type engine: str
+        :param used_cu: 参数解释: 队列已使用的cu 示例: 6.0 约束限制:  无 取值范围: 大于等于0 默认取值: 无
+        :type used_cu: float
+        :param support_opensource_flink_versions: 参数解释: 支持的flink版本列表 示例: [1.12, 1.15] 约束限制:  无 取值范围: 无 默认取值: 无
+        :type support_opensource_flink_versions: list[str]
         :param create_time: 参数解释: 创建队列的时间。是单位为“毫秒”的时间戳 示例: 1553168198000 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
         :type create_time: int
         :param queue_type: 参数解释: 队列的类型 示例: sql 约束限制:  无 取值范围: sql, general, all 默认取值: all
@@ -125,8 +137,8 @@ class Queue:
         :type labels: str
         :param feature: 参数解释: 队列特性 示例: basic 约束限制:  无 取值范围: basic（基础型） ai（AI增强型，仅SQL的x86_64专属队列支持选择） 默认取值: basic
         :type feature: str
-        :param resource_type: 参数解释: 队列所属资源类型 示例: vm 约束限制:  无 取值范围: vm container 默认取值: 无
-        :type resource_type: str
+        :param queue_resource_type: 参数解释: 队列所属资源类型 示例: vm 约束限制:  无 取值范围: vm container 默认取值: 无
+        :type queue_resource_type: str
         :param cu_spec: 参数解释: 队列的规格大小。对于包周期队列，表示包周期部分的CU值；对于按需队列，表示用户购买队列时的初始值 示例: 0 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
         :type cu_spec: int
         :param cu_scale_out_limit: 参数解释: 当前队列弹性扩缩容的CU值上限 示例: 0 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 无
@@ -159,6 +171,9 @@ class Queue:
         self._queue_name = None
         self._description = None
         self._owner = None
+        self._engine = None
+        self._used_cu = None
+        self._support_opensource_flink_versions = None
         self._create_time = None
         self._queue_type = None
         self._cu_count = None
@@ -173,7 +188,7 @@ class Queue:
         self._is_restarting = None
         self._labels = None
         self._feature = None
-        self._resource_type = None
+        self._queue_resource_type = None
         self._cu_spec = None
         self._cu_scale_out_limit = None
         self._cu_scale_in_limit = None
@@ -196,6 +211,12 @@ class Queue:
             self.description = description
         if owner is not None:
             self.owner = owner
+        if engine is not None:
+            self.engine = engine
+        if used_cu is not None:
+            self.used_cu = used_cu
+        if support_opensource_flink_versions is not None:
+            self.support_opensource_flink_versions = support_opensource_flink_versions
         if create_time is not None:
             self.create_time = create_time
         if queue_type is not None:
@@ -224,8 +245,8 @@ class Queue:
             self.labels = labels
         if feature is not None:
             self.feature = feature
-        if resource_type is not None:
-            self.resource_type = resource_type
+        if queue_resource_type is not None:
+            self.queue_resource_type = queue_resource_type
         if cu_spec is not None:
             self.cu_spec = cu_spec
         if cu_scale_out_limit is not None:
@@ -338,6 +359,72 @@ class Queue:
         :type owner: str
         """
         self._owner = owner
+
+    @property
+    def engine(self):
+        r"""Gets the engine of this Queue.
+
+        参数解释: 引擎 示例: spark 约束限制:  无 取值范围: spark, hetuEngine 默认取值: 无
+
+        :return: The engine of this Queue.
+        :rtype: str
+        """
+        return self._engine
+
+    @engine.setter
+    def engine(self, engine):
+        r"""Sets the engine of this Queue.
+
+        参数解释: 引擎 示例: spark 约束限制:  无 取值范围: spark, hetuEngine 默认取值: 无
+
+        :param engine: The engine of this Queue.
+        :type engine: str
+        """
+        self._engine = engine
+
+    @property
+    def used_cu(self):
+        r"""Gets the used_cu of this Queue.
+
+        参数解释: 队列已使用的cu 示例: 6.0 约束限制:  无 取值范围: 大于等于0 默认取值: 无
+
+        :return: The used_cu of this Queue.
+        :rtype: float
+        """
+        return self._used_cu
+
+    @used_cu.setter
+    def used_cu(self, used_cu):
+        r"""Sets the used_cu of this Queue.
+
+        参数解释: 队列已使用的cu 示例: 6.0 约束限制:  无 取值范围: 大于等于0 默认取值: 无
+
+        :param used_cu: The used_cu of this Queue.
+        :type used_cu: float
+        """
+        self._used_cu = used_cu
+
+    @property
+    def support_opensource_flink_versions(self):
+        r"""Gets the support_opensource_flink_versions of this Queue.
+
+        参数解释: 支持的flink版本列表 示例: [1.12, 1.15] 约束限制:  无 取值范围: 无 默认取值: 无
+
+        :return: The support_opensource_flink_versions of this Queue.
+        :rtype: list[str]
+        """
+        return self._support_opensource_flink_versions
+
+    @support_opensource_flink_versions.setter
+    def support_opensource_flink_versions(self, support_opensource_flink_versions):
+        r"""Sets the support_opensource_flink_versions of this Queue.
+
+        参数解释: 支持的flink版本列表 示例: [1.12, 1.15] 约束限制:  无 取值范围: 无 默认取值: 无
+
+        :param support_opensource_flink_versions: The support_opensource_flink_versions of this Queue.
+        :type support_opensource_flink_versions: list[str]
+        """
+        self._support_opensource_flink_versions = support_opensource_flink_versions
 
     @property
     def create_time(self):
@@ -648,26 +735,26 @@ class Queue:
         self._feature = feature
 
     @property
-    def resource_type(self):
-        r"""Gets the resource_type of this Queue.
+    def queue_resource_type(self):
+        r"""Gets the queue_resource_type of this Queue.
 
         参数解释: 队列所属资源类型 示例: vm 约束限制:  无 取值范围: vm container 默认取值: 无
 
-        :return: The resource_type of this Queue.
+        :return: The queue_resource_type of this Queue.
         :rtype: str
         """
-        return self._resource_type
+        return self._queue_resource_type
 
-    @resource_type.setter
-    def resource_type(self, resource_type):
-        r"""Sets the resource_type of this Queue.
+    @queue_resource_type.setter
+    def queue_resource_type(self, queue_resource_type):
+        r"""Sets the queue_resource_type of this Queue.
 
         参数解释: 队列所属资源类型 示例: vm 约束限制:  无 取值范围: vm container 默认取值: 无
 
-        :param resource_type: The resource_type of this Queue.
-        :type resource_type: str
+        :param queue_resource_type: The queue_resource_type of this Queue.
+        :type queue_resource_type: str
         """
-        self._resource_type = resource_type
+        self._queue_resource_type = queue_resource_type
 
     @property
     def cu_spec(self):

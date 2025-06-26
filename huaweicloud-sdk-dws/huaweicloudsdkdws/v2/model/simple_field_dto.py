@@ -31,9 +31,9 @@ class SimpleFieldDto:
 
         The model defined in huaweicloud sdk
 
-        :param column_name: 指标表对应字段名称。
+        :param column_name: **参数解释**： 指标表对应字段名称。 **取值范围**： 不涉及。
         :type column_name: str
-        :param column_type: 指标表对应字段类型。
+        :param column_type: **参数解释**： 指标表对应字段类型。 **取值范围**： 不涉及。
         :type column_type: str
         """
         
@@ -52,7 +52,7 @@ class SimpleFieldDto:
     def column_name(self):
         r"""Gets the column_name of this SimpleFieldDto.
 
-        指标表对应字段名称。
+        **参数解释**： 指标表对应字段名称。 **取值范围**： 不涉及。
 
         :return: The column_name of this SimpleFieldDto.
         :rtype: str
@@ -63,7 +63,7 @@ class SimpleFieldDto:
     def column_name(self, column_name):
         r"""Sets the column_name of this SimpleFieldDto.
 
-        指标表对应字段名称。
+        **参数解释**： 指标表对应字段名称。 **取值范围**： 不涉及。
 
         :param column_name: The column_name of this SimpleFieldDto.
         :type column_name: str
@@ -74,7 +74,7 @@ class SimpleFieldDto:
     def column_type(self):
         r"""Gets the column_type of this SimpleFieldDto.
 
-        指标表对应字段类型。
+        **参数解释**： 指标表对应字段类型。 **取值范围**： 不涉及。
 
         :return: The column_type of this SimpleFieldDto.
         :rtype: str
@@ -85,7 +85,7 @@ class SimpleFieldDto:
     def column_type(self, column_type):
         r"""Sets the column_type of this SimpleFieldDto.
 
-        指标表对应字段类型。
+        **参数解释**： 指标表对应字段类型。 **取值范围**： 不涉及。
 
         :param column_type: The column_type of this SimpleFieldDto.
         :type column_type: str

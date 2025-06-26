@@ -35,13 +35,13 @@ class CheckDisasterNameRequest:
 
         The model defined in huaweicloud sdk
 
-        :param dr_name: 容灾名称
+        :param dr_name: **参数解释**： 容灾名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type dr_name: str
-        :param type: 容灾类型
+        :param type: **参数解释**： 容灾类型。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type type: str
-        :param standby_region: 备集群所在region
+        :param standby_region: **参数解释**： 备集群所在局点。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type standby_region: str
-        :param standby_project_id: 备集群所在项目ID
+        :param standby_project_id: **参数解释**： 备集群所在项目ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type standby_project_id: str
         """
         
@@ -65,7 +65,7 @@ class CheckDisasterNameRequest:
     def dr_name(self):
         r"""Gets the dr_name of this CheckDisasterNameRequest.
 
-        容灾名称
+        **参数解释**： 容灾名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The dr_name of this CheckDisasterNameRequest.
         :rtype: str
@@ -76,7 +76,7 @@ class CheckDisasterNameRequest:
     def dr_name(self, dr_name):
         r"""Sets the dr_name of this CheckDisasterNameRequest.
 
-        容灾名称
+        **参数解释**： 容灾名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param dr_name: The dr_name of this CheckDisasterNameRequest.
         :type dr_name: str
@@ -87,7 +87,7 @@ class CheckDisasterNameRequest:
     def type(self):
         r"""Gets the type of this CheckDisasterNameRequest.
 
-        容灾类型
+        **参数解释**： 容灾类型。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The type of this CheckDisasterNameRequest.
         :rtype: str
@@ -98,7 +98,7 @@ class CheckDisasterNameRequest:
     def type(self, type):
         r"""Sets the type of this CheckDisasterNameRequest.
 
-        容灾类型
+        **参数解释**： 容灾类型。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param type: The type of this CheckDisasterNameRequest.
         :type type: str
@@ -109,7 +109,7 @@ class CheckDisasterNameRequest:
     def standby_region(self):
         r"""Gets the standby_region of this CheckDisasterNameRequest.
 
-        备集群所在region
+        **参数解释**： 备集群所在局点。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The standby_region of this CheckDisasterNameRequest.
         :rtype: str
@@ -120,7 +120,7 @@ class CheckDisasterNameRequest:
     def standby_region(self, standby_region):
         r"""Sets the standby_region of this CheckDisasterNameRequest.
 
-        备集群所在region
+        **参数解释**： 备集群所在局点。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param standby_region: The standby_region of this CheckDisasterNameRequest.
         :type standby_region: str
@@ -131,7 +131,7 @@ class CheckDisasterNameRequest:
     def standby_project_id(self):
         r"""Gets the standby_project_id of this CheckDisasterNameRequest.
 
-        备集群所在项目ID
+        **参数解释**： 备集群所在项目ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The standby_project_id of this CheckDisasterNameRequest.
         :rtype: str
@@ -142,7 +142,7 @@ class CheckDisasterNameRequest:
     def standby_project_id(self, standby_project_id):
         r"""Sets the standby_project_id of this CheckDisasterNameRequest.
 
-        备集群所在项目ID
+        **参数解释**： 备集群所在项目ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param standby_project_id: The standby_project_id of this CheckDisasterNameRequest.
         :type standby_project_id: str

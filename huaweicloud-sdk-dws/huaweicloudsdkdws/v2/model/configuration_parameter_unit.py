@@ -33,11 +33,11 @@ class ConfigurationParameterUnit:
 
         The model defined in huaweicloud sdk
 
-        :param type: 参数类型，包括：cn、dn。
+        :param type: **参数解释**： 参数类型。包括：cn、dn。 **取值范围**： cn、dn。
         :type type: str
-        :param value: 参数值。
+        :param value: **参数解释**： 参数值。 **取值范围**： 不涉及。
         :type value: str
-        :param default_value: 参数默认值。
+        :param default_value: **参数解释**： 参数默认值。 **取值范围**： 不涉及。
         :type default_value: str
         """
         
@@ -56,7 +56,7 @@ class ConfigurationParameterUnit:
     def type(self):
         r"""Gets the type of this ConfigurationParameterUnit.
 
-        参数类型，包括：cn、dn。
+        **参数解释**： 参数类型。包括：cn、dn。 **取值范围**： cn、dn。
 
         :return: The type of this ConfigurationParameterUnit.
         :rtype: str
@@ -67,7 +67,7 @@ class ConfigurationParameterUnit:
     def type(self, type):
         r"""Sets the type of this ConfigurationParameterUnit.
 
-        参数类型，包括：cn、dn。
+        **参数解释**： 参数类型。包括：cn、dn。 **取值范围**： cn、dn。
 
         :param type: The type of this ConfigurationParameterUnit.
         :type type: str
@@ -78,7 +78,7 @@ class ConfigurationParameterUnit:
     def value(self):
         r"""Gets the value of this ConfigurationParameterUnit.
 
-        参数值。
+        **参数解释**： 参数值。 **取值范围**： 不涉及。
 
         :return: The value of this ConfigurationParameterUnit.
         :rtype: str
@@ -89,7 +89,7 @@ class ConfigurationParameterUnit:
     def value(self, value):
         r"""Sets the value of this ConfigurationParameterUnit.
 
-        参数值。
+        **参数解释**： 参数值。 **取值范围**： 不涉及。
 
         :param value: The value of this ConfigurationParameterUnit.
         :type value: str
@@ -100,7 +100,7 @@ class ConfigurationParameterUnit:
     def default_value(self):
         r"""Gets the default_value of this ConfigurationParameterUnit.
 
-        参数默认值。
+        **参数解释**： 参数默认值。 **取值范围**： 不涉及。
 
         :return: The default_value of this ConfigurationParameterUnit.
         :rtype: str
@@ -111,7 +111,7 @@ class ConfigurationParameterUnit:
     def default_value(self, default_value):
         r"""Sets the default_value of this ConfigurationParameterUnit.
 
-        参数默认值。
+        **参数解释**： 参数默认值。 **取值范围**： 不涉及。
 
         :param default_value: The default_value of this ConfigurationParameterUnit.
         :type default_value: str

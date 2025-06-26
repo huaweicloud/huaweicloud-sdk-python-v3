@@ -18,47 +18,51 @@ class RunCatalogActionResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'str'
+        'message': 'str'
     }
 
     attribute_map = {
-        'body': 'body'
+        'message': 'message'
     }
 
-    def __init__(self, body=None):
+    def __init__(self, message=None):
         r"""RunCatalogActionResponse
 
         The model defined in huaweicloud sdk
 
-        :param body: 
-        :type body: str
+        :param message: 系统提示信息，执行成功时，信息可能为空。
+        :type message: str
         """
         
         super(RunCatalogActionResponse, self).__init__()
 
-        self._body = None
+        self._message = None
         self.discriminator = None
 
-        if body is not None:
-            self.body = body
+        if message is not None:
+            self.message = message
 
     @property
-    def body(self):
-        r"""Gets the body of this RunCatalogActionResponse.
+    def message(self):
+        r"""Gets the message of this RunCatalogActionResponse.
 
-        :return: The body of this RunCatalogActionResponse.
+        系统提示信息，执行成功时，信息可能为空。
+
+        :return: The message of this RunCatalogActionResponse.
         :rtype: str
         """
-        return self._body
+        return self._message
 
-    @body.setter
-    def body(self, body):
-        r"""Sets the body of this RunCatalogActionResponse.
+    @message.setter
+    def message(self, message):
+        r"""Sets the message of this RunCatalogActionResponse.
 
-        :param body: The body of this RunCatalogActionResponse.
-        :type body: str
+        系统提示信息，执行成功时，信息可能为空。
+
+        :param message: The message of this RunCatalogActionResponse.
+        :type message: str
         """
-        self._body = body
+        self._message = message
 
     def to_dict(self):
         """Returns the model properties as a dict"""

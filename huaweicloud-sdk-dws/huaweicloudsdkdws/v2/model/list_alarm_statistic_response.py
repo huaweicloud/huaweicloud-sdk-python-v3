@@ -30,7 +30,7 @@ class ListAlarmStatisticResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param alarm_statistics: 告警统计列表
+        :param alarm_statistics: **参数解释**： 告警统计列表。 **取值范围**： 不涉及。
         :type alarm_statistics: list[:class:`huaweicloudsdkdws.v2.AlarmStatisticResponse`]
         """
         
@@ -46,7 +46,7 @@ class ListAlarmStatisticResponse(SdkResponse):
     def alarm_statistics(self):
         r"""Gets the alarm_statistics of this ListAlarmStatisticResponse.
 
-        告警统计列表
+        **参数解释**： 告警统计列表。 **取值范围**： 不涉及。
 
         :return: The alarm_statistics of this ListAlarmStatisticResponse.
         :rtype: list[:class:`huaweicloudsdkdws.v2.AlarmStatisticResponse`]
@@ -57,7 +57,7 @@ class ListAlarmStatisticResponse(SdkResponse):
     def alarm_statistics(self, alarm_statistics):
         r"""Sets the alarm_statistics of this ListAlarmStatisticResponse.
 
-        告警统计列表
+        **参数解释**： 告警统计列表。 **取值范围**： 不涉及。
 
         :param alarm_statistics: The alarm_statistics of this ListAlarmStatisticResponse.
         :type alarm_statistics: list[:class:`huaweicloudsdkdws.v2.AlarmStatisticResponse`]

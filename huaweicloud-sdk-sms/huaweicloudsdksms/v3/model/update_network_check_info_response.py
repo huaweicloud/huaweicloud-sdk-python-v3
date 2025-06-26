@@ -18,51 +18,51 @@ class UpdateNetworkCheckInfoResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'str'
+        'task_id': 'str'
     }
 
     attribute_map = {
-        'body': 'body'
+        'task_id': 'task_id'
     }
 
-    def __init__(self, body=None):
+    def __init__(self, task_id=None):
         r"""UpdateNetworkCheckInfoResponse
 
         The model defined in huaweicloud sdk
 
-        :param body: 更新网络检测结果成功。
-        :type body: str
+        :param task_id: 任务ID
+        :type task_id: str
         """
         
         super(UpdateNetworkCheckInfoResponse, self).__init__()
 
-        self._body = None
+        self._task_id = None
         self.discriminator = None
 
-        if body is not None:
-            self.body = body
+        if task_id is not None:
+            self.task_id = task_id
 
     @property
-    def body(self):
-        r"""Gets the body of this UpdateNetworkCheckInfoResponse.
+    def task_id(self):
+        r"""Gets the task_id of this UpdateNetworkCheckInfoResponse.
 
-        更新网络检测结果成功。
+        任务ID
 
-        :return: The body of this UpdateNetworkCheckInfoResponse.
+        :return: The task_id of this UpdateNetworkCheckInfoResponse.
         :rtype: str
         """
-        return self._body
+        return self._task_id
 
-    @body.setter
-    def body(self, body):
-        r"""Sets the body of this UpdateNetworkCheckInfoResponse.
+    @task_id.setter
+    def task_id(self, task_id):
+        r"""Sets the task_id of this UpdateNetworkCheckInfoResponse.
 
-        更新网络检测结果成功。
+        任务ID
 
-        :param body: The body of this UpdateNetworkCheckInfoResponse.
-        :type body: str
+        :param task_id: The task_id of this UpdateNetworkCheckInfoResponse.
+        :type task_id: str
         """
-        self._body = body
+        self._task_id = task_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

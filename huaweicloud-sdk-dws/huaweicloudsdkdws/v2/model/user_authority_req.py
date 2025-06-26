@@ -57,7 +57,7 @@ class UserAuthorityReq:
 
         :param name: **参数解释**： 用户名/角色名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type name: str
-        :param type: **参数解释**： 类型。 **约束限制**： 不涉及。 **取值范围**： - user：数据库用户 - role：数据库角色  **默认取值**： 不涉及。
+        :param type: **参数解释**： 类型。 **约束限制**： 不涉及。 **取值范围**： user：数据库用户。 role：数据库角色。 **默认取值**： 不涉及。
         :type type: str
         :param login: **参数解释**： 类型。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： false
         :type login: bool
@@ -156,7 +156,7 @@ class UserAuthorityReq:
     def type(self):
         r"""Gets the type of this UserAuthorityReq.
 
-        **参数解释**： 类型。 **约束限制**： 不涉及。 **取值范围**： - user：数据库用户 - role：数据库角色  **默认取值**： 不涉及。
+        **参数解释**： 类型。 **约束限制**： 不涉及。 **取值范围**： user：数据库用户。 role：数据库角色。 **默认取值**： 不涉及。
 
         :return: The type of this UserAuthorityReq.
         :rtype: str
@@ -167,7 +167,7 @@ class UserAuthorityReq:
     def type(self, type):
         r"""Sets the type of this UserAuthorityReq.
 
-        **参数解释**： 类型。 **约束限制**： 不涉及。 **取值范围**： - user：数据库用户 - role：数据库角色  **默认取值**： 不涉及。
+        **参数解释**： 类型。 **约束限制**： 不涉及。 **取值范围**： user：数据库用户。 role：数据库角色。 **默认取值**： 不涉及。
 
         :param type: The type of this UserAuthorityReq.
         :type type: str

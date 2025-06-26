@@ -36,13 +36,13 @@ class ListMetricsDataResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param code: 响应码
+        :param code: **参数解释**： 响应码。 **取值范围**： 不涉及。
         :type code: int
-        :param msg: 响应信息
+        :param msg: **参数解释**： 响应信息。 **取值范围**： 不涉及。
         :type msg: str
-        :param data: 指标采集数据列表。
+        :param data: **参数解释**： 指标采集数据列表。 **取值范围**： 不涉及。
         :type data: list[dict(str, object)]
-        :param count: 总列表大小。
+        :param count: **参数解释**： 总列表大小。 **取值范围**： 不涉及。
         :type count: int
         """
         
@@ -67,7 +67,7 @@ class ListMetricsDataResponse(SdkResponse):
     def code(self):
         r"""Gets the code of this ListMetricsDataResponse.
 
-        响应码
+        **参数解释**： 响应码。 **取值范围**： 不涉及。
 
         :return: The code of this ListMetricsDataResponse.
         :rtype: int
@@ -78,7 +78,7 @@ class ListMetricsDataResponse(SdkResponse):
     def code(self, code):
         r"""Sets the code of this ListMetricsDataResponse.
 
-        响应码
+        **参数解释**： 响应码。 **取值范围**： 不涉及。
 
         :param code: The code of this ListMetricsDataResponse.
         :type code: int
@@ -89,7 +89,7 @@ class ListMetricsDataResponse(SdkResponse):
     def msg(self):
         r"""Gets the msg of this ListMetricsDataResponse.
 
-        响应信息
+        **参数解释**： 响应信息。 **取值范围**： 不涉及。
 
         :return: The msg of this ListMetricsDataResponse.
         :rtype: str
@@ -100,7 +100,7 @@ class ListMetricsDataResponse(SdkResponse):
     def msg(self, msg):
         r"""Sets the msg of this ListMetricsDataResponse.
 
-        响应信息
+        **参数解释**： 响应信息。 **取值范围**： 不涉及。
 
         :param msg: The msg of this ListMetricsDataResponse.
         :type msg: str
@@ -111,7 +111,7 @@ class ListMetricsDataResponse(SdkResponse):
     def data(self):
         r"""Gets the data of this ListMetricsDataResponse.
 
-        指标采集数据列表。
+        **参数解释**： 指标采集数据列表。 **取值范围**： 不涉及。
 
         :return: The data of this ListMetricsDataResponse.
         :rtype: list[dict(str, object)]
@@ -122,7 +122,7 @@ class ListMetricsDataResponse(SdkResponse):
     def data(self, data):
         r"""Sets the data of this ListMetricsDataResponse.
 
-        指标采集数据列表。
+        **参数解释**： 指标采集数据列表。 **取值范围**： 不涉及。
 
         :param data: The data of this ListMetricsDataResponse.
         :type data: list[dict(str, object)]
@@ -133,7 +133,7 @@ class ListMetricsDataResponse(SdkResponse):
     def count(self):
         r"""Gets the count of this ListMetricsDataResponse.
 
-        总列表大小。
+        **参数解释**： 总列表大小。 **取值范围**： 不涉及。
 
         :return: The count of this ListMetricsDataResponse.
         :rtype: int
@@ -144,7 +144,7 @@ class ListMetricsDataResponse(SdkResponse):
     def count(self, count):
         r"""Sets the count of this ListMetricsDataResponse.
 
-        总列表大小。
+        **参数解释**： 总列表大小。 **取值范围**： 不涉及。
 
         :param count: The count of this ListMetricsDataResponse.
         :type count: int

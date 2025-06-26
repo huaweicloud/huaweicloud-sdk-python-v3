@@ -55,33 +55,33 @@ class DiskResp:
 
         The model defined in huaweicloud sdk
 
-        :param instance_name: 实例名称
+        :param instance_name: **参数解释**： 实例名称。 **取值范围**： 不涉及。
         :type instance_name: str
-        :param instance_id: 实例ID
+        :param instance_id: **参数解释**： 实例ID。 **取值范围**： 不涉及。
         :type instance_id: str
-        :param host_name: 主机名称
+        :param host_name: **参数解释**： 主机名称。 **取值范围**： 不涉及。
         :type host_name: str
-        :param disk_name: 磁盘名称
+        :param disk_name: **参数解释**： 磁盘名称。 **取值范围**： 不涉及。
         :type disk_name: str
-        :param disk_type: 磁盘类型(系统盘、数据盘、日志盘)。
+        :param disk_type: **参数解释**： 磁盘类型(系统盘、数据盘、日志盘)。 **取值范围**： 不涉及。
         :type disk_type: str
-        :param total: 磁盘总容量(GB)。
+        :param total: **参数解释**： 磁盘总容量(GB)。 **取值范围**： 不涉及。
         :type total: float
-        :param used: 磁盘已使用容量(GB)。
+        :param used: **参数解释**： 磁盘已使用容量(GB)。 **取值范围**： 不涉及。
         :type used: float
-        :param available: 磁盘可用容量(GB)。
+        :param available: **参数解释**： 磁盘可用容量(GB)。 **取值范围**： 不涉及。
         :type available: float
-        :param used_percentage: 磁盘使用率(%)。
+        :param used_percentage: **参数解释**： 磁盘使用率(%)。 **取值范围**： 不涉及。
         :type used_percentage: float
-        :param _await: IO等待时间(ms)。
+        :param _await: **参数解释**： IO等待时间(ms)。 **取值范围**： 不涉及。
         :type _await: float
-        :param svctm: IO服务时间(ms)。
+        :param svctm: **参数解释**： IO服务时间(ms)。 **取值范围**： 不涉及。
         :type svctm: float
-        :param util: IO使用率(%)。
+        :param util: **参数解释**： IO使用率(%)。 **取值范围**： 不涉及。
         :type util: float
-        :param read_rate: 磁盘读速率(KB/s)。
+        :param read_rate: **参数解释**： 磁盘读速率(KB/s)。 **取值范围**： 不涉及。
         :type read_rate: float
-        :param write_rate: 磁盘写速率(KB/s)。
+        :param write_rate: **参数解释**： 磁盘写速率(KB/s)。 **取值范围**： 不涉及。
         :type write_rate: float
         """
         
@@ -136,7 +136,7 @@ class DiskResp:
     def instance_name(self):
         r"""Gets the instance_name of this DiskResp.
 
-        实例名称
+        **参数解释**： 实例名称。 **取值范围**： 不涉及。
 
         :return: The instance_name of this DiskResp.
         :rtype: str
@@ -147,7 +147,7 @@ class DiskResp:
     def instance_name(self, instance_name):
         r"""Sets the instance_name of this DiskResp.
 
-        实例名称
+        **参数解释**： 实例名称。 **取值范围**： 不涉及。
 
         :param instance_name: The instance_name of this DiskResp.
         :type instance_name: str
@@ -158,7 +158,7 @@ class DiskResp:
     def instance_id(self):
         r"""Gets the instance_id of this DiskResp.
 
-        实例ID
+        **参数解释**： 实例ID。 **取值范围**： 不涉及。
 
         :return: The instance_id of this DiskResp.
         :rtype: str
@@ -169,7 +169,7 @@ class DiskResp:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this DiskResp.
 
-        实例ID
+        **参数解释**： 实例ID。 **取值范围**： 不涉及。
 
         :param instance_id: The instance_id of this DiskResp.
         :type instance_id: str
@@ -180,7 +180,7 @@ class DiskResp:
     def host_name(self):
         r"""Gets the host_name of this DiskResp.
 
-        主机名称
+        **参数解释**： 主机名称。 **取值范围**： 不涉及。
 
         :return: The host_name of this DiskResp.
         :rtype: str
@@ -191,7 +191,7 @@ class DiskResp:
     def host_name(self, host_name):
         r"""Sets the host_name of this DiskResp.
 
-        主机名称
+        **参数解释**： 主机名称。 **取值范围**： 不涉及。
 
         :param host_name: The host_name of this DiskResp.
         :type host_name: str
@@ -202,7 +202,7 @@ class DiskResp:
     def disk_name(self):
         r"""Gets the disk_name of this DiskResp.
 
-        磁盘名称
+        **参数解释**： 磁盘名称。 **取值范围**： 不涉及。
 
         :return: The disk_name of this DiskResp.
         :rtype: str
@@ -213,7 +213,7 @@ class DiskResp:
     def disk_name(self, disk_name):
         r"""Sets the disk_name of this DiskResp.
 
-        磁盘名称
+        **参数解释**： 磁盘名称。 **取值范围**： 不涉及。
 
         :param disk_name: The disk_name of this DiskResp.
         :type disk_name: str
@@ -224,7 +224,7 @@ class DiskResp:
     def disk_type(self):
         r"""Gets the disk_type of this DiskResp.
 
-        磁盘类型(系统盘、数据盘、日志盘)。
+        **参数解释**： 磁盘类型(系统盘、数据盘、日志盘)。 **取值范围**： 不涉及。
 
         :return: The disk_type of this DiskResp.
         :rtype: str
@@ -235,7 +235,7 @@ class DiskResp:
     def disk_type(self, disk_type):
         r"""Sets the disk_type of this DiskResp.
 
-        磁盘类型(系统盘、数据盘、日志盘)。
+        **参数解释**： 磁盘类型(系统盘、数据盘、日志盘)。 **取值范围**： 不涉及。
 
         :param disk_type: The disk_type of this DiskResp.
         :type disk_type: str
@@ -246,7 +246,7 @@ class DiskResp:
     def total(self):
         r"""Gets the total of this DiskResp.
 
-        磁盘总容量(GB)。
+        **参数解释**： 磁盘总容量(GB)。 **取值范围**： 不涉及。
 
         :return: The total of this DiskResp.
         :rtype: float
@@ -257,7 +257,7 @@ class DiskResp:
     def total(self, total):
         r"""Sets the total of this DiskResp.
 
-        磁盘总容量(GB)。
+        **参数解释**： 磁盘总容量(GB)。 **取值范围**： 不涉及。
 
         :param total: The total of this DiskResp.
         :type total: float
@@ -268,7 +268,7 @@ class DiskResp:
     def used(self):
         r"""Gets the used of this DiskResp.
 
-        磁盘已使用容量(GB)。
+        **参数解释**： 磁盘已使用容量(GB)。 **取值范围**： 不涉及。
 
         :return: The used of this DiskResp.
         :rtype: float
@@ -279,7 +279,7 @@ class DiskResp:
     def used(self, used):
         r"""Sets the used of this DiskResp.
 
-        磁盘已使用容量(GB)。
+        **参数解释**： 磁盘已使用容量(GB)。 **取值范围**： 不涉及。
 
         :param used: The used of this DiskResp.
         :type used: float
@@ -290,7 +290,7 @@ class DiskResp:
     def available(self):
         r"""Gets the available of this DiskResp.
 
-        磁盘可用容量(GB)。
+        **参数解释**： 磁盘可用容量(GB)。 **取值范围**： 不涉及。
 
         :return: The available of this DiskResp.
         :rtype: float
@@ -301,7 +301,7 @@ class DiskResp:
     def available(self, available):
         r"""Sets the available of this DiskResp.
 
-        磁盘可用容量(GB)。
+        **参数解释**： 磁盘可用容量(GB)。 **取值范围**： 不涉及。
 
         :param available: The available of this DiskResp.
         :type available: float
@@ -312,7 +312,7 @@ class DiskResp:
     def used_percentage(self):
         r"""Gets the used_percentage of this DiskResp.
 
-        磁盘使用率(%)。
+        **参数解释**： 磁盘使用率(%)。 **取值范围**： 不涉及。
 
         :return: The used_percentage of this DiskResp.
         :rtype: float
@@ -323,7 +323,7 @@ class DiskResp:
     def used_percentage(self, used_percentage):
         r"""Sets the used_percentage of this DiskResp.
 
-        磁盘使用率(%)。
+        **参数解释**： 磁盘使用率(%)。 **取值范围**： 不涉及。
 
         :param used_percentage: The used_percentage of this DiskResp.
         :type used_percentage: float
@@ -334,7 +334,7 @@ class DiskResp:
     def _await(self):
         r"""Gets the _await of this DiskResp.
 
-        IO等待时间(ms)。
+        **参数解释**： IO等待时间(ms)。 **取值范围**： 不涉及。
 
         :return: The _await of this DiskResp.
         :rtype: float
@@ -345,7 +345,7 @@ class DiskResp:
     def _await(self, _await):
         r"""Sets the _await of this DiskResp.
 
-        IO等待时间(ms)。
+        **参数解释**： IO等待时间(ms)。 **取值范围**： 不涉及。
 
         :param _await: The _await of this DiskResp.
         :type _await: float
@@ -356,7 +356,7 @@ class DiskResp:
     def svctm(self):
         r"""Gets the svctm of this DiskResp.
 
-        IO服务时间(ms)。
+        **参数解释**： IO服务时间(ms)。 **取值范围**： 不涉及。
 
         :return: The svctm of this DiskResp.
         :rtype: float
@@ -367,7 +367,7 @@ class DiskResp:
     def svctm(self, svctm):
         r"""Sets the svctm of this DiskResp.
 
-        IO服务时间(ms)。
+        **参数解释**： IO服务时间(ms)。 **取值范围**： 不涉及。
 
         :param svctm: The svctm of this DiskResp.
         :type svctm: float
@@ -378,7 +378,7 @@ class DiskResp:
     def util(self):
         r"""Gets the util of this DiskResp.
 
-        IO使用率(%)。
+        **参数解释**： IO使用率(%)。 **取值范围**： 不涉及。
 
         :return: The util of this DiskResp.
         :rtype: float
@@ -389,7 +389,7 @@ class DiskResp:
     def util(self, util):
         r"""Sets the util of this DiskResp.
 
-        IO使用率(%)。
+        **参数解释**： IO使用率(%)。 **取值范围**： 不涉及。
 
         :param util: The util of this DiskResp.
         :type util: float
@@ -400,7 +400,7 @@ class DiskResp:
     def read_rate(self):
         r"""Gets the read_rate of this DiskResp.
 
-        磁盘读速率(KB/s)。
+        **参数解释**： 磁盘读速率(KB/s)。 **取值范围**： 不涉及。
 
         :return: The read_rate of this DiskResp.
         :rtype: float
@@ -411,7 +411,7 @@ class DiskResp:
     def read_rate(self, read_rate):
         r"""Sets the read_rate of this DiskResp.
 
-        磁盘读速率(KB/s)。
+        **参数解释**： 磁盘读速率(KB/s)。 **取值范围**： 不涉及。
 
         :param read_rate: The read_rate of this DiskResp.
         :type read_rate: float
@@ -422,7 +422,7 @@ class DiskResp:
     def write_rate(self):
         r"""Gets the write_rate of this DiskResp.
 
-        磁盘写速率(KB/s)。
+        **参数解释**： 磁盘写速率(KB/s)。 **取值范围**： 不涉及。
 
         :return: The write_rate of this DiskResp.
         :rtype: float
@@ -433,7 +433,7 @@ class DiskResp:
     def write_rate(self, write_rate):
         r"""Sets the write_rate of this DiskResp.
 
-        磁盘写速率(KB/s)。
+        **参数解释**： 磁盘写速率(KB/s)。 **取值范围**： 不涉及。
 
         :param write_rate: The write_rate of this DiskResp.
         :type write_rate: float

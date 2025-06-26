@@ -85,7 +85,7 @@ class ListSimSmScenariosRequest:
         :type limit: int
         :param search: A search term.
         :type search: str
-        :param simulator: * &#x60;VTD&#x60; - VTD * &#x60;SimPro&#x60; - SimPro
+        :param simulator: 仿真器名称,取值范围:A,B,C,D,E
         :type simulator: str
         :param source: Choices: generalization, road, upload
         :type source: str
@@ -393,7 +393,7 @@ class ListSimSmScenariosRequest:
     def simulator(self):
         r"""Gets the simulator of this ListSimSmScenariosRequest.
 
-        * `VTD` - VTD * `SimPro` - SimPro
+        仿真器名称,取值范围:A,B,C,D,E
 
         :return: The simulator of this ListSimSmScenariosRequest.
         :rtype: str
@@ -404,7 +404,7 @@ class ListSimSmScenariosRequest:
     def simulator(self, simulator):
         r"""Sets the simulator of this ListSimSmScenariosRequest.
 
-        * `VTD` - VTD * `SimPro` - SimPro
+        仿真器名称,取值范围:A,B,C,D,E
 
         :param simulator: The simulator of this ListSimSmScenariosRequest.
         :type simulator: str

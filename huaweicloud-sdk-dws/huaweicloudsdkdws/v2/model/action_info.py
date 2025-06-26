@@ -51,7 +51,7 @@ class ActionInfo:
         :type start_time: str
         :param end_time: **参数解释**： 操作结束时间。 **取值范围**： 不涉及。
         :type end_time: str
-        :param result: **参数解释**： 操作结果。。 **取值范围**： success：成功 failed：失败 默认空字符串。
+        :param result: **参数解释**： 操作结果。默认为空字符串。 **取值范围**： success：成功。 failed：失败。
         :type result: str
         :param logs: **参数解释**： 操作日志信息。 **取值范围**： 不涉及。
         :type logs: str
@@ -197,7 +197,7 @@ class ActionInfo:
     def result(self):
         r"""Gets the result of this ActionInfo.
 
-        **参数解释**： 操作结果。。 **取值范围**： success：成功 failed：失败 默认空字符串。
+        **参数解释**： 操作结果。默认为空字符串。 **取值范围**： success：成功。 failed：失败。
 
         :return: The result of this ActionInfo.
         :rtype: str
@@ -208,7 +208,7 @@ class ActionInfo:
     def result(self, result):
         r"""Sets the result of this ActionInfo.
 
-        **参数解释**： 操作结果。。 **取值范围**： success：成功 failed：失败 默认空字符串。
+        **参数解释**： 操作结果。默认为空字符串。 **取值范围**： success：成功。 failed：失败。
 
         :param result: The result of this ActionInfo.
         :type result: str

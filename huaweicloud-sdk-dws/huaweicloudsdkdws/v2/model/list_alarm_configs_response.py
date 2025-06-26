@@ -32,9 +32,9 @@ class ListAlarmConfigsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param count: 告警配置总数
+        :param count: **参数解释**： 告警配置总数。 **取值范围**： 不涉及。
         :type count: int
-        :param alarm_configs: 告警配置列表
+        :param alarm_configs: **参数解释**： 告警配置列表。 **取值范围**： 不涉及。
         :type alarm_configs: list[:class:`huaweicloudsdkdws.v2.AlarmConfigResponse`]
         """
         
@@ -53,7 +53,7 @@ class ListAlarmConfigsResponse(SdkResponse):
     def count(self):
         r"""Gets the count of this ListAlarmConfigsResponse.
 
-        告警配置总数
+        **参数解释**： 告警配置总数。 **取值范围**： 不涉及。
 
         :return: The count of this ListAlarmConfigsResponse.
         :rtype: int
@@ -64,7 +64,7 @@ class ListAlarmConfigsResponse(SdkResponse):
     def count(self, count):
         r"""Sets the count of this ListAlarmConfigsResponse.
 
-        告警配置总数
+        **参数解释**： 告警配置总数。 **取值范围**： 不涉及。
 
         :param count: The count of this ListAlarmConfigsResponse.
         :type count: int
@@ -75,7 +75,7 @@ class ListAlarmConfigsResponse(SdkResponse):
     def alarm_configs(self):
         r"""Gets the alarm_configs of this ListAlarmConfigsResponse.
 
-        告警配置列表
+        **参数解释**： 告警配置列表。 **取值范围**： 不涉及。
 
         :return: The alarm_configs of this ListAlarmConfigsResponse.
         :rtype: list[:class:`huaweicloudsdkdws.v2.AlarmConfigResponse`]
@@ -86,7 +86,7 @@ class ListAlarmConfigsResponse(SdkResponse):
     def alarm_configs(self, alarm_configs):
         r"""Sets the alarm_configs of this ListAlarmConfigsResponse.
 
-        告警配置列表
+        **参数解释**： 告警配置列表。 **取值范围**： 不涉及。
 
         :param alarm_configs: The alarm_configs of this ListAlarmConfigsResponse.
         :type alarm_configs: list[:class:`huaweicloudsdkdws.v2.AlarmConfigResponse`]

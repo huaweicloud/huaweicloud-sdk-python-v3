@@ -33,11 +33,11 @@ class ConfigurationParameterValue:
 
         The model defined in huaweicloud sdk
 
-        :param type: 参数类型，包括：cn、dn。
+        :param type: **参数解释**： 参数类型。 **取值范围**： cn、dn。
         :type type: str
-        :param name: 参数名称。
+        :param name: **参数解释**： 参数名称。 **取值范围**： 不涉及。
         :type name: str
-        :param value: 参数值。
+        :param value: **参数解释**： 参数值。 **取值范围**： 不涉及。
         :type value: str
         """
         
@@ -56,7 +56,7 @@ class ConfigurationParameterValue:
     def type(self):
         r"""Gets the type of this ConfigurationParameterValue.
 
-        参数类型，包括：cn、dn。
+        **参数解释**： 参数类型。 **取值范围**： cn、dn。
 
         :return: The type of this ConfigurationParameterValue.
         :rtype: str
@@ -67,7 +67,7 @@ class ConfigurationParameterValue:
     def type(self, type):
         r"""Sets the type of this ConfigurationParameterValue.
 
-        参数类型，包括：cn、dn。
+        **参数解释**： 参数类型。 **取值范围**： cn、dn。
 
         :param type: The type of this ConfigurationParameterValue.
         :type type: str
@@ -78,7 +78,7 @@ class ConfigurationParameterValue:
     def name(self):
         r"""Gets the name of this ConfigurationParameterValue.
 
-        参数名称。
+        **参数解释**： 参数名称。 **取值范围**： 不涉及。
 
         :return: The name of this ConfigurationParameterValue.
         :rtype: str
@@ -89,7 +89,7 @@ class ConfigurationParameterValue:
     def name(self, name):
         r"""Sets the name of this ConfigurationParameterValue.
 
-        参数名称。
+        **参数解释**： 参数名称。 **取值范围**： 不涉及。
 
         :param name: The name of this ConfigurationParameterValue.
         :type name: str
@@ -100,7 +100,7 @@ class ConfigurationParameterValue:
     def value(self):
         r"""Gets the value of this ConfigurationParameterValue.
 
-        参数值。
+        **参数解释**： 参数值。 **取值范围**： 不涉及。
 
         :return: The value of this ConfigurationParameterValue.
         :rtype: str
@@ -111,7 +111,7 @@ class ConfigurationParameterValue:
     def value(self, value):
         r"""Sets the value of this ConfigurationParameterValue.
 
-        参数值。
+        **参数解释**： 参数值。 **取值范围**： 不涉及。
 
         :param value: The value of this ConfigurationParameterValue.
         :type value: str

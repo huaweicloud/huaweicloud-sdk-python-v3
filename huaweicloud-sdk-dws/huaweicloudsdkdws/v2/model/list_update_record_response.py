@@ -32,9 +32,9 @@ class ListUpdateRecordResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param count: 集群升级记录总数
+        :param count: **参数解释**： 集群升级记录总数。 **取值范围**： 不涉及。
         :type count: int
-        :param records: 集群升级记录列表
+        :param records: **参数解释**： 集群升级记录列表。 **取值范围**： 不涉及。
         :type records: list[:class:`huaweicloudsdkdws.v2.ClusterUpdateRecordResp`]
         """
         
@@ -53,7 +53,7 @@ class ListUpdateRecordResponse(SdkResponse):
     def count(self):
         r"""Gets the count of this ListUpdateRecordResponse.
 
-        集群升级记录总数
+        **参数解释**： 集群升级记录总数。 **取值范围**： 不涉及。
 
         :return: The count of this ListUpdateRecordResponse.
         :rtype: int
@@ -64,7 +64,7 @@ class ListUpdateRecordResponse(SdkResponse):
     def count(self, count):
         r"""Sets the count of this ListUpdateRecordResponse.
 
-        集群升级记录总数
+        **参数解释**： 集群升级记录总数。 **取值范围**： 不涉及。
 
         :param count: The count of this ListUpdateRecordResponse.
         :type count: int
@@ -75,7 +75,7 @@ class ListUpdateRecordResponse(SdkResponse):
     def records(self):
         r"""Gets the records of this ListUpdateRecordResponse.
 
-        集群升级记录列表
+        **参数解释**： 集群升级记录列表。 **取值范围**： 不涉及。
 
         :return: The records of this ListUpdateRecordResponse.
         :rtype: list[:class:`huaweicloudsdkdws.v2.ClusterUpdateRecordResp`]
@@ -86,7 +86,7 @@ class ListUpdateRecordResponse(SdkResponse):
     def records(self, records):
         r"""Sets the records of this ListUpdateRecordResponse.
 
-        集群升级记录列表
+        **参数解释**： 集群升级记录列表。 **取值范围**： 不涉及。
 
         :param records: The records of this ListUpdateRecordResponse.
         :type records: list[:class:`huaweicloudsdkdws.v2.ClusterUpdateRecordResp`]

@@ -33,9 +33,9 @@ class UpdateDataSourceRequest:
 
         The model defined in huaweicloud sdk
 
-        :param cluster_id: **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
+        :param cluster_id: **参数解释**： 集群ID。获取方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
         :type cluster_id: str
-        :param ext_data_source_id: 数据源id
+        :param ext_data_source_id: **参数解释**： 数据源ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type ext_data_source_id: str
         :param body: Body of the UpdateDataSourceRequest
         :type body: :class:`huaweicloudsdkdws.v2.ReconfigureExtDataSourceActionReq`
@@ -57,7 +57,7 @@ class UpdateDataSourceRequest:
     def cluster_id(self):
         r"""Gets the cluster_id of this UpdateDataSourceRequest.
 
-        **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
+        **参数解释**： 集群ID。获取方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
 
         :return: The cluster_id of this UpdateDataSourceRequest.
         :rtype: str
@@ -68,7 +68,7 @@ class UpdateDataSourceRequest:
     def cluster_id(self, cluster_id):
         r"""Sets the cluster_id of this UpdateDataSourceRequest.
 
-        **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
+        **参数解释**： 集群ID。获取方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
 
         :param cluster_id: The cluster_id of this UpdateDataSourceRequest.
         :type cluster_id: str
@@ -79,7 +79,7 @@ class UpdateDataSourceRequest:
     def ext_data_source_id(self):
         r"""Gets the ext_data_source_id of this UpdateDataSourceRequest.
 
-        数据源id
+        **参数解释**： 数据源ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The ext_data_source_id of this UpdateDataSourceRequest.
         :rtype: str
@@ -90,7 +90,7 @@ class UpdateDataSourceRequest:
     def ext_data_source_id(self, ext_data_source_id):
         r"""Sets the ext_data_source_id of this UpdateDataSourceRequest.
 
-        数据源id
+        **参数解释**： 数据源ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param ext_data_source_id: The ext_data_source_id of this UpdateDataSourceRequest.
         :type ext_data_source_id: str

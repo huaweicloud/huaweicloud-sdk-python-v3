@@ -31,9 +31,9 @@ class LinkCopyReq:
 
         The model defined in huaweicloud sdk
 
-        :param backup_name: 快照名称
+        :param backup_name: **参数解释**： 快照名称。 **取值范围**： 不涉及。
         :type backup_name: str
-        :param description: 描述
+        :param description: **参数解释**： 描述信息。 **取值范围**： 不涉及。
         :type description: str
         """
         
@@ -51,7 +51,7 @@ class LinkCopyReq:
     def backup_name(self):
         r"""Gets the backup_name of this LinkCopyReq.
 
-        快照名称
+        **参数解释**： 快照名称。 **取值范围**： 不涉及。
 
         :return: The backup_name of this LinkCopyReq.
         :rtype: str
@@ -62,7 +62,7 @@ class LinkCopyReq:
     def backup_name(self, backup_name):
         r"""Sets the backup_name of this LinkCopyReq.
 
-        快照名称
+        **参数解释**： 快照名称。 **取值范围**： 不涉及。
 
         :param backup_name: The backup_name of this LinkCopyReq.
         :type backup_name: str
@@ -73,7 +73,7 @@ class LinkCopyReq:
     def description(self):
         r"""Gets the description of this LinkCopyReq.
 
-        描述
+        **参数解释**： 描述信息。 **取值范围**： 不涉及。
 
         :return: The description of this LinkCopyReq.
         :rtype: str
@@ -84,7 +84,7 @@ class LinkCopyReq:
     def description(self, description):
         r"""Sets the description of this LinkCopyReq.
 
-        描述
+        **参数解释**： 描述信息。 **取值范围**： 不涉及。
 
         :param description: The description of this LinkCopyReq.
         :type description: str

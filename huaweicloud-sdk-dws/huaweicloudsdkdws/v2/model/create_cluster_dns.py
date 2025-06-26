@@ -33,11 +33,11 @@ class CreateClusterDns:
 
         The model defined in huaweicloud sdk
 
-        :param name: 待创建的域名。
+        :param name: **参数解释**： 待创建的域名。 **取值范围**： 不涉及。
         :type name: str
-        :param type: 域名类型。 - public：公网域名。 - private：内网域名。
+        :param type: **参数解释**： 域名类型。 **取值范围**： public：公网域名。 private：内网域名。
         :type type: str
-        :param ttl: 用于填写默认生成的SOA记录中有效缓存时间，以秒为单位。 - 取值范围：300~2147483647。 - 默认值为300s。
+        :param ttl: **参数解释**： 用于填写默认生成的SOA记录中有效缓存时间，以秒为单位。默认值为300s。 **取值范围**： 300~2147483647。
         :type ttl: int
         """
         
@@ -56,7 +56,7 @@ class CreateClusterDns:
     def name(self):
         r"""Gets the name of this CreateClusterDns.
 
-        待创建的域名。
+        **参数解释**： 待创建的域名。 **取值范围**： 不涉及。
 
         :return: The name of this CreateClusterDns.
         :rtype: str
@@ -67,7 +67,7 @@ class CreateClusterDns:
     def name(self, name):
         r"""Sets the name of this CreateClusterDns.
 
-        待创建的域名。
+        **参数解释**： 待创建的域名。 **取值范围**： 不涉及。
 
         :param name: The name of this CreateClusterDns.
         :type name: str
@@ -78,7 +78,7 @@ class CreateClusterDns:
     def type(self):
         r"""Gets the type of this CreateClusterDns.
 
-        域名类型。 - public：公网域名。 - private：内网域名。
+        **参数解释**： 域名类型。 **取值范围**： public：公网域名。 private：内网域名。
 
         :return: The type of this CreateClusterDns.
         :rtype: str
@@ -89,7 +89,7 @@ class CreateClusterDns:
     def type(self, type):
         r"""Sets the type of this CreateClusterDns.
 
-        域名类型。 - public：公网域名。 - private：内网域名。
+        **参数解释**： 域名类型。 **取值范围**： public：公网域名。 private：内网域名。
 
         :param type: The type of this CreateClusterDns.
         :type type: str
@@ -100,7 +100,7 @@ class CreateClusterDns:
     def ttl(self):
         r"""Gets the ttl of this CreateClusterDns.
 
-        用于填写默认生成的SOA记录中有效缓存时间，以秒为单位。 - 取值范围：300~2147483647。 - 默认值为300s。
+        **参数解释**： 用于填写默认生成的SOA记录中有效缓存时间，以秒为单位。默认值为300s。 **取值范围**： 300~2147483647。
 
         :return: The ttl of this CreateClusterDns.
         :rtype: int
@@ -111,7 +111,7 @@ class CreateClusterDns:
     def ttl(self, ttl):
         r"""Sets the ttl of this CreateClusterDns.
 
-        用于填写默认生成的SOA记录中有效缓存时间，以秒为单位。 - 取值范围：300~2147483647。 - 默认值为300s。
+        **参数解释**： 用于填写默认生成的SOA记录中有效缓存时间，以秒为单位。默认值为300s。 **取值范围**： 300~2147483647。
 
         :param ttl: The ttl of this CreateClusterDns.
         :type ttl: int

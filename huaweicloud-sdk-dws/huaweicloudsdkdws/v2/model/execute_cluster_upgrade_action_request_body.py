@@ -31,9 +31,9 @@ class ExecuteClusterUpgradeActionRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param action: 当前集群要做的操作
+        :param action: **参数解释**： 当前集群要做的操作。 **取值范围**： 不涉及。
         :type action: str
-        :param item_id: 升级项ID
+        :param item_id: **参数解释**： 升级项ID。 **取值范围**： 不涉及。
         :type item_id: str
         """
         
@@ -50,7 +50,7 @@ class ExecuteClusterUpgradeActionRequestBody:
     def action(self):
         r"""Gets the action of this ExecuteClusterUpgradeActionRequestBody.
 
-        当前集群要做的操作
+        **参数解释**： 当前集群要做的操作。 **取值范围**： 不涉及。
 
         :return: The action of this ExecuteClusterUpgradeActionRequestBody.
         :rtype: str
@@ -61,7 +61,7 @@ class ExecuteClusterUpgradeActionRequestBody:
     def action(self, action):
         r"""Sets the action of this ExecuteClusterUpgradeActionRequestBody.
 
-        当前集群要做的操作
+        **参数解释**： 当前集群要做的操作。 **取值范围**： 不涉及。
 
         :param action: The action of this ExecuteClusterUpgradeActionRequestBody.
         :type action: str
@@ -72,7 +72,7 @@ class ExecuteClusterUpgradeActionRequestBody:
     def item_id(self):
         r"""Gets the item_id of this ExecuteClusterUpgradeActionRequestBody.
 
-        升级项ID
+        **参数解释**： 升级项ID。 **取值范围**： 不涉及。
 
         :return: The item_id of this ExecuteClusterUpgradeActionRequestBody.
         :rtype: str
@@ -83,7 +83,7 @@ class ExecuteClusterUpgradeActionRequestBody:
     def item_id(self, item_id):
         r"""Sets the item_id of this ExecuteClusterUpgradeActionRequestBody.
 
-        升级项ID
+        **参数解释**： 升级项ID。 **取值范围**： 不涉及。
 
         :param item_id: The item_id of this ExecuteClusterUpgradeActionRequestBody.
         :type item_id: str

@@ -22,7 +22,7 @@ class DatabasePermissionReq:
         'grant_list': 'list[Grant]',
         'revoke_list': 'list[Revoke]',
         'role_list': 'list[str]',
-        'object_list': 'object',
+        'object_list': 'list[str]',
         'all_object': 'bool',
         'cascade': 'bool',
         'database': 'str',
@@ -49,27 +49,27 @@ class DatabasePermissionReq:
 
         The model defined in huaweicloud sdk
 
-        :param type: 对象类型 [DATABASE | SCHEMA | TABLE | VIEW | COLUMN | FUNCTION| SEQUENCE | NODEGROUP | ROLE]
+        :param type: **参数解释**： 对象类型。 **取值范围**： DATABASE、SCHEMA、TABLE、VIEW、COLUMN、FUNCTION、SEQUENCE、NODEGROUP、ROLE。
         :type type: str
-        :param is_grant: 是否授权操作
+        :param is_grant: **参数解释**： 是否授权操作。 **取值范围**： 不涉及。
         :type is_grant: bool
-        :param grant_list: 授权列表 is_grant为true时必填
+        :param grant_list: **参数解释**： 授权列表。is_grant为true时必填。 **取值范围**： 不涉及。
         :type grant_list: list[:class:`huaweicloudsdkdws.v2.Grant`]
-        :param revoke_list: 撤销权限列表 is_grant为false时必填
+        :param revoke_list: **参数解释**： 撤销权限列表。is_grant为false时必填。 **取值范围**： 不涉及。
         :type revoke_list: list[:class:`huaweicloudsdkdws.v2.Revoke`]
-        :param role_list: 被授权角色列表
+        :param role_list: **参数解释**： 被授权角色列表。 **取值范围**： 不涉及。
         :type role_list: list[str]
-        :param object_list: 权限所属对象列表
-        :type object_list: object
-        :param all_object: schema下所有数据库对象权限，默认false
+        :param object_list: **参数解释**： 权限所属对象列表。 **取值范围**： 不涉及。
+        :type object_list: list[str]
+        :param all_object: **参数解释**： schema下所有数据库对象权限，默认false。 **取值范围**： 不涉及。
         :type all_object: bool
-        :param cascade: 撤销权限是否级联撤销 默认 true
+        :param cascade: **参数解释**： 撤销权限是否级联撤销，默认true。 **取值范围**： 不涉及。
         :type cascade: bool
-        :param database: 数据库名称
+        :param database: **参数解释**： 数据库名称。 **取值范围**： 不涉及。
         :type database: str
-        :param schema: 模式名称
+        :param schema: **参数解释**： 模式名称。 **取值范围**： 不涉及。
         :type schema: str
-        :param table: 表名
+        :param table: **参数解释**： 表名。 **取值范围**： 不涉及。
         :type table: str
         """
         
@@ -110,7 +110,7 @@ class DatabasePermissionReq:
     def type(self):
         r"""Gets the type of this DatabasePermissionReq.
 
-        对象类型 [DATABASE | SCHEMA | TABLE | VIEW | COLUMN | FUNCTION| SEQUENCE | NODEGROUP | ROLE]
+        **参数解释**： 对象类型。 **取值范围**： DATABASE、SCHEMA、TABLE、VIEW、COLUMN、FUNCTION、SEQUENCE、NODEGROUP、ROLE。
 
         :return: The type of this DatabasePermissionReq.
         :rtype: str
@@ -121,7 +121,7 @@ class DatabasePermissionReq:
     def type(self, type):
         r"""Sets the type of this DatabasePermissionReq.
 
-        对象类型 [DATABASE | SCHEMA | TABLE | VIEW | COLUMN | FUNCTION| SEQUENCE | NODEGROUP | ROLE]
+        **参数解释**： 对象类型。 **取值范围**： DATABASE、SCHEMA、TABLE、VIEW、COLUMN、FUNCTION、SEQUENCE、NODEGROUP、ROLE。
 
         :param type: The type of this DatabasePermissionReq.
         :type type: str
@@ -132,7 +132,7 @@ class DatabasePermissionReq:
     def is_grant(self):
         r"""Gets the is_grant of this DatabasePermissionReq.
 
-        是否授权操作
+        **参数解释**： 是否授权操作。 **取值范围**： 不涉及。
 
         :return: The is_grant of this DatabasePermissionReq.
         :rtype: bool
@@ -143,7 +143,7 @@ class DatabasePermissionReq:
     def is_grant(self, is_grant):
         r"""Sets the is_grant of this DatabasePermissionReq.
 
-        是否授权操作
+        **参数解释**： 是否授权操作。 **取值范围**： 不涉及。
 
         :param is_grant: The is_grant of this DatabasePermissionReq.
         :type is_grant: bool
@@ -154,7 +154,7 @@ class DatabasePermissionReq:
     def grant_list(self):
         r"""Gets the grant_list of this DatabasePermissionReq.
 
-        授权列表 is_grant为true时必填
+        **参数解释**： 授权列表。is_grant为true时必填。 **取值范围**： 不涉及。
 
         :return: The grant_list of this DatabasePermissionReq.
         :rtype: list[:class:`huaweicloudsdkdws.v2.Grant`]
@@ -165,7 +165,7 @@ class DatabasePermissionReq:
     def grant_list(self, grant_list):
         r"""Sets the grant_list of this DatabasePermissionReq.
 
-        授权列表 is_grant为true时必填
+        **参数解释**： 授权列表。is_grant为true时必填。 **取值范围**： 不涉及。
 
         :param grant_list: The grant_list of this DatabasePermissionReq.
         :type grant_list: list[:class:`huaweicloudsdkdws.v2.Grant`]
@@ -176,7 +176,7 @@ class DatabasePermissionReq:
     def revoke_list(self):
         r"""Gets the revoke_list of this DatabasePermissionReq.
 
-        撤销权限列表 is_grant为false时必填
+        **参数解释**： 撤销权限列表。is_grant为false时必填。 **取值范围**： 不涉及。
 
         :return: The revoke_list of this DatabasePermissionReq.
         :rtype: list[:class:`huaweicloudsdkdws.v2.Revoke`]
@@ -187,7 +187,7 @@ class DatabasePermissionReq:
     def revoke_list(self, revoke_list):
         r"""Sets the revoke_list of this DatabasePermissionReq.
 
-        撤销权限列表 is_grant为false时必填
+        **参数解释**： 撤销权限列表。is_grant为false时必填。 **取值范围**： 不涉及。
 
         :param revoke_list: The revoke_list of this DatabasePermissionReq.
         :type revoke_list: list[:class:`huaweicloudsdkdws.v2.Revoke`]
@@ -198,7 +198,7 @@ class DatabasePermissionReq:
     def role_list(self):
         r"""Gets the role_list of this DatabasePermissionReq.
 
-        被授权角色列表
+        **参数解释**： 被授权角色列表。 **取值范围**： 不涉及。
 
         :return: The role_list of this DatabasePermissionReq.
         :rtype: list[str]
@@ -209,7 +209,7 @@ class DatabasePermissionReq:
     def role_list(self, role_list):
         r"""Sets the role_list of this DatabasePermissionReq.
 
-        被授权角色列表
+        **参数解释**： 被授权角色列表。 **取值范围**： 不涉及。
 
         :param role_list: The role_list of this DatabasePermissionReq.
         :type role_list: list[str]
@@ -220,10 +220,10 @@ class DatabasePermissionReq:
     def object_list(self):
         r"""Gets the object_list of this DatabasePermissionReq.
 
-        权限所属对象列表
+        **参数解释**： 权限所属对象列表。 **取值范围**： 不涉及。
 
         :return: The object_list of this DatabasePermissionReq.
-        :rtype: object
+        :rtype: list[str]
         """
         return self._object_list
 
@@ -231,10 +231,10 @@ class DatabasePermissionReq:
     def object_list(self, object_list):
         r"""Sets the object_list of this DatabasePermissionReq.
 
-        权限所属对象列表
+        **参数解释**： 权限所属对象列表。 **取值范围**： 不涉及。
 
         :param object_list: The object_list of this DatabasePermissionReq.
-        :type object_list: object
+        :type object_list: list[str]
         """
         self._object_list = object_list
 
@@ -242,7 +242,7 @@ class DatabasePermissionReq:
     def all_object(self):
         r"""Gets the all_object of this DatabasePermissionReq.
 
-        schema下所有数据库对象权限，默认false
+        **参数解释**： schema下所有数据库对象权限，默认false。 **取值范围**： 不涉及。
 
         :return: The all_object of this DatabasePermissionReq.
         :rtype: bool
@@ -253,7 +253,7 @@ class DatabasePermissionReq:
     def all_object(self, all_object):
         r"""Sets the all_object of this DatabasePermissionReq.
 
-        schema下所有数据库对象权限，默认false
+        **参数解释**： schema下所有数据库对象权限，默认false。 **取值范围**： 不涉及。
 
         :param all_object: The all_object of this DatabasePermissionReq.
         :type all_object: bool
@@ -264,7 +264,7 @@ class DatabasePermissionReq:
     def cascade(self):
         r"""Gets the cascade of this DatabasePermissionReq.
 
-        撤销权限是否级联撤销 默认 true
+        **参数解释**： 撤销权限是否级联撤销，默认true。 **取值范围**： 不涉及。
 
         :return: The cascade of this DatabasePermissionReq.
         :rtype: bool
@@ -275,7 +275,7 @@ class DatabasePermissionReq:
     def cascade(self, cascade):
         r"""Sets the cascade of this DatabasePermissionReq.
 
-        撤销权限是否级联撤销 默认 true
+        **参数解释**： 撤销权限是否级联撤销，默认true。 **取值范围**： 不涉及。
 
         :param cascade: The cascade of this DatabasePermissionReq.
         :type cascade: bool
@@ -286,7 +286,7 @@ class DatabasePermissionReq:
     def database(self):
         r"""Gets the database of this DatabasePermissionReq.
 
-        数据库名称
+        **参数解释**： 数据库名称。 **取值范围**： 不涉及。
 
         :return: The database of this DatabasePermissionReq.
         :rtype: str
@@ -297,7 +297,7 @@ class DatabasePermissionReq:
     def database(self, database):
         r"""Sets the database of this DatabasePermissionReq.
 
-        数据库名称
+        **参数解释**： 数据库名称。 **取值范围**： 不涉及。
 
         :param database: The database of this DatabasePermissionReq.
         :type database: str
@@ -308,7 +308,7 @@ class DatabasePermissionReq:
     def schema(self):
         r"""Gets the schema of this DatabasePermissionReq.
 
-        模式名称
+        **参数解释**： 模式名称。 **取值范围**： 不涉及。
 
         :return: The schema of this DatabasePermissionReq.
         :rtype: str
@@ -319,7 +319,7 @@ class DatabasePermissionReq:
     def schema(self, schema):
         r"""Sets the schema of this DatabasePermissionReq.
 
-        模式名称
+        **参数解释**： 模式名称。 **取值范围**： 不涉及。
 
         :param schema: The schema of this DatabasePermissionReq.
         :type schema: str
@@ -330,7 +330,7 @@ class DatabasePermissionReq:
     def table(self):
         r"""Gets the table of this DatabasePermissionReq.
 
-        表名
+        **参数解释**： 表名。 **取值范围**： 不涉及。
 
         :return: The table of this DatabasePermissionReq.
         :rtype: str
@@ -341,7 +341,7 @@ class DatabasePermissionReq:
     def table(self, table):
         r"""Sets the table of this DatabasePermissionReq.
 
-        表名
+        **参数解释**： 表名。 **取值范围**： 不涉及。
 
         :param table: The table of this DatabasePermissionReq.
         :type table: str

@@ -30,7 +30,7 @@ class ListAvailableDisasterClustersResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param disaster_recovery_clusters: 容灾可用集群列表
+        :param disaster_recovery_clusters: **参数解释**： 容灾可用集群列表。 **取值范围**： 不涉及。
         :type disaster_recovery_clusters: list[:class:`huaweicloudsdkdws.v2.DisasterRecoveryClusterVo`]
         """
         
@@ -46,7 +46,7 @@ class ListAvailableDisasterClustersResponse(SdkResponse):
     def disaster_recovery_clusters(self):
         r"""Gets the disaster_recovery_clusters of this ListAvailableDisasterClustersResponse.
 
-        容灾可用集群列表
+        **参数解释**： 容灾可用集群列表。 **取值范围**： 不涉及。
 
         :return: The disaster_recovery_clusters of this ListAvailableDisasterClustersResponse.
         :rtype: list[:class:`huaweicloudsdkdws.v2.DisasterRecoveryClusterVo`]
@@ -57,7 +57,7 @@ class ListAvailableDisasterClustersResponse(SdkResponse):
     def disaster_recovery_clusters(self, disaster_recovery_clusters):
         r"""Sets the disaster_recovery_clusters of this ListAvailableDisasterClustersResponse.
 
-        容灾可用集群列表
+        **参数解释**： 容灾可用集群列表。 **取值范围**： 不涉及。
 
         :param disaster_recovery_clusters: The disaster_recovery_clusters of this ListAvailableDisasterClustersResponse.
         :type disaster_recovery_clusters: list[:class:`huaweicloudsdkdws.v2.DisasterRecoveryClusterVo`]

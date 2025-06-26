@@ -31,9 +31,9 @@ class ProjectTag:
 
         The model defined in huaweicloud sdk
 
-        :param key: 键。
+        :param key: **参数解释**： 键。 **取值范围**： 不涉及。
         :type key: str
-        :param values: 值。
+        :param values: **参数解释**： 值。 **取值范围**： 不涉及。
         :type values: list[str]
         """
         
@@ -50,7 +50,7 @@ class ProjectTag:
     def key(self):
         r"""Gets the key of this ProjectTag.
 
-        键。
+        **参数解释**： 键。 **取值范围**： 不涉及。
 
         :return: The key of this ProjectTag.
         :rtype: str
@@ -61,7 +61,7 @@ class ProjectTag:
     def key(self, key):
         r"""Sets the key of this ProjectTag.
 
-        键。
+        **参数解释**： 键。 **取值范围**： 不涉及。
 
         :param key: The key of this ProjectTag.
         :type key: str
@@ -72,7 +72,7 @@ class ProjectTag:
     def values(self):
         r"""Gets the values of this ProjectTag.
 
-        值。
+        **参数解释**： 值。 **取值范围**： 不涉及。
 
         :return: The values of this ProjectTag.
         :rtype: list[str]
@@ -83,7 +83,7 @@ class ProjectTag:
     def values(self, values):
         r"""Sets the values of this ProjectTag.
 
-        值。
+        **参数解释**： 值。 **取值范围**： 不涉及。
 
         :param values: The values of this ProjectTag.
         :type values: list[str]

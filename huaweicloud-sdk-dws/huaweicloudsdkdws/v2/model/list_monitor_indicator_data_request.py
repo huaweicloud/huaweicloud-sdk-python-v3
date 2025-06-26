@@ -41,19 +41,19 @@ class ListMonitorIndicatorDataRequest:
 
         The model defined in huaweicloud sdk
 
-        :param _from: 开始时间。
+        :param _from: **参数解释**： 开始时间。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type _from: str
-        :param to: 结束时间。
+        :param to: **参数解释**： 结束时间。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type to: str
-        :param function: 取值方法。
+        :param function: **参数解释**： 取值方法。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type function: str
-        :param period: 取值周期。
+        :param period: **参数解释**： 取值周期。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type period: str
-        :param indicator_name: 指标名称。
+        :param indicator_name: **参数解释**： 指标名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type indicator_name: str
-        :param dim0: 第一层级。
+        :param dim0: **参数解释**： 第一层级。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type dim0: str
-        :param dim1: 第二层级。
+        :param dim1: **参数解释**： 第二层级。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type dim1: str
         """
         
@@ -83,7 +83,7 @@ class ListMonitorIndicatorDataRequest:
     def _from(self):
         r"""Gets the _from of this ListMonitorIndicatorDataRequest.
 
-        开始时间。
+        **参数解释**： 开始时间。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The _from of this ListMonitorIndicatorDataRequest.
         :rtype: str
@@ -94,7 +94,7 @@ class ListMonitorIndicatorDataRequest:
     def _from(self, _from):
         r"""Sets the _from of this ListMonitorIndicatorDataRequest.
 
-        开始时间。
+        **参数解释**： 开始时间。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param _from: The _from of this ListMonitorIndicatorDataRequest.
         :type _from: str
@@ -105,7 +105,7 @@ class ListMonitorIndicatorDataRequest:
     def to(self):
         r"""Gets the to of this ListMonitorIndicatorDataRequest.
 
-        结束时间。
+        **参数解释**： 结束时间。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The to of this ListMonitorIndicatorDataRequest.
         :rtype: str
@@ -116,7 +116,7 @@ class ListMonitorIndicatorDataRequest:
     def to(self, to):
         r"""Sets the to of this ListMonitorIndicatorDataRequest.
 
-        结束时间。
+        **参数解释**： 结束时间。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param to: The to of this ListMonitorIndicatorDataRequest.
         :type to: str
@@ -127,7 +127,7 @@ class ListMonitorIndicatorDataRequest:
     def function(self):
         r"""Gets the function of this ListMonitorIndicatorDataRequest.
 
-        取值方法。
+        **参数解释**： 取值方法。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The function of this ListMonitorIndicatorDataRequest.
         :rtype: str
@@ -138,7 +138,7 @@ class ListMonitorIndicatorDataRequest:
     def function(self, function):
         r"""Sets the function of this ListMonitorIndicatorDataRequest.
 
-        取值方法。
+        **参数解释**： 取值方法。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param function: The function of this ListMonitorIndicatorDataRequest.
         :type function: str
@@ -149,7 +149,7 @@ class ListMonitorIndicatorDataRequest:
     def period(self):
         r"""Gets the period of this ListMonitorIndicatorDataRequest.
 
-        取值周期。
+        **参数解释**： 取值周期。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The period of this ListMonitorIndicatorDataRequest.
         :rtype: str
@@ -160,7 +160,7 @@ class ListMonitorIndicatorDataRequest:
     def period(self, period):
         r"""Sets the period of this ListMonitorIndicatorDataRequest.
 
-        取值周期。
+        **参数解释**： 取值周期。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param period: The period of this ListMonitorIndicatorDataRequest.
         :type period: str
@@ -171,7 +171,7 @@ class ListMonitorIndicatorDataRequest:
     def indicator_name(self):
         r"""Gets the indicator_name of this ListMonitorIndicatorDataRequest.
 
-        指标名称。
+        **参数解释**： 指标名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The indicator_name of this ListMonitorIndicatorDataRequest.
         :rtype: str
@@ -182,7 +182,7 @@ class ListMonitorIndicatorDataRequest:
     def indicator_name(self, indicator_name):
         r"""Sets the indicator_name of this ListMonitorIndicatorDataRequest.
 
-        指标名称。
+        **参数解释**： 指标名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param indicator_name: The indicator_name of this ListMonitorIndicatorDataRequest.
         :type indicator_name: str
@@ -193,7 +193,7 @@ class ListMonitorIndicatorDataRequest:
     def dim0(self):
         r"""Gets the dim0 of this ListMonitorIndicatorDataRequest.
 
-        第一层级。
+        **参数解释**： 第一层级。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The dim0 of this ListMonitorIndicatorDataRequest.
         :rtype: str
@@ -204,7 +204,7 @@ class ListMonitorIndicatorDataRequest:
     def dim0(self, dim0):
         r"""Sets the dim0 of this ListMonitorIndicatorDataRequest.
 
-        第一层级。
+        **参数解释**： 第一层级。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param dim0: The dim0 of this ListMonitorIndicatorDataRequest.
         :type dim0: str
@@ -215,7 +215,7 @@ class ListMonitorIndicatorDataRequest:
     def dim1(self):
         r"""Gets the dim1 of this ListMonitorIndicatorDataRequest.
 
-        第二层级。
+        **参数解释**： 第二层级。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The dim1 of this ListMonitorIndicatorDataRequest.
         :rtype: str
@@ -226,7 +226,7 @@ class ListMonitorIndicatorDataRequest:
     def dim1(self, dim1):
         r"""Sets the dim1 of this ListMonitorIndicatorDataRequest.
 
-        第二层级。
+        **参数解释**： 第二层级。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param dim1: The dim1 of this ListMonitorIndicatorDataRequest.
         :type dim1: str

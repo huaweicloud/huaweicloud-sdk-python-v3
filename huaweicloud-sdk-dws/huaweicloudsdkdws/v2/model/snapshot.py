@@ -33,11 +33,11 @@ class Snapshot:
 
         The model defined in huaweicloud sdk
 
-        :param name: 快照名称，要求唯一性且必须以字母开头，不区分大小写，可以包含字母、数字、中划线或者下划线，不能包含其他的特殊字符，长度为4～64个字符。
+        :param name: **参数解释**： 快照名称。要求唯一性且必须以字母开头，不区分大小写，可以包含字母、数字、中划线或者下划线，不能包含其他的特殊字符，长度为4～64个字符。 **取值范围**： 不涉及。
         :type name: str
-        :param cluster_id: 指定创建快照的集群ID
+        :param cluster_id: **参数解释**： 指定创建快照的集群ID。 **取值范围**： 不涉及。
         :type cluster_id: str
-        :param description: 快照描述，若不指定，描述为空。快照描述的字符长度不能超过256个字符，且不支持特殊字符!&lt;&gt;&#39;&#x3D;&amp;\&quot;。
+        :param description: **参数解释**： 快照描述，若不指定，描述为空。快照描述的字符长度不能超过256个字符，且不支持特殊字符!&lt;&gt;&#39;&#x3D;&amp;\&quot;。 **取值范围**： 不涉及。
         :type description: str
         """
         
@@ -57,7 +57,7 @@ class Snapshot:
     def name(self):
         r"""Gets the name of this Snapshot.
 
-        快照名称，要求唯一性且必须以字母开头，不区分大小写，可以包含字母、数字、中划线或者下划线，不能包含其他的特殊字符，长度为4～64个字符。
+        **参数解释**： 快照名称。要求唯一性且必须以字母开头，不区分大小写，可以包含字母、数字、中划线或者下划线，不能包含其他的特殊字符，长度为4～64个字符。 **取值范围**： 不涉及。
 
         :return: The name of this Snapshot.
         :rtype: str
@@ -68,7 +68,7 @@ class Snapshot:
     def name(self, name):
         r"""Sets the name of this Snapshot.
 
-        快照名称，要求唯一性且必须以字母开头，不区分大小写，可以包含字母、数字、中划线或者下划线，不能包含其他的特殊字符，长度为4～64个字符。
+        **参数解释**： 快照名称。要求唯一性且必须以字母开头，不区分大小写，可以包含字母、数字、中划线或者下划线，不能包含其他的特殊字符，长度为4～64个字符。 **取值范围**： 不涉及。
 
         :param name: The name of this Snapshot.
         :type name: str
@@ -79,7 +79,7 @@ class Snapshot:
     def cluster_id(self):
         r"""Gets the cluster_id of this Snapshot.
 
-        指定创建快照的集群ID
+        **参数解释**： 指定创建快照的集群ID。 **取值范围**： 不涉及。
 
         :return: The cluster_id of this Snapshot.
         :rtype: str
@@ -90,7 +90,7 @@ class Snapshot:
     def cluster_id(self, cluster_id):
         r"""Sets the cluster_id of this Snapshot.
 
-        指定创建快照的集群ID
+        **参数解释**： 指定创建快照的集群ID。 **取值范围**： 不涉及。
 
         :param cluster_id: The cluster_id of this Snapshot.
         :type cluster_id: str
@@ -101,7 +101,7 @@ class Snapshot:
     def description(self):
         r"""Gets the description of this Snapshot.
 
-        快照描述，若不指定，描述为空。快照描述的字符长度不能超过256个字符，且不支持特殊字符!<>'=&\"。
+        **参数解释**： 快照描述，若不指定，描述为空。快照描述的字符长度不能超过256个字符，且不支持特殊字符!<>'=&\"。 **取值范围**： 不涉及。
 
         :return: The description of this Snapshot.
         :rtype: str
@@ -112,7 +112,7 @@ class Snapshot:
     def description(self, description):
         r"""Sets the description of this Snapshot.
 
-        快照描述，若不指定，描述为空。快照描述的字符长度不能超过256个字符，且不支持特殊字符!<>'=&\"。
+        **参数解释**： 快照描述，若不指定，描述为空。快照描述的字符长度不能超过256个字符，且不支持特殊字符!<>'=&\"。 **取值范围**： 不涉及。
 
         :param description: The description of this Snapshot.
         :type description: str

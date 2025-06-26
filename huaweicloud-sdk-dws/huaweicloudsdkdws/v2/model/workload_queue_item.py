@@ -41,9 +41,9 @@ class WorkloadQueueItem:
         :type queue_name: str
         :param logical_cluster_name: **参数解释**： 逻辑集群名称。 **取值范围**： 不涉及。
         :type logical_cluster_name: str
-        :param short_query_optimize: **参数解释**： 工作负载队列短查询加速开关。 **取值范围**： 不涉及。
+        :param short_query_optimize: **参数解释**： 资源池短查询加速开关。 **取值范围**： 不涉及。
         :type short_query_optimize: str
-        :param short_query_concurrency_num: **参数解释**： 工作负载队列短查询并发数。 **取值范围**： 不涉及。
+        :param short_query_concurrency_num: **参数解释**： 资源池短查询并发数。 **取值范围**： 不涉及。
         :type short_query_concurrency_num: int
         :param resource_item_list: **参数解释**： 资源配置队列。 **取值范围**： 不涉及。
         :type resource_item_list: list[:class:`huaweicloudsdkdws.v2.WorkloadResourceItem`]
@@ -115,7 +115,7 @@ class WorkloadQueueItem:
     def short_query_optimize(self):
         r"""Gets the short_query_optimize of this WorkloadQueueItem.
 
-        **参数解释**： 工作负载队列短查询加速开关。 **取值范围**： 不涉及。
+        **参数解释**： 资源池短查询加速开关。 **取值范围**： 不涉及。
 
         :return: The short_query_optimize of this WorkloadQueueItem.
         :rtype: str
@@ -126,7 +126,7 @@ class WorkloadQueueItem:
     def short_query_optimize(self, short_query_optimize):
         r"""Sets the short_query_optimize of this WorkloadQueueItem.
 
-        **参数解释**： 工作负载队列短查询加速开关。 **取值范围**： 不涉及。
+        **参数解释**： 资源池短查询加速开关。 **取值范围**： 不涉及。
 
         :param short_query_optimize: The short_query_optimize of this WorkloadQueueItem.
         :type short_query_optimize: str
@@ -137,7 +137,7 @@ class WorkloadQueueItem:
     def short_query_concurrency_num(self):
         r"""Gets the short_query_concurrency_num of this WorkloadQueueItem.
 
-        **参数解释**： 工作负载队列短查询并发数。 **取值范围**： 不涉及。
+        **参数解释**： 资源池短查询并发数。 **取值范围**： 不涉及。
 
         :return: The short_query_concurrency_num of this WorkloadQueueItem.
         :rtype: int
@@ -148,7 +148,7 @@ class WorkloadQueueItem:
     def short_query_concurrency_num(self, short_query_concurrency_num):
         r"""Sets the short_query_concurrency_num of this WorkloadQueueItem.
 
-        **参数解释**： 工作负载队列短查询并发数。 **取值范围**： 不涉及。
+        **参数解释**： 资源池短查询并发数。 **取值范围**： 不涉及。
 
         :param short_query_concurrency_num: The short_query_concurrency_num of this WorkloadQueueItem.
         :type short_query_concurrency_num: int

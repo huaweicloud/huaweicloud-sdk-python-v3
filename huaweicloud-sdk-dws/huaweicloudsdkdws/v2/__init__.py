@@ -8,6 +8,7 @@ from huaweicloudsdkdws.v2.dws_async_client import DwsAsyncClient
 from huaweicloudsdkdws.v2.model.action_info import ActionInfo
 from huaweicloudsdkdws.v2.model.action_item_vo import ActionItemVo
 from huaweicloudsdkdws.v2.model.action_sub_item_vo import ActionSubItemVo
+from huaweicloudsdkdws.v2.model.add_except_rule_req import AddExceptRuleReq
 from huaweicloudsdkdws.v2.model.add_queue_user_list_request import AddQueueUserListRequest
 from huaweicloudsdkdws.v2.model.add_queue_user_list_response import AddQueueUserListResponse
 from huaweicloudsdkdws.v2.model.add_snapshot_cross_region_policy_request import AddSnapshotCrossRegionPolicyRequest
@@ -139,6 +140,7 @@ from huaweicloudsdkdws.v2.model.create_snapshot_response import CreateSnapshotRe
 from huaweicloudsdkdws.v2.model.create_workload_plan_request import CreateWorkloadPlanRequest
 from huaweicloudsdkdws.v2.model.create_workload_plan_response import CreateWorkloadPlanResponse
 from huaweicloudsdkdws.v2.model.cross_region_snapshot_config import CrossRegionSnapshotConfig
+from huaweicloudsdkdws.v2.model.database_object_info import DatabaseObjectInfo
 from huaweicloudsdkdws.v2.model.database_om_user_action_req import DatabaseOmUserActionReq
 from huaweicloudsdkdws.v2.model.database_om_user_info import DatabaseOmUserInfo
 from huaweicloudsdkdws.v2.model.database_permission_req import DatabasePermissionReq
@@ -183,6 +185,8 @@ from huaweicloudsdkdws.v2.model.delete_workload_plan_stage_request import Delete
 from huaweicloudsdkdws.v2.model.delete_workload_plan_stage_response import DeleteWorkloadPlanStageResponse
 from huaweicloudsdkdws.v2.model.delete_workload_queue_request import DeleteWorkloadQueueRequest
 from huaweicloudsdkdws.v2.model.delete_workload_queue_response import DeleteWorkloadQueueResponse
+from huaweicloudsdkdws.v2.model.delete_workload_rule_request import DeleteWorkloadRuleRequest
+from huaweicloudsdkdws.v2.model.delete_workload_rule_response import DeleteWorkloadRuleResponse
 from huaweicloudsdkdws.v2.model.detail import Detail
 from huaweicloudsdkdws.v2.model.disable_logical_cluster_plan_request import DisableLogicalClusterPlanRequest
 from huaweicloudsdkdws.v2.model.disable_logical_cluster_plan_response import DisableLogicalClusterPlanResponse
@@ -219,6 +223,7 @@ from huaweicloudsdkdws.v2.model.event_spec_response import EventSpecResponse
 from huaweicloudsdkdws.v2.model.event_sub_request import EventSubRequest
 from huaweicloudsdkdws.v2.model.event_sub_update_request import EventSubUpdateRequest
 from huaweicloudsdkdws.v2.model.event_subscription_response import EventSubscriptionResponse
+from huaweicloudsdkdws.v2.model.except_rule import ExceptRule
 from huaweicloudsdkdws.v2.model.except_rule_bo import ExceptRuleBo
 from huaweicloudsdkdws.v2.model.execute_cluster_upgrade_action_request import ExecuteClusterUpgradeActionRequest
 from huaweicloudsdkdws.v2.model.execute_cluster_upgrade_action_request_body import ExecuteClusterUpgradeActionRequestBody
@@ -293,6 +298,8 @@ from huaweicloudsdkdws.v2.model.list_configurations_audit_records_request import
 from huaweicloudsdkdws.v2.model.list_configurations_audit_records_response import ListConfigurationsAuditRecordsResponse
 from huaweicloudsdkdws.v2.model.list_data_source_request import ListDataSourceRequest
 from huaweicloudsdkdws.v2.model.list_data_source_response import ListDataSourceResponse
+from huaweicloudsdkdws.v2.model.list_database_objects_request import ListDatabaseObjectsRequest
+from huaweicloudsdkdws.v2.model.list_database_objects_response import ListDatabaseObjectsResponse
 from huaweicloudsdkdws.v2.model.list_database_user_authorities_request import ListDatabaseUserAuthoritiesRequest
 from huaweicloudsdkdws.v2.model.list_database_user_authorities_response import ListDatabaseUserAuthoritiesResponse
 from huaweicloudsdkdws.v2.model.list_database_users_request import ListDatabaseUsersRequest
@@ -360,6 +367,8 @@ from huaweicloudsdkdws.v2.model.list_snapshot_cross_region_request import ListSn
 from huaweicloudsdkdws.v2.model.list_snapshot_cross_region_response import ListSnapshotCrossRegionResponse
 from huaweicloudsdkdws.v2.model.list_snapshot_details_request import ListSnapshotDetailsRequest
 from huaweicloudsdkdws.v2.model.list_snapshot_details_response import ListSnapshotDetailsResponse
+from huaweicloudsdkdws.v2.model.list_snapshot_flavor_info_request import ListSnapshotFlavorInfoRequest
+from huaweicloudsdkdws.v2.model.list_snapshot_flavor_info_response import ListSnapshotFlavorInfoResponse
 from huaweicloudsdkdws.v2.model.list_snapshot_policy_request import ListSnapshotPolicyRequest
 from huaweicloudsdkdws.v2.model.list_snapshot_policy_response import ListSnapshotPolicyResponse
 from huaweicloudsdkdws.v2.model.list_snapshot_statistics_request import ListSnapshotStatisticsRequest
@@ -426,6 +435,10 @@ from huaweicloudsdkdws.v2.model.pause_disaster_recovery_response import PauseDis
 from huaweicloudsdkdws.v2.model.plan_log import PlanLog
 from huaweicloudsdkdws.v2.model.plan_stage import PlanStage
 from huaweicloudsdkdws.v2.model.private_endpoint_response import PrivateEndpointResponse
+from huaweicloudsdkdws.v2.model.product_extend_resp import ProductExtendResp
+from huaweicloudsdkdws.v2.model.product_unit_resp import ProductUnitResp
+from huaweicloudsdkdws.v2.model.product_version_resp import ProductVersionResp
+from huaweicloudsdkdws.v2.model.product_volume_used_resp import ProductVolumeUsedResp
 from huaweicloudsdkdws.v2.model.project_tag import ProjectTag
 from huaweicloudsdkdws.v2.model.public_endpoint_response import PublicEndpointResponse
 from huaweicloudsdkdws.v2.model.public_endpoints import PublicEndpoints
@@ -603,6 +616,8 @@ from huaweicloudsdkdws.v2.model.update_schemas_request import UpdateSchemasReque
 from huaweicloudsdkdws.v2.model.update_schemas_response import UpdateSchemasResponse
 from huaweicloudsdkdws.v2.model.update_workload_plan_stage_request import UpdateWorkloadPlanStageRequest
 from huaweicloudsdkdws.v2.model.update_workload_plan_stage_response import UpdateWorkloadPlanStageResponse
+from huaweicloudsdkdws.v2.model.update_workload_rule_request import UpdateWorkloadRuleRequest
+from huaweicloudsdkdws.v2.model.update_workload_rule_response import UpdateWorkloadRuleResponse
 from huaweicloudsdkdws.v2.model.user_authority_req import UserAuthorityReq
 from huaweicloudsdkdws.v2.model.v2_create_cluster import V2CreateCluster
 from huaweicloudsdkdws.v2.model.v2_create_cluster_req import V2CreateClusterReq

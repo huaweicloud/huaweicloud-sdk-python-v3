@@ -46,6 +46,7 @@ class ResponseVpnGateway:
         'eip1': 'ResponseEip',
         'eip2': 'ResponseEip',
         'created_at': 'datetime',
+        'applied_at': 'datetime',
         'updated_at': 'datetime',
         'policy_template': 'PolicyTemplate',
         'supported_flavors': 'list[str]',
@@ -83,6 +84,7 @@ class ResponseVpnGateway:
         'eip1': 'eip1',
         'eip2': 'eip2',
         'created_at': 'created_at',
+        'applied_at': 'applied_at',
         'updated_at': 'updated_at',
         'policy_template': 'policy_template',
         'supported_flavors': 'supported_flavors',
@@ -90,7 +92,7 @@ class ResponseVpnGateway:
         'tags': 'tags'
     }
 
-    def __init__(self, id=None, name=None, status=None, attachment_type=None, ip_version=None, certificate_id=None, er_id=None, er_attachment_id=None, vpc_id=None, local_subnets=None, local_subnets_v6=None, connect_subnet=None, network_type=None, access_vpc_id=None, access_subnet_id=None, access_private_ip_1=None, access_private_ip_2=None, bgp_asn=None, flavor=None, availability_zone_ids=None, public_border_group=None, connection_number=None, used_connection_number=None, used_connection_group=None, enterprise_project_id=None, ha_mode=None, eip1=None, eip2=None, created_at=None, updated_at=None, policy_template=None, supported_flavors=None, supported_features=None, tags=None):
+    def __init__(self, id=None, name=None, status=None, attachment_type=None, ip_version=None, certificate_id=None, er_id=None, er_attachment_id=None, vpc_id=None, local_subnets=None, local_subnets_v6=None, connect_subnet=None, network_type=None, access_vpc_id=None, access_subnet_id=None, access_private_ip_1=None, access_private_ip_2=None, bgp_asn=None, flavor=None, availability_zone_ids=None, public_border_group=None, connection_number=None, used_connection_number=None, used_connection_group=None, enterprise_project_id=None, ha_mode=None, eip1=None, eip2=None, created_at=None, applied_at=None, updated_at=None, policy_template=None, supported_flavors=None, supported_features=None, tags=None):
         r"""ResponseVpnGateway
 
         The model defined in huaweicloud sdk
@@ -153,6 +155,8 @@ class ResponseVpnGateway:
         :type eip2: :class:`huaweicloudsdkvpn.v5.ResponseEip`
         :param created_at: 创建时间
         :type created_at: datetime
+        :param applied_at: 生效时间
+        :type applied_at: datetime
         :param updated_at: 更新时间
         :type updated_at: datetime
         :param policy_template: 
@@ -196,6 +200,7 @@ class ResponseVpnGateway:
         self._eip1 = None
         self._eip2 = None
         self._created_at = None
+        self._applied_at = None
         self._updated_at = None
         self._policy_template = None
         self._supported_flavors = None
@@ -261,6 +266,8 @@ class ResponseVpnGateway:
             self.eip2 = eip2
         if created_at is not None:
             self.created_at = created_at
+        if applied_at is not None:
+            self.applied_at = applied_at
         if updated_at is not None:
             self.updated_at = updated_at
         if policy_template is not None:
@@ -897,6 +904,28 @@ class ResponseVpnGateway:
         :type created_at: datetime
         """
         self._created_at = created_at
+
+    @property
+    def applied_at(self):
+        r"""Gets the applied_at of this ResponseVpnGateway.
+
+        生效时间
+
+        :return: The applied_at of this ResponseVpnGateway.
+        :rtype: datetime
+        """
+        return self._applied_at
+
+    @applied_at.setter
+    def applied_at(self, applied_at):
+        r"""Sets the applied_at of this ResponseVpnGateway.
+
+        生效时间
+
+        :param applied_at: The applied_at of this ResponseVpnGateway.
+        :type applied_at: datetime
+        """
+        self._applied_at = applied_at
 
     @property
     def updated_at(self):

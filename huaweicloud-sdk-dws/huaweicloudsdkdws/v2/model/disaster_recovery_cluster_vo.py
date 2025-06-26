@@ -33,7 +33,7 @@ class DisasterRecoveryClusterVo:
 
         :param id: **参数解释**： 集群ID。 **取值范围**： 36位UUID。
         :type id: str
-        :param name: 集群名称
+        :param name: **参数解释**： 集群名称。 **取值范围**： 不涉及。
         :type name: str
         """
         
@@ -74,7 +74,7 @@ class DisasterRecoveryClusterVo:
     def name(self):
         r"""Gets the name of this DisasterRecoveryClusterVo.
 
-        集群名称
+        **参数解释**： 集群名称。 **取值范围**： 不涉及。
 
         :return: The name of this DisasterRecoveryClusterVo.
         :rtype: str
@@ -85,7 +85,7 @@ class DisasterRecoveryClusterVo:
     def name(self, name):
         r"""Sets the name of this DisasterRecoveryClusterVo.
 
-        集群名称
+        **参数解释**： 集群名称。 **取值范围**： 不涉及。
 
         :param name: The name of this DisasterRecoveryClusterVo.
         :type name: str

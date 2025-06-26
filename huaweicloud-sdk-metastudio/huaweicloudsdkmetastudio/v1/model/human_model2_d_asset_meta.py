@@ -51,7 +51,7 @@ class HumanModel2DAssetMeta:
         :type is_real_background: bool
         :param support_live: **参数解释**： 是否支持直播 **约束限制**： 不涉及 **取值范围**： * true: 支持直播 * false: 不支持直播。
         :type support_live: bool
-        :param model_version: **参数解释**： 分身数字人模型版本 **约束限制**： 不涉及 **取值范围**： * V2: V2版本模型 * V3：V3版本模型 * V3_2：V3.2版本模型
+        :param model_version: **参数解释**： 分身数字人模型版本 **约束限制**： 不涉及 **取值范围**： * V2: V2版本模型 * V3：V3版本模型 * V3_2：V3.2版本模型 * V3_3：V3.3版本模型
         :type model_version: str
         :param model_resolution: **参数解释**： 分身数字人模型分辨率。 **约束限制**： 不涉及 **取值范围**： * 1080P：1080P。支持1080P及720P的视频输出。 * 4K：4K。支持4K、1080P及720P的视频输出。
         :type model_resolution: str
@@ -167,7 +167,7 @@ class HumanModel2DAssetMeta:
     def model_version(self):
         r"""Gets the model_version of this HumanModel2DAssetMeta.
 
-        **参数解释**： 分身数字人模型版本 **约束限制**： 不涉及 **取值范围**： * V2: V2版本模型 * V3：V3版本模型 * V3_2：V3.2版本模型
+        **参数解释**： 分身数字人模型版本 **约束限制**： 不涉及 **取值范围**： * V2: V2版本模型 * V3：V3版本模型 * V3_2：V3.2版本模型 * V3_3：V3.3版本模型
 
         :return: The model_version of this HumanModel2DAssetMeta.
         :rtype: str
@@ -178,7 +178,7 @@ class HumanModel2DAssetMeta:
     def model_version(self, model_version):
         r"""Sets the model_version of this HumanModel2DAssetMeta.
 
-        **参数解释**： 分身数字人模型版本 **约束限制**： 不涉及 **取值范围**： * V2: V2版本模型 * V3：V3版本模型 * V3_2：V3.2版本模型
+        **参数解释**： 分身数字人模型版本 **约束限制**： 不涉及 **取值范围**： * V2: V2版本模型 * V3：V3版本模型 * V3_2：V3.2版本模型 * V3_3：V3.3版本模型
 
         :param model_version: The model_version of this HumanModel2DAssetMeta.
         :type model_version: str

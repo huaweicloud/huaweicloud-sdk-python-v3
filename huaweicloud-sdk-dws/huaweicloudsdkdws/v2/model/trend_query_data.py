@@ -31,9 +31,9 @@ class TrendQueryData:
 
         The model defined in huaweicloud sdk
 
-        :param result: 查询结果。
+        :param result: **参数解释**： 查询结果。 **取值范围**： 不涉及。
         :type result: str
-        :param timestamp: 时间戳。
+        :param timestamp: **参数解释**： 时间戳。 **取值范围**： 不涉及。
         :type timestamp: int
         """
         
@@ -52,7 +52,7 @@ class TrendQueryData:
     def result(self):
         r"""Gets the result of this TrendQueryData.
 
-        查询结果。
+        **参数解释**： 查询结果。 **取值范围**： 不涉及。
 
         :return: The result of this TrendQueryData.
         :rtype: str
@@ -63,7 +63,7 @@ class TrendQueryData:
     def result(self, result):
         r"""Sets the result of this TrendQueryData.
 
-        查询结果。
+        **参数解释**： 查询结果。 **取值范围**： 不涉及。
 
         :param result: The result of this TrendQueryData.
         :type result: str
@@ -74,7 +74,7 @@ class TrendQueryData:
     def timestamp(self):
         r"""Gets the timestamp of this TrendQueryData.
 
-        时间戳。
+        **参数解释**： 时间戳。 **取值范围**： 不涉及。
 
         :return: The timestamp of this TrendQueryData.
         :rtype: int
@@ -85,7 +85,7 @@ class TrendQueryData:
     def timestamp(self, timestamp):
         r"""Sets the timestamp of this TrendQueryData.
 
-        时间戳。
+        **参数解释**： 时间戳。 **取值范围**： 不涉及。
 
         :param timestamp: The timestamp of this TrendQueryData.
         :type timestamp: int

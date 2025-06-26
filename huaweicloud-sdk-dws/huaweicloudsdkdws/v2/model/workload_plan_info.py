@@ -43,21 +43,21 @@ class WorkloadPlanInfo:
 
         The model defined in huaweicloud sdk
 
-        :param status: 计划状态。
+        :param status: **参数解释**： 计划状态。 **取值范围**： 不涉及。
         :type status: int
-        :param project_id: **参数解释**： 项目ID。获取方式方法请参见[获取项目ID](dws_02_0011.xml)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :param project_id: **参数解释**： 项目ID。 **取值范围**： 不涉及。
         :type project_id: str
-        :param cluster_id: **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
+        :param cluster_id: **参数解释**： 集群ID。 **取值范围**： 36位UUID。
         :type cluster_id: str
-        :param plan_id: 计划ID。
+        :param plan_id: **参数解释**： 计划ID。 **取值范围**： 不涉及。
         :type plan_id: str
-        :param plan_name: 计划名称。
+        :param plan_name: **参数解释**： 计划名称。 **取值范围**： 不涉及。
         :type plan_name: str
-        :param current_stage: 当前计划阶段。
+        :param current_stage: **参数解释**： 当前计划阶段。 **取值范围**： 不涉及。
         :type current_stage: str
-        :param logical_cluster_name: 逻辑集群名称。
+        :param logical_cluster_name: **参数解释**： 逻辑集群名称。 **取值范围**： 不涉及。
         :type logical_cluster_name: str
-        :param stage_list: 计划阶段列表。
+        :param stage_list: **参数解释**： 计划阶段列表。 **取值范围**： 不涉及。
         :type stage_list: list[:class:`huaweicloudsdkdws.v2.PlanStage`]
         """
         
@@ -90,7 +90,7 @@ class WorkloadPlanInfo:
     def status(self):
         r"""Gets the status of this WorkloadPlanInfo.
 
-        计划状态。
+        **参数解释**： 计划状态。 **取值范围**： 不涉及。
 
         :return: The status of this WorkloadPlanInfo.
         :rtype: int
@@ -101,7 +101,7 @@ class WorkloadPlanInfo:
     def status(self, status):
         r"""Sets the status of this WorkloadPlanInfo.
 
-        计划状态。
+        **参数解释**： 计划状态。 **取值范围**： 不涉及。
 
         :param status: The status of this WorkloadPlanInfo.
         :type status: int
@@ -112,7 +112,7 @@ class WorkloadPlanInfo:
     def project_id(self):
         r"""Gets the project_id of this WorkloadPlanInfo.
 
-        **参数解释**： 项目ID。获取方式方法请参见[获取项目ID](dws_02_0011.xml)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 项目ID。 **取值范围**： 不涉及。
 
         :return: The project_id of this WorkloadPlanInfo.
         :rtype: str
@@ -123,7 +123,7 @@ class WorkloadPlanInfo:
     def project_id(self, project_id):
         r"""Sets the project_id of this WorkloadPlanInfo.
 
-        **参数解释**： 项目ID。获取方式方法请参见[获取项目ID](dws_02_0011.xml)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 项目ID。 **取值范围**： 不涉及。
 
         :param project_id: The project_id of this WorkloadPlanInfo.
         :type project_id: str
@@ -134,7 +134,7 @@ class WorkloadPlanInfo:
     def cluster_id(self):
         r"""Gets the cluster_id of this WorkloadPlanInfo.
 
-        **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
+        **参数解释**： 集群ID。 **取值范围**： 36位UUID。
 
         :return: The cluster_id of this WorkloadPlanInfo.
         :rtype: str
@@ -145,7 +145,7 @@ class WorkloadPlanInfo:
     def cluster_id(self, cluster_id):
         r"""Sets the cluster_id of this WorkloadPlanInfo.
 
-        **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
+        **参数解释**： 集群ID。 **取值范围**： 36位UUID。
 
         :param cluster_id: The cluster_id of this WorkloadPlanInfo.
         :type cluster_id: str
@@ -156,7 +156,7 @@ class WorkloadPlanInfo:
     def plan_id(self):
         r"""Gets the plan_id of this WorkloadPlanInfo.
 
-        计划ID。
+        **参数解释**： 计划ID。 **取值范围**： 不涉及。
 
         :return: The plan_id of this WorkloadPlanInfo.
         :rtype: str
@@ -167,7 +167,7 @@ class WorkloadPlanInfo:
     def plan_id(self, plan_id):
         r"""Sets the plan_id of this WorkloadPlanInfo.
 
-        计划ID。
+        **参数解释**： 计划ID。 **取值范围**： 不涉及。
 
         :param plan_id: The plan_id of this WorkloadPlanInfo.
         :type plan_id: str
@@ -178,7 +178,7 @@ class WorkloadPlanInfo:
     def plan_name(self):
         r"""Gets the plan_name of this WorkloadPlanInfo.
 
-        计划名称。
+        **参数解释**： 计划名称。 **取值范围**： 不涉及。
 
         :return: The plan_name of this WorkloadPlanInfo.
         :rtype: str
@@ -189,7 +189,7 @@ class WorkloadPlanInfo:
     def plan_name(self, plan_name):
         r"""Sets the plan_name of this WorkloadPlanInfo.
 
-        计划名称。
+        **参数解释**： 计划名称。 **取值范围**： 不涉及。
 
         :param plan_name: The plan_name of this WorkloadPlanInfo.
         :type plan_name: str
@@ -200,7 +200,7 @@ class WorkloadPlanInfo:
     def current_stage(self):
         r"""Gets the current_stage of this WorkloadPlanInfo.
 
-        当前计划阶段。
+        **参数解释**： 当前计划阶段。 **取值范围**： 不涉及。
 
         :return: The current_stage of this WorkloadPlanInfo.
         :rtype: str
@@ -211,7 +211,7 @@ class WorkloadPlanInfo:
     def current_stage(self, current_stage):
         r"""Sets the current_stage of this WorkloadPlanInfo.
 
-        当前计划阶段。
+        **参数解释**： 当前计划阶段。 **取值范围**： 不涉及。
 
         :param current_stage: The current_stage of this WorkloadPlanInfo.
         :type current_stage: str
@@ -222,7 +222,7 @@ class WorkloadPlanInfo:
     def logical_cluster_name(self):
         r"""Gets the logical_cluster_name of this WorkloadPlanInfo.
 
-        逻辑集群名称。
+        **参数解释**： 逻辑集群名称。 **取值范围**： 不涉及。
 
         :return: The logical_cluster_name of this WorkloadPlanInfo.
         :rtype: str
@@ -233,7 +233,7 @@ class WorkloadPlanInfo:
     def logical_cluster_name(self, logical_cluster_name):
         r"""Sets the logical_cluster_name of this WorkloadPlanInfo.
 
-        逻辑集群名称。
+        **参数解释**： 逻辑集群名称。 **取值范围**： 不涉及。
 
         :param logical_cluster_name: The logical_cluster_name of this WorkloadPlanInfo.
         :type logical_cluster_name: str
@@ -244,7 +244,7 @@ class WorkloadPlanInfo:
     def stage_list(self):
         r"""Gets the stage_list of this WorkloadPlanInfo.
 
-        计划阶段列表。
+        **参数解释**： 计划阶段列表。 **取值范围**： 不涉及。
 
         :return: The stage_list of this WorkloadPlanInfo.
         :rtype: list[:class:`huaweicloudsdkdws.v2.PlanStage`]
@@ -255,7 +255,7 @@ class WorkloadPlanInfo:
     def stage_list(self, stage_list):
         r"""Sets the stage_list of this WorkloadPlanInfo.
 
-        计划阶段列表。
+        **参数解释**： 计划阶段列表。 **取值范围**： 不涉及。
 
         :param stage_list: The stage_list of this WorkloadPlanInfo.
         :type stage_list: list[:class:`huaweicloudsdkdws.v2.PlanStage`]

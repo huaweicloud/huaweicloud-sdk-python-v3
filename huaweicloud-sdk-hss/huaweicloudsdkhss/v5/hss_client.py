@@ -6901,7 +6901,7 @@ class HssClient(Client):
         return http_info
 
     def list_ransomware_protection_nodes(self, request):
-        r"""查询勒索防护服务器列表
+        r"""查询勒索防护服务器列表2.0
 
         查询勒索防护服务器列表，与云备份服务配合使用。因此使用勒索相关接口之前确保该局点有云备份服务
         

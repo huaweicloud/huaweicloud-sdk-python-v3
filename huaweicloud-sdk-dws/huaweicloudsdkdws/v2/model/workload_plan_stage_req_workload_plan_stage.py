@@ -39,17 +39,17 @@ class WorkloadPlanStageReqWorkloadPlanStage:
 
         The model defined in huaweicloud sdk
 
-        :param day: 日期
+        :param day: **参数解释**： 日期。 **取值范围**： 不涉及。
         :type day: str
-        :param month: 月份
+        :param month: **参数解释**： 月份。 **取值范围**： 不涉及。
         :type month: str
-        :param stage_name: 计划阶段
+        :param stage_name: **参数解释**： 计划阶段。 **取值范围**： 不涉及。
         :type stage_name: str
-        :param start_time: 开始时间
+        :param start_time: **参数解释**： 开始时间。 **取值范围**： 不涉及。
         :type start_time: str
-        :param end_time: 结束时间
+        :param end_time: **参数解释**： 结束时间。 **取值范围**： 不涉及。
         :type end_time: str
-        :param queue_list: 资源队列
+        :param queue_list: **参数解释**： 资源队列。 **取值范围**： 不涉及。
         :type queue_list: list[:class:`huaweicloudsdkdws.v2.QueueResourceItem`]
         """
         
@@ -80,7 +80,7 @@ class WorkloadPlanStageReqWorkloadPlanStage:
     def day(self):
         r"""Gets the day of this WorkloadPlanStageReqWorkloadPlanStage.
 
-        日期
+        **参数解释**： 日期。 **取值范围**： 不涉及。
 
         :return: The day of this WorkloadPlanStageReqWorkloadPlanStage.
         :rtype: str
@@ -91,7 +91,7 @@ class WorkloadPlanStageReqWorkloadPlanStage:
     def day(self, day):
         r"""Sets the day of this WorkloadPlanStageReqWorkloadPlanStage.
 
-        日期
+        **参数解释**： 日期。 **取值范围**： 不涉及。
 
         :param day: The day of this WorkloadPlanStageReqWorkloadPlanStage.
         :type day: str
@@ -102,7 +102,7 @@ class WorkloadPlanStageReqWorkloadPlanStage:
     def month(self):
         r"""Gets the month of this WorkloadPlanStageReqWorkloadPlanStage.
 
-        月份
+        **参数解释**： 月份。 **取值范围**： 不涉及。
 
         :return: The month of this WorkloadPlanStageReqWorkloadPlanStage.
         :rtype: str
@@ -113,7 +113,7 @@ class WorkloadPlanStageReqWorkloadPlanStage:
     def month(self, month):
         r"""Sets the month of this WorkloadPlanStageReqWorkloadPlanStage.
 
-        月份
+        **参数解释**： 月份。 **取值范围**： 不涉及。
 
         :param month: The month of this WorkloadPlanStageReqWorkloadPlanStage.
         :type month: str
@@ -124,7 +124,7 @@ class WorkloadPlanStageReqWorkloadPlanStage:
     def stage_name(self):
         r"""Gets the stage_name of this WorkloadPlanStageReqWorkloadPlanStage.
 
-        计划阶段
+        **参数解释**： 计划阶段。 **取值范围**： 不涉及。
 
         :return: The stage_name of this WorkloadPlanStageReqWorkloadPlanStage.
         :rtype: str
@@ -135,7 +135,7 @@ class WorkloadPlanStageReqWorkloadPlanStage:
     def stage_name(self, stage_name):
         r"""Sets the stage_name of this WorkloadPlanStageReqWorkloadPlanStage.
 
-        计划阶段
+        **参数解释**： 计划阶段。 **取值范围**： 不涉及。
 
         :param stage_name: The stage_name of this WorkloadPlanStageReqWorkloadPlanStage.
         :type stage_name: str
@@ -146,7 +146,7 @@ class WorkloadPlanStageReqWorkloadPlanStage:
     def start_time(self):
         r"""Gets the start_time of this WorkloadPlanStageReqWorkloadPlanStage.
 
-        开始时间
+        **参数解释**： 开始时间。 **取值范围**： 不涉及。
 
         :return: The start_time of this WorkloadPlanStageReqWorkloadPlanStage.
         :rtype: str
@@ -157,7 +157,7 @@ class WorkloadPlanStageReqWorkloadPlanStage:
     def start_time(self, start_time):
         r"""Sets the start_time of this WorkloadPlanStageReqWorkloadPlanStage.
 
-        开始时间
+        **参数解释**： 开始时间。 **取值范围**： 不涉及。
 
         :param start_time: The start_time of this WorkloadPlanStageReqWorkloadPlanStage.
         :type start_time: str
@@ -168,7 +168,7 @@ class WorkloadPlanStageReqWorkloadPlanStage:
     def end_time(self):
         r"""Gets the end_time of this WorkloadPlanStageReqWorkloadPlanStage.
 
-        结束时间
+        **参数解释**： 结束时间。 **取值范围**： 不涉及。
 
         :return: The end_time of this WorkloadPlanStageReqWorkloadPlanStage.
         :rtype: str
@@ -179,7 +179,7 @@ class WorkloadPlanStageReqWorkloadPlanStage:
     def end_time(self, end_time):
         r"""Sets the end_time of this WorkloadPlanStageReqWorkloadPlanStage.
 
-        结束时间
+        **参数解释**： 结束时间。 **取值范围**： 不涉及。
 
         :param end_time: The end_time of this WorkloadPlanStageReqWorkloadPlanStage.
         :type end_time: str
@@ -190,7 +190,7 @@ class WorkloadPlanStageReqWorkloadPlanStage:
     def queue_list(self):
         r"""Gets the queue_list of this WorkloadPlanStageReqWorkloadPlanStage.
 
-        资源队列
+        **参数解释**： 资源队列。 **取值范围**： 不涉及。
 
         :return: The queue_list of this WorkloadPlanStageReqWorkloadPlanStage.
         :rtype: list[:class:`huaweicloudsdkdws.v2.QueueResourceItem`]
@@ -201,7 +201,7 @@ class WorkloadPlanStageReqWorkloadPlanStage:
     def queue_list(self, queue_list):
         r"""Sets the queue_list of this WorkloadPlanStageReqWorkloadPlanStage.
 
-        资源队列
+        **参数解释**： 资源队列。 **取值范围**： 不涉及。
 
         :param queue_list: The queue_list of this WorkloadPlanStageReqWorkloadPlanStage.
         :type queue_list: list[:class:`huaweicloudsdkdws.v2.QueueResourceItem`]

@@ -57,35 +57,35 @@ class ExtDataSource:
 
         The model defined in huaweicloud sdk
 
-        :param id: id。
+        :param id: **参数解释**： 数据源ID。 **取值范围**： 不涉及。
         :type id: str
-        :param name: 数据源名称。
+        :param name: **参数解释**： 数据源名称。 **取值范围**： 不涉及。
         :type name: str
-        :param type: 类型。
+        :param type: **参数解释**： 类型。 **取值范围**： 不涉及。
         :type type: str
-        :param connect_info: 数据库。
+        :param connect_info: **参数解释**： 数据库。 **取值范围**： 不涉及。
         :type connect_info: str
-        :param user_name: 用户名。
+        :param user_name: **参数解释**： 用户名。 **取值范围**： 不涉及。
         :type user_name: str
-        :param version: 版本。
+        :param version: **参数解释**： 版本。 **取值范围**： 不涉及。
         :type version: str
-        :param configure_status: 配置状态。
+        :param configure_status: **参数解释**： 配置状态。 **取值范围**： 不涉及。
         :type configure_status: str
-        :param status: 状态。
+        :param status: **参数解释**： 状态。 **取值范围**： 不涉及。
         :type status: str
-        :param data_source_id: 数据源id。
+        :param data_source_id: **参数解释**： 外部数据源ID。 **取值范围**： 不涉及。
         :type data_source_id: str
-        :param created: 创建时间。
+        :param created: **参数解释**： 创建时间。 **取值范围**： 不涉及。
         :type created: str
-        :param updated: 更新时间。
+        :param updated: **参数解释**： 更新时间。 **取值范围**： 不涉及。
         :type updated: str
-        :param data_source_updated: 数据源更新时间。
+        :param data_source_updated: **参数解释**： 数据源更新时间。 **取值范围**： 不涉及。
         :type data_source_updated: str
-        :param extend_properties: 扩展信息。
+        :param extend_properties: **参数解释**： 扩展信息。 **取值范围**： 不涉及。
         :type extend_properties: object
-        :param description: 描述。
+        :param description: **参数解释**： 描述。 **取值范围**： 不涉及。
         :type description: str
-        :param fail_reason: 失败原因。
+        :param fail_reason: **参数解释**： 失败原因。 **取值范围**： 不涉及。
         :type fail_reason: str
         """
         
@@ -143,7 +143,7 @@ class ExtDataSource:
     def id(self):
         r"""Gets the id of this ExtDataSource.
 
-        id。
+        **参数解释**： 数据源ID。 **取值范围**： 不涉及。
 
         :return: The id of this ExtDataSource.
         :rtype: str
@@ -154,7 +154,7 @@ class ExtDataSource:
     def id(self, id):
         r"""Sets the id of this ExtDataSource.
 
-        id。
+        **参数解释**： 数据源ID。 **取值范围**： 不涉及。
 
         :param id: The id of this ExtDataSource.
         :type id: str
@@ -165,7 +165,7 @@ class ExtDataSource:
     def name(self):
         r"""Gets the name of this ExtDataSource.
 
-        数据源名称。
+        **参数解释**： 数据源名称。 **取值范围**： 不涉及。
 
         :return: The name of this ExtDataSource.
         :rtype: str
@@ -176,7 +176,7 @@ class ExtDataSource:
     def name(self, name):
         r"""Sets the name of this ExtDataSource.
 
-        数据源名称。
+        **参数解释**： 数据源名称。 **取值范围**： 不涉及。
 
         :param name: The name of this ExtDataSource.
         :type name: str
@@ -187,7 +187,7 @@ class ExtDataSource:
     def type(self):
         r"""Gets the type of this ExtDataSource.
 
-        类型。
+        **参数解释**： 类型。 **取值范围**： 不涉及。
 
         :return: The type of this ExtDataSource.
         :rtype: str
@@ -198,7 +198,7 @@ class ExtDataSource:
     def type(self, type):
         r"""Sets the type of this ExtDataSource.
 
-        类型。
+        **参数解释**： 类型。 **取值范围**： 不涉及。
 
         :param type: The type of this ExtDataSource.
         :type type: str
@@ -209,7 +209,7 @@ class ExtDataSource:
     def connect_info(self):
         r"""Gets the connect_info of this ExtDataSource.
 
-        数据库。
+        **参数解释**： 数据库。 **取值范围**： 不涉及。
 
         :return: The connect_info of this ExtDataSource.
         :rtype: str
@@ -220,7 +220,7 @@ class ExtDataSource:
     def connect_info(self, connect_info):
         r"""Sets the connect_info of this ExtDataSource.
 
-        数据库。
+        **参数解释**： 数据库。 **取值范围**： 不涉及。
 
         :param connect_info: The connect_info of this ExtDataSource.
         :type connect_info: str
@@ -231,7 +231,7 @@ class ExtDataSource:
     def user_name(self):
         r"""Gets the user_name of this ExtDataSource.
 
-        用户名。
+        **参数解释**： 用户名。 **取值范围**： 不涉及。
 
         :return: The user_name of this ExtDataSource.
         :rtype: str
@@ -242,7 +242,7 @@ class ExtDataSource:
     def user_name(self, user_name):
         r"""Sets the user_name of this ExtDataSource.
 
-        用户名。
+        **参数解释**： 用户名。 **取值范围**： 不涉及。
 
         :param user_name: The user_name of this ExtDataSource.
         :type user_name: str
@@ -253,7 +253,7 @@ class ExtDataSource:
     def version(self):
         r"""Gets the version of this ExtDataSource.
 
-        版本。
+        **参数解释**： 版本。 **取值范围**： 不涉及。
 
         :return: The version of this ExtDataSource.
         :rtype: str
@@ -264,7 +264,7 @@ class ExtDataSource:
     def version(self, version):
         r"""Sets the version of this ExtDataSource.
 
-        版本。
+        **参数解释**： 版本。 **取值范围**： 不涉及。
 
         :param version: The version of this ExtDataSource.
         :type version: str
@@ -275,7 +275,7 @@ class ExtDataSource:
     def configure_status(self):
         r"""Gets the configure_status of this ExtDataSource.
 
-        配置状态。
+        **参数解释**： 配置状态。 **取值范围**： 不涉及。
 
         :return: The configure_status of this ExtDataSource.
         :rtype: str
@@ -286,7 +286,7 @@ class ExtDataSource:
     def configure_status(self, configure_status):
         r"""Sets the configure_status of this ExtDataSource.
 
-        配置状态。
+        **参数解释**： 配置状态。 **取值范围**： 不涉及。
 
         :param configure_status: The configure_status of this ExtDataSource.
         :type configure_status: str
@@ -297,7 +297,7 @@ class ExtDataSource:
     def status(self):
         r"""Gets the status of this ExtDataSource.
 
-        状态。
+        **参数解释**： 状态。 **取值范围**： 不涉及。
 
         :return: The status of this ExtDataSource.
         :rtype: str
@@ -308,7 +308,7 @@ class ExtDataSource:
     def status(self, status):
         r"""Sets the status of this ExtDataSource.
 
-        状态。
+        **参数解释**： 状态。 **取值范围**： 不涉及。
 
         :param status: The status of this ExtDataSource.
         :type status: str
@@ -319,7 +319,7 @@ class ExtDataSource:
     def data_source_id(self):
         r"""Gets the data_source_id of this ExtDataSource.
 
-        数据源id。
+        **参数解释**： 外部数据源ID。 **取值范围**： 不涉及。
 
         :return: The data_source_id of this ExtDataSource.
         :rtype: str
@@ -330,7 +330,7 @@ class ExtDataSource:
     def data_source_id(self, data_source_id):
         r"""Sets the data_source_id of this ExtDataSource.
 
-        数据源id。
+        **参数解释**： 外部数据源ID。 **取值范围**： 不涉及。
 
         :param data_source_id: The data_source_id of this ExtDataSource.
         :type data_source_id: str
@@ -341,7 +341,7 @@ class ExtDataSource:
     def created(self):
         r"""Gets the created of this ExtDataSource.
 
-        创建时间。
+        **参数解释**： 创建时间。 **取值范围**： 不涉及。
 
         :return: The created of this ExtDataSource.
         :rtype: str
@@ -352,7 +352,7 @@ class ExtDataSource:
     def created(self, created):
         r"""Sets the created of this ExtDataSource.
 
-        创建时间。
+        **参数解释**： 创建时间。 **取值范围**： 不涉及。
 
         :param created: The created of this ExtDataSource.
         :type created: str
@@ -363,7 +363,7 @@ class ExtDataSource:
     def updated(self):
         r"""Gets the updated of this ExtDataSource.
 
-        更新时间。
+        **参数解释**： 更新时间。 **取值范围**： 不涉及。
 
         :return: The updated of this ExtDataSource.
         :rtype: str
@@ -374,7 +374,7 @@ class ExtDataSource:
     def updated(self, updated):
         r"""Sets the updated of this ExtDataSource.
 
-        更新时间。
+        **参数解释**： 更新时间。 **取值范围**： 不涉及。
 
         :param updated: The updated of this ExtDataSource.
         :type updated: str
@@ -385,7 +385,7 @@ class ExtDataSource:
     def data_source_updated(self):
         r"""Gets the data_source_updated of this ExtDataSource.
 
-        数据源更新时间。
+        **参数解释**： 数据源更新时间。 **取值范围**： 不涉及。
 
         :return: The data_source_updated of this ExtDataSource.
         :rtype: str
@@ -396,7 +396,7 @@ class ExtDataSource:
     def data_source_updated(self, data_source_updated):
         r"""Sets the data_source_updated of this ExtDataSource.
 
-        数据源更新时间。
+        **参数解释**： 数据源更新时间。 **取值范围**： 不涉及。
 
         :param data_source_updated: The data_source_updated of this ExtDataSource.
         :type data_source_updated: str
@@ -407,7 +407,7 @@ class ExtDataSource:
     def extend_properties(self):
         r"""Gets the extend_properties of this ExtDataSource.
 
-        扩展信息。
+        **参数解释**： 扩展信息。 **取值范围**： 不涉及。
 
         :return: The extend_properties of this ExtDataSource.
         :rtype: object
@@ -418,7 +418,7 @@ class ExtDataSource:
     def extend_properties(self, extend_properties):
         r"""Sets the extend_properties of this ExtDataSource.
 
-        扩展信息。
+        **参数解释**： 扩展信息。 **取值范围**： 不涉及。
 
         :param extend_properties: The extend_properties of this ExtDataSource.
         :type extend_properties: object
@@ -429,7 +429,7 @@ class ExtDataSource:
     def description(self):
         r"""Gets the description of this ExtDataSource.
 
-        描述。
+        **参数解释**： 描述。 **取值范围**： 不涉及。
 
         :return: The description of this ExtDataSource.
         :rtype: str
@@ -440,7 +440,7 @@ class ExtDataSource:
     def description(self, description):
         r"""Sets the description of this ExtDataSource.
 
-        描述。
+        **参数解释**： 描述。 **取值范围**： 不涉及。
 
         :param description: The description of this ExtDataSource.
         :type description: str
@@ -451,7 +451,7 @@ class ExtDataSource:
     def fail_reason(self):
         r"""Gets the fail_reason of this ExtDataSource.
 
-        失败原因。
+        **参数解释**： 失败原因。 **取值范围**： 不涉及。
 
         :return: The fail_reason of this ExtDataSource.
         :rtype: str
@@ -462,7 +462,7 @@ class ExtDataSource:
     def fail_reason(self, fail_reason):
         r"""Sets the fail_reason of this ExtDataSource.
 
-        失败原因。
+        **参数解释**： 失败原因。 **取值范围**： 不涉及。
 
         :param fail_reason: The fail_reason of this ExtDataSource.
         :type fail_reason: str

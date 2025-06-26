@@ -32,9 +32,9 @@ class UpdateDataSourceResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param job_id: 更新数据源job_id。
+        :param job_id: **参数解释**： 更新数据源任务ID。 **取值范围**： 不涉及。
         :type job_id: str
-        :param data_source_id: 数据源id。
+        :param data_source_id: **参数解释**： 数据源ID。 **取值范围**： 不涉及。
         :type data_source_id: str
         """
         
@@ -53,7 +53,7 @@ class UpdateDataSourceResponse(SdkResponse):
     def job_id(self):
         r"""Gets the job_id of this UpdateDataSourceResponse.
 
-        更新数据源job_id。
+        **参数解释**： 更新数据源任务ID。 **取值范围**： 不涉及。
 
         :return: The job_id of this UpdateDataSourceResponse.
         :rtype: str
@@ -64,7 +64,7 @@ class UpdateDataSourceResponse(SdkResponse):
     def job_id(self, job_id):
         r"""Sets the job_id of this UpdateDataSourceResponse.
 
-        更新数据源job_id。
+        **参数解释**： 更新数据源任务ID。 **取值范围**： 不涉及。
 
         :param job_id: The job_id of this UpdateDataSourceResponse.
         :type job_id: str
@@ -75,7 +75,7 @@ class UpdateDataSourceResponse(SdkResponse):
     def data_source_id(self):
         r"""Gets the data_source_id of this UpdateDataSourceResponse.
 
-        数据源id。
+        **参数解释**： 数据源ID。 **取值范围**： 不涉及。
 
         :return: The data_source_id of this UpdateDataSourceResponse.
         :rtype: str
@@ -86,7 +86,7 @@ class UpdateDataSourceResponse(SdkResponse):
     def data_source_id(self, data_source_id):
         r"""Sets the data_source_id of this UpdateDataSourceResponse.
 
-        数据源id。
+        **参数解释**： 数据源ID。 **取值范围**： 不涉及。
 
         :param data_source_id: The data_source_id of this UpdateDataSourceResponse.
         :type data_source_id: str

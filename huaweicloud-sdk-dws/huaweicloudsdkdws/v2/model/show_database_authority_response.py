@@ -30,7 +30,7 @@ class ShowDatabaseAuthorityResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param authorities: 对象权限集合
+        :param authorities: **参数解释**： 对象权限集合。 **取值范围**： 不涉及。
         :type authorities: list[:class:`huaweicloudsdkdws.v2.ObjectAuthority`]
         """
         
@@ -46,7 +46,7 @@ class ShowDatabaseAuthorityResponse(SdkResponse):
     def authorities(self):
         r"""Gets the authorities of this ShowDatabaseAuthorityResponse.
 
-        对象权限集合
+        **参数解释**： 对象权限集合。 **取值范围**： 不涉及。
 
         :return: The authorities of this ShowDatabaseAuthorityResponse.
         :rtype: list[:class:`huaweicloudsdkdws.v2.ObjectAuthority`]
@@ -57,7 +57,7 @@ class ShowDatabaseAuthorityResponse(SdkResponse):
     def authorities(self, authorities):
         r"""Sets the authorities of this ShowDatabaseAuthorityResponse.
 
-        对象权限集合
+        **参数解释**： 对象权限集合。 **取值范围**： 不涉及。
 
         :param authorities: The authorities of this ShowDatabaseAuthorityResponse.
         :type authorities: list[:class:`huaweicloudsdkdws.v2.ObjectAuthority`]

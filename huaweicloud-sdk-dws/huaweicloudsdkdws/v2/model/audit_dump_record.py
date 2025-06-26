@@ -45,19 +45,19 @@ class AuditDumpRecord:
 
         :param cluster_id: **参数解释**： 集群ID。 **取值范围**： 36位UUID。
         :type cluster_id: str
-        :param executor_time: 执行时间。
+        :param executor_time: **参数解释**： 执行时间。 **取值范围**： 不涉及。
         :type executor_time: str
-        :param begin_time: 开始时间。
+        :param begin_time: **参数解释**： 开始时间。 **取值范围**： 不涉及。
         :type begin_time: str
-        :param end_time: 结束时间。
+        :param end_time: **参数解释**： 结束时间。 **取值范围**： 不涉及。
         :type end_time: str
-        :param bucket_name: 桶名。
+        :param bucket_name: **参数解释**： 桶名。 **取值范围**： 不涉及。
         :type bucket_name: str
-        :param location_prefix: 前缀。
+        :param location_prefix: **参数解释**： 前缀。 **取值范围**： 不涉及。
         :type location_prefix: str
-        :param result: 结果。
+        :param result: **参数解释**： 结果。 **取值范围**： 不涉及。
         :type result: str
-        :param failed_reason: 失败原因。
+        :param failed_reason: **参数解释**： 失败原因。 **取值范围**： 不涉及。
         :type failed_reason: str
         """
         
@@ -116,7 +116,7 @@ class AuditDumpRecord:
     def executor_time(self):
         r"""Gets the executor_time of this AuditDumpRecord.
 
-        执行时间。
+        **参数解释**： 执行时间。 **取值范围**： 不涉及。
 
         :return: The executor_time of this AuditDumpRecord.
         :rtype: str
@@ -127,7 +127,7 @@ class AuditDumpRecord:
     def executor_time(self, executor_time):
         r"""Sets the executor_time of this AuditDumpRecord.
 
-        执行时间。
+        **参数解释**： 执行时间。 **取值范围**： 不涉及。
 
         :param executor_time: The executor_time of this AuditDumpRecord.
         :type executor_time: str
@@ -138,7 +138,7 @@ class AuditDumpRecord:
     def begin_time(self):
         r"""Gets the begin_time of this AuditDumpRecord.
 
-        开始时间。
+        **参数解释**： 开始时间。 **取值范围**： 不涉及。
 
         :return: The begin_time of this AuditDumpRecord.
         :rtype: str
@@ -149,7 +149,7 @@ class AuditDumpRecord:
     def begin_time(self, begin_time):
         r"""Sets the begin_time of this AuditDumpRecord.
 
-        开始时间。
+        **参数解释**： 开始时间。 **取值范围**： 不涉及。
 
         :param begin_time: The begin_time of this AuditDumpRecord.
         :type begin_time: str
@@ -160,7 +160,7 @@ class AuditDumpRecord:
     def end_time(self):
         r"""Gets the end_time of this AuditDumpRecord.
 
-        结束时间。
+        **参数解释**： 结束时间。 **取值范围**： 不涉及。
 
         :return: The end_time of this AuditDumpRecord.
         :rtype: str
@@ -171,7 +171,7 @@ class AuditDumpRecord:
     def end_time(self, end_time):
         r"""Sets the end_time of this AuditDumpRecord.
 
-        结束时间。
+        **参数解释**： 结束时间。 **取值范围**： 不涉及。
 
         :param end_time: The end_time of this AuditDumpRecord.
         :type end_time: str
@@ -182,7 +182,7 @@ class AuditDumpRecord:
     def bucket_name(self):
         r"""Gets the bucket_name of this AuditDumpRecord.
 
-        桶名。
+        **参数解释**： 桶名。 **取值范围**： 不涉及。
 
         :return: The bucket_name of this AuditDumpRecord.
         :rtype: str
@@ -193,7 +193,7 @@ class AuditDumpRecord:
     def bucket_name(self, bucket_name):
         r"""Sets the bucket_name of this AuditDumpRecord.
 
-        桶名。
+        **参数解释**： 桶名。 **取值范围**： 不涉及。
 
         :param bucket_name: The bucket_name of this AuditDumpRecord.
         :type bucket_name: str
@@ -204,7 +204,7 @@ class AuditDumpRecord:
     def location_prefix(self):
         r"""Gets the location_prefix of this AuditDumpRecord.
 
-        前缀。
+        **参数解释**： 前缀。 **取值范围**： 不涉及。
 
         :return: The location_prefix of this AuditDumpRecord.
         :rtype: str
@@ -215,7 +215,7 @@ class AuditDumpRecord:
     def location_prefix(self, location_prefix):
         r"""Sets the location_prefix of this AuditDumpRecord.
 
-        前缀。
+        **参数解释**： 前缀。 **取值范围**： 不涉及。
 
         :param location_prefix: The location_prefix of this AuditDumpRecord.
         :type location_prefix: str
@@ -226,7 +226,7 @@ class AuditDumpRecord:
     def result(self):
         r"""Gets the result of this AuditDumpRecord.
 
-        结果。
+        **参数解释**： 结果。 **取值范围**： 不涉及。
 
         :return: The result of this AuditDumpRecord.
         :rtype: str
@@ -237,7 +237,7 @@ class AuditDumpRecord:
     def result(self, result):
         r"""Sets the result of this AuditDumpRecord.
 
-        结果。
+        **参数解释**： 结果。 **取值范围**： 不涉及。
 
         :param result: The result of this AuditDumpRecord.
         :type result: str
@@ -248,7 +248,7 @@ class AuditDumpRecord:
     def failed_reason(self):
         r"""Gets the failed_reason of this AuditDumpRecord.
 
-        失败原因。
+        **参数解释**： 失败原因。 **取值范围**： 不涉及。
 
         :return: The failed_reason of this AuditDumpRecord.
         :rtype: str
@@ -259,7 +259,7 @@ class AuditDumpRecord:
     def failed_reason(self, failed_reason):
         r"""Sets the failed_reason of this AuditDumpRecord.
 
-        失败原因。
+        **参数解释**： 失败原因。 **取值范围**： 不涉及。
 
         :param failed_reason: The failed_reason of this AuditDumpRecord.
         :type failed_reason: str

@@ -29,7 +29,7 @@ class SqlJobDefendRuleRequestBody:
         'rule_id': 'rule_id',
         'category': 'category',
         'engine_rules': 'engine_rules',
-        'queue_names': 'queueNames'
+        'queue_names': 'queue_names'
     }
 
     def __init__(self, rule_name=None, rule_id=None, category=None, engine_rules=None, queue_names=None):

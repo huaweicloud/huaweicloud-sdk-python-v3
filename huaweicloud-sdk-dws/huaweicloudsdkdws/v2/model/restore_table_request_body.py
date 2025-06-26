@@ -35,13 +35,13 @@ class RestoreTableRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param case_sensitive: 名称是否区分大小写
+        :param case_sensitive: **参数解释**： 名称是否区分大小写。 **取值范围**： 不涉及。
         :type case_sensitive: bool
-        :param database: 数据库名称
+        :param database: **参数解释**： 数据库名称。 **取值范围**： 不涉及。
         :type database: str
-        :param restore_table_list: 源表信息
+        :param restore_table_list: **参数解释**： 源表信息。 **取值范围**： 不涉及。
         :type restore_table_list: list[:class:`huaweicloudsdkdws.v2.TableDetail`]
-        :param target_table_list: 目的表信息
+        :param target_table_list: **参数解释**： 目的表信息。 **取值范围**： 不涉及。
         :type target_table_list: list[:class:`huaweicloudsdkdws.v2.TableDetail`]
         """
         
@@ -62,7 +62,7 @@ class RestoreTableRequestBody:
     def case_sensitive(self):
         r"""Gets the case_sensitive of this RestoreTableRequestBody.
 
-        名称是否区分大小写
+        **参数解释**： 名称是否区分大小写。 **取值范围**： 不涉及。
 
         :return: The case_sensitive of this RestoreTableRequestBody.
         :rtype: bool
@@ -73,7 +73,7 @@ class RestoreTableRequestBody:
     def case_sensitive(self, case_sensitive):
         r"""Sets the case_sensitive of this RestoreTableRequestBody.
 
-        名称是否区分大小写
+        **参数解释**： 名称是否区分大小写。 **取值范围**： 不涉及。
 
         :param case_sensitive: The case_sensitive of this RestoreTableRequestBody.
         :type case_sensitive: bool
@@ -84,7 +84,7 @@ class RestoreTableRequestBody:
     def database(self):
         r"""Gets the database of this RestoreTableRequestBody.
 
-        数据库名称
+        **参数解释**： 数据库名称。 **取值范围**： 不涉及。
 
         :return: The database of this RestoreTableRequestBody.
         :rtype: str
@@ -95,7 +95,7 @@ class RestoreTableRequestBody:
     def database(self, database):
         r"""Sets the database of this RestoreTableRequestBody.
 
-        数据库名称
+        **参数解释**： 数据库名称。 **取值范围**： 不涉及。
 
         :param database: The database of this RestoreTableRequestBody.
         :type database: str
@@ -106,7 +106,7 @@ class RestoreTableRequestBody:
     def restore_table_list(self):
         r"""Gets the restore_table_list of this RestoreTableRequestBody.
 
-        源表信息
+        **参数解释**： 源表信息。 **取值范围**： 不涉及。
 
         :return: The restore_table_list of this RestoreTableRequestBody.
         :rtype: list[:class:`huaweicloudsdkdws.v2.TableDetail`]
@@ -117,7 +117,7 @@ class RestoreTableRequestBody:
     def restore_table_list(self, restore_table_list):
         r"""Sets the restore_table_list of this RestoreTableRequestBody.
 
-        源表信息
+        **参数解释**： 源表信息。 **取值范围**： 不涉及。
 
         :param restore_table_list: The restore_table_list of this RestoreTableRequestBody.
         :type restore_table_list: list[:class:`huaweicloudsdkdws.v2.TableDetail`]
@@ -128,7 +128,7 @@ class RestoreTableRequestBody:
     def target_table_list(self):
         r"""Gets the target_table_list of this RestoreTableRequestBody.
 
-        目的表信息
+        **参数解释**： 目的表信息。 **取值范围**： 不涉及。
 
         :return: The target_table_list of this RestoreTableRequestBody.
         :rtype: list[:class:`huaweicloudsdkdws.v2.TableDetail`]
@@ -139,7 +139,7 @@ class RestoreTableRequestBody:
     def target_table_list(self, target_table_list):
         r"""Sets the target_table_list of this RestoreTableRequestBody.
 
-        目的表信息
+        **参数解释**： 目的表信息。 **取值范围**： 不涉及。
 
         :param target_table_list: The target_table_list of this RestoreTableRequestBody.
         :type target_table_list: list[:class:`huaweicloudsdkdws.v2.TableDetail`]

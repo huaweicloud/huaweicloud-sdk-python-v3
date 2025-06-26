@@ -60,37 +60,37 @@ class ShowDatabaseUserResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param name: 用户名称
+        :param name: **参数解释**： 用户名称。 **取值范围**： 不涉及。
         :type name: str
-        :param login: 是否可以登陆
+        :param login: **参数解释**： 是否可以登录。 **取值范围**： 不涉及。
         :type login: bool
-        :param createrole: 创建角色权限
+        :param createrole: **参数解释**： 创建角色权限。 **取值范围**： 不涉及。
         :type createrole: bool
-        :param createdb: 创建数据库权限
+        :param createdb: **参数解释**： 创建数据库权限。 **取值范围**： 不涉及。
         :type createdb: bool
-        :param systemadmin: 系统管理员
+        :param systemadmin: **参数解释**： 系统管理员。 **取值范围**： 不涉及。
         :type systemadmin: bool
-        :param auditadmin: 审计管理员
+        :param auditadmin: **参数解释**： 审计管理员。 **取值范围**： 不涉及。
         :type auditadmin: bool
-        :param inherit: 继承所在组权限
+        :param inherit: **参数解释**： 继承所在组权限。 **取值范围**： 不涉及。
         :type inherit: bool
-        :param useft: 访问外表权限
+        :param useft: **参数解释**： 访问外表权限。 **取值范围**： 不涉及。
         :type useft: bool
-        :param conn_limit: 连接数限制
+        :param conn_limit: **参数解释**： 连接数限制。 **取值范围**： 不涉及。
         :type conn_limit: int
-        :param replication: 是否允许流复制
+        :param replication: **参数解释**： 是否允许流复制。 **取值范围**： 不涉及。
         :type replication: bool
-        :param valid_begin: 角色生效时间
+        :param valid_begin: **参数解释**： 角色生效时间。 **取值范围**： 不涉及。
         :type valid_begin: int
-        :param valid_until: 角色过期时间
+        :param valid_until: **参数解释**： 角色过期时间。 **取值范围**： 不涉及。
         :type valid_until: int
-        :param lock: 是否锁定
+        :param lock: **参数解释**： 是否锁定。 **取值范围**： 不涉及。
         :type lock: bool
-        :param desc: 描述
+        :param desc: **参数解释**： 描述。 **取值范围**： 不涉及。
         :type desc: str
-        :param user_type: 用户类型
+        :param user_type: **参数解释**： 用户类型。 **取值范围**： 不涉及。
         :type user_type: str
-        :param logical_cluster: 所属逻辑集群
+        :param logical_cluster: **参数解释**： description: 所属逻辑集群。 **取值范围**： 不涉及。
         :type logical_cluster: str
         """
         
@@ -151,7 +151,7 @@ class ShowDatabaseUserResponse(SdkResponse):
     def name(self):
         r"""Gets the name of this ShowDatabaseUserResponse.
 
-        用户名称
+        **参数解释**： 用户名称。 **取值范围**： 不涉及。
 
         :return: The name of this ShowDatabaseUserResponse.
         :rtype: str
@@ -162,7 +162,7 @@ class ShowDatabaseUserResponse(SdkResponse):
     def name(self, name):
         r"""Sets the name of this ShowDatabaseUserResponse.
 
-        用户名称
+        **参数解释**： 用户名称。 **取值范围**： 不涉及。
 
         :param name: The name of this ShowDatabaseUserResponse.
         :type name: str
@@ -173,7 +173,7 @@ class ShowDatabaseUserResponse(SdkResponse):
     def login(self):
         r"""Gets the login of this ShowDatabaseUserResponse.
 
-        是否可以登陆
+        **参数解释**： 是否可以登录。 **取值范围**： 不涉及。
 
         :return: The login of this ShowDatabaseUserResponse.
         :rtype: bool
@@ -184,7 +184,7 @@ class ShowDatabaseUserResponse(SdkResponse):
     def login(self, login):
         r"""Sets the login of this ShowDatabaseUserResponse.
 
-        是否可以登陆
+        **参数解释**： 是否可以登录。 **取值范围**： 不涉及。
 
         :param login: The login of this ShowDatabaseUserResponse.
         :type login: bool
@@ -195,7 +195,7 @@ class ShowDatabaseUserResponse(SdkResponse):
     def createrole(self):
         r"""Gets the createrole of this ShowDatabaseUserResponse.
 
-        创建角色权限
+        **参数解释**： 创建角色权限。 **取值范围**： 不涉及。
 
         :return: The createrole of this ShowDatabaseUserResponse.
         :rtype: bool
@@ -206,7 +206,7 @@ class ShowDatabaseUserResponse(SdkResponse):
     def createrole(self, createrole):
         r"""Sets the createrole of this ShowDatabaseUserResponse.
 
-        创建角色权限
+        **参数解释**： 创建角色权限。 **取值范围**： 不涉及。
 
         :param createrole: The createrole of this ShowDatabaseUserResponse.
         :type createrole: bool
@@ -217,7 +217,7 @@ class ShowDatabaseUserResponse(SdkResponse):
     def createdb(self):
         r"""Gets the createdb of this ShowDatabaseUserResponse.
 
-        创建数据库权限
+        **参数解释**： 创建数据库权限。 **取值范围**： 不涉及。
 
         :return: The createdb of this ShowDatabaseUserResponse.
         :rtype: bool
@@ -228,7 +228,7 @@ class ShowDatabaseUserResponse(SdkResponse):
     def createdb(self, createdb):
         r"""Sets the createdb of this ShowDatabaseUserResponse.
 
-        创建数据库权限
+        **参数解释**： 创建数据库权限。 **取值范围**： 不涉及。
 
         :param createdb: The createdb of this ShowDatabaseUserResponse.
         :type createdb: bool
@@ -239,7 +239,7 @@ class ShowDatabaseUserResponse(SdkResponse):
     def systemadmin(self):
         r"""Gets the systemadmin of this ShowDatabaseUserResponse.
 
-        系统管理员
+        **参数解释**： 系统管理员。 **取值范围**： 不涉及。
 
         :return: The systemadmin of this ShowDatabaseUserResponse.
         :rtype: bool
@@ -250,7 +250,7 @@ class ShowDatabaseUserResponse(SdkResponse):
     def systemadmin(self, systemadmin):
         r"""Sets the systemadmin of this ShowDatabaseUserResponse.
 
-        系统管理员
+        **参数解释**： 系统管理员。 **取值范围**： 不涉及。
 
         :param systemadmin: The systemadmin of this ShowDatabaseUserResponse.
         :type systemadmin: bool
@@ -261,7 +261,7 @@ class ShowDatabaseUserResponse(SdkResponse):
     def auditadmin(self):
         r"""Gets the auditadmin of this ShowDatabaseUserResponse.
 
-        审计管理员
+        **参数解释**： 审计管理员。 **取值范围**： 不涉及。
 
         :return: The auditadmin of this ShowDatabaseUserResponse.
         :rtype: bool
@@ -272,7 +272,7 @@ class ShowDatabaseUserResponse(SdkResponse):
     def auditadmin(self, auditadmin):
         r"""Sets the auditadmin of this ShowDatabaseUserResponse.
 
-        审计管理员
+        **参数解释**： 审计管理员。 **取值范围**： 不涉及。
 
         :param auditadmin: The auditadmin of this ShowDatabaseUserResponse.
         :type auditadmin: bool
@@ -283,7 +283,7 @@ class ShowDatabaseUserResponse(SdkResponse):
     def inherit(self):
         r"""Gets the inherit of this ShowDatabaseUserResponse.
 
-        继承所在组权限
+        **参数解释**： 继承所在组权限。 **取值范围**： 不涉及。
 
         :return: The inherit of this ShowDatabaseUserResponse.
         :rtype: bool
@@ -294,7 +294,7 @@ class ShowDatabaseUserResponse(SdkResponse):
     def inherit(self, inherit):
         r"""Sets the inherit of this ShowDatabaseUserResponse.
 
-        继承所在组权限
+        **参数解释**： 继承所在组权限。 **取值范围**： 不涉及。
 
         :param inherit: The inherit of this ShowDatabaseUserResponse.
         :type inherit: bool
@@ -305,7 +305,7 @@ class ShowDatabaseUserResponse(SdkResponse):
     def useft(self):
         r"""Gets the useft of this ShowDatabaseUserResponse.
 
-        访问外表权限
+        **参数解释**： 访问外表权限。 **取值范围**： 不涉及。
 
         :return: The useft of this ShowDatabaseUserResponse.
         :rtype: bool
@@ -316,7 +316,7 @@ class ShowDatabaseUserResponse(SdkResponse):
     def useft(self, useft):
         r"""Sets the useft of this ShowDatabaseUserResponse.
 
-        访问外表权限
+        **参数解释**： 访问外表权限。 **取值范围**： 不涉及。
 
         :param useft: The useft of this ShowDatabaseUserResponse.
         :type useft: bool
@@ -327,7 +327,7 @@ class ShowDatabaseUserResponse(SdkResponse):
     def conn_limit(self):
         r"""Gets the conn_limit of this ShowDatabaseUserResponse.
 
-        连接数限制
+        **参数解释**： 连接数限制。 **取值范围**： 不涉及。
 
         :return: The conn_limit of this ShowDatabaseUserResponse.
         :rtype: int
@@ -338,7 +338,7 @@ class ShowDatabaseUserResponse(SdkResponse):
     def conn_limit(self, conn_limit):
         r"""Sets the conn_limit of this ShowDatabaseUserResponse.
 
-        连接数限制
+        **参数解释**： 连接数限制。 **取值范围**： 不涉及。
 
         :param conn_limit: The conn_limit of this ShowDatabaseUserResponse.
         :type conn_limit: int
@@ -349,7 +349,7 @@ class ShowDatabaseUserResponse(SdkResponse):
     def replication(self):
         r"""Gets the replication of this ShowDatabaseUserResponse.
 
-        是否允许流复制
+        **参数解释**： 是否允许流复制。 **取值范围**： 不涉及。
 
         :return: The replication of this ShowDatabaseUserResponse.
         :rtype: bool
@@ -360,7 +360,7 @@ class ShowDatabaseUserResponse(SdkResponse):
     def replication(self, replication):
         r"""Sets the replication of this ShowDatabaseUserResponse.
 
-        是否允许流复制
+        **参数解释**： 是否允许流复制。 **取值范围**： 不涉及。
 
         :param replication: The replication of this ShowDatabaseUserResponse.
         :type replication: bool
@@ -371,7 +371,7 @@ class ShowDatabaseUserResponse(SdkResponse):
     def valid_begin(self):
         r"""Gets the valid_begin of this ShowDatabaseUserResponse.
 
-        角色生效时间
+        **参数解释**： 角色生效时间。 **取值范围**： 不涉及。
 
         :return: The valid_begin of this ShowDatabaseUserResponse.
         :rtype: int
@@ -382,7 +382,7 @@ class ShowDatabaseUserResponse(SdkResponse):
     def valid_begin(self, valid_begin):
         r"""Sets the valid_begin of this ShowDatabaseUserResponse.
 
-        角色生效时间
+        **参数解释**： 角色生效时间。 **取值范围**： 不涉及。
 
         :param valid_begin: The valid_begin of this ShowDatabaseUserResponse.
         :type valid_begin: int
@@ -393,7 +393,7 @@ class ShowDatabaseUserResponse(SdkResponse):
     def valid_until(self):
         r"""Gets the valid_until of this ShowDatabaseUserResponse.
 
-        角色过期时间
+        **参数解释**： 角色过期时间。 **取值范围**： 不涉及。
 
         :return: The valid_until of this ShowDatabaseUserResponse.
         :rtype: int
@@ -404,7 +404,7 @@ class ShowDatabaseUserResponse(SdkResponse):
     def valid_until(self, valid_until):
         r"""Sets the valid_until of this ShowDatabaseUserResponse.
 
-        角色过期时间
+        **参数解释**： 角色过期时间。 **取值范围**： 不涉及。
 
         :param valid_until: The valid_until of this ShowDatabaseUserResponse.
         :type valid_until: int
@@ -415,7 +415,7 @@ class ShowDatabaseUserResponse(SdkResponse):
     def lock(self):
         r"""Gets the lock of this ShowDatabaseUserResponse.
 
-        是否锁定
+        **参数解释**： 是否锁定。 **取值范围**： 不涉及。
 
         :return: The lock of this ShowDatabaseUserResponse.
         :rtype: bool
@@ -426,7 +426,7 @@ class ShowDatabaseUserResponse(SdkResponse):
     def lock(self, lock):
         r"""Sets the lock of this ShowDatabaseUserResponse.
 
-        是否锁定
+        **参数解释**： 是否锁定。 **取值范围**： 不涉及。
 
         :param lock: The lock of this ShowDatabaseUserResponse.
         :type lock: bool
@@ -437,7 +437,7 @@ class ShowDatabaseUserResponse(SdkResponse):
     def desc(self):
         r"""Gets the desc of this ShowDatabaseUserResponse.
 
-        描述
+        **参数解释**： 描述。 **取值范围**： 不涉及。
 
         :return: The desc of this ShowDatabaseUserResponse.
         :rtype: str
@@ -448,7 +448,7 @@ class ShowDatabaseUserResponse(SdkResponse):
     def desc(self, desc):
         r"""Sets the desc of this ShowDatabaseUserResponse.
 
-        描述
+        **参数解释**： 描述。 **取值范围**： 不涉及。
 
         :param desc: The desc of this ShowDatabaseUserResponse.
         :type desc: str
@@ -459,7 +459,7 @@ class ShowDatabaseUserResponse(SdkResponse):
     def user_type(self):
         r"""Gets the user_type of this ShowDatabaseUserResponse.
 
-        用户类型
+        **参数解释**： 用户类型。 **取值范围**： 不涉及。
 
         :return: The user_type of this ShowDatabaseUserResponse.
         :rtype: str
@@ -470,7 +470,7 @@ class ShowDatabaseUserResponse(SdkResponse):
     def user_type(self, user_type):
         r"""Sets the user_type of this ShowDatabaseUserResponse.
 
-        用户类型
+        **参数解释**： 用户类型。 **取值范围**： 不涉及。
 
         :param user_type: The user_type of this ShowDatabaseUserResponse.
         :type user_type: str
@@ -481,7 +481,7 @@ class ShowDatabaseUserResponse(SdkResponse):
     def logical_cluster(self):
         r"""Gets the logical_cluster of this ShowDatabaseUserResponse.
 
-        所属逻辑集群
+        **参数解释**： description: 所属逻辑集群。 **取值范围**： 不涉及。
 
         :return: The logical_cluster of this ShowDatabaseUserResponse.
         :rtype: str
@@ -492,7 +492,7 @@ class ShowDatabaseUserResponse(SdkResponse):
     def logical_cluster(self, logical_cluster):
         r"""Sets the logical_cluster of this ShowDatabaseUserResponse.
 
-        所属逻辑集群
+        **参数解释**： description: 所属逻辑集群。 **取值范围**： 不涉及。
 
         :param logical_cluster: The logical_cluster of this ShowDatabaseUserResponse.
         :type logical_cluster: str

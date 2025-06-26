@@ -6,6 +6,8 @@ from huaweicloudsdkcore.region.provider import RegionProviderChain
 class CfwRegion:
     _PROVIDER = RegionProviderChain.get_default_region_provider_chain("CFW")
 
+    RU_MOSCOW_1 = Region("ru-moscow-1",
+                        "https://cfw.ru-moscow-1.myhuaweicloud.com")
     EU_WEST_101 = Region("eu-west-101",
                         "https://cfw.eu-west-101.myhuaweicloud.eu")
     CN_SOUTH_4 = Region("cn-south-4",
@@ -56,6 +58,7 @@ class CfwRegion:
                         "https://cfw.cn-east-5.myhuaweicloud.com")
 
     static_fields = {
+        "ru-moscow-1": RU_MOSCOW_1,
         "eu-west-101": EU_WEST_101,
         "cn-south-4": CN_SOUTH_4,
         "cn-southwest-2": CN_SOUTHWEST_2,

@@ -47,25 +47,25 @@ class SchemaInfo:
 
         The model defined in huaweicloud sdk
 
-        :param schema_name: Schema名称。
+        :param schema_name: **参数解释**： 集群模式名称。 **取值范围**： 不涉及。
         :type schema_name: str
-        :param database_name: 数据库名称。
+        :param database_name: **参数解释**： 数据库名称。 **取值范围**： 不涉及。
         :type database_name: str
-        :param total_value: 集群schema使用空间总值。
+        :param total_value: **参数解释**： 集群模式使用空间总值。 **取值范围**： 不涉及。
         :type total_value: int
-        :param perm_space: Schema空间阈值。
+        :param perm_space: **参数解释**： 集群模式空间阈值。 **取值范围**： 不涉及。
         :type perm_space: int
-        :param skew_percent: 倾斜率。
+        :param skew_percent: **参数解释**： 倾斜率。 **取值范围**： 不涉及。
         :type skew_percent: float
-        :param min_value: 最小值。
+        :param min_value: **参数解释**： 最小值。 **取值范围**： 不涉及。
         :type min_value: int
-        :param max_value: 最大值。
+        :param max_value: **参数解释**： 最大值。 **取值范围**： 不涉及。
         :type max_value: int
-        :param min_dn: 最小dn节点。
+        :param min_dn: **参数解释**： 最小dn节点。 **取值范围**： 不涉及。
         :type min_dn: str
-        :param max_dn: 最大cn节点。
+        :param max_dn: **参数解释**： 最大cn节点。 **取值范围**： 不涉及。
         :type max_dn: str
-        :param dn_num: dn节点数量。
+        :param dn_num: **参数解释**： dn节点数量。 **取值范围**： 不涉及。
         :type dn_num: int
         """
         
@@ -98,7 +98,7 @@ class SchemaInfo:
     def schema_name(self):
         r"""Gets the schema_name of this SchemaInfo.
 
-        Schema名称。
+        **参数解释**： 集群模式名称。 **取值范围**： 不涉及。
 
         :return: The schema_name of this SchemaInfo.
         :rtype: str
@@ -109,7 +109,7 @@ class SchemaInfo:
     def schema_name(self, schema_name):
         r"""Sets the schema_name of this SchemaInfo.
 
-        Schema名称。
+        **参数解释**： 集群模式名称。 **取值范围**： 不涉及。
 
         :param schema_name: The schema_name of this SchemaInfo.
         :type schema_name: str
@@ -120,7 +120,7 @@ class SchemaInfo:
     def database_name(self):
         r"""Gets the database_name of this SchemaInfo.
 
-        数据库名称。
+        **参数解释**： 数据库名称。 **取值范围**： 不涉及。
 
         :return: The database_name of this SchemaInfo.
         :rtype: str
@@ -131,7 +131,7 @@ class SchemaInfo:
     def database_name(self, database_name):
         r"""Sets the database_name of this SchemaInfo.
 
-        数据库名称。
+        **参数解释**： 数据库名称。 **取值范围**： 不涉及。
 
         :param database_name: The database_name of this SchemaInfo.
         :type database_name: str
@@ -142,7 +142,7 @@ class SchemaInfo:
     def total_value(self):
         r"""Gets the total_value of this SchemaInfo.
 
-        集群schema使用空间总值。
+        **参数解释**： 集群模式使用空间总值。 **取值范围**： 不涉及。
 
         :return: The total_value of this SchemaInfo.
         :rtype: int
@@ -153,7 +153,7 @@ class SchemaInfo:
     def total_value(self, total_value):
         r"""Sets the total_value of this SchemaInfo.
 
-        集群schema使用空间总值。
+        **参数解释**： 集群模式使用空间总值。 **取值范围**： 不涉及。
 
         :param total_value: The total_value of this SchemaInfo.
         :type total_value: int
@@ -164,7 +164,7 @@ class SchemaInfo:
     def perm_space(self):
         r"""Gets the perm_space of this SchemaInfo.
 
-        Schema空间阈值。
+        **参数解释**： 集群模式空间阈值。 **取值范围**： 不涉及。
 
         :return: The perm_space of this SchemaInfo.
         :rtype: int
@@ -175,7 +175,7 @@ class SchemaInfo:
     def perm_space(self, perm_space):
         r"""Sets the perm_space of this SchemaInfo.
 
-        Schema空间阈值。
+        **参数解释**： 集群模式空间阈值。 **取值范围**： 不涉及。
 
         :param perm_space: The perm_space of this SchemaInfo.
         :type perm_space: int
@@ -186,7 +186,7 @@ class SchemaInfo:
     def skew_percent(self):
         r"""Gets the skew_percent of this SchemaInfo.
 
-        倾斜率。
+        **参数解释**： 倾斜率。 **取值范围**： 不涉及。
 
         :return: The skew_percent of this SchemaInfo.
         :rtype: float
@@ -197,7 +197,7 @@ class SchemaInfo:
     def skew_percent(self, skew_percent):
         r"""Sets the skew_percent of this SchemaInfo.
 
-        倾斜率。
+        **参数解释**： 倾斜率。 **取值范围**： 不涉及。
 
         :param skew_percent: The skew_percent of this SchemaInfo.
         :type skew_percent: float
@@ -208,7 +208,7 @@ class SchemaInfo:
     def min_value(self):
         r"""Gets the min_value of this SchemaInfo.
 
-        最小值。
+        **参数解释**： 最小值。 **取值范围**： 不涉及。
 
         :return: The min_value of this SchemaInfo.
         :rtype: int
@@ -219,7 +219,7 @@ class SchemaInfo:
     def min_value(self, min_value):
         r"""Sets the min_value of this SchemaInfo.
 
-        最小值。
+        **参数解释**： 最小值。 **取值范围**： 不涉及。
 
         :param min_value: The min_value of this SchemaInfo.
         :type min_value: int
@@ -230,7 +230,7 @@ class SchemaInfo:
     def max_value(self):
         r"""Gets the max_value of this SchemaInfo.
 
-        最大值。
+        **参数解释**： 最大值。 **取值范围**： 不涉及。
 
         :return: The max_value of this SchemaInfo.
         :rtype: int
@@ -241,7 +241,7 @@ class SchemaInfo:
     def max_value(self, max_value):
         r"""Sets the max_value of this SchemaInfo.
 
-        最大值。
+        **参数解释**： 最大值。 **取值范围**： 不涉及。
 
         :param max_value: The max_value of this SchemaInfo.
         :type max_value: int
@@ -252,7 +252,7 @@ class SchemaInfo:
     def min_dn(self):
         r"""Gets the min_dn of this SchemaInfo.
 
-        最小dn节点。
+        **参数解释**： 最小dn节点。 **取值范围**： 不涉及。
 
         :return: The min_dn of this SchemaInfo.
         :rtype: str
@@ -263,7 +263,7 @@ class SchemaInfo:
     def min_dn(self, min_dn):
         r"""Sets the min_dn of this SchemaInfo.
 
-        最小dn节点。
+        **参数解释**： 最小dn节点。 **取值范围**： 不涉及。
 
         :param min_dn: The min_dn of this SchemaInfo.
         :type min_dn: str
@@ -274,7 +274,7 @@ class SchemaInfo:
     def max_dn(self):
         r"""Gets the max_dn of this SchemaInfo.
 
-        最大cn节点。
+        **参数解释**： 最大cn节点。 **取值范围**： 不涉及。
 
         :return: The max_dn of this SchemaInfo.
         :rtype: str
@@ -285,7 +285,7 @@ class SchemaInfo:
     def max_dn(self, max_dn):
         r"""Sets the max_dn of this SchemaInfo.
 
-        最大cn节点。
+        **参数解释**： 最大cn节点。 **取值范围**： 不涉及。
 
         :param max_dn: The max_dn of this SchemaInfo.
         :type max_dn: str
@@ -296,7 +296,7 @@ class SchemaInfo:
     def dn_num(self):
         r"""Gets the dn_num of this SchemaInfo.
 
-        dn节点数量。
+        **参数解释**： dn节点数量。 **取值范围**： 不涉及。
 
         :return: The dn_num of this SchemaInfo.
         :rtype: int
@@ -307,7 +307,7 @@ class SchemaInfo:
     def dn_num(self, dn_num):
         r"""Sets the dn_num of this SchemaInfo.
 
-        dn节点数量。
+        **参数解释**： dn节点数量。 **取值范围**： 不涉及。
 
         :param dn_num: The dn_num of this SchemaInfo.
         :type dn_num: int

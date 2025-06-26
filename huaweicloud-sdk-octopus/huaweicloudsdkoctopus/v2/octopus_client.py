@@ -33,6 +33,71 @@ class OctopusClient(Client):
 
         return client_builder
 
+    def create_sim_batches(self, request):
+        r"""创建仿真任务
+
+        A DRF ViewSet for Batch.
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateSimBatches
+        :type request: :class:`huaweicloudsdkoctopus.v2.CreateSimBatchesRequest`
+        :rtype: :class:`huaweicloudsdkoctopus.v2.CreateSimBatchesResponse`
+        """
+        http_info = self._create_sim_batches_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_sim_batches_invoker(self, request):
+        http_info = self._create_sim_batches_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_sim_batches_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/sim/pm/batches",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSimBatchesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_sim_sm_maps(self, request):
         r"""创建场景地图
 
@@ -230,6 +295,91 @@ class OctopusClient(Client):
 
         return http_info
 
+    def list_sim_simulations(self, request):
+        r"""获取仿真子任务列表
+
+        List simulations data.
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListSimSimulations
+        :type request: :class:`huaweicloudsdkoctopus.v2.ListSimSimulationsRequest`
+        :rtype: :class:`huaweicloudsdkoctopus.v2.ListSimSimulationsResponse`
+        """
+        http_info = self._list_sim_simulations_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_sim_simulations_invoker(self, request):
+        http_info = self._list_sim_simulations_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_sim_simulations_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/sim/pm/simulations",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSimSimulationsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'algorithm_name' in local_var_params:
+            query_params.append(('algorithm_name', local_var_params['algorithm_name']))
+        if 'batch_id' in local_var_params:
+            query_params.append(('batch_id', local_var_params['batch_id']))
+        if 'batch_name' in local_var_params:
+            query_params.append(('batch_name', local_var_params['batch_name']))
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'label' in local_var_params:
+            query_params.append(('label', local_var_params['label']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'ordering' in local_var_params:
+            query_params.append(('ordering', local_var_params['ordering']))
+        if 'scenario_resource_id' in local_var_params:
+            query_params.append(('scenario_resource_id', local_var_params['scenario_resource_id']))
+        if 'scenario_resource_type' in local_var_params:
+            query_params.append(('scenario_resource_type', local_var_params['scenario_resource_type']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_sim_sm_scenarios(self, request):
         r"""场景列表
 
@@ -301,6 +451,73 @@ class OctopusClient(Client):
             query_params.append(('user_name', local_var_params['user_name']))
         if 'version' in local_var_params:
             query_params.append(('version', local_var_params['version']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_sim_simulations_files(self, request):
+        r"""获取指定的仿真任务下的pb、日志、回放文件
+
+        Get obs file pre-signed url in simulation.
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowSimSimulationsFiles
+        :type request: :class:`huaweicloudsdkoctopus.v2.ShowSimSimulationsFilesRequest`
+        :rtype: :class:`huaweicloudsdkoctopus.v2.ShowSimSimulationsFilesResponse`
+        """
+        http_info = self._show_sim_simulations_files_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_sim_simulations_files_invoker(self, request):
+        http_info = self._show_sim_simulations_files_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_sim_simulations_files_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/sim/pm/simulations/{id}/files",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSimSimulationsFilesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
 
         header_params = {}
 

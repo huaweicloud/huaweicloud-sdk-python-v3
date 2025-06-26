@@ -32,9 +32,9 @@ class ListUpdatableVersionResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param count: 集群升级路径总条数
+        :param count: **参数解释**： 集群升级路径总条数。 **取值范围**： 不涉及。
         :type count: int
-        :param items: 集群升级路径列表
+        :param items: **参数解释**： 集群升级路径列表。 **取值范围**： 不涉及。
         :type items: list[:class:`huaweicloudsdkdws.v2.UpdateItemResp`]
         """
         
@@ -53,7 +53,7 @@ class ListUpdatableVersionResponse(SdkResponse):
     def count(self):
         r"""Gets the count of this ListUpdatableVersionResponse.
 
-        集群升级路径总条数
+        **参数解释**： 集群升级路径总条数。 **取值范围**： 不涉及。
 
         :return: The count of this ListUpdatableVersionResponse.
         :rtype: int
@@ -64,7 +64,7 @@ class ListUpdatableVersionResponse(SdkResponse):
     def count(self, count):
         r"""Sets the count of this ListUpdatableVersionResponse.
 
-        集群升级路径总条数
+        **参数解释**： 集群升级路径总条数。 **取值范围**： 不涉及。
 
         :param count: The count of this ListUpdatableVersionResponse.
         :type count: int
@@ -75,7 +75,7 @@ class ListUpdatableVersionResponse(SdkResponse):
     def items(self):
         r"""Gets the items of this ListUpdatableVersionResponse.
 
-        集群升级路径列表
+        **参数解释**： 集群升级路径列表。 **取值范围**： 不涉及。
 
         :return: The items of this ListUpdatableVersionResponse.
         :rtype: list[:class:`huaweicloudsdkdws.v2.UpdateItemResp`]
@@ -86,7 +86,7 @@ class ListUpdatableVersionResponse(SdkResponse):
     def items(self, items):
         r"""Sets the items of this ListUpdatableVersionResponse.
 
-        集群升级路径列表
+        **参数解释**： 集群升级路径列表。 **取值范围**： 不涉及。
 
         :param items: The items of this ListUpdatableVersionResponse.
         :type items: list[:class:`huaweicloudsdkdws.v2.UpdateItemResp`]

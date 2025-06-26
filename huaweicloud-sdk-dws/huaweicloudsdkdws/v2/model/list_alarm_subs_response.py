@@ -32,9 +32,9 @@ class ListAlarmSubsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param count: 告警订阅总数
+        :param count: **参数解释**： 告警订阅总数。 **取值范围**： 不涉及。
         :type count: int
-        :param alarm_subscriptions: 告警订阅列表
+        :param alarm_subscriptions: **参数解释**： 告警订阅列表。 **取值范围**： 不涉及。
         :type alarm_subscriptions: list[:class:`huaweicloudsdkdws.v2.AlarmSubscriptionResponse`]
         """
         
@@ -53,7 +53,7 @@ class ListAlarmSubsResponse(SdkResponse):
     def count(self):
         r"""Gets the count of this ListAlarmSubsResponse.
 
-        告警订阅总数
+        **参数解释**： 告警订阅总数。 **取值范围**： 不涉及。
 
         :return: The count of this ListAlarmSubsResponse.
         :rtype: int
@@ -64,7 +64,7 @@ class ListAlarmSubsResponse(SdkResponse):
     def count(self, count):
         r"""Sets the count of this ListAlarmSubsResponse.
 
-        告警订阅总数
+        **参数解释**： 告警订阅总数。 **取值范围**： 不涉及。
 
         :param count: The count of this ListAlarmSubsResponse.
         :type count: int
@@ -75,7 +75,7 @@ class ListAlarmSubsResponse(SdkResponse):
     def alarm_subscriptions(self):
         r"""Gets the alarm_subscriptions of this ListAlarmSubsResponse.
 
-        告警订阅列表
+        **参数解释**： 告警订阅列表。 **取值范围**： 不涉及。
 
         :return: The alarm_subscriptions of this ListAlarmSubsResponse.
         :rtype: list[:class:`huaweicloudsdkdws.v2.AlarmSubscriptionResponse`]
@@ -86,7 +86,7 @@ class ListAlarmSubsResponse(SdkResponse):
     def alarm_subscriptions(self, alarm_subscriptions):
         r"""Sets the alarm_subscriptions of this ListAlarmSubsResponse.
 
-        告警订阅列表
+        **参数解释**： 告警订阅列表。 **取值范围**： 不涉及。
 
         :param alarm_subscriptions: The alarm_subscriptions of this ListAlarmSubsResponse.
         :type alarm_subscriptions: list[:class:`huaweicloudsdkdws.v2.AlarmSubscriptionResponse`]

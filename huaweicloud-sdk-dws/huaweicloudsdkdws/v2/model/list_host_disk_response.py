@@ -30,7 +30,7 @@ class ListHostDiskResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param body: 
+        :param body: **参数解释**： 磁盘信息响应体。 **取值范围**： 不涉及。
         :type body: list[:class:`huaweicloudsdkdws.v2.DiskResp`]
         """
         
@@ -46,6 +46,8 @@ class ListHostDiskResponse(SdkResponse):
     def body(self):
         r"""Gets the body of this ListHostDiskResponse.
 
+        **参数解释**： 磁盘信息响应体。 **取值范围**： 不涉及。
+
         :return: The body of this ListHostDiskResponse.
         :rtype: list[:class:`huaweicloudsdkdws.v2.DiskResp`]
         """
@@ -54,6 +56,8 @@ class ListHostDiskResponse(SdkResponse):
     @body.setter
     def body(self, body):
         r"""Sets the body of this ListHostDiskResponse.
+
+        **参数解释**： 磁盘信息响应体。 **取值范围**： 不涉及。
 
         :param body: The body of this ListHostDiskResponse.
         :type body: list[:class:`huaweicloudsdkdws.v2.DiskResp`]

@@ -77,55 +77,55 @@ class HostOverviewResponse:
 
         The model defined in huaweicloud sdk
 
-        :param instance_name: 实例名称
+        :param instance_name: **参数解释**： 实例名称。 **取值范围**： 不涉及。
         :type instance_name: str
-        :param host_name: 主机名称
+        :param host_name: **参数解释**： 主机名称。 **取值范围**： 不涉及。
         :type host_name: str
-        :param host_stat: 主机状态
+        :param host_stat: **参数解释**： 主机状态。 **取值范围**： 不涉及。
         :type host_stat: str
-        :param work_ip: IP地址
+        :param work_ip: **参数解释**： IP地址。 **取值范围**： 不涉及。
         :type work_ip: str
-        :param mem_free: 系统中未使用的内存(GB)。
+        :param mem_free: **参数解释**： 系统中未使用的内存(GB)。 **取值范围**： 不涉及。
         :type mem_free: float
-        :param mem_total: 总内存(GB)。
+        :param mem_total: **参数解释**： 总内存(GB)。 **取值范围**： 不涉及。
         :type mem_total: float
-        :param mem_usage: 内存使用率(GB)。
+        :param mem_usage: **参数解释**： 内存使用率(GB)。 **取值范围**： 不涉及。
         :type mem_usage: float
-        :param mem_cached: 缓存内存(GB)。
+        :param mem_cached: **参数解释**： 缓存内存(GB)。 **取值范围**： 不涉及。
         :type mem_cached: float
-        :param mem_buffer: 缓冲内存(MB)。
+        :param mem_buffer: **参数解释**： 缓冲内存(MB)。 **取值范围**： 不涉及。
         :type mem_buffer: float
-        :param swap_free: ram暂存在swap中的大小(GB)。
+        :param swap_free: **参数解释**： ram暂存在swap中的大小(GB)。 **取值范围**： 不涉及。
         :type swap_free: float
-        :param swap_total: 交换空间总和(GB)。
+        :param swap_total: **参数解释**： 交换空间总和(GB)。 **取值范围**： 不涉及。
         :type swap_total: float
-        :param cpu_usage: CPU使用率(%)。
+        :param cpu_usage: **参数解释**： CPU使用率(%)。 **取值范围**： 不涉及。
         :type cpu_usage: float
-        :param cpu_usage_sys: 系统CPU占用率(%)。
+        :param cpu_usage_sys: **参数解释**： 系统CPU占用率(%)。 **取值范围**： 不涉及。
         :type cpu_usage_sys: float
-        :param cpu_usage_usr: 用户CPU占用率(%)。
+        :param cpu_usage_usr: **参数解释**： 用户CPU占用率(%)。 **取值范围**： 不涉及。
         :type cpu_usage_usr: float
-        :param cpu_idle: 空闲CPU占用率(%)。
+        :param cpu_idle: **参数解释**： 空闲CPU占用率(%)。 **取值范围**： 不涉及。
         :type cpu_idle: float
-        :param cpu_iowait: IO等待(%)。
+        :param cpu_iowait: **参数解释**： IO等待(%)。 **取值范围**： 不涉及。
         :type cpu_iowait: float
-        :param disk_usage_avg: 磁盘平均使用率(%)。
+        :param disk_usage_avg: **参数解释**： 磁盘平均使用率(%)。 **取值范围**： 不涉及。
         :type disk_usage_avg: float
-        :param disk_total: 磁盘总容量(GB)。
+        :param disk_total: **参数解释**： 磁盘总容量(GB)。 **取值范围**： 不涉及。
         :type disk_total: float
-        :param disk_used: 磁盘使用容量(GB)。
+        :param disk_used: **参数解释**： 磁盘使用容量(GB)。 **取值范围**： 不涉及。
         :type disk_used: float
-        :param disk_available: 磁盘可用容量(GB)。
+        :param disk_available: **参数解释**： 磁盘可用容量(GB)。 **取值范围**： 不涉及。
         :type disk_available: float
-        :param disk_io: 磁盘IO(KB/s)。
+        :param disk_io: **参数解释**： 磁盘IO(KB/s)。 **取值范围**： 不涉及。
         :type disk_io: float
-        :param disk_io_read: 磁盘读速率(KB/s)。
+        :param disk_io_read: **参数解释**： 磁盘读速率(KB/s)。 **取值范围**： 不涉及。
         :type disk_io_read: float
-        :param disk_io_write: 磁盘写速率(KB/s)。
+        :param disk_io_write: **参数解释**： 磁盘写速率(KB/s)。 **取值范围**： 不涉及。
         :type disk_io_write: float
-        :param tcp_resend_rate: TCP协议栈重传率(%)。
+        :param tcp_resend_rate: **参数解释**： TCP协议栈重传率(%)。 **取值范围**： 不涉及。
         :type tcp_resend_rate: float
-        :param net_io: 网络IO(KB/s)。
+        :param net_io: **参数解释**： 网络IO(KB/s)。 **取值范围**： 不涉及。
         :type net_io: float
         """
         
@@ -213,7 +213,7 @@ class HostOverviewResponse:
     def instance_name(self):
         r"""Gets the instance_name of this HostOverviewResponse.
 
-        实例名称
+        **参数解释**： 实例名称。 **取值范围**： 不涉及。
 
         :return: The instance_name of this HostOverviewResponse.
         :rtype: str
@@ -224,7 +224,7 @@ class HostOverviewResponse:
     def instance_name(self, instance_name):
         r"""Sets the instance_name of this HostOverviewResponse.
 
-        实例名称
+        **参数解释**： 实例名称。 **取值范围**： 不涉及。
 
         :param instance_name: The instance_name of this HostOverviewResponse.
         :type instance_name: str
@@ -235,7 +235,7 @@ class HostOverviewResponse:
     def host_name(self):
         r"""Gets the host_name of this HostOverviewResponse.
 
-        主机名称
+        **参数解释**： 主机名称。 **取值范围**： 不涉及。
 
         :return: The host_name of this HostOverviewResponse.
         :rtype: str
@@ -246,7 +246,7 @@ class HostOverviewResponse:
     def host_name(self, host_name):
         r"""Sets the host_name of this HostOverviewResponse.
 
-        主机名称
+        **参数解释**： 主机名称。 **取值范围**： 不涉及。
 
         :param host_name: The host_name of this HostOverviewResponse.
         :type host_name: str
@@ -257,7 +257,7 @@ class HostOverviewResponse:
     def host_stat(self):
         r"""Gets the host_stat of this HostOverviewResponse.
 
-        主机状态
+        **参数解释**： 主机状态。 **取值范围**： 不涉及。
 
         :return: The host_stat of this HostOverviewResponse.
         :rtype: str
@@ -268,7 +268,7 @@ class HostOverviewResponse:
     def host_stat(self, host_stat):
         r"""Sets the host_stat of this HostOverviewResponse.
 
-        主机状态
+        **参数解释**： 主机状态。 **取值范围**： 不涉及。
 
         :param host_stat: The host_stat of this HostOverviewResponse.
         :type host_stat: str
@@ -279,7 +279,7 @@ class HostOverviewResponse:
     def work_ip(self):
         r"""Gets the work_ip of this HostOverviewResponse.
 
-        IP地址
+        **参数解释**： IP地址。 **取值范围**： 不涉及。
 
         :return: The work_ip of this HostOverviewResponse.
         :rtype: str
@@ -290,7 +290,7 @@ class HostOverviewResponse:
     def work_ip(self, work_ip):
         r"""Sets the work_ip of this HostOverviewResponse.
 
-        IP地址
+        **参数解释**： IP地址。 **取值范围**： 不涉及。
 
         :param work_ip: The work_ip of this HostOverviewResponse.
         :type work_ip: str
@@ -301,7 +301,7 @@ class HostOverviewResponse:
     def mem_free(self):
         r"""Gets the mem_free of this HostOverviewResponse.
 
-        系统中未使用的内存(GB)。
+        **参数解释**： 系统中未使用的内存(GB)。 **取值范围**： 不涉及。
 
         :return: The mem_free of this HostOverviewResponse.
         :rtype: float
@@ -312,7 +312,7 @@ class HostOverviewResponse:
     def mem_free(self, mem_free):
         r"""Sets the mem_free of this HostOverviewResponse.
 
-        系统中未使用的内存(GB)。
+        **参数解释**： 系统中未使用的内存(GB)。 **取值范围**： 不涉及。
 
         :param mem_free: The mem_free of this HostOverviewResponse.
         :type mem_free: float
@@ -323,7 +323,7 @@ class HostOverviewResponse:
     def mem_total(self):
         r"""Gets the mem_total of this HostOverviewResponse.
 
-        总内存(GB)。
+        **参数解释**： 总内存(GB)。 **取值范围**： 不涉及。
 
         :return: The mem_total of this HostOverviewResponse.
         :rtype: float
@@ -334,7 +334,7 @@ class HostOverviewResponse:
     def mem_total(self, mem_total):
         r"""Sets the mem_total of this HostOverviewResponse.
 
-        总内存(GB)。
+        **参数解释**： 总内存(GB)。 **取值范围**： 不涉及。
 
         :param mem_total: The mem_total of this HostOverviewResponse.
         :type mem_total: float
@@ -345,7 +345,7 @@ class HostOverviewResponse:
     def mem_usage(self):
         r"""Gets the mem_usage of this HostOverviewResponse.
 
-        内存使用率(GB)。
+        **参数解释**： 内存使用率(GB)。 **取值范围**： 不涉及。
 
         :return: The mem_usage of this HostOverviewResponse.
         :rtype: float
@@ -356,7 +356,7 @@ class HostOverviewResponse:
     def mem_usage(self, mem_usage):
         r"""Sets the mem_usage of this HostOverviewResponse.
 
-        内存使用率(GB)。
+        **参数解释**： 内存使用率(GB)。 **取值范围**： 不涉及。
 
         :param mem_usage: The mem_usage of this HostOverviewResponse.
         :type mem_usage: float
@@ -367,7 +367,7 @@ class HostOverviewResponse:
     def mem_cached(self):
         r"""Gets the mem_cached of this HostOverviewResponse.
 
-        缓存内存(GB)。
+        **参数解释**： 缓存内存(GB)。 **取值范围**： 不涉及。
 
         :return: The mem_cached of this HostOverviewResponse.
         :rtype: float
@@ -378,7 +378,7 @@ class HostOverviewResponse:
     def mem_cached(self, mem_cached):
         r"""Sets the mem_cached of this HostOverviewResponse.
 
-        缓存内存(GB)。
+        **参数解释**： 缓存内存(GB)。 **取值范围**： 不涉及。
 
         :param mem_cached: The mem_cached of this HostOverviewResponse.
         :type mem_cached: float
@@ -389,7 +389,7 @@ class HostOverviewResponse:
     def mem_buffer(self):
         r"""Gets the mem_buffer of this HostOverviewResponse.
 
-        缓冲内存(MB)。
+        **参数解释**： 缓冲内存(MB)。 **取值范围**： 不涉及。
 
         :return: The mem_buffer of this HostOverviewResponse.
         :rtype: float
@@ -400,7 +400,7 @@ class HostOverviewResponse:
     def mem_buffer(self, mem_buffer):
         r"""Sets the mem_buffer of this HostOverviewResponse.
 
-        缓冲内存(MB)。
+        **参数解释**： 缓冲内存(MB)。 **取值范围**： 不涉及。
 
         :param mem_buffer: The mem_buffer of this HostOverviewResponse.
         :type mem_buffer: float
@@ -411,7 +411,7 @@ class HostOverviewResponse:
     def swap_free(self):
         r"""Gets the swap_free of this HostOverviewResponse.
 
-        ram暂存在swap中的大小(GB)。
+        **参数解释**： ram暂存在swap中的大小(GB)。 **取值范围**： 不涉及。
 
         :return: The swap_free of this HostOverviewResponse.
         :rtype: float
@@ -422,7 +422,7 @@ class HostOverviewResponse:
     def swap_free(self, swap_free):
         r"""Sets the swap_free of this HostOverviewResponse.
 
-        ram暂存在swap中的大小(GB)。
+        **参数解释**： ram暂存在swap中的大小(GB)。 **取值范围**： 不涉及。
 
         :param swap_free: The swap_free of this HostOverviewResponse.
         :type swap_free: float
@@ -433,7 +433,7 @@ class HostOverviewResponse:
     def swap_total(self):
         r"""Gets the swap_total of this HostOverviewResponse.
 
-        交换空间总和(GB)。
+        **参数解释**： 交换空间总和(GB)。 **取值范围**： 不涉及。
 
         :return: The swap_total of this HostOverviewResponse.
         :rtype: float
@@ -444,7 +444,7 @@ class HostOverviewResponse:
     def swap_total(self, swap_total):
         r"""Sets the swap_total of this HostOverviewResponse.
 
-        交换空间总和(GB)。
+        **参数解释**： 交换空间总和(GB)。 **取值范围**： 不涉及。
 
         :param swap_total: The swap_total of this HostOverviewResponse.
         :type swap_total: float
@@ -455,7 +455,7 @@ class HostOverviewResponse:
     def cpu_usage(self):
         r"""Gets the cpu_usage of this HostOverviewResponse.
 
-        CPU使用率(%)。
+        **参数解释**： CPU使用率(%)。 **取值范围**： 不涉及。
 
         :return: The cpu_usage of this HostOverviewResponse.
         :rtype: float
@@ -466,7 +466,7 @@ class HostOverviewResponse:
     def cpu_usage(self, cpu_usage):
         r"""Sets the cpu_usage of this HostOverviewResponse.
 
-        CPU使用率(%)。
+        **参数解释**： CPU使用率(%)。 **取值范围**： 不涉及。
 
         :param cpu_usage: The cpu_usage of this HostOverviewResponse.
         :type cpu_usage: float
@@ -477,7 +477,7 @@ class HostOverviewResponse:
     def cpu_usage_sys(self):
         r"""Gets the cpu_usage_sys of this HostOverviewResponse.
 
-        系统CPU占用率(%)。
+        **参数解释**： 系统CPU占用率(%)。 **取值范围**： 不涉及。
 
         :return: The cpu_usage_sys of this HostOverviewResponse.
         :rtype: float
@@ -488,7 +488,7 @@ class HostOverviewResponse:
     def cpu_usage_sys(self, cpu_usage_sys):
         r"""Sets the cpu_usage_sys of this HostOverviewResponse.
 
-        系统CPU占用率(%)。
+        **参数解释**： 系统CPU占用率(%)。 **取值范围**： 不涉及。
 
         :param cpu_usage_sys: The cpu_usage_sys of this HostOverviewResponse.
         :type cpu_usage_sys: float
@@ -499,7 +499,7 @@ class HostOverviewResponse:
     def cpu_usage_usr(self):
         r"""Gets the cpu_usage_usr of this HostOverviewResponse.
 
-        用户CPU占用率(%)。
+        **参数解释**： 用户CPU占用率(%)。 **取值范围**： 不涉及。
 
         :return: The cpu_usage_usr of this HostOverviewResponse.
         :rtype: float
@@ -510,7 +510,7 @@ class HostOverviewResponse:
     def cpu_usage_usr(self, cpu_usage_usr):
         r"""Sets the cpu_usage_usr of this HostOverviewResponse.
 
-        用户CPU占用率(%)。
+        **参数解释**： 用户CPU占用率(%)。 **取值范围**： 不涉及。
 
         :param cpu_usage_usr: The cpu_usage_usr of this HostOverviewResponse.
         :type cpu_usage_usr: float
@@ -521,7 +521,7 @@ class HostOverviewResponse:
     def cpu_idle(self):
         r"""Gets the cpu_idle of this HostOverviewResponse.
 
-        空闲CPU占用率(%)。
+        **参数解释**： 空闲CPU占用率(%)。 **取值范围**： 不涉及。
 
         :return: The cpu_idle of this HostOverviewResponse.
         :rtype: float
@@ -532,7 +532,7 @@ class HostOverviewResponse:
     def cpu_idle(self, cpu_idle):
         r"""Sets the cpu_idle of this HostOverviewResponse.
 
-        空闲CPU占用率(%)。
+        **参数解释**： 空闲CPU占用率(%)。 **取值范围**： 不涉及。
 
         :param cpu_idle: The cpu_idle of this HostOverviewResponse.
         :type cpu_idle: float
@@ -543,7 +543,7 @@ class HostOverviewResponse:
     def cpu_iowait(self):
         r"""Gets the cpu_iowait of this HostOverviewResponse.
 
-        IO等待(%)。
+        **参数解释**： IO等待(%)。 **取值范围**： 不涉及。
 
         :return: The cpu_iowait of this HostOverviewResponse.
         :rtype: float
@@ -554,7 +554,7 @@ class HostOverviewResponse:
     def cpu_iowait(self, cpu_iowait):
         r"""Sets the cpu_iowait of this HostOverviewResponse.
 
-        IO等待(%)。
+        **参数解释**： IO等待(%)。 **取值范围**： 不涉及。
 
         :param cpu_iowait: The cpu_iowait of this HostOverviewResponse.
         :type cpu_iowait: float
@@ -565,7 +565,7 @@ class HostOverviewResponse:
     def disk_usage_avg(self):
         r"""Gets the disk_usage_avg of this HostOverviewResponse.
 
-        磁盘平均使用率(%)。
+        **参数解释**： 磁盘平均使用率(%)。 **取值范围**： 不涉及。
 
         :return: The disk_usage_avg of this HostOverviewResponse.
         :rtype: float
@@ -576,7 +576,7 @@ class HostOverviewResponse:
     def disk_usage_avg(self, disk_usage_avg):
         r"""Sets the disk_usage_avg of this HostOverviewResponse.
 
-        磁盘平均使用率(%)。
+        **参数解释**： 磁盘平均使用率(%)。 **取值范围**： 不涉及。
 
         :param disk_usage_avg: The disk_usage_avg of this HostOverviewResponse.
         :type disk_usage_avg: float
@@ -587,7 +587,7 @@ class HostOverviewResponse:
     def disk_total(self):
         r"""Gets the disk_total of this HostOverviewResponse.
 
-        磁盘总容量(GB)。
+        **参数解释**： 磁盘总容量(GB)。 **取值范围**： 不涉及。
 
         :return: The disk_total of this HostOverviewResponse.
         :rtype: float
@@ -598,7 +598,7 @@ class HostOverviewResponse:
     def disk_total(self, disk_total):
         r"""Sets the disk_total of this HostOverviewResponse.
 
-        磁盘总容量(GB)。
+        **参数解释**： 磁盘总容量(GB)。 **取值范围**： 不涉及。
 
         :param disk_total: The disk_total of this HostOverviewResponse.
         :type disk_total: float
@@ -609,7 +609,7 @@ class HostOverviewResponse:
     def disk_used(self):
         r"""Gets the disk_used of this HostOverviewResponse.
 
-        磁盘使用容量(GB)。
+        **参数解释**： 磁盘使用容量(GB)。 **取值范围**： 不涉及。
 
         :return: The disk_used of this HostOverviewResponse.
         :rtype: float
@@ -620,7 +620,7 @@ class HostOverviewResponse:
     def disk_used(self, disk_used):
         r"""Sets the disk_used of this HostOverviewResponse.
 
-        磁盘使用容量(GB)。
+        **参数解释**： 磁盘使用容量(GB)。 **取值范围**： 不涉及。
 
         :param disk_used: The disk_used of this HostOverviewResponse.
         :type disk_used: float
@@ -631,7 +631,7 @@ class HostOverviewResponse:
     def disk_available(self):
         r"""Gets the disk_available of this HostOverviewResponse.
 
-        磁盘可用容量(GB)。
+        **参数解释**： 磁盘可用容量(GB)。 **取值范围**： 不涉及。
 
         :return: The disk_available of this HostOverviewResponse.
         :rtype: float
@@ -642,7 +642,7 @@ class HostOverviewResponse:
     def disk_available(self, disk_available):
         r"""Sets the disk_available of this HostOverviewResponse.
 
-        磁盘可用容量(GB)。
+        **参数解释**： 磁盘可用容量(GB)。 **取值范围**： 不涉及。
 
         :param disk_available: The disk_available of this HostOverviewResponse.
         :type disk_available: float
@@ -653,7 +653,7 @@ class HostOverviewResponse:
     def disk_io(self):
         r"""Gets the disk_io of this HostOverviewResponse.
 
-        磁盘IO(KB/s)。
+        **参数解释**： 磁盘IO(KB/s)。 **取值范围**： 不涉及。
 
         :return: The disk_io of this HostOverviewResponse.
         :rtype: float
@@ -664,7 +664,7 @@ class HostOverviewResponse:
     def disk_io(self, disk_io):
         r"""Sets the disk_io of this HostOverviewResponse.
 
-        磁盘IO(KB/s)。
+        **参数解释**： 磁盘IO(KB/s)。 **取值范围**： 不涉及。
 
         :param disk_io: The disk_io of this HostOverviewResponse.
         :type disk_io: float
@@ -675,7 +675,7 @@ class HostOverviewResponse:
     def disk_io_read(self):
         r"""Gets the disk_io_read of this HostOverviewResponse.
 
-        磁盘读速率(KB/s)。
+        **参数解释**： 磁盘读速率(KB/s)。 **取值范围**： 不涉及。
 
         :return: The disk_io_read of this HostOverviewResponse.
         :rtype: float
@@ -686,7 +686,7 @@ class HostOverviewResponse:
     def disk_io_read(self, disk_io_read):
         r"""Sets the disk_io_read of this HostOverviewResponse.
 
-        磁盘读速率(KB/s)。
+        **参数解释**： 磁盘读速率(KB/s)。 **取值范围**： 不涉及。
 
         :param disk_io_read: The disk_io_read of this HostOverviewResponse.
         :type disk_io_read: float
@@ -697,7 +697,7 @@ class HostOverviewResponse:
     def disk_io_write(self):
         r"""Gets the disk_io_write of this HostOverviewResponse.
 
-        磁盘写速率(KB/s)。
+        **参数解释**： 磁盘写速率(KB/s)。 **取值范围**： 不涉及。
 
         :return: The disk_io_write of this HostOverviewResponse.
         :rtype: float
@@ -708,7 +708,7 @@ class HostOverviewResponse:
     def disk_io_write(self, disk_io_write):
         r"""Sets the disk_io_write of this HostOverviewResponse.
 
-        磁盘写速率(KB/s)。
+        **参数解释**： 磁盘写速率(KB/s)。 **取值范围**： 不涉及。
 
         :param disk_io_write: The disk_io_write of this HostOverviewResponse.
         :type disk_io_write: float
@@ -719,7 +719,7 @@ class HostOverviewResponse:
     def tcp_resend_rate(self):
         r"""Gets the tcp_resend_rate of this HostOverviewResponse.
 
-        TCP协议栈重传率(%)。
+        **参数解释**： TCP协议栈重传率(%)。 **取值范围**： 不涉及。
 
         :return: The tcp_resend_rate of this HostOverviewResponse.
         :rtype: float
@@ -730,7 +730,7 @@ class HostOverviewResponse:
     def tcp_resend_rate(self, tcp_resend_rate):
         r"""Sets the tcp_resend_rate of this HostOverviewResponse.
 
-        TCP协议栈重传率(%)。
+        **参数解释**： TCP协议栈重传率(%)。 **取值范围**： 不涉及。
 
         :param tcp_resend_rate: The tcp_resend_rate of this HostOverviewResponse.
         :type tcp_resend_rate: float
@@ -741,7 +741,7 @@ class HostOverviewResponse:
     def net_io(self):
         r"""Gets the net_io of this HostOverviewResponse.
 
-        网络IO(KB/s)。
+        **参数解释**： 网络IO(KB/s)。 **取值范围**： 不涉及。
 
         :return: The net_io of this HostOverviewResponse.
         :rtype: float
@@ -752,7 +752,7 @@ class HostOverviewResponse:
     def net_io(self, net_io):
         r"""Sets the net_io of this HostOverviewResponse.
 
-        网络IO(KB/s)。
+        **参数解释**： 网络IO(KB/s)。 **取值范围**： 不涉及。
 
         :param net_io: The net_io of this HostOverviewResponse.
         :type net_io: float

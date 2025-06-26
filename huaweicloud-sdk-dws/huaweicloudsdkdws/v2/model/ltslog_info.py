@@ -37,15 +37,15 @@ class LtslogInfo:
 
         The model defined in huaweicloud sdk
 
-        :param status: 配置状态
+        :param status: **参数解释**： 配置状态。 **取值范围**： 不涉及。
         :type status: str
-        :param id: 日志ID
+        :param id: **参数解释**： 日志ID。 **取值范围**： 不涉及。
         :type id: str
-        :param log_type: 日志类型
+        :param log_type: **参数解释**： 日志类型。 **取值范围**： 不涉及。
         :type log_type: str
-        :param log_desc: 日志描述
+        :param log_desc: **参数解释**： 日志描述。 **取值范围**： 不涉及。
         :type log_desc: str
-        :param access_url: LTS日志访问URL
+        :param access_url: **参数解释**： LTS日志访问URL。 **取值范围**： 不涉及。
         :type access_url: str
         """
         
@@ -68,7 +68,7 @@ class LtslogInfo:
     def status(self):
         r"""Gets the status of this LtslogInfo.
 
-        配置状态
+        **参数解释**： 配置状态。 **取值范围**： 不涉及。
 
         :return: The status of this LtslogInfo.
         :rtype: str
@@ -79,7 +79,7 @@ class LtslogInfo:
     def status(self, status):
         r"""Sets the status of this LtslogInfo.
 
-        配置状态
+        **参数解释**： 配置状态。 **取值范围**： 不涉及。
 
         :param status: The status of this LtslogInfo.
         :type status: str
@@ -90,7 +90,7 @@ class LtslogInfo:
     def id(self):
         r"""Gets the id of this LtslogInfo.
 
-        日志ID
+        **参数解释**： 日志ID。 **取值范围**： 不涉及。
 
         :return: The id of this LtslogInfo.
         :rtype: str
@@ -101,7 +101,7 @@ class LtslogInfo:
     def id(self, id):
         r"""Sets the id of this LtslogInfo.
 
-        日志ID
+        **参数解释**： 日志ID。 **取值范围**： 不涉及。
 
         :param id: The id of this LtslogInfo.
         :type id: str
@@ -112,7 +112,7 @@ class LtslogInfo:
     def log_type(self):
         r"""Gets the log_type of this LtslogInfo.
 
-        日志类型
+        **参数解释**： 日志类型。 **取值范围**： 不涉及。
 
         :return: The log_type of this LtslogInfo.
         :rtype: str
@@ -123,7 +123,7 @@ class LtslogInfo:
     def log_type(self, log_type):
         r"""Sets the log_type of this LtslogInfo.
 
-        日志类型
+        **参数解释**： 日志类型。 **取值范围**： 不涉及。
 
         :param log_type: The log_type of this LtslogInfo.
         :type log_type: str
@@ -134,7 +134,7 @@ class LtslogInfo:
     def log_desc(self):
         r"""Gets the log_desc of this LtslogInfo.
 
-        日志描述
+        **参数解释**： 日志描述。 **取值范围**： 不涉及。
 
         :return: The log_desc of this LtslogInfo.
         :rtype: str
@@ -145,7 +145,7 @@ class LtslogInfo:
     def log_desc(self, log_desc):
         r"""Sets the log_desc of this LtslogInfo.
 
-        日志描述
+        **参数解释**： 日志描述。 **取值范围**： 不涉及。
 
         :param log_desc: The log_desc of this LtslogInfo.
         :type log_desc: str
@@ -156,7 +156,7 @@ class LtslogInfo:
     def access_url(self):
         r"""Gets the access_url of this LtslogInfo.
 
-        LTS日志访问URL
+        **参数解释**： LTS日志访问URL。 **取值范围**： 不涉及。
 
         :return: The access_url of this LtslogInfo.
         :rtype: str
@@ -167,7 +167,7 @@ class LtslogInfo:
     def access_url(self, access_url):
         r"""Sets the access_url of this LtslogInfo.
 
-        LTS日志访问URL
+        **参数解释**： LTS日志访问URL。 **取值范围**： 不涉及。
 
         :param access_url: The access_url of this LtslogInfo.
         :type access_url: str

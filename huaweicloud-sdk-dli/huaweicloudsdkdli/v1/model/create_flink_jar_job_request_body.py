@@ -41,6 +41,7 @@ class CreateFlinkJarJobRequestBody:
         'resume_max_num': 'int',
         'checkpoint_path': 'str',
         'runtime_config': 'str',
+        'execution_agency_urn': 'str',
         'tags': 'list[Tag]',
         'resource_config': 'ResourceConfig',
         'resource_config_version': 'str'
@@ -71,12 +72,13 @@ class CreateFlinkJarJobRequestBody:
         'resume_max_num': 'resume_max_num',
         'checkpoint_path': 'checkpoint_path',
         'runtime_config': 'runtime_config',
+        'execution_agency_urn': 'execution_agency_urn',
         'tags': 'tags',
         'resource_config': 'resource_config',
         'resource_config_version': 'resource_config_version'
     }
 
-    def __init__(self, name=None, desc=None, queue_name=None, cu_number=None, manager_cu_number=None, parallel_number=None, log_enabled=None, obs_bucket=None, smn_topic=None, main_class=None, entrypoint_args=None, restart_when_exception=None, entrypoint=None, dependency_jars=None, dependency_files=None, flink_version=None, image=None, tm_slot_num=None, tm_cus=None, feature=None, resume_checkpoint=None, resume_max_num=None, checkpoint_path=None, runtime_config=None, tags=None, resource_config=None, resource_config_version=None):
+    def __init__(self, name=None, desc=None, queue_name=None, cu_number=None, manager_cu_number=None, parallel_number=None, log_enabled=None, obs_bucket=None, smn_topic=None, main_class=None, entrypoint_args=None, restart_when_exception=None, entrypoint=None, dependency_jars=None, dependency_files=None, flink_version=None, image=None, tm_slot_num=None, tm_cus=None, feature=None, resume_checkpoint=None, resume_max_num=None, checkpoint_path=None, runtime_config=None, execution_agency_urn=None, tags=None, resource_config=None, resource_config_version=None):
         r"""CreateFlinkJarJobRequestBody
 
         The model defined in huaweicloud sdk
@@ -129,6 +131,8 @@ class CreateFlinkJarJobRequestBody:
         :type checkpoint_path: str
         :param runtime_config: Flink作业运行时自定义优化参数。
         :type runtime_config: str
+        :param execution_agency_urn: 授权给DLI的委托名。Flink1.15版本时支持配置该参数。
+        :type execution_agency_urn: str
         :param tags: 标签
         :type tags: list[:class:`huaweicloudsdkdli.v1.Tag`]
         :param resource_config: 
@@ -163,6 +167,7 @@ class CreateFlinkJarJobRequestBody:
         self._resume_max_num = None
         self._checkpoint_path = None
         self._runtime_config = None
+        self._execution_agency_urn = None
         self._tags = None
         self._resource_config = None
         self._resource_config_version = None
@@ -215,6 +220,8 @@ class CreateFlinkJarJobRequestBody:
             self.checkpoint_path = checkpoint_path
         if runtime_config is not None:
             self.runtime_config = runtime_config
+        if execution_agency_urn is not None:
+            self.execution_agency_urn = execution_agency_urn
         if tags is not None:
             self.tags = tags
         if resource_config is not None:
@@ -749,6 +756,28 @@ class CreateFlinkJarJobRequestBody:
         :type runtime_config: str
         """
         self._runtime_config = runtime_config
+
+    @property
+    def execution_agency_urn(self):
+        r"""Gets the execution_agency_urn of this CreateFlinkJarJobRequestBody.
+
+        授权给DLI的委托名。Flink1.15版本时支持配置该参数。
+
+        :return: The execution_agency_urn of this CreateFlinkJarJobRequestBody.
+        :rtype: str
+        """
+        return self._execution_agency_urn
+
+    @execution_agency_urn.setter
+    def execution_agency_urn(self, execution_agency_urn):
+        r"""Sets the execution_agency_urn of this CreateFlinkJarJobRequestBody.
+
+        授权给DLI的委托名。Flink1.15版本时支持配置该参数。
+
+        :param execution_agency_urn: The execution_agency_urn of this CreateFlinkJarJobRequestBody.
+        :type execution_agency_urn: str
+        """
+        self._execution_agency_urn = execution_agency_urn
 
     @property
     def tags(self):

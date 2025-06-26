@@ -47,7 +47,7 @@ class RedisConf:
         :type parallel_jobs: int
         :param parallel_job: **参数解释**： 重分布并发数，已经废弃。 **取值范围**： 1~200。
         :type parallel_job: int
-        :param priority_policy: **参数解释**： 优先级策略,支持large优先对大表进行重分布，small优先对小表进行重分布，default默认顺序进行重分布。 **取值范围**： large|small|default。
+        :param priority_policy: **参数解释**： 优先级策略。 **取值范围**： large：优先对大表进行重分布。 small：优先对小表进行重分布 default：默认顺序进行重分布。
         :type priority_policy: str
         :param bucket_split_info: 
         :type bucket_split_info: :class:`huaweicloudsdkdws.v2.BucketSplitInfo`
@@ -161,7 +161,7 @@ class RedisConf:
     def priority_policy(self):
         r"""Gets the priority_policy of this RedisConf.
 
-        **参数解释**： 优先级策略,支持large优先对大表进行重分布，small优先对小表进行重分布，default默认顺序进行重分布。 **取值范围**： large|small|default。
+        **参数解释**： 优先级策略。 **取值范围**： large：优先对大表进行重分布。 small：优先对小表进行重分布 default：默认顺序进行重分布。
 
         :return: The priority_policy of this RedisConf.
         :rtype: str
@@ -172,7 +172,7 @@ class RedisConf:
     def priority_policy(self, priority_policy):
         r"""Sets the priority_policy of this RedisConf.
 
-        **参数解释**： 优先级策略,支持large优先对大表进行重分布，small优先对小表进行重分布，default默认顺序进行重分布。 **取值范围**： large|small|default。
+        **参数解释**： 优先级策略。 **取值范围**： large：优先对大表进行重分布。 small：优先对小表进行重分布 default：默认顺序进行重分布。
 
         :param priority_policy: The priority_policy of this RedisConf.
         :type priority_policy: str

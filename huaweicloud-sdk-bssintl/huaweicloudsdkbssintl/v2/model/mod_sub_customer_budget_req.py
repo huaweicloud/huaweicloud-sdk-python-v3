@@ -21,7 +21,8 @@ class ModSubCustomerBudgetReq:
         'budget_amount': 'float',
         'cancel_partner_frozen': 'str',
         'indirect_partner_id': 'str',
-        'budget_type': 'str'
+        'budget_type': 'str',
+        'frozen_operate_type': 'int'
     }
 
     attribute_map = {
@@ -29,10 +30,11 @@ class ModSubCustomerBudgetReq:
         'budget_amount': 'budget_amount',
         'cancel_partner_frozen': 'cancel_partner_frozen',
         'indirect_partner_id': 'indirect_partner_id',
-        'budget_type': 'budget_type'
+        'budget_type': 'budget_type',
+        'frozen_operate_type': 'frozen_operate_type'
     }
 
-    def __init__(self, customer_id=None, budget_amount=None, cancel_partner_frozen=None, indirect_partner_id=None, budget_type=None):
+    def __init__(self, customer_id=None, budget_amount=None, cancel_partner_frozen=None, indirect_partner_id=None, budget_type=None, frozen_operate_type=None):
         r"""ModSubCustomerBudgetReq
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class ModSubCustomerBudgetReq:
         :type indirect_partner_id: str
         :param budget_type: |参数名称：预算模式| |参数的约束及描述：MONTHLY 月度预算 PACKAGE 一次性预算 ，此参数不携带或携带值为null时，默认值为MONTHLY。|
         :type budget_type: str
+        :param frozen_operate_type: |参数名称：设置超预算时是否自动冻结| |参数的约束及描述：0：手工冻结 1：自动冻结，此参数不携带或携带值为null或携带值为空时，字段不生效。|
+        :type frozen_operate_type: int
         """
         
         
@@ -56,6 +60,7 @@ class ModSubCustomerBudgetReq:
         self._cancel_partner_frozen = None
         self._indirect_partner_id = None
         self._budget_type = None
+        self._frozen_operate_type = None
         self.discriminator = None
 
         self.customer_id = customer_id
@@ -66,6 +71,8 @@ class ModSubCustomerBudgetReq:
             self.indirect_partner_id = indirect_partner_id
         if budget_type is not None:
             self.budget_type = budget_type
+        if frozen_operate_type is not None:
+            self.frozen_operate_type = frozen_operate_type
 
     @property
     def customer_id(self):
@@ -176,6 +183,28 @@ class ModSubCustomerBudgetReq:
         :type budget_type: str
         """
         self._budget_type = budget_type
+
+    @property
+    def frozen_operate_type(self):
+        r"""Gets the frozen_operate_type of this ModSubCustomerBudgetReq.
+
+        |参数名称：设置超预算时是否自动冻结| |参数的约束及描述：0：手工冻结 1：自动冻结，此参数不携带或携带值为null或携带值为空时，字段不生效。|
+
+        :return: The frozen_operate_type of this ModSubCustomerBudgetReq.
+        :rtype: int
+        """
+        return self._frozen_operate_type
+
+    @frozen_operate_type.setter
+    def frozen_operate_type(self, frozen_operate_type):
+        r"""Sets the frozen_operate_type of this ModSubCustomerBudgetReq.
+
+        |参数名称：设置超预算时是否自动冻结| |参数的约束及描述：0：手工冻结 1：自动冻结，此参数不携带或携带值为null或携带值为空时，字段不生效。|
+
+        :param frozen_operate_type: The frozen_operate_type of this ModSubCustomerBudgetReq.
+        :type frozen_operate_type: int
+        """
+        self._frozen_operate_type = frozen_operate_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -1619,6 +1619,8 @@ class MetaStudioAsyncClient(Client):
             query_params.append(('supported_service', local_var_params['supported_service']))
         if 'app_user_id' in local_var_params:
             query_params.append(('app_user_id', local_var_params['app_user_id']))
+        if 'project_group_id' in local_var_params:
+            query_params.append(('project_group_id', local_var_params['project_group_id']))
 
         header_params = {}
         if 'x_app_user_id' in local_var_params:

@@ -19,16 +19,18 @@ class RunCatalogActionRequestBody:
     openapi_types = {
         'action': 'str',
         'name': 'str',
-        'parameters': 'dict(str, str)'
+        'parameters': 'dict(str, str)',
+        'description': 'str'
     }
 
     attribute_map = {
         'action': 'action',
         'name': 'name',
-        'parameters': 'parameters'
+        'parameters': 'parameters',
+        'description': 'description'
     }
 
-    def __init__(self, action=None, name=None, parameters=None):
+    def __init__(self, action=None, name=None, parameters=None, description=None):
         r"""RunCatalogActionRequestBody
 
         The model defined in huaweicloud sdk
@@ -39,6 +41,8 @@ class RunCatalogActionRequestBody:
         :type name: str
         :param parameters: 
         :type parameters: dict(str, str)
+        :param description: Catalog的描述信息。
+        :type description: str
         """
         
         
@@ -46,11 +50,14 @@ class RunCatalogActionRequestBody:
         self._action = None
         self._name = None
         self._parameters = None
+        self._description = None
         self.discriminator = None
 
         self.action = action
         self.name = name
         self.parameters = parameters
+        if description is not None:
+            self.description = description
 
     @property
     def action(self):
@@ -113,6 +120,28 @@ class RunCatalogActionRequestBody:
         :type parameters: dict(str, str)
         """
         self._parameters = parameters
+
+    @property
+    def description(self):
+        r"""Gets the description of this RunCatalogActionRequestBody.
+
+        Catalog的描述信息。
+
+        :return: The description of this RunCatalogActionRequestBody.
+        :rtype: str
+        """
+        return self._description
+
+    @description.setter
+    def description(self, description):
+        r"""Sets the description of this RunCatalogActionRequestBody.
+
+        Catalog的描述信息。
+
+        :param description: The description of this RunCatalogActionRequestBody.
+        :type description: str
+        """
+        self._description = description
 
     def to_dict(self):
         """Returns the model properties as a dict"""

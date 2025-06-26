@@ -34,7 +34,7 @@ class ListWorkloadQueueResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param workload_queue_name_list: **参数解释**： 工作负载队列名称。 **取值范围**： 不涉及。
+        :param workload_queue_name_list: **参数解释**： 资源池名称。 **取值范围**： 不涉及。
         :type workload_queue_name_list: list[str]
         :param workload_res_code: **参数解释**： 结果状态码。 **取值范围**： 不涉及。
         :type workload_res_code: int
@@ -60,7 +60,7 @@ class ListWorkloadQueueResponse(SdkResponse):
     def workload_queue_name_list(self):
         r"""Gets the workload_queue_name_list of this ListWorkloadQueueResponse.
 
-        **参数解释**： 工作负载队列名称。 **取值范围**： 不涉及。
+        **参数解释**： 资源池名称。 **取值范围**： 不涉及。
 
         :return: The workload_queue_name_list of this ListWorkloadQueueResponse.
         :rtype: list[str]
@@ -71,7 +71,7 @@ class ListWorkloadQueueResponse(SdkResponse):
     def workload_queue_name_list(self, workload_queue_name_list):
         r"""Sets the workload_queue_name_list of this ListWorkloadQueueResponse.
 
-        **参数解释**： 工作负载队列名称。 **取值范围**： 不涉及。
+        **参数解释**： 资源池名称。 **取值范围**： 不涉及。
 
         :param workload_queue_name_list: The workload_queue_name_list of this ListWorkloadQueueResponse.
         :type workload_queue_name_list: list[str]

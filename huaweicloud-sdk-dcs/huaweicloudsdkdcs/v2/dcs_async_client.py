@@ -4704,6 +4704,8 @@ class DcsAsyncClient(Client):
             query_params.append(('start_time', local_var_params['start_time']))
         if 'end_time' in local_var_params:
             query_params.append(('end_time', local_var_params['end_time']))
+        if 'role' in local_var_params:
+            query_params.append(('role', local_var_params['role']))
 
         header_params = {}
 

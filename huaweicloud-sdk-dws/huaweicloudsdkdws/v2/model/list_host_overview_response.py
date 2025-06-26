@@ -30,7 +30,7 @@ class ListHostOverviewResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param body: openApi查询主机概览
+        :param body: **参数解释**： 查询主机概览响应。 **取值范围**： 不涉及。
         :type body: list[:class:`huaweicloudsdkdws.v2.HostOverviewResponse`]
         """
         
@@ -46,7 +46,7 @@ class ListHostOverviewResponse(SdkResponse):
     def body(self):
         r"""Gets the body of this ListHostOverviewResponse.
 
-        openApi查询主机概览
+        **参数解释**： 查询主机概览响应。 **取值范围**： 不涉及。
 
         :return: The body of this ListHostOverviewResponse.
         :rtype: list[:class:`huaweicloudsdkdws.v2.HostOverviewResponse`]
@@ -57,7 +57,7 @@ class ListHostOverviewResponse(SdkResponse):
     def body(self, body):
         r"""Sets the body of this ListHostOverviewResponse.
 
-        openApi查询主机概览
+        **参数解释**： 查询主机概览响应。 **取值范围**： 不涉及。
 
         :param body: The body of this ListHostOverviewResponse.
         :type body: list[:class:`huaweicloudsdkdws.v2.HostOverviewResponse`]

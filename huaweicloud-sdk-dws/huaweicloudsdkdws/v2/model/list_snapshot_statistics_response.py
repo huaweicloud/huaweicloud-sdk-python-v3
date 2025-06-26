@@ -30,7 +30,7 @@ class ListSnapshotStatisticsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param statistics: 快照统计信息。
+        :param statistics: **参数解释**： 快照统计信息。 **取值范围**： 不涉及。
         :type statistics: list[:class:`huaweicloudsdkdws.v2.SnapshotsStatistic`]
         """
         
@@ -46,7 +46,7 @@ class ListSnapshotStatisticsResponse(SdkResponse):
     def statistics(self):
         r"""Gets the statistics of this ListSnapshotStatisticsResponse.
 
-        快照统计信息。
+        **参数解释**： 快照统计信息。 **取值范围**： 不涉及。
 
         :return: The statistics of this ListSnapshotStatisticsResponse.
         :rtype: list[:class:`huaweicloudsdkdws.v2.SnapshotsStatistic`]
@@ -57,7 +57,7 @@ class ListSnapshotStatisticsResponse(SdkResponse):
     def statistics(self, statistics):
         r"""Sets the statistics of this ListSnapshotStatisticsResponse.
 
-        快照统计信息。
+        **参数解释**： 快照统计信息。 **取值范围**： 不涉及。
 
         :param statistics: The statistics of this ListSnapshotStatisticsResponse.
         :type statistics: list[:class:`huaweicloudsdkdws.v2.SnapshotsStatistic`]

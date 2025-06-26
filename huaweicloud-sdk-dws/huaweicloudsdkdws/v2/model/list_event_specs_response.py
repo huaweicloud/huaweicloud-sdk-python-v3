@@ -32,9 +32,9 @@ class ListEventSpecsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param count: 事件配置总数
+        :param count: **参数解释**： 事件配置总数。 **取值范围**： 大于等于0。
         :type count: int
-        :param event_specs: 事件配置列表
+        :param event_specs: **参数解释**： 事件配置列表。 **取值范围**： 不涉及。
         :type event_specs: list[:class:`huaweicloudsdkdws.v2.EventSpecResponse`]
         """
         
@@ -53,7 +53,7 @@ class ListEventSpecsResponse(SdkResponse):
     def count(self):
         r"""Gets the count of this ListEventSpecsResponse.
 
-        事件配置总数
+        **参数解释**： 事件配置总数。 **取值范围**： 大于等于0。
 
         :return: The count of this ListEventSpecsResponse.
         :rtype: int
@@ -64,7 +64,7 @@ class ListEventSpecsResponse(SdkResponse):
     def count(self, count):
         r"""Sets the count of this ListEventSpecsResponse.
 
-        事件配置总数
+        **参数解释**： 事件配置总数。 **取值范围**： 大于等于0。
 
         :param count: The count of this ListEventSpecsResponse.
         :type count: int
@@ -75,7 +75,7 @@ class ListEventSpecsResponse(SdkResponse):
     def event_specs(self):
         r"""Gets the event_specs of this ListEventSpecsResponse.
 
-        事件配置列表
+        **参数解释**： 事件配置列表。 **取值范围**： 不涉及。
 
         :return: The event_specs of this ListEventSpecsResponse.
         :rtype: list[:class:`huaweicloudsdkdws.v2.EventSpecResponse`]
@@ -86,7 +86,7 @@ class ListEventSpecsResponse(SdkResponse):
     def event_specs(self, event_specs):
         r"""Sets the event_specs of this ListEventSpecsResponse.
 
-        事件配置列表
+        **参数解释**： 事件配置列表。 **取值范围**： 不涉及。
 
         :param event_specs: The event_specs of this ListEventSpecsResponse.
         :type event_specs: list[:class:`huaweicloudsdkdws.v2.EventSpecResponse`]

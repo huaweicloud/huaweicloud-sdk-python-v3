@@ -30,7 +30,7 @@ class ListClusterConfigurationsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param configurations: 集群所关联的参数组信息。
+        :param configurations: **参数解释**： 集群所关联的参数组信息。 **取值范围**： 不涉及。
         :type configurations: list[:class:`huaweicloudsdkdws.v2.ClusterConfiguration`]
         """
         
@@ -46,7 +46,7 @@ class ListClusterConfigurationsResponse(SdkResponse):
     def configurations(self):
         r"""Gets the configurations of this ListClusterConfigurationsResponse.
 
-        集群所关联的参数组信息。
+        **参数解释**： 集群所关联的参数组信息。 **取值范围**： 不涉及。
 
         :return: The configurations of this ListClusterConfigurationsResponse.
         :rtype: list[:class:`huaweicloudsdkdws.v2.ClusterConfiguration`]
@@ -57,7 +57,7 @@ class ListClusterConfigurationsResponse(SdkResponse):
     def configurations(self, configurations):
         r"""Sets the configurations of this ListClusterConfigurationsResponse.
 
-        集群所关联的参数组信息。
+        **参数解释**： 集群所关联的参数组信息。 **取值范围**： 不涉及。
 
         :param configurations: The configurations of this ListClusterConfigurationsResponse.
         :type configurations: list[:class:`huaweicloudsdkdws.v2.ClusterConfiguration`]

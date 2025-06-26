@@ -36,6 +36,7 @@ class UpdateFlinkJarJobRequestBody:
         'tm_slot_num': 'int',
         'feature': 'str',
         'flink_version': 'str',
+        'execution_agency_urn': 'str',
         'image': 'str',
         'resume_checkpoint': 'bool',
         'resume_max_num': 'int',
@@ -66,6 +67,7 @@ class UpdateFlinkJarJobRequestBody:
         'tm_slot_num': 'tm_slot_num',
         'feature': 'feature',
         'flink_version': 'flink_version',
+        'execution_agency_urn': 'execution_agency_urn',
         'image': 'image',
         'resume_checkpoint': 'resume_checkpoint',
         'resume_max_num': 'resume_max_num',
@@ -76,7 +78,7 @@ class UpdateFlinkJarJobRequestBody:
         'resource_config_version': 'resource_config_version'
     }
 
-    def __init__(self, name=None, desc=None, queue_name=None, cu_number=None, manager_cu_number=None, parallel_number=None, log_enabled=None, obs_bucket=None, smn_topic=None, main_class=None, entrypoint_args=None, restart_when_exception=None, entrypoint=None, dependency_jars=None, dependency_files=None, tm_cus=None, tm_slot_num=None, feature=None, flink_version=None, image=None, resume_checkpoint=None, resume_max_num=None, checkpoint_path=None, runtime_config=None, job_type=None, resource_config=None, resource_config_version=None):
+    def __init__(self, name=None, desc=None, queue_name=None, cu_number=None, manager_cu_number=None, parallel_number=None, log_enabled=None, obs_bucket=None, smn_topic=None, main_class=None, entrypoint_args=None, restart_when_exception=None, entrypoint=None, dependency_jars=None, dependency_files=None, tm_cus=None, tm_slot_num=None, feature=None, flink_version=None, execution_agency_urn=None, image=None, resume_checkpoint=None, resume_max_num=None, checkpoint_path=None, runtime_config=None, job_type=None, resource_config=None, resource_config_version=None):
         r"""UpdateFlinkJarJobRequestBody
 
         The model defined in huaweicloud sdk
@@ -119,6 +121,8 @@ class UpdateFlinkJarJobRequestBody:
         :type feature: str
         :param flink_version: Flink版本。当用户设置“feature”为“basic”时，该参数生效。用户可通过与“feature”参数配合使用，指定作业运行使用的DLI基础Flink镜像的版本。
         :type flink_version: str
+        :param execution_agency_urn: 授权给DLI的委托名。Flink1.15版本时支持配置该参数。
+        :type execution_agency_urn: str
         :param image: 自定义镜像。格式为：组织名/镜像名:镜像版本。当用户设置“feature”为“custom”时，该参数生效。用户可通过与“feature”参数配合使用，指定作业运行使用自定义的Flink镜像。关于如何使用自定义镜像，请参考《数据湖探索用户指南》。
         :type image: str
         :param resume_checkpoint: 异常重启是否从checkpoint恢复。
@@ -158,6 +162,7 @@ class UpdateFlinkJarJobRequestBody:
         self._tm_slot_num = None
         self._feature = None
         self._flink_version = None
+        self._execution_agency_urn = None
         self._image = None
         self._resume_checkpoint = None
         self._resume_max_num = None
@@ -206,6 +211,8 @@ class UpdateFlinkJarJobRequestBody:
             self.feature = feature
         if flink_version is not None:
             self.flink_version = flink_version
+        if execution_agency_urn is not None:
+            self.execution_agency_urn = execution_agency_urn
         if image is not None:
             self.image = image
         if resume_checkpoint is not None:
@@ -640,6 +647,28 @@ class UpdateFlinkJarJobRequestBody:
         :type flink_version: str
         """
         self._flink_version = flink_version
+
+    @property
+    def execution_agency_urn(self):
+        r"""Gets the execution_agency_urn of this UpdateFlinkJarJobRequestBody.
+
+        授权给DLI的委托名。Flink1.15版本时支持配置该参数。
+
+        :return: The execution_agency_urn of this UpdateFlinkJarJobRequestBody.
+        :rtype: str
+        """
+        return self._execution_agency_urn
+
+    @execution_agency_urn.setter
+    def execution_agency_urn(self, execution_agency_urn):
+        r"""Sets the execution_agency_urn of this UpdateFlinkJarJobRequestBody.
+
+        授权给DLI的委托名。Flink1.15版本时支持配置该参数。
+
+        :param execution_agency_urn: The execution_agency_urn of this UpdateFlinkJarJobRequestBody.
+        :type execution_agency_urn: str
+        """
+        self._execution_agency_urn = execution_agency_urn
 
     @property
     def image(self):

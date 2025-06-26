@@ -43,21 +43,21 @@ class ExtDataSourceReq:
 
         The model defined in huaweicloud sdk
 
-        :param data_source_id: 数据源id
+        :param data_source_id: **参数解释**： 外部数据源ID。当数据源为MRS时为必选字段。 **取值范围**： 不涉及。
         :type data_source_id: str
-        :param type: 类型
+        :param type: **参数解释**： 数据源类型。 **取值范围**： 不涉及。
         :type type: str
-        :param data_source_name: 数据源名称
+        :param data_source_name: **参数解释**： 外部数据源名称。 **取值范围**： 仅可包含大小写字母、数字、下划线，1到64个字符。
         :type data_source_name: str
-        :param user_name: 用户名
+        :param user_name: **参数解释**： 用户名。数据源类型为OBS时，传对应OBS委托名称。 **取值范围**： 仅可包含大小写字母、数字、下划线，3到20个字符。
         :type user_name: str
-        :param user_pwd: 密码
+        :param user_pwd: **参数解释**： 密码。当数据源为MRS时为必选字段。 **取值范围**： 不涉及。
         :type user_pwd: str
-        :param description: 描述
+        :param description: **参数解释**： 描述。 **取值范围**： 除!&lt;&gt;&#39;&#x3D;&amp;等特殊字符外的字符。长度256个字符以内。
         :type description: str
-        :param reboot: 重启
+        :param reboot: **参数解释**： 是否重启集群。 **取值范围**： 不涉及。
         :type reboot: bool
-        :param connect_info: 数据库
+        :param connect_info: **参数解释**： 连接的数据库。当数据源为OBS时为必选字段。 **取值范围**： 不涉及。
         :type connect_info: str
         """
         
@@ -91,7 +91,7 @@ class ExtDataSourceReq:
     def data_source_id(self):
         r"""Gets the data_source_id of this ExtDataSourceReq.
 
-        数据源id
+        **参数解释**： 外部数据源ID。当数据源为MRS时为必选字段。 **取值范围**： 不涉及。
 
         :return: The data_source_id of this ExtDataSourceReq.
         :rtype: str
@@ -102,7 +102,7 @@ class ExtDataSourceReq:
     def data_source_id(self, data_source_id):
         r"""Sets the data_source_id of this ExtDataSourceReq.
 
-        数据源id
+        **参数解释**： 外部数据源ID。当数据源为MRS时为必选字段。 **取值范围**： 不涉及。
 
         :param data_source_id: The data_source_id of this ExtDataSourceReq.
         :type data_source_id: str
@@ -113,7 +113,7 @@ class ExtDataSourceReq:
     def type(self):
         r"""Gets the type of this ExtDataSourceReq.
 
-        类型
+        **参数解释**： 数据源类型。 **取值范围**： 不涉及。
 
         :return: The type of this ExtDataSourceReq.
         :rtype: str
@@ -124,7 +124,7 @@ class ExtDataSourceReq:
     def type(self, type):
         r"""Sets the type of this ExtDataSourceReq.
 
-        类型
+        **参数解释**： 数据源类型。 **取值范围**： 不涉及。
 
         :param type: The type of this ExtDataSourceReq.
         :type type: str
@@ -135,7 +135,7 @@ class ExtDataSourceReq:
     def data_source_name(self):
         r"""Gets the data_source_name of this ExtDataSourceReq.
 
-        数据源名称
+        **参数解释**： 外部数据源名称。 **取值范围**： 仅可包含大小写字母、数字、下划线，1到64个字符。
 
         :return: The data_source_name of this ExtDataSourceReq.
         :rtype: str
@@ -146,7 +146,7 @@ class ExtDataSourceReq:
     def data_source_name(self, data_source_name):
         r"""Sets the data_source_name of this ExtDataSourceReq.
 
-        数据源名称
+        **参数解释**： 外部数据源名称。 **取值范围**： 仅可包含大小写字母、数字、下划线，1到64个字符。
 
         :param data_source_name: The data_source_name of this ExtDataSourceReq.
         :type data_source_name: str
@@ -157,7 +157,7 @@ class ExtDataSourceReq:
     def user_name(self):
         r"""Gets the user_name of this ExtDataSourceReq.
 
-        用户名
+        **参数解释**： 用户名。数据源类型为OBS时，传对应OBS委托名称。 **取值范围**： 仅可包含大小写字母、数字、下划线，3到20个字符。
 
         :return: The user_name of this ExtDataSourceReq.
         :rtype: str
@@ -168,7 +168,7 @@ class ExtDataSourceReq:
     def user_name(self, user_name):
         r"""Sets the user_name of this ExtDataSourceReq.
 
-        用户名
+        **参数解释**： 用户名。数据源类型为OBS时，传对应OBS委托名称。 **取值范围**： 仅可包含大小写字母、数字、下划线，3到20个字符。
 
         :param user_name: The user_name of this ExtDataSourceReq.
         :type user_name: str
@@ -179,7 +179,7 @@ class ExtDataSourceReq:
     def user_pwd(self):
         r"""Gets the user_pwd of this ExtDataSourceReq.
 
-        密码
+        **参数解释**： 密码。当数据源为MRS时为必选字段。 **取值范围**： 不涉及。
 
         :return: The user_pwd of this ExtDataSourceReq.
         :rtype: str
@@ -190,7 +190,7 @@ class ExtDataSourceReq:
     def user_pwd(self, user_pwd):
         r"""Sets the user_pwd of this ExtDataSourceReq.
 
-        密码
+        **参数解释**： 密码。当数据源为MRS时为必选字段。 **取值范围**： 不涉及。
 
         :param user_pwd: The user_pwd of this ExtDataSourceReq.
         :type user_pwd: str
@@ -201,7 +201,7 @@ class ExtDataSourceReq:
     def description(self):
         r"""Gets the description of this ExtDataSourceReq.
 
-        描述
+        **参数解释**： 描述。 **取值范围**： 除!<>'=&等特殊字符外的字符。长度256个字符以内。
 
         :return: The description of this ExtDataSourceReq.
         :rtype: str
@@ -212,7 +212,7 @@ class ExtDataSourceReq:
     def description(self, description):
         r"""Sets the description of this ExtDataSourceReq.
 
-        描述
+        **参数解释**： 描述。 **取值范围**： 除!<>'=&等特殊字符外的字符。长度256个字符以内。
 
         :param description: The description of this ExtDataSourceReq.
         :type description: str
@@ -223,7 +223,7 @@ class ExtDataSourceReq:
     def reboot(self):
         r"""Gets the reboot of this ExtDataSourceReq.
 
-        重启
+        **参数解释**： 是否重启集群。 **取值范围**： 不涉及。
 
         :return: The reboot of this ExtDataSourceReq.
         :rtype: bool
@@ -234,7 +234,7 @@ class ExtDataSourceReq:
     def reboot(self, reboot):
         r"""Sets the reboot of this ExtDataSourceReq.
 
-        重启
+        **参数解释**： 是否重启集群。 **取值范围**： 不涉及。
 
         :param reboot: The reboot of this ExtDataSourceReq.
         :type reboot: bool
@@ -245,7 +245,7 @@ class ExtDataSourceReq:
     def connect_info(self):
         r"""Gets the connect_info of this ExtDataSourceReq.
 
-        数据库
+        **参数解释**： 连接的数据库。当数据源为OBS时为必选字段。 **取值范围**： 不涉及。
 
         :return: The connect_info of this ExtDataSourceReq.
         :rtype: str
@@ -256,7 +256,7 @@ class ExtDataSourceReq:
     def connect_info(self, connect_info):
         r"""Sets the connect_info of this ExtDataSourceReq.
 
-        数据库
+        **参数解释**： 连接的数据库。当数据源为OBS时为必选字段。 **取值范围**： 不涉及。
 
         :param connect_info: The connect_info of this ExtDataSourceReq.
         :type connect_info: str

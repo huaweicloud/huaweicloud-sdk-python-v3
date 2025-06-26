@@ -47,25 +47,25 @@ class AlarmDetailResponse:
 
         The model defined in huaweicloud sdk
 
-        :param alarm_id: 告警定义ID
+        :param alarm_id: **参数解释**： 告警定义ID。 **取值范围**： 不涉及。
         :type alarm_id: str
-        :param alarm_name: 告警名称
+        :param alarm_name: **参数解释**： 告警名称。 **取值范围**： 不涉及。
         :type alarm_name: str
-        :param alarm_level: 告警级别
+        :param alarm_level: **参数解释**： 告警级别。 **取值范围**： 不涉及。
         :type alarm_level: str
-        :param alarm_source: 告警服务
+        :param alarm_source: **参数解释**： 告警服务。 **取值范围**： 不涉及。
         :type alarm_source: str
-        :param alarm_message: 告警消息
+        :param alarm_message: **参数解释**： 告警消息。 **取值范围**： 不涉及。
         :type alarm_message: str
-        :param alarm_location: 告警定位信息
+        :param alarm_location: **参数解释**： 告警定位信息。 **取值范围**： 不涉及。
         :type alarm_location: str
-        :param resource_id: 告警源ID
+        :param resource_id: **参数解释**： 告警源ID。 **取值范围**： 不涉及。
         :type resource_id: str
-        :param resource_id_name: 告警源名称
+        :param resource_id_name: **参数解释**： 告警源名称。 **取值范围**： 不涉及。
         :type resource_id_name: str
-        :param alarm_generate_date: 告警日期
+        :param alarm_generate_date: **参数解释**： 告警日期。 **取值范围**： 不涉及。
         :type alarm_generate_date: str
-        :param alarm_status: 告警状态
+        :param alarm_status: **参数解释**： 告警状态。 **取值范围**： 不涉及。
         :type alarm_status: str
         """
         
@@ -108,7 +108,7 @@ class AlarmDetailResponse:
     def alarm_id(self):
         r"""Gets the alarm_id of this AlarmDetailResponse.
 
-        告警定义ID
+        **参数解释**： 告警定义ID。 **取值范围**： 不涉及。
 
         :return: The alarm_id of this AlarmDetailResponse.
         :rtype: str
@@ -119,7 +119,7 @@ class AlarmDetailResponse:
     def alarm_id(self, alarm_id):
         r"""Sets the alarm_id of this AlarmDetailResponse.
 
-        告警定义ID
+        **参数解释**： 告警定义ID。 **取值范围**： 不涉及。
 
         :param alarm_id: The alarm_id of this AlarmDetailResponse.
         :type alarm_id: str
@@ -130,7 +130,7 @@ class AlarmDetailResponse:
     def alarm_name(self):
         r"""Gets the alarm_name of this AlarmDetailResponse.
 
-        告警名称
+        **参数解释**： 告警名称。 **取值范围**： 不涉及。
 
         :return: The alarm_name of this AlarmDetailResponse.
         :rtype: str
@@ -141,7 +141,7 @@ class AlarmDetailResponse:
     def alarm_name(self, alarm_name):
         r"""Sets the alarm_name of this AlarmDetailResponse.
 
-        告警名称
+        **参数解释**： 告警名称。 **取值范围**： 不涉及。
 
         :param alarm_name: The alarm_name of this AlarmDetailResponse.
         :type alarm_name: str
@@ -152,7 +152,7 @@ class AlarmDetailResponse:
     def alarm_level(self):
         r"""Gets the alarm_level of this AlarmDetailResponse.
 
-        告警级别
+        **参数解释**： 告警级别。 **取值范围**： 不涉及。
 
         :return: The alarm_level of this AlarmDetailResponse.
         :rtype: str
@@ -163,7 +163,7 @@ class AlarmDetailResponse:
     def alarm_level(self, alarm_level):
         r"""Sets the alarm_level of this AlarmDetailResponse.
 
-        告警级别
+        **参数解释**： 告警级别。 **取值范围**： 不涉及。
 
         :param alarm_level: The alarm_level of this AlarmDetailResponse.
         :type alarm_level: str
@@ -174,7 +174,7 @@ class AlarmDetailResponse:
     def alarm_source(self):
         r"""Gets the alarm_source of this AlarmDetailResponse.
 
-        告警服务
+        **参数解释**： 告警服务。 **取值范围**： 不涉及。
 
         :return: The alarm_source of this AlarmDetailResponse.
         :rtype: str
@@ -185,7 +185,7 @@ class AlarmDetailResponse:
     def alarm_source(self, alarm_source):
         r"""Sets the alarm_source of this AlarmDetailResponse.
 
-        告警服务
+        **参数解释**： 告警服务。 **取值范围**： 不涉及。
 
         :param alarm_source: The alarm_source of this AlarmDetailResponse.
         :type alarm_source: str
@@ -196,7 +196,7 @@ class AlarmDetailResponse:
     def alarm_message(self):
         r"""Gets the alarm_message of this AlarmDetailResponse.
 
-        告警消息
+        **参数解释**： 告警消息。 **取值范围**： 不涉及。
 
         :return: The alarm_message of this AlarmDetailResponse.
         :rtype: str
@@ -207,7 +207,7 @@ class AlarmDetailResponse:
     def alarm_message(self, alarm_message):
         r"""Sets the alarm_message of this AlarmDetailResponse.
 
-        告警消息
+        **参数解释**： 告警消息。 **取值范围**： 不涉及。
 
         :param alarm_message: The alarm_message of this AlarmDetailResponse.
         :type alarm_message: str
@@ -218,7 +218,7 @@ class AlarmDetailResponse:
     def alarm_location(self):
         r"""Gets the alarm_location of this AlarmDetailResponse.
 
-        告警定位信息
+        **参数解释**： 告警定位信息。 **取值范围**： 不涉及。
 
         :return: The alarm_location of this AlarmDetailResponse.
         :rtype: str
@@ -229,7 +229,7 @@ class AlarmDetailResponse:
     def alarm_location(self, alarm_location):
         r"""Sets the alarm_location of this AlarmDetailResponse.
 
-        告警定位信息
+        **参数解释**： 告警定位信息。 **取值范围**： 不涉及。
 
         :param alarm_location: The alarm_location of this AlarmDetailResponse.
         :type alarm_location: str
@@ -240,7 +240,7 @@ class AlarmDetailResponse:
     def resource_id(self):
         r"""Gets the resource_id of this AlarmDetailResponse.
 
-        告警源ID
+        **参数解释**： 告警源ID。 **取值范围**： 不涉及。
 
         :return: The resource_id of this AlarmDetailResponse.
         :rtype: str
@@ -251,7 +251,7 @@ class AlarmDetailResponse:
     def resource_id(self, resource_id):
         r"""Sets the resource_id of this AlarmDetailResponse.
 
-        告警源ID
+        **参数解释**： 告警源ID。 **取值范围**： 不涉及。
 
         :param resource_id: The resource_id of this AlarmDetailResponse.
         :type resource_id: str
@@ -262,7 +262,7 @@ class AlarmDetailResponse:
     def resource_id_name(self):
         r"""Gets the resource_id_name of this AlarmDetailResponse.
 
-        告警源名称
+        **参数解释**： 告警源名称。 **取值范围**： 不涉及。
 
         :return: The resource_id_name of this AlarmDetailResponse.
         :rtype: str
@@ -273,7 +273,7 @@ class AlarmDetailResponse:
     def resource_id_name(self, resource_id_name):
         r"""Sets the resource_id_name of this AlarmDetailResponse.
 
-        告警源名称
+        **参数解释**： 告警源名称。 **取值范围**： 不涉及。
 
         :param resource_id_name: The resource_id_name of this AlarmDetailResponse.
         :type resource_id_name: str
@@ -284,7 +284,7 @@ class AlarmDetailResponse:
     def alarm_generate_date(self):
         r"""Gets the alarm_generate_date of this AlarmDetailResponse.
 
-        告警日期
+        **参数解释**： 告警日期。 **取值范围**： 不涉及。
 
         :return: The alarm_generate_date of this AlarmDetailResponse.
         :rtype: str
@@ -295,7 +295,7 @@ class AlarmDetailResponse:
     def alarm_generate_date(self, alarm_generate_date):
         r"""Sets the alarm_generate_date of this AlarmDetailResponse.
 
-        告警日期
+        **参数解释**： 告警日期。 **取值范围**： 不涉及。
 
         :param alarm_generate_date: The alarm_generate_date of this AlarmDetailResponse.
         :type alarm_generate_date: str
@@ -306,7 +306,7 @@ class AlarmDetailResponse:
     def alarm_status(self):
         r"""Gets the alarm_status of this AlarmDetailResponse.
 
-        告警状态
+        **参数解释**： 告警状态。 **取值范围**： 不涉及。
 
         :return: The alarm_status of this AlarmDetailResponse.
         :rtype: str
@@ -317,7 +317,7 @@ class AlarmDetailResponse:
     def alarm_status(self, alarm_status):
         r"""Sets the alarm_status of this AlarmDetailResponse.
 
-        告警状态
+        **参数解释**： 告警状态。 **取值范围**： 不涉及。
 
         :param alarm_status: The alarm_status of this AlarmDetailResponse.
         :type alarm_status: str

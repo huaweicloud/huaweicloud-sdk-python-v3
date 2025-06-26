@@ -34,11 +34,11 @@ class ListAuditLogResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param records: 审计日志列表。
+        :param records: **参数解释**： 审计日志列表。 **取值范围**： 不涉及。
         :type records: list[:class:`huaweicloudsdkdws.v2.AuditDumpRecord`]
         :param cluster_id: **参数解释**： 集群ID。 **取值范围**： 36位UUID。
         :type cluster_id: str
-        :param count: 总数。
+        :param count: **参数解释**： 总数。 **取值范围**： 不涉及。
         :type count: int
         """
         
@@ -60,7 +60,7 @@ class ListAuditLogResponse(SdkResponse):
     def records(self):
         r"""Gets the records of this ListAuditLogResponse.
 
-        审计日志列表。
+        **参数解释**： 审计日志列表。 **取值范围**： 不涉及。
 
         :return: The records of this ListAuditLogResponse.
         :rtype: list[:class:`huaweicloudsdkdws.v2.AuditDumpRecord`]
@@ -71,7 +71,7 @@ class ListAuditLogResponse(SdkResponse):
     def records(self, records):
         r"""Sets the records of this ListAuditLogResponse.
 
-        审计日志列表。
+        **参数解释**： 审计日志列表。 **取值范围**： 不涉及。
 
         :param records: The records of this ListAuditLogResponse.
         :type records: list[:class:`huaweicloudsdkdws.v2.AuditDumpRecord`]
@@ -104,7 +104,7 @@ class ListAuditLogResponse(SdkResponse):
     def count(self):
         r"""Gets the count of this ListAuditLogResponse.
 
-        总数。
+        **参数解释**： 总数。 **取值范围**： 不涉及。
 
         :return: The count of this ListAuditLogResponse.
         :rtype: int
@@ -115,7 +115,7 @@ class ListAuditLogResponse(SdkResponse):
     def count(self, count):
         r"""Sets the count of this ListAuditLogResponse.
 
-        总数。
+        **参数解释**： 总数。 **取值范围**： 不涉及。
 
         :param count: The count of this ListAuditLogResponse.
         :type count: int

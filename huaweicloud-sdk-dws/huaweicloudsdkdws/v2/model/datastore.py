@@ -31,9 +31,9 @@ class Datastore:
 
         The model defined in huaweicloud sdk
 
-        :param type: 集群类型。
+        :param type: **参数解释**： 集群类型。 **取值范围**： 不涉及。
         :type type: str
-        :param version: 集群版本。
+        :param version: **参数解释**： 集群版本。 **取值范围**： 不涉及。
         :type version: str
         """
         
@@ -52,7 +52,7 @@ class Datastore:
     def type(self):
         r"""Gets the type of this Datastore.
 
-        集群类型。
+        **参数解释**： 集群类型。 **取值范围**： 不涉及。
 
         :return: The type of this Datastore.
         :rtype: str
@@ -63,7 +63,7 @@ class Datastore:
     def type(self, type):
         r"""Sets the type of this Datastore.
 
-        集群类型。
+        **参数解释**： 集群类型。 **取值范围**： 不涉及。
 
         :param type: The type of this Datastore.
         :type type: str
@@ -74,7 +74,7 @@ class Datastore:
     def version(self):
         r"""Gets the version of this Datastore.
 
-        集群版本。
+        **参数解释**： 集群版本。 **取值范围**： 不涉及。
 
         :return: The version of this Datastore.
         :rtype: str
@@ -85,7 +85,7 @@ class Datastore:
     def version(self, version):
         r"""Sets the version of this Datastore.
 
-        集群版本。
+        **参数解释**： 集群版本。 **取值范围**： 不涉及。
 
         :param version: The version of this Datastore.
         :type version: str

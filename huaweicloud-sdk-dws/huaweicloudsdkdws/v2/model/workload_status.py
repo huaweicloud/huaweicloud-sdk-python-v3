@@ -18,7 +18,7 @@ class WorkloadStatus:
 
     openapi_types = {
         'workload_switch': 'str',
-        'max_concurrency_num': 'str'
+        'max_concurrency_num': 'int'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class WorkloadStatus:
         :param workload_switch: **参数解释**： 开关。 **约束限制**： 不涉及。 **取值范围**： on：开启 off：关闭 **默认取值**： 不涉及。
         :type workload_switch: str
         :param max_concurrency_num: **参数解释**： 最大并发数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
-        :type max_concurrency_num: str
+        :type max_concurrency_num: int
         """
         
         
@@ -76,7 +76,7 @@ class WorkloadStatus:
         **参数解释**： 最大并发数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The max_concurrency_num of this WorkloadStatus.
-        :rtype: str
+        :rtype: int
         """
         return self._max_concurrency_num
 
@@ -87,7 +87,7 @@ class WorkloadStatus:
         **参数解释**： 最大并发数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param max_concurrency_num: The max_concurrency_num of this WorkloadStatus.
-        :type max_concurrency_num: str
+        :type max_concurrency_num: int
         """
         self._max_concurrency_num = max_concurrency_num
 

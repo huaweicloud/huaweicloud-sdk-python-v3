@@ -5,6 +5,8 @@ from __future__ import absolute_import
 from huaweicloudsdksms.v3.sms_client import SmsClient
 from huaweicloudsdksms.v3.sms_async_client import SmsAsyncClient
 
+from huaweicloudsdksms.v3.model.batch_consistency_req import BatchConsistencyReq
+from huaweicloudsdksms.v3.model.batch_get_consistency_result_req import BatchGetConsistencyResultReq
 from huaweicloudsdksms.v3.model.btrfs_file_system import BtrfsFileSystem
 from huaweicloudsdksms.v3.model.btrfs_subvolumn import BtrfsSubvolumn
 from huaweicloudsdksms.v3.model.check_net_acl_request import CheckNetAclRequest
@@ -47,6 +49,8 @@ from huaweicloudsdksms.v3.model.delete_templates_response import DeleteTemplates
 from huaweicloudsdksms.v3.model.deletetemplates_req import DeletetemplatesReq
 from huaweicloudsdksms.v3.model.disk_intarget_server import DiskIntargetServer
 from huaweicloudsdksms.v3.model.environment_check import EnvironmentCheck
+from huaweicloudsdksms.v3.model.export_consistency_results_request import ExportConsistencyResultsRequest
+from huaweicloudsdksms.v3.model.export_consistency_results_response import ExportConsistencyResultsResponse
 from huaweicloudsdksms.v3.model.init_target_server import InitTargetServer
 from huaweicloudsdksms.v3.model.link import Link
 from huaweicloudsdksms.v3.model.list_api_version_request import ListApiVersionRequest

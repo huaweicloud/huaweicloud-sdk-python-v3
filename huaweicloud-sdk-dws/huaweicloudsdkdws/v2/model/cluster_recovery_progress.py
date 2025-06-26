@@ -37,15 +37,15 @@ class ClusterRecoveryProgress:
 
         The model defined in huaweicloud sdk
 
-        :param key: key
+        :param key: **参数解释**： 本次备份恢复ID。 **取值范围**： 不涉及。
         :type key: str
-        :param action_type: action_type
+        :param action_type: **参数解释**： 动作类型。 **取值范围**： 不涉及。
         :type action_type: str
-        :param unrestore_keys: unrestore_keys
+        :param unrestore_keys: **参数解释**： 待恢复的备份集ID。 **取值范围**： 不涉及。
         :type unrestore_keys: str
-        :param action_start_time: action_start_time
+        :param action_start_time: **参数解释**： 当前动作开始时间。 **取值范围**： 不涉及。
         :type action_start_time: str
-        :param action_end_time: action_end_time
+        :param action_end_time: **参数解释**： 当前动作结束时间。 **取值范围**： 不涉及。
         :type action_end_time: str
         """
         
@@ -73,7 +73,7 @@ class ClusterRecoveryProgress:
     def key(self):
         r"""Gets the key of this ClusterRecoveryProgress.
 
-        key
+        **参数解释**： 本次备份恢复ID。 **取值范围**： 不涉及。
 
         :return: The key of this ClusterRecoveryProgress.
         :rtype: str
@@ -84,7 +84,7 @@ class ClusterRecoveryProgress:
     def key(self, key):
         r"""Sets the key of this ClusterRecoveryProgress.
 
-        key
+        **参数解释**： 本次备份恢复ID。 **取值范围**： 不涉及。
 
         :param key: The key of this ClusterRecoveryProgress.
         :type key: str
@@ -95,7 +95,7 @@ class ClusterRecoveryProgress:
     def action_type(self):
         r"""Gets the action_type of this ClusterRecoveryProgress.
 
-        action_type
+        **参数解释**： 动作类型。 **取值范围**： 不涉及。
 
         :return: The action_type of this ClusterRecoveryProgress.
         :rtype: str
@@ -106,7 +106,7 @@ class ClusterRecoveryProgress:
     def action_type(self, action_type):
         r"""Sets the action_type of this ClusterRecoveryProgress.
 
-        action_type
+        **参数解释**： 动作类型。 **取值范围**： 不涉及。
 
         :param action_type: The action_type of this ClusterRecoveryProgress.
         :type action_type: str
@@ -117,7 +117,7 @@ class ClusterRecoveryProgress:
     def unrestore_keys(self):
         r"""Gets the unrestore_keys of this ClusterRecoveryProgress.
 
-        unrestore_keys
+        **参数解释**： 待恢复的备份集ID。 **取值范围**： 不涉及。
 
         :return: The unrestore_keys of this ClusterRecoveryProgress.
         :rtype: str
@@ -128,7 +128,7 @@ class ClusterRecoveryProgress:
     def unrestore_keys(self, unrestore_keys):
         r"""Sets the unrestore_keys of this ClusterRecoveryProgress.
 
-        unrestore_keys
+        **参数解释**： 待恢复的备份集ID。 **取值范围**： 不涉及。
 
         :param unrestore_keys: The unrestore_keys of this ClusterRecoveryProgress.
         :type unrestore_keys: str
@@ -139,7 +139,7 @@ class ClusterRecoveryProgress:
     def action_start_time(self):
         r"""Gets the action_start_time of this ClusterRecoveryProgress.
 
-        action_start_time
+        **参数解释**： 当前动作开始时间。 **取值范围**： 不涉及。
 
         :return: The action_start_time of this ClusterRecoveryProgress.
         :rtype: str
@@ -150,7 +150,7 @@ class ClusterRecoveryProgress:
     def action_start_time(self, action_start_time):
         r"""Sets the action_start_time of this ClusterRecoveryProgress.
 
-        action_start_time
+        **参数解释**： 当前动作开始时间。 **取值范围**： 不涉及。
 
         :param action_start_time: The action_start_time of this ClusterRecoveryProgress.
         :type action_start_time: str
@@ -161,7 +161,7 @@ class ClusterRecoveryProgress:
     def action_end_time(self):
         r"""Gets the action_end_time of this ClusterRecoveryProgress.
 
-        action_end_time
+        **参数解释**： 当前动作结束时间。 **取值范围**： 不涉及。
 
         :return: The action_end_time of this ClusterRecoveryProgress.
         :rtype: str
@@ -172,7 +172,7 @@ class ClusterRecoveryProgress:
     def action_end_time(self, action_end_time):
         r"""Sets the action_end_time of this ClusterRecoveryProgress.
 
-        action_end_time
+        **参数解释**： 当前动作结束时间。 **取值范围**： 不涉及。
 
         :param action_end_time: The action_end_time of this ClusterRecoveryProgress.
         :type action_end_time: str

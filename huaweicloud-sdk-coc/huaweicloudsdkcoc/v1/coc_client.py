@@ -100,6 +100,485 @@ class CocClient(Client):
 
         return http_info
 
+    def cancel_diagnosis_task(self, request):
+        r"""取消诊断任务
+
+        取消诊断任务
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CancelDiagnosisTask
+        :type request: :class:`huaweicloudsdkcoc.v1.CancelDiagnosisTaskRequest`
+        :rtype: :class:`huaweicloudsdkcoc.v1.CancelDiagnosisTaskResponse`
+        """
+        http_info = self._cancel_diagnosis_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def cancel_diagnosis_task_invoker(self, request):
+        http_info = self._cancel_diagnosis_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _cancel_diagnosis_task_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/diagnosis/tasks/{task_id}/cancel",
+            "request_type": request.__class__.__name__,
+            "response_type": "CancelDiagnosisTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_diagnosis_task(self, request):
+        r"""提交诊断任务
+
+        提交诊断任务
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateDiagnosisTask
+        :type request: :class:`huaweicloudsdkcoc.v1.CreateDiagnosisTaskRequest`
+        :rtype: :class:`huaweicloudsdkcoc.v1.CreateDiagnosisTaskResponse`
+        """
+        http_info = self._create_diagnosis_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_diagnosis_task_invoker(self, request):
+        http_info = self._create_diagnosis_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_diagnosis_task_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/diagnosis/tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDiagnosisTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_diagnosis_tasks(self, request):
+        r"""查询诊断记录
+
+        查询诊断记录
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListDiagnosisTasks
+        :type request: :class:`huaweicloudsdkcoc.v1.ListDiagnosisTasksRequest`
+        :rtype: :class:`huaweicloudsdkcoc.v1.ListDiagnosisTasksResponse`
+        """
+        http_info = self._list_diagnosis_tasks_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_diagnosis_tasks_invoker(self, request):
+        http_info = self._list_diagnosis_tasks_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_diagnosis_tasks_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/diagnosis/tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDiagnosisTasksResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'task_id' in local_var_params:
+            query_params.append(('task_id', local_var_params['task_id']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'region' in local_var_params:
+            query_params.append(('region', local_var_params['region']))
+        if 'creator' in local_var_params:
+            query_params.append(('creator', local_var_params['creator']))
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'page_index' in local_var_params:
+            query_params.append(('page_index', local_var_params['page_index']))
+        if 'page_size' in local_var_params:
+            query_params.append(('page_size', local_var_params['page_size']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def retry_diagnosis_task(self, request):
+        r"""重试诊断任务
+
+        重试诊断任务
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for RetryDiagnosisTask
+        :type request: :class:`huaweicloudsdkcoc.v1.RetryDiagnosisTaskRequest`
+        :rtype: :class:`huaweicloudsdkcoc.v1.RetryDiagnosisTaskResponse`
+        """
+        http_info = self._retry_diagnosis_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def retry_diagnosis_task_invoker(self, request):
+        http_info = self._retry_diagnosis_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _retry_diagnosis_task_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/diagnosis/tasks/{task_id}/retry",
+            "request_type": request.__class__.__name__,
+            "response_type": "RetryDiagnosisTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_diagnosis_node(self, request):
+        r"""查询指定诊断记录下的指定诊断步骤的详情
+
+        查询指定诊断记录下的指定诊断步骤的详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowDiagnosisNode
+        :type request: :class:`huaweicloudsdkcoc.v1.ShowDiagnosisNodeRequest`
+        :rtype: :class:`huaweicloudsdkcoc.v1.ShowDiagnosisNodeResponse`
+        """
+        http_info = self._show_diagnosis_node_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_diagnosis_node_invoker(self, request):
+        http_info = self._show_diagnosis_node_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_diagnosis_node_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/diagnosis/tasks/{task_id}/node/{code}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDiagnosisNodeResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+        if 'code' in local_var_params:
+            path_params['code'] = local_var_params['code']
+
+        query_params = []
+        if 'instance_id' in local_var_params:
+            query_params.append(('instance_id', local_var_params['instance_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_diagnosis_summary(self, request):
+        r"""查询批量诊断任务的结果概要
+
+        查询诊断任务的结果概要
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowDiagnosisSummary
+        :type request: :class:`huaweicloudsdkcoc.v1.ShowDiagnosisSummaryRequest`
+        :rtype: :class:`huaweicloudsdkcoc.v1.ShowDiagnosisSummaryResponse`
+        """
+        http_info = self._show_diagnosis_summary_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_diagnosis_summary_invoker(self, request):
+        http_info = self._show_diagnosis_summary_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_diagnosis_summary_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/diagnosis/tasks/{task_id}/summary",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDiagnosisSummaryResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_diagnosis_task(self, request):
+        r"""查询单个诊断任务详情
+
+        查询单个诊断任务详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowDiagnosisTask
+        :type request: :class:`huaweicloudsdkcoc.v1.ShowDiagnosisTaskRequest`
+        :rtype: :class:`huaweicloudsdkcoc.v1.ShowDiagnosisTaskResponse`
+        """
+        http_info = self._show_diagnosis_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_diagnosis_task_invoker(self, request):
+        http_info = self._show_diagnosis_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_diagnosis_task_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/diagnosis/tasks/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDiagnosisTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+        if 'instance_id' in local_var_params:
+            query_params.append(('instance_id', local_var_params['instance_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_document(self, request):
         r"""创建自定义作业
 

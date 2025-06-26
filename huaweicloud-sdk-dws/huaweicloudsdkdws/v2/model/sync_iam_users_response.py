@@ -30,7 +30,7 @@ class SyncIamUsersResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param sync_user: 创建成功用户列表
+        :param sync_user: **参数解释**： 创建成功用户列表。 **取值范围**： 不涉及。
         :type sync_user: list[str]
         """
         
@@ -46,7 +46,7 @@ class SyncIamUsersResponse(SdkResponse):
     def sync_user(self):
         r"""Gets the sync_user of this SyncIamUsersResponse.
 
-        创建成功用户列表
+        **参数解释**： 创建成功用户列表。 **取值范围**： 不涉及。
 
         :return: The sync_user of this SyncIamUsersResponse.
         :rtype: list[str]
@@ -57,7 +57,7 @@ class SyncIamUsersResponse(SdkResponse):
     def sync_user(self, sync_user):
         r"""Sets the sync_user of this SyncIamUsersResponse.
 
-        创建成功用户列表
+        **参数解释**： 创建成功用户列表。 **取值范围**： 不涉及。
 
         :param sync_user: The sync_user of this SyncIamUsersResponse.
         :type sync_user: list[str]

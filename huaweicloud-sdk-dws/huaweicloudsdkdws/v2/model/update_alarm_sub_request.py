@@ -31,7 +31,7 @@ class UpdateAlarmSubRequest:
 
         The model defined in huaweicloud sdk
 
-        :param alarm_sub_id: 告警订阅ID
+        :param alarm_sub_id: **参数解释**： 告警订阅ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type alarm_sub_id: str
         :param body: Body of the UpdateAlarmSubRequest
         :type body: :class:`huaweicloudsdkdws.v2.AlarmSubUpdateRequest`
@@ -51,7 +51,7 @@ class UpdateAlarmSubRequest:
     def alarm_sub_id(self):
         r"""Gets the alarm_sub_id of this UpdateAlarmSubRequest.
 
-        告警订阅ID
+        **参数解释**： 告警订阅ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The alarm_sub_id of this UpdateAlarmSubRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class UpdateAlarmSubRequest:
     def alarm_sub_id(self, alarm_sub_id):
         r"""Sets the alarm_sub_id of this UpdateAlarmSubRequest.
 
-        告警订阅ID
+        **参数解释**： 告警订阅ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param alarm_sub_id: The alarm_sub_id of this UpdateAlarmSubRequest.
         :type alarm_sub_id: str

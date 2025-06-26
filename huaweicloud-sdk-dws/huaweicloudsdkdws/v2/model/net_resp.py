@@ -55,33 +55,33 @@ class NetResp:
 
         The model defined in huaweicloud sdk
 
-        :param virtual_cluster_id: 虚拟集群ID。
+        :param virtual_cluster_id: **参数解释**： 虚拟集群ID。 **取值范围**： 不涉及。
         :type virtual_cluster_id: int
-        :param ctime: 查询时间。
+        :param ctime: **参数解释**： 查询时间。 **取值范围**： 不涉及。
         :type ctime: int
-        :param host_id: 主机ID。
+        :param host_id: **参数解释**： 主机ID。 **取值范围**： 不涉及。
         :type host_id: int
-        :param host_name: 主机名称。
+        :param host_name: **参数解释**： 主机名称。 **取值范围**： 不涉及。
         :type host_name: str
-        :param instance_name: 实例名称。
+        :param instance_name: **参数解释**： 实例名称。 **取值范围**： 不涉及。
         :type instance_name: str
-        :param up: 网卡状态（true代表up/false代表down）。
+        :param up: **参数解释**： 网卡状态。 **取值范围**： true：代表up。 false：代表down。
         :type up: bool
-        :param speed: 网卡速度(Mbps)。
+        :param speed: **参数解释**： 网卡速度(Mbps)。 **取值范围**： 不涉及。
         :type speed: int
-        :param recv_packets: 接收包数(个)。
+        :param recv_packets: **参数解释**： 接收包数(个)。 **取值范围**： 不涉及。
         :type recv_packets: int
-        :param send_packets: 发送包数(个)。
+        :param send_packets: **参数解释**： 发送包数(个)。 **取值范围**： 不涉及。
         :type send_packets: int
-        :param recv_drop: 接收丢包数(个)。
+        :param recv_drop: **参数解释**： 接收丢包数(个)。 **取值范围**： 不涉及。
         :type recv_drop: int
-        :param recv_rate: 接收速率(KB/s)。
+        :param recv_rate: **参数解释**： 接收速率(KB/s)。 **取值范围**： 不涉及。
         :type recv_rate: float
-        :param send_rate: 发送速率(KB/s)。
+        :param send_rate: **参数解释**： 发送速率(KB/s)。 **取值范围**： 不涉及。
         :type send_rate: float
-        :param io_rate: 网络速率(KB/s)。
+        :param io_rate: **参数解释**： 网络速率(KB/s)。 **取值范围**： 不涉及。
         :type io_rate: float
-        :param interface_name: 网卡名称。
+        :param interface_name: **参数解释**： 网卡名称。 **取值范围**： 不涉及。
         :type interface_name: str
         """
         
@@ -136,7 +136,7 @@ class NetResp:
     def virtual_cluster_id(self):
         r"""Gets the virtual_cluster_id of this NetResp.
 
-        虚拟集群ID。
+        **参数解释**： 虚拟集群ID。 **取值范围**： 不涉及。
 
         :return: The virtual_cluster_id of this NetResp.
         :rtype: int
@@ -147,7 +147,7 @@ class NetResp:
     def virtual_cluster_id(self, virtual_cluster_id):
         r"""Sets the virtual_cluster_id of this NetResp.
 
-        虚拟集群ID。
+        **参数解释**： 虚拟集群ID。 **取值范围**： 不涉及。
 
         :param virtual_cluster_id: The virtual_cluster_id of this NetResp.
         :type virtual_cluster_id: int
@@ -158,7 +158,7 @@ class NetResp:
     def ctime(self):
         r"""Gets the ctime of this NetResp.
 
-        查询时间。
+        **参数解释**： 查询时间。 **取值范围**： 不涉及。
 
         :return: The ctime of this NetResp.
         :rtype: int
@@ -169,7 +169,7 @@ class NetResp:
     def ctime(self, ctime):
         r"""Sets the ctime of this NetResp.
 
-        查询时间。
+        **参数解释**： 查询时间。 **取值范围**： 不涉及。
 
         :param ctime: The ctime of this NetResp.
         :type ctime: int
@@ -180,7 +180,7 @@ class NetResp:
     def host_id(self):
         r"""Gets the host_id of this NetResp.
 
-        主机ID。
+        **参数解释**： 主机ID。 **取值范围**： 不涉及。
 
         :return: The host_id of this NetResp.
         :rtype: int
@@ -191,7 +191,7 @@ class NetResp:
     def host_id(self, host_id):
         r"""Sets the host_id of this NetResp.
 
-        主机ID。
+        **参数解释**： 主机ID。 **取值范围**： 不涉及。
 
         :param host_id: The host_id of this NetResp.
         :type host_id: int
@@ -202,7 +202,7 @@ class NetResp:
     def host_name(self):
         r"""Gets the host_name of this NetResp.
 
-        主机名称。
+        **参数解释**： 主机名称。 **取值范围**： 不涉及。
 
         :return: The host_name of this NetResp.
         :rtype: str
@@ -213,7 +213,7 @@ class NetResp:
     def host_name(self, host_name):
         r"""Sets the host_name of this NetResp.
 
-        主机名称。
+        **参数解释**： 主机名称。 **取值范围**： 不涉及。
 
         :param host_name: The host_name of this NetResp.
         :type host_name: str
@@ -224,7 +224,7 @@ class NetResp:
     def instance_name(self):
         r"""Gets the instance_name of this NetResp.
 
-        实例名称。
+        **参数解释**： 实例名称。 **取值范围**： 不涉及。
 
         :return: The instance_name of this NetResp.
         :rtype: str
@@ -235,7 +235,7 @@ class NetResp:
     def instance_name(self, instance_name):
         r"""Sets the instance_name of this NetResp.
 
-        实例名称。
+        **参数解释**： 实例名称。 **取值范围**： 不涉及。
 
         :param instance_name: The instance_name of this NetResp.
         :type instance_name: str
@@ -246,7 +246,7 @@ class NetResp:
     def up(self):
         r"""Gets the up of this NetResp.
 
-        网卡状态（true代表up/false代表down）。
+        **参数解释**： 网卡状态。 **取值范围**： true：代表up。 false：代表down。
 
         :return: The up of this NetResp.
         :rtype: bool
@@ -257,7 +257,7 @@ class NetResp:
     def up(self, up):
         r"""Sets the up of this NetResp.
 
-        网卡状态（true代表up/false代表down）。
+        **参数解释**： 网卡状态。 **取值范围**： true：代表up。 false：代表down。
 
         :param up: The up of this NetResp.
         :type up: bool
@@ -268,7 +268,7 @@ class NetResp:
     def speed(self):
         r"""Gets the speed of this NetResp.
 
-        网卡速度(Mbps)。
+        **参数解释**： 网卡速度(Mbps)。 **取值范围**： 不涉及。
 
         :return: The speed of this NetResp.
         :rtype: int
@@ -279,7 +279,7 @@ class NetResp:
     def speed(self, speed):
         r"""Sets the speed of this NetResp.
 
-        网卡速度(Mbps)。
+        **参数解释**： 网卡速度(Mbps)。 **取值范围**： 不涉及。
 
         :param speed: The speed of this NetResp.
         :type speed: int
@@ -290,7 +290,7 @@ class NetResp:
     def recv_packets(self):
         r"""Gets the recv_packets of this NetResp.
 
-        接收包数(个)。
+        **参数解释**： 接收包数(个)。 **取值范围**： 不涉及。
 
         :return: The recv_packets of this NetResp.
         :rtype: int
@@ -301,7 +301,7 @@ class NetResp:
     def recv_packets(self, recv_packets):
         r"""Sets the recv_packets of this NetResp.
 
-        接收包数(个)。
+        **参数解释**： 接收包数(个)。 **取值范围**： 不涉及。
 
         :param recv_packets: The recv_packets of this NetResp.
         :type recv_packets: int
@@ -312,7 +312,7 @@ class NetResp:
     def send_packets(self):
         r"""Gets the send_packets of this NetResp.
 
-        发送包数(个)。
+        **参数解释**： 发送包数(个)。 **取值范围**： 不涉及。
 
         :return: The send_packets of this NetResp.
         :rtype: int
@@ -323,7 +323,7 @@ class NetResp:
     def send_packets(self, send_packets):
         r"""Sets the send_packets of this NetResp.
 
-        发送包数(个)。
+        **参数解释**： 发送包数(个)。 **取值范围**： 不涉及。
 
         :param send_packets: The send_packets of this NetResp.
         :type send_packets: int
@@ -334,7 +334,7 @@ class NetResp:
     def recv_drop(self):
         r"""Gets the recv_drop of this NetResp.
 
-        接收丢包数(个)。
+        **参数解释**： 接收丢包数(个)。 **取值范围**： 不涉及。
 
         :return: The recv_drop of this NetResp.
         :rtype: int
@@ -345,7 +345,7 @@ class NetResp:
     def recv_drop(self, recv_drop):
         r"""Sets the recv_drop of this NetResp.
 
-        接收丢包数(个)。
+        **参数解释**： 接收丢包数(个)。 **取值范围**： 不涉及。
 
         :param recv_drop: The recv_drop of this NetResp.
         :type recv_drop: int
@@ -356,7 +356,7 @@ class NetResp:
     def recv_rate(self):
         r"""Gets the recv_rate of this NetResp.
 
-        接收速率(KB/s)。
+        **参数解释**： 接收速率(KB/s)。 **取值范围**： 不涉及。
 
         :return: The recv_rate of this NetResp.
         :rtype: float
@@ -367,7 +367,7 @@ class NetResp:
     def recv_rate(self, recv_rate):
         r"""Sets the recv_rate of this NetResp.
 
-        接收速率(KB/s)。
+        **参数解释**： 接收速率(KB/s)。 **取值范围**： 不涉及。
 
         :param recv_rate: The recv_rate of this NetResp.
         :type recv_rate: float
@@ -378,7 +378,7 @@ class NetResp:
     def send_rate(self):
         r"""Gets the send_rate of this NetResp.
 
-        发送速率(KB/s)。
+        **参数解释**： 发送速率(KB/s)。 **取值范围**： 不涉及。
 
         :return: The send_rate of this NetResp.
         :rtype: float
@@ -389,7 +389,7 @@ class NetResp:
     def send_rate(self, send_rate):
         r"""Sets the send_rate of this NetResp.
 
-        发送速率(KB/s)。
+        **参数解释**： 发送速率(KB/s)。 **取值范围**： 不涉及。
 
         :param send_rate: The send_rate of this NetResp.
         :type send_rate: float
@@ -400,7 +400,7 @@ class NetResp:
     def io_rate(self):
         r"""Gets the io_rate of this NetResp.
 
-        网络速率(KB/s)。
+        **参数解释**： 网络速率(KB/s)。 **取值范围**： 不涉及。
 
         :return: The io_rate of this NetResp.
         :rtype: float
@@ -411,7 +411,7 @@ class NetResp:
     def io_rate(self, io_rate):
         r"""Sets the io_rate of this NetResp.
 
-        网络速率(KB/s)。
+        **参数解释**： 网络速率(KB/s)。 **取值范围**： 不涉及。
 
         :param io_rate: The io_rate of this NetResp.
         :type io_rate: float
@@ -422,7 +422,7 @@ class NetResp:
     def interface_name(self):
         r"""Gets the interface_name of this NetResp.
 
-        网卡名称。
+        **参数解释**： 网卡名称。 **取值范围**： 不涉及。
 
         :return: The interface_name of this NetResp.
         :rtype: str
@@ -433,7 +433,7 @@ class NetResp:
     def interface_name(self, interface_name):
         r"""Sets the interface_name of this NetResp.
 
-        网卡名称。
+        **参数解释**： 网卡名称。 **取值范围**： 不涉及。
 
         :param interface_name: The interface_name of this NetResp.
         :type interface_name: str

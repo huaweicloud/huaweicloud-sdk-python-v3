@@ -49,7 +49,7 @@ class DssPool:
         :type name: str
         :param type: **参数解释**： 专属分布式存储池的存储类型。 - SSD：超高IO专属分布式存储池。 **取值范围**： 不涉及。
         :type type: str
-        :param project_id: **参数解释**： 项目ID。获取方式方法请参见[获取项目ID](dws_02_0011.xml)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :param project_id: **参数解释**： 项目ID。获取方法请参见[获取项目ID](dws_02_0011.xml)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type project_id: str
         :param availability_zone: **参数解释**： 专属分布式存储池所属可用区。 **取值范围**： 不涉及。
         :type availability_zone: str
@@ -152,7 +152,7 @@ class DssPool:
     def project_id(self):
         r"""Gets the project_id of this DssPool.
 
-        **参数解释**： 项目ID。获取方式方法请参见[获取项目ID](dws_02_0011.xml)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 项目ID。获取方法请参见[获取项目ID](dws_02_0011.xml)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The project_id of this DssPool.
         :rtype: str
@@ -163,7 +163,7 @@ class DssPool:
     def project_id(self, project_id):
         r"""Sets the project_id of this DssPool.
 
-        **参数解释**： 项目ID。获取方式方法请参见[获取项目ID](dws_02_0011.xml)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 项目ID。获取方法请参见[获取项目ID](dws_02_0011.xml)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param project_id: The project_id of this DssPool.
         :type project_id: str

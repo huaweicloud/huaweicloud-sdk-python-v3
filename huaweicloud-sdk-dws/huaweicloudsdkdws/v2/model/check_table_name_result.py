@@ -33,11 +33,11 @@ class CheckTableNameResult:
 
         The model defined in huaweicloud sdk
 
-        :param database: 数据库名称
+        :param database: **参数解释**： 数据库名称。 **取值范围**： 不涉及。
         :type database: str
-        :param restore_table_list: 恢复源表信息
+        :param restore_table_list: **参数解释**： 恢复源表信息。 **取值范围**： 不涉及。
         :type restore_table_list: list[str]
-        :param target_table_list: 恢复目的表信息
+        :param target_table_list: **参数解释**： 恢复目的表信息。 **取值范围**： 不涉及。
         :type target_table_list: list[str]
         """
         
@@ -59,7 +59,7 @@ class CheckTableNameResult:
     def database(self):
         r"""Gets the database of this CheckTableNameResult.
 
-        数据库名称
+        **参数解释**： 数据库名称。 **取值范围**： 不涉及。
 
         :return: The database of this CheckTableNameResult.
         :rtype: str
@@ -70,7 +70,7 @@ class CheckTableNameResult:
     def database(self, database):
         r"""Sets the database of this CheckTableNameResult.
 
-        数据库名称
+        **参数解释**： 数据库名称。 **取值范围**： 不涉及。
 
         :param database: The database of this CheckTableNameResult.
         :type database: str
@@ -81,7 +81,7 @@ class CheckTableNameResult:
     def restore_table_list(self):
         r"""Gets the restore_table_list of this CheckTableNameResult.
 
-        恢复源表信息
+        **参数解释**： 恢复源表信息。 **取值范围**： 不涉及。
 
         :return: The restore_table_list of this CheckTableNameResult.
         :rtype: list[str]
@@ -92,7 +92,7 @@ class CheckTableNameResult:
     def restore_table_list(self, restore_table_list):
         r"""Sets the restore_table_list of this CheckTableNameResult.
 
-        恢复源表信息
+        **参数解释**： 恢复源表信息。 **取值范围**： 不涉及。
 
         :param restore_table_list: The restore_table_list of this CheckTableNameResult.
         :type restore_table_list: list[str]
@@ -103,7 +103,7 @@ class CheckTableNameResult:
     def target_table_list(self):
         r"""Gets the target_table_list of this CheckTableNameResult.
 
-        恢复目的表信息
+        **参数解释**： 恢复目的表信息。 **取值范围**： 不涉及。
 
         :return: The target_table_list of this CheckTableNameResult.
         :rtype: list[str]
@@ -114,7 +114,7 @@ class CheckTableNameResult:
     def target_table_list(self, target_table_list):
         r"""Sets the target_table_list of this CheckTableNameResult.
 
-        恢复目的表信息
+        **参数解释**： 恢复目的表信息。 **取值范围**： 不涉及。
 
         :param target_table_list: The target_table_list of this CheckTableNameResult.
         :type target_table_list: list[str]

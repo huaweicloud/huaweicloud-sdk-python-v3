@@ -30,7 +30,7 @@ class ListMonitorIndicatorsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param body: 
+        :param body: **参数解释**： 性能监控指标信息。 **取值范围**： 不涉及。
         :type body: list[:class:`huaweicloudsdkdws.v2.IndicatorInfo`]
         """
         
@@ -46,6 +46,8 @@ class ListMonitorIndicatorsResponse(SdkResponse):
     def body(self):
         r"""Gets the body of this ListMonitorIndicatorsResponse.
 
+        **参数解释**： 性能监控指标信息。 **取值范围**： 不涉及。
+
         :return: The body of this ListMonitorIndicatorsResponse.
         :rtype: list[:class:`huaweicloudsdkdws.v2.IndicatorInfo`]
         """
@@ -54,6 +56,8 @@ class ListMonitorIndicatorsResponse(SdkResponse):
     @body.setter
     def body(self, body):
         r"""Sets the body of this ListMonitorIndicatorsResponse.
+
+        **参数解释**： 性能监控指标信息。 **取值范围**： 不涉及。
 
         :param body: The body of this ListMonitorIndicatorsResponse.
         :type body: list[:class:`huaweicloudsdkdws.v2.IndicatorInfo`]

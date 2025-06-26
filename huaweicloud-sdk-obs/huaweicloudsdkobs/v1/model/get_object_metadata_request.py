@@ -96,7 +96,8 @@ class GetObjectMetadataRequest:
             self.date = date
         if version_id is not None:
             self.version_id = version_id
-        self.origin = origin
+        if origin is not None:
+            self.origin = origin
         if access_control_request_headers is not None:
             self.access_control_request_headers = access_control_request_headers
         if x_obs_server_side_encryption_customer_algorithm is not None:

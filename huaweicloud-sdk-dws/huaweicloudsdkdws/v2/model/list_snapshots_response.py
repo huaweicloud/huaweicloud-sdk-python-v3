@@ -32,9 +32,9 @@ class ListSnapshotsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param snapshots: 快照对象列表。
+        :param snapshots: **参数解释**： 快照对象列表。 **取值范围**： 不涉及。
         :type snapshots: list[:class:`huaweicloudsdkdws.v2.Snapshots`]
-        :param count: 快照对象列表总数
+        :param count: **参数解释**： 列表总数。 **取值范围**： 不涉及。
         :type count: int
         """
         
@@ -53,7 +53,7 @@ class ListSnapshotsResponse(SdkResponse):
     def snapshots(self):
         r"""Gets the snapshots of this ListSnapshotsResponse.
 
-        快照对象列表。
+        **参数解释**： 快照对象列表。 **取值范围**： 不涉及。
 
         :return: The snapshots of this ListSnapshotsResponse.
         :rtype: list[:class:`huaweicloudsdkdws.v2.Snapshots`]
@@ -64,7 +64,7 @@ class ListSnapshotsResponse(SdkResponse):
     def snapshots(self, snapshots):
         r"""Sets the snapshots of this ListSnapshotsResponse.
 
-        快照对象列表。
+        **参数解释**： 快照对象列表。 **取值范围**： 不涉及。
 
         :param snapshots: The snapshots of this ListSnapshotsResponse.
         :type snapshots: list[:class:`huaweicloudsdkdws.v2.Snapshots`]
@@ -75,7 +75,7 @@ class ListSnapshotsResponse(SdkResponse):
     def count(self):
         r"""Gets the count of this ListSnapshotsResponse.
 
-        快照对象列表总数
+        **参数解释**： 列表总数。 **取值范围**： 不涉及。
 
         :return: The count of this ListSnapshotsResponse.
         :rtype: int
@@ -86,7 +86,7 @@ class ListSnapshotsResponse(SdkResponse):
     def count(self, count):
         r"""Sets the count of this ListSnapshotsResponse.
 
-        快照对象列表总数
+        **参数解释**： 列表总数。 **取值范围**： 不涉及。
 
         :param count: The count of this ListSnapshotsResponse.
         :type count: int

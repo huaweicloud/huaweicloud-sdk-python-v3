@@ -30,7 +30,7 @@ class CopySnapshotResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param snapshot_id: 快照id。
+        :param snapshot_id: **参数解释**： 快照ID。 **取值范围**： 不涉及。
         :type snapshot_id: str
         """
         
@@ -46,7 +46,7 @@ class CopySnapshotResponse(SdkResponse):
     def snapshot_id(self):
         r"""Gets the snapshot_id of this CopySnapshotResponse.
 
-        快照id。
+        **参数解释**： 快照ID。 **取值范围**： 不涉及。
 
         :return: The snapshot_id of this CopySnapshotResponse.
         :rtype: str
@@ -57,7 +57,7 @@ class CopySnapshotResponse(SdkResponse):
     def snapshot_id(self, snapshot_id):
         r"""Sets the snapshot_id of this CopySnapshotResponse.
 
-        快照id。
+        **参数解释**： 快照ID。 **取值范围**： 不涉及。
 
         :param snapshot_id: The snapshot_id of this CopySnapshotResponse.
         :type snapshot_id: str

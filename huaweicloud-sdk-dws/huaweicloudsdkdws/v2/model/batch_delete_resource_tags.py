@@ -29,7 +29,7 @@ class BatchDeleteResourceTags:
 
         The model defined in huaweicloud sdk
 
-        :param tags: 标签列表
+        :param tags: **参数解释**： 标签列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type tags: list[:class:`huaweicloudsdkdws.v2.BatchDeleteResourceTag`]
         """
         
@@ -44,7 +44,7 @@ class BatchDeleteResourceTags:
     def tags(self):
         r"""Gets the tags of this BatchDeleteResourceTags.
 
-        标签列表
+        **参数解释**： 标签列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The tags of this BatchDeleteResourceTags.
         :rtype: list[:class:`huaweicloudsdkdws.v2.BatchDeleteResourceTag`]
@@ -55,7 +55,7 @@ class BatchDeleteResourceTags:
     def tags(self, tags):
         r"""Sets the tags of this BatchDeleteResourceTags.
 
-        标签列表
+        **参数解释**： 标签列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param tags: The tags of this BatchDeleteResourceTags.
         :type tags: list[:class:`huaweicloudsdkdws.v2.BatchDeleteResourceTag`]

@@ -32,9 +32,9 @@ class ListSnapshotCrossRegionResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param regions: 区域列表
+        :param regions: **参数解释**： 区域列表。 **取值范围**： 不涉及。
         :type regions: list[:class:`huaweicloudsdkdws.v2.SnapshotRegion`]
-        :param count: 总数
+        :param count: **参数解释**： 总数。 **取值范围**： 不涉及。
         :type count: int
         """
         
@@ -53,7 +53,7 @@ class ListSnapshotCrossRegionResponse(SdkResponse):
     def regions(self):
         r"""Gets the regions of this ListSnapshotCrossRegionResponse.
 
-        区域列表
+        **参数解释**： 区域列表。 **取值范围**： 不涉及。
 
         :return: The regions of this ListSnapshotCrossRegionResponse.
         :rtype: list[:class:`huaweicloudsdkdws.v2.SnapshotRegion`]
@@ -64,7 +64,7 @@ class ListSnapshotCrossRegionResponse(SdkResponse):
     def regions(self, regions):
         r"""Sets the regions of this ListSnapshotCrossRegionResponse.
 
-        区域列表
+        **参数解释**： 区域列表。 **取值范围**： 不涉及。
 
         :param regions: The regions of this ListSnapshotCrossRegionResponse.
         :type regions: list[:class:`huaweicloudsdkdws.v2.SnapshotRegion`]
@@ -75,7 +75,7 @@ class ListSnapshotCrossRegionResponse(SdkResponse):
     def count(self):
         r"""Gets the count of this ListSnapshotCrossRegionResponse.
 
-        总数
+        **参数解释**： 总数。 **取值范围**： 不涉及。
 
         :return: The count of this ListSnapshotCrossRegionResponse.
         :rtype: int
@@ -86,7 +86,7 @@ class ListSnapshotCrossRegionResponse(SdkResponse):
     def count(self, count):
         r"""Sets the count of this ListSnapshotCrossRegionResponse.
 
-        总数
+        **参数解释**： 总数。 **取值范围**： 不涉及。
 
         :param count: The count of this ListSnapshotCrossRegionResponse.
         :type count: int

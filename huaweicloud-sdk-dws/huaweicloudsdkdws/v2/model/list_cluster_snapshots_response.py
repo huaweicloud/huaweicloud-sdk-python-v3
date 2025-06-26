@@ -36,13 +36,13 @@ class ListClusterSnapshotsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param snapshots: 快照对象列表。
+        :param snapshots: **参数解释**： 快照对象列表。 **取值范围**： 不涉及。
         :type snapshots: list[:class:`huaweicloudsdkdws.v2.ClusterSnapshots`]
-        :param project_id: **参数解释**： 项目ID。获取方式方法请参见[获取项目ID](dws_02_0011.xml)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :param project_id: **参数解释**： 项目ID。获取方法请参见[获取项目ID](dws_02_0011.xml)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type project_id: str
         :param cluster_id: **参数解释**： 集群ID。 **取值范围**： 36位UUID。
         :type cluster_id: str
-        :param count: 快照对象列表总数
+        :param count: **参数解释**： 快照对象列表总数。 **取值范围**： 不涉及。
         :type count: int
         """
         
@@ -67,7 +67,7 @@ class ListClusterSnapshotsResponse(SdkResponse):
     def snapshots(self):
         r"""Gets the snapshots of this ListClusterSnapshotsResponse.
 
-        快照对象列表。
+        **参数解释**： 快照对象列表。 **取值范围**： 不涉及。
 
         :return: The snapshots of this ListClusterSnapshotsResponse.
         :rtype: list[:class:`huaweicloudsdkdws.v2.ClusterSnapshots`]
@@ -78,7 +78,7 @@ class ListClusterSnapshotsResponse(SdkResponse):
     def snapshots(self, snapshots):
         r"""Sets the snapshots of this ListClusterSnapshotsResponse.
 
-        快照对象列表。
+        **参数解释**： 快照对象列表。 **取值范围**： 不涉及。
 
         :param snapshots: The snapshots of this ListClusterSnapshotsResponse.
         :type snapshots: list[:class:`huaweicloudsdkdws.v2.ClusterSnapshots`]
@@ -89,7 +89,7 @@ class ListClusterSnapshotsResponse(SdkResponse):
     def project_id(self):
         r"""Gets the project_id of this ListClusterSnapshotsResponse.
 
-        **参数解释**： 项目ID。获取方式方法请参见[获取项目ID](dws_02_0011.xml)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 项目ID。获取方法请参见[获取项目ID](dws_02_0011.xml)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The project_id of this ListClusterSnapshotsResponse.
         :rtype: str
@@ -100,7 +100,7 @@ class ListClusterSnapshotsResponse(SdkResponse):
     def project_id(self, project_id):
         r"""Sets the project_id of this ListClusterSnapshotsResponse.
 
-        **参数解释**： 项目ID。获取方式方法请参见[获取项目ID](dws_02_0011.xml)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 项目ID。获取方法请参见[获取项目ID](dws_02_0011.xml)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param project_id: The project_id of this ListClusterSnapshotsResponse.
         :type project_id: str
@@ -133,7 +133,7 @@ class ListClusterSnapshotsResponse(SdkResponse):
     def count(self):
         r"""Gets the count of this ListClusterSnapshotsResponse.
 
-        快照对象列表总数
+        **参数解释**： 快照对象列表总数。 **取值范围**： 不涉及。
 
         :return: The count of this ListClusterSnapshotsResponse.
         :rtype: int
@@ -144,7 +144,7 @@ class ListClusterSnapshotsResponse(SdkResponse):
     def count(self, count):
         r"""Sets the count of this ListClusterSnapshotsResponse.
 
-        快照对象列表总数
+        **参数解释**： 快照对象列表总数。 **取值范围**： 不涉及。
 
         :param count: The count of this ListClusterSnapshotsResponse.
         :type count: int

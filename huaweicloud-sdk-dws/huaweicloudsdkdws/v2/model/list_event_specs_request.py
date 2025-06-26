@@ -41,17 +41,17 @@ class ListEventSpecsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param spec_name: 事件配置名称
+        :param spec_name: **参数解释**： 事件配置名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type spec_name: str
-        :param category: 事件类别
+        :param category: **参数解释**： 事件类别。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type category: str
-        :param severity: 事件级别
+        :param severity: **参数解释**： 事件级别。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type severity: str
-        :param source_type: 事件源类别
+        :param source_type: **参数解释**： 事件源类别。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type source_type: str
-        :param tag: 事件标签
+        :param tag: **参数解释**： 事件标签。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type tag: str
-        :param offset: **参数解释**： 分页查询，偏移量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 0
+        :param offset: **参数解释**： 分页偏移量，从0开始，页数减1。 **约束限制**： 不涉及。 **取值范围**： 大于等于0。 **默认取值**： 0
         :type offset: str
         :param limit: **参数解释**： 分页单页大小。 **约束限制**： 不涉及。 **取值范围**： 大于0。 **默认取值**： 1000
         :type limit: str
@@ -87,7 +87,7 @@ class ListEventSpecsRequest:
     def spec_name(self):
         r"""Gets the spec_name of this ListEventSpecsRequest.
 
-        事件配置名称
+        **参数解释**： 事件配置名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The spec_name of this ListEventSpecsRequest.
         :rtype: str
@@ -98,7 +98,7 @@ class ListEventSpecsRequest:
     def spec_name(self, spec_name):
         r"""Sets the spec_name of this ListEventSpecsRequest.
 
-        事件配置名称
+        **参数解释**： 事件配置名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param spec_name: The spec_name of this ListEventSpecsRequest.
         :type spec_name: str
@@ -109,7 +109,7 @@ class ListEventSpecsRequest:
     def category(self):
         r"""Gets the category of this ListEventSpecsRequest.
 
-        事件类别
+        **参数解释**： 事件类别。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The category of this ListEventSpecsRequest.
         :rtype: str
@@ -120,7 +120,7 @@ class ListEventSpecsRequest:
     def category(self, category):
         r"""Sets the category of this ListEventSpecsRequest.
 
-        事件类别
+        **参数解释**： 事件类别。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param category: The category of this ListEventSpecsRequest.
         :type category: str
@@ -131,7 +131,7 @@ class ListEventSpecsRequest:
     def severity(self):
         r"""Gets the severity of this ListEventSpecsRequest.
 
-        事件级别
+        **参数解释**： 事件级别。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The severity of this ListEventSpecsRequest.
         :rtype: str
@@ -142,7 +142,7 @@ class ListEventSpecsRequest:
     def severity(self, severity):
         r"""Sets the severity of this ListEventSpecsRequest.
 
-        事件级别
+        **参数解释**： 事件级别。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param severity: The severity of this ListEventSpecsRequest.
         :type severity: str
@@ -153,7 +153,7 @@ class ListEventSpecsRequest:
     def source_type(self):
         r"""Gets the source_type of this ListEventSpecsRequest.
 
-        事件源类别
+        **参数解释**： 事件源类别。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The source_type of this ListEventSpecsRequest.
         :rtype: str
@@ -164,7 +164,7 @@ class ListEventSpecsRequest:
     def source_type(self, source_type):
         r"""Sets the source_type of this ListEventSpecsRequest.
 
-        事件源类别
+        **参数解释**： 事件源类别。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param source_type: The source_type of this ListEventSpecsRequest.
         :type source_type: str
@@ -175,7 +175,7 @@ class ListEventSpecsRequest:
     def tag(self):
         r"""Gets the tag of this ListEventSpecsRequest.
 
-        事件标签
+        **参数解释**： 事件标签。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The tag of this ListEventSpecsRequest.
         :rtype: str
@@ -186,7 +186,7 @@ class ListEventSpecsRequest:
     def tag(self, tag):
         r"""Sets the tag of this ListEventSpecsRequest.
 
-        事件标签
+        **参数解释**： 事件标签。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param tag: The tag of this ListEventSpecsRequest.
         :type tag: str
@@ -197,7 +197,7 @@ class ListEventSpecsRequest:
     def offset(self):
         r"""Gets the offset of this ListEventSpecsRequest.
 
-        **参数解释**： 分页查询，偏移量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 0
+        **参数解释**： 分页偏移量，从0开始，页数减1。 **约束限制**： 不涉及。 **取值范围**： 大于等于0。 **默认取值**： 0
 
         :return: The offset of this ListEventSpecsRequest.
         :rtype: str
@@ -208,7 +208,7 @@ class ListEventSpecsRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListEventSpecsRequest.
 
-        **参数解释**： 分页查询，偏移量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 0
+        **参数解释**： 分页偏移量，从0开始，页数减1。 **约束限制**： 不涉及。 **取值范围**： 大于等于0。 **默认取值**： 0
 
         :param offset: The offset of this ListEventSpecsRequest.
         :type offset: str

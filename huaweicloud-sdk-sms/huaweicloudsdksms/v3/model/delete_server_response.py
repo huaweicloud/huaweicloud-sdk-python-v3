@@ -18,20 +18,51 @@ class DeleteServerResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'body': 'str'
     }
 
     attribute_map = {
+        'body': 'body'
     }
 
-    def __init__(self):
+    def __init__(self, body=None):
         r"""DeleteServerResponse
 
         The model defined in huaweicloud sdk
 
+        :param body: 删除指定ID的源端服务器信息成功
+        :type body: str
         """
         
         super(DeleteServerResponse, self).__init__()
+
+        self._body = None
         self.discriminator = None
+
+        if body is not None:
+            self.body = body
+
+    @property
+    def body(self):
+        r"""Gets the body of this DeleteServerResponse.
+
+        删除指定ID的源端服务器信息成功
+
+        :return: The body of this DeleteServerResponse.
+        :rtype: str
+        """
+        return self._body
+
+    @body.setter
+    def body(self, body):
+        r"""Sets the body of this DeleteServerResponse.
+
+        删除指定ID的源端服务器信息成功
+
+        :param body: The body of this DeleteServerResponse.
+        :type body: str
+        """
+        self._body = body
 
     def to_dict(self):
         """Returns the model properties as a dict"""

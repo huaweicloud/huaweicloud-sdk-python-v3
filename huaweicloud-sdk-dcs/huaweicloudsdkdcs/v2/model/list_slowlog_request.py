@@ -23,7 +23,8 @@ class ListSlowlogRequest:
         'sort_key': 'str',
         'sort_dir': 'str',
         'start_time': 'str',
-        'end_time': 'str'
+        'end_time': 'str',
+        'role': 'str'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class ListSlowlogRequest:
         'sort_key': 'sort_key',
         'sort_dir': 'sort_dir',
         'start_time': 'start_time',
-        'end_time': 'end_time'
+        'end_time': 'end_time',
+        'role': 'role'
     }
 
-    def __init__(self, instance_id=None, offset=None, limit=None, sort_key=None, sort_dir=None, start_time=None, end_time=None):
+    def __init__(self, instance_id=None, offset=None, limit=None, sort_key=None, sort_dir=None, start_time=None, end_time=None, role=None):
         r"""ListSlowlogRequest
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class ListSlowlogRequest:
         :type start_time: str
         :param end_time: 查询结束时间，时间为UTC时间的Unix时间戳。如：1599494399000。
         :type end_time: str
+        :param role: 查询节点，分为proxy和server。
+        :type role: str
         """
         
         
@@ -66,6 +70,7 @@ class ListSlowlogRequest:
         self._sort_dir = None
         self._start_time = None
         self._end_time = None
+        self._role = None
         self.discriminator = None
 
         self.instance_id = instance_id
@@ -79,6 +84,8 @@ class ListSlowlogRequest:
             self.sort_dir = sort_dir
         self.start_time = start_time
         self.end_time = end_time
+        if role is not None:
+            self.role = role
 
     @property
     def instance_id(self):
@@ -233,6 +240,28 @@ class ListSlowlogRequest:
         :type end_time: str
         """
         self._end_time = end_time
+
+    @property
+    def role(self):
+        r"""Gets the role of this ListSlowlogRequest.
+
+        查询节点，分为proxy和server。
+
+        :return: The role of this ListSlowlogRequest.
+        :rtype: str
+        """
+        return self._role
+
+    @role.setter
+    def role(self, role):
+        r"""Sets the role of this ListSlowlogRequest.
+
+        查询节点，分为proxy和server。
+
+        :param role: The role of this ListSlowlogRequest.
+        :type role: str
+        """
+        self._role = role
 
     def to_dict(self):
         """Returns the model properties as a dict"""

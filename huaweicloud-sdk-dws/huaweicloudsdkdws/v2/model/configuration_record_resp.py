@@ -39,17 +39,17 @@ class ConfigurationRecordResp:
 
         The model defined in huaweicloud sdk
 
-        :param id: ID
+        :param id: **参数解释**： 记录ID。 **取值范围**： 不涉及。
         :type id: str
-        :param operator: 操作
+        :param operator: **参数解释**： 操作名称。 **取值范围**： 不涉及。
         :type operator: str
-        :param start_time: 开始时间
+        :param start_time: **参数解释**： 开始时间。 **取值范围**： 不涉及。
         :type start_time: str
-        :param end_time: 结束时间
+        :param end_time: **参数解释**： 结束时间。 **取值范围**： 不涉及。
         :type end_time: str
-        :param status: 状态
+        :param status: **参数解释**： 状态。 **取值范围**： 不涉及。
         :type status: str
-        :param failed_reason: 失败原因
+        :param failed_reason: **参数解释**： 失败原因。 **取值范围**： 不涉及。
         :type failed_reason: str
         """
         
@@ -80,7 +80,7 @@ class ConfigurationRecordResp:
     def id(self):
         r"""Gets the id of this ConfigurationRecordResp.
 
-        ID
+        **参数解释**： 记录ID。 **取值范围**： 不涉及。
 
         :return: The id of this ConfigurationRecordResp.
         :rtype: str
@@ -91,7 +91,7 @@ class ConfigurationRecordResp:
     def id(self, id):
         r"""Sets the id of this ConfigurationRecordResp.
 
-        ID
+        **参数解释**： 记录ID。 **取值范围**： 不涉及。
 
         :param id: The id of this ConfigurationRecordResp.
         :type id: str
@@ -102,7 +102,7 @@ class ConfigurationRecordResp:
     def operator(self):
         r"""Gets the operator of this ConfigurationRecordResp.
 
-        操作
+        **参数解释**： 操作名称。 **取值范围**： 不涉及。
 
         :return: The operator of this ConfigurationRecordResp.
         :rtype: str
@@ -113,7 +113,7 @@ class ConfigurationRecordResp:
     def operator(self, operator):
         r"""Sets the operator of this ConfigurationRecordResp.
 
-        操作
+        **参数解释**： 操作名称。 **取值范围**： 不涉及。
 
         :param operator: The operator of this ConfigurationRecordResp.
         :type operator: str
@@ -124,7 +124,7 @@ class ConfigurationRecordResp:
     def start_time(self):
         r"""Gets the start_time of this ConfigurationRecordResp.
 
-        开始时间
+        **参数解释**： 开始时间。 **取值范围**： 不涉及。
 
         :return: The start_time of this ConfigurationRecordResp.
         :rtype: str
@@ -135,7 +135,7 @@ class ConfigurationRecordResp:
     def start_time(self, start_time):
         r"""Sets the start_time of this ConfigurationRecordResp.
 
-        开始时间
+        **参数解释**： 开始时间。 **取值范围**： 不涉及。
 
         :param start_time: The start_time of this ConfigurationRecordResp.
         :type start_time: str
@@ -146,7 +146,7 @@ class ConfigurationRecordResp:
     def end_time(self):
         r"""Gets the end_time of this ConfigurationRecordResp.
 
-        结束时间
+        **参数解释**： 结束时间。 **取值范围**： 不涉及。
 
         :return: The end_time of this ConfigurationRecordResp.
         :rtype: str
@@ -157,7 +157,7 @@ class ConfigurationRecordResp:
     def end_time(self, end_time):
         r"""Sets the end_time of this ConfigurationRecordResp.
 
-        结束时间
+        **参数解释**： 结束时间。 **取值范围**： 不涉及。
 
         :param end_time: The end_time of this ConfigurationRecordResp.
         :type end_time: str
@@ -168,7 +168,7 @@ class ConfigurationRecordResp:
     def status(self):
         r"""Gets the status of this ConfigurationRecordResp.
 
-        状态
+        **参数解释**： 状态。 **取值范围**： 不涉及。
 
         :return: The status of this ConfigurationRecordResp.
         :rtype: str
@@ -179,7 +179,7 @@ class ConfigurationRecordResp:
     def status(self, status):
         r"""Sets the status of this ConfigurationRecordResp.
 
-        状态
+        **参数解释**： 状态。 **取值范围**： 不涉及。
 
         :param status: The status of this ConfigurationRecordResp.
         :type status: str
@@ -190,7 +190,7 @@ class ConfigurationRecordResp:
     def failed_reason(self):
         r"""Gets the failed_reason of this ConfigurationRecordResp.
 
-        失败原因
+        **参数解释**： 失败原因。 **取值范围**： 不涉及。
 
         :return: The failed_reason of this ConfigurationRecordResp.
         :rtype: str
@@ -201,7 +201,7 @@ class ConfigurationRecordResp:
     def failed_reason(self, failed_reason):
         r"""Sets the failed_reason of this ConfigurationRecordResp.
 
-        失败原因
+        **参数解释**： 失败原因。 **取值范围**： 不涉及。
 
         :param failed_reason: The failed_reason of this ConfigurationRecordResp.
         :type failed_reason: str

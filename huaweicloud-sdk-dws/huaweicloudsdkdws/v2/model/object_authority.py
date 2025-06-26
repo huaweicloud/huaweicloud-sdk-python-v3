@@ -31,9 +31,9 @@ class ObjectAuthority:
 
         The model defined in huaweicloud sdk
 
-        :param name: 对象名称
+        :param name: **参数解释**： 对象名称。 **取值范围**： 不涉及。
         :type name: str
-        :param role_authority: 角色权限集合
+        :param role_authority: **参数解释**： 角色权限集合。 **取值范围**： 不涉及。
         :type role_authority: list[:class:`huaweicloudsdkdws.v2.RoleAuthority`]
         """
         
@@ -52,7 +52,7 @@ class ObjectAuthority:
     def name(self):
         r"""Gets the name of this ObjectAuthority.
 
-        对象名称
+        **参数解释**： 对象名称。 **取值范围**： 不涉及。
 
         :return: The name of this ObjectAuthority.
         :rtype: str
@@ -63,7 +63,7 @@ class ObjectAuthority:
     def name(self, name):
         r"""Sets the name of this ObjectAuthority.
 
-        对象名称
+        **参数解释**： 对象名称。 **取值范围**： 不涉及。
 
         :param name: The name of this ObjectAuthority.
         :type name: str
@@ -74,7 +74,7 @@ class ObjectAuthority:
     def role_authority(self):
         r"""Gets the role_authority of this ObjectAuthority.
 
-        角色权限集合
+        **参数解释**： 角色权限集合。 **取值范围**： 不涉及。
 
         :return: The role_authority of this ObjectAuthority.
         :rtype: list[:class:`huaweicloudsdkdws.v2.RoleAuthority`]
@@ -85,7 +85,7 @@ class ObjectAuthority:
     def role_authority(self, role_authority):
         r"""Sets the role_authority of this ObjectAuthority.
 
-        角色权限集合
+        **参数解释**： 角色权限集合。 **取值范围**： 不涉及。
 
         :param role_authority: The role_authority of this ObjectAuthority.
         :type role_authority: list[:class:`huaweicloudsdkdws.v2.RoleAuthority`]

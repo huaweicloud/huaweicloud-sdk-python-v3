@@ -30,7 +30,7 @@ class UpdateDatabaseAuthorityResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param view_sql: sql列表
+        :param view_sql: **参数解释**： sql列表。 **取值范围**： 不涉及。
         :type view_sql: list[str]
         """
         
@@ -46,7 +46,7 @@ class UpdateDatabaseAuthorityResponse(SdkResponse):
     def view_sql(self):
         r"""Gets the view_sql of this UpdateDatabaseAuthorityResponse.
 
-        sql列表
+        **参数解释**： sql列表。 **取值范围**： 不涉及。
 
         :return: The view_sql of this UpdateDatabaseAuthorityResponse.
         :rtype: list[str]
@@ -57,7 +57,7 @@ class UpdateDatabaseAuthorityResponse(SdkResponse):
     def view_sql(self, view_sql):
         r"""Sets the view_sql of this UpdateDatabaseAuthorityResponse.
 
-        sql列表
+        **参数解释**： sql列表。 **取值范围**： 不涉及。
 
         :param view_sql: The view_sql of this UpdateDatabaseAuthorityResponse.
         :type view_sql: list[str]

@@ -32,9 +32,9 @@ class ListSnapshotCrossRegionPolicyResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param cross_region_configs: 跨区域配置信息
+        :param cross_region_configs: **参数解释**： 跨区域配置信息。 **取值范围**： 不涉及。
         :type cross_region_configs: list[:class:`huaweicloudsdkdws.v2.CrossRegionSnapshotConfig`]
-        :param count: 总数
+        :param count: **参数解释**： 总数。 **取值范围**： 不涉及。
         :type count: int
         """
         
@@ -53,7 +53,7 @@ class ListSnapshotCrossRegionPolicyResponse(SdkResponse):
     def cross_region_configs(self):
         r"""Gets the cross_region_configs of this ListSnapshotCrossRegionPolicyResponse.
 
-        跨区域配置信息
+        **参数解释**： 跨区域配置信息。 **取值范围**： 不涉及。
 
         :return: The cross_region_configs of this ListSnapshotCrossRegionPolicyResponse.
         :rtype: list[:class:`huaweicloudsdkdws.v2.CrossRegionSnapshotConfig`]
@@ -64,7 +64,7 @@ class ListSnapshotCrossRegionPolicyResponse(SdkResponse):
     def cross_region_configs(self, cross_region_configs):
         r"""Sets the cross_region_configs of this ListSnapshotCrossRegionPolicyResponse.
 
-        跨区域配置信息
+        **参数解释**： 跨区域配置信息。 **取值范围**： 不涉及。
 
         :param cross_region_configs: The cross_region_configs of this ListSnapshotCrossRegionPolicyResponse.
         :type cross_region_configs: list[:class:`huaweicloudsdkdws.v2.CrossRegionSnapshotConfig`]
@@ -75,7 +75,7 @@ class ListSnapshotCrossRegionPolicyResponse(SdkResponse):
     def count(self):
         r"""Gets the count of this ListSnapshotCrossRegionPolicyResponse.
 
-        总数
+        **参数解释**： 总数。 **取值范围**： 不涉及。
 
         :return: The count of this ListSnapshotCrossRegionPolicyResponse.
         :rtype: int
@@ -86,7 +86,7 @@ class ListSnapshotCrossRegionPolicyResponse(SdkResponse):
     def count(self, count):
         r"""Sets the count of this ListSnapshotCrossRegionPolicyResponse.
 
-        总数
+        **参数解释**： 总数。 **取值范围**： 不涉及。
 
         :param count: The count of this ListSnapshotCrossRegionPolicyResponse.
         :type count: int

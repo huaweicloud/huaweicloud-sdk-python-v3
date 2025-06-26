@@ -31,9 +31,9 @@ class DeleteClusterDnsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param cluster_id: **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :param cluster_id: **参数解释**： 集群ID。获取方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type cluster_id: str
-        :param type: 域名类型，支持删除公网域名。
+        :param type: **参数解释**： 域名类型。当前仅支持删除公网域名，删除内网域名尚未支持。 **约束限制**： 不涉及。 **取值范围**： public：删除公网域名。 **默认取值**： 不涉及。
         :type type: str
         """
         
@@ -50,7 +50,7 @@ class DeleteClusterDnsRequest:
     def cluster_id(self):
         r"""Gets the cluster_id of this DeleteClusterDnsRequest.
 
-        **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 集群ID。获取方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The cluster_id of this DeleteClusterDnsRequest.
         :rtype: str
@@ -61,7 +61,7 @@ class DeleteClusterDnsRequest:
     def cluster_id(self, cluster_id):
         r"""Sets the cluster_id of this DeleteClusterDnsRequest.
 
-        **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 集群ID。获取方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param cluster_id: The cluster_id of this DeleteClusterDnsRequest.
         :type cluster_id: str
@@ -72,7 +72,7 @@ class DeleteClusterDnsRequest:
     def type(self):
         r"""Gets the type of this DeleteClusterDnsRequest.
 
-        域名类型，支持删除公网域名。
+        **参数解释**： 域名类型。当前仅支持删除公网域名，删除内网域名尚未支持。 **约束限制**： 不涉及。 **取值范围**： public：删除公网域名。 **默认取值**： 不涉及。
 
         :return: The type of this DeleteClusterDnsRequest.
         :rtype: str
@@ -83,7 +83,7 @@ class DeleteClusterDnsRequest:
     def type(self, type):
         r"""Sets the type of this DeleteClusterDnsRequest.
 
-        域名类型，支持删除公网域名。
+        **参数解释**： 域名类型。当前仅支持删除公网域名，删除内网域名尚未支持。 **约束限制**： 不涉及。 **取值范围**： public：删除公网域名。 **默认取值**： 不涉及。
 
         :param type: The type of this DeleteClusterDnsRequest.
         :type type: str

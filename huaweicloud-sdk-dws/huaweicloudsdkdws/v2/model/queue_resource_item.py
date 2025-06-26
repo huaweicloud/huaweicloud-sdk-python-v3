@@ -31,9 +31,9 @@ class QueueResourceItem:
 
         The model defined in huaweicloud sdk
 
-        :param queue_name: 资源池名称。
+        :param queue_name: **参数解释**： 资源池名称。 **取值范围**： 不涉及。
         :type queue_name: str
-        :param queue_resources: 资源配置队列。
+        :param queue_resources: **参数解释**： 资源配置队列。 **取值范围**： 不涉及。
         :type queue_resources: list[:class:`huaweicloudsdkdws.v2.WorkloadResourceItem`]
         """
         
@@ -50,7 +50,7 @@ class QueueResourceItem:
     def queue_name(self):
         r"""Gets the queue_name of this QueueResourceItem.
 
-        资源池名称。
+        **参数解释**： 资源池名称。 **取值范围**： 不涉及。
 
         :return: The queue_name of this QueueResourceItem.
         :rtype: str
@@ -61,7 +61,7 @@ class QueueResourceItem:
     def queue_name(self, queue_name):
         r"""Sets the queue_name of this QueueResourceItem.
 
-        资源池名称。
+        **参数解释**： 资源池名称。 **取值范围**： 不涉及。
 
         :param queue_name: The queue_name of this QueueResourceItem.
         :type queue_name: str
@@ -72,7 +72,7 @@ class QueueResourceItem:
     def queue_resources(self):
         r"""Gets the queue_resources of this QueueResourceItem.
 
-        资源配置队列。
+        **参数解释**： 资源配置队列。 **取值范围**： 不涉及。
 
         :return: The queue_resources of this QueueResourceItem.
         :rtype: list[:class:`huaweicloudsdkdws.v2.WorkloadResourceItem`]
@@ -83,7 +83,7 @@ class QueueResourceItem:
     def queue_resources(self, queue_resources):
         r"""Sets the queue_resources of this QueueResourceItem.
 
-        资源配置队列。
+        **参数解释**： 资源配置队列。 **取值范围**： 不涉及。
 
         :param queue_resources: The queue_resources of this QueueResourceItem.
         :type queue_resources: list[:class:`huaweicloudsdkdws.v2.WorkloadResourceItem`]

@@ -35,13 +35,13 @@ class QuotasResource:
 
         The model defined in huaweicloud sdk
 
-        :param type: 项目资源类型。
+        :param type: **参数解释**： 项目资源类型。 **取值范围**： 不涉及。
         :type type: str
-        :param used: 已使用的资源数量。
+        :param used: **参数解释**： 已使用的资源数量。 **取值范围**： 不涉及。
         :type used: int
-        :param quota: 项目资源配额。
+        :param quota: **参数解释**： 项目资源配额。 **取值范围**： 不涉及。
         :type quota: int
-        :param unit: 资源计量单位。
+        :param unit: **参数解释**： 资源计量单位。 **取值范围**： 不涉及。
         :type unit: str
         """
         
@@ -62,7 +62,7 @@ class QuotasResource:
     def type(self):
         r"""Gets the type of this QuotasResource.
 
-        项目资源类型。
+        **参数解释**： 项目资源类型。 **取值范围**： 不涉及。
 
         :return: The type of this QuotasResource.
         :rtype: str
@@ -73,7 +73,7 @@ class QuotasResource:
     def type(self, type):
         r"""Sets the type of this QuotasResource.
 
-        项目资源类型。
+        **参数解释**： 项目资源类型。 **取值范围**： 不涉及。
 
         :param type: The type of this QuotasResource.
         :type type: str
@@ -84,7 +84,7 @@ class QuotasResource:
     def used(self):
         r"""Gets the used of this QuotasResource.
 
-        已使用的资源数量。
+        **参数解释**： 已使用的资源数量。 **取值范围**： 不涉及。
 
         :return: The used of this QuotasResource.
         :rtype: int
@@ -95,7 +95,7 @@ class QuotasResource:
     def used(self, used):
         r"""Sets the used of this QuotasResource.
 
-        已使用的资源数量。
+        **参数解释**： 已使用的资源数量。 **取值范围**： 不涉及。
 
         :param used: The used of this QuotasResource.
         :type used: int
@@ -106,7 +106,7 @@ class QuotasResource:
     def quota(self):
         r"""Gets the quota of this QuotasResource.
 
-        项目资源配额。
+        **参数解释**： 项目资源配额。 **取值范围**： 不涉及。
 
         :return: The quota of this QuotasResource.
         :rtype: int
@@ -117,7 +117,7 @@ class QuotasResource:
     def quota(self, quota):
         r"""Sets the quota of this QuotasResource.
 
-        项目资源配额。
+        **参数解释**： 项目资源配额。 **取值范围**： 不涉及。
 
         :param quota: The quota of this QuotasResource.
         :type quota: int
@@ -128,7 +128,7 @@ class QuotasResource:
     def unit(self):
         r"""Gets the unit of this QuotasResource.
 
-        资源计量单位。
+        **参数解释**： 资源计量单位。 **取值范围**： 不涉及。
 
         :return: The unit of this QuotasResource.
         :rtype: str
@@ -139,7 +139,7 @@ class QuotasResource:
     def unit(self, unit):
         r"""Sets the unit of this QuotasResource.
 
-        资源计量单位。
+        **参数解释**： 资源计量单位。 **取值范围**： 不涉及。
 
         :param unit: The unit of this QuotasResource.
         :type unit: str

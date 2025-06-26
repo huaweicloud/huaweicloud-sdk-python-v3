@@ -39,7 +39,8 @@ class ResponseVpnConnection:
         'ha_role': 'str',
         'tags': 'list[VpnResourceTag]',
         'peer_subnets_v6': 'list[str]',
-        'policy_rules_v6': 'list[PolicyRule]'
+        'policy_rules_v6': 'list[PolicyRule]',
+        'bgp_peer': 'BgpPeer'
     }
 
     attribute_map = {
@@ -65,10 +66,11 @@ class ResponseVpnConnection:
         'ha_role': 'ha_role',
         'tags': 'tags',
         'peer_subnets_v6': 'peer_subnets_v6',
-        'policy_rules_v6': 'policy_rules_v6'
+        'policy_rules_v6': 'policy_rules_v6',
+        'bgp_peer': 'bgp_peer'
     }
 
-    def __init__(self, id=None, name=None, status=None, vgw_id=None, vgw_ip=None, style=None, cgw_id=None, peer_subnets=None, tunnel_local_address=None, tunnel_peer_address=None, enable_nqa=None, enable_hub=None, policy_rules=None, ikepolicy=None, ipsecpolicy=None, created_at=None, updated_at=None, enterprise_project_id=None, connection_monitor_id=None, ha_role=None, tags=None, peer_subnets_v6=None, policy_rules_v6=None):
+    def __init__(self, id=None, name=None, status=None, vgw_id=None, vgw_ip=None, style=None, cgw_id=None, peer_subnets=None, tunnel_local_address=None, tunnel_peer_address=None, enable_nqa=None, enable_hub=None, policy_rules=None, ikepolicy=None, ipsecpolicy=None, created_at=None, updated_at=None, enterprise_project_id=None, connection_monitor_id=None, ha_role=None, tags=None, peer_subnets_v6=None, policy_rules_v6=None, bgp_peer=None):
         r"""ResponseVpnConnection
 
         The model defined in huaweicloud sdk
@@ -119,6 +121,8 @@ class ResponseVpnConnection:
         :type peer_subnets_v6: list[str]
         :param policy_rules_v6: 策略模式的ipv6策略规则组
         :type policy_rules_v6: list[:class:`huaweicloudsdkvpn.v5.PolicyRule`]
+        :param bgp_peer: 
+        :type bgp_peer: :class:`huaweicloudsdkvpn.v5.BgpPeer`
         """
         
         
@@ -146,6 +150,7 @@ class ResponseVpnConnection:
         self._tags = None
         self._peer_subnets_v6 = None
         self._policy_rules_v6 = None
+        self._bgp_peer = None
         self.discriminator = None
 
         if id is not None:
@@ -194,6 +199,8 @@ class ResponseVpnConnection:
             self.peer_subnets_v6 = peer_subnets_v6
         if policy_rules_v6 is not None:
             self.policy_rules_v6 = policy_rules_v6
+        if bgp_peer is not None:
+            self.bgp_peer = bgp_peer
 
     @property
     def id(self):
@@ -692,6 +699,24 @@ class ResponseVpnConnection:
         :type policy_rules_v6: list[:class:`huaweicloudsdkvpn.v5.PolicyRule`]
         """
         self._policy_rules_v6 = policy_rules_v6
+
+    @property
+    def bgp_peer(self):
+        r"""Gets the bgp_peer of this ResponseVpnConnection.
+
+        :return: The bgp_peer of this ResponseVpnConnection.
+        :rtype: :class:`huaweicloudsdkvpn.v5.BgpPeer`
+        """
+        return self._bgp_peer
+
+    @bgp_peer.setter
+    def bgp_peer(self, bgp_peer):
+        r"""Sets the bgp_peer of this ResponseVpnConnection.
+
+        :param bgp_peer: The bgp_peer of this ResponseVpnConnection.
+        :type bgp_peer: :class:`huaweicloudsdkvpn.v5.BgpPeer`
+        """
+        self._bgp_peer = bgp_peer
 
     def to_dict(self):
         """Returns the model properties as a dict"""

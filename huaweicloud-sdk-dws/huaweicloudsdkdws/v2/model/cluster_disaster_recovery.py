@@ -43,13 +43,13 @@ class ClusterDisasterRecovery:
         :type primary_cluster: :class:`huaweicloudsdkdws.v2.ClusterRecoveryProgress`
         :param standby_cluster: 
         :type standby_cluster: :class:`huaweicloudsdkdws.v2.ClusterRecoveryProgress`
-        :param latest_barrier_time: latest_barrier_time
+        :param latest_barrier_time: **参数解释**： 故障发生时间。 **取值范围**： 不涉及。
         :type latest_barrier_time: str
-        :param last_recovery_spend: last_recovery_spend
+        :param last_recovery_spend: **参数解释**： 上一个备份集恢复消耗时间，单位：秒（s）。 **取值范围**： 不涉及。
         :type last_recovery_spend: int
-        :param recovery_point_object: recovery_point_object
+        :param recovery_point_object: **参数解释**： 数据恢复目标时间，单位：秒（s）。 **取值范围**： 不涉及。
         :type recovery_point_object: int
-        :param recovery_time_object: recovery_time_object
+        :param recovery_time_object: **参数解释**： 服务恢复目标时间，单位：秒（s）。 **取值范围**： 不涉及。
         :type recovery_time_object: int
         """
         
@@ -116,7 +116,7 @@ class ClusterDisasterRecovery:
     def latest_barrier_time(self):
         r"""Gets the latest_barrier_time of this ClusterDisasterRecovery.
 
-        latest_barrier_time
+        **参数解释**： 故障发生时间。 **取值范围**： 不涉及。
 
         :return: The latest_barrier_time of this ClusterDisasterRecovery.
         :rtype: str
@@ -127,7 +127,7 @@ class ClusterDisasterRecovery:
     def latest_barrier_time(self, latest_barrier_time):
         r"""Sets the latest_barrier_time of this ClusterDisasterRecovery.
 
-        latest_barrier_time
+        **参数解释**： 故障发生时间。 **取值范围**： 不涉及。
 
         :param latest_barrier_time: The latest_barrier_time of this ClusterDisasterRecovery.
         :type latest_barrier_time: str
@@ -138,7 +138,7 @@ class ClusterDisasterRecovery:
     def last_recovery_spend(self):
         r"""Gets the last_recovery_spend of this ClusterDisasterRecovery.
 
-        last_recovery_spend
+        **参数解释**： 上一个备份集恢复消耗时间，单位：秒（s）。 **取值范围**： 不涉及。
 
         :return: The last_recovery_spend of this ClusterDisasterRecovery.
         :rtype: int
@@ -149,7 +149,7 @@ class ClusterDisasterRecovery:
     def last_recovery_spend(self, last_recovery_spend):
         r"""Sets the last_recovery_spend of this ClusterDisasterRecovery.
 
-        last_recovery_spend
+        **参数解释**： 上一个备份集恢复消耗时间，单位：秒（s）。 **取值范围**： 不涉及。
 
         :param last_recovery_spend: The last_recovery_spend of this ClusterDisasterRecovery.
         :type last_recovery_spend: int
@@ -160,7 +160,7 @@ class ClusterDisasterRecovery:
     def recovery_point_object(self):
         r"""Gets the recovery_point_object of this ClusterDisasterRecovery.
 
-        recovery_point_object
+        **参数解释**： 数据恢复目标时间，单位：秒（s）。 **取值范围**： 不涉及。
 
         :return: The recovery_point_object of this ClusterDisasterRecovery.
         :rtype: int
@@ -171,7 +171,7 @@ class ClusterDisasterRecovery:
     def recovery_point_object(self, recovery_point_object):
         r"""Sets the recovery_point_object of this ClusterDisasterRecovery.
 
-        recovery_point_object
+        **参数解释**： 数据恢复目标时间，单位：秒（s）。 **取值范围**： 不涉及。
 
         :param recovery_point_object: The recovery_point_object of this ClusterDisasterRecovery.
         :type recovery_point_object: int
@@ -182,7 +182,7 @@ class ClusterDisasterRecovery:
     def recovery_time_object(self):
         r"""Gets the recovery_time_object of this ClusterDisasterRecovery.
 
-        recovery_time_object
+        **参数解释**： 服务恢复目标时间，单位：秒（s）。 **取值范围**： 不涉及。
 
         :return: The recovery_time_object of this ClusterDisasterRecovery.
         :rtype: int
@@ -193,7 +193,7 @@ class ClusterDisasterRecovery:
     def recovery_time_object(self, recovery_time_object):
         r"""Sets the recovery_time_object of this ClusterDisasterRecovery.
 
-        recovery_time_object
+        **参数解释**： 服务恢复目标时间，单位：秒（s）。 **取值范围**： 不涉及。
 
         :param recovery_time_object: The recovery_time_object of this ClusterDisasterRecovery.
         :type recovery_time_object: int

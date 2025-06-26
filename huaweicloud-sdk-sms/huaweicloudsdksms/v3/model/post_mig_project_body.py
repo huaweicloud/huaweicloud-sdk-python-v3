@@ -28,7 +28,7 @@ class PostMigProjectBody:
         'type': 'str',
         'enterprise_project': 'str',
         'syncing': 'bool',
-        'start_networck_check': 'bool'
+        'start_network_check': 'bool'
     }
 
     attribute_map = {
@@ -43,10 +43,10 @@ class PostMigProjectBody:
         'type': 'type',
         'enterprise_project': 'enterprise_project',
         'syncing': 'syncing',
-        'start_networck_check': 'start_networck_check'
+        'start_network_check': 'start_network_check'
     }
 
-    def __init__(self, name=None, description=None, isdefault=None, region=None, start_target_server=None, speed_limit=None, use_public_ip=None, exist_server=None, type=None, enterprise_project=None, syncing=None, start_networck_check=None):
+    def __init__(self, name=None, description=None, isdefault=None, region=None, start_target_server=None, speed_limit=None, use_public_ip=None, exist_server=None, type=None, enterprise_project=None, syncing=None, start_network_check=None):
         r"""PostMigProjectBody
 
         The model defined in huaweicloud sdk
@@ -73,8 +73,8 @@ class PostMigProjectBody:
         :type enterprise_project: str
         :param syncing: 首次复制或者同步后 是否继续持续同步
         :type syncing: bool
-        :param start_networck_check: 是否启动网络质量检测
-        :type start_networck_check: bool
+        :param start_network_check: 是否启动网络质量检测
+        :type start_network_check: bool
         """
         
         
@@ -90,7 +90,7 @@ class PostMigProjectBody:
         self._type = None
         self._enterprise_project = None
         self._syncing = None
-        self._start_networck_check = None
+        self._start_network_check = None
         self.discriminator = None
 
         self.name = name
@@ -109,8 +109,8 @@ class PostMigProjectBody:
         if enterprise_project is not None:
             self.enterprise_project = enterprise_project
         self.syncing = syncing
-        if start_networck_check is not None:
-            self.start_networck_check = start_networck_check
+        if start_network_check is not None:
+            self.start_network_check = start_network_check
 
     @property
     def name(self):
@@ -355,26 +355,26 @@ class PostMigProjectBody:
         self._syncing = syncing
 
     @property
-    def start_networck_check(self):
-        r"""Gets the start_networck_check of this PostMigProjectBody.
+    def start_network_check(self):
+        r"""Gets the start_network_check of this PostMigProjectBody.
 
         是否启动网络质量检测
 
-        :return: The start_networck_check of this PostMigProjectBody.
+        :return: The start_network_check of this PostMigProjectBody.
         :rtype: bool
         """
-        return self._start_networck_check
+        return self._start_network_check
 
-    @start_networck_check.setter
-    def start_networck_check(self, start_networck_check):
-        r"""Sets the start_networck_check of this PostMigProjectBody.
+    @start_network_check.setter
+    def start_network_check(self, start_network_check):
+        r"""Sets the start_network_check of this PostMigProjectBody.
 
         是否启动网络质量检测
 
-        :param start_networck_check: The start_networck_check of this PostMigProjectBody.
-        :type start_networck_check: bool
+        :param start_network_check: The start_network_check of this PostMigProjectBody.
+        :type start_network_check: bool
         """
-        self._start_networck_check = start_networck_check
+        self._start_network_check = start_network_check
 
     def to_dict(self):
         """Returns the model properties as a dict"""

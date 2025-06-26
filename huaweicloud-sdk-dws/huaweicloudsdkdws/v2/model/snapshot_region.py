@@ -29,7 +29,7 @@ class SnapshotRegion:
 
         The model defined in huaweicloud sdk
 
-        :param region_id: 区域ID
+        :param region_id: **参数解释**： 区域ID。 **取值范围**： 不涉及。
         :type region_id: str
         """
         
@@ -45,7 +45,7 @@ class SnapshotRegion:
     def region_id(self):
         r"""Gets the region_id of this SnapshotRegion.
 
-        区域ID
+        **参数解释**： 区域ID。 **取值范围**： 不涉及。
 
         :return: The region_id of this SnapshotRegion.
         :rtype: str
@@ -56,7 +56,7 @@ class SnapshotRegion:
     def region_id(self, region_id):
         r"""Sets the region_id of this SnapshotRegion.
 
-        区域ID
+        **参数解释**： 区域ID。 **取值范围**： 不涉及。
 
         :param region_id: The region_id of this SnapshotRegion.
         :type region_id: str

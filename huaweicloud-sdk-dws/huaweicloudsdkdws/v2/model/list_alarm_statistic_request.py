@@ -29,7 +29,7 @@ class ListAlarmStatisticRequest:
 
         The model defined in huaweicloud sdk
 
-        :param time_zone: 时区
+        :param time_zone: **参数解释**： 时区信息。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： GMT+08:00
         :type time_zone: str
         """
         
@@ -38,13 +38,14 @@ class ListAlarmStatisticRequest:
         self._time_zone = None
         self.discriminator = None
 
-        self.time_zone = time_zone
+        if time_zone is not None:
+            self.time_zone = time_zone
 
     @property
     def time_zone(self):
         r"""Gets the time_zone of this ListAlarmStatisticRequest.
 
-        时区
+        **参数解释**： 时区信息。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： GMT+08:00
 
         :return: The time_zone of this ListAlarmStatisticRequest.
         :rtype: str
@@ -55,7 +56,7 @@ class ListAlarmStatisticRequest:
     def time_zone(self, time_zone):
         r"""Sets the time_zone of this ListAlarmStatisticRequest.
 
-        时区
+        **参数解释**： 时区信息。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： GMT+08:00
 
         :param time_zone: The time_zone of this ListAlarmStatisticRequest.
         :type time_zone: str

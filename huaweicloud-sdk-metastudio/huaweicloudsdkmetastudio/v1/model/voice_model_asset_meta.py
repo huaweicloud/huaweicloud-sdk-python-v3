@@ -30,7 +30,9 @@ class VoiceModelAssetMeta:
         'external_voice_meta': 'ExternalVoiceAssetMeta',
         'is_support_vc_process': 'bool',
         'is_support_thai_auto_split': 'bool',
-        'is_flexus': 'bool'
+        'is_flexus': 'bool',
+        'is_enhance_rhythm': 'bool',
+        'age': 'str'
     }
 
     attribute_map = {
@@ -47,10 +49,12 @@ class VoiceModelAssetMeta:
         'external_voice_meta': 'external_voice_meta',
         'is_support_vc_process': 'is_support_vc_process',
         'is_support_thai_auto_split': 'is_support_thai_auto_split',
-        'is_flexus': 'is_flexus'
+        'is_flexus': 'is_flexus',
+        'is_enhance_rhythm': 'is_enhance_rhythm',
+        'age': 'age'
     }
 
-    def __init__(self, order=None, model_type=None, sex=None, language=None, languages=None, speed_ratio=None, volume_ratio=None, is_realtime_voice=None, style=None, voice_capability=None, external_voice_meta=None, is_support_vc_process=None, is_support_thai_auto_split=None, is_flexus=None):
+    def __init__(self, order=None, model_type=None, sex=None, language=None, languages=None, speed_ratio=None, volume_ratio=None, is_realtime_voice=None, style=None, voice_capability=None, external_voice_meta=None, is_support_vc_process=None, is_support_thai_auto_split=None, is_flexus=None, is_enhance_rhythm=None, age=None):
         r"""VoiceModelAssetMeta
 
         The model defined in huaweicloud sdk
@@ -83,6 +87,10 @@ class VoiceModelAssetMeta:
         :type is_support_thai_auto_split: bool
         :param is_flexus: 是否是Flexus版本声音。
         :type is_flexus: bool
+        :param is_enhance_rhythm: 是否增强韵律
+        :type is_enhance_rhythm: bool
+        :param age: 音色年龄段：青年、中年、老年
+        :type age: str
         """
         
         
@@ -101,6 +109,8 @@ class VoiceModelAssetMeta:
         self._is_support_vc_process = None
         self._is_support_thai_auto_split = None
         self._is_flexus = None
+        self._is_enhance_rhythm = None
+        self._age = None
         self.discriminator = None
 
         if order is not None:
@@ -131,6 +141,10 @@ class VoiceModelAssetMeta:
             self.is_support_thai_auto_split = is_support_thai_auto_split
         if is_flexus is not None:
             self.is_flexus = is_flexus
+        if is_enhance_rhythm is not None:
+            self.is_enhance_rhythm = is_enhance_rhythm
+        if age is not None:
+            self.age = age
 
     @property
     def order(self):
@@ -431,6 +445,50 @@ class VoiceModelAssetMeta:
         :type is_flexus: bool
         """
         self._is_flexus = is_flexus
+
+    @property
+    def is_enhance_rhythm(self):
+        r"""Gets the is_enhance_rhythm of this VoiceModelAssetMeta.
+
+        是否增强韵律
+
+        :return: The is_enhance_rhythm of this VoiceModelAssetMeta.
+        :rtype: bool
+        """
+        return self._is_enhance_rhythm
+
+    @is_enhance_rhythm.setter
+    def is_enhance_rhythm(self, is_enhance_rhythm):
+        r"""Sets the is_enhance_rhythm of this VoiceModelAssetMeta.
+
+        是否增强韵律
+
+        :param is_enhance_rhythm: The is_enhance_rhythm of this VoiceModelAssetMeta.
+        :type is_enhance_rhythm: bool
+        """
+        self._is_enhance_rhythm = is_enhance_rhythm
+
+    @property
+    def age(self):
+        r"""Gets the age of this VoiceModelAssetMeta.
+
+        音色年龄段：青年、中年、老年
+
+        :return: The age of this VoiceModelAssetMeta.
+        :rtype: str
+        """
+        return self._age
+
+    @age.setter
+    def age(self, age):
+        r"""Sets the age of this VoiceModelAssetMeta.
+
+        音色年龄段：青年、中年、老年
+
+        :param age: The age of this VoiceModelAssetMeta.
+        :type age: str
+        """
+        self._age = age
 
     def to_dict(self):
         """Returns the model properties as a dict"""

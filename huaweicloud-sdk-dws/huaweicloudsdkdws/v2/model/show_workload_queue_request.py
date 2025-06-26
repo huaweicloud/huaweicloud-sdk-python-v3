@@ -33,11 +33,11 @@ class ShowWorkloadQueueRequest:
 
         The model defined in huaweicloud sdk
 
-        :param cluster_id: **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
+        :param cluster_id: **参数解释**： 集群ID。获取方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
         :type cluster_id: str
-        :param queue_name: **参数解释**： 资源队列名。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :param queue_name: **参数解释**： 资源池名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type queue_name: str
-        :param logical_cluster_name: **参数解释**： 逻辑集群名称。非逻辑集群模式下该字段不填,逻辑集群模式下需指定逻辑集群名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :param logical_cluster_name: **参数解释**： 逻辑集群名称。非逻辑集群模式下该字段不填，逻辑集群模式下需指定逻辑集群名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type logical_cluster_name: str
         """
         
@@ -57,7 +57,7 @@ class ShowWorkloadQueueRequest:
     def cluster_id(self):
         r"""Gets the cluster_id of this ShowWorkloadQueueRequest.
 
-        **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
+        **参数解释**： 集群ID。获取方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
 
         :return: The cluster_id of this ShowWorkloadQueueRequest.
         :rtype: str
@@ -68,7 +68,7 @@ class ShowWorkloadQueueRequest:
     def cluster_id(self, cluster_id):
         r"""Sets the cluster_id of this ShowWorkloadQueueRequest.
 
-        **参数解释**： 集群ID。获取方式方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
+        **参数解释**： 集群ID。获取方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
 
         :param cluster_id: The cluster_id of this ShowWorkloadQueueRequest.
         :type cluster_id: str
@@ -79,7 +79,7 @@ class ShowWorkloadQueueRequest:
     def queue_name(self):
         r"""Gets the queue_name of this ShowWorkloadQueueRequest.
 
-        **参数解释**： 资源队列名。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 资源池名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The queue_name of this ShowWorkloadQueueRequest.
         :rtype: str
@@ -90,7 +90,7 @@ class ShowWorkloadQueueRequest:
     def queue_name(self, queue_name):
         r"""Sets the queue_name of this ShowWorkloadQueueRequest.
 
-        **参数解释**： 资源队列名。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 资源池名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param queue_name: The queue_name of this ShowWorkloadQueueRequest.
         :type queue_name: str
@@ -101,7 +101,7 @@ class ShowWorkloadQueueRequest:
     def logical_cluster_name(self):
         r"""Gets the logical_cluster_name of this ShowWorkloadQueueRequest.
 
-        **参数解释**： 逻辑集群名称。非逻辑集群模式下该字段不填,逻辑集群模式下需指定逻辑集群名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 逻辑集群名称。非逻辑集群模式下该字段不填，逻辑集群模式下需指定逻辑集群名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The logical_cluster_name of this ShowWorkloadQueueRequest.
         :rtype: str
@@ -112,7 +112,7 @@ class ShowWorkloadQueueRequest:
     def logical_cluster_name(self, logical_cluster_name):
         r"""Sets the logical_cluster_name of this ShowWorkloadQueueRequest.
 
-        **参数解释**： 逻辑集群名称。非逻辑集群模式下该字段不填,逻辑集群模式下需指定逻辑集群名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 逻辑集群名称。非逻辑集群模式下该字段不填，逻辑集群模式下需指定逻辑集群名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param logical_cluster_name: The logical_cluster_name of this ShowWorkloadQueueRequest.
         :type logical_cluster_name: str

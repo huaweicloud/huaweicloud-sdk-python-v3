@@ -31,7 +31,7 @@ class UpdateEventSubRequest:
 
         The model defined in huaweicloud sdk
 
-        :param event_sub_id: 事件订阅ID
+        :param event_sub_id: **参数解释**： 事件订阅ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type event_sub_id: str
         :param body: Body of the UpdateEventSubRequest
         :type body: :class:`huaweicloudsdkdws.v2.EventSubUpdateRequest`
@@ -51,7 +51,7 @@ class UpdateEventSubRequest:
     def event_sub_id(self):
         r"""Gets the event_sub_id of this UpdateEventSubRequest.
 
-        事件订阅ID
+        **参数解释**： 事件订阅ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The event_sub_id of this UpdateEventSubRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class UpdateEventSubRequest:
     def event_sub_id(self, event_sub_id):
         r"""Sets the event_sub_id of this UpdateEventSubRequest.
 
-        事件订阅ID
+        **参数解释**： 事件订阅ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param event_sub_id: The event_sub_id of this UpdateEventSubRequest.
         :type event_sub_id: str

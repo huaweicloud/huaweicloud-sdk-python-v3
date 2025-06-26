@@ -30,7 +30,7 @@ class ListDisasterRecoverResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param disaster_recovery: 容灾对象
+        :param disaster_recovery: **参数解释**： 容灾对象。 **取值范围**： 不涉及。
         :type disaster_recovery: list[:class:`huaweicloudsdkdws.v2.DisasterRecovery`]
         """
         
@@ -46,7 +46,7 @@ class ListDisasterRecoverResponse(SdkResponse):
     def disaster_recovery(self):
         r"""Gets the disaster_recovery of this ListDisasterRecoverResponse.
 
-        容灾对象
+        **参数解释**： 容灾对象。 **取值范围**： 不涉及。
 
         :return: The disaster_recovery of this ListDisasterRecoverResponse.
         :rtype: list[:class:`huaweicloudsdkdws.v2.DisasterRecovery`]
@@ -57,7 +57,7 @@ class ListDisasterRecoverResponse(SdkResponse):
     def disaster_recovery(self, disaster_recovery):
         r"""Sets the disaster_recovery of this ListDisasterRecoverResponse.
 
-        容灾对象
+        **参数解释**： 容灾对象。 **取值范围**： 不涉及。
 
         :param disaster_recovery: The disaster_recovery of this ListDisasterRecoverResponse.
         :type disaster_recovery: list[:class:`huaweicloudsdkdws.v2.DisasterRecovery`]

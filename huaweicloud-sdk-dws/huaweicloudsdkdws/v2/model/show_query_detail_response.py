@@ -34,9 +34,9 @@ class ShowQueryDetailResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param code: 响应码。
+        :param code: **参数解释**： 响应码。 **取值范围**： 不涉及。
         :type code: int
-        :param msg: 响应信息。
+        :param msg: **参数解释**： 响应信息。 **取值范围**： 不涉及。
         :type msg: str
         :param data: 
         :type data: :class:`huaweicloudsdkdws.v2.ListQueriesDto`
@@ -60,7 +60,7 @@ class ShowQueryDetailResponse(SdkResponse):
     def code(self):
         r"""Gets the code of this ShowQueryDetailResponse.
 
-        响应码。
+        **参数解释**： 响应码。 **取值范围**： 不涉及。
 
         :return: The code of this ShowQueryDetailResponse.
         :rtype: int
@@ -71,7 +71,7 @@ class ShowQueryDetailResponse(SdkResponse):
     def code(self, code):
         r"""Sets the code of this ShowQueryDetailResponse.
 
-        响应码。
+        **参数解释**： 响应码。 **取值范围**： 不涉及。
 
         :param code: The code of this ShowQueryDetailResponse.
         :type code: int
@@ -82,7 +82,7 @@ class ShowQueryDetailResponse(SdkResponse):
     def msg(self):
         r"""Gets the msg of this ShowQueryDetailResponse.
 
-        响应信息。
+        **参数解释**： 响应信息。 **取值范围**： 不涉及。
 
         :return: The msg of this ShowQueryDetailResponse.
         :rtype: str
@@ -93,7 +93,7 @@ class ShowQueryDetailResponse(SdkResponse):
     def msg(self, msg):
         r"""Sets the msg of this ShowQueryDetailResponse.
 
-        响应信息。
+        **参数解释**： 响应信息。 **取值范围**： 不涉及。
 
         :param msg: The msg of this ShowQueryDetailResponse.
         :type msg: str

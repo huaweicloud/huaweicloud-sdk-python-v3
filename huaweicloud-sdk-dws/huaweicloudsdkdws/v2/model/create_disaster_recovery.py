@@ -41,19 +41,19 @@ class CreateDisasterRecovery:
 
         The model defined in huaweicloud sdk
 
-        :param name: 名称
+        :param name: **参数解释**： 名称。 **取值范围**： 不涉及。
         :type name: str
-        :param dr_type: 容灾类型
+        :param dr_type: **参数解释**： 容灾类型。 **取值范围**： 不涉及。
         :type dr_type: str
-        :param primary_cluster_id: 主集群ID
+        :param primary_cluster_id: **参数解释**： 主集群ID。 **取值范围**： 不涉及。
         :type primary_cluster_id: str
-        :param standby_cluster_id: 备集群ID
+        :param standby_cluster_id: **参数解释**： 备集群ID。 **取值范围**： 不涉及。
         :type standby_cluster_id: str
-        :param dr_sync_period: 同步周期
+        :param dr_sync_period: **参数解释**： 同步周期。 **取值范围**： 不涉及。
         :type dr_sync_period: str
-        :param primary_obs_bucket: 主集群OBS桶
+        :param primary_obs_bucket: **参数解释**： 主集群OBS桶。 **取值范围**： 不涉及。
         :type primary_obs_bucket: str
-        :param standby_obs_bucket: 备集群obs桶
+        :param standby_obs_bucket: **参数解释**： 备集群obs桶。 **取值范围**： 不涉及。
         :type standby_obs_bucket: str
         """
         
@@ -82,7 +82,7 @@ class CreateDisasterRecovery:
     def name(self):
         r"""Gets the name of this CreateDisasterRecovery.
 
-        名称
+        **参数解释**： 名称。 **取值范围**： 不涉及。
 
         :return: The name of this CreateDisasterRecovery.
         :rtype: str
@@ -93,7 +93,7 @@ class CreateDisasterRecovery:
     def name(self, name):
         r"""Sets the name of this CreateDisasterRecovery.
 
-        名称
+        **参数解释**： 名称。 **取值范围**： 不涉及。
 
         :param name: The name of this CreateDisasterRecovery.
         :type name: str
@@ -104,7 +104,7 @@ class CreateDisasterRecovery:
     def dr_type(self):
         r"""Gets the dr_type of this CreateDisasterRecovery.
 
-        容灾类型
+        **参数解释**： 容灾类型。 **取值范围**： 不涉及。
 
         :return: The dr_type of this CreateDisasterRecovery.
         :rtype: str
@@ -115,7 +115,7 @@ class CreateDisasterRecovery:
     def dr_type(self, dr_type):
         r"""Sets the dr_type of this CreateDisasterRecovery.
 
-        容灾类型
+        **参数解释**： 容灾类型。 **取值范围**： 不涉及。
 
         :param dr_type: The dr_type of this CreateDisasterRecovery.
         :type dr_type: str
@@ -126,7 +126,7 @@ class CreateDisasterRecovery:
     def primary_cluster_id(self):
         r"""Gets the primary_cluster_id of this CreateDisasterRecovery.
 
-        主集群ID
+        **参数解释**： 主集群ID。 **取值范围**： 不涉及。
 
         :return: The primary_cluster_id of this CreateDisasterRecovery.
         :rtype: str
@@ -137,7 +137,7 @@ class CreateDisasterRecovery:
     def primary_cluster_id(self, primary_cluster_id):
         r"""Sets the primary_cluster_id of this CreateDisasterRecovery.
 
-        主集群ID
+        **参数解释**： 主集群ID。 **取值范围**： 不涉及。
 
         :param primary_cluster_id: The primary_cluster_id of this CreateDisasterRecovery.
         :type primary_cluster_id: str
@@ -148,7 +148,7 @@ class CreateDisasterRecovery:
     def standby_cluster_id(self):
         r"""Gets the standby_cluster_id of this CreateDisasterRecovery.
 
-        备集群ID
+        **参数解释**： 备集群ID。 **取值范围**： 不涉及。
 
         :return: The standby_cluster_id of this CreateDisasterRecovery.
         :rtype: str
@@ -159,7 +159,7 @@ class CreateDisasterRecovery:
     def standby_cluster_id(self, standby_cluster_id):
         r"""Sets the standby_cluster_id of this CreateDisasterRecovery.
 
-        备集群ID
+        **参数解释**： 备集群ID。 **取值范围**： 不涉及。
 
         :param standby_cluster_id: The standby_cluster_id of this CreateDisasterRecovery.
         :type standby_cluster_id: str
@@ -170,7 +170,7 @@ class CreateDisasterRecovery:
     def dr_sync_period(self):
         r"""Gets the dr_sync_period of this CreateDisasterRecovery.
 
-        同步周期
+        **参数解释**： 同步周期。 **取值范围**： 不涉及。
 
         :return: The dr_sync_period of this CreateDisasterRecovery.
         :rtype: str
@@ -181,7 +181,7 @@ class CreateDisasterRecovery:
     def dr_sync_period(self, dr_sync_period):
         r"""Sets the dr_sync_period of this CreateDisasterRecovery.
 
-        同步周期
+        **参数解释**： 同步周期。 **取值范围**： 不涉及。
 
         :param dr_sync_period: The dr_sync_period of this CreateDisasterRecovery.
         :type dr_sync_period: str
@@ -192,7 +192,7 @@ class CreateDisasterRecovery:
     def primary_obs_bucket(self):
         r"""Gets the primary_obs_bucket of this CreateDisasterRecovery.
 
-        主集群OBS桶
+        **参数解释**： 主集群OBS桶。 **取值范围**： 不涉及。
 
         :return: The primary_obs_bucket of this CreateDisasterRecovery.
         :rtype: str
@@ -203,7 +203,7 @@ class CreateDisasterRecovery:
     def primary_obs_bucket(self, primary_obs_bucket):
         r"""Sets the primary_obs_bucket of this CreateDisasterRecovery.
 
-        主集群OBS桶
+        **参数解释**： 主集群OBS桶。 **取值范围**： 不涉及。
 
         :param primary_obs_bucket: The primary_obs_bucket of this CreateDisasterRecovery.
         :type primary_obs_bucket: str
@@ -214,7 +214,7 @@ class CreateDisasterRecovery:
     def standby_obs_bucket(self):
         r"""Gets the standby_obs_bucket of this CreateDisasterRecovery.
 
-        备集群obs桶
+        **参数解释**： 备集群obs桶。 **取值范围**： 不涉及。
 
         :return: The standby_obs_bucket of this CreateDisasterRecovery.
         :rtype: str
@@ -225,7 +225,7 @@ class CreateDisasterRecovery:
     def standby_obs_bucket(self, standby_obs_bucket):
         r"""Sets the standby_obs_bucket of this CreateDisasterRecovery.
 
-        备集群obs桶
+        **参数解释**： 备集群obs桶。 **取值范围**： 不涉及。
 
         :param standby_obs_bucket: The standby_obs_bucket of this CreateDisasterRecovery.
         :type standby_obs_bucket: str

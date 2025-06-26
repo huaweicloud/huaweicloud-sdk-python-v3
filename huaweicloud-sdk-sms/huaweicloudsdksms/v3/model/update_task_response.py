@@ -18,51 +18,51 @@ class UpdateTaskResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'str'
+        'id': 'str'
     }
 
     attribute_map = {
-        'body': 'body'
+        'id': 'id'
     }
 
-    def __init__(self, body=None):
+    def __init__(self, id=None):
         r"""UpdateTaskResponse
 
         The model defined in huaweicloud sdk
 
-        :param body: 更新指定ID的迁移任务
-        :type body: str
+        :param id: 任务ID
+        :type id: str
         """
         
         super(UpdateTaskResponse, self).__init__()
 
-        self._body = None
+        self._id = None
         self.discriminator = None
 
-        if body is not None:
-            self.body = body
+        if id is not None:
+            self.id = id
 
     @property
-    def body(self):
-        r"""Gets the body of this UpdateTaskResponse.
+    def id(self):
+        r"""Gets the id of this UpdateTaskResponse.
 
-        更新指定ID的迁移任务
+        任务ID
 
-        :return: The body of this UpdateTaskResponse.
+        :return: The id of this UpdateTaskResponse.
         :rtype: str
         """
-        return self._body
+        return self._id
 
-    @body.setter
-    def body(self, body):
-        r"""Sets the body of this UpdateTaskResponse.
+    @id.setter
+    def id(self, id):
+        r"""Sets the id of this UpdateTaskResponse.
 
-        更新指定ID的迁移任务
+        任务ID
 
-        :param body: The body of this UpdateTaskResponse.
-        :type body: str
+        :param id: The id of this UpdateTaskResponse.
+        :type id: str
         """
-        self._body = body
+        self._id = id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

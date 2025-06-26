@@ -147,125 +147,125 @@ class ListQueriesDto:
 
         The model defined in huaweicloud sdk
 
-        :param virtual_cluster_id: 虚拟集群ID
+        :param virtual_cluster_id: **参数解释**： 虚拟集群ID。 **取值范围**： 不涉及。
         :type virtual_cluster_id: int
-        :param ctime: 采集时间
+        :param ctime: **参数解释**： 采集时间。 **取值范围**： 不涉及。
         :type ctime: int
-        :param pid: 会话id。
+        :param pid: **参数解释**： 会话ID。 **取值范围**： 不涉及。
         :type pid: str
-        :param inst_name: 实例名称。
+        :param inst_name: **参数解释**： 实例名称。 **取值范围**： 不涉及。
         :type inst_name: str
-        :param waiting: 如果后台当前正等待锁则为true。
+        :param waiting: **参数解释**： 如果后台当前正等待锁则为true。 **取值范围**： 不涉及。
         :type waiting: bool
-        :param enqueue: 工作负载管理资源状态。
+        :param enqueue: **参数解释**： 资源状态。 **取值范围**： 不涉及。
         :type enqueue: str
-        :param warning: 主要显示如下几类告警信息以及sql自诊断调优相关告警。
+        :param warning: **参数解释**： 主要显示如下几类告警信息以及sql自诊断调优相关告警。 **取值范围**： 不涉及。
         :type warning: str
-        :param query: 查询语句。
+        :param query: **参数解释**： 查询语句。 **取值范围**： 不涉及。
         :type query: str
-        :param lane: 快慢车道 (fast or slow)。
+        :param lane: **参数解释**： 快慢车道。 **取值范围**： fast：快车道。 slow：慢车道。
         :type lane: str
-        :param db_name: 数据库名称。
+        :param db_name: **参数解释**： 数据库名称。 **取值范围**： 不涉及。
         :type db_name: str
-        :param priority: job在资源池中的优先级，取值：1,2,4,8（rush、high、medium、low）。
+        :param priority: **参数解释**： 任务在资源池中的优先级。 **取值范围**： 1：最高。 2：高。 4：中。 8：低。
         :type priority: str
-        :param query_id: 语句执行使用的内部query_id。
+        :param query_id: **参数解释**： 语句执行使用的内部查询ID。 **取值范围**： 不涉及。
         :type query_id: str
-        :param query_band: 用于标示作业类型，可通过guc参数query_band进行设置，默认为空字符串。
+        :param query_band: **参数解释**： 用于标示作业类型，可通过guc参数query_band进行设置，默认为空字符串。 **取值范围**： 不涉及。
         :type query_band: str
-        :param job_name: 这个值是从query_band的字段中取出来的，位置0。
+        :param job_name: **参数解释**： 该值是从query_band的字段中取出来的，位置0。 **取值范围**： 不涉及。
         :type job_name: str
-        :param job_inst: 这个值是从query_band的字段中取出来的，位置1。
+        :param job_inst: **参数解释**： 该值是从query_band的字段中取出来的，位置1。 **取值范围**： 不涉及。
         :type job_inst: str
-        :param user_name: 连接到后端的用户名。
+        :param user_name: **参数解释**： 连接到后端的用户名。 **取值范围**： 不涉及。
         :type user_name: str
-        :param application_name: 连接到后端的应用名。
+        :param application_name: **参数解释**： 连接到后端的应用名。 **取值范围**： 不涉及。
         :type application_name: str
-        :param client_address: 连接到后端的客户端的ip地址。
+        :param client_address: **参数解释**： 连接到后端的客户端的IP地址。 **取值范围**： 不涉及。
         :type client_address: str
-        :param client_hostname: 客户端的主机名。
+        :param client_hostname: **参数解释**： 客户端的主机名。 **取值范围**： 不涉及。
         :type client_hostname: str
-        :param client_port: 客户端用于与后端通讯的tcp端口号。
+        :param client_port: **参数解释**： 客户端用于与后端通讯的tcp端口号。 **取值范围**： 不涉及。
         :type client_port: str
-        :param start_time: 语句执行的开始时间。
+        :param start_time: **参数解释**： 语句执行的开始时间。 **取值范围**： 不涉及。
         :type start_time: int
-        :param block_time: 语句执行前的阻塞时间 （单位ms）。
+        :param block_time: **参数解释**： 语句执行前的阻塞时间，单位ms。 **取值范围**： 不涉及。
         :type block_time: int
-        :param duration: 语句已经执行的时间 （单位ms）。
+        :param duration: **参数解释**： 语句已经执行的时间，单位ms。 **取值范围**： 不涉及。
         :type duration: int
-        :param estimate_total_time: 语句执行预估总时间 （单位ms）。
+        :param estimate_total_time: **参数解释**： 语句执行预估总时间，单位ms。 **取值范围**： 不涉及。
         :type estimate_total_time: int
-        :param estimate_left_time: 语句执行预估剩余时间 （单位ms）。
+        :param estimate_left_time: **参数解释**： 语句执行预估剩余时间，单位ms。 **取值范围**： 不涉及。
         :type estimate_left_time: int
-        :param resource_pool: 用户使用的资源池。
+        :param resource_pool: **参数解释**： 用户使用的资源池。 **取值范围**： 不涉及。
         :type resource_pool: str
-        :param control_group: 语句所使用的cgroup。
+        :param control_group: **参数解释**： 语句所使用的cgroup。 **取值范围**： 不涉及。
         :type control_group: str
-        :param min_peak_memory: 语句在所有dn上的最小内存峰值 （单位mb）。
+        :param min_peak_memory: **参数解释**： 语句在所有dn上的最小内存峰值，单位mb。 **取值范围**： 不涉及。
         :type min_peak_memory: int
-        :param max_peak_memory: 语句在所有dn上的最大内存峰值 （单位mb）。
+        :param max_peak_memory: **参数解释**： 语句在所有dn上的最大内存峰值，单位mb。 **取值范围**： 不涉及。
         :type max_peak_memory: int
-        :param average_peak_memory: 语句执行过程中的内存使用平均值 （单位mb）。
+        :param average_peak_memory: **参数解释**： 语句执行过程中的内存使用平均值，单位mb。 **取值范围**： 不涉及。
         :type average_peak_memory: int
-        :param memory_skew_percent: 语句在各dn间的内存使用倾斜率。
+        :param memory_skew_percent: **参数解释**： 语句在各dn间的内存使用倾斜率。 **取值范围**： 不涉及。
         :type memory_skew_percent: int
-        :param estimate_memory: 语句预估使用内存 （单位mb）。
+        :param estimate_memory: **参数解释**： 语句预估使用内存，单位mb。 **取值范围**： 不涉及。
         :type estimate_memory: int
-        :param spill_info: 语句在所有dn上的下盘信息。
+        :param spill_info: **参数解释**： 语句在所有dn上的下盘信息。 **取值范围**： 不涉及。
         :type spill_info: str
-        :param min_spill_size: 若发生下盘，所有dn上下盘的最小数据量 (单位mb) 默认为0。
+        :param min_spill_size: **参数解释**： 若发生下盘，所有dn上下盘的最小数据量 (单位mb) 默认为0。 **取值范围**： 不涉及。
         :type min_spill_size: int
-        :param max_spill_size: 若发生下盘，所有dn上下盘的最大数据量 (单位mb) 默认为0。
+        :param max_spill_size: **参数解释**： 若发生下盘，所有dn上下盘的最大数据量 (单位mb) 默认为0。 **取值范围**： 不涉及。
         :type max_spill_size: int
-        :param average_spill_size: 若发生下盘，所有dn上下盘的平均数据量 (单位mb) 默认为0。
+        :param average_spill_size: **参数解释**： 若发生下盘，所有dn上下盘的平均数据量 (单位mb) 默认为0。 **取值范围**： 不涉及。
         :type average_spill_size: int
-        :param spill_skew_percent: 若发生下盘，dn间下盘倾斜率。
+        :param spill_skew_percent: **参数解释**： 若发生下盘，dn间下盘倾斜率。 **取值范围**： 不涉及。
         :type spill_skew_percent: int
-        :param min_dn_time: 语句在所有dn上的最小执行时间 (单位ms)。
+        :param min_dn_time: **参数解释**： 语句在所有dn上的最小执行时间，单位ms。 **取值范围**： 不涉及。
         :type min_dn_time: int
-        :param max_dn_time: 语句在所有dn上的最大执行时间 (单位ms)。
+        :param max_dn_time: **参数解释**： 语句在所有dn上的最大执行时间，单位ms。 **取值范围**： 不涉及。
         :type max_dn_time: int
-        :param average_dn_time: 语句在所有dn上的平均执行时间 (单位ms)。
+        :param average_dn_time: **参数解释**： 语句在所有dn上的平均执行时间，单位ms。 **取值范围**： 不涉及。
         :type average_dn_time: int
-        :param dntime_skew_percent: 语句在各dn间的执行时间倾斜率。
+        :param dntime_skew_percent: **参数解释**： 语句在各dn间的执行时间倾斜率。 **取值范围**： 不涉及。
         :type dntime_skew_percent: int
-        :param min_cpu_time: 语句在所有dn上的最小cpu时间 (单位ms)。
+        :param min_cpu_time: **参数解释**： 语句在所有dn上的最小cpu时间，单位ms。 **取值范围**： 不涉及。
         :type min_cpu_time: int
-        :param max_cpu_time: 语句在所有dn上的最大cpu时间 (单位ms)。
+        :param max_cpu_time: **参数解释**： 语句在所有dn上的最大cpu时间，单位ms。 **取值范围**： 不涉及。
         :type max_cpu_time: int
-        :param total_cpu_time: 语句在所有dn上的cpu总时间 (单位ms)。
+        :param total_cpu_time: **参数解释**： 语句在所有dn上的cpu总时间，单位ms。 **取值范围**： 不涉及。
         :type total_cpu_time: int
-        :param cpu_skew_percent: 语句在各dn间的cpu时间倾斜率。
+        :param cpu_skew_percent: **参数解释**： 语句在各dn间的cpu时间倾斜率。 **取值范围**： 不涉及。
         :type cpu_skew_percent: int
-        :param average_peak_iops: 语句在所有dn上的每秒平均io峰值（列存单位是次/s，行存单位是万次/s）。
+        :param average_peak_iops: **参数解释**： 语句在所有dn上的每秒平均io峰值（列存单位是次/s，行存单位是万次/s）。 **取值范围**： 不涉及。
         :type average_peak_iops: int
-        :param iops_skew_percent: 语句在dn间的io倾斜率。
+        :param iops_skew_percent: **参数解释**： 语句在dn间的io倾斜率。 **取值范围**： 不涉及。
         :type iops_skew_percent: int
-        :param max_peak_iops: 语句在所有dn上的每秒最大io峰值（列存单位是次/s，行存单位是万次/s）。
+        :param max_peak_iops: **参数解释**： 语句在所有dn上的每秒最大io峰值（列存单位是次/s，行存单位是万次/s）。 **取值范围**： 不涉及。
         :type max_peak_iops: int
-        :param min_peak_iops: 语句在所有dn上的每秒最小io峰值（列存单位是次/s，行存单位是万次/s）。
+        :param min_peak_iops: **参数解释**： 语句在所有dn上的每秒最小io峰值（列存单位是次/s，行存单位是万次/s）。 **取值范围**： 不涉及。
         :type min_peak_iops: int
-        :param query_plan: 查询计划。
+        :param query_plan: **参数解释**： 查询计划。 **取值范围**： 不涉及。
         :type query_plan: str
-        :param query_status: 当前查询语句的实时运行状态 (active, idle, idle in transaction, idle in transaction(aborted), fastpath function call, disabled)。
+        :param query_status: **参数解释**： 当前查询语句的实时运行状态。 **取值范围**： active、idle、idle in transaction、idle in transaction(aborted)、fastpath function call、disabled。
         :type query_status: str
-        :param wlm_status: 当前查询语句在资源池上的运行状态 (pending, running, finished, aborted, active, unknown)。
+        :param wlm_status: **参数解释**： 当前查询语句在资源池上的运行状态。 **取值范围**： pending：待生效。 running：运行中。 finished：结束。 aborted：终止。 active：正常。 unknown：未知。
         :type wlm_status: str
-        :param wlm_attrib: 语句的属性 (ordinary, simple, complicated, internal)
+        :param wlm_attrib: **参数解释**： 语句的属性。 **取值范围**： ordinary：普通。 simple：简单。 complicated：复杂。 internal：内部。
         :type wlm_attrib: str
-        :param system_query: 是否系统查询。
+        :param system_query: **参数解释**： 是否系统查询。 **取值范围**： 不涉及。
         :type system_query: bool
-        :param backend_start: 该过程开始的时间，即当客户端连接服务器时。
+        :param backend_start: **参数解释**： 该过程开始的时间，即当客户端连接服务器时。 **取值范围**： 不涉及。
         :type backend_start: int
-        :param elapsed_time: 到目前为止的执行时间。
+        :param elapsed_time: **参数解释**： 到目前为止的执行时间。 **取值范围**： 不涉及。
         :type elapsed_time: int
-        :param curr_xact_start: 启动当前事务的时间，如果没有事务是活跃的，则为null。如果当前查询是首个事务，则这列等同于query_start列。
+        :param curr_xact_start: **参数解释**： 启动当前事务的时间，如果没有事务是活跃的，则为null。如果当前查询是首个事务，则这列等同于query_start列。 **取值范围**： 不涉及。
         :type curr_xact_start: int
-        :param state_change: 上次状态改变的时间。
+        :param state_change: **参数解释**： 上次状态改变的时间。 **取值范围**： 不涉及。
         :type state_change: int
-        :param query_start: 语句执行的开始时间。
+        :param query_start: **参数解释**： 语句执行的开始时间。 **取值范围**： 不涉及。
         :type query_start: int
-        :param query_elapsed_time: 语句当前为止的实际执行时间，(单位：s)。
+        :param query_elapsed_time: **参数解释**： 语句当前为止的实际执行时间。单位：秒。 **取值范围**： 不涉及。
         :type query_elapsed_time: int
         """
         
@@ -458,7 +458,7 @@ class ListQueriesDto:
     def virtual_cluster_id(self):
         r"""Gets the virtual_cluster_id of this ListQueriesDto.
 
-        虚拟集群ID
+        **参数解释**： 虚拟集群ID。 **取值范围**： 不涉及。
 
         :return: The virtual_cluster_id of this ListQueriesDto.
         :rtype: int
@@ -469,7 +469,7 @@ class ListQueriesDto:
     def virtual_cluster_id(self, virtual_cluster_id):
         r"""Sets the virtual_cluster_id of this ListQueriesDto.
 
-        虚拟集群ID
+        **参数解释**： 虚拟集群ID。 **取值范围**： 不涉及。
 
         :param virtual_cluster_id: The virtual_cluster_id of this ListQueriesDto.
         :type virtual_cluster_id: int
@@ -480,7 +480,7 @@ class ListQueriesDto:
     def ctime(self):
         r"""Gets the ctime of this ListQueriesDto.
 
-        采集时间
+        **参数解释**： 采集时间。 **取值范围**： 不涉及。
 
         :return: The ctime of this ListQueriesDto.
         :rtype: int
@@ -491,7 +491,7 @@ class ListQueriesDto:
     def ctime(self, ctime):
         r"""Sets the ctime of this ListQueriesDto.
 
-        采集时间
+        **参数解释**： 采集时间。 **取值范围**： 不涉及。
 
         :param ctime: The ctime of this ListQueriesDto.
         :type ctime: int
@@ -502,7 +502,7 @@ class ListQueriesDto:
     def pid(self):
         r"""Gets the pid of this ListQueriesDto.
 
-        会话id。
+        **参数解释**： 会话ID。 **取值范围**： 不涉及。
 
         :return: The pid of this ListQueriesDto.
         :rtype: str
@@ -513,7 +513,7 @@ class ListQueriesDto:
     def pid(self, pid):
         r"""Sets the pid of this ListQueriesDto.
 
-        会话id。
+        **参数解释**： 会话ID。 **取值范围**： 不涉及。
 
         :param pid: The pid of this ListQueriesDto.
         :type pid: str
@@ -524,7 +524,7 @@ class ListQueriesDto:
     def inst_name(self):
         r"""Gets the inst_name of this ListQueriesDto.
 
-        实例名称。
+        **参数解释**： 实例名称。 **取值范围**： 不涉及。
 
         :return: The inst_name of this ListQueriesDto.
         :rtype: str
@@ -535,7 +535,7 @@ class ListQueriesDto:
     def inst_name(self, inst_name):
         r"""Sets the inst_name of this ListQueriesDto.
 
-        实例名称。
+        **参数解释**： 实例名称。 **取值范围**： 不涉及。
 
         :param inst_name: The inst_name of this ListQueriesDto.
         :type inst_name: str
@@ -546,7 +546,7 @@ class ListQueriesDto:
     def waiting(self):
         r"""Gets the waiting of this ListQueriesDto.
 
-        如果后台当前正等待锁则为true。
+        **参数解释**： 如果后台当前正等待锁则为true。 **取值范围**： 不涉及。
 
         :return: The waiting of this ListQueriesDto.
         :rtype: bool
@@ -557,7 +557,7 @@ class ListQueriesDto:
     def waiting(self, waiting):
         r"""Sets the waiting of this ListQueriesDto.
 
-        如果后台当前正等待锁则为true。
+        **参数解释**： 如果后台当前正等待锁则为true。 **取值范围**： 不涉及。
 
         :param waiting: The waiting of this ListQueriesDto.
         :type waiting: bool
@@ -568,7 +568,7 @@ class ListQueriesDto:
     def enqueue(self):
         r"""Gets the enqueue of this ListQueriesDto.
 
-        工作负载管理资源状态。
+        **参数解释**： 资源状态。 **取值范围**： 不涉及。
 
         :return: The enqueue of this ListQueriesDto.
         :rtype: str
@@ -579,7 +579,7 @@ class ListQueriesDto:
     def enqueue(self, enqueue):
         r"""Sets the enqueue of this ListQueriesDto.
 
-        工作负载管理资源状态。
+        **参数解释**： 资源状态。 **取值范围**： 不涉及。
 
         :param enqueue: The enqueue of this ListQueriesDto.
         :type enqueue: str
@@ -590,7 +590,7 @@ class ListQueriesDto:
     def warning(self):
         r"""Gets the warning of this ListQueriesDto.
 
-        主要显示如下几类告警信息以及sql自诊断调优相关告警。
+        **参数解释**： 主要显示如下几类告警信息以及sql自诊断调优相关告警。 **取值范围**： 不涉及。
 
         :return: The warning of this ListQueriesDto.
         :rtype: str
@@ -601,7 +601,7 @@ class ListQueriesDto:
     def warning(self, warning):
         r"""Sets the warning of this ListQueriesDto.
 
-        主要显示如下几类告警信息以及sql自诊断调优相关告警。
+        **参数解释**： 主要显示如下几类告警信息以及sql自诊断调优相关告警。 **取值范围**： 不涉及。
 
         :param warning: The warning of this ListQueriesDto.
         :type warning: str
@@ -612,7 +612,7 @@ class ListQueriesDto:
     def query(self):
         r"""Gets the query of this ListQueriesDto.
 
-        查询语句。
+        **参数解释**： 查询语句。 **取值范围**： 不涉及。
 
         :return: The query of this ListQueriesDto.
         :rtype: str
@@ -623,7 +623,7 @@ class ListQueriesDto:
     def query(self, query):
         r"""Sets the query of this ListQueriesDto.
 
-        查询语句。
+        **参数解释**： 查询语句。 **取值范围**： 不涉及。
 
         :param query: The query of this ListQueriesDto.
         :type query: str
@@ -634,7 +634,7 @@ class ListQueriesDto:
     def lane(self):
         r"""Gets the lane of this ListQueriesDto.
 
-        快慢车道 (fast or slow)。
+        **参数解释**： 快慢车道。 **取值范围**： fast：快车道。 slow：慢车道。
 
         :return: The lane of this ListQueriesDto.
         :rtype: str
@@ -645,7 +645,7 @@ class ListQueriesDto:
     def lane(self, lane):
         r"""Sets the lane of this ListQueriesDto.
 
-        快慢车道 (fast or slow)。
+        **参数解释**： 快慢车道。 **取值范围**： fast：快车道。 slow：慢车道。
 
         :param lane: The lane of this ListQueriesDto.
         :type lane: str
@@ -656,7 +656,7 @@ class ListQueriesDto:
     def db_name(self):
         r"""Gets the db_name of this ListQueriesDto.
 
-        数据库名称。
+        **参数解释**： 数据库名称。 **取值范围**： 不涉及。
 
         :return: The db_name of this ListQueriesDto.
         :rtype: str
@@ -667,7 +667,7 @@ class ListQueriesDto:
     def db_name(self, db_name):
         r"""Sets the db_name of this ListQueriesDto.
 
-        数据库名称。
+        **参数解释**： 数据库名称。 **取值范围**： 不涉及。
 
         :param db_name: The db_name of this ListQueriesDto.
         :type db_name: str
@@ -678,7 +678,7 @@ class ListQueriesDto:
     def priority(self):
         r"""Gets the priority of this ListQueriesDto.
 
-        job在资源池中的优先级，取值：1,2,4,8（rush、high、medium、low）。
+        **参数解释**： 任务在资源池中的优先级。 **取值范围**： 1：最高。 2：高。 4：中。 8：低。
 
         :return: The priority of this ListQueriesDto.
         :rtype: str
@@ -689,7 +689,7 @@ class ListQueriesDto:
     def priority(self, priority):
         r"""Sets the priority of this ListQueriesDto.
 
-        job在资源池中的优先级，取值：1,2,4,8（rush、high、medium、low）。
+        **参数解释**： 任务在资源池中的优先级。 **取值范围**： 1：最高。 2：高。 4：中。 8：低。
 
         :param priority: The priority of this ListQueriesDto.
         :type priority: str
@@ -700,7 +700,7 @@ class ListQueriesDto:
     def query_id(self):
         r"""Gets the query_id of this ListQueriesDto.
 
-        语句执行使用的内部query_id。
+        **参数解释**： 语句执行使用的内部查询ID。 **取值范围**： 不涉及。
 
         :return: The query_id of this ListQueriesDto.
         :rtype: str
@@ -711,7 +711,7 @@ class ListQueriesDto:
     def query_id(self, query_id):
         r"""Sets the query_id of this ListQueriesDto.
 
-        语句执行使用的内部query_id。
+        **参数解释**： 语句执行使用的内部查询ID。 **取值范围**： 不涉及。
 
         :param query_id: The query_id of this ListQueriesDto.
         :type query_id: str
@@ -722,7 +722,7 @@ class ListQueriesDto:
     def query_band(self):
         r"""Gets the query_band of this ListQueriesDto.
 
-        用于标示作业类型，可通过guc参数query_band进行设置，默认为空字符串。
+        **参数解释**： 用于标示作业类型，可通过guc参数query_band进行设置，默认为空字符串。 **取值范围**： 不涉及。
 
         :return: The query_band of this ListQueriesDto.
         :rtype: str
@@ -733,7 +733,7 @@ class ListQueriesDto:
     def query_band(self, query_band):
         r"""Sets the query_band of this ListQueriesDto.
 
-        用于标示作业类型，可通过guc参数query_band进行设置，默认为空字符串。
+        **参数解释**： 用于标示作业类型，可通过guc参数query_band进行设置，默认为空字符串。 **取值范围**： 不涉及。
 
         :param query_band: The query_band of this ListQueriesDto.
         :type query_band: str
@@ -744,7 +744,7 @@ class ListQueriesDto:
     def job_name(self):
         r"""Gets the job_name of this ListQueriesDto.
 
-        这个值是从query_band的字段中取出来的，位置0。
+        **参数解释**： 该值是从query_band的字段中取出来的，位置0。 **取值范围**： 不涉及。
 
         :return: The job_name of this ListQueriesDto.
         :rtype: str
@@ -755,7 +755,7 @@ class ListQueriesDto:
     def job_name(self, job_name):
         r"""Sets the job_name of this ListQueriesDto.
 
-        这个值是从query_band的字段中取出来的，位置0。
+        **参数解释**： 该值是从query_band的字段中取出来的，位置0。 **取值范围**： 不涉及。
 
         :param job_name: The job_name of this ListQueriesDto.
         :type job_name: str
@@ -766,7 +766,7 @@ class ListQueriesDto:
     def job_inst(self):
         r"""Gets the job_inst of this ListQueriesDto.
 
-        这个值是从query_band的字段中取出来的，位置1。
+        **参数解释**： 该值是从query_band的字段中取出来的，位置1。 **取值范围**： 不涉及。
 
         :return: The job_inst of this ListQueriesDto.
         :rtype: str
@@ -777,7 +777,7 @@ class ListQueriesDto:
     def job_inst(self, job_inst):
         r"""Sets the job_inst of this ListQueriesDto.
 
-        这个值是从query_band的字段中取出来的，位置1。
+        **参数解释**： 该值是从query_band的字段中取出来的，位置1。 **取值范围**： 不涉及。
 
         :param job_inst: The job_inst of this ListQueriesDto.
         :type job_inst: str
@@ -788,7 +788,7 @@ class ListQueriesDto:
     def user_name(self):
         r"""Gets the user_name of this ListQueriesDto.
 
-        连接到后端的用户名。
+        **参数解释**： 连接到后端的用户名。 **取值范围**： 不涉及。
 
         :return: The user_name of this ListQueriesDto.
         :rtype: str
@@ -799,7 +799,7 @@ class ListQueriesDto:
     def user_name(self, user_name):
         r"""Sets the user_name of this ListQueriesDto.
 
-        连接到后端的用户名。
+        **参数解释**： 连接到后端的用户名。 **取值范围**： 不涉及。
 
         :param user_name: The user_name of this ListQueriesDto.
         :type user_name: str
@@ -810,7 +810,7 @@ class ListQueriesDto:
     def application_name(self):
         r"""Gets the application_name of this ListQueriesDto.
 
-        连接到后端的应用名。
+        **参数解释**： 连接到后端的应用名。 **取值范围**： 不涉及。
 
         :return: The application_name of this ListQueriesDto.
         :rtype: str
@@ -821,7 +821,7 @@ class ListQueriesDto:
     def application_name(self, application_name):
         r"""Sets the application_name of this ListQueriesDto.
 
-        连接到后端的应用名。
+        **参数解释**： 连接到后端的应用名。 **取值范围**： 不涉及。
 
         :param application_name: The application_name of this ListQueriesDto.
         :type application_name: str
@@ -832,7 +832,7 @@ class ListQueriesDto:
     def client_address(self):
         r"""Gets the client_address of this ListQueriesDto.
 
-        连接到后端的客户端的ip地址。
+        **参数解释**： 连接到后端的客户端的IP地址。 **取值范围**： 不涉及。
 
         :return: The client_address of this ListQueriesDto.
         :rtype: str
@@ -843,7 +843,7 @@ class ListQueriesDto:
     def client_address(self, client_address):
         r"""Sets the client_address of this ListQueriesDto.
 
-        连接到后端的客户端的ip地址。
+        **参数解释**： 连接到后端的客户端的IP地址。 **取值范围**： 不涉及。
 
         :param client_address: The client_address of this ListQueriesDto.
         :type client_address: str
@@ -854,7 +854,7 @@ class ListQueriesDto:
     def client_hostname(self):
         r"""Gets the client_hostname of this ListQueriesDto.
 
-        客户端的主机名。
+        **参数解释**： 客户端的主机名。 **取值范围**： 不涉及。
 
         :return: The client_hostname of this ListQueriesDto.
         :rtype: str
@@ -865,7 +865,7 @@ class ListQueriesDto:
     def client_hostname(self, client_hostname):
         r"""Sets the client_hostname of this ListQueriesDto.
 
-        客户端的主机名。
+        **参数解释**： 客户端的主机名。 **取值范围**： 不涉及。
 
         :param client_hostname: The client_hostname of this ListQueriesDto.
         :type client_hostname: str
@@ -876,7 +876,7 @@ class ListQueriesDto:
     def client_port(self):
         r"""Gets the client_port of this ListQueriesDto.
 
-        客户端用于与后端通讯的tcp端口号。
+        **参数解释**： 客户端用于与后端通讯的tcp端口号。 **取值范围**： 不涉及。
 
         :return: The client_port of this ListQueriesDto.
         :rtype: str
@@ -887,7 +887,7 @@ class ListQueriesDto:
     def client_port(self, client_port):
         r"""Sets the client_port of this ListQueriesDto.
 
-        客户端用于与后端通讯的tcp端口号。
+        **参数解释**： 客户端用于与后端通讯的tcp端口号。 **取值范围**： 不涉及。
 
         :param client_port: The client_port of this ListQueriesDto.
         :type client_port: str
@@ -898,7 +898,7 @@ class ListQueriesDto:
     def start_time(self):
         r"""Gets the start_time of this ListQueriesDto.
 
-        语句执行的开始时间。
+        **参数解释**： 语句执行的开始时间。 **取值范围**： 不涉及。
 
         :return: The start_time of this ListQueriesDto.
         :rtype: int
@@ -909,7 +909,7 @@ class ListQueriesDto:
     def start_time(self, start_time):
         r"""Sets the start_time of this ListQueriesDto.
 
-        语句执行的开始时间。
+        **参数解释**： 语句执行的开始时间。 **取值范围**： 不涉及。
 
         :param start_time: The start_time of this ListQueriesDto.
         :type start_time: int
@@ -920,7 +920,7 @@ class ListQueriesDto:
     def block_time(self):
         r"""Gets the block_time of this ListQueriesDto.
 
-        语句执行前的阻塞时间 （单位ms）。
+        **参数解释**： 语句执行前的阻塞时间，单位ms。 **取值范围**： 不涉及。
 
         :return: The block_time of this ListQueriesDto.
         :rtype: int
@@ -931,7 +931,7 @@ class ListQueriesDto:
     def block_time(self, block_time):
         r"""Sets the block_time of this ListQueriesDto.
 
-        语句执行前的阻塞时间 （单位ms）。
+        **参数解释**： 语句执行前的阻塞时间，单位ms。 **取值范围**： 不涉及。
 
         :param block_time: The block_time of this ListQueriesDto.
         :type block_time: int
@@ -942,7 +942,7 @@ class ListQueriesDto:
     def duration(self):
         r"""Gets the duration of this ListQueriesDto.
 
-        语句已经执行的时间 （单位ms）。
+        **参数解释**： 语句已经执行的时间，单位ms。 **取值范围**： 不涉及。
 
         :return: The duration of this ListQueriesDto.
         :rtype: int
@@ -953,7 +953,7 @@ class ListQueriesDto:
     def duration(self, duration):
         r"""Sets the duration of this ListQueriesDto.
 
-        语句已经执行的时间 （单位ms）。
+        **参数解释**： 语句已经执行的时间，单位ms。 **取值范围**： 不涉及。
 
         :param duration: The duration of this ListQueriesDto.
         :type duration: int
@@ -964,7 +964,7 @@ class ListQueriesDto:
     def estimate_total_time(self):
         r"""Gets the estimate_total_time of this ListQueriesDto.
 
-        语句执行预估总时间 （单位ms）。
+        **参数解释**： 语句执行预估总时间，单位ms。 **取值范围**： 不涉及。
 
         :return: The estimate_total_time of this ListQueriesDto.
         :rtype: int
@@ -975,7 +975,7 @@ class ListQueriesDto:
     def estimate_total_time(self, estimate_total_time):
         r"""Sets the estimate_total_time of this ListQueriesDto.
 
-        语句执行预估总时间 （单位ms）。
+        **参数解释**： 语句执行预估总时间，单位ms。 **取值范围**： 不涉及。
 
         :param estimate_total_time: The estimate_total_time of this ListQueriesDto.
         :type estimate_total_time: int
@@ -986,7 +986,7 @@ class ListQueriesDto:
     def estimate_left_time(self):
         r"""Gets the estimate_left_time of this ListQueriesDto.
 
-        语句执行预估剩余时间 （单位ms）。
+        **参数解释**： 语句执行预估剩余时间，单位ms。 **取值范围**： 不涉及。
 
         :return: The estimate_left_time of this ListQueriesDto.
         :rtype: int
@@ -997,7 +997,7 @@ class ListQueriesDto:
     def estimate_left_time(self, estimate_left_time):
         r"""Sets the estimate_left_time of this ListQueriesDto.
 
-        语句执行预估剩余时间 （单位ms）。
+        **参数解释**： 语句执行预估剩余时间，单位ms。 **取值范围**： 不涉及。
 
         :param estimate_left_time: The estimate_left_time of this ListQueriesDto.
         :type estimate_left_time: int
@@ -1008,7 +1008,7 @@ class ListQueriesDto:
     def resource_pool(self):
         r"""Gets the resource_pool of this ListQueriesDto.
 
-        用户使用的资源池。
+        **参数解释**： 用户使用的资源池。 **取值范围**： 不涉及。
 
         :return: The resource_pool of this ListQueriesDto.
         :rtype: str
@@ -1019,7 +1019,7 @@ class ListQueriesDto:
     def resource_pool(self, resource_pool):
         r"""Sets the resource_pool of this ListQueriesDto.
 
-        用户使用的资源池。
+        **参数解释**： 用户使用的资源池。 **取值范围**： 不涉及。
 
         :param resource_pool: The resource_pool of this ListQueriesDto.
         :type resource_pool: str
@@ -1030,7 +1030,7 @@ class ListQueriesDto:
     def control_group(self):
         r"""Gets the control_group of this ListQueriesDto.
 
-        语句所使用的cgroup。
+        **参数解释**： 语句所使用的cgroup。 **取值范围**： 不涉及。
 
         :return: The control_group of this ListQueriesDto.
         :rtype: str
@@ -1041,7 +1041,7 @@ class ListQueriesDto:
     def control_group(self, control_group):
         r"""Sets the control_group of this ListQueriesDto.
 
-        语句所使用的cgroup。
+        **参数解释**： 语句所使用的cgroup。 **取值范围**： 不涉及。
 
         :param control_group: The control_group of this ListQueriesDto.
         :type control_group: str
@@ -1052,7 +1052,7 @@ class ListQueriesDto:
     def min_peak_memory(self):
         r"""Gets the min_peak_memory of this ListQueriesDto.
 
-        语句在所有dn上的最小内存峰值 （单位mb）。
+        **参数解释**： 语句在所有dn上的最小内存峰值，单位mb。 **取值范围**： 不涉及。
 
         :return: The min_peak_memory of this ListQueriesDto.
         :rtype: int
@@ -1063,7 +1063,7 @@ class ListQueriesDto:
     def min_peak_memory(self, min_peak_memory):
         r"""Sets the min_peak_memory of this ListQueriesDto.
 
-        语句在所有dn上的最小内存峰值 （单位mb）。
+        **参数解释**： 语句在所有dn上的最小内存峰值，单位mb。 **取值范围**： 不涉及。
 
         :param min_peak_memory: The min_peak_memory of this ListQueriesDto.
         :type min_peak_memory: int
@@ -1074,7 +1074,7 @@ class ListQueriesDto:
     def max_peak_memory(self):
         r"""Gets the max_peak_memory of this ListQueriesDto.
 
-        语句在所有dn上的最大内存峰值 （单位mb）。
+        **参数解释**： 语句在所有dn上的最大内存峰值，单位mb。 **取值范围**： 不涉及。
 
         :return: The max_peak_memory of this ListQueriesDto.
         :rtype: int
@@ -1085,7 +1085,7 @@ class ListQueriesDto:
     def max_peak_memory(self, max_peak_memory):
         r"""Sets the max_peak_memory of this ListQueriesDto.
 
-        语句在所有dn上的最大内存峰值 （单位mb）。
+        **参数解释**： 语句在所有dn上的最大内存峰值，单位mb。 **取值范围**： 不涉及。
 
         :param max_peak_memory: The max_peak_memory of this ListQueriesDto.
         :type max_peak_memory: int
@@ -1096,7 +1096,7 @@ class ListQueriesDto:
     def average_peak_memory(self):
         r"""Gets the average_peak_memory of this ListQueriesDto.
 
-        语句执行过程中的内存使用平均值 （单位mb）。
+        **参数解释**： 语句执行过程中的内存使用平均值，单位mb。 **取值范围**： 不涉及。
 
         :return: The average_peak_memory of this ListQueriesDto.
         :rtype: int
@@ -1107,7 +1107,7 @@ class ListQueriesDto:
     def average_peak_memory(self, average_peak_memory):
         r"""Sets the average_peak_memory of this ListQueriesDto.
 
-        语句执行过程中的内存使用平均值 （单位mb）。
+        **参数解释**： 语句执行过程中的内存使用平均值，单位mb。 **取值范围**： 不涉及。
 
         :param average_peak_memory: The average_peak_memory of this ListQueriesDto.
         :type average_peak_memory: int
@@ -1118,7 +1118,7 @@ class ListQueriesDto:
     def memory_skew_percent(self):
         r"""Gets the memory_skew_percent of this ListQueriesDto.
 
-        语句在各dn间的内存使用倾斜率。
+        **参数解释**： 语句在各dn间的内存使用倾斜率。 **取值范围**： 不涉及。
 
         :return: The memory_skew_percent of this ListQueriesDto.
         :rtype: int
@@ -1129,7 +1129,7 @@ class ListQueriesDto:
     def memory_skew_percent(self, memory_skew_percent):
         r"""Sets the memory_skew_percent of this ListQueriesDto.
 
-        语句在各dn间的内存使用倾斜率。
+        **参数解释**： 语句在各dn间的内存使用倾斜率。 **取值范围**： 不涉及。
 
         :param memory_skew_percent: The memory_skew_percent of this ListQueriesDto.
         :type memory_skew_percent: int
@@ -1140,7 +1140,7 @@ class ListQueriesDto:
     def estimate_memory(self):
         r"""Gets the estimate_memory of this ListQueriesDto.
 
-        语句预估使用内存 （单位mb）。
+        **参数解释**： 语句预估使用内存，单位mb。 **取值范围**： 不涉及。
 
         :return: The estimate_memory of this ListQueriesDto.
         :rtype: int
@@ -1151,7 +1151,7 @@ class ListQueriesDto:
     def estimate_memory(self, estimate_memory):
         r"""Sets the estimate_memory of this ListQueriesDto.
 
-        语句预估使用内存 （单位mb）。
+        **参数解释**： 语句预估使用内存，单位mb。 **取值范围**： 不涉及。
 
         :param estimate_memory: The estimate_memory of this ListQueriesDto.
         :type estimate_memory: int
@@ -1162,7 +1162,7 @@ class ListQueriesDto:
     def spill_info(self):
         r"""Gets the spill_info of this ListQueriesDto.
 
-        语句在所有dn上的下盘信息。
+        **参数解释**： 语句在所有dn上的下盘信息。 **取值范围**： 不涉及。
 
         :return: The spill_info of this ListQueriesDto.
         :rtype: str
@@ -1173,7 +1173,7 @@ class ListQueriesDto:
     def spill_info(self, spill_info):
         r"""Sets the spill_info of this ListQueriesDto.
 
-        语句在所有dn上的下盘信息。
+        **参数解释**： 语句在所有dn上的下盘信息。 **取值范围**： 不涉及。
 
         :param spill_info: The spill_info of this ListQueriesDto.
         :type spill_info: str
@@ -1184,7 +1184,7 @@ class ListQueriesDto:
     def min_spill_size(self):
         r"""Gets the min_spill_size of this ListQueriesDto.
 
-        若发生下盘，所有dn上下盘的最小数据量 (单位mb) 默认为0。
+        **参数解释**： 若发生下盘，所有dn上下盘的最小数据量 (单位mb) 默认为0。 **取值范围**： 不涉及。
 
         :return: The min_spill_size of this ListQueriesDto.
         :rtype: int
@@ -1195,7 +1195,7 @@ class ListQueriesDto:
     def min_spill_size(self, min_spill_size):
         r"""Sets the min_spill_size of this ListQueriesDto.
 
-        若发生下盘，所有dn上下盘的最小数据量 (单位mb) 默认为0。
+        **参数解释**： 若发生下盘，所有dn上下盘的最小数据量 (单位mb) 默认为0。 **取值范围**： 不涉及。
 
         :param min_spill_size: The min_spill_size of this ListQueriesDto.
         :type min_spill_size: int
@@ -1206,7 +1206,7 @@ class ListQueriesDto:
     def max_spill_size(self):
         r"""Gets the max_spill_size of this ListQueriesDto.
 
-        若发生下盘，所有dn上下盘的最大数据量 (单位mb) 默认为0。
+        **参数解释**： 若发生下盘，所有dn上下盘的最大数据量 (单位mb) 默认为0。 **取值范围**： 不涉及。
 
         :return: The max_spill_size of this ListQueriesDto.
         :rtype: int
@@ -1217,7 +1217,7 @@ class ListQueriesDto:
     def max_spill_size(self, max_spill_size):
         r"""Sets the max_spill_size of this ListQueriesDto.
 
-        若发生下盘，所有dn上下盘的最大数据量 (单位mb) 默认为0。
+        **参数解释**： 若发生下盘，所有dn上下盘的最大数据量 (单位mb) 默认为0。 **取值范围**： 不涉及。
 
         :param max_spill_size: The max_spill_size of this ListQueriesDto.
         :type max_spill_size: int
@@ -1228,7 +1228,7 @@ class ListQueriesDto:
     def average_spill_size(self):
         r"""Gets the average_spill_size of this ListQueriesDto.
 
-        若发生下盘，所有dn上下盘的平均数据量 (单位mb) 默认为0。
+        **参数解释**： 若发生下盘，所有dn上下盘的平均数据量 (单位mb) 默认为0。 **取值范围**： 不涉及。
 
         :return: The average_spill_size of this ListQueriesDto.
         :rtype: int
@@ -1239,7 +1239,7 @@ class ListQueriesDto:
     def average_spill_size(self, average_spill_size):
         r"""Sets the average_spill_size of this ListQueriesDto.
 
-        若发生下盘，所有dn上下盘的平均数据量 (单位mb) 默认为0。
+        **参数解释**： 若发生下盘，所有dn上下盘的平均数据量 (单位mb) 默认为0。 **取值范围**： 不涉及。
 
         :param average_spill_size: The average_spill_size of this ListQueriesDto.
         :type average_spill_size: int
@@ -1250,7 +1250,7 @@ class ListQueriesDto:
     def spill_skew_percent(self):
         r"""Gets the spill_skew_percent of this ListQueriesDto.
 
-        若发生下盘，dn间下盘倾斜率。
+        **参数解释**： 若发生下盘，dn间下盘倾斜率。 **取值范围**： 不涉及。
 
         :return: The spill_skew_percent of this ListQueriesDto.
         :rtype: int
@@ -1261,7 +1261,7 @@ class ListQueriesDto:
     def spill_skew_percent(self, spill_skew_percent):
         r"""Sets the spill_skew_percent of this ListQueriesDto.
 
-        若发生下盘，dn间下盘倾斜率。
+        **参数解释**： 若发生下盘，dn间下盘倾斜率。 **取值范围**： 不涉及。
 
         :param spill_skew_percent: The spill_skew_percent of this ListQueriesDto.
         :type spill_skew_percent: int
@@ -1272,7 +1272,7 @@ class ListQueriesDto:
     def min_dn_time(self):
         r"""Gets the min_dn_time of this ListQueriesDto.
 
-        语句在所有dn上的最小执行时间 (单位ms)。
+        **参数解释**： 语句在所有dn上的最小执行时间，单位ms。 **取值范围**： 不涉及。
 
         :return: The min_dn_time of this ListQueriesDto.
         :rtype: int
@@ -1283,7 +1283,7 @@ class ListQueriesDto:
     def min_dn_time(self, min_dn_time):
         r"""Sets the min_dn_time of this ListQueriesDto.
 
-        语句在所有dn上的最小执行时间 (单位ms)。
+        **参数解释**： 语句在所有dn上的最小执行时间，单位ms。 **取值范围**： 不涉及。
 
         :param min_dn_time: The min_dn_time of this ListQueriesDto.
         :type min_dn_time: int
@@ -1294,7 +1294,7 @@ class ListQueriesDto:
     def max_dn_time(self):
         r"""Gets the max_dn_time of this ListQueriesDto.
 
-        语句在所有dn上的最大执行时间 (单位ms)。
+        **参数解释**： 语句在所有dn上的最大执行时间，单位ms。 **取值范围**： 不涉及。
 
         :return: The max_dn_time of this ListQueriesDto.
         :rtype: int
@@ -1305,7 +1305,7 @@ class ListQueriesDto:
     def max_dn_time(self, max_dn_time):
         r"""Sets the max_dn_time of this ListQueriesDto.
 
-        语句在所有dn上的最大执行时间 (单位ms)。
+        **参数解释**： 语句在所有dn上的最大执行时间，单位ms。 **取值范围**： 不涉及。
 
         :param max_dn_time: The max_dn_time of this ListQueriesDto.
         :type max_dn_time: int
@@ -1316,7 +1316,7 @@ class ListQueriesDto:
     def average_dn_time(self):
         r"""Gets the average_dn_time of this ListQueriesDto.
 
-        语句在所有dn上的平均执行时间 (单位ms)。
+        **参数解释**： 语句在所有dn上的平均执行时间，单位ms。 **取值范围**： 不涉及。
 
         :return: The average_dn_time of this ListQueriesDto.
         :rtype: int
@@ -1327,7 +1327,7 @@ class ListQueriesDto:
     def average_dn_time(self, average_dn_time):
         r"""Sets the average_dn_time of this ListQueriesDto.
 
-        语句在所有dn上的平均执行时间 (单位ms)。
+        **参数解释**： 语句在所有dn上的平均执行时间，单位ms。 **取值范围**： 不涉及。
 
         :param average_dn_time: The average_dn_time of this ListQueriesDto.
         :type average_dn_time: int
@@ -1338,7 +1338,7 @@ class ListQueriesDto:
     def dntime_skew_percent(self):
         r"""Gets the dntime_skew_percent of this ListQueriesDto.
 
-        语句在各dn间的执行时间倾斜率。
+        **参数解释**： 语句在各dn间的执行时间倾斜率。 **取值范围**： 不涉及。
 
         :return: The dntime_skew_percent of this ListQueriesDto.
         :rtype: int
@@ -1349,7 +1349,7 @@ class ListQueriesDto:
     def dntime_skew_percent(self, dntime_skew_percent):
         r"""Sets the dntime_skew_percent of this ListQueriesDto.
 
-        语句在各dn间的执行时间倾斜率。
+        **参数解释**： 语句在各dn间的执行时间倾斜率。 **取值范围**： 不涉及。
 
         :param dntime_skew_percent: The dntime_skew_percent of this ListQueriesDto.
         :type dntime_skew_percent: int
@@ -1360,7 +1360,7 @@ class ListQueriesDto:
     def min_cpu_time(self):
         r"""Gets the min_cpu_time of this ListQueriesDto.
 
-        语句在所有dn上的最小cpu时间 (单位ms)。
+        **参数解释**： 语句在所有dn上的最小cpu时间，单位ms。 **取值范围**： 不涉及。
 
         :return: The min_cpu_time of this ListQueriesDto.
         :rtype: int
@@ -1371,7 +1371,7 @@ class ListQueriesDto:
     def min_cpu_time(self, min_cpu_time):
         r"""Sets the min_cpu_time of this ListQueriesDto.
 
-        语句在所有dn上的最小cpu时间 (单位ms)。
+        **参数解释**： 语句在所有dn上的最小cpu时间，单位ms。 **取值范围**： 不涉及。
 
         :param min_cpu_time: The min_cpu_time of this ListQueriesDto.
         :type min_cpu_time: int
@@ -1382,7 +1382,7 @@ class ListQueriesDto:
     def max_cpu_time(self):
         r"""Gets the max_cpu_time of this ListQueriesDto.
 
-        语句在所有dn上的最大cpu时间 (单位ms)。
+        **参数解释**： 语句在所有dn上的最大cpu时间，单位ms。 **取值范围**： 不涉及。
 
         :return: The max_cpu_time of this ListQueriesDto.
         :rtype: int
@@ -1393,7 +1393,7 @@ class ListQueriesDto:
     def max_cpu_time(self, max_cpu_time):
         r"""Sets the max_cpu_time of this ListQueriesDto.
 
-        语句在所有dn上的最大cpu时间 (单位ms)。
+        **参数解释**： 语句在所有dn上的最大cpu时间，单位ms。 **取值范围**： 不涉及。
 
         :param max_cpu_time: The max_cpu_time of this ListQueriesDto.
         :type max_cpu_time: int
@@ -1404,7 +1404,7 @@ class ListQueriesDto:
     def total_cpu_time(self):
         r"""Gets the total_cpu_time of this ListQueriesDto.
 
-        语句在所有dn上的cpu总时间 (单位ms)。
+        **参数解释**： 语句在所有dn上的cpu总时间，单位ms。 **取值范围**： 不涉及。
 
         :return: The total_cpu_time of this ListQueriesDto.
         :rtype: int
@@ -1415,7 +1415,7 @@ class ListQueriesDto:
     def total_cpu_time(self, total_cpu_time):
         r"""Sets the total_cpu_time of this ListQueriesDto.
 
-        语句在所有dn上的cpu总时间 (单位ms)。
+        **参数解释**： 语句在所有dn上的cpu总时间，单位ms。 **取值范围**： 不涉及。
 
         :param total_cpu_time: The total_cpu_time of this ListQueriesDto.
         :type total_cpu_time: int
@@ -1426,7 +1426,7 @@ class ListQueriesDto:
     def cpu_skew_percent(self):
         r"""Gets the cpu_skew_percent of this ListQueriesDto.
 
-        语句在各dn间的cpu时间倾斜率。
+        **参数解释**： 语句在各dn间的cpu时间倾斜率。 **取值范围**： 不涉及。
 
         :return: The cpu_skew_percent of this ListQueriesDto.
         :rtype: int
@@ -1437,7 +1437,7 @@ class ListQueriesDto:
     def cpu_skew_percent(self, cpu_skew_percent):
         r"""Sets the cpu_skew_percent of this ListQueriesDto.
 
-        语句在各dn间的cpu时间倾斜率。
+        **参数解释**： 语句在各dn间的cpu时间倾斜率。 **取值范围**： 不涉及。
 
         :param cpu_skew_percent: The cpu_skew_percent of this ListQueriesDto.
         :type cpu_skew_percent: int
@@ -1448,7 +1448,7 @@ class ListQueriesDto:
     def average_peak_iops(self):
         r"""Gets the average_peak_iops of this ListQueriesDto.
 
-        语句在所有dn上的每秒平均io峰值（列存单位是次/s，行存单位是万次/s）。
+        **参数解释**： 语句在所有dn上的每秒平均io峰值（列存单位是次/s，行存单位是万次/s）。 **取值范围**： 不涉及。
 
         :return: The average_peak_iops of this ListQueriesDto.
         :rtype: int
@@ -1459,7 +1459,7 @@ class ListQueriesDto:
     def average_peak_iops(self, average_peak_iops):
         r"""Sets the average_peak_iops of this ListQueriesDto.
 
-        语句在所有dn上的每秒平均io峰值（列存单位是次/s，行存单位是万次/s）。
+        **参数解释**： 语句在所有dn上的每秒平均io峰值（列存单位是次/s，行存单位是万次/s）。 **取值范围**： 不涉及。
 
         :param average_peak_iops: The average_peak_iops of this ListQueriesDto.
         :type average_peak_iops: int
@@ -1470,7 +1470,7 @@ class ListQueriesDto:
     def iops_skew_percent(self):
         r"""Gets the iops_skew_percent of this ListQueriesDto.
 
-        语句在dn间的io倾斜率。
+        **参数解释**： 语句在dn间的io倾斜率。 **取值范围**： 不涉及。
 
         :return: The iops_skew_percent of this ListQueriesDto.
         :rtype: int
@@ -1481,7 +1481,7 @@ class ListQueriesDto:
     def iops_skew_percent(self, iops_skew_percent):
         r"""Sets the iops_skew_percent of this ListQueriesDto.
 
-        语句在dn间的io倾斜率。
+        **参数解释**： 语句在dn间的io倾斜率。 **取值范围**： 不涉及。
 
         :param iops_skew_percent: The iops_skew_percent of this ListQueriesDto.
         :type iops_skew_percent: int
@@ -1492,7 +1492,7 @@ class ListQueriesDto:
     def max_peak_iops(self):
         r"""Gets the max_peak_iops of this ListQueriesDto.
 
-        语句在所有dn上的每秒最大io峰值（列存单位是次/s，行存单位是万次/s）。
+        **参数解释**： 语句在所有dn上的每秒最大io峰值（列存单位是次/s，行存单位是万次/s）。 **取值范围**： 不涉及。
 
         :return: The max_peak_iops of this ListQueriesDto.
         :rtype: int
@@ -1503,7 +1503,7 @@ class ListQueriesDto:
     def max_peak_iops(self, max_peak_iops):
         r"""Sets the max_peak_iops of this ListQueriesDto.
 
-        语句在所有dn上的每秒最大io峰值（列存单位是次/s，行存单位是万次/s）。
+        **参数解释**： 语句在所有dn上的每秒最大io峰值（列存单位是次/s，行存单位是万次/s）。 **取值范围**： 不涉及。
 
         :param max_peak_iops: The max_peak_iops of this ListQueriesDto.
         :type max_peak_iops: int
@@ -1514,7 +1514,7 @@ class ListQueriesDto:
     def min_peak_iops(self):
         r"""Gets the min_peak_iops of this ListQueriesDto.
 
-        语句在所有dn上的每秒最小io峰值（列存单位是次/s，行存单位是万次/s）。
+        **参数解释**： 语句在所有dn上的每秒最小io峰值（列存单位是次/s，行存单位是万次/s）。 **取值范围**： 不涉及。
 
         :return: The min_peak_iops of this ListQueriesDto.
         :rtype: int
@@ -1525,7 +1525,7 @@ class ListQueriesDto:
     def min_peak_iops(self, min_peak_iops):
         r"""Sets the min_peak_iops of this ListQueriesDto.
 
-        语句在所有dn上的每秒最小io峰值（列存单位是次/s，行存单位是万次/s）。
+        **参数解释**： 语句在所有dn上的每秒最小io峰值（列存单位是次/s，行存单位是万次/s）。 **取值范围**： 不涉及。
 
         :param min_peak_iops: The min_peak_iops of this ListQueriesDto.
         :type min_peak_iops: int
@@ -1536,7 +1536,7 @@ class ListQueriesDto:
     def query_plan(self):
         r"""Gets the query_plan of this ListQueriesDto.
 
-        查询计划。
+        **参数解释**： 查询计划。 **取值范围**： 不涉及。
 
         :return: The query_plan of this ListQueriesDto.
         :rtype: str
@@ -1547,7 +1547,7 @@ class ListQueriesDto:
     def query_plan(self, query_plan):
         r"""Sets the query_plan of this ListQueriesDto.
 
-        查询计划。
+        **参数解释**： 查询计划。 **取值范围**： 不涉及。
 
         :param query_plan: The query_plan of this ListQueriesDto.
         :type query_plan: str
@@ -1558,7 +1558,7 @@ class ListQueriesDto:
     def query_status(self):
         r"""Gets the query_status of this ListQueriesDto.
 
-        当前查询语句的实时运行状态 (active, idle, idle in transaction, idle in transaction(aborted), fastpath function call, disabled)。
+        **参数解释**： 当前查询语句的实时运行状态。 **取值范围**： active、idle、idle in transaction、idle in transaction(aborted)、fastpath function call、disabled。
 
         :return: The query_status of this ListQueriesDto.
         :rtype: str
@@ -1569,7 +1569,7 @@ class ListQueriesDto:
     def query_status(self, query_status):
         r"""Sets the query_status of this ListQueriesDto.
 
-        当前查询语句的实时运行状态 (active, idle, idle in transaction, idle in transaction(aborted), fastpath function call, disabled)。
+        **参数解释**： 当前查询语句的实时运行状态。 **取值范围**： active、idle、idle in transaction、idle in transaction(aborted)、fastpath function call、disabled。
 
         :param query_status: The query_status of this ListQueriesDto.
         :type query_status: str
@@ -1580,7 +1580,7 @@ class ListQueriesDto:
     def wlm_status(self):
         r"""Gets the wlm_status of this ListQueriesDto.
 
-        当前查询语句在资源池上的运行状态 (pending, running, finished, aborted, active, unknown)。
+        **参数解释**： 当前查询语句在资源池上的运行状态。 **取值范围**： pending：待生效。 running：运行中。 finished：结束。 aborted：终止。 active：正常。 unknown：未知。
 
         :return: The wlm_status of this ListQueriesDto.
         :rtype: str
@@ -1591,7 +1591,7 @@ class ListQueriesDto:
     def wlm_status(self, wlm_status):
         r"""Sets the wlm_status of this ListQueriesDto.
 
-        当前查询语句在资源池上的运行状态 (pending, running, finished, aborted, active, unknown)。
+        **参数解释**： 当前查询语句在资源池上的运行状态。 **取值范围**： pending：待生效。 running：运行中。 finished：结束。 aborted：终止。 active：正常。 unknown：未知。
 
         :param wlm_status: The wlm_status of this ListQueriesDto.
         :type wlm_status: str
@@ -1602,7 +1602,7 @@ class ListQueriesDto:
     def wlm_attrib(self):
         r"""Gets the wlm_attrib of this ListQueriesDto.
 
-        语句的属性 (ordinary, simple, complicated, internal)
+        **参数解释**： 语句的属性。 **取值范围**： ordinary：普通。 simple：简单。 complicated：复杂。 internal：内部。
 
         :return: The wlm_attrib of this ListQueriesDto.
         :rtype: str
@@ -1613,7 +1613,7 @@ class ListQueriesDto:
     def wlm_attrib(self, wlm_attrib):
         r"""Sets the wlm_attrib of this ListQueriesDto.
 
-        语句的属性 (ordinary, simple, complicated, internal)
+        **参数解释**： 语句的属性。 **取值范围**： ordinary：普通。 simple：简单。 complicated：复杂。 internal：内部。
 
         :param wlm_attrib: The wlm_attrib of this ListQueriesDto.
         :type wlm_attrib: str
@@ -1624,7 +1624,7 @@ class ListQueriesDto:
     def system_query(self):
         r"""Gets the system_query of this ListQueriesDto.
 
-        是否系统查询。
+        **参数解释**： 是否系统查询。 **取值范围**： 不涉及。
 
         :return: The system_query of this ListQueriesDto.
         :rtype: bool
@@ -1635,7 +1635,7 @@ class ListQueriesDto:
     def system_query(self, system_query):
         r"""Sets the system_query of this ListQueriesDto.
 
-        是否系统查询。
+        **参数解释**： 是否系统查询。 **取值范围**： 不涉及。
 
         :param system_query: The system_query of this ListQueriesDto.
         :type system_query: bool
@@ -1646,7 +1646,7 @@ class ListQueriesDto:
     def backend_start(self):
         r"""Gets the backend_start of this ListQueriesDto.
 
-        该过程开始的时间，即当客户端连接服务器时。
+        **参数解释**： 该过程开始的时间，即当客户端连接服务器时。 **取值范围**： 不涉及。
 
         :return: The backend_start of this ListQueriesDto.
         :rtype: int
@@ -1657,7 +1657,7 @@ class ListQueriesDto:
     def backend_start(self, backend_start):
         r"""Sets the backend_start of this ListQueriesDto.
 
-        该过程开始的时间，即当客户端连接服务器时。
+        **参数解释**： 该过程开始的时间，即当客户端连接服务器时。 **取值范围**： 不涉及。
 
         :param backend_start: The backend_start of this ListQueriesDto.
         :type backend_start: int
@@ -1668,7 +1668,7 @@ class ListQueriesDto:
     def elapsed_time(self):
         r"""Gets the elapsed_time of this ListQueriesDto.
 
-        到目前为止的执行时间。
+        **参数解释**： 到目前为止的执行时间。 **取值范围**： 不涉及。
 
         :return: The elapsed_time of this ListQueriesDto.
         :rtype: int
@@ -1679,7 +1679,7 @@ class ListQueriesDto:
     def elapsed_time(self, elapsed_time):
         r"""Sets the elapsed_time of this ListQueriesDto.
 
-        到目前为止的执行时间。
+        **参数解释**： 到目前为止的执行时间。 **取值范围**： 不涉及。
 
         :param elapsed_time: The elapsed_time of this ListQueriesDto.
         :type elapsed_time: int
@@ -1690,7 +1690,7 @@ class ListQueriesDto:
     def curr_xact_start(self):
         r"""Gets the curr_xact_start of this ListQueriesDto.
 
-        启动当前事务的时间，如果没有事务是活跃的，则为null。如果当前查询是首个事务，则这列等同于query_start列。
+        **参数解释**： 启动当前事务的时间，如果没有事务是活跃的，则为null。如果当前查询是首个事务，则这列等同于query_start列。 **取值范围**： 不涉及。
 
         :return: The curr_xact_start of this ListQueriesDto.
         :rtype: int
@@ -1701,7 +1701,7 @@ class ListQueriesDto:
     def curr_xact_start(self, curr_xact_start):
         r"""Sets the curr_xact_start of this ListQueriesDto.
 
-        启动当前事务的时间，如果没有事务是活跃的，则为null。如果当前查询是首个事务，则这列等同于query_start列。
+        **参数解释**： 启动当前事务的时间，如果没有事务是活跃的，则为null。如果当前查询是首个事务，则这列等同于query_start列。 **取值范围**： 不涉及。
 
         :param curr_xact_start: The curr_xact_start of this ListQueriesDto.
         :type curr_xact_start: int
@@ -1712,7 +1712,7 @@ class ListQueriesDto:
     def state_change(self):
         r"""Gets the state_change of this ListQueriesDto.
 
-        上次状态改变的时间。
+        **参数解释**： 上次状态改变的时间。 **取值范围**： 不涉及。
 
         :return: The state_change of this ListQueriesDto.
         :rtype: int
@@ -1723,7 +1723,7 @@ class ListQueriesDto:
     def state_change(self, state_change):
         r"""Sets the state_change of this ListQueriesDto.
 
-        上次状态改变的时间。
+        **参数解释**： 上次状态改变的时间。 **取值范围**： 不涉及。
 
         :param state_change: The state_change of this ListQueriesDto.
         :type state_change: int
@@ -1734,7 +1734,7 @@ class ListQueriesDto:
     def query_start(self):
         r"""Gets the query_start of this ListQueriesDto.
 
-        语句执行的开始时间。
+        **参数解释**： 语句执行的开始时间。 **取值范围**： 不涉及。
 
         :return: The query_start of this ListQueriesDto.
         :rtype: int
@@ -1745,7 +1745,7 @@ class ListQueriesDto:
     def query_start(self, query_start):
         r"""Sets the query_start of this ListQueriesDto.
 
-        语句执行的开始时间。
+        **参数解释**： 语句执行的开始时间。 **取值范围**： 不涉及。
 
         :param query_start: The query_start of this ListQueriesDto.
         :type query_start: int
@@ -1756,7 +1756,7 @@ class ListQueriesDto:
     def query_elapsed_time(self):
         r"""Gets the query_elapsed_time of this ListQueriesDto.
 
-        语句当前为止的实际执行时间，(单位：s)。
+        **参数解释**： 语句当前为止的实际执行时间。单位：秒。 **取值范围**： 不涉及。
 
         :return: The query_elapsed_time of this ListQueriesDto.
         :rtype: int
@@ -1767,7 +1767,7 @@ class ListQueriesDto:
     def query_elapsed_time(self, query_elapsed_time):
         r"""Sets the query_elapsed_time of this ListQueriesDto.
 
-        语句当前为止的实际执行时间，(单位：s)。
+        **参数解释**： 语句当前为止的实际执行时间。单位：秒。 **取值范围**： 不涉及。
 
         :param query_elapsed_time: The query_elapsed_time of this ListQueriesDto.
         :type query_elapsed_time: int

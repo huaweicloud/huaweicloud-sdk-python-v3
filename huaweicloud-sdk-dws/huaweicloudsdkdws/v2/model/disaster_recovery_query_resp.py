@@ -45,23 +45,23 @@ class DisasterRecoveryQueryResp:
 
         The model defined in huaweicloud sdk
 
-        :param id: 容灾ID
+        :param id: **参数解释**： 容灾ID。 **取值范围**： 不涉及。
         :type id: str
-        :param name: 容灾名称
+        :param name: **参数解释**： 容灾名称。 **取值范围**： 不涉及。
         :type name: str
-        :param dr_type: 容灾类型
+        :param dr_type: **参数解释**： 容灾类型。 **取值范围**： 不涉及。
         :type dr_type: str
-        :param status: 容灾状态
+        :param status: **参数解释**： 容灾状态。 **取值范围**： 不涉及。
         :type status: str
         :param primary_cluster: 
         :type primary_cluster: :class:`huaweicloudsdkdws.v2.DisasterRecoveryCluster`
         :param standby_cluster: 
         :type standby_cluster: :class:`huaweicloudsdkdws.v2.DisasterRecoveryCluster`
-        :param dr_sync_period: 容灾同步周期
+        :param dr_sync_period: **参数解释**： 容灾同步周期。 **取值范围**： 不涉及。
         :type dr_sync_period: str
-        :param start_time: 容灾启动时间
+        :param start_time: **参数解释**： 容灾启动时间。 **取值范围**： 不涉及。
         :type start_time: str
-        :param create_time: 容灾创建时间
+        :param create_time: **参数解释**： 容灾创建时间。 **取值范围**： 不涉及。
         :type create_time: str
         """
         
@@ -101,7 +101,7 @@ class DisasterRecoveryQueryResp:
     def id(self):
         r"""Gets the id of this DisasterRecoveryQueryResp.
 
-        容灾ID
+        **参数解释**： 容灾ID。 **取值范围**： 不涉及。
 
         :return: The id of this DisasterRecoveryQueryResp.
         :rtype: str
@@ -112,7 +112,7 @@ class DisasterRecoveryQueryResp:
     def id(self, id):
         r"""Sets the id of this DisasterRecoveryQueryResp.
 
-        容灾ID
+        **参数解释**： 容灾ID。 **取值范围**： 不涉及。
 
         :param id: The id of this DisasterRecoveryQueryResp.
         :type id: str
@@ -123,7 +123,7 @@ class DisasterRecoveryQueryResp:
     def name(self):
         r"""Gets the name of this DisasterRecoveryQueryResp.
 
-        容灾名称
+        **参数解释**： 容灾名称。 **取值范围**： 不涉及。
 
         :return: The name of this DisasterRecoveryQueryResp.
         :rtype: str
@@ -134,7 +134,7 @@ class DisasterRecoveryQueryResp:
     def name(self, name):
         r"""Sets the name of this DisasterRecoveryQueryResp.
 
-        容灾名称
+        **参数解释**： 容灾名称。 **取值范围**： 不涉及。
 
         :param name: The name of this DisasterRecoveryQueryResp.
         :type name: str
@@ -145,7 +145,7 @@ class DisasterRecoveryQueryResp:
     def dr_type(self):
         r"""Gets the dr_type of this DisasterRecoveryQueryResp.
 
-        容灾类型
+        **参数解释**： 容灾类型。 **取值范围**： 不涉及。
 
         :return: The dr_type of this DisasterRecoveryQueryResp.
         :rtype: str
@@ -156,7 +156,7 @@ class DisasterRecoveryQueryResp:
     def dr_type(self, dr_type):
         r"""Sets the dr_type of this DisasterRecoveryQueryResp.
 
-        容灾类型
+        **参数解释**： 容灾类型。 **取值范围**： 不涉及。
 
         :param dr_type: The dr_type of this DisasterRecoveryQueryResp.
         :type dr_type: str
@@ -167,7 +167,7 @@ class DisasterRecoveryQueryResp:
     def status(self):
         r"""Gets the status of this DisasterRecoveryQueryResp.
 
-        容灾状态
+        **参数解释**： 容灾状态。 **取值范围**： 不涉及。
 
         :return: The status of this DisasterRecoveryQueryResp.
         :rtype: str
@@ -178,7 +178,7 @@ class DisasterRecoveryQueryResp:
     def status(self, status):
         r"""Sets the status of this DisasterRecoveryQueryResp.
 
-        容灾状态
+        **参数解释**： 容灾状态。 **取值范围**： 不涉及。
 
         :param status: The status of this DisasterRecoveryQueryResp.
         :type status: str
@@ -225,7 +225,7 @@ class DisasterRecoveryQueryResp:
     def dr_sync_period(self):
         r"""Gets the dr_sync_period of this DisasterRecoveryQueryResp.
 
-        容灾同步周期
+        **参数解释**： 容灾同步周期。 **取值范围**： 不涉及。
 
         :return: The dr_sync_period of this DisasterRecoveryQueryResp.
         :rtype: str
@@ -236,7 +236,7 @@ class DisasterRecoveryQueryResp:
     def dr_sync_period(self, dr_sync_period):
         r"""Sets the dr_sync_period of this DisasterRecoveryQueryResp.
 
-        容灾同步周期
+        **参数解释**： 容灾同步周期。 **取值范围**： 不涉及。
 
         :param dr_sync_period: The dr_sync_period of this DisasterRecoveryQueryResp.
         :type dr_sync_period: str
@@ -247,7 +247,7 @@ class DisasterRecoveryQueryResp:
     def start_time(self):
         r"""Gets the start_time of this DisasterRecoveryQueryResp.
 
-        容灾启动时间
+        **参数解释**： 容灾启动时间。 **取值范围**： 不涉及。
 
         :return: The start_time of this DisasterRecoveryQueryResp.
         :rtype: str
@@ -258,7 +258,7 @@ class DisasterRecoveryQueryResp:
     def start_time(self, start_time):
         r"""Sets the start_time of this DisasterRecoveryQueryResp.
 
-        容灾启动时间
+        **参数解释**： 容灾启动时间。 **取值范围**： 不涉及。
 
         :param start_time: The start_time of this DisasterRecoveryQueryResp.
         :type start_time: str
@@ -269,7 +269,7 @@ class DisasterRecoveryQueryResp:
     def create_time(self):
         r"""Gets the create_time of this DisasterRecoveryQueryResp.
 
-        容灾创建时间
+        **参数解释**： 容灾创建时间。 **取值范围**： 不涉及。
 
         :return: The create_time of this DisasterRecoveryQueryResp.
         :rtype: str
@@ -280,7 +280,7 @@ class DisasterRecoveryQueryResp:
     def create_time(self, create_time):
         r"""Sets the create_time of this DisasterRecoveryQueryResp.
 
-        容灾创建时间
+        **参数解释**： 容灾创建时间。 **取值范围**： 不涉及。
 
         :param create_time: The create_time of this DisasterRecoveryQueryResp.
         :type create_time: str

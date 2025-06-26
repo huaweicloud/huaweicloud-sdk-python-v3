@@ -85,7 +85,7 @@ class V2CreateCluster:
         :type db_port: int
         :param dss_pool_id: **参数解释**： 专属存储池ID，一般不需要填写。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： null
         :type dss_pool_id: str
-        :param availability_zones: **参数解释**： 可用区列表。 **约束限制**： 不涉及。 **取值范围**： 集群可用区选择详情请参见地区和终端节点地区和终端节点。 **默认取值**： 不涉及。
+        :param availability_zones: **参数解释**： 可用区信息，创建3AZ集群时需传入3个不同可用区。 **约束限制**： 不涉及。 **取值范围**： 获取方法请参见[查询可用区列表接口](ListAvailabilityZones.xml)。 **默认取值**： 不涉及。
         :type availability_zones: list[str]
         :param tags: **参数解释**： 标签信息。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type tags: list[:class:`huaweicloudsdkdws.v2.Tags`]
@@ -350,7 +350,7 @@ class V2CreateCluster:
     def availability_zones(self):
         r"""Gets the availability_zones of this V2CreateCluster.
 
-        **参数解释**： 可用区列表。 **约束限制**： 不涉及。 **取值范围**： 集群可用区选择详情请参见地区和终端节点地区和终端节点。 **默认取值**： 不涉及。
+        **参数解释**： 可用区信息，创建3AZ集群时需传入3个不同可用区。 **约束限制**： 不涉及。 **取值范围**： 获取方法请参见[查询可用区列表接口](ListAvailabilityZones.xml)。 **默认取值**： 不涉及。
 
         :return: The availability_zones of this V2CreateCluster.
         :rtype: list[str]
@@ -361,7 +361,7 @@ class V2CreateCluster:
     def availability_zones(self, availability_zones):
         r"""Sets the availability_zones of this V2CreateCluster.
 
-        **参数解释**： 可用区列表。 **约束限制**： 不涉及。 **取值范围**： 集群可用区选择详情请参见地区和终端节点地区和终端节点。 **默认取值**： 不涉及。
+        **参数解释**： 可用区信息，创建3AZ集群时需传入3个不同可用区。 **约束限制**： 不涉及。 **取值范围**： 获取方法请参见[查询可用区列表接口](ListAvailabilityZones.xml)。 **默认取值**： 不涉及。
 
         :param availability_zones: The availability_zones of this V2CreateCluster.
         :type availability_zones: list[str]

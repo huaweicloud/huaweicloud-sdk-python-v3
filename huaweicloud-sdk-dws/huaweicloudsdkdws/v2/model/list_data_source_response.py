@@ -38,15 +38,15 @@ class ListDataSourceResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param data_sources: 数据源列表。
+        :param data_sources: **参数解释**： 数据源列表。 **取值范围**： 不涉及。
         :type data_sources: list[:class:`huaweicloudsdkdws.v2.ExtDataSource`]
-        :param project_id: **参数解释**： 项目ID。获取方式方法请参见[获取项目ID](dws_02_0011.xml)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :param project_id: **参数解释**： 项目ID。 **取值范围**： 不涉及。
         :type project_id: str
         :param cluster_id: **参数解释**： 集群ID。 **取值范围**： 36位UUID。
         :type cluster_id: str
-        :param type: 数据源类型。
+        :param type: **参数解释**： 数据源类型。 **取值范围**： 不涉及。
         :type type: str
-        :param count: 总数。
+        :param count: **参数解释**： 总数。 **取值范围**： 不涉及。
         :type count: int
         """
         
@@ -74,7 +74,7 @@ class ListDataSourceResponse(SdkResponse):
     def data_sources(self):
         r"""Gets the data_sources of this ListDataSourceResponse.
 
-        数据源列表。
+        **参数解释**： 数据源列表。 **取值范围**： 不涉及。
 
         :return: The data_sources of this ListDataSourceResponse.
         :rtype: list[:class:`huaweicloudsdkdws.v2.ExtDataSource`]
@@ -85,7 +85,7 @@ class ListDataSourceResponse(SdkResponse):
     def data_sources(self, data_sources):
         r"""Sets the data_sources of this ListDataSourceResponse.
 
-        数据源列表。
+        **参数解释**： 数据源列表。 **取值范围**： 不涉及。
 
         :param data_sources: The data_sources of this ListDataSourceResponse.
         :type data_sources: list[:class:`huaweicloudsdkdws.v2.ExtDataSource`]
@@ -96,7 +96,7 @@ class ListDataSourceResponse(SdkResponse):
     def project_id(self):
         r"""Gets the project_id of this ListDataSourceResponse.
 
-        **参数解释**： 项目ID。获取方式方法请参见[获取项目ID](dws_02_0011.xml)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 项目ID。 **取值范围**： 不涉及。
 
         :return: The project_id of this ListDataSourceResponse.
         :rtype: str
@@ -107,7 +107,7 @@ class ListDataSourceResponse(SdkResponse):
     def project_id(self, project_id):
         r"""Sets the project_id of this ListDataSourceResponse.
 
-        **参数解释**： 项目ID。获取方式方法请参见[获取项目ID](dws_02_0011.xml)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 项目ID。 **取值范围**： 不涉及。
 
         :param project_id: The project_id of this ListDataSourceResponse.
         :type project_id: str
@@ -140,7 +140,7 @@ class ListDataSourceResponse(SdkResponse):
     def type(self):
         r"""Gets the type of this ListDataSourceResponse.
 
-        数据源类型。
+        **参数解释**： 数据源类型。 **取值范围**： 不涉及。
 
         :return: The type of this ListDataSourceResponse.
         :rtype: str
@@ -151,7 +151,7 @@ class ListDataSourceResponse(SdkResponse):
     def type(self, type):
         r"""Sets the type of this ListDataSourceResponse.
 
-        数据源类型。
+        **参数解释**： 数据源类型。 **取值范围**： 不涉及。
 
         :param type: The type of this ListDataSourceResponse.
         :type type: str
@@ -162,7 +162,7 @@ class ListDataSourceResponse(SdkResponse):
     def count(self):
         r"""Gets the count of this ListDataSourceResponse.
 
-        总数。
+        **参数解释**： 总数。 **取值范围**： 不涉及。
 
         :return: The count of this ListDataSourceResponse.
         :rtype: int
@@ -173,7 +173,7 @@ class ListDataSourceResponse(SdkResponse):
     def count(self, count):
         r"""Sets the count of this ListDataSourceResponse.
 
-        总数。
+        **参数解释**： 总数。 **取值范围**： 不涉及。
 
         :param count: The count of this ListDataSourceResponse.
         :type count: int

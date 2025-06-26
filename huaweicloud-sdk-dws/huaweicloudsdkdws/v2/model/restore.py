@@ -45,23 +45,23 @@ class Restore:
 
         The model defined in huaweicloud sdk
 
-        :param name: 集群名称，要求唯一性，必须以字母开头并只包含字母、数字、中划线，下划线，长度为4~64个字符。
+        :param name: **参数解释**： 集群名称。 **取值范围**： 要求唯一性，必须以字母开头并只包含字母、数字、中划线，下划线，长度为4~64个字符。
         :type name: str
-        :param subnet_id: 指定子网ID，用于集群网络配置。默认值与原集群相同。
+        :param subnet_id: **参数解释**： 指定子网ID，用于集群网络配置。 **取值范围**： 默认值与原集群相同。
         :type subnet_id: str
-        :param security_group_id: 指定安全组ID，用于集群网络配置。默认值与原集群相同。
+        :param security_group_id: **参数解释**： 指定安全组ID，用于集群网络配置。默认值与原集群相同。 **取值范围**： 不涉及。
         :type security_group_id: str
-        :param vpc_id: 指定虚拟私有云ID，用于集群网络配置。默认值与原集群相同。
+        :param vpc_id: **参数解释**： 指定虚拟私有云ID，用于集群网络配置。默认值与原集群相同。 **取值范围**： 不涉及。
         :type vpc_id: str
-        :param availability_zone: 指定集群可用区。默认值与原集群相同。
+        :param availability_zone: **参数解释**： 指定集群可用区。默认值与原集群相同。 **取值范围**： 不涉及。
         :type availability_zone: str
-        :param port: 指定集群服务端口
+        :param port: **参数解释**： 指定集群服务端口。 **取值范围**： 不涉及。
         :type port: int
         :param public_ip: 
         :type public_ip: :class:`huaweicloudsdkdws.v2.PublicIp`
         :param enterprise_project_id: **参数解释**： 企业项目ID，对集群指定企业项目。如果未指定，则使用默认企业项目“default”的ID，即0。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 0
         :type enterprise_project_id: str
-        :param ipv6_enable: 指定网络协议类型，表明是否支持IPv6,默认不使用IPv6。
+        :param ipv6_enable: **参数解释**： 指定网络协议类型，表明是否支持IPv6，默认不使用IPv6。 **取值范围**： 不涉及。
         :type ipv6_enable: bool
         """
         
@@ -100,7 +100,7 @@ class Restore:
     def name(self):
         r"""Gets the name of this Restore.
 
-        集群名称，要求唯一性，必须以字母开头并只包含字母、数字、中划线，下划线，长度为4~64个字符。
+        **参数解释**： 集群名称。 **取值范围**： 要求唯一性，必须以字母开头并只包含字母、数字、中划线，下划线，长度为4~64个字符。
 
         :return: The name of this Restore.
         :rtype: str
@@ -111,7 +111,7 @@ class Restore:
     def name(self, name):
         r"""Sets the name of this Restore.
 
-        集群名称，要求唯一性，必须以字母开头并只包含字母、数字、中划线，下划线，长度为4~64个字符。
+        **参数解释**： 集群名称。 **取值范围**： 要求唯一性，必须以字母开头并只包含字母、数字、中划线，下划线，长度为4~64个字符。
 
         :param name: The name of this Restore.
         :type name: str
@@ -122,7 +122,7 @@ class Restore:
     def subnet_id(self):
         r"""Gets the subnet_id of this Restore.
 
-        指定子网ID，用于集群网络配置。默认值与原集群相同。
+        **参数解释**： 指定子网ID，用于集群网络配置。 **取值范围**： 默认值与原集群相同。
 
         :return: The subnet_id of this Restore.
         :rtype: str
@@ -133,7 +133,7 @@ class Restore:
     def subnet_id(self, subnet_id):
         r"""Sets the subnet_id of this Restore.
 
-        指定子网ID，用于集群网络配置。默认值与原集群相同。
+        **参数解释**： 指定子网ID，用于集群网络配置。 **取值范围**： 默认值与原集群相同。
 
         :param subnet_id: The subnet_id of this Restore.
         :type subnet_id: str
@@ -144,7 +144,7 @@ class Restore:
     def security_group_id(self):
         r"""Gets the security_group_id of this Restore.
 
-        指定安全组ID，用于集群网络配置。默认值与原集群相同。
+        **参数解释**： 指定安全组ID，用于集群网络配置。默认值与原集群相同。 **取值范围**： 不涉及。
 
         :return: The security_group_id of this Restore.
         :rtype: str
@@ -155,7 +155,7 @@ class Restore:
     def security_group_id(self, security_group_id):
         r"""Sets the security_group_id of this Restore.
 
-        指定安全组ID，用于集群网络配置。默认值与原集群相同。
+        **参数解释**： 指定安全组ID，用于集群网络配置。默认值与原集群相同。 **取值范围**： 不涉及。
 
         :param security_group_id: The security_group_id of this Restore.
         :type security_group_id: str
@@ -166,7 +166,7 @@ class Restore:
     def vpc_id(self):
         r"""Gets the vpc_id of this Restore.
 
-        指定虚拟私有云ID，用于集群网络配置。默认值与原集群相同。
+        **参数解释**： 指定虚拟私有云ID，用于集群网络配置。默认值与原集群相同。 **取值范围**： 不涉及。
 
         :return: The vpc_id of this Restore.
         :rtype: str
@@ -177,7 +177,7 @@ class Restore:
     def vpc_id(self, vpc_id):
         r"""Sets the vpc_id of this Restore.
 
-        指定虚拟私有云ID，用于集群网络配置。默认值与原集群相同。
+        **参数解释**： 指定虚拟私有云ID，用于集群网络配置。默认值与原集群相同。 **取值范围**： 不涉及。
 
         :param vpc_id: The vpc_id of this Restore.
         :type vpc_id: str
@@ -188,7 +188,7 @@ class Restore:
     def availability_zone(self):
         r"""Gets the availability_zone of this Restore.
 
-        指定集群可用区。默认值与原集群相同。
+        **参数解释**： 指定集群可用区。默认值与原集群相同。 **取值范围**： 不涉及。
 
         :return: The availability_zone of this Restore.
         :rtype: str
@@ -199,7 +199,7 @@ class Restore:
     def availability_zone(self, availability_zone):
         r"""Sets the availability_zone of this Restore.
 
-        指定集群可用区。默认值与原集群相同。
+        **参数解释**： 指定集群可用区。默认值与原集群相同。 **取值范围**： 不涉及。
 
         :param availability_zone: The availability_zone of this Restore.
         :type availability_zone: str
@@ -210,7 +210,7 @@ class Restore:
     def port(self):
         r"""Gets the port of this Restore.
 
-        指定集群服务端口
+        **参数解释**： 指定集群服务端口。 **取值范围**： 不涉及。
 
         :return: The port of this Restore.
         :rtype: int
@@ -221,7 +221,7 @@ class Restore:
     def port(self, port):
         r"""Sets the port of this Restore.
 
-        指定集群服务端口
+        **参数解释**： 指定集群服务端口。 **取值范围**： 不涉及。
 
         :param port: The port of this Restore.
         :type port: int
@@ -272,7 +272,7 @@ class Restore:
     def ipv6_enable(self):
         r"""Gets the ipv6_enable of this Restore.
 
-        指定网络协议类型，表明是否支持IPv6,默认不使用IPv6。
+        **参数解释**： 指定网络协议类型，表明是否支持IPv6，默认不使用IPv6。 **取值范围**： 不涉及。
 
         :return: The ipv6_enable of this Restore.
         :rtype: bool
@@ -283,7 +283,7 @@ class Restore:
     def ipv6_enable(self, ipv6_enable):
         r"""Sets the ipv6_enable of this Restore.
 
-        指定网络协议类型，表明是否支持IPv6,默认不使用IPv6。
+        **参数解释**： 指定网络协议类型，表明是否支持IPv6，默认不使用IPv6。 **取值范围**： 不涉及。
 
         :param ipv6_enable: The ipv6_enable of this Restore.
         :type ipv6_enable: bool

@@ -32,6 +32,7 @@ class SqlJob:
         'table_name': 'str',
         'with_column_header': 'bool',
         'detail': 'str',
+        'engine_type': 'str',
         'statement': 'str',
         'tags': 'list[Tag]',
         'message': 'str',
@@ -59,6 +60,7 @@ class SqlJob:
         'table_name': 'table_name',
         'with_column_header': 'with_column_header',
         'detail': 'detail',
+        'engine_type': 'engine_type',
         'statement': 'statement',
         'tags': 'tags',
         'message': 'message',
@@ -70,7 +72,7 @@ class SqlJob:
         'execution_details_path': 'execution_details_path'
     }
 
-    def __init__(self, job_id=None, job_type=None, queue_name=None, owner=None, start_time=None, duration=None, status=None, input_row_count=None, bad_row_count=None, input_size=None, result_count=None, database_name=None, table_name=None, with_column_header=None, detail=None, statement=None, tags=None, message=None, end_time=None, cpu_cost=None, output_byte=None, result_path=None, result_format=None, execution_details_path=None):
+    def __init__(self, job_id=None, job_type=None, queue_name=None, owner=None, start_time=None, duration=None, status=None, input_row_count=None, bad_row_count=None, input_size=None, result_count=None, database_name=None, table_name=None, with_column_header=None, detail=None, engine_type=None, statement=None, tags=None, message=None, end_time=None, cpu_cost=None, output_byte=None, result_path=None, result_format=None, execution_details_path=None):
         r"""SqlJob
 
         The model defined in huaweicloud sdk
@@ -105,6 +107,8 @@ class SqlJob:
         :type with_column_header: bool
         :param detail: SQL查询的相关列信息的Json字符串 示例: {\\\&quot;type\\\&quot;:\\\&quot;struct\\\&quot;,\\\&quot;fields\\\&quot;:[{\\\&quot;name\\\&quot;:\\\&quot;name\\\&quot;,\\\&quot;type\\\&quot;:\\\&quot;string\\\&quot;,\\\&quot;nullable\\\&quot;:true,\\\&quot;metadata\\\&quot;:{}},{\\\&quot;name\\\&quot;:\\\&quot;age\\\&quot;,\\\&quot;type\\\&quot;:\\\&quot;integer\\\&quot;,\\\&quot;nullable\\\&quot;:true,\\\&quot;metadata\\\&quot;:{}}]} 约束限制:  符合Json格式的字符串 取值范围: 无 默认取值: 无
         :type detail: str
+        :param engine_type: 引擎类型 示例: spark 约束限制:  无 取值范围: spark, hetuEngine 默认取值: 无
+        :type engine_type: str
         :param statement: 作业执行的SQL语句 示例: select * from t_json_002 约束限制:  无 取值范围: 无 默认取值: 无
         :type statement: str
         :param tags: 作业标签
@@ -142,6 +146,7 @@ class SqlJob:
         self._table_name = None
         self._with_column_header = None
         self._detail = None
+        self._engine_type = None
         self._statement = None
         self._tags = None
         self._message = None
@@ -174,6 +179,8 @@ class SqlJob:
         if with_column_header is not None:
             self.with_column_header = with_column_header
         self.detail = detail
+        if engine_type is not None:
+            self.engine_type = engine_type
         self.statement = statement
         if tags is not None:
             self.tags = tags
@@ -521,6 +528,28 @@ class SqlJob:
         :type detail: str
         """
         self._detail = detail
+
+    @property
+    def engine_type(self):
+        r"""Gets the engine_type of this SqlJob.
+
+        引擎类型 示例: spark 约束限制:  无 取值范围: spark, hetuEngine 默认取值: 无
+
+        :return: The engine_type of this SqlJob.
+        :rtype: str
+        """
+        return self._engine_type
+
+    @engine_type.setter
+    def engine_type(self, engine_type):
+        r"""Sets the engine_type of this SqlJob.
+
+        引擎类型 示例: spark 约束限制:  无 取值范围: spark, hetuEngine 默认取值: 无
+
+        :param engine_type: The engine_type of this SqlJob.
+        :type engine_type: str
+        """
+        self._engine_type = engine_type
 
     @property
     def statement(self):

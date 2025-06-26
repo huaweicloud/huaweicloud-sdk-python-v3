@@ -57,35 +57,35 @@ class EventResponse:
 
         The model defined in huaweicloud sdk
 
-        :param category: 事件类别
+        :param category: **参数解释**： 事件类别。 **取值范围**： 不涉及。
         :type category: str
-        :param description: 事件描述
+        :param description: **参数解释**： 事件描述。 **取值范围**： 不涉及。
         :type description: str
-        :param event_id: 事件ID
+        :param event_id: **参数解释**： 事件ID。 **取值范围**： 不涉及。
         :type event_id: str
-        :param name: 事件定义名称
+        :param name: **参数解释**： 事件定义名称。 **取值范围**： 不涉及。
         :type name: str
-        :param display_name: 事件显示名称
+        :param display_name: **参数解释**： 事件显示名称。 **取值范围**： 不涉及。
         :type display_name: str
-        :param name_space: 所属服务
+        :param name_space: **参数解释**： 所属服务。 **取值范围**： 不涉及。
         :type name_space: str
-        :param severity: 事件级别
+        :param severity: **参数解释**： 事件级别。 **取值范围**： 不涉及。
         :type severity: str
-        :param source_type: 事件源类别
+        :param source_type: **参数解释**： 事件源类别。 **取值范围**： 不涉及。
         :type source_type: str
-        :param occur_time: 时间
+        :param occur_time: **参数解释**： 时间。 **取值范围**： 不涉及。
         :type occur_time: int
-        :param project_id: 租户凭证ID
+        :param project_id: **参数解释**： 租户凭证ID。 **取值范围**： 不涉及。
         :type project_id: str
-        :param source_id: 事件源ID
+        :param source_id: **参数解释**： 事件源ID。 **取值范围**： 不涉及。
         :type source_id: str
-        :param source_name: 事件源名称
+        :param source_name: **参数解释**： 事件源名称。 **取值范围**： 不涉及。
         :type source_name: str
-        :param status: 状态
+        :param status: **参数解释**： 状态。 **取值范围**： 不涉及。
         :type status: int
-        :param subject: 事件主题
+        :param subject: **参数解释**： 事件主题。 **取值范围**： 不涉及。
         :type subject: str
-        :param context: 事件信息
+        :param context: **参数解释**： 事件信息。 **取值范围**： 不涉及。
         :type context: str
         """
         
@@ -143,7 +143,7 @@ class EventResponse:
     def category(self):
         r"""Gets the category of this EventResponse.
 
-        事件类别
+        **参数解释**： 事件类别。 **取值范围**： 不涉及。
 
         :return: The category of this EventResponse.
         :rtype: str
@@ -154,7 +154,7 @@ class EventResponse:
     def category(self, category):
         r"""Sets the category of this EventResponse.
 
-        事件类别
+        **参数解释**： 事件类别。 **取值范围**： 不涉及。
 
         :param category: The category of this EventResponse.
         :type category: str
@@ -165,7 +165,7 @@ class EventResponse:
     def description(self):
         r"""Gets the description of this EventResponse.
 
-        事件描述
+        **参数解释**： 事件描述。 **取值范围**： 不涉及。
 
         :return: The description of this EventResponse.
         :rtype: str
@@ -176,7 +176,7 @@ class EventResponse:
     def description(self, description):
         r"""Sets the description of this EventResponse.
 
-        事件描述
+        **参数解释**： 事件描述。 **取值范围**： 不涉及。
 
         :param description: The description of this EventResponse.
         :type description: str
@@ -187,7 +187,7 @@ class EventResponse:
     def event_id(self):
         r"""Gets the event_id of this EventResponse.
 
-        事件ID
+        **参数解释**： 事件ID。 **取值范围**： 不涉及。
 
         :return: The event_id of this EventResponse.
         :rtype: str
@@ -198,7 +198,7 @@ class EventResponse:
     def event_id(self, event_id):
         r"""Sets the event_id of this EventResponse.
 
-        事件ID
+        **参数解释**： 事件ID。 **取值范围**： 不涉及。
 
         :param event_id: The event_id of this EventResponse.
         :type event_id: str
@@ -209,7 +209,7 @@ class EventResponse:
     def name(self):
         r"""Gets the name of this EventResponse.
 
-        事件定义名称
+        **参数解释**： 事件定义名称。 **取值范围**： 不涉及。
 
         :return: The name of this EventResponse.
         :rtype: str
@@ -220,7 +220,7 @@ class EventResponse:
     def name(self, name):
         r"""Sets the name of this EventResponse.
 
-        事件定义名称
+        **参数解释**： 事件定义名称。 **取值范围**： 不涉及。
 
         :param name: The name of this EventResponse.
         :type name: str
@@ -231,7 +231,7 @@ class EventResponse:
     def display_name(self):
         r"""Gets the display_name of this EventResponse.
 
-        事件显示名称
+        **参数解释**： 事件显示名称。 **取值范围**： 不涉及。
 
         :return: The display_name of this EventResponse.
         :rtype: str
@@ -242,7 +242,7 @@ class EventResponse:
     def display_name(self, display_name):
         r"""Sets the display_name of this EventResponse.
 
-        事件显示名称
+        **参数解释**： 事件显示名称。 **取值范围**： 不涉及。
 
         :param display_name: The display_name of this EventResponse.
         :type display_name: str
@@ -253,7 +253,7 @@ class EventResponse:
     def name_space(self):
         r"""Gets the name_space of this EventResponse.
 
-        所属服务
+        **参数解释**： 所属服务。 **取值范围**： 不涉及。
 
         :return: The name_space of this EventResponse.
         :rtype: str
@@ -264,7 +264,7 @@ class EventResponse:
     def name_space(self, name_space):
         r"""Sets the name_space of this EventResponse.
 
-        所属服务
+        **参数解释**： 所属服务。 **取值范围**： 不涉及。
 
         :param name_space: The name_space of this EventResponse.
         :type name_space: str
@@ -275,7 +275,7 @@ class EventResponse:
     def severity(self):
         r"""Gets the severity of this EventResponse.
 
-        事件级别
+        **参数解释**： 事件级别。 **取值范围**： 不涉及。
 
         :return: The severity of this EventResponse.
         :rtype: str
@@ -286,7 +286,7 @@ class EventResponse:
     def severity(self, severity):
         r"""Sets the severity of this EventResponse.
 
-        事件级别
+        **参数解释**： 事件级别。 **取值范围**： 不涉及。
 
         :param severity: The severity of this EventResponse.
         :type severity: str
@@ -297,7 +297,7 @@ class EventResponse:
     def source_type(self):
         r"""Gets the source_type of this EventResponse.
 
-        事件源类别
+        **参数解释**： 事件源类别。 **取值范围**： 不涉及。
 
         :return: The source_type of this EventResponse.
         :rtype: str
@@ -308,7 +308,7 @@ class EventResponse:
     def source_type(self, source_type):
         r"""Sets the source_type of this EventResponse.
 
-        事件源类别
+        **参数解释**： 事件源类别。 **取值范围**： 不涉及。
 
         :param source_type: The source_type of this EventResponse.
         :type source_type: str
@@ -319,7 +319,7 @@ class EventResponse:
     def occur_time(self):
         r"""Gets the occur_time of this EventResponse.
 
-        时间
+        **参数解释**： 时间。 **取值范围**： 不涉及。
 
         :return: The occur_time of this EventResponse.
         :rtype: int
@@ -330,7 +330,7 @@ class EventResponse:
     def occur_time(self, occur_time):
         r"""Sets the occur_time of this EventResponse.
 
-        时间
+        **参数解释**： 时间。 **取值范围**： 不涉及。
 
         :param occur_time: The occur_time of this EventResponse.
         :type occur_time: int
@@ -341,7 +341,7 @@ class EventResponse:
     def project_id(self):
         r"""Gets the project_id of this EventResponse.
 
-        租户凭证ID
+        **参数解释**： 租户凭证ID。 **取值范围**： 不涉及。
 
         :return: The project_id of this EventResponse.
         :rtype: str
@@ -352,7 +352,7 @@ class EventResponse:
     def project_id(self, project_id):
         r"""Sets the project_id of this EventResponse.
 
-        租户凭证ID
+        **参数解释**： 租户凭证ID。 **取值范围**： 不涉及。
 
         :param project_id: The project_id of this EventResponse.
         :type project_id: str
@@ -363,7 +363,7 @@ class EventResponse:
     def source_id(self):
         r"""Gets the source_id of this EventResponse.
 
-        事件源ID
+        **参数解释**： 事件源ID。 **取值范围**： 不涉及。
 
         :return: The source_id of this EventResponse.
         :rtype: str
@@ -374,7 +374,7 @@ class EventResponse:
     def source_id(self, source_id):
         r"""Sets the source_id of this EventResponse.
 
-        事件源ID
+        **参数解释**： 事件源ID。 **取值范围**： 不涉及。
 
         :param source_id: The source_id of this EventResponse.
         :type source_id: str
@@ -385,7 +385,7 @@ class EventResponse:
     def source_name(self):
         r"""Gets the source_name of this EventResponse.
 
-        事件源名称
+        **参数解释**： 事件源名称。 **取值范围**： 不涉及。
 
         :return: The source_name of this EventResponse.
         :rtype: str
@@ -396,7 +396,7 @@ class EventResponse:
     def source_name(self, source_name):
         r"""Sets the source_name of this EventResponse.
 
-        事件源名称
+        **参数解释**： 事件源名称。 **取值范围**： 不涉及。
 
         :param source_name: The source_name of this EventResponse.
         :type source_name: str
@@ -407,7 +407,7 @@ class EventResponse:
     def status(self):
         r"""Gets the status of this EventResponse.
 
-        状态
+        **参数解释**： 状态。 **取值范围**： 不涉及。
 
         :return: The status of this EventResponse.
         :rtype: int
@@ -418,7 +418,7 @@ class EventResponse:
     def status(self, status):
         r"""Sets the status of this EventResponse.
 
-        状态
+        **参数解释**： 状态。 **取值范围**： 不涉及。
 
         :param status: The status of this EventResponse.
         :type status: int
@@ -429,7 +429,7 @@ class EventResponse:
     def subject(self):
         r"""Gets the subject of this EventResponse.
 
-        事件主题
+        **参数解释**： 事件主题。 **取值范围**： 不涉及。
 
         :return: The subject of this EventResponse.
         :rtype: str
@@ -440,7 +440,7 @@ class EventResponse:
     def subject(self, subject):
         r"""Sets the subject of this EventResponse.
 
-        事件主题
+        **参数解释**： 事件主题。 **取值范围**： 不涉及。
 
         :param subject: The subject of this EventResponse.
         :type subject: str
@@ -451,7 +451,7 @@ class EventResponse:
     def context(self):
         r"""Gets the context of this EventResponse.
 
-        事件信息
+        **参数解释**： 事件信息。 **取值范围**： 不涉及。
 
         :return: The context of this EventResponse.
         :rtype: str
@@ -462,7 +462,7 @@ class EventResponse:
     def context(self, context):
         r"""Sets the context of this EventResponse.
 
-        事件信息
+        **参数解释**： 事件信息。 **取值范围**： 不涉及。
 
         :param context: The context of this EventResponse.
         :type context: str

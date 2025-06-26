@@ -33,11 +33,11 @@ class SnapshotsStatistic:
 
         The model defined in huaweicloud sdk
 
-        :param name: 资源统计信息名称。 - storage.free：免费容量。 - storage.paid：付费容量。 - storage.used：已用容量。
+        :param name: **参数解释**： 资源统计信息名称。 **取值范围**： storage.free：免费容量。 storage.paid：付费容量。 storage.used：已用容量。
         :type name: str
-        :param value: 资源统计信息值。
+        :param value: **参数解释**： 资源统计信息值。 **取值范围**： 不涉及。
         :type value: float
-        :param unit: 资源统计信息单位。
+        :param unit: **参数解释**： 资源统计信息单位。 **取值范围**： 不涉及。
         :type unit: str
         """
         
@@ -56,7 +56,7 @@ class SnapshotsStatistic:
     def name(self):
         r"""Gets the name of this SnapshotsStatistic.
 
-        资源统计信息名称。 - storage.free：免费容量。 - storage.paid：付费容量。 - storage.used：已用容量。
+        **参数解释**： 资源统计信息名称。 **取值范围**： storage.free：免费容量。 storage.paid：付费容量。 storage.used：已用容量。
 
         :return: The name of this SnapshotsStatistic.
         :rtype: str
@@ -67,7 +67,7 @@ class SnapshotsStatistic:
     def name(self, name):
         r"""Sets the name of this SnapshotsStatistic.
 
-        资源统计信息名称。 - storage.free：免费容量。 - storage.paid：付费容量。 - storage.used：已用容量。
+        **参数解释**： 资源统计信息名称。 **取值范围**： storage.free：免费容量。 storage.paid：付费容量。 storage.used：已用容量。
 
         :param name: The name of this SnapshotsStatistic.
         :type name: str
@@ -78,7 +78,7 @@ class SnapshotsStatistic:
     def value(self):
         r"""Gets the value of this SnapshotsStatistic.
 
-        资源统计信息值。
+        **参数解释**： 资源统计信息值。 **取值范围**： 不涉及。
 
         :return: The value of this SnapshotsStatistic.
         :rtype: float
@@ -89,7 +89,7 @@ class SnapshotsStatistic:
     def value(self, value):
         r"""Sets the value of this SnapshotsStatistic.
 
-        资源统计信息值。
+        **参数解释**： 资源统计信息值。 **取值范围**： 不涉及。
 
         :param value: The value of this SnapshotsStatistic.
         :type value: float
@@ -100,7 +100,7 @@ class SnapshotsStatistic:
     def unit(self):
         r"""Gets the unit of this SnapshotsStatistic.
 
-        资源统计信息单位。
+        **参数解释**： 资源统计信息单位。 **取值范围**： 不涉及。
 
         :return: The unit of this SnapshotsStatistic.
         :rtype: str
@@ -111,7 +111,7 @@ class SnapshotsStatistic:
     def unit(self, unit):
         r"""Sets the unit of this SnapshotsStatistic.
 
-        资源统计信息单位。
+        **参数解释**： 资源统计信息单位。 **取值范围**： 不涉及。
 
         :param unit: The unit of this SnapshotsStatistic.
         :type unit: str
