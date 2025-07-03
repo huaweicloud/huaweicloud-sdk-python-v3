@@ -23,9 +23,9 @@ class GetLogBackupReq:
     }
 
     attribute_map = {
-        'instance_name': 'instanceName',
+        'instance_name': 'instance_name',
         'level': 'level',
-        'log_type': 'logType'
+        'log_type': 'log_type'
     }
 
     def __init__(self, instance_name=None, level=None, log_type=None):

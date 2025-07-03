@@ -17,7 +17,7 @@ class ListInstancesRequest:
     sensitive_list = []
 
     openapi_types = {
-        'instance_id': 'float'
+        'instance_id': 'int'
     }
 
     attribute_map = {
@@ -30,7 +30,7 @@ class ListInstancesRequest:
         The model defined in huaweicloud sdk
 
         :param instance_id: 云堡垒机实例ID。（非必传，需要查询单个实例详情时传入）
-        :type instance_id: float
+        :type instance_id: int
         """
         
         
@@ -48,7 +48,7 @@ class ListInstancesRequest:
         云堡垒机实例ID。（非必传，需要查询单个实例详情时传入）
 
         :return: The instance_id of this ListInstancesRequest.
-        :rtype: float
+        :rtype: int
         """
         return self._instance_id
 
@@ -59,7 +59,7 @@ class ListInstancesRequest:
         云堡垒机实例ID。（非必传，需要查询单个实例详情时传入）
 
         :param instance_id: The instance_id of this ListInstancesRequest.
-        :type instance_id: float
+        :type instance_id: int
         """
         self._instance_id = instance_id
 

@@ -31,7 +31,7 @@ class ListCocTicketOperationHistoriesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param ticket_type: 工单类型:incident,issues_mgmt
+        :param ticket_type: 需要查询的工单类型，事件单传值为incident，问题单传值为issues_mgmt。
         :type ticket_type: str
         :param body: Body of the ListCocTicketOperationHistoriesRequest
         :type body: :class:`huaweicloudsdkcoc.v1.ListTicketParams`
@@ -51,7 +51,7 @@ class ListCocTicketOperationHistoriesRequest:
     def ticket_type(self):
         r"""Gets the ticket_type of this ListCocTicketOperationHistoriesRequest.
 
-        工单类型:incident,issues_mgmt
+        需要查询的工单类型，事件单传值为incident，问题单传值为issues_mgmt。
 
         :return: The ticket_type of this ListCocTicketOperationHistoriesRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class ListCocTicketOperationHistoriesRequest:
     def ticket_type(self, ticket_type):
         r"""Sets the ticket_type of this ListCocTicketOperationHistoriesRequest.
 
-        工单类型:incident,issues_mgmt
+        需要查询的工单类型，事件单传值为incident，问题单传值为issues_mgmt。
 
         :param ticket_type: The ticket_type of this ListCocTicketOperationHistoriesRequest.
         :type ticket_type: str

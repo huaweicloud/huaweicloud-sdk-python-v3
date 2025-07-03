@@ -27,8 +27,8 @@ class StartLogsReq:
 
     attribute_map = {
         'agency': 'agency',
-        'log_base_path': 'logBasePath',
-        'log_bucket': 'logBucket',
+        'log_base_path': 'log_base_path',
+        'log_bucket': 'log_bucket',
         'index_prefix': 'index_prefix',
         'keep_days': 'keep_days',
         'target_cluster_id': 'target_cluster_id'

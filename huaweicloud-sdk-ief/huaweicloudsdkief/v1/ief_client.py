@@ -2412,6 +2412,75 @@ class IefClient(Client):
 
         return http_info
 
+    def delete_pod(self, request):
+        r"""删除容器应用实例
+
+        删除部署下的应用实例。应用实例在删除后会自动重新拉起。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeletePod
+        :type request: :class:`huaweicloudsdkief.v1.DeletePodRequest`
+        :rtype: :class:`huaweicloudsdkief.v1.DeletePodResponse`
+        """
+        http_info = self._delete_pod_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_pod_invoker(self, request):
+        http_info = self._delete_pod_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_pod_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/edgemgr/deployments/{deployment_id}/pods/{pod_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeletePodResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'deployment_id' in local_var_params:
+            path_params['deployment_id'] = local_var_params['deployment_id']
+        if 'pod_name' in local_var_params:
+            path_params['pod_name'] = local_var_params['pod_name']
+
+        query_params = []
+
+        header_params = {}
+        if 'ief_instance_id' in local_var_params:
+            header_params['ief-instance-id'] = local_var_params['ief_instance_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_product(self, request):
         r"""删除批量节点注册作业
 

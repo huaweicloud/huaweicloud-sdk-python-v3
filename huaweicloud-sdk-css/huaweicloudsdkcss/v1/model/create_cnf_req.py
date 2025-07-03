@@ -25,7 +25,7 @@ class CreateCnfReq:
 
     attribute_map = {
         'name': 'name',
-        'conf_content': 'confContent',
+        'conf_content': 'conf_content',
         'setting': 'setting',
         'sensitive_words': 'sensitive_words'
     }

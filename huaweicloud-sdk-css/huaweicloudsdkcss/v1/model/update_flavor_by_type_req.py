@@ -23,9 +23,9 @@ class UpdateFlavorByTypeReq:
     }
 
     attribute_map = {
-        'need_check_replica': 'needCheckReplica',
-        'new_flavor_id': 'newFlavorId',
-        'is_auto_pay': 'isAutoPay'
+        'need_check_replica': 'need_check_replica',
+        'new_flavor_id': 'new_flavor_id',
+        'is_auto_pay': 'is_auto_pay'
     }
 
     def __init__(self, need_check_replica=None, new_flavor_id=None, is_auto_pay=None):

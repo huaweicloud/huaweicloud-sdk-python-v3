@@ -31,7 +31,7 @@ class ListTicketParams:
 
         The model defined in huaweicloud sdk
 
-        :param string_filters: 字符串搜索条件
+        :param string_filters: 字符串搜索条件，可根据该条件搜索到具体的工单。
         :type string_filters: list[:class:`huaweicloudsdkcoc.v1.ObjectFilter`]
         :param sort_filter: 
         :type sort_filter: :class:`huaweicloudsdkcoc.v1.ObjectFilter`
@@ -51,7 +51,7 @@ class ListTicketParams:
     def string_filters(self):
         r"""Gets the string_filters of this ListTicketParams.
 
-        字符串搜索条件
+        字符串搜索条件，可根据该条件搜索到具体的工单。
 
         :return: The string_filters of this ListTicketParams.
         :rtype: list[:class:`huaweicloudsdkcoc.v1.ObjectFilter`]
@@ -62,7 +62,7 @@ class ListTicketParams:
     def string_filters(self, string_filters):
         r"""Sets the string_filters of this ListTicketParams.
 
-        字符串搜索条件
+        字符串搜索条件，可根据该条件搜索到具体的工单。
 
         :param string_filters: The string_filters of this ListTicketParams.
         :type string_filters: list[:class:`huaweicloudsdkcoc.v1.ObjectFilter`]

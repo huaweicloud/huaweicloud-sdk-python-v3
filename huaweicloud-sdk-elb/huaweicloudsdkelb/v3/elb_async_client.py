@@ -2823,6 +2823,9 @@ class ElbAsyncClient(Client):
         if 'protection_reason' in local_var_params:
             query_params.append(('protection_reason', local_var_params['protection_reason']))
             collection_formats['protection_reason'] = 'csv'
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+            collection_formats['enterprise_project_id'] = 'csv'
 
         header_params = {}
 
@@ -5211,6 +5214,86 @@ class ElbAsyncClient(Client):
             path_params['loadbalancer_id'] = local_var_params['loadbalancer_id']
 
         query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_load_balancer_ports_async(self, request):
+        r"""查询负载均衡器占用的port列表
+
+        查询负载均衡器内部转发占用的port列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowLoadBalancerPorts
+        :type request: :class:`huaweicloudsdkelb.v3.ShowLoadBalancerPortsRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.ShowLoadBalancerPortsResponse`
+        """
+        http_info = self._show_load_balancer_ports_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_load_balancer_ports_async_invoker(self, request):
+        http_info = self._show_load_balancer_ports_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_load_balancer_ports_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/elb/loadbalancers/{loadbalancer_id}/local-ports",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowLoadBalancerPortsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'loadbalancer_id' in local_var_params:
+            path_params['loadbalancer_id'] = local_var_params['loadbalancer_id']
+
+        query_params = []
+        if 'port_id' in local_var_params:
+            query_params.append(('port_id', local_var_params['port_id']))
+            collection_formats['port_id'] = 'multi'
+        if 'ip_address' in local_var_params:
+            query_params.append(('ip_address', local_var_params['ip_address']))
+            collection_formats['ip_address'] = 'multi'
+        if 'ipv6_address' in local_var_params:
+            query_params.append(('ipv6_address', local_var_params['ipv6_address']))
+            collection_formats['ipv6_address'] = 'multi'
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+            collection_formats['type'] = 'multi'
+        if 'virsubnet_id' in local_var_params:
+            query_params.append(('virsubnet_id', local_var_params['virsubnet_id']))
+            collection_formats['virsubnet_id'] = 'multi'
 
         header_params = {}
 

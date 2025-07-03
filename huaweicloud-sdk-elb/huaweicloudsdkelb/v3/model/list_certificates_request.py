@@ -31,7 +31,8 @@ class ListCertificatesRequest:
         'fingerprint': 'list[str]',
         'source': 'list[str]',
         'protection_status': 'list[str]',
-        'protection_reason': 'list[str]'
+        'protection_reason': 'list[str]',
+        'enterprise_project_id': 'list[str]'
     }
 
     attribute_map = {
@@ -49,10 +50,11 @@ class ListCertificatesRequest:
         'fingerprint': 'fingerprint',
         'source': 'source',
         'protection_status': 'protection_status',
-        'protection_reason': 'protection_reason'
+        'protection_reason': 'protection_reason',
+        'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, marker=None, limit=None, page_reverse=None, id=None, name=None, description=None, admin_state_up=None, domain=None, type=None, scm_certificate_id=None, common_name=None, fingerprint=None, source=None, protection_status=None, protection_reason=None):
+    def __init__(self, marker=None, limit=None, page_reverse=None, id=None, name=None, description=None, admin_state_up=None, domain=None, type=None, scm_certificate_id=None, common_name=None, fingerprint=None, source=None, protection_status=None, protection_reason=None, enterprise_project_id=None):
         r"""ListCertificatesRequest
 
         The model defined in huaweicloud sdk
@@ -87,6 +89,8 @@ class ListCertificatesRequest:
         :type protection_status: list[str]
         :param protection_reason: 设置修改保护的原因。  支持多值查询，查询条件格式：protection_reason&#x3D;xxx&amp;protection_reason&#x3D;xxx。
         :type protection_reason: list[str]
+        :param enterprise_project_id: 参数解释：所属的企业项目ID。 如果enterprise_project_id不传值，默认查询所有企业项目下的资源，鉴权按照细粒度权限鉴权，必须在用户组下分配elb:certificates:list权限。 如果enterprise_project_id传值，鉴权按照企业项目权限鉴权，分为传入具体eps_id和all_granted_eps两种场景，前者查询指定eps_id的eps下的资源，后者查询的是所有有list权限的eps下的资源。  支持多值查询，查询条件格式： *enterprise_project_id&#x3D;xxx&amp;enterprise_project_id&#x3D;xxx*。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
+        :type enterprise_project_id: list[str]
         """
         
         
@@ -106,6 +110,7 @@ class ListCertificatesRequest:
         self._source = None
         self._protection_status = None
         self._protection_reason = None
+        self._enterprise_project_id = None
         self.discriminator = None
 
         if marker is not None:
@@ -138,6 +143,8 @@ class ListCertificatesRequest:
             self.protection_status = protection_status
         if protection_reason is not None:
             self.protection_reason = protection_reason
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
 
     @property
     def marker(self):
@@ -468,6 +475,28 @@ class ListCertificatesRequest:
         :type protection_reason: list[str]
         """
         self._protection_reason = protection_reason
+
+    @property
+    def enterprise_project_id(self):
+        r"""Gets the enterprise_project_id of this ListCertificatesRequest.
+
+        参数解释：所属的企业项目ID。 如果enterprise_project_id不传值，默认查询所有企业项目下的资源，鉴权按照细粒度权限鉴权，必须在用户组下分配elb:certificates:list权限。 如果enterprise_project_id传值，鉴权按照企业项目权限鉴权，分为传入具体eps_id和all_granted_eps两种场景，前者查询指定eps_id的eps下的资源，后者查询的是所有有list权限的eps下的资源。  支持多值查询，查询条件格式： *enterprise_project_id=xxx&enterprise_project_id=xxx*。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
+
+        :return: The enterprise_project_id of this ListCertificatesRequest.
+        :rtype: list[str]
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        r"""Sets the enterprise_project_id of this ListCertificatesRequest.
+
+        参数解释：所属的企业项目ID。 如果enterprise_project_id不传值，默认查询所有企业项目下的资源，鉴权按照细粒度权限鉴权，必须在用户组下分配elb:certificates:list权限。 如果enterprise_project_id传值，鉴权按照企业项目权限鉴权，分为传入具体eps_id和all_granted_eps两种场景，前者查询指定eps_id的eps下的资源，后者查询的是所有有list权限的eps下的资源。  支持多值查询，查询条件格式： *enterprise_project_id=xxx&enterprise_project_id=xxx*。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
+
+        :param enterprise_project_id: The enterprise_project_id of this ListCertificatesRequest.
+        :type enterprise_project_id: list[str]
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -47,7 +47,7 @@ class ListRepositoryTagsRequest:
         :type namespace: str
         :param repository: 镜像仓库名称
         :type repository: str
-        :param limit: 返回条数。注意：offset和limit参数需要配套使用。
+        :param limit: 返回条数,默认返回100条，最多返回1000条数据。注意：offset和limit参数需要配套使用。
         :type limit: str
         :param offset: 起始索引。注意：offset和limit参数需要配套使用。
         :type offset: str
@@ -136,7 +136,7 @@ class ListRepositoryTagsRequest:
     def limit(self):
         r"""Gets the limit of this ListRepositoryTagsRequest.
 
-        返回条数。注意：offset和limit参数需要配套使用。
+        返回条数,默认返回100条，最多返回1000条数据。注意：offset和limit参数需要配套使用。
 
         :return: The limit of this ListRepositoryTagsRequest.
         :rtype: str
@@ -147,7 +147,7 @@ class ListRepositoryTagsRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListRepositoryTagsRequest.
 
-        返回条数。注意：offset和limit参数需要配套使用。
+        返回条数,默认返回100条，最多返回1000条数据。注意：offset和limit参数需要配套使用。
 
         :param limit: The limit of this ListRepositoryTagsRequest.
         :type limit: str

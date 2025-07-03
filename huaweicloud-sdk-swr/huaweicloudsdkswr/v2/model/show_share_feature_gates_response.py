@@ -25,7 +25,8 @@ class ShowShareFeatureGatesResponse(SdkResponse):
         'enable_image_sync': 'bool',
         'enable_cci_service': 'bool',
         'enable_image_label': 'bool',
-        'enable_pipeline': 'bool'
+        'enable_pipeline': 'bool',
+        'enable_list_v3': 'bool'
     }
 
     attribute_map = {
@@ -36,10 +37,11 @@ class ShowShareFeatureGatesResponse(SdkResponse):
         'enable_image_sync': 'enable_image_sync',
         'enable_cci_service': 'enable_cci_service',
         'enable_image_label': 'enable_image_label',
-        'enable_pipeline': 'enable_pipeline'
+        'enable_pipeline': 'enable_pipeline',
+        'enable_list_v3': 'enable_list_v3'
     }
 
-    def __init__(self, enable_experience=None, enable_hss_service=None, enable_image_scan=None, enable_sm3=None, enable_image_sync=None, enable_cci_service=None, enable_image_label=None, enable_pipeline=None):
+    def __init__(self, enable_experience=None, enable_hss_service=None, enable_image_scan=None, enable_sm3=None, enable_image_sync=None, enable_cci_service=None, enable_image_label=None, enable_pipeline=None, enable_list_v3=None):
         r"""ShowShareFeatureGatesResponse
 
         The model defined in huaweicloud sdk
@@ -60,6 +62,8 @@ class ShowShareFeatureGatesResponse(SdkResponse):
         :type enable_image_label: bool
         :param enable_pipeline: 是否支持流水线服务
         :type enable_pipeline: bool
+        :param enable_list_v3: 是否支持list v3接口
+        :type enable_list_v3: bool
         """
         
         super(ShowShareFeatureGatesResponse, self).__init__()
@@ -72,6 +76,7 @@ class ShowShareFeatureGatesResponse(SdkResponse):
         self._enable_cci_service = None
         self._enable_image_label = None
         self._enable_pipeline = None
+        self._enable_list_v3 = None
         self.discriminator = None
 
         if enable_experience is not None:
@@ -90,6 +95,8 @@ class ShowShareFeatureGatesResponse(SdkResponse):
             self.enable_image_label = enable_image_label
         if enable_pipeline is not None:
             self.enable_pipeline = enable_pipeline
+        if enable_list_v3 is not None:
+            self.enable_list_v3 = enable_list_v3
 
     @property
     def enable_experience(self):
@@ -266,6 +273,28 @@ class ShowShareFeatureGatesResponse(SdkResponse):
         :type enable_pipeline: bool
         """
         self._enable_pipeline = enable_pipeline
+
+    @property
+    def enable_list_v3(self):
+        r"""Gets the enable_list_v3 of this ShowShareFeatureGatesResponse.
+
+        是否支持list v3接口
+
+        :return: The enable_list_v3 of this ShowShareFeatureGatesResponse.
+        :rtype: bool
+        """
+        return self._enable_list_v3
+
+    @enable_list_v3.setter
+    def enable_list_v3(self, enable_list_v3):
+        r"""Sets the enable_list_v3 of this ShowShareFeatureGatesResponse.
+
+        是否支持list v3接口
+
+        :param enable_list_v3: The enable_list_v3 of this ShowShareFeatureGatesResponse.
+        :type enable_list_v3: bool
+        """
+        self._enable_list_v3 = enable_list_v3
 
     def to_dict(self):
         """Returns the model properties as a dict"""

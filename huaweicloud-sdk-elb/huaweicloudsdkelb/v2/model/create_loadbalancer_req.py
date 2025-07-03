@@ -26,7 +26,8 @@ class CreateLoadbalancerReq:
         'admin_state_up': 'bool',
         'enterprise_project_id': 'str',
         'protection_status': 'str',
-        'protection_reason': 'str'
+        'protection_reason': 'str',
+        'prepaid_options': 'PrepaidCreateOption'
     }
 
     attribute_map = {
@@ -39,10 +40,11 @@ class CreateLoadbalancerReq:
         'admin_state_up': 'admin_state_up',
         'enterprise_project_id': 'enterprise_project_id',
         'protection_status': 'protection_status',
-        'protection_reason': 'protection_reason'
+        'protection_reason': 'protection_reason',
+        'prepaid_options': 'prepaid_options'
     }
 
-    def __init__(self, tenant_id=None, name=None, description=None, vip_subnet_id=None, vip_address=None, provider=None, admin_state_up=None, enterprise_project_id=None, protection_status=None, protection_reason=None):
+    def __init__(self, tenant_id=None, name=None, description=None, vip_subnet_id=None, vip_address=None, provider=None, admin_state_up=None, enterprise_project_id=None, protection_status=None, protection_reason=None, prepaid_options=None):
         r"""CreateLoadbalancerReq
 
         The model defined in huaweicloud sdk
@@ -67,6 +69,8 @@ class CreateLoadbalancerReq:
         :type protection_status: str
         :param protection_reason: 设置保护的原因 &gt;仅当protection_status为consoleProtection时有效。
         :type protection_reason: str
+        :param prepaid_options: 
+        :type prepaid_options: :class:`huaweicloudsdkelb.v2.PrepaidCreateOption`
         """
         
         
@@ -81,6 +85,7 @@ class CreateLoadbalancerReq:
         self._enterprise_project_id = None
         self._protection_status = None
         self._protection_reason = None
+        self._prepaid_options = None
         self.discriminator = None
 
         if tenant_id is not None:
@@ -102,6 +107,8 @@ class CreateLoadbalancerReq:
             self.protection_status = protection_status
         if protection_reason is not None:
             self.protection_reason = protection_reason
+        if prepaid_options is not None:
+            self.prepaid_options = prepaid_options
 
     @property
     def tenant_id(self):
@@ -322,6 +329,24 @@ class CreateLoadbalancerReq:
         :type protection_reason: str
         """
         self._protection_reason = protection_reason
+
+    @property
+    def prepaid_options(self):
+        r"""Gets the prepaid_options of this CreateLoadbalancerReq.
+
+        :return: The prepaid_options of this CreateLoadbalancerReq.
+        :rtype: :class:`huaweicloudsdkelb.v2.PrepaidCreateOption`
+        """
+        return self._prepaid_options
+
+    @prepaid_options.setter
+    def prepaid_options(self, prepaid_options):
+        r"""Sets the prepaid_options of this CreateLoadbalancerReq.
+
+        :param prepaid_options: The prepaid_options of this CreateLoadbalancerReq.
+        :type prepaid_options: :class:`huaweicloudsdkelb.v2.PrepaidCreateOption`
+        """
+        self._prepaid_options = prepaid_options
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -67,7 +67,7 @@ class ListAlarmResponseAlarms:
         :type name: str
         :param description: 告警描述，长度0-256
         :type description: str
-        :param namespace: 查询服务的命名空间，各服务命名空间请参考[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)
+        :param namespace: 查询服务的命名空间，各服务命名空间请参考“[服务维度名称](ces_03_0059.xml)”
         :type namespace: str
         :param policies: 告警策略
         :type policies: list[:class:`huaweicloudsdkces.v2.Policy`]
@@ -223,7 +223,7 @@ class ListAlarmResponseAlarms:
     def namespace(self):
         r"""Gets the namespace of this ListAlarmResponseAlarms.
 
-        查询服务的命名空间，各服务命名空间请参考[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)
+        查询服务的命名空间，各服务命名空间请参考“[服务维度名称](ces_03_0059.xml)”
 
         :return: The namespace of this ListAlarmResponseAlarms.
         :rtype: str
@@ -234,7 +234,7 @@ class ListAlarmResponseAlarms:
     def namespace(self, namespace):
         r"""Sets the namespace of this ListAlarmResponseAlarms.
 
-        查询服务的命名空间，各服务命名空间请参考[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)
+        查询服务的命名空间，各服务命名空间请参考“[服务维度名称](ces_03_0059.xml)”
 
         :param namespace: The namespace of this ListAlarmResponseAlarms.
         :type namespace: str

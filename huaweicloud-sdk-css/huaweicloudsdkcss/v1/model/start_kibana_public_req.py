@@ -23,9 +23,9 @@ class StartKibanaPublicReq:
     }
 
     attribute_map = {
-        'eip_size': 'eipSize',
-        'elb_white_list': 'elbWhiteList',
-        'is_auto_pay': 'isAutoPay'
+        'eip_size': 'eip_size',
+        'elb_white_list': 'elb_white_list',
+        'is_auto_pay': 'is_auto_pay'
     }
 
     def __init__(self, eip_size=None, elb_white_list=None, is_auto_pay=None):

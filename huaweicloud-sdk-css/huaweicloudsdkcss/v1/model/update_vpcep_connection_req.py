@@ -23,7 +23,7 @@ class UpdateVpcepConnectionReq:
 
     attribute_map = {
         'action': 'action',
-        'endpoint_id_list': 'endpointIdList'
+        'endpoint_id_list': 'endpoint_id_list'
     }
 
     def __init__(self, action=None, endpoint_id_list=None):

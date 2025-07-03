@@ -21,7 +21,7 @@ class StartVpecpReq:
     }
 
     attribute_map = {
-        'endpoint_with_dns_name': 'endpointWithDnsName'
+        'endpoint_with_dns_name': 'endpoint_with_dns_name'
     }
 
     def __init__(self, endpoint_with_dns_name=None):

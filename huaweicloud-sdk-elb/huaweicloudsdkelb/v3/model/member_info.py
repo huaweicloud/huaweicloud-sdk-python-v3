@@ -97,9 +97,9 @@ class MemberInfo:
         :type device_owner: str
         :param device_id: 关联的ECS ID，为空表示后端服务器未关联到ECS。  不支持该字段，请勿使用。
         :type device_id: str
-        :param operating_status: 后端服务器的健康状态。当status非空时，以status字段中监听器粒度的健康检查状态优先。  取值： - ONLINE：后端服务器正常。 - NO_MONITOR：后端服务器所在的服务器组没有健康检查器。 - OFFLINE：后端服务器关联的ECS服务器不存在或已关机。
+        :param operating_status: 后端服务器的健康状态。当status非空时，以status字段中监听器粒度的健康检查状态优先。  取值： - INITIAL：初始化中，表示负载均衡实例配置了健康检查，但查不到数据。 - ONLINE：后端服务器正常。 - NO_MONITOR：后端服务器所在的服务器组没有健康检查器。 - OFFLINE：后端服务器关联的ECS服务器不存在或已关机。
         :type operating_status: str
-        :param status: 后端服务器监听器粒度的的健康状态。 若绑定的监听器在该字段中，则以该字段中监听器对应的operating_stauts为准。 若绑定的监听器不在该字段中，则以外层的operating_status为准。
+        :param status: 后端服务器监听器粒度的的健康状态。 若绑定的监听器在该字段中，则以该字段中监听器对应的operating_status为准。 若绑定的监听器不在该字段中，则以外层的operating_status为准。
         :type status: list[:class:`huaweicloudsdkelb.v3.MemberStatus`]
         :param loadbalancer_id: 所属负载均衡器ID。  不支持该字段，请勿使用。
         :type loadbalancer_id: str
@@ -467,7 +467,7 @@ class MemberInfo:
     def operating_status(self):
         r"""Gets the operating_status of this MemberInfo.
 
-        后端服务器的健康状态。当status非空时，以status字段中监听器粒度的健康检查状态优先。  取值： - ONLINE：后端服务器正常。 - NO_MONITOR：后端服务器所在的服务器组没有健康检查器。 - OFFLINE：后端服务器关联的ECS服务器不存在或已关机。
+        后端服务器的健康状态。当status非空时，以status字段中监听器粒度的健康检查状态优先。  取值： - INITIAL：初始化中，表示负载均衡实例配置了健康检查，但查不到数据。 - ONLINE：后端服务器正常。 - NO_MONITOR：后端服务器所在的服务器组没有健康检查器。 - OFFLINE：后端服务器关联的ECS服务器不存在或已关机。
 
         :return: The operating_status of this MemberInfo.
         :rtype: str
@@ -478,7 +478,7 @@ class MemberInfo:
     def operating_status(self, operating_status):
         r"""Sets the operating_status of this MemberInfo.
 
-        后端服务器的健康状态。当status非空时，以status字段中监听器粒度的健康检查状态优先。  取值： - ONLINE：后端服务器正常。 - NO_MONITOR：后端服务器所在的服务器组没有健康检查器。 - OFFLINE：后端服务器关联的ECS服务器不存在或已关机。
+        后端服务器的健康状态。当status非空时，以status字段中监听器粒度的健康检查状态优先。  取值： - INITIAL：初始化中，表示负载均衡实例配置了健康检查，但查不到数据。 - ONLINE：后端服务器正常。 - NO_MONITOR：后端服务器所在的服务器组没有健康检查器。 - OFFLINE：后端服务器关联的ECS服务器不存在或已关机。
 
         :param operating_status: The operating_status of this MemberInfo.
         :type operating_status: str
@@ -489,7 +489,7 @@ class MemberInfo:
     def status(self):
         r"""Gets the status of this MemberInfo.
 
-        后端服务器监听器粒度的的健康状态。 若绑定的监听器在该字段中，则以该字段中监听器对应的operating_stauts为准。 若绑定的监听器不在该字段中，则以外层的operating_status为准。
+        后端服务器监听器粒度的的健康状态。 若绑定的监听器在该字段中，则以该字段中监听器对应的operating_status为准。 若绑定的监听器不在该字段中，则以外层的operating_status为准。
 
         :return: The status of this MemberInfo.
         :rtype: list[:class:`huaweicloudsdkelb.v3.MemberStatus`]
@@ -500,7 +500,7 @@ class MemberInfo:
     def status(self, status):
         r"""Sets the status of this MemberInfo.
 
-        后端服务器监听器粒度的的健康状态。 若绑定的监听器在该字段中，则以该字段中监听器对应的operating_stauts为准。 若绑定的监听器不在该字段中，则以外层的operating_status为准。
+        后端服务器监听器粒度的的健康状态。 若绑定的监听器在该字段中，则以该字段中监听器对应的operating_status为准。 若绑定的监听器不在该字段中，则以外层的operating_status为准。
 
         :param status: The status of this MemberInfo.
         :type status: list[:class:`huaweicloudsdkelb.v3.MemberStatus`]

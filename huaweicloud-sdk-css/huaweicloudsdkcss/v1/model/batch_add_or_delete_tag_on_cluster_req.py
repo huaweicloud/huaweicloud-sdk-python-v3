@@ -18,17 +18,15 @@ class BatchAddOrDeleteTagOnClusterReq:
 
     openapi_types = {
         'action': 'str',
-        'tags': 'list[Tag]',
-        'sys_tags': 'list[SysTags]'
+        'tags': 'list[Tag]'
     }
 
     attribute_map = {
         'action': 'action',
-        'tags': 'tags',
-        'sys_tags': 'sysTags'
+        'tags': 'tags'
     }
 
-    def __init__(self, action=None, tags=None, sys_tags=None):
+    def __init__(self, action=None, tags=None):
         r"""BatchAddOrDeleteTagOnClusterReq
 
         The model defined in huaweicloud sdk
@@ -37,21 +35,16 @@ class BatchAddOrDeleteTagOnClusterReq:
         :type action: str
         :param tags: 标签列表。
         :type tags: list[:class:`huaweicloudsdkcss.v1.Tag`]
-        :param sys_tags: 系统标签列表。 - key固定为：_sys_enterprise_project_id。 - value是UUID或0,value为0表示默认企业项目。
-        :type sys_tags: list[:class:`huaweicloudsdkcss.v1.SysTags`]
         """
         
         
 
         self._action = None
         self._tags = None
-        self._sys_tags = None
         self.discriminator = None
 
         self.action = action
         self.tags = tags
-        if sys_tags is not None:
-            self.sys_tags = sys_tags
 
     @property
     def action(self):
@@ -96,28 +89,6 @@ class BatchAddOrDeleteTagOnClusterReq:
         :type tags: list[:class:`huaweicloudsdkcss.v1.Tag`]
         """
         self._tags = tags
-
-    @property
-    def sys_tags(self):
-        r"""Gets the sys_tags of this BatchAddOrDeleteTagOnClusterReq.
-
-        系统标签列表。 - key固定为：_sys_enterprise_project_id。 - value是UUID或0,value为0表示默认企业项目。
-
-        :return: The sys_tags of this BatchAddOrDeleteTagOnClusterReq.
-        :rtype: list[:class:`huaweicloudsdkcss.v1.SysTags`]
-        """
-        return self._sys_tags
-
-    @sys_tags.setter
-    def sys_tags(self, sys_tags):
-        r"""Sets the sys_tags of this BatchAddOrDeleteTagOnClusterReq.
-
-        系统标签列表。 - key固定为：_sys_enterprise_project_id。 - value是UUID或0,value为0表示默认企业项目。
-
-        :param sys_tags: The sys_tags of this BatchAddOrDeleteTagOnClusterReq.
-        :type sys_tags: list[:class:`huaweicloudsdkcss.v1.SysTags`]
-        """
-        self._sys_tags = sys_tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -21,7 +21,7 @@ class UpdatePublicKibanaWhitelistReq:
     }
 
     attribute_map = {
-        'white_list': 'whiteList'
+        'white_list': 'white_list'
     }
 
     def __init__(self, white_list=None):

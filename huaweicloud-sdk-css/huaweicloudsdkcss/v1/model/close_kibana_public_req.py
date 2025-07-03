@@ -22,8 +22,8 @@ class CloseKibanaPublicReq:
     }
 
     attribute_map = {
-        'eip_size': 'eipSize',
-        'elb_white_list': 'elbWhiteList'
+        'eip_size': 'eip_size',
+        'elb_white_list': 'elb_white_list'
     }
 
     def __init__(self, eip_size=None, elb_white_list=None):

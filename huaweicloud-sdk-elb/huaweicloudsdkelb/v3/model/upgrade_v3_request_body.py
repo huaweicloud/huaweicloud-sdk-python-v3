@@ -23,8 +23,7 @@ class UpgradeV3RequestBody:
         'availability_zone_list': 'list[str]',
         'ipv6_vip_virsubnet_id': 'str',
         'ipv6_vip_address': 'str',
-        'elb_virsubnet_ids': 'list[str]',
-        'prepaid_options': 'UpgradePrepaidOption'
+        'elb_virsubnet_ids': 'list[str]'
     }
 
     attribute_map = {
@@ -34,11 +33,10 @@ class UpgradeV3RequestBody:
         'availability_zone_list': 'availability_zone_list',
         'ipv6_vip_virsubnet_id': 'ipv6_vip_virsubnet_id',
         'ipv6_vip_address': 'ipv6_vip_address',
-        'elb_virsubnet_ids': 'elb_virsubnet_ids',
-        'prepaid_options': 'prepaid_options'
+        'elb_virsubnet_ids': 'elb_virsubnet_ids'
     }
 
-    def __init__(self, action=None, l4_flavor_id=None, l7_flavor_id=None, availability_zone_list=None, ipv6_vip_virsubnet_id=None, ipv6_vip_address=None, elb_virsubnet_ids=None, prepaid_options=None):
+    def __init__(self, action=None, l4_flavor_id=None, l7_flavor_id=None, availability_zone_list=None, ipv6_vip_virsubnet_id=None, ipv6_vip_address=None, elb_virsubnet_ids=None):
         r"""UpgradeV3RequestBody
 
         The model defined in huaweicloud sdk
@@ -57,8 +55,6 @@ class UpgradeV3RequestBody:
         :type ipv6_vip_address: str
         :param elb_virsubnet_ids: 下联面子网的网络ID列表。仅action为start时生效。 可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_network_id得到。  若不指定该字段，则选择vip_subnet_cidr_id子网对应的网络ID。  下联面子网必须属于该LB所在的VPC。
         :type elb_virsubnet_ids: list[str]
-        :param prepaid_options: 
-        :type prepaid_options: :class:`huaweicloudsdkelb.v3.UpgradePrepaidOption`
         """
         
         
@@ -70,7 +66,6 @@ class UpgradeV3RequestBody:
         self._ipv6_vip_virsubnet_id = None
         self._ipv6_vip_address = None
         self._elb_virsubnet_ids = None
-        self._prepaid_options = None
         self.discriminator = None
 
         self.action = action
@@ -86,8 +81,6 @@ class UpgradeV3RequestBody:
             self.ipv6_vip_address = ipv6_vip_address
         if elb_virsubnet_ids is not None:
             self.elb_virsubnet_ids = elb_virsubnet_ids
-        if prepaid_options is not None:
-            self.prepaid_options = prepaid_options
 
     @property
     def action(self):
@@ -242,24 +235,6 @@ class UpgradeV3RequestBody:
         :type elb_virsubnet_ids: list[str]
         """
         self._elb_virsubnet_ids = elb_virsubnet_ids
-
-    @property
-    def prepaid_options(self):
-        r"""Gets the prepaid_options of this UpgradeV3RequestBody.
-
-        :return: The prepaid_options of this UpgradeV3RequestBody.
-        :rtype: :class:`huaweicloudsdkelb.v3.UpgradePrepaidOption`
-        """
-        return self._prepaid_options
-
-    @prepaid_options.setter
-    def prepaid_options(self, prepaid_options):
-        r"""Sets the prepaid_options of this UpgradeV3RequestBody.
-
-        :param prepaid_options: The prepaid_options of this UpgradeV3RequestBody.
-        :type prepaid_options: :class:`huaweicloudsdkelb.v3.UpgradePrepaidOption`
-        """
-        self._prepaid_options = prepaid_options
 
     def to_dict(self):
         """Returns the model properties as a dict"""

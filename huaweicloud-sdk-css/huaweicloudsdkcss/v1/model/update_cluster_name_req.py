@@ -21,7 +21,7 @@ class UpdateClusterNameReq:
     }
 
     attribute_map = {
-        'display_name': 'displayName'
+        'display_name': 'display_name'
     }
 
     def __init__(self, display_name=None):

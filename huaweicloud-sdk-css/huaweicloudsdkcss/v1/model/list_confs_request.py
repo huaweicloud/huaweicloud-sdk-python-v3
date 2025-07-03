@@ -17,28 +17,42 @@ class ListConfsRequest:
     sensitive_list = []
 
     openapi_types = {
-        'cluster_id': 'str'
+        'cluster_id': 'str',
+        'start': 'str',
+        'limit': 'str'
     }
 
     attribute_map = {
-        'cluster_id': 'cluster_id'
+        'cluster_id': 'cluster_id',
+        'start': 'start',
+        'limit': 'limit'
     }
 
-    def __init__(self, cluster_id=None):
+    def __init__(self, cluster_id=None, start=None, limit=None):
         r"""ListConfsRequest
 
         The model defined in huaweicloud sdk
 
         :param cluster_id: 指定查询集群ID。
         :type cluster_id: str
+        :param start: 指定查询起始值，默认值为1。
+        :type start: str
+        :param limit: 指定查询个数，默认值为10。
+        :type limit: str
         """
         
         
 
         self._cluster_id = None
+        self._start = None
+        self._limit = None
         self.discriminator = None
 
         self.cluster_id = cluster_id
+        if start is not None:
+            self.start = start
+        if limit is not None:
+            self.limit = limit
 
     @property
     def cluster_id(self):
@@ -61,6 +75,50 @@ class ListConfsRequest:
         :type cluster_id: str
         """
         self._cluster_id = cluster_id
+
+    @property
+    def start(self):
+        r"""Gets the start of this ListConfsRequest.
+
+        指定查询起始值，默认值为1。
+
+        :return: The start of this ListConfsRequest.
+        :rtype: str
+        """
+        return self._start
+
+    @start.setter
+    def start(self, start):
+        r"""Sets the start of this ListConfsRequest.
+
+        指定查询起始值，默认值为1。
+
+        :param start: The start of this ListConfsRequest.
+        :type start: str
+        """
+        self._start = start
+
+    @property
+    def limit(self):
+        r"""Gets the limit of this ListConfsRequest.
+
+        指定查询个数，默认值为10。
+
+        :return: The limit of this ListConfsRequest.
+        :rtype: str
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        r"""Sets the limit of this ListConfsRequest.
+
+        指定查询个数，默认值为10。
+
+        :param limit: The limit of this ListConfsRequest.
+        :type limit: str
+        """
+        self._limit = limit
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -1,3 +1,421 @@
+# 3.1.155 2025-07-03
+
+### HuaweiCloud SDK AstroZero
+
+- _新增特性_
+  - 支持服务`AstroZero`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK CBH
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListInstances**
+    - 请求参数变更
+      - `* instance_id: number -> int64`
+  - **DeleteInstance**
+    - 请求参数变更
+      - `* instance_id: number -> int64`
+
+### HuaweiCloud SDK Cloudtest
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持接口`SetTaskResult`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK COC
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持以下接口：
+    - `CreateTicket`
+    - `CreateAttachment`
+    - `ListIncidents`
+    - `ListIncidentsHistories`
+    - `HandleIncident`
+    - `ShowIncidentTask`
+    - `ListIncidentSimpleTickets`
+    - `CreateExternalCocAttachment`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK CSS
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpdateOndemandClusterToPeriod**
+    - 请求参数变更
+      - `+ period_type`
+      - `+ period_num`
+      - `+ is_auto_renew`
+      - `+ is_auto_pay`
+      - `+ console_url`
+      - `- periodType`
+      - `- periodNum`
+      - `- isAutoRenew`
+      - `- isAutoPay`
+      - `- consoleURL`
+  - **UpdateClusterName**
+    - 请求参数变更
+      - `+ display_name`
+      - `- displayName`
+  - **UpdateFlavorByType**
+    - 请求参数变更
+      - `+ need_check_replica`
+      - `+ new_flavor_id`
+      - `+ is_auto_pay`
+      - `- needCheckReplica`
+      - `- newFlavorId`
+      - `- isAutoPay`
+  - **UpdateShrinkNodes**
+    - 请求参数变更
+      - `+ shrink_nodes`
+      - `- shrinkNodes`
+  - **ChangeMode**
+    - 请求参数变更
+      - `+ authority_enable`
+      - `+ admin_pwd`
+      - `+ https_enable`
+      - `- authorityEnable`
+      - `- adminPwd`
+      - `- httpsEnable`
+  - **ShowIkThesaurus**
+    - 响应参数变更
+      - `- updateTime`
+  - **CreateLoadIkThesaurus**
+    - 请求参数变更
+      - `+ bucket_name`
+      - `+ main_object`
+      - `+ stop_object`
+      - `+ synonym_object`
+      - `+ static_main_object`
+      - `+ static_stop_object`
+      - `+ extra_main_object`
+      - `+ extra_stop_object`
+      - `- bucketName`
+      - `- mainObject`
+      - `- stopObject`
+      - `- synonymObject`
+  - **StartKibanaPublic**
+    - 请求参数变更
+      - `+ eip_size`
+      - `+ elb_white_list`
+      - `+ is_auto_pay`
+      - `- eipSize`
+      - `- elbWhiteList`
+      - `- isAutoPay`
+  - **UpdateCloseKibana**
+    - 请求参数变更
+      - `+ eip_size`
+      - `+ elb_white_list`
+      - `- eipSize`
+      - `- elbWhiteList`
+  - **UpdateAlterKibana**
+    - 请求参数变更
+      - `+ band_width`
+      - `+ is_auto_pay`
+      - `- bandWidth`
+      - `- isAutoPay`
+  - **UpdatePublicKibanaWhitelist**
+    - 请求参数变更
+      - `+ white_list`
+      - `- whiteList`
+  - **StartPipeline**
+    - 请求参数变更
+      - `+ keep_alive`
+      - `- keepAlive`
+  - **StartLogs**
+    - 请求参数变更
+      - `+ log_base_path`
+      - `+ log_bucket`
+      - `- logBasePath`
+      - `- logBucket`
+  - **UpdatePublicBandWidth**
+    - 请求参数变更
+      - `+ band_width`
+      - `+ is_auto_pay`
+      - `- bandWidth`
+      - `- isAutoPay`
+  - **StartPublicWhitelist**
+    - 请求参数变更
+      - `+ white_list`
+      - `- whiteList`
+  - **UpdateSnapshotSetting**
+    - 请求参数变更
+      - `+ base_path`
+      - `- basePath`
+  - **RestoreSnapshot**
+    - 请求参数变更
+      - `+ target_cluster`
+      - `+ rename_pattern`
+      - `+ rename_replacement`
+      - `- targetCluster`
+      - `- renamePattern`
+      - `- renameReplacement`
+  - **CreateAutoCreatePolicy**
+    - 请求参数变更
+      - `+ delete_auto`
+      - `- deleteAuto`
+  - **StartVpecp**
+    - 请求参数变更
+      - `+ endpoint_with_dns_name`
+      - `- endpointWithDnsName`
+  - **UpdateVpcepWhitelist**
+    - 请求参数变更
+      - `+ vpc_permissions`
+      - `- vpcPermissions`
+  - **UpdateExtendInstanceStorage**
+    - 请求参数变更
+      - `+ is_auto_pay`
+      - `- isAutoPay`
+  - **UpdateBatchClustersTags**
+    - 请求参数变更
+      - `- sysTags`
+  - **ListImages**
+    - 请求参数变更
+      - `+ start`
+      - `+ limit`
+  - **CreateCnf**
+    - 请求参数变更
+      - `+ conf_content`
+      - `- confContent`
+      - `+ setting.batch_size`
+      - `+ setting.batch_delay_ms`
+      - `+ setting.queue_type`
+      - `+ setting.queue_check_point_writes`
+      - `+ setting.queue_max_bytes_mb`
+      - `- setting.batchSize`
+      - `- setting.batchDelayMs`
+      - `- setting.queueType`
+      - `- setting.queueCheckPointWrites`
+      - `- setting.queueMaxBytesMb`
+  - **UpdateCnf**
+    - 请求参数变更
+      - `+ conf_content`
+      - `- confContent`
+      - `+ setting.batch_size`
+      - `+ setting.batch_delay_ms`
+      - `+ setting.queue_type`
+      - `+ setting.queue_check_point_writes`
+      - `+ setting.queue_max_bytes_mb`
+      - `- setting.batchSize`
+      - `- setting.batchDelayMs`
+      - `- setting.queueType`
+      - `- setting.queueCheckPointWrites`
+      - `- setting.queueMaxBytesMb`
+  - **ListPipelines**
+    - 请求参数变更
+      - `+ start`
+      - `+ limit`
+  - **ListActions**
+    - 请求参数变更
+      - `+ start`
+      - `+ limit`
+  - **UpdateLogSetting**
+    - 请求参数变更
+      - `+ log_base_path`
+      - `+ log_bucket`
+      - `- logBasePath`
+      - `- logBucket`
+  - **ShowLogBackup**
+    - 请求参数变更
+      - `+ instance_name`
+      - `+ log_type`
+      - `- instanceName`
+      - `- logType`
+  - **UpdateVpcepConnection**
+    - 请求参数变更
+      - `+ endpoint_id_list`
+      - `- endpointIdList`
+  - **ListConfs**
+    - 请求参数变更
+      - `+ start`
+      - `+ limit`
+  - **CreateBindPublic**
+    - 请求参数变更
+      - `+ is_auto_pay`
+      - `- isAutoPay`
+
+### HuaweiCloud SDK DLI
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **RunAuthorizationAction**
+    - 请求参数变更
+      - `- grant_project_id`
+
+### HuaweiCloud SDK ECS
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 支持以下接口：
+    - `UpdateScheduledEvent`
+    - `AcceptScheduledEvent`
+    - `ListLaunchTemplateVersions`
+    - `DeleteLaunchTemplates`
+    - `ListTemplates`
+    - `NovaListServers`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK ELB
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateLoadbalancer**
+    - 请求参数变更
+      - `+ loadbalancer.prepaid_options`
+
+### HuaweiCloud SDK ELB
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持接口`ShowLoadBalancerPorts`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListCertificates**
+    - 请求参数变更
+      - `+ enterprise_project_id`
+
+### HuaweiCloud SDK FunctionGraph
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateFunction**
+    - 请求参数变更
+      - `+ domain_names`
+      - `+ tags`
+
+### HuaweiCloud SDK IEF
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持接口`DeletePod`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK Live
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持以下接口：
+    - `ListFlows`
+    - `CreateFlows`
+    - `DeleteFlow`
+    - `ShowFlowDetail`
+    - `ModifyFlowStart`
+    - `ModifyFlowStop`
+    - `ModifyFlowSources`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK Meeting
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持以下接口：
+    - `ShowMgmtSiteStatus`
+    - `AllowAudienceJoin`
+    - `BatchMoveToWaitingRoom`
+    - `PauseConference`
+    - `SetMmrRecord`
+    - `SetMmrLive`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK RDS
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持接口`CheckInstanceForUpgrade`、`ShowPrecheckResult`、`UpgradeLargeVersion`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK VPCEP
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListEndpointInfoDetails**
+    - 响应参数变更
+      - `+ policy_statement.Condition`
+  - **UpdateEndpointWhite**
+    - 响应参数变更
+      - `+ policy_statement.Condition`
+  - **UpdateEndpointPolicy**
+    - 请求参数变更
+      - `+ policy_statement.Condition`
+    - 响应参数变更
+      - `+ policy_statement.Condition`
+  - **DeleteEndpointPolicy**
+    - 响应参数变更
+      - `+ policy_statement.Condition`
+  - **CreateEndpoint**
+    - 请求参数变更
+      - `+ policy_statement.Condition`
+    - 响应参数变更
+      - `+ policy_statement.Condition`
+  - **ListEndpoints**
+    - 响应参数变更
+      - `+ endpoints.policy_statement.Condition`
+
 # 3.1.154 2025-06-26
 
 ### HuaweiCloud SDK BSSINTL

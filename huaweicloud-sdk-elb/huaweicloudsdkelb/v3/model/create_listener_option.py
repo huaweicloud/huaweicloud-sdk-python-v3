@@ -153,7 +153,7 @@ class CreateListenerOption:
         :type protection_reason: str
         :param gzip_enable: 参数解释：ELB是否开启gzip压缩。  [约束限制：仅HTTP/HTTPS类型监听器支持配置。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt) [约束限制：仅HTTP/HTTPS/QUIC类型监听器支持配置。](tag:hws,hws_hk,hws_test,hcs,hcs_sm,hcso,hk_vdf,srg,fcs,fcs_vm,mix,ocb,ctc,cmcc,ct,sbc,hws_ocb,hk_sbc)  取值范围：true，false  默认取值：false
         :type gzip_enable: bool
-        :param port_ranges: 参数解释：端口监听范围（闭区间)，最多指定10个端口组，每个组范围不可有重叠部分。  约束限制： - 仅当protocol_port为0或未传入protoco_port时可以传入该字段。 - 仅TCP, UDP，TLS监听支持该字段
+        :param port_ranges: 参数解释：端口监听范围（闭区间)，最多指定10个端口组，每个组范围不可有重叠部分。  约束限制： - 仅当protocol_port为0或未传入protocol_port时可以传入该字段。 - 仅TCP, UDP，TLS监听支持该字段
         :type port_ranges: list[:class:`huaweicloudsdkelb.v3.PortRange`]
         :param ssl_early_data_enable: 参数解释：监听器0-RTT能力开关。  约束限制：仅HTTPS类型监听器支持配置，需要依赖TLSv1.3安全策略协议。开启 ssl_early_data 后，有重放攻击的风险，请谨慎开启。  取值范围：true，false  默认取值：false
         :type ssl_early_data_enable: bool
@@ -900,7 +900,7 @@ class CreateListenerOption:
     def port_ranges(self):
         r"""Gets the port_ranges of this CreateListenerOption.
 
-        参数解释：端口监听范围（闭区间)，最多指定10个端口组，每个组范围不可有重叠部分。  约束限制： - 仅当protocol_port为0或未传入protoco_port时可以传入该字段。 - 仅TCP, UDP，TLS监听支持该字段
+        参数解释：端口监听范围（闭区间)，最多指定10个端口组，每个组范围不可有重叠部分。  约束限制： - 仅当protocol_port为0或未传入protocol_port时可以传入该字段。 - 仅TCP, UDP，TLS监听支持该字段
 
         :return: The port_ranges of this CreateListenerOption.
         :rtype: list[:class:`huaweicloudsdkelb.v3.PortRange`]
@@ -911,7 +911,7 @@ class CreateListenerOption:
     def port_ranges(self, port_ranges):
         r"""Sets the port_ranges of this CreateListenerOption.
 
-        参数解释：端口监听范围（闭区间)，最多指定10个端口组，每个组范围不可有重叠部分。  约束限制： - 仅当protocol_port为0或未传入protoco_port时可以传入该字段。 - 仅TCP, UDP，TLS监听支持该字段
+        参数解释：端口监听范围（闭区间)，最多指定10个端口组，每个组范围不可有重叠部分。  约束限制： - 仅当protocol_port为0或未传入protocol_port时可以传入该字段。 - 仅TCP, UDP，TLS监听支持该字段
 
         :param port_ranges: The port_ranges of this CreateListenerOption.
         :type port_ranges: list[:class:`huaweicloudsdkelb.v3.PortRange`]

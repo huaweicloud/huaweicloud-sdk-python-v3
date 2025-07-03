@@ -22,7 +22,7 @@ class StartPipelineReq:
     }
 
     attribute_map = {
-        'keep_alive': 'keepAlive',
+        'keep_alive': 'keep_alive',
         'names': 'names'
     }
 
@@ -31,7 +31,7 @@ class StartPipelineReq:
 
         The model defined in huaweicloud sdk
 
-        :param keep_alive: 是否保持常驻。   - true: 开启保持常驻。  - false: 关闭保持常驻。  开启“保持常驻”适用于需要长期运行的业务。开启“保持常驻”以后，将会在每个节点上面配置一个守护进程，当logstash服务出现故障的时候，会主动拉起并修复。“保持常驻”不适用于短期运行的业务，因为多次主动拉起logstash服务会导致数据迁移重复。
+        :param keep_alive: 是否保持常驻。 - true: 开启保持常驻。 - false: 关闭保持常驻。 开启“保持常驻”适用于需要长期运行的业务。开启“保持常驻”以后，将会在每个节点上面配置一个守护进程，当logstash服务出现故障的时候，会主动拉起并修复。“保持常驻”不适用于短期运行的业务，因为多次主动拉起logstash服务会导致数据迁移重复。
         :type keep_alive: bool
         :param names: 配置文件名称。
         :type names: list[str]
@@ -51,7 +51,7 @@ class StartPipelineReq:
     def keep_alive(self):
         r"""Gets the keep_alive of this StartPipelineReq.
 
-        是否保持常驻。   - true: 开启保持常驻。  - false: 关闭保持常驻。  开启“保持常驻”适用于需要长期运行的业务。开启“保持常驻”以后，将会在每个节点上面配置一个守护进程，当logstash服务出现故障的时候，会主动拉起并修复。“保持常驻”不适用于短期运行的业务，因为多次主动拉起logstash服务会导致数据迁移重复。
+        是否保持常驻。 - true: 开启保持常驻。 - false: 关闭保持常驻。 开启“保持常驻”适用于需要长期运行的业务。开启“保持常驻”以后，将会在每个节点上面配置一个守护进程，当logstash服务出现故障的时候，会主动拉起并修复。“保持常驻”不适用于短期运行的业务，因为多次主动拉起logstash服务会导致数据迁移重复。
 
         :return: The keep_alive of this StartPipelineReq.
         :rtype: bool
@@ -62,7 +62,7 @@ class StartPipelineReq:
     def keep_alive(self, keep_alive):
         r"""Sets the keep_alive of this StartPipelineReq.
 
-        是否保持常驻。   - true: 开启保持常驻。  - false: 关闭保持常驻。  开启“保持常驻”适用于需要长期运行的业务。开启“保持常驻”以后，将会在每个节点上面配置一个守护进程，当logstash服务出现故障的时候，会主动拉起并修复。“保持常驻”不适用于短期运行的业务，因为多次主动拉起logstash服务会导致数据迁移重复。
+        是否保持常驻。 - true: 开启保持常驻。 - false: 关闭保持常驻。 开启“保持常驻”适用于需要长期运行的业务。开启“保持常驻”以后，将会在每个节点上面配置一个守护进程，当logstash服务出现故障的时候，会主动拉起并修复。“保持常驻”不适用于短期运行的业务，因为多次主动拉起logstash服务会导致数据迁移重复。
 
         :param keep_alive: The keep_alive of this StartPipelineReq.
         :type keep_alive: bool

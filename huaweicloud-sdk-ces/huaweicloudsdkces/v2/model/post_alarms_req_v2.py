@@ -67,7 +67,7 @@ class PostAlarmsReqV2:
         :type name: str
         :param description: 告警描述，长度0-256
         :type description: str
-        :param namespace: 查询服务的命名空间，各服务命名空间请参考[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)
+        :param namespace: 查询服务的命名空间，各服务命名空间请参考“[服务维度名称](ces_03_0059.xml)”
         :type namespace: str
         :param resource_group_id: 资源分组ID，以rg开头，后跟22位由字母或数字组成的字符串
         :type resource_group_id: str
@@ -202,7 +202,7 @@ class PostAlarmsReqV2:
     def namespace(self):
         r"""Gets the namespace of this PostAlarmsReqV2.
 
-        查询服务的命名空间，各服务命名空间请参考[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)
+        查询服务的命名空间，各服务命名空间请参考“[服务维度名称](ces_03_0059.xml)”
 
         :return: The namespace of this PostAlarmsReqV2.
         :rtype: str
@@ -213,7 +213,7 @@ class PostAlarmsReqV2:
     def namespace(self, namespace):
         r"""Sets the namespace of this PostAlarmsReqV2.
 
-        查询服务的命名空间，各服务命名空间请参考[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)
+        查询服务的命名空间，各服务命名空间请参考“[服务维度名称](ces_03_0059.xml)”
 
         :param namespace: The namespace of this PostAlarmsReqV2.
         :type namespace: str

@@ -249,6 +249,7 @@ from huaweicloudsdkelb.v3.model.load_balancer_status_policy import LoadBalancerS
 from huaweicloudsdkelb.v3.model.load_balancer_status_pool import LoadBalancerStatusPool
 from huaweicloudsdkelb.v3.model.load_balancer_status_result import LoadBalancerStatusResult
 from huaweicloudsdkelb.v3.model.loadbalancer_feature import LoadbalancerFeature
+from huaweicloudsdkelb.v3.model.local_port import LocalPort
 from huaweicloudsdkelb.v3.model.logtank import Logtank
 from huaweicloudsdkelb.v3.model.main_job import MainJob
 from huaweicloudsdkelb.v3.model.master_slave_health_monitor import MasterSlaveHealthMonitor
@@ -317,6 +318,8 @@ from huaweicloudsdkelb.v3.model.show_l7_rule_request import ShowL7RuleRequest
 from huaweicloudsdkelb.v3.model.show_l7_rule_response import ShowL7RuleResponse
 from huaweicloudsdkelb.v3.model.show_listener_request import ShowListenerRequest
 from huaweicloudsdkelb.v3.model.show_listener_response import ShowListenerResponse
+from huaweicloudsdkelb.v3.model.show_load_balancer_ports_request import ShowLoadBalancerPortsRequest
+from huaweicloudsdkelb.v3.model.show_load_balancer_ports_response import ShowLoadBalancerPortsResponse
 from huaweicloudsdkelb.v3.model.show_load_balancer_request import ShowLoadBalancerRequest
 from huaweicloudsdkelb.v3.model.show_load_balancer_response import ShowLoadBalancerResponse
 from huaweicloudsdkelb.v3.model.show_load_balancer_status_request import ShowLoadBalancerStatusRequest
@@ -419,6 +422,5 @@ from huaweicloudsdkelb.v3.model.update_security_policy_response import UpdateSec
 from huaweicloudsdkelb.v3.model.update_traffic_limit_config import UpdateTrafficLimitConfig
 from huaweicloudsdkelb.v3.model.upgrade_loadbalancer_request import UpgradeLoadbalancerRequest
 from huaweicloudsdkelb.v3.model.upgrade_loadbalancer_response import UpgradeLoadbalancerResponse
-from huaweicloudsdkelb.v3.model.upgrade_prepaid_option import UpgradePrepaidOption
 from huaweicloudsdkelb.v3.model.upgrade_v3_request_body import UpgradeV3RequestBody
 

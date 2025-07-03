@@ -192,6 +192,7 @@ from huaweicloudsdkcloudtest.v1.model.error_detail_info import ErrorDetailInfo
 from huaweicloudsdkcloudtest.v1.model.error_info import ErrorInfo
 from huaweicloudsdkcloudtest.v1.model.execute_info_vo import ExecuteInfoVo
 from huaweicloudsdkcloudtest.v1.model.execute_summary_vo import ExecuteSummaryVo
+from huaweicloudsdkcloudtest.v1.model.execute_task_info import ExecuteTaskInfo
 from huaweicloudsdkcloudtest.v1.model.execute_task_vo import ExecuteTaskVo
 from huaweicloudsdkcloudtest.v1.model.export_factor_request import ExportFactorRequest
 from huaweicloudsdkcloudtest.v1.model.export_factor_response import ExportFactorResponse
@@ -422,6 +423,7 @@ from huaweicloudsdkcloudtest.v1.model.result_value_step_image_vo import ResultVa
 from huaweicloudsdkcloudtest.v1.model.result_value_string import ResultValueString
 from huaweicloudsdkcloudtest.v1.model.result_value_string_for_ok import ResultValueStringForOk
 from huaweicloudsdkcloudtest.v1.model.result_value_task_list_vo import ResultValueTaskListVo
+from huaweicloudsdkcloudtest.v1.model.result_value_task_result_vo import ResultValueTaskResultVo
 from huaweicloudsdkcloudtest.v1.model.result_value_test_case_comment_vo import ResultValueTestCaseCommentVo
 from huaweicloudsdkcloudtest.v1.model.result_value_test_case_detail_vo import ResultValueTestCaseDetailVo
 from huaweicloudsdkcloudtest.v1.model.result_value_test_case_vo import ResultValueTestCaseVo
@@ -444,6 +446,8 @@ from huaweicloudsdkcloudtest.v1.model.scene_page_param import ScenePageParam
 from huaweicloudsdkcloudtest.v1.model.search_request import SearchRequest
 from huaweicloudsdkcloudtest.v1.model.service_request_body import ServiceRequestBody
 from huaweicloudsdkcloudtest.v1.model.services_info import ServicesInfo
+from huaweicloudsdkcloudtest.v1.model.set_task_result_request import SetTaskResultRequest
+from huaweicloudsdkcloudtest.v1.model.set_task_result_response import SetTaskResultResponse
 from huaweicloudsdkcloudtest.v1.model.show_all_config_value_by_type_and_key_request import ShowAllConfigValueByTypeAndKeyRequest
 from huaweicloudsdkcloudtest.v1.model.show_all_config_value_by_type_and_key_response import ShowAllConfigValueByTypeAndKeyResponse
 from huaweicloudsdkcloudtest.v1.model.show_all_feature_children_request import ShowAllFeatureChildrenRequest

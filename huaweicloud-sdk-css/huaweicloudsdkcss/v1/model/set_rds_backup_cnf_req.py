@@ -31,7 +31,7 @@ class SetRDSBackupCnfReq:
         'period': 'period',
         'keepday': 'keepday',
         'enable': 'enable',
-        'delete_auto': 'deleteAuto'
+        'delete_auto': 'delete_auto'
     }
 
     def __init__(self, indices=None, prefix=None, period=None, keepday=None, enable=None, delete_auto=None):

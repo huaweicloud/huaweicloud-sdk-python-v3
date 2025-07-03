@@ -23,7 +23,6 @@ class ShowIkThesaurusResponse(SdkResponse):
         'main_obj': 'str',
         'stop_obj': 'str',
         'synonym_obj': 'str',
-        'update_time': 'str',
         'update_details': 'str',
         'cluster_id': 'str',
         'operate_status': 'str',
@@ -36,14 +35,13 @@ class ShowIkThesaurusResponse(SdkResponse):
         'main_obj': 'mainObj',
         'stop_obj': 'stopObj',
         'synonym_obj': 'synonymObj',
-        'update_time': 'updateTime',
         'update_details': 'updateDetails',
         'cluster_id': 'clusterId',
         'operate_status': 'operateStatus',
         'id': 'id'
     }
 
-    def __init__(self, status=None, bucket=None, main_obj=None, stop_obj=None, synonym_obj=None, update_time=None, update_details=None, cluster_id=None, operate_status=None, id=None):
+    def __init__(self, status=None, bucket=None, main_obj=None, stop_obj=None, synonym_obj=None, update_details=None, cluster_id=None, operate_status=None, id=None):
         r"""ShowIkThesaurusResponse
 
         The model defined in huaweicloud sdk
@@ -58,8 +56,6 @@ class ShowIkThesaurusResponse(SdkResponse):
         :type stop_obj: str
         :param synonym_obj: 同义词词库文件对象。
         :type synonym_obj: str
-        :param update_time: 词库最近更新时间。
-        :type update_time: str
         :param update_details: 更新详情。
         :type update_details: str
         :param cluster_id: 指定配置自定义词库的集群ID。
@@ -77,7 +73,6 @@ class ShowIkThesaurusResponse(SdkResponse):
         self._main_obj = None
         self._stop_obj = None
         self._synonym_obj = None
-        self._update_time = None
         self._update_details = None
         self._cluster_id = None
         self._operate_status = None
@@ -94,8 +89,6 @@ class ShowIkThesaurusResponse(SdkResponse):
             self.stop_obj = stop_obj
         if synonym_obj is not None:
             self.synonym_obj = synonym_obj
-        if update_time is not None:
-            self.update_time = update_time
         if update_details is not None:
             self.update_details = update_details
         if cluster_id is not None:
@@ -214,28 +207,6 @@ class ShowIkThesaurusResponse(SdkResponse):
         :type synonym_obj: str
         """
         self._synonym_obj = synonym_obj
-
-    @property
-    def update_time(self):
-        r"""Gets the update_time of this ShowIkThesaurusResponse.
-
-        词库最近更新时间。
-
-        :return: The update_time of this ShowIkThesaurusResponse.
-        :rtype: str
-        """
-        return self._update_time
-
-    @update_time.setter
-    def update_time(self, update_time):
-        r"""Sets the update_time of this ShowIkThesaurusResponse.
-
-        词库最近更新时间。
-
-        :param update_time: The update_time of this ShowIkThesaurusResponse.
-        :type update_time: str
-        """
-        self._update_time = update_time
 
     @property
     def update_details(self):

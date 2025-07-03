@@ -22,8 +22,8 @@ class UpdatePublicKibanaBandwidthReq:
     }
 
     attribute_map = {
-        'band_width': 'bandWidth',
-        'is_auto_pay': 'isAutoPay'
+        'band_width': 'band_width',
+        'is_auto_pay': 'is_auto_pay'
     }
 
     def __init__(self, band_width=None, is_auto_pay=None):

@@ -22,8 +22,8 @@ class StartKibanaPublicReqElbWhitelist:
     }
 
     attribute_map = {
-        'enable_white_list': 'enableWhiteList',
-        'white_list': 'whiteList'
+        'enable_white_list': 'enable_white_list',
+        'white_list': 'white_list'
     }
 
     def __init__(self, enable_white_list=None, white_list=None):

@@ -33,6 +33,72 @@ class EcsClient(Client):
 
         return client_builder
 
+    def accept_scheduled_event(self, request):
+        r"""接受并授权执行计划事件操作
+
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for AcceptScheduledEvent
+        :type request: :class:`huaweicloudsdkecs.v2.AcceptScheduledEventRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.AcceptScheduledEventResponse`
+        """
+        http_info = self._accept_scheduled_event_http_info(request)
+        return self._call_api(**http_info)
+
+    def accept_scheduled_event_invoker(self, request):
+        http_info = self._accept_scheduled_event_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _accept_scheduled_event_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instance-scheduled-events/{id}/actions/accept",
+            "request_type": request.__class__.__name__,
+            "response_type": "AcceptScheduledEventResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def add_server_group_member(self, request):
         r"""添加云服务器组成员
 
@@ -1480,6 +1546,71 @@ class EcsClient(Client):
 
         return http_info
 
+    def delete_launch_templates(self, request):
+        r"""删除模板
+
+        删除启动模板。删除一个启动模板。并同时删除模板下所有的版本。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteLaunchTemplates
+        :type request: :class:`huaweicloudsdkecs.v2.DeleteLaunchTemplatesRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.DeleteLaunchTemplatesResponse`
+        """
+        http_info = self._delete_launch_templates_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_launch_templates_invoker(self, request):
+        http_info = self._delete_launch_templates_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_launch_templates_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/launch-templates/{launch_template_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteLaunchTemplatesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'launch_template_id' in local_var_params:
+            path_params['launch_template_id'] = local_var_params['launch_template_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_recycle_bin_server(self, request):
         r"""删除回收站中虚拟机
 
@@ -2254,6 +2385,82 @@ class EcsClient(Client):
             body = request.get_file_stream()
 
         response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_launch_template_versions(self, request):
+        r"""查询模板版本列表
+
+        根据用户请求条件从数据库筛选、查询启动模板的版本相关信息，支持按照image_id和flavor_id进行过滤。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListLaunchTemplateVersions
+        :type request: :class:`huaweicloudsdkecs.v2.ListLaunchTemplateVersionsRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.ListLaunchTemplateVersionsResponse`
+        """
+        http_info = self._list_launch_template_versions_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_launch_template_versions_invoker(self, request):
+        http_info = self._list_launch_template_versions_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_launch_template_versions_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/launch-template-versions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListLaunchTemplateVersionsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'launch_template_id' in local_var_params:
+            query_params.append(('launch_template_id', local_var_params['launch_template_id']))
+        if 'image_id' in local_var_params:
+            query_params.append(('image_id', local_var_params['image_id']))
+        if 'flavor_id' in local_var_params:
+            query_params.append(('flavor_id', local_var_params['flavor_id']))
+        if 'version' in local_var_params:
+            query_params.append(('version', local_var_params['version']))
+            collection_formats['version'] = 'csv'
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -3065,6 +3272,79 @@ class EcsClient(Client):
 
         return http_info
 
+    def list_templates(self, request):
+        r"""查询模板列表
+
+        根据用户请求条件从数据库筛选、查询启动模板相关信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListTemplates
+        :type request: :class:`huaweicloudsdkecs.v2.ListTemplatesRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.ListTemplatesResponse`
+        """
+        http_info = self._list_templates_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_templates_invoker(self, request):
+        http_info = self._list_templates_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_templates_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/launch-templates",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTemplatesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'launch_template_id' in local_var_params:
+            query_params.append(('launch_template_id', local_var_params['launch_template_id']))
+            collection_formats['launch_template_id'] = 'csv'
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+            collection_formats['name'] = 'csv'
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def migrate_server(self, request):
         r"""冷迁移云服务器
 
@@ -3781,6 +4061,97 @@ class EcsClient(Client):
         query_params = []
 
         header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def nova_list_servers(self, request):
+        r"""查询云服务器列表
+
+        查询云服务器信息列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for NovaListServers
+        :type request: :class:`huaweicloudsdkecs.v2.NovaListServersRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.NovaListServersResponse`
+        """
+        http_info = self._nova_list_servers_http_info(request)
+        return self._call_api(**http_info)
+
+    def nova_list_servers_invoker(self, request):
+        http_info = self._nova_list_servers_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _nova_list_servers_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2.1/{project_id}/servers",
+            "request_type": request.__class__.__name__,
+            "response_type": "NovaListServersResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'changes_since' in local_var_params:
+            query_params.append(('changes-since', local_var_params['changes_since']))
+        if 'flavor' in local_var_params:
+            query_params.append(('flavor', local_var_params['flavor']))
+        if 'host' in local_var_params:
+            query_params.append(('host', local_var_params['host']))
+        if 'image' in local_var_params:
+            query_params.append(('image', local_var_params['image']))
+        if 'ip' in local_var_params:
+            query_params.append(('ip', local_var_params['ip']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'not_tags' in local_var_params:
+            query_params.append(('not-tags', local_var_params['not_tags']))
+        if 'reservation_id' in local_var_params:
+            query_params.append(('reservation_id', local_var_params['reservation_id']))
+        if 'sort_key' in local_var_params:
+            query_params.append(('sort_key', local_var_params['sort_key']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'tags' in local_var_params:
+            query_params.append(('tags', local_var_params['tags']))
+
+        header_params = {}
+        if 'open_stack_api_version' in local_var_params:
+            header_params['OpenStack-API-Version'] = local_var_params['open_stack_api_version']
 
         form_params = {}
 
@@ -4646,6 +5017,71 @@ class EcsClient(Client):
 
         return http_info
 
+    def show_metadata_options(self, request):
+        r"""查询云服务器元数据配置
+
+        查询云服务器元数据配置，通过本接口，您可以查询指定云服务器的元数据配置。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowMetadataOptions
+        :type request: :class:`huaweicloudsdkecs.v2.ShowMetadataOptionsRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.ShowMetadataOptionsResponse`
+        """
+        http_info = self._show_metadata_options_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_metadata_options_invoker(self, request):
+        http_info = self._show_metadata_options_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_metadata_options_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cloudservers/{server_id}/metadata-options",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowMetadataOptionsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'server_id' in local_var_params:
+            path_params['server_id'] = local_var_params['server_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_recycle_bin(self, request):
         r"""查询回收站配置
 
@@ -5038,71 +5474,6 @@ class EcsClient(Client):
 
         return http_info
 
-    def show_server_metadata_options(self, request):
-        r"""查询云服务器元数据配置
-
-        查询云服务器元数据配置，通过本接口，您可以查询指定云服务器的元数据配置。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for ShowServerMetadataOptions
-        :type request: :class:`huaweicloudsdkecs.v2.ShowServerMetadataOptionsRequest`
-        :rtype: :class:`huaweicloudsdkecs.v2.ShowServerMetadataOptionsResponse`
-        """
-        http_info = self._show_server_metadata_options_http_info(request)
-        return self._call_api(**http_info)
-
-    def show_server_metadata_options_invoker(self, request):
-        http_info = self._show_server_metadata_options_http_info(request)
-        return SyncInvoker(self, http_info)
-
-    @classmethod
-    def _show_server_metadata_options_http_info(cls, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v1/{project_id}/cloudservers/{server_id}/metadata-options",
-            "request_type": request.__class__.__name__,
-            "response_type": "ShowServerMetadataOptionsResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'server_id' in local_var_params:
-            path_params['server_id'] = local_var_params['server_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
     def show_server_password(self, request):
         r"""云服务器获取密码(企业项目)
 
@@ -5302,6 +5673,73 @@ class EcsClient(Client):
 
         return http_info
 
+    def update_metadata_options(self, request):
+        r"""更新云服务器元数据配置
+
+        更新云服务器元数据配置，通过本接口，您可以选择启用或关闭IMDS服务，也可以选择IMDS服务的版本。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateMetadataOptions
+        :type request: :class:`huaweicloudsdkecs.v2.UpdateMetadataOptionsRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.UpdateMetadataOptionsResponse`
+        """
+        http_info = self._update_metadata_options_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_metadata_options_invoker(self, request):
+        http_info = self._update_metadata_options_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_metadata_options_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/cloudservers/{server_id}/metadata-options",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateMetadataOptionsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'server_id' in local_var_params:
+            path_params['server_id'] = local_var_params['server_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def update_recycle_bin(self, request):
         r"""更新回收站配置
 
@@ -5415,6 +5853,72 @@ class EcsClient(Client):
             body = request.get_file_stream()
 
         response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_scheduled_event(self, request):
+        r"""更新计划事件
+
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateScheduledEvent
+        :type request: :class:`huaweicloudsdkecs.v2.UpdateScheduledEventRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.UpdateScheduledEventResponse`
+        """
+        http_info = self._update_scheduled_event_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_scheduled_event_invoker(self, request):
+        http_info = self._update_scheduled_event_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_scheduled_event_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instance-scheduled-events/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateScheduledEventResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
@@ -5737,73 +6241,6 @@ class EcsClient(Client):
             "resource_path": "/v1/{project_id}/cloudservers/{server_id}/metadata",
             "request_type": request.__class__.__name__,
             "response_type": "UpdateServerMetadataResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'server_id' in local_var_params:
-            path_params['server_id'] = local_var_params['server_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def update_server_metadata_options(self, request):
-        r"""更新云服务器元数据配置
-
-        更新云服务器元数据配置，通过本接口，您可以选择启用或关闭IMDS服务，也可以选择IMDS服务的版本。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for UpdateServerMetadataOptions
-        :type request: :class:`huaweicloudsdkecs.v2.UpdateServerMetadataOptionsRequest`
-        :rtype: :class:`huaweicloudsdkecs.v2.UpdateServerMetadataOptionsResponse`
-        """
-        http_info = self._update_server_metadata_options_http_info(request)
-        return self._call_api(**http_info)
-
-    def update_server_metadata_options_invoker(self, request):
-        http_info = self._update_server_metadata_options_http_info(request)
-        return SyncInvoker(self, http_info)
-
-    @classmethod
-    def _update_server_metadata_options_http_info(cls, request):
-        http_info = {
-            "method": "PUT",
-            "resource_path": "/v1/{project_id}/cloudservers/{server_id}/metadata-options",
-            "request_type": request.__class__.__name__,
-            "response_type": "UpdateServerMetadataOptionsResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}

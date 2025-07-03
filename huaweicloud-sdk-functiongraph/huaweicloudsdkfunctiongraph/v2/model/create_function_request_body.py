@@ -51,7 +51,9 @@ class CreateFunctionRequestBody:
         'enable_lts_log': 'bool',
         'lts_custom_tag': 'dict(str, str)',
         'user_data_encrypt_kms_key_id': 'str',
-        'code_encrypt_kms_key_id': 'str'
+        'code_encrypt_kms_key_id': 'str',
+        'domain_names': 'str',
+        'tags': 'str'
     }
 
     attribute_map = {
@@ -89,10 +91,12 @@ class CreateFunctionRequestBody:
         'enable_lts_log': 'enable_lts_log',
         'lts_custom_tag': 'lts_custom_tag',
         'user_data_encrypt_kms_key_id': 'user_data_encrypt_kms_key_id',
-        'code_encrypt_kms_key_id': 'code_encrypt_kms_key_id'
+        'code_encrypt_kms_key_id': 'code_encrypt_kms_key_id',
+        'domain_names': 'domain_names',
+        'tags': 'tags'
     }
 
-    def __init__(self, func_name=None, package=None, runtime=None, timeout=None, handler=None, depend_version_list=None, func_vpc=None, memory_size=None, gpu_memory=None, gpu_type=None, code_type=None, code_url=None, code_filename=None, custom_image=None, user_data=None, encrypted_user_data=None, xrole=None, app_xrole=None, description=None, func_code=None, mount_config=None, initializer_handler=None, initializer_timeout=None, pre_stop_handler=None, pre_stop_timeout=None, enterprise_project_id=None, type=None, log_config=None, network_controller=None, is_stateful_function=None, enable_dynamic_memory=None, enable_lts_log=None, lts_custom_tag=None, user_data_encrypt_kms_key_id=None, code_encrypt_kms_key_id=None):
+    def __init__(self, func_name=None, package=None, runtime=None, timeout=None, handler=None, depend_version_list=None, func_vpc=None, memory_size=None, gpu_memory=None, gpu_type=None, code_type=None, code_url=None, code_filename=None, custom_image=None, user_data=None, encrypted_user_data=None, xrole=None, app_xrole=None, description=None, func_code=None, mount_config=None, initializer_handler=None, initializer_timeout=None, pre_stop_handler=None, pre_stop_timeout=None, enterprise_project_id=None, type=None, log_config=None, network_controller=None, is_stateful_function=None, enable_dynamic_memory=None, enable_lts_log=None, lts_custom_tag=None, user_data_encrypt_kms_key_id=None, code_encrypt_kms_key_id=None, domain_names=None, tags=None):
         r"""CreateFunctionRequestBody
 
         The model defined in huaweicloud sdk
@@ -167,6 +171,10 @@ class CreateFunctionRequestBody:
         :type user_data_encrypt_kms_key_id: str
         :param code_encrypt_kms_key_id: 用于用户代码加密的kms主秘钥ID。
         :type code_encrypt_kms_key_id: str
+        :param domain_names: vpc中配置的内网域名。在函数配置调用DNS服务的接口解析内网域名时，则函数必须具备读取DNS资源权限的委托。
+        :type domain_names: str
+        :param tags: 函数标签。
+        :type tags: str
         """
         
         
@@ -206,6 +214,8 @@ class CreateFunctionRequestBody:
         self._lts_custom_tag = None
         self._user_data_encrypt_kms_key_id = None
         self._code_encrypt_kms_key_id = None
+        self._domain_names = None
+        self._tags = None
         self.discriminator = None
 
         self.func_name = func_name
@@ -272,6 +282,10 @@ class CreateFunctionRequestBody:
             self.user_data_encrypt_kms_key_id = user_data_encrypt_kms_key_id
         if code_encrypt_kms_key_id is not None:
             self.code_encrypt_kms_key_id = code_encrypt_kms_key_id
+        if domain_names is not None:
+            self.domain_names = domain_names
+        if tags is not None:
+            self.tags = tags
 
     @property
     def func_name(self):
@@ -1018,6 +1032,50 @@ class CreateFunctionRequestBody:
         :type code_encrypt_kms_key_id: str
         """
         self._code_encrypt_kms_key_id = code_encrypt_kms_key_id
+
+    @property
+    def domain_names(self):
+        r"""Gets the domain_names of this CreateFunctionRequestBody.
+
+        vpc中配置的内网域名。在函数配置调用DNS服务的接口解析内网域名时，则函数必须具备读取DNS资源权限的委托。
+
+        :return: The domain_names of this CreateFunctionRequestBody.
+        :rtype: str
+        """
+        return self._domain_names
+
+    @domain_names.setter
+    def domain_names(self, domain_names):
+        r"""Sets the domain_names of this CreateFunctionRequestBody.
+
+        vpc中配置的内网域名。在函数配置调用DNS服务的接口解析内网域名时，则函数必须具备读取DNS资源权限的委托。
+
+        :param domain_names: The domain_names of this CreateFunctionRequestBody.
+        :type domain_names: str
+        """
+        self._domain_names = domain_names
+
+    @property
+    def tags(self):
+        r"""Gets the tags of this CreateFunctionRequestBody.
+
+        函数标签。
+
+        :return: The tags of this CreateFunctionRequestBody.
+        :rtype: str
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        r"""Sets the tags of this CreateFunctionRequestBody.
+
+        函数标签。
+
+        :param tags: The tags of this CreateFunctionRequestBody.
+        :type tags: str
+        """
+        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

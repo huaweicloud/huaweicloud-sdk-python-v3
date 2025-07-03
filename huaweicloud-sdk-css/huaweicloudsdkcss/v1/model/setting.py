@@ -27,11 +27,11 @@ class Setting:
 
     attribute_map = {
         'workers': 'workers',
-        'batch_size': 'batchSize',
-        'batch_delay_ms': 'batchDelayMs',
-        'queue_type': 'queueType',
-        'queue_check_point_writes': 'queueCheckPointWrites',
-        'queue_max_bytes_mb': 'queueMaxBytesMb'
+        'batch_size': 'batch_size',
+        'batch_delay_ms': 'batch_delay_ms',
+        'queue_type': 'queue_type',
+        'queue_check_point_writes': 'queue_check_point_writes',
+        'queue_max_bytes_mb': 'queue_max_bytes_mb'
     }
 
     def __init__(self, workers=None, batch_size=None, batch_delay_ms=None, queue_type=None, queue_check_point_writes=None, queue_max_bytes_mb=None):

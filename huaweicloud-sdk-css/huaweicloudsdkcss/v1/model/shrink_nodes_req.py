@@ -23,7 +23,7 @@ class ShrinkNodesReq:
 
     attribute_map = {
         'migrate_data': 'migrate_data',
-        'shrink_nodes': 'shrinkNodes'
+        'shrink_nodes': 'shrink_nodes'
     }
 
     def __init__(self, migrate_data=None, shrink_nodes=None):

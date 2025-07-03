@@ -49,7 +49,7 @@ class ListReposDetailsRequest:
         :type name: str
         :param category: 镜像仓库分类，可设置为app_server, linux, framework_app, database, lang, other, windows, arm。注意：和filter最好分开使用，如果同时使用，此过滤参数将失效，以filter为准。
         :type category: str
-        :param limit: 返回条数。注意：offset和limit参数需要配套使用。
+        :param limit: 返回条数，默认情况下返回100条记录，最多返回1000条记录。注意：offset和limit参数需要配套使用。
         :type limit: str
         :param offset: 起始索引。注意：offset和limit参数需要配套使用。
         :type offset: str
@@ -160,7 +160,7 @@ class ListReposDetailsRequest:
     def limit(self):
         r"""Gets the limit of this ListReposDetailsRequest.
 
-        返回条数。注意：offset和limit参数需要配套使用。
+        返回条数，默认情况下返回100条记录，最多返回1000条记录。注意：offset和limit参数需要配套使用。
 
         :return: The limit of this ListReposDetailsRequest.
         :rtype: str
@@ -171,7 +171,7 @@ class ListReposDetailsRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListReposDetailsRequest.
 
-        返回条数。注意：offset和limit参数需要配套使用。
+        返回条数，默认情况下返回100条记录，最多返回1000条记录。注意：offset和limit参数需要配套使用。
 
         :param limit: The limit of this ListReposDetailsRequest.
         :type limit: str

@@ -59,33 +59,33 @@ class QueryRequestStaticsVo:
 
         :param character_set: 
         :type character_set: :class:`huaweicloudsdkidmeclassicapi.v1.CharacterSetEnum`
-        :param conditions: **参数解释：**  查询条件。  此参数已废弃，不建议继续使用，建议使用替代参数filter。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param conditions: **参数解释：**  查询条件。  此参数已废弃，不建议继续使用，建议使用替代参数filter。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
         :type conditions: list[:class:`huaweicloudsdkidmeclassicapi.v1.QueryCondition`]
-        :param decrypt: **参数解释：**  是否加密。  **约束限制：**  不涉及。  **取值范围：**  - true：加密。 - false：不加密。  **默认取值：**  false。 
+        :param decrypt: **参数解释：**  是否加密。  **约束限制：**  不涉及。  **取值范围：**  - true：加密。 - false：不加密。  **默认取值：**  false。
         :type decrypt: bool
-        :param entity_type: **参数解释：**  实体类型。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param entity_type: **参数解释：**  实体类型。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
         :type entity_type: str
         :param filter: 
         :type filter: :class:`huaweicloudsdkidmeclassicapi.v1.QueryCondition`
-        :param funcs: **参数解释：**  指定简单函数信息。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param funcs: **参数解释：**  指定简单函数信息。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
         :type funcs: list[:class:`huaweicloudsdkidmeclassicapi.v1.FuncInfo`]
-        :param group_by: **参数解释：**  分组属性名称。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param group_by: **参数解释：**  分组属性名称。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
         :type group_by: str
-        :param is_need_total: **参数解释：**  是否需要查询总记录数。  **约束限制：**  不涉及。  **取值范围：**  - true：需要。 - false：不需要。  **默认取值：**  false。 
+        :param is_need_total: **参数解释：**  是否需要查询总记录数。  **约束限制：**  不涉及。  **取值范围：**  - true：需要。 - false：不需要。  **默认取值：**  false。
         :type is_need_total: bool
-        :param is_present_all: **参数解释：**  是否需要展示所有参考对象信息。  **约束限制：**  不涉及。  **取值范围：**  - true：需要。 - false：不需要。  **默认取值：**  不涉及。 
+        :param is_present_all: **参数解释：**  是否需要展示所有参考对象信息。  **约束限制：**  不涉及。  **取值范围：**  - true：需要。 - false：不需要。  **默认取值：**  不涉及。
         :type is_present_all: bool
-        :param need_present_detail: **参数解释：**  需要展示详细信息的参考对象。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param need_present_detail: **参数解释：**  需要展示详细信息的参考对象。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
         :type need_present_detail: list[str]
-        :param order_by: **参数解释：**  按某个字段进行排序。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param order_by: **参数解释：**  按某个字段进行排序。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
         :type order_by: str
-        :param order_by_table_alias: **参数解释：**  排序字段的表别名。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param order_by_table_alias: **参数解释：**  排序字段的表别名。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
         :type order_by_table_alias: str
-        :param public_data: **参数解释：**  多租查询参数。  **约束限制：**  不涉及。  **取值范围：**  - EXCLUDE_PUBLIC_DATA：不包括公共数据。 - INCLUDE_PUBLIC_DATA：包括公共数据。 - ONLY_NEED_PUBLIC_DATA：只有公共数据。  **默认取值：**  不涉及。 
+        :param public_data: **参数解释：**  多租查询参数。  **约束限制：**  不涉及。  **取值范围：**  - EXCLUDE_PUBLIC_DATA：不包括公共数据。 - INCLUDE_PUBLIC_DATA：包括公共数据。 - ONLY_NEED_PUBLIC_DATA：只有公共数据。  **默认取值：**  不涉及。
         :type public_data: str
-        :param sort: **参数解释：**  排序方向。  **约束限制：**  不涉及。  **取值范围：**  - ASC：表示升序。 - DESC：表示降序。  **默认取值：**  ASC。 
+        :param sort: **参数解释：**  排序方向。  **约束限制：**  不涉及。  **取值范围：**  - ASC：表示升序。 - DESC：表示降序。  **默认取值：**  ASC。
         :type sort: str
-        :param sorts: **参数解释：**  排序。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param sorts: **参数解释：**  排序。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
         :type sorts: list[:class:`huaweicloudsdkidmeclassicapi.v1.SortInfoVo`]
         """
         
@@ -160,7 +160,7 @@ class QueryRequestStaticsVo:
     def conditions(self):
         r"""Gets the conditions of this QueryRequestStaticsVo.
 
-        **参数解释：**  查询条件。  此参数已废弃，不建议继续使用，建议使用替代参数filter。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  查询条件。  此参数已废弃，不建议继续使用，建议使用替代参数filter。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :return: The conditions of this QueryRequestStaticsVo.
         :rtype: list[:class:`huaweicloudsdkidmeclassicapi.v1.QueryCondition`]
@@ -171,7 +171,7 @@ class QueryRequestStaticsVo:
     def conditions(self, conditions):
         r"""Sets the conditions of this QueryRequestStaticsVo.
 
-        **参数解释：**  查询条件。  此参数已废弃，不建议继续使用，建议使用替代参数filter。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  查询条件。  此参数已废弃，不建议继续使用，建议使用替代参数filter。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :param conditions: The conditions of this QueryRequestStaticsVo.
         :type conditions: list[:class:`huaweicloudsdkidmeclassicapi.v1.QueryCondition`]
@@ -182,7 +182,7 @@ class QueryRequestStaticsVo:
     def decrypt(self):
         r"""Gets the decrypt of this QueryRequestStaticsVo.
 
-        **参数解释：**  是否加密。  **约束限制：**  不涉及。  **取值范围：**  - true：加密。 - false：不加密。  **默认取值：**  false。 
+        **参数解释：**  是否加密。  **约束限制：**  不涉及。  **取值范围：**  - true：加密。 - false：不加密。  **默认取值：**  false。
 
         :return: The decrypt of this QueryRequestStaticsVo.
         :rtype: bool
@@ -193,7 +193,7 @@ class QueryRequestStaticsVo:
     def decrypt(self, decrypt):
         r"""Sets the decrypt of this QueryRequestStaticsVo.
 
-        **参数解释：**  是否加密。  **约束限制：**  不涉及。  **取值范围：**  - true：加密。 - false：不加密。  **默认取值：**  false。 
+        **参数解释：**  是否加密。  **约束限制：**  不涉及。  **取值范围：**  - true：加密。 - false：不加密。  **默认取值：**  false。
 
         :param decrypt: The decrypt of this QueryRequestStaticsVo.
         :type decrypt: bool
@@ -204,7 +204,7 @@ class QueryRequestStaticsVo:
     def entity_type(self):
         r"""Gets the entity_type of this QueryRequestStaticsVo.
 
-        **参数解释：**  实体类型。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  实体类型。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :return: The entity_type of this QueryRequestStaticsVo.
         :rtype: str
@@ -215,7 +215,7 @@ class QueryRequestStaticsVo:
     def entity_type(self, entity_type):
         r"""Sets the entity_type of this QueryRequestStaticsVo.
 
-        **参数解释：**  实体类型。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  实体类型。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :param entity_type: The entity_type of this QueryRequestStaticsVo.
         :type entity_type: str
@@ -244,7 +244,7 @@ class QueryRequestStaticsVo:
     def funcs(self):
         r"""Gets the funcs of this QueryRequestStaticsVo.
 
-        **参数解释：**  指定简单函数信息。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  指定简单函数信息。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :return: The funcs of this QueryRequestStaticsVo.
         :rtype: list[:class:`huaweicloudsdkidmeclassicapi.v1.FuncInfo`]
@@ -255,7 +255,7 @@ class QueryRequestStaticsVo:
     def funcs(self, funcs):
         r"""Sets the funcs of this QueryRequestStaticsVo.
 
-        **参数解释：**  指定简单函数信息。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  指定简单函数信息。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :param funcs: The funcs of this QueryRequestStaticsVo.
         :type funcs: list[:class:`huaweicloudsdkidmeclassicapi.v1.FuncInfo`]
@@ -266,7 +266,7 @@ class QueryRequestStaticsVo:
     def group_by(self):
         r"""Gets the group_by of this QueryRequestStaticsVo.
 
-        **参数解释：**  分组属性名称。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  分组属性名称。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :return: The group_by of this QueryRequestStaticsVo.
         :rtype: str
@@ -277,7 +277,7 @@ class QueryRequestStaticsVo:
     def group_by(self, group_by):
         r"""Sets the group_by of this QueryRequestStaticsVo.
 
-        **参数解释：**  分组属性名称。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  分组属性名称。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :param group_by: The group_by of this QueryRequestStaticsVo.
         :type group_by: str
@@ -288,7 +288,7 @@ class QueryRequestStaticsVo:
     def is_need_total(self):
         r"""Gets the is_need_total of this QueryRequestStaticsVo.
 
-        **参数解释：**  是否需要查询总记录数。  **约束限制：**  不涉及。  **取值范围：**  - true：需要。 - false：不需要。  **默认取值：**  false。 
+        **参数解释：**  是否需要查询总记录数。  **约束限制：**  不涉及。  **取值范围：**  - true：需要。 - false：不需要。  **默认取值：**  false。
 
         :return: The is_need_total of this QueryRequestStaticsVo.
         :rtype: bool
@@ -299,7 +299,7 @@ class QueryRequestStaticsVo:
     def is_need_total(self, is_need_total):
         r"""Sets the is_need_total of this QueryRequestStaticsVo.
 
-        **参数解释：**  是否需要查询总记录数。  **约束限制：**  不涉及。  **取值范围：**  - true：需要。 - false：不需要。  **默认取值：**  false。 
+        **参数解释：**  是否需要查询总记录数。  **约束限制：**  不涉及。  **取值范围：**  - true：需要。 - false：不需要。  **默认取值：**  false。
 
         :param is_need_total: The is_need_total of this QueryRequestStaticsVo.
         :type is_need_total: bool
@@ -310,7 +310,7 @@ class QueryRequestStaticsVo:
     def is_present_all(self):
         r"""Gets the is_present_all of this QueryRequestStaticsVo.
 
-        **参数解释：**  是否需要展示所有参考对象信息。  **约束限制：**  不涉及。  **取值范围：**  - true：需要。 - false：不需要。  **默认取值：**  不涉及。 
+        **参数解释：**  是否需要展示所有参考对象信息。  **约束限制：**  不涉及。  **取值范围：**  - true：需要。 - false：不需要。  **默认取值：**  不涉及。
 
         :return: The is_present_all of this QueryRequestStaticsVo.
         :rtype: bool
@@ -321,7 +321,7 @@ class QueryRequestStaticsVo:
     def is_present_all(self, is_present_all):
         r"""Sets the is_present_all of this QueryRequestStaticsVo.
 
-        **参数解释：**  是否需要展示所有参考对象信息。  **约束限制：**  不涉及。  **取值范围：**  - true：需要。 - false：不需要。  **默认取值：**  不涉及。 
+        **参数解释：**  是否需要展示所有参考对象信息。  **约束限制：**  不涉及。  **取值范围：**  - true：需要。 - false：不需要。  **默认取值：**  不涉及。
 
         :param is_present_all: The is_present_all of this QueryRequestStaticsVo.
         :type is_present_all: bool
@@ -332,7 +332,7 @@ class QueryRequestStaticsVo:
     def need_present_detail(self):
         r"""Gets the need_present_detail of this QueryRequestStaticsVo.
 
-        **参数解释：**  需要展示详细信息的参考对象。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  需要展示详细信息的参考对象。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :return: The need_present_detail of this QueryRequestStaticsVo.
         :rtype: list[str]
@@ -343,7 +343,7 @@ class QueryRequestStaticsVo:
     def need_present_detail(self, need_present_detail):
         r"""Sets the need_present_detail of this QueryRequestStaticsVo.
 
-        **参数解释：**  需要展示详细信息的参考对象。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  需要展示详细信息的参考对象。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :param need_present_detail: The need_present_detail of this QueryRequestStaticsVo.
         :type need_present_detail: list[str]
@@ -354,7 +354,7 @@ class QueryRequestStaticsVo:
     def order_by(self):
         r"""Gets the order_by of this QueryRequestStaticsVo.
 
-        **参数解释：**  按某个字段进行排序。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  按某个字段进行排序。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :return: The order_by of this QueryRequestStaticsVo.
         :rtype: str
@@ -365,7 +365,7 @@ class QueryRequestStaticsVo:
     def order_by(self, order_by):
         r"""Sets the order_by of this QueryRequestStaticsVo.
 
-        **参数解释：**  按某个字段进行排序。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  按某个字段进行排序。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :param order_by: The order_by of this QueryRequestStaticsVo.
         :type order_by: str
@@ -376,7 +376,7 @@ class QueryRequestStaticsVo:
     def order_by_table_alias(self):
         r"""Gets the order_by_table_alias of this QueryRequestStaticsVo.
 
-        **参数解释：**  排序字段的表别名。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  排序字段的表别名。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :return: The order_by_table_alias of this QueryRequestStaticsVo.
         :rtype: str
@@ -387,7 +387,7 @@ class QueryRequestStaticsVo:
     def order_by_table_alias(self, order_by_table_alias):
         r"""Sets the order_by_table_alias of this QueryRequestStaticsVo.
 
-        **参数解释：**  排序字段的表别名。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  排序字段的表别名。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :param order_by_table_alias: The order_by_table_alias of this QueryRequestStaticsVo.
         :type order_by_table_alias: str
@@ -398,7 +398,7 @@ class QueryRequestStaticsVo:
     def public_data(self):
         r"""Gets the public_data of this QueryRequestStaticsVo.
 
-        **参数解释：**  多租查询参数。  **约束限制：**  不涉及。  **取值范围：**  - EXCLUDE_PUBLIC_DATA：不包括公共数据。 - INCLUDE_PUBLIC_DATA：包括公共数据。 - ONLY_NEED_PUBLIC_DATA：只有公共数据。  **默认取值：**  不涉及。 
+        **参数解释：**  多租查询参数。  **约束限制：**  不涉及。  **取值范围：**  - EXCLUDE_PUBLIC_DATA：不包括公共数据。 - INCLUDE_PUBLIC_DATA：包括公共数据。 - ONLY_NEED_PUBLIC_DATA：只有公共数据。  **默认取值：**  不涉及。
 
         :return: The public_data of this QueryRequestStaticsVo.
         :rtype: str
@@ -409,7 +409,7 @@ class QueryRequestStaticsVo:
     def public_data(self, public_data):
         r"""Sets the public_data of this QueryRequestStaticsVo.
 
-        **参数解释：**  多租查询参数。  **约束限制：**  不涉及。  **取值范围：**  - EXCLUDE_PUBLIC_DATA：不包括公共数据。 - INCLUDE_PUBLIC_DATA：包括公共数据。 - ONLY_NEED_PUBLIC_DATA：只有公共数据。  **默认取值：**  不涉及。 
+        **参数解释：**  多租查询参数。  **约束限制：**  不涉及。  **取值范围：**  - EXCLUDE_PUBLIC_DATA：不包括公共数据。 - INCLUDE_PUBLIC_DATA：包括公共数据。 - ONLY_NEED_PUBLIC_DATA：只有公共数据。  **默认取值：**  不涉及。
 
         :param public_data: The public_data of this QueryRequestStaticsVo.
         :type public_data: str
@@ -420,7 +420,7 @@ class QueryRequestStaticsVo:
     def sort(self):
         r"""Gets the sort of this QueryRequestStaticsVo.
 
-        **参数解释：**  排序方向。  **约束限制：**  不涉及。  **取值范围：**  - ASC：表示升序。 - DESC：表示降序。  **默认取值：**  ASC。 
+        **参数解释：**  排序方向。  **约束限制：**  不涉及。  **取值范围：**  - ASC：表示升序。 - DESC：表示降序。  **默认取值：**  ASC。
 
         :return: The sort of this QueryRequestStaticsVo.
         :rtype: str
@@ -431,7 +431,7 @@ class QueryRequestStaticsVo:
     def sort(self, sort):
         r"""Sets the sort of this QueryRequestStaticsVo.
 
-        **参数解释：**  排序方向。  **约束限制：**  不涉及。  **取值范围：**  - ASC：表示升序。 - DESC：表示降序。  **默认取值：**  ASC。 
+        **参数解释：**  排序方向。  **约束限制：**  不涉及。  **取值范围：**  - ASC：表示升序。 - DESC：表示降序。  **默认取值：**  ASC。
 
         :param sort: The sort of this QueryRequestStaticsVo.
         :type sort: str
@@ -442,7 +442,7 @@ class QueryRequestStaticsVo:
     def sorts(self):
         r"""Gets the sorts of this QueryRequestStaticsVo.
 
-        **参数解释：**  排序。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  排序。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :return: The sorts of this QueryRequestStaticsVo.
         :rtype: list[:class:`huaweicloudsdkidmeclassicapi.v1.SortInfoVo`]
@@ -453,7 +453,7 @@ class QueryRequestStaticsVo:
     def sorts(self, sorts):
         r"""Sets the sorts of this QueryRequestStaticsVo.
 
-        **参数解释：**  排序。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  排序。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :param sorts: The sorts of this QueryRequestStaticsVo.
         :type sorts: list[:class:`huaweicloudsdkidmeclassicapi.v1.SortInfoVo`]

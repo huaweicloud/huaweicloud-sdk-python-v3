@@ -24,8 +24,8 @@ class UpdateLogSettingReq:
 
     attribute_map = {
         'agency': 'agency',
-        'log_base_path': 'logBasePath',
-        'log_bucket': 'logBucket'
+        'log_base_path': 'log_base_path',
+        'log_bucket': 'log_bucket'
     }
 
     def __init__(self, agency=None, log_base_path=None, log_bucket=None):

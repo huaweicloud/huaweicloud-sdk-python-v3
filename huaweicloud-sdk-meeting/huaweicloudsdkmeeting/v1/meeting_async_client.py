@@ -797,6 +797,75 @@ class MeetingAsyncClient(Client):
 
         return http_info
 
+    def allow_audience_join_async(self, request):
+        r"""主持人允许观众入会
+
+        主持人通过接口控制是否允许观众入会。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for AllowAudienceJoin
+        :type request: :class:`huaweicloudsdkmeeting.v1.AllowAudienceJoinRequest`
+        :rtype: :class:`huaweicloudsdkmeeting.v1.AllowAudienceJoinResponse`
+        """
+        http_info = self._allow_audience_join_http_info(request)
+        return self._call_api(**http_info)
+
+    def allow_audience_join_async_invoker(self, request):
+        http_info = self._allow_audience_join_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _allow_audience_join_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/mmc/control/conferences/allowAudience",
+            "request_type": request.__class__.__name__,
+            "response_type": "AllowAudienceJoinResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'conference_id' in local_var_params:
+            query_params.append(('conferenceID', local_var_params['conference_id']))
+
+        header_params = {}
+        if 'x_conference_authorization' in local_var_params:
+            header_params['X-Conference-Authorization'] = local_var_params['x_conference_authorization']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def allow_client_record_async(self, request):
         r"""允许客户端录制
 
@@ -1523,6 +1592,75 @@ class MeetingAsyncClient(Client):
             "resource_path": "/v1/mmc/control/conferences/participants/batch/hands",
             "request_type": request.__class__.__name__,
             "response_type": "BatchHandResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'conference_id' in local_var_params:
+            query_params.append(('conferenceID', local_var_params['conference_id']))
+
+        header_params = {}
+        if 'x_conference_authorization' in local_var_params:
+            header_params['X-Conference-Authorization'] = local_var_params['x_conference_authorization']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_move_to_waiting_room_async(self, request):
+        r"""批量移入等候室
+
+        主持人通过该接口批量移动用户到等候室。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchMoveToWaitingRoom
+        :type request: :class:`huaweicloudsdkmeeting.v1.BatchMoveToWaitingRoomRequest`
+        :rtype: :class:`huaweicloudsdkmeeting.v1.BatchMoveToWaitingRoomResponse`
+        """
+        http_info = self._batch_move_to_waiting_room_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_move_to_waiting_room_async_invoker(self, request):
+        http_info = self._batch_move_to_waiting_room_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_move_to_waiting_room_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/mmc/control/conferences/batchMoveToWaitingRoom",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchMoveToWaitingRoomResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -5356,6 +5494,75 @@ class MeetingAsyncClient(Client):
 
         return http_info
 
+    def pause_conference_async(self, request):
+        r"""主持人暂停/取消暂停会议
+
+        主持人通过接口控制暂停/取消暂停。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for PauseConference
+        :type request: :class:`huaweicloudsdkmeeting.v1.PauseConferenceRequest`
+        :rtype: :class:`huaweicloudsdkmeeting.v1.PauseConferenceResponse`
+        """
+        http_info = self._pause_conference_http_info(request)
+        return self._call_api(**http_info)
+
+    def pause_conference_async_invoker(self, request):
+        http_info = self._pause_conference_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _pause_conference_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/mmc/control/conferences/pause",
+            "request_type": request.__class__.__name__,
+            "response_type": "PauseConferenceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'conference_id' in local_var_params:
+            query_params.append(('conferenceID', local_var_params['conference_id']))
+
+        header_params = {}
+        if 'x_conference_authorization' in local_var_params:
+            header_params['X-Conference-Authorization'] = local_var_params['x_conference_authorization']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def prolong_meeting_async(self, request):
         r"""延长会议
 
@@ -8479,6 +8686,144 @@ class MeetingAsyncClient(Client):
 
         return http_info
 
+    def set_mmr_live_async(self, request):
+        r"""启动/停止Mmr会议直播
+
+        使用场景：会议主持人可以通过该接口启动/停止Mmr会议直播 功能描述：提供启动/停止会议Mmr直播的能力
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for SetMmrLive
+        :type request: :class:`huaweicloudsdkmeeting.v1.SetMmrLiveRequest`
+        :rtype: :class:`huaweicloudsdkmeeting.v1.SetMmrLiveResponse`
+        """
+        http_info = self._set_mmr_live_http_info(request)
+        return self._call_api(**http_info)
+
+    def set_mmr_live_async_invoker(self, request):
+        http_info = self._set_mmr_live_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _set_mmr_live_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/mmc/control/conferences/mmrLive",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetMmrLiveResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'conference_id' in local_var_params:
+            query_params.append(('conferenceID', local_var_params['conference_id']))
+
+        header_params = {}
+        if 'x_conference_authorization' in local_var_params:
+            header_params['X-Conference-Authorization'] = local_var_params['x_conference_authorization']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def set_mmr_record_async(self, request):
+        r"""启动/暂停/停止mmr会议录制
+
+        使用场景：管理员或UC账号主席可以通过该接口启动/停止mmr会议录制 功能描述：提供启动/暂停/停止MMR会议录制的能力
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for SetMmrRecord
+        :type request: :class:`huaweicloudsdkmeeting.v1.SetMmrRecordRequest`
+        :rtype: :class:`huaweicloudsdkmeeting.v1.SetMmrRecordResponse`
+        """
+        http_info = self._set_mmr_record_http_info(request)
+        return self._call_api(**http_info)
+
+    def set_mmr_record_async_invoker(self, request):
+        http_info = self._set_mmr_record_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _set_mmr_record_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/mmc/control/conferences/mmrRecord",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetMmrRecordResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'conference_id' in local_var_params:
+            query_params.append(('conferenceID', local_var_params['conference_id']))
+
+        header_params = {}
+        if 'x_conference_authorization' in local_var_params:
+            header_params['X-Conference-Authorization'] = local_var_params['x_conference_authorization']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def set_multi_picture_async(self, request):
         r"""设置多画面
 
@@ -9996,6 +10341,71 @@ class MeetingAsyncClient(Client):
         body = None
         if 'body' in local_var_params:
             body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_mgmt_site_status_async(self, request):
+        r"""查询会管状态
+
+        终端通过会控查询会管状态。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowMgmtSiteStatus
+        :type request: :class:`huaweicloudsdkmeeting.v1.ShowMgmtSiteStatusRequest`
+        :rtype: :class:`huaweicloudsdkmeeting.v1.ShowMgmtSiteStatusResponse`
+        """
+        http_info = self._show_mgmt_site_status_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_mgmt_site_status_async_invoker(self, request):
+        http_info = self._show_mgmt_site_status_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_mgmt_site_status_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/mmc/control/confmaintain/queryMgmtSiteStatus",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowMgmtSiteStatusResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_schema_type' in local_var_params:
+            header_params['X-Schema-Type'] = local_var_params['x_schema_type']
+
+        form_params = {}
+
+        body = None
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 

@@ -23,7 +23,7 @@ class BindPublicReq:
 
     attribute_map = {
         'eip': 'eip',
-        'is_auto_pay': 'isAutoPay'
+        'is_auto_pay': 'is_auto_pay'
     }
 
     def __init__(self, eip=None, is_auto_pay=None):

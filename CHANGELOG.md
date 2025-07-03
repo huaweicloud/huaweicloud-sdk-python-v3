@@ -1,3 +1,421 @@
+# 3.1.155 2025-07-03
+
+### HuaweiCloud SDK AstroZero
+
+- _Features_
+    - Support the service `AstroZero`
+- _Bug Fix_
+    - None
+- _Change_
+    - None
+
+### HuaweiCloud SDK CBH
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListInstances**
+    - changes of request param
+      - `* instance_id: number -> int64`
+  - **DeleteInstance**
+    - changes of request param
+      - `* instance_id: number -> int64`
+
+### HuaweiCloud SDK Cloudtest
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the API `SetTaskResult`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK COC
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the following APIs:
+    - `CreateTicket`
+    - `CreateAttachment`
+    - `ListIncidents`
+    - `ListIncidentsHistories`
+    - `HandleIncident`
+    - `ShowIncidentTask`
+    - `ListIncidentSimpleTickets`
+    - `CreateExternalCocAttachment`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK CSS
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdateOndemandClusterToPeriod**
+    - changes of request param
+      - `+ period_type`
+      - `+ period_num`
+      - `+ is_auto_renew`
+      - `+ is_auto_pay`
+      - `+ console_url`
+      - `- periodType`
+      - `- periodNum`
+      - `- isAutoRenew`
+      - `- isAutoPay`
+      - `- consoleURL`
+  - **UpdateClusterName**
+    - changes of request param
+      - `+ display_name`
+      - `- displayName`
+  - **UpdateFlavorByType**
+    - changes of request param
+      - `+ need_check_replica`
+      - `+ new_flavor_id`
+      - `+ is_auto_pay`
+      - `- needCheckReplica`
+      - `- newFlavorId`
+      - `- isAutoPay`
+  - **UpdateShrinkNodes**
+    - changes of request param
+      - `+ shrink_nodes`
+      - `- shrinkNodes`
+  - **ChangeMode**
+    - changes of request param
+      - `+ authority_enable`
+      - `+ admin_pwd`
+      - `+ https_enable`
+      - `- authorityEnable`
+      - `- adminPwd`
+      - `- httpsEnable`
+  - **ShowIkThesaurus**
+    - changes of response param
+      - `- updateTime`
+  - **CreateLoadIkThesaurus**
+    - changes of request param
+      - `+ bucket_name`
+      - `+ main_object`
+      - `+ stop_object`
+      - `+ synonym_object`
+      - `+ static_main_object`
+      - `+ static_stop_object`
+      - `+ extra_main_object`
+      - `+ extra_stop_object`
+      - `- bucketName`
+      - `- mainObject`
+      - `- stopObject`
+      - `- synonymObject`
+  - **StartKibanaPublic**
+    - changes of request param
+      - `+ eip_size`
+      - `+ elb_white_list`
+      - `+ is_auto_pay`
+      - `- eipSize`
+      - `- elbWhiteList`
+      - `- isAutoPay`
+  - **UpdateCloseKibana**
+    - changes of request param
+      - `+ eip_size`
+      - `+ elb_white_list`
+      - `- eipSize`
+      - `- elbWhiteList`
+  - **UpdateAlterKibana**
+    - changes of request param
+      - `+ band_width`
+      - `+ is_auto_pay`
+      - `- bandWidth`
+      - `- isAutoPay`
+  - **UpdatePublicKibanaWhitelist**
+    - changes of request param
+      - `+ white_list`
+      - `- whiteList`
+  - **StartPipeline**
+    - changes of request param
+      - `+ keep_alive`
+      - `- keepAlive`
+  - **StartLogs**
+    - changes of request param
+      - `+ log_base_path`
+      - `+ log_bucket`
+      - `- logBasePath`
+      - `- logBucket`
+  - **UpdatePublicBandWidth**
+    - changes of request param
+      - `+ band_width`
+      - `+ is_auto_pay`
+      - `- bandWidth`
+      - `- isAutoPay`
+  - **StartPublicWhitelist**
+    - changes of request param
+      - `+ white_list`
+      - `- whiteList`
+  - **UpdateSnapshotSetting**
+    - changes of request param
+      - `+ base_path`
+      - `- basePath`
+  - **RestoreSnapshot**
+    - changes of request param
+      - `+ target_cluster`
+      - `+ rename_pattern`
+      - `+ rename_replacement`
+      - `- targetCluster`
+      - `- renamePattern`
+      - `- renameReplacement`
+  - **CreateAutoCreatePolicy**
+    - changes of request param
+      - `+ delete_auto`
+      - `- deleteAuto`
+  - **StartVpecp**
+    - changes of request param
+      - `+ endpoint_with_dns_name`
+      - `- endpointWithDnsName`
+  - **UpdateVpcepWhitelist**
+    - changes of request param
+      - `+ vpc_permissions`
+      - `- vpcPermissions`
+  - **UpdateExtendInstanceStorage**
+    - changes of request param
+      - `+ is_auto_pay`
+      - `- isAutoPay`
+  - **UpdateBatchClustersTags**
+    - changes of request param
+      - `- sysTags`
+  - **ListImages**
+    - changes of request param
+      - `+ start`
+      - `+ limit`
+  - **CreateCnf**
+    - changes of request param
+      - `+ conf_content`
+      - `- confContent`
+      - `+ setting.batch_size`
+      - `+ setting.batch_delay_ms`
+      - `+ setting.queue_type`
+      - `+ setting.queue_check_point_writes`
+      - `+ setting.queue_max_bytes_mb`
+      - `- setting.batchSize`
+      - `- setting.batchDelayMs`
+      - `- setting.queueType`
+      - `- setting.queueCheckPointWrites`
+      - `- setting.queueMaxBytesMb`
+  - **UpdateCnf**
+    - changes of request param
+      - `+ conf_content`
+      - `- confContent`
+      - `+ setting.batch_size`
+      - `+ setting.batch_delay_ms`
+      - `+ setting.queue_type`
+      - `+ setting.queue_check_point_writes`
+      - `+ setting.queue_max_bytes_mb`
+      - `- setting.batchSize`
+      - `- setting.batchDelayMs`
+      - `- setting.queueType`
+      - `- setting.queueCheckPointWrites`
+      - `- setting.queueMaxBytesMb`
+  - **ListPipelines**
+    - changes of request param
+      - `+ start`
+      - `+ limit`
+  - **ListActions**
+    - changes of request param
+      - `+ start`
+      - `+ limit`
+  - **UpdateLogSetting**
+    - changes of request param
+      - `+ log_base_path`
+      - `+ log_bucket`
+      - `- logBasePath`
+      - `- logBucket`
+  - **ShowLogBackup**
+    - changes of request param
+      - `+ instance_name`
+      - `+ log_type`
+      - `- instanceName`
+      - `- logType`
+  - **UpdateVpcepConnection**
+    - changes of request param
+      - `+ endpoint_id_list`
+      - `- endpointIdList`
+  - **ListConfs**
+    - changes of request param
+      - `+ start`
+      - `+ limit`
+  - **CreateBindPublic**
+    - changes of request param
+      - `+ is_auto_pay`
+      - `- isAutoPay`
+
+### HuaweiCloud SDK DLI
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **RunAuthorizationAction**
+    - changes of request param
+      - `- grant_project_id`
+
+### HuaweiCloud SDK ECS
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the following APIs:
+    - `UpdateScheduledEvent`
+    - `AcceptScheduledEvent`
+    - `ListLaunchTemplateVersions`
+    - `DeleteLaunchTemplates`
+    - `ListTemplates`
+    - `NovaListServers`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK ELB
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateLoadbalancer**
+    - changes of request param
+      - `+ loadbalancer.prepaid_options`
+
+### HuaweiCloud SDK ELB
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the API `ShowLoadBalancerPorts`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListCertificates**
+    - changes of request param
+      - `+ enterprise_project_id`
+
+### HuaweiCloud SDK FunctionGraph
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateFunction**
+    - changes of request param
+      - `+ domain_names`
+      - `+ tags`
+
+### HuaweiCloud SDK IEF
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the API `DeletePod`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK Live
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the following APIs:
+    - `ListFlows`
+    - `CreateFlows`
+    - `DeleteFlow`
+    - `ShowFlowDetail`
+    - `ModifyFlowStart`
+    - `ModifyFlowStop`
+    - `ModifyFlowSources`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK Meeting
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the following APIs:
+    - `ShowMgmtSiteStatus`
+    - `AllowAudienceJoin`
+    - `BatchMoveToWaitingRoom`
+    - `PauseConference`
+    - `SetMmrRecord`
+    - `SetMmrLive`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK RDS
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the APIs `CheckInstanceForUpgrade`, `ShowPrecheckResult`, `UpgradeLargeVersion`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK VPCEP
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListEndpointInfoDetails**
+    - changes of response param
+      - `+ policy_statement.Condition`
+  - **UpdateEndpointWhite**
+    - changes of response param
+      - `+ policy_statement.Condition`
+  - **UpdateEndpointPolicy**
+    - changes of request param
+      - `+ policy_statement.Condition`
+    - changes of response param
+      - `+ policy_statement.Condition`
+  - **DeleteEndpointPolicy**
+    - changes of response param
+      - `+ policy_statement.Condition`
+  - **CreateEndpoint**
+    - changes of request param
+      - `+ policy_statement.Condition`
+    - changes of response param
+      - `+ policy_statement.Condition`
+  - **ListEndpoints**
+    - changes of response param
+      - `+ endpoints.policy_statement.Condition`
+
 # 3.1.154 2025-06-26
 
 ### HuaweiCloud SDK BSSINTL

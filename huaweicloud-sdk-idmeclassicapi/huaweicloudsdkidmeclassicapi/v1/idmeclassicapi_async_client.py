@@ -3013,7 +3013,7 @@ class IDMEClassicAPIAsyncClient(Client):
     def delete_by_condition_using_post_async(self, request):
         r"""根据指定条件删除实例
 
-        通过此接口，删除指定条件查询返回的实例。
+        通过此接口，删除满足指定条件的实例。
         
         请您谨慎使用删除操作，实例删除后将无法恢复。
         

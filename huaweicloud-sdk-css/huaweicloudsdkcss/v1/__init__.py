@@ -41,6 +41,7 @@ from huaweicloudsdkcss.v1.model.cluster_log_record import ClusterLogRecord
 from huaweicloudsdkcss.v1.model.cluster_volume_rsp import ClusterVolumeRsp
 from huaweicloudsdkcss.v1.model.config_list_rsp import ConfigListRsp
 from huaweicloudsdkcss.v1.model.confs import Confs
+from huaweicloudsdkcss.v1.model.confsetting import Confsetting
 from huaweicloudsdkcss.v1.model.connections import Connections
 from huaweicloudsdkcss.v1.model.create_ai_ops_request import CreateAiOpsRequest
 from huaweicloudsdkcss.v1.model.create_ai_ops_request_body import CreateAiOpsRequestBody
@@ -251,7 +252,6 @@ from huaweicloudsdkcss.v1.model.stop_snapshot_request import StopSnapshotRequest
 from huaweicloudsdkcss.v1.model.stop_snapshot_response import StopSnapshotResponse
 from huaweicloudsdkcss.v1.model.stop_vpecp_request import StopVpecpRequest
 from huaweicloudsdkcss.v1.model.stop_vpecp_response import StopVpecpResponse
-from huaweicloudsdkcss.v1.model.sys_tags import SysTags
 from huaweicloudsdkcss.v1.model.system_templates import SystemTemplates
 from huaweicloudsdkcss.v1.model.tag import Tag
 from huaweicloudsdkcss.v1.model.tag_req import TagReq

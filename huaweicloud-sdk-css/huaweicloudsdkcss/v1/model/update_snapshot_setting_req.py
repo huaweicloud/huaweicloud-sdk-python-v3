@@ -25,7 +25,7 @@ class UpdateSnapshotSettingReq:
     attribute_map = {
         'bucket': 'bucket',
         'agency': 'agency',
-        'base_path': 'basePath'
+        'base_path': 'base_path'
     }
 
     def __init__(self, bucket=None, agency=None, base_path=None):

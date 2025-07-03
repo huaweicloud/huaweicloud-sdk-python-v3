@@ -19,16 +19,18 @@ class PolicyStatement:
     openapi_types = {
         'effect': 'str',
         'action': 'list[str]',
-        'resource': 'list[str]'
+        'resource': 'list[str]',
+        'condition': 'object'
     }
 
     attribute_map = {
         'effect': 'Effect',
         'action': 'Action',
-        'resource': 'Resource'
+        'resource': 'Resource',
+        'condition': 'Condition'
     }
 
-    def __init__(self, effect=None, action=None, resource=None):
+    def __init__(self, effect=None, action=None, resource=None, condition=None):
         r"""PolicyStatement
 
         The model defined in huaweicloud sdk
@@ -39,6 +41,8 @@ class PolicyStatement:
         :type action: list[str]
         :param resource: obs对象
         :type resource: list[str]
+        :param condition: statement生效的条件
+        :type condition: object
         """
         
         
@@ -46,11 +50,14 @@ class PolicyStatement:
         self._effect = None
         self._action = None
         self._resource = None
+        self._condition = None
         self.discriminator = None
 
         self.effect = effect
         self.action = action
         self.resource = resource
+        if condition is not None:
+            self.condition = condition
 
     @property
     def effect(self):
@@ -117,6 +124,28 @@ class PolicyStatement:
         :type resource: list[str]
         """
         self._resource = resource
+
+    @property
+    def condition(self):
+        r"""Gets the condition of this PolicyStatement.
+
+        statement生效的条件
+
+        :return: The condition of this PolicyStatement.
+        :rtype: object
+        """
+        return self._condition
+
+    @condition.setter
+    def condition(self, condition):
+        r"""Sets the condition of this PolicyStatement.
+
+        statement生效的条件
+
+        :param condition: The condition of this PolicyStatement.
+        :type condition: object
+        """
+        self._condition = condition
 
     def to_dict(self):
         """Returns the model properties as a dict"""

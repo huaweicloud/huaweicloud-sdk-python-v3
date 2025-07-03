@@ -33,7 +33,7 @@ class DeleteByConditionVo:
 
         :param condition: 
         :type condition: :class:`huaweicloudsdkidmeclassicapi.v1.QueryRequestVo`
-        :param modifier: **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param modifier: **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
         :type modifier: str
         """
         
@@ -69,7 +69,7 @@ class DeleteByConditionVo:
     def modifier(self):
         r"""Gets the modifier of this DeleteByConditionVo.
 
-        **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :return: The modifier of this DeleteByConditionVo.
         :rtype: str
@@ -80,7 +80,7 @@ class DeleteByConditionVo:
     def modifier(self, modifier):
         r"""Sets the modifier of this DeleteByConditionVo.
 
-        **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :param modifier: The modifier of this DeleteByConditionVo.
         :type modifier: str

@@ -25,11 +25,11 @@ class PeriodReq:
     }
 
     attribute_map = {
-        'period_type': 'periodType',
-        'period_num': 'periodNum',
-        'is_auto_renew': 'isAutoRenew',
-        'is_auto_pay': 'isAutoPay',
-        'console_url': 'consoleURL'
+        'period_type': 'period_type',
+        'period_num': 'period_num',
+        'is_auto_renew': 'is_auto_renew',
+        'is_auto_pay': 'is_auto_pay',
+        'console_url': 'console_url'
     }
 
     def __init__(self, period_type=None, period_num=None, is_auto_renew=None, is_auto_pay=None, console_url=None):

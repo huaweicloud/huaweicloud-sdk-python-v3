@@ -23,9 +23,9 @@ class ChangeModeReq:
     }
 
     attribute_map = {
-        'authority_enable': 'authorityEnable',
-        'admin_pwd': 'adminPwd',
-        'https_enable': 'httpsEnable'
+        'authority_enable': 'authority_enable',
+        'admin_pwd': 'admin_pwd',
+        'https_enable': 'https_enable'
     }
 
     def __init__(self, authority_enable=None, admin_pwd=None, https_enable=None):

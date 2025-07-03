@@ -65,6 +65,8 @@ from huaweicloudsdkrds.v3.model.change_the_delay_threshold_response import Chang
 from huaweicloudsdkrds.v3.model.changing_the_delay_threshold_request_body import ChangingTheDelayThresholdRequestBody
 from huaweicloudsdkrds.v3.model.charge_info import ChargeInfo
 from huaweicloudsdkrds.v3.model.charge_info_response import ChargeInfoResponse
+from huaweicloudsdkrds.v3.model.check_instance_for_upgrade_request import CheckInstanceForUpgradeRequest
+from huaweicloudsdkrds.v3.model.check_instance_for_upgrade_response import CheckInstanceForUpgradeResponse
 from huaweicloudsdkrds.v3.model.compute_flavor import ComputeFlavor
 from huaweicloudsdkrds.v3.model.compute_flavor_group import ComputeFlavorGroup
 from huaweicloudsdkrds.v3.model.computes import Computes
@@ -125,7 +127,10 @@ from huaweicloudsdkrds.v3.model.customer_modify_auto_enlarge_policy_req import C
 from huaweicloudsdkrds.v3.model.customer_modify_auto_upgrade_policy_req import CustomerModifyAutoUpgradePolicyReq
 from huaweicloudsdkrds.v3.model.customer_upgrade_database_version_req import CustomerUpgradeDatabaseVersionReq
 from huaweicloudsdkrds.v3.model.customer_upgrade_database_version_req_new import CustomerUpgradeDatabaseVersionReqNew
+from huaweicloudsdkrds.v3.model.customer_upgrade_major_version_req import CustomerUpgradeMajorVersionReq
+from huaweicloudsdkrds.v3.model.db_check_detail import DBCheckDetail
 from huaweicloudsdkrds.v3.model.dbs_instance_host_info_result import DBSInstanceHostInfoResult
+from huaweicloudsdkrds.v3.model.db_upgrade_precheck import DBUpgradePrecheck
 from huaweicloudsdkrds.v3.model.data_ip_request import DataIpRequest
 from huaweicloudsdkrds.v3.model.database_backup_info import DatabaseBackupInfo
 from huaweicloudsdkrds.v3.model.database_for_creation import DatabaseForCreation
@@ -180,6 +185,7 @@ from huaweicloudsdkrds.v3.model.delete_sqlserver_database_request import DeleteS
 from huaweicloudsdkrds.v3.model.delete_sqlserver_database_response import DeleteSqlserverDatabaseResponse
 from huaweicloudsdkrds.v3.model.delete_sqlserver_db_user_request import DeleteSqlserverDbUserRequest
 from huaweicloudsdkrds.v3.model.delete_sqlserver_db_user_response import DeleteSqlserverDbUserResponse
+from huaweicloudsdkrds.v3.model.detected_problem import DetectedProblem
 from huaweicloudsdkrds.v3.model.diagnosis_instances_info_result import DiagnosisInstancesInfoResult
 from huaweicloudsdkrds.v3.model.diagnosis_item_result import DiagnosisItemResult
 from huaweicloudsdkrds.v3.model.download_errorlog_request import DownloadErrorlogRequest
@@ -439,6 +445,7 @@ from huaweicloudsdkrds.v3.model.pwd_reset_request import PwdResetRequest
 from huaweicloudsdkrds.v3.model.query_dr_info_request import QueryDRInfoRequest
 from huaweicloudsdkrds.v3.model.query_proxy_response_v3 import QueryProxyResponseV3
 from huaweicloudsdkrds.v3.model.quotas import Quotas
+from huaweicloudsdkrds.v3.model.rds_upgrade_precheck_v3_req import RdsUpgradePrecheckV3Req
 from huaweicloudsdkrds.v3.model.readonly_instances import ReadonlyInstances
 from huaweicloudsdkrds.v3.model.recycle_instsance_v3 import RecycleInstsanceV3
 from huaweicloudsdkrds.v3.model.recycle_policy import RecyclePolicy
@@ -577,6 +584,8 @@ from huaweicloudsdkrds.v3.model.show_off_site_backup_policy_request import ShowO
 from huaweicloudsdkrds.v3.model.show_off_site_backup_policy_response import ShowOffSiteBackupPolicyResponse
 from huaweicloudsdkrds.v3.model.show_postgresql_param_value_request import ShowPostgresqlParamValueRequest
 from huaweicloudsdkrds.v3.model.show_postgresql_param_value_response import ShowPostgresqlParamValueResponse
+from huaweicloudsdkrds.v3.model.show_precheck_result_request import ShowPrecheckResultRequest
+from huaweicloudsdkrds.v3.model.show_precheck_result_response import ShowPrecheckResultResponse
 from huaweicloudsdkrds.v3.model.show_quotas_request import ShowQuotasRequest
 from huaweicloudsdkrds.v3.model.show_quotas_response import ShowQuotasResponse
 from huaweicloudsdkrds.v3.model.show_recovery_time_window_request import ShowRecoveryTimeWindowRequest
@@ -723,6 +732,8 @@ from huaweicloudsdkrds.v3.model.upgrade_db_version_new_request import UpgradeDbV
 from huaweicloudsdkrds.v3.model.upgrade_db_version_new_response import UpgradeDbVersionNewResponse
 from huaweicloudsdkrds.v3.model.upgrade_db_version_request import UpgradeDbVersionRequest
 from huaweicloudsdkrds.v3.model.upgrade_db_version_response import UpgradeDbVersionResponse
+from huaweicloudsdkrds.v3.model.upgrade_large_version_request import UpgradeLargeVersionRequest
+from huaweicloudsdkrds.v3.model.upgrade_large_version_response import UpgradeLargeVersionResponse
 from huaweicloudsdkrds.v3.model.upgrade_pg_major_version import UpgradePgMajorVersion
 from huaweicloudsdkrds.v3.model.upgrade_reports import UpgradeReports
 from huaweicloudsdkrds.v3.model.user_for_creation import UserForCreation

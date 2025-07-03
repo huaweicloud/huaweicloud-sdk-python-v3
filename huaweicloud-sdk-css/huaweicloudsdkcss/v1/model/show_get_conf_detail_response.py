@@ -21,7 +21,7 @@ class ShowGetConfDetailResponse(SdkResponse):
         'name': 'str',
         'status': 'str',
         'conf_content': 'str',
-        'setting': 'Setting',
+        'setting': 'Confsetting',
         'update_at': 'str'
     }
 
@@ -45,7 +45,7 @@ class ShowGetConfDetailResponse(SdkResponse):
         :param conf_content: 配置文件内容。
         :type conf_content: str
         :param setting: 
-        :type setting: :class:`huaweicloudsdkcss.v1.Setting`
+        :type setting: :class:`huaweicloudsdkcss.v1.Confsetting`
         :param update_at: 更新时间。
         :type update_at: str
         """
@@ -141,7 +141,7 @@ class ShowGetConfDetailResponse(SdkResponse):
         r"""Gets the setting of this ShowGetConfDetailResponse.
 
         :return: The setting of this ShowGetConfDetailResponse.
-        :rtype: :class:`huaweicloudsdkcss.v1.Setting`
+        :rtype: :class:`huaweicloudsdkcss.v1.Confsetting`
         """
         return self._setting
 
@@ -150,7 +150,7 @@ class ShowGetConfDetailResponse(SdkResponse):
         r"""Sets the setting of this ShowGetConfDetailResponse.
 
         :param setting: The setting of this ShowGetConfDetailResponse.
-        :type setting: :class:`huaweicloudsdkcss.v1.Setting`
+        :type setting: :class:`huaweicloudsdkcss.v1.Confsetting`
         """
         self._setting = setting
 

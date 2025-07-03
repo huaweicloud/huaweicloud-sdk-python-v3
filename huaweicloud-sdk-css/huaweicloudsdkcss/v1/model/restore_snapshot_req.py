@@ -25,10 +25,10 @@ class RestoreSnapshotReq:
     }
 
     attribute_map = {
-        'target_cluster': 'targetCluster',
+        'target_cluster': 'target_cluster',
         'indices': 'indices',
-        'rename_pattern': 'renamePattern',
-        'rename_replacement': 'renameReplacement',
+        'rename_pattern': 'rename_pattern',
+        'rename_replacement': 'rename_replacement',
         'replace_exist_indices': 'replace_exist_indices'
     }
 

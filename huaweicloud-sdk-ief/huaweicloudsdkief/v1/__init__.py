@@ -102,6 +102,8 @@ from huaweicloudsdkief.v1.model.delete_end_point_request import DeleteEndPointRe
 from huaweicloudsdkief.v1.model.delete_end_point_response import DeleteEndPointResponse
 from huaweicloudsdkief.v1.model.delete_node_encryptdatas_request import DeleteNodeEncryptdatasRequest
 from huaweicloudsdkief.v1.model.delete_node_encryptdatas_response import DeleteNodeEncryptdatasResponse
+from huaweicloudsdkief.v1.model.delete_pod_request import DeletePodRequest
+from huaweicloudsdkief.v1.model.delete_pod_response import DeletePodResponse
 from huaweicloudsdkief.v1.model.delete_product_request import DeleteProductRequest
 from huaweicloudsdkief.v1.model.delete_product_response import DeleteProductResponse
 from huaweicloudsdkief.v1.model.delete_resource_tag_request import DeleteResourceTagRequest

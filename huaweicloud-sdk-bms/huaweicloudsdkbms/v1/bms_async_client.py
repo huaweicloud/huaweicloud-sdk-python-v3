@@ -1442,71 +1442,6 @@ class BmsAsyncClient(Client):
 
         return http_info
 
-    def show_baremetal_server_metadata_options_async(self, request):
-        r"""查询裸金属服务器元数据配置
-
-        查询云服务器元数据配置，通过本接口，您可以查询指裸金属服务器的元数据配置。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ShowBaremetalServerMetadataOptions
-        :type request: :class:`huaweicloudsdkbms.v1.ShowBaremetalServerMetadataOptionsRequest`
-        :rtype: :class:`huaweicloudsdkbms.v1.ShowBaremetalServerMetadataOptionsResponse`
-        """
-        http_info = self._show_baremetal_server_metadata_options_http_info(request)
-        return self._call_api(**http_info)
-
-    def show_baremetal_server_metadata_options_async_invoker(self, request):
-        http_info = self._show_baremetal_server_metadata_options_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _show_baremetal_server_metadata_options_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v1/{project_id}/baremetalservers/{server_id}/metadata-options",
-            "request_type": request.__class__.__name__,
-            "response_type": "ShowBaremetalServerMetadataOptionsResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'server_id' in local_var_params:
-            path_params['server_id'] = local_var_params['server_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
     def show_baremetal_server_tags_async(self, request):
         r"""查询裸金属服务器标签
 
@@ -1597,6 +1532,71 @@ class BmsAsyncClient(Client):
             "resource_path": "/v1/{project_id}/baremetalservers/{server_id}/os-volume_attachments",
             "request_type": request.__class__.__name__,
             "response_type": "ShowBaremetalServerVolumeInfoResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'server_id' in local_var_params:
+            path_params['server_id'] = local_var_params['server_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_metadata_options_async(self, request):
+        r"""查询裸金属服务器元数据配置
+
+        查询云服务器元数据配置，通过本接口，您可以查询指裸金属服务器的元数据配置。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowMetadataOptions
+        :type request: :class:`huaweicloudsdkbms.v1.ShowMetadataOptionsRequest`
+        :rtype: :class:`huaweicloudsdkbms.v1.ShowMetadataOptionsResponse`
+        """
+        http_info = self._show_metadata_options_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_metadata_options_async_invoker(self, request):
+        http_info = self._show_metadata_options_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_metadata_options_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/baremetalservers/{server_id}/metadata-options",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowMetadataOptionsResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -2031,7 +2031,7 @@ class BmsAsyncClient(Client):
 
         return http_info
 
-    def update_baremetal_server_metadata_options_async(self, request):
+    def update_metadata_options_async(self, request):
         r"""更新裸金属服务器元数据配置
 
         更新裸金属服务器元数据配置，通过本接口，您可以选择启用或关闭IMDS服务，也可以选择IMDS服务的版本。
@@ -2039,23 +2039,23 @@ class BmsAsyncClient(Client):
         Please refer to HUAWEI cloud API Explorer for details.
 
 
-        :param request: Request instance for UpdateBaremetalServerMetadataOptions
-        :type request: :class:`huaweicloudsdkbms.v1.UpdateBaremetalServerMetadataOptionsRequest`
-        :rtype: :class:`huaweicloudsdkbms.v1.UpdateBaremetalServerMetadataOptionsResponse`
+        :param request: Request instance for UpdateMetadataOptions
+        :type request: :class:`huaweicloudsdkbms.v1.UpdateMetadataOptionsRequest`
+        :rtype: :class:`huaweicloudsdkbms.v1.UpdateMetadataOptionsResponse`
         """
-        http_info = self._update_baremetal_server_metadata_options_http_info(request)
+        http_info = self._update_metadata_options_http_info(request)
         return self._call_api(**http_info)
 
-    def update_baremetal_server_metadata_options_async_invoker(self, request):
-        http_info = self._update_baremetal_server_metadata_options_http_info(request)
+    def update_metadata_options_async_invoker(self, request):
+        http_info = self._update_metadata_options_http_info(request)
         return AsyncInvoker(self, http_info)
 
-    def _update_baremetal_server_metadata_options_http_info(self, request):
+    def _update_metadata_options_http_info(self, request):
         http_info = {
             "method": "PUT",
             "resource_path": "/v1/{project_id}/baremetalservers/{server_id}/metadata-options",
             "request_type": request.__class__.__name__,
-            "response_type": "UpdateBaremetalServerMetadataOptionsResponse"
+            "response_type": "UpdateMetadataOptionsResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}

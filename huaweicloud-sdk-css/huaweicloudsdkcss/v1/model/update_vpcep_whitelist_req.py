@@ -21,7 +21,7 @@ class UpdateVpcepWhitelistReq:
     }
 
     attribute_map = {
-        'vpc_permissions': 'vpcPermissions'
+        'vpc_permissions': 'vpc_permissions'
     }
 
     def __init__(self, vpc_permissions=None):

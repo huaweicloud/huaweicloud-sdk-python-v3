@@ -1653,6 +1653,81 @@ class SwrAsyncClient(Client):
 
         return http_info
 
+    def list_repo_details_async(self, request):
+        r"""查询镜像仓库列表详情
+
+        查询镜像仓库列表详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListRepoDetails
+        :type request: :class:`huaweicloudsdkswr.v2.ListRepoDetailsRequest`
+        :rtype: :class:`huaweicloudsdkswr.v2.ListRepoDetailsResponse`
+        """
+        http_info = self._list_repo_details_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_repo_details_async_invoker(self, request):
+        http_info = self._list_repo_details_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_repo_details_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/manage/repos",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRepoDetailsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'namespace' in local_var_params:
+            query_params.append(('namespace', local_var_params['namespace']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'category' in local_var_params:
+            query_params.append(('category', local_var_params['category']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'is_public' in local_var_params:
+            query_params.append(('is_public', local_var_params['is_public']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_repo_domains_async(self, request):
         r"""获取共享帐号列表
 
@@ -1782,6 +1857,81 @@ class SwrAsyncClient(Client):
             body = request.get_file_stream()
 
         response_headers = ["Content-Range", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_repository_tag_async(self, request):
+        r"""查询镜像tag列表详情
+
+        查询镜像tag列表详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListRepositoryTag
+        :type request: :class:`huaweicloudsdkswr.v2.ListRepositoryTagRequest`
+        :rtype: :class:`huaweicloudsdkswr.v2.ListRepositoryTagResponse`
+        """
+        http_info = self._list_repository_tag_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_repository_tag_async_invoker(self, request):
+        http_info = self._list_repository_tag_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_repository_tag_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/manage/namespaces/{namespace}/repos/{repository}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRepositoryTagResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'namespace' in local_var_params:
+            path_params['namespace'] = local_var_params['namespace']
+        if 'repository' in local_var_params:
+            path_params['repository'] = local_var_params['repository']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'tag' in local_var_params:
+            query_params.append(('tag', local_var_params['tag']))
+        if 'with_manifest' in local_var_params:
+            query_params.append(('with_manifest', local_var_params['with_manifest']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -1987,6 +2137,81 @@ class SwrAsyncClient(Client):
             path_params['repository'] = local_var_params['repository']
 
         query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_shared_repo_details_async(self, request):
+        r"""查询共享镜像列表详情
+
+        查询共享镜像列表详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListSharedRepoDetails
+        :type request: :class:`huaweicloudsdkswr.v2.ListSharedRepoDetailsRequest`
+        :rtype: :class:`huaweicloudsdkswr.v2.ListSharedRepoDetailsResponse`
+        """
+        http_info = self._list_shared_repo_details_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_shared_repo_details_async_invoker(self, request):
+        http_info = self._list_shared_repo_details_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_shared_repo_details_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/manage/shared-repositories",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSharedRepoDetailsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'namespace' in local_var_params:
+            query_params.append(('namespace', local_var_params['namespace']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'shared_by' in local_var_params:
+            query_params.append(('shared_by', local_var_params['shared_by']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
 
         header_params = {}
 
@@ -2460,6 +2685,75 @@ class SwrAsyncClient(Client):
         path_params = {}
         if 'namespace' in local_var_params:
             path_params['namespace'] = local_var_params['namespace']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_repo_tag_async(self, request):
+        r"""查询指定tag的镜像详情
+
+        查询镜像仓库中指定tag的镜像
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowRepoTag
+        :type request: :class:`huaweicloudsdkswr.v2.ShowRepoTagRequest`
+        :rtype: :class:`huaweicloudsdkswr.v2.ShowRepoTagResponse`
+        """
+        http_info = self._show_repo_tag_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_repo_tag_async_invoker(self, request):
+        http_info = self._show_repo_tag_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_repo_tag_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/manage/namespaces/{namespace}/repos/{repository}/tags/{tag}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRepoTagResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'namespace' in local_var_params:
+            path_params['namespace'] = local_var_params['namespace']
+        if 'repository' in local_var_params:
+            path_params['repository'] = local_var_params['repository']
+        if 'tag' in local_var_params:
+            path_params['tag'] = local_var_params['tag']
 
         query_params = []
 

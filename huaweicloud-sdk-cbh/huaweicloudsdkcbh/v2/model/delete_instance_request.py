@@ -17,7 +17,7 @@ class DeleteInstanceRequest:
     sensitive_list = []
 
     openapi_types = {
-        'instance_id': 'float'
+        'instance_id': 'int'
     }
 
     attribute_map = {
@@ -30,7 +30,7 @@ class DeleteInstanceRequest:
         The model defined in huaweicloud sdk
 
         :param instance_id: 删除故障云堡垒机实例id。
-        :type instance_id: float
+        :type instance_id: int
         """
         
         
@@ -47,7 +47,7 @@ class DeleteInstanceRequest:
         删除故障云堡垒机实例id。
 
         :return: The instance_id of this DeleteInstanceRequest.
-        :rtype: float
+        :rtype: int
         """
         return self._instance_id
 
@@ -58,7 +58,7 @@ class DeleteInstanceRequest:
         删除故障云堡垒机实例id。
 
         :param instance_id: The instance_id of this DeleteInstanceRequest.
-        :type instance_id: float
+        :type instance_id: int
         """
         self._instance_id = instance_id
 

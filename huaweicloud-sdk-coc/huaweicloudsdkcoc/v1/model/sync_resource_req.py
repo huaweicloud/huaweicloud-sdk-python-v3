@@ -31,9 +31,9 @@ class SyncResourceReq:
 
         The model defined in huaweicloud sdk
 
-        :param provider: 资源提供者
+        :param provider: 资源提供者。
         :type provider: str
-        :param type: 资源类型
+        :param type: 资源类型。
         :type type: str
         """
         
@@ -43,14 +43,16 @@ class SyncResourceReq:
         self._type = None
         self.discriminator = None
 
-        self.provider = provider
-        self.type = type
+        if provider is not None:
+            self.provider = provider
+        if type is not None:
+            self.type = type
 
     @property
     def provider(self):
         r"""Gets the provider of this SyncResourceReq.
 
-        资源提供者
+        资源提供者。
 
         :return: The provider of this SyncResourceReq.
         :rtype: str
@@ -61,7 +63,7 @@ class SyncResourceReq:
     def provider(self, provider):
         r"""Sets the provider of this SyncResourceReq.
 
-        资源提供者
+        资源提供者。
 
         :param provider: The provider of this SyncResourceReq.
         :type provider: str
@@ -72,7 +74,7 @@ class SyncResourceReq:
     def type(self):
         r"""Gets the type of this SyncResourceReq.
 
-        资源类型
+        资源类型。
 
         :return: The type of this SyncResourceReq.
         :rtype: str
@@ -83,7 +85,7 @@ class SyncResourceReq:
     def type(self, type):
         r"""Sets the type of this SyncResourceReq.
 
-        资源类型
+        资源类型。
 
         :param type: The type of this SyncResourceReq.
         :type type: str

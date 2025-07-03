@@ -23,7 +23,7 @@ class RoleExtendReq:
 
     attribute_map = {
         'grow': 'grow',
-        'is_auto_pay': 'isAutoPay'
+        'is_auto_pay': 'is_auto_pay'
     }
 
     def __init__(self, grow=None, is_auto_pay=None):

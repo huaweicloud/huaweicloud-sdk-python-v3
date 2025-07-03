@@ -189,7 +189,7 @@ class CssClient(Client):
     def _rolling_restart_http_info(cls, request):
         http_info = {
             "method": "POST",
-            "resource_path": "/v2.0/{project_id}/clusters/{cluster_id}/rolling_restart",
+            "resource_path": "/v2.0/{project_id}/clusters/{cluster_id}/rolling-restart",
             "request_type": request.__class__.__name__,
             "response_type": "RollingRestartResponse"
             }
