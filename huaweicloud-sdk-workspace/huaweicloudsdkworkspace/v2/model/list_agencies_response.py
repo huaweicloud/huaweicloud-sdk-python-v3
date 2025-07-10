@@ -30,7 +30,7 @@ class ListAgenciesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param existing_agencies: 委托信息
+        :param existing_agencies: 委托信息。
         :type existing_agencies: list[:class:`huaweicloudsdkworkspace.v2.AgenciesInfo`]
         """
         
@@ -46,7 +46,7 @@ class ListAgenciesResponse(SdkResponse):
     def existing_agencies(self):
         r"""Gets the existing_agencies of this ListAgenciesResponse.
 
-        委托信息
+        委托信息。
 
         :return: The existing_agencies of this ListAgenciesResponse.
         :rtype: list[:class:`huaweicloudsdkworkspace.v2.AgenciesInfo`]
@@ -57,7 +57,7 @@ class ListAgenciesResponse(SdkResponse):
     def existing_agencies(self, existing_agencies):
         r"""Sets the existing_agencies of this ListAgenciesResponse.
 
-        委托信息
+        委托信息。
 
         :param existing_agencies: The existing_agencies of this ListAgenciesResponse.
         :type existing_agencies: list[:class:`huaweicloudsdkworkspace.v2.AgenciesInfo`]

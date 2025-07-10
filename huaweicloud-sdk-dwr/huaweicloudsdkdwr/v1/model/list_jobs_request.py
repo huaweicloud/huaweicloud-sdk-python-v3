@@ -37,15 +37,15 @@ class ListJobsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param start_time: 查询开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。
+        :param start_time: **参数解释：** 查询开始时间。 **约束限制：** 格式为“yyyy-mm-ddThh:mm:ssZ”。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
         :type start_time: str
-        :param end_time: 查询结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。
+        :param end_time: **参数解释：** 查询结束时间。 **约束限制：** 格式为“yyyy-mm-ddThh:mm:ssZ”。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
         :type end_time: str
-        :param status: 任务状态：取值为“Running”为执行中；取值为“Completed”为完成；取值为“Failed”为失败。
+        :param status: **参数解释：** 任务状态。 **约束限制：** 不涉及。 **取值范围：** 1、“Running”：执行中； 2、“Completed”：完成； 3、“Failed”：失败。 **默认取值:** 不涉及。
         :type status: str
-        :param offset: 索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
+        :param offset: **参数解释：** 索引位置，偏移量。从第一条数据偏移offset条数据后开始查询。 **约束限制：** 必须为数字，不能为负数。 **取值范围：** [0-4096] **默认取值:** 默认为0（偏移0条数据，表示从第一条数据开始查询）。
         :type offset: int
-        :param limit: 查询记录数。默认为100，不能为负数，最小值为1，最大值为100。
+        :param limit: **参数解释：** 查询记录数。 **约束限制：** 不能为负数。 **取值范围：** [1-100]。 **默认取值:** 1。
         :type limit: str
         """
         
@@ -73,7 +73,7 @@ class ListJobsRequest:
     def start_time(self):
         r"""Gets the start_time of this ListJobsRequest.
 
-        查询开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。
+        **参数解释：** 查询开始时间。 **约束限制：** 格式为“yyyy-mm-ddThh:mm:ssZ”。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :return: The start_time of this ListJobsRequest.
         :rtype: str
@@ -84,7 +84,7 @@ class ListJobsRequest:
     def start_time(self, start_time):
         r"""Sets the start_time of this ListJobsRequest.
 
-        查询开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。
+        **参数解释：** 查询开始时间。 **约束限制：** 格式为“yyyy-mm-ddThh:mm:ssZ”。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :param start_time: The start_time of this ListJobsRequest.
         :type start_time: str
@@ -95,7 +95,7 @@ class ListJobsRequest:
     def end_time(self):
         r"""Gets the end_time of this ListJobsRequest.
 
-        查询结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。
+        **参数解释：** 查询结束时间。 **约束限制：** 格式为“yyyy-mm-ddThh:mm:ssZ”。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :return: The end_time of this ListJobsRequest.
         :rtype: str
@@ -106,7 +106,7 @@ class ListJobsRequest:
     def end_time(self, end_time):
         r"""Sets the end_time of this ListJobsRequest.
 
-        查询结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。
+        **参数解释：** 查询结束时间。 **约束限制：** 格式为“yyyy-mm-ddThh:mm:ssZ”。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :param end_time: The end_time of this ListJobsRequest.
         :type end_time: str
@@ -117,7 +117,7 @@ class ListJobsRequest:
     def status(self):
         r"""Gets the status of this ListJobsRequest.
 
-        任务状态：取值为“Running”为执行中；取值为“Completed”为完成；取值为“Failed”为失败。
+        **参数解释：** 任务状态。 **约束限制：** 不涉及。 **取值范围：** 1、“Running”：执行中； 2、“Completed”：完成； 3、“Failed”：失败。 **默认取值:** 不涉及。
 
         :return: The status of this ListJobsRequest.
         :rtype: str
@@ -128,7 +128,7 @@ class ListJobsRequest:
     def status(self, status):
         r"""Sets the status of this ListJobsRequest.
 
-        任务状态：取值为“Running”为执行中；取值为“Completed”为完成；取值为“Failed”为失败。
+        **参数解释：** 任务状态。 **约束限制：** 不涉及。 **取值范围：** 1、“Running”：执行中； 2、“Completed”：完成； 3、“Failed”：失败。 **默认取值:** 不涉及。
 
         :param status: The status of this ListJobsRequest.
         :type status: str
@@ -139,7 +139,7 @@ class ListJobsRequest:
     def offset(self):
         r"""Gets the offset of this ListJobsRequest.
 
-        索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
+        **参数解释：** 索引位置，偏移量。从第一条数据偏移offset条数据后开始查询。 **约束限制：** 必须为数字，不能为负数。 **取值范围：** [0-4096] **默认取值:** 默认为0（偏移0条数据，表示从第一条数据开始查询）。
 
         :return: The offset of this ListJobsRequest.
         :rtype: int
@@ -150,7 +150,7 @@ class ListJobsRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListJobsRequest.
 
-        索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
+        **参数解释：** 索引位置，偏移量。从第一条数据偏移offset条数据后开始查询。 **约束限制：** 必须为数字，不能为负数。 **取值范围：** [0-4096] **默认取值:** 默认为0（偏移0条数据，表示从第一条数据开始查询）。
 
         :param offset: The offset of this ListJobsRequest.
         :type offset: int
@@ -161,7 +161,7 @@ class ListJobsRequest:
     def limit(self):
         r"""Gets the limit of this ListJobsRequest.
 
-        查询记录数。默认为100，不能为负数，最小值为1，最大值为100。
+        **参数解释：** 查询记录数。 **约束限制：** 不能为负数。 **取值范围：** [1-100]。 **默认取值:** 1。
 
         :return: The limit of this ListJobsRequest.
         :rtype: str
@@ -172,7 +172,7 @@ class ListJobsRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListJobsRequest.
 
-        查询记录数。默认为100，不能为负数，最小值为1，最大值为100。
+        **参数解释：** 查询记录数。 **约束限制：** 不能为负数。 **取值范围：** [1-100]。 **默认取值:** 1。
 
         :param limit: The limit of this ListJobsRequest.
         :type limit: str

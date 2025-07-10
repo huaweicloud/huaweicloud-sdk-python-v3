@@ -53,15 +53,15 @@ class ListNatGatewaysRequest:
         :type description: str
         :param created_at: 公网NAT网关实例的创建时间，遵循UTC时间，格式是yyyy-mm-ddThh:mm:ssZ。
         :type created_at: str
-        :param name: 公网NAT网关实例的名字，长度限制为64。公网NAT网关实例的名字仅支持数字、字母、_（下划线）、-（中划线）、中文
+        :param name: 公网NAT网关实例的名字，长度限制为64。公网NAT网关实例的名字仅支持数字、字母、_（下划线）、-（中划线）、中文。
         :type name: str
         :param status: 公网NAT网关实例的状态。 枚举值：  ACTIVE PENDING_CREATE PENDING_UPDATE PENDING_DELETE INACTIVE
         :type status: list[str]
-        :param spec: 公网NAT网关实例的规格。取值为： \&quot;1\&quot;：小型，SNAT最大连接数10000；\&quot;2\&quot;：中型，SNAT最大连接数50000；\&quot;3\&quot;：大型，SNAT最大连接数200000；\&quot;4\&quot;：超大型，SNAT最大连接数1000000
+        :param spec: 公网NAT网关实例的规格。取值为： \&quot;1\&quot;：小型，SNAT最大连接数10000；\&quot;2\&quot;：中型，SNAT最大连接数50000；\&quot;3\&quot;：大型，SNAT最大连接数200000；\&quot;4\&quot;：超大型，SNAT最大连接数1000000。
         :type spec: list[str]
         :param router_id: VPC的id。
         :type router_id: str
-        :param limit: 功能说明：每页返回的个数。取值范围：0~2000。默认值：2000。
+        :param limit: 功能说明：每页返回的个数。取值范围：1~2000。默认值：2000。
         :type limit: int
         """
         
@@ -189,7 +189,7 @@ class ListNatGatewaysRequest:
     def name(self):
         r"""Gets the name of this ListNatGatewaysRequest.
 
-        公网NAT网关实例的名字，长度限制为64。公网NAT网关实例的名字仅支持数字、字母、_（下划线）、-（中划线）、中文
+        公网NAT网关实例的名字，长度限制为64。公网NAT网关实例的名字仅支持数字、字母、_（下划线）、-（中划线）、中文。
 
         :return: The name of this ListNatGatewaysRequest.
         :rtype: str
@@ -200,7 +200,7 @@ class ListNatGatewaysRequest:
     def name(self, name):
         r"""Sets the name of this ListNatGatewaysRequest.
 
-        公网NAT网关实例的名字，长度限制为64。公网NAT网关实例的名字仅支持数字、字母、_（下划线）、-（中划线）、中文
+        公网NAT网关实例的名字，长度限制为64。公网NAT网关实例的名字仅支持数字、字母、_（下划线）、-（中划线）、中文。
 
         :param name: The name of this ListNatGatewaysRequest.
         :type name: str
@@ -233,7 +233,7 @@ class ListNatGatewaysRequest:
     def spec(self):
         r"""Gets the spec of this ListNatGatewaysRequest.
 
-        公网NAT网关实例的规格。取值为： \"1\"：小型，SNAT最大连接数10000；\"2\"：中型，SNAT最大连接数50000；\"3\"：大型，SNAT最大连接数200000；\"4\"：超大型，SNAT最大连接数1000000
+        公网NAT网关实例的规格。取值为： \"1\"：小型，SNAT最大连接数10000；\"2\"：中型，SNAT最大连接数50000；\"3\"：大型，SNAT最大连接数200000；\"4\"：超大型，SNAT最大连接数1000000。
 
         :return: The spec of this ListNatGatewaysRequest.
         :rtype: list[str]
@@ -244,7 +244,7 @@ class ListNatGatewaysRequest:
     def spec(self, spec):
         r"""Sets the spec of this ListNatGatewaysRequest.
 
-        公网NAT网关实例的规格。取值为： \"1\"：小型，SNAT最大连接数10000；\"2\"：中型，SNAT最大连接数50000；\"3\"：大型，SNAT最大连接数200000；\"4\"：超大型，SNAT最大连接数1000000
+        公网NAT网关实例的规格。取值为： \"1\"：小型，SNAT最大连接数10000；\"2\"：中型，SNAT最大连接数50000；\"3\"：大型，SNAT最大连接数200000；\"4\"：超大型，SNAT最大连接数1000000。
 
         :param spec: The spec of this ListNatGatewaysRequest.
         :type spec: list[str]
@@ -277,7 +277,7 @@ class ListNatGatewaysRequest:
     def limit(self):
         r"""Gets the limit of this ListNatGatewaysRequest.
 
-        功能说明：每页返回的个数。取值范围：0~2000。默认值：2000。
+        功能说明：每页返回的个数。取值范围：1~2000。默认值：2000。
 
         :return: The limit of this ListNatGatewaysRequest.
         :rtype: int
@@ -288,7 +288,7 @@ class ListNatGatewaysRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListNatGatewaysRequest.
 
-        功能说明：每页返回的个数。取值范围：0~2000。默认值：2000。
+        功能说明：每页返回的个数。取值范围：1~2000。默认值：2000。
 
         :param limit: The limit of this ListNatGatewaysRequest.
         :type limit: int

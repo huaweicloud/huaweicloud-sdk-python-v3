@@ -35,7 +35,9 @@ class Record:
         'is_reconnect': 'bool',
         'connection_failure_reason': 'str',
         'network_rtt': 'int',
-        'e2e_rtt': 'int'
+        'e2e_rtt': 'int',
+        'source_ip': 'str',
+        'public_ip': 'str'
     }
 
     attribute_map = {
@@ -57,19 +59,21 @@ class Record:
         'is_reconnect': 'is_reconnect',
         'connection_failure_reason': 'connection_failure_reason',
         'network_rtt': 'network_rtt',
-        'e2e_rtt': 'e2e_rtt'
+        'e2e_rtt': 'e2e_rtt',
+        'source_ip': 'source_ip',
+        'public_ip': 'public_ip'
     }
 
-    def __init__(self, tenant_id=None, sid=None, transaction_id=None, computer_name=None, user_name=None, terminal_mac=None, terminal_name=None, terminal_ip=None, client_version=None, terminal_type=None, agent_version=None, desktop_ip=None, connection_start_time=None, connection_setup_time=None, connection_end_time=None, is_reconnect=None, connection_failure_reason=None, network_rtt=None, e2e_rtt=None):
+    def __init__(self, tenant_id=None, sid=None, transaction_id=None, computer_name=None, user_name=None, terminal_mac=None, terminal_name=None, terminal_ip=None, client_version=None, terminal_type=None, agent_version=None, desktop_ip=None, connection_start_time=None, connection_setup_time=None, connection_end_time=None, is_reconnect=None, connection_failure_reason=None, network_rtt=None, e2e_rtt=None, source_ip=None, public_ip=None):
         r"""Record
 
         The model defined in huaweicloud sdk
 
-        :param tenant_id: 租户id，不对外展示
+        :param tenant_id: 租户id，不对外展示。
         :type tenant_id: str
-        :param sid: 桌面sid
+        :param sid: 桌面sid。
         :type sid: str
-        :param transaction_id: 事务id
+        :param transaction_id: 事务id。
         :type transaction_id: str
         :param computer_name: 计算机名。
         :type computer_name: str
@@ -99,10 +103,14 @@ class Record:
         :type is_reconnect: bool
         :param connection_failure_reason: 连接失败原因。
         :type connection_failure_reason: str
-        :param network_rtt: 网络时延ms
+        :param network_rtt: 网络时延ms。
         :type network_rtt: int
-        :param e2e_rtt: 端到端时延 ms
+        :param e2e_rtt: 端到端时延 ms。
         :type e2e_rtt: int
+        :param source_ip: 客户端源ip
+        :type source_ip: str
+        :param public_ip: 客户端出网IP
+        :type public_ip: str
         """
         
         
@@ -126,6 +134,8 @@ class Record:
         self._connection_failure_reason = None
         self._network_rtt = None
         self._e2e_rtt = None
+        self._source_ip = None
+        self._public_ip = None
         self.discriminator = None
 
         if tenant_id is not None:
@@ -166,12 +176,16 @@ class Record:
             self.network_rtt = network_rtt
         if e2e_rtt is not None:
             self.e2e_rtt = e2e_rtt
+        if source_ip is not None:
+            self.source_ip = source_ip
+        if public_ip is not None:
+            self.public_ip = public_ip
 
     @property
     def tenant_id(self):
         r"""Gets the tenant_id of this Record.
 
-        租户id，不对外展示
+        租户id，不对外展示。
 
         :return: The tenant_id of this Record.
         :rtype: str
@@ -182,7 +196,7 @@ class Record:
     def tenant_id(self, tenant_id):
         r"""Sets the tenant_id of this Record.
 
-        租户id，不对外展示
+        租户id，不对外展示。
 
         :param tenant_id: The tenant_id of this Record.
         :type tenant_id: str
@@ -193,7 +207,7 @@ class Record:
     def sid(self):
         r"""Gets the sid of this Record.
 
-        桌面sid
+        桌面sid。
 
         :return: The sid of this Record.
         :rtype: str
@@ -204,7 +218,7 @@ class Record:
     def sid(self, sid):
         r"""Sets the sid of this Record.
 
-        桌面sid
+        桌面sid。
 
         :param sid: The sid of this Record.
         :type sid: str
@@ -215,7 +229,7 @@ class Record:
     def transaction_id(self):
         r"""Gets the transaction_id of this Record.
 
-        事务id
+        事务id。
 
         :return: The transaction_id of this Record.
         :rtype: str
@@ -226,7 +240,7 @@ class Record:
     def transaction_id(self, transaction_id):
         r"""Sets the transaction_id of this Record.
 
-        事务id
+        事务id。
 
         :param transaction_id: The transaction_id of this Record.
         :type transaction_id: str
@@ -545,7 +559,7 @@ class Record:
     def network_rtt(self):
         r"""Gets the network_rtt of this Record.
 
-        网络时延ms
+        网络时延ms。
 
         :return: The network_rtt of this Record.
         :rtype: int
@@ -556,7 +570,7 @@ class Record:
     def network_rtt(self, network_rtt):
         r"""Sets the network_rtt of this Record.
 
-        网络时延ms
+        网络时延ms。
 
         :param network_rtt: The network_rtt of this Record.
         :type network_rtt: int
@@ -567,7 +581,7 @@ class Record:
     def e2e_rtt(self):
         r"""Gets the e2e_rtt of this Record.
 
-        端到端时延 ms
+        端到端时延 ms。
 
         :return: The e2e_rtt of this Record.
         :rtype: int
@@ -578,12 +592,56 @@ class Record:
     def e2e_rtt(self, e2e_rtt):
         r"""Sets the e2e_rtt of this Record.
 
-        端到端时延 ms
+        端到端时延 ms。
 
         :param e2e_rtt: The e2e_rtt of this Record.
         :type e2e_rtt: int
         """
         self._e2e_rtt = e2e_rtt
+
+    @property
+    def source_ip(self):
+        r"""Gets the source_ip of this Record.
+
+        客户端源ip
+
+        :return: The source_ip of this Record.
+        :rtype: str
+        """
+        return self._source_ip
+
+    @source_ip.setter
+    def source_ip(self, source_ip):
+        r"""Sets the source_ip of this Record.
+
+        客户端源ip
+
+        :param source_ip: The source_ip of this Record.
+        :type source_ip: str
+        """
+        self._source_ip = source_ip
+
+    @property
+    def public_ip(self):
+        r"""Gets the public_ip of this Record.
+
+        客户端出网IP
+
+        :return: The public_ip of this Record.
+        :rtype: str
+        """
+        return self._public_ip
+
+    @public_ip.setter
+    def public_ip(self, public_ip):
+        r"""Sets the public_ip of this Record.
+
+        客户端出网IP
+
+        :param public_ip: The public_ip of this Record.
+        :type public_ip: str
+        """
+        self._public_ip = public_ip
 
     def to_dict(self):
         """Returns the model properties as a dict"""

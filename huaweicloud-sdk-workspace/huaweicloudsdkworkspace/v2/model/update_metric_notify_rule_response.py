@@ -42,19 +42,19 @@ class UpdateMetricNotifyRuleResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param rule_id: 规则ID
+        :param rule_id: 规则ID。
         :type rule_id: str
         :param metric_name: 统计指标名称，目前仅支持固定值：desktop_idle_duration * &#x60;desktop_idle_duration&#x60; -  桌面空闲时长
         :type metric_name: str
-        :param threshold: 统计持续周期(天)
+        :param threshold: 统计持续周期(天)。
         :type threshold: int
         :param comparison_operator: 统计指标对应的统计值和threshold进行比较的条件 * &#x60;&gt;&#x3D;&#x60; -  统计指标大于等于threshold时触发 * &#x60;&gt;&#x60; -   统计指标大于threshold时触发 * &#x60;&#x3D;&#x60; -  统计指标等于threshold时触发 * &#x60;&lt;&#x3D;&#x60; -  统计指标小于等于threshold时触发 * &#x60;&lt;&#x60; -  统计指标小于threshold时触发
         :type comparison_operator: str
         :param interval: 触发通知后；下次通知的间隔时间;默认每天一次
         :type interval: int
-        :param enable: 启禁用规则 true:启用 false:禁用
+        :param enable: 启禁用规则 true:启用 false:禁用。
         :type enable: bool
-        :param notify_object: 通知对象;smn的主题urn
+        :param notify_object: 通知对象;smn的主题urn。
         :type notify_object: str
         """
         
@@ -88,7 +88,7 @@ class UpdateMetricNotifyRuleResponse(SdkResponse):
     def rule_id(self):
         r"""Gets the rule_id of this UpdateMetricNotifyRuleResponse.
 
-        规则ID
+        规则ID。
 
         :return: The rule_id of this UpdateMetricNotifyRuleResponse.
         :rtype: str
@@ -99,7 +99,7 @@ class UpdateMetricNotifyRuleResponse(SdkResponse):
     def rule_id(self, rule_id):
         r"""Sets the rule_id of this UpdateMetricNotifyRuleResponse.
 
-        规则ID
+        规则ID。
 
         :param rule_id: The rule_id of this UpdateMetricNotifyRuleResponse.
         :type rule_id: str
@@ -132,7 +132,7 @@ class UpdateMetricNotifyRuleResponse(SdkResponse):
     def threshold(self):
         r"""Gets the threshold of this UpdateMetricNotifyRuleResponse.
 
-        统计持续周期(天)
+        统计持续周期(天)。
 
         :return: The threshold of this UpdateMetricNotifyRuleResponse.
         :rtype: int
@@ -143,7 +143,7 @@ class UpdateMetricNotifyRuleResponse(SdkResponse):
     def threshold(self, threshold):
         r"""Sets the threshold of this UpdateMetricNotifyRuleResponse.
 
-        统计持续周期(天)
+        统计持续周期(天)。
 
         :param threshold: The threshold of this UpdateMetricNotifyRuleResponse.
         :type threshold: int
@@ -198,7 +198,7 @@ class UpdateMetricNotifyRuleResponse(SdkResponse):
     def enable(self):
         r"""Gets the enable of this UpdateMetricNotifyRuleResponse.
 
-        启禁用规则 true:启用 false:禁用
+        启禁用规则 true:启用 false:禁用。
 
         :return: The enable of this UpdateMetricNotifyRuleResponse.
         :rtype: bool
@@ -209,7 +209,7 @@ class UpdateMetricNotifyRuleResponse(SdkResponse):
     def enable(self, enable):
         r"""Sets the enable of this UpdateMetricNotifyRuleResponse.
 
-        启禁用规则 true:启用 false:禁用
+        启禁用规则 true:启用 false:禁用。
 
         :param enable: The enable of this UpdateMetricNotifyRuleResponse.
         :type enable: bool
@@ -220,7 +220,7 @@ class UpdateMetricNotifyRuleResponse(SdkResponse):
     def notify_object(self):
         r"""Gets the notify_object of this UpdateMetricNotifyRuleResponse.
 
-        通知对象;smn的主题urn
+        通知对象;smn的主题urn。
 
         :return: The notify_object of this UpdateMetricNotifyRuleResponse.
         :rtype: str
@@ -231,7 +231,7 @@ class UpdateMetricNotifyRuleResponse(SdkResponse):
     def notify_object(self, notify_object):
         r"""Sets the notify_object of this UpdateMetricNotifyRuleResponse.
 
-        通知对象;smn的主题urn
+        通知对象;smn的主题urn。
 
         :param notify_object: The notify_object of this UpdateMetricNotifyRuleResponse.
         :type notify_object: str

@@ -35,9 +35,9 @@ class ListDesktopActionsRequest:
 
         :param desktop_id: 桌面ID。
         :type desktop_id: str
-        :param offset: 每页限制数
+        :param offset: 每页限制数。
         :type offset: int
-        :param limit: 起始位置
+        :param limit: 起始位置。
         :type limit: int
         """
         
@@ -80,7 +80,7 @@ class ListDesktopActionsRequest:
     def offset(self):
         r"""Gets the offset of this ListDesktopActionsRequest.
 
-        每页限制数
+        每页限制数。
 
         :return: The offset of this ListDesktopActionsRequest.
         :rtype: int
@@ -91,7 +91,7 @@ class ListDesktopActionsRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListDesktopActionsRequest.
 
-        每页限制数
+        每页限制数。
 
         :param offset: The offset of this ListDesktopActionsRequest.
         :type offset: int
@@ -102,7 +102,7 @@ class ListDesktopActionsRequest:
     def limit(self):
         r"""Gets the limit of this ListDesktopActionsRequest.
 
-        起始位置
+        起始位置。
 
         :return: The limit of this ListDesktopActionsRequest.
         :rtype: int
@@ -113,7 +113,7 @@ class ListDesktopActionsRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListDesktopActionsRequest.
 
-        起始位置
+        起始位置。
 
         :param limit: The limit of this ListDesktopActionsRequest.
         :type limit: int

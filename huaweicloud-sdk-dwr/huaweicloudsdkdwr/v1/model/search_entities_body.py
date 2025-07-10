@@ -45,23 +45,23 @@ class SearchEntitiesBody:
 
         The model defined in huaweicloud sdk
 
-        :param store_name: 知识仓实例名称
+        :param store_name: **参数解释：** 知识仓实例名称，region内唯一。 **约束限制：** 长度范围为3到63个字符，支持小写字母、数字、中划线（-），第一个字符只能够是小写字母，中划线(-)不得出现在字符串末尾。 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type store_name: str
-        :param collection_name: collection名称
+        :param collection_name: **参数解释：** collection名称，知识仓内唯一。 **约束限制：** 长度范围为1到255个字符，支持字母、数字、中划线（-）和下划线（_），大小写敏感。第一个字符只能够是下划线（_）和字母，中划线(-)不得出现在字符串末尾。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type collection_name: str
-        :param output_fields: 配置需返回的字段。
+        :param output_fields: **参数解释：** field名称列表，配置需与搜索结果一起返回的字段。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** [ ]，不返回任何额外的字段数据。
         :type output_fields: list[str]
-        :param top_k: 返回个数限制
+        :param top_k: **参数解释：** 返回的entity个数限制。可以将此参数与offset结合使用以启用分页。 **约束限制：** 与offset取值的总和应小于16384。 **取值范围：** &#x60;[1, 16384]&#x60; **默认取值:** 10
         :type top_k: int
-        :param offset: 搜索结果中要跳过的entity数。
+        :param offset: **参数解释：** 在搜索结果中跳过的记录数。可以将此参数与 top_k 参数结合使用以启用分页。 **约束限制：** 与top_k取值的总和应小于16384。 **取值范围：** 大于等于0 **默认取值：** 0
         :type offset: int
-        :param filter: 设置过滤表达式。 filter的表达式格式为详见Filter规则
+        :param filter: **参数解释：** 用于过滤匹配entity的标量过滤条件。可以将此设置为空字符串以跳过标量过滤。 **约束限制：** 要构建标量过滤条件，请参阅filter表达式规则。 **取值范围：** 不涉及。 **默认取值：** 空字符串，不进行标量过滤。
         :type filter: str
-        :param vector: 需要搜索的向量数据
+        :param vector: **参数解释：** 要搜索的向量字段数据。 **约束限制：** 与collection field schema中定义的对应向量字段的类型和维度一致。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
         :type vector: list[float]
-        :param vector_field: 表示要查询的向量列名字
+        :param vector_field: **参数解释：** 要搜索的向量字段名称。 **约束限制：** 必须是collection field schema中存在的向量字段名称。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
         :type vector_field: str
-        :param params: 向量查询自定义参数:  ef:每个查询的邻居候选集大小。候选集越大，搜索的精度越高，但是搜索时间也会随之增加。（对HNSW生效） - search_list: 候选列表的大小，越大召回率越高，但性能会下降。（对HANNS生效） - nprobe: 返回的最近的聚类单元的数量。（对IVF_FLAT生效） - radius：查询范围的半径，若指定则进行range查询。
+        :param params: **参数解释：** 额外的搜索参数配置。 可以配置的参数： - ef: 每个查询的邻居候选集大小。候选集越大，搜索的精度越高，但是搜索时间也会随之增加。（仅对HNSW索引类型生效） - search_list: 候选列表的大小，越大召回率越高，但性能会下降。（仅对HANNS索引类型生效） - radius：查询范围的半径，若指定则进行range查询。  **约束限制：** 不涉及。 **取值范围：**   ef: [top_k + offset, int32_max]  search_list: [top_k + offset, int32_max]  radius: [0, 1.0] **默认取值:**  ef: top_k  search_list: 16
         :type params: dict(str, object)
         """
         
@@ -97,7 +97,7 @@ class SearchEntitiesBody:
     def store_name(self):
         r"""Gets the store_name of this SearchEntitiesBody.
 
-        知识仓实例名称
+        **参数解释：** 知识仓实例名称，region内唯一。 **约束限制：** 长度范围为3到63个字符，支持小写字母、数字、中划线（-），第一个字符只能够是小写字母，中划线(-)不得出现在字符串末尾。 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The store_name of this SearchEntitiesBody.
         :rtype: str
@@ -108,7 +108,7 @@ class SearchEntitiesBody:
     def store_name(self, store_name):
         r"""Sets the store_name of this SearchEntitiesBody.
 
-        知识仓实例名称
+        **参数解释：** 知识仓实例名称，region内唯一。 **约束限制：** 长度范围为3到63个字符，支持小写字母、数字、中划线（-），第一个字符只能够是小写字母，中划线(-)不得出现在字符串末尾。 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param store_name: The store_name of this SearchEntitiesBody.
         :type store_name: str
@@ -119,7 +119,7 @@ class SearchEntitiesBody:
     def collection_name(self):
         r"""Gets the collection_name of this SearchEntitiesBody.
 
-        collection名称
+        **参数解释：** collection名称，知识仓内唯一。 **约束限制：** 长度范围为1到255个字符，支持字母、数字、中划线（-）和下划线（_），大小写敏感。第一个字符只能够是下划线（_）和字母，中划线(-)不得出现在字符串末尾。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The collection_name of this SearchEntitiesBody.
         :rtype: str
@@ -130,7 +130,7 @@ class SearchEntitiesBody:
     def collection_name(self, collection_name):
         r"""Sets the collection_name of this SearchEntitiesBody.
 
-        collection名称
+        **参数解释：** collection名称，知识仓内唯一。 **约束限制：** 长度范围为1到255个字符，支持字母、数字、中划线（-）和下划线（_），大小写敏感。第一个字符只能够是下划线（_）和字母，中划线(-)不得出现在字符串末尾。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param collection_name: The collection_name of this SearchEntitiesBody.
         :type collection_name: str
@@ -141,7 +141,7 @@ class SearchEntitiesBody:
     def output_fields(self):
         r"""Gets the output_fields of this SearchEntitiesBody.
 
-        配置需返回的字段。
+        **参数解释：** field名称列表，配置需与搜索结果一起返回的字段。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** [ ]，不返回任何额外的字段数据。
 
         :return: The output_fields of this SearchEntitiesBody.
         :rtype: list[str]
@@ -152,7 +152,7 @@ class SearchEntitiesBody:
     def output_fields(self, output_fields):
         r"""Sets the output_fields of this SearchEntitiesBody.
 
-        配置需返回的字段。
+        **参数解释：** field名称列表，配置需与搜索结果一起返回的字段。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** [ ]，不返回任何额外的字段数据。
 
         :param output_fields: The output_fields of this SearchEntitiesBody.
         :type output_fields: list[str]
@@ -163,7 +163,7 @@ class SearchEntitiesBody:
     def top_k(self):
         r"""Gets the top_k of this SearchEntitiesBody.
 
-        返回个数限制
+        **参数解释：** 返回的entity个数限制。可以将此参数与offset结合使用以启用分页。 **约束限制：** 与offset取值的总和应小于16384。 **取值范围：** `[1, 16384]` **默认取值:** 10
 
         :return: The top_k of this SearchEntitiesBody.
         :rtype: int
@@ -174,7 +174,7 @@ class SearchEntitiesBody:
     def top_k(self, top_k):
         r"""Sets the top_k of this SearchEntitiesBody.
 
-        返回个数限制
+        **参数解释：** 返回的entity个数限制。可以将此参数与offset结合使用以启用分页。 **约束限制：** 与offset取值的总和应小于16384。 **取值范围：** `[1, 16384]` **默认取值:** 10
 
         :param top_k: The top_k of this SearchEntitiesBody.
         :type top_k: int
@@ -185,7 +185,7 @@ class SearchEntitiesBody:
     def offset(self):
         r"""Gets the offset of this SearchEntitiesBody.
 
-        搜索结果中要跳过的entity数。
+        **参数解释：** 在搜索结果中跳过的记录数。可以将此参数与 top_k 参数结合使用以启用分页。 **约束限制：** 与top_k取值的总和应小于16384。 **取值范围：** 大于等于0 **默认取值：** 0
 
         :return: The offset of this SearchEntitiesBody.
         :rtype: int
@@ -196,7 +196,7 @@ class SearchEntitiesBody:
     def offset(self, offset):
         r"""Sets the offset of this SearchEntitiesBody.
 
-        搜索结果中要跳过的entity数。
+        **参数解释：** 在搜索结果中跳过的记录数。可以将此参数与 top_k 参数结合使用以启用分页。 **约束限制：** 与top_k取值的总和应小于16384。 **取值范围：** 大于等于0 **默认取值：** 0
 
         :param offset: The offset of this SearchEntitiesBody.
         :type offset: int
@@ -207,7 +207,7 @@ class SearchEntitiesBody:
     def filter(self):
         r"""Gets the filter of this SearchEntitiesBody.
 
-        设置过滤表达式。 filter的表达式格式为详见Filter规则
+        **参数解释：** 用于过滤匹配entity的标量过滤条件。可以将此设置为空字符串以跳过标量过滤。 **约束限制：** 要构建标量过滤条件，请参阅filter表达式规则。 **取值范围：** 不涉及。 **默认取值：** 空字符串，不进行标量过滤。
 
         :return: The filter of this SearchEntitiesBody.
         :rtype: str
@@ -218,7 +218,7 @@ class SearchEntitiesBody:
     def filter(self, filter):
         r"""Sets the filter of this SearchEntitiesBody.
 
-        设置过滤表达式。 filter的表达式格式为详见Filter规则
+        **参数解释：** 用于过滤匹配entity的标量过滤条件。可以将此设置为空字符串以跳过标量过滤。 **约束限制：** 要构建标量过滤条件，请参阅filter表达式规则。 **取值范围：** 不涉及。 **默认取值：** 空字符串，不进行标量过滤。
 
         :param filter: The filter of this SearchEntitiesBody.
         :type filter: str
@@ -229,7 +229,7 @@ class SearchEntitiesBody:
     def vector(self):
         r"""Gets the vector of this SearchEntitiesBody.
 
-        需要搜索的向量数据
+        **参数解释：** 要搜索的向量字段数据。 **约束限制：** 与collection field schema中定义的对应向量字段的类型和维度一致。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :return: The vector of this SearchEntitiesBody.
         :rtype: list[float]
@@ -240,7 +240,7 @@ class SearchEntitiesBody:
     def vector(self, vector):
         r"""Sets the vector of this SearchEntitiesBody.
 
-        需要搜索的向量数据
+        **参数解释：** 要搜索的向量字段数据。 **约束限制：** 与collection field schema中定义的对应向量字段的类型和维度一致。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :param vector: The vector of this SearchEntitiesBody.
         :type vector: list[float]
@@ -251,7 +251,7 @@ class SearchEntitiesBody:
     def vector_field(self):
         r"""Gets the vector_field of this SearchEntitiesBody.
 
-        表示要查询的向量列名字
+        **参数解释：** 要搜索的向量字段名称。 **约束限制：** 必须是collection field schema中存在的向量字段名称。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :return: The vector_field of this SearchEntitiesBody.
         :rtype: str
@@ -262,7 +262,7 @@ class SearchEntitiesBody:
     def vector_field(self, vector_field):
         r"""Sets the vector_field of this SearchEntitiesBody.
 
-        表示要查询的向量列名字
+        **参数解释：** 要搜索的向量字段名称。 **约束限制：** 必须是collection field schema中存在的向量字段名称。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :param vector_field: The vector_field of this SearchEntitiesBody.
         :type vector_field: str
@@ -273,7 +273,7 @@ class SearchEntitiesBody:
     def params(self):
         r"""Gets the params of this SearchEntitiesBody.
 
-        向量查询自定义参数:  ef:每个查询的邻居候选集大小。候选集越大，搜索的精度越高，但是搜索时间也会随之增加。（对HNSW生效） - search_list: 候选列表的大小，越大召回率越高，但性能会下降。（对HANNS生效） - nprobe: 返回的最近的聚类单元的数量。（对IVF_FLAT生效） - radius：查询范围的半径，若指定则进行range查询。
+        **参数解释：** 额外的搜索参数配置。 可以配置的参数： - ef: 每个查询的邻居候选集大小。候选集越大，搜索的精度越高，但是搜索时间也会随之增加。（仅对HNSW索引类型生效） - search_list: 候选列表的大小，越大召回率越高，但性能会下降。（仅对HANNS索引类型生效） - radius：查询范围的半径，若指定则进行range查询。  **约束限制：** 不涉及。 **取值范围：**   ef: [top_k + offset, int32_max]  search_list: [top_k + offset, int32_max]  radius: [0, 1.0] **默认取值:**  ef: top_k  search_list: 16
 
         :return: The params of this SearchEntitiesBody.
         :rtype: dict(str, object)
@@ -284,7 +284,7 @@ class SearchEntitiesBody:
     def params(self, params):
         r"""Sets the params of this SearchEntitiesBody.
 
-        向量查询自定义参数:  ef:每个查询的邻居候选集大小。候选集越大，搜索的精度越高，但是搜索时间也会随之增加。（对HNSW生效） - search_list: 候选列表的大小，越大召回率越高，但性能会下降。（对HANNS生效） - nprobe: 返回的最近的聚类单元的数量。（对IVF_FLAT生效） - radius：查询范围的半径，若指定则进行range查询。
+        **参数解释：** 额外的搜索参数配置。 可以配置的参数： - ef: 每个查询的邻居候选集大小。候选集越大，搜索的精度越高，但是搜索时间也会随之增加。（仅对HNSW索引类型生效） - search_list: 候选列表的大小，越大召回率越高，但性能会下降。（仅对HANNS索引类型生效） - radius：查询范围的半径，若指定则进行range查询。  **约束限制：** 不涉及。 **取值范围：**   ef: [top_k + offset, int32_max]  search_list: [top_k + offset, int32_max]  radius: [0, 1.0] **默认取值:**  ef: top_k  search_list: 16
 
         :param params: The params of this SearchEntitiesBody.
         :type params: dict(str, object)

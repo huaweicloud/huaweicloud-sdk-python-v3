@@ -32,9 +32,9 @@ class CreateCollectionResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param code: 返回码
+        :param code: **参数解释：** 返回码。参见错误码章节。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
         :type code: str
-        :param message: 描述信息
+        :param message: **参数解释：** 描述信息。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
         :type message: str
         """
         
@@ -53,7 +53,7 @@ class CreateCollectionResponse(SdkResponse):
     def code(self):
         r"""Gets the code of this CreateCollectionResponse.
 
-        返回码
+        **参数解释：** 返回码。参见错误码章节。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :return: The code of this CreateCollectionResponse.
         :rtype: str
@@ -64,7 +64,7 @@ class CreateCollectionResponse(SdkResponse):
     def code(self, code):
         r"""Sets the code of this CreateCollectionResponse.
 
-        返回码
+        **参数解释：** 返回码。参见错误码章节。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :param code: The code of this CreateCollectionResponse.
         :type code: str
@@ -75,7 +75,7 @@ class CreateCollectionResponse(SdkResponse):
     def message(self):
         r"""Gets the message of this CreateCollectionResponse.
 
-        描述信息
+        **参数解释：** 描述信息。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :return: The message of this CreateCollectionResponse.
         :rtype: str
@@ -86,7 +86,7 @@ class CreateCollectionResponse(SdkResponse):
     def message(self, message):
         r"""Sets the message of this CreateCollectionResponse.
 
-        描述信息
+        **参数解释：** 描述信息。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :param message: The message of this CreateCollectionResponse.
         :type message: str

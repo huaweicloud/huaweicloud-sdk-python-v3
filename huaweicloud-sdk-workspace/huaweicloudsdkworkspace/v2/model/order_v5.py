@@ -37,15 +37,15 @@ class OrderV5:
 
         The model defined in huaweicloud sdk
 
-        :param order_id: 订单id
+        :param order_id: 订单id。
         :type order_id: str
-        :param order_status: 订单状态:0:初始化; 1:待审核; 2:待退款; 3:处理中; 4:已取消; 5:已完成; 6:待支付; 7:补偿中; 8:待审批; 9:待确认; 10:待发货; 11:待收货; 12:待上门取货; 13:换新中; 14:待商家收货
+        :param order_status: 订单状态:0:初始化; 1:待审核; 2:待退款; 3:处理中; 4:已取消; 5:已完成; 6:待支付; 7:补偿中; 8:待审批; 9:待确认; 10:待发货; 11:待收货; 12:待上门取货; 13:换新中; 14:待商家收货。
         :type order_status: int
-        :param result: 结果，SUCCESS:成功； FAIL：失败
+        :param result: 结果，SUCCESS:成功； FAIL：失败。
         :type result: str
-        :param result_code: result&#x3D;FAIL时，必填，标识该订单失败原因
+        :param result_code: result&#x3D;FAIL时，必填，表示该订单失败原因。
         :type result_code: str
-        :param result_msg: 失败信息，和result_code结对出现
+        :param result_msg: 失败信息，和result_code结对出现。
         :type result_msg: str
         """
         
@@ -73,7 +73,7 @@ class OrderV5:
     def order_id(self):
         r"""Gets the order_id of this OrderV5.
 
-        订单id
+        订单id。
 
         :return: The order_id of this OrderV5.
         :rtype: str
@@ -84,7 +84,7 @@ class OrderV5:
     def order_id(self, order_id):
         r"""Sets the order_id of this OrderV5.
 
-        订单id
+        订单id。
 
         :param order_id: The order_id of this OrderV5.
         :type order_id: str
@@ -95,7 +95,7 @@ class OrderV5:
     def order_status(self):
         r"""Gets the order_status of this OrderV5.
 
-        订单状态:0:初始化; 1:待审核; 2:待退款; 3:处理中; 4:已取消; 5:已完成; 6:待支付; 7:补偿中; 8:待审批; 9:待确认; 10:待发货; 11:待收货; 12:待上门取货; 13:换新中; 14:待商家收货
+        订单状态:0:初始化; 1:待审核; 2:待退款; 3:处理中; 4:已取消; 5:已完成; 6:待支付; 7:补偿中; 8:待审批; 9:待确认; 10:待发货; 11:待收货; 12:待上门取货; 13:换新中; 14:待商家收货。
 
         :return: The order_status of this OrderV5.
         :rtype: int
@@ -106,7 +106,7 @@ class OrderV5:
     def order_status(self, order_status):
         r"""Sets the order_status of this OrderV5.
 
-        订单状态:0:初始化; 1:待审核; 2:待退款; 3:处理中; 4:已取消; 5:已完成; 6:待支付; 7:补偿中; 8:待审批; 9:待确认; 10:待发货; 11:待收货; 12:待上门取货; 13:换新中; 14:待商家收货
+        订单状态:0:初始化; 1:待审核; 2:待退款; 3:处理中; 4:已取消; 5:已完成; 6:待支付; 7:补偿中; 8:待审批; 9:待确认; 10:待发货; 11:待收货; 12:待上门取货; 13:换新中; 14:待商家收货。
 
         :param order_status: The order_status of this OrderV5.
         :type order_status: int
@@ -117,7 +117,7 @@ class OrderV5:
     def result(self):
         r"""Gets the result of this OrderV5.
 
-        结果，SUCCESS:成功； FAIL：失败
+        结果，SUCCESS:成功； FAIL：失败。
 
         :return: The result of this OrderV5.
         :rtype: str
@@ -128,7 +128,7 @@ class OrderV5:
     def result(self, result):
         r"""Sets the result of this OrderV5.
 
-        结果，SUCCESS:成功； FAIL：失败
+        结果，SUCCESS:成功； FAIL：失败。
 
         :param result: The result of this OrderV5.
         :type result: str
@@ -139,7 +139,7 @@ class OrderV5:
     def result_code(self):
         r"""Gets the result_code of this OrderV5.
 
-        result=FAIL时，必填，标识该订单失败原因
+        result=FAIL时，必填，表示该订单失败原因。
 
         :return: The result_code of this OrderV5.
         :rtype: str
@@ -150,7 +150,7 @@ class OrderV5:
     def result_code(self, result_code):
         r"""Sets the result_code of this OrderV5.
 
-        result=FAIL时，必填，标识该订单失败原因
+        result=FAIL时，必填，表示该订单失败原因。
 
         :param result_code: The result_code of this OrderV5.
         :type result_code: str
@@ -161,7 +161,7 @@ class OrderV5:
     def result_msg(self):
         r"""Gets the result_msg of this OrderV5.
 
-        失败信息，和result_code结对出现
+        失败信息，和result_code结对出现。
 
         :return: The result_msg of this OrderV5.
         :rtype: str
@@ -172,7 +172,7 @@ class OrderV5:
     def result_msg(self, result_msg):
         r"""Sets the result_msg of this OrderV5.
 
-        失败信息，和result_code结对出现
+        失败信息，和result_code结对出现。
 
         :param result_msg: The result_msg of this OrderV5.
         :type result_msg: str

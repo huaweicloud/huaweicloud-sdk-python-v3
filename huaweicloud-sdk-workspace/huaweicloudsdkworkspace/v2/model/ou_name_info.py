@@ -41,15 +41,15 @@ class OuNameInfo:
 
         :param id: ouid。
         :type id: str
-        :param domain_id: 域id
+        :param domain_id: 域id。
         :type domain_id: str
-        :param domain: 域名称
+        :param domain: 域名称。
         :type domain: str
-        :param ou_name: OU名称
+        :param ou_name: OU名称。
         :type ou_name: str
-        :param ou_dn: ouDn
+        :param ou_dn: ouDn。
         :type ou_dn: str
-        :param description: 描述
+        :param description: 描述。
         :type description: str
         """
         
@@ -102,7 +102,7 @@ class OuNameInfo:
     def domain_id(self):
         r"""Gets the domain_id of this OuNameInfo.
 
-        域id
+        域id。
 
         :return: The domain_id of this OuNameInfo.
         :rtype: str
@@ -113,7 +113,7 @@ class OuNameInfo:
     def domain_id(self, domain_id):
         r"""Sets the domain_id of this OuNameInfo.
 
-        域id
+        域id。
 
         :param domain_id: The domain_id of this OuNameInfo.
         :type domain_id: str
@@ -124,7 +124,7 @@ class OuNameInfo:
     def domain(self):
         r"""Gets the domain of this OuNameInfo.
 
-        域名称
+        域名称。
 
         :return: The domain of this OuNameInfo.
         :rtype: str
@@ -135,7 +135,7 @@ class OuNameInfo:
     def domain(self, domain):
         r"""Sets the domain of this OuNameInfo.
 
-        域名称
+        域名称。
 
         :param domain: The domain of this OuNameInfo.
         :type domain: str
@@ -146,7 +146,7 @@ class OuNameInfo:
     def ou_name(self):
         r"""Gets the ou_name of this OuNameInfo.
 
-        OU名称
+        OU名称。
 
         :return: The ou_name of this OuNameInfo.
         :rtype: str
@@ -157,7 +157,7 @@ class OuNameInfo:
     def ou_name(self, ou_name):
         r"""Sets the ou_name of this OuNameInfo.
 
-        OU名称
+        OU名称。
 
         :param ou_name: The ou_name of this OuNameInfo.
         :type ou_name: str
@@ -168,7 +168,7 @@ class OuNameInfo:
     def ou_dn(self):
         r"""Gets the ou_dn of this OuNameInfo.
 
-        ouDn
+        ouDn。
 
         :return: The ou_dn of this OuNameInfo.
         :rtype: str
@@ -179,7 +179,7 @@ class OuNameInfo:
     def ou_dn(self, ou_dn):
         r"""Sets the ou_dn of this OuNameInfo.
 
-        ouDn
+        ouDn。
 
         :param ou_dn: The ou_dn of this OuNameInfo.
         :type ou_dn: str
@@ -190,7 +190,7 @@ class OuNameInfo:
     def description(self):
         r"""Gets the description of this OuNameInfo.
 
-        描述
+        描述。
 
         :return: The description of this OuNameInfo.
         :rtype: str
@@ -201,7 +201,7 @@ class OuNameInfo:
     def description(self, description):
         r"""Sets the description of this OuNameInfo.
 
-        描述
+        描述。
 
         :param description: The description of this OuNameInfo.
         :type description: str

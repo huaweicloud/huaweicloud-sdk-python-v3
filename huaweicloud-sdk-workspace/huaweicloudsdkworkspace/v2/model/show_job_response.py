@@ -46,23 +46,23 @@ class ShowJobResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param id: 任务ID
+        :param id: 任务ID。
         :type id: str
-        :param job_type: 任务类型
+        :param job_type: 任务类型。
         :type job_type: str
-        :param begin_time: 任务开始时间
+        :param begin_time: 任务开始时间。
         :type begin_time: str
-        :param end_time: 任务结束时间
+        :param end_time: 任务结束时间。
         :type end_time: str
-        :param status: 任务状态
+        :param status: 任务状态。
         :type status: str
-        :param job_error_code: 任务错误码
+        :param job_error_code: 任务错误码。
         :type job_error_code: str
-        :param fail_reason: 任务失败原因
+        :param fail_reason: 任务失败原因。
         :type fail_reason: str
-        :param sub_jobs_total: 子任务总数
+        :param sub_jobs_total: 子任务总数。
         :type sub_jobs_total: int
-        :param sub_jobs: 子任务列表
+        :param sub_jobs: 子任务列表。
         :type sub_jobs: list[:class:`huaweicloudsdkworkspace.v2.JobDetailInfo`]
         """
         
@@ -102,7 +102,7 @@ class ShowJobResponse(SdkResponse):
     def id(self):
         r"""Gets the id of this ShowJobResponse.
 
-        任务ID
+        任务ID。
 
         :return: The id of this ShowJobResponse.
         :rtype: str
@@ -113,7 +113,7 @@ class ShowJobResponse(SdkResponse):
     def id(self, id):
         r"""Sets the id of this ShowJobResponse.
 
-        任务ID
+        任务ID。
 
         :param id: The id of this ShowJobResponse.
         :type id: str
@@ -124,7 +124,7 @@ class ShowJobResponse(SdkResponse):
     def job_type(self):
         r"""Gets the job_type of this ShowJobResponse.
 
-        任务类型
+        任务类型。
 
         :return: The job_type of this ShowJobResponse.
         :rtype: str
@@ -135,7 +135,7 @@ class ShowJobResponse(SdkResponse):
     def job_type(self, job_type):
         r"""Sets the job_type of this ShowJobResponse.
 
-        任务类型
+        任务类型。
 
         :param job_type: The job_type of this ShowJobResponse.
         :type job_type: str
@@ -146,7 +146,7 @@ class ShowJobResponse(SdkResponse):
     def begin_time(self):
         r"""Gets the begin_time of this ShowJobResponse.
 
-        任务开始时间
+        任务开始时间。
 
         :return: The begin_time of this ShowJobResponse.
         :rtype: str
@@ -157,7 +157,7 @@ class ShowJobResponse(SdkResponse):
     def begin_time(self, begin_time):
         r"""Sets the begin_time of this ShowJobResponse.
 
-        任务开始时间
+        任务开始时间。
 
         :param begin_time: The begin_time of this ShowJobResponse.
         :type begin_time: str
@@ -168,7 +168,7 @@ class ShowJobResponse(SdkResponse):
     def end_time(self):
         r"""Gets the end_time of this ShowJobResponse.
 
-        任务结束时间
+        任务结束时间。
 
         :return: The end_time of this ShowJobResponse.
         :rtype: str
@@ -179,7 +179,7 @@ class ShowJobResponse(SdkResponse):
     def end_time(self, end_time):
         r"""Sets the end_time of this ShowJobResponse.
 
-        任务结束时间
+        任务结束时间。
 
         :param end_time: The end_time of this ShowJobResponse.
         :type end_time: str
@@ -190,7 +190,7 @@ class ShowJobResponse(SdkResponse):
     def status(self):
         r"""Gets the status of this ShowJobResponse.
 
-        任务状态
+        任务状态。
 
         :return: The status of this ShowJobResponse.
         :rtype: str
@@ -201,7 +201,7 @@ class ShowJobResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this ShowJobResponse.
 
-        任务状态
+        任务状态。
 
         :param status: The status of this ShowJobResponse.
         :type status: str
@@ -212,7 +212,7 @@ class ShowJobResponse(SdkResponse):
     def job_error_code(self):
         r"""Gets the job_error_code of this ShowJobResponse.
 
-        任务错误码
+        任务错误码。
 
         :return: The job_error_code of this ShowJobResponse.
         :rtype: str
@@ -223,7 +223,7 @@ class ShowJobResponse(SdkResponse):
     def job_error_code(self, job_error_code):
         r"""Sets the job_error_code of this ShowJobResponse.
 
-        任务错误码
+        任务错误码。
 
         :param job_error_code: The job_error_code of this ShowJobResponse.
         :type job_error_code: str
@@ -234,7 +234,7 @@ class ShowJobResponse(SdkResponse):
     def fail_reason(self):
         r"""Gets the fail_reason of this ShowJobResponse.
 
-        任务失败原因
+        任务失败原因。
 
         :return: The fail_reason of this ShowJobResponse.
         :rtype: str
@@ -245,7 +245,7 @@ class ShowJobResponse(SdkResponse):
     def fail_reason(self, fail_reason):
         r"""Sets the fail_reason of this ShowJobResponse.
 
-        任务失败原因
+        任务失败原因。
 
         :param fail_reason: The fail_reason of this ShowJobResponse.
         :type fail_reason: str
@@ -256,7 +256,7 @@ class ShowJobResponse(SdkResponse):
     def sub_jobs_total(self):
         r"""Gets the sub_jobs_total of this ShowJobResponse.
 
-        子任务总数
+        子任务总数。
 
         :return: The sub_jobs_total of this ShowJobResponse.
         :rtype: int
@@ -267,7 +267,7 @@ class ShowJobResponse(SdkResponse):
     def sub_jobs_total(self, sub_jobs_total):
         r"""Sets the sub_jobs_total of this ShowJobResponse.
 
-        子任务总数
+        子任务总数。
 
         :param sub_jobs_total: The sub_jobs_total of this ShowJobResponse.
         :type sub_jobs_total: int
@@ -278,7 +278,7 @@ class ShowJobResponse(SdkResponse):
     def sub_jobs(self):
         r"""Gets the sub_jobs of this ShowJobResponse.
 
-        子任务列表
+        子任务列表。
 
         :return: The sub_jobs of this ShowJobResponse.
         :rtype: list[:class:`huaweicloudsdkworkspace.v2.JobDetailInfo`]
@@ -289,7 +289,7 @@ class ShowJobResponse(SdkResponse):
     def sub_jobs(self, sub_jobs):
         r"""Sets the sub_jobs of this ShowJobResponse.
 
-        子任务列表
+        子任务列表。
 
         :param sub_jobs: The sub_jobs of this ShowJobResponse.
         :type sub_jobs: list[:class:`huaweicloudsdkworkspace.v2.JobDetailInfo`]

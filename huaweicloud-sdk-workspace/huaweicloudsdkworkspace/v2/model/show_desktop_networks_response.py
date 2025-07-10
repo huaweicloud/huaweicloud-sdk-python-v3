@@ -30,7 +30,7 @@ class ShowDesktopNetworksResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param networks: 桌面网络信息列表
+        :param networks: 桌面网络信息列表。
         :type networks: list[:class:`huaweicloudsdkworkspace.v2.DesktopNetworkResult`]
         """
         
@@ -46,7 +46,7 @@ class ShowDesktopNetworksResponse(SdkResponse):
     def networks(self):
         r"""Gets the networks of this ShowDesktopNetworksResponse.
 
-        桌面网络信息列表
+        桌面网络信息列表。
 
         :return: The networks of this ShowDesktopNetworksResponse.
         :rtype: list[:class:`huaweicloudsdkworkspace.v2.DesktopNetworkResult`]
@@ -57,7 +57,7 @@ class ShowDesktopNetworksResponse(SdkResponse):
     def networks(self, networks):
         r"""Sets the networks of this ShowDesktopNetworksResponse.
 
-        桌面网络信息列表
+        桌面网络信息列表。
 
         :param networks: The networks of this ShowDesktopNetworksResponse.
         :type networks: list[:class:`huaweicloudsdkworkspace.v2.DesktopNetworkResult`]

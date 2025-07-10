@@ -29,7 +29,7 @@ class UpdateDesktopSidReq:
 
         The model defined in huaweicloud sdk
 
-        :param desktop_ids: 虚拟机列表
+        :param desktop_ids: 虚拟机列表。
         :type desktop_ids: list[str]
         """
         
@@ -44,7 +44,7 @@ class UpdateDesktopSidReq:
     def desktop_ids(self):
         r"""Gets the desktop_ids of this UpdateDesktopSidReq.
 
-        虚拟机列表
+        虚拟机列表。
 
         :return: The desktop_ids of this UpdateDesktopSidReq.
         :rtype: list[str]
@@ -55,7 +55,7 @@ class UpdateDesktopSidReq:
     def desktop_ids(self, desktop_ids):
         r"""Sets the desktop_ids of this UpdateDesktopSidReq.
 
-        虚拟机列表
+        虚拟机列表。
 
         :param desktop_ids: The desktop_ids of this UpdateDesktopSidReq.
         :type desktop_ids: list[str]

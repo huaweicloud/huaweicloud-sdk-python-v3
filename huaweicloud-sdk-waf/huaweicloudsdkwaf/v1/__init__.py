@@ -15,6 +15,7 @@ from huaweicloudsdkwaf.v1.model.anticrawler_rule import AnticrawlerRule
 from huaweicloudsdkwaf.v1.model.apply_certificate_to_host_request import ApplyCertificateToHostRequest
 from huaweicloudsdkwaf.v1.model.apply_certificate_to_host_request_body import ApplyCertificateToHostRequestBody
 from huaweicloudsdkwaf.v1.model.apply_certificate_to_host_response import ApplyCertificateToHostResponse
+from huaweicloudsdkwaf.v1.model.attack_action_count_item import AttackActionCountItem
 from huaweicloudsdkwaf.v1.model.attack_type_classification_item import AttackTypeClassificationItem
 from huaweicloudsdkwaf.v1.model.attack_type_item import AttackTypeItem
 from huaweicloudsdkwaf.v1.model.bandwidth_statistics_timeline_item import BandwidthStatisticsTimelineItem
@@ -36,6 +37,8 @@ from huaweicloudsdkwaf.v1.model.cloud_waf_host_item import CloudWafHostItem
 from huaweicloudsdkwaf.v1.model.cloud_waf_server import CloudWafServer
 from huaweicloudsdkwaf.v1.model.composite_host_response import CompositeHostResponse
 from huaweicloudsdkwaf.v1.model.condition import Condition
+from huaweicloudsdkwaf.v1.model.confirm_user_bundle_request import ConfirmUserBundleRequest
+from huaweicloudsdkwaf.v1.model.confirm_user_bundle_response import ConfirmUserBundleResponse
 from huaweicloudsdkwaf.v1.model.count_item import CountItem
 from huaweicloudsdkwaf.v1.model.create_anti_tamper_rule_request import CreateAntiTamperRuleRequest
 from huaweicloudsdkwaf.v1.model.create_anti_tamper_rule_response import CreateAntiTamperRuleResponse
@@ -152,6 +155,7 @@ from huaweicloudsdkwaf.v1.model.id_hostname_entry import IdHostnameEntry
 from huaweicloudsdkwaf.v1.model.ignore_advanced import IgnoreAdvanced
 from huaweicloudsdkwaf.v1.model.ignore_rule_body import IgnoreRuleBody
 from huaweicloudsdkwaf.v1.model.instance_info import InstanceInfo
+from huaweicloudsdkwaf.v1.model.instance_tag import InstanceTag
 from huaweicloudsdkwaf.v1.model.ip_classification_item import IpClassificationItem
 from huaweicloudsdkwaf.v1.model.ip_group import IpGroup
 from huaweicloudsdkwaf.v1.model.ip_group_body import IpGroupBody
@@ -164,6 +168,8 @@ from huaweicloudsdkwaf.v1.model.list_antileakage_rules_request import ListAntile
 from huaweicloudsdkwaf.v1.model.list_antileakage_rules_response import ListAntileakageRulesResponse
 from huaweicloudsdkwaf.v1.model.list_antitamper_rule_request import ListAntitamperRuleRequest
 from huaweicloudsdkwaf.v1.model.list_antitamper_rule_response import ListAntitamperRuleResponse
+from huaweicloudsdkwaf.v1.model.list_attack_action_types_request import ListAttackActionTypesRequest
+from huaweicloudsdkwaf.v1.model.list_attack_action_types_response import ListAttackActionTypesResponse
 from huaweicloudsdkwaf.v1.model.list_bandwidth_timeline_request import ListBandwidthTimelineRequest
 from huaweicloudsdkwaf.v1.model.list_bandwidth_timeline_response import ListBandwidthTimelineResponse
 from huaweicloudsdkwaf.v1.model.list_cc_rules_request import ListCcRulesRequest
@@ -188,6 +194,8 @@ from huaweicloudsdkwaf.v1.model.list_ignore_rule_response import ListIgnoreRuleR
 from huaweicloudsdkwaf.v1.model.list_instance import ListInstance
 from huaweicloudsdkwaf.v1.model.list_instance_request import ListInstanceRequest
 from huaweicloudsdkwaf.v1.model.list_instance_response import ListInstanceResponse
+from huaweicloudsdkwaf.v1.model.list_instance_tags_request import ListInstanceTagsRequest
+from huaweicloudsdkwaf.v1.model.list_instance_tags_response import ListInstanceTagsResponse
 from huaweicloudsdkwaf.v1.model.list_ip_group_request import ListIpGroupRequest
 from huaweicloudsdkwaf.v1.model.list_ip_group_response import ListIpGroupResponse
 from huaweicloudsdkwaf.v1.model.list_notice_configs_request import ListNoticeConfigsRequest
@@ -206,12 +214,18 @@ from huaweicloudsdkwaf.v1.model.list_qps_timeline_request import ListQpsTimeline
 from huaweicloudsdkwaf.v1.model.list_qps_timeline_response import ListQpsTimelineResponse
 from huaweicloudsdkwaf.v1.model.list_request_timeline_request import ListRequestTimelineRequest
 from huaweicloudsdkwaf.v1.model.list_request_timeline_response import ListRequestTimelineResponse
+from huaweicloudsdkwaf.v1.model.list_security_report_subscriptions_request import ListSecurityReportSubscriptionsRequest
+from huaweicloudsdkwaf.v1.model.list_security_report_subscriptions_response import ListSecurityReportSubscriptionsResponse
 from huaweicloudsdkwaf.v1.model.list_statistics_request import ListStatisticsRequest
 from huaweicloudsdkwaf.v1.model.list_statistics_response import ListStatisticsResponse
 from huaweicloudsdkwaf.v1.model.list_top_abnormal_request import ListTopAbnormalRequest
 from huaweicloudsdkwaf.v1.model.list_top_abnormal_response import ListTopAbnormalResponse
+from huaweicloudsdkwaf.v1.model.list_top_domains_request import ListTopDomainsRequest
+from huaweicloudsdkwaf.v1.model.list_top_domains_response import ListTopDomainsResponse
 from huaweicloudsdkwaf.v1.model.list_value_list_request import ListValueListRequest
 from huaweicloudsdkwaf.v1.model.list_value_list_response import ListValueListResponse
+from huaweicloudsdkwaf.v1.model.list_web_basic_protection_rules_request import ListWebBasicProtectionRulesRequest
+from huaweicloudsdkwaf.v1.model.list_web_basic_protection_rules_response import ListWebBasicProtectionRulesResponse
 from huaweicloudsdkwaf.v1.model.list_whiteblackip_rule_request import ListWhiteblackipRuleRequest
 from huaweicloudsdkwaf.v1.model.list_whiteblackip_rule_response import ListWhiteblackipRuleResponse
 from huaweicloudsdkwaf.v1.model.lts_id_info import LtsIdInfo
@@ -233,6 +247,7 @@ from huaweicloudsdkwaf.v1.model.resource_response import ResourceResponse
 from huaweicloudsdkwaf.v1.model.route_body import RouteBody
 from huaweicloudsdkwaf.v1.model.route_server_body import RouteServerBody
 from huaweicloudsdkwaf.v1.model.rule_info import RuleInfo
+from huaweicloudsdkwaf.v1.model.security_report_subscription_summary_response import SecurityReportSubscriptionSummaryResponse
 from huaweicloudsdkwaf.v1.model.share_info import ShareInfo
 from huaweicloudsdkwaf.v1.model.show_anticrawler_rule_request import ShowAnticrawlerRuleRequest
 from huaweicloudsdkwaf.v1.model.show_anticrawler_rule_response import ShowAnticrawlerRuleResponse
@@ -257,6 +272,8 @@ from huaweicloudsdkwaf.v1.model.show_geoip_rule_request import ShowGeoipRuleRequ
 from huaweicloudsdkwaf.v1.model.show_geoip_rule_response import ShowGeoipRuleResponse
 from huaweicloudsdkwaf.v1.model.show_host_request import ShowHostRequest
 from huaweicloudsdkwaf.v1.model.show_host_response import ShowHostResponse
+from huaweicloudsdkwaf.v1.model.show_host_status_request import ShowHostStatusRequest
+from huaweicloudsdkwaf.v1.model.show_host_status_response import ShowHostStatusResponse
 from huaweicloudsdkwaf.v1.model.show_ignore_rule_request import ShowIgnoreRuleRequest
 from huaweicloudsdkwaf.v1.model.show_ignore_rule_response import ShowIgnoreRuleResponse
 from huaweicloudsdkwaf.v1.model.show_instance_request import ShowInstanceRequest
@@ -265,6 +282,8 @@ from huaweicloudsdkwaf.v1.model.show_ip_group_request import ShowIpGroupRequest
 from huaweicloudsdkwaf.v1.model.show_ip_group_response import ShowIpGroupResponse
 from huaweicloudsdkwaf.v1.model.show_lts_info_config_request import ShowLtsInfoConfigRequest
 from huaweicloudsdkwaf.v1.model.show_lts_info_config_response import ShowLtsInfoConfigResponse
+from huaweicloudsdkwaf.v1.model.show_policy_geoip_map_request import ShowPolicyGeoipMapRequest
+from huaweicloudsdkwaf.v1.model.show_policy_geoip_map_response import ShowPolicyGeoipMapResponse
 from huaweicloudsdkwaf.v1.model.show_policy_request import ShowPolicyRequest
 from huaweicloudsdkwaf.v1.model.show_policy_response import ShowPolicyResponse
 from huaweicloudsdkwaf.v1.model.show_premium_host_request import ShowPremiumHostRequest
@@ -286,6 +305,7 @@ from huaweicloudsdkwaf.v1.model.statistics_timeline_item import StatisticsTimeli
 from huaweicloudsdkwaf.v1.model.time_line_item import TimeLineItem
 from huaweicloudsdkwaf.v1.model.timeout_config import TimeoutConfig
 from huaweicloudsdkwaf.v1.model.tms_resource_tag import TmsResourceTag
+from huaweicloudsdkwaf.v1.model.top_domains_count_item import TopDomainsCountItem
 from huaweicloudsdkwaf.v1.model.traffic_mark import TrafficMark
 from huaweicloudsdkwaf.v1.model.update_alert_notice_config_request import UpdateAlertNoticeConfigRequest
 from huaweicloudsdkwaf.v1.model.update_alert_notice_config_request_body import UpdateAlertNoticeConfigRequestBody
@@ -360,5 +380,6 @@ from huaweicloudsdkwaf.v1.model.url_item import UrlItem
 from huaweicloudsdkwaf.v1.model.value_list_response_body import ValueListResponseBody
 from huaweicloudsdkwaf.v1.model.waf_product_info import WafProductInfo
 from huaweicloudsdkwaf.v1.model.waf_server import WafServer
+from huaweicloudsdkwaf.v1.model.web_basic_protection_rules_item import WebBasicProtectionRulesItem
 from huaweicloudsdkwaf.v1.model.white_black_ip_response_body import WhiteBlackIpResponseBody
 

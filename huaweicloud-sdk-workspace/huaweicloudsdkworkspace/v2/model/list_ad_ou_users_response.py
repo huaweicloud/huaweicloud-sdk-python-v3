@@ -34,11 +34,11 @@ class ListAdOuUsersResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param user_infos: OU对象
+        :param user_infos: OU对象。
         :type user_infos: list[:class:`huaweicloudsdkworkspace.v2.AdOuUserInfo`]
-        :param total_count: 用户数
+        :param total_count: 用户数。
         :type total_count: int
-        :param enable_create_count: 可以创建的用户数量
+        :param enable_create_count: 可以创建的用户数量。
         :type enable_create_count: int
         """
         
@@ -60,7 +60,7 @@ class ListAdOuUsersResponse(SdkResponse):
     def user_infos(self):
         r"""Gets the user_infos of this ListAdOuUsersResponse.
 
-        OU对象
+        OU对象。
 
         :return: The user_infos of this ListAdOuUsersResponse.
         :rtype: list[:class:`huaweicloudsdkworkspace.v2.AdOuUserInfo`]
@@ -71,7 +71,7 @@ class ListAdOuUsersResponse(SdkResponse):
     def user_infos(self, user_infos):
         r"""Sets the user_infos of this ListAdOuUsersResponse.
 
-        OU对象
+        OU对象。
 
         :param user_infos: The user_infos of this ListAdOuUsersResponse.
         :type user_infos: list[:class:`huaweicloudsdkworkspace.v2.AdOuUserInfo`]
@@ -82,7 +82,7 @@ class ListAdOuUsersResponse(SdkResponse):
     def total_count(self):
         r"""Gets the total_count of this ListAdOuUsersResponse.
 
-        用户数
+        用户数。
 
         :return: The total_count of this ListAdOuUsersResponse.
         :rtype: int
@@ -93,7 +93,7 @@ class ListAdOuUsersResponse(SdkResponse):
     def total_count(self, total_count):
         r"""Sets the total_count of this ListAdOuUsersResponse.
 
-        用户数
+        用户数。
 
         :param total_count: The total_count of this ListAdOuUsersResponse.
         :type total_count: int
@@ -104,7 +104,7 @@ class ListAdOuUsersResponse(SdkResponse):
     def enable_create_count(self):
         r"""Gets the enable_create_count of this ListAdOuUsersResponse.
 
-        可以创建的用户数量
+        可以创建的用户数量。
 
         :return: The enable_create_count of this ListAdOuUsersResponse.
         :rtype: int
@@ -115,7 +115,7 @@ class ListAdOuUsersResponse(SdkResponse):
     def enable_create_count(self, enable_create_count):
         r"""Sets the enable_create_count of this ListAdOuUsersResponse.
 
-        可以创建的用户数量
+        可以创建的用户数量。
 
         :param enable_create_count: The enable_create_count of this ListAdOuUsersResponse.
         :type enable_create_count: int

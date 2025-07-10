@@ -31,9 +31,9 @@ class ShowQuotaDetailsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param site_id: 站点ID
+        :param site_id: 站点ID。
         :type site_id: str
-        :param az_code: 可用分区code
+        :param az_code: 可用分区code。
         :type az_code: str
         """
         
@@ -52,7 +52,7 @@ class ShowQuotaDetailsRequest:
     def site_id(self):
         r"""Gets the site_id of this ShowQuotaDetailsRequest.
 
-        站点ID
+        站点ID。
 
         :return: The site_id of this ShowQuotaDetailsRequest.
         :rtype: str
@@ -63,7 +63,7 @@ class ShowQuotaDetailsRequest:
     def site_id(self, site_id):
         r"""Sets the site_id of this ShowQuotaDetailsRequest.
 
-        站点ID
+        站点ID。
 
         :param site_id: The site_id of this ShowQuotaDetailsRequest.
         :type site_id: str
@@ -74,7 +74,7 @@ class ShowQuotaDetailsRequest:
     def az_code(self):
         r"""Gets the az_code of this ShowQuotaDetailsRequest.
 
-        可用分区code
+        可用分区code。
 
         :return: The az_code of this ShowQuotaDetailsRequest.
         :rtype: str
@@ -85,7 +85,7 @@ class ShowQuotaDetailsRequest:
     def az_code(self, az_code):
         r"""Sets the az_code of this ShowQuotaDetailsRequest.
 
-        可用分区code
+        可用分区code。
 
         :param az_code: The az_code of this ShowQuotaDetailsRequest.
         :type az_code: str

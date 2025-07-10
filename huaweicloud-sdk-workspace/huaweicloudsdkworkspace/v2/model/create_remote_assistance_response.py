@@ -36,11 +36,11 @@ class CreateRemoteAssistanceResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param share_space_id: 协同空间ID
+        :param share_space_id: 协同空间ID。
         :type share_space_id: str
         :param status: 协同空间状态 - OPEN 协同空间已创建 - CLOSE 协同空间已关闭 - WAIT_USER_CONFIRM 等待用户确认进入远程协助 - WAIT_USER_ACCESS 等待用户进入远程协助
         :type status: str
-        :param desktop_id: 桌面的desktopId
+        :param desktop_id: 桌面的desktopId。
         :type desktop_id: str
         :param initiator_type: 发起方类型 - ADMIN_INITIATE 管理员发起 - ENDUSER_INITIATE 终端用户发起
         :type initiator_type: str
@@ -67,7 +67,7 @@ class CreateRemoteAssistanceResponse(SdkResponse):
     def share_space_id(self):
         r"""Gets the share_space_id of this CreateRemoteAssistanceResponse.
 
-        协同空间ID
+        协同空间ID。
 
         :return: The share_space_id of this CreateRemoteAssistanceResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class CreateRemoteAssistanceResponse(SdkResponse):
     def share_space_id(self, share_space_id):
         r"""Sets the share_space_id of this CreateRemoteAssistanceResponse.
 
-        协同空间ID
+        协同空间ID。
 
         :param share_space_id: The share_space_id of this CreateRemoteAssistanceResponse.
         :type share_space_id: str
@@ -111,7 +111,7 @@ class CreateRemoteAssistanceResponse(SdkResponse):
     def desktop_id(self):
         r"""Gets the desktop_id of this CreateRemoteAssistanceResponse.
 
-        桌面的desktopId
+        桌面的desktopId。
 
         :return: The desktop_id of this CreateRemoteAssistanceResponse.
         :rtype: str
@@ -122,7 +122,7 @@ class CreateRemoteAssistanceResponse(SdkResponse):
     def desktop_id(self, desktop_id):
         r"""Sets the desktop_id of this CreateRemoteAssistanceResponse.
 
-        桌面的desktopId
+        桌面的desktopId。
 
         :param desktop_id: The desktop_id of this CreateRemoteAssistanceResponse.
         :type desktop_id: str

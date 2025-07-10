@@ -45,23 +45,23 @@ class AgentsCondition:
 
         The model defined in huaweicloud sdk
 
-        :param desktop_id: 桌面的desktopId
+        :param desktop_id: 桌面的desktopId。
         :type desktop_id: str
-        :param desktop_name: 桌面名称
+        :param desktop_name: 桌面名称。
         :type desktop_name: str
-        :param desktop_pool_id: 桌面池id
+        :param desktop_pool_id: 桌面池id。
         :type desktop_pool_id: str
-        :param status: 桌面运行状态
+        :param status: 桌面运行状态。
         :type status: str
-        :param task_status: 桌面的任务状态
+        :param task_status: 桌面的任务状态。
         :type task_status: str
-        :param ip_address: ip地址
+        :param ip_address: ip地址。
         :type ip_address: str
-        :param enterprise_project_id: 企业项目ID
+        :param enterprise_project_id: 企业项目ID。
         :type enterprise_project_id: str
         :param process: 桌面任务进度， 取值范围0-100以及null，null表示该桌面无任务，0-100表明该任务进度的百分比。
         :type process: int
-        :param agent_info: 单个桌面内的agent安装情况
+        :param agent_info: 单个桌面内的agent安装情况。
         :type agent_info: list[:class:`huaweicloudsdkworkspace.v2.AgentInfo`]
         """
         
@@ -101,7 +101,7 @@ class AgentsCondition:
     def desktop_id(self):
         r"""Gets the desktop_id of this AgentsCondition.
 
-        桌面的desktopId
+        桌面的desktopId。
 
         :return: The desktop_id of this AgentsCondition.
         :rtype: str
@@ -112,7 +112,7 @@ class AgentsCondition:
     def desktop_id(self, desktop_id):
         r"""Sets the desktop_id of this AgentsCondition.
 
-        桌面的desktopId
+        桌面的desktopId。
 
         :param desktop_id: The desktop_id of this AgentsCondition.
         :type desktop_id: str
@@ -123,7 +123,7 @@ class AgentsCondition:
     def desktop_name(self):
         r"""Gets the desktop_name of this AgentsCondition.
 
-        桌面名称
+        桌面名称。
 
         :return: The desktop_name of this AgentsCondition.
         :rtype: str
@@ -134,7 +134,7 @@ class AgentsCondition:
     def desktop_name(self, desktop_name):
         r"""Sets the desktop_name of this AgentsCondition.
 
-        桌面名称
+        桌面名称。
 
         :param desktop_name: The desktop_name of this AgentsCondition.
         :type desktop_name: str
@@ -145,7 +145,7 @@ class AgentsCondition:
     def desktop_pool_id(self):
         r"""Gets the desktop_pool_id of this AgentsCondition.
 
-        桌面池id
+        桌面池id。
 
         :return: The desktop_pool_id of this AgentsCondition.
         :rtype: str
@@ -156,7 +156,7 @@ class AgentsCondition:
     def desktop_pool_id(self, desktop_pool_id):
         r"""Sets the desktop_pool_id of this AgentsCondition.
 
-        桌面池id
+        桌面池id。
 
         :param desktop_pool_id: The desktop_pool_id of this AgentsCondition.
         :type desktop_pool_id: str
@@ -167,7 +167,7 @@ class AgentsCondition:
     def status(self):
         r"""Gets the status of this AgentsCondition.
 
-        桌面运行状态
+        桌面运行状态。
 
         :return: The status of this AgentsCondition.
         :rtype: str
@@ -178,7 +178,7 @@ class AgentsCondition:
     def status(self, status):
         r"""Sets the status of this AgentsCondition.
 
-        桌面运行状态
+        桌面运行状态。
 
         :param status: The status of this AgentsCondition.
         :type status: str
@@ -189,7 +189,7 @@ class AgentsCondition:
     def task_status(self):
         r"""Gets the task_status of this AgentsCondition.
 
-        桌面的任务状态
+        桌面的任务状态。
 
         :return: The task_status of this AgentsCondition.
         :rtype: str
@@ -200,7 +200,7 @@ class AgentsCondition:
     def task_status(self, task_status):
         r"""Sets the task_status of this AgentsCondition.
 
-        桌面的任务状态
+        桌面的任务状态。
 
         :param task_status: The task_status of this AgentsCondition.
         :type task_status: str
@@ -211,7 +211,7 @@ class AgentsCondition:
     def ip_address(self):
         r"""Gets the ip_address of this AgentsCondition.
 
-        ip地址
+        ip地址。
 
         :return: The ip_address of this AgentsCondition.
         :rtype: str
@@ -222,7 +222,7 @@ class AgentsCondition:
     def ip_address(self, ip_address):
         r"""Sets the ip_address of this AgentsCondition.
 
-        ip地址
+        ip地址。
 
         :param ip_address: The ip_address of this AgentsCondition.
         :type ip_address: str
@@ -233,7 +233,7 @@ class AgentsCondition:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this AgentsCondition.
 
-        企业项目ID
+        企业项目ID。
 
         :return: The enterprise_project_id of this AgentsCondition.
         :rtype: str
@@ -244,7 +244,7 @@ class AgentsCondition:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this AgentsCondition.
 
-        企业项目ID
+        企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this AgentsCondition.
         :type enterprise_project_id: str
@@ -277,7 +277,7 @@ class AgentsCondition:
     def agent_info(self):
         r"""Gets the agent_info of this AgentsCondition.
 
-        单个桌面内的agent安装情况
+        单个桌面内的agent安装情况。
 
         :return: The agent_info of this AgentsCondition.
         :rtype: list[:class:`huaweicloudsdkworkspace.v2.AgentInfo`]
@@ -288,7 +288,7 @@ class AgentsCondition:
     def agent_info(self, agent_info):
         r"""Sets the agent_info of this AgentsCondition.
 
-        单个桌面内的agent安装情况
+        单个桌面内的agent安装情况。
 
         :param agent_info: The agent_info of this AgentsCondition.
         :type agent_info: list[:class:`huaweicloudsdkworkspace.v2.AgentInfo`]

@@ -37,15 +37,15 @@ class BuildProgress:
 
         The model defined in huaweicloud sdk
 
-        :param index_name: 索引名
+        :param index_name: **参数解释：** 索引名称。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
         :type index_name: str
-        :param field_name: 索引对应的列
+        :param field_name: **参数解释：** 索引对应的字段名称。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
         :type field_name: str
-        :param build_progress: 构建索引的进度，进度值为[0,1]
+        :param build_progress: **参数解释：** 构建索引的进度。 **约束限制：** 不涉及。 **取值范围：** &#x60;[0,1]&#x60; **默认取值:** 不涉及。
         :type build_progress: float
-        :param indexed_rows: 已完成索引的数据量
+        :param indexed_rows: **参数解释：** 已完成索引的entity数量。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
         :type indexed_rows: int
-        :param total_rows: 需要索引的数据量
+        :param total_rows: **参数解释：** 需要索引的entity的总数量。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
         :type total_rows: int
         """
         
@@ -73,7 +73,7 @@ class BuildProgress:
     def index_name(self):
         r"""Gets the index_name of this BuildProgress.
 
-        索引名
+        **参数解释：** 索引名称。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :return: The index_name of this BuildProgress.
         :rtype: str
@@ -84,7 +84,7 @@ class BuildProgress:
     def index_name(self, index_name):
         r"""Sets the index_name of this BuildProgress.
 
-        索引名
+        **参数解释：** 索引名称。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :param index_name: The index_name of this BuildProgress.
         :type index_name: str
@@ -95,7 +95,7 @@ class BuildProgress:
     def field_name(self):
         r"""Gets the field_name of this BuildProgress.
 
-        索引对应的列
+        **参数解释：** 索引对应的字段名称。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :return: The field_name of this BuildProgress.
         :rtype: str
@@ -106,7 +106,7 @@ class BuildProgress:
     def field_name(self, field_name):
         r"""Sets the field_name of this BuildProgress.
 
-        索引对应的列
+        **参数解释：** 索引对应的字段名称。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :param field_name: The field_name of this BuildProgress.
         :type field_name: str
@@ -117,7 +117,7 @@ class BuildProgress:
     def build_progress(self):
         r"""Gets the build_progress of this BuildProgress.
 
-        构建索引的进度，进度值为[0,1]
+        **参数解释：** 构建索引的进度。 **约束限制：** 不涉及。 **取值范围：** `[0,1]` **默认取值:** 不涉及。
 
         :return: The build_progress of this BuildProgress.
         :rtype: float
@@ -128,7 +128,7 @@ class BuildProgress:
     def build_progress(self, build_progress):
         r"""Sets the build_progress of this BuildProgress.
 
-        构建索引的进度，进度值为[0,1]
+        **参数解释：** 构建索引的进度。 **约束限制：** 不涉及。 **取值范围：** `[0,1]` **默认取值:** 不涉及。
 
         :param build_progress: The build_progress of this BuildProgress.
         :type build_progress: float
@@ -139,7 +139,7 @@ class BuildProgress:
     def indexed_rows(self):
         r"""Gets the indexed_rows of this BuildProgress.
 
-        已完成索引的数据量
+        **参数解释：** 已完成索引的entity数量。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :return: The indexed_rows of this BuildProgress.
         :rtype: int
@@ -150,7 +150,7 @@ class BuildProgress:
     def indexed_rows(self, indexed_rows):
         r"""Sets the indexed_rows of this BuildProgress.
 
-        已完成索引的数据量
+        **参数解释：** 已完成索引的entity数量。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :param indexed_rows: The indexed_rows of this BuildProgress.
         :type indexed_rows: int
@@ -161,7 +161,7 @@ class BuildProgress:
     def total_rows(self):
         r"""Gets the total_rows of this BuildProgress.
 
-        需要索引的数据量
+        **参数解释：** 需要索引的entity的总数量。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :return: The total_rows of this BuildProgress.
         :rtype: int
@@ -172,7 +172,7 @@ class BuildProgress:
     def total_rows(self, total_rows):
         r"""Sets the total_rows of this BuildProgress.
 
-        需要索引的数据量
+        **参数解释：** 需要索引的entity的总数量。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :param total_rows: The total_rows of this BuildProgress.
         :type total_rows: int

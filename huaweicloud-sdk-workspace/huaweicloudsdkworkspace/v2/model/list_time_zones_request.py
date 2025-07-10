@@ -29,7 +29,7 @@ class ListTimeZonesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param time_zone_name: 按照时区name过滤
+        :param time_zone_name: 按照时区name过滤。
         :type time_zone_name: str
         """
         
@@ -45,7 +45,7 @@ class ListTimeZonesRequest:
     def time_zone_name(self):
         r"""Gets the time_zone_name of this ListTimeZonesRequest.
 
-        按照时区name过滤
+        按照时区name过滤。
 
         :return: The time_zone_name of this ListTimeZonesRequest.
         :rtype: str
@@ -56,7 +56,7 @@ class ListTimeZonesRequest:
     def time_zone_name(self, time_zone_name):
         r"""Sets the time_zone_name of this ListTimeZonesRequest.
 
-        按照时区name过滤
+        按照时区name过滤。
 
         :param time_zone_name: The time_zone_name of this ListTimeZonesRequest.
         :type time_zone_name: str

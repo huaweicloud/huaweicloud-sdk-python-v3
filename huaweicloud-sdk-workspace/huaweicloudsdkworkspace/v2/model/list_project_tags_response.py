@@ -32,9 +32,9 @@ class ListProjectTagsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param tags: 标签对象
+        :param tags: 标签对象。
         :type tags: list[:class:`huaweicloudsdkworkspace.v2.Tags`]
-        :param total_count: 标签总数
+        :param total_count: 标签总数。
         :type total_count: int
         """
         
@@ -53,7 +53,7 @@ class ListProjectTagsResponse(SdkResponse):
     def tags(self):
         r"""Gets the tags of this ListProjectTagsResponse.
 
-        标签对象
+        标签对象。
 
         :return: The tags of this ListProjectTagsResponse.
         :rtype: list[:class:`huaweicloudsdkworkspace.v2.Tags`]
@@ -64,7 +64,7 @@ class ListProjectTagsResponse(SdkResponse):
     def tags(self, tags):
         r"""Sets the tags of this ListProjectTagsResponse.
 
-        标签对象
+        标签对象。
 
         :param tags: The tags of this ListProjectTagsResponse.
         :type tags: list[:class:`huaweicloudsdkworkspace.v2.Tags`]
@@ -75,7 +75,7 @@ class ListProjectTagsResponse(SdkResponse):
     def total_count(self):
         r"""Gets the total_count of this ListProjectTagsResponse.
 
-        标签总数
+        标签总数。
 
         :return: The total_count of this ListProjectTagsResponse.
         :rtype: int
@@ -86,7 +86,7 @@ class ListProjectTagsResponse(SdkResponse):
     def total_count(self, total_count):
         r"""Sets the total_count of this ListProjectTagsResponse.
 
-        标签总数
+        标签总数。
 
         :param total_count: The total_count of this ListProjectTagsResponse.
         :type total_count: int

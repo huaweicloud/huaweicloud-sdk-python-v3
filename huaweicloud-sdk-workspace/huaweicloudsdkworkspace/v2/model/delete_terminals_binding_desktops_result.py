@@ -33,11 +33,11 @@ class DeleteTerminalsBindingDesktopsResult:
 
         The model defined in huaweicloud sdk
 
-        :param id: 需删除的策略ID
+        :param id: 需删除的策略ID。
         :type id: str
-        :param delete_result_code: 删除操作的结果码
+        :param delete_result_code: 删除操作的结果码。
         :type delete_result_code: str
-        :param delete_result_msg: 删除操作的结果信息
+        :param delete_result_msg: 删除操作的结果信息。
         :type delete_result_msg: str
         """
         
@@ -59,7 +59,7 @@ class DeleteTerminalsBindingDesktopsResult:
     def id(self):
         r"""Gets the id of this DeleteTerminalsBindingDesktopsResult.
 
-        需删除的策略ID
+        需删除的策略ID。
 
         :return: The id of this DeleteTerminalsBindingDesktopsResult.
         :rtype: str
@@ -70,7 +70,7 @@ class DeleteTerminalsBindingDesktopsResult:
     def id(self, id):
         r"""Sets the id of this DeleteTerminalsBindingDesktopsResult.
 
-        需删除的策略ID
+        需删除的策略ID。
 
         :param id: The id of this DeleteTerminalsBindingDesktopsResult.
         :type id: str
@@ -81,7 +81,7 @@ class DeleteTerminalsBindingDesktopsResult:
     def delete_result_code(self):
         r"""Gets the delete_result_code of this DeleteTerminalsBindingDesktopsResult.
 
-        删除操作的结果码
+        删除操作的结果码。
 
         :return: The delete_result_code of this DeleteTerminalsBindingDesktopsResult.
         :rtype: str
@@ -92,7 +92,7 @@ class DeleteTerminalsBindingDesktopsResult:
     def delete_result_code(self, delete_result_code):
         r"""Sets the delete_result_code of this DeleteTerminalsBindingDesktopsResult.
 
-        删除操作的结果码
+        删除操作的结果码。
 
         :param delete_result_code: The delete_result_code of this DeleteTerminalsBindingDesktopsResult.
         :type delete_result_code: str
@@ -103,7 +103,7 @@ class DeleteTerminalsBindingDesktopsResult:
     def delete_result_msg(self):
         r"""Gets the delete_result_msg of this DeleteTerminalsBindingDesktopsResult.
 
-        删除操作的结果信息
+        删除操作的结果信息。
 
         :return: The delete_result_msg of this DeleteTerminalsBindingDesktopsResult.
         :rtype: str
@@ -114,7 +114,7 @@ class DeleteTerminalsBindingDesktopsResult:
     def delete_result_msg(self, delete_result_msg):
         r"""Sets the delete_result_msg of this DeleteTerminalsBindingDesktopsResult.
 
-        删除操作的结果信息
+        删除操作的结果信息。
 
         :param delete_result_msg: The delete_result_msg of this DeleteTerminalsBindingDesktopsResult.
         :type delete_result_msg: str

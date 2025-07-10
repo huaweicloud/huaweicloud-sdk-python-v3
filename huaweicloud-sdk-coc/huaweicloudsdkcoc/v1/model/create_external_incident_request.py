@@ -29,7 +29,9 @@ class CreateExternalIncidentRequest:
         'incident_assignee': 'list[str]',
         'assignee_scene': 'str',
         'assignee_role': 'str',
-        'creator': 'str'
+        'creator': 'str',
+        'incident_ownership': 'str',
+        'start_time': 'int'
     }
 
     attribute_map = {
@@ -45,10 +47,12 @@ class CreateExternalIncidentRequest:
         'incident_assignee': 'incident_assignee',
         'assignee_scene': 'assignee_scene',
         'assignee_role': 'assignee_role',
-        'creator': 'creator'
+        'creator': 'creator',
+        'incident_ownership': 'incident_ownership',
+        'start_time': 'start_time'
     }
 
-    def __init__(self, region=None, enterprise_project=None, current_cloud_service=None, incident_level=None, is_service_interrupt=None, incident_type=None, incident_title=None, incident_description=None, incident_source=None, incident_assignee=None, assignee_scene=None, assignee_role=None, creator=None):
+    def __init__(self, region=None, enterprise_project=None, current_cloud_service=None, incident_level=None, is_service_interrupt=None, incident_type=None, incident_title=None, incident_description=None, incident_source=None, incident_assignee=None, assignee_scene=None, assignee_role=None, creator=None, incident_ownership=None, start_time=None):
         r"""CreateExternalIncidentRequest
 
         The model defined in huaweicloud sdk
@@ -79,6 +83,10 @@ class CreateExternalIncidentRequest:
         :type assignee_role: str
         :param creator: 创单人
         :type creator: str
+        :param incident_ownership: 事件归属
+        :type incident_ownership: str
+        :param start_time: 故障发生时间戳
+        :type start_time: int
         """
         
         
@@ -96,6 +104,8 @@ class CreateExternalIncidentRequest:
         self._assignee_scene = None
         self._assignee_role = None
         self._creator = None
+        self._incident_ownership = None
+        self._start_time = None
         self.discriminator = None
 
         if region is not None:
@@ -118,6 +128,10 @@ class CreateExternalIncidentRequest:
         if assignee_role is not None:
             self.assignee_role = assignee_role
         self.creator = creator
+        if incident_ownership is not None:
+            self.incident_ownership = incident_ownership
+        if start_time is not None:
+            self.start_time = start_time
 
     @property
     def region(self):
@@ -404,6 +418,50 @@ class CreateExternalIncidentRequest:
         :type creator: str
         """
         self._creator = creator
+
+    @property
+    def incident_ownership(self):
+        r"""Gets the incident_ownership of this CreateExternalIncidentRequest.
+
+        事件归属
+
+        :return: The incident_ownership of this CreateExternalIncidentRequest.
+        :rtype: str
+        """
+        return self._incident_ownership
+
+    @incident_ownership.setter
+    def incident_ownership(self, incident_ownership):
+        r"""Sets the incident_ownership of this CreateExternalIncidentRequest.
+
+        事件归属
+
+        :param incident_ownership: The incident_ownership of this CreateExternalIncidentRequest.
+        :type incident_ownership: str
+        """
+        self._incident_ownership = incident_ownership
+
+    @property
+    def start_time(self):
+        r"""Gets the start_time of this CreateExternalIncidentRequest.
+
+        故障发生时间戳
+
+        :return: The start_time of this CreateExternalIncidentRequest.
+        :rtype: int
+        """
+        return self._start_time
+
+    @start_time.setter
+    def start_time(self, start_time):
+        r"""Sets the start_time of this CreateExternalIncidentRequest.
+
+        故障发生时间戳
+
+        :param start_time: The start_time of this CreateExternalIncidentRequest.
+        :type start_time: int
+        """
+        self._start_time = start_time
 
     def to_dict(self):
         """Returns the model properties as a dict"""

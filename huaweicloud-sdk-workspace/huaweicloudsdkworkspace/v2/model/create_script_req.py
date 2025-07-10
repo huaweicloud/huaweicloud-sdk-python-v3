@@ -58,14 +58,11 @@ class CreateScriptReq:
         self._version = None
         self.discriminator = None
 
-        if name is not None:
-            self.name = name
-        if type is not None:
-            self.type = type
+        self.name = name
+        self.type = type
         if description is not None:
             self.description = description
-        if content is not None:
-            self.content = content
+        self.content = content
         if version is not None:
             self.version = version
 

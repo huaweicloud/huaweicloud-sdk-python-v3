@@ -37,7 +37,7 @@ class EstimateAddSubResourcesRequestBody:
         :type desktop_pool_id: str
         :param desktop_ids: 包周期桌面ID列表。 不可同时存在普通桌面和池桌面ID。
         :type desktop_ids: list[str]
-        :param promotion_plan_id: 促销计划ID
+        :param promotion_plan_id: 促销计划ID。
         :type promotion_plan_id: str
         """
         
@@ -103,7 +103,7 @@ class EstimateAddSubResourcesRequestBody:
     def promotion_plan_id(self):
         r"""Gets the promotion_plan_id of this EstimateAddSubResourcesRequestBody.
 
-        促销计划ID
+        促销计划ID。
 
         :return: The promotion_plan_id of this EstimateAddSubResourcesRequestBody.
         :rtype: str
@@ -114,7 +114,7 @@ class EstimateAddSubResourcesRequestBody:
     def promotion_plan_id(self, promotion_plan_id):
         r"""Sets the promotion_plan_id of this EstimateAddSubResourcesRequestBody.
 
-        促销计划ID
+        促销计划ID。
 
         :param promotion_plan_id: The promotion_plan_id of this EstimateAddSubResourcesRequestBody.
         :type promotion_plan_id: str

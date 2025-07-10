@@ -21,8 +21,7 @@ class ApplySubnetBandwidthReq:
         'subnet_id': 'str',
         'charge_mode': 'str',
         'bandwidth_size': 'int',
-        'enterprise_project_id': 'str',
-        'order_id': 'str'
+        'enterprise_project_id': 'str'
     }
 
     attribute_map = {
@@ -30,11 +29,10 @@ class ApplySubnetBandwidthReq:
         'subnet_id': 'subnet_id',
         'charge_mode': 'charge_mode',
         'bandwidth_size': 'bandwidth_size',
-        'enterprise_project_id': 'enterprise_project_id',
-        'order_id': 'order_id'
+        'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, bandwidth_name=None, subnet_id=None, charge_mode=None, bandwidth_size=None, enterprise_project_id=None, order_id=None):
+    def __init__(self, bandwidth_name=None, subnet_id=None, charge_mode=None, bandwidth_size=None, enterprise_project_id=None):
         r"""ApplySubnetBandwidthReq
 
         The model defined in huaweicloud sdk
@@ -47,10 +45,8 @@ class ApplySubnetBandwidthReq:
         :type charge_mode: str
         :param bandwidth_size: 云办公带宽大小。
         :type bandwidth_size: int
-        :param enterprise_project_id: 企业项目ID，默认\&quot;0\&quot;
+        :param enterprise_project_id: 企业项目ID，默认\&quot;0。\&quot;
         :type enterprise_project_id: str
-        :param order_id: 包周期订购ID，CBC订购回调时使用。
-        :type order_id: str
         """
         
         
@@ -60,7 +56,6 @@ class ApplySubnetBandwidthReq:
         self._charge_mode = None
         self._bandwidth_size = None
         self._enterprise_project_id = None
-        self._order_id = None
         self.discriminator = None
 
         if bandwidth_name is not None:
@@ -71,8 +66,6 @@ class ApplySubnetBandwidthReq:
             self.bandwidth_size = bandwidth_size
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
-        if order_id is not None:
-            self.order_id = order_id
 
     @property
     def bandwidth_name(self):
@@ -166,7 +159,7 @@ class ApplySubnetBandwidthReq:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this ApplySubnetBandwidthReq.
 
-        企业项目ID，默认\"0\"
+        企业项目ID，默认\"0。\"
 
         :return: The enterprise_project_id of this ApplySubnetBandwidthReq.
         :rtype: str
@@ -177,34 +170,12 @@ class ApplySubnetBandwidthReq:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this ApplySubnetBandwidthReq.
 
-        企业项目ID，默认\"0\"
+        企业项目ID，默认\"0。\"
 
         :param enterprise_project_id: The enterprise_project_id of this ApplySubnetBandwidthReq.
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
-
-    @property
-    def order_id(self):
-        r"""Gets the order_id of this ApplySubnetBandwidthReq.
-
-        包周期订购ID，CBC订购回调时使用。
-
-        :return: The order_id of this ApplySubnetBandwidthReq.
-        :rtype: str
-        """
-        return self._order_id
-
-    @order_id.setter
-    def order_id(self, order_id):
-        r"""Sets the order_id of this ApplySubnetBandwidthReq.
-
-        包周期订购ID，CBC订购回调时使用。
-
-        :param order_id: The order_id of this ApplySubnetBandwidthReq.
-        :type order_id: str
-        """
-        self._order_id = order_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

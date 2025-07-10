@@ -37,9 +37,9 @@ class ListAppAuthorizationsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param offset: 查询的偏移量。
+        :param offset: 查询的偏移量，默认值0。
         :type offset: int
-        :param limit: 单次查询的大小[1-100]。
+        :param limit: 单次查询的大小[1-100]，默认值10。
         :type limit: int
         :param app_id: 应用ID。
         :type app_id: str
@@ -72,7 +72,7 @@ class ListAppAuthorizationsRequest:
     def offset(self):
         r"""Gets the offset of this ListAppAuthorizationsRequest.
 
-        查询的偏移量。
+        查询的偏移量，默认值0。
 
         :return: The offset of this ListAppAuthorizationsRequest.
         :rtype: int
@@ -83,7 +83,7 @@ class ListAppAuthorizationsRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListAppAuthorizationsRequest.
 
-        查询的偏移量。
+        查询的偏移量，默认值0。
 
         :param offset: The offset of this ListAppAuthorizationsRequest.
         :type offset: int
@@ -94,7 +94,7 @@ class ListAppAuthorizationsRequest:
     def limit(self):
         r"""Gets the limit of this ListAppAuthorizationsRequest.
 
-        单次查询的大小[1-100]。
+        单次查询的大小[1-100]，默认值10。
 
         :return: The limit of this ListAppAuthorizationsRequest.
         :rtype: int
@@ -105,7 +105,7 @@ class ListAppAuthorizationsRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListAppAuthorizationsRequest.
 
-        单次查询的大小[1-100]。
+        单次查询的大小[1-100]，默认值10。
 
         :param limit: The limit of this ListAppAuthorizationsRequest.
         :type limit: int

@@ -43,13 +43,13 @@ class ListDesktopPoolsRequest:
         :type name: str
         :param type: 桌面池类型，DYNAMIC：动态池，STATIC：静态池。
         :type type: str
-        :param enterprise_project_id: 企业项目ID
+        :param enterprise_project_id: 企业项目ID。
         :type enterprise_project_id: str
         :param offset: 用于分页查询，查询的起始记录序号，从0开始。
         :type offset: int
         :param limit: 用于分页查询，取值范围0-1000，默认值1000。
         :type limit: int
-        :param in_maintenance_mode: 按照维护状态过滤
+        :param in_maintenance_mode: 按照维护状态过滤。
         :type in_maintenance_mode: bool
         """
         
@@ -124,7 +124,7 @@ class ListDesktopPoolsRequest:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this ListDesktopPoolsRequest.
 
-        企业项目ID
+        企业项目ID。
 
         :return: The enterprise_project_id of this ListDesktopPoolsRequest.
         :rtype: str
@@ -135,7 +135,7 @@ class ListDesktopPoolsRequest:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this ListDesktopPoolsRequest.
 
-        企业项目ID
+        企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this ListDesktopPoolsRequest.
         :type enterprise_project_id: str
@@ -190,7 +190,7 @@ class ListDesktopPoolsRequest:
     def in_maintenance_mode(self):
         r"""Gets the in_maintenance_mode of this ListDesktopPoolsRequest.
 
-        按照维护状态过滤
+        按照维护状态过滤。
 
         :return: The in_maintenance_mode of this ListDesktopPoolsRequest.
         :rtype: bool
@@ -201,7 +201,7 @@ class ListDesktopPoolsRequest:
     def in_maintenance_mode(self, in_maintenance_mode):
         r"""Sets the in_maintenance_mode of this ListDesktopPoolsRequest.
 
-        按照维护状态过滤
+        按照维护状态过滤。
 
         :param in_maintenance_mode: The in_maintenance_mode of this ListDesktopPoolsRequest.
         :type in_maintenance_mode: bool

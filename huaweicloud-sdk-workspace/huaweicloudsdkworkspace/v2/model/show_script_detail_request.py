@@ -33,7 +33,7 @@ class ShowScriptDetailRequest:
 
         :param script_id: 脚本ID。
         :type script_id: str
-        :param script_task_id: 执行脚本的任务ID
+        :param script_task_id: 执行脚本的任务ID。
         :type script_task_id: str
         """
         
@@ -73,7 +73,7 @@ class ShowScriptDetailRequest:
     def script_task_id(self):
         r"""Gets the script_task_id of this ShowScriptDetailRequest.
 
-        执行脚本的任务ID
+        执行脚本的任务ID。
 
         :return: The script_task_id of this ShowScriptDetailRequest.
         :rtype: str
@@ -84,7 +84,7 @@ class ShowScriptDetailRequest:
     def script_task_id(self, script_task_id):
         r"""Sets the script_task_id of this ShowScriptDetailRequest.
 
-        执行脚本的任务ID
+        执行脚本的任务ID。
 
         :param script_task_id: The script_task_id of this ShowScriptDetailRequest.
         :type script_task_id: str

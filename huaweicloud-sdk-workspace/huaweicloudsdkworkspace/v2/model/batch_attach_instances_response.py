@@ -30,7 +30,7 @@ class BatchAttachInstancesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param job_id: 分配桌面总任务id
+        :param job_id: 分配桌面总任务id。
         :type job_id: str
         """
         
@@ -46,7 +46,7 @@ class BatchAttachInstancesResponse(SdkResponse):
     def job_id(self):
         r"""Gets the job_id of this BatchAttachInstancesResponse.
 
-        分配桌面总任务id
+        分配桌面总任务id。
 
         :return: The job_id of this BatchAttachInstancesResponse.
         :rtype: str
@@ -57,7 +57,7 @@ class BatchAttachInstancesResponse(SdkResponse):
     def job_id(self, job_id):
         r"""Sets the job_id of this BatchAttachInstancesResponse.
 
-        分配桌面总任务id
+        分配桌面总任务id。
 
         :param job_id: The job_id of this BatchAttachInstancesResponse.
         :type job_id: str

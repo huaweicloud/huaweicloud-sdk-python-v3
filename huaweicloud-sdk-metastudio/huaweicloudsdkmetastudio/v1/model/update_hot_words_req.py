@@ -18,15 +18,17 @@ class UpdateHotWordsReq:
 
     openapi_types = {
         'hot_words_type': 'HotWordsTypeEnum',
-        'sis_hot_words': 'UpdateSisHotWords'
+        'sis_hot_words': 'UpdateSisHotWords',
+        'mobvoi_hot_words': 'UpdateMobvoiHotWords'
     }
 
     attribute_map = {
         'hot_words_type': 'hot_words_type',
-        'sis_hot_words': 'sis_hot_words'
+        'sis_hot_words': 'sis_hot_words',
+        'mobvoi_hot_words': 'mobvoi_hot_words'
     }
 
-    def __init__(self, hot_words_type=None, sis_hot_words=None):
+    def __init__(self, hot_words_type=None, sis_hot_words=None, mobvoi_hot_words=None):
         r"""UpdateHotWordsReq
 
         The model defined in huaweicloud sdk
@@ -35,16 +37,22 @@ class UpdateHotWordsReq:
         :type hot_words_type: :class:`huaweicloudsdkmetastudio.v1.HotWordsTypeEnum`
         :param sis_hot_words: 
         :type sis_hot_words: :class:`huaweicloudsdkmetastudio.v1.UpdateSisHotWords`
+        :param mobvoi_hot_words: 
+        :type mobvoi_hot_words: :class:`huaweicloudsdkmetastudio.v1.UpdateMobvoiHotWords`
         """
         
         
 
         self._hot_words_type = None
         self._sis_hot_words = None
+        self._mobvoi_hot_words = None
         self.discriminator = None
 
         self.hot_words_type = hot_words_type
-        self.sis_hot_words = sis_hot_words
+        if sis_hot_words is not None:
+            self.sis_hot_words = sis_hot_words
+        if mobvoi_hot_words is not None:
+            self.mobvoi_hot_words = mobvoi_hot_words
 
     @property
     def hot_words_type(self):
@@ -81,6 +89,24 @@ class UpdateHotWordsReq:
         :type sis_hot_words: :class:`huaweicloudsdkmetastudio.v1.UpdateSisHotWords`
         """
         self._sis_hot_words = sis_hot_words
+
+    @property
+    def mobvoi_hot_words(self):
+        r"""Gets the mobvoi_hot_words of this UpdateHotWordsReq.
+
+        :return: The mobvoi_hot_words of this UpdateHotWordsReq.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.UpdateMobvoiHotWords`
+        """
+        return self._mobvoi_hot_words
+
+    @mobvoi_hot_words.setter
+    def mobvoi_hot_words(self, mobvoi_hot_words):
+        r"""Sets the mobvoi_hot_words of this UpdateHotWordsReq.
+
+        :param mobvoi_hot_words: The mobvoi_hot_words of this UpdateHotWordsReq.
+        :type mobvoi_hot_words: :class:`huaweicloudsdkmetastudio.v1.UpdateMobvoiHotWords`
+        """
+        self._mobvoi_hot_words = mobvoi_hot_words
 
     def to_dict(self):
         """Returns the model properties as a dict"""

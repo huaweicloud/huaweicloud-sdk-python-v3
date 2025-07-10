@@ -39,7 +39,7 @@ class ListPortsRequest:
 
         :param marker: 分页查询的起始资源ID。
         :type marker: str
-        :param limit: 分页查询每页返回的记录个数。
+        :param limit: 功能说明：每页返回的个数。取值范围：1~2000。默认值：2000。
         :type limit: int
         :param ip_address: ip地址。
         :type ip_address: str
@@ -95,7 +95,7 @@ class ListPortsRequest:
     def limit(self):
         r"""Gets the limit of this ListPortsRequest.
 
-        分页查询每页返回的记录个数。
+        功能说明：每页返回的个数。取值范围：1~2000。默认值：2000。
 
         :return: The limit of this ListPortsRequest.
         :rtype: int
@@ -106,7 +106,7 @@ class ListPortsRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListPortsRequest.
 
-        分页查询每页返回的记录个数。
+        功能说明：每页返回的个数。取值范围：1~2000。默认值：2000。
 
         :param limit: The limit of this ListPortsRequest.
         :type limit: int

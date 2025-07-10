@@ -31,9 +31,9 @@ class Match:
 
         The model defined in huaweicloud sdk
 
-        :param key: 搜索时要匹配的字段
+        :param key: 搜索时要匹配的字段。
         :type key: str
-        :param value: 搜索时匹配的值，当key&#x3D;resource_name时为模糊匹配
+        :param value: 搜索时匹配的值，当key&#x3D;resource_name时为模糊匹配。
         :type value: str
         """
         
@@ -50,7 +50,7 @@ class Match:
     def key(self):
         r"""Gets the key of this Match.
 
-        搜索时要匹配的字段
+        搜索时要匹配的字段。
 
         :return: The key of this Match.
         :rtype: str
@@ -61,7 +61,7 @@ class Match:
     def key(self, key):
         r"""Sets the key of this Match.
 
-        搜索时要匹配的字段
+        搜索时要匹配的字段。
 
         :param key: The key of this Match.
         :type key: str
@@ -72,7 +72,7 @@ class Match:
     def value(self):
         r"""Gets the value of this Match.
 
-        搜索时匹配的值，当key=resource_name时为模糊匹配
+        搜索时匹配的值，当key=resource_name时为模糊匹配。
 
         :return: The value of this Match.
         :rtype: str
@@ -83,7 +83,7 @@ class Match:
     def value(self, value):
         r"""Sets the value of this Match.
 
-        搜索时匹配的值，当key=resource_name时为模糊匹配
+        搜索时匹配的值，当key=resource_name时为模糊匹配。
 
         :param value: The value of this Match.
         :type value: str

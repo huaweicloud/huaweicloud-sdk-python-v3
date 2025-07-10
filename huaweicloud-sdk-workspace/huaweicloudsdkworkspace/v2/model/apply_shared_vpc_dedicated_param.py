@@ -33,11 +33,11 @@ class ApplySharedVpcDedicatedParam:
 
         The model defined in huaweicloud sdk
 
-        :param address: 租户指定的共享Vpc专线地址
+        :param address: 租户指定的共享Vpc专线地址。
         :type address: str
-        :param port: 租户指定共享Vpc专线地址端口
+        :param port: 租户指定共享Vpc专线地址端口。
         :type port: int
-        :param availability_zone: 开通服务资源使用的可用分区，默认随机使用2个可用区
+        :param availability_zone: 开通服务资源使用的可用分区，默认随机使用2个可用区。
         :type availability_zone: list[str]
         """
         
@@ -59,7 +59,7 @@ class ApplySharedVpcDedicatedParam:
     def address(self):
         r"""Gets the address of this ApplySharedVpcDedicatedParam.
 
-        租户指定的共享Vpc专线地址
+        租户指定的共享Vpc专线地址。
 
         :return: The address of this ApplySharedVpcDedicatedParam.
         :rtype: str
@@ -70,7 +70,7 @@ class ApplySharedVpcDedicatedParam:
     def address(self, address):
         r"""Sets the address of this ApplySharedVpcDedicatedParam.
 
-        租户指定的共享Vpc专线地址
+        租户指定的共享Vpc专线地址。
 
         :param address: The address of this ApplySharedVpcDedicatedParam.
         :type address: str
@@ -81,7 +81,7 @@ class ApplySharedVpcDedicatedParam:
     def port(self):
         r"""Gets the port of this ApplySharedVpcDedicatedParam.
 
-        租户指定共享Vpc专线地址端口
+        租户指定共享Vpc专线地址端口。
 
         :return: The port of this ApplySharedVpcDedicatedParam.
         :rtype: int
@@ -92,7 +92,7 @@ class ApplySharedVpcDedicatedParam:
     def port(self, port):
         r"""Sets the port of this ApplySharedVpcDedicatedParam.
 
-        租户指定共享Vpc专线地址端口
+        租户指定共享Vpc专线地址端口。
 
         :param port: The port of this ApplySharedVpcDedicatedParam.
         :type port: int
@@ -103,7 +103,7 @@ class ApplySharedVpcDedicatedParam:
     def availability_zone(self):
         r"""Gets the availability_zone of this ApplySharedVpcDedicatedParam.
 
-        开通服务资源使用的可用分区，默认随机使用2个可用区
+        开通服务资源使用的可用分区，默认随机使用2个可用区。
 
         :return: The availability_zone of this ApplySharedVpcDedicatedParam.
         :rtype: list[str]
@@ -114,7 +114,7 @@ class ApplySharedVpcDedicatedParam:
     def availability_zone(self, availability_zone):
         r"""Sets the availability_zone of this ApplySharedVpcDedicatedParam.
 
-        开通服务资源使用的可用分区，默认随机使用2个可用区
+        开通服务资源使用的可用分区，默认随机使用2个可用区。
 
         :param availability_zone: The availability_zone of this ApplySharedVpcDedicatedParam.
         :type availability_zone: list[str]

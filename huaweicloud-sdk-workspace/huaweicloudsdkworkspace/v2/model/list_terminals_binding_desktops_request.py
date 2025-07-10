@@ -45,7 +45,7 @@ class ListTerminalsBindingDesktopsRequest:
         :type offset: int
         :param limit: 数量。
         :type limit: int
-        :param count_only: 是否只查询结果总条数
+        :param count_only: 是否只查询结果总条数。
         :type count_only: bool
         """
         
@@ -159,7 +159,7 @@ class ListTerminalsBindingDesktopsRequest:
     def count_only(self):
         r"""Gets the count_only of this ListTerminalsBindingDesktopsRequest.
 
-        是否只查询结果总条数
+        是否只查询结果总条数。
 
         :return: The count_only of this ListTerminalsBindingDesktopsRequest.
         :rtype: bool
@@ -170,7 +170,7 @@ class ListTerminalsBindingDesktopsRequest:
     def count_only(self, count_only):
         r"""Sets the count_only of this ListTerminalsBindingDesktopsRequest.
 
-        是否只查询结果总条数
+        是否只查询结果总条数。
 
         :param count_only: The count_only of this ListTerminalsBindingDesktopsRequest.
         :type count_only: bool

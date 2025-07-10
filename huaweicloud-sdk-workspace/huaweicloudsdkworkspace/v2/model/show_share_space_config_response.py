@@ -19,48 +19,41 @@ class ShowShareSpaceConfigResponse(SdkResponse):
 
     openapi_types = {
         'config_name': 'str',
-        'config_value': 'str',
-        'if_show_share_space': 'bool'
+        'config_value': 'str'
     }
 
     attribute_map = {
         'config_name': 'config_name',
-        'config_value': 'config_value',
-        'if_show_share_space': 'if_show_share_space'
+        'config_value': 'config_value'
     }
 
-    def __init__(self, config_name=None, config_value=None, if_show_share_space=None):
+    def __init__(self, config_name=None, config_value=None):
         r"""ShowShareSpaceConfigResponse
 
         The model defined in huaweicloud sdk
 
-        :param config_name: 配置名称
+        :param config_name: 配置名称。
         :type config_name: str
-        :param config_value: 配置值，使用Json字符串,&#39;{\&quot;share_space_name\&quot;:“协同空间”, \&quot;use_share_password\&quot;:是否使用协同密码：true/false, \&quot;allow_anonymous\&quot;:是否匿名加入协同:true/false, \&quot;audio_and_video\&quot;:是否使用音频,\&quot;AUDIO\&quot;/\&quot;NONE\&quot;/\&quot;AUDIO_AND_VIDEO\&quot;,\&quot;keyboard_mouse_ctl\&quot;:云桌面是否可用键鼠true/false,\&quot;anonymous_input_ctrl\&quot;:是否开启匿名用户键鼠输入权限true/false, \&quot;is_user_confirm_enabled\&quot;:是否需要用户应答true/false,\&quot;wait_confirm_time\&quot;:等待时间30-180s}&#39;
+        :param config_value: 配置值，使用Json字符串,&#39;{\&quot;share_space_name\&quot;:“协同空间”, \&quot;use_share_password\&quot;:是否使用协同密码：true/false, \&quot;allow_anonymous\&quot;:是否匿名加入协同:true/false, \&quot;audio_and_video\&quot;:是否使用音频,\&quot;AUDIO\&quot;/\&quot;NONE\&quot;/\&quot;AUDIO_AND_VIDEO\&quot;,\&quot;keyboard_mouse_ctl\&quot;:云桌面是否可用键鼠true/false,\&quot;anonymous_input_ctrl\&quot;:是否开启匿名用户键鼠输入权限true/false, \&quot;is_user_confirm_enabled\&quot;:是否需要用户应答true/false,\&quot;wait_confirm_time\&quot;:等待时间30-180s}。&#39;
         :type config_value: str
-        :param if_show_share_space: 根据Apollo白名单去控制是否显示远程协助
-        :type if_show_share_space: bool
         """
         
         super(ShowShareSpaceConfigResponse, self).__init__()
 
         self._config_name = None
         self._config_value = None
-        self._if_show_share_space = None
         self.discriminator = None
 
         if config_name is not None:
             self.config_name = config_name
         if config_value is not None:
             self.config_value = config_value
-        if if_show_share_space is not None:
-            self.if_show_share_space = if_show_share_space
 
     @property
     def config_name(self):
         r"""Gets the config_name of this ShowShareSpaceConfigResponse.
 
-        配置名称
+        配置名称。
 
         :return: The config_name of this ShowShareSpaceConfigResponse.
         :rtype: str
@@ -71,7 +64,7 @@ class ShowShareSpaceConfigResponse(SdkResponse):
     def config_name(self, config_name):
         r"""Sets the config_name of this ShowShareSpaceConfigResponse.
 
-        配置名称
+        配置名称。
 
         :param config_name: The config_name of this ShowShareSpaceConfigResponse.
         :type config_name: str
@@ -82,7 +75,7 @@ class ShowShareSpaceConfigResponse(SdkResponse):
     def config_value(self):
         r"""Gets the config_value of this ShowShareSpaceConfigResponse.
 
-        配置值，使用Json字符串,'{\"share_space_name\":“协同空间”, \"use_share_password\":是否使用协同密码：true/false, \"allow_anonymous\":是否匿名加入协同:true/false, \"audio_and_video\":是否使用音频,\"AUDIO\"/\"NONE\"/\"AUDIO_AND_VIDEO\",\"keyboard_mouse_ctl\":云桌面是否可用键鼠true/false,\"anonymous_input_ctrl\":是否开启匿名用户键鼠输入权限true/false, \"is_user_confirm_enabled\":是否需要用户应答true/false,\"wait_confirm_time\":等待时间30-180s}'
+        配置值，使用Json字符串,'{\"share_space_name\":“协同空间”, \"use_share_password\":是否使用协同密码：true/false, \"allow_anonymous\":是否匿名加入协同:true/false, \"audio_and_video\":是否使用音频,\"AUDIO\"/\"NONE\"/\"AUDIO_AND_VIDEO\",\"keyboard_mouse_ctl\":云桌面是否可用键鼠true/false,\"anonymous_input_ctrl\":是否开启匿名用户键鼠输入权限true/false, \"is_user_confirm_enabled\":是否需要用户应答true/false,\"wait_confirm_time\":等待时间30-180s}。'
 
         :return: The config_value of this ShowShareSpaceConfigResponse.
         :rtype: str
@@ -93,34 +86,12 @@ class ShowShareSpaceConfigResponse(SdkResponse):
     def config_value(self, config_value):
         r"""Sets the config_value of this ShowShareSpaceConfigResponse.
 
-        配置值，使用Json字符串,'{\"share_space_name\":“协同空间”, \"use_share_password\":是否使用协同密码：true/false, \"allow_anonymous\":是否匿名加入协同:true/false, \"audio_and_video\":是否使用音频,\"AUDIO\"/\"NONE\"/\"AUDIO_AND_VIDEO\",\"keyboard_mouse_ctl\":云桌面是否可用键鼠true/false,\"anonymous_input_ctrl\":是否开启匿名用户键鼠输入权限true/false, \"is_user_confirm_enabled\":是否需要用户应答true/false,\"wait_confirm_time\":等待时间30-180s}'
+        配置值，使用Json字符串,'{\"share_space_name\":“协同空间”, \"use_share_password\":是否使用协同密码：true/false, \"allow_anonymous\":是否匿名加入协同:true/false, \"audio_and_video\":是否使用音频,\"AUDIO\"/\"NONE\"/\"AUDIO_AND_VIDEO\",\"keyboard_mouse_ctl\":云桌面是否可用键鼠true/false,\"anonymous_input_ctrl\":是否开启匿名用户键鼠输入权限true/false, \"is_user_confirm_enabled\":是否需要用户应答true/false,\"wait_confirm_time\":等待时间30-180s}。'
 
         :param config_value: The config_value of this ShowShareSpaceConfigResponse.
         :type config_value: str
         """
         self._config_value = config_value
-
-    @property
-    def if_show_share_space(self):
-        r"""Gets the if_show_share_space of this ShowShareSpaceConfigResponse.
-
-        根据Apollo白名单去控制是否显示远程协助
-
-        :return: The if_show_share_space of this ShowShareSpaceConfigResponse.
-        :rtype: bool
-        """
-        return self._if_show_share_space
-
-    @if_show_share_space.setter
-    def if_show_share_space(self, if_show_share_space):
-        r"""Sets the if_show_share_space of this ShowShareSpaceConfigResponse.
-
-        根据Apollo白名单去控制是否显示远程协助
-
-        :param if_show_share_space: The if_show_share_space of this ShowShareSpaceConfigResponse.
-        :type if_show_share_space: bool
-        """
-        self._if_show_share_space = if_show_share_space
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -20,10 +20,8 @@ class ListDesktopsRequest:
         'user_name': 'list[str]',
         'computer_name': 'str',
         'desktop_ip': 'str',
-        'sids': 'list[str]',
         'offset': 'int',
         'limit': 'int',
-        'site_id': 'str',
         'pool_id': 'str',
         'enterprise_project_id': 'str',
         'desktop_type': 'str',
@@ -38,10 +36,8 @@ class ListDesktopsRequest:
         'user_name': 'user_name',
         'computer_name': 'computer_name',
         'desktop_ip': 'desktop_ip',
-        'sids': 'sids',
         'offset': 'offset',
         'limit': 'limit',
-        'site_id': 'site_id',
         'pool_id': 'pool_id',
         'enterprise_project_id': 'enterprise_project_id',
         'desktop_type': 'desktop_type',
@@ -52,7 +48,7 @@ class ListDesktopsRequest:
         'tag': 'tag'
     }
 
-    def __init__(self, user_name=None, computer_name=None, desktop_ip=None, sids=None, offset=None, limit=None, site_id=None, pool_id=None, enterprise_project_id=None, desktop_type=None, is_share_desktop=None, subnet_id=None, status=None, desktop_id=None, tag=None):
+    def __init__(self, user_name=None, computer_name=None, desktop_ip=None, offset=None, limit=None, pool_id=None, enterprise_project_id=None, desktop_type=None, is_share_desktop=None, subnet_id=None, status=None, desktop_id=None, tag=None):
         r"""ListDesktopsRequest
 
         The model defined in huaweicloud sdk
@@ -63,21 +59,17 @@ class ListDesktopsRequest:
         :type computer_name: str
         :param desktop_ip: 桌面IP地址。
         :type desktop_ip: str
-        :param sids: 桌面的sid列表，一次只能查询20个sid。
-        :type sids: list[str]
         :param offset: 用于分页查询，查询的起始记录序号，从0开始。
         :type offset: int
         :param limit: 用于分页查询，取值范围0-1000，默认值1000。
         :type limit: int
-        :param site_id: 用于筛选指定站点下的桌面列表
-        :type site_id: str
         :param pool_id: 桌面池ID,多个桌面池ID用逗号隔开。
         :type pool_id: str
-        :param enterprise_project_id: 企业项目ID
+        :param enterprise_project_id: 企业项目ID。
         :type enterprise_project_id: str
         :param desktop_type: 桌面类型，为空时查所有桌面。查询多个类型时用,隔开。 - DEDICATED：普通桌面，包括专享桌面、专属桌面等。 - SHARED: 多用户共享桌面。
         :type desktop_type: str
-        :param is_share_desktop: 是否为协同桌面
+        :param is_share_desktop: 是否为协同桌面。
         :type is_share_desktop: bool
         :param subnet_id: 桌面的子网ID。
         :type subnet_id: str
@@ -94,10 +86,8 @@ class ListDesktopsRequest:
         self._user_name = None
         self._computer_name = None
         self._desktop_ip = None
-        self._sids = None
         self._offset = None
         self._limit = None
-        self._site_id = None
         self._pool_id = None
         self._enterprise_project_id = None
         self._desktop_type = None
@@ -114,14 +104,10 @@ class ListDesktopsRequest:
             self.computer_name = computer_name
         if desktop_ip is not None:
             self.desktop_ip = desktop_ip
-        if sids is not None:
-            self.sids = sids
         if offset is not None:
             self.offset = offset
         if limit is not None:
             self.limit = limit
-        if site_id is not None:
-            self.site_id = site_id
         if pool_id is not None:
             self.pool_id = pool_id
         if enterprise_project_id is not None:
@@ -206,28 +192,6 @@ class ListDesktopsRequest:
         self._desktop_ip = desktop_ip
 
     @property
-    def sids(self):
-        r"""Gets the sids of this ListDesktopsRequest.
-
-        桌面的sid列表，一次只能查询20个sid。
-
-        :return: The sids of this ListDesktopsRequest.
-        :rtype: list[str]
-        """
-        return self._sids
-
-    @sids.setter
-    def sids(self, sids):
-        r"""Sets the sids of this ListDesktopsRequest.
-
-        桌面的sid列表，一次只能查询20个sid。
-
-        :param sids: The sids of this ListDesktopsRequest.
-        :type sids: list[str]
-        """
-        self._sids = sids
-
-    @property
     def offset(self):
         r"""Gets the offset of this ListDesktopsRequest.
 
@@ -272,28 +236,6 @@ class ListDesktopsRequest:
         self._limit = limit
 
     @property
-    def site_id(self):
-        r"""Gets the site_id of this ListDesktopsRequest.
-
-        用于筛选指定站点下的桌面列表
-
-        :return: The site_id of this ListDesktopsRequest.
-        :rtype: str
-        """
-        return self._site_id
-
-    @site_id.setter
-    def site_id(self, site_id):
-        r"""Sets the site_id of this ListDesktopsRequest.
-
-        用于筛选指定站点下的桌面列表
-
-        :param site_id: The site_id of this ListDesktopsRequest.
-        :type site_id: str
-        """
-        self._site_id = site_id
-
-    @property
     def pool_id(self):
         r"""Gets the pool_id of this ListDesktopsRequest.
 
@@ -319,7 +261,7 @@ class ListDesktopsRequest:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this ListDesktopsRequest.
 
-        企业项目ID
+        企业项目ID。
 
         :return: The enterprise_project_id of this ListDesktopsRequest.
         :rtype: str
@@ -330,7 +272,7 @@ class ListDesktopsRequest:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this ListDesktopsRequest.
 
-        企业项目ID
+        企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this ListDesktopsRequest.
         :type enterprise_project_id: str
@@ -363,7 +305,7 @@ class ListDesktopsRequest:
     def is_share_desktop(self):
         r"""Gets the is_share_desktop of this ListDesktopsRequest.
 
-        是否为协同桌面
+        是否为协同桌面。
 
         :return: The is_share_desktop of this ListDesktopsRequest.
         :rtype: bool
@@ -374,7 +316,7 @@ class ListDesktopsRequest:
     def is_share_desktop(self, is_share_desktop):
         r"""Sets the is_share_desktop of this ListDesktopsRequest.
 
-        是否为协同桌面
+        是否为协同桌面。
 
         :param is_share_desktop: The is_share_desktop of this ListDesktopsRequest.
         :type is_share_desktop: bool

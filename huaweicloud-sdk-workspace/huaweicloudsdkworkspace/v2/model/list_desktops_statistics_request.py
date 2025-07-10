@@ -31,9 +31,9 @@ class ListDesktopsStatisticsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param desktop_type: 桌面类型
+        :param desktop_type: 桌面类型，为空时查所有桌面。 - DEDICATED：普通桌面，包括专享桌面、专属桌面等 - POOLED：池桌面，即桌面池里的桌面
         :type desktop_type: list[str]
-        :param statistics_type: 统计类型，为空时仅统计桌面总数 |- - attach-state 按照分配状态统计 - login-state 按照登录状态统计 - run-state 按照运行状态统计
+        :param statistics_type: 统计类型，为空时仅统计桌面总数 |- - attach-state 按照分配状态统计 - login-state 按照登录状态统计 - run-state 按照运行状态统计。
         :type statistics_type: list[str]
         """
         
@@ -52,7 +52,7 @@ class ListDesktopsStatisticsRequest:
     def desktop_type(self):
         r"""Gets the desktop_type of this ListDesktopsStatisticsRequest.
 
-        桌面类型
+        桌面类型，为空时查所有桌面。 - DEDICATED：普通桌面，包括专享桌面、专属桌面等 - POOLED：池桌面，即桌面池里的桌面
 
         :return: The desktop_type of this ListDesktopsStatisticsRequest.
         :rtype: list[str]
@@ -63,7 +63,7 @@ class ListDesktopsStatisticsRequest:
     def desktop_type(self, desktop_type):
         r"""Sets the desktop_type of this ListDesktopsStatisticsRequest.
 
-        桌面类型
+        桌面类型，为空时查所有桌面。 - DEDICATED：普通桌面，包括专享桌面、专属桌面等 - POOLED：池桌面，即桌面池里的桌面
 
         :param desktop_type: The desktop_type of this ListDesktopsStatisticsRequest.
         :type desktop_type: list[str]
@@ -74,7 +74,7 @@ class ListDesktopsStatisticsRequest:
     def statistics_type(self):
         r"""Gets the statistics_type of this ListDesktopsStatisticsRequest.
 
-        统计类型，为空时仅统计桌面总数 |- - attach-state 按照分配状态统计 - login-state 按照登录状态统计 - run-state 按照运行状态统计
+        统计类型，为空时仅统计桌面总数 |- - attach-state 按照分配状态统计 - login-state 按照登录状态统计 - run-state 按照运行状态统计。
 
         :return: The statistics_type of this ListDesktopsStatisticsRequest.
         :rtype: list[str]
@@ -85,7 +85,7 @@ class ListDesktopsStatisticsRequest:
     def statistics_type(self, statistics_type):
         r"""Sets the statistics_type of this ListDesktopsStatisticsRequest.
 
-        统计类型，为空时仅统计桌面总数 |- - attach-state 按照分配状态统计 - login-state 按照登录状态统计 - run-state 按照运行状态统计
+        统计类型，为空时仅统计桌面总数 |- - attach-state 按照分配状态统计 - login-state 按照登录状态统计 - run-state 按照运行状态统计。
 
         :param statistics_type: The statistics_type of this ListDesktopsStatisticsRequest.
         :type statistics_type: list[str]

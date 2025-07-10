@@ -57,11 +57,11 @@ class NatMappingConfig:
         :type vag_ip: str
         :param vag_port: vag端口。
         :type vag_port: str
-        :param access_filter_type: 0标识不开启，1表示开启。
+        :param access_filter_type: 是否支持标签、企业项目管理。0表示不开启，1表示开启。
         :type access_filter_type: int
         :param enterprise_project_id: 企业项目ID。
         :type enterprise_project_id: str
-        :param tags: 标签对象
+        :param tags: 标签对象。
         :type tags: list[:class:`huaweicloudsdkworkspace.v2.Tag`]
         """
         
@@ -233,7 +233,7 @@ class NatMappingConfig:
     def access_filter_type(self):
         r"""Gets the access_filter_type of this NatMappingConfig.
 
-        0标识不开启，1表示开启。
+        是否支持标签、企业项目管理。0表示不开启，1表示开启。
 
         :return: The access_filter_type of this NatMappingConfig.
         :rtype: int
@@ -244,7 +244,7 @@ class NatMappingConfig:
     def access_filter_type(self, access_filter_type):
         r"""Sets the access_filter_type of this NatMappingConfig.
 
-        0标识不开启，1表示开启。
+        是否支持标签、企业项目管理。0表示不开启，1表示开启。
 
         :param access_filter_type: The access_filter_type of this NatMappingConfig.
         :type access_filter_type: int
@@ -277,7 +277,7 @@ class NatMappingConfig:
     def tags(self):
         r"""Gets the tags of this NatMappingConfig.
 
-        标签对象
+        标签对象。
 
         :return: The tags of this NatMappingConfig.
         :rtype: list[:class:`huaweicloudsdkworkspace.v2.Tag`]
@@ -288,7 +288,7 @@ class NatMappingConfig:
     def tags(self, tags):
         r"""Sets the tags of this NatMappingConfig.
 
-        标签对象
+        标签对象。
 
         :param tags: The tags of this NatMappingConfig.
         :type tags: list[:class:`huaweicloudsdkworkspace.v2.Tag`]

@@ -45,7 +45,7 @@ class Eips:
 
         :param id: EIP的id。
         :type id: str
-        :param address: Eip地址。
+        :param address: EIP地址。
         :type address: str
         :param bandwidth_size: 带宽大小。
         :type bandwidth_size: int
@@ -57,7 +57,7 @@ class Eips:
         :type attached_desktop_id: str
         :param attached_desktop_name: 绑定的桌面名称。
         :type attached_desktop_name: str
-        :param enterprise_project_id: 企业项目ID
+        :param enterprise_project_id: 企业项目ID。
         :type enterprise_project_id: str
         """
         
@@ -116,7 +116,7 @@ class Eips:
     def address(self):
         r"""Gets the address of this Eips.
 
-        Eip地址。
+        EIP地址。
 
         :return: The address of this Eips.
         :rtype: str
@@ -127,7 +127,7 @@ class Eips:
     def address(self, address):
         r"""Sets the address of this Eips.
 
-        Eip地址。
+        EIP地址。
 
         :param address: The address of this Eips.
         :type address: str
@@ -248,7 +248,7 @@ class Eips:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this Eips.
 
-        企业项目ID
+        企业项目ID。
 
         :return: The enterprise_project_id of this Eips.
         :rtype: str
@@ -259,7 +259,7 @@ class Eips:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this Eips.
 
-        企业项目ID
+        企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this Eips.
         :type enterprise_project_id: str

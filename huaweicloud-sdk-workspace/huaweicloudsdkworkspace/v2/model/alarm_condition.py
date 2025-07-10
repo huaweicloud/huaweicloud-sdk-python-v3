@@ -43,17 +43,17 @@ class AlarmCondition:
 
         :param period: 指标周期，单位是秒； 0是默认值，例如事件类告警该字段就用0即可； 1代表指标的原始周期，比如RDS监控指标原始周期是60s，表示该RDS指标按60s周期为一个数据点参与告警计算；
         :type period: int
-        :param filter: 聚合方式, 支持的值为(average|min|max|sum)
+        :param filter: 聚合方式, 支持的值为(average|min|max|sum)。
         :type filter: str
-        :param comparison_operator: 阈值符号,支持的值为(&gt;|&lt;|&gt;&#x3D;|&lt;&#x3D;|&#x3D;|!&#x3D;|cycle_decrease|cycle_increase|cycle_wave);cycle_decrease为环比下降,cycle_increase为环比上升,cycle_wave为环比波动
+        :param comparison_operator: 阈值符号,支持的值为(&gt;|&lt;|&gt;&#x3D;|&lt;&#x3D;|&#x3D;|!&#x3D;|cycle_decrease|cycle_increase|cycle_wave);cycle_decrease为环比下降,cycle_increase为环比上升,cycle_wave为环比波动。
         :type comparison_operator: str
-        :param value: 告警阈值
+        :param value: 告警阈值。
         :type value: float
-        :param unit: 数据的单位，最大长度为32位
+        :param unit: 数据的单位，最大长度为32位。
         :type unit: str
-        :param count: 次数
+        :param count: 次数。
         :type count: int
-        :param suppress_duration: 告警抑制时间，单位为秒，对应页面上创建告警规则时告警策略最后一个字段，该字段主要为解决告警频繁的问题，0代表不抑制，满足条件即告警；300代表满足告警触发条件后每5分钟告警一次；
+        :param suppress_duration: 告警抑制时间，单位为秒，对应页面上创建告警规则时告警策略最后一个字段，该字段主要为解决告警频繁的问题，0代表不抑制，满足条件即告警；300代表满足告警触发条件后每5分钟告警一次。
         :type suppress_duration: int
         """
         
@@ -109,7 +109,7 @@ class AlarmCondition:
     def filter(self):
         r"""Gets the filter of this AlarmCondition.
 
-        聚合方式, 支持的值为(average|min|max|sum)
+        聚合方式, 支持的值为(average|min|max|sum)。
 
         :return: The filter of this AlarmCondition.
         :rtype: str
@@ -120,7 +120,7 @@ class AlarmCondition:
     def filter(self, filter):
         r"""Sets the filter of this AlarmCondition.
 
-        聚合方式, 支持的值为(average|min|max|sum)
+        聚合方式, 支持的值为(average|min|max|sum)。
 
         :param filter: The filter of this AlarmCondition.
         :type filter: str
@@ -131,7 +131,7 @@ class AlarmCondition:
     def comparison_operator(self):
         r"""Gets the comparison_operator of this AlarmCondition.
 
-        阈值符号,支持的值为(>|<|>=|<=|=|!=|cycle_decrease|cycle_increase|cycle_wave);cycle_decrease为环比下降,cycle_increase为环比上升,cycle_wave为环比波动
+        阈值符号,支持的值为(>|<|>=|<=|=|!=|cycle_decrease|cycle_increase|cycle_wave);cycle_decrease为环比下降,cycle_increase为环比上升,cycle_wave为环比波动。
 
         :return: The comparison_operator of this AlarmCondition.
         :rtype: str
@@ -142,7 +142,7 @@ class AlarmCondition:
     def comparison_operator(self, comparison_operator):
         r"""Sets the comparison_operator of this AlarmCondition.
 
-        阈值符号,支持的值为(>|<|>=|<=|=|!=|cycle_decrease|cycle_increase|cycle_wave);cycle_decrease为环比下降,cycle_increase为环比上升,cycle_wave为环比波动
+        阈值符号,支持的值为(>|<|>=|<=|=|!=|cycle_decrease|cycle_increase|cycle_wave);cycle_decrease为环比下降,cycle_increase为环比上升,cycle_wave为环比波动。
 
         :param comparison_operator: The comparison_operator of this AlarmCondition.
         :type comparison_operator: str
@@ -153,7 +153,7 @@ class AlarmCondition:
     def value(self):
         r"""Gets the value of this AlarmCondition.
 
-        告警阈值
+        告警阈值。
 
         :return: The value of this AlarmCondition.
         :rtype: float
@@ -164,7 +164,7 @@ class AlarmCondition:
     def value(self, value):
         r"""Sets the value of this AlarmCondition.
 
-        告警阈值
+        告警阈值。
 
         :param value: The value of this AlarmCondition.
         :type value: float
@@ -175,7 +175,7 @@ class AlarmCondition:
     def unit(self):
         r"""Gets the unit of this AlarmCondition.
 
-        数据的单位，最大长度为32位
+        数据的单位，最大长度为32位。
 
         :return: The unit of this AlarmCondition.
         :rtype: str
@@ -186,7 +186,7 @@ class AlarmCondition:
     def unit(self, unit):
         r"""Sets the unit of this AlarmCondition.
 
-        数据的单位，最大长度为32位
+        数据的单位，最大长度为32位。
 
         :param unit: The unit of this AlarmCondition.
         :type unit: str
@@ -197,7 +197,7 @@ class AlarmCondition:
     def count(self):
         r"""Gets the count of this AlarmCondition.
 
-        次数
+        次数。
 
         :return: The count of this AlarmCondition.
         :rtype: int
@@ -208,7 +208,7 @@ class AlarmCondition:
     def count(self, count):
         r"""Sets the count of this AlarmCondition.
 
-        次数
+        次数。
 
         :param count: The count of this AlarmCondition.
         :type count: int
@@ -219,7 +219,7 @@ class AlarmCondition:
     def suppress_duration(self):
         r"""Gets the suppress_duration of this AlarmCondition.
 
-        告警抑制时间，单位为秒，对应页面上创建告警规则时告警策略最后一个字段，该字段主要为解决告警频繁的问题，0代表不抑制，满足条件即告警；300代表满足告警触发条件后每5分钟告警一次；
+        告警抑制时间，单位为秒，对应页面上创建告警规则时告警策略最后一个字段，该字段主要为解决告警频繁的问题，0代表不抑制，满足条件即告警；300代表满足告警触发条件后每5分钟告警一次。
 
         :return: The suppress_duration of this AlarmCondition.
         :rtype: int
@@ -230,7 +230,7 @@ class AlarmCondition:
     def suppress_duration(self, suppress_duration):
         r"""Sets the suppress_duration of this AlarmCondition.
 
-        告警抑制时间，单位为秒，对应页面上创建告警规则时告警策略最后一个字段，该字段主要为解决告警频繁的问题，0代表不抑制，满足条件即告警；300代表满足告警触发条件后每5分钟告警一次；
+        告警抑制时间，单位为秒，对应页面上创建告警规则时告警策略最后一个字段，该字段主要为解决告警频繁的问题，0代表不抑制，满足条件即告警；300代表满足告警触发条件后每5分钟告警一次。
 
         :param suppress_duration: The suppress_duration of this AlarmCondition.
         :type suppress_duration: int

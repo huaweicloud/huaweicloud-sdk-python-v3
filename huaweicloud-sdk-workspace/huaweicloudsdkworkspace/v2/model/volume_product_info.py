@@ -43,19 +43,19 @@ class VolumeProductInfo:
 
         The model defined in huaweicloud sdk
 
-        :param resource_spec_code: 产品ID
+        :param resource_spec_code: 产品ID。
         :type resource_spec_code: str
         :param volume_type: 磁盘类型： - SATA: 普通IO磁盘 - SAS：高IO磁盘 - SSD：超高IO磁盘
         :type volume_type: str
-        :param volume_product_type: 产品类型：workspace
+        :param volume_product_type: 产品类型：workspace。
         :type volume_product_type: str
-        :param resource_type: 资源类型
+        :param resource_type: 资源类型。
         :type resource_type: str
-        :param cloud_service_type: 云服务类型
+        :param cloud_service_type: 云服务类型。
         :type cloud_service_type: str
         :param domain_ids: 该磁盘支持的专有域id（domainId）。
         :type domain_ids: list[str]
-        :param name: 磁盘名称
+        :param name: 磁盘名称。
         :type name: list[:class:`huaweicloudsdkworkspace.v2.I18nLanguage`]
         :param status: 产品状态，normal：正常、sellout：售空。
         :type status: str
@@ -94,7 +94,7 @@ class VolumeProductInfo:
     def resource_spec_code(self):
         r"""Gets the resource_spec_code of this VolumeProductInfo.
 
-        产品ID
+        产品ID。
 
         :return: The resource_spec_code of this VolumeProductInfo.
         :rtype: str
@@ -105,7 +105,7 @@ class VolumeProductInfo:
     def resource_spec_code(self, resource_spec_code):
         r"""Sets the resource_spec_code of this VolumeProductInfo.
 
-        产品ID
+        产品ID。
 
         :param resource_spec_code: The resource_spec_code of this VolumeProductInfo.
         :type resource_spec_code: str
@@ -138,7 +138,7 @@ class VolumeProductInfo:
     def volume_product_type(self):
         r"""Gets the volume_product_type of this VolumeProductInfo.
 
-        产品类型：workspace
+        产品类型：workspace。
 
         :return: The volume_product_type of this VolumeProductInfo.
         :rtype: str
@@ -149,7 +149,7 @@ class VolumeProductInfo:
     def volume_product_type(self, volume_product_type):
         r"""Sets the volume_product_type of this VolumeProductInfo.
 
-        产品类型：workspace
+        产品类型：workspace。
 
         :param volume_product_type: The volume_product_type of this VolumeProductInfo.
         :type volume_product_type: str
@@ -160,7 +160,7 @@ class VolumeProductInfo:
     def resource_type(self):
         r"""Gets the resource_type of this VolumeProductInfo.
 
-        资源类型
+        资源类型。
 
         :return: The resource_type of this VolumeProductInfo.
         :rtype: str
@@ -171,7 +171,7 @@ class VolumeProductInfo:
     def resource_type(self, resource_type):
         r"""Sets the resource_type of this VolumeProductInfo.
 
-        资源类型
+        资源类型。
 
         :param resource_type: The resource_type of this VolumeProductInfo.
         :type resource_type: str
@@ -182,7 +182,7 @@ class VolumeProductInfo:
     def cloud_service_type(self):
         r"""Gets the cloud_service_type of this VolumeProductInfo.
 
-        云服务类型
+        云服务类型。
 
         :return: The cloud_service_type of this VolumeProductInfo.
         :rtype: str
@@ -193,7 +193,7 @@ class VolumeProductInfo:
     def cloud_service_type(self, cloud_service_type):
         r"""Sets the cloud_service_type of this VolumeProductInfo.
 
-        云服务类型
+        云服务类型。
 
         :param cloud_service_type: The cloud_service_type of this VolumeProductInfo.
         :type cloud_service_type: str
@@ -226,7 +226,7 @@ class VolumeProductInfo:
     def name(self):
         r"""Gets the name of this VolumeProductInfo.
 
-        磁盘名称
+        磁盘名称。
 
         :return: The name of this VolumeProductInfo.
         :rtype: list[:class:`huaweicloudsdkworkspace.v2.I18nLanguage`]
@@ -237,7 +237,7 @@ class VolumeProductInfo:
     def name(self, name):
         r"""Sets the name of this VolumeProductInfo.
 
-        磁盘名称
+        磁盘名称。
 
         :param name: The name of this VolumeProductInfo.
         :type name: list[:class:`huaweicloudsdkworkspace.v2.I18nLanguage`]

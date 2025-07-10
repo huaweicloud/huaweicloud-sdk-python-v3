@@ -45,19 +45,19 @@ class ListAgentsInstallConditionRequest:
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 企业项目ID
+        :param enterprise_project_id: 企业项目ID。
         :type enterprise_project_id: str
-        :param desktop_id: 桌面ID
+        :param desktop_id: 桌面ID。
         :type desktop_id: str
-        :param desktop_name: 桌面名称
+        :param desktop_name: 桌面名称。
         :type desktop_name: str
-        :param status: 桌面状态
+        :param status: 桌面状态。
         :type status: str
-        :param ip_address: ip地址
+        :param ip_address: ip地址。
         :type ip_address: str
-        :param is_installed: 插件是否已安装
+        :param is_installed: 插件是否已安装。
         :type is_installed: bool
-        :param desktop_pool_id: 桌面池id
+        :param desktop_pool_id: 桌面池id。
         :type desktop_pool_id: str
         :param limit: 每页显示的数量。
         :type limit: int
@@ -101,7 +101,7 @@ class ListAgentsInstallConditionRequest:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this ListAgentsInstallConditionRequest.
 
-        企业项目ID
+        企业项目ID。
 
         :return: The enterprise_project_id of this ListAgentsInstallConditionRequest.
         :rtype: str
@@ -112,7 +112,7 @@ class ListAgentsInstallConditionRequest:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this ListAgentsInstallConditionRequest.
 
-        企业项目ID
+        企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this ListAgentsInstallConditionRequest.
         :type enterprise_project_id: str
@@ -123,7 +123,7 @@ class ListAgentsInstallConditionRequest:
     def desktop_id(self):
         r"""Gets the desktop_id of this ListAgentsInstallConditionRequest.
 
-        桌面ID
+        桌面ID。
 
         :return: The desktop_id of this ListAgentsInstallConditionRequest.
         :rtype: str
@@ -134,7 +134,7 @@ class ListAgentsInstallConditionRequest:
     def desktop_id(self, desktop_id):
         r"""Sets the desktop_id of this ListAgentsInstallConditionRequest.
 
-        桌面ID
+        桌面ID。
 
         :param desktop_id: The desktop_id of this ListAgentsInstallConditionRequest.
         :type desktop_id: str
@@ -145,7 +145,7 @@ class ListAgentsInstallConditionRequest:
     def desktop_name(self):
         r"""Gets the desktop_name of this ListAgentsInstallConditionRequest.
 
-        桌面名称
+        桌面名称。
 
         :return: The desktop_name of this ListAgentsInstallConditionRequest.
         :rtype: str
@@ -156,7 +156,7 @@ class ListAgentsInstallConditionRequest:
     def desktop_name(self, desktop_name):
         r"""Sets the desktop_name of this ListAgentsInstallConditionRequest.
 
-        桌面名称
+        桌面名称。
 
         :param desktop_name: The desktop_name of this ListAgentsInstallConditionRequest.
         :type desktop_name: str
@@ -167,7 +167,7 @@ class ListAgentsInstallConditionRequest:
     def status(self):
         r"""Gets the status of this ListAgentsInstallConditionRequest.
 
-        桌面状态
+        桌面状态。
 
         :return: The status of this ListAgentsInstallConditionRequest.
         :rtype: str
@@ -178,7 +178,7 @@ class ListAgentsInstallConditionRequest:
     def status(self, status):
         r"""Sets the status of this ListAgentsInstallConditionRequest.
 
-        桌面状态
+        桌面状态。
 
         :param status: The status of this ListAgentsInstallConditionRequest.
         :type status: str
@@ -189,7 +189,7 @@ class ListAgentsInstallConditionRequest:
     def ip_address(self):
         r"""Gets the ip_address of this ListAgentsInstallConditionRequest.
 
-        ip地址
+        ip地址。
 
         :return: The ip_address of this ListAgentsInstallConditionRequest.
         :rtype: str
@@ -200,7 +200,7 @@ class ListAgentsInstallConditionRequest:
     def ip_address(self, ip_address):
         r"""Sets the ip_address of this ListAgentsInstallConditionRequest.
 
-        ip地址
+        ip地址。
 
         :param ip_address: The ip_address of this ListAgentsInstallConditionRequest.
         :type ip_address: str
@@ -211,7 +211,7 @@ class ListAgentsInstallConditionRequest:
     def is_installed(self):
         r"""Gets the is_installed of this ListAgentsInstallConditionRequest.
 
-        插件是否已安装
+        插件是否已安装。
 
         :return: The is_installed of this ListAgentsInstallConditionRequest.
         :rtype: bool
@@ -222,7 +222,7 @@ class ListAgentsInstallConditionRequest:
     def is_installed(self, is_installed):
         r"""Sets the is_installed of this ListAgentsInstallConditionRequest.
 
-        插件是否已安装
+        插件是否已安装。
 
         :param is_installed: The is_installed of this ListAgentsInstallConditionRequest.
         :type is_installed: bool
@@ -233,7 +233,7 @@ class ListAgentsInstallConditionRequest:
     def desktop_pool_id(self):
         r"""Gets the desktop_pool_id of this ListAgentsInstallConditionRequest.
 
-        桌面池id
+        桌面池id。
 
         :return: The desktop_pool_id of this ListAgentsInstallConditionRequest.
         :rtype: str
@@ -244,7 +244,7 @@ class ListAgentsInstallConditionRequest:
     def desktop_pool_id(self, desktop_pool_id):
         r"""Sets the desktop_pool_id of this ListAgentsInstallConditionRequest.
 
-        桌面池id
+        桌面池id。
 
         :param desktop_pool_id: The desktop_pool_id of this ListAgentsInstallConditionRequest.
         :type desktop_pool_id: str

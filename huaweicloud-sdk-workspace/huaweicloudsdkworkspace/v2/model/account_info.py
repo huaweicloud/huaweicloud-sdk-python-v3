@@ -35,7 +35,7 @@ class AccountInfo:
 
         The model defined in huaweicloud sdk
 
-        :param account: 账户，账户的格式必须为:&lt;i&gt;账户(组)&lt;/i&gt;的形式。
+        :param account: 账户，账户的格式必须为:账户(组)的形式。
         :type account: str
         :param domain: 域名(用户组必填，不填时使用默认值 local.com)。
         :type domain: str
@@ -64,7 +64,7 @@ class AccountInfo:
     def account(self):
         r"""Gets the account of this AccountInfo.
 
-        账户，账户的格式必须为:<i>账户(组)</i>的形式。
+        账户，账户的格式必须为:账户(组)的形式。
 
         :return: The account of this AccountInfo.
         :rtype: str
@@ -75,7 +75,7 @@ class AccountInfo:
     def account(self, account):
         r"""Sets the account of this AccountInfo.
 
-        账户，账户的格式必须为:<i>账户(组)</i>的形式。
+        账户，账户的格式必须为:账户(组)的形式。
 
         :param account: The account of this AccountInfo.
         :type account: str

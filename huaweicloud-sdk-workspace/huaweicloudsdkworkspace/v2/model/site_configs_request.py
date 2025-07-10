@@ -33,7 +33,7 @@ class SiteConfigsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param availability_zone: 开通服务资源使用的可用分区
+        :param availability_zone: 开通服务资源使用的可用分区。
         :type availability_zone: str
         :param network_config: 
         :type network_config: :class:`huaweicloudsdkworkspace.v2.NetworkConfigReq`
@@ -57,7 +57,7 @@ class SiteConfigsRequest:
     def availability_zone(self):
         r"""Gets the availability_zone of this SiteConfigsRequest.
 
-        开通服务资源使用的可用分区
+        开通服务资源使用的可用分区。
 
         :return: The availability_zone of this SiteConfigsRequest.
         :rtype: str
@@ -68,7 +68,7 @@ class SiteConfigsRequest:
     def availability_zone(self, availability_zone):
         r"""Sets the availability_zone of this SiteConfigsRequest.
 
-        开通服务资源使用的可用分区
+        开通服务资源使用的可用分区。
 
         :param availability_zone: The availability_zone of this SiteConfigsRequest.
         :type availability_zone: str

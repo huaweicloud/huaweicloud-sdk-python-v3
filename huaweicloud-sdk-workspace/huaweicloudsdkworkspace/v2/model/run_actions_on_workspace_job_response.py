@@ -30,7 +30,7 @@ class RunActionsOnWorkspaceJobResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param job_id: 任务ID
+        :param job_id: 任务ID。
         :type job_id: str
         """
         
@@ -46,7 +46,7 @@ class RunActionsOnWorkspaceJobResponse(SdkResponse):
     def job_id(self):
         r"""Gets the job_id of this RunActionsOnWorkspaceJobResponse.
 
-        任务ID
+        任务ID。
 
         :return: The job_id of this RunActionsOnWorkspaceJobResponse.
         :rtype: str
@@ -57,7 +57,7 @@ class RunActionsOnWorkspaceJobResponse(SdkResponse):
     def job_id(self, job_id):
         r"""Sets the job_id of this RunActionsOnWorkspaceJobResponse.
 
-        任务ID
+        任务ID。
 
         :param job_id: The job_id of this RunActionsOnWorkspaceJobResponse.
         :type job_id: str

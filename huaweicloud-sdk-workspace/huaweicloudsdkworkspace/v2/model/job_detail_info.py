@@ -28,7 +28,6 @@ class JobDetailInfo:
         'host': 'str',
         'project_id': 'str',
         'job_id': 'str',
-        'success_result': 'str',
         'process': 'int',
         'attach_user': 'str',
         'entity': 'str',
@@ -47,14 +46,13 @@ class JobDetailInfo:
         'host': 'host',
         'project_id': 'project_id',
         'job_id': 'job_id',
-        'success_result': 'success_result',
         'process': 'process',
         'attach_user': 'attach_user',
         'entity': 'entity',
         'ip_address': 'ip_address'
     }
 
-    def __init__(self, id=None, job_type=None, entities=None, begin_time=None, end_time=None, status=None, error_code=None, fail_reason=None, host=None, project_id=None, job_id=None, success_result=None, process=None, attach_user=None, entity=None, ip_address=None):
+    def __init__(self, id=None, job_type=None, entities=None, begin_time=None, end_time=None, status=None, error_code=None, fail_reason=None, host=None, project_id=None, job_id=None, process=None, attach_user=None, entity=None, ip_address=None):
         r"""JobDetailInfo
 
         The model defined in huaweicloud sdk
@@ -81,8 +79,6 @@ class JobDetailInfo:
         :type project_id: str
         :param job_id: 任务ID。
         :type job_id: str
-        :param success_result: 任务成功结果。
-        :type success_result: str
         :param process: 任务进度。
         :type process: int
         :param attach_user: 关联用户。
@@ -106,7 +102,6 @@ class JobDetailInfo:
         self._host = None
         self._project_id = None
         self._job_id = None
-        self._success_result = None
         self._process = None
         self._attach_user = None
         self._entity = None
@@ -135,8 +130,6 @@ class JobDetailInfo:
             self.project_id = project_id
         if job_id is not None:
             self.job_id = job_id
-        if success_result is not None:
-            self.success_result = success_result
         if process is not None:
             self.process = process
         if attach_user is not None:
@@ -383,28 +376,6 @@ class JobDetailInfo:
         :type job_id: str
         """
         self._job_id = job_id
-
-    @property
-    def success_result(self):
-        r"""Gets the success_result of this JobDetailInfo.
-
-        任务成功结果。
-
-        :return: The success_result of this JobDetailInfo.
-        :rtype: str
-        """
-        return self._success_result
-
-    @success_result.setter
-    def success_result(self, success_result):
-        r"""Sets the success_result of this JobDetailInfo.
-
-        任务成功结果。
-
-        :param success_result: The success_result of this JobDetailInfo.
-        :type success_result: str
-        """
-        self._success_result = success_result
 
     @property
     def process(self):

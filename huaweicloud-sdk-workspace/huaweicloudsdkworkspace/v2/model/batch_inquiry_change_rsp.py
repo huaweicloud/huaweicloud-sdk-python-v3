@@ -47,25 +47,25 @@ class BatchInquiryChangeRsp:
 
         The model defined in huaweicloud sdk
 
-        :param ret_code: 返回码，恒为0
+        :param ret_code: 返回码，恒为0。
         :type ret_code: str
-        :param error_txt: 返回信息
+        :param error_txt: 返回信息。
         :type error_txt: str
-        :param amount: 总额，即最终优惠后的金额(降配场景下包含退还的现金、现金券、储值卡的总额)
+        :param amount: 总额，即最终优惠后的金额(降配场景下包含退还的现金、现金券、储值卡的总额)。
         :type amount: float
-        :param coupon_results: 券的退订金额（降配存在）
+        :param coupon_results: 券的退订金额（降配存在）。
         :type coupon_results: list[:class:`huaweicloudsdkworkspace.v2.CouponUnsubscribeResult`]
-        :param discount_amount: 优惠额
+        :param discount_amount: 优惠额。
         :type discount_amount: float
-        :param original_amount: 原总额，即优惠前总额
+        :param original_amount: 原总额，即优惠前总额。
         :type original_amount: float
-        :param measure_id: 度量单位标识
+        :param measure_id: 度量单位标识。
         :type measure_id: int
-        :param currency: 货币单位代码（遵循ISO 4217标准）
+        :param currency: 货币单位代码（遵循ISO 4217标准）。
         :type currency: str
-        :param product_rating_result: 批价结果
+        :param product_rating_result: 批价结果。
         :type product_rating_result: list[:class:`huaweicloudsdkworkspace.v2.BatchResInquiryResult`]
-        :param extend_params: 扩展参数
+        :param extend_params: 扩展参数。
         :type extend_params: str
         """
         
@@ -108,7 +108,7 @@ class BatchInquiryChangeRsp:
     def ret_code(self):
         r"""Gets the ret_code of this BatchInquiryChangeRsp.
 
-        返回码，恒为0
+        返回码，恒为0。
 
         :return: The ret_code of this BatchInquiryChangeRsp.
         :rtype: str
@@ -119,7 +119,7 @@ class BatchInquiryChangeRsp:
     def ret_code(self, ret_code):
         r"""Sets the ret_code of this BatchInquiryChangeRsp.
 
-        返回码，恒为0
+        返回码，恒为0。
 
         :param ret_code: The ret_code of this BatchInquiryChangeRsp.
         :type ret_code: str
@@ -130,7 +130,7 @@ class BatchInquiryChangeRsp:
     def error_txt(self):
         r"""Gets the error_txt of this BatchInquiryChangeRsp.
 
-        返回信息
+        返回信息。
 
         :return: The error_txt of this BatchInquiryChangeRsp.
         :rtype: str
@@ -141,7 +141,7 @@ class BatchInquiryChangeRsp:
     def error_txt(self, error_txt):
         r"""Sets the error_txt of this BatchInquiryChangeRsp.
 
-        返回信息
+        返回信息。
 
         :param error_txt: The error_txt of this BatchInquiryChangeRsp.
         :type error_txt: str
@@ -152,7 +152,7 @@ class BatchInquiryChangeRsp:
     def amount(self):
         r"""Gets the amount of this BatchInquiryChangeRsp.
 
-        总额，即最终优惠后的金额(降配场景下包含退还的现金、现金券、储值卡的总额)
+        总额，即最终优惠后的金额(降配场景下包含退还的现金、现金券、储值卡的总额)。
 
         :return: The amount of this BatchInquiryChangeRsp.
         :rtype: float
@@ -163,7 +163,7 @@ class BatchInquiryChangeRsp:
     def amount(self, amount):
         r"""Sets the amount of this BatchInquiryChangeRsp.
 
-        总额，即最终优惠后的金额(降配场景下包含退还的现金、现金券、储值卡的总额)
+        总额，即最终优惠后的金额(降配场景下包含退还的现金、现金券、储值卡的总额)。
 
         :param amount: The amount of this BatchInquiryChangeRsp.
         :type amount: float
@@ -174,7 +174,7 @@ class BatchInquiryChangeRsp:
     def coupon_results(self):
         r"""Gets the coupon_results of this BatchInquiryChangeRsp.
 
-        券的退订金额（降配存在）
+        券的退订金额（降配存在）。
 
         :return: The coupon_results of this BatchInquiryChangeRsp.
         :rtype: list[:class:`huaweicloudsdkworkspace.v2.CouponUnsubscribeResult`]
@@ -185,7 +185,7 @@ class BatchInquiryChangeRsp:
     def coupon_results(self, coupon_results):
         r"""Sets the coupon_results of this BatchInquiryChangeRsp.
 
-        券的退订金额（降配存在）
+        券的退订金额（降配存在）。
 
         :param coupon_results: The coupon_results of this BatchInquiryChangeRsp.
         :type coupon_results: list[:class:`huaweicloudsdkworkspace.v2.CouponUnsubscribeResult`]
@@ -196,7 +196,7 @@ class BatchInquiryChangeRsp:
     def discount_amount(self):
         r"""Gets the discount_amount of this BatchInquiryChangeRsp.
 
-        优惠额
+        优惠额。
 
         :return: The discount_amount of this BatchInquiryChangeRsp.
         :rtype: float
@@ -207,7 +207,7 @@ class BatchInquiryChangeRsp:
     def discount_amount(self, discount_amount):
         r"""Sets the discount_amount of this BatchInquiryChangeRsp.
 
-        优惠额
+        优惠额。
 
         :param discount_amount: The discount_amount of this BatchInquiryChangeRsp.
         :type discount_amount: float
@@ -218,7 +218,7 @@ class BatchInquiryChangeRsp:
     def original_amount(self):
         r"""Gets the original_amount of this BatchInquiryChangeRsp.
 
-        原总额，即优惠前总额
+        原总额，即优惠前总额。
 
         :return: The original_amount of this BatchInquiryChangeRsp.
         :rtype: float
@@ -229,7 +229,7 @@ class BatchInquiryChangeRsp:
     def original_amount(self, original_amount):
         r"""Sets the original_amount of this BatchInquiryChangeRsp.
 
-        原总额，即优惠前总额
+        原总额，即优惠前总额。
 
         :param original_amount: The original_amount of this BatchInquiryChangeRsp.
         :type original_amount: float
@@ -240,7 +240,7 @@ class BatchInquiryChangeRsp:
     def measure_id(self):
         r"""Gets the measure_id of this BatchInquiryChangeRsp.
 
-        度量单位标识
+        度量单位标识。
 
         :return: The measure_id of this BatchInquiryChangeRsp.
         :rtype: int
@@ -251,7 +251,7 @@ class BatchInquiryChangeRsp:
     def measure_id(self, measure_id):
         r"""Sets the measure_id of this BatchInquiryChangeRsp.
 
-        度量单位标识
+        度量单位标识。
 
         :param measure_id: The measure_id of this BatchInquiryChangeRsp.
         :type measure_id: int
@@ -262,7 +262,7 @@ class BatchInquiryChangeRsp:
     def currency(self):
         r"""Gets the currency of this BatchInquiryChangeRsp.
 
-        货币单位代码（遵循ISO 4217标准）
+        货币单位代码（遵循ISO 4217标准）。
 
         :return: The currency of this BatchInquiryChangeRsp.
         :rtype: str
@@ -273,7 +273,7 @@ class BatchInquiryChangeRsp:
     def currency(self, currency):
         r"""Sets the currency of this BatchInquiryChangeRsp.
 
-        货币单位代码（遵循ISO 4217标准）
+        货币单位代码（遵循ISO 4217标准）。
 
         :param currency: The currency of this BatchInquiryChangeRsp.
         :type currency: str
@@ -284,7 +284,7 @@ class BatchInquiryChangeRsp:
     def product_rating_result(self):
         r"""Gets the product_rating_result of this BatchInquiryChangeRsp.
 
-        批价结果
+        批价结果。
 
         :return: The product_rating_result of this BatchInquiryChangeRsp.
         :rtype: list[:class:`huaweicloudsdkworkspace.v2.BatchResInquiryResult`]
@@ -295,7 +295,7 @@ class BatchInquiryChangeRsp:
     def product_rating_result(self, product_rating_result):
         r"""Sets the product_rating_result of this BatchInquiryChangeRsp.
 
-        批价结果
+        批价结果。
 
         :param product_rating_result: The product_rating_result of this BatchInquiryChangeRsp.
         :type product_rating_result: list[:class:`huaweicloudsdkworkspace.v2.BatchResInquiryResult`]
@@ -306,7 +306,7 @@ class BatchInquiryChangeRsp:
     def extend_params(self):
         r"""Gets the extend_params of this BatchInquiryChangeRsp.
 
-        扩展参数
+        扩展参数。
 
         :return: The extend_params of this BatchInquiryChangeRsp.
         :rtype: str
@@ -317,7 +317,7 @@ class BatchInquiryChangeRsp:
     def extend_params(self, extend_params):
         r"""Sets the extend_params of this BatchInquiryChangeRsp.
 
-        扩展参数
+        扩展参数。
 
         :param extend_params: The extend_params of this BatchInquiryChangeRsp.
         :type extend_params: str

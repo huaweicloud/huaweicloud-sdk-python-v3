@@ -65,13 +65,13 @@ class InstanceStatusStatistics:
         :type hibernate_num: int
         :param other_num: 其他(未知、删除失败、删除中)。
         :type other_num: int
-        :param attached_num: 已分配数目
+        :param attached_num: 已分配数目。
         :type attached_num: int
-        :param unattached_num: 未分配数目
+        :param unattached_num: 未分配数目。
         :type unattached_num: int
-        :param cannot_attach_num: 不可分配数目(分配失败、解分配失败、解分配成功)
+        :param cannot_attach_num: 不可分配数目(分配失败、解分配失败、解分配成功)。
         :type cannot_attach_num: int
-        :param in_process_num: 处理中(分配中、解分配中)
+        :param in_process_num: 处理中(分配中、解分配中)。
         :type in_process_num: int
         :param in_use_num: 使用中数目。
         :type in_use_num: int
@@ -246,7 +246,7 @@ class InstanceStatusStatistics:
     def attached_num(self):
         r"""Gets the attached_num of this InstanceStatusStatistics.
 
-        已分配数目
+        已分配数目。
 
         :return: The attached_num of this InstanceStatusStatistics.
         :rtype: int
@@ -257,7 +257,7 @@ class InstanceStatusStatistics:
     def attached_num(self, attached_num):
         r"""Sets the attached_num of this InstanceStatusStatistics.
 
-        已分配数目
+        已分配数目。
 
         :param attached_num: The attached_num of this InstanceStatusStatistics.
         :type attached_num: int
@@ -268,7 +268,7 @@ class InstanceStatusStatistics:
     def unattached_num(self):
         r"""Gets the unattached_num of this InstanceStatusStatistics.
 
-        未分配数目
+        未分配数目。
 
         :return: The unattached_num of this InstanceStatusStatistics.
         :rtype: int
@@ -279,7 +279,7 @@ class InstanceStatusStatistics:
     def unattached_num(self, unattached_num):
         r"""Sets the unattached_num of this InstanceStatusStatistics.
 
-        未分配数目
+        未分配数目。
 
         :param unattached_num: The unattached_num of this InstanceStatusStatistics.
         :type unattached_num: int
@@ -290,7 +290,7 @@ class InstanceStatusStatistics:
     def cannot_attach_num(self):
         r"""Gets the cannot_attach_num of this InstanceStatusStatistics.
 
-        不可分配数目(分配失败、解分配失败、解分配成功)
+        不可分配数目(分配失败、解分配失败、解分配成功)。
 
         :return: The cannot_attach_num of this InstanceStatusStatistics.
         :rtype: int
@@ -301,7 +301,7 @@ class InstanceStatusStatistics:
     def cannot_attach_num(self, cannot_attach_num):
         r"""Sets the cannot_attach_num of this InstanceStatusStatistics.
 
-        不可分配数目(分配失败、解分配失败、解分配成功)
+        不可分配数目(分配失败、解分配失败、解分配成功)。
 
         :param cannot_attach_num: The cannot_attach_num of this InstanceStatusStatistics.
         :type cannot_attach_num: int
@@ -312,7 +312,7 @@ class InstanceStatusStatistics:
     def in_process_num(self):
         r"""Gets the in_process_num of this InstanceStatusStatistics.
 
-        处理中(分配中、解分配中)
+        处理中(分配中、解分配中)。
 
         :return: The in_process_num of this InstanceStatusStatistics.
         :rtype: int
@@ -323,7 +323,7 @@ class InstanceStatusStatistics:
     def in_process_num(self, in_process_num):
         r"""Sets the in_process_num of this InstanceStatusStatistics.
 
-        处理中(分配中、解分配中)
+        处理中(分配中、解分配中)。
 
         :param in_process_num: The in_process_num of this InstanceStatusStatistics.
         :type in_process_num: int

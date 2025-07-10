@@ -33,11 +33,11 @@ class VirtualChannelOptions:
 
         The model defined in huaweicloud sdk
 
-        :param custom_virtual_channel_name: 自定义虚拟通道注册名。目前仅支持ASCII码字符。
+        :param custom_virtual_channel_name: 自定义虚拟通道注册名。目前仅支持ASCII码字符，长度不能超过65535个字符。
         :type custom_virtual_channel_name: str
-        :param virtual_channel_plugin_details: 虚拟通道下载配置信息，需Base64加密。加密前目前仅支持ASCII码字符。
+        :param virtual_channel_plugin_details: 虚拟通道下载配置信息，需Base64加密。加密前目前仅支持ASCII码字符，长度不能超过65535个字符。
         :type virtual_channel_plugin_details: str
-        :param third_party_plugin_name: 第三方插件名称。
+        :param third_party_plugin_name: 第三方插件名称，长度不能超过65535个字符。
         :type third_party_plugin_name: str
         """
         
@@ -59,7 +59,7 @@ class VirtualChannelOptions:
     def custom_virtual_channel_name(self):
         r"""Gets the custom_virtual_channel_name of this VirtualChannelOptions.
 
-        自定义虚拟通道注册名。目前仅支持ASCII码字符。
+        自定义虚拟通道注册名。目前仅支持ASCII码字符，长度不能超过65535个字符。
 
         :return: The custom_virtual_channel_name of this VirtualChannelOptions.
         :rtype: str
@@ -70,7 +70,7 @@ class VirtualChannelOptions:
     def custom_virtual_channel_name(self, custom_virtual_channel_name):
         r"""Sets the custom_virtual_channel_name of this VirtualChannelOptions.
 
-        自定义虚拟通道注册名。目前仅支持ASCII码字符。
+        自定义虚拟通道注册名。目前仅支持ASCII码字符，长度不能超过65535个字符。
 
         :param custom_virtual_channel_name: The custom_virtual_channel_name of this VirtualChannelOptions.
         :type custom_virtual_channel_name: str
@@ -81,7 +81,7 @@ class VirtualChannelOptions:
     def virtual_channel_plugin_details(self):
         r"""Gets the virtual_channel_plugin_details of this VirtualChannelOptions.
 
-        虚拟通道下载配置信息，需Base64加密。加密前目前仅支持ASCII码字符。
+        虚拟通道下载配置信息，需Base64加密。加密前目前仅支持ASCII码字符，长度不能超过65535个字符。
 
         :return: The virtual_channel_plugin_details of this VirtualChannelOptions.
         :rtype: str
@@ -92,7 +92,7 @@ class VirtualChannelOptions:
     def virtual_channel_plugin_details(self, virtual_channel_plugin_details):
         r"""Sets the virtual_channel_plugin_details of this VirtualChannelOptions.
 
-        虚拟通道下载配置信息，需Base64加密。加密前目前仅支持ASCII码字符。
+        虚拟通道下载配置信息，需Base64加密。加密前目前仅支持ASCII码字符，长度不能超过65535个字符。
 
         :param virtual_channel_plugin_details: The virtual_channel_plugin_details of this VirtualChannelOptions.
         :type virtual_channel_plugin_details: str
@@ -103,7 +103,7 @@ class VirtualChannelOptions:
     def third_party_plugin_name(self):
         r"""Gets the third_party_plugin_name of this VirtualChannelOptions.
 
-        第三方插件名称。
+        第三方插件名称，长度不能超过65535个字符。
 
         :return: The third_party_plugin_name of this VirtualChannelOptions.
         :rtype: str
@@ -114,7 +114,7 @@ class VirtualChannelOptions:
     def third_party_plugin_name(self, third_party_plugin_name):
         r"""Sets the third_party_plugin_name of this VirtualChannelOptions.
 
-        第三方插件名称。
+        第三方插件名称，长度不能超过65535个字符。
 
         :param third_party_plugin_name: The third_party_plugin_name of this VirtualChannelOptions.
         :type third_party_plugin_name: str

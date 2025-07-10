@@ -31,9 +31,9 @@ class DesktopTagsInfo:
 
         The model defined in huaweicloud sdk
 
-        :param desktop_id: 桌面ID
+        :param desktop_id: 桌面ID。
         :type desktop_id: str
-        :param tags: 携带标签列表
+        :param tags: 携带标签列表。
         :type tags: list[:class:`huaweicloudsdkworkspace.v2.Tag`]
         """
         
@@ -50,7 +50,7 @@ class DesktopTagsInfo:
     def desktop_id(self):
         r"""Gets the desktop_id of this DesktopTagsInfo.
 
-        桌面ID
+        桌面ID。
 
         :return: The desktop_id of this DesktopTagsInfo.
         :rtype: str
@@ -61,7 +61,7 @@ class DesktopTagsInfo:
     def desktop_id(self, desktop_id):
         r"""Sets the desktop_id of this DesktopTagsInfo.
 
-        桌面ID
+        桌面ID。
 
         :param desktop_id: The desktop_id of this DesktopTagsInfo.
         :type desktop_id: str
@@ -72,7 +72,7 @@ class DesktopTagsInfo:
     def tags(self):
         r"""Gets the tags of this DesktopTagsInfo.
 
-        携带标签列表
+        携带标签列表。
 
         :return: The tags of this DesktopTagsInfo.
         :rtype: list[:class:`huaweicloudsdkworkspace.v2.Tag`]
@@ -83,7 +83,7 @@ class DesktopTagsInfo:
     def tags(self, tags):
         r"""Sets the tags of this DesktopTagsInfo.
 
-        携带标签列表
+        携带标签列表。
 
         :param tags: The tags of this DesktopTagsInfo.
         :type tags: list[:class:`huaweicloudsdkworkspace.v2.Tag`]

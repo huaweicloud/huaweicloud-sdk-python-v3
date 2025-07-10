@@ -29,7 +29,7 @@ class SendDesktopPoolNotificationsReq:
 
         The model defined in huaweicloud sdk
 
-        :param notifications: 消息通知内容
+        :param notifications: 消息通知内容。
         :type notifications: str
         """
         
@@ -44,7 +44,7 @@ class SendDesktopPoolNotificationsReq:
     def notifications(self):
         r"""Gets the notifications of this SendDesktopPoolNotificationsReq.
 
-        消息通知内容
+        消息通知内容。
 
         :return: The notifications of this SendDesktopPoolNotificationsReq.
         :rtype: str
@@ -55,7 +55,7 @@ class SendDesktopPoolNotificationsReq:
     def notifications(self, notifications):
         r"""Sets the notifications of this SendDesktopPoolNotificationsReq.
 
-        消息通知内容
+        消息通知内容。
 
         :param notifications: The notifications of this SendDesktopPoolNotificationsReq.
         :type notifications: str

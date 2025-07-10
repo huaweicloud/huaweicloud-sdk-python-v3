@@ -45,23 +45,23 @@ class InternetInfo:
 
         The model defined in huaweicloud sdk
 
-        :param vpc_name: VPC名称
+        :param vpc_name: VPC名称。
         :type vpc_name: str
-        :param subnet_id: 子网id
+        :param subnet_id: 子网id。
         :type subnet_id: str
-        :param subnet_name: 子网名称
+        :param subnet_name: 子网名称。
         :type subnet_name: str
-        :param nat_id: NAT id
+        :param nat_id: NAT id。
         :type nat_id: str
-        :param nat_name: NAT名称
+        :param nat_name: NAT名称。
         :type nat_name: str
-        :param eip: 弹性公网IP
+        :param eip: 弹性公网IP。
         :type eip: str
-        :param created_at: 创建时间
+        :param created_at: 创建时间。
         :type created_at: str
-        :param status: 状态
+        :param status: 状态。
         :type status: str
-        :param enterprise_project_id: 企业项目ID
+        :param enterprise_project_id: 企业项目ID。
         :type enterprise_project_id: str
         """
         
@@ -101,7 +101,7 @@ class InternetInfo:
     def vpc_name(self):
         r"""Gets the vpc_name of this InternetInfo.
 
-        VPC名称
+        VPC名称。
 
         :return: The vpc_name of this InternetInfo.
         :rtype: str
@@ -112,7 +112,7 @@ class InternetInfo:
     def vpc_name(self, vpc_name):
         r"""Sets the vpc_name of this InternetInfo.
 
-        VPC名称
+        VPC名称。
 
         :param vpc_name: The vpc_name of this InternetInfo.
         :type vpc_name: str
@@ -123,7 +123,7 @@ class InternetInfo:
     def subnet_id(self):
         r"""Gets the subnet_id of this InternetInfo.
 
-        子网id
+        子网id。
 
         :return: The subnet_id of this InternetInfo.
         :rtype: str
@@ -134,7 +134,7 @@ class InternetInfo:
     def subnet_id(self, subnet_id):
         r"""Sets the subnet_id of this InternetInfo.
 
-        子网id
+        子网id。
 
         :param subnet_id: The subnet_id of this InternetInfo.
         :type subnet_id: str
@@ -145,7 +145,7 @@ class InternetInfo:
     def subnet_name(self):
         r"""Gets the subnet_name of this InternetInfo.
 
-        子网名称
+        子网名称。
 
         :return: The subnet_name of this InternetInfo.
         :rtype: str
@@ -156,7 +156,7 @@ class InternetInfo:
     def subnet_name(self, subnet_name):
         r"""Sets the subnet_name of this InternetInfo.
 
-        子网名称
+        子网名称。
 
         :param subnet_name: The subnet_name of this InternetInfo.
         :type subnet_name: str
@@ -167,7 +167,7 @@ class InternetInfo:
     def nat_id(self):
         r"""Gets the nat_id of this InternetInfo.
 
-        NAT id
+        NAT id。
 
         :return: The nat_id of this InternetInfo.
         :rtype: str
@@ -178,7 +178,7 @@ class InternetInfo:
     def nat_id(self, nat_id):
         r"""Sets the nat_id of this InternetInfo.
 
-        NAT id
+        NAT id。
 
         :param nat_id: The nat_id of this InternetInfo.
         :type nat_id: str
@@ -189,7 +189,7 @@ class InternetInfo:
     def nat_name(self):
         r"""Gets the nat_name of this InternetInfo.
 
-        NAT名称
+        NAT名称。
 
         :return: The nat_name of this InternetInfo.
         :rtype: str
@@ -200,7 +200,7 @@ class InternetInfo:
     def nat_name(self, nat_name):
         r"""Sets the nat_name of this InternetInfo.
 
-        NAT名称
+        NAT名称。
 
         :param nat_name: The nat_name of this InternetInfo.
         :type nat_name: str
@@ -211,7 +211,7 @@ class InternetInfo:
     def eip(self):
         r"""Gets the eip of this InternetInfo.
 
-        弹性公网IP
+        弹性公网IP。
 
         :return: The eip of this InternetInfo.
         :rtype: str
@@ -222,7 +222,7 @@ class InternetInfo:
     def eip(self, eip):
         r"""Sets the eip of this InternetInfo.
 
-        弹性公网IP
+        弹性公网IP。
 
         :param eip: The eip of this InternetInfo.
         :type eip: str
@@ -233,7 +233,7 @@ class InternetInfo:
     def created_at(self):
         r"""Gets the created_at of this InternetInfo.
 
-        创建时间
+        创建时间。
 
         :return: The created_at of this InternetInfo.
         :rtype: str
@@ -244,7 +244,7 @@ class InternetInfo:
     def created_at(self, created_at):
         r"""Sets the created_at of this InternetInfo.
 
-        创建时间
+        创建时间。
 
         :param created_at: The created_at of this InternetInfo.
         :type created_at: str
@@ -255,7 +255,7 @@ class InternetInfo:
     def status(self):
         r"""Gets the status of this InternetInfo.
 
-        状态
+        状态。
 
         :return: The status of this InternetInfo.
         :rtype: str
@@ -266,7 +266,7 @@ class InternetInfo:
     def status(self, status):
         r"""Sets the status of this InternetInfo.
 
-        状态
+        状态。
 
         :param status: The status of this InternetInfo.
         :type status: str
@@ -277,7 +277,7 @@ class InternetInfo:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this InternetInfo.
 
-        企业项目ID
+        企业项目ID。
 
         :return: The enterprise_project_id of this InternetInfo.
         :rtype: str
@@ -288,7 +288,7 @@ class InternetInfo:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this InternetInfo.
 
-        企业项目ID
+        企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this InternetInfo.
         :type enterprise_project_id: str

@@ -39,9 +39,9 @@ class AuthorizedObjects:
 
         :param object_type: 绑定对象类型枚举。  - USER：用户 - USER_GROUP：用户组
         :type object_type: str
-        :param object_id: 用户/用户组id
+        :param object_id: 用户/用户组id。
         :type object_id: str
-        :param object_name: 用户/用户组名称
+        :param object_name: 用户/用户组名称。
         :type object_name: str
         :param user_group: 桌面用户所属的用户权限组。  - sudo：Linux管理员组。 - default：Linux默认用户组。 - administrators：Windows管理员组。管理员拥有对该桌面的完全访问权，可以做任何需要的更改（禁用操作除外）。 - users：Windows标准用户组。标准用户可以使用大多数软件，并可以更改不影响其他用户的系统设置。
         :type user_group: str
@@ -91,7 +91,7 @@ class AuthorizedObjects:
     def object_id(self):
         r"""Gets the object_id of this AuthorizedObjects.
 
-        用户/用户组id
+        用户/用户组id。
 
         :return: The object_id of this AuthorizedObjects.
         :rtype: str
@@ -102,7 +102,7 @@ class AuthorizedObjects:
     def object_id(self, object_id):
         r"""Sets the object_id of this AuthorizedObjects.
 
-        用户/用户组id
+        用户/用户组id。
 
         :param object_id: The object_id of this AuthorizedObjects.
         :type object_id: str
@@ -113,7 +113,7 @@ class AuthorizedObjects:
     def object_name(self):
         r"""Gets the object_name of this AuthorizedObjects.
 
-        用户/用户组名称
+        用户/用户组名称。
 
         :return: The object_name of this AuthorizedObjects.
         :rtype: str
@@ -124,7 +124,7 @@ class AuthorizedObjects:
     def object_name(self, object_name):
         r"""Sets the object_name of this AuthorizedObjects.
 
-        用户/用户组名称
+        用户/用户组名称。
 
         :param object_name: The object_name of this AuthorizedObjects.
         :type object_name: str

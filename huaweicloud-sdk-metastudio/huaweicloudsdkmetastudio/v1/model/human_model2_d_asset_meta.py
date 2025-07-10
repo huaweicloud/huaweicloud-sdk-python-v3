@@ -25,7 +25,8 @@ class HumanModel2DAssetMeta:
         'device_names': 'list[str]',
         'is_with_action_library': 'bool',
         'action_tag_map': 'list[ActionTagInfo]',
-        'is_flexus': 'bool'
+        'is_flexus': 'bool',
+        'voice_asset_id': 'str'
     }
 
     attribute_map = {
@@ -37,10 +38,11 @@ class HumanModel2DAssetMeta:
         'device_names': 'device_names',
         'is_with_action_library': 'is_with_action_library',
         'action_tag_map': 'action_tag_map',
-        'is_flexus': 'is_flexus'
+        'is_flexus': 'is_flexus',
+        'voice_asset_id': 'voice_asset_id'
     }
 
-    def __init__(self, is_action_editable=None, is_real_background=None, support_live=None, model_version=None, model_resolution=None, device_names=None, is_with_action_library=None, action_tag_map=None, is_flexus=None):
+    def __init__(self, is_action_editable=None, is_real_background=None, support_live=None, model_version=None, model_resolution=None, device_names=None, is_with_action_library=None, action_tag_map=None, is_flexus=None, voice_asset_id=None):
         r"""HumanModel2DAssetMeta
 
         The model defined in huaweicloud sdk
@@ -63,6 +65,8 @@ class HumanModel2DAssetMeta:
         :type action_tag_map: list[:class:`huaweicloudsdkmetastudio.v1.ActionTagInfo`]
         :param is_flexus: 是否是Flexus版本分身数字人。
         :type is_flexus: bool
+        :param voice_asset_id: 形象关联的声音资产ID。
+        :type voice_asset_id: str
         """
         
         
@@ -76,6 +80,7 @@ class HumanModel2DAssetMeta:
         self._is_with_action_library = None
         self._action_tag_map = None
         self._is_flexus = None
+        self._voice_asset_id = None
         self.discriminator = None
 
         if is_action_editable is not None:
@@ -96,6 +101,8 @@ class HumanModel2DAssetMeta:
             self.action_tag_map = action_tag_map
         if is_flexus is not None:
             self.is_flexus = is_flexus
+        if voice_asset_id is not None:
+            self.voice_asset_id = voice_asset_id
 
     @property
     def is_action_editable(self):
@@ -294,6 +301,28 @@ class HumanModel2DAssetMeta:
         :type is_flexus: bool
         """
         self._is_flexus = is_flexus
+
+    @property
+    def voice_asset_id(self):
+        r"""Gets the voice_asset_id of this HumanModel2DAssetMeta.
+
+        形象关联的声音资产ID。
+
+        :return: The voice_asset_id of this HumanModel2DAssetMeta.
+        :rtype: str
+        """
+        return self._voice_asset_id
+
+    @voice_asset_id.setter
+    def voice_asset_id(self, voice_asset_id):
+        r"""Sets the voice_asset_id of this HumanModel2DAssetMeta.
+
+        形象关联的声音资产ID。
+
+        :param voice_asset_id: The voice_asset_id of this HumanModel2DAssetMeta.
+        :type voice_asset_id: str
+        """
+        self._voice_asset_id = voice_asset_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

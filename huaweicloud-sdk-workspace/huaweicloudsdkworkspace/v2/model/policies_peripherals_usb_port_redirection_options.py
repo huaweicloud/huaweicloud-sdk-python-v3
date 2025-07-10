@@ -63,7 +63,7 @@ class PoliciesPeripheralsUsbPortRedirectionOptions:
         :type usb_smart_card_enable: bool
         :param other_usb_devices_enable: 是否开启其他USB设备重定向。取值为： false：表示关闭。 true：表示开启。
         :type other_usb_devices_enable: bool
-        :param usb_redirection_customization_policy: USB端口重定向自定义策略。
+        :param usb_redirection_customization_policy: USB端口重定向自定义策略，长度不能超过18000个字符。
         :type usb_redirection_customization_policy: str
         :param usb_redirection_mode: USB 重定向模式。取值为： 经典模式：Classical mode。 通用模式：Common mode。
         :type usb_redirection_mode: str
@@ -284,7 +284,7 @@ class PoliciesPeripheralsUsbPortRedirectionOptions:
     def usb_redirection_customization_policy(self):
         r"""Gets the usb_redirection_customization_policy of this PoliciesPeripheralsUsbPortRedirectionOptions.
 
-        USB端口重定向自定义策略。
+        USB端口重定向自定义策略，长度不能超过18000个字符。
 
         :return: The usb_redirection_customization_policy of this PoliciesPeripheralsUsbPortRedirectionOptions.
         :rtype: str
@@ -295,7 +295,7 @@ class PoliciesPeripheralsUsbPortRedirectionOptions:
     def usb_redirection_customization_policy(self, usb_redirection_customization_policy):
         r"""Sets the usb_redirection_customization_policy of this PoliciesPeripheralsUsbPortRedirectionOptions.
 
-        USB端口重定向自定义策略。
+        USB端口重定向自定义策略，长度不能超过18000个字符。
 
         :param usb_redirection_customization_policy: The usb_redirection_customization_policy of this PoliciesPeripheralsUsbPortRedirectionOptions.
         :type usb_redirection_customization_policy: str

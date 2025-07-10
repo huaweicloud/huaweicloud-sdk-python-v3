@@ -30,7 +30,7 @@ class UpdateEnterpriseIdResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_id: 企业ID
+        :param enterprise_id: 企业ID。
         :type enterprise_id: str
         """
         
@@ -46,7 +46,7 @@ class UpdateEnterpriseIdResponse(SdkResponse):
     def enterprise_id(self):
         r"""Gets the enterprise_id of this UpdateEnterpriseIdResponse.
 
-        企业ID
+        企业ID。
 
         :return: The enterprise_id of this UpdateEnterpriseIdResponse.
         :rtype: str
@@ -57,7 +57,7 @@ class UpdateEnterpriseIdResponse(SdkResponse):
     def enterprise_id(self, enterprise_id):
         r"""Sets the enterprise_id of this UpdateEnterpriseIdResponse.
 
-        企业ID
+        企业ID。
 
         :param enterprise_id: The enterprise_id of this UpdateEnterpriseIdResponse.
         :type enterprise_id: str

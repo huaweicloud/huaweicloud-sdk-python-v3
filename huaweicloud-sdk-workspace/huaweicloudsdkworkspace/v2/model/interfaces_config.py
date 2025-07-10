@@ -45,23 +45,23 @@ class InterfacesConfig:
 
         The model defined in huaweicloud sdk
 
-        :param apply_platform: 应用平台
+        :param apply_platform: 应用平台。
         :type apply_platform: str
-        :param id: ID
+        :param id: ID。
         :type id: str
-        :param name: 名称
+        :param name: 名称。
         :type name: str
-        :param type: 类型
+        :param type: 类型。
         :type type: str
-        :param results: 结果
+        :param results: 结果。
         :type results: dict(str, str)
-        :param pagination: 分页信息
+        :param pagination: 分页信息。
         :type pagination: dict(str, object)
         :param request: 
         :type request: :class:`huaweicloudsdkworkspace.v2.InterfacesRequest`
-        :param response: 响应
+        :param response: 响应。
         :type response: str
-        :param result_check: 检查结果
+        :param result_check: 检查结果。
         :type result_check: str
         """
         
@@ -101,7 +101,7 @@ class InterfacesConfig:
     def apply_platform(self):
         r"""Gets the apply_platform of this InterfacesConfig.
 
-        应用平台
+        应用平台。
 
         :return: The apply_platform of this InterfacesConfig.
         :rtype: str
@@ -112,7 +112,7 @@ class InterfacesConfig:
     def apply_platform(self, apply_platform):
         r"""Sets the apply_platform of this InterfacesConfig.
 
-        应用平台
+        应用平台。
 
         :param apply_platform: The apply_platform of this InterfacesConfig.
         :type apply_platform: str
@@ -123,7 +123,7 @@ class InterfacesConfig:
     def id(self):
         r"""Gets the id of this InterfacesConfig.
 
-        ID
+        ID。
 
         :return: The id of this InterfacesConfig.
         :rtype: str
@@ -134,7 +134,7 @@ class InterfacesConfig:
     def id(self, id):
         r"""Sets the id of this InterfacesConfig.
 
-        ID
+        ID。
 
         :param id: The id of this InterfacesConfig.
         :type id: str
@@ -145,7 +145,7 @@ class InterfacesConfig:
     def name(self):
         r"""Gets the name of this InterfacesConfig.
 
-        名称
+        名称。
 
         :return: The name of this InterfacesConfig.
         :rtype: str
@@ -156,7 +156,7 @@ class InterfacesConfig:
     def name(self, name):
         r"""Sets the name of this InterfacesConfig.
 
-        名称
+        名称。
 
         :param name: The name of this InterfacesConfig.
         :type name: str
@@ -167,7 +167,7 @@ class InterfacesConfig:
     def type(self):
         r"""Gets the type of this InterfacesConfig.
 
-        类型
+        类型。
 
         :return: The type of this InterfacesConfig.
         :rtype: str
@@ -178,7 +178,7 @@ class InterfacesConfig:
     def type(self, type):
         r"""Sets the type of this InterfacesConfig.
 
-        类型
+        类型。
 
         :param type: The type of this InterfacesConfig.
         :type type: str
@@ -189,7 +189,7 @@ class InterfacesConfig:
     def results(self):
         r"""Gets the results of this InterfacesConfig.
 
-        结果
+        结果。
 
         :return: The results of this InterfacesConfig.
         :rtype: dict(str, str)
@@ -200,7 +200,7 @@ class InterfacesConfig:
     def results(self, results):
         r"""Sets the results of this InterfacesConfig.
 
-        结果
+        结果。
 
         :param results: The results of this InterfacesConfig.
         :type results: dict(str, str)
@@ -211,7 +211,7 @@ class InterfacesConfig:
     def pagination(self):
         r"""Gets the pagination of this InterfacesConfig.
 
-        分页信息
+        分页信息。
 
         :return: The pagination of this InterfacesConfig.
         :rtype: dict(str, object)
@@ -222,7 +222,7 @@ class InterfacesConfig:
     def pagination(self, pagination):
         r"""Sets the pagination of this InterfacesConfig.
 
-        分页信息
+        分页信息。
 
         :param pagination: The pagination of this InterfacesConfig.
         :type pagination: dict(str, object)
@@ -251,7 +251,7 @@ class InterfacesConfig:
     def response(self):
         r"""Gets the response of this InterfacesConfig.
 
-        响应
+        响应。
 
         :return: The response of this InterfacesConfig.
         :rtype: str
@@ -262,7 +262,7 @@ class InterfacesConfig:
     def response(self, response):
         r"""Sets the response of this InterfacesConfig.
 
-        响应
+        响应。
 
         :param response: The response of this InterfacesConfig.
         :type response: str
@@ -273,7 +273,7 @@ class InterfacesConfig:
     def result_check(self):
         r"""Gets the result_check of this InterfacesConfig.
 
-        检查结果
+        检查结果。
 
         :return: The result_check of this InterfacesConfig.
         :rtype: str
@@ -284,7 +284,7 @@ class InterfacesConfig:
     def result_check(self, result_check):
         r"""Sets the result_check of this InterfacesConfig.
 
-        检查结果
+        检查结果。
 
         :param result_check: The result_check of this InterfacesConfig.
         :type result_check: str

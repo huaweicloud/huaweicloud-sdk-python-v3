@@ -45,17 +45,17 @@ class PoliciesPersonalizedDataMgmt:
 
         :param personalized_data_mgmt_path: 个性化数据管理路径。
         :type personalized_data_mgmt_path: str
-        :param user_data_roaming_enable: 用户数据漫游
+        :param user_data_roaming_enable: 用户数据漫游。
         :type user_data_roaming_enable: bool
         :param user_data_roaming_options: 
         :type user_data_roaming_options: :class:`huaweicloudsdkworkspace.v2.PoliciesPersonalizedDataMgmtUserDataRoamingOptions`
-        :param user_folder_redirection_enable: 启用用户文件夹重定向
+        :param user_folder_redirection_enable: 启用用户文件夹重定向。
         :type user_folder_redirection_enable: bool
         :param user_folder_redirection_options: 
         :type user_folder_redirection_options: :class:`huaweicloudsdkworkspace.v2.PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions`
-        :param logoff_delete_user_configuration: 启用用户文件夹重定向
+        :param logoff_delete_user_configuration: 启用用户文件夹重定向。
         :type logoff_delete_user_configuration: bool
-        :param network_drive_mapping_enable: 启用用户文件夹重定向
+        :param network_drive_mapping_enable: 启用用户文件夹重定向。
         :type network_drive_mapping_enable: bool
         :param network_drive_mapping_options: 
         :type network_drive_mapping_options: :class:`huaweicloudsdkworkspace.v2.PoliciesPersonalizedDataMgmtNetworkDriveMappingOptions`
@@ -116,7 +116,7 @@ class PoliciesPersonalizedDataMgmt:
     def user_data_roaming_enable(self):
         r"""Gets the user_data_roaming_enable of this PoliciesPersonalizedDataMgmt.
 
-        用户数据漫游
+        用户数据漫游。
 
         :return: The user_data_roaming_enable of this PoliciesPersonalizedDataMgmt.
         :rtype: bool
@@ -127,7 +127,7 @@ class PoliciesPersonalizedDataMgmt:
     def user_data_roaming_enable(self, user_data_roaming_enable):
         r"""Sets the user_data_roaming_enable of this PoliciesPersonalizedDataMgmt.
 
-        用户数据漫游
+        用户数据漫游。
 
         :param user_data_roaming_enable: The user_data_roaming_enable of this PoliciesPersonalizedDataMgmt.
         :type user_data_roaming_enable: bool
@@ -156,7 +156,7 @@ class PoliciesPersonalizedDataMgmt:
     def user_folder_redirection_enable(self):
         r"""Gets the user_folder_redirection_enable of this PoliciesPersonalizedDataMgmt.
 
-        启用用户文件夹重定向
+        启用用户文件夹重定向。
 
         :return: The user_folder_redirection_enable of this PoliciesPersonalizedDataMgmt.
         :rtype: bool
@@ -167,7 +167,7 @@ class PoliciesPersonalizedDataMgmt:
     def user_folder_redirection_enable(self, user_folder_redirection_enable):
         r"""Sets the user_folder_redirection_enable of this PoliciesPersonalizedDataMgmt.
 
-        启用用户文件夹重定向
+        启用用户文件夹重定向。
 
         :param user_folder_redirection_enable: The user_folder_redirection_enable of this PoliciesPersonalizedDataMgmt.
         :type user_folder_redirection_enable: bool
@@ -196,7 +196,7 @@ class PoliciesPersonalizedDataMgmt:
     def logoff_delete_user_configuration(self):
         r"""Gets the logoff_delete_user_configuration of this PoliciesPersonalizedDataMgmt.
 
-        启用用户文件夹重定向
+        启用用户文件夹重定向。
 
         :return: The logoff_delete_user_configuration of this PoliciesPersonalizedDataMgmt.
         :rtype: bool
@@ -207,7 +207,7 @@ class PoliciesPersonalizedDataMgmt:
     def logoff_delete_user_configuration(self, logoff_delete_user_configuration):
         r"""Sets the logoff_delete_user_configuration of this PoliciesPersonalizedDataMgmt.
 
-        启用用户文件夹重定向
+        启用用户文件夹重定向。
 
         :param logoff_delete_user_configuration: The logoff_delete_user_configuration of this PoliciesPersonalizedDataMgmt.
         :type logoff_delete_user_configuration: bool
@@ -218,7 +218,7 @@ class PoliciesPersonalizedDataMgmt:
     def network_drive_mapping_enable(self):
         r"""Gets the network_drive_mapping_enable of this PoliciesPersonalizedDataMgmt.
 
-        启用用户文件夹重定向
+        启用用户文件夹重定向。
 
         :return: The network_drive_mapping_enable of this PoliciesPersonalizedDataMgmt.
         :rtype: bool
@@ -229,7 +229,7 @@ class PoliciesPersonalizedDataMgmt:
     def network_drive_mapping_enable(self, network_drive_mapping_enable):
         r"""Sets the network_drive_mapping_enable of this PoliciesPersonalizedDataMgmt.
 
-        启用用户文件夹重定向
+        启用用户文件夹重定向。
 
         :param network_drive_mapping_enable: The network_drive_mapping_enable of this PoliciesPersonalizedDataMgmt.
         :type network_drive_mapping_enable: bool

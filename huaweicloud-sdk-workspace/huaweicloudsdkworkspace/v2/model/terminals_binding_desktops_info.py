@@ -35,13 +35,13 @@ class TerminalsBindingDesktopsInfo:
 
         The model defined in huaweicloud sdk
 
-        :param id: MAC绑定策略ID
+        :param id: MAC绑定策略ID。
         :type id: str
-        :param mac: 终端MAC地址
+        :param mac: 终端MAC地址。
         :type mac: str
-        :param desktop_name: 虚拟机名称
+        :param desktop_name: 虚拟机名称。
         :type desktop_name: str
-        :param description: 描述
+        :param description: 描述。
         :type description: str
         """
         
@@ -66,7 +66,7 @@ class TerminalsBindingDesktopsInfo:
     def id(self):
         r"""Gets the id of this TerminalsBindingDesktopsInfo.
 
-        MAC绑定策略ID
+        MAC绑定策略ID。
 
         :return: The id of this TerminalsBindingDesktopsInfo.
         :rtype: str
@@ -77,7 +77,7 @@ class TerminalsBindingDesktopsInfo:
     def id(self, id):
         r"""Sets the id of this TerminalsBindingDesktopsInfo.
 
-        MAC绑定策略ID
+        MAC绑定策略ID。
 
         :param id: The id of this TerminalsBindingDesktopsInfo.
         :type id: str
@@ -88,7 +88,7 @@ class TerminalsBindingDesktopsInfo:
     def mac(self):
         r"""Gets the mac of this TerminalsBindingDesktopsInfo.
 
-        终端MAC地址
+        终端MAC地址。
 
         :return: The mac of this TerminalsBindingDesktopsInfo.
         :rtype: str
@@ -99,7 +99,7 @@ class TerminalsBindingDesktopsInfo:
     def mac(self, mac):
         r"""Sets the mac of this TerminalsBindingDesktopsInfo.
 
-        终端MAC地址
+        终端MAC地址。
 
         :param mac: The mac of this TerminalsBindingDesktopsInfo.
         :type mac: str
@@ -110,7 +110,7 @@ class TerminalsBindingDesktopsInfo:
     def desktop_name(self):
         r"""Gets the desktop_name of this TerminalsBindingDesktopsInfo.
 
-        虚拟机名称
+        虚拟机名称。
 
         :return: The desktop_name of this TerminalsBindingDesktopsInfo.
         :rtype: str
@@ -121,7 +121,7 @@ class TerminalsBindingDesktopsInfo:
     def desktop_name(self, desktop_name):
         r"""Sets the desktop_name of this TerminalsBindingDesktopsInfo.
 
-        虚拟机名称
+        虚拟机名称。
 
         :param desktop_name: The desktop_name of this TerminalsBindingDesktopsInfo.
         :type desktop_name: str
@@ -132,7 +132,7 @@ class TerminalsBindingDesktopsInfo:
     def description(self):
         r"""Gets the description of this TerminalsBindingDesktopsInfo.
 
-        描述
+        描述。
 
         :return: The description of this TerminalsBindingDesktopsInfo.
         :rtype: str
@@ -143,7 +143,7 @@ class TerminalsBindingDesktopsInfo:
     def description(self, description):
         r"""Sets the description of this TerminalsBindingDesktopsInfo.
 
-        描述
+        描述。
 
         :param description: The description of this TerminalsBindingDesktopsInfo.
         :type description: str

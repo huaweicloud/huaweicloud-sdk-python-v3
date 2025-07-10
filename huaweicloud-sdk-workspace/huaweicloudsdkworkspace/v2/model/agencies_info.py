@@ -31,9 +31,9 @@ class AgenciesInfo:
 
         The model defined in huaweicloud sdk
 
-        :param name: 名称
+        :param name: 名称。
         :type name: str
-        :param permissions: 委托权限信息
+        :param permissions: 委托权限信息。
         :type permissions: list[:class:`huaweicloudsdkworkspace.v2.AgenciesPermissionInfo`]
         """
         
@@ -52,7 +52,7 @@ class AgenciesInfo:
     def name(self):
         r"""Gets the name of this AgenciesInfo.
 
-        名称
+        名称。
 
         :return: The name of this AgenciesInfo.
         :rtype: str
@@ -63,7 +63,7 @@ class AgenciesInfo:
     def name(self, name):
         r"""Sets the name of this AgenciesInfo.
 
-        名称
+        名称。
 
         :param name: The name of this AgenciesInfo.
         :type name: str
@@ -74,7 +74,7 @@ class AgenciesInfo:
     def permissions(self):
         r"""Gets the permissions of this AgenciesInfo.
 
-        委托权限信息
+        委托权限信息。
 
         :return: The permissions of this AgenciesInfo.
         :rtype: list[:class:`huaweicloudsdkworkspace.v2.AgenciesPermissionInfo`]
@@ -85,7 +85,7 @@ class AgenciesInfo:
     def permissions(self, permissions):
         r"""Sets the permissions of this AgenciesInfo.
 
-        委托权限信息
+        委托权限信息。
 
         :param permissions: The permissions of this AgenciesInfo.
         :type permissions: list[:class:`huaweicloudsdkworkspace.v2.AgenciesPermissionInfo`]

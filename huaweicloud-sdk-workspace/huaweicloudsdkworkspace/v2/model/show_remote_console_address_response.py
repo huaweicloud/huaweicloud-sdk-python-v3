@@ -34,11 +34,11 @@ class ShowRemoteConsoleAddressResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param type: 登录类型
+        :param type: 登录类型。
         :type type: str
-        :param url: 远程登录控制台地址
+        :param url: 远程登录控制台地址。
         :type url: str
-        :param protocol: 登录协议
+        :param protocol: 登录协议。
         :type protocol: str
         """
         
@@ -60,7 +60,7 @@ class ShowRemoteConsoleAddressResponse(SdkResponse):
     def type(self):
         r"""Gets the type of this ShowRemoteConsoleAddressResponse.
 
-        登录类型
+        登录类型。
 
         :return: The type of this ShowRemoteConsoleAddressResponse.
         :rtype: str
@@ -71,7 +71,7 @@ class ShowRemoteConsoleAddressResponse(SdkResponse):
     def type(self, type):
         r"""Sets the type of this ShowRemoteConsoleAddressResponse.
 
-        登录类型
+        登录类型。
 
         :param type: The type of this ShowRemoteConsoleAddressResponse.
         :type type: str
@@ -82,7 +82,7 @@ class ShowRemoteConsoleAddressResponse(SdkResponse):
     def url(self):
         r"""Gets the url of this ShowRemoteConsoleAddressResponse.
 
-        远程登录控制台地址
+        远程登录控制台地址。
 
         :return: The url of this ShowRemoteConsoleAddressResponse.
         :rtype: str
@@ -93,7 +93,7 @@ class ShowRemoteConsoleAddressResponse(SdkResponse):
     def url(self, url):
         r"""Sets the url of this ShowRemoteConsoleAddressResponse.
 
-        远程登录控制台地址
+        远程登录控制台地址。
 
         :param url: The url of this ShowRemoteConsoleAddressResponse.
         :type url: str
@@ -104,7 +104,7 @@ class ShowRemoteConsoleAddressResponse(SdkResponse):
     def protocol(self):
         r"""Gets the protocol of this ShowRemoteConsoleAddressResponse.
 
-        登录协议
+        登录协议。
 
         :return: The protocol of this ShowRemoteConsoleAddressResponse.
         :rtype: str
@@ -115,7 +115,7 @@ class ShowRemoteConsoleAddressResponse(SdkResponse):
     def protocol(self, protocol):
         r"""Sets the protocol of this ShowRemoteConsoleAddressResponse.
 
-        登录协议
+        登录协议。
 
         :param protocol: The protocol of this ShowRemoteConsoleAddressResponse.
         :type protocol: str

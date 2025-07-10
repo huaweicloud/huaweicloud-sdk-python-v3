@@ -31,9 +31,9 @@ class I18nLanguage:
 
         The model defined in huaweicloud sdk
 
-        :param language: 语言
+        :param language: 语言。
         :type language: str
-        :param value: 值
+        :param value: 值。
         :type value: str
         """
         
@@ -52,7 +52,7 @@ class I18nLanguage:
     def language(self):
         r"""Gets the language of this I18nLanguage.
 
-        语言
+        语言。
 
         :return: The language of this I18nLanguage.
         :rtype: str
@@ -63,7 +63,7 @@ class I18nLanguage:
     def language(self, language):
         r"""Sets the language of this I18nLanguage.
 
-        语言
+        语言。
 
         :param language: The language of this I18nLanguage.
         :type language: str
@@ -74,7 +74,7 @@ class I18nLanguage:
     def value(self):
         r"""Gets the value of this I18nLanguage.
 
-        值
+        值。
 
         :return: The value of this I18nLanguage.
         :rtype: str
@@ -85,7 +85,7 @@ class I18nLanguage:
     def value(self, value):
         r"""Sets the value of this I18nLanguage.
 
-        值
+        值。
 
         :param value: The value of this I18nLanguage.
         :type value: str

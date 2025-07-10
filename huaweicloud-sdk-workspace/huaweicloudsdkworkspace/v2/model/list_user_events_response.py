@@ -32,9 +32,9 @@ class ListUserEventsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param count: 事件总数
+        :param count: 事件总数。
         :type count: int
-        :param items: 用户事件列表
+        :param items: 用户事件列表。
         :type items: list[:class:`huaweicloudsdkworkspace.v2.UserEventRsp`]
         """
         
@@ -53,7 +53,7 @@ class ListUserEventsResponse(SdkResponse):
     def count(self):
         r"""Gets the count of this ListUserEventsResponse.
 
-        事件总数
+        事件总数。
 
         :return: The count of this ListUserEventsResponse.
         :rtype: int
@@ -64,7 +64,7 @@ class ListUserEventsResponse(SdkResponse):
     def count(self, count):
         r"""Sets the count of this ListUserEventsResponse.
 
-        事件总数
+        事件总数。
 
         :param count: The count of this ListUserEventsResponse.
         :type count: int
@@ -75,7 +75,7 @@ class ListUserEventsResponse(SdkResponse):
     def items(self):
         r"""Gets the items of this ListUserEventsResponse.
 
-        用户事件列表
+        用户事件列表。
 
         :return: The items of this ListUserEventsResponse.
         :rtype: list[:class:`huaweicloudsdkworkspace.v2.UserEventRsp`]
@@ -86,7 +86,7 @@ class ListUserEventsResponse(SdkResponse):
     def items(self, items):
         r"""Sets the items of this ListUserEventsResponse.
 
-        用户事件列表
+        用户事件列表。
 
         :param items: The items of this ListUserEventsResponse.
         :type items: list[:class:`huaweicloudsdkworkspace.v2.UserEventRsp`]

@@ -18,52 +18,39 @@ class SubscribeUserSharerReq:
 
     openapi_types = {
         'user_sharer_sku': 'str',
-        'order_id': 'str',
-        'users': 'list[User]',
-        'enterprise_project_id': 'str'
+        'users': 'list[User]'
     }
 
     attribute_map = {
         'user_sharer_sku': 'user_sharer_sku',
-        'order_id': 'order_id',
-        'users': 'users',
-        'enterprise_project_id': 'enterprise_project_id'
+        'users': 'users'
     }
 
-    def __init__(self, user_sharer_sku=None, order_id=None, users=None, enterprise_project_id=None):
+    def __init__(self, user_sharer_sku=None, users=None):
         r"""SubscribeUserSharerReq
 
         The model defined in huaweicloud sdk
 
-        :param user_sharer_sku: 用户协同资源SKU码
+        :param user_sharer_sku: 用户协同资源SKU码。
         :type user_sharer_sku: str
-        :param order_id: 订单ID
-        :type order_id: str
         :param users: 开通协同的的用户列表。
         :type users: list[:class:`huaweicloudsdkworkspace.v2.User`]
-        :param enterprise_project_id: 企业项目ID
-        :type enterprise_project_id: str
         """
         
         
 
         self._user_sharer_sku = None
-        self._order_id = None
         self._users = None
-        self._enterprise_project_id = None
         self.discriminator = None
 
         self.user_sharer_sku = user_sharer_sku
-        if order_id is not None:
-            self.order_id = order_id
         self.users = users
-        self.enterprise_project_id = enterprise_project_id
 
     @property
     def user_sharer_sku(self):
         r"""Gets the user_sharer_sku of this SubscribeUserSharerReq.
 
-        用户协同资源SKU码
+        用户协同资源SKU码。
 
         :return: The user_sharer_sku of this SubscribeUserSharerReq.
         :rtype: str
@@ -74,34 +61,12 @@ class SubscribeUserSharerReq:
     def user_sharer_sku(self, user_sharer_sku):
         r"""Sets the user_sharer_sku of this SubscribeUserSharerReq.
 
-        用户协同资源SKU码
+        用户协同资源SKU码。
 
         :param user_sharer_sku: The user_sharer_sku of this SubscribeUserSharerReq.
         :type user_sharer_sku: str
         """
         self._user_sharer_sku = user_sharer_sku
-
-    @property
-    def order_id(self):
-        r"""Gets the order_id of this SubscribeUserSharerReq.
-
-        订单ID
-
-        :return: The order_id of this SubscribeUserSharerReq.
-        :rtype: str
-        """
-        return self._order_id
-
-    @order_id.setter
-    def order_id(self, order_id):
-        r"""Sets the order_id of this SubscribeUserSharerReq.
-
-        订单ID
-
-        :param order_id: The order_id of this SubscribeUserSharerReq.
-        :type order_id: str
-        """
-        self._order_id = order_id
 
     @property
     def users(self):
@@ -124,28 +89,6 @@ class SubscribeUserSharerReq:
         :type users: list[:class:`huaweicloudsdkworkspace.v2.User`]
         """
         self._users = users
-
-    @property
-    def enterprise_project_id(self):
-        r"""Gets the enterprise_project_id of this SubscribeUserSharerReq.
-
-        企业项目ID
-
-        :return: The enterprise_project_id of this SubscribeUserSharerReq.
-        :rtype: str
-        """
-        return self._enterprise_project_id
-
-    @enterprise_project_id.setter
-    def enterprise_project_id(self, enterprise_project_id):
-        r"""Sets the enterprise_project_id of this SubscribeUserSharerReq.
-
-        企业项目ID
-
-        :param enterprise_project_id: The enterprise_project_id of this SubscribeUserSharerReq.
-        :type enterprise_project_id: str
-        """
-        self._enterprise_project_id = enterprise_project_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

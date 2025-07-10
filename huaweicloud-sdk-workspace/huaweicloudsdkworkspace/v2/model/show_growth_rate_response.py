@@ -30,7 +30,7 @@ class ShowGrowthRateResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param growth_rate: 环比值
+        :param growth_rate: 环比值。
         :type growth_rate: float
         """
         
@@ -46,7 +46,7 @@ class ShowGrowthRateResponse(SdkResponse):
     def growth_rate(self):
         r"""Gets the growth_rate of this ShowGrowthRateResponse.
 
-        环比值
+        环比值。
 
         :return: The growth_rate of this ShowGrowthRateResponse.
         :rtype: float
@@ -57,7 +57,7 @@ class ShowGrowthRateResponse(SdkResponse):
     def growth_rate(self, growth_rate):
         r"""Sets the growth_rate of this ShowGrowthRateResponse.
 
-        环比值
+        环比值。
 
         :param growth_rate: The growth_rate of this ShowGrowthRateResponse.
         :type growth_rate: float

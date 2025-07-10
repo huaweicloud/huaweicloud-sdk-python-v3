@@ -51,25 +51,25 @@ class ListDesktopUsageMetricRequest:
 
         :param start_time: 查询起始时间(0时区) 云服务每天凌晨02:00进行聚合运算前一天00:00:00~23:59:59的使用时长,并将周期范围内的数据聚合到周期边界上 跨天的记录会按照统计周期进行计算 假设一天内桌面登录多次，09:00~12:00,13:00~21:00,22:00~01:00(次日): 则当天的累计使用时长数据会被汇聚到23:59:59这个点;总使用时长为 3hours(09:00~12:00)+8hours(13:00~21:00)+2hours(22:00~00:00) 如果查询的from-to不足一个周期内，可能造成查询到数据为空；
         :type start_time: str
-        :param end_time: 查询截至时间(0时区)
+        :param end_time: 查询截至时间(0时区)。
         :type end_time: str
-        :param resource_name: 资源名称(模糊匹配)
+        :param resource_name: 资源名称(模糊匹配)。
         :type resource_name: str
-        :param min_idle_days: 最小空闲天数
+        :param min_idle_days: 最小空闲天数。
         :type min_idle_days: int
         :param max_idle_days: 最大空闲天数 min_idle_days、max_idle_days都非空时,max_idle_days必须大于等于min_idle_days否则可能查询不到数据
         :type max_idle_days: int
-        :param usage_min_hours: 使用时长(hour)最小值
+        :param usage_min_hours: 使用时长(hour)最小值。
         :type usage_min_hours: int
-        :param usage_max_hours: 使用时长(hour)最大值(必须大于等于usage_min_hours)
+        :param usage_max_hours: 使用时长(hour)最大值(必须大于等于usage_min_hours)。
         :type usage_max_hours: int
         :param sort_field: 按照指标进行排序 * &#x60;desktop_usage&#x60; -  按照桌面使用时长排序 * &#x60;desktop_idle_duration&#x60; -  按照桌面空闲周期排序
         :type sort_field: str
         :param sort_type: 按照指标进行排序的方向;需配合sort_field一起使用 * &#x60;DESC&#x60; - 降序返回数据 * &#x60;ASC&#x60; -  升序返回数据
         :type sort_type: str
-        :param offset: 查询的偏移量,默认值0
+        :param offset: 查询的偏移量,默认值0。
         :type offset: int
-        :param limit: limit范围[1-100],默认值0
+        :param limit: limit范围[1-100],默认值0。
         :type limit: int
         """
         
@@ -135,7 +135,7 @@ class ListDesktopUsageMetricRequest:
     def end_time(self):
         r"""Gets the end_time of this ListDesktopUsageMetricRequest.
 
-        查询截至时间(0时区)
+        查询截至时间(0时区)。
 
         :return: The end_time of this ListDesktopUsageMetricRequest.
         :rtype: str
@@ -146,7 +146,7 @@ class ListDesktopUsageMetricRequest:
     def end_time(self, end_time):
         r"""Sets the end_time of this ListDesktopUsageMetricRequest.
 
-        查询截至时间(0时区)
+        查询截至时间(0时区)。
 
         :param end_time: The end_time of this ListDesktopUsageMetricRequest.
         :type end_time: str
@@ -157,7 +157,7 @@ class ListDesktopUsageMetricRequest:
     def resource_name(self):
         r"""Gets the resource_name of this ListDesktopUsageMetricRequest.
 
-        资源名称(模糊匹配)
+        资源名称(模糊匹配)。
 
         :return: The resource_name of this ListDesktopUsageMetricRequest.
         :rtype: str
@@ -168,7 +168,7 @@ class ListDesktopUsageMetricRequest:
     def resource_name(self, resource_name):
         r"""Sets the resource_name of this ListDesktopUsageMetricRequest.
 
-        资源名称(模糊匹配)
+        资源名称(模糊匹配)。
 
         :param resource_name: The resource_name of this ListDesktopUsageMetricRequest.
         :type resource_name: str
@@ -179,7 +179,7 @@ class ListDesktopUsageMetricRequest:
     def min_idle_days(self):
         r"""Gets the min_idle_days of this ListDesktopUsageMetricRequest.
 
-        最小空闲天数
+        最小空闲天数。
 
         :return: The min_idle_days of this ListDesktopUsageMetricRequest.
         :rtype: int
@@ -190,7 +190,7 @@ class ListDesktopUsageMetricRequest:
     def min_idle_days(self, min_idle_days):
         r"""Sets the min_idle_days of this ListDesktopUsageMetricRequest.
 
-        最小空闲天数
+        最小空闲天数。
 
         :param min_idle_days: The min_idle_days of this ListDesktopUsageMetricRequest.
         :type min_idle_days: int
@@ -223,7 +223,7 @@ class ListDesktopUsageMetricRequest:
     def usage_min_hours(self):
         r"""Gets the usage_min_hours of this ListDesktopUsageMetricRequest.
 
-        使用时长(hour)最小值
+        使用时长(hour)最小值。
 
         :return: The usage_min_hours of this ListDesktopUsageMetricRequest.
         :rtype: int
@@ -234,7 +234,7 @@ class ListDesktopUsageMetricRequest:
     def usage_min_hours(self, usage_min_hours):
         r"""Sets the usage_min_hours of this ListDesktopUsageMetricRequest.
 
-        使用时长(hour)最小值
+        使用时长(hour)最小值。
 
         :param usage_min_hours: The usage_min_hours of this ListDesktopUsageMetricRequest.
         :type usage_min_hours: int
@@ -245,7 +245,7 @@ class ListDesktopUsageMetricRequest:
     def usage_max_hours(self):
         r"""Gets the usage_max_hours of this ListDesktopUsageMetricRequest.
 
-        使用时长(hour)最大值(必须大于等于usage_min_hours)
+        使用时长(hour)最大值(必须大于等于usage_min_hours)。
 
         :return: The usage_max_hours of this ListDesktopUsageMetricRequest.
         :rtype: int
@@ -256,7 +256,7 @@ class ListDesktopUsageMetricRequest:
     def usage_max_hours(self, usage_max_hours):
         r"""Sets the usage_max_hours of this ListDesktopUsageMetricRequest.
 
-        使用时长(hour)最大值(必须大于等于usage_min_hours)
+        使用时长(hour)最大值(必须大于等于usage_min_hours)。
 
         :param usage_max_hours: The usage_max_hours of this ListDesktopUsageMetricRequest.
         :type usage_max_hours: int
@@ -311,7 +311,7 @@ class ListDesktopUsageMetricRequest:
     def offset(self):
         r"""Gets the offset of this ListDesktopUsageMetricRequest.
 
-        查询的偏移量,默认值0
+        查询的偏移量,默认值0。
 
         :return: The offset of this ListDesktopUsageMetricRequest.
         :rtype: int
@@ -322,7 +322,7 @@ class ListDesktopUsageMetricRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListDesktopUsageMetricRequest.
 
-        查询的偏移量,默认值0
+        查询的偏移量,默认值0。
 
         :param offset: The offset of this ListDesktopUsageMetricRequest.
         :type offset: int
@@ -333,7 +333,7 @@ class ListDesktopUsageMetricRequest:
     def limit(self):
         r"""Gets the limit of this ListDesktopUsageMetricRequest.
 
-        limit范围[1-100],默认值0
+        limit范围[1-100],默认值0。
 
         :return: The limit of this ListDesktopUsageMetricRequest.
         :rtype: int
@@ -344,7 +344,7 @@ class ListDesktopUsageMetricRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListDesktopUsageMetricRequest.
 
-        limit范围[1-100],默认值0
+        limit范围[1-100],默认值0。
 
         :param limit: The limit of this ListDesktopUsageMetricRequest.
         :type limit: int

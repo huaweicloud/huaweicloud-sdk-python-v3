@@ -29,7 +29,7 @@ class OrderExtendParam:
 
         The model defined in huaweicloud sdk
 
-        :param is_auto_pay: 是否自动付款。true:自动支付; false：不自动支付;默认false
+        :param is_auto_pay: 是否自动付款。true:自动支付; false：不自动支付;默认false。
         :type is_auto_pay: str
         """
         
@@ -45,7 +45,7 @@ class OrderExtendParam:
     def is_auto_pay(self):
         r"""Gets the is_auto_pay of this OrderExtendParam.
 
-        是否自动付款。true:自动支付; false：不自动支付;默认false
+        是否自动付款。true:自动支付; false：不自动支付;默认false。
 
         :return: The is_auto_pay of this OrderExtendParam.
         :rtype: str
@@ -56,7 +56,7 @@ class OrderExtendParam:
     def is_auto_pay(self, is_auto_pay):
         r"""Sets the is_auto_pay of this OrderExtendParam.
 
-        是否自动付款。true:自动支付; false：不自动支付;默认false
+        是否自动付款。true:自动支付; false：不自动支付;默认false。
 
         :param is_auto_pay: The is_auto_pay of this OrderExtendParam.
         :type is_auto_pay: str

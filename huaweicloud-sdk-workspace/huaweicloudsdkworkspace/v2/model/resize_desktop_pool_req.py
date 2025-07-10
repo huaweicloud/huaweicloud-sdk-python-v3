@@ -18,48 +18,41 @@ class ResizeDesktopPoolReq:
 
     openapi_types = {
         'product_id': 'str',
-        'order_id': 'str',
-        'mode': 'str',
-        'extend_param': 'ResizeDesktopExtendParam'
+        'flavor_id': 'str',
+        'mode': 'str'
     }
 
     attribute_map = {
         'product_id': 'product_id',
-        'order_id': 'order_id',
-        'mode': 'mode',
-        'extend_param': 'extend_param'
+        'flavor_id': 'flavor_id',
+        'mode': 'mode'
     }
 
-    def __init__(self, product_id=None, order_id=None, mode=None, extend_param=None):
+    def __init__(self, product_id=None, flavor_id=None, mode=None):
         r"""ResizeDesktopPoolReq
 
         The model defined in huaweicloud sdk
 
         :param product_id: 目标规格产品ID。
         :type product_id: str
-        :param order_id: 订单ID，包周期变更规格时使用。
-        :type order_id: str
+        :param flavor_id: 产品规格ID。可用区是边缘可用区时，必填此参数。
+        :type flavor_id: str
         :param mode: 是否支持开机状态下执行变更规格操作。固定传值STOP_DESKTOP，如果桌面处于开机状态，会先关机再变更规格。
         :type mode: str
-        :param extend_param: 
-        :type extend_param: :class:`huaweicloudsdkworkspace.v2.ResizeDesktopExtendParam`
         """
         
         
 
         self._product_id = None
-        self._order_id = None
+        self._flavor_id = None
         self._mode = None
-        self._extend_param = None
         self.discriminator = None
 
         self.product_id = product_id
-        if order_id is not None:
-            self.order_id = order_id
+        if flavor_id is not None:
+            self.flavor_id = flavor_id
         if mode is not None:
             self.mode = mode
-        if extend_param is not None:
-            self.extend_param = extend_param
 
     @property
     def product_id(self):
@@ -84,26 +77,26 @@ class ResizeDesktopPoolReq:
         self._product_id = product_id
 
     @property
-    def order_id(self):
-        r"""Gets the order_id of this ResizeDesktopPoolReq.
+    def flavor_id(self):
+        r"""Gets the flavor_id of this ResizeDesktopPoolReq.
 
-        订单ID，包周期变更规格时使用。
+        产品规格ID。可用区是边缘可用区时，必填此参数。
 
-        :return: The order_id of this ResizeDesktopPoolReq.
+        :return: The flavor_id of this ResizeDesktopPoolReq.
         :rtype: str
         """
-        return self._order_id
+        return self._flavor_id
 
-    @order_id.setter
-    def order_id(self, order_id):
-        r"""Sets the order_id of this ResizeDesktopPoolReq.
+    @flavor_id.setter
+    def flavor_id(self, flavor_id):
+        r"""Sets the flavor_id of this ResizeDesktopPoolReq.
 
-        订单ID，包周期变更规格时使用。
+        产品规格ID。可用区是边缘可用区时，必填此参数。
 
-        :param order_id: The order_id of this ResizeDesktopPoolReq.
-        :type order_id: str
+        :param flavor_id: The flavor_id of this ResizeDesktopPoolReq.
+        :type flavor_id: str
         """
-        self._order_id = order_id
+        self._flavor_id = flavor_id
 
     @property
     def mode(self):
@@ -126,24 +119,6 @@ class ResizeDesktopPoolReq:
         :type mode: str
         """
         self._mode = mode
-
-    @property
-    def extend_param(self):
-        r"""Gets the extend_param of this ResizeDesktopPoolReq.
-
-        :return: The extend_param of this ResizeDesktopPoolReq.
-        :rtype: :class:`huaweicloudsdkworkspace.v2.ResizeDesktopExtendParam`
-        """
-        return self._extend_param
-
-    @extend_param.setter
-    def extend_param(self, extend_param):
-        r"""Sets the extend_param of this ResizeDesktopPoolReq.
-
-        :param extend_param: The extend_param of this ResizeDesktopPoolReq.
-        :type extend_param: :class:`huaweicloudsdkworkspace.v2.ResizeDesktopExtendParam`
-        """
-        self._extend_param = extend_param
 
     def to_dict(self):
         """Returns the model properties as a dict"""

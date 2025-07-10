@@ -35,13 +35,13 @@ class TagResource:
 
         The model defined in huaweicloud sdk
 
-        :param resource_detail: 计算机信息
+        :param resource_detail: 计算机信息。
         :type resource_detail: str
-        :param resource_id: 计算机id
+        :param resource_id: 计算机id。
         :type resource_id: str
-        :param resource_name: 计算机名称
+        :param resource_name: 计算机名称。
         :type resource_name: str
-        :param tags: 标签对象
+        :param tags: 标签对象。
         :type tags: list[:class:`huaweicloudsdkworkspace.v2.Tag`]
         """
         
@@ -66,7 +66,7 @@ class TagResource:
     def resource_detail(self):
         r"""Gets the resource_detail of this TagResource.
 
-        计算机信息
+        计算机信息。
 
         :return: The resource_detail of this TagResource.
         :rtype: str
@@ -77,7 +77,7 @@ class TagResource:
     def resource_detail(self, resource_detail):
         r"""Sets the resource_detail of this TagResource.
 
-        计算机信息
+        计算机信息。
 
         :param resource_detail: The resource_detail of this TagResource.
         :type resource_detail: str
@@ -88,7 +88,7 @@ class TagResource:
     def resource_id(self):
         r"""Gets the resource_id of this TagResource.
 
-        计算机id
+        计算机id。
 
         :return: The resource_id of this TagResource.
         :rtype: str
@@ -99,7 +99,7 @@ class TagResource:
     def resource_id(self, resource_id):
         r"""Sets the resource_id of this TagResource.
 
-        计算机id
+        计算机id。
 
         :param resource_id: The resource_id of this TagResource.
         :type resource_id: str
@@ -110,7 +110,7 @@ class TagResource:
     def resource_name(self):
         r"""Gets the resource_name of this TagResource.
 
-        计算机名称
+        计算机名称。
 
         :return: The resource_name of this TagResource.
         :rtype: str
@@ -121,7 +121,7 @@ class TagResource:
     def resource_name(self, resource_name):
         r"""Sets the resource_name of this TagResource.
 
-        计算机名称
+        计算机名称。
 
         :param resource_name: The resource_name of this TagResource.
         :type resource_name: str
@@ -132,7 +132,7 @@ class TagResource:
     def tags(self):
         r"""Gets the tags of this TagResource.
 
-        标签对象
+        标签对象。
 
         :return: The tags of this TagResource.
         :rtype: list[:class:`huaweicloudsdkworkspace.v2.Tag`]
@@ -143,7 +143,7 @@ class TagResource:
     def tags(self, tags):
         r"""Sets the tags of this TagResource.
 
-        标签对象
+        标签对象。
 
         :param tags: The tags of this TagResource.
         :type tags: list[:class:`huaweicloudsdkworkspace.v2.Tag`]

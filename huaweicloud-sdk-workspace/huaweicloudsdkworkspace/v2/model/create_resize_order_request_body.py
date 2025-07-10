@@ -21,8 +21,7 @@ class CreateResizeOrderRequestBody:
         'desktop_ids': 'list[str]',
         'promotion_plan_id': 'str',
         'product_id': 'str',
-        'mode': 'str',
-        'extend_param': 'ResizeDesktopExtendParam'
+        'mode': 'str'
     }
 
     attribute_map = {
@@ -30,11 +29,10 @@ class CreateResizeOrderRequestBody:
         'desktop_ids': 'desktop_ids',
         'promotion_plan_id': 'promotion_plan_id',
         'product_id': 'product_id',
-        'mode': 'mode',
-        'extend_param': 'extend_param'
+        'mode': 'mode'
     }
 
-    def __init__(self, desktop_pool_id=None, desktop_ids=None, promotion_plan_id=None, product_id=None, mode=None, extend_param=None):
+    def __init__(self, desktop_pool_id=None, desktop_ids=None, promotion_plan_id=None, product_id=None, mode=None):
         r"""CreateResizeOrderRequestBody
 
         The model defined in huaweicloud sdk
@@ -43,14 +41,12 @@ class CreateResizeOrderRequestBody:
         :type desktop_pool_id: str
         :param desktop_ids: 包周期桌面ID列表。 不可同时存在普通桌面和池桌面ID。
         :type desktop_ids: list[str]
-        :param promotion_plan_id: 促销计划ID
+        :param promotion_plan_id: 促销计划ID。
         :type promotion_plan_id: str
         :param product_id: 目标规格产品ID。
         :type product_id: str
         :param mode: 是否支持开机状态下执行变更规格操作。固定传值STOP_DESKTOP，如果桌面处于开机状态，会先关机再变更规格。
         :type mode: str
-        :param extend_param: 
-        :type extend_param: :class:`huaweicloudsdkworkspace.v2.ResizeDesktopExtendParam`
         """
         
         
@@ -60,7 +56,6 @@ class CreateResizeOrderRequestBody:
         self._promotion_plan_id = None
         self._product_id = None
         self._mode = None
-        self._extend_param = None
         self.discriminator = None
 
         if desktop_pool_id is not None:
@@ -73,8 +68,6 @@ class CreateResizeOrderRequestBody:
             self.product_id = product_id
         if mode is not None:
             self.mode = mode
-        if extend_param is not None:
-            self.extend_param = extend_param
 
     @property
     def desktop_pool_id(self):
@@ -124,7 +117,7 @@ class CreateResizeOrderRequestBody:
     def promotion_plan_id(self):
         r"""Gets the promotion_plan_id of this CreateResizeOrderRequestBody.
 
-        促销计划ID
+        促销计划ID。
 
         :return: The promotion_plan_id of this CreateResizeOrderRequestBody.
         :rtype: str
@@ -135,7 +128,7 @@ class CreateResizeOrderRequestBody:
     def promotion_plan_id(self, promotion_plan_id):
         r"""Sets the promotion_plan_id of this CreateResizeOrderRequestBody.
 
-        促销计划ID
+        促销计划ID。
 
         :param promotion_plan_id: The promotion_plan_id of this CreateResizeOrderRequestBody.
         :type promotion_plan_id: str
@@ -185,24 +178,6 @@ class CreateResizeOrderRequestBody:
         :type mode: str
         """
         self._mode = mode
-
-    @property
-    def extend_param(self):
-        r"""Gets the extend_param of this CreateResizeOrderRequestBody.
-
-        :return: The extend_param of this CreateResizeOrderRequestBody.
-        :rtype: :class:`huaweicloudsdkworkspace.v2.ResizeDesktopExtendParam`
-        """
-        return self._extend_param
-
-    @extend_param.setter
-    def extend_param(self, extend_param):
-        r"""Sets the extend_param of this CreateResizeOrderRequestBody.
-
-        :param extend_param: The extend_param of this CreateResizeOrderRequestBody.
-        :type extend_param: :class:`huaweicloudsdkworkspace.v2.ResizeDesktopExtendParam`
-        """
-        self._extend_param = extend_param
 
     def to_dict(self):
         """Returns the model properties as a dict"""

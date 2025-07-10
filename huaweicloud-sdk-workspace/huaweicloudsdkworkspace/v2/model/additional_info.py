@@ -33,11 +33,11 @@ class AdditionalInfo:
 
         The model defined in huaweicloud sdk
 
-        :param resource_id: 该条告警记录对应的资源ID
+        :param resource_id: 该条告警记录对应的资源ID。
         :type resource_id: str
-        :param resource_name: 该条告警记录对应的资源名称
+        :param resource_name: 该条告警记录对应的资源名称。
         :type resource_name: str
-        :param event_id: 该条告警记录对应的事件监控ID，资源所产生的事件
+        :param event_id: 该条告警记录对应的事件监控ID，资源所产生的事件。
         :type event_id: str
         """
         
@@ -59,7 +59,7 @@ class AdditionalInfo:
     def resource_id(self):
         r"""Gets the resource_id of this AdditionalInfo.
 
-        该条告警记录对应的资源ID
+        该条告警记录对应的资源ID。
 
         :return: The resource_id of this AdditionalInfo.
         :rtype: str
@@ -70,7 +70,7 @@ class AdditionalInfo:
     def resource_id(self, resource_id):
         r"""Sets the resource_id of this AdditionalInfo.
 
-        该条告警记录对应的资源ID
+        该条告警记录对应的资源ID。
 
         :param resource_id: The resource_id of this AdditionalInfo.
         :type resource_id: str
@@ -81,7 +81,7 @@ class AdditionalInfo:
     def resource_name(self):
         r"""Gets the resource_name of this AdditionalInfo.
 
-        该条告警记录对应的资源名称
+        该条告警记录对应的资源名称。
 
         :return: The resource_name of this AdditionalInfo.
         :rtype: str
@@ -92,7 +92,7 @@ class AdditionalInfo:
     def resource_name(self, resource_name):
         r"""Sets the resource_name of this AdditionalInfo.
 
-        该条告警记录对应的资源名称
+        该条告警记录对应的资源名称。
 
         :param resource_name: The resource_name of this AdditionalInfo.
         :type resource_name: str
@@ -103,7 +103,7 @@ class AdditionalInfo:
     def event_id(self):
         r"""Gets the event_id of this AdditionalInfo.
 
-        该条告警记录对应的事件监控ID，资源所产生的事件
+        该条告警记录对应的事件监控ID，资源所产生的事件。
 
         :return: The event_id of this AdditionalInfo.
         :rtype: str
@@ -114,7 +114,7 @@ class AdditionalInfo:
     def event_id(self, event_id):
         r"""Sets the event_id of this AdditionalInfo.
 
-        该条告警记录对应的事件监控ID，资源所产生的事件
+        该条告警记录对应的事件监控ID，资源所产生的事件。
 
         :param event_id: The event_id of this AdditionalInfo.
         :type event_id: str

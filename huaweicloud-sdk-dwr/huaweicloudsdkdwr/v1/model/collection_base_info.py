@@ -31,9 +31,9 @@ class CollectionBaseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param store_name: 知识仓实例名称。
+        :param store_name: **参数解释：** 知识仓实例名称，region内唯一。 **约束限制：** 长度范围为3到63个字符，支持小写字母、数字、中划线（-），第一个字符只能够是小写字母，中划线(-)不得出现在字符串末尾。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type store_name: str
-        :param collection_name: Collection 名称。
+        :param collection_name: **参数解释：** collection名称。 **约束限制：** 可包含数字、字母和下划线 (_)。资源名称必须以字母或下划线 (_) 开头。最大长度支持255。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
         :type collection_name: str
         """
         
@@ -50,7 +50,7 @@ class CollectionBaseInfo:
     def store_name(self):
         r"""Gets the store_name of this CollectionBaseInfo.
 
-        知识仓实例名称。
+        **参数解释：** 知识仓实例名称，region内唯一。 **约束限制：** 长度范围为3到63个字符，支持小写字母、数字、中划线（-），第一个字符只能够是小写字母，中划线(-)不得出现在字符串末尾。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The store_name of this CollectionBaseInfo.
         :rtype: str
@@ -61,7 +61,7 @@ class CollectionBaseInfo:
     def store_name(self, store_name):
         r"""Sets the store_name of this CollectionBaseInfo.
 
-        知识仓实例名称。
+        **参数解释：** 知识仓实例名称，region内唯一。 **约束限制：** 长度范围为3到63个字符，支持小写字母、数字、中划线（-），第一个字符只能够是小写字母，中划线(-)不得出现在字符串末尾。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param store_name: The store_name of this CollectionBaseInfo.
         :type store_name: str
@@ -72,7 +72,7 @@ class CollectionBaseInfo:
     def collection_name(self):
         r"""Gets the collection_name of this CollectionBaseInfo.
 
-        Collection 名称。
+        **参数解释：** collection名称。 **约束限制：** 可包含数字、字母和下划线 (_)。资源名称必须以字母或下划线 (_) 开头。最大长度支持255。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :return: The collection_name of this CollectionBaseInfo.
         :rtype: str
@@ -83,7 +83,7 @@ class CollectionBaseInfo:
     def collection_name(self, collection_name):
         r"""Sets the collection_name of this CollectionBaseInfo.
 
-        Collection 名称。
+        **参数解释：** collection名称。 **约束限制：** 可包含数字、字母和下划线 (_)。资源名称必须以字母或下划线 (_) 开头。最大长度支持255。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :param collection_name: The collection_name of this CollectionBaseInfo.
         :type collection_name: str

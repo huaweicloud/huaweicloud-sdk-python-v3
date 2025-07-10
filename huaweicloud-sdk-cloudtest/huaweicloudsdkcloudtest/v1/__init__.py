@@ -192,6 +192,7 @@ from huaweicloudsdkcloudtest.v1.model.environment import Environment
 from huaweicloudsdkcloudtest.v1.model.error_case_info_bean import ErrorCaseInfoBean
 from huaweicloudsdkcloudtest.v1.model.error_detail_info import ErrorDetailInfo
 from huaweicloudsdkcloudtest.v1.model.error_info import ErrorInfo
+from huaweicloudsdkcloudtest.v1.model.etl_request_body import EtlRequestBody
 from huaweicloudsdkcloudtest.v1.model.execute_info_vo import ExecuteInfoVo
 from huaweicloudsdkcloudtest.v1.model.execute_summary_vo import ExecuteSummaryVo
 from huaweicloudsdkcloudtest.v1.model.execute_task_info import ExecuteTaskInfo
@@ -476,6 +477,8 @@ from huaweicloudsdkcloudtest.v1.model.show_domain_info_request import ShowDomain
 from huaweicloudsdkcloudtest.v1.model.show_domain_info_response import ShowDomainInfoResponse
 from huaweicloudsdkcloudtest.v1.model.show_echo_test_package_using_request import ShowEchoTestPackageUsingRequest
 from huaweicloudsdkcloudtest.v1.model.show_echo_test_package_using_response import ShowEchoTestPackageUsingResponse
+from huaweicloudsdkcloudtest.v1.model.show_etl_data_request import ShowEtlDataRequest
+from huaweicloudsdkcloudtest.v1.model.show_etl_data_response import ShowEtlDataResponse
 from huaweicloudsdkcloudtest.v1.model.show_factor_by_asset_id_request import ShowFactorByAssetIdRequest
 from huaweicloudsdkcloudtest.v1.model.show_factor_by_asset_id_response import ShowFactorByAssetIdResponse
 from huaweicloudsdkcloudtest.v1.model.show_factor_by_id_request import ShowFactorByIdRequest

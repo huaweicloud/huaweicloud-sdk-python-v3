@@ -45,7 +45,8 @@ __IAM_ENDPOINT_DICT = {
     "ap-southeast-4": "https://iam.ap-southeast-4.myhuaweicloud.com",
     "ae-ad-1": "https://iam.ae-ad-1.myhuaweicloud.com",
     "cn-east-4": "https://iam.cn-east-4.myhuaweicloud.com",
-    "cn-east-5": "https://iam.cn-east-5.myhuaweicloud.com"
+    "cn-east-5": "https://iam.cn-east-5.myhuaweicloud.com",
+    "tr-west-1": "https://iam.tr-west-1.myhuaweicloud.com"
 }
 
 

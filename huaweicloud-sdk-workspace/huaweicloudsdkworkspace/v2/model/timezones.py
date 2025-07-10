@@ -37,15 +37,15 @@ class Timezones:
 
         The model defined in huaweicloud sdk
 
-        :param time_zone_desc: 时区描述
+        :param time_zone_desc: 时区描述。
         :type time_zone_desc: str
-        :param time_zone: 时区偏移量
+        :param time_zone: 时区偏移量。
         :type time_zone: str
-        :param time_zone_name: 时区地名
+        :param time_zone_name: 时区地名。
         :type time_zone_name: str
-        :param time_zone_desc_us: 时区英文描述
+        :param time_zone_desc_us: 时区英文描述。
         :type time_zone_desc_us: str
-        :param time_zone_desc_cn: 时区中文描述
+        :param time_zone_desc_cn: 时区中文描述。
         :type time_zone_desc_cn: str
         """
         
@@ -73,7 +73,7 @@ class Timezones:
     def time_zone_desc(self):
         r"""Gets the time_zone_desc of this Timezones.
 
-        时区描述
+        时区描述。
 
         :return: The time_zone_desc of this Timezones.
         :rtype: str
@@ -84,7 +84,7 @@ class Timezones:
     def time_zone_desc(self, time_zone_desc):
         r"""Sets the time_zone_desc of this Timezones.
 
-        时区描述
+        时区描述。
 
         :param time_zone_desc: The time_zone_desc of this Timezones.
         :type time_zone_desc: str
@@ -95,7 +95,7 @@ class Timezones:
     def time_zone(self):
         r"""Gets the time_zone of this Timezones.
 
-        时区偏移量
+        时区偏移量。
 
         :return: The time_zone of this Timezones.
         :rtype: str
@@ -106,7 +106,7 @@ class Timezones:
     def time_zone(self, time_zone):
         r"""Sets the time_zone of this Timezones.
 
-        时区偏移量
+        时区偏移量。
 
         :param time_zone: The time_zone of this Timezones.
         :type time_zone: str
@@ -117,7 +117,7 @@ class Timezones:
     def time_zone_name(self):
         r"""Gets the time_zone_name of this Timezones.
 
-        时区地名
+        时区地名。
 
         :return: The time_zone_name of this Timezones.
         :rtype: str
@@ -128,7 +128,7 @@ class Timezones:
     def time_zone_name(self, time_zone_name):
         r"""Sets the time_zone_name of this Timezones.
 
-        时区地名
+        时区地名。
 
         :param time_zone_name: The time_zone_name of this Timezones.
         :type time_zone_name: str
@@ -139,7 +139,7 @@ class Timezones:
     def time_zone_desc_us(self):
         r"""Gets the time_zone_desc_us of this Timezones.
 
-        时区英文描述
+        时区英文描述。
 
         :return: The time_zone_desc_us of this Timezones.
         :rtype: str
@@ -150,7 +150,7 @@ class Timezones:
     def time_zone_desc_us(self, time_zone_desc_us):
         r"""Sets the time_zone_desc_us of this Timezones.
 
-        时区英文描述
+        时区英文描述。
 
         :param time_zone_desc_us: The time_zone_desc_us of this Timezones.
         :type time_zone_desc_us: str
@@ -161,7 +161,7 @@ class Timezones:
     def time_zone_desc_cn(self):
         r"""Gets the time_zone_desc_cn of this Timezones.
 
-        时区中文描述
+        时区中文描述。
 
         :return: The time_zone_desc_cn of this Timezones.
         :rtype: str
@@ -172,7 +172,7 @@ class Timezones:
     def time_zone_desc_cn(self, time_zone_desc_cn):
         r"""Sets the time_zone_desc_cn of this Timezones.
 
-        时区中文描述
+        时区中文描述。
 
         :param time_zone_desc_cn: The time_zone_desc_cn of this Timezones.
         :type time_zone_desc_cn: str

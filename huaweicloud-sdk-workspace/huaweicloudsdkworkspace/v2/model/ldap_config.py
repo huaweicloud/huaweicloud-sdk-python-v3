@@ -49,27 +49,27 @@ class LdapConfig:
 
         The model defined in huaweicloud sdk
 
-        :param host: host
+        :param host: host。
         :type host: str
-        :param port: 端口,取值范围1-65535,默认389
+        :param port: 端口,取值范围1-65535,默认389。
         :type port: int
-        :param base_dn: base_dn
+        :param base_dn: base_dn。
         :type base_dn: str
-        :param administrator_dn: 管理员dn
+        :param administrator_dn: 管理员dn。
         :type administrator_dn: str
-        :param administrator_password: 管理员密码
+        :param administrator_password: 管理员密码。
         :type administrator_password: str
-        :param user_dn: 用户dn
+        :param user_dn: 用户dn。
         :type user_dn: str
-        :param use_ssl: 是否启用ssl
+        :param use_ssl: 是否启用ssl。
         :type use_ssl: bool
-        :param cert_content: 证书
+        :param cert_content: 证书。
         :type cert_content: str
-        :param username_attribute: 用户名属性
+        :param username_attribute: 用户名属性。
         :type username_attribute: str
-        :param object_class: 用户ObjectClass
+        :param object_class: 用户ObjectClass。
         :type object_class: str
-        :param security_type: 安全类型
+        :param security_type: 安全类型。
         :type security_type: str
         """
         
@@ -115,7 +115,7 @@ class LdapConfig:
     def host(self):
         r"""Gets the host of this LdapConfig.
 
-        host
+        host。
 
         :return: The host of this LdapConfig.
         :rtype: str
@@ -126,7 +126,7 @@ class LdapConfig:
     def host(self, host):
         r"""Sets the host of this LdapConfig.
 
-        host
+        host。
 
         :param host: The host of this LdapConfig.
         :type host: str
@@ -137,7 +137,7 @@ class LdapConfig:
     def port(self):
         r"""Gets the port of this LdapConfig.
 
-        端口,取值范围1-65535,默认389
+        端口,取值范围1-65535,默认389。
 
         :return: The port of this LdapConfig.
         :rtype: int
@@ -148,7 +148,7 @@ class LdapConfig:
     def port(self, port):
         r"""Sets the port of this LdapConfig.
 
-        端口,取值范围1-65535,默认389
+        端口,取值范围1-65535,默认389。
 
         :param port: The port of this LdapConfig.
         :type port: int
@@ -159,7 +159,7 @@ class LdapConfig:
     def base_dn(self):
         r"""Gets the base_dn of this LdapConfig.
 
-        base_dn
+        base_dn。
 
         :return: The base_dn of this LdapConfig.
         :rtype: str
@@ -170,7 +170,7 @@ class LdapConfig:
     def base_dn(self, base_dn):
         r"""Sets the base_dn of this LdapConfig.
 
-        base_dn
+        base_dn。
 
         :param base_dn: The base_dn of this LdapConfig.
         :type base_dn: str
@@ -181,7 +181,7 @@ class LdapConfig:
     def administrator_dn(self):
         r"""Gets the administrator_dn of this LdapConfig.
 
-        管理员dn
+        管理员dn。
 
         :return: The administrator_dn of this LdapConfig.
         :rtype: str
@@ -192,7 +192,7 @@ class LdapConfig:
     def administrator_dn(self, administrator_dn):
         r"""Sets the administrator_dn of this LdapConfig.
 
-        管理员dn
+        管理员dn。
 
         :param administrator_dn: The administrator_dn of this LdapConfig.
         :type administrator_dn: str
@@ -203,7 +203,7 @@ class LdapConfig:
     def administrator_password(self):
         r"""Gets the administrator_password of this LdapConfig.
 
-        管理员密码
+        管理员密码。
 
         :return: The administrator_password of this LdapConfig.
         :rtype: str
@@ -214,7 +214,7 @@ class LdapConfig:
     def administrator_password(self, administrator_password):
         r"""Sets the administrator_password of this LdapConfig.
 
-        管理员密码
+        管理员密码。
 
         :param administrator_password: The administrator_password of this LdapConfig.
         :type administrator_password: str
@@ -225,7 +225,7 @@ class LdapConfig:
     def user_dn(self):
         r"""Gets the user_dn of this LdapConfig.
 
-        用户dn
+        用户dn。
 
         :return: The user_dn of this LdapConfig.
         :rtype: str
@@ -236,7 +236,7 @@ class LdapConfig:
     def user_dn(self, user_dn):
         r"""Sets the user_dn of this LdapConfig.
 
-        用户dn
+        用户dn。
 
         :param user_dn: The user_dn of this LdapConfig.
         :type user_dn: str
@@ -247,7 +247,7 @@ class LdapConfig:
     def use_ssl(self):
         r"""Gets the use_ssl of this LdapConfig.
 
-        是否启用ssl
+        是否启用ssl。
 
         :return: The use_ssl of this LdapConfig.
         :rtype: bool
@@ -258,7 +258,7 @@ class LdapConfig:
     def use_ssl(self, use_ssl):
         r"""Sets the use_ssl of this LdapConfig.
 
-        是否启用ssl
+        是否启用ssl。
 
         :param use_ssl: The use_ssl of this LdapConfig.
         :type use_ssl: bool
@@ -269,7 +269,7 @@ class LdapConfig:
     def cert_content(self):
         r"""Gets the cert_content of this LdapConfig.
 
-        证书
+        证书。
 
         :return: The cert_content of this LdapConfig.
         :rtype: str
@@ -280,7 +280,7 @@ class LdapConfig:
     def cert_content(self, cert_content):
         r"""Sets the cert_content of this LdapConfig.
 
-        证书
+        证书。
 
         :param cert_content: The cert_content of this LdapConfig.
         :type cert_content: str
@@ -291,7 +291,7 @@ class LdapConfig:
     def username_attribute(self):
         r"""Gets the username_attribute of this LdapConfig.
 
-        用户名属性
+        用户名属性。
 
         :return: The username_attribute of this LdapConfig.
         :rtype: str
@@ -302,7 +302,7 @@ class LdapConfig:
     def username_attribute(self, username_attribute):
         r"""Sets the username_attribute of this LdapConfig.
 
-        用户名属性
+        用户名属性。
 
         :param username_attribute: The username_attribute of this LdapConfig.
         :type username_attribute: str
@@ -313,7 +313,7 @@ class LdapConfig:
     def object_class(self):
         r"""Gets the object_class of this LdapConfig.
 
-        用户ObjectClass
+        用户ObjectClass。
 
         :return: The object_class of this LdapConfig.
         :rtype: str
@@ -324,7 +324,7 @@ class LdapConfig:
     def object_class(self, object_class):
         r"""Sets the object_class of this LdapConfig.
 
-        用户ObjectClass
+        用户ObjectClass。
 
         :param object_class: The object_class of this LdapConfig.
         :type object_class: str
@@ -335,7 +335,7 @@ class LdapConfig:
     def security_type(self):
         r"""Gets the security_type of this LdapConfig.
 
-        安全类型
+        安全类型。
 
         :return: The security_type of this LdapConfig.
         :rtype: str
@@ -346,7 +346,7 @@ class LdapConfig:
     def security_type(self, security_type):
         r"""Sets the security_type of this LdapConfig.
 
-        安全类型
+        安全类型。
 
         :param security_type: The security_type of this LdapConfig.
         :type security_type: str

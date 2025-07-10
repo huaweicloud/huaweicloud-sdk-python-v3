@@ -35,13 +35,13 @@ class ListMetricNotifyRuleRequest:
 
         The model defined in huaweicloud sdk
 
-        :param metric_name: 指标名称(精确匹配)
+        :param metric_name: 指标名称(精确匹配)。
         :type metric_name: str
-        :param rule_id: 通知规则ID
+        :param rule_id: 通知规则ID。
         :type rule_id: str
-        :param offset: 查询的偏移量,默认值0
+        :param offset: 查询的偏移量,默认值0。
         :type offset: int
-        :param limit: 单次查询的大小[1-100],默认值10
+        :param limit: 单次查询的大小[1-100],默认值10。
         :type limit: int
         """
         
@@ -66,7 +66,7 @@ class ListMetricNotifyRuleRequest:
     def metric_name(self):
         r"""Gets the metric_name of this ListMetricNotifyRuleRequest.
 
-        指标名称(精确匹配)
+        指标名称(精确匹配)。
 
         :return: The metric_name of this ListMetricNotifyRuleRequest.
         :rtype: str
@@ -77,7 +77,7 @@ class ListMetricNotifyRuleRequest:
     def metric_name(self, metric_name):
         r"""Sets the metric_name of this ListMetricNotifyRuleRequest.
 
-        指标名称(精确匹配)
+        指标名称(精确匹配)。
 
         :param metric_name: The metric_name of this ListMetricNotifyRuleRequest.
         :type metric_name: str
@@ -88,7 +88,7 @@ class ListMetricNotifyRuleRequest:
     def rule_id(self):
         r"""Gets the rule_id of this ListMetricNotifyRuleRequest.
 
-        通知规则ID
+        通知规则ID。
 
         :return: The rule_id of this ListMetricNotifyRuleRequest.
         :rtype: str
@@ -99,7 +99,7 @@ class ListMetricNotifyRuleRequest:
     def rule_id(self, rule_id):
         r"""Sets the rule_id of this ListMetricNotifyRuleRequest.
 
-        通知规则ID
+        通知规则ID。
 
         :param rule_id: The rule_id of this ListMetricNotifyRuleRequest.
         :type rule_id: str
@@ -110,7 +110,7 @@ class ListMetricNotifyRuleRequest:
     def offset(self):
         r"""Gets the offset of this ListMetricNotifyRuleRequest.
 
-        查询的偏移量,默认值0
+        查询的偏移量,默认值0。
 
         :return: The offset of this ListMetricNotifyRuleRequest.
         :rtype: int
@@ -121,7 +121,7 @@ class ListMetricNotifyRuleRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListMetricNotifyRuleRequest.
 
-        查询的偏移量,默认值0
+        查询的偏移量,默认值0。
 
         :param offset: The offset of this ListMetricNotifyRuleRequest.
         :type offset: int
@@ -132,7 +132,7 @@ class ListMetricNotifyRuleRequest:
     def limit(self):
         r"""Gets the limit of this ListMetricNotifyRuleRequest.
 
-        单次查询的大小[1-100],默认值10
+        单次查询的大小[1-100],默认值10。
 
         :return: The limit of this ListMetricNotifyRuleRequest.
         :rtype: int
@@ -143,7 +143,7 @@ class ListMetricNotifyRuleRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListMetricNotifyRuleRequest.
 
-        单次查询的大小[1-100],默认值10
+        单次查询的大小[1-100],默认值10。
 
         :param limit: The limit of this ListMetricNotifyRuleRequest.
         :type limit: int

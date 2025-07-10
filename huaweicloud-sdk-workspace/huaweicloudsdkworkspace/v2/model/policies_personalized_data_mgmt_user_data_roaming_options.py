@@ -37,15 +37,15 @@ class PoliciesPersonalizedDataMgmtUserDataRoamingOptions:
 
         The model defined in huaweicloud sdk
 
-        :param profile_streaming_enable: 配置文件流式处理启用
+        :param profile_streaming_enable: 配置文件流式处理启用。
         :type profile_streaming_enable: bool
         :param roamed_files_local_path: 漫游文件本地路径。
         :type roamed_files_local_path: str
-        :param exclude_folders_path: 排除文件夹路径
+        :param exclude_folders_path: 排除文件夹路径。
         :type exclude_folders_path: str
-        :param roaming_registry_method: 排除文件夹路径
+        :param roaming_registry_method: 排除文件夹路径。
         :type roaming_registry_method: str
-        :param roaming_registry_path: 漫游注册路径
+        :param roaming_registry_path: 漫游注册路径。
         :type roaming_registry_path: str
         """
         
@@ -73,7 +73,7 @@ class PoliciesPersonalizedDataMgmtUserDataRoamingOptions:
     def profile_streaming_enable(self):
         r"""Gets the profile_streaming_enable of this PoliciesPersonalizedDataMgmtUserDataRoamingOptions.
 
-        配置文件流式处理启用
+        配置文件流式处理启用。
 
         :return: The profile_streaming_enable of this PoliciesPersonalizedDataMgmtUserDataRoamingOptions.
         :rtype: bool
@@ -84,7 +84,7 @@ class PoliciesPersonalizedDataMgmtUserDataRoamingOptions:
     def profile_streaming_enable(self, profile_streaming_enable):
         r"""Sets the profile_streaming_enable of this PoliciesPersonalizedDataMgmtUserDataRoamingOptions.
 
-        配置文件流式处理启用
+        配置文件流式处理启用。
 
         :param profile_streaming_enable: The profile_streaming_enable of this PoliciesPersonalizedDataMgmtUserDataRoamingOptions.
         :type profile_streaming_enable: bool
@@ -117,7 +117,7 @@ class PoliciesPersonalizedDataMgmtUserDataRoamingOptions:
     def exclude_folders_path(self):
         r"""Gets the exclude_folders_path of this PoliciesPersonalizedDataMgmtUserDataRoamingOptions.
 
-        排除文件夹路径
+        排除文件夹路径。
 
         :return: The exclude_folders_path of this PoliciesPersonalizedDataMgmtUserDataRoamingOptions.
         :rtype: str
@@ -128,7 +128,7 @@ class PoliciesPersonalizedDataMgmtUserDataRoamingOptions:
     def exclude_folders_path(self, exclude_folders_path):
         r"""Sets the exclude_folders_path of this PoliciesPersonalizedDataMgmtUserDataRoamingOptions.
 
-        排除文件夹路径
+        排除文件夹路径。
 
         :param exclude_folders_path: The exclude_folders_path of this PoliciesPersonalizedDataMgmtUserDataRoamingOptions.
         :type exclude_folders_path: str
@@ -139,7 +139,7 @@ class PoliciesPersonalizedDataMgmtUserDataRoamingOptions:
     def roaming_registry_method(self):
         r"""Gets the roaming_registry_method of this PoliciesPersonalizedDataMgmtUserDataRoamingOptions.
 
-        排除文件夹路径
+        排除文件夹路径。
 
         :return: The roaming_registry_method of this PoliciesPersonalizedDataMgmtUserDataRoamingOptions.
         :rtype: str
@@ -150,7 +150,7 @@ class PoliciesPersonalizedDataMgmtUserDataRoamingOptions:
     def roaming_registry_method(self, roaming_registry_method):
         r"""Sets the roaming_registry_method of this PoliciesPersonalizedDataMgmtUserDataRoamingOptions.
 
-        排除文件夹路径
+        排除文件夹路径。
 
         :param roaming_registry_method: The roaming_registry_method of this PoliciesPersonalizedDataMgmtUserDataRoamingOptions.
         :type roaming_registry_method: str
@@ -161,7 +161,7 @@ class PoliciesPersonalizedDataMgmtUserDataRoamingOptions:
     def roaming_registry_path(self):
         r"""Gets the roaming_registry_path of this PoliciesPersonalizedDataMgmtUserDataRoamingOptions.
 
-        漫游注册路径
+        漫游注册路径。
 
         :return: The roaming_registry_path of this PoliciesPersonalizedDataMgmtUserDataRoamingOptions.
         :rtype: str
@@ -172,7 +172,7 @@ class PoliciesPersonalizedDataMgmtUserDataRoamingOptions:
     def roaming_registry_path(self, roaming_registry_path):
         r"""Sets the roaming_registry_path of this PoliciesPersonalizedDataMgmtUserDataRoamingOptions.
 
-        漫游注册路径
+        漫游注册路径。
 
         :param roaming_registry_path: The roaming_registry_path of this PoliciesPersonalizedDataMgmtUserDataRoamingOptions.
         :type roaming_registry_path: str

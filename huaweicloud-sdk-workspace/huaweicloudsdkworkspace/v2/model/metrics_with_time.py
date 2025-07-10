@@ -31,9 +31,9 @@ class MetricsWithTime:
 
         The model defined in huaweicloud sdk
 
-        :param time: 时间
+        :param time: 时间。
         :type time: str
-        :param metrics: 指标值
+        :param metrics: 指标值。
         :type metrics: list[:class:`huaweicloudsdkworkspace.v2.Metric`]
         """
         
@@ -52,7 +52,7 @@ class MetricsWithTime:
     def time(self):
         r"""Gets the time of this MetricsWithTime.
 
-        时间
+        时间。
 
         :return: The time of this MetricsWithTime.
         :rtype: str
@@ -63,7 +63,7 @@ class MetricsWithTime:
     def time(self, time):
         r"""Sets the time of this MetricsWithTime.
 
-        时间
+        时间。
 
         :param time: The time of this MetricsWithTime.
         :type time: str
@@ -74,7 +74,7 @@ class MetricsWithTime:
     def metrics(self):
         r"""Gets the metrics of this MetricsWithTime.
 
-        指标值
+        指标值。
 
         :return: The metrics of this MetricsWithTime.
         :rtype: list[:class:`huaweicloudsdkworkspace.v2.Metric`]
@@ -85,7 +85,7 @@ class MetricsWithTime:
     def metrics(self, metrics):
         r"""Sets the metrics of this MetricsWithTime.
 
-        指标值
+        指标值。
 
         :param metrics: The metrics of this MetricsWithTime.
         :type metrics: list[:class:`huaweicloudsdkworkspace.v2.Metric`]

@@ -17,24 +17,20 @@ class RebuildDesktopPoolRequest:
     sensitive_list = []
 
     openapi_types = {
-        'service_transaction_id': 'str',
         'pool_id': 'str',
         'body': 'RebuildDesktopPoolReq'
     }
 
     attribute_map = {
-        'service_transaction_id': 'Service-Transaction-Id',
         'pool_id': 'pool_id',
         'body': 'body'
     }
 
-    def __init__(self, service_transaction_id=None, pool_id=None, body=None):
+    def __init__(self, pool_id=None, body=None):
         r"""RebuildDesktopPoolRequest
 
         The model defined in huaweicloud sdk
 
-        :param service_transaction_id: CBC接口回调时，请求头里带上的业务ID
-        :type service_transaction_id: str
         :param pool_id: 桌面池ID。
         :type pool_id: str
         :param body: Body of the RebuildDesktopPoolRequest
@@ -43,38 +39,13 @@ class RebuildDesktopPoolRequest:
         
         
 
-        self._service_transaction_id = None
         self._pool_id = None
         self._body = None
         self.discriminator = None
 
-        if service_transaction_id is not None:
-            self.service_transaction_id = service_transaction_id
         self.pool_id = pool_id
         if body is not None:
             self.body = body
-
-    @property
-    def service_transaction_id(self):
-        r"""Gets the service_transaction_id of this RebuildDesktopPoolRequest.
-
-        CBC接口回调时，请求头里带上的业务ID
-
-        :return: The service_transaction_id of this RebuildDesktopPoolRequest.
-        :rtype: str
-        """
-        return self._service_transaction_id
-
-    @service_transaction_id.setter
-    def service_transaction_id(self, service_transaction_id):
-        r"""Sets the service_transaction_id of this RebuildDesktopPoolRequest.
-
-        CBC接口回调时，请求头里带上的业务ID
-
-        :param service_transaction_id: The service_transaction_id of this RebuildDesktopPoolRequest.
-        :type service_transaction_id: str
-        """
-        self._service_transaction_id = service_transaction_id
 
     @property
     def pool_id(self):

@@ -35,13 +35,13 @@ class DesktopNetworkResult:
 
         The model defined in huaweicloud sdk
 
-        :param computer_name: 桌面名称
+        :param computer_name: 桌面名称。
         :type computer_name: str
-        :param computer_id: 桌面ID
+        :param computer_id: 桌面ID。
         :type computer_id: str
-        :param computer_ip: 桌面IP
+        :param computer_ip: 桌面IP。
         :type computer_ip: str
-        :param network_infos: 桌面网络信息
+        :param network_infos: 桌面网络信息。
         :type network_infos: list[:class:`huaweicloudsdkworkspace.v2.NetworkInfo`]
         """
         
@@ -66,7 +66,7 @@ class DesktopNetworkResult:
     def computer_name(self):
         r"""Gets the computer_name of this DesktopNetworkResult.
 
-        桌面名称
+        桌面名称。
 
         :return: The computer_name of this DesktopNetworkResult.
         :rtype: str
@@ -77,7 +77,7 @@ class DesktopNetworkResult:
     def computer_name(self, computer_name):
         r"""Sets the computer_name of this DesktopNetworkResult.
 
-        桌面名称
+        桌面名称。
 
         :param computer_name: The computer_name of this DesktopNetworkResult.
         :type computer_name: str
@@ -88,7 +88,7 @@ class DesktopNetworkResult:
     def computer_id(self):
         r"""Gets the computer_id of this DesktopNetworkResult.
 
-        桌面ID
+        桌面ID。
 
         :return: The computer_id of this DesktopNetworkResult.
         :rtype: str
@@ -99,7 +99,7 @@ class DesktopNetworkResult:
     def computer_id(self, computer_id):
         r"""Sets the computer_id of this DesktopNetworkResult.
 
-        桌面ID
+        桌面ID。
 
         :param computer_id: The computer_id of this DesktopNetworkResult.
         :type computer_id: str
@@ -110,7 +110,7 @@ class DesktopNetworkResult:
     def computer_ip(self):
         r"""Gets the computer_ip of this DesktopNetworkResult.
 
-        桌面IP
+        桌面IP。
 
         :return: The computer_ip of this DesktopNetworkResult.
         :rtype: str
@@ -121,7 +121,7 @@ class DesktopNetworkResult:
     def computer_ip(self, computer_ip):
         r"""Sets the computer_ip of this DesktopNetworkResult.
 
-        桌面IP
+        桌面IP。
 
         :param computer_ip: The computer_ip of this DesktopNetworkResult.
         :type computer_ip: str
@@ -132,7 +132,7 @@ class DesktopNetworkResult:
     def network_infos(self):
         r"""Gets the network_infos of this DesktopNetworkResult.
 
-        桌面网络信息
+        桌面网络信息。
 
         :return: The network_infos of this DesktopNetworkResult.
         :rtype: list[:class:`huaweicloudsdkworkspace.v2.NetworkInfo`]
@@ -143,7 +143,7 @@ class DesktopNetworkResult:
     def network_infos(self, network_infos):
         r"""Sets the network_infos of this DesktopNetworkResult.
 
-        桌面网络信息
+        桌面网络信息。
 
         :param network_infos: The network_infos of this DesktopNetworkResult.
         :type network_infos: list[:class:`huaweicloudsdkworkspace.v2.NetworkInfo`]

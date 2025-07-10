@@ -35,7 +35,9 @@ class User:
         'disabled': 'bool',
         'share_space_subscription': 'bool',
         'share_space_desktops': 'int',
-        'group_names': 'list[str]'
+        'group_names': 'list[str]',
+        'enterprise_project_id': 'str',
+        'user_info_map': 'str'
     }
 
     attribute_map = {
@@ -57,10 +59,12 @@ class User:
         'disabled': 'disabled',
         'share_space_subscription': 'share_space_subscription',
         'share_space_desktops': 'share_space_desktops',
-        'group_names': 'group_names'
+        'group_names': 'group_names',
+        'enterprise_project_id': 'enterprise_project_id',
+        'user_info_map': 'user_info_map'
     }
 
-    def __init__(self, id=None, sid=None, user_name=None, user_email=None, total_desktops=None, user_phone=None, active_type=None, is_pre_user=None, account_expires=None, password_never_expired=None, account_expired=None, enable_change_password=None, next_login_change_password=None, description=None, locked=None, disabled=None, share_space_subscription=None, share_space_desktops=None, group_names=None):
+    def __init__(self, id=None, sid=None, user_name=None, user_email=None, total_desktops=None, user_phone=None, active_type=None, is_pre_user=None, account_expires=None, password_never_expired=None, account_expired=None, enable_change_password=None, next_login_change_password=None, description=None, locked=None, disabled=None, share_space_subscription=None, share_space_desktops=None, group_names=None, enterprise_project_id=None, user_info_map=None):
         r"""User
 
         The model defined in huaweicloud sdk
@@ -85,7 +89,7 @@ class User:
         :type account_expires: str
         :param password_never_expired: 密码是否永不过期，true表示密码永不过期，false表示密码会过期。
         :type password_never_expired: bool
-        :param account_expired: 帐号是否过期，true表示已过期，false表示未过期。
+        :param account_expired: 账号是否过期，true表示已过期，false表示未过期。
         :type account_expired: bool
         :param enable_change_password: 是否允许修改密码，true表示允许，false表示不允许。
         :type enable_change_password: bool
@@ -97,12 +101,16 @@ class User:
         :type locked: bool
         :param disabled: 账户是否禁用，true表示被禁用，false表示未禁用。
         :type disabled: bool
-        :param share_space_subscription: 用户是否订阅协同，true表示已订阅，false表示未订阅
+        :param share_space_subscription: 用户是否订阅协同，true表示已订阅，false表示未订阅。
         :type share_space_subscription: bool
-        :param share_space_desktops: 用户已绑定协同桌面数
+        :param share_space_desktops: 用户已绑定协同桌面数。
         :type share_space_desktops: int
         :param group_names: 加入的组列表。
         :type group_names: list[str]
+        :param enterprise_project_id: 企业项目ID
+        :type enterprise_project_id: str
+        :param user_info_map: 用户信息映射，包含用户的服务等级、操作模式和类型。
+        :type user_info_map: str
         """
         
         
@@ -126,6 +134,8 @@ class User:
         self._share_space_subscription = None
         self._share_space_desktops = None
         self._group_names = None
+        self._enterprise_project_id = None
+        self._user_info_map = None
         self.discriminator = None
 
         if id is not None:
@@ -166,6 +176,10 @@ class User:
             self.share_space_desktops = share_space_desktops
         if group_names is not None:
             self.group_names = group_names
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
+        if user_info_map is not None:
+            self.user_info_map = user_info_map
 
     @property
     def id(self):
@@ -391,7 +405,7 @@ class User:
     def account_expired(self):
         r"""Gets the account_expired of this User.
 
-        帐号是否过期，true表示已过期，false表示未过期。
+        账号是否过期，true表示已过期，false表示未过期。
 
         :return: The account_expired of this User.
         :rtype: bool
@@ -402,7 +416,7 @@ class User:
     def account_expired(self, account_expired):
         r"""Sets the account_expired of this User.
 
-        帐号是否过期，true表示已过期，false表示未过期。
+        账号是否过期，true表示已过期，false表示未过期。
 
         :param account_expired: The account_expired of this User.
         :type account_expired: bool
@@ -523,7 +537,7 @@ class User:
     def share_space_subscription(self):
         r"""Gets the share_space_subscription of this User.
 
-        用户是否订阅协同，true表示已订阅，false表示未订阅
+        用户是否订阅协同，true表示已订阅，false表示未订阅。
 
         :return: The share_space_subscription of this User.
         :rtype: bool
@@ -534,7 +548,7 @@ class User:
     def share_space_subscription(self, share_space_subscription):
         r"""Sets the share_space_subscription of this User.
 
-        用户是否订阅协同，true表示已订阅，false表示未订阅
+        用户是否订阅协同，true表示已订阅，false表示未订阅。
 
         :param share_space_subscription: The share_space_subscription of this User.
         :type share_space_subscription: bool
@@ -545,7 +559,7 @@ class User:
     def share_space_desktops(self):
         r"""Gets the share_space_desktops of this User.
 
-        用户已绑定协同桌面数
+        用户已绑定协同桌面数。
 
         :return: The share_space_desktops of this User.
         :rtype: int
@@ -556,7 +570,7 @@ class User:
     def share_space_desktops(self, share_space_desktops):
         r"""Sets the share_space_desktops of this User.
 
-        用户已绑定协同桌面数
+        用户已绑定协同桌面数。
 
         :param share_space_desktops: The share_space_desktops of this User.
         :type share_space_desktops: int
@@ -584,6 +598,50 @@ class User:
         :type group_names: list[str]
         """
         self._group_names = group_names
+
+    @property
+    def enterprise_project_id(self):
+        r"""Gets the enterprise_project_id of this User.
+
+        企业项目ID
+
+        :return: The enterprise_project_id of this User.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        r"""Sets the enterprise_project_id of this User.
+
+        企业项目ID
+
+        :param enterprise_project_id: The enterprise_project_id of this User.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def user_info_map(self):
+        r"""Gets the user_info_map of this User.
+
+        用户信息映射，包含用户的服务等级、操作模式和类型。
+
+        :return: The user_info_map of this User.
+        :rtype: str
+        """
+        return self._user_info_map
+
+    @user_info_map.setter
+    def user_info_map(self, user_info_map):
+        r"""Sets the user_info_map of this User.
+
+        用户信息映射，包含用户的服务等级、操作模式和类型。
+
+        :param user_info_map: The user_info_map of this User.
+        :type user_info_map: str
+        """
+        self._user_info_map = user_info_map
 
     def to_dict(self):
         """Returns the model properties as a dict"""

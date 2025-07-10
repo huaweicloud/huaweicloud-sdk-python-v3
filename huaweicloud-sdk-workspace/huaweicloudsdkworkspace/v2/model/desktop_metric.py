@@ -35,11 +35,11 @@ class DesktopMetric:
 
         The model defined in huaweicloud sdk
 
-        :param resource_id: 桌面ID
+        :param resource_id: 桌面ID。
         :type resource_id: str
-        :param resource_pool_id: 桌面池ID(仅桌面池中的桌面存在该字段)
+        :param resource_pool_id: 桌面池ID(仅桌面池中的桌面存在该字段)。
         :type resource_pool_id: str
-        :param resource_name: 桌面名称
+        :param resource_name: 桌面名称。
         :type resource_name: str
         :param metric: 统计信息 * &#x60;desktop_usage&#x60; -  桌面使用时长(单位:秒) * &#x60;desktop_idle_duration&#x60; -  桌面空闲时长(单位:秒)
         :type metric: list[:class:`huaweicloudsdkworkspace.v2.Metric`]
@@ -66,7 +66,7 @@ class DesktopMetric:
     def resource_id(self):
         r"""Gets the resource_id of this DesktopMetric.
 
-        桌面ID
+        桌面ID。
 
         :return: The resource_id of this DesktopMetric.
         :rtype: str
@@ -77,7 +77,7 @@ class DesktopMetric:
     def resource_id(self, resource_id):
         r"""Sets the resource_id of this DesktopMetric.
 
-        桌面ID
+        桌面ID。
 
         :param resource_id: The resource_id of this DesktopMetric.
         :type resource_id: str
@@ -88,7 +88,7 @@ class DesktopMetric:
     def resource_pool_id(self):
         r"""Gets the resource_pool_id of this DesktopMetric.
 
-        桌面池ID(仅桌面池中的桌面存在该字段)
+        桌面池ID(仅桌面池中的桌面存在该字段)。
 
         :return: The resource_pool_id of this DesktopMetric.
         :rtype: str
@@ -99,7 +99,7 @@ class DesktopMetric:
     def resource_pool_id(self, resource_pool_id):
         r"""Sets the resource_pool_id of this DesktopMetric.
 
-        桌面池ID(仅桌面池中的桌面存在该字段)
+        桌面池ID(仅桌面池中的桌面存在该字段)。
 
         :param resource_pool_id: The resource_pool_id of this DesktopMetric.
         :type resource_pool_id: str
@@ -110,7 +110,7 @@ class DesktopMetric:
     def resource_name(self):
         r"""Gets the resource_name of this DesktopMetric.
 
-        桌面名称
+        桌面名称。
 
         :return: The resource_name of this DesktopMetric.
         :rtype: str
@@ -121,7 +121,7 @@ class DesktopMetric:
     def resource_name(self, resource_name):
         r"""Sets the resource_name of this DesktopMetric.
 
-        桌面名称
+        桌面名称。
 
         :param resource_name: The resource_name of this DesktopMetric.
         :type resource_name: str

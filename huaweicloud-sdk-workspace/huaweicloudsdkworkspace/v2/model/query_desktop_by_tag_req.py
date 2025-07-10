@@ -45,23 +45,23 @@ class QueryDesktopByTagReq:
 
         The model defined in huaweicloud sdk
 
-        :param offset: 默认为0
+        :param offset: 默认为0。
         :type offset: str
-        :param limit: 默认为1000
+        :param limit: 默认为1000。
         :type limit: str
-        :param action: 如果是filter就是分页查询，如果是count只需按照条件将总条数返回即可
+        :param action: 如果是filter就是分页查询，如果是count只需按照条件将总条数返回即可。
         :type action: str
-        :param without_any_tag: 包含任意一个标签,该字段为true时查询所有不带标签的资源
+        :param without_any_tag: 包含任意一个标签,该字段为true时查询所有不带标签的资源。
         :type without_any_tag: bool
-        :param matches: match对象
+        :param matches: match对象。
         :type matches: list[:class:`huaweicloudsdkworkspace.v2.Match`]
-        :param tags: 包含的标签对象，只要有一个不包含，就不符合，一个key对应多个value
+        :param tags: 包含的标签对象，只要有一个不包含，就不符合，一个key对应多个value。
         :type tags: list[:class:`huaweicloudsdkworkspace.v2.Tags`]
-        :param tags_any: 包含任意标签，若全都不包含，不符合，一个key对应多个value
+        :param tags_any: 包含任意标签，若全都不包含，不符合，一个key对应多个value。
         :type tags_any: list[:class:`huaweicloudsdkworkspace.v2.Tags`]
-        :param not_tags: 不包含标签，只要有一个不包含，就符合了，一个key对应多个value
+        :param not_tags: 不包含标签，只要有一个不包含，就符合了，一个key对应多个value。
         :type not_tags: list[:class:`huaweicloudsdkworkspace.v2.Tags`]
-        :param not_tags_any: 不包含任意标签，只要包含其中一个，就不符合，一个key对应多个value
+        :param not_tags_any: 不包含任意标签，只要包含其中一个，就不符合，一个key对应多个value。
         :type not_tags_any: list[:class:`huaweicloudsdkworkspace.v2.Tags`]
         """
         
@@ -82,8 +82,7 @@ class QueryDesktopByTagReq:
             self.offset = offset
         if limit is not None:
             self.limit = limit
-        if action is not None:
-            self.action = action
+        self.action = action
         if without_any_tag is not None:
             self.without_any_tag = without_any_tag
         if matches is not None:
@@ -101,7 +100,7 @@ class QueryDesktopByTagReq:
     def offset(self):
         r"""Gets the offset of this QueryDesktopByTagReq.
 
-        默认为0
+        默认为0。
 
         :return: The offset of this QueryDesktopByTagReq.
         :rtype: str
@@ -112,7 +111,7 @@ class QueryDesktopByTagReq:
     def offset(self, offset):
         r"""Sets the offset of this QueryDesktopByTagReq.
 
-        默认为0
+        默认为0。
 
         :param offset: The offset of this QueryDesktopByTagReq.
         :type offset: str
@@ -123,7 +122,7 @@ class QueryDesktopByTagReq:
     def limit(self):
         r"""Gets the limit of this QueryDesktopByTagReq.
 
-        默认为1000
+        默认为1000。
 
         :return: The limit of this QueryDesktopByTagReq.
         :rtype: str
@@ -134,7 +133,7 @@ class QueryDesktopByTagReq:
     def limit(self, limit):
         r"""Sets the limit of this QueryDesktopByTagReq.
 
-        默认为1000
+        默认为1000。
 
         :param limit: The limit of this QueryDesktopByTagReq.
         :type limit: str
@@ -145,7 +144,7 @@ class QueryDesktopByTagReq:
     def action(self):
         r"""Gets the action of this QueryDesktopByTagReq.
 
-        如果是filter就是分页查询，如果是count只需按照条件将总条数返回即可
+        如果是filter就是分页查询，如果是count只需按照条件将总条数返回即可。
 
         :return: The action of this QueryDesktopByTagReq.
         :rtype: str
@@ -156,7 +155,7 @@ class QueryDesktopByTagReq:
     def action(self, action):
         r"""Sets the action of this QueryDesktopByTagReq.
 
-        如果是filter就是分页查询，如果是count只需按照条件将总条数返回即可
+        如果是filter就是分页查询，如果是count只需按照条件将总条数返回即可。
 
         :param action: The action of this QueryDesktopByTagReq.
         :type action: str
@@ -167,7 +166,7 @@ class QueryDesktopByTagReq:
     def without_any_tag(self):
         r"""Gets the without_any_tag of this QueryDesktopByTagReq.
 
-        包含任意一个标签,该字段为true时查询所有不带标签的资源
+        包含任意一个标签,该字段为true时查询所有不带标签的资源。
 
         :return: The without_any_tag of this QueryDesktopByTagReq.
         :rtype: bool
@@ -178,7 +177,7 @@ class QueryDesktopByTagReq:
     def without_any_tag(self, without_any_tag):
         r"""Sets the without_any_tag of this QueryDesktopByTagReq.
 
-        包含任意一个标签,该字段为true时查询所有不带标签的资源
+        包含任意一个标签,该字段为true时查询所有不带标签的资源。
 
         :param without_any_tag: The without_any_tag of this QueryDesktopByTagReq.
         :type without_any_tag: bool
@@ -189,7 +188,7 @@ class QueryDesktopByTagReq:
     def matches(self):
         r"""Gets the matches of this QueryDesktopByTagReq.
 
-        match对象
+        match对象。
 
         :return: The matches of this QueryDesktopByTagReq.
         :rtype: list[:class:`huaweicloudsdkworkspace.v2.Match`]
@@ -200,7 +199,7 @@ class QueryDesktopByTagReq:
     def matches(self, matches):
         r"""Sets the matches of this QueryDesktopByTagReq.
 
-        match对象
+        match对象。
 
         :param matches: The matches of this QueryDesktopByTagReq.
         :type matches: list[:class:`huaweicloudsdkworkspace.v2.Match`]
@@ -211,7 +210,7 @@ class QueryDesktopByTagReq:
     def tags(self):
         r"""Gets the tags of this QueryDesktopByTagReq.
 
-        包含的标签对象，只要有一个不包含，就不符合，一个key对应多个value
+        包含的标签对象，只要有一个不包含，就不符合，一个key对应多个value。
 
         :return: The tags of this QueryDesktopByTagReq.
         :rtype: list[:class:`huaweicloudsdkworkspace.v2.Tags`]
@@ -222,7 +221,7 @@ class QueryDesktopByTagReq:
     def tags(self, tags):
         r"""Sets the tags of this QueryDesktopByTagReq.
 
-        包含的标签对象，只要有一个不包含，就不符合，一个key对应多个value
+        包含的标签对象，只要有一个不包含，就不符合，一个key对应多个value。
 
         :param tags: The tags of this QueryDesktopByTagReq.
         :type tags: list[:class:`huaweicloudsdkworkspace.v2.Tags`]
@@ -233,7 +232,7 @@ class QueryDesktopByTagReq:
     def tags_any(self):
         r"""Gets the tags_any of this QueryDesktopByTagReq.
 
-        包含任意标签，若全都不包含，不符合，一个key对应多个value
+        包含任意标签，若全都不包含，不符合，一个key对应多个value。
 
         :return: The tags_any of this QueryDesktopByTagReq.
         :rtype: list[:class:`huaweicloudsdkworkspace.v2.Tags`]
@@ -244,7 +243,7 @@ class QueryDesktopByTagReq:
     def tags_any(self, tags_any):
         r"""Sets the tags_any of this QueryDesktopByTagReq.
 
-        包含任意标签，若全都不包含，不符合，一个key对应多个value
+        包含任意标签，若全都不包含，不符合，一个key对应多个value。
 
         :param tags_any: The tags_any of this QueryDesktopByTagReq.
         :type tags_any: list[:class:`huaweicloudsdkworkspace.v2.Tags`]
@@ -255,7 +254,7 @@ class QueryDesktopByTagReq:
     def not_tags(self):
         r"""Gets the not_tags of this QueryDesktopByTagReq.
 
-        不包含标签，只要有一个不包含，就符合了，一个key对应多个value
+        不包含标签，只要有一个不包含，就符合了，一个key对应多个value。
 
         :return: The not_tags of this QueryDesktopByTagReq.
         :rtype: list[:class:`huaweicloudsdkworkspace.v2.Tags`]
@@ -266,7 +265,7 @@ class QueryDesktopByTagReq:
     def not_tags(self, not_tags):
         r"""Sets the not_tags of this QueryDesktopByTagReq.
 
-        不包含标签，只要有一个不包含，就符合了，一个key对应多个value
+        不包含标签，只要有一个不包含，就符合了，一个key对应多个value。
 
         :param not_tags: The not_tags of this QueryDesktopByTagReq.
         :type not_tags: list[:class:`huaweicloudsdkworkspace.v2.Tags`]
@@ -277,7 +276,7 @@ class QueryDesktopByTagReq:
     def not_tags_any(self):
         r"""Gets the not_tags_any of this QueryDesktopByTagReq.
 
-        不包含任意标签，只要包含其中一个，就不符合，一个key对应多个value
+        不包含任意标签，只要包含其中一个，就不符合，一个key对应多个value。
 
         :return: The not_tags_any of this QueryDesktopByTagReq.
         :rtype: list[:class:`huaweicloudsdkworkspace.v2.Tags`]
@@ -288,7 +287,7 @@ class QueryDesktopByTagReq:
     def not_tags_any(self, not_tags_any):
         r"""Sets the not_tags_any of this QueryDesktopByTagReq.
 
-        不包含任意标签，只要包含其中一个，就不符合，一个key对应多个value
+        不包含任意标签，只要包含其中一个，就不符合，一个key对应多个value。
 
         :param not_tags_any: The not_tags_any of this QueryDesktopByTagReq.
         :type not_tags_any: list[:class:`huaweicloudsdkworkspace.v2.Tags`]

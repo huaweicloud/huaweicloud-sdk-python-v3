@@ -29,7 +29,7 @@ class PoliciesSeamlessOptions:
 
         The model defined in huaweicloud sdk
 
-        :param seamless_apply_path: 软件路径。
+        :param seamless_apply_path: 软件路径。长度不能超过1000个字符。
         :type seamless_apply_path: str
         """
         
@@ -45,7 +45,7 @@ class PoliciesSeamlessOptions:
     def seamless_apply_path(self):
         r"""Gets the seamless_apply_path of this PoliciesSeamlessOptions.
 
-        软件路径。
+        软件路径。长度不能超过1000个字符。
 
         :return: The seamless_apply_path of this PoliciesSeamlessOptions.
         :rtype: str
@@ -56,7 +56,7 @@ class PoliciesSeamlessOptions:
     def seamless_apply_path(self, seamless_apply_path):
         r"""Sets the seamless_apply_path of this PoliciesSeamlessOptions.
 
-        软件路径。
+        软件路径。长度不能超过1000个字符。
 
         :param seamless_apply_path: The seamless_apply_path of this PoliciesSeamlessOptions.
         :type seamless_apply_path: str

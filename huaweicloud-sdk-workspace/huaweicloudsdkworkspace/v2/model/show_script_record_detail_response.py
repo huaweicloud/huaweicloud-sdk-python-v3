@@ -29,8 +29,6 @@ class ShowScriptRecordDetailResponse(SdkResponse):
         'end_time': 'datetime',
         'status': 'str',
         'execute_order': 'int',
-        'command_content': 'str',
-        'command_type': 'str',
         'result_code': 'str',
         'reason': 'str',
         'output': 'str'
@@ -48,14 +46,12 @@ class ShowScriptRecordDetailResponse(SdkResponse):
         'end_time': 'end_time',
         'status': 'status',
         'execute_order': 'execute_order',
-        'command_content': 'command_content',
-        'command_type': 'command_type',
         'result_code': 'result_code',
         'reason': 'reason',
         'output': 'output'
     }
 
-    def __init__(self, id=None, script_id=None, script_name=None, script_task_id=None, resource_id=None, resource_name=None, resource_type=None, start_time=None, end_time=None, status=None, execute_order=None, command_content=None, command_type=None, result_code=None, reason=None, output=None):
+    def __init__(self, id=None, script_id=None, script_name=None, script_task_id=None, resource_id=None, resource_name=None, resource_type=None, start_time=None, end_time=None, status=None, execute_order=None, result_code=None, reason=None, output=None):
         r"""ShowScriptRecordDetailResponse
 
         The model defined in huaweicloud sdk
@@ -82,10 +78,6 @@ class ShowScriptRecordDetailResponse(SdkResponse):
         :type status: str
         :param execute_order: 执行批次（默认：0，灰度：1，非灰度：2）。
         :type execute_order: int
-        :param command_content: 命令行内容。
-        :type command_content: str
-        :param command_type: 命令行类型(POWERSHELL/BAT/SHELL)。
-        :type command_type: str
         :param result_code: 错误码。
         :type result_code: str
         :param reason: 原因。
@@ -107,8 +99,6 @@ class ShowScriptRecordDetailResponse(SdkResponse):
         self._end_time = None
         self._status = None
         self._execute_order = None
-        self._command_content = None
-        self._command_type = None
         self._result_code = None
         self._reason = None
         self._output = None
@@ -136,10 +126,6 @@ class ShowScriptRecordDetailResponse(SdkResponse):
             self.status = status
         if execute_order is not None:
             self.execute_order = execute_order
-        if command_content is not None:
-            self.command_content = command_content
-        if command_type is not None:
-            self.command_type = command_type
         if result_code is not None:
             self.result_code = result_code
         if reason is not None:
@@ -388,50 +374,6 @@ class ShowScriptRecordDetailResponse(SdkResponse):
         :type execute_order: int
         """
         self._execute_order = execute_order
-
-    @property
-    def command_content(self):
-        r"""Gets the command_content of this ShowScriptRecordDetailResponse.
-
-        命令行内容。
-
-        :return: The command_content of this ShowScriptRecordDetailResponse.
-        :rtype: str
-        """
-        return self._command_content
-
-    @command_content.setter
-    def command_content(self, command_content):
-        r"""Sets the command_content of this ShowScriptRecordDetailResponse.
-
-        命令行内容。
-
-        :param command_content: The command_content of this ShowScriptRecordDetailResponse.
-        :type command_content: str
-        """
-        self._command_content = command_content
-
-    @property
-    def command_type(self):
-        r"""Gets the command_type of this ShowScriptRecordDetailResponse.
-
-        命令行类型(POWERSHELL/BAT/SHELL)。
-
-        :return: The command_type of this ShowScriptRecordDetailResponse.
-        :rtype: str
-        """
-        return self._command_type
-
-    @command_type.setter
-    def command_type(self, command_type):
-        r"""Sets the command_type of this ShowScriptRecordDetailResponse.
-
-        命令行类型(POWERSHELL/BAT/SHELL)。
-
-        :param command_type: The command_type of this ShowScriptRecordDetailResponse.
-        :type command_type: str
-        """
-        self._command_type = command_type
 
     @property
     def result_code(self):

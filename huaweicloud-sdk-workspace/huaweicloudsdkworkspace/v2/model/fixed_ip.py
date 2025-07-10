@@ -31,9 +31,9 @@ class FixedIp:
 
         The model defined in huaweicloud sdk
 
-        :param subnet_id: 所属子网ID
+        :param subnet_id: 所属子网ID。
         :type subnet_id: str
-        :param ip_address: 端口IP地址
+        :param ip_address: 端口IP地址。
         :type ip_address: str
         """
         
@@ -52,7 +52,7 @@ class FixedIp:
     def subnet_id(self):
         r"""Gets the subnet_id of this FixedIp.
 
-        所属子网ID
+        所属子网ID。
 
         :return: The subnet_id of this FixedIp.
         :rtype: str
@@ -63,7 +63,7 @@ class FixedIp:
     def subnet_id(self, subnet_id):
         r"""Sets the subnet_id of this FixedIp.
 
-        所属子网ID
+        所属子网ID。
 
         :param subnet_id: The subnet_id of this FixedIp.
         :type subnet_id: str
@@ -74,7 +74,7 @@ class FixedIp:
     def ip_address(self):
         r"""Gets the ip_address of this FixedIp.
 
-        端口IP地址
+        端口IP地址。
 
         :return: The ip_address of this FixedIp.
         :rtype: str
@@ -85,7 +85,7 @@ class FixedIp:
     def ip_address(self, ip_address):
         r"""Sets the ip_address of this FixedIp.
 
-        端口IP地址
+        端口IP地址。
 
         :param ip_address: The ip_address of this FixedIp.
         :type ip_address: str

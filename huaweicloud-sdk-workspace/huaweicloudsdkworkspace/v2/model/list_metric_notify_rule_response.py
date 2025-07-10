@@ -32,9 +32,9 @@ class ListMetricNotifyRuleResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param count: 总数
+        :param count: 总数。
         :type count: int
-        :param items: 规则列表
+        :param items: 规则列表。
         :type items: list[:class:`huaweicloudsdkworkspace.v2.MetricNotifyRule`]
         """
         
@@ -53,7 +53,7 @@ class ListMetricNotifyRuleResponse(SdkResponse):
     def count(self):
         r"""Gets the count of this ListMetricNotifyRuleResponse.
 
-        总数
+        总数。
 
         :return: The count of this ListMetricNotifyRuleResponse.
         :rtype: int
@@ -64,7 +64,7 @@ class ListMetricNotifyRuleResponse(SdkResponse):
     def count(self, count):
         r"""Sets the count of this ListMetricNotifyRuleResponse.
 
-        总数
+        总数。
 
         :param count: The count of this ListMetricNotifyRuleResponse.
         :type count: int
@@ -75,7 +75,7 @@ class ListMetricNotifyRuleResponse(SdkResponse):
     def items(self):
         r"""Gets the items of this ListMetricNotifyRuleResponse.
 
-        规则列表
+        规则列表。
 
         :return: The items of this ListMetricNotifyRuleResponse.
         :rtype: list[:class:`huaweicloudsdkworkspace.v2.MetricNotifyRule`]
@@ -86,7 +86,7 @@ class ListMetricNotifyRuleResponse(SdkResponse):
     def items(self, items):
         r"""Sets the items of this ListMetricNotifyRuleResponse.
 
-        规则列表
+        规则列表。
 
         :param items: The items of this ListMetricNotifyRuleResponse.
         :type items: list[:class:`huaweicloudsdkworkspace.v2.MetricNotifyRule`]

@@ -22,7 +22,6 @@ class Resource:
         'is_auto_renew': 'int',
         'add_volumes': 'AddVolumes',
         'create_desktops': 'CreateDesktopReq',
-        'deh_hosts': 'Hosts',
         'rebuild_desktops': 'RebuildDesktopsReq',
         'attach_desktops': 'AttachInstancesReq',
         'create_exclusive_hosts': 'CreateExclusiveHostsReq',
@@ -31,8 +30,7 @@ class Resource:
         'expand_desktop_pool': 'ExpandDesktopPoolOrderReq',
         'apply_desktops_internet': 'ApplyDesktopsInternet',
         'apply_subnet_bandwidth': 'ApplySubnetBandwidthReq',
-        'subscribe_user_sharer': 'SubscribeUserSharerReq',
-        'cloud_service_console_url': 'str'
+        'subscribe_user_sharer': 'SubscribeUserSharerReq'
     }
 
     attribute_map = {
@@ -41,7 +39,6 @@ class Resource:
         'is_auto_renew': 'is_auto_renew',
         'add_volumes': 'add_volumes',
         'create_desktops': 'create_desktops',
-        'deh_hosts': 'deh_hosts',
         'rebuild_desktops': 'rebuild_desktops',
         'attach_desktops': 'attach_desktops',
         'create_exclusive_hosts': 'create_exclusive_hosts',
@@ -50,27 +47,24 @@ class Resource:
         'expand_desktop_pool': 'expand_desktop_pool',
         'apply_desktops_internet': 'apply_desktops_internet',
         'apply_subnet_bandwidth': 'apply_subnet_bandwidth',
-        'subscribe_user_sharer': 'subscribe_user_sharer',
-        'cloud_service_console_url': 'cloud_service_console_url'
+        'subscribe_user_sharer': 'subscribe_user_sharer'
     }
 
-    def __init__(self, period_type=None, period_num=None, is_auto_renew=None, add_volumes=None, create_desktops=None, deh_hosts=None, rebuild_desktops=None, attach_desktops=None, create_exclusive_hosts=None, resize_exclusive_lites=None, create_desktop_pool=None, expand_desktop_pool=None, apply_desktops_internet=None, apply_subnet_bandwidth=None, subscribe_user_sharer=None, cloud_service_console_url=None):
+    def __init__(self, period_type=None, period_num=None, is_auto_renew=None, add_volumes=None, create_desktops=None, rebuild_desktops=None, attach_desktops=None, create_exclusive_hosts=None, resize_exclusive_lites=None, create_desktop_pool=None, expand_desktop_pool=None, apply_desktops_internet=None, apply_subnet_bandwidth=None, subscribe_user_sharer=None):
         r"""Resource
 
         The model defined in huaweicloud sdk
 
         :param period_type: 订购周期类型：2：月；3：年；4：包小时（仅限带宽加油包购买场景使用）5：绝对时间；（追加附属资源场景使用，比如主机上追加云硬盘）6：一次性（chargingMode&#x3D;1 一次性计费场景使用），必填
         :type period_type: int
-        :param period_num: 订购周期数
+        :param period_num: 订购周期数。
         :type period_num: int
-        :param is_auto_renew: 是否续订
+        :param is_auto_renew: 是否自动续订。
         :type is_auto_renew: int
         :param add_volumes: 
         :type add_volumes: :class:`huaweicloudsdkworkspace.v2.AddVolumes`
         :param create_desktops: 
         :type create_desktops: :class:`huaweicloudsdkworkspace.v2.CreateDesktopReq`
-        :param deh_hosts: 
-        :type deh_hosts: :class:`huaweicloudsdkworkspace.v2.Hosts`
         :param rebuild_desktops: 
         :type rebuild_desktops: :class:`huaweicloudsdkworkspace.v2.RebuildDesktopsReq`
         :param attach_desktops: 
@@ -89,8 +83,6 @@ class Resource:
         :type apply_subnet_bandwidth: :class:`huaweicloudsdkworkspace.v2.ApplySubnetBandwidthReq`
         :param subscribe_user_sharer: 
         :type subscribe_user_sharer: :class:`huaweicloudsdkworkspace.v2.SubscribeUserSharerReq`
-        :param cloud_service_console_url: 支付后跳转的地址
-        :type cloud_service_console_url: str
         """
         
         
@@ -100,7 +92,6 @@ class Resource:
         self._is_auto_renew = None
         self._add_volumes = None
         self._create_desktops = None
-        self._deh_hosts = None
         self._rebuild_desktops = None
         self._attach_desktops = None
         self._create_exclusive_hosts = None
@@ -110,7 +101,6 @@ class Resource:
         self._apply_desktops_internet = None
         self._apply_subnet_bandwidth = None
         self._subscribe_user_sharer = None
-        self._cloud_service_console_url = None
         self.discriminator = None
 
         if period_type is not None:
@@ -123,8 +113,6 @@ class Resource:
             self.add_volumes = add_volumes
         if create_desktops is not None:
             self.create_desktops = create_desktops
-        if deh_hosts is not None:
-            self.deh_hosts = deh_hosts
         if rebuild_desktops is not None:
             self.rebuild_desktops = rebuild_desktops
         if attach_desktops is not None:
@@ -143,8 +131,6 @@ class Resource:
             self.apply_subnet_bandwidth = apply_subnet_bandwidth
         if subscribe_user_sharer is not None:
             self.subscribe_user_sharer = subscribe_user_sharer
-        if cloud_service_console_url is not None:
-            self.cloud_service_console_url = cloud_service_console_url
 
     @property
     def period_type(self):
@@ -172,7 +158,7 @@ class Resource:
     def period_num(self):
         r"""Gets the period_num of this Resource.
 
-        订购周期数
+        订购周期数。
 
         :return: The period_num of this Resource.
         :rtype: int
@@ -183,7 +169,7 @@ class Resource:
     def period_num(self, period_num):
         r"""Sets the period_num of this Resource.
 
-        订购周期数
+        订购周期数。
 
         :param period_num: The period_num of this Resource.
         :type period_num: int
@@ -194,7 +180,7 @@ class Resource:
     def is_auto_renew(self):
         r"""Gets the is_auto_renew of this Resource.
 
-        是否续订
+        是否自动续订。
 
         :return: The is_auto_renew of this Resource.
         :rtype: int
@@ -205,7 +191,7 @@ class Resource:
     def is_auto_renew(self, is_auto_renew):
         r"""Sets the is_auto_renew of this Resource.
 
-        是否续订
+        是否自动续订。
 
         :param is_auto_renew: The is_auto_renew of this Resource.
         :type is_auto_renew: int
@@ -247,24 +233,6 @@ class Resource:
         :type create_desktops: :class:`huaweicloudsdkworkspace.v2.CreateDesktopReq`
         """
         self._create_desktops = create_desktops
-
-    @property
-    def deh_hosts(self):
-        r"""Gets the deh_hosts of this Resource.
-
-        :return: The deh_hosts of this Resource.
-        :rtype: :class:`huaweicloudsdkworkspace.v2.Hosts`
-        """
-        return self._deh_hosts
-
-    @deh_hosts.setter
-    def deh_hosts(self, deh_hosts):
-        r"""Sets the deh_hosts of this Resource.
-
-        :param deh_hosts: The deh_hosts of this Resource.
-        :type deh_hosts: :class:`huaweicloudsdkworkspace.v2.Hosts`
-        """
-        self._deh_hosts = deh_hosts
 
     @property
     def rebuild_desktops(self):
@@ -427,28 +395,6 @@ class Resource:
         :type subscribe_user_sharer: :class:`huaweicloudsdkworkspace.v2.SubscribeUserSharerReq`
         """
         self._subscribe_user_sharer = subscribe_user_sharer
-
-    @property
-    def cloud_service_console_url(self):
-        r"""Gets the cloud_service_console_url of this Resource.
-
-        支付后跳转的地址
-
-        :return: The cloud_service_console_url of this Resource.
-        :rtype: str
-        """
-        return self._cloud_service_console_url
-
-    @cloud_service_console_url.setter
-    def cloud_service_console_url(self, cloud_service_console_url):
-        r"""Sets the cloud_service_console_url of this Resource.
-
-        支付后跳转的地址
-
-        :param cloud_service_console_url: The cloud_service_console_url of this Resource.
-        :type cloud_service_console_url: str
-        """
-        self._cloud_service_console_url = cloud_service_console_url
 
     def to_dict(self):
         """Returns the model properties as a dict"""

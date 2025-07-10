@@ -34,11 +34,11 @@ class UpdateWorkspaceResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param job_id: 修改云办公服务属性的任务ID
+        :param job_id: 修改云办公服务属性的任务ID。
         :type job_id: str
-        :param enterprise_id: 企业ID
+        :param enterprise_id: 企业ID。
         :type enterprise_id: str
-        :param dc_vnc_ip: 专线vnc访问的ip
+        :param dc_vnc_ip: 专线vnc访问的ip。
         :type dc_vnc_ip: str
         """
         
@@ -60,7 +60,7 @@ class UpdateWorkspaceResponse(SdkResponse):
     def job_id(self):
         r"""Gets the job_id of this UpdateWorkspaceResponse.
 
-        修改云办公服务属性的任务ID
+        修改云办公服务属性的任务ID。
 
         :return: The job_id of this UpdateWorkspaceResponse.
         :rtype: str
@@ -71,7 +71,7 @@ class UpdateWorkspaceResponse(SdkResponse):
     def job_id(self, job_id):
         r"""Sets the job_id of this UpdateWorkspaceResponse.
 
-        修改云办公服务属性的任务ID
+        修改云办公服务属性的任务ID。
 
         :param job_id: The job_id of this UpdateWorkspaceResponse.
         :type job_id: str
@@ -82,7 +82,7 @@ class UpdateWorkspaceResponse(SdkResponse):
     def enterprise_id(self):
         r"""Gets the enterprise_id of this UpdateWorkspaceResponse.
 
-        企业ID
+        企业ID。
 
         :return: The enterprise_id of this UpdateWorkspaceResponse.
         :rtype: str
@@ -93,7 +93,7 @@ class UpdateWorkspaceResponse(SdkResponse):
     def enterprise_id(self, enterprise_id):
         r"""Sets the enterprise_id of this UpdateWorkspaceResponse.
 
-        企业ID
+        企业ID。
 
         :param enterprise_id: The enterprise_id of this UpdateWorkspaceResponse.
         :type enterprise_id: str
@@ -104,7 +104,7 @@ class UpdateWorkspaceResponse(SdkResponse):
     def dc_vnc_ip(self):
         r"""Gets the dc_vnc_ip of this UpdateWorkspaceResponse.
 
-        专线vnc访问的ip
+        专线vnc访问的ip。
 
         :return: The dc_vnc_ip of this UpdateWorkspaceResponse.
         :rtype: str
@@ -115,7 +115,7 @@ class UpdateWorkspaceResponse(SdkResponse):
     def dc_vnc_ip(self, dc_vnc_ip):
         r"""Sets the dc_vnc_ip of this UpdateWorkspaceResponse.
 
-        专线vnc访问的ip
+        专线vnc访问的ip。
 
         :param dc_vnc_ip: The dc_vnc_ip of this UpdateWorkspaceResponse.
         :type dc_vnc_ip: str

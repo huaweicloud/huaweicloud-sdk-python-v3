@@ -30,7 +30,7 @@ class ListMetricsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param body: 查询指标响应体
+        :param body: 查询指标响应体。
         :type body: list[:class:`huaweicloudsdkworkspace.v2.Metric`]
         """
         
@@ -46,7 +46,7 @@ class ListMetricsResponse(SdkResponse):
     def body(self):
         r"""Gets the body of this ListMetricsResponse.
 
-        查询指标响应体
+        查询指标响应体。
 
         :return: The body of this ListMetricsResponse.
         :rtype: list[:class:`huaweicloudsdkworkspace.v2.Metric`]
@@ -57,7 +57,7 @@ class ListMetricsResponse(SdkResponse):
     def body(self, body):
         r"""Sets the body of this ListMetricsResponse.
 
-        查询指标响应体
+        查询指标响应体。
 
         :param body: The body of this ListMetricsResponse.
         :type body: list[:class:`huaweicloudsdkworkspace.v2.Metric`]

@@ -39,17 +39,17 @@ class RadiusGatewayConfig:
 
         The model defined in huaweicloud sdk
 
-        :param enable: 是否启用
+        :param enable: 是否启用。
         :type enable: bool
-        :param app_id: 用户名
+        :param app_id: 用户名。
         :type app_id: str
-        :param password: 密码
+        :param password: 密码。
         :type password: str
-        :param token_url: 获取token地址
+        :param token_url: 获取token地址。
         :type token_url: str
-        :param verification_cipher_url: 获取验证码地址
+        :param verification_cipher_url: 获取验证码地址。
         :type verification_cipher_url: str
-        :param cert_content: 证书内容（PEM）
+        :param cert_content: 证书内容（PEM）。
         :type cert_content: str
         """
         
@@ -80,7 +80,7 @@ class RadiusGatewayConfig:
     def enable(self):
         r"""Gets the enable of this RadiusGatewayConfig.
 
-        是否启用
+        是否启用。
 
         :return: The enable of this RadiusGatewayConfig.
         :rtype: bool
@@ -91,7 +91,7 @@ class RadiusGatewayConfig:
     def enable(self, enable):
         r"""Sets the enable of this RadiusGatewayConfig.
 
-        是否启用
+        是否启用。
 
         :param enable: The enable of this RadiusGatewayConfig.
         :type enable: bool
@@ -102,7 +102,7 @@ class RadiusGatewayConfig:
     def app_id(self):
         r"""Gets the app_id of this RadiusGatewayConfig.
 
-        用户名
+        用户名。
 
         :return: The app_id of this RadiusGatewayConfig.
         :rtype: str
@@ -113,7 +113,7 @@ class RadiusGatewayConfig:
     def app_id(self, app_id):
         r"""Sets the app_id of this RadiusGatewayConfig.
 
-        用户名
+        用户名。
 
         :param app_id: The app_id of this RadiusGatewayConfig.
         :type app_id: str
@@ -124,7 +124,7 @@ class RadiusGatewayConfig:
     def password(self):
         r"""Gets the password of this RadiusGatewayConfig.
 
-        密码
+        密码。
 
         :return: The password of this RadiusGatewayConfig.
         :rtype: str
@@ -135,7 +135,7 @@ class RadiusGatewayConfig:
     def password(self, password):
         r"""Sets the password of this RadiusGatewayConfig.
 
-        密码
+        密码。
 
         :param password: The password of this RadiusGatewayConfig.
         :type password: str
@@ -146,7 +146,7 @@ class RadiusGatewayConfig:
     def token_url(self):
         r"""Gets the token_url of this RadiusGatewayConfig.
 
-        获取token地址
+        获取token地址。
 
         :return: The token_url of this RadiusGatewayConfig.
         :rtype: str
@@ -157,7 +157,7 @@ class RadiusGatewayConfig:
     def token_url(self, token_url):
         r"""Sets the token_url of this RadiusGatewayConfig.
 
-        获取token地址
+        获取token地址。
 
         :param token_url: The token_url of this RadiusGatewayConfig.
         :type token_url: str
@@ -168,7 +168,7 @@ class RadiusGatewayConfig:
     def verification_cipher_url(self):
         r"""Gets the verification_cipher_url of this RadiusGatewayConfig.
 
-        获取验证码地址
+        获取验证码地址。
 
         :return: The verification_cipher_url of this RadiusGatewayConfig.
         :rtype: str
@@ -179,7 +179,7 @@ class RadiusGatewayConfig:
     def verification_cipher_url(self, verification_cipher_url):
         r"""Sets the verification_cipher_url of this RadiusGatewayConfig.
 
-        获取验证码地址
+        获取验证码地址。
 
         :param verification_cipher_url: The verification_cipher_url of this RadiusGatewayConfig.
         :type verification_cipher_url: str
@@ -190,7 +190,7 @@ class RadiusGatewayConfig:
     def cert_content(self):
         r"""Gets the cert_content of this RadiusGatewayConfig.
 
-        证书内容（PEM）
+        证书内容（PEM）。
 
         :return: The cert_content of this RadiusGatewayConfig.
         :rtype: str
@@ -201,7 +201,7 @@ class RadiusGatewayConfig:
     def cert_content(self, cert_content):
         r"""Sets the cert_content of this RadiusGatewayConfig.
 
-        证书内容（PEM）
+        证书内容（PEM）。
 
         :param cert_content: The cert_content of this RadiusGatewayConfig.
         :type cert_content: str

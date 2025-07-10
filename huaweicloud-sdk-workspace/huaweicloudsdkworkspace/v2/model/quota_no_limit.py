@@ -29,7 +29,7 @@ class QuotaNoLimit:
 
         The model defined in huaweicloud sdk
 
-        :param resources: 配额资源列表
+        :param resources: 配额资源列表。
         :type resources: list[:class:`huaweicloudsdkworkspace.v2.ResourceNoLimit`]
         """
         
@@ -44,7 +44,7 @@ class QuotaNoLimit:
     def resources(self):
         r"""Gets the resources of this QuotaNoLimit.
 
-        配额资源列表
+        配额资源列表。
 
         :return: The resources of this QuotaNoLimit.
         :rtype: list[:class:`huaweicloudsdkworkspace.v2.ResourceNoLimit`]
@@ -55,7 +55,7 @@ class QuotaNoLimit:
     def resources(self, resources):
         r"""Sets the resources of this QuotaNoLimit.
 
-        配额资源列表
+        配额资源列表。
 
         :param resources: The resources of this QuotaNoLimit.
         :type resources: list[:class:`huaweicloudsdkworkspace.v2.ResourceNoLimit`]

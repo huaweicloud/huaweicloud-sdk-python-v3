@@ -99,13 +99,13 @@ class UserDetail:
         :type full_name: str
         :param distinguished_name: 用户在域树上的唯一位置。
         :type distinguished_name: str
-        :param account_type: 帐号类型(0：用户；1：用户组)。
+        :param account_type: 账号类型(0：用户；1：用户组)。
         :type account_type: int
         :param when_created: UTC时间毫秒数对应的字符，格式为：yyyy-MM-ddTHH:mm:ss.SSSZ。
         :type when_created: str
         :param account_expires: 账号有效期最后一天对应的UTC时间，以毫秒为单位。
         :type account_expires: int
-        :param is_pre_user: 是否是预创建的用户，true表示是预创建用户，false表示不是预创建用户
+        :param is_pre_user: 是否是预创建的用户，true表示是预创建用户，false表示不是预创建用户。
         :type is_pre_user: bool
         :param user_expired: 账户是否过期，true表示过期，false表示未过期。
         :type user_expired: bool
@@ -121,9 +121,9 @@ class UserDetail:
         :type disabled: bool
         :param group_names: 加入的组列表。
         :type group_names: list[str]
-        :param share_space_subscription: 用户是否订阅协同，true表示已订阅，false表示未订阅
+        :param share_space_subscription: 用户是否订阅协同，true表示已订阅，false表示未订阅。
         :type share_space_subscription: bool
-        :param share_space_desktops: 用户已绑定协同桌面数
+        :param share_space_desktops: 用户已绑定协同桌面数。
         :type share_space_desktops: int
         :param total_desktops: 用户绑定桌面云总数。
         :type total_desktops: int
@@ -455,7 +455,7 @@ class UserDetail:
     def account_type(self):
         r"""Gets the account_type of this UserDetail.
 
-        帐号类型(0：用户；1：用户组)。
+        账号类型(0：用户；1：用户组)。
 
         :return: The account_type of this UserDetail.
         :rtype: int
@@ -466,7 +466,7 @@ class UserDetail:
     def account_type(self, account_type):
         r"""Sets the account_type of this UserDetail.
 
-        帐号类型(0：用户；1：用户组)。
+        账号类型(0：用户；1：用户组)。
 
         :param account_type: The account_type of this UserDetail.
         :type account_type: int
@@ -521,7 +521,7 @@ class UserDetail:
     def is_pre_user(self):
         r"""Gets the is_pre_user of this UserDetail.
 
-        是否是预创建的用户，true表示是预创建用户，false表示不是预创建用户
+        是否是预创建的用户，true表示是预创建用户，false表示不是预创建用户。
 
         :return: The is_pre_user of this UserDetail.
         :rtype: bool
@@ -532,7 +532,7 @@ class UserDetail:
     def is_pre_user(self, is_pre_user):
         r"""Sets the is_pre_user of this UserDetail.
 
-        是否是预创建的用户，true表示是预创建用户，false表示不是预创建用户
+        是否是预创建的用户，true表示是预创建用户，false表示不是预创建用户。
 
         :param is_pre_user: The is_pre_user of this UserDetail.
         :type is_pre_user: bool
@@ -697,7 +697,7 @@ class UserDetail:
     def share_space_subscription(self):
         r"""Gets the share_space_subscription of this UserDetail.
 
-        用户是否订阅协同，true表示已订阅，false表示未订阅
+        用户是否订阅协同，true表示已订阅，false表示未订阅。
 
         :return: The share_space_subscription of this UserDetail.
         :rtype: bool
@@ -708,7 +708,7 @@ class UserDetail:
     def share_space_subscription(self, share_space_subscription):
         r"""Sets the share_space_subscription of this UserDetail.
 
-        用户是否订阅协同，true表示已订阅，false表示未订阅
+        用户是否订阅协同，true表示已订阅，false表示未订阅。
 
         :param share_space_subscription: The share_space_subscription of this UserDetail.
         :type share_space_subscription: bool
@@ -719,7 +719,7 @@ class UserDetail:
     def share_space_desktops(self):
         r"""Gets the share_space_desktops of this UserDetail.
 
-        用户已绑定协同桌面数
+        用户已绑定协同桌面数。
 
         :return: The share_space_desktops of this UserDetail.
         :rtype: int
@@ -730,7 +730,7 @@ class UserDetail:
     def share_space_desktops(self, share_space_desktops):
         r"""Sets the share_space_desktops of this UserDetail.
 
-        用户已绑定协同桌面数
+        用户已绑定协同桌面数。
 
         :param share_space_desktops: The share_space_desktops of this UserDetail.
         :type share_space_desktops: int

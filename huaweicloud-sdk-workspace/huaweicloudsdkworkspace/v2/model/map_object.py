@@ -31,9 +31,9 @@ class MapObject:
 
         The model defined in huaweicloud sdk
 
-        :param key: 配置项的键
+        :param key: 配置项的键。
         :type key: str
-        :param value: 配置项对应的值
+        :param value: 配置项对应的值。
         :type value: str
         """
         
@@ -52,7 +52,7 @@ class MapObject:
     def key(self):
         r"""Gets the key of this MapObject.
 
-        配置项的键
+        配置项的键。
 
         :return: The key of this MapObject.
         :rtype: str
@@ -63,7 +63,7 @@ class MapObject:
     def key(self, key):
         r"""Sets the key of this MapObject.
 
-        配置项的键
+        配置项的键。
 
         :param key: The key of this MapObject.
         :type key: str
@@ -74,7 +74,7 @@ class MapObject:
     def value(self):
         r"""Gets the value of this MapObject.
 
-        配置项对应的值
+        配置项对应的值。
 
         :return: The value of this MapObject.
         :rtype: str
@@ -85,7 +85,7 @@ class MapObject:
     def value(self, value):
         r"""Sets the value of this MapObject.
 
-        配置项对应的值
+        配置项对应的值。
 
         :param value: The value of this MapObject.
         :type value: str

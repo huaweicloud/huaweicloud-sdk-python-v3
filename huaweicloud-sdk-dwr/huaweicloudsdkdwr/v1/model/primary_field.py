@@ -31,9 +31,9 @@ class PrimaryField:
 
         The model defined in huaweicloud sdk
 
-        :param name: 指定主键名
+        :param name: **参数解释：** 指定主键名。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
         :type name: str
-        :param type: 该参数为 \&quot;String\&quot;,“Int64”。
+        :param type: **参数解释：** 主键列的数据类型。 **约束限制：** 不涉及。 **取值范围：**  \&quot;String\&quot;,“Int64”。 **默认取值:** 不涉及。
         :type type: str
         """
         
@@ -50,7 +50,7 @@ class PrimaryField:
     def name(self):
         r"""Gets the name of this PrimaryField.
 
-        指定主键名
+        **参数解释：** 指定主键名。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :return: The name of this PrimaryField.
         :rtype: str
@@ -61,7 +61,7 @@ class PrimaryField:
     def name(self, name):
         r"""Sets the name of this PrimaryField.
 
-        指定主键名
+        **参数解释：** 指定主键名。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :param name: The name of this PrimaryField.
         :type name: str
@@ -72,7 +72,7 @@ class PrimaryField:
     def type(self):
         r"""Gets the type of this PrimaryField.
 
-        该参数为 \"String\",“Int64”。
+        **参数解释：** 主键列的数据类型。 **约束限制：** 不涉及。 **取值范围：**  \"String\",“Int64”。 **默认取值:** 不涉及。
 
         :return: The type of this PrimaryField.
         :rtype: str
@@ -83,7 +83,7 @@ class PrimaryField:
     def type(self, type):
         r"""Sets the type of this PrimaryField.
 
-        该参数为 \"String\",“Int64”。
+        **参数解释：** 主键列的数据类型。 **约束限制：** 不涉及。 **取值范围：**  \"String\",“Int64”。 **默认取值:** 不涉及。
 
         :param type: The type of this PrimaryField.
         :type type: str

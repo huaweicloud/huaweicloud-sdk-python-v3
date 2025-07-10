@@ -32,9 +32,9 @@ class ListAppUserAccessDataResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param count: 总数
+        :param count: 总数。
         :type count: int
-        :param items: 用户统计指标
+        :param items: 用户统计指标。
         :type items: list[:class:`huaweicloudsdkworkspace.v2.AppUserAccessData`]
         """
         
@@ -53,7 +53,7 @@ class ListAppUserAccessDataResponse(SdkResponse):
     def count(self):
         r"""Gets the count of this ListAppUserAccessDataResponse.
 
-        总数
+        总数。
 
         :return: The count of this ListAppUserAccessDataResponse.
         :rtype: int
@@ -64,7 +64,7 @@ class ListAppUserAccessDataResponse(SdkResponse):
     def count(self, count):
         r"""Sets the count of this ListAppUserAccessDataResponse.
 
-        总数
+        总数。
 
         :param count: The count of this ListAppUserAccessDataResponse.
         :type count: int
@@ -75,7 +75,7 @@ class ListAppUserAccessDataResponse(SdkResponse):
     def items(self):
         r"""Gets the items of this ListAppUserAccessDataResponse.
 
-        用户统计指标
+        用户统计指标。
 
         :return: The items of this ListAppUserAccessDataResponse.
         :rtype: list[:class:`huaweicloudsdkworkspace.v2.AppUserAccessData`]
@@ -86,7 +86,7 @@ class ListAppUserAccessDataResponse(SdkResponse):
     def items(self, items):
         r"""Sets the items of this ListAppUserAccessDataResponse.
 
-        用户统计指标
+        用户统计指标。
 
         :param items: The items of this ListAppUserAccessDataResponse.
         :type items: list[:class:`huaweicloudsdkworkspace.v2.AppUserAccessData`]

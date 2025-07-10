@@ -39,9 +39,9 @@ class ListMetricNotifyRecordRequest:
         :type metric_name: str
         :param rule_id: 通知规则ID (metric_name和rule_id不允许同时为空)
         :type rule_id: str
-        :param offset: 查询的偏移量,默认值0
+        :param offset: 查询的偏移量,默认值0。
         :type offset: int
-        :param limit: 单次查询的大小[1-100],默认值10
+        :param limit: 单次查询的大小[1-100],默认值10。
         :type limit: int
         """
         
@@ -110,7 +110,7 @@ class ListMetricNotifyRecordRequest:
     def offset(self):
         r"""Gets the offset of this ListMetricNotifyRecordRequest.
 
-        查询的偏移量,默认值0
+        查询的偏移量,默认值0。
 
         :return: The offset of this ListMetricNotifyRecordRequest.
         :rtype: int
@@ -121,7 +121,7 @@ class ListMetricNotifyRecordRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListMetricNotifyRecordRequest.
 
-        查询的偏移量,默认值0
+        查询的偏移量,默认值0。
 
         :param offset: The offset of this ListMetricNotifyRecordRequest.
         :type offset: int
@@ -132,7 +132,7 @@ class ListMetricNotifyRecordRequest:
     def limit(self):
         r"""Gets the limit of this ListMetricNotifyRecordRequest.
 
-        单次查询的大小[1-100],默认值10
+        单次查询的大小[1-100],默认值10。
 
         :return: The limit of this ListMetricNotifyRecordRequest.
         :rtype: int
@@ -143,7 +143,7 @@ class ListMetricNotifyRecordRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListMetricNotifyRecordRequest.
 
-        单次查询的大小[1-100],默认值10
+        单次查询的大小[1-100],默认值10。
 
         :param limit: The limit of this ListMetricNotifyRecordRequest.
         :type limit: int

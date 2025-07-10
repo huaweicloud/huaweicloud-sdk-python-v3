@@ -30,7 +30,7 @@ class ListTenantConfigsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param function_configs: 租户个性配置列表
+        :param function_configs: 租户个性配置列表。
         :type function_configs: list[:class:`huaweicloudsdkworkspace.v2.FunctionConfig`]
         """
         
@@ -46,7 +46,7 @@ class ListTenantConfigsResponse(SdkResponse):
     def function_configs(self):
         r"""Gets the function_configs of this ListTenantConfigsResponse.
 
-        租户个性配置列表
+        租户个性配置列表。
 
         :return: The function_configs of this ListTenantConfigsResponse.
         :rtype: list[:class:`huaweicloudsdkworkspace.v2.FunctionConfig`]
@@ -57,7 +57,7 @@ class ListTenantConfigsResponse(SdkResponse):
     def function_configs(self, function_configs):
         r"""Sets the function_configs of this ListTenantConfigsResponse.
 
-        租户个性配置列表
+        租户个性配置列表。
 
         :param function_configs: The function_configs of this ListTenantConfigsResponse.
         :type function_configs: list[:class:`huaweicloudsdkworkspace.v2.FunctionConfig`]

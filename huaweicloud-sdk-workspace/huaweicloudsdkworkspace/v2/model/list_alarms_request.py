@@ -33,11 +33,11 @@ class ListAlarmsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param level: 告警级别 | 1 - 紧急 2 - 重要 3 - 次要 4 - 提示
+        :param level: 告警级别 | 1 - 紧急 2 - 重要 3 - 次要 4 - 提示。
         :type level: int
-        :param offset: 分页偏移量
+        :param offset: 分页偏移量。
         :type offset: int
-        :param limit: 分页大小
+        :param limit: 分页大小，默认100。
         :type limit: int
         """
         
@@ -59,7 +59,7 @@ class ListAlarmsRequest:
     def level(self):
         r"""Gets the level of this ListAlarmsRequest.
 
-        告警级别 | 1 - 紧急 2 - 重要 3 - 次要 4 - 提示
+        告警级别 | 1 - 紧急 2 - 重要 3 - 次要 4 - 提示。
 
         :return: The level of this ListAlarmsRequest.
         :rtype: int
@@ -70,7 +70,7 @@ class ListAlarmsRequest:
     def level(self, level):
         r"""Sets the level of this ListAlarmsRequest.
 
-        告警级别 | 1 - 紧急 2 - 重要 3 - 次要 4 - 提示
+        告警级别 | 1 - 紧急 2 - 重要 3 - 次要 4 - 提示。
 
         :param level: The level of this ListAlarmsRequest.
         :type level: int
@@ -81,7 +81,7 @@ class ListAlarmsRequest:
     def offset(self):
         r"""Gets the offset of this ListAlarmsRequest.
 
-        分页偏移量
+        分页偏移量。
 
         :return: The offset of this ListAlarmsRequest.
         :rtype: int
@@ -92,7 +92,7 @@ class ListAlarmsRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListAlarmsRequest.
 
-        分页偏移量
+        分页偏移量。
 
         :param offset: The offset of this ListAlarmsRequest.
         :type offset: int
@@ -103,7 +103,7 @@ class ListAlarmsRequest:
     def limit(self):
         r"""Gets the limit of this ListAlarmsRequest.
 
-        分页大小
+        分页大小，默认100。
 
         :return: The limit of this ListAlarmsRequest.
         :rtype: int
@@ -114,7 +114,7 @@ class ListAlarmsRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListAlarmsRequest.
 
-        分页大小
+        分页大小，默认100。
 
         :param limit: The limit of this ListAlarmsRequest.
         :type limit: int

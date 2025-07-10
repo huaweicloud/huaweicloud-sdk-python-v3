@@ -47,9 +47,9 @@ class ListSharerProductsRequest:
         :type share_space_size: str
         :param charge_mode: 周期套餐标识。0表示包周期，1表示按需, 6表示一次性计费。
         :type charge_mode: str
-        :param is_gpu: 是否是GPU套餐。1表示GPU套餐，0表示非GPU套餐，默认null查询所有类型
+        :param is_gpu: 是否是GPU套餐。1表示GPU套餐，0表示非GPU套餐，默认null查询所有类型。
         :type is_gpu: int
-        :param package_type: 套餐系列。user_sharer表示用户协同套餐，desktop_sharer表示桌面协同套餐
+        :param package_type: 套餐系列。user_sharer表示用户协同套餐，desktop_sharer表示桌面协同套餐。
         :type package_type: str
         :param limit: 每页数量，范围0-100，默认100。
         :type limit: int
@@ -153,7 +153,7 @@ class ListSharerProductsRequest:
     def is_gpu(self):
         r"""Gets the is_gpu of this ListSharerProductsRequest.
 
-        是否是GPU套餐。1表示GPU套餐，0表示非GPU套餐，默认null查询所有类型
+        是否是GPU套餐。1表示GPU套餐，0表示非GPU套餐，默认null查询所有类型。
 
         :return: The is_gpu of this ListSharerProductsRequest.
         :rtype: int
@@ -164,7 +164,7 @@ class ListSharerProductsRequest:
     def is_gpu(self, is_gpu):
         r"""Sets the is_gpu of this ListSharerProductsRequest.
 
-        是否是GPU套餐。1表示GPU套餐，0表示非GPU套餐，默认null查询所有类型
+        是否是GPU套餐。1表示GPU套餐，0表示非GPU套餐，默认null查询所有类型。
 
         :param is_gpu: The is_gpu of this ListSharerProductsRequest.
         :type is_gpu: int
@@ -175,7 +175,7 @@ class ListSharerProductsRequest:
     def package_type(self):
         r"""Gets the package_type of this ListSharerProductsRequest.
 
-        套餐系列。user_sharer表示用户协同套餐，desktop_sharer表示桌面协同套餐
+        套餐系列。user_sharer表示用户协同套餐，desktop_sharer表示桌面协同套餐。
 
         :return: The package_type of this ListSharerProductsRequest.
         :rtype: str
@@ -186,7 +186,7 @@ class ListSharerProductsRequest:
     def package_type(self, package_type):
         r"""Sets the package_type of this ListSharerProductsRequest.
 
-        套餐系列。user_sharer表示用户协同套餐，desktop_sharer表示桌面协同套餐
+        套餐系列。user_sharer表示用户协同套餐，desktop_sharer表示桌面协同套餐。
 
         :param package_type: The package_type of this ListSharerProductsRequest.
         :type package_type: str

@@ -17,58 +17,29 @@ class ExpandDesktopPoolVolumesReq:
     sensitive_list = []
 
     openapi_types = {
-        'order_id': 'str',
         'volumes': 'list[VolumeInfo]'
     }
 
     attribute_map = {
-        'order_id': 'order_id',
         'volumes': 'volumes'
     }
 
-    def __init__(self, order_id=None, volumes=None):
+    def __init__(self, volumes=None):
         r"""ExpandDesktopPoolVolumesReq
 
         The model defined in huaweicloud sdk
 
-        :param order_id: 包周期订购ID，CBC订购回调时使用。
-        :type order_id: str
         :param volumes: 扩容的桌面池磁盘列表。
         :type volumes: list[:class:`huaweicloudsdkworkspace.v2.VolumeInfo`]
         """
         
         
 
-        self._order_id = None
         self._volumes = None
         self.discriminator = None
 
-        if order_id is not None:
-            self.order_id = order_id
         if volumes is not None:
             self.volumes = volumes
-
-    @property
-    def order_id(self):
-        r"""Gets the order_id of this ExpandDesktopPoolVolumesReq.
-
-        包周期订购ID，CBC订购回调时使用。
-
-        :return: The order_id of this ExpandDesktopPoolVolumesReq.
-        :rtype: str
-        """
-        return self._order_id
-
-    @order_id.setter
-    def order_id(self, order_id):
-        r"""Sets the order_id of this ExpandDesktopPoolVolumesReq.
-
-        包周期订购ID，CBC订购回调时使用。
-
-        :param order_id: The order_id of this ExpandDesktopPoolVolumesReq.
-        :type order_id: str
-        """
-        self._order_id = order_id
 
     @property
     def volumes(self):

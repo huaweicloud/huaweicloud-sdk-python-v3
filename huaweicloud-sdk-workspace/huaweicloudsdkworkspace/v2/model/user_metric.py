@@ -31,7 +31,7 @@ class UserMetric:
 
         The model defined in huaweicloud sdk
 
-        :param username: 用户名称
+        :param username: 用户名称。
         :type username: str
         :param metric: 桌面使用统计信息 * &#x60;user_usage&#x60; -  用户使用时长(单位:秒)，同一时间登录多台PC的话;相应的时间会累加 * &#x60;user_login_count&#x60; -  用户登录次数(单位:次) * &#x60;user_login_success_count&#x60; -  用户登录成功次数(单位:次) * &#x60;user_login_fail_count&#x60; -  用户登录失败次数(单位:次)
         :type metric: list[:class:`huaweicloudsdkworkspace.v2.Metric`]
@@ -52,7 +52,7 @@ class UserMetric:
     def username(self):
         r"""Gets the username of this UserMetric.
 
-        用户名称
+        用户名称。
 
         :return: The username of this UserMetric.
         :rtype: str
@@ -63,7 +63,7 @@ class UserMetric:
     def username(self, username):
         r"""Sets the username of this UserMetric.
 
-        用户名称
+        用户名称。
 
         :param username: The username of this UserMetric.
         :type username: str

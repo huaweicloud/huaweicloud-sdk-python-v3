@@ -39,17 +39,17 @@ class ListCollectionDetails:
 
         The model defined in huaweicloud sdk
 
-        :param collection_name: collection名称
+        :param collection_name: **参数解释：** collection名称。 **约束限制：** 可包含数字、字母和下划线 (_)。资源名称必须以字母或下划线 (_) 开头。最大长度支持255。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
         :type collection_name: str
-        :param index_num: 索引数量
+        :param index_num: **参数解释：** 索引数量。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
         :type index_num: int
-        :param entity_num: collection中的entity数量
+        :param entity_num: **参数解释：** collection中的entity数量。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
         :type entity_num: int
-        :param load_state: 标识当前Collection加载状态。 1、LoadStateLoaded：表示当前Collection已准备就绪，可正常使用。 2、LoadStateLoading：表示当前Collection正在load。 3、LoadStateNotLoad：表示collection未加载。
+        :param load_state: **参数解释：** 标识当前Collection加载状态。 **约束限制：** 不涉及。 **取值范围：** 1、LoadStateLoaded：表示当前Collection已准备就绪，可正常使用。 2、LoadStateLoading：表示当前Collection正在load。 3、LoadStateNotLoad：表示collection未加载。 **默认取值:** 不涉及。
         :type load_state: str
-        :param create_time: 创建时间，格式为“yyyy-mm-ddThh:mm:ssZ\&quot;
+        :param create_time: **参数解释：** 创建时间。 **约束限制：** 格式为“yyyy-mm-ddThh:mm:ssZ\&quot;。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
         :type create_time: str
-        :param description: 描述信息
+        :param description: **参数解释：** collection的描述信息。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
         :type description: str
         """
         
@@ -80,7 +80,7 @@ class ListCollectionDetails:
     def collection_name(self):
         r"""Gets the collection_name of this ListCollectionDetails.
 
-        collection名称
+        **参数解释：** collection名称。 **约束限制：** 可包含数字、字母和下划线 (_)。资源名称必须以字母或下划线 (_) 开头。最大长度支持255。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :return: The collection_name of this ListCollectionDetails.
         :rtype: str
@@ -91,7 +91,7 @@ class ListCollectionDetails:
     def collection_name(self, collection_name):
         r"""Sets the collection_name of this ListCollectionDetails.
 
-        collection名称
+        **参数解释：** collection名称。 **约束限制：** 可包含数字、字母和下划线 (_)。资源名称必须以字母或下划线 (_) 开头。最大长度支持255。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :param collection_name: The collection_name of this ListCollectionDetails.
         :type collection_name: str
@@ -102,7 +102,7 @@ class ListCollectionDetails:
     def index_num(self):
         r"""Gets the index_num of this ListCollectionDetails.
 
-        索引数量
+        **参数解释：** 索引数量。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :return: The index_num of this ListCollectionDetails.
         :rtype: int
@@ -113,7 +113,7 @@ class ListCollectionDetails:
     def index_num(self, index_num):
         r"""Sets the index_num of this ListCollectionDetails.
 
-        索引数量
+        **参数解释：** 索引数量。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :param index_num: The index_num of this ListCollectionDetails.
         :type index_num: int
@@ -124,7 +124,7 @@ class ListCollectionDetails:
     def entity_num(self):
         r"""Gets the entity_num of this ListCollectionDetails.
 
-        collection中的entity数量
+        **参数解释：** collection中的entity数量。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :return: The entity_num of this ListCollectionDetails.
         :rtype: int
@@ -135,7 +135,7 @@ class ListCollectionDetails:
     def entity_num(self, entity_num):
         r"""Sets the entity_num of this ListCollectionDetails.
 
-        collection中的entity数量
+        **参数解释：** collection中的entity数量。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :param entity_num: The entity_num of this ListCollectionDetails.
         :type entity_num: int
@@ -146,7 +146,7 @@ class ListCollectionDetails:
     def load_state(self):
         r"""Gets the load_state of this ListCollectionDetails.
 
-        标识当前Collection加载状态。 1、LoadStateLoaded：表示当前Collection已准备就绪，可正常使用。 2、LoadStateLoading：表示当前Collection正在load。 3、LoadStateNotLoad：表示collection未加载。
+        **参数解释：** 标识当前Collection加载状态。 **约束限制：** 不涉及。 **取值范围：** 1、LoadStateLoaded：表示当前Collection已准备就绪，可正常使用。 2、LoadStateLoading：表示当前Collection正在load。 3、LoadStateNotLoad：表示collection未加载。 **默认取值:** 不涉及。
 
         :return: The load_state of this ListCollectionDetails.
         :rtype: str
@@ -157,7 +157,7 @@ class ListCollectionDetails:
     def load_state(self, load_state):
         r"""Sets the load_state of this ListCollectionDetails.
 
-        标识当前Collection加载状态。 1、LoadStateLoaded：表示当前Collection已准备就绪，可正常使用。 2、LoadStateLoading：表示当前Collection正在load。 3、LoadStateNotLoad：表示collection未加载。
+        **参数解释：** 标识当前Collection加载状态。 **约束限制：** 不涉及。 **取值范围：** 1、LoadStateLoaded：表示当前Collection已准备就绪，可正常使用。 2、LoadStateLoading：表示当前Collection正在load。 3、LoadStateNotLoad：表示collection未加载。 **默认取值:** 不涉及。
 
         :param load_state: The load_state of this ListCollectionDetails.
         :type load_state: str
@@ -168,7 +168,7 @@ class ListCollectionDetails:
     def create_time(self):
         r"""Gets the create_time of this ListCollectionDetails.
 
-        创建时间，格式为“yyyy-mm-ddThh:mm:ssZ\"
+        **参数解释：** 创建时间。 **约束限制：** 格式为“yyyy-mm-ddThh:mm:ssZ\"。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :return: The create_time of this ListCollectionDetails.
         :rtype: str
@@ -179,7 +179,7 @@ class ListCollectionDetails:
     def create_time(self, create_time):
         r"""Sets the create_time of this ListCollectionDetails.
 
-        创建时间，格式为“yyyy-mm-ddThh:mm:ssZ\"
+        **参数解释：** 创建时间。 **约束限制：** 格式为“yyyy-mm-ddThh:mm:ssZ\"。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :param create_time: The create_time of this ListCollectionDetails.
         :type create_time: str
@@ -190,7 +190,7 @@ class ListCollectionDetails:
     def description(self):
         r"""Gets the description of this ListCollectionDetails.
 
-        描述信息
+        **参数解释：** collection的描述信息。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :return: The description of this ListCollectionDetails.
         :rtype: str
@@ -201,7 +201,7 @@ class ListCollectionDetails:
     def description(self, description):
         r"""Sets the description of this ListCollectionDetails.
 
-        描述信息
+        **参数解释：** collection的描述信息。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :param description: The description of this ListCollectionDetails.
         :type description: str

@@ -18,15 +18,19 @@ class UpdateAccessPolicyReq:
 
     openapi_types = {
         'operation_type': 'str',
-        'ip_white_list': 'list[IpInfo]'
+        'ip_white_list': 'list[IpInfo]',
+        'is_enable': 'bool',
+        'is_block_all': 'bool'
     }
 
     attribute_map = {
         'operation_type': 'operation_type',
-        'ip_white_list': 'ip_white_list'
+        'ip_white_list': 'ip_white_list',
+        'is_enable': 'is_enable',
+        'is_block_all': 'is_block_all'
     }
 
-    def __init__(self, operation_type=None, ip_white_list=None):
+    def __init__(self, operation_type=None, ip_white_list=None, is_enable=None, is_block_all=None):
         r"""UpdateAccessPolicyReq
 
         The model defined in huaweicloud sdk
@@ -35,18 +39,28 @@ class UpdateAccessPolicyReq:
         :type operation_type: str
         :param ip_white_list: 策略的ip列表。
         :type ip_white_list: list[:class:`huaweicloudsdkworkspace.v2.IpInfo`]
+        :param is_enable: IP白名单是否生效。
+        :type is_enable: bool
+        :param is_block_all: IP白名单是否禁止所有Ip接入。
+        :type is_block_all: bool
         """
         
         
 
         self._operation_type = None
         self._ip_white_list = None
+        self._is_enable = None
+        self._is_block_all = None
         self.discriminator = None
 
         if operation_type is not None:
             self.operation_type = operation_type
         if ip_white_list is not None:
             self.ip_white_list = ip_white_list
+        if is_enable is not None:
+            self.is_enable = is_enable
+        if is_block_all is not None:
+            self.is_block_all = is_block_all
 
     @property
     def operation_type(self):
@@ -91,6 +105,50 @@ class UpdateAccessPolicyReq:
         :type ip_white_list: list[:class:`huaweicloudsdkworkspace.v2.IpInfo`]
         """
         self._ip_white_list = ip_white_list
+
+    @property
+    def is_enable(self):
+        r"""Gets the is_enable of this UpdateAccessPolicyReq.
+
+        IP白名单是否生效。
+
+        :return: The is_enable of this UpdateAccessPolicyReq.
+        :rtype: bool
+        """
+        return self._is_enable
+
+    @is_enable.setter
+    def is_enable(self, is_enable):
+        r"""Sets the is_enable of this UpdateAccessPolicyReq.
+
+        IP白名单是否生效。
+
+        :param is_enable: The is_enable of this UpdateAccessPolicyReq.
+        :type is_enable: bool
+        """
+        self._is_enable = is_enable
+
+    @property
+    def is_block_all(self):
+        r"""Gets the is_block_all of this UpdateAccessPolicyReq.
+
+        IP白名单是否禁止所有Ip接入。
+
+        :return: The is_block_all of this UpdateAccessPolicyReq.
+        :rtype: bool
+        """
+        return self._is_block_all
+
+    @is_block_all.setter
+    def is_block_all(self, is_block_all):
+        r"""Sets the is_block_all of this UpdateAccessPolicyReq.
+
+        IP白名单是否禁止所有Ip接入。
+
+        :param is_block_all: The is_block_all of this UpdateAccessPolicyReq.
+        :type is_block_all: bool
+        """
+        self._is_block_all = is_block_all
 
     def to_dict(self):
         """Returns the model properties as a dict"""

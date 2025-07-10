@@ -18,15 +18,19 @@ class ListFlavorsRequest:
 
     openapi_types = {
         'availability_zone': 'str',
-        'flavor_id': 'str'
+        'flavor_id': 'str',
+        'limit': 'int',
+        'marker': 'str'
     }
 
     attribute_map = {
         'availability_zone': 'availability_zone',
-        'flavor_id': 'flavor_id'
+        'flavor_id': 'flavor_id',
+        'limit': 'limit',
+        'marker': 'marker'
     }
 
-    def __init__(self, availability_zone=None, flavor_id=None):
+    def __init__(self, availability_zone=None, flavor_id=None, limit=None, marker=None):
         r"""ListFlavorsRequest
 
         The model defined in huaweicloud sdk
@@ -35,18 +39,28 @@ class ListFlavorsRequest:
         :type availability_zone: str
         :param flavor_id: 规格id
         :type flavor_id: str
+        :param limit: 
+        :type limit: int
+        :param marker: 
+        :type marker: str
         """
         
         
 
         self._availability_zone = None
         self._flavor_id = None
+        self._limit = None
+        self._marker = None
         self.discriminator = None
 
         if availability_zone is not None:
             self.availability_zone = availability_zone
         if flavor_id is not None:
             self.flavor_id = flavor_id
+        if limit is not None:
+            self.limit = limit
+        if marker is not None:
+            self.marker = marker
 
     @property
     def availability_zone(self):
@@ -91,6 +105,42 @@ class ListFlavorsRequest:
         :type flavor_id: str
         """
         self._flavor_id = flavor_id
+
+    @property
+    def limit(self):
+        r"""Gets the limit of this ListFlavorsRequest.
+
+        :return: The limit of this ListFlavorsRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        r"""Sets the limit of this ListFlavorsRequest.
+
+        :param limit: The limit of this ListFlavorsRequest.
+        :type limit: int
+        """
+        self._limit = limit
+
+    @property
+    def marker(self):
+        r"""Gets the marker of this ListFlavorsRequest.
+
+        :return: The marker of this ListFlavorsRequest.
+        :rtype: str
+        """
+        return self._marker
+
+    @marker.setter
+    def marker(self, marker):
+        r"""Sets the marker of this ListFlavorsRequest.
+
+        :param marker: The marker of this ListFlavorsRequest.
+        :type marker: str
+        """
+        self._marker = marker
 
     def to_dict(self):
         """Returns the model properties as a dict"""

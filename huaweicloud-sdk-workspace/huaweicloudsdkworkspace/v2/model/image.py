@@ -65,7 +65,7 @@ class Image:
 
         :param image_id: 镜像id。
         :type image_id: str
-        :param min_disk: 镜像运行需要的最小磁盘容量，单位为GB。取值为40～1024GB。。
+        :param min_disk: 镜像运行需要的最小磁盘容量，单位为GB。取值为40～1024GB。
         :type min_disk: int
         :param created_at: 创建时间，格式为UTC时间，yyyy-MM-ddTHH:mm:ssZ。
         :type created_at: str
@@ -186,7 +186,7 @@ class Image:
     def min_disk(self):
         r"""Gets the min_disk of this Image.
 
-        镜像运行需要的最小磁盘容量，单位为GB。取值为40～1024GB。。
+        镜像运行需要的最小磁盘容量，单位为GB。取值为40～1024GB。
 
         :return: The min_disk of this Image.
         :rtype: int
@@ -197,7 +197,7 @@ class Image:
     def min_disk(self, min_disk):
         r"""Sets the min_disk of this Image.
 
-        镜像运行需要的最小磁盘容量，单位为GB。取值为40～1024GB。。
+        镜像运行需要的最小磁盘容量，单位为GB。取值为40～1024GB。
 
         :param min_disk: The min_disk of this Image.
         :type min_disk: int

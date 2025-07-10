@@ -41,7 +41,7 @@ class DeleteDesktopsReq:
         :type delete_users: bool
         :param email_notification: 是否邮件通知，true：邮件通知，false：不通知，默认值true。
         :type email_notification: bool
-        :param is_force_delete: 是否强制删除，true：强制删除，false：不强制删除
+        :param is_force_delete: 是否强制删除，true：强制删除，false：不强制删除。
         :type is_force_delete: bool
         """
         
@@ -131,7 +131,7 @@ class DeleteDesktopsReq:
     def is_force_delete(self):
         r"""Gets the is_force_delete of this DeleteDesktopsReq.
 
-        是否强制删除，true：强制删除，false：不强制删除
+        是否强制删除，true：强制删除，false：不强制删除。
 
         :return: The is_force_delete of this DeleteDesktopsReq.
         :rtype: bool
@@ -142,7 +142,7 @@ class DeleteDesktopsReq:
     def is_force_delete(self, is_force_delete):
         r"""Sets the is_force_delete of this DeleteDesktopsReq.
 
-        是否强制删除，true：强制删除，false：不强制删除
+        是否强制删除，true：强制删除，false：不强制删除。
 
         :param is_force_delete: The is_force_delete of this DeleteDesktopsReq.
         :type is_force_delete: bool

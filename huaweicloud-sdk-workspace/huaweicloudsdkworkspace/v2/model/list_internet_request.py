@@ -33,11 +33,11 @@ class ListInternetRequest:
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 企业项目ID
+        :param enterprise_project_id: 企业项目ID。
         :type enterprise_project_id: str
-        :param nat_name: NAT网关名称
+        :param nat_name: NAT网关名称。
         :type nat_name: str
-        :param eip: EIP地址
+        :param eip: EIP地址。
         :type eip: str
         """
         
@@ -59,7 +59,7 @@ class ListInternetRequest:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this ListInternetRequest.
 
-        企业项目ID
+        企业项目ID。
 
         :return: The enterprise_project_id of this ListInternetRequest.
         :rtype: str
@@ -70,7 +70,7 @@ class ListInternetRequest:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this ListInternetRequest.
 
-        企业项目ID
+        企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this ListInternetRequest.
         :type enterprise_project_id: str
@@ -81,7 +81,7 @@ class ListInternetRequest:
     def nat_name(self):
         r"""Gets the nat_name of this ListInternetRequest.
 
-        NAT网关名称
+        NAT网关名称。
 
         :return: The nat_name of this ListInternetRequest.
         :rtype: str
@@ -92,7 +92,7 @@ class ListInternetRequest:
     def nat_name(self, nat_name):
         r"""Sets the nat_name of this ListInternetRequest.
 
-        NAT网关名称
+        NAT网关名称。
 
         :param nat_name: The nat_name of this ListInternetRequest.
         :type nat_name: str
@@ -103,7 +103,7 @@ class ListInternetRequest:
     def eip(self):
         r"""Gets the eip of this ListInternetRequest.
 
-        EIP地址
+        EIP地址。
 
         :return: The eip of this ListInternetRequest.
         :rtype: str
@@ -114,7 +114,7 @@ class ListInternetRequest:
     def eip(self, eip):
         r"""Sets the eip of this ListInternetRequest.
 
-        EIP地址
+        EIP地址。
 
         :param eip: The eip of this ListInternetRequest.
         :type eip: str

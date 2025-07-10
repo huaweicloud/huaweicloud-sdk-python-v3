@@ -29,7 +29,7 @@ class CreateAgenciesReq:
 
         The model defined in huaweicloud sdk
 
-        :param scene: 委托场景。 - WORKSPACE：云桌面。 - CLOUD_GAME：云游戏。
+        :param scene: 委托场景。   - WORKSPACE：云桌面。   - CLOUD_GAME：云游戏。   - CLOUD_STORAGE：云存储。   - SCREEN_RECORD：录屏审计。
         :type scene: str
         """
         
@@ -45,7 +45,7 @@ class CreateAgenciesReq:
     def scene(self):
         r"""Gets the scene of this CreateAgenciesReq.
 
-        委托场景。 - WORKSPACE：云桌面。 - CLOUD_GAME：云游戏。
+        委托场景。   - WORKSPACE：云桌面。   - CLOUD_GAME：云游戏。   - CLOUD_STORAGE：云存储。   - SCREEN_RECORD：录屏审计。
 
         :return: The scene of this CreateAgenciesReq.
         :rtype: str
@@ -56,7 +56,7 @@ class CreateAgenciesReq:
     def scene(self, scene):
         r"""Sets the scene of this CreateAgenciesReq.
 
-        委托场景。 - WORKSPACE：云桌面。 - CLOUD_GAME：云游戏。
+        委托场景。   - WORKSPACE：云桌面。   - CLOUD_GAME：云游戏。   - CLOUD_STORAGE：云存储。   - SCREEN_RECORD：录屏审计。
 
         :param scene: The scene of this CreateAgenciesReq.
         :type scene: str

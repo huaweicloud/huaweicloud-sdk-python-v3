@@ -30,7 +30,7 @@ class BatchDeleteDesktopSnapshotResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param job_id: 任务ID
+        :param job_id: 任务ID。
         :type job_id: str
         """
         
@@ -46,7 +46,7 @@ class BatchDeleteDesktopSnapshotResponse(SdkResponse):
     def job_id(self):
         r"""Gets the job_id of this BatchDeleteDesktopSnapshotResponse.
 
-        任务ID
+        任务ID。
 
         :return: The job_id of this BatchDeleteDesktopSnapshotResponse.
         :rtype: str
@@ -57,7 +57,7 @@ class BatchDeleteDesktopSnapshotResponse(SdkResponse):
     def job_id(self, job_id):
         r"""Sets the job_id of this BatchDeleteDesktopSnapshotResponse.
 
-        任务ID
+        任务ID。
 
         :param job_id: The job_id of this BatchDeleteDesktopSnapshotResponse.
         :type job_id: str

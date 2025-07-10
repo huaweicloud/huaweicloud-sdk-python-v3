@@ -55,33 +55,33 @@ class PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions:
 
         The model defined in huaweicloud sdk
 
-        :param restore_local_directories_enable: 还原本地目录启用
+        :param restore_local_directories_enable: 还原本地目录启用。
         :type restore_local_directories_enable: bool
-        :param app_data_roaming_enale: 应用数据漫游启用
+        :param app_data_roaming_enale: 应用数据漫游启用。
         :type app_data_roaming_enale: bool
-        :param redirec_desktop: 桌面重定向
+        :param redirec_desktop: 桌面重定向。
         :type redirec_desktop: bool
-        :param redirec_start_menu: 开始菜单
+        :param redirec_start_menu: 开始菜单。
         :type redirec_start_menu: bool
-        :param redirec_documents: 文档
+        :param redirec_documents: 文档。
         :type redirec_documents: bool
-        :param redirec_pictures: 照片
+        :param redirec_pictures: 照片。
         :type redirec_pictures: bool
-        :param redirec_music: 音乐
+        :param redirec_music: 音乐。
         :type redirec_music: bool
-        :param redirec_videos: 录音
+        :param redirec_videos: 录音。
         :type redirec_videos: bool
-        :param redirec_favorites: 最爱
+        :param redirec_favorites: 最爱。
         :type redirec_favorites: bool
-        :param redirec_contacts: 录音
+        :param redirec_contacts: 录音。
         :type redirec_contacts: bool
-        :param redirec_downloads: 下载
+        :param redirec_downloads: 下载。
         :type redirec_downloads: bool
-        :param redirec_links: 链接
+        :param redirec_links: 链接。
         :type redirec_links: bool
-        :param redirec_searches: 查找
+        :param redirec_searches: 查找。
         :type redirec_searches: bool
-        :param redirec_saved_games: 游戏存储
+        :param redirec_saved_games: 游戏存储。
         :type redirec_saved_games: bool
         """
         
@@ -136,7 +136,7 @@ class PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions:
     def restore_local_directories_enable(self):
         r"""Gets the restore_local_directories_enable of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
 
-        还原本地目录启用
+        还原本地目录启用。
 
         :return: The restore_local_directories_enable of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
         :rtype: bool
@@ -147,7 +147,7 @@ class PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions:
     def restore_local_directories_enable(self, restore_local_directories_enable):
         r"""Sets the restore_local_directories_enable of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
 
-        还原本地目录启用
+        还原本地目录启用。
 
         :param restore_local_directories_enable: The restore_local_directories_enable of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
         :type restore_local_directories_enable: bool
@@ -158,7 +158,7 @@ class PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions:
     def app_data_roaming_enale(self):
         r"""Gets the app_data_roaming_enale of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
 
-        应用数据漫游启用
+        应用数据漫游启用。
 
         :return: The app_data_roaming_enale of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
         :rtype: bool
@@ -169,7 +169,7 @@ class PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions:
     def app_data_roaming_enale(self, app_data_roaming_enale):
         r"""Sets the app_data_roaming_enale of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
 
-        应用数据漫游启用
+        应用数据漫游启用。
 
         :param app_data_roaming_enale: The app_data_roaming_enale of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
         :type app_data_roaming_enale: bool
@@ -180,7 +180,7 @@ class PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions:
     def redirec_desktop(self):
         r"""Gets the redirec_desktop of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
 
-        桌面重定向
+        桌面重定向。
 
         :return: The redirec_desktop of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
         :rtype: bool
@@ -191,7 +191,7 @@ class PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions:
     def redirec_desktop(self, redirec_desktop):
         r"""Sets the redirec_desktop of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
 
-        桌面重定向
+        桌面重定向。
 
         :param redirec_desktop: The redirec_desktop of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
         :type redirec_desktop: bool
@@ -202,7 +202,7 @@ class PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions:
     def redirec_start_menu(self):
         r"""Gets the redirec_start_menu of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
 
-        开始菜单
+        开始菜单。
 
         :return: The redirec_start_menu of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
         :rtype: bool
@@ -213,7 +213,7 @@ class PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions:
     def redirec_start_menu(self, redirec_start_menu):
         r"""Sets the redirec_start_menu of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
 
-        开始菜单
+        开始菜单。
 
         :param redirec_start_menu: The redirec_start_menu of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
         :type redirec_start_menu: bool
@@ -224,7 +224,7 @@ class PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions:
     def redirec_documents(self):
         r"""Gets the redirec_documents of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
 
-        文档
+        文档。
 
         :return: The redirec_documents of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
         :rtype: bool
@@ -235,7 +235,7 @@ class PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions:
     def redirec_documents(self, redirec_documents):
         r"""Sets the redirec_documents of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
 
-        文档
+        文档。
 
         :param redirec_documents: The redirec_documents of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
         :type redirec_documents: bool
@@ -246,7 +246,7 @@ class PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions:
     def redirec_pictures(self):
         r"""Gets the redirec_pictures of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
 
-        照片
+        照片。
 
         :return: The redirec_pictures of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
         :rtype: bool
@@ -257,7 +257,7 @@ class PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions:
     def redirec_pictures(self, redirec_pictures):
         r"""Sets the redirec_pictures of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
 
-        照片
+        照片。
 
         :param redirec_pictures: The redirec_pictures of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
         :type redirec_pictures: bool
@@ -268,7 +268,7 @@ class PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions:
     def redirec_music(self):
         r"""Gets the redirec_music of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
 
-        音乐
+        音乐。
 
         :return: The redirec_music of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
         :rtype: bool
@@ -279,7 +279,7 @@ class PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions:
     def redirec_music(self, redirec_music):
         r"""Sets the redirec_music of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
 
-        音乐
+        音乐。
 
         :param redirec_music: The redirec_music of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
         :type redirec_music: bool
@@ -290,7 +290,7 @@ class PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions:
     def redirec_videos(self):
         r"""Gets the redirec_videos of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
 
-        录音
+        录音。
 
         :return: The redirec_videos of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
         :rtype: bool
@@ -301,7 +301,7 @@ class PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions:
     def redirec_videos(self, redirec_videos):
         r"""Sets the redirec_videos of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
 
-        录音
+        录音。
 
         :param redirec_videos: The redirec_videos of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
         :type redirec_videos: bool
@@ -312,7 +312,7 @@ class PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions:
     def redirec_favorites(self):
         r"""Gets the redirec_favorites of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
 
-        最爱
+        最爱。
 
         :return: The redirec_favorites of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
         :rtype: bool
@@ -323,7 +323,7 @@ class PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions:
     def redirec_favorites(self, redirec_favorites):
         r"""Sets the redirec_favorites of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
 
-        最爱
+        最爱。
 
         :param redirec_favorites: The redirec_favorites of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
         :type redirec_favorites: bool
@@ -334,7 +334,7 @@ class PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions:
     def redirec_contacts(self):
         r"""Gets the redirec_contacts of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
 
-        录音
+        录音。
 
         :return: The redirec_contacts of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
         :rtype: bool
@@ -345,7 +345,7 @@ class PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions:
     def redirec_contacts(self, redirec_contacts):
         r"""Sets the redirec_contacts of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
 
-        录音
+        录音。
 
         :param redirec_contacts: The redirec_contacts of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
         :type redirec_contacts: bool
@@ -356,7 +356,7 @@ class PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions:
     def redirec_downloads(self):
         r"""Gets the redirec_downloads of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
 
-        下载
+        下载。
 
         :return: The redirec_downloads of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
         :rtype: bool
@@ -367,7 +367,7 @@ class PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions:
     def redirec_downloads(self, redirec_downloads):
         r"""Sets the redirec_downloads of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
 
-        下载
+        下载。
 
         :param redirec_downloads: The redirec_downloads of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
         :type redirec_downloads: bool
@@ -378,7 +378,7 @@ class PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions:
     def redirec_links(self):
         r"""Gets the redirec_links of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
 
-        链接
+        链接。
 
         :return: The redirec_links of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
         :rtype: bool
@@ -389,7 +389,7 @@ class PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions:
     def redirec_links(self, redirec_links):
         r"""Sets the redirec_links of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
 
-        链接
+        链接。
 
         :param redirec_links: The redirec_links of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
         :type redirec_links: bool
@@ -400,7 +400,7 @@ class PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions:
     def redirec_searches(self):
         r"""Gets the redirec_searches of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
 
-        查找
+        查找。
 
         :return: The redirec_searches of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
         :rtype: bool
@@ -411,7 +411,7 @@ class PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions:
     def redirec_searches(self, redirec_searches):
         r"""Sets the redirec_searches of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
 
-        查找
+        查找。
 
         :param redirec_searches: The redirec_searches of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
         :type redirec_searches: bool
@@ -422,7 +422,7 @@ class PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions:
     def redirec_saved_games(self):
         r"""Gets the redirec_saved_games of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
 
-        游戏存储
+        游戏存储。
 
         :return: The redirec_saved_games of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
         :rtype: bool
@@ -433,7 +433,7 @@ class PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions:
     def redirec_saved_games(self, redirec_saved_games):
         r"""Sets the redirec_saved_games of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
 
-        游戏存储
+        游戏存储。
 
         :param redirec_saved_games: The redirec_saved_games of this PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions.
         :type redirec_saved_games: bool

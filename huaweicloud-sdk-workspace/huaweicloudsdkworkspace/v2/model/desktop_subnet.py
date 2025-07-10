@@ -33,11 +33,11 @@ class DesktopSubnet:
 
         The model defined in huaweicloud sdk
 
-        :param id: 桌面所在子网Id
+        :param id: 桌面所在子网Id。
         :type id: str
-        :param name: 桌面所在子网名称
+        :param name: 桌面所在子网名称。
         :type name: str
-        :param cidr: 桌面所在子网网段
+        :param cidr: 桌面所在子网网段。
         :type cidr: str
         """
         
@@ -59,7 +59,7 @@ class DesktopSubnet:
     def id(self):
         r"""Gets the id of this DesktopSubnet.
 
-        桌面所在子网Id
+        桌面所在子网Id。
 
         :return: The id of this DesktopSubnet.
         :rtype: str
@@ -70,7 +70,7 @@ class DesktopSubnet:
     def id(self, id):
         r"""Sets the id of this DesktopSubnet.
 
-        桌面所在子网Id
+        桌面所在子网Id。
 
         :param id: The id of this DesktopSubnet.
         :type id: str
@@ -81,7 +81,7 @@ class DesktopSubnet:
     def name(self):
         r"""Gets the name of this DesktopSubnet.
 
-        桌面所在子网名称
+        桌面所在子网名称。
 
         :return: The name of this DesktopSubnet.
         :rtype: str
@@ -92,7 +92,7 @@ class DesktopSubnet:
     def name(self, name):
         r"""Sets the name of this DesktopSubnet.
 
-        桌面所在子网名称
+        桌面所在子网名称。
 
         :param name: The name of this DesktopSubnet.
         :type name: str
@@ -103,7 +103,7 @@ class DesktopSubnet:
     def cidr(self):
         r"""Gets the cidr of this DesktopSubnet.
 
-        桌面所在子网网段
+        桌面所在子网网段。
 
         :return: The cidr of this DesktopSubnet.
         :rtype: str
@@ -114,7 +114,7 @@ class DesktopSubnet:
     def cidr(self, cidr):
         r"""Sets the cidr of this DesktopSubnet.
 
-        桌面所在子网网段
+        桌面所在子网网段。
 
         :param cidr: The cidr of this DesktopSubnet.
         :type cidr: str

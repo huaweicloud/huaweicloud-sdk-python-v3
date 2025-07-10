@@ -31,7 +31,7 @@ class ListVolumeProductInfoRequest:
 
         The model defined in huaweicloud sdk
 
-        :param availability_zone: 可用分区
+        :param availability_zone: 可用分区。
         :type availability_zone: str
         :param volume_type: 磁盘类型（多个磁盘类型用逗号隔开）： - SATA: 普通IO磁盘 - SAS：高IO磁盘 - SSD：超高IO磁盘
         :type volume_type: str
@@ -52,7 +52,7 @@ class ListVolumeProductInfoRequest:
     def availability_zone(self):
         r"""Gets the availability_zone of this ListVolumeProductInfoRequest.
 
-        可用分区
+        可用分区。
 
         :return: The availability_zone of this ListVolumeProductInfoRequest.
         :rtype: str
@@ -63,7 +63,7 @@ class ListVolumeProductInfoRequest:
     def availability_zone(self, availability_zone):
         r"""Sets the availability_zone of this ListVolumeProductInfoRequest.
 
-        可用分区
+        可用分区。
 
         :param availability_zone: The availability_zone of this ListVolumeProductInfoRequest.
         :type availability_zone: str

@@ -47,7 +47,7 @@ class SimpleProduct:
         :type flavor_id: str
         :param type: 产品类型。  - BASE：表示产品基础套餐，套餐镜像中不包括除操作系统之外的其他商业软件，私有镜像场景只能使用此类套餐。
         :type type: str
-        :param cpu: CPU
+        :param cpu: CPU。
         :type cpu: str
         :param memory: 内存。
         :type memory: str
@@ -153,7 +153,7 @@ class SimpleProduct:
     def cpu(self):
         r"""Gets the cpu of this SimpleProduct.
 
-        CPU
+        CPU。
 
         :return: The cpu of this SimpleProduct.
         :rtype: str
@@ -164,7 +164,7 @@ class SimpleProduct:
     def cpu(self, cpu):
         r"""Sets the cpu of this SimpleProduct.
 
-        CPU
+        CPU。
 
         :param cpu: The cpu of this SimpleProduct.
         :type cpu: str

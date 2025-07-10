@@ -46,23 +46,23 @@ class ShowDesktopRemoteAssistanceInfoResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param share_space_id: 协同空间ID
+        :param share_space_id: 协同空间ID。
         :type share_space_id: str
-        :param invitation_code: 协同空间邀请码(大写英文+数字,共8位)
+        :param invitation_code: 协同空间邀请码(大写英文+数字,共8位)。
         :type invitation_code: str
-        :param share_space_name: 协同空间名称
+        :param share_space_name: 协同空间名称。
         :type share_space_name: str
-        :param share_space_passwd: 协同空间密码
+        :param share_space_passwd: 协同空间密码。
         :type share_space_passwd: str
-        :param private_share_link: 专线分享链接
+        :param private_share_link: 专线分享链接。
         :type private_share_link: str
-        :param internet_share_link: 互联网分享链接
+        :param internet_share_link: 互联网分享链接。
         :type internet_share_link: str
-        :param create_time: 创建时间 UTC时间，格式为：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;。
+        :param create_time: 创建时间 UTC时间，格式为：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z。&#39;
         :type create_time: str
         :param status: 协同空间状态 - OPEN 协同空间已创建 - CLOSE 协同空间已关闭 - WAIT_USER_CONFIRM 等待用户确认进入远程协助 - WAIT_USER_ACCESS 等待用户进入远程协助
         :type status: str
-        :param failed_reason: 失败原因
+        :param failed_reason: 失败原因。
         :type failed_reason: str
         """
         
@@ -102,7 +102,7 @@ class ShowDesktopRemoteAssistanceInfoResponse(SdkResponse):
     def share_space_id(self):
         r"""Gets the share_space_id of this ShowDesktopRemoteAssistanceInfoResponse.
 
-        协同空间ID
+        协同空间ID。
 
         :return: The share_space_id of this ShowDesktopRemoteAssistanceInfoResponse.
         :rtype: str
@@ -113,7 +113,7 @@ class ShowDesktopRemoteAssistanceInfoResponse(SdkResponse):
     def share_space_id(self, share_space_id):
         r"""Sets the share_space_id of this ShowDesktopRemoteAssistanceInfoResponse.
 
-        协同空间ID
+        协同空间ID。
 
         :param share_space_id: The share_space_id of this ShowDesktopRemoteAssistanceInfoResponse.
         :type share_space_id: str
@@ -124,7 +124,7 @@ class ShowDesktopRemoteAssistanceInfoResponse(SdkResponse):
     def invitation_code(self):
         r"""Gets the invitation_code of this ShowDesktopRemoteAssistanceInfoResponse.
 
-        协同空间邀请码(大写英文+数字,共8位)
+        协同空间邀请码(大写英文+数字,共8位)。
 
         :return: The invitation_code of this ShowDesktopRemoteAssistanceInfoResponse.
         :rtype: str
@@ -135,7 +135,7 @@ class ShowDesktopRemoteAssistanceInfoResponse(SdkResponse):
     def invitation_code(self, invitation_code):
         r"""Sets the invitation_code of this ShowDesktopRemoteAssistanceInfoResponse.
 
-        协同空间邀请码(大写英文+数字,共8位)
+        协同空间邀请码(大写英文+数字,共8位)。
 
         :param invitation_code: The invitation_code of this ShowDesktopRemoteAssistanceInfoResponse.
         :type invitation_code: str
@@ -146,7 +146,7 @@ class ShowDesktopRemoteAssistanceInfoResponse(SdkResponse):
     def share_space_name(self):
         r"""Gets the share_space_name of this ShowDesktopRemoteAssistanceInfoResponse.
 
-        协同空间名称
+        协同空间名称。
 
         :return: The share_space_name of this ShowDesktopRemoteAssistanceInfoResponse.
         :rtype: str
@@ -157,7 +157,7 @@ class ShowDesktopRemoteAssistanceInfoResponse(SdkResponse):
     def share_space_name(self, share_space_name):
         r"""Sets the share_space_name of this ShowDesktopRemoteAssistanceInfoResponse.
 
-        协同空间名称
+        协同空间名称。
 
         :param share_space_name: The share_space_name of this ShowDesktopRemoteAssistanceInfoResponse.
         :type share_space_name: str
@@ -168,7 +168,7 @@ class ShowDesktopRemoteAssistanceInfoResponse(SdkResponse):
     def share_space_passwd(self):
         r"""Gets the share_space_passwd of this ShowDesktopRemoteAssistanceInfoResponse.
 
-        协同空间密码
+        协同空间密码。
 
         :return: The share_space_passwd of this ShowDesktopRemoteAssistanceInfoResponse.
         :rtype: str
@@ -179,7 +179,7 @@ class ShowDesktopRemoteAssistanceInfoResponse(SdkResponse):
     def share_space_passwd(self, share_space_passwd):
         r"""Sets the share_space_passwd of this ShowDesktopRemoteAssistanceInfoResponse.
 
-        协同空间密码
+        协同空间密码。
 
         :param share_space_passwd: The share_space_passwd of this ShowDesktopRemoteAssistanceInfoResponse.
         :type share_space_passwd: str
@@ -190,7 +190,7 @@ class ShowDesktopRemoteAssistanceInfoResponse(SdkResponse):
     def private_share_link(self):
         r"""Gets the private_share_link of this ShowDesktopRemoteAssistanceInfoResponse.
 
-        专线分享链接
+        专线分享链接。
 
         :return: The private_share_link of this ShowDesktopRemoteAssistanceInfoResponse.
         :rtype: str
@@ -201,7 +201,7 @@ class ShowDesktopRemoteAssistanceInfoResponse(SdkResponse):
     def private_share_link(self, private_share_link):
         r"""Sets the private_share_link of this ShowDesktopRemoteAssistanceInfoResponse.
 
-        专线分享链接
+        专线分享链接。
 
         :param private_share_link: The private_share_link of this ShowDesktopRemoteAssistanceInfoResponse.
         :type private_share_link: str
@@ -212,7 +212,7 @@ class ShowDesktopRemoteAssistanceInfoResponse(SdkResponse):
     def internet_share_link(self):
         r"""Gets the internet_share_link of this ShowDesktopRemoteAssistanceInfoResponse.
 
-        互联网分享链接
+        互联网分享链接。
 
         :return: The internet_share_link of this ShowDesktopRemoteAssistanceInfoResponse.
         :rtype: str
@@ -223,7 +223,7 @@ class ShowDesktopRemoteAssistanceInfoResponse(SdkResponse):
     def internet_share_link(self, internet_share_link):
         r"""Sets the internet_share_link of this ShowDesktopRemoteAssistanceInfoResponse.
 
-        互联网分享链接
+        互联网分享链接。
 
         :param internet_share_link: The internet_share_link of this ShowDesktopRemoteAssistanceInfoResponse.
         :type internet_share_link: str
@@ -234,7 +234,7 @@ class ShowDesktopRemoteAssistanceInfoResponse(SdkResponse):
     def create_time(self):
         r"""Gets the create_time of this ShowDesktopRemoteAssistanceInfoResponse.
 
-        创建时间 UTC时间，格式为：yyyy-MM-dd'T'HH:mm:ss'Z'。
+        创建时间 UTC时间，格式为：yyyy-MM-dd'T'HH:mm:ss'Z。'
 
         :return: The create_time of this ShowDesktopRemoteAssistanceInfoResponse.
         :rtype: str
@@ -245,7 +245,7 @@ class ShowDesktopRemoteAssistanceInfoResponse(SdkResponse):
     def create_time(self, create_time):
         r"""Sets the create_time of this ShowDesktopRemoteAssistanceInfoResponse.
 
-        创建时间 UTC时间，格式为：yyyy-MM-dd'T'HH:mm:ss'Z'。
+        创建时间 UTC时间，格式为：yyyy-MM-dd'T'HH:mm:ss'Z。'
 
         :param create_time: The create_time of this ShowDesktopRemoteAssistanceInfoResponse.
         :type create_time: str
@@ -278,7 +278,7 @@ class ShowDesktopRemoteAssistanceInfoResponse(SdkResponse):
     def failed_reason(self):
         r"""Gets the failed_reason of this ShowDesktopRemoteAssistanceInfoResponse.
 
-        失败原因
+        失败原因。
 
         :return: The failed_reason of this ShowDesktopRemoteAssistanceInfoResponse.
         :rtype: str
@@ -289,7 +289,7 @@ class ShowDesktopRemoteAssistanceInfoResponse(SdkResponse):
     def failed_reason(self, failed_reason):
         r"""Sets the failed_reason of this ShowDesktopRemoteAssistanceInfoResponse.
 
-        失败原因
+        失败原因。
 
         :param failed_reason: The failed_reason of this ShowDesktopRemoteAssistanceInfoResponse.
         :type failed_reason: str

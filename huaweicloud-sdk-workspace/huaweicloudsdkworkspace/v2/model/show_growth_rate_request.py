@@ -33,11 +33,11 @@ class ShowGrowthRateRequest:
 
         The model defined in huaweicloud sdk
 
-        :param grow_period: 环比周期 | DAY - 天 MONTH - 月
+        :param grow_period: 环比周期 | DAY - 天 MONTH - 月。
         :type grow_period: str
-        :param metric_name: 指标名称
+        :param metric_name: 指标名称。
         :type metric_name: str
-        :param dim: 指标维度 | 目前最大支持3个维度，必须从0开始；维度格式为dim.{i}&#x3D;key,value，key的最大长度32，value的最大长度为256。 单维度：dim.0&#x3D;instance_id,6f3c6f91-4b24-4e1b-b7d1-a94ac1cb011d 多维度：dim.0&#x3D;key,value&amp;dim.1&#x3D;key,value
+        :param dim: 指标维度 | 目前最大支持3个维度，必须从0开始；维度格式为dim.{i}&#x3D;key,value，key的最大长度32，value的最大长度为256。 单维度：dim.0&#x3D;instance_id,6f3c6f91-4b24-4e1b-b7d1-a94ac1cb011d 多维度：dim.0&#x3D;key,value&amp;dim.1&#x3D;key,value。
         :type dim: str
         """
         
@@ -58,7 +58,7 @@ class ShowGrowthRateRequest:
     def grow_period(self):
         r"""Gets the grow_period of this ShowGrowthRateRequest.
 
-        环比周期 | DAY - 天 MONTH - 月
+        环比周期 | DAY - 天 MONTH - 月。
 
         :return: The grow_period of this ShowGrowthRateRequest.
         :rtype: str
@@ -69,7 +69,7 @@ class ShowGrowthRateRequest:
     def grow_period(self, grow_period):
         r"""Sets the grow_period of this ShowGrowthRateRequest.
 
-        环比周期 | DAY - 天 MONTH - 月
+        环比周期 | DAY - 天 MONTH - 月。
 
         :param grow_period: The grow_period of this ShowGrowthRateRequest.
         :type grow_period: str
@@ -80,7 +80,7 @@ class ShowGrowthRateRequest:
     def metric_name(self):
         r"""Gets the metric_name of this ShowGrowthRateRequest.
 
-        指标名称
+        指标名称。
 
         :return: The metric_name of this ShowGrowthRateRequest.
         :rtype: str
@@ -91,7 +91,7 @@ class ShowGrowthRateRequest:
     def metric_name(self, metric_name):
         r"""Sets the metric_name of this ShowGrowthRateRequest.
 
-        指标名称
+        指标名称。
 
         :param metric_name: The metric_name of this ShowGrowthRateRequest.
         :type metric_name: str
@@ -102,7 +102,7 @@ class ShowGrowthRateRequest:
     def dim(self):
         r"""Gets the dim of this ShowGrowthRateRequest.
 
-        指标维度 | 目前最大支持3个维度，必须从0开始；维度格式为dim.{i}=key,value，key的最大长度32，value的最大长度为256。 单维度：dim.0=instance_id,6f3c6f91-4b24-4e1b-b7d1-a94ac1cb011d 多维度：dim.0=key,value&dim.1=key,value
+        指标维度 | 目前最大支持3个维度，必须从0开始；维度格式为dim.{i}=key,value，key的最大长度32，value的最大长度为256。 单维度：dim.0=instance_id,6f3c6f91-4b24-4e1b-b7d1-a94ac1cb011d 多维度：dim.0=key,value&dim.1=key,value。
 
         :return: The dim of this ShowGrowthRateRequest.
         :rtype: str
@@ -113,7 +113,7 @@ class ShowGrowthRateRequest:
     def dim(self, dim):
         r"""Sets the dim of this ShowGrowthRateRequest.
 
-        指标维度 | 目前最大支持3个维度，必须从0开始；维度格式为dim.{i}=key,value，key的最大长度32，value的最大长度为256。 单维度：dim.0=instance_id,6f3c6f91-4b24-4e1b-b7d1-a94ac1cb011d 多维度：dim.0=key,value&dim.1=key,value
+        指标维度 | 目前最大支持3个维度，必须从0开始；维度格式为dim.{i}=key,value，key的最大长度32，value的最大长度为256。 单维度：dim.0=instance_id,6f3c6f91-4b24-4e1b-b7d1-a94ac1cb011d 多维度：dim.0=key,value&dim.1=key,value。
 
         :param dim: The dim of this ShowGrowthRateRequest.
         :type dim: str

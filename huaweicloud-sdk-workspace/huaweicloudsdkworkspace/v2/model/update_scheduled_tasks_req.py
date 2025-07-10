@@ -99,11 +99,11 @@ class UpdateScheduledTasksReq:
         :type time_zone: str
         :param task_name: 任务名称。
         :type task_name: str
-        :param force_execute: 是否强制执行
+        :param force_execute: 是否强制执行。
         :type force_execute: bool
         :param description: 描述。
         :type description: str
-        :param enable: 是否启用
+        :param enable: 是否启用。
         :type enable: bool
         :param extra_params: 扩展参数，json格式。
         :type extra_params: str
@@ -500,7 +500,7 @@ class UpdateScheduledTasksReq:
     def force_execute(self):
         r"""Gets the force_execute of this UpdateScheduledTasksReq.
 
-        是否强制执行
+        是否强制执行。
 
         :return: The force_execute of this UpdateScheduledTasksReq.
         :rtype: bool
@@ -511,7 +511,7 @@ class UpdateScheduledTasksReq:
     def force_execute(self, force_execute):
         r"""Sets the force_execute of this UpdateScheduledTasksReq.
 
-        是否强制执行
+        是否强制执行。
 
         :param force_execute: The force_execute of this UpdateScheduledTasksReq.
         :type force_execute: bool
@@ -544,7 +544,7 @@ class UpdateScheduledTasksReq:
     def enable(self):
         r"""Gets the enable of this UpdateScheduledTasksReq.
 
-        是否启用
+        是否启用。
 
         :return: The enable of this UpdateScheduledTasksReq.
         :rtype: bool
@@ -555,7 +555,7 @@ class UpdateScheduledTasksReq:
     def enable(self, enable):
         r"""Sets the enable of this UpdateScheduledTasksReq.
 
-        是否启用
+        是否启用。
 
         :param enable: The enable of this UpdateScheduledTasksReq.
         :type enable: bool

@@ -30,7 +30,7 @@ class AddOuResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param id: 创建OU的id
+        :param id: 创建OU的id。
         :type id: str
         """
         
@@ -46,7 +46,7 @@ class AddOuResponse(SdkResponse):
     def id(self):
         r"""Gets the id of this AddOuResponse.
 
-        创建OU的id
+        创建OU的id。
 
         :return: The id of this AddOuResponse.
         :rtype: str
@@ -57,7 +57,7 @@ class AddOuResponse(SdkResponse):
     def id(self, id):
         r"""Sets the id of this AddOuResponse.
 
-        创建OU的id
+        创建OU的id。
 
         :param id: The id of this AddOuResponse.
         :type id: str

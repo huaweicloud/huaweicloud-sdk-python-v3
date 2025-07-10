@@ -33,11 +33,11 @@ class AddDesktopSubResourcesReq:
 
         The model defined in huaweicloud sdk
 
-        :param sub_resource_sku: 桌面协同资源SKU码
+        :param sub_resource_sku: 桌面协同资源SKU码。
         :type sub_resource_sku: str
-        :param order_id: 订单ID
+        :param order_id: 订单ID。
         :type order_id: str
-        :param desktop_ids: 桌面ID列表
+        :param desktop_ids: 桌面ID列表。
         :type desktop_ids: list[str]
         """
         
@@ -57,7 +57,7 @@ class AddDesktopSubResourcesReq:
     def sub_resource_sku(self):
         r"""Gets the sub_resource_sku of this AddDesktopSubResourcesReq.
 
-        桌面协同资源SKU码
+        桌面协同资源SKU码。
 
         :return: The sub_resource_sku of this AddDesktopSubResourcesReq.
         :rtype: str
@@ -68,7 +68,7 @@ class AddDesktopSubResourcesReq:
     def sub_resource_sku(self, sub_resource_sku):
         r"""Sets the sub_resource_sku of this AddDesktopSubResourcesReq.
 
-        桌面协同资源SKU码
+        桌面协同资源SKU码。
 
         :param sub_resource_sku: The sub_resource_sku of this AddDesktopSubResourcesReq.
         :type sub_resource_sku: str
@@ -79,7 +79,7 @@ class AddDesktopSubResourcesReq:
     def order_id(self):
         r"""Gets the order_id of this AddDesktopSubResourcesReq.
 
-        订单ID
+        订单ID。
 
         :return: The order_id of this AddDesktopSubResourcesReq.
         :rtype: str
@@ -90,7 +90,7 @@ class AddDesktopSubResourcesReq:
     def order_id(self, order_id):
         r"""Sets the order_id of this AddDesktopSubResourcesReq.
 
-        订单ID
+        订单ID。
 
         :param order_id: The order_id of this AddDesktopSubResourcesReq.
         :type order_id: str
@@ -101,7 +101,7 @@ class AddDesktopSubResourcesReq:
     def desktop_ids(self):
         r"""Gets the desktop_ids of this AddDesktopSubResourcesReq.
 
-        桌面ID列表
+        桌面ID列表。
 
         :return: The desktop_ids of this AddDesktopSubResourcesReq.
         :rtype: list[str]
@@ -112,7 +112,7 @@ class AddDesktopSubResourcesReq:
     def desktop_ids(self, desktop_ids):
         r"""Sets the desktop_ids of this AddDesktopSubResourcesReq.
 
-        桌面ID列表
+        桌面ID列表。
 
         :param desktop_ids: The desktop_ids of this AddDesktopSubResourcesReq.
         :type desktop_ids: list[str]

@@ -30,7 +30,7 @@ class CreateDesktopBatchOrderResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param orders: 批量生成订单结果
+        :param orders: 批量生成订单结果。
         :type orders: list[:class:`huaweicloudsdkworkspace.v2.OrderV5`]
         """
         
@@ -46,7 +46,7 @@ class CreateDesktopBatchOrderResponse(SdkResponse):
     def orders(self):
         r"""Gets the orders of this CreateDesktopBatchOrderResponse.
 
-        批量生成订单结果
+        批量生成订单结果。
 
         :return: The orders of this CreateDesktopBatchOrderResponse.
         :rtype: list[:class:`huaweicloudsdkworkspace.v2.OrderV5`]
@@ -57,7 +57,7 @@ class CreateDesktopBatchOrderResponse(SdkResponse):
     def orders(self, orders):
         r"""Sets the orders of this CreateDesktopBatchOrderResponse.
 
-        批量生成订单结果
+        批量生成订单结果。
 
         :param orders: The orders of this CreateDesktopBatchOrderResponse.
         :type orders: list[:class:`huaweicloudsdkworkspace.v2.OrderV5`]

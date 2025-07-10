@@ -22,8 +22,6 @@ class PolicyGroupForList:
         'priority': 'int',
         'update_time': 'str',
         'description': 'str',
-        'scope_flag': 'int',
-        'tenant_id': 'str',
         'policies': 'Policies',
         'targets': 'list[Target]'
     }
@@ -34,13 +32,11 @@ class PolicyGroupForList:
         'priority': 'priority',
         'update_time': 'update_time',
         'description': 'description',
-        'scope_flag': 'scope_flag',
-        'tenant_id': 'tenant_id',
         'policies': 'policies',
         'targets': 'targets'
     }
 
-    def __init__(self, policy_group_id=None, policy_group_name=None, priority=None, update_time=None, description=None, scope_flag=None, tenant_id=None, policies=None, targets=None):
+    def __init__(self, policy_group_id=None, policy_group_name=None, priority=None, update_time=None, description=None, policies=None, targets=None):
         r"""PolicyGroupForList
 
         The model defined in huaweicloud sdk
@@ -55,10 +51,6 @@ class PolicyGroupForList:
         :type update_time: str
         :param description: 策略组描述。
         :type description: str
-        :param scope_flag: 策略来源。
-        :type scope_flag: int
-        :param tenant_id: 租户ID。
-        :type tenant_id: str
         :param policies: 
         :type policies: :class:`huaweicloudsdkworkspace.v2.Policies`
         :param targets: 应用对象列表。
@@ -72,8 +64,6 @@ class PolicyGroupForList:
         self._priority = None
         self._update_time = None
         self._description = None
-        self._scope_flag = None
-        self._tenant_id = None
         self._policies = None
         self._targets = None
         self.discriminator = None
@@ -88,10 +78,6 @@ class PolicyGroupForList:
             self.update_time = update_time
         if description is not None:
             self.description = description
-        if scope_flag is not None:
-            self.scope_flag = scope_flag
-        if tenant_id is not None:
-            self.tenant_id = tenant_id
         if policies is not None:
             self.policies = policies
         if targets is not None:
@@ -206,50 +192,6 @@ class PolicyGroupForList:
         :type description: str
         """
         self._description = description
-
-    @property
-    def scope_flag(self):
-        r"""Gets the scope_flag of this PolicyGroupForList.
-
-        策略来源。
-
-        :return: The scope_flag of this PolicyGroupForList.
-        :rtype: int
-        """
-        return self._scope_flag
-
-    @scope_flag.setter
-    def scope_flag(self, scope_flag):
-        r"""Sets the scope_flag of this PolicyGroupForList.
-
-        策略来源。
-
-        :param scope_flag: The scope_flag of this PolicyGroupForList.
-        :type scope_flag: int
-        """
-        self._scope_flag = scope_flag
-
-    @property
-    def tenant_id(self):
-        r"""Gets the tenant_id of this PolicyGroupForList.
-
-        租户ID。
-
-        :return: The tenant_id of this PolicyGroupForList.
-        :rtype: str
-        """
-        return self._tenant_id
-
-    @tenant_id.setter
-    def tenant_id(self, tenant_id):
-        r"""Sets the tenant_id of this PolicyGroupForList.
-
-        租户ID。
-
-        :param tenant_id: The tenant_id of this PolicyGroupForList.
-        :type tenant_id: str
-        """
-        self._tenant_id = tenant_id
 
     @property
     def policies(self):

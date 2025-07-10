@@ -22,6 +22,7 @@ class UserInGroup:
         'user_email': 'str',
         'user_phone': 'str',
         'total_desktops': 'int',
+        'enterprise_project_id': 'str',
         'description': 'str'
     }
 
@@ -31,10 +32,11 @@ class UserInGroup:
         'user_email': 'user_email',
         'user_phone': 'user_phone',
         'total_desktops': 'total_desktops',
+        'enterprise_project_id': 'enterprise_project_id',
         'description': 'description'
     }
 
-    def __init__(self, id=None, user_name=None, user_email=None, user_phone=None, total_desktops=None, description=None):
+    def __init__(self, id=None, user_name=None, user_email=None, user_phone=None, total_desktops=None, enterprise_project_id=None, description=None):
         r"""UserInGroup
 
         The model defined in huaweicloud sdk
@@ -49,6 +51,8 @@ class UserInGroup:
         :type user_phone: str
         :param total_desktops: 用户桌面数。
         :type total_desktops: int
+        :param enterprise_project_id: 企业项ID。
+        :type enterprise_project_id: str
         :param description: 用户描述。
         :type description: str
         """
@@ -60,6 +64,7 @@ class UserInGroup:
         self._user_email = None
         self._user_phone = None
         self._total_desktops = None
+        self._enterprise_project_id = None
         self._description = None
         self.discriminator = None
 
@@ -73,6 +78,8 @@ class UserInGroup:
             self.user_phone = user_phone
         if total_desktops is not None:
             self.total_desktops = total_desktops
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
         if description is not None:
             self.description = description
 
@@ -185,6 +192,28 @@ class UserInGroup:
         :type total_desktops: int
         """
         self._total_desktops = total_desktops
+
+    @property
+    def enterprise_project_id(self):
+        r"""Gets the enterprise_project_id of this UserInGroup.
+
+        企业项ID。
+
+        :return: The enterprise_project_id of this UserInGroup.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        r"""Sets the enterprise_project_id of this UserInGroup.
+
+        企业项ID。
+
+        :param enterprise_project_id: The enterprise_project_id of this UserInGroup.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     @property
     def description(self):

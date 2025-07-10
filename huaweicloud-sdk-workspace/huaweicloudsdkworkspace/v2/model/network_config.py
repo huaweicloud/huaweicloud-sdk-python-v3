@@ -39,15 +39,15 @@ class NetworkConfig:
 
         The model defined in huaweicloud sdk
 
-        :param vpc_id: VPC ID
+        :param vpc_id: VPC ID。
         :type vpc_id: str
-        :param vpc_name: VPC名称
+        :param vpc_name: VPC名称。
         :type vpc_name: str
-        :param subnet_ids: 业务子网，可以指定返回的网络ID订购桌面
+        :param subnet_ids: 业务子网，可以指定返回的网络ID订购桌面。
         :type subnet_ids: list[str]
-        :param management_subnet_cidr: 后端管理组件占用的子网网段
+        :param management_subnet_cidr: 后端管理组件占用的子网网段。
         :type management_subnet_cidr: str
-        :param management_node_subnet_id: subnet_ids所返回的业务子网中,被管理节点所占用的子网id
+        :param management_node_subnet_id: subnet_ids所返回的业务子网中,被管理节点所占用的子网id。
         :type management_node_subnet_id: str
         :param vpc_config_infos: VPC配置信息列表。
         :type vpc_config_infos: list[:class:`huaweicloudsdkworkspace.v2.VpcConfigInfo`]
@@ -80,7 +80,7 @@ class NetworkConfig:
     def vpc_id(self):
         r"""Gets the vpc_id of this NetworkConfig.
 
-        VPC ID
+        VPC ID。
 
         :return: The vpc_id of this NetworkConfig.
         :rtype: str
@@ -91,7 +91,7 @@ class NetworkConfig:
     def vpc_id(self, vpc_id):
         r"""Sets the vpc_id of this NetworkConfig.
 
-        VPC ID
+        VPC ID。
 
         :param vpc_id: The vpc_id of this NetworkConfig.
         :type vpc_id: str
@@ -102,7 +102,7 @@ class NetworkConfig:
     def vpc_name(self):
         r"""Gets the vpc_name of this NetworkConfig.
 
-        VPC名称
+        VPC名称。
 
         :return: The vpc_name of this NetworkConfig.
         :rtype: str
@@ -113,7 +113,7 @@ class NetworkConfig:
     def vpc_name(self, vpc_name):
         r"""Sets the vpc_name of this NetworkConfig.
 
-        VPC名称
+        VPC名称。
 
         :param vpc_name: The vpc_name of this NetworkConfig.
         :type vpc_name: str
@@ -124,7 +124,7 @@ class NetworkConfig:
     def subnet_ids(self):
         r"""Gets the subnet_ids of this NetworkConfig.
 
-        业务子网，可以指定返回的网络ID订购桌面
+        业务子网，可以指定返回的网络ID订购桌面。
 
         :return: The subnet_ids of this NetworkConfig.
         :rtype: list[str]
@@ -135,7 +135,7 @@ class NetworkConfig:
     def subnet_ids(self, subnet_ids):
         r"""Sets the subnet_ids of this NetworkConfig.
 
-        业务子网，可以指定返回的网络ID订购桌面
+        业务子网，可以指定返回的网络ID订购桌面。
 
         :param subnet_ids: The subnet_ids of this NetworkConfig.
         :type subnet_ids: list[str]
@@ -146,7 +146,7 @@ class NetworkConfig:
     def management_subnet_cidr(self):
         r"""Gets the management_subnet_cidr of this NetworkConfig.
 
-        后端管理组件占用的子网网段
+        后端管理组件占用的子网网段。
 
         :return: The management_subnet_cidr of this NetworkConfig.
         :rtype: str
@@ -157,7 +157,7 @@ class NetworkConfig:
     def management_subnet_cidr(self, management_subnet_cidr):
         r"""Sets the management_subnet_cidr of this NetworkConfig.
 
-        后端管理组件占用的子网网段
+        后端管理组件占用的子网网段。
 
         :param management_subnet_cidr: The management_subnet_cidr of this NetworkConfig.
         :type management_subnet_cidr: str
@@ -168,7 +168,7 @@ class NetworkConfig:
     def management_node_subnet_id(self):
         r"""Gets the management_node_subnet_id of this NetworkConfig.
 
-        subnet_ids所返回的业务子网中,被管理节点所占用的子网id
+        subnet_ids所返回的业务子网中,被管理节点所占用的子网id。
 
         :return: The management_node_subnet_id of this NetworkConfig.
         :rtype: str
@@ -179,7 +179,7 @@ class NetworkConfig:
     def management_node_subnet_id(self, management_node_subnet_id):
         r"""Sets the management_node_subnet_id of this NetworkConfig.
 
-        subnet_ids所返回的业务子网中,被管理节点所占用的子网id
+        subnet_ids所返回的业务子网中,被管理节点所占用的子网id。
 
         :param management_node_subnet_id: The management_node_subnet_id of this NetworkConfig.
         :type management_node_subnet_id: str

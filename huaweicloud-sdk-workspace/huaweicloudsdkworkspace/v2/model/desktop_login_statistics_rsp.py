@@ -18,7 +18,6 @@ class DesktopLoginStatisticsRsp:
 
     openapi_types = {
         'in_use_num': 'int',
-        'stop_num': 'int',
         'unregistered_num': 'int',
         'unable_to_connect_num': 'int',
         'ready_num': 'int',
@@ -27,22 +26,19 @@ class DesktopLoginStatisticsRsp:
 
     attribute_map = {
         'in_use_num': 'in_use_num',
-        'stop_num': 'stop_num',
         'unregistered_num': 'unregistered_num',
         'unable_to_connect_num': 'unable_to_connect_num',
         'ready_num': 'ready_num',
         'disconnected_num': 'disconnected_num'
     }
 
-    def __init__(self, in_use_num=None, stop_num=None, unregistered_num=None, unable_to_connect_num=None, ready_num=None, disconnected_num=None):
+    def __init__(self, in_use_num=None, unregistered_num=None, unable_to_connect_num=None, ready_num=None, disconnected_num=None):
         r"""DesktopLoginStatisticsRsp
 
         The model defined in huaweicloud sdk
 
         :param in_use_num: 使用中。
         :type in_use_num: int
-        :param stop_num: 关机数目(关机中、已关机)。
-        :type stop_num: int
         :param unregistered_num: 未注册数目。
         :type unregistered_num: int
         :param unable_to_connect_num: 未注册数目。
@@ -56,7 +52,6 @@ class DesktopLoginStatisticsRsp:
         
 
         self._in_use_num = None
-        self._stop_num = None
         self._unregistered_num = None
         self._unable_to_connect_num = None
         self._ready_num = None
@@ -64,7 +59,6 @@ class DesktopLoginStatisticsRsp:
         self.discriminator = None
 
         self.in_use_num = in_use_num
-        self.stop_num = stop_num
         self.unregistered_num = unregistered_num
         if unable_to_connect_num is not None:
             self.unable_to_connect_num = unable_to_connect_num
@@ -92,28 +86,6 @@ class DesktopLoginStatisticsRsp:
         :type in_use_num: int
         """
         self._in_use_num = in_use_num
-
-    @property
-    def stop_num(self):
-        r"""Gets the stop_num of this DesktopLoginStatisticsRsp.
-
-        关机数目(关机中、已关机)。
-
-        :return: The stop_num of this DesktopLoginStatisticsRsp.
-        :rtype: int
-        """
-        return self._stop_num
-
-    @stop_num.setter
-    def stop_num(self, stop_num):
-        r"""Sets the stop_num of this DesktopLoginStatisticsRsp.
-
-        关机数目(关机中、已关机)。
-
-        :param stop_num: The stop_num of this DesktopLoginStatisticsRsp.
-        :type stop_num: int
-        """
-        self._stop_num = stop_num
 
     @property
     def unregistered_num(self):

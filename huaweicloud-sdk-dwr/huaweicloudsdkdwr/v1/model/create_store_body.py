@@ -39,17 +39,17 @@ class CreateStoreBody:
 
         The model defined in huaweicloud sdk
 
-        :param store_name: 知识仓实例名称，全域唯一。  长度范围为3到63个字符，支持小写字母、数字、中划线（-），第一个字符只能够是小写字母，中划线(-)不得出现在字符串末尾。
+        :param store_name: **参数解释：** 知识仓实例名称，region内唯一。 **约束限制：** 长度范围为3到63个字符，支持小写字母、数字、中划线（-），第一个字符只能够是小写字母，中划线(-)不得出现在字符串末尾。 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type store_name: str
-        :param region: 区域ID，根据上线的region决定。
+        :param region: **参数解释：** 区域ID。 **约束限制**： 不涉及。 **取值范围：** 取值：非空，请参见地区和终端节点。 **默认取值:** 无
         :type region: str
-        :param availability_zones: 可用区ID。
+        :param availability_zones: **参数解释：** 可用区ID列表，支持1个，或者多个。 **约束限制：** 不涉及。
         :type availability_zones: list[str]
         :param flavor: 
         :type flavor: :class:`huaweicloudsdkdwr.v1.Flavor`
         :param charge_info: 
         :type charge_info: :class:`huaweicloudsdkdwr.v1.ChargeInfo`
-        :param description: 知识仓实例描述信息。有效长度0-255   服务实例描述信息。有效长度0-255
+        :param description: **参数解释：** 知识仓实例描述信息。 **约束限制：** 有效长度0-255  **取值范围：** 不涉及。 **默认取值:** 不涉及。
         :type description: str
         """
         
@@ -76,7 +76,7 @@ class CreateStoreBody:
     def store_name(self):
         r"""Gets the store_name of this CreateStoreBody.
 
-        知识仓实例名称，全域唯一。  长度范围为3到63个字符，支持小写字母、数字、中划线（-），第一个字符只能够是小写字母，中划线(-)不得出现在字符串末尾。
+        **参数解释：** 知识仓实例名称，region内唯一。 **约束限制：** 长度范围为3到63个字符，支持小写字母、数字、中划线（-），第一个字符只能够是小写字母，中划线(-)不得出现在字符串末尾。 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The store_name of this CreateStoreBody.
         :rtype: str
@@ -87,7 +87,7 @@ class CreateStoreBody:
     def store_name(self, store_name):
         r"""Sets the store_name of this CreateStoreBody.
 
-        知识仓实例名称，全域唯一。  长度范围为3到63个字符，支持小写字母、数字、中划线（-），第一个字符只能够是小写字母，中划线(-)不得出现在字符串末尾。
+        **参数解释：** 知识仓实例名称，region内唯一。 **约束限制：** 长度范围为3到63个字符，支持小写字母、数字、中划线（-），第一个字符只能够是小写字母，中划线(-)不得出现在字符串末尾。 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param store_name: The store_name of this CreateStoreBody.
         :type store_name: str
@@ -98,7 +98,7 @@ class CreateStoreBody:
     def region(self):
         r"""Gets the region of this CreateStoreBody.
 
-        区域ID，根据上线的region决定。
+        **参数解释：** 区域ID。 **约束限制**： 不涉及。 **取值范围：** 取值：非空，请参见地区和终端节点。 **默认取值:** 无
 
         :return: The region of this CreateStoreBody.
         :rtype: str
@@ -109,7 +109,7 @@ class CreateStoreBody:
     def region(self, region):
         r"""Sets the region of this CreateStoreBody.
 
-        区域ID，根据上线的region决定。
+        **参数解释：** 区域ID。 **约束限制**： 不涉及。 **取值范围：** 取值：非空，请参见地区和终端节点。 **默认取值:** 无
 
         :param region: The region of this CreateStoreBody.
         :type region: str
@@ -120,7 +120,7 @@ class CreateStoreBody:
     def availability_zones(self):
         r"""Gets the availability_zones of this CreateStoreBody.
 
-        可用区ID。
+        **参数解释：** 可用区ID列表，支持1个，或者多个。 **约束限制：** 不涉及。
 
         :return: The availability_zones of this CreateStoreBody.
         :rtype: list[str]
@@ -131,7 +131,7 @@ class CreateStoreBody:
     def availability_zones(self, availability_zones):
         r"""Sets the availability_zones of this CreateStoreBody.
 
-        可用区ID。
+        **参数解释：** 可用区ID列表，支持1个，或者多个。 **约束限制：** 不涉及。
 
         :param availability_zones: The availability_zones of this CreateStoreBody.
         :type availability_zones: list[str]
@@ -178,7 +178,7 @@ class CreateStoreBody:
     def description(self):
         r"""Gets the description of this CreateStoreBody.
 
-        知识仓实例描述信息。有效长度0-255   服务实例描述信息。有效长度0-255
+        **参数解释：** 知识仓实例描述信息。 **约束限制：** 有效长度0-255  **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :return: The description of this CreateStoreBody.
         :rtype: str
@@ -189,7 +189,7 @@ class CreateStoreBody:
     def description(self, description):
         r"""Sets the description of this CreateStoreBody.
 
-        知识仓实例描述信息。有效长度0-255   服务实例描述信息。有效长度0-255
+        **参数解释：** 知识仓实例描述信息。 **约束限制：** 有效长度0-255  **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :param description: The description of this CreateStoreBody.
         :type description: str

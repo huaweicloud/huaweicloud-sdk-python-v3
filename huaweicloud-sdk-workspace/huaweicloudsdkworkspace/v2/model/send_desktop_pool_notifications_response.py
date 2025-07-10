@@ -30,7 +30,7 @@ class SendDesktopPoolNotificationsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param job_id: 发送桌面消息任务id
+        :param job_id: 发送桌面消息任务id。
         :type job_id: str
         """
         
@@ -46,7 +46,7 @@ class SendDesktopPoolNotificationsResponse(SdkResponse):
     def job_id(self):
         r"""Gets the job_id of this SendDesktopPoolNotificationsResponse.
 
-        发送桌面消息任务id
+        发送桌面消息任务id。
 
         :return: The job_id of this SendDesktopPoolNotificationsResponse.
         :rtype: str
@@ -57,7 +57,7 @@ class SendDesktopPoolNotificationsResponse(SdkResponse):
     def job_id(self, job_id):
         r"""Sets the job_id of this SendDesktopPoolNotificationsResponse.
 
-        发送桌面消息任务id
+        发送桌面消息任务id。
 
         :param job_id: The job_id of this SendDesktopPoolNotificationsResponse.
         :type job_id: str

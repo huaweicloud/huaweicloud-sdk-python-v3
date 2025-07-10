@@ -55,7 +55,7 @@ class PoliciesKeyboardMouse:
         :type mouse_simulation_mode: str
         :param external_cursor_feedback: 虚拟机外部光标反馈。取值为： false：表示关闭。 true：表示开启。
         :type external_cursor_feedback: bool
-        :param selfhelp_console_enable: 自助维护台抢占登陆。取值为： false：表示关闭。 true：表示开启。
+        :param selfhelp_console_enable: 自助维护台抢占登录。取值为： false：表示关闭。 true：表示开启。
         :type selfhelp_console_enable: bool
         :param client_mouse_send_interval: 客户端鼠标发送间隔。取值范围为[1-30]。默认：30。
         :type client_mouse_send_interval: int
@@ -181,7 +181,7 @@ class PoliciesKeyboardMouse:
     def selfhelp_console_enable(self):
         r"""Gets the selfhelp_console_enable of this PoliciesKeyboardMouse.
 
-        自助维护台抢占登陆。取值为： false：表示关闭。 true：表示开启。
+        自助维护台抢占登录。取值为： false：表示关闭。 true：表示开启。
 
         :return: The selfhelp_console_enable of this PoliciesKeyboardMouse.
         :rtype: bool
@@ -192,7 +192,7 @@ class PoliciesKeyboardMouse:
     def selfhelp_console_enable(self, selfhelp_console_enable):
         r"""Sets the selfhelp_console_enable of this PoliciesKeyboardMouse.
 
-        自助维护台抢占登陆。取值为： false：表示关闭。 true：表示开启。
+        自助维护台抢占登录。取值为： false：表示关闭。 true：表示开启。
 
         :param selfhelp_console_enable: The selfhelp_console_enable of this PoliciesKeyboardMouse.
         :type selfhelp_console_enable: bool

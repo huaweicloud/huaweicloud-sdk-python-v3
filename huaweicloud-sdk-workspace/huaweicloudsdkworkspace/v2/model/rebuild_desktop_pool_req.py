@@ -51,7 +51,7 @@ class RebuildDesktopPoolReq:
         :type delay_time: int
         :param message: 下发重建系统盘任务时，给用户发送的提示信息。
         :type message: str
-        :param order_id: 订单ID，包周期桌面重建系统盘，涉及收费镜像时需传
+        :param order_id: 订单ID，包周期桌面重建系统盘，涉及收费镜像时需传。
         :type order_id: str
         :param is_fix: 是否是修复行为，修复行为只修复镜像ID与桌面池镜像ID不一致的桌面，用于桌面池切换镜像失败场景的修复。
         :type is_fix: bool
@@ -196,7 +196,7 @@ class RebuildDesktopPoolReq:
     def order_id(self):
         r"""Gets the order_id of this RebuildDesktopPoolReq.
 
-        订单ID，包周期桌面重建系统盘，涉及收费镜像时需传
+        订单ID，包周期桌面重建系统盘，涉及收费镜像时需传。
 
         :return: The order_id of this RebuildDesktopPoolReq.
         :rtype: str
@@ -207,7 +207,7 @@ class RebuildDesktopPoolReq:
     def order_id(self, order_id):
         r"""Sets the order_id of this RebuildDesktopPoolReq.
 
-        订单ID，包周期桌面重建系统盘，涉及收费镜像时需传
+        订单ID，包周期桌面重建系统盘，涉及收费镜像时需传。
 
         :param order_id: The order_id of this RebuildDesktopPoolReq.
         :type order_id: str

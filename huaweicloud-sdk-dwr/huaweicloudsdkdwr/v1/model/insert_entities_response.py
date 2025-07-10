@@ -20,7 +20,7 @@ class InsertEntitiesResponse(SdkResponse):
     openapi_types = {
         'code': 'str',
         'message': 'str',
-        'data': 'InsertEntitiesResponseData'
+        'data': 'InsertEntitiesData'
     }
 
     attribute_map = {
@@ -34,12 +34,12 @@ class InsertEntitiesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param code: 返回码
+        :param code: **参数解释：** 返回码。参见错误码章节。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
         :type code: str
-        :param message: 描述信息
+        :param message: **参数解释：** 描述信息 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
         :type message: str
         :param data: 
-        :type data: :class:`huaweicloudsdkdwr.v1.InsertEntitiesResponseData`
+        :type data: :class:`huaweicloudsdkdwr.v1.InsertEntitiesData`
         """
         
         super(InsertEntitiesResponse, self).__init__()
@@ -60,7 +60,7 @@ class InsertEntitiesResponse(SdkResponse):
     def code(self):
         r"""Gets the code of this InsertEntitiesResponse.
 
-        返回码
+        **参数解释：** 返回码。参见错误码章节。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :return: The code of this InsertEntitiesResponse.
         :rtype: str
@@ -71,7 +71,7 @@ class InsertEntitiesResponse(SdkResponse):
     def code(self, code):
         r"""Sets the code of this InsertEntitiesResponse.
 
-        返回码
+        **参数解释：** 返回码。参见错误码章节。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :param code: The code of this InsertEntitiesResponse.
         :type code: str
@@ -82,7 +82,7 @@ class InsertEntitiesResponse(SdkResponse):
     def message(self):
         r"""Gets the message of this InsertEntitiesResponse.
 
-        描述信息
+        **参数解释：** 描述信息 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :return: The message of this InsertEntitiesResponse.
         :rtype: str
@@ -93,7 +93,7 @@ class InsertEntitiesResponse(SdkResponse):
     def message(self, message):
         r"""Sets the message of this InsertEntitiesResponse.
 
-        描述信息
+        **参数解释：** 描述信息 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :param message: The message of this InsertEntitiesResponse.
         :type message: str
@@ -105,7 +105,7 @@ class InsertEntitiesResponse(SdkResponse):
         r"""Gets the data of this InsertEntitiesResponse.
 
         :return: The data of this InsertEntitiesResponse.
-        :rtype: :class:`huaweicloudsdkdwr.v1.InsertEntitiesResponseData`
+        :rtype: :class:`huaweicloudsdkdwr.v1.InsertEntitiesData`
         """
         return self._data
 
@@ -114,7 +114,7 @@ class InsertEntitiesResponse(SdkResponse):
         r"""Sets the data of this InsertEntitiesResponse.
 
         :param data: The data of this InsertEntitiesResponse.
-        :type data: :class:`huaweicloudsdkdwr.v1.InsertEntitiesResponseData`
+        :type data: :class:`huaweicloudsdkdwr.v1.InsertEntitiesData`
         """
         self._data = data
 

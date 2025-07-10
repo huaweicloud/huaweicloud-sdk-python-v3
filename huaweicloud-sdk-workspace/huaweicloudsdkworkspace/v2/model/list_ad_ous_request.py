@@ -31,9 +31,9 @@ class ListAdOusRequest:
 
         The model defined in huaweicloud sdk
 
-        :param limit: 用于分页查询，返回桌面数量限制。如果不指定，则返回所有符合条件的桌面
+        :param limit: 用于分页查询，返回桌面数量限制。如果不指定，则返回所有符合条件的桌面。
         :type limit: int
-        :param offset: 用于分页查询，查询的起始记录序号，从0开始
+        :param offset: 用于分页查询，查询的起始记录序号，从0开始。
         :type offset: int
         """
         
@@ -52,7 +52,7 @@ class ListAdOusRequest:
     def limit(self):
         r"""Gets the limit of this ListAdOusRequest.
 
-        用于分页查询，返回桌面数量限制。如果不指定，则返回所有符合条件的桌面
+        用于分页查询，返回桌面数量限制。如果不指定，则返回所有符合条件的桌面。
 
         :return: The limit of this ListAdOusRequest.
         :rtype: int
@@ -63,7 +63,7 @@ class ListAdOusRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListAdOusRequest.
 
-        用于分页查询，返回桌面数量限制。如果不指定，则返回所有符合条件的桌面
+        用于分页查询，返回桌面数量限制。如果不指定，则返回所有符合条件的桌面。
 
         :param limit: The limit of this ListAdOusRequest.
         :type limit: int
@@ -74,7 +74,7 @@ class ListAdOusRequest:
     def offset(self):
         r"""Gets the offset of this ListAdOusRequest.
 
-        用于分页查询，查询的起始记录序号，从0开始
+        用于分页查询，查询的起始记录序号，从0开始。
 
         :return: The offset of this ListAdOusRequest.
         :rtype: int
@@ -85,7 +85,7 @@ class ListAdOusRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListAdOusRequest.
 
-        用于分页查询，查询的起始记录序号，从0开始
+        用于分页查询，查询的起始记录序号，从0开始。
 
         :param offset: The offset of this ListAdOusRequest.
         :type offset: int

@@ -35,13 +35,13 @@ class CouponUnsubscribeResult:
 
         The model defined in huaweicloud sdk
 
-        :param coupon_id: 券ID
+        :param coupon_id: 券ID。
         :type coupon_id: str
-        :param coupon_type: 券类型 302：现金券 303：储值卡
+        :param coupon_type: 券类型 302：现金券 303：储值卡。
         :type coupon_type: str
-        :param amount: 券退的金额
+        :param amount: 券退的金额。
         :type amount: float
-        :param measure_id: 度量单位&#39;
+        :param measure_id: 度量单位。&#39;
         :type measure_id: int
         """
         
@@ -66,7 +66,7 @@ class CouponUnsubscribeResult:
     def coupon_id(self):
         r"""Gets the coupon_id of this CouponUnsubscribeResult.
 
-        券ID
+        券ID。
 
         :return: The coupon_id of this CouponUnsubscribeResult.
         :rtype: str
@@ -77,7 +77,7 @@ class CouponUnsubscribeResult:
     def coupon_id(self, coupon_id):
         r"""Sets the coupon_id of this CouponUnsubscribeResult.
 
-        券ID
+        券ID。
 
         :param coupon_id: The coupon_id of this CouponUnsubscribeResult.
         :type coupon_id: str
@@ -88,7 +88,7 @@ class CouponUnsubscribeResult:
     def coupon_type(self):
         r"""Gets the coupon_type of this CouponUnsubscribeResult.
 
-        券类型 302：现金券 303：储值卡
+        券类型 302：现金券 303：储值卡。
 
         :return: The coupon_type of this CouponUnsubscribeResult.
         :rtype: str
@@ -99,7 +99,7 @@ class CouponUnsubscribeResult:
     def coupon_type(self, coupon_type):
         r"""Sets the coupon_type of this CouponUnsubscribeResult.
 
-        券类型 302：现金券 303：储值卡
+        券类型 302：现金券 303：储值卡。
 
         :param coupon_type: The coupon_type of this CouponUnsubscribeResult.
         :type coupon_type: str
@@ -110,7 +110,7 @@ class CouponUnsubscribeResult:
     def amount(self):
         r"""Gets the amount of this CouponUnsubscribeResult.
 
-        券退的金额
+        券退的金额。
 
         :return: The amount of this CouponUnsubscribeResult.
         :rtype: float
@@ -121,7 +121,7 @@ class CouponUnsubscribeResult:
     def amount(self, amount):
         r"""Sets the amount of this CouponUnsubscribeResult.
 
-        券退的金额
+        券退的金额。
 
         :param amount: The amount of this CouponUnsubscribeResult.
         :type amount: float
@@ -132,7 +132,7 @@ class CouponUnsubscribeResult:
     def measure_id(self):
         r"""Gets the measure_id of this CouponUnsubscribeResult.
 
-        度量单位'
+        度量单位。'
 
         :return: The measure_id of this CouponUnsubscribeResult.
         :rtype: int
@@ -143,7 +143,7 @@ class CouponUnsubscribeResult:
     def measure_id(self, measure_id):
         r"""Sets the measure_id of this CouponUnsubscribeResult.
 
-        度量单位'
+        度量单位。'
 
         :param measure_id: The measure_id of this CouponUnsubscribeResult.
         :type measure_id: int

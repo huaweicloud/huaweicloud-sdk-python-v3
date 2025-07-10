@@ -2364,6 +2364,71 @@ class EiHealthAsyncClient(Client):
 
         return http_info
 
+    def create_drug_model_resource_async(self, request):
+        r"""创建盘古药物分子大模型
+
+        创建盘古药物分子大模型。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateDrugModelResource
+        :type request: :class:`huaweicloudsdkeihealth.v1.CreateDrugModelResourceRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.CreateDrugModelResourceResponse`
+        """
+        http_info = self._create_drug_model_resource_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_drug_model_resource_async_invoker(self, request):
+        http_info = self._create_drug_model_resource_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_drug_model_resource_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/drug/drug-model-resources",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDrugModelResourceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_favorite_async(self, request):
         r"""添加收藏
 
@@ -4664,6 +4729,71 @@ class EiHealthAsyncClient(Client):
         path_params = {}
         if 'model_id' in local_var_params:
             path_params['model_id'] = local_var_params['model_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_drug_model_resource_async(self, request):
+        r"""退订盘古药物分子大模型
+
+        退订盘古药物分子大模型。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteDrugModelResource
+        :type request: :class:`huaweicloudsdkeihealth.v1.DeleteDrugModelResourceRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteDrugModelResourceResponse`
+        """
+        http_info = self._delete_drug_model_resource_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_drug_model_resource_async_invoker(self, request):
+        http_info = self._delete_drug_model_resource_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_drug_model_resource_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/drug/drug-model-resources/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDrugModelResourceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
 
         query_params = []
 
@@ -8387,6 +8517,78 @@ class EiHealthAsyncClient(Client):
             body = request.get_file_stream()
 
         response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_drug_model_resource_async(self, request):
+        r"""查询盘古药物分子大模型
+
+        查询盘古药物分子大模型。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListDrugModelResource
+        :type request: :class:`huaweicloudsdkeihealth.v1.ListDrugModelResourceRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.ListDrugModelResourceResponse`
+        """
+        http_info = self._list_drug_model_resource_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_drug_model_resource_async_invoker(self, request):
+        http_info = self._list_drug_model_resource_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_drug_model_resource_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/drug/drug-model-resources",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDrugModelResourceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'spec_code' in local_var_params:
+            query_params.append(('spec_code', local_var_params['spec_code']))
+        if 'status_list' in local_var_params:
+            query_params.append(('status_list', local_var_params['status_list']))
+            collection_formats['status_list'] = 'csv'
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Resource-Mappings", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -22455,6 +22657,71 @@ class EiHealthAsyncClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['multipart/form-data'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def download_public_data_async(self, request):
+        r"""文件下载
+
+        文件下载
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DownloadPublicData
+        :type request: :class:`huaweicloudsdkeihealth.v1.DownloadPublicDataRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.DownloadPublicDataResponse`
+        """
+        http_info = self._download_public_data_http_info(request)
+        return self._call_api(**http_info)
+
+    def download_public_data_async_invoker(self, request):
+        http_info = self._download_public_data_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _download_public_data_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/data/download",
+            "request_type": request.__class__.__name__,
+            "response_type": "DownloadPublicDataResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 

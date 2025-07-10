@@ -45,23 +45,23 @@ class CreateStoreData:
 
         The model defined in huaweicloud sdk
 
-        :param id: 知识仓实例id
+        :param id: **参数解释：** 知识仓实例id。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
         :type id: str
-        :param job_id: 知识仓实例创建的任务id。
+        :param job_id: **参数解释：** 创建知识仓实例的任务id。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
         :type job_id: str
-        :param store_name: 知识仓实例名称。
+        :param store_name: **参数解释：** 知识仓实例名称，region内唯一。 **约束限制：** 长度范围为3到63个字符，支持小写字母、数字、中划线（-），第一个字符只能够是小写字母，中划线(-)不得出现在字符串末尾。 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type store_name: str
-        :param status: 状态。如：CREATING。
+        :param status: **参数解释：** 知识仓实例状态。 **约束限制：** 不涉及。 **取值范围：** CREATING：创建中 NORMAL：正常 CREATED_FAILED：创建失败 ABNORMAL：异常 FROZEN：被冻结 DISK_FULL：存储空间已满 DROPPING：删除中 DELETE_FAILED：删除失败 **默认取值:** 不涉及。
         :type status: str
-        :param region: 区域ID。  取值范围：非空，请参见地区和终端节点。  取值范围：非空，请参见地区和终端节点。
+        :param region: **参数解释：** 区域ID。 **约束限制**： 不涉及。 **取值范围：** 取值：非空，请参见地区和终端节点。 **默认取值:** 不涉及。
         :type region: str
-        :param availability_zones: 可用区ID
+        :param availability_zones: **参数解释：** 可用区ID列表，支持1个，或者多个。 **约束限制：** 不涉及。
         :type availability_zones: list[str]
         :param flavor: 
         :type flavor: :class:`huaweicloudsdkdwr.v1.Flavor`
         :param charge_info: 
         :type charge_info: :class:`huaweicloudsdkdwr.v1.ChargeInfo`
-        :param description: 知识仓实例描述信息。有效长度0-255
+        :param description: **参数解释：** 知识仓实例描述信息。 **约束限制**： 有效长度0-255 **取值范围：** 不涉及。 **默认取值:** 不涉及。
         :type description: str
         """
         
@@ -97,7 +97,7 @@ class CreateStoreData:
     def id(self):
         r"""Gets the id of this CreateStoreData.
 
-        知识仓实例id
+        **参数解释：** 知识仓实例id。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :return: The id of this CreateStoreData.
         :rtype: str
@@ -108,7 +108,7 @@ class CreateStoreData:
     def id(self, id):
         r"""Sets the id of this CreateStoreData.
 
-        知识仓实例id
+        **参数解释：** 知识仓实例id。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :param id: The id of this CreateStoreData.
         :type id: str
@@ -119,7 +119,7 @@ class CreateStoreData:
     def job_id(self):
         r"""Gets the job_id of this CreateStoreData.
 
-        知识仓实例创建的任务id。
+        **参数解释：** 创建知识仓实例的任务id。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :return: The job_id of this CreateStoreData.
         :rtype: str
@@ -130,7 +130,7 @@ class CreateStoreData:
     def job_id(self, job_id):
         r"""Sets the job_id of this CreateStoreData.
 
-        知识仓实例创建的任务id。
+        **参数解释：** 创建知识仓实例的任务id。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :param job_id: The job_id of this CreateStoreData.
         :type job_id: str
@@ -141,7 +141,7 @@ class CreateStoreData:
     def store_name(self):
         r"""Gets the store_name of this CreateStoreData.
 
-        知识仓实例名称。
+        **参数解释：** 知识仓实例名称，region内唯一。 **约束限制：** 长度范围为3到63个字符，支持小写字母、数字、中划线（-），第一个字符只能够是小写字母，中划线(-)不得出现在字符串末尾。 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The store_name of this CreateStoreData.
         :rtype: str
@@ -152,7 +152,7 @@ class CreateStoreData:
     def store_name(self, store_name):
         r"""Sets the store_name of this CreateStoreData.
 
-        知识仓实例名称。
+        **参数解释：** 知识仓实例名称，region内唯一。 **约束限制：** 长度范围为3到63个字符，支持小写字母、数字、中划线（-），第一个字符只能够是小写字母，中划线(-)不得出现在字符串末尾。 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param store_name: The store_name of this CreateStoreData.
         :type store_name: str
@@ -163,7 +163,7 @@ class CreateStoreData:
     def status(self):
         r"""Gets the status of this CreateStoreData.
 
-        状态。如：CREATING。
+        **参数解释：** 知识仓实例状态。 **约束限制：** 不涉及。 **取值范围：** CREATING：创建中 NORMAL：正常 CREATED_FAILED：创建失败 ABNORMAL：异常 FROZEN：被冻结 DISK_FULL：存储空间已满 DROPPING：删除中 DELETE_FAILED：删除失败 **默认取值:** 不涉及。
 
         :return: The status of this CreateStoreData.
         :rtype: str
@@ -174,7 +174,7 @@ class CreateStoreData:
     def status(self, status):
         r"""Sets the status of this CreateStoreData.
 
-        状态。如：CREATING。
+        **参数解释：** 知识仓实例状态。 **约束限制：** 不涉及。 **取值范围：** CREATING：创建中 NORMAL：正常 CREATED_FAILED：创建失败 ABNORMAL：异常 FROZEN：被冻结 DISK_FULL：存储空间已满 DROPPING：删除中 DELETE_FAILED：删除失败 **默认取值:** 不涉及。
 
         :param status: The status of this CreateStoreData.
         :type status: str
@@ -185,7 +185,7 @@ class CreateStoreData:
     def region(self):
         r"""Gets the region of this CreateStoreData.
 
-        区域ID。  取值范围：非空，请参见地区和终端节点。  取值范围：非空，请参见地区和终端节点。
+        **参数解释：** 区域ID。 **约束限制**： 不涉及。 **取值范围：** 取值：非空，请参见地区和终端节点。 **默认取值:** 不涉及。
 
         :return: The region of this CreateStoreData.
         :rtype: str
@@ -196,7 +196,7 @@ class CreateStoreData:
     def region(self, region):
         r"""Sets the region of this CreateStoreData.
 
-        区域ID。  取值范围：非空，请参见地区和终端节点。  取值范围：非空，请参见地区和终端节点。
+        **参数解释：** 区域ID。 **约束限制**： 不涉及。 **取值范围：** 取值：非空，请参见地区和终端节点。 **默认取值:** 不涉及。
 
         :param region: The region of this CreateStoreData.
         :type region: str
@@ -207,7 +207,7 @@ class CreateStoreData:
     def availability_zones(self):
         r"""Gets the availability_zones of this CreateStoreData.
 
-        可用区ID
+        **参数解释：** 可用区ID列表，支持1个，或者多个。 **约束限制：** 不涉及。
 
         :return: The availability_zones of this CreateStoreData.
         :rtype: list[str]
@@ -218,7 +218,7 @@ class CreateStoreData:
     def availability_zones(self, availability_zones):
         r"""Sets the availability_zones of this CreateStoreData.
 
-        可用区ID
+        **参数解释：** 可用区ID列表，支持1个，或者多个。 **约束限制：** 不涉及。
 
         :param availability_zones: The availability_zones of this CreateStoreData.
         :type availability_zones: list[str]
@@ -265,7 +265,7 @@ class CreateStoreData:
     def description(self):
         r"""Gets the description of this CreateStoreData.
 
-        知识仓实例描述信息。有效长度0-255
+        **参数解释：** 知识仓实例描述信息。 **约束限制**： 有效长度0-255 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :return: The description of this CreateStoreData.
         :rtype: str
@@ -276,7 +276,7 @@ class CreateStoreData:
     def description(self, description):
         r"""Sets the description of this CreateStoreData.
 
-        知识仓实例描述信息。有效长度0-255
+        **参数解释：** 知识仓实例描述信息。 **约束限制**： 有效长度0-255 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :param description: The description of this CreateStoreData.
         :type description: str

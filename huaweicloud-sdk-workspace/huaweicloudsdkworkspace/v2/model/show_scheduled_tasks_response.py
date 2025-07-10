@@ -70,7 +70,7 @@ class ShowScheduledTasksResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param id: 任务id
+        :param id: 任务id。
         :type id: str
         :param task_type: 任务类型。START：开机，STOP：关机，REBOOT：重启，HIBERNATE：休眠，REBUILD：重建系统盘，EXECUTE_SCRIPT：执行脚本。scheduled_type为LIFE_CYCLE时，不支持START、REBUILD。
         :type task_type: str
@@ -186,7 +186,7 @@ class ShowScheduledTasksResponse(SdkResponse):
     def id(self):
         r"""Gets the id of this ShowScheduledTasksResponse.
 
-        任务id
+        任务id。
 
         :return: The id of this ShowScheduledTasksResponse.
         :rtype: str
@@ -197,7 +197,7 @@ class ShowScheduledTasksResponse(SdkResponse):
     def id(self, id):
         r"""Sets the id of this ShowScheduledTasksResponse.
 
-        任务id
+        任务id。
 
         :param id: The id of this ShowScheduledTasksResponse.
         :type id: str

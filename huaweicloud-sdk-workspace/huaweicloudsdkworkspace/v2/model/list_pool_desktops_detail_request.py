@@ -39,9 +39,9 @@ class ListPoolDesktopsDetailRequest:
         :type pool_id: str
         :param inconsistent_type: 通过该类型过滤出与桌面池规格类型不一致的桌面 - PRODUCT: 查找productID与桌面池套餐ID不一致的桌面 - IMAGE: 查找imageID与桌面池镜像ID不一致的桌面
         :type inconsistent_type: str
-        :param offset: 用于分页查询，查询的起始记录序号，从0开始
+        :param offset: 用于分页查询，查询的起始记录序号，从0开始。
         :type offset: int
-        :param limit: 用于分页查询，返回桌面数量限制。取值范围0-100，默认值是10
+        :param limit: 用于分页查询，返回桌面数量限制。取值范围0-100，默认值是10。
         :type limit: int
         """
         
@@ -109,7 +109,7 @@ class ListPoolDesktopsDetailRequest:
     def offset(self):
         r"""Gets the offset of this ListPoolDesktopsDetailRequest.
 
-        用于分页查询，查询的起始记录序号，从0开始
+        用于分页查询，查询的起始记录序号，从0开始。
 
         :return: The offset of this ListPoolDesktopsDetailRequest.
         :rtype: int
@@ -120,7 +120,7 @@ class ListPoolDesktopsDetailRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListPoolDesktopsDetailRequest.
 
-        用于分页查询，查询的起始记录序号，从0开始
+        用于分页查询，查询的起始记录序号，从0开始。
 
         :param offset: The offset of this ListPoolDesktopsDetailRequest.
         :type offset: int
@@ -131,7 +131,7 @@ class ListPoolDesktopsDetailRequest:
     def limit(self):
         r"""Gets the limit of this ListPoolDesktopsDetailRequest.
 
-        用于分页查询，返回桌面数量限制。取值范围0-100，默认值是10
+        用于分页查询，返回桌面数量限制。取值范围0-100，默认值是10。
 
         :return: The limit of this ListPoolDesktopsDetailRequest.
         :rtype: int
@@ -142,7 +142,7 @@ class ListPoolDesktopsDetailRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListPoolDesktopsDetailRequest.
 
-        用于分页查询，返回桌面数量限制。取值范围0-100，默认值是10
+        用于分页查询，返回桌面数量限制。取值范围0-100，默认值是10。
 
         :param limit: The limit of this ListPoolDesktopsDetailRequest.
         :type limit: int

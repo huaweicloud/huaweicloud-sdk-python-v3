@@ -33,11 +33,11 @@ class CloudServiceRatingResult:
 
         The model defined in huaweicloud sdk
 
-        :param order_request_id: 下单请求体中的orderRequestId
+        :param order_request_id: 下单请求体中的orderRequestId。
         :type order_request_id: str
         :param official_website_rating_result: 
         :type official_website_rating_result: :class:`huaweicloudsdkworkspace.v2.OfficialWebsiteRatingResult`
-        :param optional_discount_rating_results: 优惠询价结果
+        :param optional_discount_rating_results: 优惠询价结果。
         :type optional_discount_rating_results: list[:class:`huaweicloudsdkworkspace.v2.OptionalDiscountRatingResult`]
         """
         
@@ -59,7 +59,7 @@ class CloudServiceRatingResult:
     def order_request_id(self):
         r"""Gets the order_request_id of this CloudServiceRatingResult.
 
-        下单请求体中的orderRequestId
+        下单请求体中的orderRequestId。
 
         :return: The order_request_id of this CloudServiceRatingResult.
         :rtype: str
@@ -70,7 +70,7 @@ class CloudServiceRatingResult:
     def order_request_id(self, order_request_id):
         r"""Sets the order_request_id of this CloudServiceRatingResult.
 
-        下单请求体中的orderRequestId
+        下单请求体中的orderRequestId。
 
         :param order_request_id: The order_request_id of this CloudServiceRatingResult.
         :type order_request_id: str
@@ -99,7 +99,7 @@ class CloudServiceRatingResult:
     def optional_discount_rating_results(self):
         r"""Gets the optional_discount_rating_results of this CloudServiceRatingResult.
 
-        优惠询价结果
+        优惠询价结果。
 
         :return: The optional_discount_rating_results of this CloudServiceRatingResult.
         :rtype: list[:class:`huaweicloudsdkworkspace.v2.OptionalDiscountRatingResult`]
@@ -110,7 +110,7 @@ class CloudServiceRatingResult:
     def optional_discount_rating_results(self, optional_discount_rating_results):
         r"""Sets the optional_discount_rating_results of this CloudServiceRatingResult.
 
-        优惠询价结果
+        优惠询价结果。
 
         :param optional_discount_rating_results: The optional_discount_rating_results of this CloudServiceRatingResult.
         :type optional_discount_rating_results: list[:class:`huaweicloudsdkworkspace.v2.OptionalDiscountRatingResult`]

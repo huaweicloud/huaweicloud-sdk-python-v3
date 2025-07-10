@@ -39,17 +39,17 @@ class InterfacesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param method: 方法
+        :param method: 方法。
         :type method: str
-        :param params: 请求参数
+        :param params: 请求参数。
         :type params: dict(str, str)
-        :param headers: 请求头信息
+        :param headers: 请求头信息。
         :type headers: dict(str, str)
-        :param body: 请求体
+        :param body: 请求体。
         :type body: str
-        :param url: URL
+        :param url: URL。
         :type url: str
-        :param configs: 配置
+        :param configs: 配置。
         :type configs: dict(str, object)
         """
         
@@ -80,7 +80,7 @@ class InterfacesRequest:
     def method(self):
         r"""Gets the method of this InterfacesRequest.
 
-        方法
+        方法。
 
         :return: The method of this InterfacesRequest.
         :rtype: str
@@ -91,7 +91,7 @@ class InterfacesRequest:
     def method(self, method):
         r"""Sets the method of this InterfacesRequest.
 
-        方法
+        方法。
 
         :param method: The method of this InterfacesRequest.
         :type method: str
@@ -102,7 +102,7 @@ class InterfacesRequest:
     def params(self):
         r"""Gets the params of this InterfacesRequest.
 
-        请求参数
+        请求参数。
 
         :return: The params of this InterfacesRequest.
         :rtype: dict(str, str)
@@ -113,7 +113,7 @@ class InterfacesRequest:
     def params(self, params):
         r"""Sets the params of this InterfacesRequest.
 
-        请求参数
+        请求参数。
 
         :param params: The params of this InterfacesRequest.
         :type params: dict(str, str)
@@ -124,7 +124,7 @@ class InterfacesRequest:
     def headers(self):
         r"""Gets the headers of this InterfacesRequest.
 
-        请求头信息
+        请求头信息。
 
         :return: The headers of this InterfacesRequest.
         :rtype: dict(str, str)
@@ -135,7 +135,7 @@ class InterfacesRequest:
     def headers(self, headers):
         r"""Sets the headers of this InterfacesRequest.
 
-        请求头信息
+        请求头信息。
 
         :param headers: The headers of this InterfacesRequest.
         :type headers: dict(str, str)
@@ -146,7 +146,7 @@ class InterfacesRequest:
     def body(self):
         r"""Gets the body of this InterfacesRequest.
 
-        请求体
+        请求体。
 
         :return: The body of this InterfacesRequest.
         :rtype: str
@@ -157,7 +157,7 @@ class InterfacesRequest:
     def body(self, body):
         r"""Sets the body of this InterfacesRequest.
 
-        请求体
+        请求体。
 
         :param body: The body of this InterfacesRequest.
         :type body: str
@@ -168,7 +168,7 @@ class InterfacesRequest:
     def url(self):
         r"""Gets the url of this InterfacesRequest.
 
-        URL
+        URL。
 
         :return: The url of this InterfacesRequest.
         :rtype: str
@@ -179,7 +179,7 @@ class InterfacesRequest:
     def url(self, url):
         r"""Sets the url of this InterfacesRequest.
 
-        URL
+        URL。
 
         :param url: The url of this InterfacesRequest.
         :type url: str
@@ -190,7 +190,7 @@ class InterfacesRequest:
     def configs(self):
         r"""Gets the configs of this InterfacesRequest.
 
-        配置
+        配置。
 
         :return: The configs of this InterfacesRequest.
         :rtype: dict(str, object)
@@ -201,7 +201,7 @@ class InterfacesRequest:
     def configs(self, configs):
         r"""Sets the configs of this InterfacesRequest.
 
-        配置
+        配置。
 
         :param configs: The configs of this InterfacesRequest.
         :type configs: dict(str, object)

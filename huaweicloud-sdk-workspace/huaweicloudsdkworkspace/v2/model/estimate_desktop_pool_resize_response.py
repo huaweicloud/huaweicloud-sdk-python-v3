@@ -34,7 +34,7 @@ class EstimateDesktopPoolResizeResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param is_upgrade: 是否为升配
+        :param is_upgrade: 是否为升配。
         :type is_upgrade: bool
         :param batch_inquiry_rsp_when_upgrade: 
         :type batch_inquiry_rsp_when_upgrade: :class:`huaweicloudsdkworkspace.v2.PeriodBatchUpChangeResourceRsp`
@@ -60,7 +60,7 @@ class EstimateDesktopPoolResizeResponse(SdkResponse):
     def is_upgrade(self):
         r"""Gets the is_upgrade of this EstimateDesktopPoolResizeResponse.
 
-        是否为升配
+        是否为升配。
 
         :return: The is_upgrade of this EstimateDesktopPoolResizeResponse.
         :rtype: bool
@@ -71,7 +71,7 @@ class EstimateDesktopPoolResizeResponse(SdkResponse):
     def is_upgrade(self, is_upgrade):
         r"""Sets the is_upgrade of this EstimateDesktopPoolResizeResponse.
 
-        是否为升配
+        是否为升配。
 
         :param is_upgrade: The is_upgrade of this EstimateDesktopPoolResizeResponse.
         :type is_upgrade: bool

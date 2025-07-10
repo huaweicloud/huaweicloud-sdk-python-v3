@@ -35,9 +35,9 @@ class ModifyOuNameInfoV2Req:
 
         :param id: ouid。
         :type id: str
-        :param ou_name: OU名称
+        :param ou_name: OU名称。
         :type ou_name: str
-        :param description: 描述
+        :param description: 描述。
         :type description: str
         """
         
@@ -80,7 +80,7 @@ class ModifyOuNameInfoV2Req:
     def ou_name(self):
         r"""Gets the ou_name of this ModifyOuNameInfoV2Req.
 
-        OU名称
+        OU名称。
 
         :return: The ou_name of this ModifyOuNameInfoV2Req.
         :rtype: str
@@ -91,7 +91,7 @@ class ModifyOuNameInfoV2Req:
     def ou_name(self, ou_name):
         r"""Sets the ou_name of this ModifyOuNameInfoV2Req.
 
-        OU名称
+        OU名称。
 
         :param ou_name: The ou_name of this ModifyOuNameInfoV2Req.
         :type ou_name: str
@@ -102,7 +102,7 @@ class ModifyOuNameInfoV2Req:
     def description(self):
         r"""Gets the description of this ModifyOuNameInfoV2Req.
 
-        描述
+        描述。
 
         :return: The description of this ModifyOuNameInfoV2Req.
         :rtype: str
@@ -113,7 +113,7 @@ class ModifyOuNameInfoV2Req:
     def description(self, description):
         r"""Sets the description of this ModifyOuNameInfoV2Req.
 
-        描述
+        描述。
 
         :param description: The description of this ModifyOuNameInfoV2Req.
         :type description: str

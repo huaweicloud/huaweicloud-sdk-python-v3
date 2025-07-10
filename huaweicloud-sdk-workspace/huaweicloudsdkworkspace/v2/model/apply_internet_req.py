@@ -47,25 +47,25 @@ class ApplyInternetReq:
 
         The model defined in huaweicloud sdk
 
-        :param nat_spec: 公网NAT网关的规格，1：小型，2：中型，3：大型，4：超大型
+        :param nat_spec: 公网NAT网关的规格，1：小型，2：中型，3：大型，4：超大型。
         :type nat_spec: str
-        :param eip_charge_mode: traffic（按流量计费），bandwidth（按带宽计费）
+        :param eip_charge_mode: traffic（按流量计费），bandwidth（按带宽计费）。
         :type eip_charge_mode: str
-        :param bandwidth_size: 带宽大小
+        :param bandwidth_size: 带宽大小。
         :type bandwidth_size: int
-        :param eip_type: EIP的类型，5_bgp（全动态BGP），5_sbgp（静态BGP），默认值：5_bgp
+        :param eip_type: EIP的类型，5_bgp（全动态BGP），5_sbgp（静态BGP），默认值：5_bgp。
         :type eip_type: str
-        :param vpc_id: vpc的id
+        :param vpc_id: vpc的id。
         :type vpc_id: str
-        :param subnet_id: 子网的id
+        :param subnet_id: 子网的id。
         :type subnet_id: str
-        :param enterprise_project_id: 企业项目ID，默认\&quot;0\&quot;
+        :param enterprise_project_id: 企业项目ID，默认\&quot;0。\&quot;
         :type enterprise_project_id: str
-        :param nat_id: nat的id，有传则使用该NAT，否则新建
+        :param nat_id: nat的id，有传则使用该NAT，否则新建。
         :type nat_id: str
-        :param nat_name: nat名称，默认值：nat-workspace
+        :param nat_name: nat名称，默认值：nat-workspace。
         :type nat_name: str
-        :param eip_name: eip名称，默认值：eip-workspace
+        :param eip_name: eip名称，默认值：eip-workspace。
         :type eip_name: str
         """
         
@@ -103,7 +103,7 @@ class ApplyInternetReq:
     def nat_spec(self):
         r"""Gets the nat_spec of this ApplyInternetReq.
 
-        公网NAT网关的规格，1：小型，2：中型，3：大型，4：超大型
+        公网NAT网关的规格，1：小型，2：中型，3：大型，4：超大型。
 
         :return: The nat_spec of this ApplyInternetReq.
         :rtype: str
@@ -114,7 +114,7 @@ class ApplyInternetReq:
     def nat_spec(self, nat_spec):
         r"""Sets the nat_spec of this ApplyInternetReq.
 
-        公网NAT网关的规格，1：小型，2：中型，3：大型，4：超大型
+        公网NAT网关的规格，1：小型，2：中型，3：大型，4：超大型。
 
         :param nat_spec: The nat_spec of this ApplyInternetReq.
         :type nat_spec: str
@@ -125,7 +125,7 @@ class ApplyInternetReq:
     def eip_charge_mode(self):
         r"""Gets the eip_charge_mode of this ApplyInternetReq.
 
-        traffic（按流量计费），bandwidth（按带宽计费）
+        traffic（按流量计费），bandwidth（按带宽计费）。
 
         :return: The eip_charge_mode of this ApplyInternetReq.
         :rtype: str
@@ -136,7 +136,7 @@ class ApplyInternetReq:
     def eip_charge_mode(self, eip_charge_mode):
         r"""Sets the eip_charge_mode of this ApplyInternetReq.
 
-        traffic（按流量计费），bandwidth（按带宽计费）
+        traffic（按流量计费），bandwidth（按带宽计费）。
 
         :param eip_charge_mode: The eip_charge_mode of this ApplyInternetReq.
         :type eip_charge_mode: str
@@ -147,7 +147,7 @@ class ApplyInternetReq:
     def bandwidth_size(self):
         r"""Gets the bandwidth_size of this ApplyInternetReq.
 
-        带宽大小
+        带宽大小。
 
         :return: The bandwidth_size of this ApplyInternetReq.
         :rtype: int
@@ -158,7 +158,7 @@ class ApplyInternetReq:
     def bandwidth_size(self, bandwidth_size):
         r"""Sets the bandwidth_size of this ApplyInternetReq.
 
-        带宽大小
+        带宽大小。
 
         :param bandwidth_size: The bandwidth_size of this ApplyInternetReq.
         :type bandwidth_size: int
@@ -169,7 +169,7 @@ class ApplyInternetReq:
     def eip_type(self):
         r"""Gets the eip_type of this ApplyInternetReq.
 
-        EIP的类型，5_bgp（全动态BGP），5_sbgp（静态BGP），默认值：5_bgp
+        EIP的类型，5_bgp（全动态BGP），5_sbgp（静态BGP），默认值：5_bgp。
 
         :return: The eip_type of this ApplyInternetReq.
         :rtype: str
@@ -180,7 +180,7 @@ class ApplyInternetReq:
     def eip_type(self, eip_type):
         r"""Sets the eip_type of this ApplyInternetReq.
 
-        EIP的类型，5_bgp（全动态BGP），5_sbgp（静态BGP），默认值：5_bgp
+        EIP的类型，5_bgp（全动态BGP），5_sbgp（静态BGP），默认值：5_bgp。
 
         :param eip_type: The eip_type of this ApplyInternetReq.
         :type eip_type: str
@@ -191,7 +191,7 @@ class ApplyInternetReq:
     def vpc_id(self):
         r"""Gets the vpc_id of this ApplyInternetReq.
 
-        vpc的id
+        vpc的id。
 
         :return: The vpc_id of this ApplyInternetReq.
         :rtype: str
@@ -202,7 +202,7 @@ class ApplyInternetReq:
     def vpc_id(self, vpc_id):
         r"""Sets the vpc_id of this ApplyInternetReq.
 
-        vpc的id
+        vpc的id。
 
         :param vpc_id: The vpc_id of this ApplyInternetReq.
         :type vpc_id: str
@@ -213,7 +213,7 @@ class ApplyInternetReq:
     def subnet_id(self):
         r"""Gets the subnet_id of this ApplyInternetReq.
 
-        子网的id
+        子网的id。
 
         :return: The subnet_id of this ApplyInternetReq.
         :rtype: str
@@ -224,7 +224,7 @@ class ApplyInternetReq:
     def subnet_id(self, subnet_id):
         r"""Sets the subnet_id of this ApplyInternetReq.
 
-        子网的id
+        子网的id。
 
         :param subnet_id: The subnet_id of this ApplyInternetReq.
         :type subnet_id: str
@@ -235,7 +235,7 @@ class ApplyInternetReq:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this ApplyInternetReq.
 
-        企业项目ID，默认\"0\"
+        企业项目ID，默认\"0。\"
 
         :return: The enterprise_project_id of this ApplyInternetReq.
         :rtype: str
@@ -246,7 +246,7 @@ class ApplyInternetReq:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this ApplyInternetReq.
 
-        企业项目ID，默认\"0\"
+        企业项目ID，默认\"0。\"
 
         :param enterprise_project_id: The enterprise_project_id of this ApplyInternetReq.
         :type enterprise_project_id: str
@@ -257,7 +257,7 @@ class ApplyInternetReq:
     def nat_id(self):
         r"""Gets the nat_id of this ApplyInternetReq.
 
-        nat的id，有传则使用该NAT，否则新建
+        nat的id，有传则使用该NAT，否则新建。
 
         :return: The nat_id of this ApplyInternetReq.
         :rtype: str
@@ -268,7 +268,7 @@ class ApplyInternetReq:
     def nat_id(self, nat_id):
         r"""Sets the nat_id of this ApplyInternetReq.
 
-        nat的id，有传则使用该NAT，否则新建
+        nat的id，有传则使用该NAT，否则新建。
 
         :param nat_id: The nat_id of this ApplyInternetReq.
         :type nat_id: str
@@ -279,7 +279,7 @@ class ApplyInternetReq:
     def nat_name(self):
         r"""Gets the nat_name of this ApplyInternetReq.
 
-        nat名称，默认值：nat-workspace
+        nat名称，默认值：nat-workspace。
 
         :return: The nat_name of this ApplyInternetReq.
         :rtype: str
@@ -290,7 +290,7 @@ class ApplyInternetReq:
     def nat_name(self, nat_name):
         r"""Sets the nat_name of this ApplyInternetReq.
 
-        nat名称，默认值：nat-workspace
+        nat名称，默认值：nat-workspace。
 
         :param nat_name: The nat_name of this ApplyInternetReq.
         :type nat_name: str
@@ -301,7 +301,7 @@ class ApplyInternetReq:
     def eip_name(self):
         r"""Gets the eip_name of this ApplyInternetReq.
 
-        eip名称，默认值：eip-workspace
+        eip名称，默认值：eip-workspace。
 
         :return: The eip_name of this ApplyInternetReq.
         :rtype: str
@@ -312,7 +312,7 @@ class ApplyInternetReq:
     def eip_name(self, eip_name):
         r"""Sets the eip_name of this ApplyInternetReq.
 
-        eip名称，默认值：eip-workspace
+        eip名称，默认值：eip-workspace。
 
         :param eip_name: The eip_name of this ApplyInternetReq.
         :type eip_name: str

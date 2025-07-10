@@ -64,7 +64,8 @@ class ServerDetail:
         'sys_tags': 'list[ServerSystemTag]',
         'cpu_options': 'CpuOptions',
         'security_options': 'SecurityOptions',
-        'hypervisor': 'Hypervisor'
+        'hypervisor': 'Hypervisor',
+        'network_interfaces': 'list[NetworkInterfaces]'
     }
 
     attribute_map = {
@@ -115,10 +116,11 @@ class ServerDetail:
         'sys_tags': 'sys_tags',
         'cpu_options': 'cpu_options',
         'security_options': 'security_options',
-        'hypervisor': 'hypervisor'
+        'hypervisor': 'hypervisor',
+        'network_interfaces': 'network_interfaces'
     }
 
-    def __init__(self, status=None, updated=None, auto_terminate_time=None, host_id=None, os_ext_srv_att_rhost=None, addresses=None, key_name=None, image=None, os_ext_st_stask_state=None, os_ext_st_svm_state=None, os_ext_srv_att_rinstance_name=None, os_ext_srv_att_rhypervisor_hostname=None, flavor=None, id=None, security_groups=None, os_ext_a_zavailability_zone=None, user_id=None, name=None, created=None, tenant_id=None, os_dc_fdisk_config=None, access_i_pv4=None, access_i_pv6=None, fault=None, progress=None, os_ext_st_spower_state=None, config_drive=None, metadata=None, os_srv_us_glaunched_at=None, os_srv_us_gterminated_at=None, os_extended_volumesvolumes_attached=None, description=None, host_status=None, os_ext_srv_att_rhostname=None, os_ext_srv_att_rreservation_id=None, os_ext_srv_att_rlaunch_index=None, os_ext_srv_att_rkernel_id=None, os_ext_srv_att_rramdisk_id=None, os_ext_srv_att_rroot_device_name=None, os_ext_srv_att_ruser_data=None, locked=None, tags=None, osscheduler_hints=None, enterprise_project_id=None, sys_tags=None, cpu_options=None, security_options=None, hypervisor=None):
+    def __init__(self, status=None, updated=None, auto_terminate_time=None, host_id=None, os_ext_srv_att_rhost=None, addresses=None, key_name=None, image=None, os_ext_st_stask_state=None, os_ext_st_svm_state=None, os_ext_srv_att_rinstance_name=None, os_ext_srv_att_rhypervisor_hostname=None, flavor=None, id=None, security_groups=None, os_ext_a_zavailability_zone=None, user_id=None, name=None, created=None, tenant_id=None, os_dc_fdisk_config=None, access_i_pv4=None, access_i_pv6=None, fault=None, progress=None, os_ext_st_spower_state=None, config_drive=None, metadata=None, os_srv_us_glaunched_at=None, os_srv_us_gterminated_at=None, os_extended_volumesvolumes_attached=None, description=None, host_status=None, os_ext_srv_att_rhostname=None, os_ext_srv_att_rreservation_id=None, os_ext_srv_att_rlaunch_index=None, os_ext_srv_att_rkernel_id=None, os_ext_srv_att_rramdisk_id=None, os_ext_srv_att_rroot_device_name=None, os_ext_srv_att_ruser_data=None, locked=None, tags=None, osscheduler_hints=None, enterprise_project_id=None, sys_tags=None, cpu_options=None, security_options=None, hypervisor=None, network_interfaces=None):
         r"""ServerDetail
 
         The model defined in huaweicloud sdk
@@ -219,6 +221,8 @@ class ServerDetail:
         :type security_options: :class:`huaweicloudsdkecs.v2.SecurityOptions`
         :param hypervisor: 
         :type hypervisor: :class:`huaweicloudsdkecs.v2.Hypervisor`
+        :param network_interfaces: 网卡信息
+        :type network_interfaces: list[:class:`huaweicloudsdkecs.v2.NetworkInterfaces`]
         """
         
         
@@ -271,6 +275,7 @@ class ServerDetail:
         self._cpu_options = None
         self._security_options = None
         self._hypervisor = None
+        self._network_interfaces = None
         self.discriminator = None
 
         self.status = status
@@ -334,6 +339,8 @@ class ServerDetail:
             self.security_options = security_options
         if hypervisor is not None:
             self.hypervisor = hypervisor
+        if network_interfaces is not None:
+            self.network_interfaces = network_interfaces
 
     @property
     def status(self):
@@ -1366,6 +1373,28 @@ class ServerDetail:
         :type hypervisor: :class:`huaweicloudsdkecs.v2.Hypervisor`
         """
         self._hypervisor = hypervisor
+
+    @property
+    def network_interfaces(self):
+        r"""Gets the network_interfaces of this ServerDetail.
+
+        网卡信息
+
+        :return: The network_interfaces of this ServerDetail.
+        :rtype: list[:class:`huaweicloudsdkecs.v2.NetworkInterfaces`]
+        """
+        return self._network_interfaces
+
+    @network_interfaces.setter
+    def network_interfaces(self, network_interfaces):
+        r"""Sets the network_interfaces of this ServerDetail.
+
+        网卡信息
+
+        :param network_interfaces: The network_interfaces of this ServerDetail.
+        :type network_interfaces: list[:class:`huaweicloudsdkecs.v2.NetworkInterfaces`]
+        """
+        self._network_interfaces = network_interfaces
 
     def to_dict(self):
         """Returns the model properties as a dict"""

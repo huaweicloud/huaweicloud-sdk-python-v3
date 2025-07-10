@@ -51,29 +51,29 @@ class OfficialWebsiteRatingResult:
 
         The model defined in huaweicloud sdk
 
-        :param amount: 订单总额，即最终优惠后的订单金额(预留实例只包含预付部分)
+        :param amount: 订单总额，即最终优惠后的订单金额(预留实例只包含预付部分)。
         :type amount: float
-        :param official_website_amount: 官网价(预留实例只包含预付部分)
+        :param official_website_amount: 官网价(预留实例只包含预付部分)。
         :type official_website_amount: float
-        :param original_amount: 订单原总额，即优惠前订单总额(预留实例只包含预付部分)
+        :param original_amount: 订单原总额，即优惠前订单总额(预留实例只包含预付部分)。
         :type original_amount: float
-        :param official_website_discount_amount: 官网价优惠额(预留实例只包含预付部分)
+        :param official_website_discount_amount: 官网价优惠额(预留实例只包含预付部分)。
         :type official_website_discount_amount: float
-        :param optional_discount_amount: 可选折扣优惠额(预留实例只包含预付部分)
+        :param optional_discount_amount: 可选折扣优惠额(预留实例只包含预付部分)。
         :type optional_discount_amount: float
-        :param discount_amount: 总优惠额(预留实例只包含预付部分)
+        :param discount_amount: 总优惠额(预留实例只包含预付部分)。
         :type discount_amount: float
-        :param per_amount: 总分期金额(批量询价的商品分期周期类型一致，才会有总分期金额，分期周期类型不一致，该信息没有)
+        :param per_amount: 总分期金额(批量询价的商品分期周期类型一致，才会有总分期金额，分期周期类型不一致，该信息没有)。
         :type per_amount: float
-        :param per_discount_amount: 总分期金额的优惠额(perDiscountAmount &#x3D; perOriginalAmount - perAmount)
+        :param per_discount_amount: 总分期金额的优惠额(perDiscountAmount &#x3D; perOriginalAmount - perAmount)。
         :type per_discount_amount: float
-        :param per_original_amount: 总分期金额原价
+        :param per_original_amount: 总分期金额原价。
         :type per_original_amount: float
-        :param per_period_type: 分期周期类型 2:月 4:小时
+        :param per_period_type: 分期周期类型 2:月 4:小时。
         :type per_period_type: int
-        :param measure_id: 度量单位
+        :param measure_id: 度量单位。
         :type measure_id: int
-        :param product_rating_results: 产品询价结果
+        :param product_rating_results: 产品询价结果。
         :type product_rating_results: list[:class:`huaweicloudsdkworkspace.v2.ProductResult`]
         """
         
@@ -122,7 +122,7 @@ class OfficialWebsiteRatingResult:
     def amount(self):
         r"""Gets the amount of this OfficialWebsiteRatingResult.
 
-        订单总额，即最终优惠后的订单金额(预留实例只包含预付部分)
+        订单总额，即最终优惠后的订单金额(预留实例只包含预付部分)。
 
         :return: The amount of this OfficialWebsiteRatingResult.
         :rtype: float
@@ -133,7 +133,7 @@ class OfficialWebsiteRatingResult:
     def amount(self, amount):
         r"""Sets the amount of this OfficialWebsiteRatingResult.
 
-        订单总额，即最终优惠后的订单金额(预留实例只包含预付部分)
+        订单总额，即最终优惠后的订单金额(预留实例只包含预付部分)。
 
         :param amount: The amount of this OfficialWebsiteRatingResult.
         :type amount: float
@@ -144,7 +144,7 @@ class OfficialWebsiteRatingResult:
     def official_website_amount(self):
         r"""Gets the official_website_amount of this OfficialWebsiteRatingResult.
 
-        官网价(预留实例只包含预付部分)
+        官网价(预留实例只包含预付部分)。
 
         :return: The official_website_amount of this OfficialWebsiteRatingResult.
         :rtype: float
@@ -155,7 +155,7 @@ class OfficialWebsiteRatingResult:
     def official_website_amount(self, official_website_amount):
         r"""Sets the official_website_amount of this OfficialWebsiteRatingResult.
 
-        官网价(预留实例只包含预付部分)
+        官网价(预留实例只包含预付部分)。
 
         :param official_website_amount: The official_website_amount of this OfficialWebsiteRatingResult.
         :type official_website_amount: float
@@ -166,7 +166,7 @@ class OfficialWebsiteRatingResult:
     def original_amount(self):
         r"""Gets the original_amount of this OfficialWebsiteRatingResult.
 
-        订单原总额，即优惠前订单总额(预留实例只包含预付部分)
+        订单原总额，即优惠前订单总额(预留实例只包含预付部分)。
 
         :return: The original_amount of this OfficialWebsiteRatingResult.
         :rtype: float
@@ -177,7 +177,7 @@ class OfficialWebsiteRatingResult:
     def original_amount(self, original_amount):
         r"""Sets the original_amount of this OfficialWebsiteRatingResult.
 
-        订单原总额，即优惠前订单总额(预留实例只包含预付部分)
+        订单原总额，即优惠前订单总额(预留实例只包含预付部分)。
 
         :param original_amount: The original_amount of this OfficialWebsiteRatingResult.
         :type original_amount: float
@@ -188,7 +188,7 @@ class OfficialWebsiteRatingResult:
     def official_website_discount_amount(self):
         r"""Gets the official_website_discount_amount of this OfficialWebsiteRatingResult.
 
-        官网价优惠额(预留实例只包含预付部分)
+        官网价优惠额(预留实例只包含预付部分)。
 
         :return: The official_website_discount_amount of this OfficialWebsiteRatingResult.
         :rtype: float
@@ -199,7 +199,7 @@ class OfficialWebsiteRatingResult:
     def official_website_discount_amount(self, official_website_discount_amount):
         r"""Sets the official_website_discount_amount of this OfficialWebsiteRatingResult.
 
-        官网价优惠额(预留实例只包含预付部分)
+        官网价优惠额(预留实例只包含预付部分)。
 
         :param official_website_discount_amount: The official_website_discount_amount of this OfficialWebsiteRatingResult.
         :type official_website_discount_amount: float
@@ -210,7 +210,7 @@ class OfficialWebsiteRatingResult:
     def optional_discount_amount(self):
         r"""Gets the optional_discount_amount of this OfficialWebsiteRatingResult.
 
-        可选折扣优惠额(预留实例只包含预付部分)
+        可选折扣优惠额(预留实例只包含预付部分)。
 
         :return: The optional_discount_amount of this OfficialWebsiteRatingResult.
         :rtype: float
@@ -221,7 +221,7 @@ class OfficialWebsiteRatingResult:
     def optional_discount_amount(self, optional_discount_amount):
         r"""Sets the optional_discount_amount of this OfficialWebsiteRatingResult.
 
-        可选折扣优惠额(预留实例只包含预付部分)
+        可选折扣优惠额(预留实例只包含预付部分)。
 
         :param optional_discount_amount: The optional_discount_amount of this OfficialWebsiteRatingResult.
         :type optional_discount_amount: float
@@ -232,7 +232,7 @@ class OfficialWebsiteRatingResult:
     def discount_amount(self):
         r"""Gets the discount_amount of this OfficialWebsiteRatingResult.
 
-        总优惠额(预留实例只包含预付部分)
+        总优惠额(预留实例只包含预付部分)。
 
         :return: The discount_amount of this OfficialWebsiteRatingResult.
         :rtype: float
@@ -243,7 +243,7 @@ class OfficialWebsiteRatingResult:
     def discount_amount(self, discount_amount):
         r"""Sets the discount_amount of this OfficialWebsiteRatingResult.
 
-        总优惠额(预留实例只包含预付部分)
+        总优惠额(预留实例只包含预付部分)。
 
         :param discount_amount: The discount_amount of this OfficialWebsiteRatingResult.
         :type discount_amount: float
@@ -254,7 +254,7 @@ class OfficialWebsiteRatingResult:
     def per_amount(self):
         r"""Gets the per_amount of this OfficialWebsiteRatingResult.
 
-        总分期金额(批量询价的商品分期周期类型一致，才会有总分期金额，分期周期类型不一致，该信息没有)
+        总分期金额(批量询价的商品分期周期类型一致，才会有总分期金额，分期周期类型不一致，该信息没有)。
 
         :return: The per_amount of this OfficialWebsiteRatingResult.
         :rtype: float
@@ -265,7 +265,7 @@ class OfficialWebsiteRatingResult:
     def per_amount(self, per_amount):
         r"""Sets the per_amount of this OfficialWebsiteRatingResult.
 
-        总分期金额(批量询价的商品分期周期类型一致，才会有总分期金额，分期周期类型不一致，该信息没有)
+        总分期金额(批量询价的商品分期周期类型一致，才会有总分期金额，分期周期类型不一致，该信息没有)。
 
         :param per_amount: The per_amount of this OfficialWebsiteRatingResult.
         :type per_amount: float
@@ -276,7 +276,7 @@ class OfficialWebsiteRatingResult:
     def per_discount_amount(self):
         r"""Gets the per_discount_amount of this OfficialWebsiteRatingResult.
 
-        总分期金额的优惠额(perDiscountAmount = perOriginalAmount - perAmount)
+        总分期金额的优惠额(perDiscountAmount = perOriginalAmount - perAmount)。
 
         :return: The per_discount_amount of this OfficialWebsiteRatingResult.
         :rtype: float
@@ -287,7 +287,7 @@ class OfficialWebsiteRatingResult:
     def per_discount_amount(self, per_discount_amount):
         r"""Sets the per_discount_amount of this OfficialWebsiteRatingResult.
 
-        总分期金额的优惠额(perDiscountAmount = perOriginalAmount - perAmount)
+        总分期金额的优惠额(perDiscountAmount = perOriginalAmount - perAmount)。
 
         :param per_discount_amount: The per_discount_amount of this OfficialWebsiteRatingResult.
         :type per_discount_amount: float
@@ -298,7 +298,7 @@ class OfficialWebsiteRatingResult:
     def per_original_amount(self):
         r"""Gets the per_original_amount of this OfficialWebsiteRatingResult.
 
-        总分期金额原价
+        总分期金额原价。
 
         :return: The per_original_amount of this OfficialWebsiteRatingResult.
         :rtype: float
@@ -309,7 +309,7 @@ class OfficialWebsiteRatingResult:
     def per_original_amount(self, per_original_amount):
         r"""Sets the per_original_amount of this OfficialWebsiteRatingResult.
 
-        总分期金额原价
+        总分期金额原价。
 
         :param per_original_amount: The per_original_amount of this OfficialWebsiteRatingResult.
         :type per_original_amount: float
@@ -320,7 +320,7 @@ class OfficialWebsiteRatingResult:
     def per_period_type(self):
         r"""Gets the per_period_type of this OfficialWebsiteRatingResult.
 
-        分期周期类型 2:月 4:小时
+        分期周期类型 2:月 4:小时。
 
         :return: The per_period_type of this OfficialWebsiteRatingResult.
         :rtype: int
@@ -331,7 +331,7 @@ class OfficialWebsiteRatingResult:
     def per_period_type(self, per_period_type):
         r"""Sets the per_period_type of this OfficialWebsiteRatingResult.
 
-        分期周期类型 2:月 4:小时
+        分期周期类型 2:月 4:小时。
 
         :param per_period_type: The per_period_type of this OfficialWebsiteRatingResult.
         :type per_period_type: int
@@ -342,7 +342,7 @@ class OfficialWebsiteRatingResult:
     def measure_id(self):
         r"""Gets the measure_id of this OfficialWebsiteRatingResult.
 
-        度量单位
+        度量单位。
 
         :return: The measure_id of this OfficialWebsiteRatingResult.
         :rtype: int
@@ -353,7 +353,7 @@ class OfficialWebsiteRatingResult:
     def measure_id(self, measure_id):
         r"""Sets the measure_id of this OfficialWebsiteRatingResult.
 
-        度量单位
+        度量单位。
 
         :param measure_id: The measure_id of this OfficialWebsiteRatingResult.
         :type measure_id: int
@@ -364,7 +364,7 @@ class OfficialWebsiteRatingResult:
     def product_rating_results(self):
         r"""Gets the product_rating_results of this OfficialWebsiteRatingResult.
 
-        产品询价结果
+        产品询价结果。
 
         :return: The product_rating_results of this OfficialWebsiteRatingResult.
         :rtype: list[:class:`huaweicloudsdkworkspace.v2.ProductResult`]
@@ -375,7 +375,7 @@ class OfficialWebsiteRatingResult:
     def product_rating_results(self, product_rating_results):
         r"""Sets the product_rating_results of this OfficialWebsiteRatingResult.
 
-        产品询价结果
+        产品询价结果。
 
         :param product_rating_results: The product_rating_results of this OfficialWebsiteRatingResult.
         :type product_rating_results: list[:class:`huaweicloudsdkworkspace.v2.ProductResult`]

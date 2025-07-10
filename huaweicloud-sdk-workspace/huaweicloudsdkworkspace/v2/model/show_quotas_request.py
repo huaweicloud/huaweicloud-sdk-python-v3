@@ -17,51 +17,20 @@ class ShowQuotasRequest:
     sensitive_list = []
 
     openapi_types = {
-        'type': 'str'
     }
 
     attribute_map = {
-        'type': 'type'
     }
 
-    def __init__(self, type=None):
+    def __init__(self):
         r"""ShowQuotasRequest
 
         The model defined in huaweicloud sdk
 
-        :param type: 要查询的配额类型，只支持user。
-        :type type: str
         """
         
         
-
-        self._type = None
         self.discriminator = None
-
-        if type is not None:
-            self.type = type
-
-    @property
-    def type(self):
-        r"""Gets the type of this ShowQuotasRequest.
-
-        要查询的配额类型，只支持user。
-
-        :return: The type of this ShowQuotasRequest.
-        :rtype: str
-        """
-        return self._type
-
-    @type.setter
-    def type(self, type):
-        r"""Sets the type of this ShowQuotasRequest.
-
-        要查询的配额类型，只支持user。
-
-        :param type: The type of this ShowQuotasRequest.
-        :type type: str
-        """
-        self._type = type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

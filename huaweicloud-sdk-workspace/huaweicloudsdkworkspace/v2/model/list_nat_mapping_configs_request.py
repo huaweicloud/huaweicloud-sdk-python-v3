@@ -29,7 +29,7 @@ class ListNatMappingConfigsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param site_id: 站点ID
+        :param site_id: 站点ID。
         :type site_id: str
         """
         
@@ -45,7 +45,7 @@ class ListNatMappingConfigsRequest:
     def site_id(self):
         r"""Gets the site_id of this ListNatMappingConfigsRequest.
 
-        站点ID
+        站点ID。
 
         :return: The site_id of this ListNatMappingConfigsRequest.
         :rtype: str
@@ -56,7 +56,7 @@ class ListNatMappingConfigsRequest:
     def site_id(self, site_id):
         r"""Sets the site_id of this ListNatMappingConfigsRequest.
 
-        站点ID
+        站点ID。
 
         :param site_id: The site_id of this ListNatMappingConfigsRequest.
         :type site_id: str

@@ -31,9 +31,9 @@ class SiteQuotaNoLimit:
 
         The model defined in huaweicloud sdk
 
-        :param resources: 配额资源列表
+        :param resources: 配额资源列表。
         :type resources: list[:class:`huaweicloudsdkworkspace.v2.ResourceNoLimit`]
-        :param site_id: 站点ID
+        :param site_id: 站点ID。
         :type site_id: str
         """
         
@@ -51,7 +51,7 @@ class SiteQuotaNoLimit:
     def resources(self):
         r"""Gets the resources of this SiteQuotaNoLimit.
 
-        配额资源列表
+        配额资源列表。
 
         :return: The resources of this SiteQuotaNoLimit.
         :rtype: list[:class:`huaweicloudsdkworkspace.v2.ResourceNoLimit`]
@@ -62,7 +62,7 @@ class SiteQuotaNoLimit:
     def resources(self, resources):
         r"""Sets the resources of this SiteQuotaNoLimit.
 
-        配额资源列表
+        配额资源列表。
 
         :param resources: The resources of this SiteQuotaNoLimit.
         :type resources: list[:class:`huaweicloudsdkworkspace.v2.ResourceNoLimit`]
@@ -73,7 +73,7 @@ class SiteQuotaNoLimit:
     def site_id(self):
         r"""Gets the site_id of this SiteQuotaNoLimit.
 
-        站点ID
+        站点ID。
 
         :return: The site_id of this SiteQuotaNoLimit.
         :rtype: str
@@ -84,7 +84,7 @@ class SiteQuotaNoLimit:
     def site_id(self, site_id):
         r"""Sets the site_id of this SiteQuotaNoLimit.
 
-        站点ID
+        站点ID。
 
         :param site_id: The site_id of this SiteQuotaNoLimit.
         :type site_id: str

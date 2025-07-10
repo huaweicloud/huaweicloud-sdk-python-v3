@@ -49,13 +49,13 @@ class ListScriptTasksRequest:
 
         The model defined in huaweicloud sdk
 
-        :param offset: 查询的偏移量。
+        :param offset: 查询的偏移量，默认值0。
         :type offset: int
-        :param limit: 单次查询的大小[1-100]。
+        :param limit: 单次查询的大小[1-100]，默认值10。
         :type limit: int
         :param resource_group_id: 执行脚本的资源组ID。
         :type resource_group_id: list[str]
-        :param script_id: 脚本ID
+        :param script_id: 脚本ID。
         :type script_id: str
         :param script_name: 脚本名。
         :type script_name: str
@@ -115,7 +115,7 @@ class ListScriptTasksRequest:
     def offset(self):
         r"""Gets the offset of this ListScriptTasksRequest.
 
-        查询的偏移量。
+        查询的偏移量，默认值0。
 
         :return: The offset of this ListScriptTasksRequest.
         :rtype: int
@@ -126,7 +126,7 @@ class ListScriptTasksRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListScriptTasksRequest.
 
-        查询的偏移量。
+        查询的偏移量，默认值0。
 
         :param offset: The offset of this ListScriptTasksRequest.
         :type offset: int
@@ -137,7 +137,7 @@ class ListScriptTasksRequest:
     def limit(self):
         r"""Gets the limit of this ListScriptTasksRequest.
 
-        单次查询的大小[1-100]。
+        单次查询的大小[1-100]，默认值10。
 
         :return: The limit of this ListScriptTasksRequest.
         :rtype: int
@@ -148,7 +148,7 @@ class ListScriptTasksRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListScriptTasksRequest.
 
-        单次查询的大小[1-100]。
+        单次查询的大小[1-100]，默认值10。
 
         :param limit: The limit of this ListScriptTasksRequest.
         :type limit: int
@@ -181,7 +181,7 @@ class ListScriptTasksRequest:
     def script_id(self):
         r"""Gets the script_id of this ListScriptTasksRequest.
 
-        脚本ID
+        脚本ID。
 
         :return: The script_id of this ListScriptTasksRequest.
         :rtype: str
@@ -192,7 +192,7 @@ class ListScriptTasksRequest:
     def script_id(self, script_id):
         r"""Sets the script_id of this ListScriptTasksRequest.
 
-        脚本ID
+        脚本ID。
 
         :param script_id: The script_id of this ListScriptTasksRequest.
         :type script_id: str

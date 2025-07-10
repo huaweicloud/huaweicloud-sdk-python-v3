@@ -20,7 +20,6 @@ class UpdateSubnetBandwidthReq:
         'bandwidth_name': 'str',
         'bandwidth_size': 'int',
         'enterprise_project_id': 'str',
-        'order_id': 'str',
         'charge_mode': 'str'
     }
 
@@ -28,11 +27,10 @@ class UpdateSubnetBandwidthReq:
         'bandwidth_name': 'bandwidth_name',
         'bandwidth_size': 'bandwidth_size',
         'enterprise_project_id': 'enterprise_project_id',
-        'order_id': 'order_id',
         'charge_mode': 'charge_mode'
     }
 
-    def __init__(self, bandwidth_name=None, bandwidth_size=None, enterprise_project_id=None, order_id=None, charge_mode=None):
+    def __init__(self, bandwidth_name=None, bandwidth_size=None, enterprise_project_id=None, charge_mode=None):
         r"""UpdateSubnetBandwidthReq
 
         The model defined in huaweicloud sdk
@@ -41,10 +39,8 @@ class UpdateSubnetBandwidthReq:
         :type bandwidth_name: str
         :param bandwidth_size: 云办公带宽大小。
         :type bandwidth_size: int
-        :param enterprise_project_id: 企业项目ID，默认\&quot;0\&quot;
+        :param enterprise_project_id: 企业项目ID，默认\&quot;0。\&quot;
         :type enterprise_project_id: str
-        :param order_id: 包周期订购ID，CBC订购回调时使用。
-        :type order_id: str
         :param charge_mode: 计费模式 - wks_bandwidth：按带宽计费。 - free: 不计费，不支持包周期订购。 - wks_traffic：按流量计费
         :type charge_mode: str
         """
@@ -54,7 +50,6 @@ class UpdateSubnetBandwidthReq:
         self._bandwidth_name = None
         self._bandwidth_size = None
         self._enterprise_project_id = None
-        self._order_id = None
         self._charge_mode = None
         self.discriminator = None
 
@@ -64,8 +59,6 @@ class UpdateSubnetBandwidthReq:
             self.bandwidth_size = bandwidth_size
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
-        if order_id is not None:
-            self.order_id = order_id
         if charge_mode is not None:
             self.charge_mode = charge_mode
 
@@ -117,7 +110,7 @@ class UpdateSubnetBandwidthReq:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this UpdateSubnetBandwidthReq.
 
-        企业项目ID，默认\"0\"
+        企业项目ID，默认\"0。\"
 
         :return: The enterprise_project_id of this UpdateSubnetBandwidthReq.
         :rtype: str
@@ -128,34 +121,12 @@ class UpdateSubnetBandwidthReq:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this UpdateSubnetBandwidthReq.
 
-        企业项目ID，默认\"0\"
+        企业项目ID，默认\"0。\"
 
         :param enterprise_project_id: The enterprise_project_id of this UpdateSubnetBandwidthReq.
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
-
-    @property
-    def order_id(self):
-        r"""Gets the order_id of this UpdateSubnetBandwidthReq.
-
-        包周期订购ID，CBC订购回调时使用。
-
-        :return: The order_id of this UpdateSubnetBandwidthReq.
-        :rtype: str
-        """
-        return self._order_id
-
-    @order_id.setter
-    def order_id(self, order_id):
-        r"""Sets the order_id of this UpdateSubnetBandwidthReq.
-
-        包周期订购ID，CBC订购回调时使用。
-
-        :param order_id: The order_id of this UpdateSubnetBandwidthReq.
-        :type order_id: str
-        """
-        self._order_id = order_id
 
     @property
     def charge_mode(self):

@@ -31,7 +31,7 @@ class AssociateDesktopsEipReq:
 
         The model defined in huaweicloud sdk
 
-        :param eip_id: 桌面绑定的Eip的id。
+        :param eip_id: 桌面绑定的EIP的id。
         :type eip_id: str
         :param desktop_id: 桌面id。
         :type desktop_id: str
@@ -50,7 +50,7 @@ class AssociateDesktopsEipReq:
     def eip_id(self):
         r"""Gets the eip_id of this AssociateDesktopsEipReq.
 
-        桌面绑定的Eip的id。
+        桌面绑定的EIP的id。
 
         :return: The eip_id of this AssociateDesktopsEipReq.
         :rtype: str
@@ -61,7 +61,7 @@ class AssociateDesktopsEipReq:
     def eip_id(self, eip_id):
         r"""Sets the eip_id of this AssociateDesktopsEipReq.
 
-        桌面绑定的Eip的id。
+        桌面绑定的EIP的id。
 
         :param eip_id: The eip_id of this AssociateDesktopsEipReq.
         :type eip_id: str

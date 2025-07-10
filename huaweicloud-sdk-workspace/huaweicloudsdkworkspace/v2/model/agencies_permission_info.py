@@ -31,9 +31,9 @@ class AgenciesPermissionInfo:
 
         The model defined in huaweicloud sdk
 
-        :param system_permission_display_names: 委托权限项
+        :param system_permission_display_names: 委托权限项。
         :type system_permission_display_names: list[str]
-        :param wanted_system_permission_display_names: 需要委托的权限项
+        :param wanted_system_permission_display_names: 需要委托的权限项。
         :type wanted_system_permission_display_names: list[str]
         """
         
@@ -52,7 +52,7 @@ class AgenciesPermissionInfo:
     def system_permission_display_names(self):
         r"""Gets the system_permission_display_names of this AgenciesPermissionInfo.
 
-        委托权限项
+        委托权限项。
 
         :return: The system_permission_display_names of this AgenciesPermissionInfo.
         :rtype: list[str]
@@ -63,7 +63,7 @@ class AgenciesPermissionInfo:
     def system_permission_display_names(self, system_permission_display_names):
         r"""Sets the system_permission_display_names of this AgenciesPermissionInfo.
 
-        委托权限项
+        委托权限项。
 
         :param system_permission_display_names: The system_permission_display_names of this AgenciesPermissionInfo.
         :type system_permission_display_names: list[str]
@@ -74,7 +74,7 @@ class AgenciesPermissionInfo:
     def wanted_system_permission_display_names(self):
         r"""Gets the wanted_system_permission_display_names of this AgenciesPermissionInfo.
 
-        需要委托的权限项
+        需要委托的权限项。
 
         :return: The wanted_system_permission_display_names of this AgenciesPermissionInfo.
         :rtype: list[str]
@@ -85,7 +85,7 @@ class AgenciesPermissionInfo:
     def wanted_system_permission_display_names(self, wanted_system_permission_display_names):
         r"""Sets the wanted_system_permission_display_names of this AgenciesPermissionInfo.
 
-        需要委托的权限项
+        需要委托的权限项。
 
         :param wanted_system_permission_display_names: The wanted_system_permission_display_names of this AgenciesPermissionInfo.
         :type wanted_system_permission_display_names: list[str]

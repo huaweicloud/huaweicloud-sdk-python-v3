@@ -2375,6 +2375,10 @@ class EcsAsyncClient(Client):
             query_params.append(('availability_zone', local_var_params['availability_zone']))
         if 'flavor_id' in local_var_params:
             query_params.append(('flavor_id', local_var_params['flavor_id']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
 
         header_params = {}
 

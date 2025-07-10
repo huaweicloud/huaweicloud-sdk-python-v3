@@ -33,9 +33,9 @@ class AlarmMetric:
 
         The model defined in huaweicloud sdk
 
-        :param namespace: 查询服务的命名空间
+        :param namespace: 查询服务的命名空间。
         :type namespace: str
-        :param metric_name: 资源的监控指标名称
+        :param metric_name: 资源的监控指标名称。
         :type metric_name: str
         :param dimensions: 指标维度，目前最大可添加4个维度。
         :type dimensions: list[:class:`huaweicloudsdkworkspace.v2.AlarmMetricDimension`]
@@ -59,7 +59,7 @@ class AlarmMetric:
     def namespace(self):
         r"""Gets the namespace of this AlarmMetric.
 
-        查询服务的命名空间
+        查询服务的命名空间。
 
         :return: The namespace of this AlarmMetric.
         :rtype: str
@@ -70,7 +70,7 @@ class AlarmMetric:
     def namespace(self, namespace):
         r"""Sets the namespace of this AlarmMetric.
 
-        查询服务的命名空间
+        查询服务的命名空间。
 
         :param namespace: The namespace of this AlarmMetric.
         :type namespace: str
@@ -81,7 +81,7 @@ class AlarmMetric:
     def metric_name(self):
         r"""Gets the metric_name of this AlarmMetric.
 
-        资源的监控指标名称
+        资源的监控指标名称。
 
         :return: The metric_name of this AlarmMetric.
         :rtype: str
@@ -92,7 +92,7 @@ class AlarmMetric:
     def metric_name(self, metric_name):
         r"""Sets the metric_name of this AlarmMetric.
 
-        资源的监控指标名称
+        资源的监控指标名称。
 
         :param metric_name: The metric_name of this AlarmMetric.
         :type metric_name: str

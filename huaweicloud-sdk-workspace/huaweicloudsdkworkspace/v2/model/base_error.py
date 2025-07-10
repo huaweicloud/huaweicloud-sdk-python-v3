@@ -17,80 +17,20 @@ class BaseError:
     sensitive_list = []
 
     openapi_types = {
-        'error_code': 'str',
-        'error_msg': 'str'
     }
 
     attribute_map = {
-        'error_code': 'error_code',
-        'error_msg': 'error_msg'
     }
 
-    def __init__(self, error_code=None, error_msg=None):
+    def __init__(self):
         r"""BaseError
 
         The model defined in huaweicloud sdk
 
-        :param error_code: 错误码，失败时返回。
-        :type error_code: str
-        :param error_msg: 错误描述。
-        :type error_msg: str
         """
         
         
-
-        self._error_code = None
-        self._error_msg = None
         self.discriminator = None
-
-        if error_code is not None:
-            self.error_code = error_code
-        if error_msg is not None:
-            self.error_msg = error_msg
-
-    @property
-    def error_code(self):
-        r"""Gets the error_code of this BaseError.
-
-        错误码，失败时返回。
-
-        :return: The error_code of this BaseError.
-        :rtype: str
-        """
-        return self._error_code
-
-    @error_code.setter
-    def error_code(self, error_code):
-        r"""Sets the error_code of this BaseError.
-
-        错误码，失败时返回。
-
-        :param error_code: The error_code of this BaseError.
-        :type error_code: str
-        """
-        self._error_code = error_code
-
-    @property
-    def error_msg(self):
-        r"""Gets the error_msg of this BaseError.
-
-        错误描述。
-
-        :return: The error_msg of this BaseError.
-        :rtype: str
-        """
-        return self._error_msg
-
-    @error_msg.setter
-    def error_msg(self, error_msg):
-        r"""Sets the error_msg of this BaseError.
-
-        错误描述。
-
-        :param error_msg: The error_msg of this BaseError.
-        :type error_msg: str
-        """
-        self._error_msg = error_msg
 
     def to_dict(self):
         """Returns the model properties as a dict"""

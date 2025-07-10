@@ -19,15 +19,9 @@ class ScriptTaskInfo:
     openapi_types = {
         'id': 'str',
         'task_scripts': 'list[ScriptTaskInfoTaskScripts]',
-        'command_content': 'str',
-        'command_type': 'str',
         'resource_type': 'str',
-        'resource_group_id': 'str',
-        'resource_group_type': 'str',
         'resource_ids': 'list[str]',
         'gray_resource_ids': 'list[str]',
-        'pre_start': 'str',
-        'post_finish': 'str',
         'success_num': 'int',
         'failed_num': 'int',
         'skip_num': 'int',
@@ -39,15 +33,9 @@ class ScriptTaskInfo:
     attribute_map = {
         'id': 'id',
         'task_scripts': 'task_scripts',
-        'command_content': 'command_content',
-        'command_type': 'command_type',
         'resource_type': 'resource_type',
-        'resource_group_id': 'resource_group_id',
-        'resource_group_type': 'resource_group_type',
         'resource_ids': 'resource_ids',
         'gray_resource_ids': 'gray_resource_ids',
-        'pre_start': 'pre_start',
-        'post_finish': 'post_finish',
         'success_num': 'success_num',
         'failed_num': 'failed_num',
         'skip_num': 'skip_num',
@@ -56,7 +44,7 @@ class ScriptTaskInfo:
         'status': 'status'
     }
 
-    def __init__(self, id=None, task_scripts=None, command_content=None, command_type=None, resource_type=None, resource_group_id=None, resource_group_type=None, resource_ids=None, gray_resource_ids=None, pre_start=None, post_finish=None, success_num=None, failed_num=None, skip_num=None, start_time=None, end_time=None, status=None):
+    def __init__(self, id=None, task_scripts=None, resource_type=None, resource_ids=None, gray_resource_ids=None, success_num=None, failed_num=None, skip_num=None, start_time=None, end_time=None, status=None):
         r"""ScriptTaskInfo
 
         The model defined in huaweicloud sdk
@@ -65,24 +53,12 @@ class ScriptTaskInfo:
         :type id: str
         :param task_scripts: 脚本列表。
         :type task_scripts: list[:class:`huaweicloudsdkworkspace.v2.ScriptTaskInfoTaskScripts`]
-        :param command_content: 执行命令时输入的命令。
-        :type command_content: str
-        :param command_type: 命令行类型(POWERSHELL/BAT/SHELL)。
-        :type command_type: str
         :param resource_type: 资源类型，如DESKTOP。
         :type resource_type: str
-        :param resource_group_id: 资源组ID，如桌面池ID。
-        :type resource_group_id: str
-        :param resource_group_type: 资源组类型，如DESKTOP_POOL。
-        :type resource_group_type: str
         :param resource_ids: 执行脚本的资源ID列表。
         :type resource_ids: list[str]
         :param gray_resource_ids: 灰度批次执行资源ID列表。
         :type gray_resource_ids: list[str]
-        :param pre_start: 执行脚本前置步骤。
-        :type pre_start: str
-        :param post_finish: 执行脚本后置步骤。
-        :type post_finish: str
         :param success_num: task中成功的执行记录数量。
         :type success_num: int
         :param failed_num: task中失败的执行记录数量。
@@ -101,15 +77,9 @@ class ScriptTaskInfo:
 
         self._id = None
         self._task_scripts = None
-        self._command_content = None
-        self._command_type = None
         self._resource_type = None
-        self._resource_group_id = None
-        self._resource_group_type = None
         self._resource_ids = None
         self._gray_resource_ids = None
-        self._pre_start = None
-        self._post_finish = None
         self._success_num = None
         self._failed_num = None
         self._skip_num = None
@@ -122,24 +92,12 @@ class ScriptTaskInfo:
             self.id = id
         if task_scripts is not None:
             self.task_scripts = task_scripts
-        if command_content is not None:
-            self.command_content = command_content
-        if command_type is not None:
-            self.command_type = command_type
         if resource_type is not None:
             self.resource_type = resource_type
-        if resource_group_id is not None:
-            self.resource_group_id = resource_group_id
-        if resource_group_type is not None:
-            self.resource_group_type = resource_group_type
         if resource_ids is not None:
             self.resource_ids = resource_ids
         if gray_resource_ids is not None:
             self.gray_resource_ids = gray_resource_ids
-        if pre_start is not None:
-            self.pre_start = pre_start
-        if post_finish is not None:
-            self.post_finish = post_finish
         if success_num is not None:
             self.success_num = success_num
         if failed_num is not None:
@@ -198,50 +156,6 @@ class ScriptTaskInfo:
         self._task_scripts = task_scripts
 
     @property
-    def command_content(self):
-        r"""Gets the command_content of this ScriptTaskInfo.
-
-        执行命令时输入的命令。
-
-        :return: The command_content of this ScriptTaskInfo.
-        :rtype: str
-        """
-        return self._command_content
-
-    @command_content.setter
-    def command_content(self, command_content):
-        r"""Sets the command_content of this ScriptTaskInfo.
-
-        执行命令时输入的命令。
-
-        :param command_content: The command_content of this ScriptTaskInfo.
-        :type command_content: str
-        """
-        self._command_content = command_content
-
-    @property
-    def command_type(self):
-        r"""Gets the command_type of this ScriptTaskInfo.
-
-        命令行类型(POWERSHELL/BAT/SHELL)。
-
-        :return: The command_type of this ScriptTaskInfo.
-        :rtype: str
-        """
-        return self._command_type
-
-    @command_type.setter
-    def command_type(self, command_type):
-        r"""Sets the command_type of this ScriptTaskInfo.
-
-        命令行类型(POWERSHELL/BAT/SHELL)。
-
-        :param command_type: The command_type of this ScriptTaskInfo.
-        :type command_type: str
-        """
-        self._command_type = command_type
-
-    @property
     def resource_type(self):
         r"""Gets the resource_type of this ScriptTaskInfo.
 
@@ -262,50 +176,6 @@ class ScriptTaskInfo:
         :type resource_type: str
         """
         self._resource_type = resource_type
-
-    @property
-    def resource_group_id(self):
-        r"""Gets the resource_group_id of this ScriptTaskInfo.
-
-        资源组ID，如桌面池ID。
-
-        :return: The resource_group_id of this ScriptTaskInfo.
-        :rtype: str
-        """
-        return self._resource_group_id
-
-    @resource_group_id.setter
-    def resource_group_id(self, resource_group_id):
-        r"""Sets the resource_group_id of this ScriptTaskInfo.
-
-        资源组ID，如桌面池ID。
-
-        :param resource_group_id: The resource_group_id of this ScriptTaskInfo.
-        :type resource_group_id: str
-        """
-        self._resource_group_id = resource_group_id
-
-    @property
-    def resource_group_type(self):
-        r"""Gets the resource_group_type of this ScriptTaskInfo.
-
-        资源组类型，如DESKTOP_POOL。
-
-        :return: The resource_group_type of this ScriptTaskInfo.
-        :rtype: str
-        """
-        return self._resource_group_type
-
-    @resource_group_type.setter
-    def resource_group_type(self, resource_group_type):
-        r"""Sets the resource_group_type of this ScriptTaskInfo.
-
-        资源组类型，如DESKTOP_POOL。
-
-        :param resource_group_type: The resource_group_type of this ScriptTaskInfo.
-        :type resource_group_type: str
-        """
-        self._resource_group_type = resource_group_type
 
     @property
     def resource_ids(self):
@@ -350,50 +220,6 @@ class ScriptTaskInfo:
         :type gray_resource_ids: list[str]
         """
         self._gray_resource_ids = gray_resource_ids
-
-    @property
-    def pre_start(self):
-        r"""Gets the pre_start of this ScriptTaskInfo.
-
-        执行脚本前置步骤。
-
-        :return: The pre_start of this ScriptTaskInfo.
-        :rtype: str
-        """
-        return self._pre_start
-
-    @pre_start.setter
-    def pre_start(self, pre_start):
-        r"""Sets the pre_start of this ScriptTaskInfo.
-
-        执行脚本前置步骤。
-
-        :param pre_start: The pre_start of this ScriptTaskInfo.
-        :type pre_start: str
-        """
-        self._pre_start = pre_start
-
-    @property
-    def post_finish(self):
-        r"""Gets the post_finish of this ScriptTaskInfo.
-
-        执行脚本后置步骤。
-
-        :return: The post_finish of this ScriptTaskInfo.
-        :rtype: str
-        """
-        return self._post_finish
-
-    @post_finish.setter
-    def post_finish(self, post_finish):
-        r"""Sets the post_finish of this ScriptTaskInfo.
-
-        执行脚本后置步骤。
-
-        :param post_finish: The post_finish of this ScriptTaskInfo.
-        :type post_finish: str
-        """
-        self._post_finish = post_finish
 
     @property
     def success_num(self):

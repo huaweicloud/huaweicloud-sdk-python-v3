@@ -164,6 +164,73 @@ class CdnClient(Client):
 
         return http_info
 
+    def batch_update_rule_status(self, request):
+        r"""批量更新规则状态及优先级
+
+        批量更新规则状态及优先级。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchUpdateRuleStatus
+        :type request: :class:`huaweicloudsdkcdn.v2.BatchUpdateRuleStatusRequest`
+        :rtype: :class:`huaweicloudsdkcdn.v2.BatchUpdateRuleStatusResponse`
+        """
+        http_info = self._batch_update_rule_status_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_update_rule_status_invoker(self, request):
+        http_info = self._batch_update_rule_status_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_update_rule_status_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/cdn/configuration/domains/{domain_name}/rules/batch-update",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchUpdateRuleStatusResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'domain_name' in local_var_params:
+            path_params['domain_name'] = local_var_params['domain_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_domain(self, request):
         r"""创建加速域名
 
@@ -363,6 +430,142 @@ class CdnClient(Client):
 
         return http_info
 
+    def create_rule_new(self, request):
+        r"""创建规则引擎规则
+
+        规则引擎功能通过图形化的方式实现各种规则配置，实现更加灵活、细粒度的规则配置。通过限制触发条件，控制当前配置生效的资源范围，满足多种场景的配置需求。
+        - 请提交工单开通规则引擎功能后再使用当前接口。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateRuleNew
+        :type request: :class:`huaweicloudsdkcdn.v2.CreateRuleNewRequest`
+        :rtype: :class:`huaweicloudsdkcdn.v2.CreateRuleNewResponse`
+        """
+        http_info = self._create_rule_new_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_rule_new_invoker(self, request):
+        http_info = self._create_rule_new_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_rule_new_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/cdn/configuration/domains/{domain_name}/rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateRuleNewResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'domain_name' in local_var_params:
+            path_params['domain_name'] = local_var_params['domain_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_share_cache_groups(self, request):
+        r"""创建共享缓存组
+
+        配置共享缓存组，将一个域名设置为主域名，组内其他域名共享该域名的缓存，提高缓存命中率。
+        - 只有缓存规则中“URL参数”的配置为“忽略参数”或者“不忽略参数”的域名才能加入共享缓存组。
+        - 每个账号最多配置500个共享缓存组。
+        - 单租户调用频率：5次/s。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateShareCacheGroups
+        :type request: :class:`huaweicloudsdkcdn.v2.CreateShareCacheGroupsRequest`
+        :rtype: :class:`huaweicloudsdkcdn.v2.CreateShareCacheGroupsResponse`
+        """
+        http_info = self._create_share_cache_groups_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_share_cache_groups_invoker(self, request):
+        http_info = self._create_share_cache_groups_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_share_cache_groups_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/cdn/configuration/share-cache-groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateShareCacheGroupsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_tags(self, request):
         r"""创建资源标签配置接口
 
@@ -478,6 +681,140 @@ class CdnClient(Client):
             body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_rule_new(self, request):
+        r"""删除规则引擎规则
+
+        删除规则引擎规则。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteRuleNew
+        :type request: :class:`huaweicloudsdkcdn.v2.DeleteRuleNewRequest`
+        :rtype: :class:`huaweicloudsdkcdn.v2.DeleteRuleNewResponse`
+        """
+        http_info = self._delete_rule_new_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_rule_new_invoker(self, request):
+        http_info = self._delete_rule_new_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_rule_new_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1.0/cdn/configuration/domains/{domain_name}/rules/{rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteRuleNewResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'domain_name' in local_var_params:
+            path_params['domain_name'] = local_var_params['domain_name']
+        if 'rule_id' in local_var_params:
+            path_params['rule_id'] = local_var_params['rule_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_share_cache_groups(self, request):
+        r"""删除共享缓存组
+
+        删除新共享缓存组。
+        - 共享缓存组内不包含关联域名时才可以删除。
+        - 单租户调用频率：5次/s。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteShareCacheGroups
+        :type request: :class:`huaweicloudsdkcdn.v2.DeleteShareCacheGroupsRequest`
+        :rtype: :class:`huaweicloudsdkcdn.v2.DeleteShareCacheGroupsResponse`
+        """
+        http_info = self._delete_share_cache_groups_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_share_cache_groups_invoker(self, request):
+        http_info = self._delete_share_cache_groups_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_share_cache_groups_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1.0/cdn/configuration/share-cache-groups/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteShareCacheGroupsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -962,6 +1299,139 @@ class CdnClient(Client):
             body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_rule_details(self, request):
+        r"""查询规则引擎列表
+
+        查询规则引擎列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListRuleDetails
+        :type request: :class:`huaweicloudsdkcdn.v2.ListRuleDetailsRequest`
+        :rtype: :class:`huaweicloudsdkcdn.v2.ListRuleDetailsResponse`
+        """
+        http_info = self._list_rule_details_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_rule_details_invoker(self, request):
+        http_info = self._list_rule_details_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_rule_details_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/cdn/configuration/domains/{domain_name}/rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRuleDetailsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'domain_name' in local_var_params:
+            path_params['domain_name'] = local_var_params['domain_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_share_cache_groups(self, request):
+        r"""查询共享缓存组列表
+
+        查询共享缓存组列表。
+        - 单租户调用频率：5次/s。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListShareCacheGroups
+        :type request: :class:`huaweicloudsdkcdn.v2.ListShareCacheGroupsRequest`
+        :rtype: :class:`huaweicloudsdkcdn.v2.ListShareCacheGroupsResponse`
+        """
+        http_info = self._list_share_cache_groups_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_share_cache_groups_invoker(self, request):
+        http_info = self._list_share_cache_groups_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_share_cache_groups_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/cdn/configuration/share-cache-groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListShareCacheGroupsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -2568,6 +3038,73 @@ class CdnClient(Client):
 
         return http_info
 
+    def update_full_rule(self, request):
+        r"""全量更新规则引擎规则
+
+        全量更新规则引擎规则。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateFullRule
+        :type request: :class:`huaweicloudsdkcdn.v2.UpdateFullRuleRequest`
+        :rtype: :class:`huaweicloudsdkcdn.v2.UpdateFullRuleResponse`
+        """
+        http_info = self._update_full_rule_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_full_rule_invoker(self, request):
+        http_info = self._update_full_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_full_rule_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/cdn/configuration/domains/{domain_name}/rules/full-update",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateFullRuleResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'domain_name' in local_var_params:
+            path_params['domain_name'] = local_var_params['domain_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def update_private_bucket_access(self, request):
         r"""修改私有桶开启关闭状态
 
@@ -2620,6 +3157,143 @@ class CdnClient(Client):
             body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_rule_new(self, request):
+        r"""更新规则引擎规则
+
+        更新规则引擎规则。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateRuleNew
+        :type request: :class:`huaweicloudsdkcdn.v2.UpdateRuleNewRequest`
+        :rtype: :class:`huaweicloudsdkcdn.v2.UpdateRuleNewResponse`
+        """
+        http_info = self._update_rule_new_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_rule_new_invoker(self, request):
+        http_info = self._update_rule_new_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_rule_new_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1.0/cdn/configuration/domains/{domain_name}/rules/{rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateRuleNewResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'domain_name' in local_var_params:
+            path_params['domain_name'] = local_var_params['domain_name']
+        if 'rule_id' in local_var_params:
+            path_params['rule_id'] = local_var_params['rule_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_share_cache_groups(self, request):
+        r"""更新共享缓存组
+
+        更新共享缓存组。
+        - 单租户调用频率：5次/s。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateShareCacheGroups
+        :type request: :class:`huaweicloudsdkcdn.v2.UpdateShareCacheGroupsRequest`
+        :rtype: :class:`huaweicloudsdkcdn.v2.UpdateShareCacheGroupsResponse`
+        """
+        http_info = self._update_share_cache_groups_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_share_cache_groups_invoker(self, request):
+        http_info = self._update_share_cache_groups_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_share_cache_groups_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1.0/cdn/configuration/share-cache-groups/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateShareCacheGroupsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])

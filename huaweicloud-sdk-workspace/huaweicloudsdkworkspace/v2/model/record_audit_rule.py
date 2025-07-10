@@ -27,7 +27,10 @@ class RecordAuditRule:
         'resolution': 'str',
         'event_enable': 'bool',
         'file_suffix': 'str',
-        'regit_paths': 'str'
+        'regit_paths': 'str',
+        'app_filter_type': 'str',
+        'app_white_list': 'str',
+        'app_black_list': 'str'
     }
 
     attribute_map = {
@@ -41,10 +44,13 @@ class RecordAuditRule:
         'resolution': 'resolution',
         'event_enable': 'event_enable',
         'file_suffix': 'file_suffix',
-        'regit_paths': 'regit_paths'
+        'regit_paths': 'regit_paths',
+        'app_filter_type': 'app_filter_type',
+        'app_white_list': 'app_white_list',
+        'app_black_list': 'app_black_list'
     }
 
-    def __init__(self, record_type=None, interval_record_start_time=None, interval_record_end_time=None, op_type=None, audio_record=None, fps=None, duration=None, resolution=None, event_enable=None, file_suffix=None, regit_paths=None):
+    def __init__(self, record_type=None, interval_record_start_time=None, interval_record_end_time=None, op_type=None, audio_record=None, fps=None, duration=None, resolution=None, event_enable=None, file_suffix=None, regit_paths=None, app_filter_type=None, app_white_list=None, app_black_list=None):
         r"""RecordAuditRule
 
         The model defined in huaweicloud sdk
@@ -71,6 +77,12 @@ class RecordAuditRule:
         :type file_suffix: str
         :param regit_paths: 注册表路径，多个用\&quot;|\&quot;分隔
         :type regit_paths: str
+        :param app_filter_type: 应用过滤类型，black（黑名单）或者white（白名单）二选一
+        :type app_filter_type: str
+        :param app_white_list: APP开启/关闭白名单，仅监控配置的白名单应用列表
+        :type app_white_list: str
+        :param app_black_list: APP开启/关闭黑名单，忽略黑名单里面的应用列表
+        :type app_black_list: str
         """
         
         
@@ -86,6 +98,9 @@ class RecordAuditRule:
         self._event_enable = None
         self._file_suffix = None
         self._regit_paths = None
+        self._app_filter_type = None
+        self._app_white_list = None
+        self._app_black_list = None
         self.discriminator = None
 
         if record_type is not None:
@@ -110,6 +125,12 @@ class RecordAuditRule:
             self.file_suffix = file_suffix
         if regit_paths is not None:
             self.regit_paths = regit_paths
+        if app_filter_type is not None:
+            self.app_filter_type = app_filter_type
+        if app_white_list is not None:
+            self.app_white_list = app_white_list
+        if app_black_list is not None:
+            self.app_black_list = app_black_list
 
     @property
     def record_type(self):
@@ -352,6 +373,72 @@ class RecordAuditRule:
         :type regit_paths: str
         """
         self._regit_paths = regit_paths
+
+    @property
+    def app_filter_type(self):
+        r"""Gets the app_filter_type of this RecordAuditRule.
+
+        应用过滤类型，black（黑名单）或者white（白名单）二选一
+
+        :return: The app_filter_type of this RecordAuditRule.
+        :rtype: str
+        """
+        return self._app_filter_type
+
+    @app_filter_type.setter
+    def app_filter_type(self, app_filter_type):
+        r"""Sets the app_filter_type of this RecordAuditRule.
+
+        应用过滤类型，black（黑名单）或者white（白名单）二选一
+
+        :param app_filter_type: The app_filter_type of this RecordAuditRule.
+        :type app_filter_type: str
+        """
+        self._app_filter_type = app_filter_type
+
+    @property
+    def app_white_list(self):
+        r"""Gets the app_white_list of this RecordAuditRule.
+
+        APP开启/关闭白名单，仅监控配置的白名单应用列表
+
+        :return: The app_white_list of this RecordAuditRule.
+        :rtype: str
+        """
+        return self._app_white_list
+
+    @app_white_list.setter
+    def app_white_list(self, app_white_list):
+        r"""Sets the app_white_list of this RecordAuditRule.
+
+        APP开启/关闭白名单，仅监控配置的白名单应用列表
+
+        :param app_white_list: The app_white_list of this RecordAuditRule.
+        :type app_white_list: str
+        """
+        self._app_white_list = app_white_list
+
+    @property
+    def app_black_list(self):
+        r"""Gets the app_black_list of this RecordAuditRule.
+
+        APP开启/关闭黑名单，忽略黑名单里面的应用列表
+
+        :return: The app_black_list of this RecordAuditRule.
+        :rtype: str
+        """
+        return self._app_black_list
+
+    @app_black_list.setter
+    def app_black_list(self, app_black_list):
+        r"""Sets the app_black_list of this RecordAuditRule.
+
+        APP开启/关闭黑名单，忽略黑名单里面的应用列表
+
+        :param app_black_list: The app_black_list of this RecordAuditRule.
+        :type app_black_list: str
+        """
+        self._app_black_list = app_black_list
 
     def to_dict(self):
         """Returns the model properties as a dict"""

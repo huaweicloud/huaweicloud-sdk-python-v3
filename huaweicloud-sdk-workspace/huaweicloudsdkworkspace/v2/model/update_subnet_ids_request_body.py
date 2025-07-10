@@ -31,7 +31,7 @@ class UpdateSubnetIdsRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param subnet_ids: 业务子网id
+        :param subnet_ids: 业务子网id。
         :type subnet_ids: list[str]
         :param vpc_config_infos: VPC配置信息列表。
         :type vpc_config_infos: list[:class:`huaweicloudsdkworkspace.v2.VpcConfigInfo`]
@@ -52,7 +52,7 @@ class UpdateSubnetIdsRequestBody:
     def subnet_ids(self):
         r"""Gets the subnet_ids of this UpdateSubnetIdsRequestBody.
 
-        业务子网id
+        业务子网id。
 
         :return: The subnet_ids of this UpdateSubnetIdsRequestBody.
         :rtype: list[str]
@@ -63,7 +63,7 @@ class UpdateSubnetIdsRequestBody:
     def subnet_ids(self, subnet_ids):
         r"""Sets the subnet_ids of this UpdateSubnetIdsRequestBody.
 
-        业务子网id
+        业务子网id。
 
         :param subnet_ids: The subnet_ids of this UpdateSubnetIdsRequestBody.
         :type subnet_ids: list[str]

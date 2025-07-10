@@ -33,11 +33,11 @@ class AdOuUserInfo:
 
         The model defined in huaweicloud sdk
 
-        :param user_name: 名称
+        :param user_name: 名称。
         :type user_name: str
-        :param expired_time: 过期时间 -1代表永不过期
+        :param expired_time: 过期时间 -1代表永不过期。
         :type expired_time: str
-        :param has_existed: 是否存在于用户列表
+        :param has_existed: 是否存在于用户列表。
         :type has_existed: bool
         """
         
@@ -59,7 +59,7 @@ class AdOuUserInfo:
     def user_name(self):
         r"""Gets the user_name of this AdOuUserInfo.
 
-        名称
+        名称。
 
         :return: The user_name of this AdOuUserInfo.
         :rtype: str
@@ -70,7 +70,7 @@ class AdOuUserInfo:
     def user_name(self, user_name):
         r"""Sets the user_name of this AdOuUserInfo.
 
-        名称
+        名称。
 
         :param user_name: The user_name of this AdOuUserInfo.
         :type user_name: str
@@ -81,7 +81,7 @@ class AdOuUserInfo:
     def expired_time(self):
         r"""Gets the expired_time of this AdOuUserInfo.
 
-        过期时间 -1代表永不过期
+        过期时间 -1代表永不过期。
 
         :return: The expired_time of this AdOuUserInfo.
         :rtype: str
@@ -92,7 +92,7 @@ class AdOuUserInfo:
     def expired_time(self, expired_time):
         r"""Sets the expired_time of this AdOuUserInfo.
 
-        过期时间 -1代表永不过期
+        过期时间 -1代表永不过期。
 
         :param expired_time: The expired_time of this AdOuUserInfo.
         :type expired_time: str
@@ -103,7 +103,7 @@ class AdOuUserInfo:
     def has_existed(self):
         r"""Gets the has_existed of this AdOuUserInfo.
 
-        是否存在于用户列表
+        是否存在于用户列表。
 
         :return: The has_existed of this AdOuUserInfo.
         :rtype: bool
@@ -114,7 +114,7 @@ class AdOuUserInfo:
     def has_existed(self, has_existed):
         r"""Sets the has_existed of this AdOuUserInfo.
 
-        是否存在于用户列表
+        是否存在于用户列表。
 
         :param has_existed: The has_existed of this AdOuUserInfo.
         :type has_existed: bool

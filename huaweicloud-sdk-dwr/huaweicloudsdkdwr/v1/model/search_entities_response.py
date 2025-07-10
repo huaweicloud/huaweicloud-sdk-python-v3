@@ -20,7 +20,7 @@ class SearchEntitiesResponse(SdkResponse):
     openapi_types = {
         'code': 'str',
         'message': 'str',
-        'data': 'dict(str, list[dict(str, object)])'
+        'data': 'EntitiesData'
     }
 
     attribute_map = {
@@ -34,12 +34,12 @@ class SearchEntitiesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param code: 返回码
+        :param code: **参数解释：** 返回码。参见错误码章节。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
         :type code: str
-        :param message: 描述信息
+        :param message: **参数解释：** 描述信息 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
         :type message: str
-        :param data: 响应数据
-        :type data: dict(str, list[dict(str, object)])
+        :param data: 
+        :type data: :class:`huaweicloudsdkdwr.v1.EntitiesData`
         """
         
         super(SearchEntitiesResponse, self).__init__()
@@ -60,7 +60,7 @@ class SearchEntitiesResponse(SdkResponse):
     def code(self):
         r"""Gets the code of this SearchEntitiesResponse.
 
-        返回码
+        **参数解释：** 返回码。参见错误码章节。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :return: The code of this SearchEntitiesResponse.
         :rtype: str
@@ -71,7 +71,7 @@ class SearchEntitiesResponse(SdkResponse):
     def code(self, code):
         r"""Sets the code of this SearchEntitiesResponse.
 
-        返回码
+        **参数解释：** 返回码。参见错误码章节。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :param code: The code of this SearchEntitiesResponse.
         :type code: str
@@ -82,7 +82,7 @@ class SearchEntitiesResponse(SdkResponse):
     def message(self):
         r"""Gets the message of this SearchEntitiesResponse.
 
-        描述信息
+        **参数解释：** 描述信息 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :return: The message of this SearchEntitiesResponse.
         :rtype: str
@@ -93,7 +93,7 @@ class SearchEntitiesResponse(SdkResponse):
     def message(self, message):
         r"""Sets the message of this SearchEntitiesResponse.
 
-        描述信息
+        **参数解释：** 描述信息 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :param message: The message of this SearchEntitiesResponse.
         :type message: str
@@ -104,10 +104,8 @@ class SearchEntitiesResponse(SdkResponse):
     def data(self):
         r"""Gets the data of this SearchEntitiesResponse.
 
-        响应数据
-
         :return: The data of this SearchEntitiesResponse.
-        :rtype: dict(str, list[dict(str, object)])
+        :rtype: :class:`huaweicloudsdkdwr.v1.EntitiesData`
         """
         return self._data
 
@@ -115,10 +113,8 @@ class SearchEntitiesResponse(SdkResponse):
     def data(self, data):
         r"""Sets the data of this SearchEntitiesResponse.
 
-        响应数据
-
         :param data: The data of this SearchEntitiesResponse.
-        :type data: dict(str, list[dict(str, object)])
+        :type data: :class:`huaweicloudsdkdwr.v1.EntitiesData`
         """
         self._data = data
 

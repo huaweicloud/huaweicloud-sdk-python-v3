@@ -17,6 +17,8 @@ class SimpleDesktopInfo:
     sensitive_list = []
 
     openapi_types = {
+        'domain_id': 'str',
+        'project_id': 'str',
         'desktop_id': 'str',
         'computer_name': 'str',
         'os_host_name': 'str',
@@ -39,6 +41,8 @@ class SimpleDesktopInfo:
     }
 
     attribute_map = {
+        'domain_id': 'domain_id',
+        'project_id': 'project_id',
         'desktop_id': 'desktop_id',
         'computer_name': 'computer_name',
         'os_host_name': 'os_host_name',
@@ -60,11 +64,15 @@ class SimpleDesktopInfo:
         'task_status': 'task_status'
     }
 
-    def __init__(self, desktop_id=None, computer_name=None, os_host_name=None, created=None, ip_address=None, user_name=None, attach_user_infos=None, user_group=None, sid=None, ou_name=None, enterprise_project_id=None, tags=None, in_maintenance_mode=None, share_resource_sku=None, desktop_type=None, subnet_id=None, bill_resource_id=None, status=None, task_status=None):
+    def __init__(self, domain_id=None, project_id=None, desktop_id=None, computer_name=None, os_host_name=None, created=None, ip_address=None, user_name=None, attach_user_infos=None, user_group=None, sid=None, ou_name=None, enterprise_project_id=None, tags=None, in_maintenance_mode=None, share_resource_sku=None, desktop_type=None, subnet_id=None, bill_resource_id=None, status=None, task_status=None):
         r"""SimpleDesktopInfo
 
         The model defined in huaweicloud sdk
 
+        :param domain_id: domainId。
+        :type domain_id: str
+        :param project_id: 项目id。
+        :type project_id: str
         :param desktop_id: 桌面ID。
         :type desktop_id: str
         :param computer_name: 桌面名。
@@ -85,15 +93,15 @@ class SimpleDesktopInfo:
         :type sid: str
         :param ou_name: ou名称。
         :type ou_name: str
-        :param enterprise_project_id: 企业项目ID
+        :param enterprise_project_id: 企业项目ID。
         :type enterprise_project_id: str
         :param tags: 标签列表。
         :type tags: list[:class:`huaweicloudsdkworkspace.v2.Tag`]
-        :param in_maintenance_mode: 是否处于管理员维护模式
+        :param in_maintenance_mode: 是否处于管理员维护模式。
         :type in_maintenance_mode: bool
-        :param share_resource_sku: 桌面协同资源SKU码
+        :param share_resource_sku: 桌面协同资源SKU码。
         :type share_resource_sku: str
-        :param desktop_type: 桌面类型
+        :param desktop_type: 桌面类型。
         :type desktop_type: str
         :param subnet_id: 桌面的子网ID。
         :type subnet_id: str
@@ -107,6 +115,8 @@ class SimpleDesktopInfo:
         
         
 
+        self._domain_id = None
+        self._project_id = None
         self._desktop_id = None
         self._computer_name = None
         self._os_host_name = None
@@ -128,6 +138,10 @@ class SimpleDesktopInfo:
         self._task_status = None
         self.discriminator = None
 
+        if domain_id is not None:
+            self.domain_id = domain_id
+        if project_id is not None:
+            self.project_id = project_id
         if desktop_id is not None:
             self.desktop_id = desktop_id
         if computer_name is not None:
@@ -166,6 +180,50 @@ class SimpleDesktopInfo:
             self.status = status
         if task_status is not None:
             self.task_status = task_status
+
+    @property
+    def domain_id(self):
+        r"""Gets the domain_id of this SimpleDesktopInfo.
+
+        domainId。
+
+        :return: The domain_id of this SimpleDesktopInfo.
+        :rtype: str
+        """
+        return self._domain_id
+
+    @domain_id.setter
+    def domain_id(self, domain_id):
+        r"""Sets the domain_id of this SimpleDesktopInfo.
+
+        domainId。
+
+        :param domain_id: The domain_id of this SimpleDesktopInfo.
+        :type domain_id: str
+        """
+        self._domain_id = domain_id
+
+    @property
+    def project_id(self):
+        r"""Gets the project_id of this SimpleDesktopInfo.
+
+        项目id。
+
+        :return: The project_id of this SimpleDesktopInfo.
+        :rtype: str
+        """
+        return self._project_id
+
+    @project_id.setter
+    def project_id(self, project_id):
+        r"""Sets the project_id of this SimpleDesktopInfo.
+
+        项目id。
+
+        :param project_id: The project_id of this SimpleDesktopInfo.
+        :type project_id: str
+        """
+        self._project_id = project_id
 
     @property
     def desktop_id(self):
@@ -391,7 +449,7 @@ class SimpleDesktopInfo:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this SimpleDesktopInfo.
 
-        企业项目ID
+        企业项目ID。
 
         :return: The enterprise_project_id of this SimpleDesktopInfo.
         :rtype: str
@@ -402,7 +460,7 @@ class SimpleDesktopInfo:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this SimpleDesktopInfo.
 
-        企业项目ID
+        企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this SimpleDesktopInfo.
         :type enterprise_project_id: str
@@ -435,7 +493,7 @@ class SimpleDesktopInfo:
     def in_maintenance_mode(self):
         r"""Gets the in_maintenance_mode of this SimpleDesktopInfo.
 
-        是否处于管理员维护模式
+        是否处于管理员维护模式。
 
         :return: The in_maintenance_mode of this SimpleDesktopInfo.
         :rtype: bool
@@ -446,7 +504,7 @@ class SimpleDesktopInfo:
     def in_maintenance_mode(self, in_maintenance_mode):
         r"""Sets the in_maintenance_mode of this SimpleDesktopInfo.
 
-        是否处于管理员维护模式
+        是否处于管理员维护模式。
 
         :param in_maintenance_mode: The in_maintenance_mode of this SimpleDesktopInfo.
         :type in_maintenance_mode: bool
@@ -457,7 +515,7 @@ class SimpleDesktopInfo:
     def share_resource_sku(self):
         r"""Gets the share_resource_sku of this SimpleDesktopInfo.
 
-        桌面协同资源SKU码
+        桌面协同资源SKU码。
 
         :return: The share_resource_sku of this SimpleDesktopInfo.
         :rtype: str
@@ -468,7 +526,7 @@ class SimpleDesktopInfo:
     def share_resource_sku(self, share_resource_sku):
         r"""Sets the share_resource_sku of this SimpleDesktopInfo.
 
-        桌面协同资源SKU码
+        桌面协同资源SKU码。
 
         :param share_resource_sku: The share_resource_sku of this SimpleDesktopInfo.
         :type share_resource_sku: str
@@ -479,7 +537,7 @@ class SimpleDesktopInfo:
     def desktop_type(self):
         r"""Gets the desktop_type of this SimpleDesktopInfo.
 
-        桌面类型
+        桌面类型。
 
         :return: The desktop_type of this SimpleDesktopInfo.
         :rtype: str
@@ -490,7 +548,7 @@ class SimpleDesktopInfo:
     def desktop_type(self, desktop_type):
         r"""Sets the desktop_type of this SimpleDesktopInfo.
 
-        桌面类型
+        桌面类型。
 
         :param desktop_type: The desktop_type of this SimpleDesktopInfo.
         :type desktop_type: str

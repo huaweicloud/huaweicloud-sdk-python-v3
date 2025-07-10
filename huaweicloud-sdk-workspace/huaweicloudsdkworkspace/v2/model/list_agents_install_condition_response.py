@@ -32,7 +32,7 @@ class ListAgentsInstallConditionResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param agents_condition: 桌面agent安装情况
+        :param agents_condition: 桌面agent安装情况。
         :type agents_condition: list[:class:`huaweicloudsdkworkspace.v2.AgentsCondition`]
         :param total_count: 总共条数。
         :type total_count: int
@@ -53,7 +53,7 @@ class ListAgentsInstallConditionResponse(SdkResponse):
     def agents_condition(self):
         r"""Gets the agents_condition of this ListAgentsInstallConditionResponse.
 
-        桌面agent安装情况
+        桌面agent安装情况。
 
         :return: The agents_condition of this ListAgentsInstallConditionResponse.
         :rtype: list[:class:`huaweicloudsdkworkspace.v2.AgentsCondition`]
@@ -64,7 +64,7 @@ class ListAgentsInstallConditionResponse(SdkResponse):
     def agents_condition(self, agents_condition):
         r"""Sets the agents_condition of this ListAgentsInstallConditionResponse.
 
-        桌面agent安装情况
+        桌面agent安装情况。
 
         :param agents_condition: The agents_condition of this ListAgentsInstallConditionResponse.
         :type agents_condition: list[:class:`huaweicloudsdkworkspace.v2.AgentsCondition`]

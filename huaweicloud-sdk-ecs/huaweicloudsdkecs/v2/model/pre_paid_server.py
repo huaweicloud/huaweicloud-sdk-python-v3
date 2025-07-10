@@ -43,7 +43,8 @@ class PrePaidServer:
         'cpu_options': 'CpuOptions',
         'security_options': 'SecurityOptions',
         'serial_console_options': 'SerialConsoleOptions',
-        'metadata_options': 'UpdateServerMetadataOptionsRequestBody'
+        'metadata_options': 'UpdateServerMetadataOptionsRequestBody',
+        'enclave_options': 'EnclaveOptions'
     }
 
     attribute_map = {
@@ -73,10 +74,11 @@ class PrePaidServer:
         'cpu_options': 'cpu_options',
         'security_options': 'security_options',
         'serial_console_options': 'serial_console_options',
-        'metadata_options': 'metadata_options'
+        'metadata_options': 'metadata_options',
+        'enclave_options': 'enclave_options'
     }
 
-    def __init__(self, auto_terminate_time=None, image_ref=None, flavor_ref=None, name=None, user_data=None, admin_pass=None, key_name=None, vpcid=None, nics=None, publicip=None, count=None, is_auto_rename=None, root_volume=None, data_volumes=None, security_groups=None, availability_zone=None, batch_create_in_multi_az=None, extendparam=None, metadata=None, osscheduler_hints=None, tags=None, server_tags=None, description=None, cpu_options=None, security_options=None, serial_console_options=None, metadata_options=None):
+    def __init__(self, auto_terminate_time=None, image_ref=None, flavor_ref=None, name=None, user_data=None, admin_pass=None, key_name=None, vpcid=None, nics=None, publicip=None, count=None, is_auto_rename=None, root_volume=None, data_volumes=None, security_groups=None, availability_zone=None, batch_create_in_multi_az=None, extendparam=None, metadata=None, osscheduler_hints=None, tags=None, server_tags=None, description=None, cpu_options=None, security_options=None, serial_console_options=None, metadata_options=None, enclave_options=None):
         r"""PrePaidServer
 
         The model defined in huaweicloud sdk
@@ -135,6 +137,8 @@ class PrePaidServer:
         :type serial_console_options: :class:`huaweicloudsdkecs.v2.SerialConsoleOptions`
         :param metadata_options: 
         :type metadata_options: :class:`huaweicloudsdkecs.v2.UpdateServerMetadataOptionsRequestBody`
+        :param enclave_options: 
+        :type enclave_options: :class:`huaweicloudsdkecs.v2.EnclaveOptions`
         """
         
         
@@ -166,6 +170,7 @@ class PrePaidServer:
         self._security_options = None
         self._serial_console_options = None
         self._metadata_options = None
+        self._enclave_options = None
         self.discriminator = None
 
         if auto_terminate_time is not None:
@@ -216,6 +221,8 @@ class PrePaidServer:
             self.serial_console_options = serial_console_options
         if metadata_options is not None:
             self.metadata_options = metadata_options
+        if enclave_options is not None:
+            self.enclave_options = enclave_options
 
     @property
     def auto_terminate_time(self):
@@ -778,6 +785,24 @@ class PrePaidServer:
         :type metadata_options: :class:`huaweicloudsdkecs.v2.UpdateServerMetadataOptionsRequestBody`
         """
         self._metadata_options = metadata_options
+
+    @property
+    def enclave_options(self):
+        r"""Gets the enclave_options of this PrePaidServer.
+
+        :return: The enclave_options of this PrePaidServer.
+        :rtype: :class:`huaweicloudsdkecs.v2.EnclaveOptions`
+        """
+        return self._enclave_options
+
+    @enclave_options.setter
+    def enclave_options(self, enclave_options):
+        r"""Sets the enclave_options of this PrePaidServer.
+
+        :param enclave_options: The enclave_options of this PrePaidServer.
+        :type enclave_options: :class:`huaweicloudsdkecs.v2.EnclaveOptions`
+        """
+        self._enclave_options = enclave_options
 
     def to_dict(self):
         """Returns the model properties as a dict"""

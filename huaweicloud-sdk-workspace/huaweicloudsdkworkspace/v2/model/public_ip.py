@@ -31,9 +31,9 @@ class PublicIp:
 
         The model defined in huaweicloud sdk
 
-        :param id: 弹性IP唯一标识
+        :param id: 弹性IP唯一标识。
         :type id: str
-        :param public_ip_address: 弹性IP地址
+        :param public_ip_address: 弹性IP地址。
         :type public_ip_address: str
         """
         
@@ -52,7 +52,7 @@ class PublicIp:
     def id(self):
         r"""Gets the id of this PublicIp.
 
-        弹性IP唯一标识
+        弹性IP唯一标识。
 
         :return: The id of this PublicIp.
         :rtype: str
@@ -63,7 +63,7 @@ class PublicIp:
     def id(self, id):
         r"""Sets the id of this PublicIp.
 
-        弹性IP唯一标识
+        弹性IP唯一标识。
 
         :param id: The id of this PublicIp.
         :type id: str
@@ -74,7 +74,7 @@ class PublicIp:
     def public_ip_address(self):
         r"""Gets the public_ip_address of this PublicIp.
 
-        弹性IP地址
+        弹性IP地址。
 
         :return: The public_ip_address of this PublicIp.
         :rtype: str
@@ -85,7 +85,7 @@ class PublicIp:
     def public_ip_address(self, public_ip_address):
         r"""Sets the public_ip_address of this PublicIp.
 
-        弹性IP地址
+        弹性IP地址。
 
         :param public_ip_address: The public_ip_address of this PublicIp.
         :type public_ip_address: str

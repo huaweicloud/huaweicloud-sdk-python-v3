@@ -29,7 +29,7 @@ class PoliciesPeripheralsDriverInterfaceRedirection:
 
         The model defined in huaweicloud sdk
 
-        :param api_redir_driver_list: 自定义驱动列表。（填写安装在终端的驱动文件名或驱动文件的全路径，支持配置多个，多个之间以\&quot;;\&quot;隔开）。
+        :param api_redir_driver_list: 自定义驱动列表。（填写安装在终端的驱动文件名或驱动文件的全路径，支持配置多个，多个之间以\&quot;;\&quot;隔开），长度不能超过1000个字符。
         :type api_redir_driver_list: str
         """
         
@@ -45,7 +45,7 @@ class PoliciesPeripheralsDriverInterfaceRedirection:
     def api_redir_driver_list(self):
         r"""Gets the api_redir_driver_list of this PoliciesPeripheralsDriverInterfaceRedirection.
 
-        自定义驱动列表。（填写安装在终端的驱动文件名或驱动文件的全路径，支持配置多个，多个之间以\";\"隔开）。
+        自定义驱动列表。（填写安装在终端的驱动文件名或驱动文件的全路径，支持配置多个，多个之间以\";\"隔开），长度不能超过1000个字符。
 
         :return: The api_redir_driver_list of this PoliciesPeripheralsDriverInterfaceRedirection.
         :rtype: str
@@ -56,7 +56,7 @@ class PoliciesPeripheralsDriverInterfaceRedirection:
     def api_redir_driver_list(self, api_redir_driver_list):
         r"""Sets the api_redir_driver_list of this PoliciesPeripheralsDriverInterfaceRedirection.
 
-        自定义驱动列表。（填写安装在终端的驱动文件名或驱动文件的全路径，支持配置多个，多个之间以\";\"隔开）。
+        自定义驱动列表。（填写安装在终端的驱动文件名或驱动文件的全路径，支持配置多个，多个之间以\";\"隔开），长度不能超过1000个字符。
 
         :param api_redir_driver_list: The api_redir_driver_list of this PoliciesPeripheralsDriverInterfaceRedirection.
         :type api_redir_driver_list: str

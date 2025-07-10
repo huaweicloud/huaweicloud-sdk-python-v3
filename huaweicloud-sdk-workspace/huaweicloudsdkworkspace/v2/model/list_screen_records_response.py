@@ -18,7 +18,7 @@ class ListScreenRecordsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'screen_records': 'list[QueryScreenRecordDetailRsp]',
+        'screen_records': 'list[ScreenRecordDetail]',
         'total_count': 'int'
     }
 
@@ -33,7 +33,7 @@ class ListScreenRecordsResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param screen_records: 录屏记录。
-        :type screen_records: list[:class:`huaweicloudsdkworkspace.v2.QueryScreenRecordDetailRsp`]
+        :type screen_records: list[:class:`huaweicloudsdkworkspace.v2.ScreenRecordDetail`]
         :param total_count: 总数。
         :type total_count: int
         """
@@ -56,7 +56,7 @@ class ListScreenRecordsResponse(SdkResponse):
         录屏记录。
 
         :return: The screen_records of this ListScreenRecordsResponse.
-        :rtype: list[:class:`huaweicloudsdkworkspace.v2.QueryScreenRecordDetailRsp`]
+        :rtype: list[:class:`huaweicloudsdkworkspace.v2.ScreenRecordDetail`]
         """
         return self._screen_records
 
@@ -67,7 +67,7 @@ class ListScreenRecordsResponse(SdkResponse):
         录屏记录。
 
         :param screen_records: The screen_records of this ListScreenRecordsResponse.
-        :type screen_records: list[:class:`huaweicloudsdkworkspace.v2.QueryScreenRecordDetailRsp`]
+        :type screen_records: list[:class:`huaweicloudsdkworkspace.v2.ScreenRecordDetail`]
         """
         self._screen_records = screen_records
 

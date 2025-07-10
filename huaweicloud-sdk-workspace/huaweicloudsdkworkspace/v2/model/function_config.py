@@ -35,13 +35,13 @@ class FunctionConfig:
 
         The model defined in huaweicloud sdk
 
-        :param id: 功能配置id
+        :param id: 功能配置id。
         :type id: str
-        :param name: 功能配置名称
+        :param name: 功能配置名称。
         :type name: str
-        :param status: 功能配置开关的状态，标识开启还是关闭 ON/OFF。 - ON： 开启该功能 - OFF： 关闭该功能
+        :param status: 功能配置开关的状态，表示开启还是关闭 ON/OFF。 - ON： 开启该功能 - OFF： 关闭该功能。
         :type status: str
-        :param values: 配置项列表，键值对格式
+        :param values: 配置项列表，键值对格式。
         :type values: list[:class:`huaweicloudsdkworkspace.v2.MapObject`]
         """
         
@@ -66,7 +66,7 @@ class FunctionConfig:
     def id(self):
         r"""Gets the id of this FunctionConfig.
 
-        功能配置id
+        功能配置id。
 
         :return: The id of this FunctionConfig.
         :rtype: str
@@ -77,7 +77,7 @@ class FunctionConfig:
     def id(self, id):
         r"""Sets the id of this FunctionConfig.
 
-        功能配置id
+        功能配置id。
 
         :param id: The id of this FunctionConfig.
         :type id: str
@@ -88,7 +88,7 @@ class FunctionConfig:
     def name(self):
         r"""Gets the name of this FunctionConfig.
 
-        功能配置名称
+        功能配置名称。
 
         :return: The name of this FunctionConfig.
         :rtype: str
@@ -99,7 +99,7 @@ class FunctionConfig:
     def name(self, name):
         r"""Sets the name of this FunctionConfig.
 
-        功能配置名称
+        功能配置名称。
 
         :param name: The name of this FunctionConfig.
         :type name: str
@@ -110,7 +110,7 @@ class FunctionConfig:
     def status(self):
         r"""Gets the status of this FunctionConfig.
 
-        功能配置开关的状态，标识开启还是关闭 ON/OFF。 - ON： 开启该功能 - OFF： 关闭该功能
+        功能配置开关的状态，表示开启还是关闭 ON/OFF。 - ON： 开启该功能 - OFF： 关闭该功能。
 
         :return: The status of this FunctionConfig.
         :rtype: str
@@ -121,7 +121,7 @@ class FunctionConfig:
     def status(self, status):
         r"""Sets the status of this FunctionConfig.
 
-        功能配置开关的状态，标识开启还是关闭 ON/OFF。 - ON： 开启该功能 - OFF： 关闭该功能
+        功能配置开关的状态，表示开启还是关闭 ON/OFF。 - ON： 开启该功能 - OFF： 关闭该功能。
 
         :param status: The status of this FunctionConfig.
         :type status: str
@@ -132,7 +132,7 @@ class FunctionConfig:
     def values(self):
         r"""Gets the values of this FunctionConfig.
 
-        配置项列表，键值对格式
+        配置项列表，键值对格式。
 
         :return: The values of this FunctionConfig.
         :rtype: list[:class:`huaweicloudsdkworkspace.v2.MapObject`]
@@ -143,7 +143,7 @@ class FunctionConfig:
     def values(self, values):
         r"""Sets the values of this FunctionConfig.
 
-        配置项列表，键值对格式
+        配置项列表，键值对格式。
 
         :param values: The values of this FunctionConfig.
         :type values: list[:class:`huaweicloudsdkworkspace.v2.MapObject`]

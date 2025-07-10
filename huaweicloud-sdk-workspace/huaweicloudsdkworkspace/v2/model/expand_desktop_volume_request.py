@@ -18,27 +18,23 @@ class ExpandDesktopVolumeRequest:
 
     openapi_types = {
         'desktop_id': 'str',
-        'service_transaction_id': 'str',
         'volume_id': 'str',
         'body': 'ExpandVolumeReq'
     }
 
     attribute_map = {
         'desktop_id': 'desktop_id',
-        'service_transaction_id': 'Service-Transaction-Id',
         'volume_id': 'volume_id',
         'body': 'body'
     }
 
-    def __init__(self, desktop_id=None, service_transaction_id=None, volume_id=None, body=None):
+    def __init__(self, desktop_id=None, volume_id=None, body=None):
         r"""ExpandDesktopVolumeRequest
 
         The model defined in huaweicloud sdk
 
         :param desktop_id: 桌面ID。
         :type desktop_id: str
-        :param service_transaction_id: CBC接口回调时，请求头里带上的业务ID
-        :type service_transaction_id: str
         :param volume_id: 磁盘ID。
         :type volume_id: str
         :param body: Body of the ExpandDesktopVolumeRequest
@@ -48,14 +44,11 @@ class ExpandDesktopVolumeRequest:
         
 
         self._desktop_id = None
-        self._service_transaction_id = None
         self._volume_id = None
         self._body = None
         self.discriminator = None
 
         self.desktop_id = desktop_id
-        if service_transaction_id is not None:
-            self.service_transaction_id = service_transaction_id
         self.volume_id = volume_id
         if body is not None:
             self.body = body
@@ -81,28 +74,6 @@ class ExpandDesktopVolumeRequest:
         :type desktop_id: str
         """
         self._desktop_id = desktop_id
-
-    @property
-    def service_transaction_id(self):
-        r"""Gets the service_transaction_id of this ExpandDesktopVolumeRequest.
-
-        CBC接口回调时，请求头里带上的业务ID
-
-        :return: The service_transaction_id of this ExpandDesktopVolumeRequest.
-        :rtype: str
-        """
-        return self._service_transaction_id
-
-    @service_transaction_id.setter
-    def service_transaction_id(self, service_transaction_id):
-        r"""Sets the service_transaction_id of this ExpandDesktopVolumeRequest.
-
-        CBC接口回调时，请求头里带上的业务ID
-
-        :param service_transaction_id: The service_transaction_id of this ExpandDesktopVolumeRequest.
-        :type service_transaction_id: str
-        """
-        self._service_transaction_id = service_transaction_id
 
     @property
     def volume_id(self):

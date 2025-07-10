@@ -33,11 +33,11 @@ class DeleteDesktopSubResourcesReq:
 
         The model defined in huaweicloud sdk
 
-        :param desktop_ids: 桌面ID列表
+        :param desktop_ids: 桌面ID列表。
         :type desktop_ids: list[str]
-        :param sub_resource_type: 待删除附属资源类型。DESKTOP_SHARER：桌面协同资源
+        :param sub_resource_type: 待删除附属资源类型。DESKTOP_SHARER：桌面协同资源。
         :type sub_resource_type: str
-        :param order_id: 订单ID
+        :param order_id: 订单ID。
         :type order_id: str
         """
         
@@ -57,7 +57,7 @@ class DeleteDesktopSubResourcesReq:
     def desktop_ids(self):
         r"""Gets the desktop_ids of this DeleteDesktopSubResourcesReq.
 
-        桌面ID列表
+        桌面ID列表。
 
         :return: The desktop_ids of this DeleteDesktopSubResourcesReq.
         :rtype: list[str]
@@ -68,7 +68,7 @@ class DeleteDesktopSubResourcesReq:
     def desktop_ids(self, desktop_ids):
         r"""Sets the desktop_ids of this DeleteDesktopSubResourcesReq.
 
-        桌面ID列表
+        桌面ID列表。
 
         :param desktop_ids: The desktop_ids of this DeleteDesktopSubResourcesReq.
         :type desktop_ids: list[str]
@@ -79,7 +79,7 @@ class DeleteDesktopSubResourcesReq:
     def sub_resource_type(self):
         r"""Gets the sub_resource_type of this DeleteDesktopSubResourcesReq.
 
-        待删除附属资源类型。DESKTOP_SHARER：桌面协同资源
+        待删除附属资源类型。DESKTOP_SHARER：桌面协同资源。
 
         :return: The sub_resource_type of this DeleteDesktopSubResourcesReq.
         :rtype: str
@@ -90,7 +90,7 @@ class DeleteDesktopSubResourcesReq:
     def sub_resource_type(self, sub_resource_type):
         r"""Sets the sub_resource_type of this DeleteDesktopSubResourcesReq.
 
-        待删除附属资源类型。DESKTOP_SHARER：桌面协同资源
+        待删除附属资源类型。DESKTOP_SHARER：桌面协同资源。
 
         :param sub_resource_type: The sub_resource_type of this DeleteDesktopSubResourcesReq.
         :type sub_resource_type: str
@@ -101,7 +101,7 @@ class DeleteDesktopSubResourcesReq:
     def order_id(self):
         r"""Gets the order_id of this DeleteDesktopSubResourcesReq.
 
-        订单ID
+        订单ID。
 
         :return: The order_id of this DeleteDesktopSubResourcesReq.
         :rtype: str
@@ -112,7 +112,7 @@ class DeleteDesktopSubResourcesReq:
     def order_id(self, order_id):
         r"""Sets the order_id of this DeleteDesktopSubResourcesReq.
 
-        订单ID
+        订单ID。
 
         :param order_id: The order_id of this DeleteDesktopSubResourcesReq.
         :type order_id: str

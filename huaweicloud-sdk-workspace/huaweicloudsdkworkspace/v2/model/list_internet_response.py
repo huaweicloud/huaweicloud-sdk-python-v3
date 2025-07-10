@@ -30,7 +30,7 @@ class ListInternetResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param internet_infos: 上网信息
+        :param internet_infos: 上网信息。
         :type internet_infos: list[:class:`huaweicloudsdkworkspace.v2.InternetInfo`]
         """
         
@@ -46,7 +46,7 @@ class ListInternetResponse(SdkResponse):
     def internet_infos(self):
         r"""Gets the internet_infos of this ListInternetResponse.
 
-        上网信息
+        上网信息。
 
         :return: The internet_infos of this ListInternetResponse.
         :rtype: list[:class:`huaweicloudsdkworkspace.v2.InternetInfo`]
@@ -57,7 +57,7 @@ class ListInternetResponse(SdkResponse):
     def internet_infos(self, internet_infos):
         r"""Sets the internet_infos of this ListInternetResponse.
 
-        上网信息
+        上网信息。
 
         :param internet_infos: The internet_infos of this ListInternetResponse.
         :type internet_infos: list[:class:`huaweicloudsdkworkspace.v2.InternetInfo`]

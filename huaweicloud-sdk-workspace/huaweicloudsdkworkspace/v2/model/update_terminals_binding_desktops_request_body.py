@@ -35,13 +35,13 @@ class UpdateTerminalsBindingDesktopsRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param id: 策略id
+        :param id: 策略id。
         :type id: str
-        :param mac: 终端MAC地址
+        :param mac: 终端MAC地址。
         :type mac: str
-        :param desktop_name: 虚拟机名称
+        :param desktop_name: 虚拟机名称。
         :type desktop_name: str
-        :param description: 描述
+        :param description: 描述。
         :type description: str
         """
         
@@ -63,7 +63,7 @@ class UpdateTerminalsBindingDesktopsRequestBody:
     def id(self):
         r"""Gets the id of this UpdateTerminalsBindingDesktopsRequestBody.
 
-        策略id
+        策略id。
 
         :return: The id of this UpdateTerminalsBindingDesktopsRequestBody.
         :rtype: str
@@ -74,7 +74,7 @@ class UpdateTerminalsBindingDesktopsRequestBody:
     def id(self, id):
         r"""Sets the id of this UpdateTerminalsBindingDesktopsRequestBody.
 
-        策略id
+        策略id。
 
         :param id: The id of this UpdateTerminalsBindingDesktopsRequestBody.
         :type id: str
@@ -85,7 +85,7 @@ class UpdateTerminalsBindingDesktopsRequestBody:
     def mac(self):
         r"""Gets the mac of this UpdateTerminalsBindingDesktopsRequestBody.
 
-        终端MAC地址
+        终端MAC地址。
 
         :return: The mac of this UpdateTerminalsBindingDesktopsRequestBody.
         :rtype: str
@@ -96,7 +96,7 @@ class UpdateTerminalsBindingDesktopsRequestBody:
     def mac(self, mac):
         r"""Sets the mac of this UpdateTerminalsBindingDesktopsRequestBody.
 
-        终端MAC地址
+        终端MAC地址。
 
         :param mac: The mac of this UpdateTerminalsBindingDesktopsRequestBody.
         :type mac: str
@@ -107,7 +107,7 @@ class UpdateTerminalsBindingDesktopsRequestBody:
     def desktop_name(self):
         r"""Gets the desktop_name of this UpdateTerminalsBindingDesktopsRequestBody.
 
-        虚拟机名称
+        虚拟机名称。
 
         :return: The desktop_name of this UpdateTerminalsBindingDesktopsRequestBody.
         :rtype: str
@@ -118,7 +118,7 @@ class UpdateTerminalsBindingDesktopsRequestBody:
     def desktop_name(self, desktop_name):
         r"""Sets the desktop_name of this UpdateTerminalsBindingDesktopsRequestBody.
 
-        虚拟机名称
+        虚拟机名称。
 
         :param desktop_name: The desktop_name of this UpdateTerminalsBindingDesktopsRequestBody.
         :type desktop_name: str
@@ -129,7 +129,7 @@ class UpdateTerminalsBindingDesktopsRequestBody:
     def description(self):
         r"""Gets the description of this UpdateTerminalsBindingDesktopsRequestBody.
 
-        描述
+        描述。
 
         :return: The description of this UpdateTerminalsBindingDesktopsRequestBody.
         :rtype: str
@@ -140,7 +140,7 @@ class UpdateTerminalsBindingDesktopsRequestBody:
     def description(self, description):
         r"""Sets the description of this UpdateTerminalsBindingDesktopsRequestBody.
 
-        描述
+        描述。
 
         :param description: The description of this UpdateTerminalsBindingDesktopsRequestBody.
         :type description: str

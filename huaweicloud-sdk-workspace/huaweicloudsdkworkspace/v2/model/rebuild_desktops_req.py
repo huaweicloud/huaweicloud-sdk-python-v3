@@ -55,9 +55,9 @@ class RebuildDesktopsReq:
         :type delay_time: int
         :param message: 下发重建系统盘任务时，给用户发送的提示信息。
         :type message: str
-        :param order_id: 订单ID，包周期桌面重建系统盘，涉及收费镜像时需传
+        :param order_id: 订单ID，包周期桌面重建系统盘，涉及收费镜像时需传。
         :type order_id: str
-        :param enterprise_project_id: 企业项目ID，默认\&quot;0\&quot;
+        :param enterprise_project_id: 企业项目ID，默认\&quot;0。\&quot;
         :type enterprise_project_id: str
         """
         
@@ -223,7 +223,7 @@ class RebuildDesktopsReq:
     def order_id(self):
         r"""Gets the order_id of this RebuildDesktopsReq.
 
-        订单ID，包周期桌面重建系统盘，涉及收费镜像时需传
+        订单ID，包周期桌面重建系统盘，涉及收费镜像时需传。
 
         :return: The order_id of this RebuildDesktopsReq.
         :rtype: str
@@ -234,7 +234,7 @@ class RebuildDesktopsReq:
     def order_id(self, order_id):
         r"""Sets the order_id of this RebuildDesktopsReq.
 
-        订单ID，包周期桌面重建系统盘，涉及收费镜像时需传
+        订单ID，包周期桌面重建系统盘，涉及收费镜像时需传。
 
         :param order_id: The order_id of this RebuildDesktopsReq.
         :type order_id: str
@@ -245,7 +245,7 @@ class RebuildDesktopsReq:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this RebuildDesktopsReq.
 
-        企业项目ID，默认\"0\"
+        企业项目ID，默认\"0。\"
 
         :return: The enterprise_project_id of this RebuildDesktopsReq.
         :rtype: str
@@ -256,7 +256,7 @@ class RebuildDesktopsReq:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this RebuildDesktopsReq.
 
-        企业项目ID，默认\"0\"
+        企业项目ID，默认\"0。\"
 
         :param enterprise_project_id: The enterprise_project_id of this RebuildDesktopsReq.
         :type enterprise_project_id: str

@@ -31,9 +31,9 @@ class SendNotificationsReq:
 
         The model defined in huaweicloud sdk
 
-        :param desktop_ids: 桌面列表
+        :param desktop_ids: 桌面列表。
         :type desktop_ids: list[str]
-        :param notifications: 消息通知内容
+        :param notifications: 消息通知内容。
         :type notifications: str
         """
         
@@ -50,7 +50,7 @@ class SendNotificationsReq:
     def desktop_ids(self):
         r"""Gets the desktop_ids of this SendNotificationsReq.
 
-        桌面列表
+        桌面列表。
 
         :return: The desktop_ids of this SendNotificationsReq.
         :rtype: list[str]
@@ -61,7 +61,7 @@ class SendNotificationsReq:
     def desktop_ids(self, desktop_ids):
         r"""Sets the desktop_ids of this SendNotificationsReq.
 
-        桌面列表
+        桌面列表。
 
         :param desktop_ids: The desktop_ids of this SendNotificationsReq.
         :type desktop_ids: list[str]
@@ -72,7 +72,7 @@ class SendNotificationsReq:
     def notifications(self):
         r"""Gets the notifications of this SendNotificationsReq.
 
-        消息通知内容
+        消息通知内容。
 
         :return: The notifications of this SendNotificationsReq.
         :rtype: str
@@ -83,7 +83,7 @@ class SendNotificationsReq:
     def notifications(self, notifications):
         r"""Sets the notifications of this SendNotificationsReq.
 
-        消息通知内容
+        消息通知内容。
 
         :param notifications: The notifications of this SendNotificationsReq.
         :type notifications: str

@@ -30,7 +30,7 @@ class UpdateAuthMethodConfigResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param project_id: 项目ID
+        :param project_id: 项目ID。
         :type project_id: str
         """
         
@@ -46,7 +46,7 @@ class UpdateAuthMethodConfigResponse(SdkResponse):
     def project_id(self):
         r"""Gets the project_id of this UpdateAuthMethodConfigResponse.
 
-        项目ID
+        项目ID。
 
         :return: The project_id of this UpdateAuthMethodConfigResponse.
         :rtype: str
@@ -57,7 +57,7 @@ class UpdateAuthMethodConfigResponse(SdkResponse):
     def project_id(self, project_id):
         r"""Sets the project_id of this UpdateAuthMethodConfigResponse.
 
-        项目ID
+        项目ID。
 
         :param project_id: The project_id of this UpdateAuthMethodConfigResponse.
         :type project_id: str

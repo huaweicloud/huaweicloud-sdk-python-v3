@@ -35,9 +35,9 @@ class SimpleResource:
 
         :param type: 资源类别。 general_instances：普通桌面 Memory：内存 cores：CPU volumes：磁盘数量 volume_gigabytes：磁盘容量 gpu_instances：GPU桌面 deh：云办公主机 users：用户 policy_groups: 策略组 Cores: CPU(配额工具使用)
         :type type: str
-        :param quota: 配额数
+        :param quota: 配额数。
         :type quota: int
-        :param used: 配额已用值
+        :param used: 配额已用值。
         :type used: int
         """
         
@@ -81,7 +81,7 @@ class SimpleResource:
     def quota(self):
         r"""Gets the quota of this SimpleResource.
 
-        配额数
+        配额数。
 
         :return: The quota of this SimpleResource.
         :rtype: int
@@ -92,7 +92,7 @@ class SimpleResource:
     def quota(self, quota):
         r"""Sets the quota of this SimpleResource.
 
-        配额数
+        配额数。
 
         :param quota: The quota of this SimpleResource.
         :type quota: int
@@ -103,7 +103,7 @@ class SimpleResource:
     def used(self):
         r"""Gets the used of this SimpleResource.
 
-        配额已用值
+        配额已用值。
 
         :return: The used of this SimpleResource.
         :rtype: int
@@ -114,7 +114,7 @@ class SimpleResource:
     def used(self, used):
         r"""Sets the used of this SimpleResource.
 
-        配额已用值
+        配额已用值。
 
         :param used: The used of this SimpleResource.
         :type used: int

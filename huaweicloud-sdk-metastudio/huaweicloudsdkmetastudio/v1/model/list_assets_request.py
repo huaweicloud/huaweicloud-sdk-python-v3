@@ -32,7 +32,6 @@ class ListAssetsRequest:
         'asset_state': 'str',
         'style_id': 'str',
         'accurate_query_field': 'list[str]',
-        'render_engine': 'str',
         'asset_id': 'list[str]',
         'sex': 'str',
         'language': 'str',
@@ -67,7 +66,6 @@ class ListAssetsRequest:
         'asset_state': 'asset_state',
         'style_id': 'style_id',
         'accurate_query_field': 'accurate_query_field',
-        'render_engine': 'render_engine',
         'asset_id': 'asset_id',
         'sex': 'sex',
         'language': 'language',
@@ -86,7 +84,7 @@ class ListAssetsRequest:
         'project_group_id': 'project_group_id'
     }
 
-    def __init__(self, x_app_user_id=None, limit=None, offset=None, name=None, tag=None, tag_combination_type=None, start_time=None, end_time=None, asset_type=None, sort_key=None, sort_dir=None, asset_source=None, asset_state=None, style_id=None, accurate_query_field=None, render_engine=None, asset_id=None, sex=None, language=None, system_property=None, action_editable=None, is_with_action_library=None, is_movable=None, voice_provider=None, role=None, is_realtime_voice=None, human_model_2d_version=None, include_device_name=None, exclude_device_name=None, supported_service=None, app_user_id=None, project_group_id=None):
+    def __init__(self, x_app_user_id=None, limit=None, offset=None, name=None, tag=None, tag_combination_type=None, start_time=None, end_time=None, asset_type=None, sort_key=None, sort_dir=None, asset_source=None, asset_state=None, style_id=None, accurate_query_field=None, asset_id=None, sex=None, language=None, system_property=None, action_editable=None, is_with_action_library=None, is_movable=None, voice_provider=None, role=None, is_realtime_voice=None, human_model_2d_version=None, include_device_name=None, exclude_device_name=None, supported_service=None, app_user_id=None, project_group_id=None):
         r"""ListAssetsRequest
 
         The model defined in huaweicloud sdk
@@ -107,7 +105,7 @@ class ListAssetsRequest:
         :type start_time: str
         :param end_time: 结束时间。格式遵循：RFC 3339 如\&quot;2021-01-10T10:43:17Z\&quot;。
         :type end_time: str
-        :param asset_type: 资产类型。多个类型使用英文逗号分隔。 * HUMAN_MODEL：数字人模型 * VOICE_MODEL：音色模型（仅系统管理员可上传） * SCENE：场景模型 * ANIMATION：动作动画 * VIDEO：视频文件 * IMAGE：图片文件 * PPT：幻灯片文件 * MATERIAL：风格化素材 * HUMAN_MODEL_2D: 2D数字人网络模型 * BUSINESS_CARD_TEMPLET: 数字人名片模板 * MUSIC: 音乐 * AUDIO: 音频
+        :param asset_type: 资产类型。多个类型使用英文逗号分隔。 * VOICE_MODEL：音色模型（仅系统管理员可上传） * VIDEO：视频文件 * IMAGE：图片文件 * PPT：幻灯片文件 * MATERIAL：风格化素材 * HUMAN_MODEL_2D: 2D数字人网络模型 * BUSINESS_CARD_TEMPLET: 数字人名片模板 * MUSIC: 音乐 * AUDIO: 音频
         :type asset_type: str
         :param sort_key: 排序字段，支持的排序方式有： - 按创建时间排序：create_time - 按更新时间排序：update_time - 按资产排序：asset_order
         :type sort_key: str
@@ -121,15 +119,13 @@ class ListAssetsRequest:
         :type style_id: str
         :param accurate_query_field: 使用精确查询的字段
         :type accurate_query_field: list[str]
-        :param render_engine: 可用引擎。 * UE：UE引擎 * MetaEngine：MetaEngine引擎 &gt; 该字段当前只对MetaEngine白名单用户生效
-        :type render_engine: str
         :param asset_id: 资产id
         :type asset_id: list[str]
         :param sex: 性别。多选使用英文逗号分隔。
         :type sex: str
         :param language: 语言。多选使用英文逗号分隔。
         :type language: str
-        :param system_property: 系统属性。  key和value间用\&quot;:\&quot;分隔，多个key之间用\&quot;,\&quot;分隔。  如system_property&#x3D;BACKGROUND_IMG:Yes,RENDER_ENGINE:MetaEngine。  不同Key对应Value取值如下：  公共资产属性： * BACKGROUND_IMG：视频制作的2D背景图片，可取值Yes * CREATED_BY_PLATFORM：是否平台生成，可取值Yes  分身数字人资产属性： * MATERIAL_IMG：素材图片，用作前景。可取值Yes * MATERIAL_VIDEO：素材视频，用作前景。可取值Yes * TO_BE_TRANSLATED_VIDEO: 视频翻译的源视频。可取值Yes  3D数字人资产属性： * STYLE_ID：风格Id * RENDER_ENGINE：引擎类型，可取值UE或MetaEngine * BACKGROUND_SCENE：视频制作的2D背景场景，可取值Horizontal（横屏）或者Vertical（竖屏）  租户组资产验签属性： * SIG：加签秘钥。取值方式SIG&#x3D;HexEncode(HMAC-SHA256(group_id:EXP_TIME:NONCE,key)) * EXP_TIME：过期时间，当前时间增加增加10分钟。取值示例1627768613 * NONCE：随机字符串。取值示例：EycLQsHwxhzK9OW8UEKWNfH2I3CGR2nINuU1EBpv162d42d92s
+        :param system_property: 系统属性。  key和value间用\&quot;:\&quot;分隔，多个key之间用\&quot;,\&quot;分隔。  如system_property&#x3D;BACKGROUND_IMG:Yes,RENDER_ENGINE:MetaEngine。  不同Key对应Value取值如下：  公共资产属性： * BACKGROUND_IMG：视频制作的2D背景图片，可取值Yes * CREATED_BY_PLATFORM：是否平台生成，可取值Yes  分身数字人资产属性： * MATERIAL_IMG：素材图片，用作前景。可取值Yes * MATERIAL_VIDEO：素材视频，用作前景。可取值Yes  数字人资产属性： * BACKGROUND_SCENE：视频制作的2D背景场景，可取值Horizontal（横屏）或者Vertical（竖屏）  租户组资产验签属性： * SIG：加签秘钥。取值方式SIG&#x3D;HexEncode(HMAC-SHA256(group_id:EXP_TIME:NONCE,key)) * EXP_TIME：过期时间，当前时间增加增加10分钟。取值示例1627768613 * NONCE：随机字符串。取值示例：EycLQsHwxhzK9OW8UEKWNfH2I3CGR2nINuU1EBpv162d42d92s
         :type system_property: str
         :param action_editable: 动作是否可编辑。仅在分身数字人模型查询时有效。
         :type action_editable: bool
@@ -174,7 +170,6 @@ class ListAssetsRequest:
         self._asset_state = None
         self._style_id = None
         self._accurate_query_field = None
-        self._render_engine = None
         self._asset_id = None
         self._sex = None
         self._language = None
@@ -223,8 +218,6 @@ class ListAssetsRequest:
             self.style_id = style_id
         if accurate_query_field is not None:
             self.accurate_query_field = accurate_query_field
-        if render_engine is not None:
-            self.render_engine = render_engine
         if asset_id is not None:
             self.asset_id = asset_id
         if sex is not None:
@@ -438,7 +431,7 @@ class ListAssetsRequest:
     def asset_type(self):
         r"""Gets the asset_type of this ListAssetsRequest.
 
-        资产类型。多个类型使用英文逗号分隔。 * HUMAN_MODEL：数字人模型 * VOICE_MODEL：音色模型（仅系统管理员可上传） * SCENE：场景模型 * ANIMATION：动作动画 * VIDEO：视频文件 * IMAGE：图片文件 * PPT：幻灯片文件 * MATERIAL：风格化素材 * HUMAN_MODEL_2D: 2D数字人网络模型 * BUSINESS_CARD_TEMPLET: 数字人名片模板 * MUSIC: 音乐 * AUDIO: 音频
+        资产类型。多个类型使用英文逗号分隔。 * VOICE_MODEL：音色模型（仅系统管理员可上传） * VIDEO：视频文件 * IMAGE：图片文件 * PPT：幻灯片文件 * MATERIAL：风格化素材 * HUMAN_MODEL_2D: 2D数字人网络模型 * BUSINESS_CARD_TEMPLET: 数字人名片模板 * MUSIC: 音乐 * AUDIO: 音频
 
         :return: The asset_type of this ListAssetsRequest.
         :rtype: str
@@ -449,7 +442,7 @@ class ListAssetsRequest:
     def asset_type(self, asset_type):
         r"""Sets the asset_type of this ListAssetsRequest.
 
-        资产类型。多个类型使用英文逗号分隔。 * HUMAN_MODEL：数字人模型 * VOICE_MODEL：音色模型（仅系统管理员可上传） * SCENE：场景模型 * ANIMATION：动作动画 * VIDEO：视频文件 * IMAGE：图片文件 * PPT：幻灯片文件 * MATERIAL：风格化素材 * HUMAN_MODEL_2D: 2D数字人网络模型 * BUSINESS_CARD_TEMPLET: 数字人名片模板 * MUSIC: 音乐 * AUDIO: 音频
+        资产类型。多个类型使用英文逗号分隔。 * VOICE_MODEL：音色模型（仅系统管理员可上传） * VIDEO：视频文件 * IMAGE：图片文件 * PPT：幻灯片文件 * MATERIAL：风格化素材 * HUMAN_MODEL_2D: 2D数字人网络模型 * BUSINESS_CARD_TEMPLET: 数字人名片模板 * MUSIC: 音乐 * AUDIO: 音频
 
         :param asset_type: The asset_type of this ListAssetsRequest.
         :type asset_type: str
@@ -589,28 +582,6 @@ class ListAssetsRequest:
         self._accurate_query_field = accurate_query_field
 
     @property
-    def render_engine(self):
-        r"""Gets the render_engine of this ListAssetsRequest.
-
-        可用引擎。 * UE：UE引擎 * MetaEngine：MetaEngine引擎 > 该字段当前只对MetaEngine白名单用户生效
-
-        :return: The render_engine of this ListAssetsRequest.
-        :rtype: str
-        """
-        return self._render_engine
-
-    @render_engine.setter
-    def render_engine(self, render_engine):
-        r"""Sets the render_engine of this ListAssetsRequest.
-
-        可用引擎。 * UE：UE引擎 * MetaEngine：MetaEngine引擎 > 该字段当前只对MetaEngine白名单用户生效
-
-        :param render_engine: The render_engine of this ListAssetsRequest.
-        :type render_engine: str
-        """
-        self._render_engine = render_engine
-
-    @property
     def asset_id(self):
         r"""Gets the asset_id of this ListAssetsRequest.
 
@@ -680,7 +651,7 @@ class ListAssetsRequest:
     def system_property(self):
         r"""Gets the system_property of this ListAssetsRequest.
 
-        系统属性。  key和value间用\":\"分隔，多个key之间用\",\"分隔。  如system_property=BACKGROUND_IMG:Yes,RENDER_ENGINE:MetaEngine。  不同Key对应Value取值如下：  公共资产属性： * BACKGROUND_IMG：视频制作的2D背景图片，可取值Yes * CREATED_BY_PLATFORM：是否平台生成，可取值Yes  分身数字人资产属性： * MATERIAL_IMG：素材图片，用作前景。可取值Yes * MATERIAL_VIDEO：素材视频，用作前景。可取值Yes * TO_BE_TRANSLATED_VIDEO: 视频翻译的源视频。可取值Yes  3D数字人资产属性： * STYLE_ID：风格Id * RENDER_ENGINE：引擎类型，可取值UE或MetaEngine * BACKGROUND_SCENE：视频制作的2D背景场景，可取值Horizontal（横屏）或者Vertical（竖屏）  租户组资产验签属性： * SIG：加签秘钥。取值方式SIG=HexEncode(HMAC-SHA256(group_id:EXP_TIME:NONCE,key)) * EXP_TIME：过期时间，当前时间增加增加10分钟。取值示例1627768613 * NONCE：随机字符串。取值示例：EycLQsHwxhzK9OW8UEKWNfH2I3CGR2nINuU1EBpv162d42d92s
+        系统属性。  key和value间用\":\"分隔，多个key之间用\",\"分隔。  如system_property=BACKGROUND_IMG:Yes,RENDER_ENGINE:MetaEngine。  不同Key对应Value取值如下：  公共资产属性： * BACKGROUND_IMG：视频制作的2D背景图片，可取值Yes * CREATED_BY_PLATFORM：是否平台生成，可取值Yes  分身数字人资产属性： * MATERIAL_IMG：素材图片，用作前景。可取值Yes * MATERIAL_VIDEO：素材视频，用作前景。可取值Yes  数字人资产属性： * BACKGROUND_SCENE：视频制作的2D背景场景，可取值Horizontal（横屏）或者Vertical（竖屏）  租户组资产验签属性： * SIG：加签秘钥。取值方式SIG=HexEncode(HMAC-SHA256(group_id:EXP_TIME:NONCE,key)) * EXP_TIME：过期时间，当前时间增加增加10分钟。取值示例1627768613 * NONCE：随机字符串。取值示例：EycLQsHwxhzK9OW8UEKWNfH2I3CGR2nINuU1EBpv162d42d92s
 
         :return: The system_property of this ListAssetsRequest.
         :rtype: str
@@ -691,7 +662,7 @@ class ListAssetsRequest:
     def system_property(self, system_property):
         r"""Sets the system_property of this ListAssetsRequest.
 
-        系统属性。  key和value间用\":\"分隔，多个key之间用\",\"分隔。  如system_property=BACKGROUND_IMG:Yes,RENDER_ENGINE:MetaEngine。  不同Key对应Value取值如下：  公共资产属性： * BACKGROUND_IMG：视频制作的2D背景图片，可取值Yes * CREATED_BY_PLATFORM：是否平台生成，可取值Yes  分身数字人资产属性： * MATERIAL_IMG：素材图片，用作前景。可取值Yes * MATERIAL_VIDEO：素材视频，用作前景。可取值Yes * TO_BE_TRANSLATED_VIDEO: 视频翻译的源视频。可取值Yes  3D数字人资产属性： * STYLE_ID：风格Id * RENDER_ENGINE：引擎类型，可取值UE或MetaEngine * BACKGROUND_SCENE：视频制作的2D背景场景，可取值Horizontal（横屏）或者Vertical（竖屏）  租户组资产验签属性： * SIG：加签秘钥。取值方式SIG=HexEncode(HMAC-SHA256(group_id:EXP_TIME:NONCE,key)) * EXP_TIME：过期时间，当前时间增加增加10分钟。取值示例1627768613 * NONCE：随机字符串。取值示例：EycLQsHwxhzK9OW8UEKWNfH2I3CGR2nINuU1EBpv162d42d92s
+        系统属性。  key和value间用\":\"分隔，多个key之间用\",\"分隔。  如system_property=BACKGROUND_IMG:Yes,RENDER_ENGINE:MetaEngine。  不同Key对应Value取值如下：  公共资产属性： * BACKGROUND_IMG：视频制作的2D背景图片，可取值Yes * CREATED_BY_PLATFORM：是否平台生成，可取值Yes  分身数字人资产属性： * MATERIAL_IMG：素材图片，用作前景。可取值Yes * MATERIAL_VIDEO：素材视频，用作前景。可取值Yes  数字人资产属性： * BACKGROUND_SCENE：视频制作的2D背景场景，可取值Horizontal（横屏）或者Vertical（竖屏）  租户组资产验签属性： * SIG：加签秘钥。取值方式SIG=HexEncode(HMAC-SHA256(group_id:EXP_TIME:NONCE,key)) * EXP_TIME：过期时间，当前时间增加增加10分钟。取值示例1627768613 * NONCE：随机字符串。取值示例：EycLQsHwxhzK9OW8UEKWNfH2I3CGR2nINuU1EBpv162d42d92s
 
         :param system_property: The system_property of this ListAssetsRequest.
         :type system_property: str

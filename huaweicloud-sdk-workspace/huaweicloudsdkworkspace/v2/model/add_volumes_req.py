@@ -17,25 +17,21 @@ class AddVolumesReq:
     sensitive_list = []
 
     openapi_types = {
-        'order_id': 'str',
         'enterprise_project_id': 'str',
         'volumes': 'list[Volume]'
     }
 
     attribute_map = {
-        'order_id': 'order_id',
         'enterprise_project_id': 'enterprise_project_id',
         'volumes': 'volumes'
     }
 
-    def __init__(self, order_id=None, enterprise_project_id=None, volumes=None):
+    def __init__(self, enterprise_project_id=None, volumes=None):
         r"""AddVolumesReq
 
         The model defined in huaweicloud sdk
 
-        :param order_id: 订单ID，包周期桌面添加磁盘时使用。
-        :type order_id: str
-        :param enterprise_project_id: 企业项目ID，默认\&quot;0\&quot;
+        :param enterprise_project_id: 企业项目ID，默认\&quot;0。\&quot;
         :type enterprise_project_id: str
         :param volumes: 待新增的磁盘信息，每个桌面的数据盘数量不超过10个。
         :type volumes: list[:class:`huaweicloudsdkworkspace.v2.Volume`]
@@ -43,44 +39,19 @@ class AddVolumesReq:
         
         
 
-        self._order_id = None
         self._enterprise_project_id = None
         self._volumes = None
         self.discriminator = None
 
-        if order_id is not None:
-            self.order_id = order_id
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
         self.volumes = volumes
 
     @property
-    def order_id(self):
-        r"""Gets the order_id of this AddVolumesReq.
-
-        订单ID，包周期桌面添加磁盘时使用。
-
-        :return: The order_id of this AddVolumesReq.
-        :rtype: str
-        """
-        return self._order_id
-
-    @order_id.setter
-    def order_id(self, order_id):
-        r"""Sets the order_id of this AddVolumesReq.
-
-        订单ID，包周期桌面添加磁盘时使用。
-
-        :param order_id: The order_id of this AddVolumesReq.
-        :type order_id: str
-        """
-        self._order_id = order_id
-
-    @property
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this AddVolumesReq.
 
-        企业项目ID，默认\"0\"
+        企业项目ID，默认\"0。\"
 
         :return: The enterprise_project_id of this AddVolumesReq.
         :rtype: str
@@ -91,7 +62,7 @@ class AddVolumesReq:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this AddVolumesReq.
 
-        企业项目ID，默认\"0\"
+        企业项目ID，默认\"0。\"
 
         :param enterprise_project_id: The enterprise_project_id of this AddVolumesReq.
         :type enterprise_project_id: str

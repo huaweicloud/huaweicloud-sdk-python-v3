@@ -41,15 +41,15 @@ class AddMetricNotifyRuleReq:
 
         :param metric_name: 统计指标名称，目前仅支持固定值：desktop_idle_duration 同一指标的规则不允许重复 * &#x60;desktop_idle_duration&#x60; -  桌面空闲时长, 仅允许设置 &#39;&gt;&#x3D;&#39; threshold
         :type metric_name: str
-        :param threshold: 规则配置-阈值(天)
+        :param threshold: 规则配置-阈值(天)。
         :type threshold: int
         :param comparison_operator: 统计指标对应的统计值和threshold进行比较的条件 * &#x60;&gt;&#x3D;&#x60; -  统计指标大于等于threshold时触发 * &#x60;&gt;&#x60; -   统计指标大于threshold时触发 * &#x60;&#x3D;&#x60; -  统计指标等于threshold时触发 * &#x60;&lt;&#x3D;&#x60; -  统计指标小于等于threshold时触发 * &#x60;&lt;&#x60; -  统计指标小于threshold时触发
         :type comparison_operator: str
         :param interval: 触发通知后；下次通知的间隔时间;默认每天一次
         :type interval: int
-        :param enable: 启禁用规则 true:启用 false:禁用
+        :param enable: 启禁用规则 true:启用 false:禁用。
         :type enable: bool
-        :param notify_object: 通知对象;smn的主题urn
+        :param notify_object: 通知对象;smn的主题urn。
         :type notify_object: str
         """
         
@@ -98,7 +98,7 @@ class AddMetricNotifyRuleReq:
     def threshold(self):
         r"""Gets the threshold of this AddMetricNotifyRuleReq.
 
-        规则配置-阈值(天)
+        规则配置-阈值(天)。
 
         :return: The threshold of this AddMetricNotifyRuleReq.
         :rtype: int
@@ -109,7 +109,7 @@ class AddMetricNotifyRuleReq:
     def threshold(self, threshold):
         r"""Sets the threshold of this AddMetricNotifyRuleReq.
 
-        规则配置-阈值(天)
+        规则配置-阈值(天)。
 
         :param threshold: The threshold of this AddMetricNotifyRuleReq.
         :type threshold: int
@@ -164,7 +164,7 @@ class AddMetricNotifyRuleReq:
     def enable(self):
         r"""Gets the enable of this AddMetricNotifyRuleReq.
 
-        启禁用规则 true:启用 false:禁用
+        启禁用规则 true:启用 false:禁用。
 
         :return: The enable of this AddMetricNotifyRuleReq.
         :rtype: bool
@@ -175,7 +175,7 @@ class AddMetricNotifyRuleReq:
     def enable(self, enable):
         r"""Sets the enable of this AddMetricNotifyRuleReq.
 
-        启禁用规则 true:启用 false:禁用
+        启禁用规则 true:启用 false:禁用。
 
         :param enable: The enable of this AddMetricNotifyRuleReq.
         :type enable: bool
@@ -186,7 +186,7 @@ class AddMetricNotifyRuleReq:
     def notify_object(self):
         r"""Gets the notify_object of this AddMetricNotifyRuleReq.
 
-        通知对象;smn的主题urn
+        通知对象;smn的主题urn。
 
         :return: The notify_object of this AddMetricNotifyRuleReq.
         :rtype: str
@@ -197,7 +197,7 @@ class AddMetricNotifyRuleReq:
     def notify_object(self, notify_object):
         r"""Sets the notify_object of this AddMetricNotifyRuleReq.
 
-        通知对象;smn的主题urn
+        通知对象;smn的主题urn。
 
         :param notify_object: The notify_object of this AddMetricNotifyRuleReq.
         :type notify_object: str

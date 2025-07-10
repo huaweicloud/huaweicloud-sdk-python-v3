@@ -39,15 +39,15 @@ class ListJobsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param offset: 查询的偏移量。
+        :param offset: 查询的偏移量，默认值0。
         :type offset: int
-        :param limit: 单次查询的大小[1-100]。
+        :param limit: 单次查询的大小[1-100]，默认值10。
         :type limit: int
-        :param instance_id: 实例ID
+        :param instance_id: 实例ID。
         :type instance_id: str
-        :param app_id: 应用ID
+        :param app_id: 应用ID。
         :type app_id: str
-        :param target: 安装实例的用户
+        :param target: 安装实例的用户。
         :type target: str
         :param job_status: 任务状态： * &#x60;INIT&#x60; - 初始化中 * &#x60;WAITING&#x60; - 等待安装结束 * &#x60;SUCCESS&#x60; - 成功 * &#x60;FAIL&#x60; - 失败任务状态
         :type job_status: str
@@ -80,7 +80,7 @@ class ListJobsRequest:
     def offset(self):
         r"""Gets the offset of this ListJobsRequest.
 
-        查询的偏移量。
+        查询的偏移量，默认值0。
 
         :return: The offset of this ListJobsRequest.
         :rtype: int
@@ -91,7 +91,7 @@ class ListJobsRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListJobsRequest.
 
-        查询的偏移量。
+        查询的偏移量，默认值0。
 
         :param offset: The offset of this ListJobsRequest.
         :type offset: int
@@ -102,7 +102,7 @@ class ListJobsRequest:
     def limit(self):
         r"""Gets the limit of this ListJobsRequest.
 
-        单次查询的大小[1-100]。
+        单次查询的大小[1-100]，默认值10。
 
         :return: The limit of this ListJobsRequest.
         :rtype: int
@@ -113,7 +113,7 @@ class ListJobsRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListJobsRequest.
 
-        单次查询的大小[1-100]。
+        单次查询的大小[1-100]，默认值10。
 
         :param limit: The limit of this ListJobsRequest.
         :type limit: int
@@ -124,7 +124,7 @@ class ListJobsRequest:
     def instance_id(self):
         r"""Gets the instance_id of this ListJobsRequest.
 
-        实例ID
+        实例ID。
 
         :return: The instance_id of this ListJobsRequest.
         :rtype: str
@@ -135,7 +135,7 @@ class ListJobsRequest:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this ListJobsRequest.
 
-        实例ID
+        实例ID。
 
         :param instance_id: The instance_id of this ListJobsRequest.
         :type instance_id: str
@@ -146,7 +146,7 @@ class ListJobsRequest:
     def app_id(self):
         r"""Gets the app_id of this ListJobsRequest.
 
-        应用ID
+        应用ID。
 
         :return: The app_id of this ListJobsRequest.
         :rtype: str
@@ -157,7 +157,7 @@ class ListJobsRequest:
     def app_id(self, app_id):
         r"""Sets the app_id of this ListJobsRequest.
 
-        应用ID
+        应用ID。
 
         :param app_id: The app_id of this ListJobsRequest.
         :type app_id: str
@@ -168,7 +168,7 @@ class ListJobsRequest:
     def target(self):
         r"""Gets the target of this ListJobsRequest.
 
-        安装实例的用户
+        安装实例的用户。
 
         :return: The target of this ListJobsRequest.
         :rtype: str
@@ -179,7 +179,7 @@ class ListJobsRequest:
     def target(self, target):
         r"""Sets the target of this ListJobsRequest.
 
-        安装实例的用户
+        安装实例的用户。
 
         :param target: The target of this ListJobsRequest.
         :type target: str

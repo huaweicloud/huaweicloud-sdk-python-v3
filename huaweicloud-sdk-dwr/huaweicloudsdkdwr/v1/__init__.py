@@ -33,20 +33,20 @@ from huaweicloudsdkdwr.v1.model.delete_store_response import DeleteStoreResponse
 from huaweicloudsdkdwr.v1.model.describe_collection_request import DescribeCollectionRequest
 from huaweicloudsdkdwr.v1.model.describe_collection_response import DescribeCollectionResponse
 from huaweicloudsdkdwr.v1.model.describe_index_body import DescribeIndexBody
+from huaweicloudsdkdwr.v1.model.describe_index_data import DescribeIndexData
 from huaweicloudsdkdwr.v1.model.describe_index_request import DescribeIndexRequest
 from huaweicloudsdkdwr.v1.model.describe_index_response import DescribeIndexResponse
-from huaweicloudsdkdwr.v1.model.describe_index_respose_data import DescribeIndexResposeData
 from huaweicloudsdkdwr.v1.model.describe_job_body import DescribeJobBody
 from huaweicloudsdkdwr.v1.model.describe_job_request import DescribeJobRequest
 from huaweicloudsdkdwr.v1.model.describe_job_response import DescribeJobResponse
-from huaweicloudsdkdwr.v1.model.describe_store_data import DescribeStoreData
 from huaweicloudsdkdwr.v1.model.describe_store_request import DescribeStoreRequest
 from huaweicloudsdkdwr.v1.model.describe_store_response import DescribeStoreResponse
+from huaweicloudsdkdwr.v1.model.entities_data import EntitiesData
 from huaweicloudsdkdwr.v1.model.field import Field
 from huaweicloudsdkdwr.v1.model.field_data import FieldData
 from huaweicloudsdkdwr.v1.model.flavor import Flavor
 from huaweicloudsdkdwr.v1.model.get_index_progress_body import GetIndexProgressBody
-from huaweicloudsdkdwr.v1.model.get_index_progress_response_data import GetIndexProgressResponseData
+from huaweicloudsdkdwr.v1.model.get_progress_data import GetProgressData
 from huaweicloudsdkdwr.v1.model.get_progress_request import GetProgressRequest
 from huaweicloudsdkdwr.v1.model.get_progress_response import GetProgressResponse
 from huaweicloudsdkdwr.v1.model.hybrid_search_body import HybridSearchBody
@@ -55,9 +55,9 @@ from huaweicloudsdkdwr.v1.model.hybrid_search_response import HybridSearchRespon
 from huaweicloudsdkdwr.v1.model.index_desc import IndexDesc
 from huaweicloudsdkdwr.v1.model.index_params import IndexParams
 from huaweicloudsdkdwr.v1.model.insert_entities_body import InsertEntitiesBody
+from huaweicloudsdkdwr.v1.model.insert_entities_data import InsertEntitiesData
 from huaweicloudsdkdwr.v1.model.insert_entities_request import InsertEntitiesRequest
 from huaweicloudsdkdwr.v1.model.insert_entities_response import InsertEntitiesResponse
-from huaweicloudsdkdwr.v1.model.insert_entities_response_data import InsertEntitiesResponseData
 from huaweicloudsdkdwr.v1.model.job_data import JobData
 from huaweicloudsdkdwr.v1.model.list_collection_data import ListCollectionData
 from huaweicloudsdkdwr.v1.model.list_collection_details import ListCollectionDetails
@@ -67,6 +67,7 @@ from huaweicloudsdkdwr.v1.model.list_collections_response import ListCollections
 from huaweicloudsdkdwr.v1.model.list_jobs_data import ListJobsData
 from huaweicloudsdkdwr.v1.model.list_jobs_request import ListJobsRequest
 from huaweicloudsdkdwr.v1.model.list_jobs_response import ListJobsResponse
+from huaweicloudsdkdwr.v1.model.list_store_data import ListStoreData
 from huaweicloudsdkdwr.v1.model.list_stores_request import ListStoresRequest
 from huaweicloudsdkdwr.v1.model.list_stores_response import ListStoresResponse
 from huaweicloudsdkdwr.v1.model.load_collection_body import LoadCollectionBody
@@ -82,10 +83,11 @@ from huaweicloudsdkdwr.v1.model.rerank import Rerank
 from huaweicloudsdkdwr.v1.model.search_entities_body import SearchEntitiesBody
 from huaweicloudsdkdwr.v1.model.search_entities_request import SearchEntitiesRequest
 from huaweicloudsdkdwr.v1.model.search_entities_response import SearchEntitiesResponse
+from huaweicloudsdkdwr.v1.model.store_data import StoreData
 from huaweicloudsdkdwr.v1.model.store_info import StoreInfo
 from huaweicloudsdkdwr.v1.model.sub_search import SubSearch
 from huaweicloudsdkdwr.v1.model.upsert_entities_body import UpsertEntitiesBody
+from huaweicloudsdkdwr.v1.model.upsert_entities_data import UpsertEntitiesData
 from huaweicloudsdkdwr.v1.model.upsert_entities_request import UpsertEntitiesRequest
 from huaweicloudsdkdwr.v1.model.upsert_entities_response import UpsertEntitiesResponse
-from huaweicloudsdkdwr.v1.model.upsert_entities_response_data import UpsertEntitiesResponseData
 

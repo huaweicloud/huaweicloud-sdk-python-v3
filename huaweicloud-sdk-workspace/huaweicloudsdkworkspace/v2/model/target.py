@@ -35,7 +35,7 @@ class Target:
 
         :param target_id: 对象ID。
         :type target_id: str
-        :param target_name: 对象名称。
+        :param target_name: 对象名称，长度不能超过55个字符。
         :type target_name: str
         :param target_type: 对象类型。 - INSTANCE：表示桌面。   target_id：为桌面的SID。   target_name：为桌面name。 - USER：表示用户。   target_id：为用户ID。   target_name：为用户name。 - USERGROUP：表示用户组。   target_id：为用户组ID。   target_name：为用户组name。 - CLIENTIP：终端IP地址。   target_id：终端IP地址。   target_name：终端IP地址。 - OU：组织单元。   target_id：OUID。   target_name：OU名称。 - DESKTOPSPOOL：表示桌面池。   target_id：为桌面池的ID。   target_name：为桌面池name。 - ALL：表示所有桌面。   target_id：default-apply-all-targets。   target_name：All-Targets。
         :type target_type: str
@@ -81,7 +81,7 @@ class Target:
     def target_name(self):
         r"""Gets the target_name of this Target.
 
-        对象名称。
+        对象名称，长度不能超过55个字符。
 
         :return: The target_name of this Target.
         :rtype: str
@@ -92,7 +92,7 @@ class Target:
     def target_name(self, target_name):
         r"""Sets the target_name of this Target.
 
-        对象名称。
+        对象名称，长度不能超过55个字符。
 
         :param target_name: The target_name of this Target.
         :type target_name: str

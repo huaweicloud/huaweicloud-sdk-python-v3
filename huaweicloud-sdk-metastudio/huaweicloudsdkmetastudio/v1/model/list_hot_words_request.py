@@ -22,7 +22,8 @@ class ListHotWordsRequest:
         'limit': 'int',
         'robot_id': 'str',
         'region': 'int',
-        'language': 'str'
+        'language': 'str',
+        'hot_words_type': 'str'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class ListHotWordsRequest:
         'limit': 'limit',
         'robot_id': 'robot_id',
         'region': 'region',
-        'language': 'language'
+        'language': 'language',
+        'hot_words_type': 'hot_words_type'
     }
 
-    def __init__(self, x_app_user_id=None, offset=None, limit=None, robot_id=None, region=None, language=None):
+    def __init__(self, x_app_user_id=None, offset=None, limit=None, robot_id=None, region=None, language=None, hot_words_type=None):
         r"""ListHotWordsRequest
 
         The model defined in huaweicloud sdk
@@ -49,8 +51,10 @@ class ListHotWordsRequest:
         :type robot_id: str
         :param region: sis服务所在区域
         :type region: int
-        :param language: 智能交互语言  * zh_CN：简体中文（已下线，请使用CN）  * en_US：英语（已下线，请使用EN）  * CN: 中文  * EN: 英文
+        :param language: 智能交互语言 * zh_CN：简体中文（已下线，请使用CN） * en_US：英语（已下线，请使用EN） * CN：中文。 * EN：英文。 * ESP：西班牙语（仅海外站点支持） * por：葡萄牙语（仅海外站点支持） * Arabic：阿拉伯语（仅海外站点支持） * Thai：泰语（仅海外站点支持）
         :type language: str
+        :param hot_words_type: * SIS:SIS热词 * MOBVOI:奇妙问ASR热词
+        :type hot_words_type: str
         """
         
         
@@ -61,6 +65,7 @@ class ListHotWordsRequest:
         self._robot_id = None
         self._region = None
         self._language = None
+        self._hot_words_type = None
         self.discriminator = None
 
         if x_app_user_id is not None:
@@ -74,6 +79,8 @@ class ListHotWordsRequest:
             self.region = region
         if language is not None:
             self.language = language
+        if hot_words_type is not None:
+            self.hot_words_type = hot_words_type
 
     @property
     def x_app_user_id(self):
@@ -189,7 +196,7 @@ class ListHotWordsRequest:
     def language(self):
         r"""Gets the language of this ListHotWordsRequest.
 
-        智能交互语言  * zh_CN：简体中文（已下线，请使用CN）  * en_US：英语（已下线，请使用EN）  * CN: 中文  * EN: 英文
+        智能交互语言 * zh_CN：简体中文（已下线，请使用CN） * en_US：英语（已下线，请使用EN） * CN：中文。 * EN：英文。 * ESP：西班牙语（仅海外站点支持） * por：葡萄牙语（仅海外站点支持） * Arabic：阿拉伯语（仅海外站点支持） * Thai：泰语（仅海外站点支持）
 
         :return: The language of this ListHotWordsRequest.
         :rtype: str
@@ -200,12 +207,34 @@ class ListHotWordsRequest:
     def language(self, language):
         r"""Sets the language of this ListHotWordsRequest.
 
-        智能交互语言  * zh_CN：简体中文（已下线，请使用CN）  * en_US：英语（已下线，请使用EN）  * CN: 中文  * EN: 英文
+        智能交互语言 * zh_CN：简体中文（已下线，请使用CN） * en_US：英语（已下线，请使用EN） * CN：中文。 * EN：英文。 * ESP：西班牙语（仅海外站点支持） * por：葡萄牙语（仅海外站点支持） * Arabic：阿拉伯语（仅海外站点支持） * Thai：泰语（仅海外站点支持）
 
         :param language: The language of this ListHotWordsRequest.
         :type language: str
         """
         self._language = language
+
+    @property
+    def hot_words_type(self):
+        r"""Gets the hot_words_type of this ListHotWordsRequest.
+
+        * SIS:SIS热词 * MOBVOI:奇妙问ASR热词
+
+        :return: The hot_words_type of this ListHotWordsRequest.
+        :rtype: str
+        """
+        return self._hot_words_type
+
+    @hot_words_type.setter
+    def hot_words_type(self, hot_words_type):
+        r"""Sets the hot_words_type of this ListHotWordsRequest.
+
+        * SIS:SIS热词 * MOBVOI:奇妙问ASR热词
+
+        :param hot_words_type: The hot_words_type of this ListHotWordsRequest.
+        :type hot_words_type: str
+        """
+        self._hot_words_type = hot_words_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

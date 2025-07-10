@@ -31,9 +31,9 @@ class DataPointInfo:
 
         The model defined in huaweicloud sdk
 
-        :param time: 计算出该条告警记录的资源监控数据上报的UTC时间
+        :param time: 计算出该条告警记录的资源监控数据上报的UTC时间。
         :type time: str
-        :param value: 计算出该条告警记录的资源监控数据在该时间点的监控数值
+        :param value: 计算出该条告警记录的资源监控数据在该时间点的监控数值。
         :type value: float
         """
         
@@ -52,7 +52,7 @@ class DataPointInfo:
     def time(self):
         r"""Gets the time of this DataPointInfo.
 
-        计算出该条告警记录的资源监控数据上报的UTC时间
+        计算出该条告警记录的资源监控数据上报的UTC时间。
 
         :return: The time of this DataPointInfo.
         :rtype: str
@@ -63,7 +63,7 @@ class DataPointInfo:
     def time(self, time):
         r"""Sets the time of this DataPointInfo.
 
-        计算出该条告警记录的资源监控数据上报的UTC时间
+        计算出该条告警记录的资源监控数据上报的UTC时间。
 
         :param time: The time of this DataPointInfo.
         :type time: str
@@ -74,7 +74,7 @@ class DataPointInfo:
     def value(self):
         r"""Gets the value of this DataPointInfo.
 
-        计算出该条告警记录的资源监控数据在该时间点的监控数值
+        计算出该条告警记录的资源监控数据在该时间点的监控数值。
 
         :return: The value of this DataPointInfo.
         :rtype: float
@@ -85,7 +85,7 @@ class DataPointInfo:
     def value(self, value):
         r"""Sets the value of this DataPointInfo.
 
-        计算出该条告警记录的资源监控数据在该时间点的监控数值
+        计算出该条告警记录的资源监控数据在该时间点的监控数值。
 
         :param value: The value of this DataPointInfo.
         :type value: float

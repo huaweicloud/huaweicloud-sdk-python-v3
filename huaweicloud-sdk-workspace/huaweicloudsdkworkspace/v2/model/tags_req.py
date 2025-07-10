@@ -33,11 +33,11 @@ class TagsReq:
 
         The model defined in huaweicloud sdk
 
-        :param action: 操作字符串create或delete
+        :param action: 操作字符串create或delete。
         :type action: str
-        :param tags: 标签对象
+        :param tags: 标签对象。
         :type tags: list[:class:`huaweicloudsdkworkspace.v2.Tag`]
-        :param sys_tags: 标签对象（已废弃）
+        :param sys_tags: 标签对象（已废弃）。
         :type sys_tags: list[:class:`huaweicloudsdkworkspace.v2.Tag`]
         """
         
@@ -59,7 +59,7 @@ class TagsReq:
     def action(self):
         r"""Gets the action of this TagsReq.
 
-        操作字符串create或delete
+        操作字符串create或delete。
 
         :return: The action of this TagsReq.
         :rtype: str
@@ -70,7 +70,7 @@ class TagsReq:
     def action(self, action):
         r"""Sets the action of this TagsReq.
 
-        操作字符串create或delete
+        操作字符串create或delete。
 
         :param action: The action of this TagsReq.
         :type action: str
@@ -81,7 +81,7 @@ class TagsReq:
     def tags(self):
         r"""Gets the tags of this TagsReq.
 
-        标签对象
+        标签对象。
 
         :return: The tags of this TagsReq.
         :rtype: list[:class:`huaweicloudsdkworkspace.v2.Tag`]
@@ -92,7 +92,7 @@ class TagsReq:
     def tags(self, tags):
         r"""Sets the tags of this TagsReq.
 
-        标签对象
+        标签对象。
 
         :param tags: The tags of this TagsReq.
         :type tags: list[:class:`huaweicloudsdkworkspace.v2.Tag`]
@@ -103,7 +103,7 @@ class TagsReq:
     def sys_tags(self):
         r"""Gets the sys_tags of this TagsReq.
 
-        标签对象（已废弃）
+        标签对象（已废弃）。
 
         :return: The sys_tags of this TagsReq.
         :rtype: list[:class:`huaweicloudsdkworkspace.v2.Tag`]
@@ -114,7 +114,7 @@ class TagsReq:
     def sys_tags(self, sys_tags):
         r"""Sets the sys_tags of this TagsReq.
 
-        标签对象（已废弃）
+        标签对象（已废弃）。
 
         :param sys_tags: The sys_tags of this TagsReq.
         :type sys_tags: list[:class:`huaweicloudsdkworkspace.v2.Tag`]

@@ -41,19 +41,19 @@ class CreateCollectionBody:
 
         The model defined in huaweicloud sdk
 
-        :param store_name: 知识仓实例名称
+        :param store_name: **参数解释：** 知识仓实例名称，region内唯一。 **约束限制：** 长度范围为3到63个字符，支持小写字母、数字、中划线（-），第一个字符只能够是小写字母，中划线(-)不得出现在字符串末尾。 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type store_name: str
-        :param collection_name: collection名称。资源名称可包含数字、字母和下划线 (_)。资源名称必须以字母或下划线 (_) 开头。最大长度支持255
+        :param collection_name: **参数解释：** collection名称。 **约束限制：** 可包含数字、字母和下划线 (_)。资源名称必须以字母或下划线 (_) 开头。最大长度支持255。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
         :type collection_name: str
         :param primary_field: 
         :type primary_field: :class:`huaweicloudsdkdwr.v1.PrimaryField`
-        :param fields: 集合中通用字段，创建列的schema
+        :param fields: **参数解释：** 集合中通用字段，创建列的schema。 **约束限制：** 不涉及。
         :type fields: list[:class:`huaweicloudsdkdwr.v1.Field`]
-        :param description: 指定 Collection 的描述信息
+        :param description: **参数解释：** 指定 Collection 的描述信息。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
         :type description: str
-        :param index_params: 索引的配置信息
+        :param index_params: **参数解释：** 索引的配置信息。 **约束限制：** 不涉及。
         :type index_params: list[:class:`huaweicloudsdkdwr.v1.IndexParams`]
-        :param params: collection参数： shards_num: 默认2，取值范围[1, 16] partitions_num: 默认4，取值范围[1, 1024]，若所有field的partition_key为false，则partitions_num固定为1。 max_length: 默认256，取值范围[1, 65535]，当primary_field.type为String时，指示String的最大长度
+        :param params: **参数解释：** collection常用参数。 **约束限制：** shards_num: 默认2，取值范围[1, 16] partitions_num: 默认4，取值范围[1, 1024]，若所有field的partition_key为false，则partitions_num固定为1。 max_length: 默认256，取值范围[1, 65535]，当primary_field.type为String时，指示String的最大长度。
         :type params: dict(str, object)
         """
         
@@ -83,7 +83,7 @@ class CreateCollectionBody:
     def store_name(self):
         r"""Gets the store_name of this CreateCollectionBody.
 
-        知识仓实例名称
+        **参数解释：** 知识仓实例名称，region内唯一。 **约束限制：** 长度范围为3到63个字符，支持小写字母、数字、中划线（-），第一个字符只能够是小写字母，中划线(-)不得出现在字符串末尾。 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The store_name of this CreateCollectionBody.
         :rtype: str
@@ -94,7 +94,7 @@ class CreateCollectionBody:
     def store_name(self, store_name):
         r"""Sets the store_name of this CreateCollectionBody.
 
-        知识仓实例名称
+        **参数解释：** 知识仓实例名称，region内唯一。 **约束限制：** 长度范围为3到63个字符，支持小写字母、数字、中划线（-），第一个字符只能够是小写字母，中划线(-)不得出现在字符串末尾。 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param store_name: The store_name of this CreateCollectionBody.
         :type store_name: str
@@ -105,7 +105,7 @@ class CreateCollectionBody:
     def collection_name(self):
         r"""Gets the collection_name of this CreateCollectionBody.
 
-        collection名称。资源名称可包含数字、字母和下划线 (_)。资源名称必须以字母或下划线 (_) 开头。最大长度支持255
+        **参数解释：** collection名称。 **约束限制：** 可包含数字、字母和下划线 (_)。资源名称必须以字母或下划线 (_) 开头。最大长度支持255。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :return: The collection_name of this CreateCollectionBody.
         :rtype: str
@@ -116,7 +116,7 @@ class CreateCollectionBody:
     def collection_name(self, collection_name):
         r"""Sets the collection_name of this CreateCollectionBody.
 
-        collection名称。资源名称可包含数字、字母和下划线 (_)。资源名称必须以字母或下划线 (_) 开头。最大长度支持255
+        **参数解释：** collection名称。 **约束限制：** 可包含数字、字母和下划线 (_)。资源名称必须以字母或下划线 (_) 开头。最大长度支持255。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :param collection_name: The collection_name of this CreateCollectionBody.
         :type collection_name: str
@@ -145,7 +145,7 @@ class CreateCollectionBody:
     def fields(self):
         r"""Gets the fields of this CreateCollectionBody.
 
-        集合中通用字段，创建列的schema
+        **参数解释：** 集合中通用字段，创建列的schema。 **约束限制：** 不涉及。
 
         :return: The fields of this CreateCollectionBody.
         :rtype: list[:class:`huaweicloudsdkdwr.v1.Field`]
@@ -156,7 +156,7 @@ class CreateCollectionBody:
     def fields(self, fields):
         r"""Sets the fields of this CreateCollectionBody.
 
-        集合中通用字段，创建列的schema
+        **参数解释：** 集合中通用字段，创建列的schema。 **约束限制：** 不涉及。
 
         :param fields: The fields of this CreateCollectionBody.
         :type fields: list[:class:`huaweicloudsdkdwr.v1.Field`]
@@ -167,7 +167,7 @@ class CreateCollectionBody:
     def description(self):
         r"""Gets the description of this CreateCollectionBody.
 
-        指定 Collection 的描述信息
+        **参数解释：** 指定 Collection 的描述信息。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :return: The description of this CreateCollectionBody.
         :rtype: str
@@ -178,7 +178,7 @@ class CreateCollectionBody:
     def description(self, description):
         r"""Sets the description of this CreateCollectionBody.
 
-        指定 Collection 的描述信息
+        **参数解释：** 指定 Collection 的描述信息。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :param description: The description of this CreateCollectionBody.
         :type description: str
@@ -189,7 +189,7 @@ class CreateCollectionBody:
     def index_params(self):
         r"""Gets the index_params of this CreateCollectionBody.
 
-        索引的配置信息
+        **参数解释：** 索引的配置信息。 **约束限制：** 不涉及。
 
         :return: The index_params of this CreateCollectionBody.
         :rtype: list[:class:`huaweicloudsdkdwr.v1.IndexParams`]
@@ -200,7 +200,7 @@ class CreateCollectionBody:
     def index_params(self, index_params):
         r"""Sets the index_params of this CreateCollectionBody.
 
-        索引的配置信息
+        **参数解释：** 索引的配置信息。 **约束限制：** 不涉及。
 
         :param index_params: The index_params of this CreateCollectionBody.
         :type index_params: list[:class:`huaweicloudsdkdwr.v1.IndexParams`]
@@ -211,7 +211,7 @@ class CreateCollectionBody:
     def params(self):
         r"""Gets the params of this CreateCollectionBody.
 
-        collection参数： shards_num: 默认2，取值范围[1, 16] partitions_num: 默认4，取值范围[1, 1024]，若所有field的partition_key为false，则partitions_num固定为1。 max_length: 默认256，取值范围[1, 65535]，当primary_field.type为String时，指示String的最大长度
+        **参数解释：** collection常用参数。 **约束限制：** shards_num: 默认2，取值范围[1, 16] partitions_num: 默认4，取值范围[1, 1024]，若所有field的partition_key为false，则partitions_num固定为1。 max_length: 默认256，取值范围[1, 65535]，当primary_field.type为String时，指示String的最大长度。
 
         :return: The params of this CreateCollectionBody.
         :rtype: dict(str, object)
@@ -222,7 +222,7 @@ class CreateCollectionBody:
     def params(self, params):
         r"""Sets the params of this CreateCollectionBody.
 
-        collection参数： shards_num: 默认2，取值范围[1, 16] partitions_num: 默认4，取值范围[1, 1024]，若所有field的partition_key为false，则partitions_num固定为1。 max_length: 默认256，取值范围[1, 65535]，当primary_field.type为String时，指示String的最大长度
+        **参数解释：** collection常用参数。 **约束限制：** shards_num: 默认2，取值范围[1, 16] partitions_num: 默认4，取值范围[1, 1024]，若所有field的partition_key为false，则partitions_num固定为1。 max_length: 默认256，取值范围[1, 65535]，当primary_field.type为String时，指示String的最大长度。
 
         :param params: The params of this CreateCollectionBody.
         :type params: dict(str, object)

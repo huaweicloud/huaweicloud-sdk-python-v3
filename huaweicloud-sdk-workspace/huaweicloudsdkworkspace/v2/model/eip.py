@@ -35,13 +35,13 @@ class Eip:
 
         The model defined in huaweicloud sdk
 
-        :param id: 桌面绑定的Eip的id，有值时优先绑定Eip。
+        :param id: 桌面绑定的EIP的id，有值时优先绑定EIP。
         :type id: str
-        :param type: EIP的类型，5_bgp（全动态BGP），5_sbgp（静态BGP）
+        :param type: EIP的类型，5_bgp（全动态BGP），5_sbgp（静态BGP）。
         :type type: str
         :param charge_mode: eip带宽计费模式 - TRAFFIC：按流量计费。 - BANDWIDTH：按带宽计费。
         :type charge_mode: str
-        :param bandwidth_size: 带宽大小
+        :param bandwidth_size: 带宽大小。
         :type bandwidth_size: int
         """
         
@@ -66,7 +66,7 @@ class Eip:
     def id(self):
         r"""Gets the id of this Eip.
 
-        桌面绑定的Eip的id，有值时优先绑定Eip。
+        桌面绑定的EIP的id，有值时优先绑定EIP。
 
         :return: The id of this Eip.
         :rtype: str
@@ -77,7 +77,7 @@ class Eip:
     def id(self, id):
         r"""Sets the id of this Eip.
 
-        桌面绑定的Eip的id，有值时优先绑定Eip。
+        桌面绑定的EIP的id，有值时优先绑定EIP。
 
         :param id: The id of this Eip.
         :type id: str
@@ -88,7 +88,7 @@ class Eip:
     def type(self):
         r"""Gets the type of this Eip.
 
-        EIP的类型，5_bgp（全动态BGP），5_sbgp（静态BGP）
+        EIP的类型，5_bgp（全动态BGP），5_sbgp（静态BGP）。
 
         :return: The type of this Eip.
         :rtype: str
@@ -99,7 +99,7 @@ class Eip:
     def type(self, type):
         r"""Sets the type of this Eip.
 
-        EIP的类型，5_bgp（全动态BGP），5_sbgp（静态BGP）
+        EIP的类型，5_bgp（全动态BGP），5_sbgp（静态BGP）。
 
         :param type: The type of this Eip.
         :type type: str
@@ -132,7 +132,7 @@ class Eip:
     def bandwidth_size(self):
         r"""Gets the bandwidth_size of this Eip.
 
-        带宽大小
+        带宽大小。
 
         :return: The bandwidth_size of this Eip.
         :rtype: int
@@ -143,7 +143,7 @@ class Eip:
     def bandwidth_size(self, bandwidth_size):
         r"""Sets the bandwidth_size of this Eip.
 
-        带宽大小
+        带宽大小。
 
         :param bandwidth_size: The bandwidth_size of this Eip.
         :type bandwidth_size: int

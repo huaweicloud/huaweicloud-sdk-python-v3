@@ -10,6 +10,7 @@ class HotWordsTypeEnum:
     allowed enum values
     """
     SIS = "SIS"
+    MOBVOI = "MOBVOI"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

@@ -29,7 +29,7 @@ class PathRule:
 
         The model defined in huaweicloud sdk
 
-        :param path: 完整路径： 1. 名称允许可见字符或空格，不可为全空格。 2. 长度0~512个字符。 3. 为空或者*号表示任意匹配。
+        :param path: 完整路径： 1. 名称允许可见字符或空格，不可为全空格。 2. 长度0~512个字符。
         :type path: str
         """
         
@@ -45,7 +45,7 @@ class PathRule:
     def path(self):
         r"""Gets the path of this PathRule.
 
-        完整路径： 1. 名称允许可见字符或空格，不可为全空格。 2. 长度0~512个字符。 3. 为空或者*号表示任意匹配。
+        完整路径： 1. 名称允许可见字符或空格，不可为全空格。 2. 长度0~512个字符。
 
         :return: The path of this PathRule.
         :rtype: str
@@ -56,7 +56,7 @@ class PathRule:
     def path(self, path):
         r"""Sets the path of this PathRule.
 
-        完整路径： 1. 名称允许可见字符或空格，不可为全空格。 2. 长度0~512个字符。 3. 为空或者*号表示任意匹配。
+        完整路径： 1. 名称允许可见字符或空格，不可为全空格。 2. 长度0~512个字符。
 
         :param path: The path of this PathRule.
         :type path: str

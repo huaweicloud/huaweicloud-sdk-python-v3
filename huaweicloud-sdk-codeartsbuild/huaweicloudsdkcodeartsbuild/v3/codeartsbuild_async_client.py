@@ -3123,6 +3123,20 @@ class CodeArtsBuildAsyncClient(Client):
         path_params = {}
 
         query_params = []
+        if 'page_index' in local_var_params:
+            query_params.append(('page_index', local_var_params['page_index']))
+        if 'page_size' in local_var_params:
+            query_params.append(('page_size', local_var_params['page_size']))
+        if 'search' in local_var_params:
+            query_params.append(('search', local_var_params['search']))
+        if 'sort_field' in local_var_params:
+            query_params.append(('sort_field', local_var_params['sort_field']))
+        if 'sort_order' in local_var_params:
+            query_params.append(('sort_order', local_var_params['sort_order']))
+        if 'creator_id' in local_var_params:
+            query_params.append(('creator_id', local_var_params['creator_id']))
+        if 'build_status' in local_var_params:
+            query_params.append(('build_status', local_var_params['build_status']))
 
         header_params = {}
 
@@ -4090,6 +4104,75 @@ class CodeArtsBuildAsyncClient(Client):
 
         return http_info
 
+    def show_job_pipeline_info_async(self, request):
+        r"""流水线查看构建任务信息
+
+        流水线查看构建任务信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowJobPipelineInfo
+        :type request: :class:`huaweicloudsdkcodeartsbuild.v3.ShowJobPipelineInfoRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsbuild.v3.ShowJobPipelineInfoResponse`
+        """
+        http_info = self._show_job_pipeline_info_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_job_pipeline_info_async_invoker(self, request):
+        http_info = self._show_job_pipeline_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_job_pipeline_info_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/job/{job_id}/pipeline-info",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowJobPipelineInfoResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+        if 'all' in local_var_params:
+            query_params.append(('all', local_var_params['all']))
+        if 'check_param_used' in local_var_params:
+            query_params.append(('check_param_used', local_var_params['check_param_used']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_job_role_permission_async(self, request):
         r"""获取构建任务的角色权限矩阵信息
 
@@ -4417,6 +4500,73 @@ class CodeArtsBuildAsyncClient(Client):
 
         return http_info
 
+    def stop_the_job_async(self, request):
+        r"""停止构建任务v1
+
+        停止构建任务v1
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for StopTheJob
+        :type request: :class:`huaweicloudsdkcodeartsbuild.v3.StopTheJobRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsbuild.v3.StopTheJobResponse`
+        """
+        http_info = self._stop_the_job_http_info(request)
+        return self._call_api(**http_info)
+
+    def stop_the_job_async_invoker(self, request):
+        http_info = self._stop_the_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _stop_the_job_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/job/{job_id}/stop",
+            "request_type": request.__class__.__name__,
+            "response_type": "StopTheJobResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+        if 'build_no' in local_var_params:
+            query_params.append(('build_no', local_var_params['build_no']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def update_new_job_async(self, request):
         r"""更新构建任务
 
@@ -4442,6 +4592,71 @@ class CodeArtsBuildAsyncClient(Client):
             "resource_path": "/v1/job/update",
             "request_type": request.__class__.__name__,
             "response_type": "UpdateNewJobResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def add_keystore_permission_async(self, request):
+        r"""添加文件权限
+
+        添加文件权限
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for AddKeystorePermission
+        :type request: :class:`huaweicloudsdkcodeartsbuild.v3.AddKeystorePermissionRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsbuild.v3.AddKeystorePermissionResponse`
+        """
+        http_info = self._add_keystore_permission_http_info(request)
+        return self._call_api(**http_info)
+
+    def add_keystore_permission_async_invoker(self, request):
+        http_info = self._add_keystore_permission_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _add_keystore_permission_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/keystore/permission/add",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddKeystorePermissionResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -4918,6 +5133,71 @@ class CodeArtsBuildAsyncClient(Client):
         path_params = {}
         if 'id' in local_var_params:
             path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_keystore_permission_async(self, request):
+        r"""配置文件权限
+
+        配置文件权限
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateKeystorePermission
+        :type request: :class:`huaweicloudsdkcodeartsbuild.v3.UpdateKeystorePermissionRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsbuild.v3.UpdateKeystorePermissionResponse`
+        """
+        http_info = self._update_keystore_permission_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_keystore_permission_async_invoker(self, request):
+        http_info = self._update_keystore_permission_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_keystore_permission_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/keystore/permission/edit",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateKeystorePermissionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
 
         query_params = []
 

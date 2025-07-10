@@ -44,7 +44,8 @@ class BatchAddServerTag:
         self.discriminator = None
 
         self.key = key
-        self.value = value
+        if value is not None:
+            self.value = value
 
     @property
     def key(self):

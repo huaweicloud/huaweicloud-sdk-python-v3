@@ -17,58 +17,29 @@ class DeleteDesktopSubResourcesRequest:
     sensitive_list = []
 
     openapi_types = {
-        'service_transaction_id': 'str',
         'body': 'DeleteDesktopSubResourcesReq'
     }
 
     attribute_map = {
-        'service_transaction_id': 'Service-Transaction-Id',
         'body': 'body'
     }
 
-    def __init__(self, service_transaction_id=None, body=None):
+    def __init__(self, body=None):
         r"""DeleteDesktopSubResourcesRequest
 
         The model defined in huaweicloud sdk
 
-        :param service_transaction_id: CBC接口回调时，请求头里带上的业务ID
-        :type service_transaction_id: str
         :param body: Body of the DeleteDesktopSubResourcesRequest
         :type body: :class:`huaweicloudsdkworkspace.v2.DeleteDesktopSubResourcesReq`
         """
         
         
 
-        self._service_transaction_id = None
         self._body = None
         self.discriminator = None
 
-        if service_transaction_id is not None:
-            self.service_transaction_id = service_transaction_id
         if body is not None:
             self.body = body
-
-    @property
-    def service_transaction_id(self):
-        r"""Gets the service_transaction_id of this DeleteDesktopSubResourcesRequest.
-
-        CBC接口回调时，请求头里带上的业务ID
-
-        :return: The service_transaction_id of this DeleteDesktopSubResourcesRequest.
-        :rtype: str
-        """
-        return self._service_transaction_id
-
-    @service_transaction_id.setter
-    def service_transaction_id(self, service_transaction_id):
-        r"""Sets the service_transaction_id of this DeleteDesktopSubResourcesRequest.
-
-        CBC接口回调时，请求头里带上的业务ID
-
-        :param service_transaction_id: The service_transaction_id of this DeleteDesktopSubResourcesRequest.
-        :type service_transaction_id: str
-        """
-        self._service_transaction_id = service_transaction_id
 
     @property
     def body(self):

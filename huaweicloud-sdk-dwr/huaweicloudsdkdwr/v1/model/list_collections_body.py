@@ -31,9 +31,9 @@ class ListCollectionsBody:
 
         The model defined in huaweicloud sdk
 
-        :param store_name: 知识仓实例名称
+        :param store_name: **参数解释：** 知识仓实例名称，region内唯一。 **约束限制：** 长度范围为3到63个字符，支持小写字母、数字、中划线（-），第一个字符只能够是小写字母，中划线(-)不得出现在字符串末尾。 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type store_name: str
-        :param detail: 是否列举collection的详细信息，默认值：false
+        :param detail: **参数解释：** 列举collection的详细信息。 **约束限制：** 不涉及。 **取值范围：** true 或者 false。 **默认取值:** false。
         :type detail: bool
         """
         
@@ -51,7 +51,7 @@ class ListCollectionsBody:
     def store_name(self):
         r"""Gets the store_name of this ListCollectionsBody.
 
-        知识仓实例名称
+        **参数解释：** 知识仓实例名称，region内唯一。 **约束限制：** 长度范围为3到63个字符，支持小写字母、数字、中划线（-），第一个字符只能够是小写字母，中划线(-)不得出现在字符串末尾。 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The store_name of this ListCollectionsBody.
         :rtype: str
@@ -62,7 +62,7 @@ class ListCollectionsBody:
     def store_name(self, store_name):
         r"""Sets the store_name of this ListCollectionsBody.
 
-        知识仓实例名称
+        **参数解释：** 知识仓实例名称，region内唯一。 **约束限制：** 长度范围为3到63个字符，支持小写字母、数字、中划线（-），第一个字符只能够是小写字母，中划线(-)不得出现在字符串末尾。 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param store_name: The store_name of this ListCollectionsBody.
         :type store_name: str
@@ -73,7 +73,7 @@ class ListCollectionsBody:
     def detail(self):
         r"""Gets the detail of this ListCollectionsBody.
 
-        是否列举collection的详细信息，默认值：false
+        **参数解释：** 列举collection的详细信息。 **约束限制：** 不涉及。 **取值范围：** true 或者 false。 **默认取值:** false。
 
         :return: The detail of this ListCollectionsBody.
         :rtype: bool
@@ -84,7 +84,7 @@ class ListCollectionsBody:
     def detail(self, detail):
         r"""Sets the detail of this ListCollectionsBody.
 
-        是否列举collection的详细信息，默认值：false
+        **参数解释：** 列举collection的详细信息。 **约束限制：** 不涉及。 **取值范围：** true 或者 false。 **默认取值:** false。
 
         :param detail: The detail of this ListCollectionsBody.
         :type detail: bool

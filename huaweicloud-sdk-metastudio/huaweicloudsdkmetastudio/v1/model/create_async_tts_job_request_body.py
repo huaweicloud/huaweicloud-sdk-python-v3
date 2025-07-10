@@ -37,7 +37,8 @@ class CreateAsyncTtsJobRequestBody:
         'srt_output_external_url': 'str',
         'action_output_external_url': 'str',
         'is_vocabulary_config_enable': 'bool',
-        'is_concurrent_resource': 'bool'
+        'is_concurrent_resource': 'bool',
+        'priority': 'int'
     }
 
     attribute_map = {
@@ -61,10 +62,11 @@ class CreateAsyncTtsJobRequestBody:
         'srt_output_external_url': 'srt_output_external_url',
         'action_output_external_url': 'action_output_external_url',
         'is_vocabulary_config_enable': 'is_vocabulary_config_enable',
-        'is_concurrent_resource': 'is_concurrent_resource'
+        'is_concurrent_resource': 'is_concurrent_resource',
+        'priority': 'priority'
     }
 
-    def __init__(self, text=None, tts_text=None, voice_asset_id=None, speed=None, pitch=None, volume=None, audio_format=None, need_timestamp=None, silence_flag=None, silence_time_ms=None, callback_config=None, gen_srt=None, srt_len=None, srt_line_limit=None, slice_segments=None, channels=None, output_external_url=None, srt_output_external_url=None, action_output_external_url=None, is_vocabulary_config_enable=None, is_concurrent_resource=None):
+    def __init__(self, text=None, tts_text=None, voice_asset_id=None, speed=None, pitch=None, volume=None, audio_format=None, need_timestamp=None, silence_flag=None, silence_time_ms=None, callback_config=None, gen_srt=None, srt_len=None, srt_line_limit=None, slice_segments=None, channels=None, output_external_url=None, srt_output_external_url=None, action_output_external_url=None, is_vocabulary_config_enable=None, is_concurrent_resource=None, priority=None):
         r"""CreateAsyncTtsJobRequestBody
 
         The model defined in huaweicloud sdk
@@ -73,7 +75,7 @@ class CreateAsyncTtsJobRequestBody:
         :type text: str
         :param tts_text: 发送给tts的待合成文本
         :type tts_text: str
-        :param voice_asset_id: 音色ID，获取方式详见[获取音色ID](metastudio_02_0054.xml)。
+        :param voice_asset_id: 音色ID，获取方式详见[获取音色ID](metastudio_02_0054.xml)。  不同Region的计费标准详见[预置音色计费标准](metastudio_02_0060.xml)。
         :type voice_asset_id: str
         :param speed: 语速。 * 当取值为“100”时，表示一个成年人正常的语速，约为250字/分钟。 * 50表示0.5倍语速，100表示正常语速，200表示2倍语速。
         :type speed: int
@@ -111,6 +113,8 @@ class CreateAsyncTtsJobRequestBody:
         :type is_vocabulary_config_enable: bool
         :param is_concurrent_resource: 是否使用包周期路数资源进行计费
         :type is_concurrent_resource: bool
+        :param priority: 优先级（0-10），0为最高优先级，默认5
+        :type priority: int
         """
         
         
@@ -136,6 +140,7 @@ class CreateAsyncTtsJobRequestBody:
         self._action_output_external_url = None
         self._is_vocabulary_config_enable = None
         self._is_concurrent_resource = None
+        self._priority = None
         self.discriminator = None
 
         self.text = text
@@ -178,6 +183,8 @@ class CreateAsyncTtsJobRequestBody:
             self.is_vocabulary_config_enable = is_vocabulary_config_enable
         if is_concurrent_resource is not None:
             self.is_concurrent_resource = is_concurrent_resource
+        if priority is not None:
+            self.priority = priority
 
     @property
     def text(self):
@@ -227,7 +234,7 @@ class CreateAsyncTtsJobRequestBody:
     def voice_asset_id(self):
         r"""Gets the voice_asset_id of this CreateAsyncTtsJobRequestBody.
 
-        音色ID，获取方式详见[获取音色ID](metastudio_02_0054.xml)。
+        音色ID，获取方式详见[获取音色ID](metastudio_02_0054.xml)。  不同Region的计费标准详见[预置音色计费标准](metastudio_02_0060.xml)。
 
         :return: The voice_asset_id of this CreateAsyncTtsJobRequestBody.
         :rtype: str
@@ -238,7 +245,7 @@ class CreateAsyncTtsJobRequestBody:
     def voice_asset_id(self, voice_asset_id):
         r"""Sets the voice_asset_id of this CreateAsyncTtsJobRequestBody.
 
-        音色ID，获取方式详见[获取音色ID](metastudio_02_0054.xml)。
+        音色ID，获取方式详见[获取音色ID](metastudio_02_0054.xml)。  不同Region的计费标准详见[预置音色计费标准](metastudio_02_0060.xml)。
 
         :param voice_asset_id: The voice_asset_id of this CreateAsyncTtsJobRequestBody.
         :type voice_asset_id: str
@@ -636,6 +643,28 @@ class CreateAsyncTtsJobRequestBody:
         :type is_concurrent_resource: bool
         """
         self._is_concurrent_resource = is_concurrent_resource
+
+    @property
+    def priority(self):
+        r"""Gets the priority of this CreateAsyncTtsJobRequestBody.
+
+        优先级（0-10），0为最高优先级，默认5
+
+        :return: The priority of this CreateAsyncTtsJobRequestBody.
+        :rtype: int
+        """
+        return self._priority
+
+    @priority.setter
+    def priority(self, priority):
+        r"""Sets the priority of this CreateAsyncTtsJobRequestBody.
+
+        优先级（0-10），0为最高优先级，默认5
+
+        :param priority: The priority of this CreateAsyncTtsJobRequestBody.
+        :type priority: int
+        """
+        self._priority = priority
 
     def to_dict(self):
         """Returns the model properties as a dict"""

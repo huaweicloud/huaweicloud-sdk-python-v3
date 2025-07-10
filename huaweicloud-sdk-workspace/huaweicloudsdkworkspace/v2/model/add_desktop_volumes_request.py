@@ -18,25 +18,21 @@ class AddDesktopVolumesRequest:
 
     openapi_types = {
         'desktop_id': 'str',
-        'service_transaction_id': 'str',
         'body': 'AddVolumesReq'
     }
 
     attribute_map = {
         'desktop_id': 'desktop_id',
-        'service_transaction_id': 'Service-Transaction-Id',
         'body': 'body'
     }
 
-    def __init__(self, desktop_id=None, service_transaction_id=None, body=None):
+    def __init__(self, desktop_id=None, body=None):
         r"""AddDesktopVolumesRequest
 
         The model defined in huaweicloud sdk
 
         :param desktop_id: 桌面ID。
         :type desktop_id: str
-        :param service_transaction_id: CBC接口回调时，请求头里带上的业务ID
-        :type service_transaction_id: str
         :param body: Body of the AddDesktopVolumesRequest
         :type body: :class:`huaweicloudsdkworkspace.v2.AddVolumesReq`
         """
@@ -44,13 +40,10 @@ class AddDesktopVolumesRequest:
         
 
         self._desktop_id = None
-        self._service_transaction_id = None
         self._body = None
         self.discriminator = None
 
         self.desktop_id = desktop_id
-        if service_transaction_id is not None:
-            self.service_transaction_id = service_transaction_id
         if body is not None:
             self.body = body
 
@@ -75,28 +68,6 @@ class AddDesktopVolumesRequest:
         :type desktop_id: str
         """
         self._desktop_id = desktop_id
-
-    @property
-    def service_transaction_id(self):
-        r"""Gets the service_transaction_id of this AddDesktopVolumesRequest.
-
-        CBC接口回调时，请求头里带上的业务ID
-
-        :return: The service_transaction_id of this AddDesktopVolumesRequest.
-        :rtype: str
-        """
-        return self._service_transaction_id
-
-    @service_transaction_id.setter
-    def service_transaction_id(self, service_transaction_id):
-        r"""Sets the service_transaction_id of this AddDesktopVolumesRequest.
-
-        CBC接口回调时，请求头里带上的业务ID
-
-        :param service_transaction_id: The service_transaction_id of this AddDesktopVolumesRequest.
-        :type service_transaction_id: str
-        """
-        self._service_transaction_id = service_transaction_id
 
     @property
     def body(self):

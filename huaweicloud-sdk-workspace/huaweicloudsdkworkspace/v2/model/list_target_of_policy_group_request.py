@@ -43,7 +43,7 @@ class ListTargetOfPolicyGroupRequest:
         :type target_type: str
         :param target_name: 对象名称，支持模糊查询。
         :type target_name: str
-        :param limit: 每页数量。范围0-1000
+        :param limit: 每页数量。范围0-1000。
         :type limit: int
         :param offset: 偏移量。
         :type offset: str
@@ -138,7 +138,7 @@ class ListTargetOfPolicyGroupRequest:
     def limit(self):
         r"""Gets the limit of this ListTargetOfPolicyGroupRequest.
 
-        每页数量。范围0-1000
+        每页数量。范围0-1000。
 
         :return: The limit of this ListTargetOfPolicyGroupRequest.
         :rtype: int
@@ -149,7 +149,7 @@ class ListTargetOfPolicyGroupRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListTargetOfPolicyGroupRequest.
 
-        每页数量。范围0-1000
+        每页数量。范围0-1000。
 
         :param limit: The limit of this ListTargetOfPolicyGroupRequest.
         :type limit: int

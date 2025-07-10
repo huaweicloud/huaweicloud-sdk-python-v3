@@ -37,11 +37,11 @@ class VpcConfigInfo:
 
         :param used_subnet_ids: 已使用的子网信息。
         :type used_subnet_ids: list[str]
-        :param vpc_id: VPC ID
+        :param vpc_id: VPC ID。
         :type vpc_id: str
-        :param subnet_ids: 子网ID列表
+        :param subnet_ids: 子网ID列表。
         :type subnet_ids: list[str]
-        :param default_access_vpc: 是否为默认接入VPC
+        :param default_access_vpc: 是否为默认接入VPC。
         :type default_access_vpc: bool
         """
         
@@ -88,7 +88,7 @@ class VpcConfigInfo:
     def vpc_id(self):
         r"""Gets the vpc_id of this VpcConfigInfo.
 
-        VPC ID
+        VPC ID。
 
         :return: The vpc_id of this VpcConfigInfo.
         :rtype: str
@@ -99,7 +99,7 @@ class VpcConfigInfo:
     def vpc_id(self, vpc_id):
         r"""Sets the vpc_id of this VpcConfigInfo.
 
-        VPC ID
+        VPC ID。
 
         :param vpc_id: The vpc_id of this VpcConfigInfo.
         :type vpc_id: str
@@ -110,7 +110,7 @@ class VpcConfigInfo:
     def subnet_ids(self):
         r"""Gets the subnet_ids of this VpcConfigInfo.
 
-        子网ID列表
+        子网ID列表。
 
         :return: The subnet_ids of this VpcConfigInfo.
         :rtype: list[str]
@@ -121,7 +121,7 @@ class VpcConfigInfo:
     def subnet_ids(self, subnet_ids):
         r"""Sets the subnet_ids of this VpcConfigInfo.
 
-        子网ID列表
+        子网ID列表。
 
         :param subnet_ids: The subnet_ids of this VpcConfigInfo.
         :type subnet_ids: list[str]
@@ -132,7 +132,7 @@ class VpcConfigInfo:
     def default_access_vpc(self):
         r"""Gets the default_access_vpc of this VpcConfigInfo.
 
-        是否为默认接入VPC
+        是否为默认接入VPC。
 
         :return: The default_access_vpc of this VpcConfigInfo.
         :rtype: bool
@@ -143,7 +143,7 @@ class VpcConfigInfo:
     def default_access_vpc(self, default_access_vpc):
         r"""Sets the default_access_vpc of this VpcConfigInfo.
 
-        是否为默认接入VPC
+        是否为默认接入VPC。
 
         :param default_access_vpc: The default_access_vpc of this VpcConfigInfo.
         :type default_access_vpc: bool

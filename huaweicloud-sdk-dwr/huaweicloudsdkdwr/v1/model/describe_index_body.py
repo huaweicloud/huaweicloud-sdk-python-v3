@@ -33,11 +33,11 @@ class DescribeIndexBody:
 
         The model defined in huaweicloud sdk
 
-        :param store_name: 知识仓实例名字
+        :param store_name: **参数解释：** 知识仓实例名称，region内唯一。 **约束限制：** 长度范围为3到63个字符，支持小写字母、数字、中划线（-），第一个字符只能够是小写字母，中划线(-)不得出现在字符串末尾。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type store_name: str
-        :param collection_name: Collection 名称。
+        :param collection_name: **参数解释：** collection名称，知识仓内唯一。 **约束限制：** 长度范围为1到255个字符，支持字母、数字、中划线（-）和下划线（_），大小写敏感。第一个字符只能够是下划线（_）和字母，中划线(-)不得出现在字符串末尾。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type collection_name: str
-        :param index_name: 对应的索引名
+        :param index_name: **参数解释：** 创建的索引名称，collection内唯一。 **约束限制：** 长度范围为1到255个字符，支持字母、数字、中划线（-）和下划线（_），大小写敏感。第一个字符只能够是下划线（_）和字母，中划线(-)不得出现在字符串末尾。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type index_name: str
         """
         
@@ -56,7 +56,7 @@ class DescribeIndexBody:
     def store_name(self):
         r"""Gets the store_name of this DescribeIndexBody.
 
-        知识仓实例名字
+        **参数解释：** 知识仓实例名称，region内唯一。 **约束限制：** 长度范围为3到63个字符，支持小写字母、数字、中划线（-），第一个字符只能够是小写字母，中划线(-)不得出现在字符串末尾。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The store_name of this DescribeIndexBody.
         :rtype: str
@@ -67,7 +67,7 @@ class DescribeIndexBody:
     def store_name(self, store_name):
         r"""Sets the store_name of this DescribeIndexBody.
 
-        知识仓实例名字
+        **参数解释：** 知识仓实例名称，region内唯一。 **约束限制：** 长度范围为3到63个字符，支持小写字母、数字、中划线（-），第一个字符只能够是小写字母，中划线(-)不得出现在字符串末尾。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param store_name: The store_name of this DescribeIndexBody.
         :type store_name: str
@@ -78,7 +78,7 @@ class DescribeIndexBody:
     def collection_name(self):
         r"""Gets the collection_name of this DescribeIndexBody.
 
-        Collection 名称。
+        **参数解释：** collection名称，知识仓内唯一。 **约束限制：** 长度范围为1到255个字符，支持字母、数字、中划线（-）和下划线（_），大小写敏感。第一个字符只能够是下划线（_）和字母，中划线(-)不得出现在字符串末尾。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The collection_name of this DescribeIndexBody.
         :rtype: str
@@ -89,7 +89,7 @@ class DescribeIndexBody:
     def collection_name(self, collection_name):
         r"""Sets the collection_name of this DescribeIndexBody.
 
-        Collection 名称。
+        **参数解释：** collection名称，知识仓内唯一。 **约束限制：** 长度范围为1到255个字符，支持字母、数字、中划线（-）和下划线（_），大小写敏感。第一个字符只能够是下划线（_）和字母，中划线(-)不得出现在字符串末尾。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param collection_name: The collection_name of this DescribeIndexBody.
         :type collection_name: str
@@ -100,7 +100,7 @@ class DescribeIndexBody:
     def index_name(self):
         r"""Gets the index_name of this DescribeIndexBody.
 
-        对应的索引名
+        **参数解释：** 创建的索引名称，collection内唯一。 **约束限制：** 长度范围为1到255个字符，支持字母、数字、中划线（-）和下划线（_），大小写敏感。第一个字符只能够是下划线（_）和字母，中划线(-)不得出现在字符串末尾。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The index_name of this DescribeIndexBody.
         :rtype: str
@@ -111,7 +111,7 @@ class DescribeIndexBody:
     def index_name(self, index_name):
         r"""Sets the index_name of this DescribeIndexBody.
 
-        对应的索引名
+        **参数解释：** 创建的索引名称，collection内唯一。 **约束限制：** 长度范围为1到255个字符，支持字母、数字、中划线（-）和下划线（_），大小写敏感。第一个字符只能够是下划线（_）和字母，中划线(-)不得出现在字符串末尾。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param index_name: The index_name of this DescribeIndexBody.
         :type index_name: str

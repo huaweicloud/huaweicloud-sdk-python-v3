@@ -31,9 +31,9 @@ class AddVolumes:
 
         The model defined in huaweicloud sdk
 
-        :param desktop_id: 桌面ID
+        :param desktop_id: 桌面ID。
         :type desktop_id: str
-        :param volumes: 订单的磁盘信息列表
+        :param volumes: 订单的磁盘信息列表。
         :type volumes: list[:class:`huaweicloudsdkworkspace.v2.Volume`]
         """
         
@@ -50,7 +50,7 @@ class AddVolumes:
     def desktop_id(self):
         r"""Gets the desktop_id of this AddVolumes.
 
-        桌面ID
+        桌面ID。
 
         :return: The desktop_id of this AddVolumes.
         :rtype: str
@@ -61,7 +61,7 @@ class AddVolumes:
     def desktop_id(self, desktop_id):
         r"""Sets the desktop_id of this AddVolumes.
 
-        桌面ID
+        桌面ID。
 
         :param desktop_id: The desktop_id of this AddVolumes.
         :type desktop_id: str
@@ -72,7 +72,7 @@ class AddVolumes:
     def volumes(self):
         r"""Gets the volumes of this AddVolumes.
 
-        订单的磁盘信息列表
+        订单的磁盘信息列表。
 
         :return: The volumes of this AddVolumes.
         :rtype: list[:class:`huaweicloudsdkworkspace.v2.Volume`]
@@ -83,7 +83,7 @@ class AddVolumes:
     def volumes(self, volumes):
         r"""Sets the volumes of this AddVolumes.
 
-        订单的磁盘信息列表
+        订单的磁盘信息列表。
 
         :param volumes: The volumes of this AddVolumes.
         :type volumes: list[:class:`huaweicloudsdkworkspace.v2.Volume`]

@@ -39,17 +39,17 @@ class QueryEntitiesBody:
 
         The model defined in huaweicloud sdk
 
-        :param store_name: 知识仓实例名称
+        :param store_name: **参数解释：** 知识仓实例名称，region内唯一。 **约束限制：** 长度范围为3到63个字符，支持小写字母、数字、中划线（-），第一个字符只能够是小写字母，中划线(-)不得出现在字符串末尾。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type store_name: str
-        :param collection_name: collection名称
+        :param collection_name: **参数解释：** collection名称，知识仓内唯一。 **约束限制：** 长度范围为1到255个字符，支持字母、数字、中划线（-）和下划线（_），大小写敏感。第一个字符只能够是下划线（_）和字母，中划线(-)不得出现在字符串末尾。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type collection_name: str
-        :param output_fields: 配置需返回的字段。
+        :param output_fields: **参数解释：** field名称列表，配置需与搜索结果一起返回的字段。 **约束限制：** 当取值为&#x60;[\&quot;count(*)\&quot;]&#x60;时，top_k必须为负数，表示统计符合条件的entity数量。 **取值范围：** 不涉及。 **默认取值：** &#x60;[ ]&#x60;，不返回任何额外的字段数据。
         :type output_fields: list[str]
-        :param top_k: 返回个数限制
+        :param top_k: **参数解释：** 返回的entity个数限制。可以将此参数与offset结合使用以启用分页。当取值为负数时，表示返回所有符合条件的数据。 **约束限制：** 与offset取值的总和应小于16384。当output_field为&#x60;[\&quot;count(*)\&quot;]&#x60;时，top_k必须为负数。 **取值范围：** 小于等于16384 **默认取值：** 10
         :type top_k: int
-        :param offset: 搜索结果中要跳过的entity数。
+        :param offset: **参数解释：** 在搜索结果中跳过的记录数。可以将此参数与 top_k 参数结合使用以启用分页。 **约束限制：** 与top_k取值的总和应小于16384。 **取值范围：** 大于等于0 **默认取值:** 0
         :type offset: int
-        :param filter: 设置过滤表达式。 filter的表达式格式为详见Filter规则
+        :param filter: **参数解释：** 用于过滤匹配entity的标量过滤条件。 **约束限制：** 要构建标量过滤条件，请参阅filter表达式规则。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type filter: str
         """
         
@@ -77,7 +77,7 @@ class QueryEntitiesBody:
     def store_name(self):
         r"""Gets the store_name of this QueryEntitiesBody.
 
-        知识仓实例名称
+        **参数解释：** 知识仓实例名称，region内唯一。 **约束限制：** 长度范围为3到63个字符，支持小写字母、数字、中划线（-），第一个字符只能够是小写字母，中划线(-)不得出现在字符串末尾。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The store_name of this QueryEntitiesBody.
         :rtype: str
@@ -88,7 +88,7 @@ class QueryEntitiesBody:
     def store_name(self, store_name):
         r"""Sets the store_name of this QueryEntitiesBody.
 
-        知识仓实例名称
+        **参数解释：** 知识仓实例名称，region内唯一。 **约束限制：** 长度范围为3到63个字符，支持小写字母、数字、中划线（-），第一个字符只能够是小写字母，中划线(-)不得出现在字符串末尾。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param store_name: The store_name of this QueryEntitiesBody.
         :type store_name: str
@@ -99,7 +99,7 @@ class QueryEntitiesBody:
     def collection_name(self):
         r"""Gets the collection_name of this QueryEntitiesBody.
 
-        collection名称
+        **参数解释：** collection名称，知识仓内唯一。 **约束限制：** 长度范围为1到255个字符，支持字母、数字、中划线（-）和下划线（_），大小写敏感。第一个字符只能够是下划线（_）和字母，中划线(-)不得出现在字符串末尾。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The collection_name of this QueryEntitiesBody.
         :rtype: str
@@ -110,7 +110,7 @@ class QueryEntitiesBody:
     def collection_name(self, collection_name):
         r"""Sets the collection_name of this QueryEntitiesBody.
 
-        collection名称
+        **参数解释：** collection名称，知识仓内唯一。 **约束限制：** 长度范围为1到255个字符，支持字母、数字、中划线（-）和下划线（_），大小写敏感。第一个字符只能够是下划线（_）和字母，中划线(-)不得出现在字符串末尾。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param collection_name: The collection_name of this QueryEntitiesBody.
         :type collection_name: str
@@ -121,7 +121,7 @@ class QueryEntitiesBody:
     def output_fields(self):
         r"""Gets the output_fields of this QueryEntitiesBody.
 
-        配置需返回的字段。
+        **参数解释：** field名称列表，配置需与搜索结果一起返回的字段。 **约束限制：** 当取值为`[\"count(*)\"]`时，top_k必须为负数，表示统计符合条件的entity数量。 **取值范围：** 不涉及。 **默认取值：** `[ ]`，不返回任何额外的字段数据。
 
         :return: The output_fields of this QueryEntitiesBody.
         :rtype: list[str]
@@ -132,7 +132,7 @@ class QueryEntitiesBody:
     def output_fields(self, output_fields):
         r"""Sets the output_fields of this QueryEntitiesBody.
 
-        配置需返回的字段。
+        **参数解释：** field名称列表，配置需与搜索结果一起返回的字段。 **约束限制：** 当取值为`[\"count(*)\"]`时，top_k必须为负数，表示统计符合条件的entity数量。 **取值范围：** 不涉及。 **默认取值：** `[ ]`，不返回任何额外的字段数据。
 
         :param output_fields: The output_fields of this QueryEntitiesBody.
         :type output_fields: list[str]
@@ -143,7 +143,7 @@ class QueryEntitiesBody:
     def top_k(self):
         r"""Gets the top_k of this QueryEntitiesBody.
 
-        返回个数限制
+        **参数解释：** 返回的entity个数限制。可以将此参数与offset结合使用以启用分页。当取值为负数时，表示返回所有符合条件的数据。 **约束限制：** 与offset取值的总和应小于16384。当output_field为`[\"count(*)\"]`时，top_k必须为负数。 **取值范围：** 小于等于16384 **默认取值：** 10
 
         :return: The top_k of this QueryEntitiesBody.
         :rtype: int
@@ -154,7 +154,7 @@ class QueryEntitiesBody:
     def top_k(self, top_k):
         r"""Sets the top_k of this QueryEntitiesBody.
 
-        返回个数限制
+        **参数解释：** 返回的entity个数限制。可以将此参数与offset结合使用以启用分页。当取值为负数时，表示返回所有符合条件的数据。 **约束限制：** 与offset取值的总和应小于16384。当output_field为`[\"count(*)\"]`时，top_k必须为负数。 **取值范围：** 小于等于16384 **默认取值：** 10
 
         :param top_k: The top_k of this QueryEntitiesBody.
         :type top_k: int
@@ -165,7 +165,7 @@ class QueryEntitiesBody:
     def offset(self):
         r"""Gets the offset of this QueryEntitiesBody.
 
-        搜索结果中要跳过的entity数。
+        **参数解释：** 在搜索结果中跳过的记录数。可以将此参数与 top_k 参数结合使用以启用分页。 **约束限制：** 与top_k取值的总和应小于16384。 **取值范围：** 大于等于0 **默认取值:** 0
 
         :return: The offset of this QueryEntitiesBody.
         :rtype: int
@@ -176,7 +176,7 @@ class QueryEntitiesBody:
     def offset(self, offset):
         r"""Sets the offset of this QueryEntitiesBody.
 
-        搜索结果中要跳过的entity数。
+        **参数解释：** 在搜索结果中跳过的记录数。可以将此参数与 top_k 参数结合使用以启用分页。 **约束限制：** 与top_k取值的总和应小于16384。 **取值范围：** 大于等于0 **默认取值:** 0
 
         :param offset: The offset of this QueryEntitiesBody.
         :type offset: int
@@ -187,7 +187,7 @@ class QueryEntitiesBody:
     def filter(self):
         r"""Gets the filter of this QueryEntitiesBody.
 
-        设置过滤表达式。 filter的表达式格式为详见Filter规则
+        **参数解释：** 用于过滤匹配entity的标量过滤条件。 **约束限制：** 要构建标量过滤条件，请参阅filter表达式规则。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The filter of this QueryEntitiesBody.
         :rtype: str
@@ -198,7 +198,7 @@ class QueryEntitiesBody:
     def filter(self, filter):
         r"""Sets the filter of this QueryEntitiesBody.
 
-        设置过滤表达式。 filter的表达式格式为详见Filter规则
+        **参数解释：** 用于过滤匹配entity的标量过滤条件。 **约束限制：** 要构建标量过滤条件，请参阅filter表达式规则。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param filter: The filter of this QueryEntitiesBody.
         :type filter: str

@@ -25,18 +25,15 @@ class ProductInfo:
         'descriptions': 'str',
         'charge_mode': 'str',
         'architecture': 'str',
-        'cpu_desc': 'str',
         'is_gpu': 'bool',
         'package_type': 'str',
         'system_disk_type': 'str',
         'system_disk_size': 'str',
-        'gpu_desc': 'str',
         'contain_data_disk': 'bool',
         'resource_type': 'str',
         'cloud_service_type': 'str',
         'volume_product_type': 'str',
-        'status': 'str',
-        'sub_product_list': 'list[str]'
+        'status': 'str'
     }
 
     attribute_map = {
@@ -48,21 +45,18 @@ class ProductInfo:
         'descriptions': 'descriptions',
         'charge_mode': 'charge_mode',
         'architecture': 'architecture',
-        'cpu_desc': 'cpu_desc',
         'is_gpu': 'is_gpu',
         'package_type': 'package_type',
         'system_disk_type': 'system_disk_type',
         'system_disk_size': 'system_disk_size',
-        'gpu_desc': 'gpu_desc',
         'contain_data_disk': 'contain_data_disk',
         'resource_type': 'resource_type',
         'cloud_service_type': 'cloud_service_type',
         'volume_product_type': 'volume_product_type',
-        'status': 'status',
-        'sub_product_list': 'sub_product_list'
+        'status': 'status'
     }
 
-    def __init__(self, product_id=None, flavor_id=None, type=None, cpu=None, memory=None, descriptions=None, charge_mode=None, architecture=None, cpu_desc=None, is_gpu=None, package_type=None, system_disk_type=None, system_disk_size=None, gpu_desc=None, contain_data_disk=None, resource_type=None, cloud_service_type=None, volume_product_type=None, status=None, sub_product_list=None):
+    def __init__(self, product_id=None, flavor_id=None, type=None, cpu=None, memory=None, descriptions=None, charge_mode=None, architecture=None, is_gpu=None, package_type=None, system_disk_type=None, system_disk_size=None, contain_data_disk=None, resource_type=None, cloud_service_type=None, volume_product_type=None, status=None):
         r"""ProductInfo
 
         The model defined in huaweicloud sdk
@@ -73,7 +67,7 @@ class ProductInfo:
         :type flavor_id: str
         :param type: 产品类型。  - BASE：表示产品基础套餐，套餐镜像中不包括除操作系统之外的其他商业软件，私有镜像场景只能使用此类套餐。
         :type type: str
-        :param cpu: CPU
+        :param cpu: CPU。
         :type cpu: str
         :param memory: 内存。
         :type memory: str
@@ -83,8 +77,6 @@ class ProductInfo:
         :type charge_mode: str
         :param architecture: 产品架构。
         :type architecture: str
-        :param cpu_desc: CPU描述。
-        :type cpu_desc: str
         :param is_gpu: 是否是GPU类型的规格。
         :type is_gpu: bool
         :param package_type: 套餐类型。 - ultimate：尊享版 - enterprise：企业版 - general: 通用办公版 - workstation: 云工作站 - dedicated: 专属办公版 - solver: 解算版 - agile: 敏捷办公版
@@ -93,9 +85,7 @@ class ProductInfo:
         :type system_disk_type: str
         :param system_disk_size: 系统盘大小。
         :type system_disk_size: str
-        :param gpu_desc: GPU描述。
-        :type gpu_desc: str
-        :param contain_data_disk: 套餐计费是否包含了数据盘,off-不包含
+        :param contain_data_disk: 套餐计费是否包含了数据盘,off-不包含。
         :type contain_data_disk: bool
         :param resource_type: 资源类型。
         :type resource_type: str
@@ -105,8 +95,6 @@ class ProductInfo:
         :type volume_product_type: str
         :param status: 默认在售状态，normal代表正常，sellout代表售空，abandon代表下线。
         :type status: str
-        :param sub_product_list: 专属主机的子产品。
-        :type sub_product_list: list[str]
         """
         
         
@@ -119,18 +107,15 @@ class ProductInfo:
         self._descriptions = None
         self._charge_mode = None
         self._architecture = None
-        self._cpu_desc = None
         self._is_gpu = None
         self._package_type = None
         self._system_disk_type = None
         self._system_disk_size = None
-        self._gpu_desc = None
         self._contain_data_disk = None
         self._resource_type = None
         self._cloud_service_type = None
         self._volume_product_type = None
         self._status = None
-        self._sub_product_list = None
         self.discriminator = None
 
         if product_id is not None:
@@ -149,8 +134,6 @@ class ProductInfo:
             self.charge_mode = charge_mode
         if architecture is not None:
             self.architecture = architecture
-        if cpu_desc is not None:
-            self.cpu_desc = cpu_desc
         if is_gpu is not None:
             self.is_gpu = is_gpu
         if package_type is not None:
@@ -159,8 +142,6 @@ class ProductInfo:
             self.system_disk_type = system_disk_type
         if system_disk_size is not None:
             self.system_disk_size = system_disk_size
-        if gpu_desc is not None:
-            self.gpu_desc = gpu_desc
         if contain_data_disk is not None:
             self.contain_data_disk = contain_data_disk
         if resource_type is not None:
@@ -171,8 +152,6 @@ class ProductInfo:
             self.volume_product_type = volume_product_type
         if status is not None:
             self.status = status
-        if sub_product_list is not None:
-            self.sub_product_list = sub_product_list
 
     @property
     def product_id(self):
@@ -244,7 +223,7 @@ class ProductInfo:
     def cpu(self):
         r"""Gets the cpu of this ProductInfo.
 
-        CPU
+        CPU。
 
         :return: The cpu of this ProductInfo.
         :rtype: str
@@ -255,7 +234,7 @@ class ProductInfo:
     def cpu(self, cpu):
         r"""Sets the cpu of this ProductInfo.
 
-        CPU
+        CPU。
 
         :param cpu: The cpu of this ProductInfo.
         :type cpu: str
@@ -351,28 +330,6 @@ class ProductInfo:
         self._architecture = architecture
 
     @property
-    def cpu_desc(self):
-        r"""Gets the cpu_desc of this ProductInfo.
-
-        CPU描述。
-
-        :return: The cpu_desc of this ProductInfo.
-        :rtype: str
-        """
-        return self._cpu_desc
-
-    @cpu_desc.setter
-    def cpu_desc(self, cpu_desc):
-        r"""Sets the cpu_desc of this ProductInfo.
-
-        CPU描述。
-
-        :param cpu_desc: The cpu_desc of this ProductInfo.
-        :type cpu_desc: str
-        """
-        self._cpu_desc = cpu_desc
-
-    @property
     def is_gpu(self):
         r"""Gets the is_gpu of this ProductInfo.
 
@@ -461,32 +418,10 @@ class ProductInfo:
         self._system_disk_size = system_disk_size
 
     @property
-    def gpu_desc(self):
-        r"""Gets the gpu_desc of this ProductInfo.
-
-        GPU描述。
-
-        :return: The gpu_desc of this ProductInfo.
-        :rtype: str
-        """
-        return self._gpu_desc
-
-    @gpu_desc.setter
-    def gpu_desc(self, gpu_desc):
-        r"""Sets the gpu_desc of this ProductInfo.
-
-        GPU描述。
-
-        :param gpu_desc: The gpu_desc of this ProductInfo.
-        :type gpu_desc: str
-        """
-        self._gpu_desc = gpu_desc
-
-    @property
     def contain_data_disk(self):
         r"""Gets the contain_data_disk of this ProductInfo.
 
-        套餐计费是否包含了数据盘,off-不包含
+        套餐计费是否包含了数据盘,off-不包含。
 
         :return: The contain_data_disk of this ProductInfo.
         :rtype: bool
@@ -497,7 +432,7 @@ class ProductInfo:
     def contain_data_disk(self, contain_data_disk):
         r"""Sets the contain_data_disk of this ProductInfo.
 
-        套餐计费是否包含了数据盘,off-不包含
+        套餐计费是否包含了数据盘,off-不包含。
 
         :param contain_data_disk: The contain_data_disk of this ProductInfo.
         :type contain_data_disk: bool
@@ -591,28 +526,6 @@ class ProductInfo:
         :type status: str
         """
         self._status = status
-
-    @property
-    def sub_product_list(self):
-        r"""Gets the sub_product_list of this ProductInfo.
-
-        专属主机的子产品。
-
-        :return: The sub_product_list of this ProductInfo.
-        :rtype: list[str]
-        """
-        return self._sub_product_list
-
-    @sub_product_list.setter
-    def sub_product_list(self, sub_product_list):
-        r"""Sets the sub_product_list of this ProductInfo.
-
-        专属主机的子产品。
-
-        :param sub_product_list: The sub_product_list of this ProductInfo.
-        :type sub_product_list: list[str]
-        """
-        self._sub_product_list = sub_product_list
 
     def to_dict(self):
         """Returns the model properties as a dict"""

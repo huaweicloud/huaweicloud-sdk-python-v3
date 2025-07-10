@@ -32,9 +32,9 @@ class EstimateDesktopPoolAddVolumeResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param currency: 币种，比如CNY
+        :param currency: 币种，比如CNY。
         :type currency: str
-        :param cloud_service_rating_results: 询价结果
+        :param cloud_service_rating_results: 询价结果。
         :type cloud_service_rating_results: list[:class:`huaweicloudsdkworkspace.v2.CloudServiceRatingResult`]
         """
         
@@ -53,7 +53,7 @@ class EstimateDesktopPoolAddVolumeResponse(SdkResponse):
     def currency(self):
         r"""Gets the currency of this EstimateDesktopPoolAddVolumeResponse.
 
-        币种，比如CNY
+        币种，比如CNY。
 
         :return: The currency of this EstimateDesktopPoolAddVolumeResponse.
         :rtype: str
@@ -64,7 +64,7 @@ class EstimateDesktopPoolAddVolumeResponse(SdkResponse):
     def currency(self, currency):
         r"""Sets the currency of this EstimateDesktopPoolAddVolumeResponse.
 
-        币种，比如CNY
+        币种，比如CNY。
 
         :param currency: The currency of this EstimateDesktopPoolAddVolumeResponse.
         :type currency: str
@@ -75,7 +75,7 @@ class EstimateDesktopPoolAddVolumeResponse(SdkResponse):
     def cloud_service_rating_results(self):
         r"""Gets the cloud_service_rating_results of this EstimateDesktopPoolAddVolumeResponse.
 
-        询价结果
+        询价结果。
 
         :return: The cloud_service_rating_results of this EstimateDesktopPoolAddVolumeResponse.
         :rtype: list[:class:`huaweicloudsdkworkspace.v2.CloudServiceRatingResult`]
@@ -86,7 +86,7 @@ class EstimateDesktopPoolAddVolumeResponse(SdkResponse):
     def cloud_service_rating_results(self, cloud_service_rating_results):
         r"""Sets the cloud_service_rating_results of this EstimateDesktopPoolAddVolumeResponse.
 
-        询价结果
+        询价结果。
 
         :param cloud_service_rating_results: The cloud_service_rating_results of this EstimateDesktopPoolAddVolumeResponse.
         :type cloud_service_rating_results: list[:class:`huaweicloudsdkworkspace.v2.CloudServiceRatingResult`]

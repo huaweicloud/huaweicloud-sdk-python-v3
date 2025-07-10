@@ -35,9 +35,9 @@ class ListDesktopPoolAuthorizedObjectsRequest:
 
         :param pool_id: 桌面池ID。
         :type pool_id: str
-        :param offset: 用于分页查询，查询的起始记录序号，从0开始
+        :param offset: 用于分页查询，查询的起始记录序号，从0开始。
         :type offset: int
-        :param limit: 用于分页查询，返回桌面数量限制。取值范围0-100，默认值是10
+        :param limit: 用于分页查询，返回桌面数量限制。取值范围0-100，默认值是10。
         :type limit: int
         """
         
@@ -80,7 +80,7 @@ class ListDesktopPoolAuthorizedObjectsRequest:
     def offset(self):
         r"""Gets the offset of this ListDesktopPoolAuthorizedObjectsRequest.
 
-        用于分页查询，查询的起始记录序号，从0开始
+        用于分页查询，查询的起始记录序号，从0开始。
 
         :return: The offset of this ListDesktopPoolAuthorizedObjectsRequest.
         :rtype: int
@@ -91,7 +91,7 @@ class ListDesktopPoolAuthorizedObjectsRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListDesktopPoolAuthorizedObjectsRequest.
 
-        用于分页查询，查询的起始记录序号，从0开始
+        用于分页查询，查询的起始记录序号，从0开始。
 
         :param offset: The offset of this ListDesktopPoolAuthorizedObjectsRequest.
         :type offset: int
@@ -102,7 +102,7 @@ class ListDesktopPoolAuthorizedObjectsRequest:
     def limit(self):
         r"""Gets the limit of this ListDesktopPoolAuthorizedObjectsRequest.
 
-        用于分页查询，返回桌面数量限制。取值范围0-100，默认值是10
+        用于分页查询，返回桌面数量限制。取值范围0-100，默认值是10。
 
         :return: The limit of this ListDesktopPoolAuthorizedObjectsRequest.
         :rtype: int
@@ -113,7 +113,7 @@ class ListDesktopPoolAuthorizedObjectsRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListDesktopPoolAuthorizedObjectsRequest.
 
-        用于分页查询，返回桌面数量限制。取值范围0-100，默认值是10
+        用于分页查询，返回桌面数量限制。取值范围0-100，默认值是10。
 
         :param limit: The limit of this ListDesktopPoolAuthorizedObjectsRequest.
         :type limit: int

@@ -33,11 +33,11 @@ class AddOuNameInfoV2Req:
 
         The model defined in huaweicloud sdk
 
-        :param domain: 域名称
+        :param domain: 域名称。
         :type domain: str
-        :param ou_name: OU名称
+        :param ou_name: OU名称。
         :type ou_name: str
-        :param description: 描述
+        :param description: 描述。
         :type description: str
         """
         
@@ -57,7 +57,7 @@ class AddOuNameInfoV2Req:
     def domain(self):
         r"""Gets the domain of this AddOuNameInfoV2Req.
 
-        域名称
+        域名称。
 
         :return: The domain of this AddOuNameInfoV2Req.
         :rtype: str
@@ -68,7 +68,7 @@ class AddOuNameInfoV2Req:
     def domain(self, domain):
         r"""Sets the domain of this AddOuNameInfoV2Req.
 
-        域名称
+        域名称。
 
         :param domain: The domain of this AddOuNameInfoV2Req.
         :type domain: str
@@ -79,7 +79,7 @@ class AddOuNameInfoV2Req:
     def ou_name(self):
         r"""Gets the ou_name of this AddOuNameInfoV2Req.
 
-        OU名称
+        OU名称。
 
         :return: The ou_name of this AddOuNameInfoV2Req.
         :rtype: str
@@ -90,7 +90,7 @@ class AddOuNameInfoV2Req:
     def ou_name(self, ou_name):
         r"""Sets the ou_name of this AddOuNameInfoV2Req.
 
-        OU名称
+        OU名称。
 
         :param ou_name: The ou_name of this AddOuNameInfoV2Req.
         :type ou_name: str
@@ -101,7 +101,7 @@ class AddOuNameInfoV2Req:
     def description(self):
         r"""Gets the description of this AddOuNameInfoV2Req.
 
-        描述
+        描述。
 
         :return: The description of this AddOuNameInfoV2Req.
         :rtype: str
@@ -112,7 +112,7 @@ class AddOuNameInfoV2Req:
     def description(self, description):
         r"""Sets the description of this AddOuNameInfoV2Req.
 
-        描述
+        描述。
 
         :param description: The description of this AddOuNameInfoV2Req.
         :type description: str

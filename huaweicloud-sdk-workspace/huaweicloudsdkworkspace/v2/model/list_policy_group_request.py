@@ -24,7 +24,6 @@ class ListPolicyGroupRequest:
         'priority': 'int',
         'update_time': 'str',
         'description': 'str',
-        'scope_flag': 'int',
         'is_group_name_accurate': 'bool'
     }
 
@@ -36,31 +35,28 @@ class ListPolicyGroupRequest:
         'priority': 'priority',
         'update_time': 'update_time',
         'description': 'description',
-        'scope_flag': 'scope_flag',
         'is_group_name_accurate': 'is_group_name_accurate'
     }
 
-    def __init__(self, limit=None, offset=None, policy_group_id=None, policy_group_name=None, priority=None, update_time=None, description=None, scope_flag=None, is_group_name_accurate=None):
+    def __init__(self, limit=None, offset=None, policy_group_id=None, policy_group_name=None, priority=None, update_time=None, description=None, is_group_name_accurate=None):
         r"""ListPolicyGroupRequest
 
         The model defined in huaweicloud sdk
 
         :param limit: 用于分页查询，返回策略组数量的限制。如果不指定，则返回所有符合条件的策略组。范围0~100。
         :type limit: int
-        :param offset: 用于分页查询，查询的起始记录序号，从0开始。
+        :param offset: 用于分页查询，查询的起始记录序号，范围0~1000。
         :type offset: int
         :param policy_group_id: 根据策略组ID过滤结果。
         :type policy_group_id: str
         :param policy_group_name: 根据策略组名字过滤结果。
         :type policy_group_name: str
-        :param priority: 根据优先级过滤结果。所带的值需要满足现有策略组已有最大优先级值
+        :param priority: 根据优先级过滤结果。所带的值需要满足现有策略组已有最大优先级值。
         :type priority: int
-        :param update_time: 根据更新时间过滤结果。时间格式满足：yyyy-MM-dd HH:mm:ss
+        :param update_time: 根据更新时间过滤结果。时间格式满足：yyyy-MM-dd HH:mm:ss。
         :type update_time: str
-        :param description: 策略组描述
+        :param description: 策略组描述。
         :type description: str
-        :param scope_flag: 策略来源，取值范围0或者1
-        :type scope_flag: int
         :param is_group_name_accurate: 策略组名字精确查询。
         :type is_group_name_accurate: bool
         """
@@ -74,7 +70,6 @@ class ListPolicyGroupRequest:
         self._priority = None
         self._update_time = None
         self._description = None
-        self._scope_flag = None
         self._is_group_name_accurate = None
         self.discriminator = None
 
@@ -92,8 +87,6 @@ class ListPolicyGroupRequest:
             self.update_time = update_time
         if description is not None:
             self.description = description
-        if scope_flag is not None:
-            self.scope_flag = scope_flag
         if is_group_name_accurate is not None:
             self.is_group_name_accurate = is_group_name_accurate
 
@@ -123,7 +116,7 @@ class ListPolicyGroupRequest:
     def offset(self):
         r"""Gets the offset of this ListPolicyGroupRequest.
 
-        用于分页查询，查询的起始记录序号，从0开始。
+        用于分页查询，查询的起始记录序号，范围0~1000。
 
         :return: The offset of this ListPolicyGroupRequest.
         :rtype: int
@@ -134,7 +127,7 @@ class ListPolicyGroupRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListPolicyGroupRequest.
 
-        用于分页查询，查询的起始记录序号，从0开始。
+        用于分页查询，查询的起始记录序号，范围0~1000。
 
         :param offset: The offset of this ListPolicyGroupRequest.
         :type offset: int
@@ -189,7 +182,7 @@ class ListPolicyGroupRequest:
     def priority(self):
         r"""Gets the priority of this ListPolicyGroupRequest.
 
-        根据优先级过滤结果。所带的值需要满足现有策略组已有最大优先级值
+        根据优先级过滤结果。所带的值需要满足现有策略组已有最大优先级值。
 
         :return: The priority of this ListPolicyGroupRequest.
         :rtype: int
@@ -200,7 +193,7 @@ class ListPolicyGroupRequest:
     def priority(self, priority):
         r"""Sets the priority of this ListPolicyGroupRequest.
 
-        根据优先级过滤结果。所带的值需要满足现有策略组已有最大优先级值
+        根据优先级过滤结果。所带的值需要满足现有策略组已有最大优先级值。
 
         :param priority: The priority of this ListPolicyGroupRequest.
         :type priority: int
@@ -211,7 +204,7 @@ class ListPolicyGroupRequest:
     def update_time(self):
         r"""Gets the update_time of this ListPolicyGroupRequest.
 
-        根据更新时间过滤结果。时间格式满足：yyyy-MM-dd HH:mm:ss
+        根据更新时间过滤结果。时间格式满足：yyyy-MM-dd HH:mm:ss。
 
         :return: The update_time of this ListPolicyGroupRequest.
         :rtype: str
@@ -222,7 +215,7 @@ class ListPolicyGroupRequest:
     def update_time(self, update_time):
         r"""Sets the update_time of this ListPolicyGroupRequest.
 
-        根据更新时间过滤结果。时间格式满足：yyyy-MM-dd HH:mm:ss
+        根据更新时间过滤结果。时间格式满足：yyyy-MM-dd HH:mm:ss。
 
         :param update_time: The update_time of this ListPolicyGroupRequest.
         :type update_time: str
@@ -233,7 +226,7 @@ class ListPolicyGroupRequest:
     def description(self):
         r"""Gets the description of this ListPolicyGroupRequest.
 
-        策略组描述
+        策略组描述。
 
         :return: The description of this ListPolicyGroupRequest.
         :rtype: str
@@ -244,34 +237,12 @@ class ListPolicyGroupRequest:
     def description(self, description):
         r"""Sets the description of this ListPolicyGroupRequest.
 
-        策略组描述
+        策略组描述。
 
         :param description: The description of this ListPolicyGroupRequest.
         :type description: str
         """
         self._description = description
-
-    @property
-    def scope_flag(self):
-        r"""Gets the scope_flag of this ListPolicyGroupRequest.
-
-        策略来源，取值范围0或者1
-
-        :return: The scope_flag of this ListPolicyGroupRequest.
-        :rtype: int
-        """
-        return self._scope_flag
-
-    @scope_flag.setter
-    def scope_flag(self, scope_flag):
-        r"""Sets the scope_flag of this ListPolicyGroupRequest.
-
-        策略来源，取值范围0或者1
-
-        :param scope_flag: The scope_flag of this ListPolicyGroupRequest.
-        :type scope_flag: int
-        """
-        self._scope_flag = scope_flag
 
     @property
     def is_group_name_accurate(self):

@@ -19,7 +19,6 @@ class PolicyGroupForUpdate:
     openapi_types = {
         'policy_group_name': 'str',
         'description': 'str',
-        'scope_flag': 'int',
         'priority': 'int',
         'targets': 'list[Target]',
         'policies': 'Policies'
@@ -28,23 +27,20 @@ class PolicyGroupForUpdate:
     attribute_map = {
         'policy_group_name': 'policy_group_name',
         'description': 'description',
-        'scope_flag': 'scope_flag',
         'priority': 'priority',
         'targets': 'targets',
         'policies': 'policies'
     }
 
-    def __init__(self, policy_group_name=None, description=None, scope_flag=None, priority=None, targets=None, policies=None):
+    def __init__(self, policy_group_name=None, description=None, priority=None, targets=None, policies=None):
         r"""PolicyGroupForUpdate
 
         The model defined in huaweicloud sdk
 
-        :param policy_group_name: 策略组名称。
+        :param policy_group_name: 策略组名称，长度不能超过255个字符。
         :type policy_group_name: str
-        :param description: 策略组描述。
+        :param description: 策略组描述，长度不能超过255个字符。
         :type description: str
-        :param scope_flag: 策略来源。
-        :type scope_flag: int
         :param priority: 优先级。
         :type priority: int
         :param targets: 应用对象列表。
@@ -57,7 +53,6 @@ class PolicyGroupForUpdate:
 
         self._policy_group_name = None
         self._description = None
-        self._scope_flag = None
         self._priority = None
         self._targets = None
         self._policies = None
@@ -67,8 +62,6 @@ class PolicyGroupForUpdate:
             self.policy_group_name = policy_group_name
         if description is not None:
             self.description = description
-        if scope_flag is not None:
-            self.scope_flag = scope_flag
         if priority is not None:
             self.priority = priority
         if targets is not None:
@@ -80,7 +73,7 @@ class PolicyGroupForUpdate:
     def policy_group_name(self):
         r"""Gets the policy_group_name of this PolicyGroupForUpdate.
 
-        策略组名称。
+        策略组名称，长度不能超过255个字符。
 
         :return: The policy_group_name of this PolicyGroupForUpdate.
         :rtype: str
@@ -91,7 +84,7 @@ class PolicyGroupForUpdate:
     def policy_group_name(self, policy_group_name):
         r"""Sets the policy_group_name of this PolicyGroupForUpdate.
 
-        策略组名称。
+        策略组名称，长度不能超过255个字符。
 
         :param policy_group_name: The policy_group_name of this PolicyGroupForUpdate.
         :type policy_group_name: str
@@ -102,7 +95,7 @@ class PolicyGroupForUpdate:
     def description(self):
         r"""Gets the description of this PolicyGroupForUpdate.
 
-        策略组描述。
+        策略组描述，长度不能超过255个字符。
 
         :return: The description of this PolicyGroupForUpdate.
         :rtype: str
@@ -113,34 +106,12 @@ class PolicyGroupForUpdate:
     def description(self, description):
         r"""Sets the description of this PolicyGroupForUpdate.
 
-        策略组描述。
+        策略组描述，长度不能超过255个字符。
 
         :param description: The description of this PolicyGroupForUpdate.
         :type description: str
         """
         self._description = description
-
-    @property
-    def scope_flag(self):
-        r"""Gets the scope_flag of this PolicyGroupForUpdate.
-
-        策略来源。
-
-        :return: The scope_flag of this PolicyGroupForUpdate.
-        :rtype: int
-        """
-        return self._scope_flag
-
-    @scope_flag.setter
-    def scope_flag(self, scope_flag):
-        r"""Sets the scope_flag of this PolicyGroupForUpdate.
-
-        策略来源。
-
-        :param scope_flag: The scope_flag of this PolicyGroupForUpdate.
-        :type scope_flag: int
-        """
-        self._scope_flag = scope_flag
 
     @property
     def priority(self):

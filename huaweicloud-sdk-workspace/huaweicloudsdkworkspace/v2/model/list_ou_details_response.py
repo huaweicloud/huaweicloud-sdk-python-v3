@@ -32,9 +32,9 @@ class ListOuDetailsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param ous: OU对象
+        :param ous: OU对象。
         :type ous: list[:class:`huaweicloudsdkworkspace.v2.OuNameInfo`]
-        :param total_count: OU总记录数
+        :param total_count: OU总记录数。
         :type total_count: int
         """
         
@@ -53,7 +53,7 @@ class ListOuDetailsResponse(SdkResponse):
     def ous(self):
         r"""Gets the ous of this ListOuDetailsResponse.
 
-        OU对象
+        OU对象。
 
         :return: The ous of this ListOuDetailsResponse.
         :rtype: list[:class:`huaweicloudsdkworkspace.v2.OuNameInfo`]
@@ -64,7 +64,7 @@ class ListOuDetailsResponse(SdkResponse):
     def ous(self, ous):
         r"""Sets the ous of this ListOuDetailsResponse.
 
-        OU对象
+        OU对象。
 
         :param ous: The ous of this ListOuDetailsResponse.
         :type ous: list[:class:`huaweicloudsdkworkspace.v2.OuNameInfo`]
@@ -75,7 +75,7 @@ class ListOuDetailsResponse(SdkResponse):
     def total_count(self):
         r"""Gets the total_count of this ListOuDetailsResponse.
 
-        OU总记录数
+        OU总记录数。
 
         :return: The total_count of this ListOuDetailsResponse.
         :rtype: int
@@ -86,7 +86,7 @@ class ListOuDetailsResponse(SdkResponse):
     def total_count(self, total_count):
         r"""Sets the total_count of this ListOuDetailsResponse.
 
-        OU总记录数
+        OU总记录数。
 
         :param total_count: The total_count of this ListOuDetailsResponse.
         :type total_count: int

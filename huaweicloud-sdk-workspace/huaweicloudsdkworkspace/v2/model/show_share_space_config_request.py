@@ -29,7 +29,7 @@ class ShowShareSpaceConfigRequest:
 
         The model defined in huaweicloud sdk
 
-        :param name: 查询协同桌面默认用户配置, share-space-user-conf
+        :param name: 查询协同桌面默认用户配置, share-space-user-conf。
         :type name: str
         """
         
@@ -44,7 +44,7 @@ class ShowShareSpaceConfigRequest:
     def name(self):
         r"""Gets the name of this ShowShareSpaceConfigRequest.
 
-        查询协同桌面默认用户配置, share-space-user-conf
+        查询协同桌面默认用户配置, share-space-user-conf。
 
         :return: The name of this ShowShareSpaceConfigRequest.
         :rtype: str
@@ -55,7 +55,7 @@ class ShowShareSpaceConfigRequest:
     def name(self, name):
         r"""Sets the name of this ShowShareSpaceConfigRequest.
 
-        查询协同桌面默认用户配置, share-space-user-conf
+        查询协同桌面默认用户配置, share-space-user-conf。
 
         :param name: The name of this ShowShareSpaceConfigRequest.
         :type name: str

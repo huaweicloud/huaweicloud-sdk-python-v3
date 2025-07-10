@@ -27,7 +27,9 @@ class CreateUserRequest:
         'next_login_change_password': 'bool',
         'group_ids': 'list[str]',
         'description': 'str',
-        'alias_name': 'str'
+        'alias_name': 'str',
+        'enterprise_project_id': 'str',
+        'user_info_map': 'str'
     }
 
     attribute_map = {
@@ -41,10 +43,12 @@ class CreateUserRequest:
         'next_login_change_password': 'next_login_change_password',
         'group_ids': 'group_ids',
         'description': 'description',
-        'alias_name': 'alias_name'
+        'alias_name': 'alias_name',
+        'enterprise_project_id': 'enterprise_project_id',
+        'user_info_map': 'user_info_map'
     }
 
-    def __init__(self, user_name=None, user_email=None, account_expires=None, active_type=None, user_phone=None, password=None, enable_change_password=None, next_login_change_password=None, group_ids=None, description=None, alias_name=None):
+    def __init__(self, user_name=None, user_email=None, account_expires=None, active_type=None, user_phone=None, password=None, enable_change_password=None, next_login_change_password=None, group_ids=None, description=None, alias_name=None, enterprise_project_id=None, user_info_map=None):
         r"""CreateUserRequest
 
         The model defined in huaweicloud sdk
@@ -71,6 +75,10 @@ class CreateUserRequest:
         :type description: str
         :param alias_name: 别名。
         :type alias_name: str
+        :param enterprise_project_id: 企业项目ID
+        :type enterprise_project_id: str
+        :param user_info_map: 用户信息映射，包含用户的服务等级、操作模式和类型。
+        :type user_info_map: str
         """
         
         
@@ -86,6 +94,8 @@ class CreateUserRequest:
         self._group_ids = None
         self._description = None
         self._alias_name = None
+        self._enterprise_project_id = None
+        self._user_info_map = None
         self.discriminator = None
 
         self.user_name = user_name
@@ -109,6 +119,10 @@ class CreateUserRequest:
             self.description = description
         if alias_name is not None:
             self.alias_name = alias_name
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
+        if user_info_map is not None:
+            self.user_info_map = user_info_map
 
     @property
     def user_name(self):
@@ -351,6 +365,50 @@ class CreateUserRequest:
         :type alias_name: str
         """
         self._alias_name = alias_name
+
+    @property
+    def enterprise_project_id(self):
+        r"""Gets the enterprise_project_id of this CreateUserRequest.
+
+        企业项目ID
+
+        :return: The enterprise_project_id of this CreateUserRequest.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        r"""Sets the enterprise_project_id of this CreateUserRequest.
+
+        企业项目ID
+
+        :param enterprise_project_id: The enterprise_project_id of this CreateUserRequest.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def user_info_map(self):
+        r"""Gets the user_info_map of this CreateUserRequest.
+
+        用户信息映射，包含用户的服务等级、操作模式和类型。
+
+        :return: The user_info_map of this CreateUserRequest.
+        :rtype: str
+        """
+        return self._user_info_map
+
+    @user_info_map.setter
+    def user_info_map(self, user_info_map):
+        r"""Sets the user_info_map of this CreateUserRequest.
+
+        用户信息映射，包含用户的服务等级、操作模式和类型。
+
+        :param user_info_map: The user_info_map of this CreateUserRequest.
+        :type user_info_map: str
+        """
+        self._user_info_map = user_info_map
 
     def to_dict(self):
         """Returns the model properties as a dict"""

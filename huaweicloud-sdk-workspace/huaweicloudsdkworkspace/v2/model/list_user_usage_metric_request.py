@@ -45,13 +45,13 @@ class ListUserUsageMetricRequest:
 
         The model defined in huaweicloud sdk
 
-        :param start_time: 查询起始时间(0时区)
+        :param start_time: 查询起始时间(0时区)。
         :type start_time: str
-        :param end_time: 查询截至时间(0时区)
+        :param end_time: 查询截至时间(0时区)。
         :type end_time: str
-        :param username: 用户名(模糊匹配)
+        :param username: 用户名(模糊匹配)。
         :type username: str
-        :param usage_min_hours: 使用时长最小值
+        :param usage_min_hours: 使用时长最小值。
         :type usage_min_hours: int
         :param usage_max_hours: 使用时长最大值 usage_min_hours和usage_max_hours同时存在时,usage_max_hours必须大于等于usage_min_hours
         :type usage_max_hours: int
@@ -59,9 +59,9 @@ class ListUserUsageMetricRequest:
         :type sort_field: str
         :param sort_type: 按照指标进行排序的方向;需配合sort_field一起使用 * &#x60;DESC&#x60; - 降序返回数据 * &#x60;ASC&#x60; -  升序返回数据
         :type sort_type: str
-        :param offset: 查询的偏移量,默认值0
+        :param offset: 查询的偏移量,默认值0。
         :type offset: int
-        :param limit: limit范围[1-100],默认值0
+        :param limit: limit范围[1-100],默认值0。
         :type limit: int
         """
         
@@ -99,7 +99,7 @@ class ListUserUsageMetricRequest:
     def start_time(self):
         r"""Gets the start_time of this ListUserUsageMetricRequest.
 
-        查询起始时间(0时区)
+        查询起始时间(0时区)。
 
         :return: The start_time of this ListUserUsageMetricRequest.
         :rtype: str
@@ -110,7 +110,7 @@ class ListUserUsageMetricRequest:
     def start_time(self, start_time):
         r"""Sets the start_time of this ListUserUsageMetricRequest.
 
-        查询起始时间(0时区)
+        查询起始时间(0时区)。
 
         :param start_time: The start_time of this ListUserUsageMetricRequest.
         :type start_time: str
@@ -121,7 +121,7 @@ class ListUserUsageMetricRequest:
     def end_time(self):
         r"""Gets the end_time of this ListUserUsageMetricRequest.
 
-        查询截至时间(0时区)
+        查询截至时间(0时区)。
 
         :return: The end_time of this ListUserUsageMetricRequest.
         :rtype: str
@@ -132,7 +132,7 @@ class ListUserUsageMetricRequest:
     def end_time(self, end_time):
         r"""Sets the end_time of this ListUserUsageMetricRequest.
 
-        查询截至时间(0时区)
+        查询截至时间(0时区)。
 
         :param end_time: The end_time of this ListUserUsageMetricRequest.
         :type end_time: str
@@ -143,7 +143,7 @@ class ListUserUsageMetricRequest:
     def username(self):
         r"""Gets the username of this ListUserUsageMetricRequest.
 
-        用户名(模糊匹配)
+        用户名(模糊匹配)。
 
         :return: The username of this ListUserUsageMetricRequest.
         :rtype: str
@@ -154,7 +154,7 @@ class ListUserUsageMetricRequest:
     def username(self, username):
         r"""Sets the username of this ListUserUsageMetricRequest.
 
-        用户名(模糊匹配)
+        用户名(模糊匹配)。
 
         :param username: The username of this ListUserUsageMetricRequest.
         :type username: str
@@ -165,7 +165,7 @@ class ListUserUsageMetricRequest:
     def usage_min_hours(self):
         r"""Gets the usage_min_hours of this ListUserUsageMetricRequest.
 
-        使用时长最小值
+        使用时长最小值。
 
         :return: The usage_min_hours of this ListUserUsageMetricRequest.
         :rtype: int
@@ -176,7 +176,7 @@ class ListUserUsageMetricRequest:
     def usage_min_hours(self, usage_min_hours):
         r"""Sets the usage_min_hours of this ListUserUsageMetricRequest.
 
-        使用时长最小值
+        使用时长最小值。
 
         :param usage_min_hours: The usage_min_hours of this ListUserUsageMetricRequest.
         :type usage_min_hours: int
@@ -253,7 +253,7 @@ class ListUserUsageMetricRequest:
     def offset(self):
         r"""Gets the offset of this ListUserUsageMetricRequest.
 
-        查询的偏移量,默认值0
+        查询的偏移量,默认值0。
 
         :return: The offset of this ListUserUsageMetricRequest.
         :rtype: int
@@ -264,7 +264,7 @@ class ListUserUsageMetricRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListUserUsageMetricRequest.
 
-        查询的偏移量,默认值0
+        查询的偏移量,默认值0。
 
         :param offset: The offset of this ListUserUsageMetricRequest.
         :type offset: int
@@ -275,7 +275,7 @@ class ListUserUsageMetricRequest:
     def limit(self):
         r"""Gets the limit of this ListUserUsageMetricRequest.
 
-        limit范围[1-100],默认值0
+        limit范围[1-100],默认值0。
 
         :return: The limit of this ListUserUsageMetricRequest.
         :rtype: int
@@ -286,7 +286,7 @@ class ListUserUsageMetricRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListUserUsageMetricRequest.
 
-        limit范围[1-100],默认值0
+        limit范围[1-100],默认值0。
 
         :param limit: The limit of this ListUserUsageMetricRequest.
         :type limit: int

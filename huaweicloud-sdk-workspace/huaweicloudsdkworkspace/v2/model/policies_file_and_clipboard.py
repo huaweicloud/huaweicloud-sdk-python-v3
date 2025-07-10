@@ -45,13 +45,13 @@ class PoliciesFileAndClipboard:
 
         :param file_redirection: 
         :type file_redirection: :class:`huaweicloudsdkworkspace.v2.PoliciesFileAndClipboardFileRedirection`
-        :param clip_length_limit_flag_c2s: 剪切板长度表示
+        :param clip_length_limit_flag_c2s: 剪切板长度表示。
         :type clip_length_limit_flag_c2s: bool
-        :param clip_length_limit_c2s: 剪切板客户端长度
+        :param clip_length_limit_c2s: 剪切板客户端长度。
         :type clip_length_limit_c2s: int
-        :param clip_length_limit_flag_s2c: 剪切板长度表示
+        :param clip_length_limit_flag_s2c: 剪切板长度表示。
         :type clip_length_limit_flag_s2c: bool
-        :param clip_length_limit_s2c: 剪切板客户端长度
+        :param clip_length_limit_s2c: 剪切板客户端长度。
         :type clip_length_limit_s2c: int
         :param fd_mobile_client_redir_enable: 移动客户端文件重定向：取值为： false：表示关闭。 true：表示开启。
         :type fd_mobile_client_redir_enable: bool
@@ -112,7 +112,7 @@ class PoliciesFileAndClipboard:
     def clip_length_limit_flag_c2s(self):
         r"""Gets the clip_length_limit_flag_c2s of this PoliciesFileAndClipboard.
 
-        剪切板长度表示
+        剪切板长度表示。
 
         :return: The clip_length_limit_flag_c2s of this PoliciesFileAndClipboard.
         :rtype: bool
@@ -123,7 +123,7 @@ class PoliciesFileAndClipboard:
     def clip_length_limit_flag_c2s(self, clip_length_limit_flag_c2s):
         r"""Sets the clip_length_limit_flag_c2s of this PoliciesFileAndClipboard.
 
-        剪切板长度表示
+        剪切板长度表示。
 
         :param clip_length_limit_flag_c2s: The clip_length_limit_flag_c2s of this PoliciesFileAndClipboard.
         :type clip_length_limit_flag_c2s: bool
@@ -134,7 +134,7 @@ class PoliciesFileAndClipboard:
     def clip_length_limit_c2s(self):
         r"""Gets the clip_length_limit_c2s of this PoliciesFileAndClipboard.
 
-        剪切板客户端长度
+        剪切板客户端长度。
 
         :return: The clip_length_limit_c2s of this PoliciesFileAndClipboard.
         :rtype: int
@@ -145,7 +145,7 @@ class PoliciesFileAndClipboard:
     def clip_length_limit_c2s(self, clip_length_limit_c2s):
         r"""Sets the clip_length_limit_c2s of this PoliciesFileAndClipboard.
 
-        剪切板客户端长度
+        剪切板客户端长度。
 
         :param clip_length_limit_c2s: The clip_length_limit_c2s of this PoliciesFileAndClipboard.
         :type clip_length_limit_c2s: int
@@ -156,7 +156,7 @@ class PoliciesFileAndClipboard:
     def clip_length_limit_flag_s2c(self):
         r"""Gets the clip_length_limit_flag_s2c of this PoliciesFileAndClipboard.
 
-        剪切板长度表示
+        剪切板长度表示。
 
         :return: The clip_length_limit_flag_s2c of this PoliciesFileAndClipboard.
         :rtype: bool
@@ -167,7 +167,7 @@ class PoliciesFileAndClipboard:
     def clip_length_limit_flag_s2c(self, clip_length_limit_flag_s2c):
         r"""Sets the clip_length_limit_flag_s2c of this PoliciesFileAndClipboard.
 
-        剪切板长度表示
+        剪切板长度表示。
 
         :param clip_length_limit_flag_s2c: The clip_length_limit_flag_s2c of this PoliciesFileAndClipboard.
         :type clip_length_limit_flag_s2c: bool
@@ -178,7 +178,7 @@ class PoliciesFileAndClipboard:
     def clip_length_limit_s2c(self):
         r"""Gets the clip_length_limit_s2c of this PoliciesFileAndClipboard.
 
-        剪切板客户端长度
+        剪切板客户端长度。
 
         :return: The clip_length_limit_s2c of this PoliciesFileAndClipboard.
         :rtype: int
@@ -189,7 +189,7 @@ class PoliciesFileAndClipboard:
     def clip_length_limit_s2c(self, clip_length_limit_s2c):
         r"""Sets the clip_length_limit_s2c of this PoliciesFileAndClipboard.
 
-        剪切板客户端长度
+        剪切板客户端长度。
 
         :param clip_length_limit_s2c: The clip_length_limit_s2c of this PoliciesFileAndClipboard.
         :type clip_length_limit_s2c: int

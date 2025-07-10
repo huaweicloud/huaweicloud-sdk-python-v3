@@ -31,9 +31,9 @@ class PoliciesPersonalizedDataMgmtNetworkDriveMappingOptions:
 
         The model defined in huaweicloud sdk
 
-        :param network_drive_mapping_path: 网络驱动器映射路径
+        :param network_drive_mapping_path: 网络驱动器映射路径。
         :type network_drive_mapping_path: str
-        :param drive_letter: 排除文件夹路径
+        :param drive_letter: 排除文件夹路径。
         :type drive_letter: str
         """
         
@@ -52,7 +52,7 @@ class PoliciesPersonalizedDataMgmtNetworkDriveMappingOptions:
     def network_drive_mapping_path(self):
         r"""Gets the network_drive_mapping_path of this PoliciesPersonalizedDataMgmtNetworkDriveMappingOptions.
 
-        网络驱动器映射路径
+        网络驱动器映射路径。
 
         :return: The network_drive_mapping_path of this PoliciesPersonalizedDataMgmtNetworkDriveMappingOptions.
         :rtype: str
@@ -63,7 +63,7 @@ class PoliciesPersonalizedDataMgmtNetworkDriveMappingOptions:
     def network_drive_mapping_path(self, network_drive_mapping_path):
         r"""Sets the network_drive_mapping_path of this PoliciesPersonalizedDataMgmtNetworkDriveMappingOptions.
 
-        网络驱动器映射路径
+        网络驱动器映射路径。
 
         :param network_drive_mapping_path: The network_drive_mapping_path of this PoliciesPersonalizedDataMgmtNetworkDriveMappingOptions.
         :type network_drive_mapping_path: str
@@ -74,7 +74,7 @@ class PoliciesPersonalizedDataMgmtNetworkDriveMappingOptions:
     def drive_letter(self):
         r"""Gets the drive_letter of this PoliciesPersonalizedDataMgmtNetworkDriveMappingOptions.
 
-        排除文件夹路径
+        排除文件夹路径。
 
         :return: The drive_letter of this PoliciesPersonalizedDataMgmtNetworkDriveMappingOptions.
         :rtype: str
@@ -85,7 +85,7 @@ class PoliciesPersonalizedDataMgmtNetworkDriveMappingOptions:
     def drive_letter(self, drive_letter):
         r"""Sets the drive_letter of this PoliciesPersonalizedDataMgmtNetworkDriveMappingOptions.
 
-        排除文件夹路径
+        排除文件夹路径。
 
         :param drive_letter: The drive_letter of this PoliciesPersonalizedDataMgmtNetworkDriveMappingOptions.
         :type drive_letter: str

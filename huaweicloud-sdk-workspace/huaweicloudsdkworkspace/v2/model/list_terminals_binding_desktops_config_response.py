@@ -34,11 +34,11 @@ class ListTerminalsBindingDesktopsConfigResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param tc_bind_switch: 绑定开关，只取值ON或OFF
+        :param tc_bind_switch: 绑定开关，只取值ON或OFF。
         :type tc_bind_switch: str
-        :param tc_auto_bind_switch: 自动绑定开关，只取值ON或OFF
+        :param tc_auto_bind_switch: 自动绑定开关，只取值ON或OFF。
         :type tc_auto_bind_switch: str
-        :param tc_auto_bind_max: 最大绑定数量，默认值为1
+        :param tc_auto_bind_max: 最大绑定数量，默认值为1。
         :type tc_auto_bind_max: int
         """
         
@@ -60,7 +60,7 @@ class ListTerminalsBindingDesktopsConfigResponse(SdkResponse):
     def tc_bind_switch(self):
         r"""Gets the tc_bind_switch of this ListTerminalsBindingDesktopsConfigResponse.
 
-        绑定开关，只取值ON或OFF
+        绑定开关，只取值ON或OFF。
 
         :return: The tc_bind_switch of this ListTerminalsBindingDesktopsConfigResponse.
         :rtype: str
@@ -71,7 +71,7 @@ class ListTerminalsBindingDesktopsConfigResponse(SdkResponse):
     def tc_bind_switch(self, tc_bind_switch):
         r"""Sets the tc_bind_switch of this ListTerminalsBindingDesktopsConfigResponse.
 
-        绑定开关，只取值ON或OFF
+        绑定开关，只取值ON或OFF。
 
         :param tc_bind_switch: The tc_bind_switch of this ListTerminalsBindingDesktopsConfigResponse.
         :type tc_bind_switch: str
@@ -82,7 +82,7 @@ class ListTerminalsBindingDesktopsConfigResponse(SdkResponse):
     def tc_auto_bind_switch(self):
         r"""Gets the tc_auto_bind_switch of this ListTerminalsBindingDesktopsConfigResponse.
 
-        自动绑定开关，只取值ON或OFF
+        自动绑定开关，只取值ON或OFF。
 
         :return: The tc_auto_bind_switch of this ListTerminalsBindingDesktopsConfigResponse.
         :rtype: str
@@ -93,7 +93,7 @@ class ListTerminalsBindingDesktopsConfigResponse(SdkResponse):
     def tc_auto_bind_switch(self, tc_auto_bind_switch):
         r"""Sets the tc_auto_bind_switch of this ListTerminalsBindingDesktopsConfigResponse.
 
-        自动绑定开关，只取值ON或OFF
+        自动绑定开关，只取值ON或OFF。
 
         :param tc_auto_bind_switch: The tc_auto_bind_switch of this ListTerminalsBindingDesktopsConfigResponse.
         :type tc_auto_bind_switch: str
@@ -104,7 +104,7 @@ class ListTerminalsBindingDesktopsConfigResponse(SdkResponse):
     def tc_auto_bind_max(self):
         r"""Gets the tc_auto_bind_max of this ListTerminalsBindingDesktopsConfigResponse.
 
-        最大绑定数量，默认值为1
+        最大绑定数量，默认值为1。
 
         :return: The tc_auto_bind_max of this ListTerminalsBindingDesktopsConfigResponse.
         :rtype: int
@@ -115,7 +115,7 @@ class ListTerminalsBindingDesktopsConfigResponse(SdkResponse):
     def tc_auto_bind_max(self, tc_auto_bind_max):
         r"""Sets the tc_auto_bind_max of this ListTerminalsBindingDesktopsConfigResponse.
 
-        最大绑定数量，默认值为1
+        最大绑定数量，默认值为1。
 
         :param tc_auto_bind_max: The tc_auto_bind_max of this ListTerminalsBindingDesktopsConfigResponse.
         :type tc_auto_bind_max: int

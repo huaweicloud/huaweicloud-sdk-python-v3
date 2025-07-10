@@ -34,7 +34,7 @@ class ShowTtsAuditionFileResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param is_file_complete: 试听文件是否已生成完成。该标记为false时，应该每隔5秒再次调用本接口获取试听文件。
+        :param is_file_complete: 试听文件是否已生成完成。该标记为false时，应该每隔5秒再次调用本接口获取试听文件。当存在该参数时，将会返回以下message和files两个字段信息
         :type is_file_complete: bool
         :param message: 异常信息。
         :type message: str
@@ -60,7 +60,7 @@ class ShowTtsAuditionFileResponse(SdkResponse):
     def is_file_complete(self):
         r"""Gets the is_file_complete of this ShowTtsAuditionFileResponse.
 
-        试听文件是否已生成完成。该标记为false时，应该每隔5秒再次调用本接口获取试听文件。
+        试听文件是否已生成完成。该标记为false时，应该每隔5秒再次调用本接口获取试听文件。当存在该参数时，将会返回以下message和files两个字段信息
 
         :return: The is_file_complete of this ShowTtsAuditionFileResponse.
         :rtype: bool
@@ -71,7 +71,7 @@ class ShowTtsAuditionFileResponse(SdkResponse):
     def is_file_complete(self, is_file_complete):
         r"""Sets the is_file_complete of this ShowTtsAuditionFileResponse.
 
-        试听文件是否已生成完成。该标记为false时，应该每隔5秒再次调用本接口获取试听文件。
+        试听文件是否已生成完成。该标记为false时，应该每隔5秒再次调用本接口获取试听文件。当存在该参数时，将会返回以下message和files两个字段信息
 
         :param is_file_complete: The is_file_complete of this ShowTtsAuditionFileResponse.
         :type is_file_complete: bool

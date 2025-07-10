@@ -29,7 +29,7 @@ class ListJobsData:
 
         The model defined in huaweicloud sdk
 
-        :param jobs: 任务列表
+        :param jobs: **参数解释：** 任务列表。 **约束限制：** 不涉及。
         :type jobs: list[:class:`huaweicloudsdkdwr.v1.JobData`]
         """
         
@@ -45,7 +45,7 @@ class ListJobsData:
     def jobs(self):
         r"""Gets the jobs of this ListJobsData.
 
-        任务列表
+        **参数解释：** 任务列表。 **约束限制：** 不涉及。
 
         :return: The jobs of this ListJobsData.
         :rtype: list[:class:`huaweicloudsdkdwr.v1.JobData`]
@@ -56,7 +56,7 @@ class ListJobsData:
     def jobs(self, jobs):
         r"""Sets the jobs of this ListJobsData.
 
-        任务列表
+        **参数解释：** 任务列表。 **约束限制：** 不涉及。
 
         :param jobs: The jobs of this ListJobsData.
         :type jobs: list[:class:`huaweicloudsdkdwr.v1.JobData`]

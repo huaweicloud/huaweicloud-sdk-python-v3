@@ -35,7 +35,7 @@ class AdDomainInfo:
 
         :param domain_type: 域类型。 - LITE_AS：LiteAS。 - LOCAL_AD：本地AD。 说明：域类型为“LOCAL_AD”时，请确保所选VPC网络与“LOCAL_AD”所属网络可连通。
         :type domain_type: str
-        :param domain_admin_account: 域管理员帐号。
+        :param domain_admin_account: 域管理员账号。
         :type domain_admin_account: str
         :param domain_password: 域管理员账号密码。
         :type domain_password: str
@@ -78,7 +78,7 @@ class AdDomainInfo:
     def domain_admin_account(self):
         r"""Gets the domain_admin_account of this AdDomainInfo.
 
-        域管理员帐号。
+        域管理员账号。
 
         :return: The domain_admin_account of this AdDomainInfo.
         :rtype: str
@@ -89,7 +89,7 @@ class AdDomainInfo:
     def domain_admin_account(self, domain_admin_account):
         r"""Sets the domain_admin_account of this AdDomainInfo.
 
-        域管理员帐号。
+        域管理员账号。
 
         :param domain_admin_account: The domain_admin_account of this AdDomainInfo.
         :type domain_admin_account: str

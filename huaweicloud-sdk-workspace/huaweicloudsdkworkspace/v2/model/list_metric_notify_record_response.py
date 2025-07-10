@@ -32,9 +32,9 @@ class ListMetricNotifyRecordResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param count: 总数
+        :param count: 总数。
         :type count: int
-        :param items: 通知记录
+        :param items: 通知记录。
         :type items: list[:class:`huaweicloudsdkworkspace.v2.DesktopMetricNotifyRecord`]
         """
         
@@ -53,7 +53,7 @@ class ListMetricNotifyRecordResponse(SdkResponse):
     def count(self):
         r"""Gets the count of this ListMetricNotifyRecordResponse.
 
-        总数
+        总数。
 
         :return: The count of this ListMetricNotifyRecordResponse.
         :rtype: int
@@ -64,7 +64,7 @@ class ListMetricNotifyRecordResponse(SdkResponse):
     def count(self, count):
         r"""Sets the count of this ListMetricNotifyRecordResponse.
 
-        总数
+        总数。
 
         :param count: The count of this ListMetricNotifyRecordResponse.
         :type count: int
@@ -75,7 +75,7 @@ class ListMetricNotifyRecordResponse(SdkResponse):
     def items(self):
         r"""Gets the items of this ListMetricNotifyRecordResponse.
 
-        通知记录
+        通知记录。
 
         :return: The items of this ListMetricNotifyRecordResponse.
         :rtype: list[:class:`huaweicloudsdkworkspace.v2.DesktopMetricNotifyRecord`]
@@ -86,7 +86,7 @@ class ListMetricNotifyRecordResponse(SdkResponse):
     def items(self, items):
         r"""Sets the items of this ListMetricNotifyRecordResponse.
 
-        通知记录
+        通知记录。
 
         :param items: The items of this ListMetricNotifyRecordResponse.
         :type items: list[:class:`huaweicloudsdkworkspace.v2.DesktopMetricNotifyRecord`]

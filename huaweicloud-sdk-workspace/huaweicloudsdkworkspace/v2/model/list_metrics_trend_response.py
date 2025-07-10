@@ -30,7 +30,7 @@ class ListMetricsTrendResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param body: 查询指标趋势响应
+        :param body: 查询指标趋势响应。
         :type body: list[:class:`huaweicloudsdkworkspace.v2.MetricsWithTime`]
         """
         
@@ -46,7 +46,7 @@ class ListMetricsTrendResponse(SdkResponse):
     def body(self):
         r"""Gets the body of this ListMetricsTrendResponse.
 
-        查询指标趋势响应
+        查询指标趋势响应。
 
         :return: The body of this ListMetricsTrendResponse.
         :rtype: list[:class:`huaweicloudsdkworkspace.v2.MetricsWithTime`]
@@ -57,7 +57,7 @@ class ListMetricsTrendResponse(SdkResponse):
     def body(self, body):
         r"""Sets the body of this ListMetricsTrendResponse.
 
-        查询指标趋势响应
+        查询指标趋势响应。
 
         :param body: The body of this ListMetricsTrendResponse.
         :type body: list[:class:`huaweicloudsdkworkspace.v2.MetricsWithTime`]

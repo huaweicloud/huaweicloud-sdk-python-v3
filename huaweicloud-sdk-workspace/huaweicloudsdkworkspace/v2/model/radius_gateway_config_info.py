@@ -43,21 +43,21 @@ class RadiusGatewayConfigInfo:
 
         The model defined in huaweicloud sdk
 
-        :param enable: 是否启用
+        :param enable: 是否启用。
         :type enable: bool
-        :param app_id: 用户名
+        :param app_id: 用户名。
         :type app_id: str
-        :param cert_domain_name: 证书域名
+        :param cert_domain_name: 证书域名。
         :type cert_domain_name: str
-        :param token_url: 获取token地址
+        :param token_url: 获取token地址。
         :type token_url: str
-        :param verification_cipher_url: 获取验证码地址
+        :param verification_cipher_url: 获取验证码地址。
         :type verification_cipher_url: str
-        :param auth_type: 认证类型
+        :param auth_type: 认证类型。
         :type auth_type: str
-        :param assist_auth_type: 辅助认证类型
+        :param assist_auth_type: 辅助认证类型。
         :type assist_auth_type: str
-        :param expiration: 过期时间
+        :param expiration: 过期时间。
         :type expiration: str
         """
         
@@ -94,7 +94,7 @@ class RadiusGatewayConfigInfo:
     def enable(self):
         r"""Gets the enable of this RadiusGatewayConfigInfo.
 
-        是否启用
+        是否启用。
 
         :return: The enable of this RadiusGatewayConfigInfo.
         :rtype: bool
@@ -105,7 +105,7 @@ class RadiusGatewayConfigInfo:
     def enable(self, enable):
         r"""Sets the enable of this RadiusGatewayConfigInfo.
 
-        是否启用
+        是否启用。
 
         :param enable: The enable of this RadiusGatewayConfigInfo.
         :type enable: bool
@@ -116,7 +116,7 @@ class RadiusGatewayConfigInfo:
     def app_id(self):
         r"""Gets the app_id of this RadiusGatewayConfigInfo.
 
-        用户名
+        用户名。
 
         :return: The app_id of this RadiusGatewayConfigInfo.
         :rtype: str
@@ -127,7 +127,7 @@ class RadiusGatewayConfigInfo:
     def app_id(self, app_id):
         r"""Sets the app_id of this RadiusGatewayConfigInfo.
 
-        用户名
+        用户名。
 
         :param app_id: The app_id of this RadiusGatewayConfigInfo.
         :type app_id: str
@@ -138,7 +138,7 @@ class RadiusGatewayConfigInfo:
     def cert_domain_name(self):
         r"""Gets the cert_domain_name of this RadiusGatewayConfigInfo.
 
-        证书域名
+        证书域名。
 
         :return: The cert_domain_name of this RadiusGatewayConfigInfo.
         :rtype: str
@@ -149,7 +149,7 @@ class RadiusGatewayConfigInfo:
     def cert_domain_name(self, cert_domain_name):
         r"""Sets the cert_domain_name of this RadiusGatewayConfigInfo.
 
-        证书域名
+        证书域名。
 
         :param cert_domain_name: The cert_domain_name of this RadiusGatewayConfigInfo.
         :type cert_domain_name: str
@@ -160,7 +160,7 @@ class RadiusGatewayConfigInfo:
     def token_url(self):
         r"""Gets the token_url of this RadiusGatewayConfigInfo.
 
-        获取token地址
+        获取token地址。
 
         :return: The token_url of this RadiusGatewayConfigInfo.
         :rtype: str
@@ -171,7 +171,7 @@ class RadiusGatewayConfigInfo:
     def token_url(self, token_url):
         r"""Sets the token_url of this RadiusGatewayConfigInfo.
 
-        获取token地址
+        获取token地址。
 
         :param token_url: The token_url of this RadiusGatewayConfigInfo.
         :type token_url: str
@@ -182,7 +182,7 @@ class RadiusGatewayConfigInfo:
     def verification_cipher_url(self):
         r"""Gets the verification_cipher_url of this RadiusGatewayConfigInfo.
 
-        获取验证码地址
+        获取验证码地址。
 
         :return: The verification_cipher_url of this RadiusGatewayConfigInfo.
         :rtype: str
@@ -193,7 +193,7 @@ class RadiusGatewayConfigInfo:
     def verification_cipher_url(self, verification_cipher_url):
         r"""Sets the verification_cipher_url of this RadiusGatewayConfigInfo.
 
-        获取验证码地址
+        获取验证码地址。
 
         :param verification_cipher_url: The verification_cipher_url of this RadiusGatewayConfigInfo.
         :type verification_cipher_url: str
@@ -204,7 +204,7 @@ class RadiusGatewayConfigInfo:
     def auth_type(self):
         r"""Gets the auth_type of this RadiusGatewayConfigInfo.
 
-        认证类型
+        认证类型。
 
         :return: The auth_type of this RadiusGatewayConfigInfo.
         :rtype: str
@@ -215,7 +215,7 @@ class RadiusGatewayConfigInfo:
     def auth_type(self, auth_type):
         r"""Sets the auth_type of this RadiusGatewayConfigInfo.
 
-        认证类型
+        认证类型。
 
         :param auth_type: The auth_type of this RadiusGatewayConfigInfo.
         :type auth_type: str
@@ -226,7 +226,7 @@ class RadiusGatewayConfigInfo:
     def assist_auth_type(self):
         r"""Gets the assist_auth_type of this RadiusGatewayConfigInfo.
 
-        辅助认证类型
+        辅助认证类型。
 
         :return: The assist_auth_type of this RadiusGatewayConfigInfo.
         :rtype: str
@@ -237,7 +237,7 @@ class RadiusGatewayConfigInfo:
     def assist_auth_type(self, assist_auth_type):
         r"""Sets the assist_auth_type of this RadiusGatewayConfigInfo.
 
-        辅助认证类型
+        辅助认证类型。
 
         :param assist_auth_type: The assist_auth_type of this RadiusGatewayConfigInfo.
         :type assist_auth_type: str
@@ -248,7 +248,7 @@ class RadiusGatewayConfigInfo:
     def expiration(self):
         r"""Gets the expiration of this RadiusGatewayConfigInfo.
 
-        过期时间
+        过期时间。
 
         :return: The expiration of this RadiusGatewayConfigInfo.
         :rtype: str
@@ -259,7 +259,7 @@ class RadiusGatewayConfigInfo:
     def expiration(self, expiration):
         r"""Sets the expiration of this RadiusGatewayConfigInfo.
 
-        过期时间
+        过期时间。
 
         :param expiration: The expiration of this RadiusGatewayConfigInfo.
         :type expiration: str

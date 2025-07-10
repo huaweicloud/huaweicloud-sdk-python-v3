@@ -39,17 +39,17 @@ class DesktopAction:
 
         The model defined in huaweicloud sdk
 
-        :param action: 行为动作
+        :param action: 行为动作。
         :type action: str
-        :param message: 行为完成状态信息
+        :param message: 行为完成状态信息。
         :type message: str
-        :param start_time: 开始时间
+        :param start_time: 开始时间。
         :type start_time: str
-        :param finish_time: 结束时间
+        :param finish_time: 结束时间。
         :type finish_time: str
-        :param result: 结果
+        :param result: 结果。
         :type result: str
-        :param traceback: 异常信息
+        :param traceback: 异常信息。
         :type traceback: str
         """
         
@@ -80,7 +80,7 @@ class DesktopAction:
     def action(self):
         r"""Gets the action of this DesktopAction.
 
-        行为动作
+        行为动作。
 
         :return: The action of this DesktopAction.
         :rtype: str
@@ -91,7 +91,7 @@ class DesktopAction:
     def action(self, action):
         r"""Sets the action of this DesktopAction.
 
-        行为动作
+        行为动作。
 
         :param action: The action of this DesktopAction.
         :type action: str
@@ -102,7 +102,7 @@ class DesktopAction:
     def message(self):
         r"""Gets the message of this DesktopAction.
 
-        行为完成状态信息
+        行为完成状态信息。
 
         :return: The message of this DesktopAction.
         :rtype: str
@@ -113,7 +113,7 @@ class DesktopAction:
     def message(self, message):
         r"""Sets the message of this DesktopAction.
 
-        行为完成状态信息
+        行为完成状态信息。
 
         :param message: The message of this DesktopAction.
         :type message: str
@@ -124,7 +124,7 @@ class DesktopAction:
     def start_time(self):
         r"""Gets the start_time of this DesktopAction.
 
-        开始时间
+        开始时间。
 
         :return: The start_time of this DesktopAction.
         :rtype: str
@@ -135,7 +135,7 @@ class DesktopAction:
     def start_time(self, start_time):
         r"""Sets the start_time of this DesktopAction.
 
-        开始时间
+        开始时间。
 
         :param start_time: The start_time of this DesktopAction.
         :type start_time: str
@@ -146,7 +146,7 @@ class DesktopAction:
     def finish_time(self):
         r"""Gets the finish_time of this DesktopAction.
 
-        结束时间
+        结束时间。
 
         :return: The finish_time of this DesktopAction.
         :rtype: str
@@ -157,7 +157,7 @@ class DesktopAction:
     def finish_time(self, finish_time):
         r"""Sets the finish_time of this DesktopAction.
 
-        结束时间
+        结束时间。
 
         :param finish_time: The finish_time of this DesktopAction.
         :type finish_time: str
@@ -168,7 +168,7 @@ class DesktopAction:
     def result(self):
         r"""Gets the result of this DesktopAction.
 
-        结果
+        结果。
 
         :return: The result of this DesktopAction.
         :rtype: str
@@ -179,7 +179,7 @@ class DesktopAction:
     def result(self, result):
         r"""Sets the result of this DesktopAction.
 
-        结果
+        结果。
 
         :param result: The result of this DesktopAction.
         :type result: str
@@ -190,7 +190,7 @@ class DesktopAction:
     def traceback(self):
         r"""Gets the traceback of this DesktopAction.
 
-        异常信息
+        异常信息。
 
         :return: The traceback of this DesktopAction.
         :rtype: str
@@ -201,7 +201,7 @@ class DesktopAction:
     def traceback(self, traceback):
         r"""Sets the traceback of this DesktopAction.
 
-        异常信息
+        异常信息。
 
         :param traceback: The traceback of this DesktopAction.
         :type traceback: str

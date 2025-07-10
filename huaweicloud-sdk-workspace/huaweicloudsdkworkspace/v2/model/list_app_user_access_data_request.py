@@ -41,19 +41,19 @@ class ListAppUserAccessDataRequest:
 
         The model defined in huaweicloud sdk
 
-        :param start_time: 查询起始时间，格式为：UTC格式，例如\&quot;2022-05-11T11:45:42Z\&quot;
+        :param start_time: 查询起始时间，格式为：UTC格式，例如\&quot;2022-05-11T11:45:42Z。\&quot;
         :type start_time: str
-        :param end_time: 查询截至时间，格式为：UTC格式，例如\&quot;2022-05-11T11:45:42Z\&quot;
+        :param end_time: 查询截至时间，格式为：UTC格式，例如\&quot;2022-05-11T11:45:42Z。\&quot;
         :type end_time: str
-        :param username: 用户名(模糊匹配)
+        :param username: 用户名(模糊匹配)。
         :type username: str
         :param sort_field: 按照指标进行排序 * &#x60;access_failed_count&#x60; -  按照接入失败数排序 * &#x60;last_access_failed_time&#x60; -  按照最近接入失败时间排序
         :type sort_field: str
         :param sort_type: 按照指标进行排序的方向;需配合sort_field一起使用 * &#x60;DESC&#x60; - 降序返回数据 * &#x60;ASC&#x60; -  升序返回数据
         :type sort_type: str
-        :param offset: 查询的偏移量,默认值0
+        :param offset: 查询的偏移量,默认值0。
         :type offset: int
-        :param limit: limit范围[1-100],默认值10
+        :param limit: limit范围[1-100],默认值10。
         :type limit: int
         """
         
@@ -85,7 +85,7 @@ class ListAppUserAccessDataRequest:
     def start_time(self):
         r"""Gets the start_time of this ListAppUserAccessDataRequest.
 
-        查询起始时间，格式为：UTC格式，例如\"2022-05-11T11:45:42Z\"
+        查询起始时间，格式为：UTC格式，例如\"2022-05-11T11:45:42Z。\"
 
         :return: The start_time of this ListAppUserAccessDataRequest.
         :rtype: str
@@ -96,7 +96,7 @@ class ListAppUserAccessDataRequest:
     def start_time(self, start_time):
         r"""Sets the start_time of this ListAppUserAccessDataRequest.
 
-        查询起始时间，格式为：UTC格式，例如\"2022-05-11T11:45:42Z\"
+        查询起始时间，格式为：UTC格式，例如\"2022-05-11T11:45:42Z。\"
 
         :param start_time: The start_time of this ListAppUserAccessDataRequest.
         :type start_time: str
@@ -107,7 +107,7 @@ class ListAppUserAccessDataRequest:
     def end_time(self):
         r"""Gets the end_time of this ListAppUserAccessDataRequest.
 
-        查询截至时间，格式为：UTC格式，例如\"2022-05-11T11:45:42Z\"
+        查询截至时间，格式为：UTC格式，例如\"2022-05-11T11:45:42Z。\"
 
         :return: The end_time of this ListAppUserAccessDataRequest.
         :rtype: str
@@ -118,7 +118,7 @@ class ListAppUserAccessDataRequest:
     def end_time(self, end_time):
         r"""Sets the end_time of this ListAppUserAccessDataRequest.
 
-        查询截至时间，格式为：UTC格式，例如\"2022-05-11T11:45:42Z\"
+        查询截至时间，格式为：UTC格式，例如\"2022-05-11T11:45:42Z。\"
 
         :param end_time: The end_time of this ListAppUserAccessDataRequest.
         :type end_time: str
@@ -129,7 +129,7 @@ class ListAppUserAccessDataRequest:
     def username(self):
         r"""Gets the username of this ListAppUserAccessDataRequest.
 
-        用户名(模糊匹配)
+        用户名(模糊匹配)。
 
         :return: The username of this ListAppUserAccessDataRequest.
         :rtype: str
@@ -140,7 +140,7 @@ class ListAppUserAccessDataRequest:
     def username(self, username):
         r"""Sets the username of this ListAppUserAccessDataRequest.
 
-        用户名(模糊匹配)
+        用户名(模糊匹配)。
 
         :param username: The username of this ListAppUserAccessDataRequest.
         :type username: str
@@ -195,7 +195,7 @@ class ListAppUserAccessDataRequest:
     def offset(self):
         r"""Gets the offset of this ListAppUserAccessDataRequest.
 
-        查询的偏移量,默认值0
+        查询的偏移量,默认值0。
 
         :return: The offset of this ListAppUserAccessDataRequest.
         :rtype: int
@@ -206,7 +206,7 @@ class ListAppUserAccessDataRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListAppUserAccessDataRequest.
 
-        查询的偏移量,默认值0
+        查询的偏移量,默认值0。
 
         :param offset: The offset of this ListAppUserAccessDataRequest.
         :type offset: int
@@ -217,7 +217,7 @@ class ListAppUserAccessDataRequest:
     def limit(self):
         r"""Gets the limit of this ListAppUserAccessDataRequest.
 
-        limit范围[1-100],默认值10
+        limit范围[1-100],默认值10。
 
         :return: The limit of this ListAppUserAccessDataRequest.
         :rtype: int
@@ -228,7 +228,7 @@ class ListAppUserAccessDataRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListAppUserAccessDataRequest.
 
-        limit范围[1-100],默认值10
+        limit范围[1-100],默认值10。
 
         :param limit: The limit of this ListAppUserAccessDataRequest.
         :type limit: int

@@ -17,28 +17,20 @@ class ResizeDesktopJobResponse:
     sensitive_list = []
 
     openapi_types = {
-        'error_code': 'str',
-        'error_msg': 'str',
         'desktop_id': 'str',
         'job_id': 'str'
     }
 
     attribute_map = {
-        'error_code': 'error_code',
-        'error_msg': 'error_msg',
         'desktop_id': 'desktop_id',
         'job_id': 'job_id'
     }
 
-    def __init__(self, error_code=None, error_msg=None, desktop_id=None, job_id=None):
+    def __init__(self, desktop_id=None, job_id=None):
         r"""ResizeDesktopJobResponse
 
         The model defined in huaweicloud sdk
 
-        :param error_code: 错误码，失败时返回。
-        :type error_code: str
-        :param error_msg: 错误描述。
-        :type error_msg: str
         :param desktop_id: 桌面ID。
         :type desktop_id: str
         :param job_id: 任务ID。
@@ -47,64 +39,14 @@ class ResizeDesktopJobResponse:
         
         
 
-        self._error_code = None
-        self._error_msg = None
         self._desktop_id = None
         self._job_id = None
         self.discriminator = None
 
-        if error_code is not None:
-            self.error_code = error_code
-        if error_msg is not None:
-            self.error_msg = error_msg
         if desktop_id is not None:
             self.desktop_id = desktop_id
         if job_id is not None:
             self.job_id = job_id
-
-    @property
-    def error_code(self):
-        r"""Gets the error_code of this ResizeDesktopJobResponse.
-
-        错误码，失败时返回。
-
-        :return: The error_code of this ResizeDesktopJobResponse.
-        :rtype: str
-        """
-        return self._error_code
-
-    @error_code.setter
-    def error_code(self, error_code):
-        r"""Sets the error_code of this ResizeDesktopJobResponse.
-
-        错误码，失败时返回。
-
-        :param error_code: The error_code of this ResizeDesktopJobResponse.
-        :type error_code: str
-        """
-        self._error_code = error_code
-
-    @property
-    def error_msg(self):
-        r"""Gets the error_msg of this ResizeDesktopJobResponse.
-
-        错误描述。
-
-        :return: The error_msg of this ResizeDesktopJobResponse.
-        :rtype: str
-        """
-        return self._error_msg
-
-    @error_msg.setter
-    def error_msg(self, error_msg):
-        r"""Sets the error_msg of this ResizeDesktopJobResponse.
-
-        错误描述。
-
-        :param error_msg: The error_msg of this ResizeDesktopJobResponse.
-        :type error_msg: str
-        """
-        self._error_msg = error_msg
 
     @property
     def desktop_id(self):

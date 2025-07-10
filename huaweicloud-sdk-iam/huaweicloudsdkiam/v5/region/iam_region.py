@@ -58,6 +58,8 @@ class IamRegion:
                         "https://iam.cn-east-4.myhuaweicloud.com")
     CN_EAST_5 = Region("cn-east-5",
                         "https://iam.cn-east-5.myhuaweicloud.com")
+    TR_WEST_1 = Region("tr-west-1",
+                        "https://iam.tr-west-1.myhuaweicloud.com")
 
     static_fields = {
         "cn-north-2": CN_NORTH_2,
@@ -86,6 +88,7 @@ class IamRegion:
         "ae-ad-1": AE_AD_1,
         "cn-east-4": CN_EAST_4,
         "cn-east-5": CN_EAST_5,
+        "tr-west-1": TR_WEST_1,
     }
 
     @classmethod

@@ -49,11 +49,11 @@ class ScheduledTasksRecordsDetails:
 
         The model defined in huaweicloud sdk
 
-        :param id: 任务执行记录详情id
+        :param id: 任务执行记录详情id。
         :type id: str
-        :param record_id: 任务执行记录id
+        :param record_id: 任务执行记录id。
         :type record_id: str
-        :param desktop_id: 桌面id
+        :param desktop_id: 桌面id。
         :type desktop_id: str
         :param desktop_name: 桌面名称。
         :type desktop_name: str
@@ -69,7 +69,7 @@ class ScheduledTasksRecordsDetails:
         :type start_time: str
         :param end_time: 执行结束时间，格式为yyyy-MM-dd HH:mm:ss。
         :type end_time: str
-        :param time_zone: 时区
+        :param time_zone: 时区。
         :type time_zone: str
         """
         
@@ -115,7 +115,7 @@ class ScheduledTasksRecordsDetails:
     def id(self):
         r"""Gets the id of this ScheduledTasksRecordsDetails.
 
-        任务执行记录详情id
+        任务执行记录详情id。
 
         :return: The id of this ScheduledTasksRecordsDetails.
         :rtype: str
@@ -126,7 +126,7 @@ class ScheduledTasksRecordsDetails:
     def id(self, id):
         r"""Sets the id of this ScheduledTasksRecordsDetails.
 
-        任务执行记录详情id
+        任务执行记录详情id。
 
         :param id: The id of this ScheduledTasksRecordsDetails.
         :type id: str
@@ -137,7 +137,7 @@ class ScheduledTasksRecordsDetails:
     def record_id(self):
         r"""Gets the record_id of this ScheduledTasksRecordsDetails.
 
-        任务执行记录id
+        任务执行记录id。
 
         :return: The record_id of this ScheduledTasksRecordsDetails.
         :rtype: str
@@ -148,7 +148,7 @@ class ScheduledTasksRecordsDetails:
     def record_id(self, record_id):
         r"""Sets the record_id of this ScheduledTasksRecordsDetails.
 
-        任务执行记录id
+        任务执行记录id。
 
         :param record_id: The record_id of this ScheduledTasksRecordsDetails.
         :type record_id: str
@@ -159,7 +159,7 @@ class ScheduledTasksRecordsDetails:
     def desktop_id(self):
         r"""Gets the desktop_id of this ScheduledTasksRecordsDetails.
 
-        桌面id
+        桌面id。
 
         :return: The desktop_id of this ScheduledTasksRecordsDetails.
         :rtype: str
@@ -170,7 +170,7 @@ class ScheduledTasksRecordsDetails:
     def desktop_id(self, desktop_id):
         r"""Sets the desktop_id of this ScheduledTasksRecordsDetails.
 
-        桌面id
+        桌面id。
 
         :param desktop_id: The desktop_id of this ScheduledTasksRecordsDetails.
         :type desktop_id: str
@@ -335,7 +335,7 @@ class ScheduledTasksRecordsDetails:
     def time_zone(self):
         r"""Gets the time_zone of this ScheduledTasksRecordsDetails.
 
-        时区
+        时区。
 
         :return: The time_zone of this ScheduledTasksRecordsDetails.
         :rtype: str
@@ -346,7 +346,7 @@ class ScheduledTasksRecordsDetails:
     def time_zone(self, time_zone):
         r"""Sets the time_zone of this ScheduledTasksRecordsDetails.
 
-        时区
+        时区。
 
         :param time_zone: The time_zone of this ScheduledTasksRecordsDetails.
         :type time_zone: str

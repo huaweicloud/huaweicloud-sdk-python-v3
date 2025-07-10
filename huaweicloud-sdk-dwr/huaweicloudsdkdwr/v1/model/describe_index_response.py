@@ -20,7 +20,7 @@ class DescribeIndexResponse(SdkResponse):
     openapi_types = {
         'code': 'str',
         'message': 'str',
-        'data': 'DescribeIndexResposeData'
+        'data': 'DescribeIndexData'
     }
 
     attribute_map = {
@@ -34,12 +34,12 @@ class DescribeIndexResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param code: 返回码
+        :param code: **参数解释：** 返回码。参见错误码章节。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
         :type code: str
-        :param message: 描述信息
+        :param message: **参数解释：** 描述信息 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
         :type message: str
         :param data: 
-        :type data: :class:`huaweicloudsdkdwr.v1.DescribeIndexResposeData`
+        :type data: :class:`huaweicloudsdkdwr.v1.DescribeIndexData`
         """
         
         super(DescribeIndexResponse, self).__init__()
@@ -60,7 +60,7 @@ class DescribeIndexResponse(SdkResponse):
     def code(self):
         r"""Gets the code of this DescribeIndexResponse.
 
-        返回码
+        **参数解释：** 返回码。参见错误码章节。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :return: The code of this DescribeIndexResponse.
         :rtype: str
@@ -71,7 +71,7 @@ class DescribeIndexResponse(SdkResponse):
     def code(self, code):
         r"""Sets the code of this DescribeIndexResponse.
 
-        返回码
+        **参数解释：** 返回码。参见错误码章节。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :param code: The code of this DescribeIndexResponse.
         :type code: str
@@ -82,7 +82,7 @@ class DescribeIndexResponse(SdkResponse):
     def message(self):
         r"""Gets the message of this DescribeIndexResponse.
 
-        描述信息
+        **参数解释：** 描述信息 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :return: The message of this DescribeIndexResponse.
         :rtype: str
@@ -93,7 +93,7 @@ class DescribeIndexResponse(SdkResponse):
     def message(self, message):
         r"""Sets the message of this DescribeIndexResponse.
 
-        描述信息
+        **参数解释：** 描述信息 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :param message: The message of this DescribeIndexResponse.
         :type message: str
@@ -105,7 +105,7 @@ class DescribeIndexResponse(SdkResponse):
         r"""Gets the data of this DescribeIndexResponse.
 
         :return: The data of this DescribeIndexResponse.
-        :rtype: :class:`huaweicloudsdkdwr.v1.DescribeIndexResposeData`
+        :rtype: :class:`huaweicloudsdkdwr.v1.DescribeIndexData`
         """
         return self._data
 
@@ -114,7 +114,7 @@ class DescribeIndexResponse(SdkResponse):
         r"""Sets the data of this DescribeIndexResponse.
 
         :param data: The data of this DescribeIndexResponse.
-        :type data: :class:`huaweicloudsdkdwr.v1.DescribeIndexResposeData`
+        :type data: :class:`huaweicloudsdkdwr.v1.DescribeIndexData`
         """
         self._data = data
 

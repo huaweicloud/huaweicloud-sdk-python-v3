@@ -43,15 +43,15 @@ class AccessConfig:
 
         :param access_mode: 接入方式。 - INTERNET：表示互联网接入 - DEDICATED：表示专线接入 - BOTH：表示同时支持互联网接入和专线接入
         :type access_mode: str
-        :param internet_access_address: 互联网接入地址，只有access_mode为“INTERNET”或“BOTH”时才会返回该参数
+        :param internet_access_address: 互联网接入地址，只有access_mode为“INTERNET”或“BOTH”时才会返回该参数。
         :type internet_access_address: str
-        :param internet_access_port: 互联网接入端口
+        :param internet_access_port: 互联网接入端口。
         :type internet_access_port: str
-        :param dedicated_access_address: 专线接入地址，只有access_mode为“DEDICATED”或“BOTH”时才会返回该参数
+        :param dedicated_access_address: 专线接入地址，只有access_mode为“DEDICATED”或“BOTH”时才会返回该参数。
         :type dedicated_access_address: str
-        :param dedicated_access_standby_address: 专线接入备用地址，只有当开启专线备用线路时才会返回该参数
+        :param dedicated_access_standby_address: 专线接入备用地址，只有当开启专线备用线路时才会返回该参数。
         :type dedicated_access_standby_address: list[str]
-        :param standby_address_result_code: 专线备用线路失败错误码
+        :param standby_address_result_code: 专线备用线路失败错误码。
         :type standby_address_result_code: str
         :param dedicated_cidrs: 专线接入网段。接入模式包含专线方式时选填，多个网段信息用分号隔开，列表长度不超过5。
         :type dedicated_cidrs: str
@@ -109,7 +109,7 @@ class AccessConfig:
     def internet_access_address(self):
         r"""Gets the internet_access_address of this AccessConfig.
 
-        互联网接入地址，只有access_mode为“INTERNET”或“BOTH”时才会返回该参数
+        互联网接入地址，只有access_mode为“INTERNET”或“BOTH”时才会返回该参数。
 
         :return: The internet_access_address of this AccessConfig.
         :rtype: str
@@ -120,7 +120,7 @@ class AccessConfig:
     def internet_access_address(self, internet_access_address):
         r"""Sets the internet_access_address of this AccessConfig.
 
-        互联网接入地址，只有access_mode为“INTERNET”或“BOTH”时才会返回该参数
+        互联网接入地址，只有access_mode为“INTERNET”或“BOTH”时才会返回该参数。
 
         :param internet_access_address: The internet_access_address of this AccessConfig.
         :type internet_access_address: str
@@ -131,7 +131,7 @@ class AccessConfig:
     def internet_access_port(self):
         r"""Gets the internet_access_port of this AccessConfig.
 
-        互联网接入端口
+        互联网接入端口。
 
         :return: The internet_access_port of this AccessConfig.
         :rtype: str
@@ -142,7 +142,7 @@ class AccessConfig:
     def internet_access_port(self, internet_access_port):
         r"""Sets the internet_access_port of this AccessConfig.
 
-        互联网接入端口
+        互联网接入端口。
 
         :param internet_access_port: The internet_access_port of this AccessConfig.
         :type internet_access_port: str
@@ -153,7 +153,7 @@ class AccessConfig:
     def dedicated_access_address(self):
         r"""Gets the dedicated_access_address of this AccessConfig.
 
-        专线接入地址，只有access_mode为“DEDICATED”或“BOTH”时才会返回该参数
+        专线接入地址，只有access_mode为“DEDICATED”或“BOTH”时才会返回该参数。
 
         :return: The dedicated_access_address of this AccessConfig.
         :rtype: str
@@ -164,7 +164,7 @@ class AccessConfig:
     def dedicated_access_address(self, dedicated_access_address):
         r"""Sets the dedicated_access_address of this AccessConfig.
 
-        专线接入地址，只有access_mode为“DEDICATED”或“BOTH”时才会返回该参数
+        专线接入地址，只有access_mode为“DEDICATED”或“BOTH”时才会返回该参数。
 
         :param dedicated_access_address: The dedicated_access_address of this AccessConfig.
         :type dedicated_access_address: str
@@ -175,7 +175,7 @@ class AccessConfig:
     def dedicated_access_standby_address(self):
         r"""Gets the dedicated_access_standby_address of this AccessConfig.
 
-        专线接入备用地址，只有当开启专线备用线路时才会返回该参数
+        专线接入备用地址，只有当开启专线备用线路时才会返回该参数。
 
         :return: The dedicated_access_standby_address of this AccessConfig.
         :rtype: list[str]
@@ -186,7 +186,7 @@ class AccessConfig:
     def dedicated_access_standby_address(self, dedicated_access_standby_address):
         r"""Sets the dedicated_access_standby_address of this AccessConfig.
 
-        专线接入备用地址，只有当开启专线备用线路时才会返回该参数
+        专线接入备用地址，只有当开启专线备用线路时才会返回该参数。
 
         :param dedicated_access_standby_address: The dedicated_access_standby_address of this AccessConfig.
         :type dedicated_access_standby_address: list[str]
@@ -197,7 +197,7 @@ class AccessConfig:
     def standby_address_result_code(self):
         r"""Gets the standby_address_result_code of this AccessConfig.
 
-        专线备用线路失败错误码
+        专线备用线路失败错误码。
 
         :return: The standby_address_result_code of this AccessConfig.
         :rtype: str
@@ -208,7 +208,7 @@ class AccessConfig:
     def standby_address_result_code(self, standby_address_result_code):
         r"""Sets the standby_address_result_code of this AccessConfig.
 
-        专线备用线路失败错误码
+        专线备用线路失败错误码。
 
         :param standby_address_result_code: The standby_address_result_code of this AccessConfig.
         :type standby_address_result_code: str

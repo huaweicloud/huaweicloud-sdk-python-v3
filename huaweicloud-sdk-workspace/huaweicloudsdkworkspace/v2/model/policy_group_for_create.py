@@ -21,7 +21,6 @@ class PolicyGroupForCreate:
         'policy_group_name': 'str',
         'priority': 'int',
         'description': 'str',
-        'scope_flag': 'int',
         'update_time': 'str',
         'targets': 'list[Target]',
         'policies': 'Policies'
@@ -32,27 +31,24 @@ class PolicyGroupForCreate:
         'policy_group_name': 'policy_group_name',
         'priority': 'priority',
         'description': 'description',
-        'scope_flag': 'scope_flag',
         'update_time': 'update_time',
         'targets': 'targets',
         'policies': 'policies'
     }
 
-    def __init__(self, policy_group_id=None, policy_group_name=None, priority=None, description=None, scope_flag=None, update_time=None, targets=None, policies=None):
+    def __init__(self, policy_group_id=None, policy_group_name=None, priority=None, description=None, update_time=None, targets=None, policies=None):
         r"""PolicyGroupForCreate
 
         The model defined in huaweicloud sdk
 
         :param policy_group_id: 策略组id。
         :type policy_group_id: str
-        :param policy_group_name: 策略组名称。
+        :param policy_group_name: 策略组名称，必须由半角数字、字母、下划线组成，长度不能超过255个字符。
         :type policy_group_name: str
         :param priority: 优先级。
         :type priority: int
-        :param description: 策略组描述。
+        :param description: 策略组描述，长度不能超过255个字符。
         :type description: str
-        :param scope_flag: 策略来源。
-        :type scope_flag: int
         :param update_time: 更新时间。
         :type update_time: str
         :param targets: 应用对象列表。
@@ -67,7 +63,6 @@ class PolicyGroupForCreate:
         self._policy_group_name = None
         self._priority = None
         self._description = None
-        self._scope_flag = None
         self._update_time = None
         self._targets = None
         self._policies = None
@@ -81,8 +76,6 @@ class PolicyGroupForCreate:
             self.priority = priority
         if description is not None:
             self.description = description
-        if scope_flag is not None:
-            self.scope_flag = scope_flag
         if update_time is not None:
             self.update_time = update_time
         if targets is not None:
@@ -116,7 +109,7 @@ class PolicyGroupForCreate:
     def policy_group_name(self):
         r"""Gets the policy_group_name of this PolicyGroupForCreate.
 
-        策略组名称。
+        策略组名称，必须由半角数字、字母、下划线组成，长度不能超过255个字符。
 
         :return: The policy_group_name of this PolicyGroupForCreate.
         :rtype: str
@@ -127,7 +120,7 @@ class PolicyGroupForCreate:
     def policy_group_name(self, policy_group_name):
         r"""Sets the policy_group_name of this PolicyGroupForCreate.
 
-        策略组名称。
+        策略组名称，必须由半角数字、字母、下划线组成，长度不能超过255个字符。
 
         :param policy_group_name: The policy_group_name of this PolicyGroupForCreate.
         :type policy_group_name: str
@@ -160,7 +153,7 @@ class PolicyGroupForCreate:
     def description(self):
         r"""Gets the description of this PolicyGroupForCreate.
 
-        策略组描述。
+        策略组描述，长度不能超过255个字符。
 
         :return: The description of this PolicyGroupForCreate.
         :rtype: str
@@ -171,34 +164,12 @@ class PolicyGroupForCreate:
     def description(self, description):
         r"""Sets the description of this PolicyGroupForCreate.
 
-        策略组描述。
+        策略组描述，长度不能超过255个字符。
 
         :param description: The description of this PolicyGroupForCreate.
         :type description: str
         """
         self._description = description
-
-    @property
-    def scope_flag(self):
-        r"""Gets the scope_flag of this PolicyGroupForCreate.
-
-        策略来源。
-
-        :return: The scope_flag of this PolicyGroupForCreate.
-        :rtype: int
-        """
-        return self._scope_flag
-
-    @scope_flag.setter
-    def scope_flag(self, scope_flag):
-        r"""Sets the scope_flag of this PolicyGroupForCreate.
-
-        策略来源。
-
-        :param scope_flag: The scope_flag of this PolicyGroupForCreate.
-        :type scope_flag: int
-        """
-        self._scope_flag = scope_flag
 
     @property
     def update_time(self):

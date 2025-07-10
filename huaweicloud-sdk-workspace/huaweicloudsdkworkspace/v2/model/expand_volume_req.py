@@ -17,57 +17,28 @@ class ExpandVolumeReq:
     sensitive_list = []
 
     openapi_types = {
-        'order_id': 'str',
         'new_size': 'int'
     }
 
     attribute_map = {
-        'order_id': 'order_id',
         'new_size': 'new_size'
     }
 
-    def __init__(self, order_id=None, new_size=None):
+    def __init__(self, new_size=None):
         r"""ExpandVolumeReq
 
         The model defined in huaweicloud sdk
 
-        :param order_id: 订单ID，包周期桌面扩容时使用。
-        :type order_id: str
         :param new_size: 扩容后的磁盘大小，单位为GB。
         :type new_size: int
         """
         
         
 
-        self._order_id = None
         self._new_size = None
         self.discriminator = None
 
-        if order_id is not None:
-            self.order_id = order_id
         self.new_size = new_size
-
-    @property
-    def order_id(self):
-        r"""Gets the order_id of this ExpandVolumeReq.
-
-        订单ID，包周期桌面扩容时使用。
-
-        :return: The order_id of this ExpandVolumeReq.
-        :rtype: str
-        """
-        return self._order_id
-
-    @order_id.setter
-    def order_id(self, order_id):
-        r"""Sets the order_id of this ExpandVolumeReq.
-
-        订单ID，包周期桌面扩容时使用。
-
-        :param order_id: The order_id of this ExpandVolumeReq.
-        :type order_id: str
-        """
-        self._order_id = order_id
 
     @property
     def new_size(self):

@@ -55,9 +55,9 @@ class ListImagesRequest:
         :type platform: str
         :param architecture: 镜像架构：x86。
         :type architecture: str
-        :param package_type: 套餐系列
+        :param package_type: 套餐系列。
         :type package_type: str
-        :param image_id: 镜像Id
+        :param image_id: 镜像Id。
         :type image_id: str
         :param limit: 每页数量，范围0-100，默认100。
         :type limit: int
@@ -196,7 +196,7 @@ class ListImagesRequest:
     def package_type(self):
         r"""Gets the package_type of this ListImagesRequest.
 
-        套餐系列
+        套餐系列。
 
         :return: The package_type of this ListImagesRequest.
         :rtype: str
@@ -207,7 +207,7 @@ class ListImagesRequest:
     def package_type(self, package_type):
         r"""Sets the package_type of this ListImagesRequest.
 
-        套餐系列
+        套餐系列。
 
         :param package_type: The package_type of this ListImagesRequest.
         :type package_type: str
@@ -218,7 +218,7 @@ class ListImagesRequest:
     def image_id(self):
         r"""Gets the image_id of this ListImagesRequest.
 
-        镜像Id
+        镜像Id。
 
         :return: The image_id of this ListImagesRequest.
         :rtype: str
@@ -229,7 +229,7 @@ class ListImagesRequest:
     def image_id(self, image_id):
         r"""Sets the image_id of this ListImagesRequest.
 
-        镜像Id
+        镜像Id。
 
         :param image_id: The image_id of this ListImagesRequest.
         :type image_id: str

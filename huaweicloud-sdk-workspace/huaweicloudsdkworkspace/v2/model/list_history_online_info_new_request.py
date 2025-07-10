@@ -19,18 +19,16 @@ class ListHistoryOnlineInfoNewRequest:
     openapi_types = {
         'start_time': 'str',
         'end_time': 'str',
-        'query_type': 'str',
-        'client_hour': 'int'
+        'query_type': 'str'
     }
 
     attribute_map = {
         'start_time': 'start_time',
         'end_time': 'end_time',
-        'query_type': 'query_type',
-        'client_hour': 'client_hour'
+        'query_type': 'query_type'
     }
 
-    def __init__(self, start_time=None, end_time=None, query_type=None, client_hour=None):
+    def __init__(self, start_time=None, end_time=None, query_type=None):
         r"""ListHistoryOnlineInfoNewRequest
 
         The model defined in huaweicloud sdk
@@ -41,8 +39,6 @@ class ListHistoryOnlineInfoNewRequest:
         :type end_time: str
         :param query_type: 查询类型，类型查询优先于时间查询。类型查询和时间查询必须有一个存在。 -MONTH：按月查询。 -WEEK：按周查询。 -DAY：按天查询。
         :type query_type: str
-        :param client_hour: 客户端所在操作系统时间的小时数。
-        :type client_hour: int
         """
         
         
@@ -50,7 +46,6 @@ class ListHistoryOnlineInfoNewRequest:
         self._start_time = None
         self._end_time = None
         self._query_type = None
-        self._client_hour = None
         self.discriminator = None
 
         if start_time is not None:
@@ -59,8 +54,6 @@ class ListHistoryOnlineInfoNewRequest:
             self.end_time = end_time
         if query_type is not None:
             self.query_type = query_type
-        if client_hour is not None:
-            self.client_hour = client_hour
 
     @property
     def start_time(self):
@@ -127,28 +120,6 @@ class ListHistoryOnlineInfoNewRequest:
         :type query_type: str
         """
         self._query_type = query_type
-
-    @property
-    def client_hour(self):
-        r"""Gets the client_hour of this ListHistoryOnlineInfoNewRequest.
-
-        客户端所在操作系统时间的小时数。
-
-        :return: The client_hour of this ListHistoryOnlineInfoNewRequest.
-        :rtype: int
-        """
-        return self._client_hour
-
-    @client_hour.setter
-    def client_hour(self, client_hour):
-        r"""Sets the client_hour of this ListHistoryOnlineInfoNewRequest.
-
-        客户端所在操作系统时间的小时数。
-
-        :param client_hour: The client_hour of this ListHistoryOnlineInfoNewRequest.
-        :type client_hour: int
-        """
-        self._client_hour = client_hour
 
     def to_dict(self):
         """Returns the model properties as a dict"""

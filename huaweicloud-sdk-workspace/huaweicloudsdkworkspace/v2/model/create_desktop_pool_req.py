@@ -23,6 +23,7 @@ class CreateDesktopPoolReq:
         'description': 'str',
         'availability_zone': 'str',
         'product_id': 'str',
+        'flavor_id': 'str',
         'image_type': 'str',
         'image_id': 'str',
         'root_volume': 'VolumeInfo',
@@ -31,7 +32,6 @@ class CreateDesktopPoolReq:
         'subnet_ids': 'list[str]',
         'security_groups': 'list[SecurityGroup]',
         'authorized_objects': 'list[AuthorizedObjects]',
-        'order_id': 'str',
         'ou_name': 'str',
         'tags': 'list[Tag]',
         'enterprise_project_id': 'str',
@@ -48,6 +48,7 @@ class CreateDesktopPoolReq:
         'description': 'description',
         'availability_zone': 'availability_zone',
         'product_id': 'product_id',
+        'flavor_id': 'flavor_id',
         'image_type': 'image_type',
         'image_id': 'image_id',
         'root_volume': 'root_volume',
@@ -56,7 +57,6 @@ class CreateDesktopPoolReq:
         'subnet_ids': 'subnet_ids',
         'security_groups': 'security_groups',
         'authorized_objects': 'authorized_objects',
-        'order_id': 'order_id',
         'ou_name': 'ou_name',
         'tags': 'tags',
         'enterprise_project_id': 'enterprise_project_id',
@@ -66,7 +66,7 @@ class CreateDesktopPoolReq:
         'desktop_name_policy_id': 'desktop_name_policy_id'
     }
 
-    def __init__(self, name=None, type=None, size=None, description=None, availability_zone=None, product_id=None, image_type=None, image_id=None, root_volume=None, data_volumes=None, vpc_id=None, subnet_ids=None, security_groups=None, authorized_objects=None, order_id=None, ou_name=None, tags=None, enterprise_project_id=None, disconnected_retention_period=None, enable_autoscale=None, autoscale_policy=None, desktop_name_policy_id=None):
+    def __init__(self, name=None, type=None, size=None, description=None, availability_zone=None, product_id=None, flavor_id=None, image_type=None, image_id=None, root_volume=None, data_volumes=None, vpc_id=None, subnet_ids=None, security_groups=None, authorized_objects=None, ou_name=None, tags=None, enterprise_project_id=None, disconnected_retention_period=None, enable_autoscale=None, autoscale_policy=None, desktop_name_policy_id=None):
         r"""CreateDesktopPoolReq
 
         The model defined in huaweicloud sdk
@@ -83,6 +83,8 @@ class CreateDesktopPoolReq:
         :type availability_zone: str
         :param product_id: 套餐ID。
         :type product_id: str
+        :param flavor_id: 产品规格ID。可用区是边缘可用区时，必填此参数。
+        :type flavor_id: str
         :param image_type: 镜像类型。默认值为private。  - private：私有镜像。 - gold：公共镜像。
         :type image_type: str
         :param image_id: 镜像ID，用于私有镜像创建桌面场景，配合product_id使用。
@@ -99,13 +101,11 @@ class CreateDesktopPoolReq:
         :type security_groups: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroup`]
         :param authorized_objects: 要授权的用户/用户组列表。
         :type authorized_objects: list[:class:`huaweicloudsdkworkspace.v2.AuthorizedObjects`]
-        :param order_id: 包周期订购ID，CBC订购回调时使用。
-        :type order_id: str
         :param ou_name: OU名称，在对接AD时使用，需提前在AD中创建OU。
         :type ou_name: str
         :param tags: 标签列表。
         :type tags: list[:class:`huaweicloudsdkworkspace.v2.Tag`]
-        :param enterprise_project_id: 企业项目ID，默认\&quot;0\&quot;
+        :param enterprise_project_id: 企业项目ID，默认\&quot;0。\&quot;
         :type enterprise_project_id: str
         :param disconnected_retention_period: 动态池桌面断连多少分钟内，保留用户与桌面的绑定关系，超时后自动解绑。
         :type disconnected_retention_period: int
@@ -125,6 +125,7 @@ class CreateDesktopPoolReq:
         self._description = None
         self._availability_zone = None
         self._product_id = None
+        self._flavor_id = None
         self._image_type = None
         self._image_id = None
         self._root_volume = None
@@ -133,7 +134,6 @@ class CreateDesktopPoolReq:
         self._subnet_ids = None
         self._security_groups = None
         self._authorized_objects = None
-        self._order_id = None
         self._ou_name = None
         self._tags = None
         self._enterprise_project_id = None
@@ -151,6 +151,8 @@ class CreateDesktopPoolReq:
         if availability_zone is not None:
             self.availability_zone = availability_zone
         self.product_id = product_id
+        if flavor_id is not None:
+            self.flavor_id = flavor_id
         self.image_type = image_type
         self.image_id = image_id
         self.root_volume = root_volume
@@ -163,8 +165,6 @@ class CreateDesktopPoolReq:
             self.security_groups = security_groups
         if authorized_objects is not None:
             self.authorized_objects = authorized_objects
-        if order_id is not None:
-            self.order_id = order_id
         if ou_name is not None:
             self.ou_name = ou_name
         if tags is not None:
@@ -311,6 +311,28 @@ class CreateDesktopPoolReq:
         :type product_id: str
         """
         self._product_id = product_id
+
+    @property
+    def flavor_id(self):
+        r"""Gets the flavor_id of this CreateDesktopPoolReq.
+
+        产品规格ID。可用区是边缘可用区时，必填此参数。
+
+        :return: The flavor_id of this CreateDesktopPoolReq.
+        :rtype: str
+        """
+        return self._flavor_id
+
+    @flavor_id.setter
+    def flavor_id(self, flavor_id):
+        r"""Sets the flavor_id of this CreateDesktopPoolReq.
+
+        产品规格ID。可用区是边缘可用区时，必填此参数。
+
+        :param flavor_id: The flavor_id of this CreateDesktopPoolReq.
+        :type flavor_id: str
+        """
+        self._flavor_id = flavor_id
 
     @property
     def image_type(self):
@@ -485,28 +507,6 @@ class CreateDesktopPoolReq:
         self._authorized_objects = authorized_objects
 
     @property
-    def order_id(self):
-        r"""Gets the order_id of this CreateDesktopPoolReq.
-
-        包周期订购ID，CBC订购回调时使用。
-
-        :return: The order_id of this CreateDesktopPoolReq.
-        :rtype: str
-        """
-        return self._order_id
-
-    @order_id.setter
-    def order_id(self, order_id):
-        r"""Sets the order_id of this CreateDesktopPoolReq.
-
-        包周期订购ID，CBC订购回调时使用。
-
-        :param order_id: The order_id of this CreateDesktopPoolReq.
-        :type order_id: str
-        """
-        self._order_id = order_id
-
-    @property
     def ou_name(self):
         r"""Gets the ou_name of this CreateDesktopPoolReq.
 
@@ -554,7 +554,7 @@ class CreateDesktopPoolReq:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this CreateDesktopPoolReq.
 
-        企业项目ID，默认\"0\"
+        企业项目ID，默认\"0。\"
 
         :return: The enterprise_project_id of this CreateDesktopPoolReq.
         :rtype: str
@@ -565,7 +565,7 @@ class CreateDesktopPoolReq:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this CreateDesktopPoolReq.
 
-        企业项目ID，默认\"0\"
+        企业项目ID，默认\"0。\"
 
         :param enterprise_project_id: The enterprise_project_id of this CreateDesktopPoolReq.
         :type enterprise_project_id: str

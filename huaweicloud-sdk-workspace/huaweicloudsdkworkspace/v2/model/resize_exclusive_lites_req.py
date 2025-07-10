@@ -17,31 +17,23 @@ class ResizeExclusiveLitesReq:
     sensitive_list = []
 
     openapi_types = {
-        'host_id': 'str',
-        'order_id': 'str',
         'enterprise_project_id': 'str',
         'product_id': 'str',
         'new_quantity': 'int'
     }
 
     attribute_map = {
-        'host_id': 'host_id',
-        'order_id': 'order_id',
         'enterprise_project_id': 'enterprise_project_id',
         'product_id': 'product_id',
         'new_quantity': 'new_quantity'
     }
 
-    def __init__(self, host_id=None, order_id=None, enterprise_project_id=None, product_id=None, new_quantity=None):
+    def __init__(self, enterprise_project_id=None, product_id=None, new_quantity=None):
         r"""ResizeExclusiveLitesReq
 
         The model defined in huaweicloud sdk
 
-        :param host_id: 专享主机的hostId。
-        :type host_id: str
-        :param order_id: 订单ID，包周期专享主机变更桌面路数时使用。
-        :type order_id: str
-        :param enterprise_project_id: 企业项目ID，默认\&quot;0\&quot;
+        :param enterprise_project_id: 企业项目ID，默认\&quot;0。\&quot;
         :type enterprise_project_id: str
         :param product_id: 产品套餐ID。
         :type product_id: str
@@ -51,71 +43,21 @@ class ResizeExclusiveLitesReq:
         
         
 
-        self._host_id = None
-        self._order_id = None
         self._enterprise_project_id = None
         self._product_id = None
         self._new_quantity = None
         self.discriminator = None
 
-        if host_id is not None:
-            self.host_id = host_id
-        if order_id is not None:
-            self.order_id = order_id
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
         self.product_id = product_id
         self.new_quantity = new_quantity
 
     @property
-    def host_id(self):
-        r"""Gets the host_id of this ResizeExclusiveLitesReq.
-
-        专享主机的hostId。
-
-        :return: The host_id of this ResizeExclusiveLitesReq.
-        :rtype: str
-        """
-        return self._host_id
-
-    @host_id.setter
-    def host_id(self, host_id):
-        r"""Sets the host_id of this ResizeExclusiveLitesReq.
-
-        专享主机的hostId。
-
-        :param host_id: The host_id of this ResizeExclusiveLitesReq.
-        :type host_id: str
-        """
-        self._host_id = host_id
-
-    @property
-    def order_id(self):
-        r"""Gets the order_id of this ResizeExclusiveLitesReq.
-
-        订单ID，包周期专享主机变更桌面路数时使用。
-
-        :return: The order_id of this ResizeExclusiveLitesReq.
-        :rtype: str
-        """
-        return self._order_id
-
-    @order_id.setter
-    def order_id(self, order_id):
-        r"""Sets the order_id of this ResizeExclusiveLitesReq.
-
-        订单ID，包周期专享主机变更桌面路数时使用。
-
-        :param order_id: The order_id of this ResizeExclusiveLitesReq.
-        :type order_id: str
-        """
-        self._order_id = order_id
-
-    @property
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this ResizeExclusiveLitesReq.
 
-        企业项目ID，默认\"0\"
+        企业项目ID，默认\"0。\"
 
         :return: The enterprise_project_id of this ResizeExclusiveLitesReq.
         :rtype: str
@@ -126,7 +68,7 @@ class ResizeExclusiveLitesReq:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this ResizeExclusiveLitesReq.
 
-        企业项目ID，默认\"0\"
+        企业项目ID，默认\"0。\"
 
         :param enterprise_project_id: The enterprise_project_id of this ResizeExclusiveLitesReq.
         :type enterprise_project_id: str

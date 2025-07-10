@@ -30,7 +30,7 @@ class ShowAvailableIpResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param available_ip: 可用ip数
+        :param available_ip: 可用ip数。
         :type available_ip: int
         """
         
@@ -46,7 +46,7 @@ class ShowAvailableIpResponse(SdkResponse):
     def available_ip(self):
         r"""Gets the available_ip of this ShowAvailableIpResponse.
 
-        可用ip数
+        可用ip数。
 
         :return: The available_ip of this ShowAvailableIpResponse.
         :rtype: int
@@ -57,7 +57,7 @@ class ShowAvailableIpResponse(SdkResponse):
     def available_ip(self, available_ip):
         r"""Sets the available_ip of this ShowAvailableIpResponse.
 
-        可用ip数
+        可用ip数。
 
         :param available_ip: The available_ip of this ShowAvailableIpResponse.
         :type available_ip: int

@@ -34,11 +34,11 @@ class ShowUserAccessStagesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param username: 用户名
+        :param username: 用户名。
         :type username: str
-        :param biz_type: 接入阶段 | APP - 应用 DESKTOP - 桌面
+        :param biz_type: 接入阶段 | APP - 应用 DESKTOP - 桌面。
         :type biz_type: str
-        :param stages: 接入各阶段详情
+        :param stages: 接入各阶段详情。
         :type stages: list[:class:`huaweicloudsdkworkspace.v2.UserAccessStage`]
         """
         
@@ -60,7 +60,7 @@ class ShowUserAccessStagesResponse(SdkResponse):
     def username(self):
         r"""Gets the username of this ShowUserAccessStagesResponse.
 
-        用户名
+        用户名。
 
         :return: The username of this ShowUserAccessStagesResponse.
         :rtype: str
@@ -71,7 +71,7 @@ class ShowUserAccessStagesResponse(SdkResponse):
     def username(self, username):
         r"""Sets the username of this ShowUserAccessStagesResponse.
 
-        用户名
+        用户名。
 
         :param username: The username of this ShowUserAccessStagesResponse.
         :type username: str
@@ -82,7 +82,7 @@ class ShowUserAccessStagesResponse(SdkResponse):
     def biz_type(self):
         r"""Gets the biz_type of this ShowUserAccessStagesResponse.
 
-        接入阶段 | APP - 应用 DESKTOP - 桌面
+        接入阶段 | APP - 应用 DESKTOP - 桌面。
 
         :return: The biz_type of this ShowUserAccessStagesResponse.
         :rtype: str
@@ -93,7 +93,7 @@ class ShowUserAccessStagesResponse(SdkResponse):
     def biz_type(self, biz_type):
         r"""Sets the biz_type of this ShowUserAccessStagesResponse.
 
-        接入阶段 | APP - 应用 DESKTOP - 桌面
+        接入阶段 | APP - 应用 DESKTOP - 桌面。
 
         :param biz_type: The biz_type of this ShowUserAccessStagesResponse.
         :type biz_type: str
@@ -104,7 +104,7 @@ class ShowUserAccessStagesResponse(SdkResponse):
     def stages(self):
         r"""Gets the stages of this ShowUserAccessStagesResponse.
 
-        接入各阶段详情
+        接入各阶段详情。
 
         :return: The stages of this ShowUserAccessStagesResponse.
         :rtype: list[:class:`huaweicloudsdkworkspace.v2.UserAccessStage`]
@@ -115,7 +115,7 @@ class ShowUserAccessStagesResponse(SdkResponse):
     def stages(self, stages):
         r"""Sets the stages of this ShowUserAccessStagesResponse.
 
-        接入各阶段详情
+        接入各阶段详情。
 
         :param stages: The stages of this ShowUserAccessStagesResponse.
         :type stages: list[:class:`huaweicloudsdkworkspace.v2.UserAccessStage`]

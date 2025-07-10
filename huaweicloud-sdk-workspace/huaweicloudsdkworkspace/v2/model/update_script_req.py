@@ -53,12 +53,10 @@ class UpdateScriptReq:
         self._version = None
         self.discriminator = None
 
-        if name is not None:
-            self.name = name
+        self.name = name
         if description is not None:
             self.description = description
-        if content is not None:
-            self.content = content
+        self.content = content
         if version is not None:
             self.version = version
 

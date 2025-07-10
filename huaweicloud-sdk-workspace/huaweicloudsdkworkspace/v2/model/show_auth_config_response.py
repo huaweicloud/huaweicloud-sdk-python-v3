@@ -40,11 +40,11 @@ class ShowAuthConfigResponse(SdkResponse):
 
         :param auth_type: 认证类型 LOCAL_PASSWORD：本地密码认证模式 KERBEROS：Windows AD认证模式 LDAP：第三方LDAP模式 CLIENT_TOKEN：金审UKEY客户端Token认证模式 OAUTH2：第三方单点登录模式
         :type auth_type: str
-        :param enable: 当前状态
+        :param enable: 当前状态。
         :type enable: bool
         :param radius_gateway_config: 
         :type radius_gateway_config: :class:`huaweicloudsdkworkspace.v2.RadiusGatewayConfigInfo`
-        :param third_party_auth_config: 第三方认证接口配置信息
+        :param third_party_auth_config: 第三方认证接口配置信息。
         :type third_party_auth_config: list[:class:`huaweicloudsdkworkspace.v2.ThirdPartyAuthConfig`]
         :param emergency_login_mode: 应急登录模式。
         :type emergency_login_mode: str
@@ -96,7 +96,7 @@ class ShowAuthConfigResponse(SdkResponse):
     def enable(self):
         r"""Gets the enable of this ShowAuthConfigResponse.
 
-        当前状态
+        当前状态。
 
         :return: The enable of this ShowAuthConfigResponse.
         :rtype: bool
@@ -107,7 +107,7 @@ class ShowAuthConfigResponse(SdkResponse):
     def enable(self, enable):
         r"""Sets the enable of this ShowAuthConfigResponse.
 
-        当前状态
+        当前状态。
 
         :param enable: The enable of this ShowAuthConfigResponse.
         :type enable: bool
@@ -136,7 +136,7 @@ class ShowAuthConfigResponse(SdkResponse):
     def third_party_auth_config(self):
         r"""Gets the third_party_auth_config of this ShowAuthConfigResponse.
 
-        第三方认证接口配置信息
+        第三方认证接口配置信息。
 
         :return: The third_party_auth_config of this ShowAuthConfigResponse.
         :rtype: list[:class:`huaweicloudsdkworkspace.v2.ThirdPartyAuthConfig`]
@@ -147,7 +147,7 @@ class ShowAuthConfigResponse(SdkResponse):
     def third_party_auth_config(self, third_party_auth_config):
         r"""Sets the third_party_auth_config of this ShowAuthConfigResponse.
 
-        第三方认证接口配置信息
+        第三方认证接口配置信息。
 
         :param third_party_auth_config: The third_party_auth_config of this ShowAuthConfigResponse.
         :type third_party_auth_config: list[:class:`huaweicloudsdkworkspace.v2.ThirdPartyAuthConfig`]

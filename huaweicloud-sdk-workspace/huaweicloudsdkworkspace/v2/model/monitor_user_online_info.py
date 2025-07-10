@@ -43,9 +43,9 @@ class MonitorUserOnlineInfo:
         :type error_msg: str
         :param encoded_authorization_message: 加密后的详细拒绝原因，用户可以自行调用STS服务的decode-authorization-message接口进行解密。
         :type encoded_authorization_message: str
-        :param connection_setup_time: 建立连接时间
+        :param connection_setup_time: 建立连接时间。
         :type connection_setup_time: str
-        :param connection_end_time: 结束连接时间
+        :param connection_end_time: 结束连接时间。
         :type connection_end_time: str
         """
         
@@ -139,7 +139,7 @@ class MonitorUserOnlineInfo:
     def connection_setup_time(self):
         r"""Gets the connection_setup_time of this MonitorUserOnlineInfo.
 
-        建立连接时间
+        建立连接时间。
 
         :return: The connection_setup_time of this MonitorUserOnlineInfo.
         :rtype: str
@@ -150,7 +150,7 @@ class MonitorUserOnlineInfo:
     def connection_setup_time(self, connection_setup_time):
         r"""Sets the connection_setup_time of this MonitorUserOnlineInfo.
 
-        建立连接时间
+        建立连接时间。
 
         :param connection_setup_time: The connection_setup_time of this MonitorUserOnlineInfo.
         :type connection_setup_time: str
@@ -161,7 +161,7 @@ class MonitorUserOnlineInfo:
     def connection_end_time(self):
         r"""Gets the connection_end_time of this MonitorUserOnlineInfo.
 
-        结束连接时间
+        结束连接时间。
 
         :return: The connection_end_time of this MonitorUserOnlineInfo.
         :rtype: str
@@ -172,7 +172,7 @@ class MonitorUserOnlineInfo:
     def connection_end_time(self, connection_end_time):
         r"""Sets the connection_end_time of this MonitorUserOnlineInfo.
 
-        结束连接时间
+        结束连接时间。
 
         :param connection_end_time: The connection_end_time of this MonitorUserOnlineInfo.
         :type connection_end_time: str

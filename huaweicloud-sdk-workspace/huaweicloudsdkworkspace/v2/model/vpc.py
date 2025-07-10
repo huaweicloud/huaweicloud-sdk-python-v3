@@ -33,11 +33,11 @@ class Vpc:
 
         The model defined in huaweicloud sdk
 
-        :param id: 桌面所在vpcId
+        :param id: 桌面所在vpcId。
         :type id: str
-        :param name: 桌面所在vpc名称
+        :param name: 桌面所在vpc名称。
         :type name: str
-        :param cidr: 桌面所在vpc网段
+        :param cidr: 桌面所在vpc网段。
         :type cidr: str
         """
         
@@ -59,7 +59,7 @@ class Vpc:
     def id(self):
         r"""Gets the id of this Vpc.
 
-        桌面所在vpcId
+        桌面所在vpcId。
 
         :return: The id of this Vpc.
         :rtype: str
@@ -70,7 +70,7 @@ class Vpc:
     def id(self, id):
         r"""Sets the id of this Vpc.
 
-        桌面所在vpcId
+        桌面所在vpcId。
 
         :param id: The id of this Vpc.
         :type id: str
@@ -81,7 +81,7 @@ class Vpc:
     def name(self):
         r"""Gets the name of this Vpc.
 
-        桌面所在vpc名称
+        桌面所在vpc名称。
 
         :return: The name of this Vpc.
         :rtype: str
@@ -92,7 +92,7 @@ class Vpc:
     def name(self, name):
         r"""Sets the name of this Vpc.
 
-        桌面所在vpc名称
+        桌面所在vpc名称。
 
         :param name: The name of this Vpc.
         :type name: str
@@ -103,7 +103,7 @@ class Vpc:
     def cidr(self):
         r"""Gets the cidr of this Vpc.
 
-        桌面所在vpc网段
+        桌面所在vpc网段。
 
         :return: The cidr of this Vpc.
         :rtype: str
@@ -114,7 +114,7 @@ class Vpc:
     def cidr(self, cidr):
         r"""Sets the cidr of this Vpc.
 
-        桌面所在vpc网段
+        桌面所在vpc网段。
 
         :param cidr: The cidr of this Vpc.
         :type cidr: str

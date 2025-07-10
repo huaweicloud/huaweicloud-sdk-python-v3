@@ -31,9 +31,9 @@ class NetworkConfigReq:
 
         The model defined in huaweicloud sdk
 
-        :param vpc_id: VPC ID
+        :param vpc_id: VPC ID。
         :type vpc_id: str
-        :param subnet_ids: 指定业务子网的网络id
+        :param subnet_ids: 指定业务子网的网络id。
         :type subnet_ids: list[str]
         """
         
@@ -52,7 +52,7 @@ class NetworkConfigReq:
     def vpc_id(self):
         r"""Gets the vpc_id of this NetworkConfigReq.
 
-        VPC ID
+        VPC ID。
 
         :return: The vpc_id of this NetworkConfigReq.
         :rtype: str
@@ -63,7 +63,7 @@ class NetworkConfigReq:
     def vpc_id(self, vpc_id):
         r"""Sets the vpc_id of this NetworkConfigReq.
 
-        VPC ID
+        VPC ID。
 
         :param vpc_id: The vpc_id of this NetworkConfigReq.
         :type vpc_id: str
@@ -74,7 +74,7 @@ class NetworkConfigReq:
     def subnet_ids(self):
         r"""Gets the subnet_ids of this NetworkConfigReq.
 
-        指定业务子网的网络id
+        指定业务子网的网络id。
 
         :return: The subnet_ids of this NetworkConfigReq.
         :rtype: list[str]
@@ -85,7 +85,7 @@ class NetworkConfigReq:
     def subnet_ids(self, subnet_ids):
         r"""Sets the subnet_ids of this NetworkConfigReq.
 
-        指定业务子网的网络id
+        指定业务子网的网络id。
 
         :param subnet_ids: The subnet_ids of this NetworkConfigReq.
         :type subnet_ids: list[str]

@@ -53,7 +53,7 @@ class WatermarkOptions:
 
         :param show_style: 展示方式。取值为：FIXED：固定位置。RANDOM：随机运动。
         :type show_style: str
-        :param color: 颜色。格式：RRGGBB。默认：2a2a2a
+        :param color: 颜色。格式：RRGGBB。默认：2a2a2a。
         :type color: str
         :param font_size: 字体大小。取值范围为[1-200]。默认：30。
         :type font_size: int
@@ -144,7 +144,7 @@ class WatermarkOptions:
     def color(self):
         r"""Gets the color of this WatermarkOptions.
 
-        颜色。格式：RRGGBB。默认：2a2a2a
+        颜色。格式：RRGGBB。默认：2a2a2a。
 
         :return: The color of this WatermarkOptions.
         :rtype: str
@@ -155,7 +155,7 @@ class WatermarkOptions:
     def color(self, color):
         r"""Sets the color of this WatermarkOptions.
 
-        颜色。格式：RRGGBB。默认：2a2a2a
+        颜色。格式：RRGGBB。默认：2a2a2a。
 
         :param color: The color of this WatermarkOptions.
         :type color: str

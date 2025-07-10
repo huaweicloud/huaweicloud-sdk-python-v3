@@ -35,13 +35,13 @@ class IndexDesc:
 
         The model defined in huaweicloud sdk
 
-        :param index_name: 索引名
+        :param index_name: **参数解释：** 描述的索引名称。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type index_name: str
-        :param field_name: 索引对应的列
+        :param field_name: **参数解释：** 索引对应的字段名称。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type field_name: str
-        :param index_params: 索引的参数信息
+        :param index_params: **参数解释：** 索引的参数信息。详情请查阅IndexParam。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
         :type index_params: dict(str, object)
-        :param index_state: 索引状态：  -\&quot;InProgress\&quot;：索引正在构建中或还未开始构建 -\&quot;Finished\&quot;：索引构建完成 -\&quot;Failed\&quot;：索引构建失败
+        :param index_state: **参数解释：** 索引状态。 **约束限制：** 不涉及。 **取值范围：** -\&quot;InProgress\&quot;：索引正在构建中或还未开始构建。 -\&quot;Finished\&quot;：索引构建完成。 -\&quot;Failed\&quot;：索引构建失败。 **默认取值:** 不涉及。
         :type index_state: str
         """
         
@@ -55,16 +55,14 @@ class IndexDesc:
 
         self.index_name = index_name
         self.field_name = field_name
-        if index_params is not None:
-            self.index_params = index_params
-        if index_state is not None:
-            self.index_state = index_state
+        self.index_params = index_params
+        self.index_state = index_state
 
     @property
     def index_name(self):
         r"""Gets the index_name of this IndexDesc.
 
-        索引名
+        **参数解释：** 描述的索引名称。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The index_name of this IndexDesc.
         :rtype: str
@@ -75,7 +73,7 @@ class IndexDesc:
     def index_name(self, index_name):
         r"""Sets the index_name of this IndexDesc.
 
-        索引名
+        **参数解释：** 描述的索引名称。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param index_name: The index_name of this IndexDesc.
         :type index_name: str
@@ -86,7 +84,7 @@ class IndexDesc:
     def field_name(self):
         r"""Gets the field_name of this IndexDesc.
 
-        索引对应的列
+        **参数解释：** 索引对应的字段名称。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The field_name of this IndexDesc.
         :rtype: str
@@ -97,7 +95,7 @@ class IndexDesc:
     def field_name(self, field_name):
         r"""Sets the field_name of this IndexDesc.
 
-        索引对应的列
+        **参数解释：** 索引对应的字段名称。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param field_name: The field_name of this IndexDesc.
         :type field_name: str
@@ -108,7 +106,7 @@ class IndexDesc:
     def index_params(self):
         r"""Gets the index_params of this IndexDesc.
 
-        索引的参数信息
+        **参数解释：** 索引的参数信息。详情请查阅IndexParam。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :return: The index_params of this IndexDesc.
         :rtype: dict(str, object)
@@ -119,7 +117,7 @@ class IndexDesc:
     def index_params(self, index_params):
         r"""Sets the index_params of this IndexDesc.
 
-        索引的参数信息
+        **参数解释：** 索引的参数信息。详情请查阅IndexParam。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :param index_params: The index_params of this IndexDesc.
         :type index_params: dict(str, object)
@@ -130,7 +128,7 @@ class IndexDesc:
     def index_state(self):
         r"""Gets the index_state of this IndexDesc.
 
-        索引状态：  -\"InProgress\"：索引正在构建中或还未开始构建 -\"Finished\"：索引构建完成 -\"Failed\"：索引构建失败
+        **参数解释：** 索引状态。 **约束限制：** 不涉及。 **取值范围：** -\"InProgress\"：索引正在构建中或还未开始构建。 -\"Finished\"：索引构建完成。 -\"Failed\"：索引构建失败。 **默认取值:** 不涉及。
 
         :return: The index_state of this IndexDesc.
         :rtype: str
@@ -141,7 +139,7 @@ class IndexDesc:
     def index_state(self, index_state):
         r"""Sets the index_state of this IndexDesc.
 
-        索引状态：  -\"InProgress\"：索引正在构建中或还未开始构建 -\"Finished\"：索引构建完成 -\"Failed\"：索引构建失败
+        **参数解释：** 索引状态。 **约束限制：** 不涉及。 **取值范围：** -\"InProgress\"：索引正在构建中或还未开始构建。 -\"Finished\"：索引构建完成。 -\"Failed\"：索引构建失败。 **默认取值:** 不涉及。
 
         :param index_state: The index_state of this IndexDesc.
         :type index_state: str

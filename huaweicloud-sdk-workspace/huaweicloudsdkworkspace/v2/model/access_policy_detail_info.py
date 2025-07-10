@@ -21,6 +21,8 @@ class AccessPolicyDetailInfo:
         'blacklist_type': 'str',
         'access_control_type': 'str',
         'ip_list': 'list[IpInfo]',
+        'is_enable': 'bool',
+        'is_block_all': 'bool',
         'ip_total_count': 'int',
         'policy_id': 'str',
         'create_time': 'str'
@@ -31,17 +33,19 @@ class AccessPolicyDetailInfo:
         'blacklist_type': 'blacklist_type',
         'access_control_type': 'access_control_type',
         'ip_list': 'ip_list',
+        'is_enable': 'is_enable',
+        'is_block_all': 'is_block_all',
         'ip_total_count': 'ip_total_count',
         'policy_id': 'policy_id',
         'create_time': 'create_time'
     }
 
-    def __init__(self, policy_name=None, blacklist_type=None, access_control_type=None, ip_list=None, ip_total_count=None, policy_id=None, create_time=None):
+    def __init__(self, policy_name=None, blacklist_type=None, access_control_type=None, ip_list=None, is_enable=None, is_block_all=None, ip_total_count=None, policy_id=None, create_time=None):
         r"""AccessPolicyDetailInfo
 
         The model defined in huaweicloud sdk
 
-        :param policy_name: 策略名
+        :param policy_name: 策略名。
         :type policy_name: str
         :param blacklist_type: 黑名单类型，当前黑名单只支持互联网。 * INTERNET： 互联网
         :type blacklist_type: str
@@ -49,6 +53,10 @@ class AccessPolicyDetailInfo:
         :type access_control_type: str
         :param ip_list: 策略的ip列表。
         :type ip_list: list[:class:`huaweicloudsdkworkspace.v2.IpInfo`]
+        :param is_enable: IP白名单是否生效。只能单独更新，此值的优先级最高，传此值只修改该策略是否生效。
+        :type is_enable: bool
+        :param is_block_all: IP白名单是否禁止所有Ip接入。is_enable为false时，无法修改此值。此值也只能单独更新。
+        :type is_block_all: bool
         :param ip_total_count: 策略总数。
         :type ip_total_count: int
         :param policy_id: 策略id。
@@ -63,6 +71,8 @@ class AccessPolicyDetailInfo:
         self._blacklist_type = None
         self._access_control_type = None
         self._ip_list = None
+        self._is_enable = None
+        self._is_block_all = None
         self._ip_total_count = None
         self._policy_id = None
         self._create_time = None
@@ -76,6 +86,10 @@ class AccessPolicyDetailInfo:
             self.access_control_type = access_control_type
         if ip_list is not None:
             self.ip_list = ip_list
+        if is_enable is not None:
+            self.is_enable = is_enable
+        if is_block_all is not None:
+            self.is_block_all = is_block_all
         if ip_total_count is not None:
             self.ip_total_count = ip_total_count
         if policy_id is not None:
@@ -87,7 +101,7 @@ class AccessPolicyDetailInfo:
     def policy_name(self):
         r"""Gets the policy_name of this AccessPolicyDetailInfo.
 
-        策略名
+        策略名。
 
         :return: The policy_name of this AccessPolicyDetailInfo.
         :rtype: str
@@ -98,7 +112,7 @@ class AccessPolicyDetailInfo:
     def policy_name(self, policy_name):
         r"""Sets the policy_name of this AccessPolicyDetailInfo.
 
-        策略名
+        策略名。
 
         :param policy_name: The policy_name of this AccessPolicyDetailInfo.
         :type policy_name: str
@@ -170,6 +184,50 @@ class AccessPolicyDetailInfo:
         :type ip_list: list[:class:`huaweicloudsdkworkspace.v2.IpInfo`]
         """
         self._ip_list = ip_list
+
+    @property
+    def is_enable(self):
+        r"""Gets the is_enable of this AccessPolicyDetailInfo.
+
+        IP白名单是否生效。只能单独更新，此值的优先级最高，传此值只修改该策略是否生效。
+
+        :return: The is_enable of this AccessPolicyDetailInfo.
+        :rtype: bool
+        """
+        return self._is_enable
+
+    @is_enable.setter
+    def is_enable(self, is_enable):
+        r"""Sets the is_enable of this AccessPolicyDetailInfo.
+
+        IP白名单是否生效。只能单独更新，此值的优先级最高，传此值只修改该策略是否生效。
+
+        :param is_enable: The is_enable of this AccessPolicyDetailInfo.
+        :type is_enable: bool
+        """
+        self._is_enable = is_enable
+
+    @property
+    def is_block_all(self):
+        r"""Gets the is_block_all of this AccessPolicyDetailInfo.
+
+        IP白名单是否禁止所有Ip接入。is_enable为false时，无法修改此值。此值也只能单独更新。
+
+        :return: The is_block_all of this AccessPolicyDetailInfo.
+        :rtype: bool
+        """
+        return self._is_block_all
+
+    @is_block_all.setter
+    def is_block_all(self, is_block_all):
+        r"""Sets the is_block_all of this AccessPolicyDetailInfo.
+
+        IP白名单是否禁止所有Ip接入。is_enable为false时，无法修改此值。此值也只能单独更新。
+
+        :param is_block_all: The is_block_all of this AccessPolicyDetailInfo.
+        :type is_block_all: bool
+        """
+        self._is_block_all = is_block_all
 
     @property
     def ip_total_count(self):

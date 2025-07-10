@@ -36,7 +36,7 @@ class ListPoolDesktopsDetailResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param pool_desktops: 池桌面详情
+        :param pool_desktops: 池桌面详情。
         :type pool_desktops: list[:class:`huaweicloudsdkworkspace.v2.PoolDesktopsDetailInfo`]
         :param total_count: 桌面总数。
         :type total_count: int
@@ -67,7 +67,7 @@ class ListPoolDesktopsDetailResponse(SdkResponse):
     def pool_desktops(self):
         r"""Gets the pool_desktops of this ListPoolDesktopsDetailResponse.
 
-        池桌面详情
+        池桌面详情。
 
         :return: The pool_desktops of this ListPoolDesktopsDetailResponse.
         :rtype: list[:class:`huaweicloudsdkworkspace.v2.PoolDesktopsDetailInfo`]
@@ -78,7 +78,7 @@ class ListPoolDesktopsDetailResponse(SdkResponse):
     def pool_desktops(self, pool_desktops):
         r"""Sets the pool_desktops of this ListPoolDesktopsDetailResponse.
 
-        池桌面详情
+        池桌面详情。
 
         :param pool_desktops: The pool_desktops of this ListPoolDesktopsDetailResponse.
         :type pool_desktops: list[:class:`huaweicloudsdkworkspace.v2.PoolDesktopsDetailInfo`]

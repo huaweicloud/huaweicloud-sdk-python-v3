@@ -31,9 +31,9 @@ class ModifyDesktopAttributesReqDesktop:
 
         The model defined in huaweicloud sdk
 
-        :param computer_name: 桌面名
+        :param computer_name: 桌面名。
         :type computer_name: str
-        :param self_backup_management: 是否开启快照的操作类型,\&quot;0\&quot;:关闭 \&quot;1\&quot;:开启
+        :param self_backup_management: 是否开启快照的操作类型,\&quot;0\&quot;:关闭 \&quot;1\&quot;:开启。
         :type self_backup_management: str
         """
         
@@ -52,7 +52,7 @@ class ModifyDesktopAttributesReqDesktop:
     def computer_name(self):
         r"""Gets the computer_name of this ModifyDesktopAttributesReqDesktop.
 
-        桌面名
+        桌面名。
 
         :return: The computer_name of this ModifyDesktopAttributesReqDesktop.
         :rtype: str
@@ -63,7 +63,7 @@ class ModifyDesktopAttributesReqDesktop:
     def computer_name(self, computer_name):
         r"""Sets the computer_name of this ModifyDesktopAttributesReqDesktop.
 
-        桌面名
+        桌面名。
 
         :param computer_name: The computer_name of this ModifyDesktopAttributesReqDesktop.
         :type computer_name: str
@@ -74,7 +74,7 @@ class ModifyDesktopAttributesReqDesktop:
     def self_backup_management(self):
         r"""Gets the self_backup_management of this ModifyDesktopAttributesReqDesktop.
 
-        是否开启快照的操作类型,\"0\":关闭 \"1\":开启
+        是否开启快照的操作类型,\"0\":关闭 \"1\":开启。
 
         :return: The self_backup_management of this ModifyDesktopAttributesReqDesktop.
         :rtype: str
@@ -85,7 +85,7 @@ class ModifyDesktopAttributesReqDesktop:
     def self_backup_management(self, self_backup_management):
         r"""Sets the self_backup_management of this ModifyDesktopAttributesReqDesktop.
 
-        是否开启快照的操作类型,\"0\":关闭 \"1\":开启
+        是否开启快照的操作类型,\"0\":关闭 \"1\":开启。
 
         :param self_backup_management: The self_backup_management of this ModifyDesktopAttributesReqDesktop.
         :type self_backup_management: str

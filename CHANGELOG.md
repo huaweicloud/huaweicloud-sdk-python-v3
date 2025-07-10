@@ -1,3 +1,1312 @@
+# 3.1.156 2025-07-10
+
+### HuaweiCloud SDK CDN
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the following APIs:
+    - `ListRuleDetails`
+    - `CreateRuleNew`
+    - `UpdateRuleNew`
+    - `DeleteRuleNew`
+    - `BatchUpdateRuleStatus`
+    - `UpdateFullRule`
+    - `ListShareCacheGroups`
+    - `CreateShareCacheGroups`
+    - `UpdateShareCacheGroups`
+    - `DeleteShareCacheGroups`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK Cloudtest
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the API `ShowEtlData`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK COC
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the following APIs:
+    - `ListTickets`
+    - `ListSubTickets`
+    - `ListTicketOperationHistories`
+    - `ExecuteTicketAction`
+    - `ShowTicketInfo`
+    - `UpdateTicket`
+    - `DeleteTicketInfo`
+    - `DownloadAttachment`
+    - `UpdateChange`
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateCocIncident**
+    - changes of request param
+      - `+ incident_ownership`
+      - `+ start_time`
+
+### HuaweiCloud SDK CodeArtsBuild
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the APIs `ShowJobPipelineInfo`, `StopTheJob`, `UpdateKeystorePermission`, `AddKeystorePermission`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListJob**
+    - changes of request param
+      - `+ page_index`
+      - `+ page_size`
+      - `+ search`
+      - `+ sort_field`
+      - `+ sort_order`
+      - `+ creator_id`
+      - `+ build_status`
+
+### HuaweiCloud SDK DDM
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the API `UpdateInstancePort`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DWR
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListStores**
+    - changes of response param
+      - `* data: list<DescribeStoreData> -> object<ListStoreData>`
+  - **SearchEntities**
+    - changes of response param
+      - `+ data.entities`
+      - `* data: map<string, entities> -> object<EntitiesData>`
+  - **QueryEntities**
+    - changes of response param
+      - `+ data.entities`
+      - `* data: map<string, entities> -> object<EntitiesData>`
+  - **UpsertEntities**
+    - changes of response param
+      - `* data: object<UpsertEntitiesResponseData> -> object<UpsertEntitiesData>`
+  - **HybridSearch**
+    - changes of response param
+      - `+ data.entities`
+      - `* data: map<string, entities> -> object<EntitiesData>`
+  - **InsertEntities**
+    - changes of response param
+      - `* data: object<InsertEntitiesResponseData> -> object<InsertEntitiesData>`
+  - **DescribeCollection**
+    - changes of response param
+      - `+ data.load_state`
+      - `- data.load_status`
+      - `+ data.fields.dim`
+      - `+ data.fields.max_length`
+      - `+ data.fields.max_capacity`
+  - **DescribeIndex**
+    - changes of response param
+      - `* data: object<DescribeIndexResposeData> -> object<DescribeIndexData>`
+  - **GetProgress**
+    - changes of response param
+      - `* data: object<GetIndexProgressResponseData> -> object<GetProgressData>`
+  - **DescribeStore**
+    - changes of response param
+      - `* data: object<DescribeStoreData> -> object<StoreData>`
+
+### HuaweiCloud SDK ECS
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListFlavors**
+    - changes of request param
+      - `+ limit`
+      - `+ marker`
+  - **ShowServer**
+    - changes of response param
+      - `+ server.network_interfaces`
+  - **ListServersDetails**
+    - changes of response param
+      - `+ servers.network_interfaces`
+  - **ListRecycleBinServers**
+    - changes of response param
+      - `+ servers.network_interfaces`
+  - **CreateServers**
+    - changes of request param
+      - `+ server.enclave_options`
+  - **CreatePostPaidServers**
+    - changes of request param
+      - `+ server.enclave_options`
+
+### HuaweiCloud SDK eiHealth
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the APIs `ListDrugModelResource`, `CreateDrugModelResource`, `DeleteDrugModelResource`, `DownloadPublicData`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK MetaStudio
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the API `ListSmartChatJob`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowSmartChatJob**
+    - changes of response param
+      - `+ job_finish_reason`
+      - `+ is_pool_mode`
+  - **ShowAsyncTtsJob**
+    - changes of response param
+      - `+ audio_srt_file_url`
+      - `+ audio_action_file_url`
+  - **CreateAsyncTtsJob**
+    - changes of request param
+      - `+ priority`
+  - **ListHotWords**
+    - changes of request param
+      - `+ hot_words_type`
+      - `+ language: enum value [ESP,por,Arabic,Thai]`
+    - changes of response param
+      - `+ data.hot_words_type: enum value [MOBVOI]`
+  - **CreateHotWords**
+    - changes of request param
+      - `+ mobvoi_hot_words`
+      - `+ hot_words_type: enum value [MOBVOI]`
+    - changes of response param
+      - `+ hot_words_type: enum value [MOBVOI]`
+  - **ShowHotWords**
+    - changes of response param
+      - `+ hot_words_type: enum value [MOBVOI]`
+  - **UpdateHotWords**
+    - changes of request param
+      - `+ mobvoi_hot_words`
+      - `+ hot_words_type: enum value [MOBVOI]`
+    - changes of response param
+      - `+ hot_words_type: enum value [MOBVOI]`
+  - **ShowAsset**
+    - changes of response param
+      - `- asset_extra_meta.human_model_meta`
+      - `- asset_extra_meta.animation_meta`
+      - `- asset_extra_meta.scene_meta`
+      - `+ asset_extra_meta.human_model_2d_meta.voice_asset_id`
+  - **UpdateDigitalAsset**
+    - changes of request param
+      - `- asset_extra_meta.human_model_meta`
+      - `- asset_extra_meta.animation_meta`
+      - `- asset_extra_meta.scene_meta`
+      - `+ asset_extra_meta.human_model_2d_meta.voice_asset_id`
+    - changes of response param
+      - `- asset_extra_meta.human_model_meta`
+      - `- asset_extra_meta.animation_meta`
+      - `- asset_extra_meta.scene_meta`
+      - `+ asset_extra_meta.human_model_2d_meta.voice_asset_id`
+  - **CreateDigitalAsset**
+    - changes of request param
+      - `- asset_extra_meta.human_model_meta`
+      - `- asset_extra_meta.animation_meta`
+      - `- asset_extra_meta.scene_meta`
+      - `+ asset_extra_meta.human_model_2d_meta.voice_asset_id`
+  - **ListAssets**
+    - changes of request param
+      - `- render_engine`
+    - changes of response param
+      - `- assets.asset_extra_meta.human_model_meta`
+      - `- assets.asset_extra_meta.animation_meta`
+      - `- assets.asset_extra_meta.scene_meta`
+      - `+ assets.asset_extra_meta.human_model_2d_meta.voice_asset_id`
+
+### HuaweiCloud SDK Octopus
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the following APIs:
+    - `DeleteSimBatches`
+    - `ListSimAlgorithms`
+    - `CreateSimAlgorithms`
+    - `ListSimAlgorithmImages`
+    - `CreateSimAlgorithmImages`
+    - `ShowSimAlgorithmImage`
+    - `DeleteSimAlgorithmImages`
+    - `UpdateSimAlgorithmImages`
+    - `ListSimExtensions`
+    - `CreateSimExtensions`
+    - `ShowSimExtension`
+    - `DeleteSimExtensions`
+    - `UpdateSimExtensions`
+    - `ShowSimAlgorithm`
+    - `DeleteSimAlgorithms`
+    - `UpdateSimAlgorithms`
+    - `ListSimBatchConfigs`
+    - `CreateSimBatchConfigs`
+    - `ShowSimBatchConfig`
+    - `DeleteSimBatchConfigs`
+    - `UpdateSimBatchConfigsExtensions`
+    - `ListSimBatches`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK ProjectMan
+
+- _API Version_
+  - V4
+- _Features_
+  - Support the following APIs:
+    - `ListIssueFields`
+    - `ShowIssueDetail`
+    - `ListIssueStatues`
+    - `TransferWorkItemFlow`
+    - `ShowWorkflowTemplate`
+    - `ShowIssueConfigFields`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK RDS
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the APIs `TransferBackup`, `ListBackupTransfers`, `ShowTransferPolicy`, `SetTransferPolicy`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListJobInfo**
+    - changes of response param
+      - `+ job.entities.instance`
+      - `+ job.entities.resource_ids`
+      - `+ job.entities.volume`
+      - `+ job.entities.public_ip`
+      - `+ job.entities.switch_strategy`
+
+### HuaweiCloud SDK RGC
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the following APIs:
+    - `ListControls`
+    - `ListControlViolations`
+    - `ShowControl`
+    - `ListControlsForAccount`
+    - `ShowComplianceStatusForAccount`
+    - `ShowComplianceStatusForOrganizationalUnit`
+    - `ShowControlsForOrganizationalUnit`
+    - `ShowControlsForAccount`
+    - `ListConfigRuleCompliances`
+    - `ListExternalConfigRuleCompliances`
+    - `ListDriftDetails`
+    - `ReRegisterOrganizationalUnit`
+    - `DeregisterOrganizationalUnit`
+    - `ListOperation`
+    - `ShowManagedOrganizationalUnit`
+    - `DeleteManagedOrganizationalUnits`
+    - `ListManagedOrganizationalUnits`
+    - `CreateManagedOrganizationalUnit`
+    - `EnrollAccount`
+    - `UnEnrollAccount`
+    - `UpdateManagedAccount`
+    - `ShowManagedAccountTemplate`
+    - `ListManagedAccountsForParent`
+    - `ShowManagedCoreAccount`
+    - `ShowHomeRegion`
+    - `CheckLaunch`
+    - `SetupLandingZone`
+    - `DeleteLandingZone`
+    - `ShowLandingZoneStatus`
+    - `ShowAvailableUpdates`
+    - `ShowLandingZoneConfiguration`
+    - `ShowLandingZoneIdentityCenter`
+    - `ShowTemplateDeployParams`
+    - `CreateTemplate`
+    - `DeleteTemplate`
+    - `ListPredefinedTemplates`
+    - `CreateBestPracticeDetect`
+    - `ShowBestPracticeStatus`
+    - `ShowBestPracticeOverview`
+    - `ShowBestPracticeDetails`
+    - `ListManagedAccounts`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK WAF
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the following APIs:
+    - `ListTopDomains`
+    - `ListAttackActionTypes`
+    - `ShowPolicyGeoipMap`
+    - `ListWebBasicProtectionRules`
+    - `ListInstanceTags`
+    - `ShowHostStatus`
+    - `ListSecurityReportSubscriptions`
+    - `ConfirmUserBundle`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK Workspace
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the APIs `ShowRuleRestriction`, `SetRuleRestriction`, `ListUserEventsLtsConfigurations`, `SetUserEventsLtsConfigurations`
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the APIs `ListDesktopsStatus`, `ListDesktopDetachInfo`, `ListHistoryOnlineInfo`
+  - **ExecuteScriptOrCommand**
+    - changes of request param
+      - `- command`
+      - `- command_type`
+      - `- pre_start`
+      - `- post_finish`
+      - `- resource_group_type`
+      - `- resource_group_id`
+  - **ShowScriptRecordDetail**
+    - changes of response param
+      - `- command_content`
+      - `- command_type`
+  - **ExpandDesktopPool**
+    - changes of request param
+      - `- Service-Transaction-Id`
+      - `- order_id`
+    - changes of response param
+      - `- maxProvisionTime`
+      - `- getJobEndpoint`
+      - `- periodicQueryTime`
+      - `- cbcJobId`
+      - `- minProvisionTime`
+  - **RebuildDesktopPool**
+    - changes of request param
+      - `- Service-Transaction-Id`
+    - changes of response param
+      - `- get_job_endpoint`
+      - `- min_provision_time`
+      - `- periodic_query_time`
+      - `- max_provision_time`
+  - **BatchLogoffDesktops**
+    - changes of request param
+      - `- Service-Transaction-Id`
+  - **BatchRebuildDesktopsSystemDisk**
+    - changes of request param
+      - `- Service-Transaction-Id`
+    - changes of response param
+      - `- get_job_endpoint`
+      - `- min_provision_time`
+      - `- periodic_query_time`
+      - `- max_provision_time`
+  - **UpdateSubnetBandwidth**
+    - changes of request param
+      - `- Service-Transaction-Id`
+      - `- order_id`
+    - changes of response param
+      - `- maxProvisionTime`
+      - `- getJobEndpoint`
+      - `- periodicQueryTime`
+      - `- minProvisionTime`
+  - **AddDesktopSubResources**
+    - changes of request param
+      - `- Service-Transaction-Id`
+    - changes of response param
+      - `- maxProvisionTime`
+      - `- getJobEndpoint`
+      - `- periodicQueryTime`
+      - `- cbcJobId`
+      - `- minProvisionTime`
+  - **DeleteDesktopSubResources**
+    - changes of request param
+      - `- Service-Transaction-Id`
+    - changes of response param
+      - `- maxProvisionTime`
+      - `- getJobEndpoint`
+      - `- periodicQueryTime`
+      - `- cbcJobId`
+      - `- minProvisionTime`
+  - **ListLoginState**
+    - changes of response param
+      - `- stop_num`
+  - **DeleteDesktopVolumes**
+    - changes of request param
+      - `- Service-Transaction-Id`
+  - **ExpandDesktopVolume**
+    - changes of request param
+      - `- Service-Transaction-Id`
+      - `- order_id`
+    - changes of response param
+      - `- bssJobId`
+  - **ListHistoryOnlineInfoNew**
+    - changes of request param
+      - `- client_hour`
+  - **ShowScreenRecord**
+    - changes of response param
+      - `+ file_directory`
+      - `+ policy_id`
+      - `+ obs_bucket`
+      - `+ event_file_sha256`
+      - `+ video_file_sha256`
+  - **ShowShareSpaceConfig**
+    - changes of response param
+      - `- if_show_share_space`
+  - **CreateScript**
+    - changes of request param
+      - `+ type: enum value [POWERSHELL,BAT,SHELL]`
+  - **ListScriptRecords**
+    - changes of response param
+      - `- script_records.command_content`
+      - `- script_records.command_type`
+  - **ListScriptTasks**
+    - changes of response param
+      - `- script_tasks.command_content`
+      - `- script_tasks.command_type`
+      - `- script_tasks.resource_group_id`
+      - `- script_tasks.resource_group_type`
+      - `- script_tasks.pre_start`
+      - `- script_tasks.post_finish`
+  - **ShowDesktopPoolDetail**
+    - changes of response param
+      - `- on_demand_desktop_num`
+      - `- product.cpu_desc`
+      - `- product.gpu_desc`
+      - `- product.sub_product_list`
+      - `- root_volume.cluster_id`
+      - `* security_groups: list<SecurityGroup> -> list<SecurityGroupInfo>`
+  - **ResizeDesktopPool**
+    - changes of request param
+      - `- Service-Transaction-Id`
+      - `+ flavor_id`
+      - `- order_id`
+      - `- extend_param`
+    - changes of response param
+      - `- maxProvisionTime`
+      - `- getJobEndpoint`
+      - `- periodicQueryTime`
+      - `- error_policy`
+      - `- cbcJobId`
+      - `- minProvisionTime`
+  - **AddDesktopPoolVolumes**
+    - changes of request param
+      - `- Service-Transaction-Id`
+      - `- order_id`
+      - `- volumes.cluster_id`
+    - changes of response param
+      - `- error_msg`
+      - `- maxProvisionTime`
+      - `- getJobEndpoint`
+      - `- periodicQueryTime`
+      - `- cbcJobId`
+      - `- error_code`
+      - `- minProvisionTime`
+  - **DeleteDesktopPoolVolumes**
+    - changes of request param
+      - `- volumes.cluster_id`
+  - **ExpandDesktopPoolVolumes**
+    - changes of request param
+      - `- Service-Transaction-Id`
+      - `- order_id`
+      - `- volumes.cluster_id`
+    - changes of response param
+      - `- error_msg`
+      - `- maxProvisionTime`
+      - `- getJobEndpoint`
+      - `- periodicQueryTime`
+      - `- cbcJobId`
+      - `- error_code`
+      - `- minProvisionTime`
+  - **BatchRunDesktops**
+    - changes of request param
+      - `- host_id`
+      - `- project_id`
+    - changes of response param
+      - `- error_msg`
+      - `- error_code`
+  - **ResizeDesktop**
+    - changes of request param
+      - `- Service-Transaction-Id`
+      - `+ auto_placement`
+      - `- flavor_id`
+      - `- dedicated_host_id`
+      - `- order_id`
+      - `- extend_param`
+    - changes of response param
+      - `- error_msg`
+      - `- maxProvisionTime`
+      - `- getJobEndpoint`
+      - `- periodicQueryTime`
+      - `- error_policy`
+      - `- cbcJobId`
+      - `- error_code`
+      - `- minProvisionTime`
+      - `- jobs.error_code`
+      - `- jobs.error_msg`
+  - **ListDesktopActions**
+    - changes of response param
+      - `- error_msg`
+      - `- error_code`
+  - **ApplyDesktopsInternet**
+    - changes of request param
+      - `- Service-Transaction-Id`
+      - `- inst_info_ids`
+      - `- order_id`
+    - changes of response param
+      - `- maxProvisionTime`
+      - `- getJobEndpoint`
+      - `- periodicQueryTime`
+      - `- minProvisionTime`
+  - **ApplySubnetBandwidth**
+    - changes of request param
+      - `- Service-Transaction-Id`
+      - `- order_id`
+    - changes of response param
+      - `- maxProvisionTime`
+      - `- getJobEndpoint`
+      - `- periodicQueryTime`
+      - `- minProvisionTime`
+  - **CreateChangeOrder**
+    - changes of request param
+      - `- is_subscribe`
+      - `- flavor_id`
+      - `- cloud_service_console_url`
+  - **CreateDesktopBatchOrder**
+    - changes of request param
+      - `- resize_param.extend_param`
+  - **CreateDesktopPoolChangeOrder**
+    - changes of request param
+      - `- resize_param.extend_param`
+  - **CreateSubnetBandwidthChangeOrder**
+    - changes of request param
+      - `- cloud_service_console_url`
+  - **ListScheduledTasksRecords**
+    - changes of response param
+      - `+ tasks_records.life_cycle_type`
+  - **ListDesktopsStatistics**
+    - changes of response param
+      - `- stop_num`
+      - `- login_state_statistics.stop_num`
+  - **AddDesktopVolumes**
+    - changes of request param
+      - `- Service-Transaction-Id`
+      - `- order_id`
+      - `- volumes.cluster_id`
+  - **ExpandVolumes**
+    - changes of request param
+      - `- Service-Transaction-Id`
+      - `- desktop_type`
+      - `- desktop_volumes_expansion.order_id`
+    - changes of response param
+      - `- maxProvisionTime`
+      - `- getJobEndpoint`
+      - `- periodicQueryTime`
+      - `- minProvisionTime`
+  - **ListUsersOfGroup**
+    - changes of request param
+      - `+ enterprise_project_id`
+    - changes of response param
+      - `+ users.enterprise_project_id`
+  - **ListImages**
+    - changes of response param
+      - `- images.os_platform`
+  - **UpdateAccessPolicy**
+    - changes of request param
+      - `+ is_enable`
+      - `+ is_block_all`
+  - **ListProducts**
+    - changes of request param
+      - `- flavor_id`
+      - `- deh_product_id`
+      - `- is_deh`
+      - `- products_range`
+    - changes of response param
+      - `- products.sub_product_list`
+      - `- products.series_type`
+      - `- products.default_desktop_num`
+      - `- products.max_apply_desktop_num`
+  - **ListScreenRecords**
+    - changes of response param
+      - `+ file_directory`
+      - `+ policy_id`
+      - `+ obs_bucket`
+      - `+ event_file_sha256`
+      - `+ video_file_sha256`
+      - `+ screen_records.policy_id`
+      - `+ screen_records.obs_bucket`
+      - `+ screen_records.file_directory`
+      - `+ screen_records.video_file_sha256`
+      - `+ screen_records.event_file_sha256`
+      - `* screen_records: list<QueryScreenRecordDetailRsp> -> list<ScreenRecordDetail>`
+  - **CreateDesktopUser**
+    - changes of request param
+      - `+ enterprise_project_id`
+      - `+ user_info_map`
+  - **ListUsers**
+    - changes of request param
+      - `+ enterprise_project_id`
+      - `- user_email`
+    - changes of response param
+      - `+ users.enterprise_project_id`
+      - `+ users.user_info_map`
+  - **UpdateUserInfo**
+    - changes of request param
+      - `+ user_info_map`
+      - `- group_ids`
+      - `- alias_name`
+  - **BatchCreateUsers**
+    - changes of request param
+      - `+ users.enterprise_project_id`
+      - `+ users.user_info_map`
+  - **ListLoginRecordsNew**
+    - changes of response param
+      - `+ records.source_ip`
+      - `+ records.public_ip`
+  - **ListUserEvents**
+    - changes of request param
+      - `+ resource_id`
+      - `+ resource_name`
+      - `- event_trace_id`
+      - `* start_time: optional -> required`
+      - `* end_time: optional -> required`
+    - changes of response param
+      - `+ items.client_version`
+      - `+ items.action_type`
+  - **CreateAgencies**
+    - changes of request param
+      - `+ scene: enum value [CLOUD_STORAGE,SCREEN_RECORD]`
+  - **ListAgencies**
+    - changes of request param
+      - `+ scene: enum value [CLOUD_STORAGE]`
+  - **CreateDesktopPool**
+    - changes of request param
+      - `- Service-Transaction-Id`
+      - `+ flavor_id`
+      - `- order_id`
+      - `- root_volume.cluster_id`
+    - changes of response param
+      - `- maxProvisionTime`
+      - `- getJobEndpoint`
+      - `- periodicQueryTime`
+      - `- cbcJobId`
+      - `- minProvisionTime`
+  - **ListDesktopPools**
+    - changes of response param
+      - `- on_demand_desktop_num`
+      - `- desktop_pools.on_demand_desktop_num`
+      - `- desktop_pools.product.cpu_desc`
+      - `- desktop_pools.product.gpu_desc`
+      - `- desktop_pools.product.sub_product_list`
+      - `- desktop_pools.root_volume.cluster_id`
+      - `* desktop_pools.security_groups: list<SecurityGroup> -> list<SecurityGroupInfo>`
+  - **CreateDesktop**
+    - changes of request param
+      - `- Service-Transaction-Id`
+      - `- flavor_id`
+      - `- share_resource_sku`
+      - `- enterprise_id`
+      - `- order_id`
+      - `- ou_name`
+      - `- vpc_id`
+      - `- subnet_ids`
+      - `- scheduler_hints`
+      - `- desktop_isv`
+      - `- access_mode`
+      - `- dedicated_subnets`
+      - `- adn`
+      - `- exclusive_host_id`
+      - `- root_resource_ids`
+      - `- inst_info_ids`
+      - `- root_volume.cluster_id`
+      - `- nics.ip_address`
+      - `- desktops.nics`
+      - `- desktops.ou_name`
+    - changes of response param
+      - `- maxProvisionTime`
+      - `- getJobEndpoint`
+      - `- periodicQueryTime`
+      - `- cbcJobId`
+      - `- minProvisionTime`
+  - **ListDesktops**
+    - changes of request param
+      - `- sids`
+      - `- site_id`
+    - changes of response param
+      - `- desktop_infos`
+      - `+ desktops.domain_id`
+      - `+ desktops.project_id`
+  - **AttachInstances**
+    - changes of request param
+      - `- Service-Transaction-Id`
+      - `- os_type`
+      - `- order_id`
+      - `- enterprise_project_id`
+    - changes of response param
+      - `- get_job_endpoint`
+      - `- min_provision_time`
+      - `- periodic_query_time`
+      - `- max_provision_time`
+  - **ShowDesktopNetwork**
+    - changes of response param
+      - `* network_infos.security_groups: list<SecurityGroup> -> list<SecurityGroupInfo>`
+  - **ListPorts**
+    - changes of response param
+      - `+ ports.device_id`
+  - **AddVolumes**
+    - changes of request param
+      - `- Service-Transaction-Id`
+      - `- desktop_type`
+      - `- desktop_volumes.order_id`
+      - `- desktop_volumes.volumes.cluster_id`
+  - **ShowJob**
+    - changes of response param
+      - `- sub_jobs.success_result`
+  - **ListItaSubJobs**
+    - changes of response param
+      - `- jobs.success_result`
+  - **ListAccessPolicies**
+    - changes of response param
+      - `+ policies.is_enable`
+      - `+ policies.is_block_all`
+  - **CreateAccessPolicy**
+    - changes of request param
+      - `+ policy.is_enable`
+      - `+ policy.is_block_all`
+  - **ShowAssistAuthConfig**
+    - changes of response param
+      - `- radius_config_info`
+      - `- radius_gateway_config_info`
+  - **UpdateAssistAuthMethodConfig**
+    - changes of request param
+      - `- radius_auth_config`
+      - `- radius_gateway_config`
+  - **ShowQuotas**
+    - changes of request param
+      - `- type`
+  - **ListSiteConfigs**
+    - changes of response param
+      - `- site_infos.agent_info`
+  - **ListWorkspaces**
+    - changes of response param
+      - `+ is_global`
+      - `- assist_auth_config_info`
+      - `- is_multi_vpc`
+      - `- is_config_nat_mapping`
+      - `- auth_type`
+      - `- internet_access_address_ipv6`
+      - `- dedicated_access_address_ipv6`
+      - `- project_resource_type`
+      - `- third_gateway_info`
+      - `- dc_vnc_vpcep_id`
+  - **UpdateWorkspace**
+    - changes of request param
+      - `- operate_type`
+      - `- auth_type`
+      - `- third_gateway_info`
+      - `- vpc_config_infos`
+      - `- is_support_ipv6`
+      - `- apply_dedicated_standby_network_param.site_id`
+  - **ApplyWorkspace**
+    - changes of request param
+      - `- auth_type`
+      - `- third_gateway_info`
+      - `- availability_zone`
+      - `- publicip_type`
+      - `- assist_auth_config`
+      - `- site_configs`
+      - `- enterprise_project_id`
+  - **ListPoolDesktopsDetail**
+    - changes of response param
+      - `- pool_desktops.join_domain`
+      - `- pool_desktops.deh_id`
+      - `- pool_desktops.platform_kind`
+      - `- pool_desktops.need_apply_adn`
+      - `- pool_desktops.desktop_isv`
+      - `- pool_desktops.creation_type`
+      - `* pool_desktops.security_groups: list<SecurityGroup> -> list<SecurityGroupInfo>`
+      - `- pool_desktops.root_volume.encrypt_flag`
+      - `- pool_desktops.root_volume.kms_key`
+      - `- pool_desktops.root_volume.key_alias`
+      - `- pool_desktops.root_volume.kms_grant_id`
+      - `- pool_desktops.root_volume.cluster_id`
+      - `- pool_desktops.product.cpu_desc`
+      - `- pool_desktops.product.gpu_desc`
+      - `- pool_desktops.product.sub_product_list`
+  - **ShowDesktopDetail**
+    - changes of response param
+      - `- desktop.join_domain`
+      - `- desktop.deh_id`
+      - `- desktop.platform_kind`
+      - `- desktop.need_apply_adn`
+      - `- desktop.desktop_isv`
+      - `- desktop.creation_type`
+      - `* desktop.security_groups: list<SecurityGroup> -> list<SecurityGroupInfo>`
+      - `- desktop.root_volume.encrypt_flag`
+      - `- desktop.root_volume.kms_key`
+      - `- desktop.root_volume.key_alias`
+      - `- desktop.root_volume.kms_grant_id`
+      - `- desktop.root_volume.cluster_id`
+      - `- desktop.product.cpu_desc`
+      - `- desktop.product.gpu_desc`
+      - `- desktop.product.sub_product_list`
+  - **ListDesktopsDetail**
+    - changes of request param
+      - `- sids`
+      - `- login_status`
+      - `- fuzzy_query`
+    - changes of response param
+      - `- desktops.join_domain`
+      - `- desktops.deh_id`
+      - `- desktops.platform_kind`
+      - `- desktops.need_apply_adn`
+      - `- desktops.desktop_isv`
+      - `- desktops.creation_type`
+      - `* desktops.security_groups: list<SecurityGroup> -> list<SecurityGroupInfo>`
+      - `- desktops.root_volume.encrypt_flag`
+      - `- desktops.root_volume.kms_key`
+      - `- desktops.root_volume.key_alias`
+      - `- desktops.root_volume.kms_grant_id`
+      - `- desktops.root_volume.cluster_id`
+      - `- desktops.product.cpu_desc`
+      - `- desktops.product.gpu_desc`
+      - `- desktops.product.sub_product_list`
+  - **ShowDesktopNetworks**
+    - changes of response param
+      - `* networks.network_infos.security_groups: list<SecurityGroup> -> list<SecurityGroupInfo>`
+  - **CreateDesktopOrder**
+    - changes of request param
+      - `- order_id`
+      - `- promotion_id`
+      - `- promotion_plan_id`
+      - `- promotion_info`
+      - `- hour_package_resources.cloud_service_console_url`
+      - `- hour_package_resources.create_desktops.flavor_id`
+      - `- hour_package_resources.create_desktops.share_resource_sku`
+      - `- hour_package_resources.create_desktops.enterprise_id`
+      - `- hour_package_resources.create_desktops.order_id`
+      - `- hour_package_resources.create_desktops.ou_name`
+      - `- hour_package_resources.create_desktops.vpc_id`
+      - `- hour_package_resources.create_desktops.subnet_ids`
+      - `- hour_package_resources.create_desktops.scheduler_hints`
+      - `- hour_package_resources.create_desktops.desktop_isv`
+      - `- hour_package_resources.create_desktops.access_mode`
+      - `- hour_package_resources.create_desktops.dedicated_subnets`
+      - `- hour_package_resources.create_desktops.adn`
+      - `- hour_package_resources.create_desktops.exclusive_host_id`
+      - `- hour_package_resources.create_desktops.root_resource_ids`
+      - `- hour_package_resources.create_desktops.inst_info_ids`
+      - `- hour_package_resources.create_desktops.root_volume.cluster_id`
+      - `- hour_package_resources.create_desktops.nics.ip_address`
+      - `- hour_package_resources.create_desktops.desktops.nics`
+      - `- hour_package_resources.create_desktops.desktops.ou_name`
+  - **ShowAuthConfig**
+    - changes of response param
+      - `- third_party_auth_config.is_cooperate_password`
+  - **UpdateAuthMethodConfig**
+    - changes of request param
+      - `- third_party_auth_config.is_cooperate_password`
+  - **CreateOrder**
+    - changes of request param
+      - `- order_id`
+      - `- promotion_id`
+      - `- promotion_plan_id`
+      - `- promotion_info`
+      - `- resources.deh_hosts`
+      - `- resources.cloud_service_console_url`
+      - `- resources.create_exclusive_hosts.order_id`
+      - `- resources.resize_exclusive_lites.host_id`
+      - `- resources.resize_exclusive_lites.order_id`
+      - `- resources.apply_subnet_bandwidth.order_id`
+      - `- resources.add_volumes.volumes.cluster_id`
+      - `- resources.create_desktops.flavor_id`
+      - `- resources.create_desktops.share_resource_sku`
+      - `- resources.create_desktops.enterprise_id`
+      - `- resources.create_desktops.order_id`
+      - `- resources.create_desktops.ou_name`
+      - `- resources.create_desktops.vpc_id`
+      - `- resources.create_desktops.subnet_ids`
+      - `- resources.create_desktops.scheduler_hints`
+      - `- resources.create_desktops.desktop_isv`
+      - `- resources.create_desktops.access_mode`
+      - `- resources.create_desktops.dedicated_subnets`
+      - `- resources.create_desktops.adn`
+      - `- resources.create_desktops.exclusive_host_id`
+      - `- resources.create_desktops.root_resource_ids`
+      - `- resources.create_desktops.inst_info_ids`
+      - `- resources.create_desktops.nics.ip_address`
+      - `- resources.create_desktops.desktops.nics`
+      - `- resources.create_desktops.desktops.ou_name`
+      - `+ resources.create_desktop_pool.flavor_id`
+      - `- resources.create_desktop_pool.order_id`
+      - `- resources.create_desktop_pool.root_volume.cluster_id`
+      - `- resources.subscribe_user_sharer.order_id`
+      - `- resources.subscribe_user_sharer.enterprise_project_id`
+      - `+ resources.subscribe_user_sharer.users.enterprise_project_id`
+      - `+ resources.subscribe_user_sharer.users.user_info_map`
+      - `- resources.attach_desktops.os_type`
+      - `- resources.attach_desktops.order_id`
+      - `- resources.attach_desktops.enterprise_project_id`
+  - **ListPoliciesOfPolicyGroup**
+    - changes of response param
+      - `+ policies.personalized_data_mgmt`
+      - `- policies.access_control`
+      - `- policies.bandwidth`
+      - `- policies.personalizedDataMgmt`
+      - `- policies.peripherals.usb_port_redirection.options.usb_redirection_mode: enum value [Classical mode,Common mode]`
+      - `- policies.peripherals.device_redirection.printer_redirection.options.universal_printer_driver: enum value [Default,HDP XPSDrv Driver,Universal Printing PCL 5,Universal Printing PCL 6,Universal Printing PS]`
+      - `- policies.peripherals.device_redirection.image_compression_level: enum value [none,low,medium,high,lossless,low-loss,medium-loss,high-loss]`
+      - `- policies.peripherals.usb_device_common.pcsc_smart_card_enable: enum value [Enable,Closed,Disable]`
+      - `- policies.audio.play_volume_ratio: enum value [Do Not Set Volume Ratio,Low,Middle,High]`
+      - `- policies.audio.record_volume_ratio: enum value [Do Not Set Volume Ratio,Low,Middle,High]`
+      - `- policies.audio.audio_transmission_mode: enum value [Real Time Transmission,Reliable Transmission]`
+      - `- policies.audio.play_classification: enum value [LossLess,Speech Call,Music Play,Automatic Identification]`
+      - `- policies.audio.play_quality: enum value [Low,Middle,High]`
+      - `- policies.audio.play_crc: enum value [Disable CRC,Enable CRC]`
+      - `- policies.audio.play_device_mode: enum value [Play Device In Shared Mode,Play Device In Exclusive Mode]`
+      - `- policies.audio.record_classification: enum value [LossLess,Speech Call,Music Record,Automatic Identification]`
+      - `- policies.audio.record_quality: enum value [Low,Middle,High]`
+      - `- policies.audio.record_crc: enum value [Disable CRC,Enable CRC]`
+      - `- policies.audio.record_device_mode: enum value [Record Device In Shared Mode,Record Device In Exclusive Mode]`
+      - `- policies.display.options.lossless_compression_mode: enum value [Basic Compression,Deep Compression]`
+      - `- policies.display.options.deep_compression_options.deep_compression_level: enum value [Compression grade 0,Compression grade 1,Compression grade 2,Compression grade 3,Compression grade 4,Compression grade 5,Compression grade 6,Compression grade 7,Compression grade 8,Compression grade 9]`
+      - `- policies.display.options.quality_bandwidth_first: enum value [Quality First,Bandwidth First]`
+      - `- policies.display.options.encoding_preset: enum value [Preset 1,Preset 2,Preset 3,Preset 4,Preset 5,Preset 6,Preset 7]`
+      - `- policies.display.duplicate_display_mode: enum value [One-to-One,One-to-Many]`
+      - `+ policies.record_audit.storage_type`
+      - `+ policies.record_audit.obs_bucket_source`
+      - `+ policies.record_audit.obs_bucket_name`
+      - `+ policies.record_audit.retention_duration`
+      - `+ policies.record_audit.rules.rule.app_filter_type`
+      - `+ policies.record_audit.rules.rule.app_white_list`
+      - `+ policies.record_audit.rules.rule.app_black_list`
+      - `+ policies.session.auto_lock_start_time`
+      - `+ policies.session.auto_lock_end_time`
+  - **UpdatePoliciesOfPolicyGroup**
+    - changes of request param
+      - `+ policies.personalized_data_mgmt`
+      - `- policies.access_control`
+      - `- policies.bandwidth`
+      - `- policies.personalizedDataMgmt`
+      - `- policies.peripherals.usb_port_redirection.options.usb_redirection_mode: enum value [Classical mode,Common mode]`
+      - `- policies.peripherals.device_redirection.printer_redirection.options.universal_printer_driver: enum value [Default,HDP XPSDrv Driver,Universal Printing PCL 5,Universal Printing PCL 6,Universal Printing PS]`
+      - `- policies.peripherals.device_redirection.image_compression_level: enum value [none,low,medium,high,lossless,low-loss,medium-loss,high-loss]`
+      - `- policies.peripherals.usb_device_common.pcsc_smart_card_enable: enum value [Enable,Closed,Disable]`
+      - `- policies.audio.play_volume_ratio: enum value [Do Not Set Volume Ratio,Low,Middle,High]`
+      - `- policies.audio.record_volume_ratio: enum value [Do Not Set Volume Ratio,Low,Middle,High]`
+      - `- policies.audio.audio_transmission_mode: enum value [Real Time Transmission,Reliable Transmission]`
+      - `- policies.audio.play_classification: enum value [LossLess,Speech Call,Music Play,Automatic Identification]`
+      - `- policies.audio.play_quality: enum value [Low,Middle,High]`
+      - `- policies.audio.play_crc: enum value [Disable CRC,Enable CRC]`
+      - `- policies.audio.play_device_mode: enum value [Play Device In Shared Mode,Play Device In Exclusive Mode]`
+      - `- policies.audio.record_classification: enum value [LossLess,Speech Call,Music Record,Automatic Identification]`
+      - `- policies.audio.record_quality: enum value [Low,Middle,High]`
+      - `- policies.audio.record_crc: enum value [Disable CRC,Enable CRC]`
+      - `- policies.audio.record_device_mode: enum value [Record Device In Shared Mode,Record Device In Exclusive Mode]`
+      - `- policies.display.options.lossless_compression_mode: enum value [Basic Compression,Deep Compression]`
+      - `- policies.display.options.deep_compression_options.deep_compression_level: enum value [Compression grade 0,Compression grade 1,Compression grade 2,Compression grade 3,Compression grade 4,Compression grade 5,Compression grade 6,Compression grade 7,Compression grade 8,Compression grade 9]`
+      - `- policies.display.options.quality_bandwidth_first: enum value [Quality First,Bandwidth First]`
+      - `- policies.display.options.encoding_preset: enum value [Preset 1,Preset 2,Preset 3,Preset 4,Preset 5,Preset 6,Preset 7]`
+      - `- policies.display.duplicate_display_mode: enum value [One-to-One,One-to-Many]`
+      - `+ policies.record_audit.storage_type`
+      - `+ policies.record_audit.obs_bucket_source`
+      - `+ policies.record_audit.obs_bucket_name`
+      - `+ policies.record_audit.retention_duration`
+      - `+ policies.record_audit.rules.rule.app_filter_type`
+      - `+ policies.record_audit.rules.rule.app_white_list`
+      - `+ policies.record_audit.rules.rule.app_black_list`
+      - `+ policies.session.auto_lock_start_time`
+      - `+ policies.session.auto_lock_end_time`
+    - changes of response param
+      - `+ policies.personalized_data_mgmt`
+      - `- policies.access_control`
+      - `- policies.bandwidth`
+      - `- policies.personalizedDataMgmt`
+      - `- policies.peripherals.usb_port_redirection.options.usb_redirection_mode: enum value [Classical mode,Common mode]`
+      - `- policies.peripherals.device_redirection.printer_redirection.options.universal_printer_driver: enum value [Default,HDP XPSDrv Driver,Universal Printing PCL 5,Universal Printing PCL 6,Universal Printing PS]`
+      - `- policies.peripherals.device_redirection.image_compression_level: enum value [none,low,medium,high,lossless,low-loss,medium-loss,high-loss]`
+      - `- policies.peripherals.usb_device_common.pcsc_smart_card_enable: enum value [Enable,Closed,Disable]`
+      - `- policies.audio.play_volume_ratio: enum value [Do Not Set Volume Ratio,Low,Middle,High]`
+      - `- policies.audio.record_volume_ratio: enum value [Do Not Set Volume Ratio,Low,Middle,High]`
+      - `- policies.audio.audio_transmission_mode: enum value [Real Time Transmission,Reliable Transmission]`
+      - `- policies.audio.play_classification: enum value [LossLess,Speech Call,Music Play,Automatic Identification]`
+      - `- policies.audio.play_quality: enum value [Low,Middle,High]`
+      - `- policies.audio.play_crc: enum value [Disable CRC,Enable CRC]`
+      - `- policies.audio.play_device_mode: enum value [Play Device In Shared Mode,Play Device In Exclusive Mode]`
+      - `- policies.audio.record_classification: enum value [LossLess,Speech Call,Music Record,Automatic Identification]`
+      - `- policies.audio.record_quality: enum value [Low,Middle,High]`
+      - `- policies.audio.record_crc: enum value [Disable CRC,Enable CRC]`
+      - `- policies.audio.record_device_mode: enum value [Record Device In Shared Mode,Record Device In Exclusive Mode]`
+      - `- policies.display.options.lossless_compression_mode: enum value [Basic Compression,Deep Compression]`
+      - `- policies.display.options.deep_compression_options.deep_compression_level: enum value [Compression grade 0,Compression grade 1,Compression grade 2,Compression grade 3,Compression grade 4,Compression grade 5,Compression grade 6,Compression grade 7,Compression grade 8,Compression grade 9]`
+      - `- policies.display.options.quality_bandwidth_first: enum value [Quality First,Bandwidth First]`
+      - `- policies.display.options.encoding_preset: enum value [Preset 1,Preset 2,Preset 3,Preset 4,Preset 5,Preset 6,Preset 7]`
+      - `- policies.display.duplicate_display_mode: enum value [One-to-One,One-to-Many]`
+      - `+ policies.record_audit.storage_type`
+      - `+ policies.record_audit.obs_bucket_source`
+      - `+ policies.record_audit.obs_bucket_name`
+      - `+ policies.record_audit.retention_duration`
+      - `+ policies.record_audit.rules.rule.app_filter_type`
+      - `+ policies.record_audit.rules.rule.app_white_list`
+      - `+ policies.record_audit.rules.rule.app_black_list`
+      - `+ policies.session.auto_lock_start_time`
+      - `+ policies.session.auto_lock_end_time`
+  - **ListOriginalPolicyInfo**
+    - changes of response param
+      - `+ policies.personalized_data_mgmt`
+      - `- policies.access_control`
+      - `- policies.bandwidth`
+      - `- policies.personalizedDataMgmt`
+      - `- policies.peripherals.usb_port_redirection.options.usb_redirection_mode: enum value [Classical mode,Common mode]`
+      - `- policies.peripherals.device_redirection.printer_redirection.options.universal_printer_driver: enum value [Default,HDP XPSDrv Driver,Universal Printing PCL 5,Universal Printing PCL 6,Universal Printing PS]`
+      - `- policies.peripherals.device_redirection.image_compression_level: enum value [none,low,medium,high,lossless,low-loss,medium-loss,high-loss]`
+      - `- policies.peripherals.usb_device_common.pcsc_smart_card_enable: enum value [Enable,Closed,Disable]`
+      - `- policies.audio.play_volume_ratio: enum value [Do Not Set Volume Ratio,Low,Middle,High]`
+      - `- policies.audio.record_volume_ratio: enum value [Do Not Set Volume Ratio,Low,Middle,High]`
+      - `- policies.audio.audio_transmission_mode: enum value [Real Time Transmission,Reliable Transmission]`
+      - `- policies.audio.play_classification: enum value [LossLess,Speech Call,Music Play,Automatic Identification]`
+      - `- policies.audio.play_quality: enum value [Low,Middle,High]`
+      - `- policies.audio.play_crc: enum value [Disable CRC,Enable CRC]`
+      - `- policies.audio.play_device_mode: enum value [Play Device In Shared Mode,Play Device In Exclusive Mode]`
+      - `- policies.audio.record_classification: enum value [LossLess,Speech Call,Music Record,Automatic Identification]`
+      - `- policies.audio.record_quality: enum value [Low,Middle,High]`
+      - `- policies.audio.record_crc: enum value [Disable CRC,Enable CRC]`
+      - `- policies.audio.record_device_mode: enum value [Record Device In Shared Mode,Record Device In Exclusive Mode]`
+      - `- policies.display.options.lossless_compression_mode: enum value [Basic Compression,Deep Compression]`
+      - `- policies.display.options.deep_compression_options.deep_compression_level: enum value [Compression grade 0,Compression grade 1,Compression grade 2,Compression grade 3,Compression grade 4,Compression grade 5,Compression grade 6,Compression grade 7,Compression grade 8,Compression grade 9]`
+      - `- policies.display.options.quality_bandwidth_first: enum value [Quality First,Bandwidth First]`
+      - `- policies.display.options.encoding_preset: enum value [Preset 1,Preset 2,Preset 3,Preset 4,Preset 5,Preset 6,Preset 7]`
+      - `- policies.display.duplicate_display_mode: enum value [One-to-One,One-to-Many]`
+      - `+ policies.record_audit.storage_type`
+      - `+ policies.record_audit.obs_bucket_source`
+      - `+ policies.record_audit.obs_bucket_name`
+      - `+ policies.record_audit.retention_duration`
+      - `+ policies.record_audit.rules.rule.app_filter_type`
+      - `+ policies.record_audit.rules.rule.app_white_list`
+      - `+ policies.record_audit.rules.rule.app_black_list`
+      - `+ policies.session.auto_lock_start_time`
+      - `+ policies.session.auto_lock_end_time`
+  - **ListPolicyGroup**
+    - changes of request param
+      - `- scope_flag`
+    - changes of response param
+      - `- policy_groups.scope_flag`
+      - `- policy_groups.tenant_id`
+      - `+ policy_groups.policies.personalized_data_mgmt`
+      - `- policy_groups.policies.access_control`
+      - `- policy_groups.policies.bandwidth`
+      - `- policy_groups.policies.personalizedDataMgmt`
+      - `- policy_groups.policies.peripherals.usb_port_redirection.options.usb_redirection_mode: enum value [Classical mode,Common mode]`
+      - `- policy_groups.policies.peripherals.device_redirection.printer_redirection.options.universal_printer_driver: enum value [Default,HDP XPSDrv Driver,Universal Printing PCL 5,Universal Printing PCL 6,Universal Printing PS]`
+      - `- policy_groups.policies.peripherals.device_redirection.image_compression_level: enum value [none,low,medium,high,lossless,low-loss,medium-loss,high-loss]`
+      - `- policy_groups.policies.peripherals.usb_device_common.pcsc_smart_card_enable: enum value [Enable,Closed,Disable]`
+      - `- policy_groups.policies.audio.play_volume_ratio: enum value [Do Not Set Volume Ratio,Low,Middle,High]`
+      - `- policy_groups.policies.audio.record_volume_ratio: enum value [Do Not Set Volume Ratio,Low,Middle,High]`
+      - `- policy_groups.policies.audio.audio_transmission_mode: enum value [Real Time Transmission,Reliable Transmission]`
+      - `- policy_groups.policies.audio.play_classification: enum value [LossLess,Speech Call,Music Play,Automatic Identification]`
+      - `- policy_groups.policies.audio.play_quality: enum value [Low,Middle,High]`
+      - `- policy_groups.policies.audio.play_crc: enum value [Disable CRC,Enable CRC]`
+      - `- policy_groups.policies.audio.play_device_mode: enum value [Play Device In Shared Mode,Play Device In Exclusive Mode]`
+      - `- policy_groups.policies.audio.record_classification: enum value [LossLess,Speech Call,Music Record,Automatic Identification]`
+      - `- policy_groups.policies.audio.record_quality: enum value [Low,Middle,High]`
+      - `- policy_groups.policies.audio.record_crc: enum value [Disable CRC,Enable CRC]`
+      - `- policy_groups.policies.audio.record_device_mode: enum value [Record Device In Shared Mode,Record Device In Exclusive Mode]`
+      - `- policy_groups.policies.display.options.lossless_compression_mode: enum value [Basic Compression,Deep Compression]`
+      - `- policy_groups.policies.display.options.deep_compression_options.deep_compression_level: enum value [Compression grade 0,Compression grade 1,Compression grade 2,Compression grade 3,Compression grade 4,Compression grade 5,Compression grade 6,Compression grade 7,Compression grade 8,Compression grade 9]`
+      - `- policy_groups.policies.display.options.quality_bandwidth_first: enum value [Quality First,Bandwidth First]`
+      - `- policy_groups.policies.display.options.encoding_preset: enum value [Preset 1,Preset 2,Preset 3,Preset 4,Preset 5,Preset 6,Preset 7]`
+      - `- policy_groups.policies.display.duplicate_display_mode: enum value [One-to-One,One-to-Many]`
+      - `+ policy_groups.policies.record_audit.storage_type`
+      - `+ policy_groups.policies.record_audit.obs_bucket_source`
+      - `+ policy_groups.policies.record_audit.obs_bucket_name`
+      - `+ policy_groups.policies.record_audit.retention_duration`
+      - `+ policy_groups.policies.record_audit.rules.rule.app_filter_type`
+      - `+ policy_groups.policies.record_audit.rules.rule.app_white_list`
+      - `+ policy_groups.policies.record_audit.rules.rule.app_black_list`
+      - `+ policy_groups.policies.session.auto_lock_start_time`
+      - `+ policy_groups.policies.session.auto_lock_end_time`
+  - **CreatePolicyGroup**
+    - changes of request param
+      - `- policy_group.scope_flag`
+      - `+ policy_group.policies.personalized_data_mgmt`
+      - `- policy_group.policies.access_control`
+      - `- policy_group.policies.bandwidth`
+      - `- policy_group.policies.personalizedDataMgmt`
+      - `- policy_group.policies.peripherals.usb_port_redirection.options.usb_redirection_mode: enum value [Classical mode,Common mode]`
+      - `- policy_group.policies.peripherals.device_redirection.printer_redirection.options.universal_printer_driver: enum value [Default,HDP XPSDrv Driver,Universal Printing PCL 5,Universal Printing PCL 6,Universal Printing PS]`
+      - `- policy_group.policies.peripherals.device_redirection.image_compression_level: enum value [none,low,medium,high,lossless,low-loss,medium-loss,high-loss]`
+      - `- policy_group.policies.peripherals.usb_device_common.pcsc_smart_card_enable: enum value [Enable,Closed,Disable]`
+      - `- policy_group.policies.audio.play_volume_ratio: enum value [Do Not Set Volume Ratio,Low,Middle,High]`
+      - `- policy_group.policies.audio.record_volume_ratio: enum value [Do Not Set Volume Ratio,Low,Middle,High]`
+      - `- policy_group.policies.audio.audio_transmission_mode: enum value [Real Time Transmission,Reliable Transmission]`
+      - `- policy_group.policies.audio.play_classification: enum value [LossLess,Speech Call,Music Play,Automatic Identification]`
+      - `- policy_group.policies.audio.play_quality: enum value [Low,Middle,High]`
+      - `- policy_group.policies.audio.play_crc: enum value [Disable CRC,Enable CRC]`
+      - `- policy_group.policies.audio.play_device_mode: enum value [Play Device In Shared Mode,Play Device In Exclusive Mode]`
+      - `- policy_group.policies.audio.record_classification: enum value [LossLess,Speech Call,Music Record,Automatic Identification]`
+      - `- policy_group.policies.audio.record_quality: enum value [Low,Middle,High]`
+      - `- policy_group.policies.audio.record_crc: enum value [Disable CRC,Enable CRC]`
+      - `- policy_group.policies.audio.record_device_mode: enum value [Record Device In Shared Mode,Record Device In Exclusive Mode]`
+      - `- policy_group.policies.display.options.lossless_compression_mode: enum value [Basic Compression,Deep Compression]`
+      - `- policy_group.policies.display.options.deep_compression_options.deep_compression_level: enum value [Compression grade 0,Compression grade 1,Compression grade 2,Compression grade 3,Compression grade 4,Compression grade 5,Compression grade 6,Compression grade 7,Compression grade 8,Compression grade 9]`
+      - `- policy_group.policies.display.options.quality_bandwidth_first: enum value [Quality First,Bandwidth First]`
+      - `- policy_group.policies.display.options.encoding_preset: enum value [Preset 1,Preset 2,Preset 3,Preset 4,Preset 5,Preset 6,Preset 7]`
+      - `- policy_group.policies.display.duplicate_display_mode: enum value [One-to-One,One-to-Many]`
+      - `+ policy_group.policies.record_audit.storage_type`
+      - `+ policy_group.policies.record_audit.obs_bucket_source`
+      - `+ policy_group.policies.record_audit.obs_bucket_name`
+      - `+ policy_group.policies.record_audit.retention_duration`
+      - `+ policy_group.policies.record_audit.rules.rule.app_filter_type`
+      - `+ policy_group.policies.record_audit.rules.rule.app_white_list`
+      - `+ policy_group.policies.record_audit.rules.rule.app_black_list`
+      - `+ policy_group.policies.session.auto_lock_start_time`
+      - `+ policy_group.policies.session.auto_lock_end_time`
+  - **ListPolicyDetailInfoById**
+    - changes of response param
+      - `- policy_group.scope_flag`
+      - `- policy_group.tenant_id`
+      - `+ policy_group.policies.personalized_data_mgmt`
+      - `- policy_group.policies.access_control`
+      - `- policy_group.policies.bandwidth`
+      - `- policy_group.policies.personalizedDataMgmt`
+      - `- policy_group.policies.peripherals.usb_port_redirection.options.usb_redirection_mode: enum value [Classical mode,Common mode]`
+      - `- policy_group.policies.peripherals.device_redirection.printer_redirection.options.universal_printer_driver: enum value [Default,HDP XPSDrv Driver,Universal Printing PCL 5,Universal Printing PCL 6,Universal Printing PS]`
+      - `- policy_group.policies.peripherals.device_redirection.image_compression_level: enum value [none,low,medium,high,lossless,low-loss,medium-loss,high-loss]`
+      - `- policy_group.policies.peripherals.usb_device_common.pcsc_smart_card_enable: enum value [Enable,Closed,Disable]`
+      - `- policy_group.policies.audio.play_volume_ratio: enum value [Do Not Set Volume Ratio,Low,Middle,High]`
+      - `- policy_group.policies.audio.record_volume_ratio: enum value [Do Not Set Volume Ratio,Low,Middle,High]`
+      - `- policy_group.policies.audio.audio_transmission_mode: enum value [Real Time Transmission,Reliable Transmission]`
+      - `- policy_group.policies.audio.play_classification: enum value [LossLess,Speech Call,Music Play,Automatic Identification]`
+      - `- policy_group.policies.audio.play_quality: enum value [Low,Middle,High]`
+      - `- policy_group.policies.audio.play_crc: enum value [Disable CRC,Enable CRC]`
+      - `- policy_group.policies.audio.play_device_mode: enum value [Play Device In Shared Mode,Play Device In Exclusive Mode]`
+      - `- policy_group.policies.audio.record_classification: enum value [LossLess,Speech Call,Music Record,Automatic Identification]`
+      - `- policy_group.policies.audio.record_quality: enum value [Low,Middle,High]`
+      - `- policy_group.policies.audio.record_crc: enum value [Disable CRC,Enable CRC]`
+      - `- policy_group.policies.audio.record_device_mode: enum value [Record Device In Shared Mode,Record Device In Exclusive Mode]`
+      - `- policy_group.policies.display.options.lossless_compression_mode: enum value [Basic Compression,Deep Compression]`
+      - `- policy_group.policies.display.options.deep_compression_options.deep_compression_level: enum value [Compression grade 0,Compression grade 1,Compression grade 2,Compression grade 3,Compression grade 4,Compression grade 5,Compression grade 6,Compression grade 7,Compression grade 8,Compression grade 9]`
+      - `- policy_group.policies.display.options.quality_bandwidth_first: enum value [Quality First,Bandwidth First]`
+      - `- policy_group.policies.display.options.encoding_preset: enum value [Preset 1,Preset 2,Preset 3,Preset 4,Preset 5,Preset 6,Preset 7]`
+      - `- policy_group.policies.display.duplicate_display_mode: enum value [One-to-One,One-to-Many]`
+      - `+ policy_group.policies.record_audit.storage_type`
+      - `+ policy_group.policies.record_audit.obs_bucket_source`
+      - `+ policy_group.policies.record_audit.obs_bucket_name`
+      - `+ policy_group.policies.record_audit.retention_duration`
+      - `+ policy_group.policies.record_audit.rules.rule.app_filter_type`
+      - `+ policy_group.policies.record_audit.rules.rule.app_white_list`
+      - `+ policy_group.policies.record_audit.rules.rule.app_black_list`
+      - `+ policy_group.policies.session.auto_lock_start_time`
+      - `+ policy_group.policies.session.auto_lock_end_time`
+  - **UpdatePolicyGroup**
+    - changes of request param
+      - `- policy_group.scope_flag`
+      - `+ policy_group.policies.personalized_data_mgmt`
+      - `- policy_group.policies.access_control`
+      - `- policy_group.policies.bandwidth`
+      - `- policy_group.policies.personalizedDataMgmt`
+      - `- policy_group.policies.peripherals.usb_port_redirection.options.usb_redirection_mode: enum value [Classical mode,Common mode]`
+      - `- policy_group.policies.peripherals.device_redirection.printer_redirection.options.universal_printer_driver: enum value [Default,HDP XPSDrv Driver,Universal Printing PCL 5,Universal Printing PCL 6,Universal Printing PS]`
+      - `- policy_group.policies.peripherals.device_redirection.image_compression_level: enum value [none,low,medium,high,lossless,low-loss,medium-loss,high-loss]`
+      - `- policy_group.policies.peripherals.usb_device_common.pcsc_smart_card_enable: enum value [Enable,Closed,Disable]`
+      - `- policy_group.policies.audio.play_volume_ratio: enum value [Do Not Set Volume Ratio,Low,Middle,High]`
+      - `- policy_group.policies.audio.record_volume_ratio: enum value [Do Not Set Volume Ratio,Low,Middle,High]`
+      - `- policy_group.policies.audio.audio_transmission_mode: enum value [Real Time Transmission,Reliable Transmission]`
+      - `- policy_group.policies.audio.play_classification: enum value [LossLess,Speech Call,Music Play,Automatic Identification]`
+      - `- policy_group.policies.audio.play_quality: enum value [Low,Middle,High]`
+      - `- policy_group.policies.audio.play_crc: enum value [Disable CRC,Enable CRC]`
+      - `- policy_group.policies.audio.play_device_mode: enum value [Play Device In Shared Mode,Play Device In Exclusive Mode]`
+      - `- policy_group.policies.audio.record_classification: enum value [LossLess,Speech Call,Music Record,Automatic Identification]`
+      - `- policy_group.policies.audio.record_quality: enum value [Low,Middle,High]`
+      - `- policy_group.policies.audio.record_crc: enum value [Disable CRC,Enable CRC]`
+      - `- policy_group.policies.audio.record_device_mode: enum value [Record Device In Shared Mode,Record Device In Exclusive Mode]`
+      - `- policy_group.policies.display.options.lossless_compression_mode: enum value [Basic Compression,Deep Compression]`
+      - `- policy_group.policies.display.options.deep_compression_options.deep_compression_level: enum value [Compression grade 0,Compression grade 1,Compression grade 2,Compression grade 3,Compression grade 4,Compression grade 5,Compression grade 6,Compression grade 7,Compression grade 8,Compression grade 9]`
+      - `- policy_group.policies.display.options.quality_bandwidth_first: enum value [Quality First,Bandwidth First]`
+      - `- policy_group.policies.display.options.encoding_preset: enum value [Preset 1,Preset 2,Preset 3,Preset 4,Preset 5,Preset 6,Preset 7]`
+      - `- policy_group.policies.display.duplicate_display_mode: enum value [One-to-One,One-to-Many]`
+      - `+ policy_group.policies.record_audit.storage_type`
+      - `+ policy_group.policies.record_audit.obs_bucket_source`
+      - `+ policy_group.policies.record_audit.obs_bucket_name`
+      - `+ policy_group.policies.record_audit.retention_duration`
+      - `+ policy_group.policies.record_audit.rules.rule.app_filter_type`
+      - `+ policy_group.policies.record_audit.rules.rule.app_white_list`
+      - `+ policy_group.policies.record_audit.rules.rule.app_black_list`
+      - `+ policy_group.policies.session.auto_lock_start_time`
+      - `+ policy_group.policies.session.auto_lock_end_time`
+  - **ListPolicyGroupInfo**
+    - changes of request param
+      - `- scope_flag`
+    - changes of response param
+      - `- policy_groups.scope_flag`
+      - `- policy_groups.tenant_id`
+      - `+ policy_groups.policies.personalized_data_mgmt`
+      - `- policy_groups.policies.access_control`
+      - `- policy_groups.policies.bandwidth`
+      - `- policy_groups.policies.personalizedDataMgmt`
+      - `- policy_groups.policies.peripherals.usb_port_redirection.options.usb_redirection_mode: enum value [Classical mode,Common mode]`
+      - `- policy_groups.policies.peripherals.device_redirection.printer_redirection.options.universal_printer_driver: enum value [Default,HDP XPSDrv Driver,Universal Printing PCL 5,Universal Printing PCL 6,Universal Printing PS]`
+      - `- policy_groups.policies.peripherals.device_redirection.image_compression_level: enum value [none,low,medium,high,lossless,low-loss,medium-loss,high-loss]`
+      - `- policy_groups.policies.peripherals.usb_device_common.pcsc_smart_card_enable: enum value [Enable,Closed,Disable]`
+      - `- policy_groups.policies.audio.play_volume_ratio: enum value [Do Not Set Volume Ratio,Low,Middle,High]`
+      - `- policy_groups.policies.audio.record_volume_ratio: enum value [Do Not Set Volume Ratio,Low,Middle,High]`
+      - `- policy_groups.policies.audio.audio_transmission_mode: enum value [Real Time Transmission,Reliable Transmission]`
+      - `- policy_groups.policies.audio.play_classification: enum value [LossLess,Speech Call,Music Play,Automatic Identification]`
+      - `- policy_groups.policies.audio.play_quality: enum value [Low,Middle,High]`
+      - `- policy_groups.policies.audio.play_crc: enum value [Disable CRC,Enable CRC]`
+      - `- policy_groups.policies.audio.play_device_mode: enum value [Play Device In Shared Mode,Play Device In Exclusive Mode]`
+      - `- policy_groups.policies.audio.record_classification: enum value [LossLess,Speech Call,Music Record,Automatic Identification]`
+      - `- policy_groups.policies.audio.record_quality: enum value [Low,Middle,High]`
+      - `- policy_groups.policies.audio.record_crc: enum value [Disable CRC,Enable CRC]`
+      - `- policy_groups.policies.audio.record_device_mode: enum value [Record Device In Shared Mode,Record Device In Exclusive Mode]`
+      - `- policy_groups.policies.display.options.lossless_compression_mode: enum value [Basic Compression,Deep Compression]`
+      - `- policy_groups.policies.display.options.deep_compression_options.deep_compression_level: enum value [Compression grade 0,Compression grade 1,Compression grade 2,Compression grade 3,Compression grade 4,Compression grade 5,Compression grade 6,Compression grade 7,Compression grade 8,Compression grade 9]`
+      - `- policy_groups.policies.display.options.quality_bandwidth_first: enum value [Quality First,Bandwidth First]`
+      - `- policy_groups.policies.display.options.encoding_preset: enum value [Preset 1,Preset 2,Preset 3,Preset 4,Preset 5,Preset 6,Preset 7]`
+      - `- policy_groups.policies.display.duplicate_display_mode: enum value [One-to-One,One-to-Many]`
+      - `+ policy_groups.policies.record_audit.storage_type`
+      - `+ policy_groups.policies.record_audit.obs_bucket_source`
+      - `+ policy_groups.policies.record_audit.obs_bucket_name`
+      - `+ policy_groups.policies.record_audit.retention_duration`
+      - `+ policy_groups.policies.record_audit.rules.rule.app_filter_type`
+      - `+ policy_groups.policies.record_audit.rules.rule.app_white_list`
+      - `+ policy_groups.policies.record_audit.rules.rule.app_black_list`
+      - `+ policy_groups.policies.session.auto_lock_start_time`
+      - `+ policy_groups.policies.session.auto_lock_end_time`
+
 # 3.1.155 2025-07-03
 
 ### HuaweiCloud SDK AstroZero

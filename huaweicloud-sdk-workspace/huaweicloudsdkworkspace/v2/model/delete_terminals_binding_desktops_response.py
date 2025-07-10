@@ -30,7 +30,7 @@ class DeleteTerminalsBindingDesktopsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param result_list: 需删除的策略ID列表
+        :param result_list: 需删除的策略ID列表。
         :type result_list: list[:class:`huaweicloudsdkworkspace.v2.DeleteTerminalsBindingDesktopsResult`]
         """
         
@@ -46,7 +46,7 @@ class DeleteTerminalsBindingDesktopsResponse(SdkResponse):
     def result_list(self):
         r"""Gets the result_list of this DeleteTerminalsBindingDesktopsResponse.
 
-        需删除的策略ID列表
+        需删除的策略ID列表。
 
         :return: The result_list of this DeleteTerminalsBindingDesktopsResponse.
         :rtype: list[:class:`huaweicloudsdkworkspace.v2.DeleteTerminalsBindingDesktopsResult`]
@@ -57,7 +57,7 @@ class DeleteTerminalsBindingDesktopsResponse(SdkResponse):
     def result_list(self, result_list):
         r"""Sets the result_list of this DeleteTerminalsBindingDesktopsResponse.
 
-        需删除的策略ID列表
+        需删除的策略ID列表。
 
         :param result_list: The result_list of this DeleteTerminalsBindingDesktopsResponse.
         :type result_list: list[:class:`huaweicloudsdkworkspace.v2.DeleteTerminalsBindingDesktopsResult`]

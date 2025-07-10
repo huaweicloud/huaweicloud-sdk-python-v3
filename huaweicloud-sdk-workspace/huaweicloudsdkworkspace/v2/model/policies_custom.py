@@ -31,7 +31,7 @@ class PoliciesCustom:
 
         The model defined in huaweicloud sdk
 
-        :param custom_configuration1_enable: 自定义配置启用
+        :param custom_configuration1_enable: 自定义配置启用。
         :type custom_configuration1_enable: bool
         :param options: 
         :type options: :class:`huaweicloudsdkworkspace.v2.PoliciesCustomOptions`
@@ -52,7 +52,7 @@ class PoliciesCustom:
     def custom_configuration1_enable(self):
         r"""Gets the custom_configuration1_enable of this PoliciesCustom.
 
-        自定义配置启用
+        自定义配置启用。
 
         :return: The custom_configuration1_enable of this PoliciesCustom.
         :rtype: bool
@@ -63,7 +63,7 @@ class PoliciesCustom:
     def custom_configuration1_enable(self, custom_configuration1_enable):
         r"""Sets the custom_configuration1_enable of this PoliciesCustom.
 
-        自定义配置启用
+        自定义配置启用。
 
         :param custom_configuration1_enable: The custom_configuration1_enable of this PoliciesCustom.
         :type custom_configuration1_enable: bool

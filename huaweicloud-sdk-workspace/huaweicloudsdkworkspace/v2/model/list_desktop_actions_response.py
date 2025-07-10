@@ -18,100 +18,42 @@ class ListDesktopActionsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'error_code': 'str',
-        'error_msg': 'str',
         'desktop_actions': 'list[DesktopAction]',
         'total_count': 'int'
     }
 
     attribute_map = {
-        'error_code': 'error_code',
-        'error_msg': 'error_msg',
         'desktop_actions': 'desktop_actions',
         'total_count': 'total_count'
     }
 
-    def __init__(self, error_code=None, error_msg=None, desktop_actions=None, total_count=None):
+    def __init__(self, desktop_actions=None, total_count=None):
         r"""ListDesktopActionsResponse
 
         The model defined in huaweicloud sdk
 
-        :param error_code: 错误码，失败时返回。
-        :type error_code: str
-        :param error_msg: 错误描述。
-        :type error_msg: str
-        :param desktop_actions: 桌面开关列表
+        :param desktop_actions: 桌面开关列表。
         :type desktop_actions: list[:class:`huaweicloudsdkworkspace.v2.DesktopAction`]
-        :param total_count: 总数
+        :param total_count: 总数。
         :type total_count: int
         """
         
         super(ListDesktopActionsResponse, self).__init__()
 
-        self._error_code = None
-        self._error_msg = None
         self._desktop_actions = None
         self._total_count = None
         self.discriminator = None
 
-        if error_code is not None:
-            self.error_code = error_code
-        if error_msg is not None:
-            self.error_msg = error_msg
         if desktop_actions is not None:
             self.desktop_actions = desktop_actions
         if total_count is not None:
             self.total_count = total_count
 
     @property
-    def error_code(self):
-        r"""Gets the error_code of this ListDesktopActionsResponse.
-
-        错误码，失败时返回。
-
-        :return: The error_code of this ListDesktopActionsResponse.
-        :rtype: str
-        """
-        return self._error_code
-
-    @error_code.setter
-    def error_code(self, error_code):
-        r"""Sets the error_code of this ListDesktopActionsResponse.
-
-        错误码，失败时返回。
-
-        :param error_code: The error_code of this ListDesktopActionsResponse.
-        :type error_code: str
-        """
-        self._error_code = error_code
-
-    @property
-    def error_msg(self):
-        r"""Gets the error_msg of this ListDesktopActionsResponse.
-
-        错误描述。
-
-        :return: The error_msg of this ListDesktopActionsResponse.
-        :rtype: str
-        """
-        return self._error_msg
-
-    @error_msg.setter
-    def error_msg(self, error_msg):
-        r"""Sets the error_msg of this ListDesktopActionsResponse.
-
-        错误描述。
-
-        :param error_msg: The error_msg of this ListDesktopActionsResponse.
-        :type error_msg: str
-        """
-        self._error_msg = error_msg
-
-    @property
     def desktop_actions(self):
         r"""Gets the desktop_actions of this ListDesktopActionsResponse.
 
-        桌面开关列表
+        桌面开关列表。
 
         :return: The desktop_actions of this ListDesktopActionsResponse.
         :rtype: list[:class:`huaweicloudsdkworkspace.v2.DesktopAction`]
@@ -122,7 +64,7 @@ class ListDesktopActionsResponse(SdkResponse):
     def desktop_actions(self, desktop_actions):
         r"""Sets the desktop_actions of this ListDesktopActionsResponse.
 
-        桌面开关列表
+        桌面开关列表。
 
         :param desktop_actions: The desktop_actions of this ListDesktopActionsResponse.
         :type desktop_actions: list[:class:`huaweicloudsdkworkspace.v2.DesktopAction`]
@@ -133,7 +75,7 @@ class ListDesktopActionsResponse(SdkResponse):
     def total_count(self):
         r"""Gets the total_count of this ListDesktopActionsResponse.
 
-        总数
+        总数。
 
         :return: The total_count of this ListDesktopActionsResponse.
         :rtype: int
@@ -144,7 +86,7 @@ class ListDesktopActionsResponse(SdkResponse):
     def total_count(self, total_count):
         r"""Sets the total_count of this ListDesktopActionsResponse.
 
-        总数
+        总数。
 
         :param total_count: The total_count of this ListDesktopActionsResponse.
         :type total_count: int

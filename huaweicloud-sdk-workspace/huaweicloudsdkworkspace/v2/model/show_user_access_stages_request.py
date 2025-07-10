@@ -29,7 +29,7 @@ class ShowUserAccessStagesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param transaction_id: 事务id
+        :param transaction_id: 事务id。
         :type transaction_id: str
         """
         
@@ -44,7 +44,7 @@ class ShowUserAccessStagesRequest:
     def transaction_id(self):
         r"""Gets the transaction_id of this ShowUserAccessStagesRequest.
 
-        事务id
+        事务id。
 
         :return: The transaction_id of this ShowUserAccessStagesRequest.
         :rtype: str
@@ -55,7 +55,7 @@ class ShowUserAccessStagesRequest:
     def transaction_id(self, transaction_id):
         r"""Sets the transaction_id of this ShowUserAccessStagesRequest.
 
-        事务id
+        事务id。
 
         :param transaction_id: The transaction_id of this ShowUserAccessStagesRequest.
         :type transaction_id: str

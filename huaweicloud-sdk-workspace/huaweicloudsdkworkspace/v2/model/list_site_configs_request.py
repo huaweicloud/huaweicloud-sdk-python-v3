@@ -31,7 +31,7 @@ class ListSiteConfigsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param availability_zone_id: 可用区
+        :param availability_zone_id: 可用区。
         :type availability_zone_id: str
         :param site_type: 站点类型，支持CENTER、IES。
         :type site_type: str
@@ -52,7 +52,7 @@ class ListSiteConfigsRequest:
     def availability_zone_id(self):
         r"""Gets the availability_zone_id of this ListSiteConfigsRequest.
 
-        可用区
+        可用区。
 
         :return: The availability_zone_id of this ListSiteConfigsRequest.
         :rtype: str
@@ -63,7 +63,7 @@ class ListSiteConfigsRequest:
     def availability_zone_id(self, availability_zone_id):
         r"""Sets the availability_zone_id of this ListSiteConfigsRequest.
 
-        可用区
+        可用区。
 
         :param availability_zone_id: The availability_zone_id of this ListSiteConfigsRequest.
         :type availability_zone_id: str

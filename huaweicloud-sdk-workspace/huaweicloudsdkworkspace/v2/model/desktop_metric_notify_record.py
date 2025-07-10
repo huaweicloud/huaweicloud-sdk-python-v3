@@ -35,11 +35,11 @@ class DesktopMetricNotifyRecord:
 
         The model defined in huaweicloud sdk
 
-        :param match_count: 满足通知规则阈值的桌面数
+        :param match_count: 满足通知规则阈值的桌面数。
         :type match_count: int
-        :param metric_name: 指标名称
+        :param metric_name: 指标名称。
         :type metric_name: str
-        :param threshold: 统计持续周期(天)
+        :param threshold: 统计持续周期(天)。
         :type threshold: int
         :param comparison_operator: 统计指标对应的统计值和threshold进行比较的条件 * &#x60;&gt;&#x3D;&#x60; -  统计指标大于等于threshold时触发 * &#x60;&gt;&#x60; -   统计指标大于threshold时触发 * &#x60;&#x3D;&#x60; -  统计指标等于threshold时触发 * &#x60;&lt;&#x3D;&#x60; -  统计指标小于等于threshold时触发 * &#x60;&lt;&#x60; -  统计指标小于threshold时触发
         :type comparison_operator: str
@@ -66,7 +66,7 @@ class DesktopMetricNotifyRecord:
     def match_count(self):
         r"""Gets the match_count of this DesktopMetricNotifyRecord.
 
-        满足通知规则阈值的桌面数
+        满足通知规则阈值的桌面数。
 
         :return: The match_count of this DesktopMetricNotifyRecord.
         :rtype: int
@@ -77,7 +77,7 @@ class DesktopMetricNotifyRecord:
     def match_count(self, match_count):
         r"""Sets the match_count of this DesktopMetricNotifyRecord.
 
-        满足通知规则阈值的桌面数
+        满足通知规则阈值的桌面数。
 
         :param match_count: The match_count of this DesktopMetricNotifyRecord.
         :type match_count: int
@@ -88,7 +88,7 @@ class DesktopMetricNotifyRecord:
     def metric_name(self):
         r"""Gets the metric_name of this DesktopMetricNotifyRecord.
 
-        指标名称
+        指标名称。
 
         :return: The metric_name of this DesktopMetricNotifyRecord.
         :rtype: str
@@ -99,7 +99,7 @@ class DesktopMetricNotifyRecord:
     def metric_name(self, metric_name):
         r"""Sets the metric_name of this DesktopMetricNotifyRecord.
 
-        指标名称
+        指标名称。
 
         :param metric_name: The metric_name of this DesktopMetricNotifyRecord.
         :type metric_name: str
@@ -110,7 +110,7 @@ class DesktopMetricNotifyRecord:
     def threshold(self):
         r"""Gets the threshold of this DesktopMetricNotifyRecord.
 
-        统计持续周期(天)
+        统计持续周期(天)。
 
         :return: The threshold of this DesktopMetricNotifyRecord.
         :rtype: int
@@ -121,7 +121,7 @@ class DesktopMetricNotifyRecord:
     def threshold(self, threshold):
         r"""Sets the threshold of this DesktopMetricNotifyRecord.
 
-        统计持续周期(天)
+        统计持续周期(天)。
 
         :param threshold: The threshold of this DesktopMetricNotifyRecord.
         :type threshold: int

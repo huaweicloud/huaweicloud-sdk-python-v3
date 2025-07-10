@@ -26,7 +26,6 @@ class ShowDesktopPoolDetailResponse(SdkResponse):
         'charging_mode': 'str',
         'desktop_count': 'int',
         'desktop_used': 'int',
-        'on_demand_desktop_num': 'int',
         'availability_zone': 'str',
         'subnet_id': 'str',
         'product': 'ProductInfo',
@@ -38,7 +37,7 @@ class ShowDesktopPoolDetailResponse(SdkResponse):
         'image_product_code': 'str',
         'root_volume': 'VolumeInfo',
         'data_volumes': 'list[VolumeInfo]',
-        'security_groups': 'list[SecurityGroup]',
+        'security_groups': 'list[SecurityGroupInfo]',
         'disconnected_retention_period': 'int',
         'enable_autoscale': 'bool',
         'autoscale_policy': 'AutoscalePolicy',
@@ -57,7 +56,6 @@ class ShowDesktopPoolDetailResponse(SdkResponse):
         'charging_mode': 'charging_mode',
         'desktop_count': 'desktop_count',
         'desktop_used': 'desktop_used',
-        'on_demand_desktop_num': 'on_demand_desktop_num',
         'availability_zone': 'availability_zone',
         'subnet_id': 'subnet_id',
         'product': 'product',
@@ -79,7 +77,7 @@ class ShowDesktopPoolDetailResponse(SdkResponse):
         'desktop_name_policy_id': 'desktop_name_policy_id'
     }
 
-    def __init__(self, id=None, name=None, type=None, description=None, created_time=None, charging_mode=None, desktop_count=None, desktop_used=None, on_demand_desktop_num=None, availability_zone=None, subnet_id=None, product=None, image_id=None, image_name=None, image_os_type=None, image_os_version=None, image_os_platform=None, image_product_code=None, root_volume=None, data_volumes=None, security_groups=None, disconnected_retention_period=None, enable_autoscale=None, autoscale_policy=None, status=None, enterprise_project_id=None, in_maintenance_mode=None, desktop_name_policy_id=None):
+    def __init__(self, id=None, name=None, type=None, description=None, created_time=None, charging_mode=None, desktop_count=None, desktop_used=None, availability_zone=None, subnet_id=None, product=None, image_id=None, image_name=None, image_os_type=None, image_os_version=None, image_os_platform=None, image_product_code=None, root_volume=None, data_volumes=None, security_groups=None, disconnected_retention_period=None, enable_autoscale=None, autoscale_policy=None, status=None, enterprise_project_id=None, in_maintenance_mode=None, desktop_name_policy_id=None):
         r"""ShowDesktopPoolDetailResponse
 
         The model defined in huaweicloud sdk
@@ -100,8 +98,6 @@ class ShowDesktopPoolDetailResponse(SdkResponse):
         :type desktop_count: int
         :param desktop_used: 桌面池绑定用户的桌面个数。
         :type desktop_used: int
-        :param on_demand_desktop_num: 桌面池按需桌面个数（不包含删除中的桌面）。
-        :type on_demand_desktop_num: int
         :param availability_zone: 可用区。
         :type availability_zone: str
         :param subnet_id: 子网ID。
@@ -125,7 +121,7 @@ class ShowDesktopPoolDetailResponse(SdkResponse):
         :param data_volumes: 数据盘列表。
         :type data_volumes: list[:class:`huaweicloudsdkworkspace.v2.VolumeInfo`]
         :param security_groups: 桌面安全组。
-        :type security_groups: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroup`]
+        :type security_groups: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroupInfo`]
         :param disconnected_retention_period: 动态池桌面断连多少分钟内，保留用户与桌面的绑定关系，超时后自动解绑。
         :type disconnected_retention_period: int
         :param enable_autoscale: 桌面池是否开启弹性伸缩类型，为false则表示不开启弹性伸缩，为true则表示开启弹性伸缩。
@@ -134,9 +130,9 @@ class ShowDesktopPoolDetailResponse(SdkResponse):
         :type autoscale_policy: :class:`huaweicloudsdkworkspace.v2.AutoscalePolicy`
         :param status: 桌面池状态。 - STEADY：稳态 - TEMPORARY：临时态 - EXIST_FROZEN：存在冻结桌面 - UNKNOWN：未知态
         :type status: str
-        :param enterprise_project_id: 企业项目ID
+        :param enterprise_project_id: 企业项目ID。
         :type enterprise_project_id: str
-        :param in_maintenance_mode: 桌面池是否处于管理员维护模式
+        :param in_maintenance_mode: 桌面池是否处于管理员维护模式。
         :type in_maintenance_mode: bool
         :param desktop_name_policy_id: 策略id，用于指定生成桌面名称策略。
         :type desktop_name_policy_id: str
@@ -152,7 +148,6 @@ class ShowDesktopPoolDetailResponse(SdkResponse):
         self._charging_mode = None
         self._desktop_count = None
         self._desktop_used = None
-        self._on_demand_desktop_num = None
         self._availability_zone = None
         self._subnet_id = None
         self._product = None
@@ -190,8 +185,6 @@ class ShowDesktopPoolDetailResponse(SdkResponse):
             self.desktop_count = desktop_count
         if desktop_used is not None:
             self.desktop_used = desktop_used
-        if on_demand_desktop_num is not None:
-            self.on_demand_desktop_num = on_demand_desktop_num
         if availability_zone is not None:
             self.availability_zone = availability_zone
         if subnet_id is not None:
@@ -406,28 +399,6 @@ class ShowDesktopPoolDetailResponse(SdkResponse):
         :type desktop_used: int
         """
         self._desktop_used = desktop_used
-
-    @property
-    def on_demand_desktop_num(self):
-        r"""Gets the on_demand_desktop_num of this ShowDesktopPoolDetailResponse.
-
-        桌面池按需桌面个数（不包含删除中的桌面）。
-
-        :return: The on_demand_desktop_num of this ShowDesktopPoolDetailResponse.
-        :rtype: int
-        """
-        return self._on_demand_desktop_num
-
-    @on_demand_desktop_num.setter
-    def on_demand_desktop_num(self, on_demand_desktop_num):
-        r"""Sets the on_demand_desktop_num of this ShowDesktopPoolDetailResponse.
-
-        桌面池按需桌面个数（不包含删除中的桌面）。
-
-        :param on_demand_desktop_num: The on_demand_desktop_num of this ShowDesktopPoolDetailResponse.
-        :type on_demand_desktop_num: int
-        """
-        self._on_demand_desktop_num = on_demand_desktop_num
 
     @property
     def availability_zone(self):
@@ -670,7 +641,7 @@ class ShowDesktopPoolDetailResponse(SdkResponse):
         桌面安全组。
 
         :return: The security_groups of this ShowDesktopPoolDetailResponse.
-        :rtype: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroup`]
+        :rtype: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroupInfo`]
         """
         return self._security_groups
 
@@ -681,7 +652,7 @@ class ShowDesktopPoolDetailResponse(SdkResponse):
         桌面安全组。
 
         :param security_groups: The security_groups of this ShowDesktopPoolDetailResponse.
-        :type security_groups: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroup`]
+        :type security_groups: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroupInfo`]
         """
         self._security_groups = security_groups
 
@@ -773,7 +744,7 @@ class ShowDesktopPoolDetailResponse(SdkResponse):
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this ShowDesktopPoolDetailResponse.
 
-        企业项目ID
+        企业项目ID。
 
         :return: The enterprise_project_id of this ShowDesktopPoolDetailResponse.
         :rtype: str
@@ -784,7 +755,7 @@ class ShowDesktopPoolDetailResponse(SdkResponse):
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this ShowDesktopPoolDetailResponse.
 
-        企业项目ID
+        企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this ShowDesktopPoolDetailResponse.
         :type enterprise_project_id: str
@@ -795,7 +766,7 @@ class ShowDesktopPoolDetailResponse(SdkResponse):
     def in_maintenance_mode(self):
         r"""Gets the in_maintenance_mode of this ShowDesktopPoolDetailResponse.
 
-        桌面池是否处于管理员维护模式
+        桌面池是否处于管理员维护模式。
 
         :return: The in_maintenance_mode of this ShowDesktopPoolDetailResponse.
         :rtype: bool
@@ -806,7 +777,7 @@ class ShowDesktopPoolDetailResponse(SdkResponse):
     def in_maintenance_mode(self, in_maintenance_mode):
         r"""Sets the in_maintenance_mode of this ShowDesktopPoolDetailResponse.
 
-        桌面池是否处于管理员维护模式
+        桌面池是否处于管理员维护模式。
 
         :param in_maintenance_mode: The in_maintenance_mode of this ShowDesktopPoolDetailResponse.
         :type in_maintenance_mode: bool

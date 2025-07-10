@@ -31,9 +31,9 @@ class Datapoints:
 
         The model defined in huaweicloud sdk
 
-        :param average: 平均数值
+        :param average: 平均数值。
         :type average: float
-        :param timestamp: 时间戳
+        :param timestamp: 时间戳。
         :type timestamp: int
         """
         
@@ -52,7 +52,7 @@ class Datapoints:
     def average(self):
         r"""Gets the average of this Datapoints.
 
-        平均数值
+        平均数值。
 
         :return: The average of this Datapoints.
         :rtype: float
@@ -63,7 +63,7 @@ class Datapoints:
     def average(self, average):
         r"""Sets the average of this Datapoints.
 
-        平均数值
+        平均数值。
 
         :param average: The average of this Datapoints.
         :type average: float
@@ -74,7 +74,7 @@ class Datapoints:
     def timestamp(self):
         r"""Gets the timestamp of this Datapoints.
 
-        时间戳
+        时间戳。
 
         :return: The timestamp of this Datapoints.
         :rtype: int
@@ -85,7 +85,7 @@ class Datapoints:
     def timestamp(self, timestamp):
         r"""Sets the timestamp of this Datapoints.
 
-        时间戳
+        时间戳。
 
         :param timestamp: The timestamp of this Datapoints.
         :type timestamp: int

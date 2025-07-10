@@ -38,15 +38,15 @@ class ListAlarmStatisticsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param critical_count: 紧急告警记录列表总数
+        :param critical_count: 紧急告警记录列表总数。
         :type critical_count: int
-        :param major_count: 重要告警记录列表总数
+        :param major_count: 重要告警记录列表总数。
         :type major_count: int
-        :param minor_count: 次要告警记录列表总数
+        :param minor_count: 次要告警记录列表总数。
         :type minor_count: int
-        :param info_count: 提示告警记录列表总数
+        :param info_count: 提示告警记录列表总数。
         :type info_count: int
-        :param total: 告警记录列表总数
+        :param total: 告警记录列表总数。
         :type total: int
         """
         
@@ -74,7 +74,7 @@ class ListAlarmStatisticsResponse(SdkResponse):
     def critical_count(self):
         r"""Gets the critical_count of this ListAlarmStatisticsResponse.
 
-        紧急告警记录列表总数
+        紧急告警记录列表总数。
 
         :return: The critical_count of this ListAlarmStatisticsResponse.
         :rtype: int
@@ -85,7 +85,7 @@ class ListAlarmStatisticsResponse(SdkResponse):
     def critical_count(self, critical_count):
         r"""Sets the critical_count of this ListAlarmStatisticsResponse.
 
-        紧急告警记录列表总数
+        紧急告警记录列表总数。
 
         :param critical_count: The critical_count of this ListAlarmStatisticsResponse.
         :type critical_count: int
@@ -96,7 +96,7 @@ class ListAlarmStatisticsResponse(SdkResponse):
     def major_count(self):
         r"""Gets the major_count of this ListAlarmStatisticsResponse.
 
-        重要告警记录列表总数
+        重要告警记录列表总数。
 
         :return: The major_count of this ListAlarmStatisticsResponse.
         :rtype: int
@@ -107,7 +107,7 @@ class ListAlarmStatisticsResponse(SdkResponse):
     def major_count(self, major_count):
         r"""Sets the major_count of this ListAlarmStatisticsResponse.
 
-        重要告警记录列表总数
+        重要告警记录列表总数。
 
         :param major_count: The major_count of this ListAlarmStatisticsResponse.
         :type major_count: int
@@ -118,7 +118,7 @@ class ListAlarmStatisticsResponse(SdkResponse):
     def minor_count(self):
         r"""Gets the minor_count of this ListAlarmStatisticsResponse.
 
-        次要告警记录列表总数
+        次要告警记录列表总数。
 
         :return: The minor_count of this ListAlarmStatisticsResponse.
         :rtype: int
@@ -129,7 +129,7 @@ class ListAlarmStatisticsResponse(SdkResponse):
     def minor_count(self, minor_count):
         r"""Sets the minor_count of this ListAlarmStatisticsResponse.
 
-        次要告警记录列表总数
+        次要告警记录列表总数。
 
         :param minor_count: The minor_count of this ListAlarmStatisticsResponse.
         :type minor_count: int
@@ -140,7 +140,7 @@ class ListAlarmStatisticsResponse(SdkResponse):
     def info_count(self):
         r"""Gets the info_count of this ListAlarmStatisticsResponse.
 
-        提示告警记录列表总数
+        提示告警记录列表总数。
 
         :return: The info_count of this ListAlarmStatisticsResponse.
         :rtype: int
@@ -151,7 +151,7 @@ class ListAlarmStatisticsResponse(SdkResponse):
     def info_count(self, info_count):
         r"""Sets the info_count of this ListAlarmStatisticsResponse.
 
-        提示告警记录列表总数
+        提示告警记录列表总数。
 
         :param info_count: The info_count of this ListAlarmStatisticsResponse.
         :type info_count: int
@@ -162,7 +162,7 @@ class ListAlarmStatisticsResponse(SdkResponse):
     def total(self):
         r"""Gets the total of this ListAlarmStatisticsResponse.
 
-        告警记录列表总数
+        告警记录列表总数。
 
         :return: The total of this ListAlarmStatisticsResponse.
         :rtype: int
@@ -173,7 +173,7 @@ class ListAlarmStatisticsResponse(SdkResponse):
     def total(self, total):
         r"""Sets the total of this ListAlarmStatisticsResponse.
 
-        告警记录列表总数
+        告警记录列表总数。
 
         :param total: The total of this ListAlarmStatisticsResponse.
         :type total: int

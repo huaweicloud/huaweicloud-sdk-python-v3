@@ -57,7 +57,7 @@ class AdDomain:
         :type domain_type: str
         :param domain_name: 域名称。域类型为LOCAL_AD时需要配置。 域名必须为AD服务器上已经存在的域名，且长度不超过55。
         :type domain_name: str
-        :param domain_admin_account: 域管理员帐号。域类型为LOCAL_AD时需要配置。 必须为AD服务器上已经存在的域管理员帐号。
+        :param domain_admin_account: 域管理员账号。域类型为LOCAL_AD时需要配置。 必须为AD服务器上已经存在的域管理员账号。
         :type domain_admin_account: str
         :param domain_password: 域管理员账号密码。域类型为LOCAL_AD时需要配置。
         :type domain_password: str
@@ -172,7 +172,7 @@ class AdDomain:
     def domain_admin_account(self):
         r"""Gets the domain_admin_account of this AdDomain.
 
-        域管理员帐号。域类型为LOCAL_AD时需要配置。 必须为AD服务器上已经存在的域管理员帐号。
+        域管理员账号。域类型为LOCAL_AD时需要配置。 必须为AD服务器上已经存在的域管理员账号。
 
         :return: The domain_admin_account of this AdDomain.
         :rtype: str
@@ -183,7 +183,7 @@ class AdDomain:
     def domain_admin_account(self, domain_admin_account):
         r"""Sets the domain_admin_account of this AdDomain.
 
-        域管理员帐号。域类型为LOCAL_AD时需要配置。 必须为AD服务器上已经存在的域管理员帐号。
+        域管理员账号。域类型为LOCAL_AD时需要配置。 必须为AD服务器上已经存在的域管理员账号。
 
         :param domain_admin_account: The domain_admin_account of this AdDomain.
         :type domain_admin_account: str

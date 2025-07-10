@@ -20,7 +20,7 @@ class DecribeCollectionData:
         'store_name': 'str',
         'collection_name': 'str',
         'fields': 'list[FieldData]',
-        'load_status': 'str',
+        'load_state': 'str',
         'description': 'str',
         'params': 'dict(str, object)',
         'indexes': 'list[IndexParams]',
@@ -31,33 +31,33 @@ class DecribeCollectionData:
         'store_name': 'store_name',
         'collection_name': 'collection_name',
         'fields': 'fields',
-        'load_status': 'load_status',
+        'load_state': 'load_state',
         'description': 'description',
         'params': 'params',
         'indexes': 'indexes',
         'entity_num': 'entity_num'
     }
 
-    def __init__(self, store_name=None, collection_name=None, fields=None, load_status=None, description=None, params=None, indexes=None, entity_num=None):
+    def __init__(self, store_name=None, collection_name=None, fields=None, load_state=None, description=None, params=None, indexes=None, entity_num=None):
         r"""DecribeCollectionData
 
         The model defined in huaweicloud sdk
 
-        :param store_name: 知识仓实例名称
+        :param store_name: **参数解释：** 知识仓实例名称，region内唯一。 **约束限制：** 长度范围为3到63个字符，支持小写字母、数字、中划线（-），第一个字符只能够是小写字母，中划线(-)不得出现在字符串末尾。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type store_name: str
-        :param collection_name: collection名字
+        :param collection_name: **参数解释：** collection名称。 **约束限制：** 可包含数字、字母和下划线 (_)。资源名称必须以字母或下划线 (_) 开头。最大长度支持255。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
         :type collection_name: str
-        :param fields: collection各个field信息
+        :param fields: **参数解释：** collection各个field信息。 **约束限制：** 不涉及。
         :type fields: list[:class:`huaweicloudsdkdwr.v1.FieldData`]
-        :param load_status: 标识当前Collection加载状态。 1、LoadStateLoaded：表示当前Collection已准备就绪，可正常使用。 2、LoadStateLoading：表示当前Collection正在load。 3、LoadStateNotLoad：表示collection未加载。
-        :type load_status: str
-        :param description: Collection 的描述信息
+        :param load_state: **参数解释：** 标识当前Collection加载状态。 **约束限制：** 不涉及。 **取值范围：** 1、LoadStateLoaded：表示当前Collection已准备就绪，可正常使用。 2、LoadStateLoading：表示当前Collection正在load。 3、LoadStateNotLoad：表示collection未加载。 **默认取值:** 不涉及。
+        :type load_state: str
+        :param description: **参数解释：** Collection 的描述信息。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
         :type description: str
-        :param params: collection参数： shards_num partitions_num max_length
+        :param params: **参数解释：** collection常用参数。 **约束限制：** shards_num: 默认2，取值范围[1, 16] partitions_num: 默认4，取值范围[1, 1024]，若所有field的partition_key为false，则partitions_num固定为1。 max_length: 默认256，取值范围[1, 65535]，当primary_field.type为String时，指示String的最大长度。
         :type params: dict(str, object)
-        :param indexes: collection中各个索引信息
+        :param indexes: **参数解释：** 索引的配置信息。 **约束限制：** 不涉及。
         :type indexes: list[:class:`huaweicloudsdkdwr.v1.IndexParams`]
-        :param entity_num: collection中的entity数量
+        :param entity_num: **参数解释：** collection中的entity数量。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
         :type entity_num: int
         """
         
@@ -66,7 +66,7 @@ class DecribeCollectionData:
         self._store_name = None
         self._collection_name = None
         self._fields = None
-        self._load_status = None
+        self._load_state = None
         self._description = None
         self._params = None
         self._indexes = None
@@ -76,8 +76,8 @@ class DecribeCollectionData:
         self.store_name = store_name
         self.collection_name = collection_name
         self.fields = fields
-        if load_status is not None:
-            self.load_status = load_status
+        if load_state is not None:
+            self.load_state = load_state
         if description is not None:
             self.description = description
         if params is not None:
@@ -91,7 +91,7 @@ class DecribeCollectionData:
     def store_name(self):
         r"""Gets the store_name of this DecribeCollectionData.
 
-        知识仓实例名称
+        **参数解释：** 知识仓实例名称，region内唯一。 **约束限制：** 长度范围为3到63个字符，支持小写字母、数字、中划线（-），第一个字符只能够是小写字母，中划线(-)不得出现在字符串末尾。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The store_name of this DecribeCollectionData.
         :rtype: str
@@ -102,7 +102,7 @@ class DecribeCollectionData:
     def store_name(self, store_name):
         r"""Sets the store_name of this DecribeCollectionData.
 
-        知识仓实例名称
+        **参数解释：** 知识仓实例名称，region内唯一。 **约束限制：** 长度范围为3到63个字符，支持小写字母、数字、中划线（-），第一个字符只能够是小写字母，中划线(-)不得出现在字符串末尾。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param store_name: The store_name of this DecribeCollectionData.
         :type store_name: str
@@ -113,7 +113,7 @@ class DecribeCollectionData:
     def collection_name(self):
         r"""Gets the collection_name of this DecribeCollectionData.
 
-        collection名字
+        **参数解释：** collection名称。 **约束限制：** 可包含数字、字母和下划线 (_)。资源名称必须以字母或下划线 (_) 开头。最大长度支持255。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :return: The collection_name of this DecribeCollectionData.
         :rtype: str
@@ -124,7 +124,7 @@ class DecribeCollectionData:
     def collection_name(self, collection_name):
         r"""Sets the collection_name of this DecribeCollectionData.
 
-        collection名字
+        **参数解释：** collection名称。 **约束限制：** 可包含数字、字母和下划线 (_)。资源名称必须以字母或下划线 (_) 开头。最大长度支持255。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :param collection_name: The collection_name of this DecribeCollectionData.
         :type collection_name: str
@@ -135,7 +135,7 @@ class DecribeCollectionData:
     def fields(self):
         r"""Gets the fields of this DecribeCollectionData.
 
-        collection各个field信息
+        **参数解释：** collection各个field信息。 **约束限制：** 不涉及。
 
         :return: The fields of this DecribeCollectionData.
         :rtype: list[:class:`huaweicloudsdkdwr.v1.FieldData`]
@@ -146,7 +146,7 @@ class DecribeCollectionData:
     def fields(self, fields):
         r"""Sets the fields of this DecribeCollectionData.
 
-        collection各个field信息
+        **参数解释：** collection各个field信息。 **约束限制：** 不涉及。
 
         :param fields: The fields of this DecribeCollectionData.
         :type fields: list[:class:`huaweicloudsdkdwr.v1.FieldData`]
@@ -154,32 +154,32 @@ class DecribeCollectionData:
         self._fields = fields
 
     @property
-    def load_status(self):
-        r"""Gets the load_status of this DecribeCollectionData.
+    def load_state(self):
+        r"""Gets the load_state of this DecribeCollectionData.
 
-        标识当前Collection加载状态。 1、LoadStateLoaded：表示当前Collection已准备就绪，可正常使用。 2、LoadStateLoading：表示当前Collection正在load。 3、LoadStateNotLoad：表示collection未加载。
+        **参数解释：** 标识当前Collection加载状态。 **约束限制：** 不涉及。 **取值范围：** 1、LoadStateLoaded：表示当前Collection已准备就绪，可正常使用。 2、LoadStateLoading：表示当前Collection正在load。 3、LoadStateNotLoad：表示collection未加载。 **默认取值:** 不涉及。
 
-        :return: The load_status of this DecribeCollectionData.
+        :return: The load_state of this DecribeCollectionData.
         :rtype: str
         """
-        return self._load_status
+        return self._load_state
 
-    @load_status.setter
-    def load_status(self, load_status):
-        r"""Sets the load_status of this DecribeCollectionData.
+    @load_state.setter
+    def load_state(self, load_state):
+        r"""Sets the load_state of this DecribeCollectionData.
 
-        标识当前Collection加载状态。 1、LoadStateLoaded：表示当前Collection已准备就绪，可正常使用。 2、LoadStateLoading：表示当前Collection正在load。 3、LoadStateNotLoad：表示collection未加载。
+        **参数解释：** 标识当前Collection加载状态。 **约束限制：** 不涉及。 **取值范围：** 1、LoadStateLoaded：表示当前Collection已准备就绪，可正常使用。 2、LoadStateLoading：表示当前Collection正在load。 3、LoadStateNotLoad：表示collection未加载。 **默认取值:** 不涉及。
 
-        :param load_status: The load_status of this DecribeCollectionData.
-        :type load_status: str
+        :param load_state: The load_state of this DecribeCollectionData.
+        :type load_state: str
         """
-        self._load_status = load_status
+        self._load_state = load_state
 
     @property
     def description(self):
         r"""Gets the description of this DecribeCollectionData.
 
-        Collection 的描述信息
+        **参数解释：** Collection 的描述信息。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :return: The description of this DecribeCollectionData.
         :rtype: str
@@ -190,7 +190,7 @@ class DecribeCollectionData:
     def description(self, description):
         r"""Sets the description of this DecribeCollectionData.
 
-        Collection 的描述信息
+        **参数解释：** Collection 的描述信息。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :param description: The description of this DecribeCollectionData.
         :type description: str
@@ -201,7 +201,7 @@ class DecribeCollectionData:
     def params(self):
         r"""Gets the params of this DecribeCollectionData.
 
-        collection参数： shards_num partitions_num max_length
+        **参数解释：** collection常用参数。 **约束限制：** shards_num: 默认2，取值范围[1, 16] partitions_num: 默认4，取值范围[1, 1024]，若所有field的partition_key为false，则partitions_num固定为1。 max_length: 默认256，取值范围[1, 65535]，当primary_field.type为String时，指示String的最大长度。
 
         :return: The params of this DecribeCollectionData.
         :rtype: dict(str, object)
@@ -212,7 +212,7 @@ class DecribeCollectionData:
     def params(self, params):
         r"""Sets the params of this DecribeCollectionData.
 
-        collection参数： shards_num partitions_num max_length
+        **参数解释：** collection常用参数。 **约束限制：** shards_num: 默认2，取值范围[1, 16] partitions_num: 默认4，取值范围[1, 1024]，若所有field的partition_key为false，则partitions_num固定为1。 max_length: 默认256，取值范围[1, 65535]，当primary_field.type为String时，指示String的最大长度。
 
         :param params: The params of this DecribeCollectionData.
         :type params: dict(str, object)
@@ -223,7 +223,7 @@ class DecribeCollectionData:
     def indexes(self):
         r"""Gets the indexes of this DecribeCollectionData.
 
-        collection中各个索引信息
+        **参数解释：** 索引的配置信息。 **约束限制：** 不涉及。
 
         :return: The indexes of this DecribeCollectionData.
         :rtype: list[:class:`huaweicloudsdkdwr.v1.IndexParams`]
@@ -234,7 +234,7 @@ class DecribeCollectionData:
     def indexes(self, indexes):
         r"""Sets the indexes of this DecribeCollectionData.
 
-        collection中各个索引信息
+        **参数解释：** 索引的配置信息。 **约束限制：** 不涉及。
 
         :param indexes: The indexes of this DecribeCollectionData.
         :type indexes: list[:class:`huaweicloudsdkdwr.v1.IndexParams`]
@@ -245,7 +245,7 @@ class DecribeCollectionData:
     def entity_num(self):
         r"""Gets the entity_num of this DecribeCollectionData.
 
-        collection中的entity数量
+        **参数解释：** collection中的entity数量。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :return: The entity_num of this DecribeCollectionData.
         :rtype: int
@@ -256,7 +256,7 @@ class DecribeCollectionData:
     def entity_num(self, entity_num):
         r"""Sets the entity_num of this DecribeCollectionData.
 
-        collection中的entity数量
+        **参数解释：** collection中的entity数量。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :param entity_num: The entity_num of this DecribeCollectionData.
         :type entity_num: int

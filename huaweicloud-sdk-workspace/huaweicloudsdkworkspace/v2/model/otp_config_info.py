@@ -43,19 +43,19 @@ class OtpConfigInfo:
 
         The model defined in huaweicloud sdk
 
-        :param enable: 是否启用
+        :param enable: 是否启用。
         :type enable: bool
         :param receive_mode: 
         :type receive_mode: :class:`huaweicloudsdkworkspace.v2.ReceiveModeEnum`
-        :param auth_url: 辅助认证服务器地址
+        :param auth_url: 辅助认证服务器地址。
         :type auth_url: str
-        :param app_id: 认证服务接入账号
+        :param app_id: 认证服务接入账号。
         :type app_id: str
-        :param app_secret: 认证服务接入密码
+        :param app_secret: 认证服务接入密码。
         :type app_secret: str
         :param auth_server_access_mode: 
         :type auth_server_access_mode: :class:`huaweicloudsdkworkspace.v2.AuthServerAccessMode`
-        :param cert_content: pem格式证书内容
+        :param cert_content: pem格式证书内容。
         :type cert_content: str
         :param apply_rule: 
         :type apply_rule: :class:`huaweicloudsdkworkspace.v2.ApplyRuleInfo`
@@ -94,7 +94,7 @@ class OtpConfigInfo:
     def enable(self):
         r"""Gets the enable of this OtpConfigInfo.
 
-        是否启用
+        是否启用。
 
         :return: The enable of this OtpConfigInfo.
         :rtype: bool
@@ -105,7 +105,7 @@ class OtpConfigInfo:
     def enable(self, enable):
         r"""Sets the enable of this OtpConfigInfo.
 
-        是否启用
+        是否启用。
 
         :param enable: The enable of this OtpConfigInfo.
         :type enable: bool
@@ -134,7 +134,7 @@ class OtpConfigInfo:
     def auth_url(self):
         r"""Gets the auth_url of this OtpConfigInfo.
 
-        辅助认证服务器地址
+        辅助认证服务器地址。
 
         :return: The auth_url of this OtpConfigInfo.
         :rtype: str
@@ -145,7 +145,7 @@ class OtpConfigInfo:
     def auth_url(self, auth_url):
         r"""Sets the auth_url of this OtpConfigInfo.
 
-        辅助认证服务器地址
+        辅助认证服务器地址。
 
         :param auth_url: The auth_url of this OtpConfigInfo.
         :type auth_url: str
@@ -156,7 +156,7 @@ class OtpConfigInfo:
     def app_id(self):
         r"""Gets the app_id of this OtpConfigInfo.
 
-        认证服务接入账号
+        认证服务接入账号。
 
         :return: The app_id of this OtpConfigInfo.
         :rtype: str
@@ -167,7 +167,7 @@ class OtpConfigInfo:
     def app_id(self, app_id):
         r"""Sets the app_id of this OtpConfigInfo.
 
-        认证服务接入账号
+        认证服务接入账号。
 
         :param app_id: The app_id of this OtpConfigInfo.
         :type app_id: str
@@ -178,7 +178,7 @@ class OtpConfigInfo:
     def app_secret(self):
         r"""Gets the app_secret of this OtpConfigInfo.
 
-        认证服务接入密码
+        认证服务接入密码。
 
         :return: The app_secret of this OtpConfigInfo.
         :rtype: str
@@ -189,7 +189,7 @@ class OtpConfigInfo:
     def app_secret(self, app_secret):
         r"""Sets the app_secret of this OtpConfigInfo.
 
-        认证服务接入密码
+        认证服务接入密码。
 
         :param app_secret: The app_secret of this OtpConfigInfo.
         :type app_secret: str
@@ -218,7 +218,7 @@ class OtpConfigInfo:
     def cert_content(self):
         r"""Gets the cert_content of this OtpConfigInfo.
 
-        pem格式证书内容
+        pem格式证书内容。
 
         :return: The cert_content of this OtpConfigInfo.
         :rtype: str
@@ -229,7 +229,7 @@ class OtpConfigInfo:
     def cert_content(self, cert_content):
         r"""Sets the cert_content of this OtpConfigInfo.
 
-        pem格式证书内容
+        pem格式证书内容。
 
         :param cert_content: The cert_content of this OtpConfigInfo.
         :type cert_content: str

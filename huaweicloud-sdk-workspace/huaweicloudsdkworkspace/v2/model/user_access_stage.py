@@ -41,19 +41,19 @@ class UserAccessStage:
 
         The model defined in huaweicloud sdk
 
-        :param stage: 接入阶段 | LOGIN - 登录 PRECONNECT - 预连接 CONNECT - 正式连接
+        :param stage: 接入阶段 | LOGIN - 登录 PRECONNECT - 预连接 CONNECT - 正式连接。
         :type stage: str
-        :param duration: 花费时长，单位：ms
+        :param duration: 花费时长，单位：ms。
         :type duration: int
-        :param is_success: 接入阶段是否成功
+        :param is_success: 接入阶段是否成功。
         :type is_success: bool
-        :param start_time: 开始时间戳
+        :param start_time: 开始时间戳。
         :type start_time: int
-        :param end_time: 结束时间戳
+        :param end_time: 结束时间戳。
         :type end_time: int
-        :param error_code: 错误码
+        :param error_code: 错误码。
         :type error_code: str
-        :param error_msg: 错误描述
+        :param error_msg: 错误描述。
         :type error_msg: str
         """
         
@@ -87,7 +87,7 @@ class UserAccessStage:
     def stage(self):
         r"""Gets the stage of this UserAccessStage.
 
-        接入阶段 | LOGIN - 登录 PRECONNECT - 预连接 CONNECT - 正式连接
+        接入阶段 | LOGIN - 登录 PRECONNECT - 预连接 CONNECT - 正式连接。
 
         :return: The stage of this UserAccessStage.
         :rtype: str
@@ -98,7 +98,7 @@ class UserAccessStage:
     def stage(self, stage):
         r"""Sets the stage of this UserAccessStage.
 
-        接入阶段 | LOGIN - 登录 PRECONNECT - 预连接 CONNECT - 正式连接
+        接入阶段 | LOGIN - 登录 PRECONNECT - 预连接 CONNECT - 正式连接。
 
         :param stage: The stage of this UserAccessStage.
         :type stage: str
@@ -109,7 +109,7 @@ class UserAccessStage:
     def duration(self):
         r"""Gets the duration of this UserAccessStage.
 
-        花费时长，单位：ms
+        花费时长，单位：ms。
 
         :return: The duration of this UserAccessStage.
         :rtype: int
@@ -120,7 +120,7 @@ class UserAccessStage:
     def duration(self, duration):
         r"""Sets the duration of this UserAccessStage.
 
-        花费时长，单位：ms
+        花费时长，单位：ms。
 
         :param duration: The duration of this UserAccessStage.
         :type duration: int
@@ -131,7 +131,7 @@ class UserAccessStage:
     def is_success(self):
         r"""Gets the is_success of this UserAccessStage.
 
-        接入阶段是否成功
+        接入阶段是否成功。
 
         :return: The is_success of this UserAccessStage.
         :rtype: bool
@@ -142,7 +142,7 @@ class UserAccessStage:
     def is_success(self, is_success):
         r"""Sets the is_success of this UserAccessStage.
 
-        接入阶段是否成功
+        接入阶段是否成功。
 
         :param is_success: The is_success of this UserAccessStage.
         :type is_success: bool
@@ -153,7 +153,7 @@ class UserAccessStage:
     def start_time(self):
         r"""Gets the start_time of this UserAccessStage.
 
-        开始时间戳
+        开始时间戳。
 
         :return: The start_time of this UserAccessStage.
         :rtype: int
@@ -164,7 +164,7 @@ class UserAccessStage:
     def start_time(self, start_time):
         r"""Sets the start_time of this UserAccessStage.
 
-        开始时间戳
+        开始时间戳。
 
         :param start_time: The start_time of this UserAccessStage.
         :type start_time: int
@@ -175,7 +175,7 @@ class UserAccessStage:
     def end_time(self):
         r"""Gets the end_time of this UserAccessStage.
 
-        结束时间戳
+        结束时间戳。
 
         :return: The end_time of this UserAccessStage.
         :rtype: int
@@ -186,7 +186,7 @@ class UserAccessStage:
     def end_time(self, end_time):
         r"""Sets the end_time of this UserAccessStage.
 
-        结束时间戳
+        结束时间戳。
 
         :param end_time: The end_time of this UserAccessStage.
         :type end_time: int
@@ -197,7 +197,7 @@ class UserAccessStage:
     def error_code(self):
         r"""Gets the error_code of this UserAccessStage.
 
-        错误码
+        错误码。
 
         :return: The error_code of this UserAccessStage.
         :rtype: str
@@ -208,7 +208,7 @@ class UserAccessStage:
     def error_code(self, error_code):
         r"""Sets the error_code of this UserAccessStage.
 
-        错误码
+        错误码。
 
         :param error_code: The error_code of this UserAccessStage.
         :type error_code: str
@@ -219,7 +219,7 @@ class UserAccessStage:
     def error_msg(self):
         r"""Gets the error_msg of this UserAccessStage.
 
-        错误描述
+        错误描述。
 
         :return: The error_msg of this UserAccessStage.
         :rtype: str
@@ -230,7 +230,7 @@ class UserAccessStage:
     def error_msg(self, error_msg):
         r"""Sets the error_msg of this UserAccessStage.
 
-        错误描述
+        错误描述。
 
         :param error_msg: The error_msg of this UserAccessStage.
         :type error_msg: str

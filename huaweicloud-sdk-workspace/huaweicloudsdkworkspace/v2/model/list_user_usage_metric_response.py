@@ -32,9 +32,9 @@ class ListUserUsageMetricResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param count: 总数
+        :param count: 总数。
         :type count: int
-        :param items: 用户统计指标
+        :param items: 用户统计指标。
         :type items: list[:class:`huaweicloudsdkworkspace.v2.UserMetric`]
         """
         
@@ -53,7 +53,7 @@ class ListUserUsageMetricResponse(SdkResponse):
     def count(self):
         r"""Gets the count of this ListUserUsageMetricResponse.
 
-        总数
+        总数。
 
         :return: The count of this ListUserUsageMetricResponse.
         :rtype: int
@@ -64,7 +64,7 @@ class ListUserUsageMetricResponse(SdkResponse):
     def count(self, count):
         r"""Sets the count of this ListUserUsageMetricResponse.
 
-        总数
+        总数。
 
         :param count: The count of this ListUserUsageMetricResponse.
         :type count: int
@@ -75,7 +75,7 @@ class ListUserUsageMetricResponse(SdkResponse):
     def items(self):
         r"""Gets the items of this ListUserUsageMetricResponse.
 
-        用户统计指标
+        用户统计指标。
 
         :return: The items of this ListUserUsageMetricResponse.
         :rtype: list[:class:`huaweicloudsdkworkspace.v2.UserMetric`]
@@ -86,7 +86,7 @@ class ListUserUsageMetricResponse(SdkResponse):
     def items(self, items):
         r"""Sets the items of this ListUserUsageMetricResponse.
 
-        用户统计指标
+        用户统计指标。
 
         :param items: The items of this ListUserUsageMetricResponse.
         :type items: list[:class:`huaweicloudsdkworkspace.v2.UserMetric`]

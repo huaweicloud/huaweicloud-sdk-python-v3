@@ -30,7 +30,7 @@ class UpdateSubnetIdsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param job_id: 任务id
+        :param job_id: 任务id。
         :type job_id: str
         """
         
@@ -46,7 +46,7 @@ class UpdateSubnetIdsResponse(SdkResponse):
     def job_id(self):
         r"""Gets the job_id of this UpdateSubnetIdsResponse.
 
-        任务id
+        任务id。
 
         :return: The job_id of this UpdateSubnetIdsResponse.
         :rtype: str
@@ -57,7 +57,7 @@ class UpdateSubnetIdsResponse(SdkResponse):
     def job_id(self, job_id):
         r"""Sets the job_id of this UpdateSubnetIdsResponse.
 
-        任务id
+        任务id。
 
         :param job_id: The job_id of this UpdateSubnetIdsResponse.
         :type job_id: str

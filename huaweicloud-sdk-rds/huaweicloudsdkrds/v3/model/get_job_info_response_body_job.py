@@ -24,7 +24,7 @@ class GetJobInfoResponseBodyJob:
         'ended': 'str',
         'process': 'str',
         'instance': 'GetTaskDetailListRspJobsInstance',
-        'entities': 'object',
+        'entities': 'GetJobInfoResponseBodyJobEntities',
         'fail_reason': 'str'
     }
 
@@ -59,8 +59,8 @@ class GetJobInfoResponseBodyJob:
         :type process: str
         :param instance: 
         :type instance: :class:`huaweicloudsdkrds.v3.GetTaskDetailListRspJobsInstance`
-        :param entities: 根据不同的任务，显示不同的内容。
-        :type entities: object
+        :param entities: 
+        :type entities: :class:`huaweicloudsdkrds.v3.GetJobInfoResponseBodyJobEntities`
         :param fail_reason: 任务执行失败时的错误信息。
         :type fail_reason: str
         """
@@ -246,10 +246,8 @@ class GetJobInfoResponseBodyJob:
     def entities(self):
         r"""Gets the entities of this GetJobInfoResponseBodyJob.
 
-        根据不同的任务，显示不同的内容。
-
         :return: The entities of this GetJobInfoResponseBodyJob.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkrds.v3.GetJobInfoResponseBodyJobEntities`
         """
         return self._entities
 
@@ -257,10 +255,8 @@ class GetJobInfoResponseBodyJob:
     def entities(self, entities):
         r"""Sets the entities of this GetJobInfoResponseBodyJob.
 
-        根据不同的任务，显示不同的内容。
-
         :param entities: The entities of this GetJobInfoResponseBodyJob.
-        :type entities: object
+        :type entities: :class:`huaweicloudsdkrds.v3.GetJobInfoResponseBodyJobEntities`
         """
         self._entities = entities
 

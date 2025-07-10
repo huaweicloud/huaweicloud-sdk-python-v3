@@ -31,9 +31,9 @@ class AdOuInfo:
 
         The model defined in huaweicloud sdk
 
-        :param ou_name: 名称
+        :param ou_name: 名称。
         :type ou_name: str
-        :param ou_dn: 域名地址
+        :param ou_dn: 域名地址。
         :type ou_dn: str
         """
         
@@ -52,7 +52,7 @@ class AdOuInfo:
     def ou_name(self):
         r"""Gets the ou_name of this AdOuInfo.
 
-        名称
+        名称。
 
         :return: The ou_name of this AdOuInfo.
         :rtype: str
@@ -63,7 +63,7 @@ class AdOuInfo:
     def ou_name(self, ou_name):
         r"""Sets the ou_name of this AdOuInfo.
 
-        名称
+        名称。
 
         :param ou_name: The ou_name of this AdOuInfo.
         :type ou_name: str
@@ -74,7 +74,7 @@ class AdOuInfo:
     def ou_dn(self):
         r"""Gets the ou_dn of this AdOuInfo.
 
-        域名地址
+        域名地址。
 
         :return: The ou_dn of this AdOuInfo.
         :rtype: str
@@ -85,7 +85,7 @@ class AdOuInfo:
     def ou_dn(self, ou_dn):
         r"""Sets the ou_dn of this AdOuInfo.
 
-        域名地址
+        域名地址。
 
         :param ou_dn: The ou_dn of this AdOuInfo.
         :type ou_dn: str

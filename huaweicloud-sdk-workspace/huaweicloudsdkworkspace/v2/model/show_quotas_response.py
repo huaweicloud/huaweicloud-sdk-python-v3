@@ -34,7 +34,7 @@ class ShowQuotasResponse(SdkResponse):
 
         :param quotas: 
         :type quotas: :class:`huaweicloudsdkworkspace.v2.QuotaNoLimit`
-        :param site_quotas: 站点配额信息，暂不包括中心站点
+        :param site_quotas: 站点配额信息，暂不包括中心站点。
         :type site_quotas: list[:class:`huaweicloudsdkworkspace.v2.SiteQuotaNoLimit`]
         """
         
@@ -71,7 +71,7 @@ class ShowQuotasResponse(SdkResponse):
     def site_quotas(self):
         r"""Gets the site_quotas of this ShowQuotasResponse.
 
-        站点配额信息，暂不包括中心站点
+        站点配额信息，暂不包括中心站点。
 
         :return: The site_quotas of this ShowQuotasResponse.
         :rtype: list[:class:`huaweicloudsdkworkspace.v2.SiteQuotaNoLimit`]
@@ -82,7 +82,7 @@ class ShowQuotasResponse(SdkResponse):
     def site_quotas(self, site_quotas):
         r"""Sets the site_quotas of this ShowQuotasResponse.
 
-        站点配额信息，暂不包括中心站点
+        站点配额信息，暂不包括中心站点。
 
         :param site_quotas: The site_quotas of this ShowQuotasResponse.
         :type site_quotas: list[:class:`huaweicloudsdkworkspace.v2.SiteQuotaNoLimit`]

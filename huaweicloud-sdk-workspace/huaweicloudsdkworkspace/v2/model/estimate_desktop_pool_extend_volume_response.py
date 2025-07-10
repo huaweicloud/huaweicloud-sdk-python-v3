@@ -36,13 +36,13 @@ class EstimateDesktopPoolExtendVolumeResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param currency: 币种，比如CNY
+        :param currency: 币种，比如CNY。
         :type currency: str
-        :param extend_params: 扩展参数
+        :param extend_params: 扩展参数。
         :type extend_params: str
         :param official_website_rating_result: 
         :type official_website_rating_result: :class:`huaweicloudsdkworkspace.v2.OfficialWebsiteRatingResult`
-        :param optional_discount_rating_results: 存在可选折扣优惠时返回折扣优惠维度询价结果，每个折扣优惠一组询价结果
+        :param optional_discount_rating_results: 存在可选折扣优惠时返回折扣优惠维度询价结果，每个折扣优惠一组询价结果。
         :type optional_discount_rating_results: list[:class:`huaweicloudsdkworkspace.v2.OptionalDiscountRatingResult`]
         """
         
@@ -67,7 +67,7 @@ class EstimateDesktopPoolExtendVolumeResponse(SdkResponse):
     def currency(self):
         r"""Gets the currency of this EstimateDesktopPoolExtendVolumeResponse.
 
-        币种，比如CNY
+        币种，比如CNY。
 
         :return: The currency of this EstimateDesktopPoolExtendVolumeResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class EstimateDesktopPoolExtendVolumeResponse(SdkResponse):
     def currency(self, currency):
         r"""Sets the currency of this EstimateDesktopPoolExtendVolumeResponse.
 
-        币种，比如CNY
+        币种，比如CNY。
 
         :param currency: The currency of this EstimateDesktopPoolExtendVolumeResponse.
         :type currency: str
@@ -89,7 +89,7 @@ class EstimateDesktopPoolExtendVolumeResponse(SdkResponse):
     def extend_params(self):
         r"""Gets the extend_params of this EstimateDesktopPoolExtendVolumeResponse.
 
-        扩展参数
+        扩展参数。
 
         :return: The extend_params of this EstimateDesktopPoolExtendVolumeResponse.
         :rtype: str
@@ -100,7 +100,7 @@ class EstimateDesktopPoolExtendVolumeResponse(SdkResponse):
     def extend_params(self, extend_params):
         r"""Sets the extend_params of this EstimateDesktopPoolExtendVolumeResponse.
 
-        扩展参数
+        扩展参数。
 
         :param extend_params: The extend_params of this EstimateDesktopPoolExtendVolumeResponse.
         :type extend_params: str
@@ -129,7 +129,7 @@ class EstimateDesktopPoolExtendVolumeResponse(SdkResponse):
     def optional_discount_rating_results(self):
         r"""Gets the optional_discount_rating_results of this EstimateDesktopPoolExtendVolumeResponse.
 
-        存在可选折扣优惠时返回折扣优惠维度询价结果，每个折扣优惠一组询价结果
+        存在可选折扣优惠时返回折扣优惠维度询价结果，每个折扣优惠一组询价结果。
 
         :return: The optional_discount_rating_results of this EstimateDesktopPoolExtendVolumeResponse.
         :rtype: list[:class:`huaweicloudsdkworkspace.v2.OptionalDiscountRatingResult`]
@@ -140,7 +140,7 @@ class EstimateDesktopPoolExtendVolumeResponse(SdkResponse):
     def optional_discount_rating_results(self, optional_discount_rating_results):
         r"""Sets the optional_discount_rating_results of this EstimateDesktopPoolExtendVolumeResponse.
 
-        存在可选折扣优惠时返回折扣优惠维度询价结果，每个折扣优惠一组询价结果
+        存在可选折扣优惠时返回折扣优惠维度询价结果，每个折扣优惠一组询价结果。
 
         :param optional_discount_rating_results: The optional_discount_rating_results of this EstimateDesktopPoolExtendVolumeResponse.
         :type optional_discount_rating_results: list[:class:`huaweicloudsdkworkspace.v2.OptionalDiscountRatingResult`]

@@ -37,11 +37,11 @@ class ResourceNoLimit:
 
         :param type: 资源类别。 general_instances：普通桌面 Memory：内存 cores：CPU volumes：磁盘数量 volume_gigabytes：磁盘容量 gpu_instances：GPU桌面 deh：云办公主机 users：用户 policy_groups: 策略组 Cores: CPU(配额工具使用)
         :type type: str
-        :param quota: 配额数
+        :param quota: 配额数。
         :type quota: int
-        :param used: 配额已用值
+        :param used: 配额已用值。
         :type used: int
-        :param unit: 配额单位
+        :param unit: 配额单位。
         :type unit: str
         """
         
@@ -88,7 +88,7 @@ class ResourceNoLimit:
     def quota(self):
         r"""Gets the quota of this ResourceNoLimit.
 
-        配额数
+        配额数。
 
         :return: The quota of this ResourceNoLimit.
         :rtype: int
@@ -99,7 +99,7 @@ class ResourceNoLimit:
     def quota(self, quota):
         r"""Sets the quota of this ResourceNoLimit.
 
-        配额数
+        配额数。
 
         :param quota: The quota of this ResourceNoLimit.
         :type quota: int
@@ -110,7 +110,7 @@ class ResourceNoLimit:
     def used(self):
         r"""Gets the used of this ResourceNoLimit.
 
-        配额已用值
+        配额已用值。
 
         :return: The used of this ResourceNoLimit.
         :rtype: int
@@ -121,7 +121,7 @@ class ResourceNoLimit:
     def used(self, used):
         r"""Sets the used of this ResourceNoLimit.
 
-        配额已用值
+        配额已用值。
 
         :param used: The used of this ResourceNoLimit.
         :type used: int
@@ -132,7 +132,7 @@ class ResourceNoLimit:
     def unit(self):
         r"""Gets the unit of this ResourceNoLimit.
 
-        配额单位
+        配额单位。
 
         :return: The unit of this ResourceNoLimit.
         :rtype: str
@@ -143,7 +143,7 @@ class ResourceNoLimit:
     def unit(self, unit):
         r"""Sets the unit of this ResourceNoLimit.
 
-        配额单位
+        配额单位。
 
         :param unit: The unit of this ResourceNoLimit.
         :type unit: str

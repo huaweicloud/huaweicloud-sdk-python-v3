@@ -33,11 +33,11 @@ class ListRestrictedRuleRequest:
 
         The model defined in huaweicloud sdk
 
-        :param offset: 查询的偏移量。
+        :param offset: 查询的偏移量，默认值0。
         :type offset: int
-        :param limit: 单次查询的大小[1-100]。
+        :param limit: 单次查询的大小[1-100]，默认值10。
         :type limit: int
-        :param name: 应用规则名称
+        :param name: 应用规则名称。
         :type name: str
         """
         
@@ -59,7 +59,7 @@ class ListRestrictedRuleRequest:
     def offset(self):
         r"""Gets the offset of this ListRestrictedRuleRequest.
 
-        查询的偏移量。
+        查询的偏移量，默认值0。
 
         :return: The offset of this ListRestrictedRuleRequest.
         :rtype: int
@@ -70,7 +70,7 @@ class ListRestrictedRuleRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListRestrictedRuleRequest.
 
-        查询的偏移量。
+        查询的偏移量，默认值0。
 
         :param offset: The offset of this ListRestrictedRuleRequest.
         :type offset: int
@@ -81,7 +81,7 @@ class ListRestrictedRuleRequest:
     def limit(self):
         r"""Gets the limit of this ListRestrictedRuleRequest.
 
-        单次查询的大小[1-100]。
+        单次查询的大小[1-100]，默认值10。
 
         :return: The limit of this ListRestrictedRuleRequest.
         :rtype: int
@@ -92,7 +92,7 @@ class ListRestrictedRuleRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListRestrictedRuleRequest.
 
-        单次查询的大小[1-100]。
+        单次查询的大小[1-100]，默认值10。
 
         :param limit: The limit of this ListRestrictedRuleRequest.
         :type limit: int
@@ -103,7 +103,7 @@ class ListRestrictedRuleRequest:
     def name(self):
         r"""Gets the name of this ListRestrictedRuleRequest.
 
-        应用规则名称
+        应用规则名称。
 
         :return: The name of this ListRestrictedRuleRequest.
         :rtype: str
@@ -114,7 +114,7 @@ class ListRestrictedRuleRequest:
     def name(self, name):
         r"""Sets the name of this ListRestrictedRuleRequest.
 
-        应用规则名称
+        应用规则名称。
 
         :param name: The name of this ListRestrictedRuleRequest.
         :type name: str

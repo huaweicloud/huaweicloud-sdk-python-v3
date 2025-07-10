@@ -37,11 +37,11 @@ class AutoscalePolicy:
 
         :param autoscale_type: 弹性伸缩类型，ACCESS_CREATED：接入时创建，AUTO_CREATED：弹性伸缩。
         :type autoscale_type: str
-        :param max_auto_created: 自动创建桌面上限
+        :param max_auto_created: 自动创建桌面上限。
         :type max_auto_created: int
-        :param min_idle: 空闲桌面低于多少时开始自动创建桌面
+        :param min_idle: 空闲桌面低于多少时开始自动创建桌面。
         :type min_idle: int
-        :param once_auto_created: 一次自动创建桌面的数量
+        :param once_auto_created: 一次自动创建桌面的数量。
         :type once_auto_created: int
         """
         
@@ -88,7 +88,7 @@ class AutoscalePolicy:
     def max_auto_created(self):
         r"""Gets the max_auto_created of this AutoscalePolicy.
 
-        自动创建桌面上限
+        自动创建桌面上限。
 
         :return: The max_auto_created of this AutoscalePolicy.
         :rtype: int
@@ -99,7 +99,7 @@ class AutoscalePolicy:
     def max_auto_created(self, max_auto_created):
         r"""Sets the max_auto_created of this AutoscalePolicy.
 
-        自动创建桌面上限
+        自动创建桌面上限。
 
         :param max_auto_created: The max_auto_created of this AutoscalePolicy.
         :type max_auto_created: int
@@ -110,7 +110,7 @@ class AutoscalePolicy:
     def min_idle(self):
         r"""Gets the min_idle of this AutoscalePolicy.
 
-        空闲桌面低于多少时开始自动创建桌面
+        空闲桌面低于多少时开始自动创建桌面。
 
         :return: The min_idle of this AutoscalePolicy.
         :rtype: int
@@ -121,7 +121,7 @@ class AutoscalePolicy:
     def min_idle(self, min_idle):
         r"""Sets the min_idle of this AutoscalePolicy.
 
-        空闲桌面低于多少时开始自动创建桌面
+        空闲桌面低于多少时开始自动创建桌面。
 
         :param min_idle: The min_idle of this AutoscalePolicy.
         :type min_idle: int
@@ -132,7 +132,7 @@ class AutoscalePolicy:
     def once_auto_created(self):
         r"""Gets the once_auto_created of this AutoscalePolicy.
 
-        一次自动创建桌面的数量
+        一次自动创建桌面的数量。
 
         :return: The once_auto_created of this AutoscalePolicy.
         :rtype: int
@@ -143,7 +143,7 @@ class AutoscalePolicy:
     def once_auto_created(self, once_auto_created):
         r"""Sets the once_auto_created of this AutoscalePolicy.
 
-        一次自动创建桌面的数量
+        一次自动创建桌面的数量。
 
         :param once_auto_created: The once_auto_created of this AutoscalePolicy.
         :type once_auto_created: int

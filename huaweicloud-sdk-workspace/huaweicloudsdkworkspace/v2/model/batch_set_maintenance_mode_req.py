@@ -31,7 +31,7 @@ class BatchSetMaintenanceModeReq:
 
         The model defined in huaweicloud sdk
 
-        :param desktop_ids: 需要设置维护模式的desktopId列表
+        :param desktop_ids: 需要设置维护模式的desktopId列表。
         :type desktop_ids: list[str]
         :param in_maintenance_mode: 进入或退出管理员维护模式 false:  退出维护模式 true: 维护模式
         :type in_maintenance_mode: bool
@@ -50,7 +50,7 @@ class BatchSetMaintenanceModeReq:
     def desktop_ids(self):
         r"""Gets the desktop_ids of this BatchSetMaintenanceModeReq.
 
-        需要设置维护模式的desktopId列表
+        需要设置维护模式的desktopId列表。
 
         :return: The desktop_ids of this BatchSetMaintenanceModeReq.
         :rtype: list[str]
@@ -61,7 +61,7 @@ class BatchSetMaintenanceModeReq:
     def desktop_ids(self, desktop_ids):
         r"""Sets the desktop_ids of this BatchSetMaintenanceModeReq.
 
-        需要设置维护模式的desktopId列表
+        需要设置维护模式的desktopId列表。
 
         :param desktop_ids: The desktop_ids of this BatchSetMaintenanceModeReq.
         :type desktop_ids: list[str]

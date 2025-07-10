@@ -20,7 +20,6 @@ class VolumeInfo:
         'id': 'str',
         'type': 'str',
         'size': 'int',
-        'cluster_id': 'str',
         'resource_spec_code': 'str'
     }
 
@@ -28,11 +27,10 @@ class VolumeInfo:
         'id': 'id',
         'type': 'type',
         'size': 'size',
-        'cluster_id': 'cluster_id',
         'resource_spec_code': 'resource_spec_code'
     }
 
-    def __init__(self, id=None, type=None, size=None, cluster_id=None, resource_spec_code=None):
+    def __init__(self, id=None, type=None, size=None, resource_spec_code=None):
         r"""VolumeInfo
 
         The model defined in huaweicloud sdk
@@ -43,9 +41,7 @@ class VolumeInfo:
         :type type: str
         :param size: 磁盘容量，单位GB。
         :type size: int
-        :param cluster_id: 云服务器系统盘对应的存储池的ID。
-        :type cluster_id: str
-        :param resource_spec_code: 规格
+        :param resource_spec_code: 规格。
         :type resource_spec_code: str
         """
         
@@ -54,7 +50,6 @@ class VolumeInfo:
         self._id = None
         self._type = None
         self._size = None
-        self._cluster_id = None
         self._resource_spec_code = None
         self.discriminator = None
 
@@ -62,8 +57,6 @@ class VolumeInfo:
             self.id = id
         self.type = type
         self.size = size
-        if cluster_id is not None:
-            self.cluster_id = cluster_id
         if resource_spec_code is not None:
             self.resource_spec_code = resource_spec_code
 
@@ -134,32 +127,10 @@ class VolumeInfo:
         self._size = size
 
     @property
-    def cluster_id(self):
-        r"""Gets the cluster_id of this VolumeInfo.
-
-        云服务器系统盘对应的存储池的ID。
-
-        :return: The cluster_id of this VolumeInfo.
-        :rtype: str
-        """
-        return self._cluster_id
-
-    @cluster_id.setter
-    def cluster_id(self, cluster_id):
-        r"""Sets the cluster_id of this VolumeInfo.
-
-        云服务器系统盘对应的存储池的ID。
-
-        :param cluster_id: The cluster_id of this VolumeInfo.
-        :type cluster_id: str
-        """
-        self._cluster_id = cluster_id
-
-    @property
     def resource_spec_code(self):
         r"""Gets the resource_spec_code of this VolumeInfo.
 
-        规格
+        规格。
 
         :return: The resource_spec_code of this VolumeInfo.
         :rtype: str
@@ -170,7 +141,7 @@ class VolumeInfo:
     def resource_spec_code(self, resource_spec_code):
         r"""Sets the resource_spec_code of this VolumeInfo.
 
-        规格
+        规格。
 
         :param resource_spec_code: The resource_spec_code of this VolumeInfo.
         :type resource_spec_code: str

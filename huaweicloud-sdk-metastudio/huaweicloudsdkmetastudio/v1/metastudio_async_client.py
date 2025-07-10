@@ -705,6 +705,79 @@ class MetaStudioAsyncClient(Client):
 
         return http_info
 
+    def list_smart_chat_job_async(self, request):
+        r"""查询数字人智能交互任务列表
+
+        该接口用于查询数字人智能交互任务列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListSmartChatJob
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ListSmartChatJobRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ListSmartChatJobResponse`
+        """
+        http_info = self._list_smart_chat_job_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_smart_chat_job_async_invoker(self, request):
+        http_info = self._list_smart_chat_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_smart_chat_job_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/digital-human-chat/smart-chat-rooms/{room_id}/smart-chat-jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSmartChatJobResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'room_id' in local_var_params:
+            path_params['room_id'] = local_var_params['room_id']
+
+        query_params = []
+        if 'state' in local_var_params:
+            query_params.append(('state', local_var_params['state']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_smart_chat_job_async(self, request):
         r"""查询数字人智能交互任务
 
@@ -1586,8 +1659,6 @@ class MetaStudioAsyncClient(Client):
         if 'accurate_query_field' in local_var_params:
             query_params.append(('accurate_query_field', local_var_params['accurate_query_field']))
             collection_formats['accurate_query_field'] = 'csv'
-        if 'render_engine' in local_var_params:
-            query_params.append(('render_engine', local_var_params['render_engine']))
         if 'asset_id' in local_var_params:
             query_params.append(('asset_id', local_var_params['asset_id']))
             collection_formats['asset_id'] = 'csv'
@@ -3697,6 +3768,8 @@ class MetaStudioAsyncClient(Client):
             query_params.append(('region', local_var_params['region']))
         if 'language' in local_var_params:
             query_params.append(('language', local_var_params['language']))
+        if 'hot_words_type' in local_var_params:
+            query_params.append(('hot_words_type', local_var_params['hot_words_type']))
 
         header_params = {}
         if 'x_app_user_id' in local_var_params:
@@ -11669,7 +11742,7 @@ class MetaStudioAsyncClient(Client):
     def create_async_tts_job_async(self, request):
         r"""创建TTS异步任务
 
-        该接口用于对外生成音频文件。每个预制音色的计费标准详见[预置音色计费标准](metastudio_02_0060.xml)。
+        该接口用于对外生成音频文件。每个预置音色的计费标准详见[预置音色计费标准](metastudio_02_0060.xml)。
         
         &gt; 使用本接口前，需要在MetaStudio控制台服务概览页面，开通“声音合成”的按需计费。
         &gt; 详细操作为：单击“声音合成”卡片中的“去开通”，在弹出的“开通按需计费服务提示”对话框中，勾选同意协议。单击“确定”，开通按需计费。

@@ -59,11 +59,11 @@ class SiteConfigsResponse:
 
         The model defined in huaweicloud sdk
 
-        :param site_id: 站点id
+        :param site_id: 站点id。
         :type site_id: str
         :param site_type: 配置状态。 - CENTER： 中心初始化 - IES： 边缘初始化
         :type site_type: str
-        :param site_name: 站点名称
+        :param site_name: 站点名称。
         :type site_name: str
         :param status: 云办公服务的状态。 - PREPARING：准备初始化服务 - SUBSCRIBING：初始化服务中 - SUBSCRIBED：已初始化服务 - SUBSCRIPTION_FAILED：初始化服务失败 - DEREGISTERING：清理资源中 - DEREGISTRATION_FAILED：清理资源失败 - RECYCLING：清理资源中。 - RECYCLED：清理资源成功。 - RECYCLE_FAILED：清理资源失败。 - CLOSED：已销户未初始化服务
         :type status: str
@@ -75,15 +75,15 @@ class SiteConfigsResponse:
         :type infrastructure_security_group: :class:`huaweicloudsdkworkspace.v2.SecurityGroup`
         :param desktop_security_group: 
         :type desktop_security_group: :class:`huaweicloudsdkworkspace.v2.SecurityGroup`
-        :param availability_zones: 开通服务资源使用的可用分区
+        :param availability_zones: 开通服务资源使用的可用分区。
         :type availability_zones: list[str]
-        :param job_id: 开通服务或取消服务的任务ID
+        :param job_id: 开通服务或取消服务的任务ID。
         :type job_id: str
-        :param progress: 初始化服务或清理资源的进度，格式为100%
+        :param progress: 初始化服务或清理资源的进度，格式为100%。
         :type progress: str
-        :param fail_code: 失败错误码
+        :param fail_code: 失败错误码。
         :type fail_code: int
-        :param fail_reason: 失败原因
+        :param fail_reason: 失败原因。
         :type fail_reason: str
         :param network_config: 
         :type network_config: :class:`huaweicloudsdkworkspace.v2.NetworkConfig`
@@ -150,7 +150,7 @@ class SiteConfigsResponse:
     def site_id(self):
         r"""Gets the site_id of this SiteConfigsResponse.
 
-        站点id
+        站点id。
 
         :return: The site_id of this SiteConfigsResponse.
         :rtype: str
@@ -161,7 +161,7 @@ class SiteConfigsResponse:
     def site_id(self, site_id):
         r"""Sets the site_id of this SiteConfigsResponse.
 
-        站点id
+        站点id。
 
         :param site_id: The site_id of this SiteConfigsResponse.
         :type site_id: str
@@ -194,7 +194,7 @@ class SiteConfigsResponse:
     def site_name(self):
         r"""Gets the site_name of this SiteConfigsResponse.
 
-        站点名称
+        站点名称。
 
         :return: The site_name of this SiteConfigsResponse.
         :rtype: str
@@ -205,7 +205,7 @@ class SiteConfigsResponse:
     def site_name(self, site_name):
         r"""Sets the site_name of this SiteConfigsResponse.
 
-        站点名称
+        站点名称。
 
         :param site_name: The site_name of this SiteConfigsResponse.
         :type site_name: str
@@ -318,7 +318,7 @@ class SiteConfigsResponse:
     def availability_zones(self):
         r"""Gets the availability_zones of this SiteConfigsResponse.
 
-        开通服务资源使用的可用分区
+        开通服务资源使用的可用分区。
 
         :return: The availability_zones of this SiteConfigsResponse.
         :rtype: list[str]
@@ -329,7 +329,7 @@ class SiteConfigsResponse:
     def availability_zones(self, availability_zones):
         r"""Sets the availability_zones of this SiteConfigsResponse.
 
-        开通服务资源使用的可用分区
+        开通服务资源使用的可用分区。
 
         :param availability_zones: The availability_zones of this SiteConfigsResponse.
         :type availability_zones: list[str]
@@ -340,7 +340,7 @@ class SiteConfigsResponse:
     def job_id(self):
         r"""Gets the job_id of this SiteConfigsResponse.
 
-        开通服务或取消服务的任务ID
+        开通服务或取消服务的任务ID。
 
         :return: The job_id of this SiteConfigsResponse.
         :rtype: str
@@ -351,7 +351,7 @@ class SiteConfigsResponse:
     def job_id(self, job_id):
         r"""Sets the job_id of this SiteConfigsResponse.
 
-        开通服务或取消服务的任务ID
+        开通服务或取消服务的任务ID。
 
         :param job_id: The job_id of this SiteConfigsResponse.
         :type job_id: str
@@ -362,7 +362,7 @@ class SiteConfigsResponse:
     def progress(self):
         r"""Gets the progress of this SiteConfigsResponse.
 
-        初始化服务或清理资源的进度，格式为100%
+        初始化服务或清理资源的进度，格式为100%。
 
         :return: The progress of this SiteConfigsResponse.
         :rtype: str
@@ -373,7 +373,7 @@ class SiteConfigsResponse:
     def progress(self, progress):
         r"""Sets the progress of this SiteConfigsResponse.
 
-        初始化服务或清理资源的进度，格式为100%
+        初始化服务或清理资源的进度，格式为100%。
 
         :param progress: The progress of this SiteConfigsResponse.
         :type progress: str
@@ -384,7 +384,7 @@ class SiteConfigsResponse:
     def fail_code(self):
         r"""Gets the fail_code of this SiteConfigsResponse.
 
-        失败错误码
+        失败错误码。
 
         :return: The fail_code of this SiteConfigsResponse.
         :rtype: int
@@ -395,7 +395,7 @@ class SiteConfigsResponse:
     def fail_code(self, fail_code):
         r"""Sets the fail_code of this SiteConfigsResponse.
 
-        失败错误码
+        失败错误码。
 
         :param fail_code: The fail_code of this SiteConfigsResponse.
         :type fail_code: int
@@ -406,7 +406,7 @@ class SiteConfigsResponse:
     def fail_reason(self):
         r"""Gets the fail_reason of this SiteConfigsResponse.
 
-        失败原因
+        失败原因。
 
         :return: The fail_reason of this SiteConfigsResponse.
         :rtype: str
@@ -417,7 +417,7 @@ class SiteConfigsResponse:
     def fail_reason(self, fail_reason):
         r"""Sets the fail_reason of this SiteConfigsResponse.
 
-        失败原因
+        失败原因。
 
         :param fail_reason: The fail_reason of this SiteConfigsResponse.
         :type fail_reason: str

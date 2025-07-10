@@ -35,13 +35,13 @@ class PeriodBatchUpChangeResourceRsp:
 
         The model defined in huaweicloud sdk
 
-        :param currency: 币种，比如CNY
+        :param currency: 币种，比如CNY。
         :type currency: str
-        :param extend_params: 扩展参数
+        :param extend_params: 扩展参数。
         :type extend_params: str
         :param official_website_rating_result: 
         :type official_website_rating_result: :class:`huaweicloudsdkworkspace.v2.OfficialWebsiteRatingResult`
-        :param optional_discount_rating_results: 存在可选折扣优惠时返回折扣优惠维度询价结果，每个折扣优惠一组询价结果
+        :param optional_discount_rating_results: 存在可选折扣优惠时返回折扣优惠维度询价结果，每个折扣优惠一组询价结果。
         :type optional_discount_rating_results: list[:class:`huaweicloudsdkworkspace.v2.OptionalDiscountRatingResult`]
         """
         
@@ -66,7 +66,7 @@ class PeriodBatchUpChangeResourceRsp:
     def currency(self):
         r"""Gets the currency of this PeriodBatchUpChangeResourceRsp.
 
-        币种，比如CNY
+        币种，比如CNY。
 
         :return: The currency of this PeriodBatchUpChangeResourceRsp.
         :rtype: str
@@ -77,7 +77,7 @@ class PeriodBatchUpChangeResourceRsp:
     def currency(self, currency):
         r"""Sets the currency of this PeriodBatchUpChangeResourceRsp.
 
-        币种，比如CNY
+        币种，比如CNY。
 
         :param currency: The currency of this PeriodBatchUpChangeResourceRsp.
         :type currency: str
@@ -88,7 +88,7 @@ class PeriodBatchUpChangeResourceRsp:
     def extend_params(self):
         r"""Gets the extend_params of this PeriodBatchUpChangeResourceRsp.
 
-        扩展参数
+        扩展参数。
 
         :return: The extend_params of this PeriodBatchUpChangeResourceRsp.
         :rtype: str
@@ -99,7 +99,7 @@ class PeriodBatchUpChangeResourceRsp:
     def extend_params(self, extend_params):
         r"""Sets the extend_params of this PeriodBatchUpChangeResourceRsp.
 
-        扩展参数
+        扩展参数。
 
         :param extend_params: The extend_params of this PeriodBatchUpChangeResourceRsp.
         :type extend_params: str
@@ -128,7 +128,7 @@ class PeriodBatchUpChangeResourceRsp:
     def optional_discount_rating_results(self):
         r"""Gets the optional_discount_rating_results of this PeriodBatchUpChangeResourceRsp.
 
-        存在可选折扣优惠时返回折扣优惠维度询价结果，每个折扣优惠一组询价结果
+        存在可选折扣优惠时返回折扣优惠维度询价结果，每个折扣优惠一组询价结果。
 
         :return: The optional_discount_rating_results of this PeriodBatchUpChangeResourceRsp.
         :rtype: list[:class:`huaweicloudsdkworkspace.v2.OptionalDiscountRatingResult`]
@@ -139,7 +139,7 @@ class PeriodBatchUpChangeResourceRsp:
     def optional_discount_rating_results(self, optional_discount_rating_results):
         r"""Sets the optional_discount_rating_results of this PeriodBatchUpChangeResourceRsp.
 
-        存在可选折扣优惠时返回折扣优惠维度询价结果，每个折扣优惠一组询价结果
+        存在可选折扣优惠时返回折扣优惠维度询价结果，每个折扣优惠一组询价结果。
 
         :param optional_discount_rating_results: The optional_discount_rating_results of this PeriodBatchUpChangeResourceRsp.
         :type optional_discount_rating_results: list[:class:`huaweicloudsdkworkspace.v2.OptionalDiscountRatingResult`]

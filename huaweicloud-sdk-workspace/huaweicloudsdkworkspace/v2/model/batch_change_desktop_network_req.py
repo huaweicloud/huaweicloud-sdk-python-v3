@@ -37,11 +37,11 @@ class BatchChangeDesktopNetworkReq:
 
         :param desktop_ids: 桌面id列表，最小为1，最大为100。
         :type desktop_ids: list[str]
-        :param vpc_id: 待切换VPC的ID
+        :param vpc_id: 待切换VPC的ID。
         :type vpc_id: str
-        :param subnet_id: 待切换子网的ID
+        :param subnet_id: 待切换子网的ID。
         :type subnet_id: str
-        :param security_group_ids: 安全组ID列表
+        :param security_group_ids: 安全组ID列表。
         :type security_group_ids: list[str]
         """
         
@@ -85,7 +85,7 @@ class BatchChangeDesktopNetworkReq:
     def vpc_id(self):
         r"""Gets the vpc_id of this BatchChangeDesktopNetworkReq.
 
-        待切换VPC的ID
+        待切换VPC的ID。
 
         :return: The vpc_id of this BatchChangeDesktopNetworkReq.
         :rtype: str
@@ -96,7 +96,7 @@ class BatchChangeDesktopNetworkReq:
     def vpc_id(self, vpc_id):
         r"""Sets the vpc_id of this BatchChangeDesktopNetworkReq.
 
-        待切换VPC的ID
+        待切换VPC的ID。
 
         :param vpc_id: The vpc_id of this BatchChangeDesktopNetworkReq.
         :type vpc_id: str
@@ -107,7 +107,7 @@ class BatchChangeDesktopNetworkReq:
     def subnet_id(self):
         r"""Gets the subnet_id of this BatchChangeDesktopNetworkReq.
 
-        待切换子网的ID
+        待切换子网的ID。
 
         :return: The subnet_id of this BatchChangeDesktopNetworkReq.
         :rtype: str
@@ -118,7 +118,7 @@ class BatchChangeDesktopNetworkReq:
     def subnet_id(self, subnet_id):
         r"""Sets the subnet_id of this BatchChangeDesktopNetworkReq.
 
-        待切换子网的ID
+        待切换子网的ID。
 
         :param subnet_id: The subnet_id of this BatchChangeDesktopNetworkReq.
         :type subnet_id: str
@@ -129,7 +129,7 @@ class BatchChangeDesktopNetworkReq:
     def security_group_ids(self):
         r"""Gets the security_group_ids of this BatchChangeDesktopNetworkReq.
 
-        安全组ID列表
+        安全组ID列表。
 
         :return: The security_group_ids of this BatchChangeDesktopNetworkReq.
         :rtype: list[str]
@@ -140,7 +140,7 @@ class BatchChangeDesktopNetworkReq:
     def security_group_ids(self, security_group_ids):
         r"""Sets the security_group_ids of this BatchChangeDesktopNetworkReq.
 
-        安全组ID列表
+        安全组ID列表。
 
         :param security_group_ids: The security_group_ids of this BatchChangeDesktopNetworkReq.
         :type security_group_ids: list[str]

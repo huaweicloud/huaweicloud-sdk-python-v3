@@ -18,28 +18,20 @@ class BatchRunDesktopsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'error_code': 'str',
-        'error_msg': 'str',
         'failed_operation_list': 'list[VmOperateResult]',
         'job_id': 'str'
     }
 
     attribute_map = {
-        'error_code': 'error_code',
-        'error_msg': 'error_msg',
         'failed_operation_list': 'failed_operation_list',
         'job_id': 'job_id'
     }
 
-    def __init__(self, error_code=None, error_msg=None, failed_operation_list=None, job_id=None):
+    def __init__(self, failed_operation_list=None, job_id=None):
         r"""BatchRunDesktopsResponse
 
         The model defined in huaweicloud sdk
 
-        :param error_code: 错误码，失败时返回。
-        :type error_code: str
-        :param error_msg: 错误描述。
-        :type error_msg: str
         :param failed_operation_list: 操作失败桌面列表。
         :type failed_operation_list: list[:class:`huaweicloudsdkworkspace.v2.VmOperateResult`]
         :param job_id: 任务ID，冷迁移启动时返回。
@@ -48,64 +40,14 @@ class BatchRunDesktopsResponse(SdkResponse):
         
         super(BatchRunDesktopsResponse, self).__init__()
 
-        self._error_code = None
-        self._error_msg = None
         self._failed_operation_list = None
         self._job_id = None
         self.discriminator = None
 
-        if error_code is not None:
-            self.error_code = error_code
-        if error_msg is not None:
-            self.error_msg = error_msg
         if failed_operation_list is not None:
             self.failed_operation_list = failed_operation_list
         if job_id is not None:
             self.job_id = job_id
-
-    @property
-    def error_code(self):
-        r"""Gets the error_code of this BatchRunDesktopsResponse.
-
-        错误码，失败时返回。
-
-        :return: The error_code of this BatchRunDesktopsResponse.
-        :rtype: str
-        """
-        return self._error_code
-
-    @error_code.setter
-    def error_code(self, error_code):
-        r"""Sets the error_code of this BatchRunDesktopsResponse.
-
-        错误码，失败时返回。
-
-        :param error_code: The error_code of this BatchRunDesktopsResponse.
-        :type error_code: str
-        """
-        self._error_code = error_code
-
-    @property
-    def error_msg(self):
-        r"""Gets the error_msg of this BatchRunDesktopsResponse.
-
-        错误描述。
-
-        :return: The error_msg of this BatchRunDesktopsResponse.
-        :rtype: str
-        """
-        return self._error_msg
-
-    @error_msg.setter
-    def error_msg(self, error_msg):
-        r"""Sets the error_msg of this BatchRunDesktopsResponse.
-
-        错误描述。
-
-        :param error_msg: The error_msg of this BatchRunDesktopsResponse.
-        :type error_msg: str
-        """
-        self._error_msg = error_msg
 
     @property
     def failed_operation_list(self):

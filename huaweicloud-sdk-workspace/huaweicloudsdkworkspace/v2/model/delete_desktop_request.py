@@ -41,7 +41,7 @@ class DeleteDesktopRequest:
         :type delete_users: bool
         :param email_notification: 删除桌面后，是否给桌面用户发送系统通知邮件。true：发送，false：不发送。默认为true。
         :type email_notification: bool
-        :param is_force_delete: 是否强制删除
+        :param is_force_delete: 是否强制删除。
         :type is_force_delete: bool
         """
         
@@ -131,7 +131,7 @@ class DeleteDesktopRequest:
     def is_force_delete(self):
         r"""Gets the is_force_delete of this DeleteDesktopRequest.
 
-        是否强制删除
+        是否强制删除。
 
         :return: The is_force_delete of this DeleteDesktopRequest.
         :rtype: bool
@@ -142,7 +142,7 @@ class DeleteDesktopRequest:
     def is_force_delete(self, is_force_delete):
         r"""Sets the is_force_delete of this DeleteDesktopRequest.
 
-        是否强制删除
+        是否强制删除。
 
         :param is_force_delete: The is_force_delete of this DeleteDesktopRequest.
         :type is_force_delete: bool

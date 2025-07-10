@@ -1903,6 +1903,416 @@ class ProjectManClient(Client):
 
         return http_info
 
+    def list_issue_fields(self, request):
+        r"""查询字段模板列表
+
+        工作项类型中查询字段模板列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListIssueFields
+        :type request: :class:`huaweicloudsdkprojectman.v4.ListIssueFieldsRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.ListIssueFieldsResponse`
+        """
+        http_info = self._list_issue_fields_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_issue_fields_invoker(self, request):
+        http_info = self._list_issue_fields_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_issue_fields_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/ipdprojectservice/projects/{project_id}/categories/{category_id}/field/templates",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListIssueFieldsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'category_id' in local_var_params:
+            path_params['category_id'] = local_var_params['category_id']
+
+        query_params = []
+        if 'page' in local_var_params:
+            query_params.append(('page', local_var_params['page']))
+        if 'size' in local_var_params:
+            query_params.append(('size', local_var_params['size']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_issue_statues(self, request):
+        r"""查询工作项状态
+
+        根据工作项查询工作项下的状态信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListIssueStatues
+        :type request: :class:`huaweicloudsdkprojectman.v4.ListIssueStatuesRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.ListIssueStatuesResponse`
+        """
+        http_info = self._list_issue_statues_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_issue_statues_invoker(self, request):
+        http_info = self._list_issue_statues_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_issue_statues_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/ipdprojectservice/projects/{project_id}/category/{category_id}/statuses",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListIssueStatuesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'category_id' in local_var_params:
+            path_params['category_id'] = local_var_params['category_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_issue_config_fields(self, request):
+        r"""查询工作流字段配置信息
+
+        查询工作流字段配置信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowIssueConfigFields
+        :type request: :class:`huaweicloudsdkprojectman.v4.ShowIssueConfigFieldsRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.ShowIssueConfigFieldsResponse`
+        """
+        http_info = self._show_issue_config_fields_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_issue_config_fields_invoker(self, request):
+        http_info = self._show_issue_config_fields_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_issue_config_fields_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/ipdprojectservice/projects/{project_id}/workflow-template/issue/fields",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowIssueConfigFieldsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+        if 'issue_category' in local_var_params:
+            query_params.append(('issue_category', local_var_params['issue_category']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_issue_detail(self, request):
+        r"""查询工作项详情
+
+        查询工作项详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowIssueDetail
+        :type request: :class:`huaweicloudsdkprojectman.v4.ShowIssueDetailRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.ShowIssueDetailResponse`
+        """
+        http_info = self._show_issue_detail_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_issue_detail_invoker(self, request):
+        http_info = self._show_issue_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_issue_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/ipdprojectservice/projects/{project_id}/issues/{issue_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowIssueDetailResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'issue_id' in local_var_params:
+            path_params['issue_id'] = local_var_params['issue_id']
+
+        query_params = []
+        if 'issue_type' in local_var_params:
+            query_params.append(('issue_type', local_var_params['issue_type']))
+        if 'domain_id' in local_var_params:
+            query_params.append(('domain_id', local_var_params['domain_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_workflow_template(self, request):
+        r"""获取工作流的详情及每条流转线的详情
+
+        获取工作流的详情及每条流转线的详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowWorkflowTemplate
+        :type request: :class:`huaweicloudsdkprojectman.v4.ShowWorkflowTemplateRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.ShowWorkflowTemplateResponse`
+        """
+        http_info = self._show_workflow_template_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_workflow_template_invoker(self, request):
+        http_info = self._show_workflow_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_workflow_template_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/ipdprojectservice/projects/{project_id}/workflow-template",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowWorkflowTemplateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+        if 'issue_category' in local_var_params:
+            query_params.append(('issue_category', local_var_params['issue_category']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def transfer_work_item_flow(self, request):
+        r"""修改工作项的状态
+
+        工作项流程流转
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for TransferWorkItemFlow
+        :type request: :class:`huaweicloudsdkprojectman.v4.TransferWorkItemFlowRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.TransferWorkItemFlowResponse`
+        """
+        http_info = self._transfer_work_item_flow_http_info(request)
+        return self._call_api(**http_info)
+
+    def transfer_work_item_flow_invoker(self, request):
+        http_info = self._transfer_work_item_flow_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _transfer_work_item_flow_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/ipdprojectservice/projects/{project_id}/work-item/flow/transfer",
+            "request_type": request.__class__.__name__,
+            "response_type": "TransferWorkItemFlowResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def add_issue_work_hours(self, request):
         r"""添加指定工作项工时
 

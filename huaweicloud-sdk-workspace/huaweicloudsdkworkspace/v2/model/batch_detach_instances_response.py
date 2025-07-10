@@ -32,9 +32,9 @@ class BatchDetachInstancesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param failed_operation_list: 操作失败桌面列表
+        :param failed_operation_list: 操作失败桌面列表。
         :type failed_operation_list: list[:class:`huaweicloudsdkworkspace.v2.VmOperateResult`]
-        :param job_id: 任务ID
+        :param job_id: 任务ID。
         :type job_id: str
         """
         
@@ -53,7 +53,7 @@ class BatchDetachInstancesResponse(SdkResponse):
     def failed_operation_list(self):
         r"""Gets the failed_operation_list of this BatchDetachInstancesResponse.
 
-        操作失败桌面列表
+        操作失败桌面列表。
 
         :return: The failed_operation_list of this BatchDetachInstancesResponse.
         :rtype: list[:class:`huaweicloudsdkworkspace.v2.VmOperateResult`]
@@ -64,7 +64,7 @@ class BatchDetachInstancesResponse(SdkResponse):
     def failed_operation_list(self, failed_operation_list):
         r"""Sets the failed_operation_list of this BatchDetachInstancesResponse.
 
-        操作失败桌面列表
+        操作失败桌面列表。
 
         :param failed_operation_list: The failed_operation_list of this BatchDetachInstancesResponse.
         :type failed_operation_list: list[:class:`huaweicloudsdkworkspace.v2.VmOperateResult`]
@@ -75,7 +75,7 @@ class BatchDetachInstancesResponse(SdkResponse):
     def job_id(self):
         r"""Gets the job_id of this BatchDetachInstancesResponse.
 
-        任务ID
+        任务ID。
 
         :return: The job_id of this BatchDetachInstancesResponse.
         :rtype: str
@@ -86,7 +86,7 @@ class BatchDetachInstancesResponse(SdkResponse):
     def job_id(self, job_id):
         r"""Sets the job_id of this BatchDetachInstancesResponse.
 
-        任务ID
+        任务ID。
 
         :param job_id: The job_id of this BatchDetachInstancesResponse.
         :type job_id: str

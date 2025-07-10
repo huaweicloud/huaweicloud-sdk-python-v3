@@ -71,7 +71,7 @@ class ScheduledTask:
         :type description: str
         :param priority: 优先级。触发式任务使用。
         :type priority: int
-        :param time_zone: 时区
+        :param time_zone: 时区。
         :type time_zone: str
         :param wait_time: 触发式任务触发后，等待时长。
         :type wait_time: int
@@ -342,7 +342,7 @@ class ScheduledTask:
     def time_zone(self):
         r"""Gets the time_zone of this ScheduledTask.
 
-        时区
+        时区。
 
         :return: The time_zone of this ScheduledTask.
         :rtype: str
@@ -353,7 +353,7 @@ class ScheduledTask:
     def time_zone(self, time_zone):
         r"""Sets the time_zone of this ScheduledTask.
 
-        时区
+        时区。
 
         :param time_zone: The time_zone of this ScheduledTask.
         :type time_zone: str

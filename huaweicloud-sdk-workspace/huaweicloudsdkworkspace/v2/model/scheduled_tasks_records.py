@@ -21,6 +21,7 @@ class ScheduledTasksRecords:
         'start_time': 'str',
         'task_type': 'str',
         'scheduled_type': 'str',
+        'life_cycle_type': 'str',
         'status': 'str',
         'success_num': 'int',
         'failed_num': 'int',
@@ -35,6 +36,7 @@ class ScheduledTasksRecords:
         'start_time': 'start_time',
         'task_type': 'task_type',
         'scheduled_type': 'scheduled_type',
+        'life_cycle_type': 'life_cycle_type',
         'status': 'status',
         'success_num': 'success_num',
         'failed_num': 'failed_num',
@@ -44,12 +46,12 @@ class ScheduledTasksRecords:
         'execute_object_type': 'execute_object_type'
     }
 
-    def __init__(self, id=None, start_time=None, task_type=None, scheduled_type=None, status=None, success_num=None, failed_num=None, skip_num=None, time_zone=None, execute_task_id=None, execute_object_type=None):
+    def __init__(self, id=None, start_time=None, task_type=None, scheduled_type=None, life_cycle_type=None, status=None, success_num=None, failed_num=None, skip_num=None, time_zone=None, execute_task_id=None, execute_object_type=None):
         r"""ScheduledTasksRecords
 
         The model defined in huaweicloud sdk
 
-        :param id: 任务执行记录id
+        :param id: 任务执行记录id。
         :type id: str
         :param start_time: 执行时间，格式为yyyy-MM-dd HH:mm:ss。
         :type start_time: str
@@ -57,6 +59,8 @@ class ScheduledTasksRecords:
         :type task_type: str
         :param scheduled_type: 执行周期类型。FIXED_TIME：指定时间，DAY：按天，WEEK：按周，MONTH：按月。
         :type scheduled_type: str
+        :param life_cycle_type: 触发场景类型。
+        :type life_cycle_type: str
         :param status: 本次执行状态。
         :type status: str
         :param success_num: 成功桌面个数。
@@ -65,7 +69,7 @@ class ScheduledTasksRecords:
         :type failed_num: int
         :param skip_num: 跳过桌面个数。
         :type skip_num: int
-        :param time_zone: 时区
+        :param time_zone: 时区。
         :type time_zone: str
         :param execute_task_id: 执行定时任务的任务id，只有定时执行脚本返回。
         :type execute_task_id: str
@@ -79,6 +83,7 @@ class ScheduledTasksRecords:
         self._start_time = None
         self._task_type = None
         self._scheduled_type = None
+        self._life_cycle_type = None
         self._status = None
         self._success_num = None
         self._failed_num = None
@@ -96,6 +101,8 @@ class ScheduledTasksRecords:
             self.task_type = task_type
         if scheduled_type is not None:
             self.scheduled_type = scheduled_type
+        if life_cycle_type is not None:
+            self.life_cycle_type = life_cycle_type
         if status is not None:
             self.status = status
         if success_num is not None:
@@ -115,7 +122,7 @@ class ScheduledTasksRecords:
     def id(self):
         r"""Gets the id of this ScheduledTasksRecords.
 
-        任务执行记录id
+        任务执行记录id。
 
         :return: The id of this ScheduledTasksRecords.
         :rtype: str
@@ -126,7 +133,7 @@ class ScheduledTasksRecords:
     def id(self, id):
         r"""Sets the id of this ScheduledTasksRecords.
 
-        任务执行记录id
+        任务执行记录id。
 
         :param id: The id of this ScheduledTasksRecords.
         :type id: str
@@ -198,6 +205,28 @@ class ScheduledTasksRecords:
         :type scheduled_type: str
         """
         self._scheduled_type = scheduled_type
+
+    @property
+    def life_cycle_type(self):
+        r"""Gets the life_cycle_type of this ScheduledTasksRecords.
+
+        触发场景类型。
+
+        :return: The life_cycle_type of this ScheduledTasksRecords.
+        :rtype: str
+        """
+        return self._life_cycle_type
+
+    @life_cycle_type.setter
+    def life_cycle_type(self, life_cycle_type):
+        r"""Sets the life_cycle_type of this ScheduledTasksRecords.
+
+        触发场景类型。
+
+        :param life_cycle_type: The life_cycle_type of this ScheduledTasksRecords.
+        :type life_cycle_type: str
+        """
+        self._life_cycle_type = life_cycle_type
 
     @property
     def status(self):
@@ -291,7 +320,7 @@ class ScheduledTasksRecords:
     def time_zone(self):
         r"""Gets the time_zone of this ScheduledTasksRecords.
 
-        时区
+        时区。
 
         :return: The time_zone of this ScheduledTasksRecords.
         :rtype: str
@@ -302,7 +331,7 @@ class ScheduledTasksRecords:
     def time_zone(self, time_zone):
         r"""Sets the time_zone of this ScheduledTasksRecords.
 
-        时区
+        时区。
 
         :param time_zone: The time_zone of this ScheduledTasksRecords.
         :type time_zone: str

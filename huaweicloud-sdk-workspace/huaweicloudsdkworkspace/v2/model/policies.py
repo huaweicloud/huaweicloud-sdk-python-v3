@@ -22,9 +22,7 @@ class Policies:
         'client': 'PoliciesClient',
         'display': 'PoliciesDisplay',
         'file_and_clipboard': 'PoliciesFileAndClipboard',
-        'access_control': 'AccessControl',
         'session': 'Session',
-        'bandwidth': 'Bandwidth',
         'virtual_channel': 'VirtualChannel',
         'watermark': 'Watermark',
         'keyboard_mouse': 'PoliciesKeyboardMouse',
@@ -40,19 +38,17 @@ class Policies:
         'client': 'client',
         'display': 'display',
         'file_and_clipboard': 'file_and_clipboard',
-        'access_control': 'access_control',
         'session': 'session',
-        'bandwidth': 'bandwidth',
         'virtual_channel': 'virtual_channel',
         'watermark': 'watermark',
         'keyboard_mouse': 'keyboard_mouse',
         'seamless': 'seamless',
-        'personalized_data_mgmt': 'personalizedDataMgmt',
+        'personalized_data_mgmt': 'personalized_data_mgmt',
         'custom': 'custom',
         'record_audit': 'record_audit'
     }
 
-    def __init__(self, peripherals=None, audio=None, client=None, display=None, file_and_clipboard=None, access_control=None, session=None, bandwidth=None, virtual_channel=None, watermark=None, keyboard_mouse=None, seamless=None, personalized_data_mgmt=None, custom=None, record_audit=None):
+    def __init__(self, peripherals=None, audio=None, client=None, display=None, file_and_clipboard=None, session=None, virtual_channel=None, watermark=None, keyboard_mouse=None, seamless=None, personalized_data_mgmt=None, custom=None, record_audit=None):
         r"""Policies
 
         The model defined in huaweicloud sdk
@@ -67,12 +63,8 @@ class Policies:
         :type display: :class:`huaweicloudsdkworkspace.v2.PoliciesDisplay`
         :param file_and_clipboard: 
         :type file_and_clipboard: :class:`huaweicloudsdkworkspace.v2.PoliciesFileAndClipboard`
-        :param access_control: 
-        :type access_control: :class:`huaweicloudsdkworkspace.v2.AccessControl`
         :param session: 
         :type session: :class:`huaweicloudsdkworkspace.v2.Session`
-        :param bandwidth: 
-        :type bandwidth: :class:`huaweicloudsdkworkspace.v2.Bandwidth`
         :param virtual_channel: 
         :type virtual_channel: :class:`huaweicloudsdkworkspace.v2.VirtualChannel`
         :param watermark: 
@@ -96,9 +88,7 @@ class Policies:
         self._client = None
         self._display = None
         self._file_and_clipboard = None
-        self._access_control = None
         self._session = None
-        self._bandwidth = None
         self._virtual_channel = None
         self._watermark = None
         self._keyboard_mouse = None
@@ -118,12 +108,8 @@ class Policies:
             self.display = display
         if file_and_clipboard is not None:
             self.file_and_clipboard = file_and_clipboard
-        if access_control is not None:
-            self.access_control = access_control
         if session is not None:
             self.session = session
-        if bandwidth is not None:
-            self.bandwidth = bandwidth
         if virtual_channel is not None:
             self.virtual_channel = virtual_channel
         if watermark is not None:
@@ -230,24 +216,6 @@ class Policies:
         self._file_and_clipboard = file_and_clipboard
 
     @property
-    def access_control(self):
-        r"""Gets the access_control of this Policies.
-
-        :return: The access_control of this Policies.
-        :rtype: :class:`huaweicloudsdkworkspace.v2.AccessControl`
-        """
-        return self._access_control
-
-    @access_control.setter
-    def access_control(self, access_control):
-        r"""Sets the access_control of this Policies.
-
-        :param access_control: The access_control of this Policies.
-        :type access_control: :class:`huaweicloudsdkworkspace.v2.AccessControl`
-        """
-        self._access_control = access_control
-
-    @property
     def session(self):
         r"""Gets the session of this Policies.
 
@@ -264,24 +232,6 @@ class Policies:
         :type session: :class:`huaweicloudsdkworkspace.v2.Session`
         """
         self._session = session
-
-    @property
-    def bandwidth(self):
-        r"""Gets the bandwidth of this Policies.
-
-        :return: The bandwidth of this Policies.
-        :rtype: :class:`huaweicloudsdkworkspace.v2.Bandwidth`
-        """
-        return self._bandwidth
-
-    @bandwidth.setter
-    def bandwidth(self, bandwidth):
-        r"""Sets the bandwidth of this Policies.
-
-        :param bandwidth: The bandwidth of this Policies.
-        :type bandwidth: :class:`huaweicloudsdkworkspace.v2.Bandwidth`
-        """
-        self._bandwidth = bandwidth
 
     @property
     def virtual_channel(self):

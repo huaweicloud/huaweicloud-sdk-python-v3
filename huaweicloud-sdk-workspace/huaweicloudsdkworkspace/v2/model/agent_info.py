@@ -33,11 +33,11 @@ class AgentInfo:
 
         The model defined in huaweicloud sdk
 
-        :param agent_name: 插件名称
+        :param agent_name: 插件名称。
         :type agent_name: str
-        :param agent_version: 插件版本
+        :param agent_version: 插件版本。
         :type agent_version: str
-        :param is_installed: 是否安装插件（是否）
+        :param is_installed: 是否安装插件（是否）。
         :type is_installed: bool
         """
         
@@ -59,7 +59,7 @@ class AgentInfo:
     def agent_name(self):
         r"""Gets the agent_name of this AgentInfo.
 
-        插件名称
+        插件名称。
 
         :return: The agent_name of this AgentInfo.
         :rtype: str
@@ -70,7 +70,7 @@ class AgentInfo:
     def agent_name(self, agent_name):
         r"""Sets the agent_name of this AgentInfo.
 
-        插件名称
+        插件名称。
 
         :param agent_name: The agent_name of this AgentInfo.
         :type agent_name: str
@@ -81,7 +81,7 @@ class AgentInfo:
     def agent_version(self):
         r"""Gets the agent_version of this AgentInfo.
 
-        插件版本
+        插件版本。
 
         :return: The agent_version of this AgentInfo.
         :rtype: str
@@ -92,7 +92,7 @@ class AgentInfo:
     def agent_version(self, agent_version):
         r"""Sets the agent_version of this AgentInfo.
 
-        插件版本
+        插件版本。
 
         :param agent_version: The agent_version of this AgentInfo.
         :type agent_version: str
@@ -103,7 +103,7 @@ class AgentInfo:
     def is_installed(self):
         r"""Gets the is_installed of this AgentInfo.
 
-        是否安装插件（是否）
+        是否安装插件（是否）。
 
         :return: The is_installed of this AgentInfo.
         :rtype: bool
@@ -114,7 +114,7 @@ class AgentInfo:
     def is_installed(self, is_installed):
         r"""Sets the is_installed of this AgentInfo.
 
-        是否安装插件（是否）
+        是否安装插件（是否）。
 
         :param is_installed: The is_installed of this AgentInfo.
         :type is_installed: bool

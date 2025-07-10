@@ -23,8 +23,7 @@ class ListPolicyGroupInfoRequest:
         'policy_group_name': 'str',
         'priority': 'int',
         'update_time': 'str',
-        'description': 'str',
-        'scope_flag': 'int'
+        'description': 'str'
     }
 
     attribute_map = {
@@ -34,18 +33,17 @@ class ListPolicyGroupInfoRequest:
         'policy_group_name': 'policy_group_name',
         'priority': 'priority',
         'update_time': 'update_time',
-        'description': 'description',
-        'scope_flag': 'scope_flag'
+        'description': 'description'
     }
 
-    def __init__(self, limit=None, offset=None, policy_group_id=None, policy_group_name=None, priority=None, update_time=None, description=None, scope_flag=None):
+    def __init__(self, limit=None, offset=None, policy_group_id=None, policy_group_name=None, priority=None, update_time=None, description=None):
         r"""ListPolicyGroupInfoRequest
 
         The model defined in huaweicloud sdk
 
-        :param limit: 用于分页查询。范围0-100
+        :param limit: 用于分页查询。范围0-100。
         :type limit: int
-        :param offset: 用于分页查询，查询的起始记录序号，从0开始。
+        :param offset: 用于分页查询，查询的起始记录序号，范围0-10000。
         :type offset: int
         :param policy_group_id: 根据策略组ID过滤结果。
         :type policy_group_id: str
@@ -55,10 +53,8 @@ class ListPolicyGroupInfoRequest:
         :type priority: int
         :param update_time: 根据更新时间过滤结果。时间格式满足：yyyy-MM-dd HH:mm:ss。
         :type update_time: str
-        :param description: 策略组描述
+        :param description: 策略组描述。
         :type description: str
-        :param scope_flag: 策略来源，取值范围0或者1
-        :type scope_flag: int
         """
         
         
@@ -70,7 +66,6 @@ class ListPolicyGroupInfoRequest:
         self._priority = None
         self._update_time = None
         self._description = None
-        self._scope_flag = None
         self.discriminator = None
 
         if limit is not None:
@@ -87,14 +82,12 @@ class ListPolicyGroupInfoRequest:
             self.update_time = update_time
         if description is not None:
             self.description = description
-        if scope_flag is not None:
-            self.scope_flag = scope_flag
 
     @property
     def limit(self):
         r"""Gets the limit of this ListPolicyGroupInfoRequest.
 
-        用于分页查询。范围0-100
+        用于分页查询。范围0-100。
 
         :return: The limit of this ListPolicyGroupInfoRequest.
         :rtype: int
@@ -105,7 +98,7 @@ class ListPolicyGroupInfoRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListPolicyGroupInfoRequest.
 
-        用于分页查询。范围0-100
+        用于分页查询。范围0-100。
 
         :param limit: The limit of this ListPolicyGroupInfoRequest.
         :type limit: int
@@ -116,7 +109,7 @@ class ListPolicyGroupInfoRequest:
     def offset(self):
         r"""Gets the offset of this ListPolicyGroupInfoRequest.
 
-        用于分页查询，查询的起始记录序号，从0开始。
+        用于分页查询，查询的起始记录序号，范围0-10000。
 
         :return: The offset of this ListPolicyGroupInfoRequest.
         :rtype: int
@@ -127,7 +120,7 @@ class ListPolicyGroupInfoRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListPolicyGroupInfoRequest.
 
-        用于分页查询，查询的起始记录序号，从0开始。
+        用于分页查询，查询的起始记录序号，范围0-10000。
 
         :param offset: The offset of this ListPolicyGroupInfoRequest.
         :type offset: int
@@ -226,7 +219,7 @@ class ListPolicyGroupInfoRequest:
     def description(self):
         r"""Gets the description of this ListPolicyGroupInfoRequest.
 
-        策略组描述
+        策略组描述。
 
         :return: The description of this ListPolicyGroupInfoRequest.
         :rtype: str
@@ -237,34 +230,12 @@ class ListPolicyGroupInfoRequest:
     def description(self, description):
         r"""Sets the description of this ListPolicyGroupInfoRequest.
 
-        策略组描述
+        策略组描述。
 
         :param description: The description of this ListPolicyGroupInfoRequest.
         :type description: str
         """
         self._description = description
-
-    @property
-    def scope_flag(self):
-        r"""Gets the scope_flag of this ListPolicyGroupInfoRequest.
-
-        策略来源，取值范围0或者1
-
-        :return: The scope_flag of this ListPolicyGroupInfoRequest.
-        :rtype: int
-        """
-        return self._scope_flag
-
-    @scope_flag.setter
-    def scope_flag(self, scope_flag):
-        r"""Sets the scope_flag of this ListPolicyGroupInfoRequest.
-
-        策略来源，取值范围0或者1
-
-        :param scope_flag: The scope_flag of this ListPolicyGroupInfoRequest.
-        :type scope_flag: int
-        """
-        self._scope_flag = scope_flag
 
     def to_dict(self):
         """Returns the model properties as a dict"""

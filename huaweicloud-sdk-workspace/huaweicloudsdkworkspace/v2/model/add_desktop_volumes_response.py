@@ -38,15 +38,15 @@ class AddDesktopVolumesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param job_id: 增加磁盘任务id
+        :param job_id: 增加磁盘任务id。
         :type job_id: str
-        :param get_job_endpoint: 云运营平台CBC获取到JobId后，会使用getJobEndpoint当做URL，调用云服务，查询获取Job结果
+        :param get_job_endpoint: 云运营平台CBC获取到JobId后，会使用getJobEndpoint当做URL，调用云服务，查询获取Job结果。
         :type get_job_endpoint: str
-        :param max_provision_time: 在线开通最大时间
+        :param max_provision_time: 在线开通最大时间。
         :type max_provision_time: int
-        :param min_provision_time: 开通最小时间（云服务最快开通时长，或一般开通时长）
+        :param min_provision_time: 开通最小时间（云服务最快开通时长，或一般开通时长）。
         :type min_provision_time: int
-        :param periodic_query_time: Job周期性查询时间，默认1分钟查询一次
+        :param periodic_query_time: Job周期性查询时间，默认1分钟查询一次。
         :type periodic_query_time: int
         """
         
@@ -74,7 +74,7 @@ class AddDesktopVolumesResponse(SdkResponse):
     def job_id(self):
         r"""Gets the job_id of this AddDesktopVolumesResponse.
 
-        增加磁盘任务id
+        增加磁盘任务id。
 
         :return: The job_id of this AddDesktopVolumesResponse.
         :rtype: str
@@ -85,7 +85,7 @@ class AddDesktopVolumesResponse(SdkResponse):
     def job_id(self, job_id):
         r"""Sets the job_id of this AddDesktopVolumesResponse.
 
-        增加磁盘任务id
+        增加磁盘任务id。
 
         :param job_id: The job_id of this AddDesktopVolumesResponse.
         :type job_id: str
@@ -96,7 +96,7 @@ class AddDesktopVolumesResponse(SdkResponse):
     def get_job_endpoint(self):
         r"""Gets the get_job_endpoint of this AddDesktopVolumesResponse.
 
-        云运营平台CBC获取到JobId后，会使用getJobEndpoint当做URL，调用云服务，查询获取Job结果
+        云运营平台CBC获取到JobId后，会使用getJobEndpoint当做URL，调用云服务，查询获取Job结果。
 
         :return: The get_job_endpoint of this AddDesktopVolumesResponse.
         :rtype: str
@@ -107,7 +107,7 @@ class AddDesktopVolumesResponse(SdkResponse):
     def get_job_endpoint(self, get_job_endpoint):
         r"""Sets the get_job_endpoint of this AddDesktopVolumesResponse.
 
-        云运营平台CBC获取到JobId后，会使用getJobEndpoint当做URL，调用云服务，查询获取Job结果
+        云运营平台CBC获取到JobId后，会使用getJobEndpoint当做URL，调用云服务，查询获取Job结果。
 
         :param get_job_endpoint: The get_job_endpoint of this AddDesktopVolumesResponse.
         :type get_job_endpoint: str
@@ -118,7 +118,7 @@ class AddDesktopVolumesResponse(SdkResponse):
     def max_provision_time(self):
         r"""Gets the max_provision_time of this AddDesktopVolumesResponse.
 
-        在线开通最大时间
+        在线开通最大时间。
 
         :return: The max_provision_time of this AddDesktopVolumesResponse.
         :rtype: int
@@ -129,7 +129,7 @@ class AddDesktopVolumesResponse(SdkResponse):
     def max_provision_time(self, max_provision_time):
         r"""Sets the max_provision_time of this AddDesktopVolumesResponse.
 
-        在线开通最大时间
+        在线开通最大时间。
 
         :param max_provision_time: The max_provision_time of this AddDesktopVolumesResponse.
         :type max_provision_time: int
@@ -140,7 +140,7 @@ class AddDesktopVolumesResponse(SdkResponse):
     def min_provision_time(self):
         r"""Gets the min_provision_time of this AddDesktopVolumesResponse.
 
-        开通最小时间（云服务最快开通时长，或一般开通时长）
+        开通最小时间（云服务最快开通时长，或一般开通时长）。
 
         :return: The min_provision_time of this AddDesktopVolumesResponse.
         :rtype: int
@@ -151,7 +151,7 @@ class AddDesktopVolumesResponse(SdkResponse):
     def min_provision_time(self, min_provision_time):
         r"""Sets the min_provision_time of this AddDesktopVolumesResponse.
 
-        开通最小时间（云服务最快开通时长，或一般开通时长）
+        开通最小时间（云服务最快开通时长，或一般开通时长）。
 
         :param min_provision_time: The min_provision_time of this AddDesktopVolumesResponse.
         :type min_provision_time: int
@@ -162,7 +162,7 @@ class AddDesktopVolumesResponse(SdkResponse):
     def periodic_query_time(self):
         r"""Gets the periodic_query_time of this AddDesktopVolumesResponse.
 
-        Job周期性查询时间，默认1分钟查询一次
+        Job周期性查询时间，默认1分钟查询一次。
 
         :return: The periodic_query_time of this AddDesktopVolumesResponse.
         :rtype: int
@@ -173,7 +173,7 @@ class AddDesktopVolumesResponse(SdkResponse):
     def periodic_query_time(self, periodic_query_time):
         r"""Sets the periodic_query_time of this AddDesktopVolumesResponse.
 
-        Job周期性查询时间，默认1分钟查询一次
+        Job周期性查询时间，默认1分钟查询一次。
 
         :param periodic_query_time: The periodic_query_time of this AddDesktopVolumesResponse.
         :type periodic_query_time: int

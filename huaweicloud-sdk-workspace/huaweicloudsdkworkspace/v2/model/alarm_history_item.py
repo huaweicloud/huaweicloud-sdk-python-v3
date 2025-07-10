@@ -49,19 +49,19 @@ class AlarmHistoryItem:
 
         The model defined in huaweicloud sdk
 
-        :param record_id: 告警记录
+        :param record_id: 告警记录。
         :type record_id: str
-        :param alarm_id: 告警规则ID
+        :param alarm_id: 告警规则ID。
         :type alarm_id: str
-        :param name: 告警规则的名称
+        :param name: 告警规则的名称。
         :type name: str
         :param status: 告警记录的状态，取值为ok，alarm，invalid； ok为正常，alarm为告警，invalid为已失效。
         :type status: str
-        :param type: 告警规则类型 | ALL_INSTANCE为全部资源指标告警， RESOURCE_GROUP为资源分组指标告警， MULTI_INSTANCE为指定资源指标告警， EVENT.SYS为系统事件告警， EVENT.CUSTOM自定义事件告警， DNSHealthCheck为健康检查告警；
+        :param type: 告警规则类型 | ALL_INSTANCE为全部资源指标告警， RESOURCE_GROUP为资源分组指标告警， MULTI_INSTANCE为指定资源指标告警， EVENT.SYS为系统事件告警， EVENT.CUSTOM自定义事件告警， DNSHealthCheck为健康检查告警。
         :type type: str
         :param level: 告警记录的告警级别，值为1,2,3,4；1为紧急，2为重要，3为次要，4为提示。
         :type level: int
-        :param begin_time: 产生时间,UTC时间
+        :param begin_time: 产生时间,UTC时间。
         :type begin_time: str
         :param metric: 
         :type metric: :class:`huaweicloudsdkworkspace.v2.AlarmMetric`
@@ -115,7 +115,7 @@ class AlarmHistoryItem:
     def record_id(self):
         r"""Gets the record_id of this AlarmHistoryItem.
 
-        告警记录
+        告警记录。
 
         :return: The record_id of this AlarmHistoryItem.
         :rtype: str
@@ -126,7 +126,7 @@ class AlarmHistoryItem:
     def record_id(self, record_id):
         r"""Sets the record_id of this AlarmHistoryItem.
 
-        告警记录
+        告警记录。
 
         :param record_id: The record_id of this AlarmHistoryItem.
         :type record_id: str
@@ -137,7 +137,7 @@ class AlarmHistoryItem:
     def alarm_id(self):
         r"""Gets the alarm_id of this AlarmHistoryItem.
 
-        告警规则ID
+        告警规则ID。
 
         :return: The alarm_id of this AlarmHistoryItem.
         :rtype: str
@@ -148,7 +148,7 @@ class AlarmHistoryItem:
     def alarm_id(self, alarm_id):
         r"""Sets the alarm_id of this AlarmHistoryItem.
 
-        告警规则ID
+        告警规则ID。
 
         :param alarm_id: The alarm_id of this AlarmHistoryItem.
         :type alarm_id: str
@@ -159,7 +159,7 @@ class AlarmHistoryItem:
     def name(self):
         r"""Gets the name of this AlarmHistoryItem.
 
-        告警规则的名称
+        告警规则的名称。
 
         :return: The name of this AlarmHistoryItem.
         :rtype: str
@@ -170,7 +170,7 @@ class AlarmHistoryItem:
     def name(self, name):
         r"""Sets the name of this AlarmHistoryItem.
 
-        告警规则的名称
+        告警规则的名称。
 
         :param name: The name of this AlarmHistoryItem.
         :type name: str
@@ -203,7 +203,7 @@ class AlarmHistoryItem:
     def type(self):
         r"""Gets the type of this AlarmHistoryItem.
 
-        告警规则类型 | ALL_INSTANCE为全部资源指标告警， RESOURCE_GROUP为资源分组指标告警， MULTI_INSTANCE为指定资源指标告警， EVENT.SYS为系统事件告警， EVENT.CUSTOM自定义事件告警， DNSHealthCheck为健康检查告警；
+        告警规则类型 | ALL_INSTANCE为全部资源指标告警， RESOURCE_GROUP为资源分组指标告警， MULTI_INSTANCE为指定资源指标告警， EVENT.SYS为系统事件告警， EVENT.CUSTOM自定义事件告警， DNSHealthCheck为健康检查告警。
 
         :return: The type of this AlarmHistoryItem.
         :rtype: str
@@ -214,7 +214,7 @@ class AlarmHistoryItem:
     def type(self, type):
         r"""Sets the type of this AlarmHistoryItem.
 
-        告警规则类型 | ALL_INSTANCE为全部资源指标告警， RESOURCE_GROUP为资源分组指标告警， MULTI_INSTANCE为指定资源指标告警， EVENT.SYS为系统事件告警， EVENT.CUSTOM自定义事件告警， DNSHealthCheck为健康检查告警；
+        告警规则类型 | ALL_INSTANCE为全部资源指标告警， RESOURCE_GROUP为资源分组指标告警， MULTI_INSTANCE为指定资源指标告警， EVENT.SYS为系统事件告警， EVENT.CUSTOM自定义事件告警， DNSHealthCheck为健康检查告警。
 
         :param type: The type of this AlarmHistoryItem.
         :type type: str
@@ -247,7 +247,7 @@ class AlarmHistoryItem:
     def begin_time(self):
         r"""Gets the begin_time of this AlarmHistoryItem.
 
-        产生时间,UTC时间
+        产生时间,UTC时间。
 
         :return: The begin_time of this AlarmHistoryItem.
         :rtype: str
@@ -258,7 +258,7 @@ class AlarmHistoryItem:
     def begin_time(self, begin_time):
         r"""Sets the begin_time of this AlarmHistoryItem.
 
-        产生时间,UTC时间
+        产生时间,UTC时间。
 
         :param begin_time: The begin_time of this AlarmHistoryItem.
         :type begin_time: str

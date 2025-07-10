@@ -83,7 +83,7 @@ class PoliciesDisplay:
         :type video_latency: int
         :param change_resolution_vm: 计算机修改分辨率：取值为： false：表示关闭。 true：表示开启。
         :type change_resolution_vm: bool
-        :param application_recognition: 应用感知配置。
+        :param application_recognition: 应用感知配置。长度不能超过1024个字符。
         :type application_recognition: str
         :param duplicate_display_enable: 同屏显示。取值为： false：表示关闭。 true：表示开启。
         :type duplicate_display_enable: bool
@@ -402,7 +402,7 @@ class PoliciesDisplay:
     def application_recognition(self):
         r"""Gets the application_recognition of this PoliciesDisplay.
 
-        应用感知配置。
+        应用感知配置。长度不能超过1024个字符。
 
         :return: The application_recognition of this PoliciesDisplay.
         :rtype: str
@@ -413,7 +413,7 @@ class PoliciesDisplay:
     def application_recognition(self, application_recognition):
         r"""Sets the application_recognition of this PoliciesDisplay.
 
-        应用感知配置。
+        应用感知配置。长度不能超过1024个字符。
 
         :param application_recognition: The application_recognition of this PoliciesDisplay.
         :type application_recognition: str

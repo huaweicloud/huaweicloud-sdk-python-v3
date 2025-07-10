@@ -34,7 +34,7 @@ class DesktopDetailInfo:
         'task_status': 'str',
         'in_maintenance_mode': 'bool',
         'created': 'str',
-        'security_groups': 'list[SecurityGroup]',
+        'security_groups': 'list[SecurityGroupInfo]',
         'login_status': 'str',
         'user_name': 'str',
         'attach_user_infos': 'list[AttachInstancesUserInfo]',
@@ -50,18 +50,12 @@ class DesktopDetailInfo:
         'ou_name': 'str',
         'os_version': 'str',
         'sid': 'str',
-        'join_domain': 'str',
         'order_id': 'str',
         'tags': 'list[Tag]',
-        'deh_id': 'str',
-        'platform_kind': 'int',
         'is_support_internet': 'bool',
         'internet_mode': 'str',
         'internet_mode_list': 'list[str]',
-        'need_apply_adn': 'bool',
         'is_attaching_eip': 'bool',
-        'desktop_isv': 'str',
-        'creation_type': 'str',
         'attach_state': 'str',
         'enterprise_project_id': 'str',
         'subnet_id': 'str',
@@ -105,18 +99,12 @@ class DesktopDetailInfo:
         'ou_name': 'ou_name',
         'os_version': 'os_version',
         'sid': 'sid',
-        'join_domain': 'join_domain',
         'order_id': 'order_id',
         'tags': 'tags',
-        'deh_id': 'deh_id',
-        'platform_kind': 'platform_kind',
         'is_support_internet': 'is_support_internet',
         'internet_mode': 'internet_mode',
         'internet_mode_list': 'internet_mode_list',
-        'need_apply_adn': 'need_apply_adn',
         'is_attaching_eip': 'is_attaching_eip',
-        'desktop_isv': 'desktop_isv',
-        'creation_type': 'creation_type',
         'attach_state': 'attach_state',
         'enterprise_project_id': 'enterprise_project_id',
         'subnet_id': 'subnet_id',
@@ -126,7 +114,7 @@ class DesktopDetailInfo:
         'hour_package_info': 'hour_package_info'
     }
 
-    def __init__(self, desktop_id=None, computer_name=None, os_host_name=None, addresses=None, ip_addresses=None, ipv4=None, ipv6=None, user_list=None, user_group_list=None, desktop_type=None, resource_type=None, metadata=None, flavor=None, status=None, task_status=None, in_maintenance_mode=None, created=None, security_groups=None, login_status=None, user_name=None, attach_user_infos=None, product_id=None, share_resource_sku=None, root_volume=None, data_volumes=None, user_group=None, availability_zone=None, site_type=None, site_name=None, product=None, ou_name=None, os_version=None, sid=None, join_domain=None, order_id=None, tags=None, deh_id=None, platform_kind=None, is_support_internet=None, internet_mode=None, internet_mode_list=None, need_apply_adn=None, is_attaching_eip=None, desktop_isv=None, creation_type=None, attach_state=None, enterprise_project_id=None, subnet_id=None, bill_resource_id=None, process=None, root_resource_id=None, hour_package_info=None):
+    def __init__(self, desktop_id=None, computer_name=None, os_host_name=None, addresses=None, ip_addresses=None, ipv4=None, ipv6=None, user_list=None, user_group_list=None, desktop_type=None, resource_type=None, metadata=None, flavor=None, status=None, task_status=None, in_maintenance_mode=None, created=None, security_groups=None, login_status=None, user_name=None, attach_user_infos=None, product_id=None, share_resource_sku=None, root_volume=None, data_volumes=None, user_group=None, availability_zone=None, site_type=None, site_name=None, product=None, ou_name=None, os_version=None, sid=None, order_id=None, tags=None, is_support_internet=None, internet_mode=None, internet_mode_list=None, is_attaching_eip=None, attach_state=None, enterprise_project_id=None, subnet_id=None, bill_resource_id=None, process=None, root_resource_id=None, hour_package_info=None):
         r"""DesktopDetailInfo
 
         The model defined in huaweicloud sdk
@@ -145,13 +133,13 @@ class DesktopDetailInfo:
         :type ipv4: str
         :param ipv6: 系统计算机IPV6。
         :type ipv6: str
-        :param user_list: 用户列表
+        :param user_list: 用户列表。
         :type user_list: list[str]
-        :param user_group_list: 用户组列表
+        :param user_group_list: 用户组列表。
         :type user_group_list: list[str]
         :param desktop_type: 桌面类型。  - DEDICATED：专属桌面。
         :type desktop_type: str
-        :param resource_type: resource_type字段，分别表示：专属桌面（DEDICATED_DESKTOP）、池桌面（POOLED_DESKTOP）、渲染桌面（RENDER_DESKTOP）、专享主机（EXCLUSIVE_HOST）、多用户桌面(SHARED_DESKTOP)
+        :param resource_type: resource_type字段，分别表示：专属桌面（DEDICATED_DESKTOP）、池桌面（POOLED_DESKTOP）、渲染桌面（RENDER_DESKTOP）、专享主机（EXCLUSIVE_HOST）、多用户桌面(SHARED_DESKTOP)。
         :type resource_type: str
         :param metadata: 桌面元数据。  - charging_mode 周期套餐标识，1表示包周期，0表示按需。 - image_name 创建桌面的镜像名称。 - bill_resource_id 镜像计费资源ID。 - metering.image_id 镜像ID。 - metering.resourcespeccode 桌面资源编码。 - metering.resourcetype 桌面资源类型。 - os_bit 操作系统位数：32或64。 - os_type 操作系统类型：Linux、Windows或Others。 - desktop_os_version 操作系统版本。
         :type metadata: dict(str, str)
@@ -161,12 +149,12 @@ class DesktopDetailInfo:
         :type status: str
         :param task_status: 任务状态。  - scheduling：创建中，正在进行调度。 - block_device_mapping：创建中，正在准备磁盘。 - networking：创建中，正在准备网络。 - spawning：创建中，正在内部创建。 - rebooting：重启中。 - reboot_pending：重启中，正在下发重启。 - reboot_started：重启中，开始内部重启。 - rebooting_hard：强制重启中。 - reboot_pending_hard：强制重启中，正在下发重启。 - reboot_started_hard：强制重启中，开始内部重启。 - rebuilding：重建中。 - rebuild_block_device_mapping：重建中，正在准备磁盘。 - rebuild_spawning：重建中，正在内部重建。 - migrating：热迁移中。 - resize_prep：调整规格中，正在准备阶段。 - resize_migrating：调整规格中，正在迁移阶段。 - resize_migrated：调整规格中，已经完成迁移。 - resize_finish：调整规格中，正在完成调整。 - resize_reverting：调整规格中，正在回退调整。 - powering-off：停止中。 - powering-on：启动中。 - deleting：删除中。 - deleteFailed：删除失败。 - updating: 更新中。 - desktopNetworkChanging: 切换网络中。
         :type task_status: str
-        :param in_maintenance_mode: 是否处于维护模式,true表示维护模式，false表示不处于维护模式
+        :param in_maintenance_mode: 是否处于维护模式,true表示维护模式，false表示不处于维护模式。
         :type in_maintenance_mode: bool
         :param created: 桌面创建时间。
         :type created: str
         :param security_groups: 桌面安全组。
-        :type security_groups: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroup`]
+        :type security_groups: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroupInfo`]
         :param login_status: 桌面的登录状态。  - UNREGISTER：表示桌面未注册时的状态（桌面启动后，会自动注册）。关机后也会出现未注册的状态。 - REGISTERED：表示桌面注册以后，等待用户连接的状态。 - CONNECTED：表示用户已经成功登录，正在使用桌面。 - DISCONNECTED：表示桌面与客户端断开会话后显示的状态，可能为关闭客户端窗口，或客户端与桌面网络断开引起。
         :type login_status: str
         :param user_name: 桌面所属用户。
@@ -175,7 +163,7 @@ class DesktopDetailInfo:
         :type attach_user_infos: list[:class:`huaweicloudsdkworkspace.v2.AttachInstancesUserInfo`]
         :param product_id: 产品ID。
         :type product_id: str
-        :param share_resource_sku: 桌面协同资源SKU码
+        :param share_resource_sku: 桌面协同资源SKU码。
         :type share_resource_sku: str
         :param root_volume: 
         :type root_volume: :class:`huaweicloudsdkworkspace.v2.VolumeDetail`
@@ -185,9 +173,9 @@ class DesktopDetailInfo:
         :type user_group: str
         :param availability_zone: 可用分区。
         :type availability_zone: str
-        :param site_type: 站点类型
+        :param site_type: 站点类型。
         :type site_type: str
-        :param site_name: 站点名字
+        :param site_name: 站点名字。
         :type site_name: str
         :param product: 
         :type product: :class:`huaweicloudsdkworkspace.v2.ProductInfo`
@@ -195,39 +183,27 @@ class DesktopDetailInfo:
         :type ou_name: str
         :param os_version: 操作系统版本号。
         :type os_version: str
-        :param sid: SID
+        :param sid: SID。
         :type sid: str
-        :param join_domain: 计算机是否加入域。  - 0：不加入域。 - 1：加入域。
-        :type join_domain: str
         :param order_id: 包周期产品的订单ID。
         :type order_id: str
         :param tags: 桌面标签列表。
         :type tags: list[:class:`huaweicloudsdkworkspace.v2.Tag`]
-        :param deh_id: 云办公主机id。
-        :type deh_id: str
-        :param platform_kind: 平台类型，0:fc fusioncompute平台 1:physical 物理机 2:openstack 3:workspace_manager 1.0平台 5:graphics_workstation 图形工作站 6:sce 容器桌面 10:other 其它平台。
-        :type platform_kind: int
-        :param is_support_internet: 是否开通互联网，true：已开通，false：未开通
+        :param is_support_internet: 是否开通互联网，true：已开通，false：未开通。
         :type is_support_internet: bool
         :param internet_mode: 上网方式。 - NAT：表示NAT上网方式。 - EIP：表示EIP上网方式。 - BOTH：表示两种上网方式都支持。
         :type internet_mode: str
         :param internet_mode_list: 桌面使用的上网方式列表。
         :type internet_mode_list: list[str]
-        :param need_apply_adn: 是否需要开通云办公带宽。
-        :type need_apply_adn: bool
         :param is_attaching_eip: 桌面是否正在绑定EIP。
         :type is_attaching_eip: bool
-        :param desktop_isv: 桌面来源。  - DEFAULT：默认桌面来源。 - ONEMOBILE：协同办公云桌面OneMobile。
-        :type desktop_isv: str
-        :param creation_type: 桌面创建类型，null或者MANUALLY表示基础创建出来，AUTOSCALE：表示自动扩容出来的。
-        :type creation_type: str
         :param attach_state: 分配状态。 - ATTACHED：已分配。 - UNATTACH：未分配 表示未关联。 - DEATTACHED：已解分配。 - ATTACHING：分配中。 - DEATTACHING：解分配中。 - ATTACHFAIL：分配失败。 - DEATTACHFAIL：解分配失败。 - WAITING：等待被分配中,描述从批量分配（解分配）下发到转入分配（解分配）的中间状态 同时方便单个关联流程的状态独立性。 - ATTACH_FAIL_CAN_ATTACH_AGAIN：分配失败,还可以再关联。 - DEATTACH_FAIL_CAN_DEATTACH_AGAIN：解分配失败,还可以再解分配。
         :type attach_state: str
-        :param enterprise_project_id: 企业项目ID
+        :param enterprise_project_id: 企业项目ID。
         :type enterprise_project_id: str
         :param subnet_id: 桌面的子网ID。
         :type subnet_id: str
-        :param bill_resource_id: 桌面计费资源ID
+        :param bill_resource_id: 桌面计费资源ID。
         :type bill_resource_id: str
         :param process: 桌面任务进度， 取值范围0-100以及null，null表示该桌面无任务，0-100表明该任务进度的百分比。
         :type process: int
@@ -272,18 +248,12 @@ class DesktopDetailInfo:
         self._ou_name = None
         self._os_version = None
         self._sid = None
-        self._join_domain = None
         self._order_id = None
         self._tags = None
-        self._deh_id = None
-        self._platform_kind = None
         self._is_support_internet = None
         self._internet_mode = None
         self._internet_mode_list = None
-        self._need_apply_adn = None
         self._is_attaching_eip = None
-        self._desktop_isv = None
-        self._creation_type = None
         self._attach_state = None
         self._enterprise_project_id = None
         self._subnet_id = None
@@ -359,30 +329,18 @@ class DesktopDetailInfo:
             self.os_version = os_version
         if sid is not None:
             self.sid = sid
-        if join_domain is not None:
-            self.join_domain = join_domain
         if order_id is not None:
             self.order_id = order_id
         if tags is not None:
             self.tags = tags
-        if deh_id is not None:
-            self.deh_id = deh_id
-        if platform_kind is not None:
-            self.platform_kind = platform_kind
         if is_support_internet is not None:
             self.is_support_internet = is_support_internet
         if internet_mode is not None:
             self.internet_mode = internet_mode
         if internet_mode_list is not None:
             self.internet_mode_list = internet_mode_list
-        if need_apply_adn is not None:
-            self.need_apply_adn = need_apply_adn
         if is_attaching_eip is not None:
             self.is_attaching_eip = is_attaching_eip
-        if desktop_isv is not None:
-            self.desktop_isv = desktop_isv
-        if creation_type is not None:
-            self.creation_type = creation_type
         if attach_state is not None:
             self.attach_state = attach_state
         if enterprise_project_id is not None:
@@ -556,7 +514,7 @@ class DesktopDetailInfo:
     def user_list(self):
         r"""Gets the user_list of this DesktopDetailInfo.
 
-        用户列表
+        用户列表。
 
         :return: The user_list of this DesktopDetailInfo.
         :rtype: list[str]
@@ -567,7 +525,7 @@ class DesktopDetailInfo:
     def user_list(self, user_list):
         r"""Sets the user_list of this DesktopDetailInfo.
 
-        用户列表
+        用户列表。
 
         :param user_list: The user_list of this DesktopDetailInfo.
         :type user_list: list[str]
@@ -578,7 +536,7 @@ class DesktopDetailInfo:
     def user_group_list(self):
         r"""Gets the user_group_list of this DesktopDetailInfo.
 
-        用户组列表
+        用户组列表。
 
         :return: The user_group_list of this DesktopDetailInfo.
         :rtype: list[str]
@@ -589,7 +547,7 @@ class DesktopDetailInfo:
     def user_group_list(self, user_group_list):
         r"""Sets the user_group_list of this DesktopDetailInfo.
 
-        用户组列表
+        用户组列表。
 
         :param user_group_list: The user_group_list of this DesktopDetailInfo.
         :type user_group_list: list[str]
@@ -622,7 +580,7 @@ class DesktopDetailInfo:
     def resource_type(self):
         r"""Gets the resource_type of this DesktopDetailInfo.
 
-        resource_type字段，分别表示：专属桌面（DEDICATED_DESKTOP）、池桌面（POOLED_DESKTOP）、渲染桌面（RENDER_DESKTOP）、专享主机（EXCLUSIVE_HOST）、多用户桌面(SHARED_DESKTOP)
+        resource_type字段，分别表示：专属桌面（DEDICATED_DESKTOP）、池桌面（POOLED_DESKTOP）、渲染桌面（RENDER_DESKTOP）、专享主机（EXCLUSIVE_HOST）、多用户桌面(SHARED_DESKTOP)。
 
         :return: The resource_type of this DesktopDetailInfo.
         :rtype: str
@@ -633,7 +591,7 @@ class DesktopDetailInfo:
     def resource_type(self, resource_type):
         r"""Sets the resource_type of this DesktopDetailInfo.
 
-        resource_type字段，分别表示：专属桌面（DEDICATED_DESKTOP）、池桌面（POOLED_DESKTOP）、渲染桌面（RENDER_DESKTOP）、专享主机（EXCLUSIVE_HOST）、多用户桌面(SHARED_DESKTOP)
+        resource_type字段，分别表示：专属桌面（DEDICATED_DESKTOP）、池桌面（POOLED_DESKTOP）、渲染桌面（RENDER_DESKTOP）、专享主机（EXCLUSIVE_HOST）、多用户桌面(SHARED_DESKTOP)。
 
         :param resource_type: The resource_type of this DesktopDetailInfo.
         :type resource_type: str
@@ -728,7 +686,7 @@ class DesktopDetailInfo:
     def in_maintenance_mode(self):
         r"""Gets the in_maintenance_mode of this DesktopDetailInfo.
 
-        是否处于维护模式,true表示维护模式，false表示不处于维护模式
+        是否处于维护模式,true表示维护模式，false表示不处于维护模式。
 
         :return: The in_maintenance_mode of this DesktopDetailInfo.
         :rtype: bool
@@ -739,7 +697,7 @@ class DesktopDetailInfo:
     def in_maintenance_mode(self, in_maintenance_mode):
         r"""Sets the in_maintenance_mode of this DesktopDetailInfo.
 
-        是否处于维护模式,true表示维护模式，false表示不处于维护模式
+        是否处于维护模式,true表示维护模式，false表示不处于维护模式。
 
         :param in_maintenance_mode: The in_maintenance_mode of this DesktopDetailInfo.
         :type in_maintenance_mode: bool
@@ -775,7 +733,7 @@ class DesktopDetailInfo:
         桌面安全组。
 
         :return: The security_groups of this DesktopDetailInfo.
-        :rtype: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroup`]
+        :rtype: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroupInfo`]
         """
         return self._security_groups
 
@@ -786,7 +744,7 @@ class DesktopDetailInfo:
         桌面安全组。
 
         :param security_groups: The security_groups of this DesktopDetailInfo.
-        :type security_groups: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroup`]
+        :type security_groups: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroupInfo`]
         """
         self._security_groups = security_groups
 
@@ -882,7 +840,7 @@ class DesktopDetailInfo:
     def share_resource_sku(self):
         r"""Gets the share_resource_sku of this DesktopDetailInfo.
 
-        桌面协同资源SKU码
+        桌面协同资源SKU码。
 
         :return: The share_resource_sku of this DesktopDetailInfo.
         :rtype: str
@@ -893,7 +851,7 @@ class DesktopDetailInfo:
     def share_resource_sku(self, share_resource_sku):
         r"""Sets the share_resource_sku of this DesktopDetailInfo.
 
-        桌面协同资源SKU码
+        桌面协同资源SKU码。
 
         :param share_resource_sku: The share_resource_sku of this DesktopDetailInfo.
         :type share_resource_sku: str
@@ -988,7 +946,7 @@ class DesktopDetailInfo:
     def site_type(self):
         r"""Gets the site_type of this DesktopDetailInfo.
 
-        站点类型
+        站点类型。
 
         :return: The site_type of this DesktopDetailInfo.
         :rtype: str
@@ -999,7 +957,7 @@ class DesktopDetailInfo:
     def site_type(self, site_type):
         r"""Sets the site_type of this DesktopDetailInfo.
 
-        站点类型
+        站点类型。
 
         :param site_type: The site_type of this DesktopDetailInfo.
         :type site_type: str
@@ -1010,7 +968,7 @@ class DesktopDetailInfo:
     def site_name(self):
         r"""Gets the site_name of this DesktopDetailInfo.
 
-        站点名字
+        站点名字。
 
         :return: The site_name of this DesktopDetailInfo.
         :rtype: str
@@ -1021,7 +979,7 @@ class DesktopDetailInfo:
     def site_name(self, site_name):
         r"""Sets the site_name of this DesktopDetailInfo.
 
-        站点名字
+        站点名字。
 
         :param site_name: The site_name of this DesktopDetailInfo.
         :type site_name: str
@@ -1094,7 +1052,7 @@ class DesktopDetailInfo:
     def sid(self):
         r"""Gets the sid of this DesktopDetailInfo.
 
-        SID
+        SID。
 
         :return: The sid of this DesktopDetailInfo.
         :rtype: str
@@ -1105,34 +1063,12 @@ class DesktopDetailInfo:
     def sid(self, sid):
         r"""Sets the sid of this DesktopDetailInfo.
 
-        SID
+        SID。
 
         :param sid: The sid of this DesktopDetailInfo.
         :type sid: str
         """
         self._sid = sid
-
-    @property
-    def join_domain(self):
-        r"""Gets the join_domain of this DesktopDetailInfo.
-
-        计算机是否加入域。  - 0：不加入域。 - 1：加入域。
-
-        :return: The join_domain of this DesktopDetailInfo.
-        :rtype: str
-        """
-        return self._join_domain
-
-    @join_domain.setter
-    def join_domain(self, join_domain):
-        r"""Sets the join_domain of this DesktopDetailInfo.
-
-        计算机是否加入域。  - 0：不加入域。 - 1：加入域。
-
-        :param join_domain: The join_domain of this DesktopDetailInfo.
-        :type join_domain: str
-        """
-        self._join_domain = join_domain
 
     @property
     def order_id(self):
@@ -1179,54 +1115,10 @@ class DesktopDetailInfo:
         self._tags = tags
 
     @property
-    def deh_id(self):
-        r"""Gets the deh_id of this DesktopDetailInfo.
-
-        云办公主机id。
-
-        :return: The deh_id of this DesktopDetailInfo.
-        :rtype: str
-        """
-        return self._deh_id
-
-    @deh_id.setter
-    def deh_id(self, deh_id):
-        r"""Sets the deh_id of this DesktopDetailInfo.
-
-        云办公主机id。
-
-        :param deh_id: The deh_id of this DesktopDetailInfo.
-        :type deh_id: str
-        """
-        self._deh_id = deh_id
-
-    @property
-    def platform_kind(self):
-        r"""Gets the platform_kind of this DesktopDetailInfo.
-
-        平台类型，0:fc fusioncompute平台 1:physical 物理机 2:openstack 3:workspace_manager 1.0平台 5:graphics_workstation 图形工作站 6:sce 容器桌面 10:other 其它平台。
-
-        :return: The platform_kind of this DesktopDetailInfo.
-        :rtype: int
-        """
-        return self._platform_kind
-
-    @platform_kind.setter
-    def platform_kind(self, platform_kind):
-        r"""Sets the platform_kind of this DesktopDetailInfo.
-
-        平台类型，0:fc fusioncompute平台 1:physical 物理机 2:openstack 3:workspace_manager 1.0平台 5:graphics_workstation 图形工作站 6:sce 容器桌面 10:other 其它平台。
-
-        :param platform_kind: The platform_kind of this DesktopDetailInfo.
-        :type platform_kind: int
-        """
-        self._platform_kind = platform_kind
-
-    @property
     def is_support_internet(self):
         r"""Gets the is_support_internet of this DesktopDetailInfo.
 
-        是否开通互联网，true：已开通，false：未开通
+        是否开通互联网，true：已开通，false：未开通。
 
         :return: The is_support_internet of this DesktopDetailInfo.
         :rtype: bool
@@ -1237,7 +1129,7 @@ class DesktopDetailInfo:
     def is_support_internet(self, is_support_internet):
         r"""Sets the is_support_internet of this DesktopDetailInfo.
 
-        是否开通互联网，true：已开通，false：未开通
+        是否开通互联网，true：已开通，false：未开通。
 
         :param is_support_internet: The is_support_internet of this DesktopDetailInfo.
         :type is_support_internet: bool
@@ -1289,28 +1181,6 @@ class DesktopDetailInfo:
         self._internet_mode_list = internet_mode_list
 
     @property
-    def need_apply_adn(self):
-        r"""Gets the need_apply_adn of this DesktopDetailInfo.
-
-        是否需要开通云办公带宽。
-
-        :return: The need_apply_adn of this DesktopDetailInfo.
-        :rtype: bool
-        """
-        return self._need_apply_adn
-
-    @need_apply_adn.setter
-    def need_apply_adn(self, need_apply_adn):
-        r"""Sets the need_apply_adn of this DesktopDetailInfo.
-
-        是否需要开通云办公带宽。
-
-        :param need_apply_adn: The need_apply_adn of this DesktopDetailInfo.
-        :type need_apply_adn: bool
-        """
-        self._need_apply_adn = need_apply_adn
-
-    @property
     def is_attaching_eip(self):
         r"""Gets the is_attaching_eip of this DesktopDetailInfo.
 
@@ -1331,50 +1201,6 @@ class DesktopDetailInfo:
         :type is_attaching_eip: bool
         """
         self._is_attaching_eip = is_attaching_eip
-
-    @property
-    def desktop_isv(self):
-        r"""Gets the desktop_isv of this DesktopDetailInfo.
-
-        桌面来源。  - DEFAULT：默认桌面来源。 - ONEMOBILE：协同办公云桌面OneMobile。
-
-        :return: The desktop_isv of this DesktopDetailInfo.
-        :rtype: str
-        """
-        return self._desktop_isv
-
-    @desktop_isv.setter
-    def desktop_isv(self, desktop_isv):
-        r"""Sets the desktop_isv of this DesktopDetailInfo.
-
-        桌面来源。  - DEFAULT：默认桌面来源。 - ONEMOBILE：协同办公云桌面OneMobile。
-
-        :param desktop_isv: The desktop_isv of this DesktopDetailInfo.
-        :type desktop_isv: str
-        """
-        self._desktop_isv = desktop_isv
-
-    @property
-    def creation_type(self):
-        r"""Gets the creation_type of this DesktopDetailInfo.
-
-        桌面创建类型，null或者MANUALLY表示基础创建出来，AUTOSCALE：表示自动扩容出来的。
-
-        :return: The creation_type of this DesktopDetailInfo.
-        :rtype: str
-        """
-        return self._creation_type
-
-    @creation_type.setter
-    def creation_type(self, creation_type):
-        r"""Sets the creation_type of this DesktopDetailInfo.
-
-        桌面创建类型，null或者MANUALLY表示基础创建出来，AUTOSCALE：表示自动扩容出来的。
-
-        :param creation_type: The creation_type of this DesktopDetailInfo.
-        :type creation_type: str
-        """
-        self._creation_type = creation_type
 
     @property
     def attach_state(self):
@@ -1402,7 +1228,7 @@ class DesktopDetailInfo:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this DesktopDetailInfo.
 
-        企业项目ID
+        企业项目ID。
 
         :return: The enterprise_project_id of this DesktopDetailInfo.
         :rtype: str
@@ -1413,7 +1239,7 @@ class DesktopDetailInfo:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this DesktopDetailInfo.
 
-        企业项目ID
+        企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this DesktopDetailInfo.
         :type enterprise_project_id: str
@@ -1446,7 +1272,7 @@ class DesktopDetailInfo:
     def bill_resource_id(self):
         r"""Gets the bill_resource_id of this DesktopDetailInfo.
 
-        桌面计费资源ID
+        桌面计费资源ID。
 
         :return: The bill_resource_id of this DesktopDetailInfo.
         :rtype: str
@@ -1457,7 +1283,7 @@ class DesktopDetailInfo:
     def bill_resource_id(self, bill_resource_id):
         r"""Sets the bill_resource_id of this DesktopDetailInfo.
 
-        桌面计费资源ID
+        桌面计费资源ID。
 
         :param bill_resource_id: The bill_resource_id of this DesktopDetailInfo.
         :type bill_resource_id: str

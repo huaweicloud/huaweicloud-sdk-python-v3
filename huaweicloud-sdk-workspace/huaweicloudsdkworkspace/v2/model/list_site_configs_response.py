@@ -32,9 +32,9 @@ class ListSiteConfigsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param site_infos: 站点信息列表
+        :param site_infos: 站点信息列表。
         :type site_infos: list[:class:`huaweicloudsdkworkspace.v2.SiteInfo`]
-        :param total_count: 站点总数
+        :param total_count: 站点总数。
         :type total_count: int
         """
         
@@ -53,7 +53,7 @@ class ListSiteConfigsResponse(SdkResponse):
     def site_infos(self):
         r"""Gets the site_infos of this ListSiteConfigsResponse.
 
-        站点信息列表
+        站点信息列表。
 
         :return: The site_infos of this ListSiteConfigsResponse.
         :rtype: list[:class:`huaweicloudsdkworkspace.v2.SiteInfo`]
@@ -64,7 +64,7 @@ class ListSiteConfigsResponse(SdkResponse):
     def site_infos(self, site_infos):
         r"""Sets the site_infos of this ListSiteConfigsResponse.
 
-        站点信息列表
+        站点信息列表。
 
         :param site_infos: The site_infos of this ListSiteConfigsResponse.
         :type site_infos: list[:class:`huaweicloudsdkworkspace.v2.SiteInfo`]
@@ -75,7 +75,7 @@ class ListSiteConfigsResponse(SdkResponse):
     def total_count(self):
         r"""Gets the total_count of this ListSiteConfigsResponse.
 
-        站点总数
+        站点总数。
 
         :return: The total_count of this ListSiteConfigsResponse.
         :rtype: int
@@ -86,7 +86,7 @@ class ListSiteConfigsResponse(SdkResponse):
     def total_count(self, total_count):
         r"""Sets the total_count of this ListSiteConfigsResponse.
 
-        站点总数
+        站点总数。
 
         :param total_count: The total_count of this ListSiteConfigsResponse.
         :type total_count: int

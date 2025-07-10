@@ -34,11 +34,11 @@ class ListDesktopByTagsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param offset: 指定查询信息列表的偏移量，默认为0
+        :param offset: 指定查询信息列表的偏移量，默认为0。
         :type offset: int
-        :param resources: 资源对象
+        :param resources: 资源对象。
         :type resources: list[:class:`huaweicloudsdkworkspace.v2.TagResource`]
-        :param total_count: 数量
+        :param total_count: 数量。
         :type total_count: int
         """
         
@@ -60,7 +60,7 @@ class ListDesktopByTagsResponse(SdkResponse):
     def offset(self):
         r"""Gets the offset of this ListDesktopByTagsResponse.
 
-        指定查询信息列表的偏移量，默认为0
+        指定查询信息列表的偏移量，默认为0。
 
         :return: The offset of this ListDesktopByTagsResponse.
         :rtype: int
@@ -71,7 +71,7 @@ class ListDesktopByTagsResponse(SdkResponse):
     def offset(self, offset):
         r"""Sets the offset of this ListDesktopByTagsResponse.
 
-        指定查询信息列表的偏移量，默认为0
+        指定查询信息列表的偏移量，默认为0。
 
         :param offset: The offset of this ListDesktopByTagsResponse.
         :type offset: int
@@ -82,7 +82,7 @@ class ListDesktopByTagsResponse(SdkResponse):
     def resources(self):
         r"""Gets the resources of this ListDesktopByTagsResponse.
 
-        资源对象
+        资源对象。
 
         :return: The resources of this ListDesktopByTagsResponse.
         :rtype: list[:class:`huaweicloudsdkworkspace.v2.TagResource`]
@@ -93,7 +93,7 @@ class ListDesktopByTagsResponse(SdkResponse):
     def resources(self, resources):
         r"""Sets the resources of this ListDesktopByTagsResponse.
 
-        资源对象
+        资源对象。
 
         :param resources: The resources of this ListDesktopByTagsResponse.
         :type resources: list[:class:`huaweicloudsdkworkspace.v2.TagResource`]
@@ -104,7 +104,7 @@ class ListDesktopByTagsResponse(SdkResponse):
     def total_count(self):
         r"""Gets the total_count of this ListDesktopByTagsResponse.
 
-        数量
+        数量。
 
         :return: The total_count of this ListDesktopByTagsResponse.
         :rtype: int
@@ -115,7 +115,7 @@ class ListDesktopByTagsResponse(SdkResponse):
     def total_count(self, total_count):
         r"""Sets the total_count of this ListDesktopByTagsResponse.
 
-        数量
+        数量。
 
         :param total_count: The total_count of this ListDesktopByTagsResponse.
         :type total_count: int

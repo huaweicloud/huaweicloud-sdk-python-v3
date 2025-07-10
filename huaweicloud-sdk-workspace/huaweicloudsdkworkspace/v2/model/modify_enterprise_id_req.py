@@ -29,7 +29,7 @@ class ModifyEnterpriseIdReq:
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_id: 企业ID
+        :param enterprise_id: 企业ID。
         :type enterprise_id: str
         """
         
@@ -44,7 +44,7 @@ class ModifyEnterpriseIdReq:
     def enterprise_id(self):
         r"""Gets the enterprise_id of this ModifyEnterpriseIdReq.
 
-        企业ID
+        企业ID。
 
         :return: The enterprise_id of this ModifyEnterpriseIdReq.
         :rtype: str
@@ -55,7 +55,7 @@ class ModifyEnterpriseIdReq:
     def enterprise_id(self, enterprise_id):
         r"""Sets the enterprise_id of this ModifyEnterpriseIdReq.
 
-        企业ID
+        企业ID。
 
         :param enterprise_id: The enterprise_id of this ModifyEnterpriseIdReq.
         :type enterprise_id: str

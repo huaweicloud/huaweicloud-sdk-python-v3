@@ -43,21 +43,21 @@ class BatchResInquiryResult:
 
         The model defined in huaweicloud sdk
 
-        :param id: ID标识,同一次询价中不能重复
+        :param id: ID标识,同一次询价中不能重复。
         :type id: str
-        :param product_id: 变更后的产品ID
+        :param product_id: 变更后的产品ID。
         :type product_id: str
-        :param amount: 总额，即最终优惠后的金额(降配场景下包含退还的现金、现金券、储值卡的总额)
+        :param amount: 总额，即最终优惠后的金额(降配场景下包含退还的现金、现金券、储值卡的总额)。
         :type amount: float
-        :param coupon_results: 券的退订金额（降配存在）
+        :param coupon_results: 券的退订金额（降配存在）。
         :type coupon_results: list[:class:`huaweicloudsdkworkspace.v2.CouponUnsubscribeResult`]
-        :param discount_amount: 优惠额
+        :param discount_amount: 优惠额。
         :type discount_amount: float
-        :param original_amount: 原总额，即优惠前总额
+        :param original_amount: 原总额，即优惠前总额。
         :type original_amount: float
-        :param measure_id: 度量单位标识
+        :param measure_id: 度量单位标识。
         :type measure_id: int
-        :param extend_params: 扩展参数
+        :param extend_params: 扩展参数。
         :type extend_params: str
         """
         
@@ -94,7 +94,7 @@ class BatchResInquiryResult:
     def id(self):
         r"""Gets the id of this BatchResInquiryResult.
 
-        ID标识,同一次询价中不能重复
+        ID标识,同一次询价中不能重复。
 
         :return: The id of this BatchResInquiryResult.
         :rtype: str
@@ -105,7 +105,7 @@ class BatchResInquiryResult:
     def id(self, id):
         r"""Sets the id of this BatchResInquiryResult.
 
-        ID标识,同一次询价中不能重复
+        ID标识,同一次询价中不能重复。
 
         :param id: The id of this BatchResInquiryResult.
         :type id: str
@@ -116,7 +116,7 @@ class BatchResInquiryResult:
     def product_id(self):
         r"""Gets the product_id of this BatchResInquiryResult.
 
-        变更后的产品ID
+        变更后的产品ID。
 
         :return: The product_id of this BatchResInquiryResult.
         :rtype: str
@@ -127,7 +127,7 @@ class BatchResInquiryResult:
     def product_id(self, product_id):
         r"""Sets the product_id of this BatchResInquiryResult.
 
-        变更后的产品ID
+        变更后的产品ID。
 
         :param product_id: The product_id of this BatchResInquiryResult.
         :type product_id: str
@@ -138,7 +138,7 @@ class BatchResInquiryResult:
     def amount(self):
         r"""Gets the amount of this BatchResInquiryResult.
 
-        总额，即最终优惠后的金额(降配场景下包含退还的现金、现金券、储值卡的总额)
+        总额，即最终优惠后的金额(降配场景下包含退还的现金、现金券、储值卡的总额)。
 
         :return: The amount of this BatchResInquiryResult.
         :rtype: float
@@ -149,7 +149,7 @@ class BatchResInquiryResult:
     def amount(self, amount):
         r"""Sets the amount of this BatchResInquiryResult.
 
-        总额，即最终优惠后的金额(降配场景下包含退还的现金、现金券、储值卡的总额)
+        总额，即最终优惠后的金额(降配场景下包含退还的现金、现金券、储值卡的总额)。
 
         :param amount: The amount of this BatchResInquiryResult.
         :type amount: float
@@ -160,7 +160,7 @@ class BatchResInquiryResult:
     def coupon_results(self):
         r"""Gets the coupon_results of this BatchResInquiryResult.
 
-        券的退订金额（降配存在）
+        券的退订金额（降配存在）。
 
         :return: The coupon_results of this BatchResInquiryResult.
         :rtype: list[:class:`huaweicloudsdkworkspace.v2.CouponUnsubscribeResult`]
@@ -171,7 +171,7 @@ class BatchResInquiryResult:
     def coupon_results(self, coupon_results):
         r"""Sets the coupon_results of this BatchResInquiryResult.
 
-        券的退订金额（降配存在）
+        券的退订金额（降配存在）。
 
         :param coupon_results: The coupon_results of this BatchResInquiryResult.
         :type coupon_results: list[:class:`huaweicloudsdkworkspace.v2.CouponUnsubscribeResult`]
@@ -182,7 +182,7 @@ class BatchResInquiryResult:
     def discount_amount(self):
         r"""Gets the discount_amount of this BatchResInquiryResult.
 
-        优惠额
+        优惠额。
 
         :return: The discount_amount of this BatchResInquiryResult.
         :rtype: float
@@ -193,7 +193,7 @@ class BatchResInquiryResult:
     def discount_amount(self, discount_amount):
         r"""Sets the discount_amount of this BatchResInquiryResult.
 
-        优惠额
+        优惠额。
 
         :param discount_amount: The discount_amount of this BatchResInquiryResult.
         :type discount_amount: float
@@ -204,7 +204,7 @@ class BatchResInquiryResult:
     def original_amount(self):
         r"""Gets the original_amount of this BatchResInquiryResult.
 
-        原总额，即优惠前总额
+        原总额，即优惠前总额。
 
         :return: The original_amount of this BatchResInquiryResult.
         :rtype: float
@@ -215,7 +215,7 @@ class BatchResInquiryResult:
     def original_amount(self, original_amount):
         r"""Sets the original_amount of this BatchResInquiryResult.
 
-        原总额，即优惠前总额
+        原总额，即优惠前总额。
 
         :param original_amount: The original_amount of this BatchResInquiryResult.
         :type original_amount: float
@@ -226,7 +226,7 @@ class BatchResInquiryResult:
     def measure_id(self):
         r"""Gets the measure_id of this BatchResInquiryResult.
 
-        度量单位标识
+        度量单位标识。
 
         :return: The measure_id of this BatchResInquiryResult.
         :rtype: int
@@ -237,7 +237,7 @@ class BatchResInquiryResult:
     def measure_id(self, measure_id):
         r"""Sets the measure_id of this BatchResInquiryResult.
 
-        度量单位标识
+        度量单位标识。
 
         :param measure_id: The measure_id of this BatchResInquiryResult.
         :type measure_id: int
@@ -248,7 +248,7 @@ class BatchResInquiryResult:
     def extend_params(self):
         r"""Gets the extend_params of this BatchResInquiryResult.
 
-        扩展参数
+        扩展参数。
 
         :return: The extend_params of this BatchResInquiryResult.
         :rtype: str
@@ -259,7 +259,7 @@ class BatchResInquiryResult:
     def extend_params(self, extend_params):
         r"""Sets the extend_params of this BatchResInquiryResult.
 
-        扩展参数
+        扩展参数。
 
         :param extend_params: The extend_params of this BatchResInquiryResult.
         :type extend_params: str

@@ -61,39 +61,39 @@ class ProductResult:
 
         The model defined in huaweicloud sdk
 
-        :param id: 对应请求体中的ID
+        :param id: 对应请求体中的ID。
         :type id: str
-        :param product_id: 产品ID
+        :param product_id: 产品ID。
         :type product_id: str
-        :param amount: 总额，即最终优惠后的金额(预留实例只包含预付部分)
+        :param amount: 总额，即最终优惠后的金额(预留实例只包含预付部分)。
         :type amount: float
-        :param discount_amount: 优惠额(预留实例只包含预付部分)
+        :param discount_amount: 优惠额(预留实例只包含预付部分)。
         :type discount_amount: float
-        :param original_amount: 原总额，即优惠前总额(预留实例只包含预付部分)
+        :param original_amount: 原总额，即优惠前总额(预留实例只包含预付部分)。
         :type original_amount: float
-        :param official_website_amount: 官网价（非所有接口有该字段）(预留实例只包含预付部分)
+        :param official_website_amount: 官网价（非所有接口有该字段）(预留实例只包含预付部分)。
         :type official_website_amount: float
-        :param official_website_discount_amount: 官网价优惠额（非所有接口有该字段）(预留实例只包含预付部分)
+        :param official_website_discount_amount: 官网价优惠额（非所有接口有该字段）(预留实例只包含预付部分)。
         :type official_website_discount_amount: float
-        :param optional_discount_amount: 可选折扣优惠额(预留实例只包含预付部分)，如商务折扣、伙伴折扣、促销折扣和折扣券选用时的优惠额（非所有接口有该字段）
+        :param optional_discount_amount: 可选折扣优惠额(预留实例只包含预付部分)，如商务折扣、伙伴折扣、促销折扣和折扣券选用时的优惠额（非所有接口有该字段）。
         :type optional_discount_amount: float
-        :param per_amount: 总分期金额(批量询价的商品分期周期类型一致，才会有总分期金额，分期周期类型不一致，该信息没有)
+        :param per_amount: 总分期金额(批量询价的商品分期周期类型一致，才会有总分期金额，分期周期类型不一致，该信息没有)。
         :type per_amount: float
-        :param per_discount_amount: 总分期金额的优惠额(perDiscountAmount &#x3D; perOriginalAmount - perAmount)
+        :param per_discount_amount: 总分期金额的优惠额(perDiscountAmount &#x3D; perOriginalAmount - perAmount)。
         :type per_discount_amount: float
-        :param per_original_amount: 总分期金额原价
+        :param per_original_amount: 总分期金额原价。
         :type per_original_amount: float
-        :param per_official_website_amount: 分期金额的官网价
+        :param per_official_website_amount: 分期金额的官网价。
         :type per_official_website_amount: float
-        :param per_official_website_discount_amount: 分期金额的官网价官网价优惠额，即：perOfficialWebsiteDiscountAmount &#x3D;perOriginalAmount-perOfficialWebsiteAmount
+        :param per_official_website_discount_amount: 分期金额的官网价官网价优惠额，即：perOfficialWebsiteDiscountAmount &#x3D;perOriginalAmount-perOfficialWebsiteAmount。
         :type per_official_website_discount_amount: float
-        :param per_optional_discount_amount: 分期金额的可选折扣优惠额，如商务折扣、伙伴折扣、促销折扣和折扣券选用时的优惠额 perOptionalDiscountAmount&#x3D; perOfficialWebsiteAmount- perAmount
+        :param per_optional_discount_amount: 分期金额的可选折扣优惠额，如商务折扣、伙伴折扣、促销折扣和折扣券选用时的优惠额 perOptionalDiscountAmount&#x3D; perOfficialWebsiteAmount- perAmount。
         :type per_optional_discount_amount: float
-        :param per_period_type: 分期周期类型 2:月 4:小时
+        :param per_period_type: 分期周期类型 2:月 4:小时。
         :type per_period_type: int
-        :param measure_id: 度量单位
+        :param measure_id: 度量单位。
         :type measure_id: int
-        :param extend_params: 扩展参数
+        :param extend_params: 扩展参数。
         :type extend_params: str
         """
         
@@ -157,7 +157,7 @@ class ProductResult:
     def id(self):
         r"""Gets the id of this ProductResult.
 
-        对应请求体中的ID
+        对应请求体中的ID。
 
         :return: The id of this ProductResult.
         :rtype: str
@@ -168,7 +168,7 @@ class ProductResult:
     def id(self, id):
         r"""Sets the id of this ProductResult.
 
-        对应请求体中的ID
+        对应请求体中的ID。
 
         :param id: The id of this ProductResult.
         :type id: str
@@ -179,7 +179,7 @@ class ProductResult:
     def product_id(self):
         r"""Gets the product_id of this ProductResult.
 
-        产品ID
+        产品ID。
 
         :return: The product_id of this ProductResult.
         :rtype: str
@@ -190,7 +190,7 @@ class ProductResult:
     def product_id(self, product_id):
         r"""Sets the product_id of this ProductResult.
 
-        产品ID
+        产品ID。
 
         :param product_id: The product_id of this ProductResult.
         :type product_id: str
@@ -201,7 +201,7 @@ class ProductResult:
     def amount(self):
         r"""Gets the amount of this ProductResult.
 
-        总额，即最终优惠后的金额(预留实例只包含预付部分)
+        总额，即最终优惠后的金额(预留实例只包含预付部分)。
 
         :return: The amount of this ProductResult.
         :rtype: float
@@ -212,7 +212,7 @@ class ProductResult:
     def amount(self, amount):
         r"""Sets the amount of this ProductResult.
 
-        总额，即最终优惠后的金额(预留实例只包含预付部分)
+        总额，即最终优惠后的金额(预留实例只包含预付部分)。
 
         :param amount: The amount of this ProductResult.
         :type amount: float
@@ -223,7 +223,7 @@ class ProductResult:
     def discount_amount(self):
         r"""Gets the discount_amount of this ProductResult.
 
-        优惠额(预留实例只包含预付部分)
+        优惠额(预留实例只包含预付部分)。
 
         :return: The discount_amount of this ProductResult.
         :rtype: float
@@ -234,7 +234,7 @@ class ProductResult:
     def discount_amount(self, discount_amount):
         r"""Sets the discount_amount of this ProductResult.
 
-        优惠额(预留实例只包含预付部分)
+        优惠额(预留实例只包含预付部分)。
 
         :param discount_amount: The discount_amount of this ProductResult.
         :type discount_amount: float
@@ -245,7 +245,7 @@ class ProductResult:
     def original_amount(self):
         r"""Gets the original_amount of this ProductResult.
 
-        原总额，即优惠前总额(预留实例只包含预付部分)
+        原总额，即优惠前总额(预留实例只包含预付部分)。
 
         :return: The original_amount of this ProductResult.
         :rtype: float
@@ -256,7 +256,7 @@ class ProductResult:
     def original_amount(self, original_amount):
         r"""Sets the original_amount of this ProductResult.
 
-        原总额，即优惠前总额(预留实例只包含预付部分)
+        原总额，即优惠前总额(预留实例只包含预付部分)。
 
         :param original_amount: The original_amount of this ProductResult.
         :type original_amount: float
@@ -267,7 +267,7 @@ class ProductResult:
     def official_website_amount(self):
         r"""Gets the official_website_amount of this ProductResult.
 
-        官网价（非所有接口有该字段）(预留实例只包含预付部分)
+        官网价（非所有接口有该字段）(预留实例只包含预付部分)。
 
         :return: The official_website_amount of this ProductResult.
         :rtype: float
@@ -278,7 +278,7 @@ class ProductResult:
     def official_website_amount(self, official_website_amount):
         r"""Sets the official_website_amount of this ProductResult.
 
-        官网价（非所有接口有该字段）(预留实例只包含预付部分)
+        官网价（非所有接口有该字段）(预留实例只包含预付部分)。
 
         :param official_website_amount: The official_website_amount of this ProductResult.
         :type official_website_amount: float
@@ -289,7 +289,7 @@ class ProductResult:
     def official_website_discount_amount(self):
         r"""Gets the official_website_discount_amount of this ProductResult.
 
-        官网价优惠额（非所有接口有该字段）(预留实例只包含预付部分)
+        官网价优惠额（非所有接口有该字段）(预留实例只包含预付部分)。
 
         :return: The official_website_discount_amount of this ProductResult.
         :rtype: float
@@ -300,7 +300,7 @@ class ProductResult:
     def official_website_discount_amount(self, official_website_discount_amount):
         r"""Sets the official_website_discount_amount of this ProductResult.
 
-        官网价优惠额（非所有接口有该字段）(预留实例只包含预付部分)
+        官网价优惠额（非所有接口有该字段）(预留实例只包含预付部分)。
 
         :param official_website_discount_amount: The official_website_discount_amount of this ProductResult.
         :type official_website_discount_amount: float
@@ -311,7 +311,7 @@ class ProductResult:
     def optional_discount_amount(self):
         r"""Gets the optional_discount_amount of this ProductResult.
 
-        可选折扣优惠额(预留实例只包含预付部分)，如商务折扣、伙伴折扣、促销折扣和折扣券选用时的优惠额（非所有接口有该字段）
+        可选折扣优惠额(预留实例只包含预付部分)，如商务折扣、伙伴折扣、促销折扣和折扣券选用时的优惠额（非所有接口有该字段）。
 
         :return: The optional_discount_amount of this ProductResult.
         :rtype: float
@@ -322,7 +322,7 @@ class ProductResult:
     def optional_discount_amount(self, optional_discount_amount):
         r"""Sets the optional_discount_amount of this ProductResult.
 
-        可选折扣优惠额(预留实例只包含预付部分)，如商务折扣、伙伴折扣、促销折扣和折扣券选用时的优惠额（非所有接口有该字段）
+        可选折扣优惠额(预留实例只包含预付部分)，如商务折扣、伙伴折扣、促销折扣和折扣券选用时的优惠额（非所有接口有该字段）。
 
         :param optional_discount_amount: The optional_discount_amount of this ProductResult.
         :type optional_discount_amount: float
@@ -333,7 +333,7 @@ class ProductResult:
     def per_amount(self):
         r"""Gets the per_amount of this ProductResult.
 
-        总分期金额(批量询价的商品分期周期类型一致，才会有总分期金额，分期周期类型不一致，该信息没有)
+        总分期金额(批量询价的商品分期周期类型一致，才会有总分期金额，分期周期类型不一致，该信息没有)。
 
         :return: The per_amount of this ProductResult.
         :rtype: float
@@ -344,7 +344,7 @@ class ProductResult:
     def per_amount(self, per_amount):
         r"""Sets the per_amount of this ProductResult.
 
-        总分期金额(批量询价的商品分期周期类型一致，才会有总分期金额，分期周期类型不一致，该信息没有)
+        总分期金额(批量询价的商品分期周期类型一致，才会有总分期金额，分期周期类型不一致，该信息没有)。
 
         :param per_amount: The per_amount of this ProductResult.
         :type per_amount: float
@@ -355,7 +355,7 @@ class ProductResult:
     def per_discount_amount(self):
         r"""Gets the per_discount_amount of this ProductResult.
 
-        总分期金额的优惠额(perDiscountAmount = perOriginalAmount - perAmount)
+        总分期金额的优惠额(perDiscountAmount = perOriginalAmount - perAmount)。
 
         :return: The per_discount_amount of this ProductResult.
         :rtype: float
@@ -366,7 +366,7 @@ class ProductResult:
     def per_discount_amount(self, per_discount_amount):
         r"""Sets the per_discount_amount of this ProductResult.
 
-        总分期金额的优惠额(perDiscountAmount = perOriginalAmount - perAmount)
+        总分期金额的优惠额(perDiscountAmount = perOriginalAmount - perAmount)。
 
         :param per_discount_amount: The per_discount_amount of this ProductResult.
         :type per_discount_amount: float
@@ -377,7 +377,7 @@ class ProductResult:
     def per_original_amount(self):
         r"""Gets the per_original_amount of this ProductResult.
 
-        总分期金额原价
+        总分期金额原价。
 
         :return: The per_original_amount of this ProductResult.
         :rtype: float
@@ -388,7 +388,7 @@ class ProductResult:
     def per_original_amount(self, per_original_amount):
         r"""Sets the per_original_amount of this ProductResult.
 
-        总分期金额原价
+        总分期金额原价。
 
         :param per_original_amount: The per_original_amount of this ProductResult.
         :type per_original_amount: float
@@ -399,7 +399,7 @@ class ProductResult:
     def per_official_website_amount(self):
         r"""Gets the per_official_website_amount of this ProductResult.
 
-        分期金额的官网价
+        分期金额的官网价。
 
         :return: The per_official_website_amount of this ProductResult.
         :rtype: float
@@ -410,7 +410,7 @@ class ProductResult:
     def per_official_website_amount(self, per_official_website_amount):
         r"""Sets the per_official_website_amount of this ProductResult.
 
-        分期金额的官网价
+        分期金额的官网价。
 
         :param per_official_website_amount: The per_official_website_amount of this ProductResult.
         :type per_official_website_amount: float
@@ -421,7 +421,7 @@ class ProductResult:
     def per_official_website_discount_amount(self):
         r"""Gets the per_official_website_discount_amount of this ProductResult.
 
-        分期金额的官网价官网价优惠额，即：perOfficialWebsiteDiscountAmount =perOriginalAmount-perOfficialWebsiteAmount
+        分期金额的官网价官网价优惠额，即：perOfficialWebsiteDiscountAmount =perOriginalAmount-perOfficialWebsiteAmount。
 
         :return: The per_official_website_discount_amount of this ProductResult.
         :rtype: float
@@ -432,7 +432,7 @@ class ProductResult:
     def per_official_website_discount_amount(self, per_official_website_discount_amount):
         r"""Sets the per_official_website_discount_amount of this ProductResult.
 
-        分期金额的官网价官网价优惠额，即：perOfficialWebsiteDiscountAmount =perOriginalAmount-perOfficialWebsiteAmount
+        分期金额的官网价官网价优惠额，即：perOfficialWebsiteDiscountAmount =perOriginalAmount-perOfficialWebsiteAmount。
 
         :param per_official_website_discount_amount: The per_official_website_discount_amount of this ProductResult.
         :type per_official_website_discount_amount: float
@@ -443,7 +443,7 @@ class ProductResult:
     def per_optional_discount_amount(self):
         r"""Gets the per_optional_discount_amount of this ProductResult.
 
-        分期金额的可选折扣优惠额，如商务折扣、伙伴折扣、促销折扣和折扣券选用时的优惠额 perOptionalDiscountAmount= perOfficialWebsiteAmount- perAmount
+        分期金额的可选折扣优惠额，如商务折扣、伙伴折扣、促销折扣和折扣券选用时的优惠额 perOptionalDiscountAmount= perOfficialWebsiteAmount- perAmount。
 
         :return: The per_optional_discount_amount of this ProductResult.
         :rtype: float
@@ -454,7 +454,7 @@ class ProductResult:
     def per_optional_discount_amount(self, per_optional_discount_amount):
         r"""Sets the per_optional_discount_amount of this ProductResult.
 
-        分期金额的可选折扣优惠额，如商务折扣、伙伴折扣、促销折扣和折扣券选用时的优惠额 perOptionalDiscountAmount= perOfficialWebsiteAmount- perAmount
+        分期金额的可选折扣优惠额，如商务折扣、伙伴折扣、促销折扣和折扣券选用时的优惠额 perOptionalDiscountAmount= perOfficialWebsiteAmount- perAmount。
 
         :param per_optional_discount_amount: The per_optional_discount_amount of this ProductResult.
         :type per_optional_discount_amount: float
@@ -465,7 +465,7 @@ class ProductResult:
     def per_period_type(self):
         r"""Gets the per_period_type of this ProductResult.
 
-        分期周期类型 2:月 4:小时
+        分期周期类型 2:月 4:小时。
 
         :return: The per_period_type of this ProductResult.
         :rtype: int
@@ -476,7 +476,7 @@ class ProductResult:
     def per_period_type(self, per_period_type):
         r"""Sets the per_period_type of this ProductResult.
 
-        分期周期类型 2:月 4:小时
+        分期周期类型 2:月 4:小时。
 
         :param per_period_type: The per_period_type of this ProductResult.
         :type per_period_type: int
@@ -487,7 +487,7 @@ class ProductResult:
     def measure_id(self):
         r"""Gets the measure_id of this ProductResult.
 
-        度量单位
+        度量单位。
 
         :return: The measure_id of this ProductResult.
         :rtype: int
@@ -498,7 +498,7 @@ class ProductResult:
     def measure_id(self, measure_id):
         r"""Sets the measure_id of this ProductResult.
 
-        度量单位
+        度量单位。
 
         :param measure_id: The measure_id of this ProductResult.
         :type measure_id: int
@@ -509,7 +509,7 @@ class ProductResult:
     def extend_params(self):
         r"""Gets the extend_params of this ProductResult.
 
-        扩展参数
+        扩展参数。
 
         :return: The extend_params of this ProductResult.
         :rtype: str
@@ -520,7 +520,7 @@ class ProductResult:
     def extend_params(self, extend_params):
         r"""Sets the extend_params of this ProductResult.
 
-        扩展参数
+        扩展参数。
 
         :param extend_params: The extend_params of this ProductResult.
         :type extend_params: str

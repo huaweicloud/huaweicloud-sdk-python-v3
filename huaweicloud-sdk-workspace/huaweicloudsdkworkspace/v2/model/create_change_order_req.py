@@ -18,54 +18,44 @@ class CreateChangeOrderReq:
 
     openapi_types = {
         'type': 'str',
-        'is_subscribe': 'bool',
         'period_type': 'int',
         'period_num': 'int',
         'resize_product_id': 'str',
-        'flavor_id': 'str',
         'expand_volume_id': 'str',
         'expand_new_size': 'int',
         'new_quantity': 'int',
         'exclusive_lites_product_id': 'str',
-        'cloud_service_console_url': 'str',
         'enterprise_project_id': 'str',
         'extend_param': 'OrderExtendParam'
     }
 
     attribute_map = {
         'type': 'type',
-        'is_subscribe': 'is_subscribe',
         'period_type': 'period_type',
         'period_num': 'period_num',
         'resize_product_id': 'resize_product_id',
-        'flavor_id': 'flavor_id',
         'expand_volume_id': 'expand_volume_id',
         'expand_new_size': 'expand_new_size',
         'new_quantity': 'new_quantity',
         'exclusive_lites_product_id': 'exclusive_lites_product_id',
-        'cloud_service_console_url': 'cloud_service_console_url',
         'enterprise_project_id': 'enterprise_project_id',
         'extend_param': 'extend_param'
     }
 
-    def __init__(self, type=None, is_subscribe=None, period_type=None, period_num=None, resize_product_id=None, flavor_id=None, expand_volume_id=None, expand_new_size=None, new_quantity=None, exclusive_lites_product_id=None, cloud_service_console_url=None, enterprise_project_id=None, extend_param=None):
+    def __init__(self, type=None, period_type=None, period_num=None, resize_product_id=None, expand_volume_id=None, expand_new_size=None, new_quantity=None, exclusive_lites_product_id=None, enterprise_project_id=None, extend_param=None):
         r"""CreateChangeOrderReq
 
         The model defined in huaweicloud sdk
 
-        :param type: 类型 resizeDesktops(变更规格)、expandVolumes(扩容磁盘)[、meteredToPeriod(按需转保周期)](tag:inner)
+        :param type: 类型 resizeDesktops(变更规格)、expandVolumes(扩容磁盘)。
         :type type: str
-        :param is_subscribe: 是否订购 *  仅type 为 meteredToPeriod 按需转包时生效； *  默认值为false，不下单，只生成订单号，跳转cbc页面选择时长进行下单； *  若为true 则需要传period_type和period_num参数确定包周期类型和时长；
-        :type is_subscribe: bool
-        :param period_type: 周期类型，2：包月；3：包年[ type为 meteredToPeriod 并且 is_subscribe &#x3D;&#x3D; true 时不能为空](tag:inner)
+        :param period_type: 周期类型，2：包月；3：包年。
         :type period_type: int
-        :param period_num: 周期数[ type为 meteredToPeriod 并且 is_subscribe &#x3D;&#x3D; true 时不能为空](tag:inner)
+        :param period_num: 周期数。
         :type period_num: int
-        :param resize_product_id: 变更后规格产品ID，当是resizeDesktops，必传
+        :param resize_product_id: 变更后规格产品ID，当是resizeDesktops，必传。
         :type resize_product_id: str
-        :param flavor_id: 变更后规格产品flavorID。
-        :type flavor_id: str
-        :param expand_volume_id: 扩容的云硬盘的ID，当是expandVolumes，必传
+        :param expand_volume_id: 扩容的云硬盘的ID，当是expandVolumes，必传。
         :type expand_volume_id: str
         :param expand_new_size: 扩容后云硬盘的总大小，当是expandVolumes，必传。范围10-32760，大小为10的倍数。
         :type expand_new_size: int
@@ -73,9 +63,7 @@ class CreateChangeOrderReq:
         :type new_quantity: int
         :param exclusive_lites_product_id: 专享主机桌面数的productId，当是resizeExclusiveLites，必传。
         :type exclusive_lites_product_id: str
-        :param cloud_service_console_url: 支付后跳转url
-        :type cloud_service_console_url: str
-        :param enterprise_project_id: 企业项目ID
+        :param enterprise_project_id: 企业项目ID。
         :type enterprise_project_id: str
         :param extend_param: 
         :type extend_param: :class:`huaweicloudsdkworkspace.v2.OrderExtendParam`
@@ -84,31 +72,24 @@ class CreateChangeOrderReq:
         
 
         self._type = None
-        self._is_subscribe = None
         self._period_type = None
         self._period_num = None
         self._resize_product_id = None
-        self._flavor_id = None
         self._expand_volume_id = None
         self._expand_new_size = None
         self._new_quantity = None
         self._exclusive_lites_product_id = None
-        self._cloud_service_console_url = None
         self._enterprise_project_id = None
         self._extend_param = None
         self.discriminator = None
 
         self.type = type
-        if is_subscribe is not None:
-            self.is_subscribe = is_subscribe
         if period_type is not None:
             self.period_type = period_type
         if period_num is not None:
             self.period_num = period_num
         if resize_product_id is not None:
             self.resize_product_id = resize_product_id
-        if flavor_id is not None:
-            self.flavor_id = flavor_id
         if expand_volume_id is not None:
             self.expand_volume_id = expand_volume_id
         if expand_new_size is not None:
@@ -117,8 +98,6 @@ class CreateChangeOrderReq:
             self.new_quantity = new_quantity
         if exclusive_lites_product_id is not None:
             self.exclusive_lites_product_id = exclusive_lites_product_id
-        if cloud_service_console_url is not None:
-            self.cloud_service_console_url = cloud_service_console_url
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
         if extend_param is not None:
@@ -128,7 +107,7 @@ class CreateChangeOrderReq:
     def type(self):
         r"""Gets the type of this CreateChangeOrderReq.
 
-        类型 resizeDesktops(变更规格)、expandVolumes(扩容磁盘)[、meteredToPeriod(按需转保周期)](tag:inner)
+        类型 resizeDesktops(变更规格)、expandVolumes(扩容磁盘)。
 
         :return: The type of this CreateChangeOrderReq.
         :rtype: str
@@ -139,7 +118,7 @@ class CreateChangeOrderReq:
     def type(self, type):
         r"""Sets the type of this CreateChangeOrderReq.
 
-        类型 resizeDesktops(变更规格)、expandVolumes(扩容磁盘)[、meteredToPeriod(按需转保周期)](tag:inner)
+        类型 resizeDesktops(变更规格)、expandVolumes(扩容磁盘)。
 
         :param type: The type of this CreateChangeOrderReq.
         :type type: str
@@ -147,32 +126,10 @@ class CreateChangeOrderReq:
         self._type = type
 
     @property
-    def is_subscribe(self):
-        r"""Gets the is_subscribe of this CreateChangeOrderReq.
-
-        是否订购 *  仅type 为 meteredToPeriod 按需转包时生效； *  默认值为false，不下单，只生成订单号，跳转cbc页面选择时长进行下单； *  若为true 则需要传period_type和period_num参数确定包周期类型和时长；
-
-        :return: The is_subscribe of this CreateChangeOrderReq.
-        :rtype: bool
-        """
-        return self._is_subscribe
-
-    @is_subscribe.setter
-    def is_subscribe(self, is_subscribe):
-        r"""Sets the is_subscribe of this CreateChangeOrderReq.
-
-        是否订购 *  仅type 为 meteredToPeriod 按需转包时生效； *  默认值为false，不下单，只生成订单号，跳转cbc页面选择时长进行下单； *  若为true 则需要传period_type和period_num参数确定包周期类型和时长；
-
-        :param is_subscribe: The is_subscribe of this CreateChangeOrderReq.
-        :type is_subscribe: bool
-        """
-        self._is_subscribe = is_subscribe
-
-    @property
     def period_type(self):
         r"""Gets the period_type of this CreateChangeOrderReq.
 
-        周期类型，2：包月；3：包年[ type为 meteredToPeriod 并且 is_subscribe == true 时不能为空](tag:inner)
+        周期类型，2：包月；3：包年。
 
         :return: The period_type of this CreateChangeOrderReq.
         :rtype: int
@@ -183,7 +140,7 @@ class CreateChangeOrderReq:
     def period_type(self, period_type):
         r"""Sets the period_type of this CreateChangeOrderReq.
 
-        周期类型，2：包月；3：包年[ type为 meteredToPeriod 并且 is_subscribe == true 时不能为空](tag:inner)
+        周期类型，2：包月；3：包年。
 
         :param period_type: The period_type of this CreateChangeOrderReq.
         :type period_type: int
@@ -194,7 +151,7 @@ class CreateChangeOrderReq:
     def period_num(self):
         r"""Gets the period_num of this CreateChangeOrderReq.
 
-        周期数[ type为 meteredToPeriod 并且 is_subscribe == true 时不能为空](tag:inner)
+        周期数。
 
         :return: The period_num of this CreateChangeOrderReq.
         :rtype: int
@@ -205,7 +162,7 @@ class CreateChangeOrderReq:
     def period_num(self, period_num):
         r"""Sets the period_num of this CreateChangeOrderReq.
 
-        周期数[ type为 meteredToPeriod 并且 is_subscribe == true 时不能为空](tag:inner)
+        周期数。
 
         :param period_num: The period_num of this CreateChangeOrderReq.
         :type period_num: int
@@ -216,7 +173,7 @@ class CreateChangeOrderReq:
     def resize_product_id(self):
         r"""Gets the resize_product_id of this CreateChangeOrderReq.
 
-        变更后规格产品ID，当是resizeDesktops，必传
+        变更后规格产品ID，当是resizeDesktops，必传。
 
         :return: The resize_product_id of this CreateChangeOrderReq.
         :rtype: str
@@ -227,7 +184,7 @@ class CreateChangeOrderReq:
     def resize_product_id(self, resize_product_id):
         r"""Sets the resize_product_id of this CreateChangeOrderReq.
 
-        变更后规格产品ID，当是resizeDesktops，必传
+        变更后规格产品ID，当是resizeDesktops，必传。
 
         :param resize_product_id: The resize_product_id of this CreateChangeOrderReq.
         :type resize_product_id: str
@@ -235,32 +192,10 @@ class CreateChangeOrderReq:
         self._resize_product_id = resize_product_id
 
     @property
-    def flavor_id(self):
-        r"""Gets the flavor_id of this CreateChangeOrderReq.
-
-        变更后规格产品flavorID。
-
-        :return: The flavor_id of this CreateChangeOrderReq.
-        :rtype: str
-        """
-        return self._flavor_id
-
-    @flavor_id.setter
-    def flavor_id(self, flavor_id):
-        r"""Sets the flavor_id of this CreateChangeOrderReq.
-
-        变更后规格产品flavorID。
-
-        :param flavor_id: The flavor_id of this CreateChangeOrderReq.
-        :type flavor_id: str
-        """
-        self._flavor_id = flavor_id
-
-    @property
     def expand_volume_id(self):
         r"""Gets the expand_volume_id of this CreateChangeOrderReq.
 
-        扩容的云硬盘的ID，当是expandVolumes，必传
+        扩容的云硬盘的ID，当是expandVolumes，必传。
 
         :return: The expand_volume_id of this CreateChangeOrderReq.
         :rtype: str
@@ -271,7 +206,7 @@ class CreateChangeOrderReq:
     def expand_volume_id(self, expand_volume_id):
         r"""Sets the expand_volume_id of this CreateChangeOrderReq.
 
-        扩容的云硬盘的ID，当是expandVolumes，必传
+        扩容的云硬盘的ID，当是expandVolumes，必传。
 
         :param expand_volume_id: The expand_volume_id of this CreateChangeOrderReq.
         :type expand_volume_id: str
@@ -345,32 +280,10 @@ class CreateChangeOrderReq:
         self._exclusive_lites_product_id = exclusive_lites_product_id
 
     @property
-    def cloud_service_console_url(self):
-        r"""Gets the cloud_service_console_url of this CreateChangeOrderReq.
-
-        支付后跳转url
-
-        :return: The cloud_service_console_url of this CreateChangeOrderReq.
-        :rtype: str
-        """
-        return self._cloud_service_console_url
-
-    @cloud_service_console_url.setter
-    def cloud_service_console_url(self, cloud_service_console_url):
-        r"""Sets the cloud_service_console_url of this CreateChangeOrderReq.
-
-        支付后跳转url
-
-        :param cloud_service_console_url: The cloud_service_console_url of this CreateChangeOrderReq.
-        :type cloud_service_console_url: str
-        """
-        self._cloud_service_console_url = cloud_service_console_url
-
-    @property
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this CreateChangeOrderReq.
 
-        企业项目ID
+        企业项目ID。
 
         :return: The enterprise_project_id of this CreateChangeOrderReq.
         :rtype: str
@@ -381,7 +294,7 @@ class CreateChangeOrderReq:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this CreateChangeOrderReq.
 
-        企业项目ID
+        企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this CreateChangeOrderReq.
         :type enterprise_project_id: str

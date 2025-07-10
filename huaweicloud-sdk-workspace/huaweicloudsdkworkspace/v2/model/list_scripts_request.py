@@ -37,11 +37,11 @@ class ListScriptsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param offset: 查询的偏移量。
+        :param offset: 查询的偏移量，默认值0。
         :type offset: int
-        :param limit: 单次查询的大小[1-100]。
+        :param limit: 单次查询的大小[1-100]，默认值10。
         :type limit: int
-        :param id: 脚本ID
+        :param id: 脚本ID。
         :type id: str
         :param name: 脚本名称。
         :type name: str
@@ -73,7 +73,7 @@ class ListScriptsRequest:
     def offset(self):
         r"""Gets the offset of this ListScriptsRequest.
 
-        查询的偏移量。
+        查询的偏移量，默认值0。
 
         :return: The offset of this ListScriptsRequest.
         :rtype: int
@@ -84,7 +84,7 @@ class ListScriptsRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListScriptsRequest.
 
-        查询的偏移量。
+        查询的偏移量，默认值0。
 
         :param offset: The offset of this ListScriptsRequest.
         :type offset: int
@@ -95,7 +95,7 @@ class ListScriptsRequest:
     def limit(self):
         r"""Gets the limit of this ListScriptsRequest.
 
-        单次查询的大小[1-100]。
+        单次查询的大小[1-100]，默认值10。
 
         :return: The limit of this ListScriptsRequest.
         :rtype: int
@@ -106,7 +106,7 @@ class ListScriptsRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListScriptsRequest.
 
-        单次查询的大小[1-100]。
+        单次查询的大小[1-100]，默认值10。
 
         :param limit: The limit of this ListScriptsRequest.
         :type limit: int
@@ -117,7 +117,7 @@ class ListScriptsRequest:
     def id(self):
         r"""Gets the id of this ListScriptsRequest.
 
-        脚本ID
+        脚本ID。
 
         :return: The id of this ListScriptsRequest.
         :rtype: str
@@ -128,7 +128,7 @@ class ListScriptsRequest:
     def id(self, id):
         r"""Sets the id of this ListScriptsRequest.
 
-        脚本ID
+        脚本ID。
 
         :param id: The id of this ListScriptsRequest.
         :type id: str

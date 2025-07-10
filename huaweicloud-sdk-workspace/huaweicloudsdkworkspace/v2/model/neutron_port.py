@@ -20,6 +20,7 @@ class NeutronPort:
         'id': 'str',
         'status': 'str',
         'network_id': 'str',
+        'device_id': 'str',
         'fixed_ips': 'list[FixedIp]'
     }
 
@@ -27,21 +28,24 @@ class NeutronPort:
         'id': 'id',
         'status': 'status',
         'network_id': 'network_id',
+        'device_id': 'device_id',
         'fixed_ips': 'fixed_ips'
     }
 
-    def __init__(self, id=None, status=None, network_id=None, fixed_ips=None):
+    def __init__(self, id=None, status=None, network_id=None, device_id=None, fixed_ips=None):
         r"""NeutronPort
 
         The model defined in huaweicloud sdk
 
-        :param id: 端口唯一标识
+        :param id: 端口唯一标识。
         :type id: str
-        :param status: 私有ip状态
+        :param status: 私有ip状态。
         :type status: str
-        :param network_id: 端口所属网络的ID
+        :param network_id: 端口所属网络的ID。
         :type network_id: str
-        :param fixed_ips: 端口IP
+        :param device_id: 端口所属设备的Id。
+        :type device_id: str
+        :param fixed_ips: 端口IP。
         :type fixed_ips: list[:class:`huaweicloudsdkworkspace.v2.FixedIp`]
         """
         
@@ -50,6 +54,7 @@ class NeutronPort:
         self._id = None
         self._status = None
         self._network_id = None
+        self._device_id = None
         self._fixed_ips = None
         self.discriminator = None
 
@@ -59,6 +64,8 @@ class NeutronPort:
             self.status = status
         if network_id is not None:
             self.network_id = network_id
+        if device_id is not None:
+            self.device_id = device_id
         if fixed_ips is not None:
             self.fixed_ips = fixed_ips
 
@@ -66,7 +73,7 @@ class NeutronPort:
     def id(self):
         r"""Gets the id of this NeutronPort.
 
-        端口唯一标识
+        端口唯一标识。
 
         :return: The id of this NeutronPort.
         :rtype: str
@@ -77,7 +84,7 @@ class NeutronPort:
     def id(self, id):
         r"""Sets the id of this NeutronPort.
 
-        端口唯一标识
+        端口唯一标识。
 
         :param id: The id of this NeutronPort.
         :type id: str
@@ -88,7 +95,7 @@ class NeutronPort:
     def status(self):
         r"""Gets the status of this NeutronPort.
 
-        私有ip状态
+        私有ip状态。
 
         :return: The status of this NeutronPort.
         :rtype: str
@@ -99,7 +106,7 @@ class NeutronPort:
     def status(self, status):
         r"""Sets the status of this NeutronPort.
 
-        私有ip状态
+        私有ip状态。
 
         :param status: The status of this NeutronPort.
         :type status: str
@@ -110,7 +117,7 @@ class NeutronPort:
     def network_id(self):
         r"""Gets the network_id of this NeutronPort.
 
-        端口所属网络的ID
+        端口所属网络的ID。
 
         :return: The network_id of this NeutronPort.
         :rtype: str
@@ -121,7 +128,7 @@ class NeutronPort:
     def network_id(self, network_id):
         r"""Sets the network_id of this NeutronPort.
 
-        端口所属网络的ID
+        端口所属网络的ID。
 
         :param network_id: The network_id of this NeutronPort.
         :type network_id: str
@@ -129,10 +136,32 @@ class NeutronPort:
         self._network_id = network_id
 
     @property
+    def device_id(self):
+        r"""Gets the device_id of this NeutronPort.
+
+        端口所属设备的Id。
+
+        :return: The device_id of this NeutronPort.
+        :rtype: str
+        """
+        return self._device_id
+
+    @device_id.setter
+    def device_id(self, device_id):
+        r"""Sets the device_id of this NeutronPort.
+
+        端口所属设备的Id。
+
+        :param device_id: The device_id of this NeutronPort.
+        :type device_id: str
+        """
+        self._device_id = device_id
+
+    @property
     def fixed_ips(self):
         r"""Gets the fixed_ips of this NeutronPort.
 
-        端口IP
+        端口IP。
 
         :return: The fixed_ips of this NeutronPort.
         :rtype: list[:class:`huaweicloudsdkworkspace.v2.FixedIp`]
@@ -143,7 +172,7 @@ class NeutronPort:
     def fixed_ips(self, fixed_ips):
         r"""Sets the fixed_ips of this NeutronPort.
 
-        端口IP
+        端口IP。
 
         :param fixed_ips: The fixed_ips of this NeutronPort.
         :type fixed_ips: list[:class:`huaweicloudsdkworkspace.v2.FixedIp`]

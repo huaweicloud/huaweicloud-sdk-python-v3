@@ -49,7 +49,7 @@ class NatGateway:
 
         The model defined in huaweicloud sdk
 
-        :param id: 网关实例的ID
+        :param id: 网关实例的ID。
         :type id: str
         :param tenant_id: 项目的ID。
         :type tenant_id: str
@@ -57,7 +57,7 @@ class NatGateway:
         :type name: str
         :param description: 公网NAT网关实例的描述，长度限制为255。
         :type description: str
-        :param spec: 公网NAT网关的规格。取值为：“1”：小型，SNAT最大连接数10000；“2”：中型，SNAT最大连接数50000；“3”：大型，SNAT最大连接数200000；“4”：超大型，SNAT最大连接数1000000
+        :param spec: 公网NAT网关的规格。取值为：“1”：小型，SNAT最大连接数10000；“2”：中型，SNAT最大连接数50000；“3”：大型，SNAT最大连接数200000；“4”：超大型，SNAT最大连接数1000000。
         :type spec: str
         :param status: 公网NAT网关实例的状态。 枚举值： ACTIVE PENDING_CREATE PENDING_UPDATE PENDING_DELETE INACTIVE
         :type status: str
@@ -115,7 +115,7 @@ class NatGateway:
     def id(self):
         r"""Gets the id of this NatGateway.
 
-        网关实例的ID
+        网关实例的ID。
 
         :return: The id of this NatGateway.
         :rtype: str
@@ -126,7 +126,7 @@ class NatGateway:
     def id(self, id):
         r"""Sets the id of this NatGateway.
 
-        网关实例的ID
+        网关实例的ID。
 
         :param id: The id of this NatGateway.
         :type id: str
@@ -203,7 +203,7 @@ class NatGateway:
     def spec(self):
         r"""Gets the spec of this NatGateway.
 
-        公网NAT网关的规格。取值为：“1”：小型，SNAT最大连接数10000；“2”：中型，SNAT最大连接数50000；“3”：大型，SNAT最大连接数200000；“4”：超大型，SNAT最大连接数1000000
+        公网NAT网关的规格。取值为：“1”：小型，SNAT最大连接数10000；“2”：中型，SNAT最大连接数50000；“3”：大型，SNAT最大连接数200000；“4”：超大型，SNAT最大连接数1000000。
 
         :return: The spec of this NatGateway.
         :rtype: str
@@ -214,7 +214,7 @@ class NatGateway:
     def spec(self, spec):
         r"""Sets the spec of this NatGateway.
 
-        公网NAT网关的规格。取值为：“1”：小型，SNAT最大连接数10000；“2”：中型，SNAT最大连接数50000；“3”：大型，SNAT最大连接数200000；“4”：超大型，SNAT最大连接数1000000
+        公网NAT网关的规格。取值为：“1”：小型，SNAT最大连接数10000；“2”：中型，SNAT最大连接数50000；“3”：大型，SNAT最大连接数200000；“4”：超大型，SNAT最大连接数1000000。
 
         :param spec: The spec of this NatGateway.
         :type spec: str

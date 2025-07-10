@@ -45,7 +45,7 @@ class CreateChangeImageOrderRequestBody:
         :type desktop_pool_id: str
         :param desktop_ids: 包周期桌面ID列表。 不可同时存在普通桌面和池桌面ID。
         :type desktop_ids: list[str]
-        :param promotion_plan_id: 促销计划ID
+        :param promotion_plan_id: 促销计划ID。
         :type promotion_plan_id: str
         :param image_spec_code: 云市场镜像的specCode，即将停用。image_spec_code与image_id同时存在时取image_id的值，两者不可同时为空。
         :type image_spec_code: str
@@ -131,7 +131,7 @@ class CreateChangeImageOrderRequestBody:
     def promotion_plan_id(self):
         r"""Gets the promotion_plan_id of this CreateChangeImageOrderRequestBody.
 
-        促销计划ID
+        促销计划ID。
 
         :return: The promotion_plan_id of this CreateChangeImageOrderRequestBody.
         :rtype: str
@@ -142,7 +142,7 @@ class CreateChangeImageOrderRequestBody:
     def promotion_plan_id(self, promotion_plan_id):
         r"""Sets the promotion_plan_id of this CreateChangeImageOrderRequestBody.
 
-        促销计划ID
+        促销计划ID。
 
         :param promotion_plan_id: The promotion_plan_id of this CreateChangeImageOrderRequestBody.
         :type promotion_plan_id: str

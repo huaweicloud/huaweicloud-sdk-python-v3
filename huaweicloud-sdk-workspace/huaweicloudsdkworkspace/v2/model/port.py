@@ -31,9 +31,9 @@ class Port:
 
         The model defined in huaweicloud sdk
 
-        :param id: 私有IP唯一标识
+        :param id: 私有IP唯一标识。
         :type id: str
-        :param ip_address: 私有IP地址
+        :param ip_address: 私有IP地址。
         :type ip_address: str
         """
         
@@ -52,7 +52,7 @@ class Port:
     def id(self):
         r"""Gets the id of this Port.
 
-        私有IP唯一标识
+        私有IP唯一标识。
 
         :return: The id of this Port.
         :rtype: str
@@ -63,7 +63,7 @@ class Port:
     def id(self, id):
         r"""Sets the id of this Port.
 
-        私有IP唯一标识
+        私有IP唯一标识。
 
         :param id: The id of this Port.
         :type id: str
@@ -74,7 +74,7 @@ class Port:
     def ip_address(self):
         r"""Gets the ip_address of this Port.
 
-        私有IP地址
+        私有IP地址。
 
         :return: The ip_address of this Port.
         :rtype: str
@@ -85,7 +85,7 @@ class Port:
     def ip_address(self, ip_address):
         r"""Sets the ip_address of this Port.
 
-        私有IP地址
+        私有IP地址。
 
         :param ip_address: The ip_address of this Port.
         :type ip_address: str

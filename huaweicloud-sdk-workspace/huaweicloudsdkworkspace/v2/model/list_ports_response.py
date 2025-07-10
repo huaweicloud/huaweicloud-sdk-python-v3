@@ -30,7 +30,7 @@ class ListPortsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param ports: 端口列表
+        :param ports: 端口列表。
         :type ports: list[:class:`huaweicloudsdkworkspace.v2.NeutronPort`]
         """
         
@@ -46,7 +46,7 @@ class ListPortsResponse(SdkResponse):
     def ports(self):
         r"""Gets the ports of this ListPortsResponse.
 
-        端口列表
+        端口列表。
 
         :return: The ports of this ListPortsResponse.
         :rtype: list[:class:`huaweicloudsdkworkspace.v2.NeutronPort`]
@@ -57,7 +57,7 @@ class ListPortsResponse(SdkResponse):
     def ports(self, ports):
         r"""Sets the ports of this ListPortsResponse.
 
-        端口列表
+        端口列表。
 
         :param ports: The ports of this ListPortsResponse.
         :type ports: list[:class:`huaweicloudsdkworkspace.v2.NeutronPort`]

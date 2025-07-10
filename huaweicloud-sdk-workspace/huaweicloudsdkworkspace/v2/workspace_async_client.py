@@ -696,7 +696,7 @@ class WorkspaceAsyncClient(Client):
     def list_alarm_statistics_async(self, request):
         r"""查询告警统计
 
-        返回各级别告警数
+        返回各级别告警数。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -759,7 +759,7 @@ class WorkspaceAsyncClient(Client):
     def list_alarms_async(self, request):
         r"""查询告警列表
 
-        从ces查询告警列表
+        从ces查询告警列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1346,7 +1346,7 @@ class WorkspaceAsyncClient(Client):
     def delete_app_async(self, request):
         r"""删除应用
 
-        删除应用
+        删除应用。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2282,9 +2282,9 @@ class WorkspaceAsyncClient(Client):
         return http_info
 
     def delete_restricted_rule_async(self, request):
-        r"""批量删除管控规则列表
+        r"""批量删除管控规则
 
-        批量删除管控规则列表。
+        批量删除管控规则。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2475,7 +2475,7 @@ class WorkspaceAsyncClient(Client):
     def list_app_rule_async(self, request):
         r"""查询应用规则
 
-        查询应用规则
+        查询应用规则。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2610,6 +2610,134 @@ class WorkspaceAsyncClient(Client):
 
         return http_info
 
+    def set_rule_restriction_async(self, request):
+        r"""设置管控规则
+
+        设置管控规则。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for SetRuleRestriction
+        :type request: :class:`huaweicloudsdkworkspace.v2.SetRuleRestrictionRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.SetRuleRestrictionResponse`
+        """
+        http_info = self._set_rule_restriction_http_info(request)
+        return self._call_api(**http_info)
+
+    def set_rule_restriction_async_invoker(self, request):
+        http_info = self._set_rule_restriction_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _set_rule_restriction_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/app-center/app-rules/actions/set-rule-restriction",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetRuleRestrictionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam-used-authn5']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_rule_restriction_async(self, request):
+        r"""查询管控规则
+
+        查询管控规则。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowRuleRestriction
+        :type request: :class:`huaweicloudsdkworkspace.v2.ShowRuleRestrictionRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ShowRuleRestrictionResponse`
+        """
+        http_info = self._show_rule_restriction_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_rule_restriction_async_invoker(self, request):
+        http_info = self._show_rule_restriction_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_rule_restriction_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/app-center/app-rules/actions/get-rule-restriction",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRuleRestrictionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam-used-authn5']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def update_app_rule_async(self, request):
         r"""修改应用规则
 
@@ -2680,7 +2808,7 @@ class WorkspaceAsyncClient(Client):
     def show_assist_auth_config_async(self, request):
         r"""查询辅助认证配置
 
-        查询辅助认证的配置信息
+        查询辅助认证的配置信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2808,7 +2936,7 @@ class WorkspaceAsyncClient(Client):
     def update_assist_auth_method_config_async(self, request):
         r"""更新辅助认证策略配置
 
-        更新辅助认证策略配置
+        更新辅助认证策略配置。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3001,7 +3129,7 @@ class WorkspaceAsyncClient(Client):
     def list_azs_async(self, request):
         r"""查询可用分区列表概要
 
-        该接口用于查询云桌面支持的可用分区列表
+        该接口用于查询云桌面支持的可用分区列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3201,142 +3329,6 @@ class WorkspaceAsyncClient(Client):
 
         return http_info
 
-    def list_desktops_status_async(self, request):
-        r"""查询桌面登录状态
-
-        该接口用于查询桌面登录状态
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListDesktopsStatus
-        :type request: :class:`huaweicloudsdkworkspace.v2.ListDesktopsStatusRequest`
-        :rtype: :class:`huaweicloudsdkworkspace.v2.ListDesktopsStatusResponse`
-        """
-        warnings.warn("Method 'list_desktops_status_async' of WorkspaceAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._list_desktops_status_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_desktops_status_async_invoker(self, request):
-        warnings.warn("Method 'list_desktops_status_async_invoker' of WorkspaceAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._list_desktops_status_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _list_desktops_status_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v2/{project_id}/desktops/status",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListDesktopsStatusResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def list_history_online_info_async(self, request):
-        r"""查询登录人数
-
-        该接口用于查询登录人数
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListHistoryOnlineInfo
-        :type request: :class:`huaweicloudsdkworkspace.v2.ListHistoryOnlineInfoRequest`
-        :rtype: :class:`huaweicloudsdkworkspace.v2.ListHistoryOnlineInfoResponse`
-        """
-        http_info = self._list_history_online_info_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_history_online_info_async_invoker(self, request):
-        http_info = self._list_history_online_info_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _list_history_online_info_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v2/{project_id}/desktops/online-users",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListHistoryOnlineInfoResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'start_time' in local_var_params:
-            query_params.append(('start_time', local_var_params['start_time']))
-        if 'end_time' in local_var_params:
-            query_params.append(('end_time', local_var_params['end_time']))
-        if 'query_type' in local_var_params:
-            query_params.append(('query_type', local_var_params['query_type']))
-        if 'client_hour' in local_var_params:
-            query_params.append(('client_hour', local_var_params['client_hour']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
     def list_history_online_info_new_async(self, request):
         r"""查询登录人数
 
@@ -3379,8 +3371,6 @@ class WorkspaceAsyncClient(Client):
             query_params.append(('end_time', local_var_params['end_time']))
         if 'query_type' in local_var_params:
             query_params.append(('query_type', local_var_params['query_type']))
-        if 'client_hour' in local_var_params:
-            query_params.append(('client_hour', local_var_params['client_hour']))
 
         header_params = {}
 
@@ -3555,7 +3545,7 @@ class WorkspaceAsyncClient(Client):
     def attach_instances_async(self, request):
         r"""分配用户
 
-        将桌面分配给用户
+        将桌面分配给用户。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3590,8 +3580,6 @@ class WorkspaceAsyncClient(Client):
         query_params = []
 
         header_params = {}
-        if 'service_transaction_id' in local_var_params:
-            header_params['Service-Transaction-Id'] = local_var_params['service_transaction_id']
 
         form_params = {}
 
@@ -3752,7 +3740,7 @@ class WorkspaceAsyncClient(Client):
     def batch_change_desktop_network_async(self, request):
         r"""批量切换桌面网络
 
-        批量切换桌面vpc、子网、ip、安全组
+        批量切换桌面vpc、子网、ip、安全组。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3882,7 +3870,7 @@ class WorkspaceAsyncClient(Client):
     def batch_detach_instances_async(self, request):
         r"""批量解绑用户
 
-        批量将桌面和用户解绑
+        批量将桌面和用户解绑。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3945,9 +3933,9 @@ class WorkspaceAsyncClient(Client):
         return http_info
 
     def batch_install_agent_async(self, request):
-        r"""安装ces-agent
+        r"""安装agent
 
-        批量为桌面安装agent
+        批量为桌面安装agent。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4047,8 +4035,6 @@ class WorkspaceAsyncClient(Client):
         query_params = []
 
         header_params = {}
-        if 'service_transaction_id' in local_var_params:
-            header_params['Service-Transaction-Id'] = local_var_params['service_transaction_id']
 
         form_params = {}
 
@@ -4114,8 +4100,6 @@ class WorkspaceAsyncClient(Client):
         query_params = []
 
         header_params = {}
-        if 'service_transaction_id' in local_var_params:
-            header_params['Service-Transaction-Id'] = local_var_params['service_transaction_id']
 
         form_params = {}
 
@@ -4146,7 +4130,7 @@ class WorkspaceAsyncClient(Client):
     def batch_run_desktops_async(self, request):
         r"""操作桌面
 
-        批量操作桌面，用于批量开机、关机和重启。
+        批量操作桌面，用于批量开机、关机、休眠和重启。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4276,7 +4260,7 @@ class WorkspaceAsyncClient(Client):
     def change_desktop_network_async(self, request):
         r"""切换桌面网络
 
-        切换桌面vpc、子网、ip、安全组
+        切换桌面vpc、子网、ip、安全组。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4343,7 +4327,7 @@ class WorkspaceAsyncClient(Client):
     def change_desktop_to_image_async(self, request):
         r"""桌面转镜像
 
-        桌面转镜像
+        桌面转镜像。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4508,8 +4492,6 @@ class WorkspaceAsyncClient(Client):
         query_params = []
 
         header_params = {}
-        if 'service_transaction_id' in local_var_params:
-            header_params['Service-Transaction-Id'] = local_var_params['service_transaction_id']
 
         form_params = {}
 
@@ -4676,7 +4658,7 @@ class WorkspaceAsyncClient(Client):
     def detach_instances_async(self, request):
         r"""解绑用户
 
-        将桌面和用户解绑
+        将桌面和用户解绑。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4888,71 +4870,6 @@ class WorkspaceAsyncClient(Client):
 
         return http_info
 
-    def list_desktop_detach_info_async(self, request):
-        r"""查询桌面解绑信息
-
-        查询桌面解绑信息。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListDesktopDetachInfo
-        :type request: :class:`huaweicloudsdkworkspace.v2.ListDesktopDetachInfoRequest`
-        :rtype: :class:`huaweicloudsdkworkspace.v2.ListDesktopDetachInfoResponse`
-        """
-        http_info = self._list_desktop_detach_info_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_desktop_detach_info_async_invoker(self, request):
-        http_info = self._list_desktop_detach_info_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _list_desktop_detach_info_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v2/{project_id}/desktops/{desktop_id}/detach-info",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListDesktopDetachInfoResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'desktop_id' in local_var_params:
-            path_params['desktop_id'] = local_var_params['desktop_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
     def list_desktops_async(self, request):
         r"""查询桌面列表
 
@@ -4996,15 +4913,10 @@ class WorkspaceAsyncClient(Client):
             query_params.append(('computer_name', local_var_params['computer_name']))
         if 'desktop_ip' in local_var_params:
             query_params.append(('desktop_ip', local_var_params['desktop_ip']))
-        if 'sids' in local_var_params:
-            query_params.append(('sids', local_var_params['sids']))
-            collection_formats['sids'] = 'csv'
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
-        if 'site_id' in local_var_params:
-            query_params.append(('site_id', local_var_params['site_id']))
         if 'pool_id' in local_var_params:
             query_params.append(('pool_id', local_var_params['pool_id']))
         if 'enterprise_project_id' in local_var_params:
@@ -5172,8 +5084,6 @@ class WorkspaceAsyncClient(Client):
             query_params.append(('computer_name', local_var_params['computer_name']))
         if 'desktop_ip' in local_var_params:
             query_params.append(('desktop_ip', local_var_params['desktop_ip']))
-        if 'sids' in local_var_params:
-            query_params.append(('sids', local_var_params['sids']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
@@ -5183,12 +5093,8 @@ class WorkspaceAsyncClient(Client):
             collection_formats['desktop_id'] = 'csv'
         if 'desktop_type' in local_var_params:
             query_params.append(('desktop_type', local_var_params['desktop_type']))
-        if 'login_status' in local_var_params:
-            query_params.append(('login_status', local_var_params['login_status']))
         if 'tag' in local_var_params:
             query_params.append(('tag', local_var_params['tag']))
-        if 'fuzzy_query' in local_var_params:
-            query_params.append(('fuzzy_query', local_var_params['fuzzy_query']))
         if 'pool_id' in local_var_params:
             query_params.append(('pool_id', local_var_params['pool_id']))
         if 'user_attached' in local_var_params:
@@ -5339,8 +5245,6 @@ class WorkspaceAsyncClient(Client):
         query_params = []
 
         header_params = {}
-        if 'service_transaction_id' in local_var_params:
-            header_params['Service-Transaction-Id'] = local_var_params['service_transaction_id']
 
         form_params = {}
 
@@ -5371,7 +5275,7 @@ class WorkspaceAsyncClient(Client):
     def send_notifications_async(self, request):
         r"""发送消息通知
 
-        用于管理员向桌面发送消息通知
+        用于管理员向桌面发送消息通知。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -5436,7 +5340,7 @@ class WorkspaceAsyncClient(Client):
     def set_maintenance_mode_async(self, request):
         r"""批量设置桌面维护模式
 
-        批量设置桌面管理员维护模式
+        批量设置桌面管理员维护模式。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -5637,7 +5541,7 @@ class WorkspaceAsyncClient(Client):
     def show_desktop_network_async(self, request):
         r"""查询桌面网络
 
-        查询桌面vpc、子网、privateIp、EIP、安全组
+        查询桌面vpc、子网、privateIp、EIP、安全组。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -5702,7 +5606,7 @@ class WorkspaceAsyncClient(Client):
     def show_desktop_networks_async(self, request):
         r"""批量查询桌面网络
 
-        查询桌面vpc、子网、privateIp、EIP、安全组
+        查询桌面vpc、子网、privateIp、EIP、安全组。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -6467,8 +6371,6 @@ class WorkspaceAsyncClient(Client):
         query_params = []
 
         header_params = {}
-        if 'service_transaction_id' in local_var_params:
-            header_params['Service-Transaction-Id'] = local_var_params['service_transaction_id']
 
         form_params = {}
 
@@ -6535,8 +6437,6 @@ class WorkspaceAsyncClient(Client):
         query_params = []
 
         header_params = {}
-        if 'service_transaction_id' in local_var_params:
-            header_params['Service-Transaction-Id'] = local_var_params['service_transaction_id']
 
         form_params = {}
 
@@ -6937,8 +6837,6 @@ class WorkspaceAsyncClient(Client):
         query_params = []
 
         header_params = {}
-        if 'service_transaction_id' in local_var_params:
-            header_params['Service-Transaction-Id'] = local_var_params['service_transaction_id']
 
         form_params = {}
 
@@ -7006,8 +6904,6 @@ class WorkspaceAsyncClient(Client):
         query_params = []
 
         header_params = {}
-        if 'service_transaction_id' in local_var_params:
-            header_params['Service-Transaction-Id'] = local_var_params['service_transaction_id']
 
         form_params = {}
 
@@ -7290,8 +7186,6 @@ class WorkspaceAsyncClient(Client):
         query_params = []
 
         header_params = {}
-        if 'service_transaction_id' in local_var_params:
-            header_params['Service-Transaction-Id'] = local_var_params['service_transaction_id']
 
         form_params = {}
 
@@ -7322,7 +7216,7 @@ class WorkspaceAsyncClient(Client):
     def resize_desktop_pool_async(self, request):
         r"""桌面池变更规格
 
-        桌面池变更规格
+        桌面池变更规格。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -7359,8 +7253,6 @@ class WorkspaceAsyncClient(Client):
         query_params = []
 
         header_params = {}
-        if 'service_transaction_id' in local_var_params:
-            header_params['Service-Transaction-Id'] = local_var_params['service_transaction_id']
 
         form_params = {}
 
@@ -7391,7 +7283,7 @@ class WorkspaceAsyncClient(Client):
     def send_desktop_pool_notifications_async(self, request):
         r"""发送消息通知
 
-        用于管理员向桌面发送消息通知
+        用于管理员向桌面发送消息通知。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -7674,7 +7566,7 @@ class WorkspaceAsyncClient(Client):
     def batch_add_desktops_tags_async(self, request):
         r"""批量添加多个桌面标签
 
-        同时对多个桌面批量添加标签，如果创建的标签已经存在（key相同）则覆，最大支持100个桌面，每个桌面最大20个标签
+        同时对多个桌面批量添加标签，如果创建的标签已经存在（key相同）则覆，最大支持100个桌面，每个桌面最大20个标签。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -7739,7 +7631,7 @@ class WorkspaceAsyncClient(Client):
     def batch_change_tags_async(self, request):
         r"""批量添加删除标签
 
-        为指定桌面批量添加或删除标签。创建时，如果创建的标签已经存在（key相同），则覆盖。删除时，如果删除的标签不存在，默认处理成功
+        为指定桌面批量添加或删除标签。创建时，如果创建的标签已经存在（key相同），则覆盖。删除时，如果删除的标签不存在，默认处理成功。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -7806,7 +7698,7 @@ class WorkspaceAsyncClient(Client):
     def batch_delete_desktops_tags_async(self, request):
         r"""批量删除多个桌面标签
 
-        同时对多个桌面批量添加标签，删除时，如果删除的标签不存在默认处理成功，最大支持100个桌面，每个桌面最大20个标签
+        同时对多个桌面批量添加标签，删除时，如果删除的标签不存在默认处理成功，最大支持100个桌面，每个桌面最大20个标签。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -8005,7 +7897,7 @@ class WorkspaceAsyncClient(Client):
     def list_desktop_by_tags_async(self, request):
         r"""使用标签过滤桌面
 
-        使用标签过滤桌面
+        使用标签过滤桌面。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -8070,7 +7962,7 @@ class WorkspaceAsyncClient(Client):
     def list_project_tags_async(self, request):
         r"""查询项目标签
 
-        查询租户的所有标签集合
+        查询租户的所有标签集合。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -8139,7 +8031,7 @@ class WorkspaceAsyncClient(Client):
     def show_tag_by_desktop_id_async(self, request):
         r"""查询桌面标签
 
-        查询指定桌面的标签信息
+        查询指定桌面的标签信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -8509,6 +8401,8 @@ class WorkspaceAsyncClient(Client):
             query_params.append(('description', local_var_params['description']))
         if 'active_type' in local_var_params:
             query_params.append(('active_type', local_var_params['active_type']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
         if 'offset' in local_var_params:
@@ -8826,7 +8720,7 @@ class WorkspaceAsyncClient(Client):
     def estimate_add_resources_async(self, request):
         r"""包周期桌面增配变更批量询价
 
-        包周期桌面增配变更批量询价
+        包周期桌面增配变更批量询价。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -8956,7 +8850,7 @@ class WorkspaceAsyncClient(Client):
     def estimate_desktop_pool_add_volume_async(self, request):
         r"""包周期桌面池添加单个磁盘批量询价
 
-        包周期桌面池添加单个磁盘批量询价
+        包周期桌面池添加单个磁盘批量询价。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -9021,7 +8915,7 @@ class WorkspaceAsyncClient(Client):
     def estimate_desktop_pool_change_image_async(self, request):
         r"""包周期桌面池切换镜像批量询价
 
-        包周期桌面池切换镜像(由不收费镜像变更至收费镜像)批量询价
+        包周期桌面池切换镜像(由不收费镜像变更至收费镜像)批量询价。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -9086,7 +8980,7 @@ class WorkspaceAsyncClient(Client):
     def estimate_desktop_pool_extend_volume_async(self, request):
         r"""包周期桌面池扩容磁盘批量询价
 
-        包周期桌面池扩容磁盘批量询价
+        包周期桌面池扩容磁盘批量询价。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -9151,7 +9045,7 @@ class WorkspaceAsyncClient(Client):
     def estimate_desktop_pool_resize_async(self, request):
         r"""包周期桌面池变更规格批量询价
 
-        包周期桌面池变更规格批量询价
+        包周期桌面池变更规格批量询价。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -9653,8 +9547,6 @@ class WorkspaceAsyncClient(Client):
         query_params = []
 
         header_params = {}
-        if 'service_transaction_id' in local_var_params:
-            header_params['Service-Transaction-Id'] = local_var_params['service_transaction_id']
 
         form_params = {}
 
@@ -9785,8 +9677,6 @@ class WorkspaceAsyncClient(Client):
         query_params = []
 
         header_params = {}
-        if 'service_transaction_id' in local_var_params:
-            header_params['Service-Transaction-Id'] = local_var_params['service_transaction_id']
 
         form_params = {}
 
@@ -10010,9 +9900,9 @@ class WorkspaceAsyncClient(Client):
         return http_info
 
     def list_desktops_eips_async(self, request):
-        r"""查询已绑定桌面和未绑定的Eip
+        r"""查询已绑定桌面和未绑定的EIP
 
-        查询已绑定桌面和未绑定的Eip。
+        查询已绑定桌面和未绑定的EIP。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -10158,7 +10048,7 @@ class WorkspaceAsyncClient(Client):
         return http_info
 
     def list_nat_gateways_async(self, request):
-        r"""查询Nat网关列表
+        r"""查询NAT网关列表
 
         查询NAT网关列表。
         
@@ -10535,7 +10425,7 @@ class WorkspaceAsyncClient(Client):
     def update_subnet_bandwidth_async(self, request):
         r"""修改云办公带宽
 
-        修改云办公带宽
+        修改云办公带宽。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -10572,8 +10462,6 @@ class WorkspaceAsyncClient(Client):
         query_params = []
 
         header_params = {}
-        if 'service_transaction_id' in local_var_params:
-            header_params['Service-Transaction-Id'] = local_var_params['service_transaction_id']
 
         form_params = {}
 
@@ -10604,7 +10492,7 @@ class WorkspaceAsyncClient(Client):
     def update_subnet_bandwidth_control_list_async(self, request):
         r"""修改云办公带宽的控制配置
 
-        修改云办公带宽的控制配置
+        修改云办公带宽的控制配置。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -10671,7 +10559,7 @@ class WorkspaceAsyncClient(Client):
     def create_change_order_async(self, request):
         r"""创建变更订单
 
-        变更规格、扩容磁盘[、按需转包周期生成订单](tag:inner)
+        变更规格、扩容磁盘。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -10738,7 +10626,7 @@ class WorkspaceAsyncClient(Client):
     def create_desktop_batch_order_async(self, request):
         r"""包周期桌面批量变更下单
 
-        包周期桌面批量变更下单
+        包周期桌面批量变更下单。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -10868,7 +10756,7 @@ class WorkspaceAsyncClient(Client):
     def create_desktop_pool_change_order_async(self, request):
         r"""包周期桌面池批量变更下单
 
-        包周期桌面池批量变更下单
+        包周期桌面池批量变更下单。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -10933,7 +10821,7 @@ class WorkspaceAsyncClient(Client):
     def create_order_async(self, request):
         r"""包周期下单
 
-        包周期资源（桌面、磁盘[、云办公主机](tag:ZQ)）下订单。
+        包周期资源（桌面、磁盘）下订单。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -11195,7 +11083,7 @@ class WorkspaceAsyncClient(Client):
     def list_ad_ou_users_async(self, request):
         r"""查询OU下用户信息
 
-        查询OU下用户信息
+        查询OU下用户信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -11266,9 +11154,9 @@ class WorkspaceAsyncClient(Client):
         return http_info
 
     def list_ad_ous_async(self, request):
-        r"""查询OU信息
+        r"""查询AD里的OU列表
 
-        查询OU信息
+        查询AD里的OU列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -11333,9 +11221,9 @@ class WorkspaceAsyncClient(Client):
         return http_info
 
     def list_ou_details_async(self, request):
-        r"""查询OU信息
+        r"""查询OU列表
 
-        查询OU信息
+        查询OU列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -11404,7 +11292,7 @@ class WorkspaceAsyncClient(Client):
     def update_ou_info_async(self, request):
         r"""更新OU信息
 
-        更新OU信息
+        更新OU信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -11538,7 +11426,7 @@ class WorkspaceAsyncClient(Client):
     def create_policy_group_async(self, request):
         r"""新增策略组
 
-        新增策略组
+        新增策略组。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -11603,7 +11491,7 @@ class WorkspaceAsyncClient(Client):
     def delete_policy_group_async(self, request):
         r"""删除策略组
 
-        删除指定策略组，包含策略组对应的策略信息以及应用对象信息
+        删除指定策略组，包含策略组对应的策略信息以及应用对象信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -11668,7 +11556,7 @@ class WorkspaceAsyncClient(Client):
     def list_original_policy_info_async(self, request):
         r"""查询初始策略项
 
-        查询初始策略项
+        查询初始策略项。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -11798,7 +11686,7 @@ class WorkspaceAsyncClient(Client):
     def list_policy_detail_info_by_id_async(self, request):
         r"""查询策略组
 
-        根据策略组ID查询策略组详细信息，包含策略信息以及应用对象信息
+        根据策略组ID查询策略组详细信息，包含策略信息以及应用对象信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -11910,8 +11798,6 @@ class WorkspaceAsyncClient(Client):
             query_params.append(('update_time', local_var_params['update_time']))
         if 'description' in local_var_params:
             query_params.append(('description', local_var_params['description']))
-        if 'scope_flag' in local_var_params:
-            query_params.append(('scope_flag', local_var_params['scope_flag']))
         if 'is_group_name_accurate' in local_var_params:
             query_params.append(('is_group_name_accurate', local_var_params['is_group_name_accurate']))
 
@@ -11991,8 +11877,6 @@ class WorkspaceAsyncClient(Client):
             query_params.append(('update_time', local_var_params['update_time']))
         if 'description' in local_var_params:
             query_params.append(('description', local_var_params['description']))
-        if 'scope_flag' in local_var_params:
-            query_params.append(('scope_flag', local_var_params['scope_flag']))
 
         header_params = {}
 
@@ -12163,7 +12047,7 @@ class WorkspaceAsyncClient(Client):
     def update_policy_group_async(self, request):
         r"""修改策略组
 
-        修改指定策略组的信息
+        修改指定策略组的信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -12332,8 +12216,6 @@ class WorkspaceAsyncClient(Client):
         query_params = []
         if 'product_id' in local_var_params:
             query_params.append(('product_id', local_var_params['product_id']))
-        if 'flavor_id' in local_var_params:
-            query_params.append(('flavor_id', local_var_params['flavor_id']))
         if 'availability_zone' in local_var_params:
             query_params.append(('availability_zone', local_var_params['availability_zone']))
         if 'os_type' in local_var_params:
@@ -12342,14 +12224,8 @@ class WorkspaceAsyncClient(Client):
             query_params.append(('charge_mode', local_var_params['charge_mode']))
         if 'architecture' in local_var_params:
             query_params.append(('architecture', local_var_params['architecture']))
-        if 'deh_product_id' in local_var_params:
-            query_params.append(('deh_product_id', local_var_params['deh_product_id']))
-        if 'is_deh' in local_var_params:
-            query_params.append(('is_deh', local_var_params['is_deh']))
         if 'package_type' in local_var_params:
             query_params.append(('package_type', local_var_params['package_type']))
-        if 'products_range' in local_var_params:
-            query_params.append(('products_range', local_var_params['products_range']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
         if 'offset' in local_var_params:
@@ -12589,7 +12465,7 @@ class WorkspaceAsyncClient(Client):
     def show_quota_details_async(self, request):
         r"""查询租户单个站点配额详情
 
-        查询租户单个站点配额详情
+        查询租户单个站点配额详情。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -12689,8 +12565,6 @@ class WorkspaceAsyncClient(Client):
         path_params = {}
 
         query_params = []
-        if 'type' in local_var_params:
-            query_params.append(('type', local_var_params['type']))
 
         header_params = {}
 
@@ -13199,7 +13073,7 @@ class WorkspaceAsyncClient(Client):
     def list_time_zones_async(self, request):
         r"""获取时区配置
 
-        获取时区配置
+        获取时区配置。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -13686,7 +13560,7 @@ class WorkspaceAsyncClient(Client):
     def show_screen_record_async(self, request):
         r"""查询录屏详情
 
-        查询录屏详情
+        查询录屏详情。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -14528,7 +14402,7 @@ class WorkspaceAsyncClient(Client):
     def add_desktop_sub_resources_async(self, request):
         r"""桌面购买附属资源
 
-        存量桌面购买附属资源
+        存量桌面购买附属资源。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -14563,8 +14437,6 @@ class WorkspaceAsyncClient(Client):
         query_params = []
 
         header_params = {}
-        if 'service_transaction_id' in local_var_params:
-            header_params['Service-Transaction-Id'] = local_var_params['service_transaction_id']
 
         form_params = {}
 
@@ -14595,7 +14467,7 @@ class WorkspaceAsyncClient(Client):
     def delete_desktop_sub_resources_async(self, request):
         r"""桌面删除附属资源
 
-        桌面删除附属资源
+        桌面删除附属资源。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -14630,8 +14502,6 @@ class WorkspaceAsyncClient(Client):
         query_params = []
 
         header_params = {}
-        if 'service_transaction_id' in local_var_params:
-            header_params['Service-Transaction-Id'] = local_var_params['service_transaction_id']
 
         form_params = {}
 
@@ -14662,7 +14532,7 @@ class WorkspaceAsyncClient(Client):
     def show_share_space_config_async(self, request):
         r"""查询协同桌面默认用户配置
 
-        查询协同桌面默认用户配置（当前功能公测中,需要使用请联系管理员申请使用）
+        查询协同桌面默认用户配置（当前功能公测中,需要使用请联系管理员申请使用）。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -14727,7 +14597,7 @@ class WorkspaceAsyncClient(Client):
     def update_share_space_config_async(self, request):
         r"""设置协同桌面默认用户配置
 
-        设置协同桌面默认用户配置（当前功能公测中，需要使用请联系管理员申请使用）
+        设置协同桌面默认用户配置（当前功能公测中，需要使用请联系管理员申请使用）。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -14792,7 +14662,7 @@ class WorkspaceAsyncClient(Client):
     def add_site_async(self, request):
         r"""新增站点
 
-        用于查询站点信息的接口
+        用于查询站点信息的接口。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -14857,7 +14727,7 @@ class WorkspaceAsyncClient(Client):
     def delete_site_async(self, request):
         r"""删除站点
 
-        用于删除站点的接口
+        用于删除站点的接口。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -14922,7 +14792,7 @@ class WorkspaceAsyncClient(Client):
     def list_site_configs_async(self, request):
         r"""查询站点信息
 
-        用于查询站点信息的接口
+        用于查询站点信息的接口。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -15058,7 +14928,7 @@ class WorkspaceAsyncClient(Client):
     def update_access_mode_async(self, request):
         r"""修改站点接入方式
 
-        用于修改站点接入方式
+        用于修改站点接入方式。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -15125,7 +14995,7 @@ class WorkspaceAsyncClient(Client):
     def update_subnet_ids_async(self, request):
         r"""修改站点业务子网
 
-        用于修改站点业务子网
+        用于修改站点业务子网。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -15192,7 +15062,7 @@ class WorkspaceAsyncClient(Client):
     def batch_create_desktop_snapshot_async(self, request):
         r"""批量创建快照
 
-        批量创建快照
+        批量创建快照。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -15257,7 +15127,7 @@ class WorkspaceAsyncClient(Client):
     def batch_delete_desktop_snapshot_async(self, request):
         r"""批量删除快照
 
-        批量删除快照
+        批量删除快照。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -15322,7 +15192,7 @@ class WorkspaceAsyncClient(Client):
     def batch_restore_desktop_snapshot_async(self, request):
         r"""批量恢复快照
 
-        批量恢快照
+        批量恢快照。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -15387,7 +15257,7 @@ class WorkspaceAsyncClient(Client):
     def list_desktop_snapshot_async(self, request):
         r"""查询快照列表
 
-        查询快照列表
+        查询快照列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -15604,8 +15474,7 @@ class WorkspaceAsyncClient(Client):
     def list_app_user_access_data_async(self, request):
         r"""查询云应用接入统计数据
 
-        查询云应用接入统计数据;
-        最多查询30天内的数据;
+        查询云应用接入统计数据，一次最多查询30天，支持最近30天的数据查询。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -15772,7 +15641,7 @@ class WorkspaceAsyncClient(Client):
     def list_desktops_statistics_async(self, request):
         r"""桌面统计
 
-        统计租户下的普通桌面、桌面池状态，默认仅统计总数
+        统计租户下的普通桌面、桌面池状态，默认仅统计总数。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -15976,7 +15845,7 @@ class WorkspaceAsyncClient(Client):
     def list_metric_notify_rule_async(self, request):
         r"""查询通知规则
 
-        查询对应指标的通知规则;
+        查询对应指标的通知规则;。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -16047,7 +15916,7 @@ class WorkspaceAsyncClient(Client):
     def list_metrics_async(self, request):
         r"""查询指标
 
-        查询指标
+        查询指标。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -16121,7 +15990,7 @@ class WorkspaceAsyncClient(Client):
     def list_metrics_trend_async(self, request):
         r"""查询指标趋势
 
-        查询指标趋势
+        查询指标趋势。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -16476,7 +16345,7 @@ class WorkspaceAsyncClient(Client):
     def show_growth_rate_async(self, request):
         r"""查询指标环比值
 
-        查询指标环比值
+        查询指标环比值。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -16545,7 +16414,7 @@ class WorkspaceAsyncClient(Client):
     def show_user_access_stages_async(self, request):
         r"""查询接入云桌面或云应用各阶段时长数据
 
-        查询接入云桌面或云应用各阶段时长数据
+        查询接入云桌面或云应用各阶段时长数据。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -16610,7 +16479,7 @@ class WorkspaceAsyncClient(Client):
     def update_metric_notify_rule_async(self, request):
         r"""更新通知规则
 
-        更新对应指标的通知规则;对应指标满足相应的规则条件时发送通知
+        更新对应指标的通知规则;对应指标满足相应的规则条件时发送通知。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -16742,7 +16611,7 @@ class WorkspaceAsyncClient(Client):
     def list_tenant_configs_async(self, request):
         r"""查询租户个性配置列表
 
-        查询租户个性配置列表
+        查询租户个性配置列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -17827,8 +17696,6 @@ class WorkspaceAsyncClient(Client):
         query_params = []
         if 'user_name' in local_var_params:
             query_params.append(('user_name', local_var_params['user_name']))
-        if 'user_email' in local_var_params:
-            query_params.append(('user_email', local_var_params['user_email']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
         if 'offset' in local_var_params:
@@ -17845,6 +17712,8 @@ class WorkspaceAsyncClient(Client):
             query_params.append(('share_space_desktops', local_var_params['share_space_desktops']))
         if 'is_query_total_desktops' in local_var_params:
             query_params.append(('is_query_total_desktops', local_var_params['is_query_total_desktops']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 
@@ -18076,7 +17945,7 @@ class WorkspaceAsyncClient(Client):
     def list_user_events_async(self, request):
         r"""查询用户事件
 
-        查询用户事件
+        查询用户事件，一次最多查询30天，支持最近30天的数据查询。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -18117,8 +17986,10 @@ class WorkspaceAsyncClient(Client):
             query_params.append(('username', local_var_params['username']))
         if 'event_type' in local_var_params:
             query_params.append(('event_type', local_var_params['event_type']))
-        if 'event_trace_id' in local_var_params:
-            query_params.append(('event_trace_id', local_var_params['event_trace_id']))
+        if 'resource_id' in local_var_params:
+            query_params.append(('resource_id', local_var_params['resource_id']))
+        if 'resource_name' in local_var_params:
+            query_params.append(('resource_name', local_var_params['resource_name']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
@@ -18136,6 +18007,134 @@ class WorkspaceAsyncClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_user_events_lts_configurations_async(self, request):
+        r"""查询用户事件LTS配置
+
+        查询用户事件LTS配置。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListUserEventsLtsConfigurations
+        :type request: :class:`huaweicloudsdkworkspace.v2.ListUserEventsLtsConfigurationsRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ListUserEventsLtsConfigurationsResponse`
+        """
+        http_info = self._list_user_events_lts_configurations_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_user_events_lts_configurations_async_invoker(self, request):
+        http_info = self._list_user_events_lts_configurations_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_user_events_lts_configurations_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/user-events/lts-configurations",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListUserEventsLtsConfigurationsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def set_user_events_lts_configurations_async(self, request):
+        r"""配置用户事件LTS
+
+        配置用户事件LTS。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for SetUserEventsLtsConfigurations
+        :type request: :class:`huaweicloudsdkworkspace.v2.SetUserEventsLtsConfigurationsRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.SetUserEventsLtsConfigurationsResponse`
+        """
+        http_info = self._set_user_events_lts_configurations_http_info(request)
+        return self._call_api(**http_info)
+
+    def set_user_events_lts_configurations_async_invoker(self, request):
+        http_info = self._set_user_events_lts_configurations_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _set_user_events_lts_configurations_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/user-events/lts-configurations",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetUserEventsLtsConfigurationsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
@@ -18190,8 +18189,6 @@ class WorkspaceAsyncClient(Client):
         query_params = []
 
         header_params = {}
-        if 'service_transaction_id' in local_var_params:
-            header_params['Service-Transaction-Id'] = local_var_params['service_transaction_id']
 
         form_params = {}
 
@@ -18220,9 +18217,9 @@ class WorkspaceAsyncClient(Client):
         return http_info
 
     def add_volumes_async(self, request):
-        r"""增加桌面磁盘
+        r"""批量增加桌面磁盘
 
-        增加桌面磁盘。
+        批量增加桌面磁盘。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -18257,8 +18254,6 @@ class WorkspaceAsyncClient(Client):
         query_params = []
 
         header_params = {}
-        if 'service_transaction_id' in local_var_params:
-            header_params['Service-Transaction-Id'] = local_var_params['service_transaction_id']
 
         form_params = {}
 
@@ -18326,8 +18321,6 @@ class WorkspaceAsyncClient(Client):
         query_params = []
 
         header_params = {}
-        if 'service_transaction_id' in local_var_params:
-            header_params['Service-Transaction-Id'] = local_var_params['service_transaction_id']
 
         form_params = {}
 
@@ -18358,7 +18351,7 @@ class WorkspaceAsyncClient(Client):
     def expand_desktop_volume_async(self, request):
         r"""扩容磁盘
 
-        扩容磁盘
+        扩容磁盘。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -18397,8 +18390,6 @@ class WorkspaceAsyncClient(Client):
         query_params = []
 
         header_params = {}
-        if 'service_transaction_id' in local_var_params:
-            header_params['Service-Transaction-Id'] = local_var_params['service_transaction_id']
 
         form_params = {}
 
@@ -18464,8 +18455,6 @@ class WorkspaceAsyncClient(Client):
         query_params = []
 
         header_params = {}
-        if 'service_transaction_id' in local_var_params:
-            header_params['Service-Transaction-Id'] = local_var_params['service_transaction_id']
 
         form_params = {}
 
@@ -18496,7 +18485,7 @@ class WorkspaceAsyncClient(Client):
     def list_volume_product_info_async(self, request):
         r"""查询磁盘产品信息
 
-        查询磁盘产品信息
+        查询磁盘产品信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 

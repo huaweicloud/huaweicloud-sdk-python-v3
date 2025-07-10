@@ -19,18 +19,16 @@ class VolumeAddInfo:
     openapi_types = {
         'id': 'str',
         'type': 'str',
-        'size': 'int',
-        'cluster_id': 'str'
+        'size': 'int'
     }
 
     attribute_map = {
         'id': 'id',
         'type': 'type',
-        'size': 'size',
-        'cluster_id': 'cluster_id'
+        'size': 'size'
     }
 
-    def __init__(self, id=None, type=None, size=None, cluster_id=None):
+    def __init__(self, id=None, type=None, size=None):
         r"""VolumeAddInfo
 
         The model defined in huaweicloud sdk
@@ -41,8 +39,6 @@ class VolumeAddInfo:
         :type type: str
         :param size: 磁盘容量，单位GB。
         :type size: int
-        :param cluster_id: 云服务器系统盘对应的存储池的ID。
-        :type cluster_id: str
         """
         
         
@@ -50,15 +46,12 @@ class VolumeAddInfo:
         self._id = None
         self._type = None
         self._size = None
-        self._cluster_id = None
         self.discriminator = None
 
         if id is not None:
             self.id = id
         self.type = type
         self.size = size
-        if cluster_id is not None:
-            self.cluster_id = cluster_id
 
     @property
     def id(self):
@@ -125,28 +118,6 @@ class VolumeAddInfo:
         :type size: int
         """
         self._size = size
-
-    @property
-    def cluster_id(self):
-        r"""Gets the cluster_id of this VolumeAddInfo.
-
-        云服务器系统盘对应的存储池的ID。
-
-        :return: The cluster_id of this VolumeAddInfo.
-        :rtype: str
-        """
-        return self._cluster_id
-
-    @cluster_id.setter
-    def cluster_id(self, cluster_id):
-        r"""Sets the cluster_id of this VolumeAddInfo.
-
-        云服务器系统盘对应的存储池的ID。
-
-        :param cluster_id: The cluster_id of this VolumeAddInfo.
-        :type cluster_id: str
-        """
-        self._cluster_id = cluster_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

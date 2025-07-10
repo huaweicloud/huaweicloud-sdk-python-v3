@@ -35,9 +35,9 @@ class ListOuDetailsRequest:
 
         :param ou_name: OU名称。
         :type ou_name: str
-        :param limit: 用于分页查询，返回桌面数量限制。如果不指定，则返回所有符合条件的桌面
+        :param limit: 用于分页查询，返回桌面数量限制。如果不指定，则返回所有符合条件的桌面。
         :type limit: int
-        :param offset: 用于分页查询，查询的起始记录序号，从0开始
+        :param offset: 用于分页查询，查询的起始记录序号，从0开始。
         :type offset: int
         """
         
@@ -81,7 +81,7 @@ class ListOuDetailsRequest:
     def limit(self):
         r"""Gets the limit of this ListOuDetailsRequest.
 
-        用于分页查询，返回桌面数量限制。如果不指定，则返回所有符合条件的桌面
+        用于分页查询，返回桌面数量限制。如果不指定，则返回所有符合条件的桌面。
 
         :return: The limit of this ListOuDetailsRequest.
         :rtype: int
@@ -92,7 +92,7 @@ class ListOuDetailsRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListOuDetailsRequest.
 
-        用于分页查询，返回桌面数量限制。如果不指定，则返回所有符合条件的桌面
+        用于分页查询，返回桌面数量限制。如果不指定，则返回所有符合条件的桌面。
 
         :param limit: The limit of this ListOuDetailsRequest.
         :type limit: int
@@ -103,7 +103,7 @@ class ListOuDetailsRequest:
     def offset(self):
         r"""Gets the offset of this ListOuDetailsRequest.
 
-        用于分页查询，查询的起始记录序号，从0开始
+        用于分页查询，查询的起始记录序号，从0开始。
 
         :return: The offset of this ListOuDetailsRequest.
         :rtype: int
@@ -114,7 +114,7 @@ class ListOuDetailsRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListOuDetailsRequest.
 
-        用于分页查询，查询的起始记录序号，从0开始
+        用于分页查询，查询的起始记录序号，从0开始。
 
         :param offset: The offset of this ListOuDetailsRequest.
         :type offset: int

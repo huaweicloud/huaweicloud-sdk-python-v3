@@ -75,11 +75,11 @@ class DesktopSnapshotDetailInfo:
         :type process: int
         :param description: 快照描述。
         :type description: str
-        :param create_time: 快照的创建时间，UTC时间，格式为：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;。
+        :param create_time: 快照的创建时间，UTC时间，格式为：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z。&#39;
         :type create_time: str
         :param create_type: 快照创建类型。 - AUTO 定时任务自动创建。 - MANUALLY 手动创建。
         :type create_type: str
-        :param last_restore_time: 快照的最近恢复时间，UTC时间，格式为：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;。
+        :param last_restore_time: 快照的最近恢复时间，UTC时间，格式为：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z。&#39;
         :type last_restore_time: str
         :param restore_fail_reason: 快照恢复失败原因。
         :type restore_fail_reason: str
@@ -356,7 +356,7 @@ class DesktopSnapshotDetailInfo:
     def create_time(self):
         r"""Gets the create_time of this DesktopSnapshotDetailInfo.
 
-        快照的创建时间，UTC时间，格式为：yyyy-MM-dd'T'HH:mm:ss'Z'。
+        快照的创建时间，UTC时间，格式为：yyyy-MM-dd'T'HH:mm:ss'Z。'
 
         :return: The create_time of this DesktopSnapshotDetailInfo.
         :rtype: str
@@ -367,7 +367,7 @@ class DesktopSnapshotDetailInfo:
     def create_time(self, create_time):
         r"""Sets the create_time of this DesktopSnapshotDetailInfo.
 
-        快照的创建时间，UTC时间，格式为：yyyy-MM-dd'T'HH:mm:ss'Z'。
+        快照的创建时间，UTC时间，格式为：yyyy-MM-dd'T'HH:mm:ss'Z。'
 
         :param create_time: The create_time of this DesktopSnapshotDetailInfo.
         :type create_time: str
@@ -400,7 +400,7 @@ class DesktopSnapshotDetailInfo:
     def last_restore_time(self):
         r"""Gets the last_restore_time of this DesktopSnapshotDetailInfo.
 
-        快照的最近恢复时间，UTC时间，格式为：yyyy-MM-dd'T'HH:mm:ss'Z'。
+        快照的最近恢复时间，UTC时间，格式为：yyyy-MM-dd'T'HH:mm:ss'Z。'
 
         :return: The last_restore_time of this DesktopSnapshotDetailInfo.
         :rtype: str
@@ -411,7 +411,7 @@ class DesktopSnapshotDetailInfo:
     def last_restore_time(self, last_restore_time):
         r"""Sets the last_restore_time of this DesktopSnapshotDetailInfo.
 
-        快照的最近恢复时间，UTC时间，格式为：yyyy-MM-dd'T'HH:mm:ss'Z'。
+        快照的最近恢复时间，UTC时间，格式为：yyyy-MM-dd'T'HH:mm:ss'Z。'
 
         :param last_restore_time: The last_restore_time of this DesktopSnapshotDetailInfo.
         :type last_restore_time: str

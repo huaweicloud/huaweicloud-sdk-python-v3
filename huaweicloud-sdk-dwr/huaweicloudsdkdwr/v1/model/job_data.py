@@ -43,21 +43,21 @@ class JobData:
 
         The model defined in huaweicloud sdk
 
-        :param job_id: 任务ID。
+        :param job_id: **参数解释：** 创建知识仓实例的任务id。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
         :type job_id: str
-        :param status: 任务执行状态。取值：  值为“Running”，表示任务正在执行。 值为“Completed”，表示任务执行成功。 值为“Failed”，表示任务执行失败。
+        :param status: **参数解释：** 任务执行状态。 **约束限制：** 不涉及。 **取值范围：** Running：任务正在执行 Completed：任务执行成功 Failed：任务执行失败 **默认取值:** 不涉及。
         :type status: str
-        :param name: 任务名称
+        :param name: **参数解释：** 任务名称。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
         :type name: str
-        :param create_time: 创建时间，格式为“yyyy-mm-ddThh:mm:ssZ”。
+        :param create_time: **参数解释：** 创建时间。 **约束限制：** 格式为“yyyy-mm-ddThh:mm:ssZ”。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
         :type create_time: str
-        :param end_time: 结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。
+        :param end_time: **参数解释：** 结束时间。 **约束限制：** 格式为“yyyy-mm-ddThh:mm:ssZ”。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
         :type end_time: str
-        :param progress: 任务执行进度。运行中状态返回执行进度，例如“60%”，表示任务执行进度为60%。
+        :param progress: **参数解释：** 任务执行进度。运行中状态返回执行进度，例如“60%”，表示任务执行进度为60%。 **约束限制：** 不涉及。 **取值范围：** [1%-100%]。 **默认取值:** 不涉及。
         :type progress: str
-        :param store_name: 知识仓实例名称
+        :param store_name: **参数解释：** 知识仓实例名称，region内唯一。 **约束限制：** 长度范围为3到63个字符，支持小写字母、数字、中划线（-），第一个字符只能够是小写字母，中划线(-)不得出现在字符串末尾。 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type store_name: str
-        :param fail_reason: 任务执行失败时的错误信息。
+        :param fail_reason: **参数解释：** 任务执行失败时的错误信息。 **约束限制：** 当status是Failed时生效。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
         :type fail_reason: str
         """
         
@@ -92,7 +92,7 @@ class JobData:
     def job_id(self):
         r"""Gets the job_id of this JobData.
 
-        任务ID。
+        **参数解释：** 创建知识仓实例的任务id。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :return: The job_id of this JobData.
         :rtype: str
@@ -103,7 +103,7 @@ class JobData:
     def job_id(self, job_id):
         r"""Sets the job_id of this JobData.
 
-        任务ID。
+        **参数解释：** 创建知识仓实例的任务id。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :param job_id: The job_id of this JobData.
         :type job_id: str
@@ -114,7 +114,7 @@ class JobData:
     def status(self):
         r"""Gets the status of this JobData.
 
-        任务执行状态。取值：  值为“Running”，表示任务正在执行。 值为“Completed”，表示任务执行成功。 值为“Failed”，表示任务执行失败。
+        **参数解释：** 任务执行状态。 **约束限制：** 不涉及。 **取值范围：** Running：任务正在执行 Completed：任务执行成功 Failed：任务执行失败 **默认取值:** 不涉及。
 
         :return: The status of this JobData.
         :rtype: str
@@ -125,7 +125,7 @@ class JobData:
     def status(self, status):
         r"""Sets the status of this JobData.
 
-        任务执行状态。取值：  值为“Running”，表示任务正在执行。 值为“Completed”，表示任务执行成功。 值为“Failed”，表示任务执行失败。
+        **参数解释：** 任务执行状态。 **约束限制：** 不涉及。 **取值范围：** Running：任务正在执行 Completed：任务执行成功 Failed：任务执行失败 **默认取值:** 不涉及。
 
         :param status: The status of this JobData.
         :type status: str
@@ -136,7 +136,7 @@ class JobData:
     def name(self):
         r"""Gets the name of this JobData.
 
-        任务名称
+        **参数解释：** 任务名称。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :return: The name of this JobData.
         :rtype: str
@@ -147,7 +147,7 @@ class JobData:
     def name(self, name):
         r"""Sets the name of this JobData.
 
-        任务名称
+        **参数解释：** 任务名称。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :param name: The name of this JobData.
         :type name: str
@@ -158,7 +158,7 @@ class JobData:
     def create_time(self):
         r"""Gets the create_time of this JobData.
 
-        创建时间，格式为“yyyy-mm-ddThh:mm:ssZ”。
+        **参数解释：** 创建时间。 **约束限制：** 格式为“yyyy-mm-ddThh:mm:ssZ”。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :return: The create_time of this JobData.
         :rtype: str
@@ -169,7 +169,7 @@ class JobData:
     def create_time(self, create_time):
         r"""Sets the create_time of this JobData.
 
-        创建时间，格式为“yyyy-mm-ddThh:mm:ssZ”。
+        **参数解释：** 创建时间。 **约束限制：** 格式为“yyyy-mm-ddThh:mm:ssZ”。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :param create_time: The create_time of this JobData.
         :type create_time: str
@@ -180,7 +180,7 @@ class JobData:
     def end_time(self):
         r"""Gets the end_time of this JobData.
 
-        结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。
+        **参数解释：** 结束时间。 **约束限制：** 格式为“yyyy-mm-ddThh:mm:ssZ”。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :return: The end_time of this JobData.
         :rtype: str
@@ -191,7 +191,7 @@ class JobData:
     def end_time(self, end_time):
         r"""Sets the end_time of this JobData.
 
-        结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。
+        **参数解释：** 结束时间。 **约束限制：** 格式为“yyyy-mm-ddThh:mm:ssZ”。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :param end_time: The end_time of this JobData.
         :type end_time: str
@@ -202,7 +202,7 @@ class JobData:
     def progress(self):
         r"""Gets the progress of this JobData.
 
-        任务执行进度。运行中状态返回执行进度，例如“60%”，表示任务执行进度为60%。
+        **参数解释：** 任务执行进度。运行中状态返回执行进度，例如“60%”，表示任务执行进度为60%。 **约束限制：** 不涉及。 **取值范围：** [1%-100%]。 **默认取值:** 不涉及。
 
         :return: The progress of this JobData.
         :rtype: str
@@ -213,7 +213,7 @@ class JobData:
     def progress(self, progress):
         r"""Sets the progress of this JobData.
 
-        任务执行进度。运行中状态返回执行进度，例如“60%”，表示任务执行进度为60%。
+        **参数解释：** 任务执行进度。运行中状态返回执行进度，例如“60%”，表示任务执行进度为60%。 **约束限制：** 不涉及。 **取值范围：** [1%-100%]。 **默认取值:** 不涉及。
 
         :param progress: The progress of this JobData.
         :type progress: str
@@ -224,7 +224,7 @@ class JobData:
     def store_name(self):
         r"""Gets the store_name of this JobData.
 
-        知识仓实例名称
+        **参数解释：** 知识仓实例名称，region内唯一。 **约束限制：** 长度范围为3到63个字符，支持小写字母、数字、中划线（-），第一个字符只能够是小写字母，中划线(-)不得出现在字符串末尾。 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The store_name of this JobData.
         :rtype: str
@@ -235,7 +235,7 @@ class JobData:
     def store_name(self, store_name):
         r"""Sets the store_name of this JobData.
 
-        知识仓实例名称
+        **参数解释：** 知识仓实例名称，region内唯一。 **约束限制：** 长度范围为3到63个字符，支持小写字母、数字、中划线（-），第一个字符只能够是小写字母，中划线(-)不得出现在字符串末尾。 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param store_name: The store_name of this JobData.
         :type store_name: str
@@ -246,7 +246,7 @@ class JobData:
     def fail_reason(self):
         r"""Gets the fail_reason of this JobData.
 
-        任务执行失败时的错误信息。
+        **参数解释：** 任务执行失败时的错误信息。 **约束限制：** 当status是Failed时生效。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :return: The fail_reason of this JobData.
         :rtype: str
@@ -257,7 +257,7 @@ class JobData:
     def fail_reason(self, fail_reason):
         r"""Sets the fail_reason of this JobData.
 
-        任务执行失败时的错误信息。
+        **参数解释：** 任务执行失败时的错误信息。 **约束限制：** 当status是Failed时生效。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :param fail_reason: The fail_reason of this JobData.
         :type fail_reason: str

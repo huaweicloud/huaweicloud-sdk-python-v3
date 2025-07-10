@@ -55,7 +55,7 @@ class AdInfo:
         :type domain_type: str
         :param domain_name: 域名，域类型为LOCAL_AD时有值。
         :type domain_name: str
-        :param domain_admin_account: 域管理员帐号，域类型为LOCAL_AD时有值。
+        :param domain_admin_account: 域管理员账号，域类型为LOCAL_AD时有值。
         :type domain_admin_account: str
         :param active_domain_name: 主域控制器名称，域类型为LOCAL_AD时有值。
         :type active_domain_name: str
@@ -166,7 +166,7 @@ class AdInfo:
     def domain_admin_account(self):
         r"""Gets the domain_admin_account of this AdInfo.
 
-        域管理员帐号，域类型为LOCAL_AD时有值。
+        域管理员账号，域类型为LOCAL_AD时有值。
 
         :return: The domain_admin_account of this AdInfo.
         :rtype: str
@@ -177,7 +177,7 @@ class AdInfo:
     def domain_admin_account(self, domain_admin_account):
         r"""Sets the domain_admin_account of this AdInfo.
 
-        域管理员帐号，域类型为LOCAL_AD时有值。
+        域管理员账号，域类型为LOCAL_AD时有值。
 
         :param domain_admin_account: The domain_admin_account of this AdInfo.
         :type domain_admin_account: str

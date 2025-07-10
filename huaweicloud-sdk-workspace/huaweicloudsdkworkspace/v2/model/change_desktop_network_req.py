@@ -35,13 +35,13 @@ class ChangeDesktopNetworkReq:
 
         The model defined in huaweicloud sdk
 
-        :param vpc_id: 待切换VPC的ID
+        :param vpc_id: 待切换VPC的ID。
         :type vpc_id: str
-        :param subnet_id: 待切换子网的ID
+        :param subnet_id: 待切换子网的ID。
         :type subnet_id: str
-        :param private_ip: 指定私有IP地址
+        :param private_ip: 指定私有IP地址。
         :type private_ip: str
-        :param security_group_ids: 安全组ID列表
+        :param security_group_ids: 安全组ID列表。
         :type security_group_ids: list[str]
         """
         
@@ -63,7 +63,7 @@ class ChangeDesktopNetworkReq:
     def vpc_id(self):
         r"""Gets the vpc_id of this ChangeDesktopNetworkReq.
 
-        待切换VPC的ID
+        待切换VPC的ID。
 
         :return: The vpc_id of this ChangeDesktopNetworkReq.
         :rtype: str
@@ -74,7 +74,7 @@ class ChangeDesktopNetworkReq:
     def vpc_id(self, vpc_id):
         r"""Sets the vpc_id of this ChangeDesktopNetworkReq.
 
-        待切换VPC的ID
+        待切换VPC的ID。
 
         :param vpc_id: The vpc_id of this ChangeDesktopNetworkReq.
         :type vpc_id: str
@@ -85,7 +85,7 @@ class ChangeDesktopNetworkReq:
     def subnet_id(self):
         r"""Gets the subnet_id of this ChangeDesktopNetworkReq.
 
-        待切换子网的ID
+        待切换子网的ID。
 
         :return: The subnet_id of this ChangeDesktopNetworkReq.
         :rtype: str
@@ -96,7 +96,7 @@ class ChangeDesktopNetworkReq:
     def subnet_id(self, subnet_id):
         r"""Sets the subnet_id of this ChangeDesktopNetworkReq.
 
-        待切换子网的ID
+        待切换子网的ID。
 
         :param subnet_id: The subnet_id of this ChangeDesktopNetworkReq.
         :type subnet_id: str
@@ -107,7 +107,7 @@ class ChangeDesktopNetworkReq:
     def private_ip(self):
         r"""Gets the private_ip of this ChangeDesktopNetworkReq.
 
-        指定私有IP地址
+        指定私有IP地址。
 
         :return: The private_ip of this ChangeDesktopNetworkReq.
         :rtype: str
@@ -118,7 +118,7 @@ class ChangeDesktopNetworkReq:
     def private_ip(self, private_ip):
         r"""Sets the private_ip of this ChangeDesktopNetworkReq.
 
-        指定私有IP地址
+        指定私有IP地址。
 
         :param private_ip: The private_ip of this ChangeDesktopNetworkReq.
         :type private_ip: str
@@ -129,7 +129,7 @@ class ChangeDesktopNetworkReq:
     def security_group_ids(self):
         r"""Gets the security_group_ids of this ChangeDesktopNetworkReq.
 
-        安全组ID列表
+        安全组ID列表。
 
         :return: The security_group_ids of this ChangeDesktopNetworkReq.
         :rtype: list[str]
@@ -140,7 +140,7 @@ class ChangeDesktopNetworkReq:
     def security_group_ids(self, security_group_ids):
         r"""Sets the security_group_ids of this ChangeDesktopNetworkReq.
 
-        安全组ID列表
+        安全组ID列表。
 
         :param security_group_ids: The security_group_ids of this ChangeDesktopNetworkReq.
         :type security_group_ids: list[str]

@@ -71,49 +71,49 @@ class OptionalDiscountRatingResult:
 
         The model defined in huaweicloud sdk
 
-        :param discount_id: 折扣优惠Id
+        :param discount_id: 折扣优惠Id。
         :type discount_id: str
-        :param amount: 订单总额，即最终优惠后的订单金额(预留实例只包含预付部分)
+        :param amount: 订单总额，即最终优惠后的订单金额(预留实例只包含预付部分)。
         :type amount: float
-        :param official_website_amount: 官网价(预留实例只包含预付部分)
+        :param official_website_amount: 官网价(预留实例只包含预付部分)。
         :type official_website_amount: float
-        :param original_amount: 订单原总额，即优惠前订单总额(预留实例只包含预付部分)
+        :param original_amount: 订单原总额，即优惠前订单总额(预留实例只包含预付部分)。
         :type original_amount: float
-        :param official_website_discount_amount: 官网价优惠额(预留实例只包含预付部分)
+        :param official_website_discount_amount: 官网价优惠额(预留实例只包含预付部分)。
         :type official_website_discount_amount: float
-        :param optional_discount_amount: 可选折扣优惠额(预留实例只包含预付部分)
+        :param optional_discount_amount: 可选折扣优惠额(预留实例只包含预付部分)。
         :type optional_discount_amount: float
-        :param discount_amount: 总优惠额(预留实例只包含预付部分)
+        :param discount_amount: 总优惠额(预留实例只包含预付部分)。
         :type discount_amount: float
-        :param per_amount: 总分期金额(批量询价的商品分期周期类型一致，才会有总分期金额，分期周期类型不一致，该信息没有)
+        :param per_amount: 总分期金额(批量询价的商品分期周期类型一致，才会有总分期金额，分期周期类型不一致，该信息没有)。
         :type per_amount: float
-        :param per_discount_amount: 总分期金额的优惠额(perDiscountAmount &#x3D; perOriginalAmount - perAmount)
+        :param per_discount_amount: 总分期金额的优惠额(perDiscountAmount &#x3D; perOriginalAmount - perAmount)。
         :type per_discount_amount: float
-        :param per_original_amount: 总分期金额原价
+        :param per_original_amount: 总分期金额原价。
         :type per_original_amount: float
-        :param per_official_website_amount: 总分期金额的官网价(批量询价的商品分期周期类型一致，才会有总分期金额的官网价，分期周期类型不一致，该信息没有)
+        :param per_official_website_amount: 总分期金额的官网价(批量询价的商品分期周期类型一致，才会有总分期金额的官网价，分期周期类型不一致，该信息没有)。
         :type per_official_website_amount: float
-        :param per_official_website_discount_amount: 总分期金额的官网价官网价优惠额，即： perOfficialWebsiteDiscountAmount &#x3D;perOriginalAmount-perOfficialWebsiteAmount (批量询价的商品分期周期类型一致，才会有总分期金额的官网价，分期周期类型不一致，该信息没有)
+        :param per_official_website_discount_amount: 总分期金额的官网价官网价优惠额，即： perOfficialWebsiteDiscountAmount &#x3D;perOriginalAmount-perOfficialWebsiteAmount (批量询价的商品分期周期类型一致，才会有总分期金额的官网价，分期周期类型不一致，该信息没有)。
         :type per_official_website_discount_amount: float
-        :param per_optional_discount_amount: 总分期金额的可选折扣优惠额，如商务折扣、伙伴折扣、促销折扣和折扣券选用时的优惠额 perOptionalDiscountAmount&#x3D; perOfficialWebsiteAmount- perAmount (批量询价的商品分期周期类型一致，才会有总分期金额的官网价，分期周期类型不一致，该信息没有)
+        :param per_optional_discount_amount: 总分期金额的可选折扣优惠额，如商务折扣、伙伴折扣、促销折扣和折扣券选用时的优惠额 perOptionalDiscountAmount&#x3D; perOfficialWebsiteAmount- perAmount (批量询价的商品分期周期类型一致，才会有总分期金额的官网价，分期周期类型不一致，该信息没有)。
         :type per_optional_discount_amount: float
-        :param per_period_type: 分期周期类型 2:月 4:小时
+        :param per_period_type: 分期周期类型 2:月 4:小时。
         :type per_period_type: int
-        :param measure_id: 度量单位
+        :param measure_id: 度量单位。
         :type measure_id: int
-        :param discount_type: 折扣优惠类型
+        :param discount_type: 折扣优惠类型。
         :type discount_type: int
-        :param discount_name: 折扣名称
+        :param discount_name: 折扣名称。
         :type discount_name: str
-        :param best_offer: 是否为最优折扣0：不是最优折扣；为缺省值。1：是最优折扣；最优折扣：在商务折扣、伙伴折扣和促销折扣中选择（优惠金额相等则按此顺序排优先级），折扣券不参与最优折扣的计算
+        :param best_offer: 是否为最优折扣0：不是最优折扣；为缺省值。1：是最优折扣；最优折扣：在商务折扣、伙伴折扣和促销折扣中选择（优惠金额相等则按此顺序排优先级），折扣券不参与最优折扣的计算。
         :type best_offer: int
-        :param same_ratio_flag: sameRatioFlag
+        :param same_ratio_flag: sameRatioFlag。
         :type same_ratio_flag: int
-        :param discount_ratio: sameRatioFlag为1时有值，表示该折扣的折扣率
+        :param discount_ratio: sameRatioFlag为1时有值，表示该折扣的折扣率。
         :type discount_ratio: float
-        :param promotion_info: 折扣优惠基本信息；调用者在确定好折扣优惠后、下单时，使用此字段值，填入到订购/变更接口中的promotionInfo字段
+        :param promotion_info: 折扣优惠基本信息；调用者在确定好折扣优惠后、下单时，使用此字段值，填入到订购/变更接口中的promotionInfo字段。
         :type promotion_info: str
-        :param product_rating_results: 产品询价结果
+        :param product_rating_results: 产品询价结果。
         :type product_rating_results: list[:class:`huaweicloudsdkworkspace.v2.ProductResult`]
         """
         
@@ -192,7 +192,7 @@ class OptionalDiscountRatingResult:
     def discount_id(self):
         r"""Gets the discount_id of this OptionalDiscountRatingResult.
 
-        折扣优惠Id
+        折扣优惠Id。
 
         :return: The discount_id of this OptionalDiscountRatingResult.
         :rtype: str
@@ -203,7 +203,7 @@ class OptionalDiscountRatingResult:
     def discount_id(self, discount_id):
         r"""Sets the discount_id of this OptionalDiscountRatingResult.
 
-        折扣优惠Id
+        折扣优惠Id。
 
         :param discount_id: The discount_id of this OptionalDiscountRatingResult.
         :type discount_id: str
@@ -214,7 +214,7 @@ class OptionalDiscountRatingResult:
     def amount(self):
         r"""Gets the amount of this OptionalDiscountRatingResult.
 
-        订单总额，即最终优惠后的订单金额(预留实例只包含预付部分)
+        订单总额，即最终优惠后的订单金额(预留实例只包含预付部分)。
 
         :return: The amount of this OptionalDiscountRatingResult.
         :rtype: float
@@ -225,7 +225,7 @@ class OptionalDiscountRatingResult:
     def amount(self, amount):
         r"""Sets the amount of this OptionalDiscountRatingResult.
 
-        订单总额，即最终优惠后的订单金额(预留实例只包含预付部分)
+        订单总额，即最终优惠后的订单金额(预留实例只包含预付部分)。
 
         :param amount: The amount of this OptionalDiscountRatingResult.
         :type amount: float
@@ -236,7 +236,7 @@ class OptionalDiscountRatingResult:
     def official_website_amount(self):
         r"""Gets the official_website_amount of this OptionalDiscountRatingResult.
 
-        官网价(预留实例只包含预付部分)
+        官网价(预留实例只包含预付部分)。
 
         :return: The official_website_amount of this OptionalDiscountRatingResult.
         :rtype: float
@@ -247,7 +247,7 @@ class OptionalDiscountRatingResult:
     def official_website_amount(self, official_website_amount):
         r"""Sets the official_website_amount of this OptionalDiscountRatingResult.
 
-        官网价(预留实例只包含预付部分)
+        官网价(预留实例只包含预付部分)。
 
         :param official_website_amount: The official_website_amount of this OptionalDiscountRatingResult.
         :type official_website_amount: float
@@ -258,7 +258,7 @@ class OptionalDiscountRatingResult:
     def original_amount(self):
         r"""Gets the original_amount of this OptionalDiscountRatingResult.
 
-        订单原总额，即优惠前订单总额(预留实例只包含预付部分)
+        订单原总额，即优惠前订单总额(预留实例只包含预付部分)。
 
         :return: The original_amount of this OptionalDiscountRatingResult.
         :rtype: float
@@ -269,7 +269,7 @@ class OptionalDiscountRatingResult:
     def original_amount(self, original_amount):
         r"""Sets the original_amount of this OptionalDiscountRatingResult.
 
-        订单原总额，即优惠前订单总额(预留实例只包含预付部分)
+        订单原总额，即优惠前订单总额(预留实例只包含预付部分)。
 
         :param original_amount: The original_amount of this OptionalDiscountRatingResult.
         :type original_amount: float
@@ -280,7 +280,7 @@ class OptionalDiscountRatingResult:
     def official_website_discount_amount(self):
         r"""Gets the official_website_discount_amount of this OptionalDiscountRatingResult.
 
-        官网价优惠额(预留实例只包含预付部分)
+        官网价优惠额(预留实例只包含预付部分)。
 
         :return: The official_website_discount_amount of this OptionalDiscountRatingResult.
         :rtype: float
@@ -291,7 +291,7 @@ class OptionalDiscountRatingResult:
     def official_website_discount_amount(self, official_website_discount_amount):
         r"""Sets the official_website_discount_amount of this OptionalDiscountRatingResult.
 
-        官网价优惠额(预留实例只包含预付部分)
+        官网价优惠额(预留实例只包含预付部分)。
 
         :param official_website_discount_amount: The official_website_discount_amount of this OptionalDiscountRatingResult.
         :type official_website_discount_amount: float
@@ -302,7 +302,7 @@ class OptionalDiscountRatingResult:
     def optional_discount_amount(self):
         r"""Gets the optional_discount_amount of this OptionalDiscountRatingResult.
 
-        可选折扣优惠额(预留实例只包含预付部分)
+        可选折扣优惠额(预留实例只包含预付部分)。
 
         :return: The optional_discount_amount of this OptionalDiscountRatingResult.
         :rtype: float
@@ -313,7 +313,7 @@ class OptionalDiscountRatingResult:
     def optional_discount_amount(self, optional_discount_amount):
         r"""Sets the optional_discount_amount of this OptionalDiscountRatingResult.
 
-        可选折扣优惠额(预留实例只包含预付部分)
+        可选折扣优惠额(预留实例只包含预付部分)。
 
         :param optional_discount_amount: The optional_discount_amount of this OptionalDiscountRatingResult.
         :type optional_discount_amount: float
@@ -324,7 +324,7 @@ class OptionalDiscountRatingResult:
     def discount_amount(self):
         r"""Gets the discount_amount of this OptionalDiscountRatingResult.
 
-        总优惠额(预留实例只包含预付部分)
+        总优惠额(预留实例只包含预付部分)。
 
         :return: The discount_amount of this OptionalDiscountRatingResult.
         :rtype: float
@@ -335,7 +335,7 @@ class OptionalDiscountRatingResult:
     def discount_amount(self, discount_amount):
         r"""Sets the discount_amount of this OptionalDiscountRatingResult.
 
-        总优惠额(预留实例只包含预付部分)
+        总优惠额(预留实例只包含预付部分)。
 
         :param discount_amount: The discount_amount of this OptionalDiscountRatingResult.
         :type discount_amount: float
@@ -346,7 +346,7 @@ class OptionalDiscountRatingResult:
     def per_amount(self):
         r"""Gets the per_amount of this OptionalDiscountRatingResult.
 
-        总分期金额(批量询价的商品分期周期类型一致，才会有总分期金额，分期周期类型不一致，该信息没有)
+        总分期金额(批量询价的商品分期周期类型一致，才会有总分期金额，分期周期类型不一致，该信息没有)。
 
         :return: The per_amount of this OptionalDiscountRatingResult.
         :rtype: float
@@ -357,7 +357,7 @@ class OptionalDiscountRatingResult:
     def per_amount(self, per_amount):
         r"""Sets the per_amount of this OptionalDiscountRatingResult.
 
-        总分期金额(批量询价的商品分期周期类型一致，才会有总分期金额，分期周期类型不一致，该信息没有)
+        总分期金额(批量询价的商品分期周期类型一致，才会有总分期金额，分期周期类型不一致，该信息没有)。
 
         :param per_amount: The per_amount of this OptionalDiscountRatingResult.
         :type per_amount: float
@@ -368,7 +368,7 @@ class OptionalDiscountRatingResult:
     def per_discount_amount(self):
         r"""Gets the per_discount_amount of this OptionalDiscountRatingResult.
 
-        总分期金额的优惠额(perDiscountAmount = perOriginalAmount - perAmount)
+        总分期金额的优惠额(perDiscountAmount = perOriginalAmount - perAmount)。
 
         :return: The per_discount_amount of this OptionalDiscountRatingResult.
         :rtype: float
@@ -379,7 +379,7 @@ class OptionalDiscountRatingResult:
     def per_discount_amount(self, per_discount_amount):
         r"""Sets the per_discount_amount of this OptionalDiscountRatingResult.
 
-        总分期金额的优惠额(perDiscountAmount = perOriginalAmount - perAmount)
+        总分期金额的优惠额(perDiscountAmount = perOriginalAmount - perAmount)。
 
         :param per_discount_amount: The per_discount_amount of this OptionalDiscountRatingResult.
         :type per_discount_amount: float
@@ -390,7 +390,7 @@ class OptionalDiscountRatingResult:
     def per_original_amount(self):
         r"""Gets the per_original_amount of this OptionalDiscountRatingResult.
 
-        总分期金额原价
+        总分期金额原价。
 
         :return: The per_original_amount of this OptionalDiscountRatingResult.
         :rtype: float
@@ -401,7 +401,7 @@ class OptionalDiscountRatingResult:
     def per_original_amount(self, per_original_amount):
         r"""Sets the per_original_amount of this OptionalDiscountRatingResult.
 
-        总分期金额原价
+        总分期金额原价。
 
         :param per_original_amount: The per_original_amount of this OptionalDiscountRatingResult.
         :type per_original_amount: float
@@ -412,7 +412,7 @@ class OptionalDiscountRatingResult:
     def per_official_website_amount(self):
         r"""Gets the per_official_website_amount of this OptionalDiscountRatingResult.
 
-        总分期金额的官网价(批量询价的商品分期周期类型一致，才会有总分期金额的官网价，分期周期类型不一致，该信息没有)
+        总分期金额的官网价(批量询价的商品分期周期类型一致，才会有总分期金额的官网价，分期周期类型不一致，该信息没有)。
 
         :return: The per_official_website_amount of this OptionalDiscountRatingResult.
         :rtype: float
@@ -423,7 +423,7 @@ class OptionalDiscountRatingResult:
     def per_official_website_amount(self, per_official_website_amount):
         r"""Sets the per_official_website_amount of this OptionalDiscountRatingResult.
 
-        总分期金额的官网价(批量询价的商品分期周期类型一致，才会有总分期金额的官网价，分期周期类型不一致，该信息没有)
+        总分期金额的官网价(批量询价的商品分期周期类型一致，才会有总分期金额的官网价，分期周期类型不一致，该信息没有)。
 
         :param per_official_website_amount: The per_official_website_amount of this OptionalDiscountRatingResult.
         :type per_official_website_amount: float
@@ -434,7 +434,7 @@ class OptionalDiscountRatingResult:
     def per_official_website_discount_amount(self):
         r"""Gets the per_official_website_discount_amount of this OptionalDiscountRatingResult.
 
-        总分期金额的官网价官网价优惠额，即： perOfficialWebsiteDiscountAmount =perOriginalAmount-perOfficialWebsiteAmount (批量询价的商品分期周期类型一致，才会有总分期金额的官网价，分期周期类型不一致，该信息没有)
+        总分期金额的官网价官网价优惠额，即： perOfficialWebsiteDiscountAmount =perOriginalAmount-perOfficialWebsiteAmount (批量询价的商品分期周期类型一致，才会有总分期金额的官网价，分期周期类型不一致，该信息没有)。
 
         :return: The per_official_website_discount_amount of this OptionalDiscountRatingResult.
         :rtype: float
@@ -445,7 +445,7 @@ class OptionalDiscountRatingResult:
     def per_official_website_discount_amount(self, per_official_website_discount_amount):
         r"""Sets the per_official_website_discount_amount of this OptionalDiscountRatingResult.
 
-        总分期金额的官网价官网价优惠额，即： perOfficialWebsiteDiscountAmount =perOriginalAmount-perOfficialWebsiteAmount (批量询价的商品分期周期类型一致，才会有总分期金额的官网价，分期周期类型不一致，该信息没有)
+        总分期金额的官网价官网价优惠额，即： perOfficialWebsiteDiscountAmount =perOriginalAmount-perOfficialWebsiteAmount (批量询价的商品分期周期类型一致，才会有总分期金额的官网价，分期周期类型不一致，该信息没有)。
 
         :param per_official_website_discount_amount: The per_official_website_discount_amount of this OptionalDiscountRatingResult.
         :type per_official_website_discount_amount: float
@@ -456,7 +456,7 @@ class OptionalDiscountRatingResult:
     def per_optional_discount_amount(self):
         r"""Gets the per_optional_discount_amount of this OptionalDiscountRatingResult.
 
-        总分期金额的可选折扣优惠额，如商务折扣、伙伴折扣、促销折扣和折扣券选用时的优惠额 perOptionalDiscountAmount= perOfficialWebsiteAmount- perAmount (批量询价的商品分期周期类型一致，才会有总分期金额的官网价，分期周期类型不一致，该信息没有)
+        总分期金额的可选折扣优惠额，如商务折扣、伙伴折扣、促销折扣和折扣券选用时的优惠额 perOptionalDiscountAmount= perOfficialWebsiteAmount- perAmount (批量询价的商品分期周期类型一致，才会有总分期金额的官网价，分期周期类型不一致，该信息没有)。
 
         :return: The per_optional_discount_amount of this OptionalDiscountRatingResult.
         :rtype: float
@@ -467,7 +467,7 @@ class OptionalDiscountRatingResult:
     def per_optional_discount_amount(self, per_optional_discount_amount):
         r"""Sets the per_optional_discount_amount of this OptionalDiscountRatingResult.
 
-        总分期金额的可选折扣优惠额，如商务折扣、伙伴折扣、促销折扣和折扣券选用时的优惠额 perOptionalDiscountAmount= perOfficialWebsiteAmount- perAmount (批量询价的商品分期周期类型一致，才会有总分期金额的官网价，分期周期类型不一致，该信息没有)
+        总分期金额的可选折扣优惠额，如商务折扣、伙伴折扣、促销折扣和折扣券选用时的优惠额 perOptionalDiscountAmount= perOfficialWebsiteAmount- perAmount (批量询价的商品分期周期类型一致，才会有总分期金额的官网价，分期周期类型不一致，该信息没有)。
 
         :param per_optional_discount_amount: The per_optional_discount_amount of this OptionalDiscountRatingResult.
         :type per_optional_discount_amount: float
@@ -478,7 +478,7 @@ class OptionalDiscountRatingResult:
     def per_period_type(self):
         r"""Gets the per_period_type of this OptionalDiscountRatingResult.
 
-        分期周期类型 2:月 4:小时
+        分期周期类型 2:月 4:小时。
 
         :return: The per_period_type of this OptionalDiscountRatingResult.
         :rtype: int
@@ -489,7 +489,7 @@ class OptionalDiscountRatingResult:
     def per_period_type(self, per_period_type):
         r"""Sets the per_period_type of this OptionalDiscountRatingResult.
 
-        分期周期类型 2:月 4:小时
+        分期周期类型 2:月 4:小时。
 
         :param per_period_type: The per_period_type of this OptionalDiscountRatingResult.
         :type per_period_type: int
@@ -500,7 +500,7 @@ class OptionalDiscountRatingResult:
     def measure_id(self):
         r"""Gets the measure_id of this OptionalDiscountRatingResult.
 
-        度量单位
+        度量单位。
 
         :return: The measure_id of this OptionalDiscountRatingResult.
         :rtype: int
@@ -511,7 +511,7 @@ class OptionalDiscountRatingResult:
     def measure_id(self, measure_id):
         r"""Sets the measure_id of this OptionalDiscountRatingResult.
 
-        度量单位
+        度量单位。
 
         :param measure_id: The measure_id of this OptionalDiscountRatingResult.
         :type measure_id: int
@@ -522,7 +522,7 @@ class OptionalDiscountRatingResult:
     def discount_type(self):
         r"""Gets the discount_type of this OptionalDiscountRatingResult.
 
-        折扣优惠类型
+        折扣优惠类型。
 
         :return: The discount_type of this OptionalDiscountRatingResult.
         :rtype: int
@@ -533,7 +533,7 @@ class OptionalDiscountRatingResult:
     def discount_type(self, discount_type):
         r"""Sets the discount_type of this OptionalDiscountRatingResult.
 
-        折扣优惠类型
+        折扣优惠类型。
 
         :param discount_type: The discount_type of this OptionalDiscountRatingResult.
         :type discount_type: int
@@ -544,7 +544,7 @@ class OptionalDiscountRatingResult:
     def discount_name(self):
         r"""Gets the discount_name of this OptionalDiscountRatingResult.
 
-        折扣名称
+        折扣名称。
 
         :return: The discount_name of this OptionalDiscountRatingResult.
         :rtype: str
@@ -555,7 +555,7 @@ class OptionalDiscountRatingResult:
     def discount_name(self, discount_name):
         r"""Sets the discount_name of this OptionalDiscountRatingResult.
 
-        折扣名称
+        折扣名称。
 
         :param discount_name: The discount_name of this OptionalDiscountRatingResult.
         :type discount_name: str
@@ -566,7 +566,7 @@ class OptionalDiscountRatingResult:
     def best_offer(self):
         r"""Gets the best_offer of this OptionalDiscountRatingResult.
 
-        是否为最优折扣0：不是最优折扣；为缺省值。1：是最优折扣；最优折扣：在商务折扣、伙伴折扣和促销折扣中选择（优惠金额相等则按此顺序排优先级），折扣券不参与最优折扣的计算
+        是否为最优折扣0：不是最优折扣；为缺省值。1：是最优折扣；最优折扣：在商务折扣、伙伴折扣和促销折扣中选择（优惠金额相等则按此顺序排优先级），折扣券不参与最优折扣的计算。
 
         :return: The best_offer of this OptionalDiscountRatingResult.
         :rtype: int
@@ -577,7 +577,7 @@ class OptionalDiscountRatingResult:
     def best_offer(self, best_offer):
         r"""Sets the best_offer of this OptionalDiscountRatingResult.
 
-        是否为最优折扣0：不是最优折扣；为缺省值。1：是最优折扣；最优折扣：在商务折扣、伙伴折扣和促销折扣中选择（优惠金额相等则按此顺序排优先级），折扣券不参与最优折扣的计算
+        是否为最优折扣0：不是最优折扣；为缺省值。1：是最优折扣；最优折扣：在商务折扣、伙伴折扣和促销折扣中选择（优惠金额相等则按此顺序排优先级），折扣券不参与最优折扣的计算。
 
         :param best_offer: The best_offer of this OptionalDiscountRatingResult.
         :type best_offer: int
@@ -588,7 +588,7 @@ class OptionalDiscountRatingResult:
     def same_ratio_flag(self):
         r"""Gets the same_ratio_flag of this OptionalDiscountRatingResult.
 
-        sameRatioFlag
+        sameRatioFlag。
 
         :return: The same_ratio_flag of this OptionalDiscountRatingResult.
         :rtype: int
@@ -599,7 +599,7 @@ class OptionalDiscountRatingResult:
     def same_ratio_flag(self, same_ratio_flag):
         r"""Sets the same_ratio_flag of this OptionalDiscountRatingResult.
 
-        sameRatioFlag
+        sameRatioFlag。
 
         :param same_ratio_flag: The same_ratio_flag of this OptionalDiscountRatingResult.
         :type same_ratio_flag: int
@@ -610,7 +610,7 @@ class OptionalDiscountRatingResult:
     def discount_ratio(self):
         r"""Gets the discount_ratio of this OptionalDiscountRatingResult.
 
-        sameRatioFlag为1时有值，表示该折扣的折扣率
+        sameRatioFlag为1时有值，表示该折扣的折扣率。
 
         :return: The discount_ratio of this OptionalDiscountRatingResult.
         :rtype: float
@@ -621,7 +621,7 @@ class OptionalDiscountRatingResult:
     def discount_ratio(self, discount_ratio):
         r"""Sets the discount_ratio of this OptionalDiscountRatingResult.
 
-        sameRatioFlag为1时有值，表示该折扣的折扣率
+        sameRatioFlag为1时有值，表示该折扣的折扣率。
 
         :param discount_ratio: The discount_ratio of this OptionalDiscountRatingResult.
         :type discount_ratio: float
@@ -632,7 +632,7 @@ class OptionalDiscountRatingResult:
     def promotion_info(self):
         r"""Gets the promotion_info of this OptionalDiscountRatingResult.
 
-        折扣优惠基本信息；调用者在确定好折扣优惠后、下单时，使用此字段值，填入到订购/变更接口中的promotionInfo字段
+        折扣优惠基本信息；调用者在确定好折扣优惠后、下单时，使用此字段值，填入到订购/变更接口中的promotionInfo字段。
 
         :return: The promotion_info of this OptionalDiscountRatingResult.
         :rtype: str
@@ -643,7 +643,7 @@ class OptionalDiscountRatingResult:
     def promotion_info(self, promotion_info):
         r"""Sets the promotion_info of this OptionalDiscountRatingResult.
 
-        折扣优惠基本信息；调用者在确定好折扣优惠后、下单时，使用此字段值，填入到订购/变更接口中的promotionInfo字段
+        折扣优惠基本信息；调用者在确定好折扣优惠后、下单时，使用此字段值，填入到订购/变更接口中的promotionInfo字段。
 
         :param promotion_info: The promotion_info of this OptionalDiscountRatingResult.
         :type promotion_info: str
@@ -654,7 +654,7 @@ class OptionalDiscountRatingResult:
     def product_rating_results(self):
         r"""Gets the product_rating_results of this OptionalDiscountRatingResult.
 
-        产品询价结果
+        产品询价结果。
 
         :return: The product_rating_results of this OptionalDiscountRatingResult.
         :rtype: list[:class:`huaweicloudsdkworkspace.v2.ProductResult`]
@@ -665,7 +665,7 @@ class OptionalDiscountRatingResult:
     def product_rating_results(self, product_rating_results):
         r"""Sets the product_rating_results of this OptionalDiscountRatingResult.
 
-        产品询价结果
+        产品询价结果。
 
         :param product_rating_results: The product_rating_results of this OptionalDiscountRatingResult.
         :type product_rating_results: list[:class:`huaweicloudsdkworkspace.v2.ProductResult`]

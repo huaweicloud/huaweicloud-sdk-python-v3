@@ -37,15 +37,15 @@ class Field:
 
         The model defined in huaweicloud sdk
 
-        :param field_name: 要在集合中创建的字段名称
+        :param field_name: **参数解释：** 要在集合中创建的字段名称。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
         :type field_name: str
-        :param data_type: 字段的数据类型；“Bool”,“Int8”,“Int16”,“Int32”,“Int64”,“Float”,“String”,“Array”,“JSON”,\&quot;FloatVector\&quot;, \&quot;SparseFloatVector\&quot;
+        :param data_type: **参数解释：** 字段的数据类型。 **约束限制：** 不涉及。 **取值范围：** “Bool”,“Int8”,“Int16”,“Int32”,“Int64”,“Float”,“String”,“Array”,“JSON”,\&quot;FloatVector\&quot;, \&quot;SparseFloatVector\&quot;。 **默认取值:** 不涉及。
         :type data_type: str
-        :param element_data_type: 数组内部的数据类型，当前支持“Bool”,“Int8”,“Int16”,“Int32”,“Int64”,“Float”,“String”
+        :param element_data_type: **参数解释：** 数组内部的数据类型。 **约束限制：** 在data_type是Array时生效。 **取值范围：** “Bool”,“Int8”,“Int16”,“Int32”,“Int64”,“Float”,“String”。 **默认取值:** 不涉及。
         :type element_data_type: str
-        :param element_type_params: 如果field为FloatVector类型向量字段，则必须设定维度参数dim: 向量字段的维度，最大支持32,768维  如果field为String类型字段或Array 元素类型为String类型，则可设定字段值最大长度max_length，默认为256  如果field为Array类型字段，则可设定数组最大容量max_capacity，默认为32
+        :param element_type_params: **参数解释：** 每个field列的参数。 **约束限制：** 如果field为FloatVector类型向量字段，则必须设定维度参数dim； 如果field为String类型字段或Array 元素类型为String类型，则可设定字段值最大长度max_length； 如果field为Array类型字段，则可设定数组最大容量max_capacity。 **取值范围：** 如果field为FloatVector类型向量字段时，参数dim的有效取值范围是[2-32768]; 如果field为String类型字段或Array 元素类型为String类型, 参数max_length的有效取值范围是[1-65535]; 如果field为Array类型字段，参数max_capacity的有效取值范围是[1-32768] **默认取值:** 如果field为String类型字段或Array 元素类型为String类型, 参数max_length的默认值是256 如果field为Array类型字段，参数max_capacity的默认值是32。
         :type element_type_params: dict(str, object)
-        :param partition_key: 该字段是否为partition_key，默认false。（如果partition_key为true，data_type仅支持String与Int64）；最多只有一个field的partition_key设置为true
+        :param partition_key: **参数解释：** 是否将这个filed列设置为分区键。 **约束限制：** 1.只能在数据类型为String与Int64的field列上设置分区键； 2.最多只能设置1个field为分区键。 **取值范围：** true，false。 **默认取值:** false。
         :type partition_key: bool
         """
         
@@ -71,7 +71,7 @@ class Field:
     def field_name(self):
         r"""Gets the field_name of this Field.
 
-        要在集合中创建的字段名称
+        **参数解释：** 要在集合中创建的字段名称。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :return: The field_name of this Field.
         :rtype: str
@@ -82,7 +82,7 @@ class Field:
     def field_name(self, field_name):
         r"""Sets the field_name of this Field.
 
-        要在集合中创建的字段名称
+        **参数解释：** 要在集合中创建的字段名称。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :param field_name: The field_name of this Field.
         :type field_name: str
@@ -93,7 +93,7 @@ class Field:
     def data_type(self):
         r"""Gets the data_type of this Field.
 
-        字段的数据类型；“Bool”,“Int8”,“Int16”,“Int32”,“Int64”,“Float”,“String”,“Array”,“JSON”,\"FloatVector\", \"SparseFloatVector\"
+        **参数解释：** 字段的数据类型。 **约束限制：** 不涉及。 **取值范围：** “Bool”,“Int8”,“Int16”,“Int32”,“Int64”,“Float”,“String”,“Array”,“JSON”,\"FloatVector\", \"SparseFloatVector\"。 **默认取值:** 不涉及。
 
         :return: The data_type of this Field.
         :rtype: str
@@ -104,7 +104,7 @@ class Field:
     def data_type(self, data_type):
         r"""Sets the data_type of this Field.
 
-        字段的数据类型；“Bool”,“Int8”,“Int16”,“Int32”,“Int64”,“Float”,“String”,“Array”,“JSON”,\"FloatVector\", \"SparseFloatVector\"
+        **参数解释：** 字段的数据类型。 **约束限制：** 不涉及。 **取值范围：** “Bool”,“Int8”,“Int16”,“Int32”,“Int64”,“Float”,“String”,“Array”,“JSON”,\"FloatVector\", \"SparseFloatVector\"。 **默认取值:** 不涉及。
 
         :param data_type: The data_type of this Field.
         :type data_type: str
@@ -115,7 +115,7 @@ class Field:
     def element_data_type(self):
         r"""Gets the element_data_type of this Field.
 
-        数组内部的数据类型，当前支持“Bool”,“Int8”,“Int16”,“Int32”,“Int64”,“Float”,“String”
+        **参数解释：** 数组内部的数据类型。 **约束限制：** 在data_type是Array时生效。 **取值范围：** “Bool”,“Int8”,“Int16”,“Int32”,“Int64”,“Float”,“String”。 **默认取值:** 不涉及。
 
         :return: The element_data_type of this Field.
         :rtype: str
@@ -126,7 +126,7 @@ class Field:
     def element_data_type(self, element_data_type):
         r"""Sets the element_data_type of this Field.
 
-        数组内部的数据类型，当前支持“Bool”,“Int8”,“Int16”,“Int32”,“Int64”,“Float”,“String”
+        **参数解释：** 数组内部的数据类型。 **约束限制：** 在data_type是Array时生效。 **取值范围：** “Bool”,“Int8”,“Int16”,“Int32”,“Int64”,“Float”,“String”。 **默认取值:** 不涉及。
 
         :param element_data_type: The element_data_type of this Field.
         :type element_data_type: str
@@ -137,7 +137,7 @@ class Field:
     def element_type_params(self):
         r"""Gets the element_type_params of this Field.
 
-        如果field为FloatVector类型向量字段，则必须设定维度参数dim: 向量字段的维度，最大支持32,768维  如果field为String类型字段或Array 元素类型为String类型，则可设定字段值最大长度max_length，默认为256  如果field为Array类型字段，则可设定数组最大容量max_capacity，默认为32
+        **参数解释：** 每个field列的参数。 **约束限制：** 如果field为FloatVector类型向量字段，则必须设定维度参数dim； 如果field为String类型字段或Array 元素类型为String类型，则可设定字段值最大长度max_length； 如果field为Array类型字段，则可设定数组最大容量max_capacity。 **取值范围：** 如果field为FloatVector类型向量字段时，参数dim的有效取值范围是[2-32768]; 如果field为String类型字段或Array 元素类型为String类型, 参数max_length的有效取值范围是[1-65535]; 如果field为Array类型字段，参数max_capacity的有效取值范围是[1-32768] **默认取值:** 如果field为String类型字段或Array 元素类型为String类型, 参数max_length的默认值是256 如果field为Array类型字段，参数max_capacity的默认值是32。
 
         :return: The element_type_params of this Field.
         :rtype: dict(str, object)
@@ -148,7 +148,7 @@ class Field:
     def element_type_params(self, element_type_params):
         r"""Sets the element_type_params of this Field.
 
-        如果field为FloatVector类型向量字段，则必须设定维度参数dim: 向量字段的维度，最大支持32,768维  如果field为String类型字段或Array 元素类型为String类型，则可设定字段值最大长度max_length，默认为256  如果field为Array类型字段，则可设定数组最大容量max_capacity，默认为32
+        **参数解释：** 每个field列的参数。 **约束限制：** 如果field为FloatVector类型向量字段，则必须设定维度参数dim； 如果field为String类型字段或Array 元素类型为String类型，则可设定字段值最大长度max_length； 如果field为Array类型字段，则可设定数组最大容量max_capacity。 **取值范围：** 如果field为FloatVector类型向量字段时，参数dim的有效取值范围是[2-32768]; 如果field为String类型字段或Array 元素类型为String类型, 参数max_length的有效取值范围是[1-65535]; 如果field为Array类型字段，参数max_capacity的有效取值范围是[1-32768] **默认取值:** 如果field为String类型字段或Array 元素类型为String类型, 参数max_length的默认值是256 如果field为Array类型字段，参数max_capacity的默认值是32。
 
         :param element_type_params: The element_type_params of this Field.
         :type element_type_params: dict(str, object)
@@ -159,7 +159,7 @@ class Field:
     def partition_key(self):
         r"""Gets the partition_key of this Field.
 
-        该字段是否为partition_key，默认false。（如果partition_key为true，data_type仅支持String与Int64）；最多只有一个field的partition_key设置为true
+        **参数解释：** 是否将这个filed列设置为分区键。 **约束限制：** 1.只能在数据类型为String与Int64的field列上设置分区键； 2.最多只能设置1个field为分区键。 **取值范围：** true，false。 **默认取值:** false。
 
         :return: The partition_key of this Field.
         :rtype: bool
@@ -170,7 +170,7 @@ class Field:
     def partition_key(self, partition_key):
         r"""Sets the partition_key of this Field.
 
-        该字段是否为partition_key，默认false。（如果partition_key为true，data_type仅支持String与Int64）；最多只有一个field的partition_key设置为true
+        **参数解释：** 是否将这个filed列设置为分区键。 **约束限制：** 1.只能在数据类型为String与Int64的field列上设置分区键； 2.最多只能设置1个field为分区键。 **取值范围：** true，false。 **默认取值:** false。
 
         :param partition_key: The partition_key of this Field.
         :type partition_key: bool

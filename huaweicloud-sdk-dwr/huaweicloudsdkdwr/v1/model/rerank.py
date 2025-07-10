@@ -31,9 +31,9 @@ class Rerank:
 
         The model defined in huaweicloud sdk
 
-        :param strategy: 重排序的策略选择：1、权重排序weighted；2、rrf 默认：rrf
+        :param strategy: **参数解释：** 重排序的策略名称。 **约束限制：** 不涉及 **取值范围：** &#x60;[\&quot;weighted\&quot;, \&quot;rrf\&quot;]&#x60; 默认取值: \&quot;rrf\&quot;
         :type strategy: str
-        :param params: 算法参数：1、权重给出各个向量结果权值（0-1）；2、rrf给出k值（平滑值），默认60
+        :param params: **参数解释：** rerank策略的算法参数。 可以设置的参数： - k：平滑值。（仅对rrf策略生效） - weights：各个向量搜索结果的权值。（仅对weighted策略生效，且当策略为weighted时该参数必填） 重排序的策略名称。 **约束限制：** 不涉及。 **取值范围：** - weights：[0, 1] - k：(0, 16384) **默认取值：** - k：60
         :type params: dict(str, object)
         """
         
@@ -51,7 +51,7 @@ class Rerank:
     def strategy(self):
         r"""Gets the strategy of this Rerank.
 
-        重排序的策略选择：1、权重排序weighted；2、rrf 默认：rrf
+        **参数解释：** 重排序的策略名称。 **约束限制：** 不涉及 **取值范围：** `[\"weighted\", \"rrf\"]` 默认取值: \"rrf\"
 
         :return: The strategy of this Rerank.
         :rtype: str
@@ -62,7 +62,7 @@ class Rerank:
     def strategy(self, strategy):
         r"""Sets the strategy of this Rerank.
 
-        重排序的策略选择：1、权重排序weighted；2、rrf 默认：rrf
+        **参数解释：** 重排序的策略名称。 **约束限制：** 不涉及 **取值范围：** `[\"weighted\", \"rrf\"]` 默认取值: \"rrf\"
 
         :param strategy: The strategy of this Rerank.
         :type strategy: str
@@ -73,7 +73,7 @@ class Rerank:
     def params(self):
         r"""Gets the params of this Rerank.
 
-        算法参数：1、权重给出各个向量结果权值（0-1）；2、rrf给出k值（平滑值），默认60
+        **参数解释：** rerank策略的算法参数。 可以设置的参数： - k：平滑值。（仅对rrf策略生效） - weights：各个向量搜索结果的权值。（仅对weighted策略生效，且当策略为weighted时该参数必填） 重排序的策略名称。 **约束限制：** 不涉及。 **取值范围：** - weights：[0, 1] - k：(0, 16384) **默认取值：** - k：60
 
         :return: The params of this Rerank.
         :rtype: dict(str, object)
@@ -84,7 +84,7 @@ class Rerank:
     def params(self, params):
         r"""Sets the params of this Rerank.
 
-        算法参数：1、权重给出各个向量结果权值（0-1）；2、rrf给出k值（平滑值），默认60
+        **参数解释：** rerank策略的算法参数。 可以设置的参数： - k：平滑值。（仅对rrf策略生效） - weights：各个向量搜索结果的权值。（仅对weighted策略生效，且当策略为weighted时该参数必填） 重排序的策略名称。 **约束限制：** 不涉及。 **取值范围：** - weights：[0, 1] - k：(0, 16384) **默认取值：** - k：60
 
         :param params: The params of this Rerank.
         :type params: dict(str, object)

@@ -31,9 +31,9 @@ class Metric:
 
         The model defined in huaweicloud sdk
 
-        :param metric_name: 指标名称
+        :param metric_name: 指标名称。
         :type metric_name: str
-        :param metric_value: 指标值
+        :param metric_value: 指标值。
         :type metric_value: float
         """
         
@@ -52,7 +52,7 @@ class Metric:
     def metric_name(self):
         r"""Gets the metric_name of this Metric.
 
-        指标名称
+        指标名称。
 
         :return: The metric_name of this Metric.
         :rtype: str
@@ -63,7 +63,7 @@ class Metric:
     def metric_name(self, metric_name):
         r"""Sets the metric_name of this Metric.
 
-        指标名称
+        指标名称。
 
         :param metric_name: The metric_name of this Metric.
         :type metric_name: str
@@ -74,7 +74,7 @@ class Metric:
     def metric_value(self):
         r"""Gets the metric_value of this Metric.
 
-        指标值
+        指标值。
 
         :return: The metric_value of this Metric.
         :rtype: float
@@ -85,7 +85,7 @@ class Metric:
     def metric_value(self, metric_value):
         r"""Sets the metric_value of this Metric.
 
-        指标值
+        指标值。
 
         :param metric_value: The metric_value of this Metric.
         :type metric_value: float

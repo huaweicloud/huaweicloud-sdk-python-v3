@@ -46,7 +46,7 @@ class ListDesktopsStatisticsResponse(SdkResponse):
         :type run_state_statistics: :class:`huaweicloudsdkworkspace.v2.DesktopRunStatisticsRsp`
         :param login_state_statistics: 
         :type login_state_statistics: :class:`huaweicloudsdkworkspace.v2.DesktopLoginStatisticsRsp`
-        :param desktop_pool_statistics: 每个桌面池的情况统计，当desktop_type指定为POOL时返回
+        :param desktop_pool_statistics: 每个桌面池的情况统计，当desktop_type指定为POOL时返回。
         :type desktop_pool_statistics: list[:class:`huaweicloudsdkworkspace.v2.DesktopPoolStatistics`]
         """
         
@@ -150,7 +150,7 @@ class ListDesktopsStatisticsResponse(SdkResponse):
     def desktop_pool_statistics(self):
         r"""Gets the desktop_pool_statistics of this ListDesktopsStatisticsResponse.
 
-        每个桌面池的情况统计，当desktop_type指定为POOL时返回
+        每个桌面池的情况统计，当desktop_type指定为POOL时返回。
 
         :return: The desktop_pool_statistics of this ListDesktopsStatisticsResponse.
         :rtype: list[:class:`huaweicloudsdkworkspace.v2.DesktopPoolStatistics`]
@@ -161,7 +161,7 @@ class ListDesktopsStatisticsResponse(SdkResponse):
     def desktop_pool_statistics(self, desktop_pool_statistics):
         r"""Sets the desktop_pool_statistics of this ListDesktopsStatisticsResponse.
 
-        每个桌面池的情况统计，当desktop_type指定为POOL时返回
+        每个桌面池的情况统计，当desktop_type指定为POOL时返回。
 
         :param desktop_pool_statistics: The desktop_pool_statistics of this ListDesktopsStatisticsResponse.
         :type desktop_pool_statistics: list[:class:`huaweicloudsdkworkspace.v2.DesktopPoolStatistics`]

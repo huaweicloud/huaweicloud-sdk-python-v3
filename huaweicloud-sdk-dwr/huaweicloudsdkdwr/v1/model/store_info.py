@@ -29,7 +29,7 @@ class StoreInfo:
 
         The model defined in huaweicloud sdk
 
-        :param store_name: 知识仓实例名称，全域唯一。  长度范围为3到63个字符，支持小写字母、数字、中划线（-），第一个字符只能够是小写字母，中划线(-)不得出现在字符串末尾。
+        :param store_name: **参数解释：** 知识仓实例名称，region内唯一。 **约束限制：** 长度范围为3到63个字符，支持小写字母、数字、中划线（-），第一个字符只能够是小写字母，中划线(-)不得出现在字符串末尾。 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type store_name: str
         """
         
@@ -44,7 +44,7 @@ class StoreInfo:
     def store_name(self):
         r"""Gets the store_name of this StoreInfo.
 
-        知识仓实例名称，全域唯一。  长度范围为3到63个字符，支持小写字母、数字、中划线（-），第一个字符只能够是小写字母，中划线(-)不得出现在字符串末尾。
+        **参数解释：** 知识仓实例名称，region内唯一。 **约束限制：** 长度范围为3到63个字符，支持小写字母、数字、中划线（-），第一个字符只能够是小写字母，中划线(-)不得出现在字符串末尾。 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The store_name of this StoreInfo.
         :rtype: str
@@ -55,7 +55,7 @@ class StoreInfo:
     def store_name(self, store_name):
         r"""Sets the store_name of this StoreInfo.
 
-        知识仓实例名称，全域唯一。  长度范围为3到63个字符，支持小写字母、数字、中划线（-），第一个字符只能够是小写字母，中划线(-)不得出现在字符串末尾。
+        **参数解释：** 知识仓实例名称，region内唯一。 **约束限制：** 长度范围为3到63个字符，支持小写字母、数字、中划线（-），第一个字符只能够是小写字母，中划线(-)不得出现在字符串末尾。 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param store_name: The store_name of this StoreInfo.
         :type store_name: str

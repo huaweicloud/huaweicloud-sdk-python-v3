@@ -35,13 +35,13 @@ class CreateTerminalsBindingDesktopsInfo:
 
         The model defined in huaweicloud sdk
 
-        :param line: 行号,用于批量导入
+        :param line: 行号,用于批量导入。
         :type line: int
-        :param mac: 终端mac地址
+        :param mac: 终端mac地址。
         :type mac: str
-        :param desktop_name: 桌面名称，用于批量导入
+        :param desktop_name: 桌面名称，用于批量导入。
         :type desktop_name: str
-        :param description: 描述
+        :param description: 描述。
         :type description: str
         """
         
@@ -66,7 +66,7 @@ class CreateTerminalsBindingDesktopsInfo:
     def line(self):
         r"""Gets the line of this CreateTerminalsBindingDesktopsInfo.
 
-        行号,用于批量导入
+        行号,用于批量导入。
 
         :return: The line of this CreateTerminalsBindingDesktopsInfo.
         :rtype: int
@@ -77,7 +77,7 @@ class CreateTerminalsBindingDesktopsInfo:
     def line(self, line):
         r"""Sets the line of this CreateTerminalsBindingDesktopsInfo.
 
-        行号,用于批量导入
+        行号,用于批量导入。
 
         :param line: The line of this CreateTerminalsBindingDesktopsInfo.
         :type line: int
@@ -88,7 +88,7 @@ class CreateTerminalsBindingDesktopsInfo:
     def mac(self):
         r"""Gets the mac of this CreateTerminalsBindingDesktopsInfo.
 
-        终端mac地址
+        终端mac地址。
 
         :return: The mac of this CreateTerminalsBindingDesktopsInfo.
         :rtype: str
@@ -99,7 +99,7 @@ class CreateTerminalsBindingDesktopsInfo:
     def mac(self, mac):
         r"""Sets the mac of this CreateTerminalsBindingDesktopsInfo.
 
-        终端mac地址
+        终端mac地址。
 
         :param mac: The mac of this CreateTerminalsBindingDesktopsInfo.
         :type mac: str
@@ -110,7 +110,7 @@ class CreateTerminalsBindingDesktopsInfo:
     def desktop_name(self):
         r"""Gets the desktop_name of this CreateTerminalsBindingDesktopsInfo.
 
-        桌面名称，用于批量导入
+        桌面名称，用于批量导入。
 
         :return: The desktop_name of this CreateTerminalsBindingDesktopsInfo.
         :rtype: str
@@ -121,7 +121,7 @@ class CreateTerminalsBindingDesktopsInfo:
     def desktop_name(self, desktop_name):
         r"""Sets the desktop_name of this CreateTerminalsBindingDesktopsInfo.
 
-        桌面名称，用于批量导入
+        桌面名称，用于批量导入。
 
         :param desktop_name: The desktop_name of this CreateTerminalsBindingDesktopsInfo.
         :type desktop_name: str
@@ -132,7 +132,7 @@ class CreateTerminalsBindingDesktopsInfo:
     def description(self):
         r"""Gets the description of this CreateTerminalsBindingDesktopsInfo.
 
-        描述
+        描述。
 
         :return: The description of this CreateTerminalsBindingDesktopsInfo.
         :rtype: str
@@ -143,7 +143,7 @@ class CreateTerminalsBindingDesktopsInfo:
     def description(self, description):
         r"""Sets the description of this CreateTerminalsBindingDesktopsInfo.
 
-        描述
+        描述。
 
         :param description: The description of this CreateTerminalsBindingDesktopsInfo.
         :type description: str

@@ -57,7 +57,7 @@ class HourPackageInfo:
         :type use_up_policy: str
         :param package_duration: 小时包总时长。
         :type package_duration: int
-        :param use_duration: 小时包已用用时长。
+        :param use_duration: 小时包已用时长。
         :type use_duration: int
         """
         
@@ -248,7 +248,7 @@ class HourPackageInfo:
     def use_duration(self):
         r"""Gets the use_duration of this HourPackageInfo.
 
-        小时包已用用时长。
+        小时包已用时长。
 
         :return: The use_duration of this HourPackageInfo.
         :rtype: int
@@ -259,7 +259,7 @@ class HourPackageInfo:
     def use_duration(self, use_duration):
         r"""Sets the use_duration of this HourPackageInfo.
 
-        小时包已用用时长。
+        小时包已用时长。
 
         :param use_duration: The use_duration of this HourPackageInfo.
         :type use_duration: int

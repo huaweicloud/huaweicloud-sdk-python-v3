@@ -55,13 +55,13 @@ class ListLoginRecordsNewRequest:
         :type computer_name: str
         :param terminal_type: 登录桌面的终端系统类型，当前支持：WI（云桌面客户端）。
         :type terminal_type: str
-        :param offset: 用于分页查询，查询的起始记录序号，从0开始
+        :param offset: 用于分页查询，查询的起始记录序号，从0开始。
         :type offset: int
         :param limit: 用于分页查询，返回登录记录数量限制,取值范围0-1000。如果不指定，默认为20。
         :type limit: int
-        :param min_network_rtt: 查询端到端时延的最小值
+        :param min_network_rtt: 查询端到端时延的最小值。
         :type min_network_rtt: int
-        :param max_network_rtt: 查询端到端时延的最大值
+        :param max_network_rtt: 查询端到端时延的最大值。
         :type max_network_rtt: int
         """
         
@@ -211,7 +211,7 @@ class ListLoginRecordsNewRequest:
     def offset(self):
         r"""Gets the offset of this ListLoginRecordsNewRequest.
 
-        用于分页查询，查询的起始记录序号，从0开始
+        用于分页查询，查询的起始记录序号，从0开始。
 
         :return: The offset of this ListLoginRecordsNewRequest.
         :rtype: int
@@ -222,7 +222,7 @@ class ListLoginRecordsNewRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListLoginRecordsNewRequest.
 
-        用于分页查询，查询的起始记录序号，从0开始
+        用于分页查询，查询的起始记录序号，从0开始。
 
         :param offset: The offset of this ListLoginRecordsNewRequest.
         :type offset: int
@@ -255,7 +255,7 @@ class ListLoginRecordsNewRequest:
     def min_network_rtt(self):
         r"""Gets the min_network_rtt of this ListLoginRecordsNewRequest.
 
-        查询端到端时延的最小值
+        查询端到端时延的最小值。
 
         :return: The min_network_rtt of this ListLoginRecordsNewRequest.
         :rtype: int
@@ -266,7 +266,7 @@ class ListLoginRecordsNewRequest:
     def min_network_rtt(self, min_network_rtt):
         r"""Sets the min_network_rtt of this ListLoginRecordsNewRequest.
 
-        查询端到端时延的最小值
+        查询端到端时延的最小值。
 
         :param min_network_rtt: The min_network_rtt of this ListLoginRecordsNewRequest.
         :type min_network_rtt: int
@@ -277,7 +277,7 @@ class ListLoginRecordsNewRequest:
     def max_network_rtt(self):
         r"""Gets the max_network_rtt of this ListLoginRecordsNewRequest.
 
-        查询端到端时延的最大值
+        查询端到端时延的最大值。
 
         :return: The max_network_rtt of this ListLoginRecordsNewRequest.
         :rtype: int
@@ -288,7 +288,7 @@ class ListLoginRecordsNewRequest:
     def max_network_rtt(self, max_network_rtt):
         r"""Sets the max_network_rtt of this ListLoginRecordsNewRequest.
 
-        查询端到端时延的最大值
+        查询端到端时延的最大值。
 
         :param max_network_rtt: The max_network_rtt of this ListLoginRecordsNewRequest.
         :type max_network_rtt: int

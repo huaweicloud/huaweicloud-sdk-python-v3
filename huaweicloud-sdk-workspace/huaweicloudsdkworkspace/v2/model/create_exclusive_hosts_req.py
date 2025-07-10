@@ -21,7 +21,6 @@ class CreateExclusiveHostsReq:
         'name': 'str',
         'apply_desktop_quantity': 'int',
         'quantity': 'int',
-        'order_id': 'str',
         'product_id': 'str',
         'image_volumes': 'list[Volume]',
         'enterprise_project_id': 'str',
@@ -36,7 +35,6 @@ class CreateExclusiveHostsReq:
         'name': 'name',
         'apply_desktop_quantity': 'apply_desktop_quantity',
         'quantity': 'quantity',
-        'order_id': 'order_id',
         'product_id': 'product_id',
         'image_volumes': 'image_volumes',
         'enterprise_project_id': 'enterprise_project_id',
@@ -46,7 +44,7 @@ class CreateExclusiveHostsReq:
         'resize_exclusive_lites': 'resize_exclusive_lites'
     }
 
-    def __init__(self, availability_zone=None, name=None, apply_desktop_quantity=None, quantity=None, order_id=None, product_id=None, image_volumes=None, enterprise_project_id=None, memory_volumes=None, vpc_id=None, subnet_id=None, resize_exclusive_lites=None):
+    def __init__(self, availability_zone=None, name=None, apply_desktop_quantity=None, quantity=None, product_id=None, image_volumes=None, enterprise_project_id=None, memory_volumes=None, vpc_id=None, subnet_id=None, resize_exclusive_lites=None):
         r"""CreateExclusiveHostsReq
 
         The model defined in huaweicloud sdk
@@ -59,13 +57,11 @@ class CreateExclusiveHostsReq:
         :type apply_desktop_quantity: int
         :param quantity: 购买数量。
         :type quantity: int
-        :param order_id: 订单ID。
-        :type order_id: str
         :param product_id: 产品套餐ID。
         :type product_id: str
         :param image_volumes: 镜像盘列表。
         :type image_volumes: list[:class:`huaweicloudsdkworkspace.v2.Volume`]
-        :param enterprise_project_id: 企业项目ID，默认\&quot;0\&quot;
+        :param enterprise_project_id: 企业项目ID，默认\&quot;0。\&quot;
         :type enterprise_project_id: str
         :param memory_volumes: 存储盘列表。
         :type memory_volumes: list[:class:`huaweicloudsdkworkspace.v2.Volume`]
@@ -83,7 +79,6 @@ class CreateExclusiveHostsReq:
         self._name = None
         self._apply_desktop_quantity = None
         self._quantity = None
-        self._order_id = None
         self._product_id = None
         self._image_volumes = None
         self._enterprise_project_id = None
@@ -99,8 +94,6 @@ class CreateExclusiveHostsReq:
         if apply_desktop_quantity is not None:
             self.apply_desktop_quantity = apply_desktop_quantity
         self.quantity = quantity
-        if order_id is not None:
-            self.order_id = order_id
         self.product_id = product_id
         self.image_volumes = image_volumes
         if enterprise_project_id is not None:
@@ -200,28 +193,6 @@ class CreateExclusiveHostsReq:
         self._quantity = quantity
 
     @property
-    def order_id(self):
-        r"""Gets the order_id of this CreateExclusiveHostsReq.
-
-        订单ID。
-
-        :return: The order_id of this CreateExclusiveHostsReq.
-        :rtype: str
-        """
-        return self._order_id
-
-    @order_id.setter
-    def order_id(self, order_id):
-        r"""Sets the order_id of this CreateExclusiveHostsReq.
-
-        订单ID。
-
-        :param order_id: The order_id of this CreateExclusiveHostsReq.
-        :type order_id: str
-        """
-        self._order_id = order_id
-
-    @property
     def product_id(self):
         r"""Gets the product_id of this CreateExclusiveHostsReq.
 
@@ -269,7 +240,7 @@ class CreateExclusiveHostsReq:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this CreateExclusiveHostsReq.
 
-        企业项目ID，默认\"0\"
+        企业项目ID，默认\"0。\"
 
         :return: The enterprise_project_id of this CreateExclusiveHostsReq.
         :rtype: str
@@ -280,7 +251,7 @@ class CreateExclusiveHostsReq:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this CreateExclusiveHostsReq.
 
-        企业项目ID，默认\"0\"
+        企业项目ID，默认\"0。\"
 
         :param enterprise_project_id: The enterprise_project_id of this CreateExclusiveHostsReq.
         :type enterprise_project_id: str

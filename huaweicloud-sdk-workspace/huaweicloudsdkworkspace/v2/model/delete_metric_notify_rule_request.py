@@ -29,7 +29,7 @@ class DeleteMetricNotifyRuleRequest:
 
         The model defined in huaweicloud sdk
 
-        :param rule_id: 通知规则ID
+        :param rule_id: 通知规则ID。
         :type rule_id: str
         """
         
@@ -44,7 +44,7 @@ class DeleteMetricNotifyRuleRequest:
     def rule_id(self):
         r"""Gets the rule_id of this DeleteMetricNotifyRuleRequest.
 
-        通知规则ID
+        通知规则ID。
 
         :return: The rule_id of this DeleteMetricNotifyRuleRequest.
         :rtype: str
@@ -55,7 +55,7 @@ class DeleteMetricNotifyRuleRequest:
     def rule_id(self, rule_id):
         r"""Sets the rule_id of this DeleteMetricNotifyRuleRequest.
 
-        通知规则ID
+        通知规则ID。
 
         :param rule_id: The rule_id of this DeleteMetricNotifyRuleRequest.
         :type rule_id: str

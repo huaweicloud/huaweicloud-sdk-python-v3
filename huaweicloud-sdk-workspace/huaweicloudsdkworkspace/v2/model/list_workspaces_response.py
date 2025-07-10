@@ -19,18 +19,15 @@ class ListWorkspacesResponse(SdkResponse):
 
     openapi_types = {
         'id': 'str',
-        'auth_type': 'str',
+        'is_global': 'bool',
         'ad_domains': 'AdInfo',
-        'third_gateway_info': 'ThirdGatewayInfo',
         'vpc_id': 'str',
         'vpc_name': 'str',
         'access_mode': 'str',
         'adn_conflict_network': 'str',
         'dedicated_subnets': 'str',
         'dedicated_access_address': 'str',
-        'dedicated_access_address_ipv6': 'str',
         'internet_access_address': 'str',
-        'internet_access_address_ipv6': 'str',
         'internet_access_port': 'str',
         'status': 'str',
         'access_status': 'str',
@@ -47,16 +44,11 @@ class ListWorkspacesResponse(SdkResponse):
         'fail_reason': 'str',
         'enterprise_id': 'str',
         'enterprise_project_id': 'str',
-        'project_resource_type': 'str',
-        'assist_auth_config_info': 'AssistAuthConfigInfo',
         'is_send_email': 'bool',
         'authorized_collect_log': 'bool',
         'authorized_hda_upgrade': 'bool',
         'site_configs': 'list[SiteConfigsResponse]',
-        'is_multi_vpc': 'bool',
-        'is_config_nat_mapping': 'bool',
         'dc_vnc_ip': 'str',
-        'dc_vnc_vpcep_id': 'str',
         'is_authorized_install_agent': 'bool',
         'is_support_ipv6': 'bool',
         'enable_user_create_snapshot': 'bool'
@@ -64,18 +56,15 @@ class ListWorkspacesResponse(SdkResponse):
 
     attribute_map = {
         'id': 'id',
-        'auth_type': 'auth_type',
+        'is_global': 'is_global',
         'ad_domains': 'ad_domains',
-        'third_gateway_info': 'third_gateway_info',
         'vpc_id': 'vpc_id',
         'vpc_name': 'vpc_name',
         'access_mode': 'access_mode',
         'adn_conflict_network': 'adn_conflict_network',
         'dedicated_subnets': 'dedicated_subnets',
         'dedicated_access_address': 'dedicated_access_address',
-        'dedicated_access_address_ipv6': 'dedicated_access_address_ipv6',
         'internet_access_address': 'internet_access_address',
-        'internet_access_address_ipv6': 'internet_access_address_ipv6',
         'internet_access_port': 'internet_access_port',
         'status': 'status',
         'access_status': 'access_status',
@@ -92,34 +81,27 @@ class ListWorkspacesResponse(SdkResponse):
         'fail_reason': 'fail_reason',
         'enterprise_id': 'enterprise_id',
         'enterprise_project_id': 'enterprise_project_id',
-        'project_resource_type': 'project_resource_type',
-        'assist_auth_config_info': 'assist_auth_config_info',
         'is_send_email': 'is_send_email',
         'authorized_collect_log': 'authorized_collect_log',
         'authorized_hda_upgrade': 'authorized_hda_upgrade',
         'site_configs': 'site_configs',
-        'is_multi_vpc': 'is_multi_vpc',
-        'is_config_nat_mapping': 'is_config_nat_mapping',
         'dc_vnc_ip': 'dc_vnc_ip',
-        'dc_vnc_vpcep_id': 'dc_vnc_vpcep_id',
         'is_authorized_install_agent': 'is_authorized_install_agent',
         'is_support_ipv6': 'is_support_ipv6',
         'enable_user_create_snapshot': 'enable_user_create_snapshot'
     }
 
-    def __init__(self, id=None, auth_type=None, ad_domains=None, third_gateway_info=None, vpc_id=None, vpc_name=None, access_mode=None, adn_conflict_network=None, dedicated_subnets=None, dedicated_access_address=None, dedicated_access_address_ipv6=None, internet_access_address=None, internet_access_address_ipv6=None, internet_access_port=None, status=None, access_status=None, subnet_ids=None, vpc_config_infos=None, management_subnet_cidr=None, infrastructure_security_group=None, desktop_security_group=None, closable=None, config_status=None, progress=None, job_id=None, fail_code=None, fail_reason=None, enterprise_id=None, enterprise_project_id=None, project_resource_type=None, assist_auth_config_info=None, is_send_email=None, authorized_collect_log=None, authorized_hda_upgrade=None, site_configs=None, is_multi_vpc=None, is_config_nat_mapping=None, dc_vnc_ip=None, dc_vnc_vpcep_id=None, is_authorized_install_agent=None, is_support_ipv6=None, enable_user_create_snapshot=None):
+    def __init__(self, id=None, is_global=None, ad_domains=None, vpc_id=None, vpc_name=None, access_mode=None, adn_conflict_network=None, dedicated_subnets=None, dedicated_access_address=None, internet_access_address=None, internet_access_port=None, status=None, access_status=None, subnet_ids=None, vpc_config_infos=None, management_subnet_cidr=None, infrastructure_security_group=None, desktop_security_group=None, closable=None, config_status=None, progress=None, job_id=None, fail_code=None, fail_reason=None, enterprise_id=None, enterprise_project_id=None, is_send_email=None, authorized_collect_log=None, authorized_hda_upgrade=None, site_configs=None, dc_vnc_ip=None, is_authorized_install_agent=None, is_support_ipv6=None, enable_user_create_snapshot=None):
         r"""ListWorkspacesResponse
 
         The model defined in huaweicloud sdk
 
         :param id: 唯一标识ID。
         :type id: str
-        :param auth_type: 主认证方式。 - KERBEROS：KERBEROS。 - KERBEROS_THIRD_SSO：第三方登录认证。
-        :type auth_type: str
+        :param is_global: 开通服务是否是全局服务
+        :type is_global: bool
         :param ad_domains: 
         :type ad_domains: :class:`huaweicloudsdkworkspace.v2.AdInfo`
-        :param third_gateway_info: 
-        :type third_gateway_info: :class:`huaweicloudsdkworkspace.v2.ThirdGatewayInfo`
         :param vpc_id: VPC ID。
         :type vpc_id: str
         :param vpc_name: VPC名称。
@@ -132,12 +114,8 @@ class ListWorkspacesResponse(SdkResponse):
         :type dedicated_subnets: str
         :param dedicated_access_address: 专线接入地址，只有access_mode为“DEDICATED”或“BOTH”时才会返回该参数。
         :type dedicated_access_address: str
-        :param dedicated_access_address_ipv6: 专线接入ipv6地址，只有access_mode为“DEDICATED”或“BOTH”时才会返回该参数。
-        :type dedicated_access_address_ipv6: str
         :param internet_access_address: 互联网接入地址，只有access_mode为“INTERNET”或“BOTH”时才会返回该参数。
         :type internet_access_address: str
-        :param internet_access_address_ipv6: 互联网接入ipv6地址，只有access_mode为“INTERNET”或“BOTH”时才会返回该参数。
-        :type internet_access_address_ipv6: str
         :param internet_access_port: 互联网接入端口。
         :type internet_access_port: str
         :param status: 云办公服务的状态。 - PREPARING：准备开通。 - SUBSCRIBING：开通中。 - SUBSCRIBED：已开通。 - SUBSCRIPTION_FAILED：开通失败。 - DEREGISTERING：销户中。 - DEREGISTRATION_FAILED：销户失败。 - RECYCLING：清理资源中。 - RECYCLED：清理资源成功。 - RECYCLE_FAILED：清理资源失败。 - CLOSED：已销户未开通。
@@ -170,26 +148,16 @@ class ListWorkspacesResponse(SdkResponse):
         :type enterprise_id: str
         :param enterprise_project_id: 企业项目ID。
         :type enterprise_project_id: str
-        :param project_resource_type: 资源池类型。 - \&quot;public\&quot;： 私有资源池 - \&quot;private\&quot;： 公有资源池
-        :type project_resource_type: str
-        :param assist_auth_config_info: 
-        :type assist_auth_config_info: :class:`huaweicloudsdkworkspace.v2.AssistAuthConfigInfo`
         :param is_send_email: 桌面退订是否发送邮件通知。
         :type is_send_email: bool
         :param authorized_collect_log: 是否授权收集日志。
         :type authorized_collect_log: bool
         :param authorized_hda_upgrade: 是否授权hda升级。
         :type authorized_hda_upgrade: bool
-        :param site_configs: 站点配置
+        :param site_configs: 站点配置。
         :type site_configs: list[:class:`huaweicloudsdkworkspace.v2.SiteConfigsResponse`]
-        :param is_multi_vpc: 是否支持多VPC。
-        :type is_multi_vpc: bool
-        :param is_config_nat_mapping: 是否支持配置nat映射。
-        :type is_config_nat_mapping: bool
-        :param dc_vnc_ip: 自定义的专线VNC地址
+        :param dc_vnc_ip: 自定义的专线VNC地址。
         :type dc_vnc_ip: str
-        :param dc_vnc_vpcep_id: 专线VNC VPC终端节点ID
-        :type dc_vnc_vpcep_id: str
         :param is_authorized_install_agent: 是否授权桌面自动安装agent插件。
         :type is_authorized_install_agent: bool
         :param is_support_ipv6: 是否支持ipv6。
@@ -201,18 +169,15 @@ class ListWorkspacesResponse(SdkResponse):
         super(ListWorkspacesResponse, self).__init__()
 
         self._id = None
-        self._auth_type = None
+        self._is_global = None
         self._ad_domains = None
-        self._third_gateway_info = None
         self._vpc_id = None
         self._vpc_name = None
         self._access_mode = None
         self._adn_conflict_network = None
         self._dedicated_subnets = None
         self._dedicated_access_address = None
-        self._dedicated_access_address_ipv6 = None
         self._internet_access_address = None
-        self._internet_access_address_ipv6 = None
         self._internet_access_port = None
         self._status = None
         self._access_status = None
@@ -229,16 +194,11 @@ class ListWorkspacesResponse(SdkResponse):
         self._fail_reason = None
         self._enterprise_id = None
         self._enterprise_project_id = None
-        self._project_resource_type = None
-        self._assist_auth_config_info = None
         self._is_send_email = None
         self._authorized_collect_log = None
         self._authorized_hda_upgrade = None
         self._site_configs = None
-        self._is_multi_vpc = None
-        self._is_config_nat_mapping = None
         self._dc_vnc_ip = None
-        self._dc_vnc_vpcep_id = None
         self._is_authorized_install_agent = None
         self._is_support_ipv6 = None
         self._enable_user_create_snapshot = None
@@ -246,12 +206,10 @@ class ListWorkspacesResponse(SdkResponse):
 
         if id is not None:
             self.id = id
-        if auth_type is not None:
-            self.auth_type = auth_type
+        if is_global is not None:
+            self.is_global = is_global
         if ad_domains is not None:
             self.ad_domains = ad_domains
-        if third_gateway_info is not None:
-            self.third_gateway_info = third_gateway_info
         if vpc_id is not None:
             self.vpc_id = vpc_id
         if vpc_name is not None:
@@ -264,12 +222,8 @@ class ListWorkspacesResponse(SdkResponse):
             self.dedicated_subnets = dedicated_subnets
         if dedicated_access_address is not None:
             self.dedicated_access_address = dedicated_access_address
-        if dedicated_access_address_ipv6 is not None:
-            self.dedicated_access_address_ipv6 = dedicated_access_address_ipv6
         if internet_access_address is not None:
             self.internet_access_address = internet_access_address
-        if internet_access_address_ipv6 is not None:
-            self.internet_access_address_ipv6 = internet_access_address_ipv6
         if internet_access_port is not None:
             self.internet_access_port = internet_access_port
         if status is not None:
@@ -302,10 +256,6 @@ class ListWorkspacesResponse(SdkResponse):
             self.enterprise_id = enterprise_id
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
-        if project_resource_type is not None:
-            self.project_resource_type = project_resource_type
-        if assist_auth_config_info is not None:
-            self.assist_auth_config_info = assist_auth_config_info
         if is_send_email is not None:
             self.is_send_email = is_send_email
         if authorized_collect_log is not None:
@@ -314,14 +264,8 @@ class ListWorkspacesResponse(SdkResponse):
             self.authorized_hda_upgrade = authorized_hda_upgrade
         if site_configs is not None:
             self.site_configs = site_configs
-        if is_multi_vpc is not None:
-            self.is_multi_vpc = is_multi_vpc
-        if is_config_nat_mapping is not None:
-            self.is_config_nat_mapping = is_config_nat_mapping
         if dc_vnc_ip is not None:
             self.dc_vnc_ip = dc_vnc_ip
-        if dc_vnc_vpcep_id is not None:
-            self.dc_vnc_vpcep_id = dc_vnc_vpcep_id
         if is_authorized_install_agent is not None:
             self.is_authorized_install_agent = is_authorized_install_agent
         if is_support_ipv6 is not None:
@@ -352,26 +296,26 @@ class ListWorkspacesResponse(SdkResponse):
         self._id = id
 
     @property
-    def auth_type(self):
-        r"""Gets the auth_type of this ListWorkspacesResponse.
+    def is_global(self):
+        r"""Gets the is_global of this ListWorkspacesResponse.
 
-        主认证方式。 - KERBEROS：KERBEROS。 - KERBEROS_THIRD_SSO：第三方登录认证。
+        开通服务是否是全局服务
 
-        :return: The auth_type of this ListWorkspacesResponse.
-        :rtype: str
+        :return: The is_global of this ListWorkspacesResponse.
+        :rtype: bool
         """
-        return self._auth_type
+        return self._is_global
 
-    @auth_type.setter
-    def auth_type(self, auth_type):
-        r"""Sets the auth_type of this ListWorkspacesResponse.
+    @is_global.setter
+    def is_global(self, is_global):
+        r"""Sets the is_global of this ListWorkspacesResponse.
 
-        主认证方式。 - KERBEROS：KERBEROS。 - KERBEROS_THIRD_SSO：第三方登录认证。
+        开通服务是否是全局服务
 
-        :param auth_type: The auth_type of this ListWorkspacesResponse.
-        :type auth_type: str
+        :param is_global: The is_global of this ListWorkspacesResponse.
+        :type is_global: bool
         """
-        self._auth_type = auth_type
+        self._is_global = is_global
 
     @property
     def ad_domains(self):
@@ -390,24 +334,6 @@ class ListWorkspacesResponse(SdkResponse):
         :type ad_domains: :class:`huaweicloudsdkworkspace.v2.AdInfo`
         """
         self._ad_domains = ad_domains
-
-    @property
-    def third_gateway_info(self):
-        r"""Gets the third_gateway_info of this ListWorkspacesResponse.
-
-        :return: The third_gateway_info of this ListWorkspacesResponse.
-        :rtype: :class:`huaweicloudsdkworkspace.v2.ThirdGatewayInfo`
-        """
-        return self._third_gateway_info
-
-    @third_gateway_info.setter
-    def third_gateway_info(self, third_gateway_info):
-        r"""Sets the third_gateway_info of this ListWorkspacesResponse.
-
-        :param third_gateway_info: The third_gateway_info of this ListWorkspacesResponse.
-        :type third_gateway_info: :class:`huaweicloudsdkworkspace.v2.ThirdGatewayInfo`
-        """
-        self._third_gateway_info = third_gateway_info
 
     @property
     def vpc_id(self):
@@ -542,28 +468,6 @@ class ListWorkspacesResponse(SdkResponse):
         self._dedicated_access_address = dedicated_access_address
 
     @property
-    def dedicated_access_address_ipv6(self):
-        r"""Gets the dedicated_access_address_ipv6 of this ListWorkspacesResponse.
-
-        专线接入ipv6地址，只有access_mode为“DEDICATED”或“BOTH”时才会返回该参数。
-
-        :return: The dedicated_access_address_ipv6 of this ListWorkspacesResponse.
-        :rtype: str
-        """
-        return self._dedicated_access_address_ipv6
-
-    @dedicated_access_address_ipv6.setter
-    def dedicated_access_address_ipv6(self, dedicated_access_address_ipv6):
-        r"""Sets the dedicated_access_address_ipv6 of this ListWorkspacesResponse.
-
-        专线接入ipv6地址，只有access_mode为“DEDICATED”或“BOTH”时才会返回该参数。
-
-        :param dedicated_access_address_ipv6: The dedicated_access_address_ipv6 of this ListWorkspacesResponse.
-        :type dedicated_access_address_ipv6: str
-        """
-        self._dedicated_access_address_ipv6 = dedicated_access_address_ipv6
-
-    @property
     def internet_access_address(self):
         r"""Gets the internet_access_address of this ListWorkspacesResponse.
 
@@ -584,28 +488,6 @@ class ListWorkspacesResponse(SdkResponse):
         :type internet_access_address: str
         """
         self._internet_access_address = internet_access_address
-
-    @property
-    def internet_access_address_ipv6(self):
-        r"""Gets the internet_access_address_ipv6 of this ListWorkspacesResponse.
-
-        互联网接入ipv6地址，只有access_mode为“INTERNET”或“BOTH”时才会返回该参数。
-
-        :return: The internet_access_address_ipv6 of this ListWorkspacesResponse.
-        :rtype: str
-        """
-        return self._internet_access_address_ipv6
-
-    @internet_access_address_ipv6.setter
-    def internet_access_address_ipv6(self, internet_access_address_ipv6):
-        r"""Sets the internet_access_address_ipv6 of this ListWorkspacesResponse.
-
-        互联网接入ipv6地址，只有access_mode为“INTERNET”或“BOTH”时才会返回该参数。
-
-        :param internet_access_address_ipv6: The internet_access_address_ipv6 of this ListWorkspacesResponse.
-        :type internet_access_address_ipv6: str
-        """
-        self._internet_access_address_ipv6 = internet_access_address_ipv6
 
     @property
     def internet_access_port(self):
@@ -952,46 +834,6 @@ class ListWorkspacesResponse(SdkResponse):
         self._enterprise_project_id = enterprise_project_id
 
     @property
-    def project_resource_type(self):
-        r"""Gets the project_resource_type of this ListWorkspacesResponse.
-
-        资源池类型。 - \"public\"： 私有资源池 - \"private\"： 公有资源池
-
-        :return: The project_resource_type of this ListWorkspacesResponse.
-        :rtype: str
-        """
-        return self._project_resource_type
-
-    @project_resource_type.setter
-    def project_resource_type(self, project_resource_type):
-        r"""Sets the project_resource_type of this ListWorkspacesResponse.
-
-        资源池类型。 - \"public\"： 私有资源池 - \"private\"： 公有资源池
-
-        :param project_resource_type: The project_resource_type of this ListWorkspacesResponse.
-        :type project_resource_type: str
-        """
-        self._project_resource_type = project_resource_type
-
-    @property
-    def assist_auth_config_info(self):
-        r"""Gets the assist_auth_config_info of this ListWorkspacesResponse.
-
-        :return: The assist_auth_config_info of this ListWorkspacesResponse.
-        :rtype: :class:`huaweicloudsdkworkspace.v2.AssistAuthConfigInfo`
-        """
-        return self._assist_auth_config_info
-
-    @assist_auth_config_info.setter
-    def assist_auth_config_info(self, assist_auth_config_info):
-        r"""Sets the assist_auth_config_info of this ListWorkspacesResponse.
-
-        :param assist_auth_config_info: The assist_auth_config_info of this ListWorkspacesResponse.
-        :type assist_auth_config_info: :class:`huaweicloudsdkworkspace.v2.AssistAuthConfigInfo`
-        """
-        self._assist_auth_config_info = assist_auth_config_info
-
-    @property
     def is_send_email(self):
         r"""Gets the is_send_email of this ListWorkspacesResponse.
 
@@ -1061,7 +903,7 @@ class ListWorkspacesResponse(SdkResponse):
     def site_configs(self):
         r"""Gets the site_configs of this ListWorkspacesResponse.
 
-        站点配置
+        站点配置。
 
         :return: The site_configs of this ListWorkspacesResponse.
         :rtype: list[:class:`huaweicloudsdkworkspace.v2.SiteConfigsResponse`]
@@ -1072,7 +914,7 @@ class ListWorkspacesResponse(SdkResponse):
     def site_configs(self, site_configs):
         r"""Sets the site_configs of this ListWorkspacesResponse.
 
-        站点配置
+        站点配置。
 
         :param site_configs: The site_configs of this ListWorkspacesResponse.
         :type site_configs: list[:class:`huaweicloudsdkworkspace.v2.SiteConfigsResponse`]
@@ -1080,54 +922,10 @@ class ListWorkspacesResponse(SdkResponse):
         self._site_configs = site_configs
 
     @property
-    def is_multi_vpc(self):
-        r"""Gets the is_multi_vpc of this ListWorkspacesResponse.
-
-        是否支持多VPC。
-
-        :return: The is_multi_vpc of this ListWorkspacesResponse.
-        :rtype: bool
-        """
-        return self._is_multi_vpc
-
-    @is_multi_vpc.setter
-    def is_multi_vpc(self, is_multi_vpc):
-        r"""Sets the is_multi_vpc of this ListWorkspacesResponse.
-
-        是否支持多VPC。
-
-        :param is_multi_vpc: The is_multi_vpc of this ListWorkspacesResponse.
-        :type is_multi_vpc: bool
-        """
-        self._is_multi_vpc = is_multi_vpc
-
-    @property
-    def is_config_nat_mapping(self):
-        r"""Gets the is_config_nat_mapping of this ListWorkspacesResponse.
-
-        是否支持配置nat映射。
-
-        :return: The is_config_nat_mapping of this ListWorkspacesResponse.
-        :rtype: bool
-        """
-        return self._is_config_nat_mapping
-
-    @is_config_nat_mapping.setter
-    def is_config_nat_mapping(self, is_config_nat_mapping):
-        r"""Sets the is_config_nat_mapping of this ListWorkspacesResponse.
-
-        是否支持配置nat映射。
-
-        :param is_config_nat_mapping: The is_config_nat_mapping of this ListWorkspacesResponse.
-        :type is_config_nat_mapping: bool
-        """
-        self._is_config_nat_mapping = is_config_nat_mapping
-
-    @property
     def dc_vnc_ip(self):
         r"""Gets the dc_vnc_ip of this ListWorkspacesResponse.
 
-        自定义的专线VNC地址
+        自定义的专线VNC地址。
 
         :return: The dc_vnc_ip of this ListWorkspacesResponse.
         :rtype: str
@@ -1138,34 +936,12 @@ class ListWorkspacesResponse(SdkResponse):
     def dc_vnc_ip(self, dc_vnc_ip):
         r"""Sets the dc_vnc_ip of this ListWorkspacesResponse.
 
-        自定义的专线VNC地址
+        自定义的专线VNC地址。
 
         :param dc_vnc_ip: The dc_vnc_ip of this ListWorkspacesResponse.
         :type dc_vnc_ip: str
         """
         self._dc_vnc_ip = dc_vnc_ip
-
-    @property
-    def dc_vnc_vpcep_id(self):
-        r"""Gets the dc_vnc_vpcep_id of this ListWorkspacesResponse.
-
-        专线VNC VPC终端节点ID
-
-        :return: The dc_vnc_vpcep_id of this ListWorkspacesResponse.
-        :rtype: str
-        """
-        return self._dc_vnc_vpcep_id
-
-    @dc_vnc_vpcep_id.setter
-    def dc_vnc_vpcep_id(self, dc_vnc_vpcep_id):
-        r"""Sets the dc_vnc_vpcep_id of this ListWorkspacesResponse.
-
-        专线VNC VPC终端节点ID
-
-        :param dc_vnc_vpcep_id: The dc_vnc_vpcep_id of this ListWorkspacesResponse.
-        :type dc_vnc_vpcep_id: str
-        """
-        self._dc_vnc_vpcep_id = dc_vnc_vpcep_id
 
     @property
     def is_authorized_install_agent(self):

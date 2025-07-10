@@ -37,15 +37,15 @@ class ListAdOuUsersRequest:
 
         The model defined in huaweicloud sdk
 
-        :param ou_dn: OU的域名地址
+        :param ou_dn: OU的域名地址。
         :type ou_dn: str
-        :param user_name: 用户名，支持模糊查询
+        :param user_name: 用户名，支持模糊查询。
         :type user_name: str
-        :param has_existed: 用户是否已存在
+        :param has_existed: 用户是否已存在。
         :type has_existed: bool
-        :param limit: 用于分页查询，返回桌面数量限制。如果不指定，则返回所有符合条件的桌面
+        :param limit: 用于分页查询，返回桌面数量限制。如果不指定，则返回所有符合条件的桌面。
         :type limit: int
-        :param offset: 用于分页查询，查询的起始记录序号，从0开始
+        :param offset: 用于分页查询，查询的起始记录序号，从0开始。
         :type offset: int
         """
         
@@ -72,7 +72,7 @@ class ListAdOuUsersRequest:
     def ou_dn(self):
         r"""Gets the ou_dn of this ListAdOuUsersRequest.
 
-        OU的域名地址
+        OU的域名地址。
 
         :return: The ou_dn of this ListAdOuUsersRequest.
         :rtype: str
@@ -83,7 +83,7 @@ class ListAdOuUsersRequest:
     def ou_dn(self, ou_dn):
         r"""Sets the ou_dn of this ListAdOuUsersRequest.
 
-        OU的域名地址
+        OU的域名地址。
 
         :param ou_dn: The ou_dn of this ListAdOuUsersRequest.
         :type ou_dn: str
@@ -94,7 +94,7 @@ class ListAdOuUsersRequest:
     def user_name(self):
         r"""Gets the user_name of this ListAdOuUsersRequest.
 
-        用户名，支持模糊查询
+        用户名，支持模糊查询。
 
         :return: The user_name of this ListAdOuUsersRequest.
         :rtype: str
@@ -105,7 +105,7 @@ class ListAdOuUsersRequest:
     def user_name(self, user_name):
         r"""Sets the user_name of this ListAdOuUsersRequest.
 
-        用户名，支持模糊查询
+        用户名，支持模糊查询。
 
         :param user_name: The user_name of this ListAdOuUsersRequest.
         :type user_name: str
@@ -116,7 +116,7 @@ class ListAdOuUsersRequest:
     def has_existed(self):
         r"""Gets the has_existed of this ListAdOuUsersRequest.
 
-        用户是否已存在
+        用户是否已存在。
 
         :return: The has_existed of this ListAdOuUsersRequest.
         :rtype: bool
@@ -127,7 +127,7 @@ class ListAdOuUsersRequest:
     def has_existed(self, has_existed):
         r"""Sets the has_existed of this ListAdOuUsersRequest.
 
-        用户是否已存在
+        用户是否已存在。
 
         :param has_existed: The has_existed of this ListAdOuUsersRequest.
         :type has_existed: bool
@@ -138,7 +138,7 @@ class ListAdOuUsersRequest:
     def limit(self):
         r"""Gets the limit of this ListAdOuUsersRequest.
 
-        用于分页查询，返回桌面数量限制。如果不指定，则返回所有符合条件的桌面
+        用于分页查询，返回桌面数量限制。如果不指定，则返回所有符合条件的桌面。
 
         :return: The limit of this ListAdOuUsersRequest.
         :rtype: int
@@ -149,7 +149,7 @@ class ListAdOuUsersRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListAdOuUsersRequest.
 
-        用于分页查询，返回桌面数量限制。如果不指定，则返回所有符合条件的桌面
+        用于分页查询，返回桌面数量限制。如果不指定，则返回所有符合条件的桌面。
 
         :param limit: The limit of this ListAdOuUsersRequest.
         :type limit: int
@@ -160,7 +160,7 @@ class ListAdOuUsersRequest:
     def offset(self):
         r"""Gets the offset of this ListAdOuUsersRequest.
 
-        用于分页查询，查询的起始记录序号，从0开始
+        用于分页查询，查询的起始记录序号，从0开始。
 
         :return: The offset of this ListAdOuUsersRequest.
         :rtype: int
@@ -171,7 +171,7 @@ class ListAdOuUsersRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListAdOuUsersRequest.
 
-        用于分页查询，查询的起始记录序号，从0开始
+        用于分页查询，查询的起始记录序号，从0开始。
 
         :param offset: The offset of this ListAdOuUsersRequest.
         :type offset: int

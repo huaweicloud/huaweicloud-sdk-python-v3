@@ -17,58 +17,29 @@ class AddDesktopsVolumesReq:
     sensitive_list = []
 
     openapi_types = {
-        'desktop_type': 'str',
         'desktop_volumes': 'list[AddDesktopVolumesReq]'
     }
 
     attribute_map = {
-        'desktop_type': 'desktop_type',
         'desktop_volumes': 'desktop_volumes'
     }
 
-    def __init__(self, desktop_type=None, desktop_volumes=None):
+    def __init__(self, desktop_volumes=None):
         r"""AddDesktopsVolumesReq
 
         The model defined in huaweicloud sdk
 
-        :param desktop_type: 桌面类别  - DESKTOP：普通桌面。 - RENDER_DESKTOP：渲染桌面。
-        :type desktop_type: str
         :param desktop_volumes: 新增磁盘参数。
         :type desktop_volumes: list[:class:`huaweicloudsdkworkspace.v2.AddDesktopVolumesReq`]
         """
         
         
 
-        self._desktop_type = None
         self._desktop_volumes = None
         self.discriminator = None
 
-        if desktop_type is not None:
-            self.desktop_type = desktop_type
         if desktop_volumes is not None:
             self.desktop_volumes = desktop_volumes
-
-    @property
-    def desktop_type(self):
-        r"""Gets the desktop_type of this AddDesktopsVolumesReq.
-
-        桌面类别  - DESKTOP：普通桌面。 - RENDER_DESKTOP：渲染桌面。
-
-        :return: The desktop_type of this AddDesktopsVolumesReq.
-        :rtype: str
-        """
-        return self._desktop_type
-
-    @desktop_type.setter
-    def desktop_type(self, desktop_type):
-        r"""Sets the desktop_type of this AddDesktopsVolumesReq.
-
-        桌面类别  - DESKTOP：普通桌面。 - RENDER_DESKTOP：渲染桌面。
-
-        :param desktop_type: The desktop_type of this AddDesktopsVolumesReq.
-        :type desktop_type: str
-        """
-        self._desktop_type = desktop_type
 
     @property
     def desktop_volumes(self):

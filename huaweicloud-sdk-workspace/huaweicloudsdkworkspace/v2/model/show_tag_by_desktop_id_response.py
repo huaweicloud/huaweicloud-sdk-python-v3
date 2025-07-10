@@ -30,7 +30,7 @@ class ShowTagByDesktopIdResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param tags: 标签
+        :param tags: 标签。
         :type tags: list[:class:`huaweicloudsdkworkspace.v2.Tag`]
         """
         
@@ -46,7 +46,7 @@ class ShowTagByDesktopIdResponse(SdkResponse):
     def tags(self):
         r"""Gets the tags of this ShowTagByDesktopIdResponse.
 
-        标签
+        标签。
 
         :return: The tags of this ShowTagByDesktopIdResponse.
         :rtype: list[:class:`huaweicloudsdkworkspace.v2.Tag`]
@@ -57,7 +57,7 @@ class ShowTagByDesktopIdResponse(SdkResponse):
     def tags(self, tags):
         r"""Sets the tags of this ShowTagByDesktopIdResponse.
 
-        标签
+        标签。
 
         :param tags: The tags of this ShowTagByDesktopIdResponse.
         :type tags: list[:class:`huaweicloudsdkworkspace.v2.Tag`]

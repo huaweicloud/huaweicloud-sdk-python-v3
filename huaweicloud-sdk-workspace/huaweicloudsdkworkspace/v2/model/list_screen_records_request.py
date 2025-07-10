@@ -57,15 +57,15 @@ class ListScreenRecordsRequest:
         :type username: str
         :param status: 录屏状态。 - RECORDING：录制中。 - REC_COMPLETED：录制完成。 - UPLOADING：上传中。 - UPLOAD_COMPLETED：上传完成。
         :type status: str
-        :param type: 录屏类型。 - FULL：全程录屏。 - INTERVAL：间隔录屏。 - USER_OPERATION：用户操作录屏。 - SESSION：监听会话生命周期录屏。
+        :param type: 录屏类型。 - FULL：全程录屏。 - INTERVAL：间隔录屏。 - OPERATION：用户操作录屏。 - SESSION：监听会话生命周期录屏。
         :type type: str
         :param start_time: 开始时间，格式为yyyy-MM-dd HH:mm:ss（UTC时间，不传查默认最近15天）。
         :type start_time: str
         :param end_time: 结束时间，格式为yyyy-MM-dd HH:mm:ss（UTC时间，不传查默认最近15天）。
         :type end_time: str
-        :param sort_field: 用于排序，表示按照哪个字段排序。取值为录屏属性start_time、szie字段，默认为start_time。
+        :param sort_field: 用于排序，表示按照哪个字段排序。取值为录屏属性start_time字段。
         :type sort_field: str
-        :param sort_type: 用于排序，表示升序还是降序，取值为asc和desc。与sort_field一起组合使用，默认为降序desc。
+        :param sort_type: 用于排序，表示升序还是降序，取值为asc和desc。与sort_field一起组合使用。
         :type sort_type: str
         """
         
@@ -218,7 +218,7 @@ class ListScreenRecordsRequest:
     def type(self):
         r"""Gets the type of this ListScreenRecordsRequest.
 
-        录屏类型。 - FULL：全程录屏。 - INTERVAL：间隔录屏。 - USER_OPERATION：用户操作录屏。 - SESSION：监听会话生命周期录屏。
+        录屏类型。 - FULL：全程录屏。 - INTERVAL：间隔录屏。 - OPERATION：用户操作录屏。 - SESSION：监听会话生命周期录屏。
 
         :return: The type of this ListScreenRecordsRequest.
         :rtype: str
@@ -229,7 +229,7 @@ class ListScreenRecordsRequest:
     def type(self, type):
         r"""Sets the type of this ListScreenRecordsRequest.
 
-        录屏类型。 - FULL：全程录屏。 - INTERVAL：间隔录屏。 - USER_OPERATION：用户操作录屏。 - SESSION：监听会话生命周期录屏。
+        录屏类型。 - FULL：全程录屏。 - INTERVAL：间隔录屏。 - OPERATION：用户操作录屏。 - SESSION：监听会话生命周期录屏。
 
         :param type: The type of this ListScreenRecordsRequest.
         :type type: str
@@ -284,7 +284,7 @@ class ListScreenRecordsRequest:
     def sort_field(self):
         r"""Gets the sort_field of this ListScreenRecordsRequest.
 
-        用于排序，表示按照哪个字段排序。取值为录屏属性start_time、szie字段，默认为start_time。
+        用于排序，表示按照哪个字段排序。取值为录屏属性start_time字段。
 
         :return: The sort_field of this ListScreenRecordsRequest.
         :rtype: str
@@ -295,7 +295,7 @@ class ListScreenRecordsRequest:
     def sort_field(self, sort_field):
         r"""Sets the sort_field of this ListScreenRecordsRequest.
 
-        用于排序，表示按照哪个字段排序。取值为录屏属性start_time、szie字段，默认为start_time。
+        用于排序，表示按照哪个字段排序。取值为录屏属性start_time字段。
 
         :param sort_field: The sort_field of this ListScreenRecordsRequest.
         :type sort_field: str
@@ -306,7 +306,7 @@ class ListScreenRecordsRequest:
     def sort_type(self):
         r"""Gets the sort_type of this ListScreenRecordsRequest.
 
-        用于排序，表示升序还是降序，取值为asc和desc。与sort_field一起组合使用，默认为降序desc。
+        用于排序，表示升序还是降序，取值为asc和desc。与sort_field一起组合使用。
 
         :return: The sort_type of this ListScreenRecordsRequest.
         :rtype: str
@@ -317,7 +317,7 @@ class ListScreenRecordsRequest:
     def sort_type(self, sort_type):
         r"""Sets the sort_type of this ListScreenRecordsRequest.
 
-        用于排序，表示升序还是降序，取值为asc和desc。与sort_field一起组合使用，默认为降序desc。
+        用于排序，表示升序还是降序，取值为asc和desc。与sort_field一起组合使用。
 
         :param sort_type: The sort_type of this ListScreenRecordsRequest.
         :type sort_type: str

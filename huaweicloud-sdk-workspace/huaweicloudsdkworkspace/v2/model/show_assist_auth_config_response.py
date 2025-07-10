@@ -18,43 +18,29 @@ class ShowAssistAuthConfigResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'otp_config_info': 'OtpConfigInfo',
-        'radius_config_info': 'RadiusConfigInfo',
-        'radius_gateway_config_info': 'RadiusGatewayConfigInfo'
+        'otp_config_info': 'OtpConfigInfo'
     }
 
     attribute_map = {
-        'otp_config_info': 'otp_config_info',
-        'radius_config_info': 'radius_config_info',
-        'radius_gateway_config_info': 'radius_gateway_config_info'
+        'otp_config_info': 'otp_config_info'
     }
 
-    def __init__(self, otp_config_info=None, radius_config_info=None, radius_gateway_config_info=None):
+    def __init__(self, otp_config_info=None):
         r"""ShowAssistAuthConfigResponse
 
         The model defined in huaweicloud sdk
 
         :param otp_config_info: 
         :type otp_config_info: :class:`huaweicloudsdkworkspace.v2.OtpConfigInfo`
-        :param radius_config_info: 
-        :type radius_config_info: :class:`huaweicloudsdkworkspace.v2.RadiusConfigInfo`
-        :param radius_gateway_config_info: 
-        :type radius_gateway_config_info: :class:`huaweicloudsdkworkspace.v2.RadiusGatewayConfigInfo`
         """
         
         super(ShowAssistAuthConfigResponse, self).__init__()
 
         self._otp_config_info = None
-        self._radius_config_info = None
-        self._radius_gateway_config_info = None
         self.discriminator = None
 
         if otp_config_info is not None:
             self.otp_config_info = otp_config_info
-        if radius_config_info is not None:
-            self.radius_config_info = radius_config_info
-        if radius_gateway_config_info is not None:
-            self.radius_gateway_config_info = radius_gateway_config_info
 
     @property
     def otp_config_info(self):
@@ -73,42 +59,6 @@ class ShowAssistAuthConfigResponse(SdkResponse):
         :type otp_config_info: :class:`huaweicloudsdkworkspace.v2.OtpConfigInfo`
         """
         self._otp_config_info = otp_config_info
-
-    @property
-    def radius_config_info(self):
-        r"""Gets the radius_config_info of this ShowAssistAuthConfigResponse.
-
-        :return: The radius_config_info of this ShowAssistAuthConfigResponse.
-        :rtype: :class:`huaweicloudsdkworkspace.v2.RadiusConfigInfo`
-        """
-        return self._radius_config_info
-
-    @radius_config_info.setter
-    def radius_config_info(self, radius_config_info):
-        r"""Sets the radius_config_info of this ShowAssistAuthConfigResponse.
-
-        :param radius_config_info: The radius_config_info of this ShowAssistAuthConfigResponse.
-        :type radius_config_info: :class:`huaweicloudsdkworkspace.v2.RadiusConfigInfo`
-        """
-        self._radius_config_info = radius_config_info
-
-    @property
-    def radius_gateway_config_info(self):
-        r"""Gets the radius_gateway_config_info of this ShowAssistAuthConfigResponse.
-
-        :return: The radius_gateway_config_info of this ShowAssistAuthConfigResponse.
-        :rtype: :class:`huaweicloudsdkworkspace.v2.RadiusGatewayConfigInfo`
-        """
-        return self._radius_gateway_config_info
-
-    @radius_gateway_config_info.setter
-    def radius_gateway_config_info(self, radius_gateway_config_info):
-        r"""Sets the radius_gateway_config_info of this ShowAssistAuthConfigResponse.
-
-        :param radius_gateway_config_info: The radius_gateway_config_info of this ShowAssistAuthConfigResponse.
-        :type radius_gateway_config_info: :class:`huaweicloudsdkworkspace.v2.RadiusGatewayConfigInfo`
-        """
-        self._radius_gateway_config_info = radius_gateway_config_info
 
     def to_dict(self):
         """Returns the model properties as a dict"""

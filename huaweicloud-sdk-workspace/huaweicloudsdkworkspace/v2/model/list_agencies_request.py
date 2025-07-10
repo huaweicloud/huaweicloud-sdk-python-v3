@@ -29,7 +29,7 @@ class ListAgenciesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param scene: 委托场景。 - WORKSPACE：云桌面。 - CLOUD_GAME：云游戏。 - SCREEN_RECORD：录屏审计。
+        :param scene: 委托场景。 - WORKSPACE：云桌面。 - CLOUD_GAME：云游戏。 - CLOUD_STORAGE 云存储。 - SCREEN_RECORD：录屏审计。
         :type scene: str
         """
         
@@ -45,7 +45,7 @@ class ListAgenciesRequest:
     def scene(self):
         r"""Gets the scene of this ListAgenciesRequest.
 
-        委托场景。 - WORKSPACE：云桌面。 - CLOUD_GAME：云游戏。 - SCREEN_RECORD：录屏审计。
+        委托场景。 - WORKSPACE：云桌面。 - CLOUD_GAME：云游戏。 - CLOUD_STORAGE 云存储。 - SCREEN_RECORD：录屏审计。
 
         :return: The scene of this ListAgenciesRequest.
         :rtype: str
@@ -56,7 +56,7 @@ class ListAgenciesRequest:
     def scene(self, scene):
         r"""Sets the scene of this ListAgenciesRequest.
 
-        委托场景。 - WORKSPACE：云桌面。 - CLOUD_GAME：云游戏。 - SCREEN_RECORD：录屏审计。
+        委托场景。 - WORKSPACE：云桌面。 - CLOUD_GAME：云游戏。 - CLOUD_STORAGE 云存储。 - SCREEN_RECORD：录屏审计。
 
         :param scene: The scene of this ListAgenciesRequest.
         :type scene: str

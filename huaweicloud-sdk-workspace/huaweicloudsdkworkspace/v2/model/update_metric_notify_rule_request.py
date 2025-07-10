@@ -31,7 +31,7 @@ class UpdateMetricNotifyRuleRequest:
 
         The model defined in huaweicloud sdk
 
-        :param rule_id: 通知规则ID
+        :param rule_id: 通知规则ID。
         :type rule_id: str
         :param body: Body of the UpdateMetricNotifyRuleRequest
         :type body: :class:`huaweicloudsdkworkspace.v2.UpdateMetricNotifyRuleReq`
@@ -51,7 +51,7 @@ class UpdateMetricNotifyRuleRequest:
     def rule_id(self):
         r"""Gets the rule_id of this UpdateMetricNotifyRuleRequest.
 
-        通知规则ID
+        通知规则ID。
 
         :return: The rule_id of this UpdateMetricNotifyRuleRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class UpdateMetricNotifyRuleRequest:
     def rule_id(self, rule_id):
         r"""Sets the rule_id of this UpdateMetricNotifyRuleRequest.
 
-        通知规则ID
+        通知规则ID。
 
         :param rule_id: The rule_id of this UpdateMetricNotifyRuleRequest.
         :type rule_id: str

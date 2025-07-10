@@ -61,11 +61,11 @@ class UpdateDesktopPoolAttributesReq:
         :type enable_autoscale: bool
         :param autoscale_policy: 
         :type autoscale_policy: :class:`huaweicloudsdkworkspace.v2.AutoscalePolicy`
-        :param in_maintenance_mode: 是否处于管理员维护模式
+        :param in_maintenance_mode: 是否处于管理员维护模式。
         :type in_maintenance_mode: bool
         :param desktop_name_policy_id: 策略id，用于指定生成桌面名称策略。
         :type desktop_name_policy_id: str
-        :param availability_zone: 桌面池的可用区。
+        :param availability_zone: 桌面池的可用区。桌面池的可用区是边缘可用区时，不支持修改。
         :type availability_zone: str
         """
         
@@ -258,7 +258,7 @@ class UpdateDesktopPoolAttributesReq:
     def in_maintenance_mode(self):
         r"""Gets the in_maintenance_mode of this UpdateDesktopPoolAttributesReq.
 
-        是否处于管理员维护模式
+        是否处于管理员维护模式。
 
         :return: The in_maintenance_mode of this UpdateDesktopPoolAttributesReq.
         :rtype: bool
@@ -269,7 +269,7 @@ class UpdateDesktopPoolAttributesReq:
     def in_maintenance_mode(self, in_maintenance_mode):
         r"""Sets the in_maintenance_mode of this UpdateDesktopPoolAttributesReq.
 
-        是否处于管理员维护模式
+        是否处于管理员维护模式。
 
         :param in_maintenance_mode: The in_maintenance_mode of this UpdateDesktopPoolAttributesReq.
         :type in_maintenance_mode: bool
@@ -302,7 +302,7 @@ class UpdateDesktopPoolAttributesReq:
     def availability_zone(self):
         r"""Gets the availability_zone of this UpdateDesktopPoolAttributesReq.
 
-        桌面池的可用区。
+        桌面池的可用区。桌面池的可用区是边缘可用区时，不支持修改。
 
         :return: The availability_zone of this UpdateDesktopPoolAttributesReq.
         :rtype: str
@@ -313,7 +313,7 @@ class UpdateDesktopPoolAttributesReq:
     def availability_zone(self, availability_zone):
         r"""Sets the availability_zone of this UpdateDesktopPoolAttributesReq.
 
-        桌面池的可用区。
+        桌面池的可用区。桌面池的可用区是边缘可用区时，不支持修改。
 
         :param availability_zone: The availability_zone of this UpdateDesktopPoolAttributesReq.
         :type availability_zone: str

@@ -23,8 +23,6 @@ class Desktop:
         'user_group': 'str',
         'computer_name': 'str',
         'os_host_name': 'str',
-        'nics': 'list[Nic]',
-        'ou_name': 'str',
         'desktop_name_prefix': 'str'
     }
 
@@ -35,12 +33,10 @@ class Desktop:
         'user_group': 'user_group',
         'computer_name': 'computer_name',
         'os_host_name': 'os_host_name',
-        'nics': 'nics',
-        'ou_name': 'ou_name',
         'desktop_name_prefix': 'desktop_name_prefix'
     }
 
-    def __init__(self, user_name=None, user_email=None, user_phone=None, user_group=None, computer_name=None, os_host_name=None, nics=None, ou_name=None, desktop_name_prefix=None):
+    def __init__(self, user_name=None, user_email=None, user_phone=None, user_group=None, computer_name=None, os_host_name=None, desktop_name_prefix=None):
         r"""Desktop
 
         The model defined in huaweicloud sdk
@@ -57,10 +53,6 @@ class Desktop:
         :type computer_name: str
         :param os_host_name: 系统计算机名。
         :type os_host_name: str
-        :param nics: 桌面对应的网卡信息，如果不指定则使用默认网卡。
-        :type nics: list[:class:`huaweicloudsdkworkspace.v2.Nic`]
-        :param ou_name: 此参数仅在开通云桌面服务的domain_type为LOCAL_AD时有效。只允许输入汉字，半角字母，数字，空格，以及-_/$!@&amp;*?.范围内的特殊字符，字符范围是1～255，OU名称不能包含分隔符(/),多级OU使用/隔开，最多支持五级，/前后不能有空格，例如3级的OU格式:ab/cd/ef。
-        :type ou_name: str
         :param desktop_name_prefix: 桌面名称前缀，不指定\&quot;computer_name\&quot;时生效。
         :type desktop_name_prefix: str
         """
@@ -73,8 +65,6 @@ class Desktop:
         self._user_group = None
         self._computer_name = None
         self._os_host_name = None
-        self._nics = None
-        self._ou_name = None
         self._desktop_name_prefix = None
         self.discriminator = None
 
@@ -89,10 +79,6 @@ class Desktop:
             self.computer_name = computer_name
         if os_host_name is not None:
             self.os_host_name = os_host_name
-        if nics is not None:
-            self.nics = nics
-        if ou_name is not None:
-            self.ou_name = ou_name
         if desktop_name_prefix is not None:
             self.desktop_name_prefix = desktop_name_prefix
 
@@ -227,50 +213,6 @@ class Desktop:
         :type os_host_name: str
         """
         self._os_host_name = os_host_name
-
-    @property
-    def nics(self):
-        r"""Gets the nics of this Desktop.
-
-        桌面对应的网卡信息，如果不指定则使用默认网卡。
-
-        :return: The nics of this Desktop.
-        :rtype: list[:class:`huaweicloudsdkworkspace.v2.Nic`]
-        """
-        return self._nics
-
-    @nics.setter
-    def nics(self, nics):
-        r"""Sets the nics of this Desktop.
-
-        桌面对应的网卡信息，如果不指定则使用默认网卡。
-
-        :param nics: The nics of this Desktop.
-        :type nics: list[:class:`huaweicloudsdkworkspace.v2.Nic`]
-        """
-        self._nics = nics
-
-    @property
-    def ou_name(self):
-        r"""Gets the ou_name of this Desktop.
-
-        此参数仅在开通云桌面服务的domain_type为LOCAL_AD时有效。只允许输入汉字，半角字母，数字，空格，以及-_/$!@&*?.范围内的特殊字符，字符范围是1～255，OU名称不能包含分隔符(/),多级OU使用/隔开，最多支持五级，/前后不能有空格，例如3级的OU格式:ab/cd/ef。
-
-        :return: The ou_name of this Desktop.
-        :rtype: str
-        """
-        return self._ou_name
-
-    @ou_name.setter
-    def ou_name(self, ou_name):
-        r"""Sets the ou_name of this Desktop.
-
-        此参数仅在开通云桌面服务的domain_type为LOCAL_AD时有效。只允许输入汉字，半角字母，数字，空格，以及-_/$!@&*?.范围内的特殊字符，字符范围是1～255，OU名称不能包含分隔符(/),多级OU使用/隔开，最多支持五级，/前后不能有空格，例如3级的OU格式:ab/cd/ef。
-
-        :param ou_name: The ou_name of this Desktop.
-        :type ou_name: str
-        """
-        self._ou_name = ou_name
 
     @property
     def desktop_name_prefix(self):

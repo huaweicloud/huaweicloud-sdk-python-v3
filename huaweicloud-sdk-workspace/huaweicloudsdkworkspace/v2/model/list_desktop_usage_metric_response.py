@@ -32,9 +32,9 @@ class ListDesktopUsageMetricResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param count: 总数
+        :param count: 总数。
         :type count: int
-        :param items: 桌面统计指标
+        :param items: 桌面统计指标。
         :type items: list[:class:`huaweicloudsdkworkspace.v2.DesktopMetric`]
         """
         
@@ -53,7 +53,7 @@ class ListDesktopUsageMetricResponse(SdkResponse):
     def count(self):
         r"""Gets the count of this ListDesktopUsageMetricResponse.
 
-        总数
+        总数。
 
         :return: The count of this ListDesktopUsageMetricResponse.
         :rtype: int
@@ -64,7 +64,7 @@ class ListDesktopUsageMetricResponse(SdkResponse):
     def count(self, count):
         r"""Sets the count of this ListDesktopUsageMetricResponse.
 
-        总数
+        总数。
 
         :param count: The count of this ListDesktopUsageMetricResponse.
         :type count: int
@@ -75,7 +75,7 @@ class ListDesktopUsageMetricResponse(SdkResponse):
     def items(self):
         r"""Gets the items of this ListDesktopUsageMetricResponse.
 
-        桌面统计指标
+        桌面统计指标。
 
         :return: The items of this ListDesktopUsageMetricResponse.
         :rtype: list[:class:`huaweicloudsdkworkspace.v2.DesktopMetric`]
@@ -86,7 +86,7 @@ class ListDesktopUsageMetricResponse(SdkResponse):
     def items(self, items):
         r"""Sets the items of this ListDesktopUsageMetricResponse.
 
-        桌面统计指标
+        桌面统计指标。
 
         :param items: The items of this ListDesktopUsageMetricResponse.
         :type items: list[:class:`huaweicloudsdkworkspace.v2.DesktopMetric`]

@@ -39,12 +39,8 @@ class Product:
         'volume_product_type': 'str',
         'domain_ids': 'list[str]',
         'status': 'str',
-        'sub_product_list': 'list[str]',
         'package_type': 'str',
-        'series_type': 'str',
         'name': 'dict(str, str)',
-        'default_desktop_num': 'int',
-        'max_apply_desktop_num': 'int',
         'share_space_size': 'int'
     }
 
@@ -71,16 +67,12 @@ class Product:
         'volume_product_type': 'volume_product_type',
         'domain_ids': 'domain_ids',
         'status': 'status',
-        'sub_product_list': 'sub_product_list',
         'package_type': 'package_type',
-        'series_type': 'series_type',
         'name': 'name',
-        'default_desktop_num': 'default_desktop_num',
-        'max_apply_desktop_num': 'max_apply_desktop_num',
         'share_space_size': 'share_space_size'
     }
 
-    def __init__(self, product_id=None, flavor_id=None, type=None, architecture=None, cpu=None, cpu_desc=None, memory=None, is_gpu=None, system_disk_type=None, system_disk_size=None, data_disk_size=None, gpu_desc=None, bill_switch=None, descriptions=None, product_desc=None, charge_mode=None, contain_data_disk=None, resource_type=None, cloud_service_type=None, volume_product_type=None, domain_ids=None, status=None, sub_product_list=None, package_type=None, series_type=None, name=None, default_desktop_num=None, max_apply_desktop_num=None, share_space_size=None):
+    def __init__(self, product_id=None, flavor_id=None, type=None, architecture=None, cpu=None, cpu_desc=None, memory=None, is_gpu=None, system_disk_type=None, system_disk_size=None, data_disk_size=None, gpu_desc=None, bill_switch=None, descriptions=None, product_desc=None, charge_mode=None, contain_data_disk=None, resource_type=None, cloud_service_type=None, volume_product_type=None, domain_ids=None, status=None, package_type=None, name=None, share_space_size=None):
         r"""Product
 
         The model defined in huaweicloud sdk
@@ -129,18 +121,10 @@ class Product:
         :type domain_ids: list[str]
         :param status: 产品状态，normal：正常、sellout：售空、abandon：下线。
         :type status: str
-        :param sub_product_list: 专属主机的子产品。
-        :type sub_product_list: list[str]
         :param package_type: 套餐类型。 - ultimate：尊享版 - enterprise：企业版 - general: 通用办公版 - workstation: 云工作站 - dedicated: 专属办公版 - solver: 解算版 - agile: 敏捷办公版
         :type package_type: str
-        :param series_type: 套餐下的系列类型。 - 云工作站下分为云工作站D5、云工作站D7 - 专属办公版下分为鲲鹏专属、通用专属、G6a、G6r、G7a
-        :type series_type: str
         :param name: 产品名称&lt;语言，各语言对应的产品名&gt;。
         :type name: dict(str, str)
-        :param default_desktop_num: 专享主机套餐默认的桌面数。
-        :type default_desktop_num: int
-        :param max_apply_desktop_num: 专享主机支持创建的最大桌面数。
-        :type max_apply_desktop_num: int
         :param share_space_size: 协同方数。该套餐支持的最大协同人数。
         :type share_space_size: int
         """
@@ -169,12 +153,8 @@ class Product:
         self._volume_product_type = None
         self._domain_ids = None
         self._status = None
-        self._sub_product_list = None
         self._package_type = None
-        self._series_type = None
         self._name = None
-        self._default_desktop_num = None
-        self._max_apply_desktop_num = None
         self._share_space_size = None
         self.discriminator = None
 
@@ -222,18 +202,10 @@ class Product:
             self.domain_ids = domain_ids
         if status is not None:
             self.status = status
-        if sub_product_list is not None:
-            self.sub_product_list = sub_product_list
         if package_type is not None:
             self.package_type = package_type
-        if series_type is not None:
-            self.series_type = series_type
         if name is not None:
             self.name = name
-        if default_desktop_num is not None:
-            self.default_desktop_num = default_desktop_num
-        if max_apply_desktop_num is not None:
-            self.max_apply_desktop_num = max_apply_desktop_num
         if share_space_size is not None:
             self.share_space_size = share_space_size
 
@@ -722,28 +694,6 @@ class Product:
         self._status = status
 
     @property
-    def sub_product_list(self):
-        r"""Gets the sub_product_list of this Product.
-
-        专属主机的子产品。
-
-        :return: The sub_product_list of this Product.
-        :rtype: list[str]
-        """
-        return self._sub_product_list
-
-    @sub_product_list.setter
-    def sub_product_list(self, sub_product_list):
-        r"""Sets the sub_product_list of this Product.
-
-        专属主机的子产品。
-
-        :param sub_product_list: The sub_product_list of this Product.
-        :type sub_product_list: list[str]
-        """
-        self._sub_product_list = sub_product_list
-
-    @property
     def package_type(self):
         r"""Gets the package_type of this Product.
 
@@ -766,28 +716,6 @@ class Product:
         self._package_type = package_type
 
     @property
-    def series_type(self):
-        r"""Gets the series_type of this Product.
-
-        套餐下的系列类型。 - 云工作站下分为云工作站D5、云工作站D7 - 专属办公版下分为鲲鹏专属、通用专属、G6a、G6r、G7a
-
-        :return: The series_type of this Product.
-        :rtype: str
-        """
-        return self._series_type
-
-    @series_type.setter
-    def series_type(self, series_type):
-        r"""Sets the series_type of this Product.
-
-        套餐下的系列类型。 - 云工作站下分为云工作站D5、云工作站D7 - 专属办公版下分为鲲鹏专属、通用专属、G6a、G6r、G7a
-
-        :param series_type: The series_type of this Product.
-        :type series_type: str
-        """
-        self._series_type = series_type
-
-    @property
     def name(self):
         r"""Gets the name of this Product.
 
@@ -808,50 +736,6 @@ class Product:
         :type name: dict(str, str)
         """
         self._name = name
-
-    @property
-    def default_desktop_num(self):
-        r"""Gets the default_desktop_num of this Product.
-
-        专享主机套餐默认的桌面数。
-
-        :return: The default_desktop_num of this Product.
-        :rtype: int
-        """
-        return self._default_desktop_num
-
-    @default_desktop_num.setter
-    def default_desktop_num(self, default_desktop_num):
-        r"""Sets the default_desktop_num of this Product.
-
-        专享主机套餐默认的桌面数。
-
-        :param default_desktop_num: The default_desktop_num of this Product.
-        :type default_desktop_num: int
-        """
-        self._default_desktop_num = default_desktop_num
-
-    @property
-    def max_apply_desktop_num(self):
-        r"""Gets the max_apply_desktop_num of this Product.
-
-        专享主机支持创建的最大桌面数。
-
-        :return: The max_apply_desktop_num of this Product.
-        :rtype: int
-        """
-        return self._max_apply_desktop_num
-
-    @max_apply_desktop_num.setter
-    def max_apply_desktop_num(self, max_apply_desktop_num):
-        r"""Sets the max_apply_desktop_num of this Product.
-
-        专享主机支持创建的最大桌面数。
-
-        :param max_apply_desktop_num: The max_apply_desktop_num of this Product.
-        :type max_apply_desktop_num: int
-        """
-        self._max_apply_desktop_num = max_apply_desktop_num
 
     @property
     def share_space_size(self):

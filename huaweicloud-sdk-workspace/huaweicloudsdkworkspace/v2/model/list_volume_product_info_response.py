@@ -30,7 +30,7 @@ class ListVolumeProductInfoResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param volumes: 磁盘产品信息列表
+        :param volumes: 磁盘产品信息列表。
         :type volumes: list[:class:`huaweicloudsdkworkspace.v2.VolumeProductInfo`]
         """
         
@@ -46,7 +46,7 @@ class ListVolumeProductInfoResponse(SdkResponse):
     def volumes(self):
         r"""Gets the volumes of this ListVolumeProductInfoResponse.
 
-        磁盘产品信息列表
+        磁盘产品信息列表。
 
         :return: The volumes of this ListVolumeProductInfoResponse.
         :rtype: list[:class:`huaweicloudsdkworkspace.v2.VolumeProductInfo`]
@@ -57,7 +57,7 @@ class ListVolumeProductInfoResponse(SdkResponse):
     def volumes(self, volumes):
         r"""Sets the volumes of this ListVolumeProductInfoResponse.
 
-        磁盘产品信息列表
+        磁盘产品信息列表。
 
         :param volumes: The volumes of this ListVolumeProductInfoResponse.
         :type volumes: list[:class:`huaweicloudsdkworkspace.v2.VolumeProductInfo`]

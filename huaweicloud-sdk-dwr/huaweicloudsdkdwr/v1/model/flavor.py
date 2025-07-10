@@ -31,9 +31,9 @@ class Flavor:
 
         The model defined in huaweicloud sdk
 
-        :param cu: cu规格，取值范围xlarge, 2xlarge, 4xlarge, 8xlarge, 16xlarge
+        :param cu: **参数解释：** CU规格。 **约束限制：** 不涉及。 **取值范围：** xlarge, 2xlarge, 4xlarge, 8xlarge, 16xlarge。 **默认取值:** 不涉及。
         :type cu: str
-        :param num: 选择cu规格的数量。不能超过CU配额，如有大量需求，请提工单申请
+        :param num: **参数解释：** 选择CU规格的数量。 **约束限制：** 不能超过CU配额，如有大量需求，请提工单申请。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
         :type num: int
         """
         
@@ -50,7 +50,7 @@ class Flavor:
     def cu(self):
         r"""Gets the cu of this Flavor.
 
-        cu规格，取值范围xlarge, 2xlarge, 4xlarge, 8xlarge, 16xlarge
+        **参数解释：** CU规格。 **约束限制：** 不涉及。 **取值范围：** xlarge, 2xlarge, 4xlarge, 8xlarge, 16xlarge。 **默认取值:** 不涉及。
 
         :return: The cu of this Flavor.
         :rtype: str
@@ -61,7 +61,7 @@ class Flavor:
     def cu(self, cu):
         r"""Sets the cu of this Flavor.
 
-        cu规格，取值范围xlarge, 2xlarge, 4xlarge, 8xlarge, 16xlarge
+        **参数解释：** CU规格。 **约束限制：** 不涉及。 **取值范围：** xlarge, 2xlarge, 4xlarge, 8xlarge, 16xlarge。 **默认取值:** 不涉及。
 
         :param cu: The cu of this Flavor.
         :type cu: str
@@ -72,7 +72,7 @@ class Flavor:
     def num(self):
         r"""Gets the num of this Flavor.
 
-        选择cu规格的数量。不能超过CU配额，如有大量需求，请提工单申请
+        **参数解释：** 选择CU规格的数量。 **约束限制：** 不能超过CU配额，如有大量需求，请提工单申请。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :return: The num of this Flavor.
         :rtype: int
@@ -83,7 +83,7 @@ class Flavor:
     def num(self, num):
         r"""Sets the num of this Flavor.
 
-        选择cu规格的数量。不能超过CU配额，如有大量需求，请提工单申请
+        **参数解释：** 选择CU规格的数量。 **约束限制：** 不能超过CU配额，如有大量需求，请提工单申请。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :param num: The num of this Flavor.
         :type num: int

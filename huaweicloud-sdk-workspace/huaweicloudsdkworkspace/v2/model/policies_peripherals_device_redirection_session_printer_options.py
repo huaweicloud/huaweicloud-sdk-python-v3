@@ -29,7 +29,7 @@ class PoliciesPeripheralsDeviceRedirectionSessionPrinterOptions:
 
         The model defined in huaweicloud sdk
 
-        :param session_printer_customization_policy: 会话打印机自定义策略。
+        :param session_printer_customization_policy: 会话打印机自定义策略。长度不能超过1000个字符。
         :type session_printer_customization_policy: str
         """
         
@@ -45,7 +45,7 @@ class PoliciesPeripheralsDeviceRedirectionSessionPrinterOptions:
     def session_printer_customization_policy(self):
         r"""Gets the session_printer_customization_policy of this PoliciesPeripheralsDeviceRedirectionSessionPrinterOptions.
 
-        会话打印机自定义策略。
+        会话打印机自定义策略。长度不能超过1000个字符。
 
         :return: The session_printer_customization_policy of this PoliciesPeripheralsDeviceRedirectionSessionPrinterOptions.
         :rtype: str
@@ -56,7 +56,7 @@ class PoliciesPeripheralsDeviceRedirectionSessionPrinterOptions:
     def session_printer_customization_policy(self, session_printer_customization_policy):
         r"""Sets the session_printer_customization_policy of this PoliciesPeripheralsDeviceRedirectionSessionPrinterOptions.
 
-        会话打印机自定义策略。
+        会话打印机自定义策略。长度不能超过1000个字符。
 
         :param session_printer_customization_policy: The session_printer_customization_policy of this PoliciesPeripheralsDeviceRedirectionSessionPrinterOptions.
         :type session_printer_customization_policy: str

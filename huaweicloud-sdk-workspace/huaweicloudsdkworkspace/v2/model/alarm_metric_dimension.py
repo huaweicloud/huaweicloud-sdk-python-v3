@@ -31,9 +31,9 @@ class AlarmMetricDimension:
 
         The model defined in huaweicloud sdk
 
-        :param name: 资源维度
+        :param name: 资源维度。
         :type name: str
-        :param value: 资源维度值
+        :param value: 资源维度值。
         :type value: str
         """
         
@@ -52,7 +52,7 @@ class AlarmMetricDimension:
     def name(self):
         r"""Gets the name of this AlarmMetricDimension.
 
-        资源维度
+        资源维度。
 
         :return: The name of this AlarmMetricDimension.
         :rtype: str
@@ -63,7 +63,7 @@ class AlarmMetricDimension:
     def name(self, name):
         r"""Sets the name of this AlarmMetricDimension.
 
-        资源维度
+        资源维度。
 
         :param name: The name of this AlarmMetricDimension.
         :type name: str
@@ -74,7 +74,7 @@ class AlarmMetricDimension:
     def value(self):
         r"""Gets the value of this AlarmMetricDimension.
 
-        资源维度值
+        资源维度值。
 
         :return: The value of this AlarmMetricDimension.
         :rtype: str
@@ -85,7 +85,7 @@ class AlarmMetricDimension:
     def value(self, value):
         r"""Sets the value of this AlarmMetricDimension.
 
-        资源维度值
+        资源维度值。
 
         :param value: The value of this AlarmMetricDimension.
         :type value: str

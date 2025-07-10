@@ -33,6 +33,404 @@ class CocAsyncClient(Client):
 
         return client_builder
 
+    def clear_alarm_async(self, request):
+        r"""批量清除告警
+
+        清除告警
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ClearAlarm
+        :type request: :class:`huaweicloudsdkcoc.v1.ClearAlarmRequest`
+        :rtype: :class:`huaweicloudsdkcoc.v1.ClearAlarmResponse`
+        """
+        http_info = self._clear_alarm_http_info(request)
+        return self._call_api(**http_info)
+
+    def clear_alarm_async_invoker(self, request):
+        http_info = self._clear_alarm_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _clear_alarm_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/alarm-mgmt/alarms/cancel",
+            "request_type": request.__class__.__name__,
+            "response_type": "ClearAlarmResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def handler_alarm_async(self, request):
+        r"""自动处理设置脚本和runbook
+
+        自动处理设置脚本和runbook
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for HandlerAlarm
+        :type request: :class:`huaweicloudsdkcoc.v1.HandlerAlarmRequest`
+        :rtype: :class:`huaweicloudsdkcoc.v1.HandlerAlarmResponse`
+        """
+        http_info = self._handler_alarm_http_info(request)
+        return self._call_api(**http_info)
+
+    def handler_alarm_async_invoker(self, request):
+        http_info = self._handler_alarm_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _handler_alarm_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/alarm-mgmt/alarm/{alarm_id}/auto-process",
+            "request_type": request.__class__.__name__,
+            "response_type": "HandlerAlarmResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'alarm_id' in local_var_params:
+            path_params['alarm_id'] = local_var_params['alarm_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_alarm_handle_histories_async(self, request):
+        r"""查询告警工单历史
+
+        查询告警工单历史
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListAlarmHandleHistories
+        :type request: :class:`huaweicloudsdkcoc.v1.ListAlarmHandleHistoriesRequest`
+        :rtype: :class:`huaweicloudsdkcoc.v1.ListAlarmHandleHistoriesResponse`
+        """
+        http_info = self._list_alarm_handle_histories_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_alarm_handle_histories_async_invoker(self, request):
+        http_info = self._list_alarm_handle_histories_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_alarm_handle_histories_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/alarm-mgmt/alarm/{alarm_id}/handle-histories",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAlarmHandleHistoriesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'alarm_id' in local_var_params:
+            path_params['alarm_id'] = local_var_params['alarm_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_alarm_async(self, request):
+        r"""查询Alarm
+
+        Get alarm info by id
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowAlarm
+        :type request: :class:`huaweicloudsdkcoc.v1.ShowAlarmRequest`
+        :rtype: :class:`huaweicloudsdkcoc.v1.ShowAlarmResponse`
+        """
+        http_info = self._show_alarm_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_alarm_async_invoker(self, request):
+        http_info = self._show_alarm_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_alarm_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/alarm-mgmt/alarm/{alarm_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAlarmResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'alarm_id' in local_var_params:
+            path_params['alarm_id'] = local_var_params['alarm_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def transfer_alarm_to_incident_async(self, request):
+        r"""批量告警转事件
+
+        批量告警转事件
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for TransferAlarmToIncident
+        :type request: :class:`huaweicloudsdkcoc.v1.TransferAlarmToIncidentRequest`
+        :rtype: :class:`huaweicloudsdkcoc.v1.TransferAlarmToIncidentResponse`
+        """
+        http_info = self._transfer_alarm_to_incident_http_info(request)
+        return self._call_api(**http_info)
+
+    def transfer_alarm_to_incident_async_invoker(self, request):
+        http_info = self._transfer_alarm_to_incident_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _transfer_alarm_to_incident_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/alarm-mgmt/alarms-linked-incident",
+            "request_type": request.__class__.__name__,
+            "response_type": "TransferAlarmToIncidentResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_change_async(self, request):
+        r"""UpdateChange 更新变更单
+
+        UpdateChange 更新变更单
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateChange
+        :type request: :class:`huaweicloudsdkcoc.v1.UpdateChangeRequest`
+        :rtype: :class:`huaweicloudsdkcoc.v1.UpdateChangeResponse`
+        """
+        http_info = self._update_change_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_change_async_invoker(self, request):
+        http_info = self._update_change_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_change_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/changes/{change_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateChangeResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'change_id' in local_var_params:
+            path_params['change_id'] = local_var_params['change_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def handle_incident_async(self, request):
         r"""HandleIncident 处理事件单
 
@@ -1802,6 +2200,483 @@ class CocAsyncClient(Client):
 
         return http_info
 
+    def list_sub_tickets_async(self, request):
+        r"""搜索变更工单子单
+
+        搜索变更工单子单。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListSubTickets
+        :type request: :class:`huaweicloudsdkcoc.v1.ListSubTicketsRequest`
+        :rtype: :class:`huaweicloudsdkcoc.v1.ListSubTicketsResponse`
+        """
+        http_info = self._list_sub_tickets_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_sub_tickets_async_invoker(self, request):
+        http_info = self._list_sub_tickets_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_sub_tickets_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{ticket_type}/tickets/{ticket_id}/list-sub-tickets",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSubTicketsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'ticket_type' in local_var_params:
+            path_params['ticket_type'] = local_var_params['ticket_type']
+        if 'ticket_id' in local_var_params:
+            path_params['ticket_id'] = local_var_params['ticket_id']
+
+        query_params = []
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def execute_ticket_action_async(self, request):
+        r"""工单操作
+
+        变更单审批、撤销以及问题单的所有操作均通过此接口完成。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ExecuteTicketAction
+        :type request: :class:`huaweicloudsdkcoc.v1.ExecuteTicketActionRequest`
+        :rtype: :class:`huaweicloudsdkcoc.v1.ExecuteTicketActionResponse`
+        """
+        http_info = self._execute_ticket_action_http_info(request)
+        return self._call_api(**http_info)
+
+    def execute_ticket_action_async_invoker(self, request):
+        http_info = self._execute_ticket_action_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _execute_ticket_action_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{ticket_type}/actions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExecuteTicketActionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'ticket_type' in local_var_params:
+            path_params['ticket_type'] = local_var_params['ticket_type']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_ticket_operation_histories_async(self, request):
+        r"""搜索工单历史
+
+        List Histories
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListTicketOperationHistories
+        :type request: :class:`huaweicloudsdkcoc.v1.ListTicketOperationHistoriesRequest`
+        :rtype: :class:`huaweicloudsdkcoc.v1.ListTicketOperationHistoriesResponse`
+        """
+        http_info = self._list_ticket_operation_histories_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_ticket_operation_histories_async_invoker(self, request):
+        http_info = self._list_ticket_operation_histories_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_ticket_operation_histories_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{ticket_type}/list-histories",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTicketOperationHistoriesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'ticket_type' in local_var_params:
+            path_params['ticket_type'] = local_var_params['ticket_type']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_tickets_async(self, request):
+        r"""搜索工单
+
+        List ticket
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListTickets
+        :type request: :class:`huaweicloudsdkcoc.v1.ListTicketsRequest`
+        :rtype: :class:`huaweicloudsdkcoc.v1.ListTicketsResponse`
+        """
+        http_info = self._list_tickets_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_tickets_async_invoker(self, request):
+        http_info = self._list_tickets_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_tickets_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{ticket_type}/list-tickets",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTicketsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'ticket_type' in local_var_params:
+            path_params['ticket_type'] = local_var_params['ticket_type']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_ticket_info_async(self, request):
+        r"""查询Ticket
+
+        Get Ticket info by id
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowTicketInfo
+        :type request: :class:`huaweicloudsdkcoc.v1.ShowTicketInfoRequest`
+        :rtype: :class:`huaweicloudsdkcoc.v1.ShowTicketInfoResponse`
+        """
+        http_info = self._show_ticket_info_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_ticket_info_async_invoker(self, request):
+        http_info = self._show_ticket_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_ticket_info_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{ticket_type}/tickets/{ticket_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTicketInfoResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'ticket_type' in local_var_params:
+            path_params['ticket_type'] = local_var_params['ticket_type']
+        if 'ticket_id' in local_var_params:
+            path_params['ticket_id'] = local_var_params['ticket_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_ticket_info_async(self, request):
+        r"""删除变更单
+
+        删除变更单，当变更单为撤销状态下，变更单可进行删除操作。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteTicketInfo
+        :type request: :class:`huaweicloudsdkcoc.v1.DeleteTicketInfoRequest`
+        :rtype: :class:`huaweicloudsdkcoc.v1.DeleteTicketInfoResponse`
+        """
+        http_info = self._delete_ticket_info_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_ticket_info_async_invoker(self, request):
+        http_info = self._delete_ticket_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_ticket_info_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{ticket_type}/tickets/{ticket_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTicketInfoResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'ticket_type' in local_var_params:
+            path_params['ticket_type'] = local_var_params['ticket_type']
+        if 'ticket_id' in local_var_params:
+            path_params['ticket_id'] = local_var_params['ticket_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_ticket_async(self, request):
+        r"""变更单状态修改
+
+        变更单状态修改，请求路径中的ticket_type为固定值change，且ticket_id传递变更单单号。此接口可操作变更开始、变更结束、变更取消和添加变更结果操作。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateTicket
+        :type request: :class:`huaweicloudsdkcoc.v1.UpdateTicketRequest`
+        :rtype: :class:`huaweicloudsdkcoc.v1.UpdateTicketResponse`
+        """
+        http_info = self._update_ticket_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_ticket_async_invoker(self, request):
+        http_info = self._update_ticket_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_ticket_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{ticket_type}/tickets/{ticket_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateTicketResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'ticket_type' in local_var_params:
+            path_params['ticket_type'] = local_var_params['ticket_type']
+        if 'ticket_id' in local_var_params:
+            path_params['ticket_id'] = local_var_params['ticket_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_coc_incident_async(self, request):
         r"""CreateExternalIncident 创建事件单
 
@@ -2450,6 +3325,73 @@ class CocAsyncClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def download_attachment_async(self, request):
+        r"""下载附件
+
+        附件下载操作需基于已上传的附件资源。上传附件时，需调用/v1/{ticket_type}/attachments接口完成上传；成功上传后，可从接口响应中获取doc_id参数。下载附件时，凭借此doc_id再次调用/v1/{ticket_type}/attachments接口，即可获取已上传的对应附件资源，实现附件全生命周期管理。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DownloadAttachment
+        :type request: :class:`huaweicloudsdkcoc.v1.DownloadAttachmentRequest`
+        :rtype: :class:`huaweicloudsdkcoc.v1.DownloadAttachmentResponse`
+        """
+        http_info = self._download_attachment_http_info(request)
+        return self._call_api(**http_info)
+
+    def download_attachment_async_invoker(self, request):
+        http_info = self._download_attachment_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _download_attachment_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{ticket_type}/attachments/{doc_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DownloadAttachmentResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'ticket_type' in local_var_params:
+            path_params['ticket_type'] = local_var_params['ticket_type']
+        if 'doc_id' in local_var_params:
+            path_params['doc_id'] = local_var_params['doc_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 

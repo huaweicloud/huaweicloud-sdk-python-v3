@@ -2480,6 +2480,89 @@ class RdsAsyncClient(Client):
 
         return http_info
 
+    def list_backup_transfers_async(self, request):
+        r"""查询转储任务列表
+
+        查询转储任务列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListBackupTransfers
+        :type request: :class:`huaweicloudsdkrds.v3.ListBackupTransfersRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListBackupTransfersResponse`
+        """
+        http_info = self._list_backup_transfers_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_backup_transfers_async_invoker(self, request):
+        http_info = self._list_backup_transfers_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_backup_transfers_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/transfer-info",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListBackupTransfersResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'order_field' in local_var_params:
+            query_params.append(('order_field', local_var_params['order_field']))
+        if 'order_rule' in local_var_params:
+            query_params.append(('order_rule', local_var_params['order_rule']))
+        if 'filter_field' in local_var_params:
+            query_params.append(('filter_field', local_var_params['filter_field']))
+        if 'filter_content' in local_var_params:
+            query_params.append(('filter_content', local_var_params['filter_content']))
+        if 'begin_time' in local_var_params:
+            query_params.append(('begin_time', local_var_params['begin_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'transfer_type' in local_var_params:
+            query_params.append(('transfer_type', local_var_params['transfer_type']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_backups_async(self, request):
         r"""获取备份列表
 
@@ -7408,6 +7491,73 @@ class RdsAsyncClient(Client):
 
         return http_info
 
+    def set_transfer_policy_async(self, request):
+        r"""设置自动转储策略
+
+        设置自动转储策略
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for SetTransferPolicy
+        :type request: :class:`huaweicloudsdkrds.v3.SetTransferPolicyRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.SetTransferPolicyResponse`
+        """
+        http_info = self._set_transfer_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def set_transfer_policy_async_invoker(self, request):
+        http_info = self._set_transfer_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _set_transfer_policy_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/backups/transfer/policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetTransferPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_auditlog_download_link_async(self, request):
         r"""生成审计日志下载链接
 
@@ -8947,6 +9097,71 @@ class RdsAsyncClient(Client):
 
         return http_info
 
+    def show_transfer_policy_async(self, request):
+        r"""查询自动转储策略
+
+        查询自动转储策略
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowTransferPolicy
+        :type request: :class:`huaweicloudsdkrds.v3.ShowTransferPolicyRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ShowTransferPolicyResponse`
+        """
+        http_info = self._show_transfer_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_transfer_policy_async_invoker(self, request):
+        http_info = self._show_transfer_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_transfer_policy_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/transfer/policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTransferPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_upgrade_db_major_version_status_async(self, request):
         r"""show_upgrade_db_major_version_status
 
@@ -9790,6 +10005,75 @@ class RdsAsyncClient(Client):
             "resource_path": "/v3/{project_id}/instances/{instance_id}/ssl",
             "request_type": request.__class__.__name__,
             "response_type": "SwitchSslResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def transfer_backup_async(self, request):
+        r"""手动转储备份
+
+        手动转储备份
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for TransferBackup
+        :type request: :class:`huaweicloudsdkrds.v3.TransferBackupRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.TransferBackupResponse`
+        """
+        http_info = self._transfer_backup_http_info(request)
+        return self._call_api(**http_info)
+
+    def transfer_backup_async_invoker(self, request):
+        http_info = self._transfer_backup_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _transfer_backup_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/backups/transfer",
+            "request_type": request.__class__.__name__,
+            "response_type": "TransferBackupResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}

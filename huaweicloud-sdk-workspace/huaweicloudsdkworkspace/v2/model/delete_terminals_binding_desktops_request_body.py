@@ -29,7 +29,7 @@ class DeleteTerminalsBindingDesktopsRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param id_list: 绑定策略ID列表
+        :param id_list: 绑定策略ID列表。
         :type id_list: list[str]
         """
         
@@ -45,7 +45,7 @@ class DeleteTerminalsBindingDesktopsRequestBody:
     def id_list(self):
         r"""Gets the id_list of this DeleteTerminalsBindingDesktopsRequestBody.
 
-        绑定策略ID列表
+        绑定策略ID列表。
 
         :return: The id_list of this DeleteTerminalsBindingDesktopsRequestBody.
         :rtype: list[str]
@@ -56,7 +56,7 @@ class DeleteTerminalsBindingDesktopsRequestBody:
     def id_list(self, id_list):
         r"""Sets the id_list of this DeleteTerminalsBindingDesktopsRequestBody.
 
-        绑定策略ID列表
+        绑定策略ID列表。
 
         :param id_list: The id_list of this DeleteTerminalsBindingDesktopsRequestBody.
         :type id_list: list[str]

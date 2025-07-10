@@ -30,7 +30,7 @@ class CreateScriptResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param script_id: 脚本ID
+        :param script_id: 脚本ID。
         :type script_id: str
         """
         
@@ -46,7 +46,7 @@ class CreateScriptResponse(SdkResponse):
     def script_id(self):
         r"""Gets the script_id of this CreateScriptResponse.
 
-        脚本ID
+        脚本ID。
 
         :return: The script_id of this CreateScriptResponse.
         :rtype: str
@@ -57,7 +57,7 @@ class CreateScriptResponse(SdkResponse):
     def script_id(self, script_id):
         r"""Sets the script_id of this CreateScriptResponse.
 
-        脚本ID
+        脚本ID。
 
         :param script_id: The script_id of this CreateScriptResponse.
         :type script_id: str

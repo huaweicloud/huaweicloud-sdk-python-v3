@@ -19,7 +19,6 @@ class ExpandDesktopVolumeResponse(SdkResponse):
 
     openapi_types = {
         'job_id': 'str',
-        'bss_job_id': 'str',
         'get_job_endpoint': 'str',
         'max_provision_time': 'int',
         'min_provision_time': 'int',
@@ -28,36 +27,32 @@ class ExpandDesktopVolumeResponse(SdkResponse):
 
     attribute_map = {
         'job_id': 'job_id',
-        'bss_job_id': 'bssJobId',
         'get_job_endpoint': 'getJobEndpoint',
         'max_provision_time': 'maxProvisionTime',
         'min_provision_time': 'minProvisionTime',
         'periodic_query_time': 'periodicQueryTime'
     }
 
-    def __init__(self, job_id=None, bss_job_id=None, get_job_endpoint=None, max_provision_time=None, min_provision_time=None, periodic_query_time=None):
+    def __init__(self, job_id=None, get_job_endpoint=None, max_provision_time=None, min_provision_time=None, periodic_query_time=None):
         r"""ExpandDesktopVolumeResponse
 
         The model defined in huaweicloud sdk
 
-        :param job_id: 扩容磁盘任务id
+        :param job_id: 扩容磁盘任务id。
         :type job_id: str
-        :param bss_job_id: 【BSS移动云回调】包周期扩容磁盘的任务ID
-        :type bss_job_id: str
-        :param get_job_endpoint: 云运营平台CBC获取到JobId后，会使用getJobEndpoint当做URL，调用云服务，查询获取Job结果
+        :param get_job_endpoint: 云运营平台CBC获取到JobId后，会使用getJobEndpoint当做URL，调用云服务，查询获取Job结果。
         :type get_job_endpoint: str
-        :param max_provision_time: 在线开通最大时间
+        :param max_provision_time: 在线开通最大时间。
         :type max_provision_time: int
-        :param min_provision_time: 开通最小时间（云服务最快开通时长，或一般开通时长）
+        :param min_provision_time: 开通最小时间（云服务最快开通时长，或一般开通时长）。
         :type min_provision_time: int
-        :param periodic_query_time: Job周期性查询时间，默认1分钟查询一次
+        :param periodic_query_time: Job周期性查询时间，默认1分钟查询一次。
         :type periodic_query_time: int
         """
         
         super(ExpandDesktopVolumeResponse, self).__init__()
 
         self._job_id = None
-        self._bss_job_id = None
         self._get_job_endpoint = None
         self._max_provision_time = None
         self._min_provision_time = None
@@ -66,8 +61,6 @@ class ExpandDesktopVolumeResponse(SdkResponse):
 
         if job_id is not None:
             self.job_id = job_id
-        if bss_job_id is not None:
-            self.bss_job_id = bss_job_id
         if get_job_endpoint is not None:
             self.get_job_endpoint = get_job_endpoint
         if max_provision_time is not None:
@@ -81,7 +74,7 @@ class ExpandDesktopVolumeResponse(SdkResponse):
     def job_id(self):
         r"""Gets the job_id of this ExpandDesktopVolumeResponse.
 
-        扩容磁盘任务id
+        扩容磁盘任务id。
 
         :return: The job_id of this ExpandDesktopVolumeResponse.
         :rtype: str
@@ -92,7 +85,7 @@ class ExpandDesktopVolumeResponse(SdkResponse):
     def job_id(self, job_id):
         r"""Sets the job_id of this ExpandDesktopVolumeResponse.
 
-        扩容磁盘任务id
+        扩容磁盘任务id。
 
         :param job_id: The job_id of this ExpandDesktopVolumeResponse.
         :type job_id: str
@@ -100,32 +93,10 @@ class ExpandDesktopVolumeResponse(SdkResponse):
         self._job_id = job_id
 
     @property
-    def bss_job_id(self):
-        r"""Gets the bss_job_id of this ExpandDesktopVolumeResponse.
-
-        【BSS移动云回调】包周期扩容磁盘的任务ID
-
-        :return: The bss_job_id of this ExpandDesktopVolumeResponse.
-        :rtype: str
-        """
-        return self._bss_job_id
-
-    @bss_job_id.setter
-    def bss_job_id(self, bss_job_id):
-        r"""Sets the bss_job_id of this ExpandDesktopVolumeResponse.
-
-        【BSS移动云回调】包周期扩容磁盘的任务ID
-
-        :param bss_job_id: The bss_job_id of this ExpandDesktopVolumeResponse.
-        :type bss_job_id: str
-        """
-        self._bss_job_id = bss_job_id
-
-    @property
     def get_job_endpoint(self):
         r"""Gets the get_job_endpoint of this ExpandDesktopVolumeResponse.
 
-        云运营平台CBC获取到JobId后，会使用getJobEndpoint当做URL，调用云服务，查询获取Job结果
+        云运营平台CBC获取到JobId后，会使用getJobEndpoint当做URL，调用云服务，查询获取Job结果。
 
         :return: The get_job_endpoint of this ExpandDesktopVolumeResponse.
         :rtype: str
@@ -136,7 +107,7 @@ class ExpandDesktopVolumeResponse(SdkResponse):
     def get_job_endpoint(self, get_job_endpoint):
         r"""Sets the get_job_endpoint of this ExpandDesktopVolumeResponse.
 
-        云运营平台CBC获取到JobId后，会使用getJobEndpoint当做URL，调用云服务，查询获取Job结果
+        云运营平台CBC获取到JobId后，会使用getJobEndpoint当做URL，调用云服务，查询获取Job结果。
 
         :param get_job_endpoint: The get_job_endpoint of this ExpandDesktopVolumeResponse.
         :type get_job_endpoint: str
@@ -147,7 +118,7 @@ class ExpandDesktopVolumeResponse(SdkResponse):
     def max_provision_time(self):
         r"""Gets the max_provision_time of this ExpandDesktopVolumeResponse.
 
-        在线开通最大时间
+        在线开通最大时间。
 
         :return: The max_provision_time of this ExpandDesktopVolumeResponse.
         :rtype: int
@@ -158,7 +129,7 @@ class ExpandDesktopVolumeResponse(SdkResponse):
     def max_provision_time(self, max_provision_time):
         r"""Sets the max_provision_time of this ExpandDesktopVolumeResponse.
 
-        在线开通最大时间
+        在线开通最大时间。
 
         :param max_provision_time: The max_provision_time of this ExpandDesktopVolumeResponse.
         :type max_provision_time: int
@@ -169,7 +140,7 @@ class ExpandDesktopVolumeResponse(SdkResponse):
     def min_provision_time(self):
         r"""Gets the min_provision_time of this ExpandDesktopVolumeResponse.
 
-        开通最小时间（云服务最快开通时长，或一般开通时长）
+        开通最小时间（云服务最快开通时长，或一般开通时长）。
 
         :return: The min_provision_time of this ExpandDesktopVolumeResponse.
         :rtype: int
@@ -180,7 +151,7 @@ class ExpandDesktopVolumeResponse(SdkResponse):
     def min_provision_time(self, min_provision_time):
         r"""Sets the min_provision_time of this ExpandDesktopVolumeResponse.
 
-        开通最小时间（云服务最快开通时长，或一般开通时长）
+        开通最小时间（云服务最快开通时长，或一般开通时长）。
 
         :param min_provision_time: The min_provision_time of this ExpandDesktopVolumeResponse.
         :type min_provision_time: int
@@ -191,7 +162,7 @@ class ExpandDesktopVolumeResponse(SdkResponse):
     def periodic_query_time(self):
         r"""Gets the periodic_query_time of this ExpandDesktopVolumeResponse.
 
-        Job周期性查询时间，默认1分钟查询一次
+        Job周期性查询时间，默认1分钟查询一次。
 
         :return: The periodic_query_time of this ExpandDesktopVolumeResponse.
         :rtype: int
@@ -202,7 +173,7 @@ class ExpandDesktopVolumeResponse(SdkResponse):
     def periodic_query_time(self, periodic_query_time):
         r"""Sets the periodic_query_time of this ExpandDesktopVolumeResponse.
 
-        Job周期性查询时间，默认1分钟查询一次
+        Job周期性查询时间，默认1分钟查询一次。
 
         :param periodic_query_time: The periodic_query_time of this ExpandDesktopVolumeResponse.
         :type periodic_query_time: int

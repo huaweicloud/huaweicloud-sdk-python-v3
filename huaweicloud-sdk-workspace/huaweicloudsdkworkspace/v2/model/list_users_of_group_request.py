@@ -21,6 +21,7 @@ class ListUsersOfGroupRequest:
         'group_id': 'str',
         'description': 'str',
         'active_type': 'str',
+        'enterprise_project_id': 'str',
         'limit': 'str',
         'offset': 'str'
     }
@@ -30,11 +31,12 @@ class ListUsersOfGroupRequest:
         'group_id': 'group_id',
         'description': 'description',
         'active_type': 'active_type',
+        'enterprise_project_id': 'enterprise_project_id',
         'limit': 'limit',
         'offset': 'offset'
     }
 
-    def __init__(self, user_name=None, group_id=None, description=None, active_type=None, limit=None, offset=None):
+    def __init__(self, user_name=None, group_id=None, description=None, active_type=None, enterprise_project_id=None, limit=None, offset=None):
         r"""ListUsersOfGroupRequest
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class ListUsersOfGroupRequest:
         :type description: str
         :param active_type: 激活类型。 - USER_ACTIVATE：用户激活 - ADMIN_ACTIVATE：管理员激活
         :type active_type: str
+        :param enterprise_project_id: 企业项目ID。
+        :type enterprise_project_id: str
         :param limit: 用于分页查询，返回桌面数量限制。如果不指定或为0，默认2000，最大2000。
         :type limit: str
         :param offset: 用于分页查询，查询的起始记录序号，从0开始。
@@ -59,6 +63,7 @@ class ListUsersOfGroupRequest:
         self._group_id = None
         self._description = None
         self._active_type = None
+        self._enterprise_project_id = None
         self._limit = None
         self._offset = None
         self.discriminator = None
@@ -70,6 +75,8 @@ class ListUsersOfGroupRequest:
             self.description = description
         if active_type is not None:
             self.active_type = active_type
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
         if limit is not None:
             self.limit = limit
         if offset is not None:
@@ -162,6 +169,28 @@ class ListUsersOfGroupRequest:
         :type active_type: str
         """
         self._active_type = active_type
+
+    @property
+    def enterprise_project_id(self):
+        r"""Gets the enterprise_project_id of this ListUsersOfGroupRequest.
+
+        企业项目ID。
+
+        :return: The enterprise_project_id of this ListUsersOfGroupRequest.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        r"""Sets the enterprise_project_id of this ListUsersOfGroupRequest.
+
+        企业项目ID。
+
+        :param enterprise_project_id: The enterprise_project_id of this ListUsersOfGroupRequest.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     @property
     def limit(self):

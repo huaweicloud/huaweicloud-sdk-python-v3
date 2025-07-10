@@ -31,9 +31,9 @@ class ListCollectionData:
 
         The model defined in huaweicloud sdk
 
-        :param collections: 知识仓实例下所有collection名称列表
+        :param collections: **参数解释：** 知识仓实例下所有collection名称列表。 **约束限制：** 不涉及。
         :type collections: list[str]
-        :param details: collection详细信息
+        :param details: **参数解释：** 知识仓实例下所有collection详细信息列表。 **约束限制：** 在指定detail字段为true时生效。
         :type details: list[:class:`huaweicloudsdkdwr.v1.ListCollectionDetails`]
         """
         
@@ -51,7 +51,7 @@ class ListCollectionData:
     def collections(self):
         r"""Gets the collections of this ListCollectionData.
 
-        知识仓实例下所有collection名称列表
+        **参数解释：** 知识仓实例下所有collection名称列表。 **约束限制：** 不涉及。
 
         :return: The collections of this ListCollectionData.
         :rtype: list[str]
@@ -62,7 +62,7 @@ class ListCollectionData:
     def collections(self, collections):
         r"""Sets the collections of this ListCollectionData.
 
-        知识仓实例下所有collection名称列表
+        **参数解释：** 知识仓实例下所有collection名称列表。 **约束限制：** 不涉及。
 
         :param collections: The collections of this ListCollectionData.
         :type collections: list[str]
@@ -73,7 +73,7 @@ class ListCollectionData:
     def details(self):
         r"""Gets the details of this ListCollectionData.
 
-        collection详细信息
+        **参数解释：** 知识仓实例下所有collection详细信息列表。 **约束限制：** 在指定detail字段为true时生效。
 
         :return: The details of this ListCollectionData.
         :rtype: list[:class:`huaweicloudsdkdwr.v1.ListCollectionDetails`]
@@ -84,7 +84,7 @@ class ListCollectionData:
     def details(self, details):
         r"""Sets the details of this ListCollectionData.
 
-        collection详细信息
+        **参数解释：** 知识仓实例下所有collection详细信息列表。 **约束限制：** 在指定detail字段为true时生效。
 
         :param details: The details of this ListCollectionData.
         :type details: list[:class:`huaweicloudsdkdwr.v1.ListCollectionDetails`]

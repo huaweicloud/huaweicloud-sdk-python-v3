@@ -17,9 +17,7 @@ class ApplyWorkspaceReq:
     sensitive_list = []
 
     openapi_types = {
-        'auth_type': 'str',
         'ad_domains': 'AdDomain',
-        'third_gateway_info': 'ThirdGatewayConfigInfo',
         'enterprise_id': 'str',
         'vpc_id': 'str',
         'subnet_ids': 'list[Subnet]',
@@ -27,18 +25,11 @@ class ApplyWorkspaceReq:
         'access_mode': 'str',
         'apply_shared_vpc_dedicated_param': 'ApplySharedVpcDedicatedParam',
         'dedicated_subnets': 'str',
-        'availability_zone': 'str',
-        'publicip_type': 'str',
-        'assist_auth_config': 'AssistAuthMethodConfigRequest',
-        'site_configs': 'list[SiteConfigsRequest]',
-        'is_send_email': 'bool',
-        'enterprise_project_id': 'str'
+        'is_send_email': 'bool'
     }
 
     attribute_map = {
-        'auth_type': 'auth_type',
         'ad_domains': 'ad_domains',
-        'third_gateway_info': 'third_gateway_info',
         'enterprise_id': 'enterprise_id',
         'vpc_id': 'vpc_id',
         'subnet_ids': 'subnet_ids',
@@ -46,25 +37,16 @@ class ApplyWorkspaceReq:
         'access_mode': 'access_mode',
         'apply_shared_vpc_dedicated_param': 'apply_shared_vpc_dedicated_param',
         'dedicated_subnets': 'dedicated_subnets',
-        'availability_zone': 'availability_zone',
-        'publicip_type': 'publicip_type',
-        'assist_auth_config': 'assist_auth_config',
-        'site_configs': 'site_configs',
-        'is_send_email': 'is_send_email',
-        'enterprise_project_id': 'enterprise_project_id'
+        'is_send_email': 'is_send_email'
     }
 
-    def __init__(self, auth_type=None, ad_domains=None, third_gateway_info=None, enterprise_id=None, vpc_id=None, subnet_ids=None, manage_subnet_cidr=None, access_mode=None, apply_shared_vpc_dedicated_param=None, dedicated_subnets=None, availability_zone=None, publicip_type=None, assist_auth_config=None, site_configs=None, is_send_email=None, enterprise_project_id=None):
+    def __init__(self, ad_domains=None, enterprise_id=None, vpc_id=None, subnet_ids=None, manage_subnet_cidr=None, access_mode=None, apply_shared_vpc_dedicated_param=None, dedicated_subnets=None, is_send_email=None):
         r"""ApplyWorkspaceReq
 
         The model defined in huaweicloud sdk
 
-        :param auth_type: 主认证方式。 - KERBEROS：KERBEROS。 - KERBEROS_THIRD_SSO：第三方登录认证。
-        :type auth_type: str
         :param ad_domains: 
         :type ad_domains: :class:`huaweicloudsdkworkspace.v2.AdDomain`
-        :param third_gateway_info: 
-        :type third_gateway_info: :class:`huaweicloudsdkworkspace.v2.ThirdGatewayConfigInfo`
         :param enterprise_id: 企业ID。 企业ID是您在云桌面服务的唯一标识，终端用户登录时需要填写企业ID，若不自定义设置企业ID，系统将自动生成您的企业ID。格式为由半角数字、字母、_-组成，长度范围小于等于32个字符。
         :type enterprise_id: str
         :param vpc_id: VPC ID。
@@ -79,25 +61,13 @@ class ApplyWorkspaceReq:
         :type apply_shared_vpc_dedicated_param: :class:`huaweicloudsdkworkspace.v2.ApplySharedVpcDedicatedParam`
         :param dedicated_subnets: 专线接入网段列表，多个网段信息用分号隔开，列表长度不超过5。
         :type dedicated_subnets: str
-        :param availability_zone: 开通服务资源使用的可用分区。
-        :type availability_zone: str
-        :param publicip_type: 外部网络。
-        :type publicip_type: str
-        :param assist_auth_config: 
-        :type assist_auth_config: :class:`huaweicloudsdkworkspace.v2.AssistAuthMethodConfigRequest`
-        :param site_configs: 边缘开户信息
-        :type site_configs: list[:class:`huaweicloudsdkworkspace.v2.SiteConfigsRequest`]
         :param is_send_email: 桌面退订是否发送邮件通知。
         :type is_send_email: bool
-        :param enterprise_project_id: 企业项目ID，默认\&quot;0\&quot;
-        :type enterprise_project_id: str
         """
         
         
 
-        self._auth_type = None
         self._ad_domains = None
-        self._third_gateway_info = None
         self._enterprise_id = None
         self._vpc_id = None
         self._subnet_ids = None
@@ -105,19 +75,10 @@ class ApplyWorkspaceReq:
         self._access_mode = None
         self._apply_shared_vpc_dedicated_param = None
         self._dedicated_subnets = None
-        self._availability_zone = None
-        self._publicip_type = None
-        self._assist_auth_config = None
-        self._site_configs = None
         self._is_send_email = None
-        self._enterprise_project_id = None
         self.discriminator = None
 
-        if auth_type is not None:
-            self.auth_type = auth_type
         self.ad_domains = ad_domains
-        if third_gateway_info is not None:
-            self.third_gateway_info = third_gateway_info
         if enterprise_id is not None:
             self.enterprise_id = enterprise_id
         if vpc_id is not None:
@@ -132,40 +93,8 @@ class ApplyWorkspaceReq:
             self.apply_shared_vpc_dedicated_param = apply_shared_vpc_dedicated_param
         if dedicated_subnets is not None:
             self.dedicated_subnets = dedicated_subnets
-        if availability_zone is not None:
-            self.availability_zone = availability_zone
-        if publicip_type is not None:
-            self.publicip_type = publicip_type
-        if assist_auth_config is not None:
-            self.assist_auth_config = assist_auth_config
-        if site_configs is not None:
-            self.site_configs = site_configs
         if is_send_email is not None:
             self.is_send_email = is_send_email
-        if enterprise_project_id is not None:
-            self.enterprise_project_id = enterprise_project_id
-
-    @property
-    def auth_type(self):
-        r"""Gets the auth_type of this ApplyWorkspaceReq.
-
-        主认证方式。 - KERBEROS：KERBEROS。 - KERBEROS_THIRD_SSO：第三方登录认证。
-
-        :return: The auth_type of this ApplyWorkspaceReq.
-        :rtype: str
-        """
-        return self._auth_type
-
-    @auth_type.setter
-    def auth_type(self, auth_type):
-        r"""Sets the auth_type of this ApplyWorkspaceReq.
-
-        主认证方式。 - KERBEROS：KERBEROS。 - KERBEROS_THIRD_SSO：第三方登录认证。
-
-        :param auth_type: The auth_type of this ApplyWorkspaceReq.
-        :type auth_type: str
-        """
-        self._auth_type = auth_type
 
     @property
     def ad_domains(self):
@@ -184,24 +113,6 @@ class ApplyWorkspaceReq:
         :type ad_domains: :class:`huaweicloudsdkworkspace.v2.AdDomain`
         """
         self._ad_domains = ad_domains
-
-    @property
-    def third_gateway_info(self):
-        r"""Gets the third_gateway_info of this ApplyWorkspaceReq.
-
-        :return: The third_gateway_info of this ApplyWorkspaceReq.
-        :rtype: :class:`huaweicloudsdkworkspace.v2.ThirdGatewayConfigInfo`
-        """
-        return self._third_gateway_info
-
-    @third_gateway_info.setter
-    def third_gateway_info(self, third_gateway_info):
-        r"""Sets the third_gateway_info of this ApplyWorkspaceReq.
-
-        :param third_gateway_info: The third_gateway_info of this ApplyWorkspaceReq.
-        :type third_gateway_info: :class:`huaweicloudsdkworkspace.v2.ThirdGatewayConfigInfo`
-        """
-        self._third_gateway_info = third_gateway_info
 
     @property
     def enterprise_id(self):
@@ -354,90 +265,6 @@ class ApplyWorkspaceReq:
         self._dedicated_subnets = dedicated_subnets
 
     @property
-    def availability_zone(self):
-        r"""Gets the availability_zone of this ApplyWorkspaceReq.
-
-        开通服务资源使用的可用分区。
-
-        :return: The availability_zone of this ApplyWorkspaceReq.
-        :rtype: str
-        """
-        return self._availability_zone
-
-    @availability_zone.setter
-    def availability_zone(self, availability_zone):
-        r"""Sets the availability_zone of this ApplyWorkspaceReq.
-
-        开通服务资源使用的可用分区。
-
-        :param availability_zone: The availability_zone of this ApplyWorkspaceReq.
-        :type availability_zone: str
-        """
-        self._availability_zone = availability_zone
-
-    @property
-    def publicip_type(self):
-        r"""Gets the publicip_type of this ApplyWorkspaceReq.
-
-        外部网络。
-
-        :return: The publicip_type of this ApplyWorkspaceReq.
-        :rtype: str
-        """
-        return self._publicip_type
-
-    @publicip_type.setter
-    def publicip_type(self, publicip_type):
-        r"""Sets the publicip_type of this ApplyWorkspaceReq.
-
-        外部网络。
-
-        :param publicip_type: The publicip_type of this ApplyWorkspaceReq.
-        :type publicip_type: str
-        """
-        self._publicip_type = publicip_type
-
-    @property
-    def assist_auth_config(self):
-        r"""Gets the assist_auth_config of this ApplyWorkspaceReq.
-
-        :return: The assist_auth_config of this ApplyWorkspaceReq.
-        :rtype: :class:`huaweicloudsdkworkspace.v2.AssistAuthMethodConfigRequest`
-        """
-        return self._assist_auth_config
-
-    @assist_auth_config.setter
-    def assist_auth_config(self, assist_auth_config):
-        r"""Sets the assist_auth_config of this ApplyWorkspaceReq.
-
-        :param assist_auth_config: The assist_auth_config of this ApplyWorkspaceReq.
-        :type assist_auth_config: :class:`huaweicloudsdkworkspace.v2.AssistAuthMethodConfigRequest`
-        """
-        self._assist_auth_config = assist_auth_config
-
-    @property
-    def site_configs(self):
-        r"""Gets the site_configs of this ApplyWorkspaceReq.
-
-        边缘开户信息
-
-        :return: The site_configs of this ApplyWorkspaceReq.
-        :rtype: list[:class:`huaweicloudsdkworkspace.v2.SiteConfigsRequest`]
-        """
-        return self._site_configs
-
-    @site_configs.setter
-    def site_configs(self, site_configs):
-        r"""Sets the site_configs of this ApplyWorkspaceReq.
-
-        边缘开户信息
-
-        :param site_configs: The site_configs of this ApplyWorkspaceReq.
-        :type site_configs: list[:class:`huaweicloudsdkworkspace.v2.SiteConfigsRequest`]
-        """
-        self._site_configs = site_configs
-
-    @property
     def is_send_email(self):
         r"""Gets the is_send_email of this ApplyWorkspaceReq.
 
@@ -458,28 +285,6 @@ class ApplyWorkspaceReq:
         :type is_send_email: bool
         """
         self._is_send_email = is_send_email
-
-    @property
-    def enterprise_project_id(self):
-        r"""Gets the enterprise_project_id of this ApplyWorkspaceReq.
-
-        企业项目ID，默认\"0\"
-
-        :return: The enterprise_project_id of this ApplyWorkspaceReq.
-        :rtype: str
-        """
-        return self._enterprise_project_id
-
-    @enterprise_project_id.setter
-    def enterprise_project_id(self, enterprise_project_id):
-        r"""Sets the enterprise_project_id of this ApplyWorkspaceReq.
-
-        企业项目ID，默认\"0\"
-
-        :param enterprise_project_id: The enterprise_project_id of this ApplyWorkspaceReq.
-        :type enterprise_project_id: str
-        """
-        self._enterprise_project_id = enterprise_project_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -32,9 +32,9 @@ class ListTerminalsBindingDesktopsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param bind_list: MAC绑定VM信息列表
+        :param bind_list: MAC绑定VM信息列表。
         :type bind_list: list[:class:`huaweicloudsdkworkspace.v2.TerminalsBindingDesktopsInfo`]
-        :param total_num: 返回结果总条数
+        :param total_num: 返回结果总条数。
         :type total_num: int
         """
         
@@ -53,7 +53,7 @@ class ListTerminalsBindingDesktopsResponse(SdkResponse):
     def bind_list(self):
         r"""Gets the bind_list of this ListTerminalsBindingDesktopsResponse.
 
-        MAC绑定VM信息列表
+        MAC绑定VM信息列表。
 
         :return: The bind_list of this ListTerminalsBindingDesktopsResponse.
         :rtype: list[:class:`huaweicloudsdkworkspace.v2.TerminalsBindingDesktopsInfo`]
@@ -64,7 +64,7 @@ class ListTerminalsBindingDesktopsResponse(SdkResponse):
     def bind_list(self, bind_list):
         r"""Sets the bind_list of this ListTerminalsBindingDesktopsResponse.
 
-        MAC绑定VM信息列表
+        MAC绑定VM信息列表。
 
         :param bind_list: The bind_list of this ListTerminalsBindingDesktopsResponse.
         :type bind_list: list[:class:`huaweicloudsdkworkspace.v2.TerminalsBindingDesktopsInfo`]
@@ -75,7 +75,7 @@ class ListTerminalsBindingDesktopsResponse(SdkResponse):
     def total_num(self):
         r"""Gets the total_num of this ListTerminalsBindingDesktopsResponse.
 
-        返回结果总条数
+        返回结果总条数。
 
         :return: The total_num of this ListTerminalsBindingDesktopsResponse.
         :rtype: int
@@ -86,7 +86,7 @@ class ListTerminalsBindingDesktopsResponse(SdkResponse):
     def total_num(self, total_num):
         r"""Sets the total_num of this ListTerminalsBindingDesktopsResponse.
 
-        返回结果总条数
+        返回结果总条数。
 
         :param total_num: The total_num of this ListTerminalsBindingDesktopsResponse.
         :type total_num: int

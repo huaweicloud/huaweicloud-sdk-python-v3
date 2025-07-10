@@ -17,44 +17,37 @@ class ApplyDedicatedStandbyNetworkParam:
     sensitive_list = []
 
     openapi_types = {
-        'site_id': 'str',
         'address': 'str',
         'port': 'int',
         'availability_zone': 'list[str]'
     }
 
     attribute_map = {
-        'site_id': 'site_id',
         'address': 'address',
         'port': 'port',
         'availability_zone': 'availability_zone'
     }
 
-    def __init__(self, site_id=None, address=None, port=None, availability_zone=None):
+    def __init__(self, address=None, port=None, availability_zone=None):
         r"""ApplyDedicatedStandbyNetworkParam
 
         The model defined in huaweicloud sdk
 
-        :param site_id: 租户的站点id
-        :type site_id: str
-        :param address: 租户指定的专线备用地址
+        :param address: 租户指定的专线备用地址。
         :type address: str
-        :param port: 租户指定的专线备用地址端口
+        :param port: 租户指定的专线备用地址端口。
         :type port: int
-        :param availability_zone: 开通服务资源使用的可用分区，默认随机使用2个可用区
+        :param availability_zone: 开通服务资源使用的可用分区，默认随机使用2个可用区。
         :type availability_zone: list[str]
         """
         
         
 
-        self._site_id = None
         self._address = None
         self._port = None
         self._availability_zone = None
         self.discriminator = None
 
-        if site_id is not None:
-            self.site_id = site_id
         if address is not None:
             self.address = address
         if port is not None:
@@ -63,32 +56,10 @@ class ApplyDedicatedStandbyNetworkParam:
             self.availability_zone = availability_zone
 
     @property
-    def site_id(self):
-        r"""Gets the site_id of this ApplyDedicatedStandbyNetworkParam.
-
-        租户的站点id
-
-        :return: The site_id of this ApplyDedicatedStandbyNetworkParam.
-        :rtype: str
-        """
-        return self._site_id
-
-    @site_id.setter
-    def site_id(self, site_id):
-        r"""Sets the site_id of this ApplyDedicatedStandbyNetworkParam.
-
-        租户的站点id
-
-        :param site_id: The site_id of this ApplyDedicatedStandbyNetworkParam.
-        :type site_id: str
-        """
-        self._site_id = site_id
-
-    @property
     def address(self):
         r"""Gets the address of this ApplyDedicatedStandbyNetworkParam.
 
-        租户指定的专线备用地址
+        租户指定的专线备用地址。
 
         :return: The address of this ApplyDedicatedStandbyNetworkParam.
         :rtype: str
@@ -99,7 +70,7 @@ class ApplyDedicatedStandbyNetworkParam:
     def address(self, address):
         r"""Sets the address of this ApplyDedicatedStandbyNetworkParam.
 
-        租户指定的专线备用地址
+        租户指定的专线备用地址。
 
         :param address: The address of this ApplyDedicatedStandbyNetworkParam.
         :type address: str
@@ -110,7 +81,7 @@ class ApplyDedicatedStandbyNetworkParam:
     def port(self):
         r"""Gets the port of this ApplyDedicatedStandbyNetworkParam.
 
-        租户指定的专线备用地址端口
+        租户指定的专线备用地址端口。
 
         :return: The port of this ApplyDedicatedStandbyNetworkParam.
         :rtype: int
@@ -121,7 +92,7 @@ class ApplyDedicatedStandbyNetworkParam:
     def port(self, port):
         r"""Sets the port of this ApplyDedicatedStandbyNetworkParam.
 
-        租户指定的专线备用地址端口
+        租户指定的专线备用地址端口。
 
         :param port: The port of this ApplyDedicatedStandbyNetworkParam.
         :type port: int
@@ -132,7 +103,7 @@ class ApplyDedicatedStandbyNetworkParam:
     def availability_zone(self):
         r"""Gets the availability_zone of this ApplyDedicatedStandbyNetworkParam.
 
-        开通服务资源使用的可用分区，默认随机使用2个可用区
+        开通服务资源使用的可用分区，默认随机使用2个可用区。
 
         :return: The availability_zone of this ApplyDedicatedStandbyNetworkParam.
         :rtype: list[str]
@@ -143,7 +114,7 @@ class ApplyDedicatedStandbyNetworkParam:
     def availability_zone(self, availability_zone):
         r"""Sets the availability_zone of this ApplyDedicatedStandbyNetworkParam.
 
-        开通服务资源使用的可用分区，默认随机使用2个可用区
+        开通服务资源使用的可用分区，默认随机使用2个可用区。
 
         :param availability_zone: The availability_zone of this ApplyDedicatedStandbyNetworkParam.
         :type availability_zone: list[str]
