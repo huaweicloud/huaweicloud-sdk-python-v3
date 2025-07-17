@@ -1,3 +1,115 @@
+# 3.1.157 2025-07-17
+
+### HuaweiCloud SDK Config
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowConfigurationAggregator**
+    - 响应参数变更
+      - `+ tags`
+  - **UpdateConfigurationAggregator**
+    - 请求参数变更
+      - `+ tags`
+    - 响应参数变更
+      - `+ tags`
+  - **CreateAggregationAuthorization**
+    - 请求参数变更
+      - `+ tags`
+    - 响应参数变更
+      - `+ tags`
+  - **ListAggregationAuthorizations**
+    - 响应参数变更
+      - `+ tags`
+      - `+ aggregation_authorizations.tags`
+  - **CountResourcesByTag**
+    - 请求参数变更
+      - `+ resource_type: enum value [config:aggregators,config:aggregationAuthorizations]`
+  - **TagResource**
+    - 请求参数变更
+      - `+ resource_type: enum value [config:aggregators,config:aggregationAuthorizations]`
+  - **UnTagResource**
+    - 请求参数变更
+      - `+ resource_type: enum value [config:aggregators,config:aggregationAuthorizations]`
+  - **ListTagsForResource**
+    - 请求参数变更
+      - `+ resource_type: enum value [config:aggregators,config:aggregationAuthorizations]`
+  - **ListTagsForResourceType**
+    - 请求参数变更
+      - `+ resource_type: enum value [config:aggregators,config:aggregationAuthorizations]`
+  - **CreateConfigurationAggregator**
+    - 请求参数变更
+      - `+ tags`
+    - 响应参数变更
+      - `+ tags`
+  - **ListConfigurationAggregators**
+    - 响应参数变更
+      - `+ tags`
+      - `+ configuration_aggregators.tags`
+  - **ListResourcesByTag**
+    - 请求参数变更
+      - `+ resource_type: enum value [config:aggregators,config:aggregationAuthorizations]`
+
+### HuaweiCloud SDK DWR
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **DescribeIndex**
+    - 响应参数变更
+      - `* data.index_desc: list<IndexDesc> -> object<IndexDesc>`
+  - **DescribeCollection**
+    - 响应参数变更
+      - `+ data.partitions_num`
+      - `+ data.shards_num`
+      - `- data.params`
+      - `* data.entity_num: int32 -> int64`
+      - `* data.fields.dim: int32 -> string`
+      - `* data.fields.max_length: int32 -> string`
+      - `* data.fields.max_capacity: int32 -> string`
+      - `+ data.indexes.index_params`
+      - `+ data.indexes.index_state`
+      - `- data.indexes.params`
+      - `* data.indexes: list<IndexParams> -> list<IndexDesc>`
+
+### HuaweiCloud SDK IEF
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowQuota**
+    - 请求参数变更
+      - `+ ief-instance-id`
+
+### HuaweiCloud SDK MetaStudio
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持以下接口：
+    - `ListAsrVocabulary`
+    - `CreateAsrVocabulary`
+    - `ShowAsrVocabulary`
+    - `UpdateAsrVocabulary`
+    - `DeleteAsrVocabulary`
+    - `ShowAsrVocabularyAssociation`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
 # 3.1.156 2025-07-10
 
 ### HuaweiCloud SDK CDN

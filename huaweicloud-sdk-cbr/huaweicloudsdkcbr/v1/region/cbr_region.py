@@ -68,6 +68,10 @@ class CbrRegion:
                         "https://cbr.eu-west-0.myhuaweicloud.com")
     MY_KUALALUMPUR_1 = Region("my-kualalumpur-1",
                         "https://cbr.my-kualalumpur-1.myhuaweicloud.com")
+    CN_NORTH_12 = Region("cn-north-12",
+                        "https://cbr.cn-north-12.myhuaweicloud.com")
+    CN_SOUTHWEST_3 = Region("cn-southwest-3",
+                        "https://cbr.cn-southwest-3.myhuaweicloud.com")
     RU_MOSCOW_1 = Region("ru-moscow-1",
                         "https://cbr.ru-moscow-1.myhuaweicloud.com")
 
@@ -103,6 +107,8 @@ class CbrRegion:
         "ae-ad-1": AE_AD_1,
         "eu-west-0": EU_WEST_0,
         "my-kualalumpur-1": MY_KUALALUMPUR_1,
+        "cn-north-12": CN_NORTH_12,
+        "cn-southwest-3": CN_SOUTHWEST_3,
         "ru-moscow-1": RU_MOSCOW_1,
     }
 

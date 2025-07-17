@@ -21,6 +21,7 @@
 """
 
 from xml.etree import ElementTree as ET
+from defusedxml.ElementTree import fromstring
 from decimal import Decimal
 import six
 import re
@@ -89,7 +90,7 @@ class XmlTransfer:
         if not string:
             return _dict
 
-        root = ET.fromstring(string)
+        root = fromstring(string)
         self._handle_xmlns(root)
         key = root.tag
         text = self._get_text(root)

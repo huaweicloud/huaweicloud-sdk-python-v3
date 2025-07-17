@@ -49,7 +49,7 @@ class CreateStoreBody:
         :type flavor: :class:`huaweicloudsdkdwr.v1.Flavor`
         :param charge_info: 
         :type charge_info: :class:`huaweicloudsdkdwr.v1.ChargeInfo`
-        :param description: **参数解释：** 知识仓实例描述信息。 **约束限制：** 有效长度0-255  **取值范围：** 不涉及。 **默认取值:** 不涉及。
+        :param description: **参数解释：** 知识仓实例描述信息。 **约束限制：** 有效长度0-255字节。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
         :type description: str
         """
         
@@ -178,7 +178,7 @@ class CreateStoreBody:
     def description(self):
         r"""Gets the description of this CreateStoreBody.
 
-        **参数解释：** 知识仓实例描述信息。 **约束限制：** 有效长度0-255  **取值范围：** 不涉及。 **默认取值:** 不涉及。
+        **参数解释：** 知识仓实例描述信息。 **约束限制：** 有效长度0-255字节。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :return: The description of this CreateStoreBody.
         :rtype: str
@@ -189,7 +189,7 @@ class CreateStoreBody:
     def description(self, description):
         r"""Sets the description of this CreateStoreBody.
 
-        **参数解释：** 知识仓实例描述信息。 **约束限制：** 有效长度0-255  **取值范围：** 不涉及。 **默认取值:** 不涉及。
+        **参数解释：** 知识仓实例描述信息。 **约束限制：** 有效长度0-255字节。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :param description: The description of this CreateStoreBody.
         :type description: str

@@ -49,7 +49,7 @@ class CreateCollectionBody:
         :type primary_field: :class:`huaweicloudsdkdwr.v1.PrimaryField`
         :param fields: **参数解释：** 集合中通用字段，创建列的schema。 **约束限制：** 不涉及。
         :type fields: list[:class:`huaweicloudsdkdwr.v1.Field`]
-        :param description: **参数解释：** 指定 Collection 的描述信息。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
+        :param description: **参数解释：** 指定 Collection 的描述信息。 **约束限制：** 有效长度0-255字节。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
         :type description: str
         :param index_params: **参数解释：** 索引的配置信息。 **约束限制：** 不涉及。
         :type index_params: list[:class:`huaweicloudsdkdwr.v1.IndexParams`]
@@ -167,7 +167,7 @@ class CreateCollectionBody:
     def description(self):
         r"""Gets the description of this CreateCollectionBody.
 
-        **参数解释：** 指定 Collection 的描述信息。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
+        **参数解释：** 指定 Collection 的描述信息。 **约束限制：** 有效长度0-255字节。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :return: The description of this CreateCollectionBody.
         :rtype: str
@@ -178,7 +178,7 @@ class CreateCollectionBody:
     def description(self, description):
         r"""Sets the description of this CreateCollectionBody.
 
-        **参数解释：** 指定 Collection 的描述信息。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
+        **参数解释：** 指定 Collection 的描述信息。 **约束限制：** 有效长度0-255字节。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :param description: The description of this CreateCollectionBody.
         :type description: str

@@ -47,9 +47,9 @@ class HybridSearchBody:
         :type collection_name: str
         :param output_fields: **参数解释：** field名称列表，配置需与搜索结果一起返回的字段。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** &#x60;[ ]&#x60;，不返回任何额外的字段数据。
         :type output_fields: list[str]
-        :param top_k: **参数解释：** 返回的entity个数限制。可以将此参数与offset结合使用以启用分页。 **约束限制：** 与offset取值的总和应小于16384。 **取值范围：** &#x60;[1, 16384]&#x60; **默认取值:** 10
+        :param top_k: **参数解释：** 返回的entity个数限制。可以将此参数与offset结合使用以启用分页。 **约束限制：** 1.与offset取值的总和应小于16384。 2.当sub_search数量为1时，以sub_search中的top_k和offset为准。 **取值范围：** &#x60;[1, 16384]&#x60; **默认取值:** 10
         :type top_k: int
-        :param offset: **参数解释：** 在搜索结果中跳过的记录数。可以将此参数与 top_k 参数结合使用以启用分页。 **约束限制：** 与top_k取值的总和应小于16384。 **取值范围：** 大于等于0 **默认取值：** 0
+        :param offset: **参数解释：** 在搜索结果中跳过的记录数。可以将此参数与 top_k 参数结合使用以启用分页。 **约束限制：** 1.与top_k取值的总和应小于16384。 2.当sub_search数量为1时，以sub_search中的top_k和offset为准。 **取值范围：** 大于等于0 **默认取值：** 0
         :type offset: int
         :param sub_search: **参数解释：** rerank策略。 **约束限制：** 不涉及 **取值范围：** 不涉及。 **默认取值：** 默认使用rrf算法。
         :type sub_search: list[:class:`huaweicloudsdkdwr.v1.SubSearch`]
@@ -150,7 +150,7 @@ class HybridSearchBody:
     def top_k(self):
         r"""Gets the top_k of this HybridSearchBody.
 
-        **参数解释：** 返回的entity个数限制。可以将此参数与offset结合使用以启用分页。 **约束限制：** 与offset取值的总和应小于16384。 **取值范围：** `[1, 16384]` **默认取值:** 10
+        **参数解释：** 返回的entity个数限制。可以将此参数与offset结合使用以启用分页。 **约束限制：** 1.与offset取值的总和应小于16384。 2.当sub_search数量为1时，以sub_search中的top_k和offset为准。 **取值范围：** `[1, 16384]` **默认取值:** 10
 
         :return: The top_k of this HybridSearchBody.
         :rtype: int
@@ -161,7 +161,7 @@ class HybridSearchBody:
     def top_k(self, top_k):
         r"""Sets the top_k of this HybridSearchBody.
 
-        **参数解释：** 返回的entity个数限制。可以将此参数与offset结合使用以启用分页。 **约束限制：** 与offset取值的总和应小于16384。 **取值范围：** `[1, 16384]` **默认取值:** 10
+        **参数解释：** 返回的entity个数限制。可以将此参数与offset结合使用以启用分页。 **约束限制：** 1.与offset取值的总和应小于16384。 2.当sub_search数量为1时，以sub_search中的top_k和offset为准。 **取值范围：** `[1, 16384]` **默认取值:** 10
 
         :param top_k: The top_k of this HybridSearchBody.
         :type top_k: int
@@ -172,7 +172,7 @@ class HybridSearchBody:
     def offset(self):
         r"""Gets the offset of this HybridSearchBody.
 
-        **参数解释：** 在搜索结果中跳过的记录数。可以将此参数与 top_k 参数结合使用以启用分页。 **约束限制：** 与top_k取值的总和应小于16384。 **取值范围：** 大于等于0 **默认取值：** 0
+        **参数解释：** 在搜索结果中跳过的记录数。可以将此参数与 top_k 参数结合使用以启用分页。 **约束限制：** 1.与top_k取值的总和应小于16384。 2.当sub_search数量为1时，以sub_search中的top_k和offset为准。 **取值范围：** 大于等于0 **默认取值：** 0
 
         :return: The offset of this HybridSearchBody.
         :rtype: int
@@ -183,7 +183,7 @@ class HybridSearchBody:
     def offset(self, offset):
         r"""Sets the offset of this HybridSearchBody.
 
-        **参数解释：** 在搜索结果中跳过的记录数。可以将此参数与 top_k 参数结合使用以启用分页。 **约束限制：** 与top_k取值的总和应小于16384。 **取值范围：** 大于等于0 **默认取值：** 0
+        **参数解释：** 在搜索结果中跳过的记录数。可以将此参数与 top_k 参数结合使用以启用分页。 **约束限制：** 1.与top_k取值的总和应小于16384。 2.当sub_search数量为1时，以sub_search中的top_k和offset为准。 **取值范围：** 大于等于0 **默认取值：** 0
 
         :param offset: The offset of this HybridSearchBody.
         :type offset: int

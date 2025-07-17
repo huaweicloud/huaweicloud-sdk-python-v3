@@ -1,3 +1,115 @@
+# 3.1.157 2025-07-17
+
+### HuaweiCloud SDK Config
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowConfigurationAggregator**
+    - changes of response param
+      - `+ tags`
+  - **UpdateConfigurationAggregator**
+    - changes of request param
+      - `+ tags`
+    - changes of response param
+      - `+ tags`
+  - **CreateAggregationAuthorization**
+    - changes of request param
+      - `+ tags`
+    - changes of response param
+      - `+ tags`
+  - **ListAggregationAuthorizations**
+    - changes of response param
+      - `+ tags`
+      - `+ aggregation_authorizations.tags`
+  - **CountResourcesByTag**
+    - changes of request param
+      - `+ resource_type: enum value [config:aggregators,config:aggregationAuthorizations]`
+  - **TagResource**
+    - changes of request param
+      - `+ resource_type: enum value [config:aggregators,config:aggregationAuthorizations]`
+  - **UnTagResource**
+    - changes of request param
+      - `+ resource_type: enum value [config:aggregators,config:aggregationAuthorizations]`
+  - **ListTagsForResource**
+    - changes of request param
+      - `+ resource_type: enum value [config:aggregators,config:aggregationAuthorizations]`
+  - **ListTagsForResourceType**
+    - changes of request param
+      - `+ resource_type: enum value [config:aggregators,config:aggregationAuthorizations]`
+  - **CreateConfigurationAggregator**
+    - changes of request param
+      - `+ tags`
+    - changes of response param
+      - `+ tags`
+  - **ListConfigurationAggregators**
+    - changes of response param
+      - `+ tags`
+      - `+ configuration_aggregators.tags`
+  - **ListResourcesByTag**
+    - changes of request param
+      - `+ resource_type: enum value [config:aggregators,config:aggregationAuthorizations]`
+
+### HuaweiCloud SDK DWR
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **DescribeIndex**
+    - changes of response param
+      - `* data.index_desc: list<IndexDesc> -> object<IndexDesc>`
+  - **DescribeCollection**
+    - changes of response param
+      - `+ data.partitions_num`
+      - `+ data.shards_num`
+      - `- data.params`
+      - `* data.entity_num: int32 -> int64`
+      - `* data.fields.dim: int32 -> string`
+      - `* data.fields.max_length: int32 -> string`
+      - `* data.fields.max_capacity: int32 -> string`
+      - `+ data.indexes.index_params`
+      - `+ data.indexes.index_state`
+      - `- data.indexes.params`
+      - `* data.indexes: list<IndexParams> -> list<IndexDesc>`
+
+### HuaweiCloud SDK IEF
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowQuota**
+    - changes of request param
+      - `+ ief-instance-id`
+
+### HuaweiCloud SDK MetaStudio
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the following APIs:
+    - `ListAsrVocabulary`
+    - `CreateAsrVocabulary`
+    - `ShowAsrVocabulary`
+    - `UpdateAsrVocabulary`
+    - `DeleteAsrVocabulary`
+    - `ShowAsrVocabularyAssociation`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
 # 3.1.156 2025-07-10
 
 ### HuaweiCloud SDK CDN

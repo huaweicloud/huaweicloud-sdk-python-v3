@@ -12,11 +12,17 @@ class DwrRegion:
                         "https://dwr-lms.cn-southwest-2.myhuaweicloud.com")
     CN_NORTH_11 = Region("cn-north-11",
                         "https://dwr-lms.cn-north-11.myhuaweicloud.com")
+    CN_NORTH_9 = Region("cn-north-9",
+                        "https://dwr-lms.cn-north-9.myhuaweicloud.com")
+    CN_EAST_3 = Region("cn-east-3",
+                        "https://dwr-lms.cn-east-3.myhuaweicloud.com")
 
     static_fields = {
         "cn-south-1": CN_SOUTH_1,
         "cn-southwest-2": CN_SOUTHWEST_2,
         "cn-north-11": CN_NORTH_11,
+        "cn-north-9": CN_NORTH_9,
+        "cn-east-3": CN_EAST_3,
     }
 
     @classmethod

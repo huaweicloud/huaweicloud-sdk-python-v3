@@ -61,7 +61,7 @@ class SearchEntitiesBody:
         :type vector: list[float]
         :param vector_field: **参数解释：** 要搜索的向量字段名称。 **约束限制：** 必须是collection field schema中存在的向量字段名称。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
         :type vector_field: str
-        :param params: **参数解释：** 额外的搜索参数配置。 可以配置的参数： - ef: 每个查询的邻居候选集大小。候选集越大，搜索的精度越高，但是搜索时间也会随之增加。（仅对HNSW索引类型生效） - search_list: 候选列表的大小，越大召回率越高，但性能会下降。（仅对HANNS索引类型生效） - radius：查询范围的半径，若指定则进行range查询。  **约束限制：** 不涉及。 **取值范围：**   ef: [top_k + offset, int32_max]  search_list: [top_k + offset, int32_max]  radius: [0, 1.0] **默认取值:**  ef: top_k  search_list: 16
+        :param params: **参数解释：** 额外的搜索参数配置。 可以配置的参数： - ef: 每个查询的邻居候选集大小。候选集越大，搜索的精度越高，但是搜索时间也会随之增加。（仅对HNSW索引类型生效） - search_list: 候选列表的大小，越大召回率越高，但性能会下降。（仅对HANNS索引类型生效） - radius：查询范围的半径，若指定则进行range查询。  **约束限制：** 不涉及。 **取值范围：**   ef: [top_k + offset, int32_max]  search_list: [top_k + offset, int32_max]  radius: [0, 1.0] **默认取值:**  ef: top_k + offset  search_list: topk_k + offset
         :type params: dict(str, object)
         """
         
@@ -273,7 +273,7 @@ class SearchEntitiesBody:
     def params(self):
         r"""Gets the params of this SearchEntitiesBody.
 
-        **参数解释：** 额外的搜索参数配置。 可以配置的参数： - ef: 每个查询的邻居候选集大小。候选集越大，搜索的精度越高，但是搜索时间也会随之增加。（仅对HNSW索引类型生效） - search_list: 候选列表的大小，越大召回率越高，但性能会下降。（仅对HANNS索引类型生效） - radius：查询范围的半径，若指定则进行range查询。  **约束限制：** 不涉及。 **取值范围：**   ef: [top_k + offset, int32_max]  search_list: [top_k + offset, int32_max]  radius: [0, 1.0] **默认取值:**  ef: top_k  search_list: 16
+        **参数解释：** 额外的搜索参数配置。 可以配置的参数： - ef: 每个查询的邻居候选集大小。候选集越大，搜索的精度越高，但是搜索时间也会随之增加。（仅对HNSW索引类型生效） - search_list: 候选列表的大小，越大召回率越高，但性能会下降。（仅对HANNS索引类型生效） - radius：查询范围的半径，若指定则进行range查询。  **约束限制：** 不涉及。 **取值范围：**   ef: [top_k + offset, int32_max]  search_list: [top_k + offset, int32_max]  radius: [0, 1.0] **默认取值:**  ef: top_k + offset  search_list: topk_k + offset
 
         :return: The params of this SearchEntitiesBody.
         :rtype: dict(str, object)
@@ -284,7 +284,7 @@ class SearchEntitiesBody:
     def params(self, params):
         r"""Sets the params of this SearchEntitiesBody.
 
-        **参数解释：** 额外的搜索参数配置。 可以配置的参数： - ef: 每个查询的邻居候选集大小。候选集越大，搜索的精度越高，但是搜索时间也会随之增加。（仅对HNSW索引类型生效） - search_list: 候选列表的大小，越大召回率越高，但性能会下降。（仅对HANNS索引类型生效） - radius：查询范围的半径，若指定则进行range查询。  **约束限制：** 不涉及。 **取值范围：**   ef: [top_k + offset, int32_max]  search_list: [top_k + offset, int32_max]  radius: [0, 1.0] **默认取值:**  ef: top_k  search_list: 16
+        **参数解释：** 额外的搜索参数配置。 可以配置的参数： - ef: 每个查询的邻居候选集大小。候选集越大，搜索的精度越高，但是搜索时间也会随之增加。（仅对HNSW索引类型生效） - search_list: 候选列表的大小，越大召回率越高，但性能会下降。（仅对HANNS索引类型生效） - radius：查询范围的半径，若指定则进行range查询。  **约束限制：** 不涉及。 **取值范围：**   ef: [top_k + offset, int32_max]  search_list: [top_k + offset, int32_max]  radius: [0, 1.0] **默认取值:**  ef: top_k + offset  search_list: topk_k + offset
 
         :param params: The params of this SearchEntitiesBody.
         :type params: dict(str, object)

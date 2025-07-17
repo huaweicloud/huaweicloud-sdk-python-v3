@@ -5964,6 +5964,8 @@ class IefClient(Client):
             query_params.append(('types', local_var_params['types']))
 
         header_params = {}
+        if 'ief_instance_id' in local_var_params:
+            header_params['ief-instance-id'] = local_var_params['ief_instance_id']
 
         form_params = {}
 

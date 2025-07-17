@@ -21,9 +21,9 @@ class FieldData:
         'data_type': 'str',
         'primary_key': 'bool',
         'partition_key': 'bool',
-        'dim': 'int',
-        'max_length': 'int',
-        'max_capacity': 'int'
+        'dim': 'str',
+        'max_length': 'str',
+        'max_capacity': 'str'
     }
 
     attribute_map = {
@@ -50,11 +50,11 @@ class FieldData:
         :param partition_key: **参数解释：** 是否是partition key。 **约束限制：** 不涉及。 **取值范围：** true，false。 **默认取值:** 不涉及。
         :type partition_key: bool
         :param dim: **参数解释：** 向量列的维度值。 **约束限制：** field的数据类型是FloatVector, SparseFloatVector时生效。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
-        :type dim: int
+        :type dim: str
         :param max_length: **参数解释：** 字符串列设置的最大长度值。 **约束限制：** field的数据类型是String或者 Array 元素类型为String类型时生效。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
-        :type max_length: int
+        :type max_length: str
         :param max_capacity: **参数解释：** 数组列设置的最大容量值。 **约束限制：** field的数据类型是 Array 类型时生效。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
-        :type max_capacity: int
+        :type max_capacity: str
         """
         
         
@@ -174,7 +174,7 @@ class FieldData:
         **参数解释：** 向量列的维度值。 **约束限制：** field的数据类型是FloatVector, SparseFloatVector时生效。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :return: The dim of this FieldData.
-        :rtype: int
+        :rtype: str
         """
         return self._dim
 
@@ -185,7 +185,7 @@ class FieldData:
         **参数解释：** 向量列的维度值。 **约束限制：** field的数据类型是FloatVector, SparseFloatVector时生效。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :param dim: The dim of this FieldData.
-        :type dim: int
+        :type dim: str
         """
         self._dim = dim
 
@@ -196,7 +196,7 @@ class FieldData:
         **参数解释：** 字符串列设置的最大长度值。 **约束限制：** field的数据类型是String或者 Array 元素类型为String类型时生效。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :return: The max_length of this FieldData.
-        :rtype: int
+        :rtype: str
         """
         return self._max_length
 
@@ -207,7 +207,7 @@ class FieldData:
         **参数解释：** 字符串列设置的最大长度值。 **约束限制：** field的数据类型是String或者 Array 元素类型为String类型时生效。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :param max_length: The max_length of this FieldData.
-        :type max_length: int
+        :type max_length: str
         """
         self._max_length = max_length
 
@@ -218,7 +218,7 @@ class FieldData:
         **参数解释：** 数组列设置的最大容量值。 **约束限制：** field的数据类型是 Array 类型时生效。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :return: The max_capacity of this FieldData.
-        :rtype: int
+        :rtype: str
         """
         return self._max_capacity
 
@@ -229,7 +229,7 @@ class FieldData:
         **参数解释：** 数组列设置的最大容量值。 **约束限制：** field的数据类型是 Array 类型时生效。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :param max_capacity: The max_capacity of this FieldData.
-        :type max_capacity: int
+        :type max_capacity: str
         """
         self._max_capacity = max_capacity
 

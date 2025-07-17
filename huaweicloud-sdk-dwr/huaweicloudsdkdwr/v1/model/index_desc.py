@@ -39,7 +39,7 @@ class IndexDesc:
         :type index_name: str
         :param field_name: **参数解释：** 索引对应的字段名称。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type field_name: str
-        :param index_params: **参数解释：** 索引的参数信息。详情请查阅IndexParam。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
+        :param index_params: **参数解释：** 索引的参数信息。详情请查阅CreateIndex接口中 index_params结构中params字段的描述。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
         :type index_params: dict(str, object)
         :param index_state: **参数解释：** 索引状态。 **约束限制：** 不涉及。 **取值范围：** -\&quot;InProgress\&quot;：索引正在构建中或还未开始构建。 -\&quot;Finished\&quot;：索引构建完成。 -\&quot;Failed\&quot;：索引构建失败。 **默认取值:** 不涉及。
         :type index_state: str
@@ -106,7 +106,7 @@ class IndexDesc:
     def index_params(self):
         r"""Gets the index_params of this IndexDesc.
 
-        **参数解释：** 索引的参数信息。详情请查阅IndexParam。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
+        **参数解释：** 索引的参数信息。详情请查阅CreateIndex接口中 index_params结构中params字段的描述。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :return: The index_params of this IndexDesc.
         :rtype: dict(str, object)
@@ -117,7 +117,7 @@ class IndexDesc:
     def index_params(self, index_params):
         r"""Sets the index_params of this IndexDesc.
 
-        **参数解释：** 索引的参数信息。详情请查阅IndexParam。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
+        **参数解释：** 索引的参数信息。详情请查阅CreateIndex接口中 index_params结构中params字段的描述。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :param index_params: The index_params of this IndexDesc.
         :type index_params: dict(str, object)

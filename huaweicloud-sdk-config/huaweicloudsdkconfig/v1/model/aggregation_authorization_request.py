@@ -17,28 +17,35 @@ class AggregationAuthorizationRequest:
     sensitive_list = []
 
     openapi_types = {
-        'authorized_account_id': 'str'
+        'authorized_account_id': 'str',
+        'tags': 'list[ResourceTag]'
     }
 
     attribute_map = {
-        'authorized_account_id': 'authorized_account_id'
+        'authorized_account_id': 'authorized_account_id',
+        'tags': 'tags'
     }
 
-    def __init__(self, authorized_account_id=None):
+    def __init__(self, authorized_account_id=None, tags=None):
         r"""AggregationAuthorizationRequest
 
         The model defined in huaweicloud sdk
 
         :param authorized_account_id: 要授权的资源聚合器的帐号ID。
         :type authorized_account_id: str
+        :param tags: 标签列表
+        :type tags: list[:class:`huaweicloudsdkconfig.v1.ResourceTag`]
         """
         
         
 
         self._authorized_account_id = None
+        self._tags = None
         self.discriminator = None
 
         self.authorized_account_id = authorized_account_id
+        if tags is not None:
+            self.tags = tags
 
     @property
     def authorized_account_id(self):
@@ -61,6 +68,28 @@ class AggregationAuthorizationRequest:
         :type authorized_account_id: str
         """
         self._authorized_account_id = authorized_account_id
+
+    @property
+    def tags(self):
+        r"""Gets the tags of this AggregationAuthorizationRequest.
+
+        标签列表
+
+        :return: The tags of this AggregationAuthorizationRequest.
+        :rtype: list[:class:`huaweicloudsdkconfig.v1.ResourceTag`]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        r"""Sets the tags of this AggregationAuthorizationRequest.
+
+        标签列表
+
+        :param tags: The tags of this AggregationAuthorizationRequest.
+        :type tags: list[:class:`huaweicloudsdkconfig.v1.ResourceTag`]
+        """
+        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

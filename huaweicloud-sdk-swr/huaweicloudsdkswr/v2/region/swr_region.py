@@ -18,6 +18,8 @@ class SwrRegion:
                         "https://swr-api.cn-east-2.myhuaweicloud.com")
     CN_EAST_3 = Region("cn-east-3",
                         "https://swr-api.cn-east-3.myhuaweicloud.com")
+    CN_EAST_4 = Region("cn-east-4",
+                        "https://swr-api.cn-east-4.myhuaweicloud.com")
     CN_NORTH_1 = Region("cn-north-1",
                         "https://swr-api.cn-north-1.myhuaweicloud.com")
     CN_NORTH_2 = Region("cn-north-2",
@@ -68,6 +70,7 @@ class SwrRegion:
         "ap-southeast-3": AP_SOUTHEAST_3,
         "cn-east-2": CN_EAST_2,
         "cn-east-3": CN_EAST_3,
+        "cn-east-4": CN_EAST_4,
         "cn-north-1": CN_NORTH_1,
         "cn-north-2": CN_NORTH_2,
         "cn-north-4": CN_NORTH_4,

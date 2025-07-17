@@ -19,7 +19,7 @@ class DescribeIndexData:
     openapi_types = {
         'store_name': 'str',
         'collection_name': 'str',
-        'index_desc': 'list[IndexDesc]'
+        'index_desc': 'IndexDesc'
     }
 
     attribute_map = {
@@ -37,8 +37,8 @@ class DescribeIndexData:
         :type store_name: str
         :param collection_name: **参数解释：** collection名称。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type collection_name: str
-        :param index_desc: **参数解释：** 索引描述信息。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
-        :type index_desc: list[:class:`huaweicloudsdkdwr.v1.IndexDesc`]
+        :param index_desc: 
+        :type index_desc: :class:`huaweicloudsdkdwr.v1.IndexDesc`
         """
         
         
@@ -100,10 +100,8 @@ class DescribeIndexData:
     def index_desc(self):
         r"""Gets the index_desc of this DescribeIndexData.
 
-        **参数解释：** 索引描述信息。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
-
         :return: The index_desc of this DescribeIndexData.
-        :rtype: list[:class:`huaweicloudsdkdwr.v1.IndexDesc`]
+        :rtype: :class:`huaweicloudsdkdwr.v1.IndexDesc`
         """
         return self._index_desc
 
@@ -111,10 +109,8 @@ class DescribeIndexData:
     def index_desc(self, index_desc):
         r"""Sets the index_desc of this DescribeIndexData.
 
-        **参数解释：** 索引描述信息。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
-
         :param index_desc: The index_desc of this DescribeIndexData.
-        :type index_desc: list[:class:`huaweicloudsdkdwr.v1.IndexDesc`]
+        :type index_desc: :class:`huaweicloudsdkdwr.v1.IndexDesc`
         """
         self._index_desc = index_desc
 

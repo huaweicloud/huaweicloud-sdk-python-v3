@@ -23,7 +23,8 @@ class ConfigurationAggregatorResp:
         'aggregator_type': 'str',
         'account_aggregation_sources': 'AccountAggregationSource',
         'updated_at': 'str',
-        'created_at': 'str'
+        'created_at': 'str',
+        'tags': 'list[ResourceTag]'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class ConfigurationAggregatorResp:
         'aggregator_type': 'aggregator_type',
         'account_aggregation_sources': 'account_aggregation_sources',
         'updated_at': 'updated_at',
-        'created_at': 'created_at'
+        'created_at': 'created_at',
+        'tags': 'tags'
     }
 
-    def __init__(self, aggregator_name=None, aggregator_id=None, aggregator_urn=None, aggregator_type=None, account_aggregation_sources=None, updated_at=None, created_at=None):
+    def __init__(self, aggregator_name=None, aggregator_id=None, aggregator_urn=None, aggregator_type=None, account_aggregation_sources=None, updated_at=None, created_at=None, tags=None):
         r"""ConfigurationAggregatorResp
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class ConfigurationAggregatorResp:
         :type updated_at: str
         :param created_at: 资源聚合器创建时间。
         :type created_at: str
+        :param tags: 标签列表
+        :type tags: list[:class:`huaweicloudsdkconfig.v1.ResourceTag`]
         """
         
         
@@ -66,6 +70,7 @@ class ConfigurationAggregatorResp:
         self._account_aggregation_sources = None
         self._updated_at = None
         self._created_at = None
+        self._tags = None
         self.discriminator = None
 
         if aggregator_name is not None:
@@ -82,6 +87,8 @@ class ConfigurationAggregatorResp:
             self.updated_at = updated_at
         if created_at is not None:
             self.created_at = created_at
+        if tags is not None:
+            self.tags = tags
 
     @property
     def aggregator_name(self):
@@ -232,6 +239,28 @@ class ConfigurationAggregatorResp:
         :type created_at: str
         """
         self._created_at = created_at
+
+    @property
+    def tags(self):
+        r"""Gets the tags of this ConfigurationAggregatorResp.
+
+        标签列表
+
+        :return: The tags of this ConfigurationAggregatorResp.
+        :rtype: list[:class:`huaweicloudsdkconfig.v1.ResourceTag`]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        r"""Sets the tags of this ConfigurationAggregatorResp.
+
+        标签列表
+
+        :param tags: The tags of this ConfigurationAggregatorResp.
+        :type tags: list[:class:`huaweicloudsdkconfig.v1.ResourceTag`]
+        """
+        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

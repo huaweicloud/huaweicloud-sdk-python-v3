@@ -22,9 +22,10 @@ class DecribeCollectionData:
         'fields': 'list[FieldData]',
         'load_state': 'str',
         'description': 'str',
-        'params': 'dict(str, object)',
-        'indexes': 'list[IndexParams]',
-        'entity_num': 'int'
+        'indexes': 'list[IndexDesc]',
+        'entity_num': 'int',
+        'partitions_num': 'int',
+        'shards_num': 'int'
     }
 
     attribute_map = {
@@ -33,12 +34,13 @@ class DecribeCollectionData:
         'fields': 'fields',
         'load_state': 'load_state',
         'description': 'description',
-        'params': 'params',
         'indexes': 'indexes',
-        'entity_num': 'entity_num'
+        'entity_num': 'entity_num',
+        'partitions_num': 'partitions_num',
+        'shards_num': 'shards_num'
     }
 
-    def __init__(self, store_name=None, collection_name=None, fields=None, load_state=None, description=None, params=None, indexes=None, entity_num=None):
+    def __init__(self, store_name=None, collection_name=None, fields=None, load_state=None, description=None, indexes=None, entity_num=None, partitions_num=None, shards_num=None):
         r"""DecribeCollectionData
 
         The model defined in huaweicloud sdk
@@ -53,12 +55,14 @@ class DecribeCollectionData:
         :type load_state: str
         :param description: **参数解释：** Collection 的描述信息。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
         :type description: str
-        :param params: **参数解释：** collection常用参数。 **约束限制：** shards_num: 默认2，取值范围[1, 16] partitions_num: 默认4，取值范围[1, 1024]，若所有field的partition_key为false，则partitions_num固定为1。 max_length: 默认256，取值范围[1, 65535]，当primary_field.type为String时，指示String的最大长度。
-        :type params: dict(str, object)
         :param indexes: **参数解释：** 索引的配置信息。 **约束限制：** 不涉及。
-        :type indexes: list[:class:`huaweicloudsdkdwr.v1.IndexParams`]
+        :type indexes: list[:class:`huaweicloudsdkdwr.v1.IndexDesc`]
         :param entity_num: **参数解释：** collection中的entity数量。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
         :type entity_num: int
+        :param partitions_num: **参数解释：** collection中的partition数量。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
+        :type partitions_num: int
+        :param shards_num: **参数解释：** collection中的shard数量。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
+        :type shards_num: int
         """
         
         
@@ -68,9 +72,10 @@ class DecribeCollectionData:
         self._fields = None
         self._load_state = None
         self._description = None
-        self._params = None
         self._indexes = None
         self._entity_num = None
+        self._partitions_num = None
+        self._shards_num = None
         self.discriminator = None
 
         self.store_name = store_name
@@ -80,12 +85,14 @@ class DecribeCollectionData:
             self.load_state = load_state
         if description is not None:
             self.description = description
-        if params is not None:
-            self.params = params
         if indexes is not None:
             self.indexes = indexes
         if entity_num is not None:
             self.entity_num = entity_num
+        if partitions_num is not None:
+            self.partitions_num = partitions_num
+        if shards_num is not None:
+            self.shards_num = shards_num
 
     @property
     def store_name(self):
@@ -198,35 +205,13 @@ class DecribeCollectionData:
         self._description = description
 
     @property
-    def params(self):
-        r"""Gets the params of this DecribeCollectionData.
-
-        **参数解释：** collection常用参数。 **约束限制：** shards_num: 默认2，取值范围[1, 16] partitions_num: 默认4，取值范围[1, 1024]，若所有field的partition_key为false，则partitions_num固定为1。 max_length: 默认256，取值范围[1, 65535]，当primary_field.type为String时，指示String的最大长度。
-
-        :return: The params of this DecribeCollectionData.
-        :rtype: dict(str, object)
-        """
-        return self._params
-
-    @params.setter
-    def params(self, params):
-        r"""Sets the params of this DecribeCollectionData.
-
-        **参数解释：** collection常用参数。 **约束限制：** shards_num: 默认2，取值范围[1, 16] partitions_num: 默认4，取值范围[1, 1024]，若所有field的partition_key为false，则partitions_num固定为1。 max_length: 默认256，取值范围[1, 65535]，当primary_field.type为String时，指示String的最大长度。
-
-        :param params: The params of this DecribeCollectionData.
-        :type params: dict(str, object)
-        """
-        self._params = params
-
-    @property
     def indexes(self):
         r"""Gets the indexes of this DecribeCollectionData.
 
         **参数解释：** 索引的配置信息。 **约束限制：** 不涉及。
 
         :return: The indexes of this DecribeCollectionData.
-        :rtype: list[:class:`huaweicloudsdkdwr.v1.IndexParams`]
+        :rtype: list[:class:`huaweicloudsdkdwr.v1.IndexDesc`]
         """
         return self._indexes
 
@@ -237,7 +222,7 @@ class DecribeCollectionData:
         **参数解释：** 索引的配置信息。 **约束限制：** 不涉及。
 
         :param indexes: The indexes of this DecribeCollectionData.
-        :type indexes: list[:class:`huaweicloudsdkdwr.v1.IndexParams`]
+        :type indexes: list[:class:`huaweicloudsdkdwr.v1.IndexDesc`]
         """
         self._indexes = indexes
 
@@ -262,6 +247,50 @@ class DecribeCollectionData:
         :type entity_num: int
         """
         self._entity_num = entity_num
+
+    @property
+    def partitions_num(self):
+        r"""Gets the partitions_num of this DecribeCollectionData.
+
+        **参数解释：** collection中的partition数量。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
+
+        :return: The partitions_num of this DecribeCollectionData.
+        :rtype: int
+        """
+        return self._partitions_num
+
+    @partitions_num.setter
+    def partitions_num(self, partitions_num):
+        r"""Sets the partitions_num of this DecribeCollectionData.
+
+        **参数解释：** collection中的partition数量。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
+
+        :param partitions_num: The partitions_num of this DecribeCollectionData.
+        :type partitions_num: int
+        """
+        self._partitions_num = partitions_num
+
+    @property
+    def shards_num(self):
+        r"""Gets the shards_num of this DecribeCollectionData.
+
+        **参数解释：** collection中的shard数量。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
+
+        :return: The shards_num of this DecribeCollectionData.
+        :rtype: int
+        """
+        return self._shards_num
+
+    @shards_num.setter
+    def shards_num(self, shards_num):
+        r"""Sets the shards_num of this DecribeCollectionData.
+
+        **参数解释：** collection中的shard数量。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
+
+        :param shards_num: The shards_num of this DecribeCollectionData.
+        :type shards_num: int
+        """
+        self._shards_num = shards_num
 
     def to_dict(self):
         """Returns the model properties as a dict"""

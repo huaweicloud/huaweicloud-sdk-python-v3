@@ -20,16 +20,18 @@ class CreateAggregationAuthorizationResponse(SdkResponse):
     openapi_types = {
         'aggregation_authorization_urn': 'str',
         'authorized_account_id': 'str',
-        'created_at': 'str'
+        'created_at': 'str',
+        'tags': 'list[ResourceTag]'
     }
 
     attribute_map = {
         'aggregation_authorization_urn': 'aggregation_authorization_urn',
         'authorized_account_id': 'authorized_account_id',
-        'created_at': 'created_at'
+        'created_at': 'created_at',
+        'tags': 'tags'
     }
 
-    def __init__(self, aggregation_authorization_urn=None, authorized_account_id=None, created_at=None):
+    def __init__(self, aggregation_authorization_urn=None, authorized_account_id=None, created_at=None, tags=None):
         r"""CreateAggregationAuthorizationResponse
 
         The model defined in huaweicloud sdk
@@ -40,6 +42,8 @@ class CreateAggregationAuthorizationResponse(SdkResponse):
         :type authorized_account_id: str
         :param created_at: 资源聚合器授权的创建时间。
         :type created_at: str
+        :param tags: 标签列表
+        :type tags: list[:class:`huaweicloudsdkconfig.v1.ResourceTag`]
         """
         
         super(CreateAggregationAuthorizationResponse, self).__init__()
@@ -47,6 +51,7 @@ class CreateAggregationAuthorizationResponse(SdkResponse):
         self._aggregation_authorization_urn = None
         self._authorized_account_id = None
         self._created_at = None
+        self._tags = None
         self.discriminator = None
 
         if aggregation_authorization_urn is not None:
@@ -55,6 +60,8 @@ class CreateAggregationAuthorizationResponse(SdkResponse):
             self.authorized_account_id = authorized_account_id
         if created_at is not None:
             self.created_at = created_at
+        if tags is not None:
+            self.tags = tags
 
     @property
     def aggregation_authorization_urn(self):
@@ -121,6 +128,28 @@ class CreateAggregationAuthorizationResponse(SdkResponse):
         :type created_at: str
         """
         self._created_at = created_at
+
+    @property
+    def tags(self):
+        r"""Gets the tags of this CreateAggregationAuthorizationResponse.
+
+        标签列表
+
+        :return: The tags of this CreateAggregationAuthorizationResponse.
+        :rtype: list[:class:`huaweicloudsdkconfig.v1.ResourceTag`]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        r"""Sets the tags of this CreateAggregationAuthorizationResponse.
+
+        标签列表
+
+        :param tags: The tags of this CreateAggregationAuthorizationResponse.
+        :type tags: list[:class:`huaweicloudsdkconfig.v1.ResourceTag`]
+        """
+        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

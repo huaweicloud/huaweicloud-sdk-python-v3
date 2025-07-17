@@ -19,16 +19,18 @@ class ConfigurationAggregatorRequest:
     openapi_types = {
         'aggregator_name': 'str',
         'aggregator_type': 'str',
-        'account_aggregation_sources': 'AccountAggregationSource'
+        'account_aggregation_sources': 'AccountAggregationSource',
+        'tags': 'list[ResourceTag]'
     }
 
     attribute_map = {
         'aggregator_name': 'aggregator_name',
         'aggregator_type': 'aggregator_type',
-        'account_aggregation_sources': 'account_aggregation_sources'
+        'account_aggregation_sources': 'account_aggregation_sources',
+        'tags': 'tags'
     }
 
-    def __init__(self, aggregator_name=None, aggregator_type=None, account_aggregation_sources=None):
+    def __init__(self, aggregator_name=None, aggregator_type=None, account_aggregation_sources=None, tags=None):
         r"""ConfigurationAggregatorRequest
 
         The model defined in huaweicloud sdk
@@ -39,6 +41,8 @@ class ConfigurationAggregatorRequest:
         :type aggregator_type: str
         :param account_aggregation_sources: 
         :type account_aggregation_sources: :class:`huaweicloudsdkconfig.v1.AccountAggregationSource`
+        :param tags: 标签列表
+        :type tags: list[:class:`huaweicloudsdkconfig.v1.ResourceTag`]
         """
         
         
@@ -46,12 +50,15 @@ class ConfigurationAggregatorRequest:
         self._aggregator_name = None
         self._aggregator_type = None
         self._account_aggregation_sources = None
+        self._tags = None
         self.discriminator = None
 
         self.aggregator_name = aggregator_name
         self.aggregator_type = aggregator_type
         if account_aggregation_sources is not None:
             self.account_aggregation_sources = account_aggregation_sources
+        if tags is not None:
+            self.tags = tags
 
     @property
     def aggregator_name(self):
@@ -114,6 +121,28 @@ class ConfigurationAggregatorRequest:
         :type account_aggregation_sources: :class:`huaweicloudsdkconfig.v1.AccountAggregationSource`
         """
         self._account_aggregation_sources = account_aggregation_sources
+
+    @property
+    def tags(self):
+        r"""Gets the tags of this ConfigurationAggregatorRequest.
+
+        标签列表
+
+        :return: The tags of this ConfigurationAggregatorRequest.
+        :rtype: list[:class:`huaweicloudsdkconfig.v1.ResourceTag`]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        r"""Sets the tags of this ConfigurationAggregatorRequest.
+
+        标签列表
+
+        :param tags: The tags of this ConfigurationAggregatorRequest.
+        :type tags: list[:class:`huaweicloudsdkconfig.v1.ResourceTag`]
+        """
+        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""
