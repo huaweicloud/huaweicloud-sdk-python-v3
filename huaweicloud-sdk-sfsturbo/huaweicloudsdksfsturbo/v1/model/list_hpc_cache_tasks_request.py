@@ -49,7 +49,7 @@ class ListHpcCacheTasksRequest:
         :type status: str
         :param offset: offset，默认值为 0
         :type offset: int
-        :param limit: limit，默认值为 20
+        :param limit: limit，默认值为 1000
         :type limit: int
         :param start_time: start_time
         :type start_time: str
@@ -174,7 +174,7 @@ class ListHpcCacheTasksRequest:
     def limit(self):
         r"""Gets the limit of this ListHpcCacheTasksRequest.
 
-        limit，默认值为 20
+        limit，默认值为 1000
 
         :return: The limit of this ListHpcCacheTasksRequest.
         :rtype: int
@@ -185,7 +185,7 @@ class ListHpcCacheTasksRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListHpcCacheTasksRequest.
 
-        limit，默认值为 20
+        limit，默认值为 1000
 
         :param limit: The limit of this ListHpcCacheTasksRequest.
         :type limit: int

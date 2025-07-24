@@ -35,13 +35,13 @@ class BssInfo:
 
         The model defined in huaweicloud sdk
 
-        :param is_auto_renew: 是否自动续费
+        :param is_auto_renew: 是否自动续费。0表示不自动续费，1表示自动续费。
         :type is_auto_renew: int
         :param period_num: 包周期订购的周期数
         :type period_num: int
         :param period_type: 包周期的类型，可选包年或包月，2 表示包月，3 表示包年
         :type period_type: int
-        :param is_auto_pay: 是否生成订单后自动扣款
+        :param is_auto_pay: 是否生成订单后自动扣款。0表示不自动续费，1表示自动续费。
         :type is_auto_pay: int
         """
         
@@ -64,7 +64,7 @@ class BssInfo:
     def is_auto_renew(self):
         r"""Gets the is_auto_renew of this BssInfo.
 
-        是否自动续费
+        是否自动续费。0表示不自动续费，1表示自动续费。
 
         :return: The is_auto_renew of this BssInfo.
         :rtype: int
@@ -75,7 +75,7 @@ class BssInfo:
     def is_auto_renew(self, is_auto_renew):
         r"""Sets the is_auto_renew of this BssInfo.
 
-        是否自动续费
+        是否自动续费。0表示不自动续费，1表示自动续费。
 
         :param is_auto_renew: The is_auto_renew of this BssInfo.
         :type is_auto_renew: int
@@ -130,7 +130,7 @@ class BssInfo:
     def is_auto_pay(self):
         r"""Gets the is_auto_pay of this BssInfo.
 
-        是否生成订单后自动扣款
+        是否生成订单后自动扣款。0表示不自动续费，1表示自动续费。
 
         :return: The is_auto_pay of this BssInfo.
         :rtype: int
@@ -141,7 +141,7 @@ class BssInfo:
     def is_auto_pay(self, is_auto_pay):
         r"""Sets the is_auto_pay of this BssInfo.
 
-        是否生成订单后自动扣款
+        是否生成订单后自动扣款。0表示不自动续费，1表示自动续费。
 
         :param is_auto_pay: The is_auto_pay of this BssInfo.
         :type is_auto_pay: int

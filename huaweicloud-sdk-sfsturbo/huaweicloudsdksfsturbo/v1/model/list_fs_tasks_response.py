@@ -18,29 +18,36 @@ class ListFsTasksResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'tasks': 'list[OneFsTaskResp]'
+        'tasks': 'list[OneFsTaskResp]',
+        'x_request_id': 'str'
     }
 
     attribute_map = {
-        'tasks': 'tasks'
+        'tasks': 'tasks',
+        'x_request_id': 'X-request-id'
     }
 
-    def __init__(self, tasks=None):
+    def __init__(self, tasks=None, x_request_id=None):
         r"""ListFsTasksResponse
 
         The model defined in huaweicloud sdk
 
         :param tasks: 任务列表
         :type tasks: list[:class:`huaweicloudsdksfsturbo.v1.OneFsTaskResp`]
+        :param x_request_id: 
+        :type x_request_id: str
         """
         
         super(ListFsTasksResponse, self).__init__()
 
         self._tasks = None
+        self._x_request_id = None
         self.discriminator = None
 
         if tasks is not None:
             self.tasks = tasks
+        if x_request_id is not None:
+            self.x_request_id = x_request_id
 
     @property
     def tasks(self):
@@ -63,6 +70,24 @@ class ListFsTasksResponse(SdkResponse):
         :type tasks: list[:class:`huaweicloudsdksfsturbo.v1.OneFsTaskResp`]
         """
         self._tasks = tasks
+
+    @property
+    def x_request_id(self):
+        r"""Gets the x_request_id of this ListFsTasksResponse.
+
+        :return: The x_request_id of this ListFsTasksResponse.
+        :rtype: str
+        """
+        return self._x_request_id
+
+    @x_request_id.setter
+    def x_request_id(self, x_request_id):
+        r"""Sets the x_request_id of this ListFsTasksResponse.
+
+        :param x_request_id: The x_request_id of this ListFsTasksResponse.
+        :type x_request_id: str
+        """
+        self._x_request_id = x_request_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

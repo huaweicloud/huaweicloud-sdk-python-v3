@@ -18,35 +18,42 @@ class DeleteLdapConfigResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'job_id': 'str'
+        'job_id': 'str',
+        'x_request_id': 'str'
     }
 
     attribute_map = {
-        'job_id': 'jobId'
+        'job_id': 'jobId',
+        'x_request_id': 'X-request-id'
     }
 
-    def __init__(self, job_id=None):
+    def __init__(self, job_id=None, x_request_id=None):
         r"""DeleteLdapConfigResponse
 
         The model defined in huaweicloud sdk
 
-        :param job_id: ldap异步任务的id。可通过查询job的状态详情接口查询job的执行状态。
+        :param job_id: LDAP异步任务的id。可通过查询job的状态详情接口查询job的执行状态。
         :type job_id: str
+        :param x_request_id: 
+        :type x_request_id: str
         """
         
         super(DeleteLdapConfigResponse, self).__init__()
 
         self._job_id = None
+        self._x_request_id = None
         self.discriminator = None
 
         if job_id is not None:
             self.job_id = job_id
+        if x_request_id is not None:
+            self.x_request_id = x_request_id
 
     @property
     def job_id(self):
         r"""Gets the job_id of this DeleteLdapConfigResponse.
 
-        ldap异步任务的id。可通过查询job的状态详情接口查询job的执行状态。
+        LDAP异步任务的id。可通过查询job的状态详情接口查询job的执行状态。
 
         :return: The job_id of this DeleteLdapConfigResponse.
         :rtype: str
@@ -57,12 +64,30 @@ class DeleteLdapConfigResponse(SdkResponse):
     def job_id(self, job_id):
         r"""Sets the job_id of this DeleteLdapConfigResponse.
 
-        ldap异步任务的id。可通过查询job的状态详情接口查询job的执行状态。
+        LDAP异步任务的id。可通过查询job的状态详情接口查询job的执行状态。
 
         :param job_id: The job_id of this DeleteLdapConfigResponse.
         :type job_id: str
         """
         self._job_id = job_id
+
+    @property
+    def x_request_id(self):
+        r"""Gets the x_request_id of this DeleteLdapConfigResponse.
+
+        :return: The x_request_id of this DeleteLdapConfigResponse.
+        :rtype: str
+        """
+        return self._x_request_id
+
+    @x_request_id.setter
+    def x_request_id(self, x_request_id):
+        r"""Sets the x_request_id of this DeleteLdapConfigResponse.
+
+        :param x_request_id: The x_request_id of this DeleteLdapConfigResponse.
+        :type x_request_id: str
+        """
+        self._x_request_id = x_request_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

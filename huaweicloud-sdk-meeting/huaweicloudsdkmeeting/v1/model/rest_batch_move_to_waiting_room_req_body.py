@@ -38,8 +38,7 @@ class RestBatchMoveToWaitingRoomReqBody:
         self._batch_participants = None
         self.discriminator = None
 
-        if batch_participants is not None:
-            self.batch_participants = batch_participants
+        self.batch_participants = batch_participants
 
     @property
     def batch_participants(self):

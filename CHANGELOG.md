@@ -1,3 +1,183 @@
+# 3.1.158 2025-07-24
+
+### HuaweiCloud SDK DBSS
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the APIs `ListAlarmTopicConfigInfo`, `SetAlarmTopicConfigInfo`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DRS
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListDataCompareOverview**
+    - changes of response param
+      - `+ data_compare_overview_infos.compare_num`
+      - `+ data_compare_overview_infos.compare_end_num`
+      - `+ data_compare_overview_infos.data_inconsistent_num`
+      - `+ data_compare_overview_infos.uncomparable_num`
+  - **ListContentCompareOverview**
+    - changes of response param
+      - `+ content_compare_result_infos.compare_num`
+      - `+ content_compare_result_infos.compare_end_num`
+      - `+ content_compare_result_infos.data_inconsistent_num`
+      - `+ content_compare_result_infos.uncomparable_num`
+  - **ListContentCompareDetail**
+    - changes of response param
+      - `+ content_compare_result_infos.status`
+      - `+ content_compare_result_infos.complete_shard_count`
+      - `+ content_compare_result_infos.total_shard_count`
+      - `+ content_compare_result_infos.progress`
+
+### HuaweiCloud SDK DRS
+
+- _API Version_
+  - V5
+- _Features_
+  - Support the APIs `ExportCreationTemplate`, `ShowExportProgress`, `ListTemplates`, `DownloadCreateTemplate`
+- _Bug Fix_
+  - None
+- _Change_
+  - **DownloadBatchCreateTemplate**
+    - changes of request param
+      - `+ engine_type`
+  - **ImportBatchCreateJobs**
+    - changes of request param
+      - `+ type`
+  - **ExecuteJobAction**
+    - changes of request param
+      - `+ job.action_name: enum value [diagnosis,start_repair,stop_repair]`
+      - `- job.action_name: enum value [diagnosis：一键诊断。,start_repair：开始数据修复。,stop_repair：停止数据修复。]`
+  - **BatchExecuteJobActions**
+    - changes of request param
+      - `+ jobs.action_name: enum value [diagnosis,start_repair,stop_repair]`
+      - `- jobs.action_name: enum value [diagnosis：一键诊断。,start_repair：开始数据修复。,stop_repair：停止数据修复。]`
+
+### HuaweiCloud SDK ECS
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowServer**
+    - changes of response param
+      - `+ server.network_interfaces.subnet_id`
+  - **ListServersDetails**
+    - changes of response param
+      - `+ servers.network_interfaces.subnet_id`
+  - **ListRecycleBinServers**
+    - changes of response param
+      - `+ servers.network_interfaces.subnet_id`
+
+### HuaweiCloud SDK IoTDA
+
+- _API Version_
+  - V5
+- _Features_
+  - Support the API `DeleteDeviceMessage`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK KVS
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ScanKv**
+    - changes of request param
+      - `+ projection_fields`
+
+### HuaweiCloud SDK SFSTurbo
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the following APIs:
+    - `ShowClientIpInfo`
+    - `ChangeShareChargeModeV2`
+    - `ListShareTypes`
+    - `ShowActiveDirectoryDomain`
+    - `UpdateActiveDirectoryDomain`
+    - `AddActiveDirectoryDomain`
+    - `DeleteActiveDirectoryDomain`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowHpcCacheTask**
+    - changes of response param
+      - `+ status: enum value [DELETING]`
+  - **UpdatePermRule**
+    - changes of request param
+      - `- ip_cidr`
+      - `* body: object<OnePermRuleRequestInfo> -> object<UpdateOnePermRuleRequestInfo>`
+  - **ShowLdapConfig**
+    - changes of response param
+      - `+ vpc_id`
+      - `- allow_local_user`
+  - **UpdateLdapConfig**
+    - changes of request param
+      - `- allow_local_user`
+  - **CreateLdapConfig**
+    - changes of request param
+      - `- allow_local_user`
+  - **ShowSharedTags**
+    - changes of response param
+      - `- sys_tags`
+  - **BatchAddSharedTags**
+    - changes of request param
+      - `- sys_tags`
+  - **ListHpcCacheTasks**
+    - changes of response param
+      - `+ tasks.status: enum value [DELETING]`
+  - **UpdateObsTargetPolicy**
+    - changes of request param
+      - `+ policy.auto_export_policy.prefix`
+      - `+ policy.auto_export_policy.suffix`
+    - changes of response param
+      - `+ policy.auto_export_policy.prefix`
+      - `+ policy.auto_export_policy.suffix`
+  - **ListShares**
+    - changes of request param
+      - `* limit: int64 -> int32`
+      - `* offset: int64 -> int32`
+  - **DeleteBackendTarget**
+    - changes of response param
+      - `- lifecycle: enum value [AVAILABLE,MISCONFIGURED,CREATING]`
+  - **ShowBackendTargetInfo**
+    - changes of response param
+      - `+ obs.policy.auto_export_policy.prefix`
+      - `+ obs.policy.auto_export_policy.suffix`
+  - **CreateBackendTarget**
+    - changes of request param
+      - `+ obs.policy.auto_export_policy.prefix`
+      - `+ obs.policy.auto_export_policy.suffix`
+    - changes of response param
+      - `+ obs.policy.auto_export_policy.prefix`
+      - `+ obs.policy.auto_export_policy.suffix`
+  - **ListBackendTargets**
+    - changes of response param
+      - `+ targets.obs.policy.auto_export_policy.prefix`
+      - `+ targets.obs.policy.auto_export_policy.suffix`
+
 # 3.1.157 2025-07-17
 
 ### HuaweiCloud SDK Config

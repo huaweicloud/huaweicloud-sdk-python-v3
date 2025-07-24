@@ -41,19 +41,19 @@ class GetSubJobDetail:
 
         The model defined in huaweicloud sdk
 
-        :param status: 子job的状态。success：成功。running：运行中。failed：失败。waiting：等待执行。
+        :param status: 子任务的状态。success：成功。running：运行中。failed：失败。waiting：等待执行。
         :type status: str
-        :param job_id: job的ID。
+        :param job_id: 子任务的ID。
         :type job_id: str
-        :param job_type: 子job的类型。
+        :param job_type: 子任务的类型。
         :type job_type: str
-        :param begin_time: job开始时间。UTC时间，格式：&#39;2016-01-02 15:04:05&#39;
+        :param begin_time: 子任务开始时间。UTC时间，格式：&#39;2016-01-02 15:04:05&#39;
         :type begin_time: str
-        :param end_time: job结束时间。UTC时间，格式：&#39;2016-01-02 15:04:05&#39;
+        :param end_time: 子任务结束时间。UTC时间，格式：&#39;2016-01-02 15:04:05&#39;
         :type end_time: str
-        :param error_code: job执行失败时的错误码
+        :param error_code: 子任务执行失败时的错误码
         :type error_code: str
-        :param fail_reason: job执行失败时的错误原因
+        :param fail_reason: 子任务执行失败时的错误原因
         :type fail_reason: str
         """
         
@@ -87,7 +87,7 @@ class GetSubJobDetail:
     def status(self):
         r"""Gets the status of this GetSubJobDetail.
 
-        子job的状态。success：成功。running：运行中。failed：失败。waiting：等待执行。
+        子任务的状态。success：成功。running：运行中。failed：失败。waiting：等待执行。
 
         :return: The status of this GetSubJobDetail.
         :rtype: str
@@ -98,7 +98,7 @@ class GetSubJobDetail:
     def status(self, status):
         r"""Sets the status of this GetSubJobDetail.
 
-        子job的状态。success：成功。running：运行中。failed：失败。waiting：等待执行。
+        子任务的状态。success：成功。running：运行中。failed：失败。waiting：等待执行。
 
         :param status: The status of this GetSubJobDetail.
         :type status: str
@@ -109,7 +109,7 @@ class GetSubJobDetail:
     def job_id(self):
         r"""Gets the job_id of this GetSubJobDetail.
 
-        job的ID。
+        子任务的ID。
 
         :return: The job_id of this GetSubJobDetail.
         :rtype: str
@@ -120,7 +120,7 @@ class GetSubJobDetail:
     def job_id(self, job_id):
         r"""Sets the job_id of this GetSubJobDetail.
 
-        job的ID。
+        子任务的ID。
 
         :param job_id: The job_id of this GetSubJobDetail.
         :type job_id: str
@@ -131,7 +131,7 @@ class GetSubJobDetail:
     def job_type(self):
         r"""Gets the job_type of this GetSubJobDetail.
 
-        子job的类型。
+        子任务的类型。
 
         :return: The job_type of this GetSubJobDetail.
         :rtype: str
@@ -142,7 +142,7 @@ class GetSubJobDetail:
     def job_type(self, job_type):
         r"""Sets the job_type of this GetSubJobDetail.
 
-        子job的类型。
+        子任务的类型。
 
         :param job_type: The job_type of this GetSubJobDetail.
         :type job_type: str
@@ -153,7 +153,7 @@ class GetSubJobDetail:
     def begin_time(self):
         r"""Gets the begin_time of this GetSubJobDetail.
 
-        job开始时间。UTC时间，格式：'2016-01-02 15:04:05'
+        子任务开始时间。UTC时间，格式：'2016-01-02 15:04:05'
 
         :return: The begin_time of this GetSubJobDetail.
         :rtype: str
@@ -164,7 +164,7 @@ class GetSubJobDetail:
     def begin_time(self, begin_time):
         r"""Sets the begin_time of this GetSubJobDetail.
 
-        job开始时间。UTC时间，格式：'2016-01-02 15:04:05'
+        子任务开始时间。UTC时间，格式：'2016-01-02 15:04:05'
 
         :param begin_time: The begin_time of this GetSubJobDetail.
         :type begin_time: str
@@ -175,7 +175,7 @@ class GetSubJobDetail:
     def end_time(self):
         r"""Gets the end_time of this GetSubJobDetail.
 
-        job结束时间。UTC时间，格式：'2016-01-02 15:04:05'
+        子任务结束时间。UTC时间，格式：'2016-01-02 15:04:05'
 
         :return: The end_time of this GetSubJobDetail.
         :rtype: str
@@ -186,7 +186,7 @@ class GetSubJobDetail:
     def end_time(self, end_time):
         r"""Sets the end_time of this GetSubJobDetail.
 
-        job结束时间。UTC时间，格式：'2016-01-02 15:04:05'
+        子任务结束时间。UTC时间，格式：'2016-01-02 15:04:05'
 
         :param end_time: The end_time of this GetSubJobDetail.
         :type end_time: str
@@ -197,7 +197,7 @@ class GetSubJobDetail:
     def error_code(self):
         r"""Gets the error_code of this GetSubJobDetail.
 
-        job执行失败时的错误码
+        子任务执行失败时的错误码
 
         :return: The error_code of this GetSubJobDetail.
         :rtype: str
@@ -208,7 +208,7 @@ class GetSubJobDetail:
     def error_code(self, error_code):
         r"""Sets the error_code of this GetSubJobDetail.
 
-        job执行失败时的错误码
+        子任务执行失败时的错误码
 
         :param error_code: The error_code of this GetSubJobDetail.
         :type error_code: str
@@ -219,7 +219,7 @@ class GetSubJobDetail:
     def fail_reason(self):
         r"""Gets the fail_reason of this GetSubJobDetail.
 
-        job执行失败时的错误原因
+        子任务执行失败时的错误原因
 
         :return: The fail_reason of this GetSubJobDetail.
         :rtype: str
@@ -230,7 +230,7 @@ class GetSubJobDetail:
     def fail_reason(self, fail_reason):
         r"""Sets the fail_reason of this GetSubJobDetail.
 
-        job执行失败时的错误原因
+        子任务执行失败时的错误原因
 
         :param fail_reason: The fail_reason of this GetSubJobDetail.
         :type fail_reason: str

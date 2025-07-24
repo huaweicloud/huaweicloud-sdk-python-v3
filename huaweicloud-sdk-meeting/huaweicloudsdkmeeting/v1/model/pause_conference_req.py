@@ -38,8 +38,7 @@ class PauseConferenceReq:
         self._pause = None
         self.discriminator = None
 
-        if pause is not None:
-            self.pause = pause
+        self.pause = pause
 
     @property
     def pause(self):

@@ -40,9 +40,9 @@ class ShowPermRuleResponse(SdkResponse):
         :type id: str
         :param ip_cidr: 授权对象的IP地址或网段
         :type ip_cidr: str
-        :param rw_type: 授权对象的读写权限   - rw：默认选项，以读写的方式共享   - ro：以只读的方式共享   - none: 没有权限
+        :param rw_type: 授权对象的读写权限   - rw：默认选项，以读写的方式共享   - ro：以只读的方式共享   - none: 没有权限 
         :type rw_type: str
-        :param user_type: 授权对象的系统用户对文件系统的访问权限。取值如下：  - no_root_squash：客户端使用的是root用户时，映射到NFS服务器的用户依然为root用户。  - root_squash：客户端使用的是root用户时，映射到NFS服务器的用户为NFS的匿名用户（nfsnobody）。  - all_squash：默认选项。所有访问NFS服务器的客户端的用户都映射为匿名用户。&#39;
+        :param user_type: 授权对象的系统用户对文件系统的访问权限。取值如下：  - no_root_squash：客户端使用的是root用户时，映射到NFS服务器的用户依然为root用户。  - root_squash：客户端使用的是root用户时，映射到NFS服务器的用户为NFS的匿名用户（nfsnobody）。  - all_squash：默认选项。所有访问NFS服务器的客户端的用户都映射为匿名用户。&#39; 
         :type user_type: str
         """
         
@@ -111,7 +111,7 @@ class ShowPermRuleResponse(SdkResponse):
     def rw_type(self):
         r"""Gets the rw_type of this ShowPermRuleResponse.
 
-        授权对象的读写权限   - rw：默认选项，以读写的方式共享   - ro：以只读的方式共享   - none: 没有权限
+        授权对象的读写权限   - rw：默认选项，以读写的方式共享   - ro：以只读的方式共享   - none: 没有权限 
 
         :return: The rw_type of this ShowPermRuleResponse.
         :rtype: str
@@ -122,7 +122,7 @@ class ShowPermRuleResponse(SdkResponse):
     def rw_type(self, rw_type):
         r"""Sets the rw_type of this ShowPermRuleResponse.
 
-        授权对象的读写权限   - rw：默认选项，以读写的方式共享   - ro：以只读的方式共享   - none: 没有权限
+        授权对象的读写权限   - rw：默认选项，以读写的方式共享   - ro：以只读的方式共享   - none: 没有权限 
 
         :param rw_type: The rw_type of this ShowPermRuleResponse.
         :type rw_type: str
@@ -133,7 +133,7 @@ class ShowPermRuleResponse(SdkResponse):
     def user_type(self):
         r"""Gets the user_type of this ShowPermRuleResponse.
 
-        授权对象的系统用户对文件系统的访问权限。取值如下：  - no_root_squash：客户端使用的是root用户时，映射到NFS服务器的用户依然为root用户。  - root_squash：客户端使用的是root用户时，映射到NFS服务器的用户为NFS的匿名用户（nfsnobody）。  - all_squash：默认选项。所有访问NFS服务器的客户端的用户都映射为匿名用户。'
+        授权对象的系统用户对文件系统的访问权限。取值如下：  - no_root_squash：客户端使用的是root用户时，映射到NFS服务器的用户依然为root用户。  - root_squash：客户端使用的是root用户时，映射到NFS服务器的用户为NFS的匿名用户（nfsnobody）。  - all_squash：默认选项。所有访问NFS服务器的客户端的用户都映射为匿名用户。' 
 
         :return: The user_type of this ShowPermRuleResponse.
         :rtype: str
@@ -144,7 +144,7 @@ class ShowPermRuleResponse(SdkResponse):
     def user_type(self, user_type):
         r"""Sets the user_type of this ShowPermRuleResponse.
 
-        授权对象的系统用户对文件系统的访问权限。取值如下：  - no_root_squash：客户端使用的是root用户时，映射到NFS服务器的用户依然为root用户。  - root_squash：客户端使用的是root用户时，映射到NFS服务器的用户为NFS的匿名用户（nfsnobody）。  - all_squash：默认选项。所有访问NFS服务器的客户端的用户都映射为匿名用户。'
+        授权对象的系统用户对文件系统的访问权限。取值如下：  - no_root_squash：客户端使用的是root用户时，映射到NFS服务器的用户依然为root用户。  - root_squash：客户端使用的是root用户时，映射到NFS服务器的用户为NFS的匿名用户（nfsnobody）。  - all_squash：默认选项。所有访问NFS服务器的客户端的用户都映射为匿名用户。' 
 
         :param user_type: The user_type of this ShowPermRuleResponse.
         :type user_type: str

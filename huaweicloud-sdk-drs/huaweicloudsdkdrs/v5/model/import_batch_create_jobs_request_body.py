@@ -17,28 +17,35 @@ class ImportBatchCreateJobsRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'file': 'file'
+        'file': 'file',
+        'type': 'str'
     }
 
     attribute_map = {
-        'file': 'file'
+        'file': 'file',
+        'type': 'type'
     }
 
-    def __init__(self, file=None):
+    def __init__(self, file=None, type=None):
         r"""ImportBatchCreateJobsRequestBody
 
         The model defined in huaweicloud sdk
 
         :param file: 待上传的模板文件。
         :type file: :class:`huaweicloudsdkcore.http.formdata.FormFile`
+        :param type: 任务类型，迁移，同步，灾备等。 - migration - sync - cloudDataGuard
+        :type type: str
         """
         
         
 
         self._file = None
+        self._type = None
         self.discriminator = None
 
         self.file = file
+        if type is not None:
+            self.type = type
 
     @property
     def file(self):
@@ -61,6 +68,28 @@ class ImportBatchCreateJobsRequestBody:
         :type file: :class:`huaweicloudsdkcore.http.formdata.FormFile`
         """
         self._file = file
+
+    @property
+    def type(self):
+        r"""Gets the type of this ImportBatchCreateJobsRequestBody.
+
+        任务类型，迁移，同步，灾备等。 - migration - sync - cloudDataGuard
+
+        :return: The type of this ImportBatchCreateJobsRequestBody.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        r"""Sets the type of this ImportBatchCreateJobsRequestBody.
+
+        任务类型，迁移，同步，灾备等。 - migration - sync - cloudDataGuard
+
+        :param type: The type of this ImportBatchCreateJobsRequestBody.
+        :type type: str
+        """
+        self._type = type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

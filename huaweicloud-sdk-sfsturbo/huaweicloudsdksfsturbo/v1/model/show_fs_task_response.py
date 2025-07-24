@@ -22,7 +22,8 @@ class ShowFsTaskResponse(SdkResponse):
         'status': 'str',
         'dir_usage': 'FsDuInfo',
         'begin_time': 'str',
-        'end_time': 'str'
+        'end_time': 'str',
+        'x_request_id': 'str'
     }
 
     attribute_map = {
@@ -30,10 +31,11 @@ class ShowFsTaskResponse(SdkResponse):
         'status': 'status',
         'dir_usage': 'dir_usage',
         'begin_time': 'begin_time',
-        'end_time': 'end_time'
+        'end_time': 'end_time',
+        'x_request_id': 'X-request-id'
     }
 
-    def __init__(self, task_id=None, status=None, dir_usage=None, begin_time=None, end_time=None):
+    def __init__(self, task_id=None, status=None, dir_usage=None, begin_time=None, end_time=None, x_request_id=None):
         r"""ShowFsTaskResponse
 
         The model defined in huaweicloud sdk
@@ -48,6 +50,8 @@ class ShowFsTaskResponse(SdkResponse):
         :type begin_time: str
         :param end_time: 任务结束时间，UTC时间，例如：2006-01-02 15:04:06&#39;
         :type end_time: str
+        :param x_request_id: 
+        :type x_request_id: str
         """
         
         super(ShowFsTaskResponse, self).__init__()
@@ -57,6 +61,7 @@ class ShowFsTaskResponse(SdkResponse):
         self._dir_usage = None
         self._begin_time = None
         self._end_time = None
+        self._x_request_id = None
         self.discriminator = None
 
         if task_id is not None:
@@ -69,6 +74,8 @@ class ShowFsTaskResponse(SdkResponse):
             self.begin_time = begin_time
         if end_time is not None:
             self.end_time = end_time
+        if x_request_id is not None:
+            self.x_request_id = x_request_id
 
     @property
     def task_id(self):
@@ -175,6 +182,24 @@ class ShowFsTaskResponse(SdkResponse):
         :type end_time: str
         """
         self._end_time = end_time
+
+    @property
+    def x_request_id(self):
+        r"""Gets the x_request_id of this ShowFsTaskResponse.
+
+        :return: The x_request_id of this ShowFsTaskResponse.
+        :rtype: str
+        """
+        return self._x_request_id
+
+    @x_request_id.setter
+    def x_request_id(self, x_request_id):
+        r"""Sets the x_request_id of this ShowFsTaskResponse.
+
+        :param x_request_id: The x_request_id of this ShowFsTaskResponse.
+        :type x_request_id: str
+        """
+        self._x_request_id = x_request_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

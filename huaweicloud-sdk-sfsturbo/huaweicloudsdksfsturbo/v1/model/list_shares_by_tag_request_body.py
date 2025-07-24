@@ -63,8 +63,7 @@ class ListSharesByTagRequestBody:
         self._matches = None
         self.discriminator = None
 
-        if action is not None:
-            self.action = action
+        self.action = action
         if limit is not None:
             self.limit = limit
         if offset is not None:

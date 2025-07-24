@@ -35,9 +35,9 @@ class UpdateFsDirQuotaRequestBody:
 
         :param path: 合法的已存在的目录的全路径
         :type path: str
-        :param capacity: 目录的容量大小，单位：MB; 设置为0会导致数据无法写入目录; capacity和quota至少二选一
+        :param capacity: 目录的容量大小，单位：MB; 不填写则默认为0; 设置为0会导致数据无法写入目录; capacity和quota至少二选一
         :type capacity: int
-        :param inode: 目录的inode数量限制; 设置为0会导致数据无法写入目录; capacity和quota至少二选一
+        :param inode: 目录的inode数量限制; 不填写则默认为0; 设置为0会导致数据无法写入目录; capacity和quota至少二选一
         :type inode: int
         """
         
@@ -80,7 +80,7 @@ class UpdateFsDirQuotaRequestBody:
     def capacity(self):
         r"""Gets the capacity of this UpdateFsDirQuotaRequestBody.
 
-        目录的容量大小，单位：MB; 设置为0会导致数据无法写入目录; capacity和quota至少二选一
+        目录的容量大小，单位：MB; 不填写则默认为0; 设置为0会导致数据无法写入目录; capacity和quota至少二选一
 
         :return: The capacity of this UpdateFsDirQuotaRequestBody.
         :rtype: int
@@ -91,7 +91,7 @@ class UpdateFsDirQuotaRequestBody:
     def capacity(self, capacity):
         r"""Sets the capacity of this UpdateFsDirQuotaRequestBody.
 
-        目录的容量大小，单位：MB; 设置为0会导致数据无法写入目录; capacity和quota至少二选一
+        目录的容量大小，单位：MB; 不填写则默认为0; 设置为0会导致数据无法写入目录; capacity和quota至少二选一
 
         :param capacity: The capacity of this UpdateFsDirQuotaRequestBody.
         :type capacity: int
@@ -102,7 +102,7 @@ class UpdateFsDirQuotaRequestBody:
     def inode(self):
         r"""Gets the inode of this UpdateFsDirQuotaRequestBody.
 
-        目录的inode数量限制; 设置为0会导致数据无法写入目录; capacity和quota至少二选一
+        目录的inode数量限制; 不填写则默认为0; 设置为0会导致数据无法写入目录; capacity和quota至少二选一
 
         :return: The inode of this UpdateFsDirQuotaRequestBody.
         :rtype: int
@@ -113,7 +113,7 @@ class UpdateFsDirQuotaRequestBody:
     def inode(self, inode):
         r"""Sets the inode of this UpdateFsDirQuotaRequestBody.
 
-        目录的inode数量限制; 设置为0会导致数据无法写入目录; capacity和quota至少二选一
+        目录的inode数量限制; 不填写则默认为0; 设置为0会导致数据无法写入目录; capacity和quota至少二选一
 
         :param inode: The inode of this UpdateFsDirQuotaRequestBody.
         :type inode: int

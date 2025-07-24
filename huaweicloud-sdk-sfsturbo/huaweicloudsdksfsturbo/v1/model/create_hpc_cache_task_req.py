@@ -43,7 +43,7 @@ class CreateHpcCacheTaskReq:
         :type type: str
         :param src_target: 联动目录名称
         :type src_target: str
-        :param src_prefix: 导入导出任务的源端路径前缀，导入时不需要包含OBS桶名，导出时不需要包含联动目录名称。  对于数据预热导入，携带源端路径前缀时必须是以“/”结尾的目录或具体到某个对象。  如果不带该字段，导入时会导入绑定OBS桶内的所有对象，导出时会导出联动目录下的所有文件。 
+        :param src_prefix: 导入导出任务的源端路径前缀，导入时不需要包含OBS桶名，导出时不需要包含联动目录名称。  当 type 为 import、import_metadata、preload 时，该参数必须是 OBS后端存储内的相对路径前缀。 当 type 为 export 时，该参数必须是文件系统内file_system_path下的相对路径前缀。  如果不带该字段，导入时会导入绑定OBS桶内的所有对象，导出时会导出联动目录下的所有文件。限制如下： - 长度为1~1024个字符之间 - 不能包含以下字符：\\:*?\&quot;&lt;&gt;| - 不能以英文句号.开头和结尾 
         :type src_prefix: str
         :param dest_target: 目前只支持和src_target保持一致
         :type dest_target: str
@@ -121,7 +121,7 @@ class CreateHpcCacheTaskReq:
     def src_prefix(self):
         r"""Gets the src_prefix of this CreateHpcCacheTaskReq.
 
-        导入导出任务的源端路径前缀，导入时不需要包含OBS桶名，导出时不需要包含联动目录名称。  对于数据预热导入，携带源端路径前缀时必须是以“/”结尾的目录或具体到某个对象。  如果不带该字段，导入时会导入绑定OBS桶内的所有对象，导出时会导出联动目录下的所有文件。 
+        导入导出任务的源端路径前缀，导入时不需要包含OBS桶名，导出时不需要包含联动目录名称。  当 type 为 import、import_metadata、preload 时，该参数必须是 OBS后端存储内的相对路径前缀。 当 type 为 export 时，该参数必须是文件系统内file_system_path下的相对路径前缀。  如果不带该字段，导入时会导入绑定OBS桶内的所有对象，导出时会导出联动目录下的所有文件。限制如下： - 长度为1~1024个字符之间 - 不能包含以下字符：\\:*?\"<>| - 不能以英文句号.开头和结尾 
 
         :return: The src_prefix of this CreateHpcCacheTaskReq.
         :rtype: str
@@ -132,7 +132,7 @@ class CreateHpcCacheTaskReq:
     def src_prefix(self, src_prefix):
         r"""Sets the src_prefix of this CreateHpcCacheTaskReq.
 
-        导入导出任务的源端路径前缀，导入时不需要包含OBS桶名，导出时不需要包含联动目录名称。  对于数据预热导入，携带源端路径前缀时必须是以“/”结尾的目录或具体到某个对象。  如果不带该字段，导入时会导入绑定OBS桶内的所有对象，导出时会导出联动目录下的所有文件。 
+        导入导出任务的源端路径前缀，导入时不需要包含OBS桶名，导出时不需要包含联动目录名称。  当 type 为 import、import_metadata、preload 时，该参数必须是 OBS后端存储内的相对路径前缀。 当 type 为 export 时，该参数必须是文件系统内file_system_path下的相对路径前缀。  如果不带该字段，导入时会导入绑定OBS桶内的所有对象，导出时会导出联动目录下的所有文件。限制如下： - 长度为1~1024个字符之间 - 不能包含以下字符：\\:*?\"<>| - 不能以英文句号.开头和结尾 
 
         :param src_prefix: The src_prefix of this CreateHpcCacheTaskReq.
         :type src_prefix: str

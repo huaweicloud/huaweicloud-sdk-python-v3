@@ -21,6 +21,7 @@ class NetworkInterfaces:
         'primary': 'bool',
         'ip_addresses': 'list[str]',
         'ipv6_addresses': 'list[str]',
+        'subnet_id': 'str',
         'association': 'Association'
     }
 
@@ -29,10 +30,11 @@ class NetworkInterfaces:
         'primary': 'primary',
         'ip_addresses': 'ip_addresses',
         'ipv6_addresses': 'ipv6_addresses',
+        'subnet_id': 'subnet_id',
         'association': 'association'
     }
 
-    def __init__(self, port_id=None, primary=None, ip_addresses=None, ipv6_addresses=None, association=None):
+    def __init__(self, port_id=None, primary=None, ip_addresses=None, ipv6_addresses=None, subnet_id=None, association=None):
         r"""NetworkInterfaces
 
         The model defined in huaweicloud sdk
@@ -45,6 +47,8 @@ class NetworkInterfaces:
         :type ip_addresses: list[str]
         :param ipv6_addresses: ipv6地址
         :type ipv6_addresses: list[str]
+        :param subnet_id: 子网id
+        :type subnet_id: str
         :param association: 
         :type association: :class:`huaweicloudsdkecs.v2.Association`
         """
@@ -55,6 +59,7 @@ class NetworkInterfaces:
         self._primary = None
         self._ip_addresses = None
         self._ipv6_addresses = None
+        self._subnet_id = None
         self._association = None
         self.discriminator = None
 
@@ -66,6 +71,8 @@ class NetworkInterfaces:
             self.ip_addresses = ip_addresses
         if ipv6_addresses is not None:
             self.ipv6_addresses = ipv6_addresses
+        if subnet_id is not None:
+            self.subnet_id = subnet_id
         if association is not None:
             self.association = association
 
@@ -156,6 +163,28 @@ class NetworkInterfaces:
         :type ipv6_addresses: list[str]
         """
         self._ipv6_addresses = ipv6_addresses
+
+    @property
+    def subnet_id(self):
+        r"""Gets the subnet_id of this NetworkInterfaces.
+
+        子网id
+
+        :return: The subnet_id of this NetworkInterfaces.
+        :rtype: str
+        """
+        return self._subnet_id
+
+    @subnet_id.setter
+    def subnet_id(self, subnet_id):
+        r"""Sets the subnet_id of this NetworkInterfaces.
+
+        子网id
+
+        :param subnet_id: The subnet_id of this NetworkInterfaces.
+        :type subnet_id: str
+        """
+        self._subnet_id = subnet_id
 
     @property
     def association(self):

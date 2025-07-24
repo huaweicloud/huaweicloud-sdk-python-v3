@@ -19,7 +19,7 @@ class UpdatePermRuleRequest:
     openapi_types = {
         'share_id': 'str',
         'rule_id': 'str',
-        'body': 'OnePermRuleRequestInfo'
+        'body': 'UpdateOnePermRuleRequestInfo'
     }
 
     attribute_map = {
@@ -33,12 +33,12 @@ class UpdatePermRuleRequest:
 
         The model defined in huaweicloud sdk
 
-        :param share_id: 文件系统id
+        :param share_id: 文件系统ID
         :type share_id: str
         :param rule_id: 权限规则id
         :type rule_id: str
         :param body: Body of the UpdatePermRuleRequest
-        :type body: :class:`huaweicloudsdksfsturbo.v1.OnePermRuleRequestInfo`
+        :type body: :class:`huaweicloudsdksfsturbo.v1.UpdateOnePermRuleRequestInfo`
         """
         
         
@@ -57,7 +57,7 @@ class UpdatePermRuleRequest:
     def share_id(self):
         r"""Gets the share_id of this UpdatePermRuleRequest.
 
-        文件系统id
+        文件系统ID
 
         :return: The share_id of this UpdatePermRuleRequest.
         :rtype: str
@@ -68,7 +68,7 @@ class UpdatePermRuleRequest:
     def share_id(self, share_id):
         r"""Sets the share_id of this UpdatePermRuleRequest.
 
-        文件系统id
+        文件系统ID
 
         :param share_id: The share_id of this UpdatePermRuleRequest.
         :type share_id: str
@@ -102,7 +102,7 @@ class UpdatePermRuleRequest:
         r"""Gets the body of this UpdatePermRuleRequest.
 
         :return: The body of this UpdatePermRuleRequest.
-        :rtype: :class:`huaweicloudsdksfsturbo.v1.OnePermRuleRequestInfo`
+        :rtype: :class:`huaweicloudsdksfsturbo.v1.UpdateOnePermRuleRequestInfo`
         """
         return self._body
 
@@ -111,7 +111,7 @@ class UpdatePermRuleRequest:
         r"""Sets the body of this UpdatePermRuleRequest.
 
         :param body: The body of this UpdatePermRuleRequest.
-        :type body: :class:`huaweicloudsdksfsturbo.v1.OnePermRuleRequestInfo`
+        :type body: :class:`huaweicloudsdksfsturbo.v1.UpdateOnePermRuleRequestInfo`
         """
         self._body = body
 

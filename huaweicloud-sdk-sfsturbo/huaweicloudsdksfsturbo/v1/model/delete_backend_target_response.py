@@ -36,7 +36,7 @@ class DeleteBackendTargetResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param target_id: 绑定关系id
+        :param target_id: 绑定关系ID
         :type target_id: str
         :param delete_data_in_file_system: 删除后端存储时是否同时删除文件系统内的联动目录及其数据文件
         :type delete_data_in_file_system: bool
@@ -67,7 +67,7 @@ class DeleteBackendTargetResponse(SdkResponse):
     def target_id(self):
         r"""Gets the target_id of this DeleteBackendTargetResponse.
 
-        绑定关系id
+        绑定关系ID
 
         :return: The target_id of this DeleteBackendTargetResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class DeleteBackendTargetResponse(SdkResponse):
     def target_id(self, target_id):
         r"""Sets the target_id of this DeleteBackendTargetResponse.
 
-        绑定关系id
+        绑定关系ID
 
         :param target_id: The target_id of this DeleteBackendTargetResponse.
         :type target_id: str

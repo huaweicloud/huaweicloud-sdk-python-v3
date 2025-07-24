@@ -39,7 +39,7 @@ class ListFsTasksRequest:
         :type share_id: str
         :param feature: 任务类型。例，DU任务取值为dir-usage
         :type feature: str
-        :param marker: marker，取值为task_id
+        :param marker: marker填写为上一页返回的最后一条记录的task_id，作为下一次分页的起始值。比如，marker为d651ea2b-2b20-4c6d-8bbf-2adcec18dac9，limit为100，表示从d651ea2b-2b20-4c6d-8bbf-2adcec18dac9后返回最多100条满足查询条件的记录。
         :type marker: str
         :param limit: limit, 取值为正整数. 默认为20，最大值为100
         :type limit: int
@@ -108,7 +108,7 @@ class ListFsTasksRequest:
     def marker(self):
         r"""Gets the marker of this ListFsTasksRequest.
 
-        marker，取值为task_id
+        marker填写为上一页返回的最后一条记录的task_id，作为下一次分页的起始值。比如，marker为d651ea2b-2b20-4c6d-8bbf-2adcec18dac9，limit为100，表示从d651ea2b-2b20-4c6d-8bbf-2adcec18dac9后返回最多100条满足查询条件的记录。
 
         :return: The marker of this ListFsTasksRequest.
         :rtype: str
@@ -119,7 +119,7 @@ class ListFsTasksRequest:
     def marker(self, marker):
         r"""Sets the marker of this ListFsTasksRequest.
 
-        marker，取值为task_id
+        marker填写为上一页返回的最后一条记录的task_id，作为下一次分页的起始值。比如，marker为d651ea2b-2b20-4c6d-8bbf-2adcec18dac9，limit为100，表示从d651ea2b-2b20-4c6d-8bbf-2adcec18dac9后返回最多100条满足查询条件的记录。
 
         :param marker: The marker of this ListFsTasksRequest.
         :type marker: str

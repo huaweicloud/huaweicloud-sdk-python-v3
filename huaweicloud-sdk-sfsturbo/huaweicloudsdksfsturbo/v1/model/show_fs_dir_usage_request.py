@@ -31,7 +31,7 @@ class ShowFsDirUsageRequest:
 
         The model defined in huaweicloud sdk
 
-        :param share_id: 文件系统id
+        :param share_id: 文件系统ID
         :type share_id: str
         :param path: 文件系统内合法的目录全路径
         :type path: str
@@ -50,7 +50,7 @@ class ShowFsDirUsageRequest:
     def share_id(self):
         r"""Gets the share_id of this ShowFsDirUsageRequest.
 
-        文件系统id
+        文件系统ID
 
         :return: The share_id of this ShowFsDirUsageRequest.
         :rtype: str
@@ -61,7 +61,7 @@ class ShowFsDirUsageRequest:
     def share_id(self, share_id):
         r"""Sets the share_id of this ShowFsDirUsageRequest.
 
-        文件系统id
+        文件系统ID
 
         :param share_id: The share_id of this ShowFsDirUsageRequest.
         :type share_id: str

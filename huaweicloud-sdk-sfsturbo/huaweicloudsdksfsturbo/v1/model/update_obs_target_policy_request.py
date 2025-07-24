@@ -33,9 +33,9 @@ class UpdateObsTargetPolicyRequest:
 
         The model defined in huaweicloud sdk
 
-        :param share_id: 文件系统id
+        :param share_id: 文件系统ID
         :type share_id: str
-        :param target_id: 绑定关系id
+        :param target_id: 绑定关系ID
         :type target_id: str
         :param body: Body of the UpdateObsTargetPolicyRequest
         :type body: :class:`huaweicloudsdksfsturbo.v1.UpdateObsTargetPolicyRequestBody`
@@ -57,7 +57,7 @@ class UpdateObsTargetPolicyRequest:
     def share_id(self):
         r"""Gets the share_id of this UpdateObsTargetPolicyRequest.
 
-        文件系统id
+        文件系统ID
 
         :return: The share_id of this UpdateObsTargetPolicyRequest.
         :rtype: str
@@ -68,7 +68,7 @@ class UpdateObsTargetPolicyRequest:
     def share_id(self, share_id):
         r"""Sets the share_id of this UpdateObsTargetPolicyRequest.
 
-        文件系统id
+        文件系统ID
 
         :param share_id: The share_id of this UpdateObsTargetPolicyRequest.
         :type share_id: str
@@ -79,7 +79,7 @@ class UpdateObsTargetPolicyRequest:
     def target_id(self):
         r"""Gets the target_id of this UpdateObsTargetPolicyRequest.
 
-        绑定关系id
+        绑定关系ID
 
         :return: The target_id of this UpdateObsTargetPolicyRequest.
         :rtype: str
@@ -90,7 +90,7 @@ class UpdateObsTargetPolicyRequest:
     def target_id(self, target_id):
         r"""Sets the target_id of this UpdateObsTargetPolicyRequest.
 
-        绑定关系id
+        绑定关系ID
 
         :param target_id: The target_id of this UpdateObsTargetPolicyRequest.
         :type target_id: str

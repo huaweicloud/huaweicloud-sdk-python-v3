@@ -18,29 +18,36 @@ class CreateFsTaskResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'task_id': 'str'
+        'task_id': 'str',
+        'x_request_id': 'str'
     }
 
     attribute_map = {
-        'task_id': 'task_id'
+        'task_id': 'task_id',
+        'x_request_id': 'X-request-id'
     }
 
-    def __init__(self, task_id=None):
+    def __init__(self, task_id=None, x_request_id=None):
         r"""CreateFsTaskResponse
 
         The model defined in huaweicloud sdk
 
         :param task_id: 任务ID
         :type task_id: str
+        :param x_request_id: 
+        :type x_request_id: str
         """
         
         super(CreateFsTaskResponse, self).__init__()
 
         self._task_id = None
+        self._x_request_id = None
         self.discriminator = None
 
         if task_id is not None:
             self.task_id = task_id
+        if x_request_id is not None:
+            self.x_request_id = x_request_id
 
     @property
     def task_id(self):
@@ -63,6 +70,24 @@ class CreateFsTaskResponse(SdkResponse):
         :type task_id: str
         """
         self._task_id = task_id
+
+    @property
+    def x_request_id(self):
+        r"""Gets the x_request_id of this CreateFsTaskResponse.
+
+        :return: The x_request_id of this CreateFsTaskResponse.
+        :rtype: str
+        """
+        return self._x_request_id
+
+    @x_request_id.setter
+    def x_request_id(self, x_request_id):
+        r"""Sets the x_request_id of this CreateFsTaskResponse.
+
+        :param x_request_id: The x_request_id of this CreateFsTaskResponse.
+        :type x_request_id: str
+        """
+        self._x_request_id = x_request_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -18,36 +18,29 @@ class ShowSharedTagsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'tags': 'list[ResourceTag]',
-        'sys_tags': 'list[ResourceTag]'
+        'tags': 'list[ResourceTag]'
     }
 
     attribute_map = {
-        'tags': 'tags',
-        'sys_tags': 'sys_tags'
+        'tags': 'tags'
     }
 
-    def __init__(self, tags=None, sys_tags=None):
+    def __init__(self, tags=None):
         r"""ShowSharedTagsResponse
 
         The model defined in huaweicloud sdk
 
         :param tags: tag标签的列表。
         :type tags: list[:class:`huaweicloudsdksfsturbo.v1.ResourceTag`]
-        :param sys_tags: 仅op_service权限才可以获取此字段。  1.  目前只包含一个resource_tag结构体 key：_sys_enterprise_project_id  2.  目前key下面只包含一个value，0表示默认企业项目。  非op_service场景不能返回此字段。
-        :type sys_tags: list[:class:`huaweicloudsdksfsturbo.v1.ResourceTag`]
         """
         
         super(ShowSharedTagsResponse, self).__init__()
 
         self._tags = None
-        self._sys_tags = None
         self.discriminator = None
 
         if tags is not None:
             self.tags = tags
-        if sys_tags is not None:
-            self.sys_tags = sys_tags
 
     @property
     def tags(self):
@@ -70,28 +63,6 @@ class ShowSharedTagsResponse(SdkResponse):
         :type tags: list[:class:`huaweicloudsdksfsturbo.v1.ResourceTag`]
         """
         self._tags = tags
-
-    @property
-    def sys_tags(self):
-        r"""Gets the sys_tags of this ShowSharedTagsResponse.
-
-        仅op_service权限才可以获取此字段。  1.  目前只包含一个resource_tag结构体 key：_sys_enterprise_project_id  2.  目前key下面只包含一个value，0表示默认企业项目。  非op_service场景不能返回此字段。
-
-        :return: The sys_tags of this ShowSharedTagsResponse.
-        :rtype: list[:class:`huaweicloudsdksfsturbo.v1.ResourceTag`]
-        """
-        return self._sys_tags
-
-    @sys_tags.setter
-    def sys_tags(self, sys_tags):
-        r"""Sets the sys_tags of this ShowSharedTagsResponse.
-
-        仅op_service权限才可以获取此字段。  1.  目前只包含一个resource_tag结构体 key：_sys_enterprise_project_id  2.  目前key下面只包含一个value，0表示默认企业项目。  非op_service场景不能返回此字段。
-
-        :param sys_tags: The sys_tags of this ShowSharedTagsResponse.
-        :type sys_tags: list[:class:`huaweicloudsdksfsturbo.v1.ResourceTag`]
-        """
-        self._sys_tags = sys_tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

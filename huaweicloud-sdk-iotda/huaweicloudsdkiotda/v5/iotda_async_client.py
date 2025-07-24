@@ -5772,6 +5772,75 @@ class IoTDAAsyncClient(Client):
 
         return http_info
 
+    def delete_device_message_async(self, request):
+        r"""删除指定消息id的消息
+
+        应用服务器可调用此接口删除平台下发给设备的指定消息id的消息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteDeviceMessage
+        :type request: :class:`huaweicloudsdkiotda.v5.DeleteDeviceMessageRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.DeleteDeviceMessageResponse`
+        """
+        http_info = self._delete_device_message_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_device_message_async_invoker(self, request):
+        http_info = self._delete_device_message_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_device_message_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v5/iot/{project_id}/devices/{device_id}/messages/{message_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDeviceMessageResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'device_id' in local_var_params:
+            path_params['device_id'] = local_var_params['device_id']
+        if 'message_id' in local_var_params:
+            path_params['message_id'] = local_var_params['message_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_device_messages_async(self, request):
         r"""查询设备消息
 

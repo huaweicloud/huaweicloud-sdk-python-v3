@@ -33,7 +33,7 @@ class DeleteFsTaskRequest:
 
         The model defined in huaweicloud sdk
 
-        :param share_id: 文件系统id
+        :param share_id: 文件系统ID
         :type share_id: str
         :param feature: 任务类型。例，DU任务取值为dir-usage
         :type feature: str
@@ -56,7 +56,7 @@ class DeleteFsTaskRequest:
     def share_id(self):
         r"""Gets the share_id of this DeleteFsTaskRequest.
 
-        文件系统id
+        文件系统ID
 
         :return: The share_id of this DeleteFsTaskRequest.
         :rtype: str
@@ -67,7 +67,7 @@ class DeleteFsTaskRequest:
     def share_id(self, share_id):
         r"""Sets the share_id of this DeleteFsTaskRequest.
 
-        文件系统id
+        文件系统ID
 
         :param share_id: The share_id of this DeleteFsTaskRequest.
         :type share_id: str

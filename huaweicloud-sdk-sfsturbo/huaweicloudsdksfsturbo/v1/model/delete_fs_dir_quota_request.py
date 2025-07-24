@@ -31,7 +31,7 @@ class DeleteFsDirQuotaRequest:
 
         The model defined in huaweicloud sdk
 
-        :param share_id: 文件系统id
+        :param share_id: 文件系统ID
         :type share_id: str
         :param body: Body of the DeleteFsDirQuotaRequest
         :type body: :class:`huaweicloudsdksfsturbo.v1.DeleteFsDirQuotaRequestBody`
@@ -51,7 +51,7 @@ class DeleteFsDirQuotaRequest:
     def share_id(self):
         r"""Gets the share_id of this DeleteFsDirQuotaRequest.
 
-        文件系统id
+        文件系统ID
 
         :return: The share_id of this DeleteFsDirQuotaRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class DeleteFsDirQuotaRequest:
     def share_id(self, share_id):
         r"""Sets the share_id of this DeleteFsDirQuotaRequest.
 
-        文件系统id
+        文件系统ID
 
         :param share_id: The share_id of this DeleteFsDirQuotaRequest.
         :type share_id: str

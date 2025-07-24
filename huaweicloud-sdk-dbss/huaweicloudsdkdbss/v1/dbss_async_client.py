@@ -432,6 +432,71 @@ class DbssAsyncClient(Client):
 
         return http_info
 
+    def list_alarm_topic_config_info_async(self, request):
+        r"""获取实例告警配置
+
+        获取实例告警配置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListAlarmTopicConfigInfo
+        :type request: :class:`huaweicloudsdkdbss.v1.ListAlarmTopicConfigInfoRequest`
+        :rtype: :class:`huaweicloudsdkdbss.v1.ListAlarmTopicConfigInfoResponse`
+        """
+        http_info = self._list_alarm_topic_config_info_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_alarm_topic_config_info_async_invoker(self, request):
+        http_info = self._list_alarm_topic_config_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_alarm_topic_config_info_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/{instance_id}/audit/alarm/topic",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAlarmTopicConfigInfoResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_audit_alarm_log_async(self, request):
         r"""查询审计告警信息
 
@@ -1423,6 +1488,73 @@ class DbssAsyncClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def set_alarm_topic_config_info_async(self, request):
+        r"""设置实例告警配置
+
+        设置实例告警配置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for SetAlarmTopicConfigInfo
+        :type request: :class:`huaweicloudsdkdbss.v1.SetAlarmTopicConfigInfoRequest`
+        :rtype: :class:`huaweicloudsdkdbss.v1.SetAlarmTopicConfigInfoResponse`
+        """
+        http_info = self._set_alarm_topic_config_info_http_info(request)
+        return self._call_api(**http_info)
+
+    def set_alarm_topic_config_info_async_invoker(self, request):
+        http_info = self._set_alarm_topic_config_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _set_alarm_topic_config_info_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/{instance_id}/audit/alarm/topic",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetAlarmTopicConfigInfoResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 

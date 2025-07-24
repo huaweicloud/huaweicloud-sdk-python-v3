@@ -19,16 +19,24 @@ class DataCompareOverviewInfo:
     openapi_types = {
         'source_db_name': 'str',
         'target_db_name': 'str',
-        'status': 'int'
+        'status': 'int',
+        'compare_num': 'int',
+        'compare_end_num': 'int',
+        'data_inconsistent_num': 'int',
+        'uncomparable_num': 'int'
     }
 
     attribute_map = {
         'source_db_name': 'source_db_name',
         'target_db_name': 'target_db_name',
-        'status': 'status'
+        'status': 'status',
+        'compare_num': 'compare_num',
+        'compare_end_num': 'compare_end_num',
+        'data_inconsistent_num': 'data_inconsistent_num',
+        'uncomparable_num': 'uncomparable_num'
     }
 
-    def __init__(self, source_db_name=None, target_db_name=None, status=None):
+    def __init__(self, source_db_name=None, target_db_name=None, status=None, compare_num=None, compare_end_num=None, data_inconsistent_num=None, uncomparable_num=None):
         r"""DataCompareOverviewInfo
 
         The model defined in huaweicloud sdk
@@ -39,6 +47,14 @@ class DataCompareOverviewInfo:
         :type target_db_name: str
         :param status: 对比状态。 - 0：对比不一致 - 2：对比一致 - 3：目标库表不存在 - 4：对比失败 - 5：正在对比中 - 6：等待对比中 - 7：任务已取消 - 8：源库为空 - 9：目标库为空 - 10：源库和目标库都为空 - 11：源表不存在 - 12：目标表不存在 - 13：原表和目标表都不存在 - 14：源数据库连接失败 - 15：目标库数据库连接失败 - 16：源数据库执行SQL超时 - 17：目标数据库执行SQL超时 - 18：源数据库执行SQL错误 - 19：目标数据库执行SQL错误 - 20：源库和目标库都不存在 - 21：源库不存在 - 22：目标库不存在 - 23：行数为亿行，未进行对比 - 27：超时
         :type status: int
+        :param compare_num: 总表数。
+        :type compare_num: int
+        :param compare_end_num: 已完成表数。
+        :type compare_end_num: int
+        :param data_inconsistent_num: 不一致表数。
+        :type data_inconsistent_num: int
+        :param uncomparable_num: 无法对比表数。
+        :type uncomparable_num: int
         """
         
         
@@ -46,6 +62,10 @@ class DataCompareOverviewInfo:
         self._source_db_name = None
         self._target_db_name = None
         self._status = None
+        self._compare_num = None
+        self._compare_end_num = None
+        self._data_inconsistent_num = None
+        self._uncomparable_num = None
         self.discriminator = None
 
         if source_db_name is not None:
@@ -54,6 +74,14 @@ class DataCompareOverviewInfo:
             self.target_db_name = target_db_name
         if status is not None:
             self.status = status
+        if compare_num is not None:
+            self.compare_num = compare_num
+        if compare_end_num is not None:
+            self.compare_end_num = compare_end_num
+        if data_inconsistent_num is not None:
+            self.data_inconsistent_num = data_inconsistent_num
+        if uncomparable_num is not None:
+            self.uncomparable_num = uncomparable_num
 
     @property
     def source_db_name(self):
@@ -120,6 +148,94 @@ class DataCompareOverviewInfo:
         :type status: int
         """
         self._status = status
+
+    @property
+    def compare_num(self):
+        r"""Gets the compare_num of this DataCompareOverviewInfo.
+
+        总表数。
+
+        :return: The compare_num of this DataCompareOverviewInfo.
+        :rtype: int
+        """
+        return self._compare_num
+
+    @compare_num.setter
+    def compare_num(self, compare_num):
+        r"""Sets the compare_num of this DataCompareOverviewInfo.
+
+        总表数。
+
+        :param compare_num: The compare_num of this DataCompareOverviewInfo.
+        :type compare_num: int
+        """
+        self._compare_num = compare_num
+
+    @property
+    def compare_end_num(self):
+        r"""Gets the compare_end_num of this DataCompareOverviewInfo.
+
+        已完成表数。
+
+        :return: The compare_end_num of this DataCompareOverviewInfo.
+        :rtype: int
+        """
+        return self._compare_end_num
+
+    @compare_end_num.setter
+    def compare_end_num(self, compare_end_num):
+        r"""Sets the compare_end_num of this DataCompareOverviewInfo.
+
+        已完成表数。
+
+        :param compare_end_num: The compare_end_num of this DataCompareOverviewInfo.
+        :type compare_end_num: int
+        """
+        self._compare_end_num = compare_end_num
+
+    @property
+    def data_inconsistent_num(self):
+        r"""Gets the data_inconsistent_num of this DataCompareOverviewInfo.
+
+        不一致表数。
+
+        :return: The data_inconsistent_num of this DataCompareOverviewInfo.
+        :rtype: int
+        """
+        return self._data_inconsistent_num
+
+    @data_inconsistent_num.setter
+    def data_inconsistent_num(self, data_inconsistent_num):
+        r"""Sets the data_inconsistent_num of this DataCompareOverviewInfo.
+
+        不一致表数。
+
+        :param data_inconsistent_num: The data_inconsistent_num of this DataCompareOverviewInfo.
+        :type data_inconsistent_num: int
+        """
+        self._data_inconsistent_num = data_inconsistent_num
+
+    @property
+    def uncomparable_num(self):
+        r"""Gets the uncomparable_num of this DataCompareOverviewInfo.
+
+        无法对比表数。
+
+        :return: The uncomparable_num of this DataCompareOverviewInfo.
+        :rtype: int
+        """
+        return self._uncomparable_num
+
+    @uncomparable_num.setter
+    def uncomparable_num(self, uncomparable_num):
+        r"""Sets the uncomparable_num of this DataCompareOverviewInfo.
+
+        无法对比表数。
+
+        :param uncomparable_num: The uncomparable_num of this DataCompareOverviewInfo.
+        :type uncomparable_num: int
+        """
+        self._uncomparable_num = uncomparable_num
 
     def to_dict(self):
         """Returns the model properties as a dict"""

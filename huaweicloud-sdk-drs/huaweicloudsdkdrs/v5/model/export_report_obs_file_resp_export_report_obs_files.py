@@ -1,0 +1,144 @@
+# coding: utf-8
+
+import six
+
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
+
+
+class ExportReportObsFileRespExportReportObsFiles:
+
+    """
+    Attributes:
+      openapi_types (dict): The key is attribute name
+                            and the value is attribute type.
+      attribute_map (dict): The key is attribute name
+                            and the value is json key in definition.
+    """
+    sensitive_list = []
+
+    openapi_types = {
+        'file_name': 'str',
+        'last_modified': 'str'
+    }
+
+    attribute_map = {
+        'file_name': 'file_name',
+        'last_modified': 'last_modified'
+    }
+
+    def __init__(self, file_name=None, last_modified=None):
+        r"""ExportReportObsFileRespExportReportObsFiles
+
+        The model defined in huaweicloud sdk
+
+        :param file_name: 文件名称。
+        :type file_name: str
+        :param last_modified: 最后修改时间。
+        :type last_modified: str
+        """
+        
+        
+
+        self._file_name = None
+        self._last_modified = None
+        self.discriminator = None
+
+        if file_name is not None:
+            self.file_name = file_name
+        if last_modified is not None:
+            self.last_modified = last_modified
+
+    @property
+    def file_name(self):
+        r"""Gets the file_name of this ExportReportObsFileRespExportReportObsFiles.
+
+        文件名称。
+
+        :return: The file_name of this ExportReportObsFileRespExportReportObsFiles.
+        :rtype: str
+        """
+        return self._file_name
+
+    @file_name.setter
+    def file_name(self, file_name):
+        r"""Sets the file_name of this ExportReportObsFileRespExportReportObsFiles.
+
+        文件名称。
+
+        :param file_name: The file_name of this ExportReportObsFileRespExportReportObsFiles.
+        :type file_name: str
+        """
+        self._file_name = file_name
+
+    @property
+    def last_modified(self):
+        r"""Gets the last_modified of this ExportReportObsFileRespExportReportObsFiles.
+
+        最后修改时间。
+
+        :return: The last_modified of this ExportReportObsFileRespExportReportObsFiles.
+        :rtype: str
+        """
+        return self._last_modified
+
+    @last_modified.setter
+    def last_modified(self, last_modified):
+        r"""Sets the last_modified of this ExportReportObsFileRespExportReportObsFiles.
+
+        最后修改时间。
+
+        :param last_modified: The last_modified of this ExportReportObsFileRespExportReportObsFiles.
+        :type last_modified: str
+        """
+        self._last_modified = last_modified
+
+    def to_dict(self):
+        """Returns the model properties as a dict"""
+        result = {}
+
+        for attr, _ in six.iteritems(self.openapi_types):
+            value = getattr(self, attr)
+            if isinstance(value, list):
+                result[attr] = list(map(
+                    lambda x: x.to_dict() if hasattr(x, "to_dict") else x,
+                    value
+                ))
+            elif hasattr(value, "to_dict"):
+                result[attr] = value.to_dict()
+            elif isinstance(value, dict):
+                result[attr] = dict(map(
+                    lambda item: (item[0], item[1].to_dict())
+                    if hasattr(item[1], "to_dict") else item,
+                    value.items()
+                ))
+            else:
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
+
+        return result
+
+    def to_str(self):
+        """Returns the string representation of the model"""
+        import simplejson as json
+        if six.PY2:
+            import sys
+            reload(sys)
+            sys.setdefaultencoding("utf-8")
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
+
+    def __repr__(self):
+        """For `print`"""
+        return self.to_str()
+
+    def __eq__(self, other):
+        """Returns true if both objects are equal"""
+        if not isinstance(other, ExportReportObsFileRespExportReportObsFiles):
+            return False
+
+        return self.__dict__ == other.__dict__
+
+    def __ne__(self, other):
+        """Returns true if both objects are not equal"""
+        return not self == other

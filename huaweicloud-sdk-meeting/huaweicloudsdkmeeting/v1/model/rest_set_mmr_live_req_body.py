@@ -38,8 +38,7 @@ class RestSetMmrLiveReqBody:
         self._live_state = None
         self.discriminator = None
 
-        if live_state is not None:
-            self.live_state = live_state
+        self.live_state = live_state
 
     @property
     def live_state(self):

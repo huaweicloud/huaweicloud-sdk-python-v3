@@ -36,7 +36,7 @@ class ListSharesByTagResponse(SdkResponse):
 
         :param resources: 通过标签查询文件系统的资源列表
         :type resources: list[:class:`huaweicloudsdksfsturbo.v1.ListSharesByTagResource`]
-        :param total_count: 设置返回的文件系统的偏移量
+        :param total_count: 返回的文件系统的总量
         :type total_count: int
         :param x_request_id: 
         :type x_request_id: str
@@ -82,7 +82,7 @@ class ListSharesByTagResponse(SdkResponse):
     def total_count(self):
         r"""Gets the total_count of this ListSharesByTagResponse.
 
-        设置返回的文件系统的偏移量
+        返回的文件系统的总量
 
         :return: The total_count of this ListSharesByTagResponse.
         :rtype: int
@@ -93,7 +93,7 @@ class ListSharesByTagResponse(SdkResponse):
     def total_count(self, total_count):
         r"""Sets the total_count of this ListSharesByTagResponse.
 
-        设置返回的文件系统的偏移量
+        返回的文件系统的总量
 
         :param total_count: The total_count of this ListSharesByTagResponse.
         :type total_count: int

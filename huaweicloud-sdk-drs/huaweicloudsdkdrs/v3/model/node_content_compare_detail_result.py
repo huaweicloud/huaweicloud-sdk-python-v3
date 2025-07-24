@@ -27,7 +27,11 @@ class NodeContentCompareDetailResult:
         'line_compare_result': 'bool',
         'content_compare_result': 'bool',
         'message': 'str',
-        'compare_line_config_filter': 'str'
+        'compare_line_config_filter': 'str',
+        'status': 'int',
+        'complete_shard_count': 'int',
+        'total_shard_count': 'int',
+        'progress': 'float'
     }
 
     attribute_map = {
@@ -41,10 +45,14 @@ class NodeContentCompareDetailResult:
         'line_compare_result': 'line_compare_result',
         'content_compare_result': 'content_compare_result',
         'message': 'message',
-        'compare_line_config_filter': 'compare_line_config_filter'
+        'compare_line_config_filter': 'compare_line_config_filter',
+        'status': 'status',
+        'complete_shard_count': 'complete_shard_count',
+        'total_shard_count': 'total_shard_count',
+        'progress': 'progress'
     }
 
-    def __init__(self, source_db=None, target_db=None, source_table_name=None, target_table_name=None, source_row_num=None, target_row_num=None, difference_row_num=None, line_compare_result=None, content_compare_result=None, message=None, compare_line_config_filter=None):
+    def __init__(self, source_db=None, target_db=None, source_table_name=None, target_table_name=None, source_row_num=None, target_row_num=None, difference_row_num=None, line_compare_result=None, content_compare_result=None, message=None, compare_line_config_filter=None, status=None, complete_shard_count=None, total_shard_count=None, progress=None):
         r"""NodeContentCompareDetailResult
 
         The model defined in huaweicloud sdk
@@ -71,6 +79,14 @@ class NodeContentCompareDetailResult:
         :type message: str
         :param compare_line_config_filter: 行过滤配置条件
         :type compare_line_config_filter: str
+        :param status: 全量比对状态。 -1：对比中 -2：已完成 -3：待对比 -4：已取消
+        :type status: int
+        :param complete_shard_count: 已对比分片数。
+        :type complete_shard_count: int
+        :param total_shard_count: 总分片数。
+        :type total_shard_count: int
+        :param progress: 比对进度。
+        :type progress: float
         """
         
         
@@ -86,6 +102,10 @@ class NodeContentCompareDetailResult:
         self._content_compare_result = None
         self._message = None
         self._compare_line_config_filter = None
+        self._status = None
+        self._complete_shard_count = None
+        self._total_shard_count = None
+        self._progress = None
         self.discriminator = None
 
         if source_db is not None:
@@ -110,6 +130,14 @@ class NodeContentCompareDetailResult:
             self.message = message
         if compare_line_config_filter is not None:
             self.compare_line_config_filter = compare_line_config_filter
+        if status is not None:
+            self.status = status
+        if complete_shard_count is not None:
+            self.complete_shard_count = complete_shard_count
+        if total_shard_count is not None:
+            self.total_shard_count = total_shard_count
+        if progress is not None:
+            self.progress = progress
 
     @property
     def source_db(self):
@@ -352,6 +380,94 @@ class NodeContentCompareDetailResult:
         :type compare_line_config_filter: str
         """
         self._compare_line_config_filter = compare_line_config_filter
+
+    @property
+    def status(self):
+        r"""Gets the status of this NodeContentCompareDetailResult.
+
+        全量比对状态。 -1：对比中 -2：已完成 -3：待对比 -4：已取消
+
+        :return: The status of this NodeContentCompareDetailResult.
+        :rtype: int
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        r"""Sets the status of this NodeContentCompareDetailResult.
+
+        全量比对状态。 -1：对比中 -2：已完成 -3：待对比 -4：已取消
+
+        :param status: The status of this NodeContentCompareDetailResult.
+        :type status: int
+        """
+        self._status = status
+
+    @property
+    def complete_shard_count(self):
+        r"""Gets the complete_shard_count of this NodeContentCompareDetailResult.
+
+        已对比分片数。
+
+        :return: The complete_shard_count of this NodeContentCompareDetailResult.
+        :rtype: int
+        """
+        return self._complete_shard_count
+
+    @complete_shard_count.setter
+    def complete_shard_count(self, complete_shard_count):
+        r"""Sets the complete_shard_count of this NodeContentCompareDetailResult.
+
+        已对比分片数。
+
+        :param complete_shard_count: The complete_shard_count of this NodeContentCompareDetailResult.
+        :type complete_shard_count: int
+        """
+        self._complete_shard_count = complete_shard_count
+
+    @property
+    def total_shard_count(self):
+        r"""Gets the total_shard_count of this NodeContentCompareDetailResult.
+
+        总分片数。
+
+        :return: The total_shard_count of this NodeContentCompareDetailResult.
+        :rtype: int
+        """
+        return self._total_shard_count
+
+    @total_shard_count.setter
+    def total_shard_count(self, total_shard_count):
+        r"""Sets the total_shard_count of this NodeContentCompareDetailResult.
+
+        总分片数。
+
+        :param total_shard_count: The total_shard_count of this NodeContentCompareDetailResult.
+        :type total_shard_count: int
+        """
+        self._total_shard_count = total_shard_count
+
+    @property
+    def progress(self):
+        r"""Gets the progress of this NodeContentCompareDetailResult.
+
+        比对进度。
+
+        :return: The progress of this NodeContentCompareDetailResult.
+        :rtype: float
+        """
+        return self._progress
+
+    @progress.setter
+    def progress(self, progress):
+        r"""Sets the progress of this NodeContentCompareDetailResult.
+
+        比对进度。
+
+        :param progress: The progress of this NodeContentCompareDetailResult.
+        :type progress: float
+        """
+        self._progress = progress
 
     def to_dict(self):
         """Returns the model properties as a dict"""

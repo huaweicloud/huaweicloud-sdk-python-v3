@@ -23,6 +23,7 @@ class ScanKvRequestBody:
         'start_key': 'dict',
         'end_key': 'dict',
         'filter_expression': 'ConditionExpression',
+        'projection_fields': 'list[str]',
         'sample_segments_count': 'int',
         'return_count_only': 'bool'
     }
@@ -34,11 +35,12 @@ class ScanKvRequestBody:
         'start_key': 'start_key',
         'end_key': 'end_key',
         'filter_expression': 'filter_expression',
+        'projection_fields': 'projection_fields',
         'sample_segments_count': 'sample_segments_count',
         'return_count_only': 'return_count_only'
     }
 
-    def __init__(self, table_name=None, hint_index_name=None, limit=None, start_key=None, end_key=None, filter_expression=None, sample_segments_count=None, return_count_only=None):
+    def __init__(self, table_name=None, hint_index_name=None, limit=None, start_key=None, end_key=None, filter_expression=None, projection_fields=None, sample_segments_count=None, return_count_only=None):
         r"""ScanKvRequestBody
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class ScanKvRequestBody:
         :type end_key: dict
         :param filter_expression: 
         :type filter_expression: :class:`huaweicloudsdkkvs.v1.ConditionExpression`
+        :param projection_fields: 对kv_doc有效，返回指定字段列表，默认全部。
+        :type projection_fields: list[str]
         :param sample_segments_count: 对表进行采样，尽最大努力保证返回的段列表均分整张表。举例：sample_segments_count&#x3D;4，返回的段列表[MinKey, KV1)、[KV1,KV2)、[KV2,KV3)和[KV3,MaxKey)。用户可以使用scan-kv对这四个分区执行并发扫描，提高遍历效率。 - 范围: [1, 10000]。默认值：不执行采样。 - sample_segments_count仅能和table_name、start_key和end_key字段配合使用。Range分区模式下支持全表采样和范围采样；Hash分区模式仅支持全表扫描。 - 仅支持对Primary key进行采样，不支持本地/全局二级索引。 - 返回的段列表仅包含主键，不包含键值；且段列表是编码后的数据 ，不可修改。
         :type sample_segments_count: int
         :param return_count_only: 返回查询条件对应的KV总数. - 当KV总数小于limit条件时，返回KV查询结果和KV总数。 - 当KV总数多于limit条件时，只返回KV总数。
@@ -69,6 +73,7 @@ class ScanKvRequestBody:
         self._start_key = None
         self._end_key = None
         self._filter_expression = None
+        self._projection_fields = None
         self._sample_segments_count = None
         self._return_count_only = None
         self.discriminator = None
@@ -84,6 +89,8 @@ class ScanKvRequestBody:
             self.end_key = end_key
         if filter_expression is not None:
             self.filter_expression = filter_expression
+        if projection_fields is not None:
+            self.projection_fields = projection_fields
         if sample_segments_count is not None:
             self.sample_segments_count = sample_segments_count
         if return_count_only is not None:
@@ -216,6 +223,28 @@ class ScanKvRequestBody:
         :type filter_expression: :class:`huaweicloudsdkkvs.v1.ConditionExpression`
         """
         self._filter_expression = filter_expression
+
+    @property
+    def projection_fields(self):
+        r"""Gets the projection_fields of this ScanKvRequestBody.
+
+        对kv_doc有效，返回指定字段列表，默认全部。
+
+        :return: The projection_fields of this ScanKvRequestBody.
+        :rtype: list[str]
+        """
+        return self._projection_fields
+
+    @projection_fields.setter
+    def projection_fields(self, projection_fields):
+        r"""Sets the projection_fields of this ScanKvRequestBody.
+
+        对kv_doc有效，返回指定字段列表，默认全部。
+
+        :param projection_fields: The projection_fields of this ScanKvRequestBody.
+        :type projection_fields: list[str]
+        """
+        self._projection_fields = projection_fields
 
     @property
     def sample_segments_count(self):

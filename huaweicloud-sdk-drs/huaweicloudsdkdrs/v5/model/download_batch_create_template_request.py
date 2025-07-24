@@ -17,29 +17,36 @@ class DownloadBatchCreateTemplateRequest:
     sensitive_list = []
 
     openapi_types = {
-        'x_language': 'str'
+        'x_language': 'str',
+        'engine_type': 'str'
     }
 
     attribute_map = {
-        'x_language': 'X-Language'
+        'x_language': 'X-Language',
+        'engine_type': 'engine_type'
     }
 
-    def __init__(self, x_language=None):
+    def __init__(self, x_language=None, engine_type=None):
         r"""DownloadBatchCreateTemplateRequest
 
         The model defined in huaweicloud sdk
 
         :param x_language: 请求语言类型。
         :type x_language: str
+        :param engine_type: 数据库引擎。 - postgresql
+        :type engine_type: str
         """
         
         
 
         self._x_language = None
+        self._engine_type = None
         self.discriminator = None
 
         if x_language is not None:
             self.x_language = x_language
+        if engine_type is not None:
+            self.engine_type = engine_type
 
     @property
     def x_language(self):
@@ -62,6 +69,28 @@ class DownloadBatchCreateTemplateRequest:
         :type x_language: str
         """
         self._x_language = x_language
+
+    @property
+    def engine_type(self):
+        r"""Gets the engine_type of this DownloadBatchCreateTemplateRequest.
+
+        数据库引擎。 - postgresql
+
+        :return: The engine_type of this DownloadBatchCreateTemplateRequest.
+        :rtype: str
+        """
+        return self._engine_type
+
+    @engine_type.setter
+    def engine_type(self, engine_type):
+        r"""Sets the engine_type of this DownloadBatchCreateTemplateRequest.
+
+        数据库引擎。 - postgresql
+
+        :param engine_type: The engine_type of this DownloadBatchCreateTemplateRequest.
+        :type engine_type: str
+        """
+        self._engine_type = engine_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

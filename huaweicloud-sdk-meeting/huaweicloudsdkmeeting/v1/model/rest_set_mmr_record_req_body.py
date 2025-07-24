@@ -38,8 +38,7 @@ class RestSetMmrRecordReqBody:
         self._record_type = None
         self.discriminator = None
 
-        if record_type is not None:
-            self.record_type = record_type
+        self.record_type = record_type
 
     @property
     def record_type(self):

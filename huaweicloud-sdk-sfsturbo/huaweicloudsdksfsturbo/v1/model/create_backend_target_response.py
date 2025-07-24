@@ -42,7 +42,7 @@ class CreateBackendTargetResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param target_id: 绑定关系id
+        :param target_id: 绑定关系ID
         :type target_id: str
         :param creation_time: 绑定关系创建时间
         :type creation_time: str
@@ -88,7 +88,7 @@ class CreateBackendTargetResponse(SdkResponse):
     def target_id(self):
         r"""Gets the target_id of this CreateBackendTargetResponse.
 
-        绑定关系id
+        绑定关系ID
 
         :return: The target_id of this CreateBackendTargetResponse.
         :rtype: str
@@ -99,7 +99,7 @@ class CreateBackendTargetResponse(SdkResponse):
     def target_id(self, target_id):
         r"""Sets the target_id of this CreateBackendTargetResponse.
 
-        绑定关系id
+        绑定关系ID
 
         :param target_id: The target_id of this CreateBackendTargetResponse.
         :type target_id: str

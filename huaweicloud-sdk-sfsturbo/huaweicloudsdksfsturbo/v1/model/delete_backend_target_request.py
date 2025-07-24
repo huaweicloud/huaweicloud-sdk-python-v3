@@ -33,9 +33,9 @@ class DeleteBackendTargetRequest:
 
         The model defined in huaweicloud sdk
 
-        :param share_id: 文件系统id
+        :param share_id: 文件系统ID
         :type share_id: str
-        :param target_id: 绑定关系id
+        :param target_id: 绑定关系ID
         :type target_id: str
         :param delete_data_in_file_system: 删除后端存储时是否同时删除文件系统内的联动目录及其数据文件，默认为 false。数据删除后无法恢复，请谨慎操作。
         :type delete_data_in_file_system: bool
@@ -57,7 +57,7 @@ class DeleteBackendTargetRequest:
     def share_id(self):
         r"""Gets the share_id of this DeleteBackendTargetRequest.
 
-        文件系统id
+        文件系统ID
 
         :return: The share_id of this DeleteBackendTargetRequest.
         :rtype: str
@@ -68,7 +68,7 @@ class DeleteBackendTargetRequest:
     def share_id(self, share_id):
         r"""Sets the share_id of this DeleteBackendTargetRequest.
 
-        文件系统id
+        文件系统ID
 
         :param share_id: The share_id of this DeleteBackendTargetRequest.
         :type share_id: str
@@ -79,7 +79,7 @@ class DeleteBackendTargetRequest:
     def target_id(self):
         r"""Gets the target_id of this DeleteBackendTargetRequest.
 
-        绑定关系id
+        绑定关系ID
 
         :return: The target_id of this DeleteBackendTargetRequest.
         :rtype: str
@@ -90,7 +90,7 @@ class DeleteBackendTargetRequest:
     def target_id(self, target_id):
         r"""Sets the target_id of this DeleteBackendTargetRequest.
 
-        绑定关系id
+        绑定关系ID
 
         :param target_id: The target_id of this DeleteBackendTargetRequest.
         :type target_id: str

@@ -31,7 +31,7 @@ class Tag:
 
         The model defined in huaweicloud sdk
 
-        :param key: 标签的键。  最大长度128个字符。 key不能为空。
+        :param key: 标签的键。  最大长度128个字符。 key不能为空。 
         :type key: str
         :param values: 值列表。每个值最大长度255个字符，如果values为空列表，则表示匹配任意值value。value之间为或的关系。
         :type values: list[str]
@@ -50,7 +50,7 @@ class Tag:
     def key(self):
         r"""Gets the key of this Tag.
 
-        标签的键。  最大长度128个字符。 key不能为空。
+        标签的键。  最大长度128个字符。 key不能为空。 
 
         :return: The key of this Tag.
         :rtype: str
@@ -61,7 +61,7 @@ class Tag:
     def key(self, key):
         r"""Sets the key of this Tag.
 
-        标签的键。  最大长度128个字符。 key不能为空。
+        标签的键。  最大长度128个字符。 key不能为空。 
 
         :param key: The key of this Tag.
         :type key: str

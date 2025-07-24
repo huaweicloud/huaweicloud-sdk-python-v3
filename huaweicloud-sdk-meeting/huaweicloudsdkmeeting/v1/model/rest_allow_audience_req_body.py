@@ -38,8 +38,7 @@ class RestAllowAudienceReqBody:
         self._allow_audience = None
         self.discriminator = None
 
-        if allow_audience is not None:
-            self.allow_audience = allow_audience
+        self.allow_audience = allow_audience
 
     @property
     def allow_audience(self):

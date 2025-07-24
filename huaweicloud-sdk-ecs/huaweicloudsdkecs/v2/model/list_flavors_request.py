@@ -39,9 +39,9 @@ class ListFlavorsRequest:
         :type availability_zone: str
         :param flavor_id: 规格id
         :type flavor_id: str
-        :param limit: 
+        :param limit: 查询返回云服务器规格列表当前页面的数量。默认为1000
         :type limit: int
-        :param marker: 
+        :param marker: 从marker指定的flavor_id的下一条数据开始查询
         :type marker: str
         """
         
@@ -110,6 +110,8 @@ class ListFlavorsRequest:
     def limit(self):
         r"""Gets the limit of this ListFlavorsRequest.
 
+        查询返回云服务器规格列表当前页面的数量。默认为1000
+
         :return: The limit of this ListFlavorsRequest.
         :rtype: int
         """
@@ -118,6 +120,8 @@ class ListFlavorsRequest:
     @limit.setter
     def limit(self, limit):
         r"""Sets the limit of this ListFlavorsRequest.
+
+        查询返回云服务器规格列表当前页面的数量。默认为1000
 
         :param limit: The limit of this ListFlavorsRequest.
         :type limit: int
@@ -128,6 +132,8 @@ class ListFlavorsRequest:
     def marker(self):
         r"""Gets the marker of this ListFlavorsRequest.
 
+        从marker指定的flavor_id的下一条数据开始查询
+
         :return: The marker of this ListFlavorsRequest.
         :rtype: str
         """
@@ -136,6 +142,8 @@ class ListFlavorsRequest:
     @marker.setter
     def marker(self, marker):
         r"""Sets the marker of this ListFlavorsRequest.
+
+        从marker指定的flavor_id的下一条数据开始查询
 
         :param marker: The marker of this ListFlavorsRequest.
         :type marker: str

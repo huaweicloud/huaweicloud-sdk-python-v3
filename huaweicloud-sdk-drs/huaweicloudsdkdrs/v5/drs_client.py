@@ -1795,6 +1795,8 @@ class DrsClient(Client):
         path_params = {}
 
         query_params = []
+        if 'engine_type' in local_var_params:
+            query_params.append(('engine_type', local_var_params['engine_type']))
 
         header_params = {}
         if 'x_language' in local_var_params:
@@ -1803,6 +1805,73 @@ class DrsClient(Client):
         form_params = {}
 
         body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def download_create_template(self, request):
+        r"""下载创建模板
+
+        下载根据已有任务导出的创建模板。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DownloadCreateTemplate
+        :type request: :class:`huaweicloudsdkdrs.v5.DownloadCreateTemplateRequest`
+        :rtype: :class:`huaweicloudsdkdrs.v5.DownloadCreateTemplateResponse`
+        """
+        http_info = self._download_create_template_http_info(request)
+        return self._call_api(**http_info)
+
+    def download_create_template_invoker(self, request):
+        http_info = self._download_create_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _download_create_template_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/templates/download",
+            "request_type": request.__class__.__name__,
+            "response_type": "DownloadCreateTemplateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -1962,6 +2031,73 @@ class DrsClient(Client):
 
         return http_info
 
+    def export_creation_template(self, request):
+        r"""导出创建模板
+
+        根据已有任务导出创建模板。（异步操作，需要调查询导出进度接口查询结果。）
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ExportCreationTemplate
+        :type request: :class:`huaweicloudsdkdrs.v5.ExportCreationTemplateRequest`
+        :rtype: :class:`huaweicloudsdkdrs.v5.ExportCreationTemplateResponse`
+        """
+        http_info = self._export_creation_template_http_info(request)
+        return self._call_api(**http_info)
+
+    def export_creation_template_invoker(self, request):
+        http_info = self._export_creation_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _export_creation_template_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/jobs/export/template",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExportCreationTemplateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def export_operation_info(self, request):
         r"""导出任务操作统计信息
 
@@ -2073,6 +2209,8 @@ class DrsClient(Client):
         form_params = {}
         if 'file' in local_var_params:
             form_params['file'] = local_var_params['file']
+        if 'type' in local_var_params:
+            form_params['type'] = local_var_params['type']
 
         body = None
         if 'body' in local_var_params:
@@ -3246,6 +3384,75 @@ class DrsClient(Client):
 
         return http_info
 
+    def list_templates(self, request):
+        r"""查询创建模板列表
+
+        查询批量创建模板列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListTemplates
+        :type request: :class:`huaweicloudsdkdrs.v5.ListTemplatesRequest`
+        :rtype: :class:`huaweicloudsdkdrs.v5.ListTemplatesResponse`
+        """
+        http_info = self._list_templates_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_templates_invoker(self, request):
+        http_info = self._list_templates_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_templates_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/templates",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTemplatesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_user_jdbc_drivers(self, request):
         r"""查询驱动文件列表
 
@@ -4341,6 +4548,73 @@ class DrsClient(Client):
             query_params.append(('name', local_var_params['name']))
         if 'domain_id' in local_var_params:
             query_params.append(('domain_id', local_var_params['domain_id']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_export_progress(self, request):
+        r"""查询导出创建模板进度
+
+        查询导出批量创建模板进度。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowExportProgress
+        :type request: :class:`huaweicloudsdkdrs.v5.ShowExportProgressRequest`
+        :rtype: :class:`huaweicloudsdkdrs.v5.ShowExportProgressResponse`
+        """
+        http_info = self._show_export_progress_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_export_progress_invoker(self, request):
+        http_info = self._show_export_progress_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_export_progress_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/jobs/{async_job_id}/export/progress",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowExportProgressResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'async_job_id' in local_var_params:
+            path_params['async_job_id'] = local_var_params['async_job_id']
+
+        query_params = []
 
         header_params = {}
         if 'x_language' in local_var_params:
