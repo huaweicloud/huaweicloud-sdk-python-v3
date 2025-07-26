@@ -24,6 +24,8 @@ class EgRegion:
                         "https://eg.cn-north-9.myhuaweicloud.com")
     NA_MEXICO_1 = Region("na-mexico-1",
                         "https://eg.na-mexico-1.myhuaweicloud.com")
+    EU_WEST_101 = Region("eu-west-101",
+                        "https://eg.eu-west-101.myhuaweicloud.eu")
 
     static_fields = {
         "cn-north-4": CN_NORTH_4,
@@ -35,6 +37,7 @@ class EgRegion:
         "cn-north-11": CN_NORTH_11,
         "cn-north-9": CN_NORTH_9,
         "na-mexico-1": NA_MEXICO_1,
+        "eu-west-101": EU_WEST_101,
     }
 
     @classmethod

@@ -28,6 +28,7 @@ class PublicipShowResp:
         'private_ip_address': 'str',
         'profile': 'ProfileResp',
         'public_ip_address': 'str',
+        'tags': 'list[str]',
         'status': 'str',
         'tenant_id': 'str',
         'type': 'str',
@@ -50,6 +51,7 @@ class PublicipShowResp:
         'private_ip_address': 'private_ip_address',
         'profile': 'profile',
         'public_ip_address': 'public_ip_address',
+        'tags': 'tags',
         'status': 'status',
         'tenant_id': 'tenant_id',
         'type': 'type',
@@ -60,7 +62,7 @@ class PublicipShowResp:
         'alias': 'alias'
     }
 
-    def __init__(self, bandwidth_id=None, bandwidth_name=None, bandwidth_share_type=None, bandwidth_size=None, create_time=None, enterprise_project_id=None, id=None, port_id=None, private_ip_address=None, profile=None, public_ip_address=None, status=None, tenant_id=None, type=None, public_ipv6_address=None, ip_version=None, public_border_group=None, allow_share_bandwidth_types=None, alias=None):
+    def __init__(self, bandwidth_id=None, bandwidth_name=None, bandwidth_share_type=None, bandwidth_size=None, create_time=None, enterprise_project_id=None, id=None, port_id=None, private_ip_address=None, profile=None, public_ip_address=None, tags=None, status=None, tenant_id=None, type=None, public_ipv6_address=None, ip_version=None, public_border_group=None, allow_share_bandwidth_types=None, alias=None):
         r"""PublicipShowResp
 
         The model defined in huaweicloud sdk
@@ -87,6 +89,8 @@ class PublicipShowResp:
         :type profile: :class:`huaweicloudsdkeip.v2.ProfileResp`
         :param public_ip_address: IPv4时是申请到的弹性公网IP地址，IPv6时是IPv6地址对应的IPv4地址
         :type public_ip_address: str
+        :param tags: - 功能说明：\&quot;公网EIP标签\&quot;
+        :type tags: list[str]
         :param status: 功能说明：弹性公网IP的状态  取值范围：冻结FREEZED，绑定失败BIND_ERROR，绑定中BINDING，释放中PENDING_DELETE， 创建中PENDING_CREATE，创建中NOTIFYING，释放中NOTIFY_DELETE，更新中PENDING_UPDATE， 未绑定DOWN ，绑定ACTIVE，绑定ELB，绑定VPN，失败ERROR。
         :type status: str
         :param tenant_id: 项目ID
@@ -118,6 +122,7 @@ class PublicipShowResp:
         self._private_ip_address = None
         self._profile = None
         self._public_ip_address = None
+        self._tags = None
         self._status = None
         self._tenant_id = None
         self._type = None
@@ -150,6 +155,8 @@ class PublicipShowResp:
             self.profile = profile
         if public_ip_address is not None:
             self.public_ip_address = public_ip_address
+        if tags is not None:
+            self.tags = tags
         if status is not None:
             self.status = status
         if tenant_id is not None:
@@ -404,6 +411,28 @@ class PublicipShowResp:
         :type public_ip_address: str
         """
         self._public_ip_address = public_ip_address
+
+    @property
+    def tags(self):
+        r"""Gets the tags of this PublicipShowResp.
+
+        - 功能说明：\"公网EIP标签\"
+
+        :return: The tags of this PublicipShowResp.
+        :rtype: list[str]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        r"""Sets the tags of this PublicipShowResp.
+
+        - 功能说明：\"公网EIP标签\"
+
+        :param tags: The tags of this PublicipShowResp.
+        :type tags: list[str]
+        """
+        self._tags = tags
 
     @property
     def status(self):

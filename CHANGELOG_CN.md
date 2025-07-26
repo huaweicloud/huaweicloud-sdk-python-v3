@@ -1,3 +1,16 @@
+# 3.1.159 2025-07-26
+
+### HuaweiCloud SDK EIP
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - ShowPublicip 新增响应字段tags
+
 # 3.1.158 2025-07-24
 
 ### HuaweiCloud SDK DBSS

@@ -1,3 +1,16 @@
+# 3.1.159 2025-07-26
+
+### HuaweiCloud SDK EIP
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - ShowPublicip new response field tags
+
 # 3.1.158 2025-07-24
 
 ### HuaweiCloud SDK DBSS
