@@ -41,7 +41,7 @@ class OperateResultRequestInfo:
 
         The model defined in huaweicloud sdk
 
-        :param agent_id: Agent ID
+        :param agent_id: **参数解释**: Agent ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
         :type agent_id: str
         :param result_id: 病毒查杀结果ID
         :type result_id: str
@@ -81,7 +81,7 @@ class OperateResultRequestInfo:
     def agent_id(self):
         r"""Gets the agent_id of this OperateResultRequestInfo.
 
-        Agent ID
+        **参数解释**: Agent ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :return: The agent_id of this OperateResultRequestInfo.
         :rtype: str
@@ -92,7 +92,7 @@ class OperateResultRequestInfo:
     def agent_id(self, agent_id):
         r"""Sets the agent_id of this OperateResultRequestInfo.
 
-        Agent ID
+        **参数解释**: Agent ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :param agent_id: The agent_id of this OperateResultRequestInfo.
         :type agent_id: str

@@ -35,9 +35,9 @@ class ListBackupVaultsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param offset: 偏移量：指定返回记录的开始位置
+        :param offset: **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 默认为0 
         :type offset: int
-        :param limit: 每页显示个数
+        :param limit: **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
         :type limit: int
         :param vault_name: 备份存储库名称
         :type vault_name: str
@@ -53,8 +53,10 @@ class ListBackupVaultsRequest:
         self._vault_id = None
         self.discriminator = None
 
-        self.offset = offset
-        self.limit = limit
+        if offset is not None:
+            self.offset = offset
+        if limit is not None:
+            self.limit = limit
         if vault_name is not None:
             self.vault_name = vault_name
         if vault_id is not None:
@@ -64,7 +66,7 @@ class ListBackupVaultsRequest:
     def offset(self):
         r"""Gets the offset of this ListBackupVaultsRequest.
 
-        偏移量：指定返回记录的开始位置
+        **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 默认为0 
 
         :return: The offset of this ListBackupVaultsRequest.
         :rtype: int
@@ -75,7 +77,7 @@ class ListBackupVaultsRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListBackupVaultsRequest.
 
-        偏移量：指定返回记录的开始位置
+        **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 默认为0 
 
         :param offset: The offset of this ListBackupVaultsRequest.
         :type offset: int
@@ -86,7 +88,7 @@ class ListBackupVaultsRequest:
     def limit(self):
         r"""Gets the limit of this ListBackupVaultsRequest.
 
-        每页显示个数
+        **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
 
         :return: The limit of this ListBackupVaultsRequest.
         :rtype: int
@@ -97,7 +99,7 @@ class ListBackupVaultsRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListBackupVaultsRequest.
 
-        每页显示个数
+        **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
 
         :param limit: The limit of this ListBackupVaultsRequest.
         :type limit: int

@@ -47,9 +47,9 @@ class ListAgentInvocationsRequest:
         :type instance_type: str
         :param invocation_id: 任务id
         :type invocation_id: str
-        :param invocation_type: 任务类型，INSTALL 安装，UPDATE 升级，ROLLBACK 回退，RETRY 重试
+        :param invocation_type: 任务类型, INSTALL安装, UPDATE升级, ROLLBACK回退，RETRY重试，SET_REMOTE_INSTALLER设置远程安装主机，REMOTE_INSTALL执行远程安装
         :type invocation_type: str
-        :param invocation_target: 任务对象，目前仅支持telescope
+        :param invocation_target: 任务对象, 支持 telescope监控
         :type invocation_target: str
         :param offset: 分页偏移量
         :type offset: int
@@ -153,7 +153,7 @@ class ListAgentInvocationsRequest:
     def invocation_type(self):
         r"""Gets the invocation_type of this ListAgentInvocationsRequest.
 
-        任务类型，INSTALL 安装，UPDATE 升级，ROLLBACK 回退，RETRY 重试
+        任务类型, INSTALL安装, UPDATE升级, ROLLBACK回退，RETRY重试，SET_REMOTE_INSTALLER设置远程安装主机，REMOTE_INSTALL执行远程安装
 
         :return: The invocation_type of this ListAgentInvocationsRequest.
         :rtype: str
@@ -164,7 +164,7 @@ class ListAgentInvocationsRequest:
     def invocation_type(self, invocation_type):
         r"""Sets the invocation_type of this ListAgentInvocationsRequest.
 
-        任务类型，INSTALL 安装，UPDATE 升级，ROLLBACK 回退，RETRY 重试
+        任务类型, INSTALL安装, UPDATE升级, ROLLBACK回退，RETRY重试，SET_REMOTE_INSTALLER设置远程安装主机，REMOTE_INSTALL执行远程安装
 
         :param invocation_type: The invocation_type of this ListAgentInvocationsRequest.
         :type invocation_type: str
@@ -175,7 +175,7 @@ class ListAgentInvocationsRequest:
     def invocation_target(self):
         r"""Gets the invocation_target of this ListAgentInvocationsRequest.
 
-        任务对象，目前仅支持telescope
+        任务对象, 支持 telescope监控
 
         :return: The invocation_target of this ListAgentInvocationsRequest.
         :rtype: str
@@ -186,7 +186,7 @@ class ListAgentInvocationsRequest:
     def invocation_target(self, invocation_target):
         r"""Sets the invocation_target of this ListAgentInvocationsRequest.
 
-        任务对象，目前仅支持telescope
+        任务对象, 支持 telescope监控
 
         :param invocation_target: The invocation_target of this ListAgentInvocationsRequest.
         :type invocation_target: str

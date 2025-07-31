@@ -38,15 +38,15 @@ class ShowCheckRuleDetailResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param description: 当前检查项（检测规则）的描述
+        :param description: **参数解释**: 当前检查项（检测规则）的描述 **取值范围**: 不涉及 
         :type description: str
-        :param reference: 当前检查项（检测规则）的制定依据
+        :param reference: **参数解释**: 当前检查项（检测规则）的制定依据 **取值范围**: 不涉及 
         :type reference: str
-        :param audit: 当前检查项（检测规则）的审计描述
+        :param audit: **参数解释**: 当前检查项（检测规则）的审计描述 **取值范围**: 不涉及 
         :type audit: str
-        :param remediation: 当前检查项（检测规则）的修改建议
+        :param remediation: **参数解释**: 当前检查项（检测规则）的修改建议 **取值范围**: 不涉及 
         :type remediation: str
-        :param check_info_list: 检测用例信息
+        :param check_info_list: **参数解释**: 检测用例信息 **取值范围**: 不涉及 
         :type check_info_list: list[:class:`huaweicloudsdkhss.v5.CheckRuleCheckCaseResponseInfo`]
         """
         
@@ -74,7 +74,7 @@ class ShowCheckRuleDetailResponse(SdkResponse):
     def description(self):
         r"""Gets the description of this ShowCheckRuleDetailResponse.
 
-        当前检查项（检测规则）的描述
+        **参数解释**: 当前检查项（检测规则）的描述 **取值范围**: 不涉及 
 
         :return: The description of this ShowCheckRuleDetailResponse.
         :rtype: str
@@ -85,7 +85,7 @@ class ShowCheckRuleDetailResponse(SdkResponse):
     def description(self, description):
         r"""Sets the description of this ShowCheckRuleDetailResponse.
 
-        当前检查项（检测规则）的描述
+        **参数解释**: 当前检查项（检测规则）的描述 **取值范围**: 不涉及 
 
         :param description: The description of this ShowCheckRuleDetailResponse.
         :type description: str
@@ -96,7 +96,7 @@ class ShowCheckRuleDetailResponse(SdkResponse):
     def reference(self):
         r"""Gets the reference of this ShowCheckRuleDetailResponse.
 
-        当前检查项（检测规则）的制定依据
+        **参数解释**: 当前检查项（检测规则）的制定依据 **取值范围**: 不涉及 
 
         :return: The reference of this ShowCheckRuleDetailResponse.
         :rtype: str
@@ -107,7 +107,7 @@ class ShowCheckRuleDetailResponse(SdkResponse):
     def reference(self, reference):
         r"""Sets the reference of this ShowCheckRuleDetailResponse.
 
-        当前检查项（检测规则）的制定依据
+        **参数解释**: 当前检查项（检测规则）的制定依据 **取值范围**: 不涉及 
 
         :param reference: The reference of this ShowCheckRuleDetailResponse.
         :type reference: str
@@ -118,7 +118,7 @@ class ShowCheckRuleDetailResponse(SdkResponse):
     def audit(self):
         r"""Gets the audit of this ShowCheckRuleDetailResponse.
 
-        当前检查项（检测规则）的审计描述
+        **参数解释**: 当前检查项（检测规则）的审计描述 **取值范围**: 不涉及 
 
         :return: The audit of this ShowCheckRuleDetailResponse.
         :rtype: str
@@ -129,7 +129,7 @@ class ShowCheckRuleDetailResponse(SdkResponse):
     def audit(self, audit):
         r"""Sets the audit of this ShowCheckRuleDetailResponse.
 
-        当前检查项（检测规则）的审计描述
+        **参数解释**: 当前检查项（检测规则）的审计描述 **取值范围**: 不涉及 
 
         :param audit: The audit of this ShowCheckRuleDetailResponse.
         :type audit: str
@@ -140,7 +140,7 @@ class ShowCheckRuleDetailResponse(SdkResponse):
     def remediation(self):
         r"""Gets the remediation of this ShowCheckRuleDetailResponse.
 
-        当前检查项（检测规则）的修改建议
+        **参数解释**: 当前检查项（检测规则）的修改建议 **取值范围**: 不涉及 
 
         :return: The remediation of this ShowCheckRuleDetailResponse.
         :rtype: str
@@ -151,7 +151,7 @@ class ShowCheckRuleDetailResponse(SdkResponse):
     def remediation(self, remediation):
         r"""Sets the remediation of this ShowCheckRuleDetailResponse.
 
-        当前检查项（检测规则）的修改建议
+        **参数解释**: 当前检查项（检测规则）的修改建议 **取值范围**: 不涉及 
 
         :param remediation: The remediation of this ShowCheckRuleDetailResponse.
         :type remediation: str
@@ -162,7 +162,7 @@ class ShowCheckRuleDetailResponse(SdkResponse):
     def check_info_list(self):
         r"""Gets the check_info_list of this ShowCheckRuleDetailResponse.
 
-        检测用例信息
+        **参数解释**: 检测用例信息 **取值范围**: 不涉及 
 
         :return: The check_info_list of this ShowCheckRuleDetailResponse.
         :rtype: list[:class:`huaweicloudsdkhss.v5.CheckRuleCheckCaseResponseInfo`]
@@ -173,7 +173,7 @@ class ShowCheckRuleDetailResponse(SdkResponse):
     def check_info_list(self, check_info_list):
         r"""Sets the check_info_list of this ShowCheckRuleDetailResponse.
 
-        检测用例信息
+        **参数解释**: 检测用例信息 **取值范围**: 不涉及 
 
         :param check_info_list: The check_info_list of this ShowCheckRuleDetailResponse.
         :type check_info_list: list[:class:`huaweicloudsdkhss.v5.CheckRuleCheckCaseResponseInfo`]

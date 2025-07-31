@@ -37,15 +37,15 @@ class WeakPwdAccountInfoResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param user_name: 弱口令账号名称
+        :param user_name: **参数解释**: 弱口令账号名称 **取值范围**: 不涉及 
         :type user_name: str
-        :param service_type: 账号类型，包含如下:   - system   - mysql   - redis
+        :param service_type: **参数解释**: 账号类型 **取值范围**: - system : 系统账号 - mysql  : mysql账号 - redis  : redis账号 
         :type service_type: str
-        :param duration: 弱口令使用时长，单位天
+        :param duration: **参数解释**: 弱口令使用时长，单位天 **取值范围**: 不涉及 
         :type duration: int
-        :param desensitized_weak_passwords: 脱敏弱口令
+        :param desensitized_weak_passwords: **参数解释**: 脱敏弱口令 **取值范围**: 不涉及 
         :type desensitized_weak_passwords: str
-        :param suggestion: 修改建议
+        :param suggestion: **参数解释**: 修改建议 **取值范围**: 不涉及 
         :type suggestion: str
         """
         
@@ -73,7 +73,7 @@ class WeakPwdAccountInfoResponseInfo:
     def user_name(self):
         r"""Gets the user_name of this WeakPwdAccountInfoResponseInfo.
 
-        弱口令账号名称
+        **参数解释**: 弱口令账号名称 **取值范围**: 不涉及 
 
         :return: The user_name of this WeakPwdAccountInfoResponseInfo.
         :rtype: str
@@ -84,7 +84,7 @@ class WeakPwdAccountInfoResponseInfo:
     def user_name(self, user_name):
         r"""Sets the user_name of this WeakPwdAccountInfoResponseInfo.
 
-        弱口令账号名称
+        **参数解释**: 弱口令账号名称 **取值范围**: 不涉及 
 
         :param user_name: The user_name of this WeakPwdAccountInfoResponseInfo.
         :type user_name: str
@@ -95,7 +95,7 @@ class WeakPwdAccountInfoResponseInfo:
     def service_type(self):
         r"""Gets the service_type of this WeakPwdAccountInfoResponseInfo.
 
-        账号类型，包含如下:   - system   - mysql   - redis
+        **参数解释**: 账号类型 **取值范围**: - system : 系统账号 - mysql  : mysql账号 - redis  : redis账号 
 
         :return: The service_type of this WeakPwdAccountInfoResponseInfo.
         :rtype: str
@@ -106,7 +106,7 @@ class WeakPwdAccountInfoResponseInfo:
     def service_type(self, service_type):
         r"""Sets the service_type of this WeakPwdAccountInfoResponseInfo.
 
-        账号类型，包含如下:   - system   - mysql   - redis
+        **参数解释**: 账号类型 **取值范围**: - system : 系统账号 - mysql  : mysql账号 - redis  : redis账号 
 
         :param service_type: The service_type of this WeakPwdAccountInfoResponseInfo.
         :type service_type: str
@@ -117,7 +117,7 @@ class WeakPwdAccountInfoResponseInfo:
     def duration(self):
         r"""Gets the duration of this WeakPwdAccountInfoResponseInfo.
 
-        弱口令使用时长，单位天
+        **参数解释**: 弱口令使用时长，单位天 **取值范围**: 不涉及 
 
         :return: The duration of this WeakPwdAccountInfoResponseInfo.
         :rtype: int
@@ -128,7 +128,7 @@ class WeakPwdAccountInfoResponseInfo:
     def duration(self, duration):
         r"""Sets the duration of this WeakPwdAccountInfoResponseInfo.
 
-        弱口令使用时长，单位天
+        **参数解释**: 弱口令使用时长，单位天 **取值范围**: 不涉及 
 
         :param duration: The duration of this WeakPwdAccountInfoResponseInfo.
         :type duration: int
@@ -139,7 +139,7 @@ class WeakPwdAccountInfoResponseInfo:
     def desensitized_weak_passwords(self):
         r"""Gets the desensitized_weak_passwords of this WeakPwdAccountInfoResponseInfo.
 
-        脱敏弱口令
+        **参数解释**: 脱敏弱口令 **取值范围**: 不涉及 
 
         :return: The desensitized_weak_passwords of this WeakPwdAccountInfoResponseInfo.
         :rtype: str
@@ -150,7 +150,7 @@ class WeakPwdAccountInfoResponseInfo:
     def desensitized_weak_passwords(self, desensitized_weak_passwords):
         r"""Sets the desensitized_weak_passwords of this WeakPwdAccountInfoResponseInfo.
 
-        脱敏弱口令
+        **参数解释**: 脱敏弱口令 **取值范围**: 不涉及 
 
         :param desensitized_weak_passwords: The desensitized_weak_passwords of this WeakPwdAccountInfoResponseInfo.
         :type desensitized_weak_passwords: str
@@ -161,7 +161,7 @@ class WeakPwdAccountInfoResponseInfo:
     def suggestion(self):
         r"""Gets the suggestion of this WeakPwdAccountInfoResponseInfo.
 
-        修改建议
+        **参数解释**: 修改建议 **取值范围**: 不涉及 
 
         :return: The suggestion of this WeakPwdAccountInfoResponseInfo.
         :rtype: str
@@ -172,7 +172,7 @@ class WeakPwdAccountInfoResponseInfo:
     def suggestion(self, suggestion):
         r"""Sets the suggestion of this WeakPwdAccountInfoResponseInfo.
 
-        修改建议
+        **参数解释**: 修改建议 **取值范围**: 不涉及 
 
         :param suggestion: The suggestion of this WeakPwdAccountInfoResponseInfo.
         :type suggestion: str

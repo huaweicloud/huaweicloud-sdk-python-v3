@@ -18,15 +18,19 @@ class BatchAddMembersRequestBody:
 
     openapi_types = {
         'images': 'list[str]',
-        'projects': 'list[str]'
+        'projects': 'list[str]',
+        'domains': 'list[str]',
+        'organizations': 'list[str]'
     }
 
     attribute_map = {
         'images': 'images',
-        'projects': 'projects'
+        'projects': 'projects',
+        'domains': 'domains',
+        'organizations': 'organizations'
     }
 
-    def __init__(self, images=None, projects=None):
+    def __init__(self, images=None, projects=None, domains=None, organizations=None):
         r"""BatchAddMembersRequestBody
 
         The model defined in huaweicloud sdk
@@ -35,16 +39,26 @@ class BatchAddMembersRequestBody:
         :type images: list[str]
         :param projects: 项目ID列表
         :type projects: list[str]
+        :param domains: 账号ID列表
+        :type domains: list[str]
+        :param organizations: 组织URN列表
+        :type organizations: list[str]
         """
         
         
 
         self._images = None
         self._projects = None
+        self._domains = None
+        self._organizations = None
         self.discriminator = None
 
         self.images = images
         self.projects = projects
+        if domains is not None:
+            self.domains = domains
+        if organizations is not None:
+            self.organizations = organizations
 
     @property
     def images(self):
@@ -89,6 +103,50 @@ class BatchAddMembersRequestBody:
         :type projects: list[str]
         """
         self._projects = projects
+
+    @property
+    def domains(self):
+        r"""Gets the domains of this BatchAddMembersRequestBody.
+
+        账号ID列表
+
+        :return: The domains of this BatchAddMembersRequestBody.
+        :rtype: list[str]
+        """
+        return self._domains
+
+    @domains.setter
+    def domains(self, domains):
+        r"""Sets the domains of this BatchAddMembersRequestBody.
+
+        账号ID列表
+
+        :param domains: The domains of this BatchAddMembersRequestBody.
+        :type domains: list[str]
+        """
+        self._domains = domains
+
+    @property
+    def organizations(self):
+        r"""Gets the organizations of this BatchAddMembersRequestBody.
+
+        组织URN列表
+
+        :return: The organizations of this BatchAddMembersRequestBody.
+        :rtype: list[str]
+        """
+        return self._organizations
+
+    @organizations.setter
+    def organizations(self, organizations):
+        r"""Sets the organizations of this BatchAddMembersRequestBody.
+
+        组织URN列表
+
+        :param organizations: The organizations of this BatchAddMembersRequestBody.
+        :type organizations: list[str]
+        """
+        self._organizations = organizations
 
     def to_dict(self):
         """Returns the model properties as a dict"""

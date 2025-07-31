@@ -1,3 +1,606 @@
+# 3.1.160 2025-07-31
+
+### HuaweiCloud SDK BSSINTL
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the API `ListMonthlyExpenditures`
+
+### HuaweiCloud SDK CES
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdateDashboard**
+    - changes of request param
+      - `+ extend_info`
+      - `- filter`
+      - `- period`
+      - `- display_time`
+      - `- refresh_time`
+      - `- from`
+      - `- to`
+      - `- screen_color`
+      - `- enable_screen_auto_play`
+      - `- time_interval`
+      - `- enable_legend`
+      - `- full_screen_widget_num`
+  - **BatchUpdateNotificationMaskTime**
+    - changes of request param
+      - `+ effective_timezone`
+  - **ListAlarmHistories**
+    - changes of response param
+      - `* alarm_histories.metric.dimensions: list<Dimension> -> list<object>`
+      - `* alarm_histories.metric: object<Metric> -> object`
+      - `* alarm_histories.condition: object<AlarmCondition> -> object`
+      - `* alarm_histories.alarm_actions.notification_list: list<SMNUrn> -> list<string>`
+      - `* alarm_histories.alarm_actions: list<Notification> -> list<object>`
+      - `* alarm_histories.ok_actions.notification_list: list<SMNUrn> -> list<string>`
+      - `* alarm_histories.ok_actions: list<Notification> -> list<object>`
+  - **UpdateAlarmRulePolicies**
+    - changes of request param
+      - `* policies.extra_info: object<ExtraInfo> -> object<MetricExtraInfo>`
+    - changes of response param
+      - `* policies.extra_info: object<ExtraInfo> -> object<MetricExtraInfo>`
+  - **ListResourceGroups**
+    - changes of response param
+      - `+ resource_groups.status`
+      - `+ resource_groups.event_status`
+      - `+ resource_groups.resource_statistics`
+      - `+ resource_groups.related_ep_ids`
+      - `+ resource_groups.association_alarm_templates`
+      - `+ resource_groups.type: enum value [NAME,COMB]`
+  - **CreateResourceGroup**
+    - changes of request param
+      - `+ instances.instance_names.resource_name_is_ignore_case`
+  - **ShowResourceGroup**
+    - changes of response param
+      - `+ ep_resource_statistics`
+      - `+ resource_level`
+      - `+ comb_relation`
+      - `+ related_ep_ids`
+      - `+ product_names`
+      - `+ resource_statistics`
+      - `+ enterprise_project_id_and_tags`
+      - `+ status`
+      - `+ event_status`
+      - `+ type: enum value [NAME,COMB]`
+      - `+ instances.instance_names.resource_name_is_ignore_case`
+  - **UpdateResourceGroup**
+    - changes of request param
+      - `+ instances.instance_names.resource_name_is_ignore_case`
+  - **ListResourceGroupsServicesResources**
+    - changes of response param
+      - `+ resources.event_status`
+      - `+ resources.resource_name`
+  - **UpdateResourceGroupAssociationAlarmTemplate**
+    - changes of request param
+      - `+ effective_timezone`
+  - **BatchUpdateNotificationMasks**
+    - changes of request param
+      - `+ effective_timezone`
+  - **UpdateNotificationMask**
+    - changes of request param
+      - `+ effective_timezone`
+  - **ListAlarmRules**
+    - changes of response param
+      - `+ alarms.effective_timezone`
+  - **CreateAlarmRules**
+    - changes of request param
+      - `+ effective_timezone`
+  - **UpdateAlarmNotifications**
+    - changes of request param
+      - `+ effective_timezone`
+  - **CreateOneClickAlarm**
+    - changes of request param
+      - `+ effective_timezone`
+      - `* one_click_update_alarms.resources: list<ResourcesInListResp> -> list<list<Dimension>>`
+      - `+ one_click_update_alarms.notification_manner: enum value [NOTIFICATION_GROUP,TOPIC_SUBSCRIPTION]`
+  - **UpdateOneClickAlarmNotifications**
+    - changes of request param
+      - `+ effective_timezone`
+
+### HuaweiCloud SDK CES
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListAgentInvocations**
+    - changes of request param
+      - `+ invocation_type: enum value [SET_REMOTE_INSTALLER,REMOTE_INSTALL]`
+      - `* offset: int32 -> int64`
+    - changes of response param
+      - `* count: int32 -> int64`
+      - `+ invocations.result_msg`
+  - **BatchCreateAgentInvocations**
+    - changes of request param
+      - `+ remote_install_meta`
+      - `+ invocation_type: enum value [SET_REMOTE_INSTALL_HOST,REMOTE_INSTALL]`
+
+### HuaweiCloud SDK CFW
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the following APIs:
+    - `ShowCustomerIpsInfo`
+    - `UpdateCustomerIps`
+    - `ShowTrafficTrend`
+    - `ShowAccessTop`
+    - `ListAttackStatistic`
+    - `ShowAttackTrend`
+    - `ShowAttackTotal`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK COC
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the APIs `ResetAccountPassword`, `CreatePasswordChangePlan`, `UpdateAccountPassword`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DBSS
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **SetAlarmTopicConfigInfo**
+    - changes of response param
+      - `- is_use_topic`
+
+### HuaweiCloud SDK DRS
+
+- _API Version_
+  - V5
+- _Features_
+  - Support the API `ShowCompareProgress`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DWS
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdateLogicalCluster**
+    - changes of request param
+      - `+ cluster_rings.un_shrinkable_cluster_ring`
+  - **ShrinkLogicalCluster**
+    - changes of request param
+      - `+ cluster_rings.un_shrinkable_cluster_ring`
+      - `+ cluster_rings.ring_hosts.back_ip`
+      - `+ cluster_rings.ring_hosts.cpu_cores`
+      - `+ cluster_rings.ring_hosts.memory`
+      - `+ cluster_rings.ring_hosts.disk_size`
+      - `* cluster_rings.ring_hosts: list<RingHostVo> -> list<RingHost>`
+      - `* cluster_rings: list<ClusterRingVo> -> list<ClusterRing>`
+  - **ListLogicalClusters**
+    - changes of response param
+      - `+ logical_clusters.cluster_rings.un_shrinkable_cluster_ring`
+  - **CreateLogicalCluster**
+    - changes of request param
+      - `+ logical_cluster.cluster_rings.un_shrinkable_cluster_ring`
+
+### HuaweiCloud SDK EIP
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListPublicips**
+    - changes of response param
+      - `+ publicips.tags`
+  - **ShowPublicip**
+    - changes of response param
+      - `+ publicip.tags`
+
+### HuaweiCloud SDK HSS
+
+- _API Version_
+  - V5
+- _Features_
+  - Support the following APIs:
+    - `ShowAgentStatisticsStatus`
+    - `ShowContainerProtectionStatus`
+    - `ShowHostProtectionStatus`
+    - `ShowOsStatisticsInfo`
+    - `ShowQuotaStatisticsInfo`
+    - `ListCicdConfigurations`
+    - `ShowCicdConfiguration`
+    - `ModifyCicdConfiguration`
+    - `DeleteCicdConfigurations`
+    - `ListAssociateRegistries`
+    - `ExportImageSecurityReportTask`
+    - `ShowPageNotices`
+    - `ListAppWhitelistPolicy`
+    - `ChangeAppWhitelistPolicy`
+    - `CreateAppWhitelistPolicy`
+    - `DeleteAppWhitelistPolicy`
+    - `ShowAppWhitelistPolicy`
+    - `SwitchAppWhitelistPolicyLearnStatus`
+    - `ListAppWhitelistPolicyHost`
+    - `SwitchAppWhitelistPolicyHost`
+    - `AddAppWhitelistPolicyHost`
+    - `DeleteAppWhitelistPolicyHost`
+    - `ListAppWhitelistHostStatus`
+    - `ListAppWhitelistPolicyProcess`
+    - `ChangeAppWhitelistPolicyProcessStatus`
+    - `AddAppWhitelistPolicyProcess`
+    - `ListAppWhitelistPolicyProcessExtend`
+    - `ShowAppWhitelistAgentStatics`
+    - `ListAppWhitelistEvent`
+    - `SaveBrowsingHistory`
+    - `ListFileEvents`
+    - `ListFileHostEventDetails`
+    - `ListFileHosts`
+    - `ShowFileStatistic`
+    - `ShowAntivirusFreeQuota`
+    - `ListAntiVirusPaidHosts`
+    - `CreateAntiVirusPaidTask`
+    - `ShowImageAssetStatistics`
+    - `ShowVulTaskStatistics`
+    - `RecordUserViewVulTask`
+    - `ExportHandledVulnerabilities`
+    - `ExportVulHandleHistory`
+    - `ListWebTamperHost`
+    - `BatchStartWebTamperProtection`
+    - `ShowWebTamperHostPolicy`
+    - `UpdateWebTamperHostPolicy`
+    - `ShowWebTamperRaspPath`
+    - `UpdateWebTamperRaspPath`
+    - `ExportWebTamperHost`
+    - `ListGlobalAssetScanTask`
+    - `CreateGlobalAssetScanTask`
+    - `ShowCommonPort`
+    - `ListKernelModuleHostInfo`
+    - `ListWebFrameworkHostInfo`
+    - `ListWebSiteHostInfo`
+    - `ShowHostAssetManualCollectStatus`
+    - `RunHostAssetManualCollect`
+    - `ListKernelModuleStatistics`
+    - `ListWebFrameworkStatistics`
+    - `ListWebSiteStatistics`
+    - `ListWebAppAndServiceStatistics`
+    - `ListWebAppAndServices`
+    - `ChangePasswordComplexityStatus`
+    - `ShowBaselineScanStatus`
+    - `ListClusterProtectionInfo`
+    - `ListClusterProtectionDefaultPolicy`
+    - `ListClusterEvents`
+    - `ChangeClusterEvents`
+    - `ListClusterProtectOverview`
+    - `ListClusterProtectionPolicy`
+    - `ChangeClusterProtectionPolicy`
+    - `CreateClusterProtectionPolicy`
+    - `DeleteClusterProtectionPolicy`
+    - `ListClusterProtectionPolicyDetail`
+    - `ListClusterProtectionItem`
+    - `SwitchClusterProtectionMode`
+    - `ShowClusterAssetStatistics`
+    - `ListCommonTips`
+    - `ListContainerNetworkClusters`
+    - `SyncClusterList`
+    - `ShowNetworkStatistics`
+    - `ListSecurityGroups`
+    - `ListNamespaces`
+    - `ShowContainerNetworkInfo`
+    - `ListContainerNetworkNodeList`
+    - `SyncContainerNetworkNode`
+    - `ListContainerNetworkPolicy`
+    - `UpdateContainerNetworkPolicy`
+    - `CreateContainerNetworkPolicy`
+    - `DeleteContainerNetworkPolicy`
+    - `SyncContainerNetworkPolicyList`
+    - `ListSecurityGroupPolicies`
+    - `DeleteSecurityGroupPolicy`
+    - `SyncSecurityGroupPolicies`
+    - `UpdateSecurityGroupPolicy`
+    - `CreateSecurityGroupPolicy`
+    - `ListWorkLoads`
+    - `SyncClusterProtectionEvent`
+    - `ListClusterProtectPolicyTemplates`
+    - `ShowClusterProtectPolicyTemplate`
+    - `ListContainerCmdLogs`
+    - `ExportContainerList`
+    - `ListContainerImageLogs`
+    - `ListContainerImages`
+    - `ListClusterAuditLogs`
+    - `ListClusterEventLogs`
+    - `BatchDeleteAgentDaemonset`
+    - `BatchUpgradeAgentDaemonset`
+    - `ListCceClusterDetectRisk`
+    - `ListMultiCloudClusters`
+    - `CreateMultiCloudClusters`
+    - `SyncMultiCloudClusterStatus`
+    - `UpdateMultiCloudClusters`
+    - `RemoveMultiCloudClusters`
+    - `ShowMultiCloudClusterProxyScript`
+    - `ParseMultiCloudClusterConfig`
+    - `ShowMultiCloudClusterImageCommand`
+    - `ShowAgentDaemonsetDeployTemplate`
+    - `ListContainerLogs`
+    - `ShowContainerNodeStatistics`
+    - `SwitchContainerProtectStatus`
+    - `ShowLatestExportTaskByType`
+    - `ListKubernetesClusterDetails`
+    - `ShowK8sContainerDetail`
+    - `ListK8sCronJobs`
+    - `ListK8sDaemonSets`
+    - `ListK8sDeployments`
+    - `ShowKubernetesEndpointInfo`
+    - `ListKubernetesEndpointDetails`
+    - `ListK8sJobs`
+    - `ListK8sPods`
+    - `CreateClustersInfo`
+    - `ShowKubernetesServiceInfo`
+    - `ListKubernetesServiceDetails`
+    - `ListK8sStatefulSets`
+    - `ShowK8sPodDetail`
+    - `UpdatePolicy`
+    - `AddPolicy`
+    - `DeletePolicy`
+    - `SwitchRasp`
+    - `ListProjectTags`
+    - `ModifyProjectConfigs`
+    - `ListProjectConfigs`
+    - `ListIacFiles`
+    - `ListIacFileRisks`
+    - `ListIacFileRiskPaths`
+    - `BatchUploadFiles`
+    - `ListVulContainers`
+    - `ListVulContainerApps`
+    - `ListBaselineWhiteLists`
+    - `ShowBaselineWhiteList`
+    - `ChangeBaselineWhiteList`
+    - `AddBaselineWhiteList`
+    - `DeleteBaselineWhiteList`
+    - `ShowBaselineDirectory`
+    - `ListHandleAffectBaseline`
+    - `CopyBaselinePolicyGroup`
+    - `ShowClusterScanStatistics`
+    - `CreateTask`
+    - `ListTasks`
+    - `ListTaskResources`
+    - `ShowTaskStatistics`
+    - `ListClusterRisks`
+    - `ListClusterRiskAffectResources`
+    - `ChangeAntivirusPayPerScanStatus`
+    - `SwitchAntivirusTask`
+- _Bug Fix_
+  - None
+- _Change_
+  - **AddCceIntegrationProtection**
+    - changes of request param
+      - `* region: required -> optional`
+  - **ShowRaspProtectStatistics**
+    - changes of request param
+      - `* enterprise_project_id: required -> optional`
+  - **ShowAppRaspSwitchStatus**
+    - changes of request param
+      - `* enterprise_project_id: required -> optional`
+  - **ListCceClusterConfig**
+    - changes of request param
+      - `* region: required -> optional`
+    - changes of response param
+      - `+ data_list.protect_degradation_node_num`
+  - **DeleteAgentDaemonset**
+    - changes of request param
+      - `* region: required -> optional`
+  - **UpdateAgentDaemonset**
+    - changes of request param
+      - `* region: required -> optional`
+  - **ListPolicyGroup**
+    - changes of request param
+      - `- region`
+    - changes of response param
+      - `+ data_list.protect_mode`
+  - **ListBackupVaults**
+    - changes of request param
+      - `* offset: required -> optional`
+      - `* limit: required -> optional`
+  - **ListRaspEvents**
+    - changes of request param
+      - `* enterprise_project_id: required -> optional`
+  - **ListProtectionServers**
+    - changes of request param
+      - `* enterprise_project_id: required -> optional`
+  - **ListAgentInstallScript**
+    - changes of request param
+      - `* region: required -> optional`
+  - **ListAntivirusHandleHistory**
+    - changes of request param
+      - `+ region`
+  - **ShowResourceQuotas**
+    - changes of request param
+      - `- region`
+  - **CreateAntiVirusTask**
+    - changes of request param
+      - `+ region`
+
+### HuaweiCloud SDK IMS
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the following APIs:
+    - `ExportImageInSafeMode`
+    - `CreateDataImageInSafeMode`
+    - `CreateImageInSafeMode`
+    - `ImportImageQuickInSafeMode`
+    - `CopyImageInRegionInSafeMode`
+- _Bug Fix_
+  - None
+- _Change_
+  - **BatchAddMembers**
+    - changes of request param
+      - `+ domains`
+      - `+ organizations`
+  - **BatchDeleteMembers**
+    - changes of request param
+      - `+ domains`
+      - `+ organizations`
+  - **GlanceShowImageMember**
+    - changes of response param
+      - `+ member_type`
+      - `+ urn`
+  - **GlanceUpdateImageMember**
+    - changes of response param
+      - `+ member_type`
+      - `+ urn`
+  - **GlanceAddImageMember**
+    - changes of response param
+      - `+ member_type`
+      - `+ urn`
+  - **GlanceListImageMembers**
+    - changes of response param
+      - `+ members.member_type`
+      - `+ members.urn`
+
+### HuaweiCloud SDK Live
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the API `CreateStreamForbiddenOnce`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK MetaStudio
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the following APIs:
+    - `ListTtscVocabularyGroups`
+    - `CreateTtscVocabularyGroups`
+    - `UpdateTtscVocabularyGroups`
+    - `DeleteTtscVocabularyGroups`
+    - `SetTtscGroupAssets`
+- _Bug Fix_
+  - None
+- _Change_
+  - **SaveTtscVocabularyConfigs**
+    - changes of request param
+      - `+ group_id`
+  - **ShowTenantDurationCfg**
+    - changes of response param
+      - `+ short_assess_min`
+      - `+ short_assess_max`
+  - **SetJobBatchName**
+    - changes of request param
+      - `+ X-App-UserId`
+  - **CreateTtscVocabularyConfigs**
+    - changes of request param
+      - `+ group_id`
+  - **ListTtscVocabularyConfigs**
+    - changes of request param
+      - `+ group_id`
+      - `+ asset_id`
+    - changes of response param
+      - `+ data.group_id`
+  - **CreateTrainingBasicJob**
+    - changes of request param
+      - `+ is_ondemand_resource`
+      - `+ supported_service`
+      - `+ tag: enum value [LIVE,EDUCATION,CUSTOMER,STORYTELLING]`
+  - **CreateTrainingMiddleJob**
+    - changes of request param
+      - `+ is_ondemand_resource`
+      - `+ supported_service`
+      - `+ tag: enum value [LIVE,EDUCATION,CUSTOMER,STORYTELLING]`
+  - **CreateTrainingAdvanceJob**
+    - changes of request param
+      - `+ is_ondemand_resource`
+      - `+ supported_service`
+      - `+ tag: enum value [LIVE,EDUCATION,CUSTOMER,STORYTELLING]`
+  - **CommitVoiceTrainingJob**
+    - changes of request param
+      - `+ tag: enum value [LIVE,EDUCATION,CUSTOMER,STORYTELLING]`
+  - **ShowVoiceTrainingJob**
+    - changes of response param
+      - `+ assess_result`
+      - `+ is_ondemand_resource`
+      - `+ tag: enum value [LIVE,EDUCATION,CUSTOMER,STORYTELLING]`
+      - `+ allocated_resource.charge_mode: enum value [ON_DEMAND]`
+  - **ListJobOperationLog**
+    - changes of response param
+      - `+ operations.external_info.algorithm_failure_reason`
+  - **ShowAsset**
+    - changes of response param
+      - `+ auto_operation_config`
+      - `+ block_reason_code`
+      - `+ system_properties.key: enum value [IS_CONTROLLED,LIVE_IS_AUTHORIZED,VIDEO_IS_AUTHORIZED,CHAT_IS_AUTHORIZED]`
+      - `+ files.block_reason_code`
+  - **UpdateDigitalAsset**
+    - changes of request param
+      - `+ auto_operation_config`
+      - `+ system_properties.key: enum value [IS_CONTROLLED,LIVE_IS_AUTHORIZED,VIDEO_IS_AUTHORIZED,CHAT_IS_AUTHORIZED]`
+    - changes of response param
+      - `+ auto_operation_config`
+      - `+ block_reason_code`
+      - `+ system_properties.key: enum value [IS_CONTROLLED,LIVE_IS_AUTHORIZED,VIDEO_IS_AUTHORIZED,CHAT_IS_AUTHORIZED]`
+      - `+ files.block_reason_code`
+  - **ListVoiceTrainingJob**
+    - changes of request param
+      - `+ is_ondemand_resource`
+    - changes of response param
+      - `+ assess_result`
+      - `+ is_ondemand_resource`
+      - `+ jobs.assess_result`
+      - `+ jobs.is_ondemand_resource`
+      - `+ jobs.tag: enum value [LIVE,EDUCATION,CUSTOMER,STORYTELLING]`
+      - `+ jobs.allocated_resource.charge_mode: enum value [ON_DEMAND]`
+  - **CreateDigitalAsset**
+    - changes of request param
+      - `+ auto_operation_config`
+      - `+ system_properties.key: enum value [IS_CONTROLLED,LIVE_IS_AUTHORIZED,VIDEO_IS_AUTHORIZED,CHAT_IS_AUTHORIZED]`
+  - **ListAssets**
+    - changes of request param
+      - `- project_group_id`
+      - `+ asset_source: enum value [GROUP_CUSTOMIZATION]`
+    - changes of response param
+      - `+ auto_operation_config`
+      - `+ block_reason_code`
+      - `+ assets.block_reason_code`
+      - `+ assets.auto_operation_config`
+      - `+ assets.system_properties.key: enum value [IS_CONTROLLED,LIVE_IS_AUTHORIZED,VIDEO_IS_AUTHORIZED,CHAT_IS_AUTHORIZED]`
+      - `+ assets.files.block_reason_code`
+
 # 3.1.159 2025-07-26
 
 ### HuaweiCloud SDK EIP

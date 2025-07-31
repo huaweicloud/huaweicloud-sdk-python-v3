@@ -29,7 +29,7 @@ class Metadata:
 
         The model defined in huaweicloud sdk
 
-        :param total_count: 满足查询条件的资源总数，不受分页（即limit、offset参数）影响。
+        :param total_count: **参数解释：** 满足查询条件的资源总数，不受分页（即limit、offset参数）影响。 **取值范围：** 不涉及。
         :type total_count: int
         """
         
@@ -45,7 +45,7 @@ class Metadata:
     def total_count(self):
         r"""Gets the total_count of this Metadata.
 
-        满足查询条件的资源总数，不受分页（即limit、offset参数）影响。
+        **参数解释：** 满足查询条件的资源总数，不受分页（即limit、offset参数）影响。 **取值范围：** 不涉及。
 
         :return: The total_count of this Metadata.
         :rtype: int
@@ -56,7 +56,7 @@ class Metadata:
     def total_count(self, total_count):
         r"""Sets the total_count of this Metadata.
 
-        满足查询条件的资源总数，不受分页（即limit、offset参数）影响。
+        **参数解释：** 满足查询条件的资源总数，不受分页（即limit、offset参数）影响。 **取值范围：** 不涉及。
 
         :param total_count: The total_count of this Metadata.
         :type total_count: int

@@ -33,11 +33,11 @@ class CheckRuleCheckCaseResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param check_description: 检测用例描述
+        :param check_description: **参数解释**: 检测用例描述 **取值范围**: 不涉及 
         :type check_description: str
-        :param current_value: 当前结果
+        :param current_value: **参数解释**: 当前结果 **取值范围**: 不涉及 
         :type current_value: str
-        :param suggest_value: 期待结果
+        :param suggest_value: **参数解释**: 期待结果 **取值范围**: 不涉及 
         :type suggest_value: str
         """
         
@@ -59,7 +59,7 @@ class CheckRuleCheckCaseResponseInfo:
     def check_description(self):
         r"""Gets the check_description of this CheckRuleCheckCaseResponseInfo.
 
-        检测用例描述
+        **参数解释**: 检测用例描述 **取值范围**: 不涉及 
 
         :return: The check_description of this CheckRuleCheckCaseResponseInfo.
         :rtype: str
@@ -70,7 +70,7 @@ class CheckRuleCheckCaseResponseInfo:
     def check_description(self, check_description):
         r"""Sets the check_description of this CheckRuleCheckCaseResponseInfo.
 
-        检测用例描述
+        **参数解释**: 检测用例描述 **取值范围**: 不涉及 
 
         :param check_description: The check_description of this CheckRuleCheckCaseResponseInfo.
         :type check_description: str
@@ -81,7 +81,7 @@ class CheckRuleCheckCaseResponseInfo:
     def current_value(self):
         r"""Gets the current_value of this CheckRuleCheckCaseResponseInfo.
 
-        当前结果
+        **参数解释**: 当前结果 **取值范围**: 不涉及 
 
         :return: The current_value of this CheckRuleCheckCaseResponseInfo.
         :rtype: str
@@ -92,7 +92,7 @@ class CheckRuleCheckCaseResponseInfo:
     def current_value(self, current_value):
         r"""Sets the current_value of this CheckRuleCheckCaseResponseInfo.
 
-        当前结果
+        **参数解释**: 当前结果 **取值范围**: 不涉及 
 
         :param current_value: The current_value of this CheckRuleCheckCaseResponseInfo.
         :type current_value: str
@@ -103,7 +103,7 @@ class CheckRuleCheckCaseResponseInfo:
     def suggest_value(self):
         r"""Gets the suggest_value of this CheckRuleCheckCaseResponseInfo.
 
-        期待结果
+        **参数解释**: 期待结果 **取值范围**: 不涉及 
 
         :return: The suggest_value of this CheckRuleCheckCaseResponseInfo.
         :rtype: str
@@ -114,7 +114,7 @@ class CheckRuleCheckCaseResponseInfo:
     def suggest_value(self, suggest_value):
         r"""Sets the suggest_value of this CheckRuleCheckCaseResponseInfo.
 
-        期待结果
+        **参数解释**: 期待结果 **取值范围**: 不涉及 
 
         :param suggest_value: The suggest_value of this CheckRuleCheckCaseResponseInfo.
         :type suggest_value: str

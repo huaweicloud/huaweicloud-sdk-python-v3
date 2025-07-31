@@ -33,11 +33,11 @@ class UpdatePrivateZoneInfoReq:
 
         The model defined in huaweicloud sdk
 
-        :param description: 域名的描述信息。长度不超过255个字符。
+        :param description: **参数解释：** 域名的描述信息。 **约束限制：** 不涉及。 **取值范围：** 长度不超过255个字符。 **默认取值：** 默认为空，表示维持原值。
         :type description: str
-        :param email: 管理该域名的管理员邮箱，用于生成该域名的SOA记录。
+        :param email: **参数解释：** 管理该域名的管理员邮箱，用于生成该域名的SOA记录。   **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 默认为空，表示维持原值。
         :type email: str
-        :param ttl: 用于填写默认生成的SOA记录中有效缓存时间，以秒为单位。
+        :param ttl: **参数解释：** 用于填写默认生成的SOA记录中有效缓存时间，以秒为单位。 **约束限制：** 不涉及。 **取值范围：** 1~2147483647。 **默认取值：** 默认为空，表示维持原值。
         :type ttl: int
         """
         
@@ -59,7 +59,7 @@ class UpdatePrivateZoneInfoReq:
     def description(self):
         r"""Gets the description of this UpdatePrivateZoneInfoReq.
 
-        域名的描述信息。长度不超过255个字符。
+        **参数解释：** 域名的描述信息。 **约束限制：** 不涉及。 **取值范围：** 长度不超过255个字符。 **默认取值：** 默认为空，表示维持原值。
 
         :return: The description of this UpdatePrivateZoneInfoReq.
         :rtype: str
@@ -70,7 +70,7 @@ class UpdatePrivateZoneInfoReq:
     def description(self, description):
         r"""Sets the description of this UpdatePrivateZoneInfoReq.
 
-        域名的描述信息。长度不超过255个字符。
+        **参数解释：** 域名的描述信息。 **约束限制：** 不涉及。 **取值范围：** 长度不超过255个字符。 **默认取值：** 默认为空，表示维持原值。
 
         :param description: The description of this UpdatePrivateZoneInfoReq.
         :type description: str
@@ -81,7 +81,7 @@ class UpdatePrivateZoneInfoReq:
     def email(self):
         r"""Gets the email of this UpdatePrivateZoneInfoReq.
 
-        管理该域名的管理员邮箱，用于生成该域名的SOA记录。
+        **参数解释：** 管理该域名的管理员邮箱，用于生成该域名的SOA记录。   **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 默认为空，表示维持原值。
 
         :return: The email of this UpdatePrivateZoneInfoReq.
         :rtype: str
@@ -92,7 +92,7 @@ class UpdatePrivateZoneInfoReq:
     def email(self, email):
         r"""Sets the email of this UpdatePrivateZoneInfoReq.
 
-        管理该域名的管理员邮箱，用于生成该域名的SOA记录。
+        **参数解释：** 管理该域名的管理员邮箱，用于生成该域名的SOA记录。   **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 默认为空，表示维持原值。
 
         :param email: The email of this UpdatePrivateZoneInfoReq.
         :type email: str
@@ -103,7 +103,7 @@ class UpdatePrivateZoneInfoReq:
     def ttl(self):
         r"""Gets the ttl of this UpdatePrivateZoneInfoReq.
 
-        用于填写默认生成的SOA记录中有效缓存时间，以秒为单位。
+        **参数解释：** 用于填写默认生成的SOA记录中有效缓存时间，以秒为单位。 **约束限制：** 不涉及。 **取值范围：** 1~2147483647。 **默认取值：** 默认为空，表示维持原值。
 
         :return: The ttl of this UpdatePrivateZoneInfoReq.
         :rtype: int
@@ -114,7 +114,7 @@ class UpdatePrivateZoneInfoReq:
     def ttl(self, ttl):
         r"""Sets the ttl of this UpdatePrivateZoneInfoReq.
 
-        用于填写默认生成的SOA记录中有效缓存时间，以秒为单位。
+        **参数解释：** 用于填写默认生成的SOA记录中有效缓存时间，以秒为单位。 **约束限制：** 不涉及。 **取值范围：** 1~2147483647。 **默认取值：** 默认为空，表示维持原值。
 
         :param ttl: The ttl of this UpdatePrivateZoneInfoReq.
         :type ttl: int

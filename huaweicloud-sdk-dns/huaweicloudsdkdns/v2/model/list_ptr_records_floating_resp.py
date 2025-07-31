@@ -63,7 +63,7 @@ class ListPtrRecordsFloatingResp:
         :type action: str
         :param links: 
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`
-        :param tags: 资源标签。
+        :param tags: **参数解释：** 资源标签。 **取值范围：** 不涉及。
         :type tags: list[:class:`huaweicloudsdkdns.v2.Tag`]
         :param enterprise_project_id: 反向解析关联的企业项目ID，长度不超过36个字符。
         :type enterprise_project_id: str
@@ -280,7 +280,7 @@ class ListPtrRecordsFloatingResp:
     def tags(self):
         r"""Gets the tags of this ListPtrRecordsFloatingResp.
 
-        资源标签。
+        **参数解释：** 资源标签。 **取值范围：** 不涉及。
 
         :return: The tags of this ListPtrRecordsFloatingResp.
         :rtype: list[:class:`huaweicloudsdkdns.v2.Tag`]
@@ -291,7 +291,7 @@ class ListPtrRecordsFloatingResp:
     def tags(self, tags):
         r"""Sets the tags of this ListPtrRecordsFloatingResp.
 
-        资源标签。
+        **参数解释：** 资源标签。 **取值范围：** 不涉及。
 
         :param tags: The tags of this ListPtrRecordsFloatingResp.
         :type tags: list[:class:`huaweicloudsdkdns.v2.Tag`]

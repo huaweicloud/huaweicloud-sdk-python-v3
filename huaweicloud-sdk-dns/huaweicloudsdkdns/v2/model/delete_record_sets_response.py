@@ -64,39 +64,39 @@ class DeleteRecordSetsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param id: 记录集的ID。
+        :param id: **参数解释：** 记录集的ID。 **取值范围：** 不涉及。
         :type id: str
-        :param name: 记录集的名称。
+        :param name: **参数解释：** 记录集的名称。 **取值范围：** 不涉及。
         :type name: str
-        :param description: 记录集的描述信息。
+        :param description: **参数解释：** 记录集的描述信息。 **取值范围：** 长度不超过255个字符。
         :type description: str
-        :param zone_id: 托管该记录的域名ID。
+        :param zone_id: **参数解释：** 托管该记录的域名ID。 **取值范围：** 不涉及。
         :type zone_id: str
-        :param zone_name: 托管该记录的域名。
+        :param zone_name: **参数解释：** 托管该记录的域名。 **取值范围：** 不涉及。
         :type zone_name: str
-        :param type: 记录类型。
+        :param type: **参数解释：** 记录类型。 **取值范围：** 不涉及。
         :type type: str
-        :param ttl: 解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。
+        :param ttl: **参数解释：** 解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。 **取值范围：** 不涉及。
         :type ttl: int
-        :param records: 域名解析后的值。
+        :param records: **参数解释：** 域名解析后的值。 **取值范围：** 不涉及。
         :type records: list[str]
-        :param created_at: 创建时间。 格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSS。
+        :param created_at: **参数解释：** 记录集的创建时间。 格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSS。 **取值范围：** 不涉及。
         :type created_at: str
-        :param updated_at: 更新时间。 格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSS。
+        :param updated_at: **参数解释：** 记录集的最近一次修改时间。 格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSS。 **取值范围：** 不涉及。
         :type updated_at: str
-        :param status: 资源状态。
+        :param status: **参数解释：** 记录集状态。 **取值范围：** - ACTIVE：正常 - PENDING_CREATE：创建中 - PENDING_UPDATE：更新中 - PENDING_DELETE：删除中 - PENDING_FREEZE：冻结中 - FREEZE：冻结 - ILLEGAL：违规冻结 - POLICE：公安冻结 - PENDING_DISABLE：暂停中 - DISABLE：暂停 - ERROR：失败
         :type status: str
-        :param default: 标识是否由系统默认生成，系统默认生成的记录集不能删除。
+        :param default: **参数解释：** 标识是否由系统默认生成，系统默认生成的记录集不能删除。 **取值范围：** 不涉及。
         :type default: bool
-        :param project_id: 该记录集所属的项目ID。
+        :param project_id: **参数解释：** 该记录集所属的项目ID。 **取值范围：** 不涉及。
         :type project_id: str
         :param links: 
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`
-        :param line: 解析线路ID。
+        :param line: **参数解释：** 解析线路ID。 **取值范围：** 不涉及。
         :type line: str
-        :param weight: 解析记录的权重。
+        :param weight: **参数解释：** 解析记录的权重。 **取值范围：** 0~1000。
         :type weight: int
-        :param health_check_id: 健康检查ID。
+        :param health_check_id: **参数解释：** 健康检查ID。 **取值范围：** 不涉及。
         :type health_check_id: str
         :param alias_target: 
         :type alias_target: :class:`huaweicloudsdkdns.v2.AliasTarget`
@@ -165,7 +165,7 @@ class DeleteRecordSetsResponse(SdkResponse):
     def id(self):
         r"""Gets the id of this DeleteRecordSetsResponse.
 
-        记录集的ID。
+        **参数解释：** 记录集的ID。 **取值范围：** 不涉及。
 
         :return: The id of this DeleteRecordSetsResponse.
         :rtype: str
@@ -176,7 +176,7 @@ class DeleteRecordSetsResponse(SdkResponse):
     def id(self, id):
         r"""Sets the id of this DeleteRecordSetsResponse.
 
-        记录集的ID。
+        **参数解释：** 记录集的ID。 **取值范围：** 不涉及。
 
         :param id: The id of this DeleteRecordSetsResponse.
         :type id: str
@@ -187,7 +187,7 @@ class DeleteRecordSetsResponse(SdkResponse):
     def name(self):
         r"""Gets the name of this DeleteRecordSetsResponse.
 
-        记录集的名称。
+        **参数解释：** 记录集的名称。 **取值范围：** 不涉及。
 
         :return: The name of this DeleteRecordSetsResponse.
         :rtype: str
@@ -198,7 +198,7 @@ class DeleteRecordSetsResponse(SdkResponse):
     def name(self, name):
         r"""Sets the name of this DeleteRecordSetsResponse.
 
-        记录集的名称。
+        **参数解释：** 记录集的名称。 **取值范围：** 不涉及。
 
         :param name: The name of this DeleteRecordSetsResponse.
         :type name: str
@@ -209,7 +209,7 @@ class DeleteRecordSetsResponse(SdkResponse):
     def description(self):
         r"""Gets the description of this DeleteRecordSetsResponse.
 
-        记录集的描述信息。
+        **参数解释：** 记录集的描述信息。 **取值范围：** 长度不超过255个字符。
 
         :return: The description of this DeleteRecordSetsResponse.
         :rtype: str
@@ -220,7 +220,7 @@ class DeleteRecordSetsResponse(SdkResponse):
     def description(self, description):
         r"""Sets the description of this DeleteRecordSetsResponse.
 
-        记录集的描述信息。
+        **参数解释：** 记录集的描述信息。 **取值范围：** 长度不超过255个字符。
 
         :param description: The description of this DeleteRecordSetsResponse.
         :type description: str
@@ -231,7 +231,7 @@ class DeleteRecordSetsResponse(SdkResponse):
     def zone_id(self):
         r"""Gets the zone_id of this DeleteRecordSetsResponse.
 
-        托管该记录的域名ID。
+        **参数解释：** 托管该记录的域名ID。 **取值范围：** 不涉及。
 
         :return: The zone_id of this DeleteRecordSetsResponse.
         :rtype: str
@@ -242,7 +242,7 @@ class DeleteRecordSetsResponse(SdkResponse):
     def zone_id(self, zone_id):
         r"""Sets the zone_id of this DeleteRecordSetsResponse.
 
-        托管该记录的域名ID。
+        **参数解释：** 托管该记录的域名ID。 **取值范围：** 不涉及。
 
         :param zone_id: The zone_id of this DeleteRecordSetsResponse.
         :type zone_id: str
@@ -253,7 +253,7 @@ class DeleteRecordSetsResponse(SdkResponse):
     def zone_name(self):
         r"""Gets the zone_name of this DeleteRecordSetsResponse.
 
-        托管该记录的域名。
+        **参数解释：** 托管该记录的域名。 **取值范围：** 不涉及。
 
         :return: The zone_name of this DeleteRecordSetsResponse.
         :rtype: str
@@ -264,7 +264,7 @@ class DeleteRecordSetsResponse(SdkResponse):
     def zone_name(self, zone_name):
         r"""Sets the zone_name of this DeleteRecordSetsResponse.
 
-        托管该记录的域名。
+        **参数解释：** 托管该记录的域名。 **取值范围：** 不涉及。
 
         :param zone_name: The zone_name of this DeleteRecordSetsResponse.
         :type zone_name: str
@@ -275,7 +275,7 @@ class DeleteRecordSetsResponse(SdkResponse):
     def type(self):
         r"""Gets the type of this DeleteRecordSetsResponse.
 
-        记录类型。
+        **参数解释：** 记录类型。 **取值范围：** 不涉及。
 
         :return: The type of this DeleteRecordSetsResponse.
         :rtype: str
@@ -286,7 +286,7 @@ class DeleteRecordSetsResponse(SdkResponse):
     def type(self, type):
         r"""Sets the type of this DeleteRecordSetsResponse.
 
-        记录类型。
+        **参数解释：** 记录类型。 **取值范围：** 不涉及。
 
         :param type: The type of this DeleteRecordSetsResponse.
         :type type: str
@@ -297,7 +297,7 @@ class DeleteRecordSetsResponse(SdkResponse):
     def ttl(self):
         r"""Gets the ttl of this DeleteRecordSetsResponse.
 
-        解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。
+        **参数解释：** 解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。 **取值范围：** 不涉及。
 
         :return: The ttl of this DeleteRecordSetsResponse.
         :rtype: int
@@ -308,7 +308,7 @@ class DeleteRecordSetsResponse(SdkResponse):
     def ttl(self, ttl):
         r"""Sets the ttl of this DeleteRecordSetsResponse.
 
-        解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。
+        **参数解释：** 解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。 **取值范围：** 不涉及。
 
         :param ttl: The ttl of this DeleteRecordSetsResponse.
         :type ttl: int
@@ -319,7 +319,7 @@ class DeleteRecordSetsResponse(SdkResponse):
     def records(self):
         r"""Gets the records of this DeleteRecordSetsResponse.
 
-        域名解析后的值。
+        **参数解释：** 域名解析后的值。 **取值范围：** 不涉及。
 
         :return: The records of this DeleteRecordSetsResponse.
         :rtype: list[str]
@@ -330,7 +330,7 @@ class DeleteRecordSetsResponse(SdkResponse):
     def records(self, records):
         r"""Sets the records of this DeleteRecordSetsResponse.
 
-        域名解析后的值。
+        **参数解释：** 域名解析后的值。 **取值范围：** 不涉及。
 
         :param records: The records of this DeleteRecordSetsResponse.
         :type records: list[str]
@@ -341,7 +341,7 @@ class DeleteRecordSetsResponse(SdkResponse):
     def created_at(self):
         r"""Gets the created_at of this DeleteRecordSetsResponse.
 
-        创建时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。
+        **参数解释：** 记录集的创建时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。 **取值范围：** 不涉及。
 
         :return: The created_at of this DeleteRecordSetsResponse.
         :rtype: str
@@ -352,7 +352,7 @@ class DeleteRecordSetsResponse(SdkResponse):
     def created_at(self, created_at):
         r"""Sets the created_at of this DeleteRecordSetsResponse.
 
-        创建时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。
+        **参数解释：** 记录集的创建时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。 **取值范围：** 不涉及。
 
         :param created_at: The created_at of this DeleteRecordSetsResponse.
         :type created_at: str
@@ -363,7 +363,7 @@ class DeleteRecordSetsResponse(SdkResponse):
     def updated_at(self):
         r"""Gets the updated_at of this DeleteRecordSetsResponse.
 
-        更新时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。
+        **参数解释：** 记录集的最近一次修改时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。 **取值范围：** 不涉及。
 
         :return: The updated_at of this DeleteRecordSetsResponse.
         :rtype: str
@@ -374,7 +374,7 @@ class DeleteRecordSetsResponse(SdkResponse):
     def updated_at(self, updated_at):
         r"""Sets the updated_at of this DeleteRecordSetsResponse.
 
-        更新时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。
+        **参数解释：** 记录集的最近一次修改时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。 **取值范围：** 不涉及。
 
         :param updated_at: The updated_at of this DeleteRecordSetsResponse.
         :type updated_at: str
@@ -385,7 +385,7 @@ class DeleteRecordSetsResponse(SdkResponse):
     def status(self):
         r"""Gets the status of this DeleteRecordSetsResponse.
 
-        资源状态。
+        **参数解释：** 记录集状态。 **取值范围：** - ACTIVE：正常 - PENDING_CREATE：创建中 - PENDING_UPDATE：更新中 - PENDING_DELETE：删除中 - PENDING_FREEZE：冻结中 - FREEZE：冻结 - ILLEGAL：违规冻结 - POLICE：公安冻结 - PENDING_DISABLE：暂停中 - DISABLE：暂停 - ERROR：失败
 
         :return: The status of this DeleteRecordSetsResponse.
         :rtype: str
@@ -396,7 +396,7 @@ class DeleteRecordSetsResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this DeleteRecordSetsResponse.
 
-        资源状态。
+        **参数解释：** 记录集状态。 **取值范围：** - ACTIVE：正常 - PENDING_CREATE：创建中 - PENDING_UPDATE：更新中 - PENDING_DELETE：删除中 - PENDING_FREEZE：冻结中 - FREEZE：冻结 - ILLEGAL：违规冻结 - POLICE：公安冻结 - PENDING_DISABLE：暂停中 - DISABLE：暂停 - ERROR：失败
 
         :param status: The status of this DeleteRecordSetsResponse.
         :type status: str
@@ -407,7 +407,7 @@ class DeleteRecordSetsResponse(SdkResponse):
     def default(self):
         r"""Gets the default of this DeleteRecordSetsResponse.
 
-        标识是否由系统默认生成，系统默认生成的记录集不能删除。
+        **参数解释：** 标识是否由系统默认生成，系统默认生成的记录集不能删除。 **取值范围：** 不涉及。
 
         :return: The default of this DeleteRecordSetsResponse.
         :rtype: bool
@@ -418,7 +418,7 @@ class DeleteRecordSetsResponse(SdkResponse):
     def default(self, default):
         r"""Sets the default of this DeleteRecordSetsResponse.
 
-        标识是否由系统默认生成，系统默认生成的记录集不能删除。
+        **参数解释：** 标识是否由系统默认生成，系统默认生成的记录集不能删除。 **取值范围：** 不涉及。
 
         :param default: The default of this DeleteRecordSetsResponse.
         :type default: bool
@@ -429,7 +429,7 @@ class DeleteRecordSetsResponse(SdkResponse):
     def project_id(self):
         r"""Gets the project_id of this DeleteRecordSetsResponse.
 
-        该记录集所属的项目ID。
+        **参数解释：** 该记录集所属的项目ID。 **取值范围：** 不涉及。
 
         :return: The project_id of this DeleteRecordSetsResponse.
         :rtype: str
@@ -440,7 +440,7 @@ class DeleteRecordSetsResponse(SdkResponse):
     def project_id(self, project_id):
         r"""Sets the project_id of this DeleteRecordSetsResponse.
 
-        该记录集所属的项目ID。
+        **参数解释：** 该记录集所属的项目ID。 **取值范围：** 不涉及。
 
         :param project_id: The project_id of this DeleteRecordSetsResponse.
         :type project_id: str
@@ -469,7 +469,7 @@ class DeleteRecordSetsResponse(SdkResponse):
     def line(self):
         r"""Gets the line of this DeleteRecordSetsResponse.
 
-        解析线路ID。
+        **参数解释：** 解析线路ID。 **取值范围：** 不涉及。
 
         :return: The line of this DeleteRecordSetsResponse.
         :rtype: str
@@ -480,7 +480,7 @@ class DeleteRecordSetsResponse(SdkResponse):
     def line(self, line):
         r"""Sets the line of this DeleteRecordSetsResponse.
 
-        解析线路ID。
+        **参数解释：** 解析线路ID。 **取值范围：** 不涉及。
 
         :param line: The line of this DeleteRecordSetsResponse.
         :type line: str
@@ -491,7 +491,7 @@ class DeleteRecordSetsResponse(SdkResponse):
     def weight(self):
         r"""Gets the weight of this DeleteRecordSetsResponse.
 
-        解析记录的权重。
+        **参数解释：** 解析记录的权重。 **取值范围：** 0~1000。
 
         :return: The weight of this DeleteRecordSetsResponse.
         :rtype: int
@@ -502,7 +502,7 @@ class DeleteRecordSetsResponse(SdkResponse):
     def weight(self, weight):
         r"""Sets the weight of this DeleteRecordSetsResponse.
 
-        解析记录的权重。
+        **参数解释：** 解析记录的权重。 **取值范围：** 0~1000。
 
         :param weight: The weight of this DeleteRecordSetsResponse.
         :type weight: int
@@ -513,7 +513,7 @@ class DeleteRecordSetsResponse(SdkResponse):
     def health_check_id(self):
         r"""Gets the health_check_id of this DeleteRecordSetsResponse.
 
-        健康检查ID。
+        **参数解释：** 健康检查ID。 **取值范围：** 不涉及。
 
         :return: The health_check_id of this DeleteRecordSetsResponse.
         :rtype: str
@@ -524,7 +524,7 @@ class DeleteRecordSetsResponse(SdkResponse):
     def health_check_id(self, health_check_id):
         r"""Sets the health_check_id of this DeleteRecordSetsResponse.
 
-        健康检查ID。
+        **参数解释：** 健康检查ID。 **取值范围：** 不涉及。
 
         :param health_check_id: The health_check_id of this DeleteRecordSetsResponse.
         :type health_check_id: str

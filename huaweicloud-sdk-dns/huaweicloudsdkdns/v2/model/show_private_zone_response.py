@@ -64,41 +64,41 @@ class ShowPrivateZoneResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param id: 域名的ID，UUID形式的一个资源标识。
+        :param id: **参数解释：** 域名的ID，UUID形式的一个资源标识。 **取值范围：** 不涉及。
         :type id: str
-        :param name: 域名。
+        :param name: **参数解释：** 域名。 **取值范围：** 不涉及。
         :type name: str
-        :param description: 对域名的描述信息。
+        :param description: **参数解释：** 域名的描述信息。 **取值范围：** 长度不超过255个字符。
         :type description: str
-        :param email: 管理该域名的管理员邮箱，用于生成该域名的SOA记录。
+        :param email: **参数解释：** 管理该域名的管理员邮箱，用于生成该域名的SOA记录。 **取值范围：** 不涉及。
         :type email: str
-        :param zone_type: 域名类型，内网（private）。
+        :param zone_type: **参数解释：** 域名类型。 **取值范围：** private：内网域名。
         :type zone_type: str
-        :param ttl: 该域名下SOA记录中的ttl值。
+        :param ttl: **参数解释：** 该域名下SOA记录中的有效缓存时间，以秒为单位。 **取值范围：** 1~2147483647。
         :type ttl: int
-        :param serial: 该域名下SOA记录中用于标识域名文件变更的序列值，用于主从节点同步。
+        :param serial: **参数解释：** 该域名下SOA记录中用于标识域名文件变更的序列值，用于主从节点同步。 **取值范围：** 不涉及。
         :type serial: int
-        :param status: 资源状态。
+        :param status: **参数解释：** 内网域名状态。 **取值范围：** - ACTIVE：正常 - PENDING_CREATE：创建中 - PENDING_UPDATE：更新中 - PENDING_DELETE：删除中 - PENDING_FREEZE：冻结中 - FREEZE：冻结 - ILLEGAL：违规冻结 - POLICE：公安冻结 - PENDING_DISABLE：暂停中 - DISABLE：暂停 - ERROR：失败
         :type status: str
-        :param record_num: 该域名下的记录集个数。
+        :param record_num: **参数解释：** 该域名下的记录集个数。 **取值范围：** 不涉及。
         :type record_num: int
-        :param pool_id: 托管该域名的pool，由系统分配。
+        :param pool_id: **参数解释：** 托管该域名的pool，由系统分配。 **取值范围：** 不涉及。
         :type pool_id: str
-        :param project_id: 域名所属的项目ID。
+        :param project_id: **参数解释：** 域名所属的项目ID。 **取值范围：** 不涉及。
         :type project_id: str
-        :param created_at: 创建时间。 格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSS。
+        :param created_at: **参数解释：** 域名的创建时间。 格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSS。 **取值范围：** 不涉及。
         :type created_at: str
-        :param updated_at: 更新时间。 格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSS。
+        :param updated_at: **参数解释：** 域名的最近一次修改时间。 格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSS。 **取值范围：** 不涉及。
         :type updated_at: str
         :param links: 
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`
-        :param masters: 主从模式中，从DNS服务器获取DNS信息。
+        :param masters: **参数解释：** 主从模式中，从DNS服务器获取DNS信息。 **取值范围：** 不涉及。
         :type masters: list[str]
-        :param routers: 与该域名关联的Router(VPC)列表。
+        :param routers: **参数解释：** 与该域名关联的Router(VPC)列表。 **取值范围：** 不涉及。
         :type routers: list[:class:`huaweicloudsdkdns.v2.Router`]
-        :param proxy_pattern: 内网域名的子域名递归解析代理模式。  取值范围：  AUTHORITY：当前域名未开启递归解析代理 RECURSIVE：当前域名已开启递归解析代理
+        :param proxy_pattern: **参数解释：** 内网域名的子域名递归解析代理模式。 **取值范围：** - AUTHORITY：当前域名未开启递归解析代理 - RECURSIVE：当前域名已开启递归解析代理
         :type proxy_pattern: str
-        :param enterprise_project_id: 域名关联的企业项目ID，长度不超过36个字符。
+        :param enterprise_project_id: **参数解释：** 域名所属的企业项目ID。可以使用该字段过滤企业项目下的域名。 **取值范围：** 最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。
         :type enterprise_project_id: str
         """
         
@@ -165,7 +165,7 @@ class ShowPrivateZoneResponse(SdkResponse):
     def id(self):
         r"""Gets the id of this ShowPrivateZoneResponse.
 
-        域名的ID，UUID形式的一个资源标识。
+        **参数解释：** 域名的ID，UUID形式的一个资源标识。 **取值范围：** 不涉及。
 
         :return: The id of this ShowPrivateZoneResponse.
         :rtype: str
@@ -176,7 +176,7 @@ class ShowPrivateZoneResponse(SdkResponse):
     def id(self, id):
         r"""Sets the id of this ShowPrivateZoneResponse.
 
-        域名的ID，UUID形式的一个资源标识。
+        **参数解释：** 域名的ID，UUID形式的一个资源标识。 **取值范围：** 不涉及。
 
         :param id: The id of this ShowPrivateZoneResponse.
         :type id: str
@@ -187,7 +187,7 @@ class ShowPrivateZoneResponse(SdkResponse):
     def name(self):
         r"""Gets the name of this ShowPrivateZoneResponse.
 
-        域名。
+        **参数解释：** 域名。 **取值范围：** 不涉及。
 
         :return: The name of this ShowPrivateZoneResponse.
         :rtype: str
@@ -198,7 +198,7 @@ class ShowPrivateZoneResponse(SdkResponse):
     def name(self, name):
         r"""Sets the name of this ShowPrivateZoneResponse.
 
-        域名。
+        **参数解释：** 域名。 **取值范围：** 不涉及。
 
         :param name: The name of this ShowPrivateZoneResponse.
         :type name: str
@@ -209,7 +209,7 @@ class ShowPrivateZoneResponse(SdkResponse):
     def description(self):
         r"""Gets the description of this ShowPrivateZoneResponse.
 
-        对域名的描述信息。
+        **参数解释：** 域名的描述信息。 **取值范围：** 长度不超过255个字符。
 
         :return: The description of this ShowPrivateZoneResponse.
         :rtype: str
@@ -220,7 +220,7 @@ class ShowPrivateZoneResponse(SdkResponse):
     def description(self, description):
         r"""Sets the description of this ShowPrivateZoneResponse.
 
-        对域名的描述信息。
+        **参数解释：** 域名的描述信息。 **取值范围：** 长度不超过255个字符。
 
         :param description: The description of this ShowPrivateZoneResponse.
         :type description: str
@@ -231,7 +231,7 @@ class ShowPrivateZoneResponse(SdkResponse):
     def email(self):
         r"""Gets the email of this ShowPrivateZoneResponse.
 
-        管理该域名的管理员邮箱，用于生成该域名的SOA记录。
+        **参数解释：** 管理该域名的管理员邮箱，用于生成该域名的SOA记录。 **取值范围：** 不涉及。
 
         :return: The email of this ShowPrivateZoneResponse.
         :rtype: str
@@ -242,7 +242,7 @@ class ShowPrivateZoneResponse(SdkResponse):
     def email(self, email):
         r"""Sets the email of this ShowPrivateZoneResponse.
 
-        管理该域名的管理员邮箱，用于生成该域名的SOA记录。
+        **参数解释：** 管理该域名的管理员邮箱，用于生成该域名的SOA记录。 **取值范围：** 不涉及。
 
         :param email: The email of this ShowPrivateZoneResponse.
         :type email: str
@@ -253,7 +253,7 @@ class ShowPrivateZoneResponse(SdkResponse):
     def zone_type(self):
         r"""Gets the zone_type of this ShowPrivateZoneResponse.
 
-        域名类型，内网（private）。
+        **参数解释：** 域名类型。 **取值范围：** private：内网域名。
 
         :return: The zone_type of this ShowPrivateZoneResponse.
         :rtype: str
@@ -264,7 +264,7 @@ class ShowPrivateZoneResponse(SdkResponse):
     def zone_type(self, zone_type):
         r"""Sets the zone_type of this ShowPrivateZoneResponse.
 
-        域名类型，内网（private）。
+        **参数解释：** 域名类型。 **取值范围：** private：内网域名。
 
         :param zone_type: The zone_type of this ShowPrivateZoneResponse.
         :type zone_type: str
@@ -275,7 +275,7 @@ class ShowPrivateZoneResponse(SdkResponse):
     def ttl(self):
         r"""Gets the ttl of this ShowPrivateZoneResponse.
 
-        该域名下SOA记录中的ttl值。
+        **参数解释：** 该域名下SOA记录中的有效缓存时间，以秒为单位。 **取值范围：** 1~2147483647。
 
         :return: The ttl of this ShowPrivateZoneResponse.
         :rtype: int
@@ -286,7 +286,7 @@ class ShowPrivateZoneResponse(SdkResponse):
     def ttl(self, ttl):
         r"""Sets the ttl of this ShowPrivateZoneResponse.
 
-        该域名下SOA记录中的ttl值。
+        **参数解释：** 该域名下SOA记录中的有效缓存时间，以秒为单位。 **取值范围：** 1~2147483647。
 
         :param ttl: The ttl of this ShowPrivateZoneResponse.
         :type ttl: int
@@ -297,7 +297,7 @@ class ShowPrivateZoneResponse(SdkResponse):
     def serial(self):
         r"""Gets the serial of this ShowPrivateZoneResponse.
 
-        该域名下SOA记录中用于标识域名文件变更的序列值，用于主从节点同步。
+        **参数解释：** 该域名下SOA记录中用于标识域名文件变更的序列值，用于主从节点同步。 **取值范围：** 不涉及。
 
         :return: The serial of this ShowPrivateZoneResponse.
         :rtype: int
@@ -308,7 +308,7 @@ class ShowPrivateZoneResponse(SdkResponse):
     def serial(self, serial):
         r"""Sets the serial of this ShowPrivateZoneResponse.
 
-        该域名下SOA记录中用于标识域名文件变更的序列值，用于主从节点同步。
+        **参数解释：** 该域名下SOA记录中用于标识域名文件变更的序列值，用于主从节点同步。 **取值范围：** 不涉及。
 
         :param serial: The serial of this ShowPrivateZoneResponse.
         :type serial: int
@@ -319,7 +319,7 @@ class ShowPrivateZoneResponse(SdkResponse):
     def status(self):
         r"""Gets the status of this ShowPrivateZoneResponse.
 
-        资源状态。
+        **参数解释：** 内网域名状态。 **取值范围：** - ACTIVE：正常 - PENDING_CREATE：创建中 - PENDING_UPDATE：更新中 - PENDING_DELETE：删除中 - PENDING_FREEZE：冻结中 - FREEZE：冻结 - ILLEGAL：违规冻结 - POLICE：公安冻结 - PENDING_DISABLE：暂停中 - DISABLE：暂停 - ERROR：失败
 
         :return: The status of this ShowPrivateZoneResponse.
         :rtype: str
@@ -330,7 +330,7 @@ class ShowPrivateZoneResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this ShowPrivateZoneResponse.
 
-        资源状态。
+        **参数解释：** 内网域名状态。 **取值范围：** - ACTIVE：正常 - PENDING_CREATE：创建中 - PENDING_UPDATE：更新中 - PENDING_DELETE：删除中 - PENDING_FREEZE：冻结中 - FREEZE：冻结 - ILLEGAL：违规冻结 - POLICE：公安冻结 - PENDING_DISABLE：暂停中 - DISABLE：暂停 - ERROR：失败
 
         :param status: The status of this ShowPrivateZoneResponse.
         :type status: str
@@ -341,7 +341,7 @@ class ShowPrivateZoneResponse(SdkResponse):
     def record_num(self):
         r"""Gets the record_num of this ShowPrivateZoneResponse.
 
-        该域名下的记录集个数。
+        **参数解释：** 该域名下的记录集个数。 **取值范围：** 不涉及。
 
         :return: The record_num of this ShowPrivateZoneResponse.
         :rtype: int
@@ -352,7 +352,7 @@ class ShowPrivateZoneResponse(SdkResponse):
     def record_num(self, record_num):
         r"""Sets the record_num of this ShowPrivateZoneResponse.
 
-        该域名下的记录集个数。
+        **参数解释：** 该域名下的记录集个数。 **取值范围：** 不涉及。
 
         :param record_num: The record_num of this ShowPrivateZoneResponse.
         :type record_num: int
@@ -363,7 +363,7 @@ class ShowPrivateZoneResponse(SdkResponse):
     def pool_id(self):
         r"""Gets the pool_id of this ShowPrivateZoneResponse.
 
-        托管该域名的pool，由系统分配。
+        **参数解释：** 托管该域名的pool，由系统分配。 **取值范围：** 不涉及。
 
         :return: The pool_id of this ShowPrivateZoneResponse.
         :rtype: str
@@ -374,7 +374,7 @@ class ShowPrivateZoneResponse(SdkResponse):
     def pool_id(self, pool_id):
         r"""Sets the pool_id of this ShowPrivateZoneResponse.
 
-        托管该域名的pool，由系统分配。
+        **参数解释：** 托管该域名的pool，由系统分配。 **取值范围：** 不涉及。
 
         :param pool_id: The pool_id of this ShowPrivateZoneResponse.
         :type pool_id: str
@@ -385,7 +385,7 @@ class ShowPrivateZoneResponse(SdkResponse):
     def project_id(self):
         r"""Gets the project_id of this ShowPrivateZoneResponse.
 
-        域名所属的项目ID。
+        **参数解释：** 域名所属的项目ID。 **取值范围：** 不涉及。
 
         :return: The project_id of this ShowPrivateZoneResponse.
         :rtype: str
@@ -396,7 +396,7 @@ class ShowPrivateZoneResponse(SdkResponse):
     def project_id(self, project_id):
         r"""Sets the project_id of this ShowPrivateZoneResponse.
 
-        域名所属的项目ID。
+        **参数解释：** 域名所属的项目ID。 **取值范围：** 不涉及。
 
         :param project_id: The project_id of this ShowPrivateZoneResponse.
         :type project_id: str
@@ -407,7 +407,7 @@ class ShowPrivateZoneResponse(SdkResponse):
     def created_at(self):
         r"""Gets the created_at of this ShowPrivateZoneResponse.
 
-        创建时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。
+        **参数解释：** 域名的创建时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。 **取值范围：** 不涉及。
 
         :return: The created_at of this ShowPrivateZoneResponse.
         :rtype: str
@@ -418,7 +418,7 @@ class ShowPrivateZoneResponse(SdkResponse):
     def created_at(self, created_at):
         r"""Sets the created_at of this ShowPrivateZoneResponse.
 
-        创建时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。
+        **参数解释：** 域名的创建时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。 **取值范围：** 不涉及。
 
         :param created_at: The created_at of this ShowPrivateZoneResponse.
         :type created_at: str
@@ -429,7 +429,7 @@ class ShowPrivateZoneResponse(SdkResponse):
     def updated_at(self):
         r"""Gets the updated_at of this ShowPrivateZoneResponse.
 
-        更新时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。
+        **参数解释：** 域名的最近一次修改时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。 **取值范围：** 不涉及。
 
         :return: The updated_at of this ShowPrivateZoneResponse.
         :rtype: str
@@ -440,7 +440,7 @@ class ShowPrivateZoneResponse(SdkResponse):
     def updated_at(self, updated_at):
         r"""Sets the updated_at of this ShowPrivateZoneResponse.
 
-        更新时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。
+        **参数解释：** 域名的最近一次修改时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。 **取值范围：** 不涉及。
 
         :param updated_at: The updated_at of this ShowPrivateZoneResponse.
         :type updated_at: str
@@ -469,7 +469,7 @@ class ShowPrivateZoneResponse(SdkResponse):
     def masters(self):
         r"""Gets the masters of this ShowPrivateZoneResponse.
 
-        主从模式中，从DNS服务器获取DNS信息。
+        **参数解释：** 主从模式中，从DNS服务器获取DNS信息。 **取值范围：** 不涉及。
 
         :return: The masters of this ShowPrivateZoneResponse.
         :rtype: list[str]
@@ -480,7 +480,7 @@ class ShowPrivateZoneResponse(SdkResponse):
     def masters(self, masters):
         r"""Sets the masters of this ShowPrivateZoneResponse.
 
-        主从模式中，从DNS服务器获取DNS信息。
+        **参数解释：** 主从模式中，从DNS服务器获取DNS信息。 **取值范围：** 不涉及。
 
         :param masters: The masters of this ShowPrivateZoneResponse.
         :type masters: list[str]
@@ -491,7 +491,7 @@ class ShowPrivateZoneResponse(SdkResponse):
     def routers(self):
         r"""Gets the routers of this ShowPrivateZoneResponse.
 
-        与该域名关联的Router(VPC)列表。
+        **参数解释：** 与该域名关联的Router(VPC)列表。 **取值范围：** 不涉及。
 
         :return: The routers of this ShowPrivateZoneResponse.
         :rtype: list[:class:`huaweicloudsdkdns.v2.Router`]
@@ -502,7 +502,7 @@ class ShowPrivateZoneResponse(SdkResponse):
     def routers(self, routers):
         r"""Sets the routers of this ShowPrivateZoneResponse.
 
-        与该域名关联的Router(VPC)列表。
+        **参数解释：** 与该域名关联的Router(VPC)列表。 **取值范围：** 不涉及。
 
         :param routers: The routers of this ShowPrivateZoneResponse.
         :type routers: list[:class:`huaweicloudsdkdns.v2.Router`]
@@ -513,7 +513,7 @@ class ShowPrivateZoneResponse(SdkResponse):
     def proxy_pattern(self):
         r"""Gets the proxy_pattern of this ShowPrivateZoneResponse.
 
-        内网域名的子域名递归解析代理模式。  取值范围：  AUTHORITY：当前域名未开启递归解析代理 RECURSIVE：当前域名已开启递归解析代理
+        **参数解释：** 内网域名的子域名递归解析代理模式。 **取值范围：** - AUTHORITY：当前域名未开启递归解析代理 - RECURSIVE：当前域名已开启递归解析代理
 
         :return: The proxy_pattern of this ShowPrivateZoneResponse.
         :rtype: str
@@ -524,7 +524,7 @@ class ShowPrivateZoneResponse(SdkResponse):
     def proxy_pattern(self, proxy_pattern):
         r"""Sets the proxy_pattern of this ShowPrivateZoneResponse.
 
-        内网域名的子域名递归解析代理模式。  取值范围：  AUTHORITY：当前域名未开启递归解析代理 RECURSIVE：当前域名已开启递归解析代理
+        **参数解释：** 内网域名的子域名递归解析代理模式。 **取值范围：** - AUTHORITY：当前域名未开启递归解析代理 - RECURSIVE：当前域名已开启递归解析代理
 
         :param proxy_pattern: The proxy_pattern of this ShowPrivateZoneResponse.
         :type proxy_pattern: str
@@ -535,7 +535,7 @@ class ShowPrivateZoneResponse(SdkResponse):
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this ShowPrivateZoneResponse.
 
-        域名关联的企业项目ID，长度不超过36个字符。
+        **参数解释：** 域名所属的企业项目ID。可以使用该字段过滤企业项目下的域名。 **取值范围：** 最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。
 
         :return: The enterprise_project_id of this ShowPrivateZoneResponse.
         :rtype: str
@@ -546,7 +546,7 @@ class ShowPrivateZoneResponse(SdkResponse):
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this ShowPrivateZoneResponse.
 
-        域名关联的企业项目ID，长度不超过36个字符。
+        **参数解释：** 域名所属的企业项目ID。可以使用该字段过滤企业项目下的域名。 **取值范围：** 最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。
 
         :param enterprise_project_id: The enterprise_project_id of this ShowPrivateZoneResponse.
         :type enterprise_project_id: str

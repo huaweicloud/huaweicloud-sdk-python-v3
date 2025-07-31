@@ -49,11 +49,11 @@ class ListResolverRulesRequest:
         :type endpoint_id: str
         :param id: 转发规则ID。
         :type id: str
-        :param limit: 每页返回的资源个数。  取值范围：0~500  取值一般为10，20，50。默认值为500。
+        :param limit: **参数解释：** 分页查询时配置每页返回的资源个数。 **约束限制：** 不涉及。 **取值范围：** 0~500。 **默认取值：** 500
         :type limit: int
-        :param offset: 分页查询起始偏移量，表示从偏移量的下一个资源开始查询。  取值范围：0~2147483647  默认值为0。  当前设置marker不为空时，以marker为分页起始标识。
+        :param offset: **参数解释：** 分页查询起始偏移量，表示从偏移量的下一个资源开始查询。 **约束限制：** 当设置marker不为空时，以marker为分页起始标识，offset不生效。。 **取值范围：** 0~2147483647。 **默认取值：** 0
         :type offset: int
-        :param marker: 分页查询起始的资源ID，为空时为查询第一页。  默认值为空。
+        :param marker: **参数解释：** 分页查询的起始资源ID。 - 查询第一页时，设置为空。 - 查询下一页时，设置为上一页最后一条资源的ID。  **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type marker: str
         """
         
@@ -175,7 +175,7 @@ class ListResolverRulesRequest:
     def limit(self):
         r"""Gets the limit of this ListResolverRulesRequest.
 
-        每页返回的资源个数。  取值范围：0~500  取值一般为10，20，50。默认值为500。
+        **参数解释：** 分页查询时配置每页返回的资源个数。 **约束限制：** 不涉及。 **取值范围：** 0~500。 **默认取值：** 500
 
         :return: The limit of this ListResolverRulesRequest.
         :rtype: int
@@ -186,7 +186,7 @@ class ListResolverRulesRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListResolverRulesRequest.
 
-        每页返回的资源个数。  取值范围：0~500  取值一般为10，20，50。默认值为500。
+        **参数解释：** 分页查询时配置每页返回的资源个数。 **约束限制：** 不涉及。 **取值范围：** 0~500。 **默认取值：** 500
 
         :param limit: The limit of this ListResolverRulesRequest.
         :type limit: int
@@ -197,7 +197,7 @@ class ListResolverRulesRequest:
     def offset(self):
         r"""Gets the offset of this ListResolverRulesRequest.
 
-        分页查询起始偏移量，表示从偏移量的下一个资源开始查询。  取值范围：0~2147483647  默认值为0。  当前设置marker不为空时，以marker为分页起始标识。
+        **参数解释：** 分页查询起始偏移量，表示从偏移量的下一个资源开始查询。 **约束限制：** 当设置marker不为空时，以marker为分页起始标识，offset不生效。。 **取值范围：** 0~2147483647。 **默认取值：** 0
 
         :return: The offset of this ListResolverRulesRequest.
         :rtype: int
@@ -208,7 +208,7 @@ class ListResolverRulesRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListResolverRulesRequest.
 
-        分页查询起始偏移量，表示从偏移量的下一个资源开始查询。  取值范围：0~2147483647  默认值为0。  当前设置marker不为空时，以marker为分页起始标识。
+        **参数解释：** 分页查询起始偏移量，表示从偏移量的下一个资源开始查询。 **约束限制：** 当设置marker不为空时，以marker为分页起始标识，offset不生效。。 **取值范围：** 0~2147483647。 **默认取值：** 0
 
         :param offset: The offset of this ListResolverRulesRequest.
         :type offset: int
@@ -219,7 +219,7 @@ class ListResolverRulesRequest:
     def marker(self):
         r"""Gets the marker of this ListResolverRulesRequest.
 
-        分页查询起始的资源ID，为空时为查询第一页。  默认值为空。
+        **参数解释：** 分页查询的起始资源ID。 - 查询第一页时，设置为空。 - 查询下一页时，设置为上一页最后一条资源的ID。  **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The marker of this ListResolverRulesRequest.
         :rtype: str
@@ -230,7 +230,7 @@ class ListResolverRulesRequest:
     def marker(self, marker):
         r"""Sets the marker of this ListResolverRulesRequest.
 
-        分页查询起始的资源ID，为空时为查询第一页。  默认值为空。
+        **参数解释：** 分页查询的起始资源ID。 - 查询第一页时，设置为空。 - 查询下一页时，设置为上一页最后一条资源的ID。  **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param marker: The marker of this ListResolverRulesRequest.
         :type marker: str

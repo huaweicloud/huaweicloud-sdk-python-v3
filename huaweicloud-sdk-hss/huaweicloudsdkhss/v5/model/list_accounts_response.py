@@ -34,7 +34,7 @@ class ListAccountsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total_num: 总数
+        :param total_num: **参数解释**: 总数 **取值范围**: 最小值0，最大值2147483647 
         :type total_num: int
         :param data_list: 事件列表详情
         :type data_list: list[:class:`huaweicloudsdkhss.v5.AccountResponseInfo`]
@@ -60,7 +60,7 @@ class ListAccountsResponse(SdkResponse):
     def total_num(self):
         r"""Gets the total_num of this ListAccountsResponse.
 
-        总数
+        **参数解释**: 总数 **取值范围**: 最小值0，最大值2147483647 
 
         :return: The total_num of this ListAccountsResponse.
         :rtype: int
@@ -71,7 +71,7 @@ class ListAccountsResponse(SdkResponse):
     def total_num(self, total_num):
         r"""Sets the total_num of this ListAccountsResponse.
 
-        总数
+        **参数解释**: 总数 **取值范围**: 最小值0，最大值2147483647 
 
         :param total_num: The total_num of this ListAccountsResponse.
         :type total_num: int

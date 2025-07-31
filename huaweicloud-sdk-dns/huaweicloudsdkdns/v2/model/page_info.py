@@ -33,11 +33,11 @@ class PageInfo:
 
         The model defined in huaweicloud sdk
 
-        :param next_marker: 下一页的页面标识。
+        :param next_marker: **参数解释：** 下一页的页面标识。 **取值范围：** 不涉及。
         :type next_marker: str
-        :param previous_marker: 上一页的页面标识。
+        :param previous_marker: **参数解释：** 上一页的页面标识。 **取值范围：** 不涉及。
         :type previous_marker: str
-        :param current_count: 页面数量。
+        :param current_count: **参数解释：** 页面数量。 **取值范围：** 不涉及。
         :type current_count: int
         """
         
@@ -59,7 +59,7 @@ class PageInfo:
     def next_marker(self):
         r"""Gets the next_marker of this PageInfo.
 
-        下一页的页面标识。
+        **参数解释：** 下一页的页面标识。 **取值范围：** 不涉及。
 
         :return: The next_marker of this PageInfo.
         :rtype: str
@@ -70,7 +70,7 @@ class PageInfo:
     def next_marker(self, next_marker):
         r"""Sets the next_marker of this PageInfo.
 
-        下一页的页面标识。
+        **参数解释：** 下一页的页面标识。 **取值范围：** 不涉及。
 
         :param next_marker: The next_marker of this PageInfo.
         :type next_marker: str
@@ -81,7 +81,7 @@ class PageInfo:
     def previous_marker(self):
         r"""Gets the previous_marker of this PageInfo.
 
-        上一页的页面标识。
+        **参数解释：** 上一页的页面标识。 **取值范围：** 不涉及。
 
         :return: The previous_marker of this PageInfo.
         :rtype: str
@@ -92,7 +92,7 @@ class PageInfo:
     def previous_marker(self, previous_marker):
         r"""Sets the previous_marker of this PageInfo.
 
-        上一页的页面标识。
+        **参数解释：** 上一页的页面标识。 **取值范围：** 不涉及。
 
         :param previous_marker: The previous_marker of this PageInfo.
         :type previous_marker: str
@@ -103,7 +103,7 @@ class PageInfo:
     def current_count(self):
         r"""Gets the current_count of this PageInfo.
 
-        页面数量。
+        **参数解释：** 页面数量。 **取值范围：** 不涉及。
 
         :return: The current_count of this PageInfo.
         :rtype: int
@@ -114,7 +114,7 @@ class PageInfo:
     def current_count(self, current_count):
         r"""Sets the current_count of this PageInfo.
 
-        页面数量。
+        **参数解释：** 页面数量。 **取值范围：** 不涉及。
 
         :param current_count: The current_count of this PageInfo.
         :type current_count: int

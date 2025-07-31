@@ -32,9 +32,9 @@ class ListPortStatisticsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total_num: 开放端口总数
+        :param total_num: **参数解释**: 开放端口总数 **取值范围**: 最小值0， 最大值10000 
         :type total_num: int
-        :param data_list: 开放端口统计信息列表
+        :param data_list: **参数解释**: 开放端口统计信息列表 **取值范围**: 最小值0， 最大值10000 
         :type data_list: list[:class:`huaweicloudsdkhss.v5.PortStatisticResponseInfo`]
         """
         
@@ -53,7 +53,7 @@ class ListPortStatisticsResponse(SdkResponse):
     def total_num(self):
         r"""Gets the total_num of this ListPortStatisticsResponse.
 
-        开放端口总数
+        **参数解释**: 开放端口总数 **取值范围**: 最小值0， 最大值10000 
 
         :return: The total_num of this ListPortStatisticsResponse.
         :rtype: int
@@ -64,7 +64,7 @@ class ListPortStatisticsResponse(SdkResponse):
     def total_num(self, total_num):
         r"""Sets the total_num of this ListPortStatisticsResponse.
 
-        开放端口总数
+        **参数解释**: 开放端口总数 **取值范围**: 最小值0， 最大值10000 
 
         :param total_num: The total_num of this ListPortStatisticsResponse.
         :type total_num: int
@@ -75,7 +75,7 @@ class ListPortStatisticsResponse(SdkResponse):
     def data_list(self):
         r"""Gets the data_list of this ListPortStatisticsResponse.
 
-        开放端口统计信息列表
+        **参数解释**: 开放端口统计信息列表 **取值范围**: 最小值0， 最大值10000 
 
         :return: The data_list of this ListPortStatisticsResponse.
         :rtype: list[:class:`huaweicloudsdkhss.v5.PortStatisticResponseInfo`]
@@ -86,7 +86,7 @@ class ListPortStatisticsResponse(SdkResponse):
     def data_list(self, data_list):
         r"""Sets the data_list of this ListPortStatisticsResponse.
 
-        开放端口统计信息列表
+        **参数解释**: 开放端口统计信息列表 **取值范围**: 最小值0， 最大值10000 
 
         :param data_list: The data_list of this ListPortStatisticsResponse.
         :type data_list: list[:class:`huaweicloudsdkhss.v5.PortStatisticResponseInfo`]

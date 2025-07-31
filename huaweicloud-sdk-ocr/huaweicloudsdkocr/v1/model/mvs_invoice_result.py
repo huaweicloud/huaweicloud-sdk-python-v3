@@ -241,9 +241,9 @@ class MvsInvoiceResult:
         :type remark: str
         :param drawer_name: 开票人 
         :type drawer_name: str
-        :param type: 枚举值，机动车销售统一发票或者二手车销售统一发票。 当入参中包含type时返回。 
+        :param type: 枚举值，当入参中包含type时返回。取值范围包括： - 机动车销售统一发票 - 电子发票（机动车销售统一发票） - 二手车销售统一发票 - 电子发票（二手车销售统一发票） 
         :type type: str
-        :param text_location: 检测框对象，内部为字段-框坐标对。如 code:[[x0, y0],[x1,y1],[x2,y2],[x3,y3]], 点的顺序是左上角、右上角、右下角、左下角。如果原图找不到字段，返回空列表。 
+        :param text_location: 检测框对象，内部为字段-框坐标对。如 code:[[x0, y0],[x1,y1],[x2,y2],[x3,y3]], 点的顺序是左上角、右上角、右下角、左下角。如果原图找不到字段，返回空列表。 &gt; 说明： - 输入数据格式是PDF时，返回的字段坐标仅用于参考，表示字段间的相对位置关系。若发票类型为电子发票（机动车销售统一发票）或电子发票（二手车销售统一发票），字段tax_authority和字段tax_authority_code的坐标位置统一为这两个字段的最大外接矩形。 
         :type text_location: object
         :param confidence: 字段文字内容置信度，内容为字段-字符置信度对,如code:0.9999。这个数值为字段中每个字符置信度，格式为fp32，保留四位。若字段不存在则返回0.0。 
         :type confidence: object
@@ -1567,7 +1567,7 @@ class MvsInvoiceResult:
     def type(self):
         r"""Gets the type of this MvsInvoiceResult.
 
-        枚举值，机动车销售统一发票或者二手车销售统一发票。 当入参中包含type时返回。 
+        枚举值，当入参中包含type时返回。取值范围包括： - 机动车销售统一发票 - 电子发票（机动车销售统一发票） - 二手车销售统一发票 - 电子发票（二手车销售统一发票） 
 
         :return: The type of this MvsInvoiceResult.
         :rtype: str
@@ -1578,7 +1578,7 @@ class MvsInvoiceResult:
     def type(self, type):
         r"""Sets the type of this MvsInvoiceResult.
 
-        枚举值，机动车销售统一发票或者二手车销售统一发票。 当入参中包含type时返回。 
+        枚举值，当入参中包含type时返回。取值范围包括： - 机动车销售统一发票 - 电子发票（机动车销售统一发票） - 二手车销售统一发票 - 电子发票（二手车销售统一发票） 
 
         :param type: The type of this MvsInvoiceResult.
         :type type: str
@@ -1589,7 +1589,7 @@ class MvsInvoiceResult:
     def text_location(self):
         r"""Gets the text_location of this MvsInvoiceResult.
 
-        检测框对象，内部为字段-框坐标对。如 code:[[x0, y0],[x1,y1],[x2,y2],[x3,y3]], 点的顺序是左上角、右上角、右下角、左下角。如果原图找不到字段，返回空列表。 
+        检测框对象，内部为字段-框坐标对。如 code:[[x0, y0],[x1,y1],[x2,y2],[x3,y3]], 点的顺序是左上角、右上角、右下角、左下角。如果原图找不到字段，返回空列表。 > 说明： - 输入数据格式是PDF时，返回的字段坐标仅用于参考，表示字段间的相对位置关系。若发票类型为电子发票（机动车销售统一发票）或电子发票（二手车销售统一发票），字段tax_authority和字段tax_authority_code的坐标位置统一为这两个字段的最大外接矩形。 
 
         :return: The text_location of this MvsInvoiceResult.
         :rtype: object
@@ -1600,7 +1600,7 @@ class MvsInvoiceResult:
     def text_location(self, text_location):
         r"""Sets the text_location of this MvsInvoiceResult.
 
-        检测框对象，内部为字段-框坐标对。如 code:[[x0, y0],[x1,y1],[x2,y2],[x3,y3]], 点的顺序是左上角、右上角、右下角、左下角。如果原图找不到字段，返回空列表。 
+        检测框对象，内部为字段-框坐标对。如 code:[[x0, y0],[x1,y1],[x2,y2],[x3,y3]], 点的顺序是左上角、右上角、右下角、左下角。如果原图找不到字段，返回空列表。 > 说明： - 输入数据格式是PDF时，返回的字段坐标仅用于参考，表示字段间的相对位置关系。若发票类型为电子发票（机动车销售统一发票）或电子发票（二手车销售统一发票），字段tax_authority和字段tax_authority_code的坐标位置统一为这两个字段的最大外接矩形。 
 
         :param text_location: The text_location of this MvsInvoiceResult.
         :type text_location: object

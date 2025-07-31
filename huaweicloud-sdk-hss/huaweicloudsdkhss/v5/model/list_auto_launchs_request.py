@@ -45,23 +45,23 @@ class ListAutoLaunchsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param host_id: 主机id
+        :param host_id: **参数解释**: 服务器ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
         :type host_id: str
-        :param host_name: 主机名称
+        :param host_name: **参数解释**: 服务器名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
         :type host_name: str
-        :param name: 自启动项名称
+        :param name: **参数解释**: 自启动项名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
         :type name: str
-        :param host_ip: 主机ip
+        :param host_ip: **参数解释**: 主机IP **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
         :type host_ip: str
-        :param type: 自启动项类型   - 0 ：自启动服务   - 1 ：定时任务   - 2 ：预加载动态库   - 3 ：Run注册表键   - 4 ：开机启动文件夹
+        :param type: **参数解释**: 自启动项类型 **约束限制**: 不涉及 **取值范围**: - 0：自启动服务 - 1：定时任务 - 2：预加载动态库 - 3：Run注册表键 - 4：开机启动文件夹  **默认取值**: 不涉及 
         :type type: str
-        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
+        :param enterprise_project_id: **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
         :type enterprise_project_id: str
-        :param limit: 每页显示数量
+        :param limit: **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
         :type limit: int
-        :param offset: 偏移量：指定返回记录的开始位置
+        :param offset: **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 默认为0 
         :type offset: int
-        :param part_match: 是否模糊匹配，默认false表示精确匹配
+        :param part_match: **参数解释**: 是否模糊匹配 **约束限制**: 不涉及 **取值范围**: - true：是 - false：否  **默认取值**: 不涉及 
         :type part_match: bool
         """
         
@@ -101,7 +101,7 @@ class ListAutoLaunchsRequest:
     def host_id(self):
         r"""Gets the host_id of this ListAutoLaunchsRequest.
 
-        主机id
+        **参数解释**: 服务器ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :return: The host_id of this ListAutoLaunchsRequest.
         :rtype: str
@@ -112,7 +112,7 @@ class ListAutoLaunchsRequest:
     def host_id(self, host_id):
         r"""Sets the host_id of this ListAutoLaunchsRequest.
 
-        主机id
+        **参数解释**: 服务器ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :param host_id: The host_id of this ListAutoLaunchsRequest.
         :type host_id: str
@@ -123,7 +123,7 @@ class ListAutoLaunchsRequest:
     def host_name(self):
         r"""Gets the host_name of this ListAutoLaunchsRequest.
 
-        主机名称
+        **参数解释**: 服务器名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
 
         :return: The host_name of this ListAutoLaunchsRequest.
         :rtype: str
@@ -134,7 +134,7 @@ class ListAutoLaunchsRequest:
     def host_name(self, host_name):
         r"""Sets the host_name of this ListAutoLaunchsRequest.
 
-        主机名称
+        **参数解释**: 服务器名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
 
         :param host_name: The host_name of this ListAutoLaunchsRequest.
         :type host_name: str
@@ -145,7 +145,7 @@ class ListAutoLaunchsRequest:
     def name(self):
         r"""Gets the name of this ListAutoLaunchsRequest.
 
-        自启动项名称
+        **参数解释**: 自启动项名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
 
         :return: The name of this ListAutoLaunchsRequest.
         :rtype: str
@@ -156,7 +156,7 @@ class ListAutoLaunchsRequest:
     def name(self, name):
         r"""Sets the name of this ListAutoLaunchsRequest.
 
-        自启动项名称
+        **参数解释**: 自启动项名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
 
         :param name: The name of this ListAutoLaunchsRequest.
         :type name: str
@@ -167,7 +167,7 @@ class ListAutoLaunchsRequest:
     def host_ip(self):
         r"""Gets the host_ip of this ListAutoLaunchsRequest.
 
-        主机ip
+        **参数解释**: 主机IP **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
 
         :return: The host_ip of this ListAutoLaunchsRequest.
         :rtype: str
@@ -178,7 +178,7 @@ class ListAutoLaunchsRequest:
     def host_ip(self, host_ip):
         r"""Sets the host_ip of this ListAutoLaunchsRequest.
 
-        主机ip
+        **参数解释**: 主机IP **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
 
         :param host_ip: The host_ip of this ListAutoLaunchsRequest.
         :type host_ip: str
@@ -189,7 +189,7 @@ class ListAutoLaunchsRequest:
     def type(self):
         r"""Gets the type of this ListAutoLaunchsRequest.
 
-        自启动项类型   - 0 ：自启动服务   - 1 ：定时任务   - 2 ：预加载动态库   - 3 ：Run注册表键   - 4 ：开机启动文件夹
+        **参数解释**: 自启动项类型 **约束限制**: 不涉及 **取值范围**: - 0：自启动服务 - 1：定时任务 - 2：预加载动态库 - 3：Run注册表键 - 4：开机启动文件夹  **默认取值**: 不涉及 
 
         :return: The type of this ListAutoLaunchsRequest.
         :rtype: str
@@ -200,7 +200,7 @@ class ListAutoLaunchsRequest:
     def type(self, type):
         r"""Sets the type of this ListAutoLaunchsRequest.
 
-        自启动项类型   - 0 ：自启动服务   - 1 ：定时任务   - 2 ：预加载动态库   - 3 ：Run注册表键   - 4 ：开机启动文件夹
+        **参数解释**: 自启动项类型 **约束限制**: 不涉及 **取值范围**: - 0：自启动服务 - 1：定时任务 - 2：预加载动态库 - 3：Run注册表键 - 4：开机启动文件夹  **默认取值**: 不涉及 
 
         :param type: The type of this ListAutoLaunchsRequest.
         :type type: str
@@ -211,7 +211,7 @@ class ListAutoLaunchsRequest:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this ListAutoLaunchsRequest.
 
-        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
+        **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
 
         :return: The enterprise_project_id of this ListAutoLaunchsRequest.
         :rtype: str
@@ -222,7 +222,7 @@ class ListAutoLaunchsRequest:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this ListAutoLaunchsRequest.
 
-        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
+        **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
 
         :param enterprise_project_id: The enterprise_project_id of this ListAutoLaunchsRequest.
         :type enterprise_project_id: str
@@ -233,7 +233,7 @@ class ListAutoLaunchsRequest:
     def limit(self):
         r"""Gets the limit of this ListAutoLaunchsRequest.
 
-        每页显示数量
+        **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
 
         :return: The limit of this ListAutoLaunchsRequest.
         :rtype: int
@@ -244,7 +244,7 @@ class ListAutoLaunchsRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListAutoLaunchsRequest.
 
-        每页显示数量
+        **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
 
         :param limit: The limit of this ListAutoLaunchsRequest.
         :type limit: int
@@ -255,7 +255,7 @@ class ListAutoLaunchsRequest:
     def offset(self):
         r"""Gets the offset of this ListAutoLaunchsRequest.
 
-        偏移量：指定返回记录的开始位置
+        **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 默认为0 
 
         :return: The offset of this ListAutoLaunchsRequest.
         :rtype: int
@@ -266,7 +266,7 @@ class ListAutoLaunchsRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListAutoLaunchsRequest.
 
-        偏移量：指定返回记录的开始位置
+        **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 默认为0 
 
         :param offset: The offset of this ListAutoLaunchsRequest.
         :type offset: int
@@ -277,7 +277,7 @@ class ListAutoLaunchsRequest:
     def part_match(self):
         r"""Gets the part_match of this ListAutoLaunchsRequest.
 
-        是否模糊匹配，默认false表示精确匹配
+        **参数解释**: 是否模糊匹配 **约束限制**: 不涉及 **取值范围**: - true：是 - false：否  **默认取值**: 不涉及 
 
         :return: The part_match of this ListAutoLaunchsRequest.
         :rtype: bool
@@ -288,7 +288,7 @@ class ListAutoLaunchsRequest:
     def part_match(self, part_match):
         r"""Sets the part_match of this ListAutoLaunchsRequest.
 
-        是否模糊匹配，默认false表示精确匹配
+        **参数解释**: 是否模糊匹配 **约束限制**: 不涉及 **取值范围**: - true：是 - false：否  **默认取值**: 不涉及 
 
         :param part_match: The part_match of this ListAutoLaunchsRequest.
         :type part_match: bool

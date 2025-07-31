@@ -25,6 +25,7 @@ class AssetFileInfo:
         'asset_file_category': 'str',
         'download_url': 'str',
         'state': 'str',
+        'block_reason_code': 'str',
         'reason': 'str',
         'file_extra_meta': 'FileExtraMeta'
     }
@@ -38,11 +39,12 @@ class AssetFileInfo:
         'asset_file_category': 'asset_file_category',
         'download_url': 'download_url',
         'state': 'state',
+        'block_reason_code': 'block_reason_code',
         'reason': 'reason',
         'file_extra_meta': 'file_extra_meta'
     }
 
-    def __init__(self, file_id=None, file_name=None, file_md5=None, file_size=None, file_type=None, asset_file_category=None, download_url=None, state=None, reason=None, file_extra_meta=None):
+    def __init__(self, file_id=None, file_name=None, file_md5=None, file_size=None, file_type=None, asset_file_category=None, download_url=None, state=None, block_reason_code=None, reason=None, file_extra_meta=None):
         r"""AssetFileInfo
 
         The model defined in huaweicloud sdk
@@ -63,6 +65,8 @@ class AssetFileInfo:
         :type download_url: str
         :param state: 文件状态枚举: * CREATING：文件上传中 * CREATED：文件已上传（自动审核通过） * FAILED：文件上传失败 * CANCELLED：文件上传已取消 * DELETING：文件删除中 * DELETED：文件已删除 * UPLOADED：文件已上传（尚未审核） * REVIEW：人工审核（文件已上传） * BLOCK：冻结
         :type state: str
+        :param block_reason_code: 冻结原因编号。
+        :type block_reason_code: str
         :param reason: 审核失败原因
         :type reason: str
         :param file_extra_meta: 
@@ -79,6 +83,7 @@ class AssetFileInfo:
         self._asset_file_category = None
         self._download_url = None
         self._state = None
+        self._block_reason_code = None
         self._reason = None
         self._file_extra_meta = None
         self.discriminator = None
@@ -99,6 +104,8 @@ class AssetFileInfo:
             self.download_url = download_url
         if state is not None:
             self.state = state
+        if block_reason_code is not None:
+            self.block_reason_code = block_reason_code
         if reason is not None:
             self.reason = reason
         if file_extra_meta is not None:
@@ -279,6 +286,28 @@ class AssetFileInfo:
         :type state: str
         """
         self._state = state
+
+    @property
+    def block_reason_code(self):
+        r"""Gets the block_reason_code of this AssetFileInfo.
+
+        冻结原因编号。
+
+        :return: The block_reason_code of this AssetFileInfo.
+        :rtype: str
+        """
+        return self._block_reason_code
+
+    @block_reason_code.setter
+    def block_reason_code(self, block_reason_code):
+        r"""Sets the block_reason_code of this AssetFileInfo.
+
+        冻结原因编号。
+
+        :param block_reason_code: The block_reason_code of this AssetFileInfo.
+        :type block_reason_code: str
+        """
+        self._block_reason_code = block_reason_code
 
     @property
     def reason(self):

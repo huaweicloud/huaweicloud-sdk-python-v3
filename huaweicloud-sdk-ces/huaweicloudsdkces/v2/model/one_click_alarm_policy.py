@@ -59,11 +59,11 @@ class OneClickAlarmPolicy:
         :type metric_name: str
         :param period: 
         :type period: :class:`huaweicloudsdkces.v2.Period`
-        :param filter: 聚合方式, 支持的值为(average|min|max|sum)
+        :param filter: 聚合方式。average： 平均值，variance：方差，min：最小值，max：最大值，sum：求和，tp99：99百分位数，tp95：95百分位数，tp90：90百分位数
         :type filter: str
         :param comparison_operator: 阈值符号, 支持的值为(&gt;|&lt;|&gt;&#x3D;|&lt;&#x3D;|&#x3D;|!&#x3D;|cycle_decrease|cycle_increase|cycle_wave);cycle_decrease为环比下降,cycle_increase为环比上升,cycle_wave为环比波动； 指标告警可以使用的阈值符号有&gt;、&gt;&#x3D;、&lt;、&lt;&#x3D;、&#x3D;、!&#x3D;、cycle_decrease、cycle_increase、cycle_wave； 事件告警可以使用的阈值符号为&gt;、&gt;&#x3D;、&lt;、&lt;&#x3D;、&#x3D;、!&#x3D;； 
         :type comparison_operator: str
-        :param value: 告警阈值。单一阈值时value和alarm_level配对使用，当hierarchical_value和value同时使用时以hierarchical_value为准。取值范围[0, Number.MAX_VALUE]，Number.MAX_VALUE值为1.7976931348623157e+108。具体阈值取值请参见附录中各服务监控指标中取值范围，如支持监控的服务列表中ECS的CPU使用率cpu_util取值范围可配置80。 [具体阈值取值请参见附录中各服务监控指标中取值范围，如[支持监控的服务列表](ces_03_0059.xml)中ECS的CPU使用率cpu_util取值范围可配置80。](tag: dt,g42,dt_test,hk_g42,hk_sbc,hws,hws_hk,ocb,sbc,tm) 
+        :param value: 告警阈值。单一阈值时value和alarm_level配对使用，当hierarchical_value和value同时使用时以hierarchical_value为准。 具体阈值取值请参见附录中各服务监控指标中取值范围，如支持监控的服务列表中ECS的CPU使用率cpu_util取值范围可配置80。 [具体阈值取值请参见附录中各服务监控指标中取值范围，如[支持监控的服务列表](ces_03_0059.xml)中ECS的CPU使用率cpu_util取值范围可配置80。] 
         :type value: float
         :param hierarchical_value: 
         :type hierarchical_value: :class:`huaweicloudsdkces.v2.HierarchicalValue`
@@ -75,7 +75,7 @@ class OneClickAlarmPolicy:
         :type suppress_duration: :class:`huaweicloudsdkces.v2.SuppressDuration`
         :param level: 告警级别, 1为紧急，2为重要，3为次要，4为提示。默认值为2。
         :type level: int
-        :param enabled: 是否启用告警策略。true:开启，false:关闭。
+        :param enabled: 是否启用一键告警。true:开启，false：关闭。
         :type enabled: bool
         :param selected_unit: 用户在页面中选择的指标单位， 用于后续指标数据回显和计算
         :type selected_unit: str
@@ -183,7 +183,7 @@ class OneClickAlarmPolicy:
     def filter(self):
         r"""Gets the filter of this OneClickAlarmPolicy.
 
-        聚合方式, 支持的值为(average|min|max|sum)
+        聚合方式。average： 平均值，variance：方差，min：最小值，max：最大值，sum：求和，tp99：99百分位数，tp95：95百分位数，tp90：90百分位数
 
         :return: The filter of this OneClickAlarmPolicy.
         :rtype: str
@@ -194,7 +194,7 @@ class OneClickAlarmPolicy:
     def filter(self, filter):
         r"""Sets the filter of this OneClickAlarmPolicy.
 
-        聚合方式, 支持的值为(average|min|max|sum)
+        聚合方式。average： 平均值，variance：方差，min：最小值，max：最大值，sum：求和，tp99：99百分位数，tp95：95百分位数，tp90：90百分位数
 
         :param filter: The filter of this OneClickAlarmPolicy.
         :type filter: str
@@ -227,7 +227,7 @@ class OneClickAlarmPolicy:
     def value(self):
         r"""Gets the value of this OneClickAlarmPolicy.
 
-        告警阈值。单一阈值时value和alarm_level配对使用，当hierarchical_value和value同时使用时以hierarchical_value为准。取值范围[0, Number.MAX_VALUE]，Number.MAX_VALUE值为1.7976931348623157e+108。具体阈值取值请参见附录中各服务监控指标中取值范围，如支持监控的服务列表中ECS的CPU使用率cpu_util取值范围可配置80。 [具体阈值取值请参见附录中各服务监控指标中取值范围，如[支持监控的服务列表](ces_03_0059.xml)中ECS的CPU使用率cpu_util取值范围可配置80。](tag: dt,g42,dt_test,hk_g42,hk_sbc,hws,hws_hk,ocb,sbc,tm) 
+        告警阈值。单一阈值时value和alarm_level配对使用，当hierarchical_value和value同时使用时以hierarchical_value为准。 具体阈值取值请参见附录中各服务监控指标中取值范围，如支持监控的服务列表中ECS的CPU使用率cpu_util取值范围可配置80。 [具体阈值取值请参见附录中各服务监控指标中取值范围，如[支持监控的服务列表](ces_03_0059.xml)中ECS的CPU使用率cpu_util取值范围可配置80。] 
 
         :return: The value of this OneClickAlarmPolicy.
         :rtype: float
@@ -238,7 +238,7 @@ class OneClickAlarmPolicy:
     def value(self, value):
         r"""Sets the value of this OneClickAlarmPolicy.
 
-        告警阈值。单一阈值时value和alarm_level配对使用，当hierarchical_value和value同时使用时以hierarchical_value为准。取值范围[0, Number.MAX_VALUE]，Number.MAX_VALUE值为1.7976931348623157e+108。具体阈值取值请参见附录中各服务监控指标中取值范围，如支持监控的服务列表中ECS的CPU使用率cpu_util取值范围可配置80。 [具体阈值取值请参见附录中各服务监控指标中取值范围，如[支持监控的服务列表](ces_03_0059.xml)中ECS的CPU使用率cpu_util取值范围可配置80。](tag: dt,g42,dt_test,hk_g42,hk_sbc,hws,hws_hk,ocb,sbc,tm) 
+        告警阈值。单一阈值时value和alarm_level配对使用，当hierarchical_value和value同时使用时以hierarchical_value为准。 具体阈值取值请参见附录中各服务监控指标中取值范围，如支持监控的服务列表中ECS的CPU使用率cpu_util取值范围可配置80。 [具体阈值取值请参见附录中各服务监控指标中取值范围，如[支持监控的服务列表](ces_03_0059.xml)中ECS的CPU使用率cpu_util取值范围可配置80。] 
 
         :param value: The value of this OneClickAlarmPolicy.
         :type value: float
@@ -351,7 +351,7 @@ class OneClickAlarmPolicy:
     def enabled(self):
         r"""Gets the enabled of this OneClickAlarmPolicy.
 
-        是否启用告警策略。true:开启，false:关闭。
+        是否启用一键告警。true:开启，false：关闭。
 
         :return: The enabled of this OneClickAlarmPolicy.
         :rtype: bool
@@ -362,7 +362,7 @@ class OneClickAlarmPolicy:
     def enabled(self, enabled):
         r"""Sets the enabled of this OneClickAlarmPolicy.
 
-        是否启用告警策略。true:开启，false:关闭。
+        是否启用一键告警。true:开启，false：关闭。
 
         :param enabled: The enabled of this OneClickAlarmPolicy.
         :type enabled: bool

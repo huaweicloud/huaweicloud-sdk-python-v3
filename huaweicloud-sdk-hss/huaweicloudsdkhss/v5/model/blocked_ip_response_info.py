@@ -43,9 +43,9 @@ class BlockedIpResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param host_id: 服务器ID
+        :param host_id: **参数解释**: 服务器ID **取值范围**: 字符长度1-64位 
         :type host_id: str
-        :param host_name: 服务器名称
+        :param host_name: **参数解释**: 服务器名称 **取值范围**: 字符长度1-256位 
         :type host_name: str
         :param src_ip: 攻击源IP
         :type src_ip: str
@@ -86,7 +86,7 @@ class BlockedIpResponseInfo:
     def host_id(self):
         r"""Gets the host_id of this BlockedIpResponseInfo.
 
-        服务器ID
+        **参数解释**: 服务器ID **取值范围**: 字符长度1-64位 
 
         :return: The host_id of this BlockedIpResponseInfo.
         :rtype: str
@@ -97,7 +97,7 @@ class BlockedIpResponseInfo:
     def host_id(self, host_id):
         r"""Sets the host_id of this BlockedIpResponseInfo.
 
-        服务器ID
+        **参数解释**: 服务器ID **取值范围**: 字符长度1-64位 
 
         :param host_id: The host_id of this BlockedIpResponseInfo.
         :type host_id: str
@@ -108,7 +108,7 @@ class BlockedIpResponseInfo:
     def host_name(self):
         r"""Gets the host_name of this BlockedIpResponseInfo.
 
-        服务器名称
+        **参数解释**: 服务器名称 **取值范围**: 字符长度1-256位 
 
         :return: The host_name of this BlockedIpResponseInfo.
         :rtype: str
@@ -119,7 +119,7 @@ class BlockedIpResponseInfo:
     def host_name(self, host_name):
         r"""Sets the host_name of this BlockedIpResponseInfo.
 
-        服务器名称
+        **参数解释**: 服务器名称 **取值范围**: 字符长度1-256位 
 
         :param host_name: The host_name of this BlockedIpResponseInfo.
         :type host_name: str

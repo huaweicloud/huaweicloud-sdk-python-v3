@@ -32,9 +32,9 @@ class ListPolicyGroupResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total_num: 总数
+        :param total_num: **参数解释**: 总数 **取值范围**: 最小值0，最大值2147483647 
         :type total_num: int
-        :param data_list: 策略组列表
+        :param data_list: **参数解释**： 策略组列表 **取值范围**： 不涉及 
         :type data_list: list[:class:`huaweicloudsdkhss.v5.PolicyGroupResponseInfo`]
         """
         
@@ -53,7 +53,7 @@ class ListPolicyGroupResponse(SdkResponse):
     def total_num(self):
         r"""Gets the total_num of this ListPolicyGroupResponse.
 
-        总数
+        **参数解释**: 总数 **取值范围**: 最小值0，最大值2147483647 
 
         :return: The total_num of this ListPolicyGroupResponse.
         :rtype: int
@@ -64,7 +64,7 @@ class ListPolicyGroupResponse(SdkResponse):
     def total_num(self, total_num):
         r"""Sets the total_num of this ListPolicyGroupResponse.
 
-        总数
+        **参数解释**: 总数 **取值范围**: 最小值0，最大值2147483647 
 
         :param total_num: The total_num of this ListPolicyGroupResponse.
         :type total_num: int
@@ -75,7 +75,7 @@ class ListPolicyGroupResponse(SdkResponse):
     def data_list(self):
         r"""Gets the data_list of this ListPolicyGroupResponse.
 
-        策略组列表
+        **参数解释**： 策略组列表 **取值范围**： 不涉及 
 
         :return: The data_list of this ListPolicyGroupResponse.
         :rtype: list[:class:`huaweicloudsdkhss.v5.PolicyGroupResponseInfo`]
@@ -86,7 +86,7 @@ class ListPolicyGroupResponse(SdkResponse):
     def data_list(self, data_list):
         r"""Sets the data_list of this ListPolicyGroupResponse.
 
-        策略组列表
+        **参数解释**： 策略组列表 **取值范围**： 不涉及 
 
         :param data_list: The data_list of this ListPolicyGroupResponse.
         :type data_list: list[:class:`huaweicloudsdkhss.v5.PolicyGroupResponseInfo`]

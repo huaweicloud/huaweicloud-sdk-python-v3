@@ -2104,8 +2104,6 @@ class MetaStudioClient(Client):
             query_params.append(('supported_service', local_var_params['supported_service']))
         if 'app_user_id' in local_var_params:
             query_params.append(('app_user_id', local_var_params['app_user_id']))
-        if 'project_group_id' in local_var_params:
-            query_params.append(('project_group_id', local_var_params['project_group_id']))
 
         header_params = {}
         if 'x_app_user_id' in local_var_params:
@@ -11299,6 +11297,8 @@ class MetaStudioClient(Client):
             query_params.append(('sort_key', local_var_params['sort_key']))
         if 'sort_dir' in local_var_params:
             query_params.append(('sort_dir', local_var_params['sort_dir']))
+        if 'is_ondemand_resource' in local_var_params:
+            query_params.append(('is_ondemand_resource', local_var_params['is_ondemand_resource']))
 
         header_params = {}
         if 'x_app_user_id' in local_var_params:
@@ -11367,6 +11367,8 @@ class MetaStudioClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
 
         form_params = {}
 
@@ -12366,6 +12368,75 @@ class MetaStudioClient(Client):
 
         return http_info
 
+    def create_ttsc_vocabulary_groups(self, request):
+        r"""设置TTS租户级词表分组配置
+
+        该接口用于设置TTS租户级词表分组配置。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateTtscVocabularyGroups
+        :type request: :class:`huaweicloudsdkmetastudio.v1.CreateTtscVocabularyGroupsRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.CreateTtscVocabularyGroupsResponse`
+        """
+        http_info = self._create_ttsc_vocabulary_groups_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_ttsc_vocabulary_groups_invoker(self, request):
+        http_info = self._create_ttsc_vocabulary_groups_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_ttsc_vocabulary_groups_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/ttsc/vocabulary-groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateTtscVocabularyGroupsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_request_id' in local_var_params:
+            header_params['X-Request-Id'] = local_var_params['x_request_id']
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_ttsc_vocabulary_configs(self, request):
         r"""删除TTS租户级自定义读法配置
 
@@ -12439,6 +12510,79 @@ class MetaStudioClient(Client):
 
         return http_info
 
+    def delete_ttsc_vocabulary_groups(self, request):
+        r"""删除TTS租户级词表分组
+
+        该接口用于删除TTS租户级词表分组配置。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteTtscVocabularyGroups
+        :type request: :class:`huaweicloudsdkmetastudio.v1.DeleteTtscVocabularyGroupsRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.DeleteTtscVocabularyGroupsResponse`
+        """
+        http_info = self._delete_ttsc_vocabulary_groups_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_ttsc_vocabulary_groups_invoker(self, request):
+        http_info = self._delete_ttsc_vocabulary_groups_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_ttsc_vocabulary_groups_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/ttsc/vocabulary-groups/{group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTtscVocabularyGroupsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'x_request_id' in local_var_params:
+            header_params['X-Request-Id'] = local_var_params['x_request_id']
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_ttsc_vocabulary_configs(self, request):
         r"""获取TTS租户级自定义读法配置
 
@@ -12481,6 +12625,10 @@ class MetaStudioClient(Client):
             query_params.append(('tts_service_name', local_var_params['tts_service_name']))
         if 'is_vocabulary_config_enable' in local_var_params:
             query_params.append(('is_vocabulary_config_enable', local_var_params['is_vocabulary_config_enable']))
+        if 'group_id' in local_var_params:
+            query_params.append(('group_id', local_var_params['group_id']))
+        if 'asset_id' in local_var_params:
+            query_params.append(('asset_id', local_var_params['asset_id']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
         if 'offset' in local_var_params:
@@ -12491,6 +12639,73 @@ class MetaStudioClient(Client):
             query_params.append(('end_time', local_var_params['end_time']))
         if 'search_key' in local_var_params:
             query_params.append(('search_key', local_var_params['search_key']))
+
+        header_params = {}
+        if 'x_request_id' in local_var_params:
+            header_params['X-Request-Id'] = local_var_params['x_request_id']
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_ttsc_vocabulary_groups(self, request):
+        r"""获取TTS租户级词表分组列表
+
+        该接口用于获取TTS租户级词表分组列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListTtscVocabularyGroups
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ListTtscVocabularyGroupsRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ListTtscVocabularyGroupsResponse`
+        """
+        http_info = self._list_ttsc_vocabulary_groups_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_ttsc_vocabulary_groups_invoker(self, request):
+        http_info = self._list_ttsc_vocabulary_groups_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_ttsc_vocabulary_groups_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/ttsc/vocabulary-groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTtscVocabularyGroupsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
 
         header_params = {}
         if 'x_request_id' in local_var_params:
@@ -12558,6 +12773,77 @@ class MetaStudioClient(Client):
         path_params = {}
         if 'vocabulary_id' in local_var_params:
             path_params['vocabulary_id'] = local_var_params['vocabulary_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_request_id' in local_var_params:
+            header_params['X-Request-Id'] = local_var_params['x_request_id']
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def set_ttsc_group_assets(self, request):
+        r"""设置TTS租户级词表分组的资产列表
+
+        该接口用于设置TTS租户级词表分组的资产列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for SetTtscGroupAssets
+        :type request: :class:`huaweicloudsdkmetastudio.v1.SetTtscGroupAssetsRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.SetTtscGroupAssetsResponse`
+        """
+        http_info = self._set_ttsc_group_assets_http_info(request)
+        return self._call_api(**http_info)
+
+    def set_ttsc_group_assets_invoker(self, request):
+        http_info = self._set_ttsc_group_assets_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _set_ttsc_group_assets_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/ttsc/group-assets/{group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetTtscGroupAssetsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
 
         query_params = []
 
@@ -12781,6 +13067,77 @@ class MetaStudioClient(Client):
         form_params = {}
 
         body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_ttsc_vocabulary_groups(self, request):
+        r"""TTS租户级词表分组重命名
+
+        该接口用于对TTS租户级词表分组重命名。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateTtscVocabularyGroups
+        :type request: :class:`huaweicloudsdkmetastudio.v1.UpdateTtscVocabularyGroupsRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.UpdateTtscVocabularyGroupsResponse`
+        """
+        http_info = self._update_ttsc_vocabulary_groups_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_ttsc_vocabulary_groups_invoker(self, request):
+        http_info = self._update_ttsc_vocabulary_groups_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_ttsc_vocabulary_groups_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/ttsc/vocabulary-groups/{group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateTtscVocabularyGroupsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_request_id' in local_var_params:
+            header_params['X-Request-Id'] = local_var_params['x_request_id']
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 

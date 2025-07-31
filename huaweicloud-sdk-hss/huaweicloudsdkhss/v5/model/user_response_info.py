@@ -55,33 +55,33 @@ class UserResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param agent_id: Agent ID
+        :param agent_id: **参数解释**: Agent ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
         :type agent_id: str
-        :param host_id: 主机ID
+        :param host_id: **参数解释**: 服务器ID **取值范围**: 字符长度1-64位 
         :type host_id: str
-        :param host_name: 服务器名称
+        :param host_name: **参数解释**: 服务器名称 **取值范围**: 字符长度1-256位 
         :type host_name: str
-        :param host_ip: 服务器ip
+        :param host_ip: **参数解释**: 主机IP **取值范围**: 字符长度1-128位 
         :type host_ip: str
         :param user_name: 用户名
         :type user_name: str
-        :param login_permission: 是否有登录权限
+        :param login_permission: **参数解释**: 是否允许登录 **约束限制**: 不涉及 **取值范围**: - true：是 - false：否  **默认取值**: 不涉及 
         :type login_permission: bool
-        :param root_permission: 是否有root权限
+        :param root_permission: **参数解释**： 管理员权限 **取值范围**： - true：是 - false：否 
         :type root_permission: bool
-        :param user_group_name: 用户组
+        :param user_group_name: **参数解释**： 用户组 **取值范围**： 字符长度1-128位 
         :type user_group_name: str
-        :param user_home_dir: 用户目录
+        :param user_home_dir: **参数解释**： 用户目录 **取值范围**： 字符长度1-256位 
         :type user_home_dir: str
-        :param shell: 用户启动shell
+        :param shell: **参数解释**: 用户启动shell **取值范围**: 字符长度1-128位 
         :type shell: str
-        :param recent_scan_time: 最近扫描时间
+        :param recent_scan_time: **参数解释**: 最近扫描时间 **取值范围**: 最小值0，最大值9223372036854775807 
         :type recent_scan_time: int
-        :param first_scan_time: 首次扫描时间
+        :param first_scan_time: **参数解释**: 首次扫描时间 **取值范围**: 最小值0，最大值9223372036854775807 
         :type first_scan_time: int
-        :param container_id: 容器id
+        :param container_id: **参数解释**: 容器ID **取值范围**: 字符长度1-128位 
         :type container_id: str
-        :param container_name: 容器名称
+        :param container_name: **参数解释**： 容器实例名称 **取值范围**： 字符长度1-256位 
         :type container_name: str
         """
         
@@ -136,7 +136,7 @@ class UserResponseInfo:
     def agent_id(self):
         r"""Gets the agent_id of this UserResponseInfo.
 
-        Agent ID
+        **参数解释**: Agent ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :return: The agent_id of this UserResponseInfo.
         :rtype: str
@@ -147,7 +147,7 @@ class UserResponseInfo:
     def agent_id(self, agent_id):
         r"""Sets the agent_id of this UserResponseInfo.
 
-        Agent ID
+        **参数解释**: Agent ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :param agent_id: The agent_id of this UserResponseInfo.
         :type agent_id: str
@@ -158,7 +158,7 @@ class UserResponseInfo:
     def host_id(self):
         r"""Gets the host_id of this UserResponseInfo.
 
-        主机ID
+        **参数解释**: 服务器ID **取值范围**: 字符长度1-64位 
 
         :return: The host_id of this UserResponseInfo.
         :rtype: str
@@ -169,7 +169,7 @@ class UserResponseInfo:
     def host_id(self, host_id):
         r"""Sets the host_id of this UserResponseInfo.
 
-        主机ID
+        **参数解释**: 服务器ID **取值范围**: 字符长度1-64位 
 
         :param host_id: The host_id of this UserResponseInfo.
         :type host_id: str
@@ -180,7 +180,7 @@ class UserResponseInfo:
     def host_name(self):
         r"""Gets the host_name of this UserResponseInfo.
 
-        服务器名称
+        **参数解释**: 服务器名称 **取值范围**: 字符长度1-256位 
 
         :return: The host_name of this UserResponseInfo.
         :rtype: str
@@ -191,7 +191,7 @@ class UserResponseInfo:
     def host_name(self, host_name):
         r"""Sets the host_name of this UserResponseInfo.
 
-        服务器名称
+        **参数解释**: 服务器名称 **取值范围**: 字符长度1-256位 
 
         :param host_name: The host_name of this UserResponseInfo.
         :type host_name: str
@@ -202,7 +202,7 @@ class UserResponseInfo:
     def host_ip(self):
         r"""Gets the host_ip of this UserResponseInfo.
 
-        服务器ip
+        **参数解释**: 主机IP **取值范围**: 字符长度1-128位 
 
         :return: The host_ip of this UserResponseInfo.
         :rtype: str
@@ -213,7 +213,7 @@ class UserResponseInfo:
     def host_ip(self, host_ip):
         r"""Sets the host_ip of this UserResponseInfo.
 
-        服务器ip
+        **参数解释**: 主机IP **取值范围**: 字符长度1-128位 
 
         :param host_ip: The host_ip of this UserResponseInfo.
         :type host_ip: str
@@ -246,7 +246,7 @@ class UserResponseInfo:
     def login_permission(self):
         r"""Gets the login_permission of this UserResponseInfo.
 
-        是否有登录权限
+        **参数解释**: 是否允许登录 **约束限制**: 不涉及 **取值范围**: - true：是 - false：否  **默认取值**: 不涉及 
 
         :return: The login_permission of this UserResponseInfo.
         :rtype: bool
@@ -257,7 +257,7 @@ class UserResponseInfo:
     def login_permission(self, login_permission):
         r"""Sets the login_permission of this UserResponseInfo.
 
-        是否有登录权限
+        **参数解释**: 是否允许登录 **约束限制**: 不涉及 **取值范围**: - true：是 - false：否  **默认取值**: 不涉及 
 
         :param login_permission: The login_permission of this UserResponseInfo.
         :type login_permission: bool
@@ -268,7 +268,7 @@ class UserResponseInfo:
     def root_permission(self):
         r"""Gets the root_permission of this UserResponseInfo.
 
-        是否有root权限
+        **参数解释**： 管理员权限 **取值范围**： - true：是 - false：否 
 
         :return: The root_permission of this UserResponseInfo.
         :rtype: bool
@@ -279,7 +279,7 @@ class UserResponseInfo:
     def root_permission(self, root_permission):
         r"""Sets the root_permission of this UserResponseInfo.
 
-        是否有root权限
+        **参数解释**： 管理员权限 **取值范围**： - true：是 - false：否 
 
         :param root_permission: The root_permission of this UserResponseInfo.
         :type root_permission: bool
@@ -290,7 +290,7 @@ class UserResponseInfo:
     def user_group_name(self):
         r"""Gets the user_group_name of this UserResponseInfo.
 
-        用户组
+        **参数解释**： 用户组 **取值范围**： 字符长度1-128位 
 
         :return: The user_group_name of this UserResponseInfo.
         :rtype: str
@@ -301,7 +301,7 @@ class UserResponseInfo:
     def user_group_name(self, user_group_name):
         r"""Sets the user_group_name of this UserResponseInfo.
 
-        用户组
+        **参数解释**： 用户组 **取值范围**： 字符长度1-128位 
 
         :param user_group_name: The user_group_name of this UserResponseInfo.
         :type user_group_name: str
@@ -312,7 +312,7 @@ class UserResponseInfo:
     def user_home_dir(self):
         r"""Gets the user_home_dir of this UserResponseInfo.
 
-        用户目录
+        **参数解释**： 用户目录 **取值范围**： 字符长度1-256位 
 
         :return: The user_home_dir of this UserResponseInfo.
         :rtype: str
@@ -323,7 +323,7 @@ class UserResponseInfo:
     def user_home_dir(self, user_home_dir):
         r"""Sets the user_home_dir of this UserResponseInfo.
 
-        用户目录
+        **参数解释**： 用户目录 **取值范围**： 字符长度1-256位 
 
         :param user_home_dir: The user_home_dir of this UserResponseInfo.
         :type user_home_dir: str
@@ -334,7 +334,7 @@ class UserResponseInfo:
     def shell(self):
         r"""Gets the shell of this UserResponseInfo.
 
-        用户启动shell
+        **参数解释**: 用户启动shell **取值范围**: 字符长度1-128位 
 
         :return: The shell of this UserResponseInfo.
         :rtype: str
@@ -345,7 +345,7 @@ class UserResponseInfo:
     def shell(self, shell):
         r"""Sets the shell of this UserResponseInfo.
 
-        用户启动shell
+        **参数解释**: 用户启动shell **取值范围**: 字符长度1-128位 
 
         :param shell: The shell of this UserResponseInfo.
         :type shell: str
@@ -356,7 +356,7 @@ class UserResponseInfo:
     def recent_scan_time(self):
         r"""Gets the recent_scan_time of this UserResponseInfo.
 
-        最近扫描时间
+        **参数解释**: 最近扫描时间 **取值范围**: 最小值0，最大值9223372036854775807 
 
         :return: The recent_scan_time of this UserResponseInfo.
         :rtype: int
@@ -367,7 +367,7 @@ class UserResponseInfo:
     def recent_scan_time(self, recent_scan_time):
         r"""Sets the recent_scan_time of this UserResponseInfo.
 
-        最近扫描时间
+        **参数解释**: 最近扫描时间 **取值范围**: 最小值0，最大值9223372036854775807 
 
         :param recent_scan_time: The recent_scan_time of this UserResponseInfo.
         :type recent_scan_time: int
@@ -378,7 +378,7 @@ class UserResponseInfo:
     def first_scan_time(self):
         r"""Gets the first_scan_time of this UserResponseInfo.
 
-        首次扫描时间
+        **参数解释**: 首次扫描时间 **取值范围**: 最小值0，最大值9223372036854775807 
 
         :return: The first_scan_time of this UserResponseInfo.
         :rtype: int
@@ -389,7 +389,7 @@ class UserResponseInfo:
     def first_scan_time(self, first_scan_time):
         r"""Sets the first_scan_time of this UserResponseInfo.
 
-        首次扫描时间
+        **参数解释**: 首次扫描时间 **取值范围**: 最小值0，最大值9223372036854775807 
 
         :param first_scan_time: The first_scan_time of this UserResponseInfo.
         :type first_scan_time: int
@@ -400,7 +400,7 @@ class UserResponseInfo:
     def container_id(self):
         r"""Gets the container_id of this UserResponseInfo.
 
-        容器id
+        **参数解释**: 容器ID **取值范围**: 字符长度1-128位 
 
         :return: The container_id of this UserResponseInfo.
         :rtype: str
@@ -411,7 +411,7 @@ class UserResponseInfo:
     def container_id(self, container_id):
         r"""Sets the container_id of this UserResponseInfo.
 
-        容器id
+        **参数解释**: 容器ID **取值范围**: 字符长度1-128位 
 
         :param container_id: The container_id of this UserResponseInfo.
         :type container_id: str
@@ -422,7 +422,7 @@ class UserResponseInfo:
     def container_name(self):
         r"""Gets the container_name of this UserResponseInfo.
 
-        容器名称
+        **参数解释**： 容器实例名称 **取值范围**： 字符长度1-256位 
 
         :return: The container_name of this UserResponseInfo.
         :rtype: str
@@ -433,7 +433,7 @@ class UserResponseInfo:
     def container_name(self, container_name):
         r"""Sets the container_name of this UserResponseInfo.
 
-        容器名称
+        **参数解释**： 容器实例名称 **取值范围**： 字符长度1-256位 
 
         :param container_name: The container_name of this UserResponseInfo.
         :type container_name: str

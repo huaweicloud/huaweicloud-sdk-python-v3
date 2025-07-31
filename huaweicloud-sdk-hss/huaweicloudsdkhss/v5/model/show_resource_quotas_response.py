@@ -30,7 +30,7 @@ class ShowResourceQuotasResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param data_list: 配额统计列表
+        :param data_list: **参数解释**： 配额统计列表 **取值范围**： 不涉及 
         :type data_list: list[:class:`huaweicloudsdkhss.v5.ResourceQuotasInfo`]
         """
         
@@ -46,7 +46,7 @@ class ShowResourceQuotasResponse(SdkResponse):
     def data_list(self):
         r"""Gets the data_list of this ShowResourceQuotasResponse.
 
-        配额统计列表
+        **参数解释**： 配额统计列表 **取值范围**： 不涉及 
 
         :return: The data_list of this ShowResourceQuotasResponse.
         :rtype: list[:class:`huaweicloudsdkhss.v5.ResourceQuotasInfo`]
@@ -57,7 +57,7 @@ class ShowResourceQuotasResponse(SdkResponse):
     def data_list(self, data_list):
         r"""Sets the data_list of this ShowResourceQuotasResponse.
 
-        配额统计列表
+        **参数解释**： 配额统计列表 **取值范围**： 不涉及 
 
         :param data_list: The data_list of this ShowResourceQuotasResponse.
         :type data_list: list[:class:`huaweicloudsdkhss.v5.ResourceQuotasInfo`]

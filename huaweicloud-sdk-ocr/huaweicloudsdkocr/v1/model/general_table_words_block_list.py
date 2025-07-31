@@ -20,7 +20,7 @@ class GeneralTableWordsBlockList:
         'words': 'str',
         'confidence': 'float',
         'location': 'list[list[int]]',
-        'words_list': 'list[WordsListIem]',
+        'words_list': 'list[WordsListItem]',
         'rows': 'list[int]',
         'columns': 'list[int]',
         'cell_location': 'list[list[int]]'
@@ -48,7 +48,7 @@ class GeneralTableWordsBlockList:
         :param location: 文字块位置信息，列表形式，分别表示文字块4个顶点的x, y坐标;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
         :type location: list[list[int]]
         :param words_list: 单元格内文字段列表。输出顺序从左到右，从上到下。仅当入参\&quot;return_text_location\&quot;为true时存在。 
-        :type words_list: list[:class:`huaweicloudsdkocr.v1.WordsListIem`]
+        :type words_list: list[:class:`huaweicloudsdkocr.v1.WordsListItem`]
         :param rows: 文字块占用的行信息，编号从0开始，列表形式，数据类型为Integer。仅在表格区域内有效，即type字段为\&quot;table\&quot;时该字段有效。 
         :type rows: list[int]
         :param columns: 文字块占用的列信息，编号从0开始，列表形式，数据类型为Integer。仅在表格区域内有效，即type字段为\&quot;table\&quot;时该字段有效。 
@@ -156,7 +156,7 @@ class GeneralTableWordsBlockList:
         单元格内文字段列表。输出顺序从左到右，从上到下。仅当入参\"return_text_location\"为true时存在。 
 
         :return: The words_list of this GeneralTableWordsBlockList.
-        :rtype: list[:class:`huaweicloudsdkocr.v1.WordsListIem`]
+        :rtype: list[:class:`huaweicloudsdkocr.v1.WordsListItem`]
         """
         return self._words_list
 
@@ -167,7 +167,7 @@ class GeneralTableWordsBlockList:
         单元格内文字段列表。输出顺序从左到右，从上到下。仅当入参\"return_text_location\"为true时存在。 
 
         :param words_list: The words_list of this GeneralTableWordsBlockList.
-        :type words_list: list[:class:`huaweicloudsdkocr.v1.WordsListIem`]
+        :type words_list: list[:class:`huaweicloudsdkocr.v1.WordsListItem`]
         """
         self._words_list = words_list
 

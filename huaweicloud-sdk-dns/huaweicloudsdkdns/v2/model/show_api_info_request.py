@@ -29,7 +29,7 @@ class ShowApiInfoRequest:
 
         The model defined in huaweicloud sdk
 
-        :param version: 待查询版本号。以v开头，如v2。
+        :param version: **参数解释：** 待查询版本号。 **约束限制：** 不涉及。 **取值范围：** v2。 **默认取值：** 不涉及。
         :type version: str
         """
         
@@ -44,7 +44,7 @@ class ShowApiInfoRequest:
     def version(self):
         r"""Gets the version of this ShowApiInfoRequest.
 
-        待查询版本号。以v开头，如v2。
+        **参数解释：** 待查询版本号。 **约束限制：** 不涉及。 **取值范围：** v2。 **默认取值：** 不涉及。
 
         :return: The version of this ShowApiInfoRequest.
         :rtype: str
@@ -55,7 +55,7 @@ class ShowApiInfoRequest:
     def version(self, version):
         r"""Sets the version of this ShowApiInfoRequest.
 
-        待查询版本号。以v开头，如v2。
+        **参数解释：** 待查询版本号。 **约束限制：** 不涉及。 **取值范围：** v2。 **默认取值：** 不涉及。
 
         :param version: The version of this ShowApiInfoRequest.
         :type version: str

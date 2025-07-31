@@ -53,21 +53,21 @@ class BackupVaultInfo:
         :type vault_id: str
         :param vault_name: 存储库名称
         :type vault_name: str
-        :param vault_size: 总容量，单位GB
+        :param vault_size: 存储库总容量，单位GB
         :type vault_size: int
-        :param vault_used: 已使用容量，单位MB
+        :param vault_used: 已使用容量，单位MB，指的是已有备份占用的容量，例如绑定了1台主机，已经有两个备份数，两个备份60G,则已使用容量为60G。
         :type vault_used: int
-        :param vault_allocated: 已分配容量，单位GB，指绑定的服务器大小
+        :param vault_allocated: 已分配容量，单位GB，指绑定的服务器大小，例如绑定了1台主机，主机大小40G，则已分配容量为40G。
         :type vault_allocated: int
-        :param vault_charging_mode: 存储库创建模式，按需：post_paid，包周期：pre_paid
+        :param vault_charging_mode: 存储库创建模式：   - 按需：post_paid   - 包周期：pre_paid
         :type vault_charging_mode: str
-        :param vault_status: 存储库状态。   - available ：可用。   - lock ：被锁定。   - frozen：冻结。   - deleting：删除中。   - error：错误。
+        :param vault_status: 存储库状态。   - available：可用。   - lock：被锁定。   - frozen：冻结。   - deleting：删除中。   - error：错误。
         :type vault_status: str
         :param backup_policy_id: 备份策略ID，若为空，则为未绑定状态，若不为空，通过backup_policy_enabled字段判断策略是否启用
         :type backup_policy_id: str
         :param backup_policy_name: 备份策略名称
         :type backup_policy_name: str
-        :param backup_policy_enabled: 策略是否启用
+        :param backup_policy_enabled: 备份策略是否启用
         :type backup_policy_enabled: bool
         :param resources_num: 已绑定服务器（个）
         :type resources_num: int
@@ -159,7 +159,7 @@ class BackupVaultInfo:
     def vault_size(self):
         r"""Gets the vault_size of this BackupVaultInfo.
 
-        总容量，单位GB
+        存储库总容量，单位GB
 
         :return: The vault_size of this BackupVaultInfo.
         :rtype: int
@@ -170,7 +170,7 @@ class BackupVaultInfo:
     def vault_size(self, vault_size):
         r"""Sets the vault_size of this BackupVaultInfo.
 
-        总容量，单位GB
+        存储库总容量，单位GB
 
         :param vault_size: The vault_size of this BackupVaultInfo.
         :type vault_size: int
@@ -181,7 +181,7 @@ class BackupVaultInfo:
     def vault_used(self):
         r"""Gets the vault_used of this BackupVaultInfo.
 
-        已使用容量，单位MB
+        已使用容量，单位MB，指的是已有备份占用的容量，例如绑定了1台主机，已经有两个备份数，两个备份60G,则已使用容量为60G。
 
         :return: The vault_used of this BackupVaultInfo.
         :rtype: int
@@ -192,7 +192,7 @@ class BackupVaultInfo:
     def vault_used(self, vault_used):
         r"""Sets the vault_used of this BackupVaultInfo.
 
-        已使用容量，单位MB
+        已使用容量，单位MB，指的是已有备份占用的容量，例如绑定了1台主机，已经有两个备份数，两个备份60G,则已使用容量为60G。
 
         :param vault_used: The vault_used of this BackupVaultInfo.
         :type vault_used: int
@@ -203,7 +203,7 @@ class BackupVaultInfo:
     def vault_allocated(self):
         r"""Gets the vault_allocated of this BackupVaultInfo.
 
-        已分配容量，单位GB，指绑定的服务器大小
+        已分配容量，单位GB，指绑定的服务器大小，例如绑定了1台主机，主机大小40G，则已分配容量为40G。
 
         :return: The vault_allocated of this BackupVaultInfo.
         :rtype: int
@@ -214,7 +214,7 @@ class BackupVaultInfo:
     def vault_allocated(self, vault_allocated):
         r"""Sets the vault_allocated of this BackupVaultInfo.
 
-        已分配容量，单位GB，指绑定的服务器大小
+        已分配容量，单位GB，指绑定的服务器大小，例如绑定了1台主机，主机大小40G，则已分配容量为40G。
 
         :param vault_allocated: The vault_allocated of this BackupVaultInfo.
         :type vault_allocated: int
@@ -225,7 +225,7 @@ class BackupVaultInfo:
     def vault_charging_mode(self):
         r"""Gets the vault_charging_mode of this BackupVaultInfo.
 
-        存储库创建模式，按需：post_paid，包周期：pre_paid
+        存储库创建模式：   - 按需：post_paid   - 包周期：pre_paid
 
         :return: The vault_charging_mode of this BackupVaultInfo.
         :rtype: str
@@ -236,7 +236,7 @@ class BackupVaultInfo:
     def vault_charging_mode(self, vault_charging_mode):
         r"""Sets the vault_charging_mode of this BackupVaultInfo.
 
-        存储库创建模式，按需：post_paid，包周期：pre_paid
+        存储库创建模式：   - 按需：post_paid   - 包周期：pre_paid
 
         :param vault_charging_mode: The vault_charging_mode of this BackupVaultInfo.
         :type vault_charging_mode: str
@@ -247,7 +247,7 @@ class BackupVaultInfo:
     def vault_status(self):
         r"""Gets the vault_status of this BackupVaultInfo.
 
-        存储库状态。   - available ：可用。   - lock ：被锁定。   - frozen：冻结。   - deleting：删除中。   - error：错误。
+        存储库状态。   - available：可用。   - lock：被锁定。   - frozen：冻结。   - deleting：删除中。   - error：错误。
 
         :return: The vault_status of this BackupVaultInfo.
         :rtype: str
@@ -258,7 +258,7 @@ class BackupVaultInfo:
     def vault_status(self, vault_status):
         r"""Sets the vault_status of this BackupVaultInfo.
 
-        存储库状态。   - available ：可用。   - lock ：被锁定。   - frozen：冻结。   - deleting：删除中。   - error：错误。
+        存储库状态。   - available：可用。   - lock：被锁定。   - frozen：冻结。   - deleting：删除中。   - error：错误。
 
         :param vault_status: The vault_status of this BackupVaultInfo.
         :type vault_status: str
@@ -313,7 +313,7 @@ class BackupVaultInfo:
     def backup_policy_enabled(self):
         r"""Gets the backup_policy_enabled of this BackupVaultInfo.
 
-        策略是否启用
+        备份策略是否启用
 
         :return: The backup_policy_enabled of this BackupVaultInfo.
         :rtype: bool
@@ -324,7 +324,7 @@ class BackupVaultInfo:
     def backup_policy_enabled(self, backup_policy_enabled):
         r"""Sets the backup_policy_enabled of this BackupVaultInfo.
 
-        策略是否启用
+        备份策略是否启用
 
         :param backup_policy_enabled: The backup_policy_enabled of this BackupVaultInfo.
         :type backup_policy_enabled: bool

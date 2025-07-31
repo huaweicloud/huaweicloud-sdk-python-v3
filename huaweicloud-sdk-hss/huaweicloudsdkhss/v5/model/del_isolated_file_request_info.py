@@ -35,7 +35,7 @@ class DelIsolatedFileRequestInfo:
 
         The model defined in huaweicloud sdk
 
-        :param host_id: 服务器ID
+        :param host_id: **参数解释**: 服务器ID **取值范围**: 字符长度1-64位 
         :type host_id: str
         :param file_hash: 文件哈希
         :type file_hash: str
@@ -62,7 +62,7 @@ class DelIsolatedFileRequestInfo:
     def host_id(self):
         r"""Gets the host_id of this DelIsolatedFileRequestInfo.
 
-        服务器ID
+        **参数解释**: 服务器ID **取值范围**: 字符长度1-64位 
 
         :return: The host_id of this DelIsolatedFileRequestInfo.
         :rtype: str
@@ -73,7 +73,7 @@ class DelIsolatedFileRequestInfo:
     def host_id(self, host_id):
         r"""Sets the host_id of this DelIsolatedFileRequestInfo.
 
-        服务器ID
+        **参数解释**: 服务器ID **取值范围**: 字符长度1-64位 
 
         :param host_id: The host_id of this DelIsolatedFileRequestInfo.
         :type host_id: str

@@ -61,9 +61,9 @@ class IsolatedFileResponseInfo:
 
         :param os_type: 操作系统类型，包含如下2种。   - Linux ：Linux。   - Windows ：Windows。
         :type os_type: str
-        :param host_id: 服务器ID
+        :param host_id: **参数解释**: 服务器ID **取值范围**: 字符长度1-64位 
         :type host_id: str
-        :param host_name: 服务器名称
+        :param host_name: **参数解释**: 服务器名称 **取值范围**: 字符长度1-256位 
         :type host_name: str
         :param file_hash: 文件哈希
         :type file_hash: str
@@ -156,7 +156,7 @@ class IsolatedFileResponseInfo:
     def host_id(self):
         r"""Gets the host_id of this IsolatedFileResponseInfo.
 
-        服务器ID
+        **参数解释**: 服务器ID **取值范围**: 字符长度1-64位 
 
         :return: The host_id of this IsolatedFileResponseInfo.
         :rtype: str
@@ -167,7 +167,7 @@ class IsolatedFileResponseInfo:
     def host_id(self, host_id):
         r"""Sets the host_id of this IsolatedFileResponseInfo.
 
-        服务器ID
+        **参数解释**: 服务器ID **取值范围**: 字符长度1-64位 
 
         :param host_id: The host_id of this IsolatedFileResponseInfo.
         :type host_id: str
@@ -178,7 +178,7 @@ class IsolatedFileResponseInfo:
     def host_name(self):
         r"""Gets the host_name of this IsolatedFileResponseInfo.
 
-        服务器名称
+        **参数解释**: 服务器名称 **取值范围**: 字符长度1-256位 
 
         :return: The host_name of this IsolatedFileResponseInfo.
         :rtype: str
@@ -189,7 +189,7 @@ class IsolatedFileResponseInfo:
     def host_name(self, host_name):
         r"""Sets the host_name of this IsolatedFileResponseInfo.
 
-        服务器名称
+        **参数解释**: 服务器名称 **取值范围**: 字符长度1-256位 
 
         :param host_name: The host_name of this IsolatedFileResponseInfo.
         :type host_name: str

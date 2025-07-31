@@ -33,11 +33,11 @@ class AgentDimension:
 
         The model defined in huaweicloud sdk
 
-        :param name: 维度名称，枚举类型，类型有：   mount_point：挂载点，   disk：磁盘，   proc：进程，   gpu：显卡，   raid: RAID控制器
+        :param name: **参数解释**： 维度名称。 **取值范围**： 枚举类型，mount_point:挂载点，disk:磁盘，proc:进程，gpu:显卡，raid:RAID控制器。 
         :type name: str
-        :param value: 维度值，32位字符串，如：2e84018fc8b4484b94e89aae212fe615
+        :param value: **参数解释**： 维度值。 **取值范围**： 字符串长度为32。 
         :type value: str
-        :param origin_value: 实际维度信息，字符串，如：vda。
+        :param origin_value: **参数解释**： 实际维度信息。 **取值范围** 字符串长度在 1 到 1024 之间。 
         :type origin_value: str
         """
         
@@ -59,7 +59,7 @@ class AgentDimension:
     def name(self):
         r"""Gets the name of this AgentDimension.
 
-        维度名称，枚举类型，类型有：   mount_point：挂载点，   disk：磁盘，   proc：进程，   gpu：显卡，   raid: RAID控制器
+        **参数解释**： 维度名称。 **取值范围**： 枚举类型，mount_point:挂载点，disk:磁盘，proc:进程，gpu:显卡，raid:RAID控制器。 
 
         :return: The name of this AgentDimension.
         :rtype: str
@@ -70,7 +70,7 @@ class AgentDimension:
     def name(self, name):
         r"""Sets the name of this AgentDimension.
 
-        维度名称，枚举类型，类型有：   mount_point：挂载点，   disk：磁盘，   proc：进程，   gpu：显卡，   raid: RAID控制器
+        **参数解释**： 维度名称。 **取值范围**： 枚举类型，mount_point:挂载点，disk:磁盘，proc:进程，gpu:显卡，raid:RAID控制器。 
 
         :param name: The name of this AgentDimension.
         :type name: str
@@ -81,7 +81,7 @@ class AgentDimension:
     def value(self):
         r"""Gets the value of this AgentDimension.
 
-        维度值，32位字符串，如：2e84018fc8b4484b94e89aae212fe615
+        **参数解释**： 维度值。 **取值范围**： 字符串长度为32。 
 
         :return: The value of this AgentDimension.
         :rtype: str
@@ -92,7 +92,7 @@ class AgentDimension:
     def value(self, value):
         r"""Sets the value of this AgentDimension.
 
-        维度值，32位字符串，如：2e84018fc8b4484b94e89aae212fe615
+        **参数解释**： 维度值。 **取值范围**： 字符串长度为32。 
 
         :param value: The value of this AgentDimension.
         :type value: str
@@ -103,7 +103,7 @@ class AgentDimension:
     def origin_value(self):
         r"""Gets the origin_value of this AgentDimension.
 
-        实际维度信息，字符串，如：vda。
+        **参数解释**： 实际维度信息。 **取值范围** 字符串长度在 1 到 1024 之间。 
 
         :return: The origin_value of this AgentDimension.
         :rtype: str
@@ -114,7 +114,7 @@ class AgentDimension:
     def origin_value(self, origin_value):
         r"""Sets the origin_value of this AgentDimension.
 
-        实际维度信息，字符串，如：vda。
+        **参数解释**： 实际维度信息。 **取值范围** 字符串长度在 1 到 1024 之间。 
 
         :param origin_value: The origin_value of this AgentDimension.
         :type origin_value: str

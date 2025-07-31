@@ -51,11 +51,11 @@ class ResultResourceResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param host_name: 服务器名称
+        :param host_name: **参数解释**: 服务器名称 **取值范围**: 字符长度1-256位 
         :type host_name: str
-        :param host_id: 服务器ID
+        :param host_id: **参数解释**: 服务器ID **取值范围**: 字符长度1-64位 
         :type host_id: str
-        :param agent_id: Agent ID
+        :param agent_id: **参数解释**: Agent ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
         :type agent_id: str
         :param private_ip: 服务器私有IP
         :type private_ip: str
@@ -122,7 +122,7 @@ class ResultResourceResponseInfo:
     def host_name(self):
         r"""Gets the host_name of this ResultResourceResponseInfo.
 
-        服务器名称
+        **参数解释**: 服务器名称 **取值范围**: 字符长度1-256位 
 
         :return: The host_name of this ResultResourceResponseInfo.
         :rtype: str
@@ -133,7 +133,7 @@ class ResultResourceResponseInfo:
     def host_name(self, host_name):
         r"""Sets the host_name of this ResultResourceResponseInfo.
 
-        服务器名称
+        **参数解释**: 服务器名称 **取值范围**: 字符长度1-256位 
 
         :param host_name: The host_name of this ResultResourceResponseInfo.
         :type host_name: str
@@ -144,7 +144,7 @@ class ResultResourceResponseInfo:
     def host_id(self):
         r"""Gets the host_id of this ResultResourceResponseInfo.
 
-        服务器ID
+        **参数解释**: 服务器ID **取值范围**: 字符长度1-64位 
 
         :return: The host_id of this ResultResourceResponseInfo.
         :rtype: str
@@ -155,7 +155,7 @@ class ResultResourceResponseInfo:
     def host_id(self, host_id):
         r"""Sets the host_id of this ResultResourceResponseInfo.
 
-        服务器ID
+        **参数解释**: 服务器ID **取值范围**: 字符长度1-64位 
 
         :param host_id: The host_id of this ResultResourceResponseInfo.
         :type host_id: str
@@ -166,7 +166,7 @@ class ResultResourceResponseInfo:
     def agent_id(self):
         r"""Gets the agent_id of this ResultResourceResponseInfo.
 
-        Agent ID
+        **参数解释**: Agent ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :return: The agent_id of this ResultResourceResponseInfo.
         :rtype: str
@@ -177,7 +177,7 @@ class ResultResourceResponseInfo:
     def agent_id(self, agent_id):
         r"""Sets the agent_id of this ResultResourceResponseInfo.
 
-        Agent ID
+        **参数解释**: Agent ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :param agent_id: The agent_id of this ResultResourceResponseInfo.
         :type agent_id: str

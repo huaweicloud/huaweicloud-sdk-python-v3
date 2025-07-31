@@ -12,6 +12,10 @@ class JobTag:
     ECOMMERCE = "ECOMMERCE"
     NEWS = "NEWS"
     MARKETING = "MARKETING"
+    LIVE = "LIVE"
+    EDUCATION = "EDUCATION"
+    CUSTOMER = "CUSTOMER"
+    STORYTELLING = "STORYTELLING"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

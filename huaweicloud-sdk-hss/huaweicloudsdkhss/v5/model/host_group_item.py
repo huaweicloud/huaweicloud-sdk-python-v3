@@ -41,19 +41,19 @@ class HostGroupItem:
 
         The model defined in huaweicloud sdk
 
-        :param group_id: 服务器组ID
+        :param group_id: **参数解释**: 服务器组ID **取值范围**: 字符长度0-64位 
         :type group_id: str
-        :param group_name: 服务器组名称
+        :param group_name: **参数解释**: 服务器组名称 **取值范围**: 字符长度0-256位 
         :type group_name: str
-        :param host_num: 影响主机数量
+        :param host_num: **参数解释**: 影响主机数量 **取值范围**: 最小值0，最大值2147483647 
         :type host_num: int
-        :param risk_host_num: 有风险服务器数
+        :param risk_host_num: **参数解释**: 有风险服务器数 **取值范围**: 0到2147483647 
         :type risk_host_num: int
-        :param unprotect_host_num: 未防护服务器数
+        :param unprotect_host_num: **参数解释**: 未防护服务器数 **取值范围**: 0到2147483647 
         :type unprotect_host_num: int
-        :param host_id_list: 主机id列表
+        :param host_id_list: **参数解释**: 主机id列表 **取值范围**: 不涉及 
         :type host_id_list: list[str]
-        :param is_outside: 是否是线下数据中心服务器组
+        :param is_outside: **参数解释**: 是否是线下数据中心服务器组 **取值范围**: true或者false 
         :type is_outside: bool
         """
         
@@ -87,7 +87,7 @@ class HostGroupItem:
     def group_id(self):
         r"""Gets the group_id of this HostGroupItem.
 
-        服务器组ID
+        **参数解释**: 服务器组ID **取值范围**: 字符长度0-64位 
 
         :return: The group_id of this HostGroupItem.
         :rtype: str
@@ -98,7 +98,7 @@ class HostGroupItem:
     def group_id(self, group_id):
         r"""Sets the group_id of this HostGroupItem.
 
-        服务器组ID
+        **参数解释**: 服务器组ID **取值范围**: 字符长度0-64位 
 
         :param group_id: The group_id of this HostGroupItem.
         :type group_id: str
@@ -109,7 +109,7 @@ class HostGroupItem:
     def group_name(self):
         r"""Gets the group_name of this HostGroupItem.
 
-        服务器组名称
+        **参数解释**: 服务器组名称 **取值范围**: 字符长度0-256位 
 
         :return: The group_name of this HostGroupItem.
         :rtype: str
@@ -120,7 +120,7 @@ class HostGroupItem:
     def group_name(self, group_name):
         r"""Sets the group_name of this HostGroupItem.
 
-        服务器组名称
+        **参数解释**: 服务器组名称 **取值范围**: 字符长度0-256位 
 
         :param group_name: The group_name of this HostGroupItem.
         :type group_name: str
@@ -131,7 +131,7 @@ class HostGroupItem:
     def host_num(self):
         r"""Gets the host_num of this HostGroupItem.
 
-        影响主机数量
+        **参数解释**: 影响主机数量 **取值范围**: 最小值0，最大值2147483647 
 
         :return: The host_num of this HostGroupItem.
         :rtype: int
@@ -142,7 +142,7 @@ class HostGroupItem:
     def host_num(self, host_num):
         r"""Sets the host_num of this HostGroupItem.
 
-        影响主机数量
+        **参数解释**: 影响主机数量 **取值范围**: 最小值0，最大值2147483647 
 
         :param host_num: The host_num of this HostGroupItem.
         :type host_num: int
@@ -153,7 +153,7 @@ class HostGroupItem:
     def risk_host_num(self):
         r"""Gets the risk_host_num of this HostGroupItem.
 
-        有风险服务器数
+        **参数解释**: 有风险服务器数 **取值范围**: 0到2147483647 
 
         :return: The risk_host_num of this HostGroupItem.
         :rtype: int
@@ -164,7 +164,7 @@ class HostGroupItem:
     def risk_host_num(self, risk_host_num):
         r"""Sets the risk_host_num of this HostGroupItem.
 
-        有风险服务器数
+        **参数解释**: 有风险服务器数 **取值范围**: 0到2147483647 
 
         :param risk_host_num: The risk_host_num of this HostGroupItem.
         :type risk_host_num: int
@@ -175,7 +175,7 @@ class HostGroupItem:
     def unprotect_host_num(self):
         r"""Gets the unprotect_host_num of this HostGroupItem.
 
-        未防护服务器数
+        **参数解释**: 未防护服务器数 **取值范围**: 0到2147483647 
 
         :return: The unprotect_host_num of this HostGroupItem.
         :rtype: int
@@ -186,7 +186,7 @@ class HostGroupItem:
     def unprotect_host_num(self, unprotect_host_num):
         r"""Sets the unprotect_host_num of this HostGroupItem.
 
-        未防护服务器数
+        **参数解释**: 未防护服务器数 **取值范围**: 0到2147483647 
 
         :param unprotect_host_num: The unprotect_host_num of this HostGroupItem.
         :type unprotect_host_num: int
@@ -197,7 +197,7 @@ class HostGroupItem:
     def host_id_list(self):
         r"""Gets the host_id_list of this HostGroupItem.
 
-        主机id列表
+        **参数解释**: 主机id列表 **取值范围**: 不涉及 
 
         :return: The host_id_list of this HostGroupItem.
         :rtype: list[str]
@@ -208,7 +208,7 @@ class HostGroupItem:
     def host_id_list(self, host_id_list):
         r"""Sets the host_id_list of this HostGroupItem.
 
-        主机id列表
+        **参数解释**: 主机id列表 **取值范围**: 不涉及 
 
         :param host_id_list: The host_id_list of this HostGroupItem.
         :type host_id_list: list[str]
@@ -219,7 +219,7 @@ class HostGroupItem:
     def is_outside(self):
         r"""Gets the is_outside of this HostGroupItem.
 
-        是否是线下数据中心服务器组
+        **参数解释**: 是否是线下数据中心服务器组 **取值范围**: true或者false 
 
         :return: The is_outside of this HostGroupItem.
         :rtype: bool
@@ -230,7 +230,7 @@ class HostGroupItem:
     def is_outside(self, is_outside):
         r"""Sets the is_outside of this HostGroupItem.
 
-        是否是线下数据中心服务器组
+        **参数解释**: 是否是线下数据中心服务器组 **取值范围**: true或者false 
 
         :param is_outside: The is_outside of this HostGroupItem.
         :type is_outside: bool

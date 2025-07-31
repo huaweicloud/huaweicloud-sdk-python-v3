@@ -37,9 +37,9 @@ class AntiVirusPolicyHostResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param host_id: 服务器ID
+        :param host_id: **参数解释**: 服务器ID **取值范围**: 字符长度1-64位 
         :type host_id: str
-        :param host_name: 服务器名称
+        :param host_name: **参数解释**: 服务器名称 **取值范围**: 字符长度1-256位 
         :type host_name: str
         :param private_ip: 服务器私有IP
         :type private_ip: str
@@ -73,7 +73,7 @@ class AntiVirusPolicyHostResponseInfo:
     def host_id(self):
         r"""Gets the host_id of this AntiVirusPolicyHostResponseInfo.
 
-        服务器ID
+        **参数解释**: 服务器ID **取值范围**: 字符长度1-64位 
 
         :return: The host_id of this AntiVirusPolicyHostResponseInfo.
         :rtype: str
@@ -84,7 +84,7 @@ class AntiVirusPolicyHostResponseInfo:
     def host_id(self, host_id):
         r"""Sets the host_id of this AntiVirusPolicyHostResponseInfo.
 
-        服务器ID
+        **参数解释**: 服务器ID **取值范围**: 字符长度1-64位 
 
         :param host_id: The host_id of this AntiVirusPolicyHostResponseInfo.
         :type host_id: str
@@ -95,7 +95,7 @@ class AntiVirusPolicyHostResponseInfo:
     def host_name(self):
         r"""Gets the host_name of this AntiVirusPolicyHostResponseInfo.
 
-        服务器名称
+        **参数解释**: 服务器名称 **取值范围**: 字符长度1-256位 
 
         :return: The host_name of this AntiVirusPolicyHostResponseInfo.
         :rtype: str
@@ -106,7 +106,7 @@ class AntiVirusPolicyHostResponseInfo:
     def host_name(self, host_name):
         r"""Sets the host_name of this AntiVirusPolicyHostResponseInfo.
 
-        服务器名称
+        **参数解释**: 服务器名称 **取值范围**: 字符长度1-256位 
 
         :param host_name: The host_name of this AntiVirusPolicyHostResponseInfo.
         :type host_name: str

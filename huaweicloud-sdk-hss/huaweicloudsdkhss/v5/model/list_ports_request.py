@@ -47,25 +47,25 @@ class ListPortsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param host_id: 主机id
+        :param host_id: **参数解释**: 服务器ID **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
         :type host_id: str
-        :param host_name: 主机名称
+        :param host_name: **参数解释**: 服务器名称 **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
         :type host_name: str
-        :param host_ip: 主机ip
+        :param host_ip: **参数解释**: 主机IP **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
         :type host_ip: str
-        :param port: 端口号
+        :param port: **参数解释**: 端口号 **约束限制**: 不涉及 **取值范围**: 最小值1，最大值65535 **默认取值**: 不涉及 
         :type port: int
-        :param type: 端口类型：目前包括TCP，UDP两种
+        :param type: **参数解释**: 端口类型：目前包括TCP，UDP两种 **约束限制**: 不涉及 **取值范围**: TCP: TCP类型的端口 UDP: UDP类型的端口 **默认取值**: 不涉及 
         :type type: str
-        :param status: 端口状态，包含如下： - danger：危险端口 - unknow: 无已知危险的端口
+        :param status: **参数解释**: 端口状态 **约束限制**: 不涉及 **取值范围**: danger: 危险端口 unknow: 无已知危险的端口 **默认取值**: 不涉及 
         :type status: str
-        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
+        :param enterprise_project_id: **参数解释**: 主机所属的企业项目ID。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。 **约束限制**: 开通企业项目功能后才需要配置企业项目。 **取值范围**: 字符长度0-256位 **默认取值**: 0 
         :type enterprise_project_id: str
-        :param limit: 每页显示数量
+        :param limit: **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
         :type limit: int
-        :param offset: 偏移量：指定返回记录的开始位置
+        :param offset: **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 默认为0 
         :type offset: int
-        :param category: 类别，默认为host，包含如下： - host：主机 - container：容器
+        :param category: **参数解释**: 类别，默认为host **约束限制**: 不涉及 **取值范围**: host：主机 container：容器 **默认取值**: host 
         :type category: str
         """
         
@@ -107,7 +107,7 @@ class ListPortsRequest:
     def host_id(self):
         r"""Gets the host_id of this ListPortsRequest.
 
-        主机id
+        **参数解释**: 服务器ID **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
 
         :return: The host_id of this ListPortsRequest.
         :rtype: str
@@ -118,7 +118,7 @@ class ListPortsRequest:
     def host_id(self, host_id):
         r"""Sets the host_id of this ListPortsRequest.
 
-        主机id
+        **参数解释**: 服务器ID **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
 
         :param host_id: The host_id of this ListPortsRequest.
         :type host_id: str
@@ -129,7 +129,7 @@ class ListPortsRequest:
     def host_name(self):
         r"""Gets the host_name of this ListPortsRequest.
 
-        主机名称
+        **参数解释**: 服务器名称 **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
 
         :return: The host_name of this ListPortsRequest.
         :rtype: str
@@ -140,7 +140,7 @@ class ListPortsRequest:
     def host_name(self, host_name):
         r"""Sets the host_name of this ListPortsRequest.
 
-        主机名称
+        **参数解释**: 服务器名称 **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
 
         :param host_name: The host_name of this ListPortsRequest.
         :type host_name: str
@@ -151,7 +151,7 @@ class ListPortsRequest:
     def host_ip(self):
         r"""Gets the host_ip of this ListPortsRequest.
 
-        主机ip
+        **参数解释**: 主机IP **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
 
         :return: The host_ip of this ListPortsRequest.
         :rtype: str
@@ -162,7 +162,7 @@ class ListPortsRequest:
     def host_ip(self, host_ip):
         r"""Sets the host_ip of this ListPortsRequest.
 
-        主机ip
+        **参数解释**: 主机IP **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
 
         :param host_ip: The host_ip of this ListPortsRequest.
         :type host_ip: str
@@ -173,7 +173,7 @@ class ListPortsRequest:
     def port(self):
         r"""Gets the port of this ListPortsRequest.
 
-        端口号
+        **参数解释**: 端口号 **约束限制**: 不涉及 **取值范围**: 最小值1，最大值65535 **默认取值**: 不涉及 
 
         :return: The port of this ListPortsRequest.
         :rtype: int
@@ -184,7 +184,7 @@ class ListPortsRequest:
     def port(self, port):
         r"""Sets the port of this ListPortsRequest.
 
-        端口号
+        **参数解释**: 端口号 **约束限制**: 不涉及 **取值范围**: 最小值1，最大值65535 **默认取值**: 不涉及 
 
         :param port: The port of this ListPortsRequest.
         :type port: int
@@ -195,7 +195,7 @@ class ListPortsRequest:
     def type(self):
         r"""Gets the type of this ListPortsRequest.
 
-        端口类型：目前包括TCP，UDP两种
+        **参数解释**: 端口类型：目前包括TCP，UDP两种 **约束限制**: 不涉及 **取值范围**: TCP: TCP类型的端口 UDP: UDP类型的端口 **默认取值**: 不涉及 
 
         :return: The type of this ListPortsRequest.
         :rtype: str
@@ -206,7 +206,7 @@ class ListPortsRequest:
     def type(self, type):
         r"""Sets the type of this ListPortsRequest.
 
-        端口类型：目前包括TCP，UDP两种
+        **参数解释**: 端口类型：目前包括TCP，UDP两种 **约束限制**: 不涉及 **取值范围**: TCP: TCP类型的端口 UDP: UDP类型的端口 **默认取值**: 不涉及 
 
         :param type: The type of this ListPortsRequest.
         :type type: str
@@ -217,7 +217,7 @@ class ListPortsRequest:
     def status(self):
         r"""Gets the status of this ListPortsRequest.
 
-        端口状态，包含如下： - danger：危险端口 - unknow: 无已知危险的端口
+        **参数解释**: 端口状态 **约束限制**: 不涉及 **取值范围**: danger: 危险端口 unknow: 无已知危险的端口 **默认取值**: 不涉及 
 
         :return: The status of this ListPortsRequest.
         :rtype: str
@@ -228,7 +228,7 @@ class ListPortsRequest:
     def status(self, status):
         r"""Sets the status of this ListPortsRequest.
 
-        端口状态，包含如下： - danger：危险端口 - unknow: 无已知危险的端口
+        **参数解释**: 端口状态 **约束限制**: 不涉及 **取值范围**: danger: 危险端口 unknow: 无已知危险的端口 **默认取值**: 不涉及 
 
         :param status: The status of this ListPortsRequest.
         :type status: str
@@ -239,7 +239,7 @@ class ListPortsRequest:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this ListPortsRequest.
 
-        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
+        **参数解释**: 主机所属的企业项目ID。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。 **约束限制**: 开通企业项目功能后才需要配置企业项目。 **取值范围**: 字符长度0-256位 **默认取值**: 0 
 
         :return: The enterprise_project_id of this ListPortsRequest.
         :rtype: str
@@ -250,7 +250,7 @@ class ListPortsRequest:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this ListPortsRequest.
 
-        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
+        **参数解释**: 主机所属的企业项目ID。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。 **约束限制**: 开通企业项目功能后才需要配置企业项目。 **取值范围**: 字符长度0-256位 **默认取值**: 0 
 
         :param enterprise_project_id: The enterprise_project_id of this ListPortsRequest.
         :type enterprise_project_id: str
@@ -261,7 +261,7 @@ class ListPortsRequest:
     def limit(self):
         r"""Gets the limit of this ListPortsRequest.
 
-        每页显示数量
+        **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
 
         :return: The limit of this ListPortsRequest.
         :rtype: int
@@ -272,7 +272,7 @@ class ListPortsRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListPortsRequest.
 
-        每页显示数量
+        **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
 
         :param limit: The limit of this ListPortsRequest.
         :type limit: int
@@ -283,7 +283,7 @@ class ListPortsRequest:
     def offset(self):
         r"""Gets the offset of this ListPortsRequest.
 
-        偏移量：指定返回记录的开始位置
+        **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 默认为0 
 
         :return: The offset of this ListPortsRequest.
         :rtype: int
@@ -294,7 +294,7 @@ class ListPortsRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListPortsRequest.
 
-        偏移量：指定返回记录的开始位置
+        **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 默认为0 
 
         :param offset: The offset of this ListPortsRequest.
         :type offset: int
@@ -305,7 +305,7 @@ class ListPortsRequest:
     def category(self):
         r"""Gets the category of this ListPortsRequest.
 
-        类别，默认为host，包含如下： - host：主机 - container：容器
+        **参数解释**: 类别，默认为host **约束限制**: 不涉及 **取值范围**: host：主机 container：容器 **默认取值**: host 
 
         :return: The category of this ListPortsRequest.
         :rtype: str
@@ -316,7 +316,7 @@ class ListPortsRequest:
     def category(self, category):
         r"""Sets the category of this ListPortsRequest.
 
-        类别，默认为host，包含如下： - host：主机 - container：容器
+        **参数解释**: 类别，默认为host **约束限制**: 不涉及 **取值范围**: host：主机 container：容器 **默认取值**: host 
 
         :param category: The category of this ListPortsRequest.
         :type category: str

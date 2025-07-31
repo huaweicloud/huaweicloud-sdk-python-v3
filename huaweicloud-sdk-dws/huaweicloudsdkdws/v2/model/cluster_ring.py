@@ -17,28 +17,35 @@ class ClusterRing:
     sensitive_list = []
 
     openapi_types = {
-        'ring_hosts': 'list[RingHost]'
+        'ring_hosts': 'list[RingHost]',
+        'un_shrinkable_cluster_ring': 'bool'
     }
 
     attribute_map = {
-        'ring_hosts': 'ring_hosts'
+        'ring_hosts': 'ring_hosts',
+        'un_shrinkable_cluster_ring': 'un_shrinkable_cluster_ring'
     }
 
-    def __init__(self, ring_hosts=None):
+    def __init__(self, ring_hosts=None, un_shrinkable_cluster_ring=None):
         r"""ClusterRing
 
         The model defined in huaweicloud sdk
 
         :param ring_hosts: **参数解释**： 集群主机信息。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type ring_hosts: list[:class:`huaweicloudsdkdws.v2.RingHost`]
+        :param un_shrinkable_cluster_ring: **参数解释**： 是否可以缩容。 **约束限制**： 不涉及。 **取值范围**： false|true。 **默认取值**： 不涉及。
+        :type un_shrinkable_cluster_ring: bool
         """
         
         
 
         self._ring_hosts = None
+        self._un_shrinkable_cluster_ring = None
         self.discriminator = None
 
         self.ring_hosts = ring_hosts
+        if un_shrinkable_cluster_ring is not None:
+            self.un_shrinkable_cluster_ring = un_shrinkable_cluster_ring
 
     @property
     def ring_hosts(self):
@@ -61,6 +68,28 @@ class ClusterRing:
         :type ring_hosts: list[:class:`huaweicloudsdkdws.v2.RingHost`]
         """
         self._ring_hosts = ring_hosts
+
+    @property
+    def un_shrinkable_cluster_ring(self):
+        r"""Gets the un_shrinkable_cluster_ring of this ClusterRing.
+
+        **参数解释**： 是否可以缩容。 **约束限制**： 不涉及。 **取值范围**： false|true。 **默认取值**： 不涉及。
+
+        :return: The un_shrinkable_cluster_ring of this ClusterRing.
+        :rtype: bool
+        """
+        return self._un_shrinkable_cluster_ring
+
+    @un_shrinkable_cluster_ring.setter
+    def un_shrinkable_cluster_ring(self, un_shrinkable_cluster_ring):
+        r"""Sets the un_shrinkable_cluster_ring of this ClusterRing.
+
+        **参数解释**： 是否可以缩容。 **约束限制**： 不涉及。 **取值范围**： false|true。 **默认取值**： 不涉及。
+
+        :param un_shrinkable_cluster_ring: The un_shrinkable_cluster_ring of this ClusterRing.
+        :type un_shrinkable_cluster_ring: bool
+        """
+        self._un_shrinkable_cluster_ring = un_shrinkable_cluster_ring
 
     def to_dict(self):
         """Returns the model properties as a dict"""

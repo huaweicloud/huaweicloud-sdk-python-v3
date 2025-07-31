@@ -17,99 +17,70 @@ class ListPolicyGroupRequest:
     sensitive_list = []
 
     openapi_types = {
-        'region': 'str',
         'enterprise_project_id': 'str',
-        'group_name': 'str',
         'offset': 'int',
         'limit': 'int',
+        'group_name': 'str',
         'container_mode': 'bool',
         'group_id': 'str'
     }
 
     attribute_map = {
-        'region': 'region',
         'enterprise_project_id': 'enterprise_project_id',
-        'group_name': 'group_name',
         'offset': 'offset',
         'limit': 'limit',
+        'group_name': 'group_name',
         'container_mode': 'container_mode',
         'group_id': 'group_id'
     }
 
-    def __init__(self, region=None, enterprise_project_id=None, group_name=None, offset=None, limit=None, container_mode=None, group_id=None):
+    def __init__(self, enterprise_project_id=None, offset=None, limit=None, group_name=None, container_mode=None, group_id=None):
         r"""ListPolicyGroupRequest
 
         The model defined in huaweicloud sdk
 
-        :param region: Region ID
-        :type region: str
-        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
+        :param enterprise_project_id: **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
         :type enterprise_project_id: str
-        :param group_name: 策略组名
-        :type group_name: str
-        :param offset: 偏移量：指定返回记录的开始位置
+        :param offset: **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 默认为0 
         :type offset: int
-        :param limit: 每页显示个数
+        :param limit: **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
         :type limit: int
-        :param container_mode: 是否查询容器版策略
+        :param group_name: **参数解释**: 策略组名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
+        :type group_name: str
+        :param container_mode: **参数解释**: 是否只查询容器版策略组 **约束限制**: 不涉及 **取值范围**: true: 只查询容器版策略组 false: 查询全部策略组 **默认取值**: false 
         :type container_mode: bool
-        :param group_id: 策略组id
+        :param group_id: **参数解释**: 策略组ID **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
         :type group_id: str
         """
         
         
 
-        self._region = None
         self._enterprise_project_id = None
-        self._group_name = None
         self._offset = None
         self._limit = None
+        self._group_name = None
         self._container_mode = None
         self._group_id = None
         self.discriminator = None
 
-        if region is not None:
-            self.region = region
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
-        if group_name is not None:
-            self.group_name = group_name
         if offset is not None:
             self.offset = offset
         if limit is not None:
             self.limit = limit
+        if group_name is not None:
+            self.group_name = group_name
         if container_mode is not None:
             self.container_mode = container_mode
         if group_id is not None:
             self.group_id = group_id
 
     @property
-    def region(self):
-        r"""Gets the region of this ListPolicyGroupRequest.
-
-        Region ID
-
-        :return: The region of this ListPolicyGroupRequest.
-        :rtype: str
-        """
-        return self._region
-
-    @region.setter
-    def region(self, region):
-        r"""Sets the region of this ListPolicyGroupRequest.
-
-        Region ID
-
-        :param region: The region of this ListPolicyGroupRequest.
-        :type region: str
-        """
-        self._region = region
-
-    @property
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this ListPolicyGroupRequest.
 
-        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
+        **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
 
         :return: The enterprise_project_id of this ListPolicyGroupRequest.
         :rtype: str
@@ -120,7 +91,7 @@ class ListPolicyGroupRequest:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this ListPolicyGroupRequest.
 
-        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
+        **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
 
         :param enterprise_project_id: The enterprise_project_id of this ListPolicyGroupRequest.
         :type enterprise_project_id: str
@@ -128,32 +99,10 @@ class ListPolicyGroupRequest:
         self._enterprise_project_id = enterprise_project_id
 
     @property
-    def group_name(self):
-        r"""Gets the group_name of this ListPolicyGroupRequest.
-
-        策略组名
-
-        :return: The group_name of this ListPolicyGroupRequest.
-        :rtype: str
-        """
-        return self._group_name
-
-    @group_name.setter
-    def group_name(self, group_name):
-        r"""Sets the group_name of this ListPolicyGroupRequest.
-
-        策略组名
-
-        :param group_name: The group_name of this ListPolicyGroupRequest.
-        :type group_name: str
-        """
-        self._group_name = group_name
-
-    @property
     def offset(self):
         r"""Gets the offset of this ListPolicyGroupRequest.
 
-        偏移量：指定返回记录的开始位置
+        **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 默认为0 
 
         :return: The offset of this ListPolicyGroupRequest.
         :rtype: int
@@ -164,7 +113,7 @@ class ListPolicyGroupRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListPolicyGroupRequest.
 
-        偏移量：指定返回记录的开始位置
+        **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 默认为0 
 
         :param offset: The offset of this ListPolicyGroupRequest.
         :type offset: int
@@ -175,7 +124,7 @@ class ListPolicyGroupRequest:
     def limit(self):
         r"""Gets the limit of this ListPolicyGroupRequest.
 
-        每页显示个数
+        **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
 
         :return: The limit of this ListPolicyGroupRequest.
         :rtype: int
@@ -186,7 +135,7 @@ class ListPolicyGroupRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListPolicyGroupRequest.
 
-        每页显示个数
+        **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
 
         :param limit: The limit of this ListPolicyGroupRequest.
         :type limit: int
@@ -194,10 +143,32 @@ class ListPolicyGroupRequest:
         self._limit = limit
 
     @property
+    def group_name(self):
+        r"""Gets the group_name of this ListPolicyGroupRequest.
+
+        **参数解释**: 策略组名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
+
+        :return: The group_name of this ListPolicyGroupRequest.
+        :rtype: str
+        """
+        return self._group_name
+
+    @group_name.setter
+    def group_name(self, group_name):
+        r"""Sets the group_name of this ListPolicyGroupRequest.
+
+        **参数解释**: 策略组名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
+
+        :param group_name: The group_name of this ListPolicyGroupRequest.
+        :type group_name: str
+        """
+        self._group_name = group_name
+
+    @property
     def container_mode(self):
         r"""Gets the container_mode of this ListPolicyGroupRequest.
 
-        是否查询容器版策略
+        **参数解释**: 是否只查询容器版策略组 **约束限制**: 不涉及 **取值范围**: true: 只查询容器版策略组 false: 查询全部策略组 **默认取值**: false 
 
         :return: The container_mode of this ListPolicyGroupRequest.
         :rtype: bool
@@ -208,7 +179,7 @@ class ListPolicyGroupRequest:
     def container_mode(self, container_mode):
         r"""Sets the container_mode of this ListPolicyGroupRequest.
 
-        是否查询容器版策略
+        **参数解释**: 是否只查询容器版策略组 **约束限制**: 不涉及 **取值范围**: true: 只查询容器版策略组 false: 查询全部策略组 **默认取值**: false 
 
         :param container_mode: The container_mode of this ListPolicyGroupRequest.
         :type container_mode: bool
@@ -219,7 +190,7 @@ class ListPolicyGroupRequest:
     def group_id(self):
         r"""Gets the group_id of this ListPolicyGroupRequest.
 
-        策略组id
+        **参数解释**: 策略组ID **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
 
         :return: The group_id of this ListPolicyGroupRequest.
         :rtype: str
@@ -230,7 +201,7 @@ class ListPolicyGroupRequest:
     def group_id(self, group_id):
         r"""Sets the group_id of this ListPolicyGroupRequest.
 
-        策略组id
+        **参数解释**: 策略组ID **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
 
         :param group_id: The group_id of this ListPolicyGroupRequest.
         :type group_id: str

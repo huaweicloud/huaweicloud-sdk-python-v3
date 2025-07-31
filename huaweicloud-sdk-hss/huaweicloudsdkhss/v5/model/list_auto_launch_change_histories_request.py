@@ -17,13 +17,13 @@ class ListAutoLaunchChangeHistoriesRequest:
     sensitive_list = []
 
     openapi_types = {
+        'enterprise_project_id': 'str',
         'host_id': 'str',
         'host_ip': 'str',
         'host_name': 'str',
         'auto_launch_name': 'str',
         'type': 'int',
         'variation_type': 'str',
-        'enterprise_project_id': 'str',
         'sort_key': 'str',
         'sort_dir': 'str',
         'limit': 'int',
@@ -33,13 +33,13 @@ class ListAutoLaunchChangeHistoriesRequest:
     }
 
     attribute_map = {
+        'enterprise_project_id': 'enterprise_project_id',
         'host_id': 'host_id',
         'host_ip': 'host_ip',
         'host_name': 'host_name',
         'auto_launch_name': 'auto_launch_name',
         'type': 'type',
         'variation_type': 'variation_type',
-        'enterprise_project_id': 'enterprise_project_id',
         'sort_key': 'sort_key',
         'sort_dir': 'sort_dir',
         'limit': 'limit',
@@ -48,48 +48,48 @@ class ListAutoLaunchChangeHistoriesRequest:
         'end_time': 'end_time'
     }
 
-    def __init__(self, host_id=None, host_ip=None, host_name=None, auto_launch_name=None, type=None, variation_type=None, enterprise_project_id=None, sort_key=None, sort_dir=None, limit=None, offset=None, start_time=None, end_time=None):
+    def __init__(self, enterprise_project_id=None, host_id=None, host_ip=None, host_name=None, auto_launch_name=None, type=None, variation_type=None, sort_key=None, sort_dir=None, limit=None, offset=None, start_time=None, end_time=None):
         r"""ListAutoLaunchChangeHistoriesRequest
 
         The model defined in huaweicloud sdk
 
-        :param host_id: 主机id
-        :type host_id: str
-        :param host_ip: 主机ip
-        :type host_ip: str
-        :param host_name: 主机名称
-        :type host_name: str
-        :param auto_launch_name: 自启动项名称
-        :type auto_launch_name: str
-        :param type: 自启动项类型   - 0 ：自启动服务   - 1 ：定时任务   - 2 ：预加载动态库   - 3 ：Run注册表键   - 4 ：开机启动文件夹
-        :type type: int
-        :param variation_type: 变更类型:   - add ：新建   - delete ：删除   - modify ：修改
-        :type variation_type: str
-        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
+        :param enterprise_project_id: **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
         :type enterprise_project_id: str
-        :param sort_key: 排序的key值，目前只支持按照recent_scan_time排序，按照recent_scan_time排序时，根据sort_dir的值决定升序还是降序
+        :param host_id: **参数解释**: 服务器ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
+        :type host_id: str
+        :param host_ip: **参数解释**: 主机IP **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
+        :type host_ip: str
+        :param host_name: **参数解释**: 服务器名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
+        :type host_name: str
+        :param auto_launch_name: **参数解释**: 自启动项名称 **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
+        :type auto_launch_name: str
+        :param type: **参数解释**: 自启动项类型 **约束限制**: 不涉及 **取值范围**: - 0：自启动服务 - 1：定时任务 - 2：预加载动态库 - 3：Run注册表键 - 4：开机启动文件夹  **默认取值**: 不涉及 
+        :type type: int
+        :param variation_type: **参数解释**: 变更类型 **约束限制**: 不涉及 **取值范围**: - add：新建 - delete：删除 - modify：修改  **默认取值**: 不涉及 
+        :type variation_type: str
+        :param sort_key: **参数解释**: 排序的key值，目前只支持按照recent_scan_time排序，按照recent_scan_time排序时，根据sort_dir的值决定升序还是降序 **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
         :type sort_key: str
-        :param sort_dir: 排序方式，默认为降序，当sort_key为按照recent_scan_time排序时，根据当前值决定升序还是降序，当sort_key为其他值时均为降序   - asc ：升序   - desc ：降序
+        :param sort_dir: **参数解释**: 排序方式，默认为降序，当sort_key为按照recent_scan_time排序时，根据当前值决定升序还是降序，当sort_key为其他值时均为降序 **约束限制**: 不涉及 **取值范围**: - asc：升序 - desc：降序  **默认取值**: 不涉及 
         :type sort_dir: str
-        :param limit: 每页显示数量
+        :param limit: **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
         :type limit: int
-        :param offset: 偏移量：指定返回记录的开始位置
+        :param offset: **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 默认为0 
         :type offset: int
-        :param start_time: 变更开始时间，13位时间戳
+        :param start_time: **参数解释**: 开始时间，13位时间戳 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值9223372036854775807 **默认取值**: 
         :type start_time: int
-        :param end_time: 变更结束时间，13位时间戳
+        :param end_time: **参数解释**: 结束时间，13位时间戳 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值9223372036854775807 **默认取值**: 
         :type end_time: int
         """
         
         
 
+        self._enterprise_project_id = None
         self._host_id = None
         self._host_ip = None
         self._host_name = None
         self._auto_launch_name = None
         self._type = None
         self._variation_type = None
-        self._enterprise_project_id = None
         self._sort_key = None
         self._sort_dir = None
         self._limit = None
@@ -98,6 +98,8 @@ class ListAutoLaunchChangeHistoriesRequest:
         self._end_time = None
         self.discriminator = None
 
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
         if host_id is not None:
             self.host_id = host_id
         if host_ip is not None:
@@ -110,8 +112,6 @@ class ListAutoLaunchChangeHistoriesRequest:
             self.type = type
         if variation_type is not None:
             self.variation_type = variation_type
-        if enterprise_project_id is not None:
-            self.enterprise_project_id = enterprise_project_id
         if sort_key is not None:
             self.sort_key = sort_key
         if sort_dir is not None:
@@ -126,142 +126,10 @@ class ListAutoLaunchChangeHistoriesRequest:
             self.end_time = end_time
 
     @property
-    def host_id(self):
-        r"""Gets the host_id of this ListAutoLaunchChangeHistoriesRequest.
-
-        主机id
-
-        :return: The host_id of this ListAutoLaunchChangeHistoriesRequest.
-        :rtype: str
-        """
-        return self._host_id
-
-    @host_id.setter
-    def host_id(self, host_id):
-        r"""Sets the host_id of this ListAutoLaunchChangeHistoriesRequest.
-
-        主机id
-
-        :param host_id: The host_id of this ListAutoLaunchChangeHistoriesRequest.
-        :type host_id: str
-        """
-        self._host_id = host_id
-
-    @property
-    def host_ip(self):
-        r"""Gets the host_ip of this ListAutoLaunchChangeHistoriesRequest.
-
-        主机ip
-
-        :return: The host_ip of this ListAutoLaunchChangeHistoriesRequest.
-        :rtype: str
-        """
-        return self._host_ip
-
-    @host_ip.setter
-    def host_ip(self, host_ip):
-        r"""Sets the host_ip of this ListAutoLaunchChangeHistoriesRequest.
-
-        主机ip
-
-        :param host_ip: The host_ip of this ListAutoLaunchChangeHistoriesRequest.
-        :type host_ip: str
-        """
-        self._host_ip = host_ip
-
-    @property
-    def host_name(self):
-        r"""Gets the host_name of this ListAutoLaunchChangeHistoriesRequest.
-
-        主机名称
-
-        :return: The host_name of this ListAutoLaunchChangeHistoriesRequest.
-        :rtype: str
-        """
-        return self._host_name
-
-    @host_name.setter
-    def host_name(self, host_name):
-        r"""Sets the host_name of this ListAutoLaunchChangeHistoriesRequest.
-
-        主机名称
-
-        :param host_name: The host_name of this ListAutoLaunchChangeHistoriesRequest.
-        :type host_name: str
-        """
-        self._host_name = host_name
-
-    @property
-    def auto_launch_name(self):
-        r"""Gets the auto_launch_name of this ListAutoLaunchChangeHistoriesRequest.
-
-        自启动项名称
-
-        :return: The auto_launch_name of this ListAutoLaunchChangeHistoriesRequest.
-        :rtype: str
-        """
-        return self._auto_launch_name
-
-    @auto_launch_name.setter
-    def auto_launch_name(self, auto_launch_name):
-        r"""Sets the auto_launch_name of this ListAutoLaunchChangeHistoriesRequest.
-
-        自启动项名称
-
-        :param auto_launch_name: The auto_launch_name of this ListAutoLaunchChangeHistoriesRequest.
-        :type auto_launch_name: str
-        """
-        self._auto_launch_name = auto_launch_name
-
-    @property
-    def type(self):
-        r"""Gets the type of this ListAutoLaunchChangeHistoriesRequest.
-
-        自启动项类型   - 0 ：自启动服务   - 1 ：定时任务   - 2 ：预加载动态库   - 3 ：Run注册表键   - 4 ：开机启动文件夹
-
-        :return: The type of this ListAutoLaunchChangeHistoriesRequest.
-        :rtype: int
-        """
-        return self._type
-
-    @type.setter
-    def type(self, type):
-        r"""Sets the type of this ListAutoLaunchChangeHistoriesRequest.
-
-        自启动项类型   - 0 ：自启动服务   - 1 ：定时任务   - 2 ：预加载动态库   - 3 ：Run注册表键   - 4 ：开机启动文件夹
-
-        :param type: The type of this ListAutoLaunchChangeHistoriesRequest.
-        :type type: int
-        """
-        self._type = type
-
-    @property
-    def variation_type(self):
-        r"""Gets the variation_type of this ListAutoLaunchChangeHistoriesRequest.
-
-        变更类型:   - add ：新建   - delete ：删除   - modify ：修改
-
-        :return: The variation_type of this ListAutoLaunchChangeHistoriesRequest.
-        :rtype: str
-        """
-        return self._variation_type
-
-    @variation_type.setter
-    def variation_type(self, variation_type):
-        r"""Sets the variation_type of this ListAutoLaunchChangeHistoriesRequest.
-
-        变更类型:   - add ：新建   - delete ：删除   - modify ：修改
-
-        :param variation_type: The variation_type of this ListAutoLaunchChangeHistoriesRequest.
-        :type variation_type: str
-        """
-        self._variation_type = variation_type
-
-    @property
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this ListAutoLaunchChangeHistoriesRequest.
 
-        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
+        **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
 
         :return: The enterprise_project_id of this ListAutoLaunchChangeHistoriesRequest.
         :rtype: str
@@ -272,7 +140,7 @@ class ListAutoLaunchChangeHistoriesRequest:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this ListAutoLaunchChangeHistoriesRequest.
 
-        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
+        **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
 
         :param enterprise_project_id: The enterprise_project_id of this ListAutoLaunchChangeHistoriesRequest.
         :type enterprise_project_id: str
@@ -280,10 +148,142 @@ class ListAutoLaunchChangeHistoriesRequest:
         self._enterprise_project_id = enterprise_project_id
 
     @property
+    def host_id(self):
+        r"""Gets the host_id of this ListAutoLaunchChangeHistoriesRequest.
+
+        **参数解释**: 服务器ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
+
+        :return: The host_id of this ListAutoLaunchChangeHistoriesRequest.
+        :rtype: str
+        """
+        return self._host_id
+
+    @host_id.setter
+    def host_id(self, host_id):
+        r"""Sets the host_id of this ListAutoLaunchChangeHistoriesRequest.
+
+        **参数解释**: 服务器ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
+
+        :param host_id: The host_id of this ListAutoLaunchChangeHistoriesRequest.
+        :type host_id: str
+        """
+        self._host_id = host_id
+
+    @property
+    def host_ip(self):
+        r"""Gets the host_ip of this ListAutoLaunchChangeHistoriesRequest.
+
+        **参数解释**: 主机IP **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
+
+        :return: The host_ip of this ListAutoLaunchChangeHistoriesRequest.
+        :rtype: str
+        """
+        return self._host_ip
+
+    @host_ip.setter
+    def host_ip(self, host_ip):
+        r"""Sets the host_ip of this ListAutoLaunchChangeHistoriesRequest.
+
+        **参数解释**: 主机IP **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
+
+        :param host_ip: The host_ip of this ListAutoLaunchChangeHistoriesRequest.
+        :type host_ip: str
+        """
+        self._host_ip = host_ip
+
+    @property
+    def host_name(self):
+        r"""Gets the host_name of this ListAutoLaunchChangeHistoriesRequest.
+
+        **参数解释**: 服务器名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
+
+        :return: The host_name of this ListAutoLaunchChangeHistoriesRequest.
+        :rtype: str
+        """
+        return self._host_name
+
+    @host_name.setter
+    def host_name(self, host_name):
+        r"""Sets the host_name of this ListAutoLaunchChangeHistoriesRequest.
+
+        **参数解释**: 服务器名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
+
+        :param host_name: The host_name of this ListAutoLaunchChangeHistoriesRequest.
+        :type host_name: str
+        """
+        self._host_name = host_name
+
+    @property
+    def auto_launch_name(self):
+        r"""Gets the auto_launch_name of this ListAutoLaunchChangeHistoriesRequest.
+
+        **参数解释**: 自启动项名称 **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
+
+        :return: The auto_launch_name of this ListAutoLaunchChangeHistoriesRequest.
+        :rtype: str
+        """
+        return self._auto_launch_name
+
+    @auto_launch_name.setter
+    def auto_launch_name(self, auto_launch_name):
+        r"""Sets the auto_launch_name of this ListAutoLaunchChangeHistoriesRequest.
+
+        **参数解释**: 自启动项名称 **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
+
+        :param auto_launch_name: The auto_launch_name of this ListAutoLaunchChangeHistoriesRequest.
+        :type auto_launch_name: str
+        """
+        self._auto_launch_name = auto_launch_name
+
+    @property
+    def type(self):
+        r"""Gets the type of this ListAutoLaunchChangeHistoriesRequest.
+
+        **参数解释**: 自启动项类型 **约束限制**: 不涉及 **取值范围**: - 0：自启动服务 - 1：定时任务 - 2：预加载动态库 - 3：Run注册表键 - 4：开机启动文件夹  **默认取值**: 不涉及 
+
+        :return: The type of this ListAutoLaunchChangeHistoriesRequest.
+        :rtype: int
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        r"""Sets the type of this ListAutoLaunchChangeHistoriesRequest.
+
+        **参数解释**: 自启动项类型 **约束限制**: 不涉及 **取值范围**: - 0：自启动服务 - 1：定时任务 - 2：预加载动态库 - 3：Run注册表键 - 4：开机启动文件夹  **默认取值**: 不涉及 
+
+        :param type: The type of this ListAutoLaunchChangeHistoriesRequest.
+        :type type: int
+        """
+        self._type = type
+
+    @property
+    def variation_type(self):
+        r"""Gets the variation_type of this ListAutoLaunchChangeHistoriesRequest.
+
+        **参数解释**: 变更类型 **约束限制**: 不涉及 **取值范围**: - add：新建 - delete：删除 - modify：修改  **默认取值**: 不涉及 
+
+        :return: The variation_type of this ListAutoLaunchChangeHistoriesRequest.
+        :rtype: str
+        """
+        return self._variation_type
+
+    @variation_type.setter
+    def variation_type(self, variation_type):
+        r"""Sets the variation_type of this ListAutoLaunchChangeHistoriesRequest.
+
+        **参数解释**: 变更类型 **约束限制**: 不涉及 **取值范围**: - add：新建 - delete：删除 - modify：修改  **默认取值**: 不涉及 
+
+        :param variation_type: The variation_type of this ListAutoLaunchChangeHistoriesRequest.
+        :type variation_type: str
+        """
+        self._variation_type = variation_type
+
+    @property
     def sort_key(self):
         r"""Gets the sort_key of this ListAutoLaunchChangeHistoriesRequest.
 
-        排序的key值，目前只支持按照recent_scan_time排序，按照recent_scan_time排序时，根据sort_dir的值决定升序还是降序
+        **参数解释**: 排序的key值，目前只支持按照recent_scan_time排序，按照recent_scan_time排序时，根据sort_dir的值决定升序还是降序 **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
 
         :return: The sort_key of this ListAutoLaunchChangeHistoriesRequest.
         :rtype: str
@@ -294,7 +294,7 @@ class ListAutoLaunchChangeHistoriesRequest:
     def sort_key(self, sort_key):
         r"""Sets the sort_key of this ListAutoLaunchChangeHistoriesRequest.
 
-        排序的key值，目前只支持按照recent_scan_time排序，按照recent_scan_time排序时，根据sort_dir的值决定升序还是降序
+        **参数解释**: 排序的key值，目前只支持按照recent_scan_time排序，按照recent_scan_time排序时，根据sort_dir的值决定升序还是降序 **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
 
         :param sort_key: The sort_key of this ListAutoLaunchChangeHistoriesRequest.
         :type sort_key: str
@@ -305,7 +305,7 @@ class ListAutoLaunchChangeHistoriesRequest:
     def sort_dir(self):
         r"""Gets the sort_dir of this ListAutoLaunchChangeHistoriesRequest.
 
-        排序方式，默认为降序，当sort_key为按照recent_scan_time排序时，根据当前值决定升序还是降序，当sort_key为其他值时均为降序   - asc ：升序   - desc ：降序
+        **参数解释**: 排序方式，默认为降序，当sort_key为按照recent_scan_time排序时，根据当前值决定升序还是降序，当sort_key为其他值时均为降序 **约束限制**: 不涉及 **取值范围**: - asc：升序 - desc：降序  **默认取值**: 不涉及 
 
         :return: The sort_dir of this ListAutoLaunchChangeHistoriesRequest.
         :rtype: str
@@ -316,7 +316,7 @@ class ListAutoLaunchChangeHistoriesRequest:
     def sort_dir(self, sort_dir):
         r"""Sets the sort_dir of this ListAutoLaunchChangeHistoriesRequest.
 
-        排序方式，默认为降序，当sort_key为按照recent_scan_time排序时，根据当前值决定升序还是降序，当sort_key为其他值时均为降序   - asc ：升序   - desc ：降序
+        **参数解释**: 排序方式，默认为降序，当sort_key为按照recent_scan_time排序时，根据当前值决定升序还是降序，当sort_key为其他值时均为降序 **约束限制**: 不涉及 **取值范围**: - asc：升序 - desc：降序  **默认取值**: 不涉及 
 
         :param sort_dir: The sort_dir of this ListAutoLaunchChangeHistoriesRequest.
         :type sort_dir: str
@@ -327,7 +327,7 @@ class ListAutoLaunchChangeHistoriesRequest:
     def limit(self):
         r"""Gets the limit of this ListAutoLaunchChangeHistoriesRequest.
 
-        每页显示数量
+        **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
 
         :return: The limit of this ListAutoLaunchChangeHistoriesRequest.
         :rtype: int
@@ -338,7 +338,7 @@ class ListAutoLaunchChangeHistoriesRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListAutoLaunchChangeHistoriesRequest.
 
-        每页显示数量
+        **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
 
         :param limit: The limit of this ListAutoLaunchChangeHistoriesRequest.
         :type limit: int
@@ -349,7 +349,7 @@ class ListAutoLaunchChangeHistoriesRequest:
     def offset(self):
         r"""Gets the offset of this ListAutoLaunchChangeHistoriesRequest.
 
-        偏移量：指定返回记录的开始位置
+        **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 默认为0 
 
         :return: The offset of this ListAutoLaunchChangeHistoriesRequest.
         :rtype: int
@@ -360,7 +360,7 @@ class ListAutoLaunchChangeHistoriesRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListAutoLaunchChangeHistoriesRequest.
 
-        偏移量：指定返回记录的开始位置
+        **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 默认为0 
 
         :param offset: The offset of this ListAutoLaunchChangeHistoriesRequest.
         :type offset: int
@@ -371,7 +371,7 @@ class ListAutoLaunchChangeHistoriesRequest:
     def start_time(self):
         r"""Gets the start_time of this ListAutoLaunchChangeHistoriesRequest.
 
-        变更开始时间，13位时间戳
+        **参数解释**: 开始时间，13位时间戳 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值9223372036854775807 **默认取值**: 
 
         :return: The start_time of this ListAutoLaunchChangeHistoriesRequest.
         :rtype: int
@@ -382,7 +382,7 @@ class ListAutoLaunchChangeHistoriesRequest:
     def start_time(self, start_time):
         r"""Sets the start_time of this ListAutoLaunchChangeHistoriesRequest.
 
-        变更开始时间，13位时间戳
+        **参数解释**: 开始时间，13位时间戳 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值9223372036854775807 **默认取值**: 
 
         :param start_time: The start_time of this ListAutoLaunchChangeHistoriesRequest.
         :type start_time: int
@@ -393,7 +393,7 @@ class ListAutoLaunchChangeHistoriesRequest:
     def end_time(self):
         r"""Gets the end_time of this ListAutoLaunchChangeHistoriesRequest.
 
-        变更结束时间，13位时间戳
+        **参数解释**: 结束时间，13位时间戳 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值9223372036854775807 **默认取值**: 
 
         :return: The end_time of this ListAutoLaunchChangeHistoriesRequest.
         :rtype: int
@@ -404,7 +404,7 @@ class ListAutoLaunchChangeHistoriesRequest:
     def end_time(self, end_time):
         r"""Sets the end_time of this ListAutoLaunchChangeHistoriesRequest.
 
-        变更结束时间，13位时间戳
+        **参数解释**: 结束时间，13位时间戳 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值9223372036854775807 **默认取值**: 
 
         :param end_time: The end_time of this ListAutoLaunchChangeHistoriesRequest.
         :type end_time: int

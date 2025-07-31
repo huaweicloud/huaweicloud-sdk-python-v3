@@ -35,13 +35,13 @@ class PortStatisticResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param port: 端口号
+        :param port: **参数解释**: 端口号 **取值范围**: 最小值0，最大值65535 
         :type port: int
-        :param type: 端口类型
+        :param type: **参数解释**: 端口类型 **取值范围**: - UDP - UDP6 - TCP - TCP6 
         :type type: str
-        :param num: 端口数量
+        :param num: **参数解释**: 端口数量 **取值范围**: 最小值0，最大值65535 
         :type num: int
-        :param status: 危险类型:danger/unknown
+        :param status: **参数解释**: 危险类型 **取值范围**: - danger: 危险端口 - normal: 正常端口 - unknow: 无已知危险的端口 
         :type status: str
         """
         
@@ -66,7 +66,7 @@ class PortStatisticResponseInfo:
     def port(self):
         r"""Gets the port of this PortStatisticResponseInfo.
 
-        端口号
+        **参数解释**: 端口号 **取值范围**: 最小值0，最大值65535 
 
         :return: The port of this PortStatisticResponseInfo.
         :rtype: int
@@ -77,7 +77,7 @@ class PortStatisticResponseInfo:
     def port(self, port):
         r"""Sets the port of this PortStatisticResponseInfo.
 
-        端口号
+        **参数解释**: 端口号 **取值范围**: 最小值0，最大值65535 
 
         :param port: The port of this PortStatisticResponseInfo.
         :type port: int
@@ -88,7 +88,7 @@ class PortStatisticResponseInfo:
     def type(self):
         r"""Gets the type of this PortStatisticResponseInfo.
 
-        端口类型
+        **参数解释**: 端口类型 **取值范围**: - UDP - UDP6 - TCP - TCP6 
 
         :return: The type of this PortStatisticResponseInfo.
         :rtype: str
@@ -99,7 +99,7 @@ class PortStatisticResponseInfo:
     def type(self, type):
         r"""Sets the type of this PortStatisticResponseInfo.
 
-        端口类型
+        **参数解释**: 端口类型 **取值范围**: - UDP - UDP6 - TCP - TCP6 
 
         :param type: The type of this PortStatisticResponseInfo.
         :type type: str
@@ -110,7 +110,7 @@ class PortStatisticResponseInfo:
     def num(self):
         r"""Gets the num of this PortStatisticResponseInfo.
 
-        端口数量
+        **参数解释**: 端口数量 **取值范围**: 最小值0，最大值65535 
 
         :return: The num of this PortStatisticResponseInfo.
         :rtype: int
@@ -121,7 +121,7 @@ class PortStatisticResponseInfo:
     def num(self, num):
         r"""Sets the num of this PortStatisticResponseInfo.
 
-        端口数量
+        **参数解释**: 端口数量 **取值范围**: 最小值0，最大值65535 
 
         :param num: The num of this PortStatisticResponseInfo.
         :type num: int
@@ -132,7 +132,7 @@ class PortStatisticResponseInfo:
     def status(self):
         r"""Gets the status of this PortStatisticResponseInfo.
 
-        危险类型:danger/unknown
+        **参数解释**: 危险类型 **取值范围**: - danger: 危险端口 - normal: 正常端口 - unknow: 无已知危险的端口 
 
         :return: The status of this PortStatisticResponseInfo.
         :rtype: str
@@ -143,7 +143,7 @@ class PortStatisticResponseInfo:
     def status(self, status):
         r"""Sets the status of this PortStatisticResponseInfo.
 
-        危险类型:danger/unknown
+        **参数解释**: 危险类型 **取值范围**: - danger: 危险端口 - normal: 正常端口 - unknow: 无已知危险的端口 
 
         :param status: The status of this PortStatisticResponseInfo.
         :type status: str

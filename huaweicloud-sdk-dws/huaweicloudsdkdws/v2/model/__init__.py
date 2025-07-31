@@ -80,7 +80,6 @@ from huaweicloudsdkdws.v2.model.cluster_name_req import ClusterNameReq
 from huaweicloudsdkdws.v2.model.cluster_node_info import ClusterNodeInfo
 from huaweicloudsdkdws.v2.model.cluster_recovery_progress import ClusterRecoveryProgress
 from huaweicloudsdkdws.v2.model.cluster_ring import ClusterRing
-from huaweicloudsdkdws.v2.model.cluster_ring_vo import ClusterRingVo
 from huaweicloudsdkdws.v2.model.cluster_shrink_req import ClusterShrinkReq
 from huaweicloudsdkdws.v2.model.cluster_snapshots import ClusterSnapshots
 from huaweicloudsdkdws.v2.model.cluster_timezone_req import ClusterTimezoneReq
@@ -488,7 +487,6 @@ from huaweicloudsdkdws.v2.model.restore_table_request_body import RestoreTableRe
 from huaweicloudsdkdws.v2.model.restore_table_response import RestoreTableResponse
 from huaweicloudsdkdws.v2.model.revoke import Revoke
 from huaweicloudsdkdws.v2.model.ring_host import RingHost
-from huaweicloudsdkdws.v2.model.ring_host_vo import RingHostVo
 from huaweicloudsdkdws.v2.model.role_authority import RoleAuthority
 from huaweicloudsdkdws.v2.model.rotate_key_request import RotateKeyRequest
 from huaweicloudsdkdws.v2.model.rotate_key_request_body import RotateKeyRequestBody

@@ -41,19 +41,19 @@ class CreateRecordSetRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param name: 域名，后缀需以zone name结束且为FQDN（即以“.”号结束的完整主机名）。
+        :param name: **参数解释：** 域名，后缀需以zone name结束且为FQDN（Fully Qualified Domain Name，全称域名），即以“.”结束的完整主机名。 如“www.example.com.”。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type name: str
-        :param description: 可选配置，对域名的描述。  长度不超过255个字符。  默认值为空。
+        :param description: **参数解释：** 记录集的描述信息。 **约束限制：** 不涉及。 **取值范围：** 长度不超过255个字符。 **默认取值：** 不涉及。
         :type description: str
-        :param type: 记录集的类型。  公网域名场景的记录类型: A、AAAA、MX、CNAME、TXT、NS、SRV、CAA。  内网域名场景的记录类型: A、AAAA、MX、CNAME、TXT、SRV。
+        :param type: **参数解释：** 记录集的类型。 **约束限制：** 不涉及。 **取值范围：** - 公网域名的记录类型: A、AAAA、MX、CNAME、TXT、SRV、NS、SOA、CAA。 - 内网域名的记录类型: A、AAAA、MX、CNAME、TXT、PTR、SRV、NS、SOA。  **默认取值：** 不涉及。
         :type type: str
-        :param status: 解析记录的状态。 取值范围： ENABLE：启用 DISABLE：暂停 默认值为ENABLE。
+        :param status: **参数解释：** 解析记录的状态。 **约束限制：** 不涉及。 **取值范围：** - ENABLE：启用解析 - DISABLE：暂停解析  **默认取值：** ENABLE。
         :type status: str
-        :param ttl: 解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。 如果您的服务地址经常更换，建议TTL值设置相对小些，反之，建议设置相对大些。
+        :param ttl: **参数解释：** 解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。 如果您的服务地址经常更换，建议TTL值设置相对小些，反之，建议设置相对大些。 **约束限制：** 不涉及。 **取值范围：** 1~2147483647。 **默认取值：** 300
         :type ttl: int
-        :param records: 解析记录的值。不同类型解析记录对应的值的规则不同。
+        :param records: **参数解释：** 解析记录的值。不同类型解析记录对应的值的规则不同。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type records: list[str]
-        :param tags: 资源标签。
+        :param tags: **参数解释：** 资源标签。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type tags: list[:class:`huaweicloudsdkdns.v2.Tag`]
         """
         
@@ -84,7 +84,7 @@ class CreateRecordSetRequestBody:
     def name(self):
         r"""Gets the name of this CreateRecordSetRequestBody.
 
-        域名，后缀需以zone name结束且为FQDN（即以“.”号结束的完整主机名）。
+        **参数解释：** 域名，后缀需以zone name结束且为FQDN（Fully Qualified Domain Name，全称域名），即以“.”结束的完整主机名。 如“www.example.com.”。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The name of this CreateRecordSetRequestBody.
         :rtype: str
@@ -95,7 +95,7 @@ class CreateRecordSetRequestBody:
     def name(self, name):
         r"""Sets the name of this CreateRecordSetRequestBody.
 
-        域名，后缀需以zone name结束且为FQDN（即以“.”号结束的完整主机名）。
+        **参数解释：** 域名，后缀需以zone name结束且为FQDN（Fully Qualified Domain Name，全称域名），即以“.”结束的完整主机名。 如“www.example.com.”。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param name: The name of this CreateRecordSetRequestBody.
         :type name: str
@@ -106,7 +106,7 @@ class CreateRecordSetRequestBody:
     def description(self):
         r"""Gets the description of this CreateRecordSetRequestBody.
 
-        可选配置，对域名的描述。  长度不超过255个字符。  默认值为空。
+        **参数解释：** 记录集的描述信息。 **约束限制：** 不涉及。 **取值范围：** 长度不超过255个字符。 **默认取值：** 不涉及。
 
         :return: The description of this CreateRecordSetRequestBody.
         :rtype: str
@@ -117,7 +117,7 @@ class CreateRecordSetRequestBody:
     def description(self, description):
         r"""Sets the description of this CreateRecordSetRequestBody.
 
-        可选配置，对域名的描述。  长度不超过255个字符。  默认值为空。
+        **参数解释：** 记录集的描述信息。 **约束限制：** 不涉及。 **取值范围：** 长度不超过255个字符。 **默认取值：** 不涉及。
 
         :param description: The description of this CreateRecordSetRequestBody.
         :type description: str
@@ -128,7 +128,7 @@ class CreateRecordSetRequestBody:
     def type(self):
         r"""Gets the type of this CreateRecordSetRequestBody.
 
-        记录集的类型。  公网域名场景的记录类型: A、AAAA、MX、CNAME、TXT、NS、SRV、CAA。  内网域名场景的记录类型: A、AAAA、MX、CNAME、TXT、SRV。
+        **参数解释：** 记录集的类型。 **约束限制：** 不涉及。 **取值范围：** - 公网域名的记录类型: A、AAAA、MX、CNAME、TXT、SRV、NS、SOA、CAA。 - 内网域名的记录类型: A、AAAA、MX、CNAME、TXT、PTR、SRV、NS、SOA。  **默认取值：** 不涉及。
 
         :return: The type of this CreateRecordSetRequestBody.
         :rtype: str
@@ -139,7 +139,7 @@ class CreateRecordSetRequestBody:
     def type(self, type):
         r"""Sets the type of this CreateRecordSetRequestBody.
 
-        记录集的类型。  公网域名场景的记录类型: A、AAAA、MX、CNAME、TXT、NS、SRV、CAA。  内网域名场景的记录类型: A、AAAA、MX、CNAME、TXT、SRV。
+        **参数解释：** 记录集的类型。 **约束限制：** 不涉及。 **取值范围：** - 公网域名的记录类型: A、AAAA、MX、CNAME、TXT、SRV、NS、SOA、CAA。 - 内网域名的记录类型: A、AAAA、MX、CNAME、TXT、PTR、SRV、NS、SOA。  **默认取值：** 不涉及。
 
         :param type: The type of this CreateRecordSetRequestBody.
         :type type: str
@@ -150,7 +150,7 @@ class CreateRecordSetRequestBody:
     def status(self):
         r"""Gets the status of this CreateRecordSetRequestBody.
 
-        解析记录的状态。 取值范围： ENABLE：启用 DISABLE：暂停 默认值为ENABLE。
+        **参数解释：** 解析记录的状态。 **约束限制：** 不涉及。 **取值范围：** - ENABLE：启用解析 - DISABLE：暂停解析  **默认取值：** ENABLE。
 
         :return: The status of this CreateRecordSetRequestBody.
         :rtype: str
@@ -161,7 +161,7 @@ class CreateRecordSetRequestBody:
     def status(self, status):
         r"""Sets the status of this CreateRecordSetRequestBody.
 
-        解析记录的状态。 取值范围： ENABLE：启用 DISABLE：暂停 默认值为ENABLE。
+        **参数解释：** 解析记录的状态。 **约束限制：** 不涉及。 **取值范围：** - ENABLE：启用解析 - DISABLE：暂停解析  **默认取值：** ENABLE。
 
         :param status: The status of this CreateRecordSetRequestBody.
         :type status: str
@@ -172,7 +172,7 @@ class CreateRecordSetRequestBody:
     def ttl(self):
         r"""Gets the ttl of this CreateRecordSetRequestBody.
 
-        解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。 如果您的服务地址经常更换，建议TTL值设置相对小些，反之，建议设置相对大些。
+        **参数解释：** 解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。 如果您的服务地址经常更换，建议TTL值设置相对小些，反之，建议设置相对大些。 **约束限制：** 不涉及。 **取值范围：** 1~2147483647。 **默认取值：** 300
 
         :return: The ttl of this CreateRecordSetRequestBody.
         :rtype: int
@@ -183,7 +183,7 @@ class CreateRecordSetRequestBody:
     def ttl(self, ttl):
         r"""Sets the ttl of this CreateRecordSetRequestBody.
 
-        解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。 如果您的服务地址经常更换，建议TTL值设置相对小些，反之，建议设置相对大些。
+        **参数解释：** 解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。 如果您的服务地址经常更换，建议TTL值设置相对小些，反之，建议设置相对大些。 **约束限制：** 不涉及。 **取值范围：** 1~2147483647。 **默认取值：** 300
 
         :param ttl: The ttl of this CreateRecordSetRequestBody.
         :type ttl: int
@@ -194,7 +194,7 @@ class CreateRecordSetRequestBody:
     def records(self):
         r"""Gets the records of this CreateRecordSetRequestBody.
 
-        解析记录的值。不同类型解析记录对应的值的规则不同。
+        **参数解释：** 解析记录的值。不同类型解析记录对应的值的规则不同。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The records of this CreateRecordSetRequestBody.
         :rtype: list[str]
@@ -205,7 +205,7 @@ class CreateRecordSetRequestBody:
     def records(self, records):
         r"""Sets the records of this CreateRecordSetRequestBody.
 
-        解析记录的值。不同类型解析记录对应的值的规则不同。
+        **参数解释：** 解析记录的值。不同类型解析记录对应的值的规则不同。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param records: The records of this CreateRecordSetRequestBody.
         :type records: list[str]
@@ -216,7 +216,7 @@ class CreateRecordSetRequestBody:
     def tags(self):
         r"""Gets the tags of this CreateRecordSetRequestBody.
 
-        资源标签。
+        **参数解释：** 资源标签。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The tags of this CreateRecordSetRequestBody.
         :rtype: list[:class:`huaweicloudsdkdns.v2.Tag`]
@@ -227,7 +227,7 @@ class CreateRecordSetRequestBody:
     def tags(self, tags):
         r"""Sets the tags of this CreateRecordSetRequestBody.
 
-        资源标签。
+        **参数解释：** 资源标签。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param tags: The tags of this CreateRecordSetRequestBody.
         :type tags: list[:class:`huaweicloudsdkdns.v2.Tag`]

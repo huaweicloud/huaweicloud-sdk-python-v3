@@ -39,17 +39,17 @@ class ListLoginWhiteListRequest:
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: **参数解释**: 主机所属的企业项目ID。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。 **约束限制**: 开通企业项目功能后才需要配置企业项目。 **取值范围**: 字符长度1-256位 **默认取值**: 0 
+        :param enterprise_project_id: **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
         :type enterprise_project_id: str
-        :param private_ip: 服务器私有IP
+        :param private_ip: **参数解释**: 服务器私有IP **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
         :type private_ip: str
         :param login_ip: 登录源IP
         :type login_ip: str
         :param login_user_name: 登录用户名
         :type login_user_name: str
-        :param offset: 偏移量：指定返回记录的开始位置
+        :param offset: **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 不涉及 
         :type offset: int
-        :param limit: 每页显示个数
+        :param limit: **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
         :type limit: int
         """
         
@@ -78,7 +78,7 @@ class ListLoginWhiteListRequest:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this ListLoginWhiteListRequest.
 
-        **参数解释**: 主机所属的企业项目ID。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。 **约束限制**: 开通企业项目功能后才需要配置企业项目。 **取值范围**: 字符长度1-256位 **默认取值**: 0 
+        **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
 
         :return: The enterprise_project_id of this ListLoginWhiteListRequest.
         :rtype: str
@@ -89,7 +89,7 @@ class ListLoginWhiteListRequest:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this ListLoginWhiteListRequest.
 
-        **参数解释**: 主机所属的企业项目ID。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。 **约束限制**: 开通企业项目功能后才需要配置企业项目。 **取值范围**: 字符长度1-256位 **默认取值**: 0 
+        **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
 
         :param enterprise_project_id: The enterprise_project_id of this ListLoginWhiteListRequest.
         :type enterprise_project_id: str
@@ -100,7 +100,7 @@ class ListLoginWhiteListRequest:
     def private_ip(self):
         r"""Gets the private_ip of this ListLoginWhiteListRequest.
 
-        服务器私有IP
+        **参数解释**: 服务器私有IP **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
 
         :return: The private_ip of this ListLoginWhiteListRequest.
         :rtype: str
@@ -111,7 +111,7 @@ class ListLoginWhiteListRequest:
     def private_ip(self, private_ip):
         r"""Sets the private_ip of this ListLoginWhiteListRequest.
 
-        服务器私有IP
+        **参数解释**: 服务器私有IP **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
 
         :param private_ip: The private_ip of this ListLoginWhiteListRequest.
         :type private_ip: str
@@ -166,7 +166,7 @@ class ListLoginWhiteListRequest:
     def offset(self):
         r"""Gets the offset of this ListLoginWhiteListRequest.
 
-        偏移量：指定返回记录的开始位置
+        **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 不涉及 
 
         :return: The offset of this ListLoginWhiteListRequest.
         :rtype: int
@@ -177,7 +177,7 @@ class ListLoginWhiteListRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListLoginWhiteListRequest.
 
-        偏移量：指定返回记录的开始位置
+        **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 不涉及 
 
         :param offset: The offset of this ListLoginWhiteListRequest.
         :type offset: int
@@ -188,7 +188,7 @@ class ListLoginWhiteListRequest:
     def limit(self):
         r"""Gets the limit of this ListLoginWhiteListRequest.
 
-        每页显示个数
+        **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
 
         :return: The limit of this ListLoginWhiteListRequest.
         :rtype: int
@@ -199,7 +199,7 @@ class ListLoginWhiteListRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListLoginWhiteListRequest.
 
-        每页显示个数
+        **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
 
         :param limit: The limit of this ListLoginWhiteListRequest.
         :type limit: int

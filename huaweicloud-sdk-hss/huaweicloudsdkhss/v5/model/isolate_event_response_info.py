@@ -135,13 +135,13 @@ class IsolateEventResponseInfo:
         :type event_name: str
         :param severity: 威胁等级，包含如下:   - Security：安全   - Low: 低危   - Medium: 中危   - High: 高危   - Critical: 危急
         :type severity: str
-        :param container_name: 容器实例名称
+        :param container_name: **参数解释**： 容器实例名称 **取值范围**： 字符长度1-256位 
         :type container_name: str
         :param image_name: 镜像名称，只有容器类型的告警有
         :type image_name: str
-        :param host_name: 服务器名称
+        :param host_name: **参数解释**: 服务器名称 **取值范围**: 字符长度1-256位 
         :type host_name: str
-        :param host_id: 服务器ID
+        :param host_id: **参数解释**: 服务器ID **取值范围**: 字符长度1-64位 
         :type host_id: str
         :param private_ip: 服务器私有IP
         :type private_ip: str
@@ -491,7 +491,7 @@ class IsolateEventResponseInfo:
     def container_name(self):
         r"""Gets the container_name of this IsolateEventResponseInfo.
 
-        容器实例名称
+        **参数解释**： 容器实例名称 **取值范围**： 字符长度1-256位 
 
         :return: The container_name of this IsolateEventResponseInfo.
         :rtype: str
@@ -502,7 +502,7 @@ class IsolateEventResponseInfo:
     def container_name(self, container_name):
         r"""Sets the container_name of this IsolateEventResponseInfo.
 
-        容器实例名称
+        **参数解释**： 容器实例名称 **取值范围**： 字符长度1-256位 
 
         :param container_name: The container_name of this IsolateEventResponseInfo.
         :type container_name: str
@@ -535,7 +535,7 @@ class IsolateEventResponseInfo:
     def host_name(self):
         r"""Gets the host_name of this IsolateEventResponseInfo.
 
-        服务器名称
+        **参数解释**: 服务器名称 **取值范围**: 字符长度1-256位 
 
         :return: The host_name of this IsolateEventResponseInfo.
         :rtype: str
@@ -546,7 +546,7 @@ class IsolateEventResponseInfo:
     def host_name(self, host_name):
         r"""Sets the host_name of this IsolateEventResponseInfo.
 
-        服务器名称
+        **参数解释**: 服务器名称 **取值范围**: 字符长度1-256位 
 
         :param host_name: The host_name of this IsolateEventResponseInfo.
         :type host_name: str
@@ -557,7 +557,7 @@ class IsolateEventResponseInfo:
     def host_id(self):
         r"""Gets the host_id of this IsolateEventResponseInfo.
 
-        服务器ID
+        **参数解释**: 服务器ID **取值范围**: 字符长度1-64位 
 
         :return: The host_id of this IsolateEventResponseInfo.
         :rtype: str
@@ -568,7 +568,7 @@ class IsolateEventResponseInfo:
     def host_id(self, host_id):
         r"""Sets the host_id of this IsolateEventResponseInfo.
 
-        服务器ID
+        **参数解释**: 服务器ID **取值范围**: 字符长度1-64位 
 
         :param host_id: The host_id of this IsolateEventResponseInfo.
         :type host_id: str

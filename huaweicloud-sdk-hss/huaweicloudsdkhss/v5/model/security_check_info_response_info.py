@@ -47,25 +47,25 @@ class SecurityCheckInfoResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param severity: 风险等级，包含如下:   - Low : 低危   - Medium : 中危   - High : 高危
+        :param severity: **参数解释**: 风险等级 **取值范围**: - Low : 低危 - Medium : 中危 - High : 高危 
         :type severity: str
-        :param check_name: 配置检查（基线）的名称，例如SSH、CentOS 7、Windows
+        :param check_name: **参数解释**: 配置检查（基线）的名称，例如SSH、CentOS 7、Windows **取值范围**: 不涉及 
         :type check_name: str
-        :param check_type: 配置检查（基线）的类型,Linux系统支持的基线一般check_type和check_name相同,例如SSH、CentOS 7。 Windows系统支持的基线一般check_type和check_name不相同，例如check_name为Windows的配置检查（基线），它的check_type包含Windows Server 2019 R2、Windows Server 2016 R2等。
+        :param check_type: **参数解释**: 配置检查（基线）的类型,Linux系统支持的基线一般check_type和check_name相同,例如SSH、CentOS 7。 Windows系统支持的基线一般check_type和check_name不相同，例如check_name为Windows的配置检查（基线），它的check_type包含Windows Server 2019 R2、Windows Server 2016 R2等。 **取值范围**: 不涉及 
         :type check_type: str
-        :param standard: 标准类型，包含如下:   - cn_standard : 等保合规标准   - hw_standard : 云安全实践标准
+        :param standard: **参数解释**: 标准类型 **取值范围**: - cn_standard : 等保合规标准 - hw_standard : 云安全实践标准 
         :type standard: str
-        :param executable_file_path: 配置检查（基线）的路径信息
+        :param executable_file_path: **参数解释**: 配置检查（基线）的路径信息 **取值范围**: 不涉及 
         :type executable_file_path: str
-        :param check_rule_num: 当前配置检查（基线）类型下，用户共检测了多少个检查项。例如标准类型为hw_standard的SSH基线，主机安全提供了17个检查项，但用户所有主机都只检测了SSH基线的其中5个检查项，check_rule_num就是5。用户有一台主机进行了全量检查项检测，check_rule_num就是17。
+        :param check_rule_num: **参数解释**: 当前配置检查（基线）类型下，用户共检测了多少个检查项。例如标准类型为hw_standard的SSH基线，主机安全提供了17个检查项，但用户所有主机都只检测了SSH基线的其中5个检查项，check_rule_num就是5。用户有一台主机进行了全量检查项检测，check_rule_num就是17。 **取值范围**: 不涉及 
         :type check_rule_num: int
-        :param failed_rule_num: 未通过的检查项数量，check_rule_num中只要有一台主机没通过某个检查项，这个检查项就会被计算在failed_rule_num中
+        :param failed_rule_num: **参数解释**: 未通过的检查项数量，check_rule_num中只要有一台主机没通过某个检查项，这个检查项就会被计算在failed_rule_num中 **取值范围**: 不涉及 
         :type failed_rule_num: int
-        :param host_num: 受影响的服务器的数量，进行了当前基线检测的服务器数量
+        :param host_num: **参数解释**: 受影响的服务器的数量，进行了当前基线检测的服务器数量 **取值范围**: 不涉及 
         :type host_num: int
-        :param scan_time: 最新检测时间(ms)
+        :param scan_time: **参数解释**: 最新检测时间(ms) **取值范围**: 不涉及 
         :type scan_time: int
-        :param check_type_desc: 对配置检查（基线）类型的描述信息，概括当前基线包含的检查项是根据什么标准制定的，能够审计哪些方面的问题。
+        :param check_type_desc: **参数解释**: 对配置检查（基线）类型的描述信息，概括当前基线包含的检查项是根据什么标准制定的，能够审计哪些方面的问题。 **取值范围**: 不涉及 
         :type check_type_desc: str
         """
         
@@ -108,7 +108,7 @@ class SecurityCheckInfoResponseInfo:
     def severity(self):
         r"""Gets the severity of this SecurityCheckInfoResponseInfo.
 
-        风险等级，包含如下:   - Low : 低危   - Medium : 中危   - High : 高危
+        **参数解释**: 风险等级 **取值范围**: - Low : 低危 - Medium : 中危 - High : 高危 
 
         :return: The severity of this SecurityCheckInfoResponseInfo.
         :rtype: str
@@ -119,7 +119,7 @@ class SecurityCheckInfoResponseInfo:
     def severity(self, severity):
         r"""Sets the severity of this SecurityCheckInfoResponseInfo.
 
-        风险等级，包含如下:   - Low : 低危   - Medium : 中危   - High : 高危
+        **参数解释**: 风险等级 **取值范围**: - Low : 低危 - Medium : 中危 - High : 高危 
 
         :param severity: The severity of this SecurityCheckInfoResponseInfo.
         :type severity: str
@@ -130,7 +130,7 @@ class SecurityCheckInfoResponseInfo:
     def check_name(self):
         r"""Gets the check_name of this SecurityCheckInfoResponseInfo.
 
-        配置检查（基线）的名称，例如SSH、CentOS 7、Windows
+        **参数解释**: 配置检查（基线）的名称，例如SSH、CentOS 7、Windows **取值范围**: 不涉及 
 
         :return: The check_name of this SecurityCheckInfoResponseInfo.
         :rtype: str
@@ -141,7 +141,7 @@ class SecurityCheckInfoResponseInfo:
     def check_name(self, check_name):
         r"""Sets the check_name of this SecurityCheckInfoResponseInfo.
 
-        配置检查（基线）的名称，例如SSH、CentOS 7、Windows
+        **参数解释**: 配置检查（基线）的名称，例如SSH、CentOS 7、Windows **取值范围**: 不涉及 
 
         :param check_name: The check_name of this SecurityCheckInfoResponseInfo.
         :type check_name: str
@@ -152,7 +152,7 @@ class SecurityCheckInfoResponseInfo:
     def check_type(self):
         r"""Gets the check_type of this SecurityCheckInfoResponseInfo.
 
-        配置检查（基线）的类型,Linux系统支持的基线一般check_type和check_name相同,例如SSH、CentOS 7。 Windows系统支持的基线一般check_type和check_name不相同，例如check_name为Windows的配置检查（基线），它的check_type包含Windows Server 2019 R2、Windows Server 2016 R2等。
+        **参数解释**: 配置检查（基线）的类型,Linux系统支持的基线一般check_type和check_name相同,例如SSH、CentOS 7。 Windows系统支持的基线一般check_type和check_name不相同，例如check_name为Windows的配置检查（基线），它的check_type包含Windows Server 2019 R2、Windows Server 2016 R2等。 **取值范围**: 不涉及 
 
         :return: The check_type of this SecurityCheckInfoResponseInfo.
         :rtype: str
@@ -163,7 +163,7 @@ class SecurityCheckInfoResponseInfo:
     def check_type(self, check_type):
         r"""Sets the check_type of this SecurityCheckInfoResponseInfo.
 
-        配置检查（基线）的类型,Linux系统支持的基线一般check_type和check_name相同,例如SSH、CentOS 7。 Windows系统支持的基线一般check_type和check_name不相同，例如check_name为Windows的配置检查（基线），它的check_type包含Windows Server 2019 R2、Windows Server 2016 R2等。
+        **参数解释**: 配置检查（基线）的类型,Linux系统支持的基线一般check_type和check_name相同,例如SSH、CentOS 7。 Windows系统支持的基线一般check_type和check_name不相同，例如check_name为Windows的配置检查（基线），它的check_type包含Windows Server 2019 R2、Windows Server 2016 R2等。 **取值范围**: 不涉及 
 
         :param check_type: The check_type of this SecurityCheckInfoResponseInfo.
         :type check_type: str
@@ -174,7 +174,7 @@ class SecurityCheckInfoResponseInfo:
     def standard(self):
         r"""Gets the standard of this SecurityCheckInfoResponseInfo.
 
-        标准类型，包含如下:   - cn_standard : 等保合规标准   - hw_standard : 云安全实践标准
+        **参数解释**: 标准类型 **取值范围**: - cn_standard : 等保合规标准 - hw_standard : 云安全实践标准 
 
         :return: The standard of this SecurityCheckInfoResponseInfo.
         :rtype: str
@@ -185,7 +185,7 @@ class SecurityCheckInfoResponseInfo:
     def standard(self, standard):
         r"""Sets the standard of this SecurityCheckInfoResponseInfo.
 
-        标准类型，包含如下:   - cn_standard : 等保合规标准   - hw_standard : 云安全实践标准
+        **参数解释**: 标准类型 **取值范围**: - cn_standard : 等保合规标准 - hw_standard : 云安全实践标准 
 
         :param standard: The standard of this SecurityCheckInfoResponseInfo.
         :type standard: str
@@ -196,7 +196,7 @@ class SecurityCheckInfoResponseInfo:
     def executable_file_path(self):
         r"""Gets the executable_file_path of this SecurityCheckInfoResponseInfo.
 
-        配置检查（基线）的路径信息
+        **参数解释**: 配置检查（基线）的路径信息 **取值范围**: 不涉及 
 
         :return: The executable_file_path of this SecurityCheckInfoResponseInfo.
         :rtype: str
@@ -207,7 +207,7 @@ class SecurityCheckInfoResponseInfo:
     def executable_file_path(self, executable_file_path):
         r"""Sets the executable_file_path of this SecurityCheckInfoResponseInfo.
 
-        配置检查（基线）的路径信息
+        **参数解释**: 配置检查（基线）的路径信息 **取值范围**: 不涉及 
 
         :param executable_file_path: The executable_file_path of this SecurityCheckInfoResponseInfo.
         :type executable_file_path: str
@@ -218,7 +218,7 @@ class SecurityCheckInfoResponseInfo:
     def check_rule_num(self):
         r"""Gets the check_rule_num of this SecurityCheckInfoResponseInfo.
 
-        当前配置检查（基线）类型下，用户共检测了多少个检查项。例如标准类型为hw_standard的SSH基线，主机安全提供了17个检查项，但用户所有主机都只检测了SSH基线的其中5个检查项，check_rule_num就是5。用户有一台主机进行了全量检查项检测，check_rule_num就是17。
+        **参数解释**: 当前配置检查（基线）类型下，用户共检测了多少个检查项。例如标准类型为hw_standard的SSH基线，主机安全提供了17个检查项，但用户所有主机都只检测了SSH基线的其中5个检查项，check_rule_num就是5。用户有一台主机进行了全量检查项检测，check_rule_num就是17。 **取值范围**: 不涉及 
 
         :return: The check_rule_num of this SecurityCheckInfoResponseInfo.
         :rtype: int
@@ -229,7 +229,7 @@ class SecurityCheckInfoResponseInfo:
     def check_rule_num(self, check_rule_num):
         r"""Sets the check_rule_num of this SecurityCheckInfoResponseInfo.
 
-        当前配置检查（基线）类型下，用户共检测了多少个检查项。例如标准类型为hw_standard的SSH基线，主机安全提供了17个检查项，但用户所有主机都只检测了SSH基线的其中5个检查项，check_rule_num就是5。用户有一台主机进行了全量检查项检测，check_rule_num就是17。
+        **参数解释**: 当前配置检查（基线）类型下，用户共检测了多少个检查项。例如标准类型为hw_standard的SSH基线，主机安全提供了17个检查项，但用户所有主机都只检测了SSH基线的其中5个检查项，check_rule_num就是5。用户有一台主机进行了全量检查项检测，check_rule_num就是17。 **取值范围**: 不涉及 
 
         :param check_rule_num: The check_rule_num of this SecurityCheckInfoResponseInfo.
         :type check_rule_num: int
@@ -240,7 +240,7 @@ class SecurityCheckInfoResponseInfo:
     def failed_rule_num(self):
         r"""Gets the failed_rule_num of this SecurityCheckInfoResponseInfo.
 
-        未通过的检查项数量，check_rule_num中只要有一台主机没通过某个检查项，这个检查项就会被计算在failed_rule_num中
+        **参数解释**: 未通过的检查项数量，check_rule_num中只要有一台主机没通过某个检查项，这个检查项就会被计算在failed_rule_num中 **取值范围**: 不涉及 
 
         :return: The failed_rule_num of this SecurityCheckInfoResponseInfo.
         :rtype: int
@@ -251,7 +251,7 @@ class SecurityCheckInfoResponseInfo:
     def failed_rule_num(self, failed_rule_num):
         r"""Sets the failed_rule_num of this SecurityCheckInfoResponseInfo.
 
-        未通过的检查项数量，check_rule_num中只要有一台主机没通过某个检查项，这个检查项就会被计算在failed_rule_num中
+        **参数解释**: 未通过的检查项数量，check_rule_num中只要有一台主机没通过某个检查项，这个检查项就会被计算在failed_rule_num中 **取值范围**: 不涉及 
 
         :param failed_rule_num: The failed_rule_num of this SecurityCheckInfoResponseInfo.
         :type failed_rule_num: int
@@ -262,7 +262,7 @@ class SecurityCheckInfoResponseInfo:
     def host_num(self):
         r"""Gets the host_num of this SecurityCheckInfoResponseInfo.
 
-        受影响的服务器的数量，进行了当前基线检测的服务器数量
+        **参数解释**: 受影响的服务器的数量，进行了当前基线检测的服务器数量 **取值范围**: 不涉及 
 
         :return: The host_num of this SecurityCheckInfoResponseInfo.
         :rtype: int
@@ -273,7 +273,7 @@ class SecurityCheckInfoResponseInfo:
     def host_num(self, host_num):
         r"""Sets the host_num of this SecurityCheckInfoResponseInfo.
 
-        受影响的服务器的数量，进行了当前基线检测的服务器数量
+        **参数解释**: 受影响的服务器的数量，进行了当前基线检测的服务器数量 **取值范围**: 不涉及 
 
         :param host_num: The host_num of this SecurityCheckInfoResponseInfo.
         :type host_num: int
@@ -284,7 +284,7 @@ class SecurityCheckInfoResponseInfo:
     def scan_time(self):
         r"""Gets the scan_time of this SecurityCheckInfoResponseInfo.
 
-        最新检测时间(ms)
+        **参数解释**: 最新检测时间(ms) **取值范围**: 不涉及 
 
         :return: The scan_time of this SecurityCheckInfoResponseInfo.
         :rtype: int
@@ -295,7 +295,7 @@ class SecurityCheckInfoResponseInfo:
     def scan_time(self, scan_time):
         r"""Sets the scan_time of this SecurityCheckInfoResponseInfo.
 
-        最新检测时间(ms)
+        **参数解释**: 最新检测时间(ms) **取值范围**: 不涉及 
 
         :param scan_time: The scan_time of this SecurityCheckInfoResponseInfo.
         :type scan_time: int
@@ -306,7 +306,7 @@ class SecurityCheckInfoResponseInfo:
     def check_type_desc(self):
         r"""Gets the check_type_desc of this SecurityCheckInfoResponseInfo.
 
-        对配置检查（基线）类型的描述信息，概括当前基线包含的检查项是根据什么标准制定的，能够审计哪些方面的问题。
+        **参数解释**: 对配置检查（基线）类型的描述信息，概括当前基线包含的检查项是根据什么标准制定的，能够审计哪些方面的问题。 **取值范围**: 不涉及 
 
         :return: The check_type_desc of this SecurityCheckInfoResponseInfo.
         :rtype: str
@@ -317,7 +317,7 @@ class SecurityCheckInfoResponseInfo:
     def check_type_desc(self, check_type_desc):
         r"""Sets the check_type_desc of this SecurityCheckInfoResponseInfo.
 
-        对配置检查（基线）类型的描述信息，概括当前基线包含的检查项是根据什么标准制定的，能够审计哪些方面的问题。
+        **参数解释**: 对配置检查（基线）类型的描述信息，概括当前基线包含的检查项是根据什么标准制定的，能够审计哪些方面的问题。 **取值范围**: 不涉及 
 
         :param check_type_desc: The check_type_desc of this SecurityCheckInfoResponseInfo.
         :type check_type_desc: str

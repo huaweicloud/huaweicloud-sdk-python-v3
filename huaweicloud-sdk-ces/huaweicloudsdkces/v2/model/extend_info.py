@@ -18,7 +18,7 @@ class ExtendInfo:
 
     openapi_types = {
         'filter': 'str',
-        'period': 'int',
+        'period': 'str',
         'display_time': 'int',
         'refresh_time': 'int',
         '_from': 'int',
@@ -51,8 +51,8 @@ class ExtendInfo:
 
         :param filter: 表示指标聚合方式，average表示平均值，min表示最小值，max表示最大值，sum表示求合
         :type filter: str
-        :param period: 表示指标聚合周期，1表示原始值，60表示一分钟，300表示5分钟，1200表示20分钟，3600表示1小时，14400表示4小时，86400表示1天
-        :type period: int
+        :param period: &#39;表示指标聚合周期，{1:表示原始值，60:表示一分钟，300:表示5分钟，1200:表示20分钟，3600:表示1小时，14400:表示4小时，86400:表示1天}&#39; 
+        :type period: str
         :param display_time: 展示时间，0表示使用自定义时间展示， 5分钟，15分钟，30分钟，1小时，2小时，3小时，12小时，24小时，7天，30天
         :type display_time: int
         :param refresh_time: 刷新时间 0秒表示不刷新,10秒，1分钟，5分钟，20分钟
@@ -137,10 +137,10 @@ class ExtendInfo:
     def period(self):
         r"""Gets the period of this ExtendInfo.
 
-        表示指标聚合周期，1表示原始值，60表示一分钟，300表示5分钟，1200表示20分钟，3600表示1小时，14400表示4小时，86400表示1天
+        '表示指标聚合周期，{1:表示原始值，60:表示一分钟，300:表示5分钟，1200:表示20分钟，3600:表示1小时，14400:表示4小时，86400:表示1天}' 
 
         :return: The period of this ExtendInfo.
-        :rtype: int
+        :rtype: str
         """
         return self._period
 
@@ -148,10 +148,10 @@ class ExtendInfo:
     def period(self, period):
         r"""Sets the period of this ExtendInfo.
 
-        表示指标聚合周期，1表示原始值，60表示一分钟，300表示5分钟，1200表示20分钟，3600表示1小时，14400表示4小时，86400表示1天
+        '表示指标聚合周期，{1:表示原始值，60:表示一分钟，300:表示5分钟，1200:表示20分钟，3600:表示1小时，14400:表示4小时，86400:表示1天}' 
 
         :param period: The period of this ExtendInfo.
-        :type period: int
+        :type period: str
         """
         self._period = period
 

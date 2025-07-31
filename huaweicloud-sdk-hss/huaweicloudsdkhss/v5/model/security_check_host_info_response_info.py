@@ -41,19 +41,19 @@ class SecurityCheckHostInfoResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param host_id: 主机ID
+        :param host_id: **参数解释**: 主机ID **取值范围**: 不涉及 
         :type host_id: str
-        :param host_name: 服务器名称
+        :param host_name: **参数解释**: 服务器名称 **取值范围**: 不涉及 
         :type host_name: str
-        :param host_public_ip: 服务器公网IP
+        :param host_public_ip: **参数解释**: 服务器公网IP **取值范围**: 不涉及 
         :type host_public_ip: str
-        :param host_private_ip: 服务器私网IP
+        :param host_private_ip: **参数解释**: 服务器私网IP **取值范围**: 不涉及 
         :type host_private_ip: str
-        :param scan_time: 扫描时间(ms)
+        :param scan_time: **参数解释**: 扫描时间(ms) **取值范围**: 不涉及 
         :type scan_time: int
-        :param failed_num: 风险项数量
+        :param failed_num: **参数解释**: 风险项数量 **取值范围**: 不涉及 
         :type failed_num: int
-        :param passed_num: 通过项数量
+        :param passed_num: **参数解释**: 通过项数量 **取值范围**: 不涉及 
         :type passed_num: int
         """
         
@@ -87,7 +87,7 @@ class SecurityCheckHostInfoResponseInfo:
     def host_id(self):
         r"""Gets the host_id of this SecurityCheckHostInfoResponseInfo.
 
-        主机ID
+        **参数解释**: 主机ID **取值范围**: 不涉及 
 
         :return: The host_id of this SecurityCheckHostInfoResponseInfo.
         :rtype: str
@@ -98,7 +98,7 @@ class SecurityCheckHostInfoResponseInfo:
     def host_id(self, host_id):
         r"""Sets the host_id of this SecurityCheckHostInfoResponseInfo.
 
-        主机ID
+        **参数解释**: 主机ID **取值范围**: 不涉及 
 
         :param host_id: The host_id of this SecurityCheckHostInfoResponseInfo.
         :type host_id: str
@@ -109,7 +109,7 @@ class SecurityCheckHostInfoResponseInfo:
     def host_name(self):
         r"""Gets the host_name of this SecurityCheckHostInfoResponseInfo.
 
-        服务器名称
+        **参数解释**: 服务器名称 **取值范围**: 不涉及 
 
         :return: The host_name of this SecurityCheckHostInfoResponseInfo.
         :rtype: str
@@ -120,7 +120,7 @@ class SecurityCheckHostInfoResponseInfo:
     def host_name(self, host_name):
         r"""Sets the host_name of this SecurityCheckHostInfoResponseInfo.
 
-        服务器名称
+        **参数解释**: 服务器名称 **取值范围**: 不涉及 
 
         :param host_name: The host_name of this SecurityCheckHostInfoResponseInfo.
         :type host_name: str
@@ -131,7 +131,7 @@ class SecurityCheckHostInfoResponseInfo:
     def host_public_ip(self):
         r"""Gets the host_public_ip of this SecurityCheckHostInfoResponseInfo.
 
-        服务器公网IP
+        **参数解释**: 服务器公网IP **取值范围**: 不涉及 
 
         :return: The host_public_ip of this SecurityCheckHostInfoResponseInfo.
         :rtype: str
@@ -142,7 +142,7 @@ class SecurityCheckHostInfoResponseInfo:
     def host_public_ip(self, host_public_ip):
         r"""Sets the host_public_ip of this SecurityCheckHostInfoResponseInfo.
 
-        服务器公网IP
+        **参数解释**: 服务器公网IP **取值范围**: 不涉及 
 
         :param host_public_ip: The host_public_ip of this SecurityCheckHostInfoResponseInfo.
         :type host_public_ip: str
@@ -153,7 +153,7 @@ class SecurityCheckHostInfoResponseInfo:
     def host_private_ip(self):
         r"""Gets the host_private_ip of this SecurityCheckHostInfoResponseInfo.
 
-        服务器私网IP
+        **参数解释**: 服务器私网IP **取值范围**: 不涉及 
 
         :return: The host_private_ip of this SecurityCheckHostInfoResponseInfo.
         :rtype: str
@@ -164,7 +164,7 @@ class SecurityCheckHostInfoResponseInfo:
     def host_private_ip(self, host_private_ip):
         r"""Sets the host_private_ip of this SecurityCheckHostInfoResponseInfo.
 
-        服务器私网IP
+        **参数解释**: 服务器私网IP **取值范围**: 不涉及 
 
         :param host_private_ip: The host_private_ip of this SecurityCheckHostInfoResponseInfo.
         :type host_private_ip: str
@@ -175,7 +175,7 @@ class SecurityCheckHostInfoResponseInfo:
     def scan_time(self):
         r"""Gets the scan_time of this SecurityCheckHostInfoResponseInfo.
 
-        扫描时间(ms)
+        **参数解释**: 扫描时间(ms) **取值范围**: 不涉及 
 
         :return: The scan_time of this SecurityCheckHostInfoResponseInfo.
         :rtype: int
@@ -186,7 +186,7 @@ class SecurityCheckHostInfoResponseInfo:
     def scan_time(self, scan_time):
         r"""Sets the scan_time of this SecurityCheckHostInfoResponseInfo.
 
-        扫描时间(ms)
+        **参数解释**: 扫描时间(ms) **取值范围**: 不涉及 
 
         :param scan_time: The scan_time of this SecurityCheckHostInfoResponseInfo.
         :type scan_time: int
@@ -197,7 +197,7 @@ class SecurityCheckHostInfoResponseInfo:
     def failed_num(self):
         r"""Gets the failed_num of this SecurityCheckHostInfoResponseInfo.
 
-        风险项数量
+        **参数解释**: 风险项数量 **取值范围**: 不涉及 
 
         :return: The failed_num of this SecurityCheckHostInfoResponseInfo.
         :rtype: int
@@ -208,7 +208,7 @@ class SecurityCheckHostInfoResponseInfo:
     def failed_num(self, failed_num):
         r"""Sets the failed_num of this SecurityCheckHostInfoResponseInfo.
 
-        风险项数量
+        **参数解释**: 风险项数量 **取值范围**: 不涉及 
 
         :param failed_num: The failed_num of this SecurityCheckHostInfoResponseInfo.
         :type failed_num: int
@@ -219,7 +219,7 @@ class SecurityCheckHostInfoResponseInfo:
     def passed_num(self):
         r"""Gets the passed_num of this SecurityCheckHostInfoResponseInfo.
 
-        通过项数量
+        **参数解释**: 通过项数量 **取值范围**: 不涉及 
 
         :return: The passed_num of this SecurityCheckHostInfoResponseInfo.
         :rtype: int
@@ -230,7 +230,7 @@ class SecurityCheckHostInfoResponseInfo:
     def passed_num(self, passed_num):
         r"""Sets the passed_num of this SecurityCheckHostInfoResponseInfo.
 
-        通过项数量
+        **参数解释**: 通过项数量 **取值范围**: 不涉及 
 
         :param passed_num: The passed_num of this SecurityCheckHostInfoResponseInfo.
         :type passed_num: int

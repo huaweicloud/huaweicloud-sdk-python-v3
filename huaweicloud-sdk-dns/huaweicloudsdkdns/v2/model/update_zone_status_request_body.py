@@ -29,7 +29,7 @@ class UpdateZoneStatusRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param status: 域名状态。  取值范围：  ENABLE：启用解析 DISABLE：暂停解析
+        :param status: **参数解释：** 域名状态。 **约束限制：** 不涉及。 **取值范围：** - ENABLE：启用解析 - DISABLE：暂停解析  **默认取值：** 不涉及。
         :type status: str
         """
         
@@ -44,7 +44,7 @@ class UpdateZoneStatusRequestBody:
     def status(self):
         r"""Gets the status of this UpdateZoneStatusRequestBody.
 
-        域名状态。  取值范围：  ENABLE：启用解析 DISABLE：暂停解析
+        **参数解释：** 域名状态。 **约束限制：** 不涉及。 **取值范围：** - ENABLE：启用解析 - DISABLE：暂停解析  **默认取值：** 不涉及。
 
         :return: The status of this UpdateZoneStatusRequestBody.
         :rtype: str
@@ -55,7 +55,7 @@ class UpdateZoneStatusRequestBody:
     def status(self, status):
         r"""Sets the status of this UpdateZoneStatusRequestBody.
 
-        域名状态。  取值范围：  ENABLE：启用解析 DISABLE：暂停解析
+        **参数解释：** 域名状态。 **约束限制：** 不涉及。 **取值范围：** - ENABLE：启用解析 - DISABLE：暂停解析  **默认取值：** 不涉及。
 
         :param status: The status of this UpdateZoneStatusRequestBody.
         :type status: str

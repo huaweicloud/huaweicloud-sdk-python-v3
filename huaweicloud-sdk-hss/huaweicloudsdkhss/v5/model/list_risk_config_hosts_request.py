@@ -41,19 +41,19 @@ class ListRiskConfigHostsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
+        :param enterprise_project_id: **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
         :type enterprise_project_id: str
-        :param check_name: 配置检查（基线）的名称，例如SSH、CentOS 7、Windows
+        :param check_name: **参数解释**: 配置检查（基线）的名称，例如SSH、CentOS 7、Windows **约束限制**: 不涉及 **取值范围**: 字符长度0-256位 **默认取值**: 不涉及 
         :type check_name: str
-        :param standard: 标准类型，包含如下: - cn_standard : 等保合规标准 - hw_standard : 云安全实践标准
+        :param standard: **参数解释**: 标准类型 **约束限制**: 不涉及 **取值范围**: - cn_standard : 等保合规标准 - hw_standard : 云安全实践标准 **默认取值**: 不涉及 
         :type standard: str
-        :param host_name: 服务器名称
+        :param host_name: **参数解释**: 服务器名称 **约束限制**: 不涉及 **取值范围**: 字符长度0-256位 **默认取值**: 不涉及 
         :type host_name: str
-        :param host_ip: 服务器IP地址
+        :param host_ip: **参数解释**: 服务器IP地址 **约束限制**: 不涉及 **取值范围**: 字符长度0-256位 **默认取值**: 不涉及 
         :type host_ip: str
-        :param limit: 每页数量
+        :param limit: **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
         :type limit: int
-        :param offset: 偏移量：指定返回记录的开始位置
+        :param offset: **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 默认为0 
         :type offset: int
         """
         
@@ -85,7 +85,7 @@ class ListRiskConfigHostsRequest:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this ListRiskConfigHostsRequest.
 
-        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
+        **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
 
         :return: The enterprise_project_id of this ListRiskConfigHostsRequest.
         :rtype: str
@@ -96,7 +96,7 @@ class ListRiskConfigHostsRequest:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this ListRiskConfigHostsRequest.
 
-        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
+        **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
 
         :param enterprise_project_id: The enterprise_project_id of this ListRiskConfigHostsRequest.
         :type enterprise_project_id: str
@@ -107,7 +107,7 @@ class ListRiskConfigHostsRequest:
     def check_name(self):
         r"""Gets the check_name of this ListRiskConfigHostsRequest.
 
-        配置检查（基线）的名称，例如SSH、CentOS 7、Windows
+        **参数解释**: 配置检查（基线）的名称，例如SSH、CentOS 7、Windows **约束限制**: 不涉及 **取值范围**: 字符长度0-256位 **默认取值**: 不涉及 
 
         :return: The check_name of this ListRiskConfigHostsRequest.
         :rtype: str
@@ -118,7 +118,7 @@ class ListRiskConfigHostsRequest:
     def check_name(self, check_name):
         r"""Sets the check_name of this ListRiskConfigHostsRequest.
 
-        配置检查（基线）的名称，例如SSH、CentOS 7、Windows
+        **参数解释**: 配置检查（基线）的名称，例如SSH、CentOS 7、Windows **约束限制**: 不涉及 **取值范围**: 字符长度0-256位 **默认取值**: 不涉及 
 
         :param check_name: The check_name of this ListRiskConfigHostsRequest.
         :type check_name: str
@@ -129,7 +129,7 @@ class ListRiskConfigHostsRequest:
     def standard(self):
         r"""Gets the standard of this ListRiskConfigHostsRequest.
 
-        标准类型，包含如下: - cn_standard : 等保合规标准 - hw_standard : 云安全实践标准
+        **参数解释**: 标准类型 **约束限制**: 不涉及 **取值范围**: - cn_standard : 等保合规标准 - hw_standard : 云安全实践标准 **默认取值**: 不涉及 
 
         :return: The standard of this ListRiskConfigHostsRequest.
         :rtype: str
@@ -140,7 +140,7 @@ class ListRiskConfigHostsRequest:
     def standard(self, standard):
         r"""Sets the standard of this ListRiskConfigHostsRequest.
 
-        标准类型，包含如下: - cn_standard : 等保合规标准 - hw_standard : 云安全实践标准
+        **参数解释**: 标准类型 **约束限制**: 不涉及 **取值范围**: - cn_standard : 等保合规标准 - hw_standard : 云安全实践标准 **默认取值**: 不涉及 
 
         :param standard: The standard of this ListRiskConfigHostsRequest.
         :type standard: str
@@ -151,7 +151,7 @@ class ListRiskConfigHostsRequest:
     def host_name(self):
         r"""Gets the host_name of this ListRiskConfigHostsRequest.
 
-        服务器名称
+        **参数解释**: 服务器名称 **约束限制**: 不涉及 **取值范围**: 字符长度0-256位 **默认取值**: 不涉及 
 
         :return: The host_name of this ListRiskConfigHostsRequest.
         :rtype: str
@@ -162,7 +162,7 @@ class ListRiskConfigHostsRequest:
     def host_name(self, host_name):
         r"""Sets the host_name of this ListRiskConfigHostsRequest.
 
-        服务器名称
+        **参数解释**: 服务器名称 **约束限制**: 不涉及 **取值范围**: 字符长度0-256位 **默认取值**: 不涉及 
 
         :param host_name: The host_name of this ListRiskConfigHostsRequest.
         :type host_name: str
@@ -173,7 +173,7 @@ class ListRiskConfigHostsRequest:
     def host_ip(self):
         r"""Gets the host_ip of this ListRiskConfigHostsRequest.
 
-        服务器IP地址
+        **参数解释**: 服务器IP地址 **约束限制**: 不涉及 **取值范围**: 字符长度0-256位 **默认取值**: 不涉及 
 
         :return: The host_ip of this ListRiskConfigHostsRequest.
         :rtype: str
@@ -184,7 +184,7 @@ class ListRiskConfigHostsRequest:
     def host_ip(self, host_ip):
         r"""Sets the host_ip of this ListRiskConfigHostsRequest.
 
-        服务器IP地址
+        **参数解释**: 服务器IP地址 **约束限制**: 不涉及 **取值范围**: 字符长度0-256位 **默认取值**: 不涉及 
 
         :param host_ip: The host_ip of this ListRiskConfigHostsRequest.
         :type host_ip: str
@@ -195,7 +195,7 @@ class ListRiskConfigHostsRequest:
     def limit(self):
         r"""Gets the limit of this ListRiskConfigHostsRequest.
 
-        每页数量
+        **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
 
         :return: The limit of this ListRiskConfigHostsRequest.
         :rtype: int
@@ -206,7 +206,7 @@ class ListRiskConfigHostsRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListRiskConfigHostsRequest.
 
-        每页数量
+        **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
 
         :param limit: The limit of this ListRiskConfigHostsRequest.
         :type limit: int
@@ -217,7 +217,7 @@ class ListRiskConfigHostsRequest:
     def offset(self):
         r"""Gets the offset of this ListRiskConfigHostsRequest.
 
-        偏移量：指定返回记录的开始位置
+        **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 默认为0 
 
         :return: The offset of this ListRiskConfigHostsRequest.
         :rtype: int
@@ -228,7 +228,7 @@ class ListRiskConfigHostsRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListRiskConfigHostsRequest.
 
-        偏移量：指定返回记录的开始位置
+        **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 默认为0 
 
         :param offset: The offset of this ListRiskConfigHostsRequest.
         :type offset: int

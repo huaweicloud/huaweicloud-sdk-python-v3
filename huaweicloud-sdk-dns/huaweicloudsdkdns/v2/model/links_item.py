@@ -31,9 +31,9 @@ class LinksItem:
 
         The model defined in huaweicloud sdk
 
-        :param href: 对应快捷链接。
+        :param href: **参数解释：** 对应快捷链接。 **取值范围：** 不涉及。
         :type href: str
-        :param rel: 快捷链接标记名称。
+        :param rel: **参数解释：** 快捷链接标记名称。 **取值范围：** 不涉及。
         :type rel: str
         """
         
@@ -50,7 +50,7 @@ class LinksItem:
     def href(self):
         r"""Gets the href of this LinksItem.
 
-        对应快捷链接。
+        **参数解释：** 对应快捷链接。 **取值范围：** 不涉及。
 
         :return: The href of this LinksItem.
         :rtype: str
@@ -61,7 +61,7 @@ class LinksItem:
     def href(self, href):
         r"""Sets the href of this LinksItem.
 
-        对应快捷链接。
+        **参数解释：** 对应快捷链接。 **取值范围：** 不涉及。
 
         :param href: The href of this LinksItem.
         :type href: str
@@ -72,7 +72,7 @@ class LinksItem:
     def rel(self):
         r"""Gets the rel of this LinksItem.
 
-        快捷链接标记名称。
+        **参数解释：** 快捷链接标记名称。 **取值范围：** 不涉及。
 
         :return: The rel of this LinksItem.
         :rtype: str
@@ -83,7 +83,7 @@ class LinksItem:
     def rel(self, rel):
         r"""Sets the rel of this LinksItem.
 
-        快捷链接标记名称。
+        **参数解释：** 快捷链接标记名称。 **取值范围：** 不涉及。
 
         :param rel: The rel of this LinksItem.
         :type rel: str

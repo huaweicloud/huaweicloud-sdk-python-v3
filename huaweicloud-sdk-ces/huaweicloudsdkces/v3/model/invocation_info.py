@@ -29,7 +29,8 @@ class InvocationInfo:
         'create_time': 'int',
         'update_time': 'int',
         'current_version': 'str',
-        'target_version': 'str'
+        'target_version': 'str',
+        'result_msg': 'str'
     }
 
     attribute_map = {
@@ -45,10 +46,11 @@ class InvocationInfo:
         'create_time': 'create_time',
         'update_time': 'update_time',
         'current_version': 'current_version',
-        'target_version': 'target_version'
+        'target_version': 'target_version',
+        'result_msg': 'result_msg'
     }
 
-    def __init__(self, invocation_id=None, instance_id=None, instance_name=None, instance_type=None, intranet_ips=None, elastic_ips=None, invocation_type=None, invocation_status=None, invocation_target=None, create_time=None, update_time=None, current_version=None, target_version=None):
+    def __init__(self, invocation_id=None, instance_id=None, instance_name=None, instance_type=None, intranet_ips=None, elastic_ips=None, invocation_type=None, invocation_status=None, invocation_target=None, create_time=None, update_time=None, current_version=None, target_version=None, result_msg=None):
         r"""InvocationInfo
 
         The model defined in huaweicloud sdk
@@ -65,11 +67,11 @@ class InvocationInfo:
         :type intranet_ips: list[str]
         :param elastic_ips: 弹性公网ip列表
         :type elastic_ips: list[str]
-        :param invocation_type: 任务类型(INSTALL 安装，UPDATE 升级，ROLLBACK 回滚，RETRY 重试)
+        :param invocation_type: 任务类型(INSTALL 安装，UPDATE升级，ROLLBACK回滚，RETRY重试)
         :type invocation_type: str
         :param invocation_status: 任务状态，PENDING 待执行，RUNNING 运行中，TIMEOUT 超时，FAILED 失败，SUCCEEDED 成功，CANCELED 取消，ROLLBACKED已回退
         :type invocation_status: str
-        :param invocation_target: 任务对象，目前仅支持telescope
+        :param invocation_target: 任务对象，目前支持telescope
         :type invocation_target: str
         :param create_time: 任务创建时间
         :type create_time: int
@@ -79,6 +81,8 @@ class InvocationInfo:
         :type current_version: str
         :param target_version: 目标版本
         :type target_version: str
+        :param result_msg: 任务执行结果信息
+        :type result_msg: str
         """
         
         
@@ -96,6 +100,7 @@ class InvocationInfo:
         self._update_time = None
         self._current_version = None
         self._target_version = None
+        self._result_msg = None
         self.discriminator = None
 
         if invocation_id is not None:
@@ -124,6 +129,8 @@ class InvocationInfo:
             self.current_version = current_version
         if target_version is not None:
             self.target_version = target_version
+        if result_msg is not None:
+            self.result_msg = result_msg
 
     @property
     def invocation_id(self):
@@ -261,7 +268,7 @@ class InvocationInfo:
     def invocation_type(self):
         r"""Gets the invocation_type of this InvocationInfo.
 
-        任务类型(INSTALL 安装，UPDATE 升级，ROLLBACK 回滚，RETRY 重试)
+        任务类型(INSTALL 安装，UPDATE升级，ROLLBACK回滚，RETRY重试)
 
         :return: The invocation_type of this InvocationInfo.
         :rtype: str
@@ -272,7 +279,7 @@ class InvocationInfo:
     def invocation_type(self, invocation_type):
         r"""Sets the invocation_type of this InvocationInfo.
 
-        任务类型(INSTALL 安装，UPDATE 升级，ROLLBACK 回滚，RETRY 重试)
+        任务类型(INSTALL 安装，UPDATE升级，ROLLBACK回滚，RETRY重试)
 
         :param invocation_type: The invocation_type of this InvocationInfo.
         :type invocation_type: str
@@ -305,7 +312,7 @@ class InvocationInfo:
     def invocation_target(self):
         r"""Gets the invocation_target of this InvocationInfo.
 
-        任务对象，目前仅支持telescope
+        任务对象，目前支持telescope
 
         :return: The invocation_target of this InvocationInfo.
         :rtype: str
@@ -316,7 +323,7 @@ class InvocationInfo:
     def invocation_target(self, invocation_target):
         r"""Sets the invocation_target of this InvocationInfo.
 
-        任务对象，目前仅支持telescope
+        任务对象，目前支持telescope
 
         :param invocation_target: The invocation_target of this InvocationInfo.
         :type invocation_target: str
@@ -410,6 +417,28 @@ class InvocationInfo:
         :type target_version: str
         """
         self._target_version = target_version
+
+    @property
+    def result_msg(self):
+        r"""Gets the result_msg of this InvocationInfo.
+
+        任务执行结果信息
+
+        :return: The result_msg of this InvocationInfo.
+        :rtype: str
+        """
+        return self._result_msg
+
+    @result_msg.setter
+    def result_msg(self, result_msg):
+        r"""Sets the result_msg of this InvocationInfo.
+
+        任务执行结果信息
+
+        :param result_msg: The result_msg of this InvocationInfo.
+        :type result_msg: str
+        """
+        self._result_msg = result_msg
 
     def to_dict(self):
         """Returns the model properties as a dict"""

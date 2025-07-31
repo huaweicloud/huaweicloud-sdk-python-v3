@@ -33,6 +33,201 @@ class CocAsyncClient(Client):
 
         return client_builder
 
+    def create_password_change_plan_async(self, request):
+        r"""创建改密计划
+
+        创建改密计划
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreatePasswordChangePlan
+        :type request: :class:`huaweicloudsdkcoc.v1.CreatePasswordChangePlanRequest`
+        :rtype: :class:`huaweicloudsdkcoc.v1.CreatePasswordChangePlanResponse`
+        """
+        http_info = self._create_password_change_plan_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_password_change_plan_async_invoker(self, request):
+        http_info = self._create_password_change_plan_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_password_change_plan_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/account-mgmt/accounts/password-change-plan",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePasswordChangePlanResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def reset_account_password_async(self, request):
+        r"""主机密码重置
+
+        主机密码重置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ResetAccountPassword
+        :type request: :class:`huaweicloudsdkcoc.v1.ResetAccountPasswordRequest`
+        :rtype: :class:`huaweicloudsdkcoc.v1.ResetAccountPasswordResponse`
+        """
+        http_info = self._reset_account_password_http_info(request)
+        return self._call_api(**http_info)
+
+    def reset_account_password_async_invoker(self, request):
+        http_info = self._reset_account_password_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _reset_account_password_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/account-mgmt/accounts/password/reset",
+            "request_type": request.__class__.__name__,
+            "response_type": "ResetAccountPasswordResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_account_password_async(self, request):
+        r"""回写改密结果
+
+        回写改密结果
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateAccountPassword
+        :type request: :class:`huaweicloudsdkcoc.v1.UpdateAccountPasswordRequest`
+        :rtype: :class:`huaweicloudsdkcoc.v1.UpdateAccountPasswordResponse`
+        """
+        http_info = self._update_account_password_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_account_password_async_invoker(self, request):
+        http_info = self._update_account_password_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_account_password_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/account-mgmt/accounts/password/update",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAccountPasswordResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def clear_alarm_async(self, request):
         r"""批量清除告警
 

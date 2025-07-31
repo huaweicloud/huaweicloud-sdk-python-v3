@@ -18,15 +18,17 @@ class ResourceNameItem:
 
     openapi_types = {
         'resource_name': 'str',
-        'operator': 'str'
+        'operator': 'str',
+        'resource_name_is_ignore_case': 'bool'
     }
 
     attribute_map = {
         'resource_name': 'resource_name',
-        'operator': 'operator'
+        'operator': 'operator',
+        'resource_name_is_ignore_case': 'resource_name_is_ignore_case'
     }
 
-    def __init__(self, resource_name=None, operator=None):
+    def __init__(self, resource_name=None, operator=None, resource_name_is_ignore_case=None):
         r"""ResourceNameItem
 
         The model defined in huaweicloud sdk
@@ -35,17 +37,22 @@ class ResourceNameItem:
         :type resource_name: str
         :param operator: 实例操作符，含义是真实资源的名称与资源名称条件值的运算关系。   include表示包含   prefix表示前缀   suffix表示后缀   notInclude表示不包含   equal表示相等   all表示全部 
         :type operator: str
+        :param resource_name_is_ignore_case: 资源名称忽略大小写
+        :type resource_name_is_ignore_case: bool
         """
         
         
 
         self._resource_name = None
         self._operator = None
+        self._resource_name_is_ignore_case = None
         self.discriminator = None
 
         if resource_name is not None:
             self.resource_name = resource_name
         self.operator = operator
+        if resource_name_is_ignore_case is not None:
+            self.resource_name_is_ignore_case = resource_name_is_ignore_case
 
     @property
     def resource_name(self):
@@ -90,6 +97,28 @@ class ResourceNameItem:
         :type operator: str
         """
         self._operator = operator
+
+    @property
+    def resource_name_is_ignore_case(self):
+        r"""Gets the resource_name_is_ignore_case of this ResourceNameItem.
+
+        资源名称忽略大小写
+
+        :return: The resource_name_is_ignore_case of this ResourceNameItem.
+        :rtype: bool
+        """
+        return self._resource_name_is_ignore_case
+
+    @resource_name_is_ignore_case.setter
+    def resource_name_is_ignore_case(self, resource_name_is_ignore_case):
+        r"""Sets the resource_name_is_ignore_case of this ResourceNameItem.
+
+        资源名称忽略大小写
+
+        :param resource_name_is_ignore_case: The resource_name_is_ignore_case of this ResourceNameItem.
+        :type resource_name_is_ignore_case: bool
+        """
+        self._resource_name_is_ignore_case = resource_name_is_ignore_case
 
     def to_dict(self):
         """Returns the model properties as a dict"""

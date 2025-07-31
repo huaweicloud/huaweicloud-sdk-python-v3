@@ -22,6 +22,8 @@ class ListTtscVocabularyConfigsRequest:
         'type': 'str',
         'tts_service_name': 'str',
         'is_vocabulary_config_enable': 'str',
+        'group_id': 'str',
+        'asset_id': 'str',
         'limit': 'int',
         'offset': 'int',
         'start_time': 'str',
@@ -35,6 +37,8 @@ class ListTtscVocabularyConfigsRequest:
         'type': 'type',
         'tts_service_name': 'tts_service_name',
         'is_vocabulary_config_enable': 'is_vocabulary_config_enable',
+        'group_id': 'group_id',
+        'asset_id': 'asset_id',
         'limit': 'limit',
         'offset': 'offset',
         'start_time': 'start_time',
@@ -42,7 +46,7 @@ class ListTtscVocabularyConfigsRequest:
         'search_key': 'search_key'
     }
 
-    def __init__(self, x_request_id=None, x_app_user_id=None, type=None, tts_service_name=None, is_vocabulary_config_enable=None, limit=None, offset=None, start_time=None, end_time=None, search_key=None):
+    def __init__(self, x_request_id=None, x_app_user_id=None, type=None, tts_service_name=None, is_vocabulary_config_enable=None, group_id=None, asset_id=None, limit=None, offset=None, start_time=None, end_time=None, search_key=None):
         r"""ListTtscVocabularyConfigsRequest
 
         The model defined in huaweicloud sdk
@@ -57,6 +61,10 @@ class ListTtscVocabularyConfigsRequest:
         :type tts_service_name: str
         :param is_vocabulary_config_enable: 是否应用词表配置，从周边服务传递
         :type is_vocabulary_config_enable: str
+        :param group_id: 分组id
+        :type group_id: str
+        :param asset_id: 资产id
+        :type asset_id: str
         :param limit: 每页显示的条目数量。
         :type limit: int
         :param offset: 偏移量，表示从此偏移量开始查询。
@@ -76,6 +84,8 @@ class ListTtscVocabularyConfigsRequest:
         self._type = None
         self._tts_service_name = None
         self._is_vocabulary_config_enable = None
+        self._group_id = None
+        self._asset_id = None
         self._limit = None
         self._offset = None
         self._start_time = None
@@ -93,6 +103,10 @@ class ListTtscVocabularyConfigsRequest:
             self.tts_service_name = tts_service_name
         if is_vocabulary_config_enable is not None:
             self.is_vocabulary_config_enable = is_vocabulary_config_enable
+        if group_id is not None:
+            self.group_id = group_id
+        if asset_id is not None:
+            self.asset_id = asset_id
         if limit is not None:
             self.limit = limit
         if offset is not None:
@@ -213,6 +227,50 @@ class ListTtscVocabularyConfigsRequest:
         :type is_vocabulary_config_enable: str
         """
         self._is_vocabulary_config_enable = is_vocabulary_config_enable
+
+    @property
+    def group_id(self):
+        r"""Gets the group_id of this ListTtscVocabularyConfigsRequest.
+
+        分组id
+
+        :return: The group_id of this ListTtscVocabularyConfigsRequest.
+        :rtype: str
+        """
+        return self._group_id
+
+    @group_id.setter
+    def group_id(self, group_id):
+        r"""Sets the group_id of this ListTtscVocabularyConfigsRequest.
+
+        分组id
+
+        :param group_id: The group_id of this ListTtscVocabularyConfigsRequest.
+        :type group_id: str
+        """
+        self._group_id = group_id
+
+    @property
+    def asset_id(self):
+        r"""Gets the asset_id of this ListTtscVocabularyConfigsRequest.
+
+        资产id
+
+        :return: The asset_id of this ListTtscVocabularyConfigsRequest.
+        :rtype: str
+        """
+        return self._asset_id
+
+    @asset_id.setter
+    def asset_id(self, asset_id):
+        r"""Sets the asset_id of this ListTtscVocabularyConfigsRequest.
+
+        资产id
+
+        :param asset_id: The asset_id of this ListTtscVocabularyConfigsRequest.
+        :type asset_id: str
+        """
+        self._asset_id = asset_id
 
     @property
     def limit(self):

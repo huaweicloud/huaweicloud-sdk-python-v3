@@ -31,9 +31,9 @@ class ProcessStatisticResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param path: 进程的可执行文件路径
+        :param path: **参数解释** : 进程的可执行文件路径 **约束限制** : 不涉及 **取值范围** : 字符长度1-256位 **默认取值** : 不涉及 
         :type path: str
-        :param num: 进程数量
+        :param num: **参数解释** : 进程数量 **约束限制** : 不涉及 **取值范围** : 最小值0，最大值10000 **默认取值** : 不涉及 
         :type num: int
         """
         
@@ -52,7 +52,7 @@ class ProcessStatisticResponseInfo:
     def path(self):
         r"""Gets the path of this ProcessStatisticResponseInfo.
 
-        进程的可执行文件路径
+        **参数解释** : 进程的可执行文件路径 **约束限制** : 不涉及 **取值范围** : 字符长度1-256位 **默认取值** : 不涉及 
 
         :return: The path of this ProcessStatisticResponseInfo.
         :rtype: str
@@ -63,7 +63,7 @@ class ProcessStatisticResponseInfo:
     def path(self, path):
         r"""Sets the path of this ProcessStatisticResponseInfo.
 
-        进程的可执行文件路径
+        **参数解释** : 进程的可执行文件路径 **约束限制** : 不涉及 **取值范围** : 字符长度1-256位 **默认取值** : 不涉及 
 
         :param path: The path of this ProcessStatisticResponseInfo.
         :type path: str
@@ -74,7 +74,7 @@ class ProcessStatisticResponseInfo:
     def num(self):
         r"""Gets the num of this ProcessStatisticResponseInfo.
 
-        进程数量
+        **参数解释** : 进程数量 **约束限制** : 不涉及 **取值范围** : 最小值0，最大值10000 **默认取值** : 不涉及 
 
         :return: The num of this ProcessStatisticResponseInfo.
         :rtype: int
@@ -85,7 +85,7 @@ class ProcessStatisticResponseInfo:
     def num(self, num):
         r"""Sets the num of this ProcessStatisticResponseInfo.
 
-        进程数量
+        **参数解释** : 进程数量 **约束限制** : 不涉及 **取值范围** : 最小值0，最大值10000 **默认取值** : 不涉及 
 
         :param num: The num of this ProcessStatisticResponseInfo.
         :type num: int

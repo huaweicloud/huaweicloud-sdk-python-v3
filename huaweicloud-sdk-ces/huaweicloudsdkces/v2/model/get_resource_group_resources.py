@@ -20,22 +20,26 @@ class GetResourceGroupResources:
         'status': 'str',
         'dimensions': 'list[ResourceDimension]',
         'tags': 'str',
-        'enterprise_project_id': 'str'
+        'enterprise_project_id': 'str',
+        'event_status': 'str',
+        'resource_name': 'str'
     }
 
     attribute_map = {
         'status': 'status',
         'dimensions': 'dimensions',
         'tags': 'tags',
-        'enterprise_project_id': 'enterprise_project_id'
+        'enterprise_project_id': 'enterprise_project_id',
+        'event_status': 'event_status',
+        'resource_name': 'resource_name'
     }
 
-    def __init__(self, status=None, dimensions=None, tags=None, enterprise_project_id=None):
+    def __init__(self, status=None, dimensions=None, tags=None, enterprise_project_id=None, event_status=None, resource_name=None):
         r"""GetResourceGroupResources
 
         The model defined in huaweicloud sdk
 
-        :param status: 资源健康状态，取值为health（已设置告警规则且无告警触发的资源）、unhealthy（已设置告警规则且有告警触发的资源）、no_alarm_rule（未关联告警规则）
+        :param status: 指标告警状态，取值为health（告警中）、unhealthy（已触发）、no_alarm_rule（未设置告警规则）
         :type status: str
         :param dimensions: 资源的维度信息
         :type dimensions: list[:class:`huaweicloudsdkces.v2.ResourceDimension`]
@@ -43,6 +47,10 @@ class GetResourceGroupResources:
         :type tags: str
         :param enterprise_project_id: 企业项目ID
         :type enterprise_project_id: str
+        :param event_status: 事件告警状态，取值为health（告警中）、unhealthy（已触发）、no_alarm_rule（未设置告警规则）
+        :type event_status: str
+        :param resource_name: 资源名称
+        :type resource_name: str
         """
         
         
@@ -51,6 +59,8 @@ class GetResourceGroupResources:
         self._dimensions = None
         self._tags = None
         self._enterprise_project_id = None
+        self._event_status = None
+        self._resource_name = None
         self.discriminator = None
 
         self.status = status
@@ -59,12 +69,16 @@ class GetResourceGroupResources:
             self.tags = tags
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if event_status is not None:
+            self.event_status = event_status
+        if resource_name is not None:
+            self.resource_name = resource_name
 
     @property
     def status(self):
         r"""Gets the status of this GetResourceGroupResources.
 
-        资源健康状态，取值为health（已设置告警规则且无告警触发的资源）、unhealthy（已设置告警规则且有告警触发的资源）、no_alarm_rule（未关联告警规则）
+        指标告警状态，取值为health（告警中）、unhealthy（已触发）、no_alarm_rule（未设置告警规则）
 
         :return: The status of this GetResourceGroupResources.
         :rtype: str
@@ -75,7 +89,7 @@ class GetResourceGroupResources:
     def status(self, status):
         r"""Sets the status of this GetResourceGroupResources.
 
-        资源健康状态，取值为health（已设置告警规则且无告警触发的资源）、unhealthy（已设置告警规则且有告警触发的资源）、no_alarm_rule（未关联告警规则）
+        指标告警状态，取值为health（告警中）、unhealthy（已触发）、no_alarm_rule（未设置告警规则）
 
         :param status: The status of this GetResourceGroupResources.
         :type status: str
@@ -147,6 +161,50 @@ class GetResourceGroupResources:
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def event_status(self):
+        r"""Gets the event_status of this GetResourceGroupResources.
+
+        事件告警状态，取值为health（告警中）、unhealthy（已触发）、no_alarm_rule（未设置告警规则）
+
+        :return: The event_status of this GetResourceGroupResources.
+        :rtype: str
+        """
+        return self._event_status
+
+    @event_status.setter
+    def event_status(self, event_status):
+        r"""Sets the event_status of this GetResourceGroupResources.
+
+        事件告警状态，取值为health（告警中）、unhealthy（已触发）、no_alarm_rule（未设置告警规则）
+
+        :param event_status: The event_status of this GetResourceGroupResources.
+        :type event_status: str
+        """
+        self._event_status = event_status
+
+    @property
+    def resource_name(self):
+        r"""Gets the resource_name of this GetResourceGroupResources.
+
+        资源名称
+
+        :return: The resource_name of this GetResourceGroupResources.
+        :rtype: str
+        """
+        return self._resource_name
+
+    @resource_name.setter
+    def resource_name(self, resource_name):
+        r"""Sets the resource_name of this GetResourceGroupResources.
+
+        资源名称
+
+        :param resource_name: The resource_name of this GetResourceGroupResources.
+        :type resource_name: str
+        """
+        self._resource_name = resource_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

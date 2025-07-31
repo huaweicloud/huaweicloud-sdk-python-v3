@@ -20,18 +20,16 @@ class ExportIpBlacklistResponse(SdkResponse):
     openapi_types = {
         'body': 'str',
         'content_disposition': 'str',
-        'content_length': 'int',
         'content_type': 'str'
     }
 
     attribute_map = {
         'body': 'body',
         'content_disposition': 'Content-Disposition',
-        'content_length': 'Content-Length',
         'content_type': 'Content-Type'
     }
 
-    def __init__(self, body=None, content_disposition=None, content_length=None, content_type=None):
+    def __init__(self, body=None, content_disposition=None, content_type=None):
         r"""ExportIpBlacklistResponse
 
         The model defined in huaweicloud sdk
@@ -40,8 +38,6 @@ class ExportIpBlacklistResponse(SdkResponse):
         :type body: str
         :param content_disposition: 
         :type content_disposition: str
-        :param content_length: 
-        :type content_length: int
         :param content_type: 
         :type content_type: str
         """
@@ -50,7 +46,6 @@ class ExportIpBlacklistResponse(SdkResponse):
 
         self._body = None
         self._content_disposition = None
-        self._content_length = None
         self._content_type = None
         self.discriminator = None
 
@@ -58,8 +53,6 @@ class ExportIpBlacklistResponse(SdkResponse):
             self.body = body
         if content_disposition is not None:
             self.content_disposition = content_disposition
-        if content_length is not None:
-            self.content_length = content_length
         if content_type is not None:
             self.content_type = content_type
 
@@ -98,24 +91,6 @@ class ExportIpBlacklistResponse(SdkResponse):
         :type content_disposition: str
         """
         self._content_disposition = content_disposition
-
-    @property
-    def content_length(self):
-        r"""Gets the content_length of this ExportIpBlacklistResponse.
-
-        :return: The content_length of this ExportIpBlacklistResponse.
-        :rtype: int
-        """
-        return self._content_length
-
-    @content_length.setter
-    def content_length(self, content_length):
-        r"""Sets the content_length of this ExportIpBlacklistResponse.
-
-        :param content_length: The content_length of this ExportIpBlacklistResponse.
-        :type content_length: int
-        """
-        self._content_length = content_length
 
     @property
     def content_type(self):

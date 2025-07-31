@@ -11,6 +11,7 @@ class ChardMode:
     """
     PERIODIC = "PERIODIC"
     ONE_TIME = "ONE_TIME"
+    ON_DEMAND = "ON_DEMAND"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

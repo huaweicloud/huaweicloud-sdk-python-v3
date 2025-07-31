@@ -22,7 +22,7 @@ class EnableOneClickAlarmRequestBodyOneClickUpdateAlarms:
         'description': 'str',
         'namespace': 'str',
         'policies': 'list[Policy]',
-        'resources': 'list[ResourcesInListResp]',
+        'resources': 'list[list[Dimension]]',
         'type': 'AlarmType',
         'enabled': 'bool',
         'notification_enabled': 'bool',
@@ -63,12 +63,12 @@ class EnableOneClickAlarmRequestBodyOneClickUpdateAlarms:
         :type name: str
         :param description: 告警描述，长度0-256
         :type description: str
-        :param namespace: 服务的命名空间，查询各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”
+        :param namespace: 查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”
         :type namespace: str
         :param policies: 告警策略
         :type policies: list[:class:`huaweicloudsdkces.v2.Policy`]
         :param resources: 资源列表，关联资源需要使用查询告警规则资源接口获取
-        :type resources: list[:class:`huaweicloudsdkces.v2.ResourcesInListResp`]
+        :type resources: list[list[Dimension]]
         :param type: 
         :type type: :class:`huaweicloudsdkces.v2.AlarmType`
         :param enabled: 是否开启告警规则。true:开启，false:关闭。
@@ -83,7 +83,7 @@ class EnableOneClickAlarmRequestBodyOneClickUpdateAlarms:
         :type notification_begin_time: str
         :param notification_end_time: 告警通知关闭时间
         :type notification_end_time: str
-        :param notification_manner: NOTIFICATION_POLICY(通知策略)
+        :param notification_manner: 通知方式。NOTIFICATION_POLICY表示通知策略，NOTIFICATION_GROUP表示通知组，TOPIC_SUBSCRIPTION表示主题订阅。
         :type notification_manner: str
         :param notification_policy_ids: 关联的通知策略ID列表
         :type notification_policy_ids: list[str]
@@ -209,7 +209,7 @@ class EnableOneClickAlarmRequestBodyOneClickUpdateAlarms:
     def namespace(self):
         r"""Gets the namespace of this EnableOneClickAlarmRequestBodyOneClickUpdateAlarms.
 
-        服务的命名空间，查询各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”
+        查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”
 
         :return: The namespace of this EnableOneClickAlarmRequestBodyOneClickUpdateAlarms.
         :rtype: str
@@ -220,7 +220,7 @@ class EnableOneClickAlarmRequestBodyOneClickUpdateAlarms:
     def namespace(self, namespace):
         r"""Sets the namespace of this EnableOneClickAlarmRequestBodyOneClickUpdateAlarms.
 
-        服务的命名空间，查询各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”
+        查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”
 
         :param namespace: The namespace of this EnableOneClickAlarmRequestBodyOneClickUpdateAlarms.
         :type namespace: str
@@ -256,7 +256,7 @@ class EnableOneClickAlarmRequestBodyOneClickUpdateAlarms:
         资源列表，关联资源需要使用查询告警规则资源接口获取
 
         :return: The resources of this EnableOneClickAlarmRequestBodyOneClickUpdateAlarms.
-        :rtype: list[:class:`huaweicloudsdkces.v2.ResourcesInListResp`]
+        :rtype: list[list[Dimension]]
         """
         return self._resources
 
@@ -267,7 +267,7 @@ class EnableOneClickAlarmRequestBodyOneClickUpdateAlarms:
         资源列表，关联资源需要使用查询告警规则资源接口获取
 
         :param resources: The resources of this EnableOneClickAlarmRequestBodyOneClickUpdateAlarms.
-        :type resources: list[:class:`huaweicloudsdkces.v2.ResourcesInListResp`]
+        :type resources: list[list[Dimension]]
         """
         self._resources = resources
 
@@ -425,7 +425,7 @@ class EnableOneClickAlarmRequestBodyOneClickUpdateAlarms:
     def notification_manner(self):
         r"""Gets the notification_manner of this EnableOneClickAlarmRequestBodyOneClickUpdateAlarms.
 
-        NOTIFICATION_POLICY(通知策略)
+        通知方式。NOTIFICATION_POLICY表示通知策略，NOTIFICATION_GROUP表示通知组，TOPIC_SUBSCRIPTION表示主题订阅。
 
         :return: The notification_manner of this EnableOneClickAlarmRequestBodyOneClickUpdateAlarms.
         :rtype: str
@@ -436,7 +436,7 @@ class EnableOneClickAlarmRequestBodyOneClickUpdateAlarms:
     def notification_manner(self, notification_manner):
         r"""Sets the notification_manner of this EnableOneClickAlarmRequestBodyOneClickUpdateAlarms.
 
-        NOTIFICATION_POLICY(通知策略)
+        通知方式。NOTIFICATION_POLICY表示通知策略，NOTIFICATION_GROUP表示通知组，TOPIC_SUBSCRIPTION表示主题订阅。
 
         :param notification_manner: The notification_manner of this EnableOneClickAlarmRequestBodyOneClickUpdateAlarms.
         :type notification_manner: str

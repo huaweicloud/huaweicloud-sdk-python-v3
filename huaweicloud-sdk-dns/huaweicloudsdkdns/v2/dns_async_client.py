@@ -170,7 +170,7 @@ class DnsAsyncClient(Client):
     def associate_router_async(self, request):
         r"""在内网域名上关联VPC
 
-        在内网域名上关联VPC。
+        当您的内网域名创建完成后，可以通过调用此接口为内网域名关联新的VPC。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -373,6 +373,7 @@ class DnsAsyncClient(Client):
 
         批量删除域名下的记录集，当删除的资源不存在时，则默认删除成功。
         响应结果中只包含本次实际删除的资源。
+        支持公网域名和内网域名。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -837,75 +838,6 @@ class DnsAsyncClient(Client):
 
         return http_info
 
-    def create_eip_record_set_async(self, request):
-        r"""设置弹性公网IP的反向解析记录
-
-        设置弹性公网IP的反向解析记录。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for CreateEipRecordSet
-        :type request: :class:`huaweicloudsdkdns.v2.CreateEipRecordSetRequest`
-        :rtype: :class:`huaweicloudsdkdns.v2.CreateEipRecordSetResponse`
-        """
-        http_info = self._create_eip_record_set_http_info(request)
-        return self._call_api(**http_info)
-
-    def create_eip_record_set_async_invoker(self, request):
-        http_info = self._create_eip_record_set_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _create_eip_record_set_http_info(self, request):
-        http_info = {
-            "method": "PATCH",
-            "resource_path": "/v2/reverse/floatingips/{region}:{floatingip_id}",
-            "request_type": request.__class__.__name__,
-            "response_type": "CreateEipRecordSetResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'region' in local_var_params:
-            path_params['region'] = local_var_params['region']
-        if 'floatingip_id' in local_var_params:
-            path_params['floatingip_id'] = local_var_params['floatingip_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
     def create_endpoint_async(self, request):
         r"""创建终端节点
 
@@ -1039,7 +971,7 @@ class DnsAsyncClient(Client):
     def create_private_zone_async(self, request):
         r"""创建内网域名
 
-        创建内网域名。
+        内网域名是指在VPC中生效的域名，内网域名创建后，用户可以将其与私网IP地址相关联，为云服务提供VPC内的内网域名解析服务。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1101,75 +1033,11 @@ class DnsAsyncClient(Client):
 
         return http_info
 
-    def create_ptr_async(self, request):
-        r"""创建弹性公网IP的反向解析记录
-
-        创建弹性公网IP的反向解析记录。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for CreatePtr
-        :type request: :class:`huaweicloudsdkdns.v2.CreatePtrRequest`
-        :rtype: :class:`huaweicloudsdkdns.v2.CreatePtrResponse`
-        """
-        http_info = self._create_ptr_http_info(request)
-        return self._call_api(**http_info)
-
-    def create_ptr_async_invoker(self, request):
-        http_info = self._create_ptr_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _create_ptr_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v2.1/ptrs",
-            "request_type": request.__class__.__name__,
-            "response_type": "CreatePtrResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
     def create_public_zone_async(self, request):
         r"""创建公网域名
 
-        创建公网域名。
+        您在使用华为云云解析服务为自己注册的域名配置DNS解析之前，需要先将域名添加至云解析服务控制台。
+        一般情况下，通过华为云[域名注册服务](https://support.huaweicloud.com/domain/index.html)注册的域名无需添加，系统将在域名注册完成后自动添加。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1231,73 +1099,6 @@ class DnsAsyncClient(Client):
 
         return http_info
 
-    def create_record_set_async(self, request):
-        r"""创建记录集
-
-        创建记录集。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for CreateRecordSet
-        :type request: :class:`huaweicloudsdkdns.v2.CreateRecordSetRequest`
-        :rtype: :class:`huaweicloudsdkdns.v2.CreateRecordSetResponse`
-        """
-        http_info = self._create_record_set_http_info(request)
-        return self._call_api(**http_info)
-
-    def create_record_set_async_invoker(self, request):
-        http_info = self._create_record_set_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _create_record_set_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v2/zones/{zone_id}/recordsets",
-            "request_type": request.__class__.__name__,
-            "response_type": "CreateRecordSetResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'zone_id' in local_var_params:
-            path_params['zone_id'] = local_var_params['zone_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
     def create_record_set_with_batch_lines_async(self, request):
         r"""批量线路创建记录集
 
@@ -1323,73 +1124,6 @@ class DnsAsyncClient(Client):
             "resource_path": "/v2.1/zones/{zone_id}/recordsets/batch/lines",
             "request_type": request.__class__.__name__,
             "response_type": "CreateRecordSetWithBatchLinesResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'zone_id' in local_var_params:
-            path_params['zone_id'] = local_var_params['zone_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def create_record_set_with_line_async(self, request):
-        r"""创建记录集
-
-        创建记录集。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for CreateRecordSetWithLine
-        :type request: :class:`huaweicloudsdkdns.v2.CreateRecordSetWithLineRequest`
-        :rtype: :class:`huaweicloudsdkdns.v2.CreateRecordSetWithLineResponse`
-        """
-        http_info = self._create_record_set_with_line_http_info(request)
-        return self._call_api(**http_info)
-
-    def create_record_set_with_line_async_invoker(self, request):
-        http_info = self._create_record_set_with_line_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _create_record_set_with_line_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v2.1/zones/{zone_id}/recordsets",
-            "request_type": request.__class__.__name__,
-            "response_type": "CreateRecordSetWithLineResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -1764,7 +1498,7 @@ class DnsAsyncClient(Client):
     def delete_private_zone_async(self, request):
         r"""删除内网域名
 
-        删除内网域名。
+        当您的内网域名不再使用时，您可以通过调用此接口将其删除。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1826,75 +1560,10 @@ class DnsAsyncClient(Client):
 
         return http_info
 
-    def delete_ptr_async(self, request):
-        r"""将弹性公网IP的反向解析记录恢复为默认值
-
-        将弹性公网IP的反向解析记录恢复为默认值。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for DeletePtr
-        :type request: :class:`huaweicloudsdkdns.v2.DeletePtrRequest`
-        :rtype: :class:`huaweicloudsdkdns.v2.DeletePtrResponse`
-        """
-        http_info = self._delete_ptr_http_info(request)
-        return self._call_api(**http_info)
-
-    def delete_ptr_async_invoker(self, request):
-        http_info = self._delete_ptr_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _delete_ptr_http_info(self, request):
-        http_info = {
-            "method": "DELETE",
-            "resource_path": "/v2.1/ptrs/{ptr_id}",
-            "request_type": request.__class__.__name__,
-            "response_type": "DeletePtrResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'ptr_id' in local_var_params:
-            path_params['ptr_id'] = local_var_params['ptr_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
     def delete_public_zone_async(self, request):
         r"""删除公网域名
 
-        删除公网域名。
+        当您的公网域名不再使用时，您可以通过调用此接口将其删除。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1927,140 +1596,6 @@ class DnsAsyncClient(Client):
         path_params = {}
         if 'zone_id' in local_var_params:
             path_params['zone_id'] = local_var_params['zone_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def delete_record_set_async(self, request):
-        r"""删除记录集
-
-        删除记录集。删除有添加智能解析的记录集时，需要用记录集管理（新版本）模块中删除接口进行删除。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for DeleteRecordSet
-        :type request: :class:`huaweicloudsdkdns.v2.DeleteRecordSetRequest`
-        :rtype: :class:`huaweicloudsdkdns.v2.DeleteRecordSetResponse`
-        """
-        http_info = self._delete_record_set_http_info(request)
-        return self._call_api(**http_info)
-
-    def delete_record_set_async_invoker(self, request):
-        http_info = self._delete_record_set_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _delete_record_set_http_info(self, request):
-        http_info = {
-            "method": "DELETE",
-            "resource_path": "/v2/zones/{zone_id}/recordsets/{recordset_id}",
-            "request_type": request.__class__.__name__,
-            "response_type": "DeleteRecordSetResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'zone_id' in local_var_params:
-            path_params['zone_id'] = local_var_params['zone_id']
-        if 'recordset_id' in local_var_params:
-            path_params['recordset_id'] = local_var_params['recordset_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def delete_record_sets_async(self, request):
-        r"""删除记录集
-
-        删除记录集。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for DeleteRecordSets
-        :type request: :class:`huaweicloudsdkdns.v2.DeleteRecordSetsRequest`
-        :rtype: :class:`huaweicloudsdkdns.v2.DeleteRecordSetsResponse`
-        """
-        http_info = self._delete_record_sets_http_info(request)
-        return self._call_api(**http_info)
-
-    def delete_record_sets_async_invoker(self, request):
-        http_info = self._delete_record_sets_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _delete_record_sets_http_info(self, request):
-        http_info = {
-            "method": "DELETE",
-            "resource_path": "/v2.1/zones/{zone_id}/recordsets/{recordset_id}",
-            "request_type": request.__class__.__name__,
-            "response_type": "DeleteRecordSetsResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'zone_id' in local_var_params:
-            path_params['zone_id'] = local_var_params['zone_id']
-        if 'recordset_id' in local_var_params:
-            path_params['recordset_id'] = local_var_params['recordset_id']
 
         query_params = []
 
@@ -2361,7 +1896,7 @@ class DnsAsyncClient(Client):
     def disassociate_router_async(self, request):
         r"""在内网域名上解关联VPC
 
-        在内网域名上解关联VPC。
+        当您的内网域名创建完成后，可以通过调用此接口为内网域名解除已关联的VPC。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2426,9 +1961,9 @@ class DnsAsyncClient(Client):
         return http_info
 
     def list_api_versions_async(self, request):
-        r"""查询所有的云解析服务API版本号
+        r"""查询API版本信息列表
 
-        查询所有的云解析服务API版本号列表。
+        查询云解析服务支持的所有API版本信息列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2913,7 +2448,7 @@ class DnsAsyncClient(Client):
     def list_private_zones_async(self, request):
         r"""查询内网域名列表
 
-        查询内网域名列表。
+        当您的内网域名创建成功后，您可以通过调用此接口查询单个内网域名信息，包括域名、ID、状态、记录集个数、企业项目、标签、TTL、创建时间、修改时间、描述等。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2999,231 +2534,10 @@ class DnsAsyncClient(Client):
 
         return http_info
 
-    def list_ptr_records_async(self, request):
-        r"""查询弹性公网IP的反向解析记录列表
-
-        查询弹性公网IP的反向解析记录列表。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListPtrRecords
-        :type request: :class:`huaweicloudsdkdns.v2.ListPtrRecordsRequest`
-        :rtype: :class:`huaweicloudsdkdns.v2.ListPtrRecordsResponse`
-        """
-        http_info = self._list_ptr_records_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_ptr_records_async_invoker(self, request):
-        http_info = self._list_ptr_records_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _list_ptr_records_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v2/reverse/floatingips",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListPtrRecordsResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'marker' in local_var_params:
-            query_params.append(('marker', local_var_params['marker']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-        if 'enterprise_project_id' in local_var_params:
-            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
-        if 'tags' in local_var_params:
-            query_params.append(('tags', local_var_params['tags']))
-        if 'status' in local_var_params:
-            query_params.append(('status', local_var_params['status']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def list_ptrs_async(self, request):
-        r"""查询弹性公网IP的反向解析记录列表
-
-        查询弹性公网IP的反向解析记录列表。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListPtrs
-        :type request: :class:`huaweicloudsdkdns.v2.ListPtrsRequest`
-        :rtype: :class:`huaweicloudsdkdns.v2.ListPtrsResponse`
-        """
-        http_info = self._list_ptrs_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_ptrs_async_invoker(self, request):
-        http_info = self._list_ptrs_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _list_ptrs_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v2.1/ptrs",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListPtrsResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'marker' in local_var_params:
-            query_params.append(('marker', local_var_params['marker']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-        if 'enterprise_project_id' in local_var_params:
-            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
-        if 'tags' in local_var_params:
-            query_params.append(('tags', local_var_params['tags']))
-        if 'status' in local_var_params:
-            query_params.append(('status', local_var_params['status']))
-        if 'resource_type' in local_var_params:
-            query_params.append(('resource_type', local_var_params['resource_type']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def list_public_zone_lines_async(self, request):
-        r"""查询公网域名的线路列表
-
-        查询公网域名的线路列表。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListPublicZoneLines
-        :type request: :class:`huaweicloudsdkdns.v2.ListPublicZoneLinesRequest`
-        :rtype: :class:`huaweicloudsdkdns.v2.ListPublicZoneLinesResponse`
-        """
-        http_info = self._list_public_zone_lines_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_public_zone_lines_async_invoker(self, request):
-        http_info = self._list_public_zone_lines_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _list_public_zone_lines_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v2.1/zones/{zone_id}/lines",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListPublicZoneLinesResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'zone_id' in local_var_params:
-            path_params['zone_id'] = local_var_params['zone_id']
-
-        query_params = []
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
     def list_public_zones_async(self, request):
         r"""查询公网域名列表
 
-        查询公网域名列表。
+        当您的公网域名创建成功后，您可以通过调用此接口查询所有公网域名信息，包括域名、ID、状态、记录集个数、企业项目、标签、TTL、创建时间、修改时间、描述等。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3280,277 +2594,6 @@ class DnsAsyncClient(Client):
             query_params.append(('sort_dir', local_var_params['sort_dir']))
         if 'enterprise_project_id' in local_var_params:
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def list_record_sets_async(self, request):
-        r"""查询租户记录集列表
-
-        查询租户记录集列表。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListRecordSets
-        :type request: :class:`huaweicloudsdkdns.v2.ListRecordSetsRequest`
-        :rtype: :class:`huaweicloudsdkdns.v2.ListRecordSetsResponse`
-        """
-        http_info = self._list_record_sets_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_record_sets_async_invoker(self, request):
-        http_info = self._list_record_sets_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _list_record_sets_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v2/recordsets",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListRecordSetsResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'zone_type' in local_var_params:
-            query_params.append(('zone_type', local_var_params['zone_type']))
-        if 'marker' in local_var_params:
-            query_params.append(('marker', local_var_params['marker']))
-        if 'search_mode' in local_var_params:
-            query_params.append(('search_mode', local_var_params['search_mode']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-        if 'tags' in local_var_params:
-            query_params.append(('tags', local_var_params['tags']))
-        if 'status' in local_var_params:
-            query_params.append(('status', local_var_params['status']))
-        if 'type' in local_var_params:
-            query_params.append(('type', local_var_params['type']))
-        if 'name' in local_var_params:
-            query_params.append(('name', local_var_params['name']))
-        if 'id' in local_var_params:
-            query_params.append(('id', local_var_params['id']))
-        if 'records' in local_var_params:
-            query_params.append(('records', local_var_params['records']))
-        if 'sort_key' in local_var_params:
-            query_params.append(('sort_key', local_var_params['sort_key']))
-        if 'sort_dir' in local_var_params:
-            query_params.append(('sort_dir', local_var_params['sort_dir']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def list_record_sets_by_zone_async(self, request):
-        r"""查询域名下的记录集列表
-
-        查询域名下的记录集列表。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListRecordSetsByZone
-        :type request: :class:`huaweicloudsdkdns.v2.ListRecordSetsByZoneRequest`
-        :rtype: :class:`huaweicloudsdkdns.v2.ListRecordSetsByZoneResponse`
-        """
-        http_info = self._list_record_sets_by_zone_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_record_sets_by_zone_async_invoker(self, request):
-        http_info = self._list_record_sets_by_zone_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _list_record_sets_by_zone_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v2/zones/{zone_id}/recordsets",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListRecordSetsByZoneResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'zone_id' in local_var_params:
-            path_params['zone_id'] = local_var_params['zone_id']
-
-        query_params = []
-        if 'search_mode' in local_var_params:
-            query_params.append(('search_mode', local_var_params['search_mode']))
-        if 'marker' in local_var_params:
-            query_params.append(('marker', local_var_params['marker']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-        if 'tags' in local_var_params:
-            query_params.append(('tags', local_var_params['tags']))
-        if 'status' in local_var_params:
-            query_params.append(('status', local_var_params['status']))
-        if 'type' in local_var_params:
-            query_params.append(('type', local_var_params['type']))
-        if 'name' in local_var_params:
-            query_params.append(('name', local_var_params['name']))
-        if 'id' in local_var_params:
-            query_params.append(('id', local_var_params['id']))
-        if 'sort_key' in local_var_params:
-            query_params.append(('sort_key', local_var_params['sort_key']))
-        if 'sort_dir' in local_var_params:
-            query_params.append(('sort_dir', local_var_params['sort_dir']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def list_record_sets_with_line_async(self, request):
-        r"""查询租户记录集列表
-
-        查询租户记录集列表。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListRecordSetsWithLine
-        :type request: :class:`huaweicloudsdkdns.v2.ListRecordSetsWithLineRequest`
-        :rtype: :class:`huaweicloudsdkdns.v2.ListRecordSetsWithLineResponse`
-        """
-        http_info = self._list_record_sets_with_line_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_record_sets_with_line_async_invoker(self, request):
-        http_info = self._list_record_sets_with_line_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _list_record_sets_with_line_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v2.1/recordsets",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListRecordSetsWithLineResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'zone_type' in local_var_params:
-            query_params.append(('zone_type', local_var_params['zone_type']))
-        if 'marker' in local_var_params:
-            query_params.append(('marker', local_var_params['marker']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-        if 'zone_id' in local_var_params:
-            query_params.append(('zone_id', local_var_params['zone_id']))
-        if 'line_id' in local_var_params:
-            query_params.append(('line_id', local_var_params['line_id']))
-        if 'tags' in local_var_params:
-            query_params.append(('tags', local_var_params['tags']))
-        if 'status' in local_var_params:
-            query_params.append(('status', local_var_params['status']))
-        if 'type' in local_var_params:
-            query_params.append(('type', local_var_params['type']))
-        if 'name' in local_var_params:
-            query_params.append(('name', local_var_params['name']))
-        if 'id' in local_var_params:
-            query_params.append(('id', local_var_params['id']))
-        if 'records' in local_var_params:
-            query_params.append(('records', local_var_params['records']))
-        if 'sort_key' in local_var_params:
-            query_params.append(('sort_key', local_var_params['sort_key']))
-        if 'sort_dir' in local_var_params:
-            query_params.append(('sort_dir', local_var_params['sort_dir']))
-        if 'health_check_id' in local_var_params:
-            query_params.append(('health_check_id', local_var_params['health_check_id']))
-        if 'search_mode' in local_var_params:
-            query_params.append(('search_mode', local_var_params['search_mode']))
 
         header_params = {}
 
@@ -3787,79 +2830,10 @@ class DnsAsyncClient(Client):
 
         return http_info
 
-    def restore_ptr_record_async(self, request):
-        r"""将弹性公网IP的反向解析记录恢复为默认值
-
-        将弹性公网IP的反向解析记录恢复为默认值。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for RestorePtrRecord
-        :type request: :class:`huaweicloudsdkdns.v2.RestorePtrRecordRequest`
-        :rtype: :class:`huaweicloudsdkdns.v2.RestorePtrRecordResponse`
-        """
-        http_info = self._restore_ptr_record_http_info(request)
-        return self._call_api(**http_info)
-
-    def restore_ptr_record_async_invoker(self, request):
-        http_info = self._restore_ptr_record_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _restore_ptr_record_http_info(self, request):
-        http_info = {
-            "method": "PATCH",
-            "resource_path": "/v2/reverse/floatingips/{region}:{floatingip_id}",
-            "request_type": request.__class__.__name__,
-            "response_type": "RestorePtrRecordResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'region' in local_var_params:
-            path_params['region'] = local_var_params['region']
-        if 'floatingip_id' in local_var_params:
-            path_params['floatingip_id'] = local_var_params['floatingip_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
     def set_private_zone_proxy_pattern_async(self, request):
         r"""设置内网域名的子域名递归解析代理
 
-        设置内网域名的子域名递归解析代理。
+        当您的内网域名创建成功后，您可以通过调用此接口设置开启或者关闭内网域名的子域名递归解析代理。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3923,77 +2897,10 @@ class DnsAsyncClient(Client):
 
         return http_info
 
-    def set_record_sets_status_async(self, request):
-        r"""设置记录集状态
-
-        设置记录集状态。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for SetRecordSetsStatus
-        :type request: :class:`huaweicloudsdkdns.v2.SetRecordSetsStatusRequest`
-        :rtype: :class:`huaweicloudsdkdns.v2.SetRecordSetsStatusResponse`
-        """
-        http_info = self._set_record_sets_status_http_info(request)
-        return self._call_api(**http_info)
-
-    def set_record_sets_status_async_invoker(self, request):
-        http_info = self._set_record_sets_status_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _set_record_sets_status_http_info(self, request):
-        http_info = {
-            "method": "PUT",
-            "resource_path": "/v2.1/recordsets/{recordset_id}/statuses/set",
-            "request_type": request.__class__.__name__,
-            "response_type": "SetRecordSetsStatusResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'recordset_id' in local_var_params:
-            path_params['recordset_id'] = local_var_params['recordset_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
     def show_api_info_async(self, request):
-        r"""查询指定的云解析服务API版本号
+        r"""查询指定版本号的API版本信息
 
-        查询指定的云解析服务API版本号。
+        查询指定版本号的云解析服务API版本信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4253,7 +3160,7 @@ class DnsAsyncClient(Client):
     def show_private_zone_async(self, request):
         r"""查询内网域名
 
-        查询内网域名。
+        当您的内网域名创建成功后，您可以通过调用此接口查询单个内网域名信息，包括域名、ID、状态、记录集个数、企业项目、标签、TTL、创建时间、修改时间、描述等。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4318,7 +3225,7 @@ class DnsAsyncClient(Client):
     def show_private_zone_name_server_async(self, request):
         r"""查询内网域名的名称服务器
 
-        查询内网域名的名称服务器。
+        当您的内网域名创建成功后，您可以通过调用此接口查询内网域名的名称服务器信息，包括优先级、DNS服务器地址等。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4380,142 +3287,10 @@ class DnsAsyncClient(Client):
 
         return http_info
 
-    def show_ptr_async(self, request):
-        r"""查询弹性公网IP的反向解析记录
-
-        查询弹性公网IP的反向解析记录。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ShowPtr
-        :type request: :class:`huaweicloudsdkdns.v2.ShowPtrRequest`
-        :rtype: :class:`huaweicloudsdkdns.v2.ShowPtrResponse`
-        """
-        http_info = self._show_ptr_http_info(request)
-        return self._call_api(**http_info)
-
-    def show_ptr_async_invoker(self, request):
-        http_info = self._show_ptr_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _show_ptr_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v2.1/ptrs/{ptr_id}",
-            "request_type": request.__class__.__name__,
-            "response_type": "ShowPtrResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'ptr_id' in local_var_params:
-            path_params['ptr_id'] = local_var_params['ptr_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def show_ptr_record_set_async(self, request):
-        r"""查询弹性公网IP的反向解析记录
-
-        查询弹性公网IP的反向解析记录。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ShowPtrRecordSet
-        :type request: :class:`huaweicloudsdkdns.v2.ShowPtrRecordSetRequest`
-        :rtype: :class:`huaweicloudsdkdns.v2.ShowPtrRecordSetResponse`
-        """
-        http_info = self._show_ptr_record_set_http_info(request)
-        return self._call_api(**http_info)
-
-    def show_ptr_record_set_async_invoker(self, request):
-        http_info = self._show_ptr_record_set_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _show_ptr_record_set_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v2/reverse/floatingips/{region}:{floatingip_id}",
-            "request_type": request.__class__.__name__,
-            "response_type": "ShowPtrRecordSetResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'region' in local_var_params:
-            path_params['region'] = local_var_params['region']
-        if 'floatingip_id' in local_var_params:
-            path_params['floatingip_id'] = local_var_params['floatingip_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
     def show_public_zone_async(self, request):
         r"""查询公网域名
 
-        查询公网域名。
+        当您的公网域名创建成功后，您可以通过调用此接口查询单个公网域名信息，包括域名、ID、状态、记录集个数、企业项目、标签、TTL、创建时间、修改时间、描述等。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4580,7 +3355,7 @@ class DnsAsyncClient(Client):
     def show_public_zone_name_server_async(self, request):
         r"""查询公网域名的名称服务器
 
-        查询公网域名的名称服务器。
+        当您的公网域名创建成功后，您可以通过调用此接口查询公网域名的名称服务器信息，包括主机名、优先级等。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4613,229 +3388,6 @@ class DnsAsyncClient(Client):
         path_params = {}
         if 'zone_id' in local_var_params:
             path_params['zone_id'] = local_var_params['zone_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def show_record_set_async(self, request):
-        r"""查询记录集
-
-        查询记录集。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ShowRecordSet
-        :type request: :class:`huaweicloudsdkdns.v2.ShowRecordSetRequest`
-        :rtype: :class:`huaweicloudsdkdns.v2.ShowRecordSetResponse`
-        """
-        http_info = self._show_record_set_http_info(request)
-        return self._call_api(**http_info)
-
-    def show_record_set_async_invoker(self, request):
-        http_info = self._show_record_set_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _show_record_set_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v2/zones/{zone_id}/recordsets/{recordset_id}",
-            "request_type": request.__class__.__name__,
-            "response_type": "ShowRecordSetResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'zone_id' in local_var_params:
-            path_params['zone_id'] = local_var_params['zone_id']
-        if 'recordset_id' in local_var_params:
-            path_params['recordset_id'] = local_var_params['recordset_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def show_record_set_by_zone_async(self, request):
-        r"""查询域名下的记录集列表
-
-        查询域名下的记录集列表。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ShowRecordSetByZone
-        :type request: :class:`huaweicloudsdkdns.v2.ShowRecordSetByZoneRequest`
-        :rtype: :class:`huaweicloudsdkdns.v2.ShowRecordSetByZoneResponse`
-        """
-        http_info = self._show_record_set_by_zone_http_info(request)
-        return self._call_api(**http_info)
-
-    def show_record_set_by_zone_async_invoker(self, request):
-        http_info = self._show_record_set_by_zone_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _show_record_set_by_zone_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v2.1/zones/{zone_id}/recordsets",
-            "request_type": request.__class__.__name__,
-            "response_type": "ShowRecordSetByZoneResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'zone_id' in local_var_params:
-            path_params['zone_id'] = local_var_params['zone_id']
-
-        query_params = []
-        if 'marker' in local_var_params:
-            query_params.append(('marker', local_var_params['marker']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-        if 'line_id' in local_var_params:
-            query_params.append(('line_id', local_var_params['line_id']))
-        if 'tags' in local_var_params:
-            query_params.append(('tags', local_var_params['tags']))
-        if 'status' in local_var_params:
-            query_params.append(('status', local_var_params['status']))
-        if 'type' in local_var_params:
-            query_params.append(('type', local_var_params['type']))
-        if 'name' in local_var_params:
-            query_params.append(('name', local_var_params['name']))
-        if 'id' in local_var_params:
-            query_params.append(('id', local_var_params['id']))
-        if 'sort_key' in local_var_params:
-            query_params.append(('sort_key', local_var_params['sort_key']))
-        if 'sort_dir' in local_var_params:
-            query_params.append(('sort_dir', local_var_params['sort_dir']))
-        if 'search_mode' in local_var_params:
-            query_params.append(('search_mode', local_var_params['search_mode']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def show_record_set_with_line_async(self, request):
-        r"""查询记录集
-
-        查询记录集。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ShowRecordSetWithLine
-        :type request: :class:`huaweicloudsdkdns.v2.ShowRecordSetWithLineRequest`
-        :rtype: :class:`huaweicloudsdkdns.v2.ShowRecordSetWithLineResponse`
-        """
-        http_info = self._show_record_set_with_line_http_info(request)
-        return self._call_api(**http_info)
-
-    def show_record_set_with_line_async_invoker(self, request):
-        http_info = self._show_record_set_with_line_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _show_record_set_with_line_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v2.1/zones/{zone_id}/recordsets/{recordset_id}",
-            "request_type": request.__class__.__name__,
-            "response_type": "ShowRecordSetWithLineResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'zone_id' in local_var_params:
-            path_params['zone_id'] = local_var_params['zone_id']
-        if 'recordset_id' in local_var_params:
-            path_params['recordset_id'] = local_var_params['recordset_id']
 
         query_params = []
 
@@ -4998,9 +3550,9 @@ class DnsAsyncClient(Client):
         return http_info
 
     def update_custom_line_async(self, request):
-        r"""更新自定义线路
+        r"""修改自定义线路
 
-        更新自定义线路。
+        修改自定义线路。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -5132,9 +3684,9 @@ class DnsAsyncClient(Client):
         return http_info
 
     def update_line_groups_async(self, request):
-        r"""更新线路分组
+        r"""修改线路分组
 
-        更新线路分组。该接口部分区域未上线，如需使用请提交工单申请开通。
+        修改线路分组。该接口部分区域未上线，如需使用请提交工单申请开通。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -5201,7 +3753,7 @@ class DnsAsyncClient(Client):
     def update_private_zone_async(self, request):
         r"""修改内网域名
 
-        修改内网域名。
+        当您的内网域名创建成功后，您可以通过调用此接口修改内网域名的基本信息，包括TTL、描述等。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -5268,7 +3820,7 @@ class DnsAsyncClient(Client):
     def update_private_zone_status_async(self, request):
         r"""设置内网域名状态
 
-        设置内网域名状态，支持暂停、启用域名。
+        当您的内网域名创建成功后，您可以通过调用此接口设置内网域名的状态，包括暂停、启用。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -5332,146 +3884,10 @@ class DnsAsyncClient(Client):
 
         return http_info
 
-    def update_ptr_async(self, request):
-        r"""修改弹性公网IP的反向解析记录
-
-        修改弹性公网IP的反向解析记录。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for UpdatePtr
-        :type request: :class:`huaweicloudsdkdns.v2.UpdatePtrRequest`
-        :rtype: :class:`huaweicloudsdkdns.v2.UpdatePtrResponse`
-        """
-        http_info = self._update_ptr_http_info(request)
-        return self._call_api(**http_info)
-
-    def update_ptr_async_invoker(self, request):
-        http_info = self._update_ptr_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _update_ptr_http_info(self, request):
-        http_info = {
-            "method": "PUT",
-            "resource_path": "/v2.1/ptrs/{ptr_id}",
-            "request_type": request.__class__.__name__,
-            "response_type": "UpdatePtrResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'ptr_id' in local_var_params:
-            path_params['ptr_id'] = local_var_params['ptr_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def update_ptr_record_async(self, request):
-        r"""修改弹性公网IP的反向解析记录
-
-        修改弹性公网IP的反向解析记录。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for UpdatePtrRecord
-        :type request: :class:`huaweicloudsdkdns.v2.UpdatePtrRecordRequest`
-        :rtype: :class:`huaweicloudsdkdns.v2.UpdatePtrRecordResponse`
-        """
-        http_info = self._update_ptr_record_http_info(request)
-        return self._call_api(**http_info)
-
-    def update_ptr_record_async_invoker(self, request):
-        http_info = self._update_ptr_record_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _update_ptr_record_http_info(self, request):
-        http_info = {
-            "method": "PATCH",
-            "resource_path": "/v2/reverse/floatingips/{region}:{floatingip_id}",
-            "request_type": request.__class__.__name__,
-            "response_type": "UpdatePtrRecordResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'region' in local_var_params:
-            path_params['region'] = local_var_params['region']
-        if 'floatingip_id' in local_var_params:
-            path_params['floatingip_id'] = local_var_params['floatingip_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
     def update_public_zone_async(self, request):
         r"""修改公网域名
 
-        修改公网域名。
+        当您的公网域名创建成功后，您可以通过调用此接口修改公网域名的基本信息，包括TTL、描述等。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -5538,7 +3954,7 @@ class DnsAsyncClient(Client):
     def update_public_zone_status_async(self, request):
         r"""设置公网域名状态
 
-        设置公网域名状态，支持暂停、启用域名。
+        当您的公网域名创建成功后，您可以通过调用此接口设置公网域名的状态，包括暂停、启用。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -5571,144 +3987,6 @@ class DnsAsyncClient(Client):
         path_params = {}
         if 'zone_id' in local_var_params:
             path_params['zone_id'] = local_var_params['zone_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def update_record_set_async(self, request):
-        r"""修改记录集
-
-        修改记录集。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for UpdateRecordSet
-        :type request: :class:`huaweicloudsdkdns.v2.UpdateRecordSetRequest`
-        :rtype: :class:`huaweicloudsdkdns.v2.UpdateRecordSetResponse`
-        """
-        http_info = self._update_record_set_http_info(request)
-        return self._call_api(**http_info)
-
-    def update_record_set_async_invoker(self, request):
-        http_info = self._update_record_set_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _update_record_set_http_info(self, request):
-        http_info = {
-            "method": "PUT",
-            "resource_path": "/v2/zones/{zone_id}/recordsets/{recordset_id}",
-            "request_type": request.__class__.__name__,
-            "response_type": "UpdateRecordSetResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'zone_id' in local_var_params:
-            path_params['zone_id'] = local_var_params['zone_id']
-        if 'recordset_id' in local_var_params:
-            path_params['recordset_id'] = local_var_params['recordset_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def update_record_sets_async(self, request):
-        r"""修改记录集
-
-        修改记录集。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for UpdateRecordSets
-        :type request: :class:`huaweicloudsdkdns.v2.UpdateRecordSetsRequest`
-        :rtype: :class:`huaweicloudsdkdns.v2.UpdateRecordSetsResponse`
-        """
-        http_info = self._update_record_sets_http_info(request)
-        return self._call_api(**http_info)
-
-    def update_record_sets_async_invoker(self, request):
-        http_info = self._update_record_sets_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _update_record_sets_http_info(self, request):
-        http_info = {
-            "method": "PUT",
-            "resource_path": "/v2.1/zones/{zone_id}/recordsets/{recordset_id}",
-            "request_type": request.__class__.__name__,
-            "response_type": "UpdateRecordSetsResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'zone_id' in local_var_params:
-            path_params['zone_id'] = local_var_params['zone_id']
-        if 'recordset_id' in local_var_params:
-            path_params['recordset_id'] = local_var_params['recordset_id']
 
         query_params = []
 
@@ -5981,6 +4259,1730 @@ class DnsAsyncClient(Client):
         form_params = {}
 
         body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_eip_record_set_async(self, request):
+        r"""设置弹性公网IP的反向解析记录
+
+        设置弹性公网IP的反向解析记录。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateEipRecordSet
+        :type request: :class:`huaweicloudsdkdns.v2.CreateEipRecordSetRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.CreateEipRecordSetResponse`
+        """
+        http_info = self._create_eip_record_set_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_eip_record_set_async_invoker(self, request):
+        http_info = self._create_eip_record_set_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_eip_record_set_http_info(self, request):
+        http_info = {
+            "method": "PATCH",
+            "resource_path": "/v2/reverse/floatingips/{region}:{floatingip_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateEipRecordSetResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'region' in local_var_params:
+            path_params['region'] = local_var_params['region']
+        if 'floatingip_id' in local_var_params:
+            path_params['floatingip_id'] = local_var_params['floatingip_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_record_set_async(self, request):
+        r"""创建记录集
+
+        记录集是指一组资源记录的集合，这些资源记录属于同一域名，用于定义域名支持的解析类型以及解析值。您的域名创建完成后，可以通过调用此接口为域名添加不同类型的记录集。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateRecordSet
+        :type request: :class:`huaweicloudsdkdns.v2.CreateRecordSetRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.CreateRecordSetResponse`
+        """
+        http_info = self._create_record_set_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_record_set_async_invoker(self, request):
+        http_info = self._create_record_set_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_record_set_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/zones/{zone_id}/recordsets",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateRecordSetResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'zone_id' in local_var_params:
+            path_params['zone_id'] = local_var_params['zone_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_record_set_async(self, request):
+        r"""删除记录集
+
+        当您的记录集不再使用时，您可以通过调用此接口将其删除。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteRecordSet
+        :type request: :class:`huaweicloudsdkdns.v2.DeleteRecordSetRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.DeleteRecordSetResponse`
+        """
+        http_info = self._delete_record_set_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_record_set_async_invoker(self, request):
+        http_info = self._delete_record_set_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_record_set_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/zones/{zone_id}/recordsets/{recordset_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteRecordSetResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'zone_id' in local_var_params:
+            path_params['zone_id'] = local_var_params['zone_id']
+        if 'recordset_id' in local_var_params:
+            path_params['recordset_id'] = local_var_params['recordset_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_ptr_records_async(self, request):
+        r"""查询弹性公网IP的反向解析记录列表
+
+        查询弹性公网IP的反向解析记录列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListPtrRecords
+        :type request: :class:`huaweicloudsdkdns.v2.ListPtrRecordsRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.ListPtrRecordsResponse`
+        """
+        http_info = self._list_ptr_records_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_ptr_records_async_invoker(self, request):
+        http_info = self._list_ptr_records_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_ptr_records_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/reverse/floatingips",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPtrRecordsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'tags' in local_var_params:
+            query_params.append(('tags', local_var_params['tags']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_record_sets_async(self, request):
+        r"""查询租户记录集列表
+
+        当您的记录集创建成功后，您可以通过调用此接口查询指定域名下的所有记录集信息，包括名称、ID、状态、所属域名、解析记录值、标签、TTL、创建时间、修改时间、描述等。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListRecordSets
+        :type request: :class:`huaweicloudsdkdns.v2.ListRecordSetsRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.ListRecordSetsResponse`
+        """
+        http_info = self._list_record_sets_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_record_sets_async_invoker(self, request):
+        http_info = self._list_record_sets_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_record_sets_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/recordsets",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRecordSetsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'zone_type' in local_var_params:
+            query_params.append(('zone_type', local_var_params['zone_type']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'search_mode' in local_var_params:
+            query_params.append(('search_mode', local_var_params['search_mode']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'tags' in local_var_params:
+            query_params.append(('tags', local_var_params['tags']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'records' in local_var_params:
+            query_params.append(('records', local_var_params['records']))
+        if 'sort_key' in local_var_params:
+            query_params.append(('sort_key', local_var_params['sort_key']))
+        if 'sort_dir' in local_var_params:
+            query_params.append(('sort_dir', local_var_params['sort_dir']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_record_sets_by_zone_async(self, request):
+        r"""查询域名下的记录集列表
+
+        当您的记录集创建成功后，您可以通过调用此接口查询指定域名下的所有记录集信息，包括名称、ID、状态、所属域名、解析记录值、标签、TTL、创建时间、修改时间、描述等。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListRecordSetsByZone
+        :type request: :class:`huaweicloudsdkdns.v2.ListRecordSetsByZoneRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.ListRecordSetsByZoneResponse`
+        """
+        http_info = self._list_record_sets_by_zone_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_record_sets_by_zone_async_invoker(self, request):
+        http_info = self._list_record_sets_by_zone_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_record_sets_by_zone_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/zones/{zone_id}/recordsets",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRecordSetsByZoneResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'zone_id' in local_var_params:
+            path_params['zone_id'] = local_var_params['zone_id']
+
+        query_params = []
+        if 'search_mode' in local_var_params:
+            query_params.append(('search_mode', local_var_params['search_mode']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'tags' in local_var_params:
+            query_params.append(('tags', local_var_params['tags']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'sort_key' in local_var_params:
+            query_params.append(('sort_key', local_var_params['sort_key']))
+        if 'sort_dir' in local_var_params:
+            query_params.append(('sort_dir', local_var_params['sort_dir']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def restore_ptr_record_async(self, request):
+        r"""将弹性公网IP的反向解析记录恢复为默认值
+
+        将弹性公网IP的反向解析记录恢复为默认值。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for RestorePtrRecord
+        :type request: :class:`huaweicloudsdkdns.v2.RestorePtrRecordRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.RestorePtrRecordResponse`
+        """
+        http_info = self._restore_ptr_record_http_info(request)
+        return self._call_api(**http_info)
+
+    def restore_ptr_record_async_invoker(self, request):
+        http_info = self._restore_ptr_record_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _restore_ptr_record_http_info(self, request):
+        http_info = {
+            "method": "PATCH",
+            "resource_path": "/v2/reverse/floatingips/{region}:{floatingip_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "RestorePtrRecordResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'region' in local_var_params:
+            path_params['region'] = local_var_params['region']
+        if 'floatingip_id' in local_var_params:
+            path_params['floatingip_id'] = local_var_params['floatingip_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_ptr_record_set_async(self, request):
+        r"""查询弹性公网IP的反向解析记录
+
+        查询弹性公网IP的反向解析记录。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowPtrRecordSet
+        :type request: :class:`huaweicloudsdkdns.v2.ShowPtrRecordSetRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.ShowPtrRecordSetResponse`
+        """
+        http_info = self._show_ptr_record_set_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_ptr_record_set_async_invoker(self, request):
+        http_info = self._show_ptr_record_set_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_ptr_record_set_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/reverse/floatingips/{region}:{floatingip_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPtrRecordSetResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'region' in local_var_params:
+            path_params['region'] = local_var_params['region']
+        if 'floatingip_id' in local_var_params:
+            path_params['floatingip_id'] = local_var_params['floatingip_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_record_set_async(self, request):
+        r"""查询记录集
+
+        当您的记录集创建成功后，您可以通过调用此接口查询指定域名下的所有记录集信息，包括名称、ID、状态、所属域名、解析记录值、标签、TTL、创建时间、修改时间、描述等。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowRecordSet
+        :type request: :class:`huaweicloudsdkdns.v2.ShowRecordSetRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.ShowRecordSetResponse`
+        """
+        http_info = self._show_record_set_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_record_set_async_invoker(self, request):
+        http_info = self._show_record_set_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_record_set_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/zones/{zone_id}/recordsets/{recordset_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRecordSetResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'zone_id' in local_var_params:
+            path_params['zone_id'] = local_var_params['zone_id']
+        if 'recordset_id' in local_var_params:
+            path_params['recordset_id'] = local_var_params['recordset_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_ptr_record_async(self, request):
+        r"""修改弹性公网IP的反向解析记录
+
+        修改弹性公网IP的反向解析记录。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdatePtrRecord
+        :type request: :class:`huaweicloudsdkdns.v2.UpdatePtrRecordRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.UpdatePtrRecordResponse`
+        """
+        http_info = self._update_ptr_record_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_ptr_record_async_invoker(self, request):
+        http_info = self._update_ptr_record_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_ptr_record_http_info(self, request):
+        http_info = {
+            "method": "PATCH",
+            "resource_path": "/v2/reverse/floatingips/{region}:{floatingip_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePtrRecordResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'region' in local_var_params:
+            path_params['region'] = local_var_params['region']
+        if 'floatingip_id' in local_var_params:
+            path_params['floatingip_id'] = local_var_params['floatingip_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_record_set_async(self, request):
+        r"""修改记录集
+
+        当您的记录集创建成功后，您可以通过调用此接口修改记录集的信息，包括域名、类型、记录值、TTL、描述等。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateRecordSet
+        :type request: :class:`huaweicloudsdkdns.v2.UpdateRecordSetRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.UpdateRecordSetResponse`
+        """
+        http_info = self._update_record_set_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_record_set_async_invoker(self, request):
+        http_info = self._update_record_set_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_record_set_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/zones/{zone_id}/recordsets/{recordset_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateRecordSetResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'zone_id' in local_var_params:
+            path_params['zone_id'] = local_var_params['zone_id']
+        if 'recordset_id' in local_var_params:
+            path_params['recordset_id'] = local_var_params['recordset_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_ptr_async(self, request):
+        r"""创建弹性公网IP的反向解析记录
+
+        创建弹性公网IP的反向解析记录。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreatePtr
+        :type request: :class:`huaweicloudsdkdns.v2.CreatePtrRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.CreatePtrResponse`
+        """
+        http_info = self._create_ptr_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_ptr_async_invoker(self, request):
+        http_info = self._create_ptr_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_ptr_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.1/ptrs",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePtrResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_record_set_with_line_async(self, request):
+        r"""创建记录集
+
+        记录集是指一组资源记录的集合，这些资源记录属于同一域名，用于定义域名支持的解析类型以及解析值。您的域名创建完成后，可以通过调用此接口为域名添加不同类型的记录集。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateRecordSetWithLine
+        :type request: :class:`huaweicloudsdkdns.v2.CreateRecordSetWithLineRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.CreateRecordSetWithLineResponse`
+        """
+        http_info = self._create_record_set_with_line_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_record_set_with_line_async_invoker(self, request):
+        http_info = self._create_record_set_with_line_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_record_set_with_line_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.1/zones/{zone_id}/recordsets",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateRecordSetWithLineResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'zone_id' in local_var_params:
+            path_params['zone_id'] = local_var_params['zone_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_ptr_async(self, request):
+        r"""将弹性公网IP的反向解析记录恢复为默认值
+
+        将弹性公网IP的反向解析记录恢复为默认值。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeletePtr
+        :type request: :class:`huaweicloudsdkdns.v2.DeletePtrRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.DeletePtrResponse`
+        """
+        http_info = self._delete_ptr_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_ptr_async_invoker(self, request):
+        http_info = self._delete_ptr_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_ptr_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2.1/ptrs/{ptr_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeletePtrResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'ptr_id' in local_var_params:
+            path_params['ptr_id'] = local_var_params['ptr_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_record_sets_async(self, request):
+        r"""删除记录集
+
+        当您的记录集不再使用时，您可以通过调用此接口将其删除。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteRecordSets
+        :type request: :class:`huaweicloudsdkdns.v2.DeleteRecordSetsRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.DeleteRecordSetsResponse`
+        """
+        http_info = self._delete_record_sets_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_record_sets_async_invoker(self, request):
+        http_info = self._delete_record_sets_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_record_sets_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2.1/zones/{zone_id}/recordsets/{recordset_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteRecordSetsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'zone_id' in local_var_params:
+            path_params['zone_id'] = local_var_params['zone_id']
+        if 'recordset_id' in local_var_params:
+            path_params['recordset_id'] = local_var_params['recordset_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_ptrs_async(self, request):
+        r"""查询弹性公网IP的反向解析记录列表
+
+        查询弹性公网IP的反向解析记录列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListPtrs
+        :type request: :class:`huaweicloudsdkdns.v2.ListPtrsRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.ListPtrsResponse`
+        """
+        http_info = self._list_ptrs_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_ptrs_async_invoker(self, request):
+        http_info = self._list_ptrs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_ptrs_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2.1/ptrs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPtrsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'tags' in local_var_params:
+            query_params.append(('tags', local_var_params['tags']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'resource_type' in local_var_params:
+            query_params.append(('resource_type', local_var_params['resource_type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_public_zone_lines_async(self, request):
+        r"""查询公网域名的线路列表
+
+        公网域名支持设置线路解析，当您的公网域名创建完成并添加记录集时，可通过调用此接口查询公网域名的所有解析线路。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListPublicZoneLines
+        :type request: :class:`huaweicloudsdkdns.v2.ListPublicZoneLinesRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.ListPublicZoneLinesResponse`
+        """
+        http_info = self._list_public_zone_lines_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_public_zone_lines_async_invoker(self, request):
+        http_info = self._list_public_zone_lines_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_public_zone_lines_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2.1/zones/{zone_id}/lines",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPublicZoneLinesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'zone_id' in local_var_params:
+            path_params['zone_id'] = local_var_params['zone_id']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_record_sets_with_line_async(self, request):
+        r"""查询租户记录集列表
+
+        当您的记录集创建成功后，您可以通过调用此接口查询单个记录集信息，包括名称、ID、状态、所属域名、解析记录值、标签、TTL、创建时间、修改时间、描述等。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListRecordSetsWithLine
+        :type request: :class:`huaweicloudsdkdns.v2.ListRecordSetsWithLineRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.ListRecordSetsWithLineResponse`
+        """
+        http_info = self._list_record_sets_with_line_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_record_sets_with_line_async_invoker(self, request):
+        http_info = self._list_record_sets_with_line_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_record_sets_with_line_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2.1/recordsets",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRecordSetsWithLineResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'zone_type' in local_var_params:
+            query_params.append(('zone_type', local_var_params['zone_type']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'zone_id' in local_var_params:
+            query_params.append(('zone_id', local_var_params['zone_id']))
+        if 'line_id' in local_var_params:
+            query_params.append(('line_id', local_var_params['line_id']))
+        if 'tags' in local_var_params:
+            query_params.append(('tags', local_var_params['tags']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'records' in local_var_params:
+            query_params.append(('records', local_var_params['records']))
+        if 'sort_key' in local_var_params:
+            query_params.append(('sort_key', local_var_params['sort_key']))
+        if 'sort_dir' in local_var_params:
+            query_params.append(('sort_dir', local_var_params['sort_dir']))
+        if 'health_check_id' in local_var_params:
+            query_params.append(('health_check_id', local_var_params['health_check_id']))
+        if 'search_mode' in local_var_params:
+            query_params.append(('search_mode', local_var_params['search_mode']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def set_record_sets_status_async(self, request):
+        r"""设置记录集状态
+
+        当您的内网域名创建成功后，您可以通过调用此接口设置记录集的状态，包括暂停、启用。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for SetRecordSetsStatus
+        :type request: :class:`huaweicloudsdkdns.v2.SetRecordSetsStatusRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.SetRecordSetsStatusResponse`
+        """
+        http_info = self._set_record_sets_status_http_info(request)
+        return self._call_api(**http_info)
+
+    def set_record_sets_status_async_invoker(self, request):
+        http_info = self._set_record_sets_status_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _set_record_sets_status_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2.1/recordsets/{recordset_id}/statuses/set",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetRecordSetsStatusResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'recordset_id' in local_var_params:
+            path_params['recordset_id'] = local_var_params['recordset_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_ptr_async(self, request):
+        r"""查询弹性公网IP的反向解析记录
+
+        查询弹性公网IP的反向解析记录。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowPtr
+        :type request: :class:`huaweicloudsdkdns.v2.ShowPtrRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.ShowPtrResponse`
+        """
+        http_info = self._show_ptr_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_ptr_async_invoker(self, request):
+        http_info = self._show_ptr_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_ptr_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2.1/ptrs/{ptr_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPtrResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'ptr_id' in local_var_params:
+            path_params['ptr_id'] = local_var_params['ptr_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_record_set_by_zone_async(self, request):
+        r"""查询域名下的记录集列表
+
+        当您的记录集创建成功后，您可以通过调用此接口查询单个记录集信息，包括名称、ID、状态、所属域名、解析记录值、标签、TTL、创建时间、修改时间、描述等。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowRecordSetByZone
+        :type request: :class:`huaweicloudsdkdns.v2.ShowRecordSetByZoneRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.ShowRecordSetByZoneResponse`
+        """
+        http_info = self._show_record_set_by_zone_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_record_set_by_zone_async_invoker(self, request):
+        http_info = self._show_record_set_by_zone_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_record_set_by_zone_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2.1/zones/{zone_id}/recordsets",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRecordSetByZoneResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'zone_id' in local_var_params:
+            path_params['zone_id'] = local_var_params['zone_id']
+
+        query_params = []
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'line_id' in local_var_params:
+            query_params.append(('line_id', local_var_params['line_id']))
+        if 'tags' in local_var_params:
+            query_params.append(('tags', local_var_params['tags']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'sort_key' in local_var_params:
+            query_params.append(('sort_key', local_var_params['sort_key']))
+        if 'sort_dir' in local_var_params:
+            query_params.append(('sort_dir', local_var_params['sort_dir']))
+        if 'search_mode' in local_var_params:
+            query_params.append(('search_mode', local_var_params['search_mode']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_record_set_with_line_async(self, request):
+        r"""查询记录集
+
+        当您的记录集创建成功后，您可以通过调用此接口查询单个记录集信息，包括名称、ID、状态、所属域名、解析记录值、标签、TTL、创建时间、修改时间、描述等。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowRecordSetWithLine
+        :type request: :class:`huaweicloudsdkdns.v2.ShowRecordSetWithLineRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.ShowRecordSetWithLineResponse`
+        """
+        http_info = self._show_record_set_with_line_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_record_set_with_line_async_invoker(self, request):
+        http_info = self._show_record_set_with_line_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_record_set_with_line_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2.1/zones/{zone_id}/recordsets/{recordset_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRecordSetWithLineResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'zone_id' in local_var_params:
+            path_params['zone_id'] = local_var_params['zone_id']
+        if 'recordset_id' in local_var_params:
+            path_params['recordset_id'] = local_var_params['recordset_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_ptr_async(self, request):
+        r"""修改弹性公网IP的反向解析记录
+
+        修改弹性公网IP的反向解析记录。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdatePtr
+        :type request: :class:`huaweicloudsdkdns.v2.UpdatePtrRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.UpdatePtrResponse`
+        """
+        http_info = self._update_ptr_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_ptr_async_invoker(self, request):
+        http_info = self._update_ptr_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_ptr_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2.1/ptrs/{ptr_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePtrResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'ptr_id' in local_var_params:
+            path_params['ptr_id'] = local_var_params['ptr_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_record_sets_async(self, request):
+        r"""修改记录集
+
+        当您的记录集创建成功后，您可以通过调用此接口修改记录集的信息，包括域名、类型、记录值、TTL、描述等。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateRecordSets
+        :type request: :class:`huaweicloudsdkdns.v2.UpdateRecordSetsRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.UpdateRecordSetsResponse`
+        """
+        http_info = self._update_record_sets_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_record_sets_async_invoker(self, request):
+        http_info = self._update_record_sets_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_record_sets_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2.1/zones/{zone_id}/recordsets/{recordset_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateRecordSetsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'zone_id' in local_var_params:
+            path_params['zone_id'] = local_var_params['zone_id']
+        if 'recordset_id' in local_var_params:
+            path_params['recordset_id'] = local_var_params['recordset_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 

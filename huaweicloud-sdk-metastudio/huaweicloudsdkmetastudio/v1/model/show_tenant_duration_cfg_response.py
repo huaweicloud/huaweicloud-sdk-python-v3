@@ -36,7 +36,9 @@ class ShowTenantDurationCfgResponse(SdkResponse):
         'cmww_advice_value': 'int',
         'ljzn_min': 'int',
         'ljzn_max': 'int',
-        'ljzn_advice_value': 'int'
+        'ljzn_advice_value': 'int',
+        'short_assess_min': 'int',
+        'short_assess_max': 'int'
     }
 
     attribute_map = {
@@ -58,10 +60,12 @@ class ShowTenantDurationCfgResponse(SdkResponse):
         'cmww_advice_value': 'cmww_advice_value',
         'ljzn_min': 'ljzn_min',
         'ljzn_max': 'ljzn_max',
-        'ljzn_advice_value': 'ljzn_advice_value'
+        'ljzn_advice_value': 'ljzn_advice_value',
+        'short_assess_min': 'short_assess_min',
+        'short_assess_max': 'short_assess_max'
     }
 
-    def __init__(self, tenant_id=None, basic_min=None, basic_max=None, basic_advice_value=None, middle_min=None, middle_max=None, middle_advice_value=None, advance_min=None, advance_max=None, advance_advice_value=None, flexus_min=None, flexus_max=None, flexus_advice_value=None, cmww_min=None, cmww_max=None, cmww_advice_value=None, ljzn_min=None, ljzn_max=None, ljzn_advice_value=None):
+    def __init__(self, tenant_id=None, basic_min=None, basic_max=None, basic_advice_value=None, middle_min=None, middle_max=None, middle_advice_value=None, advance_min=None, advance_max=None, advance_advice_value=None, flexus_min=None, flexus_max=None, flexus_advice_value=None, cmww_min=None, cmww_max=None, cmww_advice_value=None, ljzn_min=None, ljzn_max=None, ljzn_advice_value=None, short_assess_min=None, short_assess_max=None):
         r"""ShowTenantDurationCfgResponse
 
         The model defined in huaweicloud sdk
@@ -104,6 +108,10 @@ class ShowTenantDurationCfgResponse(SdkResponse):
         :type ljzn_max: int
         :param ljzn_advice_value: 逻辑智能建议时长（秒）
         :type ljzn_advice_value: int
+        :param short_assess_min: 短任务质量检测最低时长（秒）
+        :type short_assess_min: int
+        :param short_assess_max: 短任务质量检测最高时长（秒）
+        :type short_assess_max: int
         """
         
         super(ShowTenantDurationCfgResponse, self).__init__()
@@ -127,6 +135,8 @@ class ShowTenantDurationCfgResponse(SdkResponse):
         self._ljzn_min = None
         self._ljzn_max = None
         self._ljzn_advice_value = None
+        self._short_assess_min = None
+        self._short_assess_max = None
         self.discriminator = None
 
         if tenant_id is not None:
@@ -167,6 +177,10 @@ class ShowTenantDurationCfgResponse(SdkResponse):
             self.ljzn_max = ljzn_max
         if ljzn_advice_value is not None:
             self.ljzn_advice_value = ljzn_advice_value
+        if short_assess_min is not None:
+            self.short_assess_min = short_assess_min
+        if short_assess_max is not None:
+            self.short_assess_max = short_assess_max
 
     @property
     def tenant_id(self):
@@ -585,6 +599,50 @@ class ShowTenantDurationCfgResponse(SdkResponse):
         :type ljzn_advice_value: int
         """
         self._ljzn_advice_value = ljzn_advice_value
+
+    @property
+    def short_assess_min(self):
+        r"""Gets the short_assess_min of this ShowTenantDurationCfgResponse.
+
+        短任务质量检测最低时长（秒）
+
+        :return: The short_assess_min of this ShowTenantDurationCfgResponse.
+        :rtype: int
+        """
+        return self._short_assess_min
+
+    @short_assess_min.setter
+    def short_assess_min(self, short_assess_min):
+        r"""Sets the short_assess_min of this ShowTenantDurationCfgResponse.
+
+        短任务质量检测最低时长（秒）
+
+        :param short_assess_min: The short_assess_min of this ShowTenantDurationCfgResponse.
+        :type short_assess_min: int
+        """
+        self._short_assess_min = short_assess_min
+
+    @property
+    def short_assess_max(self):
+        r"""Gets the short_assess_max of this ShowTenantDurationCfgResponse.
+
+        短任务质量检测最高时长（秒）
+
+        :return: The short_assess_max of this ShowTenantDurationCfgResponse.
+        :rtype: int
+        """
+        return self._short_assess_max
+
+    @short_assess_max.setter
+    def short_assess_max(self, short_assess_max):
+        r"""Sets the short_assess_max of this ShowTenantDurationCfgResponse.
+
+        短任务质量检测最高时长（秒）
+
+        :param short_assess_max: The short_assess_max of this ShowTenantDurationCfgResponse.
+        :type short_assess_max: int
+        """
+        self._short_assess_max = short_assess_max
 
     def to_dict(self):
         """Returns the model properties as a dict"""

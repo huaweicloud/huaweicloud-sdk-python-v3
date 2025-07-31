@@ -23,7 +23,8 @@ class BatchCreateInvocationRequestBody:
         'invocation_ids': 'list[str]',
         'version_type': 'str',
         'origin': 'str',
-        'version': 'str'
+        'version': 'str',
+        'remote_install_meta': 'list[RemoteInstallHostInfo]'
     }
 
     attribute_map = {
@@ -33,17 +34,18 @@ class BatchCreateInvocationRequestBody:
         'invocation_ids': 'invocation_ids',
         'version_type': 'version_type',
         'origin': 'origin',
-        'version': 'version'
+        'version': 'version',
+        'remote_install_meta': 'remote_install_meta'
     }
 
-    def __init__(self, instance_ids=None, invocation_type=None, invocation_target=None, invocation_ids=None, version_type=None, origin=None, version=None):
+    def __init__(self, instance_ids=None, invocation_type=None, invocation_target=None, invocation_ids=None, version_type=None, origin=None, version=None, remote_install_meta=None):
         r"""BatchCreateInvocationRequestBody
 
         The model defined in huaweicloud sdk
 
         :param instance_ids: 主机id列表（INSTALL和UPDATE时必须）
         :type instance_ids: list[str]
-        :param invocation_type: 任务类型，INSTALL 安装，UPDATE升级，ROLLBACK回退，RETRY重试
+        :param invocation_type: 任务类型，INSTALL 安装，UPDATE升级，ROLLBACK回退，RETRY重试，SET_REMOTE_INSTALL_HOST设置远程安装主机，REMOTE_INSTALL执行远程安装
         :type invocation_type: str
         :param invocation_target: 任务对象，目前仅支持telescope
         :type invocation_target: str
@@ -55,6 +57,8 @@ class BatchCreateInvocationRequestBody:
         :type origin: str
         :param version: 版本号
         :type version: str
+        :param remote_install_meta: 创建远程安装任务时需要下发的被安装主机相关信息
+        :type remote_install_meta: list[:class:`huaweicloudsdkces.v3.RemoteInstallHostInfo`]
         """
         
         
@@ -66,6 +70,7 @@ class BatchCreateInvocationRequestBody:
         self._version_type = None
         self._origin = None
         self._version = None
+        self._remote_install_meta = None
         self.discriminator = None
 
         if instance_ids is not None:
@@ -81,6 +86,8 @@ class BatchCreateInvocationRequestBody:
             self.origin = origin
         if version is not None:
             self.version = version
+        if remote_install_meta is not None:
+            self.remote_install_meta = remote_install_meta
 
     @property
     def instance_ids(self):
@@ -108,7 +115,7 @@ class BatchCreateInvocationRequestBody:
     def invocation_type(self):
         r"""Gets the invocation_type of this BatchCreateInvocationRequestBody.
 
-        任务类型，INSTALL 安装，UPDATE升级，ROLLBACK回退，RETRY重试
+        任务类型，INSTALL 安装，UPDATE升级，ROLLBACK回退，RETRY重试，SET_REMOTE_INSTALL_HOST设置远程安装主机，REMOTE_INSTALL执行远程安装
 
         :return: The invocation_type of this BatchCreateInvocationRequestBody.
         :rtype: str
@@ -119,7 +126,7 @@ class BatchCreateInvocationRequestBody:
     def invocation_type(self, invocation_type):
         r"""Sets the invocation_type of this BatchCreateInvocationRequestBody.
 
-        任务类型，INSTALL 安装，UPDATE升级，ROLLBACK回退，RETRY重试
+        任务类型，INSTALL 安装，UPDATE升级，ROLLBACK回退，RETRY重试，SET_REMOTE_INSTALL_HOST设置远程安装主机，REMOTE_INSTALL执行远程安装
 
         :param invocation_type: The invocation_type of this BatchCreateInvocationRequestBody.
         :type invocation_type: str
@@ -235,6 +242,28 @@ class BatchCreateInvocationRequestBody:
         :type version: str
         """
         self._version = version
+
+    @property
+    def remote_install_meta(self):
+        r"""Gets the remote_install_meta of this BatchCreateInvocationRequestBody.
+
+        创建远程安装任务时需要下发的被安装主机相关信息
+
+        :return: The remote_install_meta of this BatchCreateInvocationRequestBody.
+        :rtype: list[:class:`huaweicloudsdkces.v3.RemoteInstallHostInfo`]
+        """
+        return self._remote_install_meta
+
+    @remote_install_meta.setter
+    def remote_install_meta(self, remote_install_meta):
+        r"""Sets the remote_install_meta of this BatchCreateInvocationRequestBody.
+
+        创建远程安装任务时需要下发的被安装主机相关信息
+
+        :param remote_install_meta: The remote_install_meta of this BatchCreateInvocationRequestBody.
+        :type remote_install_meta: list[:class:`huaweicloudsdkces.v3.RemoteInstallHostInfo`]
+        """
+        self._remote_install_meta = remote_install_meta
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -17,7 +17,7 @@ class ShrinkLogicalClusterRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'cluster_rings': 'list[ClusterRingVo]',
+        'cluster_rings': 'list[ClusterRing]',
         'parallel_jobs': 'int',
         'mode': 'str'
     }
@@ -34,7 +34,7 @@ class ShrinkLogicalClusterRequestBody:
         The model defined in huaweicloud sdk
 
         :param cluster_rings: **参数解释**： 缩容主机环信息。  **约束限制**：  不涉及。 **取值范围**：  不涉及。 **默认取值**：  不涉及。
-        :type cluster_rings: list[:class:`huaweicloudsdkdws.v2.ClusterRingVo`]
+        :type cluster_rings: list[:class:`huaweicloudsdkdws.v2.ClusterRing`]
         :param parallel_jobs: **参数解释**： 重分布并发配置数。  **约束限制**：  不涉及。 **取值范围**：  1~200。 **默认取值**：  4。
         :type parallel_jobs: int
         :param mode: **参数解释**：  缩容模式。 **约束限制**：  不涉及。 **取值范围**：  read-only：离线模式 insert：在线模式 **默认取值**：  insert
@@ -61,7 +61,7 @@ class ShrinkLogicalClusterRequestBody:
         **参数解释**： 缩容主机环信息。  **约束限制**：  不涉及。 **取值范围**：  不涉及。 **默认取值**：  不涉及。
 
         :return: The cluster_rings of this ShrinkLogicalClusterRequestBody.
-        :rtype: list[:class:`huaweicloudsdkdws.v2.ClusterRingVo`]
+        :rtype: list[:class:`huaweicloudsdkdws.v2.ClusterRing`]
         """
         return self._cluster_rings
 
@@ -72,7 +72,7 @@ class ShrinkLogicalClusterRequestBody:
         **参数解释**： 缩容主机环信息。  **约束限制**：  不涉及。 **取值范围**：  不涉及。 **默认取值**：  不涉及。
 
         :param cluster_rings: The cluster_rings of this ShrinkLogicalClusterRequestBody.
-        :type cluster_rings: list[:class:`huaweicloudsdkdws.v2.ClusterRingVo`]
+        :type cluster_rings: list[:class:`huaweicloudsdkdws.v2.ClusterRing`]
         """
         self._cluster_rings = cluster_rings
 

@@ -37,15 +37,15 @@ class ResourceQuotasInfo:
 
         The model defined in huaweicloud sdk
 
-        :param version: 主机开通的版本，包含如下7种输入。   - hss.version.null ：无。   - hss.version.basic ：基础版。   - hss.version.advanced ：专业版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。   - hss.version.container.enterprise：容器版。
+        :param version: **参数解释**： 主机开通的版本 **取值范围**： 包含如下7种输入。   - hss.version.null ：无。   - hss.version.basic ：基础版。   - hss.version.advanced ：专业版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。   - hss.version.container.enterprise：容器版。
         :type version: str
-        :param total_num: 总配额数
+        :param total_num: **参数解释**： 总配额数 **取值范围**： 0-2000000
         :type total_num: int
-        :param used_num: 已使用配额数
+        :param used_num: **参数解释**： 已使用配额数 **取值范围**： 0-2000000
         :type used_num: int
-        :param available_num: 可用总配额数
+        :param available_num: **参数解释**： 可用总配额数 **取值范围**： 0-2000000
         :type available_num: int
-        :param available_resources_list: 可用资源列表
+        :param available_resources_list: **参数解释**： 可用资源列表 **取值范围**： 不涉及
         :type available_resources_list: list[:class:`huaweicloudsdkhss.v5.AvailableResourceIdsInfo`]
         """
         
@@ -73,7 +73,7 @@ class ResourceQuotasInfo:
     def version(self):
         r"""Gets the version of this ResourceQuotasInfo.
 
-        主机开通的版本，包含如下7种输入。   - hss.version.null ：无。   - hss.version.basic ：基础版。   - hss.version.advanced ：专业版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。   - hss.version.container.enterprise：容器版。
+        **参数解释**： 主机开通的版本 **取值范围**： 包含如下7种输入。   - hss.version.null ：无。   - hss.version.basic ：基础版。   - hss.version.advanced ：专业版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。   - hss.version.container.enterprise：容器版。
 
         :return: The version of this ResourceQuotasInfo.
         :rtype: str
@@ -84,7 +84,7 @@ class ResourceQuotasInfo:
     def version(self, version):
         r"""Sets the version of this ResourceQuotasInfo.
 
-        主机开通的版本，包含如下7种输入。   - hss.version.null ：无。   - hss.version.basic ：基础版。   - hss.version.advanced ：专业版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。   - hss.version.container.enterprise：容器版。
+        **参数解释**： 主机开通的版本 **取值范围**： 包含如下7种输入。   - hss.version.null ：无。   - hss.version.basic ：基础版。   - hss.version.advanced ：专业版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。   - hss.version.container.enterprise：容器版。
 
         :param version: The version of this ResourceQuotasInfo.
         :type version: str
@@ -95,7 +95,7 @@ class ResourceQuotasInfo:
     def total_num(self):
         r"""Gets the total_num of this ResourceQuotasInfo.
 
-        总配额数
+        **参数解释**： 总配额数 **取值范围**： 0-2000000
 
         :return: The total_num of this ResourceQuotasInfo.
         :rtype: int
@@ -106,7 +106,7 @@ class ResourceQuotasInfo:
     def total_num(self, total_num):
         r"""Sets the total_num of this ResourceQuotasInfo.
 
-        总配额数
+        **参数解释**： 总配额数 **取值范围**： 0-2000000
 
         :param total_num: The total_num of this ResourceQuotasInfo.
         :type total_num: int
@@ -117,7 +117,7 @@ class ResourceQuotasInfo:
     def used_num(self):
         r"""Gets the used_num of this ResourceQuotasInfo.
 
-        已使用配额数
+        **参数解释**： 已使用配额数 **取值范围**： 0-2000000
 
         :return: The used_num of this ResourceQuotasInfo.
         :rtype: int
@@ -128,7 +128,7 @@ class ResourceQuotasInfo:
     def used_num(self, used_num):
         r"""Sets the used_num of this ResourceQuotasInfo.
 
-        已使用配额数
+        **参数解释**： 已使用配额数 **取值范围**： 0-2000000
 
         :param used_num: The used_num of this ResourceQuotasInfo.
         :type used_num: int
@@ -139,7 +139,7 @@ class ResourceQuotasInfo:
     def available_num(self):
         r"""Gets the available_num of this ResourceQuotasInfo.
 
-        可用总配额数
+        **参数解释**： 可用总配额数 **取值范围**： 0-2000000
 
         :return: The available_num of this ResourceQuotasInfo.
         :rtype: int
@@ -150,7 +150,7 @@ class ResourceQuotasInfo:
     def available_num(self, available_num):
         r"""Sets the available_num of this ResourceQuotasInfo.
 
-        可用总配额数
+        **参数解释**： 可用总配额数 **取值范围**： 0-2000000
 
         :param available_num: The available_num of this ResourceQuotasInfo.
         :type available_num: int
@@ -161,7 +161,7 @@ class ResourceQuotasInfo:
     def available_resources_list(self):
         r"""Gets the available_resources_list of this ResourceQuotasInfo.
 
-        可用资源列表
+        **参数解释**： 可用资源列表 **取值范围**： 不涉及
 
         :return: The available_resources_list of this ResourceQuotasInfo.
         :rtype: list[:class:`huaweicloudsdkhss.v5.AvailableResourceIdsInfo`]
@@ -172,7 +172,7 @@ class ResourceQuotasInfo:
     def available_resources_list(self, available_resources_list):
         r"""Sets the available_resources_list of this ResourceQuotasInfo.
 
-        可用资源列表
+        **参数解释**： 可用资源列表 **取值范围**： 不涉及
 
         :param available_resources_list: The available_resources_list of this ResourceQuotasInfo.
         :type available_resources_list: list[:class:`huaweicloudsdkhss.v5.AvailableResourceIdsInfo`]

@@ -33,11 +33,11 @@ class PublicZoneLines:
 
         The model defined in huaweicloud sdk
 
-        :param line: 线路ID。
+        :param line: **参数解释：** 线路ID。 **取值范围：** 不涉及。
         :type line: str
-        :param line_name: 线路名称。
+        :param line_name: **参数解释：** 线路名称。 **取值范围：** 不涉及。
         :type line_name: str
-        :param create_time: 创建时间。 格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSS。
+        :param create_time: **参数解释：** 创建时间。 格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSS。 **取值范围：** 不涉及。
         :type create_time: str
         """
         
@@ -59,7 +59,7 @@ class PublicZoneLines:
     def line(self):
         r"""Gets the line of this PublicZoneLines.
 
-        线路ID。
+        **参数解释：** 线路ID。 **取值范围：** 不涉及。
 
         :return: The line of this PublicZoneLines.
         :rtype: str
@@ -70,7 +70,7 @@ class PublicZoneLines:
     def line(self, line):
         r"""Sets the line of this PublicZoneLines.
 
-        线路ID。
+        **参数解释：** 线路ID。 **取值范围：** 不涉及。
 
         :param line: The line of this PublicZoneLines.
         :type line: str
@@ -81,7 +81,7 @@ class PublicZoneLines:
     def line_name(self):
         r"""Gets the line_name of this PublicZoneLines.
 
-        线路名称。
+        **参数解释：** 线路名称。 **取值范围：** 不涉及。
 
         :return: The line_name of this PublicZoneLines.
         :rtype: str
@@ -92,7 +92,7 @@ class PublicZoneLines:
     def line_name(self, line_name):
         r"""Sets the line_name of this PublicZoneLines.
 
-        线路名称。
+        **参数解释：** 线路名称。 **取值范围：** 不涉及。
 
         :param line_name: The line_name of this PublicZoneLines.
         :type line_name: str
@@ -103,7 +103,7 @@ class PublicZoneLines:
     def create_time(self):
         r"""Gets the create_time of this PublicZoneLines.
 
-        创建时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。
+        **参数解释：** 创建时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。 **取值范围：** 不涉及。
 
         :return: The create_time of this PublicZoneLines.
         :rtype: str
@@ -114,7 +114,7 @@ class PublicZoneLines:
     def create_time(self, create_time):
         r"""Sets the create_time of this PublicZoneLines.
 
-        创建时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。
+        **参数解释：** 创建时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。 **取值范围：** 不涉及。
 
         :param create_time: The create_time of this PublicZoneLines.
         :type create_time: str

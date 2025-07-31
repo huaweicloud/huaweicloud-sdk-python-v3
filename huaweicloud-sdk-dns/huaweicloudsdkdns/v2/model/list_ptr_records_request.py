@@ -41,9 +41,9 @@ class ListPtrRecordsRequest:
 
         :param marker: 分页查询起始的资源ID，为空时为查询第一页。  默认值为空。
         :type marker: str
-        :param limit: 每页返回的资源个数。  取值范围：0~500  取值一般为10，20，50。默认值为500。
+        :param limit: 分页查询时配置每页返回的资源个数。  取值范围：0~500  取值一般为10，20，50。默认值为500。
         :type limit: int
-        :param offset: 分页查询起始偏移量，表示从偏移量的下一个资源开始查询。  取值范围：0~2147483647  默认值为0。  当前设置marker不为空时，以marker为分页起始标识。
+        :param offset: 分页查询起始偏移量，表示从偏移量的下一个资源开始查询。  取值范围：0~2147483647  默认值为0。  当设置marker不为空时，以marker为分页起始标识，offset不生效。。
         :type offset: int
         :param enterprise_project_id: 反向解析关联的企业项目ID，长度不超过36个字符。
         :type enterprise_project_id: str
@@ -102,7 +102,7 @@ class ListPtrRecordsRequest:
     def limit(self):
         r"""Gets the limit of this ListPtrRecordsRequest.
 
-        每页返回的资源个数。  取值范围：0~500  取值一般为10，20，50。默认值为500。
+        分页查询时配置每页返回的资源个数。  取值范围：0~500  取值一般为10，20，50。默认值为500。
 
         :return: The limit of this ListPtrRecordsRequest.
         :rtype: int
@@ -113,7 +113,7 @@ class ListPtrRecordsRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListPtrRecordsRequest.
 
-        每页返回的资源个数。  取值范围：0~500  取值一般为10，20，50。默认值为500。
+        分页查询时配置每页返回的资源个数。  取值范围：0~500  取值一般为10，20，50。默认值为500。
 
         :param limit: The limit of this ListPtrRecordsRequest.
         :type limit: int
@@ -124,7 +124,7 @@ class ListPtrRecordsRequest:
     def offset(self):
         r"""Gets the offset of this ListPtrRecordsRequest.
 
-        分页查询起始偏移量，表示从偏移量的下一个资源开始查询。  取值范围：0~2147483647  默认值为0。  当前设置marker不为空时，以marker为分页起始标识。
+        分页查询起始偏移量，表示从偏移量的下一个资源开始查询。  取值范围：0~2147483647  默认值为0。  当设置marker不为空时，以marker为分页起始标识，offset不生效。。
 
         :return: The offset of this ListPtrRecordsRequest.
         :rtype: int
@@ -135,7 +135,7 @@ class ListPtrRecordsRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListPtrRecordsRequest.
 
-        分页查询起始偏移量，表示从偏移量的下一个资源开始查询。  取值范围：0~2147483647  默认值为0。  当前设置marker不为空时，以marker为分页起始标识。
+        分页查询起始偏移量，表示从偏移量的下一个资源开始查询。  取值范围：0~2147483647  默认值为0。  当设置marker不为空时，以marker为分页起始标识，offset不生效。。
 
         :param offset: The offset of this ListPtrRecordsRequest.
         :type offset: int

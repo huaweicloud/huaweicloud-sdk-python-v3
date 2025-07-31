@@ -44,21 +44,21 @@ class ShowRiskConfigDetailResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param severity: 风险等级，包含如下:   - Low : 低危   - Medium : 中危   - High : 高危
+        :param severity: **参数解释**: 风险等级 **取值范围**: - Low : 低危 - Medium : 中危 - High : 高危 
         :type severity: str
-        :param check_type: 配置检查（基线）的类型,例如SSH、CentOS 7、Windows Server 2019 R2、Windows Server 2016 R2、MySQL5-Windows
+        :param check_type: **参数解释**: 配置检查（基线）的类型,例如SSH、CentOS 7、Windows Server 2019 R2、Windows Server 2016 R2、MySQL5-Windows **取值范围**: 不涉及 
         :type check_type: str
-        :param check_type_desc: 对配置检查（基线）类型的描述信息，概括当前基线包含的检查项是根据什么标准制定的，能够审计哪些方面的问题。
+        :param check_type_desc: **参数解释**: 对配置检查（基线）类型的描述信息，概括当前基线包含的检查项是根据什么标准制定的，能够审计哪些方面的问题。 **取值范围**: 不涉及 
         :type check_type_desc: str
-        :param check_rule_num: 当前配置检查（基线）类型下，用户共检测了多少个检查项。例如标准类型为hw_standard的SSH基线，主机安全提供了17个检查项，但用户所有主机都只检测了SSH基线的其中5个检查项，check_rule_num就是5。用户有一台主机进行了全量检查项检测，check_rule_num就是17。
+        :param check_rule_num: **参数解释**: 当前配置检查（基线）类型下，用户共检测了多少个检查项。例如标准类型为hw_standard的SSH基线，主机安全提供了17个检查项，但用户所有主机都只检测了SSH基线的其中5个检查项，check_rule_num就是5。用户有一台主机进行了全量检查项检测，check_rule_num就是17。 **取值范围**: 不涉及 
         :type check_rule_num: int
-        :param failed_rule_num: 未通过的检查项数量，check_rule_num中只要有一台主机没通过某个检查项，这个检查项就会被计算在failed_rule_num中
+        :param failed_rule_num: **参数解释**: 未通过的检查项数量，check_rule_num中只要有一台主机没通过某个检查项，这个检查项就会被计算在failed_rule_num中 **取值范围**: 不涉及 
         :type failed_rule_num: int
-        :param passed_rule_num: 已通过的检查项数量，check_rule_num中只要有一台主机通过了某个检查项，这个检查项就会被计算在passed_rule_num中
+        :param passed_rule_num: **参数解释**: 已通过的检查项数量，check_rule_num中只要有一台主机通过了某个检查项，这个检查项就会被计算在passed_rule_num中 **取值范围**: 不涉及 
         :type passed_rule_num: int
-        :param ignored_rule_num: 已忽略的检查项数量，check_rule_num中只要有一台主机忽略了某个检查项，这个检查项就会被计算在ignored_rule_num中
+        :param ignored_rule_num: **参数解释**: 已忽略的检查项数量，check_rule_num中只要有一台主机忽略了某个检查项，这个检查项就会被计算在ignored_rule_num中 **取值范围**: 不涉及 
         :type ignored_rule_num: int
-        :param host_num: 受影响的服务器的数量，进行了当前基线检测的服务器数量
+        :param host_num: **参数解释**: 受影响的服务器的数量，进行了当前基线检测的服务器数量 **取值范围**: 不涉及 
         :type host_num: int
         """
         
@@ -95,7 +95,7 @@ class ShowRiskConfigDetailResponse(SdkResponse):
     def severity(self):
         r"""Gets the severity of this ShowRiskConfigDetailResponse.
 
-        风险等级，包含如下:   - Low : 低危   - Medium : 中危   - High : 高危
+        **参数解释**: 风险等级 **取值范围**: - Low : 低危 - Medium : 中危 - High : 高危 
 
         :return: The severity of this ShowRiskConfigDetailResponse.
         :rtype: str
@@ -106,7 +106,7 @@ class ShowRiskConfigDetailResponse(SdkResponse):
     def severity(self, severity):
         r"""Sets the severity of this ShowRiskConfigDetailResponse.
 
-        风险等级，包含如下:   - Low : 低危   - Medium : 中危   - High : 高危
+        **参数解释**: 风险等级 **取值范围**: - Low : 低危 - Medium : 中危 - High : 高危 
 
         :param severity: The severity of this ShowRiskConfigDetailResponse.
         :type severity: str
@@ -117,7 +117,7 @@ class ShowRiskConfigDetailResponse(SdkResponse):
     def check_type(self):
         r"""Gets the check_type of this ShowRiskConfigDetailResponse.
 
-        配置检查（基线）的类型,例如SSH、CentOS 7、Windows Server 2019 R2、Windows Server 2016 R2、MySQL5-Windows
+        **参数解释**: 配置检查（基线）的类型,例如SSH、CentOS 7、Windows Server 2019 R2、Windows Server 2016 R2、MySQL5-Windows **取值范围**: 不涉及 
 
         :return: The check_type of this ShowRiskConfigDetailResponse.
         :rtype: str
@@ -128,7 +128,7 @@ class ShowRiskConfigDetailResponse(SdkResponse):
     def check_type(self, check_type):
         r"""Sets the check_type of this ShowRiskConfigDetailResponse.
 
-        配置检查（基线）的类型,例如SSH、CentOS 7、Windows Server 2019 R2、Windows Server 2016 R2、MySQL5-Windows
+        **参数解释**: 配置检查（基线）的类型,例如SSH、CentOS 7、Windows Server 2019 R2、Windows Server 2016 R2、MySQL5-Windows **取值范围**: 不涉及 
 
         :param check_type: The check_type of this ShowRiskConfigDetailResponse.
         :type check_type: str
@@ -139,7 +139,7 @@ class ShowRiskConfigDetailResponse(SdkResponse):
     def check_type_desc(self):
         r"""Gets the check_type_desc of this ShowRiskConfigDetailResponse.
 
-        对配置检查（基线）类型的描述信息，概括当前基线包含的检查项是根据什么标准制定的，能够审计哪些方面的问题。
+        **参数解释**: 对配置检查（基线）类型的描述信息，概括当前基线包含的检查项是根据什么标准制定的，能够审计哪些方面的问题。 **取值范围**: 不涉及 
 
         :return: The check_type_desc of this ShowRiskConfigDetailResponse.
         :rtype: str
@@ -150,7 +150,7 @@ class ShowRiskConfigDetailResponse(SdkResponse):
     def check_type_desc(self, check_type_desc):
         r"""Sets the check_type_desc of this ShowRiskConfigDetailResponse.
 
-        对配置检查（基线）类型的描述信息，概括当前基线包含的检查项是根据什么标准制定的，能够审计哪些方面的问题。
+        **参数解释**: 对配置检查（基线）类型的描述信息，概括当前基线包含的检查项是根据什么标准制定的，能够审计哪些方面的问题。 **取值范围**: 不涉及 
 
         :param check_type_desc: The check_type_desc of this ShowRiskConfigDetailResponse.
         :type check_type_desc: str
@@ -161,7 +161,7 @@ class ShowRiskConfigDetailResponse(SdkResponse):
     def check_rule_num(self):
         r"""Gets the check_rule_num of this ShowRiskConfigDetailResponse.
 
-        当前配置检查（基线）类型下，用户共检测了多少个检查项。例如标准类型为hw_standard的SSH基线，主机安全提供了17个检查项，但用户所有主机都只检测了SSH基线的其中5个检查项，check_rule_num就是5。用户有一台主机进行了全量检查项检测，check_rule_num就是17。
+        **参数解释**: 当前配置检查（基线）类型下，用户共检测了多少个检查项。例如标准类型为hw_standard的SSH基线，主机安全提供了17个检查项，但用户所有主机都只检测了SSH基线的其中5个检查项，check_rule_num就是5。用户有一台主机进行了全量检查项检测，check_rule_num就是17。 **取值范围**: 不涉及 
 
         :return: The check_rule_num of this ShowRiskConfigDetailResponse.
         :rtype: int
@@ -172,7 +172,7 @@ class ShowRiskConfigDetailResponse(SdkResponse):
     def check_rule_num(self, check_rule_num):
         r"""Sets the check_rule_num of this ShowRiskConfigDetailResponse.
 
-        当前配置检查（基线）类型下，用户共检测了多少个检查项。例如标准类型为hw_standard的SSH基线，主机安全提供了17个检查项，但用户所有主机都只检测了SSH基线的其中5个检查项，check_rule_num就是5。用户有一台主机进行了全量检查项检测，check_rule_num就是17。
+        **参数解释**: 当前配置检查（基线）类型下，用户共检测了多少个检查项。例如标准类型为hw_standard的SSH基线，主机安全提供了17个检查项，但用户所有主机都只检测了SSH基线的其中5个检查项，check_rule_num就是5。用户有一台主机进行了全量检查项检测，check_rule_num就是17。 **取值范围**: 不涉及 
 
         :param check_rule_num: The check_rule_num of this ShowRiskConfigDetailResponse.
         :type check_rule_num: int
@@ -183,7 +183,7 @@ class ShowRiskConfigDetailResponse(SdkResponse):
     def failed_rule_num(self):
         r"""Gets the failed_rule_num of this ShowRiskConfigDetailResponse.
 
-        未通过的检查项数量，check_rule_num中只要有一台主机没通过某个检查项，这个检查项就会被计算在failed_rule_num中
+        **参数解释**: 未通过的检查项数量，check_rule_num中只要有一台主机没通过某个检查项，这个检查项就会被计算在failed_rule_num中 **取值范围**: 不涉及 
 
         :return: The failed_rule_num of this ShowRiskConfigDetailResponse.
         :rtype: int
@@ -194,7 +194,7 @@ class ShowRiskConfigDetailResponse(SdkResponse):
     def failed_rule_num(self, failed_rule_num):
         r"""Sets the failed_rule_num of this ShowRiskConfigDetailResponse.
 
-        未通过的检查项数量，check_rule_num中只要有一台主机没通过某个检查项，这个检查项就会被计算在failed_rule_num中
+        **参数解释**: 未通过的检查项数量，check_rule_num中只要有一台主机没通过某个检查项，这个检查项就会被计算在failed_rule_num中 **取值范围**: 不涉及 
 
         :param failed_rule_num: The failed_rule_num of this ShowRiskConfigDetailResponse.
         :type failed_rule_num: int
@@ -205,7 +205,7 @@ class ShowRiskConfigDetailResponse(SdkResponse):
     def passed_rule_num(self):
         r"""Gets the passed_rule_num of this ShowRiskConfigDetailResponse.
 
-        已通过的检查项数量，check_rule_num中只要有一台主机通过了某个检查项，这个检查项就会被计算在passed_rule_num中
+        **参数解释**: 已通过的检查项数量，check_rule_num中只要有一台主机通过了某个检查项，这个检查项就会被计算在passed_rule_num中 **取值范围**: 不涉及 
 
         :return: The passed_rule_num of this ShowRiskConfigDetailResponse.
         :rtype: int
@@ -216,7 +216,7 @@ class ShowRiskConfigDetailResponse(SdkResponse):
     def passed_rule_num(self, passed_rule_num):
         r"""Sets the passed_rule_num of this ShowRiskConfigDetailResponse.
 
-        已通过的检查项数量，check_rule_num中只要有一台主机通过了某个检查项，这个检查项就会被计算在passed_rule_num中
+        **参数解释**: 已通过的检查项数量，check_rule_num中只要有一台主机通过了某个检查项，这个检查项就会被计算在passed_rule_num中 **取值范围**: 不涉及 
 
         :param passed_rule_num: The passed_rule_num of this ShowRiskConfigDetailResponse.
         :type passed_rule_num: int
@@ -227,7 +227,7 @@ class ShowRiskConfigDetailResponse(SdkResponse):
     def ignored_rule_num(self):
         r"""Gets the ignored_rule_num of this ShowRiskConfigDetailResponse.
 
-        已忽略的检查项数量，check_rule_num中只要有一台主机忽略了某个检查项，这个检查项就会被计算在ignored_rule_num中
+        **参数解释**: 已忽略的检查项数量，check_rule_num中只要有一台主机忽略了某个检查项，这个检查项就会被计算在ignored_rule_num中 **取值范围**: 不涉及 
 
         :return: The ignored_rule_num of this ShowRiskConfigDetailResponse.
         :rtype: int
@@ -238,7 +238,7 @@ class ShowRiskConfigDetailResponse(SdkResponse):
     def ignored_rule_num(self, ignored_rule_num):
         r"""Sets the ignored_rule_num of this ShowRiskConfigDetailResponse.
 
-        已忽略的检查项数量，check_rule_num中只要有一台主机忽略了某个检查项，这个检查项就会被计算在ignored_rule_num中
+        **参数解释**: 已忽略的检查项数量，check_rule_num中只要有一台主机忽略了某个检查项，这个检查项就会被计算在ignored_rule_num中 **取值范围**: 不涉及 
 
         :param ignored_rule_num: The ignored_rule_num of this ShowRiskConfigDetailResponse.
         :type ignored_rule_num: int
@@ -249,7 +249,7 @@ class ShowRiskConfigDetailResponse(SdkResponse):
     def host_num(self):
         r"""Gets the host_num of this ShowRiskConfigDetailResponse.
 
-        受影响的服务器的数量，进行了当前基线检测的服务器数量
+        **参数解释**: 受影响的服务器的数量，进行了当前基线检测的服务器数量 **取值范围**: 不涉及 
 
         :return: The host_num of this ShowRiskConfigDetailResponse.
         :rtype: int
@@ -260,7 +260,7 @@ class ShowRiskConfigDetailResponse(SdkResponse):
     def host_num(self, host_num):
         r"""Sets the host_num of this ShowRiskConfigDetailResponse.
 
-        受影响的服务器的数量，进行了当前基线检测的服务器数量
+        **参数解释**: 受影响的服务器的数量，进行了当前基线检测的服务器数量 **取值范围**: 不涉及 
 
         :param host_num: The host_num of this ShowRiskConfigDetailResponse.
         :type host_num: int

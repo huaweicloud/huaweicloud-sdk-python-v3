@@ -3,6 +3,9 @@
 from __future__ import absolute_import
 
 # import models into model package
+from huaweicloudsdkcfw.v1.model.access_top_member_vo import AccessTopMemberVO
+from huaweicloudsdkcfw.v1.model.access_top_statistics_vo import AccessTopStatisticsVO
+from huaweicloudsdkcfw.v1.model.access_top_vo import AccessTopVO
 from huaweicloudsdkcfw.v1.model.add_acl_rule_request import AddAclRuleRequest
 from huaweicloudsdkcfw.v1.model.add_acl_rule_response import AddAclRuleResponse
 from huaweicloudsdkcfw.v1.model.add_address_item_request import AddAddressItemRequest
@@ -50,6 +53,8 @@ from huaweicloudsdkcfw.v1.model.anti_virus_rule_dto import AntiVirusRuleDto
 from huaweicloudsdkcfw.v1.model.anti_virus_rule_vo import AntiVirusRuleVO
 from huaweicloudsdkcfw.v1.model.anti_virus_switch_dto import AntiVirusSwitchDto
 from huaweicloudsdkcfw.v1.model.anti_virus_vo import AntiVirusVO
+from huaweicloudsdkcfw.v1.model.attack_statistic_resp_body import AttackStatisticRespBody
+from huaweicloudsdkcfw.v1.model.attack_trend_resp_body import AttackTrendRespBody
 from huaweicloudsdkcfw.v1.model.batch_delete_acl_rules_request import BatchDeleteAclRulesRequest
 from huaweicloudsdkcfw.v1.model.batch_delete_acl_rules_response import BatchDeleteAclRulesResponse
 from huaweicloudsdkcfw.v1.model.batch_delete_acl_rules_response_data import BatchDeleteAclRulesResponseData
@@ -109,6 +114,8 @@ from huaweicloudsdkcfw.v1.model.create_tag_request import CreateTagRequest
 from huaweicloudsdkcfw.v1.model.create_tag_response import CreateTagResponse
 from huaweicloudsdkcfw.v1.model.create_tags_dto import CreateTagsDto
 from huaweicloudsdkcfw.v1.model.customer_ips_list_vo import CustomerIpsListVO
+from huaweicloudsdkcfw.v1.model.customer_ips_save_dto import CustomerIpsSaveDto
+from huaweicloudsdkcfw.v1.model.customer_ips_vo import CustomerIpsVO
 from huaweicloudsdkcfw.v1.model.delete_acl_rule_hit_count_request import DeleteAclRuleHitCountRequest
 from huaweicloudsdkcfw.v1.model.delete_acl_rule_hit_count_response import DeleteAclRuleHitCountResponse
 from huaweicloudsdkcfw.v1.model.delete_acl_rule_request import DeleteAclRuleRequest
@@ -188,6 +195,7 @@ from huaweicloudsdkcfw.v1.model.ip_blacklist_import_dto import IpBlacklistImport
 from huaweicloudsdkcfw.v1.model.ip_blacklist_switch_info_vo import IpBlacklistSwitchInfoVo
 from huaweicloudsdkcfw.v1.model.ip_blacklist_vo import IpBlacklistVO
 from huaweicloudsdkcfw.v1.model.ip_region_dto import IpRegionDto
+from huaweicloudsdkcfw.v1.model.ips_content import IpsContent
 from huaweicloudsdkcfw.v1.model.ips_protect_dto import IpsProtectDTO
 from huaweicloudsdkcfw.v1.model.ips_protect_mode_object import IpsProtectModeObject
 from huaweicloudsdkcfw.v1.model.ips_rule_change_dto import IpsRuleChangeDto
@@ -213,6 +221,8 @@ from huaweicloudsdkcfw.v1.model.list_alarm_whitelist_request import ListAlarmWhi
 from huaweicloudsdkcfw.v1.model.list_alarm_whitelist_response import ListAlarmWhitelistResponse
 from huaweicloudsdkcfw.v1.model.list_attack_logs_request import ListAttackLogsRequest
 from huaweicloudsdkcfw.v1.model.list_attack_logs_response import ListAttackLogsResponse
+from huaweicloudsdkcfw.v1.model.list_attack_statistic_request import ListAttackStatisticRequest
+from huaweicloudsdkcfw.v1.model.list_attack_statistic_response import ListAttackStatisticResponse
 from huaweicloudsdkcfw.v1.model.list_black_white_lists_request import ListBlackWhiteListsRequest
 from huaweicloudsdkcfw.v1.model.list_black_white_lists_response import ListBlackWhiteListsResponse
 from huaweicloudsdkcfw.v1.model.list_capture_result_request import ListCaptureResultRequest
@@ -286,6 +296,7 @@ from huaweicloudsdkcfw.v1.model.order_rule_id import OrderRuleId
 from huaweicloudsdkcfw.v1.model.packet_message import PacketMessage
 from huaweicloudsdkcfw.v1.model.page_data_ip_blacklists_vo import PageDataIpBlacklistsVo
 from huaweicloudsdkcfw.v1.model.page_info import PageInfo
+from huaweicloudsdkcfw.v1.model.port import Port
 from huaweicloudsdkcfw.v1.model.protect_object_vo import ProtectObjectVO
 from huaweicloudsdkcfw.v1.model.query_fire_wall_instance_dto import QueryFireWallInstanceDto
 from huaweicloudsdkcfw.v1.model.resource_tag import ResourceTag
@@ -316,20 +327,31 @@ from huaweicloudsdkcfw.v1.model.service_set import ServiceSet
 from huaweicloudsdkcfw.v1.model.service_set_detail_response_dto import ServiceSetDetailResponseDto
 from huaweicloudsdkcfw.v1.model.service_set_id import ServiceSetId
 from huaweicloudsdkcfw.v1.model.service_set_records import ServiceSetRecords
+from huaweicloudsdkcfw.v1.model.show_access_top_request import ShowAccessTopRequest
+from huaweicloudsdkcfw.v1.model.show_access_top_response import ShowAccessTopResponse
 from huaweicloudsdkcfw.v1.model.show_alarm_config_request import ShowAlarmConfigRequest
 from huaweicloudsdkcfw.v1.model.show_alarm_config_response import ShowAlarmConfigResponse
 from huaweicloudsdkcfw.v1.model.show_anti_virus_rule_request import ShowAntiVirusRuleRequest
 from huaweicloudsdkcfw.v1.model.show_anti_virus_rule_response import ShowAntiVirusRuleResponse
 from huaweicloudsdkcfw.v1.model.show_anti_virus_switch_request import ShowAntiVirusSwitchRequest
 from huaweicloudsdkcfw.v1.model.show_anti_virus_switch_response import ShowAntiVirusSwitchResponse
+from huaweicloudsdkcfw.v1.model.show_attack_total_request import ShowAttackTotalRequest
+from huaweicloudsdkcfw.v1.model.show_attack_total_resp_data import ShowAttackTotalRespData
+from huaweicloudsdkcfw.v1.model.show_attack_total_response import ShowAttackTotalResponse
+from huaweicloudsdkcfw.v1.model.show_attack_trend_request import ShowAttackTrendRequest
+from huaweicloudsdkcfw.v1.model.show_attack_trend_response import ShowAttackTrendResponse
 from huaweicloudsdkcfw.v1.model.show_auto_protect_status_request import ShowAutoProtectStatusRequest
 from huaweicloudsdkcfw.v1.model.show_auto_protect_status_response import ShowAutoProtectStatusResponse
+from huaweicloudsdkcfw.v1.model.show_customer_ips_info_request import ShowCustomerIpsInfoRequest
+from huaweicloudsdkcfw.v1.model.show_customer_ips_info_response import ShowCustomerIpsInfoResponse
 from huaweicloudsdkcfw.v1.model.show_domain_set_detail_request import ShowDomainSetDetailRequest
 from huaweicloudsdkcfw.v1.model.show_domain_set_detail_response import ShowDomainSetDetailResponse
 from huaweicloudsdkcfw.v1.model.show_import_status_request import ShowImportStatusRequest
 from huaweicloudsdkcfw.v1.model.show_import_status_response import ShowImportStatusResponse
 from huaweicloudsdkcfw.v1.model.show_ips_update_time_request import ShowIpsUpdateTimeRequest
 from huaweicloudsdkcfw.v1.model.show_ips_update_time_response import ShowIpsUpdateTimeResponse
+from huaweicloudsdkcfw.v1.model.show_traffic_trend_request import ShowTrafficTrendRequest
+from huaweicloudsdkcfw.v1.model.show_traffic_trend_response import ShowTrafficTrendResponse
 from huaweicloudsdkcfw.v1.model.subnet_info import SubnetInfo
 from huaweicloudsdkcfw.v1.model.switch_auto_protect_status_request import SwitchAutoProtectStatusRequest
 from huaweicloudsdkcfw.v1.model.switch_auto_protect_status_response import SwitchAutoProtectStatusResponse
@@ -337,6 +359,8 @@ from huaweicloudsdkcfw.v1.model.switch_eip_status_dto import SwitchEipStatusDto
 from huaweicloudsdkcfw.v1.model.tag_info import TagInfo
 from huaweicloudsdkcfw.v1.model.tag_value import TagValue
 from huaweicloudsdkcfw.v1.model.tags_vo import TagsVO
+from huaweicloudsdkcfw.v1.model.top_info import TopInfo
+from huaweicloudsdkcfw.v1.model.traffic_trend_vo import TrafficTrendVO
 from huaweicloudsdkcfw.v1.model.update_acl_rule_order_request import UpdateAclRuleOrderRequest
 from huaweicloudsdkcfw.v1.model.update_acl_rule_order_response import UpdateAclRuleOrderResponse
 from huaweicloudsdkcfw.v1.model.update_acl_rule_request import UpdateAclRuleRequest
@@ -357,6 +381,8 @@ from huaweicloudsdkcfw.v1.model.update_attack_log_alarm_config_dto import Update
 from huaweicloudsdkcfw.v1.model.update_black_white_list_dto import UpdateBlackWhiteListDto
 from huaweicloudsdkcfw.v1.model.update_black_white_list_request import UpdateBlackWhiteListRequest
 from huaweicloudsdkcfw.v1.model.update_black_white_list_response import UpdateBlackWhiteListResponse
+from huaweicloudsdkcfw.v1.model.update_customer_ips_request import UpdateCustomerIpsRequest
+from huaweicloudsdkcfw.v1.model.update_customer_ips_response import UpdateCustomerIpsResponse
 from huaweicloudsdkcfw.v1.model.update_dns_servers_request import UpdateDnsServersRequest
 from huaweicloudsdkcfw.v1.model.update_dns_servers_request_body import UpdateDnsServersRequestBody
 from huaweicloudsdkcfw.v1.model.update_dns_servers_request_body_dns_server import UpdateDnsServersRequestBodyDnsServer

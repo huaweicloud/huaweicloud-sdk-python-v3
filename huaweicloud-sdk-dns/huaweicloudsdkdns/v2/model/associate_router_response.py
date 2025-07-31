@@ -34,11 +34,11 @@ class AssociateRouterResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param router_id: 关联VPC的ID。
+        :param router_id: **参数解释：** 关联VPC的ID。 **取值范围：** 不涉及。
         :type router_id: str
-        :param router_region: 关联VPC所在的region。
+        :param router_region: **参数解释：** 关联VPC所在的region。 **取值范围：** 不涉及。
         :type router_region: str
-        :param status: 资源状态。
+        :param status: **参数解释：** 关联VPC的状态。 **取值范围：** 不涉及。
         :type status: str
         """
         
@@ -60,7 +60,7 @@ class AssociateRouterResponse(SdkResponse):
     def router_id(self):
         r"""Gets the router_id of this AssociateRouterResponse.
 
-        关联VPC的ID。
+        **参数解释：** 关联VPC的ID。 **取值范围：** 不涉及。
 
         :return: The router_id of this AssociateRouterResponse.
         :rtype: str
@@ -71,7 +71,7 @@ class AssociateRouterResponse(SdkResponse):
     def router_id(self, router_id):
         r"""Sets the router_id of this AssociateRouterResponse.
 
-        关联VPC的ID。
+        **参数解释：** 关联VPC的ID。 **取值范围：** 不涉及。
 
         :param router_id: The router_id of this AssociateRouterResponse.
         :type router_id: str
@@ -82,7 +82,7 @@ class AssociateRouterResponse(SdkResponse):
     def router_region(self):
         r"""Gets the router_region of this AssociateRouterResponse.
 
-        关联VPC所在的region。
+        **参数解释：** 关联VPC所在的region。 **取值范围：** 不涉及。
 
         :return: The router_region of this AssociateRouterResponse.
         :rtype: str
@@ -93,7 +93,7 @@ class AssociateRouterResponse(SdkResponse):
     def router_region(self, router_region):
         r"""Sets the router_region of this AssociateRouterResponse.
 
-        关联VPC所在的region。
+        **参数解释：** 关联VPC所在的region。 **取值范围：** 不涉及。
 
         :param router_region: The router_region of this AssociateRouterResponse.
         :type router_region: str
@@ -104,7 +104,7 @@ class AssociateRouterResponse(SdkResponse):
     def status(self):
         r"""Gets the status of this AssociateRouterResponse.
 
-        资源状态。
+        **参数解释：** 关联VPC的状态。 **取值范围：** 不涉及。
 
         :return: The status of this AssociateRouterResponse.
         :rtype: str
@@ -115,7 +115,7 @@ class AssociateRouterResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this AssociateRouterResponse.
 
-        资源状态。
+        **参数解释：** 关联VPC的状态。 **取值范围：** 不涉及。
 
         :param status: The status of this AssociateRouterResponse.
         :type status: str

@@ -77,51 +77,51 @@ class VulHostInfo:
 
         :param host_id: 受漏洞影响的服务器id
         :type host_id: str
-        :param severity_level: 危险程度   - Critical : 漏洞cvss评分大于等于9；对应控制台页面的高危   - High : 漏洞cvss评分大于等于7，小于9；对应控制台页面的中危   - Medium : 漏洞cvss评分大于等于4，小于7；对应控制台页面的中危   - Low : 漏洞cvss评分小于4；对应控制台页面的低危
+        :param severity_level: **参数解释**: 危险程度 **取值范围**: - Critical : 漏洞cvss评分大于等于9；对应控制台页面的高危 - High     : 漏洞cvss评分大于等于7，小于9；对应控制台页面的中危 - Medium   : 漏洞cvss评分大于等于4，小于7；对应控制台页面的中危 - Low      : 漏洞cvss评分小于4；对应控制台页面的低危 
         :type severity_level: str
-        :param host_name: 受影响主机名称
+        :param host_name: **参数解释**: 受影响主机名称 **取值范围**: 字符范围1-256位 
         :type host_name: str
-        :param host_ip: 受影响主机ip
+        :param host_ip: **参数解释**: 受影响主机ip **取值范围**: 字符范围1-256位 
         :type host_ip: str
-        :param agent_id: 主机对应的agent id
+        :param agent_id: **参数解释**: 主机对应的agent id **取值范围**: 字符范围1-128位 
         :type agent_id: str
-        :param version: 主机绑定的配额版本
+        :param version: **参数解释**: 主机绑定的配额版本 **取值范围**: 字符范围1-128位 
         :type version: str
-        :param cve_num: 漏洞cve总数
+        :param cve_num: **参数解释**: 漏洞cve总数 **取值范围**: 最小值0，最大值10000 
         :type cve_num: int
-        :param cve_id_list: 漏洞对应的cve id列表
+        :param cve_id_list: **参数解释**: 漏洞对应的cve id列表 **取值范围**: 最小值1，最大值10000 
         :type cve_id_list: list[str]
-        :param status: 漏洞状态   - vul_status_unfix : 未处理   - vul_status_ignored : 已忽略   - vul_status_verified : 验证中   - vul_status_fixing : 修复中   - vul_status_fixed : 修复成功   - vul_status_reboot : 修复成功待重启   - vul_status_failed : 修复失败   - vul_status_fix_after_reboot : 请重启主机再次修复
+        :param status: **参数解释**: 漏洞状态 **取值范围**: - vul_status_unfix            : 未处理 - vul_status_ignored          : 已忽略 - vul_status_verified         : 验证中 - vul_status_fixing           : 修复中 - vul_status_fixed            : 修复成功 - vul_status_reboot           : 修复成功待重启 - vul_status_failed           : 修复失败 - vul_status_fix_after_reboot : 请重启主机再次修复 
         :type status: str
-        :param repair_cmd: 修复漏洞需要执行的命令行（只有Linux漏洞有该字段）
+        :param repair_cmd: **参数解释**: 修复漏洞需要执行的命令行（只有Linux漏洞有该字段） **取值范围**: 字符范围1-256位 
         :type repair_cmd: str
-        :param app_path: 应用软件的路径（只有应用漏洞有该字段）
+        :param app_path: **参数解释**: 应用软件的路径（只有应用漏洞有该字段） **取值范围**: 字符范围1-512位 
         :type app_path: str
-        :param region_name: 地域
+        :param region_name: **参数解释**: 地域 **取值范围**: 字符范围0-128位 
         :type region_name: str
-        :param public_ip: 服务器公网ip
+        :param public_ip: **参数解释**: 服务器公网ip **取值范围**: 字符范围0-128位 
         :type public_ip: str
-        :param private_ip: 服务器私网ip
+        :param private_ip: **参数解释**: 服务器私网ip **取值范围**: 字符范围0-128位 
         :type private_ip: str
-        :param group_id: 服务器组id
+        :param group_id: **参数解释**: 服务器组id **取值范围**: 字符范围0-128位 
         :type group_id: str
-        :param group_name: 服务器组名称
+        :param group_name: **参数解释**: 服务器组名称 **取值范围**: 字符范围0-256位 
         :type group_name: str
-        :param os_type: 操作系统
+        :param os_type: **参数解释**: 操作系统 **取值范围**: 字符范围0-32位 
         :type os_type: str
-        :param asset_value: 资产重要性，包含如下3种   - important ：重要资产   - common ：一般资产   - test ：测试资产
+        :param asset_value: **参数解释**: 资产重要性 **取值范围**: - important : 重要资产 - common    : 一般资产 - test      : 测试资产 
         :type asset_value: str
-        :param is_affect_business: 是否影响业务
+        :param is_affect_business: **参数解释**: 是否影响业务 **取值范围**: - true  : 影响业务 - false : 不影响业务 
         :type is_affect_business: bool
-        :param first_scan_time: 首次扫描时间
+        :param first_scan_time: **参数解释**: 首次扫描时间 **取值范围**: 最小值0，最大值9223372036854775807 
         :type first_scan_time: int
-        :param scan_time: 扫描时间，时间戳单位：毫秒
+        :param scan_time: **参数解释**: 扫描时间，时间戳单位：毫秒 **取值范围**: 最小值0，最大值9223372036854775807 
         :type scan_time: int
-        :param support_restore: 是否可以回滚到修复漏洞时创建的备份
+        :param support_restore: **参数解释**: 是否可以回滚到修复漏洞时创建的备份 **取值范围**: - true  : 可以回滚 - false : 不可以回滚 
         :type support_restore: bool
-        :param disabled_operate_types: 漏洞在当前主机上不可进行的操作类型列表
+        :param disabled_operate_types: **参数解释**: 漏洞在当前主机上不可进行的操作类型列表 **取值范围**: 最小值1，最大值10000 
         :type disabled_operate_types: list[:class:`huaweicloudsdkhss.v5.HostVulInfoDisabledOperateTypes`]
-        :param repair_priority: 修复优先级,包含如下  - Critical 紧急  - High 高  - Medium 中  - Low 低
+        :param repair_priority: **参数解释**: 修复优先级 **取值范围**: - Critical : 紧急  - High     : 高  - Medium   : 中  - Low      : 低 
         :type repair_priority: str
         """
         
@@ -228,7 +228,7 @@ class VulHostInfo:
     def severity_level(self):
         r"""Gets the severity_level of this VulHostInfo.
 
-        危险程度   - Critical : 漏洞cvss评分大于等于9；对应控制台页面的高危   - High : 漏洞cvss评分大于等于7，小于9；对应控制台页面的中危   - Medium : 漏洞cvss评分大于等于4，小于7；对应控制台页面的中危   - Low : 漏洞cvss评分小于4；对应控制台页面的低危
+        **参数解释**: 危险程度 **取值范围**: - Critical : 漏洞cvss评分大于等于9；对应控制台页面的高危 - High     : 漏洞cvss评分大于等于7，小于9；对应控制台页面的中危 - Medium   : 漏洞cvss评分大于等于4，小于7；对应控制台页面的中危 - Low      : 漏洞cvss评分小于4；对应控制台页面的低危 
 
         :return: The severity_level of this VulHostInfo.
         :rtype: str
@@ -239,7 +239,7 @@ class VulHostInfo:
     def severity_level(self, severity_level):
         r"""Sets the severity_level of this VulHostInfo.
 
-        危险程度   - Critical : 漏洞cvss评分大于等于9；对应控制台页面的高危   - High : 漏洞cvss评分大于等于7，小于9；对应控制台页面的中危   - Medium : 漏洞cvss评分大于等于4，小于7；对应控制台页面的中危   - Low : 漏洞cvss评分小于4；对应控制台页面的低危
+        **参数解释**: 危险程度 **取值范围**: - Critical : 漏洞cvss评分大于等于9；对应控制台页面的高危 - High     : 漏洞cvss评分大于等于7，小于9；对应控制台页面的中危 - Medium   : 漏洞cvss评分大于等于4，小于7；对应控制台页面的中危 - Low      : 漏洞cvss评分小于4；对应控制台页面的低危 
 
         :param severity_level: The severity_level of this VulHostInfo.
         :type severity_level: str
@@ -250,7 +250,7 @@ class VulHostInfo:
     def host_name(self):
         r"""Gets the host_name of this VulHostInfo.
 
-        受影响主机名称
+        **参数解释**: 受影响主机名称 **取值范围**: 字符范围1-256位 
 
         :return: The host_name of this VulHostInfo.
         :rtype: str
@@ -261,7 +261,7 @@ class VulHostInfo:
     def host_name(self, host_name):
         r"""Sets the host_name of this VulHostInfo.
 
-        受影响主机名称
+        **参数解释**: 受影响主机名称 **取值范围**: 字符范围1-256位 
 
         :param host_name: The host_name of this VulHostInfo.
         :type host_name: str
@@ -272,7 +272,7 @@ class VulHostInfo:
     def host_ip(self):
         r"""Gets the host_ip of this VulHostInfo.
 
-        受影响主机ip
+        **参数解释**: 受影响主机ip **取值范围**: 字符范围1-256位 
 
         :return: The host_ip of this VulHostInfo.
         :rtype: str
@@ -283,7 +283,7 @@ class VulHostInfo:
     def host_ip(self, host_ip):
         r"""Sets the host_ip of this VulHostInfo.
 
-        受影响主机ip
+        **参数解释**: 受影响主机ip **取值范围**: 字符范围1-256位 
 
         :param host_ip: The host_ip of this VulHostInfo.
         :type host_ip: str
@@ -294,7 +294,7 @@ class VulHostInfo:
     def agent_id(self):
         r"""Gets the agent_id of this VulHostInfo.
 
-        主机对应的agent id
+        **参数解释**: 主机对应的agent id **取值范围**: 字符范围1-128位 
 
         :return: The agent_id of this VulHostInfo.
         :rtype: str
@@ -305,7 +305,7 @@ class VulHostInfo:
     def agent_id(self, agent_id):
         r"""Sets the agent_id of this VulHostInfo.
 
-        主机对应的agent id
+        **参数解释**: 主机对应的agent id **取值范围**: 字符范围1-128位 
 
         :param agent_id: The agent_id of this VulHostInfo.
         :type agent_id: str
@@ -316,7 +316,7 @@ class VulHostInfo:
     def version(self):
         r"""Gets the version of this VulHostInfo.
 
-        主机绑定的配额版本
+        **参数解释**: 主机绑定的配额版本 **取值范围**: 字符范围1-128位 
 
         :return: The version of this VulHostInfo.
         :rtype: str
@@ -327,7 +327,7 @@ class VulHostInfo:
     def version(self, version):
         r"""Sets the version of this VulHostInfo.
 
-        主机绑定的配额版本
+        **参数解释**: 主机绑定的配额版本 **取值范围**: 字符范围1-128位 
 
         :param version: The version of this VulHostInfo.
         :type version: str
@@ -338,7 +338,7 @@ class VulHostInfo:
     def cve_num(self):
         r"""Gets the cve_num of this VulHostInfo.
 
-        漏洞cve总数
+        **参数解释**: 漏洞cve总数 **取值范围**: 最小值0，最大值10000 
 
         :return: The cve_num of this VulHostInfo.
         :rtype: int
@@ -349,7 +349,7 @@ class VulHostInfo:
     def cve_num(self, cve_num):
         r"""Sets the cve_num of this VulHostInfo.
 
-        漏洞cve总数
+        **参数解释**: 漏洞cve总数 **取值范围**: 最小值0，最大值10000 
 
         :param cve_num: The cve_num of this VulHostInfo.
         :type cve_num: int
@@ -360,7 +360,7 @@ class VulHostInfo:
     def cve_id_list(self):
         r"""Gets the cve_id_list of this VulHostInfo.
 
-        漏洞对应的cve id列表
+        **参数解释**: 漏洞对应的cve id列表 **取值范围**: 最小值1，最大值10000 
 
         :return: The cve_id_list of this VulHostInfo.
         :rtype: list[str]
@@ -371,7 +371,7 @@ class VulHostInfo:
     def cve_id_list(self, cve_id_list):
         r"""Sets the cve_id_list of this VulHostInfo.
 
-        漏洞对应的cve id列表
+        **参数解释**: 漏洞对应的cve id列表 **取值范围**: 最小值1，最大值10000 
 
         :param cve_id_list: The cve_id_list of this VulHostInfo.
         :type cve_id_list: list[str]
@@ -382,7 +382,7 @@ class VulHostInfo:
     def status(self):
         r"""Gets the status of this VulHostInfo.
 
-        漏洞状态   - vul_status_unfix : 未处理   - vul_status_ignored : 已忽略   - vul_status_verified : 验证中   - vul_status_fixing : 修复中   - vul_status_fixed : 修复成功   - vul_status_reboot : 修复成功待重启   - vul_status_failed : 修复失败   - vul_status_fix_after_reboot : 请重启主机再次修复
+        **参数解释**: 漏洞状态 **取值范围**: - vul_status_unfix            : 未处理 - vul_status_ignored          : 已忽略 - vul_status_verified         : 验证中 - vul_status_fixing           : 修复中 - vul_status_fixed            : 修复成功 - vul_status_reboot           : 修复成功待重启 - vul_status_failed           : 修复失败 - vul_status_fix_after_reboot : 请重启主机再次修复 
 
         :return: The status of this VulHostInfo.
         :rtype: str
@@ -393,7 +393,7 @@ class VulHostInfo:
     def status(self, status):
         r"""Sets the status of this VulHostInfo.
 
-        漏洞状态   - vul_status_unfix : 未处理   - vul_status_ignored : 已忽略   - vul_status_verified : 验证中   - vul_status_fixing : 修复中   - vul_status_fixed : 修复成功   - vul_status_reboot : 修复成功待重启   - vul_status_failed : 修复失败   - vul_status_fix_after_reboot : 请重启主机再次修复
+        **参数解释**: 漏洞状态 **取值范围**: - vul_status_unfix            : 未处理 - vul_status_ignored          : 已忽略 - vul_status_verified         : 验证中 - vul_status_fixing           : 修复中 - vul_status_fixed            : 修复成功 - vul_status_reboot           : 修复成功待重启 - vul_status_failed           : 修复失败 - vul_status_fix_after_reboot : 请重启主机再次修复 
 
         :param status: The status of this VulHostInfo.
         :type status: str
@@ -404,7 +404,7 @@ class VulHostInfo:
     def repair_cmd(self):
         r"""Gets the repair_cmd of this VulHostInfo.
 
-        修复漏洞需要执行的命令行（只有Linux漏洞有该字段）
+        **参数解释**: 修复漏洞需要执行的命令行（只有Linux漏洞有该字段） **取值范围**: 字符范围1-256位 
 
         :return: The repair_cmd of this VulHostInfo.
         :rtype: str
@@ -415,7 +415,7 @@ class VulHostInfo:
     def repair_cmd(self, repair_cmd):
         r"""Sets the repair_cmd of this VulHostInfo.
 
-        修复漏洞需要执行的命令行（只有Linux漏洞有该字段）
+        **参数解释**: 修复漏洞需要执行的命令行（只有Linux漏洞有该字段） **取值范围**: 字符范围1-256位 
 
         :param repair_cmd: The repair_cmd of this VulHostInfo.
         :type repair_cmd: str
@@ -426,7 +426,7 @@ class VulHostInfo:
     def app_path(self):
         r"""Gets the app_path of this VulHostInfo.
 
-        应用软件的路径（只有应用漏洞有该字段）
+        **参数解释**: 应用软件的路径（只有应用漏洞有该字段） **取值范围**: 字符范围1-512位 
 
         :return: The app_path of this VulHostInfo.
         :rtype: str
@@ -437,7 +437,7 @@ class VulHostInfo:
     def app_path(self, app_path):
         r"""Sets the app_path of this VulHostInfo.
 
-        应用软件的路径（只有应用漏洞有该字段）
+        **参数解释**: 应用软件的路径（只有应用漏洞有该字段） **取值范围**: 字符范围1-512位 
 
         :param app_path: The app_path of this VulHostInfo.
         :type app_path: str
@@ -448,7 +448,7 @@ class VulHostInfo:
     def region_name(self):
         r"""Gets the region_name of this VulHostInfo.
 
-        地域
+        **参数解释**: 地域 **取值范围**: 字符范围0-128位 
 
         :return: The region_name of this VulHostInfo.
         :rtype: str
@@ -459,7 +459,7 @@ class VulHostInfo:
     def region_name(self, region_name):
         r"""Sets the region_name of this VulHostInfo.
 
-        地域
+        **参数解释**: 地域 **取值范围**: 字符范围0-128位 
 
         :param region_name: The region_name of this VulHostInfo.
         :type region_name: str
@@ -470,7 +470,7 @@ class VulHostInfo:
     def public_ip(self):
         r"""Gets the public_ip of this VulHostInfo.
 
-        服务器公网ip
+        **参数解释**: 服务器公网ip **取值范围**: 字符范围0-128位 
 
         :return: The public_ip of this VulHostInfo.
         :rtype: str
@@ -481,7 +481,7 @@ class VulHostInfo:
     def public_ip(self, public_ip):
         r"""Sets the public_ip of this VulHostInfo.
 
-        服务器公网ip
+        **参数解释**: 服务器公网ip **取值范围**: 字符范围0-128位 
 
         :param public_ip: The public_ip of this VulHostInfo.
         :type public_ip: str
@@ -492,7 +492,7 @@ class VulHostInfo:
     def private_ip(self):
         r"""Gets the private_ip of this VulHostInfo.
 
-        服务器私网ip
+        **参数解释**: 服务器私网ip **取值范围**: 字符范围0-128位 
 
         :return: The private_ip of this VulHostInfo.
         :rtype: str
@@ -503,7 +503,7 @@ class VulHostInfo:
     def private_ip(self, private_ip):
         r"""Sets the private_ip of this VulHostInfo.
 
-        服务器私网ip
+        **参数解释**: 服务器私网ip **取值范围**: 字符范围0-128位 
 
         :param private_ip: The private_ip of this VulHostInfo.
         :type private_ip: str
@@ -514,7 +514,7 @@ class VulHostInfo:
     def group_id(self):
         r"""Gets the group_id of this VulHostInfo.
 
-        服务器组id
+        **参数解释**: 服务器组id **取值范围**: 字符范围0-128位 
 
         :return: The group_id of this VulHostInfo.
         :rtype: str
@@ -525,7 +525,7 @@ class VulHostInfo:
     def group_id(self, group_id):
         r"""Sets the group_id of this VulHostInfo.
 
-        服务器组id
+        **参数解释**: 服务器组id **取值范围**: 字符范围0-128位 
 
         :param group_id: The group_id of this VulHostInfo.
         :type group_id: str
@@ -536,7 +536,7 @@ class VulHostInfo:
     def group_name(self):
         r"""Gets the group_name of this VulHostInfo.
 
-        服务器组名称
+        **参数解释**: 服务器组名称 **取值范围**: 字符范围0-256位 
 
         :return: The group_name of this VulHostInfo.
         :rtype: str
@@ -547,7 +547,7 @@ class VulHostInfo:
     def group_name(self, group_name):
         r"""Sets the group_name of this VulHostInfo.
 
-        服务器组名称
+        **参数解释**: 服务器组名称 **取值范围**: 字符范围0-256位 
 
         :param group_name: The group_name of this VulHostInfo.
         :type group_name: str
@@ -558,7 +558,7 @@ class VulHostInfo:
     def os_type(self):
         r"""Gets the os_type of this VulHostInfo.
 
-        操作系统
+        **参数解释**: 操作系统 **取值范围**: 字符范围0-32位 
 
         :return: The os_type of this VulHostInfo.
         :rtype: str
@@ -569,7 +569,7 @@ class VulHostInfo:
     def os_type(self, os_type):
         r"""Sets the os_type of this VulHostInfo.
 
-        操作系统
+        **参数解释**: 操作系统 **取值范围**: 字符范围0-32位 
 
         :param os_type: The os_type of this VulHostInfo.
         :type os_type: str
@@ -580,7 +580,7 @@ class VulHostInfo:
     def asset_value(self):
         r"""Gets the asset_value of this VulHostInfo.
 
-        资产重要性，包含如下3种   - important ：重要资产   - common ：一般资产   - test ：测试资产
+        **参数解释**: 资产重要性 **取值范围**: - important : 重要资产 - common    : 一般资产 - test      : 测试资产 
 
         :return: The asset_value of this VulHostInfo.
         :rtype: str
@@ -591,7 +591,7 @@ class VulHostInfo:
     def asset_value(self, asset_value):
         r"""Sets the asset_value of this VulHostInfo.
 
-        资产重要性，包含如下3种   - important ：重要资产   - common ：一般资产   - test ：测试资产
+        **参数解释**: 资产重要性 **取值范围**: - important : 重要资产 - common    : 一般资产 - test      : 测试资产 
 
         :param asset_value: The asset_value of this VulHostInfo.
         :type asset_value: str
@@ -602,7 +602,7 @@ class VulHostInfo:
     def is_affect_business(self):
         r"""Gets the is_affect_business of this VulHostInfo.
 
-        是否影响业务
+        **参数解释**: 是否影响业务 **取值范围**: - true  : 影响业务 - false : 不影响业务 
 
         :return: The is_affect_business of this VulHostInfo.
         :rtype: bool
@@ -613,7 +613,7 @@ class VulHostInfo:
     def is_affect_business(self, is_affect_business):
         r"""Sets the is_affect_business of this VulHostInfo.
 
-        是否影响业务
+        **参数解释**: 是否影响业务 **取值范围**: - true  : 影响业务 - false : 不影响业务 
 
         :param is_affect_business: The is_affect_business of this VulHostInfo.
         :type is_affect_business: bool
@@ -624,7 +624,7 @@ class VulHostInfo:
     def first_scan_time(self):
         r"""Gets the first_scan_time of this VulHostInfo.
 
-        首次扫描时间
+        **参数解释**: 首次扫描时间 **取值范围**: 最小值0，最大值9223372036854775807 
 
         :return: The first_scan_time of this VulHostInfo.
         :rtype: int
@@ -635,7 +635,7 @@ class VulHostInfo:
     def first_scan_time(self, first_scan_time):
         r"""Sets the first_scan_time of this VulHostInfo.
 
-        首次扫描时间
+        **参数解释**: 首次扫描时间 **取值范围**: 最小值0，最大值9223372036854775807 
 
         :param first_scan_time: The first_scan_time of this VulHostInfo.
         :type first_scan_time: int
@@ -646,7 +646,7 @@ class VulHostInfo:
     def scan_time(self):
         r"""Gets the scan_time of this VulHostInfo.
 
-        扫描时间，时间戳单位：毫秒
+        **参数解释**: 扫描时间，时间戳单位：毫秒 **取值范围**: 最小值0，最大值9223372036854775807 
 
         :return: The scan_time of this VulHostInfo.
         :rtype: int
@@ -657,7 +657,7 @@ class VulHostInfo:
     def scan_time(self, scan_time):
         r"""Sets the scan_time of this VulHostInfo.
 
-        扫描时间，时间戳单位：毫秒
+        **参数解释**: 扫描时间，时间戳单位：毫秒 **取值范围**: 最小值0，最大值9223372036854775807 
 
         :param scan_time: The scan_time of this VulHostInfo.
         :type scan_time: int
@@ -668,7 +668,7 @@ class VulHostInfo:
     def support_restore(self):
         r"""Gets the support_restore of this VulHostInfo.
 
-        是否可以回滚到修复漏洞时创建的备份
+        **参数解释**: 是否可以回滚到修复漏洞时创建的备份 **取值范围**: - true  : 可以回滚 - false : 不可以回滚 
 
         :return: The support_restore of this VulHostInfo.
         :rtype: bool
@@ -679,7 +679,7 @@ class VulHostInfo:
     def support_restore(self, support_restore):
         r"""Sets the support_restore of this VulHostInfo.
 
-        是否可以回滚到修复漏洞时创建的备份
+        **参数解释**: 是否可以回滚到修复漏洞时创建的备份 **取值范围**: - true  : 可以回滚 - false : 不可以回滚 
 
         :param support_restore: The support_restore of this VulHostInfo.
         :type support_restore: bool
@@ -690,7 +690,7 @@ class VulHostInfo:
     def disabled_operate_types(self):
         r"""Gets the disabled_operate_types of this VulHostInfo.
 
-        漏洞在当前主机上不可进行的操作类型列表
+        **参数解释**: 漏洞在当前主机上不可进行的操作类型列表 **取值范围**: 最小值1，最大值10000 
 
         :return: The disabled_operate_types of this VulHostInfo.
         :rtype: list[:class:`huaweicloudsdkhss.v5.HostVulInfoDisabledOperateTypes`]
@@ -701,7 +701,7 @@ class VulHostInfo:
     def disabled_operate_types(self, disabled_operate_types):
         r"""Sets the disabled_operate_types of this VulHostInfo.
 
-        漏洞在当前主机上不可进行的操作类型列表
+        **参数解释**: 漏洞在当前主机上不可进行的操作类型列表 **取值范围**: 最小值1，最大值10000 
 
         :param disabled_operate_types: The disabled_operate_types of this VulHostInfo.
         :type disabled_operate_types: list[:class:`huaweicloudsdkhss.v5.HostVulInfoDisabledOperateTypes`]
@@ -712,7 +712,7 @@ class VulHostInfo:
     def repair_priority(self):
         r"""Gets the repair_priority of this VulHostInfo.
 
-        修复优先级,包含如下  - Critical 紧急  - High 高  - Medium 中  - Low 低
+        **参数解释**: 修复优先级 **取值范围**: - Critical : 紧急  - High     : 高  - Medium   : 中  - Low      : 低 
 
         :return: The repair_priority of this VulHostInfo.
         :rtype: str
@@ -723,7 +723,7 @@ class VulHostInfo:
     def repair_priority(self, repair_priority):
         r"""Sets the repair_priority of this VulHostInfo.
 
-        修复优先级,包含如下  - Critical 紧急  - High 高  - Medium 中  - Low 低
+        **参数解释**: 修复优先级 **取值范围**: - Critical : 紧急  - High     : 高  - Medium   : 中  - Low      : 低 
 
         :param repair_priority: The repair_priority of this VulHostInfo.
         :type repair_priority: str

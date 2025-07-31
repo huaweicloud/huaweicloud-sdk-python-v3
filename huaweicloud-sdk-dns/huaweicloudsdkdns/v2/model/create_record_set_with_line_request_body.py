@@ -47,23 +47,23 @@ class CreateRecordSetWithLineRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param name: 域名，后缀需以zone name结束且为FQDN（即以“.”号结束的完整主机名）。
+        :param name: **参数解释：** 域名，后缀需以zone name结束且为FQDN（Fully Qualified Domain Name，全称域名），即以“.”结束的完整主机名。 如“www.example.com.”。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type name: str
-        :param description: 可选配置，对域名的描述。
+        :param description: **参数解释：** 记录集的描述信息。 **约束限制：** 不涉及。 **取值范围：** 长度不超过255个字符。 **默认取值：** 不涉及。
         :type description: str
-        :param type: 记录集的类型。
+        :param type: **参数解释：** 记录集的类型。 **约束限制：** 不涉及。 **取值范围：** - 公网域名的记录类型: A、AAAA、MX、CNAME、TXT、SRV、NS、SOA、CAA。 - 内网域名的记录类型: A、AAAA、MX、CNAME、TXT、PTR、SRV、NS、SOA。  **默认取值：** 不涉及。
         :type type: str
-        :param status: 解析记录的状态。  取值范围： ENABLE：启用 DISABLE：暂停  默认值为ENABLE。
+        :param status: **参数解释：** 解析记录的状态。 **约束限制：** 不涉及。 **取值范围：** - ENABLE：启用解析 - DISABLE：暂停解析  **默认取值：** ENABLE。
         :type status: str
-        :param ttl: 解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。
+        :param ttl: **参数解释：** 解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。 **约束限制：** 不涉及。 **取值范围：** 1~2147483647。 **默认取值：** 300
         :type ttl: int
-        :param records: 解析记录的值。不同类型解析记录对应的值的规则不同。
+        :param records: **参数解释：** 解析记录的值。不同类型解析记录对应的值的规则不同。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type records: list[str]
-        :param line: 解析线路ID。
+        :param line: **参数解释：** 解析线路ID。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type line: str
-        :param tags: 资源标签。
+        :param tags: **参数解释：** 资源标签。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type tags: list[:class:`huaweicloudsdkdns.v2.Tag`]
-        :param weight: 解析记录的权重。
+        :param weight: **参数解释：** 解析记录的权重。 **约束限制：** 别名记录不支持权重。 **取值范围：** 0~1000。 **默认取值：** - 公网记录集默认为1。 - 内网记录集默认为null。
         :type weight: int
         :param alias_target: 
         :type alias_target: :class:`huaweicloudsdkdns.v2.AliasTarget`
@@ -106,7 +106,7 @@ class CreateRecordSetWithLineRequestBody:
     def name(self):
         r"""Gets the name of this CreateRecordSetWithLineRequestBody.
 
-        域名，后缀需以zone name结束且为FQDN（即以“.”号结束的完整主机名）。
+        **参数解释：** 域名，后缀需以zone name结束且为FQDN（Fully Qualified Domain Name，全称域名），即以“.”结束的完整主机名。 如“www.example.com.”。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The name of this CreateRecordSetWithLineRequestBody.
         :rtype: str
@@ -117,7 +117,7 @@ class CreateRecordSetWithLineRequestBody:
     def name(self, name):
         r"""Sets the name of this CreateRecordSetWithLineRequestBody.
 
-        域名，后缀需以zone name结束且为FQDN（即以“.”号结束的完整主机名）。
+        **参数解释：** 域名，后缀需以zone name结束且为FQDN（Fully Qualified Domain Name，全称域名），即以“.”结束的完整主机名。 如“www.example.com.”。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param name: The name of this CreateRecordSetWithLineRequestBody.
         :type name: str
@@ -128,7 +128,7 @@ class CreateRecordSetWithLineRequestBody:
     def description(self):
         r"""Gets the description of this CreateRecordSetWithLineRequestBody.
 
-        可选配置，对域名的描述。
+        **参数解释：** 记录集的描述信息。 **约束限制：** 不涉及。 **取值范围：** 长度不超过255个字符。 **默认取值：** 不涉及。
 
         :return: The description of this CreateRecordSetWithLineRequestBody.
         :rtype: str
@@ -139,7 +139,7 @@ class CreateRecordSetWithLineRequestBody:
     def description(self, description):
         r"""Sets the description of this CreateRecordSetWithLineRequestBody.
 
-        可选配置，对域名的描述。
+        **参数解释：** 记录集的描述信息。 **约束限制：** 不涉及。 **取值范围：** 长度不超过255个字符。 **默认取值：** 不涉及。
 
         :param description: The description of this CreateRecordSetWithLineRequestBody.
         :type description: str
@@ -150,7 +150,7 @@ class CreateRecordSetWithLineRequestBody:
     def type(self):
         r"""Gets the type of this CreateRecordSetWithLineRequestBody.
 
-        记录集的类型。
+        **参数解释：** 记录集的类型。 **约束限制：** 不涉及。 **取值范围：** - 公网域名的记录类型: A、AAAA、MX、CNAME、TXT、SRV、NS、SOA、CAA。 - 内网域名的记录类型: A、AAAA、MX、CNAME、TXT、PTR、SRV、NS、SOA。  **默认取值：** 不涉及。
 
         :return: The type of this CreateRecordSetWithLineRequestBody.
         :rtype: str
@@ -161,7 +161,7 @@ class CreateRecordSetWithLineRequestBody:
     def type(self, type):
         r"""Sets the type of this CreateRecordSetWithLineRequestBody.
 
-        记录集的类型。
+        **参数解释：** 记录集的类型。 **约束限制：** 不涉及。 **取值范围：** - 公网域名的记录类型: A、AAAA、MX、CNAME、TXT、SRV、NS、SOA、CAA。 - 内网域名的记录类型: A、AAAA、MX、CNAME、TXT、PTR、SRV、NS、SOA。  **默认取值：** 不涉及。
 
         :param type: The type of this CreateRecordSetWithLineRequestBody.
         :type type: str
@@ -172,7 +172,7 @@ class CreateRecordSetWithLineRequestBody:
     def status(self):
         r"""Gets the status of this CreateRecordSetWithLineRequestBody.
 
-        解析记录的状态。  取值范围： ENABLE：启用 DISABLE：暂停  默认值为ENABLE。
+        **参数解释：** 解析记录的状态。 **约束限制：** 不涉及。 **取值范围：** - ENABLE：启用解析 - DISABLE：暂停解析  **默认取值：** ENABLE。
 
         :return: The status of this CreateRecordSetWithLineRequestBody.
         :rtype: str
@@ -183,7 +183,7 @@ class CreateRecordSetWithLineRequestBody:
     def status(self, status):
         r"""Sets the status of this CreateRecordSetWithLineRequestBody.
 
-        解析记录的状态。  取值范围： ENABLE：启用 DISABLE：暂停  默认值为ENABLE。
+        **参数解释：** 解析记录的状态。 **约束限制：** 不涉及。 **取值范围：** - ENABLE：启用解析 - DISABLE：暂停解析  **默认取值：** ENABLE。
 
         :param status: The status of this CreateRecordSetWithLineRequestBody.
         :type status: str
@@ -194,7 +194,7 @@ class CreateRecordSetWithLineRequestBody:
     def ttl(self):
         r"""Gets the ttl of this CreateRecordSetWithLineRequestBody.
 
-        解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。
+        **参数解释：** 解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。 **约束限制：** 不涉及。 **取值范围：** 1~2147483647。 **默认取值：** 300
 
         :return: The ttl of this CreateRecordSetWithLineRequestBody.
         :rtype: int
@@ -205,7 +205,7 @@ class CreateRecordSetWithLineRequestBody:
     def ttl(self, ttl):
         r"""Sets the ttl of this CreateRecordSetWithLineRequestBody.
 
-        解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。
+        **参数解释：** 解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。 **约束限制：** 不涉及。 **取值范围：** 1~2147483647。 **默认取值：** 300
 
         :param ttl: The ttl of this CreateRecordSetWithLineRequestBody.
         :type ttl: int
@@ -216,7 +216,7 @@ class CreateRecordSetWithLineRequestBody:
     def records(self):
         r"""Gets the records of this CreateRecordSetWithLineRequestBody.
 
-        解析记录的值。不同类型解析记录对应的值的规则不同。
+        **参数解释：** 解析记录的值。不同类型解析记录对应的值的规则不同。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The records of this CreateRecordSetWithLineRequestBody.
         :rtype: list[str]
@@ -227,7 +227,7 @@ class CreateRecordSetWithLineRequestBody:
     def records(self, records):
         r"""Sets the records of this CreateRecordSetWithLineRequestBody.
 
-        解析记录的值。不同类型解析记录对应的值的规则不同。
+        **参数解释：** 解析记录的值。不同类型解析记录对应的值的规则不同。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param records: The records of this CreateRecordSetWithLineRequestBody.
         :type records: list[str]
@@ -238,7 +238,7 @@ class CreateRecordSetWithLineRequestBody:
     def line(self):
         r"""Gets the line of this CreateRecordSetWithLineRequestBody.
 
-        解析线路ID。
+        **参数解释：** 解析线路ID。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The line of this CreateRecordSetWithLineRequestBody.
         :rtype: str
@@ -249,7 +249,7 @@ class CreateRecordSetWithLineRequestBody:
     def line(self, line):
         r"""Sets the line of this CreateRecordSetWithLineRequestBody.
 
-        解析线路ID。
+        **参数解释：** 解析线路ID。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param line: The line of this CreateRecordSetWithLineRequestBody.
         :type line: str
@@ -260,7 +260,7 @@ class CreateRecordSetWithLineRequestBody:
     def tags(self):
         r"""Gets the tags of this CreateRecordSetWithLineRequestBody.
 
-        资源标签。
+        **参数解释：** 资源标签。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The tags of this CreateRecordSetWithLineRequestBody.
         :rtype: list[:class:`huaweicloudsdkdns.v2.Tag`]
@@ -271,7 +271,7 @@ class CreateRecordSetWithLineRequestBody:
     def tags(self, tags):
         r"""Sets the tags of this CreateRecordSetWithLineRequestBody.
 
-        资源标签。
+        **参数解释：** 资源标签。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param tags: The tags of this CreateRecordSetWithLineRequestBody.
         :type tags: list[:class:`huaweicloudsdkdns.v2.Tag`]
@@ -282,7 +282,7 @@ class CreateRecordSetWithLineRequestBody:
     def weight(self):
         r"""Gets the weight of this CreateRecordSetWithLineRequestBody.
 
-        解析记录的权重。
+        **参数解释：** 解析记录的权重。 **约束限制：** 别名记录不支持权重。 **取值范围：** 0~1000。 **默认取值：** - 公网记录集默认为1。 - 内网记录集默认为null。
 
         :return: The weight of this CreateRecordSetWithLineRequestBody.
         :rtype: int
@@ -293,7 +293,7 @@ class CreateRecordSetWithLineRequestBody:
     def weight(self, weight):
         r"""Sets the weight of this CreateRecordSetWithLineRequestBody.
 
-        解析记录的权重。
+        **参数解释：** 解析记录的权重。 **约束限制：** 别名记录不支持权重。 **取值范围：** 0~1000。 **默认取值：** - 公网记录集默认为1。 - 内网记录集默认为null。
 
         :param weight: The weight of this CreateRecordSetWithLineRequestBody.
         :type weight: int

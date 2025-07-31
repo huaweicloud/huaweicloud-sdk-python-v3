@@ -1122,7 +1122,7 @@ class OcrClient(Client):
     def recognize_handwriting(self, request):
         r"""手写文字识别
 
-        识别文档中的手写文字信息，并将识别的结构化结果返回给用户。该接口的使用限制请参见[约束与限制](https://support.huaweicloud.com/productdesc-ocr/ocr_01_0006.html#section4)，详细使用指导请参见[OCR服务使用简介](https://support.huaweicloud.com/qs-ocr/ocr_05_0001.html)章节。
+        识别文档中的中英文手写文字、印刷文字信息，并将识别的结构化结果以JSON形式返回给用户。该接口的使用限制请参见[约束与限制](https://support.huaweicloud.com/productdesc-ocr/ocr_01_0006.html#section4)，详细使用指导请参见[OCR服务使用简介](https://support.huaweicloud.com/qs-ocr/ocr_05_0001.html)章节。
         
         Please refer to HUAWEI cloud API Explorer for details.
 

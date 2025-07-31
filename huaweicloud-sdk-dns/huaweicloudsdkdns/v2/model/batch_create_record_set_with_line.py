@@ -35,13 +35,13 @@ class BatchCreateRecordSetWithLine:
 
         The model defined in huaweicloud sdk
 
-        :param line: 解析线路ID。
+        :param line: **参数解释：** 解析线路ID。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type line: str
-        :param ttl: 记录集的有效缓存时间，以秒为单位。 取值范围：300-2147483647。 默认值为300s。
+        :param ttl: **参数解释：** 记录集的有效缓存时间，以秒为单位。 **约束限制：** 不涉及。 **取值范围：** 1~2147483647。 **默认取值：** 300
         :type ttl: int
-        :param weight: 解析记录的权重，默认为1。 当weight&#x3D;null时，表示该解析记录不设置权重。 当weight&#x3D;0，表示备用域名解析记录。 当weight&gt;0，表示主用域名解析记录。 取值范围：0~100 在相同域名、类型、线路下的解析记录，规则如下： 全部设置权重，或全部不设置权重。 当不设置权重时，只能创建一个解析记录。 当设置权重时，最多能创建20个解析记录。
+        :param weight: **参数解释：** 解析记录的权重。 **约束限制：** 在相同域名、类型、线路下的解析记录，规则如下： - 全部设置权重，或全部不设置权重。 - 当不设置权重时，只能创建一个解析记录。 - 当设置权重时，最多能创建20个解析记录。  **取值范围：** 0~1000。 - 当weight&#x3D;null时，表示该解析记录不设置权重。 - 当weight&#x3D;0，表示备用域名解析记录。 - 当weight&gt;0，表示主用域名解析记录。  **默认取值：** 1。
         :type weight: int
-        :param records: 解析记录的值。不同类型解析记录对应的值的规则不同。
+        :param records: **参数解释：** 解析记录的值。不同类型解析记录对应的值的规则不同。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type records: list[str]
         """
         
@@ -64,7 +64,7 @@ class BatchCreateRecordSetWithLine:
     def line(self):
         r"""Gets the line of this BatchCreateRecordSetWithLine.
 
-        解析线路ID。
+        **参数解释：** 解析线路ID。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The line of this BatchCreateRecordSetWithLine.
         :rtype: str
@@ -75,7 +75,7 @@ class BatchCreateRecordSetWithLine:
     def line(self, line):
         r"""Sets the line of this BatchCreateRecordSetWithLine.
 
-        解析线路ID。
+        **参数解释：** 解析线路ID。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param line: The line of this BatchCreateRecordSetWithLine.
         :type line: str
@@ -86,7 +86,7 @@ class BatchCreateRecordSetWithLine:
     def ttl(self):
         r"""Gets the ttl of this BatchCreateRecordSetWithLine.
 
-        记录集的有效缓存时间，以秒为单位。 取值范围：300-2147483647。 默认值为300s。
+        **参数解释：** 记录集的有效缓存时间，以秒为单位。 **约束限制：** 不涉及。 **取值范围：** 1~2147483647。 **默认取值：** 300
 
         :return: The ttl of this BatchCreateRecordSetWithLine.
         :rtype: int
@@ -97,7 +97,7 @@ class BatchCreateRecordSetWithLine:
     def ttl(self, ttl):
         r"""Sets the ttl of this BatchCreateRecordSetWithLine.
 
-        记录集的有效缓存时间，以秒为单位。 取值范围：300-2147483647。 默认值为300s。
+        **参数解释：** 记录集的有效缓存时间，以秒为单位。 **约束限制：** 不涉及。 **取值范围：** 1~2147483647。 **默认取值：** 300
 
         :param ttl: The ttl of this BatchCreateRecordSetWithLine.
         :type ttl: int
@@ -108,7 +108,7 @@ class BatchCreateRecordSetWithLine:
     def weight(self):
         r"""Gets the weight of this BatchCreateRecordSetWithLine.
 
-        解析记录的权重，默认为1。 当weight=null时，表示该解析记录不设置权重。 当weight=0，表示备用域名解析记录。 当weight>0，表示主用域名解析记录。 取值范围：0~100 在相同域名、类型、线路下的解析记录，规则如下： 全部设置权重，或全部不设置权重。 当不设置权重时，只能创建一个解析记录。 当设置权重时，最多能创建20个解析记录。
+        **参数解释：** 解析记录的权重。 **约束限制：** 在相同域名、类型、线路下的解析记录，规则如下： - 全部设置权重，或全部不设置权重。 - 当不设置权重时，只能创建一个解析记录。 - 当设置权重时，最多能创建20个解析记录。  **取值范围：** 0~1000。 - 当weight=null时，表示该解析记录不设置权重。 - 当weight=0，表示备用域名解析记录。 - 当weight>0，表示主用域名解析记录。  **默认取值：** 1。
 
         :return: The weight of this BatchCreateRecordSetWithLine.
         :rtype: int
@@ -119,7 +119,7 @@ class BatchCreateRecordSetWithLine:
     def weight(self, weight):
         r"""Sets the weight of this BatchCreateRecordSetWithLine.
 
-        解析记录的权重，默认为1。 当weight=null时，表示该解析记录不设置权重。 当weight=0，表示备用域名解析记录。 当weight>0，表示主用域名解析记录。 取值范围：0~100 在相同域名、类型、线路下的解析记录，规则如下： 全部设置权重，或全部不设置权重。 当不设置权重时，只能创建一个解析记录。 当设置权重时，最多能创建20个解析记录。
+        **参数解释：** 解析记录的权重。 **约束限制：** 在相同域名、类型、线路下的解析记录，规则如下： - 全部设置权重，或全部不设置权重。 - 当不设置权重时，只能创建一个解析记录。 - 当设置权重时，最多能创建20个解析记录。  **取值范围：** 0~1000。 - 当weight=null时，表示该解析记录不设置权重。 - 当weight=0，表示备用域名解析记录。 - 当weight>0，表示主用域名解析记录。  **默认取值：** 1。
 
         :param weight: The weight of this BatchCreateRecordSetWithLine.
         :type weight: int
@@ -130,7 +130,7 @@ class BatchCreateRecordSetWithLine:
     def records(self):
         r"""Gets the records of this BatchCreateRecordSetWithLine.
 
-        解析记录的值。不同类型解析记录对应的值的规则不同。
+        **参数解释：** 解析记录的值。不同类型解析记录对应的值的规则不同。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The records of this BatchCreateRecordSetWithLine.
         :rtype: list[str]
@@ -141,7 +141,7 @@ class BatchCreateRecordSetWithLine:
     def records(self, records):
         r"""Sets the records of this BatchCreateRecordSetWithLine.
 
-        解析记录的值。不同类型解析记录对应的值的规则不同。
+        **参数解释：** 解析记录的值。不同类型解析记录对应的值的规则不同。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param records: The records of this BatchCreateRecordSetWithLine.
         :type records: list[str]

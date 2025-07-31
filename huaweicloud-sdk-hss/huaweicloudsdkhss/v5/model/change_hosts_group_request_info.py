@@ -33,11 +33,11 @@ class ChangeHostsGroupRequestInfo:
 
         The model defined in huaweicloud sdk
 
-        :param group_name: 服务器组名称
+        :param group_name: **参数解释**: 服务器组名称 **取值范围**: 字符长度0-256位 
         :type group_name: str
-        :param group_id: 服务器组ID
+        :param group_id: **参数解释**: 服务器组ID **取值范围**: 字符长度0-64位 
         :type group_id: str
-        :param host_id_list: 主机id列表
+        :param host_id_list: **参数解释**: 主机id列表 **取值范围**: 不涉及 
         :type host_id_list: list[str]
         """
         
@@ -58,7 +58,7 @@ class ChangeHostsGroupRequestInfo:
     def group_name(self):
         r"""Gets the group_name of this ChangeHostsGroupRequestInfo.
 
-        服务器组名称
+        **参数解释**: 服务器组名称 **取值范围**: 字符长度0-256位 
 
         :return: The group_name of this ChangeHostsGroupRequestInfo.
         :rtype: str
@@ -69,7 +69,7 @@ class ChangeHostsGroupRequestInfo:
     def group_name(self, group_name):
         r"""Sets the group_name of this ChangeHostsGroupRequestInfo.
 
-        服务器组名称
+        **参数解释**: 服务器组名称 **取值范围**: 字符长度0-256位 
 
         :param group_name: The group_name of this ChangeHostsGroupRequestInfo.
         :type group_name: str
@@ -80,7 +80,7 @@ class ChangeHostsGroupRequestInfo:
     def group_id(self):
         r"""Gets the group_id of this ChangeHostsGroupRequestInfo.
 
-        服务器组ID
+        **参数解释**: 服务器组ID **取值范围**: 字符长度0-64位 
 
         :return: The group_id of this ChangeHostsGroupRequestInfo.
         :rtype: str
@@ -91,7 +91,7 @@ class ChangeHostsGroupRequestInfo:
     def group_id(self, group_id):
         r"""Sets the group_id of this ChangeHostsGroupRequestInfo.
 
-        服务器组ID
+        **参数解释**: 服务器组ID **取值范围**: 字符长度0-64位 
 
         :param group_id: The group_id of this ChangeHostsGroupRequestInfo.
         :type group_id: str
@@ -102,7 +102,7 @@ class ChangeHostsGroupRequestInfo:
     def host_id_list(self):
         r"""Gets the host_id_list of this ChangeHostsGroupRequestInfo.
 
-        主机id列表
+        **参数解释**: 主机id列表 **取值范围**: 不涉及 
 
         :return: The host_id_list of this ChangeHostsGroupRequestInfo.
         :rtype: list[str]
@@ -113,7 +113,7 @@ class ChangeHostsGroupRequestInfo:
     def host_id_list(self, host_id_list):
         r"""Sets the host_id_list of this ChangeHostsGroupRequestInfo.
 
-        主机id列表
+        **参数解释**: 主机id列表 **取值范围**: 不涉及 
 
         :param host_id_list: The host_id_list of this ChangeHostsGroupRequestInfo.
         :type host_id_list: list[str]

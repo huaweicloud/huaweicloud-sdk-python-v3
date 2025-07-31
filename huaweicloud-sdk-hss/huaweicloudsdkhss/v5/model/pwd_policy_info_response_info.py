@@ -61,39 +61,39 @@ class PwdPolicyInfoResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param host_id: 主机id
+        :param host_id: **参数解释**: 主机id **取值范围**: 不涉及 
         :type host_id: str
-        :param host_name: 服务器名称
+        :param host_name: **参数解释**: 服务器名称 **取值范围**: 不涉及 
         :type host_name: str
-        :param host_ip: 服务器IP（私有IP），为兼容用户使用，不删除此字段
+        :param host_ip: **参数解释**: 服务器IP（私有IP），为兼容用户使用，不删除此字段 **取值范围**: 不涉及 
         :type host_ip: str
-        :param private_ip: 服务器私有IP
+        :param private_ip: **参数解释**: 服务器私有IP **取值范围**: 不涉及 
         :type private_ip: str
-        :param public_ip: 服务器公网IP
+        :param public_ip: **参数解释**: 服务器公网IP **取值范围**: 不涉及 
         :type public_ip: str
-        :param min_length: 口令最小长度的设置是否符合要求，符合为true，不符合为false
+        :param min_length: **参数解释**: 口令最小长度的设置是否符合要求 **取值范围**: - true：符合要求 - false：不符合要求 
         :type min_length: bool
-        :param uppercase_letter: 大写字母的设置是否符合要求，符合为true，不符合为false
+        :param uppercase_letter: **参数解释**: 大写字母的设置是否符合要求 **取值范围**: - true：符合要求 - false：不符合要求 
         :type uppercase_letter: bool
-        :param lowercase_letter: 小写字母的设置是否符合要求，符合为true，不符合为false
+        :param lowercase_letter: **参数解释**: 小写字母的设置是否符合要求 **取值范围**: - true：符合要求 - false：不符合要求 
         :type lowercase_letter: bool
-        :param number: 数字的设置是否符合要求，符合为true，不符合为false
+        :param number: **参数解释**: 数字的设置是否符合要求，符合为true，不符合为false **取值范围**: - true：符合要求 - false：不符合要求 
         :type number: bool
-        :param special_character: 特殊字符的设置是否符合要求，符合为true，不符合为false
+        :param special_character: **参数解释**: 特殊字符的设置是否符合要求，符合为true，不符合为false **取值范围**: - true：符合要求 - false：不符合要求 
         :type special_character: bool
-        :param min_length_num: 复杂口令策略中定义的口令最小长度
+        :param min_length_num: **参数解释**: 复杂口令策略中定义的口令最小长度 **取值范围**: 8 - 26 
         :type min_length_num: int
-        :param min_uppercase_letter: 复杂口令策略中定义的最少包含的大写字母数
+        :param min_uppercase_letter: **参数解释**: 复杂口令策略中定义的最少包含的大写字母数 **取值范围**: 0 - 10 
         :type min_uppercase_letter: int
-        :param min_lowercase_letter: 复杂口令策略中定义的最少包含的小写字母数
+        :param min_lowercase_letter: **参数解释**: 复杂口令策略中定义的最少包含的小写字母数 **取值范围**: 0 - 10 
         :type min_lowercase_letter: int
-        :param min_number: 复杂口令策略中定义的最少包含的数字数
+        :param min_number: **参数解释**: 复杂口令策略中定义的最少包含的数字数 **取值范围**: 0 - 10 
         :type min_number: int
-        :param min_special_character: 复杂口令策略中定义的最少包含的特殊字母数
+        :param min_special_character: **参数解释**: 复杂口令策略中定义的最少包含的特殊字母数 **取值范围**: 0 - 10 
         :type min_special_character: int
-        :param update_time: 最近扫描时间
+        :param update_time: **参数解释**: 最近扫描时间 **取值范围**: 不涉及 
         :type update_time: int
-        :param suggestion: 修改建议
+        :param suggestion: **参数解释**: 修改建议 **取值范围**: 不涉及 
         :type suggestion: str
         """
         
@@ -157,7 +157,7 @@ class PwdPolicyInfoResponseInfo:
     def host_id(self):
         r"""Gets the host_id of this PwdPolicyInfoResponseInfo.
 
-        主机id
+        **参数解释**: 主机id **取值范围**: 不涉及 
 
         :return: The host_id of this PwdPolicyInfoResponseInfo.
         :rtype: str
@@ -168,7 +168,7 @@ class PwdPolicyInfoResponseInfo:
     def host_id(self, host_id):
         r"""Sets the host_id of this PwdPolicyInfoResponseInfo.
 
-        主机id
+        **参数解释**: 主机id **取值范围**: 不涉及 
 
         :param host_id: The host_id of this PwdPolicyInfoResponseInfo.
         :type host_id: str
@@ -179,7 +179,7 @@ class PwdPolicyInfoResponseInfo:
     def host_name(self):
         r"""Gets the host_name of this PwdPolicyInfoResponseInfo.
 
-        服务器名称
+        **参数解释**: 服务器名称 **取值范围**: 不涉及 
 
         :return: The host_name of this PwdPolicyInfoResponseInfo.
         :rtype: str
@@ -190,7 +190,7 @@ class PwdPolicyInfoResponseInfo:
     def host_name(self, host_name):
         r"""Sets the host_name of this PwdPolicyInfoResponseInfo.
 
-        服务器名称
+        **参数解释**: 服务器名称 **取值范围**: 不涉及 
 
         :param host_name: The host_name of this PwdPolicyInfoResponseInfo.
         :type host_name: str
@@ -201,7 +201,7 @@ class PwdPolicyInfoResponseInfo:
     def host_ip(self):
         r"""Gets the host_ip of this PwdPolicyInfoResponseInfo.
 
-        服务器IP（私有IP），为兼容用户使用，不删除此字段
+        **参数解释**: 服务器IP（私有IP），为兼容用户使用，不删除此字段 **取值范围**: 不涉及 
 
         :return: The host_ip of this PwdPolicyInfoResponseInfo.
         :rtype: str
@@ -212,7 +212,7 @@ class PwdPolicyInfoResponseInfo:
     def host_ip(self, host_ip):
         r"""Sets the host_ip of this PwdPolicyInfoResponseInfo.
 
-        服务器IP（私有IP），为兼容用户使用，不删除此字段
+        **参数解释**: 服务器IP（私有IP），为兼容用户使用，不删除此字段 **取值范围**: 不涉及 
 
         :param host_ip: The host_ip of this PwdPolicyInfoResponseInfo.
         :type host_ip: str
@@ -223,7 +223,7 @@ class PwdPolicyInfoResponseInfo:
     def private_ip(self):
         r"""Gets the private_ip of this PwdPolicyInfoResponseInfo.
 
-        服务器私有IP
+        **参数解释**: 服务器私有IP **取值范围**: 不涉及 
 
         :return: The private_ip of this PwdPolicyInfoResponseInfo.
         :rtype: str
@@ -234,7 +234,7 @@ class PwdPolicyInfoResponseInfo:
     def private_ip(self, private_ip):
         r"""Sets the private_ip of this PwdPolicyInfoResponseInfo.
 
-        服务器私有IP
+        **参数解释**: 服务器私有IP **取值范围**: 不涉及 
 
         :param private_ip: The private_ip of this PwdPolicyInfoResponseInfo.
         :type private_ip: str
@@ -245,7 +245,7 @@ class PwdPolicyInfoResponseInfo:
     def public_ip(self):
         r"""Gets the public_ip of this PwdPolicyInfoResponseInfo.
 
-        服务器公网IP
+        **参数解释**: 服务器公网IP **取值范围**: 不涉及 
 
         :return: The public_ip of this PwdPolicyInfoResponseInfo.
         :rtype: str
@@ -256,7 +256,7 @@ class PwdPolicyInfoResponseInfo:
     def public_ip(self, public_ip):
         r"""Sets the public_ip of this PwdPolicyInfoResponseInfo.
 
-        服务器公网IP
+        **参数解释**: 服务器公网IP **取值范围**: 不涉及 
 
         :param public_ip: The public_ip of this PwdPolicyInfoResponseInfo.
         :type public_ip: str
@@ -267,7 +267,7 @@ class PwdPolicyInfoResponseInfo:
     def min_length(self):
         r"""Gets the min_length of this PwdPolicyInfoResponseInfo.
 
-        口令最小长度的设置是否符合要求，符合为true，不符合为false
+        **参数解释**: 口令最小长度的设置是否符合要求 **取值范围**: - true：符合要求 - false：不符合要求 
 
         :return: The min_length of this PwdPolicyInfoResponseInfo.
         :rtype: bool
@@ -278,7 +278,7 @@ class PwdPolicyInfoResponseInfo:
     def min_length(self, min_length):
         r"""Sets the min_length of this PwdPolicyInfoResponseInfo.
 
-        口令最小长度的设置是否符合要求，符合为true，不符合为false
+        **参数解释**: 口令最小长度的设置是否符合要求 **取值范围**: - true：符合要求 - false：不符合要求 
 
         :param min_length: The min_length of this PwdPolicyInfoResponseInfo.
         :type min_length: bool
@@ -289,7 +289,7 @@ class PwdPolicyInfoResponseInfo:
     def uppercase_letter(self):
         r"""Gets the uppercase_letter of this PwdPolicyInfoResponseInfo.
 
-        大写字母的设置是否符合要求，符合为true，不符合为false
+        **参数解释**: 大写字母的设置是否符合要求 **取值范围**: - true：符合要求 - false：不符合要求 
 
         :return: The uppercase_letter of this PwdPolicyInfoResponseInfo.
         :rtype: bool
@@ -300,7 +300,7 @@ class PwdPolicyInfoResponseInfo:
     def uppercase_letter(self, uppercase_letter):
         r"""Sets the uppercase_letter of this PwdPolicyInfoResponseInfo.
 
-        大写字母的设置是否符合要求，符合为true，不符合为false
+        **参数解释**: 大写字母的设置是否符合要求 **取值范围**: - true：符合要求 - false：不符合要求 
 
         :param uppercase_letter: The uppercase_letter of this PwdPolicyInfoResponseInfo.
         :type uppercase_letter: bool
@@ -311,7 +311,7 @@ class PwdPolicyInfoResponseInfo:
     def lowercase_letter(self):
         r"""Gets the lowercase_letter of this PwdPolicyInfoResponseInfo.
 
-        小写字母的设置是否符合要求，符合为true，不符合为false
+        **参数解释**: 小写字母的设置是否符合要求 **取值范围**: - true：符合要求 - false：不符合要求 
 
         :return: The lowercase_letter of this PwdPolicyInfoResponseInfo.
         :rtype: bool
@@ -322,7 +322,7 @@ class PwdPolicyInfoResponseInfo:
     def lowercase_letter(self, lowercase_letter):
         r"""Sets the lowercase_letter of this PwdPolicyInfoResponseInfo.
 
-        小写字母的设置是否符合要求，符合为true，不符合为false
+        **参数解释**: 小写字母的设置是否符合要求 **取值范围**: - true：符合要求 - false：不符合要求 
 
         :param lowercase_letter: The lowercase_letter of this PwdPolicyInfoResponseInfo.
         :type lowercase_letter: bool
@@ -333,7 +333,7 @@ class PwdPolicyInfoResponseInfo:
     def number(self):
         r"""Gets the number of this PwdPolicyInfoResponseInfo.
 
-        数字的设置是否符合要求，符合为true，不符合为false
+        **参数解释**: 数字的设置是否符合要求，符合为true，不符合为false **取值范围**: - true：符合要求 - false：不符合要求 
 
         :return: The number of this PwdPolicyInfoResponseInfo.
         :rtype: bool
@@ -344,7 +344,7 @@ class PwdPolicyInfoResponseInfo:
     def number(self, number):
         r"""Sets the number of this PwdPolicyInfoResponseInfo.
 
-        数字的设置是否符合要求，符合为true，不符合为false
+        **参数解释**: 数字的设置是否符合要求，符合为true，不符合为false **取值范围**: - true：符合要求 - false：不符合要求 
 
         :param number: The number of this PwdPolicyInfoResponseInfo.
         :type number: bool
@@ -355,7 +355,7 @@ class PwdPolicyInfoResponseInfo:
     def special_character(self):
         r"""Gets the special_character of this PwdPolicyInfoResponseInfo.
 
-        特殊字符的设置是否符合要求，符合为true，不符合为false
+        **参数解释**: 特殊字符的设置是否符合要求，符合为true，不符合为false **取值范围**: - true：符合要求 - false：不符合要求 
 
         :return: The special_character of this PwdPolicyInfoResponseInfo.
         :rtype: bool
@@ -366,7 +366,7 @@ class PwdPolicyInfoResponseInfo:
     def special_character(self, special_character):
         r"""Sets the special_character of this PwdPolicyInfoResponseInfo.
 
-        特殊字符的设置是否符合要求，符合为true，不符合为false
+        **参数解释**: 特殊字符的设置是否符合要求，符合为true，不符合为false **取值范围**: - true：符合要求 - false：不符合要求 
 
         :param special_character: The special_character of this PwdPolicyInfoResponseInfo.
         :type special_character: bool
@@ -377,7 +377,7 @@ class PwdPolicyInfoResponseInfo:
     def min_length_num(self):
         r"""Gets the min_length_num of this PwdPolicyInfoResponseInfo.
 
-        复杂口令策略中定义的口令最小长度
+        **参数解释**: 复杂口令策略中定义的口令最小长度 **取值范围**: 8 - 26 
 
         :return: The min_length_num of this PwdPolicyInfoResponseInfo.
         :rtype: int
@@ -388,7 +388,7 @@ class PwdPolicyInfoResponseInfo:
     def min_length_num(self, min_length_num):
         r"""Sets the min_length_num of this PwdPolicyInfoResponseInfo.
 
-        复杂口令策略中定义的口令最小长度
+        **参数解释**: 复杂口令策略中定义的口令最小长度 **取值范围**: 8 - 26 
 
         :param min_length_num: The min_length_num of this PwdPolicyInfoResponseInfo.
         :type min_length_num: int
@@ -399,7 +399,7 @@ class PwdPolicyInfoResponseInfo:
     def min_uppercase_letter(self):
         r"""Gets the min_uppercase_letter of this PwdPolicyInfoResponseInfo.
 
-        复杂口令策略中定义的最少包含的大写字母数
+        **参数解释**: 复杂口令策略中定义的最少包含的大写字母数 **取值范围**: 0 - 10 
 
         :return: The min_uppercase_letter of this PwdPolicyInfoResponseInfo.
         :rtype: int
@@ -410,7 +410,7 @@ class PwdPolicyInfoResponseInfo:
     def min_uppercase_letter(self, min_uppercase_letter):
         r"""Sets the min_uppercase_letter of this PwdPolicyInfoResponseInfo.
 
-        复杂口令策略中定义的最少包含的大写字母数
+        **参数解释**: 复杂口令策略中定义的最少包含的大写字母数 **取值范围**: 0 - 10 
 
         :param min_uppercase_letter: The min_uppercase_letter of this PwdPolicyInfoResponseInfo.
         :type min_uppercase_letter: int
@@ -421,7 +421,7 @@ class PwdPolicyInfoResponseInfo:
     def min_lowercase_letter(self):
         r"""Gets the min_lowercase_letter of this PwdPolicyInfoResponseInfo.
 
-        复杂口令策略中定义的最少包含的小写字母数
+        **参数解释**: 复杂口令策略中定义的最少包含的小写字母数 **取值范围**: 0 - 10 
 
         :return: The min_lowercase_letter of this PwdPolicyInfoResponseInfo.
         :rtype: int
@@ -432,7 +432,7 @@ class PwdPolicyInfoResponseInfo:
     def min_lowercase_letter(self, min_lowercase_letter):
         r"""Sets the min_lowercase_letter of this PwdPolicyInfoResponseInfo.
 
-        复杂口令策略中定义的最少包含的小写字母数
+        **参数解释**: 复杂口令策略中定义的最少包含的小写字母数 **取值范围**: 0 - 10 
 
         :param min_lowercase_letter: The min_lowercase_letter of this PwdPolicyInfoResponseInfo.
         :type min_lowercase_letter: int
@@ -443,7 +443,7 @@ class PwdPolicyInfoResponseInfo:
     def min_number(self):
         r"""Gets the min_number of this PwdPolicyInfoResponseInfo.
 
-        复杂口令策略中定义的最少包含的数字数
+        **参数解释**: 复杂口令策略中定义的最少包含的数字数 **取值范围**: 0 - 10 
 
         :return: The min_number of this PwdPolicyInfoResponseInfo.
         :rtype: int
@@ -454,7 +454,7 @@ class PwdPolicyInfoResponseInfo:
     def min_number(self, min_number):
         r"""Sets the min_number of this PwdPolicyInfoResponseInfo.
 
-        复杂口令策略中定义的最少包含的数字数
+        **参数解释**: 复杂口令策略中定义的最少包含的数字数 **取值范围**: 0 - 10 
 
         :param min_number: The min_number of this PwdPolicyInfoResponseInfo.
         :type min_number: int
@@ -465,7 +465,7 @@ class PwdPolicyInfoResponseInfo:
     def min_special_character(self):
         r"""Gets the min_special_character of this PwdPolicyInfoResponseInfo.
 
-        复杂口令策略中定义的最少包含的特殊字母数
+        **参数解释**: 复杂口令策略中定义的最少包含的特殊字母数 **取值范围**: 0 - 10 
 
         :return: The min_special_character of this PwdPolicyInfoResponseInfo.
         :rtype: int
@@ -476,7 +476,7 @@ class PwdPolicyInfoResponseInfo:
     def min_special_character(self, min_special_character):
         r"""Sets the min_special_character of this PwdPolicyInfoResponseInfo.
 
-        复杂口令策略中定义的最少包含的特殊字母数
+        **参数解释**: 复杂口令策略中定义的最少包含的特殊字母数 **取值范围**: 0 - 10 
 
         :param min_special_character: The min_special_character of this PwdPolicyInfoResponseInfo.
         :type min_special_character: int
@@ -487,7 +487,7 @@ class PwdPolicyInfoResponseInfo:
     def update_time(self):
         r"""Gets the update_time of this PwdPolicyInfoResponseInfo.
 
-        最近扫描时间
+        **参数解释**: 最近扫描时间 **取值范围**: 不涉及 
 
         :return: The update_time of this PwdPolicyInfoResponseInfo.
         :rtype: int
@@ -498,7 +498,7 @@ class PwdPolicyInfoResponseInfo:
     def update_time(self, update_time):
         r"""Sets the update_time of this PwdPolicyInfoResponseInfo.
 
-        最近扫描时间
+        **参数解释**: 最近扫描时间 **取值范围**: 不涉及 
 
         :param update_time: The update_time of this PwdPolicyInfoResponseInfo.
         :type update_time: int
@@ -509,7 +509,7 @@ class PwdPolicyInfoResponseInfo:
     def suggestion(self):
         r"""Gets the suggestion of this PwdPolicyInfoResponseInfo.
 
-        修改建议
+        **参数解释**: 修改建议 **取值范围**: 不涉及 
 
         :return: The suggestion of this PwdPolicyInfoResponseInfo.
         :rtype: str
@@ -520,7 +520,7 @@ class PwdPolicyInfoResponseInfo:
     def suggestion(self, suggestion):
         r"""Sets the suggestion of this PwdPolicyInfoResponseInfo.
 
-        修改建议
+        **参数解释**: 修改建议 **取值范围**: 不涉及 
 
         :param suggestion: The suggestion of this PwdPolicyInfoResponseInfo.
         :type suggestion: str

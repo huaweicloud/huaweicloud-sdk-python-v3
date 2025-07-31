@@ -35,13 +35,13 @@ class HostVulInfoAppList:
 
         The model defined in huaweicloud sdk
 
-        :param app_name: 软件名称
+        :param app_name: **参数解释**: 软件名称 **取值范围**: 字符范围0-256位 
         :type app_name: str
-        :param app_version: 软件版本
+        :param app_version: **参数解释**: 软件版本 **取值范围**: 字符范围0-256位 
         :type app_version: str
-        :param upgrade_version: 修复漏洞软件需要升级到的版本
+        :param upgrade_version: **参数解释**: 修复漏洞软件需要升级到的版本 **取值范围**: 字符范围0-256位 
         :type upgrade_version: str
-        :param app_path: 应用软件的路径（只有应用漏洞有该字段）
+        :param app_path: **参数解释**: 应用软件的路径（只有应用漏洞有该字段） **取值范围**: 字符范围1-512位 
         :type app_path: str
         """
         
@@ -66,7 +66,7 @@ class HostVulInfoAppList:
     def app_name(self):
         r"""Gets the app_name of this HostVulInfoAppList.
 
-        软件名称
+        **参数解释**: 软件名称 **取值范围**: 字符范围0-256位 
 
         :return: The app_name of this HostVulInfoAppList.
         :rtype: str
@@ -77,7 +77,7 @@ class HostVulInfoAppList:
     def app_name(self, app_name):
         r"""Sets the app_name of this HostVulInfoAppList.
 
-        软件名称
+        **参数解释**: 软件名称 **取值范围**: 字符范围0-256位 
 
         :param app_name: The app_name of this HostVulInfoAppList.
         :type app_name: str
@@ -88,7 +88,7 @@ class HostVulInfoAppList:
     def app_version(self):
         r"""Gets the app_version of this HostVulInfoAppList.
 
-        软件版本
+        **参数解释**: 软件版本 **取值范围**: 字符范围0-256位 
 
         :return: The app_version of this HostVulInfoAppList.
         :rtype: str
@@ -99,7 +99,7 @@ class HostVulInfoAppList:
     def app_version(self, app_version):
         r"""Sets the app_version of this HostVulInfoAppList.
 
-        软件版本
+        **参数解释**: 软件版本 **取值范围**: 字符范围0-256位 
 
         :param app_version: The app_version of this HostVulInfoAppList.
         :type app_version: str
@@ -110,7 +110,7 @@ class HostVulInfoAppList:
     def upgrade_version(self):
         r"""Gets the upgrade_version of this HostVulInfoAppList.
 
-        修复漏洞软件需要升级到的版本
+        **参数解释**: 修复漏洞软件需要升级到的版本 **取值范围**: 字符范围0-256位 
 
         :return: The upgrade_version of this HostVulInfoAppList.
         :rtype: str
@@ -121,7 +121,7 @@ class HostVulInfoAppList:
     def upgrade_version(self, upgrade_version):
         r"""Sets the upgrade_version of this HostVulInfoAppList.
 
-        修复漏洞软件需要升级到的版本
+        **参数解释**: 修复漏洞软件需要升级到的版本 **取值范围**: 字符范围0-256位 
 
         :param upgrade_version: The upgrade_version of this HostVulInfoAppList.
         :type upgrade_version: str
@@ -132,7 +132,7 @@ class HostVulInfoAppList:
     def app_path(self):
         r"""Gets the app_path of this HostVulInfoAppList.
 
-        应用软件的路径（只有应用漏洞有该字段）
+        **参数解释**: 应用软件的路径（只有应用漏洞有该字段） **取值范围**: 字符范围1-512位 
 
         :return: The app_path of this HostVulInfoAppList.
         :rtype: str
@@ -143,7 +143,7 @@ class HostVulInfoAppList:
     def app_path(self, app_path):
         r"""Sets the app_path of this HostVulInfoAppList.
 
-        应用软件的路径（只有应用漏洞有该字段）
+        **参数解释**: 应用软件的路径（只有应用漏洞有该字段） **取值范围**: 字符范围1-512位 
 
         :param app_path: The app_path of this HostVulInfoAppList.
         :type app_path: str

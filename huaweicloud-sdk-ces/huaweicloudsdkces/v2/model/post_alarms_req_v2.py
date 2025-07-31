@@ -28,6 +28,7 @@ class PostAlarmsReqV2:
         'ok_notifications': 'list[Notification]',
         'notification_begin_time': 'str',
         'notification_end_time': 'str',
+        'effective_timezone': 'str',
         'enterprise_project_id': 'str',
         'enabled': 'bool',
         'notification_enabled': 'bool',
@@ -49,6 +50,7 @@ class PostAlarmsReqV2:
         'ok_notifications': 'ok_notifications',
         'notification_begin_time': 'notification_begin_time',
         'notification_end_time': 'notification_end_time',
+        'effective_timezone': 'effective_timezone',
         'enterprise_project_id': 'enterprise_project_id',
         'enabled': 'enabled',
         'notification_enabled': 'notification_enabled',
@@ -58,7 +60,7 @@ class PostAlarmsReqV2:
         'resource_level': 'resource_level'
     }
 
-    def __init__(self, name=None, description=None, namespace=None, resource_group_id=None, resources=None, policies=None, type=None, alarm_notifications=None, ok_notifications=None, notification_begin_time=None, notification_end_time=None, enterprise_project_id=None, enabled=None, notification_enabled=None, alarm_template_id=None, tags=None, product_name=None, resource_level=None):
+    def __init__(self, name=None, description=None, namespace=None, resource_group_id=None, resources=None, policies=None, type=None, alarm_notifications=None, ok_notifications=None, notification_begin_time=None, notification_end_time=None, effective_timezone=None, enterprise_project_id=None, enabled=None, notification_enabled=None, alarm_template_id=None, tags=None, product_name=None, resource_level=None):
         r"""PostAlarmsReqV2
 
         The model defined in huaweicloud sdk
@@ -67,7 +69,7 @@ class PostAlarmsReqV2:
         :type name: str
         :param description: 告警描述，长度0-256
         :type description: str
-        :param namespace: 查询服务的命名空间，各服务命名空间请参考“[服务维度名称](ces_03_0059.xml)”
+        :param namespace: 查询服务的命名空间，各服务命名空间请参考“[服务命名名称](ces_03_0059.xml)”
         :type namespace: str
         :param resource_group_id: 资源分组ID，以rg开头，后跟22位由字母或数字组成的字符串
         :type resource_group_id: str
@@ -85,6 +87,8 @@ class PostAlarmsReqV2:
         :type notification_begin_time: str
         :param notification_end_time: 告警通知关闭时间
         :type notification_end_time: str
+        :param effective_timezone: 时区，形如：\&quot;GMT-08:00\&quot;、\&quot;GMT+08:00\&quot;、\&quot;GMT+0:00\&quot;
+        :type effective_timezone: str
         :param enterprise_project_id: 企业项目ID
         :type enterprise_project_id: str
         :param enabled: 是否开启告警规则。true:开启，false:关闭。
@@ -114,6 +118,7 @@ class PostAlarmsReqV2:
         self._ok_notifications = None
         self._notification_begin_time = None
         self._notification_end_time = None
+        self._effective_timezone = None
         self._enterprise_project_id = None
         self._enabled = None
         self._notification_enabled = None
@@ -141,6 +146,8 @@ class PostAlarmsReqV2:
             self.notification_begin_time = notification_begin_time
         if notification_end_time is not None:
             self.notification_end_time = notification_end_time
+        if effective_timezone is not None:
+            self.effective_timezone = effective_timezone
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
         self.enabled = enabled
@@ -202,7 +209,7 @@ class PostAlarmsReqV2:
     def namespace(self):
         r"""Gets the namespace of this PostAlarmsReqV2.
 
-        查询服务的命名空间，各服务命名空间请参考“[服务维度名称](ces_03_0059.xml)”
+        查询服务的命名空间，各服务命名空间请参考“[服务命名名称](ces_03_0059.xml)”
 
         :return: The namespace of this PostAlarmsReqV2.
         :rtype: str
@@ -213,7 +220,7 @@ class PostAlarmsReqV2:
     def namespace(self, namespace):
         r"""Sets the namespace of this PostAlarmsReqV2.
 
-        查询服务的命名空间，各服务命名空间请参考“[服务维度名称](ces_03_0059.xml)”
+        查询服务的命名空间，各服务命名空间请参考“[服务命名名称](ces_03_0059.xml)”
 
         :param namespace: The namespace of this PostAlarmsReqV2.
         :type namespace: str
@@ -391,6 +398,28 @@ class PostAlarmsReqV2:
         :type notification_end_time: str
         """
         self._notification_end_time = notification_end_time
+
+    @property
+    def effective_timezone(self):
+        r"""Gets the effective_timezone of this PostAlarmsReqV2.
+
+        时区，形如：\"GMT-08:00\"、\"GMT+08:00\"、\"GMT+0:00\"
+
+        :return: The effective_timezone of this PostAlarmsReqV2.
+        :rtype: str
+        """
+        return self._effective_timezone
+
+    @effective_timezone.setter
+    def effective_timezone(self, effective_timezone):
+        r"""Sets the effective_timezone of this PostAlarmsReqV2.
+
+        时区，形如：\"GMT-08:00\"、\"GMT+08:00\"、\"GMT+0:00\"
+
+        :param effective_timezone: The effective_timezone of this PostAlarmsReqV2.
+        :type effective_timezone: str
+        """
+        self._effective_timezone = effective_timezone
 
     @property
     def enterprise_project_id(self):

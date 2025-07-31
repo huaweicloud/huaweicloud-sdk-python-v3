@@ -1,3 +1,606 @@
+# 3.1.160 2025-07-31
+
+### HuaweiCloud SDK BSSINTL
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除接口`ListMonthlyExpenditures`
+
+### HuaweiCloud SDK CES
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpdateDashboard**
+    - 请求参数变更
+      - `+ extend_info`
+      - `- filter`
+      - `- period`
+      - `- display_time`
+      - `- refresh_time`
+      - `- from`
+      - `- to`
+      - `- screen_color`
+      - `- enable_screen_auto_play`
+      - `- time_interval`
+      - `- enable_legend`
+      - `- full_screen_widget_num`
+  - **BatchUpdateNotificationMaskTime**
+    - 请求参数变更
+      - `+ effective_timezone`
+  - **ListAlarmHistories**
+    - 响应参数变更
+      - `* alarm_histories.metric.dimensions: list<Dimension> -> list<object>`
+      - `* alarm_histories.metric: object<Metric> -> object`
+      - `* alarm_histories.condition: object<AlarmCondition> -> object`
+      - `* alarm_histories.alarm_actions.notification_list: list<SMNUrn> -> list<string>`
+      - `* alarm_histories.alarm_actions: list<Notification> -> list<object>`
+      - `* alarm_histories.ok_actions.notification_list: list<SMNUrn> -> list<string>`
+      - `* alarm_histories.ok_actions: list<Notification> -> list<object>`
+  - **UpdateAlarmRulePolicies**
+    - 请求参数变更
+      - `* policies.extra_info: object<ExtraInfo> -> object<MetricExtraInfo>`
+    - 响应参数变更
+      - `* policies.extra_info: object<ExtraInfo> -> object<MetricExtraInfo>`
+  - **ListResourceGroups**
+    - 响应参数变更
+      - `+ resource_groups.status`
+      - `+ resource_groups.event_status`
+      - `+ resource_groups.resource_statistics`
+      - `+ resource_groups.related_ep_ids`
+      - `+ resource_groups.association_alarm_templates`
+      - `+ resource_groups.type: enum value [NAME,COMB]`
+  - **CreateResourceGroup**
+    - 请求参数变更
+      - `+ instances.instance_names.resource_name_is_ignore_case`
+  - **ShowResourceGroup**
+    - 响应参数变更
+      - `+ ep_resource_statistics`
+      - `+ resource_level`
+      - `+ comb_relation`
+      - `+ related_ep_ids`
+      - `+ product_names`
+      - `+ resource_statistics`
+      - `+ enterprise_project_id_and_tags`
+      - `+ status`
+      - `+ event_status`
+      - `+ type: enum value [NAME,COMB]`
+      - `+ instances.instance_names.resource_name_is_ignore_case`
+  - **UpdateResourceGroup**
+    - 请求参数变更
+      - `+ instances.instance_names.resource_name_is_ignore_case`
+  - **ListResourceGroupsServicesResources**
+    - 响应参数变更
+      - `+ resources.event_status`
+      - `+ resources.resource_name`
+  - **UpdateResourceGroupAssociationAlarmTemplate**
+    - 请求参数变更
+      - `+ effective_timezone`
+  - **BatchUpdateNotificationMasks**
+    - 请求参数变更
+      - `+ effective_timezone`
+  - **UpdateNotificationMask**
+    - 请求参数变更
+      - `+ effective_timezone`
+  - **ListAlarmRules**
+    - 响应参数变更
+      - `+ alarms.effective_timezone`
+  - **CreateAlarmRules**
+    - 请求参数变更
+      - `+ effective_timezone`
+  - **UpdateAlarmNotifications**
+    - 请求参数变更
+      - `+ effective_timezone`
+  - **CreateOneClickAlarm**
+    - 请求参数变更
+      - `+ effective_timezone`
+      - `* one_click_update_alarms.resources: list<ResourcesInListResp> -> list<list<Dimension>>`
+      - `+ one_click_update_alarms.notification_manner: enum value [NOTIFICATION_GROUP,TOPIC_SUBSCRIPTION]`
+  - **UpdateOneClickAlarmNotifications**
+    - 请求参数变更
+      - `+ effective_timezone`
+
+### HuaweiCloud SDK CES
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListAgentInvocations**
+    - 请求参数变更
+      - `+ invocation_type: enum value [SET_REMOTE_INSTALLER,REMOTE_INSTALL]`
+      - `* offset: int32 -> int64`
+    - 响应参数变更
+      - `* count: int32 -> int64`
+      - `+ invocations.result_msg`
+  - **BatchCreateAgentInvocations**
+    - 请求参数变更
+      - `+ remote_install_meta`
+      - `+ invocation_type: enum value [SET_REMOTE_INSTALL_HOST,REMOTE_INSTALL]`
+
+### HuaweiCloud SDK CFW
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持以下接口：
+    - `ShowCustomerIpsInfo`
+    - `UpdateCustomerIps`
+    - `ShowTrafficTrend`
+    - `ShowAccessTop`
+    - `ListAttackStatistic`
+    - `ShowAttackTrend`
+    - `ShowAttackTotal`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK COC
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持接口`ResetAccountPassword`、`CreatePasswordChangePlan`、`UpdateAccountPassword`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DBSS
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **SetAlarmTopicConfigInfo**
+    - 响应参数变更
+      - `- is_use_topic`
+
+### HuaweiCloud SDK DRS
+
+- _接口版本_
+  - V5
+- _新增特性_
+  - 支持接口`ShowCompareProgress`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DWS
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpdateLogicalCluster**
+    - 请求参数变更
+      - `+ cluster_rings.un_shrinkable_cluster_ring`
+  - **ShrinkLogicalCluster**
+    - 请求参数变更
+      - `+ cluster_rings.un_shrinkable_cluster_ring`
+      - `+ cluster_rings.ring_hosts.back_ip`
+      - `+ cluster_rings.ring_hosts.cpu_cores`
+      - `+ cluster_rings.ring_hosts.memory`
+      - `+ cluster_rings.ring_hosts.disk_size`
+      - `* cluster_rings.ring_hosts: list<RingHostVo> -> list<RingHost>`
+      - `* cluster_rings: list<ClusterRingVo> -> list<ClusterRing>`
+  - **ListLogicalClusters**
+    - 响应参数变更
+      - `+ logical_clusters.cluster_rings.un_shrinkable_cluster_ring`
+  - **CreateLogicalCluster**
+    - 请求参数变更
+      - `+ logical_cluster.cluster_rings.un_shrinkable_cluster_ring`
+
+### HuaweiCloud SDK EIP
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListPublicips**
+    - 响应参数变更
+      - `+ publicips.tags`
+  - **ShowPublicip**
+    - 响应参数变更
+      - `+ publicip.tags`
+
+### HuaweiCloud SDK HSS
+
+- _接口版本_
+  - V5
+- _新增特性_
+  - 支持以下接口：
+    - `ShowAgentStatisticsStatus`
+    - `ShowContainerProtectionStatus`
+    - `ShowHostProtectionStatus`
+    - `ShowOsStatisticsInfo`
+    - `ShowQuotaStatisticsInfo`
+    - `ListCicdConfigurations`
+    - `ShowCicdConfiguration`
+    - `ModifyCicdConfiguration`
+    - `DeleteCicdConfigurations`
+    - `ListAssociateRegistries`
+    - `ExportImageSecurityReportTask`
+    - `ShowPageNotices`
+    - `ListAppWhitelistPolicy`
+    - `ChangeAppWhitelistPolicy`
+    - `CreateAppWhitelistPolicy`
+    - `DeleteAppWhitelistPolicy`
+    - `ShowAppWhitelistPolicy`
+    - `SwitchAppWhitelistPolicyLearnStatus`
+    - `ListAppWhitelistPolicyHost`
+    - `SwitchAppWhitelistPolicyHost`
+    - `AddAppWhitelistPolicyHost`
+    - `DeleteAppWhitelistPolicyHost`
+    - `ListAppWhitelistHostStatus`
+    - `ListAppWhitelistPolicyProcess`
+    - `ChangeAppWhitelistPolicyProcessStatus`
+    - `AddAppWhitelistPolicyProcess`
+    - `ListAppWhitelistPolicyProcessExtend`
+    - `ShowAppWhitelistAgentStatics`
+    - `ListAppWhitelistEvent`
+    - `SaveBrowsingHistory`
+    - `ListFileEvents`
+    - `ListFileHostEventDetails`
+    - `ListFileHosts`
+    - `ShowFileStatistic`
+    - `ShowAntivirusFreeQuota`
+    - `ListAntiVirusPaidHosts`
+    - `CreateAntiVirusPaidTask`
+    - `ShowImageAssetStatistics`
+    - `ShowVulTaskStatistics`
+    - `RecordUserViewVulTask`
+    - `ExportHandledVulnerabilities`
+    - `ExportVulHandleHistory`
+    - `ListWebTamperHost`
+    - `BatchStartWebTamperProtection`
+    - `ShowWebTamperHostPolicy`
+    - `UpdateWebTamperHostPolicy`
+    - `ShowWebTamperRaspPath`
+    - `UpdateWebTamperRaspPath`
+    - `ExportWebTamperHost`
+    - `ListGlobalAssetScanTask`
+    - `CreateGlobalAssetScanTask`
+    - `ShowCommonPort`
+    - `ListKernelModuleHostInfo`
+    - `ListWebFrameworkHostInfo`
+    - `ListWebSiteHostInfo`
+    - `ShowHostAssetManualCollectStatus`
+    - `RunHostAssetManualCollect`
+    - `ListKernelModuleStatistics`
+    - `ListWebFrameworkStatistics`
+    - `ListWebSiteStatistics`
+    - `ListWebAppAndServiceStatistics`
+    - `ListWebAppAndServices`
+    - `ChangePasswordComplexityStatus`
+    - `ShowBaselineScanStatus`
+    - `ListClusterProtectionInfo`
+    - `ListClusterProtectionDefaultPolicy`
+    - `ListClusterEvents`
+    - `ChangeClusterEvents`
+    - `ListClusterProtectOverview`
+    - `ListClusterProtectionPolicy`
+    - `ChangeClusterProtectionPolicy`
+    - `CreateClusterProtectionPolicy`
+    - `DeleteClusterProtectionPolicy`
+    - `ListClusterProtectionPolicyDetail`
+    - `ListClusterProtectionItem`
+    - `SwitchClusterProtectionMode`
+    - `ShowClusterAssetStatistics`
+    - `ListCommonTips`
+    - `ListContainerNetworkClusters`
+    - `SyncClusterList`
+    - `ShowNetworkStatistics`
+    - `ListSecurityGroups`
+    - `ListNamespaces`
+    - `ShowContainerNetworkInfo`
+    - `ListContainerNetworkNodeList`
+    - `SyncContainerNetworkNode`
+    - `ListContainerNetworkPolicy`
+    - `UpdateContainerNetworkPolicy`
+    - `CreateContainerNetworkPolicy`
+    - `DeleteContainerNetworkPolicy`
+    - `SyncContainerNetworkPolicyList`
+    - `ListSecurityGroupPolicies`
+    - `DeleteSecurityGroupPolicy`
+    - `SyncSecurityGroupPolicies`
+    - `UpdateSecurityGroupPolicy`
+    - `CreateSecurityGroupPolicy`
+    - `ListWorkLoads`
+    - `SyncClusterProtectionEvent`
+    - `ListClusterProtectPolicyTemplates`
+    - `ShowClusterProtectPolicyTemplate`
+    - `ListContainerCmdLogs`
+    - `ExportContainerList`
+    - `ListContainerImageLogs`
+    - `ListContainerImages`
+    - `ListClusterAuditLogs`
+    - `ListClusterEventLogs`
+    - `BatchDeleteAgentDaemonset`
+    - `BatchUpgradeAgentDaemonset`
+    - `ListCceClusterDetectRisk`
+    - `ListMultiCloudClusters`
+    - `CreateMultiCloudClusters`
+    - `SyncMultiCloudClusterStatus`
+    - `UpdateMultiCloudClusters`
+    - `RemoveMultiCloudClusters`
+    - `ShowMultiCloudClusterProxyScript`
+    - `ParseMultiCloudClusterConfig`
+    - `ShowMultiCloudClusterImageCommand`
+    - `ShowAgentDaemonsetDeployTemplate`
+    - `ListContainerLogs`
+    - `ShowContainerNodeStatistics`
+    - `SwitchContainerProtectStatus`
+    - `ShowLatestExportTaskByType`
+    - `ListKubernetesClusterDetails`
+    - `ShowK8sContainerDetail`
+    - `ListK8sCronJobs`
+    - `ListK8sDaemonSets`
+    - `ListK8sDeployments`
+    - `ShowKubernetesEndpointInfo`
+    - `ListKubernetesEndpointDetails`
+    - `ListK8sJobs`
+    - `ListK8sPods`
+    - `CreateClustersInfo`
+    - `ShowKubernetesServiceInfo`
+    - `ListKubernetesServiceDetails`
+    - `ListK8sStatefulSets`
+    - `ShowK8sPodDetail`
+    - `UpdatePolicy`
+    - `AddPolicy`
+    - `DeletePolicy`
+    - `SwitchRasp`
+    - `ListProjectTags`
+    - `ModifyProjectConfigs`
+    - `ListProjectConfigs`
+    - `ListIacFiles`
+    - `ListIacFileRisks`
+    - `ListIacFileRiskPaths`
+    - `BatchUploadFiles`
+    - `ListVulContainers`
+    - `ListVulContainerApps`
+    - `ListBaselineWhiteLists`
+    - `ShowBaselineWhiteList`
+    - `ChangeBaselineWhiteList`
+    - `AddBaselineWhiteList`
+    - `DeleteBaselineWhiteList`
+    - `ShowBaselineDirectory`
+    - `ListHandleAffectBaseline`
+    - `CopyBaselinePolicyGroup`
+    - `ShowClusterScanStatistics`
+    - `CreateTask`
+    - `ListTasks`
+    - `ListTaskResources`
+    - `ShowTaskStatistics`
+    - `ListClusterRisks`
+    - `ListClusterRiskAffectResources`
+    - `ChangeAntivirusPayPerScanStatus`
+    - `SwitchAntivirusTask`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **AddCceIntegrationProtection**
+    - 请求参数变更
+      - `* region: required -> optional`
+  - **ShowRaspProtectStatistics**
+    - 请求参数变更
+      - `* enterprise_project_id: required -> optional`
+  - **ShowAppRaspSwitchStatus**
+    - 请求参数变更
+      - `* enterprise_project_id: required -> optional`
+  - **ListCceClusterConfig**
+    - 请求参数变更
+      - `* region: required -> optional`
+    - 响应参数变更
+      - `+ data_list.protect_degradation_node_num`
+  - **DeleteAgentDaemonset**
+    - 请求参数变更
+      - `* region: required -> optional`
+  - **UpdateAgentDaemonset**
+    - 请求参数变更
+      - `* region: required -> optional`
+  - **ListPolicyGroup**
+    - 请求参数变更
+      - `- region`
+    - 响应参数变更
+      - `+ data_list.protect_mode`
+  - **ListBackupVaults**
+    - 请求参数变更
+      - `* offset: required -> optional`
+      - `* limit: required -> optional`
+  - **ListRaspEvents**
+    - 请求参数变更
+      - `* enterprise_project_id: required -> optional`
+  - **ListProtectionServers**
+    - 请求参数变更
+      - `* enterprise_project_id: required -> optional`
+  - **ListAgentInstallScript**
+    - 请求参数变更
+      - `* region: required -> optional`
+  - **ListAntivirusHandleHistory**
+    - 请求参数变更
+      - `+ region`
+  - **ShowResourceQuotas**
+    - 请求参数变更
+      - `- region`
+  - **CreateAntiVirusTask**
+    - 请求参数变更
+      - `+ region`
+
+### HuaweiCloud SDK IMS
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 支持以下接口：
+    - `ExportImageInSafeMode`
+    - `CreateDataImageInSafeMode`
+    - `CreateImageInSafeMode`
+    - `ImportImageQuickInSafeMode`
+    - `CopyImageInRegionInSafeMode`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **BatchAddMembers**
+    - 请求参数变更
+      - `+ domains`
+      - `+ organizations`
+  - **BatchDeleteMembers**
+    - 请求参数变更
+      - `+ domains`
+      - `+ organizations`
+  - **GlanceShowImageMember**
+    - 响应参数变更
+      - `+ member_type`
+      - `+ urn`
+  - **GlanceUpdateImageMember**
+    - 响应参数变更
+      - `+ member_type`
+      - `+ urn`
+  - **GlanceAddImageMember**
+    - 响应参数变更
+      - `+ member_type`
+      - `+ urn`
+  - **GlanceListImageMembers**
+    - 响应参数变更
+      - `+ members.member_type`
+      - `+ members.urn`
+
+### HuaweiCloud SDK Live
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持接口`CreateStreamForbiddenOnce`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK MetaStudio
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持以下接口：
+    - `ListTtscVocabularyGroups`
+    - `CreateTtscVocabularyGroups`
+    - `UpdateTtscVocabularyGroups`
+    - `DeleteTtscVocabularyGroups`
+    - `SetTtscGroupAssets`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **SaveTtscVocabularyConfigs**
+    - 请求参数变更
+      - `+ group_id`
+  - **ShowTenantDurationCfg**
+    - 响应参数变更
+      - `+ short_assess_min`
+      - `+ short_assess_max`
+  - **SetJobBatchName**
+    - 请求参数变更
+      - `+ X-App-UserId`
+  - **CreateTtscVocabularyConfigs**
+    - 请求参数变更
+      - `+ group_id`
+  - **ListTtscVocabularyConfigs**
+    - 请求参数变更
+      - `+ group_id`
+      - `+ asset_id`
+    - 响应参数变更
+      - `+ data.group_id`
+  - **CreateTrainingBasicJob**
+    - 请求参数变更
+      - `+ is_ondemand_resource`
+      - `+ supported_service`
+      - `+ tag: enum value [LIVE,EDUCATION,CUSTOMER,STORYTELLING]`
+  - **CreateTrainingMiddleJob**
+    - 请求参数变更
+      - `+ is_ondemand_resource`
+      - `+ supported_service`
+      - `+ tag: enum value [LIVE,EDUCATION,CUSTOMER,STORYTELLING]`
+  - **CreateTrainingAdvanceJob**
+    - 请求参数变更
+      - `+ is_ondemand_resource`
+      - `+ supported_service`
+      - `+ tag: enum value [LIVE,EDUCATION,CUSTOMER,STORYTELLING]`
+  - **CommitVoiceTrainingJob**
+    - 请求参数变更
+      - `+ tag: enum value [LIVE,EDUCATION,CUSTOMER,STORYTELLING]`
+  - **ShowVoiceTrainingJob**
+    - 响应参数变更
+      - `+ assess_result`
+      - `+ is_ondemand_resource`
+      - `+ tag: enum value [LIVE,EDUCATION,CUSTOMER,STORYTELLING]`
+      - `+ allocated_resource.charge_mode: enum value [ON_DEMAND]`
+  - **ListJobOperationLog**
+    - 响应参数变更
+      - `+ operations.external_info.algorithm_failure_reason`
+  - **ShowAsset**
+    - 响应参数变更
+      - `+ auto_operation_config`
+      - `+ block_reason_code`
+      - `+ system_properties.key: enum value [IS_CONTROLLED,LIVE_IS_AUTHORIZED,VIDEO_IS_AUTHORIZED,CHAT_IS_AUTHORIZED]`
+      - `+ files.block_reason_code`
+  - **UpdateDigitalAsset**
+    - 请求参数变更
+      - `+ auto_operation_config`
+      - `+ system_properties.key: enum value [IS_CONTROLLED,LIVE_IS_AUTHORIZED,VIDEO_IS_AUTHORIZED,CHAT_IS_AUTHORIZED]`
+    - 响应参数变更
+      - `+ auto_operation_config`
+      - `+ block_reason_code`
+      - `+ system_properties.key: enum value [IS_CONTROLLED,LIVE_IS_AUTHORIZED,VIDEO_IS_AUTHORIZED,CHAT_IS_AUTHORIZED]`
+      - `+ files.block_reason_code`
+  - **ListVoiceTrainingJob**
+    - 请求参数变更
+      - `+ is_ondemand_resource`
+    - 响应参数变更
+      - `+ assess_result`
+      - `+ is_ondemand_resource`
+      - `+ jobs.assess_result`
+      - `+ jobs.is_ondemand_resource`
+      - `+ jobs.tag: enum value [LIVE,EDUCATION,CUSTOMER,STORYTELLING]`
+      - `+ jobs.allocated_resource.charge_mode: enum value [ON_DEMAND]`
+  - **CreateDigitalAsset**
+    - 请求参数变更
+      - `+ auto_operation_config`
+      - `+ system_properties.key: enum value [IS_CONTROLLED,LIVE_IS_AUTHORIZED,VIDEO_IS_AUTHORIZED,CHAT_IS_AUTHORIZED]`
+  - **ListAssets**
+    - 请求参数变更
+      - `- project_group_id`
+      - `+ asset_source: enum value [GROUP_CUSTOMIZATION]`
+    - 响应参数变更
+      - `+ auto_operation_config`
+      - `+ block_reason_code`
+      - `+ assets.block_reason_code`
+      - `+ assets.auto_operation_config`
+      - `+ assets.system_properties.key: enum value [IS_CONTROLLED,LIVE_IS_AUTHORIZED,VIDEO_IS_AUTHORIZED,CHAT_IS_AUTHORIZED]`
+      - `+ assets.files.block_reason_code`
+
 # 3.1.159 2025-07-26
 
 ### HuaweiCloud SDK EIP

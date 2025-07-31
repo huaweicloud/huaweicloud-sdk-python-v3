@@ -57,15 +57,15 @@ class CreateResourceGroupRequestBody:
         :type group_name: str
         :param enterprise_project_id: 资源分组归属企业项目ID
         :type enterprise_project_id: str
-        :param type: 资源分组添加资源方式，取值只能为EPS（同步企业项目）,TAG（标签动态匹配）,NAME（实例名称）,COMB（组合匹配）,Manual（手动添加）
+        :param type: 资源分组添加资源方式，取值只能为EPS（同步企业项目）,TAG（标签动态匹配）,NAME（实例名称）,不传为手动添加
         :type type: str
         :param tags: 标签动态匹配时的关联标签,type为TAG时必传
         :type tags: list[:class:`huaweicloudsdkces.v2.ResourceGroupTagRelation`]
         :param association_ep_ids: 该资源分组内包含的资源来源的企业项目ID，type为EPS时必传
         :type association_ep_ids: list[str]
-        :param providers: 云服务名称,格式为\&quot;dcs,ecs\&quot;,支持的云服务providers请参考https://support.huaweicloud.com/api-rms/rms_06_0100.html
+        :param providers: 云服务名称,格式为\&quot;dcs,ecs\&quot;,支持的云服务providers请参考《配置审计API参考》中的\&quot;支持的服务和资源类型\&quot;章节
         :type providers: str
-        :param enterprise_project_id_and_tags: 组合匹配参数
+        :param enterprise_project_id_and_tags: 匹配企业项目或匹配标签参数
         :type enterprise_project_id_and_tags: list[:class:`huaweicloudsdkces.v2.EnterpriseProjectIdAndTags`]
         :param resources: 手动创建时的资源详情
         :type resources: list[:class:`huaweicloudsdkces.v2.Resource`]
@@ -172,7 +172,7 @@ class CreateResourceGroupRequestBody:
     def type(self):
         r"""Gets the type of this CreateResourceGroupRequestBody.
 
-        资源分组添加资源方式，取值只能为EPS（同步企业项目）,TAG（标签动态匹配）,NAME（实例名称）,COMB（组合匹配）,Manual（手动添加）
+        资源分组添加资源方式，取值只能为EPS（同步企业项目）,TAG（标签动态匹配）,NAME（实例名称）,不传为手动添加
 
         :return: The type of this CreateResourceGroupRequestBody.
         :rtype: str
@@ -183,7 +183,7 @@ class CreateResourceGroupRequestBody:
     def type(self, type):
         r"""Sets the type of this CreateResourceGroupRequestBody.
 
-        资源分组添加资源方式，取值只能为EPS（同步企业项目）,TAG（标签动态匹配）,NAME（实例名称）,COMB（组合匹配）,Manual（手动添加）
+        资源分组添加资源方式，取值只能为EPS（同步企业项目）,TAG（标签动态匹配）,NAME（实例名称）,不传为手动添加
 
         :param type: The type of this CreateResourceGroupRequestBody.
         :type type: str
@@ -238,7 +238,7 @@ class CreateResourceGroupRequestBody:
     def providers(self):
         r"""Gets the providers of this CreateResourceGroupRequestBody.
 
-        云服务名称,格式为\"dcs,ecs\",支持的云服务providers请参考https://support.huaweicloud.com/api-rms/rms_06_0100.html
+        云服务名称,格式为\"dcs,ecs\",支持的云服务providers请参考《配置审计API参考》中的\"支持的服务和资源类型\"章节
 
         :return: The providers of this CreateResourceGroupRequestBody.
         :rtype: str
@@ -249,7 +249,7 @@ class CreateResourceGroupRequestBody:
     def providers(self, providers):
         r"""Sets the providers of this CreateResourceGroupRequestBody.
 
-        云服务名称,格式为\"dcs,ecs\",支持的云服务providers请参考https://support.huaweicloud.com/api-rms/rms_06_0100.html
+        云服务名称,格式为\"dcs,ecs\",支持的云服务providers请参考《配置审计API参考》中的\"支持的服务和资源类型\"章节
 
         :param providers: The providers of this CreateResourceGroupRequestBody.
         :type providers: str
@@ -260,7 +260,7 @@ class CreateResourceGroupRequestBody:
     def enterprise_project_id_and_tags(self):
         r"""Gets the enterprise_project_id_and_tags of this CreateResourceGroupRequestBody.
 
-        组合匹配参数
+        匹配企业项目或匹配标签参数
 
         :return: The enterprise_project_id_and_tags of this CreateResourceGroupRequestBody.
         :rtype: list[:class:`huaweicloudsdkces.v2.EnterpriseProjectIdAndTags`]
@@ -271,7 +271,7 @@ class CreateResourceGroupRequestBody:
     def enterprise_project_id_and_tags(self, enterprise_project_id_and_tags):
         r"""Sets the enterprise_project_id_and_tags of this CreateResourceGroupRequestBody.
 
-        组合匹配参数
+        匹配企业项目或匹配标签参数
 
         :param enterprise_project_id_and_tags: The enterprise_project_id_and_tags of this CreateResourceGroupRequestBody.
         :type enterprise_project_id_and_tags: list[:class:`huaweicloudsdkces.v2.EnterpriseProjectIdAndTags`]

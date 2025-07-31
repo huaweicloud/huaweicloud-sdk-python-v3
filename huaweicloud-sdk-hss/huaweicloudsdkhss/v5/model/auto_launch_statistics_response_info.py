@@ -33,11 +33,11 @@ class AutoLaunchStatisticsResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param name: 自启动项名称
+        :param name: **参数解释**: 自启动项名称 **取值范围**: 字符长度1-256位 
         :type name: str
-        :param type: 自启动项类型   - 0 ：自启动服务   - 1 ：定时任务   - 2 ：预加载动态库   - 3 ：Run注册表键   - 4 ：开机启动文件夹
+        :param type: **参数解释**: 自启动项类型 **取值范围**: - 0：自启动服务 - 1：定时任务 - 2：预加载动态库 - 3：Run注册表键 - 4：开机启动文件夹 
         :type type: str
-        :param num: 当前自启动项的主机数量
+        :param num: **参数解释**: 当前自启动项的主机数量 **取值范围**: 最小值0，最大值10000 
         :type num: int
         """
         
@@ -59,7 +59,7 @@ class AutoLaunchStatisticsResponseInfo:
     def name(self):
         r"""Gets the name of this AutoLaunchStatisticsResponseInfo.
 
-        自启动项名称
+        **参数解释**: 自启动项名称 **取值范围**: 字符长度1-256位 
 
         :return: The name of this AutoLaunchStatisticsResponseInfo.
         :rtype: str
@@ -70,7 +70,7 @@ class AutoLaunchStatisticsResponseInfo:
     def name(self, name):
         r"""Sets the name of this AutoLaunchStatisticsResponseInfo.
 
-        自启动项名称
+        **参数解释**: 自启动项名称 **取值范围**: 字符长度1-256位 
 
         :param name: The name of this AutoLaunchStatisticsResponseInfo.
         :type name: str
@@ -81,7 +81,7 @@ class AutoLaunchStatisticsResponseInfo:
     def type(self):
         r"""Gets the type of this AutoLaunchStatisticsResponseInfo.
 
-        自启动项类型   - 0 ：自启动服务   - 1 ：定时任务   - 2 ：预加载动态库   - 3 ：Run注册表键   - 4 ：开机启动文件夹
+        **参数解释**: 自启动项类型 **取值范围**: - 0：自启动服务 - 1：定时任务 - 2：预加载动态库 - 3：Run注册表键 - 4：开机启动文件夹 
 
         :return: The type of this AutoLaunchStatisticsResponseInfo.
         :rtype: str
@@ -92,7 +92,7 @@ class AutoLaunchStatisticsResponseInfo:
     def type(self, type):
         r"""Sets the type of this AutoLaunchStatisticsResponseInfo.
 
-        自启动项类型   - 0 ：自启动服务   - 1 ：定时任务   - 2 ：预加载动态库   - 3 ：Run注册表键   - 4 ：开机启动文件夹
+        **参数解释**: 自启动项类型 **取值范围**: - 0：自启动服务 - 1：定时任务 - 2：预加载动态库 - 3：Run注册表键 - 4：开机启动文件夹 
 
         :param type: The type of this AutoLaunchStatisticsResponseInfo.
         :type type: str
@@ -103,7 +103,7 @@ class AutoLaunchStatisticsResponseInfo:
     def num(self):
         r"""Gets the num of this AutoLaunchStatisticsResponseInfo.
 
-        当前自启动项的主机数量
+        **参数解释**: 当前自启动项的主机数量 **取值范围**: 最小值0，最大值10000 
 
         :return: The num of this AutoLaunchStatisticsResponseInfo.
         :rtype: int
@@ -114,7 +114,7 @@ class AutoLaunchStatisticsResponseInfo:
     def num(self, num):
         r"""Sets the num of this AutoLaunchStatisticsResponseInfo.
 
-        当前自启动项的主机数量
+        **参数解释**: 当前自启动项的主机数量 **取值范围**: 最小值0，最大值10000 
 
         :param num: The num of this AutoLaunchStatisticsResponseInfo.
         :type num: int

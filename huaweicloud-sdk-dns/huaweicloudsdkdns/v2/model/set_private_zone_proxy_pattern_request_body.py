@@ -29,7 +29,7 @@ class SetPrivateZoneProxyPatternRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param proxy_pattern: 内网域名的子域名递归解析代理模式。  取值范围：  AUTHORITY：当前域名未开启递归解析代理 RECURSIVE：当前域名已开启递归解析代理
+        :param proxy_pattern: **参数解释：** 内网域名的子域名递归解析代理模式。 **约束限制：** 不涉及。 **取值范围：** - AUTHORITY：当前域名未开启递归解析代理 - RECURSIVE：当前域名已开启递归解析代理  **默认取值：** 不涉及。
         :type proxy_pattern: str
         """
         
@@ -44,7 +44,7 @@ class SetPrivateZoneProxyPatternRequestBody:
     def proxy_pattern(self):
         r"""Gets the proxy_pattern of this SetPrivateZoneProxyPatternRequestBody.
 
-        内网域名的子域名递归解析代理模式。  取值范围：  AUTHORITY：当前域名未开启递归解析代理 RECURSIVE：当前域名已开启递归解析代理
+        **参数解释：** 内网域名的子域名递归解析代理模式。 **约束限制：** 不涉及。 **取值范围：** - AUTHORITY：当前域名未开启递归解析代理 - RECURSIVE：当前域名已开启递归解析代理  **默认取值：** 不涉及。
 
         :return: The proxy_pattern of this SetPrivateZoneProxyPatternRequestBody.
         :rtype: str
@@ -55,7 +55,7 @@ class SetPrivateZoneProxyPatternRequestBody:
     def proxy_pattern(self, proxy_pattern):
         r"""Sets the proxy_pattern of this SetPrivateZoneProxyPatternRequestBody.
 
-        内网域名的子域名递归解析代理模式。  取值范围：  AUTHORITY：当前域名未开启递归解析代理 RECURSIVE：当前域名已开启递归解析代理
+        **参数解释：** 内网域名的子域名递归解析代理模式。 **约束限制：** 不涉及。 **取值范围：** - AUTHORITY：当前域名未开启递归解析代理 - RECURSIVE：当前域名已开启递归解析代理  **默认取值：** 不涉及。
 
         :param proxy_pattern: The proxy_pattern of this SetPrivateZoneProxyPatternRequestBody.
         :type proxy_pattern: str

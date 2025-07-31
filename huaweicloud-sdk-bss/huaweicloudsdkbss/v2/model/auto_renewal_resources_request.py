@@ -17,28 +17,35 @@ class AutoRenewalResourcesRequest:
     sensitive_list = []
 
     openapi_types = {
-        'resource_id': 'str'
+        'resource_id': 'str',
+        'body': 'AutoRenewalResourcesReq'
     }
 
     attribute_map = {
-        'resource_id': 'resource_id'
+        'resource_id': 'resource_id',
+        'body': 'body'
     }
 
-    def __init__(self, resource_id=None):
+    def __init__(self, resource_id=None, body=None):
         r"""AutoRenewalResourcesRequest
 
         The model defined in huaweicloud sdk
 
         :param resource_id: 资源实例ID。您可以调用[查询客户包年包月资源列表](https://support.huaweicloud.com/api-bpconsole/api_order_00021.html)接口获取资源ID。在设置弹性云服务器自动续费时，能够自动将其挂载的硬盘一并设置为自动续费。
         :type resource_id: str
+        :param body: Body of the AutoRenewalResourcesRequest
+        :type body: :class:`huaweicloudsdkbss.v2.AutoRenewalResourcesReq`
         """
         
         
 
         self._resource_id = None
+        self._body = None
         self.discriminator = None
 
         self.resource_id = resource_id
+        if body is not None:
+            self.body = body
 
     @property
     def resource_id(self):
@@ -61,6 +68,24 @@ class AutoRenewalResourcesRequest:
         :type resource_id: str
         """
         self._resource_id = resource_id
+
+    @property
+    def body(self):
+        r"""Gets the body of this AutoRenewalResourcesRequest.
+
+        :return: The body of this AutoRenewalResourcesRequest.
+        :rtype: :class:`huaweicloudsdkbss.v2.AutoRenewalResourcesReq`
+        """
+        return self._body
+
+    @body.setter
+    def body(self, body):
+        r"""Sets the body of this AutoRenewalResourcesRequest.
+
+        :param body: The body of this AutoRenewalResourcesRequest.
+        :type body: :class:`huaweicloudsdkbss.v2.AutoRenewalResourcesReq`
+        """
+        self._body = body
 
     def to_dict(self):
         """Returns the model properties as a dict"""

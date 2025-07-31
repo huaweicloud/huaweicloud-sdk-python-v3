@@ -31,9 +31,9 @@ class DataPointInfo:
 
         The model defined in huaweicloud sdk
 
-        :param time: 计算出该条告警记录的资源监控数据上报的UTC时间
+        :param time: **参数解释**： 计算出该条告警记录的资源监控数据上报的UTC时间。 **取值范围**： 字符串长度在 1 到 64 之间。 
         :type time: str
-        :param value: 计算出该条告警记录的资源监控数据在该时间点的监控数值，如：7.019。
+        :param value: **参数解释**： 计算出该条告警记录的资源监控数据在该时间点的监控数值，如：7.019。 **取值范围**： 整数，最小值为0，最大值为1.7976931348623157e+308。 
         :type value: float
         """
         
@@ -52,7 +52,7 @@ class DataPointInfo:
     def time(self):
         r"""Gets the time of this DataPointInfo.
 
-        计算出该条告警记录的资源监控数据上报的UTC时间
+        **参数解释**： 计算出该条告警记录的资源监控数据上报的UTC时间。 **取值范围**： 字符串长度在 1 到 64 之间。 
 
         :return: The time of this DataPointInfo.
         :rtype: str
@@ -63,7 +63,7 @@ class DataPointInfo:
     def time(self, time):
         r"""Sets the time of this DataPointInfo.
 
-        计算出该条告警记录的资源监控数据上报的UTC时间
+        **参数解释**： 计算出该条告警记录的资源监控数据上报的UTC时间。 **取值范围**： 字符串长度在 1 到 64 之间。 
 
         :param time: The time of this DataPointInfo.
         :type time: str
@@ -74,7 +74,7 @@ class DataPointInfo:
     def value(self):
         r"""Gets the value of this DataPointInfo.
 
-        计算出该条告警记录的资源监控数据在该时间点的监控数值，如：7.019。
+        **参数解释**： 计算出该条告警记录的资源监控数据在该时间点的监控数值，如：7.019。 **取值范围**： 整数，最小值为0，最大值为1.7976931348623157e+308。 
 
         :return: The value of this DataPointInfo.
         :rtype: float
@@ -85,7 +85,7 @@ class DataPointInfo:
     def value(self, value):
         r"""Sets the value of this DataPointInfo.
 
-        计算出该条告警记录的资源监控数据在该时间点的监控数值，如：7.019。
+        **参数解释**： 计算出该条告警记录的资源监控数据在该时间点的监控数值，如：7.019。 **取值范围**： 整数，最小值为0，最大值为1.7976931348623157e+308。 
 
         :param value: The value of this DataPointInfo.
         :type value: float

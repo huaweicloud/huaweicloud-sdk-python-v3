@@ -31,7 +31,8 @@ class ListVoiceTrainingJobRequest:
         'job_type': 'str',
         'batch_name': 'str',
         'sort_key': 'str',
-        'sort_dir': 'str'
+        'sort_dir': 'str',
+        'is_ondemand_resource': 'bool'
     }
 
     attribute_map = {
@@ -49,10 +50,11 @@ class ListVoiceTrainingJobRequest:
         'job_type': 'job_type',
         'batch_name': 'batch_name',
         'sort_key': 'sort_key',
-        'sort_dir': 'sort_dir'
+        'sort_dir': 'sort_dir',
+        'is_ondemand_resource': 'is_ondemand_resource'
     }
 
-    def __init__(self, offset=None, limit=None, create_until=None, create_since=None, update_until=None, update_since=None, x_app_user_id=None, state=None, job_id=None, voice_name=None, tag=None, job_type=None, batch_name=None, sort_key=None, sort_dir=None):
+    def __init__(self, offset=None, limit=None, create_until=None, create_since=None, update_until=None, update_since=None, x_app_user_id=None, state=None, job_id=None, voice_name=None, tag=None, job_type=None, batch_name=None, sort_key=None, sort_dir=None, is_ondemand_resource=None):
         r"""ListVoiceTrainingJobRequest
 
         The model defined in huaweicloud sdk
@@ -87,6 +89,8 @@ class ListVoiceTrainingJobRequest:
         :type sort_key: str
         :param sort_dir: 排序规则：desc(降序)/asc(升序)
         :type sort_dir: str
+        :param is_ondemand_resource: 是否是按需任务
+        :type is_ondemand_resource: bool
         """
         
         
@@ -106,6 +110,7 @@ class ListVoiceTrainingJobRequest:
         self._batch_name = None
         self._sort_key = None
         self._sort_dir = None
+        self._is_ondemand_resource = None
         self.discriminator = None
 
         if offset is not None:
@@ -138,6 +143,8 @@ class ListVoiceTrainingJobRequest:
             self.sort_key = sort_key
         if sort_dir is not None:
             self.sort_dir = sort_dir
+        if is_ondemand_resource is not None:
+            self.is_ondemand_resource = is_ondemand_resource
 
     @property
     def offset(self):
@@ -468,6 +475,28 @@ class ListVoiceTrainingJobRequest:
         :type sort_dir: str
         """
         self._sort_dir = sort_dir
+
+    @property
+    def is_ondemand_resource(self):
+        r"""Gets the is_ondemand_resource of this ListVoiceTrainingJobRequest.
+
+        是否是按需任务
+
+        :return: The is_ondemand_resource of this ListVoiceTrainingJobRequest.
+        :rtype: bool
+        """
+        return self._is_ondemand_resource
+
+    @is_ondemand_resource.setter
+    def is_ondemand_resource(self, is_ondemand_resource):
+        r"""Sets the is_ondemand_resource of this ListVoiceTrainingJobRequest.
+
+        是否是按需任务
+
+        :param is_ondemand_resource: The is_ondemand_resource of this ListVoiceTrainingJobRequest.
+        :type is_ondemand_resource: bool
+        """
+        self._is_ondemand_resource = is_ondemand_resource
 
     def to_dict(self):
         """Returns the model properties as a dict"""

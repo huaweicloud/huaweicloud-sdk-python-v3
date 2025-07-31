@@ -31,9 +31,9 @@ class PrivateNameServer:
 
         The model defined in huaweicloud sdk
 
-        :param priority: 优先级。如果priority的值为“1”，表示会第一个采用该域名服务器进行解析。
+        :param priority: **参数解释：** 优先级。如果priority的值为“1”，表示会第一个采用该域名服务器进行解析。 **取值范围：** 不涉及。
         :type priority: int
-        :param address: DNS服务器地址。
+        :param address: **参数解释：** DNS服务器地址。 **取值范围：** 不涉及。
         :type address: str
         """
         
@@ -52,7 +52,7 @@ class PrivateNameServer:
     def priority(self):
         r"""Gets the priority of this PrivateNameServer.
 
-        优先级。如果priority的值为“1”，表示会第一个采用该域名服务器进行解析。
+        **参数解释：** 优先级。如果priority的值为“1”，表示会第一个采用该域名服务器进行解析。 **取值范围：** 不涉及。
 
         :return: The priority of this PrivateNameServer.
         :rtype: int
@@ -63,7 +63,7 @@ class PrivateNameServer:
     def priority(self, priority):
         r"""Sets the priority of this PrivateNameServer.
 
-        优先级。如果priority的值为“1”，表示会第一个采用该域名服务器进行解析。
+        **参数解释：** 优先级。如果priority的值为“1”，表示会第一个采用该域名服务器进行解析。 **取值范围：** 不涉及。
 
         :param priority: The priority of this PrivateNameServer.
         :type priority: int
@@ -74,7 +74,7 @@ class PrivateNameServer:
     def address(self):
         r"""Gets the address of this PrivateNameServer.
 
-        DNS服务器地址。
+        **参数解释：** DNS服务器地址。 **取值范围：** 不涉及。
 
         :return: The address of this PrivateNameServer.
         :rtype: str
@@ -85,7 +85,7 @@ class PrivateNameServer:
     def address(self, address):
         r"""Sets the address of this PrivateNameServer.
 
-        DNS服务器地址。
+        **参数解释：** DNS服务器地址。 **取值范围：** 不涉及。
 
         :param address: The address of this PrivateNameServer.
         :type address: str

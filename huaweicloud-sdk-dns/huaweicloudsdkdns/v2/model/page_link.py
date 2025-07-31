@@ -31,9 +31,9 @@ class PageLink:
 
         The model defined in huaweicloud sdk
 
-        :param _self: 当前资源的链接。
+        :param _self: **参数解释：** 当前页面的链接。 **取值范围：** 不涉及。
         :type _self: str
-        :param next: 下一页资源的链接。
+        :param next: **参数解释：** 下一页的链接。 **取值范围：** 不涉及。
         :type next: str
         """
         
@@ -52,7 +52,7 @@ class PageLink:
     def _self(self):
         r"""Gets the _self of this PageLink.
 
-        当前资源的链接。
+        **参数解释：** 当前页面的链接。 **取值范围：** 不涉及。
 
         :return: The _self of this PageLink.
         :rtype: str
@@ -63,7 +63,7 @@ class PageLink:
     def _self(self, _self):
         r"""Sets the _self of this PageLink.
 
-        当前资源的链接。
+        **参数解释：** 当前页面的链接。 **取值范围：** 不涉及。
 
         :param _self: The _self of this PageLink.
         :type _self: str
@@ -74,7 +74,7 @@ class PageLink:
     def next(self):
         r"""Gets the next of this PageLink.
 
-        下一页资源的链接。
+        **参数解释：** 下一页的链接。 **取值范围：** 不涉及。
 
         :return: The next of this PageLink.
         :rtype: str
@@ -85,7 +85,7 @@ class PageLink:
     def next(self, next):
         r"""Sets the next of this PageLink.
 
-        下一页资源的链接。
+        **参数解释：** 下一页的链接。 **取值范围：** 不涉及。
 
         :param next: The next of this PageLink.
         :type next: str

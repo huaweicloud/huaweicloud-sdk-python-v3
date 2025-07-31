@@ -17,49 +17,47 @@ class ListProcessStatisticsRequest:
     sensitive_list = []
 
     openapi_types = {
-        'path': 'str',
         'enterprise_project_id': 'str',
         'limit': 'int',
         'offset': 'int',
-        'category': 'str'
+        'category': 'str',
+        'path': 'str'
     }
 
     attribute_map = {
-        'path': 'path',
         'enterprise_project_id': 'enterprise_project_id',
         'limit': 'limit',
         'offset': 'offset',
-        'category': 'category'
+        'category': 'category',
+        'path': 'path'
     }
 
-    def __init__(self, path=None, enterprise_project_id=None, limit=None, offset=None, category=None):
+    def __init__(self, enterprise_project_id=None, limit=None, offset=None, category=None, path=None):
         r"""ListProcessStatisticsRequest
 
         The model defined in huaweicloud sdk
 
-        :param path: 可执行进程路径
-        :type path: str
-        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
+        :param enterprise_project_id: **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
         :type enterprise_project_id: str
-        :param limit: 每页显示数量
+        :param limit: **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
         :type limit: int
-        :param offset: 偏移量：指定返回记录的开始位置
+        :param offset: **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 默认为0 
         :type offset: int
-        :param category: 类别，默认为host，包含如下： - host：主机 - container：容器
+        :param category: **参数解释**: 类别 **约束限制**: 不涉及 **取值范围**: - host：主机 - container：容器  **默认取值**: 不涉及 
         :type category: str
+        :param path: **参数解释** : 可执行进程路径 **约束限制** : 不涉及 **取值范围** : 字符长度1-256位 **默认取值** : 不涉及 
+        :type path: str
         """
         
         
 
-        self._path = None
         self._enterprise_project_id = None
         self._limit = None
         self._offset = None
         self._category = None
+        self._path = None
         self.discriminator = None
 
-        if path is not None:
-            self.path = path
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
         if limit is not None:
@@ -68,34 +66,14 @@ class ListProcessStatisticsRequest:
             self.offset = offset
         if category is not None:
             self.category = category
-
-    @property
-    def path(self):
-        r"""Gets the path of this ListProcessStatisticsRequest.
-
-        可执行进程路径
-
-        :return: The path of this ListProcessStatisticsRequest.
-        :rtype: str
-        """
-        return self._path
-
-    @path.setter
-    def path(self, path):
-        r"""Sets the path of this ListProcessStatisticsRequest.
-
-        可执行进程路径
-
-        :param path: The path of this ListProcessStatisticsRequest.
-        :type path: str
-        """
-        self._path = path
+        if path is not None:
+            self.path = path
 
     @property
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this ListProcessStatisticsRequest.
 
-        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
+        **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
 
         :return: The enterprise_project_id of this ListProcessStatisticsRequest.
         :rtype: str
@@ -106,7 +84,7 @@ class ListProcessStatisticsRequest:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this ListProcessStatisticsRequest.
 
-        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
+        **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
 
         :param enterprise_project_id: The enterprise_project_id of this ListProcessStatisticsRequest.
         :type enterprise_project_id: str
@@ -117,7 +95,7 @@ class ListProcessStatisticsRequest:
     def limit(self):
         r"""Gets the limit of this ListProcessStatisticsRequest.
 
-        每页显示数量
+        **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
 
         :return: The limit of this ListProcessStatisticsRequest.
         :rtype: int
@@ -128,7 +106,7 @@ class ListProcessStatisticsRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListProcessStatisticsRequest.
 
-        每页显示数量
+        **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
 
         :param limit: The limit of this ListProcessStatisticsRequest.
         :type limit: int
@@ -139,7 +117,7 @@ class ListProcessStatisticsRequest:
     def offset(self):
         r"""Gets the offset of this ListProcessStatisticsRequest.
 
-        偏移量：指定返回记录的开始位置
+        **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 默认为0 
 
         :return: The offset of this ListProcessStatisticsRequest.
         :rtype: int
@@ -150,7 +128,7 @@ class ListProcessStatisticsRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListProcessStatisticsRequest.
 
-        偏移量：指定返回记录的开始位置
+        **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 默认为0 
 
         :param offset: The offset of this ListProcessStatisticsRequest.
         :type offset: int
@@ -161,7 +139,7 @@ class ListProcessStatisticsRequest:
     def category(self):
         r"""Gets the category of this ListProcessStatisticsRequest.
 
-        类别，默认为host，包含如下： - host：主机 - container：容器
+        **参数解释**: 类别 **约束限制**: 不涉及 **取值范围**: - host：主机 - container：容器  **默认取值**: 不涉及 
 
         :return: The category of this ListProcessStatisticsRequest.
         :rtype: str
@@ -172,12 +150,34 @@ class ListProcessStatisticsRequest:
     def category(self, category):
         r"""Sets the category of this ListProcessStatisticsRequest.
 
-        类别，默认为host，包含如下： - host：主机 - container：容器
+        **参数解释**: 类别 **约束限制**: 不涉及 **取值范围**: - host：主机 - container：容器  **默认取值**: 不涉及 
 
         :param category: The category of this ListProcessStatisticsRequest.
         :type category: str
         """
         self._category = category
+
+    @property
+    def path(self):
+        r"""Gets the path of this ListProcessStatisticsRequest.
+
+        **参数解释** : 可执行进程路径 **约束限制** : 不涉及 **取值范围** : 字符长度1-256位 **默认取值** : 不涉及 
+
+        :return: The path of this ListProcessStatisticsRequest.
+        :rtype: str
+        """
+        return self._path
+
+    @path.setter
+    def path(self, path):
+        r"""Sets the path of this ListProcessStatisticsRequest.
+
+        **参数解释** : 可执行进程路径 **约束限制** : 不涉及 **取值范围** : 字符长度1-256位 **默认取值** : 不涉及 
+
+        :param path: The path of this ListProcessStatisticsRequest.
+        :type path: str
+        """
+        self._path = path
 
     def to_dict(self):
         """Returns the model properties as a dict"""

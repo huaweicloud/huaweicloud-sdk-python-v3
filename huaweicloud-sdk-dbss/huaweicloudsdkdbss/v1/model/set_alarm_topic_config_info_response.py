@@ -18,58 +18,29 @@ class SetAlarmTopicConfigInfoResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'is_use_topic': 'bool',
         'status': 'str'
     }
 
     attribute_map = {
-        'is_use_topic': 'is_use_topic',
         'status': 'status'
     }
 
-    def __init__(self, is_use_topic=None, status=None):
+    def __init__(self, status=None):
         r"""SetAlarmTopicConfigInfoResponse
 
         The model defined in huaweicloud sdk
 
-        :param is_use_topic: 主题使用状态  - true: 已被使用  - false: 未被使用
-        :type is_use_topic: bool
         :param status: 状态  - SUCCESS: 成功  - FAILED: 失败
         :type status: str
         """
         
         super(SetAlarmTopicConfigInfoResponse, self).__init__()
 
-        self._is_use_topic = None
         self._status = None
         self.discriminator = None
 
-        if is_use_topic is not None:
-            self.is_use_topic = is_use_topic
         if status is not None:
             self.status = status
-
-    @property
-    def is_use_topic(self):
-        r"""Gets the is_use_topic of this SetAlarmTopicConfigInfoResponse.
-
-        主题使用状态  - true: 已被使用  - false: 未被使用
-
-        :return: The is_use_topic of this SetAlarmTopicConfigInfoResponse.
-        :rtype: bool
-        """
-        return self._is_use_topic
-
-    @is_use_topic.setter
-    def is_use_topic(self, is_use_topic):
-        r"""Sets the is_use_topic of this SetAlarmTopicConfigInfoResponse.
-
-        主题使用状态  - true: 已被使用  - false: 未被使用
-
-        :param is_use_topic: The is_use_topic of this SetAlarmTopicConfigInfoResponse.
-        :type is_use_topic: bool
-        """
-        self._is_use_topic = is_use_topic
 
     @property
     def status(self):

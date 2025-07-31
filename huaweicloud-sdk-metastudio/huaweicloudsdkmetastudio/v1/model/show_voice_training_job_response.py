@@ -40,7 +40,9 @@ class ShowVoiceTrainingJobResponse(SdkResponse):
         'batch_name': 'str',
         'allocated_resource': 'VoiceTrainingAllocatedResource',
         'output_language': 'str',
-        'is_remake': 'bool'
+        'is_remake': 'bool',
+        'assess_result': 'AssessResult',
+        'is_ondemand_resource': 'bool'
     }
 
     attribute_map = {
@@ -66,10 +68,12 @@ class ShowVoiceTrainingJobResponse(SdkResponse):
         'batch_name': 'batch_name',
         'allocated_resource': 'allocated_resource',
         'output_language': 'output_language',
-        'is_remake': 'is_remake'
+        'is_remake': 'is_remake',
+        'assess_result': 'assess_result',
+        'is_ondemand_resource': 'is_ondemand_resource'
     }
 
-    def __init__(self, job_type=None, job_id=None, app_user_id=None, voice_name=None, sex=None, language=None, state=None, reject_times=None, asset_id=None, job_failed_code=None, job_failed_reason=None, create_time=None, lastupdate_time=None, voice_authorization_url=None, training_input_source_url=None, create_type=None, tag=None, phone=None, dhtms_job_id=None, batch_name=None, allocated_resource=None, output_language=None, is_remake=None):
+    def __init__(self, job_type=None, job_id=None, app_user_id=None, voice_name=None, sex=None, language=None, state=None, reject_times=None, asset_id=None, job_failed_code=None, job_failed_reason=None, create_time=None, lastupdate_time=None, voice_authorization_url=None, training_input_source_url=None, create_type=None, tag=None, phone=None, dhtms_job_id=None, batch_name=None, allocated_resource=None, output_language=None, is_remake=None, assess_result=None, is_ondemand_resource=None):
         r"""ShowVoiceTrainingJobResponse
 
         The model defined in huaweicloud sdk
@@ -120,6 +124,10 @@ class ShowVoiceTrainingJobResponse(SdkResponse):
         :type output_language: str
         :param is_remake: 任务是否重做
         :type is_remake: bool
+        :param assess_result: 
+        :type assess_result: :class:`huaweicloudsdkmetastudio.v1.AssessResult`
+        :param is_ondemand_resource: 是否是按需任务
+        :type is_ondemand_resource: bool
         """
         
         super(ShowVoiceTrainingJobResponse, self).__init__()
@@ -147,6 +155,8 @@ class ShowVoiceTrainingJobResponse(SdkResponse):
         self._allocated_resource = None
         self._output_language = None
         self._is_remake = None
+        self._assess_result = None
+        self._is_ondemand_resource = None
         self.discriminator = None
 
         if job_type is not None:
@@ -195,6 +205,10 @@ class ShowVoiceTrainingJobResponse(SdkResponse):
             self.output_language = output_language
         if is_remake is not None:
             self.is_remake = is_remake
+        if assess_result is not None:
+            self.assess_result = assess_result
+        if is_ondemand_resource is not None:
+            self.is_ondemand_resource = is_ondemand_resource
 
     @property
     def job_type(self):
@@ -681,6 +695,46 @@ class ShowVoiceTrainingJobResponse(SdkResponse):
         :type is_remake: bool
         """
         self._is_remake = is_remake
+
+    @property
+    def assess_result(self):
+        r"""Gets the assess_result of this ShowVoiceTrainingJobResponse.
+
+        :return: The assess_result of this ShowVoiceTrainingJobResponse.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.AssessResult`
+        """
+        return self._assess_result
+
+    @assess_result.setter
+    def assess_result(self, assess_result):
+        r"""Sets the assess_result of this ShowVoiceTrainingJobResponse.
+
+        :param assess_result: The assess_result of this ShowVoiceTrainingJobResponse.
+        :type assess_result: :class:`huaweicloudsdkmetastudio.v1.AssessResult`
+        """
+        self._assess_result = assess_result
+
+    @property
+    def is_ondemand_resource(self):
+        r"""Gets the is_ondemand_resource of this ShowVoiceTrainingJobResponse.
+
+        是否是按需任务
+
+        :return: The is_ondemand_resource of this ShowVoiceTrainingJobResponse.
+        :rtype: bool
+        """
+        return self._is_ondemand_resource
+
+    @is_ondemand_resource.setter
+    def is_ondemand_resource(self, is_ondemand_resource):
+        r"""Sets the is_ondemand_resource of this ShowVoiceTrainingJobResponse.
+
+        是否是按需任务
+
+        :param is_ondemand_resource: The is_ondemand_resource of this ShowVoiceTrainingJobResponse.
+        :type is_ondemand_resource: bool
+        """
+        self._is_ondemand_resource = is_ondemand_resource
 
     def to_dict(self):
         """Returns the model properties as a dict"""

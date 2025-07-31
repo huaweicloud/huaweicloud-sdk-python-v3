@@ -51,29 +51,29 @@ class ListRecordSetsByZoneRequest:
 
         The model defined in huaweicloud sdk
 
-        :param zone_id: 域名ID。
+        :param zone_id: **参数解释：** 域名ID。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type zone_id: str
-        :param search_mode: 查询条件搜索模式。  取值范围：  like：模糊搜索 equal：精确搜索
+        :param search_mode: **参数解释：** 查询条件搜索模式。 **约束限制：** 不涉及。 **取值范围：** - like：模糊搜索 - equal：精确搜索  **默认取值：** 不涉及。
         :type search_mode: str
-        :param marker: 分页查询起始的资源ID，为空时为查询第一页。  默认值为空。
+        :param marker: **参数解释：** 分页查询的起始资源ID。 - 查询第一页时，设置为空。 - 查询下一页时，设置为上一页最后一条资源的ID。  **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type marker: str
-        :param limit: 每页返回的资源个数。  取值范围：0~500  取值一般为10，20，50。默认值为500。
+        :param limit: **参数解释：** 分页查询时配置每页返回的资源个数。 **约束限制：** 不涉及。 **取值范围：** 0~500。 **默认取值：** 500
         :type limit: int
-        :param offset: 分页查询起始偏移量，表示从偏移量的下一个资源开始查询。  取值范围：0~2147483647  默认值为0。  当前设置marker不为空时，以marker为分页起始标识。
+        :param offset: **参数解释：** 分页查询起始偏移量，表示从偏移量的下一个资源开始查询。 **约束限制：** 当设置marker不为空时，以marker为分页起始标识，offset不生效。。 **取值范围：** 0~2147483647。 **默认取值：** 0
         :type offset: int
-        :param tags: 资源标签。  取值格式：key1,value1|key2,value2  多个标签之间用“|”分开，每个标签的键值用英文逗号“,”相隔。
+        :param tags: **参数解释：** 记录集的标签，包括标签键和标签值。 取值格式：key1,value1|key2,value2。 **约束限制：** - 多个标签之间用“|”分开，每个标签的键值用英文逗号“,”相隔。 - 多个标签之间为“与”的关系。 - 搜索模式为精确搜索。如果资源标签值value是以&amp;ast;开头时，则按照&amp;ast;后面的值全模糊匹配。  **取值范围：** 最多可以查询20个标签。 **默认取值：** 不涉及。
         :type tags: str
-        :param status: 待查询的记录集的状态。 取值范围：ACTIVE、ERROR、DISABLE、FREEZE、PENDING_CREATE、PENDING_UPDATE、PENDING_DELETE
+        :param status: **参数解释：** 记录集状态。 **约束限制：** 不涉及。 **取值范围：** - ACTIVE：正常 - PENDING_CREATE：创建中 - PENDING_UPDATE：更新中 - PENDING_DELETE：删除中 - PENDING_FREEZE：冻结中 - FREEZE：冻结 - ILLEGAL：违规冻结 - POLICE：公安冻结 - PENDING_DISABLE：暂停中 - DISABLE：暂停 - ERROR：失败  **默认取值：** 不涉及。
         :type status: str
-        :param type: 待查询的记录集的类型。 公网域名场景的记录类型: A、AAAA、MX、CNAME、TXT、NS、SRV、CAA。 内网域名场景的记录类型: A、AAAA、MX、CNAME、TXT、SRV。
+        :param type: **参数解释：** 记录集的类型。 **约束限制：** 不涉及。 **取值范围：** - 公网域名的记录类型: A、AAAA、MX、CNAME、TXT、SRV、NS、SOA、CAA。 - 内网域名的记录类型: A、AAAA、MX、CNAME、TXT、PTR、SRV、NS、SOA。  **默认取值：** 不涉及。
         :type type: str
-        :param name: 待查询的记录集的域名中包含此name。  搜索模式默认为模糊搜索。  默认值为空。
+        :param name: **参数解释：** 待查询的记录集的域名中包含此name。 搜索模式默认为模糊搜索。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type name: str
-        :param id: 待查询的记录集ID。
+        :param id: **参数解释：** 待查询的记录集ID。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type id: str
-        :param sort_key: 查询结果中记录集列表的排序字段。  取值范围为：  name：记录集名称 type：记录集类型 默认值为空，表示不排序。
+        :param sort_key: **参数解释：** 查询结果中记录集列表的排序字段。 **约束限制：** 不涉及。 **取值范围：** - name：记录集名称 - type：记录集类型  **默认取值：** 默认值为空，表示不排序。
         :type sort_key: str
-        :param sort_dir: 查询结果中记录集列表的排序方式。  取值范围：  desc：降序排序 asc：升序排序 默认值为空，表示不排序。
+        :param sort_dir: **参数解释：** 查询结果中记录集列表的排序方式。 **约束限制：** 不涉及。 **取值范围：** - desc：降序排序 - asc：升序排序  **默认取值：** 默认值为空，表示不排序。
         :type sort_dir: str
         """
         
@@ -121,7 +121,7 @@ class ListRecordSetsByZoneRequest:
     def zone_id(self):
         r"""Gets the zone_id of this ListRecordSetsByZoneRequest.
 
-        域名ID。
+        **参数解释：** 域名ID。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The zone_id of this ListRecordSetsByZoneRequest.
         :rtype: str
@@ -132,7 +132,7 @@ class ListRecordSetsByZoneRequest:
     def zone_id(self, zone_id):
         r"""Sets the zone_id of this ListRecordSetsByZoneRequest.
 
-        域名ID。
+        **参数解释：** 域名ID。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param zone_id: The zone_id of this ListRecordSetsByZoneRequest.
         :type zone_id: str
@@ -143,7 +143,7 @@ class ListRecordSetsByZoneRequest:
     def search_mode(self):
         r"""Gets the search_mode of this ListRecordSetsByZoneRequest.
 
-        查询条件搜索模式。  取值范围：  like：模糊搜索 equal：精确搜索
+        **参数解释：** 查询条件搜索模式。 **约束限制：** 不涉及。 **取值范围：** - like：模糊搜索 - equal：精确搜索  **默认取值：** 不涉及。
 
         :return: The search_mode of this ListRecordSetsByZoneRequest.
         :rtype: str
@@ -154,7 +154,7 @@ class ListRecordSetsByZoneRequest:
     def search_mode(self, search_mode):
         r"""Sets the search_mode of this ListRecordSetsByZoneRequest.
 
-        查询条件搜索模式。  取值范围：  like：模糊搜索 equal：精确搜索
+        **参数解释：** 查询条件搜索模式。 **约束限制：** 不涉及。 **取值范围：** - like：模糊搜索 - equal：精确搜索  **默认取值：** 不涉及。
 
         :param search_mode: The search_mode of this ListRecordSetsByZoneRequest.
         :type search_mode: str
@@ -165,7 +165,7 @@ class ListRecordSetsByZoneRequest:
     def marker(self):
         r"""Gets the marker of this ListRecordSetsByZoneRequest.
 
-        分页查询起始的资源ID，为空时为查询第一页。  默认值为空。
+        **参数解释：** 分页查询的起始资源ID。 - 查询第一页时，设置为空。 - 查询下一页时，设置为上一页最后一条资源的ID。  **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The marker of this ListRecordSetsByZoneRequest.
         :rtype: str
@@ -176,7 +176,7 @@ class ListRecordSetsByZoneRequest:
     def marker(self, marker):
         r"""Sets the marker of this ListRecordSetsByZoneRequest.
 
-        分页查询起始的资源ID，为空时为查询第一页。  默认值为空。
+        **参数解释：** 分页查询的起始资源ID。 - 查询第一页时，设置为空。 - 查询下一页时，设置为上一页最后一条资源的ID。  **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param marker: The marker of this ListRecordSetsByZoneRequest.
         :type marker: str
@@ -187,7 +187,7 @@ class ListRecordSetsByZoneRequest:
     def limit(self):
         r"""Gets the limit of this ListRecordSetsByZoneRequest.
 
-        每页返回的资源个数。  取值范围：0~500  取值一般为10，20，50。默认值为500。
+        **参数解释：** 分页查询时配置每页返回的资源个数。 **约束限制：** 不涉及。 **取值范围：** 0~500。 **默认取值：** 500
 
         :return: The limit of this ListRecordSetsByZoneRequest.
         :rtype: int
@@ -198,7 +198,7 @@ class ListRecordSetsByZoneRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListRecordSetsByZoneRequest.
 
-        每页返回的资源个数。  取值范围：0~500  取值一般为10，20，50。默认值为500。
+        **参数解释：** 分页查询时配置每页返回的资源个数。 **约束限制：** 不涉及。 **取值范围：** 0~500。 **默认取值：** 500
 
         :param limit: The limit of this ListRecordSetsByZoneRequest.
         :type limit: int
@@ -209,7 +209,7 @@ class ListRecordSetsByZoneRequest:
     def offset(self):
         r"""Gets the offset of this ListRecordSetsByZoneRequest.
 
-        分页查询起始偏移量，表示从偏移量的下一个资源开始查询。  取值范围：0~2147483647  默认值为0。  当前设置marker不为空时，以marker为分页起始标识。
+        **参数解释：** 分页查询起始偏移量，表示从偏移量的下一个资源开始查询。 **约束限制：** 当设置marker不为空时，以marker为分页起始标识，offset不生效。。 **取值范围：** 0~2147483647。 **默认取值：** 0
 
         :return: The offset of this ListRecordSetsByZoneRequest.
         :rtype: int
@@ -220,7 +220,7 @@ class ListRecordSetsByZoneRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListRecordSetsByZoneRequest.
 
-        分页查询起始偏移量，表示从偏移量的下一个资源开始查询。  取值范围：0~2147483647  默认值为0。  当前设置marker不为空时，以marker为分页起始标识。
+        **参数解释：** 分页查询起始偏移量，表示从偏移量的下一个资源开始查询。 **约束限制：** 当设置marker不为空时，以marker为分页起始标识，offset不生效。。 **取值范围：** 0~2147483647。 **默认取值：** 0
 
         :param offset: The offset of this ListRecordSetsByZoneRequest.
         :type offset: int
@@ -231,7 +231,7 @@ class ListRecordSetsByZoneRequest:
     def tags(self):
         r"""Gets the tags of this ListRecordSetsByZoneRequest.
 
-        资源标签。  取值格式：key1,value1|key2,value2  多个标签之间用“|”分开，每个标签的键值用英文逗号“,”相隔。
+        **参数解释：** 记录集的标签，包括标签键和标签值。 取值格式：key1,value1|key2,value2。 **约束限制：** - 多个标签之间用“|”分开，每个标签的键值用英文逗号“,”相隔。 - 多个标签之间为“与”的关系。 - 搜索模式为精确搜索。如果资源标签值value是以&ast;开头时，则按照&ast;后面的值全模糊匹配。  **取值范围：** 最多可以查询20个标签。 **默认取值：** 不涉及。
 
         :return: The tags of this ListRecordSetsByZoneRequest.
         :rtype: str
@@ -242,7 +242,7 @@ class ListRecordSetsByZoneRequest:
     def tags(self, tags):
         r"""Sets the tags of this ListRecordSetsByZoneRequest.
 
-        资源标签。  取值格式：key1,value1|key2,value2  多个标签之间用“|”分开，每个标签的键值用英文逗号“,”相隔。
+        **参数解释：** 记录集的标签，包括标签键和标签值。 取值格式：key1,value1|key2,value2。 **约束限制：** - 多个标签之间用“|”分开，每个标签的键值用英文逗号“,”相隔。 - 多个标签之间为“与”的关系。 - 搜索模式为精确搜索。如果资源标签值value是以&ast;开头时，则按照&ast;后面的值全模糊匹配。  **取值范围：** 最多可以查询20个标签。 **默认取值：** 不涉及。
 
         :param tags: The tags of this ListRecordSetsByZoneRequest.
         :type tags: str
@@ -253,7 +253,7 @@ class ListRecordSetsByZoneRequest:
     def status(self):
         r"""Gets the status of this ListRecordSetsByZoneRequest.
 
-        待查询的记录集的状态。 取值范围：ACTIVE、ERROR、DISABLE、FREEZE、PENDING_CREATE、PENDING_UPDATE、PENDING_DELETE
+        **参数解释：** 记录集状态。 **约束限制：** 不涉及。 **取值范围：** - ACTIVE：正常 - PENDING_CREATE：创建中 - PENDING_UPDATE：更新中 - PENDING_DELETE：删除中 - PENDING_FREEZE：冻结中 - FREEZE：冻结 - ILLEGAL：违规冻结 - POLICE：公安冻结 - PENDING_DISABLE：暂停中 - DISABLE：暂停 - ERROR：失败  **默认取值：** 不涉及。
 
         :return: The status of this ListRecordSetsByZoneRequest.
         :rtype: str
@@ -264,7 +264,7 @@ class ListRecordSetsByZoneRequest:
     def status(self, status):
         r"""Sets the status of this ListRecordSetsByZoneRequest.
 
-        待查询的记录集的状态。 取值范围：ACTIVE、ERROR、DISABLE、FREEZE、PENDING_CREATE、PENDING_UPDATE、PENDING_DELETE
+        **参数解释：** 记录集状态。 **约束限制：** 不涉及。 **取值范围：** - ACTIVE：正常 - PENDING_CREATE：创建中 - PENDING_UPDATE：更新中 - PENDING_DELETE：删除中 - PENDING_FREEZE：冻结中 - FREEZE：冻结 - ILLEGAL：违规冻结 - POLICE：公安冻结 - PENDING_DISABLE：暂停中 - DISABLE：暂停 - ERROR：失败  **默认取值：** 不涉及。
 
         :param status: The status of this ListRecordSetsByZoneRequest.
         :type status: str
@@ -275,7 +275,7 @@ class ListRecordSetsByZoneRequest:
     def type(self):
         r"""Gets the type of this ListRecordSetsByZoneRequest.
 
-        待查询的记录集的类型。 公网域名场景的记录类型: A、AAAA、MX、CNAME、TXT、NS、SRV、CAA。 内网域名场景的记录类型: A、AAAA、MX、CNAME、TXT、SRV。
+        **参数解释：** 记录集的类型。 **约束限制：** 不涉及。 **取值范围：** - 公网域名的记录类型: A、AAAA、MX、CNAME、TXT、SRV、NS、SOA、CAA。 - 内网域名的记录类型: A、AAAA、MX、CNAME、TXT、PTR、SRV、NS、SOA。  **默认取值：** 不涉及。
 
         :return: The type of this ListRecordSetsByZoneRequest.
         :rtype: str
@@ -286,7 +286,7 @@ class ListRecordSetsByZoneRequest:
     def type(self, type):
         r"""Sets the type of this ListRecordSetsByZoneRequest.
 
-        待查询的记录集的类型。 公网域名场景的记录类型: A、AAAA、MX、CNAME、TXT、NS、SRV、CAA。 内网域名场景的记录类型: A、AAAA、MX、CNAME、TXT、SRV。
+        **参数解释：** 记录集的类型。 **约束限制：** 不涉及。 **取值范围：** - 公网域名的记录类型: A、AAAA、MX、CNAME、TXT、SRV、NS、SOA、CAA。 - 内网域名的记录类型: A、AAAA、MX、CNAME、TXT、PTR、SRV、NS、SOA。  **默认取值：** 不涉及。
 
         :param type: The type of this ListRecordSetsByZoneRequest.
         :type type: str
@@ -297,7 +297,7 @@ class ListRecordSetsByZoneRequest:
     def name(self):
         r"""Gets the name of this ListRecordSetsByZoneRequest.
 
-        待查询的记录集的域名中包含此name。  搜索模式默认为模糊搜索。  默认值为空。
+        **参数解释：** 待查询的记录集的域名中包含此name。 搜索模式默认为模糊搜索。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The name of this ListRecordSetsByZoneRequest.
         :rtype: str
@@ -308,7 +308,7 @@ class ListRecordSetsByZoneRequest:
     def name(self, name):
         r"""Sets the name of this ListRecordSetsByZoneRequest.
 
-        待查询的记录集的域名中包含此name。  搜索模式默认为模糊搜索。  默认值为空。
+        **参数解释：** 待查询的记录集的域名中包含此name。 搜索模式默认为模糊搜索。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param name: The name of this ListRecordSetsByZoneRequest.
         :type name: str
@@ -319,7 +319,7 @@ class ListRecordSetsByZoneRequest:
     def id(self):
         r"""Gets the id of this ListRecordSetsByZoneRequest.
 
-        待查询的记录集ID。
+        **参数解释：** 待查询的记录集ID。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The id of this ListRecordSetsByZoneRequest.
         :rtype: str
@@ -330,7 +330,7 @@ class ListRecordSetsByZoneRequest:
     def id(self, id):
         r"""Sets the id of this ListRecordSetsByZoneRequest.
 
-        待查询的记录集ID。
+        **参数解释：** 待查询的记录集ID。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param id: The id of this ListRecordSetsByZoneRequest.
         :type id: str
@@ -341,7 +341,7 @@ class ListRecordSetsByZoneRequest:
     def sort_key(self):
         r"""Gets the sort_key of this ListRecordSetsByZoneRequest.
 
-        查询结果中记录集列表的排序字段。  取值范围为：  name：记录集名称 type：记录集类型 默认值为空，表示不排序。
+        **参数解释：** 查询结果中记录集列表的排序字段。 **约束限制：** 不涉及。 **取值范围：** - name：记录集名称 - type：记录集类型  **默认取值：** 默认值为空，表示不排序。
 
         :return: The sort_key of this ListRecordSetsByZoneRequest.
         :rtype: str
@@ -352,7 +352,7 @@ class ListRecordSetsByZoneRequest:
     def sort_key(self, sort_key):
         r"""Sets the sort_key of this ListRecordSetsByZoneRequest.
 
-        查询结果中记录集列表的排序字段。  取值范围为：  name：记录集名称 type：记录集类型 默认值为空，表示不排序。
+        **参数解释：** 查询结果中记录集列表的排序字段。 **约束限制：** 不涉及。 **取值范围：** - name：记录集名称 - type：记录集类型  **默认取值：** 默认值为空，表示不排序。
 
         :param sort_key: The sort_key of this ListRecordSetsByZoneRequest.
         :type sort_key: str
@@ -363,7 +363,7 @@ class ListRecordSetsByZoneRequest:
     def sort_dir(self):
         r"""Gets the sort_dir of this ListRecordSetsByZoneRequest.
 
-        查询结果中记录集列表的排序方式。  取值范围：  desc：降序排序 asc：升序排序 默认值为空，表示不排序。
+        **参数解释：** 查询结果中记录集列表的排序方式。 **约束限制：** 不涉及。 **取值范围：** - desc：降序排序 - asc：升序排序  **默认取值：** 默认值为空，表示不排序。
 
         :return: The sort_dir of this ListRecordSetsByZoneRequest.
         :rtype: str
@@ -374,7 +374,7 @@ class ListRecordSetsByZoneRequest:
     def sort_dir(self, sort_dir):
         r"""Sets the sort_dir of this ListRecordSetsByZoneRequest.
 
-        查询结果中记录集列表的排序方式。  取值范围：  desc：降序排序 asc：升序排序 默认值为空，表示不排序。
+        **参数解释：** 查询结果中记录集列表的排序方式。 **约束限制：** 不涉及。 **取值范围：** - desc：降序排序 - asc：升序排序  **默认取值：** 默认值为空，表示不排序。
 
         :param sort_dir: The sort_dir of this ListRecordSetsByZoneRequest.
         :type sort_dir: str

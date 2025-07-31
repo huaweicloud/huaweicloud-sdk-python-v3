@@ -47,25 +47,25 @@ class AutoLauchResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param agent_id: Agent ID
+        :param agent_id: **参数解释**: Agent ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
         :type agent_id: str
-        :param host_id: 主机id
+        :param host_id: **参数解释**: 服务器ID **取值范围**: 字符长度1-64位 
         :type host_id: str
-        :param host_name: 服务器名称
+        :param host_name: **参数解释**: 服务器名称 **取值范围**: 字符长度1-256位 
         :type host_name: str
-        :param host_ip: 服务器ip
+        :param host_ip: **参数解释**: 主机IP **取值范围**: 字符长度1-128位 
         :type host_ip: str
-        :param name: 自启动项名称
+        :param name: **参数解释**: 自启动项名称 **取值范围**: 字符长度1-256位 
         :type name: str
-        :param type: 自启动项类型   - 0 ：自启动服务   - 1 ：定时任务   - 2 ：预加载动态库   - 3 ：Run注册表键   - 4 ：开机启动文件夹
+        :param type: **参数解释**: 自启动项类型 **取值范围**: - 0：自启动服务 - 1：定时任务 - 2：预加载动态库 - 3：Run注册表键 - 4：开机启动文件夹 
         :type type: int
-        :param path: 自启动项的路径
+        :param path: **参数解释**: 自启动项的路径 **取值范围**: 字符长度1-256位 
         :type path: str
-        :param hash: 采用sha256算法生成的文件hash值
+        :param hash: **参数解释**: 采用sha256算法生成的文件hash值 **取值范围**: 字符长度1-128位 
         :type hash: str
-        :param run_user: 运行用户
+        :param run_user: **参数解释**: 运行用户 **取值范围**: 字符长度1-128位 
         :type run_user: str
-        :param recent_scan_time: 最近扫描时间
+        :param recent_scan_time: **参数解释**: 最近扫描时间 **取值范围**: 最小值0，最大值9223372036854775807 
         :type recent_scan_time: int
         """
         
@@ -108,7 +108,7 @@ class AutoLauchResponseInfo:
     def agent_id(self):
         r"""Gets the agent_id of this AutoLauchResponseInfo.
 
-        Agent ID
+        **参数解释**: Agent ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :return: The agent_id of this AutoLauchResponseInfo.
         :rtype: str
@@ -119,7 +119,7 @@ class AutoLauchResponseInfo:
     def agent_id(self, agent_id):
         r"""Sets the agent_id of this AutoLauchResponseInfo.
 
-        Agent ID
+        **参数解释**: Agent ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :param agent_id: The agent_id of this AutoLauchResponseInfo.
         :type agent_id: str
@@ -130,7 +130,7 @@ class AutoLauchResponseInfo:
     def host_id(self):
         r"""Gets the host_id of this AutoLauchResponseInfo.
 
-        主机id
+        **参数解释**: 服务器ID **取值范围**: 字符长度1-64位 
 
         :return: The host_id of this AutoLauchResponseInfo.
         :rtype: str
@@ -141,7 +141,7 @@ class AutoLauchResponseInfo:
     def host_id(self, host_id):
         r"""Sets the host_id of this AutoLauchResponseInfo.
 
-        主机id
+        **参数解释**: 服务器ID **取值范围**: 字符长度1-64位 
 
         :param host_id: The host_id of this AutoLauchResponseInfo.
         :type host_id: str
@@ -152,7 +152,7 @@ class AutoLauchResponseInfo:
     def host_name(self):
         r"""Gets the host_name of this AutoLauchResponseInfo.
 
-        服务器名称
+        **参数解释**: 服务器名称 **取值范围**: 字符长度1-256位 
 
         :return: The host_name of this AutoLauchResponseInfo.
         :rtype: str
@@ -163,7 +163,7 @@ class AutoLauchResponseInfo:
     def host_name(self, host_name):
         r"""Sets the host_name of this AutoLauchResponseInfo.
 
-        服务器名称
+        **参数解释**: 服务器名称 **取值范围**: 字符长度1-256位 
 
         :param host_name: The host_name of this AutoLauchResponseInfo.
         :type host_name: str
@@ -174,7 +174,7 @@ class AutoLauchResponseInfo:
     def host_ip(self):
         r"""Gets the host_ip of this AutoLauchResponseInfo.
 
-        服务器ip
+        **参数解释**: 主机IP **取值范围**: 字符长度1-128位 
 
         :return: The host_ip of this AutoLauchResponseInfo.
         :rtype: str
@@ -185,7 +185,7 @@ class AutoLauchResponseInfo:
     def host_ip(self, host_ip):
         r"""Sets the host_ip of this AutoLauchResponseInfo.
 
-        服务器ip
+        **参数解释**: 主机IP **取值范围**: 字符长度1-128位 
 
         :param host_ip: The host_ip of this AutoLauchResponseInfo.
         :type host_ip: str
@@ -196,7 +196,7 @@ class AutoLauchResponseInfo:
     def name(self):
         r"""Gets the name of this AutoLauchResponseInfo.
 
-        自启动项名称
+        **参数解释**: 自启动项名称 **取值范围**: 字符长度1-256位 
 
         :return: The name of this AutoLauchResponseInfo.
         :rtype: str
@@ -207,7 +207,7 @@ class AutoLauchResponseInfo:
     def name(self, name):
         r"""Sets the name of this AutoLauchResponseInfo.
 
-        自启动项名称
+        **参数解释**: 自启动项名称 **取值范围**: 字符长度1-256位 
 
         :param name: The name of this AutoLauchResponseInfo.
         :type name: str
@@ -218,7 +218,7 @@ class AutoLauchResponseInfo:
     def type(self):
         r"""Gets the type of this AutoLauchResponseInfo.
 
-        自启动项类型   - 0 ：自启动服务   - 1 ：定时任务   - 2 ：预加载动态库   - 3 ：Run注册表键   - 4 ：开机启动文件夹
+        **参数解释**: 自启动项类型 **取值范围**: - 0：自启动服务 - 1：定时任务 - 2：预加载动态库 - 3：Run注册表键 - 4：开机启动文件夹 
 
         :return: The type of this AutoLauchResponseInfo.
         :rtype: int
@@ -229,7 +229,7 @@ class AutoLauchResponseInfo:
     def type(self, type):
         r"""Sets the type of this AutoLauchResponseInfo.
 
-        自启动项类型   - 0 ：自启动服务   - 1 ：定时任务   - 2 ：预加载动态库   - 3 ：Run注册表键   - 4 ：开机启动文件夹
+        **参数解释**: 自启动项类型 **取值范围**: - 0：自启动服务 - 1：定时任务 - 2：预加载动态库 - 3：Run注册表键 - 4：开机启动文件夹 
 
         :param type: The type of this AutoLauchResponseInfo.
         :type type: int
@@ -240,7 +240,7 @@ class AutoLauchResponseInfo:
     def path(self):
         r"""Gets the path of this AutoLauchResponseInfo.
 
-        自启动项的路径
+        **参数解释**: 自启动项的路径 **取值范围**: 字符长度1-256位 
 
         :return: The path of this AutoLauchResponseInfo.
         :rtype: str
@@ -251,7 +251,7 @@ class AutoLauchResponseInfo:
     def path(self, path):
         r"""Sets the path of this AutoLauchResponseInfo.
 
-        自启动项的路径
+        **参数解释**: 自启动项的路径 **取值范围**: 字符长度1-256位 
 
         :param path: The path of this AutoLauchResponseInfo.
         :type path: str
@@ -262,7 +262,7 @@ class AutoLauchResponseInfo:
     def hash(self):
         r"""Gets the hash of this AutoLauchResponseInfo.
 
-        采用sha256算法生成的文件hash值
+        **参数解释**: 采用sha256算法生成的文件hash值 **取值范围**: 字符长度1-128位 
 
         :return: The hash of this AutoLauchResponseInfo.
         :rtype: str
@@ -273,7 +273,7 @@ class AutoLauchResponseInfo:
     def hash(self, hash):
         r"""Sets the hash of this AutoLauchResponseInfo.
 
-        采用sha256算法生成的文件hash值
+        **参数解释**: 采用sha256算法生成的文件hash值 **取值范围**: 字符长度1-128位 
 
         :param hash: The hash of this AutoLauchResponseInfo.
         :type hash: str
@@ -284,7 +284,7 @@ class AutoLauchResponseInfo:
     def run_user(self):
         r"""Gets the run_user of this AutoLauchResponseInfo.
 
-        运行用户
+        **参数解释**: 运行用户 **取值范围**: 字符长度1-128位 
 
         :return: The run_user of this AutoLauchResponseInfo.
         :rtype: str
@@ -295,7 +295,7 @@ class AutoLauchResponseInfo:
     def run_user(self, run_user):
         r"""Sets the run_user of this AutoLauchResponseInfo.
 
-        运行用户
+        **参数解释**: 运行用户 **取值范围**: 字符长度1-128位 
 
         :param run_user: The run_user of this AutoLauchResponseInfo.
         :type run_user: str
@@ -306,7 +306,7 @@ class AutoLauchResponseInfo:
     def recent_scan_time(self):
         r"""Gets the recent_scan_time of this AutoLauchResponseInfo.
 
-        最近扫描时间
+        **参数解释**: 最近扫描时间 **取值范围**: 最小值0，最大值9223372036854775807 
 
         :return: The recent_scan_time of this AutoLauchResponseInfo.
         :rtype: int
@@ -317,7 +317,7 @@ class AutoLauchResponseInfo:
     def recent_scan_time(self, recent_scan_time):
         r"""Sets the recent_scan_time of this AutoLauchResponseInfo.
 
-        最近扫描时间
+        **参数解释**: 最近扫描时间 **取值范围**: 最小值0，最大值9223372036854775807 
 
         :param recent_scan_time: The recent_scan_time of this AutoLauchResponseInfo.
         :type recent_scan_time: int

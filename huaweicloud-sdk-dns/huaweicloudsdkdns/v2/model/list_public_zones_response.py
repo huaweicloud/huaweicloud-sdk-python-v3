@@ -36,7 +36,7 @@ class ListPublicZonesResponse(SdkResponse):
 
         :param links: 
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`
-        :param zones: 查询公网域名的列表响应。
+        :param zones: **参数解释：** 查询公网域名的列表响应。 **取值范围：** 不涉及。
         :type zones: list[:class:`huaweicloudsdkdns.v2.PublicZoneResp`]
         :param metadata: 
         :type metadata: :class:`huaweicloudsdkdns.v2.Metadata`
@@ -78,7 +78,7 @@ class ListPublicZonesResponse(SdkResponse):
     def zones(self):
         r"""Gets the zones of this ListPublicZonesResponse.
 
-        查询公网域名的列表响应。
+        **参数解释：** 查询公网域名的列表响应。 **取值范围：** 不涉及。
 
         :return: The zones of this ListPublicZonesResponse.
         :rtype: list[:class:`huaweicloudsdkdns.v2.PublicZoneResp`]
@@ -89,7 +89,7 @@ class ListPublicZonesResponse(SdkResponse):
     def zones(self, zones):
         r"""Sets the zones of this ListPublicZonesResponse.
 
-        查询公网域名的列表响应。
+        **参数解释：** 查询公网域名的列表响应。 **取值范围：** 不涉及。
 
         :param zones: The zones of this ListPublicZonesResponse.
         :type zones: list[:class:`huaweicloudsdkdns.v2.PublicZoneResp`]

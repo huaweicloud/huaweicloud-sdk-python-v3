@@ -37,15 +37,15 @@ class BatchUpdateRecordSet:
 
         The model defined in huaweicloud sdk
 
-        :param id: 记录集资源ID。
+        :param id: **参数解释：** 记录集ID。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type id: str
-        :param description: 记录集资源描述。
+        :param description: **参数解释：** 记录集的描述信息。 **约束限制：** 不涉及。 **取值范围：** 长度不超过255个字符。 **默认取值：** 不涉及。
         :type description: str
-        :param ttl: 记录集的有效缓存时间，以秒为单位。 取值范围：300-2147483647。 默认值为300s。
+        :param ttl: **参数解释：** 记录集的有效缓存时间，以秒为单位。 **约束限制：** 不涉及。 **取值范围：** 1~2147483647。 **默认取值：** 300
         :type ttl: int
-        :param weight: 解析记录的权重，默认为null。 当weight&#x3D;null时，表示该解析记录不设置权重。 当weight&#x3D;0，表示备用域名解析记录。 当weight&gt;0，表示主用域名解析记录。 取值范围：0~100 在相同域名、类型、线路下的解析记录，规则如下： 全部设置权重，或全部不设置权重。 当不设置权重时，只能创建一个解析记录。 当设置权重时，最多能创建20个解析记录。
+        :param weight: **参数解释：** 解析记录的权重。 **约束限制：** 在相同域名、类型、线路下的解析记录，规则如下： - 全部设置权重，或全部不设置权重。 - 当不设置权重时，只能创建一个解析记录。 - 当设置权重时，最多能创建20个解析记录。  **取值范围：** 0~1000。 - 当weight&#x3D;null时，表示该解析记录不设置权重。 - 当weight&#x3D;0，表示备用域名解析记录。 - 当weight&gt;0，表示主用域名解析记录。  **默认取值：** null。
         :type weight: int
-        :param records: 解析记录的值。不同类型解析记录对应的值的规则不同。
+        :param records: **参数解释：** 解析记录的值。不同类型解析记录对应的值的规则不同。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type records: list[str]
         """
         
@@ -71,7 +71,7 @@ class BatchUpdateRecordSet:
     def id(self):
         r"""Gets the id of this BatchUpdateRecordSet.
 
-        记录集资源ID。
+        **参数解释：** 记录集ID。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The id of this BatchUpdateRecordSet.
         :rtype: str
@@ -82,7 +82,7 @@ class BatchUpdateRecordSet:
     def id(self, id):
         r"""Sets the id of this BatchUpdateRecordSet.
 
-        记录集资源ID。
+        **参数解释：** 记录集ID。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param id: The id of this BatchUpdateRecordSet.
         :type id: str
@@ -93,7 +93,7 @@ class BatchUpdateRecordSet:
     def description(self):
         r"""Gets the description of this BatchUpdateRecordSet.
 
-        记录集资源描述。
+        **参数解释：** 记录集的描述信息。 **约束限制：** 不涉及。 **取值范围：** 长度不超过255个字符。 **默认取值：** 不涉及。
 
         :return: The description of this BatchUpdateRecordSet.
         :rtype: str
@@ -104,7 +104,7 @@ class BatchUpdateRecordSet:
     def description(self, description):
         r"""Sets the description of this BatchUpdateRecordSet.
 
-        记录集资源描述。
+        **参数解释：** 记录集的描述信息。 **约束限制：** 不涉及。 **取值范围：** 长度不超过255个字符。 **默认取值：** 不涉及。
 
         :param description: The description of this BatchUpdateRecordSet.
         :type description: str
@@ -115,7 +115,7 @@ class BatchUpdateRecordSet:
     def ttl(self):
         r"""Gets the ttl of this BatchUpdateRecordSet.
 
-        记录集的有效缓存时间，以秒为单位。 取值范围：300-2147483647。 默认值为300s。
+        **参数解释：** 记录集的有效缓存时间，以秒为单位。 **约束限制：** 不涉及。 **取值范围：** 1~2147483647。 **默认取值：** 300
 
         :return: The ttl of this BatchUpdateRecordSet.
         :rtype: int
@@ -126,7 +126,7 @@ class BatchUpdateRecordSet:
     def ttl(self, ttl):
         r"""Sets the ttl of this BatchUpdateRecordSet.
 
-        记录集的有效缓存时间，以秒为单位。 取值范围：300-2147483647。 默认值为300s。
+        **参数解释：** 记录集的有效缓存时间，以秒为单位。 **约束限制：** 不涉及。 **取值范围：** 1~2147483647。 **默认取值：** 300
 
         :param ttl: The ttl of this BatchUpdateRecordSet.
         :type ttl: int
@@ -137,7 +137,7 @@ class BatchUpdateRecordSet:
     def weight(self):
         r"""Gets the weight of this BatchUpdateRecordSet.
 
-        解析记录的权重，默认为null。 当weight=null时，表示该解析记录不设置权重。 当weight=0，表示备用域名解析记录。 当weight>0，表示主用域名解析记录。 取值范围：0~100 在相同域名、类型、线路下的解析记录，规则如下： 全部设置权重，或全部不设置权重。 当不设置权重时，只能创建一个解析记录。 当设置权重时，最多能创建20个解析记录。
+        **参数解释：** 解析记录的权重。 **约束限制：** 在相同域名、类型、线路下的解析记录，规则如下： - 全部设置权重，或全部不设置权重。 - 当不设置权重时，只能创建一个解析记录。 - 当设置权重时，最多能创建20个解析记录。  **取值范围：** 0~1000。 - 当weight=null时，表示该解析记录不设置权重。 - 当weight=0，表示备用域名解析记录。 - 当weight>0，表示主用域名解析记录。  **默认取值：** null。
 
         :return: The weight of this BatchUpdateRecordSet.
         :rtype: int
@@ -148,7 +148,7 @@ class BatchUpdateRecordSet:
     def weight(self, weight):
         r"""Sets the weight of this BatchUpdateRecordSet.
 
-        解析记录的权重，默认为null。 当weight=null时，表示该解析记录不设置权重。 当weight=0，表示备用域名解析记录。 当weight>0，表示主用域名解析记录。 取值范围：0~100 在相同域名、类型、线路下的解析记录，规则如下： 全部设置权重，或全部不设置权重。 当不设置权重时，只能创建一个解析记录。 当设置权重时，最多能创建20个解析记录。
+        **参数解释：** 解析记录的权重。 **约束限制：** 在相同域名、类型、线路下的解析记录，规则如下： - 全部设置权重，或全部不设置权重。 - 当不设置权重时，只能创建一个解析记录。 - 当设置权重时，最多能创建20个解析记录。  **取值范围：** 0~1000。 - 当weight=null时，表示该解析记录不设置权重。 - 当weight=0，表示备用域名解析记录。 - 当weight>0，表示主用域名解析记录。  **默认取值：** null。
 
         :param weight: The weight of this BatchUpdateRecordSet.
         :type weight: int
@@ -159,7 +159,7 @@ class BatchUpdateRecordSet:
     def records(self):
         r"""Gets the records of this BatchUpdateRecordSet.
 
-        解析记录的值。不同类型解析记录对应的值的规则不同。
+        **参数解释：** 解析记录的值。不同类型解析记录对应的值的规则不同。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The records of this BatchUpdateRecordSet.
         :rtype: list[str]
@@ -170,7 +170,7 @@ class BatchUpdateRecordSet:
     def records(self, records):
         r"""Sets the records of this BatchUpdateRecordSet.
 
-        解析记录的值。不同类型解析记录对应的值的规则不同。
+        **参数解释：** 解析记录的值。不同类型解析记录对应的值的规则不同。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param records: The records of this BatchUpdateRecordSet.
         :type records: list[str]

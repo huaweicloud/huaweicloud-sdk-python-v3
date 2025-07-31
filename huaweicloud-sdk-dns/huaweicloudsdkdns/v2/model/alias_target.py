@@ -31,9 +31,9 @@ class AliasTarget:
 
         The model defined in huaweicloud sdk
 
-        :param resource_type: 资源服务类型，支持别名记录的服务。  取值范围： cloudsite：企业门户 waf：Web应用防火墙
+        :param resource_type: **参数解释：** 资源服务类型，支持别名记录的服务。 **约束限制：** 不涉及。 **取值范围：** - cloudsite：企业门户 - waf：Web应用防火墙  **默认取值：** 不涉及。
         :type resource_type: str
-        :param resource_domain_name: 对应服务下的域名，由各服务提供。
+        :param resource_domain_name: **参数解释：** 对应服务下的域名，由各服务提供。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type resource_domain_name: str
         """
         
@@ -52,7 +52,7 @@ class AliasTarget:
     def resource_type(self):
         r"""Gets the resource_type of this AliasTarget.
 
-        资源服务类型，支持别名记录的服务。  取值范围： cloudsite：企业门户 waf：Web应用防火墙
+        **参数解释：** 资源服务类型，支持别名记录的服务。 **约束限制：** 不涉及。 **取值范围：** - cloudsite：企业门户 - waf：Web应用防火墙  **默认取值：** 不涉及。
 
         :return: The resource_type of this AliasTarget.
         :rtype: str
@@ -63,7 +63,7 @@ class AliasTarget:
     def resource_type(self, resource_type):
         r"""Sets the resource_type of this AliasTarget.
 
-        资源服务类型，支持别名记录的服务。  取值范围： cloudsite：企业门户 waf：Web应用防火墙
+        **参数解释：** 资源服务类型，支持别名记录的服务。 **约束限制：** 不涉及。 **取值范围：** - cloudsite：企业门户 - waf：Web应用防火墙  **默认取值：** 不涉及。
 
         :param resource_type: The resource_type of this AliasTarget.
         :type resource_type: str
@@ -74,7 +74,7 @@ class AliasTarget:
     def resource_domain_name(self):
         r"""Gets the resource_domain_name of this AliasTarget.
 
-        对应服务下的域名，由各服务提供。
+        **参数解释：** 对应服务下的域名，由各服务提供。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The resource_domain_name of this AliasTarget.
         :rtype: str
@@ -85,7 +85,7 @@ class AliasTarget:
     def resource_domain_name(self, resource_domain_name):
         r"""Sets the resource_domain_name of this AliasTarget.
 
-        对应服务下的域名，由各服务提供。
+        **参数解释：** 对应服务下的域名，由各服务提供。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param resource_domain_name: The resource_domain_name of this AliasTarget.
         :type resource_domain_name: str

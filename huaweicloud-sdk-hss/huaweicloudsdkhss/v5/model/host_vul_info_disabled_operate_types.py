@@ -31,9 +31,9 @@ class HostVulInfoDisabledOperateTypes:
 
         The model defined in huaweicloud sdk
 
-        :param operate_type: 操作类型 - ignore : 忽略 - not_ignore : 取消忽略 - immediate_repair : 修复 - manual_repair: 人工修复 - verify : 验证 - add_to_whitelist : 加入白名单
+        :param operate_type: **参数解释**: 操作类型 **取值范围**: - ignore           : 忽略 - not_ignore       : 取消忽略 - immediate_repair : 修复 - manual_repair    : 人工修复 - verify           : 验证 - add_to_whitelist : 加入白名单 
         :type operate_type: str
-        :param reason: 不可进行操作的原因
+        :param reason: **参数解释**: 不可进行操作的原因 **取值范围**: 字符范围0-512位 
         :type reason: str
         """
         
@@ -52,7 +52,7 @@ class HostVulInfoDisabledOperateTypes:
     def operate_type(self):
         r"""Gets the operate_type of this HostVulInfoDisabledOperateTypes.
 
-        操作类型 - ignore : 忽略 - not_ignore : 取消忽略 - immediate_repair : 修复 - manual_repair: 人工修复 - verify : 验证 - add_to_whitelist : 加入白名单
+        **参数解释**: 操作类型 **取值范围**: - ignore           : 忽略 - not_ignore       : 取消忽略 - immediate_repair : 修复 - manual_repair    : 人工修复 - verify           : 验证 - add_to_whitelist : 加入白名单 
 
         :return: The operate_type of this HostVulInfoDisabledOperateTypes.
         :rtype: str
@@ -63,7 +63,7 @@ class HostVulInfoDisabledOperateTypes:
     def operate_type(self, operate_type):
         r"""Sets the operate_type of this HostVulInfoDisabledOperateTypes.
 
-        操作类型 - ignore : 忽略 - not_ignore : 取消忽略 - immediate_repair : 修复 - manual_repair: 人工修复 - verify : 验证 - add_to_whitelist : 加入白名单
+        **参数解释**: 操作类型 **取值范围**: - ignore           : 忽略 - not_ignore       : 取消忽略 - immediate_repair : 修复 - manual_repair    : 人工修复 - verify           : 验证 - add_to_whitelist : 加入白名单 
 
         :param operate_type: The operate_type of this HostVulInfoDisabledOperateTypes.
         :type operate_type: str
@@ -74,7 +74,7 @@ class HostVulInfoDisabledOperateTypes:
     def reason(self):
         r"""Gets the reason of this HostVulInfoDisabledOperateTypes.
 
-        不可进行操作的原因
+        **参数解释**: 不可进行操作的原因 **取值范围**: 字符范围0-512位 
 
         :return: The reason of this HostVulInfoDisabledOperateTypes.
         :rtype: str
@@ -85,7 +85,7 @@ class HostVulInfoDisabledOperateTypes:
     def reason(self, reason):
         r"""Sets the reason of this HostVulInfoDisabledOperateTypes.
 
-        不可进行操作的原因
+        **参数解释**: 不可进行操作的原因 **取值范围**: 字符范围0-512位 
 
         :param reason: The reason of this HostVulInfoDisabledOperateTypes.
         :type reason: str

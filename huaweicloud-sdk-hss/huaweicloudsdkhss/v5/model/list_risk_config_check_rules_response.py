@@ -32,9 +32,9 @@ class ListRiskConfigCheckRulesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total_num: 风险总数
+        :param total_num: **参数解释**: 风险总数 **取值范围**: 不涉及 
         :type total_num: int
-        :param data_list: 数据列表
+        :param data_list: **参数解释**: 数据列表 **取值范围**: 不涉及 
         :type data_list: list[:class:`huaweicloudsdkhss.v5.CheckRuleRiskInfoResponseInfo`]
         """
         
@@ -53,7 +53,7 @@ class ListRiskConfigCheckRulesResponse(SdkResponse):
     def total_num(self):
         r"""Gets the total_num of this ListRiskConfigCheckRulesResponse.
 
-        风险总数
+        **参数解释**: 风险总数 **取值范围**: 不涉及 
 
         :return: The total_num of this ListRiskConfigCheckRulesResponse.
         :rtype: int
@@ -64,7 +64,7 @@ class ListRiskConfigCheckRulesResponse(SdkResponse):
     def total_num(self, total_num):
         r"""Sets the total_num of this ListRiskConfigCheckRulesResponse.
 
-        风险总数
+        **参数解释**: 风险总数 **取值范围**: 不涉及 
 
         :param total_num: The total_num of this ListRiskConfigCheckRulesResponse.
         :type total_num: int
@@ -75,7 +75,7 @@ class ListRiskConfigCheckRulesResponse(SdkResponse):
     def data_list(self):
         r"""Gets the data_list of this ListRiskConfigCheckRulesResponse.
 
-        数据列表
+        **参数解释**: 数据列表 **取值范围**: 不涉及 
 
         :return: The data_list of this ListRiskConfigCheckRulesResponse.
         :rtype: list[:class:`huaweicloudsdkhss.v5.CheckRuleRiskInfoResponseInfo`]
@@ -86,7 +86,7 @@ class ListRiskConfigCheckRulesResponse(SdkResponse):
     def data_list(self, data_list):
         r"""Sets the data_list of this ListRiskConfigCheckRulesResponse.
 
-        数据列表
+        **参数解释**: 数据列表 **取值范围**: 不涉及 
 
         :param data_list: The data_list of this ListRiskConfigCheckRulesResponse.
         :type data_list: list[:class:`huaweicloudsdkhss.v5.CheckRuleRiskInfoResponseInfo`]

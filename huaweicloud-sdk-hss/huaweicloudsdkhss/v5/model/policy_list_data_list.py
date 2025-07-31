@@ -45,7 +45,7 @@ class PolicyListDataList:
         :type policy_name: str
         :param policy_id: 策略ID
         :type policy_id: str
-        :param host_num: 总数
+        :param host_num: **参数解释**: 总数 **取值范围**: 最小值0，最大值2147483647 
         :type host_num: int
         :param is_default: 是否默认
         :type is_default: bool
@@ -131,7 +131,7 @@ class PolicyListDataList:
     def host_num(self):
         r"""Gets the host_num of this PolicyListDataList.
 
-        总数
+        **参数解释**: 总数 **取值范围**: 最小值0，最大值2147483647 
 
         :return: The host_num of this PolicyListDataList.
         :rtype: int
@@ -142,7 +142,7 @@ class PolicyListDataList:
     def host_num(self, host_num):
         r"""Sets the host_num of this PolicyListDataList.
 
-        总数
+        **参数解释**: 总数 **取值范围**: 最小值0，最大值2147483647 
 
         :param host_num: The host_num of this PolicyListDataList.
         :type host_num: int

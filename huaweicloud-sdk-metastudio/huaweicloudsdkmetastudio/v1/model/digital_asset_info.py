@@ -27,13 +27,15 @@ class DigitalAssetInfo:
         'asset_type': 'str',
         'asset_state': 'str',
         'fail_type': 'str',
+        'block_reason_code': 'str',
         'reason': 'str',
         'tags': 'list[str]',
         'asset_extra_meta': 'AssetExtraMeta',
         'system_properties': 'list[SystemProperty]',
         'files': 'list[AssetFileInfo]',
         'asset_order': 'int',
-        'supported_service': 'list[SupportedServiceEnum]'
+        'supported_service': 'list[SupportedServiceEnum]',
+        'auto_operation_config': 'list[AutoOperationConfig]'
     }
 
     attribute_map = {
@@ -47,16 +49,18 @@ class DigitalAssetInfo:
         'asset_type': 'asset_type',
         'asset_state': 'asset_state',
         'fail_type': 'fail_type',
+        'block_reason_code': 'block_reason_code',
         'reason': 'reason',
         'tags': 'tags',
         'asset_extra_meta': 'asset_extra_meta',
         'system_properties': 'system_properties',
         'files': 'files',
         'asset_order': 'asset_order',
-        'supported_service': 'supported_service'
+        'supported_service': 'supported_service',
+        'auto_operation_config': 'auto_operation_config'
     }
 
-    def __init__(self, project_id=None, asset_id=None, asset_name=None, asset_description=None, app_user_id=None, create_time=None, update_time=None, asset_type=None, asset_state=None, fail_type=None, reason=None, tags=None, asset_extra_meta=None, system_properties=None, files=None, asset_order=None, supported_service=None):
+    def __init__(self, project_id=None, asset_id=None, asset_name=None, asset_description=None, app_user_id=None, create_time=None, update_time=None, asset_type=None, asset_state=None, fail_type=None, block_reason_code=None, reason=None, tags=None, asset_extra_meta=None, system_properties=None, files=None, asset_order=None, supported_service=None, auto_operation_config=None):
         r"""DigitalAssetInfo
 
         The model defined in huaweicloud sdk
@@ -81,6 +85,8 @@ class DigitalAssetInfo:
         :type asset_state: str
         :param fail_type: 失败原因。 * AUTOMATIC_REVIEW_REJECT：自动审核失败 * MANUAL_REVIEW_REJECT：人工审核失败
         :type fail_type: str
+        :param block_reason_code: 冻结原因编号。
+        :type block_reason_code: str
         :param reason: 冻结/解冻/失败 原因。
         :type reason: str
         :param tags: 标签列表。 &gt; 分身形象系统资产的tag定义如下： &gt; - 行业：NEWS,BUSINESS,E-COMMERCE,MARKETING,KNOWLEDGE,EDUCATION,SPORTS &gt; - 性别：MALE,FEMALE &gt; - 姿势：FULL-BODY,HALF-BODY,STANDING,SITTING,WALKING &gt; - 区域：ASIAN,WESTERN,MIDDLE-EASTERNER,AFRICAN,LATINO
@@ -95,6 +101,8 @@ class DigitalAssetInfo:
         :type asset_order: int
         :param supported_service: 支持的业务类型。： * VIDEO_2D：分身数字人视频制作 * LIVE_2D：分身数字人直播 * CHAT_2D：分身数字人智能交互
         :type supported_service: list[:class:`huaweicloudsdkmetastudio.v1.SupportedServiceEnum`]
+        :param auto_operation_config: 资产自动处理任务。
+        :type auto_operation_config: list[:class:`huaweicloudsdkmetastudio.v1.AutoOperationConfig`]
         """
         
         
@@ -109,6 +117,7 @@ class DigitalAssetInfo:
         self._asset_type = None
         self._asset_state = None
         self._fail_type = None
+        self._block_reason_code = None
         self._reason = None
         self._tags = None
         self._asset_extra_meta = None
@@ -116,6 +125,7 @@ class DigitalAssetInfo:
         self._files = None
         self._asset_order = None
         self._supported_service = None
+        self._auto_operation_config = None
         self.discriminator = None
 
         if project_id is not None:
@@ -138,6 +148,8 @@ class DigitalAssetInfo:
             self.asset_state = asset_state
         if fail_type is not None:
             self.fail_type = fail_type
+        if block_reason_code is not None:
+            self.block_reason_code = block_reason_code
         if reason is not None:
             self.reason = reason
         if tags is not None:
@@ -152,6 +164,8 @@ class DigitalAssetInfo:
             self.asset_order = asset_order
         if supported_service is not None:
             self.supported_service = supported_service
+        if auto_operation_config is not None:
+            self.auto_operation_config = auto_operation_config
 
     @property
     def project_id(self):
@@ -374,6 +388,28 @@ class DigitalAssetInfo:
         self._fail_type = fail_type
 
     @property
+    def block_reason_code(self):
+        r"""Gets the block_reason_code of this DigitalAssetInfo.
+
+        冻结原因编号。
+
+        :return: The block_reason_code of this DigitalAssetInfo.
+        :rtype: str
+        """
+        return self._block_reason_code
+
+    @block_reason_code.setter
+    def block_reason_code(self, block_reason_code):
+        r"""Sets the block_reason_code of this DigitalAssetInfo.
+
+        冻结原因编号。
+
+        :param block_reason_code: The block_reason_code of this DigitalAssetInfo.
+        :type block_reason_code: str
+        """
+        self._block_reason_code = block_reason_code
+
+    @property
     def reason(self):
         r"""Gets the reason of this DigitalAssetInfo.
 
@@ -522,6 +558,28 @@ class DigitalAssetInfo:
         :type supported_service: list[:class:`huaweicloudsdkmetastudio.v1.SupportedServiceEnum`]
         """
         self._supported_service = supported_service
+
+    @property
+    def auto_operation_config(self):
+        r"""Gets the auto_operation_config of this DigitalAssetInfo.
+
+        资产自动处理任务。
+
+        :return: The auto_operation_config of this DigitalAssetInfo.
+        :rtype: list[:class:`huaweicloudsdkmetastudio.v1.AutoOperationConfig`]
+        """
+        return self._auto_operation_config
+
+    @auto_operation_config.setter
+    def auto_operation_config(self, auto_operation_config):
+        r"""Sets the auto_operation_config of this DigitalAssetInfo.
+
+        资产自动处理任务。
+
+        :param auto_operation_config: The auto_operation_config of this DigitalAssetInfo.
+        :type auto_operation_config: list[:class:`huaweicloudsdkmetastudio.v1.AutoOperationConfig`]
+        """
+        self._auto_operation_config = auto_operation_config
 
     def to_dict(self):
         """Returns the model properties as a dict"""

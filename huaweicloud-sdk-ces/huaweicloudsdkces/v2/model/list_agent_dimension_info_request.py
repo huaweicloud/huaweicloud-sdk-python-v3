@@ -37,15 +37,15 @@ class ListAgentDimensionInfoRequest:
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: 资源ID，如：4270ff17-aba3-4138-89fa-820594c39755。
+        :param instance_id: **参数描述**： 资源ID，如：4270ff17-aba3-4138-89fa-820594c39755。 **约束限制**： 不涉及。 **取值范围**： 字符串长度为36。 **默认取值**： 不涉及。 
         :type instance_id: str
-        :param dim_name: 维度名称，枚举类型，类型有：   mount_point：挂载点,   disk：磁盘,   proc：进程,   gpu：显卡,   raid: RAID控制器,
+        :param dim_name: **参数描述**： 维度名称。 **约束限制**： 不涉及。 **取值范围**： 枚举类型，mount_point:挂载点，disk:磁盘，proc:进程，gpu:显卡，raid:RAID控制器。 **默认取值**： 不涉及。 
         :type dim_name: str
-        :param dim_value: 维度值，32位字符串，如：2e84018fc8b4484b94e89aae212fe615。
+        :param dim_value: **参数描述**： 维度值。 **约束限制**： 不涉及。  **取值范围**： 32位字符串，如：2e84018fc8b4484b94e89aae212fe615。 **默认取值**： 不涉及。 
         :type dim_value: str
-        :param offset: 分页偏移量
+        :param offset: **参数描述**： 分页偏移量。 **约束限制**： 不涉及。 **取值范围**： 最小值为0，最大值为2147483647。 **默认取值**： 0 
         :type offset: int
-        :param limit: 分页大小
+        :param limit: **参数描述**： 分页大小。 **约束限制**： 不涉及。 **取值范围**： 最小值为1，最大值为1000。 **默认取值**： 1000 
         :type limit: int
         """
         
@@ -71,7 +71,7 @@ class ListAgentDimensionInfoRequest:
     def instance_id(self):
         r"""Gets the instance_id of this ListAgentDimensionInfoRequest.
 
-        资源ID，如：4270ff17-aba3-4138-89fa-820594c39755。
+        **参数描述**： 资源ID，如：4270ff17-aba3-4138-89fa-820594c39755。 **约束限制**： 不涉及。 **取值范围**： 字符串长度为36。 **默认取值**： 不涉及。 
 
         :return: The instance_id of this ListAgentDimensionInfoRequest.
         :rtype: str
@@ -82,7 +82,7 @@ class ListAgentDimensionInfoRequest:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this ListAgentDimensionInfoRequest.
 
-        资源ID，如：4270ff17-aba3-4138-89fa-820594c39755。
+        **参数描述**： 资源ID，如：4270ff17-aba3-4138-89fa-820594c39755。 **约束限制**： 不涉及。 **取值范围**： 字符串长度为36。 **默认取值**： 不涉及。 
 
         :param instance_id: The instance_id of this ListAgentDimensionInfoRequest.
         :type instance_id: str
@@ -93,7 +93,7 @@ class ListAgentDimensionInfoRequest:
     def dim_name(self):
         r"""Gets the dim_name of this ListAgentDimensionInfoRequest.
 
-        维度名称，枚举类型，类型有：   mount_point：挂载点,   disk：磁盘,   proc：进程,   gpu：显卡,   raid: RAID控制器,
+        **参数描述**： 维度名称。 **约束限制**： 不涉及。 **取值范围**： 枚举类型，mount_point:挂载点，disk:磁盘，proc:进程，gpu:显卡，raid:RAID控制器。 **默认取值**： 不涉及。 
 
         :return: The dim_name of this ListAgentDimensionInfoRequest.
         :rtype: str
@@ -104,7 +104,7 @@ class ListAgentDimensionInfoRequest:
     def dim_name(self, dim_name):
         r"""Sets the dim_name of this ListAgentDimensionInfoRequest.
 
-        维度名称，枚举类型，类型有：   mount_point：挂载点,   disk：磁盘,   proc：进程,   gpu：显卡,   raid: RAID控制器,
+        **参数描述**： 维度名称。 **约束限制**： 不涉及。 **取值范围**： 枚举类型，mount_point:挂载点，disk:磁盘，proc:进程，gpu:显卡，raid:RAID控制器。 **默认取值**： 不涉及。 
 
         :param dim_name: The dim_name of this ListAgentDimensionInfoRequest.
         :type dim_name: str
@@ -115,7 +115,7 @@ class ListAgentDimensionInfoRequest:
     def dim_value(self):
         r"""Gets the dim_value of this ListAgentDimensionInfoRequest.
 
-        维度值，32位字符串，如：2e84018fc8b4484b94e89aae212fe615。
+        **参数描述**： 维度值。 **约束限制**： 不涉及。  **取值范围**： 32位字符串，如：2e84018fc8b4484b94e89aae212fe615。 **默认取值**： 不涉及。 
 
         :return: The dim_value of this ListAgentDimensionInfoRequest.
         :rtype: str
@@ -126,7 +126,7 @@ class ListAgentDimensionInfoRequest:
     def dim_value(self, dim_value):
         r"""Sets the dim_value of this ListAgentDimensionInfoRequest.
 
-        维度值，32位字符串，如：2e84018fc8b4484b94e89aae212fe615。
+        **参数描述**： 维度值。 **约束限制**： 不涉及。  **取值范围**： 32位字符串，如：2e84018fc8b4484b94e89aae212fe615。 **默认取值**： 不涉及。 
 
         :param dim_value: The dim_value of this ListAgentDimensionInfoRequest.
         :type dim_value: str
@@ -137,7 +137,7 @@ class ListAgentDimensionInfoRequest:
     def offset(self):
         r"""Gets the offset of this ListAgentDimensionInfoRequest.
 
-        分页偏移量
+        **参数描述**： 分页偏移量。 **约束限制**： 不涉及。 **取值范围**： 最小值为0，最大值为2147483647。 **默认取值**： 0 
 
         :return: The offset of this ListAgentDimensionInfoRequest.
         :rtype: int
@@ -148,7 +148,7 @@ class ListAgentDimensionInfoRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListAgentDimensionInfoRequest.
 
-        分页偏移量
+        **参数描述**： 分页偏移量。 **约束限制**： 不涉及。 **取值范围**： 最小值为0，最大值为2147483647。 **默认取值**： 0 
 
         :param offset: The offset of this ListAgentDimensionInfoRequest.
         :type offset: int
@@ -159,7 +159,7 @@ class ListAgentDimensionInfoRequest:
     def limit(self):
         r"""Gets the limit of this ListAgentDimensionInfoRequest.
 
-        分页大小
+        **参数描述**： 分页大小。 **约束限制**： 不涉及。 **取值范围**： 最小值为1，最大值为1000。 **默认取值**： 1000 
 
         :return: The limit of this ListAgentDimensionInfoRequest.
         :rtype: int
@@ -170,7 +170,7 @@ class ListAgentDimensionInfoRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListAgentDimensionInfoRequest.
 
-        分页大小
+        **参数描述**： 分页大小。 **约束限制**： 不涉及。 **取值范围**： 最小值为1，最大值为1000。 **默认取值**： 1000 
 
         :param limit: The limit of this ListAgentDimensionInfoRequest.
         :type limit: int

@@ -31,9 +31,9 @@ class ShowRecordSetRequest:
 
         The model defined in huaweicloud sdk
 
-        :param zone_id: 域名ID。
+        :param zone_id: **参数解释：** 域名ID。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type zone_id: str
-        :param recordset_id: 记录集ID。
+        :param recordset_id: **参数解释：** 记录集ID。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type recordset_id: str
         """
         
@@ -50,7 +50,7 @@ class ShowRecordSetRequest:
     def zone_id(self):
         r"""Gets the zone_id of this ShowRecordSetRequest.
 
-        域名ID。
+        **参数解释：** 域名ID。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The zone_id of this ShowRecordSetRequest.
         :rtype: str
@@ -61,7 +61,7 @@ class ShowRecordSetRequest:
     def zone_id(self, zone_id):
         r"""Sets the zone_id of this ShowRecordSetRequest.
 
-        域名ID。
+        **参数解释：** 域名ID。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param zone_id: The zone_id of this ShowRecordSetRequest.
         :type zone_id: str
@@ -72,7 +72,7 @@ class ShowRecordSetRequest:
     def recordset_id(self):
         r"""Gets the recordset_id of this ShowRecordSetRequest.
 
-        记录集ID。
+        **参数解释：** 记录集ID。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The recordset_id of this ShowRecordSetRequest.
         :rtype: str
@@ -83,7 +83,7 @@ class ShowRecordSetRequest:
     def recordset_id(self, recordset_id):
         r"""Sets the recordset_id of this ShowRecordSetRequest.
 
-        记录集ID。
+        **参数解释：** 记录集ID。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param recordset_id: The recordset_id of this ShowRecordSetRequest.
         :type recordset_id: str

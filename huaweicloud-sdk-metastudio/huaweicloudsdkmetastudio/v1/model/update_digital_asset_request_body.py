@@ -27,7 +27,8 @@ class UpdateDigitalAssetRequestBody:
         'system_properties': 'list[SystemProperty]',
         'shared_config': 'AssetSharedConfig',
         'asset_order': 'int',
-        'supported_service': 'list[SupportedServiceEnum]'
+        'supported_service': 'list[SupportedServiceEnum]',
+        'auto_operation_config': 'list[AutoOperationConfig]'
     }
 
     attribute_map = {
@@ -41,10 +42,11 @@ class UpdateDigitalAssetRequestBody:
         'system_properties': 'system_properties',
         'shared_config': 'shared_config',
         'asset_order': 'asset_order',
-        'supported_service': 'supported_service'
+        'supported_service': 'supported_service',
+        'auto_operation_config': 'auto_operation_config'
     }
 
-    def __init__(self, asset_name=None, asset_description=None, asset_type=None, asset_state=None, review_config=None, tags=None, asset_extra_meta=None, system_properties=None, shared_config=None, asset_order=None, supported_service=None):
+    def __init__(self, asset_name=None, asset_description=None, asset_type=None, asset_state=None, review_config=None, tags=None, asset_extra_meta=None, system_properties=None, shared_config=None, asset_order=None, supported_service=None, auto_operation_config=None):
         r"""UpdateDigitalAssetRequestBody
 
         The model defined in huaweicloud sdk
@@ -71,6 +73,8 @@ class UpdateDigitalAssetRequestBody:
         :type asset_order: int
         :param supported_service: 支持的业务类型。： * VIDEO_2D：分身数字人视频制作 * LIVE_2D：分身数字人直播 * CHAT_2D：分身数字人智能交互
         :type supported_service: list[:class:`huaweicloudsdkmetastudio.v1.SupportedServiceEnum`]
+        :param auto_operation_config: 资产自动处理任务。
+        :type auto_operation_config: list[:class:`huaweicloudsdkmetastudio.v1.AutoOperationConfig`]
         """
         
         
@@ -86,6 +90,7 @@ class UpdateDigitalAssetRequestBody:
         self._shared_config = None
         self._asset_order = None
         self._supported_service = None
+        self._auto_operation_config = None
         self.discriminator = None
 
         if asset_name is not None:
@@ -110,6 +115,8 @@ class UpdateDigitalAssetRequestBody:
             self.asset_order = asset_order
         if supported_service is not None:
             self.supported_service = supported_service
+        if auto_operation_config is not None:
+            self.auto_operation_config = auto_operation_config
 
     @property
     def asset_name(self):
@@ -340,6 +347,28 @@ class UpdateDigitalAssetRequestBody:
         :type supported_service: list[:class:`huaweicloudsdkmetastudio.v1.SupportedServiceEnum`]
         """
         self._supported_service = supported_service
+
+    @property
+    def auto_operation_config(self):
+        r"""Gets the auto_operation_config of this UpdateDigitalAssetRequestBody.
+
+        资产自动处理任务。
+
+        :return: The auto_operation_config of this UpdateDigitalAssetRequestBody.
+        :rtype: list[:class:`huaweicloudsdkmetastudio.v1.AutoOperationConfig`]
+        """
+        return self._auto_operation_config
+
+    @auto_operation_config.setter
+    def auto_operation_config(self, auto_operation_config):
+        r"""Sets the auto_operation_config of this UpdateDigitalAssetRequestBody.
+
+        资产自动处理任务。
+
+        :param auto_operation_config: The auto_operation_config of this UpdateDigitalAssetRequestBody.
+        :type auto_operation_config: list[:class:`huaweicloudsdkmetastudio.v1.AutoOperationConfig`]
+        """
+        self._auto_operation_config = auto_operation_config
 
     def to_dict(self):
         """Returns the model properties as a dict"""

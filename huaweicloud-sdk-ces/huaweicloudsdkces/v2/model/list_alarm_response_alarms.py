@@ -30,6 +30,7 @@ class ListAlarmResponseAlarms:
         'ok_notifications': 'list[Notification]',
         'notification_begin_time': 'str',
         'notification_end_time': 'str',
+        'effective_timezone': 'str',
         'enterprise_project_id': 'str',
         'alarm_template_id': 'str',
         'product_name': 'str',
@@ -50,13 +51,14 @@ class ListAlarmResponseAlarms:
         'ok_notifications': 'ok_notifications',
         'notification_begin_time': 'notification_begin_time',
         'notification_end_time': 'notification_end_time',
+        'effective_timezone': 'effective_timezone',
         'enterprise_project_id': 'enterprise_project_id',
         'alarm_template_id': 'alarm_template_id',
         'product_name': 'product_name',
         'resource_level': 'resource_level'
     }
 
-    def __init__(self, alarm_id=None, name=None, description=None, namespace=None, policies=None, resources=None, type=None, enabled=None, notification_enabled=None, alarm_notifications=None, ok_notifications=None, notification_begin_time=None, notification_end_time=None, enterprise_project_id=None, alarm_template_id=None, product_name=None, resource_level=None):
+    def __init__(self, alarm_id=None, name=None, description=None, namespace=None, policies=None, resources=None, type=None, enabled=None, notification_enabled=None, alarm_notifications=None, ok_notifications=None, notification_begin_time=None, notification_end_time=None, effective_timezone=None, enterprise_project_id=None, alarm_template_id=None, product_name=None, resource_level=None):
         r"""ListAlarmResponseAlarms
 
         The model defined in huaweicloud sdk
@@ -67,7 +69,7 @@ class ListAlarmResponseAlarms:
         :type name: str
         :param description: 告警描述，长度0-256
         :type description: str
-        :param namespace: 查询服务的命名空间，各服务命名空间请参考“[服务维度名称](ces_03_0059.xml)”
+        :param namespace: 查询服务的命名空间，各服务命名空间请参考“[服务命名名称](ces_03_0059.xml)”
         :type namespace: str
         :param policies: 告警策略
         :type policies: list[:class:`huaweicloudsdkces.v2.Policy`]
@@ -87,6 +89,8 @@ class ListAlarmResponseAlarms:
         :type notification_begin_time: str
         :param notification_end_time: 告警通知关闭时间
         :type notification_end_time: str
+        :param effective_timezone: 时区，形如：\&quot;GMT-08:00\&quot;、\&quot;GMT+08:00\&quot;、\&quot;GMT+0:00\&quot;
+        :type effective_timezone: str
         :param enterprise_project_id: 企业项目ID
         :type enterprise_project_id: str
         :param alarm_template_id: 告警规则关联告警模板ID，如果传了，告警规则关联的策略会和告警模板策略联动变化
@@ -112,6 +116,7 @@ class ListAlarmResponseAlarms:
         self._ok_notifications = None
         self._notification_begin_time = None
         self._notification_end_time = None
+        self._effective_timezone = None
         self._enterprise_project_id = None
         self._alarm_template_id = None
         self._product_name = None
@@ -144,6 +149,8 @@ class ListAlarmResponseAlarms:
             self.notification_begin_time = notification_begin_time
         if notification_end_time is not None:
             self.notification_end_time = notification_end_time
+        if effective_timezone is not None:
+            self.effective_timezone = effective_timezone
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
         if alarm_template_id is not None:
@@ -223,7 +230,7 @@ class ListAlarmResponseAlarms:
     def namespace(self):
         r"""Gets the namespace of this ListAlarmResponseAlarms.
 
-        查询服务的命名空间，各服务命名空间请参考“[服务维度名称](ces_03_0059.xml)”
+        查询服务的命名空间，各服务命名空间请参考“[服务命名名称](ces_03_0059.xml)”
 
         :return: The namespace of this ListAlarmResponseAlarms.
         :rtype: str
@@ -234,7 +241,7 @@ class ListAlarmResponseAlarms:
     def namespace(self, namespace):
         r"""Sets the namespace of this ListAlarmResponseAlarms.
 
-        查询服务的命名空间，各服务命名空间请参考“[服务维度名称](ces_03_0059.xml)”
+        查询服务的命名空间，各服务命名空间请参考“[服务命名名称](ces_03_0059.xml)”
 
         :param namespace: The namespace of this ListAlarmResponseAlarms.
         :type namespace: str
@@ -434,6 +441,28 @@ class ListAlarmResponseAlarms:
         :type notification_end_time: str
         """
         self._notification_end_time = notification_end_time
+
+    @property
+    def effective_timezone(self):
+        r"""Gets the effective_timezone of this ListAlarmResponseAlarms.
+
+        时区，形如：\"GMT-08:00\"、\"GMT+08:00\"、\"GMT+0:00\"
+
+        :return: The effective_timezone of this ListAlarmResponseAlarms.
+        :rtype: str
+        """
+        return self._effective_timezone
+
+    @effective_timezone.setter
+    def effective_timezone(self, effective_timezone):
+        r"""Sets the effective_timezone of this ListAlarmResponseAlarms.
+
+        时区，形如：\"GMT-08:00\"、\"GMT+08:00\"、\"GMT+0:00\"
+
+        :param effective_timezone: The effective_timezone of this ListAlarmResponseAlarms.
+        :type effective_timezone: str
+        """
+        self._effective_timezone = effective_timezone
 
     @property
     def enterprise_project_id(self):

@@ -51,25 +51,25 @@ class ListQuotasDetailRequest:
 
         :param region: Region ID
         :type region: str
-        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
+        :param enterprise_project_id: **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
         :type enterprise_project_id: str
-        :param version: 主机开通的版本，包含如下7种输入。   - hss.version.null ：无。   - hss.version.basic ：基础版。   - hss.version.advanced ：专业版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。   - hss.version.container.enterprise：容器版。
+        :param version: **参数解释**： 主机开通的版本 **约束限制**: 不涉及 **取值范围**： 包含如下7种输入。 - hss.version.null ：无。 - hss.version.basic ：基础版。 - hss.version.advanced ：专业版。 - hss.version.enterprise ：企业版。 - hss.version.premium ：旗舰版。 - hss.version.wtp ：网页防篡改版。 - hss.version.container.enterprise：容器版。 **默认取值**: 不涉及
         :type version: str
-        :param category: 类别，包含如下几种：   - host_resource ：HOST_RESOURCE   - container_resource ：CONTAINER_RESOURCE
+        :param category: **参数解释**: 类别 **约束限制**: 不涉及 **取值范围**: 包含如下两种： - host_resource ：HOST_RESOURCE - container_resource ：CONTAINER_RESOURCE **默认取值**: 不涉及
         :type category: str
-        :param quota_status: 配额状态，包含如下几种：   - normal ： QUOTA_STATUS_NORMAL   - expired ：QUOTA_STATUS_EXPIRED   - freeze ：QUOTA_STATUS_FREEZE
+        :param quota_status: **参数解释**: 配额状态 **约束限制**: 不涉及 **取值范围**: 包含如下三种： - normal ： QUOTA_STATUS_NORMAL - expired ：QUOTA_STATUS_EXPIRED - freeze ：QUOTA_STATUS_FREEZE **默认取值**: 不涉及
         :type quota_status: str
-        :param used_status: 使用状态，包含如下几种：   - idle ：USED_STATUS_IDLE   - used ：USED_STATUS_USED
+        :param used_status: **参数解释**: 使用状态 **约束限制**: 不涉及 **取值范围**: 包含如下两种： - idle ：USED_STATUS_IDLE - used ：USED_STATUS_USED **默认取值**: 不涉及
         :type used_status: str
-        :param host_name: 服务器名称
+        :param host_name: **参数解释**: 服务器名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
         :type host_name: str
-        :param resource_id: HSS配额的资源ID
+        :param resource_id: **参数解释** : HSS配额的资源ID **约束限制** : 不涉及 **取值范围** : 字符长度1-128位 **默认取值** : 不涉及 
         :type resource_id: str
-        :param charging_mode: 收费模式，包含如下2种。   - packet_cycle ：包年/包月。   - on_demand ：按需。
+        :param charging_mode: **参数解释**： 收费模式 **约束限制**: 不涉及 **取值范围**: - packet_cycle ：包年/包月。 - on_demand ：按需。 **默认取值**: 不涉及
         :type charging_mode: str
-        :param limit: 每页数量
+        :param limit: **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
         :type limit: int
-        :param offset: 偏移量：指定返回记录的开始位置
+        :param offset: **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 默认为0 
         :type offset: int
         """
         
@@ -137,7 +137,7 @@ class ListQuotasDetailRequest:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this ListQuotasDetailRequest.
 
-        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
+        **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
 
         :return: The enterprise_project_id of this ListQuotasDetailRequest.
         :rtype: str
@@ -148,7 +148,7 @@ class ListQuotasDetailRequest:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this ListQuotasDetailRequest.
 
-        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
+        **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
 
         :param enterprise_project_id: The enterprise_project_id of this ListQuotasDetailRequest.
         :type enterprise_project_id: str
@@ -159,7 +159,7 @@ class ListQuotasDetailRequest:
     def version(self):
         r"""Gets the version of this ListQuotasDetailRequest.
 
-        主机开通的版本，包含如下7种输入。   - hss.version.null ：无。   - hss.version.basic ：基础版。   - hss.version.advanced ：专业版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。   - hss.version.container.enterprise：容器版。
+        **参数解释**： 主机开通的版本 **约束限制**: 不涉及 **取值范围**： 包含如下7种输入。 - hss.version.null ：无。 - hss.version.basic ：基础版。 - hss.version.advanced ：专业版。 - hss.version.enterprise ：企业版。 - hss.version.premium ：旗舰版。 - hss.version.wtp ：网页防篡改版。 - hss.version.container.enterprise：容器版。 **默认取值**: 不涉及
 
         :return: The version of this ListQuotasDetailRequest.
         :rtype: str
@@ -170,7 +170,7 @@ class ListQuotasDetailRequest:
     def version(self, version):
         r"""Sets the version of this ListQuotasDetailRequest.
 
-        主机开通的版本，包含如下7种输入。   - hss.version.null ：无。   - hss.version.basic ：基础版。   - hss.version.advanced ：专业版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。   - hss.version.container.enterprise：容器版。
+        **参数解释**： 主机开通的版本 **约束限制**: 不涉及 **取值范围**： 包含如下7种输入。 - hss.version.null ：无。 - hss.version.basic ：基础版。 - hss.version.advanced ：专业版。 - hss.version.enterprise ：企业版。 - hss.version.premium ：旗舰版。 - hss.version.wtp ：网页防篡改版。 - hss.version.container.enterprise：容器版。 **默认取值**: 不涉及
 
         :param version: The version of this ListQuotasDetailRequest.
         :type version: str
@@ -181,7 +181,7 @@ class ListQuotasDetailRequest:
     def category(self):
         r"""Gets the category of this ListQuotasDetailRequest.
 
-        类别，包含如下几种：   - host_resource ：HOST_RESOURCE   - container_resource ：CONTAINER_RESOURCE
+        **参数解释**: 类别 **约束限制**: 不涉及 **取值范围**: 包含如下两种： - host_resource ：HOST_RESOURCE - container_resource ：CONTAINER_RESOURCE **默认取值**: 不涉及
 
         :return: The category of this ListQuotasDetailRequest.
         :rtype: str
@@ -192,7 +192,7 @@ class ListQuotasDetailRequest:
     def category(self, category):
         r"""Sets the category of this ListQuotasDetailRequest.
 
-        类别，包含如下几种：   - host_resource ：HOST_RESOURCE   - container_resource ：CONTAINER_RESOURCE
+        **参数解释**: 类别 **约束限制**: 不涉及 **取值范围**: 包含如下两种： - host_resource ：HOST_RESOURCE - container_resource ：CONTAINER_RESOURCE **默认取值**: 不涉及
 
         :param category: The category of this ListQuotasDetailRequest.
         :type category: str
@@ -203,7 +203,7 @@ class ListQuotasDetailRequest:
     def quota_status(self):
         r"""Gets the quota_status of this ListQuotasDetailRequest.
 
-        配额状态，包含如下几种：   - normal ： QUOTA_STATUS_NORMAL   - expired ：QUOTA_STATUS_EXPIRED   - freeze ：QUOTA_STATUS_FREEZE
+        **参数解释**: 配额状态 **约束限制**: 不涉及 **取值范围**: 包含如下三种： - normal ： QUOTA_STATUS_NORMAL - expired ：QUOTA_STATUS_EXPIRED - freeze ：QUOTA_STATUS_FREEZE **默认取值**: 不涉及
 
         :return: The quota_status of this ListQuotasDetailRequest.
         :rtype: str
@@ -214,7 +214,7 @@ class ListQuotasDetailRequest:
     def quota_status(self, quota_status):
         r"""Sets the quota_status of this ListQuotasDetailRequest.
 
-        配额状态，包含如下几种：   - normal ： QUOTA_STATUS_NORMAL   - expired ：QUOTA_STATUS_EXPIRED   - freeze ：QUOTA_STATUS_FREEZE
+        **参数解释**: 配额状态 **约束限制**: 不涉及 **取值范围**: 包含如下三种： - normal ： QUOTA_STATUS_NORMAL - expired ：QUOTA_STATUS_EXPIRED - freeze ：QUOTA_STATUS_FREEZE **默认取值**: 不涉及
 
         :param quota_status: The quota_status of this ListQuotasDetailRequest.
         :type quota_status: str
@@ -225,7 +225,7 @@ class ListQuotasDetailRequest:
     def used_status(self):
         r"""Gets the used_status of this ListQuotasDetailRequest.
 
-        使用状态，包含如下几种：   - idle ：USED_STATUS_IDLE   - used ：USED_STATUS_USED
+        **参数解释**: 使用状态 **约束限制**: 不涉及 **取值范围**: 包含如下两种： - idle ：USED_STATUS_IDLE - used ：USED_STATUS_USED **默认取值**: 不涉及
 
         :return: The used_status of this ListQuotasDetailRequest.
         :rtype: str
@@ -236,7 +236,7 @@ class ListQuotasDetailRequest:
     def used_status(self, used_status):
         r"""Sets the used_status of this ListQuotasDetailRequest.
 
-        使用状态，包含如下几种：   - idle ：USED_STATUS_IDLE   - used ：USED_STATUS_USED
+        **参数解释**: 使用状态 **约束限制**: 不涉及 **取值范围**: 包含如下两种： - idle ：USED_STATUS_IDLE - used ：USED_STATUS_USED **默认取值**: 不涉及
 
         :param used_status: The used_status of this ListQuotasDetailRequest.
         :type used_status: str
@@ -247,7 +247,7 @@ class ListQuotasDetailRequest:
     def host_name(self):
         r"""Gets the host_name of this ListQuotasDetailRequest.
 
-        服务器名称
+        **参数解释**: 服务器名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
 
         :return: The host_name of this ListQuotasDetailRequest.
         :rtype: str
@@ -258,7 +258,7 @@ class ListQuotasDetailRequest:
     def host_name(self, host_name):
         r"""Sets the host_name of this ListQuotasDetailRequest.
 
-        服务器名称
+        **参数解释**: 服务器名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
 
         :param host_name: The host_name of this ListQuotasDetailRequest.
         :type host_name: str
@@ -269,7 +269,7 @@ class ListQuotasDetailRequest:
     def resource_id(self):
         r"""Gets the resource_id of this ListQuotasDetailRequest.
 
-        HSS配额的资源ID
+        **参数解释** : HSS配额的资源ID **约束限制** : 不涉及 **取值范围** : 字符长度1-128位 **默认取值** : 不涉及 
 
         :return: The resource_id of this ListQuotasDetailRequest.
         :rtype: str
@@ -280,7 +280,7 @@ class ListQuotasDetailRequest:
     def resource_id(self, resource_id):
         r"""Sets the resource_id of this ListQuotasDetailRequest.
 
-        HSS配额的资源ID
+        **参数解释** : HSS配额的资源ID **约束限制** : 不涉及 **取值范围** : 字符长度1-128位 **默认取值** : 不涉及 
 
         :param resource_id: The resource_id of this ListQuotasDetailRequest.
         :type resource_id: str
@@ -291,7 +291,7 @@ class ListQuotasDetailRequest:
     def charging_mode(self):
         r"""Gets the charging_mode of this ListQuotasDetailRequest.
 
-        收费模式，包含如下2种。   - packet_cycle ：包年/包月。   - on_demand ：按需。
+        **参数解释**： 收费模式 **约束限制**: 不涉及 **取值范围**: - packet_cycle ：包年/包月。 - on_demand ：按需。 **默认取值**: 不涉及
 
         :return: The charging_mode of this ListQuotasDetailRequest.
         :rtype: str
@@ -302,7 +302,7 @@ class ListQuotasDetailRequest:
     def charging_mode(self, charging_mode):
         r"""Sets the charging_mode of this ListQuotasDetailRequest.
 
-        收费模式，包含如下2种。   - packet_cycle ：包年/包月。   - on_demand ：按需。
+        **参数解释**： 收费模式 **约束限制**: 不涉及 **取值范围**: - packet_cycle ：包年/包月。 - on_demand ：按需。 **默认取值**: 不涉及
 
         :param charging_mode: The charging_mode of this ListQuotasDetailRequest.
         :type charging_mode: str
@@ -313,7 +313,7 @@ class ListQuotasDetailRequest:
     def limit(self):
         r"""Gets the limit of this ListQuotasDetailRequest.
 
-        每页数量
+        **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
 
         :return: The limit of this ListQuotasDetailRequest.
         :rtype: int
@@ -324,7 +324,7 @@ class ListQuotasDetailRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListQuotasDetailRequest.
 
-        每页数量
+        **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
 
         :param limit: The limit of this ListQuotasDetailRequest.
         :type limit: int
@@ -335,7 +335,7 @@ class ListQuotasDetailRequest:
     def offset(self):
         r"""Gets the offset of this ListQuotasDetailRequest.
 
-        偏移量：指定返回记录的开始位置
+        **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 默认为0 
 
         :return: The offset of this ListQuotasDetailRequest.
         :rtype: int
@@ -346,7 +346,7 @@ class ListQuotasDetailRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListQuotasDetailRequest.
 
-        偏移量：指定返回记录的开始位置
+        **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 默认为0 
 
         :param offset: The offset of this ListQuotasDetailRequest.
         :type offset: int

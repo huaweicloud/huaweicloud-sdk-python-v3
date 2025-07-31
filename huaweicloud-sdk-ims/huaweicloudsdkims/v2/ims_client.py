@@ -569,6 +569,74 @@ class ImsClient(Client):
 
         return http_info
 
+    def copy_image_in_region_in_safe_mode(self, request):
+        r"""Region内复制镜像（新）
+
+        该接口为扩展接口，主要用于用户将一个已有镜像复制为另一个镜像。复制镜像时，可以更改镜像的加密等属性，以满足不同的场景。
+        该接口为异步接口，返回job_id说明任务下发成功，查询异步任务状态，如果是success说明任务执行成功，如果是failed说明任务执行失败。如何查询异步任务，请参见异步任务查询。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CopyImageInRegionInSafeMode
+        :type request: :class:`huaweicloudsdkims.v2.CopyImageInRegionInSafeModeRequest`
+        :rtype: :class:`huaweicloudsdkims.v2.CopyImageInRegionInSafeModeResponse`
+        """
+        http_info = self._copy_image_in_region_in_safe_mode_http_info(request)
+        return self._call_api(**http_info)
+
+    def copy_image_in_region_in_safe_mode_invoker(self, request):
+        http_info = self._copy_image_in_region_in_safe_mode_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _copy_image_in_region_in_safe_mode_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.1/cloudimages/{image_id}/copy",
+            "request_type": request.__class__.__name__,
+            "response_type": "CopyImageInRegionInSafeModeResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'image_id' in local_var_params:
+            path_params['image_id'] = local_var_params['image_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_data_image(self, request):
         r"""使用外部镜像文件制作数据镜像
 
@@ -594,6 +662,71 @@ class ImsClient(Client):
             "resource_path": "/v1/cloudimages/dataimages/action",
             "request_type": request.__class__.__name__,
             "response_type": "CreateDataImageResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_data_image_in_safe_mode(self, request):
+        r"""使用外部镜像文件制作数据镜像（新）
+
+        使用上传至OBS桶中的外部数据卷镜像文件制作数据镜像。作为异步接口，调用成功，只是说明后台收到了制作请求，镜像是否制作成功需要通过异步任务查询接口查询该任务的执行状态。具体请参考异步任务查询。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateDataImageInSafeMode
+        :type request: :class:`huaweicloudsdkims.v2.CreateDataImageInSafeModeRequest`
+        :rtype: :class:`huaweicloudsdkims.v2.CreateDataImageInSafeModeResponse`
+        """
+        http_info = self._create_data_image_in_safe_mode_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_data_image_in_safe_mode_invoker(self, request):
+        http_info = self._create_data_image_in_safe_mode_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_data_image_in_safe_mode_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.1/cloudimages/dataimages/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDataImageInSafeModeResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -670,6 +803,82 @@ class ImsClient(Client):
             "resource_path": "/v2/cloudimages/action",
             "request_type": request.__class__.__name__,
             "response_type": "CreateImageResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_image_in_safe_mode(self, request):
+        r"""制作镜像（新）
+
+        本接口用于制作私有镜像，支持：
+        - 使用云服务器制作私有镜像。
+        - 使用上传至OBS桶中的外部镜像文件制作私有镜像。
+        - 使用数据卷制作系统盘镜像。
+        
+        作为异步接口，调用成功，只是说明云平台收到了制作请求，镜像是否制作成功需要通过异步任务查询接口查询该任务的执行状态，具体请参考异步任务查询。
+        
+        不同场景必选参数说明：
+        
+        - 使用云服务器制作镜像时的请求的必选参数：name,instance_id。
+        - 使用上传至OBS桶中的外部镜像文件时的请求必选参数：name,image_url,min_disk。
+        - 使用数据卷制作系统盘镜像时的请求必选参数：name,volume_id,os_version
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateImageInSafeMode
+        :type request: :class:`huaweicloudsdkims.v2.CreateImageInSafeModeRequest`
+        :rtype: :class:`huaweicloudsdkims.v2.CreateImageInSafeModeResponse`
+        """
+        http_info = self._create_image_in_safe_mode_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_image_in_safe_mode_invoker(self, request):
+        http_info = self._create_image_in_safe_mode_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_image_in_safe_mode_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.1/cloudimages/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateImageInSafeModeResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -974,6 +1183,73 @@ class ImsClient(Client):
 
         return http_info
 
+    def export_image_in_safe_mode(self, request):
+        r"""导出镜像（新）
+
+        该接口为扩展接口，用于用户将自己的私有镜像导出到指定的OBS桶中。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ExportImageInSafeMode
+        :type request: :class:`huaweicloudsdkims.v2.ExportImageInSafeModeRequest`
+        :rtype: :class:`huaweicloudsdkims.v2.ExportImageInSafeModeResponse`
+        """
+        http_info = self._export_image_in_safe_mode_http_info(request)
+        return self._call_api(**http_info)
+
+    def export_image_in_safe_mode_invoker(self, request):
+        http_info = self._export_image_in_safe_mode_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _export_image_in_safe_mode_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.1/cloudimages/{image_id}/file",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExportImageInSafeModeResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'image_id' in local_var_params:
+            path_params['image_id'] = local_var_params['image_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def import_image_quick(self, request):
         r"""镜像文件快速导入
 
@@ -1001,6 +1277,73 @@ class ImsClient(Client):
             "resource_path": "/v2/cloudimages/quickimport/action",
             "request_type": request.__class__.__name__,
             "response_type": "ImportImageQuickResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def import_image_quick_in_safe_mode(self, request):
+        r"""镜像文件快速导入（新）
+
+        使用上传至OBS桶中的超大外部镜像文件制作私有镜像，目前仅支持RAW或ZVHD2格式镜像文件。且要求镜像文件大小不能超过1TB。
+        由于快速导入功能要求提前转换镜像文件格式为RAW或ZVHD2格式，因此镜像文件小于128GB时推荐您优先使用常规的创建私有镜像的方式。
+        作为异步接口，调用成功，只是说明后台收到了制作请求，镜像是否制作成功需要通过异步任务查询接口查询该任务的执行状态，具体请参考异步任务查询。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ImportImageQuickInSafeMode
+        :type request: :class:`huaweicloudsdkims.v2.ImportImageQuickInSafeModeRequest`
+        :rtype: :class:`huaweicloudsdkims.v2.ImportImageQuickInSafeModeResponse`
+        """
+        http_info = self._import_image_quick_in_safe_mode_http_info(request)
+        return self._call_api(**http_info)
+
+    def import_image_quick_in_safe_mode_invoker(self, request):
+        http_info = self._import_image_quick_in_safe_mode_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _import_image_quick_in_safe_mode_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.1/cloudimages/quickimport/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "ImportImageQuickInSafeModeResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}

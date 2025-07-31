@@ -56,31 +56,31 @@ class CreateRecordSetResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param id: 记录集的ID。
+        :param id: **参数解释：** 记录集的ID。 **取值范围：** 不涉及。
         :type id: str
-        :param name: 记录集的名称。
+        :param name: **参数解释：** 记录集的名称。 **取值范围：** 不涉及。
         :type name: str
-        :param description: 记录集的描述信息。
+        :param description: **参数解释：** 记录集的描述信息。 **取值范围：** 长度不超过255个字符。
         :type description: str
-        :param zone_id: 托管该记录的域名ID。
+        :param zone_id: **参数解释：** 托管该记录的域名ID。 **取值范围：** 不涉及。
         :type zone_id: str
-        :param zone_name: 托管该记录的域名。
+        :param zone_name: **参数解释：** 托管该记录的域名。 **取值范围：** 不涉及。
         :type zone_name: str
-        :param type: 记录类型。  公网域名场景的记录类型: A、AAAA、MX、CNAME、TXT、NS、SRV、CAA。  内网域名场景的记录类型: A、AAAA、MX、CNAME、TXT、SRV。
+        :param type: **参数解释：** 记录类型。 **取值范围：** - 公网域名的记录类型: A、AAAA、MX、CNAME、TXT、SRV、NS、SOA、CAA。 - 内网域名的记录类型: A、AAAA、MX、CNAME、TXT、PTR、SRV、NS、SOA。
         :type type: str
-        :param ttl: 解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。 如果您的服务地址经常更换，建议TTL值设置相对小些，反之，建议设置相对大些。
+        :param ttl: **参数解释：** 解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。 如果您的服务地址经常更换，建议TTL值设置相对小些，反之，建议设置相对大些。 **取值范围：** 1~2147483647。
         :type ttl: int
-        :param records: 域名解析后的值。
+        :param records: **参数解释：** 域名解析后的值。 **取值范围：** 不涉及。
         :type records: list[str]
-        :param create_at: 创建时间。 格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSS。
+        :param create_at: **参数解释：** 记录集的创建时间。 格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSS。 **取值范围：** 不涉及。
         :type create_at: str
-        :param update_at: 更新时间。 格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSS。
+        :param update_at: **参数解释：** 记录集的最近一次修改时间。 格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSS。 **取值范围：** 不涉及。
         :type update_at: str
-        :param status: 资源状态。
+        :param status: **参数解释：** 记录集状态。 **取值范围：** - PENDING_CREATE：创建中 - DISABLE：暂停
         :type status: str
-        :param default: 标识是否由系统默认生成，系统默认生成的记录集不能删除。
+        :param default: **参数解释：** 标识是否由系统默认生成，系统默认生成的记录集不能删除。 **取值范围：** 不涉及。
         :type default: bool
-        :param project_id: 该记录集所属的项目ID。
+        :param project_id: **参数解释：** 该记录集所属的项目ID。 **取值范围：** 不涉及。
         :type project_id: str
         :param links: 
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`
@@ -137,7 +137,7 @@ class CreateRecordSetResponse(SdkResponse):
     def id(self):
         r"""Gets the id of this CreateRecordSetResponse.
 
-        记录集的ID。
+        **参数解释：** 记录集的ID。 **取值范围：** 不涉及。
 
         :return: The id of this CreateRecordSetResponse.
         :rtype: str
@@ -148,7 +148,7 @@ class CreateRecordSetResponse(SdkResponse):
     def id(self, id):
         r"""Sets the id of this CreateRecordSetResponse.
 
-        记录集的ID。
+        **参数解释：** 记录集的ID。 **取值范围：** 不涉及。
 
         :param id: The id of this CreateRecordSetResponse.
         :type id: str
@@ -159,7 +159,7 @@ class CreateRecordSetResponse(SdkResponse):
     def name(self):
         r"""Gets the name of this CreateRecordSetResponse.
 
-        记录集的名称。
+        **参数解释：** 记录集的名称。 **取值范围：** 不涉及。
 
         :return: The name of this CreateRecordSetResponse.
         :rtype: str
@@ -170,7 +170,7 @@ class CreateRecordSetResponse(SdkResponse):
     def name(self, name):
         r"""Sets the name of this CreateRecordSetResponse.
 
-        记录集的名称。
+        **参数解释：** 记录集的名称。 **取值范围：** 不涉及。
 
         :param name: The name of this CreateRecordSetResponse.
         :type name: str
@@ -181,7 +181,7 @@ class CreateRecordSetResponse(SdkResponse):
     def description(self):
         r"""Gets the description of this CreateRecordSetResponse.
 
-        记录集的描述信息。
+        **参数解释：** 记录集的描述信息。 **取值范围：** 长度不超过255个字符。
 
         :return: The description of this CreateRecordSetResponse.
         :rtype: str
@@ -192,7 +192,7 @@ class CreateRecordSetResponse(SdkResponse):
     def description(self, description):
         r"""Sets the description of this CreateRecordSetResponse.
 
-        记录集的描述信息。
+        **参数解释：** 记录集的描述信息。 **取值范围：** 长度不超过255个字符。
 
         :param description: The description of this CreateRecordSetResponse.
         :type description: str
@@ -203,7 +203,7 @@ class CreateRecordSetResponse(SdkResponse):
     def zone_id(self):
         r"""Gets the zone_id of this CreateRecordSetResponse.
 
-        托管该记录的域名ID。
+        **参数解释：** 托管该记录的域名ID。 **取值范围：** 不涉及。
 
         :return: The zone_id of this CreateRecordSetResponse.
         :rtype: str
@@ -214,7 +214,7 @@ class CreateRecordSetResponse(SdkResponse):
     def zone_id(self, zone_id):
         r"""Sets the zone_id of this CreateRecordSetResponse.
 
-        托管该记录的域名ID。
+        **参数解释：** 托管该记录的域名ID。 **取值范围：** 不涉及。
 
         :param zone_id: The zone_id of this CreateRecordSetResponse.
         :type zone_id: str
@@ -225,7 +225,7 @@ class CreateRecordSetResponse(SdkResponse):
     def zone_name(self):
         r"""Gets the zone_name of this CreateRecordSetResponse.
 
-        托管该记录的域名。
+        **参数解释：** 托管该记录的域名。 **取值范围：** 不涉及。
 
         :return: The zone_name of this CreateRecordSetResponse.
         :rtype: str
@@ -236,7 +236,7 @@ class CreateRecordSetResponse(SdkResponse):
     def zone_name(self, zone_name):
         r"""Sets the zone_name of this CreateRecordSetResponse.
 
-        托管该记录的域名。
+        **参数解释：** 托管该记录的域名。 **取值范围：** 不涉及。
 
         :param zone_name: The zone_name of this CreateRecordSetResponse.
         :type zone_name: str
@@ -247,7 +247,7 @@ class CreateRecordSetResponse(SdkResponse):
     def type(self):
         r"""Gets the type of this CreateRecordSetResponse.
 
-        记录类型。  公网域名场景的记录类型: A、AAAA、MX、CNAME、TXT、NS、SRV、CAA。  内网域名场景的记录类型: A、AAAA、MX、CNAME、TXT、SRV。
+        **参数解释：** 记录类型。 **取值范围：** - 公网域名的记录类型: A、AAAA、MX、CNAME、TXT、SRV、NS、SOA、CAA。 - 内网域名的记录类型: A、AAAA、MX、CNAME、TXT、PTR、SRV、NS、SOA。
 
         :return: The type of this CreateRecordSetResponse.
         :rtype: str
@@ -258,7 +258,7 @@ class CreateRecordSetResponse(SdkResponse):
     def type(self, type):
         r"""Sets the type of this CreateRecordSetResponse.
 
-        记录类型。  公网域名场景的记录类型: A、AAAA、MX、CNAME、TXT、NS、SRV、CAA。  内网域名场景的记录类型: A、AAAA、MX、CNAME、TXT、SRV。
+        **参数解释：** 记录类型。 **取值范围：** - 公网域名的记录类型: A、AAAA、MX、CNAME、TXT、SRV、NS、SOA、CAA。 - 内网域名的记录类型: A、AAAA、MX、CNAME、TXT、PTR、SRV、NS、SOA。
 
         :param type: The type of this CreateRecordSetResponse.
         :type type: str
@@ -269,7 +269,7 @@ class CreateRecordSetResponse(SdkResponse):
     def ttl(self):
         r"""Gets the ttl of this CreateRecordSetResponse.
 
-        解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。 如果您的服务地址经常更换，建议TTL值设置相对小些，反之，建议设置相对大些。
+        **参数解释：** 解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。 如果您的服务地址经常更换，建议TTL值设置相对小些，反之，建议设置相对大些。 **取值范围：** 1~2147483647。
 
         :return: The ttl of this CreateRecordSetResponse.
         :rtype: int
@@ -280,7 +280,7 @@ class CreateRecordSetResponse(SdkResponse):
     def ttl(self, ttl):
         r"""Sets the ttl of this CreateRecordSetResponse.
 
-        解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。 如果您的服务地址经常更换，建议TTL值设置相对小些，反之，建议设置相对大些。
+        **参数解释：** 解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。 如果您的服务地址经常更换，建议TTL值设置相对小些，反之，建议设置相对大些。 **取值范围：** 1~2147483647。
 
         :param ttl: The ttl of this CreateRecordSetResponse.
         :type ttl: int
@@ -291,7 +291,7 @@ class CreateRecordSetResponse(SdkResponse):
     def records(self):
         r"""Gets the records of this CreateRecordSetResponse.
 
-        域名解析后的值。
+        **参数解释：** 域名解析后的值。 **取值范围：** 不涉及。
 
         :return: The records of this CreateRecordSetResponse.
         :rtype: list[str]
@@ -302,7 +302,7 @@ class CreateRecordSetResponse(SdkResponse):
     def records(self, records):
         r"""Sets the records of this CreateRecordSetResponse.
 
-        域名解析后的值。
+        **参数解释：** 域名解析后的值。 **取值范围：** 不涉及。
 
         :param records: The records of this CreateRecordSetResponse.
         :type records: list[str]
@@ -313,7 +313,7 @@ class CreateRecordSetResponse(SdkResponse):
     def create_at(self):
         r"""Gets the create_at of this CreateRecordSetResponse.
 
-        创建时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。
+        **参数解释：** 记录集的创建时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。 **取值范围：** 不涉及。
 
         :return: The create_at of this CreateRecordSetResponse.
         :rtype: str
@@ -324,7 +324,7 @@ class CreateRecordSetResponse(SdkResponse):
     def create_at(self, create_at):
         r"""Sets the create_at of this CreateRecordSetResponse.
 
-        创建时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。
+        **参数解释：** 记录集的创建时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。 **取值范围：** 不涉及。
 
         :param create_at: The create_at of this CreateRecordSetResponse.
         :type create_at: str
@@ -335,7 +335,7 @@ class CreateRecordSetResponse(SdkResponse):
     def update_at(self):
         r"""Gets the update_at of this CreateRecordSetResponse.
 
-        更新时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。
+        **参数解释：** 记录集的最近一次修改时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。 **取值范围：** 不涉及。
 
         :return: The update_at of this CreateRecordSetResponse.
         :rtype: str
@@ -346,7 +346,7 @@ class CreateRecordSetResponse(SdkResponse):
     def update_at(self, update_at):
         r"""Sets the update_at of this CreateRecordSetResponse.
 
-        更新时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。
+        **参数解释：** 记录集的最近一次修改时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。 **取值范围：** 不涉及。
 
         :param update_at: The update_at of this CreateRecordSetResponse.
         :type update_at: str
@@ -357,7 +357,7 @@ class CreateRecordSetResponse(SdkResponse):
     def status(self):
         r"""Gets the status of this CreateRecordSetResponse.
 
-        资源状态。
+        **参数解释：** 记录集状态。 **取值范围：** - PENDING_CREATE：创建中 - DISABLE：暂停
 
         :return: The status of this CreateRecordSetResponse.
         :rtype: str
@@ -368,7 +368,7 @@ class CreateRecordSetResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this CreateRecordSetResponse.
 
-        资源状态。
+        **参数解释：** 记录集状态。 **取值范围：** - PENDING_CREATE：创建中 - DISABLE：暂停
 
         :param status: The status of this CreateRecordSetResponse.
         :type status: str
@@ -379,7 +379,7 @@ class CreateRecordSetResponse(SdkResponse):
     def default(self):
         r"""Gets the default of this CreateRecordSetResponse.
 
-        标识是否由系统默认生成，系统默认生成的记录集不能删除。
+        **参数解释：** 标识是否由系统默认生成，系统默认生成的记录集不能删除。 **取值范围：** 不涉及。
 
         :return: The default of this CreateRecordSetResponse.
         :rtype: bool
@@ -390,7 +390,7 @@ class CreateRecordSetResponse(SdkResponse):
     def default(self, default):
         r"""Sets the default of this CreateRecordSetResponse.
 
-        标识是否由系统默认生成，系统默认生成的记录集不能删除。
+        **参数解释：** 标识是否由系统默认生成，系统默认生成的记录集不能删除。 **取值范围：** 不涉及。
 
         :param default: The default of this CreateRecordSetResponse.
         :type default: bool
@@ -401,7 +401,7 @@ class CreateRecordSetResponse(SdkResponse):
     def project_id(self):
         r"""Gets the project_id of this CreateRecordSetResponse.
 
-        该记录集所属的项目ID。
+        **参数解释：** 该记录集所属的项目ID。 **取值范围：** 不涉及。
 
         :return: The project_id of this CreateRecordSetResponse.
         :rtype: str
@@ -412,7 +412,7 @@ class CreateRecordSetResponse(SdkResponse):
     def project_id(self, project_id):
         r"""Sets the project_id of this CreateRecordSetResponse.
 
-        该记录集所属的项目ID。
+        **参数解释：** 该记录集所属的项目ID。 **取值范围：** 不涉及。
 
         :param project_id: The project_id of this CreateRecordSetResponse.
         :type project_id: str

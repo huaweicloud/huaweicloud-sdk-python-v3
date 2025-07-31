@@ -67,7 +67,7 @@ class AntiVirusHandleHistory:
         :type severity: str
         :param file_path: 文件路径
         :type file_path: str
-        :param host_name: 服务器名称
+        :param host_name: **参数解释**: 服务器名称 **取值范围**: 字符长度1-256位 
         :type host_name: str
         :param private_ip: 服务器私有IP
         :type private_ip: str
@@ -253,7 +253,7 @@ class AntiVirusHandleHistory:
     def host_name(self):
         r"""Gets the host_name of this AntiVirusHandleHistory.
 
-        服务器名称
+        **参数解释**: 服务器名称 **取值范围**: 字符长度1-256位 
 
         :return: The host_name of this AntiVirusHandleHistory.
         :rtype: str
@@ -264,7 +264,7 @@ class AntiVirusHandleHistory:
     def host_name(self, host_name):
         r"""Sets the host_name of this AntiVirusHandleHistory.
 
-        服务器名称
+        **参数解释**: 服务器名称 **取值范围**: 字符长度1-256位 
 
         :param host_name: The host_name of this AntiVirusHandleHistory.
         :type host_name: str

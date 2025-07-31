@@ -32,7 +32,7 @@ class BatchDeleteRecordSetsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param recordsets: 删除记录集的列表响应。
+        :param recordsets: **参数解释：** 记录集列表信息。 **取值范围：** 不涉及。
         :type recordsets: list[:class:`huaweicloudsdkdns.v2.RecordsetData`]
         :param metadata: 
         :type metadata: :class:`huaweicloudsdkdns.v2.Metadata`
@@ -53,7 +53,7 @@ class BatchDeleteRecordSetsResponse(SdkResponse):
     def recordsets(self):
         r"""Gets the recordsets of this BatchDeleteRecordSetsResponse.
 
-        删除记录集的列表响应。
+        **参数解释：** 记录集列表信息。 **取值范围：** 不涉及。
 
         :return: The recordsets of this BatchDeleteRecordSetsResponse.
         :rtype: list[:class:`huaweicloudsdkdns.v2.RecordsetData`]
@@ -64,7 +64,7 @@ class BatchDeleteRecordSetsResponse(SdkResponse):
     def recordsets(self, recordsets):
         r"""Sets the recordsets of this BatchDeleteRecordSetsResponse.
 
-        删除记录集的列表响应。
+        **参数解释：** 记录集列表信息。 **取值范围：** 不涉及。
 
         :param recordsets: The recordsets of this BatchDeleteRecordSetsResponse.
         :type recordsets: list[:class:`huaweicloudsdkdns.v2.RecordsetData`]

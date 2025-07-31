@@ -36,7 +36,7 @@ class ListPublicZoneLinesResponse(SdkResponse):
 
         :param links: 
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`
-        :param lines: 查询公网域名的线路列表响应。
+        :param lines: **参数解释：** 查询公网域名的线路列表响应。 **取值范围：** 不涉及。
         :type lines: list[:class:`huaweicloudsdkdns.v2.PublicZoneLines`]
         :param metadata: 
         :type metadata: :class:`huaweicloudsdkdns.v2.Metadata`
@@ -78,7 +78,7 @@ class ListPublicZoneLinesResponse(SdkResponse):
     def lines(self):
         r"""Gets the lines of this ListPublicZoneLinesResponse.
 
-        查询公网域名的线路列表响应。
+        **参数解释：** 查询公网域名的线路列表响应。 **取值范围：** 不涉及。
 
         :return: The lines of this ListPublicZoneLinesResponse.
         :rtype: list[:class:`huaweicloudsdkdns.v2.PublicZoneLines`]
@@ -89,7 +89,7 @@ class ListPublicZoneLinesResponse(SdkResponse):
     def lines(self, lines):
         r"""Sets the lines of this ListPublicZoneLinesResponse.
 
-        查询公网域名的线路列表响应。
+        **参数解释：** 查询公网域名的线路列表响应。 **取值范围：** 不涉及。
 
         :param lines: The lines of this ListPublicZoneLinesResponse.
         :type lines: list[:class:`huaweicloudsdkdns.v2.PublicZoneLines`]

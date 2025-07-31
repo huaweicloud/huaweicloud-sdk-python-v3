@@ -51,7 +51,7 @@ class ListTagReq:
         :type not_tags: list[:class:`huaweicloudsdkdns.v2.TagValues`]
         :param not_tags_any: 最多包含10个key，每个key下面的value最多10个，结构体不能缺失，key不能为空或者空字符串。Key不能重复，同一个key中values不能重复。
         :type not_tags_any: list[:class:`huaweicloudsdkdns.v2.TagValues`]
-        :param limit: 每页返回的资源个数。  取值范围：1~1000  参数取值说明：  如果action为filter时，默认为1000。 如果action为count时，无此参数。
+        :param limit: 分页查询时配置每页返回的资源个数。  取值范围：1~1000  参数取值说明：  如果action为filter时，默认为1000。 如果action为count时，无此参数。
         :type limit: int
         :param offset: 分页查询起始偏移量，表示从偏移量的下一个资源开始查询。  取值范围：0~2147483647  默认值为0。  参数取值说明： 查询第一页数据时，不需要传入此参数。 查询后续页码数据时，将查询前一页数据时响应体中的值带入此参数。 如果action为filter时，默认为0，必须为数字，不能为负数。 如果action为count时，无此参数。
         :type offset: int
@@ -181,7 +181,7 @@ class ListTagReq:
     def limit(self):
         r"""Gets the limit of this ListTagReq.
 
-        每页返回的资源个数。  取值范围：1~1000  参数取值说明：  如果action为filter时，默认为1000。 如果action为count时，无此参数。
+        分页查询时配置每页返回的资源个数。  取值范围：1~1000  参数取值说明：  如果action为filter时，默认为1000。 如果action为count时，无此参数。
 
         :return: The limit of this ListTagReq.
         :rtype: int
@@ -192,7 +192,7 @@ class ListTagReq:
     def limit(self, limit):
         r"""Sets the limit of this ListTagReq.
 
-        每页返回的资源个数。  取值范围：1~1000  参数取值说明：  如果action为filter时，默认为1000。 如果action为count时，无此参数。
+        分页查询时配置每页返回的资源个数。  取值范围：1~1000  参数取值说明：  如果action为filter时，默认为1000。 如果action为count时，无此参数。
 
         :param limit: The limit of this ListTagReq.
         :type limit: int

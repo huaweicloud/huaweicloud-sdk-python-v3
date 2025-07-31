@@ -33,11 +33,11 @@ class AvailableResourceIdsInfo:
 
         The model defined in huaweicloud sdk
 
-        :param resource_id: 资源ID
+        :param resource_id: **参数解释**： 资源ID **取值范围**： 字符长度1-256位
         :type resource_id: str
-        :param current_time: 当前时间
+        :param current_time: **参数解释**： 当前时间 **取值范围**： 字符长度1-64位
         :type current_time: str
-        :param shared_quota: 是否共享配额   - shared：共享的   - unshared：非共享的
+        :param shared_quota: **参数解释**： 是否共享配额 **取值范围**：   - shared：共享的   - unshared：非共享的
         :type shared_quota: str
         """
         
@@ -59,7 +59,7 @@ class AvailableResourceIdsInfo:
     def resource_id(self):
         r"""Gets the resource_id of this AvailableResourceIdsInfo.
 
-        资源ID
+        **参数解释**： 资源ID **取值范围**： 字符长度1-256位
 
         :return: The resource_id of this AvailableResourceIdsInfo.
         :rtype: str
@@ -70,7 +70,7 @@ class AvailableResourceIdsInfo:
     def resource_id(self, resource_id):
         r"""Sets the resource_id of this AvailableResourceIdsInfo.
 
-        资源ID
+        **参数解释**： 资源ID **取值范围**： 字符长度1-256位
 
         :param resource_id: The resource_id of this AvailableResourceIdsInfo.
         :type resource_id: str
@@ -81,7 +81,7 @@ class AvailableResourceIdsInfo:
     def current_time(self):
         r"""Gets the current_time of this AvailableResourceIdsInfo.
 
-        当前时间
+        **参数解释**： 当前时间 **取值范围**： 字符长度1-64位
 
         :return: The current_time of this AvailableResourceIdsInfo.
         :rtype: str
@@ -92,7 +92,7 @@ class AvailableResourceIdsInfo:
     def current_time(self, current_time):
         r"""Sets the current_time of this AvailableResourceIdsInfo.
 
-        当前时间
+        **参数解释**： 当前时间 **取值范围**： 字符长度1-64位
 
         :param current_time: The current_time of this AvailableResourceIdsInfo.
         :type current_time: str
@@ -103,7 +103,7 @@ class AvailableResourceIdsInfo:
     def shared_quota(self):
         r"""Gets the shared_quota of this AvailableResourceIdsInfo.
 
-        是否共享配额   - shared：共享的   - unshared：非共享的
+        **参数解释**： 是否共享配额 **取值范围**：   - shared：共享的   - unshared：非共享的
 
         :return: The shared_quota of this AvailableResourceIdsInfo.
         :rtype: str
@@ -114,7 +114,7 @@ class AvailableResourceIdsInfo:
     def shared_quota(self, shared_quota):
         r"""Sets the shared_quota of this AvailableResourceIdsInfo.
 
-        是否共享配额   - shared：共享的   - unshared：非共享的
+        **参数解释**： 是否共享配额 **取值范围**：   - shared：共享的   - unshared：非共享的
 
         :param shared_quota: The shared_quota of this AvailableResourceIdsInfo.
         :type shared_quota: str

@@ -46,8 +46,7 @@ class ListAssetsRequest:
         'include_device_name': 'str',
         'exclude_device_name': 'str',
         'supported_service': 'str',
-        'app_user_id': 'str',
-        'project_group_id': 'str'
+        'app_user_id': 'str'
     }
 
     attribute_map = {
@@ -80,11 +79,10 @@ class ListAssetsRequest:
         'include_device_name': 'include_device_name',
         'exclude_device_name': 'exclude_device_name',
         'supported_service': 'supported_service',
-        'app_user_id': 'app_user_id',
-        'project_group_id': 'project_group_id'
+        'app_user_id': 'app_user_id'
     }
 
-    def __init__(self, x_app_user_id=None, limit=None, offset=None, name=None, tag=None, tag_combination_type=None, start_time=None, end_time=None, asset_type=None, sort_key=None, sort_dir=None, asset_source=None, asset_state=None, style_id=None, accurate_query_field=None, asset_id=None, sex=None, language=None, system_property=None, action_editable=None, is_with_action_library=None, is_movable=None, voice_provider=None, role=None, is_realtime_voice=None, human_model_2d_version=None, include_device_name=None, exclude_device_name=None, supported_service=None, app_user_id=None, project_group_id=None):
+    def __init__(self, x_app_user_id=None, limit=None, offset=None, name=None, tag=None, tag_combination_type=None, start_time=None, end_time=None, asset_type=None, sort_key=None, sort_dir=None, asset_source=None, asset_state=None, style_id=None, accurate_query_field=None, asset_id=None, sex=None, language=None, system_property=None, action_editable=None, is_with_action_library=None, is_movable=None, voice_provider=None, role=None, is_realtime_voice=None, human_model_2d_version=None, include_device_name=None, exclude_device_name=None, supported_service=None, app_user_id=None):
         r"""ListAssetsRequest
 
         The model defined in huaweicloud sdk
@@ -111,7 +109,7 @@ class ListAssetsRequest:
         :type sort_key: str
         :param sort_dir: 排序方式。 * asc：升序 * desc：降序  默认asc升序。
         :type sort_dir: str
-        :param asset_source: 资产来源。 * SYSTEM：系统资产 * CUSTOMIZATION：租户资产 * GROUP_CUSTOMIZATION：租户组资产 * ALL：所有资产  默认查询租户资产。
+        :param asset_source: 资产来源。 * SYSTEM：系统资产 * CUSTOMIZATION：租户资产 * ALL：所有资产  默认查询租户资产。
         :type asset_source: str
         :param asset_state: 资产状态。多个资产状态使用英文逗号分隔。 * CREATING：资产创建中，主文件尚未上传 * FAILED：主文件上传失败 * UNACTIVED：主文件上传成功，资产未激活，资产不可用于其他业务（用户可更新状态） * ACTIVED：主文件上传成功，资产激活，资产可用于其他业务（用户可更新状态） * DELETING：资产删除中，资产不可用，资产可恢复 * DELETED：资产文件已删除，资产不可用，资产不可恢复 * BLOCK：资产被冻结，资产不可用，不可查看文件。 * WAITING_DELETE：资产将被下线 默认查询所有状态的资产。
         :type asset_state: str
@@ -125,7 +123,7 @@ class ListAssetsRequest:
         :type sex: str
         :param language: 语言。多选使用英文逗号分隔。
         :type language: str
-        :param system_property: 系统属性。  key和value间用\&quot;:\&quot;分隔，多个key之间用\&quot;,\&quot;分隔。  如system_property&#x3D;BACKGROUND_IMG:Yes,RENDER_ENGINE:MetaEngine。  不同Key对应Value取值如下：  公共资产属性： * BACKGROUND_IMG：视频制作的2D背景图片，可取值Yes * CREATED_BY_PLATFORM：是否平台生成，可取值Yes  分身数字人资产属性： * MATERIAL_IMG：素材图片，用作前景。可取值Yes * MATERIAL_VIDEO：素材视频，用作前景。可取值Yes  数字人资产属性： * BACKGROUND_SCENE：视频制作的2D背景场景，可取值Horizontal（横屏）或者Vertical（竖屏）  租户组资产验签属性： * SIG：加签秘钥。取值方式SIG&#x3D;HexEncode(HMAC-SHA256(group_id:EXP_TIME:NONCE,key)) * EXP_TIME：过期时间，当前时间增加增加10分钟。取值示例1627768613 * NONCE：随机字符串。取值示例：EycLQsHwxhzK9OW8UEKWNfH2I3CGR2nINuU1EBpv162d42d92s
+        :param system_property: 系统属性。  key和value间用\&quot;:\&quot;分隔，多个key之间用\&quot;,\&quot;分隔。  如system_property&#x3D;BACKGROUND_IMG:Yes,RENDER_ENGINE:MetaEngine。  不同Key对应Value取值如下：  公共资产属性： * BACKGROUND_IMG：视频制作的2D背景图片，可取值Yes * CREATED_BY_PLATFORM：是否平台生成，可取值Yes  分身数字人资产属性： * MATERIAL_IMG：素材图片，用作前景。可取值Yes * MATERIAL_VIDEO：素材视频，用作前景。可取值Yes  数字人资产属性： * BACKGROUND_SCENE：视频制作的2D背景场景，可取值Horizontal（横屏）或者Vertical（竖屏）
         :type system_property: str
         :param action_editable: 动作是否可编辑。仅在分身数字人模型查询时有效。
         :type action_editable: bool
@@ -149,8 +147,6 @@ class ListAssetsRequest:
         :type supported_service: str
         :param app_user_id: 第三方用户ID。不允许输入中文。
         :type app_user_id: str
-        :param project_group_id: 租户组id。只支持asset_souce是ALL 或者GROUP_CUSTOMIZATION 来源。
-        :type project_group_id: str
         """
         
         
@@ -185,7 +181,6 @@ class ListAssetsRequest:
         self._exclude_device_name = None
         self._supported_service = None
         self._app_user_id = None
-        self._project_group_id = None
         self.discriminator = None
 
         if x_app_user_id is not None:
@@ -248,8 +243,6 @@ class ListAssetsRequest:
             self.supported_service = supported_service
         if app_user_id is not None:
             self.app_user_id = app_user_id
-        if project_group_id is not None:
-            self.project_group_id = project_group_id
 
     @property
     def x_app_user_id(self):
@@ -497,7 +490,7 @@ class ListAssetsRequest:
     def asset_source(self):
         r"""Gets the asset_source of this ListAssetsRequest.
 
-        资产来源。 * SYSTEM：系统资产 * CUSTOMIZATION：租户资产 * GROUP_CUSTOMIZATION：租户组资产 * ALL：所有资产  默认查询租户资产。
+        资产来源。 * SYSTEM：系统资产 * CUSTOMIZATION：租户资产 * ALL：所有资产  默认查询租户资产。
 
         :return: The asset_source of this ListAssetsRequest.
         :rtype: str
@@ -508,7 +501,7 @@ class ListAssetsRequest:
     def asset_source(self, asset_source):
         r"""Sets the asset_source of this ListAssetsRequest.
 
-        资产来源。 * SYSTEM：系统资产 * CUSTOMIZATION：租户资产 * GROUP_CUSTOMIZATION：租户组资产 * ALL：所有资产  默认查询租户资产。
+        资产来源。 * SYSTEM：系统资产 * CUSTOMIZATION：租户资产 * ALL：所有资产  默认查询租户资产。
 
         :param asset_source: The asset_source of this ListAssetsRequest.
         :type asset_source: str
@@ -651,7 +644,7 @@ class ListAssetsRequest:
     def system_property(self):
         r"""Gets the system_property of this ListAssetsRequest.
 
-        系统属性。  key和value间用\":\"分隔，多个key之间用\",\"分隔。  如system_property=BACKGROUND_IMG:Yes,RENDER_ENGINE:MetaEngine。  不同Key对应Value取值如下：  公共资产属性： * BACKGROUND_IMG：视频制作的2D背景图片，可取值Yes * CREATED_BY_PLATFORM：是否平台生成，可取值Yes  分身数字人资产属性： * MATERIAL_IMG：素材图片，用作前景。可取值Yes * MATERIAL_VIDEO：素材视频，用作前景。可取值Yes  数字人资产属性： * BACKGROUND_SCENE：视频制作的2D背景场景，可取值Horizontal（横屏）或者Vertical（竖屏）  租户组资产验签属性： * SIG：加签秘钥。取值方式SIG=HexEncode(HMAC-SHA256(group_id:EXP_TIME:NONCE,key)) * EXP_TIME：过期时间，当前时间增加增加10分钟。取值示例1627768613 * NONCE：随机字符串。取值示例：EycLQsHwxhzK9OW8UEKWNfH2I3CGR2nINuU1EBpv162d42d92s
+        系统属性。  key和value间用\":\"分隔，多个key之间用\",\"分隔。  如system_property=BACKGROUND_IMG:Yes,RENDER_ENGINE:MetaEngine。  不同Key对应Value取值如下：  公共资产属性： * BACKGROUND_IMG：视频制作的2D背景图片，可取值Yes * CREATED_BY_PLATFORM：是否平台生成，可取值Yes  分身数字人资产属性： * MATERIAL_IMG：素材图片，用作前景。可取值Yes * MATERIAL_VIDEO：素材视频，用作前景。可取值Yes  数字人资产属性： * BACKGROUND_SCENE：视频制作的2D背景场景，可取值Horizontal（横屏）或者Vertical（竖屏）
 
         :return: The system_property of this ListAssetsRequest.
         :rtype: str
@@ -662,7 +655,7 @@ class ListAssetsRequest:
     def system_property(self, system_property):
         r"""Sets the system_property of this ListAssetsRequest.
 
-        系统属性。  key和value间用\":\"分隔，多个key之间用\",\"分隔。  如system_property=BACKGROUND_IMG:Yes,RENDER_ENGINE:MetaEngine。  不同Key对应Value取值如下：  公共资产属性： * BACKGROUND_IMG：视频制作的2D背景图片，可取值Yes * CREATED_BY_PLATFORM：是否平台生成，可取值Yes  分身数字人资产属性： * MATERIAL_IMG：素材图片，用作前景。可取值Yes * MATERIAL_VIDEO：素材视频，用作前景。可取值Yes  数字人资产属性： * BACKGROUND_SCENE：视频制作的2D背景场景，可取值Horizontal（横屏）或者Vertical（竖屏）  租户组资产验签属性： * SIG：加签秘钥。取值方式SIG=HexEncode(HMAC-SHA256(group_id:EXP_TIME:NONCE,key)) * EXP_TIME：过期时间，当前时间增加增加10分钟。取值示例1627768613 * NONCE：随机字符串。取值示例：EycLQsHwxhzK9OW8UEKWNfH2I3CGR2nINuU1EBpv162d42d92s
+        系统属性。  key和value间用\":\"分隔，多个key之间用\",\"分隔。  如system_property=BACKGROUND_IMG:Yes,RENDER_ENGINE:MetaEngine。  不同Key对应Value取值如下：  公共资产属性： * BACKGROUND_IMG：视频制作的2D背景图片，可取值Yes * CREATED_BY_PLATFORM：是否平台生成，可取值Yes  分身数字人资产属性： * MATERIAL_IMG：素材图片，用作前景。可取值Yes * MATERIAL_VIDEO：素材视频，用作前景。可取值Yes  数字人资产属性： * BACKGROUND_SCENE：视频制作的2D背景场景，可取值Horizontal（横屏）或者Vertical（竖屏）
 
         :param system_property: The system_property of this ListAssetsRequest.
         :type system_property: str
@@ -910,28 +903,6 @@ class ListAssetsRequest:
         :type app_user_id: str
         """
         self._app_user_id = app_user_id
-
-    @property
-    def project_group_id(self):
-        r"""Gets the project_group_id of this ListAssetsRequest.
-
-        租户组id。只支持asset_souce是ALL 或者GROUP_CUSTOMIZATION 来源。
-
-        :return: The project_group_id of this ListAssetsRequest.
-        :rtype: str
-        """
-        return self._project_group_id
-
-    @project_group_id.setter
-    def project_group_id(self, project_group_id):
-        r"""Sets the project_group_id of this ListAssetsRequest.
-
-        租户组id。只支持asset_souce是ALL 或者GROUP_CUSTOMIZATION 来源。
-
-        :param project_group_id: The project_group_id of this ListAssetsRequest.
-        :type project_group_id: str
-        """
-        self._project_group_id = project_group_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

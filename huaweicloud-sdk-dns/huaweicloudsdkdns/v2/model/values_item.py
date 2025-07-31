@@ -29,7 +29,7 @@ class ValuesItem:
 
         The model defined in huaweicloud sdk
 
-        :param values: 所有版本列表。
+        :param values: **参数解释：** 所有版本列表。 **取值范围：** 不涉及。
         :type values: list[:class:`huaweicloudsdkdns.v2.ListApiVersionsItem`]
         """
         
@@ -45,7 +45,7 @@ class ValuesItem:
     def values(self):
         r"""Gets the values of this ValuesItem.
 
-        所有版本列表。
+        **参数解释：** 所有版本列表。 **取值范围：** 不涉及。
 
         :return: The values of this ValuesItem.
         :rtype: list[:class:`huaweicloudsdkdns.v2.ListApiVersionsItem`]
@@ -56,7 +56,7 @@ class ValuesItem:
     def values(self, values):
         r"""Sets the values of this ValuesItem.
 
-        所有版本列表。
+        **参数解释：** 所有版本列表。 **取值范围：** 不涉及。
 
         :param values: The values of this ValuesItem.
         :type values: list[:class:`huaweicloudsdkdns.v2.ListApiVersionsItem`]

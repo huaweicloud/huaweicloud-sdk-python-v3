@@ -22,7 +22,8 @@ class BatchUpdateNotificationMaskTimeRequestBody:
         'start_date': 'date',
         'start_time': 'str',
         'end_date': 'date',
-        'end_time': 'str'
+        'end_time': 'str',
+        'effective_timezone': 'str'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class BatchUpdateNotificationMaskTimeRequestBody:
         'start_date': 'start_date',
         'start_time': 'start_time',
         'end_date': 'end_date',
-        'end_time': 'end_time'
+        'end_time': 'end_time',
+        'effective_timezone': 'effective_timezone'
     }
 
-    def __init__(self, notification_mask_ids=None, mask_type=None, start_date=None, start_time=None, end_date=None, end_time=None):
+    def __init__(self, notification_mask_ids=None, mask_type=None, start_date=None, start_time=None, end_date=None, end_time=None, effective_timezone=None):
         r"""BatchUpdateNotificationMaskTimeRequestBody
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class BatchUpdateNotificationMaskTimeRequestBody:
         :type end_date: date
         :param end_time: 屏蔽截止时间，HH:mm:ss。
         :type end_time: str
+        :param effective_timezone: 时区，形如：\&quot;GMT-08:00\&quot;、\&quot;GMT+08:00\&quot;、\&quot;GMT+0:00\&quot;
+        :type effective_timezone: str
         """
         
         
@@ -61,6 +65,7 @@ class BatchUpdateNotificationMaskTimeRequestBody:
         self._start_time = None
         self._end_date = None
         self._end_time = None
+        self._effective_timezone = None
         self.discriminator = None
 
         self.notification_mask_ids = notification_mask_ids
@@ -73,6 +78,8 @@ class BatchUpdateNotificationMaskTimeRequestBody:
             self.end_date = end_date
         if end_time is not None:
             self.end_time = end_time
+        if effective_timezone is not None:
+            self.effective_timezone = effective_timezone
 
     @property
     def notification_mask_ids(self):
@@ -201,6 +208,28 @@ class BatchUpdateNotificationMaskTimeRequestBody:
         :type end_time: str
         """
         self._end_time = end_time
+
+    @property
+    def effective_timezone(self):
+        r"""Gets the effective_timezone of this BatchUpdateNotificationMaskTimeRequestBody.
+
+        时区，形如：\"GMT-08:00\"、\"GMT+08:00\"、\"GMT+0:00\"
+
+        :return: The effective_timezone of this BatchUpdateNotificationMaskTimeRequestBody.
+        :rtype: str
+        """
+        return self._effective_timezone
+
+    @effective_timezone.setter
+    def effective_timezone(self, effective_timezone):
+        r"""Sets the effective_timezone of this BatchUpdateNotificationMaskTimeRequestBody.
+
+        时区，形如：\"GMT-08:00\"、\"GMT+08:00\"、\"GMT+0:00\"
+
+        :param effective_timezone: The effective_timezone of this BatchUpdateNotificationMaskTimeRequestBody.
+        :type effective_timezone: str
+        """
+        self._effective_timezone = effective_timezone
 
     def to_dict(self):
         """Returns the model properties as a dict"""

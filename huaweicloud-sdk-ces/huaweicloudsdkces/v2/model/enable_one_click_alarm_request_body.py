@@ -24,6 +24,7 @@ class EnableOneClickAlarmRequestBody:
         'ok_notifications': 'list[Notification]',
         'notification_begin_time': 'str',
         'notification_end_time': 'str',
+        'effective_timezone': 'str',
         'notification_manner': 'str',
         'notification_policy_ids': 'list[str]',
         'is_reset': 'bool',
@@ -38,13 +39,14 @@ class EnableOneClickAlarmRequestBody:
         'ok_notifications': 'ok_notifications',
         'notification_begin_time': 'notification_begin_time',
         'notification_end_time': 'notification_end_time',
+        'effective_timezone': 'effective_timezone',
         'notification_manner': 'notification_manner',
         'notification_policy_ids': 'notification_policy_ids',
         'is_reset': 'is_reset',
         'one_click_update_alarms': 'one_click_update_alarms'
     }
 
-    def __init__(self, one_click_alarm_id=None, dimension_names=None, notification_enabled=None, alarm_notifications=None, ok_notifications=None, notification_begin_time=None, notification_end_time=None, notification_manner=None, notification_policy_ids=None, is_reset=None, one_click_update_alarms=None):
+    def __init__(self, one_click_alarm_id=None, dimension_names=None, notification_enabled=None, alarm_notifications=None, ok_notifications=None, notification_begin_time=None, notification_end_time=None, effective_timezone=None, notification_manner=None, notification_policy_ids=None, is_reset=None, one_click_update_alarms=None):
         r"""EnableOneClickAlarmRequestBody
 
         The model defined in huaweicloud sdk
@@ -63,6 +65,8 @@ class EnableOneClickAlarmRequestBody:
         :type notification_begin_time: str
         :param notification_end_time: 告警通知关闭时间
         :type notification_end_time: str
+        :param effective_timezone: 时区，形如：\&quot;GMT-08:00\&quot;、\&quot;GMT+08:00\&quot;、\&quot;GMT+0:00\&quot;
+        :type effective_timezone: str
         :param notification_manner: NOTIFICATION_GROUP(通知组)/TOPIC_SUBSCRIPTION(主题订阅)/NOTIFICATION_POLICY(通知策略)
         :type notification_manner: str
         :param notification_policy_ids: 关联的通知策略ID列表
@@ -82,6 +86,7 @@ class EnableOneClickAlarmRequestBody:
         self._ok_notifications = None
         self._notification_begin_time = None
         self._notification_end_time = None
+        self._effective_timezone = None
         self._notification_manner = None
         self._notification_policy_ids = None
         self._is_reset = None
@@ -99,6 +104,8 @@ class EnableOneClickAlarmRequestBody:
             self.notification_begin_time = notification_begin_time
         if notification_end_time is not None:
             self.notification_end_time = notification_end_time
+        if effective_timezone is not None:
+            self.effective_timezone = effective_timezone
         if notification_manner is not None:
             self.notification_manner = notification_manner
         if notification_policy_ids is not None:
@@ -257,6 +264,28 @@ class EnableOneClickAlarmRequestBody:
         :type notification_end_time: str
         """
         self._notification_end_time = notification_end_time
+
+    @property
+    def effective_timezone(self):
+        r"""Gets the effective_timezone of this EnableOneClickAlarmRequestBody.
+
+        时区，形如：\"GMT-08:00\"、\"GMT+08:00\"、\"GMT+0:00\"
+
+        :return: The effective_timezone of this EnableOneClickAlarmRequestBody.
+        :rtype: str
+        """
+        return self._effective_timezone
+
+    @effective_timezone.setter
+    def effective_timezone(self, effective_timezone):
+        r"""Sets the effective_timezone of this EnableOneClickAlarmRequestBody.
+
+        时区，形如：\"GMT-08:00\"、\"GMT+08:00\"、\"GMT+0:00\"
+
+        :param effective_timezone: The effective_timezone of this EnableOneClickAlarmRequestBody.
+        :type effective_timezone: str
+        """
+        self._effective_timezone = effective_timezone
 
     @property
     def notification_manner(self):

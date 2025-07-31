@@ -57,7 +57,7 @@ class AntivirusResultDetailInfo:
         :type file_path: str
         :param file_hash: 文件哈希
         :type file_hash: str
-        :param file_size: 文件大小
+        :param file_size: **参数解释**: 文件大小 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值9223372036854775807 **默认取值**: 不涉及 
         :type file_size: int
         :param file_owner: 文件属主
         :type file_owner: str
@@ -69,7 +69,7 @@ class AntivirusResultDetailInfo:
         :type file_mtime: int
         :param update_time: 更新时间，毫秒
         :type update_time: int
-        :param agent_id: Agent ID
+        :param agent_id: **参数解释**: Agent ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
         :type agent_id: str
         """
         
@@ -203,7 +203,7 @@ class AntivirusResultDetailInfo:
     def file_size(self):
         r"""Gets the file_size of this AntivirusResultDetailInfo.
 
-        文件大小
+        **参数解释**: 文件大小 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值9223372036854775807 **默认取值**: 不涉及 
 
         :return: The file_size of this AntivirusResultDetailInfo.
         :rtype: int
@@ -214,7 +214,7 @@ class AntivirusResultDetailInfo:
     def file_size(self, file_size):
         r"""Sets the file_size of this AntivirusResultDetailInfo.
 
-        文件大小
+        **参数解释**: 文件大小 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值9223372036854775807 **默认取值**: 不涉及 
 
         :param file_size: The file_size of this AntivirusResultDetailInfo.
         :type file_size: int
@@ -335,7 +335,7 @@ class AntivirusResultDetailInfo:
     def agent_id(self):
         r"""Gets the agent_id of this AntivirusResultDetailInfo.
 
-        Agent ID
+        **参数解释**: Agent ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :return: The agent_id of this AntivirusResultDetailInfo.
         :rtype: str
@@ -346,7 +346,7 @@ class AntivirusResultDetailInfo:
     def agent_id(self, agent_id):
         r"""Sets the agent_id of this AntivirusResultDetailInfo.
 
-        Agent ID
+        **参数解释**: Agent ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :param agent_id: The agent_id of this AntivirusResultDetailInfo.
         :type agent_id: str

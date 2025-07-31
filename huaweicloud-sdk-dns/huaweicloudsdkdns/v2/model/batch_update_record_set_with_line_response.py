@@ -36,7 +36,7 @@ class BatchUpdateRecordSetWithLineResponse(SdkResponse):
 
         :param links: 
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`
-        :param recordsets: 记录集的列表信息。
+        :param recordsets: **参数解释：** 记录集列表信息。 **取值范围：** 不涉及。
         :type recordsets: list[:class:`huaweicloudsdkdns.v2.QueryRecordSetWithLineResp`]
         :param metadata: 
         :type metadata: :class:`huaweicloudsdkdns.v2.Metadata`
@@ -78,7 +78,7 @@ class BatchUpdateRecordSetWithLineResponse(SdkResponse):
     def recordsets(self):
         r"""Gets the recordsets of this BatchUpdateRecordSetWithLineResponse.
 
-        记录集的列表信息。
+        **参数解释：** 记录集列表信息。 **取值范围：** 不涉及。
 
         :return: The recordsets of this BatchUpdateRecordSetWithLineResponse.
         :rtype: list[:class:`huaweicloudsdkdns.v2.QueryRecordSetWithLineResp`]
@@ -89,7 +89,7 @@ class BatchUpdateRecordSetWithLineResponse(SdkResponse):
     def recordsets(self, recordsets):
         r"""Sets the recordsets of this BatchUpdateRecordSetWithLineResponse.
 
-        记录集的列表信息。
+        **参数解释：** 记录集列表信息。 **取值范围：** 不涉及。
 
         :param recordsets: The recordsets of this BatchUpdateRecordSetWithLineResponse.
         :type recordsets: list[:class:`huaweicloudsdkdns.v2.QueryRecordSetWithLineResp`]

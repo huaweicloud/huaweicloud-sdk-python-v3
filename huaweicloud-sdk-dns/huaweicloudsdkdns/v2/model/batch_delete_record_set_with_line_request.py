@@ -31,7 +31,7 @@ class BatchDeleteRecordSetWithLineRequest:
 
         The model defined in huaweicloud sdk
 
-        :param zone_id: 域名ID。
+        :param zone_id: **参数解释：** 域名ID。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type zone_id: str
         :param body: Body of the BatchDeleteRecordSetWithLineRequest
         :type body: :class:`huaweicloudsdkdns.v2.BatchDeleteRecordSetWithLineRequestBody`
@@ -51,7 +51,7 @@ class BatchDeleteRecordSetWithLineRequest:
     def zone_id(self):
         r"""Gets the zone_id of this BatchDeleteRecordSetWithLineRequest.
 
-        域名ID。
+        **参数解释：** 域名ID。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The zone_id of this BatchDeleteRecordSetWithLineRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class BatchDeleteRecordSetWithLineRequest:
     def zone_id(self, zone_id):
         r"""Sets the zone_id of this BatchDeleteRecordSetWithLineRequest.
 
-        域名ID。
+        **参数解释：** 域名ID。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param zone_id: The zone_id of this BatchDeleteRecordSetWithLineRequest.
         :type zone_id: str

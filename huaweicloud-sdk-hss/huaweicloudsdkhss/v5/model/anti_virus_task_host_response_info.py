@@ -69,9 +69,9 @@ class AntiVirusTaskHostResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param host_id: 服务器ID
+        :param host_id: **参数解释**: 服务器ID **取值范围**: 字符长度1-64位 
         :type host_id: str
-        :param host_name: 服务器名称
+        :param host_name: **参数解释**: 服务器名称 **取值范围**: 字符长度1-256位 
         :type host_name: str
         :param private_ip: 服务器私有IP
         :type private_ip: str
@@ -97,7 +97,7 @@ class AntiVirusTaskHostResponseInfo:
         :type deleted: bool
         :param whether_using_quota: 是否使用病毒查杀按次计费配额
         :type whether_using_quota: int
-        :param agent_id: Agent ID
+        :param agent_id: **参数解释**: Agent ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
         :type agent_id: str
         :param os_type: 操作系统类型，包含如下2种。   - Linux ：Linux。   - Windows ：Windows。
         :type os_type: str
@@ -185,7 +185,7 @@ class AntiVirusTaskHostResponseInfo:
     def host_id(self):
         r"""Gets the host_id of this AntiVirusTaskHostResponseInfo.
 
-        服务器ID
+        **参数解释**: 服务器ID **取值范围**: 字符长度1-64位 
 
         :return: The host_id of this AntiVirusTaskHostResponseInfo.
         :rtype: str
@@ -196,7 +196,7 @@ class AntiVirusTaskHostResponseInfo:
     def host_id(self, host_id):
         r"""Sets the host_id of this AntiVirusTaskHostResponseInfo.
 
-        服务器ID
+        **参数解释**: 服务器ID **取值范围**: 字符长度1-64位 
 
         :param host_id: The host_id of this AntiVirusTaskHostResponseInfo.
         :type host_id: str
@@ -207,7 +207,7 @@ class AntiVirusTaskHostResponseInfo:
     def host_name(self):
         r"""Gets the host_name of this AntiVirusTaskHostResponseInfo.
 
-        服务器名称
+        **参数解释**: 服务器名称 **取值范围**: 字符长度1-256位 
 
         :return: The host_name of this AntiVirusTaskHostResponseInfo.
         :rtype: str
@@ -218,7 +218,7 @@ class AntiVirusTaskHostResponseInfo:
     def host_name(self, host_name):
         r"""Sets the host_name of this AntiVirusTaskHostResponseInfo.
 
-        服务器名称
+        **参数解释**: 服务器名称 **取值范围**: 字符长度1-256位 
 
         :param host_name: The host_name of this AntiVirusTaskHostResponseInfo.
         :type host_name: str
@@ -493,7 +493,7 @@ class AntiVirusTaskHostResponseInfo:
     def agent_id(self):
         r"""Gets the agent_id of this AntiVirusTaskHostResponseInfo.
 
-        Agent ID
+        **参数解释**: Agent ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :return: The agent_id of this AntiVirusTaskHostResponseInfo.
         :rtype: str
@@ -504,7 +504,7 @@ class AntiVirusTaskHostResponseInfo:
     def agent_id(self, agent_id):
         r"""Sets the agent_id of this AntiVirusTaskHostResponseInfo.
 
-        Agent ID
+        **参数解释**: Agent ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :param agent_id: The agent_id of this AntiVirusTaskHostResponseInfo.
         :type agent_id: str

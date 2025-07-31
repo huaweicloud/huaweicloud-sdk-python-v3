@@ -43,7 +43,7 @@ class CesRegion:
     TR_WEST_1 = Region("tr-west-1",
                         "https://ces.tr-west-1.myhuaweicloud.com")
     EU_WEST_101 = Region("eu-west-101",
-                        "https://ces.eu-west-101.myhuaweicloud.eu")
+                        "https://ces.eu-west-101.myhuaweicloud.com")
     ME_EAST_1 = Region("me-east-1",
                         "https://ces.me-east-1.myhuaweicloud.com")
     CN_EAST_5 = Region("cn-east-5",

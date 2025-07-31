@@ -63,11 +63,11 @@ class PoliciesInListResp:
         :type extra_info: :class:`huaweicloudsdkces.v2.MetricExtraInfo`
         :param period: 
         :type period: :class:`huaweicloudsdkces.v2.Period`
-        :param filter: 聚合方式, 支持的值为(average|min|max|sum)
+        :param filter: 聚合方式。average： 平均值，variance：方差，min：最小值，max：最大值，sum：求和，tp99：99百分位数，tp95：95百分位数，tp90：90百分位数
         :type filter: str
         :param comparison_operator: 阈值符号, 支持的值为(&gt;|&lt;|&gt;&#x3D;|&lt;&#x3D;|&#x3D;|!&#x3D;|cycle_decrease|cycle_increase|cycle_wave);cycle_decrease为环比下降,cycle_increase为环比上升,cycle_wave为环比波动； 指标告警可以使用的阈值符号有&gt;、&gt;&#x3D;、&lt;、&lt;&#x3D;、&#x3D;、!&#x3D;、cycle_decrease、cycle_increase、cycle_wave； 事件告警可以使用的阈值符号为&gt;、&gt;&#x3D;、&lt;、&lt;&#x3D;、&#x3D;、!&#x3D;； 
         :type comparison_operator: str
-        :param value: 告警阈值。单一阈值时value和alarm_level配对使用，当hierarchical_value和value同时使用时以hierarchical_value为准。取值范围[0, Number.MAX_VALUE]，Number.MAX_VALUE值为1.7976931348623157e+108。具体阈值取值请参见附录中各服务监控指标中取值范围，如支持监控的服务列表中ECS的CPU使用率cpu_util取值范围可配置80。 [具体阈值取值请参见附录中各服务监控指标中取值范围，如[支持监控的服务列表](ces_03_0059.xml)中ECS的CPU使用率cpu_util取值范围可配置80。](tag: dt,g42,dt_test,hk_g42,hk_sbc,hws,hws_hk,ocb,sbc,tm) 
+        :param value: 告警阈值。单一阈值时value和alarm_level配对使用，当hierarchical_value和value同时使用时以hierarchical_value为准。 具体阈值取值请参见附录中各服务监控指标中取值范围，如支持监控的服务列表中ECS的CPU使用率cpu_util取值范围可配置80。 [具体阈值取值请参见附录中各服务监控指标中取值范围，如[支持监控的服务列表](ces_03_0059.xml)中ECS的CPU使用率cpu_util取值范围可配置80。] 
         :type value: float
         :param hierarchical_value: 
         :type hierarchical_value: :class:`huaweicloudsdkces.v2.HierarchicalValue`
@@ -75,7 +75,7 @@ class PoliciesInListResp:
         :type unit: str
         :param count: 告警连续触发次数，事件告警时参数值为1~180（包括1和180）；指标告警和站点告警时，次数采用枚举值，枚举值分别为：1、2、3、4、5、10、15、30、60、90、120、180
         :type count: int
-        :param type: 告警策略类型。（暂时未使用）
+        :param type: 告警策略类型，已废弃，不推荐使用。
         :type type: str
         :param suppress_duration: 
         :type suppress_duration: :class:`huaweicloudsdkces.v2.SuppressDuration`
@@ -210,7 +210,7 @@ class PoliciesInListResp:
     def filter(self):
         r"""Gets the filter of this PoliciesInListResp.
 
-        聚合方式, 支持的值为(average|min|max|sum)
+        聚合方式。average： 平均值，variance：方差，min：最小值，max：最大值，sum：求和，tp99：99百分位数，tp95：95百分位数，tp90：90百分位数
 
         :return: The filter of this PoliciesInListResp.
         :rtype: str
@@ -221,7 +221,7 @@ class PoliciesInListResp:
     def filter(self, filter):
         r"""Sets the filter of this PoliciesInListResp.
 
-        聚合方式, 支持的值为(average|min|max|sum)
+        聚合方式。average： 平均值，variance：方差，min：最小值，max：最大值，sum：求和，tp99：99百分位数，tp95：95百分位数，tp90：90百分位数
 
         :param filter: The filter of this PoliciesInListResp.
         :type filter: str
@@ -254,7 +254,7 @@ class PoliciesInListResp:
     def value(self):
         r"""Gets the value of this PoliciesInListResp.
 
-        告警阈值。单一阈值时value和alarm_level配对使用，当hierarchical_value和value同时使用时以hierarchical_value为准。取值范围[0, Number.MAX_VALUE]，Number.MAX_VALUE值为1.7976931348623157e+108。具体阈值取值请参见附录中各服务监控指标中取值范围，如支持监控的服务列表中ECS的CPU使用率cpu_util取值范围可配置80。 [具体阈值取值请参见附录中各服务监控指标中取值范围，如[支持监控的服务列表](ces_03_0059.xml)中ECS的CPU使用率cpu_util取值范围可配置80。](tag: dt,g42,dt_test,hk_g42,hk_sbc,hws,hws_hk,ocb,sbc,tm) 
+        告警阈值。单一阈值时value和alarm_level配对使用，当hierarchical_value和value同时使用时以hierarchical_value为准。 具体阈值取值请参见附录中各服务监控指标中取值范围，如支持监控的服务列表中ECS的CPU使用率cpu_util取值范围可配置80。 [具体阈值取值请参见附录中各服务监控指标中取值范围，如[支持监控的服务列表](ces_03_0059.xml)中ECS的CPU使用率cpu_util取值范围可配置80。] 
 
         :return: The value of this PoliciesInListResp.
         :rtype: float
@@ -265,7 +265,7 @@ class PoliciesInListResp:
     def value(self, value):
         r"""Sets the value of this PoliciesInListResp.
 
-        告警阈值。单一阈值时value和alarm_level配对使用，当hierarchical_value和value同时使用时以hierarchical_value为准。取值范围[0, Number.MAX_VALUE]，Number.MAX_VALUE值为1.7976931348623157e+108。具体阈值取值请参见附录中各服务监控指标中取值范围，如支持监控的服务列表中ECS的CPU使用率cpu_util取值范围可配置80。 [具体阈值取值请参见附录中各服务监控指标中取值范围，如[支持监控的服务列表](ces_03_0059.xml)中ECS的CPU使用率cpu_util取值范围可配置80。](tag: dt,g42,dt_test,hk_g42,hk_sbc,hws,hws_hk,ocb,sbc,tm) 
+        告警阈值。单一阈值时value和alarm_level配对使用，当hierarchical_value和value同时使用时以hierarchical_value为准。 具体阈值取值请参见附录中各服务监控指标中取值范围，如支持监控的服务列表中ECS的CPU使用率cpu_util取值范围可配置80。 [具体阈值取值请参见附录中各服务监控指标中取值范围，如[支持监控的服务列表](ces_03_0059.xml)中ECS的CPU使用率cpu_util取值范围可配置80。] 
 
         :param value: The value of this PoliciesInListResp.
         :type value: float
@@ -338,7 +338,7 @@ class PoliciesInListResp:
     def type(self):
         r"""Gets the type of this PoliciesInListResp.
 
-        告警策略类型。（暂时未使用）
+        告警策略类型，已废弃，不推荐使用。
 
         :return: The type of this PoliciesInListResp.
         :rtype: str
@@ -349,7 +349,7 @@ class PoliciesInListResp:
     def type(self, type):
         r"""Sets the type of this PoliciesInListResp.
 
-        告警策略类型。（暂时未使用）
+        告警策略类型，已废弃，不推荐使用。
 
         :param type: The type of this PoliciesInListResp.
         :type type: str

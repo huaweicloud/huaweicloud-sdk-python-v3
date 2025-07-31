@@ -31,7 +31,7 @@ class HostVulInfo:
         'repair_cmd': 'str',
         'status': 'str',
         'repair_success_num': 'int',
-        'cve_list': 'list[GeneralImageVulsResponseInfoCveList]',
+        'cve_list': 'list[HostVulInfoCveList]',
         'is_affect_business': 'bool',
         'first_scan_time': 'int',
         'app_name': 'str',
@@ -75,53 +75,53 @@ class HostVulInfo:
 
         The model defined in huaweicloud sdk
 
-        :param vul_name: 漏洞名称
+        :param vul_name: **参数解释**: 漏洞名称 **取值范围**: 字符范围0-256位 
         :type vul_name: str
-        :param vul_id: 漏洞ID
+        :param vul_id: **参数解释**: 漏洞ID **取值范围**: 字符范围0-64位 
         :type vul_id: str
-        :param label_list: 漏洞标签列表
+        :param label_list: **参数解释**: 漏洞标签列表 **取值范围**: 最小值0，最大值2147483647 
         :type label_list: list[str]
-        :param repair_necessity: 修复紧急度，包括如下：   - immediate_repair : 尽快修复   - delay_repair : 延后修复   - not_needed_repair : 暂可不修复
+        :param repair_necessity: **参数解释**: 修复紧急度 **取值范围**: - immediate_repair  : 尽快修复 - delay_repair      : 延后修复 - not_needed_repair : 暂可不修复 
         :type repair_necessity: str
-        :param scan_time: 最近扫描时间
+        :param scan_time: **参数解释**: 最近扫描时间 **取值范围**: 最小值0，最大值9223372036854775807 
         :type scan_time: int
-        :param type: 漏洞类型，包含如下：   -linux_vul : linux漏洞   -windows_vul : windows漏洞   -web_cms : Web-CMS漏洞   -app_vul : 应用漏洞
+        :param type: **参数解释**: 漏洞类型 **取值范围**: - linux_vul   : linux漏洞 - windows_vul : windows漏洞 - web_cms     : Web-CMS漏洞 - app_vul     : 应用漏洞 - urgent_vul  : 应急漏洞 
         :type type: str
-        :param app_list: 服务器上受该漏洞影响的软件列表
+        :param app_list: **参数解释**: 服务器上受该漏洞影响的软件列表 **取值范围**: 最小值0，最大值2147483647 
         :type app_list: list[:class:`huaweicloudsdkhss.v5.HostVulInfoAppList`]
-        :param severity_level: 危险程度   - Critical : 漏洞cvss评分大于等于9；对应控制台页面的高危   - High : 漏洞cvss评分大于等于7，小于9；对应控制台页面的中危   - Medium : 漏洞cvss评分大于等于4，小于7；对应控制台页面的中危   - Low : 漏洞cvss评分小于4；对应控制台页面的低危
+        :param severity_level: **参数解释**: 危险程度 **取值范围**: - Critical : 漏洞cvss评分大于等于9；对应控制台页面的高危 - High     : 漏洞cvss评分大于等于7，小于9；对应控制台页面的中危 - Medium   : 漏洞cvss评分大于等于4，小于7；对应控制台页面的中危 - Low      : 漏洞cvss评分小于4；对应控制台页面的低危 
         :type severity_level: str
-        :param solution_detail: 解决方案
+        :param solution_detail: **参数解释**: 解决方案 **取值范围**: 字符范围0-65534位 
         :type solution_detail: str
-        :param url: URL链接
+        :param url: **参数解释**: URL链接 **取值范围**: 字符范围0-2083位 
         :type url: str
-        :param description: 漏洞描述
+        :param description: **参数解释**: 漏洞描述 **取值范围**: 字符范围0-65534位 
         :type description: str
-        :param repair_cmd: 修复命令行
+        :param repair_cmd: **参数解释**: 修复命令行 **取值范围**: 字符范围1-256位 
         :type repair_cmd: str
-        :param status: 漏洞状态   - vul_status_unfix : 未处理   - vul_status_ignored : 已忽略   - vul_status_verified : 验证中   - vul_status_fixing : 修复中   - vul_status_fixed : 修复成功   - vul_status_reboot : 修复成功待重启   - vul_status_failed : 修复失败   - vul_status_fix_after_reboot : 请重启主机再次修复
+        :param status: **参数解释**: 漏洞状态 **取值范围**: - vul_status_unfix            : 未处理 - vul_status_ignored          : 已忽略 - vul_status_verified         : 验证中 - vul_status_fixing           : 修复中 - vul_status_fixed            : 修复成功 - vul_status_reboot           : 修复成功待重启 - vul_status_failed           : 修复失败 - vul_status_fix_after_reboot : 请重启主机再次修复 
         :type status: str
-        :param repair_success_num: HSS全网修复该漏洞的次数
+        :param repair_success_num: **参数解释**: HSS全网修复该漏洞的次数 **取值范围**: 最小值0，最大值1000000 
         :type repair_success_num: int
-        :param cve_list: CVE列表
-        :type cve_list: list[:class:`huaweicloudsdkhss.v5.GeneralImageVulsResponseInfoCveList`]
-        :param is_affect_business: 是否影响业务
+        :param cve_list: **参数解释**: CVE列表 **取值范围**: 最小值1，最大值10000 
+        :type cve_list: list[:class:`huaweicloudsdkhss.v5.HostVulInfoCveList`]
+        :param is_affect_business: **参数解释**: 是否影响业务 **取值范围**: - true  : 影响业务 - false : 不影响业务 
         :type is_affect_business: bool
-        :param first_scan_time: 首次扫描时间
+        :param first_scan_time: **参数解释**: 首次扫描时间 **取值范围**: 最小值0，最大值9223372036854775807 
         :type first_scan_time: int
-        :param app_name: 软件名称
+        :param app_name: **参数解释**: 软件名称 **取值范围**: 字符长度0-256位 
         :type app_name: str
-        :param app_version: 软件版本
+        :param app_version: **参数解释**: 软件版本 **取值范围**: 字符长度0-256位 
         :type app_version: str
-        :param app_path: 软件路径
+        :param app_path: **参数解释**: 软件路径 **取值范围**: 字符长度0-512位 
         :type app_path: str
-        :param version: 主机配额
+        :param version: **参数解释**: 主机配额 **取值范围**: 字符长度0-128位 
         :type version: str
-        :param support_restore: 是否可以回滚到修复漏洞时创建的备份
+        :param support_restore: **参数解释**: 是否可以回滚到修复漏洞时创建的备份 **取值范围**: - true  : 可以回滚 - false : 不可以回滚 
         :type support_restore: bool
-        :param disabled_operate_types: 该漏洞不可进行的操作类型列表
+        :param disabled_operate_types: **参数解释**: 该漏洞不可进行的操作类型列表 **取值范围**: 最小值1，最大值10000 
         :type disabled_operate_types: list[:class:`huaweicloudsdkhss.v5.HostVulInfoDisabledOperateTypes`]
-        :param repair_priority: 修复优先级,包含如下 - Critical 紧急  - High 高  - Medium 中  - Low 低
+        :param repair_priority: **参数解释**: 修复优先级 **取值范围**: - Critical : 紧急  - High     : 高  - Medium   : 中  - Low      : 低 
         :type repair_priority: str
         """
         
@@ -206,7 +206,7 @@ class HostVulInfo:
     def vul_name(self):
         r"""Gets the vul_name of this HostVulInfo.
 
-        漏洞名称
+        **参数解释**: 漏洞名称 **取值范围**: 字符范围0-256位 
 
         :return: The vul_name of this HostVulInfo.
         :rtype: str
@@ -217,7 +217,7 @@ class HostVulInfo:
     def vul_name(self, vul_name):
         r"""Sets the vul_name of this HostVulInfo.
 
-        漏洞名称
+        **参数解释**: 漏洞名称 **取值范围**: 字符范围0-256位 
 
         :param vul_name: The vul_name of this HostVulInfo.
         :type vul_name: str
@@ -228,7 +228,7 @@ class HostVulInfo:
     def vul_id(self):
         r"""Gets the vul_id of this HostVulInfo.
 
-        漏洞ID
+        **参数解释**: 漏洞ID **取值范围**: 字符范围0-64位 
 
         :return: The vul_id of this HostVulInfo.
         :rtype: str
@@ -239,7 +239,7 @@ class HostVulInfo:
     def vul_id(self, vul_id):
         r"""Sets the vul_id of this HostVulInfo.
 
-        漏洞ID
+        **参数解释**: 漏洞ID **取值范围**: 字符范围0-64位 
 
         :param vul_id: The vul_id of this HostVulInfo.
         :type vul_id: str
@@ -250,7 +250,7 @@ class HostVulInfo:
     def label_list(self):
         r"""Gets the label_list of this HostVulInfo.
 
-        漏洞标签列表
+        **参数解释**: 漏洞标签列表 **取值范围**: 最小值0，最大值2147483647 
 
         :return: The label_list of this HostVulInfo.
         :rtype: list[str]
@@ -261,7 +261,7 @@ class HostVulInfo:
     def label_list(self, label_list):
         r"""Sets the label_list of this HostVulInfo.
 
-        漏洞标签列表
+        **参数解释**: 漏洞标签列表 **取值范围**: 最小值0，最大值2147483647 
 
         :param label_list: The label_list of this HostVulInfo.
         :type label_list: list[str]
@@ -272,7 +272,7 @@ class HostVulInfo:
     def repair_necessity(self):
         r"""Gets the repair_necessity of this HostVulInfo.
 
-        修复紧急度，包括如下：   - immediate_repair : 尽快修复   - delay_repair : 延后修复   - not_needed_repair : 暂可不修复
+        **参数解释**: 修复紧急度 **取值范围**: - immediate_repair  : 尽快修复 - delay_repair      : 延后修复 - not_needed_repair : 暂可不修复 
 
         :return: The repair_necessity of this HostVulInfo.
         :rtype: str
@@ -283,7 +283,7 @@ class HostVulInfo:
     def repair_necessity(self, repair_necessity):
         r"""Sets the repair_necessity of this HostVulInfo.
 
-        修复紧急度，包括如下：   - immediate_repair : 尽快修复   - delay_repair : 延后修复   - not_needed_repair : 暂可不修复
+        **参数解释**: 修复紧急度 **取值范围**: - immediate_repair  : 尽快修复 - delay_repair      : 延后修复 - not_needed_repair : 暂可不修复 
 
         :param repair_necessity: The repair_necessity of this HostVulInfo.
         :type repair_necessity: str
@@ -294,7 +294,7 @@ class HostVulInfo:
     def scan_time(self):
         r"""Gets the scan_time of this HostVulInfo.
 
-        最近扫描时间
+        **参数解释**: 最近扫描时间 **取值范围**: 最小值0，最大值9223372036854775807 
 
         :return: The scan_time of this HostVulInfo.
         :rtype: int
@@ -305,7 +305,7 @@ class HostVulInfo:
     def scan_time(self, scan_time):
         r"""Sets the scan_time of this HostVulInfo.
 
-        最近扫描时间
+        **参数解释**: 最近扫描时间 **取值范围**: 最小值0，最大值9223372036854775807 
 
         :param scan_time: The scan_time of this HostVulInfo.
         :type scan_time: int
@@ -316,7 +316,7 @@ class HostVulInfo:
     def type(self):
         r"""Gets the type of this HostVulInfo.
 
-        漏洞类型，包含如下：   -linux_vul : linux漏洞   -windows_vul : windows漏洞   -web_cms : Web-CMS漏洞   -app_vul : 应用漏洞
+        **参数解释**: 漏洞类型 **取值范围**: - linux_vul   : linux漏洞 - windows_vul : windows漏洞 - web_cms     : Web-CMS漏洞 - app_vul     : 应用漏洞 - urgent_vul  : 应急漏洞 
 
         :return: The type of this HostVulInfo.
         :rtype: str
@@ -327,7 +327,7 @@ class HostVulInfo:
     def type(self, type):
         r"""Sets the type of this HostVulInfo.
 
-        漏洞类型，包含如下：   -linux_vul : linux漏洞   -windows_vul : windows漏洞   -web_cms : Web-CMS漏洞   -app_vul : 应用漏洞
+        **参数解释**: 漏洞类型 **取值范围**: - linux_vul   : linux漏洞 - windows_vul : windows漏洞 - web_cms     : Web-CMS漏洞 - app_vul     : 应用漏洞 - urgent_vul  : 应急漏洞 
 
         :param type: The type of this HostVulInfo.
         :type type: str
@@ -338,7 +338,7 @@ class HostVulInfo:
     def app_list(self):
         r"""Gets the app_list of this HostVulInfo.
 
-        服务器上受该漏洞影响的软件列表
+        **参数解释**: 服务器上受该漏洞影响的软件列表 **取值范围**: 最小值0，最大值2147483647 
 
         :return: The app_list of this HostVulInfo.
         :rtype: list[:class:`huaweicloudsdkhss.v5.HostVulInfoAppList`]
@@ -349,7 +349,7 @@ class HostVulInfo:
     def app_list(self, app_list):
         r"""Sets the app_list of this HostVulInfo.
 
-        服务器上受该漏洞影响的软件列表
+        **参数解释**: 服务器上受该漏洞影响的软件列表 **取值范围**: 最小值0，最大值2147483647 
 
         :param app_list: The app_list of this HostVulInfo.
         :type app_list: list[:class:`huaweicloudsdkhss.v5.HostVulInfoAppList`]
@@ -360,7 +360,7 @@ class HostVulInfo:
     def severity_level(self):
         r"""Gets the severity_level of this HostVulInfo.
 
-        危险程度   - Critical : 漏洞cvss评分大于等于9；对应控制台页面的高危   - High : 漏洞cvss评分大于等于7，小于9；对应控制台页面的中危   - Medium : 漏洞cvss评分大于等于4，小于7；对应控制台页面的中危   - Low : 漏洞cvss评分小于4；对应控制台页面的低危
+        **参数解释**: 危险程度 **取值范围**: - Critical : 漏洞cvss评分大于等于9；对应控制台页面的高危 - High     : 漏洞cvss评分大于等于7，小于9；对应控制台页面的中危 - Medium   : 漏洞cvss评分大于等于4，小于7；对应控制台页面的中危 - Low      : 漏洞cvss评分小于4；对应控制台页面的低危 
 
         :return: The severity_level of this HostVulInfo.
         :rtype: str
@@ -371,7 +371,7 @@ class HostVulInfo:
     def severity_level(self, severity_level):
         r"""Sets the severity_level of this HostVulInfo.
 
-        危险程度   - Critical : 漏洞cvss评分大于等于9；对应控制台页面的高危   - High : 漏洞cvss评分大于等于7，小于9；对应控制台页面的中危   - Medium : 漏洞cvss评分大于等于4，小于7；对应控制台页面的中危   - Low : 漏洞cvss评分小于4；对应控制台页面的低危
+        **参数解释**: 危险程度 **取值范围**: - Critical : 漏洞cvss评分大于等于9；对应控制台页面的高危 - High     : 漏洞cvss评分大于等于7，小于9；对应控制台页面的中危 - Medium   : 漏洞cvss评分大于等于4，小于7；对应控制台页面的中危 - Low      : 漏洞cvss评分小于4；对应控制台页面的低危 
 
         :param severity_level: The severity_level of this HostVulInfo.
         :type severity_level: str
@@ -382,7 +382,7 @@ class HostVulInfo:
     def solution_detail(self):
         r"""Gets the solution_detail of this HostVulInfo.
 
-        解决方案
+        **参数解释**: 解决方案 **取值范围**: 字符范围0-65534位 
 
         :return: The solution_detail of this HostVulInfo.
         :rtype: str
@@ -393,7 +393,7 @@ class HostVulInfo:
     def solution_detail(self, solution_detail):
         r"""Sets the solution_detail of this HostVulInfo.
 
-        解决方案
+        **参数解释**: 解决方案 **取值范围**: 字符范围0-65534位 
 
         :param solution_detail: The solution_detail of this HostVulInfo.
         :type solution_detail: str
@@ -404,7 +404,7 @@ class HostVulInfo:
     def url(self):
         r"""Gets the url of this HostVulInfo.
 
-        URL链接
+        **参数解释**: URL链接 **取值范围**: 字符范围0-2083位 
 
         :return: The url of this HostVulInfo.
         :rtype: str
@@ -415,7 +415,7 @@ class HostVulInfo:
     def url(self, url):
         r"""Sets the url of this HostVulInfo.
 
-        URL链接
+        **参数解释**: URL链接 **取值范围**: 字符范围0-2083位 
 
         :param url: The url of this HostVulInfo.
         :type url: str
@@ -426,7 +426,7 @@ class HostVulInfo:
     def description(self):
         r"""Gets the description of this HostVulInfo.
 
-        漏洞描述
+        **参数解释**: 漏洞描述 **取值范围**: 字符范围0-65534位 
 
         :return: The description of this HostVulInfo.
         :rtype: str
@@ -437,7 +437,7 @@ class HostVulInfo:
     def description(self, description):
         r"""Sets the description of this HostVulInfo.
 
-        漏洞描述
+        **参数解释**: 漏洞描述 **取值范围**: 字符范围0-65534位 
 
         :param description: The description of this HostVulInfo.
         :type description: str
@@ -448,7 +448,7 @@ class HostVulInfo:
     def repair_cmd(self):
         r"""Gets the repair_cmd of this HostVulInfo.
 
-        修复命令行
+        **参数解释**: 修复命令行 **取值范围**: 字符范围1-256位 
 
         :return: The repair_cmd of this HostVulInfo.
         :rtype: str
@@ -459,7 +459,7 @@ class HostVulInfo:
     def repair_cmd(self, repair_cmd):
         r"""Sets the repair_cmd of this HostVulInfo.
 
-        修复命令行
+        **参数解释**: 修复命令行 **取值范围**: 字符范围1-256位 
 
         :param repair_cmd: The repair_cmd of this HostVulInfo.
         :type repair_cmd: str
@@ -470,7 +470,7 @@ class HostVulInfo:
     def status(self):
         r"""Gets the status of this HostVulInfo.
 
-        漏洞状态   - vul_status_unfix : 未处理   - vul_status_ignored : 已忽略   - vul_status_verified : 验证中   - vul_status_fixing : 修复中   - vul_status_fixed : 修复成功   - vul_status_reboot : 修复成功待重启   - vul_status_failed : 修复失败   - vul_status_fix_after_reboot : 请重启主机再次修复
+        **参数解释**: 漏洞状态 **取值范围**: - vul_status_unfix            : 未处理 - vul_status_ignored          : 已忽略 - vul_status_verified         : 验证中 - vul_status_fixing           : 修复中 - vul_status_fixed            : 修复成功 - vul_status_reboot           : 修复成功待重启 - vul_status_failed           : 修复失败 - vul_status_fix_after_reboot : 请重启主机再次修复 
 
         :return: The status of this HostVulInfo.
         :rtype: str
@@ -481,7 +481,7 @@ class HostVulInfo:
     def status(self, status):
         r"""Sets the status of this HostVulInfo.
 
-        漏洞状态   - vul_status_unfix : 未处理   - vul_status_ignored : 已忽略   - vul_status_verified : 验证中   - vul_status_fixing : 修复中   - vul_status_fixed : 修复成功   - vul_status_reboot : 修复成功待重启   - vul_status_failed : 修复失败   - vul_status_fix_after_reboot : 请重启主机再次修复
+        **参数解释**: 漏洞状态 **取值范围**: - vul_status_unfix            : 未处理 - vul_status_ignored          : 已忽略 - vul_status_verified         : 验证中 - vul_status_fixing           : 修复中 - vul_status_fixed            : 修复成功 - vul_status_reboot           : 修复成功待重启 - vul_status_failed           : 修复失败 - vul_status_fix_after_reboot : 请重启主机再次修复 
 
         :param status: The status of this HostVulInfo.
         :type status: str
@@ -492,7 +492,7 @@ class HostVulInfo:
     def repair_success_num(self):
         r"""Gets the repair_success_num of this HostVulInfo.
 
-        HSS全网修复该漏洞的次数
+        **参数解释**: HSS全网修复该漏洞的次数 **取值范围**: 最小值0，最大值1000000 
 
         :return: The repair_success_num of this HostVulInfo.
         :rtype: int
@@ -503,7 +503,7 @@ class HostVulInfo:
     def repair_success_num(self, repair_success_num):
         r"""Sets the repair_success_num of this HostVulInfo.
 
-        HSS全网修复该漏洞的次数
+        **参数解释**: HSS全网修复该漏洞的次数 **取值范围**: 最小值0，最大值1000000 
 
         :param repair_success_num: The repair_success_num of this HostVulInfo.
         :type repair_success_num: int
@@ -514,10 +514,10 @@ class HostVulInfo:
     def cve_list(self):
         r"""Gets the cve_list of this HostVulInfo.
 
-        CVE列表
+        **参数解释**: CVE列表 **取值范围**: 最小值1，最大值10000 
 
         :return: The cve_list of this HostVulInfo.
-        :rtype: list[:class:`huaweicloudsdkhss.v5.GeneralImageVulsResponseInfoCveList`]
+        :rtype: list[:class:`huaweicloudsdkhss.v5.HostVulInfoCveList`]
         """
         return self._cve_list
 
@@ -525,10 +525,10 @@ class HostVulInfo:
     def cve_list(self, cve_list):
         r"""Sets the cve_list of this HostVulInfo.
 
-        CVE列表
+        **参数解释**: CVE列表 **取值范围**: 最小值1，最大值10000 
 
         :param cve_list: The cve_list of this HostVulInfo.
-        :type cve_list: list[:class:`huaweicloudsdkhss.v5.GeneralImageVulsResponseInfoCveList`]
+        :type cve_list: list[:class:`huaweicloudsdkhss.v5.HostVulInfoCveList`]
         """
         self._cve_list = cve_list
 
@@ -536,7 +536,7 @@ class HostVulInfo:
     def is_affect_business(self):
         r"""Gets the is_affect_business of this HostVulInfo.
 
-        是否影响业务
+        **参数解释**: 是否影响业务 **取值范围**: - true  : 影响业务 - false : 不影响业务 
 
         :return: The is_affect_business of this HostVulInfo.
         :rtype: bool
@@ -547,7 +547,7 @@ class HostVulInfo:
     def is_affect_business(self, is_affect_business):
         r"""Sets the is_affect_business of this HostVulInfo.
 
-        是否影响业务
+        **参数解释**: 是否影响业务 **取值范围**: - true  : 影响业务 - false : 不影响业务 
 
         :param is_affect_business: The is_affect_business of this HostVulInfo.
         :type is_affect_business: bool
@@ -558,7 +558,7 @@ class HostVulInfo:
     def first_scan_time(self):
         r"""Gets the first_scan_time of this HostVulInfo.
 
-        首次扫描时间
+        **参数解释**: 首次扫描时间 **取值范围**: 最小值0，最大值9223372036854775807 
 
         :return: The first_scan_time of this HostVulInfo.
         :rtype: int
@@ -569,7 +569,7 @@ class HostVulInfo:
     def first_scan_time(self, first_scan_time):
         r"""Sets the first_scan_time of this HostVulInfo.
 
-        首次扫描时间
+        **参数解释**: 首次扫描时间 **取值范围**: 最小值0，最大值9223372036854775807 
 
         :param first_scan_time: The first_scan_time of this HostVulInfo.
         :type first_scan_time: int
@@ -580,7 +580,7 @@ class HostVulInfo:
     def app_name(self):
         r"""Gets the app_name of this HostVulInfo.
 
-        软件名称
+        **参数解释**: 软件名称 **取值范围**: 字符长度0-256位 
 
         :return: The app_name of this HostVulInfo.
         :rtype: str
@@ -591,7 +591,7 @@ class HostVulInfo:
     def app_name(self, app_name):
         r"""Sets the app_name of this HostVulInfo.
 
-        软件名称
+        **参数解释**: 软件名称 **取值范围**: 字符长度0-256位 
 
         :param app_name: The app_name of this HostVulInfo.
         :type app_name: str
@@ -602,7 +602,7 @@ class HostVulInfo:
     def app_version(self):
         r"""Gets the app_version of this HostVulInfo.
 
-        软件版本
+        **参数解释**: 软件版本 **取值范围**: 字符长度0-256位 
 
         :return: The app_version of this HostVulInfo.
         :rtype: str
@@ -613,7 +613,7 @@ class HostVulInfo:
     def app_version(self, app_version):
         r"""Sets the app_version of this HostVulInfo.
 
-        软件版本
+        **参数解释**: 软件版本 **取值范围**: 字符长度0-256位 
 
         :param app_version: The app_version of this HostVulInfo.
         :type app_version: str
@@ -624,7 +624,7 @@ class HostVulInfo:
     def app_path(self):
         r"""Gets the app_path of this HostVulInfo.
 
-        软件路径
+        **参数解释**: 软件路径 **取值范围**: 字符长度0-512位 
 
         :return: The app_path of this HostVulInfo.
         :rtype: str
@@ -635,7 +635,7 @@ class HostVulInfo:
     def app_path(self, app_path):
         r"""Sets the app_path of this HostVulInfo.
 
-        软件路径
+        **参数解释**: 软件路径 **取值范围**: 字符长度0-512位 
 
         :param app_path: The app_path of this HostVulInfo.
         :type app_path: str
@@ -646,7 +646,7 @@ class HostVulInfo:
     def version(self):
         r"""Gets the version of this HostVulInfo.
 
-        主机配额
+        **参数解释**: 主机配额 **取值范围**: 字符长度0-128位 
 
         :return: The version of this HostVulInfo.
         :rtype: str
@@ -657,7 +657,7 @@ class HostVulInfo:
     def version(self, version):
         r"""Sets the version of this HostVulInfo.
 
-        主机配额
+        **参数解释**: 主机配额 **取值范围**: 字符长度0-128位 
 
         :param version: The version of this HostVulInfo.
         :type version: str
@@ -668,7 +668,7 @@ class HostVulInfo:
     def support_restore(self):
         r"""Gets the support_restore of this HostVulInfo.
 
-        是否可以回滚到修复漏洞时创建的备份
+        **参数解释**: 是否可以回滚到修复漏洞时创建的备份 **取值范围**: - true  : 可以回滚 - false : 不可以回滚 
 
         :return: The support_restore of this HostVulInfo.
         :rtype: bool
@@ -679,7 +679,7 @@ class HostVulInfo:
     def support_restore(self, support_restore):
         r"""Sets the support_restore of this HostVulInfo.
 
-        是否可以回滚到修复漏洞时创建的备份
+        **参数解释**: 是否可以回滚到修复漏洞时创建的备份 **取值范围**: - true  : 可以回滚 - false : 不可以回滚 
 
         :param support_restore: The support_restore of this HostVulInfo.
         :type support_restore: bool
@@ -690,7 +690,7 @@ class HostVulInfo:
     def disabled_operate_types(self):
         r"""Gets the disabled_operate_types of this HostVulInfo.
 
-        该漏洞不可进行的操作类型列表
+        **参数解释**: 该漏洞不可进行的操作类型列表 **取值范围**: 最小值1，最大值10000 
 
         :return: The disabled_operate_types of this HostVulInfo.
         :rtype: list[:class:`huaweicloudsdkhss.v5.HostVulInfoDisabledOperateTypes`]
@@ -701,7 +701,7 @@ class HostVulInfo:
     def disabled_operate_types(self, disabled_operate_types):
         r"""Sets the disabled_operate_types of this HostVulInfo.
 
-        该漏洞不可进行的操作类型列表
+        **参数解释**: 该漏洞不可进行的操作类型列表 **取值范围**: 最小值1，最大值10000 
 
         :param disabled_operate_types: The disabled_operate_types of this HostVulInfo.
         :type disabled_operate_types: list[:class:`huaweicloudsdkhss.v5.HostVulInfoDisabledOperateTypes`]
@@ -712,7 +712,7 @@ class HostVulInfo:
     def repair_priority(self):
         r"""Gets the repair_priority of this HostVulInfo.
 
-        修复优先级,包含如下 - Critical 紧急  - High 高  - Medium 中  - Low 低
+        **参数解释**: 修复优先级 **取值范围**: - Critical : 紧急  - High     : 高  - Medium   : 中  - Low      : 低 
 
         :return: The repair_priority of this HostVulInfo.
         :rtype: str
@@ -723,7 +723,7 @@ class HostVulInfo:
     def repair_priority(self, repair_priority):
         r"""Sets the repair_priority of this HostVulInfo.
 
-        修复优先级,包含如下 - Critical 紧急  - High 高  - Medium 中  - Low 低
+        **参数解释**: 修复优先级 **取值范围**: - Critical : 紧急  - High     : 高  - Medium   : 中  - Low      : 低 
 
         :param repair_priority: The repair_priority of this HostVulInfo.
         :type repair_priority: str

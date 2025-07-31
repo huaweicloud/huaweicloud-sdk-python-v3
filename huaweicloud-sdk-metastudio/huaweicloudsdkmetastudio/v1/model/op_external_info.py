@@ -17,29 +17,36 @@ class OpExternalInfo:
     sensitive_list = []
 
     openapi_types = {
-        'review_id_list': 'list[str]'
+        'review_id_list': 'list[str]',
+        'algorithm_failure_reason': 'str'
     }
 
     attribute_map = {
-        'review_id_list': 'review_id_list'
+        'review_id_list': 'review_id_list',
+        'algorithm_failure_reason': 'algorithm_failure_reason'
     }
 
-    def __init__(self, review_id_list=None):
+    def __init__(self, review_id_list=None, algorithm_failure_reason=None):
         r"""OpExternalInfo
 
         The model defined in huaweicloud sdk
 
         :param review_id_list: 审核详情id列表
         :type review_id_list: list[str]
+        :param algorithm_failure_reason: 算法侧失败原因
+        :type algorithm_failure_reason: str
         """
         
         
 
         self._review_id_list = None
+        self._algorithm_failure_reason = None
         self.discriminator = None
 
         if review_id_list is not None:
             self.review_id_list = review_id_list
+        if algorithm_failure_reason is not None:
+            self.algorithm_failure_reason = algorithm_failure_reason
 
     @property
     def review_id_list(self):
@@ -62,6 +69,28 @@ class OpExternalInfo:
         :type review_id_list: list[str]
         """
         self._review_id_list = review_id_list
+
+    @property
+    def algorithm_failure_reason(self):
+        r"""Gets the algorithm_failure_reason of this OpExternalInfo.
+
+        算法侧失败原因
+
+        :return: The algorithm_failure_reason of this OpExternalInfo.
+        :rtype: str
+        """
+        return self._algorithm_failure_reason
+
+    @algorithm_failure_reason.setter
+    def algorithm_failure_reason(self, algorithm_failure_reason):
+        r"""Sets the algorithm_failure_reason of this OpExternalInfo.
+
+        算法侧失败原因
+
+        :param algorithm_failure_reason: The algorithm_failure_reason of this OpExternalInfo.
+        :type algorithm_failure_reason: str
+        """
+        self._algorithm_failure_reason = algorithm_failure_reason
 
     def to_dict(self):
         """Returns the model properties as a dict"""

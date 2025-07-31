@@ -2073,7 +2073,7 @@ class CfwAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
-        response_headers = ["Content-Disposition", "Content-Length", "Content-Type", ]
+        response_headers = ["Content-Disposition", "Content-Type", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -2599,6 +2599,86 @@ class CfwAsyncClient(Client):
             query_params.append(('src_city_name', local_var_params['src_city_name']))
         if 'dst_city_name' in local_var_params:
             query_params.append(('dst_city_name', local_var_params['dst_city_name']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_attack_statistic_async(self, request):
+        r"""查询攻击统计
+
+        根据防火墙攻击日志，查询攻击统计信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListAttackStatistic
+        :type request: :class:`huaweicloudsdkcfw.v1.ListAttackStatisticRequest`
+        :rtype: :class:`huaweicloudsdkcfw.v1.ListAttackStatisticResponse`
+        """
+        http_info = self._list_attack_statistic_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_attack_statistic_async_invoker(self, request):
+        http_info = self._list_attack_statistic_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_attack_statistic_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cfw/logs/attack-statistic",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAttackStatisticResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'fw_instance_id' in local_var_params:
+            query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
+        if 'range' in local_var_params:
+            query_params.append(('range', local_var_params['range']))
+        if 'log_type' in local_var_params:
+            query_params.append(('log_type', local_var_params['log_type']))
+        if 'direction' in local_var_params:
+            query_params.append(('direction', local_var_params['direction']))
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'vgw_id' in local_var_params:
+            query_params.append(('vgw_id', local_var_params['vgw_id']))
+            collection_formats['vgw_id'] = 'csv'
+        if 'item' in local_var_params:
+            query_params.append(('item', local_var_params['item']))
 
         header_params = {}
 
@@ -4377,6 +4457,89 @@ class CfwAsyncClient(Client):
 
         return http_info
 
+    def show_access_top_async(self, request):
+        r"""查询访问日志统计信息
+
+        获取访问日志的TOP统计信息，如TOP命中规则等
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowAccessTop
+        :type request: :class:`huaweicloudsdkcfw.v1.ShowAccessTopRequest`
+        :rtype: :class:`huaweicloudsdkcfw.v1.ShowAccessTopResponse`
+        """
+        http_info = self._show_access_top_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_access_top_async_invoker(self, request):
+        http_info = self._show_access_top_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_access_top_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cfw/logs/access-top",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAccessTopResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'fw_instance_id' in local_var_params:
+            query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
+        if 'direction' in local_var_params:
+            query_params.append(('direction', local_var_params['direction']))
+        if 'range' in local_var_params:
+            query_params.append(('range', local_var_params['range']))
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'vgw_id' in local_var_params:
+            query_params.append(('vgw_id', local_var_params['vgw_id']))
+            collection_formats['vgw_id'] = 'csv'
+        if 'log_type' in local_var_params:
+            query_params.append(('log_type', local_var_params['log_type']))
+        if 'item' in local_var_params:
+            query_params.append(('item', local_var_params['item']))
+        if 'rule_id' in local_var_params:
+            query_params.append(('rule_id', local_var_params['rule_id']))
+            collection_formats['rule_id'] = 'csv'
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_alarm_config_async(self, request):
         r"""获取告警配置信息
 
@@ -4584,6 +4747,158 @@ class CfwAsyncClient(Client):
 
         return http_info
 
+    def show_attack_total_async(self, request):
+        r"""查询攻击概览
+
+        查询攻击概览
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowAttackTotal
+        :type request: :class:`huaweicloudsdkcfw.v1.ShowAttackTotalRequest`
+        :rtype: :class:`huaweicloudsdkcfw.v1.ShowAttackTotalResponse`
+        """
+        http_info = self._show_attack_total_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_attack_total_async_invoker(self, request):
+        http_info = self._show_attack_total_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_attack_total_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cfw/logs/total-attack",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAttackTotalResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'fw_instance_id' in local_var_params:
+            query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
+        if 'range' in local_var_params:
+            query_params.append(('range', local_var_params['range']))
+        if 'log_type' in local_var_params:
+            query_params.append(('log_type', local_var_params['log_type']))
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'vgw_id' in local_var_params:
+            query_params.append(('vgw_id', local_var_params['vgw_id']))
+            collection_formats['vgw_id'] = 'csv'
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_attack_trend_async(self, request):
+        r"""查询攻击趋势
+
+        查询攻击趋势
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowAttackTrend
+        :type request: :class:`huaweicloudsdkcfw.v1.ShowAttackTrendRequest`
+        :rtype: :class:`huaweicloudsdkcfw.v1.ShowAttackTrendResponse`
+        """
+        http_info = self._show_attack_trend_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_attack_trend_async_invoker(self, request):
+        http_info = self._show_attack_trend_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_attack_trend_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cfw/logs/trend-attack",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAttackTrendResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'fw_instance_id' in local_var_params:
+            query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
+        if 'range' in local_var_params:
+            query_params.append(('range', local_var_params['range']))
+        if 'log_type' in local_var_params:
+            query_params.append(('log_type', local_var_params['log_type']))
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'vgw_id' in local_var_params:
+            query_params.append(('vgw_id', local_var_params['vgw_id']))
+            collection_formats['vgw_id'] = 'csv'
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_domain_set_detail_async(self, request):
         r"""查看域名组详情
 
@@ -4626,6 +4941,87 @@ class CfwAsyncClient(Client):
             query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
         if 'enterprise_project_id' in local_var_params:
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_traffic_trend_async(self, request):
+        r"""查询流量趋势
+
+        查询流量趋势，包括南北向、EIP、东西向的流量趋势
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowTrafficTrend
+        :type request: :class:`huaweicloudsdkcfw.v1.ShowTrafficTrendRequest`
+        :rtype: :class:`huaweicloudsdkcfw.v1.ShowTrafficTrendResponse`
+        """
+        http_info = self._show_traffic_trend_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_traffic_trend_async_invoker(self, request):
+        http_info = self._show_traffic_trend_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_traffic_trend_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cfw/logs/traffic-trend",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTrafficTrendResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'fw_instance_id' in local_var_params:
+            query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
+        if 'range' in local_var_params:
+            query_params.append(('range', local_var_params['range']))
+        if 'log_type' in local_var_params:
+            query_params.append(('log_type', local_var_params['log_type']))
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'vgw_id' in local_var_params:
+            query_params.append(('vgw_id', local_var_params['vgw_id']))
+            collection_formats['vgw_id'] = 'csv'
+        if 'agg_type' in local_var_params:
+            query_params.append(('agg_type', local_var_params['agg_type']))
+        if 'ip' in local_var_params:
+            query_params.append(('ip', local_var_params['ip']))
+            collection_formats['ip'] = 'multi'
 
         header_params = {}
 
@@ -7225,6 +7621,75 @@ class CfwAsyncClient(Client):
 
         return http_info
 
+    def show_customer_ips_info_async(self, request):
+        r"""查询自定义IPS规则详情
+
+        功能说明：自定义IPS规则详情，特性:根据路径输入的IPS ID查看对应的自定义IPS详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowCustomerIpsInfo
+        :type request: :class:`huaweicloudsdkcfw.v1.ShowCustomerIpsInfoRequest`
+        :rtype: :class:`huaweicloudsdkcfw.v1.ShowCustomerIpsInfoResponse`
+        """
+        http_info = self._show_customer_ips_info_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_customer_ips_info_async_invoker(self, request):
+        http_info = self._show_customer_ips_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_customer_ips_info_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/ips/custom-rule/{ips_cfw_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCustomerIpsInfoResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'ips_cfw_id' in local_var_params:
+            path_params['ips_cfw_id'] = local_var_params['ips_cfw_id']
+
+        query_params = []
+        if 'fw_instance_id' in local_var_params:
+            query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
+        if 'object_id' in local_var_params:
+            query_params.append(('object_id', local_var_params['object_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_ips_update_time_async(self, request):
         r"""获取ips规则细节
 
@@ -7332,6 +7797,73 @@ class CfwAsyncClient(Client):
             query_params.append(('fw_instance_id', local_var_params['fw_instance_id']))
         if 'enterprise_project_id' in local_var_params:
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_customer_ips_async(self, request):
+        r"""更新自定义IPS规则
+
+        更新自定义IPS规则
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateCustomerIps
+        :type request: :class:`huaweicloudsdkcfw.v1.UpdateCustomerIpsRequest`
+        :rtype: :class:`huaweicloudsdkcfw.v1.UpdateCustomerIpsResponse`
+        """
+        http_info = self._update_customer_ips_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_customer_ips_async_invoker(self, request):
+        http_info = self._update_customer_ips_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_customer_ips_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/ips/custom-rule/{ips_cfw_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateCustomerIpsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'ips_cfw_id' in local_var_params:
+            path_params['ips_cfw_id'] = local_var_params['ips_cfw_id']
+
+        query_params = []
 
         header_params = {}
 

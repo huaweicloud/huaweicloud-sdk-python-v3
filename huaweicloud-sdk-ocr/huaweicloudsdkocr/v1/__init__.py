@@ -29,7 +29,7 @@ from huaweicloudsdkocr.v1.model.business_license_result import BusinessLicenseRe
 from huaweicloudsdkocr.v1.model.cambodian_id_card_request_body import CambodianIdCardRequestBody
 from huaweicloudsdkocr.v1.model.cambodian_id_card_result import CambodianIdCardResult
 from huaweicloudsdkocr.v1.model.cambodian_id_card_score_information_result import CambodianIdCardScoreInformationResult
-from huaweicloudsdkocr.v1.model.char_list_iem import CharListIem
+from huaweicloudsdkocr.v1.model.char_list_item import CharListItem
 from huaweicloudsdkocr.v1.model.chile_id_card_confidence import ChileIdCardConfidence
 from huaweicloudsdkocr.v1.model.chile_id_card_request_body import ChileIdCardRequestBody
 from huaweicloudsdkocr.v1.model.chile_id_card_result import ChileIdCardResult
@@ -278,6 +278,6 @@ from huaweicloudsdkocr.v1.model.web_image_image_size import WebImageImageSize
 from huaweicloudsdkocr.v1.model.web_image_request_body import WebImageRequestBody
 from huaweicloudsdkocr.v1.model.web_image_result import WebImageResult
 from huaweicloudsdkocr.v1.model.web_image_words_block_list import WebImageWordsBlockList
-from huaweicloudsdkocr.v1.model.words_list_iem import WordsListIem
+from huaweicloudsdkocr.v1.model.words_list_item import WordsListItem
 from huaweicloudsdkocr.v1.model.words_region_list import WordsRegionList
 

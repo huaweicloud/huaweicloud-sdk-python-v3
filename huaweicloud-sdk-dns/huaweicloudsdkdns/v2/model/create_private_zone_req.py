@@ -45,23 +45,23 @@ class CreatePrivateZoneReq:
 
         The model defined in huaweicloud sdk
 
-        :param name: 待创建的域名。
+        :param name: **参数解释：** 域名。 **约束限制：** 不涉及。 **取值范围：** 由多个以点分隔的字符串组成，可包含字母、数字、汉字、中划线，中划线不能在开头或末尾，单个字符串不超过63个字符，域名总长度不超过254个字符。 **默认取值：** 不涉及。
         :type name: str
-        :param description: 域名的描述信息。
+        :param description: **参数解释：** 域名的描述信息。 **约束限制：** 不涉及。 **取值范围：** 长度不超过255个字符。 **默认取值：** 不涉及。
         :type description: str
-        :param zone_type: 域名类型。取值：private。
+        :param zone_type: **参数解释：** 域名类型。 **约束限制：** 不涉及。 **取值范围：** private：内网域名。 **默认取值：** 不涉及。
         :type zone_type: str
-        :param email: 管理该域名的管理员邮箱，用于生成该域名的SOA记录。
+        :param email: **参数解释：** 管理该域名的管理员邮箱，用于生成该域名的SOA记录。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type email: str
-        :param ttl: 用于填写默认生成的SOA记录中有效缓存时间，以秒为单位。
+        :param ttl: **参数解释：** 用于填写默认生成的SOA记录中有效缓存时间，以秒为单位。 **约束限制：** 不涉及。 **取值范围：** 1~2147483647。 **默认取值：** 300
         :type ttl: int
         :param router: 
         :type router: :class:`huaweicloudsdkdns.v2.Router`
-        :param proxy_pattern: 内网域名的子域名递归解析代理模式。  取值范围：  AUTHORITY：当前域名未开启递归解析代理 RECURSIVE：当前域名已开启递归解析代理
+        :param proxy_pattern: **参数解释：** 内网域名的子域名递归解析代理模式。 **约束限制：** 不涉及。 **取值范围：** - AUTHORITY：当前域名未开启递归解析代理 - RECURSIVE：当前域名已开启递归解析代理  **默认取值：** AUTHORITY。
         :type proxy_pattern: str
-        :param tags: 资源标签。
+        :param tags: **参数解释：** 资源标签。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type tags: list[:class:`huaweicloudsdkdns.v2.Tag`]
-        :param enterprise_project_id: 域名关联的企业项目ID，长度不超过36个字符。默认值为0。
+        :param enterprise_project_id: **参数解释：** 域名所属的企业项目ID。可以使用该字段过滤企业项目下的域名。 **约束限制：** 不涉及。 **取值范围：** 最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。 **默认取值：** 0
         :type enterprise_project_id: str
         """
         
@@ -98,7 +98,7 @@ class CreatePrivateZoneReq:
     def name(self):
         r"""Gets the name of this CreatePrivateZoneReq.
 
-        待创建的域名。
+        **参数解释：** 域名。 **约束限制：** 不涉及。 **取值范围：** 由多个以点分隔的字符串组成，可包含字母、数字、汉字、中划线，中划线不能在开头或末尾，单个字符串不超过63个字符，域名总长度不超过254个字符。 **默认取值：** 不涉及。
 
         :return: The name of this CreatePrivateZoneReq.
         :rtype: str
@@ -109,7 +109,7 @@ class CreatePrivateZoneReq:
     def name(self, name):
         r"""Sets the name of this CreatePrivateZoneReq.
 
-        待创建的域名。
+        **参数解释：** 域名。 **约束限制：** 不涉及。 **取值范围：** 由多个以点分隔的字符串组成，可包含字母、数字、汉字、中划线，中划线不能在开头或末尾，单个字符串不超过63个字符，域名总长度不超过254个字符。 **默认取值：** 不涉及。
 
         :param name: The name of this CreatePrivateZoneReq.
         :type name: str
@@ -120,7 +120,7 @@ class CreatePrivateZoneReq:
     def description(self):
         r"""Gets the description of this CreatePrivateZoneReq.
 
-        域名的描述信息。
+        **参数解释：** 域名的描述信息。 **约束限制：** 不涉及。 **取值范围：** 长度不超过255个字符。 **默认取值：** 不涉及。
 
         :return: The description of this CreatePrivateZoneReq.
         :rtype: str
@@ -131,7 +131,7 @@ class CreatePrivateZoneReq:
     def description(self, description):
         r"""Sets the description of this CreatePrivateZoneReq.
 
-        域名的描述信息。
+        **参数解释：** 域名的描述信息。 **约束限制：** 不涉及。 **取值范围：** 长度不超过255个字符。 **默认取值：** 不涉及。
 
         :param description: The description of this CreatePrivateZoneReq.
         :type description: str
@@ -142,7 +142,7 @@ class CreatePrivateZoneReq:
     def zone_type(self):
         r"""Gets the zone_type of this CreatePrivateZoneReq.
 
-        域名类型。取值：private。
+        **参数解释：** 域名类型。 **约束限制：** 不涉及。 **取值范围：** private：内网域名。 **默认取值：** 不涉及。
 
         :return: The zone_type of this CreatePrivateZoneReq.
         :rtype: str
@@ -153,7 +153,7 @@ class CreatePrivateZoneReq:
     def zone_type(self, zone_type):
         r"""Sets the zone_type of this CreatePrivateZoneReq.
 
-        域名类型。取值：private。
+        **参数解释：** 域名类型。 **约束限制：** 不涉及。 **取值范围：** private：内网域名。 **默认取值：** 不涉及。
 
         :param zone_type: The zone_type of this CreatePrivateZoneReq.
         :type zone_type: str
@@ -164,7 +164,7 @@ class CreatePrivateZoneReq:
     def email(self):
         r"""Gets the email of this CreatePrivateZoneReq.
 
-        管理该域名的管理员邮箱，用于生成该域名的SOA记录。
+        **参数解释：** 管理该域名的管理员邮箱，用于生成该域名的SOA记录。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The email of this CreatePrivateZoneReq.
         :rtype: str
@@ -175,7 +175,7 @@ class CreatePrivateZoneReq:
     def email(self, email):
         r"""Sets the email of this CreatePrivateZoneReq.
 
-        管理该域名的管理员邮箱，用于生成该域名的SOA记录。
+        **参数解释：** 管理该域名的管理员邮箱，用于生成该域名的SOA记录。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param email: The email of this CreatePrivateZoneReq.
         :type email: str
@@ -186,7 +186,7 @@ class CreatePrivateZoneReq:
     def ttl(self):
         r"""Gets the ttl of this CreatePrivateZoneReq.
 
-        用于填写默认生成的SOA记录中有效缓存时间，以秒为单位。
+        **参数解释：** 用于填写默认生成的SOA记录中有效缓存时间，以秒为单位。 **约束限制：** 不涉及。 **取值范围：** 1~2147483647。 **默认取值：** 300
 
         :return: The ttl of this CreatePrivateZoneReq.
         :rtype: int
@@ -197,7 +197,7 @@ class CreatePrivateZoneReq:
     def ttl(self, ttl):
         r"""Sets the ttl of this CreatePrivateZoneReq.
 
-        用于填写默认生成的SOA记录中有效缓存时间，以秒为单位。
+        **参数解释：** 用于填写默认生成的SOA记录中有效缓存时间，以秒为单位。 **约束限制：** 不涉及。 **取值范围：** 1~2147483647。 **默认取值：** 300
 
         :param ttl: The ttl of this CreatePrivateZoneReq.
         :type ttl: int
@@ -226,7 +226,7 @@ class CreatePrivateZoneReq:
     def proxy_pattern(self):
         r"""Gets the proxy_pattern of this CreatePrivateZoneReq.
 
-        内网域名的子域名递归解析代理模式。  取值范围：  AUTHORITY：当前域名未开启递归解析代理 RECURSIVE：当前域名已开启递归解析代理
+        **参数解释：** 内网域名的子域名递归解析代理模式。 **约束限制：** 不涉及。 **取值范围：** - AUTHORITY：当前域名未开启递归解析代理 - RECURSIVE：当前域名已开启递归解析代理  **默认取值：** AUTHORITY。
 
         :return: The proxy_pattern of this CreatePrivateZoneReq.
         :rtype: str
@@ -237,7 +237,7 @@ class CreatePrivateZoneReq:
     def proxy_pattern(self, proxy_pattern):
         r"""Sets the proxy_pattern of this CreatePrivateZoneReq.
 
-        内网域名的子域名递归解析代理模式。  取值范围：  AUTHORITY：当前域名未开启递归解析代理 RECURSIVE：当前域名已开启递归解析代理
+        **参数解释：** 内网域名的子域名递归解析代理模式。 **约束限制：** 不涉及。 **取值范围：** - AUTHORITY：当前域名未开启递归解析代理 - RECURSIVE：当前域名已开启递归解析代理  **默认取值：** AUTHORITY。
 
         :param proxy_pattern: The proxy_pattern of this CreatePrivateZoneReq.
         :type proxy_pattern: str
@@ -248,7 +248,7 @@ class CreatePrivateZoneReq:
     def tags(self):
         r"""Gets the tags of this CreatePrivateZoneReq.
 
-        资源标签。
+        **参数解释：** 资源标签。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The tags of this CreatePrivateZoneReq.
         :rtype: list[:class:`huaweicloudsdkdns.v2.Tag`]
@@ -259,7 +259,7 @@ class CreatePrivateZoneReq:
     def tags(self, tags):
         r"""Sets the tags of this CreatePrivateZoneReq.
 
-        资源标签。
+        **参数解释：** 资源标签。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param tags: The tags of this CreatePrivateZoneReq.
         :type tags: list[:class:`huaweicloudsdkdns.v2.Tag`]
@@ -270,7 +270,7 @@ class CreatePrivateZoneReq:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this CreatePrivateZoneReq.
 
-        域名关联的企业项目ID，长度不超过36个字符。默认值为0。
+        **参数解释：** 域名所属的企业项目ID。可以使用该字段过滤企业项目下的域名。 **约束限制：** 不涉及。 **取值范围：** 最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。 **默认取值：** 0
 
         :return: The enterprise_project_id of this CreatePrivateZoneReq.
         :rtype: str
@@ -281,7 +281,7 @@ class CreatePrivateZoneReq:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this CreatePrivateZoneReq.
 
-        域名关联的企业项目ID，长度不超过36个字符。默认值为0。
+        **参数解释：** 域名所属的企业项目ID。可以使用该字段过滤企业项目下的域名。 **约束限制：** 不涉及。 **取值范围：** 最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。 **默认取值：** 0
 
         :param enterprise_project_id: The enterprise_project_id of this CreatePrivateZoneReq.
         :type enterprise_project_id: str

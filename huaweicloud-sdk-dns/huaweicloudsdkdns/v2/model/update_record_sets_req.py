@@ -39,17 +39,17 @@ class UpdateRecordSetsReq:
 
         The model defined in huaweicloud sdk
 
-        :param name: 域名，后缀需以zone name结束且为FQDN（即以“.”号结束的完整主机名）。
+        :param name: **参数解释：** 域名，后缀需以zone name结束且为FQDN（Fully Qualified Domain Name，全称域名），即以“.”结束的完整主机名。 如“www.example.com.”。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type name: str
-        :param description: 可选配置，对域名的描述。  长度不超过255个字符。  如果为空，表示维持原值。  默认值为空。
+        :param description: **参数解释：** 记录集的描述信息。 **约束限制：** 不涉及。 **取值范围：** 长度不超过255个字符。 **默认取值：** 默认为空，表示维持原值。
         :type description: str
-        :param type: 记录集的类型。  取值范围：A、AAAA、MX、CNAME、TXT、NS、SRV、CAA。
+        :param type: **参数解释：** 记录集的类型。 **约束限制：** 不涉及。 **取值范围：** - 公网域名的记录类型: A、AAAA、MX、CNAME、TXT、SRV、NS、SOA、CAA。 - 内网域名的记录类型: A、AAAA、MX、CNAME、TXT、PTR、SRV、NS、SOA。  **默认取值：** 不涉及。
         :type type: str
-        :param ttl: 解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。
+        :param ttl: **参数解释：** 解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。 **约束限制：** 不涉及。 **取值范围：** 1~2147483647。 **默认取值：** 默认为空，表示维持原值。
         :type ttl: int
-        :param records: 解析记录的值。不同类型解析记录对应的值的规则不同。
+        :param records: **参数解释：** 解析记录的值。不同类型解析记录对应的值的规则不同。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 默认为空，表示维持原值。
         :type records: list[str]
-        :param weight: 解析记录的权重。  当weight不填时，表示该解析记录将保持原有设置的权重。 当weight&#x3D;0，表示该解析记录为备用域名解析记录。 当weight&gt;0，表示该解析记录为主用域名解析记录。 取值范围：0~100  默认值为空。
+        :param weight: **参数解释：** 解析记录的权重。 **约束限制：** 不涉及。 **取值范围：** 取值范围：0~1000。 - 当weight为空时，表示该解析记录将保持原有设置的权重。 - 当weight&#x3D;0，表示该解析记录为备用域名解析记录。 - 当weight&gt;0，表示该解析记录为主用域名解析记录。  **默认取值：** 默认为空，表示维持原值。
         :type weight: int
         """
         
@@ -78,7 +78,7 @@ class UpdateRecordSetsReq:
     def name(self):
         r"""Gets the name of this UpdateRecordSetsReq.
 
-        域名，后缀需以zone name结束且为FQDN（即以“.”号结束的完整主机名）。
+        **参数解释：** 域名，后缀需以zone name结束且为FQDN（Fully Qualified Domain Name，全称域名），即以“.”结束的完整主机名。 如“www.example.com.”。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The name of this UpdateRecordSetsReq.
         :rtype: str
@@ -89,7 +89,7 @@ class UpdateRecordSetsReq:
     def name(self, name):
         r"""Sets the name of this UpdateRecordSetsReq.
 
-        域名，后缀需以zone name结束且为FQDN（即以“.”号结束的完整主机名）。
+        **参数解释：** 域名，后缀需以zone name结束且为FQDN（Fully Qualified Domain Name，全称域名），即以“.”结束的完整主机名。 如“www.example.com.”。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param name: The name of this UpdateRecordSetsReq.
         :type name: str
@@ -100,7 +100,7 @@ class UpdateRecordSetsReq:
     def description(self):
         r"""Gets the description of this UpdateRecordSetsReq.
 
-        可选配置，对域名的描述。  长度不超过255个字符。  如果为空，表示维持原值。  默认值为空。
+        **参数解释：** 记录集的描述信息。 **约束限制：** 不涉及。 **取值范围：** 长度不超过255个字符。 **默认取值：** 默认为空，表示维持原值。
 
         :return: The description of this UpdateRecordSetsReq.
         :rtype: str
@@ -111,7 +111,7 @@ class UpdateRecordSetsReq:
     def description(self, description):
         r"""Sets the description of this UpdateRecordSetsReq.
 
-        可选配置，对域名的描述。  长度不超过255个字符。  如果为空，表示维持原值。  默认值为空。
+        **参数解释：** 记录集的描述信息。 **约束限制：** 不涉及。 **取值范围：** 长度不超过255个字符。 **默认取值：** 默认为空，表示维持原值。
 
         :param description: The description of this UpdateRecordSetsReq.
         :type description: str
@@ -122,7 +122,7 @@ class UpdateRecordSetsReq:
     def type(self):
         r"""Gets the type of this UpdateRecordSetsReq.
 
-        记录集的类型。  取值范围：A、AAAA、MX、CNAME、TXT、NS、SRV、CAA。
+        **参数解释：** 记录集的类型。 **约束限制：** 不涉及。 **取值范围：** - 公网域名的记录类型: A、AAAA、MX、CNAME、TXT、SRV、NS、SOA、CAA。 - 内网域名的记录类型: A、AAAA、MX、CNAME、TXT、PTR、SRV、NS、SOA。  **默认取值：** 不涉及。
 
         :return: The type of this UpdateRecordSetsReq.
         :rtype: str
@@ -133,7 +133,7 @@ class UpdateRecordSetsReq:
     def type(self, type):
         r"""Sets the type of this UpdateRecordSetsReq.
 
-        记录集的类型。  取值范围：A、AAAA、MX、CNAME、TXT、NS、SRV、CAA。
+        **参数解释：** 记录集的类型。 **约束限制：** 不涉及。 **取值范围：** - 公网域名的记录类型: A、AAAA、MX、CNAME、TXT、SRV、NS、SOA、CAA。 - 内网域名的记录类型: A、AAAA、MX、CNAME、TXT、PTR、SRV、NS、SOA。  **默认取值：** 不涉及。
 
         :param type: The type of this UpdateRecordSetsReq.
         :type type: str
@@ -144,7 +144,7 @@ class UpdateRecordSetsReq:
     def ttl(self):
         r"""Gets the ttl of this UpdateRecordSetsReq.
 
-        解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。
+        **参数解释：** 解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。 **约束限制：** 不涉及。 **取值范围：** 1~2147483647。 **默认取值：** 默认为空，表示维持原值。
 
         :return: The ttl of this UpdateRecordSetsReq.
         :rtype: int
@@ -155,7 +155,7 @@ class UpdateRecordSetsReq:
     def ttl(self, ttl):
         r"""Sets the ttl of this UpdateRecordSetsReq.
 
-        解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。
+        **参数解释：** 解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。 **约束限制：** 不涉及。 **取值范围：** 1~2147483647。 **默认取值：** 默认为空，表示维持原值。
 
         :param ttl: The ttl of this UpdateRecordSetsReq.
         :type ttl: int
@@ -166,7 +166,7 @@ class UpdateRecordSetsReq:
     def records(self):
         r"""Gets the records of this UpdateRecordSetsReq.
 
-        解析记录的值。不同类型解析记录对应的值的规则不同。
+        **参数解释：** 解析记录的值。不同类型解析记录对应的值的规则不同。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 默认为空，表示维持原值。
 
         :return: The records of this UpdateRecordSetsReq.
         :rtype: list[str]
@@ -177,7 +177,7 @@ class UpdateRecordSetsReq:
     def records(self, records):
         r"""Sets the records of this UpdateRecordSetsReq.
 
-        解析记录的值。不同类型解析记录对应的值的规则不同。
+        **参数解释：** 解析记录的值。不同类型解析记录对应的值的规则不同。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 默认为空，表示维持原值。
 
         :param records: The records of this UpdateRecordSetsReq.
         :type records: list[str]
@@ -188,7 +188,7 @@ class UpdateRecordSetsReq:
     def weight(self):
         r"""Gets the weight of this UpdateRecordSetsReq.
 
-        解析记录的权重。  当weight不填时，表示该解析记录将保持原有设置的权重。 当weight=0，表示该解析记录为备用域名解析记录。 当weight>0，表示该解析记录为主用域名解析记录。 取值范围：0~100  默认值为空。
+        **参数解释：** 解析记录的权重。 **约束限制：** 不涉及。 **取值范围：** 取值范围：0~1000。 - 当weight为空时，表示该解析记录将保持原有设置的权重。 - 当weight=0，表示该解析记录为备用域名解析记录。 - 当weight>0，表示该解析记录为主用域名解析记录。  **默认取值：** 默认为空，表示维持原值。
 
         :return: The weight of this UpdateRecordSetsReq.
         :rtype: int
@@ -199,7 +199,7 @@ class UpdateRecordSetsReq:
     def weight(self, weight):
         r"""Sets the weight of this UpdateRecordSetsReq.
 
-        解析记录的权重。  当weight不填时，表示该解析记录将保持原有设置的权重。 当weight=0，表示该解析记录为备用域名解析记录。 当weight>0，表示该解析记录为主用域名解析记录。 取值范围：0~100  默认值为空。
+        **参数解释：** 解析记录的权重。 **约束限制：** 不涉及。 **取值范围：** 取值范围：0~1000。 - 当weight为空时，表示该解析记录将保持原有设置的权重。 - 当weight=0，表示该解析记录为备用域名解析记录。 - 当weight>0，表示该解析记录为主用域名解析记录。  **默认取值：** 默认为空，表示维持原值。
 
         :param weight: The weight of this UpdateRecordSetsReq.
         :type weight: int

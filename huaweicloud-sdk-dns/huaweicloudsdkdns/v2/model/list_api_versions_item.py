@@ -33,11 +33,11 @@ class ListApiVersionsItem:
 
         The model defined in huaweicloud sdk
 
-        :param status: 版本状态，包含：  CURRENT：表示该版本为主推版本。 SUPPORTED：表示为老版本，但是现在还在继续支持。 DEPRECATED：表示为废弃版本，存在后续删除的可能。
+        :param status: **参数解释：** 版本状态。 **取值范围：** - CURRENT：表示该版本为主推版本。 - SUPPORTED：表示为老版本，但是现在还在继续支持。 - DEPRECATED：表示为废弃版本，存在后续删除的可能。
         :type status: str
-        :param id: 版本号。
+        :param id: **参数解释：** 版本号。 **取值范围：** v2。
         :type id: str
-        :param links: 指向当前版本的url。
+        :param links: **参数解释：** 指向当前版本的URL。 **取值范围：** 不涉及。
         :type links: list[:class:`huaweicloudsdkdns.v2.LinksItem`]
         """
         
@@ -59,7 +59,7 @@ class ListApiVersionsItem:
     def status(self):
         r"""Gets the status of this ListApiVersionsItem.
 
-        版本状态，包含：  CURRENT：表示该版本为主推版本。 SUPPORTED：表示为老版本，但是现在还在继续支持。 DEPRECATED：表示为废弃版本，存在后续删除的可能。
+        **参数解释：** 版本状态。 **取值范围：** - CURRENT：表示该版本为主推版本。 - SUPPORTED：表示为老版本，但是现在还在继续支持。 - DEPRECATED：表示为废弃版本，存在后续删除的可能。
 
         :return: The status of this ListApiVersionsItem.
         :rtype: str
@@ -70,7 +70,7 @@ class ListApiVersionsItem:
     def status(self, status):
         r"""Sets the status of this ListApiVersionsItem.
 
-        版本状态，包含：  CURRENT：表示该版本为主推版本。 SUPPORTED：表示为老版本，但是现在还在继续支持。 DEPRECATED：表示为废弃版本，存在后续删除的可能。
+        **参数解释：** 版本状态。 **取值范围：** - CURRENT：表示该版本为主推版本。 - SUPPORTED：表示为老版本，但是现在还在继续支持。 - DEPRECATED：表示为废弃版本，存在后续删除的可能。
 
         :param status: The status of this ListApiVersionsItem.
         :type status: str
@@ -81,7 +81,7 @@ class ListApiVersionsItem:
     def id(self):
         r"""Gets the id of this ListApiVersionsItem.
 
-        版本号。
+        **参数解释：** 版本号。 **取值范围：** v2。
 
         :return: The id of this ListApiVersionsItem.
         :rtype: str
@@ -92,7 +92,7 @@ class ListApiVersionsItem:
     def id(self, id):
         r"""Sets the id of this ListApiVersionsItem.
 
-        版本号。
+        **参数解释：** 版本号。 **取值范围：** v2。
 
         :param id: The id of this ListApiVersionsItem.
         :type id: str
@@ -103,7 +103,7 @@ class ListApiVersionsItem:
     def links(self):
         r"""Gets the links of this ListApiVersionsItem.
 
-        指向当前版本的url。
+        **参数解释：** 指向当前版本的URL。 **取值范围：** 不涉及。
 
         :return: The links of this ListApiVersionsItem.
         :rtype: list[:class:`huaweicloudsdkdns.v2.LinksItem`]
@@ -114,7 +114,7 @@ class ListApiVersionsItem:
     def links(self, links):
         r"""Sets the links of this ListApiVersionsItem.
 
-        指向当前版本的url。
+        **参数解释：** 指向当前版本的URL。 **取值范围：** 不涉及。
 
         :param links: The links of this ListApiVersionsItem.
         :type links: list[:class:`huaweicloudsdkdns.v2.LinksItem`]

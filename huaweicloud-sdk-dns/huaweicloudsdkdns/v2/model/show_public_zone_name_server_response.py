@@ -30,7 +30,7 @@ class ShowPublicZoneNameServerResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param nameservers: 查询公网域名的名称服务器响应。
+        :param nameservers: **参数解释：** 查询公网域名的名称服务器响应。 **取值范围：** 不涉及。
         :type nameservers: list[:class:`huaweicloudsdkdns.v2.Nameserver`]
         """
         
@@ -46,7 +46,7 @@ class ShowPublicZoneNameServerResponse(SdkResponse):
     def nameservers(self):
         r"""Gets the nameservers of this ShowPublicZoneNameServerResponse.
 
-        查询公网域名的名称服务器响应。
+        **参数解释：** 查询公网域名的名称服务器响应。 **取值范围：** 不涉及。
 
         :return: The nameservers of this ShowPublicZoneNameServerResponse.
         :rtype: list[:class:`huaweicloudsdkdns.v2.Nameserver`]
@@ -57,7 +57,7 @@ class ShowPublicZoneNameServerResponse(SdkResponse):
     def nameservers(self, nameservers):
         r"""Sets the nameservers of this ShowPublicZoneNameServerResponse.
 
-        查询公网域名的名称服务器响应。
+        **参数解释：** 查询公网域名的名称服务器响应。 **取值范围：** 不涉及。
 
         :param nameservers: The nameservers of this ShowPublicZoneNameServerResponse.
         :type nameservers: list[:class:`huaweicloudsdkdns.v2.Nameserver`]

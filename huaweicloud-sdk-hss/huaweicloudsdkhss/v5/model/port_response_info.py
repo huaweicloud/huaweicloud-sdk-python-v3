@@ -45,23 +45,23 @@ class PortResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param host_id: 主机id
+        :param host_id: **参数解释**: 主机ID **取值范围**: 字符长度1-128位 
         :type host_id: str
-        :param laddr: 监听ip
+        :param laddr: **参数解释**: 监听ip **取值范围**: 字符长度1-128位 
         :type laddr: str
-        :param status: port status, normal, danger or unknow   - \&quot;normal\&quot; : 正常   - \&quot;danger\&quot; : 危险   - \&quot;unknown\&quot; : 未知
+        :param status: **参数解释**: 端口状态 **取值范围**: normal: 正常 danger: 危险 unknown: 未知 
         :type status: str
-        :param port: 端口号
+        :param port: **参数解释**: 端口号 **取值范围**: 最小值0，最大值65535 
         :type port: int
-        :param type: 端口类型：目前包括TCP，UDP两种
+        :param type: **参数解释**: 端口类型：目前包括TCP，UDP两种 **取值范围**: TCP: TCP类型的端口 UDP: UDP类型的端口 
         :type type: str
-        :param pid: 进程ID
+        :param pid: **参数解释**: 进程ID **取值范围**: 最小值1，最大值65535 
         :type pid: int
-        :param path: 进程可执行文件路径
+        :param path: **参数解释**: 进程可执行文件路径 **取值范围**: 字符长度1-256位 
         :type path: str
-        :param agent_id: agent id
+        :param agent_id: **参数解释**: Agent ID **取值范围**: 字符长度1-64位 
         :type agent_id: str
-        :param container_id: 容器id
+        :param container_id: **参数解释**: 容器 ID **取值范围**: 字符长度0-128位 
         :type container_id: str
         """
         
@@ -101,7 +101,7 @@ class PortResponseInfo:
     def host_id(self):
         r"""Gets the host_id of this PortResponseInfo.
 
-        主机id
+        **参数解释**: 主机ID **取值范围**: 字符长度1-128位 
 
         :return: The host_id of this PortResponseInfo.
         :rtype: str
@@ -112,7 +112,7 @@ class PortResponseInfo:
     def host_id(self, host_id):
         r"""Sets the host_id of this PortResponseInfo.
 
-        主机id
+        **参数解释**: 主机ID **取值范围**: 字符长度1-128位 
 
         :param host_id: The host_id of this PortResponseInfo.
         :type host_id: str
@@ -123,7 +123,7 @@ class PortResponseInfo:
     def laddr(self):
         r"""Gets the laddr of this PortResponseInfo.
 
-        监听ip
+        **参数解释**: 监听ip **取值范围**: 字符长度1-128位 
 
         :return: The laddr of this PortResponseInfo.
         :rtype: str
@@ -134,7 +134,7 @@ class PortResponseInfo:
     def laddr(self, laddr):
         r"""Sets the laddr of this PortResponseInfo.
 
-        监听ip
+        **参数解释**: 监听ip **取值范围**: 字符长度1-128位 
 
         :param laddr: The laddr of this PortResponseInfo.
         :type laddr: str
@@ -145,7 +145,7 @@ class PortResponseInfo:
     def status(self):
         r"""Gets the status of this PortResponseInfo.
 
-        port status, normal, danger or unknow   - \"normal\" : 正常   - \"danger\" : 危险   - \"unknown\" : 未知
+        **参数解释**: 端口状态 **取值范围**: normal: 正常 danger: 危险 unknown: 未知 
 
         :return: The status of this PortResponseInfo.
         :rtype: str
@@ -156,7 +156,7 @@ class PortResponseInfo:
     def status(self, status):
         r"""Sets the status of this PortResponseInfo.
 
-        port status, normal, danger or unknow   - \"normal\" : 正常   - \"danger\" : 危险   - \"unknown\" : 未知
+        **参数解释**: 端口状态 **取值范围**: normal: 正常 danger: 危险 unknown: 未知 
 
         :param status: The status of this PortResponseInfo.
         :type status: str
@@ -167,7 +167,7 @@ class PortResponseInfo:
     def port(self):
         r"""Gets the port of this PortResponseInfo.
 
-        端口号
+        **参数解释**: 端口号 **取值范围**: 最小值0，最大值65535 
 
         :return: The port of this PortResponseInfo.
         :rtype: int
@@ -178,7 +178,7 @@ class PortResponseInfo:
     def port(self, port):
         r"""Sets the port of this PortResponseInfo.
 
-        端口号
+        **参数解释**: 端口号 **取值范围**: 最小值0，最大值65535 
 
         :param port: The port of this PortResponseInfo.
         :type port: int
@@ -189,7 +189,7 @@ class PortResponseInfo:
     def type(self):
         r"""Gets the type of this PortResponseInfo.
 
-        端口类型：目前包括TCP，UDP两种
+        **参数解释**: 端口类型：目前包括TCP，UDP两种 **取值范围**: TCP: TCP类型的端口 UDP: UDP类型的端口 
 
         :return: The type of this PortResponseInfo.
         :rtype: str
@@ -200,7 +200,7 @@ class PortResponseInfo:
     def type(self, type):
         r"""Sets the type of this PortResponseInfo.
 
-        端口类型：目前包括TCP，UDP两种
+        **参数解释**: 端口类型：目前包括TCP，UDP两种 **取值范围**: TCP: TCP类型的端口 UDP: UDP类型的端口 
 
         :param type: The type of this PortResponseInfo.
         :type type: str
@@ -211,7 +211,7 @@ class PortResponseInfo:
     def pid(self):
         r"""Gets the pid of this PortResponseInfo.
 
-        进程ID
+        **参数解释**: 进程ID **取值范围**: 最小值1，最大值65535 
 
         :return: The pid of this PortResponseInfo.
         :rtype: int
@@ -222,7 +222,7 @@ class PortResponseInfo:
     def pid(self, pid):
         r"""Sets the pid of this PortResponseInfo.
 
-        进程ID
+        **参数解释**: 进程ID **取值范围**: 最小值1，最大值65535 
 
         :param pid: The pid of this PortResponseInfo.
         :type pid: int
@@ -233,7 +233,7 @@ class PortResponseInfo:
     def path(self):
         r"""Gets the path of this PortResponseInfo.
 
-        进程可执行文件路径
+        **参数解释**: 进程可执行文件路径 **取值范围**: 字符长度1-256位 
 
         :return: The path of this PortResponseInfo.
         :rtype: str
@@ -244,7 +244,7 @@ class PortResponseInfo:
     def path(self, path):
         r"""Sets the path of this PortResponseInfo.
 
-        进程可执行文件路径
+        **参数解释**: 进程可执行文件路径 **取值范围**: 字符长度1-256位 
 
         :param path: The path of this PortResponseInfo.
         :type path: str
@@ -255,7 +255,7 @@ class PortResponseInfo:
     def agent_id(self):
         r"""Gets the agent_id of this PortResponseInfo.
 
-        agent id
+        **参数解释**: Agent ID **取值范围**: 字符长度1-64位 
 
         :return: The agent_id of this PortResponseInfo.
         :rtype: str
@@ -266,7 +266,7 @@ class PortResponseInfo:
     def agent_id(self, agent_id):
         r"""Sets the agent_id of this PortResponseInfo.
 
-        agent id
+        **参数解释**: Agent ID **取值范围**: 字符长度1-64位 
 
         :param agent_id: The agent_id of this PortResponseInfo.
         :type agent_id: str
@@ -277,7 +277,7 @@ class PortResponseInfo:
     def container_id(self):
         r"""Gets the container_id of this PortResponseInfo.
 
-        容器id
+        **参数解释**: 容器 ID **取值范围**: 字符长度0-128位 
 
         :return: The container_id of this PortResponseInfo.
         :rtype: str
@@ -288,7 +288,7 @@ class PortResponseInfo:
     def container_id(self, container_id):
         r"""Sets the container_id of this PortResponseInfo.
 
-        容器id
+        **参数解释**: 容器 ID **取值范围**: 字符长度0-128位 
 
         :param container_id: The container_id of this PortResponseInfo.
         :type container_id: str

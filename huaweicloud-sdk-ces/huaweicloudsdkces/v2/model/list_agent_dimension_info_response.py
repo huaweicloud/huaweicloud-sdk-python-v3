@@ -32,9 +32,9 @@ class ListAgentDimensionInfoResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param dimensions: 维度信息
+        :param dimensions: **参数解释**： 维度信息。 
         :type dimensions: list[:class:`huaweicloudsdkces.v2.AgentDimension`]
-        :param count: 维度信息总数
+        :param count: **参数解释**： 维度信息总数。 **取值范围**： 整数，最小值为0，最大值为2147483647。 
         :type count: int
         """
         
@@ -53,7 +53,7 @@ class ListAgentDimensionInfoResponse(SdkResponse):
     def dimensions(self):
         r"""Gets the dimensions of this ListAgentDimensionInfoResponse.
 
-        维度信息
+        **参数解释**： 维度信息。 
 
         :return: The dimensions of this ListAgentDimensionInfoResponse.
         :rtype: list[:class:`huaweicloudsdkces.v2.AgentDimension`]
@@ -64,7 +64,7 @@ class ListAgentDimensionInfoResponse(SdkResponse):
     def dimensions(self, dimensions):
         r"""Sets the dimensions of this ListAgentDimensionInfoResponse.
 
-        维度信息
+        **参数解释**： 维度信息。 
 
         :param dimensions: The dimensions of this ListAgentDimensionInfoResponse.
         :type dimensions: list[:class:`huaweicloudsdkces.v2.AgentDimension`]
@@ -75,7 +75,7 @@ class ListAgentDimensionInfoResponse(SdkResponse):
     def count(self):
         r"""Gets the count of this ListAgentDimensionInfoResponse.
 
-        维度信息总数
+        **参数解释**： 维度信息总数。 **取值范围**： 整数，最小值为0，最大值为2147483647。 
 
         :return: The count of this ListAgentDimensionInfoResponse.
         :rtype: int
@@ -86,7 +86,7 @@ class ListAgentDimensionInfoResponse(SdkResponse):
     def count(self, count):
         r"""Sets the count of this ListAgentDimensionInfoResponse.
 
-        维度信息总数
+        **参数解释**： 维度信息总数。 **取值范围**： 整数，最小值为0，最大值为2147483647。 
 
         :param count: The count of this ListAgentDimensionInfoResponse.
         :type count: int

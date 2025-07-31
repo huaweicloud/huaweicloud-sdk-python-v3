@@ -20,7 +20,7 @@
 - 要使用华为云 Python SDK 访问指定服务的 API
   ，您需要确认已在 [华为云控制台](https://console.huaweicloud.com/console/?locale=zh-cn&region=cn-north-4#/home) 开通当前服务。
 
-- 华为云 Python SDK 支持 **python3.3以上** 的版本。可执行 `python --version` 检查当前 python 的版本信息。
+- 华为云 Python SDK 支持 **python3.6以上** 的版本。可执行 `python --version` 检查当前 python 的版本信息。
 
 ## SDK 获取和安装
 

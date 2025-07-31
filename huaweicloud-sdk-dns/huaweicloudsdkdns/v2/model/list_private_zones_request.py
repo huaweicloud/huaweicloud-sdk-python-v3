@@ -53,31 +53,31 @@ class ListPrivateZonesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param type: 待查询的域名的类型。  取值范围：private。
+        :param type: **参数解释：** 待查询域名的类型。 **约束限制：** 不涉及。 **取值范围：** private：内网域名 **默认取值：** 不涉及。
         :type type: str
-        :param limit: 每页返回的资源个数。  取值范围：0~500  取值一般为10，20，50。默认值为500。
+        :param limit: **参数解释：** 分页查询时配置每页返回的资源个数。 **约束限制：** 不涉及。 **取值范围：** 0~500。 **默认取值：** 500
         :type limit: int
-        :param marker: 分页查询起始的资源ID，为空时为查询第一页。  默认值为空。
+        :param marker: **参数解释：** 分页查询的起始资源ID。 - 查询第一页时，设置为空。 - 查询下一页时，设置为上一页最后一条资源的ID。  **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type marker: str
-        :param offset: 分页查询起始偏移量，表示从偏移量的下一个资源开始查询。  取值范围：0~2147483647  默认值为0。  当前设置marker不为空时，以marker为分页起始标识。
+        :param offset: **参数解释：** 分页查询起始偏移量，表示从偏移量的下一个资源开始查询。 **约束限制：** 当设置marker不为空时，以marker为分页起始标识，offset不生效。。 **取值范围：** 0~2147483647。 **默认取值：** 0
         :type offset: int
-        :param tags: 资源标签。
+        :param tags: **参数解释：** 内网域名的标签，包括标签键和标签值。 取值格式：key1,value1|key2,value2。 **约束限制：** - 多个标签之间用“|”分开，每个标签的键值用英文逗号“,”相隔。 - 多个标签之间为“与”的关系。 - 搜索模式为精确搜索。如果资源标签值value是以&amp;ast;开头时，则按照&amp;ast;后面的值全模糊匹配。  **取值范围：** 最多可以查询20个标签。 **默认取值：** 不涉及。
         :type tags: str
-        :param name: 域名。  搜索模式默认为模糊搜索。
+        :param name: **参数解释：** 域名。 搜索模式默认为模糊搜索。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type name: str
-        :param id: 域名ID。
+        :param id: **参数解释：** 域名ID。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type id: str
-        :param status: 资源状态。
+        :param status: **参数解释：** 内网域名状态。 **约束限制：** 不涉及。 **取值范围：** - ACTIVE：正常 - PENDING_CREATE：创建中 - PENDING_UPDATE：更新中 - PENDING_DELETE：删除中 - PENDING_FREEZE：冻结中 - FREEZE：冻结 - ILLEGAL：违规冻结 - POLICE：公安冻结 - PENDING_DISABLE：暂停中 - DISABLE：暂停 - ERROR：失败  **默认取值：** 不涉及。
         :type status: str
-        :param search_mode: 查询条件搜索模式。  取值范围：  like：模糊搜索 equal：精确搜索
+        :param search_mode: **参数解释：** 查询条件搜索模式。 **约束限制：** 不涉及。 **取值范围：** - like：模糊搜索 - equal：精确搜索  **默认取值：** 不涉及。
         :type search_mode: str
-        :param sort_key: 查询结果中域名列表的排序字段。  取值范围为：  name：域名 created_at：创建时间 updated_at：更新时间 默认值为空，表示不排序。
+        :param sort_key: **参数解释：** 查询结果中域名列表的排序字段。 **约束限制：** 不涉及。 **取值范围：** - name：域名 - created_at：创建时间 - updated_at：更新时间  **默认取值：** created_at
         :type sort_key: str
-        :param sort_dir: 查询结果中域名列表的排序方式。  取值范围：  desc：降序排序 asc：升序排序 默认值为空，表示不排序。
+        :param sort_dir: **参数解释：** 查询结果中域名列表的排序方式。 **约束限制：** 不涉及。 **取值范围：** - desc：降序排序 - asc：升序排序  **默认取值：** desc
         :type sort_dir: str
-        :param enterprise_project_id: 域名关联的企业项目ID，长度不超过36个字符。
+        :param enterprise_project_id: **参数解释：** 域名所属的企业项目ID。可以使用该字段过滤企业项目下的域名。 **约束限制：** 不涉及。             **取值范围：** 最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。 **默认取值：** 0
         :type enterprise_project_id: str
-        :param router_id: 关联VPC的ID。
+        :param router_id: **参数解释：** 关联VPC的ID。  **约束限制：** 不涉及。             **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type router_id: str
         """
         
@@ -128,7 +128,7 @@ class ListPrivateZonesRequest:
     def type(self):
         r"""Gets the type of this ListPrivateZonesRequest.
 
-        待查询的域名的类型。  取值范围：private。
+        **参数解释：** 待查询域名的类型。 **约束限制：** 不涉及。 **取值范围：** private：内网域名 **默认取值：** 不涉及。
 
         :return: The type of this ListPrivateZonesRequest.
         :rtype: str
@@ -139,7 +139,7 @@ class ListPrivateZonesRequest:
     def type(self, type):
         r"""Sets the type of this ListPrivateZonesRequest.
 
-        待查询的域名的类型。  取值范围：private。
+        **参数解释：** 待查询域名的类型。 **约束限制：** 不涉及。 **取值范围：** private：内网域名 **默认取值：** 不涉及。
 
         :param type: The type of this ListPrivateZonesRequest.
         :type type: str
@@ -150,7 +150,7 @@ class ListPrivateZonesRequest:
     def limit(self):
         r"""Gets the limit of this ListPrivateZonesRequest.
 
-        每页返回的资源个数。  取值范围：0~500  取值一般为10，20，50。默认值为500。
+        **参数解释：** 分页查询时配置每页返回的资源个数。 **约束限制：** 不涉及。 **取值范围：** 0~500。 **默认取值：** 500
 
         :return: The limit of this ListPrivateZonesRequest.
         :rtype: int
@@ -161,7 +161,7 @@ class ListPrivateZonesRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListPrivateZonesRequest.
 
-        每页返回的资源个数。  取值范围：0~500  取值一般为10，20，50。默认值为500。
+        **参数解释：** 分页查询时配置每页返回的资源个数。 **约束限制：** 不涉及。 **取值范围：** 0~500。 **默认取值：** 500
 
         :param limit: The limit of this ListPrivateZonesRequest.
         :type limit: int
@@ -172,7 +172,7 @@ class ListPrivateZonesRequest:
     def marker(self):
         r"""Gets the marker of this ListPrivateZonesRequest.
 
-        分页查询起始的资源ID，为空时为查询第一页。  默认值为空。
+        **参数解释：** 分页查询的起始资源ID。 - 查询第一页时，设置为空。 - 查询下一页时，设置为上一页最后一条资源的ID。  **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The marker of this ListPrivateZonesRequest.
         :rtype: str
@@ -183,7 +183,7 @@ class ListPrivateZonesRequest:
     def marker(self, marker):
         r"""Sets the marker of this ListPrivateZonesRequest.
 
-        分页查询起始的资源ID，为空时为查询第一页。  默认值为空。
+        **参数解释：** 分页查询的起始资源ID。 - 查询第一页时，设置为空。 - 查询下一页时，设置为上一页最后一条资源的ID。  **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param marker: The marker of this ListPrivateZonesRequest.
         :type marker: str
@@ -194,7 +194,7 @@ class ListPrivateZonesRequest:
     def offset(self):
         r"""Gets the offset of this ListPrivateZonesRequest.
 
-        分页查询起始偏移量，表示从偏移量的下一个资源开始查询。  取值范围：0~2147483647  默认值为0。  当前设置marker不为空时，以marker为分页起始标识。
+        **参数解释：** 分页查询起始偏移量，表示从偏移量的下一个资源开始查询。 **约束限制：** 当设置marker不为空时，以marker为分页起始标识，offset不生效。。 **取值范围：** 0~2147483647。 **默认取值：** 0
 
         :return: The offset of this ListPrivateZonesRequest.
         :rtype: int
@@ -205,7 +205,7 @@ class ListPrivateZonesRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListPrivateZonesRequest.
 
-        分页查询起始偏移量，表示从偏移量的下一个资源开始查询。  取值范围：0~2147483647  默认值为0。  当前设置marker不为空时，以marker为分页起始标识。
+        **参数解释：** 分页查询起始偏移量，表示从偏移量的下一个资源开始查询。 **约束限制：** 当设置marker不为空时，以marker为分页起始标识，offset不生效。。 **取值范围：** 0~2147483647。 **默认取值：** 0
 
         :param offset: The offset of this ListPrivateZonesRequest.
         :type offset: int
@@ -216,7 +216,7 @@ class ListPrivateZonesRequest:
     def tags(self):
         r"""Gets the tags of this ListPrivateZonesRequest.
 
-        资源标签。
+        **参数解释：** 内网域名的标签，包括标签键和标签值。 取值格式：key1,value1|key2,value2。 **约束限制：** - 多个标签之间用“|”分开，每个标签的键值用英文逗号“,”相隔。 - 多个标签之间为“与”的关系。 - 搜索模式为精确搜索。如果资源标签值value是以&ast;开头时，则按照&ast;后面的值全模糊匹配。  **取值范围：** 最多可以查询20个标签。 **默认取值：** 不涉及。
 
         :return: The tags of this ListPrivateZonesRequest.
         :rtype: str
@@ -227,7 +227,7 @@ class ListPrivateZonesRequest:
     def tags(self, tags):
         r"""Sets the tags of this ListPrivateZonesRequest.
 
-        资源标签。
+        **参数解释：** 内网域名的标签，包括标签键和标签值。 取值格式：key1,value1|key2,value2。 **约束限制：** - 多个标签之间用“|”分开，每个标签的键值用英文逗号“,”相隔。 - 多个标签之间为“与”的关系。 - 搜索模式为精确搜索。如果资源标签值value是以&ast;开头时，则按照&ast;后面的值全模糊匹配。  **取值范围：** 最多可以查询20个标签。 **默认取值：** 不涉及。
 
         :param tags: The tags of this ListPrivateZonesRequest.
         :type tags: str
@@ -238,7 +238,7 @@ class ListPrivateZonesRequest:
     def name(self):
         r"""Gets the name of this ListPrivateZonesRequest.
 
-        域名。  搜索模式默认为模糊搜索。
+        **参数解释：** 域名。 搜索模式默认为模糊搜索。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The name of this ListPrivateZonesRequest.
         :rtype: str
@@ -249,7 +249,7 @@ class ListPrivateZonesRequest:
     def name(self, name):
         r"""Sets the name of this ListPrivateZonesRequest.
 
-        域名。  搜索模式默认为模糊搜索。
+        **参数解释：** 域名。 搜索模式默认为模糊搜索。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param name: The name of this ListPrivateZonesRequest.
         :type name: str
@@ -260,7 +260,7 @@ class ListPrivateZonesRequest:
     def id(self):
         r"""Gets the id of this ListPrivateZonesRequest.
 
-        域名ID。
+        **参数解释：** 域名ID。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The id of this ListPrivateZonesRequest.
         :rtype: str
@@ -271,7 +271,7 @@ class ListPrivateZonesRequest:
     def id(self, id):
         r"""Sets the id of this ListPrivateZonesRequest.
 
-        域名ID。
+        **参数解释：** 域名ID。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param id: The id of this ListPrivateZonesRequest.
         :type id: str
@@ -282,7 +282,7 @@ class ListPrivateZonesRequest:
     def status(self):
         r"""Gets the status of this ListPrivateZonesRequest.
 
-        资源状态。
+        **参数解释：** 内网域名状态。 **约束限制：** 不涉及。 **取值范围：** - ACTIVE：正常 - PENDING_CREATE：创建中 - PENDING_UPDATE：更新中 - PENDING_DELETE：删除中 - PENDING_FREEZE：冻结中 - FREEZE：冻结 - ILLEGAL：违规冻结 - POLICE：公安冻结 - PENDING_DISABLE：暂停中 - DISABLE：暂停 - ERROR：失败  **默认取值：** 不涉及。
 
         :return: The status of this ListPrivateZonesRequest.
         :rtype: str
@@ -293,7 +293,7 @@ class ListPrivateZonesRequest:
     def status(self, status):
         r"""Sets the status of this ListPrivateZonesRequest.
 
-        资源状态。
+        **参数解释：** 内网域名状态。 **约束限制：** 不涉及。 **取值范围：** - ACTIVE：正常 - PENDING_CREATE：创建中 - PENDING_UPDATE：更新中 - PENDING_DELETE：删除中 - PENDING_FREEZE：冻结中 - FREEZE：冻结 - ILLEGAL：违规冻结 - POLICE：公安冻结 - PENDING_DISABLE：暂停中 - DISABLE：暂停 - ERROR：失败  **默认取值：** 不涉及。
 
         :param status: The status of this ListPrivateZonesRequest.
         :type status: str
@@ -304,7 +304,7 @@ class ListPrivateZonesRequest:
     def search_mode(self):
         r"""Gets the search_mode of this ListPrivateZonesRequest.
 
-        查询条件搜索模式。  取值范围：  like：模糊搜索 equal：精确搜索
+        **参数解释：** 查询条件搜索模式。 **约束限制：** 不涉及。 **取值范围：** - like：模糊搜索 - equal：精确搜索  **默认取值：** 不涉及。
 
         :return: The search_mode of this ListPrivateZonesRequest.
         :rtype: str
@@ -315,7 +315,7 @@ class ListPrivateZonesRequest:
     def search_mode(self, search_mode):
         r"""Sets the search_mode of this ListPrivateZonesRequest.
 
-        查询条件搜索模式。  取值范围：  like：模糊搜索 equal：精确搜索
+        **参数解释：** 查询条件搜索模式。 **约束限制：** 不涉及。 **取值范围：** - like：模糊搜索 - equal：精确搜索  **默认取值：** 不涉及。
 
         :param search_mode: The search_mode of this ListPrivateZonesRequest.
         :type search_mode: str
@@ -326,7 +326,7 @@ class ListPrivateZonesRequest:
     def sort_key(self):
         r"""Gets the sort_key of this ListPrivateZonesRequest.
 
-        查询结果中域名列表的排序字段。  取值范围为：  name：域名 created_at：创建时间 updated_at：更新时间 默认值为空，表示不排序。
+        **参数解释：** 查询结果中域名列表的排序字段。 **约束限制：** 不涉及。 **取值范围：** - name：域名 - created_at：创建时间 - updated_at：更新时间  **默认取值：** created_at
 
         :return: The sort_key of this ListPrivateZonesRequest.
         :rtype: str
@@ -337,7 +337,7 @@ class ListPrivateZonesRequest:
     def sort_key(self, sort_key):
         r"""Sets the sort_key of this ListPrivateZonesRequest.
 
-        查询结果中域名列表的排序字段。  取值范围为：  name：域名 created_at：创建时间 updated_at：更新时间 默认值为空，表示不排序。
+        **参数解释：** 查询结果中域名列表的排序字段。 **约束限制：** 不涉及。 **取值范围：** - name：域名 - created_at：创建时间 - updated_at：更新时间  **默认取值：** created_at
 
         :param sort_key: The sort_key of this ListPrivateZonesRequest.
         :type sort_key: str
@@ -348,7 +348,7 @@ class ListPrivateZonesRequest:
     def sort_dir(self):
         r"""Gets the sort_dir of this ListPrivateZonesRequest.
 
-        查询结果中域名列表的排序方式。  取值范围：  desc：降序排序 asc：升序排序 默认值为空，表示不排序。
+        **参数解释：** 查询结果中域名列表的排序方式。 **约束限制：** 不涉及。 **取值范围：** - desc：降序排序 - asc：升序排序  **默认取值：** desc
 
         :return: The sort_dir of this ListPrivateZonesRequest.
         :rtype: str
@@ -359,7 +359,7 @@ class ListPrivateZonesRequest:
     def sort_dir(self, sort_dir):
         r"""Sets the sort_dir of this ListPrivateZonesRequest.
 
-        查询结果中域名列表的排序方式。  取值范围：  desc：降序排序 asc：升序排序 默认值为空，表示不排序。
+        **参数解释：** 查询结果中域名列表的排序方式。 **约束限制：** 不涉及。 **取值范围：** - desc：降序排序 - asc：升序排序  **默认取值：** desc
 
         :param sort_dir: The sort_dir of this ListPrivateZonesRequest.
         :type sort_dir: str
@@ -370,7 +370,7 @@ class ListPrivateZonesRequest:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this ListPrivateZonesRequest.
 
-        域名关联的企业项目ID，长度不超过36个字符。
+        **参数解释：** 域名所属的企业项目ID。可以使用该字段过滤企业项目下的域名。 **约束限制：** 不涉及。             **取值范围：** 最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。 **默认取值：** 0
 
         :return: The enterprise_project_id of this ListPrivateZonesRequest.
         :rtype: str
@@ -381,7 +381,7 @@ class ListPrivateZonesRequest:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this ListPrivateZonesRequest.
 
-        域名关联的企业项目ID，长度不超过36个字符。
+        **参数解释：** 域名所属的企业项目ID。可以使用该字段过滤企业项目下的域名。 **约束限制：** 不涉及。             **取值范围：** 最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。 **默认取值：** 0
 
         :param enterprise_project_id: The enterprise_project_id of this ListPrivateZonesRequest.
         :type enterprise_project_id: str
@@ -392,7 +392,7 @@ class ListPrivateZonesRequest:
     def router_id(self):
         r"""Gets the router_id of this ListPrivateZonesRequest.
 
-        关联VPC的ID。
+        **参数解释：** 关联VPC的ID。  **约束限制：** 不涉及。             **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The router_id of this ListPrivateZonesRequest.
         :rtype: str
@@ -403,7 +403,7 @@ class ListPrivateZonesRequest:
     def router_id(self, router_id):
         r"""Sets the router_id of this ListPrivateZonesRequest.
 
-        关联VPC的ID。
+        **参数解释：** 关联VPC的ID。  **约束限制：** 不涉及。             **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param router_id: The router_id of this ListPrivateZonesRequest.
         :type router_id: str

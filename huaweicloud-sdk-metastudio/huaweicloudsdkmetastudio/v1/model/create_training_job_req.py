@@ -27,7 +27,9 @@ class CreateTrainingJobReq:
         'dhtms_job_id': 'str',
         'batch_name': 'str',
         'output_language': 'str',
-        'custom_text': 'str'
+        'custom_text': 'str',
+        'is_ondemand_resource': 'bool',
+        'supported_service': 'list[SupportedServiceEnum]'
     }
 
     attribute_map = {
@@ -41,10 +43,12 @@ class CreateTrainingJobReq:
         'dhtms_job_id': 'dhtms_job_id',
         'batch_name': 'batch_name',
         'output_language': 'output_language',
-        'custom_text': 'custom_text'
+        'custom_text': 'custom_text',
+        'is_ondemand_resource': 'is_ondemand_resource',
+        'supported_service': 'supported_service'
     }
 
-    def __init__(self, tag=None, description=None, sex=None, voice_name=None, language=None, create_type=None, phone=None, dhtms_job_id=None, batch_name=None, output_language=None, custom_text=None):
+    def __init__(self, tag=None, description=None, sex=None, voice_name=None, language=None, create_type=None, phone=None, dhtms_job_id=None, batch_name=None, output_language=None, custom_text=None, is_ondemand_resource=None, supported_service=None):
         r"""CreateTrainingJobReq
 
         The model defined in huaweicloud sdk
@@ -71,6 +75,10 @@ class CreateTrainingJobReq:
         :type output_language: str
         :param custom_text: 自定义试听文本
         :type custom_text: str
+        :param is_ondemand_resource: 是否使用按需资源
+        :type is_ondemand_resource: bool
+        :param supported_service: 支持的业务类型。： * VIDEO_2D：分身数字人视频制作 * LIVE_2D：分身数字人直播 * CHAT_2D：分身数字人智能交互
+        :type supported_service: list[:class:`huaweicloudsdkmetastudio.v1.SupportedServiceEnum`]
         """
         
         
@@ -86,6 +94,8 @@ class CreateTrainingJobReq:
         self._batch_name = None
         self._output_language = None
         self._custom_text = None
+        self._is_ondemand_resource = None
+        self._supported_service = None
         self.discriminator = None
 
         if tag is not None:
@@ -109,6 +119,10 @@ class CreateTrainingJobReq:
             self.output_language = output_language
         if custom_text is not None:
             self.custom_text = custom_text
+        if is_ondemand_resource is not None:
+            self.is_ondemand_resource = is_ondemand_resource
+        if supported_service is not None:
+            self.supported_service = supported_service
 
     @property
     def tag(self):
@@ -343,6 +357,50 @@ class CreateTrainingJobReq:
         :type custom_text: str
         """
         self._custom_text = custom_text
+
+    @property
+    def is_ondemand_resource(self):
+        r"""Gets the is_ondemand_resource of this CreateTrainingJobReq.
+
+        是否使用按需资源
+
+        :return: The is_ondemand_resource of this CreateTrainingJobReq.
+        :rtype: bool
+        """
+        return self._is_ondemand_resource
+
+    @is_ondemand_resource.setter
+    def is_ondemand_resource(self, is_ondemand_resource):
+        r"""Sets the is_ondemand_resource of this CreateTrainingJobReq.
+
+        是否使用按需资源
+
+        :param is_ondemand_resource: The is_ondemand_resource of this CreateTrainingJobReq.
+        :type is_ondemand_resource: bool
+        """
+        self._is_ondemand_resource = is_ondemand_resource
+
+    @property
+    def supported_service(self):
+        r"""Gets the supported_service of this CreateTrainingJobReq.
+
+        支持的业务类型。： * VIDEO_2D：分身数字人视频制作 * LIVE_2D：分身数字人直播 * CHAT_2D：分身数字人智能交互
+
+        :return: The supported_service of this CreateTrainingJobReq.
+        :rtype: list[:class:`huaweicloudsdkmetastudio.v1.SupportedServiceEnum`]
+        """
+        return self._supported_service
+
+    @supported_service.setter
+    def supported_service(self, supported_service):
+        r"""Sets the supported_service of this CreateTrainingJobReq.
+
+        支持的业务类型。： * VIDEO_2D：分身数字人视频制作 * LIVE_2D：分身数字人直播 * CHAT_2D：分身数字人智能交互
+
+        :param supported_service: The supported_service of this CreateTrainingJobReq.
+        :type supported_service: list[:class:`huaweicloudsdkmetastudio.v1.SupportedServiceEnum`]
+        """
+        self._supported_service = supported_service
 
     def to_dict(self):
         """Returns the model properties as a dict"""

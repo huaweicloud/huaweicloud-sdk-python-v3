@@ -53,31 +53,31 @@ class QuotaResourcesResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param resource_id: 主机安全配额的资源ID
+        :param resource_id: **参数解释** : HSS配额的资源ID **取值范围** : 字符长度1-128位 
         :type resource_id: str
-        :param version: 资源规格编码，包含如下:   - hss.version.basic : 基础版   - hss.version.advanced : 专业版   - hss.version.enterprise : 企业版   - hss.version.premium : 旗舰版   - hss.version.wtp : 网页防篡改版   - hss.version.container : 容器版
+        :param version: **参数解释**： 资源规格编码 **取值范围**： 包含如下6种。 - hss.version.basic ：基础版。 - hss.version.advanced ：专业版。 - hss.version.enterprise ：企业版。 - hss.version.premium ：旗舰版。 - hss.version.wtp ：网页防篡改版。 - hss.version.container.enterprise：容器版。
         :type version: str
-        :param quota_status: 配额状态   - normal : 正常   - expired : 已过期   - freeze : 已冻结
+        :param quota_status: **参数解释**： 配额状态 **取值范围**： 包含如下3种。 - normal : 正常 - expired : 已过期 - freeze : 已冻结
         :type quota_status: str
-        :param used_status: 使用状态   - idle : 空闲   - used : 使用中
+        :param used_status: **参数解释**： 使用状态 **取值范围**： 包含如下2种。 - idle : 空闲 - used : 使用中
         :type used_status: str
-        :param host_id: 主机ID
+        :param host_id: **参数解释**: 服务器ID **取值范围**: 字符长度1-64位 
         :type host_id: str
-        :param host_name: 服务器名称
+        :param host_name: **参数解释**: 服务器名称 **取值范围**: 字符长度1-128位 
         :type host_name: str
-        :param charging_mode: 计费模式   - packet_cycle : 包周期   - on_demand : 按需
+        :param charging_mode: **参数解释**： 计费模式 **取值范围**: - packet_cycle ：包周期。 - on_demand ：按需。
         :type charging_mode: str
-        :param tags: 标签
+        :param tags: **参数解释**： 标签 **取值范围**: 不涉及
         :type tags: list[:class:`huaweicloudsdkhss.v5.TagInfo`]
-        :param expire_time: 过期时间，-1表示没有到期时间
+        :param expire_time: **参数解释**： 过期时间 **取值范围**: -1到9223372036854775807，-1表示没有到期时间
         :type expire_time: int
-        :param create_time: 创建时间
+        :param create_time: **参数解释**： 创建时间 **取值范围**: 0到9223372036854775807
         :type create_time: int
-        :param shared_quota: 是否共享配额   - shared：共享的   - unshared：非共享的
+        :param shared_quota: **参数解释**： 是否共享配额 **取值范围**: - shared：共享的 - unshared：非共享的
         :type shared_quota: str
-        :param enterprise_project_id: 企业项目ID
+        :param enterprise_project_id: **参数解释**: 主机所属的企业项目ID。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。 **取值范围**: 字符长度1-256位 
         :type enterprise_project_id: str
-        :param enterprise_project_name: 所属企业项目名称
+        :param enterprise_project_name: **参数解释**: 所属企业项目名称 **取值范围**: 字符长度1-256位 
         :type enterprise_project_name: str
         """
         
@@ -129,7 +129,7 @@ class QuotaResourcesResponseInfo:
     def resource_id(self):
         r"""Gets the resource_id of this QuotaResourcesResponseInfo.
 
-        主机安全配额的资源ID
+        **参数解释** : HSS配额的资源ID **取值范围** : 字符长度1-128位 
 
         :return: The resource_id of this QuotaResourcesResponseInfo.
         :rtype: str
@@ -140,7 +140,7 @@ class QuotaResourcesResponseInfo:
     def resource_id(self, resource_id):
         r"""Sets the resource_id of this QuotaResourcesResponseInfo.
 
-        主机安全配额的资源ID
+        **参数解释** : HSS配额的资源ID **取值范围** : 字符长度1-128位 
 
         :param resource_id: The resource_id of this QuotaResourcesResponseInfo.
         :type resource_id: str
@@ -151,7 +151,7 @@ class QuotaResourcesResponseInfo:
     def version(self):
         r"""Gets the version of this QuotaResourcesResponseInfo.
 
-        资源规格编码，包含如下:   - hss.version.basic : 基础版   - hss.version.advanced : 专业版   - hss.version.enterprise : 企业版   - hss.version.premium : 旗舰版   - hss.version.wtp : 网页防篡改版   - hss.version.container : 容器版
+        **参数解释**： 资源规格编码 **取值范围**： 包含如下6种。 - hss.version.basic ：基础版。 - hss.version.advanced ：专业版。 - hss.version.enterprise ：企业版。 - hss.version.premium ：旗舰版。 - hss.version.wtp ：网页防篡改版。 - hss.version.container.enterprise：容器版。
 
         :return: The version of this QuotaResourcesResponseInfo.
         :rtype: str
@@ -162,7 +162,7 @@ class QuotaResourcesResponseInfo:
     def version(self, version):
         r"""Sets the version of this QuotaResourcesResponseInfo.
 
-        资源规格编码，包含如下:   - hss.version.basic : 基础版   - hss.version.advanced : 专业版   - hss.version.enterprise : 企业版   - hss.version.premium : 旗舰版   - hss.version.wtp : 网页防篡改版   - hss.version.container : 容器版
+        **参数解释**： 资源规格编码 **取值范围**： 包含如下6种。 - hss.version.basic ：基础版。 - hss.version.advanced ：专业版。 - hss.version.enterprise ：企业版。 - hss.version.premium ：旗舰版。 - hss.version.wtp ：网页防篡改版。 - hss.version.container.enterprise：容器版。
 
         :param version: The version of this QuotaResourcesResponseInfo.
         :type version: str
@@ -173,7 +173,7 @@ class QuotaResourcesResponseInfo:
     def quota_status(self):
         r"""Gets the quota_status of this QuotaResourcesResponseInfo.
 
-        配额状态   - normal : 正常   - expired : 已过期   - freeze : 已冻结
+        **参数解释**： 配额状态 **取值范围**： 包含如下3种。 - normal : 正常 - expired : 已过期 - freeze : 已冻结
 
         :return: The quota_status of this QuotaResourcesResponseInfo.
         :rtype: str
@@ -184,7 +184,7 @@ class QuotaResourcesResponseInfo:
     def quota_status(self, quota_status):
         r"""Sets the quota_status of this QuotaResourcesResponseInfo.
 
-        配额状态   - normal : 正常   - expired : 已过期   - freeze : 已冻结
+        **参数解释**： 配额状态 **取值范围**： 包含如下3种。 - normal : 正常 - expired : 已过期 - freeze : 已冻结
 
         :param quota_status: The quota_status of this QuotaResourcesResponseInfo.
         :type quota_status: str
@@ -195,7 +195,7 @@ class QuotaResourcesResponseInfo:
     def used_status(self):
         r"""Gets the used_status of this QuotaResourcesResponseInfo.
 
-        使用状态   - idle : 空闲   - used : 使用中
+        **参数解释**： 使用状态 **取值范围**： 包含如下2种。 - idle : 空闲 - used : 使用中
 
         :return: The used_status of this QuotaResourcesResponseInfo.
         :rtype: str
@@ -206,7 +206,7 @@ class QuotaResourcesResponseInfo:
     def used_status(self, used_status):
         r"""Sets the used_status of this QuotaResourcesResponseInfo.
 
-        使用状态   - idle : 空闲   - used : 使用中
+        **参数解释**： 使用状态 **取值范围**： 包含如下2种。 - idle : 空闲 - used : 使用中
 
         :param used_status: The used_status of this QuotaResourcesResponseInfo.
         :type used_status: str
@@ -217,7 +217,7 @@ class QuotaResourcesResponseInfo:
     def host_id(self):
         r"""Gets the host_id of this QuotaResourcesResponseInfo.
 
-        主机ID
+        **参数解释**: 服务器ID **取值范围**: 字符长度1-64位 
 
         :return: The host_id of this QuotaResourcesResponseInfo.
         :rtype: str
@@ -228,7 +228,7 @@ class QuotaResourcesResponseInfo:
     def host_id(self, host_id):
         r"""Sets the host_id of this QuotaResourcesResponseInfo.
 
-        主机ID
+        **参数解释**: 服务器ID **取值范围**: 字符长度1-64位 
 
         :param host_id: The host_id of this QuotaResourcesResponseInfo.
         :type host_id: str
@@ -239,7 +239,7 @@ class QuotaResourcesResponseInfo:
     def host_name(self):
         r"""Gets the host_name of this QuotaResourcesResponseInfo.
 
-        服务器名称
+        **参数解释**: 服务器名称 **取值范围**: 字符长度1-128位 
 
         :return: The host_name of this QuotaResourcesResponseInfo.
         :rtype: str
@@ -250,7 +250,7 @@ class QuotaResourcesResponseInfo:
     def host_name(self, host_name):
         r"""Sets the host_name of this QuotaResourcesResponseInfo.
 
-        服务器名称
+        **参数解释**: 服务器名称 **取值范围**: 字符长度1-128位 
 
         :param host_name: The host_name of this QuotaResourcesResponseInfo.
         :type host_name: str
@@ -261,7 +261,7 @@ class QuotaResourcesResponseInfo:
     def charging_mode(self):
         r"""Gets the charging_mode of this QuotaResourcesResponseInfo.
 
-        计费模式   - packet_cycle : 包周期   - on_demand : 按需
+        **参数解释**： 计费模式 **取值范围**: - packet_cycle ：包周期。 - on_demand ：按需。
 
         :return: The charging_mode of this QuotaResourcesResponseInfo.
         :rtype: str
@@ -272,7 +272,7 @@ class QuotaResourcesResponseInfo:
     def charging_mode(self, charging_mode):
         r"""Sets the charging_mode of this QuotaResourcesResponseInfo.
 
-        计费模式   - packet_cycle : 包周期   - on_demand : 按需
+        **参数解释**： 计费模式 **取值范围**: - packet_cycle ：包周期。 - on_demand ：按需。
 
         :param charging_mode: The charging_mode of this QuotaResourcesResponseInfo.
         :type charging_mode: str
@@ -283,7 +283,7 @@ class QuotaResourcesResponseInfo:
     def tags(self):
         r"""Gets the tags of this QuotaResourcesResponseInfo.
 
-        标签
+        **参数解释**： 标签 **取值范围**: 不涉及
 
         :return: The tags of this QuotaResourcesResponseInfo.
         :rtype: list[:class:`huaweicloudsdkhss.v5.TagInfo`]
@@ -294,7 +294,7 @@ class QuotaResourcesResponseInfo:
     def tags(self, tags):
         r"""Sets the tags of this QuotaResourcesResponseInfo.
 
-        标签
+        **参数解释**： 标签 **取值范围**: 不涉及
 
         :param tags: The tags of this QuotaResourcesResponseInfo.
         :type tags: list[:class:`huaweicloudsdkhss.v5.TagInfo`]
@@ -305,7 +305,7 @@ class QuotaResourcesResponseInfo:
     def expire_time(self):
         r"""Gets the expire_time of this QuotaResourcesResponseInfo.
 
-        过期时间，-1表示没有到期时间
+        **参数解释**： 过期时间 **取值范围**: -1到9223372036854775807，-1表示没有到期时间
 
         :return: The expire_time of this QuotaResourcesResponseInfo.
         :rtype: int
@@ -316,7 +316,7 @@ class QuotaResourcesResponseInfo:
     def expire_time(self, expire_time):
         r"""Sets the expire_time of this QuotaResourcesResponseInfo.
 
-        过期时间，-1表示没有到期时间
+        **参数解释**： 过期时间 **取值范围**: -1到9223372036854775807，-1表示没有到期时间
 
         :param expire_time: The expire_time of this QuotaResourcesResponseInfo.
         :type expire_time: int
@@ -327,7 +327,7 @@ class QuotaResourcesResponseInfo:
     def create_time(self):
         r"""Gets the create_time of this QuotaResourcesResponseInfo.
 
-        创建时间
+        **参数解释**： 创建时间 **取值范围**: 0到9223372036854775807
 
         :return: The create_time of this QuotaResourcesResponseInfo.
         :rtype: int
@@ -338,7 +338,7 @@ class QuotaResourcesResponseInfo:
     def create_time(self, create_time):
         r"""Sets the create_time of this QuotaResourcesResponseInfo.
 
-        创建时间
+        **参数解释**： 创建时间 **取值范围**: 0到9223372036854775807
 
         :param create_time: The create_time of this QuotaResourcesResponseInfo.
         :type create_time: int
@@ -349,7 +349,7 @@ class QuotaResourcesResponseInfo:
     def shared_quota(self):
         r"""Gets the shared_quota of this QuotaResourcesResponseInfo.
 
-        是否共享配额   - shared：共享的   - unshared：非共享的
+        **参数解释**： 是否共享配额 **取值范围**: - shared：共享的 - unshared：非共享的
 
         :return: The shared_quota of this QuotaResourcesResponseInfo.
         :rtype: str
@@ -360,7 +360,7 @@ class QuotaResourcesResponseInfo:
     def shared_quota(self, shared_quota):
         r"""Sets the shared_quota of this QuotaResourcesResponseInfo.
 
-        是否共享配额   - shared：共享的   - unshared：非共享的
+        **参数解释**： 是否共享配额 **取值范围**: - shared：共享的 - unshared：非共享的
 
         :param shared_quota: The shared_quota of this QuotaResourcesResponseInfo.
         :type shared_quota: str
@@ -371,7 +371,7 @@ class QuotaResourcesResponseInfo:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this QuotaResourcesResponseInfo.
 
-        企业项目ID
+        **参数解释**: 主机所属的企业项目ID。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。 **取值范围**: 字符长度1-256位 
 
         :return: The enterprise_project_id of this QuotaResourcesResponseInfo.
         :rtype: str
@@ -382,7 +382,7 @@ class QuotaResourcesResponseInfo:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this QuotaResourcesResponseInfo.
 
-        企业项目ID
+        **参数解释**: 主机所属的企业项目ID。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。 **取值范围**: 字符长度1-256位 
 
         :param enterprise_project_id: The enterprise_project_id of this QuotaResourcesResponseInfo.
         :type enterprise_project_id: str
@@ -393,7 +393,7 @@ class QuotaResourcesResponseInfo:
     def enterprise_project_name(self):
         r"""Gets the enterprise_project_name of this QuotaResourcesResponseInfo.
 
-        所属企业项目名称
+        **参数解释**: 所属企业项目名称 **取值范围**: 字符长度1-256位 
 
         :return: The enterprise_project_name of this QuotaResourcesResponseInfo.
         :rtype: str
@@ -404,7 +404,7 @@ class QuotaResourcesResponseInfo:
     def enterprise_project_name(self, enterprise_project_name):
         r"""Sets the enterprise_project_name of this QuotaResourcesResponseInfo.
 
-        所属企业项目名称
+        **参数解释**: 所属企业项目名称 **取值范围**: 字符长度1-256位 
 
         :param enterprise_project_name: The enterprise_project_name of this QuotaResourcesResponseInfo.
         :type enterprise_project_name: str

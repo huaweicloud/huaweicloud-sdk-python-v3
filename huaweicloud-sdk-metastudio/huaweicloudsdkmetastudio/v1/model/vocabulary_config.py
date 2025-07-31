@@ -21,6 +21,7 @@ class VocabularyConfig:
         'key': 'str',
         'value': 'str',
         'type': 'str',
+        'group_id': 'str',
         'create_time': 'str',
         'update_time': 'str'
     }
@@ -30,11 +31,12 @@ class VocabularyConfig:
         'key': 'key',
         'value': 'value',
         'type': 'type',
+        'group_id': 'group_id',
         'create_time': 'create_time',
         'update_time': 'update_time'
     }
 
-    def __init__(self, id=None, key=None, value=None, type=None, create_time=None, update_time=None):
+    def __init__(self, id=None, key=None, value=None, type=None, group_id=None, create_time=None, update_time=None):
         r"""VocabularyConfig
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class VocabularyConfig:
         :type value: str
         :param type: TTSS支持配置的词表类型 * CHINESE_G2P:拼音 * PHONETIC_SYMBOL:音标 * CONTINUUM:连读 * ALIAS:别名 * SAY_AS:数字英文读法
         :type type: str
+        :param group_id: 分组id
+        :type group_id: str
         :param create_time: 创建时间。
         :type create_time: str
         :param update_time: 更新时间。
@@ -59,6 +63,7 @@ class VocabularyConfig:
         self._key = None
         self._value = None
         self._type = None
+        self._group_id = None
         self._create_time = None
         self._update_time = None
         self.discriminator = None
@@ -71,6 +76,8 @@ class VocabularyConfig:
             self.value = value
         if type is not None:
             self.type = type
+        if group_id is not None:
+            self.group_id = group_id
         if create_time is not None:
             self.create_time = create_time
         if update_time is not None:
@@ -163,6 +170,28 @@ class VocabularyConfig:
         :type type: str
         """
         self._type = type
+
+    @property
+    def group_id(self):
+        r"""Gets the group_id of this VocabularyConfig.
+
+        分组id
+
+        :return: The group_id of this VocabularyConfig.
+        :rtype: str
+        """
+        return self._group_id
+
+    @group_id.setter
+    def group_id(self, group_id):
+        r"""Sets the group_id of this VocabularyConfig.
+
+        分组id
+
+        :param group_id: The group_id of this VocabularyConfig.
+        :type group_id: str
+        """
+        self._group_id = group_id
 
     @property
     def create_time(self):

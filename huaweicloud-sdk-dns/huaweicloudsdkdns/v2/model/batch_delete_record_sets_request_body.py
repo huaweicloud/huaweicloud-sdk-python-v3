@@ -31,9 +31,9 @@ class BatchDeleteRecordSetsRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param zone_type: 域名的类型，取值为public或private。
+        :param zone_type: **参数解释：** 域名的类型。 **约束限制：** 不涉及。 **取值范围：** - public：公网域名 - private：内网域名  **默认取值：** 不涉及。
         :type zone_type: str
-        :param recordset_ids: 待删除的记录集ID列表。 最多支持100个。
+        :param recordset_ids: **参数解释：** 待删除的记录集ID列表。 **约束限制：** 最多支持100个。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type recordset_ids: list[str]
         """
         
@@ -50,7 +50,7 @@ class BatchDeleteRecordSetsRequestBody:
     def zone_type(self):
         r"""Gets the zone_type of this BatchDeleteRecordSetsRequestBody.
 
-        域名的类型，取值为public或private。
+        **参数解释：** 域名的类型。 **约束限制：** 不涉及。 **取值范围：** - public：公网域名 - private：内网域名  **默认取值：** 不涉及。
 
         :return: The zone_type of this BatchDeleteRecordSetsRequestBody.
         :rtype: str
@@ -61,7 +61,7 @@ class BatchDeleteRecordSetsRequestBody:
     def zone_type(self, zone_type):
         r"""Sets the zone_type of this BatchDeleteRecordSetsRequestBody.
 
-        域名的类型，取值为public或private。
+        **参数解释：** 域名的类型。 **约束限制：** 不涉及。 **取值范围：** - public：公网域名 - private：内网域名  **默认取值：** 不涉及。
 
         :param zone_type: The zone_type of this BatchDeleteRecordSetsRequestBody.
         :type zone_type: str
@@ -72,7 +72,7 @@ class BatchDeleteRecordSetsRequestBody:
     def recordset_ids(self):
         r"""Gets the recordset_ids of this BatchDeleteRecordSetsRequestBody.
 
-        待删除的记录集ID列表。 最多支持100个。
+        **参数解释：** 待删除的记录集ID列表。 **约束限制：** 最多支持100个。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The recordset_ids of this BatchDeleteRecordSetsRequestBody.
         :rtype: list[str]
@@ -83,7 +83,7 @@ class BatchDeleteRecordSetsRequestBody:
     def recordset_ids(self, recordset_ids):
         r"""Sets the recordset_ids of this BatchDeleteRecordSetsRequestBody.
 
-        待删除的记录集ID列表。 最多支持100个。
+        **参数解释：** 待删除的记录集ID列表。 **约束限制：** 最多支持100个。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param recordset_ids: The recordset_ids of this BatchDeleteRecordSetsRequestBody.
         :type recordset_ids: list[str]

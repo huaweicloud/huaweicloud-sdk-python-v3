@@ -31,9 +31,9 @@ class Nameserver:
 
         The model defined in huaweicloud sdk
 
-        :param hostname: 主机名。
+        :param hostname: **参数解释：** 主机名。 **取值范围：** 不涉及。
         :type hostname: str
-        :param priority: 优先级。
+        :param priority: **参数解释：** 优先级。 **取值范围：** 不涉及。
         :type priority: int
         """
         
@@ -52,7 +52,7 @@ class Nameserver:
     def hostname(self):
         r"""Gets the hostname of this Nameserver.
 
-        主机名。
+        **参数解释：** 主机名。 **取值范围：** 不涉及。
 
         :return: The hostname of this Nameserver.
         :rtype: str
@@ -63,7 +63,7 @@ class Nameserver:
     def hostname(self, hostname):
         r"""Sets the hostname of this Nameserver.
 
-        主机名。
+        **参数解释：** 主机名。 **取值范围：** 不涉及。
 
         :param hostname: The hostname of this Nameserver.
         :type hostname: str
@@ -74,7 +74,7 @@ class Nameserver:
     def priority(self):
         r"""Gets the priority of this Nameserver.
 
-        优先级。
+        **参数解释：** 优先级。 **取值范围：** 不涉及。
 
         :return: The priority of this Nameserver.
         :rtype: int
@@ -85,7 +85,7 @@ class Nameserver:
     def priority(self, priority):
         r"""Sets the priority of this Nameserver.
 
-        优先级。
+        **参数解释：** 优先级。 **取值范围：** 不涉及。
 
         :param priority: The priority of this Nameserver.
         :type priority: int

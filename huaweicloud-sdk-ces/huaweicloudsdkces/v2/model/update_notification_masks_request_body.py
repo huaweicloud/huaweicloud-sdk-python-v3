@@ -29,7 +29,8 @@ class UpdateNotificationMasksRequestBody:
         'start_date': 'date',
         'start_time': 'str',
         'end_date': 'date',
-        'end_time': 'str'
+        'end_time': 'str',
+        'effective_timezone': 'str'
     }
 
     attribute_map = {
@@ -45,10 +46,11 @@ class UpdateNotificationMasksRequestBody:
         'start_date': 'start_date',
         'start_time': 'start_time',
         'end_date': 'end_date',
-        'end_time': 'end_time'
+        'end_time': 'end_time',
+        'effective_timezone': 'effective_timezone'
     }
 
-    def __init__(self, mask_name=None, relation_ids=None, relation_type=None, metric_names=None, product_metrics=None, resource_level=None, product_name=None, resources=None, mask_type=None, start_date=None, start_time=None, end_date=None, end_time=None):
+    def __init__(self, mask_name=None, relation_ids=None, relation_type=None, metric_names=None, product_metrics=None, resource_level=None, product_name=None, resources=None, mask_type=None, start_date=None, start_time=None, end_date=None, end_time=None, effective_timezone=None):
         r"""UpdateNotificationMasksRequestBody
 
         The model defined in huaweicloud sdk
@@ -79,6 +81,8 @@ class UpdateNotificationMasksRequestBody:
         :type end_date: date
         :param end_time: 屏蔽截止时间，HH:mm:ss。
         :type end_time: str
+        :param effective_timezone: 时区，形如：\&quot;GMT-08:00\&quot;、\&quot;GMT+08:00\&quot;、\&quot;GMT+0:00\&quot;
+        :type effective_timezone: str
         """
         
         
@@ -96,6 +100,7 @@ class UpdateNotificationMasksRequestBody:
         self._start_time = None
         self._end_date = None
         self._end_time = None
+        self._effective_timezone = None
         self.discriminator = None
 
         self.mask_name = mask_name
@@ -121,6 +126,8 @@ class UpdateNotificationMasksRequestBody:
             self.end_date = end_date
         if end_time is not None:
             self.end_time = end_time
+        if effective_timezone is not None:
+            self.effective_timezone = effective_timezone
 
     @property
     def mask_name(self):
@@ -399,6 +406,28 @@ class UpdateNotificationMasksRequestBody:
         :type end_time: str
         """
         self._end_time = end_time
+
+    @property
+    def effective_timezone(self):
+        r"""Gets the effective_timezone of this UpdateNotificationMasksRequestBody.
+
+        时区，形如：\"GMT-08:00\"、\"GMT+08:00\"、\"GMT+0:00\"
+
+        :return: The effective_timezone of this UpdateNotificationMasksRequestBody.
+        :rtype: str
+        """
+        return self._effective_timezone
+
+    @effective_timezone.setter
+    def effective_timezone(self, effective_timezone):
+        r"""Sets the effective_timezone of this UpdateNotificationMasksRequestBody.
+
+        时区，形如：\"GMT-08:00\"、\"GMT+08:00\"、\"GMT+0:00\"
+
+        :param effective_timezone: The effective_timezone of this UpdateNotificationMasksRequestBody.
+        :type effective_timezone: str
+        """
+        self._effective_timezone = effective_timezone
 
     def to_dict(self):
         """Returns the model properties as a dict"""

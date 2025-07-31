@@ -67,7 +67,7 @@ class WidgetMetric:
         :type alias: list[str]
         :param extra_info: 
         :type extra_info: :class:`huaweicloudsdkces.v2.ExtraInfo`
-        :param rollup_enable: 是否开启聚合
+        :param rollup_enable: **参数解释** 是否开启聚合 **约束限制** 当RollupEnable开启时，RollupFilter和RollupDimension必填 **取值范围** true，表示开启聚合；false表示不开启聚合 **默认取值** false 
         :type rollup_enable: bool
         :param rollup_filter: 
         :type rollup_filter: :class:`huaweicloudsdkces.v2.RollupFilter`
@@ -242,7 +242,7 @@ class WidgetMetric:
     def rollup_enable(self):
         r"""Gets the rollup_enable of this WidgetMetric.
 
-        是否开启聚合
+        **参数解释** 是否开启聚合 **约束限制** 当RollupEnable开启时，RollupFilter和RollupDimension必填 **取值范围** true，表示开启聚合；false表示不开启聚合 **默认取值** false 
 
         :return: The rollup_enable of this WidgetMetric.
         :rtype: bool
@@ -253,7 +253,7 @@ class WidgetMetric:
     def rollup_enable(self, rollup_enable):
         r"""Sets the rollup_enable of this WidgetMetric.
 
-        是否开启聚合
+        **参数解释** 是否开启聚合 **约束限制** 当RollupEnable开启时，RollupFilter和RollupDimension必填 **取值范围** true，表示开启聚合；false表示不开启聚合 **默认取值** false 
 
         :param rollup_enable: The rollup_enable of this WidgetMetric.
         :type rollup_enable: bool

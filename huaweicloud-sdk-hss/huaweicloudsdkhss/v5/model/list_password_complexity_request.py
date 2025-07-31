@@ -41,19 +41,19 @@ class ListPasswordComplexityRequest:
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
+        :param enterprise_project_id: **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
         :type enterprise_project_id: str
-        :param host_name: 服务器名称
+        :param host_name: **参数解释**: 服务器名称 **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 0 
         :type host_name: str
-        :param host_ip: 服务器IP地址
+        :param host_ip: **参数解释**: 服务器IP地址 **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 0 
         :type host_ip: str
-        :param host_id: 主机id，不赋值时，查租户所有主机
+        :param host_id: **参数解释**: 主机id，不赋值时，查租户所有主机 **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 0 
         :type host_id: str
-        :param result_type: 结果类型  - \&quot;unhandled\&quot;#未忽略的  - \&quot;ignored\&quot;#已忽略的
+        :param result_type: **参数解释**: 结果类型 **约束限制**: 不涉及 **取值范围**: - unhandled : 未忽略的 - ignored   : 已忽略的 **默认取值**: unhandled 
         :type result_type: str
-        :param limit: 每页显示数量
+        :param limit: **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
         :type limit: int
-        :param offset: 偏移量：指定返回记录的开始位置
+        :param offset: **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 默认为0 
         :type offset: int
         """
         
@@ -87,7 +87,7 @@ class ListPasswordComplexityRequest:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this ListPasswordComplexityRequest.
 
-        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
+        **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
 
         :return: The enterprise_project_id of this ListPasswordComplexityRequest.
         :rtype: str
@@ -98,7 +98,7 @@ class ListPasswordComplexityRequest:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this ListPasswordComplexityRequest.
 
-        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
+        **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
 
         :param enterprise_project_id: The enterprise_project_id of this ListPasswordComplexityRequest.
         :type enterprise_project_id: str
@@ -109,7 +109,7 @@ class ListPasswordComplexityRequest:
     def host_name(self):
         r"""Gets the host_name of this ListPasswordComplexityRequest.
 
-        服务器名称
+        **参数解释**: 服务器名称 **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 0 
 
         :return: The host_name of this ListPasswordComplexityRequest.
         :rtype: str
@@ -120,7 +120,7 @@ class ListPasswordComplexityRequest:
     def host_name(self, host_name):
         r"""Sets the host_name of this ListPasswordComplexityRequest.
 
-        服务器名称
+        **参数解释**: 服务器名称 **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 0 
 
         :param host_name: The host_name of this ListPasswordComplexityRequest.
         :type host_name: str
@@ -131,7 +131,7 @@ class ListPasswordComplexityRequest:
     def host_ip(self):
         r"""Gets the host_ip of this ListPasswordComplexityRequest.
 
-        服务器IP地址
+        **参数解释**: 服务器IP地址 **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 0 
 
         :return: The host_ip of this ListPasswordComplexityRequest.
         :rtype: str
@@ -142,7 +142,7 @@ class ListPasswordComplexityRequest:
     def host_ip(self, host_ip):
         r"""Sets the host_ip of this ListPasswordComplexityRequest.
 
-        服务器IP地址
+        **参数解释**: 服务器IP地址 **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 0 
 
         :param host_ip: The host_ip of this ListPasswordComplexityRequest.
         :type host_ip: str
@@ -153,7 +153,7 @@ class ListPasswordComplexityRequest:
     def host_id(self):
         r"""Gets the host_id of this ListPasswordComplexityRequest.
 
-        主机id，不赋值时，查租户所有主机
+        **参数解释**: 主机id，不赋值时，查租户所有主机 **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 0 
 
         :return: The host_id of this ListPasswordComplexityRequest.
         :rtype: str
@@ -164,7 +164,7 @@ class ListPasswordComplexityRequest:
     def host_id(self, host_id):
         r"""Sets the host_id of this ListPasswordComplexityRequest.
 
-        主机id，不赋值时，查租户所有主机
+        **参数解释**: 主机id，不赋值时，查租户所有主机 **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 0 
 
         :param host_id: The host_id of this ListPasswordComplexityRequest.
         :type host_id: str
@@ -175,7 +175,7 @@ class ListPasswordComplexityRequest:
     def result_type(self):
         r"""Gets the result_type of this ListPasswordComplexityRequest.
 
-        结果类型  - \"unhandled\"#未忽略的  - \"ignored\"#已忽略的
+        **参数解释**: 结果类型 **约束限制**: 不涉及 **取值范围**: - unhandled : 未忽略的 - ignored   : 已忽略的 **默认取值**: unhandled 
 
         :return: The result_type of this ListPasswordComplexityRequest.
         :rtype: str
@@ -186,7 +186,7 @@ class ListPasswordComplexityRequest:
     def result_type(self, result_type):
         r"""Sets the result_type of this ListPasswordComplexityRequest.
 
-        结果类型  - \"unhandled\"#未忽略的  - \"ignored\"#已忽略的
+        **参数解释**: 结果类型 **约束限制**: 不涉及 **取值范围**: - unhandled : 未忽略的 - ignored   : 已忽略的 **默认取值**: unhandled 
 
         :param result_type: The result_type of this ListPasswordComplexityRequest.
         :type result_type: str
@@ -197,7 +197,7 @@ class ListPasswordComplexityRequest:
     def limit(self):
         r"""Gets the limit of this ListPasswordComplexityRequest.
 
-        每页显示数量
+        **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
 
         :return: The limit of this ListPasswordComplexityRequest.
         :rtype: int
@@ -208,7 +208,7 @@ class ListPasswordComplexityRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListPasswordComplexityRequest.
 
-        每页显示数量
+        **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
 
         :param limit: The limit of this ListPasswordComplexityRequest.
         :type limit: int
@@ -219,7 +219,7 @@ class ListPasswordComplexityRequest:
     def offset(self):
         r"""Gets the offset of this ListPasswordComplexityRequest.
 
-        偏移量：指定返回记录的开始位置
+        **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 默认为0 
 
         :return: The offset of this ListPasswordComplexityRequest.
         :rtype: int
@@ -230,7 +230,7 @@ class ListPasswordComplexityRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListPasswordComplexityRequest.
 
-        偏移量：指定返回记录的开始位置
+        **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 默认为0 
 
         :param offset: The offset of this ListPasswordComplexityRequest.
         :type offset: int

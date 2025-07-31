@@ -59,7 +59,7 @@ class HttpsDetail:
         :type certificate: str
         :param private_key: 私钥内容。
         :type private_key: str
-        :param certificate_type: 0：自有证书  1：云托管证书。
+        :param certificate_type: 证书类型，0：自有证书，1：云托管证书，2：SCM证书。
         :type certificate_type: int
         :param expiration_time: 证书过期时间。
         :type expiration_time: int
@@ -225,7 +225,7 @@ class HttpsDetail:
     def certificate_type(self):
         r"""Gets the certificate_type of this HttpsDetail.
 
-        0：自有证书  1：云托管证书。
+        证书类型，0：自有证书，1：云托管证书，2：SCM证书。
 
         :return: The certificate_type of this HttpsDetail.
         :rtype: int
@@ -236,7 +236,7 @@ class HttpsDetail:
     def certificate_type(self, certificate_type):
         r"""Sets the certificate_type of this HttpsDetail.
 
-        0：自有证书  1：云托管证书。
+        证书类型，0：自有证书，1：云托管证书，2：SCM证书。
 
         :param certificate_type: The certificate_type of this HttpsDetail.
         :type certificate_type: int

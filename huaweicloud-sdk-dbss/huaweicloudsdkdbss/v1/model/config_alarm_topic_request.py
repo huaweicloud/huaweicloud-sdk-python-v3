@@ -49,11 +49,11 @@ class ConfigAlarmTopicRequest:
         :type alarm_memory: int
         :param alarm_num: 每天发送告警总条数
         :type alarm_num: int
-        :param alarm_risk: 告警等级 - high：高  - medium：中  - low：低
+        :param alarm_risk: 告警等级,默认为空。 - high：高  - medium：中  - low：低
         :type alarm_risk: list[str]
         :param alarm_switch: 通知开关 - ON：开启  - OFF：关闭
         :type alarm_switch: str
-        :param alarm_topic_urn: 通知消息主题URN,调用SMN服务接口获取
+        :param alarm_topic_urn: 通知消息主题URN,调用SMN服务接口获取。当alarm_switch为ON时必填
         :type alarm_topic_urn: str
         """
         
@@ -68,18 +68,13 @@ class ConfigAlarmTopicRequest:
         self._alarm_topic_urn = None
         self.discriminator = None
 
-        if alarm_cpu is not None:
-            self.alarm_cpu = alarm_cpu
-        if alarm_disk is not None:
-            self.alarm_disk = alarm_disk
-        if alarm_memory is not None:
-            self.alarm_memory = alarm_memory
-        if alarm_num is not None:
-            self.alarm_num = alarm_num
+        self.alarm_cpu = alarm_cpu
+        self.alarm_disk = alarm_disk
+        self.alarm_memory = alarm_memory
+        self.alarm_num = alarm_num
         if alarm_risk is not None:
             self.alarm_risk = alarm_risk
-        if alarm_switch is not None:
-            self.alarm_switch = alarm_switch
+        self.alarm_switch = alarm_switch
         if alarm_topic_urn is not None:
             self.alarm_topic_urn = alarm_topic_urn
 
@@ -175,7 +170,7 @@ class ConfigAlarmTopicRequest:
     def alarm_risk(self):
         r"""Gets the alarm_risk of this ConfigAlarmTopicRequest.
 
-        告警等级 - high：高  - medium：中  - low：低
+        告警等级,默认为空。 - high：高  - medium：中  - low：低
 
         :return: The alarm_risk of this ConfigAlarmTopicRequest.
         :rtype: list[str]
@@ -186,7 +181,7 @@ class ConfigAlarmTopicRequest:
     def alarm_risk(self, alarm_risk):
         r"""Sets the alarm_risk of this ConfigAlarmTopicRequest.
 
-        告警等级 - high：高  - medium：中  - low：低
+        告警等级,默认为空。 - high：高  - medium：中  - low：低
 
         :param alarm_risk: The alarm_risk of this ConfigAlarmTopicRequest.
         :type alarm_risk: list[str]
@@ -219,7 +214,7 @@ class ConfigAlarmTopicRequest:
     def alarm_topic_urn(self):
         r"""Gets the alarm_topic_urn of this ConfigAlarmTopicRequest.
 
-        通知消息主题URN,调用SMN服务接口获取
+        通知消息主题URN,调用SMN服务接口获取。当alarm_switch为ON时必填
 
         :return: The alarm_topic_urn of this ConfigAlarmTopicRequest.
         :rtype: str
@@ -230,7 +225,7 @@ class ConfigAlarmTopicRequest:
     def alarm_topic_urn(self, alarm_topic_urn):
         r"""Sets the alarm_topic_urn of this ConfigAlarmTopicRequest.
 
-        通知消息主题URN,调用SMN服务接口获取
+        通知消息主题URN,调用SMN服务接口获取。当alarm_switch为ON时必填
 
         :param alarm_topic_urn: The alarm_topic_urn of this ConfigAlarmTopicRequest.
         :type alarm_topic_urn: str

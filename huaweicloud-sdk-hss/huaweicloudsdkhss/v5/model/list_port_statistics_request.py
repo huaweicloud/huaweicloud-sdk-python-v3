@@ -17,72 +17,82 @@ class ListPortStatisticsRequest:
     sensitive_list = []
 
     openapi_types = {
+        'enterprise_project_id': 'str',
+        'category': 'str',
+        'sort_dir': 'str',
+        'limit': 'int',
+        'offset': 'int',
         'port': 'int',
         'port_string': 'str',
         'type': 'str',
         'status': 'str',
-        'enterprise_project_id': 'str',
-        'sort_key': 'str',
-        'sort_dir': 'str',
-        'limit': 'int',
-        'offset': 'int',
-        'category': 'str'
+        'sort_key': 'str'
     }
 
     attribute_map = {
+        'enterprise_project_id': 'enterprise_project_id',
+        'category': 'category',
+        'sort_dir': 'sort_dir',
+        'limit': 'limit',
+        'offset': 'offset',
         'port': 'port',
         'port_string': 'port_string',
         'type': 'type',
         'status': 'status',
-        'enterprise_project_id': 'enterprise_project_id',
-        'sort_key': 'sort_key',
-        'sort_dir': 'sort_dir',
-        'limit': 'limit',
-        'offset': 'offset',
-        'category': 'category'
+        'sort_key': 'sort_key'
     }
 
-    def __init__(self, port=None, port_string=None, type=None, status=None, enterprise_project_id=None, sort_key=None, sort_dir=None, limit=None, offset=None, category=None):
+    def __init__(self, enterprise_project_id=None, category=None, sort_dir=None, limit=None, offset=None, port=None, port_string=None, type=None, status=None, sort_key=None):
         r"""ListPortStatisticsRequest
 
         The model defined in huaweicloud sdk
 
-        :param port: 端口号，精确匹配
-        :type port: int
-        :param port_string: 端口字符串，用来进行模糊匹配
-        :type port_string: str
-        :param type: 端口类型
-        :type type: str
-        :param status: 端口状态，包含如下： - danger：危险端口 - unknow: 无已知危险的端口
-        :type status: str
-        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
+        :param enterprise_project_id: **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
         :type enterprise_project_id: str
-        :param sort_key: 排序的key值，目前支持按照端口号port排序
-        :type sort_key: str
-        :param sort_dir: 升序还是降序，默认升序，asc
-        :type sort_dir: str
-        :param limit: 每页显示数量
-        :type limit: int
-        :param offset: 偏移量：指定返回记录的开始位置
-        :type offset: int
-        :param category: 类别，默认为host，包含如下： - host：主机 - container：容器
+        :param category: **参数解释**: 类别 **约束限制**: 不涉及 **取值范围**: - host：主机 - container：容器  **默认取值**: 不涉及 
         :type category: str
+        :param sort_dir: **参数解释**: 排序的顺序 **约束限制**: 不涉及 **取值范围**:   - asc  : 正序   - desc : 倒序  **默认取值**: 正序排序 
+        :type sort_dir: str
+        :param limit: **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
+        :type limit: int
+        :param offset: **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 默认为0 
+        :type offset: int
+        :param port: **参数解释**: 端口号，该字段用来进行精确匹配 **约束限制**: 与port_string同时使用的话，二者有包含关系则按精确匹配，无包含关系则结果 为空 **取值范围**: 最小值1，最大值65535 **默认取值**: 不涉及 
+        :type port: int
+        :param port_string: **参数解释**: 端口字符串，该字段用来进行模糊匹配 **约束限制**: 与port同时使用的话，二者有包含关系则按精确匹配，无包含关系则结果 为空 **取值范围**: 最小值1，最大值65535 **默认取值**: 不涉及 
+        :type port_string: str
+        :param type: **参数解释**: 端口类型 **约束限制**: 不涉及 **取值范围**: - UDP - UDP6 - TCP - TCP6  **默认取值**: 不涉及 
+        :type type: str
+        :param status: **参数解释**: 端口状态 **约束限制**: 不涉及 **取值范围**: - danger: 危险端口 - normal: 正常端口 - unknow: 无已知危险的端口  **默认取值**: 不涉及 
+        :type status: str
+        :param sort_key: **参数解释**: 排序的key值，目前支持按照端口号port排序 **约束限制**: 不涉及 **取值范围**: - port: 端口号  **默认取值**: 不涉及 
+        :type sort_key: str
         """
         
         
 
+        self._enterprise_project_id = None
+        self._category = None
+        self._sort_dir = None
+        self._limit = None
+        self._offset = None
         self._port = None
         self._port_string = None
         self._type = None
         self._status = None
-        self._enterprise_project_id = None
         self._sort_key = None
-        self._sort_dir = None
-        self._limit = None
-        self._offset = None
-        self._category = None
         self.discriminator = None
 
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
+        if category is not None:
+            self.category = category
+        if sort_dir is not None:
+            self.sort_dir = sort_dir
+        if limit is not None:
+            self.limit = limit
+        if offset is not None:
+            self.offset = offset
         if port is not None:
             self.port = port
         if port_string is not None:
@@ -91,112 +101,14 @@ class ListPortStatisticsRequest:
             self.type = type
         if status is not None:
             self.status = status
-        if enterprise_project_id is not None:
-            self.enterprise_project_id = enterprise_project_id
         if sort_key is not None:
             self.sort_key = sort_key
-        if sort_dir is not None:
-            self.sort_dir = sort_dir
-        if limit is not None:
-            self.limit = limit
-        if offset is not None:
-            self.offset = offset
-        if category is not None:
-            self.category = category
-
-    @property
-    def port(self):
-        r"""Gets the port of this ListPortStatisticsRequest.
-
-        端口号，精确匹配
-
-        :return: The port of this ListPortStatisticsRequest.
-        :rtype: int
-        """
-        return self._port
-
-    @port.setter
-    def port(self, port):
-        r"""Sets the port of this ListPortStatisticsRequest.
-
-        端口号，精确匹配
-
-        :param port: The port of this ListPortStatisticsRequest.
-        :type port: int
-        """
-        self._port = port
-
-    @property
-    def port_string(self):
-        r"""Gets the port_string of this ListPortStatisticsRequest.
-
-        端口字符串，用来进行模糊匹配
-
-        :return: The port_string of this ListPortStatisticsRequest.
-        :rtype: str
-        """
-        return self._port_string
-
-    @port_string.setter
-    def port_string(self, port_string):
-        r"""Sets the port_string of this ListPortStatisticsRequest.
-
-        端口字符串，用来进行模糊匹配
-
-        :param port_string: The port_string of this ListPortStatisticsRequest.
-        :type port_string: str
-        """
-        self._port_string = port_string
-
-    @property
-    def type(self):
-        r"""Gets the type of this ListPortStatisticsRequest.
-
-        端口类型
-
-        :return: The type of this ListPortStatisticsRequest.
-        :rtype: str
-        """
-        return self._type
-
-    @type.setter
-    def type(self, type):
-        r"""Sets the type of this ListPortStatisticsRequest.
-
-        端口类型
-
-        :param type: The type of this ListPortStatisticsRequest.
-        :type type: str
-        """
-        self._type = type
-
-    @property
-    def status(self):
-        r"""Gets the status of this ListPortStatisticsRequest.
-
-        端口状态，包含如下： - danger：危险端口 - unknow: 无已知危险的端口
-
-        :return: The status of this ListPortStatisticsRequest.
-        :rtype: str
-        """
-        return self._status
-
-    @status.setter
-    def status(self, status):
-        r"""Sets the status of this ListPortStatisticsRequest.
-
-        端口状态，包含如下： - danger：危险端口 - unknow: 无已知危险的端口
-
-        :param status: The status of this ListPortStatisticsRequest.
-        :type status: str
-        """
-        self._status = status
 
     @property
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this ListPortStatisticsRequest.
 
-        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
+        **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
 
         :return: The enterprise_project_id of this ListPortStatisticsRequest.
         :rtype: str
@@ -207,7 +119,7 @@ class ListPortStatisticsRequest:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this ListPortStatisticsRequest.
 
-        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
+        **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
 
         :param enterprise_project_id: The enterprise_project_id of this ListPortStatisticsRequest.
         :type enterprise_project_id: str
@@ -215,98 +127,10 @@ class ListPortStatisticsRequest:
         self._enterprise_project_id = enterprise_project_id
 
     @property
-    def sort_key(self):
-        r"""Gets the sort_key of this ListPortStatisticsRequest.
-
-        排序的key值，目前支持按照端口号port排序
-
-        :return: The sort_key of this ListPortStatisticsRequest.
-        :rtype: str
-        """
-        return self._sort_key
-
-    @sort_key.setter
-    def sort_key(self, sort_key):
-        r"""Sets the sort_key of this ListPortStatisticsRequest.
-
-        排序的key值，目前支持按照端口号port排序
-
-        :param sort_key: The sort_key of this ListPortStatisticsRequest.
-        :type sort_key: str
-        """
-        self._sort_key = sort_key
-
-    @property
-    def sort_dir(self):
-        r"""Gets the sort_dir of this ListPortStatisticsRequest.
-
-        升序还是降序，默认升序，asc
-
-        :return: The sort_dir of this ListPortStatisticsRequest.
-        :rtype: str
-        """
-        return self._sort_dir
-
-    @sort_dir.setter
-    def sort_dir(self, sort_dir):
-        r"""Sets the sort_dir of this ListPortStatisticsRequest.
-
-        升序还是降序，默认升序，asc
-
-        :param sort_dir: The sort_dir of this ListPortStatisticsRequest.
-        :type sort_dir: str
-        """
-        self._sort_dir = sort_dir
-
-    @property
-    def limit(self):
-        r"""Gets the limit of this ListPortStatisticsRequest.
-
-        每页显示数量
-
-        :return: The limit of this ListPortStatisticsRequest.
-        :rtype: int
-        """
-        return self._limit
-
-    @limit.setter
-    def limit(self, limit):
-        r"""Sets the limit of this ListPortStatisticsRequest.
-
-        每页显示数量
-
-        :param limit: The limit of this ListPortStatisticsRequest.
-        :type limit: int
-        """
-        self._limit = limit
-
-    @property
-    def offset(self):
-        r"""Gets the offset of this ListPortStatisticsRequest.
-
-        偏移量：指定返回记录的开始位置
-
-        :return: The offset of this ListPortStatisticsRequest.
-        :rtype: int
-        """
-        return self._offset
-
-    @offset.setter
-    def offset(self, offset):
-        r"""Sets the offset of this ListPortStatisticsRequest.
-
-        偏移量：指定返回记录的开始位置
-
-        :param offset: The offset of this ListPortStatisticsRequest.
-        :type offset: int
-        """
-        self._offset = offset
-
-    @property
     def category(self):
         r"""Gets the category of this ListPortStatisticsRequest.
 
-        类别，默认为host，包含如下： - host：主机 - container：容器
+        **参数解释**: 类别 **约束限制**: 不涉及 **取值范围**: - host：主机 - container：容器  **默认取值**: 不涉及 
 
         :return: The category of this ListPortStatisticsRequest.
         :rtype: str
@@ -317,12 +141,188 @@ class ListPortStatisticsRequest:
     def category(self, category):
         r"""Sets the category of this ListPortStatisticsRequest.
 
-        类别，默认为host，包含如下： - host：主机 - container：容器
+        **参数解释**: 类别 **约束限制**: 不涉及 **取值范围**: - host：主机 - container：容器  **默认取值**: 不涉及 
 
         :param category: The category of this ListPortStatisticsRequest.
         :type category: str
         """
         self._category = category
+
+    @property
+    def sort_dir(self):
+        r"""Gets the sort_dir of this ListPortStatisticsRequest.
+
+        **参数解释**: 排序的顺序 **约束限制**: 不涉及 **取值范围**:   - asc  : 正序   - desc : 倒序  **默认取值**: 正序排序 
+
+        :return: The sort_dir of this ListPortStatisticsRequest.
+        :rtype: str
+        """
+        return self._sort_dir
+
+    @sort_dir.setter
+    def sort_dir(self, sort_dir):
+        r"""Sets the sort_dir of this ListPortStatisticsRequest.
+
+        **参数解释**: 排序的顺序 **约束限制**: 不涉及 **取值范围**:   - asc  : 正序   - desc : 倒序  **默认取值**: 正序排序 
+
+        :param sort_dir: The sort_dir of this ListPortStatisticsRequest.
+        :type sort_dir: str
+        """
+        self._sort_dir = sort_dir
+
+    @property
+    def limit(self):
+        r"""Gets the limit of this ListPortStatisticsRequest.
+
+        **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
+
+        :return: The limit of this ListPortStatisticsRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        r"""Sets the limit of this ListPortStatisticsRequest.
+
+        **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
+
+        :param limit: The limit of this ListPortStatisticsRequest.
+        :type limit: int
+        """
+        self._limit = limit
+
+    @property
+    def offset(self):
+        r"""Gets the offset of this ListPortStatisticsRequest.
+
+        **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 默认为0 
+
+        :return: The offset of this ListPortStatisticsRequest.
+        :rtype: int
+        """
+        return self._offset
+
+    @offset.setter
+    def offset(self, offset):
+        r"""Sets the offset of this ListPortStatisticsRequest.
+
+        **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 默认为0 
+
+        :param offset: The offset of this ListPortStatisticsRequest.
+        :type offset: int
+        """
+        self._offset = offset
+
+    @property
+    def port(self):
+        r"""Gets the port of this ListPortStatisticsRequest.
+
+        **参数解释**: 端口号，该字段用来进行精确匹配 **约束限制**: 与port_string同时使用的话，二者有包含关系则按精确匹配，无包含关系则结果 为空 **取值范围**: 最小值1，最大值65535 **默认取值**: 不涉及 
+
+        :return: The port of this ListPortStatisticsRequest.
+        :rtype: int
+        """
+        return self._port
+
+    @port.setter
+    def port(self, port):
+        r"""Sets the port of this ListPortStatisticsRequest.
+
+        **参数解释**: 端口号，该字段用来进行精确匹配 **约束限制**: 与port_string同时使用的话，二者有包含关系则按精确匹配，无包含关系则结果 为空 **取值范围**: 最小值1，最大值65535 **默认取值**: 不涉及 
+
+        :param port: The port of this ListPortStatisticsRequest.
+        :type port: int
+        """
+        self._port = port
+
+    @property
+    def port_string(self):
+        r"""Gets the port_string of this ListPortStatisticsRequest.
+
+        **参数解释**: 端口字符串，该字段用来进行模糊匹配 **约束限制**: 与port同时使用的话，二者有包含关系则按精确匹配，无包含关系则结果 为空 **取值范围**: 最小值1，最大值65535 **默认取值**: 不涉及 
+
+        :return: The port_string of this ListPortStatisticsRequest.
+        :rtype: str
+        """
+        return self._port_string
+
+    @port_string.setter
+    def port_string(self, port_string):
+        r"""Sets the port_string of this ListPortStatisticsRequest.
+
+        **参数解释**: 端口字符串，该字段用来进行模糊匹配 **约束限制**: 与port同时使用的话，二者有包含关系则按精确匹配，无包含关系则结果 为空 **取值范围**: 最小值1，最大值65535 **默认取值**: 不涉及 
+
+        :param port_string: The port_string of this ListPortStatisticsRequest.
+        :type port_string: str
+        """
+        self._port_string = port_string
+
+    @property
+    def type(self):
+        r"""Gets the type of this ListPortStatisticsRequest.
+
+        **参数解释**: 端口类型 **约束限制**: 不涉及 **取值范围**: - UDP - UDP6 - TCP - TCP6  **默认取值**: 不涉及 
+
+        :return: The type of this ListPortStatisticsRequest.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        r"""Sets the type of this ListPortStatisticsRequest.
+
+        **参数解释**: 端口类型 **约束限制**: 不涉及 **取值范围**: - UDP - UDP6 - TCP - TCP6  **默认取值**: 不涉及 
+
+        :param type: The type of this ListPortStatisticsRequest.
+        :type type: str
+        """
+        self._type = type
+
+    @property
+    def status(self):
+        r"""Gets the status of this ListPortStatisticsRequest.
+
+        **参数解释**: 端口状态 **约束限制**: 不涉及 **取值范围**: - danger: 危险端口 - normal: 正常端口 - unknow: 无已知危险的端口  **默认取值**: 不涉及 
+
+        :return: The status of this ListPortStatisticsRequest.
+        :rtype: str
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        r"""Sets the status of this ListPortStatisticsRequest.
+
+        **参数解释**: 端口状态 **约束限制**: 不涉及 **取值范围**: - danger: 危险端口 - normal: 正常端口 - unknow: 无已知危险的端口  **默认取值**: 不涉及 
+
+        :param status: The status of this ListPortStatisticsRequest.
+        :type status: str
+        """
+        self._status = status
+
+    @property
+    def sort_key(self):
+        r"""Gets the sort_key of this ListPortStatisticsRequest.
+
+        **参数解释**: 排序的key值，目前支持按照端口号port排序 **约束限制**: 不涉及 **取值范围**: - port: 端口号  **默认取值**: 不涉及 
+
+        :return: The sort_key of this ListPortStatisticsRequest.
+        :rtype: str
+        """
+        return self._sort_key
+
+    @sort_key.setter
+    def sort_key(self, sort_key):
+        r"""Sets the sort_key of this ListPortStatisticsRequest.
+
+        **参数解释**: 排序的key值，目前支持按照端口号port排序 **约束限制**: 不涉及 **取值范围**: - port: 端口号  **默认取值**: 不涉及 
+
+        :param sort_key: The sort_key of this ListPortStatisticsRequest.
+        :type sort_key: str
+        """
+        self._sort_key = sort_key
 
     def to_dict(self):
         """Returns the model properties as a dict"""

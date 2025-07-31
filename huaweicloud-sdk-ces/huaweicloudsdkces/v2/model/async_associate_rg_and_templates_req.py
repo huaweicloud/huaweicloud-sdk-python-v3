@@ -23,6 +23,7 @@ class AsyncAssociateRGAndTemplatesReq:
         'ok_notifications': 'list[Notification]',
         'notification_begin_time': 'str',
         'notification_end_time': 'str',
+        'effective_timezone': 'str',
         'enterprise_project_id': 'str',
         'notification_manner': 'str',
         'notification_policy_ids': 'list[str]'
@@ -35,12 +36,13 @@ class AsyncAssociateRGAndTemplatesReq:
         'ok_notifications': 'ok_notifications',
         'notification_begin_time': 'notification_begin_time',
         'notification_end_time': 'notification_end_time',
+        'effective_timezone': 'effective_timezone',
         'enterprise_project_id': 'enterprise_project_id',
         'notification_manner': 'notification_manner',
         'notification_policy_ids': 'notification_policy_ids'
     }
 
-    def __init__(self, template_ids=None, notification_enabled=None, alarm_notifications=None, ok_notifications=None, notification_begin_time=None, notification_end_time=None, enterprise_project_id=None, notification_manner=None, notification_policy_ids=None):
+    def __init__(self, template_ids=None, notification_enabled=None, alarm_notifications=None, ok_notifications=None, notification_begin_time=None, notification_end_time=None, effective_timezone=None, enterprise_project_id=None, notification_manner=None, notification_policy_ids=None):
         r"""AsyncAssociateRGAndTemplatesReq
 
         The model defined in huaweicloud sdk
@@ -57,6 +59,8 @@ class AsyncAssociateRGAndTemplatesReq:
         :type notification_begin_time: str
         :param notification_end_time: 告警通知关闭时间
         :type notification_end_time: str
+        :param effective_timezone: 时区，形如：\&quot;GMT-08:00\&quot;、\&quot;GMT+08:00\&quot;、\&quot;GMT+0:00\&quot;
+        :type effective_timezone: str
         :param enterprise_project_id: 企业项目ID
         :type enterprise_project_id: str
         :param notification_manner: NOTIFICATION_GROUP(通知组)/TOPIC_SUBSCRIPTION(主题订阅)/NOTIFICATION_POLICY(通知策略)
@@ -73,6 +77,7 @@ class AsyncAssociateRGAndTemplatesReq:
         self._ok_notifications = None
         self._notification_begin_time = None
         self._notification_end_time = None
+        self._effective_timezone = None
         self._enterprise_project_id = None
         self._notification_manner = None
         self._notification_policy_ids = None
@@ -88,6 +93,8 @@ class AsyncAssociateRGAndTemplatesReq:
             self.notification_begin_time = notification_begin_time
         if notification_end_time is not None:
             self.notification_end_time = notification_end_time
+        if effective_timezone is not None:
+            self.effective_timezone = effective_timezone
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
         if notification_manner is not None:
@@ -226,6 +233,28 @@ class AsyncAssociateRGAndTemplatesReq:
         :type notification_end_time: str
         """
         self._notification_end_time = notification_end_time
+
+    @property
+    def effective_timezone(self):
+        r"""Gets the effective_timezone of this AsyncAssociateRGAndTemplatesReq.
+
+        时区，形如：\"GMT-08:00\"、\"GMT+08:00\"、\"GMT+0:00\"
+
+        :return: The effective_timezone of this AsyncAssociateRGAndTemplatesReq.
+        :rtype: str
+        """
+        return self._effective_timezone
+
+    @effective_timezone.setter
+    def effective_timezone(self, effective_timezone):
+        r"""Sets the effective_timezone of this AsyncAssociateRGAndTemplatesReq.
+
+        时区，形如：\"GMT-08:00\"、\"GMT+08:00\"、\"GMT+0:00\"
+
+        :param effective_timezone: The effective_timezone of this AsyncAssociateRGAndTemplatesReq.
+        :type effective_timezone: str
+        """
+        self._effective_timezone = effective_timezone
 
     @property
     def enterprise_project_id(self):

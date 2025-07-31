@@ -35,13 +35,13 @@ class CreateRSetBatchLinesReq:
 
         The model defined in huaweicloud sdk
 
-        :param name: 域名，后缀需以zone name结束且为FQDN（即以“.”号结束的完整主机名）。
+        :param name: **参数解释：** 域名，后缀需以zone name结束且为FQDN（Fully Qualified Domain Name，全称域名），即以“.”结束的完整主机名。 如“www.example.com.”。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type name: str
-        :param description: 可选配置，对域名的描述。 长度不超过255个字符。
+        :param description: **参数解释：** 记录集的描述信息。 **约束限制：** 不涉及。 **取值范围：** 长度不超过255个字符。 **默认取值：** 不涉及。
         :type description: str
-        :param type: 记录集的类型。 取值范围：A,AAAA,MX,CNAME,TXT,NS,SRV,CAA。
+        :param type: **参数解释：** 记录集的类型。 **约束限制：** 不涉及。 **取值范围：** A、AAAA、MX、CNAME、TXT、SRV、NS、SOA、CAA。 **默认取值：** 不涉及。
         :type type: str
-        :param lines: 解析线路域名参数。最多支持50个。
+        :param lines: **参数解释：** 解析线路域名参数。 **约束限制：** 最多支持50个。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type lines: list[:class:`huaweicloudsdkdns.v2.BatchCreateRecordSetWithLine`]
         """
         
@@ -63,7 +63,7 @@ class CreateRSetBatchLinesReq:
     def name(self):
         r"""Gets the name of this CreateRSetBatchLinesReq.
 
-        域名，后缀需以zone name结束且为FQDN（即以“.”号结束的完整主机名）。
+        **参数解释：** 域名，后缀需以zone name结束且为FQDN（Fully Qualified Domain Name，全称域名），即以“.”结束的完整主机名。 如“www.example.com.”。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The name of this CreateRSetBatchLinesReq.
         :rtype: str
@@ -74,7 +74,7 @@ class CreateRSetBatchLinesReq:
     def name(self, name):
         r"""Sets the name of this CreateRSetBatchLinesReq.
 
-        域名，后缀需以zone name结束且为FQDN（即以“.”号结束的完整主机名）。
+        **参数解释：** 域名，后缀需以zone name结束且为FQDN（Fully Qualified Domain Name，全称域名），即以“.”结束的完整主机名。 如“www.example.com.”。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param name: The name of this CreateRSetBatchLinesReq.
         :type name: str
@@ -85,7 +85,7 @@ class CreateRSetBatchLinesReq:
     def description(self):
         r"""Gets the description of this CreateRSetBatchLinesReq.
 
-        可选配置，对域名的描述。 长度不超过255个字符。
+        **参数解释：** 记录集的描述信息。 **约束限制：** 不涉及。 **取值范围：** 长度不超过255个字符。 **默认取值：** 不涉及。
 
         :return: The description of this CreateRSetBatchLinesReq.
         :rtype: str
@@ -96,7 +96,7 @@ class CreateRSetBatchLinesReq:
     def description(self, description):
         r"""Sets the description of this CreateRSetBatchLinesReq.
 
-        可选配置，对域名的描述。 长度不超过255个字符。
+        **参数解释：** 记录集的描述信息。 **约束限制：** 不涉及。 **取值范围：** 长度不超过255个字符。 **默认取值：** 不涉及。
 
         :param description: The description of this CreateRSetBatchLinesReq.
         :type description: str
@@ -107,7 +107,7 @@ class CreateRSetBatchLinesReq:
     def type(self):
         r"""Gets the type of this CreateRSetBatchLinesReq.
 
-        记录集的类型。 取值范围：A,AAAA,MX,CNAME,TXT,NS,SRV,CAA。
+        **参数解释：** 记录集的类型。 **约束限制：** 不涉及。 **取值范围：** A、AAAA、MX、CNAME、TXT、SRV、NS、SOA、CAA。 **默认取值：** 不涉及。
 
         :return: The type of this CreateRSetBatchLinesReq.
         :rtype: str
@@ -118,7 +118,7 @@ class CreateRSetBatchLinesReq:
     def type(self, type):
         r"""Sets the type of this CreateRSetBatchLinesReq.
 
-        记录集的类型。 取值范围：A,AAAA,MX,CNAME,TXT,NS,SRV,CAA。
+        **参数解释：** 记录集的类型。 **约束限制：** 不涉及。 **取值范围：** A、AAAA、MX、CNAME、TXT、SRV、NS、SOA、CAA。 **默认取值：** 不涉及。
 
         :param type: The type of this CreateRSetBatchLinesReq.
         :type type: str
@@ -129,7 +129,7 @@ class CreateRSetBatchLinesReq:
     def lines(self):
         r"""Gets the lines of this CreateRSetBatchLinesReq.
 
-        解析线路域名参数。最多支持50个。
+        **参数解释：** 解析线路域名参数。 **约束限制：** 最多支持50个。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The lines of this CreateRSetBatchLinesReq.
         :rtype: list[:class:`huaweicloudsdkdns.v2.BatchCreateRecordSetWithLine`]
@@ -140,7 +140,7 @@ class CreateRSetBatchLinesReq:
     def lines(self, lines):
         r"""Sets the lines of this CreateRSetBatchLinesReq.
 
-        解析线路域名参数。最多支持50个。
+        **参数解释：** 解析线路域名参数。 **约束限制：** 最多支持50个。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param lines: The lines of this CreateRSetBatchLinesReq.
         :type lines: list[:class:`huaweicloudsdkdns.v2.BatchCreateRecordSetWithLine`]

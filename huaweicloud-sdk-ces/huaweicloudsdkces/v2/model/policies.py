@@ -51,7 +51,7 @@ class Policies:
 
         The model defined in huaweicloud sdk
 
-        :param namespace: 服务的命名空间，查询各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”
+        :param namespace: 查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”
         :type namespace: str
         :param dimension_name: 资源维度，必须以字母开头，多维度用\&quot;,\&quot;分割，只能包含0-9/a-z/A-Z/_/-，每个维度的最大长度为32, 事件告警模板DimensionName为空
         :type dimension_name: str
@@ -59,11 +59,11 @@ class Policies:
         :type metric_name: str
         :param period: 告警条件判断周期,单位为秒
         :type period: int
-        :param filter: 数据聚合方式
+        :param filter: 聚合方式。average： 平均值，variance：方差，min：最小值，max：最大值，sum：求和，tp99：99百分位数，tp95：95百分位数，tp90：90百分位数
         :type filter: str
         :param comparison_operator: 阈值符号, 支持的值为(&gt;|&lt;|&gt;&#x3D;|&lt;&#x3D;|&#x3D;|!&#x3D;|cycle_decrease|cycle_increase|cycle_wave);cycle_decrease为环比下降,cycle_increase为环比上升,cycle_wave为环比波动； 指标告警可以使用的阈值符号有&gt;、&gt;&#x3D;、&lt;、&lt;&#x3D;、&#x3D;、!&#x3D;、cycle_decrease、cycle_increase、cycle_wave； 事件告警可以使用的阈值符号为&gt;、&gt;&#x3D;、&lt;、&lt;&#x3D;、&#x3D;、!&#x3D;； 
         :type comparison_operator: str
-        :param value: 告警阈值(Number.MAX_VALUE)。单一阈值时value和alarm_level配对使用，当hierarchical_value和value同时使用时以hierarchical_value为准。
+        :param value: 告警阈值。单一阈值时value和alarm_level配对使用，当hierarchical_value和value同时使用时以hierarchical_value为准。
         :type value: float
         :param hierarchical_value: 
         :type hierarchical_value: :class:`huaweicloudsdkces.v2.HierarchicalValue`
@@ -115,7 +115,7 @@ class Policies:
     def namespace(self):
         r"""Gets the namespace of this Policies.
 
-        服务的命名空间，查询各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”
+        查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”
 
         :return: The namespace of this Policies.
         :rtype: str
@@ -126,7 +126,7 @@ class Policies:
     def namespace(self, namespace):
         r"""Sets the namespace of this Policies.
 
-        服务的命名空间，查询各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”
+        查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”
 
         :param namespace: The namespace of this Policies.
         :type namespace: str
@@ -203,7 +203,7 @@ class Policies:
     def filter(self):
         r"""Gets the filter of this Policies.
 
-        数据聚合方式
+        聚合方式。average： 平均值，variance：方差，min：最小值，max：最大值，sum：求和，tp99：99百分位数，tp95：95百分位数，tp90：90百分位数
 
         :return: The filter of this Policies.
         :rtype: str
@@ -214,7 +214,7 @@ class Policies:
     def filter(self, filter):
         r"""Sets the filter of this Policies.
 
-        数据聚合方式
+        聚合方式。average： 平均值，variance：方差，min：最小值，max：最大值，sum：求和，tp99：99百分位数，tp95：95百分位数，tp90：90百分位数
 
         :param filter: The filter of this Policies.
         :type filter: str
@@ -247,7 +247,7 @@ class Policies:
     def value(self):
         r"""Gets the value of this Policies.
 
-        告警阈值(Number.MAX_VALUE)。单一阈值时value和alarm_level配对使用，当hierarchical_value和value同时使用时以hierarchical_value为准。
+        告警阈值。单一阈值时value和alarm_level配对使用，当hierarchical_value和value同时使用时以hierarchical_value为准。
 
         :return: The value of this Policies.
         :rtype: float
@@ -258,7 +258,7 @@ class Policies:
     def value(self, value):
         r"""Sets the value of this Policies.
 
-        告警阈值(Number.MAX_VALUE)。单一阈值时value和alarm_level配对使用，当hierarchical_value和value同时使用时以hierarchical_value为准。
+        告警阈值。单一阈值时value和alarm_level配对使用，当hierarchical_value和value同时使用时以hierarchical_value为准。
 
         :param value: The value of this Policies.
         :type value: float

@@ -59,7 +59,7 @@ class ListEventHandleHistoryRequest:
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: **参数解释**: 主机所属的企业项目ID。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。 **约束限制**: 开通企业项目功能后才需要配置企业项目。 **取值范围**: 字符长度1-256位 **默认取值**: 0 
+        :param enterprise_project_id: **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
         :type enterprise_project_id: str
         :param severity: 威胁等级，包含如下:   - Security ：安全   - Low : 低危   - Medium : 中危   - High : 高危   - Critical : 危急
         :type severity: str
@@ -73,19 +73,19 @@ class ListEventHandleHistoryRequest:
         :type event_name: str
         :param event_type: 事件类型，包含如下:   - 1001 : 通用恶意软件   - 1002 : 病毒   - 1003 : 蠕虫   - 1004 : 木马   - 1005 : 僵尸网络   - 1006 : 后门   - 1010 : Rootkit   - 1011 : 勒索软件   - 1012 ：黑客工具   - 1015 : Webshell   - 1016 : 挖矿   - 1017 : 反弹Shell   - 2001 : 一般漏洞利用   - 2012 : 远程代码执行   - 2047 : Redis漏洞利用   - 2048 : Hadoop漏洞利用   - 2049 : MySQL漏洞利用   - 3002 : 文件提权   - 3003 : 进程提权   - 3004 : 关键文件变更   - 3005 : 文件/目录变更   - 3007 : 进程异常行为   - 3015 : 高危命令执行   - 3018 : 异常Shell   - 3027 : Crontab可疑任务   - 3029 ：系统安全防护被禁用   - 3030 ：备份删除   - 3031 ：异常注册表操作   - 3036 : 容器镜像阻断   - 4002 : 暴力破解   - 4004 : 异常登录   - 4006 : 非法系统账号   - 4014 : 用户账号添加   - 4020 : 用户密码窃取   - 6002 : 端口扫描   - 6003 : 主机扫描   - 13001 : Kubernetes事件删除   - 13002 : Pod异常行为   - 13003 : 枚举用户信息   - 13004 : 绑定集群用户角色
         :type event_type: int
-        :param host_name: 服务器名称
+        :param host_name: **参数解释**: 服务器名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
         :type host_name: str
         :param handle_status: 处置状态，包含如下:   - unhandled ：未处理   - handled : 已处理
         :type handle_status: str
-        :param host_ip: 主机IP
+        :param host_ip: **参数解释**: 主机IP **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
         :type host_ip: str
-        :param limit: 每页显示个数
+        :param limit: **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
         :type limit: int
-        :param offset: 偏移量：指定返回记录的开始位置
+        :param offset: **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 不涉及 
         :type offset: int
         :param public_ip: 服务器公网IP
         :type public_ip: str
-        :param private_ip: 服务器私有IP
+        :param private_ip: **参数解释**: 服务器私有IP **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
         :type private_ip: str
         :param sort_dir: 排序顺序，若sort_key不为空,设置返回结果按照sort_key升序或降序排序,默认降序排序，包含如下:   - asc : 升序   - desc : 降序
         :type sort_dir: str
@@ -148,7 +148,7 @@ class ListEventHandleHistoryRequest:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this ListEventHandleHistoryRequest.
 
-        **参数解释**: 主机所属的企业项目ID。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。 **约束限制**: 开通企业项目功能后才需要配置企业项目。 **取值范围**: 字符长度1-256位 **默认取值**: 0 
+        **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
 
         :return: The enterprise_project_id of this ListEventHandleHistoryRequest.
         :rtype: str
@@ -159,7 +159,7 @@ class ListEventHandleHistoryRequest:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this ListEventHandleHistoryRequest.
 
-        **参数解释**: 主机所属的企业项目ID。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。 **约束限制**: 开通企业项目功能后才需要配置企业项目。 **取值范围**: 字符长度1-256位 **默认取值**: 0 
+        **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
 
         :param enterprise_project_id: The enterprise_project_id of this ListEventHandleHistoryRequest.
         :type enterprise_project_id: str
@@ -302,7 +302,7 @@ class ListEventHandleHistoryRequest:
     def host_name(self):
         r"""Gets the host_name of this ListEventHandleHistoryRequest.
 
-        服务器名称
+        **参数解释**: 服务器名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
 
         :return: The host_name of this ListEventHandleHistoryRequest.
         :rtype: str
@@ -313,7 +313,7 @@ class ListEventHandleHistoryRequest:
     def host_name(self, host_name):
         r"""Sets the host_name of this ListEventHandleHistoryRequest.
 
-        服务器名称
+        **参数解释**: 服务器名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
 
         :param host_name: The host_name of this ListEventHandleHistoryRequest.
         :type host_name: str
@@ -346,7 +346,7 @@ class ListEventHandleHistoryRequest:
     def host_ip(self):
         r"""Gets the host_ip of this ListEventHandleHistoryRequest.
 
-        主机IP
+        **参数解释**: 主机IP **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
 
         :return: The host_ip of this ListEventHandleHistoryRequest.
         :rtype: str
@@ -357,7 +357,7 @@ class ListEventHandleHistoryRequest:
     def host_ip(self, host_ip):
         r"""Sets the host_ip of this ListEventHandleHistoryRequest.
 
-        主机IP
+        **参数解释**: 主机IP **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
 
         :param host_ip: The host_ip of this ListEventHandleHistoryRequest.
         :type host_ip: str
@@ -368,7 +368,7 @@ class ListEventHandleHistoryRequest:
     def limit(self):
         r"""Gets the limit of this ListEventHandleHistoryRequest.
 
-        每页显示个数
+        **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
 
         :return: The limit of this ListEventHandleHistoryRequest.
         :rtype: int
@@ -379,7 +379,7 @@ class ListEventHandleHistoryRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListEventHandleHistoryRequest.
 
-        每页显示个数
+        **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
 
         :param limit: The limit of this ListEventHandleHistoryRequest.
         :type limit: int
@@ -390,7 +390,7 @@ class ListEventHandleHistoryRequest:
     def offset(self):
         r"""Gets the offset of this ListEventHandleHistoryRequest.
 
-        偏移量：指定返回记录的开始位置
+        **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 不涉及 
 
         :return: The offset of this ListEventHandleHistoryRequest.
         :rtype: int
@@ -401,7 +401,7 @@ class ListEventHandleHistoryRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListEventHandleHistoryRequest.
 
-        偏移量：指定返回记录的开始位置
+        **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 不涉及 
 
         :param offset: The offset of this ListEventHandleHistoryRequest.
         :type offset: int
@@ -434,7 +434,7 @@ class ListEventHandleHistoryRequest:
     def private_ip(self):
         r"""Gets the private_ip of this ListEventHandleHistoryRequest.
 
-        服务器私有IP
+        **参数解释**: 服务器私有IP **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
 
         :return: The private_ip of this ListEventHandleHistoryRequest.
         :rtype: str
@@ -445,7 +445,7 @@ class ListEventHandleHistoryRequest:
     def private_ip(self, private_ip):
         r"""Sets the private_ip of this ListEventHandleHistoryRequest.
 
-        服务器私有IP
+        **参数解释**: 服务器私有IP **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
 
         :param private_ip: The private_ip of this ListEventHandleHistoryRequest.
         :type private_ip: str

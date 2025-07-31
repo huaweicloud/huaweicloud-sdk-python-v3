@@ -31,9 +31,9 @@ class BatchSetRecordSetsStatusRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param status: 待设置记录集状态，支持DISABLE或ENABLE。
+        :param status: **参数解释：** 待设置记录集状态。 **约束限制：** 不涉及。 **取值范围：** - DISABLE：暂停解析 - ENABLE：启用解析  **默认取值：** 不涉及。
         :type status: str
-        :param recordset_ids: 待设置记录集ID列表。 最多支持50个。
+        :param recordset_ids: **参数解释：** 待设置记录集ID列表。 **约束限制：** 最多支持50个。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type recordset_ids: list[str]
         """
         
@@ -50,7 +50,7 @@ class BatchSetRecordSetsStatusRequestBody:
     def status(self):
         r"""Gets the status of this BatchSetRecordSetsStatusRequestBody.
 
-        待设置记录集状态，支持DISABLE或ENABLE。
+        **参数解释：** 待设置记录集状态。 **约束限制：** 不涉及。 **取值范围：** - DISABLE：暂停解析 - ENABLE：启用解析  **默认取值：** 不涉及。
 
         :return: The status of this BatchSetRecordSetsStatusRequestBody.
         :rtype: str
@@ -61,7 +61,7 @@ class BatchSetRecordSetsStatusRequestBody:
     def status(self, status):
         r"""Sets the status of this BatchSetRecordSetsStatusRequestBody.
 
-        待设置记录集状态，支持DISABLE或ENABLE。
+        **参数解释：** 待设置记录集状态。 **约束限制：** 不涉及。 **取值范围：** - DISABLE：暂停解析 - ENABLE：启用解析  **默认取值：** 不涉及。
 
         :param status: The status of this BatchSetRecordSetsStatusRequestBody.
         :type status: str
@@ -72,7 +72,7 @@ class BatchSetRecordSetsStatusRequestBody:
     def recordset_ids(self):
         r"""Gets the recordset_ids of this BatchSetRecordSetsStatusRequestBody.
 
-        待设置记录集ID列表。 最多支持50个。
+        **参数解释：** 待设置记录集ID列表。 **约束限制：** 最多支持50个。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The recordset_ids of this BatchSetRecordSetsStatusRequestBody.
         :rtype: list[str]
@@ -83,7 +83,7 @@ class BatchSetRecordSetsStatusRequestBody:
     def recordset_ids(self, recordset_ids):
         r"""Sets the recordset_ids of this BatchSetRecordSetsStatusRequestBody.
 
-        待设置记录集ID列表。 最多支持50个。
+        **参数解释：** 待设置记录集ID列表。 **约束限制：** 最多支持50个。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param recordset_ids: The recordset_ids of this BatchSetRecordSetsStatusRequestBody.
         :type recordset_ids: list[str]

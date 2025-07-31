@@ -31,9 +31,9 @@ class AppStatisticResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param app_name: 软件名称
+        :param app_name: **参数解释**: 软件名称 **取值范围**: 字符长度1-128位 
         :type app_name: str
-        :param num: 进程数量
+        :param num: **参数解释**: 进程数量 **取值范围**: 字符长度0-100000位 
         :type num: int
         """
         
@@ -52,7 +52,7 @@ class AppStatisticResponseInfo:
     def app_name(self):
         r"""Gets the app_name of this AppStatisticResponseInfo.
 
-        软件名称
+        **参数解释**: 软件名称 **取值范围**: 字符长度1-128位 
 
         :return: The app_name of this AppStatisticResponseInfo.
         :rtype: str
@@ -63,7 +63,7 @@ class AppStatisticResponseInfo:
     def app_name(self, app_name):
         r"""Sets the app_name of this AppStatisticResponseInfo.
 
-        软件名称
+        **参数解释**: 软件名称 **取值范围**: 字符长度1-128位 
 
         :param app_name: The app_name of this AppStatisticResponseInfo.
         :type app_name: str
@@ -74,7 +74,7 @@ class AppStatisticResponseInfo:
     def num(self):
         r"""Gets the num of this AppStatisticResponseInfo.
 
-        进程数量
+        **参数解释**: 进程数量 **取值范围**: 字符长度0-100000位 
 
         :return: The num of this AppStatisticResponseInfo.
         :rtype: int
@@ -85,7 +85,7 @@ class AppStatisticResponseInfo:
     def num(self, num):
         r"""Sets the num of this AppStatisticResponseInfo.
 
-        进程数量
+        **参数解释**: 进程数量 **取值范围**: 字符长度0-100000位 
 
         :param num: The num of this AppStatisticResponseInfo.
         :type num: int

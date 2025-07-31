@@ -41,19 +41,19 @@ class WeakPwdListInfoResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param host_id: 主机ID
+        :param host_id: **参数解释**: 主机ID **取值范围**: 不涉及 
         :type host_id: str
-        :param host_name: 服务器名称
+        :param host_name: **参数解释**: 服务器名称 **取值范围**: 不涉及 
         :type host_name: str
-        :param host_ip: 服务器IP（私有IP），为兼容用户使用，不删除此字段
+        :param host_ip: **参数解释**: 服务器IP（私有IP），为兼容用户使用，不删除此字段 **取值范围**: 不涉及 
         :type host_ip: str
-        :param private_ip: 服务器私有IP
+        :param private_ip: **参数解释**: 服务器私有IP **取值范围**: 不涉及 
         :type private_ip: str
-        :param public_ip: 服务器公网IP
+        :param public_ip: **参数解释**: 服务器公网IP **取值范围**: 不涉及 
         :type public_ip: str
-        :param update_time: 最近扫描时间，时间戳单位：毫秒
+        :param update_time: **参数解释**: 最近扫描时间，时间戳单位：毫秒 **取值范围**: 不涉及 
         :type update_time: int
-        :param weak_pwd_accounts: 弱口令账号列表
+        :param weak_pwd_accounts: **参数解释**: 弱口令账号列表 **取值范围**: 不涉及 
         :type weak_pwd_accounts: list[:class:`huaweicloudsdkhss.v5.WeakPwdAccountInfoResponseInfo`]
         """
         
@@ -87,7 +87,7 @@ class WeakPwdListInfoResponseInfo:
     def host_id(self):
         r"""Gets the host_id of this WeakPwdListInfoResponseInfo.
 
-        主机ID
+        **参数解释**: 主机ID **取值范围**: 不涉及 
 
         :return: The host_id of this WeakPwdListInfoResponseInfo.
         :rtype: str
@@ -98,7 +98,7 @@ class WeakPwdListInfoResponseInfo:
     def host_id(self, host_id):
         r"""Sets the host_id of this WeakPwdListInfoResponseInfo.
 
-        主机ID
+        **参数解释**: 主机ID **取值范围**: 不涉及 
 
         :param host_id: The host_id of this WeakPwdListInfoResponseInfo.
         :type host_id: str
@@ -109,7 +109,7 @@ class WeakPwdListInfoResponseInfo:
     def host_name(self):
         r"""Gets the host_name of this WeakPwdListInfoResponseInfo.
 
-        服务器名称
+        **参数解释**: 服务器名称 **取值范围**: 不涉及 
 
         :return: The host_name of this WeakPwdListInfoResponseInfo.
         :rtype: str
@@ -120,7 +120,7 @@ class WeakPwdListInfoResponseInfo:
     def host_name(self, host_name):
         r"""Sets the host_name of this WeakPwdListInfoResponseInfo.
 
-        服务器名称
+        **参数解释**: 服务器名称 **取值范围**: 不涉及 
 
         :param host_name: The host_name of this WeakPwdListInfoResponseInfo.
         :type host_name: str
@@ -131,7 +131,7 @@ class WeakPwdListInfoResponseInfo:
     def host_ip(self):
         r"""Gets the host_ip of this WeakPwdListInfoResponseInfo.
 
-        服务器IP（私有IP），为兼容用户使用，不删除此字段
+        **参数解释**: 服务器IP（私有IP），为兼容用户使用，不删除此字段 **取值范围**: 不涉及 
 
         :return: The host_ip of this WeakPwdListInfoResponseInfo.
         :rtype: str
@@ -142,7 +142,7 @@ class WeakPwdListInfoResponseInfo:
     def host_ip(self, host_ip):
         r"""Sets the host_ip of this WeakPwdListInfoResponseInfo.
 
-        服务器IP（私有IP），为兼容用户使用，不删除此字段
+        **参数解释**: 服务器IP（私有IP），为兼容用户使用，不删除此字段 **取值范围**: 不涉及 
 
         :param host_ip: The host_ip of this WeakPwdListInfoResponseInfo.
         :type host_ip: str
@@ -153,7 +153,7 @@ class WeakPwdListInfoResponseInfo:
     def private_ip(self):
         r"""Gets the private_ip of this WeakPwdListInfoResponseInfo.
 
-        服务器私有IP
+        **参数解释**: 服务器私有IP **取值范围**: 不涉及 
 
         :return: The private_ip of this WeakPwdListInfoResponseInfo.
         :rtype: str
@@ -164,7 +164,7 @@ class WeakPwdListInfoResponseInfo:
     def private_ip(self, private_ip):
         r"""Sets the private_ip of this WeakPwdListInfoResponseInfo.
 
-        服务器私有IP
+        **参数解释**: 服务器私有IP **取值范围**: 不涉及 
 
         :param private_ip: The private_ip of this WeakPwdListInfoResponseInfo.
         :type private_ip: str
@@ -175,7 +175,7 @@ class WeakPwdListInfoResponseInfo:
     def public_ip(self):
         r"""Gets the public_ip of this WeakPwdListInfoResponseInfo.
 
-        服务器公网IP
+        **参数解释**: 服务器公网IP **取值范围**: 不涉及 
 
         :return: The public_ip of this WeakPwdListInfoResponseInfo.
         :rtype: str
@@ -186,7 +186,7 @@ class WeakPwdListInfoResponseInfo:
     def public_ip(self, public_ip):
         r"""Sets the public_ip of this WeakPwdListInfoResponseInfo.
 
-        服务器公网IP
+        **参数解释**: 服务器公网IP **取值范围**: 不涉及 
 
         :param public_ip: The public_ip of this WeakPwdListInfoResponseInfo.
         :type public_ip: str
@@ -197,7 +197,7 @@ class WeakPwdListInfoResponseInfo:
     def update_time(self):
         r"""Gets the update_time of this WeakPwdListInfoResponseInfo.
 
-        最近扫描时间，时间戳单位：毫秒
+        **参数解释**: 最近扫描时间，时间戳单位：毫秒 **取值范围**: 不涉及 
 
         :return: The update_time of this WeakPwdListInfoResponseInfo.
         :rtype: int
@@ -208,7 +208,7 @@ class WeakPwdListInfoResponseInfo:
     def update_time(self, update_time):
         r"""Sets the update_time of this WeakPwdListInfoResponseInfo.
 
-        最近扫描时间，时间戳单位：毫秒
+        **参数解释**: 最近扫描时间，时间戳单位：毫秒 **取值范围**: 不涉及 
 
         :param update_time: The update_time of this WeakPwdListInfoResponseInfo.
         :type update_time: int
@@ -219,7 +219,7 @@ class WeakPwdListInfoResponseInfo:
     def weak_pwd_accounts(self):
         r"""Gets the weak_pwd_accounts of this WeakPwdListInfoResponseInfo.
 
-        弱口令账号列表
+        **参数解释**: 弱口令账号列表 **取值范围**: 不涉及 
 
         :return: The weak_pwd_accounts of this WeakPwdListInfoResponseInfo.
         :rtype: list[:class:`huaweicloudsdkhss.v5.WeakPwdAccountInfoResponseInfo`]
@@ -230,7 +230,7 @@ class WeakPwdListInfoResponseInfo:
     def weak_pwd_accounts(self, weak_pwd_accounts):
         r"""Sets the weak_pwd_accounts of this WeakPwdListInfoResponseInfo.
 
-        弱口令账号列表
+        **参数解释**: 弱口令账号列表 **取值范围**: 不涉及 
 
         :param weak_pwd_accounts: The weak_pwd_accounts of this WeakPwdListInfoResponseInfo.
         :type weak_pwd_accounts: list[:class:`huaweicloudsdkhss.v5.WeakPwdAccountInfoResponseInfo`]

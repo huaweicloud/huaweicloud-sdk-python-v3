@@ -45,23 +45,23 @@ class AppChangeResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param agent_id: Agent ID
+        :param agent_id: **参数解释**: Agent ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
         :type agent_id: str
-        :param variation_type: the type of change   - add ：新建   - delete ：删除   - modify ：修改
+        :param variation_type: **参数解释**: 变更类型 **取值范围**: - add：新建 - delete：删除 - modify：修改 
         :type variation_type: str
-        :param host_id: host_id
+        :param host_id: **参数解释**: 服务器ID **取值范围**: 字符长度1-64位 
         :type host_id: str
-        :param app_name: 软件名称
+        :param app_name: **参数解释**: 软件名称 **取值范围**: 字符长度1-256位 
         :type app_name: str
-        :param host_name: 服务器名称
+        :param host_name: **参数解释**: 服务器名称 **取值范围**: 字符长度1-256位 
         :type host_name: str
-        :param host_ip: 服务器ip
+        :param host_ip: **参数解释**: 主机IP **取值范围**: 字符长度1-128位 
         :type host_ip: str
-        :param version: 版本号
+        :param version: **参数解释**: 版本号 **取值范围**: 字符长度1-128位 
         :type version: str
-        :param update_time: 软件更新时间，单位毫秒
+        :param update_time: **参数解释**: 软件更新时间，单位毫秒 **取值范围**: 最小值0，最大值10000 
         :type update_time: int
-        :param recent_scan_time: 最近扫描时间，单位毫秒
+        :param recent_scan_time: **参数解释**: 最近扫描时间，单位毫秒 **取值范围**: 最小值0，最大值10000 
         :type recent_scan_time: int
         """
         
@@ -101,7 +101,7 @@ class AppChangeResponseInfo:
     def agent_id(self):
         r"""Gets the agent_id of this AppChangeResponseInfo.
 
-        Agent ID
+        **参数解释**: Agent ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :return: The agent_id of this AppChangeResponseInfo.
         :rtype: str
@@ -112,7 +112,7 @@ class AppChangeResponseInfo:
     def agent_id(self, agent_id):
         r"""Sets the agent_id of this AppChangeResponseInfo.
 
-        Agent ID
+        **参数解释**: Agent ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :param agent_id: The agent_id of this AppChangeResponseInfo.
         :type agent_id: str
@@ -123,7 +123,7 @@ class AppChangeResponseInfo:
     def variation_type(self):
         r"""Gets the variation_type of this AppChangeResponseInfo.
 
-        the type of change   - add ：新建   - delete ：删除   - modify ：修改
+        **参数解释**: 变更类型 **取值范围**: - add：新建 - delete：删除 - modify：修改 
 
         :return: The variation_type of this AppChangeResponseInfo.
         :rtype: str
@@ -134,7 +134,7 @@ class AppChangeResponseInfo:
     def variation_type(self, variation_type):
         r"""Sets the variation_type of this AppChangeResponseInfo.
 
-        the type of change   - add ：新建   - delete ：删除   - modify ：修改
+        **参数解释**: 变更类型 **取值范围**: - add：新建 - delete：删除 - modify：修改 
 
         :param variation_type: The variation_type of this AppChangeResponseInfo.
         :type variation_type: str
@@ -145,7 +145,7 @@ class AppChangeResponseInfo:
     def host_id(self):
         r"""Gets the host_id of this AppChangeResponseInfo.
 
-        host_id
+        **参数解释**: 服务器ID **取值范围**: 字符长度1-64位 
 
         :return: The host_id of this AppChangeResponseInfo.
         :rtype: str
@@ -156,7 +156,7 @@ class AppChangeResponseInfo:
     def host_id(self, host_id):
         r"""Sets the host_id of this AppChangeResponseInfo.
 
-        host_id
+        **参数解释**: 服务器ID **取值范围**: 字符长度1-64位 
 
         :param host_id: The host_id of this AppChangeResponseInfo.
         :type host_id: str
@@ -167,7 +167,7 @@ class AppChangeResponseInfo:
     def app_name(self):
         r"""Gets the app_name of this AppChangeResponseInfo.
 
-        软件名称
+        **参数解释**: 软件名称 **取值范围**: 字符长度1-256位 
 
         :return: The app_name of this AppChangeResponseInfo.
         :rtype: str
@@ -178,7 +178,7 @@ class AppChangeResponseInfo:
     def app_name(self, app_name):
         r"""Sets the app_name of this AppChangeResponseInfo.
 
-        软件名称
+        **参数解释**: 软件名称 **取值范围**: 字符长度1-256位 
 
         :param app_name: The app_name of this AppChangeResponseInfo.
         :type app_name: str
@@ -189,7 +189,7 @@ class AppChangeResponseInfo:
     def host_name(self):
         r"""Gets the host_name of this AppChangeResponseInfo.
 
-        服务器名称
+        **参数解释**: 服务器名称 **取值范围**: 字符长度1-256位 
 
         :return: The host_name of this AppChangeResponseInfo.
         :rtype: str
@@ -200,7 +200,7 @@ class AppChangeResponseInfo:
     def host_name(self, host_name):
         r"""Sets the host_name of this AppChangeResponseInfo.
 
-        服务器名称
+        **参数解释**: 服务器名称 **取值范围**: 字符长度1-256位 
 
         :param host_name: The host_name of this AppChangeResponseInfo.
         :type host_name: str
@@ -211,7 +211,7 @@ class AppChangeResponseInfo:
     def host_ip(self):
         r"""Gets the host_ip of this AppChangeResponseInfo.
 
-        服务器ip
+        **参数解释**: 主机IP **取值范围**: 字符长度1-128位 
 
         :return: The host_ip of this AppChangeResponseInfo.
         :rtype: str
@@ -222,7 +222,7 @@ class AppChangeResponseInfo:
     def host_ip(self, host_ip):
         r"""Sets the host_ip of this AppChangeResponseInfo.
 
-        服务器ip
+        **参数解释**: 主机IP **取值范围**: 字符长度1-128位 
 
         :param host_ip: The host_ip of this AppChangeResponseInfo.
         :type host_ip: str
@@ -233,7 +233,7 @@ class AppChangeResponseInfo:
     def version(self):
         r"""Gets the version of this AppChangeResponseInfo.
 
-        版本号
+        **参数解释**: 版本号 **取值范围**: 字符长度1-128位 
 
         :return: The version of this AppChangeResponseInfo.
         :rtype: str
@@ -244,7 +244,7 @@ class AppChangeResponseInfo:
     def version(self, version):
         r"""Sets the version of this AppChangeResponseInfo.
 
-        版本号
+        **参数解释**: 版本号 **取值范围**: 字符长度1-128位 
 
         :param version: The version of this AppChangeResponseInfo.
         :type version: str
@@ -255,7 +255,7 @@ class AppChangeResponseInfo:
     def update_time(self):
         r"""Gets the update_time of this AppChangeResponseInfo.
 
-        软件更新时间，单位毫秒
+        **参数解释**: 软件更新时间，单位毫秒 **取值范围**: 最小值0，最大值10000 
 
         :return: The update_time of this AppChangeResponseInfo.
         :rtype: int
@@ -266,7 +266,7 @@ class AppChangeResponseInfo:
     def update_time(self, update_time):
         r"""Sets the update_time of this AppChangeResponseInfo.
 
-        软件更新时间，单位毫秒
+        **参数解释**: 软件更新时间，单位毫秒 **取值范围**: 最小值0，最大值10000 
 
         :param update_time: The update_time of this AppChangeResponseInfo.
         :type update_time: int
@@ -277,7 +277,7 @@ class AppChangeResponseInfo:
     def recent_scan_time(self):
         r"""Gets the recent_scan_time of this AppChangeResponseInfo.
 
-        最近扫描时间，单位毫秒
+        **参数解释**: 最近扫描时间，单位毫秒 **取值范围**: 最小值0，最大值10000 
 
         :return: The recent_scan_time of this AppChangeResponseInfo.
         :rtype: int
@@ -288,7 +288,7 @@ class AppChangeResponseInfo:
     def recent_scan_time(self, recent_scan_time):
         r"""Sets the recent_scan_time of this AppChangeResponseInfo.
 
-        最近扫描时间，单位毫秒
+        **参数解释**: 最近扫描时间，单位毫秒 **取值范围**: 最小值0，最大值10000 
 
         :param recent_scan_time: The recent_scan_time of this AppChangeResponseInfo.
         :type recent_scan_time: int

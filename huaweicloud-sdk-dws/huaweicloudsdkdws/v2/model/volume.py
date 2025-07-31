@@ -31,7 +31,7 @@ class Volume:
 
         The model defined in huaweicloud sdk
 
-        :param volume: **参数解释**： 磁盘名称。 **约束限制**： 不涉及。 **取值范围**： - SSD：超高IO  **默认取值**： 不涉及。
+        :param volume: **参数解释**： 磁盘名称。 **约束限制**： 不涉及。 **取值范围**： - SSD：超高IO - SAS：高IO - SATA：普通IO  **默认取值**： 不涉及。
         :type volume: str
         :param capacity: **参数解释**： 磁盘容量，单位：GB。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type capacity: int
@@ -51,7 +51,7 @@ class Volume:
     def volume(self):
         r"""Gets the volume of this Volume.
 
-        **参数解释**： 磁盘名称。 **约束限制**： 不涉及。 **取值范围**： - SSD：超高IO  **默认取值**： 不涉及。
+        **参数解释**： 磁盘名称。 **约束限制**： 不涉及。 **取值范围**： - SSD：超高IO - SAS：高IO - SATA：普通IO  **默认取值**： 不涉及。
 
         :return: The volume of this Volume.
         :rtype: str
@@ -62,7 +62,7 @@ class Volume:
     def volume(self, volume):
         r"""Sets the volume of this Volume.
 
-        **参数解释**： 磁盘名称。 **约束限制**： 不涉及。 **取值范围**： - SSD：超高IO  **默认取值**： 不涉及。
+        **参数解释**： 磁盘名称。 **约束限制**： 不涉及。 **取值范围**： - SSD：超高IO - SAS：高IO - SATA：普通IO  **默认取值**： 不涉及。
 
         :param volume: The volume of this Volume.
         :type volume: str

@@ -31,9 +31,9 @@ class QuotaStatisticsResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param version: 资源规格编码，包含如下:   - hss.version.basic : 基础版   - hss.version.advanced : 专业版   - hss.version.enterprise : 企业版   - hss.version.premium : 旗舰版   - hss.version.wtp : 网页防篡改版   - hss.version.container : 容器版
+        :param version: **参数解释**： 资源规格编码 **取值范围**： 包含如下6种。 - hss.version.basic ：基础版。 - hss.version.advanced ：专业版。 - hss.version.enterprise ：企业版。 - hss.version.premium ：旗舰版。 - hss.version.wtp ：网页防篡改版。 - hss.version.container.enterprise：容器版。
         :type version: str
-        :param total_num: 配额总数
+        :param total_num: **参数解释**： 配额总数 **取值范围**： 0到10000000 
         :type total_num: int
         """
         
@@ -52,7 +52,7 @@ class QuotaStatisticsResponseInfo:
     def version(self):
         r"""Gets the version of this QuotaStatisticsResponseInfo.
 
-        资源规格编码，包含如下:   - hss.version.basic : 基础版   - hss.version.advanced : 专业版   - hss.version.enterprise : 企业版   - hss.version.premium : 旗舰版   - hss.version.wtp : 网页防篡改版   - hss.version.container : 容器版
+        **参数解释**： 资源规格编码 **取值范围**： 包含如下6种。 - hss.version.basic ：基础版。 - hss.version.advanced ：专业版。 - hss.version.enterprise ：企业版。 - hss.version.premium ：旗舰版。 - hss.version.wtp ：网页防篡改版。 - hss.version.container.enterprise：容器版。
 
         :return: The version of this QuotaStatisticsResponseInfo.
         :rtype: str
@@ -63,7 +63,7 @@ class QuotaStatisticsResponseInfo:
     def version(self, version):
         r"""Sets the version of this QuotaStatisticsResponseInfo.
 
-        资源规格编码，包含如下:   - hss.version.basic : 基础版   - hss.version.advanced : 专业版   - hss.version.enterprise : 企业版   - hss.version.premium : 旗舰版   - hss.version.wtp : 网页防篡改版   - hss.version.container : 容器版
+        **参数解释**： 资源规格编码 **取值范围**： 包含如下6种。 - hss.version.basic ：基础版。 - hss.version.advanced ：专业版。 - hss.version.enterprise ：企业版。 - hss.version.premium ：旗舰版。 - hss.version.wtp ：网页防篡改版。 - hss.version.container.enterprise：容器版。
 
         :param version: The version of this QuotaStatisticsResponseInfo.
         :type version: str
@@ -74,7 +74,7 @@ class QuotaStatisticsResponseInfo:
     def total_num(self):
         r"""Gets the total_num of this QuotaStatisticsResponseInfo.
 
-        配额总数
+        **参数解释**： 配额总数 **取值范围**： 0到10000000 
 
         :return: The total_num of this QuotaStatisticsResponseInfo.
         :rtype: int
@@ -85,7 +85,7 @@ class QuotaStatisticsResponseInfo:
     def total_num(self, total_num):
         r"""Sets the total_num of this QuotaStatisticsResponseInfo.
 
-        配额总数
+        **参数解释**： 配额总数 **取值范围**： 0到10000000 
 
         :param total_num: The total_num of this QuotaStatisticsResponseInfo.
         :type total_num: int

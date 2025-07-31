@@ -20,6 +20,7 @@ class ClusterConfigResponseInfo:
         'cluster_id': 'str',
         'protect_node_num': 'int',
         'protect_interrupt_node_num': 'int',
+        'protect_degradation_node_num': 'int',
         'unprotect_node_num': 'int',
         'node_total_num': 'int',
         'cluster_name': 'str',
@@ -35,6 +36,7 @@ class ClusterConfigResponseInfo:
         'cluster_id': 'cluster_id',
         'protect_node_num': 'protect_node_num',
         'protect_interrupt_node_num': 'protect_interrupt_node_num',
+        'protect_degradation_node_num': 'protect_degradation_node_num',
         'unprotect_node_num': 'unprotect_node_num',
         'node_total_num': 'node_total_num',
         'cluster_name': 'cluster_name',
@@ -46,7 +48,7 @@ class ClusterConfigResponseInfo:
         'fail_reason': 'fail_reason'
     }
 
-    def __init__(self, cluster_id=None, protect_node_num=None, protect_interrupt_node_num=None, unprotect_node_num=None, node_total_num=None, cluster_name=None, charging_mode=None, prefer_packet_cycle=None, protect_type=None, protect_status=None, cluster_type=None, fail_reason=None):
+    def __init__(self, cluster_id=None, protect_node_num=None, protect_interrupt_node_num=None, protect_degradation_node_num=None, unprotect_node_num=None, node_total_num=None, cluster_name=None, charging_mode=None, prefer_packet_cycle=None, protect_type=None, protect_status=None, cluster_type=None, fail_reason=None):
         r"""ClusterConfigResponseInfo
 
         The model defined in huaweicloud sdk
@@ -57,6 +59,8 @@ class ClusterConfigResponseInfo:
         :type protect_node_num: int
         :param protect_interrupt_node_num: 集群防护中断节点数量
         :type protect_interrupt_node_num: int
+        :param protect_degradation_node_num: 集群防护降级节点数量
+        :type protect_degradation_node_num: int
         :param unprotect_node_num: 集群防护中断节点数量
         :type unprotect_node_num: int
         :param node_total_num: 集群节点总数
@@ -82,6 +86,7 @@ class ClusterConfigResponseInfo:
         self._cluster_id = None
         self._protect_node_num = None
         self._protect_interrupt_node_num = None
+        self._protect_degradation_node_num = None
         self._unprotect_node_num = None
         self._node_total_num = None
         self._cluster_name = None
@@ -99,6 +104,8 @@ class ClusterConfigResponseInfo:
             self.protect_node_num = protect_node_num
         if protect_interrupt_node_num is not None:
             self.protect_interrupt_node_num = protect_interrupt_node_num
+        if protect_degradation_node_num is not None:
+            self.protect_degradation_node_num = protect_degradation_node_num
         if unprotect_node_num is not None:
             self.unprotect_node_num = unprotect_node_num
         if node_total_num is not None:
@@ -183,6 +190,28 @@ class ClusterConfigResponseInfo:
         :type protect_interrupt_node_num: int
         """
         self._protect_interrupt_node_num = protect_interrupt_node_num
+
+    @property
+    def protect_degradation_node_num(self):
+        r"""Gets the protect_degradation_node_num of this ClusterConfigResponseInfo.
+
+        集群防护降级节点数量
+
+        :return: The protect_degradation_node_num of this ClusterConfigResponseInfo.
+        :rtype: int
+        """
+        return self._protect_degradation_node_num
+
+    @protect_degradation_node_num.setter
+    def protect_degradation_node_num(self, protect_degradation_node_num):
+        r"""Sets the protect_degradation_node_num of this ClusterConfigResponseInfo.
+
+        集群防护降级节点数量
+
+        :param protect_degradation_node_num: The protect_degradation_node_num of this ClusterConfigResponseInfo.
+        :type protect_degradation_node_num: int
+        """
+        self._protect_degradation_node_num = protect_degradation_node_num
 
     @property
     def unprotect_node_num(self):

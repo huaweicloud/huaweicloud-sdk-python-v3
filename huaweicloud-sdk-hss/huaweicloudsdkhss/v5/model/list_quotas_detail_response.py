@@ -50,27 +50,27 @@ class ListQuotasDetailResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param packet_cycle_num: 包周期配额数
+        :param packet_cycle_num: **参数解释**： 包周期配额数 **取值范围**： 0到10000000 
         :type packet_cycle_num: int
-        :param on_demand_num: 按需配额数
+        :param on_demand_num: **参数解释**： 按需配额数 **取值范围**： 0到10000000 
         :type on_demand_num: int
-        :param used_num: 已使用配额数
+        :param used_num: **参数解释**： 已使用配额数 **取值范围**： 0到10000000 
         :type used_num: int
-        :param idle_num: 空闲配额数
+        :param idle_num: **参数解释**： 空闲配额数 **取值范围**： 0到10000000 
         :type idle_num: int
-        :param normal_num: 正常配额数
+        :param normal_num: **参数解释**： 正常配额数 **取值范围**： 0到10000000 
         :type normal_num: int
-        :param expired_num: 过期配额数
+        :param expired_num: **参数解释**： 过期配额数 **取值范围**： 0到10000000 
         :type expired_num: int
-        :param create_time: 创建时间
+        :param create_time: **参数解释**： 创建时间 **取值范围**： 0到9223372036854775807 
         :type create_time: int
-        :param freeze_num: 冻结配额数
+        :param freeze_num: **参数解释**： 冻结配额数 **取值范围**： 0到10000000 
         :type freeze_num: int
-        :param quota_statistics_list: 配额统计列表
+        :param quota_statistics_list: **参数解释**： 配额统计列表 **取值范围**： 不涉及 
         :type quota_statistics_list: list[:class:`huaweicloudsdkhss.v5.QuotaStatisticsResponseInfo`]
-        :param total_num: 配额总数
+        :param total_num: **参数解释**： 配额总数 **取值范围**： 0到10000000 
         :type total_num: int
-        :param data_list: 配额列表
+        :param data_list: **参数解释**： 配额列表 **取值范围**： 不涉及 
         :type data_list: list[:class:`huaweicloudsdkhss.v5.QuotaResourcesResponseInfo`]
         """
         
@@ -116,7 +116,7 @@ class ListQuotasDetailResponse(SdkResponse):
     def packet_cycle_num(self):
         r"""Gets the packet_cycle_num of this ListQuotasDetailResponse.
 
-        包周期配额数
+        **参数解释**： 包周期配额数 **取值范围**： 0到10000000 
 
         :return: The packet_cycle_num of this ListQuotasDetailResponse.
         :rtype: int
@@ -127,7 +127,7 @@ class ListQuotasDetailResponse(SdkResponse):
     def packet_cycle_num(self, packet_cycle_num):
         r"""Sets the packet_cycle_num of this ListQuotasDetailResponse.
 
-        包周期配额数
+        **参数解释**： 包周期配额数 **取值范围**： 0到10000000 
 
         :param packet_cycle_num: The packet_cycle_num of this ListQuotasDetailResponse.
         :type packet_cycle_num: int
@@ -138,7 +138,7 @@ class ListQuotasDetailResponse(SdkResponse):
     def on_demand_num(self):
         r"""Gets the on_demand_num of this ListQuotasDetailResponse.
 
-        按需配额数
+        **参数解释**： 按需配额数 **取值范围**： 0到10000000 
 
         :return: The on_demand_num of this ListQuotasDetailResponse.
         :rtype: int
@@ -149,7 +149,7 @@ class ListQuotasDetailResponse(SdkResponse):
     def on_demand_num(self, on_demand_num):
         r"""Sets the on_demand_num of this ListQuotasDetailResponse.
 
-        按需配额数
+        **参数解释**： 按需配额数 **取值范围**： 0到10000000 
 
         :param on_demand_num: The on_demand_num of this ListQuotasDetailResponse.
         :type on_demand_num: int
@@ -160,7 +160,7 @@ class ListQuotasDetailResponse(SdkResponse):
     def used_num(self):
         r"""Gets the used_num of this ListQuotasDetailResponse.
 
-        已使用配额数
+        **参数解释**： 已使用配额数 **取值范围**： 0到10000000 
 
         :return: The used_num of this ListQuotasDetailResponse.
         :rtype: int
@@ -171,7 +171,7 @@ class ListQuotasDetailResponse(SdkResponse):
     def used_num(self, used_num):
         r"""Sets the used_num of this ListQuotasDetailResponse.
 
-        已使用配额数
+        **参数解释**： 已使用配额数 **取值范围**： 0到10000000 
 
         :param used_num: The used_num of this ListQuotasDetailResponse.
         :type used_num: int
@@ -182,7 +182,7 @@ class ListQuotasDetailResponse(SdkResponse):
     def idle_num(self):
         r"""Gets the idle_num of this ListQuotasDetailResponse.
 
-        空闲配额数
+        **参数解释**： 空闲配额数 **取值范围**： 0到10000000 
 
         :return: The idle_num of this ListQuotasDetailResponse.
         :rtype: int
@@ -193,7 +193,7 @@ class ListQuotasDetailResponse(SdkResponse):
     def idle_num(self, idle_num):
         r"""Sets the idle_num of this ListQuotasDetailResponse.
 
-        空闲配额数
+        **参数解释**： 空闲配额数 **取值范围**： 0到10000000 
 
         :param idle_num: The idle_num of this ListQuotasDetailResponse.
         :type idle_num: int
@@ -204,7 +204,7 @@ class ListQuotasDetailResponse(SdkResponse):
     def normal_num(self):
         r"""Gets the normal_num of this ListQuotasDetailResponse.
 
-        正常配额数
+        **参数解释**： 正常配额数 **取值范围**： 0到10000000 
 
         :return: The normal_num of this ListQuotasDetailResponse.
         :rtype: int
@@ -215,7 +215,7 @@ class ListQuotasDetailResponse(SdkResponse):
     def normal_num(self, normal_num):
         r"""Sets the normal_num of this ListQuotasDetailResponse.
 
-        正常配额数
+        **参数解释**： 正常配额数 **取值范围**： 0到10000000 
 
         :param normal_num: The normal_num of this ListQuotasDetailResponse.
         :type normal_num: int
@@ -226,7 +226,7 @@ class ListQuotasDetailResponse(SdkResponse):
     def expired_num(self):
         r"""Gets the expired_num of this ListQuotasDetailResponse.
 
-        过期配额数
+        **参数解释**： 过期配额数 **取值范围**： 0到10000000 
 
         :return: The expired_num of this ListQuotasDetailResponse.
         :rtype: int
@@ -237,7 +237,7 @@ class ListQuotasDetailResponse(SdkResponse):
     def expired_num(self, expired_num):
         r"""Sets the expired_num of this ListQuotasDetailResponse.
 
-        过期配额数
+        **参数解释**： 过期配额数 **取值范围**： 0到10000000 
 
         :param expired_num: The expired_num of this ListQuotasDetailResponse.
         :type expired_num: int
@@ -248,7 +248,7 @@ class ListQuotasDetailResponse(SdkResponse):
     def create_time(self):
         r"""Gets the create_time of this ListQuotasDetailResponse.
 
-        创建时间
+        **参数解释**： 创建时间 **取值范围**： 0到9223372036854775807 
 
         :return: The create_time of this ListQuotasDetailResponse.
         :rtype: int
@@ -259,7 +259,7 @@ class ListQuotasDetailResponse(SdkResponse):
     def create_time(self, create_time):
         r"""Sets the create_time of this ListQuotasDetailResponse.
 
-        创建时间
+        **参数解释**： 创建时间 **取值范围**： 0到9223372036854775807 
 
         :param create_time: The create_time of this ListQuotasDetailResponse.
         :type create_time: int
@@ -270,7 +270,7 @@ class ListQuotasDetailResponse(SdkResponse):
     def freeze_num(self):
         r"""Gets the freeze_num of this ListQuotasDetailResponse.
 
-        冻结配额数
+        **参数解释**： 冻结配额数 **取值范围**： 0到10000000 
 
         :return: The freeze_num of this ListQuotasDetailResponse.
         :rtype: int
@@ -281,7 +281,7 @@ class ListQuotasDetailResponse(SdkResponse):
     def freeze_num(self, freeze_num):
         r"""Sets the freeze_num of this ListQuotasDetailResponse.
 
-        冻结配额数
+        **参数解释**： 冻结配额数 **取值范围**： 0到10000000 
 
         :param freeze_num: The freeze_num of this ListQuotasDetailResponse.
         :type freeze_num: int
@@ -292,7 +292,7 @@ class ListQuotasDetailResponse(SdkResponse):
     def quota_statistics_list(self):
         r"""Gets the quota_statistics_list of this ListQuotasDetailResponse.
 
-        配额统计列表
+        **参数解释**： 配额统计列表 **取值范围**： 不涉及 
 
         :return: The quota_statistics_list of this ListQuotasDetailResponse.
         :rtype: list[:class:`huaweicloudsdkhss.v5.QuotaStatisticsResponseInfo`]
@@ -303,7 +303,7 @@ class ListQuotasDetailResponse(SdkResponse):
     def quota_statistics_list(self, quota_statistics_list):
         r"""Sets the quota_statistics_list of this ListQuotasDetailResponse.
 
-        配额统计列表
+        **参数解释**： 配额统计列表 **取值范围**： 不涉及 
 
         :param quota_statistics_list: The quota_statistics_list of this ListQuotasDetailResponse.
         :type quota_statistics_list: list[:class:`huaweicloudsdkhss.v5.QuotaStatisticsResponseInfo`]
@@ -314,7 +314,7 @@ class ListQuotasDetailResponse(SdkResponse):
     def total_num(self):
         r"""Gets the total_num of this ListQuotasDetailResponse.
 
-        配额总数
+        **参数解释**： 配额总数 **取值范围**： 0到10000000 
 
         :return: The total_num of this ListQuotasDetailResponse.
         :rtype: int
@@ -325,7 +325,7 @@ class ListQuotasDetailResponse(SdkResponse):
     def total_num(self, total_num):
         r"""Sets the total_num of this ListQuotasDetailResponse.
 
-        配额总数
+        **参数解释**： 配额总数 **取值范围**： 0到10000000 
 
         :param total_num: The total_num of this ListQuotasDetailResponse.
         :type total_num: int
@@ -336,7 +336,7 @@ class ListQuotasDetailResponse(SdkResponse):
     def data_list(self):
         r"""Gets the data_list of this ListQuotasDetailResponse.
 
-        配额列表
+        **参数解释**： 配额列表 **取值范围**： 不涉及 
 
         :return: The data_list of this ListQuotasDetailResponse.
         :rtype: list[:class:`huaweicloudsdkhss.v5.QuotaResourcesResponseInfo`]
@@ -347,7 +347,7 @@ class ListQuotasDetailResponse(SdkResponse):
     def data_list(self, data_list):
         r"""Sets the data_list of this ListQuotasDetailResponse.
 
-        配额列表
+        **参数解释**： 配额列表 **取值范围**： 不涉及 
 
         :param data_list: The data_list of this ListQuotasDetailResponse.
         :type data_list: list[:class:`huaweicloudsdkhss.v5.QuotaResourcesResponseInfo`]

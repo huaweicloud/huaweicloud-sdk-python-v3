@@ -45,7 +45,7 @@ class ResultFileResponseInfo:
         :type file_path: str
         :param file_hash: 文件哈希
         :type file_hash: str
-        :param file_size: 文件大小
+        :param file_size: **参数解释**: 文件大小 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值9223372036854775807 **默认取值**: 不涉及 
         :type file_size: int
         :param file_owner: 文件属主
         :type file_owner: str
@@ -131,7 +131,7 @@ class ResultFileResponseInfo:
     def file_size(self):
         r"""Gets the file_size of this ResultFileResponseInfo.
 
-        文件大小
+        **参数解释**: 文件大小 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值9223372036854775807 **默认取值**: 不涉及 
 
         :return: The file_size of this ResultFileResponseInfo.
         :rtype: int
@@ -142,7 +142,7 @@ class ResultFileResponseInfo:
     def file_size(self, file_size):
         r"""Sets the file_size of this ResultFileResponseInfo.
 
-        文件大小
+        **参数解释**: 文件大小 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值9223372036854775807 **默认取值**: 不涉及 
 
         :param file_size: The file_size of this ResultFileResponseInfo.
         :type file_size: int

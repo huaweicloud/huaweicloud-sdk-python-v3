@@ -33,487 +33,6 @@ class BssintlClient(Client):
 
         return client_builder
 
-    def list_conversions(self, request):
-        r"""查询度量单位进制
-
-        功能描述：伙伴在伙伴销售平台上查询使用量单位的进制转换信息，用于不同度量单位之间的转换。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for ListConversions
-        :type request: :class:`huaweicloudsdkbssintl.v2.ListConversionsRequest`
-        :rtype: :class:`huaweicloudsdkbssintl.v2.ListConversionsResponse`
-        """
-        http_info = self._list_conversions_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_conversions_invoker(self, request):
-        http_info = self._list_conversions_http_info(request)
-        return SyncInvoker(self, http_info)
-
-    @classmethod
-    def _list_conversions_http_info(cls, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v2/bases/conversions",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListConversionsResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'measure_type' in local_var_params:
-            query_params.append(('measure_type', local_var_params['measure_type']))
-
-        header_params = {}
-        if 'x_language' in local_var_params:
-            header_params['X-Language'] = local_var_params['x_language']
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def list_costs(self, request):
-        r"""查询成本数据
-
-        客户在自建平台查询成本分析数据。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for ListCosts
-        :type request: :class:`huaweicloudsdkbssintl.v2.ListCostsRequest`
-        :rtype: :class:`huaweicloudsdkbssintl.v2.ListCostsResponse`
-        """
-        http_info = self._list_costs_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_costs_invoker(self, request):
-        http_info = self._list_costs_http_info(request)
-        return SyncInvoker(self, http_info)
-
-    @classmethod
-    def _list_costs_http_info(cls, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v4/costs/cost-analysed-bills/query",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListCostsResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-        if 'x_language' in local_var_params:
-            header_params['X-Language'] = local_var_params['x_language']
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def list_free_resource_usages(self, request):
-        r"""查询资源内使用量
-
-        功能描述：客户在自建平台查询客户自己的资源包列表
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for ListFreeResourceUsages
-        :type request: :class:`huaweicloudsdkbssintl.v2.ListFreeResourceUsagesRequest`
-        :rtype: :class:`huaweicloudsdkbssintl.v2.ListFreeResourceUsagesResponse`
-        """
-        http_info = self._list_free_resource_usages_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_free_resource_usages_invoker(self, request):
-        http_info = self._list_free_resource_usages_http_info(request)
-        return SyncInvoker(self, http_info)
-
-    @classmethod
-    def _list_free_resource_usages_http_info(cls, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v2/payments/free-resources/usages/details/query",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListFreeResourceUsagesResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-        if 'x_language' in local_var_params:
-            header_params['X-Language'] = local_var_params['x_language']
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def list_free_resources_usage_records(self, request):
-        r"""查询资源包使用明细
-
-        客户在自建平台查询资源包使用明细。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for ListFreeResourcesUsageRecords
-        :type request: :class:`huaweicloudsdkbssintl.v2.ListFreeResourcesUsageRecordsRequest`
-        :rtype: :class:`huaweicloudsdkbssintl.v2.ListFreeResourcesUsageRecordsResponse`
-        """
-        http_info = self._list_free_resources_usage_records_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_free_resources_usage_records_invoker(self, request):
-        http_info = self._list_free_resources_usage_records_http_info(request)
-        return SyncInvoker(self, http_info)
-
-    @classmethod
-    def _list_free_resources_usage_records_http_info(cls, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v2/bills/customer-bills/free-resources-usage-records",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListFreeResourcesUsageRecordsResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'free_resource_id' in local_var_params:
-            query_params.append(('free_resource_id', local_var_params['free_resource_id']))
-        if 'product_id' in local_var_params:
-            query_params.append(('product_id', local_var_params['product_id']))
-        if 'resource_type_code' in local_var_params:
-            query_params.append(('resource_type_code', local_var_params['resource_type_code']))
-        if 'deduct_time_begin' in local_var_params:
-            query_params.append(('deduct_time_begin', local_var_params['deduct_time_begin']))
-        if 'deduct_time_end' in local_var_params:
-            query_params.append(('deduct_time_end', local_var_params['deduct_time_end']))
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def list_measure_units(self, request):
-        r"""查询使用量单位列表
-
-        功能描述：伙伴在伙伴销售平台上查询资源使用量的度量单位及名称，度量单位类型等。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for ListMeasureUnits
-        :type request: :class:`huaweicloudsdkbssintl.v2.ListMeasureUnitsRequest`
-        :rtype: :class:`huaweicloudsdkbssintl.v2.ListMeasureUnitsResponse`
-        """
-        http_info = self._list_measure_units_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_measure_units_invoker(self, request):
-        http_info = self._list_measure_units_http_info(request)
-        return SyncInvoker(self, http_info)
-
-    @classmethod
-    def _list_measure_units_http_info(cls, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v2/bases/measurements",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListMeasureUnitsResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-        if 'x_language' in local_var_params:
-            header_params['X-Language'] = local_var_params['x_language']
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def list_resource_types(self, request):
-        r"""查询资源类型列表
-
-        伙伴在伙伴销售平台查询资源类型的列表。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for ListResourceTypes
-        :type request: :class:`huaweicloudsdkbssintl.v2.ListResourceTypesRequest`
-        :rtype: :class:`huaweicloudsdkbssintl.v2.ListResourceTypesResponse`
-        """
-        http_info = self._list_resource_types_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_resource_types_invoker(self, request):
-        http_info = self._list_resource_types_http_info(request)
-        return SyncInvoker(self, http_info)
-
-    @classmethod
-    def _list_resource_types_http_info(cls, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v2/products/resource-types",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListResourceTypesResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-
-        header_params = {}
-        if 'x_language' in local_var_params:
-            header_params['X-Language'] = local_var_params['x_language']
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def list_service_types(self, request):
-        r"""查询云服务类型列表
-
-        伙伴在伙伴销售平台查询云服务类型的列表。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for ListServiceTypes
-        :type request: :class:`huaweicloudsdkbssintl.v2.ListServiceTypesRequest`
-        :rtype: :class:`huaweicloudsdkbssintl.v2.ListServiceTypesResponse`
-        """
-        http_info = self._list_service_types_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_service_types_invoker(self, request):
-        http_info = self._list_service_types_http_info(request)
-        return SyncInvoker(self, http_info)
-
-    @classmethod
-    def _list_service_types_http_info(cls, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v2/products/service-types",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListServiceTypesResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-
-        header_params = {}
-        if 'x_language' in local_var_params:
-            header_params['X-Language'] = local_var_params['x_language']
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
     def change_enterprise_realname_authentication(self, request):
         r"""申请实名认证变更
 
@@ -967,6 +486,140 @@ class BssintlClient(Client):
 
         return http_info
 
+    def list_conversions(self, request):
+        r"""查询度量单位进制
+
+        功能描述：伙伴在伙伴销售平台上查询使用量单位的进制转换信息，用于不同度量单位之间的转换。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListConversions
+        :type request: :class:`huaweicloudsdkbssintl.v2.ListConversionsRequest`
+        :rtype: :class:`huaweicloudsdkbssintl.v2.ListConversionsResponse`
+        """
+        http_info = self._list_conversions_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_conversions_invoker(self, request):
+        http_info = self._list_conversions_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_conversions_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/bases/conversions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListConversionsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'measure_type' in local_var_params:
+            query_params.append(('measure_type', local_var_params['measure_type']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_costs(self, request):
+        r"""查询成本数据
+
+        客户在自建平台查询成本分析数据。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListCosts
+        :type request: :class:`huaweicloudsdkbssintl.v2.ListCostsRequest`
+        :rtype: :class:`huaweicloudsdkbssintl.v2.ListCostsResponse`
+        """
+        http_info = self._list_costs_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_costs_invoker(self, request):
+        http_info = self._list_costs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_costs_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v4/costs/cost-analysed-bills/query",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCostsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_customer_on_demand_resources(self, request):
         r"""查询客户按需资源列表
 
@@ -1340,6 +993,150 @@ class BssintlClient(Client):
 
         return http_info
 
+    def list_free_resource_usages(self, request):
+        r"""查询资源包使用量
+
+        功能描述：客户在自建平台根据资源项维度查询资源包使用量。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListFreeResourceUsages
+        :type request: :class:`huaweicloudsdkbssintl.v2.ListFreeResourceUsagesRequest`
+        :rtype: :class:`huaweicloudsdkbssintl.v2.ListFreeResourceUsagesResponse`
+        """
+        http_info = self._list_free_resource_usages_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_free_resource_usages_invoker(self, request):
+        http_info = self._list_free_resource_usages_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_free_resource_usages_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/payments/free-resources/usages/details/query",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListFreeResourceUsagesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_free_resources_usage_records(self, request):
+        r"""查询资源包使用明细
+
+        客户在自建平台查询资源包使用明细。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListFreeResourcesUsageRecords
+        :type request: :class:`huaweicloudsdkbssintl.v2.ListFreeResourcesUsageRecordsRequest`
+        :rtype: :class:`huaweicloudsdkbssintl.v2.ListFreeResourcesUsageRecordsResponse`
+        """
+        http_info = self._list_free_resources_usage_records_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_free_resources_usage_records_invoker(self, request):
+        http_info = self._list_free_resources_usage_records_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_free_resources_usage_records_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/bills/customer-bills/free-resources-usage-records",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListFreeResourcesUsageRecordsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'free_resource_id' in local_var_params:
+            query_params.append(('free_resource_id', local_var_params['free_resource_id']))
+        if 'product_id' in local_var_params:
+            query_params.append(('product_id', local_var_params['product_id']))
+        if 'resource_type_code' in local_var_params:
+            query_params.append(('resource_type_code', local_var_params['resource_type_code']))
+        if 'deduct_time_begin' in local_var_params:
+            query_params.append(('deduct_time_begin', local_var_params['deduct_time_begin']))
+        if 'deduct_time_end' in local_var_params:
+            query_params.append(('deduct_time_end', local_var_params['deduct_time_end']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_indirect_partners(self, request):
         r"""查询云经销商列表
 
@@ -1478,33 +1275,31 @@ class BssintlClient(Client):
 
         return http_info
 
-    def list_monthly_expenditures(self, request):
-        r"""查询消费汇总(客户)
+    def list_measure_units(self, request):
+        r"""查询度量单位列表
 
-        功能描述：客户可以查询自身的消费汇总单的功能，消费按月汇总。
+        功能描述：查询资源使用量，包年包月资源的时长及金额的度量单位及名称，度量单位类型等。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
-        :param request: Request instance for ListMonthlyExpenditures
-        :type request: :class:`huaweicloudsdkbssintl.v2.ListMonthlyExpendituresRequest`
-        :rtype: :class:`huaweicloudsdkbssintl.v2.ListMonthlyExpendituresResponse`
+        :param request: Request instance for ListMeasureUnits
+        :type request: :class:`huaweicloudsdkbssintl.v2.ListMeasureUnitsRequest`
+        :rtype: :class:`huaweicloudsdkbssintl.v2.ListMeasureUnitsResponse`
         """
-        warnings.warn("Method 'list_monthly_expenditures' of BssintlClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._list_monthly_expenditures_http_info(request)
+        http_info = self._list_measure_units_http_info(request)
         return self._call_api(**http_info)
 
-    def list_monthly_expenditures_invoker(self, request):
-        warnings.warn("Method 'list_monthly_expenditures_invoker' of BssintlClient is deprecated and will be removed in the future versions", DeprecationWarning)
-        http_info = self._list_monthly_expenditures_http_info(request)
+    def list_measure_units_invoker(self, request):
+        http_info = self._list_measure_units_http_info(request)
         return SyncInvoker(self, http_info)
 
     @classmethod
-    def _list_monthly_expenditures_http_info(cls, request):
+    def _list_measure_units_http_info(cls, request):
         http_info = {
             "method": "GET",
-            "resource_path": "/v1.0/{domain_id}/customer/account-mgr/bill/monthly-sum",
+            "resource_path": "/v2/bases/measurements",
             "request_type": request.__class__.__name__,
-            "response_type": "ListMonthlyExpendituresResponse"
+            "response_type": "ListMeasureUnitsResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -1516,16 +1311,10 @@ class BssintlClient(Client):
         path_params = {}
 
         query_params = []
-        if 'cycle' in local_var_params:
-            query_params.append(('cycle', local_var_params['cycle']))
-        if 'cloud_service_type_code' in local_var_params:
-            query_params.append(('cloud_service_type_code', local_var_params['cloud_service_type_code']))
-        if 'type' in local_var_params:
-            query_params.append(('type', local_var_params['type']))
-        if 'enterprise_project_id' in local_var_params:
-            query_params.append(('enterpriseProjectId', local_var_params['enterprise_project_id']))
 
         header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
 
         form_params = {}
 
@@ -1811,6 +1600,75 @@ class BssintlClient(Client):
 
         return http_info
 
+    def list_resource_types(self, request):
+        r"""查询资源类型列表
+
+        伙伴在伙伴销售平台查询资源类型的列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListResourceTypes
+        :type request: :class:`huaweicloudsdkbssintl.v2.ListResourceTypesRequest`
+        :rtype: :class:`huaweicloudsdkbssintl.v2.ListResourceTypesResponse`
+        """
+        http_info = self._list_resource_types_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_resource_types_invoker(self, request):
+        http_info = self._list_resource_types_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_resource_types_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/products/resource-types",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListResourceTypesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_service_resources(self, request):
         r"""根据云服务类型查询资源列表
 
@@ -1849,6 +1707,75 @@ class BssintlClient(Client):
         query_params = []
         if 'service_type_code' in local_var_params:
             query_params.append(('service_type_code', local_var_params['service_type_code']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_service_types(self, request):
+        r"""查询云服务类型列表
+
+        伙伴在伙伴销售平台查询云服务类型的列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListServiceTypes
+        :type request: :class:`huaweicloudsdkbssintl.v2.ListServiceTypesRequest`
+        :rtype: :class:`huaweicloudsdkbssintl.v2.ListServiceTypesResponse`
+        """
+        http_info = self._list_service_types_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_service_types_invoker(self, request):
+        http_info = self._list_service_types_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_service_types_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/products/service-types",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListServiceTypesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
@@ -2776,7 +2703,7 @@ class BssintlClient(Client):
     def auto_renewal_resources(self, request):
         r"""设置包年/包月资源自动续费
 
-        功能描述：客户可以设置包年/包月资源到期后转为按需资源计费
+        功能描述：为防止资源到期被删除，客户可为长期使用的包年/包月资源开通自动续费。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2817,6 +2744,8 @@ class BssintlClient(Client):
         form_params = {}
 
         body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 

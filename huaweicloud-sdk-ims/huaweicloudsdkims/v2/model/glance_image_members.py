@@ -22,7 +22,9 @@ class GlanceImageMembers:
         'updated_at': 'str',
         'image_id': 'str',
         'member_id': 'str',
-        'schema': 'str'
+        'schema': 'str',
+        'member_type': 'str',
+        'urn': 'str'
     }
 
     attribute_map = {
@@ -31,10 +33,12 @@ class GlanceImageMembers:
         'updated_at': 'updated_at',
         'image_id': 'image_id',
         'member_id': 'member_id',
-        'schema': 'schema'
+        'schema': 'schema',
+        'member_type': 'member_type',
+        'urn': 'urn'
     }
 
-    def __init__(self, status=None, created_at=None, updated_at=None, image_id=None, member_id=None, schema=None):
+    def __init__(self, status=None, created_at=None, updated_at=None, image_id=None, member_id=None, schema=None, member_type=None, urn=None):
         r"""GlanceImageMembers
 
         The model defined in huaweicloud sdk
@@ -51,6 +55,10 @@ class GlanceImageMembers:
         :type member_id: str
         :param schema: 共享视图。
         :type schema: str
+        :param member_type: 共享成员类型。
+        :type member_type: str
+        :param urn: 共享组织的URN仅当member_type类型为organization时，才会返回urn字段。
+        :type urn: str
         """
         
         
@@ -61,6 +69,8 @@ class GlanceImageMembers:
         self._image_id = None
         self._member_id = None
         self._schema = None
+        self._member_type = None
+        self._urn = None
         self.discriminator = None
 
         self.status = status
@@ -69,6 +79,10 @@ class GlanceImageMembers:
         self.image_id = image_id
         self.member_id = member_id
         self.schema = schema
+        if member_type is not None:
+            self.member_type = member_type
+        if urn is not None:
+            self.urn = urn
 
     @property
     def status(self):
@@ -201,6 +215,50 @@ class GlanceImageMembers:
         :type schema: str
         """
         self._schema = schema
+
+    @property
+    def member_type(self):
+        r"""Gets the member_type of this GlanceImageMembers.
+
+        共享成员类型。
+
+        :return: The member_type of this GlanceImageMembers.
+        :rtype: str
+        """
+        return self._member_type
+
+    @member_type.setter
+    def member_type(self, member_type):
+        r"""Sets the member_type of this GlanceImageMembers.
+
+        共享成员类型。
+
+        :param member_type: The member_type of this GlanceImageMembers.
+        :type member_type: str
+        """
+        self._member_type = member_type
+
+    @property
+    def urn(self):
+        r"""Gets the urn of this GlanceImageMembers.
+
+        共享组织的URN仅当member_type类型为organization时，才会返回urn字段。
+
+        :return: The urn of this GlanceImageMembers.
+        :rtype: str
+        """
+        return self._urn
+
+    @urn.setter
+    def urn(self, urn):
+        r"""Sets the urn of this GlanceImageMembers.
+
+        共享组织的URN仅当member_type类型为organization时，才会返回urn字段。
+
+        :param urn: The urn of this GlanceImageMembers.
+        :type urn: str
+        """
+        self._urn = urn
 
     def to_dict(self):
         """Returns the model properties as a dict"""

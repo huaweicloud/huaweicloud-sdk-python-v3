@@ -21,7 +21,8 @@ class PutAlarmNotificationReq:
         'alarm_notifications': 'list[Notification]',
         'ok_notifications': 'list[Notification]',
         'notification_begin_time': 'str',
-        'notification_end_time': 'str'
+        'notification_end_time': 'str',
+        'effective_timezone': 'str'
     }
 
     attribute_map = {
@@ -29,10 +30,11 @@ class PutAlarmNotificationReq:
         'alarm_notifications': 'alarm_notifications',
         'ok_notifications': 'ok_notifications',
         'notification_begin_time': 'notification_begin_time',
-        'notification_end_time': 'notification_end_time'
+        'notification_end_time': 'notification_end_time',
+        'effective_timezone': 'effective_timezone'
     }
 
-    def __init__(self, notification_enabled=None, alarm_notifications=None, ok_notifications=None, notification_begin_time=None, notification_end_time=None):
+    def __init__(self, notification_enabled=None, alarm_notifications=None, ok_notifications=None, notification_begin_time=None, notification_end_time=None, effective_timezone=None):
         r"""PutAlarmNotificationReq
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class PutAlarmNotificationReq:
         :type notification_begin_time: str
         :param notification_end_time: 告警通知关闭时间
         :type notification_end_time: str
+        :param effective_timezone: 时区，形如：\&quot;GMT-08:00\&quot;、\&quot;GMT+08:00\&quot;、\&quot;GMT+0:00\&quot;
+        :type effective_timezone: str
         """
         
         
@@ -56,6 +60,7 @@ class PutAlarmNotificationReq:
         self._ok_notifications = None
         self._notification_begin_time = None
         self._notification_end_time = None
+        self._effective_timezone = None
         self.discriminator = None
 
         self.notification_enabled = notification_enabled
@@ -67,6 +72,8 @@ class PutAlarmNotificationReq:
             self.notification_begin_time = notification_begin_time
         if notification_end_time is not None:
             self.notification_end_time = notification_end_time
+        if effective_timezone is not None:
+            self.effective_timezone = effective_timezone
 
     @property
     def notification_enabled(self):
@@ -177,6 +184,28 @@ class PutAlarmNotificationReq:
         :type notification_end_time: str
         """
         self._notification_end_time = notification_end_time
+
+    @property
+    def effective_timezone(self):
+        r"""Gets the effective_timezone of this PutAlarmNotificationReq.
+
+        时区，形如：\"GMT-08:00\"、\"GMT+08:00\"、\"GMT+0:00\"
+
+        :return: The effective_timezone of this PutAlarmNotificationReq.
+        :rtype: str
+        """
+        return self._effective_timezone
+
+    @effective_timezone.setter
+    def effective_timezone(self, effective_timezone):
+        r"""Sets the effective_timezone of this PutAlarmNotificationReq.
+
+        时区，形如：\"GMT-08:00\"、\"GMT+08:00\"、\"GMT+0:00\"
+
+        :param effective_timezone: The effective_timezone of this PutAlarmNotificationReq.
+        :type effective_timezone: str
+        """
+        self._effective_timezone = effective_timezone
 
     def to_dict(self):
         """Returns the model properties as a dict"""

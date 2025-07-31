@@ -3938,6 +3938,78 @@ class DrsClient(Client):
 
         return http_info
 
+    def show_compare_progress(self, request):
+        r"""查询对比任务进度
+
+        查询运行中对比任务的对比进度。
+        说明：
+        - 目前仅MySQL-&gt;MySQL、MySQL-&gt;GaussDB主备、GaussDB分布式-&gt;GaussDB分布式、GaussDB主备-&gt;MySQL、GaussDBv1-&gt;GaussDB主备、GaussDB主备-&gt;GaussDBv1的同步任务与独立校验任务支持查看对比进度。
+        - 运行中的行对比与内容对比支持。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowCompareProgress
+        :type request: :class:`huaweicloudsdkdrs.v5.ShowCompareProgressRequest`
+        :rtype: :class:`huaweicloudsdkdrs.v5.ShowCompareProgressResponse`
+        """
+        http_info = self._show_compare_progress_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_compare_progress_invoker(self, request):
+        http_info = self._show_compare_progress_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_compare_progress_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/jobs/{job_id}/compare-progress/{compare_job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCompareProgressResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+        if 'compare_job_id' in local_var_params:
+            path_params['compare_job_id'] = local_var_params['compare_job_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_data_filtering_result(self, request):
         r"""获取数据过滤校验结果
 

@@ -51,29 +51,29 @@ class CheckRuleRiskInfoResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param severity: 风险等级，包含如下:   - Low : 低危   - Medium : 中危   - High : 高危
+        :param severity: **参数解释**: 风险等级 **取值范围**: - Low : 低危 - Medium : 中危 - High : 高危 
         :type severity: str
-        :param check_name: 配置检查（基线）的名称，例如SSH、CentOS 7、Windows
+        :param check_name: **参数解释**: 配置检查（基线）的名称，例如SSH、CentOS 7、Windows **取值范围**: 不涉及 
         :type check_name: str
-        :param check_type: 配置检查（基线）的类型,Linux系统支持的基线一般check_type和check_name相同,例如SSH、CentOS 7。 Windows系统支持的基线一般check_type和check_name不相同，例如check_name为Windows的配置检查（基线），它的check_type包含Windows Server 2019 R2、Windows Server 2016 R2等。
+        :param check_type: **参数解释**: 配置检查（基线）的类型,Linux系统支持的基线一般check_type和check_name相同,例如SSH、CentOS 7。 Windows系统支持的基线一般check_type和check_name不相同，例如check_name为Windows的配置检查（基线），它的check_type包含Windows Server 2019 R2、Windows Server 2016 R2等。 **取值范围**: 不涉及 
         :type check_type: str
-        :param standard: 标准类型，包含如下:   - cn_standard : 等保合规标准   - hw_standard : 云安全实践标准
+        :param standard: **参数解释**: 标准类型 **取值范围**: - cn_standard：等保合规标准 - hw_standard：云安全实践标准 
         :type standard: str
-        :param check_rule_name: 检查项（检查规则）名称
+        :param check_rule_name: **参数解释**: 检查项（检查规则）名称 **取值范围**: 不涉及 
         :type check_rule_name: str
-        :param check_rule_id: 检查项ID
+        :param check_rule_id: **参数解释**: 检查项ID **取值范围**: 不涉及 
         :type check_rule_id: str
-        :param host_num: 受影响的服务器的数量，进行了当前基线检测的服务器数量
+        :param host_num: **参数解释**: 受影响的服务器的数量，进行了当前基线检测的服务器数量 **取值范围**: 不涉及 
         :type host_num: int
-        :param scan_result: 检测结果，包含如下：   - pass   - failed
+        :param scan_result: **参数解释**: 检测结果 **取值范围**: - pass : 检测通过 - failed : 检测不通过 
         :type scan_result: str
-        :param status: 状态，包含如下：   - safe : 无需处理   - ignored : 已忽略   - unhandled : 未处理   - fixing : 修复中   - fix-failed : 修复失败   - verifying : 验证中
+        :param status: **参数解释**: 检测项状态 **取值范围**: - safe : 无需处理 - ignored : 已忽略 - unhandled : 未处理 - fixing : 修复中 - fix-failed : 修复失败 - verifying : 验证中 
         :type status: str
-        :param enable_fix: 是否支持一键修复,1:支持一键修复,0:不支持
+        :param enable_fix: **参数解释**: 是否支持一键修复 **取值范围**: - 1：支持一键修复 - 0：不支持 
         :type enable_fix: int
-        :param enable_click: 该检查项的修复&amp;忽略&amp;验证按钮是否可单击,true:按钮可单击,false:按钮不可单击
+        :param enable_click: **参数解释**: 该检查项的修复&amp;忽略&amp;验证按钮是否可单击 **取值范围**: - true：按钮可单击 - false：按钮不可单击 
         :type enable_click: bool
-        :param rule_params: 支持传递参数修复的检查项可传递参数的范围，只有支持传递参数修复的检查项才返回此数据
+        :param rule_params: **参数解释**: 支持传递参数修复的检查项可传递参数的范围，只有支持传递参数修复的检查项才返回此数据 **取值范围**: 不涉及 
         :type rule_params: list[:class:`huaweicloudsdkhss.v5.CheckRuleFixParamInfo`]
         """
         
@@ -122,7 +122,7 @@ class CheckRuleRiskInfoResponseInfo:
     def severity(self):
         r"""Gets the severity of this CheckRuleRiskInfoResponseInfo.
 
-        风险等级，包含如下:   - Low : 低危   - Medium : 中危   - High : 高危
+        **参数解释**: 风险等级 **取值范围**: - Low : 低危 - Medium : 中危 - High : 高危 
 
         :return: The severity of this CheckRuleRiskInfoResponseInfo.
         :rtype: str
@@ -133,7 +133,7 @@ class CheckRuleRiskInfoResponseInfo:
     def severity(self, severity):
         r"""Sets the severity of this CheckRuleRiskInfoResponseInfo.
 
-        风险等级，包含如下:   - Low : 低危   - Medium : 中危   - High : 高危
+        **参数解释**: 风险等级 **取值范围**: - Low : 低危 - Medium : 中危 - High : 高危 
 
         :param severity: The severity of this CheckRuleRiskInfoResponseInfo.
         :type severity: str
@@ -144,7 +144,7 @@ class CheckRuleRiskInfoResponseInfo:
     def check_name(self):
         r"""Gets the check_name of this CheckRuleRiskInfoResponseInfo.
 
-        配置检查（基线）的名称，例如SSH、CentOS 7、Windows
+        **参数解释**: 配置检查（基线）的名称，例如SSH、CentOS 7、Windows **取值范围**: 不涉及 
 
         :return: The check_name of this CheckRuleRiskInfoResponseInfo.
         :rtype: str
@@ -155,7 +155,7 @@ class CheckRuleRiskInfoResponseInfo:
     def check_name(self, check_name):
         r"""Sets the check_name of this CheckRuleRiskInfoResponseInfo.
 
-        配置检查（基线）的名称，例如SSH、CentOS 7、Windows
+        **参数解释**: 配置检查（基线）的名称，例如SSH、CentOS 7、Windows **取值范围**: 不涉及 
 
         :param check_name: The check_name of this CheckRuleRiskInfoResponseInfo.
         :type check_name: str
@@ -166,7 +166,7 @@ class CheckRuleRiskInfoResponseInfo:
     def check_type(self):
         r"""Gets the check_type of this CheckRuleRiskInfoResponseInfo.
 
-        配置检查（基线）的类型,Linux系统支持的基线一般check_type和check_name相同,例如SSH、CentOS 7。 Windows系统支持的基线一般check_type和check_name不相同，例如check_name为Windows的配置检查（基线），它的check_type包含Windows Server 2019 R2、Windows Server 2016 R2等。
+        **参数解释**: 配置检查（基线）的类型,Linux系统支持的基线一般check_type和check_name相同,例如SSH、CentOS 7。 Windows系统支持的基线一般check_type和check_name不相同，例如check_name为Windows的配置检查（基线），它的check_type包含Windows Server 2019 R2、Windows Server 2016 R2等。 **取值范围**: 不涉及 
 
         :return: The check_type of this CheckRuleRiskInfoResponseInfo.
         :rtype: str
@@ -177,7 +177,7 @@ class CheckRuleRiskInfoResponseInfo:
     def check_type(self, check_type):
         r"""Sets the check_type of this CheckRuleRiskInfoResponseInfo.
 
-        配置检查（基线）的类型,Linux系统支持的基线一般check_type和check_name相同,例如SSH、CentOS 7。 Windows系统支持的基线一般check_type和check_name不相同，例如check_name为Windows的配置检查（基线），它的check_type包含Windows Server 2019 R2、Windows Server 2016 R2等。
+        **参数解释**: 配置检查（基线）的类型,Linux系统支持的基线一般check_type和check_name相同,例如SSH、CentOS 7。 Windows系统支持的基线一般check_type和check_name不相同，例如check_name为Windows的配置检查（基线），它的check_type包含Windows Server 2019 R2、Windows Server 2016 R2等。 **取值范围**: 不涉及 
 
         :param check_type: The check_type of this CheckRuleRiskInfoResponseInfo.
         :type check_type: str
@@ -188,7 +188,7 @@ class CheckRuleRiskInfoResponseInfo:
     def standard(self):
         r"""Gets the standard of this CheckRuleRiskInfoResponseInfo.
 
-        标准类型，包含如下:   - cn_standard : 等保合规标准   - hw_standard : 云安全实践标准
+        **参数解释**: 标准类型 **取值范围**: - cn_standard：等保合规标准 - hw_standard：云安全实践标准 
 
         :return: The standard of this CheckRuleRiskInfoResponseInfo.
         :rtype: str
@@ -199,7 +199,7 @@ class CheckRuleRiskInfoResponseInfo:
     def standard(self, standard):
         r"""Sets the standard of this CheckRuleRiskInfoResponseInfo.
 
-        标准类型，包含如下:   - cn_standard : 等保合规标准   - hw_standard : 云安全实践标准
+        **参数解释**: 标准类型 **取值范围**: - cn_standard：等保合规标准 - hw_standard：云安全实践标准 
 
         :param standard: The standard of this CheckRuleRiskInfoResponseInfo.
         :type standard: str
@@ -210,7 +210,7 @@ class CheckRuleRiskInfoResponseInfo:
     def check_rule_name(self):
         r"""Gets the check_rule_name of this CheckRuleRiskInfoResponseInfo.
 
-        检查项（检查规则）名称
+        **参数解释**: 检查项（检查规则）名称 **取值范围**: 不涉及 
 
         :return: The check_rule_name of this CheckRuleRiskInfoResponseInfo.
         :rtype: str
@@ -221,7 +221,7 @@ class CheckRuleRiskInfoResponseInfo:
     def check_rule_name(self, check_rule_name):
         r"""Sets the check_rule_name of this CheckRuleRiskInfoResponseInfo.
 
-        检查项（检查规则）名称
+        **参数解释**: 检查项（检查规则）名称 **取值范围**: 不涉及 
 
         :param check_rule_name: The check_rule_name of this CheckRuleRiskInfoResponseInfo.
         :type check_rule_name: str
@@ -232,7 +232,7 @@ class CheckRuleRiskInfoResponseInfo:
     def check_rule_id(self):
         r"""Gets the check_rule_id of this CheckRuleRiskInfoResponseInfo.
 
-        检查项ID
+        **参数解释**: 检查项ID **取值范围**: 不涉及 
 
         :return: The check_rule_id of this CheckRuleRiskInfoResponseInfo.
         :rtype: str
@@ -243,7 +243,7 @@ class CheckRuleRiskInfoResponseInfo:
     def check_rule_id(self, check_rule_id):
         r"""Sets the check_rule_id of this CheckRuleRiskInfoResponseInfo.
 
-        检查项ID
+        **参数解释**: 检查项ID **取值范围**: 不涉及 
 
         :param check_rule_id: The check_rule_id of this CheckRuleRiskInfoResponseInfo.
         :type check_rule_id: str
@@ -254,7 +254,7 @@ class CheckRuleRiskInfoResponseInfo:
     def host_num(self):
         r"""Gets the host_num of this CheckRuleRiskInfoResponseInfo.
 
-        受影响的服务器的数量，进行了当前基线检测的服务器数量
+        **参数解释**: 受影响的服务器的数量，进行了当前基线检测的服务器数量 **取值范围**: 不涉及 
 
         :return: The host_num of this CheckRuleRiskInfoResponseInfo.
         :rtype: int
@@ -265,7 +265,7 @@ class CheckRuleRiskInfoResponseInfo:
     def host_num(self, host_num):
         r"""Sets the host_num of this CheckRuleRiskInfoResponseInfo.
 
-        受影响的服务器的数量，进行了当前基线检测的服务器数量
+        **参数解释**: 受影响的服务器的数量，进行了当前基线检测的服务器数量 **取值范围**: 不涉及 
 
         :param host_num: The host_num of this CheckRuleRiskInfoResponseInfo.
         :type host_num: int
@@ -276,7 +276,7 @@ class CheckRuleRiskInfoResponseInfo:
     def scan_result(self):
         r"""Gets the scan_result of this CheckRuleRiskInfoResponseInfo.
 
-        检测结果，包含如下：   - pass   - failed
+        **参数解释**: 检测结果 **取值范围**: - pass : 检测通过 - failed : 检测不通过 
 
         :return: The scan_result of this CheckRuleRiskInfoResponseInfo.
         :rtype: str
@@ -287,7 +287,7 @@ class CheckRuleRiskInfoResponseInfo:
     def scan_result(self, scan_result):
         r"""Sets the scan_result of this CheckRuleRiskInfoResponseInfo.
 
-        检测结果，包含如下：   - pass   - failed
+        **参数解释**: 检测结果 **取值范围**: - pass : 检测通过 - failed : 检测不通过 
 
         :param scan_result: The scan_result of this CheckRuleRiskInfoResponseInfo.
         :type scan_result: str
@@ -298,7 +298,7 @@ class CheckRuleRiskInfoResponseInfo:
     def status(self):
         r"""Gets the status of this CheckRuleRiskInfoResponseInfo.
 
-        状态，包含如下：   - safe : 无需处理   - ignored : 已忽略   - unhandled : 未处理   - fixing : 修复中   - fix-failed : 修复失败   - verifying : 验证中
+        **参数解释**: 检测项状态 **取值范围**: - safe : 无需处理 - ignored : 已忽略 - unhandled : 未处理 - fixing : 修复中 - fix-failed : 修复失败 - verifying : 验证中 
 
         :return: The status of this CheckRuleRiskInfoResponseInfo.
         :rtype: str
@@ -309,7 +309,7 @@ class CheckRuleRiskInfoResponseInfo:
     def status(self, status):
         r"""Sets the status of this CheckRuleRiskInfoResponseInfo.
 
-        状态，包含如下：   - safe : 无需处理   - ignored : 已忽略   - unhandled : 未处理   - fixing : 修复中   - fix-failed : 修复失败   - verifying : 验证中
+        **参数解释**: 检测项状态 **取值范围**: - safe : 无需处理 - ignored : 已忽略 - unhandled : 未处理 - fixing : 修复中 - fix-failed : 修复失败 - verifying : 验证中 
 
         :param status: The status of this CheckRuleRiskInfoResponseInfo.
         :type status: str
@@ -320,7 +320,7 @@ class CheckRuleRiskInfoResponseInfo:
     def enable_fix(self):
         r"""Gets the enable_fix of this CheckRuleRiskInfoResponseInfo.
 
-        是否支持一键修复,1:支持一键修复,0:不支持
+        **参数解释**: 是否支持一键修复 **取值范围**: - 1：支持一键修复 - 0：不支持 
 
         :return: The enable_fix of this CheckRuleRiskInfoResponseInfo.
         :rtype: int
@@ -331,7 +331,7 @@ class CheckRuleRiskInfoResponseInfo:
     def enable_fix(self, enable_fix):
         r"""Sets the enable_fix of this CheckRuleRiskInfoResponseInfo.
 
-        是否支持一键修复,1:支持一键修复,0:不支持
+        **参数解释**: 是否支持一键修复 **取值范围**: - 1：支持一键修复 - 0：不支持 
 
         :param enable_fix: The enable_fix of this CheckRuleRiskInfoResponseInfo.
         :type enable_fix: int
@@ -342,7 +342,7 @@ class CheckRuleRiskInfoResponseInfo:
     def enable_click(self):
         r"""Gets the enable_click of this CheckRuleRiskInfoResponseInfo.
 
-        该检查项的修复&忽略&验证按钮是否可单击,true:按钮可单击,false:按钮不可单击
+        **参数解释**: 该检查项的修复&忽略&验证按钮是否可单击 **取值范围**: - true：按钮可单击 - false：按钮不可单击 
 
         :return: The enable_click of this CheckRuleRiskInfoResponseInfo.
         :rtype: bool
@@ -353,7 +353,7 @@ class CheckRuleRiskInfoResponseInfo:
     def enable_click(self, enable_click):
         r"""Sets the enable_click of this CheckRuleRiskInfoResponseInfo.
 
-        该检查项的修复&忽略&验证按钮是否可单击,true:按钮可单击,false:按钮不可单击
+        **参数解释**: 该检查项的修复&忽略&验证按钮是否可单击 **取值范围**: - true：按钮可单击 - false：按钮不可单击 
 
         :param enable_click: The enable_click of this CheckRuleRiskInfoResponseInfo.
         :type enable_click: bool
@@ -364,7 +364,7 @@ class CheckRuleRiskInfoResponseInfo:
     def rule_params(self):
         r"""Gets the rule_params of this CheckRuleRiskInfoResponseInfo.
 
-        支持传递参数修复的检查项可传递参数的范围，只有支持传递参数修复的检查项才返回此数据
+        **参数解释**: 支持传递参数修复的检查项可传递参数的范围，只有支持传递参数修复的检查项才返回此数据 **取值范围**: 不涉及 
 
         :return: The rule_params of this CheckRuleRiskInfoResponseInfo.
         :rtype: list[:class:`huaweicloudsdkhss.v5.CheckRuleFixParamInfo`]
@@ -375,7 +375,7 @@ class CheckRuleRiskInfoResponseInfo:
     def rule_params(self, rule_params):
         r"""Sets the rule_params of this CheckRuleRiskInfoResponseInfo.
 
-        支持传递参数修复的检查项可传递参数的范围，只有支持传递参数修复的检查项才返回此数据
+        **参数解释**: 支持传递参数修复的检查项可传递参数的范围，只有支持传递参数修复的检查项才返回此数据 **取值范围**: 不涉及 
 
         :param rule_params: The rule_params of this CheckRuleRiskInfoResponseInfo.
         :type rule_params: list[:class:`huaweicloudsdkhss.v5.CheckRuleFixParamInfo`]

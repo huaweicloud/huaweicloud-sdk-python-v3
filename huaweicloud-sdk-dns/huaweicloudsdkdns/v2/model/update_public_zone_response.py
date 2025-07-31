@@ -58,35 +58,35 @@ class UpdatePublicZoneResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param id: 域名的ID，UUID形式的一个资源标识。
+        :param id: **参数解释：** 域名的ID，UUID形式的一个资源标识。 **取值范围：** 不涉及。
         :type id: str
-        :param name: 域名。
+        :param name: **参数解释：** 域名。 **取值范围：** 不涉及。
         :type name: str
-        :param description: 对域名的描述信息。
+        :param description: **参数解释：** 域名的描述信息。 **取值范围：** 长度不超过255个字符。
         :type description: str
-        :param email: 管理该域名的管理员邮箱，用于生成该域名的SOA记录。
+        :param email: **参数解释：** 管理该域名的管理员邮箱，用于生成该域名的SOA记录。 **取值范围：** 不涉及。
         :type email: str
-        :param zone_type: 域名类型，公网（public）。
+        :param zone_type: **参数解释：** 域名类型。 **取值范围：** public：公网域名。
         :type zone_type: str
-        :param ttl: 该域名下SOA记录中的ttl值。
+        :param ttl: **参数解释：** 该域名下SOA记录中的有效缓存时间，以秒为单位。 **取值范围：** 1~2147483647。
         :type ttl: int
-        :param serial: 该域名下SOA记录中用于标识域名文件变更的序列值，用于主从节点同步。  该参数暂未使用。
+        :param serial: **参数解释：** 该域名下SOA记录中用于标识域名文件变更的序列值，用于主从节点同步。 该参数暂未使用。 **取值范围：** 不涉及。
         :type serial: int
-        :param status: 资源状态。
+        :param status: **参数解释：** 公网域名状态。 **取值范围：** - ACTIVE：正常 - PENDING_CREATE：创建中 - PENDING_UPDATE：更新中 - PENDING_DELETE：删除中 - PENDING_FREEZE：冻结中 - FREEZE：冻结 - ILLEGAL：违规冻结 - POLICE：公安冻结 - PENDING_DISABLE：暂停中 - DISABLE：暂停 - ERROR：失败
         :type status: str
-        :param record_num: 该域名下的记录集个数。
+        :param record_num: **参数解释：** 该域名下的记录集个数。 **取值范围：** 不涉及。
         :type record_num: int
-        :param pool_id: 托管该域名的pool，由系统分配。
+        :param pool_id: **参数解释：** 托管该域名的pool，由系统分配。 **取值范围：** 不涉及。
         :type pool_id: str
-        :param project_id: 域名所属的项目ID。
+        :param project_id: **参数解释：** 域名所属的项目ID。 **取值范围：** 不涉及。
         :type project_id: str
-        :param created_at: 创建时间。 格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSS。
+        :param created_at: **参数解释：** 域名的创建时间。 格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSS。 **取值范围：** 不涉及。
         :type created_at: str
-        :param updated_at: 更新时间。 格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSS。
+        :param updated_at: **参数解释：** 域名的最近一次修改时间。 格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSS。 **取值范围：** 不涉及。
         :type updated_at: str
         :param links: 
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`
-        :param masters: 主从模式中，从DNS服务器获取DNS信息。  目前暂未使用。
+        :param masters: **参数解释：** 主从模式中，从DNS服务器获取DNS信息。 目前暂未使用。 **取值范围：** 不涉及。
         :type masters: list[str]
         """
         
@@ -144,7 +144,7 @@ class UpdatePublicZoneResponse(SdkResponse):
     def id(self):
         r"""Gets the id of this UpdatePublicZoneResponse.
 
-        域名的ID，UUID形式的一个资源标识。
+        **参数解释：** 域名的ID，UUID形式的一个资源标识。 **取值范围：** 不涉及。
 
         :return: The id of this UpdatePublicZoneResponse.
         :rtype: str
@@ -155,7 +155,7 @@ class UpdatePublicZoneResponse(SdkResponse):
     def id(self, id):
         r"""Sets the id of this UpdatePublicZoneResponse.
 
-        域名的ID，UUID形式的一个资源标识。
+        **参数解释：** 域名的ID，UUID形式的一个资源标识。 **取值范围：** 不涉及。
 
         :param id: The id of this UpdatePublicZoneResponse.
         :type id: str
@@ -166,7 +166,7 @@ class UpdatePublicZoneResponse(SdkResponse):
     def name(self):
         r"""Gets the name of this UpdatePublicZoneResponse.
 
-        域名。
+        **参数解释：** 域名。 **取值范围：** 不涉及。
 
         :return: The name of this UpdatePublicZoneResponse.
         :rtype: str
@@ -177,7 +177,7 @@ class UpdatePublicZoneResponse(SdkResponse):
     def name(self, name):
         r"""Sets the name of this UpdatePublicZoneResponse.
 
-        域名。
+        **参数解释：** 域名。 **取值范围：** 不涉及。
 
         :param name: The name of this UpdatePublicZoneResponse.
         :type name: str
@@ -188,7 +188,7 @@ class UpdatePublicZoneResponse(SdkResponse):
     def description(self):
         r"""Gets the description of this UpdatePublicZoneResponse.
 
-        对域名的描述信息。
+        **参数解释：** 域名的描述信息。 **取值范围：** 长度不超过255个字符。
 
         :return: The description of this UpdatePublicZoneResponse.
         :rtype: str
@@ -199,7 +199,7 @@ class UpdatePublicZoneResponse(SdkResponse):
     def description(self, description):
         r"""Sets the description of this UpdatePublicZoneResponse.
 
-        对域名的描述信息。
+        **参数解释：** 域名的描述信息。 **取值范围：** 长度不超过255个字符。
 
         :param description: The description of this UpdatePublicZoneResponse.
         :type description: str
@@ -210,7 +210,7 @@ class UpdatePublicZoneResponse(SdkResponse):
     def email(self):
         r"""Gets the email of this UpdatePublicZoneResponse.
 
-        管理该域名的管理员邮箱，用于生成该域名的SOA记录。
+        **参数解释：** 管理该域名的管理员邮箱，用于生成该域名的SOA记录。 **取值范围：** 不涉及。
 
         :return: The email of this UpdatePublicZoneResponse.
         :rtype: str
@@ -221,7 +221,7 @@ class UpdatePublicZoneResponse(SdkResponse):
     def email(self, email):
         r"""Sets the email of this UpdatePublicZoneResponse.
 
-        管理该域名的管理员邮箱，用于生成该域名的SOA记录。
+        **参数解释：** 管理该域名的管理员邮箱，用于生成该域名的SOA记录。 **取值范围：** 不涉及。
 
         :param email: The email of this UpdatePublicZoneResponse.
         :type email: str
@@ -232,7 +232,7 @@ class UpdatePublicZoneResponse(SdkResponse):
     def zone_type(self):
         r"""Gets the zone_type of this UpdatePublicZoneResponse.
 
-        域名类型，公网（public）。
+        **参数解释：** 域名类型。 **取值范围：** public：公网域名。
 
         :return: The zone_type of this UpdatePublicZoneResponse.
         :rtype: str
@@ -243,7 +243,7 @@ class UpdatePublicZoneResponse(SdkResponse):
     def zone_type(self, zone_type):
         r"""Sets the zone_type of this UpdatePublicZoneResponse.
 
-        域名类型，公网（public）。
+        **参数解释：** 域名类型。 **取值范围：** public：公网域名。
 
         :param zone_type: The zone_type of this UpdatePublicZoneResponse.
         :type zone_type: str
@@ -254,7 +254,7 @@ class UpdatePublicZoneResponse(SdkResponse):
     def ttl(self):
         r"""Gets the ttl of this UpdatePublicZoneResponse.
 
-        该域名下SOA记录中的ttl值。
+        **参数解释：** 该域名下SOA记录中的有效缓存时间，以秒为单位。 **取值范围：** 1~2147483647。
 
         :return: The ttl of this UpdatePublicZoneResponse.
         :rtype: int
@@ -265,7 +265,7 @@ class UpdatePublicZoneResponse(SdkResponse):
     def ttl(self, ttl):
         r"""Sets the ttl of this UpdatePublicZoneResponse.
 
-        该域名下SOA记录中的ttl值。
+        **参数解释：** 该域名下SOA记录中的有效缓存时间，以秒为单位。 **取值范围：** 1~2147483647。
 
         :param ttl: The ttl of this UpdatePublicZoneResponse.
         :type ttl: int
@@ -276,7 +276,7 @@ class UpdatePublicZoneResponse(SdkResponse):
     def serial(self):
         r"""Gets the serial of this UpdatePublicZoneResponse.
 
-        该域名下SOA记录中用于标识域名文件变更的序列值，用于主从节点同步。  该参数暂未使用。
+        **参数解释：** 该域名下SOA记录中用于标识域名文件变更的序列值，用于主从节点同步。 该参数暂未使用。 **取值范围：** 不涉及。
 
         :return: The serial of this UpdatePublicZoneResponse.
         :rtype: int
@@ -287,7 +287,7 @@ class UpdatePublicZoneResponse(SdkResponse):
     def serial(self, serial):
         r"""Sets the serial of this UpdatePublicZoneResponse.
 
-        该域名下SOA记录中用于标识域名文件变更的序列值，用于主从节点同步。  该参数暂未使用。
+        **参数解释：** 该域名下SOA记录中用于标识域名文件变更的序列值，用于主从节点同步。 该参数暂未使用。 **取值范围：** 不涉及。
 
         :param serial: The serial of this UpdatePublicZoneResponse.
         :type serial: int
@@ -298,7 +298,7 @@ class UpdatePublicZoneResponse(SdkResponse):
     def status(self):
         r"""Gets the status of this UpdatePublicZoneResponse.
 
-        资源状态。
+        **参数解释：** 公网域名状态。 **取值范围：** - ACTIVE：正常 - PENDING_CREATE：创建中 - PENDING_UPDATE：更新中 - PENDING_DELETE：删除中 - PENDING_FREEZE：冻结中 - FREEZE：冻结 - ILLEGAL：违规冻结 - POLICE：公安冻结 - PENDING_DISABLE：暂停中 - DISABLE：暂停 - ERROR：失败
 
         :return: The status of this UpdatePublicZoneResponse.
         :rtype: str
@@ -309,7 +309,7 @@ class UpdatePublicZoneResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this UpdatePublicZoneResponse.
 
-        资源状态。
+        **参数解释：** 公网域名状态。 **取值范围：** - ACTIVE：正常 - PENDING_CREATE：创建中 - PENDING_UPDATE：更新中 - PENDING_DELETE：删除中 - PENDING_FREEZE：冻结中 - FREEZE：冻结 - ILLEGAL：违规冻结 - POLICE：公安冻结 - PENDING_DISABLE：暂停中 - DISABLE：暂停 - ERROR：失败
 
         :param status: The status of this UpdatePublicZoneResponse.
         :type status: str
@@ -320,7 +320,7 @@ class UpdatePublicZoneResponse(SdkResponse):
     def record_num(self):
         r"""Gets the record_num of this UpdatePublicZoneResponse.
 
-        该域名下的记录集个数。
+        **参数解释：** 该域名下的记录集个数。 **取值范围：** 不涉及。
 
         :return: The record_num of this UpdatePublicZoneResponse.
         :rtype: int
@@ -331,7 +331,7 @@ class UpdatePublicZoneResponse(SdkResponse):
     def record_num(self, record_num):
         r"""Sets the record_num of this UpdatePublicZoneResponse.
 
-        该域名下的记录集个数。
+        **参数解释：** 该域名下的记录集个数。 **取值范围：** 不涉及。
 
         :param record_num: The record_num of this UpdatePublicZoneResponse.
         :type record_num: int
@@ -342,7 +342,7 @@ class UpdatePublicZoneResponse(SdkResponse):
     def pool_id(self):
         r"""Gets the pool_id of this UpdatePublicZoneResponse.
 
-        托管该域名的pool，由系统分配。
+        **参数解释：** 托管该域名的pool，由系统分配。 **取值范围：** 不涉及。
 
         :return: The pool_id of this UpdatePublicZoneResponse.
         :rtype: str
@@ -353,7 +353,7 @@ class UpdatePublicZoneResponse(SdkResponse):
     def pool_id(self, pool_id):
         r"""Sets the pool_id of this UpdatePublicZoneResponse.
 
-        托管该域名的pool，由系统分配。
+        **参数解释：** 托管该域名的pool，由系统分配。 **取值范围：** 不涉及。
 
         :param pool_id: The pool_id of this UpdatePublicZoneResponse.
         :type pool_id: str
@@ -364,7 +364,7 @@ class UpdatePublicZoneResponse(SdkResponse):
     def project_id(self):
         r"""Gets the project_id of this UpdatePublicZoneResponse.
 
-        域名所属的项目ID。
+        **参数解释：** 域名所属的项目ID。 **取值范围：** 不涉及。
 
         :return: The project_id of this UpdatePublicZoneResponse.
         :rtype: str
@@ -375,7 +375,7 @@ class UpdatePublicZoneResponse(SdkResponse):
     def project_id(self, project_id):
         r"""Sets the project_id of this UpdatePublicZoneResponse.
 
-        域名所属的项目ID。
+        **参数解释：** 域名所属的项目ID。 **取值范围：** 不涉及。
 
         :param project_id: The project_id of this UpdatePublicZoneResponse.
         :type project_id: str
@@ -386,7 +386,7 @@ class UpdatePublicZoneResponse(SdkResponse):
     def created_at(self):
         r"""Gets the created_at of this UpdatePublicZoneResponse.
 
-        创建时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。
+        **参数解释：** 域名的创建时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。 **取值范围：** 不涉及。
 
         :return: The created_at of this UpdatePublicZoneResponse.
         :rtype: str
@@ -397,7 +397,7 @@ class UpdatePublicZoneResponse(SdkResponse):
     def created_at(self, created_at):
         r"""Sets the created_at of this UpdatePublicZoneResponse.
 
-        创建时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。
+        **参数解释：** 域名的创建时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。 **取值范围：** 不涉及。
 
         :param created_at: The created_at of this UpdatePublicZoneResponse.
         :type created_at: str
@@ -408,7 +408,7 @@ class UpdatePublicZoneResponse(SdkResponse):
     def updated_at(self):
         r"""Gets the updated_at of this UpdatePublicZoneResponse.
 
-        更新时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。
+        **参数解释：** 域名的最近一次修改时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。 **取值范围：** 不涉及。
 
         :return: The updated_at of this UpdatePublicZoneResponse.
         :rtype: str
@@ -419,7 +419,7 @@ class UpdatePublicZoneResponse(SdkResponse):
     def updated_at(self, updated_at):
         r"""Sets the updated_at of this UpdatePublicZoneResponse.
 
-        更新时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。
+        **参数解释：** 域名的最近一次修改时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。 **取值范围：** 不涉及。
 
         :param updated_at: The updated_at of this UpdatePublicZoneResponse.
         :type updated_at: str
@@ -448,7 +448,7 @@ class UpdatePublicZoneResponse(SdkResponse):
     def masters(self):
         r"""Gets the masters of this UpdatePublicZoneResponse.
 
-        主从模式中，从DNS服务器获取DNS信息。  目前暂未使用。
+        **参数解释：** 主从模式中，从DNS服务器获取DNS信息。 目前暂未使用。 **取值范围：** 不涉及。
 
         :return: The masters of this UpdatePublicZoneResponse.
         :rtype: list[str]
@@ -459,7 +459,7 @@ class UpdatePublicZoneResponse(SdkResponse):
     def masters(self, masters):
         r"""Sets the masters of this UpdatePublicZoneResponse.
 
-        主从模式中，从DNS服务器获取DNS信息。  目前暂未使用。
+        **参数解释：** 主从模式中，从DNS服务器获取DNS信息。 目前暂未使用。 **取值范围：** 不涉及。
 
         :param masters: The masters of this UpdatePublicZoneResponse.
         :type masters: list[str]

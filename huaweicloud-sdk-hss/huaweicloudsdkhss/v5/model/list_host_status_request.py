@@ -17,6 +17,7 @@ class ListHostStatusRequest:
     sensitive_list = []
 
     openapi_types = {
+        'region': 'str',
         'enterprise_project_id': 'str',
         'version': 'str',
         'agent_status': 'str',
@@ -32,7 +33,6 @@ class ListHostStatusRequest:
         'group_id': 'str',
         'group_name': 'str',
         'vpc_id': 'str',
-        'region': 'str',
         'has_intrusion': 'bool',
         'has_vul': 'bool',
         'has_baseline': 'bool',
@@ -55,11 +55,12 @@ class ListHostStatusRequest:
         'incluster': 'bool',
         'protect_degradation': 'bool',
         'cluster_id': 'str',
-        'limit': 'int',
-        'offset': 'int'
+        'offset': 'int',
+        'limit': 'int'
     }
 
     attribute_map = {
+        'region': 'region',
         'enterprise_project_id': 'enterprise_project_id',
         'version': 'version',
         'agent_status': 'agent_status',
@@ -75,7 +76,6 @@ class ListHostStatusRequest:
         'group_id': 'group_id',
         'group_name': 'group_name',
         'vpc_id': 'vpc_id',
-        'region': 'region',
         'has_intrusion': 'has_intrusion',
         'has_vul': 'has_vul',
         'has_baseline': 'has_baseline',
@@ -98,99 +98,100 @@ class ListHostStatusRequest:
         'incluster': 'incluster',
         'protect_degradation': 'protect_degradation',
         'cluster_id': 'cluster_id',
-        'limit': 'limit',
-        'offset': 'offset'
+        'offset': 'offset',
+        'limit': 'limit'
     }
 
-    def __init__(self, enterprise_project_id=None, version=None, agent_status=None, detect_result=None, host_name=None, host_id=None, host_status=None, os_type=None, private_ip=None, public_ip=None, ip_addr=None, protect_status=None, group_id=None, group_name=None, vpc_id=None, region=None, has_intrusion=None, has_vul=None, has_baseline=None, sort_key=None, sort_dir=None, policy_group_id=None, policy_group_name=None, charging_mode=None, refresh=None, get_common_login_locations=None, above_version=None, outside_host=None, asset_value=None, label=None, server_group=None, agent_upgradable=None, install_mode=None, binding_key=None, protect_interrupt=None, incluster=None, protect_degradation=None, cluster_id=None, limit=None, offset=None):
+    def __init__(self, region=None, enterprise_project_id=None, version=None, agent_status=None, detect_result=None, host_name=None, host_id=None, host_status=None, os_type=None, private_ip=None, public_ip=None, ip_addr=None, protect_status=None, group_id=None, group_name=None, vpc_id=None, has_intrusion=None, has_vul=None, has_baseline=None, sort_key=None, sort_dir=None, policy_group_id=None, policy_group_name=None, charging_mode=None, refresh=None, get_common_login_locations=None, above_version=None, outside_host=None, asset_value=None, label=None, server_group=None, agent_upgradable=None, install_mode=None, binding_key=None, protect_interrupt=None, incluster=None, protect_degradation=None, cluster_id=None, offset=None, limit=None):
         r"""ListHostStatusRequest
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
+        :param region: Region ID
+        :type region: str
+        :param enterprise_project_id: **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
         :type enterprise_project_id: str
-        :param version: 主机开通的版本，包含如下7种输入。   - hss.version.null ：无。   - hss.version.basic ：基础版。   - hss.version.advanced ：专业版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。   - hss.version.container.enterprise：容器版。
+        :param version: **参数解释**： 主机开通的版本 **约束限制**: 不涉及 **取值范围**： 包含如下7种输入。 - hss.version.null ：无。 - hss.version.basic ：基础版。 - hss.version.advanced ：专业版。 - hss.version.enterprise ：企业版。 - hss.version.premium ：旗舰版。 - hss.version.wtp ：网页防篡改版。 - hss.version.container.enterprise：容器版。 **默认取值**: 不涉及
         :type version: str
-        :param agent_status: Agent的状态分为两类： - installed：已安装。已安装状态包含以下四种情况：    - online：在线。表示Agent已经成功安装并且与HSS云端防护中心保持连接。    - offline：离线。表示虽然Agent已经安装，但当前与HSS云端防护中心的连接中断。    - install_failed：安装失败。表示在尝试安装过程中遇到错误或问题，导致安装未能完成。    - installing：安装中。表示当前正在进行Agent安装。 - not_installed ：未安装。表示服务器中尚未安装Agent。 如果您要筛选除在线以外所有状态的Agent，可设置not_online（仅作为查询条件）
+        :param agent_status: **参数解释**: Agent的状态 **约束限制**: 不涉及 **取值范围**: Agent的状态分为两类： - installed：已安装。已安装状态包含以下四种情况：   - online：在线。表示Agent已经成功安装并且与HSS云端防护中心保持连接。   - offline：离线。表示虽然Agent已经安装，但当前与HSS云端防护中心的连接中断。   - install_failed：安装失败。表示在尝试安装过程中遇到错误或问题，导致安装未能完成。   - installing：安装中。表示当前正在进行Agent安装。 - not_installed ：未安装。表示服务器中尚未安装Agent。 如果您要筛选除在线以外所有状态的Agent，可设置not_online（仅作为查询条件） **默认取值**: 不涉及
         :type agent_status: str
-        :param detect_result: 检测结果，包含如下4种。   - undetected ：未检测。   - clean ：无风险。   - risk ：有风险。   - scanning ：检测中。
+        :param detect_result: **参数解释**: 检测结果 **约束限制**: 不涉及 **取值范围**: 包含如下4种。   - undetected ：未检测。   - clean ：无风险。   - risk ：有风险。   - scanning ：检测中。 **默认取值**: 不涉及
         :type detect_result: str
-        :param host_name: 服务器名称
+        :param host_name: **参数解释**: 服务器名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
         :type host_name: str
-        :param host_id: 服务器ID
+        :param host_id: **参数解释**: 服务器ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
         :type host_id: str
-        :param host_status: 主机状态，包含如下4种。   - ACTIVE ：正在运行。   - SHUTOFF ：关机。   - BUILDING ：创建中。   - ERROR ：故障。
+        :param host_status: **参数解释**: 主机状态 **约束限制**: 不涉及 **取值范围**: 包含如下4种。 - ACTIVE ：正在运行。 - SHUTOFF ：关机。 - BUILDING ：创建中。 - ERROR ：故障。 **默认取值**: 不涉及
         :type host_status: str
-        :param os_type: 操作系统类型，包含如下2种。   - Linux ：Linux。   - Windows ：Windows。
+        :param os_type: **参数解释**: 操作系统类型 **约束限制**: 不涉及 **取值范围**: 包含如下2种。 - Linux ：Linux。 - Windows ：Windows。 **默认取值**: 不涉及
         :type os_type: str
-        :param private_ip: 服务器私有IP
+        :param private_ip: **参数解释**: 服务器私有IP **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
         :type private_ip: str
         :param public_ip: 服务器公网IP
         :type public_ip: str
-        :param ip_addr: 公网或私网IP
+        :param ip_addr: **参数解释**: 公网或私网IP **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及
         :type ip_addr: str
-        :param protect_status: 防护状态，包含如下2种。   - closed ：关闭。   - opened ：开启。   - protection_exception ：防护异常。
+        :param protect_status: **参数解释**: 防护状态 **约束限制**: 不涉及 **取值范围**: 包含如下3种： - closed ：关闭。 - opened ：开启。 - protection_exception ：防护异常。 **默认取值**: 不涉及
         :type protect_status: str
         :param group_id: 服务器组ID
         :type group_id: str
-        :param group_name: 服务器组名称
+        :param group_name: **参数解释**: 服务器组名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
         :type group_name: str
-        :param vpc_id: vpc id
+        :param vpc_id: **参数解释**: VPC的ID **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
         :type vpc_id: str
-        :param region: Region ID
-        :type region: str
-        :param has_intrusion: 存在告警事件
+        :param has_intrusion: **参数解释**: 存在告警事件 **约束限制**: 不涉及 **取值范围**: true或者false **默认取值**: 不涉及 
         :type has_intrusion: bool
-        :param has_vul: 存在漏洞风险
+        :param has_vul: **参数解释**: 存在漏洞风险 **约束限制**: 不涉及 **取值范围**: true或者false **默认取值**: 不涉及 
         :type has_vul: bool
-        :param has_baseline: 存在基线风险
+        :param has_baseline: **参数解释**: 存在基线风险 **约束限制**: 不涉及 **取值范围**: true或者false **默认取值**: 不涉及 
         :type has_baseline: bool
-        :param sort_key: 排序字段，只支持risk_num - risk_num：风险总量
+        :param sort_key: **参数解释**: 排序字段 **约束限制**: 不涉及 **取值范围**: 只支持risk_num **默认取值**: 不涉及 
         :type sort_key: str
-        :param sort_dir: 排序的顺序 - asc: 正序 - desc: 倒序
+        :param sort_dir: **参数解释**: 排序的顺序 **约束限制**: 不涉及 **取值范围**: - asc: 正序 - desc: 倒序 **默认取值**: 不涉及 
         :type sort_dir: str
-        :param policy_group_id: 策略组ID
+        :param policy_group_id: **参数解释**: 策略组ID **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
         :type policy_group_id: str
-        :param policy_group_name: 策略组名称
+        :param policy_group_name: **参数解释**: 策略组名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
         :type policy_group_name: str
-        :param charging_mode: 收费模式，包含如下2种。   - packet_cycle ：包年/包月。   - on_demand ：按需。
+        :param charging_mode: **参数解释**： 收费模式 **约束限制**: 不涉及 **取值范围**: - packet_cycle ：包年/包月。 - on_demand ：按需。 **默认取值**: 不涉及
         :type charging_mode: str
-        :param refresh: 是否强制从ECS同步主机
+        :param refresh: **参数解释** : 是否强制从ECS同步主机 **约束限制** : 不涉及 **取值范围** : true或者false **默认取值** : 不涉及 
         :type refresh: bool
-        :param get_common_login_locations: 是否获取主机常用登录地信息
+        :param get_common_login_locations: **参数解释** : 是否获取主机常用登录地信息 **约束限制** : 不涉及 **取值范围** : true或者false **默认取值** : 不涉及 
         :type get_common_login_locations: bool
-        :param above_version: 是否返回比当前版本高的所有版本
+        :param above_version: **参数解释** : 是否返回比当前版本高的所有版本 **约束限制** : 不涉及 **取值范围** : true或者false **默认取值** : 不涉及 
         :type above_version: bool
-        :param outside_host: 是否华为云主机
+        :param outside_host: **参数解释** : 是否华为云主机 **约束限制** : 不涉及 **取值范围** : true或者false **默认取值** : 不涉及 
         :type outside_host: bool
-        :param asset_value: 资产重要性，包含如下4种   - important ：重要资产   - common ：一般资产   - test ：测试资产
+        :param asset_value: **参数解释** : 资产重要性 **约束限制** : 不涉及 **取值范围** : 包含如下4种 - important ：重要资产 - common ：一般资产 - test ：测试资产 **默认取值** : 不涉及 
         :type asset_value: str
-        :param label: 资产标签
+        :param label: **参数解释** : 资产标签 **约束限制** : 不涉及 **取值范围** : 字符长度1-64位 **默认取值** : 不涉及 
         :type label: str
-        :param server_group: 资产服务器组
+        :param server_group: **参数解释** : 资产服务器组 **约束限制** : 不涉及 **取值范围** : 字符长度1-64位 **默认取值** : 不涉及 
         :type server_group: str
-        :param agent_upgradable: agent是否可升级
+        :param agent_upgradable: **参数解释** : agent是否可升级 **约束限制** : 不涉及 **取值范围** : true或者false **默认取值** : 不涉及 
         :type agent_upgradable: bool
-        :param install_mode: 是否安装模式场景
+        :param install_mode: **参数解释** : 是否安装模式场景 **约束限制** : 不涉及 **取值范围** : true或者false **默认取值** : 不涉及 
         :type install_mode: bool
-        :param binding_key: 是否绑定DEW密钥
+        :param binding_key: **参数解释** : 是否绑定DEW密钥 **约束限制** : 不涉及 **取值范围** : true或者false **默认取值** : 不涉及 
         :type binding_key: bool
-        :param protect_interrupt: 是否防护中断
+        :param protect_interrupt: **参数解释** : 是否防护中断 **约束限制** : 不涉及 **取值范围** : true或者false **默认取值** : 不涉及 
         :type protect_interrupt: bool
-        :param incluster: 是否集群内节点
+        :param incluster: **参数解释** : 是否集群内节点 **约束限制** : 不涉及 **取值范围** : true或者false **默认取值** : 不涉及 
         :type incluster: bool
-        :param protect_degradation: 是否防护降级
+        :param protect_degradation: **参数解释** : 是否防护降级 **约束限制** : 不涉及 **取值范围** : true或者false **默认取值** : 不涉及 
         :type protect_degradation: bool
-        :param cluster_id: 集群ID
+        :param cluster_id: **参数解释**: 集群ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
         :type cluster_id: str
-        :param limit: 每页显示数量
-        :type limit: int
-        :param offset: 偏移量：指定返回记录的开始位置
+        :param offset: **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 默认为0 
         :type offset: int
+        :param limit: **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
+        :type limit: int
         """
         
         
 
+        self._region = None
         self._enterprise_project_id = None
         self._version = None
         self._agent_status = None
@@ -206,7 +207,6 @@ class ListHostStatusRequest:
         self._group_id = None
         self._group_name = None
         self._vpc_id = None
-        self._region = None
         self._has_intrusion = None
         self._has_vul = None
         self._has_baseline = None
@@ -229,10 +229,12 @@ class ListHostStatusRequest:
         self._incluster = None
         self._protect_degradation = None
         self._cluster_id = None
-        self._limit = None
         self._offset = None
+        self._limit = None
         self.discriminator = None
 
+        if region is not None:
+            self.region = region
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
         if version is not None:
@@ -263,8 +265,6 @@ class ListHostStatusRequest:
             self.group_name = group_name
         if vpc_id is not None:
             self.vpc_id = vpc_id
-        if region is not None:
-            self.region = region
         if has_intrusion is not None:
             self.has_intrusion = has_intrusion
         if has_vul is not None:
@@ -309,16 +309,38 @@ class ListHostStatusRequest:
             self.protect_degradation = protect_degradation
         if cluster_id is not None:
             self.cluster_id = cluster_id
-        if limit is not None:
-            self.limit = limit
         if offset is not None:
             self.offset = offset
+        if limit is not None:
+            self.limit = limit
+
+    @property
+    def region(self):
+        r"""Gets the region of this ListHostStatusRequest.
+
+        Region ID
+
+        :return: The region of this ListHostStatusRequest.
+        :rtype: str
+        """
+        return self._region
+
+    @region.setter
+    def region(self, region):
+        r"""Sets the region of this ListHostStatusRequest.
+
+        Region ID
+
+        :param region: The region of this ListHostStatusRequest.
+        :type region: str
+        """
+        self._region = region
 
     @property
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this ListHostStatusRequest.
 
-        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
+        **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
 
         :return: The enterprise_project_id of this ListHostStatusRequest.
         :rtype: str
@@ -329,7 +351,7 @@ class ListHostStatusRequest:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this ListHostStatusRequest.
 
-        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
+        **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
 
         :param enterprise_project_id: The enterprise_project_id of this ListHostStatusRequest.
         :type enterprise_project_id: str
@@ -340,7 +362,7 @@ class ListHostStatusRequest:
     def version(self):
         r"""Gets the version of this ListHostStatusRequest.
 
-        主机开通的版本，包含如下7种输入。   - hss.version.null ：无。   - hss.version.basic ：基础版。   - hss.version.advanced ：专业版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。   - hss.version.container.enterprise：容器版。
+        **参数解释**： 主机开通的版本 **约束限制**: 不涉及 **取值范围**： 包含如下7种输入。 - hss.version.null ：无。 - hss.version.basic ：基础版。 - hss.version.advanced ：专业版。 - hss.version.enterprise ：企业版。 - hss.version.premium ：旗舰版。 - hss.version.wtp ：网页防篡改版。 - hss.version.container.enterprise：容器版。 **默认取值**: 不涉及
 
         :return: The version of this ListHostStatusRequest.
         :rtype: str
@@ -351,7 +373,7 @@ class ListHostStatusRequest:
     def version(self, version):
         r"""Sets the version of this ListHostStatusRequest.
 
-        主机开通的版本，包含如下7种输入。   - hss.version.null ：无。   - hss.version.basic ：基础版。   - hss.version.advanced ：专业版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。   - hss.version.container.enterprise：容器版。
+        **参数解释**： 主机开通的版本 **约束限制**: 不涉及 **取值范围**： 包含如下7种输入。 - hss.version.null ：无。 - hss.version.basic ：基础版。 - hss.version.advanced ：专业版。 - hss.version.enterprise ：企业版。 - hss.version.premium ：旗舰版。 - hss.version.wtp ：网页防篡改版。 - hss.version.container.enterprise：容器版。 **默认取值**: 不涉及
 
         :param version: The version of this ListHostStatusRequest.
         :type version: str
@@ -362,7 +384,7 @@ class ListHostStatusRequest:
     def agent_status(self):
         r"""Gets the agent_status of this ListHostStatusRequest.
 
-        Agent的状态分为两类： - installed：已安装。已安装状态包含以下四种情况：    - online：在线。表示Agent已经成功安装并且与HSS云端防护中心保持连接。    - offline：离线。表示虽然Agent已经安装，但当前与HSS云端防护中心的连接中断。    - install_failed：安装失败。表示在尝试安装过程中遇到错误或问题，导致安装未能完成。    - installing：安装中。表示当前正在进行Agent安装。 - not_installed ：未安装。表示服务器中尚未安装Agent。 如果您要筛选除在线以外所有状态的Agent，可设置not_online（仅作为查询条件）
+        **参数解释**: Agent的状态 **约束限制**: 不涉及 **取值范围**: Agent的状态分为两类： - installed：已安装。已安装状态包含以下四种情况：   - online：在线。表示Agent已经成功安装并且与HSS云端防护中心保持连接。   - offline：离线。表示虽然Agent已经安装，但当前与HSS云端防护中心的连接中断。   - install_failed：安装失败。表示在尝试安装过程中遇到错误或问题，导致安装未能完成。   - installing：安装中。表示当前正在进行Agent安装。 - not_installed ：未安装。表示服务器中尚未安装Agent。 如果您要筛选除在线以外所有状态的Agent，可设置not_online（仅作为查询条件） **默认取值**: 不涉及
 
         :return: The agent_status of this ListHostStatusRequest.
         :rtype: str
@@ -373,7 +395,7 @@ class ListHostStatusRequest:
     def agent_status(self, agent_status):
         r"""Sets the agent_status of this ListHostStatusRequest.
 
-        Agent的状态分为两类： - installed：已安装。已安装状态包含以下四种情况：    - online：在线。表示Agent已经成功安装并且与HSS云端防护中心保持连接。    - offline：离线。表示虽然Agent已经安装，但当前与HSS云端防护中心的连接中断。    - install_failed：安装失败。表示在尝试安装过程中遇到错误或问题，导致安装未能完成。    - installing：安装中。表示当前正在进行Agent安装。 - not_installed ：未安装。表示服务器中尚未安装Agent。 如果您要筛选除在线以外所有状态的Agent，可设置not_online（仅作为查询条件）
+        **参数解释**: Agent的状态 **约束限制**: 不涉及 **取值范围**: Agent的状态分为两类： - installed：已安装。已安装状态包含以下四种情况：   - online：在线。表示Agent已经成功安装并且与HSS云端防护中心保持连接。   - offline：离线。表示虽然Agent已经安装，但当前与HSS云端防护中心的连接中断。   - install_failed：安装失败。表示在尝试安装过程中遇到错误或问题，导致安装未能完成。   - installing：安装中。表示当前正在进行Agent安装。 - not_installed ：未安装。表示服务器中尚未安装Agent。 如果您要筛选除在线以外所有状态的Agent，可设置not_online（仅作为查询条件） **默认取值**: 不涉及
 
         :param agent_status: The agent_status of this ListHostStatusRequest.
         :type agent_status: str
@@ -384,7 +406,7 @@ class ListHostStatusRequest:
     def detect_result(self):
         r"""Gets the detect_result of this ListHostStatusRequest.
 
-        检测结果，包含如下4种。   - undetected ：未检测。   - clean ：无风险。   - risk ：有风险。   - scanning ：检测中。
+        **参数解释**: 检测结果 **约束限制**: 不涉及 **取值范围**: 包含如下4种。   - undetected ：未检测。   - clean ：无风险。   - risk ：有风险。   - scanning ：检测中。 **默认取值**: 不涉及
 
         :return: The detect_result of this ListHostStatusRequest.
         :rtype: str
@@ -395,7 +417,7 @@ class ListHostStatusRequest:
     def detect_result(self, detect_result):
         r"""Sets the detect_result of this ListHostStatusRequest.
 
-        检测结果，包含如下4种。   - undetected ：未检测。   - clean ：无风险。   - risk ：有风险。   - scanning ：检测中。
+        **参数解释**: 检测结果 **约束限制**: 不涉及 **取值范围**: 包含如下4种。   - undetected ：未检测。   - clean ：无风险。   - risk ：有风险。   - scanning ：检测中。 **默认取值**: 不涉及
 
         :param detect_result: The detect_result of this ListHostStatusRequest.
         :type detect_result: str
@@ -406,7 +428,7 @@ class ListHostStatusRequest:
     def host_name(self):
         r"""Gets the host_name of this ListHostStatusRequest.
 
-        服务器名称
+        **参数解释**: 服务器名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
 
         :return: The host_name of this ListHostStatusRequest.
         :rtype: str
@@ -417,7 +439,7 @@ class ListHostStatusRequest:
     def host_name(self, host_name):
         r"""Sets the host_name of this ListHostStatusRequest.
 
-        服务器名称
+        **参数解释**: 服务器名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
 
         :param host_name: The host_name of this ListHostStatusRequest.
         :type host_name: str
@@ -428,7 +450,7 @@ class ListHostStatusRequest:
     def host_id(self):
         r"""Gets the host_id of this ListHostStatusRequest.
 
-        服务器ID
+        **参数解释**: 服务器ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :return: The host_id of this ListHostStatusRequest.
         :rtype: str
@@ -439,7 +461,7 @@ class ListHostStatusRequest:
     def host_id(self, host_id):
         r"""Sets the host_id of this ListHostStatusRequest.
 
-        服务器ID
+        **参数解释**: 服务器ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :param host_id: The host_id of this ListHostStatusRequest.
         :type host_id: str
@@ -450,7 +472,7 @@ class ListHostStatusRequest:
     def host_status(self):
         r"""Gets the host_status of this ListHostStatusRequest.
 
-        主机状态，包含如下4种。   - ACTIVE ：正在运行。   - SHUTOFF ：关机。   - BUILDING ：创建中。   - ERROR ：故障。
+        **参数解释**: 主机状态 **约束限制**: 不涉及 **取值范围**: 包含如下4种。 - ACTIVE ：正在运行。 - SHUTOFF ：关机。 - BUILDING ：创建中。 - ERROR ：故障。 **默认取值**: 不涉及
 
         :return: The host_status of this ListHostStatusRequest.
         :rtype: str
@@ -461,7 +483,7 @@ class ListHostStatusRequest:
     def host_status(self, host_status):
         r"""Sets the host_status of this ListHostStatusRequest.
 
-        主机状态，包含如下4种。   - ACTIVE ：正在运行。   - SHUTOFF ：关机。   - BUILDING ：创建中。   - ERROR ：故障。
+        **参数解释**: 主机状态 **约束限制**: 不涉及 **取值范围**: 包含如下4种。 - ACTIVE ：正在运行。 - SHUTOFF ：关机。 - BUILDING ：创建中。 - ERROR ：故障。 **默认取值**: 不涉及
 
         :param host_status: The host_status of this ListHostStatusRequest.
         :type host_status: str
@@ -472,7 +494,7 @@ class ListHostStatusRequest:
     def os_type(self):
         r"""Gets the os_type of this ListHostStatusRequest.
 
-        操作系统类型，包含如下2种。   - Linux ：Linux。   - Windows ：Windows。
+        **参数解释**: 操作系统类型 **约束限制**: 不涉及 **取值范围**: 包含如下2种。 - Linux ：Linux。 - Windows ：Windows。 **默认取值**: 不涉及
 
         :return: The os_type of this ListHostStatusRequest.
         :rtype: str
@@ -483,7 +505,7 @@ class ListHostStatusRequest:
     def os_type(self, os_type):
         r"""Sets the os_type of this ListHostStatusRequest.
 
-        操作系统类型，包含如下2种。   - Linux ：Linux。   - Windows ：Windows。
+        **参数解释**: 操作系统类型 **约束限制**: 不涉及 **取值范围**: 包含如下2种。 - Linux ：Linux。 - Windows ：Windows。 **默认取值**: 不涉及
 
         :param os_type: The os_type of this ListHostStatusRequest.
         :type os_type: str
@@ -494,7 +516,7 @@ class ListHostStatusRequest:
     def private_ip(self):
         r"""Gets the private_ip of this ListHostStatusRequest.
 
-        服务器私有IP
+        **参数解释**: 服务器私有IP **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
 
         :return: The private_ip of this ListHostStatusRequest.
         :rtype: str
@@ -505,7 +527,7 @@ class ListHostStatusRequest:
     def private_ip(self, private_ip):
         r"""Sets the private_ip of this ListHostStatusRequest.
 
-        服务器私有IP
+        **参数解释**: 服务器私有IP **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
 
         :param private_ip: The private_ip of this ListHostStatusRequest.
         :type private_ip: str
@@ -538,7 +560,7 @@ class ListHostStatusRequest:
     def ip_addr(self):
         r"""Gets the ip_addr of this ListHostStatusRequest.
 
-        公网或私网IP
+        **参数解释**: 公网或私网IP **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及
 
         :return: The ip_addr of this ListHostStatusRequest.
         :rtype: str
@@ -549,7 +571,7 @@ class ListHostStatusRequest:
     def ip_addr(self, ip_addr):
         r"""Sets the ip_addr of this ListHostStatusRequest.
 
-        公网或私网IP
+        **参数解释**: 公网或私网IP **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及
 
         :param ip_addr: The ip_addr of this ListHostStatusRequest.
         :type ip_addr: str
@@ -560,7 +582,7 @@ class ListHostStatusRequest:
     def protect_status(self):
         r"""Gets the protect_status of this ListHostStatusRequest.
 
-        防护状态，包含如下2种。   - closed ：关闭。   - opened ：开启。   - protection_exception ：防护异常。
+        **参数解释**: 防护状态 **约束限制**: 不涉及 **取值范围**: 包含如下3种： - closed ：关闭。 - opened ：开启。 - protection_exception ：防护异常。 **默认取值**: 不涉及
 
         :return: The protect_status of this ListHostStatusRequest.
         :rtype: str
@@ -571,7 +593,7 @@ class ListHostStatusRequest:
     def protect_status(self, protect_status):
         r"""Sets the protect_status of this ListHostStatusRequest.
 
-        防护状态，包含如下2种。   - closed ：关闭。   - opened ：开启。   - protection_exception ：防护异常。
+        **参数解释**: 防护状态 **约束限制**: 不涉及 **取值范围**: 包含如下3种： - closed ：关闭。 - opened ：开启。 - protection_exception ：防护异常。 **默认取值**: 不涉及
 
         :param protect_status: The protect_status of this ListHostStatusRequest.
         :type protect_status: str
@@ -604,7 +626,7 @@ class ListHostStatusRequest:
     def group_name(self):
         r"""Gets the group_name of this ListHostStatusRequest.
 
-        服务器组名称
+        **参数解释**: 服务器组名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :return: The group_name of this ListHostStatusRequest.
         :rtype: str
@@ -615,7 +637,7 @@ class ListHostStatusRequest:
     def group_name(self, group_name):
         r"""Sets the group_name of this ListHostStatusRequest.
 
-        服务器组名称
+        **参数解释**: 服务器组名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :param group_name: The group_name of this ListHostStatusRequest.
         :type group_name: str
@@ -626,7 +648,7 @@ class ListHostStatusRequest:
     def vpc_id(self):
         r"""Gets the vpc_id of this ListHostStatusRequest.
 
-        vpc id
+        **参数解释**: VPC的ID **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
 
         :return: The vpc_id of this ListHostStatusRequest.
         :rtype: str
@@ -637,7 +659,7 @@ class ListHostStatusRequest:
     def vpc_id(self, vpc_id):
         r"""Sets the vpc_id of this ListHostStatusRequest.
 
-        vpc id
+        **参数解释**: VPC的ID **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
 
         :param vpc_id: The vpc_id of this ListHostStatusRequest.
         :type vpc_id: str
@@ -645,32 +667,10 @@ class ListHostStatusRequest:
         self._vpc_id = vpc_id
 
     @property
-    def region(self):
-        r"""Gets the region of this ListHostStatusRequest.
-
-        Region ID
-
-        :return: The region of this ListHostStatusRequest.
-        :rtype: str
-        """
-        return self._region
-
-    @region.setter
-    def region(self, region):
-        r"""Sets the region of this ListHostStatusRequest.
-
-        Region ID
-
-        :param region: The region of this ListHostStatusRequest.
-        :type region: str
-        """
-        self._region = region
-
-    @property
     def has_intrusion(self):
         r"""Gets the has_intrusion of this ListHostStatusRequest.
 
-        存在告警事件
+        **参数解释**: 存在告警事件 **约束限制**: 不涉及 **取值范围**: true或者false **默认取值**: 不涉及 
 
         :return: The has_intrusion of this ListHostStatusRequest.
         :rtype: bool
@@ -681,7 +681,7 @@ class ListHostStatusRequest:
     def has_intrusion(self, has_intrusion):
         r"""Sets the has_intrusion of this ListHostStatusRequest.
 
-        存在告警事件
+        **参数解释**: 存在告警事件 **约束限制**: 不涉及 **取值范围**: true或者false **默认取值**: 不涉及 
 
         :param has_intrusion: The has_intrusion of this ListHostStatusRequest.
         :type has_intrusion: bool
@@ -692,7 +692,7 @@ class ListHostStatusRequest:
     def has_vul(self):
         r"""Gets the has_vul of this ListHostStatusRequest.
 
-        存在漏洞风险
+        **参数解释**: 存在漏洞风险 **约束限制**: 不涉及 **取值范围**: true或者false **默认取值**: 不涉及 
 
         :return: The has_vul of this ListHostStatusRequest.
         :rtype: bool
@@ -703,7 +703,7 @@ class ListHostStatusRequest:
     def has_vul(self, has_vul):
         r"""Sets the has_vul of this ListHostStatusRequest.
 
-        存在漏洞风险
+        **参数解释**: 存在漏洞风险 **约束限制**: 不涉及 **取值范围**: true或者false **默认取值**: 不涉及 
 
         :param has_vul: The has_vul of this ListHostStatusRequest.
         :type has_vul: bool
@@ -714,7 +714,7 @@ class ListHostStatusRequest:
     def has_baseline(self):
         r"""Gets the has_baseline of this ListHostStatusRequest.
 
-        存在基线风险
+        **参数解释**: 存在基线风险 **约束限制**: 不涉及 **取值范围**: true或者false **默认取值**: 不涉及 
 
         :return: The has_baseline of this ListHostStatusRequest.
         :rtype: bool
@@ -725,7 +725,7 @@ class ListHostStatusRequest:
     def has_baseline(self, has_baseline):
         r"""Sets the has_baseline of this ListHostStatusRequest.
 
-        存在基线风险
+        **参数解释**: 存在基线风险 **约束限制**: 不涉及 **取值范围**: true或者false **默认取值**: 不涉及 
 
         :param has_baseline: The has_baseline of this ListHostStatusRequest.
         :type has_baseline: bool
@@ -736,7 +736,7 @@ class ListHostStatusRequest:
     def sort_key(self):
         r"""Gets the sort_key of this ListHostStatusRequest.
 
-        排序字段，只支持risk_num - risk_num：风险总量
+        **参数解释**: 排序字段 **约束限制**: 不涉及 **取值范围**: 只支持risk_num **默认取值**: 不涉及 
 
         :return: The sort_key of this ListHostStatusRequest.
         :rtype: str
@@ -747,7 +747,7 @@ class ListHostStatusRequest:
     def sort_key(self, sort_key):
         r"""Sets the sort_key of this ListHostStatusRequest.
 
-        排序字段，只支持risk_num - risk_num：风险总量
+        **参数解释**: 排序字段 **约束限制**: 不涉及 **取值范围**: 只支持risk_num **默认取值**: 不涉及 
 
         :param sort_key: The sort_key of this ListHostStatusRequest.
         :type sort_key: str
@@ -758,7 +758,7 @@ class ListHostStatusRequest:
     def sort_dir(self):
         r"""Gets the sort_dir of this ListHostStatusRequest.
 
-        排序的顺序 - asc: 正序 - desc: 倒序
+        **参数解释**: 排序的顺序 **约束限制**: 不涉及 **取值范围**: - asc: 正序 - desc: 倒序 **默认取值**: 不涉及 
 
         :return: The sort_dir of this ListHostStatusRequest.
         :rtype: str
@@ -769,7 +769,7 @@ class ListHostStatusRequest:
     def sort_dir(self, sort_dir):
         r"""Sets the sort_dir of this ListHostStatusRequest.
 
-        排序的顺序 - asc: 正序 - desc: 倒序
+        **参数解释**: 排序的顺序 **约束限制**: 不涉及 **取值范围**: - asc: 正序 - desc: 倒序 **默认取值**: 不涉及 
 
         :param sort_dir: The sort_dir of this ListHostStatusRequest.
         :type sort_dir: str
@@ -780,7 +780,7 @@ class ListHostStatusRequest:
     def policy_group_id(self):
         r"""Gets the policy_group_id of this ListHostStatusRequest.
 
-        策略组ID
+        **参数解释**: 策略组ID **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
 
         :return: The policy_group_id of this ListHostStatusRequest.
         :rtype: str
@@ -791,7 +791,7 @@ class ListHostStatusRequest:
     def policy_group_id(self, policy_group_id):
         r"""Sets the policy_group_id of this ListHostStatusRequest.
 
-        策略组ID
+        **参数解释**: 策略组ID **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
 
         :param policy_group_id: The policy_group_id of this ListHostStatusRequest.
         :type policy_group_id: str
@@ -802,7 +802,7 @@ class ListHostStatusRequest:
     def policy_group_name(self):
         r"""Gets the policy_group_name of this ListHostStatusRequest.
 
-        策略组名称
+        **参数解释**: 策略组名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
 
         :return: The policy_group_name of this ListHostStatusRequest.
         :rtype: str
@@ -813,7 +813,7 @@ class ListHostStatusRequest:
     def policy_group_name(self, policy_group_name):
         r"""Sets the policy_group_name of this ListHostStatusRequest.
 
-        策略组名称
+        **参数解释**: 策略组名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
 
         :param policy_group_name: The policy_group_name of this ListHostStatusRequest.
         :type policy_group_name: str
@@ -824,7 +824,7 @@ class ListHostStatusRequest:
     def charging_mode(self):
         r"""Gets the charging_mode of this ListHostStatusRequest.
 
-        收费模式，包含如下2种。   - packet_cycle ：包年/包月。   - on_demand ：按需。
+        **参数解释**： 收费模式 **约束限制**: 不涉及 **取值范围**: - packet_cycle ：包年/包月。 - on_demand ：按需。 **默认取值**: 不涉及
 
         :return: The charging_mode of this ListHostStatusRequest.
         :rtype: str
@@ -835,7 +835,7 @@ class ListHostStatusRequest:
     def charging_mode(self, charging_mode):
         r"""Sets the charging_mode of this ListHostStatusRequest.
 
-        收费模式，包含如下2种。   - packet_cycle ：包年/包月。   - on_demand ：按需。
+        **参数解释**： 收费模式 **约束限制**: 不涉及 **取值范围**: - packet_cycle ：包年/包月。 - on_demand ：按需。 **默认取值**: 不涉及
 
         :param charging_mode: The charging_mode of this ListHostStatusRequest.
         :type charging_mode: str
@@ -846,7 +846,7 @@ class ListHostStatusRequest:
     def refresh(self):
         r"""Gets the refresh of this ListHostStatusRequest.
 
-        是否强制从ECS同步主机
+        **参数解释** : 是否强制从ECS同步主机 **约束限制** : 不涉及 **取值范围** : true或者false **默认取值** : 不涉及 
 
         :return: The refresh of this ListHostStatusRequest.
         :rtype: bool
@@ -857,7 +857,7 @@ class ListHostStatusRequest:
     def refresh(self, refresh):
         r"""Sets the refresh of this ListHostStatusRequest.
 
-        是否强制从ECS同步主机
+        **参数解释** : 是否强制从ECS同步主机 **约束限制** : 不涉及 **取值范围** : true或者false **默认取值** : 不涉及 
 
         :param refresh: The refresh of this ListHostStatusRequest.
         :type refresh: bool
@@ -868,7 +868,7 @@ class ListHostStatusRequest:
     def get_common_login_locations(self):
         r"""Gets the get_common_login_locations of this ListHostStatusRequest.
 
-        是否获取主机常用登录地信息
+        **参数解释** : 是否获取主机常用登录地信息 **约束限制** : 不涉及 **取值范围** : true或者false **默认取值** : 不涉及 
 
         :return: The get_common_login_locations of this ListHostStatusRequest.
         :rtype: bool
@@ -879,7 +879,7 @@ class ListHostStatusRequest:
     def get_common_login_locations(self, get_common_login_locations):
         r"""Sets the get_common_login_locations of this ListHostStatusRequest.
 
-        是否获取主机常用登录地信息
+        **参数解释** : 是否获取主机常用登录地信息 **约束限制** : 不涉及 **取值范围** : true或者false **默认取值** : 不涉及 
 
         :param get_common_login_locations: The get_common_login_locations of this ListHostStatusRequest.
         :type get_common_login_locations: bool
@@ -890,7 +890,7 @@ class ListHostStatusRequest:
     def above_version(self):
         r"""Gets the above_version of this ListHostStatusRequest.
 
-        是否返回比当前版本高的所有版本
+        **参数解释** : 是否返回比当前版本高的所有版本 **约束限制** : 不涉及 **取值范围** : true或者false **默认取值** : 不涉及 
 
         :return: The above_version of this ListHostStatusRequest.
         :rtype: bool
@@ -901,7 +901,7 @@ class ListHostStatusRequest:
     def above_version(self, above_version):
         r"""Sets the above_version of this ListHostStatusRequest.
 
-        是否返回比当前版本高的所有版本
+        **参数解释** : 是否返回比当前版本高的所有版本 **约束限制** : 不涉及 **取值范围** : true或者false **默认取值** : 不涉及 
 
         :param above_version: The above_version of this ListHostStatusRequest.
         :type above_version: bool
@@ -912,7 +912,7 @@ class ListHostStatusRequest:
     def outside_host(self):
         r"""Gets the outside_host of this ListHostStatusRequest.
 
-        是否华为云主机
+        **参数解释** : 是否华为云主机 **约束限制** : 不涉及 **取值范围** : true或者false **默认取值** : 不涉及 
 
         :return: The outside_host of this ListHostStatusRequest.
         :rtype: bool
@@ -923,7 +923,7 @@ class ListHostStatusRequest:
     def outside_host(self, outside_host):
         r"""Sets the outside_host of this ListHostStatusRequest.
 
-        是否华为云主机
+        **参数解释** : 是否华为云主机 **约束限制** : 不涉及 **取值范围** : true或者false **默认取值** : 不涉及 
 
         :param outside_host: The outside_host of this ListHostStatusRequest.
         :type outside_host: bool
@@ -934,7 +934,7 @@ class ListHostStatusRequest:
     def asset_value(self):
         r"""Gets the asset_value of this ListHostStatusRequest.
 
-        资产重要性，包含如下4种   - important ：重要资产   - common ：一般资产   - test ：测试资产
+        **参数解释** : 资产重要性 **约束限制** : 不涉及 **取值范围** : 包含如下4种 - important ：重要资产 - common ：一般资产 - test ：测试资产 **默认取值** : 不涉及 
 
         :return: The asset_value of this ListHostStatusRequest.
         :rtype: str
@@ -945,7 +945,7 @@ class ListHostStatusRequest:
     def asset_value(self, asset_value):
         r"""Sets the asset_value of this ListHostStatusRequest.
 
-        资产重要性，包含如下4种   - important ：重要资产   - common ：一般资产   - test ：测试资产
+        **参数解释** : 资产重要性 **约束限制** : 不涉及 **取值范围** : 包含如下4种 - important ：重要资产 - common ：一般资产 - test ：测试资产 **默认取值** : 不涉及 
 
         :param asset_value: The asset_value of this ListHostStatusRequest.
         :type asset_value: str
@@ -956,7 +956,7 @@ class ListHostStatusRequest:
     def label(self):
         r"""Gets the label of this ListHostStatusRequest.
 
-        资产标签
+        **参数解释** : 资产标签 **约束限制** : 不涉及 **取值范围** : 字符长度1-64位 **默认取值** : 不涉及 
 
         :return: The label of this ListHostStatusRequest.
         :rtype: str
@@ -967,7 +967,7 @@ class ListHostStatusRequest:
     def label(self, label):
         r"""Sets the label of this ListHostStatusRequest.
 
-        资产标签
+        **参数解释** : 资产标签 **约束限制** : 不涉及 **取值范围** : 字符长度1-64位 **默认取值** : 不涉及 
 
         :param label: The label of this ListHostStatusRequest.
         :type label: str
@@ -978,7 +978,7 @@ class ListHostStatusRequest:
     def server_group(self):
         r"""Gets the server_group of this ListHostStatusRequest.
 
-        资产服务器组
+        **参数解释** : 资产服务器组 **约束限制** : 不涉及 **取值范围** : 字符长度1-64位 **默认取值** : 不涉及 
 
         :return: The server_group of this ListHostStatusRequest.
         :rtype: str
@@ -989,7 +989,7 @@ class ListHostStatusRequest:
     def server_group(self, server_group):
         r"""Sets the server_group of this ListHostStatusRequest.
 
-        资产服务器组
+        **参数解释** : 资产服务器组 **约束限制** : 不涉及 **取值范围** : 字符长度1-64位 **默认取值** : 不涉及 
 
         :param server_group: The server_group of this ListHostStatusRequest.
         :type server_group: str
@@ -1000,7 +1000,7 @@ class ListHostStatusRequest:
     def agent_upgradable(self):
         r"""Gets the agent_upgradable of this ListHostStatusRequest.
 
-        agent是否可升级
+        **参数解释** : agent是否可升级 **约束限制** : 不涉及 **取值范围** : true或者false **默认取值** : 不涉及 
 
         :return: The agent_upgradable of this ListHostStatusRequest.
         :rtype: bool
@@ -1011,7 +1011,7 @@ class ListHostStatusRequest:
     def agent_upgradable(self, agent_upgradable):
         r"""Sets the agent_upgradable of this ListHostStatusRequest.
 
-        agent是否可升级
+        **参数解释** : agent是否可升级 **约束限制** : 不涉及 **取值范围** : true或者false **默认取值** : 不涉及 
 
         :param agent_upgradable: The agent_upgradable of this ListHostStatusRequest.
         :type agent_upgradable: bool
@@ -1022,7 +1022,7 @@ class ListHostStatusRequest:
     def install_mode(self):
         r"""Gets the install_mode of this ListHostStatusRequest.
 
-        是否安装模式场景
+        **参数解释** : 是否安装模式场景 **约束限制** : 不涉及 **取值范围** : true或者false **默认取值** : 不涉及 
 
         :return: The install_mode of this ListHostStatusRequest.
         :rtype: bool
@@ -1033,7 +1033,7 @@ class ListHostStatusRequest:
     def install_mode(self, install_mode):
         r"""Sets the install_mode of this ListHostStatusRequest.
 
-        是否安装模式场景
+        **参数解释** : 是否安装模式场景 **约束限制** : 不涉及 **取值范围** : true或者false **默认取值** : 不涉及 
 
         :param install_mode: The install_mode of this ListHostStatusRequest.
         :type install_mode: bool
@@ -1044,7 +1044,7 @@ class ListHostStatusRequest:
     def binding_key(self):
         r"""Gets the binding_key of this ListHostStatusRequest.
 
-        是否绑定DEW密钥
+        **参数解释** : 是否绑定DEW密钥 **约束限制** : 不涉及 **取值范围** : true或者false **默认取值** : 不涉及 
 
         :return: The binding_key of this ListHostStatusRequest.
         :rtype: bool
@@ -1055,7 +1055,7 @@ class ListHostStatusRequest:
     def binding_key(self, binding_key):
         r"""Sets the binding_key of this ListHostStatusRequest.
 
-        是否绑定DEW密钥
+        **参数解释** : 是否绑定DEW密钥 **约束限制** : 不涉及 **取值范围** : true或者false **默认取值** : 不涉及 
 
         :param binding_key: The binding_key of this ListHostStatusRequest.
         :type binding_key: bool
@@ -1066,7 +1066,7 @@ class ListHostStatusRequest:
     def protect_interrupt(self):
         r"""Gets the protect_interrupt of this ListHostStatusRequest.
 
-        是否防护中断
+        **参数解释** : 是否防护中断 **约束限制** : 不涉及 **取值范围** : true或者false **默认取值** : 不涉及 
 
         :return: The protect_interrupt of this ListHostStatusRequest.
         :rtype: bool
@@ -1077,7 +1077,7 @@ class ListHostStatusRequest:
     def protect_interrupt(self, protect_interrupt):
         r"""Sets the protect_interrupt of this ListHostStatusRequest.
 
-        是否防护中断
+        **参数解释** : 是否防护中断 **约束限制** : 不涉及 **取值范围** : true或者false **默认取值** : 不涉及 
 
         :param protect_interrupt: The protect_interrupt of this ListHostStatusRequest.
         :type protect_interrupt: bool
@@ -1088,7 +1088,7 @@ class ListHostStatusRequest:
     def incluster(self):
         r"""Gets the incluster of this ListHostStatusRequest.
 
-        是否集群内节点
+        **参数解释** : 是否集群内节点 **约束限制** : 不涉及 **取值范围** : true或者false **默认取值** : 不涉及 
 
         :return: The incluster of this ListHostStatusRequest.
         :rtype: bool
@@ -1099,7 +1099,7 @@ class ListHostStatusRequest:
     def incluster(self, incluster):
         r"""Sets the incluster of this ListHostStatusRequest.
 
-        是否集群内节点
+        **参数解释** : 是否集群内节点 **约束限制** : 不涉及 **取值范围** : true或者false **默认取值** : 不涉及 
 
         :param incluster: The incluster of this ListHostStatusRequest.
         :type incluster: bool
@@ -1110,7 +1110,7 @@ class ListHostStatusRequest:
     def protect_degradation(self):
         r"""Gets the protect_degradation of this ListHostStatusRequest.
 
-        是否防护降级
+        **参数解释** : 是否防护降级 **约束限制** : 不涉及 **取值范围** : true或者false **默认取值** : 不涉及 
 
         :return: The protect_degradation of this ListHostStatusRequest.
         :rtype: bool
@@ -1121,7 +1121,7 @@ class ListHostStatusRequest:
     def protect_degradation(self, protect_degradation):
         r"""Sets the protect_degradation of this ListHostStatusRequest.
 
-        是否防护降级
+        **参数解释** : 是否防护降级 **约束限制** : 不涉及 **取值范围** : true或者false **默认取值** : 不涉及 
 
         :param protect_degradation: The protect_degradation of this ListHostStatusRequest.
         :type protect_degradation: bool
@@ -1132,7 +1132,7 @@ class ListHostStatusRequest:
     def cluster_id(self):
         r"""Gets the cluster_id of this ListHostStatusRequest.
 
-        集群ID
+        **参数解释**: 集群ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :return: The cluster_id of this ListHostStatusRequest.
         :rtype: str
@@ -1143,7 +1143,7 @@ class ListHostStatusRequest:
     def cluster_id(self, cluster_id):
         r"""Sets the cluster_id of this ListHostStatusRequest.
 
-        集群ID
+        **参数解释**: 集群ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :param cluster_id: The cluster_id of this ListHostStatusRequest.
         :type cluster_id: str
@@ -1151,32 +1151,10 @@ class ListHostStatusRequest:
         self._cluster_id = cluster_id
 
     @property
-    def limit(self):
-        r"""Gets the limit of this ListHostStatusRequest.
-
-        每页显示数量
-
-        :return: The limit of this ListHostStatusRequest.
-        :rtype: int
-        """
-        return self._limit
-
-    @limit.setter
-    def limit(self, limit):
-        r"""Sets the limit of this ListHostStatusRequest.
-
-        每页显示数量
-
-        :param limit: The limit of this ListHostStatusRequest.
-        :type limit: int
-        """
-        self._limit = limit
-
-    @property
     def offset(self):
         r"""Gets the offset of this ListHostStatusRequest.
 
-        偏移量：指定返回记录的开始位置
+        **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 默认为0 
 
         :return: The offset of this ListHostStatusRequest.
         :rtype: int
@@ -1187,12 +1165,34 @@ class ListHostStatusRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListHostStatusRequest.
 
-        偏移量：指定返回记录的开始位置
+        **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 默认为0 
 
         :param offset: The offset of this ListHostStatusRequest.
         :type offset: int
         """
         self._offset = offset
+
+    @property
+    def limit(self):
+        r"""Gets the limit of this ListHostStatusRequest.
+
+        **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
+
+        :return: The limit of this ListHostStatusRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        r"""Sets the limit of this ListHostStatusRequest.
+
+        **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
+
+        :param limit: The limit of this ListHostStatusRequest.
+        :type limit: int
+        """
+        self._limit = limit
 
     def to_dict(self):
         """Returns the model properties as a dict"""

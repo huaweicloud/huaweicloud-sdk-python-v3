@@ -19,16 +19,18 @@ class SaveTtscVocabularyConfigsRequestBody:
     openapi_types = {
         'type': 'str',
         'key': 'str',
-        'value': 'str'
+        'value': 'str',
+        'group_id': 'str'
     }
 
     attribute_map = {
         'type': 'type',
         'key': 'key',
-        'value': 'value'
+        'value': 'value',
+        'group_id': 'group_id'
     }
 
-    def __init__(self, type=None, key=None, value=None):
+    def __init__(self, type=None, key=None, value=None, group_id=None):
         r"""SaveTtscVocabularyConfigsRequestBody
 
         The model defined in huaweicloud sdk
@@ -39,6 +41,8 @@ class SaveTtscVocabularyConfigsRequestBody:
         :type key: str
         :param value: 自定义读法。其中，音标的读法请参考[词典](https://www.youdao.com/)。
         :type value: str
+        :param group_id: 分组id
+        :type group_id: str
         """
         
         
@@ -46,6 +50,7 @@ class SaveTtscVocabularyConfigsRequestBody:
         self._type = None
         self._key = None
         self._value = None
+        self._group_id = None
         self.discriminator = None
 
         self.type = type
@@ -53,6 +58,8 @@ class SaveTtscVocabularyConfigsRequestBody:
             self.key = key
         if value is not None:
             self.value = value
+        if group_id is not None:
+            self.group_id = group_id
 
     @property
     def type(self):
@@ -119,6 +126,28 @@ class SaveTtscVocabularyConfigsRequestBody:
         :type value: str
         """
         self._value = value
+
+    @property
+    def group_id(self):
+        r"""Gets the group_id of this SaveTtscVocabularyConfigsRequestBody.
+
+        分组id
+
+        :return: The group_id of this SaveTtscVocabularyConfigsRequestBody.
+        :rtype: str
+        """
+        return self._group_id
+
+    @group_id.setter
+    def group_id(self, group_id):
+        r"""Sets the group_id of this SaveTtscVocabularyConfigsRequestBody.
+
+        分组id
+
+        :param group_id: The group_id of this SaveTtscVocabularyConfigsRequestBody.
+        :type group_id: str
+        """
+        self._group_id = group_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

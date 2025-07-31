@@ -34,11 +34,11 @@ class DisassociateResolverRuleRouterResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param router_id: 关联VPC的ID。
+        :param router_id: **参数解释：** 关联VPC的ID。 **取值范围：** 不涉及。
         :type router_id: str
-        :param router_region: 关联VPC所在的region。
+        :param router_region: **参数解释：** 关联VPC所在的region。 **取值范围：** 不涉及。
         :type router_region: str
-        :param status: 资源状态。
+        :param status: **参数解释：** 关联VPC的状态。 **取值范围：** 不涉及。
         :type status: str
         """
         
@@ -60,7 +60,7 @@ class DisassociateResolverRuleRouterResponse(SdkResponse):
     def router_id(self):
         r"""Gets the router_id of this DisassociateResolverRuleRouterResponse.
 
-        关联VPC的ID。
+        **参数解释：** 关联VPC的ID。 **取值范围：** 不涉及。
 
         :return: The router_id of this DisassociateResolverRuleRouterResponse.
         :rtype: str
@@ -71,7 +71,7 @@ class DisassociateResolverRuleRouterResponse(SdkResponse):
     def router_id(self, router_id):
         r"""Sets the router_id of this DisassociateResolverRuleRouterResponse.
 
-        关联VPC的ID。
+        **参数解释：** 关联VPC的ID。 **取值范围：** 不涉及。
 
         :param router_id: The router_id of this DisassociateResolverRuleRouterResponse.
         :type router_id: str
@@ -82,7 +82,7 @@ class DisassociateResolverRuleRouterResponse(SdkResponse):
     def router_region(self):
         r"""Gets the router_region of this DisassociateResolverRuleRouterResponse.
 
-        关联VPC所在的region。
+        **参数解释：** 关联VPC所在的region。 **取值范围：** 不涉及。
 
         :return: The router_region of this DisassociateResolverRuleRouterResponse.
         :rtype: str
@@ -93,7 +93,7 @@ class DisassociateResolverRuleRouterResponse(SdkResponse):
     def router_region(self, router_region):
         r"""Sets the router_region of this DisassociateResolverRuleRouterResponse.
 
-        关联VPC所在的region。
+        **参数解释：** 关联VPC所在的region。 **取值范围：** 不涉及。
 
         :param router_region: The router_region of this DisassociateResolverRuleRouterResponse.
         :type router_region: str
@@ -104,7 +104,7 @@ class DisassociateResolverRuleRouterResponse(SdkResponse):
     def status(self):
         r"""Gets the status of this DisassociateResolverRuleRouterResponse.
 
-        资源状态。
+        **参数解释：** 关联VPC的状态。 **取值范围：** 不涉及。
 
         :return: The status of this DisassociateResolverRuleRouterResponse.
         :rtype: str
@@ -115,7 +115,7 @@ class DisassociateResolverRuleRouterResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this DisassociateResolverRuleRouterResponse.
 
-        资源状态。
+        **参数解释：** 关联VPC的状态。 **取值范围：** 不涉及。
 
         :param status: The status of this DisassociateResolverRuleRouterResponse.
         :type status: str

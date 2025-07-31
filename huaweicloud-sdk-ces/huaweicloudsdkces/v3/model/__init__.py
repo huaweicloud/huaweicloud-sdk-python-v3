@@ -15,3 +15,4 @@ from huaweicloudsdkces.v3.model.list_agent_invocations_response import ListAgent
 from huaweicloudsdkces.v3.model.list_agent_status_request import ListAgentStatusRequest
 from huaweicloudsdkces.v3.model.list_agent_status_request_body import ListAgentStatusRequestBody
 from huaweicloudsdkces.v3.model.list_agent_status_response import ListAgentStatusResponse
+from huaweicloudsdkces.v3.model.remote_install_host_info import RemoteInstallHostInfo

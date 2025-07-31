@@ -29,7 +29,7 @@ class SetRecordSetsStatusRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param status: 解析记录状态。  取值范围：  ENABLE：启用解析 DISABLE：暂停解析。
+        :param status: **参数解释：** 解析记录状态。 **取值范围：** - ENABLE：启用解析 - DISABLE：暂停解析
         :type status: str
         """
         
@@ -44,7 +44,7 @@ class SetRecordSetsStatusRequestBody:
     def status(self):
         r"""Gets the status of this SetRecordSetsStatusRequestBody.
 
-        解析记录状态。  取值范围：  ENABLE：启用解析 DISABLE：暂停解析。
+        **参数解释：** 解析记录状态。 **取值范围：** - ENABLE：启用解析 - DISABLE：暂停解析
 
         :return: The status of this SetRecordSetsStatusRequestBody.
         :rtype: str
@@ -55,7 +55,7 @@ class SetRecordSetsStatusRequestBody:
     def status(self, status):
         r"""Sets the status of this SetRecordSetsStatusRequestBody.
 
-        解析记录状态。  取值范围：  ENABLE：启用解析 DISABLE：暂停解析。
+        **参数解释：** 解析记录状态。 **取值范围：** - ENABLE：启用解析 - DISABLE：暂停解析
 
         :param status: The status of this SetRecordSetsStatusRequestBody.
         :type status: str
