@@ -33,11 +33,11 @@ class QueryResourcesRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param without_any_tag: 
+        :param without_any_tag: 该字段为true时查询所有不带标签的资源，此时忽略 “tags”字段。该字段为false或者未提供该参数时，该条件不生效，即返回所有资源或按\&quot;tags\&quot;，\&quot;matches\&quot;等条件过滤
         :type without_any_tag: bool
-        :param tags: 
+        :param tags: 标签列表
         :type tags: list[:class:`huaweicloudsdkvpn.v5.Tag`]
-        :param matches: 
+        :param matches: 搜索字段，包含key和value。key为要匹配的字段，如resource_name等。value为匹配的值。key为固定字典值
         :type matches: list[:class:`huaweicloudsdkvpn.v5.Match`]
         """
         
@@ -59,6 +59,8 @@ class QueryResourcesRequestBody:
     def without_any_tag(self):
         r"""Gets the without_any_tag of this QueryResourcesRequestBody.
 
+        该字段为true时查询所有不带标签的资源，此时忽略 “tags”字段。该字段为false或者未提供该参数时，该条件不生效，即返回所有资源或按\"tags\"，\"matches\"等条件过滤
+
         :return: The without_any_tag of this QueryResourcesRequestBody.
         :rtype: bool
         """
@@ -67,6 +69,8 @@ class QueryResourcesRequestBody:
     @without_any_tag.setter
     def without_any_tag(self, without_any_tag):
         r"""Sets the without_any_tag of this QueryResourcesRequestBody.
+
+        该字段为true时查询所有不带标签的资源，此时忽略 “tags”字段。该字段为false或者未提供该参数时，该条件不生效，即返回所有资源或按\"tags\"，\"matches\"等条件过滤
 
         :param without_any_tag: The without_any_tag of this QueryResourcesRequestBody.
         :type without_any_tag: bool
@@ -77,6 +81,8 @@ class QueryResourcesRequestBody:
     def tags(self):
         r"""Gets the tags of this QueryResourcesRequestBody.
 
+        标签列表
+
         :return: The tags of this QueryResourcesRequestBody.
         :rtype: list[:class:`huaweicloudsdkvpn.v5.Tag`]
         """
@@ -85,6 +91,8 @@ class QueryResourcesRequestBody:
     @tags.setter
     def tags(self, tags):
         r"""Sets the tags of this QueryResourcesRequestBody.
+
+        标签列表
 
         :param tags: The tags of this QueryResourcesRequestBody.
         :type tags: list[:class:`huaweicloudsdkvpn.v5.Tag`]
@@ -95,6 +103,8 @@ class QueryResourcesRequestBody:
     def matches(self):
         r"""Gets the matches of this QueryResourcesRequestBody.
 
+        搜索字段，包含key和value。key为要匹配的字段，如resource_name等。value为匹配的值。key为固定字典值
+
         :return: The matches of this QueryResourcesRequestBody.
         :rtype: list[:class:`huaweicloudsdkvpn.v5.Match`]
         """
@@ -103,6 +113,8 @@ class QueryResourcesRequestBody:
     @matches.setter
     def matches(self, matches):
         r"""Sets the matches of this QueryResourcesRequestBody.
+
+        搜索字段，包含key和value。key为要匹配的字段，如resource_name等。value为匹配的值。key为固定字典值
 
         :param matches: The matches of this QueryResourcesRequestBody.
         :type matches: list[:class:`huaweicloudsdkvpn.v5.Match`]

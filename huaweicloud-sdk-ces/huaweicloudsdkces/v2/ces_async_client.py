@@ -2048,8 +2048,6 @@ class CesAsyncClient(Client):
             query_params.append(('template_type', local_var_params['template_type']))
         if 'template_name' in local_var_params:
             query_params.append(('template_name', local_var_params['template_name']))
-        if 'product_name' in local_var_params:
-            query_params.append(('product_name', local_var_params['product_name']))
 
         header_params = {}
 

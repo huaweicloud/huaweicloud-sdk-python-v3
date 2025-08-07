@@ -67,7 +67,7 @@ class ShowServerResponse:
         :type tunnel_protocol: str
         :param server_certificate: 
         :type server_certificate: :class:`huaweicloudsdkvpn.v5.ShowServerResponseServerCertificate`
-        :param client_ca_certificates: 
+        :param client_ca_certificates: 客户端CA证书列表
         :type client_ca_certificates: list[:class:`huaweicloudsdkvpn.v5.QueryClientCaCertificateBody`]
         :param ssl_options: 
         :type ssl_options: :class:`huaweicloudsdkvpn.v5.ShowServerResponseSslOptions`
@@ -279,6 +279,8 @@ class ShowServerResponse:
     def client_ca_certificates(self):
         r"""Gets the client_ca_certificates of this ShowServerResponse.
 
+        客户端CA证书列表
+
         :return: The client_ca_certificates of this ShowServerResponse.
         :rtype: list[:class:`huaweicloudsdkvpn.v5.QueryClientCaCertificateBody`]
         """
@@ -287,6 +289,8 @@ class ShowServerResponse:
     @client_ca_certificates.setter
     def client_ca_certificates(self, client_ca_certificates):
         r"""Sets the client_ca_certificates of this ShowServerResponse.
+
+        客户端CA证书列表
 
         :param client_ca_certificates: The client_ca_certificates of this ShowServerResponse.
         :type client_ca_certificates: list[:class:`huaweicloudsdkvpn.v5.QueryClientCaCertificateBody`]

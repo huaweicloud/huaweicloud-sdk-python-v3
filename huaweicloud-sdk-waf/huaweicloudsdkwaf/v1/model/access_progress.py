@@ -31,9 +31,9 @@ class AccessProgress:
 
         The model defined in huaweicloud sdk
 
-        :param step: 步骤   - 1: 指回源IP加白   - 2: 指本地验证   - 3：指修改DNS解析
+        :param step: **参数解释：** 接入步骤（1:回源IP加白步骤，2:本地验证步骤 3:修改DNS解析步骤） **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type step: int
-        :param status: 状态，0：未完成这个步骤；1：已完成这个状态”
+        :param status: **参数解释：** 完成情况（0:未完成，1:完成，2:跳过） **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type status: int
         """
         
@@ -52,7 +52,7 @@ class AccessProgress:
     def step(self):
         r"""Gets the step of this AccessProgress.
 
-        步骤   - 1: 指回源IP加白   - 2: 指本地验证   - 3：指修改DNS解析
+        **参数解释：** 接入步骤（1:回源IP加白步骤，2:本地验证步骤 3:修改DNS解析步骤） **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The step of this AccessProgress.
         :rtype: int
@@ -63,7 +63,7 @@ class AccessProgress:
     def step(self, step):
         r"""Sets the step of this AccessProgress.
 
-        步骤   - 1: 指回源IP加白   - 2: 指本地验证   - 3：指修改DNS解析
+        **参数解释：** 接入步骤（1:回源IP加白步骤，2:本地验证步骤 3:修改DNS解析步骤） **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param step: The step of this AccessProgress.
         :type step: int
@@ -74,7 +74,7 @@ class AccessProgress:
     def status(self):
         r"""Gets the status of this AccessProgress.
 
-        状态，0：未完成这个步骤；1：已完成这个状态”
+        **参数解释：** 完成情况（0:未完成，1:完成，2:跳过） **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The status of this AccessProgress.
         :rtype: int
@@ -85,7 +85,7 @@ class AccessProgress:
     def status(self, status):
         r"""Sets the status of this AccessProgress.
 
-        状态，0：未完成这个步骤；1：已完成这个状态”
+        **参数解释：** 完成情况（0:未完成，1:完成，2:跳过） **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param status: The status of this AccessProgress.
         :type status: int

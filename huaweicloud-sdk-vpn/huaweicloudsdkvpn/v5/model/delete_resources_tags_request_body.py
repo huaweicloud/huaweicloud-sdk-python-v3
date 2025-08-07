@@ -29,7 +29,7 @@ class DeleteResourcesTagsRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param tags: 
+        :param tags: 资源标签
         :type tags: list[:class:`huaweicloudsdkvpn.v5.ResourceTag`]
         """
         
@@ -44,6 +44,8 @@ class DeleteResourcesTagsRequestBody:
     def tags(self):
         r"""Gets the tags of this DeleteResourcesTagsRequestBody.
 
+        资源标签
+
         :return: The tags of this DeleteResourcesTagsRequestBody.
         :rtype: list[:class:`huaweicloudsdkvpn.v5.ResourceTag`]
         """
@@ -52,6 +54,8 @@ class DeleteResourcesTagsRequestBody:
     @tags.setter
     def tags(self, tags):
         r"""Sets the tags of this DeleteResourcesTagsRequestBody.
+
+        资源标签
 
         :param tags: The tags of this DeleteResourcesTagsRequestBody.
         :type tags: list[:class:`huaweicloudsdkvpn.v5.ResourceTag`]

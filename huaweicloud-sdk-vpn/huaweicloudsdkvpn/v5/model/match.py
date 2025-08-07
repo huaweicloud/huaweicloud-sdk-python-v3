@@ -31,9 +31,9 @@ class Match:
 
         The model defined in huaweicloud sdk
 
-        :param key: 
+        :param key: 匹配的键
         :type key: str
-        :param value: 
+        :param value: 匹配的值
         :type value: str
         """
         
@@ -50,6 +50,8 @@ class Match:
     def key(self):
         r"""Gets the key of this Match.
 
+        匹配的键
+
         :return: The key of this Match.
         :rtype: str
         """
@@ -58,6 +60,8 @@ class Match:
     @key.setter
     def key(self, key):
         r"""Sets the key of this Match.
+
+        匹配的键
 
         :param key: The key of this Match.
         :type key: str
@@ -68,6 +72,8 @@ class Match:
     def value(self):
         r"""Gets the value of this Match.
 
+        匹配的值
+
         :return: The value of this Match.
         :rtype: str
         """
@@ -76,6 +82,8 @@ class Match:
     @value.setter
     def value(self, value):
         r"""Sets the value of this Match.
+
+        匹配的值
 
         :param value: The value of this Match.
         :type value: str

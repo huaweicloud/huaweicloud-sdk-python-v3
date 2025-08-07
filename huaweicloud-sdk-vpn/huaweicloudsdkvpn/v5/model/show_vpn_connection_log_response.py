@@ -34,11 +34,11 @@ class ShowVpnConnectionLogResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param logs: 
+        :param logs: 日志
         :type logs: list[:class:`huaweicloudsdkvpn.v5.Log`]
         :param request_id: 请求ID
         :type request_id: str
-        :param header_response_token: 
+        :param header_response_token: 响应头令牌
         :type header_response_token: str
         """
         
@@ -60,6 +60,8 @@ class ShowVpnConnectionLogResponse(SdkResponse):
     def logs(self):
         r"""Gets the logs of this ShowVpnConnectionLogResponse.
 
+        日志
+
         :return: The logs of this ShowVpnConnectionLogResponse.
         :rtype: list[:class:`huaweicloudsdkvpn.v5.Log`]
         """
@@ -68,6 +70,8 @@ class ShowVpnConnectionLogResponse(SdkResponse):
     @logs.setter
     def logs(self, logs):
         r"""Sets the logs of this ShowVpnConnectionLogResponse.
+
+        日志
 
         :param logs: The logs of this ShowVpnConnectionLogResponse.
         :type logs: list[:class:`huaweicloudsdkvpn.v5.Log`]
@@ -100,6 +104,8 @@ class ShowVpnConnectionLogResponse(SdkResponse):
     def header_response_token(self):
         r"""Gets the header_response_token of this ShowVpnConnectionLogResponse.
 
+        响应头令牌
+
         :return: The header_response_token of this ShowVpnConnectionLogResponse.
         :rtype: str
         """
@@ -108,6 +114,8 @@ class ShowVpnConnectionLogResponse(SdkResponse):
     @header_response_token.setter
     def header_response_token(self, header_response_token):
         r"""Sets the header_response_token of this ShowVpnConnectionLogResponse.
+
+        响应头令牌
 
         :param header_response_token: The header_response_token of this ShowVpnConnectionLogResponse.
         :type header_response_token: str

@@ -60,8 +60,8 @@ from huaweicloudsdkclouddc.v1.model.list_events_request import ListEventsRequest
 from huaweicloudsdkclouddc.v1.model.list_events_response import ListEventsResponse
 from huaweicloudsdkclouddc.v1.model.list_i_dcs_request import ListIDcsRequest
 from huaweicloudsdkclouddc.v1.model.list_i_dcs_response import ListIDcsResponse
-from huaweicloudsdkclouddc.v1.model.list_i_rack_request import ListIRackRequest
-from huaweicloudsdkclouddc.v1.model.list_i_rack_response import ListIRackResponse
+from huaweicloudsdkclouddc.v1.model.list_i_racks_request import ListIRacksRequest
+from huaweicloudsdkclouddc.v1.model.list_i_racks_response import ListIRacksResponse
 from huaweicloudsdkclouddc.v1.model.list_instances_request import ListInstancesRequest
 from huaweicloudsdkclouddc.v1.model.list_instances_response import ListInstancesResponse
 from huaweicloudsdkclouddc.v1.model.list_servers_request import ListServersRequest

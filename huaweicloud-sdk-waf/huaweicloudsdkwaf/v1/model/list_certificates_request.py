@@ -22,7 +22,8 @@ class ListCertificatesRequest:
         'pagesize': 'int',
         'name': 'str',
         'host': 'bool',
-        'exp_status': 'int'
+        'exp_status': 'int',
+        'query_scm': 'bool'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class ListCertificatesRequest:
         'pagesize': 'pagesize',
         'name': 'name',
         'host': 'host',
-        'exp_status': 'exp_status'
+        'exp_status': 'exp_status',
+        'query_scm': 'query_scm'
     }
 
-    def __init__(self, enterprise_project_id=None, page=None, pagesize=None, name=None, host=None, exp_status=None):
+    def __init__(self, enterprise_project_id=None, page=None, pagesize=None, name=None, host=None, exp_status=None, query_scm=None):
         r"""ListCertificatesRequest
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class ListCertificatesRequest:
         :type host: bool
         :param exp_status: 证书过期状态，0-未过期，1-已过期，2-即将过期（证书将在一个月内过期）
         :type exp_status: int
+        :param query_scm: 查询结果的证书来源服务是否包括SCM服务，值为true或者false。
+        :type query_scm: bool
         """
         
         
@@ -61,6 +65,7 @@ class ListCertificatesRequest:
         self._name = None
         self._host = None
         self._exp_status = None
+        self._query_scm = None
         self.discriminator = None
 
         if enterprise_project_id is not None:
@@ -75,6 +80,8 @@ class ListCertificatesRequest:
             self.host = host
         if exp_status is not None:
             self.exp_status = exp_status
+        if query_scm is not None:
+            self.query_scm = query_scm
 
     @property
     def enterprise_project_id(self):
@@ -207,6 +214,28 @@ class ListCertificatesRequest:
         :type exp_status: int
         """
         self._exp_status = exp_status
+
+    @property
+    def query_scm(self):
+        r"""Gets the query_scm of this ListCertificatesRequest.
+
+        查询结果的证书来源服务是否包括SCM服务，值为true或者false。
+
+        :return: The query_scm of this ListCertificatesRequest.
+        :rtype: bool
+        """
+        return self._query_scm
+
+    @query_scm.setter
+    def query_scm(self, query_scm):
+        r"""Sets the query_scm of this ListCertificatesRequest.
+
+        查询结果的证书来源服务是否包括SCM服务，值为true或者false。
+
+        :param query_scm: The query_scm of this ListCertificatesRequest.
+        :type query_scm: bool
+        """
+        self._query_scm = query_scm
 
     def to_dict(self):
         """Returns the model properties as a dict"""

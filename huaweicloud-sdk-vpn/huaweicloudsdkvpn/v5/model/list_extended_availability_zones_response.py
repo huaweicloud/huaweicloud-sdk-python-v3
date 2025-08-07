@@ -32,7 +32,7 @@ class ListExtendedAvailabilityZonesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param availability_zones: 
+        :param availability_zones: 可用区列表
         :type availability_zones: list[:class:`huaweicloudsdkvpn.v5.ExtendedAvailabilityZone`]
         :param request_id: 请求id
         :type request_id: str
@@ -53,6 +53,8 @@ class ListExtendedAvailabilityZonesResponse(SdkResponse):
     def availability_zones(self):
         r"""Gets the availability_zones of this ListExtendedAvailabilityZonesResponse.
 
+        可用区列表
+
         :return: The availability_zones of this ListExtendedAvailabilityZonesResponse.
         :rtype: list[:class:`huaweicloudsdkvpn.v5.ExtendedAvailabilityZone`]
         """
@@ -61,6 +63,8 @@ class ListExtendedAvailabilityZonesResponse(SdkResponse):
     @availability_zones.setter
     def availability_zones(self, availability_zones):
         r"""Sets the availability_zones of this ListExtendedAvailabilityZonesResponse.
+
+        可用区列表
 
         :param availability_zones: The availability_zones of this ListExtendedAvailabilityZonesResponse.
         :type availability_zones: list[:class:`huaweicloudsdkvpn.v5.ExtendedAvailabilityZone`]

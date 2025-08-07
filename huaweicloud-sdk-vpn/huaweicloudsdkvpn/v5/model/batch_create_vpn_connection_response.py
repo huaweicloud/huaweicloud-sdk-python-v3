@@ -32,7 +32,7 @@ class BatchCreateVpnConnectionResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param vpn_connections: 
+        :param vpn_connections: VPN连接对象数组
         :type vpn_connections: list[:class:`huaweicloudsdkvpn.v5.CreateResponseVpnConnection`]
         :param request_id: 请求ID
         :type request_id: str
@@ -53,6 +53,8 @@ class BatchCreateVpnConnectionResponse(SdkResponse):
     def vpn_connections(self):
         r"""Gets the vpn_connections of this BatchCreateVpnConnectionResponse.
 
+        VPN连接对象数组
+
         :return: The vpn_connections of this BatchCreateVpnConnectionResponse.
         :rtype: list[:class:`huaweicloudsdkvpn.v5.CreateResponseVpnConnection`]
         """
@@ -61,6 +63,8 @@ class BatchCreateVpnConnectionResponse(SdkResponse):
     @vpn_connections.setter
     def vpn_connections(self, vpn_connections):
         r"""Sets the vpn_connections of this BatchCreateVpnConnectionResponse.
+
+        VPN连接对象数组
 
         :param vpn_connections: The vpn_connections of this BatchCreateVpnConnectionResponse.
         :type vpn_connections: list[:class:`huaweicloudsdkvpn.v5.CreateResponseVpnConnection`]

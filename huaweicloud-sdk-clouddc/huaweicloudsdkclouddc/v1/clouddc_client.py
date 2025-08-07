@@ -1003,31 +1003,31 @@ class CloudDCClient(Client):
 
         return http_info
 
-    def list_i_rack(self, request):
+    def list_i_racks(self, request):
         r"""查询 iRack 实例列表
 
         用户下单后，用户上报iRack设备列表。该 API 可以查看 iRack 实例与关联imetal数量列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
-        :param request: Request instance for ListIRack
-        :type request: :class:`huaweicloudsdkclouddc.v1.ListIRackRequest`
-        :rtype: :class:`huaweicloudsdkclouddc.v1.ListIRackResponse`
+        :param request: Request instance for ListIRacks
+        :type request: :class:`huaweicloudsdkclouddc.v1.ListIRacksRequest`
+        :rtype: :class:`huaweicloudsdkclouddc.v1.ListIRacksResponse`
         """
-        http_info = self._list_i_rack_http_info(request)
+        http_info = self._list_i_racks_http_info(request)
         return self._call_api(**http_info)
 
-    def list_i_rack_invoker(self, request):
-        http_info = self._list_i_rack_http_info(request)
+    def list_i_racks_invoker(self, request):
+        http_info = self._list_i_racks_http_info(request)
         return SyncInvoker(self, http_info)
 
     @classmethod
-    def _list_i_rack_http_info(cls, request):
+    def _list_i_racks_http_info(cls, request):
         http_info = {
             "method": "GET",
             "resource_path": "/v1/{project_id}/iracks",
             "request_type": request.__class__.__name__,
-            "response_type": "ListIRackResponse"
+            "response_type": "ListIRacksResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}

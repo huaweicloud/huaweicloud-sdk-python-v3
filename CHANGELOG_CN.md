@@ -1,3 +1,199 @@
+# 3.1.161 2025-08-07
+
+### HuaweiCloud SDK AOM
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除接口`CreateFastExecuteScript`
+
+### HuaweiCloud SDK CES
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListAlarmTemplates**
+    - 请求参数变更
+      - `- product_name`
+  - **CreateOneClickAlarm**
+    - 请求参数变更
+      - `- one_click_update_alarms.type: enum value [EVENT.SYS,EVENT.CUSTOM,DNSHealthCheck,RESOURCE_GROUP,MULTI_INSTANCE,ALL_INSTANCE]`
+
+### HuaweiCloud SDK EPS
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持以下接口：
+    - `ListMigrationRecord`
+    - `ListResourceMapping`
+    - `ShowEpConfigs`
+    - `ShowAssociatedResources`
+    - `DeleteEnterpriseProject`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK IAM
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowUser**
+    - 响应参数变更
+      - `+ user.last_pwd_auth_time`
+
+### HuaweiCloud SDK Organizations
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持接口`CreateResourceAccount`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateAccount**
+    - 响应参数变更
+      - `+ create_account_status.failure_detail_msg`
+  - **ListCreateAccountStatuses**
+    - 响应参数变更
+      - `+ create_account_statuses.failure_detail_msg`
+  - **ShowCreateAccountStatus**
+    - 响应参数变更
+      - `+ create_account_status.failure_detail_msg`
+
+### HuaweiCloud SDK RAM
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持接口`SearchDistinctSharedResources`、`SearchDistinctPrincipals`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK RDS
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持以下接口：
+    - `ListScheduleTasks`
+    - `ListTasks`
+    - `ListBusinessPartners`
+    - `ListMarketplaceEngineProducts`
+    - `ResetViewSqlStatistics`
+    - `ListSqlStatistics`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **StartInstanceRestartAction**
+    - 请求参数变更
+      - `+ restart.restart_server`
+      - `+ restart.forcible`
+      - `+ restart.delay`
+      - `* restart: object -> object<RestartConfiguration>`
+  - **ListBackupTransfers**
+    - 响应参数变更
+      - `+ transfer_list.type`
+
+### HuaweiCloud SDK SWR
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowShareFeatureGates**
+    - 响应参数变更
+      - `+ enable_resource`
+      - `+ enable_authorization_token`
+  - **ListRepoDetails**
+    - 请求参数变更
+      - `* marker: string -> int32`
+    - 响应参数变更
+      - `+ repos.namespace_name`
+      - `- repos.namespace`
+  - **ListSharedRepoDetails**
+    - 响应参数变更
+      - `+ repos.namespace_name`
+      - `- repos.namespace`
+  - **ListRetentionHistories**
+    - 请求参数变更
+      - `+ limit`
+      - `+ offset`
+
+### HuaweiCloud SDK VPCEP
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListEndpointInfoDetails**
+    - 响应参数变更
+      - `+ policy_statement.Sid`
+  - **UpdateEndpointWhite**
+    - 响应参数变更
+      - `+ policy_statement.Sid`
+  - **UpdateEndpointPolicy**
+    - 请求参数变更
+      - `+ policy_statement.Sid`
+    - 响应参数变更
+      - `+ policy_statement.Sid`
+  - **DeleteEndpointPolicy**
+    - 响应参数变更
+      - `+ policy_statement.Sid`
+  - **CreateEndpoint**
+    - 请求参数变更
+      - `+ policy_statement.Sid`
+    - 响应参数变更
+      - `+ policy_statement.Sid`
+  - **ListEndpoints**
+    - 响应参数变更
+      - `+ endpoints.policy_statement.Sid`
+
+### HuaweiCloud SDK WAF
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持以下接口：
+    - `ConfirmThreatMap`
+    - `ListIpReputationRules`
+    - `ConfirmPolicyAntileakageMap`
+    - `ConfirmPolicyIpReputationMap`
+    - `CheckAgency`
+    - `UpdatePremiumInstance`
+    - `UpdatePremiumHostAccessStatus`
+    - `UpdateHostAccessStatusOfUnderline`
+    - `ListProtectableResources`
+    - `UpdateAccessProgress`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListCertificates**
+    - 请求参数变更
+      - `+ query_scm`
+
 # 3.1.160 2025-07-31
 
 ### HuaweiCloud SDK BSSINTL

@@ -12,6 +12,7 @@ from huaweicloudsdkrds.v3.model.add_log_configs import AddLogConfigs
 from huaweicloudsdkrds.v3.model.add_msdtc_request_body import AddMsdtcRequestBody
 from huaweicloudsdkrds.v3.model.add_postgresql_hba_conf_request import AddPostgresqlHbaConfRequest
 from huaweicloudsdkrds.v3.model.add_postgresql_hba_conf_response import AddPostgresqlHbaConfResponse
+from huaweicloudsdkrds.v3.model.agreement import Agreement
 from huaweicloudsdkrds.v3.model.allow_db_privilege_request import AllowDbPrivilegeRequest
 from huaweicloudsdkrds.v3.model.allow_db_privilege_response import AllowDbPrivilegeResponse
 from huaweicloudsdkrds.v3.model.allow_db_user_privilege_request import AllowDbUserPrivilegeRequest
@@ -55,6 +56,7 @@ from huaweicloudsdkrds.v3.model.batch_tag_del_action_request import BatchTagDelA
 from huaweicloudsdkrds.v3.model.batch_tag_del_action_response import BatchTagDelActionResponse
 from huaweicloudsdkrds.v3.model.bind_eip_request import BindEipRequest
 from huaweicloudsdkrds.v3.model.binlog_clear_policy_request_body import BinlogClearPolicyRequestBody
+from huaweicloudsdkrds.v3.model.business_partner import BusinessPartner
 from huaweicloudsdkrds.v3.model.change_failover_mode_request import ChangeFailoverModeRequest
 from huaweicloudsdkrds.v3.model.change_failover_mode_response import ChangeFailoverModeResponse
 from huaweicloudsdkrds.v3.model.change_failover_strategy_request import ChangeFailoverStrategyRequest
@@ -265,6 +267,8 @@ from huaweicloudsdkrds.v3.model.list_backup_transfers_request import ListBackupT
 from huaweicloudsdkrds.v3.model.list_backup_transfers_response import ListBackupTransfersResponse
 from huaweicloudsdkrds.v3.model.list_backups_request import ListBackupsRequest
 from huaweicloudsdkrds.v3.model.list_backups_response import ListBackupsResponse
+from huaweicloudsdkrds.v3.model.list_business_partners_request import ListBusinessPartnersRequest
+from huaweicloudsdkrds.v3.model.list_business_partners_response import ListBusinessPartnersResponse
 from huaweicloudsdkrds.v3.model.list_collations_request import ListCollationsRequest
 from huaweicloudsdkrds.v3.model.list_collations_response import ListCollationsResponse
 from huaweicloudsdkrds.v3.model.list_configurations_request import ListConfigurationsRequest
@@ -316,6 +320,8 @@ from huaweicloudsdkrds.v3.model.list_job_info_request import ListJobInfoRequest
 from huaweicloudsdkrds.v3.model.list_job_info_response import ListJobInfoResponse
 from huaweicloudsdkrds.v3.model.list_log_lts_configs_request import ListLogLtsConfigsRequest
 from huaweicloudsdkrds.v3.model.list_log_lts_configs_response import ListLogLtsConfigsResponse
+from huaweicloudsdkrds.v3.model.list_marketplace_engine_products_request import ListMarketplaceEngineProductsRequest
+from huaweicloudsdkrds.v3.model.list_marketplace_engine_products_response import ListMarketplaceEngineProductsResponse
 from huaweicloudsdkrds.v3.model.list_msdtc_hosts_request import ListMsdtcHostsRequest
 from huaweicloudsdkrds.v3.model.list_msdtc_hosts_response import ListMsdtcHostsResponse
 from huaweicloudsdkrds.v3.model.list_off_site_backups_request import ListOffSiteBackupsRequest
@@ -352,6 +358,8 @@ from huaweicloudsdkrds.v3.model.list_recycle_instances_request import ListRecycl
 from huaweicloudsdkrds.v3.model.list_recycle_instances_response import ListRecycleInstancesResponse
 from huaweicloudsdkrds.v3.model.list_restore_times_request import ListRestoreTimesRequest
 from huaweicloudsdkrds.v3.model.list_restore_times_response import ListRestoreTimesResponse
+from huaweicloudsdkrds.v3.model.list_schedule_tasks_request import ListScheduleTasksRequest
+from huaweicloudsdkrds.v3.model.list_schedule_tasks_response import ListScheduleTasksResponse
 from huaweicloudsdkrds.v3.model.list_share_backups_request import ListShareBackupsRequest
 from huaweicloudsdkrds.v3.model.list_share_backups_response import ListShareBackupsResponse
 from huaweicloudsdkrds.v3.model.list_simplified_instances_request import ListSimplifiedInstancesRequest
@@ -370,6 +378,8 @@ from huaweicloudsdkrds.v3.model.list_slowlog_statistics_request import ListSlowl
 from huaweicloudsdkrds.v3.model.list_slowlog_statistics_response import ListSlowlogStatisticsResponse
 from huaweicloudsdkrds.v3.model.list_sql_limit_request import ListSqlLimitRequest
 from huaweicloudsdkrds.v3.model.list_sql_limit_response import ListSqlLimitResponse
+from huaweicloudsdkrds.v3.model.list_sql_statistics_request import ListSqlStatisticsRequest
+from huaweicloudsdkrds.v3.model.list_sql_statistics_response import ListSqlStatisticsResponse
 from huaweicloudsdkrds.v3.model.list_sqlserver_databases_request import ListSqlserverDatabasesRequest
 from huaweicloudsdkrds.v3.model.list_sqlserver_databases_response import ListSqlserverDatabasesResponse
 from huaweicloudsdkrds.v3.model.list_sqlserver_db_users_request import ListSqlserverDbUsersRequest
@@ -378,6 +388,8 @@ from huaweicloudsdkrds.v3.model.list_ssl_cert_download_link_request import ListS
 from huaweicloudsdkrds.v3.model.list_ssl_cert_download_link_response import ListSslCertDownloadLinkResponse
 from huaweicloudsdkrds.v3.model.list_storage_types_request import ListStorageTypesRequest
 from huaweicloudsdkrds.v3.model.list_storage_types_response import ListStorageTypesResponse
+from huaweicloudsdkrds.v3.model.list_tasks_request import ListTasksRequest
+from huaweicloudsdkrds.v3.model.list_tasks_response import ListTasksResponse
 from huaweicloudsdkrds.v3.model.list_update_backup_enhance_policy_request import ListUpdateBackupEnhancePolicyRequest
 from huaweicloudsdkrds.v3.model.list_update_backup_enhance_policy_response import ListUpdateBackupEnhancePolicyResponse
 from huaweicloudsdkrds.v3.model.list_upgrade_histories_request import ListUpgradeHistoriesRequest
@@ -388,6 +400,7 @@ from huaweicloudsdkrds.v3.model.list_xel_log_response_result import ListXelLogRe
 from huaweicloudsdkrds.v3.model.list_xellog_files_request import ListXellogFilesRequest
 from huaweicloudsdkrds.v3.model.list_xellog_files_response import ListXellogFilesResponse
 from huaweicloudsdkrds.v3.model.log_replay_database_req import LogReplayDatabaseReq
+from huaweicloudsdkrds.v3.model.marketplace_engine_product import MarketplaceEngineProduct
 from huaweicloudsdkrds.v3.model.master_instance import MasterInstance
 from huaweicloudsdkrds.v3.model.migrate_follower_request import MigrateFollowerRequest
 from huaweicloudsdkrds.v3.model.migrate_follower_response import MigrateFollowerResponse
@@ -464,10 +477,13 @@ from huaweicloudsdkrds.v3.model.reduce_volume_request_body import ReduceVolumeRe
 from huaweicloudsdkrds.v3.model.related_instance import RelatedInstance
 from huaweicloudsdkrds.v3.model.reset_pwd_request import ResetPwdRequest
 from huaweicloudsdkrds.v3.model.reset_pwd_response import ResetPwdResponse
+from huaweicloudsdkrds.v3.model.reset_view_sql_statistics_request import ResetViewSqlStatisticsRequest
+from huaweicloudsdkrds.v3.model.reset_view_sql_statistics_response import ResetViewSqlStatisticsResponse
 from huaweicloudsdkrds.v3.model.resize_flavor_object import ResizeFlavorObject
 from huaweicloudsdkrds.v3.model.resize_flavor_request import ResizeFlavorRequest
 from huaweicloudsdkrds.v3.model.resource_tag import ResourceTag
 from huaweicloudsdkrds.v3.model.resources import Resources
+from huaweicloudsdkrds.v3.model.restart_configuration import RestartConfiguration
 from huaweicloudsdkrds.v3.model.restore_database_info import RestoreDatabaseInfo
 from huaweicloudsdkrds.v3.model.restore_database_instance import RestoreDatabaseInstance
 from huaweicloudsdkrds.v3.model.restore_databases_info import RestoreDatabasesInfo
@@ -506,6 +522,7 @@ from huaweicloudsdkrds.v3.model.revoke_sqlserver_db_user_privilege_request impor
 from huaweicloudsdkrds.v3.model.revoke_sqlserver_db_user_privilege_response import RevokeSqlserverDbUserPrivilegeResponse
 from huaweicloudsdkrds.v3.model.scale_flavors import ScaleFlavors
 from huaweicloudsdkrds.v3.model.scale_proxy_request_body import ScaleProxyRequestBody
+from huaweicloudsdkrds.v3.model.schedule_task_info import ScheduleTaskInfo
 from huaweicloudsdkrds.v3.model.search_query_scale_compute_flavors_request import SearchQueryScaleComputeFlavorsRequest
 from huaweicloudsdkrds.v3.model.search_query_scale_compute_flavors_response import SearchQueryScaleComputeFlavorsResponse
 from huaweicloudsdkrds.v3.model.search_query_scale_flavors_request import SearchQueryScaleFlavorsRequest
@@ -657,6 +674,7 @@ from huaweicloudsdkrds.v3.model.start_resize_flavor_action_request import StartR
 from huaweicloudsdkrds.v3.model.start_resize_flavor_action_response import StartResizeFlavorActionResponse
 from huaweicloudsdkrds.v3.model.startup_instance_request import StartupInstanceRequest
 from huaweicloudsdkrds.v3.model.startup_instance_response import StartupInstanceResponse
+from huaweicloudsdkrds.v3.model.statistic import Statistic
 from huaweicloudsdkrds.v3.model.stop_backup_request import StopBackupRequest
 from huaweicloudsdkrds.v3.model.stop_backup_response import StopBackupResponse
 from huaweicloudsdkrds.v3.model.stop_database_proxy_request import StopDatabaseProxyRequest
@@ -677,7 +695,9 @@ from huaweicloudsdkrds.v3.model.tag_del_with_key_value import TagDelWithKeyValue
 from huaweicloudsdkrds.v3.model.tag_resp import TagResp
 from huaweicloudsdkrds.v3.model.tag_response import TagResponse
 from huaweicloudsdkrds.v3.model.tag_with_key_value import TagWithKeyValue
+from huaweicloudsdkrds.v3.model.target_config import TargetConfig
 from huaweicloudsdkrds.v3.model.target_instance_request import TargetInstanceRequest
+from huaweicloudsdkrds.v3.model.task import Task
 from huaweicloudsdkrds.v3.model.to_period_req import ToPeriodReq
 from huaweicloudsdkrds.v3.model.transfer_backup_request import TransferBackupRequest
 from huaweicloudsdkrds.v3.model.transfer_backup_request_body import TransferBackupRequestBody

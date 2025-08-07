@@ -38,7 +38,7 @@ class ListVpnServersByProjectResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param vpn_servers: 
+        :param vpn_servers: 服务端列表
         :type vpn_servers: list[:class:`huaweicloudsdkvpn.v5.ShowServerResponse`]
         :param total_count: 总数
         :type total_count: int
@@ -74,6 +74,8 @@ class ListVpnServersByProjectResponse(SdkResponse):
     def vpn_servers(self):
         r"""Gets the vpn_servers of this ListVpnServersByProjectResponse.
 
+        服务端列表
+
         :return: The vpn_servers of this ListVpnServersByProjectResponse.
         :rtype: list[:class:`huaweicloudsdkvpn.v5.ShowServerResponse`]
         """
@@ -82,6 +84,8 @@ class ListVpnServersByProjectResponse(SdkResponse):
     @vpn_servers.setter
     def vpn_servers(self, vpn_servers):
         r"""Sets the vpn_servers of this ListVpnServersByProjectResponse.
+
+        服务端列表
 
         :param vpn_servers: The vpn_servers of this ListVpnServersByProjectResponse.
         :type vpn_servers: list[:class:`huaweicloudsdkvpn.v5.ShowServerResponse`]

@@ -4,14 +4,11 @@ from __future__ import absolute_import
 
 # import models into model package
 from huaweicloudsdkaom.v1.model.approve_info import ApproveInfo
-from huaweicloudsdkaom.v1.model.create_fast_execute_script_request import CreateFastExecuteScriptRequest
-from huaweicloudsdkaom.v1.model.create_fast_execute_script_response import CreateFastExecuteScriptResponse
 from huaweicloudsdkaom.v1.model.create_workflow_request import CreateWorkflowRequest
 from huaweicloudsdkaom.v1.model.create_workflow_response import CreateWorkflowResponse
 from huaweicloudsdkaom.v1.model.execute_workflow_request import ExecuteWorkflowRequest
 from huaweicloudsdkaom.v1.model.execute_workflow_response import ExecuteWorkflowResponse
 from huaweicloudsdkaom.v1.model.execution_result_list import ExecutionResultList
-from huaweicloudsdkaom.v1.model.his_fast_script import HISFastScript
 from huaweicloudsdkaom.v1.model.job import Job
 from huaweicloudsdkaom.v1.model.list_all_job_by_name_request import ListAllJobByNameRequest
 from huaweicloudsdkaom.v1.model.list_all_job_by_name_response import ListAllJobByNameResponse

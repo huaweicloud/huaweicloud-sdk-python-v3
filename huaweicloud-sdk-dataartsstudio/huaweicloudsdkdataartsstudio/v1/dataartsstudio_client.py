@@ -12305,6 +12305,14 @@ class DataArtsStudioClient(Client):
             query_params.append(('submit_user_name', local_var_params['submit_user_name']))
         if 'item_name' in local_var_params:
             query_params.append(('item_name', local_var_params['item_name']))
+        if 'update_type' in local_var_params:
+            query_params.append(('update_type', local_var_params['update_type']))
+        if 'task_type' in local_var_params:
+            query_params.append(('task_type', local_var_params['task_type']))
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
         if 'offset' in local_var_params:

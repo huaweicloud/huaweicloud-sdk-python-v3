@@ -31,6 +31,7 @@ class ShowUserResult:
         'update_time': 'str',
         'create_time': 'str',
         'last_login_time': 'str',
+        'last_pwd_auth_time': 'str',
         'pwd_strength': 'str',
         'is_domain_owner': 'bool',
         'access_mode': 'str',
@@ -54,6 +55,7 @@ class ShowUserResult:
         'update_time': 'update_time',
         'create_time': 'create_time',
         'last_login_time': 'last_login_time',
+        'last_pwd_auth_time': 'last_pwd_auth_time',
         'pwd_strength': 'pwd_strength',
         'is_domain_owner': 'is_domain_owner',
         'access_mode': 'access_mode',
@@ -62,7 +64,7 @@ class ShowUserResult:
         'modify_pwd_time': 'modify_pwd_time'
     }
 
-    def __init__(self, enabled=None, id=None, domain_id=None, name=None, links=None, xuser_id=None, xuser_type=None, areacode=None, email=None, phone=None, pwd_status=None, update_time=None, create_time=None, last_login_time=None, pwd_strength=None, is_domain_owner=None, access_mode=None, description=None, pwd_create_time=None, modify_pwd_time=None):
+    def __init__(self, enabled=None, id=None, domain_id=None, name=None, links=None, xuser_id=None, xuser_type=None, areacode=None, email=None, phone=None, pwd_status=None, update_time=None, create_time=None, last_login_time=None, last_pwd_auth_time=None, pwd_strength=None, is_domain_owner=None, access_mode=None, description=None, pwd_create_time=None, modify_pwd_time=None):
         r"""ShowUserResult
 
         The model defined in huaweicloud sdk
@@ -95,6 +97,8 @@ class ShowUserResult:
         :type create_time: str
         :param last_login_time: IAM用户最后登录时间。
         :type last_login_time: str
+        :param last_pwd_auth_time: IAM用户最后使用密码认证时间。
+        :type last_pwd_auth_time: str
         :param pwd_strength: IAM用户密码强度。结果为Low/Middle/High/None，分别表示密码强度低/中/高/无。
         :type pwd_strength: str
         :param is_domain_owner: IAM用户是否为根用户。
@@ -125,6 +129,7 @@ class ShowUserResult:
         self._update_time = None
         self._create_time = None
         self._last_login_time = None
+        self._last_pwd_auth_time = None
         self._pwd_strength = None
         self._is_domain_owner = None
         self._access_mode = None
@@ -156,6 +161,8 @@ class ShowUserResult:
             self.create_time = create_time
         if last_login_time is not None:
             self.last_login_time = last_login_time
+        if last_pwd_auth_time is not None:
+            self.last_pwd_auth_time = last_pwd_auth_time
         if pwd_strength is not None:
             self.pwd_strength = pwd_strength
         self.is_domain_owner = is_domain_owner
@@ -469,6 +476,28 @@ class ShowUserResult:
         :type last_login_time: str
         """
         self._last_login_time = last_login_time
+
+    @property
+    def last_pwd_auth_time(self):
+        r"""Gets the last_pwd_auth_time of this ShowUserResult.
+
+        IAM用户最后使用密码认证时间。
+
+        :return: The last_pwd_auth_time of this ShowUserResult.
+        :rtype: str
+        """
+        return self._last_pwd_auth_time
+
+    @last_pwd_auth_time.setter
+    def last_pwd_auth_time(self, last_pwd_auth_time):
+        r"""Sets the last_pwd_auth_time of this ShowUserResult.
+
+        IAM用户最后使用密码认证时间。
+
+        :param last_pwd_auth_time: The last_pwd_auth_time of this ShowUserResult.
+        :type last_pwd_auth_time: str
+        """
+        self._last_pwd_auth_time = last_pwd_auth_time
 
     @property
     def pwd_strength(self):

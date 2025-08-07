@@ -34,9 +34,9 @@ class ShowVpnGatewayRoutingTableResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param routing_table: 
+        :param routing_table: VPN网关的路由表
         :type routing_table: list[:class:`huaweicloudsdkvpn.v5.VpnGatewayRoutingTableEntryVo`]
-        :param total_count: 
+        :param total_count: 该网关下的路由总条数
         :type total_count: int
         :param page_info: 
         :type page_info: :class:`huaweicloudsdkvpn.v5.PageInfo`
@@ -60,6 +60,8 @@ class ShowVpnGatewayRoutingTableResponse(SdkResponse):
     def routing_table(self):
         r"""Gets the routing_table of this ShowVpnGatewayRoutingTableResponse.
 
+        VPN网关的路由表
+
         :return: The routing_table of this ShowVpnGatewayRoutingTableResponse.
         :rtype: list[:class:`huaweicloudsdkvpn.v5.VpnGatewayRoutingTableEntryVo`]
         """
@@ -68,6 +70,8 @@ class ShowVpnGatewayRoutingTableResponse(SdkResponse):
     @routing_table.setter
     def routing_table(self, routing_table):
         r"""Sets the routing_table of this ShowVpnGatewayRoutingTableResponse.
+
+        VPN网关的路由表
 
         :param routing_table: The routing_table of this ShowVpnGatewayRoutingTableResponse.
         :type routing_table: list[:class:`huaweicloudsdkvpn.v5.VpnGatewayRoutingTableEntryVo`]
@@ -78,6 +82,8 @@ class ShowVpnGatewayRoutingTableResponse(SdkResponse):
     def total_count(self):
         r"""Gets the total_count of this ShowVpnGatewayRoutingTableResponse.
 
+        该网关下的路由总条数
+
         :return: The total_count of this ShowVpnGatewayRoutingTableResponse.
         :rtype: int
         """
@@ -86,6 +92,8 @@ class ShowVpnGatewayRoutingTableResponse(SdkResponse):
     @total_count.setter
     def total_count(self, total_count):
         r"""Sets the total_count of this ShowVpnGatewayRoutingTableResponse.
+
+        该网关下的路由总条数
 
         :param total_count: The total_count of this ShowVpnGatewayRoutingTableResponse.
         :type total_count: int

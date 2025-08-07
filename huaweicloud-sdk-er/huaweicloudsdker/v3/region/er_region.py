@@ -46,6 +46,16 @@ class ErRegion:
                         "https://er.ap-southeast-5.myhuaweicloud.com")
     RU_MOSCOW_1 = Region("ru-moscow-1",
                         "https://er.ru-moscow-1.myhuaweicloud.com")
+    CN_EAST_5 = Region("cn-east-5",
+                        "https://er.cn-east-5.myhuaweicloud.com")
+    CN_EAST_4 = Region("cn-east-4",
+                        "https://er.cn-east-4.myhuaweicloud.com")
+    CN_NORTH_12 = Region("cn-north-12",
+                        "https://er.cn-north-12.myhuaweicloud.com")
+    CN_SOUTHWEST_3 = Region("cn-southwest-3",
+                        "https://er.cn-southwest-3.myhuaweicloud.com")
+    CN_NORTH_11 = Region("cn-north-11",
+                        "https://er.cn-north-11.myhuaweicloud.com")
 
     static_fields = {
         "cn-south-1": CN_SOUTH_1,
@@ -68,6 +78,11 @@ class ErRegion:
         "af-north-1": AF_NORTH_1,
         "ap-southeast-5": AP_SOUTHEAST_5,
         "ru-moscow-1": RU_MOSCOW_1,
+        "cn-east-5": CN_EAST_5,
+        "cn-east-4": CN_EAST_4,
+        "cn-north-12": CN_NORTH_12,
+        "cn-southwest-3": CN_SOUTHWEST_3,
+        "cn-north-11": CN_NORTH_11,
     }
 
     @classmethod

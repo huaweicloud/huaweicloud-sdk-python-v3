@@ -34,7 +34,7 @@ class ListP2cVgwConnectionsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param connections: 
+        :param connections: 连接信息
         :type connections: list[:class:`huaweicloudsdkvpn.v5.Connection`]
         :param total_count: 总计数量
         :type total_count: int
@@ -60,6 +60,8 @@ class ListP2cVgwConnectionsResponse(SdkResponse):
     def connections(self):
         r"""Gets the connections of this ListP2cVgwConnectionsResponse.
 
+        连接信息
+
         :return: The connections of this ListP2cVgwConnectionsResponse.
         :rtype: list[:class:`huaweicloudsdkvpn.v5.Connection`]
         """
@@ -68,6 +70,8 @@ class ListP2cVgwConnectionsResponse(SdkResponse):
     @connections.setter
     def connections(self, connections):
         r"""Sets the connections of this ListP2cVgwConnectionsResponse.
+
+        连接信息
 
         :param connections: The connections of this ListP2cVgwConnectionsResponse.
         :type connections: list[:class:`huaweicloudsdkvpn.v5.Connection`]

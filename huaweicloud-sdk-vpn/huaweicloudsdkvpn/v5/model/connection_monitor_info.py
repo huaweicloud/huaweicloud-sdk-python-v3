@@ -43,7 +43,7 @@ class ConnectionMonitorInfo:
 
         :param id: VPN连接监控ID
         :type id: str
-        :param status: 
+        :param status: VPN连接监控状态
         :type status: str
         :param vpn_connection_id: VPN连接监控对应的VPN连接ID
         :type vpn_connection_id: str
@@ -109,6 +109,8 @@ class ConnectionMonitorInfo:
     def status(self):
         r"""Gets the status of this ConnectionMonitorInfo.
 
+        VPN连接监控状态
+
         :return: The status of this ConnectionMonitorInfo.
         :rtype: str
         """
@@ -117,6 +119,8 @@ class ConnectionMonitorInfo:
     @status.setter
     def status(self, status):
         r"""Sets the status of this ConnectionMonitorInfo.
+
+        VPN连接监控状态
 
         :param status: The status of this ConnectionMonitorInfo.
         :type status: str

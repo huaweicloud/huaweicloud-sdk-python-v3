@@ -19,16 +19,20 @@ class ListRetentionHistoriesRequest:
     openapi_types = {
         'namespace': 'str',
         'repository': 'str',
+        'limit': 'str',
+        'offset': 'str',
         'filter': 'str'
     }
 
     attribute_map = {
         'namespace': 'namespace',
         'repository': 'repository',
+        'limit': 'limit',
+        'offset': 'offset',
         'filter': 'filter'
     }
 
-    def __init__(self, namespace=None, repository=None, filter=None):
+    def __init__(self, namespace=None, repository=None, limit=None, offset=None, filter=None):
         r"""ListRetentionHistoriesRequest
 
         The model defined in huaweicloud sdk
@@ -37,6 +41,10 @@ class ListRetentionHistoriesRequest:
         :type namespace: str
         :param repository: 镜像仓库名称
         :type repository: str
+        :param limit: 返回条数。注意：offset和limit参数需要配套使用。
+        :type limit: str
+        :param offset: 起始索引。注意：offset和limit参数需要配套使用。
+        :type offset: str
         :param filter: 应填写 limit::{limit}|offset::{offset}, 其中{limit}为返回条数,{offset}为起始索引, 注意：offset和limit参数需要配套使用
         :type filter: str
         """
@@ -45,11 +53,17 @@ class ListRetentionHistoriesRequest:
 
         self._namespace = None
         self._repository = None
+        self._limit = None
+        self._offset = None
         self._filter = None
         self.discriminator = None
 
         self.namespace = namespace
         self.repository = repository
+        if limit is not None:
+            self.limit = limit
+        if offset is not None:
+            self.offset = offset
         if filter is not None:
             self.filter = filter
 
@@ -96,6 +110,50 @@ class ListRetentionHistoriesRequest:
         :type repository: str
         """
         self._repository = repository
+
+    @property
+    def limit(self):
+        r"""Gets the limit of this ListRetentionHistoriesRequest.
+
+        返回条数。注意：offset和limit参数需要配套使用。
+
+        :return: The limit of this ListRetentionHistoriesRequest.
+        :rtype: str
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        r"""Sets the limit of this ListRetentionHistoriesRequest.
+
+        返回条数。注意：offset和limit参数需要配套使用。
+
+        :param limit: The limit of this ListRetentionHistoriesRequest.
+        :type limit: str
+        """
+        self._limit = limit
+
+    @property
+    def offset(self):
+        r"""Gets the offset of this ListRetentionHistoriesRequest.
+
+        起始索引。注意：offset和limit参数需要配套使用。
+
+        :return: The offset of this ListRetentionHistoriesRequest.
+        :rtype: str
+        """
+        return self._offset
+
+    @offset.setter
+    def offset(self, offset):
+        r"""Sets the offset of this ListRetentionHistoriesRequest.
+
+        起始索引。注意：offset和limit参数需要配套使用。
+
+        :param offset: The offset of this ListRetentionHistoriesRequest.
+        :type offset: str
+        """
+        self._offset = offset
 
     @property
     def filter(self):

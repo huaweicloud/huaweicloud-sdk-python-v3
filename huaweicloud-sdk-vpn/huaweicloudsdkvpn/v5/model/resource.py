@@ -35,13 +35,13 @@ class Resource:
 
         The model defined in huaweicloud sdk
 
-        :param resource_id: 
+        :param resource_id: 资源ID
         :type resource_id: str
-        :param resource_detail: 
+        :param resource_detail: 资源详情
         :type resource_detail: object
-        :param tags: 
+        :param tags: 标签列表
         :type tags: list[:class:`huaweicloudsdkvpn.v5.ResourceTag`]
-        :param resource_name: 
+        :param resource_name: 资源名称
         :type resource_name: str
         """
         
@@ -66,6 +66,8 @@ class Resource:
     def resource_id(self):
         r"""Gets the resource_id of this Resource.
 
+        资源ID
+
         :return: The resource_id of this Resource.
         :rtype: str
         """
@@ -74,6 +76,8 @@ class Resource:
     @resource_id.setter
     def resource_id(self, resource_id):
         r"""Sets the resource_id of this Resource.
+
+        资源ID
 
         :param resource_id: The resource_id of this Resource.
         :type resource_id: str
@@ -84,6 +88,8 @@ class Resource:
     def resource_detail(self):
         r"""Gets the resource_detail of this Resource.
 
+        资源详情
+
         :return: The resource_detail of this Resource.
         :rtype: object
         """
@@ -92,6 +98,8 @@ class Resource:
     @resource_detail.setter
     def resource_detail(self, resource_detail):
         r"""Sets the resource_detail of this Resource.
+
+        资源详情
 
         :param resource_detail: The resource_detail of this Resource.
         :type resource_detail: object
@@ -102,6 +110,8 @@ class Resource:
     def tags(self):
         r"""Gets the tags of this Resource.
 
+        标签列表
+
         :return: The tags of this Resource.
         :rtype: list[:class:`huaweicloudsdkvpn.v5.ResourceTag`]
         """
@@ -110,6 +120,8 @@ class Resource:
     @tags.setter
     def tags(self, tags):
         r"""Sets the tags of this Resource.
+
+        标签列表
 
         :param tags: The tags of this Resource.
         :type tags: list[:class:`huaweicloudsdkvpn.v5.ResourceTag`]
@@ -120,6 +132,8 @@ class Resource:
     def resource_name(self):
         r"""Gets the resource_name of this Resource.
 
+        资源名称
+
         :return: The resource_name of this Resource.
         :rtype: str
         """
@@ -128,6 +142,8 @@ class Resource:
     @resource_name.setter
     def resource_name(self, resource_name):
         r"""Sets the resource_name of this Resource.
+
+        资源名称
 
         :param resource_name: The resource_name of this Resource.
         :type resource_name: str

@@ -31,9 +31,9 @@ class Tag:
 
         The model defined in huaweicloud sdk
 
-        :param key: 
+        :param key: 标签的键
         :type key: str
-        :param values: 
+        :param values: 标签的值列表
         :type values: list[str]
         """
         
@@ -50,6 +50,8 @@ class Tag:
     def key(self):
         r"""Gets the key of this Tag.
 
+        标签的键
+
         :return: The key of this Tag.
         :rtype: str
         """
@@ -58,6 +60,8 @@ class Tag:
     @key.setter
     def key(self, key):
         r"""Sets the key of this Tag.
+
+        标签的键
 
         :param key: The key of this Tag.
         :type key: str
@@ -68,6 +72,8 @@ class Tag:
     def values(self):
         r"""Gets the values of this Tag.
 
+        标签的值列表
+
         :return: The values of this Tag.
         :rtype: list[str]
         """
@@ -76,6 +82,8 @@ class Tag:
     @values.setter
     def values(self, values):
         r"""Sets the values of this Tag.
+
+        标签的值列表
 
         :param values: The values of this Tag.
         :type values: list[str]

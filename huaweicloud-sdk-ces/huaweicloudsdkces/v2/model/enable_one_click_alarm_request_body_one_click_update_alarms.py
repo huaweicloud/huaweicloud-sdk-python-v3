@@ -23,7 +23,7 @@ class EnableOneClickAlarmRequestBodyOneClickUpdateAlarms:
         'namespace': 'str',
         'policies': 'list[Policy]',
         'resources': 'list[list[Dimension]]',
-        'type': 'AlarmType',
+        'type': 'str',
         'enabled': 'bool',
         'notification_enabled': 'bool',
         'alarm_notifications': 'list[Notification]',
@@ -59,33 +59,33 @@ class EnableOneClickAlarmRequestBodyOneClickUpdateAlarms:
 
         :param alarm_id: 告警规则id，以al开头，包含22个数字或字母
         :type alarm_id: str
-        :param name: 告警名称, 只能包含0-9/a-z/A-Z/_/-或汉字，长度1-128
+        :param name: 此字段已废弃。告警名称, 只能包含0-9/a-z/A-Z/_/-或汉字，长度1-128
         :type name: str
-        :param description: 告警描述，长度0-256
+        :param description: 此字段已废弃。告警描述，长度0-256
         :type description: str
         :param namespace: 查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”
         :type namespace: str
         :param policies: 告警策略
         :type policies: list[:class:`huaweicloudsdkces.v2.Policy`]
-        :param resources: 资源列表，关联资源需要使用查询告警规则资源接口获取
+        :param resources: 此字段已废弃。资源列表，关联资源需要使用查询告警规则资源接口获取
         :type resources: list[list[Dimension]]
-        :param type: 
-        :type type: :class:`huaweicloudsdkces.v2.AlarmType`
+        :param type: 此字段已废弃。 **参数解释**： 告警规则类型 **约束限制**： 不涉及。 **取值范围**： 枚举值。ALL_INSTANCE为全部资源指标告警，RESOURCE_GROUP为资源分组指标告警，MULTI_INSTANCE为指定资源指标告警，EVENT.SYS为系统事件告警，EVENT.CUSTOM自定义事件告警，DNSHealthCheck为健康检查告警； **默认取值**： 不涉及。 
+        :type type: str
         :param enabled: 是否开启告警规则。true:开启，false:关闭。
         :type enabled: bool
-        :param notification_enabled: 是否开启告警通知。true:开启，false:关闭。
+        :param notification_enabled: 此字段已废弃。是否开启告警通知。true:开启，false:关闭。
         :type notification_enabled: bool
-        :param alarm_notifications: 告警触发的动作
+        :param alarm_notifications: 此字段已废弃。告警触发的动作
         :type alarm_notifications: list[:class:`huaweicloudsdkces.v2.Notification`]
-        :param ok_notifications: 告警恢复触发的动作
+        :param ok_notifications: 此字段已废弃。告警恢复触发的动作
         :type ok_notifications: list[:class:`huaweicloudsdkces.v2.Notification`]
-        :param notification_begin_time: 告警通知开启时间
+        :param notification_begin_time: 此字段已废弃。告警通知开启时间
         :type notification_begin_time: str
-        :param notification_end_time: 告警通知关闭时间
+        :param notification_end_time: 此字段已废弃。告警通知关闭时间
         :type notification_end_time: str
-        :param notification_manner: 通知方式。NOTIFICATION_POLICY表示通知策略，NOTIFICATION_GROUP表示通知组，TOPIC_SUBSCRIPTION表示主题订阅。
+        :param notification_manner: 此字段已废弃。通知方式。NOTIFICATION_POLICY表示通知策略，NOTIFICATION_GROUP表示通知组，TOPIC_SUBSCRIPTION表示主题订阅。
         :type notification_manner: str
-        :param notification_policy_ids: 关联的通知策略ID列表
+        :param notification_policy_ids: 此字段已废弃。关联的通知策略ID列表
         :type notification_policy_ids: list[str]
         """
         
@@ -165,7 +165,7 @@ class EnableOneClickAlarmRequestBodyOneClickUpdateAlarms:
     def name(self):
         r"""Gets the name of this EnableOneClickAlarmRequestBodyOneClickUpdateAlarms.
 
-        告警名称, 只能包含0-9/a-z/A-Z/_/-或汉字，长度1-128
+        此字段已废弃。告警名称, 只能包含0-9/a-z/A-Z/_/-或汉字，长度1-128
 
         :return: The name of this EnableOneClickAlarmRequestBodyOneClickUpdateAlarms.
         :rtype: str
@@ -176,7 +176,7 @@ class EnableOneClickAlarmRequestBodyOneClickUpdateAlarms:
     def name(self, name):
         r"""Sets the name of this EnableOneClickAlarmRequestBodyOneClickUpdateAlarms.
 
-        告警名称, 只能包含0-9/a-z/A-Z/_/-或汉字，长度1-128
+        此字段已废弃。告警名称, 只能包含0-9/a-z/A-Z/_/-或汉字，长度1-128
 
         :param name: The name of this EnableOneClickAlarmRequestBodyOneClickUpdateAlarms.
         :type name: str
@@ -187,7 +187,7 @@ class EnableOneClickAlarmRequestBodyOneClickUpdateAlarms:
     def description(self):
         r"""Gets the description of this EnableOneClickAlarmRequestBodyOneClickUpdateAlarms.
 
-        告警描述，长度0-256
+        此字段已废弃。告警描述，长度0-256
 
         :return: The description of this EnableOneClickAlarmRequestBodyOneClickUpdateAlarms.
         :rtype: str
@@ -198,7 +198,7 @@ class EnableOneClickAlarmRequestBodyOneClickUpdateAlarms:
     def description(self, description):
         r"""Sets the description of this EnableOneClickAlarmRequestBodyOneClickUpdateAlarms.
 
-        告警描述，长度0-256
+        此字段已废弃。告警描述，长度0-256
 
         :param description: The description of this EnableOneClickAlarmRequestBodyOneClickUpdateAlarms.
         :type description: str
@@ -253,7 +253,7 @@ class EnableOneClickAlarmRequestBodyOneClickUpdateAlarms:
     def resources(self):
         r"""Gets the resources of this EnableOneClickAlarmRequestBodyOneClickUpdateAlarms.
 
-        资源列表，关联资源需要使用查询告警规则资源接口获取
+        此字段已废弃。资源列表，关联资源需要使用查询告警规则资源接口获取
 
         :return: The resources of this EnableOneClickAlarmRequestBodyOneClickUpdateAlarms.
         :rtype: list[list[Dimension]]
@@ -264,7 +264,7 @@ class EnableOneClickAlarmRequestBodyOneClickUpdateAlarms:
     def resources(self, resources):
         r"""Sets the resources of this EnableOneClickAlarmRequestBodyOneClickUpdateAlarms.
 
-        资源列表，关联资源需要使用查询告警规则资源接口获取
+        此字段已废弃。资源列表，关联资源需要使用查询告警规则资源接口获取
 
         :param resources: The resources of this EnableOneClickAlarmRequestBodyOneClickUpdateAlarms.
         :type resources: list[list[Dimension]]
@@ -275,8 +275,10 @@ class EnableOneClickAlarmRequestBodyOneClickUpdateAlarms:
     def type(self):
         r"""Gets the type of this EnableOneClickAlarmRequestBodyOneClickUpdateAlarms.
 
+        此字段已废弃。 **参数解释**： 告警规则类型 **约束限制**： 不涉及。 **取值范围**： 枚举值。ALL_INSTANCE为全部资源指标告警，RESOURCE_GROUP为资源分组指标告警，MULTI_INSTANCE为指定资源指标告警，EVENT.SYS为系统事件告警，EVENT.CUSTOM自定义事件告警，DNSHealthCheck为健康检查告警； **默认取值**： 不涉及。 
+
         :return: The type of this EnableOneClickAlarmRequestBodyOneClickUpdateAlarms.
-        :rtype: :class:`huaweicloudsdkces.v2.AlarmType`
+        :rtype: str
         """
         return self._type
 
@@ -284,8 +286,10 @@ class EnableOneClickAlarmRequestBodyOneClickUpdateAlarms:
     def type(self, type):
         r"""Sets the type of this EnableOneClickAlarmRequestBodyOneClickUpdateAlarms.
 
+        此字段已废弃。 **参数解释**： 告警规则类型 **约束限制**： 不涉及。 **取值范围**： 枚举值。ALL_INSTANCE为全部资源指标告警，RESOURCE_GROUP为资源分组指标告警，MULTI_INSTANCE为指定资源指标告警，EVENT.SYS为系统事件告警，EVENT.CUSTOM自定义事件告警，DNSHealthCheck为健康检查告警； **默认取值**： 不涉及。 
+
         :param type: The type of this EnableOneClickAlarmRequestBodyOneClickUpdateAlarms.
-        :type type: :class:`huaweicloudsdkces.v2.AlarmType`
+        :type type: str
         """
         self._type = type
 
@@ -315,7 +319,7 @@ class EnableOneClickAlarmRequestBodyOneClickUpdateAlarms:
     def notification_enabled(self):
         r"""Gets the notification_enabled of this EnableOneClickAlarmRequestBodyOneClickUpdateAlarms.
 
-        是否开启告警通知。true:开启，false:关闭。
+        此字段已废弃。是否开启告警通知。true:开启，false:关闭。
 
         :return: The notification_enabled of this EnableOneClickAlarmRequestBodyOneClickUpdateAlarms.
         :rtype: bool
@@ -326,7 +330,7 @@ class EnableOneClickAlarmRequestBodyOneClickUpdateAlarms:
     def notification_enabled(self, notification_enabled):
         r"""Sets the notification_enabled of this EnableOneClickAlarmRequestBodyOneClickUpdateAlarms.
 
-        是否开启告警通知。true:开启，false:关闭。
+        此字段已废弃。是否开启告警通知。true:开启，false:关闭。
 
         :param notification_enabled: The notification_enabled of this EnableOneClickAlarmRequestBodyOneClickUpdateAlarms.
         :type notification_enabled: bool
@@ -337,7 +341,7 @@ class EnableOneClickAlarmRequestBodyOneClickUpdateAlarms:
     def alarm_notifications(self):
         r"""Gets the alarm_notifications of this EnableOneClickAlarmRequestBodyOneClickUpdateAlarms.
 
-        告警触发的动作
+        此字段已废弃。告警触发的动作
 
         :return: The alarm_notifications of this EnableOneClickAlarmRequestBodyOneClickUpdateAlarms.
         :rtype: list[:class:`huaweicloudsdkces.v2.Notification`]
@@ -348,7 +352,7 @@ class EnableOneClickAlarmRequestBodyOneClickUpdateAlarms:
     def alarm_notifications(self, alarm_notifications):
         r"""Sets the alarm_notifications of this EnableOneClickAlarmRequestBodyOneClickUpdateAlarms.
 
-        告警触发的动作
+        此字段已废弃。告警触发的动作
 
         :param alarm_notifications: The alarm_notifications of this EnableOneClickAlarmRequestBodyOneClickUpdateAlarms.
         :type alarm_notifications: list[:class:`huaweicloudsdkces.v2.Notification`]
@@ -359,7 +363,7 @@ class EnableOneClickAlarmRequestBodyOneClickUpdateAlarms:
     def ok_notifications(self):
         r"""Gets the ok_notifications of this EnableOneClickAlarmRequestBodyOneClickUpdateAlarms.
 
-        告警恢复触发的动作
+        此字段已废弃。告警恢复触发的动作
 
         :return: The ok_notifications of this EnableOneClickAlarmRequestBodyOneClickUpdateAlarms.
         :rtype: list[:class:`huaweicloudsdkces.v2.Notification`]
@@ -370,7 +374,7 @@ class EnableOneClickAlarmRequestBodyOneClickUpdateAlarms:
     def ok_notifications(self, ok_notifications):
         r"""Sets the ok_notifications of this EnableOneClickAlarmRequestBodyOneClickUpdateAlarms.
 
-        告警恢复触发的动作
+        此字段已废弃。告警恢复触发的动作
 
         :param ok_notifications: The ok_notifications of this EnableOneClickAlarmRequestBodyOneClickUpdateAlarms.
         :type ok_notifications: list[:class:`huaweicloudsdkces.v2.Notification`]
@@ -381,7 +385,7 @@ class EnableOneClickAlarmRequestBodyOneClickUpdateAlarms:
     def notification_begin_time(self):
         r"""Gets the notification_begin_time of this EnableOneClickAlarmRequestBodyOneClickUpdateAlarms.
 
-        告警通知开启时间
+        此字段已废弃。告警通知开启时间
 
         :return: The notification_begin_time of this EnableOneClickAlarmRequestBodyOneClickUpdateAlarms.
         :rtype: str
@@ -392,7 +396,7 @@ class EnableOneClickAlarmRequestBodyOneClickUpdateAlarms:
     def notification_begin_time(self, notification_begin_time):
         r"""Sets the notification_begin_time of this EnableOneClickAlarmRequestBodyOneClickUpdateAlarms.
 
-        告警通知开启时间
+        此字段已废弃。告警通知开启时间
 
         :param notification_begin_time: The notification_begin_time of this EnableOneClickAlarmRequestBodyOneClickUpdateAlarms.
         :type notification_begin_time: str
@@ -403,7 +407,7 @@ class EnableOneClickAlarmRequestBodyOneClickUpdateAlarms:
     def notification_end_time(self):
         r"""Gets the notification_end_time of this EnableOneClickAlarmRequestBodyOneClickUpdateAlarms.
 
-        告警通知关闭时间
+        此字段已废弃。告警通知关闭时间
 
         :return: The notification_end_time of this EnableOneClickAlarmRequestBodyOneClickUpdateAlarms.
         :rtype: str
@@ -414,7 +418,7 @@ class EnableOneClickAlarmRequestBodyOneClickUpdateAlarms:
     def notification_end_time(self, notification_end_time):
         r"""Sets the notification_end_time of this EnableOneClickAlarmRequestBodyOneClickUpdateAlarms.
 
-        告警通知关闭时间
+        此字段已废弃。告警通知关闭时间
 
         :param notification_end_time: The notification_end_time of this EnableOneClickAlarmRequestBodyOneClickUpdateAlarms.
         :type notification_end_time: str
@@ -425,7 +429,7 @@ class EnableOneClickAlarmRequestBodyOneClickUpdateAlarms:
     def notification_manner(self):
         r"""Gets the notification_manner of this EnableOneClickAlarmRequestBodyOneClickUpdateAlarms.
 
-        通知方式。NOTIFICATION_POLICY表示通知策略，NOTIFICATION_GROUP表示通知组，TOPIC_SUBSCRIPTION表示主题订阅。
+        此字段已废弃。通知方式。NOTIFICATION_POLICY表示通知策略，NOTIFICATION_GROUP表示通知组，TOPIC_SUBSCRIPTION表示主题订阅。
 
         :return: The notification_manner of this EnableOneClickAlarmRequestBodyOneClickUpdateAlarms.
         :rtype: str
@@ -436,7 +440,7 @@ class EnableOneClickAlarmRequestBodyOneClickUpdateAlarms:
     def notification_manner(self, notification_manner):
         r"""Sets the notification_manner of this EnableOneClickAlarmRequestBodyOneClickUpdateAlarms.
 
-        通知方式。NOTIFICATION_POLICY表示通知策略，NOTIFICATION_GROUP表示通知组，TOPIC_SUBSCRIPTION表示主题订阅。
+        此字段已废弃。通知方式。NOTIFICATION_POLICY表示通知策略，NOTIFICATION_GROUP表示通知组，TOPIC_SUBSCRIPTION表示主题订阅。
 
         :param notification_manner: The notification_manner of this EnableOneClickAlarmRequestBodyOneClickUpdateAlarms.
         :type notification_manner: str
@@ -447,7 +451,7 @@ class EnableOneClickAlarmRequestBodyOneClickUpdateAlarms:
     def notification_policy_ids(self):
         r"""Gets the notification_policy_ids of this EnableOneClickAlarmRequestBodyOneClickUpdateAlarms.
 
-        关联的通知策略ID列表
+        此字段已废弃。关联的通知策略ID列表
 
         :return: The notification_policy_ids of this EnableOneClickAlarmRequestBodyOneClickUpdateAlarms.
         :rtype: list[str]
@@ -458,7 +462,7 @@ class EnableOneClickAlarmRequestBodyOneClickUpdateAlarms:
     def notification_policy_ids(self, notification_policy_ids):
         r"""Sets the notification_policy_ids of this EnableOneClickAlarmRequestBodyOneClickUpdateAlarms.
 
-        关联的通知策略ID列表
+        此字段已废弃。关联的通知策略ID列表
 
         :param notification_policy_ids: The notification_policy_ids of this EnableOneClickAlarmRequestBodyOneClickUpdateAlarms.
         :type notification_policy_ids: list[str]

@@ -32,9 +32,9 @@ class ListResourcesByTagsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param resources: 
+        :param resources: 资源对象列表
         :type resources: list[:class:`huaweicloudsdkvpn.v5.Resource`]
-        :param total_count: 
+        :param total_count: 总记录数
         :type total_count: int
         """
         
@@ -53,6 +53,8 @@ class ListResourcesByTagsResponse(SdkResponse):
     def resources(self):
         r"""Gets the resources of this ListResourcesByTagsResponse.
 
+        资源对象列表
+
         :return: The resources of this ListResourcesByTagsResponse.
         :rtype: list[:class:`huaweicloudsdkvpn.v5.Resource`]
         """
@@ -61,6 +63,8 @@ class ListResourcesByTagsResponse(SdkResponse):
     @resources.setter
     def resources(self, resources):
         r"""Sets the resources of this ListResourcesByTagsResponse.
+
+        资源对象列表
 
         :param resources: The resources of this ListResourcesByTagsResponse.
         :type resources: list[:class:`huaweicloudsdkvpn.v5.Resource`]
@@ -71,6 +75,8 @@ class ListResourcesByTagsResponse(SdkResponse):
     def total_count(self):
         r"""Gets the total_count of this ListResourcesByTagsResponse.
 
+        总记录数
+
         :return: The total_count of this ListResourcesByTagsResponse.
         :rtype: int
         """
@@ -79,6 +85,8 @@ class ListResourcesByTagsResponse(SdkResponse):
     @total_count.setter
     def total_count(self, total_count):
         r"""Sets the total_count of this ListResourcesByTagsResponse.
+
+        总记录数
 
         :param total_count: The total_count of this ListResourcesByTagsResponse.
         :type total_count: int

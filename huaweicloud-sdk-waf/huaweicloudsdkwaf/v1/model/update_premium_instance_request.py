@@ -2,11 +2,10 @@
 
 import six
 
-from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class ListIRackResponse(SdkResponse):
+class UpdatePremiumInstanceRequest:
 
     """
     Attributes:
@@ -18,72 +17,75 @@ class ListIRackResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'iracks': 'list[IRack]',
-        'page_info': 'PageInfo'
+        'instance_id': 'str',
+        'body': 'UpdatePremiumInstanceRequestBody'
     }
 
     attribute_map = {
-        'iracks': 'iracks',
-        'page_info': 'page_info'
+        'instance_id': 'instance_id',
+        'body': 'body'
     }
 
-    def __init__(self, iracks=None, page_info=None):
-        r"""ListIRackResponse
+    def __init__(self, instance_id=None, body=None):
+        r"""UpdatePremiumInstanceRequest
 
         The model defined in huaweicloud sdk
 
-        :param iracks: 
-        :type iracks: list[:class:`huaweicloudsdkclouddc.v1.IRack`]
-        :param page_info: 
-        :type page_info: :class:`huaweicloudsdkclouddc.v1.PageInfo`
+        :param instance_id: **参数解释：** 独享引擎ID **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        :type instance_id: str
+        :param body: Body of the UpdatePremiumInstanceRequest
+        :type body: :class:`huaweicloudsdkwaf.v1.UpdatePremiumInstanceRequestBody`
         """
         
-        super(ListIRackResponse, self).__init__()
+        
 
-        self._iracks = None
-        self._page_info = None
+        self._instance_id = None
+        self._body = None
         self.discriminator = None
 
-        if iracks is not None:
-            self.iracks = iracks
-        if page_info is not None:
-            self.page_info = page_info
+        self.instance_id = instance_id
+        if body is not None:
+            self.body = body
 
     @property
-    def iracks(self):
-        r"""Gets the iracks of this ListIRackResponse.
+    def instance_id(self):
+        r"""Gets the instance_id of this UpdatePremiumInstanceRequest.
 
-        :return: The iracks of this ListIRackResponse.
-        :rtype: list[:class:`huaweicloudsdkclouddc.v1.IRack`]
+        **参数解释：** 独享引擎ID **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+
+        :return: The instance_id of this UpdatePremiumInstanceRequest.
+        :rtype: str
         """
-        return self._iracks
+        return self._instance_id
 
-    @iracks.setter
-    def iracks(self, iracks):
-        r"""Sets the iracks of this ListIRackResponse.
+    @instance_id.setter
+    def instance_id(self, instance_id):
+        r"""Sets the instance_id of this UpdatePremiumInstanceRequest.
 
-        :param iracks: The iracks of this ListIRackResponse.
-        :type iracks: list[:class:`huaweicloudsdkclouddc.v1.IRack`]
+        **参数解释：** 独享引擎ID **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+
+        :param instance_id: The instance_id of this UpdatePremiumInstanceRequest.
+        :type instance_id: str
         """
-        self._iracks = iracks
+        self._instance_id = instance_id
 
     @property
-    def page_info(self):
-        r"""Gets the page_info of this ListIRackResponse.
+    def body(self):
+        r"""Gets the body of this UpdatePremiumInstanceRequest.
 
-        :return: The page_info of this ListIRackResponse.
-        :rtype: :class:`huaweicloudsdkclouddc.v1.PageInfo`
+        :return: The body of this UpdatePremiumInstanceRequest.
+        :rtype: :class:`huaweicloudsdkwaf.v1.UpdatePremiumInstanceRequestBody`
         """
-        return self._page_info
+        return self._body
 
-    @page_info.setter
-    def page_info(self, page_info):
-        r"""Sets the page_info of this ListIRackResponse.
+    @body.setter
+    def body(self, body):
+        r"""Sets the body of this UpdatePremiumInstanceRequest.
 
-        :param page_info: The page_info of this ListIRackResponse.
-        :type page_info: :class:`huaweicloudsdkclouddc.v1.PageInfo`
+        :param body: The body of this UpdatePremiumInstanceRequest.
+        :type body: :class:`huaweicloudsdkwaf.v1.UpdatePremiumInstanceRequestBody`
         """
-        self._page_info = page_info
+        self._body = body
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -127,7 +129,7 @@ class ListIRackResponse(SdkResponse):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ListIRackResponse):
+        if not isinstance(other, UpdatePremiumInstanceRequest):
             return False
 
         return self.__dict__ == other.__dict__

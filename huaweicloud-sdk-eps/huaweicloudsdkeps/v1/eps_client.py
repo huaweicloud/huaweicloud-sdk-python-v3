@@ -98,6 +98,71 @@ class EpsClient(Client):
 
         return http_info
 
+    def delete_enterprise_project(self, request):
+        r"""删除企业项目
+
+        删除企业项目
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteEnterpriseProject
+        :type request: :class:`huaweicloudsdkeps.v1.DeleteEnterpriseProjectRequest`
+        :rtype: :class:`huaweicloudsdkeps.v1.DeleteEnterpriseProjectResponse`
+        """
+        http_info = self._delete_enterprise_project_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_enterprise_project_invoker(self, request):
+        http_info = self._delete_enterprise_project_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_enterprise_project_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1.0/enterprise-projects/{enterprise_project_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteEnterpriseProjectResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            path_params['enterprise_project_id'] = local_var_params['enterprise_project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def disable_enterprise_project(self, request):
         r"""停用企业项目
 
@@ -372,6 +437,79 @@ class EpsClient(Client):
 
         return http_info
 
+    def list_migration_record(self, request):
+        r"""查询资源迁移记录
+
+        查询资源迁移记录
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListMigrationRecord
+        :type request: :class:`huaweicloudsdkeps.v1.ListMigrationRecordRequest`
+        :rtype: :class:`huaweicloudsdkeps.v1.ListMigrationRecordResponse`
+        """
+        http_info = self._list_migration_record_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_migration_record_invoker(self, request):
+        http_info = self._list_migration_record_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_migration_record_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/enterprise-projects/migrate-record/list",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListMigrationRecordResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'resource_id' in local_var_params:
+            query_params.append(('resource_id', local_var_params['resource_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_providers(self, request):
         r"""查询企业项目支持的服务
 
@@ -416,6 +554,69 @@ class EpsClient(Client):
             query_params.append(('offset', local_var_params['offset']))
         if 'provider' in local_var_params:
             query_params.append(('provider', local_var_params['provider']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_resource_mapping(self, request):
+        r"""查询资源类型映射
+
+        查询资源类型映射
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListResourceMapping
+        :type request: :class:`huaweicloudsdkeps.v1.ListResourceMappingRequest`
+        :rtype: :class:`huaweicloudsdkeps.v1.ListResourceMappingResponse`
+        """
+        http_info = self._list_resource_mapping_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_resource_mapping_invoker(self, request):
+        http_info = self._list_resource_mapping_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_resource_mapping_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/enterprise-projects/resources-mapping",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListResourceMappingResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
 
         header_params = {}
 
@@ -575,6 +776,77 @@ class EpsClient(Client):
 
         return http_info
 
+    def show_associated_resources(self, request):
+        r"""查询关联资源
+
+        查询关联资源
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowAssociatedResources
+        :type request: :class:`huaweicloudsdkeps.v1.ShowAssociatedResourcesRequest`
+        :rtype: :class:`huaweicloudsdkeps.v1.ShowAssociatedResourcesResponse`
+        """
+        http_info = self._show_associated_resources_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_associated_resources_invoker(self, request):
+        http_info = self._show_associated_resources_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_associated_resources_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/associated-resources/{resource_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAssociatedResourcesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_id' in local_var_params:
+            path_params['resource_id'] = local_var_params['resource_id']
+
+        query_params = []
+        if 'project_id' in local_var_params:
+            query_params.append(('project_id', local_var_params['project_id']))
+        if 'region_id' in local_var_params:
+            query_params.append(('region_id', local_var_params['region_id']))
+        if 'resource_type' in local_var_params:
+            query_params.append(('resource_type', local_var_params['resource_type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_enterprise_project(self, request):
         r"""查询企业项目详情
 
@@ -665,6 +937,69 @@ class EpsClient(Client):
             "resource_path": "/v1.0/enterprise-projects/quotas",
             "request_type": request.__class__.__name__,
             "response_type": "ShowEnterpriseProjectQuotaResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_ep_configs(self, request):
+        r"""查询服务配置
+
+        查询服务配置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowEpConfigs
+        :type request: :class:`huaweicloudsdkeps.v1.ShowEpConfigsRequest`
+        :rtype: :class:`huaweicloudsdkeps.v1.ShowEpConfigsResponse`
+        """
+        http_info = self._show_ep_configs_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_ep_configs_invoker(self, request):
+        http_info = self._show_ep_configs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_ep_configs_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/enterprise-projects/configs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowEpConfigsResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}

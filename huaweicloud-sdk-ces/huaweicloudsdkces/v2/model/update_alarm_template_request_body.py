@@ -37,7 +37,7 @@ class UpdateAlarmTemplateRequestBody:
 
         :param template_name: 告警模板的名称，以字母或汉字开头，可包含字母、数字、汉字、_、-，长度范围[1,128]
         :type template_name: str
-        :param template_type: 自定义告警模板类型 0：指标 2： 事件
+        :param template_type: **参数解释**： 自定义告警模板类型 **约束限制**： 不涉及。 **取值范围**： 枚举值。0：指标；2： 事件。 **默认取值**： 0 
         :type template_type: int
         :param template_description: 告警模板的描述，长度范围[0,256]，该字段默认值为空字符串
         :type template_description: str
@@ -86,7 +86,7 @@ class UpdateAlarmTemplateRequestBody:
     def template_type(self):
         r"""Gets the template_type of this UpdateAlarmTemplateRequestBody.
 
-        自定义告警模板类型 0：指标 2： 事件
+        **参数解释**： 自定义告警模板类型 **约束限制**： 不涉及。 **取值范围**： 枚举值。0：指标；2： 事件。 **默认取值**： 0 
 
         :return: The template_type of this UpdateAlarmTemplateRequestBody.
         :rtype: int
@@ -97,7 +97,7 @@ class UpdateAlarmTemplateRequestBody:
     def template_type(self, template_type):
         r"""Sets the template_type of this UpdateAlarmTemplateRequestBody.
 
-        自定义告警模板类型 0：指标 2： 事件
+        **参数解释**： 自定义告警模板类型 **约束限制**： 不涉及。 **取值范围**： 枚举值。0：指标；2： 事件。 **默认取值**： 0 
 
         :param template_type: The template_type of this UpdateAlarmTemplateRequestBody.
         :type template_type: int

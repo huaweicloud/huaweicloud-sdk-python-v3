@@ -56,6 +56,8 @@ class AomRegion:
                         "https://aom.my-kualalumpur-1.myhuaweicloud.com")
     AP_SOUTHEAST_5 = Region("ap-southeast-5",
                         "https://aom.ap-southeast-5.myhuaweicloud.com")
+    AF_NORTH_1 = Region("af-north-1",
+                        "https://aom.af-north-1.myhuaweicloud.com")
 
     static_fields = {
         "cn-north-4": CN_NORTH_4,
@@ -83,6 +85,7 @@ class AomRegion:
         "ru-moscow-1": RU_MOSCOW_1,
         "my-kualalumpur-1": MY_KUALALUMPUR_1,
         "ap-southeast-5": AP_SOUTHEAST_5,
+        "af-north-1": AF_NORTH_1,
     }
 
     @classmethod

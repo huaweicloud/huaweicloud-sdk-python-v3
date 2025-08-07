@@ -17,7 +17,7 @@ class InstanceRestartRequsetBody:
     sensitive_list = []
 
     openapi_types = {
-        'restart': 'object'
+        'restart': 'RestartConfiguration'
     }
 
     attribute_map = {
@@ -29,8 +29,8 @@ class InstanceRestartRequsetBody:
 
         The model defined in huaweicloud sdk
 
-        :param restart: 空值
-        :type restart: object
+        :param restart: 
+        :type restart: :class:`huaweicloudsdkrds.v3.RestartConfiguration`
         """
         
         
@@ -44,10 +44,8 @@ class InstanceRestartRequsetBody:
     def restart(self):
         r"""Gets the restart of this InstanceRestartRequsetBody.
 
-        空值
-
         :return: The restart of this InstanceRestartRequsetBody.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkrds.v3.RestartConfiguration`
         """
         return self._restart
 
@@ -55,10 +53,8 @@ class InstanceRestartRequsetBody:
     def restart(self, restart):
         r"""Sets the restart of this InstanceRestartRequsetBody.
 
-        空值
-
         :param restart: The restart of this InstanceRestartRequsetBody.
-        :type restart: object
+        :type restart: :class:`huaweicloudsdkrds.v3.RestartConfiguration`
         """
         self._restart = restart
 

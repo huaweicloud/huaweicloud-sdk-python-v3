@@ -29,7 +29,7 @@ class BatchCreateVpnConnectionRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param vpn_connections: 
+        :param vpn_connections: VPN连接对象数组
         :type vpn_connections: list[:class:`huaweicloudsdkvpn.v5.CreateVpnConnectionRequestBodyContent`]
         """
         
@@ -44,6 +44,8 @@ class BatchCreateVpnConnectionRequestBody:
     def vpn_connections(self):
         r"""Gets the vpn_connections of this BatchCreateVpnConnectionRequestBody.
 
+        VPN连接对象数组
+
         :return: The vpn_connections of this BatchCreateVpnConnectionRequestBody.
         :rtype: list[:class:`huaweicloudsdkvpn.v5.CreateVpnConnectionRequestBodyContent`]
         """
@@ -52,6 +54,8 @@ class BatchCreateVpnConnectionRequestBody:
     @vpn_connections.setter
     def vpn_connections(self, vpn_connections):
         r"""Sets the vpn_connections of this BatchCreateVpnConnectionRequestBody.
+
+        VPN连接对象数组
 
         :param vpn_connections: The vpn_connections of this BatchCreateVpnConnectionRequestBody.
         :type vpn_connections: list[:class:`huaweicloudsdkvpn.v5.CreateVpnConnectionRequestBodyContent`]

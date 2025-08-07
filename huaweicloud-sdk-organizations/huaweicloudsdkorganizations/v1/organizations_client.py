@@ -167,6 +167,73 @@ class OrganizationsClient(Client):
 
         return http_info
 
+    def create_resource_account(self, request):
+        r"""创建帐号
+
+        创建一个帐号，不携带手机号邮箱联系方式，生成的帐号将自动成为调用此接口的帐号所属组织的成员。此操作只能由组织的管理帐号调用。组织云服务将在新帐号中创建所需的服务关联委托和帐号访问委托。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateResourceAccount
+        :type request: :class:`huaweicloudsdkorganizations.v1.CreateResourceAccountRequest`
+        :rtype: :class:`huaweicloudsdkorganizations.v1.CreateResourceAccountResponse`
+        """
+        http_info = self._create_resource_account_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_resource_account_invoker(self, request):
+        http_info = self._create_resource_account_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_resource_account_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/organizations/accounts",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateResourceAccountResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def invite_account(self, request):
         r"""邀请账号加入组织
 

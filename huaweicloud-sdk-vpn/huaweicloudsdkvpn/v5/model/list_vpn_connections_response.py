@@ -38,7 +38,7 @@ class ListVpnConnectionsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param vpn_connections: 
+        :param vpn_connections: VPN连接对象数组
         :type vpn_connections: list[:class:`huaweicloudsdkvpn.v5.ResponseVpnConnection`]
         :param page_info: 
         :type page_info: :class:`huaweicloudsdkvpn.v5.PageInfo`
@@ -74,6 +74,8 @@ class ListVpnConnectionsResponse(SdkResponse):
     def vpn_connections(self):
         r"""Gets the vpn_connections of this ListVpnConnectionsResponse.
 
+        VPN连接对象数组
+
         :return: The vpn_connections of this ListVpnConnectionsResponse.
         :rtype: list[:class:`huaweicloudsdkvpn.v5.ResponseVpnConnection`]
         """
@@ -82,6 +84,8 @@ class ListVpnConnectionsResponse(SdkResponse):
     @vpn_connections.setter
     def vpn_connections(self, vpn_connections):
         r"""Sets the vpn_connections of this ListVpnConnectionsResponse.
+
+        VPN连接对象数组
 
         :param vpn_connections: The vpn_connections of this ListVpnConnectionsResponse.
         :type vpn_connections: list[:class:`huaweicloudsdkvpn.v5.ResponseVpnConnection`]

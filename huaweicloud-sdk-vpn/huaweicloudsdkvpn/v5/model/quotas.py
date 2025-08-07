@@ -29,7 +29,7 @@ class Quotas:
 
         The model defined in huaweicloud sdk
 
-        :param resources: 
+        :param resources: 资源对象
         :type resources: list[:class:`huaweicloudsdkvpn.v5.QuotaInfo`]
         """
         
@@ -45,6 +45,8 @@ class Quotas:
     def resources(self):
         r"""Gets the resources of this Quotas.
 
+        资源对象
+
         :return: The resources of this Quotas.
         :rtype: list[:class:`huaweicloudsdkvpn.v5.QuotaInfo`]
         """
@@ -53,6 +55,8 @@ class Quotas:
     @resources.setter
     def resources(self, resources):
         r"""Sets the resources of this Quotas.
+
+        资源对象
 
         :param resources: The resources of this Quotas.
         :type resources: list[:class:`huaweicloudsdkvpn.v5.QuotaInfo`]

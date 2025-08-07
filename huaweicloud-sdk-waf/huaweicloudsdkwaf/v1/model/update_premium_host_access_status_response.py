@@ -6,7 +6,7 @@ from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class HandlerAlarmResponse(SdkResponse):
+class UpdatePremiumHostAccessStatusResponse(SdkResponse):
 
     """
     Attributes:
@@ -18,47 +18,51 @@ class HandlerAlarmResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'object'
+        'access_status': 'int'
     }
 
     attribute_map = {
-        'body': 'body'
+        'access_status': 'access_status'
     }
 
-    def __init__(self, body=None):
-        r"""HandlerAlarmResponse
+    def __init__(self, access_status=None):
+        r"""UpdatePremiumHostAccessStatusResponse
 
         The model defined in huaweicloud sdk
 
-        :param body: 
-        :type body: object
+        :param access_status: **参数解释：** 域名接入状态 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        :type access_status: int
         """
         
-        super(HandlerAlarmResponse, self).__init__()
+        super(UpdatePremiumHostAccessStatusResponse, self).__init__()
 
-        self._body = None
+        self._access_status = None
         self.discriminator = None
 
-        if body is not None:
-            self.body = body
+        if access_status is not None:
+            self.access_status = access_status
 
     @property
-    def body(self):
-        r"""Gets the body of this HandlerAlarmResponse.
+    def access_status(self):
+        r"""Gets the access_status of this UpdatePremiumHostAccessStatusResponse.
 
-        :return: The body of this HandlerAlarmResponse.
-        :rtype: object
+        **参数解释：** 域名接入状态 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+
+        :return: The access_status of this UpdatePremiumHostAccessStatusResponse.
+        :rtype: int
         """
-        return self._body
+        return self._access_status
 
-    @body.setter
-    def body(self, body):
-        r"""Sets the body of this HandlerAlarmResponse.
+    @access_status.setter
+    def access_status(self, access_status):
+        r"""Sets the access_status of this UpdatePremiumHostAccessStatusResponse.
 
-        :param body: The body of this HandlerAlarmResponse.
-        :type body: object
+        **参数解释：** 域名接入状态 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+
+        :param access_status: The access_status of this UpdatePremiumHostAccessStatusResponse.
+        :type access_status: int
         """
-        self._body = body
+        self._access_status = access_status
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -102,7 +106,7 @@ class HandlerAlarmResponse(SdkResponse):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, HandlerAlarmResponse):
+        if not isinstance(other, UpdatePremiumHostAccessStatusResponse):
             return False
 
         return self.__dict__ == other.__dict__

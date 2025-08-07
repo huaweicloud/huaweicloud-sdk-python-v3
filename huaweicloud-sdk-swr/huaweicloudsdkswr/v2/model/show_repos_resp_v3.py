@@ -28,7 +28,7 @@ class ShowReposRespV3:
         'created_at': 'str',
         'updated_at': 'str',
         'domain_name': 'str',
-        'namespace': 'str',
+        'namespace_name': 'str',
         'status': 'bool'
     }
 
@@ -44,11 +44,11 @@ class ShowReposRespV3:
         'created_at': 'created_at',
         'updated_at': 'updated_at',
         'domain_name': 'domain_name',
-        'namespace': 'namespace',
+        'namespace_name': 'namespace_name',
         'status': 'status'
     }
 
-    def __init__(self, id=None, name=None, category=None, description=None, size=None, is_public=None, num_images=None, num_download=None, created_at=None, updated_at=None, domain_name=None, namespace=None, status=None):
+    def __init__(self, id=None, name=None, category=None, description=None, size=None, is_public=None, num_images=None, num_download=None, created_at=None, updated_at=None, domain_name=None, namespace_name=None, status=None):
         r"""ShowReposRespV3
 
         The model defined in huaweicloud sdk
@@ -75,8 +75,8 @@ class ShowReposRespV3:
         :type updated_at: str
         :param domain_name: 仓库所属租户
         :type domain_name: str
-        :param namespace: 租户的组织名称
-        :type namespace: str
+        :param namespace_name: 租户的组织名称
+        :type namespace_name: str
         :param status: 查询他人共享镜像：共享是否过期 查询我共享的镜像：默认为false,无意义
         :type status: bool
         """
@@ -94,7 +94,7 @@ class ShowReposRespV3:
         self._created_at = None
         self._updated_at = None
         self._domain_name = None
-        self._namespace = None
+        self._namespace_name = None
         self._status = None
         self.discriminator = None
 
@@ -109,7 +109,7 @@ class ShowReposRespV3:
         self.created_at = created_at
         self.updated_at = updated_at
         self.domain_name = domain_name
-        self.namespace = namespace
+        self.namespace_name = namespace_name
         if status is not None:
             self.status = status
 
@@ -356,26 +356,26 @@ class ShowReposRespV3:
         self._domain_name = domain_name
 
     @property
-    def namespace(self):
-        r"""Gets the namespace of this ShowReposRespV3.
+    def namespace_name(self):
+        r"""Gets the namespace_name of this ShowReposRespV3.
 
         租户的组织名称
 
-        :return: The namespace of this ShowReposRespV3.
+        :return: The namespace_name of this ShowReposRespV3.
         :rtype: str
         """
-        return self._namespace
+        return self._namespace_name
 
-    @namespace.setter
-    def namespace(self, namespace):
-        r"""Sets the namespace of this ShowReposRespV3.
+    @namespace_name.setter
+    def namespace_name(self, namespace_name):
+        r"""Sets the namespace_name of this ShowReposRespV3.
 
         租户的组织名称
 
-        :param namespace: The namespace of this ShowReposRespV3.
-        :type namespace: str
+        :param namespace_name: The namespace_name of this ShowReposRespV3.
+        :type namespace_name: str
         """
-        self._namespace = namespace
+        self._namespace_name = namespace_name
 
     @property
     def status(self):

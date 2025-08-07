@@ -5107,6 +5107,83 @@ class RdsClient(Client):
 
         return http_info
 
+    def list_schedule_tasks(self, request):
+        r"""查询定时任务列表
+
+        查询定时任务列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListScheduleTasks
+        :type request: :class:`huaweicloudsdkrds.v3.ListScheduleTasksRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListScheduleTasksResponse`
+        """
+        http_info = self._list_schedule_tasks_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_schedule_tasks_invoker(self, request):
+        http_info = self._list_schedule_tasks_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_schedule_tasks_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/schedule-tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListScheduleTasksResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'instance_id' in local_var_params:
+            query_params.append(('instance_id', local_var_params['instance_id']))
+        if 'instance_name' in local_var_params:
+            query_params.append(('instance_name', local_var_params['instance_name']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_share_backups(self, request):
         r"""查询共享备份列表
 
@@ -5874,6 +5951,87 @@ class RdsClient(Client):
         header_params = {}
         if 'x_language' in local_var_params:
             header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_tasks(self, request):
+        r"""查询及时任务列表
+
+        查询及时任务列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListTasks
+        :type request: :class:`huaweicloudsdkrds.v3.ListTasksRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListTasksResponse`
+        """
+        http_info = self._list_tasks_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_tasks_invoker(self, request):
+        http_info = self._list_tasks_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_tasks_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/tasklist",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTasksResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'instance_id' in local_var_params:
+            query_params.append(('instance_id', local_var_params['instance_id']))
+        if 'order_id' in local_var_params:
+            query_params.append(('order_id', local_var_params['order_id']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+
+        header_params = {}
 
         form_params = {}
 
@@ -15835,6 +15993,148 @@ class RdsClient(Client):
 
         return http_info
 
+    def list_business_partners(self, request):
+        r"""查询云市场服务商列表
+
+        查询云市场服务商列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListBusinessPartners
+        :type request: :class:`huaweicloudsdkrds.v3.ListBusinessPartnersRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListBusinessPartnersResponse`
+        """
+        http_info = self._list_business_partners_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_business_partners_invoker(self, request):
+        http_info = self._list_business_partners_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_business_partners_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/business-partners",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListBusinessPartnersResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_marketplace_engine_products(self, request):
+        r"""查询云市场引擎商品列表
+
+        查询云市场引擎商品列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListMarketplaceEngineProducts
+        :type request: :class:`huaweicloudsdkrds.v3.ListMarketplaceEngineProductsRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListMarketplaceEngineProductsResponse`
+        """
+        http_info = self._list_marketplace_engine_products_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_marketplace_engine_products_invoker(self, request):
+        http_info = self._list_marketplace_engine_products_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_marketplace_engine_products_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/business-partner/{bp_domain_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListMarketplaceEngineProductsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'bp_domain_id' in local_var_params:
+            path_params['bp_domain_id'] = local_var_params['bp_domain_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'engine_id' in local_var_params:
+            query_params.append(('engine_id', local_var_params['engine_id']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_msdtc_hosts(self, request):
         r"""查询MSDTC的hosts信息
 
@@ -16301,6 +16601,140 @@ class RdsClient(Client):
         body = None
         if 'body' in local_var_params:
             body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_sql_statistics(self, request):
+        r"""查询sql统计列表
+
+        查询sql统计列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListSqlStatistics
+        :type request: :class:`huaweicloudsdkrds.v3.ListSqlStatisticsRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListSqlStatisticsResponse`
+        """
+        http_info = self._list_sql_statistics_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_sql_statistics_invoker(self, request):
+        http_info = self._list_sql_statistics_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_sql_statistics_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/sql-statistics",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSqlStatisticsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def reset_view_sql_statistics(self, request):
+        r"""sql统计视图重置
+
+        sql统计视图重置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ResetViewSqlStatistics
+        :type request: :class:`huaweicloudsdkrds.v3.ResetViewSqlStatisticsRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ResetViewSqlStatisticsResponse`
+        """
+        http_info = self._reset_view_sql_statistics_http_info(request)
+        return self._call_api(**http_info)
+
+    def reset_view_sql_statistics_invoker(self, request):
+        http_info = self._reset_view_sql_statistics_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _reset_view_sql_statistics_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/sql-statistics/reset",
+            "request_type": request.__class__.__name__,
+            "response_type": "ResetViewSqlStatisticsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 

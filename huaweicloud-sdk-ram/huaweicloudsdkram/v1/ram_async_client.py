@@ -786,6 +786,73 @@ class RamAsyncClient(Client):
 
         return http_info
 
+    def search_distinct_principals_async(self, request):
+        r"""检索资源使用者并去除其中的重复项
+
+        检索您正在共享资源的不同使用者或被共享资源给您的不同使用者并去除其中的重复项。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for SearchDistinctPrincipals
+        :type request: :class:`huaweicloudsdkram.v1.SearchDistinctPrincipalsRequest`
+        :rtype: :class:`huaweicloudsdkram.v1.SearchDistinctPrincipalsResponse`
+        """
+        http_info = self._search_distinct_principals_http_info(request)
+        return self._call_api(**http_info)
+
+    def search_distinct_principals_async_invoker(self, request):
+        http_info = self._search_distinct_principals_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _search_distinct_principals_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/shared-principals/search-distinct-principal",
+            "request_type": request.__class__.__name__,
+            "response_type": "SearchDistinctPrincipalsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def search_shared_principals_async(self, request):
         r"""检索资源使用者
 
@@ -811,6 +878,73 @@ class RamAsyncClient(Client):
             "resource_path": "/v1/shared-principals/search",
             "request_type": request.__class__.__name__,
             "response_type": "SearchSharedPrincipalsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def search_distinct_shared_resources_async(self, request):
+        r"""检索共享的资源并去除其中的重复项
+
+        检索您添加到资源共享或被共享给您的不同资源并去除其中的重复项。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for SearchDistinctSharedResources
+        :type request: :class:`huaweicloudsdkram.v1.SearchDistinctSharedResourcesRequest`
+        :rtype: :class:`huaweicloudsdkram.v1.SearchDistinctSharedResourcesResponse`
+        """
+        http_info = self._search_distinct_shared_resources_http_info(request)
+        return self._call_api(**http_info)
+
+    def search_distinct_shared_resources_async_invoker(self, request):
+        http_info = self._search_distinct_shared_resources_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _search_distinct_shared_resources_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/shared-resources/search-distinct-resource",
+            "request_type": request.__class__.__name__,
+            "response_type": "SearchDistinctSharedResourcesResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}

@@ -21,7 +21,7 @@ class ListRepoDetailsRequest:
         'name': 'str',
         'category': 'str',
         'limit': 'int',
-        'marker': 'str',
+        'marker': 'int',
         'is_public': 'bool'
     }
 
@@ -48,7 +48,7 @@ class ListRepoDetailsRequest:
         :param limit: 返回条数，默认返回100条记录，最多返回1000条记录。
         :type limit: int
         :param marker: 分页查询下一次查询起始标记，接口的返回值nextMarker为下一次查询的起始标记。
-        :type marker: str
+        :type marker: int
         :param is_public: 是否公开私有，true为公开，false为私有。
         :type is_public: bool
         """
@@ -171,7 +171,7 @@ class ListRepoDetailsRequest:
         分页查询下一次查询起始标记，接口的返回值nextMarker为下一次查询的起始标记。
 
         :return: The marker of this ListRepoDetailsRequest.
-        :rtype: str
+        :rtype: int
         """
         return self._marker
 
@@ -182,7 +182,7 @@ class ListRepoDetailsRequest:
         分页查询下一次查询起始标记，接口的返回值nextMarker为下一次查询的起始标记。
 
         :param marker: The marker of this ListRepoDetailsRequest.
-        :type marker: str
+        :type marker: int
         """
         self._marker = marker
 

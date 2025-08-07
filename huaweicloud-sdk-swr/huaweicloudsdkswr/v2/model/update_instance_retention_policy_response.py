@@ -18,163 +18,20 @@ class UpdateInstanceRetentionPolicyResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'algorithm': 'str',
-        'enabled': 'bool',
-        'rules': 'list[RetentionRule]',
-        'trigger': 'TriggerConfig',
-        'name': 'str'
     }
 
     attribute_map = {
-        'algorithm': 'algorithm',
-        'enabled': 'enabled',
-        'rules': 'rules',
-        'trigger': 'trigger',
-        'name': 'name'
     }
 
-    def __init__(self, algorithm=None, enabled=None, rules=None, trigger=None, name=None):
+    def __init__(self):
         r"""UpdateInstanceRetentionPolicyResponse
 
         The model defined in huaweicloud sdk
 
-        :param algorithm: 算法，目前只支持or
-        :type algorithm: str
-        :param enabled: 是否启用或者关闭所有retentionRules
-        :type enabled: bool
-        :param rules: 匹配规则，数组长度只允许为1，配置repo范围、tag范围以及作用规则
-        :type rules: list[:class:`huaweicloudsdkswr.v2.RetentionRule`]
-        :param trigger: 
-        :type trigger: :class:`huaweicloudsdkswr.v2.TriggerConfig`
-        :param name: 策略名称，由字母、汉字、数字、下划线（_）、中划线 (-)组成，1-256个字符。
-        :type name: str
         """
         
         super(UpdateInstanceRetentionPolicyResponse, self).__init__()
-
-        self._algorithm = None
-        self._enabled = None
-        self._rules = None
-        self._trigger = None
-        self._name = None
         self.discriminator = None
-
-        if algorithm is not None:
-            self.algorithm = algorithm
-        if enabled is not None:
-            self.enabled = enabled
-        if rules is not None:
-            self.rules = rules
-        if trigger is not None:
-            self.trigger = trigger
-        if name is not None:
-            self.name = name
-
-    @property
-    def algorithm(self):
-        r"""Gets the algorithm of this UpdateInstanceRetentionPolicyResponse.
-
-        算法，目前只支持or
-
-        :return: The algorithm of this UpdateInstanceRetentionPolicyResponse.
-        :rtype: str
-        """
-        return self._algorithm
-
-    @algorithm.setter
-    def algorithm(self, algorithm):
-        r"""Sets the algorithm of this UpdateInstanceRetentionPolicyResponse.
-
-        算法，目前只支持or
-
-        :param algorithm: The algorithm of this UpdateInstanceRetentionPolicyResponse.
-        :type algorithm: str
-        """
-        self._algorithm = algorithm
-
-    @property
-    def enabled(self):
-        r"""Gets the enabled of this UpdateInstanceRetentionPolicyResponse.
-
-        是否启用或者关闭所有retentionRules
-
-        :return: The enabled of this UpdateInstanceRetentionPolicyResponse.
-        :rtype: bool
-        """
-        return self._enabled
-
-    @enabled.setter
-    def enabled(self, enabled):
-        r"""Sets the enabled of this UpdateInstanceRetentionPolicyResponse.
-
-        是否启用或者关闭所有retentionRules
-
-        :param enabled: The enabled of this UpdateInstanceRetentionPolicyResponse.
-        :type enabled: bool
-        """
-        self._enabled = enabled
-
-    @property
-    def rules(self):
-        r"""Gets the rules of this UpdateInstanceRetentionPolicyResponse.
-
-        匹配规则，数组长度只允许为1，配置repo范围、tag范围以及作用规则
-
-        :return: The rules of this UpdateInstanceRetentionPolicyResponse.
-        :rtype: list[:class:`huaweicloudsdkswr.v2.RetentionRule`]
-        """
-        return self._rules
-
-    @rules.setter
-    def rules(self, rules):
-        r"""Sets the rules of this UpdateInstanceRetentionPolicyResponse.
-
-        匹配规则，数组长度只允许为1，配置repo范围、tag范围以及作用规则
-
-        :param rules: The rules of this UpdateInstanceRetentionPolicyResponse.
-        :type rules: list[:class:`huaweicloudsdkswr.v2.RetentionRule`]
-        """
-        self._rules = rules
-
-    @property
-    def trigger(self):
-        r"""Gets the trigger of this UpdateInstanceRetentionPolicyResponse.
-
-        :return: The trigger of this UpdateInstanceRetentionPolicyResponse.
-        :rtype: :class:`huaweicloudsdkswr.v2.TriggerConfig`
-        """
-        return self._trigger
-
-    @trigger.setter
-    def trigger(self, trigger):
-        r"""Sets the trigger of this UpdateInstanceRetentionPolicyResponse.
-
-        :param trigger: The trigger of this UpdateInstanceRetentionPolicyResponse.
-        :type trigger: :class:`huaweicloudsdkswr.v2.TriggerConfig`
-        """
-        self._trigger = trigger
-
-    @property
-    def name(self):
-        r"""Gets the name of this UpdateInstanceRetentionPolicyResponse.
-
-        策略名称，由字母、汉字、数字、下划线（_）、中划线 (-)组成，1-256个字符。
-
-        :return: The name of this UpdateInstanceRetentionPolicyResponse.
-        :rtype: str
-        """
-        return self._name
-
-    @name.setter
-    def name(self, name):
-        r"""Sets the name of this UpdateInstanceRetentionPolicyResponse.
-
-        策略名称，由字母、汉字、数字、下划线（_）、中划线 (-)组成，1-256个字符。
-
-        :param name: The name of this UpdateInstanceRetentionPolicyResponse.
-        :type name: str
-        """
-        self._name = name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -37,7 +37,7 @@ class ExtendedAvailabilityZone:
         :type name: str
         :param public_border_group: 公共边界组
         :type public_border_group: str
-        :param available_specs: 
+        :param available_specs: 该可用区下可选的VPN网关规格组合
         :type available_specs: list[:class:`huaweicloudsdkvpn.v5.AvailableSpec`]
         """
         
@@ -103,6 +103,8 @@ class ExtendedAvailabilityZone:
     def available_specs(self):
         r"""Gets the available_specs of this ExtendedAvailabilityZone.
 
+        该可用区下可选的VPN网关规格组合
+
         :return: The available_specs of this ExtendedAvailabilityZone.
         :rtype: list[:class:`huaweicloudsdkvpn.v5.AvailableSpec`]
         """
@@ -111,6 +113,8 @@ class ExtendedAvailabilityZone:
     @available_specs.setter
     def available_specs(self, available_specs):
         r"""Sets the available_specs of this ExtendedAvailabilityZone.
+
+        该可用区下可选的VPN网关规格组合
 
         :param available_specs: The available_specs of this ExtendedAvailabilityZone.
         :type available_specs: list[:class:`huaweicloudsdkvpn.v5.AvailableSpec`]

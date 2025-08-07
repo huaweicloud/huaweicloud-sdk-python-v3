@@ -30,7 +30,7 @@ class ListProjectTagsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param tags: 
+        :param tags: 资源标签
         :type tags: list[:class:`huaweicloudsdkvpn.v5.Tag`]
         """
         
@@ -46,6 +46,8 @@ class ListProjectTagsResponse(SdkResponse):
     def tags(self):
         r"""Gets the tags of this ListProjectTagsResponse.
 
+        资源标签
+
         :return: The tags of this ListProjectTagsResponse.
         :rtype: list[:class:`huaweicloudsdkvpn.v5.Tag`]
         """
@@ -54,6 +56,8 @@ class ListProjectTagsResponse(SdkResponse):
     @tags.setter
     def tags(self, tags):
         r"""Sets the tags of this ListProjectTagsResponse.
+
+        资源标签
 
         :param tags: The tags of this ListProjectTagsResponse.
         :type tags: list[:class:`huaweicloudsdkvpn.v5.Tag`]

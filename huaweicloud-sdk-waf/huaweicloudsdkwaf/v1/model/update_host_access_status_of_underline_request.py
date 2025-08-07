@@ -5,7 +5,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class CreateFastExecuteScriptRequest:
+class UpdateHostAccessStatusOfUnderlineRequest:
 
     """
     Attributes:
@@ -17,45 +17,73 @@ class CreateFastExecuteScriptRequest:
     sensitive_list = []
 
     openapi_types = {
-        'body': 'HISFastScript'
+        'instance_id': 'str',
+        'body': 'AccessStatusBody'
     }
 
     attribute_map = {
+        'instance_id': 'instance_id',
         'body': 'body'
     }
 
-    def __init__(self, body=None):
-        r"""CreateFastExecuteScriptRequest
+    def __init__(self, instance_id=None, body=None):
+        r"""UpdateHostAccessStatusOfUnderlineRequest
 
         The model defined in huaweicloud sdk
 
-        :param body: Body of the CreateFastExecuteScriptRequest
-        :type body: :class:`huaweicloudsdkaom.v1.HISFastScript`
+        :param instance_id: **参数解释：** 域名Id **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        :type instance_id: str
+        :param body: Body of the UpdateHostAccessStatusOfUnderlineRequest
+        :type body: :class:`huaweicloudsdkwaf.v1.AccessStatusBody`
         """
         
         
 
+        self._instance_id = None
         self._body = None
         self.discriminator = None
 
+        self.instance_id = instance_id
         if body is not None:
             self.body = body
 
     @property
-    def body(self):
-        r"""Gets the body of this CreateFastExecuteScriptRequest.
+    def instance_id(self):
+        r"""Gets the instance_id of this UpdateHostAccessStatusOfUnderlineRequest.
 
-        :return: The body of this CreateFastExecuteScriptRequest.
-        :rtype: :class:`huaweicloudsdkaom.v1.HISFastScript`
+        **参数解释：** 域名Id **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+
+        :return: The instance_id of this UpdateHostAccessStatusOfUnderlineRequest.
+        :rtype: str
+        """
+        return self._instance_id
+
+    @instance_id.setter
+    def instance_id(self, instance_id):
+        r"""Sets the instance_id of this UpdateHostAccessStatusOfUnderlineRequest.
+
+        **参数解释：** 域名Id **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+
+        :param instance_id: The instance_id of this UpdateHostAccessStatusOfUnderlineRequest.
+        :type instance_id: str
+        """
+        self._instance_id = instance_id
+
+    @property
+    def body(self):
+        r"""Gets the body of this UpdateHostAccessStatusOfUnderlineRequest.
+
+        :return: The body of this UpdateHostAccessStatusOfUnderlineRequest.
+        :rtype: :class:`huaweicloudsdkwaf.v1.AccessStatusBody`
         """
         return self._body
 
     @body.setter
     def body(self, body):
-        r"""Sets the body of this CreateFastExecuteScriptRequest.
+        r"""Sets the body of this UpdateHostAccessStatusOfUnderlineRequest.
 
-        :param body: The body of this CreateFastExecuteScriptRequest.
-        :type body: :class:`huaweicloudsdkaom.v1.HISFastScript`
+        :param body: The body of this UpdateHostAccessStatusOfUnderlineRequest.
+        :type body: :class:`huaweicloudsdkwaf.v1.AccessStatusBody`
         """
         self._body = body
 
@@ -101,7 +129,7 @@ class CreateFastExecuteScriptRequest:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, CreateFastExecuteScriptRequest):
+        if not isinstance(other, UpdateHostAccessStatusOfUnderlineRequest):
             return False
 
         return self.__dict__ == other.__dict__

@@ -1037,7 +1037,6 @@ class DnsClient(Client):
         r"""创建公网域名
 
         您在使用华为云云解析服务为自己注册的域名配置DNS解析之前，需要先将域名添加至云解析服务控制台。
-        一般情况下，通过华为云[域名注册服务](https://support.huaweicloud.com/domain/index.html)注册的域名无需添加，系统将在域名注册完成后自动添加。
         
         Please refer to HUAWEI cloud API Explorer for details.
 

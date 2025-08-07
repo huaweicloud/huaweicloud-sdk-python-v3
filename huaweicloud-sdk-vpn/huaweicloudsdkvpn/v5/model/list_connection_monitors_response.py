@@ -32,7 +32,7 @@ class ListConnectionMonitorsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param connection_monitors: 
+        :param connection_monitors: VPN连接监控列表
         :type connection_monitors: list[:class:`huaweicloudsdkvpn.v5.ConnectionMonitorInfo`]
         :param request_id: 请求id
         :type request_id: str
@@ -53,6 +53,8 @@ class ListConnectionMonitorsResponse(SdkResponse):
     def connection_monitors(self):
         r"""Gets the connection_monitors of this ListConnectionMonitorsResponse.
 
+        VPN连接监控列表
+
         :return: The connection_monitors of this ListConnectionMonitorsResponse.
         :rtype: list[:class:`huaweicloudsdkvpn.v5.ConnectionMonitorInfo`]
         """
@@ -61,6 +63,8 @@ class ListConnectionMonitorsResponse(SdkResponse):
     @connection_monitors.setter
     def connection_monitors(self, connection_monitors):
         r"""Sets the connection_monitors of this ListConnectionMonitorsResponse.
+
+        VPN连接监控列表
 
         :param connection_monitors: The connection_monitors of this ListConnectionMonitorsResponse.
         :type connection_monitors: list[:class:`huaweicloudsdkvpn.v5.ConnectionMonitorInfo`]

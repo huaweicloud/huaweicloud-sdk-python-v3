@@ -93,7 +93,7 @@ class UpdateResponseVpnGateway:
         :type attachment_type: str
         :param ip_version: 网关的IP协议版本
         :type ip_version: str
-        :param certificate_id: 
+        :param certificate_id: 证书ID
         :type certificate_id: str
         :param er_id: VPN网关所连接的ER实例的ID
         :type er_id: str
@@ -329,6 +329,8 @@ class UpdateResponseVpnGateway:
     def certificate_id(self):
         r"""Gets the certificate_id of this UpdateResponseVpnGateway.
 
+        证书ID
+
         :return: The certificate_id of this UpdateResponseVpnGateway.
         :rtype: str
         """
@@ -337,6 +339,8 @@ class UpdateResponseVpnGateway:
     @certificate_id.setter
     def certificate_id(self, certificate_id):
         r"""Sets the certificate_id of this UpdateResponseVpnGateway.
+
+        证书ID
 
         :param certificate_id: The certificate_id of this UpdateResponseVpnGateway.
         :type certificate_id: str

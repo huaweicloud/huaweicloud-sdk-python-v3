@@ -26,6 +26,8 @@ class ShowShareFeatureGatesResponse(SdkResponse):
         'enable_cci_service': 'bool',
         'enable_image_label': 'bool',
         'enable_pipeline': 'bool',
+        'enable_authorization_token': 'bool',
+        'enable_resource': 'bool',
         'enable_list_v3': 'bool'
     }
 
@@ -38,10 +40,12 @@ class ShowShareFeatureGatesResponse(SdkResponse):
         'enable_cci_service': 'enable_cci_service',
         'enable_image_label': 'enable_image_label',
         'enable_pipeline': 'enable_pipeline',
+        'enable_authorization_token': 'enable_authorization_token',
+        'enable_resource': 'enable_resource',
         'enable_list_v3': 'enable_list_v3'
     }
 
-    def __init__(self, enable_experience=None, enable_hss_service=None, enable_image_scan=None, enable_sm3=None, enable_image_sync=None, enable_cci_service=None, enable_image_label=None, enable_pipeline=None, enable_list_v3=None):
+    def __init__(self, enable_experience=None, enable_hss_service=None, enable_image_scan=None, enable_sm3=None, enable_image_sync=None, enable_cci_service=None, enable_image_label=None, enable_pipeline=None, enable_authorization_token=None, enable_resource=None, enable_list_v3=None):
         r"""ShowShareFeatureGatesResponse
 
         The model defined in huaweicloud sdk
@@ -62,6 +66,10 @@ class ShowShareFeatureGatesResponse(SdkResponse):
         :type enable_image_label: bool
         :param enable_pipeline: 是否支持流水线服务
         :type enable_pipeline: bool
+        :param enable_authorization_token: 是否支持增强型临时登录指令。设置为true时，前端获取登录指令时可以选择获取增强型登录指令。
+        :type enable_authorization_token: bool
+        :param enable_resource: 是否支持镜像资源。设置为true时，前端界面显示“镜像资源”页签，可查看镜像中心。
+        :type enable_resource: bool
         :param enable_list_v3: 是否支持list v3接口
         :type enable_list_v3: bool
         """
@@ -76,6 +84,8 @@ class ShowShareFeatureGatesResponse(SdkResponse):
         self._enable_cci_service = None
         self._enable_image_label = None
         self._enable_pipeline = None
+        self._enable_authorization_token = None
+        self._enable_resource = None
         self._enable_list_v3 = None
         self.discriminator = None
 
@@ -95,6 +105,10 @@ class ShowShareFeatureGatesResponse(SdkResponse):
             self.enable_image_label = enable_image_label
         if enable_pipeline is not None:
             self.enable_pipeline = enable_pipeline
+        if enable_authorization_token is not None:
+            self.enable_authorization_token = enable_authorization_token
+        if enable_resource is not None:
+            self.enable_resource = enable_resource
         if enable_list_v3 is not None:
             self.enable_list_v3 = enable_list_v3
 
@@ -273,6 +287,50 @@ class ShowShareFeatureGatesResponse(SdkResponse):
         :type enable_pipeline: bool
         """
         self._enable_pipeline = enable_pipeline
+
+    @property
+    def enable_authorization_token(self):
+        r"""Gets the enable_authorization_token of this ShowShareFeatureGatesResponse.
+
+        是否支持增强型临时登录指令。设置为true时，前端获取登录指令时可以选择获取增强型登录指令。
+
+        :return: The enable_authorization_token of this ShowShareFeatureGatesResponse.
+        :rtype: bool
+        """
+        return self._enable_authorization_token
+
+    @enable_authorization_token.setter
+    def enable_authorization_token(self, enable_authorization_token):
+        r"""Sets the enable_authorization_token of this ShowShareFeatureGatesResponse.
+
+        是否支持增强型临时登录指令。设置为true时，前端获取登录指令时可以选择获取增强型登录指令。
+
+        :param enable_authorization_token: The enable_authorization_token of this ShowShareFeatureGatesResponse.
+        :type enable_authorization_token: bool
+        """
+        self._enable_authorization_token = enable_authorization_token
+
+    @property
+    def enable_resource(self):
+        r"""Gets the enable_resource of this ShowShareFeatureGatesResponse.
+
+        是否支持镜像资源。设置为true时，前端界面显示“镜像资源”页签，可查看镜像中心。
+
+        :return: The enable_resource of this ShowShareFeatureGatesResponse.
+        :rtype: bool
+        """
+        return self._enable_resource
+
+    @enable_resource.setter
+    def enable_resource(self, enable_resource):
+        r"""Sets the enable_resource of this ShowShareFeatureGatesResponse.
+
+        是否支持镜像资源。设置为true时，前端界面显示“镜像资源”页签，可查看镜像中心。
+
+        :param enable_resource: The enable_resource of this ShowShareFeatureGatesResponse.
+        :type enable_resource: bool
+        """
+        self._enable_resource = enable_resource
 
     @property
     def enable_list_v3(self):

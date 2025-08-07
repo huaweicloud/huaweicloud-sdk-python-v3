@@ -23,7 +23,8 @@ class CreateAccountStatusDto:
         'created_at': 'datetime',
         'id': 'str',
         'state': 'str',
-        'failure_reason': 'str'
+        'failure_reason': 'str',
+        'failure_detail_msg': 'CreateAccountStatusDtoFailureDetailMsg'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class CreateAccountStatusDto:
         'created_at': 'created_at',
         'id': 'id',
         'state': 'state',
-        'failure_reason': 'failure_reason'
+        'failure_reason': 'failure_reason',
+        'failure_detail_msg': 'failure_detail_msg'
     }
 
-    def __init__(self, account_id=None, account_name=None, completed_at=None, created_at=None, id=None, state=None, failure_reason=None):
+    def __init__(self, account_id=None, account_name=None, completed_at=None, created_at=None, id=None, state=None, failure_reason=None, failure_detail_msg=None):
         r"""CreateAccountStatusDto
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class CreateAccountStatusDto:
         :type state: str
         :param failure_reason: 如果请求失败，则说明失败原因。
         :type failure_reason: str
+        :param failure_detail_msg: 
+        :type failure_detail_msg: :class:`huaweicloudsdkorganizations.v1.CreateAccountStatusDtoFailureDetailMsg`
         """
         
         
@@ -66,6 +70,7 @@ class CreateAccountStatusDto:
         self._id = None
         self._state = None
         self._failure_reason = None
+        self._failure_detail_msg = None
         self.discriminator = None
 
         self.account_id = account_id
@@ -76,6 +81,8 @@ class CreateAccountStatusDto:
         self.state = state
         if failure_reason is not None:
             self.failure_reason = failure_reason
+        if failure_detail_msg is not None:
+            self.failure_detail_msg = failure_detail_msg
 
     @property
     def account_id(self):
@@ -230,6 +237,24 @@ class CreateAccountStatusDto:
         :type failure_reason: str
         """
         self._failure_reason = failure_reason
+
+    @property
+    def failure_detail_msg(self):
+        r"""Gets the failure_detail_msg of this CreateAccountStatusDto.
+
+        :return: The failure_detail_msg of this CreateAccountStatusDto.
+        :rtype: :class:`huaweicloudsdkorganizations.v1.CreateAccountStatusDtoFailureDetailMsg`
+        """
+        return self._failure_detail_msg
+
+    @failure_detail_msg.setter
+    def failure_detail_msg(self, failure_detail_msg):
+        r"""Sets the failure_detail_msg of this CreateAccountStatusDto.
+
+        :param failure_detail_msg: The failure_detail_msg of this CreateAccountStatusDto.
+        :type failure_detail_msg: :class:`huaweicloudsdkorganizations.v1.CreateAccountStatusDtoFailureDetailMsg`
+        """
+        self._failure_detail_msg = failure_detail_msg
 
     def to_dict(self):
         """Returns the model properties as a dict"""

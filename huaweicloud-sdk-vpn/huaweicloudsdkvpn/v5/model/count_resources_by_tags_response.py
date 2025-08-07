@@ -30,7 +30,7 @@ class CountResourcesByTagsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total_count: 
+        :param total_count: 总记录数
         :type total_count: int
         """
         
@@ -46,6 +46,8 @@ class CountResourcesByTagsResponse(SdkResponse):
     def total_count(self):
         r"""Gets the total_count of this CountResourcesByTagsResponse.
 
+        总记录数
+
         :return: The total_count of this CountResourcesByTagsResponse.
         :rtype: int
         """
@@ -54,6 +56,8 @@ class CountResourcesByTagsResponse(SdkResponse):
     @total_count.setter
     def total_count(self, total_count):
         r"""Sets the total_count of this CountResourcesByTagsResponse.
+
+        总记录数
 
         :param total_count: The total_count of this CountResourcesByTagsResponse.
         :type total_count: int

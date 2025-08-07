@@ -29,7 +29,8 @@ class BackupTransferInfo:
         'backup_begin_time': 'int',
         'backup_end_time': 'int',
         'transfer_type': 'str',
-        'prefix': 'str'
+        'prefix': 'str',
+        'type': 'str'
     }
 
     attribute_map = {
@@ -45,10 +46,11 @@ class BackupTransferInfo:
         'backup_begin_time': 'backup_begin_time',
         'backup_end_time': 'backup_end_time',
         'transfer_type': 'transfer_type',
-        'prefix': 'prefix'
+        'prefix': 'prefix',
+        'type': 'type'
     }
 
-    def __init__(self, id=None, name=None, begin_time=None, end_time=None, status=None, size=None, instance_id=None, file_name=None, destination=None, backup_begin_time=None, backup_end_time=None, transfer_type=None, prefix=None):
+    def __init__(self, id=None, name=None, begin_time=None, end_time=None, status=None, size=None, instance_id=None, file_name=None, destination=None, backup_begin_time=None, backup_end_time=None, transfer_type=None, prefix=None, type=None):
         r"""BackupTransferInfo
 
         The model defined in huaweicloud sdk
@@ -79,6 +81,8 @@ class BackupTransferInfo:
         :type transfer_type: str
         :param prefix: 转储目标前缀
         :type prefix: str
+        :param type: 转储备份类型
+        :type type: str
         """
         
         
@@ -96,6 +100,7 @@ class BackupTransferInfo:
         self._backup_end_time = None
         self._transfer_type = None
         self._prefix = None
+        self._type = None
         self.discriminator = None
 
         if id is not None:
@@ -124,6 +129,8 @@ class BackupTransferInfo:
             self.transfer_type = transfer_type
         if prefix is not None:
             self.prefix = prefix
+        if type is not None:
+            self.type = type
 
     @property
     def id(self):
@@ -410,6 +417,28 @@ class BackupTransferInfo:
         :type prefix: str
         """
         self._prefix = prefix
+
+    @property
+    def type(self):
+        r"""Gets the type of this BackupTransferInfo.
+
+        转储备份类型
+
+        :return: The type of this BackupTransferInfo.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        r"""Sets the type of this BackupTransferInfo.
+
+        转储备份类型
+
+        :param type: The type of this BackupTransferInfo.
+        :type type: str
+        """
+        self._type = type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

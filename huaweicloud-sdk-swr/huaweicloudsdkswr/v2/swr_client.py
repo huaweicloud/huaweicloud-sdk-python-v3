@@ -2068,6 +2068,10 @@ class SwrClient(Client):
             path_params['repository'] = local_var_params['repository']
 
         query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
         if 'filter' in local_var_params:
             query_params.append(('filter', local_var_params['filter']))
 

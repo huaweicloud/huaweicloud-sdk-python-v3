@@ -5,7 +5,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class ListIRackRequest:
+class ListIRacksRequest:
 
     """
     Attributes:
@@ -31,7 +31,7 @@ class ListIRackRequest:
     }
 
     def __init__(self, region=None, marker=None, limit=None, order=None):
-        r"""ListIRackRequest
+        r"""ListIRacksRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,88 +63,88 @@ class ListIRackRequest:
 
     @property
     def region(self):
-        r"""Gets the region of this ListIRackRequest.
+        r"""Gets the region of this ListIRacksRequest.
 
         区域
 
-        :return: The region of this ListIRackRequest.
+        :return: The region of this ListIRacksRequest.
         :rtype: str
         """
         return self._region
 
     @region.setter
     def region(self, region):
-        r"""Sets the region of this ListIRackRequest.
+        r"""Sets the region of this ListIRacksRequest.
 
         区域
 
-        :param region: The region of this ListIRackRequest.
+        :param region: The region of this ListIRacksRequest.
         :type region: str
         """
         self._region = region
 
     @property
     def marker(self):
-        r"""Gets the marker of this ListIRackRequest.
+        r"""Gets the marker of this ListIRacksRequest.
 
         取值为上一页数据的最后一条记录的id
 
-        :return: The marker of this ListIRackRequest.
+        :return: The marker of this ListIRacksRequest.
         :rtype: str
         """
         return self._marker
 
     @marker.setter
     def marker(self, marker):
-        r"""Sets the marker of this ListIRackRequest.
+        r"""Sets the marker of this ListIRacksRequest.
 
         取值为上一页数据的最后一条记录的id
 
-        :param marker: The marker of this ListIRackRequest.
+        :param marker: The marker of this ListIRacksRequest.
         :type marker: str
         """
         self._marker = marker
 
     @property
     def limit(self):
-        r"""Gets the limit of this ListIRackRequest.
+        r"""Gets the limit of this ListIRacksRequest.
 
         分页大小，取值范围为[1,2000]，默认2000
 
-        :return: The limit of this ListIRackRequest.
+        :return: The limit of this ListIRacksRequest.
         :rtype: str
         """
         return self._limit
 
     @limit.setter
     def limit(self, limit):
-        r"""Sets the limit of this ListIRackRequest.
+        r"""Sets the limit of this ListIRacksRequest.
 
         分页大小，取值范围为[1,2000]，默认2000
 
-        :param limit: The limit of this ListIRackRequest.
+        :param limit: The limit of this ListIRacksRequest.
         :type limit: str
         """
         self._limit = limit
 
     @property
     def order(self):
-        r"""Gets the order of this ListIRackRequest.
+        r"""Gets the order of this ListIRacksRequest.
 
         排序升、降序
 
-        :return: The order of this ListIRackRequest.
+        :return: The order of this ListIRacksRequest.
         :rtype: str
         """
         return self._order
 
     @order.setter
     def order(self, order):
-        r"""Sets the order of this ListIRackRequest.
+        r"""Sets the order of this ListIRacksRequest.
 
         排序升、降序
 
-        :param order: The order of this ListIRackRequest.
+        :param order: The order of this ListIRacksRequest.
         :type order: str
         """
         self._order = order
@@ -191,7 +191,7 @@ class ListIRackRequest:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ListIRackRequest):
+        if not isinstance(other, ListIRacksRequest):
             return False
 
         return self.__dict__ == other.__dict__

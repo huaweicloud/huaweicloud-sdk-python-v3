@@ -2,11 +2,10 @@
 
 import six
 
-from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class CreateFastExecuteScriptResponse(SdkResponse):
+class UpdatePremiumHostAccessStatusRequest:
 
     """
     Attributes:
@@ -18,51 +17,75 @@ class CreateFastExecuteScriptResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'execution_id': 'str'
+        'host_id': 'str',
+        'body': 'UpdatePremiumHostAccessStatusRequestBody'
     }
 
     attribute_map = {
-        'execution_id': 'execution_id'
+        'host_id': 'host_id',
+        'body': 'body'
     }
 
-    def __init__(self, execution_id=None):
-        r"""CreateFastExecuteScriptResponse
+    def __init__(self, host_id=None, body=None):
+        r"""UpdatePremiumHostAccessStatusRequest
 
         The model defined in huaweicloud sdk
 
-        :param execution_id: 工作流执行id。
-        :type execution_id: str
+        :param host_id: **参数解释：** 独享模式域名ID **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        :type host_id: str
+        :param body: Body of the UpdatePremiumHostAccessStatusRequest
+        :type body: :class:`huaweicloudsdkwaf.v1.UpdatePremiumHostAccessStatusRequestBody`
         """
         
-        super(CreateFastExecuteScriptResponse, self).__init__()
+        
 
-        self._execution_id = None
+        self._host_id = None
+        self._body = None
         self.discriminator = None
 
-        if execution_id is not None:
-            self.execution_id = execution_id
+        self.host_id = host_id
+        if body is not None:
+            self.body = body
 
     @property
-    def execution_id(self):
-        r"""Gets the execution_id of this CreateFastExecuteScriptResponse.
+    def host_id(self):
+        r"""Gets the host_id of this UpdatePremiumHostAccessStatusRequest.
 
-        工作流执行id。
+        **参数解释：** 独享模式域名ID **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
-        :return: The execution_id of this CreateFastExecuteScriptResponse.
+        :return: The host_id of this UpdatePremiumHostAccessStatusRequest.
         :rtype: str
         """
-        return self._execution_id
+        return self._host_id
 
-    @execution_id.setter
-    def execution_id(self, execution_id):
-        r"""Sets the execution_id of this CreateFastExecuteScriptResponse.
+    @host_id.setter
+    def host_id(self, host_id):
+        r"""Sets the host_id of this UpdatePremiumHostAccessStatusRequest.
 
-        工作流执行id。
+        **参数解释：** 独享模式域名ID **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
-        :param execution_id: The execution_id of this CreateFastExecuteScriptResponse.
-        :type execution_id: str
+        :param host_id: The host_id of this UpdatePremiumHostAccessStatusRequest.
+        :type host_id: str
         """
-        self._execution_id = execution_id
+        self._host_id = host_id
+
+    @property
+    def body(self):
+        r"""Gets the body of this UpdatePremiumHostAccessStatusRequest.
+
+        :return: The body of this UpdatePremiumHostAccessStatusRequest.
+        :rtype: :class:`huaweicloudsdkwaf.v1.UpdatePremiumHostAccessStatusRequestBody`
+        """
+        return self._body
+
+    @body.setter
+    def body(self, body):
+        r"""Sets the body of this UpdatePremiumHostAccessStatusRequest.
+
+        :param body: The body of this UpdatePremiumHostAccessStatusRequest.
+        :type body: :class:`huaweicloudsdkwaf.v1.UpdatePremiumHostAccessStatusRequestBody`
+        """
+        self._body = body
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -106,7 +129,7 @@ class CreateFastExecuteScriptResponse(SdkResponse):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, CreateFastExecuteScriptResponse):
+        if not isinstance(other, UpdatePremiumHostAccessStatusRequest):
             return False
 
         return self.__dict__ == other.__dict__

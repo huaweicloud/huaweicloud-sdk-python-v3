@@ -20,17 +20,19 @@ class PolicyStatement:
         'effect': 'str',
         'action': 'list[str]',
         'resource': 'list[str]',
-        'condition': 'object'
+        'condition': 'object',
+        'sid': 'str'
     }
 
     attribute_map = {
         'effect': 'Effect',
         'action': 'Action',
         'resource': 'Resource',
-        'condition': 'Condition'
+        'condition': 'Condition',
+        'sid': 'Sid'
     }
 
-    def __init__(self, effect=None, action=None, resource=None, condition=None):
+    def __init__(self, effect=None, action=None, resource=None, condition=None, sid=None):
         r"""PolicyStatement
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class PolicyStatement:
         :type resource: list[str]
         :param condition: statement生效的条件
         :type condition: object
+        :param sid: 策略Id
+        :type sid: str
         """
         
         
@@ -51,6 +55,7 @@ class PolicyStatement:
         self._action = None
         self._resource = None
         self._condition = None
+        self._sid = None
         self.discriminator = None
 
         self.effect = effect
@@ -58,6 +63,8 @@ class PolicyStatement:
         self.resource = resource
         if condition is not None:
             self.condition = condition
+        if sid is not None:
+            self.sid = sid
 
     @property
     def effect(self):
@@ -146,6 +153,28 @@ class PolicyStatement:
         :type condition: object
         """
         self._condition = condition
+
+    @property
+    def sid(self):
+        r"""Gets the sid of this PolicyStatement.
+
+        策略Id
+
+        :return: The sid of this PolicyStatement.
+        :rtype: str
+        """
+        return self._sid
+
+    @sid.setter
+    def sid(self, sid):
+        r"""Sets the sid of this PolicyStatement.
+
+        策略Id
+
+        :param sid: The sid of this PolicyStatement.
+        :type sid: str
+        """
+        self._sid = sid
 
     def to_dict(self):
         """Returns the model properties as a dict"""
