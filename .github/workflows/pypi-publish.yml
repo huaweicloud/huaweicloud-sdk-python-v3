@@ -1,4 +1,6 @@
 name: Publish Python Packages To Pypi
+permissions:
+  contents: read
 on:
   workflow_dispatch:
   release:
