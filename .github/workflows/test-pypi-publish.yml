@@ -1,4 +1,6 @@
 name: Publish Python Packages To Test Pypi
+permissions:
+  contents: read
 on:
   workflow_dispatch:
 jobs:
