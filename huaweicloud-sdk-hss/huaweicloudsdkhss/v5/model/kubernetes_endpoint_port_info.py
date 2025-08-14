@@ -41,7 +41,7 @@ class KubernetesEndpointPortInfo:
 
         :param id: ID
         :type id: str
-        :param endpoint_id: 关联端点 ID
+        :param endpoint_id: 关联端点ID
         :type endpoint_id: str
         :param name: 端口名
         :type name: str
@@ -102,7 +102,7 @@ class KubernetesEndpointPortInfo:
     def endpoint_id(self):
         r"""Gets the endpoint_id of this KubernetesEndpointPortInfo.
 
-        关联端点 ID
+        关联端点ID
 
         :return: The endpoint_id of this KubernetesEndpointPortInfo.
         :rtype: str
@@ -113,7 +113,7 @@ class KubernetesEndpointPortInfo:
     def endpoint_id(self, endpoint_id):
         r"""Sets the endpoint_id of this KubernetesEndpointPortInfo.
 
-        关联端点 ID
+        关联端点ID
 
         :param endpoint_id: The endpoint_id of this KubernetesEndpointPortInfo.
         :type endpoint_id: str

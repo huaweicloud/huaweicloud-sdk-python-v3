@@ -34,11 +34,11 @@ class ListContainersResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total_num: 容器总数
+        :param total_num: **参数解释**: 容器总数 **取值范围**: 取值0-2147483647 
         :type total_num: int
-        :param last_update_time: 最近更新时间
+        :param last_update_time: **参数解释**: 最近更新时间 **取值范围**: 取值0-4071095999000 
         :type last_update_time: int
-        :param data_list: 容器基本信息列表
+        :param data_list: **参数解释**: 容器基本信息列表 **取值范围**: 取值0-2147483647个ContainerBaseInfo对象 
         :type data_list: list[:class:`huaweicloudsdkhss.v5.ContainerBaseInfo`]
         """
         
@@ -60,7 +60,7 @@ class ListContainersResponse(SdkResponse):
     def total_num(self):
         r"""Gets the total_num of this ListContainersResponse.
 
-        容器总数
+        **参数解释**: 容器总数 **取值范围**: 取值0-2147483647 
 
         :return: The total_num of this ListContainersResponse.
         :rtype: int
@@ -71,7 +71,7 @@ class ListContainersResponse(SdkResponse):
     def total_num(self, total_num):
         r"""Sets the total_num of this ListContainersResponse.
 
-        容器总数
+        **参数解释**: 容器总数 **取值范围**: 取值0-2147483647 
 
         :param total_num: The total_num of this ListContainersResponse.
         :type total_num: int
@@ -82,7 +82,7 @@ class ListContainersResponse(SdkResponse):
     def last_update_time(self):
         r"""Gets the last_update_time of this ListContainersResponse.
 
-        最近更新时间
+        **参数解释**: 最近更新时间 **取值范围**: 取值0-4071095999000 
 
         :return: The last_update_time of this ListContainersResponse.
         :rtype: int
@@ -93,7 +93,7 @@ class ListContainersResponse(SdkResponse):
     def last_update_time(self, last_update_time):
         r"""Sets the last_update_time of this ListContainersResponse.
 
-        最近更新时间
+        **参数解释**: 最近更新时间 **取值范围**: 取值0-4071095999000 
 
         :param last_update_time: The last_update_time of this ListContainersResponse.
         :type last_update_time: int
@@ -104,7 +104,7 @@ class ListContainersResponse(SdkResponse):
     def data_list(self):
         r"""Gets the data_list of this ListContainersResponse.
 
-        容器基本信息列表
+        **参数解释**: 容器基本信息列表 **取值范围**: 取值0-2147483647个ContainerBaseInfo对象 
 
         :return: The data_list of this ListContainersResponse.
         :rtype: list[:class:`huaweicloudsdkhss.v5.ContainerBaseInfo`]
@@ -115,7 +115,7 @@ class ListContainersResponse(SdkResponse):
     def data_list(self, data_list):
         r"""Sets the data_list of this ListContainersResponse.
 
-        容器基本信息列表
+        **参数解释**: 容器基本信息列表 **取值范围**: 取值0-2147483647个ContainerBaseInfo对象 
 
         :param data_list: The data_list of this ListContainersResponse.
         :type data_list: list[:class:`huaweicloudsdkhss.v5.ContainerBaseInfo`]

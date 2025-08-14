@@ -99,13 +99,13 @@ class ServerGroupDto:
         :type extra_session_size: int
         :param app_type: 
         :type app_type: :class:`huaweicloudsdkworkspaceapp.v1.AppTypeEnum`
-        :param create_time: 服务器组创建时间
+        :param create_time: 服务器组创建时间。
         :type create_time: datetime
-        :param update_time: 服务器组更新时间
+        :param update_time: 服务器组更新时间。
         :type update_time: datetime
         :param storage_mount_policy: 
         :type storage_mount_policy: :class:`huaweicloudsdkworkspaceapp.v1.StorageFolderMountType`
-        :param enterprise_project_id: 企业项目ID(0表示默认企业项目Id)
+        :param enterprise_project_id: 企业项目ID(0表示默认企业项目Id)。
         :type enterprise_project_id: str
         :param primary_server_group_ids: 主服务器组id列表。
         :type primary_server_group_ids: list[str]
@@ -113,9 +113,9 @@ class ServerGroupDto:
         :type secondary_server_group_ids: list[str]
         :param server_group_status: 服务器是否处于启用状态，true表示处于启用状态 false表示处于禁用状态。
         :type server_group_status: bool
-        :param site_type: 站点类型 - CENTER/IES
+        :param site_type: 站点类型 - CENTER/IES。
         :type site_type: str
-        :param site_id: 站点id
+        :param site_id: 站点id。
         :type site_id: str
         :param app_group_count: 关联应用组的总数量。
         :type app_group_count: int
@@ -469,7 +469,7 @@ class ServerGroupDto:
     def create_time(self):
         r"""Gets the create_time of this ServerGroupDto.
 
-        服务器组创建时间
+        服务器组创建时间。
 
         :return: The create_time of this ServerGroupDto.
         :rtype: datetime
@@ -480,7 +480,7 @@ class ServerGroupDto:
     def create_time(self, create_time):
         r"""Sets the create_time of this ServerGroupDto.
 
-        服务器组创建时间
+        服务器组创建时间。
 
         :param create_time: The create_time of this ServerGroupDto.
         :type create_time: datetime
@@ -491,7 +491,7 @@ class ServerGroupDto:
     def update_time(self):
         r"""Gets the update_time of this ServerGroupDto.
 
-        服务器组更新时间
+        服务器组更新时间。
 
         :return: The update_time of this ServerGroupDto.
         :rtype: datetime
@@ -502,7 +502,7 @@ class ServerGroupDto:
     def update_time(self, update_time):
         r"""Sets the update_time of this ServerGroupDto.
 
-        服务器组更新时间
+        服务器组更新时间。
 
         :param update_time: The update_time of this ServerGroupDto.
         :type update_time: datetime
@@ -531,7 +531,7 @@ class ServerGroupDto:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this ServerGroupDto.
 
-        企业项目ID(0表示默认企业项目Id)
+        企业项目ID(0表示默认企业项目Id)。
 
         :return: The enterprise_project_id of this ServerGroupDto.
         :rtype: str
@@ -542,7 +542,7 @@ class ServerGroupDto:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this ServerGroupDto.
 
-        企业项目ID(0表示默认企业项目Id)
+        企业项目ID(0表示默认企业项目Id)。
 
         :param enterprise_project_id: The enterprise_project_id of this ServerGroupDto.
         :type enterprise_project_id: str
@@ -619,7 +619,7 @@ class ServerGroupDto:
     def site_type(self):
         r"""Gets the site_type of this ServerGroupDto.
 
-        站点类型 - CENTER/IES
+        站点类型 - CENTER/IES。
 
         :return: The site_type of this ServerGroupDto.
         :rtype: str
@@ -630,7 +630,7 @@ class ServerGroupDto:
     def site_type(self, site_type):
         r"""Sets the site_type of this ServerGroupDto.
 
-        站点类型 - CENTER/IES
+        站点类型 - CENTER/IES。
 
         :param site_type: The site_type of this ServerGroupDto.
         :type site_type: str
@@ -641,7 +641,7 @@ class ServerGroupDto:
     def site_id(self):
         r"""Gets the site_id of this ServerGroupDto.
 
-        站点id
+        站点id。
 
         :return: The site_id of this ServerGroupDto.
         :rtype: str
@@ -652,7 +652,7 @@ class ServerGroupDto:
     def site_id(self, site_id):
         r"""Sets the site_id of this ServerGroupDto.
 
-        站点id
+        站点id。
 
         :param site_id: The site_id of this ServerGroupDto.
         :type site_id: str

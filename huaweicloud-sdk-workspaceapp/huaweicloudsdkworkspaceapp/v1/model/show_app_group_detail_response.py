@@ -70,7 +70,7 @@ class ShowAppGroupDetailResponse(SdkResponse):
         :type create_at: datetime
         :param app_count: 应用数量。
         :type app_count: int
-        :param app_server_group_description: 应用组描述
+        :param app_server_group_description: 应用组描述。
         :type app_server_group_description: str
         """
         
@@ -328,7 +328,7 @@ class ShowAppGroupDetailResponse(SdkResponse):
     def app_server_group_description(self):
         r"""Gets the app_server_group_description of this ShowAppGroupDetailResponse.
 
-        应用组描述
+        应用组描述。
 
         :return: The app_server_group_description of this ShowAppGroupDetailResponse.
         :rtype: str
@@ -339,7 +339,7 @@ class ShowAppGroupDetailResponse(SdkResponse):
     def app_server_group_description(self, app_server_group_description):
         r"""Sets the app_server_group_description of this ShowAppGroupDetailResponse.
 
-        应用组描述
+        应用组描述。
 
         :param app_server_group_description: The app_server_group_description of this ShowAppGroupDetailResponse.
         :type app_server_group_description: str

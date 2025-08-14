@@ -91,13 +91,13 @@ class ListSwrImageRepositoryRequest:
         :type instance_name: str
         :param image_size: 镜像大小
         :type image_size: int
-        :param start_latest_update_time: 创建时间开始日期，时间单位 毫秒（ms）
+        :param start_latest_update_time: 创建时间开始日期，时间单位：毫秒（ms）
         :type start_latest_update_time: int
-        :param end_latest_update_time: 创建时间结束日期，时间单位 毫秒（ms）
+        :param end_latest_update_time: 创建时间结束日期，时间单位：毫秒（ms）
         :type end_latest_update_time: int
-        :param start_latest_scan_time: 最近一次扫描完成时间开始日期，时间单位 毫秒（ms）
+        :param start_latest_scan_time: 最近一次扫描完成时间开始日期，时间单位：毫秒（ms）
         :type start_latest_scan_time: int
-        :param end_latest_scan_time: 最近一次扫描完成时间结束日期，时间单位 毫秒（ms）
+        :param end_latest_scan_time: 最近一次扫描完成时间结束日期，时间单位：毫秒（ms）
         :type end_latest_scan_time: int
         :param has_malicious_file: 是否存在恶意文件
         :type has_malicious_file: bool
@@ -441,7 +441,7 @@ class ListSwrImageRepositoryRequest:
     def start_latest_update_time(self):
         r"""Gets the start_latest_update_time of this ListSwrImageRepositoryRequest.
 
-        创建时间开始日期，时间单位 毫秒（ms）
+        创建时间开始日期，时间单位：毫秒（ms）
 
         :return: The start_latest_update_time of this ListSwrImageRepositoryRequest.
         :rtype: int
@@ -452,7 +452,7 @@ class ListSwrImageRepositoryRequest:
     def start_latest_update_time(self, start_latest_update_time):
         r"""Sets the start_latest_update_time of this ListSwrImageRepositoryRequest.
 
-        创建时间开始日期，时间单位 毫秒（ms）
+        创建时间开始日期，时间单位：毫秒（ms）
 
         :param start_latest_update_time: The start_latest_update_time of this ListSwrImageRepositoryRequest.
         :type start_latest_update_time: int
@@ -463,7 +463,7 @@ class ListSwrImageRepositoryRequest:
     def end_latest_update_time(self):
         r"""Gets the end_latest_update_time of this ListSwrImageRepositoryRequest.
 
-        创建时间结束日期，时间单位 毫秒（ms）
+        创建时间结束日期，时间单位：毫秒（ms）
 
         :return: The end_latest_update_time of this ListSwrImageRepositoryRequest.
         :rtype: int
@@ -474,7 +474,7 @@ class ListSwrImageRepositoryRequest:
     def end_latest_update_time(self, end_latest_update_time):
         r"""Sets the end_latest_update_time of this ListSwrImageRepositoryRequest.
 
-        创建时间结束日期，时间单位 毫秒（ms）
+        创建时间结束日期，时间单位：毫秒（ms）
 
         :param end_latest_update_time: The end_latest_update_time of this ListSwrImageRepositoryRequest.
         :type end_latest_update_time: int
@@ -485,7 +485,7 @@ class ListSwrImageRepositoryRequest:
     def start_latest_scan_time(self):
         r"""Gets the start_latest_scan_time of this ListSwrImageRepositoryRequest.
 
-        最近一次扫描完成时间开始日期，时间单位 毫秒（ms）
+        最近一次扫描完成时间开始日期，时间单位：毫秒（ms）
 
         :return: The start_latest_scan_time of this ListSwrImageRepositoryRequest.
         :rtype: int
@@ -496,7 +496,7 @@ class ListSwrImageRepositoryRequest:
     def start_latest_scan_time(self, start_latest_scan_time):
         r"""Sets the start_latest_scan_time of this ListSwrImageRepositoryRequest.
 
-        最近一次扫描完成时间开始日期，时间单位 毫秒（ms）
+        最近一次扫描完成时间开始日期，时间单位：毫秒（ms）
 
         :param start_latest_scan_time: The start_latest_scan_time of this ListSwrImageRepositoryRequest.
         :type start_latest_scan_time: int
@@ -507,7 +507,7 @@ class ListSwrImageRepositoryRequest:
     def end_latest_scan_time(self):
         r"""Gets the end_latest_scan_time of this ListSwrImageRepositoryRequest.
 
-        最近一次扫描完成时间结束日期，时间单位 毫秒（ms）
+        最近一次扫描完成时间结束日期，时间单位：毫秒（ms）
 
         :return: The end_latest_scan_time of this ListSwrImageRepositoryRequest.
         :rtype: int
@@ -518,7 +518,7 @@ class ListSwrImageRepositoryRequest:
     def end_latest_scan_time(self, end_latest_scan_time):
         r"""Sets the end_latest_scan_time of this ListSwrImageRepositoryRequest.
 
-        最近一次扫描完成时间结束日期，时间单位 毫秒（ms）
+        最近一次扫描完成时间结束日期，时间单位：毫秒（ms）
 
         :param end_latest_scan_time: The end_latest_scan_time of this ListSwrImageRepositoryRequest.
         :type end_latest_scan_time: int

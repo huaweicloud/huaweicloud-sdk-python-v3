@@ -49,9 +49,9 @@ class AddProtectionPolicyInfoRequestInfo:
         :type policy_name: str
         :param protection_mode: 防护动作，包含如下2种。   - alarm_and_isolation ：告警并自动隔离。   - alarm_only ：仅告警。
         :type protection_mode: str
-        :param deploy_mode: 是否开启动态诱饵，包含如下2种, 默认为关闭防护动态诱饵防护。   - opened ：开启。   - closed ：关闭。            
+        :param deploy_mode: 是否开启动态诱饵，包含如下2种，默认为关闭防护动态诱饵防护。   - opened ：开启。   - closed ：关闭。
         :type deploy_mode: str
-        :param protection_directory: 防护目录,多个目录请用英文分号隔开，最多支持填写20个防护目录
+        :param protection_directory: 防护目录，多个目录请用英文分号隔开，最多支持填写20个防护目录
         :type protection_directory: str
         :param protection_type: 防护文件类型，例如：docx，txt，avi
         :type protection_type: str
@@ -61,7 +61,7 @@ class AddProtectionPolicyInfoRequestInfo:
         :type operating_system: str
         :param process_whitelist: 进程白名单
         :type process_whitelist: list[:class:`huaweicloudsdkhss.v5.TrustProcessInfo`]
-        :param ai_protection_status: 是否开启AI勒索防护，包含如下2种, 默认为关闭AI勒索防护，当前只支持Windows防护策略   - opened ：开启。   - closed ：关闭。            
+        :param ai_protection_status: 是否开启AI勒索防护，包含如下2种，默认为关闭AI勒索防护，当前只支持Windows防护策略   - opened ：开启。   - closed ：关闭。
         :type ai_protection_status: str
         """
         
@@ -140,7 +140,7 @@ class AddProtectionPolicyInfoRequestInfo:
     def deploy_mode(self):
         r"""Gets the deploy_mode of this AddProtectionPolicyInfoRequestInfo.
 
-        是否开启动态诱饵，包含如下2种, 默认为关闭防护动态诱饵防护。   - opened ：开启。   - closed ：关闭。            
+        是否开启动态诱饵，包含如下2种，默认为关闭防护动态诱饵防护。   - opened ：开启。   - closed ：关闭。
 
         :return: The deploy_mode of this AddProtectionPolicyInfoRequestInfo.
         :rtype: str
@@ -151,7 +151,7 @@ class AddProtectionPolicyInfoRequestInfo:
     def deploy_mode(self, deploy_mode):
         r"""Sets the deploy_mode of this AddProtectionPolicyInfoRequestInfo.
 
-        是否开启动态诱饵，包含如下2种, 默认为关闭防护动态诱饵防护。   - opened ：开启。   - closed ：关闭。            
+        是否开启动态诱饵，包含如下2种，默认为关闭防护动态诱饵防护。   - opened ：开启。   - closed ：关闭。
 
         :param deploy_mode: The deploy_mode of this AddProtectionPolicyInfoRequestInfo.
         :type deploy_mode: str
@@ -162,7 +162,7 @@ class AddProtectionPolicyInfoRequestInfo:
     def protection_directory(self):
         r"""Gets the protection_directory of this AddProtectionPolicyInfoRequestInfo.
 
-        防护目录,多个目录请用英文分号隔开，最多支持填写20个防护目录
+        防护目录，多个目录请用英文分号隔开，最多支持填写20个防护目录
 
         :return: The protection_directory of this AddProtectionPolicyInfoRequestInfo.
         :rtype: str
@@ -173,7 +173,7 @@ class AddProtectionPolicyInfoRequestInfo:
     def protection_directory(self, protection_directory):
         r"""Sets the protection_directory of this AddProtectionPolicyInfoRequestInfo.
 
-        防护目录,多个目录请用英文分号隔开，最多支持填写20个防护目录
+        防护目录，多个目录请用英文分号隔开，最多支持填写20个防护目录
 
         :param protection_directory: The protection_directory of this AddProtectionPolicyInfoRequestInfo.
         :type protection_directory: str
@@ -272,7 +272,7 @@ class AddProtectionPolicyInfoRequestInfo:
     def ai_protection_status(self):
         r"""Gets the ai_protection_status of this AddProtectionPolicyInfoRequestInfo.
 
-        是否开启AI勒索防护，包含如下2种, 默认为关闭AI勒索防护，当前只支持Windows防护策略   - opened ：开启。   - closed ：关闭。            
+        是否开启AI勒索防护，包含如下2种，默认为关闭AI勒索防护，当前只支持Windows防护策略   - opened ：开启。   - closed ：关闭。
 
         :return: The ai_protection_status of this AddProtectionPolicyInfoRequestInfo.
         :rtype: str
@@ -283,7 +283,7 @@ class AddProtectionPolicyInfoRequestInfo:
     def ai_protection_status(self, ai_protection_status):
         r"""Sets the ai_protection_status of this AddProtectionPolicyInfoRequestInfo.
 
-        是否开启AI勒索防护，包含如下2种, 默认为关闭AI勒索防护，当前只支持Windows防护策略   - opened ：开启。   - closed ：关闭。            
+        是否开启AI勒索防护，包含如下2种，默认为关闭AI勒索防护，当前只支持Windows防护策略   - opened ：开启。   - closed ：关闭。
 
         :param ai_protection_status: The ai_protection_status of this AddProtectionPolicyInfoRequestInfo.
         :type ai_protection_status: str

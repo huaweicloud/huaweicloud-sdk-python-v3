@@ -73,7 +73,7 @@ class ListRansomwareProtectionNodesRequest:
         :type host_id: str
         :param os_type: 操作系统类型，包含如下2种。   - Linux ：Linux。   - Windows ：Windows。
         :type os_type: str
-        :param host_ip: 服务器IP地址,服务器公网IP地址
+        :param host_ip: 服务器IP地址，服务器公网IP地址
         :type host_ip: str
         :param private_ip: 服务器私有IP
         :type private_ip: str
@@ -287,7 +287,7 @@ class ListRansomwareProtectionNodesRequest:
     def host_ip(self):
         r"""Gets the host_ip of this ListRansomwareProtectionNodesRequest.
 
-        服务器IP地址,服务器公网IP地址
+        服务器IP地址，服务器公网IP地址
 
         :return: The host_ip of this ListRansomwareProtectionNodesRequest.
         :rtype: str
@@ -298,7 +298,7 @@ class ListRansomwareProtectionNodesRequest:
     def host_ip(self, host_ip):
         r"""Sets the host_ip of this ListRansomwareProtectionNodesRequest.
 
-        服务器IP地址,服务器公网IP地址
+        服务器IP地址，服务器公网IP地址
 
         :param host_ip: The host_ip of this ListRansomwareProtectionNodesRequest.
         :type host_ip: str

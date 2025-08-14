@@ -32,7 +32,7 @@ class ListInstancesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param instances: IAM身份中心实例信息列表
+        :param instances: IAM身份中心实例信息列表。
         :type instances: list[:class:`huaweicloudsdkidentitycenter.v1.InstanceMetadataEntryDto`]
         :param page_info: 
         :type page_info: :class:`huaweicloudsdkidentitycenter.v1.PageInfoDto`
@@ -53,7 +53,7 @@ class ListInstancesResponse(SdkResponse):
     def instances(self):
         r"""Gets the instances of this ListInstancesResponse.
 
-        IAM身份中心实例信息列表
+        IAM身份中心实例信息列表。
 
         :return: The instances of this ListInstancesResponse.
         :rtype: list[:class:`huaweicloudsdkidentitycenter.v1.InstanceMetadataEntryDto`]
@@ -64,7 +64,7 @@ class ListInstancesResponse(SdkResponse):
     def instances(self, instances):
         r"""Sets the instances of this ListInstancesResponse.
 
-        IAM身份中心实例信息列表
+        IAM身份中心实例信息列表。
 
         :param instances: The instances of this ListInstancesResponse.
         :type instances: list[:class:`huaweicloudsdkidentitycenter.v1.InstanceMetadataEntryDto`]

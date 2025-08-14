@@ -35,9 +35,9 @@ class ChangeEventRequestInfo:
 
         The model defined in huaweicloud sdk
 
-        :param operate_type: 处理方式，包含如下:   - mark_as_handled : 手动处理   - ignore : 忽略   - add_to_alarm_whitelist : 加入告警白名单   - add_to_login_whitelist : 加入登录白名单   - isolate_and_kill : 隔离查杀   - unhandle : 取消手动处理   - do_not_ignore : 取消忽略   - remove_from_alarm_whitelist : 删除告警白名单   - remove_from_login_whitelist : 删除登录白名单   - do_not_isolate_or_kill : 取消隔离查杀
+        :param operate_type: **参数解释**： 处理方式 **取值范围**： - mark_as_handled：手动处理 - ignore：忽略 - add_to_alarm_whitelist：加入告警白名单 - add_to_login_whitelist：加入登录白名单 - isolate_and_kill：隔离查杀 - unhandle：取消手动处理 - do_not_ignore：取消忽略 - remove_from_alarm_whitelist：删除告警白名单 - remove_from_login_whitelist：删除登录白名单 - do_not_isolate_or_kill：取消隔离查杀 
         :type operate_type: str
-        :param handler: 备注信息，已处理的告警才有
+        :param handler: **参数解释**： 备注信息，已处理的告警才有 **取值范围**： 字符长度1-256位 
         :type handler: str
         :param operate_event_list: 操作的事件列表
         :type operate_event_list: list[:class:`huaweicloudsdkhss.v5.OperateEventRequestInfo`]
@@ -64,7 +64,7 @@ class ChangeEventRequestInfo:
     def operate_type(self):
         r"""Gets the operate_type of this ChangeEventRequestInfo.
 
-        处理方式，包含如下:   - mark_as_handled : 手动处理   - ignore : 忽略   - add_to_alarm_whitelist : 加入告警白名单   - add_to_login_whitelist : 加入登录白名单   - isolate_and_kill : 隔离查杀   - unhandle : 取消手动处理   - do_not_ignore : 取消忽略   - remove_from_alarm_whitelist : 删除告警白名单   - remove_from_login_whitelist : 删除登录白名单   - do_not_isolate_or_kill : 取消隔离查杀
+        **参数解释**： 处理方式 **取值范围**： - mark_as_handled：手动处理 - ignore：忽略 - add_to_alarm_whitelist：加入告警白名单 - add_to_login_whitelist：加入登录白名单 - isolate_and_kill：隔离查杀 - unhandle：取消手动处理 - do_not_ignore：取消忽略 - remove_from_alarm_whitelist：删除告警白名单 - remove_from_login_whitelist：删除登录白名单 - do_not_isolate_or_kill：取消隔离查杀 
 
         :return: The operate_type of this ChangeEventRequestInfo.
         :rtype: str
@@ -75,7 +75,7 @@ class ChangeEventRequestInfo:
     def operate_type(self, operate_type):
         r"""Sets the operate_type of this ChangeEventRequestInfo.
 
-        处理方式，包含如下:   - mark_as_handled : 手动处理   - ignore : 忽略   - add_to_alarm_whitelist : 加入告警白名单   - add_to_login_whitelist : 加入登录白名单   - isolate_and_kill : 隔离查杀   - unhandle : 取消手动处理   - do_not_ignore : 取消忽略   - remove_from_alarm_whitelist : 删除告警白名单   - remove_from_login_whitelist : 删除登录白名单   - do_not_isolate_or_kill : 取消隔离查杀
+        **参数解释**： 处理方式 **取值范围**： - mark_as_handled：手动处理 - ignore：忽略 - add_to_alarm_whitelist：加入告警白名单 - add_to_login_whitelist：加入登录白名单 - isolate_and_kill：隔离查杀 - unhandle：取消手动处理 - do_not_ignore：取消忽略 - remove_from_alarm_whitelist：删除告警白名单 - remove_from_login_whitelist：删除登录白名单 - do_not_isolate_or_kill：取消隔离查杀 
 
         :param operate_type: The operate_type of this ChangeEventRequestInfo.
         :type operate_type: str
@@ -86,7 +86,7 @@ class ChangeEventRequestInfo:
     def handler(self):
         r"""Gets the handler of this ChangeEventRequestInfo.
 
-        备注信息，已处理的告警才有
+        **参数解释**： 备注信息，已处理的告警才有 **取值范围**： 字符长度1-256位 
 
         :return: The handler of this ChangeEventRequestInfo.
         :rtype: str
@@ -97,7 +97,7 @@ class ChangeEventRequestInfo:
     def handler(self, handler):
         r"""Sets the handler of this ChangeEventRequestInfo.
 
-        备注信息，已处理的告警才有
+        **参数解释**： 备注信息，已处理的告警才有 **取值范围**： 字符长度1-256位 
 
         :param handler: The handler of this ChangeEventRequestInfo.
         :type handler: str

@@ -44,6 +44,8 @@ class AppServerTaskStatus:
     BUILD_IMAGE = "build_image"
     BUILD_SNAPSHOT = "build_snapshot"
     RESTORE_SNAPSHOT = "restore_snapshot"
+    INSTALLING_APP = "installing_app"
+    INSTALL_APP_FAILED = "install_app_failed"
     NULL = "null"
     """
     Attributes:

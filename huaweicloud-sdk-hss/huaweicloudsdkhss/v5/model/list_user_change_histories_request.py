@@ -55,21 +55,21 @@ class ListUserChangeHistoriesRequest:
         :type host_id: str
         :param enterprise_project_id: **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
         :type enterprise_project_id: str
-        :param user_name: **参数解释**: 用户名 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
+        :param user_name: **参数解释**: 用户名 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位  **默认取值**: 不涉及 
         :type user_name: str
-        :param root_permission: **参数解释**: 是否有root权限 **约束限制**: 不涉及 **取值范围**: true: 具有root权限 false: 不具有root权限 **默认取值**: 不涉及 
+        :param root_permission: **参数解释**: 是否有root权限 **约束限制**: 不涉及 **取值范围**: true: 具有root权限 false: 不具有root权限  **默认取值**: 不涉及 
         :type root_permission: bool
-        :param private_ip: **参数解释**: 服务器私有IP **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
+        :param private_ip: **参数解释**: 服务器私有IP **约束限制**: 不涉及 **取值范围**: 字符长度1-256位  **默认取值**: 不涉及 
         :type private_ip: str
-        :param change_type: **参数解释**: 账号变更类型 **约束限制**: 不涉及 **取值范围**: - ADD ：添加 - DELETE ：删除 - MODIFY ： 修改 **默认取值**: 不涉及 
+        :param change_type: **参数解释**: 账号变更类型 **约束限制**: 不涉及 **取值范围**: - ADD ：添加 - DELETE ：删除 - MODIFY ： 修改  **默认取值**: 不涉及 
         :type change_type: str
-        :param limit: **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
+        :param limit: **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200  **默认取值**: 10 
         :type limit: int
-        :param offset: **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值10000 **默认取值**: 不涉及 
+        :param offset: **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值10000  **默认取值**: 不涉及 
         :type offset: int
-        :param start_time: **参数解释**: 变更开始时间，13位时间戳 **约束限制**: 不涉及 **取值范围**: 取值0-4070880000000 **默认取值**: 不涉及 
+        :param start_time: **参数解释**: 变更开始时间，13位时间戳 **约束限制**: 不涉及 **取值范围**: 取值0-4070880000000  **默认取值**: 不涉及 
         :type start_time: int
-        :param end_time: **参数解释**: 变更结束时间，13位时间戳 **约束限制**: 不涉及 **取值范围**: 取值0-4070880000000 **默认取值**: 不涉及 
+        :param end_time: **参数解释**: 变更结束时间，13位时间戳 **约束限制**: 不涉及 **取值范围**: 取值0-4070880000000  **默认取值**: 不涉及 
         :type end_time: int
         """
         
@@ -181,7 +181,7 @@ class ListUserChangeHistoriesRequest:
     def user_name(self):
         r"""Gets the user_name of this ListUserChangeHistoriesRequest.
 
-        **参数解释**: 用户名 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
+        **参数解释**: 用户名 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位  **默认取值**: 不涉及 
 
         :return: The user_name of this ListUserChangeHistoriesRequest.
         :rtype: str
@@ -192,7 +192,7 @@ class ListUserChangeHistoriesRequest:
     def user_name(self, user_name):
         r"""Sets the user_name of this ListUserChangeHistoriesRequest.
 
-        **参数解释**: 用户名 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
+        **参数解释**: 用户名 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位  **默认取值**: 不涉及 
 
         :param user_name: The user_name of this ListUserChangeHistoriesRequest.
         :type user_name: str
@@ -203,7 +203,7 @@ class ListUserChangeHistoriesRequest:
     def root_permission(self):
         r"""Gets the root_permission of this ListUserChangeHistoriesRequest.
 
-        **参数解释**: 是否有root权限 **约束限制**: 不涉及 **取值范围**: true: 具有root权限 false: 不具有root权限 **默认取值**: 不涉及 
+        **参数解释**: 是否有root权限 **约束限制**: 不涉及 **取值范围**: true: 具有root权限 false: 不具有root权限  **默认取值**: 不涉及 
 
         :return: The root_permission of this ListUserChangeHistoriesRequest.
         :rtype: bool
@@ -214,7 +214,7 @@ class ListUserChangeHistoriesRequest:
     def root_permission(self, root_permission):
         r"""Sets the root_permission of this ListUserChangeHistoriesRequest.
 
-        **参数解释**: 是否有root权限 **约束限制**: 不涉及 **取值范围**: true: 具有root权限 false: 不具有root权限 **默认取值**: 不涉及 
+        **参数解释**: 是否有root权限 **约束限制**: 不涉及 **取值范围**: true: 具有root权限 false: 不具有root权限  **默认取值**: 不涉及 
 
         :param root_permission: The root_permission of this ListUserChangeHistoriesRequest.
         :type root_permission: bool
@@ -225,7 +225,7 @@ class ListUserChangeHistoriesRequest:
     def private_ip(self):
         r"""Gets the private_ip of this ListUserChangeHistoriesRequest.
 
-        **参数解释**: 服务器私有IP **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
+        **参数解释**: 服务器私有IP **约束限制**: 不涉及 **取值范围**: 字符长度1-256位  **默认取值**: 不涉及 
 
         :return: The private_ip of this ListUserChangeHistoriesRequest.
         :rtype: str
@@ -236,7 +236,7 @@ class ListUserChangeHistoriesRequest:
     def private_ip(self, private_ip):
         r"""Sets the private_ip of this ListUserChangeHistoriesRequest.
 
-        **参数解释**: 服务器私有IP **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
+        **参数解释**: 服务器私有IP **约束限制**: 不涉及 **取值范围**: 字符长度1-256位  **默认取值**: 不涉及 
 
         :param private_ip: The private_ip of this ListUserChangeHistoriesRequest.
         :type private_ip: str
@@ -247,7 +247,7 @@ class ListUserChangeHistoriesRequest:
     def change_type(self):
         r"""Gets the change_type of this ListUserChangeHistoriesRequest.
 
-        **参数解释**: 账号变更类型 **约束限制**: 不涉及 **取值范围**: - ADD ：添加 - DELETE ：删除 - MODIFY ： 修改 **默认取值**: 不涉及 
+        **参数解释**: 账号变更类型 **约束限制**: 不涉及 **取值范围**: - ADD ：添加 - DELETE ：删除 - MODIFY ： 修改  **默认取值**: 不涉及 
 
         :return: The change_type of this ListUserChangeHistoriesRequest.
         :rtype: str
@@ -258,7 +258,7 @@ class ListUserChangeHistoriesRequest:
     def change_type(self, change_type):
         r"""Sets the change_type of this ListUserChangeHistoriesRequest.
 
-        **参数解释**: 账号变更类型 **约束限制**: 不涉及 **取值范围**: - ADD ：添加 - DELETE ：删除 - MODIFY ： 修改 **默认取值**: 不涉及 
+        **参数解释**: 账号变更类型 **约束限制**: 不涉及 **取值范围**: - ADD ：添加 - DELETE ：删除 - MODIFY ： 修改  **默认取值**: 不涉及 
 
         :param change_type: The change_type of this ListUserChangeHistoriesRequest.
         :type change_type: str
@@ -269,7 +269,7 @@ class ListUserChangeHistoriesRequest:
     def limit(self):
         r"""Gets the limit of this ListUserChangeHistoriesRequest.
 
-        **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
+        **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200  **默认取值**: 10 
 
         :return: The limit of this ListUserChangeHistoriesRequest.
         :rtype: int
@@ -280,7 +280,7 @@ class ListUserChangeHistoriesRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListUserChangeHistoriesRequest.
 
-        **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
+        **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200  **默认取值**: 10 
 
         :param limit: The limit of this ListUserChangeHistoriesRequest.
         :type limit: int
@@ -291,7 +291,7 @@ class ListUserChangeHistoriesRequest:
     def offset(self):
         r"""Gets the offset of this ListUserChangeHistoriesRequest.
 
-        **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值10000 **默认取值**: 不涉及 
+        **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值10000  **默认取值**: 不涉及 
 
         :return: The offset of this ListUserChangeHistoriesRequest.
         :rtype: int
@@ -302,7 +302,7 @@ class ListUserChangeHistoriesRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListUserChangeHistoriesRequest.
 
-        **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值10000 **默认取值**: 不涉及 
+        **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值10000  **默认取值**: 不涉及 
 
         :param offset: The offset of this ListUserChangeHistoriesRequest.
         :type offset: int
@@ -313,7 +313,7 @@ class ListUserChangeHistoriesRequest:
     def start_time(self):
         r"""Gets the start_time of this ListUserChangeHistoriesRequest.
 
-        **参数解释**: 变更开始时间，13位时间戳 **约束限制**: 不涉及 **取值范围**: 取值0-4070880000000 **默认取值**: 不涉及 
+        **参数解释**: 变更开始时间，13位时间戳 **约束限制**: 不涉及 **取值范围**: 取值0-4070880000000  **默认取值**: 不涉及 
 
         :return: The start_time of this ListUserChangeHistoriesRequest.
         :rtype: int
@@ -324,7 +324,7 @@ class ListUserChangeHistoriesRequest:
     def start_time(self, start_time):
         r"""Sets the start_time of this ListUserChangeHistoriesRequest.
 
-        **参数解释**: 变更开始时间，13位时间戳 **约束限制**: 不涉及 **取值范围**: 取值0-4070880000000 **默认取值**: 不涉及 
+        **参数解释**: 变更开始时间，13位时间戳 **约束限制**: 不涉及 **取值范围**: 取值0-4070880000000  **默认取值**: 不涉及 
 
         :param start_time: The start_time of this ListUserChangeHistoriesRequest.
         :type start_time: int
@@ -335,7 +335,7 @@ class ListUserChangeHistoriesRequest:
     def end_time(self):
         r"""Gets the end_time of this ListUserChangeHistoriesRequest.
 
-        **参数解释**: 变更结束时间，13位时间戳 **约束限制**: 不涉及 **取值范围**: 取值0-4070880000000 **默认取值**: 不涉及 
+        **参数解释**: 变更结束时间，13位时间戳 **约束限制**: 不涉及 **取值范围**: 取值0-4070880000000  **默认取值**: 不涉及 
 
         :return: The end_time of this ListUserChangeHistoriesRequest.
         :rtype: int
@@ -346,7 +346,7 @@ class ListUserChangeHistoriesRequest:
     def end_time(self, end_time):
         r"""Sets the end_time of this ListUserChangeHistoriesRequest.
 
-        **参数解释**: 变更结束时间，13位时间戳 **约束限制**: 不涉及 **取值范围**: 取值0-4070880000000 **默认取值**: 不涉及 
+        **参数解释**: 变更结束时间，13位时间戳 **约束限制**: 不涉及 **取值范围**: 取值0-4070880000000  **默认取值**: 不涉及 
 
         :param end_time: The end_time of this ListUserChangeHistoriesRequest.
         :type end_time: int

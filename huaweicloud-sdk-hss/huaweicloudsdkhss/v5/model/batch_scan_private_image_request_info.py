@@ -75,13 +75,13 @@ class BatchScanPrivateImageRequestInfo:
         :type latest_version: bool
         :param image_size: 镜像大小
         :type image_size: int
-        :param start_latest_update_time: 创建时间开始日期，时间单位 毫秒（ms）
+        :param start_latest_update_time: 创建时间开始日期，时间单位：毫秒（ms）
         :type start_latest_update_time: int
-        :param end_latest_update_time: 创建时间结束日期，时间单位 毫秒（ms）
+        :param end_latest_update_time: 创建时间结束日期，时间单位：毫秒（ms）
         :type end_latest_update_time: int
-        :param start_latest_scan_time: 最近一次扫描完成时间开始日期，时间单位 毫秒（ms）
+        :param start_latest_scan_time: 最近一次扫描完成时间开始日期，时间单位：毫秒（ms）
         :type start_latest_scan_time: int
-        :param end_latest_scan_time: 最近一次扫描完成时间结束日期，时间单位 毫秒（ms）
+        :param end_latest_scan_time: 最近一次扫描完成时间结束日期，时间单位：毫秒（ms）
         :type end_latest_scan_time: int
         """
         
@@ -355,7 +355,7 @@ class BatchScanPrivateImageRequestInfo:
     def start_latest_update_time(self):
         r"""Gets the start_latest_update_time of this BatchScanPrivateImageRequestInfo.
 
-        创建时间开始日期，时间单位 毫秒（ms）
+        创建时间开始日期，时间单位：毫秒（ms）
 
         :return: The start_latest_update_time of this BatchScanPrivateImageRequestInfo.
         :rtype: int
@@ -366,7 +366,7 @@ class BatchScanPrivateImageRequestInfo:
     def start_latest_update_time(self, start_latest_update_time):
         r"""Sets the start_latest_update_time of this BatchScanPrivateImageRequestInfo.
 
-        创建时间开始日期，时间单位 毫秒（ms）
+        创建时间开始日期，时间单位：毫秒（ms）
 
         :param start_latest_update_time: The start_latest_update_time of this BatchScanPrivateImageRequestInfo.
         :type start_latest_update_time: int
@@ -377,7 +377,7 @@ class BatchScanPrivateImageRequestInfo:
     def end_latest_update_time(self):
         r"""Gets the end_latest_update_time of this BatchScanPrivateImageRequestInfo.
 
-        创建时间结束日期，时间单位 毫秒（ms）
+        创建时间结束日期，时间单位：毫秒（ms）
 
         :return: The end_latest_update_time of this BatchScanPrivateImageRequestInfo.
         :rtype: int
@@ -388,7 +388,7 @@ class BatchScanPrivateImageRequestInfo:
     def end_latest_update_time(self, end_latest_update_time):
         r"""Sets the end_latest_update_time of this BatchScanPrivateImageRequestInfo.
 
-        创建时间结束日期，时间单位 毫秒（ms）
+        创建时间结束日期，时间单位：毫秒（ms）
 
         :param end_latest_update_time: The end_latest_update_time of this BatchScanPrivateImageRequestInfo.
         :type end_latest_update_time: int
@@ -399,7 +399,7 @@ class BatchScanPrivateImageRequestInfo:
     def start_latest_scan_time(self):
         r"""Gets the start_latest_scan_time of this BatchScanPrivateImageRequestInfo.
 
-        最近一次扫描完成时间开始日期，时间单位 毫秒（ms）
+        最近一次扫描完成时间开始日期，时间单位：毫秒（ms）
 
         :return: The start_latest_scan_time of this BatchScanPrivateImageRequestInfo.
         :rtype: int
@@ -410,7 +410,7 @@ class BatchScanPrivateImageRequestInfo:
     def start_latest_scan_time(self, start_latest_scan_time):
         r"""Sets the start_latest_scan_time of this BatchScanPrivateImageRequestInfo.
 
-        最近一次扫描完成时间开始日期，时间单位 毫秒（ms）
+        最近一次扫描完成时间开始日期，时间单位：毫秒（ms）
 
         :param start_latest_scan_time: The start_latest_scan_time of this BatchScanPrivateImageRequestInfo.
         :type start_latest_scan_time: int
@@ -421,7 +421,7 @@ class BatchScanPrivateImageRequestInfo:
     def end_latest_scan_time(self):
         r"""Gets the end_latest_scan_time of this BatchScanPrivateImageRequestInfo.
 
-        最近一次扫描完成时间结束日期，时间单位 毫秒（ms）
+        最近一次扫描完成时间结束日期，时间单位：毫秒（ms）
 
         :return: The end_latest_scan_time of this BatchScanPrivateImageRequestInfo.
         :rtype: int
@@ -432,7 +432,7 @@ class BatchScanPrivateImageRequestInfo:
     def end_latest_scan_time(self, end_latest_scan_time):
         r"""Sets the end_latest_scan_time of this BatchScanPrivateImageRequestInfo.
 
-        最近一次扫描完成时间结束日期，时间单位 毫秒（ms）
+        最近一次扫描完成时间结束日期，时间单位：毫秒（ms）
 
         :param end_latest_scan_time: The end_latest_scan_time of this BatchScanPrivateImageRequestInfo.
         :type end_latest_scan_time: int

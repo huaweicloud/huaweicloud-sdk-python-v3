@@ -41,19 +41,19 @@ class ListContainersRequest:
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
+        :param enterprise_project_id: **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
         :type enterprise_project_id: str
-        :param container_name: 容器名称
+        :param container_name: **参数解释**: 容器名称 **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
         :type container_name: str
-        :param pod_name: 所属Pod名称
+        :param pod_name: **参数解释**: 所属Pod名称 **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
         :type pod_name: str
-        :param image_name: 镜像名称
+        :param image_name: **参数解释**: 镜像名称 **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
         :type image_name: str
-        :param cluster_container: 是否是集群纳管的容器
+        :param cluster_container: **参数解释**: 是否是集群纳管的容器 **约束限制**: 不涉及 **取值范围**:   - ture：是集群纳管的容器。   - false：不是集群纳管的容器。 **默认取值**: false 
         :type cluster_container: bool
-        :param limit: 每页显示个数
+        :param limit: **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
         :type limit: int
-        :param offset: 偏移量：指定返回记录的开始位置
+        :param offset: **参数解释**: 指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 取值0-2000000 **默认取值**: 0 
         :type offset: int
         """
         
@@ -87,7 +87,7 @@ class ListContainersRequest:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this ListContainersRequest.
 
-        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
+        **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
 
         :return: The enterprise_project_id of this ListContainersRequest.
         :rtype: str
@@ -98,7 +98,7 @@ class ListContainersRequest:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this ListContainersRequest.
 
-        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
+        **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
 
         :param enterprise_project_id: The enterprise_project_id of this ListContainersRequest.
         :type enterprise_project_id: str
@@ -109,7 +109,7 @@ class ListContainersRequest:
     def container_name(self):
         r"""Gets the container_name of this ListContainersRequest.
 
-        容器名称
+        **参数解释**: 容器名称 **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
 
         :return: The container_name of this ListContainersRequest.
         :rtype: str
@@ -120,7 +120,7 @@ class ListContainersRequest:
     def container_name(self, container_name):
         r"""Sets the container_name of this ListContainersRequest.
 
-        容器名称
+        **参数解释**: 容器名称 **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
 
         :param container_name: The container_name of this ListContainersRequest.
         :type container_name: str
@@ -131,7 +131,7 @@ class ListContainersRequest:
     def pod_name(self):
         r"""Gets the pod_name of this ListContainersRequest.
 
-        所属Pod名称
+        **参数解释**: 所属Pod名称 **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
 
         :return: The pod_name of this ListContainersRequest.
         :rtype: str
@@ -142,7 +142,7 @@ class ListContainersRequest:
     def pod_name(self, pod_name):
         r"""Sets the pod_name of this ListContainersRequest.
 
-        所属Pod名称
+        **参数解释**: 所属Pod名称 **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
 
         :param pod_name: The pod_name of this ListContainersRequest.
         :type pod_name: str
@@ -153,7 +153,7 @@ class ListContainersRequest:
     def image_name(self):
         r"""Gets the image_name of this ListContainersRequest.
 
-        镜像名称
+        **参数解释**: 镜像名称 **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
 
         :return: The image_name of this ListContainersRequest.
         :rtype: str
@@ -164,7 +164,7 @@ class ListContainersRequest:
     def image_name(self, image_name):
         r"""Sets the image_name of this ListContainersRequest.
 
-        镜像名称
+        **参数解释**: 镜像名称 **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
 
         :param image_name: The image_name of this ListContainersRequest.
         :type image_name: str
@@ -175,7 +175,7 @@ class ListContainersRequest:
     def cluster_container(self):
         r"""Gets the cluster_container of this ListContainersRequest.
 
-        是否是集群纳管的容器
+        **参数解释**: 是否是集群纳管的容器 **约束限制**: 不涉及 **取值范围**:   - ture：是集群纳管的容器。   - false：不是集群纳管的容器。 **默认取值**: false 
 
         :return: The cluster_container of this ListContainersRequest.
         :rtype: bool
@@ -186,7 +186,7 @@ class ListContainersRequest:
     def cluster_container(self, cluster_container):
         r"""Sets the cluster_container of this ListContainersRequest.
 
-        是否是集群纳管的容器
+        **参数解释**: 是否是集群纳管的容器 **约束限制**: 不涉及 **取值范围**:   - ture：是集群纳管的容器。   - false：不是集群纳管的容器。 **默认取值**: false 
 
         :param cluster_container: The cluster_container of this ListContainersRequest.
         :type cluster_container: bool
@@ -197,7 +197,7 @@ class ListContainersRequest:
     def limit(self):
         r"""Gets the limit of this ListContainersRequest.
 
-        每页显示个数
+        **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
 
         :return: The limit of this ListContainersRequest.
         :rtype: int
@@ -208,7 +208,7 @@ class ListContainersRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListContainersRequest.
 
-        每页显示个数
+        **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
 
         :param limit: The limit of this ListContainersRequest.
         :type limit: int
@@ -219,7 +219,7 @@ class ListContainersRequest:
     def offset(self):
         r"""Gets the offset of this ListContainersRequest.
 
-        偏移量：指定返回记录的开始位置
+        **参数解释**: 指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 取值0-2000000 **默认取值**: 0 
 
         :return: The offset of this ListContainersRequest.
         :rtype: int
@@ -230,7 +230,7 @@ class ListContainersRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListContainersRequest.
 
-        偏移量：指定返回记录的开始位置
+        **参数解释**: 指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 取值0-2000000 **默认取值**: 0 
 
         :param offset: The offset of this ListContainersRequest.
         :type offset: int

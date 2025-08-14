@@ -60,6 +60,12 @@ class HssRegion:
                         "https://hss.eu-west-101.myhuaweicloud.eu")
     RU_MOSCOW_1 = Region("ru-moscow-1",
                         "https://hss.ru-moscow-1.myhuaweicloud.com")
+    CN_NORTH_12 = Region("cn-north-12",
+                        "https://hss.cn-north-12.myhuaweicloud.com")
+    CN_SOUTHWEST_3 = Region("cn-southwest-3",
+                        "https://hss.cn-southwest-3.myhuaweicloud.com")
+    CN_NORTH_11 = Region("cn-north-11",
+                        "https://hss.cn-north-11.myhuaweicloud.com")
 
     static_fields = {
         "cn-north-9": CN_NORTH_9,
@@ -89,6 +95,9 @@ class HssRegion:
         "my-kualalumpur-1": MY_KUALALUMPUR_1,
         "eu-west-101": EU_WEST_101,
         "ru-moscow-1": RU_MOSCOW_1,
+        "cn-north-12": CN_NORTH_12,
+        "cn-southwest-3": CN_SOUTHWEST_3,
+        "cn-north-11": CN_NORTH_11,
     }
 
     @classmethod

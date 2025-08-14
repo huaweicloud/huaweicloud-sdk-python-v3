@@ -26,7 +26,9 @@ class Policies:
         'virtual_channel': 'VirtualChannel',
         'keyboard_mouse': 'PoliciesKeyboardMouse',
         'bandwidth': 'Bandwidth',
-        'custom': 'PoliciesCustom'
+        'custom': 'PoliciesCustom',
+        'cloud_storage': 'PoliciesCloudStorage',
+        'user_profile': 'PoliciesUserProfile'
     }
 
     attribute_map = {
@@ -39,10 +41,12 @@ class Policies:
         'virtual_channel': 'virtual_channel',
         'keyboard_mouse': 'keyboard_mouse',
         'bandwidth': 'bandwidth',
-        'custom': 'custom'
+        'custom': 'custom',
+        'cloud_storage': 'cloud_storage',
+        'user_profile': 'user_profile'
     }
 
-    def __init__(self, peripherals=None, audio=None, client=None, display=None, file_and_clipboard=None, session=None, virtual_channel=None, keyboard_mouse=None, bandwidth=None, custom=None):
+    def __init__(self, peripherals=None, audio=None, client=None, display=None, file_and_clipboard=None, session=None, virtual_channel=None, keyboard_mouse=None, bandwidth=None, custom=None, cloud_storage=None, user_profile=None):
         r"""Policies
 
         The model defined in huaweicloud sdk
@@ -67,6 +71,10 @@ class Policies:
         :type bandwidth: :class:`huaweicloudsdkworkspaceapp.v1.Bandwidth`
         :param custom: 
         :type custom: :class:`huaweicloudsdkworkspaceapp.v1.PoliciesCustom`
+        :param cloud_storage: 
+        :type cloud_storage: :class:`huaweicloudsdkworkspaceapp.v1.PoliciesCloudStorage`
+        :param user_profile: 
+        :type user_profile: :class:`huaweicloudsdkworkspaceapp.v1.PoliciesUserProfile`
         """
         
         
@@ -81,6 +89,8 @@ class Policies:
         self._keyboard_mouse = None
         self._bandwidth = None
         self._custom = None
+        self._cloud_storage = None
+        self._user_profile = None
         self.discriminator = None
 
         if peripherals is not None:
@@ -103,6 +113,10 @@ class Policies:
             self.bandwidth = bandwidth
         if custom is not None:
             self.custom = custom
+        if cloud_storage is not None:
+            self.cloud_storage = cloud_storage
+        if user_profile is not None:
+            self.user_profile = user_profile
 
     @property
     def peripherals(self):
@@ -283,6 +297,42 @@ class Policies:
         :type custom: :class:`huaweicloudsdkworkspaceapp.v1.PoliciesCustom`
         """
         self._custom = custom
+
+    @property
+    def cloud_storage(self):
+        r"""Gets the cloud_storage of this Policies.
+
+        :return: The cloud_storage of this Policies.
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.PoliciesCloudStorage`
+        """
+        return self._cloud_storage
+
+    @cloud_storage.setter
+    def cloud_storage(self, cloud_storage):
+        r"""Sets the cloud_storage of this Policies.
+
+        :param cloud_storage: The cloud_storage of this Policies.
+        :type cloud_storage: :class:`huaweicloudsdkworkspaceapp.v1.PoliciesCloudStorage`
+        """
+        self._cloud_storage = cloud_storage
+
+    @property
+    def user_profile(self):
+        r"""Gets the user_profile of this Policies.
+
+        :return: The user_profile of this Policies.
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.PoliciesUserProfile`
+        """
+        return self._user_profile
+
+    @user_profile.setter
+    def user_profile(self, user_profile):
+        r"""Sets the user_profile of this Policies.
+
+        :param user_profile: The user_profile of this Policies.
+        :type user_profile: :class:`huaweicloudsdkworkspaceapp.v1.PoliciesUserProfile`
+        """
+        self._user_profile = user_profile
 
     def to_dict(self):
         """Returns the model properties as a dict"""

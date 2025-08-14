@@ -83,7 +83,7 @@ class AntiVirusPolicyResponseInfo:
         :type scan_dir: str
         :param ignore_dir: 排除目录，多个用;分隔
         :type ignore_dir: str
-        :param action: 处置动作，包含如下:   - auto ：自动处置   - manual : 人工处置
+        :param action: 处置动作，包含如下:   - auto：自动处置   - manual：人工处置
         :type action: str
         :param invalidate: 失效，包含如下:   - true ：是   - fasle ：否
         :type invalidate: bool
@@ -399,7 +399,7 @@ class AntiVirusPolicyResponseInfo:
     def action(self):
         r"""Gets the action of this AntiVirusPolicyResponseInfo.
 
-        处置动作，包含如下:   - auto ：自动处置   - manual : 人工处置
+        处置动作，包含如下:   - auto：自动处置   - manual：人工处置
 
         :return: The action of this AntiVirusPolicyResponseInfo.
         :rtype: str
@@ -410,7 +410,7 @@ class AntiVirusPolicyResponseInfo:
     def action(self, action):
         r"""Sets the action of this AntiVirusPolicyResponseInfo.
 
-        处置动作，包含如下:   - auto ：自动处置   - manual : 人工处置
+        处置动作，包含如下:   - auto：自动处置   - manual：人工处置
 
         :param action: The action of this AntiVirusPolicyResponseInfo.
         :type action: str

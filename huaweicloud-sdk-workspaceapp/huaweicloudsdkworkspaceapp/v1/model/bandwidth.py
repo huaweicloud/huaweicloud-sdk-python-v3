@@ -115,7 +115,7 @@ class Bandwidth:
         :type com_bandwidth_control_enable: bool
         :param com_bandwidth_control_options: 
         :type com_bandwidth_control_options: :class:`huaweicloudsdkworkspaceapp.v1.ComBandwidthControlOptions`
-        :param file_redirection_bandwidth_control_enable: 是否开启文件重定向带宽控制。取值为：false：表示关闭。true：表示开启
+        :param file_redirection_bandwidth_control_enable: 是否开启文件重定向带宽控制。取值为：false：表示关闭。true：表示开启。
         :type file_redirection_bandwidth_control_enable: bool
         :param file_redirection_bandwidth_control_options: 
         :type file_redirection_bandwidth_control_options: :class:`huaweicloudsdkworkspaceapp.v1.FileRedirectionBandwidthControlOptions`
@@ -569,7 +569,7 @@ class Bandwidth:
     def file_redirection_bandwidth_control_enable(self):
         r"""Gets the file_redirection_bandwidth_control_enable of this Bandwidth.
 
-        是否开启文件重定向带宽控制。取值为：false：表示关闭。true：表示开启
+        是否开启文件重定向带宽控制。取值为：false：表示关闭。true：表示开启。
 
         :return: The file_redirection_bandwidth_control_enable of this Bandwidth.
         :rtype: bool
@@ -580,7 +580,7 @@ class Bandwidth:
     def file_redirection_bandwidth_control_enable(self, file_redirection_bandwidth_control_enable):
         r"""Sets the file_redirection_bandwidth_control_enable of this Bandwidth.
 
-        是否开启文件重定向带宽控制。取值为：false：表示关闭。true：表示开启
+        是否开启文件重定向带宽控制。取值为：false：表示关闭。true：表示开启。
 
         :param file_redirection_bandwidth_control_enable: The file_redirection_bandwidth_control_enable of this Bandwidth.
         :type file_redirection_bandwidth_control_enable: bool

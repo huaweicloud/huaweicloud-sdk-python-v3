@@ -49,17 +49,17 @@ class ListQuotasDetailRequest:
 
         The model defined in huaweicloud sdk
 
-        :param region: Region ID
+        :param region: **参数解释**: 区域ID，用于查询目的区域内的资产。获取方式请参见[获取区域ID](hss_02_0026.xml)。 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
         :type region: str
         :param enterprise_project_id: **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
         :type enterprise_project_id: str
         :param version: **参数解释**： 主机开通的版本 **约束限制**: 不涉及 **取值范围**： 包含如下7种输入。 - hss.version.null ：无。 - hss.version.basic ：基础版。 - hss.version.advanced ：专业版。 - hss.version.enterprise ：企业版。 - hss.version.premium ：旗舰版。 - hss.version.wtp ：网页防篡改版。 - hss.version.container.enterprise：容器版。 **默认取值**: 不涉及
         :type version: str
-        :param category: **参数解释**: 类别 **约束限制**: 不涉及 **取值范围**: 包含如下两种： - host_resource ：HOST_RESOURCE - container_resource ：CONTAINER_RESOURCE **默认取值**: 不涉及
+        :param category: **参数解释**: 类别 **约束限制**: 不涉及 **取值范围**: 包含如下两种： - host_resource ：主机 - container_resource ：容器 **默认取值**: 不涉及
         :type category: str
-        :param quota_status: **参数解释**: 配额状态 **约束限制**: 不涉及 **取值范围**: 包含如下三种： - normal ： QUOTA_STATUS_NORMAL - expired ：QUOTA_STATUS_EXPIRED - freeze ：QUOTA_STATUS_FREEZE **默认取值**: 不涉及
+        :param quota_status: **参数解释**: 配额状态 **约束限制**: 不涉及 **取值范围**: 包含如下三种： - normal ： 正常 - expired ：过期 - freeze ：冻结 **默认取值**: 不涉及
         :type quota_status: str
-        :param used_status: **参数解释**: 使用状态 **约束限制**: 不涉及 **取值范围**: 包含如下两种： - idle ：USED_STATUS_IDLE - used ：USED_STATUS_USED **默认取值**: 不涉及
+        :param used_status: **参数解释**: 使用状态 **约束限制**: 不涉及 **取值范围**: 包含如下两种： - idle ：空闲的 - used ：使用中 **默认取值**: 不涉及
         :type used_status: str
         :param host_name: **参数解释**: 服务器名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
         :type host_name: str
@@ -115,7 +115,7 @@ class ListQuotasDetailRequest:
     def region(self):
         r"""Gets the region of this ListQuotasDetailRequest.
 
-        Region ID
+        **参数解释**: 区域ID，用于查询目的区域内的资产。获取方式请参见[获取区域ID](hss_02_0026.xml)。 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
 
         :return: The region of this ListQuotasDetailRequest.
         :rtype: str
@@ -126,7 +126,7 @@ class ListQuotasDetailRequest:
     def region(self, region):
         r"""Sets the region of this ListQuotasDetailRequest.
 
-        Region ID
+        **参数解释**: 区域ID，用于查询目的区域内的资产。获取方式请参见[获取区域ID](hss_02_0026.xml)。 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
 
         :param region: The region of this ListQuotasDetailRequest.
         :type region: str
@@ -181,7 +181,7 @@ class ListQuotasDetailRequest:
     def category(self):
         r"""Gets the category of this ListQuotasDetailRequest.
 
-        **参数解释**: 类别 **约束限制**: 不涉及 **取值范围**: 包含如下两种： - host_resource ：HOST_RESOURCE - container_resource ：CONTAINER_RESOURCE **默认取值**: 不涉及
+        **参数解释**: 类别 **约束限制**: 不涉及 **取值范围**: 包含如下两种： - host_resource ：主机 - container_resource ：容器 **默认取值**: 不涉及
 
         :return: The category of this ListQuotasDetailRequest.
         :rtype: str
@@ -192,7 +192,7 @@ class ListQuotasDetailRequest:
     def category(self, category):
         r"""Sets the category of this ListQuotasDetailRequest.
 
-        **参数解释**: 类别 **约束限制**: 不涉及 **取值范围**: 包含如下两种： - host_resource ：HOST_RESOURCE - container_resource ：CONTAINER_RESOURCE **默认取值**: 不涉及
+        **参数解释**: 类别 **约束限制**: 不涉及 **取值范围**: 包含如下两种： - host_resource ：主机 - container_resource ：容器 **默认取值**: 不涉及
 
         :param category: The category of this ListQuotasDetailRequest.
         :type category: str
@@ -203,7 +203,7 @@ class ListQuotasDetailRequest:
     def quota_status(self):
         r"""Gets the quota_status of this ListQuotasDetailRequest.
 
-        **参数解释**: 配额状态 **约束限制**: 不涉及 **取值范围**: 包含如下三种： - normal ： QUOTA_STATUS_NORMAL - expired ：QUOTA_STATUS_EXPIRED - freeze ：QUOTA_STATUS_FREEZE **默认取值**: 不涉及
+        **参数解释**: 配额状态 **约束限制**: 不涉及 **取值范围**: 包含如下三种： - normal ： 正常 - expired ：过期 - freeze ：冻结 **默认取值**: 不涉及
 
         :return: The quota_status of this ListQuotasDetailRequest.
         :rtype: str
@@ -214,7 +214,7 @@ class ListQuotasDetailRequest:
     def quota_status(self, quota_status):
         r"""Sets the quota_status of this ListQuotasDetailRequest.
 
-        **参数解释**: 配额状态 **约束限制**: 不涉及 **取值范围**: 包含如下三种： - normal ： QUOTA_STATUS_NORMAL - expired ：QUOTA_STATUS_EXPIRED - freeze ：QUOTA_STATUS_FREEZE **默认取值**: 不涉及
+        **参数解释**: 配额状态 **约束限制**: 不涉及 **取值范围**: 包含如下三种： - normal ： 正常 - expired ：过期 - freeze ：冻结 **默认取值**: 不涉及
 
         :param quota_status: The quota_status of this ListQuotasDetailRequest.
         :type quota_status: str
@@ -225,7 +225,7 @@ class ListQuotasDetailRequest:
     def used_status(self):
         r"""Gets the used_status of this ListQuotasDetailRequest.
 
-        **参数解释**: 使用状态 **约束限制**: 不涉及 **取值范围**: 包含如下两种： - idle ：USED_STATUS_IDLE - used ：USED_STATUS_USED **默认取值**: 不涉及
+        **参数解释**: 使用状态 **约束限制**: 不涉及 **取值范围**: 包含如下两种： - idle ：空闲的 - used ：使用中 **默认取值**: 不涉及
 
         :return: The used_status of this ListQuotasDetailRequest.
         :rtype: str
@@ -236,7 +236,7 @@ class ListQuotasDetailRequest:
     def used_status(self, used_status):
         r"""Sets the used_status of this ListQuotasDetailRequest.
 
-        **参数解释**: 使用状态 **约束限制**: 不涉及 **取值范围**: 包含如下两种： - idle ：USED_STATUS_IDLE - used ：USED_STATUS_USED **默认取值**: 不涉及
+        **参数解释**: 使用状态 **约束限制**: 不涉及 **取值范围**: 包含如下两种： - idle ：空闲的 - used ：使用中 **默认取值**: 不涉及
 
         :param used_status: The used_status of this ListQuotasDetailRequest.
         :type used_status: str

@@ -109,7 +109,7 @@ class ProcessEventResourceResponseInfo:
         :type container_id: str
         :param image_id: **参数解释**： 镜像ID **取值范围**： 字符长度1-64位 
         :type image_id: str
-        :param image_name: 镜像名称，只有容器类型的告警有
+        :param image_name: **参数解释**： 镜像名称，只有容器类型的告警有 **取值范围**： 字符长度1-256位 
         :type image_name: str
         :param host_attr: **参数解释**： 主机属性 **取值范围**： 字符长度1-64位 
         :type host_attr: str
@@ -121,7 +121,7 @@ class ProcessEventResourceResponseInfo:
         :type sys_arch: str
         :param os_bit: **参数解释**： 操作系统位数 **取值范围**： 字符长度1-64位 
         :type os_bit: str
-        :param os_type: 操作系统类型，包含如下2种。   - Linux ：Linux。   - Windows ：Windows。
+        :param os_type: **参数解释**： 操作系统类型 **取值范围**： - Linux：Linux。 - Windows：Windows。 
         :type os_type: str
         :param os_name: 操作系统名称
         :type os_name: str
@@ -129,9 +129,9 @@ class ProcessEventResourceResponseInfo:
         :type host_name: str
         :param host_ip: **参数解释**: 主机IP **取值范围**: 字符长度1-128位 
         :type host_ip: str
-        :param public_ip: 弹性公网IP地址
+        :param public_ip: **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位 
         :type public_ip: str
-        :param host_id: **参数解释**: 服务器ID **取值范围**: 字符长度1-64位 
+        :param host_id: **参数解释**： 主机ID **取值范围**： 字符长度1-64位 
         :type host_id: str
         :param pod_uid: **参数解释**： pod uid **取值范围**： 字符长度1-64位 
         :type pod_uid: str
@@ -475,7 +475,7 @@ class ProcessEventResourceResponseInfo:
     def image_name(self):
         r"""Gets the image_name of this ProcessEventResourceResponseInfo.
 
-        镜像名称，只有容器类型的告警有
+        **参数解释**： 镜像名称，只有容器类型的告警有 **取值范围**： 字符长度1-256位 
 
         :return: The image_name of this ProcessEventResourceResponseInfo.
         :rtype: str
@@ -486,7 +486,7 @@ class ProcessEventResourceResponseInfo:
     def image_name(self, image_name):
         r"""Sets the image_name of this ProcessEventResourceResponseInfo.
 
-        镜像名称，只有容器类型的告警有
+        **参数解释**： 镜像名称，只有容器类型的告警有 **取值范围**： 字符长度1-256位 
 
         :param image_name: The image_name of this ProcessEventResourceResponseInfo.
         :type image_name: str
@@ -607,7 +607,7 @@ class ProcessEventResourceResponseInfo:
     def os_type(self):
         r"""Gets the os_type of this ProcessEventResourceResponseInfo.
 
-        操作系统类型，包含如下2种。   - Linux ：Linux。   - Windows ：Windows。
+        **参数解释**： 操作系统类型 **取值范围**： - Linux：Linux。 - Windows：Windows。 
 
         :return: The os_type of this ProcessEventResourceResponseInfo.
         :rtype: str
@@ -618,7 +618,7 @@ class ProcessEventResourceResponseInfo:
     def os_type(self, os_type):
         r"""Sets the os_type of this ProcessEventResourceResponseInfo.
 
-        操作系统类型，包含如下2种。   - Linux ：Linux。   - Windows ：Windows。
+        **参数解释**： 操作系统类型 **取值范围**： - Linux：Linux。 - Windows：Windows。 
 
         :param os_type: The os_type of this ProcessEventResourceResponseInfo.
         :type os_type: str
@@ -695,7 +695,7 @@ class ProcessEventResourceResponseInfo:
     def public_ip(self):
         r"""Gets the public_ip of this ProcessEventResourceResponseInfo.
 
-        弹性公网IP地址
+        **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位 
 
         :return: The public_ip of this ProcessEventResourceResponseInfo.
         :rtype: str
@@ -706,7 +706,7 @@ class ProcessEventResourceResponseInfo:
     def public_ip(self, public_ip):
         r"""Sets the public_ip of this ProcessEventResourceResponseInfo.
 
-        弹性公网IP地址
+        **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位 
 
         :param public_ip: The public_ip of this ProcessEventResourceResponseInfo.
         :type public_ip: str
@@ -717,7 +717,7 @@ class ProcessEventResourceResponseInfo:
     def host_id(self):
         r"""Gets the host_id of this ProcessEventResourceResponseInfo.
 
-        **参数解释**: 服务器ID **取值范围**: 字符长度1-64位 
+        **参数解释**： 主机ID **取值范围**： 字符长度1-64位 
 
         :return: The host_id of this ProcessEventResourceResponseInfo.
         :rtype: str
@@ -728,7 +728,7 @@ class ProcessEventResourceResponseInfo:
     def host_id(self, host_id):
         r"""Sets the host_id of this ProcessEventResourceResponseInfo.
 
-        **参数解释**: 服务器ID **取值范围**: 字符长度1-64位 
+        **参数解释**： 主机ID **取值范围**： 字符长度1-64位 
 
         :param host_id: The host_id of this ProcessEventResourceResponseInfo.
         :type host_id: str

@@ -37,7 +37,7 @@ class ListCommonTipsRequest:
         :type enterprise_project_id: str
         :param limit: 每页显示个数，默认200
         :type limit: int
-        :param type: 提示信息的类型，包含如下： - host_name ：主机名称。 - host_id：主机id。 - public_ip：公网ip。 - private_ip ：私网ip。 - vpc_id ：vpc id。 - cluster_id ：集群 id。 - host_tags：主机标签。
+        :param type: 提示信息的类型，包含如下： - host_name：主机名称。 - host_id：主机id。 - public_ip：公网ip。 - private_ip：私网ip。 - vpc_id：vpc id。 - cluster_id：集群id。 - host_tags：主机标签。
         :type type: str
         """
         
@@ -102,7 +102,7 @@ class ListCommonTipsRequest:
     def type(self):
         r"""Gets the type of this ListCommonTipsRequest.
 
-        提示信息的类型，包含如下： - host_name ：主机名称。 - host_id：主机id。 - public_ip：公网ip。 - private_ip ：私网ip。 - vpc_id ：vpc id。 - cluster_id ：集群 id。 - host_tags：主机标签。
+        提示信息的类型，包含如下： - host_name：主机名称。 - host_id：主机id。 - public_ip：公网ip。 - private_ip：私网ip。 - vpc_id：vpc id。 - cluster_id：集群id。 - host_tags：主机标签。
 
         :return: The type of this ListCommonTipsRequest.
         :rtype: str
@@ -113,7 +113,7 @@ class ListCommonTipsRequest:
     def type(self, type):
         r"""Sets the type of this ListCommonTipsRequest.
 
-        提示信息的类型，包含如下： - host_name ：主机名称。 - host_id：主机id。 - public_ip：公网ip。 - private_ip ：私网ip。 - vpc_id ：vpc id。 - cluster_id ：集群 id。 - host_tags：主机标签。
+        提示信息的类型，包含如下： - host_name：主机名称。 - host_id：主机id。 - public_ip：公网ip。 - private_ip：私网ip。 - vpc_id：vpc id。 - cluster_id：集群id。 - host_tags：主机标签。
 
         :param type: The type of this ListCommonTipsRequest.
         :type type: str

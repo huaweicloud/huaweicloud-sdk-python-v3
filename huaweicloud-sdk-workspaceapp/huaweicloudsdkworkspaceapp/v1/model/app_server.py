@@ -171,9 +171,9 @@ class AppServer:
         :type freeze: list[:class:`huaweicloudsdkworkspaceapp.v1.CbcFreezeInfo`]
         :param host_address: vpc和子网信息。
         :type host_address: list[:class:`huaweicloudsdkworkspaceapp.v1.EcsNetWork`]
-        :param enterprise_project_id: 企业项目ID,仅企业项目会返回
+        :param enterprise_project_id: 企业项目ID,仅企业项目会返回。
         :type enterprise_project_id: str
-        :param tags: 标签信息
+        :param tags: 标签信息。
         :type tags: list[:class:`huaweicloudsdkworkspaceapp.v1.TmsTag`]
         """
         
@@ -1039,7 +1039,7 @@ class AppServer:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this AppServer.
 
-        企业项目ID,仅企业项目会返回
+        企业项目ID,仅企业项目会返回。
 
         :return: The enterprise_project_id of this AppServer.
         :rtype: str
@@ -1050,7 +1050,7 @@ class AppServer:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this AppServer.
 
-        企业项目ID,仅企业项目会返回
+        企业项目ID,仅企业项目会返回。
 
         :param enterprise_project_id: The enterprise_project_id of this AppServer.
         :type enterprise_project_id: str
@@ -1061,7 +1061,7 @@ class AppServer:
     def tags(self):
         r"""Gets the tags of this AppServer.
 
-        标签信息
+        标签信息。
 
         :return: The tags of this AppServer.
         :rtype: list[:class:`huaweicloudsdkworkspaceapp.v1.TmsTag`]
@@ -1072,7 +1072,7 @@ class AppServer:
     def tags(self, tags):
         r"""Sets the tags of this AppServer.
 
-        标签信息
+        标签信息。
 
         :param tags: The tags of this AppServer.
         :type tags: list[:class:`huaweicloudsdkworkspaceapp.v1.TmsTag`]

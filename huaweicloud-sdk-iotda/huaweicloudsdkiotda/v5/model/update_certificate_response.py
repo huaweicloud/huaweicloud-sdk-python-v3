@@ -25,6 +25,9 @@ class UpdateCertificateResponse(SdkResponse):
         'verify_code': 'str',
         'provision_enable': 'bool',
         'template_id': 'str',
+        'ocsp_enable': 'bool',
+        'ocsp_server_ca_id': 'str',
+        'ocsp_ssl_enable': 'bool',
         'create_date': 'str',
         'effective_date': 'str',
         'expiry_date': 'str'
@@ -38,12 +41,15 @@ class UpdateCertificateResponse(SdkResponse):
         'verify_code': 'verify_code',
         'provision_enable': 'provision_enable',
         'template_id': 'template_id',
+        'ocsp_enable': 'ocsp_enable',
+        'ocsp_server_ca_id': 'ocsp_server_ca_id',
+        'ocsp_ssl_enable': 'ocsp_ssl_enable',
         'create_date': 'create_date',
         'effective_date': 'effective_date',
         'expiry_date': 'expiry_date'
     }
 
-    def __init__(self, certificate_id=None, cn_name=None, owner=None, status=None, verify_code=None, provision_enable=None, template_id=None, create_date=None, effective_date=None, expiry_date=None):
+    def __init__(self, certificate_id=None, cn_name=None, owner=None, status=None, verify_code=None, provision_enable=None, template_id=None, ocsp_enable=None, ocsp_server_ca_id=None, ocsp_ssl_enable=None, create_date=None, effective_date=None, expiry_date=None):
         r"""UpdateCertificateResponse
 
         The model defined in huaweicloud sdk
@@ -62,6 +68,12 @@ class UpdateCertificateResponse(SdkResponse):
         :type provision_enable: bool
         :param template_id: 绑定的自注册模板ID。
         :type template_id: str
+        :param ocsp_enable: 是否开启该CA证书下的设备证书OCSP校验，当为true且设备证书信息中包含OCSP url时则平台会校验证书的状态，当证书状态为revoked时平台会拒绝设备连接，true：开启，false：关闭。
+        :type ocsp_enable: bool
+        :param ocsp_server_ca_id: ocsp服务器端CA证书id，仅当ocsp服务器开启SSL时配置，平台使用该CA证书认证ocsp服务器。
+        :type ocsp_server_ca_id: str
+        :param ocsp_ssl_enable: ocsp服务器是否开启SSL加密，开启后必须配置OCSP服务器CA证书。
+        :type ocsp_ssl_enable: bool
         :param create_date: 创建证书日期。格式：yyyyMMdd&#39;T&#39;HHmmss&#39;Z&#39;，如20151212T121212Z。
         :type create_date: str
         :param effective_date: CA证书生效日期。格式：yyyyMMdd&#39;T&#39;HHmmss&#39;Z&#39;，如20151212T121212Z。
@@ -79,6 +91,9 @@ class UpdateCertificateResponse(SdkResponse):
         self._verify_code = None
         self._provision_enable = None
         self._template_id = None
+        self._ocsp_enable = None
+        self._ocsp_server_ca_id = None
+        self._ocsp_ssl_enable = None
         self._create_date = None
         self._effective_date = None
         self._expiry_date = None
@@ -98,6 +113,12 @@ class UpdateCertificateResponse(SdkResponse):
             self.provision_enable = provision_enable
         if template_id is not None:
             self.template_id = template_id
+        if ocsp_enable is not None:
+            self.ocsp_enable = ocsp_enable
+        if ocsp_server_ca_id is not None:
+            self.ocsp_server_ca_id = ocsp_server_ca_id
+        if ocsp_ssl_enable is not None:
+            self.ocsp_ssl_enable = ocsp_ssl_enable
         if create_date is not None:
             self.create_date = create_date
         if effective_date is not None:
@@ -258,6 +279,72 @@ class UpdateCertificateResponse(SdkResponse):
         :type template_id: str
         """
         self._template_id = template_id
+
+    @property
+    def ocsp_enable(self):
+        r"""Gets the ocsp_enable of this UpdateCertificateResponse.
+
+        是否开启该CA证书下的设备证书OCSP校验，当为true且设备证书信息中包含OCSP url时则平台会校验证书的状态，当证书状态为revoked时平台会拒绝设备连接，true：开启，false：关闭。
+
+        :return: The ocsp_enable of this UpdateCertificateResponse.
+        :rtype: bool
+        """
+        return self._ocsp_enable
+
+    @ocsp_enable.setter
+    def ocsp_enable(self, ocsp_enable):
+        r"""Sets the ocsp_enable of this UpdateCertificateResponse.
+
+        是否开启该CA证书下的设备证书OCSP校验，当为true且设备证书信息中包含OCSP url时则平台会校验证书的状态，当证书状态为revoked时平台会拒绝设备连接，true：开启，false：关闭。
+
+        :param ocsp_enable: The ocsp_enable of this UpdateCertificateResponse.
+        :type ocsp_enable: bool
+        """
+        self._ocsp_enable = ocsp_enable
+
+    @property
+    def ocsp_server_ca_id(self):
+        r"""Gets the ocsp_server_ca_id of this UpdateCertificateResponse.
+
+        ocsp服务器端CA证书id，仅当ocsp服务器开启SSL时配置，平台使用该CA证书认证ocsp服务器。
+
+        :return: The ocsp_server_ca_id of this UpdateCertificateResponse.
+        :rtype: str
+        """
+        return self._ocsp_server_ca_id
+
+    @ocsp_server_ca_id.setter
+    def ocsp_server_ca_id(self, ocsp_server_ca_id):
+        r"""Sets the ocsp_server_ca_id of this UpdateCertificateResponse.
+
+        ocsp服务器端CA证书id，仅当ocsp服务器开启SSL时配置，平台使用该CA证书认证ocsp服务器。
+
+        :param ocsp_server_ca_id: The ocsp_server_ca_id of this UpdateCertificateResponse.
+        :type ocsp_server_ca_id: str
+        """
+        self._ocsp_server_ca_id = ocsp_server_ca_id
+
+    @property
+    def ocsp_ssl_enable(self):
+        r"""Gets the ocsp_ssl_enable of this UpdateCertificateResponse.
+
+        ocsp服务器是否开启SSL加密，开启后必须配置OCSP服务器CA证书。
+
+        :return: The ocsp_ssl_enable of this UpdateCertificateResponse.
+        :rtype: bool
+        """
+        return self._ocsp_ssl_enable
+
+    @ocsp_ssl_enable.setter
+    def ocsp_ssl_enable(self, ocsp_ssl_enable):
+        r"""Sets the ocsp_ssl_enable of this UpdateCertificateResponse.
+
+        ocsp服务器是否开启SSL加密，开启后必须配置OCSP服务器CA证书。
+
+        :param ocsp_ssl_enable: The ocsp_ssl_enable of this UpdateCertificateResponse.
+        :type ocsp_ssl_enable: bool
+        """
+        self._ocsp_ssl_enable = ocsp_ssl_enable
 
     @property
     def create_date(self):

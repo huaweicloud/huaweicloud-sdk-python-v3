@@ -29,7 +29,7 @@ class BatchAddAccountsRequestInfo:
 
         The model defined in huaweicloud sdk
 
-        :param data_list: 账号列表表详情
+        :param data_list: 账号列表详情
         :type data_list: list[:class:`huaweicloudsdkhss.v5.AddAccountsRequestInfo`]
         """
         
@@ -45,7 +45,7 @@ class BatchAddAccountsRequestInfo:
     def data_list(self):
         r"""Gets the data_list of this BatchAddAccountsRequestInfo.
 
-        账号列表表详情
+        账号列表详情
 
         :return: The data_list of this BatchAddAccountsRequestInfo.
         :rtype: list[:class:`huaweicloudsdkhss.v5.AddAccountsRequestInfo`]
@@ -56,7 +56,7 @@ class BatchAddAccountsRequestInfo:
     def data_list(self, data_list):
         r"""Sets the data_list of this BatchAddAccountsRequestInfo.
 
-        账号列表表详情
+        账号列表详情
 
         :param data_list: The data_list of this BatchAddAccountsRequestInfo.
         :type data_list: list[:class:`huaweicloudsdkhss.v5.AddAccountsRequestInfo`]

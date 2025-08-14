@@ -47,13 +47,13 @@ class OperateResultRequestInfo:
         :type result_id: str
         :param event_type: 事件类型
         :type event_type: int
-        :param occur_time: 发生时间，毫秒
+        :param occur_time: **参数解释**： 发生时间，毫秒 **取值范围**： 最小值0，最大值9223372036854775807 
         :type occur_time: int
-        :param file_hash: 文件哈希
+        :param file_hash: **参数解释**： 文件哈希 **取值范围**： 字符长度1-256位 
         :type file_hash: str
-        :param file_path: 文件路径
+        :param file_path: **参数解释**： 文件路径 **取值范围**： 字符长度1-256位 
         :type file_path: str
-        :param file_attr: 文件属性
+        :param file_attr: **参数解释**： 文件属性 **取值范围**： 字符长度1-256位 
         :type file_attr: str
         """
         
@@ -147,7 +147,7 @@ class OperateResultRequestInfo:
     def occur_time(self):
         r"""Gets the occur_time of this OperateResultRequestInfo.
 
-        发生时间，毫秒
+        **参数解释**： 发生时间，毫秒 **取值范围**： 最小值0，最大值9223372036854775807 
 
         :return: The occur_time of this OperateResultRequestInfo.
         :rtype: int
@@ -158,7 +158,7 @@ class OperateResultRequestInfo:
     def occur_time(self, occur_time):
         r"""Sets the occur_time of this OperateResultRequestInfo.
 
-        发生时间，毫秒
+        **参数解释**： 发生时间，毫秒 **取值范围**： 最小值0，最大值9223372036854775807 
 
         :param occur_time: The occur_time of this OperateResultRequestInfo.
         :type occur_time: int
@@ -169,7 +169,7 @@ class OperateResultRequestInfo:
     def file_hash(self):
         r"""Gets the file_hash of this OperateResultRequestInfo.
 
-        文件哈希
+        **参数解释**： 文件哈希 **取值范围**： 字符长度1-256位 
 
         :return: The file_hash of this OperateResultRequestInfo.
         :rtype: str
@@ -180,7 +180,7 @@ class OperateResultRequestInfo:
     def file_hash(self, file_hash):
         r"""Sets the file_hash of this OperateResultRequestInfo.
 
-        文件哈希
+        **参数解释**： 文件哈希 **取值范围**： 字符长度1-256位 
 
         :param file_hash: The file_hash of this OperateResultRequestInfo.
         :type file_hash: str
@@ -191,7 +191,7 @@ class OperateResultRequestInfo:
     def file_path(self):
         r"""Gets the file_path of this OperateResultRequestInfo.
 
-        文件路径
+        **参数解释**： 文件路径 **取值范围**： 字符长度1-256位 
 
         :return: The file_path of this OperateResultRequestInfo.
         :rtype: str
@@ -202,7 +202,7 @@ class OperateResultRequestInfo:
     def file_path(self, file_path):
         r"""Sets the file_path of this OperateResultRequestInfo.
 
-        文件路径
+        **参数解释**： 文件路径 **取值范围**： 字符长度1-256位 
 
         :param file_path: The file_path of this OperateResultRequestInfo.
         :type file_path: str
@@ -213,7 +213,7 @@ class OperateResultRequestInfo:
     def file_attr(self):
         r"""Gets the file_attr of this OperateResultRequestInfo.
 
-        文件属性
+        **参数解释**： 文件属性 **取值范围**： 字符长度1-256位 
 
         :return: The file_attr of this OperateResultRequestInfo.
         :rtype: str
@@ -224,7 +224,7 @@ class OperateResultRequestInfo:
     def file_attr(self, file_attr):
         r"""Sets the file_attr of this OperateResultRequestInfo.
 
-        文件属性
+        **参数解释**： 文件属性 **取值范围**： 字符长度1-256位 
 
         :param file_attr: The file_attr of this OperateResultRequestInfo.
         :type file_attr: str

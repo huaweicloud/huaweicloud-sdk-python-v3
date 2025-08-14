@@ -33,7 +33,7 @@ class BackupResources:
 
         :param vault_id: **参数解释**: 选择需要绑定的存储库ID，不为空 **约束限制**: 不涉及 **取值范围**: 字符长度0-64 **默认取值**: 不涉及 
         :type vault_id: str
-        :param resource_list: 需要开启备份功能的主机情况列表
+        :param resource_list: **参数解释**: 需要开启备份功能的主机情况列表 **约束限制**: 不涉及 **取值范围**: 取值0-20条主机id **默认取值**: 不涉及 
         :type resource_list: list[:class:`huaweicloudsdkhss.v5.ResourceInfo`]
         """
         
@@ -74,7 +74,7 @@ class BackupResources:
     def resource_list(self):
         r"""Gets the resource_list of this BackupResources.
 
-        需要开启备份功能的主机情况列表
+        **参数解释**: 需要开启备份功能的主机情况列表 **约束限制**: 不涉及 **取值范围**: 取值0-20条主机id **默认取值**: 不涉及 
 
         :return: The resource_list of this BackupResources.
         :rtype: list[:class:`huaweicloudsdkhss.v5.ResourceInfo`]
@@ -85,7 +85,7 @@ class BackupResources:
     def resource_list(self, resource_list):
         r"""Sets the resource_list of this BackupResources.
 
-        需要开启备份功能的主机情况列表
+        **参数解释**: 需要开启备份功能的主机情况列表 **约束限制**: 不涉及 **取值范围**: 取值0-20条主机id **默认取值**: 不涉及 
 
         :param resource_list: The resource_list of this BackupResources.
         :type resource_list: list[:class:`huaweicloudsdkhss.v5.ResourceInfo`]

@@ -40,7 +40,8 @@ class TaskByServerSources:
         'log_bucket': 'str',
         'log_expire': 'int',
         'log_upload_time': 'int',
-        'log_share_url': 'str'
+        'log_share_url': 'str',
+        'subtask_info': 'str'
     }
 
     attribute_map = {
@@ -67,10 +68,11 @@ class TaskByServerSources:
         'log_bucket': 'log_bucket',
         'log_expire': 'log_expire',
         'log_upload_time': 'log_upload_time',
-        'log_share_url': 'log_share_url'
+        'log_share_url': 'log_share_url',
+        'subtask_info': 'subtask_info'
     }
 
-    def __init__(self, id=None, name=None, type=None, state=None, estimate_complete_time=None, start_date=None, speed_limit=None, migrate_speed=None, compress_rate=None, start_target_server=None, vm_template_id=None, region_id=None, project_name=None, project_id=None, target_server=None, log_collect_status=None, exist_server=None, use_public_ip=None, clone_server=None, remain_seconds=None, log_bucket=None, log_expire=None, log_upload_time=None, log_share_url=None):
+    def __init__(self, id=None, name=None, type=None, state=None, estimate_complete_time=None, start_date=None, speed_limit=None, migrate_speed=None, compress_rate=None, start_target_server=None, vm_template_id=None, region_id=None, project_name=None, project_id=None, target_server=None, log_collect_status=None, exist_server=None, use_public_ip=None, clone_server=None, remain_seconds=None, log_bucket=None, log_expire=None, log_upload_time=None, log_share_url=None, subtask_info=None):
         r"""TaskByServerSources
 
         The model defined in huaweicloud sdk
@@ -123,6 +125,8 @@ class TaskByServerSources:
         :type log_upload_time: int
         :param log_share_url: 分享链接url
         :type log_share_url: str
+        :param subtask_info: 当前子任务及进度
+        :type subtask_info: str
         """
         
         
@@ -151,6 +155,7 @@ class TaskByServerSources:
         self._log_expire = None
         self._log_upload_time = None
         self._log_share_url = None
+        self._subtask_info = None
         self.discriminator = None
 
         if id is not None:
@@ -201,6 +206,8 @@ class TaskByServerSources:
             self.log_upload_time = log_upload_time
         if log_share_url is not None:
             self.log_share_url = log_share_url
+        if subtask_info is not None:
+            self.subtask_info = subtask_info
 
     @property
     def id(self):
@@ -721,6 +728,28 @@ class TaskByServerSources:
         :type log_share_url: str
         """
         self._log_share_url = log_share_url
+
+    @property
+    def subtask_info(self):
+        r"""Gets the subtask_info of this TaskByServerSources.
+
+        当前子任务及进度
+
+        :return: The subtask_info of this TaskByServerSources.
+        :rtype: str
+        """
+        return self._subtask_info
+
+    @subtask_info.setter
+    def subtask_info(self, subtask_info):
+        r"""Sets the subtask_info of this TaskByServerSources.
+
+        当前子任务及进度
+
+        :param subtask_info: The subtask_info of this TaskByServerSources.
+        :type subtask_info: str
+        """
+        self._subtask_info = subtask_info
 
     def to_dict(self):
         """Returns the model properties as a dict"""

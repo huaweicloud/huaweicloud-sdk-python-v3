@@ -35,11 +35,11 @@ class ListScheduleTasksRequest:
 
         The model defined in huaweicloud sdk
 
-        :param offset: 查询的偏移量。
+        :param offset: 查询的偏移量，默认值0。
         :type offset: int
-        :param limit: 查询的数量，值区间[1-100]。
+        :param limit: 查询的数量，值区间[1-100]，默认值10。
         :type limit: int
-        :param task_name: 定时任务名称
+        :param task_name: 定时任务名称。
         :type task_name: str
         :param task_type: 任务类型： * &#x60;RESTART_SERVER&#x60; - 定时重启服务器 * &#x60;START_SERVER&#x60; - 定时开机 * &#x60;STOP_SERVER&#x60; - 定时关机 * &#x60;REINSTALL_OS&#x60; - 定时重装操作系统
         :type task_type: str
@@ -66,7 +66,7 @@ class ListScheduleTasksRequest:
     def offset(self):
         r"""Gets the offset of this ListScheduleTasksRequest.
 
-        查询的偏移量。
+        查询的偏移量，默认值0。
 
         :return: The offset of this ListScheduleTasksRequest.
         :rtype: int
@@ -77,7 +77,7 @@ class ListScheduleTasksRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListScheduleTasksRequest.
 
-        查询的偏移量。
+        查询的偏移量，默认值0。
 
         :param offset: The offset of this ListScheduleTasksRequest.
         :type offset: int
@@ -88,7 +88,7 @@ class ListScheduleTasksRequest:
     def limit(self):
         r"""Gets the limit of this ListScheduleTasksRequest.
 
-        查询的数量，值区间[1-100]。
+        查询的数量，值区间[1-100]，默认值10。
 
         :return: The limit of this ListScheduleTasksRequest.
         :rtype: int
@@ -99,7 +99,7 @@ class ListScheduleTasksRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListScheduleTasksRequest.
 
-        查询的数量，值区间[1-100]。
+        查询的数量，值区间[1-100]，默认值10。
 
         :param limit: The limit of this ListScheduleTasksRequest.
         :type limit: int
@@ -110,7 +110,7 @@ class ListScheduleTasksRequest:
     def task_name(self):
         r"""Gets the task_name of this ListScheduleTasksRequest.
 
-        定时任务名称
+        定时任务名称。
 
         :return: The task_name of this ListScheduleTasksRequest.
         :rtype: str
@@ -121,7 +121,7 @@ class ListScheduleTasksRequest:
     def task_name(self, task_name):
         r"""Sets the task_name of this ListScheduleTasksRequest.
 
-        定时任务名称
+        定时任务名称。
 
         :param task_name: The task_name of this ListScheduleTasksRequest.
         :type task_name: str

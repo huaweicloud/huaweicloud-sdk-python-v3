@@ -56,6 +56,18 @@ class MrsRegion:
                         "https://mrs.ru-moscow-1.myhuaweicloud.com")
     AE_AD_1 = Region("ae-ad-1",
                         "https://mrs.ae-ad-1.myhuaweicloud.com")
+    CN_SOUTH_4 = Region("cn-south-4",
+                        "https://mrs.cn-south-4.myhuaweicloud.com")
+    CN_EAST_5 = Region("cn-east-5",
+                        "https://mrs.cn-east-5.myhuaweicloud.com")
+    CN_NORTH_12 = Region("cn-north-12",
+                        "https://mrs.cn-north-12.myhuaweicloud.com")
+    CN_EAST_4 = Region("cn-east-4",
+                        "https://mrs.cn-east-4.myhuaweicloud.com")
+    CN_NORTH_11 = Region("cn-north-11",
+                        "https://mrs.cn-north-11.myhuaweicloud.com")
+    CN_SOUTHWEST_3 = Region("cn-southwest-3",
+                        "https://mrs.cn-southwest-3.myhuaweicloud.com")
 
     static_fields = {
         "cn-north-1": CN_NORTH_1,
@@ -83,6 +95,12 @@ class MrsRegion:
         "my-kualalumpur-1": MY_KUALALUMPUR_1,
         "ru-moscow-1": RU_MOSCOW_1,
         "ae-ad-1": AE_AD_1,
+        "cn-south-4": CN_SOUTH_4,
+        "cn-east-5": CN_EAST_5,
+        "cn-north-12": CN_NORTH_12,
+        "cn-east-4": CN_EAST_4,
+        "cn-north-11": CN_NORTH_11,
+        "cn-southwest-3": CN_SOUTHWEST_3,
     }
 
     @classmethod

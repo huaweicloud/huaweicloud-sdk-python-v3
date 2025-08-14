@@ -45,7 +45,7 @@ class ListAppStatisticsRequest:
         :type limit: int
         :param offset: **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 默认为0 
         :type offset: int
-        :param category: **参数解释**: 类别，默认为host，包含如下： **约束限制**: 不涉及 **取值范围**: - host：主机 - container：容器  **默认取值**: 不涉及 
+        :param category: **参数解释**: 类别 **约束限制**: 不涉及 **取值范围**: - host：主机 - container：容器  **默认取值**: 不涉及 
         :type category: str
         """
         
@@ -161,7 +161,7 @@ class ListAppStatisticsRequest:
     def category(self):
         r"""Gets the category of this ListAppStatisticsRequest.
 
-        **参数解释**: 类别，默认为host，包含如下： **约束限制**: 不涉及 **取值范围**: - host：主机 - container：容器  **默认取值**: 不涉及 
+        **参数解释**: 类别 **约束限制**: 不涉及 **取值范围**: - host：主机 - container：容器  **默认取值**: 不涉及 
 
         :return: The category of this ListAppStatisticsRequest.
         :rtype: str
@@ -172,7 +172,7 @@ class ListAppStatisticsRequest:
     def category(self, category):
         r"""Sets the category of this ListAppStatisticsRequest.
 
-        **参数解释**: 类别，默认为host，包含如下： **约束限制**: 不涉及 **取值范围**: - host：主机 - container：容器  **默认取值**: 不涉及 
+        **参数解释**: 类别 **约束限制**: 不涉及 **取值范围**: - host：主机 - container：容器  **默认取值**: 不涉及 
 
         :param category: The category of this ListAppStatisticsRequest.
         :type category: str

@@ -14874,6 +14874,87 @@ class DataArtsStudioClient(Client):
 
         return http_info
 
+    def list_security_sensitive_data_details(self, request):
+        r"""查询敏感数据发现详情
+
+        查询敏感数据发现详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListSecuritySensitiveDataDetails
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListSecuritySensitiveDataDetailsRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListSecuritySensitiveDataDetailsResponse`
+        """
+        http_info = self._list_security_sensitive_data_details_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_security_sensitive_data_details_invoker(self, request):
+        http_info = self._list_security_sensitive_data_details_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_security_sensitive_data_details_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/security/sensitive-data/result/details",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSecuritySensitiveDataDetailsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'database_name' in local_var_params:
+            query_params.append(('database_name', local_var_params['database_name']))
+        if 'find_start_time' in local_var_params:
+            query_params.append(('find_start_time', local_var_params['find_start_time']))
+        if 'find_end_time' in local_var_params:
+            query_params.append(('find_end_time', local_var_params['find_end_time']))
+        if 'order_by' in local_var_params:
+            query_params.append(('order_by', local_var_params['order_by']))
+        if 'order_by_asc' in local_var_params:
+            query_params.append(('order_by_asc', local_var_params['order_by_asc']))
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_security_sensitive_data_overviews(self, request):
         r"""查询敏感数据发现概览结果(以分类和密级为单位)
 

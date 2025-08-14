@@ -53,7 +53,7 @@ class DaemonSetInfo:
         :type namespace_name: str
         :param cluster_id: 集群id
         :type cluster_id: str
-        :param cluster_type: 集群类型，包含以下几种： -k8s 原生集群 -cce CCE集群 -ali 阿里云集群 -tencent 腾讯云集群 -azure 微软云集群 -aws 亚马逊集群 -self_built_hw 华为云自建集群 -self_built_idc IDC自建集群
+        :param cluster_type: 集群类型，包含以下几种： - k8s：原生集群 - cce：CCE集群 - ali：阿里云集群 - tencent：腾讯云集群 - azure：微软云集群 - aws 亚马逊集群 - self_built_hw：华为云自建集群 - self_built_idc：IDC自建集群
         :type cluster_type: str
         :param cluster_name: 集群名称
         :type cluster_name: str
@@ -174,7 +174,7 @@ class DaemonSetInfo:
     def cluster_type(self):
         r"""Gets the cluster_type of this DaemonSetInfo.
 
-        集群类型，包含以下几种： -k8s 原生集群 -cce CCE集群 -ali 阿里云集群 -tencent 腾讯云集群 -azure 微软云集群 -aws 亚马逊集群 -self_built_hw 华为云自建集群 -self_built_idc IDC自建集群
+        集群类型，包含以下几种： - k8s：原生集群 - cce：CCE集群 - ali：阿里云集群 - tencent：腾讯云集群 - azure：微软云集群 - aws 亚马逊集群 - self_built_hw：华为云自建集群 - self_built_idc：IDC自建集群
 
         :return: The cluster_type of this DaemonSetInfo.
         :rtype: str
@@ -185,7 +185,7 @@ class DaemonSetInfo:
     def cluster_type(self, cluster_type):
         r"""Sets the cluster_type of this DaemonSetInfo.
 
-        集群类型，包含以下几种： -k8s 原生集群 -cce CCE集群 -ali 阿里云集群 -tencent 腾讯云集群 -azure 微软云集群 -aws 亚马逊集群 -self_built_hw 华为云自建集群 -self_built_idc IDC自建集群
+        集群类型，包含以下几种： - k8s：原生集群 - cce：CCE集群 - ali：阿里云集群 - tencent：腾讯云集群 - azure：微软云集群 - aws 亚马逊集群 - self_built_hw：华为云自建集群 - self_built_idc：IDC自建集群
 
         :param cluster_type: The cluster_type of this DaemonSetInfo.
         :type cluster_type: str

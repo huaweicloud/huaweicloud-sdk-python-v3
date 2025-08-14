@@ -33,7 +33,8 @@ class TaskByServerSource:
         'log_collect_status': 'str',
         'exist_server': 'bool',
         'use_public_ip': 'bool',
-        'clone_server': 'CloneServer'
+        'clone_server': 'CloneServer',
+        'subtask_info': 'str'
     }
 
     attribute_map = {
@@ -53,10 +54,11 @@ class TaskByServerSource:
         'log_collect_status': 'log_collect_status',
         'exist_server': 'exist_server',
         'use_public_ip': 'use_public_ip',
-        'clone_server': 'clone_server'
+        'clone_server': 'clone_server',
+        'subtask_info': 'subtask_info'
     }
 
-    def __init__(self, id=None, name=None, type=None, state=None, start_date=None, speed_limit=None, migrate_speed=None, start_target_server=None, vm_template_id=None, region_id=None, project_name=None, project_id=None, target_server=None, log_collect_status=None, exist_server=None, use_public_ip=None, clone_server=None):
+    def __init__(self, id=None, name=None, type=None, state=None, start_date=None, speed_limit=None, migrate_speed=None, start_target_server=None, vm_template_id=None, region_id=None, project_name=None, project_id=None, target_server=None, log_collect_status=None, exist_server=None, use_public_ip=None, clone_server=None, subtask_info=None):
         r"""TaskByServerSource
 
         The model defined in huaweicloud sdk
@@ -95,6 +97,8 @@ class TaskByServerSource:
         :type use_public_ip: bool
         :param clone_server: 
         :type clone_server: :class:`huaweicloudsdksms.v3.CloneServer`
+        :param subtask_info: 当前子任务及进度
+        :type subtask_info: str
         """
         
         
@@ -116,6 +120,7 @@ class TaskByServerSource:
         self._exist_server = None
         self._use_public_ip = None
         self._clone_server = None
+        self._subtask_info = None
         self.discriminator = None
 
         if id is not None:
@@ -152,6 +157,8 @@ class TaskByServerSource:
             self.use_public_ip = use_public_ip
         if clone_server is not None:
             self.clone_server = clone_server
+        if subtask_info is not None:
+            self.subtask_info = subtask_info
 
     @property
     def id(self):
@@ -518,6 +525,28 @@ class TaskByServerSource:
         :type clone_server: :class:`huaweicloudsdksms.v3.CloneServer`
         """
         self._clone_server = clone_server
+
+    @property
+    def subtask_info(self):
+        r"""Gets the subtask_info of this TaskByServerSource.
+
+        当前子任务及进度
+
+        :return: The subtask_info of this TaskByServerSource.
+        :rtype: str
+        """
+        return self._subtask_info
+
+    @subtask_info.setter
+    def subtask_info(self, subtask_info):
+        r"""Sets the subtask_info of this TaskByServerSource.
+
+        当前子任务及进度
+
+        :param subtask_info: The subtask_info of this TaskByServerSource.
+        :type subtask_info: str
+        """
+        self._subtask_info = subtask_info
 
     def to_dict(self):
         """Returns the model properties as a dict"""

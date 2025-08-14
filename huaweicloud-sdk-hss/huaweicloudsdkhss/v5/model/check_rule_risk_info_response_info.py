@@ -51,7 +51,7 @@ class CheckRuleRiskInfoResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param severity: **参数解释**: 风险等级 **取值范围**: - Low : 低危 - Medium : 中危 - High : 高危 
+        :param severity: **参数解释**: 风险等级 **取值范围**: - Low：低危 - Medium：中危 - High：高危 
         :type severity: str
         :param check_name: **参数解释**: 配置检查（基线）的名称，例如SSH、CentOS 7、Windows **取值范围**: 不涉及 
         :type check_name: str
@@ -122,7 +122,7 @@ class CheckRuleRiskInfoResponseInfo:
     def severity(self):
         r"""Gets the severity of this CheckRuleRiskInfoResponseInfo.
 
-        **参数解释**: 风险等级 **取值范围**: - Low : 低危 - Medium : 中危 - High : 高危 
+        **参数解释**: 风险等级 **取值范围**: - Low：低危 - Medium：中危 - High：高危 
 
         :return: The severity of this CheckRuleRiskInfoResponseInfo.
         :rtype: str
@@ -133,7 +133,7 @@ class CheckRuleRiskInfoResponseInfo:
     def severity(self, severity):
         r"""Sets the severity of this CheckRuleRiskInfoResponseInfo.
 
-        **参数解释**: 风险等级 **取值范围**: - Low : 低危 - Medium : 中危 - High : 高危 
+        **参数解释**: 风险等级 **取值范围**: - Low：低危 - Medium：中危 - High：高危 
 
         :param severity: The severity of this CheckRuleRiskInfoResponseInfo.
         :type severity: str

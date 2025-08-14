@@ -45,13 +45,13 @@ class SystemUserWhiteListResponseInfo:
 
         :param enterprise_project_name: 企业项目名称
         :type enterprise_project_name: str
-        :param host_id: **参数解释**: 服务器ID **取值范围**: 字符长度1-64位 
+        :param host_id: **参数解释**： 主机ID **取值范围**： 字符长度1-64位 
         :type host_id: str
         :param host_name: **参数解释**: 服务器名称 **取值范围**: 字符长度1-256位 
         :type host_name: str
-        :param private_ip: 服务器私有IP
+        :param private_ip: **参数解释**： 服务器私有IP **取值范围**： 字符长度1-128位 
         :type private_ip: str
-        :param public_ip: 弹性公网IP地址
+        :param public_ip: **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位 
         :type public_ip: str
         :param system_user_name_list: 系统用户名列表
         :type system_user_name_list: list[str]
@@ -116,7 +116,7 @@ class SystemUserWhiteListResponseInfo:
     def host_id(self):
         r"""Gets the host_id of this SystemUserWhiteListResponseInfo.
 
-        **参数解释**: 服务器ID **取值范围**: 字符长度1-64位 
+        **参数解释**： 主机ID **取值范围**： 字符长度1-64位 
 
         :return: The host_id of this SystemUserWhiteListResponseInfo.
         :rtype: str
@@ -127,7 +127,7 @@ class SystemUserWhiteListResponseInfo:
     def host_id(self, host_id):
         r"""Sets the host_id of this SystemUserWhiteListResponseInfo.
 
-        **参数解释**: 服务器ID **取值范围**: 字符长度1-64位 
+        **参数解释**： 主机ID **取值范围**： 字符长度1-64位 
 
         :param host_id: The host_id of this SystemUserWhiteListResponseInfo.
         :type host_id: str
@@ -160,7 +160,7 @@ class SystemUserWhiteListResponseInfo:
     def private_ip(self):
         r"""Gets the private_ip of this SystemUserWhiteListResponseInfo.
 
-        服务器私有IP
+        **参数解释**： 服务器私有IP **取值范围**： 字符长度1-128位 
 
         :return: The private_ip of this SystemUserWhiteListResponseInfo.
         :rtype: str
@@ -171,7 +171,7 @@ class SystemUserWhiteListResponseInfo:
     def private_ip(self, private_ip):
         r"""Sets the private_ip of this SystemUserWhiteListResponseInfo.
 
-        服务器私有IP
+        **参数解释**： 服务器私有IP **取值范围**： 字符长度1-128位 
 
         :param private_ip: The private_ip of this SystemUserWhiteListResponseInfo.
         :type private_ip: str
@@ -182,7 +182,7 @@ class SystemUserWhiteListResponseInfo:
     def public_ip(self):
         r"""Gets the public_ip of this SystemUserWhiteListResponseInfo.
 
-        弹性公网IP地址
+        **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位 
 
         :return: The public_ip of this SystemUserWhiteListResponseInfo.
         :rtype: str
@@ -193,7 +193,7 @@ class SystemUserWhiteListResponseInfo:
     def public_ip(self, public_ip):
         r"""Sets the public_ip of this SystemUserWhiteListResponseInfo.
 
-        弹性公网IP地址
+        **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位 
 
         :param public_ip: The public_ip of this SystemUserWhiteListResponseInfo.
         :type public_ip: str

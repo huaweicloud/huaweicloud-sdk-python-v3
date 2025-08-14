@@ -95,9 +95,9 @@ class PrivateImageRepositoryInfo:
         :type scan_failed_desc: str
         :param image_size: 镜像大小
         :type image_size: int
-        :param latest_update_time: 镜像版本最后更新时间，时间单位 毫秒（ms）
+        :param latest_update_time: 镜像版本最后更新时间，时间单位：毫秒（ms）
         :type latest_update_time: int
-        :param latest_scan_time: 最近扫描时间，时间单位 毫秒（ms）
+        :param latest_scan_time: 最近扫描时间，时间单位：毫秒（ms）
         :type latest_scan_time: int
         :param vul_num: 漏洞个数
         :type vul_num: int
@@ -441,7 +441,7 @@ class PrivateImageRepositoryInfo:
     def latest_update_time(self):
         r"""Gets the latest_update_time of this PrivateImageRepositoryInfo.
 
-        镜像版本最后更新时间，时间单位 毫秒（ms）
+        镜像版本最后更新时间，时间单位：毫秒（ms）
 
         :return: The latest_update_time of this PrivateImageRepositoryInfo.
         :rtype: int
@@ -452,7 +452,7 @@ class PrivateImageRepositoryInfo:
     def latest_update_time(self, latest_update_time):
         r"""Sets the latest_update_time of this PrivateImageRepositoryInfo.
 
-        镜像版本最后更新时间，时间单位 毫秒（ms）
+        镜像版本最后更新时间，时间单位：毫秒（ms）
 
         :param latest_update_time: The latest_update_time of this PrivateImageRepositoryInfo.
         :type latest_update_time: int
@@ -463,7 +463,7 @@ class PrivateImageRepositoryInfo:
     def latest_scan_time(self):
         r"""Gets the latest_scan_time of this PrivateImageRepositoryInfo.
 
-        最近扫描时间，时间单位 毫秒（ms）
+        最近扫描时间，时间单位：毫秒（ms）
 
         :return: The latest_scan_time of this PrivateImageRepositoryInfo.
         :rtype: int
@@ -474,7 +474,7 @@ class PrivateImageRepositoryInfo:
     def latest_scan_time(self, latest_scan_time):
         r"""Sets the latest_scan_time of this PrivateImageRepositoryInfo.
 
-        最近扫描时间，时间单位 毫秒（ms）
+        最近扫描时间，时间单位：毫秒（ms）
 
         :param latest_scan_time: The latest_scan_time of this PrivateImageRepositoryInfo.
         :type latest_scan_time: int

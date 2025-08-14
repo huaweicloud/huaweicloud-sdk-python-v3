@@ -37,7 +37,7 @@ class CreateUserResponse(SdkResponse):
 
         :param identity_store_id: 身份源的全局唯一标识符（ID）
         :type identity_store_id: str
-        :param user_id: 身份源中IAM身份中心用户的全局唯一标识符（ID）
+        :param user_id: 身份源中IdentityCenter用户的全局唯一标识符（ID）
         :type user_id: str
         :param password: 用于初始化密码的一次性密码
         :type password: str
@@ -83,7 +83,7 @@ class CreateUserResponse(SdkResponse):
     def user_id(self):
         r"""Gets the user_id of this CreateUserResponse.
 
-        身份源中IAM身份中心用户的全局唯一标识符（ID）
+        身份源中IdentityCenter用户的全局唯一标识符（ID）
 
         :return: The user_id of this CreateUserResponse.
         :rtype: str
@@ -94,7 +94,7 @@ class CreateUserResponse(SdkResponse):
     def user_id(self, user_id):
         r"""Sets the user_id of this CreateUserResponse.
 
-        身份源中IAM身份中心用户的全局唯一标识符（ID）
+        身份源中IdentityCenter用户的全局唯一标识符（ID）
 
         :param user_id: The user_id of this CreateUserResponse.
         :type user_id: str

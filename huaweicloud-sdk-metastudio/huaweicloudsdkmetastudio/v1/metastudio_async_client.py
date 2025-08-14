@@ -1052,6 +1052,476 @@ class MetaStudioAsyncClient(Client):
 
         return http_info
 
+    def delete_task_async(self, request):
+        r"""删除导入导出任务
+
+        删除导入导出任务
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteTask
+        :type request: :class:`huaweicloudsdkmetastudio.v1.DeleteTaskRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.DeleteTaskResponse`
+        """
+        http_info = self._delete_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_task_async_invoker(self, request):
+        http_info = self._delete_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_task_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/ies/task/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def download_result_file_async(self, request):
+        r"""下载导入或导出的结果文件
+
+        下载导入或者导出结果文件
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DownloadResultFile
+        :type request: :class:`huaweicloudsdkmetastudio.v1.DownloadResultFileRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.DownloadResultFileResponse`
+        """
+        http_info = self._download_result_file_http_info(request)
+        return self._call_api(**http_info)
+
+    def download_result_file_async_invoker(self, request):
+        http_info = self._download_result_file_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _download_result_file_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/ies/result/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DownloadResultFileResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def download_template_async(self, request):
+        r"""下载信息导入模板
+
+        下载导入模板，返回导入模板文件
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DownloadTemplate
+        :type request: :class:`huaweicloudsdkmetastudio.v1.DownloadTemplateRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.DownloadTemplateResponse`
+        """
+        http_info = self._download_template_http_info(request)
+        return self._call_api(**http_info)
+
+    def download_template_async_invoker(self, request):
+        http_info = self._download_template_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _download_template_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/ies/import/{resource}/template",
+            "request_type": request.__class__.__name__,
+            "response_type": "DownloadTemplateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource' in local_var_params:
+            path_params['resource'] = local_var_params['resource']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def export_resource_async(self, request):
+        r"""导出文件
+
+        导出文件
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ExportResource
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ExportResourceRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ExportResourceResponse`
+        """
+        http_info = self._export_resource_http_info(request)
+        return self._call_api(**http_info)
+
+    def export_resource_async_invoker(self, request):
+        http_info = self._export_resource_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _export_resource_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/ies/export/{resource}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExportResourceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource' in local_var_params:
+            path_params['resource'] = local_var_params['resource']
+
+        query_params = []
+        if 'business_id' in local_var_params:
+            query_params.append(('business_id', local_var_params['business_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def import_resource_async(self, request):
+        r"""导入文件
+
+        导入文件
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ImportResource
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ImportResourceRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ImportResourceResponse`
+        """
+        http_info = self._import_resource_http_info(request)
+        return self._call_api(**http_info)
+
+    def import_resource_async_invoker(self, request):
+        http_info = self._import_resource_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _import_resource_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/ies/import/{resource}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ImportResourceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource' in local_var_params:
+            path_params['resource'] = local_var_params['resource']
+
+        query_params = []
+        if 'business_id' in local_var_params:
+            query_params.append(('business_id', local_var_params['business_id']))
+
+        header_params = {}
+
+        form_params = {}
+        if 'file' in local_var_params:
+            form_params['file'] = local_var_params['file']
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['multipart/form-data'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def search_task_async(self, request):
+        r"""分页查询导入导出任务列表
+
+        分页查询导入导出任务列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for SearchTask
+        :type request: :class:`huaweicloudsdkmetastudio.v1.SearchTaskRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.SearchTaskResponse`
+        """
+        http_info = self._search_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def search_task_async_invoker(self, request):
+        http_info = self._search_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _search_task_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/ies/task",
+            "request_type": request.__class__.__name__,
+            "response_type": "SearchTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'resource' in local_var_params:
+            query_params.append(('resource', local_var_params['resource']))
+            collection_formats['resource'] = 'csv'
+        if 'business_id' in local_var_params:
+            query_params.append(('business_id', local_var_params['business_id']))
+        if 'begin_time' in local_var_params:
+            query_params.append(('begin_time', local_var_params['begin_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_task_async(self, request):
+        r"""查询导入导出任务详情
+
+        查询导入导出任务详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowTask
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ShowTaskRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ShowTaskResponse`
+        """
+        http_info = self._show_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_task_async_invoker(self, request):
+        http_info = self._show_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_task_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/ies/task/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_dialog_url_async(self, request):
         r"""创建对话链接
 
@@ -12706,6 +13176,12 @@ class MetaStudioAsyncClient(Client):
         path_params = {}
 
         query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'group_id' in local_var_params:
+            query_params.append(('group_id', local_var_params['group_id']))
 
         header_params = {}
         if 'x_request_id' in local_var_params:

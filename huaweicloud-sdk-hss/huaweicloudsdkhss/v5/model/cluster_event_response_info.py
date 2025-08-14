@@ -75,7 +75,7 @@ class ClusterEventResponseInfo:
         :type event_type: int
         :param event_content: 事件内容
         :type event_content: str
-        :param handle_status: 处理状态，包含如下:   - unhandled ：未处理   - handled : 已处理
+        :param handle_status: 处理状态，包含如下:   - unhandled：未处理   - handled：已处理
         :type handle_status: str
         :param create_time: 创建时间
         :type create_time: int
@@ -326,7 +326,7 @@ class ClusterEventResponseInfo:
     def handle_status(self):
         r"""Gets the handle_status of this ClusterEventResponseInfo.
 
-        处理状态，包含如下:   - unhandled ：未处理   - handled : 已处理
+        处理状态，包含如下:   - unhandled：未处理   - handled：已处理
 
         :return: The handle_status of this ClusterEventResponseInfo.
         :rtype: str
@@ -337,7 +337,7 @@ class ClusterEventResponseInfo:
     def handle_status(self, handle_status):
         r"""Sets the handle_status of this ClusterEventResponseInfo.
 
-        处理状态，包含如下:   - unhandled ：未处理   - handled : 已处理
+        处理状态，包含如下:   - unhandled：未处理   - handled：已处理
 
         :param handle_status: The handle_status of this ClusterEventResponseInfo.
         :type handle_status: str

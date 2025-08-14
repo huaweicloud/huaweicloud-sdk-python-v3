@@ -111,87 +111,87 @@ class EventProcessResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param process_name: 进程名称
+        :param process_name: **参数解释**： 进程名称 **取值范围**： 字符长度1-256位 
         :type process_name: str
-        :param process_path: 进程文件路径
+        :param process_path: **参数解释**： 进程文件路径 **取值范围**： 字符长度1-256位 
         :type process_path: str
-        :param process_pid: 进程id
+        :param process_pid: **参数解释**： 进程ID **取值范围**： 最小值0，最大值2147483647 
         :type process_pid: int
-        :param process_uid: 进程用户id
+        :param process_uid: **参数解释**： 进程用户ID **取值范围**： 最小值0，最大值2147483647 
         :type process_uid: int
-        :param process_username: 运行进程的用户名
+        :param process_username: **参数解释**： 运行进程的用户名 **取值范围**： 字符长度1-256位 
         :type process_username: str
-        :param process_cmdline: 进程文件命令行
+        :param process_cmdline: **参数解释**： 进程文件命令行 **取值范围**： 字符长度1-256位 
         :type process_cmdline: str
-        :param process_filename: 进程文件名
+        :param process_filename: **参数解释**： 进程文件名 **取值范围**： 字符长度1-256位 
         :type process_filename: str
-        :param process_start_time: 进程启动时间
+        :param process_start_time: **参数解释**： 进程启动时间 **取值范围**： 最小值0，最大值9223372036854775807 
         :type process_start_time: int
-        :param process_gid: 进程组ID
+        :param process_gid: **参数解释**： 进程组ID **取值范围**： 最小值0，最大值2147483647 
         :type process_gid: int
-        :param process_egid: 进程有效组ID
+        :param process_egid: **参数解释**： 进程有效组ID **取值范围**： 最小值0，最大值2147483647 
         :type process_egid: int
-        :param process_euid: 进程有效用户ID
+        :param process_euid: **参数解释**： 进程有效用户ID **取值范围**： 最小值0，最大值2147483647 
         :type process_euid: int
-        :param ancestor_process_path: 祖父进程文件路径
+        :param ancestor_process_path: **参数解释**： 祖父进程文件路径 **取值范围**： 字符长度1-256位 
         :type ancestor_process_path: str
-        :param ancestor_process_pid: 祖父进程id
+        :param ancestor_process_pid: **参数解释**： 祖父进程ID **取值范围**： 最小值0，最大值2147483647 
         :type ancestor_process_pid: int
-        :param ancestor_process_cmdline: 祖父进程文件命令行
+        :param ancestor_process_cmdline: **参数解释**： 祖父进程文件命令行 **取值范围**： 字符长度1-512位 
         :type ancestor_process_cmdline: str
-        :param parent_process_name: 父进程名称
+        :param parent_process_name: **参数解释**： 父进程名称 **取值范围**： 字符长度1-256位 
         :type parent_process_name: str
-        :param parent_process_path: 父进程文件路径
+        :param parent_process_path: **参数解释**： 父进程文件路径 **取值范围**： 字符长度1-256位 
         :type parent_process_path: str
-        :param parent_process_pid: 父进程id
+        :param parent_process_pid: **参数解释**： 父进程ID **取值范围**： 最小值0，最大值2147483647 
         :type parent_process_pid: int
-        :param parent_process_uid: 父进程用户id
+        :param parent_process_uid: **参数解释**： 父进程用户ID **取值范围**： 最小值0，最大值2147483647 
         :type parent_process_uid: int
-        :param parent_process_cmdline: 父进程文件命令行
+        :param parent_process_cmdline: **参数解释**： 父进程文件命令行 **取值范围**： 字符长度1-512位 
         :type parent_process_cmdline: str
-        :param parent_process_filename: 父进程文件名
+        :param parent_process_filename: **参数解释**： 父进程文件名 **取值范围**： 字符长度1-256位 
         :type parent_process_filename: str
-        :param parent_process_start_time: 父进程启动时间
+        :param parent_process_start_time: **参数解释**： 父进程启动时间 **取值范围**： 最小值0，最大值9223372036854775807 
         :type parent_process_start_time: int
-        :param parent_process_gid: 父进程组ID
+        :param parent_process_gid: **参数解释**： 父进程组ID **取值范围**： 最小值0，最大值2147483647 
         :type parent_process_gid: int
-        :param parent_process_egid: 父进程有效组ID
+        :param parent_process_egid: **参数解释**： 父进程有效组ID **取值范围**： 最小值0，最大值2147483647 
         :type parent_process_egid: int
-        :param parent_process_euid: 父进程有效用户ID
+        :param parent_process_euid: **参数解释**： 父进程有效用户ID **取值范围**： 最小值0，最大值2147483647 
         :type parent_process_euid: int
-        :param child_process_name: 子进程名称
+        :param child_process_name: **参数解释**： 子进程名称 **取值范围**： 字符长度1-256位 
         :type child_process_name: str
-        :param child_process_path: 子进程文件路径
+        :param child_process_path: **参数解释**： 子进程文件路径 **取值范围**： 字符长度1-256位 
         :type child_process_path: str
-        :param child_process_pid: 子进程id
+        :param child_process_pid: **参数解释**： 子进程id **取值范围**： 最小值0，最大值2147483647 
         :type child_process_pid: int
-        :param child_process_uid: 子进程用户id
+        :param child_process_uid: **参数解释**： 子进程用户id **取值范围**： 最小值0，最大值2147483647 
         :type child_process_uid: int
-        :param child_process_cmdline: 子进程文件命令行
+        :param child_process_cmdline: **参数解释**： 子进程文件命令行 **取值范围**： 字符长度1-256位 
         :type child_process_cmdline: str
-        :param child_process_filename: 子进程文件名
+        :param child_process_filename: **参数解释**： 子进程文件名 **取值范围**： 字符长度1-256位 
         :type child_process_filename: str
-        :param child_process_start_time: 子进程启动时间
+        :param child_process_start_time: **参数解释**： 子进程启动时间 **取值范围**： 最小值0，最大值9223372036854775807 
         :type child_process_start_time: int
-        :param child_process_gid: 子进程组ID
+        :param child_process_gid: **参数解释**： 子进程组ID **取值范围**： 最小值0，最大值2147483647 
         :type child_process_gid: int
-        :param child_process_egid: 子进程有效组ID
+        :param child_process_egid: **参数解释**： 子进程有效组ID **取值范围**： 最小值0，最大值2147483647 
         :type child_process_egid: int
-        :param child_process_euid: 子进程有效用户ID
+        :param child_process_euid: **参数解释**： 子进程有效用户ID **取值范围**： 最小值0，最大值2147483647 
         :type child_process_euid: int
-        :param virt_cmd: 虚拟化命令
+        :param virt_cmd: **参数解释**： 虚拟化命令 **取值范围**： 字符长度1-256位 
         :type virt_cmd: str
-        :param virt_process_name: 虚拟化进程名称
+        :param virt_process_name: **参数解释**： 虚拟化进程名称 **取值范围**： 字符长度1-256位 
         :type virt_process_name: str
-        :param escape_mode: 逃逸方式
+        :param escape_mode: **参数解释**： 逃逸方式 **取值范围**： 字符长度1-256位 
         :type escape_mode: str
-        :param escape_cmd: 逃逸后后执行的命令
+        :param escape_cmd: **参数解释**： 逃逸后后执行的命令 **取值范围**： 字符长度1-256位 
         :type escape_cmd: str
-        :param process_hash: 进程启动文件hash
+        :param process_hash: **参数解释**： 进程启动文件hash **取值范围**： 字符长度1-256位 
         :type process_hash: str
-        :param process_file_hash: 进程文件hash
+        :param process_file_hash: **参数解释**： 进程文件hash **取值范围**： 字符长度1-256位 
         :type process_file_hash: str
-        :param parent_process_file_hash: 父进程文件hash
+        :param parent_process_file_hash: **参数解释**： 父进程文件hash **取值范围**： 字符长度1-256位 
         :type parent_process_file_hash: str
         :param block: 是否阻断成功，1阻断成功 0阻断失败
         :type block: int
@@ -332,7 +332,7 @@ class EventProcessResponseInfo:
     def process_name(self):
         r"""Gets the process_name of this EventProcessResponseInfo.
 
-        进程名称
+        **参数解释**： 进程名称 **取值范围**： 字符长度1-256位 
 
         :return: The process_name of this EventProcessResponseInfo.
         :rtype: str
@@ -343,7 +343,7 @@ class EventProcessResponseInfo:
     def process_name(self, process_name):
         r"""Sets the process_name of this EventProcessResponseInfo.
 
-        进程名称
+        **参数解释**： 进程名称 **取值范围**： 字符长度1-256位 
 
         :param process_name: The process_name of this EventProcessResponseInfo.
         :type process_name: str
@@ -354,7 +354,7 @@ class EventProcessResponseInfo:
     def process_path(self):
         r"""Gets the process_path of this EventProcessResponseInfo.
 
-        进程文件路径
+        **参数解释**： 进程文件路径 **取值范围**： 字符长度1-256位 
 
         :return: The process_path of this EventProcessResponseInfo.
         :rtype: str
@@ -365,7 +365,7 @@ class EventProcessResponseInfo:
     def process_path(self, process_path):
         r"""Sets the process_path of this EventProcessResponseInfo.
 
-        进程文件路径
+        **参数解释**： 进程文件路径 **取值范围**： 字符长度1-256位 
 
         :param process_path: The process_path of this EventProcessResponseInfo.
         :type process_path: str
@@ -376,7 +376,7 @@ class EventProcessResponseInfo:
     def process_pid(self):
         r"""Gets the process_pid of this EventProcessResponseInfo.
 
-        进程id
+        **参数解释**： 进程ID **取值范围**： 最小值0，最大值2147483647 
 
         :return: The process_pid of this EventProcessResponseInfo.
         :rtype: int
@@ -387,7 +387,7 @@ class EventProcessResponseInfo:
     def process_pid(self, process_pid):
         r"""Sets the process_pid of this EventProcessResponseInfo.
 
-        进程id
+        **参数解释**： 进程ID **取值范围**： 最小值0，最大值2147483647 
 
         :param process_pid: The process_pid of this EventProcessResponseInfo.
         :type process_pid: int
@@ -398,7 +398,7 @@ class EventProcessResponseInfo:
     def process_uid(self):
         r"""Gets the process_uid of this EventProcessResponseInfo.
 
-        进程用户id
+        **参数解释**： 进程用户ID **取值范围**： 最小值0，最大值2147483647 
 
         :return: The process_uid of this EventProcessResponseInfo.
         :rtype: int
@@ -409,7 +409,7 @@ class EventProcessResponseInfo:
     def process_uid(self, process_uid):
         r"""Sets the process_uid of this EventProcessResponseInfo.
 
-        进程用户id
+        **参数解释**： 进程用户ID **取值范围**： 最小值0，最大值2147483647 
 
         :param process_uid: The process_uid of this EventProcessResponseInfo.
         :type process_uid: int
@@ -420,7 +420,7 @@ class EventProcessResponseInfo:
     def process_username(self):
         r"""Gets the process_username of this EventProcessResponseInfo.
 
-        运行进程的用户名
+        **参数解释**： 运行进程的用户名 **取值范围**： 字符长度1-256位 
 
         :return: The process_username of this EventProcessResponseInfo.
         :rtype: str
@@ -431,7 +431,7 @@ class EventProcessResponseInfo:
     def process_username(self, process_username):
         r"""Sets the process_username of this EventProcessResponseInfo.
 
-        运行进程的用户名
+        **参数解释**： 运行进程的用户名 **取值范围**： 字符长度1-256位 
 
         :param process_username: The process_username of this EventProcessResponseInfo.
         :type process_username: str
@@ -442,7 +442,7 @@ class EventProcessResponseInfo:
     def process_cmdline(self):
         r"""Gets the process_cmdline of this EventProcessResponseInfo.
 
-        进程文件命令行
+        **参数解释**： 进程文件命令行 **取值范围**： 字符长度1-256位 
 
         :return: The process_cmdline of this EventProcessResponseInfo.
         :rtype: str
@@ -453,7 +453,7 @@ class EventProcessResponseInfo:
     def process_cmdline(self, process_cmdline):
         r"""Sets the process_cmdline of this EventProcessResponseInfo.
 
-        进程文件命令行
+        **参数解释**： 进程文件命令行 **取值范围**： 字符长度1-256位 
 
         :param process_cmdline: The process_cmdline of this EventProcessResponseInfo.
         :type process_cmdline: str
@@ -464,7 +464,7 @@ class EventProcessResponseInfo:
     def process_filename(self):
         r"""Gets the process_filename of this EventProcessResponseInfo.
 
-        进程文件名
+        **参数解释**： 进程文件名 **取值范围**： 字符长度1-256位 
 
         :return: The process_filename of this EventProcessResponseInfo.
         :rtype: str
@@ -475,7 +475,7 @@ class EventProcessResponseInfo:
     def process_filename(self, process_filename):
         r"""Sets the process_filename of this EventProcessResponseInfo.
 
-        进程文件名
+        **参数解释**： 进程文件名 **取值范围**： 字符长度1-256位 
 
         :param process_filename: The process_filename of this EventProcessResponseInfo.
         :type process_filename: str
@@ -486,7 +486,7 @@ class EventProcessResponseInfo:
     def process_start_time(self):
         r"""Gets the process_start_time of this EventProcessResponseInfo.
 
-        进程启动时间
+        **参数解释**： 进程启动时间 **取值范围**： 最小值0，最大值9223372036854775807 
 
         :return: The process_start_time of this EventProcessResponseInfo.
         :rtype: int
@@ -497,7 +497,7 @@ class EventProcessResponseInfo:
     def process_start_time(self, process_start_time):
         r"""Sets the process_start_time of this EventProcessResponseInfo.
 
-        进程启动时间
+        **参数解释**： 进程启动时间 **取值范围**： 最小值0，最大值9223372036854775807 
 
         :param process_start_time: The process_start_time of this EventProcessResponseInfo.
         :type process_start_time: int
@@ -508,7 +508,7 @@ class EventProcessResponseInfo:
     def process_gid(self):
         r"""Gets the process_gid of this EventProcessResponseInfo.
 
-        进程组ID
+        **参数解释**： 进程组ID **取值范围**： 最小值0，最大值2147483647 
 
         :return: The process_gid of this EventProcessResponseInfo.
         :rtype: int
@@ -519,7 +519,7 @@ class EventProcessResponseInfo:
     def process_gid(self, process_gid):
         r"""Sets the process_gid of this EventProcessResponseInfo.
 
-        进程组ID
+        **参数解释**： 进程组ID **取值范围**： 最小值0，最大值2147483647 
 
         :param process_gid: The process_gid of this EventProcessResponseInfo.
         :type process_gid: int
@@ -530,7 +530,7 @@ class EventProcessResponseInfo:
     def process_egid(self):
         r"""Gets the process_egid of this EventProcessResponseInfo.
 
-        进程有效组ID
+        **参数解释**： 进程有效组ID **取值范围**： 最小值0，最大值2147483647 
 
         :return: The process_egid of this EventProcessResponseInfo.
         :rtype: int
@@ -541,7 +541,7 @@ class EventProcessResponseInfo:
     def process_egid(self, process_egid):
         r"""Sets the process_egid of this EventProcessResponseInfo.
 
-        进程有效组ID
+        **参数解释**： 进程有效组ID **取值范围**： 最小值0，最大值2147483647 
 
         :param process_egid: The process_egid of this EventProcessResponseInfo.
         :type process_egid: int
@@ -552,7 +552,7 @@ class EventProcessResponseInfo:
     def process_euid(self):
         r"""Gets the process_euid of this EventProcessResponseInfo.
 
-        进程有效用户ID
+        **参数解释**： 进程有效用户ID **取值范围**： 最小值0，最大值2147483647 
 
         :return: The process_euid of this EventProcessResponseInfo.
         :rtype: int
@@ -563,7 +563,7 @@ class EventProcessResponseInfo:
     def process_euid(self, process_euid):
         r"""Sets the process_euid of this EventProcessResponseInfo.
 
-        进程有效用户ID
+        **参数解释**： 进程有效用户ID **取值范围**： 最小值0，最大值2147483647 
 
         :param process_euid: The process_euid of this EventProcessResponseInfo.
         :type process_euid: int
@@ -574,7 +574,7 @@ class EventProcessResponseInfo:
     def ancestor_process_path(self):
         r"""Gets the ancestor_process_path of this EventProcessResponseInfo.
 
-        祖父进程文件路径
+        **参数解释**： 祖父进程文件路径 **取值范围**： 字符长度1-256位 
 
         :return: The ancestor_process_path of this EventProcessResponseInfo.
         :rtype: str
@@ -585,7 +585,7 @@ class EventProcessResponseInfo:
     def ancestor_process_path(self, ancestor_process_path):
         r"""Sets the ancestor_process_path of this EventProcessResponseInfo.
 
-        祖父进程文件路径
+        **参数解释**： 祖父进程文件路径 **取值范围**： 字符长度1-256位 
 
         :param ancestor_process_path: The ancestor_process_path of this EventProcessResponseInfo.
         :type ancestor_process_path: str
@@ -596,7 +596,7 @@ class EventProcessResponseInfo:
     def ancestor_process_pid(self):
         r"""Gets the ancestor_process_pid of this EventProcessResponseInfo.
 
-        祖父进程id
+        **参数解释**： 祖父进程ID **取值范围**： 最小值0，最大值2147483647 
 
         :return: The ancestor_process_pid of this EventProcessResponseInfo.
         :rtype: int
@@ -607,7 +607,7 @@ class EventProcessResponseInfo:
     def ancestor_process_pid(self, ancestor_process_pid):
         r"""Sets the ancestor_process_pid of this EventProcessResponseInfo.
 
-        祖父进程id
+        **参数解释**： 祖父进程ID **取值范围**： 最小值0，最大值2147483647 
 
         :param ancestor_process_pid: The ancestor_process_pid of this EventProcessResponseInfo.
         :type ancestor_process_pid: int
@@ -618,7 +618,7 @@ class EventProcessResponseInfo:
     def ancestor_process_cmdline(self):
         r"""Gets the ancestor_process_cmdline of this EventProcessResponseInfo.
 
-        祖父进程文件命令行
+        **参数解释**： 祖父进程文件命令行 **取值范围**： 字符长度1-512位 
 
         :return: The ancestor_process_cmdline of this EventProcessResponseInfo.
         :rtype: str
@@ -629,7 +629,7 @@ class EventProcessResponseInfo:
     def ancestor_process_cmdline(self, ancestor_process_cmdline):
         r"""Sets the ancestor_process_cmdline of this EventProcessResponseInfo.
 
-        祖父进程文件命令行
+        **参数解释**： 祖父进程文件命令行 **取值范围**： 字符长度1-512位 
 
         :param ancestor_process_cmdline: The ancestor_process_cmdline of this EventProcessResponseInfo.
         :type ancestor_process_cmdline: str
@@ -640,7 +640,7 @@ class EventProcessResponseInfo:
     def parent_process_name(self):
         r"""Gets the parent_process_name of this EventProcessResponseInfo.
 
-        父进程名称
+        **参数解释**： 父进程名称 **取值范围**： 字符长度1-256位 
 
         :return: The parent_process_name of this EventProcessResponseInfo.
         :rtype: str
@@ -651,7 +651,7 @@ class EventProcessResponseInfo:
     def parent_process_name(self, parent_process_name):
         r"""Sets the parent_process_name of this EventProcessResponseInfo.
 
-        父进程名称
+        **参数解释**： 父进程名称 **取值范围**： 字符长度1-256位 
 
         :param parent_process_name: The parent_process_name of this EventProcessResponseInfo.
         :type parent_process_name: str
@@ -662,7 +662,7 @@ class EventProcessResponseInfo:
     def parent_process_path(self):
         r"""Gets the parent_process_path of this EventProcessResponseInfo.
 
-        父进程文件路径
+        **参数解释**： 父进程文件路径 **取值范围**： 字符长度1-256位 
 
         :return: The parent_process_path of this EventProcessResponseInfo.
         :rtype: str
@@ -673,7 +673,7 @@ class EventProcessResponseInfo:
     def parent_process_path(self, parent_process_path):
         r"""Sets the parent_process_path of this EventProcessResponseInfo.
 
-        父进程文件路径
+        **参数解释**： 父进程文件路径 **取值范围**： 字符长度1-256位 
 
         :param parent_process_path: The parent_process_path of this EventProcessResponseInfo.
         :type parent_process_path: str
@@ -684,7 +684,7 @@ class EventProcessResponseInfo:
     def parent_process_pid(self):
         r"""Gets the parent_process_pid of this EventProcessResponseInfo.
 
-        父进程id
+        **参数解释**： 父进程ID **取值范围**： 最小值0，最大值2147483647 
 
         :return: The parent_process_pid of this EventProcessResponseInfo.
         :rtype: int
@@ -695,7 +695,7 @@ class EventProcessResponseInfo:
     def parent_process_pid(self, parent_process_pid):
         r"""Sets the parent_process_pid of this EventProcessResponseInfo.
 
-        父进程id
+        **参数解释**： 父进程ID **取值范围**： 最小值0，最大值2147483647 
 
         :param parent_process_pid: The parent_process_pid of this EventProcessResponseInfo.
         :type parent_process_pid: int
@@ -706,7 +706,7 @@ class EventProcessResponseInfo:
     def parent_process_uid(self):
         r"""Gets the parent_process_uid of this EventProcessResponseInfo.
 
-        父进程用户id
+        **参数解释**： 父进程用户ID **取值范围**： 最小值0，最大值2147483647 
 
         :return: The parent_process_uid of this EventProcessResponseInfo.
         :rtype: int
@@ -717,7 +717,7 @@ class EventProcessResponseInfo:
     def parent_process_uid(self, parent_process_uid):
         r"""Sets the parent_process_uid of this EventProcessResponseInfo.
 
-        父进程用户id
+        **参数解释**： 父进程用户ID **取值范围**： 最小值0，最大值2147483647 
 
         :param parent_process_uid: The parent_process_uid of this EventProcessResponseInfo.
         :type parent_process_uid: int
@@ -728,7 +728,7 @@ class EventProcessResponseInfo:
     def parent_process_cmdline(self):
         r"""Gets the parent_process_cmdline of this EventProcessResponseInfo.
 
-        父进程文件命令行
+        **参数解释**： 父进程文件命令行 **取值范围**： 字符长度1-512位 
 
         :return: The parent_process_cmdline of this EventProcessResponseInfo.
         :rtype: str
@@ -739,7 +739,7 @@ class EventProcessResponseInfo:
     def parent_process_cmdline(self, parent_process_cmdline):
         r"""Sets the parent_process_cmdline of this EventProcessResponseInfo.
 
-        父进程文件命令行
+        **参数解释**： 父进程文件命令行 **取值范围**： 字符长度1-512位 
 
         :param parent_process_cmdline: The parent_process_cmdline of this EventProcessResponseInfo.
         :type parent_process_cmdline: str
@@ -750,7 +750,7 @@ class EventProcessResponseInfo:
     def parent_process_filename(self):
         r"""Gets the parent_process_filename of this EventProcessResponseInfo.
 
-        父进程文件名
+        **参数解释**： 父进程文件名 **取值范围**： 字符长度1-256位 
 
         :return: The parent_process_filename of this EventProcessResponseInfo.
         :rtype: str
@@ -761,7 +761,7 @@ class EventProcessResponseInfo:
     def parent_process_filename(self, parent_process_filename):
         r"""Sets the parent_process_filename of this EventProcessResponseInfo.
 
-        父进程文件名
+        **参数解释**： 父进程文件名 **取值范围**： 字符长度1-256位 
 
         :param parent_process_filename: The parent_process_filename of this EventProcessResponseInfo.
         :type parent_process_filename: str
@@ -772,7 +772,7 @@ class EventProcessResponseInfo:
     def parent_process_start_time(self):
         r"""Gets the parent_process_start_time of this EventProcessResponseInfo.
 
-        父进程启动时间
+        **参数解释**： 父进程启动时间 **取值范围**： 最小值0，最大值9223372036854775807 
 
         :return: The parent_process_start_time of this EventProcessResponseInfo.
         :rtype: int
@@ -783,7 +783,7 @@ class EventProcessResponseInfo:
     def parent_process_start_time(self, parent_process_start_time):
         r"""Sets the parent_process_start_time of this EventProcessResponseInfo.
 
-        父进程启动时间
+        **参数解释**： 父进程启动时间 **取值范围**： 最小值0，最大值9223372036854775807 
 
         :param parent_process_start_time: The parent_process_start_time of this EventProcessResponseInfo.
         :type parent_process_start_time: int
@@ -794,7 +794,7 @@ class EventProcessResponseInfo:
     def parent_process_gid(self):
         r"""Gets the parent_process_gid of this EventProcessResponseInfo.
 
-        父进程组ID
+        **参数解释**： 父进程组ID **取值范围**： 最小值0，最大值2147483647 
 
         :return: The parent_process_gid of this EventProcessResponseInfo.
         :rtype: int
@@ -805,7 +805,7 @@ class EventProcessResponseInfo:
     def parent_process_gid(self, parent_process_gid):
         r"""Sets the parent_process_gid of this EventProcessResponseInfo.
 
-        父进程组ID
+        **参数解释**： 父进程组ID **取值范围**： 最小值0，最大值2147483647 
 
         :param parent_process_gid: The parent_process_gid of this EventProcessResponseInfo.
         :type parent_process_gid: int
@@ -816,7 +816,7 @@ class EventProcessResponseInfo:
     def parent_process_egid(self):
         r"""Gets the parent_process_egid of this EventProcessResponseInfo.
 
-        父进程有效组ID
+        **参数解释**： 父进程有效组ID **取值范围**： 最小值0，最大值2147483647 
 
         :return: The parent_process_egid of this EventProcessResponseInfo.
         :rtype: int
@@ -827,7 +827,7 @@ class EventProcessResponseInfo:
     def parent_process_egid(self, parent_process_egid):
         r"""Sets the parent_process_egid of this EventProcessResponseInfo.
 
-        父进程有效组ID
+        **参数解释**： 父进程有效组ID **取值范围**： 最小值0，最大值2147483647 
 
         :param parent_process_egid: The parent_process_egid of this EventProcessResponseInfo.
         :type parent_process_egid: int
@@ -838,7 +838,7 @@ class EventProcessResponseInfo:
     def parent_process_euid(self):
         r"""Gets the parent_process_euid of this EventProcessResponseInfo.
 
-        父进程有效用户ID
+        **参数解释**： 父进程有效用户ID **取值范围**： 最小值0，最大值2147483647 
 
         :return: The parent_process_euid of this EventProcessResponseInfo.
         :rtype: int
@@ -849,7 +849,7 @@ class EventProcessResponseInfo:
     def parent_process_euid(self, parent_process_euid):
         r"""Sets the parent_process_euid of this EventProcessResponseInfo.
 
-        父进程有效用户ID
+        **参数解释**： 父进程有效用户ID **取值范围**： 最小值0，最大值2147483647 
 
         :param parent_process_euid: The parent_process_euid of this EventProcessResponseInfo.
         :type parent_process_euid: int
@@ -860,7 +860,7 @@ class EventProcessResponseInfo:
     def child_process_name(self):
         r"""Gets the child_process_name of this EventProcessResponseInfo.
 
-        子进程名称
+        **参数解释**： 子进程名称 **取值范围**： 字符长度1-256位 
 
         :return: The child_process_name of this EventProcessResponseInfo.
         :rtype: str
@@ -871,7 +871,7 @@ class EventProcessResponseInfo:
     def child_process_name(self, child_process_name):
         r"""Sets the child_process_name of this EventProcessResponseInfo.
 
-        子进程名称
+        **参数解释**： 子进程名称 **取值范围**： 字符长度1-256位 
 
         :param child_process_name: The child_process_name of this EventProcessResponseInfo.
         :type child_process_name: str
@@ -882,7 +882,7 @@ class EventProcessResponseInfo:
     def child_process_path(self):
         r"""Gets the child_process_path of this EventProcessResponseInfo.
 
-        子进程文件路径
+        **参数解释**： 子进程文件路径 **取值范围**： 字符长度1-256位 
 
         :return: The child_process_path of this EventProcessResponseInfo.
         :rtype: str
@@ -893,7 +893,7 @@ class EventProcessResponseInfo:
     def child_process_path(self, child_process_path):
         r"""Sets the child_process_path of this EventProcessResponseInfo.
 
-        子进程文件路径
+        **参数解释**： 子进程文件路径 **取值范围**： 字符长度1-256位 
 
         :param child_process_path: The child_process_path of this EventProcessResponseInfo.
         :type child_process_path: str
@@ -904,7 +904,7 @@ class EventProcessResponseInfo:
     def child_process_pid(self):
         r"""Gets the child_process_pid of this EventProcessResponseInfo.
 
-        子进程id
+        **参数解释**： 子进程id **取值范围**： 最小值0，最大值2147483647 
 
         :return: The child_process_pid of this EventProcessResponseInfo.
         :rtype: int
@@ -915,7 +915,7 @@ class EventProcessResponseInfo:
     def child_process_pid(self, child_process_pid):
         r"""Sets the child_process_pid of this EventProcessResponseInfo.
 
-        子进程id
+        **参数解释**： 子进程id **取值范围**： 最小值0，最大值2147483647 
 
         :param child_process_pid: The child_process_pid of this EventProcessResponseInfo.
         :type child_process_pid: int
@@ -926,7 +926,7 @@ class EventProcessResponseInfo:
     def child_process_uid(self):
         r"""Gets the child_process_uid of this EventProcessResponseInfo.
 
-        子进程用户id
+        **参数解释**： 子进程用户id **取值范围**： 最小值0，最大值2147483647 
 
         :return: The child_process_uid of this EventProcessResponseInfo.
         :rtype: int
@@ -937,7 +937,7 @@ class EventProcessResponseInfo:
     def child_process_uid(self, child_process_uid):
         r"""Sets the child_process_uid of this EventProcessResponseInfo.
 
-        子进程用户id
+        **参数解释**： 子进程用户id **取值范围**： 最小值0，最大值2147483647 
 
         :param child_process_uid: The child_process_uid of this EventProcessResponseInfo.
         :type child_process_uid: int
@@ -948,7 +948,7 @@ class EventProcessResponseInfo:
     def child_process_cmdline(self):
         r"""Gets the child_process_cmdline of this EventProcessResponseInfo.
 
-        子进程文件命令行
+        **参数解释**： 子进程文件命令行 **取值范围**： 字符长度1-256位 
 
         :return: The child_process_cmdline of this EventProcessResponseInfo.
         :rtype: str
@@ -959,7 +959,7 @@ class EventProcessResponseInfo:
     def child_process_cmdline(self, child_process_cmdline):
         r"""Sets the child_process_cmdline of this EventProcessResponseInfo.
 
-        子进程文件命令行
+        **参数解释**： 子进程文件命令行 **取值范围**： 字符长度1-256位 
 
         :param child_process_cmdline: The child_process_cmdline of this EventProcessResponseInfo.
         :type child_process_cmdline: str
@@ -970,7 +970,7 @@ class EventProcessResponseInfo:
     def child_process_filename(self):
         r"""Gets the child_process_filename of this EventProcessResponseInfo.
 
-        子进程文件名
+        **参数解释**： 子进程文件名 **取值范围**： 字符长度1-256位 
 
         :return: The child_process_filename of this EventProcessResponseInfo.
         :rtype: str
@@ -981,7 +981,7 @@ class EventProcessResponseInfo:
     def child_process_filename(self, child_process_filename):
         r"""Sets the child_process_filename of this EventProcessResponseInfo.
 
-        子进程文件名
+        **参数解释**： 子进程文件名 **取值范围**： 字符长度1-256位 
 
         :param child_process_filename: The child_process_filename of this EventProcessResponseInfo.
         :type child_process_filename: str
@@ -992,7 +992,7 @@ class EventProcessResponseInfo:
     def child_process_start_time(self):
         r"""Gets the child_process_start_time of this EventProcessResponseInfo.
 
-        子进程启动时间
+        **参数解释**： 子进程启动时间 **取值范围**： 最小值0，最大值9223372036854775807 
 
         :return: The child_process_start_time of this EventProcessResponseInfo.
         :rtype: int
@@ -1003,7 +1003,7 @@ class EventProcessResponseInfo:
     def child_process_start_time(self, child_process_start_time):
         r"""Sets the child_process_start_time of this EventProcessResponseInfo.
 
-        子进程启动时间
+        **参数解释**： 子进程启动时间 **取值范围**： 最小值0，最大值9223372036854775807 
 
         :param child_process_start_time: The child_process_start_time of this EventProcessResponseInfo.
         :type child_process_start_time: int
@@ -1014,7 +1014,7 @@ class EventProcessResponseInfo:
     def child_process_gid(self):
         r"""Gets the child_process_gid of this EventProcessResponseInfo.
 
-        子进程组ID
+        **参数解释**： 子进程组ID **取值范围**： 最小值0，最大值2147483647 
 
         :return: The child_process_gid of this EventProcessResponseInfo.
         :rtype: int
@@ -1025,7 +1025,7 @@ class EventProcessResponseInfo:
     def child_process_gid(self, child_process_gid):
         r"""Sets the child_process_gid of this EventProcessResponseInfo.
 
-        子进程组ID
+        **参数解释**： 子进程组ID **取值范围**： 最小值0，最大值2147483647 
 
         :param child_process_gid: The child_process_gid of this EventProcessResponseInfo.
         :type child_process_gid: int
@@ -1036,7 +1036,7 @@ class EventProcessResponseInfo:
     def child_process_egid(self):
         r"""Gets the child_process_egid of this EventProcessResponseInfo.
 
-        子进程有效组ID
+        **参数解释**： 子进程有效组ID **取值范围**： 最小值0，最大值2147483647 
 
         :return: The child_process_egid of this EventProcessResponseInfo.
         :rtype: int
@@ -1047,7 +1047,7 @@ class EventProcessResponseInfo:
     def child_process_egid(self, child_process_egid):
         r"""Sets the child_process_egid of this EventProcessResponseInfo.
 
-        子进程有效组ID
+        **参数解释**： 子进程有效组ID **取值范围**： 最小值0，最大值2147483647 
 
         :param child_process_egid: The child_process_egid of this EventProcessResponseInfo.
         :type child_process_egid: int
@@ -1058,7 +1058,7 @@ class EventProcessResponseInfo:
     def child_process_euid(self):
         r"""Gets the child_process_euid of this EventProcessResponseInfo.
 
-        子进程有效用户ID
+        **参数解释**： 子进程有效用户ID **取值范围**： 最小值0，最大值2147483647 
 
         :return: The child_process_euid of this EventProcessResponseInfo.
         :rtype: int
@@ -1069,7 +1069,7 @@ class EventProcessResponseInfo:
     def child_process_euid(self, child_process_euid):
         r"""Sets the child_process_euid of this EventProcessResponseInfo.
 
-        子进程有效用户ID
+        **参数解释**： 子进程有效用户ID **取值范围**： 最小值0，最大值2147483647 
 
         :param child_process_euid: The child_process_euid of this EventProcessResponseInfo.
         :type child_process_euid: int
@@ -1080,7 +1080,7 @@ class EventProcessResponseInfo:
     def virt_cmd(self):
         r"""Gets the virt_cmd of this EventProcessResponseInfo.
 
-        虚拟化命令
+        **参数解释**： 虚拟化命令 **取值范围**： 字符长度1-256位 
 
         :return: The virt_cmd of this EventProcessResponseInfo.
         :rtype: str
@@ -1091,7 +1091,7 @@ class EventProcessResponseInfo:
     def virt_cmd(self, virt_cmd):
         r"""Sets the virt_cmd of this EventProcessResponseInfo.
 
-        虚拟化命令
+        **参数解释**： 虚拟化命令 **取值范围**： 字符长度1-256位 
 
         :param virt_cmd: The virt_cmd of this EventProcessResponseInfo.
         :type virt_cmd: str
@@ -1102,7 +1102,7 @@ class EventProcessResponseInfo:
     def virt_process_name(self):
         r"""Gets the virt_process_name of this EventProcessResponseInfo.
 
-        虚拟化进程名称
+        **参数解释**： 虚拟化进程名称 **取值范围**： 字符长度1-256位 
 
         :return: The virt_process_name of this EventProcessResponseInfo.
         :rtype: str
@@ -1113,7 +1113,7 @@ class EventProcessResponseInfo:
     def virt_process_name(self, virt_process_name):
         r"""Sets the virt_process_name of this EventProcessResponseInfo.
 
-        虚拟化进程名称
+        **参数解释**： 虚拟化进程名称 **取值范围**： 字符长度1-256位 
 
         :param virt_process_name: The virt_process_name of this EventProcessResponseInfo.
         :type virt_process_name: str
@@ -1124,7 +1124,7 @@ class EventProcessResponseInfo:
     def escape_mode(self):
         r"""Gets the escape_mode of this EventProcessResponseInfo.
 
-        逃逸方式
+        **参数解释**： 逃逸方式 **取值范围**： 字符长度1-256位 
 
         :return: The escape_mode of this EventProcessResponseInfo.
         :rtype: str
@@ -1135,7 +1135,7 @@ class EventProcessResponseInfo:
     def escape_mode(self, escape_mode):
         r"""Sets the escape_mode of this EventProcessResponseInfo.
 
-        逃逸方式
+        **参数解释**： 逃逸方式 **取值范围**： 字符长度1-256位 
 
         :param escape_mode: The escape_mode of this EventProcessResponseInfo.
         :type escape_mode: str
@@ -1146,7 +1146,7 @@ class EventProcessResponseInfo:
     def escape_cmd(self):
         r"""Gets the escape_cmd of this EventProcessResponseInfo.
 
-        逃逸后后执行的命令
+        **参数解释**： 逃逸后后执行的命令 **取值范围**： 字符长度1-256位 
 
         :return: The escape_cmd of this EventProcessResponseInfo.
         :rtype: str
@@ -1157,7 +1157,7 @@ class EventProcessResponseInfo:
     def escape_cmd(self, escape_cmd):
         r"""Sets the escape_cmd of this EventProcessResponseInfo.
 
-        逃逸后后执行的命令
+        **参数解释**： 逃逸后后执行的命令 **取值范围**： 字符长度1-256位 
 
         :param escape_cmd: The escape_cmd of this EventProcessResponseInfo.
         :type escape_cmd: str
@@ -1168,7 +1168,7 @@ class EventProcessResponseInfo:
     def process_hash(self):
         r"""Gets the process_hash of this EventProcessResponseInfo.
 
-        进程启动文件hash
+        **参数解释**： 进程启动文件hash **取值范围**： 字符长度1-256位 
 
         :return: The process_hash of this EventProcessResponseInfo.
         :rtype: str
@@ -1179,7 +1179,7 @@ class EventProcessResponseInfo:
     def process_hash(self, process_hash):
         r"""Sets the process_hash of this EventProcessResponseInfo.
 
-        进程启动文件hash
+        **参数解释**： 进程启动文件hash **取值范围**： 字符长度1-256位 
 
         :param process_hash: The process_hash of this EventProcessResponseInfo.
         :type process_hash: str
@@ -1190,7 +1190,7 @@ class EventProcessResponseInfo:
     def process_file_hash(self):
         r"""Gets the process_file_hash of this EventProcessResponseInfo.
 
-        进程文件hash
+        **参数解释**： 进程文件hash **取值范围**： 字符长度1-256位 
 
         :return: The process_file_hash of this EventProcessResponseInfo.
         :rtype: str
@@ -1201,7 +1201,7 @@ class EventProcessResponseInfo:
     def process_file_hash(self, process_file_hash):
         r"""Sets the process_file_hash of this EventProcessResponseInfo.
 
-        进程文件hash
+        **参数解释**： 进程文件hash **取值范围**： 字符长度1-256位 
 
         :param process_file_hash: The process_file_hash of this EventProcessResponseInfo.
         :type process_file_hash: str
@@ -1212,7 +1212,7 @@ class EventProcessResponseInfo:
     def parent_process_file_hash(self):
         r"""Gets the parent_process_file_hash of this EventProcessResponseInfo.
 
-        父进程文件hash
+        **参数解释**： 父进程文件hash **取值范围**： 字符长度1-256位 
 
         :return: The parent_process_file_hash of this EventProcessResponseInfo.
         :rtype: str
@@ -1223,7 +1223,7 @@ class EventProcessResponseInfo:
     def parent_process_file_hash(self, parent_process_file_hash):
         r"""Sets the parent_process_file_hash of this EventProcessResponseInfo.
 
-        父进程文件hash
+        **参数解释**： 父进程文件hash **取值范围**： 字符长度1-256位 
 
         :param parent_process_file_hash: The parent_process_file_hash of this EventProcessResponseInfo.
         :type parent_process_file_hash: str

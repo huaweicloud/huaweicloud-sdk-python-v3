@@ -78,7 +78,7 @@ class ShowK8sPodDetailResponse(SdkResponse):
         :type node_ip: str
         :param pod_ip: Pod IP
         :type pod_ip: str
-        :param status: Pod状态，包含以下几种 -Pending：pod 已被 Kubernetes 系统接受，但尚未创建一个或多个容器镜像 -Running：pod 已经绑定到一个节点，并且所有的容器都已经创建完毕 -Succeeded：pod 中的所有容器都已成功终止，不会重新启动 -Failed：Pod 中的所有容器都已终止，并且至少有一个容器因故障而终止 -Unknown：由于某种原因无法获取 pod 的状态，通常是由于与 pod 的主机通信时出错
+        :param status: Pod状态，包含以下几种 -Pending：pod已被Kubernetes系统接受，但尚未创建一个或多个容器镜像 -Running：pod已经绑定到一个节点，并且所有的容器都已经创建完毕 -Succeeded：pod中的所有容器都已成功终止，不会重新启动 -Failed：pod中的所有容器都已终止，并且至少有一个容器因故障而终止 -Unknown：由于某种原因无法获取pod的状态，通常是由于与pod的主机通信时出错
         :type status: str
         :param create_time: 创建时间
         :type create_time: int
@@ -379,7 +379,7 @@ class ShowK8sPodDetailResponse(SdkResponse):
     def status(self):
         r"""Gets the status of this ShowK8sPodDetailResponse.
 
-        Pod状态，包含以下几种 -Pending：pod 已被 Kubernetes 系统接受，但尚未创建一个或多个容器镜像 -Running：pod 已经绑定到一个节点，并且所有的容器都已经创建完毕 -Succeeded：pod 中的所有容器都已成功终止，不会重新启动 -Failed：Pod 中的所有容器都已终止，并且至少有一个容器因故障而终止 -Unknown：由于某种原因无法获取 pod 的状态，通常是由于与 pod 的主机通信时出错
+        Pod状态，包含以下几种 -Pending：pod已被Kubernetes系统接受，但尚未创建一个或多个容器镜像 -Running：pod已经绑定到一个节点，并且所有的容器都已经创建完毕 -Succeeded：pod中的所有容器都已成功终止，不会重新启动 -Failed：pod中的所有容器都已终止，并且至少有一个容器因故障而终止 -Unknown：由于某种原因无法获取pod的状态，通常是由于与pod的主机通信时出错
 
         :return: The status of this ShowK8sPodDetailResponse.
         :rtype: str
@@ -390,7 +390,7 @@ class ShowK8sPodDetailResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this ShowK8sPodDetailResponse.
 
-        Pod状态，包含以下几种 -Pending：pod 已被 Kubernetes 系统接受，但尚未创建一个或多个容器镜像 -Running：pod 已经绑定到一个节点，并且所有的容器都已经创建完毕 -Succeeded：pod 中的所有容器都已成功终止，不会重新启动 -Failed：Pod 中的所有容器都已终止，并且至少有一个容器因故障而终止 -Unknown：由于某种原因无法获取 pod 的状态，通常是由于与 pod 的主机通信时出错
+        Pod状态，包含以下几种 -Pending：pod已被Kubernetes系统接受，但尚未创建一个或多个容器镜像 -Running：pod已经绑定到一个节点，并且所有的容器都已经创建完毕 -Succeeded：pod中的所有容器都已成功终止，不会重新启动 -Failed：pod中的所有容器都已终止，并且至少有一个容器因故障而终止 -Unknown：由于某种原因无法获取pod的状态，通常是由于与pod的主机通信时出错
 
         :param status: The status of this ShowK8sPodDetailResponse.
         :type status: str

@@ -63,7 +63,7 @@ class MultiCloudClusterCreateRequestBody:
 
         :param name: 集群名称
         :type name: str
-        :param provider: 集群服务商:   - ali：阿里   - tencent：腾讯   - azure：微软   - aws：亚马逊   - self_built_hw：华为自建   - self_built_idc：IDC自建 
+        :param provider: **参数解释** 集群服务商 **约束限制**   - ali：阿里。   - tencent：腾讯。   - azure：微软。   - aws：亚马逊。   - self_built_hw：华为自建。   - self_built_idc：IDC自建。  **取值范围** 字符长度范围0-64 **默认取值** 不涉及 
         :type provider: str
         :param server: 集群apiserver地址
         :type server: str
@@ -75,7 +75,7 @@ class MultiCloudClusterCreateRequestBody:
         :type image_repo_password: str
         :param organization: 组织
         :type organization: str
-        :param image_repo_type: 镜像仓类型： - harbor Harbor镜像仓 - quay Quay镜像仓 - jfrog Jfrog镜像仓 - other 其他镜像仓
+        :param image_repo_type: **参数解释** 镜像仓类型 **约束限制** - harbor：Harbor镜像仓。 - quay：Quay镜像仓。 - jfrog：Jfrog镜像仓。 - other：其他镜像仓。  **取值范围** 字符长度范围0-64 **默认取值** 不涉及 
         :type image_repo_type: str
         :param current_expiration_date: 当前有效期结束时间
         :type current_expiration_date: int
@@ -178,7 +178,7 @@ class MultiCloudClusterCreateRequestBody:
     def provider(self):
         r"""Gets the provider of this MultiCloudClusterCreateRequestBody.
 
-        集群服务商:   - ali：阿里   - tencent：腾讯   - azure：微软   - aws：亚马逊   - self_built_hw：华为自建   - self_built_idc：IDC自建 
+        **参数解释** 集群服务商 **约束限制**   - ali：阿里。   - tencent：腾讯。   - azure：微软。   - aws：亚马逊。   - self_built_hw：华为自建。   - self_built_idc：IDC自建。  **取值范围** 字符长度范围0-64 **默认取值** 不涉及 
 
         :return: The provider of this MultiCloudClusterCreateRequestBody.
         :rtype: str
@@ -189,7 +189,7 @@ class MultiCloudClusterCreateRequestBody:
     def provider(self, provider):
         r"""Sets the provider of this MultiCloudClusterCreateRequestBody.
 
-        集群服务商:   - ali：阿里   - tencent：腾讯   - azure：微软   - aws：亚马逊   - self_built_hw：华为自建   - self_built_idc：IDC自建 
+        **参数解释** 集群服务商 **约束限制**   - ali：阿里。   - tencent：腾讯。   - azure：微软。   - aws：亚马逊。   - self_built_hw：华为自建。   - self_built_idc：IDC自建。  **取值范围** 字符长度范围0-64 **默认取值** 不涉及 
 
         :param provider: The provider of this MultiCloudClusterCreateRequestBody.
         :type provider: str
@@ -310,7 +310,7 @@ class MultiCloudClusterCreateRequestBody:
     def image_repo_type(self):
         r"""Gets the image_repo_type of this MultiCloudClusterCreateRequestBody.
 
-        镜像仓类型： - harbor Harbor镜像仓 - quay Quay镜像仓 - jfrog Jfrog镜像仓 - other 其他镜像仓
+        **参数解释** 镜像仓类型 **约束限制** - harbor：Harbor镜像仓。 - quay：Quay镜像仓。 - jfrog：Jfrog镜像仓。 - other：其他镜像仓。  **取值范围** 字符长度范围0-64 **默认取值** 不涉及 
 
         :return: The image_repo_type of this MultiCloudClusterCreateRequestBody.
         :rtype: str
@@ -321,7 +321,7 @@ class MultiCloudClusterCreateRequestBody:
     def image_repo_type(self, image_repo_type):
         r"""Sets the image_repo_type of this MultiCloudClusterCreateRequestBody.
 
-        镜像仓类型： - harbor Harbor镜像仓 - quay Quay镜像仓 - jfrog Jfrog镜像仓 - other 其他镜像仓
+        **参数解释** 镜像仓类型 **约束限制** - harbor：Harbor镜像仓。 - quay：Quay镜像仓。 - jfrog：Jfrog镜像仓。 - other：其他镜像仓。  **取值范围** 字符长度范围0-64 **默认取值** 不涉及 
 
         :param image_repo_type: The image_repo_type of this MultiCloudClusterCreateRequestBody.
         :type image_repo_type: str

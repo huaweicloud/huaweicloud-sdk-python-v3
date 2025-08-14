@@ -31,7 +31,7 @@ class BatchDeleteImageServerReq:
 
         The model defined in huaweicloud sdk
 
-        :param items: 批量唯一标识请求列表，一次请求数量区间 [1, 20]
+        :param items: 批量唯一标识请求列表，一次请求数量区间 [1, 20]。
         :type items: list[str]
         :param recursive: 是否同时删除镜像实例关联资源： **⚠ 警告: 关联资源删除，对应的应用将不可用** * &#x60;true&#x60; 同时删除关联资源，包括APS服务器组，APS服务器，应用组相关资源。镜像产物相关信息保留。 * &#x60;false&#x60; 只删除镜像实例记录，保留关联资源。
         :type recursive: bool
@@ -51,7 +51,7 @@ class BatchDeleteImageServerReq:
     def items(self):
         r"""Gets the items of this BatchDeleteImageServerReq.
 
-        批量唯一标识请求列表，一次请求数量区间 [1, 20]
+        批量唯一标识请求列表，一次请求数量区间 [1, 20]。
 
         :return: The items of this BatchDeleteImageServerReq.
         :rtype: list[str]
@@ -62,7 +62,7 @@ class BatchDeleteImageServerReq:
     def items(self, items):
         r"""Sets the items of this BatchDeleteImageServerReq.
 
-        批量唯一标识请求列表，一次请求数量区间 [1, 20]
+        批量唯一标识请求列表，一次请求数量区间 [1, 20]。
 
         :param items: The items of this BatchDeleteImageServerReq.
         :type items: list[str]

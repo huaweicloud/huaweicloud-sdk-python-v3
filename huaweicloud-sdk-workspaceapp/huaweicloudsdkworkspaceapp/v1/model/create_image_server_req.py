@@ -67,7 +67,7 @@ class CreateImageServerReq:
 
         :param name: 镜像实例名称，名称需满足如下规则: 1. 由中文，英文大小写，数字，_-组成，不能有空格 2. 长度范围1~64个字符
         :type name: str
-        :param description: 镜像实例描述
+        :param description: 镜像实例描述。
         :type description: str
         :param root_volume: 
         :type root_volume: :class:`huaweicloudsdkworkspaceapp.v1.Volume`
@@ -75,31 +75,31 @@ class CreateImageServerReq:
         :type image_ref: :class:`huaweicloudsdkworkspaceapp.v1.ImageRef`
         :param vpc_id: 镜像实例所属虚拟私有云唯一标识。
         :type vpc_id: str
-        :param subnet_id: 镜像实例网卡对应的子网唯一标识
+        :param subnet_id: 镜像实例网卡对应的子网唯一标识。
         :type subnet_id: str
-        :param product_id: 镜像实例产品套餐ID
+        :param product_id: 镜像实例产品套餐ID。
         :type product_id: str
         :param flavor_id: 规格ID。
         :type flavor_id: str
-        :param availability_zone: 镜像实例的可用区，空值表示随机选取可用区
+        :param availability_zone: 镜像实例的可用区，空值表示随机选取可用区。
         :type availability_zone: str
-        :param attach_apps: 云应用仓库软件唯一标识请求列表
+        :param attach_apps: 云应用仓库软件唯一标识请求列表。
         :type attach_apps: list[str]
         :param authorize_accounts: 应用组授权用户， * 限制用户类型：&#39;USER&#39; - 用户
         :type authorize_accounts: list[:class:`huaweicloudsdkworkspaceapp.v1.ImageAccountInfo`]
-        :param ou_name: 组织名称
+        :param ou_name: 组织名称。
         :type ou_name: str
-        :param is_vdi: 是否为vdi单会话模式
+        :param is_vdi: 是否为vdi单会话模式。
         :type is_vdi: bool
         :param scheduler_hints: 
         :type scheduler_hints: :class:`huaweicloudsdkworkspaceapp.v1.WdhParam`
         :param extra_session_type: 
         :type extra_session_type: :class:`huaweicloudsdkworkspaceapp.v1.ExtraSessionTypeEnum`
-        :param extra_session_size: 需要付费的会话数，单位/个
+        :param extra_session_size: 需要付费的会话数，单位/个。
         :type extra_session_size: int
         :param route_policy: 
         :type route_policy: :class:`huaweicloudsdkworkspaceapp.v1.RoutePolicy`
-        :param tags: 标签信息，最多包含20个key,不允许重复
+        :param tags: 标签信息，最多包含20个key,不允许重复。
         :type tags: list[:class:`huaweicloudsdkworkspaceapp.v1.TmsTag`]
         :param enterprise_project_id: **⚠ : 此属性是预留字段，不需要传值，目前镜像产物默认属于default企业项目** 镜像所属的企业项目ID，默认属于default企业项目。 关于企业项目ID的获取及企业项目特性的详细信息，请参考“[企业中心总览](https://support.huaweicloud.com/zh-cn/usermanual-em/zh-cn_topic_0123692049.html)”。
         :type enterprise_project_id: str
@@ -186,7 +186,7 @@ class CreateImageServerReq:
     def description(self):
         r"""Gets the description of this CreateImageServerReq.
 
-        镜像实例描述
+        镜像实例描述。
 
         :return: The description of this CreateImageServerReq.
         :rtype: str
@@ -197,7 +197,7 @@ class CreateImageServerReq:
     def description(self, description):
         r"""Sets the description of this CreateImageServerReq.
 
-        镜像实例描述
+        镜像实例描述。
 
         :param description: The description of this CreateImageServerReq.
         :type description: str
@@ -266,7 +266,7 @@ class CreateImageServerReq:
     def subnet_id(self):
         r"""Gets the subnet_id of this CreateImageServerReq.
 
-        镜像实例网卡对应的子网唯一标识
+        镜像实例网卡对应的子网唯一标识。
 
         :return: The subnet_id of this CreateImageServerReq.
         :rtype: str
@@ -277,7 +277,7 @@ class CreateImageServerReq:
     def subnet_id(self, subnet_id):
         r"""Sets the subnet_id of this CreateImageServerReq.
 
-        镜像实例网卡对应的子网唯一标识
+        镜像实例网卡对应的子网唯一标识。
 
         :param subnet_id: The subnet_id of this CreateImageServerReq.
         :type subnet_id: str
@@ -288,7 +288,7 @@ class CreateImageServerReq:
     def product_id(self):
         r"""Gets the product_id of this CreateImageServerReq.
 
-        镜像实例产品套餐ID
+        镜像实例产品套餐ID。
 
         :return: The product_id of this CreateImageServerReq.
         :rtype: str
@@ -299,7 +299,7 @@ class CreateImageServerReq:
     def product_id(self, product_id):
         r"""Sets the product_id of this CreateImageServerReq.
 
-        镜像实例产品套餐ID
+        镜像实例产品套餐ID。
 
         :param product_id: The product_id of this CreateImageServerReq.
         :type product_id: str
@@ -332,7 +332,7 @@ class CreateImageServerReq:
     def availability_zone(self):
         r"""Gets the availability_zone of this CreateImageServerReq.
 
-        镜像实例的可用区，空值表示随机选取可用区
+        镜像实例的可用区，空值表示随机选取可用区。
 
         :return: The availability_zone of this CreateImageServerReq.
         :rtype: str
@@ -343,7 +343,7 @@ class CreateImageServerReq:
     def availability_zone(self, availability_zone):
         r"""Sets the availability_zone of this CreateImageServerReq.
 
-        镜像实例的可用区，空值表示随机选取可用区
+        镜像实例的可用区，空值表示随机选取可用区。
 
         :param availability_zone: The availability_zone of this CreateImageServerReq.
         :type availability_zone: str
@@ -354,7 +354,7 @@ class CreateImageServerReq:
     def attach_apps(self):
         r"""Gets the attach_apps of this CreateImageServerReq.
 
-        云应用仓库软件唯一标识请求列表
+        云应用仓库软件唯一标识请求列表。
 
         :return: The attach_apps of this CreateImageServerReq.
         :rtype: list[str]
@@ -365,7 +365,7 @@ class CreateImageServerReq:
     def attach_apps(self, attach_apps):
         r"""Sets the attach_apps of this CreateImageServerReq.
 
-        云应用仓库软件唯一标识请求列表
+        云应用仓库软件唯一标识请求列表。
 
         :param attach_apps: The attach_apps of this CreateImageServerReq.
         :type attach_apps: list[str]
@@ -398,7 +398,7 @@ class CreateImageServerReq:
     def ou_name(self):
         r"""Gets the ou_name of this CreateImageServerReq.
 
-        组织名称
+        组织名称。
 
         :return: The ou_name of this CreateImageServerReq.
         :rtype: str
@@ -409,7 +409,7 @@ class CreateImageServerReq:
     def ou_name(self, ou_name):
         r"""Sets the ou_name of this CreateImageServerReq.
 
-        组织名称
+        组织名称。
 
         :param ou_name: The ou_name of this CreateImageServerReq.
         :type ou_name: str
@@ -420,7 +420,7 @@ class CreateImageServerReq:
     def is_vdi(self):
         r"""Gets the is_vdi of this CreateImageServerReq.
 
-        是否为vdi单会话模式
+        是否为vdi单会话模式。
 
         :return: The is_vdi of this CreateImageServerReq.
         :rtype: bool
@@ -431,7 +431,7 @@ class CreateImageServerReq:
     def is_vdi(self, is_vdi):
         r"""Sets the is_vdi of this CreateImageServerReq.
 
-        是否为vdi单会话模式
+        是否为vdi单会话模式。
 
         :param is_vdi: The is_vdi of this CreateImageServerReq.
         :type is_vdi: bool
@@ -478,7 +478,7 @@ class CreateImageServerReq:
     def extra_session_size(self):
         r"""Gets the extra_session_size of this CreateImageServerReq.
 
-        需要付费的会话数，单位/个
+        需要付费的会话数，单位/个。
 
         :return: The extra_session_size of this CreateImageServerReq.
         :rtype: int
@@ -489,7 +489,7 @@ class CreateImageServerReq:
     def extra_session_size(self, extra_session_size):
         r"""Sets the extra_session_size of this CreateImageServerReq.
 
-        需要付费的会话数，单位/个
+        需要付费的会话数，单位/个。
 
         :param extra_session_size: The extra_session_size of this CreateImageServerReq.
         :type extra_session_size: int
@@ -518,7 +518,7 @@ class CreateImageServerReq:
     def tags(self):
         r"""Gets the tags of this CreateImageServerReq.
 
-        标签信息，最多包含20个key,不允许重复
+        标签信息，最多包含20个key,不允许重复。
 
         :return: The tags of this CreateImageServerReq.
         :rtype: list[:class:`huaweicloudsdkworkspaceapp.v1.TmsTag`]
@@ -529,7 +529,7 @@ class CreateImageServerReq:
     def tags(self, tags):
         r"""Sets the tags of this CreateImageServerReq.
 
-        标签信息，最多包含20个key,不允许重复
+        标签信息，最多包含20个key,不允许重复。
 
         :param tags: The tags of this CreateImageServerReq.
         :type tags: list[:class:`huaweicloudsdkworkspaceapp.v1.TmsTag`]

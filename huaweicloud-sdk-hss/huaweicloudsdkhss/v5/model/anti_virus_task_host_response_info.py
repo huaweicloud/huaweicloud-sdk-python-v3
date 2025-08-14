@@ -69,13 +69,13 @@ class AntiVirusTaskHostResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param host_id: **参数解释**: 服务器ID **取值范围**: 字符长度1-64位 
+        :param host_id: **参数解释**： 主机ID **取值范围**： 字符长度1-64位 
         :type host_id: str
         :param host_name: **参数解释**: 服务器名称 **取值范围**: 字符长度1-256位 
         :type host_name: str
-        :param private_ip: 服务器私有IP
+        :param private_ip: **参数解释**： 服务器私有IP **取值范围**： 字符长度1-128位 
         :type private_ip: str
-        :param public_ip: 弹性公网IP地址
+        :param public_ip: **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位 
         :type public_ip: str
         :param asset_value: 资产重要性，包含如下3种   - important ：重要资产   - common ：一般资产   - test ：测试资产
         :type asset_value: str
@@ -99,7 +99,7 @@ class AntiVirusTaskHostResponseInfo:
         :type whether_using_quota: int
         :param agent_id: **参数解释**: Agent ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
         :type agent_id: str
-        :param os_type: 操作系统类型，包含如下2种。   - Linux ：Linux。   - Windows ：Windows。
+        :param os_type: **参数解释**： 操作系统类型 **取值范围**： - Linux：Linux。 - Windows：Windows。 
         :type os_type: str
         :param host_status: 服务器状态
         :type host_status: str
@@ -109,7 +109,7 @@ class AntiVirusTaskHostResponseInfo:
         :type protect_status: str
         :param os_name: 操作系统名称
         :type os_name: str
-        :param os_version: 操作系统版本
+        :param os_version: 系统版本
         :type os_version: str
         """
         
@@ -185,7 +185,7 @@ class AntiVirusTaskHostResponseInfo:
     def host_id(self):
         r"""Gets the host_id of this AntiVirusTaskHostResponseInfo.
 
-        **参数解释**: 服务器ID **取值范围**: 字符长度1-64位 
+        **参数解释**： 主机ID **取值范围**： 字符长度1-64位 
 
         :return: The host_id of this AntiVirusTaskHostResponseInfo.
         :rtype: str
@@ -196,7 +196,7 @@ class AntiVirusTaskHostResponseInfo:
     def host_id(self, host_id):
         r"""Sets the host_id of this AntiVirusTaskHostResponseInfo.
 
-        **参数解释**: 服务器ID **取值范围**: 字符长度1-64位 
+        **参数解释**： 主机ID **取值范围**： 字符长度1-64位 
 
         :param host_id: The host_id of this AntiVirusTaskHostResponseInfo.
         :type host_id: str
@@ -229,7 +229,7 @@ class AntiVirusTaskHostResponseInfo:
     def private_ip(self):
         r"""Gets the private_ip of this AntiVirusTaskHostResponseInfo.
 
-        服务器私有IP
+        **参数解释**： 服务器私有IP **取值范围**： 字符长度1-128位 
 
         :return: The private_ip of this AntiVirusTaskHostResponseInfo.
         :rtype: str
@@ -240,7 +240,7 @@ class AntiVirusTaskHostResponseInfo:
     def private_ip(self, private_ip):
         r"""Sets the private_ip of this AntiVirusTaskHostResponseInfo.
 
-        服务器私有IP
+        **参数解释**： 服务器私有IP **取值范围**： 字符长度1-128位 
 
         :param private_ip: The private_ip of this AntiVirusTaskHostResponseInfo.
         :type private_ip: str
@@ -251,7 +251,7 @@ class AntiVirusTaskHostResponseInfo:
     def public_ip(self):
         r"""Gets the public_ip of this AntiVirusTaskHostResponseInfo.
 
-        弹性公网IP地址
+        **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位 
 
         :return: The public_ip of this AntiVirusTaskHostResponseInfo.
         :rtype: str
@@ -262,7 +262,7 @@ class AntiVirusTaskHostResponseInfo:
     def public_ip(self, public_ip):
         r"""Sets the public_ip of this AntiVirusTaskHostResponseInfo.
 
-        弹性公网IP地址
+        **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位 
 
         :param public_ip: The public_ip of this AntiVirusTaskHostResponseInfo.
         :type public_ip: str
@@ -515,7 +515,7 @@ class AntiVirusTaskHostResponseInfo:
     def os_type(self):
         r"""Gets the os_type of this AntiVirusTaskHostResponseInfo.
 
-        操作系统类型，包含如下2种。   - Linux ：Linux。   - Windows ：Windows。
+        **参数解释**： 操作系统类型 **取值范围**： - Linux：Linux。 - Windows：Windows。 
 
         :return: The os_type of this AntiVirusTaskHostResponseInfo.
         :rtype: str
@@ -526,7 +526,7 @@ class AntiVirusTaskHostResponseInfo:
     def os_type(self, os_type):
         r"""Sets the os_type of this AntiVirusTaskHostResponseInfo.
 
-        操作系统类型，包含如下2种。   - Linux ：Linux。   - Windows ：Windows。
+        **参数解释**： 操作系统类型 **取值范围**： - Linux：Linux。 - Windows：Windows。 
 
         :param os_type: The os_type of this AntiVirusTaskHostResponseInfo.
         :type os_type: str
@@ -625,7 +625,7 @@ class AntiVirusTaskHostResponseInfo:
     def os_version(self):
         r"""Gets the os_version of this AntiVirusTaskHostResponseInfo.
 
-        操作系统版本
+        系统版本
 
         :return: The os_version of this AntiVirusTaskHostResponseInfo.
         :rtype: str
@@ -636,7 +636,7 @@ class AntiVirusTaskHostResponseInfo:
     def os_version(self, os_version):
         r"""Sets the os_version of this AntiVirusTaskHostResponseInfo.
 
-        操作系统版本
+        系统版本
 
         :param os_version: The os_version of this AntiVirusTaskHostResponseInfo.
         :type os_version: str

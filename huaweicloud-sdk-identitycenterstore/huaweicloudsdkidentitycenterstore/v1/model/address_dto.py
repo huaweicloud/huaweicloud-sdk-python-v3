@@ -58,7 +58,7 @@ class AddressDto:
         :type locality: str
         :param postal_code: 邮政编码
         :type postal_code: str
-        :param primary: 一个布尔值，表示这是否为用户的主地址
+        :param primary: 一个布尔值，表示这是否是用户的主地址
         :type primary: bool
         :param region: 区域
         :type region: str
@@ -189,7 +189,7 @@ class AddressDto:
     def primary(self):
         r"""Gets the primary of this AddressDto.
 
-        一个布尔值，表示这是否为用户的主地址
+        一个布尔值，表示这是否是用户的主地址
 
         :return: The primary of this AddressDto.
         :rtype: bool
@@ -200,7 +200,7 @@ class AddressDto:
     def primary(self, primary):
         r"""Sets the primary of this AddressDto.
 
-        一个布尔值，表示这是否为用户的主地址
+        一个布尔值，表示这是否是用户的主地址
 
         :param primary: The primary of this AddressDto.
         :type primary: bool

@@ -49,9 +49,9 @@ class ListSessionsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param limit: 单次查询的大小[1-100]。
+        :param limit: 单次查询的大小[1-100]，默认值10。
         :type limit: int
-        :param offset: 查询的偏移量。
+        :param offset: 查询的偏移量，默认值0。
         :type offset: int
         :param user_name: 用户名。
         :type user_name: str
@@ -113,7 +113,7 @@ class ListSessionsRequest:
     def limit(self):
         r"""Gets the limit of this ListSessionsRequest.
 
-        单次查询的大小[1-100]。
+        单次查询的大小[1-100]，默认值10。
 
         :return: The limit of this ListSessionsRequest.
         :rtype: int
@@ -124,7 +124,7 @@ class ListSessionsRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListSessionsRequest.
 
-        单次查询的大小[1-100]。
+        单次查询的大小[1-100]，默认值10。
 
         :param limit: The limit of this ListSessionsRequest.
         :type limit: int
@@ -135,7 +135,7 @@ class ListSessionsRequest:
     def offset(self):
         r"""Gets the offset of this ListSessionsRequest.
 
-        查询的偏移量。
+        查询的偏移量，默认值0。
 
         :return: The offset of this ListSessionsRequest.
         :rtype: int
@@ -146,7 +146,7 @@ class ListSessionsRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListSessionsRequest.
 
-        查询的偏移量。
+        查询的偏移量，默认值0。
 
         :param offset: The offset of this ListSessionsRequest.
         :type offset: int

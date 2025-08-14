@@ -18,15 +18,21 @@ class UpdateCertificateDTO:
 
     openapi_types = {
         'provision_enable': 'bool',
-        'template_id': 'str'
+        'template_id': 'str',
+        'ocsp_enable': 'bool',
+        'ocsp_ssl_enable': 'bool',
+        'ocsp_server_ca_id': 'str'
     }
 
     attribute_map = {
         'provision_enable': 'provision_enable',
-        'template_id': 'template_id'
+        'template_id': 'template_id',
+        'ocsp_enable': 'ocsp_enable',
+        'ocsp_ssl_enable': 'ocsp_ssl_enable',
+        'ocsp_server_ca_id': 'ocsp_server_ca_id'
     }
 
-    def __init__(self, provision_enable=None, template_id=None):
+    def __init__(self, provision_enable=None, template_id=None, ocsp_enable=None, ocsp_ssl_enable=None, ocsp_server_ca_id=None):
         r"""UpdateCertificateDTO
 
         The model defined in huaweicloud sdk
@@ -35,18 +41,33 @@ class UpdateCertificateDTO:
         :type provision_enable: bool
         :param template_id: 预调配模板ID，该CA证书绑定的预调配模板id，当该字段传null时表示解除绑定关系。
         :type template_id: str
+        :param ocsp_enable: 是否开启该CA证书下的设备证书OCSP校验，当为true且设备证书信息中包含OCSP url时则平台会校验证书的状态，当证书状态为revoked时平台会拒绝设备连接，true：开启，false：关闭。
+        :type ocsp_enable: bool
+        :param ocsp_ssl_enable: 访问ocsp服务器是否开启SSL，开启后必须配置服务器CA证书校验。
+        :type ocsp_ssl_enable: bool
+        :param ocsp_server_ca_id: ocsp服务器端CA证书id，当ocsp服务器为https协议时需要配置，否则认证失败。
+        :type ocsp_server_ca_id: str
         """
         
         
 
         self._provision_enable = None
         self._template_id = None
+        self._ocsp_enable = None
+        self._ocsp_ssl_enable = None
+        self._ocsp_server_ca_id = None
         self.discriminator = None
 
         if provision_enable is not None:
             self.provision_enable = provision_enable
         if template_id is not None:
             self.template_id = template_id
+        if ocsp_enable is not None:
+            self.ocsp_enable = ocsp_enable
+        if ocsp_ssl_enable is not None:
+            self.ocsp_ssl_enable = ocsp_ssl_enable
+        if ocsp_server_ca_id is not None:
+            self.ocsp_server_ca_id = ocsp_server_ca_id
 
     @property
     def provision_enable(self):
@@ -91,6 +112,72 @@ class UpdateCertificateDTO:
         :type template_id: str
         """
         self._template_id = template_id
+
+    @property
+    def ocsp_enable(self):
+        r"""Gets the ocsp_enable of this UpdateCertificateDTO.
+
+        是否开启该CA证书下的设备证书OCSP校验，当为true且设备证书信息中包含OCSP url时则平台会校验证书的状态，当证书状态为revoked时平台会拒绝设备连接，true：开启，false：关闭。
+
+        :return: The ocsp_enable of this UpdateCertificateDTO.
+        :rtype: bool
+        """
+        return self._ocsp_enable
+
+    @ocsp_enable.setter
+    def ocsp_enable(self, ocsp_enable):
+        r"""Sets the ocsp_enable of this UpdateCertificateDTO.
+
+        是否开启该CA证书下的设备证书OCSP校验，当为true且设备证书信息中包含OCSP url时则平台会校验证书的状态，当证书状态为revoked时平台会拒绝设备连接，true：开启，false：关闭。
+
+        :param ocsp_enable: The ocsp_enable of this UpdateCertificateDTO.
+        :type ocsp_enable: bool
+        """
+        self._ocsp_enable = ocsp_enable
+
+    @property
+    def ocsp_ssl_enable(self):
+        r"""Gets the ocsp_ssl_enable of this UpdateCertificateDTO.
+
+        访问ocsp服务器是否开启SSL，开启后必须配置服务器CA证书校验。
+
+        :return: The ocsp_ssl_enable of this UpdateCertificateDTO.
+        :rtype: bool
+        """
+        return self._ocsp_ssl_enable
+
+    @ocsp_ssl_enable.setter
+    def ocsp_ssl_enable(self, ocsp_ssl_enable):
+        r"""Sets the ocsp_ssl_enable of this UpdateCertificateDTO.
+
+        访问ocsp服务器是否开启SSL，开启后必须配置服务器CA证书校验。
+
+        :param ocsp_ssl_enable: The ocsp_ssl_enable of this UpdateCertificateDTO.
+        :type ocsp_ssl_enable: bool
+        """
+        self._ocsp_ssl_enable = ocsp_ssl_enable
+
+    @property
+    def ocsp_server_ca_id(self):
+        r"""Gets the ocsp_server_ca_id of this UpdateCertificateDTO.
+
+        ocsp服务器端CA证书id，当ocsp服务器为https协议时需要配置，否则认证失败。
+
+        :return: The ocsp_server_ca_id of this UpdateCertificateDTO.
+        :rtype: str
+        """
+        return self._ocsp_server_ca_id
+
+    @ocsp_server_ca_id.setter
+    def ocsp_server_ca_id(self, ocsp_server_ca_id):
+        r"""Sets the ocsp_server_ca_id of this UpdateCertificateDTO.
+
+        ocsp服务器端CA证书id，当ocsp服务器为https协议时需要配置，否则认证失败。
+
+        :param ocsp_server_ca_id: The ocsp_server_ca_id of this UpdateCertificateDTO.
+        :type ocsp_server_ca_id: str
+        """
+        self._ocsp_server_ca_id = ocsp_server_ca_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -33,7 +33,7 @@ class ListLoginWhiteIpRequest:
 
         :param enterprise_project_id: **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
         :type enterprise_project_id: str
-        :param white_ip: 白名单IP/IP网段,IP网段由IP地址和掩码组成,以&#39;/&#39;连接。
+        :param white_ip: 白名单IP/IP网段，IP网段由IP地址和掩码组成，以‘/’连接。
         :type white_ip: str
         """
         
@@ -74,7 +74,7 @@ class ListLoginWhiteIpRequest:
     def white_ip(self):
         r"""Gets the white_ip of this ListLoginWhiteIpRequest.
 
-        白名单IP/IP网段,IP网段由IP地址和掩码组成,以'/'连接。
+        白名单IP/IP网段，IP网段由IP地址和掩码组成，以‘/’连接。
 
         :return: The white_ip of this ListLoginWhiteIpRequest.
         :rtype: str
@@ -85,7 +85,7 @@ class ListLoginWhiteIpRequest:
     def white_ip(self, white_ip):
         r"""Sets the white_ip of this ListLoginWhiteIpRequest.
 
-        白名单IP/IP网段,IP网段由IP地址和掩码组成,以'/'连接。
+        白名单IP/IP网段，IP网段由IP地址和掩码组成，以‘/’连接。
 
         :param white_ip: The white_ip of this ListLoginWhiteIpRequest.
         :type white_ip: str

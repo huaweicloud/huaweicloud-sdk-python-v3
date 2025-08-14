@@ -39,7 +39,7 @@ class KubernetesEndpointPodInfo:
 
         :param id: ID
         :type id: str
-        :param endpoint_id: 关联端点 ID
+        :param endpoint_id: 关联端点ID
         :type endpoint_id: str
         :param pod_ip: pod IP
         :type pod_ip: str
@@ -95,7 +95,7 @@ class KubernetesEndpointPodInfo:
     def endpoint_id(self):
         r"""Gets the endpoint_id of this KubernetesEndpointPodInfo.
 
-        关联端点 ID
+        关联端点ID
 
         :return: The endpoint_id of this KubernetesEndpointPodInfo.
         :rtype: str
@@ -106,7 +106,7 @@ class KubernetesEndpointPodInfo:
     def endpoint_id(self, endpoint_id):
         r"""Sets the endpoint_id of this KubernetesEndpointPodInfo.
 
-        关联端点 ID
+        关联端点ID
 
         :param endpoint_id: The endpoint_id of this KubernetesEndpointPodInfo.
         :type endpoint_id: str

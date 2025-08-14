@@ -173,6 +173,7 @@ from huaweicloudsdkcodeartsbuild.v3.model.params import Params
 from huaweicloudsdkcodeartsbuild.v3.model.query_custom_templates_result import QueryCustomTemplatesResult
 from huaweicloudsdkcodeartsbuild.v3.model.query_job_notice_items import QueryJobNoticeItems
 from huaweicloudsdkcodeartsbuild.v3.model.query_template import QueryTemplate
+from huaweicloudsdkcodeartsbuild.v3.model.query_template_vo import QueryTemplateVo
 from huaweicloudsdkcodeartsbuild.v3.model.query_templates_items import QueryTemplatesItems
 from huaweicloudsdkcodeartsbuild.v3.model.query_templates_result import QueryTemplatesResult
 from huaweicloudsdkcodeartsbuild.v3.model.real_time_log_response_body_result import RealTimeLogResponseBodyResult

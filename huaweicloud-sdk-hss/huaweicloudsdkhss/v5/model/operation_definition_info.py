@@ -41,19 +41,19 @@ class OperationDefinitionInfo:
 
         The model defined in huaweicloud sdk
 
-        :param day_backups: **参数解释**: 保留日备个数，该备份不受保留最大备份数限制。若选择该参数，则timezone 也必选 **约束限制**: 不涉及 **取值范围**: 取值为0到100。 **默认取值**: 不涉及 
+        :param day_backups: **参数解释**: 保留日备个数，该备份不受保留最大备份数限制。若选择该参数，则timezone也必选 **取值范围**: 取值为0到100。 
         :type day_backups: int
-        :param max_backups: **参数解释**: 单个备份对象自动备份的最大备份数。-1代表不按备份数清理。若该字段和retention_duration_days字段同时为空，备份会永久保留。最小值：1,最大值：99999,缺省值：-1 **约束限制**: 不涉及 **取值范围**: 取值为-1或0-99999 **默认取值**: -1 
+        :param max_backups: **参数解释**: 单个备份对象自动备份的最大备份数。-1代表不按备份数清理。若该字段和retention_duration_days字段同时为空，备份会永久保留。 **取值范围**: 取值为-1或1-99999 
         :type max_backups: int
-        :param month_backups: **参数解释**: 保留月备个数，该备份不受保留最大备份数限制。若选择该参数，则timezone 也必选。 **约束限制**: 最小值：0, 最大值：100 **取值范围**: 取值为0到100。 **默认取值**: 不涉及 
+        :param month_backups: **参数解释**: 保留月备个数，该备份不受保留最大备份数限制。若选择该参数，则timezone也必选。 **取值范围**: 取值为0到100。 
         :type month_backups: int
-        :param retention_duration_days: **参数解释**: 备份保留时长，单位天。最长支持99999天。-1代表不按时间清理。若该字段和max_backups 参数同时为空，备份会永久保留。 **约束限制**: 不涉及 **取值范围**: 最小值：-1, 最大值：99999 **默认取值**: -1 
+        :param retention_duration_days: **参数解释**: 备份保留时长，单位天。最长支持99999天。-1代表不按时间清理。若该字段和max_backups参数同时为空，备份会永久保留。 **取值范围**: 最小值：-1，最大值：99999 
         :type retention_duration_days: int
-        :param timezone: **参数解释**: 用户所在时区,格式形如UTC+08:00 **约束限制**: 若没有选择年备，月备，周备，日备中任一参数，则不能选择该参数。 **取值范围**: 字符长度1-256 **默认取值**: 不涉及   
+        :param timezone: **参数解释**: 用户所在时区，格式形如UTC+08:00 **约束限制**: 若没有选择年备，月备，周备，日备中任一参数，则不能选择该参数。 **取值范围**: 字符长度1-256 **默认取值**: 不涉及 
         :type timezone: str
-        :param week_backups: **参数解释**: 保留周备个数，该备份不受保留最大备份数限制。若选择该参数，则timezone 也必选。 **约束限制**: 不涉及 **取值范围**: 取值为0到100。 **默认取值**: 不涉及  
+        :param week_backups: **参数解释**: 保留周备个数，该备份不受保留最大备份数限制。若选择该参数，则timezone也必选。 **取值范围**: - UTC+05:00 - UTC+06:00 - UTC+07:00 ... 
         :type week_backups: int
-        :param year_backups: **参数解释**: 保留年备个数，该备份不受保留最大备份数限制。若选择该参数，则timezone 也必选。 **约束限制**: 不涉及 **取值范围**: 取值为0到100。 **默认取值**: 不涉及  
+        :param year_backups: **参数解释**: 保留年备个数，该备份不受保留最大备份数限制。若选择该参数，则timezone也必选。 **取值范围**: 取值为0到100。 
         :type year_backups: int
         """
         
@@ -87,7 +87,7 @@ class OperationDefinitionInfo:
     def day_backups(self):
         r"""Gets the day_backups of this OperationDefinitionInfo.
 
-        **参数解释**: 保留日备个数，该备份不受保留最大备份数限制。若选择该参数，则timezone 也必选 **约束限制**: 不涉及 **取值范围**: 取值为0到100。 **默认取值**: 不涉及 
+        **参数解释**: 保留日备个数，该备份不受保留最大备份数限制。若选择该参数，则timezone也必选 **取值范围**: 取值为0到100。 
 
         :return: The day_backups of this OperationDefinitionInfo.
         :rtype: int
@@ -98,7 +98,7 @@ class OperationDefinitionInfo:
     def day_backups(self, day_backups):
         r"""Sets the day_backups of this OperationDefinitionInfo.
 
-        **参数解释**: 保留日备个数，该备份不受保留最大备份数限制。若选择该参数，则timezone 也必选 **约束限制**: 不涉及 **取值范围**: 取值为0到100。 **默认取值**: 不涉及 
+        **参数解释**: 保留日备个数，该备份不受保留最大备份数限制。若选择该参数，则timezone也必选 **取值范围**: 取值为0到100。 
 
         :param day_backups: The day_backups of this OperationDefinitionInfo.
         :type day_backups: int
@@ -109,7 +109,7 @@ class OperationDefinitionInfo:
     def max_backups(self):
         r"""Gets the max_backups of this OperationDefinitionInfo.
 
-        **参数解释**: 单个备份对象自动备份的最大备份数。-1代表不按备份数清理。若该字段和retention_duration_days字段同时为空，备份会永久保留。最小值：1,最大值：99999,缺省值：-1 **约束限制**: 不涉及 **取值范围**: 取值为-1或0-99999 **默认取值**: -1 
+        **参数解释**: 单个备份对象自动备份的最大备份数。-1代表不按备份数清理。若该字段和retention_duration_days字段同时为空，备份会永久保留。 **取值范围**: 取值为-1或1-99999 
 
         :return: The max_backups of this OperationDefinitionInfo.
         :rtype: int
@@ -120,7 +120,7 @@ class OperationDefinitionInfo:
     def max_backups(self, max_backups):
         r"""Sets the max_backups of this OperationDefinitionInfo.
 
-        **参数解释**: 单个备份对象自动备份的最大备份数。-1代表不按备份数清理。若该字段和retention_duration_days字段同时为空，备份会永久保留。最小值：1,最大值：99999,缺省值：-1 **约束限制**: 不涉及 **取值范围**: 取值为-1或0-99999 **默认取值**: -1 
+        **参数解释**: 单个备份对象自动备份的最大备份数。-1代表不按备份数清理。若该字段和retention_duration_days字段同时为空，备份会永久保留。 **取值范围**: 取值为-1或1-99999 
 
         :param max_backups: The max_backups of this OperationDefinitionInfo.
         :type max_backups: int
@@ -131,7 +131,7 @@ class OperationDefinitionInfo:
     def month_backups(self):
         r"""Gets the month_backups of this OperationDefinitionInfo.
 
-        **参数解释**: 保留月备个数，该备份不受保留最大备份数限制。若选择该参数，则timezone 也必选。 **约束限制**: 最小值：0, 最大值：100 **取值范围**: 取值为0到100。 **默认取值**: 不涉及 
+        **参数解释**: 保留月备个数，该备份不受保留最大备份数限制。若选择该参数，则timezone也必选。 **取值范围**: 取值为0到100。 
 
         :return: The month_backups of this OperationDefinitionInfo.
         :rtype: int
@@ -142,7 +142,7 @@ class OperationDefinitionInfo:
     def month_backups(self, month_backups):
         r"""Sets the month_backups of this OperationDefinitionInfo.
 
-        **参数解释**: 保留月备个数，该备份不受保留最大备份数限制。若选择该参数，则timezone 也必选。 **约束限制**: 最小值：0, 最大值：100 **取值范围**: 取值为0到100。 **默认取值**: 不涉及 
+        **参数解释**: 保留月备个数，该备份不受保留最大备份数限制。若选择该参数，则timezone也必选。 **取值范围**: 取值为0到100。 
 
         :param month_backups: The month_backups of this OperationDefinitionInfo.
         :type month_backups: int
@@ -153,7 +153,7 @@ class OperationDefinitionInfo:
     def retention_duration_days(self):
         r"""Gets the retention_duration_days of this OperationDefinitionInfo.
 
-        **参数解释**: 备份保留时长，单位天。最长支持99999天。-1代表不按时间清理。若该字段和max_backups 参数同时为空，备份会永久保留。 **约束限制**: 不涉及 **取值范围**: 最小值：-1, 最大值：99999 **默认取值**: -1 
+        **参数解释**: 备份保留时长，单位天。最长支持99999天。-1代表不按时间清理。若该字段和max_backups参数同时为空，备份会永久保留。 **取值范围**: 最小值：-1，最大值：99999 
 
         :return: The retention_duration_days of this OperationDefinitionInfo.
         :rtype: int
@@ -164,7 +164,7 @@ class OperationDefinitionInfo:
     def retention_duration_days(self, retention_duration_days):
         r"""Sets the retention_duration_days of this OperationDefinitionInfo.
 
-        **参数解释**: 备份保留时长，单位天。最长支持99999天。-1代表不按时间清理。若该字段和max_backups 参数同时为空，备份会永久保留。 **约束限制**: 不涉及 **取值范围**: 最小值：-1, 最大值：99999 **默认取值**: -1 
+        **参数解释**: 备份保留时长，单位天。最长支持99999天。-1代表不按时间清理。若该字段和max_backups参数同时为空，备份会永久保留。 **取值范围**: 最小值：-1，最大值：99999 
 
         :param retention_duration_days: The retention_duration_days of this OperationDefinitionInfo.
         :type retention_duration_days: int
@@ -175,7 +175,7 @@ class OperationDefinitionInfo:
     def timezone(self):
         r"""Gets the timezone of this OperationDefinitionInfo.
 
-        **参数解释**: 用户所在时区,格式形如UTC+08:00 **约束限制**: 若没有选择年备，月备，周备，日备中任一参数，则不能选择该参数。 **取值范围**: 字符长度1-256 **默认取值**: 不涉及   
+        **参数解释**: 用户所在时区，格式形如UTC+08:00 **约束限制**: 若没有选择年备，月备，周备，日备中任一参数，则不能选择该参数。 **取值范围**: 字符长度1-256 **默认取值**: 不涉及 
 
         :return: The timezone of this OperationDefinitionInfo.
         :rtype: str
@@ -186,7 +186,7 @@ class OperationDefinitionInfo:
     def timezone(self, timezone):
         r"""Sets the timezone of this OperationDefinitionInfo.
 
-        **参数解释**: 用户所在时区,格式形如UTC+08:00 **约束限制**: 若没有选择年备，月备，周备，日备中任一参数，则不能选择该参数。 **取值范围**: 字符长度1-256 **默认取值**: 不涉及   
+        **参数解释**: 用户所在时区，格式形如UTC+08:00 **约束限制**: 若没有选择年备，月备，周备，日备中任一参数，则不能选择该参数。 **取值范围**: 字符长度1-256 **默认取值**: 不涉及 
 
         :param timezone: The timezone of this OperationDefinitionInfo.
         :type timezone: str
@@ -197,7 +197,7 @@ class OperationDefinitionInfo:
     def week_backups(self):
         r"""Gets the week_backups of this OperationDefinitionInfo.
 
-        **参数解释**: 保留周备个数，该备份不受保留最大备份数限制。若选择该参数，则timezone 也必选。 **约束限制**: 不涉及 **取值范围**: 取值为0到100。 **默认取值**: 不涉及  
+        **参数解释**: 保留周备个数，该备份不受保留最大备份数限制。若选择该参数，则timezone也必选。 **取值范围**: - UTC+05:00 - UTC+06:00 - UTC+07:00 ... 
 
         :return: The week_backups of this OperationDefinitionInfo.
         :rtype: int
@@ -208,7 +208,7 @@ class OperationDefinitionInfo:
     def week_backups(self, week_backups):
         r"""Sets the week_backups of this OperationDefinitionInfo.
 
-        **参数解释**: 保留周备个数，该备份不受保留最大备份数限制。若选择该参数，则timezone 也必选。 **约束限制**: 不涉及 **取值范围**: 取值为0到100。 **默认取值**: 不涉及  
+        **参数解释**: 保留周备个数，该备份不受保留最大备份数限制。若选择该参数，则timezone也必选。 **取值范围**: - UTC+05:00 - UTC+06:00 - UTC+07:00 ... 
 
         :param week_backups: The week_backups of this OperationDefinitionInfo.
         :type week_backups: int
@@ -219,7 +219,7 @@ class OperationDefinitionInfo:
     def year_backups(self):
         r"""Gets the year_backups of this OperationDefinitionInfo.
 
-        **参数解释**: 保留年备个数，该备份不受保留最大备份数限制。若选择该参数，则timezone 也必选。 **约束限制**: 不涉及 **取值范围**: 取值为0到100。 **默认取值**: 不涉及  
+        **参数解释**: 保留年备个数，该备份不受保留最大备份数限制。若选择该参数，则timezone也必选。 **取值范围**: 取值为0到100。 
 
         :return: The year_backups of this OperationDefinitionInfo.
         :rtype: int
@@ -230,7 +230,7 @@ class OperationDefinitionInfo:
     def year_backups(self, year_backups):
         r"""Sets the year_backups of this OperationDefinitionInfo.
 
-        **参数解释**: 保留年备个数，该备份不受保留最大备份数限制。若选择该参数，则timezone 也必选。 **约束限制**: 不涉及 **取值范围**: 取值为0到100。 **默认取值**: 不涉及  
+        **参数解释**: 保留年备个数，该备份不受保留最大备份数限制。若选择该参数，则timezone也必选。 **取值范围**: 取值为0到100。 
 
         :param year_backups: The year_backups of this OperationDefinitionInfo.
         :type year_backups: int

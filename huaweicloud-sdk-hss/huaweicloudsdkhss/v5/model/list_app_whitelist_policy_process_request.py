@@ -59,9 +59,9 @@ class ListAppWhitelistPolicyProcessRequest:
         :type limit: int
         :param policy_id: **参数解释**： 策略ID **约束限制**： 必填 **取值范围**： 字符长度1-64位 **默认取值**： 不涉及 
         :type policy_id: str
-        :param process_status: **参数解释**： 服务器名称 **约束限制**: 不涉及 **取值范围**: - trust：可信 - suspicious：可疑 - malicious：未知 - unknown：未知  **默认取值**: 不涉及 
+        :param process_status: **参数解释**： 信任状态 **约束限制**: 不涉及 **取值范围**: - trust：可信 - suspicious：可疑 - malicious：未知 - unknown：未知  **默认取值**: 不涉及 
         :type process_status: str
-        :param process_type: **参数解释**： 服务器名称 **约束限制**: 不涉及 **取值范围**: - system：系统程序 - interpretive：解释类程序 - normal：普通可执行程序  **默认取值**: 不涉及 
+        :param process_type: **参数解释**： 进程类型 **约束限制**: 不涉及 **取值范围**: - system：系统程序 - interpretive：解释类程序 - normal：普通可执行程序  **默认取值**: 不涉及 
         :type process_type: str
         :param process_name: **参数解释**： 进程名称 **约束限制**： 不涉及 **取值范围**： 字符长度1-128位 **默认取值**： 不涉及 
         :type process_name: str
@@ -69,7 +69,7 @@ class ListAppWhitelistPolicyProcessRequest:
         :type process_hash: str
         :param process_path: **参数解释**： 进程路径 **约束限制**： 不涉及 **取值范围**： 字符长度1-256位 **默认取值**： 不涉及 
         :type process_path: str
-        :param handle_status: **参数解释**： 服务器名称 **约束限制**: 不涉及 **取值范围**: - confirmed：已确认 - unconfirmed：未确认  **默认取值**: 不涉及 
+        :param handle_status: **参数解释**： 确认状态 **约束限制**: 不涉及 **取值范围**: - confirmed：已确认 - unconfirmed：未确认  **默认取值**: 不涉及 
         :type handle_status: str
         :param os_type: 操作系统类型，包含如下2种。   - Linux：Linux。   - Windows：Windows。
         :type os_type: str
@@ -206,7 +206,7 @@ class ListAppWhitelistPolicyProcessRequest:
     def process_status(self):
         r"""Gets the process_status of this ListAppWhitelistPolicyProcessRequest.
 
-        **参数解释**： 服务器名称 **约束限制**: 不涉及 **取值范围**: - trust：可信 - suspicious：可疑 - malicious：未知 - unknown：未知  **默认取值**: 不涉及 
+        **参数解释**： 信任状态 **约束限制**: 不涉及 **取值范围**: - trust：可信 - suspicious：可疑 - malicious：未知 - unknown：未知  **默认取值**: 不涉及 
 
         :return: The process_status of this ListAppWhitelistPolicyProcessRequest.
         :rtype: str
@@ -217,7 +217,7 @@ class ListAppWhitelistPolicyProcessRequest:
     def process_status(self, process_status):
         r"""Sets the process_status of this ListAppWhitelistPolicyProcessRequest.
 
-        **参数解释**： 服务器名称 **约束限制**: 不涉及 **取值范围**: - trust：可信 - suspicious：可疑 - malicious：未知 - unknown：未知  **默认取值**: 不涉及 
+        **参数解释**： 信任状态 **约束限制**: 不涉及 **取值范围**: - trust：可信 - suspicious：可疑 - malicious：未知 - unknown：未知  **默认取值**: 不涉及 
 
         :param process_status: The process_status of this ListAppWhitelistPolicyProcessRequest.
         :type process_status: str
@@ -228,7 +228,7 @@ class ListAppWhitelistPolicyProcessRequest:
     def process_type(self):
         r"""Gets the process_type of this ListAppWhitelistPolicyProcessRequest.
 
-        **参数解释**： 服务器名称 **约束限制**: 不涉及 **取值范围**: - system：系统程序 - interpretive：解释类程序 - normal：普通可执行程序  **默认取值**: 不涉及 
+        **参数解释**： 进程类型 **约束限制**: 不涉及 **取值范围**: - system：系统程序 - interpretive：解释类程序 - normal：普通可执行程序  **默认取值**: 不涉及 
 
         :return: The process_type of this ListAppWhitelistPolicyProcessRequest.
         :rtype: str
@@ -239,7 +239,7 @@ class ListAppWhitelistPolicyProcessRequest:
     def process_type(self, process_type):
         r"""Sets the process_type of this ListAppWhitelistPolicyProcessRequest.
 
-        **参数解释**： 服务器名称 **约束限制**: 不涉及 **取值范围**: - system：系统程序 - interpretive：解释类程序 - normal：普通可执行程序  **默认取值**: 不涉及 
+        **参数解释**： 进程类型 **约束限制**: 不涉及 **取值范围**: - system：系统程序 - interpretive：解释类程序 - normal：普通可执行程序  **默认取值**: 不涉及 
 
         :param process_type: The process_type of this ListAppWhitelistPolicyProcessRequest.
         :type process_type: str
@@ -316,7 +316,7 @@ class ListAppWhitelistPolicyProcessRequest:
     def handle_status(self):
         r"""Gets the handle_status of this ListAppWhitelistPolicyProcessRequest.
 
-        **参数解释**： 服务器名称 **约束限制**: 不涉及 **取值范围**: - confirmed：已确认 - unconfirmed：未确认  **默认取值**: 不涉及 
+        **参数解释**： 确认状态 **约束限制**: 不涉及 **取值范围**: - confirmed：已确认 - unconfirmed：未确认  **默认取值**: 不涉及 
 
         :return: The handle_status of this ListAppWhitelistPolicyProcessRequest.
         :rtype: str
@@ -327,7 +327,7 @@ class ListAppWhitelistPolicyProcessRequest:
     def handle_status(self, handle_status):
         r"""Sets the handle_status of this ListAppWhitelistPolicyProcessRequest.
 
-        **参数解释**： 服务器名称 **约束限制**: 不涉及 **取值范围**: - confirmed：已确认 - unconfirmed：未确认  **默认取值**: 不涉及 
+        **参数解释**： 确认状态 **约束限制**: 不涉及 **取值范围**: - confirmed：已确认 - unconfirmed：未确认  **默认取值**: 不涉及 
 
         :param handle_status: The handle_status of this ListAppWhitelistPolicyProcessRequest.
         :type handle_status: str

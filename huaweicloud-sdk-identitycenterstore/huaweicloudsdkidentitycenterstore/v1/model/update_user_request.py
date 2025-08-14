@@ -40,7 +40,7 @@ class UpdateUserRequest:
         :type x_security_token: str
         :param identity_store_id: 身份源的全局唯一标识符（ID）
         :type identity_store_id: str
-        :param user_id: 身份源中IAM身份中心用户的全局唯一标识符（ID）
+        :param user_id: 身份源中IdentityCenter用户的全局唯一标识符（ID）
         :type user_id: str
         :param body: Body of the UpdateUserRequest
         :type body: :class:`huaweicloudsdkidentitycenterstore.v1.UpdateUserReqBody`
@@ -109,7 +109,7 @@ class UpdateUserRequest:
     def user_id(self):
         r"""Gets the user_id of this UpdateUserRequest.
 
-        身份源中IAM身份中心用户的全局唯一标识符（ID）
+        身份源中IdentityCenter用户的全局唯一标识符（ID）
 
         :return: The user_id of this UpdateUserRequest.
         :rtype: str
@@ -120,7 +120,7 @@ class UpdateUserRequest:
     def user_id(self, user_id):
         r"""Sets the user_id of this UpdateUserRequest.
 
-        身份源中IAM身份中心用户的全局唯一标识符（ID）
+        身份源中IdentityCenter用户的全局唯一标识符（ID）
 
         :param user_id: The user_id of this UpdateUserRequest.
         :type user_id: str

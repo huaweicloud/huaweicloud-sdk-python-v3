@@ -29,7 +29,7 @@ class StringSet:
 
         The model defined in huaweicloud sdk
 
-        :param items: 批量唯一标识请求列表，一次请求数量区间 [1, 20]
+        :param items: 批量唯一标识请求列表，一次请求数量区间 [1, 20]。
         :type items: list[str]
         """
         
@@ -44,7 +44,7 @@ class StringSet:
     def items(self):
         r"""Gets the items of this StringSet.
 
-        批量唯一标识请求列表，一次请求数量区间 [1, 20]
+        批量唯一标识请求列表，一次请求数量区间 [1, 20]。
 
         :return: The items of this StringSet.
         :rtype: list[str]
@@ -55,7 +55,7 @@ class StringSet:
     def items(self, items):
         r"""Sets the items of this StringSet.
 
-        批量唯一标识请求列表，一次请求数量区间 [1, 20]
+        批量唯一标识请求列表，一次请求数量区间 [1, 20]。
 
         :param items: The items of this StringSet.
         :type items: list[str]

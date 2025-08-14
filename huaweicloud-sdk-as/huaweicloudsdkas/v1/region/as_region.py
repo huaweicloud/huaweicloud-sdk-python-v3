@@ -70,6 +70,8 @@ class AsRegion:
                         "https://as.cn-north-11.myhuaweicloud.com")
     CN_EAST_5 = Region("cn-east-5",
                         "https://as.cn-east-5.myhuaweicloud.com")
+    AF_NORTH_1 = Region("af-north-1",
+                        "https://as.af-north-1.myhuaweicloud.com")
 
     static_fields = {
         "af-south-1": AF_SOUTH_1,
@@ -104,6 +106,7 @@ class AsRegion:
         "cn-north-12": CN_NORTH_12,
         "cn-north-11": CN_NORTH_11,
         "cn-east-5": CN_EAST_5,
+        "af-north-1": AF_NORTH_1,
     }
 
     @classmethod

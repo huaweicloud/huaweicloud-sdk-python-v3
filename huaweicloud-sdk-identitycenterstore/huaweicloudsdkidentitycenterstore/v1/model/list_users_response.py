@@ -34,7 +34,7 @@ class ListUsersResponse(SdkResponse):
 
         :param page_info: 
         :type page_info: :class:`huaweicloudsdkidentitycenterstore.v1.PageInfoDto`
-        :param users: 身份源中的用户列表
+        :param users: IdentityStore中的用户列表。
         :type users: list[:class:`huaweicloudsdkidentitycenterstore.v1.UserDto`]
         """
         
@@ -71,7 +71,7 @@ class ListUsersResponse(SdkResponse):
     def users(self):
         r"""Gets the users of this ListUsersResponse.
 
-        身份源中的用户列表
+        IdentityStore中的用户列表。
 
         :return: The users of this ListUsersResponse.
         :rtype: list[:class:`huaweicloudsdkidentitycenterstore.v1.UserDto`]
@@ -82,7 +82,7 @@ class ListUsersResponse(SdkResponse):
     def users(self, users):
         r"""Sets the users of this ListUsersResponse.
 
-        身份源中的用户列表
+        IdentityStore中的用户列表。
 
         :param users: The users of this ListUsersResponse.
         :type users: list[:class:`huaweicloudsdkidentitycenterstore.v1.UserDto`]

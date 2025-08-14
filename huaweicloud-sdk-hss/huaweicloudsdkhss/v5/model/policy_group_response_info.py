@@ -53,15 +53,15 @@ class PolicyGroupResponseInfo:
         :type description: str
         :param host_num: **参数解释**: 关联服务器数 **取值范围**: 取值0-1000000 
         :type host_num: int
-        :param default_group: **参数解释**: 是否是默认策略组 **取值范围**: true: 是默认策略组 false: 不是默认策略组 
+        :param default_group: **参数解释**: 是否是默认策略组 **取值范围**: - true: 是默认策略组 - false: 不是默认策略组 
         :type default_group: bool
-        :param deletable: **参数解释**: 是否可以删除，只有default_group为false且host_num为1时可以删除 **取值范围**: true: 支持删除 false: 不支持删除 
+        :param deletable: **参数解释**: 是否可以删除，只有default_group为false且host_num为1时可以删除 **取值范围**: - true: 支持删除 - false: 不支持删除 
         :type deletable: bool
-        :param support_os: **参数解释**: 支持的操作系统 **取值范围**: Linux: 支持Linux操作系统 Windows: 支持Windows操作系统 
+        :param support_os: **参数解释**: 支持的操作系统 **取值范围**: - Linux: 支持Linux操作系统 - Windows: 支持Windows操作系统 
         :type support_os: str
-        :param support_version: **参数解释**: 支持的版本 **取值范围**: hss.version.advanced: 专业版 hss.version.enterprise: 企业版 hss.version.premium: 旗舰版 hss.version.wtp: 网页防篡改版 hss.version.container.enterprise: 容器版 
+        :param support_version: **参数解释**: 支持的版本 **取值范围**: - hss.version.advanced: 专业版 - hss.version.enterprise: 企业版 - hss.version.premium: 旗舰版 - hss.version.wtp: 网页防篡改版 - hss.version.container.enterprise: 容器版 
         :type support_version: str
-        :param protect_mode: **参数解释**: 防护模式 **取值范围**: high_detection: 高检出模式 equalization: 均衡模式 
+        :param protect_mode: **参数解释**: 防护模式 **取值范围**: - high_detection: 高检出模式 - equalization: 均衡模式 
         :type protect_mode: str
         """
         
@@ -189,7 +189,7 @@ class PolicyGroupResponseInfo:
     def default_group(self):
         r"""Gets the default_group of this PolicyGroupResponseInfo.
 
-        **参数解释**: 是否是默认策略组 **取值范围**: true: 是默认策略组 false: 不是默认策略组 
+        **参数解释**: 是否是默认策略组 **取值范围**: - true: 是默认策略组 - false: 不是默认策略组 
 
         :return: The default_group of this PolicyGroupResponseInfo.
         :rtype: bool
@@ -200,7 +200,7 @@ class PolicyGroupResponseInfo:
     def default_group(self, default_group):
         r"""Sets the default_group of this PolicyGroupResponseInfo.
 
-        **参数解释**: 是否是默认策略组 **取值范围**: true: 是默认策略组 false: 不是默认策略组 
+        **参数解释**: 是否是默认策略组 **取值范围**: - true: 是默认策略组 - false: 不是默认策略组 
 
         :param default_group: The default_group of this PolicyGroupResponseInfo.
         :type default_group: bool
@@ -211,7 +211,7 @@ class PolicyGroupResponseInfo:
     def deletable(self):
         r"""Gets the deletable of this PolicyGroupResponseInfo.
 
-        **参数解释**: 是否可以删除，只有default_group为false且host_num为1时可以删除 **取值范围**: true: 支持删除 false: 不支持删除 
+        **参数解释**: 是否可以删除，只有default_group为false且host_num为1时可以删除 **取值范围**: - true: 支持删除 - false: 不支持删除 
 
         :return: The deletable of this PolicyGroupResponseInfo.
         :rtype: bool
@@ -222,7 +222,7 @@ class PolicyGroupResponseInfo:
     def deletable(self, deletable):
         r"""Sets the deletable of this PolicyGroupResponseInfo.
 
-        **参数解释**: 是否可以删除，只有default_group为false且host_num为1时可以删除 **取值范围**: true: 支持删除 false: 不支持删除 
+        **参数解释**: 是否可以删除，只有default_group为false且host_num为1时可以删除 **取值范围**: - true: 支持删除 - false: 不支持删除 
 
         :param deletable: The deletable of this PolicyGroupResponseInfo.
         :type deletable: bool
@@ -233,7 +233,7 @@ class PolicyGroupResponseInfo:
     def support_os(self):
         r"""Gets the support_os of this PolicyGroupResponseInfo.
 
-        **参数解释**: 支持的操作系统 **取值范围**: Linux: 支持Linux操作系统 Windows: 支持Windows操作系统 
+        **参数解释**: 支持的操作系统 **取值范围**: - Linux: 支持Linux操作系统 - Windows: 支持Windows操作系统 
 
         :return: The support_os of this PolicyGroupResponseInfo.
         :rtype: str
@@ -244,7 +244,7 @@ class PolicyGroupResponseInfo:
     def support_os(self, support_os):
         r"""Sets the support_os of this PolicyGroupResponseInfo.
 
-        **参数解释**: 支持的操作系统 **取值范围**: Linux: 支持Linux操作系统 Windows: 支持Windows操作系统 
+        **参数解释**: 支持的操作系统 **取值范围**: - Linux: 支持Linux操作系统 - Windows: 支持Windows操作系统 
 
         :param support_os: The support_os of this PolicyGroupResponseInfo.
         :type support_os: str
@@ -255,7 +255,7 @@ class PolicyGroupResponseInfo:
     def support_version(self):
         r"""Gets the support_version of this PolicyGroupResponseInfo.
 
-        **参数解释**: 支持的版本 **取值范围**: hss.version.advanced: 专业版 hss.version.enterprise: 企业版 hss.version.premium: 旗舰版 hss.version.wtp: 网页防篡改版 hss.version.container.enterprise: 容器版 
+        **参数解释**: 支持的版本 **取值范围**: - hss.version.advanced: 专业版 - hss.version.enterprise: 企业版 - hss.version.premium: 旗舰版 - hss.version.wtp: 网页防篡改版 - hss.version.container.enterprise: 容器版 
 
         :return: The support_version of this PolicyGroupResponseInfo.
         :rtype: str
@@ -266,7 +266,7 @@ class PolicyGroupResponseInfo:
     def support_version(self, support_version):
         r"""Sets the support_version of this PolicyGroupResponseInfo.
 
-        **参数解释**: 支持的版本 **取值范围**: hss.version.advanced: 专业版 hss.version.enterprise: 企业版 hss.version.premium: 旗舰版 hss.version.wtp: 网页防篡改版 hss.version.container.enterprise: 容器版 
+        **参数解释**: 支持的版本 **取值范围**: - hss.version.advanced: 专业版 - hss.version.enterprise: 企业版 - hss.version.premium: 旗舰版 - hss.version.wtp: 网页防篡改版 - hss.version.container.enterprise: 容器版 
 
         :param support_version: The support_version of this PolicyGroupResponseInfo.
         :type support_version: str
@@ -277,7 +277,7 @@ class PolicyGroupResponseInfo:
     def protect_mode(self):
         r"""Gets the protect_mode of this PolicyGroupResponseInfo.
 
-        **参数解释**: 防护模式 **取值范围**: high_detection: 高检出模式 equalization: 均衡模式 
+        **参数解释**: 防护模式 **取值范围**: - high_detection: 高检出模式 - equalization: 均衡模式 
 
         :return: The protect_mode of this PolicyGroupResponseInfo.
         :rtype: str
@@ -288,7 +288,7 @@ class PolicyGroupResponseInfo:
     def protect_mode(self, protect_mode):
         r"""Sets the protect_mode of this PolicyGroupResponseInfo.
 
-        **参数解释**: 防护模式 **取值范围**: high_detection: 高检出模式 equalization: 均衡模式 
+        **参数解释**: 防护模式 **取值范围**: - high_detection: 高检出模式 - equalization: 均衡模式 
 
         :param protect_mode: The protect_mode of this PolicyGroupResponseInfo.
         :type protect_mode: str

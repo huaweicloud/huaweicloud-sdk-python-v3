@@ -47,9 +47,9 @@ class ListStackEventsRequest:
         :type client_request_id: str
         :param stack_name: 资源栈的名称。此名字在domain_id+区域+project_id下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。
         :type stack_name: str
-        :param stack_id: 资源栈（stack）的唯一Id。  此Id由资源编排服务在生成资源栈的时候生成，为UUID。  由于资源栈名仅仅在同一时间下唯一，即用户允许先生成一个叫HelloWorld的资源栈，删除，再重新创建一个同名资源栈。  对于团队并行开发，用户可能希望确保，当前我操作的资源栈就是我认为的那个，而不是其他队友删除后创建的同名资源栈。因此，使用ID就可以做到强匹配。  资源编排服务保证每次创建的资源栈所对应的ID都不相同，更新不会影响ID。如果给予的stack_id和当前资源栈的ID不一致，则返回400
+        :param stack_id: 资源栈（stack）的唯一ID。  此ID由资源编排服务在生成资源栈的时候生成，为UUID。  由于资源栈名仅仅在同一时间下唯一，即用户允许先生成一个叫HelloWorld的资源栈，删除，再重新创建一个同名资源栈。  对于团队并行开发，用户可能希望确保，当前我操作的资源栈就是我认为的那个，而不是其他队友删除后创建的同名资源栈。因此，使用ID就可以做到强匹配。  资源编排服务保证每次创建的资源栈所对应的ID都不相同，更新不会影响ID。如果给予的stack_id和当前资源栈的ID不一致，则返回400
         :type stack_id: str
-        :param deployment_id: 标识部署的唯一Id，此Id由资源编排服务在触发部署、回滚等操作时生成，为UUID。
+        :param deployment_id: 标识部署的唯一ID，此ID由资源编排服务在触发部署、回滚等操作时生成，为UUID。
         :type deployment_id: str
         :param filter: 过滤条件       * 与（AND）运算符使用逗号（，）定义 * 或（OR）运算符使用竖线（|）定义，OR运算符优先级高于AND运算符 * 不支持括号 * 过滤运算符仅支持等号（&#x3D;&#x3D;） * 过滤参数名及其值仅支持包含大小写英文、数字和下划线 * 过滤条件中禁止使用分号，如果有分号，则此条过滤会被忽略 * 一个过滤参数仅能与一个与条件相关，一个与条件中的多个或条件仅能与一个过滤参数相关
         :type filter: str
@@ -136,7 +136,7 @@ class ListStackEventsRequest:
     def stack_id(self):
         r"""Gets the stack_id of this ListStackEventsRequest.
 
-        资源栈（stack）的唯一Id。  此Id由资源编排服务在生成资源栈的时候生成，为UUID。  由于资源栈名仅仅在同一时间下唯一，即用户允许先生成一个叫HelloWorld的资源栈，删除，再重新创建一个同名资源栈。  对于团队并行开发，用户可能希望确保，当前我操作的资源栈就是我认为的那个，而不是其他队友删除后创建的同名资源栈。因此，使用ID就可以做到强匹配。  资源编排服务保证每次创建的资源栈所对应的ID都不相同，更新不会影响ID。如果给予的stack_id和当前资源栈的ID不一致，则返回400
+        资源栈（stack）的唯一ID。  此ID由资源编排服务在生成资源栈的时候生成，为UUID。  由于资源栈名仅仅在同一时间下唯一，即用户允许先生成一个叫HelloWorld的资源栈，删除，再重新创建一个同名资源栈。  对于团队并行开发，用户可能希望确保，当前我操作的资源栈就是我认为的那个，而不是其他队友删除后创建的同名资源栈。因此，使用ID就可以做到强匹配。  资源编排服务保证每次创建的资源栈所对应的ID都不相同，更新不会影响ID。如果给予的stack_id和当前资源栈的ID不一致，则返回400
 
         :return: The stack_id of this ListStackEventsRequest.
         :rtype: str
@@ -147,7 +147,7 @@ class ListStackEventsRequest:
     def stack_id(self, stack_id):
         r"""Sets the stack_id of this ListStackEventsRequest.
 
-        资源栈（stack）的唯一Id。  此Id由资源编排服务在生成资源栈的时候生成，为UUID。  由于资源栈名仅仅在同一时间下唯一，即用户允许先生成一个叫HelloWorld的资源栈，删除，再重新创建一个同名资源栈。  对于团队并行开发，用户可能希望确保，当前我操作的资源栈就是我认为的那个，而不是其他队友删除后创建的同名资源栈。因此，使用ID就可以做到强匹配。  资源编排服务保证每次创建的资源栈所对应的ID都不相同，更新不会影响ID。如果给予的stack_id和当前资源栈的ID不一致，则返回400
+        资源栈（stack）的唯一ID。  此ID由资源编排服务在生成资源栈的时候生成，为UUID。  由于资源栈名仅仅在同一时间下唯一，即用户允许先生成一个叫HelloWorld的资源栈，删除，再重新创建一个同名资源栈。  对于团队并行开发，用户可能希望确保，当前我操作的资源栈就是我认为的那个，而不是其他队友删除后创建的同名资源栈。因此，使用ID就可以做到强匹配。  资源编排服务保证每次创建的资源栈所对应的ID都不相同，更新不会影响ID。如果给予的stack_id和当前资源栈的ID不一致，则返回400
 
         :param stack_id: The stack_id of this ListStackEventsRequest.
         :type stack_id: str
@@ -158,7 +158,7 @@ class ListStackEventsRequest:
     def deployment_id(self):
         r"""Gets the deployment_id of this ListStackEventsRequest.
 
-        标识部署的唯一Id，此Id由资源编排服务在触发部署、回滚等操作时生成，为UUID。
+        标识部署的唯一ID，此ID由资源编排服务在触发部署、回滚等操作时生成，为UUID。
 
         :return: The deployment_id of this ListStackEventsRequest.
         :rtype: str
@@ -169,7 +169,7 @@ class ListStackEventsRequest:
     def deployment_id(self, deployment_id):
         r"""Sets the deployment_id of this ListStackEventsRequest.
 
-        标识部署的唯一Id，此Id由资源编排服务在触发部署、回滚等操作时生成，为UUID。
+        标识部署的唯一ID，此ID由资源编排服务在触发部署、回滚等操作时生成，为UUID。
 
         :param deployment_id: The deployment_id of this ListStackEventsRequest.
         :type deployment_id: str

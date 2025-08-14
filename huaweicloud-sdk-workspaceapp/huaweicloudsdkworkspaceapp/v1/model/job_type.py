@@ -25,6 +25,7 @@ class JobType:
     CREATE_SERVER_SNAPSHOT = "CREATE_SERVER_SNAPSHOT"
     DELETE_SERVER_SNAPSHOT = "DELETE_SERVER_SNAPSHOT"
     RESTORE_SERVER_SNAPSHOT = "RESTORE_SERVER_SNAPSHOT"
+    BATCH_INSTALL_APP = "BATCH_INSTALL_APP"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

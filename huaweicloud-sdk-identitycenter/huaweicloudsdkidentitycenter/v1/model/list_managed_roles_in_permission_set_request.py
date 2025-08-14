@@ -18,33 +18,33 @@ class ListManagedRolesInPermissionSetRequest:
     sensitive_list.append('x_security_token')
 
     openapi_types = {
+        'x_security_token': 'str',
         'instance_id': 'str',
         'permission_set_id': 'str',
-        'x_security_token': 'str',
         'limit': 'int',
         'marker': 'str'
     }
 
     attribute_map = {
+        'x_security_token': 'X-Security-Token',
         'instance_id': 'instance_id',
         'permission_set_id': 'permission_set_id',
-        'x_security_token': 'X-Security-Token',
         'limit': 'limit',
         'marker': 'marker'
     }
 
-    def __init__(self, instance_id=None, permission_set_id=None, x_security_token=None, limit=None, marker=None):
+    def __init__(self, x_security_token=None, instance_id=None, permission_set_id=None, limit=None, marker=None):
         r"""ListManagedRolesInPermissionSetRequest
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: IAM身份中心实例的全局唯一标识符（ID）。
+        :param x_security_token: 如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
+        :type x_security_token: str
+        :param instance_id: IAM Identity Center实例的全局唯一标识符（ID）
         :type instance_id: str
         :param permission_set_id: 权限集的全局唯一标识符（ID）
         :type permission_set_id: str
-        :param x_security_token: 如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
-        :type x_security_token: str
-        :param limit: 每个请求返回的最大结果数
+        :param limit: 每个请求返回的最大结果数。
         :type limit: int
         :param marker: 分页标记
         :type marker: str
@@ -52,27 +52,49 @@ class ListManagedRolesInPermissionSetRequest:
         
         
 
+        self._x_security_token = None
         self._instance_id = None
         self._permission_set_id = None
-        self._x_security_token = None
         self._limit = None
         self._marker = None
         self.discriminator = None
 
-        self.instance_id = instance_id
-        self.permission_set_id = permission_set_id
         if x_security_token is not None:
             self.x_security_token = x_security_token
+        self.instance_id = instance_id
+        self.permission_set_id = permission_set_id
         if limit is not None:
             self.limit = limit
         if marker is not None:
             self.marker = marker
 
     @property
+    def x_security_token(self):
+        r"""Gets the x_security_token of this ListManagedRolesInPermissionSetRequest.
+
+        如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
+
+        :return: The x_security_token of this ListManagedRolesInPermissionSetRequest.
+        :rtype: str
+        """
+        return self._x_security_token
+
+    @x_security_token.setter
+    def x_security_token(self, x_security_token):
+        r"""Sets the x_security_token of this ListManagedRolesInPermissionSetRequest.
+
+        如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
+
+        :param x_security_token: The x_security_token of this ListManagedRolesInPermissionSetRequest.
+        :type x_security_token: str
+        """
+        self._x_security_token = x_security_token
+
+    @property
     def instance_id(self):
         r"""Gets the instance_id of this ListManagedRolesInPermissionSetRequest.
 
-        IAM身份中心实例的全局唯一标识符（ID）。
+        IAM Identity Center实例的全局唯一标识符（ID）
 
         :return: The instance_id of this ListManagedRolesInPermissionSetRequest.
         :rtype: str
@@ -83,7 +105,7 @@ class ListManagedRolesInPermissionSetRequest:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this ListManagedRolesInPermissionSetRequest.
 
-        IAM身份中心实例的全局唯一标识符（ID）。
+        IAM Identity Center实例的全局唯一标识符（ID）
 
         :param instance_id: The instance_id of this ListManagedRolesInPermissionSetRequest.
         :type instance_id: str
@@ -113,32 +135,10 @@ class ListManagedRolesInPermissionSetRequest:
         self._permission_set_id = permission_set_id
 
     @property
-    def x_security_token(self):
-        r"""Gets the x_security_token of this ListManagedRolesInPermissionSetRequest.
-
-        如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
-
-        :return: The x_security_token of this ListManagedRolesInPermissionSetRequest.
-        :rtype: str
-        """
-        return self._x_security_token
-
-    @x_security_token.setter
-    def x_security_token(self, x_security_token):
-        r"""Sets the x_security_token of this ListManagedRolesInPermissionSetRequest.
-
-        如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
-
-        :param x_security_token: The x_security_token of this ListManagedRolesInPermissionSetRequest.
-        :type x_security_token: str
-        """
-        self._x_security_token = x_security_token
-
-    @property
     def limit(self):
         r"""Gets the limit of this ListManagedRolesInPermissionSetRequest.
 
-        每个请求返回的最大结果数
+        每个请求返回的最大结果数。
 
         :return: The limit of this ListManagedRolesInPermissionSetRequest.
         :rtype: int
@@ -149,7 +149,7 @@ class ListManagedRolesInPermissionSetRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListManagedRolesInPermissionSetRequest.
 
-        每个请求返回的最大结果数
+        每个请求返回的最大结果数。
 
         :param limit: The limit of this ListManagedRolesInPermissionSetRequest.
         :type limit: int

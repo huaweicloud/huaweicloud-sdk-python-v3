@@ -79,7 +79,7 @@ class ListImageRiskConfigRulesRequest:
         :type check_name: str
         :param standard: 标准类型，包含如下:   - cn_standard : 等保合规标准   - hw_standard : 云安全实践标准
         :type standard: str
-        :param result_type: 结果类型，包含如下： - pass ： 已通过 - failed : 未通过
+        :param result_type: 结果类型，包含如下： - pass：已通过 - failed：未通过
         :type result_type: str
         :param check_rule_name: 检查项名称，支持模糊匹配
         :type check_rule_name: str
@@ -382,7 +382,7 @@ class ListImageRiskConfigRulesRequest:
     def result_type(self):
         r"""Gets the result_type of this ListImageRiskConfigRulesRequest.
 
-        结果类型，包含如下： - pass ： 已通过 - failed : 未通过
+        结果类型，包含如下： - pass：已通过 - failed：未通过
 
         :return: The result_type of this ListImageRiskConfigRulesRequest.
         :rtype: str
@@ -393,7 +393,7 @@ class ListImageRiskConfigRulesRequest:
     def result_type(self, result_type):
         r"""Sets the result_type of this ListImageRiskConfigRulesRequest.
 
-        结果类型，包含如下： - pass ： 已通过 - failed : 未通过
+        结果类型，包含如下： - pass：已通过 - failed：未通过
 
         :param result_type: The result_type of this ListImageRiskConfigRulesRequest.
         :type result_type: str

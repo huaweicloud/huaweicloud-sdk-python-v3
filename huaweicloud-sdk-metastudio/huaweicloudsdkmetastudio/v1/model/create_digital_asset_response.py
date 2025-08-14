@@ -19,21 +19,25 @@ class CreateDigitalAssetResponse(SdkResponse):
 
     openapi_types = {
         'asset_id': 'str',
+        'produce_id': 'str',
         'x_request_id': 'str'
     }
 
     attribute_map = {
         'asset_id': 'asset_id',
+        'produce_id': 'produce_id',
         'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, asset_id=None, x_request_id=None):
+    def __init__(self, asset_id=None, produce_id=None, x_request_id=None):
         r"""CreateDigitalAssetResponse
 
         The model defined in huaweicloud sdk
 
         :param asset_id: 数字资产ID。
         :type asset_id: str
+        :param produce_id: ai标识ID。
+        :type produce_id: str
         :param x_request_id: 
         :type x_request_id: str
         """
@@ -41,11 +45,14 @@ class CreateDigitalAssetResponse(SdkResponse):
         super(CreateDigitalAssetResponse, self).__init__()
 
         self._asset_id = None
+        self._produce_id = None
         self._x_request_id = None
         self.discriminator = None
 
         if asset_id is not None:
             self.asset_id = asset_id
+        if produce_id is not None:
+            self.produce_id = produce_id
         if x_request_id is not None:
             self.x_request_id = x_request_id
 
@@ -70,6 +77,28 @@ class CreateDigitalAssetResponse(SdkResponse):
         :type asset_id: str
         """
         self._asset_id = asset_id
+
+    @property
+    def produce_id(self):
+        r"""Gets the produce_id of this CreateDigitalAssetResponse.
+
+        ai标识ID。
+
+        :return: The produce_id of this CreateDigitalAssetResponse.
+        :rtype: str
+        """
+        return self._produce_id
+
+    @produce_id.setter
+    def produce_id(self, produce_id):
+        r"""Sets the produce_id of this CreateDigitalAssetResponse.
+
+        ai标识ID。
+
+        :param produce_id: The produce_id of this CreateDigitalAssetResponse.
+        :type produce_id: str
+        """
+        self._produce_id = produce_id
 
     @property
     def x_request_id(self):

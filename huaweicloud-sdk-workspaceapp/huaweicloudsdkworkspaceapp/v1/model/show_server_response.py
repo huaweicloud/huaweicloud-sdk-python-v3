@@ -180,9 +180,9 @@ class ShowServerResponse(SdkResponse):
         :type freeze: list[:class:`huaweicloudsdkworkspaceapp.v1.CbcFreezeInfo`]
         :param host_address: vpc和子网信息。
         :type host_address: list[:class:`huaweicloudsdkworkspaceapp.v1.EcsNetWork`]
-        :param enterprise_project_id: 企业项目ID,仅企业项目会返回
+        :param enterprise_project_id: 企业项目ID,仅企业项目会返回。
         :type enterprise_project_id: str
-        :param tags: 标签信息
+        :param tags: 标签信息。
         :type tags: list[:class:`huaweicloudsdkworkspaceapp.v1.TmsTag`]
         :param addresses: 服务器IP地址列表。
         :type addresses: dict(str, list[ServerAddress])
@@ -1068,7 +1068,7 @@ class ShowServerResponse(SdkResponse):
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this ShowServerResponse.
 
-        企业项目ID,仅企业项目会返回
+        企业项目ID,仅企业项目会返回。
 
         :return: The enterprise_project_id of this ShowServerResponse.
         :rtype: str
@@ -1079,7 +1079,7 @@ class ShowServerResponse(SdkResponse):
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this ShowServerResponse.
 
-        企业项目ID,仅企业项目会返回
+        企业项目ID,仅企业项目会返回。
 
         :param enterprise_project_id: The enterprise_project_id of this ShowServerResponse.
         :type enterprise_project_id: str
@@ -1090,7 +1090,7 @@ class ShowServerResponse(SdkResponse):
     def tags(self):
         r"""Gets the tags of this ShowServerResponse.
 
-        标签信息
+        标签信息。
 
         :return: The tags of this ShowServerResponse.
         :rtype: list[:class:`huaweicloudsdkworkspaceapp.v1.TmsTag`]
@@ -1101,7 +1101,7 @@ class ShowServerResponse(SdkResponse):
     def tags(self, tags):
         r"""Sets the tags of this ShowServerResponse.
 
-        标签信息
+        标签信息。
 
         :param tags: The tags of this ShowServerResponse.
         :type tags: list[:class:`huaweicloudsdkworkspaceapp.v1.TmsTag`]

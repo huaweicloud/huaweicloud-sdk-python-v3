@@ -51,7 +51,7 @@ class WtpProtectHostDirResponseInfo:
         :type exclue_file_path: str
         :param local_backup_dir: 本地备份路径
         :type local_backup_dir: str
-        :param protect_status: 防护状态（closed-未开启，opened-防护中, opening-开启中, closing-关闭中, open_failed-防护失败)
+        :param protect_status: 防护状态（closed-未开启，opened-防护中，opening-开启中，closing-关闭中，open_failed-防护失败）
         :type protect_status: str
         :param error: 失败原因
         :type error: str
@@ -197,7 +197,7 @@ class WtpProtectHostDirResponseInfo:
     def protect_status(self):
         r"""Gets the protect_status of this WtpProtectHostDirResponseInfo.
 
-        防护状态（closed-未开启，opened-防护中, opening-开启中, closing-关闭中, open_failed-防护失败)
+        防护状态（closed-未开启，opened-防护中，opening-开启中，closing-关闭中，open_failed-防护失败）
 
         :return: The protect_status of this WtpProtectHostDirResponseInfo.
         :rtype: str
@@ -208,7 +208,7 @@ class WtpProtectHostDirResponseInfo:
     def protect_status(self, protect_status):
         r"""Sets the protect_status of this WtpProtectHostDirResponseInfo.
 
-        防护状态（closed-未开启，opened-防护中, opening-开启中, closing-关闭中, open_failed-防护失败)
+        防护状态（closed-未开启，opened-防护中，opening-开启中，closing-关闭中，open_failed-防护失败）
 
         :param protect_status: The protect_status of this WtpProtectHostDirResponseInfo.
         :type protect_status: str

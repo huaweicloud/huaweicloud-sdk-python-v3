@@ -37,7 +37,7 @@ class ResourceProductDataObjectInfo:
         :type charging_mode: str
         :param is_auto_renew: 是否自动续费
         :type is_auto_renew: bool
-        :param version_info: 版本信息,key对应的值为主机开通的版本，包含如下6种输入：   - hss.version.basic ：基础版。   - hss.version.advanced ：专业版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。   - hss.version.container.enterprise ：容器版。
+        :param version_info: 版本信息，key对应的值为主机开通的版本，包含如下6种输入：   - hss.version.basic ：基础版。   - hss.version.advanced ：专业版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。   - hss.version.container.enterprise ：容器版。
         :type version_info: dict(str, list[ShowPeriodResponseInfo])
         """
         
@@ -103,7 +103,7 @@ class ResourceProductDataObjectInfo:
     def version_info(self):
         r"""Gets the version_info of this ResourceProductDataObjectInfo.
 
-        版本信息,key对应的值为主机开通的版本，包含如下6种输入：   - hss.version.basic ：基础版。   - hss.version.advanced ：专业版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。   - hss.version.container.enterprise ：容器版。
+        版本信息，key对应的值为主机开通的版本，包含如下6种输入：   - hss.version.basic ：基础版。   - hss.version.advanced ：专业版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。   - hss.version.container.enterprise ：容器版。
 
         :return: The version_info of this ResourceProductDataObjectInfo.
         :rtype: dict(str, list[ShowPeriodResponseInfo])
@@ -114,7 +114,7 @@ class ResourceProductDataObjectInfo:
     def version_info(self, version_info):
         r"""Sets the version_info of this ResourceProductDataObjectInfo.
 
-        版本信息,key对应的值为主机开通的版本，包含如下6种输入：   - hss.version.basic ：基础版。   - hss.version.advanced ：专业版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。   - hss.version.container.enterprise ：容器版。
+        版本信息，key对应的值为主机开通的版本，包含如下6种输入：   - hss.version.basic ：基础版。   - hss.version.advanced ：专业版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。   - hss.version.container.enterprise ：容器版。
 
         :param version_info: The version_info of this ResourceProductDataObjectInfo.
         :type version_info: dict(str, list[ShowPeriodResponseInfo])

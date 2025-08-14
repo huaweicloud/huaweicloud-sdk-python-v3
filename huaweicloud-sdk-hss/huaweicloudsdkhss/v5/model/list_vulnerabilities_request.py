@@ -53,31 +53,31 @@ class ListVulnerabilitiesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
+        :param enterprise_project_id: **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
         :type enterprise_project_id: str
-        :param type: 漏洞类型，包含如下：   -linux_vul : linux漏洞   -windows_vul : windows漏洞   -web_cms : Web-CMS漏洞   -app_vul : 应用漏洞
+        :param type: **参数解释**: 漏洞类型 **约束限制**: 不涉及 **取值范围**:   - linux_vul：linux漏洞   - windows_vul：windows漏洞   - web_cms：Web-CMS漏洞   - app_vul：应用漏洞  **默认取值**: linux_vul，默认查询linux漏洞 
         :type type: str
-        :param vul_id: 漏洞ID
+        :param vul_id: **参数解释**: 漏洞ID **约束限制**: 不涉及 **取值范围**: 字符长度0-256位 **默认取值**: 不涉及 
         :type vul_id: str
-        :param vul_name: 漏洞名称
+        :param vul_name: **参数解释**: 漏洞名称 **约束限制**: 不涉及 **取值范围**: 字符长度0-256位 **默认取值**: 不涉及 
         :type vul_name: str
-        :param limit: 每页显示个数
+        :param limit: **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
         :type limit: int
-        :param offset: 偏移量：指定返回记录的开始位置
+        :param offset: **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 默认为0 
         :type offset: int
-        :param repair_priority: 修复优先级 Critical 紧急 High  高 Medium 中 Low 低
+        :param repair_priority: **参数解释**: 漏洞修复优先级 **约束限制**: 不涉及 **取值范围**: - Critical：紧急 - High：高 - Medium：中 - Low：低  **默认取值**: 不涉及 
         :type repair_priority: str
-        :param handle_status: 处置状态，包含如下:   - unhandled ：未处理   - handled : 已处理
+        :param handle_status: **参数解释**: 漏洞的处置状态 **约束限制**: 不涉及 **取值范围**: - unhandled：未处理 - handled：已处理  **默认取值**: 不涉及 
         :type handle_status: str
-        :param cve_id: 漏洞编号
+        :param cve_id: **参数解释**: 漏洞cve编号 **约束限制**: 不涉及 **取值范围**: 字符长度0-32位 **默认取值**: 不涉及 
         :type cve_id: str
-        :param label_list: 漏洞标签
+        :param label_list: **参数解释**: 漏洞标签 **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
         :type label_list: str
-        :param status: 漏洞状态
+        :param status: **参数解释**: 漏洞状态 **约束限制**: 不涉及 **取值范围**: - vul_status_unfix：未处理 - vul_status_ignored：已忽略 - vul_status_verified：验证中 - vul_status_fixing：修复中 - vul_status_fixed：修复成功 - vul_status_reboot：修复成功待重启 - vul_status_failed：修复失败 - vul_status_fix_after_reboot：请重启主机再次修复  **默认取值**: 不涉及 
         :type status: str
-        :param asset_value: 资产重要性 important common test
+        :param asset_value: **参数解释**: 存在漏洞主机的资产重要性 **约束限制**: 不涉及 **取值范围**: - important：重要资产 - common：一般资产 - test：测试资产  **默认取值**: 不涉及 
         :type asset_value: str
-        :param group_name: 服务器组名称
+        :param group_name: **参数解释**: 存在漏洞主机的所属服务器组 **约束限制**: 不涉及 **取值范围**: 字符长度0-256位 **默认取值**: 不涉及 
         :type group_name: str
         """
         
@@ -129,7 +129,7 @@ class ListVulnerabilitiesRequest:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this ListVulnerabilitiesRequest.
 
-        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
+        **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
 
         :return: The enterprise_project_id of this ListVulnerabilitiesRequest.
         :rtype: str
@@ -140,7 +140,7 @@ class ListVulnerabilitiesRequest:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this ListVulnerabilitiesRequest.
 
-        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
+        **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
 
         :param enterprise_project_id: The enterprise_project_id of this ListVulnerabilitiesRequest.
         :type enterprise_project_id: str
@@ -151,7 +151,7 @@ class ListVulnerabilitiesRequest:
     def type(self):
         r"""Gets the type of this ListVulnerabilitiesRequest.
 
-        漏洞类型，包含如下：   -linux_vul : linux漏洞   -windows_vul : windows漏洞   -web_cms : Web-CMS漏洞   -app_vul : 应用漏洞
+        **参数解释**: 漏洞类型 **约束限制**: 不涉及 **取值范围**:   - linux_vul：linux漏洞   - windows_vul：windows漏洞   - web_cms：Web-CMS漏洞   - app_vul：应用漏洞  **默认取值**: linux_vul，默认查询linux漏洞 
 
         :return: The type of this ListVulnerabilitiesRequest.
         :rtype: str
@@ -162,7 +162,7 @@ class ListVulnerabilitiesRequest:
     def type(self, type):
         r"""Sets the type of this ListVulnerabilitiesRequest.
 
-        漏洞类型，包含如下：   -linux_vul : linux漏洞   -windows_vul : windows漏洞   -web_cms : Web-CMS漏洞   -app_vul : 应用漏洞
+        **参数解释**: 漏洞类型 **约束限制**: 不涉及 **取值范围**:   - linux_vul：linux漏洞   - windows_vul：windows漏洞   - web_cms：Web-CMS漏洞   - app_vul：应用漏洞  **默认取值**: linux_vul，默认查询linux漏洞 
 
         :param type: The type of this ListVulnerabilitiesRequest.
         :type type: str
@@ -173,7 +173,7 @@ class ListVulnerabilitiesRequest:
     def vul_id(self):
         r"""Gets the vul_id of this ListVulnerabilitiesRequest.
 
-        漏洞ID
+        **参数解释**: 漏洞ID **约束限制**: 不涉及 **取值范围**: 字符长度0-256位 **默认取值**: 不涉及 
 
         :return: The vul_id of this ListVulnerabilitiesRequest.
         :rtype: str
@@ -184,7 +184,7 @@ class ListVulnerabilitiesRequest:
     def vul_id(self, vul_id):
         r"""Sets the vul_id of this ListVulnerabilitiesRequest.
 
-        漏洞ID
+        **参数解释**: 漏洞ID **约束限制**: 不涉及 **取值范围**: 字符长度0-256位 **默认取值**: 不涉及 
 
         :param vul_id: The vul_id of this ListVulnerabilitiesRequest.
         :type vul_id: str
@@ -195,7 +195,7 @@ class ListVulnerabilitiesRequest:
     def vul_name(self):
         r"""Gets the vul_name of this ListVulnerabilitiesRequest.
 
-        漏洞名称
+        **参数解释**: 漏洞名称 **约束限制**: 不涉及 **取值范围**: 字符长度0-256位 **默认取值**: 不涉及 
 
         :return: The vul_name of this ListVulnerabilitiesRequest.
         :rtype: str
@@ -206,7 +206,7 @@ class ListVulnerabilitiesRequest:
     def vul_name(self, vul_name):
         r"""Sets the vul_name of this ListVulnerabilitiesRequest.
 
-        漏洞名称
+        **参数解释**: 漏洞名称 **约束限制**: 不涉及 **取值范围**: 字符长度0-256位 **默认取值**: 不涉及 
 
         :param vul_name: The vul_name of this ListVulnerabilitiesRequest.
         :type vul_name: str
@@ -217,7 +217,7 @@ class ListVulnerabilitiesRequest:
     def limit(self):
         r"""Gets the limit of this ListVulnerabilitiesRequest.
 
-        每页显示个数
+        **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
 
         :return: The limit of this ListVulnerabilitiesRequest.
         :rtype: int
@@ -228,7 +228,7 @@ class ListVulnerabilitiesRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListVulnerabilitiesRequest.
 
-        每页显示个数
+        **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
 
         :param limit: The limit of this ListVulnerabilitiesRequest.
         :type limit: int
@@ -239,7 +239,7 @@ class ListVulnerabilitiesRequest:
     def offset(self):
         r"""Gets the offset of this ListVulnerabilitiesRequest.
 
-        偏移量：指定返回记录的开始位置
+        **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 默认为0 
 
         :return: The offset of this ListVulnerabilitiesRequest.
         :rtype: int
@@ -250,7 +250,7 @@ class ListVulnerabilitiesRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListVulnerabilitiesRequest.
 
-        偏移量：指定返回记录的开始位置
+        **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 默认为0 
 
         :param offset: The offset of this ListVulnerabilitiesRequest.
         :type offset: int
@@ -261,7 +261,7 @@ class ListVulnerabilitiesRequest:
     def repair_priority(self):
         r"""Gets the repair_priority of this ListVulnerabilitiesRequest.
 
-        修复优先级 Critical 紧急 High  高 Medium 中 Low 低
+        **参数解释**: 漏洞修复优先级 **约束限制**: 不涉及 **取值范围**: - Critical：紧急 - High：高 - Medium：中 - Low：低  **默认取值**: 不涉及 
 
         :return: The repair_priority of this ListVulnerabilitiesRequest.
         :rtype: str
@@ -272,7 +272,7 @@ class ListVulnerabilitiesRequest:
     def repair_priority(self, repair_priority):
         r"""Sets the repair_priority of this ListVulnerabilitiesRequest.
 
-        修复优先级 Critical 紧急 High  高 Medium 中 Low 低
+        **参数解释**: 漏洞修复优先级 **约束限制**: 不涉及 **取值范围**: - Critical：紧急 - High：高 - Medium：中 - Low：低  **默认取值**: 不涉及 
 
         :param repair_priority: The repair_priority of this ListVulnerabilitiesRequest.
         :type repair_priority: str
@@ -283,7 +283,7 @@ class ListVulnerabilitiesRequest:
     def handle_status(self):
         r"""Gets the handle_status of this ListVulnerabilitiesRequest.
 
-        处置状态，包含如下:   - unhandled ：未处理   - handled : 已处理
+        **参数解释**: 漏洞的处置状态 **约束限制**: 不涉及 **取值范围**: - unhandled：未处理 - handled：已处理  **默认取值**: 不涉及 
 
         :return: The handle_status of this ListVulnerabilitiesRequest.
         :rtype: str
@@ -294,7 +294,7 @@ class ListVulnerabilitiesRequest:
     def handle_status(self, handle_status):
         r"""Sets the handle_status of this ListVulnerabilitiesRequest.
 
-        处置状态，包含如下:   - unhandled ：未处理   - handled : 已处理
+        **参数解释**: 漏洞的处置状态 **约束限制**: 不涉及 **取值范围**: - unhandled：未处理 - handled：已处理  **默认取值**: 不涉及 
 
         :param handle_status: The handle_status of this ListVulnerabilitiesRequest.
         :type handle_status: str
@@ -305,7 +305,7 @@ class ListVulnerabilitiesRequest:
     def cve_id(self):
         r"""Gets the cve_id of this ListVulnerabilitiesRequest.
 
-        漏洞编号
+        **参数解释**: 漏洞cve编号 **约束限制**: 不涉及 **取值范围**: 字符长度0-32位 **默认取值**: 不涉及 
 
         :return: The cve_id of this ListVulnerabilitiesRequest.
         :rtype: str
@@ -316,7 +316,7 @@ class ListVulnerabilitiesRequest:
     def cve_id(self, cve_id):
         r"""Sets the cve_id of this ListVulnerabilitiesRequest.
 
-        漏洞编号
+        **参数解释**: 漏洞cve编号 **约束限制**: 不涉及 **取值范围**: 字符长度0-32位 **默认取值**: 不涉及 
 
         :param cve_id: The cve_id of this ListVulnerabilitiesRequest.
         :type cve_id: str
@@ -327,7 +327,7 @@ class ListVulnerabilitiesRequest:
     def label_list(self):
         r"""Gets the label_list of this ListVulnerabilitiesRequest.
 
-        漏洞标签
+        **参数解释**: 漏洞标签 **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
 
         :return: The label_list of this ListVulnerabilitiesRequest.
         :rtype: str
@@ -338,7 +338,7 @@ class ListVulnerabilitiesRequest:
     def label_list(self, label_list):
         r"""Sets the label_list of this ListVulnerabilitiesRequest.
 
-        漏洞标签
+        **参数解释**: 漏洞标签 **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
 
         :param label_list: The label_list of this ListVulnerabilitiesRequest.
         :type label_list: str
@@ -349,7 +349,7 @@ class ListVulnerabilitiesRequest:
     def status(self):
         r"""Gets the status of this ListVulnerabilitiesRequest.
 
-        漏洞状态
+        **参数解释**: 漏洞状态 **约束限制**: 不涉及 **取值范围**: - vul_status_unfix：未处理 - vul_status_ignored：已忽略 - vul_status_verified：验证中 - vul_status_fixing：修复中 - vul_status_fixed：修复成功 - vul_status_reboot：修复成功待重启 - vul_status_failed：修复失败 - vul_status_fix_after_reboot：请重启主机再次修复  **默认取值**: 不涉及 
 
         :return: The status of this ListVulnerabilitiesRequest.
         :rtype: str
@@ -360,7 +360,7 @@ class ListVulnerabilitiesRequest:
     def status(self, status):
         r"""Sets the status of this ListVulnerabilitiesRequest.
 
-        漏洞状态
+        **参数解释**: 漏洞状态 **约束限制**: 不涉及 **取值范围**: - vul_status_unfix：未处理 - vul_status_ignored：已忽略 - vul_status_verified：验证中 - vul_status_fixing：修复中 - vul_status_fixed：修复成功 - vul_status_reboot：修复成功待重启 - vul_status_failed：修复失败 - vul_status_fix_after_reboot：请重启主机再次修复  **默认取值**: 不涉及 
 
         :param status: The status of this ListVulnerabilitiesRequest.
         :type status: str
@@ -371,7 +371,7 @@ class ListVulnerabilitiesRequest:
     def asset_value(self):
         r"""Gets the asset_value of this ListVulnerabilitiesRequest.
 
-        资产重要性 important common test
+        **参数解释**: 存在漏洞主机的资产重要性 **约束限制**: 不涉及 **取值范围**: - important：重要资产 - common：一般资产 - test：测试资产  **默认取值**: 不涉及 
 
         :return: The asset_value of this ListVulnerabilitiesRequest.
         :rtype: str
@@ -382,7 +382,7 @@ class ListVulnerabilitiesRequest:
     def asset_value(self, asset_value):
         r"""Sets the asset_value of this ListVulnerabilitiesRequest.
 
-        资产重要性 important common test
+        **参数解释**: 存在漏洞主机的资产重要性 **约束限制**: 不涉及 **取值范围**: - important：重要资产 - common：一般资产 - test：测试资产  **默认取值**: 不涉及 
 
         :param asset_value: The asset_value of this ListVulnerabilitiesRequest.
         :type asset_value: str
@@ -393,7 +393,7 @@ class ListVulnerabilitiesRequest:
     def group_name(self):
         r"""Gets the group_name of this ListVulnerabilitiesRequest.
 
-        服务器组名称
+        **参数解释**: 存在漏洞主机的所属服务器组 **约束限制**: 不涉及 **取值范围**: 字符长度0-256位 **默认取值**: 不涉及 
 
         :return: The group_name of this ListVulnerabilitiesRequest.
         :rtype: str
@@ -404,7 +404,7 @@ class ListVulnerabilitiesRequest:
     def group_name(self, group_name):
         r"""Sets the group_name of this ListVulnerabilitiesRequest.
 
-        服务器组名称
+        **参数解释**: 存在漏洞主机的所属服务器组 **约束限制**: 不涉及 **取值范围**: 字符长度0-256位 **默认取值**: 不涉及 
 
         :param group_name: The group_name of this ListVulnerabilitiesRequest.
         :type group_name: str

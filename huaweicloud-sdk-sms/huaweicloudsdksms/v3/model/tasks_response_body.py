@@ -47,7 +47,8 @@ class TasksResponseBody:
         'agent_mem_usage': 'float',
         'total_disk_io': 'float',
         'agent_disk_io': 'float',
-        'need_migration_test': 'bool'
+        'need_migration_test': 'bool',
+        'subtask_info': 'str'
     }
 
     attribute_map = {
@@ -81,10 +82,11 @@ class TasksResponseBody:
         'agent_mem_usage': 'agent_mem_usage',
         'total_disk_io': 'total_disk_io',
         'agent_disk_io': 'agent_disk_io',
-        'need_migration_test': 'need_migration_test'
+        'need_migration_test': 'need_migration_test',
+        'subtask_info': 'subtask_info'
     }
 
-    def __init__(self, id=None, name=None, type=None, os_type=None, state=None, estimate_complete_time=None, create_date=None, priority=None, speed_limit=None, migrate_speed=None, compress_rate=None, start_target_server=None, error_json=None, total_time=None, migration_ip=None, sub_tasks=None, source_server=None, enterprise_project_id=None, target_server=None, log_collect_status=None, clone_server=None, syncing=None, network_check_info=None, special_config=None, total_cpu_usage=None, agent_cpu_usage=None, total_mem_usage=None, agent_mem_usage=None, total_disk_io=None, agent_disk_io=None, need_migration_test=None):
+    def __init__(self, id=None, name=None, type=None, os_type=None, state=None, estimate_complete_time=None, create_date=None, priority=None, speed_limit=None, migrate_speed=None, compress_rate=None, start_target_server=None, error_json=None, total_time=None, migration_ip=None, sub_tasks=None, source_server=None, enterprise_project_id=None, target_server=None, log_collect_status=None, clone_server=None, syncing=None, network_check_info=None, special_config=None, total_cpu_usage=None, agent_cpu_usage=None, total_mem_usage=None, agent_mem_usage=None, total_disk_io=None, agent_disk_io=None, need_migration_test=None, subtask_info=None):
         r"""TasksResponseBody
 
         The model defined in huaweicloud sdk
@@ -151,6 +153,8 @@ class TasksResponseBody:
         :type agent_disk_io: float
         :param need_migration_test: 是否开启迁移演练
         :type need_migration_test: bool
+        :param subtask_info: 当前子任务及进度
+        :type subtask_info: str
         """
         
         
@@ -186,6 +190,7 @@ class TasksResponseBody:
         self._total_disk_io = None
         self._agent_disk_io = None
         self._need_migration_test = None
+        self._subtask_info = None
         self.discriminator = None
 
         if id is not None:
@@ -250,6 +255,8 @@ class TasksResponseBody:
             self.agent_disk_io = agent_disk_io
         if need_migration_test is not None:
             self.need_migration_test = need_migration_test
+        if subtask_info is not None:
+            self.subtask_info = subtask_info
 
     @property
     def id(self):
@@ -916,6 +923,28 @@ class TasksResponseBody:
         :type need_migration_test: bool
         """
         self._need_migration_test = need_migration_test
+
+    @property
+    def subtask_info(self):
+        r"""Gets the subtask_info of this TasksResponseBody.
+
+        当前子任务及进度
+
+        :return: The subtask_info of this TasksResponseBody.
+        :rtype: str
+        """
+        return self._subtask_info
+
+    @subtask_info.setter
+    def subtask_info(self, subtask_info):
+        r"""Sets the subtask_info of this TasksResponseBody.
+
+        当前子任务及进度
+
+        :param subtask_info: The subtask_info of this TasksResponseBody.
+        :type subtask_info: str
+        """
+        self._subtask_info = subtask_info
 
     def to_dict(self):
         """Returns the model properties as a dict"""

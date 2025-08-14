@@ -71,9 +71,9 @@ class ExportAntiVirusResultRequest:
         :type private_ip: str
         :param public_ip: 服务器公网IP
         :type public_ip: str
-        :param handle_status: 处置状态，包含如下:   - unhandled ：未处理   - handled : 已处理
+        :param handle_status: 处置状态，包含如下:   - unhandled：未处理   - handled：已处理
         :type handle_status: str
-        :param severity_list: 威胁等级，包含如下:   - Low : 低危   - Medium : 中危   - High : 高危   - Critical : 致命
+        :param severity_list: 威胁等级，包含如下:   - Low：低危   - Medium：中危   - High：高危   - Critical：致命
         :type severity_list: list[str]
         :param asset_value: 资产重要性，包含如下3种   - important ：重要资产   - common ：一般资产   - test ：测试资产
         :type asset_value: str
@@ -83,7 +83,7 @@ class ExportAntiVirusResultRequest:
         :type file_path: str
         :param export_size: 导出条数
         :type export_size: int
-        :param file_hash: 文件hash,当前为sha256
+        :param file_hash: 文件hash，当前为sha256
         :type file_hash: str
         :param task_name: 任务名称
         :type task_name: str
@@ -280,7 +280,7 @@ class ExportAntiVirusResultRequest:
     def handle_status(self):
         r"""Gets the handle_status of this ExportAntiVirusResultRequest.
 
-        处置状态，包含如下:   - unhandled ：未处理   - handled : 已处理
+        处置状态，包含如下:   - unhandled：未处理   - handled：已处理
 
         :return: The handle_status of this ExportAntiVirusResultRequest.
         :rtype: str
@@ -291,7 +291,7 @@ class ExportAntiVirusResultRequest:
     def handle_status(self, handle_status):
         r"""Sets the handle_status of this ExportAntiVirusResultRequest.
 
-        处置状态，包含如下:   - unhandled ：未处理   - handled : 已处理
+        处置状态，包含如下:   - unhandled：未处理   - handled：已处理
 
         :param handle_status: The handle_status of this ExportAntiVirusResultRequest.
         :type handle_status: str
@@ -302,7 +302,7 @@ class ExportAntiVirusResultRequest:
     def severity_list(self):
         r"""Gets the severity_list of this ExportAntiVirusResultRequest.
 
-        威胁等级，包含如下:   - Low : 低危   - Medium : 中危   - High : 高危   - Critical : 致命
+        威胁等级，包含如下:   - Low：低危   - Medium：中危   - High：高危   - Critical：致命
 
         :return: The severity_list of this ExportAntiVirusResultRequest.
         :rtype: list[str]
@@ -313,7 +313,7 @@ class ExportAntiVirusResultRequest:
     def severity_list(self, severity_list):
         r"""Sets the severity_list of this ExportAntiVirusResultRequest.
 
-        威胁等级，包含如下:   - Low : 低危   - Medium : 中危   - High : 高危   - Critical : 致命
+        威胁等级，包含如下:   - Low：低危   - Medium：中危   - High：高危   - Critical：致命
 
         :param severity_list: The severity_list of this ExportAntiVirusResultRequest.
         :type severity_list: list[str]
@@ -412,7 +412,7 @@ class ExportAntiVirusResultRequest:
     def file_hash(self):
         r"""Gets the file_hash of this ExportAntiVirusResultRequest.
 
-        文件hash,当前为sha256
+        文件hash，当前为sha256
 
         :return: The file_hash of this ExportAntiVirusResultRequest.
         :rtype: str
@@ -423,7 +423,7 @@ class ExportAntiVirusResultRequest:
     def file_hash(self, file_hash):
         r"""Sets the file_hash of this ExportAntiVirusResultRequest.
 
-        文件hash,当前为sha256
+        文件hash，当前为sha256
 
         :param file_hash: The file_hash of this ExportAntiVirusResultRequest.
         :type file_hash: str

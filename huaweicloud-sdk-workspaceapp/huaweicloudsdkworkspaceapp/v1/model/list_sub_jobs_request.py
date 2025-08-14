@@ -41,9 +41,9 @@ class ListSubJobsRequest:
         :type status: str
         :param job_type: job类型 * &#x60;CREATE_SERVER&#x60; - 创建服务器 * &#x60;DELETE_SERVER&#x60; - 删除服务器 * &#x60;REJOIN_DOMAIN&#x60; - 服务器重新加域 * &#x60;CHANGE_SERVER_IMAGE&#x60; - 修改服务器镜像 * &#x60;REINSTALL_OS&#x60; - 服务器重装操作系统 * &#x60;MIGRATE_SERVER&#x60; - 迁移服务器 * &#x60;UPDATE_SERVER_TSVI&#x60; - 更新虚拟IP配置 * &#x60;UPGRADE_ACCESS_AGENT&#x60; - hda升级 * &#x60;SCHEDULED_TASK&#x60; - 定时任务 * &#x60;UPDATE_FREEZE_STATUS&#x60; - 更新服务器冻结状态
         :type job_type: str
-        :param offset: 查询的偏移量。
+        :param offset: 查询的偏移量，默认值0。
         :type offset: int
-        :param limit: 查询的数量，值区间[1-100]。
+        :param limit: 查询的数量，值区间[1-100]，默认值10。
         :type limit: int
         :param job_id: 任务ID。
         :type job_id: str
@@ -116,7 +116,7 @@ class ListSubJobsRequest:
     def offset(self):
         r"""Gets the offset of this ListSubJobsRequest.
 
-        查询的偏移量。
+        查询的偏移量，默认值0。
 
         :return: The offset of this ListSubJobsRequest.
         :rtype: int
@@ -127,7 +127,7 @@ class ListSubJobsRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListSubJobsRequest.
 
-        查询的偏移量。
+        查询的偏移量，默认值0。
 
         :param offset: The offset of this ListSubJobsRequest.
         :type offset: int
@@ -138,7 +138,7 @@ class ListSubJobsRequest:
     def limit(self):
         r"""Gets the limit of this ListSubJobsRequest.
 
-        查询的数量，值区间[1-100]。
+        查询的数量，值区间[1-100]，默认值10。
 
         :return: The limit of this ListSubJobsRequest.
         :rtype: int
@@ -149,7 +149,7 @@ class ListSubJobsRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListSubJobsRequest.
 
-        查询的数量，值区间[1-100]。
+        查询的数量，值区间[1-100]，默认值10。
 
         :param limit: The limit of this ListSubJobsRequest.
         :type limit: int

@@ -61,17 +61,17 @@ class ListWebAppAndServicesRequest:
         :type name: str
         :param category: 返回的资产类别 - 0: 主机 - 1: 容器
         :type category: str
-        :param catalogue: 资产类型 - web-app       web应用 - web-service   web服务 - database      数据库
+        :param catalogue: 资产类型 - web-app：web应用 - web-service：web服务 - database：数据库
         :type catalogue: str
-        :param host_name: 服务器名称(可选).可让用户根据主机名字搜索
+        :param host_name: 服务器名称(可选)，可让用户根据主机名字搜索
         :type host_name: str
-        :param host_id: 服务器id(可选).可让用户根据主机id搜索
+        :param host_id: 服务器id(可选)，可让用户根据主机id搜索
         :type host_id: str
-        :param host_ip: 服务器ip(可选).可让用户根据主机ip搜索
+        :param host_ip: 服务器ip(可选)，可让用户根据主机ip搜索
         :type host_ip: str
-        :param version: WebAppAndService资产版本.可让用户根据版本搜索
+        :param version: WebAppAndService资产版本，可让用户根据版本搜索
         :type version: str
-        :param install_dir: WebAppAndService资产安装目录.可让用户根据安装目录搜索
+        :param install_dir: WebAppAndService资产安装目录，可让用户根据安装目录搜索
         :type install_dir: str
         :param part_match: 是否模糊匹配，默认false表示精确匹配
         :type part_match: bool
@@ -229,7 +229,7 @@ class ListWebAppAndServicesRequest:
     def catalogue(self):
         r"""Gets the catalogue of this ListWebAppAndServicesRequest.
 
-        资产类型 - web-app       web应用 - web-service   web服务 - database      数据库
+        资产类型 - web-app：web应用 - web-service：web服务 - database：数据库
 
         :return: The catalogue of this ListWebAppAndServicesRequest.
         :rtype: str
@@ -240,7 +240,7 @@ class ListWebAppAndServicesRequest:
     def catalogue(self, catalogue):
         r"""Sets the catalogue of this ListWebAppAndServicesRequest.
 
-        资产类型 - web-app       web应用 - web-service   web服务 - database      数据库
+        资产类型 - web-app：web应用 - web-service：web服务 - database：数据库
 
         :param catalogue: The catalogue of this ListWebAppAndServicesRequest.
         :type catalogue: str
@@ -251,7 +251,7 @@ class ListWebAppAndServicesRequest:
     def host_name(self):
         r"""Gets the host_name of this ListWebAppAndServicesRequest.
 
-        服务器名称(可选).可让用户根据主机名字搜索
+        服务器名称(可选)，可让用户根据主机名字搜索
 
         :return: The host_name of this ListWebAppAndServicesRequest.
         :rtype: str
@@ -262,7 +262,7 @@ class ListWebAppAndServicesRequest:
     def host_name(self, host_name):
         r"""Sets the host_name of this ListWebAppAndServicesRequest.
 
-        服务器名称(可选).可让用户根据主机名字搜索
+        服务器名称(可选)，可让用户根据主机名字搜索
 
         :param host_name: The host_name of this ListWebAppAndServicesRequest.
         :type host_name: str
@@ -273,7 +273,7 @@ class ListWebAppAndServicesRequest:
     def host_id(self):
         r"""Gets the host_id of this ListWebAppAndServicesRequest.
 
-        服务器id(可选).可让用户根据主机id搜索
+        服务器id(可选)，可让用户根据主机id搜索
 
         :return: The host_id of this ListWebAppAndServicesRequest.
         :rtype: str
@@ -284,7 +284,7 @@ class ListWebAppAndServicesRequest:
     def host_id(self, host_id):
         r"""Sets the host_id of this ListWebAppAndServicesRequest.
 
-        服务器id(可选).可让用户根据主机id搜索
+        服务器id(可选)，可让用户根据主机id搜索
 
         :param host_id: The host_id of this ListWebAppAndServicesRequest.
         :type host_id: str
@@ -295,7 +295,7 @@ class ListWebAppAndServicesRequest:
     def host_ip(self):
         r"""Gets the host_ip of this ListWebAppAndServicesRequest.
 
-        服务器ip(可选).可让用户根据主机ip搜索
+        服务器ip(可选)，可让用户根据主机ip搜索
 
         :return: The host_ip of this ListWebAppAndServicesRequest.
         :rtype: str
@@ -306,7 +306,7 @@ class ListWebAppAndServicesRequest:
     def host_ip(self, host_ip):
         r"""Sets the host_ip of this ListWebAppAndServicesRequest.
 
-        服务器ip(可选).可让用户根据主机ip搜索
+        服务器ip(可选)，可让用户根据主机ip搜索
 
         :param host_ip: The host_ip of this ListWebAppAndServicesRequest.
         :type host_ip: str
@@ -317,7 +317,7 @@ class ListWebAppAndServicesRequest:
     def version(self):
         r"""Gets the version of this ListWebAppAndServicesRequest.
 
-        WebAppAndService资产版本.可让用户根据版本搜索
+        WebAppAndService资产版本，可让用户根据版本搜索
 
         :return: The version of this ListWebAppAndServicesRequest.
         :rtype: str
@@ -328,7 +328,7 @@ class ListWebAppAndServicesRequest:
     def version(self, version):
         r"""Sets the version of this ListWebAppAndServicesRequest.
 
-        WebAppAndService资产版本.可让用户根据版本搜索
+        WebAppAndService资产版本，可让用户根据版本搜索
 
         :param version: The version of this ListWebAppAndServicesRequest.
         :type version: str
@@ -339,7 +339,7 @@ class ListWebAppAndServicesRequest:
     def install_dir(self):
         r"""Gets the install_dir of this ListWebAppAndServicesRequest.
 
-        WebAppAndService资产安装目录.可让用户根据安装目录搜索
+        WebAppAndService资产安装目录，可让用户根据安装目录搜索
 
         :return: The install_dir of this ListWebAppAndServicesRequest.
         :rtype: str
@@ -350,7 +350,7 @@ class ListWebAppAndServicesRequest:
     def install_dir(self, install_dir):
         r"""Sets the install_dir of this ListWebAppAndServicesRequest.
 
-        WebAppAndService资产安装目录.可让用户根据安装目录搜索
+        WebAppAndService资产安装目录，可让用户根据安装目录搜索
 
         :param install_dir: The install_dir of this ListWebAppAndServicesRequest.
         :type install_dir: str

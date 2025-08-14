@@ -65,7 +65,7 @@ class ListClusterEventLogsRequest:
         :type namespace: str
         :param event_name: 事件名称
         :type event_name: str
-        :param event_type: 事件类型，包含以下几种： - Warning 警告事件 - Normal 普通事件
+        :param event_type: 事件类型，包含以下几种： - Warning：警告事件 - Normal：普通事件
         :type event_type: str
         :param resource_type: 产生事件的资源类型
         :type resource_type: str
@@ -241,7 +241,7 @@ class ListClusterEventLogsRequest:
     def event_type(self):
         r"""Gets the event_type of this ListClusterEventLogsRequest.
 
-        事件类型，包含以下几种： - Warning 警告事件 - Normal 普通事件
+        事件类型，包含以下几种： - Warning：警告事件 - Normal：普通事件
 
         :return: The event_type of this ListClusterEventLogsRequest.
         :rtype: str
@@ -252,7 +252,7 @@ class ListClusterEventLogsRequest:
     def event_type(self, event_type):
         r"""Sets the event_type of this ListClusterEventLogsRequest.
 
-        事件类型，包含以下几种： - Warning 警告事件 - Normal 普通事件
+        事件类型，包含以下几种： - Warning：警告事件 - Normal：普通事件
 
         :param event_type: The event_type of this ListClusterEventLogsRequest.
         :type event_type: str

@@ -75,7 +75,7 @@ class AppWhitelistPolicyProcessResponseInfo:
         :type file_signer: str
         :param process_type: **参数解释**： 进程类型 **约束限制**: 不涉及 **取值范围**: - 1：系统程序 - 2：解释类程序 - 3：普通可执行程序 
         :type process_type: int
-        :param os_type: 操作系统类型，包含如下2种。   - Linux ：Linux。   - Windows ：Windows。
+        :param os_type: **参数解释**： 操作系统类型 **取值范围**： - Linux：Linux。 - Windows：Windows。 
         :type os_type: str
         :param app_type: **参数解释**： 应用类型 **约束限制**： 不涉及 
         :type app_type: str
@@ -341,7 +341,7 @@ class AppWhitelistPolicyProcessResponseInfo:
     def os_type(self):
         r"""Gets the os_type of this AppWhitelistPolicyProcessResponseInfo.
 
-        操作系统类型，包含如下2种。   - Linux ：Linux。   - Windows ：Windows。
+        **参数解释**： 操作系统类型 **取值范围**： - Linux：Linux。 - Windows：Windows。 
 
         :return: The os_type of this AppWhitelistPolicyProcessResponseInfo.
         :rtype: str
@@ -352,7 +352,7 @@ class AppWhitelistPolicyProcessResponseInfo:
     def os_type(self, os_type):
         r"""Sets the os_type of this AppWhitelistPolicyProcessResponseInfo.
 
-        操作系统类型，包含如下2种。   - Linux ：Linux。   - Windows ：Windows。
+        **参数解释**： 操作系统类型 **取值范围**： - Linux：Linux。 - Windows：Windows。 
 
         :param os_type: The os_type of this AppWhitelistPolicyProcessResponseInfo.
         :type os_type: str

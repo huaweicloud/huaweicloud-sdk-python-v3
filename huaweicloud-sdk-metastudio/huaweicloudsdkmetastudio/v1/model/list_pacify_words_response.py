@@ -38,9 +38,9 @@ class ListPacifyWordsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param offset: 与第一条数据的偏移量
+        :param offset: 页面起始页,从0开始
         :type offset: int
-        :param limit: 页面大小
+        :param limit: 每页显示的条目数量
         :type limit: int
         :param count: 总数量
         :type count: int
@@ -74,7 +74,7 @@ class ListPacifyWordsResponse(SdkResponse):
     def offset(self):
         r"""Gets the offset of this ListPacifyWordsResponse.
 
-        与第一条数据的偏移量
+        页面起始页,从0开始
 
         :return: The offset of this ListPacifyWordsResponse.
         :rtype: int
@@ -85,7 +85,7 @@ class ListPacifyWordsResponse(SdkResponse):
     def offset(self, offset):
         r"""Sets the offset of this ListPacifyWordsResponse.
 
-        与第一条数据的偏移量
+        页面起始页,从0开始
 
         :param offset: The offset of this ListPacifyWordsResponse.
         :type offset: int
@@ -96,7 +96,7 @@ class ListPacifyWordsResponse(SdkResponse):
     def limit(self):
         r"""Gets the limit of this ListPacifyWordsResponse.
 
-        页面大小
+        每页显示的条目数量
 
         :return: The limit of this ListPacifyWordsResponse.
         :rtype: int
@@ -107,7 +107,7 @@ class ListPacifyWordsResponse(SdkResponse):
     def limit(self, limit):
         r"""Sets the limit of this ListPacifyWordsResponse.
 
-        页面大小
+        每页显示的条目数量
 
         :param limit: The limit of this ListPacifyWordsResponse.
         :type limit: int

@@ -20,6 +20,7 @@ class ListEventDetailResponse(SdkResponse):
     openapi_types = {
         'event_name': 'str',
         'event_type': 'str',
+        'sub_event_type': 'str',
         'event_users': 'list[str]',
         'event_sources': 'list[str]',
         'event_info': 'list[EventInfoDetail]',
@@ -29,13 +30,14 @@ class ListEventDetailResponse(SdkResponse):
     attribute_map = {
         'event_name': 'event_name',
         'event_type': 'event_type',
+        'sub_event_type': 'sub_event_type',
         'event_users': 'event_users',
         'event_sources': 'event_sources',
         'event_info': 'event_info',
         'meta_data': 'meta_data'
     }
 
-    def __init__(self, event_name=None, event_type=None, event_users=None, event_sources=None, event_info=None, meta_data=None):
+    def __init__(self, event_name=None, event_type=None, sub_event_type=None, event_users=None, event_sources=None, event_info=None, meta_data=None):
         r"""ListEventDetailResponse
 
         The model defined in huaweicloud sdk
@@ -44,6 +46,8 @@ class ListEventDetailResponse(SdkResponse):
         :type event_name: str
         :param event_type: 事件类型，值为EVENT.SYS或EVENT.CUSTOM，EVENT.SYS表示系统事件，EVENT.CUSTOM表示自定义事件。
         :type event_type: str
+        :param sub_event_type: 事件子类。 枚举类型：SUB_EVENT.OPS为运维事件，SUB_EVENT.PLAN为计划事件，SUB_EVENT.CUSTOM为自定义事件。
+        :type sub_event_type: str
         :param event_users: 上报事件时用户的名称，也可能为projectID。
         :type event_users: list[str]
         :param event_sources: 事件来源，如果是系统事件则值为各服务的命名空间，各服务的命名空间可查看：“[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”；如果是自定义事件，则为用户自定义上报定义。
@@ -58,6 +62,7 @@ class ListEventDetailResponse(SdkResponse):
 
         self._event_name = None
         self._event_type = None
+        self._sub_event_type = None
         self._event_users = None
         self._event_sources = None
         self._event_info = None
@@ -68,6 +73,8 @@ class ListEventDetailResponse(SdkResponse):
             self.event_name = event_name
         if event_type is not None:
             self.event_type = event_type
+        if sub_event_type is not None:
+            self.sub_event_type = sub_event_type
         if event_users is not None:
             self.event_users = event_users
         if event_sources is not None:
@@ -120,6 +127,28 @@ class ListEventDetailResponse(SdkResponse):
         :type event_type: str
         """
         self._event_type = event_type
+
+    @property
+    def sub_event_type(self):
+        r"""Gets the sub_event_type of this ListEventDetailResponse.
+
+        事件子类。 枚举类型：SUB_EVENT.OPS为运维事件，SUB_EVENT.PLAN为计划事件，SUB_EVENT.CUSTOM为自定义事件。
+
+        :return: The sub_event_type of this ListEventDetailResponse.
+        :rtype: str
+        """
+        return self._sub_event_type
+
+    @sub_event_type.setter
+    def sub_event_type(self, sub_event_type):
+        r"""Sets the sub_event_type of this ListEventDetailResponse.
+
+        事件子类。 枚举类型：SUB_EVENT.OPS为运维事件，SUB_EVENT.PLAN为计划事件，SUB_EVENT.CUSTOM为自定义事件。
+
+        :param sub_event_type: The sub_event_type of this ListEventDetailResponse.
+        :type sub_event_type: str
+        """
+        self._sub_event_type = sub_event_type
 
     @property
     def event_users(self):

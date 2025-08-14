@@ -53,7 +53,7 @@ class ListBaselineWhiteListsRequest:
         :type check_rule_name: str
         :param os_type: 基线检查的操作系统 - Linux - Windows
         :type os_type: str
-        :param rule_type: 基线检查白名单的规则范围 - specific_host 部分主机 - all_host      全部主机
+        :param rule_type: 基线检查白名单的规则范围 - specific_host：部分主机 - all_host：全部主机
         :type rule_type: str
         :param tag: 基线检查中检查项的检查类型 - 访问控制 - 服务配置
         :type tag: str
@@ -202,7 +202,7 @@ class ListBaselineWhiteListsRequest:
     def rule_type(self):
         r"""Gets the rule_type of this ListBaselineWhiteListsRequest.
 
-        基线检查白名单的规则范围 - specific_host 部分主机 - all_host      全部主机
+        基线检查白名单的规则范围 - specific_host：部分主机 - all_host：全部主机
 
         :return: The rule_type of this ListBaselineWhiteListsRequest.
         :rtype: str
@@ -213,7 +213,7 @@ class ListBaselineWhiteListsRequest:
     def rule_type(self, rule_type):
         r"""Sets the rule_type of this ListBaselineWhiteListsRequest.
 
-        基线检查白名单的规则范围 - specific_host 部分主机 - all_host      全部主机
+        基线检查白名单的规则范围 - specific_host：部分主机 - all_host：全部主机
 
         :param rule_type: The rule_type of this ListBaselineWhiteListsRequest.
         :type rule_type: str

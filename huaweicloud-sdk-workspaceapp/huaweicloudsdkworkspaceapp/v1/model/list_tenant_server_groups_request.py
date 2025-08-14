@@ -37,9 +37,9 @@ class ListTenantServerGroupsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param offset: 查询的偏移量。
+        :param offset: 查询的偏移量，默认值0。
         :type offset: int
-        :param limit: 查询的数量，值区间[1-100]。
+        :param limit: 查询的数量，值区间[1-100]，默认值10。
         :type limit: int
         :param sever_group_name: 服务器组名称。
         :type sever_group_name: str
@@ -73,7 +73,7 @@ class ListTenantServerGroupsRequest:
     def offset(self):
         r"""Gets the offset of this ListTenantServerGroupsRequest.
 
-        查询的偏移量。
+        查询的偏移量，默认值0。
 
         :return: The offset of this ListTenantServerGroupsRequest.
         :rtype: int
@@ -84,7 +84,7 @@ class ListTenantServerGroupsRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListTenantServerGroupsRequest.
 
-        查询的偏移量。
+        查询的偏移量，默认值0。
 
         :param offset: The offset of this ListTenantServerGroupsRequest.
         :type offset: int
@@ -95,7 +95,7 @@ class ListTenantServerGroupsRequest:
     def limit(self):
         r"""Gets the limit of this ListTenantServerGroupsRequest.
 
-        查询的数量，值区间[1-100]。
+        查询的数量，值区间[1-100]，默认值10。
 
         :return: The limit of this ListTenantServerGroupsRequest.
         :rtype: int
@@ -106,7 +106,7 @@ class ListTenantServerGroupsRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListTenantServerGroupsRequest.
 
-        查询的数量，值区间[1-100]。
+        查询的数量，值区间[1-100]，默认值10。
 
         :param limit: The limit of this ListTenantServerGroupsRequest.
         :type limit: int

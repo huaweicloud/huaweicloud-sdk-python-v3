@@ -53,7 +53,7 @@ class ChangeAppWhitelistPolicyRequestInfo:
         :type policy_id: str
         :param policy_name: 策略名称
         :type policy_name: str
-        :param policy_type: **参数解释**： 进程白名单策略类型进程白名单策略类型 **取值范围**: - allow：允许指定/授权进程运行 - block：阻止潜在恶意软件运行 
+        :param policy_type: **参数解释**： 进程白名单策略类型 **取值范围**: - allow：允许指定/授权进程运行 - block：阻止潜在恶意软件运行 
         :type policy_type: str
         :param learning_days: **参数解释**: 策略学习天数 **取值范围**: 最小值1，最大值1000 
         :type learning_days: int
@@ -151,7 +151,7 @@ class ChangeAppWhitelistPolicyRequestInfo:
     def policy_type(self):
         r"""Gets the policy_type of this ChangeAppWhitelistPolicyRequestInfo.
 
-        **参数解释**： 进程白名单策略类型进程白名单策略类型 **取值范围**: - allow：允许指定/授权进程运行 - block：阻止潜在恶意软件运行 
+        **参数解释**： 进程白名单策略类型 **取值范围**: - allow：允许指定/授权进程运行 - block：阻止潜在恶意软件运行 
 
         :return: The policy_type of this ChangeAppWhitelistPolicyRequestInfo.
         :rtype: str
@@ -162,7 +162,7 @@ class ChangeAppWhitelistPolicyRequestInfo:
     def policy_type(self, policy_type):
         r"""Sets the policy_type of this ChangeAppWhitelistPolicyRequestInfo.
 
-        **参数解释**： 进程白名单策略类型进程白名单策略类型 **取值范围**: - allow：允许指定/授权进程运行 - block：阻止潜在恶意软件运行 
+        **参数解释**： 进程白名单策略类型 **取值范围**: - allow：允许指定/授权进程运行 - block：阻止潜在恶意软件运行 
 
         :param policy_type: The policy_type of this ChangeAppWhitelistPolicyRequestInfo.
         :type policy_type: str

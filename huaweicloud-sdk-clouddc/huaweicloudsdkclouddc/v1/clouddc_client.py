@@ -55,7 +55,7 @@ class CloudDCClient(Client):
     def _batch_create_irack_tags_http_info(cls, request):
         http_info = {
             "method": "POST",
-            "resource_path": "/v1/{project_id}/irack/{id}/tags/create",
+            "resource_path": "/v1/{project_id}/iracks/{id}/tags/create",
             "request_type": request.__class__.__name__,
             "response_type": "BatchCreateIrackTagsResponse"
             }
@@ -191,7 +191,7 @@ class CloudDCClient(Client):
     def _batch_delete_irack_tags_http_info(cls, request):
         http_info = {
             "method": "POST",
-            "resource_path": "/v1/{project_id}/irack/{id}/tags/delete",
+            "resource_path": "/v1/{project_id}/iracks/{id}/tags/delete",
             "request_type": request.__class__.__name__,
             "response_type": "BatchDeleteIrackTagsResponse"
             }

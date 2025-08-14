@@ -38,7 +38,7 @@ class CreateTagResourceRequest:
 
         :param x_security_token: 如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
         :type x_security_token: str
-        :param resource_type: 资源类型 identitycenter:permissionset（权限集）
+        :param resource_type: 资源类型 identitycenter:permissionset权限集
         :type resource_type: str
         :param resource_id: 权限集的唯一标识符（ID）。
         :type resource_id: str
@@ -87,7 +87,7 @@ class CreateTagResourceRequest:
     def resource_type(self):
         r"""Gets the resource_type of this CreateTagResourceRequest.
 
-        资源类型 identitycenter:permissionset（权限集）
+        资源类型 identitycenter:permissionset权限集
 
         :return: The resource_type of this CreateTagResourceRequest.
         :rtype: str
@@ -98,7 +98,7 @@ class CreateTagResourceRequest:
     def resource_type(self, resource_type):
         r"""Sets the resource_type of this CreateTagResourceRequest.
 
-        资源类型 identitycenter:permissionset（权限集）
+        资源类型 identitycenter:permissionset权限集
 
         :param resource_type: The resource_type of this CreateTagResourceRequest.
         :type resource_type: str

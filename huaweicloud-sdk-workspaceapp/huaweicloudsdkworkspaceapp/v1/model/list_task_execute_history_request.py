@@ -35,9 +35,9 @@ class ListTaskExecuteHistoryRequest:
 
         :param task_id: 定时任务唯一标识。
         :type task_id: str
-        :param offset: 查询的偏移量。
+        :param offset: 查询的偏移量，默认值0。
         :type offset: int
-        :param limit: 查询的数量，值区间[1-100]。
+        :param limit: 查询的数量，值区间[1-100]，默认值10。
         :type limit: int
         """
         
@@ -80,7 +80,7 @@ class ListTaskExecuteHistoryRequest:
     def offset(self):
         r"""Gets the offset of this ListTaskExecuteHistoryRequest.
 
-        查询的偏移量。
+        查询的偏移量，默认值0。
 
         :return: The offset of this ListTaskExecuteHistoryRequest.
         :rtype: int
@@ -91,7 +91,7 @@ class ListTaskExecuteHistoryRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListTaskExecuteHistoryRequest.
 
-        查询的偏移量。
+        查询的偏移量，默认值0。
 
         :param offset: The offset of this ListTaskExecuteHistoryRequest.
         :type offset: int
@@ -102,7 +102,7 @@ class ListTaskExecuteHistoryRequest:
     def limit(self):
         r"""Gets the limit of this ListTaskExecuteHistoryRequest.
 
-        查询的数量，值区间[1-100]。
+        查询的数量，值区间[1-100]，默认值10。
 
         :return: The limit of this ListTaskExecuteHistoryRequest.
         :rtype: int
@@ -113,7 +113,7 @@ class ListTaskExecuteHistoryRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListTaskExecuteHistoryRequest.
 
-        查询的数量，值区间[1-100]。
+        查询的数量，值区间[1-100]，默认值10。
 
         :param limit: The limit of this ListTaskExecuteHistoryRequest.
         :type limit: int

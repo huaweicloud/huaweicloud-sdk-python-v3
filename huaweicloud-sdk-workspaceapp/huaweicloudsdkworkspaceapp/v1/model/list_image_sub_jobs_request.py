@@ -41,9 +41,9 @@ class ListImageSubJobsRequest:
         :type status: str
         :param job_type: job类型： * &#x60;CREATE_SERVER&#x60; - 创建镜像实例 * &#x60;CREATE_SERVER_IMAGE&#x60; - 构建镜像 * &#x60;DELETE_SERVER&#x60; - 删除镜像实例
         :type job_type: str
-        :param offset: 查询的偏移量。
+        :param offset: 查询的偏移量，默认值0。
         :type offset: int
-        :param limit: 查询的数量，值区间[1-100]。
+        :param limit: 查询的数量，值区间[1-100]，默认值10。
         :type limit: int
         :param job_id: 任务ID。
         :type job_id: str
@@ -116,7 +116,7 @@ class ListImageSubJobsRequest:
     def offset(self):
         r"""Gets the offset of this ListImageSubJobsRequest.
 
-        查询的偏移量。
+        查询的偏移量，默认值0。
 
         :return: The offset of this ListImageSubJobsRequest.
         :rtype: int
@@ -127,7 +127,7 @@ class ListImageSubJobsRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListImageSubJobsRequest.
 
-        查询的偏移量。
+        查询的偏移量，默认值0。
 
         :param offset: The offset of this ListImageSubJobsRequest.
         :type offset: int
@@ -138,7 +138,7 @@ class ListImageSubJobsRequest:
     def limit(self):
         r"""Gets the limit of this ListImageSubJobsRequest.
 
-        查询的数量，值区间[1-100]。
+        查询的数量，值区间[1-100]，默认值10。
 
         :return: The limit of this ListImageSubJobsRequest.
         :rtype: int
@@ -149,7 +149,7 @@ class ListImageSubJobsRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListImageSubJobsRequest.
 
-        查询的数量，值区间[1-100]。
+        查询的数量，值区间[1-100]，默认值10。
 
         :param limit: The limit of this ListImageSubJobsRequest.
         :type limit: int

@@ -61,7 +61,7 @@ class ServerHdaUpgradeRecord:
         :type target_version: str
         :param upgrade_status: HDA升级状态。
         :type upgrade_status: str
-        :param upgrade_time: 更新时间
+        :param upgrade_time: 更新时间。
         :type upgrade_time: str
         """
         
@@ -277,7 +277,7 @@ class ServerHdaUpgradeRecord:
     def upgrade_time(self):
         r"""Gets the upgrade_time of this ServerHdaUpgradeRecord.
 
-        更新时间
+        更新时间。
 
         :return: The upgrade_time of this ServerHdaUpgradeRecord.
         :rtype: str
@@ -288,7 +288,7 @@ class ServerHdaUpgradeRecord:
     def upgrade_time(self, upgrade_time):
         r"""Sets the upgrade_time of this ServerHdaUpgradeRecord.
 
-        更新时间
+        更新时间。
 
         :param upgrade_time: The upgrade_time of this ServerHdaUpgradeRecord.
         :type upgrade_time: str

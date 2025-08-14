@@ -20,17 +20,19 @@ class DebugCaseRequestBody:
         'status': 'int',
         'cluster_id': 'int',
         'cluster_type': 'str',
-        'without_package': 'int'
+        'without_package': 'int',
+        'type': 'int'
     }
 
     attribute_map = {
         'status': 'status',
         'cluster_id': 'cluster_id',
         'cluster_type': 'cluster_type',
-        'without_package': 'without_package'
+        'without_package': 'without_package',
+        'type': 'type'
     }
 
-    def __init__(self, status=None, cluster_id=None, cluster_type=None, without_package=None):
+    def __init__(self, status=None, cluster_id=None, cluster_type=None, without_package=None, type=None):
         r"""DebugCaseRequestBody
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class DebugCaseRequestBody:
         :type cluster_type: str
         :param without_package: 套餐包VUM不足的情况下用户选择是不是要走按需计费模式（当前版本固定值：0）
         :type without_package: int
+        :param type: 类型（0：事务（默认）；1：用例）
+        :type type: int
         """
         
         
@@ -51,12 +55,15 @@ class DebugCaseRequestBody:
         self._cluster_id = None
         self._cluster_type = None
         self._without_package = None
+        self._type = None
         self.discriminator = None
 
         self.status = status
         self.cluster_id = cluster_id
         self.cluster_type = cluster_type
         self.without_package = without_package
+        if type is not None:
+            self.type = type
 
     @property
     def status(self):
@@ -145,6 +152,28 @@ class DebugCaseRequestBody:
         :type without_package: int
         """
         self._without_package = without_package
+
+    @property
+    def type(self):
+        r"""Gets the type of this DebugCaseRequestBody.
+
+        类型（0：事务（默认）；1：用例）
+
+        :return: The type of this DebugCaseRequestBody.
+        :rtype: int
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        r"""Sets the type of this DebugCaseRequestBody.
+
+        类型（0：事务（默认）；1：用例）
+
+        :param type: The type of this DebugCaseRequestBody.
+        :type type: int
+        """
+        self._type = type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

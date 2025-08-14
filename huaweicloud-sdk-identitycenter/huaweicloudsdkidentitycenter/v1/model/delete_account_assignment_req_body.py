@@ -43,7 +43,7 @@ class DeleteAccountAssignmentReqBody:
         :type principal_id: str
         :param principal_type: 实体类型.
         :type principal_type: str
-        :param target_id: 目标账号身份标识
+        :param target_id: 目标账户身份标识
         :type target_id: str
         :param target_type: 目标类型.
         :type target_type: str
@@ -134,7 +134,7 @@ class DeleteAccountAssignmentReqBody:
     def target_id(self):
         r"""Gets the target_id of this DeleteAccountAssignmentReqBody.
 
-        目标账号身份标识
+        目标账户身份标识
 
         :return: The target_id of this DeleteAccountAssignmentReqBody.
         :rtype: str
@@ -145,7 +145,7 @@ class DeleteAccountAssignmentReqBody:
     def target_id(self, target_id):
         r"""Sets the target_id of this DeleteAccountAssignmentReqBody.
 
-        目标账号身份标识
+        目标账户身份标识
 
         :param target_id: The target_id of this DeleteAccountAssignmentReqBody.
         :type target_id: str

@@ -37,7 +37,7 @@ class EmailDto:
 
         The model defined in huaweicloud sdk
 
-        :param primary: 一个布尔值，表示这是否为用户的主电子邮箱
+        :param primary: 一个布尔值，表示这是否是用户的主电子邮箱
         :type primary: bool
         :param type: 表示电子邮箱类型的字符串
         :type type: str
@@ -65,7 +65,7 @@ class EmailDto:
     def primary(self):
         r"""Gets the primary of this EmailDto.
 
-        一个布尔值，表示这是否为用户的主电子邮箱
+        一个布尔值，表示这是否是用户的主电子邮箱
 
         :return: The primary of this EmailDto.
         :rtype: bool
@@ -76,7 +76,7 @@ class EmailDto:
     def primary(self, primary):
         r"""Sets the primary of this EmailDto.
 
-        一个布尔值，表示这是否为用户的主电子邮箱
+        一个布尔值，表示这是否是用户的主电子邮箱
 
         :param primary: The primary of this EmailDto.
         :type primary: bool

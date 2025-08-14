@@ -35,6 +35,8 @@ class PublishableApp:
         'icon_url': 'str',
         'publishable': 'bool',
         'sandbox_enable': 'bool',
+        'is_pre_boot': 'bool',
+        'app_extended_info': 'AppExtendedInfo',
         'source_image_ids': 'list[str]'
     }
 
@@ -57,10 +59,12 @@ class PublishableApp:
         'icon_url': 'icon_url',
         'publishable': 'publishable',
         'sandbox_enable': 'sandbox_enable',
+        'is_pre_boot': 'is_pre_boot',
+        'app_extended_info': 'app_extended_info',
         'source_image_ids': 'source_image_ids'
     }
 
-    def __init__(self, id=None, name=None, version=None, command_param=None, execute_path=None, work_path=None, icon_path=None, icon_index=None, description=None, app_group_id=None, state=None, tenant_id=None, publish_at=None, source_type=None, publisher=None, icon_url=None, publishable=None, sandbox_enable=None, source_image_ids=None):
+    def __init__(self, id=None, name=None, version=None, command_param=None, execute_path=None, work_path=None, icon_path=None, icon_index=None, description=None, app_group_id=None, state=None, tenant_id=None, publish_at=None, source_type=None, publisher=None, icon_url=None, publishable=None, sandbox_enable=None, is_pre_boot=None, app_extended_info=None, source_image_ids=None):
         r"""PublishableApp
 
         The model defined in huaweicloud sdk
@@ -101,6 +105,10 @@ class PublishableApp:
         :type publishable: bool
         :param sandbox_enable: 是否使用沙箱模式运行，取值为： - false: 表示不以沙箱模式运行。 - true: 表示以沙箱模式运行。
         :type sandbox_enable: bool
+        :param is_pre_boot: 是否开启应用预开，取值为： - false: 表示关闭应用预开。 - true: 表示开启应用预开。
+        :type is_pre_boot: bool
+        :param app_extended_info: 
+        :type app_extended_info: :class:`huaweicloudsdkworkspaceapp.v1.AppExtendedInfo`
         :param source_image_ids: 镜像ids。
         :type source_image_ids: list[str]
         """
@@ -125,6 +133,8 @@ class PublishableApp:
         self._icon_url = None
         self._publishable = None
         self._sandbox_enable = None
+        self._is_pre_boot = None
+        self._app_extended_info = None
         self._source_image_ids = None
         self.discriminator = None
 
@@ -164,6 +174,10 @@ class PublishableApp:
             self.publishable = publishable
         if sandbox_enable is not None:
             self.sandbox_enable = sandbox_enable
+        if is_pre_boot is not None:
+            self.is_pre_boot = is_pre_boot
+        if app_extended_info is not None:
+            self.app_extended_info = app_extended_info
         if source_image_ids is not None:
             self.source_image_ids = source_image_ids
 
@@ -558,6 +572,46 @@ class PublishableApp:
         :type sandbox_enable: bool
         """
         self._sandbox_enable = sandbox_enable
+
+    @property
+    def is_pre_boot(self):
+        r"""Gets the is_pre_boot of this PublishableApp.
+
+        是否开启应用预开，取值为： - false: 表示关闭应用预开。 - true: 表示开启应用预开。
+
+        :return: The is_pre_boot of this PublishableApp.
+        :rtype: bool
+        """
+        return self._is_pre_boot
+
+    @is_pre_boot.setter
+    def is_pre_boot(self, is_pre_boot):
+        r"""Sets the is_pre_boot of this PublishableApp.
+
+        是否开启应用预开，取值为： - false: 表示关闭应用预开。 - true: 表示开启应用预开。
+
+        :param is_pre_boot: The is_pre_boot of this PublishableApp.
+        :type is_pre_boot: bool
+        """
+        self._is_pre_boot = is_pre_boot
+
+    @property
+    def app_extended_info(self):
+        r"""Gets the app_extended_info of this PublishableApp.
+
+        :return: The app_extended_info of this PublishableApp.
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.AppExtendedInfo`
+        """
+        return self._app_extended_info
+
+    @app_extended_info.setter
+    def app_extended_info(self, app_extended_info):
+        r"""Sets the app_extended_info of this PublishableApp.
+
+        :param app_extended_info: The app_extended_info of this PublishableApp.
+        :type app_extended_info: :class:`huaweicloudsdkworkspaceapp.v1.AppExtendedInfo`
+        """
+        self._app_extended_info = app_extended_info
 
     @property
     def source_image_ids(self):

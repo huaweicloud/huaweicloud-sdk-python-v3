@@ -39,7 +39,7 @@ class PermissionSetProvisioningStatusDto:
 
         The model defined in huaweicloud sdk
 
-        :param account_id: 账号的唯一身份标识
+        :param account_id: 指定账户的唯一身份标识.
         :type account_id: str
         :param created_date: 权限集创建日期
         :type created_date: str
@@ -80,7 +80,7 @@ class PermissionSetProvisioningStatusDto:
     def account_id(self):
         r"""Gets the account_id of this PermissionSetProvisioningStatusDto.
 
-        账号的唯一身份标识
+        指定账户的唯一身份标识.
 
         :return: The account_id of this PermissionSetProvisioningStatusDto.
         :rtype: str
@@ -91,7 +91,7 @@ class PermissionSetProvisioningStatusDto:
     def account_id(self, account_id):
         r"""Sets the account_id of this PermissionSetProvisioningStatusDto.
 
-        账号的唯一身份标识
+        指定账户的唯一身份标识.
 
         :param account_id: The account_id of this PermissionSetProvisioningStatusDto.
         :type account_id: str

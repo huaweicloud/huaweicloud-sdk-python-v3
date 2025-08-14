@@ -31,9 +31,9 @@ class ImageJobResourceInfo:
 
         The model defined in huaweicloud sdk
 
-        :param resource_id: 资源ID
+        :param resource_id: 资源ID。
         :type resource_id: str
-        :param resource_name: 产物名称，或者被操作资源名称
+        :param resource_name: 产物名称，或者被操作资源名称。
         :type resource_name: str
         """
         
@@ -52,7 +52,7 @@ class ImageJobResourceInfo:
     def resource_id(self):
         r"""Gets the resource_id of this ImageJobResourceInfo.
 
-        资源ID
+        资源ID。
 
         :return: The resource_id of this ImageJobResourceInfo.
         :rtype: str
@@ -63,7 +63,7 @@ class ImageJobResourceInfo:
     def resource_id(self, resource_id):
         r"""Sets the resource_id of this ImageJobResourceInfo.
 
-        资源ID
+        资源ID。
 
         :param resource_id: The resource_id of this ImageJobResourceInfo.
         :type resource_id: str
@@ -74,7 +74,7 @@ class ImageJobResourceInfo:
     def resource_name(self):
         r"""Gets the resource_name of this ImageJobResourceInfo.
 
-        产物名称，或者被操作资源名称
+        产物名称，或者被操作资源名称。
 
         :return: The resource_name of this ImageJobResourceInfo.
         :rtype: str
@@ -85,7 +85,7 @@ class ImageJobResourceInfo:
     def resource_name(self, resource_name):
         r"""Sets the resource_name of this ImageJobResourceInfo.
 
-        产物名称，或者被操作资源名称
+        产物名称，或者被操作资源名称。
 
         :param resource_name: The resource_name of this ImageJobResourceInfo.
         :type resource_name: str

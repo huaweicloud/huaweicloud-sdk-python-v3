@@ -137,7 +137,7 @@ class AppSession:
         :type failed_code: str
         :param last_update_status_time: 状态最后变化时间。
         :type last_update_status_time: str
-        :param tenant_id: 租户ID
+        :param tenant_id: 租户ID。
         :type tenant_id: str
         """
         
@@ -828,7 +828,7 @@ class AppSession:
     def tenant_id(self):
         r"""Gets the tenant_id of this AppSession.
 
-        租户ID
+        租户ID。
 
         :return: The tenant_id of this AppSession.
         :rtype: str
@@ -839,7 +839,7 @@ class AppSession:
     def tenant_id(self, tenant_id):
         r"""Sets the tenant_id of this AppSession.
 
-        租户ID
+        租户ID。
 
         :param tenant_id: The tenant_id of this AppSession.
         :type tenant_id: str

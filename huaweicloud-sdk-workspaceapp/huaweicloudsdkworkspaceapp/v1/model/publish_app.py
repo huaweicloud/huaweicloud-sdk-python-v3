@@ -29,7 +29,8 @@ class PublishApp:
         'source_type': 'int',
         'publisher': 'str',
         'source_image_ids': 'list[str]',
-        'sandbox_enable': 'bool'
+        'sandbox_enable': 'bool',
+        'app_extended_info': 'AppExtendedInfo'
     }
 
     attribute_map = {
@@ -45,10 +46,11 @@ class PublishApp:
         'source_type': 'source_type',
         'publisher': 'publisher',
         'source_image_ids': 'source_image_ids',
-        'sandbox_enable': 'sandbox_enable'
+        'sandbox_enable': 'sandbox_enable',
+        'app_extended_info': 'app_extended_info'
     }
 
-    def __init__(self, name=None, version=None, command_param=None, icon_uri=None, execute_path=None, work_path=None, icon_path=None, icon_index=None, description=None, source_type=None, publisher=None, source_image_ids=None, sandbox_enable=None):
+    def __init__(self, name=None, version=None, command_param=None, icon_uri=None, execute_path=None, work_path=None, icon_path=None, icon_index=None, description=None, source_type=None, publisher=None, source_image_ids=None, sandbox_enable=None, app_extended_info=None):
         r"""PublishApp
 
         The model defined in huaweicloud sdk
@@ -79,6 +81,8 @@ class PublishApp:
         :type source_image_ids: list[str]
         :param sandbox_enable: 是否使用沙箱模式运行，取值为： - false: 表示不以沙箱模式运行。 - true: 表示以沙箱模式运行。
         :type sandbox_enable: bool
+        :param app_extended_info: 
+        :type app_extended_info: :class:`huaweicloudsdkworkspaceapp.v1.AppExtendedInfo`
         """
         
         
@@ -96,6 +100,7 @@ class PublishApp:
         self._publisher = None
         self._source_image_ids = None
         self._sandbox_enable = None
+        self._app_extended_info = None
         self.discriminator = None
 
         self.name = name
@@ -121,6 +126,8 @@ class PublishApp:
             self.source_image_ids = source_image_ids
         if sandbox_enable is not None:
             self.sandbox_enable = sandbox_enable
+        if app_extended_info is not None:
+            self.app_extended_info = app_extended_info
 
     @property
     def name(self):
@@ -407,6 +414,24 @@ class PublishApp:
         :type sandbox_enable: bool
         """
         self._sandbox_enable = sandbox_enable
+
+    @property
+    def app_extended_info(self):
+        r"""Gets the app_extended_info of this PublishApp.
+
+        :return: The app_extended_info of this PublishApp.
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.AppExtendedInfo`
+        """
+        return self._app_extended_info
+
+    @app_extended_info.setter
+    def app_extended_info(self, app_extended_info):
+        r"""Sets the app_extended_info of this PublishApp.
+
+        :param app_extended_info: The app_extended_info of this PublishApp.
+        :type app_extended_info: :class:`huaweicloudsdkworkspaceapp.v1.AppExtendedInfo`
+        """
+        self._app_extended_info = app_extended_info
 
     def to_dict(self):
         """Returns the model properties as a dict"""

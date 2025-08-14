@@ -45,23 +45,23 @@ class ListProtectionServerRequest:
 
         The model defined in huaweicloud sdk
 
-        :param region: Region ID
+        :param region: **参数解释**: 区域ID，用于查询目的区域内的资产。获取方式请参见[获取区域ID](hss_02_0026.xml)。 **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
         :type region: str
-        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
+        :param enterprise_project_id: **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
         :type enterprise_project_id: str
-        :param offset: 偏移量：指定返回记录的开始位置
+        :param offset: **参数解释**: 指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 取值0-2000000 **默认取值**: 0 
         :type offset: int
-        :param limit: 每页显示个数
+        :param limit: **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
         :type limit: int
-        :param host_name: 服务器名称
+        :param host_name: **参数解释**: 服务器名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
         :type host_name: str
-        :param os_type: 操作系统类型，包含如下2种。   - Linux ：Linux。   - Windows ：Windows。
+        :param os_type: **参数解释**: 操作系统类型 **约束限制**: 不涉及 **取值范围**: 包含如下2种。   - Linux ：Linux。   - Windows ：Windows。 字符长度0-64 **默认取值**: 不涉及 
         :type os_type: str
-        :param host_ip: 服务器IP地址
+        :param host_ip: **参数解释**: 服务器IP地址 **约束限制**: 不涉及 **取值范围**: 字符长度0-256 **默认取值**: 不涉及 
         :type host_ip: str
-        :param host_status: 主机状态，包含如下3种。   - 不传参默认为全部。   - ACTIVE ：正在运行。   - SHUTOFF ：关机。
+        :param host_status: **参数解释**: 主机状态 **约束限制**: 不涉及 **取值范围**: 包含如下3种。   - 不传参默认为全部。   - ACTIVE ：正在运行。   - SHUTOFF ：关机。 **默认取值**: 不涉及 
         :type host_status: str
-        :param last_days: 查询时间范围天数，最近7天为last_days&#x3D;7，若不填，则默认查询一天内的防护事件和已有备份数
+        :param last_days: **参数解释**: 查询时间范围天数 **约束限制**: 不涉及 **取值范围**: 长度1-30。若不填，则默认查询一天内的防护事件和已有备份数。 **默认取值**: 不涉及 
         :type last_days: int
         """
         
@@ -101,7 +101,7 @@ class ListProtectionServerRequest:
     def region(self):
         r"""Gets the region of this ListProtectionServerRequest.
 
-        Region ID
+        **参数解释**: 区域ID，用于查询目的区域内的资产。获取方式请参见[获取区域ID](hss_02_0026.xml)。 **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
 
         :return: The region of this ListProtectionServerRequest.
         :rtype: str
@@ -112,7 +112,7 @@ class ListProtectionServerRequest:
     def region(self, region):
         r"""Sets the region of this ListProtectionServerRequest.
 
-        Region ID
+        **参数解释**: 区域ID，用于查询目的区域内的资产。获取方式请参见[获取区域ID](hss_02_0026.xml)。 **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
 
         :param region: The region of this ListProtectionServerRequest.
         :type region: str
@@ -123,7 +123,7 @@ class ListProtectionServerRequest:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this ListProtectionServerRequest.
 
-        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
+        **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
 
         :return: The enterprise_project_id of this ListProtectionServerRequest.
         :rtype: str
@@ -134,7 +134,7 @@ class ListProtectionServerRequest:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this ListProtectionServerRequest.
 
-        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
+        **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
 
         :param enterprise_project_id: The enterprise_project_id of this ListProtectionServerRequest.
         :type enterprise_project_id: str
@@ -145,7 +145,7 @@ class ListProtectionServerRequest:
     def offset(self):
         r"""Gets the offset of this ListProtectionServerRequest.
 
-        偏移量：指定返回记录的开始位置
+        **参数解释**: 指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 取值0-2000000 **默认取值**: 0 
 
         :return: The offset of this ListProtectionServerRequest.
         :rtype: int
@@ -156,7 +156,7 @@ class ListProtectionServerRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListProtectionServerRequest.
 
-        偏移量：指定返回记录的开始位置
+        **参数解释**: 指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 取值0-2000000 **默认取值**: 0 
 
         :param offset: The offset of this ListProtectionServerRequest.
         :type offset: int
@@ -167,7 +167,7 @@ class ListProtectionServerRequest:
     def limit(self):
         r"""Gets the limit of this ListProtectionServerRequest.
 
-        每页显示个数
+        **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
 
         :return: The limit of this ListProtectionServerRequest.
         :rtype: int
@@ -178,7 +178,7 @@ class ListProtectionServerRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListProtectionServerRequest.
 
-        每页显示个数
+        **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
 
         :param limit: The limit of this ListProtectionServerRequest.
         :type limit: int
@@ -189,7 +189,7 @@ class ListProtectionServerRequest:
     def host_name(self):
         r"""Gets the host_name of this ListProtectionServerRequest.
 
-        服务器名称
+        **参数解释**: 服务器名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
 
         :return: The host_name of this ListProtectionServerRequest.
         :rtype: str
@@ -200,7 +200,7 @@ class ListProtectionServerRequest:
     def host_name(self, host_name):
         r"""Sets the host_name of this ListProtectionServerRequest.
 
-        服务器名称
+        **参数解释**: 服务器名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
 
         :param host_name: The host_name of this ListProtectionServerRequest.
         :type host_name: str
@@ -211,7 +211,7 @@ class ListProtectionServerRequest:
     def os_type(self):
         r"""Gets the os_type of this ListProtectionServerRequest.
 
-        操作系统类型，包含如下2种。   - Linux ：Linux。   - Windows ：Windows。
+        **参数解释**: 操作系统类型 **约束限制**: 不涉及 **取值范围**: 包含如下2种。   - Linux ：Linux。   - Windows ：Windows。 字符长度0-64 **默认取值**: 不涉及 
 
         :return: The os_type of this ListProtectionServerRequest.
         :rtype: str
@@ -222,7 +222,7 @@ class ListProtectionServerRequest:
     def os_type(self, os_type):
         r"""Sets the os_type of this ListProtectionServerRequest.
 
-        操作系统类型，包含如下2种。   - Linux ：Linux。   - Windows ：Windows。
+        **参数解释**: 操作系统类型 **约束限制**: 不涉及 **取值范围**: 包含如下2种。   - Linux ：Linux。   - Windows ：Windows。 字符长度0-64 **默认取值**: 不涉及 
 
         :param os_type: The os_type of this ListProtectionServerRequest.
         :type os_type: str
@@ -233,7 +233,7 @@ class ListProtectionServerRequest:
     def host_ip(self):
         r"""Gets the host_ip of this ListProtectionServerRequest.
 
-        服务器IP地址
+        **参数解释**: 服务器IP地址 **约束限制**: 不涉及 **取值范围**: 字符长度0-256 **默认取值**: 不涉及 
 
         :return: The host_ip of this ListProtectionServerRequest.
         :rtype: str
@@ -244,7 +244,7 @@ class ListProtectionServerRequest:
     def host_ip(self, host_ip):
         r"""Sets the host_ip of this ListProtectionServerRequest.
 
-        服务器IP地址
+        **参数解释**: 服务器IP地址 **约束限制**: 不涉及 **取值范围**: 字符长度0-256 **默认取值**: 不涉及 
 
         :param host_ip: The host_ip of this ListProtectionServerRequest.
         :type host_ip: str
@@ -255,7 +255,7 @@ class ListProtectionServerRequest:
     def host_status(self):
         r"""Gets the host_status of this ListProtectionServerRequest.
 
-        主机状态，包含如下3种。   - 不传参默认为全部。   - ACTIVE ：正在运行。   - SHUTOFF ：关机。
+        **参数解释**: 主机状态 **约束限制**: 不涉及 **取值范围**: 包含如下3种。   - 不传参默认为全部。   - ACTIVE ：正在运行。   - SHUTOFF ：关机。 **默认取值**: 不涉及 
 
         :return: The host_status of this ListProtectionServerRequest.
         :rtype: str
@@ -266,7 +266,7 @@ class ListProtectionServerRequest:
     def host_status(self, host_status):
         r"""Sets the host_status of this ListProtectionServerRequest.
 
-        主机状态，包含如下3种。   - 不传参默认为全部。   - ACTIVE ：正在运行。   - SHUTOFF ：关机。
+        **参数解释**: 主机状态 **约束限制**: 不涉及 **取值范围**: 包含如下3种。   - 不传参默认为全部。   - ACTIVE ：正在运行。   - SHUTOFF ：关机。 **默认取值**: 不涉及 
 
         :param host_status: The host_status of this ListProtectionServerRequest.
         :type host_status: str
@@ -277,7 +277,7 @@ class ListProtectionServerRequest:
     def last_days(self):
         r"""Gets the last_days of this ListProtectionServerRequest.
 
-        查询时间范围天数，最近7天为last_days=7，若不填，则默认查询一天内的防护事件和已有备份数
+        **参数解释**: 查询时间范围天数 **约束限制**: 不涉及 **取值范围**: 长度1-30。若不填，则默认查询一天内的防护事件和已有备份数。 **默认取值**: 不涉及 
 
         :return: The last_days of this ListProtectionServerRequest.
         :rtype: int
@@ -288,7 +288,7 @@ class ListProtectionServerRequest:
     def last_days(self, last_days):
         r"""Sets the last_days of this ListProtectionServerRequest.
 
-        查询时间范围天数，最近7天为last_days=7，若不填，则默认查询一天内的防护事件和已有备份数
+        **参数解释**: 查询时间范围天数 **约束限制**: 不涉及 **取值范围**: 长度1-30。若不填，则默认查询一天内的防护事件和已有备份数。 **默认取值**: 不涉及 
 
         :param last_days: The last_days of this ListProtectionServerRequest.
         :type last_days: int

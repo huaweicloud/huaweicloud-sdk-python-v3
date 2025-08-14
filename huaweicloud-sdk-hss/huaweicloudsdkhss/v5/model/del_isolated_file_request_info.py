@@ -35,13 +35,13 @@ class DelIsolatedFileRequestInfo:
 
         The model defined in huaweicloud sdk
 
-        :param host_id: **参数解释**: 服务器ID **取值范围**: 字符长度1-64位 
+        :param host_id: **参数解释**： 主机ID **取值范围**： 字符长度1-64位 
         :type host_id: str
-        :param file_hash: 文件哈希
+        :param file_hash: **参数解释**： 文件哈希 **取值范围**： 字符长度1-256位 
         :type file_hash: str
-        :param file_path: 文件路径
+        :param file_path: **参数解释**： 文件路径 **取值范围**： 字符长度1-256位 
         :type file_path: str
-        :param file_attr: 文件属性
+        :param file_attr: **参数解释**： 文件属性 **取值范围**： 字符长度1-256位 
         :type file_attr: str
         """
         
@@ -62,7 +62,7 @@ class DelIsolatedFileRequestInfo:
     def host_id(self):
         r"""Gets the host_id of this DelIsolatedFileRequestInfo.
 
-        **参数解释**: 服务器ID **取值范围**: 字符长度1-64位 
+        **参数解释**： 主机ID **取值范围**： 字符长度1-64位 
 
         :return: The host_id of this DelIsolatedFileRequestInfo.
         :rtype: str
@@ -73,7 +73,7 @@ class DelIsolatedFileRequestInfo:
     def host_id(self, host_id):
         r"""Sets the host_id of this DelIsolatedFileRequestInfo.
 
-        **参数解释**: 服务器ID **取值范围**: 字符长度1-64位 
+        **参数解释**： 主机ID **取值范围**： 字符长度1-64位 
 
         :param host_id: The host_id of this DelIsolatedFileRequestInfo.
         :type host_id: str
@@ -84,7 +84,7 @@ class DelIsolatedFileRequestInfo:
     def file_hash(self):
         r"""Gets the file_hash of this DelIsolatedFileRequestInfo.
 
-        文件哈希
+        **参数解释**： 文件哈希 **取值范围**： 字符长度1-256位 
 
         :return: The file_hash of this DelIsolatedFileRequestInfo.
         :rtype: str
@@ -95,7 +95,7 @@ class DelIsolatedFileRequestInfo:
     def file_hash(self, file_hash):
         r"""Sets the file_hash of this DelIsolatedFileRequestInfo.
 
-        文件哈希
+        **参数解释**： 文件哈希 **取值范围**： 字符长度1-256位 
 
         :param file_hash: The file_hash of this DelIsolatedFileRequestInfo.
         :type file_hash: str
@@ -106,7 +106,7 @@ class DelIsolatedFileRequestInfo:
     def file_path(self):
         r"""Gets the file_path of this DelIsolatedFileRequestInfo.
 
-        文件路径
+        **参数解释**： 文件路径 **取值范围**： 字符长度1-256位 
 
         :return: The file_path of this DelIsolatedFileRequestInfo.
         :rtype: str
@@ -117,7 +117,7 @@ class DelIsolatedFileRequestInfo:
     def file_path(self, file_path):
         r"""Sets the file_path of this DelIsolatedFileRequestInfo.
 
-        文件路径
+        **参数解释**： 文件路径 **取值范围**： 字符长度1-256位 
 
         :param file_path: The file_path of this DelIsolatedFileRequestInfo.
         :type file_path: str
@@ -128,7 +128,7 @@ class DelIsolatedFileRequestInfo:
     def file_attr(self):
         r"""Gets the file_attr of this DelIsolatedFileRequestInfo.
 
-        文件属性
+        **参数解释**： 文件属性 **取值范围**： 字符长度1-256位 
 
         :return: The file_attr of this DelIsolatedFileRequestInfo.
         :rtype: str
@@ -139,7 +139,7 @@ class DelIsolatedFileRequestInfo:
     def file_attr(self, file_attr):
         r"""Sets the file_attr of this DelIsolatedFileRequestInfo.
 
-        文件属性
+        **参数解释**： 文件属性 **取值范围**： 字符长度1-256位 
 
         :param file_attr: The file_attr of this DelIsolatedFileRequestInfo.
         :type file_attr: str

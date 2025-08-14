@@ -30,7 +30,7 @@ class VulInfo:
         'description': 'str',
         'type': 'str',
         'host_id_list': 'list[str]',
-        'cve_list': 'list[ShowVulReportDataResponseInfoCveList]',
+        'cve_list': 'list[VulInfoCveList]',
         'patch_url': 'str',
         'repair_priority': 'str',
         'hosts_num': 'VulnerabilityHostNumberInfo',
@@ -71,49 +71,49 @@ class VulInfo:
 
         The model defined in huaweicloud sdk
 
-        :param vul_name: 漏洞名称
+        :param vul_name: **参数解释**: 漏洞名称 **取值范围**: 字符长度0-256位 
         :type vul_name: str
-        :param vul_id: 漏洞ID
+        :param vul_id: **参数解释**: 漏洞ID **取值范围**: 字符长度0-64位 
         :type vul_id: str
-        :param label_list: 漏洞标签
+        :param label_list: **参数解释**: 漏洞标签列表 **取值范围**: 不涉及 
         :type label_list: list[str]
-        :param repair_necessity: 修复必要性   - Critical : 漏洞cvss评分大于等于9；对应控制台页面的高危   - High : 漏洞cvss评分大于等于7，小于9；对应控制台页面的中危   - Medium : 漏洞cvss评分大于等于4，小于7；对应控制台页面的中危   - Low : 漏洞cvss评分小于4；对应控制台页面的低危
+        :param repair_necessity: **参数解释**: 漏洞修复的必要性 **取值范围**: - Critical：漏洞cvss评分大于等于9；对应控制台页面的高危 - High：漏洞cvss评分大于等于7，小于9；对应控制台页面的中危 - Medium：漏洞cvss评分大于等于4，小于7；对应控制台页面的中危 - Low：漏洞cvss评分小于4；对应控制台页面的低危 
         :type repair_necessity: str
-        :param severity_level: 漏洞级别   - Critical : 漏洞cvss评分大于等于9；对应控制台页面的高危   - High : 漏洞cvss评分大于等于7，小于9；对应控制台页面的中危   - Medium : 漏洞cvss评分大于等于4，小于7；对应控制台页面的中危   - Low : 漏洞cvss评分小于4；对应控制台页面的低危
+        :param severity_level: **参数解释**: 漏洞风险级别 **取值范围**: - Critical：漏洞cvss评分大于等于9；对应控制台页面的高危 - High：漏洞cvss评分大于等于7，小于9；对应控制台页面的中危 - Medium：漏洞cvss评分大于等于4，小于7；对应控制台页面的中危 - Low：漏洞cvss评分小于4；对应控制台页面的低危 
         :type severity_level: str
-        :param host_num: 受影响服务器台数
+        :param host_num: **参数解释**: 受影响服务器台数 **取值范围**: 取值0-2147483647 
         :type host_num: int
-        :param unhandle_host_num: 未处理主机台数，除已忽略和已修复的主机数量
+        :param unhandle_host_num: **参数解释**: 未处理主机台数：除已忽略和已修复的主机数量 **取值范围**: 取值0-2147483647 
         :type unhandle_host_num: int
-        :param scan_time: 最近扫描时间，时间戳单位：毫秒
+        :param scan_time: **参数解释**: 最近扫描时间，时间戳单位：毫秒 **取值范围**: 取值0-9223372036854775807 
         :type scan_time: int
-        :param solution_detail: 修复漏洞的指导意见
+        :param solution_detail: **参数解释**: 修复漏洞的指导意见 **取值范围**: 字符长度0-65534位 
         :type solution_detail: str
-        :param url: URL链接
+        :param url: **参数解释**: URL链接 **取值范围**: 字符长度0-2083位 
         :type url: str
-        :param description: 漏洞描述
+        :param description: **参数解释**: 漏洞描述 **取值范围**: 字符长度0-65534位 
         :type description: str
-        :param type: 漏洞类型，包含如下：   -linux_vul : linux漏洞   -windows_vul : windows漏洞   -web_cms : Web-CMS漏洞   -app_vul : 应用漏洞
+        :param type: **参数解释**: 漏洞类型 **取值范围**: - linux_vul：linux漏洞 - windows_vul：windows漏洞 - web_cms：Web-CMS漏洞 - app_vul：应用漏洞 
         :type type: str
-        :param host_id_list: 可处置该漏洞的主机列表
+        :param host_id_list: **参数解释**: 可处置该漏洞的主机ID列表 **取值范围**: 不涉及 
         :type host_id_list: list[str]
-        :param cve_list: CVE列表
-        :type cve_list: list[:class:`huaweicloudsdkhss.v5.ShowVulReportDataResponseInfoCveList`]
-        :param patch_url: 补丁地址
+        :param cve_list: **参数解释**: 漏洞关联的cve信息列表 **取值范围**: 不涉及 
+        :type cve_list: list[:class:`huaweicloudsdkhss.v5.VulInfoCveList`]
+        :param patch_url: **参数解释**: 补丁地址 **取值范围**: 字符长度0-512位 
         :type patch_url: str
-        :param repair_priority: 修复优先级 Critical 紧急 High 高 Medium 中 Low 低
+        :param repair_priority: **参数解释**: 修复优先级 **取值范围**: - Critical：紧急 - High：高 - Medium：中 - Low：低 
         :type repair_priority: str
         :param hosts_num: 
         :type hosts_num: :class:`huaweicloudsdkhss.v5.VulnerabilityHostNumberInfo`
-        :param repair_success_num: 修复成功次数
+        :param repair_success_num: **参数解释**: 修复成功次数 **取值范围**: 取值0-1000000 
         :type repair_success_num: int
-        :param fixed_num: 修复数量
+        :param fixed_num: **参数解释**: 修复数量 **取值范围**: 取值0-1000000 
         :type fixed_num: int
-        :param ignored_num: 忽略数量
+        :param ignored_num: **参数解释**: 忽略数量 **取值范围**: 取值0-1000000 
         :type ignored_num: int
-        :param verify_num: 验证数量
+        :param verify_num: **参数解释**: 验证数量 **取值范围**: 取值0-1000000 
         :type verify_num: int
-        :param repair_priority_list: 修复优先级，每个修复优先级对应的主机数量
+        :param repair_priority_list: **参数解释**: 修复优先级，每个修复优先级对应的主机数量 **取值范围**: 不涉及 
         :type repair_priority_list: list[:class:`huaweicloudsdkhss.v5.RepairPriorityListInfo`]
         """
         
@@ -192,7 +192,7 @@ class VulInfo:
     def vul_name(self):
         r"""Gets the vul_name of this VulInfo.
 
-        漏洞名称
+        **参数解释**: 漏洞名称 **取值范围**: 字符长度0-256位 
 
         :return: The vul_name of this VulInfo.
         :rtype: str
@@ -203,7 +203,7 @@ class VulInfo:
     def vul_name(self, vul_name):
         r"""Sets the vul_name of this VulInfo.
 
-        漏洞名称
+        **参数解释**: 漏洞名称 **取值范围**: 字符长度0-256位 
 
         :param vul_name: The vul_name of this VulInfo.
         :type vul_name: str
@@ -214,7 +214,7 @@ class VulInfo:
     def vul_id(self):
         r"""Gets the vul_id of this VulInfo.
 
-        漏洞ID
+        **参数解释**: 漏洞ID **取值范围**: 字符长度0-64位 
 
         :return: The vul_id of this VulInfo.
         :rtype: str
@@ -225,7 +225,7 @@ class VulInfo:
     def vul_id(self, vul_id):
         r"""Sets the vul_id of this VulInfo.
 
-        漏洞ID
+        **参数解释**: 漏洞ID **取值范围**: 字符长度0-64位 
 
         :param vul_id: The vul_id of this VulInfo.
         :type vul_id: str
@@ -236,7 +236,7 @@ class VulInfo:
     def label_list(self):
         r"""Gets the label_list of this VulInfo.
 
-        漏洞标签
+        **参数解释**: 漏洞标签列表 **取值范围**: 不涉及 
 
         :return: The label_list of this VulInfo.
         :rtype: list[str]
@@ -247,7 +247,7 @@ class VulInfo:
     def label_list(self, label_list):
         r"""Sets the label_list of this VulInfo.
 
-        漏洞标签
+        **参数解释**: 漏洞标签列表 **取值范围**: 不涉及 
 
         :param label_list: The label_list of this VulInfo.
         :type label_list: list[str]
@@ -258,7 +258,7 @@ class VulInfo:
     def repair_necessity(self):
         r"""Gets the repair_necessity of this VulInfo.
 
-        修复必要性   - Critical : 漏洞cvss评分大于等于9；对应控制台页面的高危   - High : 漏洞cvss评分大于等于7，小于9；对应控制台页面的中危   - Medium : 漏洞cvss评分大于等于4，小于7；对应控制台页面的中危   - Low : 漏洞cvss评分小于4；对应控制台页面的低危
+        **参数解释**: 漏洞修复的必要性 **取值范围**: - Critical：漏洞cvss评分大于等于9；对应控制台页面的高危 - High：漏洞cvss评分大于等于7，小于9；对应控制台页面的中危 - Medium：漏洞cvss评分大于等于4，小于7；对应控制台页面的中危 - Low：漏洞cvss评分小于4；对应控制台页面的低危 
 
         :return: The repair_necessity of this VulInfo.
         :rtype: str
@@ -269,7 +269,7 @@ class VulInfo:
     def repair_necessity(self, repair_necessity):
         r"""Sets the repair_necessity of this VulInfo.
 
-        修复必要性   - Critical : 漏洞cvss评分大于等于9；对应控制台页面的高危   - High : 漏洞cvss评分大于等于7，小于9；对应控制台页面的中危   - Medium : 漏洞cvss评分大于等于4，小于7；对应控制台页面的中危   - Low : 漏洞cvss评分小于4；对应控制台页面的低危
+        **参数解释**: 漏洞修复的必要性 **取值范围**: - Critical：漏洞cvss评分大于等于9；对应控制台页面的高危 - High：漏洞cvss评分大于等于7，小于9；对应控制台页面的中危 - Medium：漏洞cvss评分大于等于4，小于7；对应控制台页面的中危 - Low：漏洞cvss评分小于4；对应控制台页面的低危 
 
         :param repair_necessity: The repair_necessity of this VulInfo.
         :type repair_necessity: str
@@ -280,7 +280,7 @@ class VulInfo:
     def severity_level(self):
         r"""Gets the severity_level of this VulInfo.
 
-        漏洞级别   - Critical : 漏洞cvss评分大于等于9；对应控制台页面的高危   - High : 漏洞cvss评分大于等于7，小于9；对应控制台页面的中危   - Medium : 漏洞cvss评分大于等于4，小于7；对应控制台页面的中危   - Low : 漏洞cvss评分小于4；对应控制台页面的低危
+        **参数解释**: 漏洞风险级别 **取值范围**: - Critical：漏洞cvss评分大于等于9；对应控制台页面的高危 - High：漏洞cvss评分大于等于7，小于9；对应控制台页面的中危 - Medium：漏洞cvss评分大于等于4，小于7；对应控制台页面的中危 - Low：漏洞cvss评分小于4；对应控制台页面的低危 
 
         :return: The severity_level of this VulInfo.
         :rtype: str
@@ -291,7 +291,7 @@ class VulInfo:
     def severity_level(self, severity_level):
         r"""Sets the severity_level of this VulInfo.
 
-        漏洞级别   - Critical : 漏洞cvss评分大于等于9；对应控制台页面的高危   - High : 漏洞cvss评分大于等于7，小于9；对应控制台页面的中危   - Medium : 漏洞cvss评分大于等于4，小于7；对应控制台页面的中危   - Low : 漏洞cvss评分小于4；对应控制台页面的低危
+        **参数解释**: 漏洞风险级别 **取值范围**: - Critical：漏洞cvss评分大于等于9；对应控制台页面的高危 - High：漏洞cvss评分大于等于7，小于9；对应控制台页面的中危 - Medium：漏洞cvss评分大于等于4，小于7；对应控制台页面的中危 - Low：漏洞cvss评分小于4；对应控制台页面的低危 
 
         :param severity_level: The severity_level of this VulInfo.
         :type severity_level: str
@@ -302,7 +302,7 @@ class VulInfo:
     def host_num(self):
         r"""Gets the host_num of this VulInfo.
 
-        受影响服务器台数
+        **参数解释**: 受影响服务器台数 **取值范围**: 取值0-2147483647 
 
         :return: The host_num of this VulInfo.
         :rtype: int
@@ -313,7 +313,7 @@ class VulInfo:
     def host_num(self, host_num):
         r"""Sets the host_num of this VulInfo.
 
-        受影响服务器台数
+        **参数解释**: 受影响服务器台数 **取值范围**: 取值0-2147483647 
 
         :param host_num: The host_num of this VulInfo.
         :type host_num: int
@@ -324,7 +324,7 @@ class VulInfo:
     def unhandle_host_num(self):
         r"""Gets the unhandle_host_num of this VulInfo.
 
-        未处理主机台数，除已忽略和已修复的主机数量
+        **参数解释**: 未处理主机台数：除已忽略和已修复的主机数量 **取值范围**: 取值0-2147483647 
 
         :return: The unhandle_host_num of this VulInfo.
         :rtype: int
@@ -335,7 +335,7 @@ class VulInfo:
     def unhandle_host_num(self, unhandle_host_num):
         r"""Sets the unhandle_host_num of this VulInfo.
 
-        未处理主机台数，除已忽略和已修复的主机数量
+        **参数解释**: 未处理主机台数：除已忽略和已修复的主机数量 **取值范围**: 取值0-2147483647 
 
         :param unhandle_host_num: The unhandle_host_num of this VulInfo.
         :type unhandle_host_num: int
@@ -346,7 +346,7 @@ class VulInfo:
     def scan_time(self):
         r"""Gets the scan_time of this VulInfo.
 
-        最近扫描时间，时间戳单位：毫秒
+        **参数解释**: 最近扫描时间，时间戳单位：毫秒 **取值范围**: 取值0-9223372036854775807 
 
         :return: The scan_time of this VulInfo.
         :rtype: int
@@ -357,7 +357,7 @@ class VulInfo:
     def scan_time(self, scan_time):
         r"""Sets the scan_time of this VulInfo.
 
-        最近扫描时间，时间戳单位：毫秒
+        **参数解释**: 最近扫描时间，时间戳单位：毫秒 **取值范围**: 取值0-9223372036854775807 
 
         :param scan_time: The scan_time of this VulInfo.
         :type scan_time: int
@@ -368,7 +368,7 @@ class VulInfo:
     def solution_detail(self):
         r"""Gets the solution_detail of this VulInfo.
 
-        修复漏洞的指导意见
+        **参数解释**: 修复漏洞的指导意见 **取值范围**: 字符长度0-65534位 
 
         :return: The solution_detail of this VulInfo.
         :rtype: str
@@ -379,7 +379,7 @@ class VulInfo:
     def solution_detail(self, solution_detail):
         r"""Sets the solution_detail of this VulInfo.
 
-        修复漏洞的指导意见
+        **参数解释**: 修复漏洞的指导意见 **取值范围**: 字符长度0-65534位 
 
         :param solution_detail: The solution_detail of this VulInfo.
         :type solution_detail: str
@@ -390,7 +390,7 @@ class VulInfo:
     def url(self):
         r"""Gets the url of this VulInfo.
 
-        URL链接
+        **参数解释**: URL链接 **取值范围**: 字符长度0-2083位 
 
         :return: The url of this VulInfo.
         :rtype: str
@@ -401,7 +401,7 @@ class VulInfo:
     def url(self, url):
         r"""Sets the url of this VulInfo.
 
-        URL链接
+        **参数解释**: URL链接 **取值范围**: 字符长度0-2083位 
 
         :param url: The url of this VulInfo.
         :type url: str
@@ -412,7 +412,7 @@ class VulInfo:
     def description(self):
         r"""Gets the description of this VulInfo.
 
-        漏洞描述
+        **参数解释**: 漏洞描述 **取值范围**: 字符长度0-65534位 
 
         :return: The description of this VulInfo.
         :rtype: str
@@ -423,7 +423,7 @@ class VulInfo:
     def description(self, description):
         r"""Sets the description of this VulInfo.
 
-        漏洞描述
+        **参数解释**: 漏洞描述 **取值范围**: 字符长度0-65534位 
 
         :param description: The description of this VulInfo.
         :type description: str
@@ -434,7 +434,7 @@ class VulInfo:
     def type(self):
         r"""Gets the type of this VulInfo.
 
-        漏洞类型，包含如下：   -linux_vul : linux漏洞   -windows_vul : windows漏洞   -web_cms : Web-CMS漏洞   -app_vul : 应用漏洞
+        **参数解释**: 漏洞类型 **取值范围**: - linux_vul：linux漏洞 - windows_vul：windows漏洞 - web_cms：Web-CMS漏洞 - app_vul：应用漏洞 
 
         :return: The type of this VulInfo.
         :rtype: str
@@ -445,7 +445,7 @@ class VulInfo:
     def type(self, type):
         r"""Sets the type of this VulInfo.
 
-        漏洞类型，包含如下：   -linux_vul : linux漏洞   -windows_vul : windows漏洞   -web_cms : Web-CMS漏洞   -app_vul : 应用漏洞
+        **参数解释**: 漏洞类型 **取值范围**: - linux_vul：linux漏洞 - windows_vul：windows漏洞 - web_cms：Web-CMS漏洞 - app_vul：应用漏洞 
 
         :param type: The type of this VulInfo.
         :type type: str
@@ -456,7 +456,7 @@ class VulInfo:
     def host_id_list(self):
         r"""Gets the host_id_list of this VulInfo.
 
-        可处置该漏洞的主机列表
+        **参数解释**: 可处置该漏洞的主机ID列表 **取值范围**: 不涉及 
 
         :return: The host_id_list of this VulInfo.
         :rtype: list[str]
@@ -467,7 +467,7 @@ class VulInfo:
     def host_id_list(self, host_id_list):
         r"""Sets the host_id_list of this VulInfo.
 
-        可处置该漏洞的主机列表
+        **参数解释**: 可处置该漏洞的主机ID列表 **取值范围**: 不涉及 
 
         :param host_id_list: The host_id_list of this VulInfo.
         :type host_id_list: list[str]
@@ -478,10 +478,10 @@ class VulInfo:
     def cve_list(self):
         r"""Gets the cve_list of this VulInfo.
 
-        CVE列表
+        **参数解释**: 漏洞关联的cve信息列表 **取值范围**: 不涉及 
 
         :return: The cve_list of this VulInfo.
-        :rtype: list[:class:`huaweicloudsdkhss.v5.ShowVulReportDataResponseInfoCveList`]
+        :rtype: list[:class:`huaweicloudsdkhss.v5.VulInfoCveList`]
         """
         return self._cve_list
 
@@ -489,10 +489,10 @@ class VulInfo:
     def cve_list(self, cve_list):
         r"""Sets the cve_list of this VulInfo.
 
-        CVE列表
+        **参数解释**: 漏洞关联的cve信息列表 **取值范围**: 不涉及 
 
         :param cve_list: The cve_list of this VulInfo.
-        :type cve_list: list[:class:`huaweicloudsdkhss.v5.ShowVulReportDataResponseInfoCveList`]
+        :type cve_list: list[:class:`huaweicloudsdkhss.v5.VulInfoCveList`]
         """
         self._cve_list = cve_list
 
@@ -500,7 +500,7 @@ class VulInfo:
     def patch_url(self):
         r"""Gets the patch_url of this VulInfo.
 
-        补丁地址
+        **参数解释**: 补丁地址 **取值范围**: 字符长度0-512位 
 
         :return: The patch_url of this VulInfo.
         :rtype: str
@@ -511,7 +511,7 @@ class VulInfo:
     def patch_url(self, patch_url):
         r"""Sets the patch_url of this VulInfo.
 
-        补丁地址
+        **参数解释**: 补丁地址 **取值范围**: 字符长度0-512位 
 
         :param patch_url: The patch_url of this VulInfo.
         :type patch_url: str
@@ -522,7 +522,7 @@ class VulInfo:
     def repair_priority(self):
         r"""Gets the repair_priority of this VulInfo.
 
-        修复优先级 Critical 紧急 High 高 Medium 中 Low 低
+        **参数解释**: 修复优先级 **取值范围**: - Critical：紧急 - High：高 - Medium：中 - Low：低 
 
         :return: The repair_priority of this VulInfo.
         :rtype: str
@@ -533,7 +533,7 @@ class VulInfo:
     def repair_priority(self, repair_priority):
         r"""Sets the repair_priority of this VulInfo.
 
-        修复优先级 Critical 紧急 High 高 Medium 中 Low 低
+        **参数解释**: 修复优先级 **取值范围**: - Critical：紧急 - High：高 - Medium：中 - Low：低 
 
         :param repair_priority: The repair_priority of this VulInfo.
         :type repair_priority: str
@@ -562,7 +562,7 @@ class VulInfo:
     def repair_success_num(self):
         r"""Gets the repair_success_num of this VulInfo.
 
-        修复成功次数
+        **参数解释**: 修复成功次数 **取值范围**: 取值0-1000000 
 
         :return: The repair_success_num of this VulInfo.
         :rtype: int
@@ -573,7 +573,7 @@ class VulInfo:
     def repair_success_num(self, repair_success_num):
         r"""Sets the repair_success_num of this VulInfo.
 
-        修复成功次数
+        **参数解释**: 修复成功次数 **取值范围**: 取值0-1000000 
 
         :param repair_success_num: The repair_success_num of this VulInfo.
         :type repair_success_num: int
@@ -584,7 +584,7 @@ class VulInfo:
     def fixed_num(self):
         r"""Gets the fixed_num of this VulInfo.
 
-        修复数量
+        **参数解释**: 修复数量 **取值范围**: 取值0-1000000 
 
         :return: The fixed_num of this VulInfo.
         :rtype: int
@@ -595,7 +595,7 @@ class VulInfo:
     def fixed_num(self, fixed_num):
         r"""Sets the fixed_num of this VulInfo.
 
-        修复数量
+        **参数解释**: 修复数量 **取值范围**: 取值0-1000000 
 
         :param fixed_num: The fixed_num of this VulInfo.
         :type fixed_num: int
@@ -606,7 +606,7 @@ class VulInfo:
     def ignored_num(self):
         r"""Gets the ignored_num of this VulInfo.
 
-        忽略数量
+        **参数解释**: 忽略数量 **取值范围**: 取值0-1000000 
 
         :return: The ignored_num of this VulInfo.
         :rtype: int
@@ -617,7 +617,7 @@ class VulInfo:
     def ignored_num(self, ignored_num):
         r"""Sets the ignored_num of this VulInfo.
 
-        忽略数量
+        **参数解释**: 忽略数量 **取值范围**: 取值0-1000000 
 
         :param ignored_num: The ignored_num of this VulInfo.
         :type ignored_num: int
@@ -628,7 +628,7 @@ class VulInfo:
     def verify_num(self):
         r"""Gets the verify_num of this VulInfo.
 
-        验证数量
+        **参数解释**: 验证数量 **取值范围**: 取值0-1000000 
 
         :return: The verify_num of this VulInfo.
         :rtype: int
@@ -639,7 +639,7 @@ class VulInfo:
     def verify_num(self, verify_num):
         r"""Sets the verify_num of this VulInfo.
 
-        验证数量
+        **参数解释**: 验证数量 **取值范围**: 取值0-1000000 
 
         :param verify_num: The verify_num of this VulInfo.
         :type verify_num: int
@@ -650,7 +650,7 @@ class VulInfo:
     def repair_priority_list(self):
         r"""Gets the repair_priority_list of this VulInfo.
 
-        修复优先级，每个修复优先级对应的主机数量
+        **参数解释**: 修复优先级，每个修复优先级对应的主机数量 **取值范围**: 不涉及 
 
         :return: The repair_priority_list of this VulInfo.
         :rtype: list[:class:`huaweicloudsdkhss.v5.RepairPriorityListInfo`]
@@ -661,7 +661,7 @@ class VulInfo:
     def repair_priority_list(self, repair_priority_list):
         r"""Sets the repair_priority_list of this VulInfo.
 
-        修复优先级，每个修复优先级对应的主机数量
+        **参数解释**: 修复优先级，每个修复优先级对应的主机数量 **取值范围**: 不涉及 
 
         :param repair_priority_list: The repair_priority_list of this VulInfo.
         :type repair_priority_list: list[:class:`huaweicloudsdkhss.v5.RepairPriorityListInfo`]

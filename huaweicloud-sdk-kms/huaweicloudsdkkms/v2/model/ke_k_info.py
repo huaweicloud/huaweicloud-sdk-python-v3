@@ -18,15 +18,17 @@ class KeKInfo:
 
     openapi_types = {
         'key_id': 'str',
-        'domain_id': 'str'
+        'domain_id': 'str',
+        'region_id': 'str'
     }
 
     attribute_map = {
         'key_id': 'key_id',
-        'domain_id': 'domain_id'
+        'domain_id': 'domain_id',
+        'region_id': 'region_id'
     }
 
-    def __init__(self, key_id=None, domain_id=None):
+    def __init__(self, key_id=None, domain_id=None, region_id=None):
         r"""KeKInfo
 
         The model defined in huaweicloud sdk
@@ -35,18 +37,23 @@ class KeKInfo:
         :type key_id: str
         :param domain_id: 用户域ID。
         :type domain_id: str
+        :param region_id: region ID。
+        :type region_id: str
         """
         
         
 
         self._key_id = None
         self._domain_id = None
+        self._region_id = None
         self.discriminator = None
 
         if key_id is not None:
             self.key_id = key_id
         if domain_id is not None:
             self.domain_id = domain_id
+        if region_id is not None:
+            self.region_id = region_id
 
     @property
     def key_id(self):
@@ -91,6 +98,28 @@ class KeKInfo:
         :type domain_id: str
         """
         self._domain_id = domain_id
+
+    @property
+    def region_id(self):
+        r"""Gets the region_id of this KeKInfo.
+
+        region ID。
+
+        :return: The region_id of this KeKInfo.
+        :rtype: str
+        """
+        return self._region_id
+
+    @region_id.setter
+    def region_id(self, region_id):
+        r"""Sets the region_id of this KeKInfo.
+
+        region ID。
+
+        :param region_id: The region_id of this KeKInfo.
+        :type region_id: str
+        """
+        self._region_id = region_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

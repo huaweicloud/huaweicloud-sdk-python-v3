@@ -39,9 +39,9 @@ class ListWarehouseAppsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param limit: 单次查询的大小[1-100]。
+        :param limit: 单次查询的大小[1-100]，默认值10。
         :type limit: int
-        :param offset: 查询的偏移量。
+        :param offset: 查询的偏移量，默认值0。
         :type offset: int
         :param verify_status: 审核状态。
         :type verify_status: str
@@ -80,7 +80,7 @@ class ListWarehouseAppsRequest:
     def limit(self):
         r"""Gets the limit of this ListWarehouseAppsRequest.
 
-        单次查询的大小[1-100]。
+        单次查询的大小[1-100]，默认值10。
 
         :return: The limit of this ListWarehouseAppsRequest.
         :rtype: int
@@ -91,7 +91,7 @@ class ListWarehouseAppsRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListWarehouseAppsRequest.
 
-        单次查询的大小[1-100]。
+        单次查询的大小[1-100]，默认值10。
 
         :param limit: The limit of this ListWarehouseAppsRequest.
         :type limit: int
@@ -102,7 +102,7 @@ class ListWarehouseAppsRequest:
     def offset(self):
         r"""Gets the offset of this ListWarehouseAppsRequest.
 
-        查询的偏移量。
+        查询的偏移量，默认值0。
 
         :return: The offset of this ListWarehouseAppsRequest.
         :rtype: int
@@ -113,7 +113,7 @@ class ListWarehouseAppsRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListWarehouseAppsRequest.
 
-        查询的偏移量。
+        查询的偏移量，默认值0。
 
         :param offset: The offset of this ListWarehouseAppsRequest.
         :type offset: int

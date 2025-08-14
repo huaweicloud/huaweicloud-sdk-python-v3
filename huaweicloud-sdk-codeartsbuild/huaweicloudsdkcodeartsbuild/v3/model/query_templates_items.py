@@ -21,7 +21,7 @@ class QueryTemplatesItems:
         'nick_name': 'str',
         'id': 'str',
         'uuid': 'str',
-        'template': 'QueryTemplate',
+        'template': 'QueryTemplateVo',
         'type': 'str',
         'public': 'bool',
         'name': 'str',
@@ -76,7 +76,7 @@ class QueryTemplatesItems:
         :param uuid: uuid
         :type uuid: str
         :param template: 
-        :type template: :class:`huaweicloudsdkcodeartsbuild.v3.QueryTemplate`
+        :type template: :class:`huaweicloudsdkcodeartsbuild.v3.QueryTemplateVo`
         :param type: 模板类别
         :type type: str
         :param public: 模板是否公开
@@ -267,7 +267,7 @@ class QueryTemplatesItems:
         r"""Gets the template of this QueryTemplatesItems.
 
         :return: The template of this QueryTemplatesItems.
-        :rtype: :class:`huaweicloudsdkcodeartsbuild.v3.QueryTemplate`
+        :rtype: :class:`huaweicloudsdkcodeartsbuild.v3.QueryTemplateVo`
         """
         return self._template
 
@@ -276,7 +276,7 @@ class QueryTemplatesItems:
         r"""Sets the template of this QueryTemplatesItems.
 
         :param template: The template of this QueryTemplatesItems.
-        :type template: :class:`huaweicloudsdkcodeartsbuild.v3.QueryTemplate`
+        :type template: :class:`huaweicloudsdkcodeartsbuild.v3.QueryTemplateVo`
         """
         self._template = template
 

@@ -32,6 +32,14 @@ class GaussDBforNoSQLRegion:
                         "https://gaussdb-nosql.ap-southeast-5.myhuaweicloud.com")
     ME_EAST_1 = Region("me-east-1",
                         "https://gaussdb-nosql.me-east-1.myhuaweicloud.com")
+    CN_EAST_4 = Region("cn-east-4",
+                        "https://gaussdb-nosql.cn-east-4.myhuaweicloud.com")
+    CN_SOUTH_4 = Region("cn-south-4",
+                        "https://nosql-gemini.cn-south-4.myhuaweicloud.com")
+    CN_SOUTHWEST_3 = Region("cn-southwest-3",
+                        "https://gaussdb-nosql.cn-southwest-3.myhuaweicloud.com")
+    TR_WEST_1 = Region("tr-west-1",
+                        "https://gaussdb-nosql.tr-west-1.myhuaweicloud.com")
     RU_NORTHWEST_2 = Region("ru-northwest-2",
                         "https://gaussdb-nosql.ru-northwest-2.myhuaweicloud.com")
     CN_SOUTH_2 = Region("cn-south-2",
@@ -63,6 +71,10 @@ class GaussDBforNoSQLRegion:
         "ap-southeast-4": AP_SOUTHEAST_4,
         "ap-southeast-5": AP_SOUTHEAST_5,
         "me-east-1": ME_EAST_1,
+        "cn-east-4": CN_EAST_4,
+        "cn-south-4": CN_SOUTH_4,
+        "cn-southwest-3": CN_SOUTHWEST_3,
+        "tr-west-1": TR_WEST_1,
         "ru-northwest-2": RU_NORTHWEST_2,
         "cn-south-2": CN_SOUTH_2,
         "cn-north-2": CN_NORTH_2,

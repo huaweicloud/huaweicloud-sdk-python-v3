@@ -63,7 +63,7 @@ class ListClusterAuditLogsRequest:
         :type host_id: str
         :param host_ip: 主机ip
         :type host_ip: str
-        :param verb: 审计日志对应的动作，包含以下几种： - create 创建资源 - delete 删除资源 - deletecollection 批量资源集合 - patch 修改资源 - update 更新资源 - get 获取资源 - list 获取资源列表 - watch 监控资源
+        :param verb: 审计日志对应的动作，包含以下几种： - create：创建资源 - delete：删除资源 - deletecollection：批量资源集合 - patch：修改资源 - update：更新资源 - get：获取资源 - list：获取资源列表 - watch：监控资源
         :type verb: str
         :param start_time: 查询日志范围的最小时间
         :type start_time: int
@@ -249,7 +249,7 @@ class ListClusterAuditLogsRequest:
     def verb(self):
         r"""Gets the verb of this ListClusterAuditLogsRequest.
 
-        审计日志对应的动作，包含以下几种： - create 创建资源 - delete 删除资源 - deletecollection 批量资源集合 - patch 修改资源 - update 更新资源 - get 获取资源 - list 获取资源列表 - watch 监控资源
+        审计日志对应的动作，包含以下几种： - create：创建资源 - delete：删除资源 - deletecollection：批量资源集合 - patch：修改资源 - update：更新资源 - get：获取资源 - list：获取资源列表 - watch：监控资源
 
         :return: The verb of this ListClusterAuditLogsRequest.
         :rtype: str
@@ -260,7 +260,7 @@ class ListClusterAuditLogsRequest:
     def verb(self, verb):
         r"""Sets the verb of this ListClusterAuditLogsRequest.
 
-        审计日志对应的动作，包含以下几种： - create 创建资源 - delete 删除资源 - deletecollection 批量资源集合 - patch 修改资源 - update 更新资源 - get 获取资源 - list 获取资源列表 - watch 监控资源
+        审计日志对应的动作，包含以下几种： - create：创建资源 - delete：删除资源 - deletecollection：批量资源集合 - patch：修改资源 - update：更新资源 - get：获取资源 - list：获取资源列表 - watch：监控资源
 
         :param verb: The verb of this ListClusterAuditLogsRequest.
         :type verb: str

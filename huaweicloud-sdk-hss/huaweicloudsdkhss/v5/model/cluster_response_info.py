@@ -53,7 +53,7 @@ class ClusterResponseInfo:
         :type policy_num: int
         :param cluster_status: 集群运行状态 - Available - Unavailable
         :type cluster_status: str
-        :param cluster_type: 集群类型，包含以下几种： -k8s 原生集群 -cce CCE集群 -ali 阿里云集群 -tencent 腾讯云集群 -azure 微软云集群 -aws 亚马逊集群 -self_built_hw 华为云自建集群 -self_built_idc IDC自建集群
+        :param cluster_type: 集群类型，包含以下几种： - k8s：原生集群 - cce：CCE集群 - ali：阿里云集群 - tencent：腾讯云集群 - azure：微软云集群 - aws：亚马逊集群 - self_built_hw：华为云自建集群 - self_built_idc：IDC自建集群
         :type cluster_type: str
         """
         
@@ -219,7 +219,7 @@ class ClusterResponseInfo:
     def cluster_type(self):
         r"""Gets the cluster_type of this ClusterResponseInfo.
 
-        集群类型，包含以下几种： -k8s 原生集群 -cce CCE集群 -ali 阿里云集群 -tencent 腾讯云集群 -azure 微软云集群 -aws 亚马逊集群 -self_built_hw 华为云自建集群 -self_built_idc IDC自建集群
+        集群类型，包含以下几种： - k8s：原生集群 - cce：CCE集群 - ali：阿里云集群 - tencent：腾讯云集群 - azure：微软云集群 - aws：亚马逊集群 - self_built_hw：华为云自建集群 - self_built_idc：IDC自建集群
 
         :return: The cluster_type of this ClusterResponseInfo.
         :rtype: str
@@ -230,7 +230,7 @@ class ClusterResponseInfo:
     def cluster_type(self, cluster_type):
         r"""Sets the cluster_type of this ClusterResponseInfo.
 
-        集群类型，包含以下几种： -k8s 原生集群 -cce CCE集群 -ali 阿里云集群 -tencent 腾讯云集群 -azure 微软云集群 -aws 亚马逊集群 -self_built_hw 华为云自建集群 -self_built_idc IDC自建集群
+        集群类型，包含以下几种： - k8s：原生集群 - cce：CCE集群 - ali：阿里云集群 - tencent：腾讯云集群 - azure：微软云集群 - aws：亚马逊集群 - self_built_hw：华为云自建集群 - self_built_idc：IDC自建集群
 
         :param cluster_type: The cluster_type of this ClusterResponseInfo.
         :type cluster_type: str

@@ -53,15 +53,15 @@ class AntivirusResultDetailInfo:
         :type result_id: str
         :param malware_name: 病毒名称
         :type malware_name: str
-        :param file_path: 文件路径
+        :param file_path: **参数解释**： 文件路径 **取值范围**： 字符长度1-256位 
         :type file_path: str
-        :param file_hash: 文件哈希
+        :param file_hash: **参数解释**： 文件哈希 **取值范围**： 字符长度1-256位 
         :type file_hash: str
         :param file_size: **参数解释**: 文件大小 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值9223372036854775807 **默认取值**: 不涉及 
         :type file_size: int
         :param file_owner: 文件属主
         :type file_owner: str
-        :param file_attr: 文件属性
+        :param file_attr: **参数解释**： 文件属性 **取值范围**： 字符长度1-256位 
         :type file_attr: str
         :param file_ctime: 文件创建时间
         :type file_ctime: int
@@ -159,7 +159,7 @@ class AntivirusResultDetailInfo:
     def file_path(self):
         r"""Gets the file_path of this AntivirusResultDetailInfo.
 
-        文件路径
+        **参数解释**： 文件路径 **取值范围**： 字符长度1-256位 
 
         :return: The file_path of this AntivirusResultDetailInfo.
         :rtype: str
@@ -170,7 +170,7 @@ class AntivirusResultDetailInfo:
     def file_path(self, file_path):
         r"""Sets the file_path of this AntivirusResultDetailInfo.
 
-        文件路径
+        **参数解释**： 文件路径 **取值范围**： 字符长度1-256位 
 
         :param file_path: The file_path of this AntivirusResultDetailInfo.
         :type file_path: str
@@ -181,7 +181,7 @@ class AntivirusResultDetailInfo:
     def file_hash(self):
         r"""Gets the file_hash of this AntivirusResultDetailInfo.
 
-        文件哈希
+        **参数解释**： 文件哈希 **取值范围**： 字符长度1-256位 
 
         :return: The file_hash of this AntivirusResultDetailInfo.
         :rtype: str
@@ -192,7 +192,7 @@ class AntivirusResultDetailInfo:
     def file_hash(self, file_hash):
         r"""Sets the file_hash of this AntivirusResultDetailInfo.
 
-        文件哈希
+        **参数解释**： 文件哈希 **取值范围**： 字符长度1-256位 
 
         :param file_hash: The file_hash of this AntivirusResultDetailInfo.
         :type file_hash: str
@@ -247,7 +247,7 @@ class AntivirusResultDetailInfo:
     def file_attr(self):
         r"""Gets the file_attr of this AntivirusResultDetailInfo.
 
-        文件属性
+        **参数解释**： 文件属性 **取值范围**： 字符长度1-256位 
 
         :return: The file_attr of this AntivirusResultDetailInfo.
         :rtype: str
@@ -258,7 +258,7 @@ class AntivirusResultDetailInfo:
     def file_attr(self, file_attr):
         r"""Sets the file_attr of this AntivirusResultDetailInfo.
 
-        文件属性
+        **参数解释**： 文件属性 **取值范围**： 字符长度1-256位 
 
         :param file_attr: The file_attr of this AntivirusResultDetailInfo.
         :type file_attr: str

@@ -34,7 +34,7 @@ class ListJarPackageHostInfoResponse(SdkResponse):
 
         :param total_num: **参数解释** 包含该中间件的服务器总数 **取值范围**: 字符长度0-10000位
         :type total_num: int
-        :param data_list: **参数解释** 服务器列表
+        :param data_list: **参数解释** 服务器列表 **取值范围**: 不涉及
         :type data_list: list[:class:`huaweicloudsdkhss.v5.JarPackageHostInfo`]
         """
         
@@ -75,7 +75,7 @@ class ListJarPackageHostInfoResponse(SdkResponse):
     def data_list(self):
         r"""Gets the data_list of this ListJarPackageHostInfoResponse.
 
-        **参数解释** 服务器列表
+        **参数解释** 服务器列表 **取值范围**: 不涉及
 
         :return: The data_list of this ListJarPackageHostInfoResponse.
         :rtype: list[:class:`huaweicloudsdkhss.v5.JarPackageHostInfo`]
@@ -86,7 +86,7 @@ class ListJarPackageHostInfoResponse(SdkResponse):
     def data_list(self, data_list):
         r"""Sets the data_list of this ListJarPackageHostInfoResponse.
 
-        **参数解释** 服务器列表
+        **参数解释** 服务器列表 **取值范围**: 不涉及
 
         :param data_list: The data_list of this ListJarPackageHostInfoResponse.
         :type data_list: list[:class:`huaweicloudsdkhss.v5.JarPackageHostInfo`]

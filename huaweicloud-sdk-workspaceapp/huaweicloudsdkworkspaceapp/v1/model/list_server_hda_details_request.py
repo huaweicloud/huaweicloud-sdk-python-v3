@@ -35,9 +35,9 @@ class ListServerHdaDetailsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param offset: 查询的偏移量。
+        :param offset: 查询的偏移量，默认值0。
         :type offset: int
-        :param limit: 查询的数量，值区间[1-100]。
+        :param limit: 查询的数量，值区间[1-100]，默认值10。
         :type limit: int
         :param server_group_id: 服务器组id。
         :type server_group_id: str
@@ -66,7 +66,7 @@ class ListServerHdaDetailsRequest:
     def offset(self):
         r"""Gets the offset of this ListServerHdaDetailsRequest.
 
-        查询的偏移量。
+        查询的偏移量，默认值0。
 
         :return: The offset of this ListServerHdaDetailsRequest.
         :rtype: int
@@ -77,7 +77,7 @@ class ListServerHdaDetailsRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListServerHdaDetailsRequest.
 
-        查询的偏移量。
+        查询的偏移量，默认值0。
 
         :param offset: The offset of this ListServerHdaDetailsRequest.
         :type offset: int
@@ -88,7 +88,7 @@ class ListServerHdaDetailsRequest:
     def limit(self):
         r"""Gets the limit of this ListServerHdaDetailsRequest.
 
-        查询的数量，值区间[1-100]。
+        查询的数量，值区间[1-100]，默认值10。
 
         :return: The limit of this ListServerHdaDetailsRequest.
         :rtype: int
@@ -99,7 +99,7 @@ class ListServerHdaDetailsRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListServerHdaDetailsRequest.
 
-        查询的数量，值区间[1-100]。
+        查询的数量，值区间[1-100]，默认值10。
 
         :param limit: The limit of this ListServerHdaDetailsRequest.
         :type limit: int

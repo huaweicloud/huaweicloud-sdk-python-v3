@@ -81,7 +81,7 @@ class ChangeAntivirusPolicyRequestInfo:
         :type scan_dir: str
         :param ignore_dir: 排除目录，多个用;分隔
         :type ignore_dir: str
-        :param action: 处置动作，包含如下:   - auto ：自动处置   - manual : 人工处置
+        :param action: 处置动作，包含如下:   - auto：自动处置   - manual：人工处置
         :type action: str
         :param whether_paid_task: 此次扫描任务是否消耗按次计费配额
         :type whether_paid_task: bool
@@ -400,7 +400,7 @@ class ChangeAntivirusPolicyRequestInfo:
     def action(self):
         r"""Gets the action of this ChangeAntivirusPolicyRequestInfo.
 
-        处置动作，包含如下:   - auto ：自动处置   - manual : 人工处置
+        处置动作，包含如下:   - auto：自动处置   - manual：人工处置
 
         :return: The action of this ChangeAntivirusPolicyRequestInfo.
         :rtype: str
@@ -411,7 +411,7 @@ class ChangeAntivirusPolicyRequestInfo:
     def action(self, action):
         r"""Sets the action of this ChangeAntivirusPolicyRequestInfo.
 
-        处置动作，包含如下:   - auto ：自动处置   - manual : 人工处置
+        处置动作，包含如下:   - auto：自动处置   - manual：人工处置
 
         :param action: The action of this ChangeAntivirusPolicyRequestInfo.
         :type action: str

@@ -31,9 +31,9 @@ class ListServerHdaUpgradeRecordsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param offset: 查询的偏移量。
+        :param offset: 查询的偏移量，默认值0。
         :type offset: int
-        :param limit: 查询的数量，值区间[1-100]。
+        :param limit: 查询的数量，值区间[1-100]，默认值10。
         :type limit: int
         """
         
@@ -52,7 +52,7 @@ class ListServerHdaUpgradeRecordsRequest:
     def offset(self):
         r"""Gets the offset of this ListServerHdaUpgradeRecordsRequest.
 
-        查询的偏移量。
+        查询的偏移量，默认值0。
 
         :return: The offset of this ListServerHdaUpgradeRecordsRequest.
         :rtype: int
@@ -63,7 +63,7 @@ class ListServerHdaUpgradeRecordsRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListServerHdaUpgradeRecordsRequest.
 
-        查询的偏移量。
+        查询的偏移量，默认值0。
 
         :param offset: The offset of this ListServerHdaUpgradeRecordsRequest.
         :type offset: int
@@ -74,7 +74,7 @@ class ListServerHdaUpgradeRecordsRequest:
     def limit(self):
         r"""Gets the limit of this ListServerHdaUpgradeRecordsRequest.
 
-        查询的数量，值区间[1-100]。
+        查询的数量，值区间[1-100]，默认值10。
 
         :return: The limit of this ListServerHdaUpgradeRecordsRequest.
         :rtype: int
@@ -85,7 +85,7 @@ class ListServerHdaUpgradeRecordsRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListServerHdaUpgradeRecordsRequest.
 
-        查询的数量，值区间[1-100]。
+        查询的数量，值区间[1-100]，默认值10。
 
         :param limit: The limit of this ListServerHdaUpgradeRecordsRequest.
         :type limit: int

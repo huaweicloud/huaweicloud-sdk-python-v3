@@ -23,7 +23,8 @@ class UpdateWarehouseAppReq:
         'version_id': 'str',
         'app_description': 'str',
         'version_name': 'str',
-        'app_icon': 'str'
+        'app_icon': 'str',
+        'app_extended_info': 'AppExtendedInfo'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class UpdateWarehouseAppReq:
         'version_id': 'version_id',
         'app_description': 'app_description',
         'version_name': 'version_name',
-        'app_icon': 'app_icon'
+        'app_icon': 'app_icon',
+        'app_extended_info': 'app_extended_info'
     }
 
-    def __init__(self, app_name=None, app_category=None, os_type=None, version_id=None, app_description=None, version_name=None, app_icon=None):
+    def __init__(self, app_name=None, app_category=None, os_type=None, version_id=None, app_description=None, version_name=None, app_icon=None, app_extended_info=None):
         r"""UpdateWarehouseAppReq
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class UpdateWarehouseAppReq:
         :type version_name: str
         :param app_icon: &gt; - 图片的默认大小当前限制为8KB，即1024 * 8字节。 &gt; - 如果数据格式为data;image/png;base64,iVBORw0KGgoAAAANS时实际大小约为字段约为：size * 4/3 + 4bytes。
         :type app_icon: str
+        :param app_extended_info: 
+        :type app_extended_info: :class:`huaweicloudsdkworkspaceapp.v1.AppExtendedInfo`
         """
         
         
@@ -66,6 +70,7 @@ class UpdateWarehouseAppReq:
         self._app_description = None
         self._version_name = None
         self._app_icon = None
+        self._app_extended_info = None
         self.discriminator = None
 
         if app_name is not None:
@@ -82,6 +87,8 @@ class UpdateWarehouseAppReq:
             self.version_name = version_name
         if app_icon is not None:
             self.app_icon = app_icon
+        if app_extended_info is not None:
+            self.app_extended_info = app_extended_info
 
     @property
     def app_name(self):
@@ -228,6 +235,24 @@ class UpdateWarehouseAppReq:
         :type app_icon: str
         """
         self._app_icon = app_icon
+
+    @property
+    def app_extended_info(self):
+        r"""Gets the app_extended_info of this UpdateWarehouseAppReq.
+
+        :return: The app_extended_info of this UpdateWarehouseAppReq.
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.AppExtendedInfo`
+        """
+        return self._app_extended_info
+
+    @app_extended_info.setter
+    def app_extended_info(self, app_extended_info):
+        r"""Sets the app_extended_info of this UpdateWarehouseAppReq.
+
+        :param app_extended_info: The app_extended_info of this UpdateWarehouseAppReq.
+        :type app_extended_info: :class:`huaweicloudsdkworkspaceapp.v1.AppExtendedInfo`
+        """
+        self._app_extended_info = app_extended_info
 
     def to_dict(self):
         """Returns the model properties as a dict"""

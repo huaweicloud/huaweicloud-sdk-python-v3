@@ -49,7 +49,7 @@ class Resource:
         :type create_services: :class:`huaweicloudsdkworkspaceapp.v1.CreateServices`
         :param is_auto_renew: 订购关系当前是否是自动续费：0 否 1 是。
         :type is_auto_renew: int
-        :param period_num: 订购周期数取值大于0
+        :param period_num: 订购周期数取值大于0。
         :type period_num: int
         :param period_type: 包周期订单订购周期类型：2：月；3：年；4：包小时（仅限带宽加油包购买场景使用）5：绝对时间；（追加附属资源场景使用，比如主机上追加云硬盘）6：一次性（chargingMode&#x3D;1 一次性计费场景使用），必填。
         :type period_type: int
@@ -165,7 +165,7 @@ class Resource:
     def period_num(self):
         r"""Gets the period_num of this Resource.
 
-        订购周期数取值大于0
+        订购周期数取值大于0。
 
         :return: The period_num of this Resource.
         :rtype: int
@@ -176,7 +176,7 @@ class Resource:
     def period_num(self, period_num):
         r"""Sets the period_num of this Resource.
 
-        订购周期数取值大于0
+        订购周期数取值大于0。
 
         :param period_num: The period_num of this Resource.
         :type period_num: int

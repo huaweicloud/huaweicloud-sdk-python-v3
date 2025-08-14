@@ -85,13 +85,13 @@ class ListImageLocalRequest:
         :type local_image_type: str
         :param image_size: 镜像大小，单位字节
         :type image_size: int
-        :param start_latest_update_time: 最近更新时间搜索开始日期，时间单位 毫秒（ms）
+        :param start_latest_update_time: 最近更新时间搜索开始日期，时间单位：毫秒（ms）
         :type start_latest_update_time: int
-        :param end_latest_update_time: 最近更新时间搜索结束日期，时间单位 毫秒（ms）
+        :param end_latest_update_time: 最近更新时间搜索结束日期，时间单位：毫秒（ms）
         :type end_latest_update_time: int
-        :param start_latest_scan_time: 最近一次扫描完成时间搜索开始日期，时间单位 毫秒（ms）
+        :param start_latest_scan_time: 最近一次扫描完成时间搜索开始日期，时间单位：毫秒（ms）
         :type start_latest_scan_time: int
-        :param end_latest_scan_time: 最近一次扫描完成时间搜索结束日期，时间单位 毫秒（ms）
+        :param end_latest_scan_time: 最近一次扫描完成时间搜索结束日期，时间单位：毫秒（ms）
         :type end_latest_scan_time: int
         :param has_vul: 是否存在软件漏洞
         :type has_vul: bool
@@ -361,7 +361,7 @@ class ListImageLocalRequest:
     def start_latest_update_time(self):
         r"""Gets the start_latest_update_time of this ListImageLocalRequest.
 
-        最近更新时间搜索开始日期，时间单位 毫秒（ms）
+        最近更新时间搜索开始日期，时间单位：毫秒（ms）
 
         :return: The start_latest_update_time of this ListImageLocalRequest.
         :rtype: int
@@ -372,7 +372,7 @@ class ListImageLocalRequest:
     def start_latest_update_time(self, start_latest_update_time):
         r"""Sets the start_latest_update_time of this ListImageLocalRequest.
 
-        最近更新时间搜索开始日期，时间单位 毫秒（ms）
+        最近更新时间搜索开始日期，时间单位：毫秒（ms）
 
         :param start_latest_update_time: The start_latest_update_time of this ListImageLocalRequest.
         :type start_latest_update_time: int
@@ -383,7 +383,7 @@ class ListImageLocalRequest:
     def end_latest_update_time(self):
         r"""Gets the end_latest_update_time of this ListImageLocalRequest.
 
-        最近更新时间搜索结束日期，时间单位 毫秒（ms）
+        最近更新时间搜索结束日期，时间单位：毫秒（ms）
 
         :return: The end_latest_update_time of this ListImageLocalRequest.
         :rtype: int
@@ -394,7 +394,7 @@ class ListImageLocalRequest:
     def end_latest_update_time(self, end_latest_update_time):
         r"""Sets the end_latest_update_time of this ListImageLocalRequest.
 
-        最近更新时间搜索结束日期，时间单位 毫秒（ms）
+        最近更新时间搜索结束日期，时间单位：毫秒（ms）
 
         :param end_latest_update_time: The end_latest_update_time of this ListImageLocalRequest.
         :type end_latest_update_time: int
@@ -405,7 +405,7 @@ class ListImageLocalRequest:
     def start_latest_scan_time(self):
         r"""Gets the start_latest_scan_time of this ListImageLocalRequest.
 
-        最近一次扫描完成时间搜索开始日期，时间单位 毫秒（ms）
+        最近一次扫描完成时间搜索开始日期，时间单位：毫秒（ms）
 
         :return: The start_latest_scan_time of this ListImageLocalRequest.
         :rtype: int
@@ -416,7 +416,7 @@ class ListImageLocalRequest:
     def start_latest_scan_time(self, start_latest_scan_time):
         r"""Sets the start_latest_scan_time of this ListImageLocalRequest.
 
-        最近一次扫描完成时间搜索开始日期，时间单位 毫秒（ms）
+        最近一次扫描完成时间搜索开始日期，时间单位：毫秒（ms）
 
         :param start_latest_scan_time: The start_latest_scan_time of this ListImageLocalRequest.
         :type start_latest_scan_time: int
@@ -427,7 +427,7 @@ class ListImageLocalRequest:
     def end_latest_scan_time(self):
         r"""Gets the end_latest_scan_time of this ListImageLocalRequest.
 
-        最近一次扫描完成时间搜索结束日期，时间单位 毫秒（ms）
+        最近一次扫描完成时间搜索结束日期，时间单位：毫秒（ms）
 
         :return: The end_latest_scan_time of this ListImageLocalRequest.
         :rtype: int
@@ -438,7 +438,7 @@ class ListImageLocalRequest:
     def end_latest_scan_time(self, end_latest_scan_time):
         r"""Sets the end_latest_scan_time of this ListImageLocalRequest.
 
-        最近一次扫描完成时间搜索结束日期，时间单位 毫秒（ms）
+        最近一次扫描完成时间搜索结束日期，时间单位：毫秒（ms）
 
         :param end_latest_scan_time: The end_latest_scan_time of this ListImageLocalRequest.
         :type end_latest_scan_time: int

@@ -123,7 +123,7 @@ class EventProcessResInfo:
         :type process_name: str
         :param process_path: **参数解释**： 进程路径 **取值范围**： 字符长度1-256位 
         :type process_path: str
-        :param process_pid: 进程ID
+        :param process_pid: **参数解释**： 进程ID **取值范围**： 最小值0，最大值2147483647 
         :type process_pid: int
         :param process_uid: **参数解释**： 进程名称 **取值范围**： 最小值0，最大值2147483647 
         :type process_uid: int
@@ -187,7 +187,7 @@ class EventProcessResInfo:
         :type virt_process_name: str
         :param escape_mode: **参数解释**： 逃逸方式 **取值范围**： 字符长度1-64位 
         :type escape_mode: str
-        :param escape_cmd: **参数解释**： 逃逸后后执行的命令 **取值范围**： 字符长度1-128位 
+        :param escape_cmd: **参数解释**： 逃逸后执行的命令 **取值范围**： 字符长度1-128位 
         :type escape_cmd: str
         :param process_hash: **参数解释**： 进程启动文件hash **取值范围**： 字符长度1-64位 
         :type process_hash: str
@@ -404,7 +404,7 @@ class EventProcessResInfo:
     def process_pid(self):
         r"""Gets the process_pid of this EventProcessResInfo.
 
-        进程ID
+        **参数解释**： 进程ID **取值范围**： 最小值0，最大值2147483647 
 
         :return: The process_pid of this EventProcessResInfo.
         :rtype: int
@@ -415,7 +415,7 @@ class EventProcessResInfo:
     def process_pid(self, process_pid):
         r"""Sets the process_pid of this EventProcessResInfo.
 
-        进程ID
+        **参数解释**： 进程ID **取值范围**： 最小值0，最大值2147483647 
 
         :param process_pid: The process_pid of this EventProcessResInfo.
         :type process_pid: int
@@ -1108,7 +1108,7 @@ class EventProcessResInfo:
     def escape_cmd(self):
         r"""Gets the escape_cmd of this EventProcessResInfo.
 
-        **参数解释**： 逃逸后后执行的命令 **取值范围**： 字符长度1-128位 
+        **参数解释**： 逃逸后执行的命令 **取值范围**： 字符长度1-128位 
 
         :return: The escape_cmd of this EventProcessResInfo.
         :rtype: str
@@ -1119,7 +1119,7 @@ class EventProcessResInfo:
     def escape_cmd(self, escape_cmd):
         r"""Sets the escape_cmd of this EventProcessResInfo.
 
-        **参数解释**： 逃逸后后执行的命令 **取值范围**： 字符长度1-128位 
+        **参数解释**： 逃逸后执行的命令 **取值范围**： 字符长度1-128位 
 
         :param escape_cmd: The escape_cmd of this EventProcessResInfo.
         :type escape_cmd: str

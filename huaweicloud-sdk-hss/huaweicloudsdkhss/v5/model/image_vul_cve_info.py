@@ -39,7 +39,7 @@ class ImageVulCveInfo:
         :type cve_id: str
         :param cvss_score: CVSS分数
         :type cvss_score: float
-        :param publish_time: 公布时间，时间单位 毫秒（ms）
+        :param publish_time: 公布时间，时间单位：毫秒（ms）
         :type publish_time: int
         :param description: cve描述
         :type description: str
@@ -110,7 +110,7 @@ class ImageVulCveInfo:
     def publish_time(self):
         r"""Gets the publish_time of this ImageVulCveInfo.
 
-        公布时间，时间单位 毫秒（ms）
+        公布时间，时间单位：毫秒（ms）
 
         :return: The publish_time of this ImageVulCveInfo.
         :rtype: int
@@ -121,7 +121,7 @@ class ImageVulCveInfo:
     def publish_time(self, publish_time):
         r"""Sets the publish_time of this ImageVulCveInfo.
 
-        公布时间，时间单位 毫秒（ms）
+        公布时间，时间单位：毫秒（ms）
 
         :param publish_time: The publish_time of this ImageVulCveInfo.
         :type publish_time: int

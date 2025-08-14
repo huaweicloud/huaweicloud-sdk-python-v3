@@ -35,7 +35,7 @@ class ModClusterProtectionEventRequest:
 
         :param total_num: 总数
         :type total_num: int
-        :param opr: 操作类型 ignore 忽略 handle 处理 addWhiteImage 加白 
+        :param opr: 操作类型，包含以下几种： - ignore：忽略 - handle：处理 - addWhiteImage：加白
         :type opr: str
         :param data_list: 事件ID列表
         :type data_list: list[str]
@@ -78,7 +78,7 @@ class ModClusterProtectionEventRequest:
     def opr(self):
         r"""Gets the opr of this ModClusterProtectionEventRequest.
 
-        操作类型 ignore 忽略 handle 处理 addWhiteImage 加白 
+        操作类型，包含以下几种： - ignore：忽略 - handle：处理 - addWhiteImage：加白
 
         :return: The opr of this ModClusterProtectionEventRequest.
         :rtype: str
@@ -89,7 +89,7 @@ class ModClusterProtectionEventRequest:
     def opr(self, opr):
         r"""Sets the opr of this ModClusterProtectionEventRequest.
 
-        操作类型 ignore 忽略 handle 处理 addWhiteImage 加白 
+        操作类型，包含以下几种： - ignore：忽略 - handle：处理 - addWhiteImage：加白
 
         :param opr: The opr of this ModClusterProtectionEventRequest.
         :type opr: str

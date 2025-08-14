@@ -21,7 +21,8 @@ class QueueScalingPolicy:
         'impact_start_time': 'str',
         'impact_stop_time': 'str',
         'min_cu': 'int',
-        'max_cu': 'int'
+        'max_cu': 'int',
+        'inherit_elastic_resource_pool_max_cu': 'bool'
     }
 
     attribute_map = {
@@ -29,10 +30,11 @@ class QueueScalingPolicy:
         'impact_start_time': 'impact_start_time',
         'impact_stop_time': 'impact_stop_time',
         'min_cu': 'min_cu',
-        'max_cu': 'max_cu'
+        'max_cu': 'max_cu',
+        'inherit_elastic_resource_pool_max_cu': 'inherit_elastic_resource_pool_max_cu'
     }
 
-    def __init__(self, priority=None, impact_start_time=None, impact_stop_time=None, min_cu=None, max_cu=None):
+    def __init__(self, priority=None, impact_start_time=None, impact_stop_time=None, min_cu=None, max_cu=None, inherit_elastic_resource_pool_max_cu=None):
         r"""QueueScalingPolicy
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class QueueScalingPolicy:
         :type min_cu: int
         :param max_cu: 最大cu数量
         :type max_cu: int
+        :param inherit_elastic_resource_pool_max_cu: 是否继承资源池最大CU
+        :type inherit_elastic_resource_pool_max_cu: bool
         """
         
         
@@ -56,6 +60,7 @@ class QueueScalingPolicy:
         self._impact_stop_time = None
         self._min_cu = None
         self._max_cu = None
+        self._inherit_elastic_resource_pool_max_cu = None
         self.discriminator = None
 
         self.priority = priority
@@ -63,6 +68,8 @@ class QueueScalingPolicy:
         self.impact_stop_time = impact_stop_time
         self.min_cu = min_cu
         self.max_cu = max_cu
+        if inherit_elastic_resource_pool_max_cu is not None:
+            self.inherit_elastic_resource_pool_max_cu = inherit_elastic_resource_pool_max_cu
 
     @property
     def priority(self):
@@ -173,6 +180,28 @@ class QueueScalingPolicy:
         :type max_cu: int
         """
         self._max_cu = max_cu
+
+    @property
+    def inherit_elastic_resource_pool_max_cu(self):
+        r"""Gets the inherit_elastic_resource_pool_max_cu of this QueueScalingPolicy.
+
+        是否继承资源池最大CU
+
+        :return: The inherit_elastic_resource_pool_max_cu of this QueueScalingPolicy.
+        :rtype: bool
+        """
+        return self._inherit_elastic_resource_pool_max_cu
+
+    @inherit_elastic_resource_pool_max_cu.setter
+    def inherit_elastic_resource_pool_max_cu(self, inherit_elastic_resource_pool_max_cu):
+        r"""Sets the inherit_elastic_resource_pool_max_cu of this QueueScalingPolicy.
+
+        是否继承资源池最大CU
+
+        :param inherit_elastic_resource_pool_max_cu: The inherit_elastic_resource_pool_max_cu of this QueueScalingPolicy.
+        :type inherit_elastic_resource_pool_max_cu: bool
+        """
+        self._inherit_elastic_resource_pool_max_cu = inherit_elastic_resource_pool_max_cu
 
     def to_dict(self):
         """Returns the model properties as a dict"""

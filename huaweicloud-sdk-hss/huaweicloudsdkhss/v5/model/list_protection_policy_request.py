@@ -41,19 +41,19 @@ class ListProtectionPolicyRequest:
 
         The model defined in huaweicloud sdk
 
-        :param region: Region ID
+        :param region: **参数解释**: 区域ID，用于查询目的区域内的资产。获取方式请参见[获取区域ID](hss_02_0026.xml)。 **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
         :type region: str
-        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
+        :param enterprise_project_id: **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
         :type enterprise_project_id: str
-        :param offset: 偏移量：指定返回记录的开始位置
+        :param offset: **参数解释**: 指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 取值0-2000000 **默认取值**: 0 
         :type offset: int
-        :param limit: 每页显示个数
+        :param limit: **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
         :type limit: int
-        :param policy_name: 防护策略名称
+        :param policy_name: **参数解释**: 防护策略名称 **约束限制**: 不涉及 **取值范围**: 字符长度0-255 **默认取值**: 不涉及 
         :type policy_name: str
-        :param protect_policy_id: 防护策略id
+        :param protect_policy_id: **参数解释**: 防护策略id **约束限制**: 不涉及 **取值范围**: 字符长度0-128 **默认取值**: 不涉及 
         :type protect_policy_id: str
-        :param operating_system: 策略支持的操作系统，包含如下：   - Windows : Windows系统   - Linux : Linux系统
+        :param operating_system: **参数解释**: 策略支持的操作系统 **约束限制**: 不涉及 **取值范围**: 包含如下：   - Windows : Windows系统   - Linux : Linux系统 **默认取值**: 不涉及
         :type operating_system: str
         """
         
@@ -87,7 +87,7 @@ class ListProtectionPolicyRequest:
     def region(self):
         r"""Gets the region of this ListProtectionPolicyRequest.
 
-        Region ID
+        **参数解释**: 区域ID，用于查询目的区域内的资产。获取方式请参见[获取区域ID](hss_02_0026.xml)。 **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
 
         :return: The region of this ListProtectionPolicyRequest.
         :rtype: str
@@ -98,7 +98,7 @@ class ListProtectionPolicyRequest:
     def region(self, region):
         r"""Sets the region of this ListProtectionPolicyRequest.
 
-        Region ID
+        **参数解释**: 区域ID，用于查询目的区域内的资产。获取方式请参见[获取区域ID](hss_02_0026.xml)。 **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
 
         :param region: The region of this ListProtectionPolicyRequest.
         :type region: str
@@ -109,7 +109,7 @@ class ListProtectionPolicyRequest:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this ListProtectionPolicyRequest.
 
-        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
+        **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
 
         :return: The enterprise_project_id of this ListProtectionPolicyRequest.
         :rtype: str
@@ -120,7 +120,7 @@ class ListProtectionPolicyRequest:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this ListProtectionPolicyRequest.
 
-        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
+        **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
 
         :param enterprise_project_id: The enterprise_project_id of this ListProtectionPolicyRequest.
         :type enterprise_project_id: str
@@ -131,7 +131,7 @@ class ListProtectionPolicyRequest:
     def offset(self):
         r"""Gets the offset of this ListProtectionPolicyRequest.
 
-        偏移量：指定返回记录的开始位置
+        **参数解释**: 指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 取值0-2000000 **默认取值**: 0 
 
         :return: The offset of this ListProtectionPolicyRequest.
         :rtype: int
@@ -142,7 +142,7 @@ class ListProtectionPolicyRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListProtectionPolicyRequest.
 
-        偏移量：指定返回记录的开始位置
+        **参数解释**: 指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 取值0-2000000 **默认取值**: 0 
 
         :param offset: The offset of this ListProtectionPolicyRequest.
         :type offset: int
@@ -153,7 +153,7 @@ class ListProtectionPolicyRequest:
     def limit(self):
         r"""Gets the limit of this ListProtectionPolicyRequest.
 
-        每页显示个数
+        **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
 
         :return: The limit of this ListProtectionPolicyRequest.
         :rtype: int
@@ -164,7 +164,7 @@ class ListProtectionPolicyRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListProtectionPolicyRequest.
 
-        每页显示个数
+        **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
 
         :param limit: The limit of this ListProtectionPolicyRequest.
         :type limit: int
@@ -175,7 +175,7 @@ class ListProtectionPolicyRequest:
     def policy_name(self):
         r"""Gets the policy_name of this ListProtectionPolicyRequest.
 
-        防护策略名称
+        **参数解释**: 防护策略名称 **约束限制**: 不涉及 **取值范围**: 字符长度0-255 **默认取值**: 不涉及 
 
         :return: The policy_name of this ListProtectionPolicyRequest.
         :rtype: str
@@ -186,7 +186,7 @@ class ListProtectionPolicyRequest:
     def policy_name(self, policy_name):
         r"""Sets the policy_name of this ListProtectionPolicyRequest.
 
-        防护策略名称
+        **参数解释**: 防护策略名称 **约束限制**: 不涉及 **取值范围**: 字符长度0-255 **默认取值**: 不涉及 
 
         :param policy_name: The policy_name of this ListProtectionPolicyRequest.
         :type policy_name: str
@@ -197,7 +197,7 @@ class ListProtectionPolicyRequest:
     def protect_policy_id(self):
         r"""Gets the protect_policy_id of this ListProtectionPolicyRequest.
 
-        防护策略id
+        **参数解释**: 防护策略id **约束限制**: 不涉及 **取值范围**: 字符长度0-128 **默认取值**: 不涉及 
 
         :return: The protect_policy_id of this ListProtectionPolicyRequest.
         :rtype: str
@@ -208,7 +208,7 @@ class ListProtectionPolicyRequest:
     def protect_policy_id(self, protect_policy_id):
         r"""Sets the protect_policy_id of this ListProtectionPolicyRequest.
 
-        防护策略id
+        **参数解释**: 防护策略id **约束限制**: 不涉及 **取值范围**: 字符长度0-128 **默认取值**: 不涉及 
 
         :param protect_policy_id: The protect_policy_id of this ListProtectionPolicyRequest.
         :type protect_policy_id: str
@@ -219,7 +219,7 @@ class ListProtectionPolicyRequest:
     def operating_system(self):
         r"""Gets the operating_system of this ListProtectionPolicyRequest.
 
-        策略支持的操作系统，包含如下：   - Windows : Windows系统   - Linux : Linux系统
+        **参数解释**: 策略支持的操作系统 **约束限制**: 不涉及 **取值范围**: 包含如下：   - Windows : Windows系统   - Linux : Linux系统 **默认取值**: 不涉及
 
         :return: The operating_system of this ListProtectionPolicyRequest.
         :rtype: str
@@ -230,7 +230,7 @@ class ListProtectionPolicyRequest:
     def operating_system(self, operating_system):
         r"""Sets the operating_system of this ListProtectionPolicyRequest.
 
-        策略支持的操作系统，包含如下：   - Windows : Windows系统   - Linux : Linux系统
+        **参数解释**: 策略支持的操作系统 **约束限制**: 不涉及 **取值范围**: 包含如下：   - Windows : Windows系统   - Linux : Linux系统 **默认取值**: 不涉及
 
         :param operating_system: The operating_system of this ListProtectionPolicyRequest.
         :type operating_system: str

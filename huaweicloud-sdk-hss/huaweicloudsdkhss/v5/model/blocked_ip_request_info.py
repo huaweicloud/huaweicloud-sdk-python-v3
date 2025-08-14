@@ -33,11 +33,11 @@ class BlockedIpRequestInfo:
 
         The model defined in huaweicloud sdk
 
-        :param host_id: **参数解释**: 服务器ID **取值范围**: 字符长度1-64位 
+        :param host_id: **参数解释**： 主机ID **取值范围**： 字符长度1-64位 
         :type host_id: str
         :param src_ip: 攻击源IP
         :type src_ip: str
-        :param login_type: 登录类型，包含如下: - \&quot;mysql\&quot; # mysql服务 - \&quot;rdp\&quot; # rdp服务服务 - \&quot;ssh\&quot; # ssh服务 - \&quot;vsftp\&quot; # vsftp服务
+        :param login_type: 登录类型，包含如下: - \&quot;mysql\&quot; # mysql服务 - \&quot;rdp\&quot; # rdp服务 - \&quot;ssh\&quot; # ssh服务 - \&quot;vsftp\&quot; # vsftp服务
         :type login_type: str
         """
         
@@ -56,7 +56,7 @@ class BlockedIpRequestInfo:
     def host_id(self):
         r"""Gets the host_id of this BlockedIpRequestInfo.
 
-        **参数解释**: 服务器ID **取值范围**: 字符长度1-64位 
+        **参数解释**： 主机ID **取值范围**： 字符长度1-64位 
 
         :return: The host_id of this BlockedIpRequestInfo.
         :rtype: str
@@ -67,7 +67,7 @@ class BlockedIpRequestInfo:
     def host_id(self, host_id):
         r"""Sets the host_id of this BlockedIpRequestInfo.
 
-        **参数解释**: 服务器ID **取值范围**: 字符长度1-64位 
+        **参数解释**： 主机ID **取值范围**： 字符长度1-64位 
 
         :param host_id: The host_id of this BlockedIpRequestInfo.
         :type host_id: str
@@ -100,7 +100,7 @@ class BlockedIpRequestInfo:
     def login_type(self):
         r"""Gets the login_type of this BlockedIpRequestInfo.
 
-        登录类型，包含如下: - \"mysql\" # mysql服务 - \"rdp\" # rdp服务服务 - \"ssh\" # ssh服务 - \"vsftp\" # vsftp服务
+        登录类型，包含如下: - \"mysql\" # mysql服务 - \"rdp\" # rdp服务 - \"ssh\" # ssh服务 - \"vsftp\" # vsftp服务
 
         :return: The login_type of this BlockedIpRequestInfo.
         :rtype: str
@@ -111,7 +111,7 @@ class BlockedIpRequestInfo:
     def login_type(self, login_type):
         r"""Sets the login_type of this BlockedIpRequestInfo.
 
-        登录类型，包含如下: - \"mysql\" # mysql服务 - \"rdp\" # rdp服务服务 - \"ssh\" # ssh服务 - \"vsftp\" # vsftp服务
+        登录类型，包含如下: - \"mysql\" # mysql服务 - \"rdp\" # rdp服务 - \"ssh\" # ssh服务 - \"vsftp\" # vsftp服务
 
         :param login_type: The login_type of this BlockedIpRequestInfo.
         :type login_type: str

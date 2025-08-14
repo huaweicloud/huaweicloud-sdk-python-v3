@@ -55,7 +55,7 @@ class BackupVaultInfo:
         :type vault_name: str
         :param vault_size: 存储库总容量，单位GB
         :type vault_size: int
-        :param vault_used: 已使用容量，单位MB，指的是已有备份占用的容量，例如绑定了1台主机，已经有两个备份数，两个备份60G,则已使用容量为60G。
+        :param vault_used: 已使用容量，单位MB，指的是已有备份占用的容量，例如绑定了1台主机，已经有两个备份数，两个备份60G，则已使用容量为60G。
         :type vault_used: int
         :param vault_allocated: 已分配容量，单位GB，指绑定的服务器大小，例如绑定了1台主机，主机大小40G，则已分配容量为40G。
         :type vault_allocated: int
@@ -181,7 +181,7 @@ class BackupVaultInfo:
     def vault_used(self):
         r"""Gets the vault_used of this BackupVaultInfo.
 
-        已使用容量，单位MB，指的是已有备份占用的容量，例如绑定了1台主机，已经有两个备份数，两个备份60G,则已使用容量为60G。
+        已使用容量，单位MB，指的是已有备份占用的容量，例如绑定了1台主机，已经有两个备份数，两个备份60G，则已使用容量为60G。
 
         :return: The vault_used of this BackupVaultInfo.
         :rtype: int
@@ -192,7 +192,7 @@ class BackupVaultInfo:
     def vault_used(self, vault_used):
         r"""Sets the vault_used of this BackupVaultInfo.
 
-        已使用容量，单位MB，指的是已有备份占用的容量，例如绑定了1台主机，已经有两个备份数，两个备份60G,则已使用容量为60G。
+        已使用容量，单位MB，指的是已有备份占用的容量，例如绑定了1台主机，已经有两个备份数，两个备份60G，则已使用容量为60G。
 
         :param vault_used: The vault_used of this BackupVaultInfo.
         :type vault_used: int

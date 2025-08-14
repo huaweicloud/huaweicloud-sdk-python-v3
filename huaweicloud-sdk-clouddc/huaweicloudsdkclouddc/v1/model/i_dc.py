@@ -21,7 +21,7 @@ class IDc:
         'irack_num': 'int',
         'id': 'str',
         'region': 'str',
-        'deccription': 'str'
+        'description': 'str'
     }
 
     attribute_map = {
@@ -29,10 +29,10 @@ class IDc:
         'irack_num': 'irack_num',
         'id': 'id',
         'region': 'region',
-        'deccription': 'deccription'
+        'description': 'description'
     }
 
-    def __init__(self, name=None, irack_num=None, id=None, region=None, deccription=None):
+    def __init__(self, name=None, irack_num=None, id=None, region=None, description=None):
         r"""IDc
 
         The model defined in huaweicloud sdk
@@ -45,8 +45,8 @@ class IDc:
         :type id: str
         :param region: 
         :type region: str
-        :param deccription: 
-        :type deccription: str
+        :param description: 
+        :type description: str
         """
         
         
@@ -55,7 +55,7 @@ class IDc:
         self._irack_num = None
         self._id = None
         self._region = None
-        self._deccription = None
+        self._description = None
         self.discriminator = None
 
         self.name = name
@@ -63,8 +63,8 @@ class IDc:
         self.id = id
         if region is not None:
             self.region = region
-        if deccription is not None:
-            self.deccription = deccription
+        if description is not None:
+            self.description = description
 
     @property
     def name(self):
@@ -139,22 +139,22 @@ class IDc:
         self._region = region
 
     @property
-    def deccription(self):
-        r"""Gets the deccription of this IDc.
+    def description(self):
+        r"""Gets the description of this IDc.
 
-        :return: The deccription of this IDc.
+        :return: The description of this IDc.
         :rtype: str
         """
-        return self._deccription
+        return self._description
 
-    @deccription.setter
-    def deccription(self, deccription):
-        r"""Sets the deccription of this IDc.
+    @description.setter
+    def description(self, description):
+        r"""Sets the description of this IDc.
 
-        :param deccription: The deccription of this IDc.
-        :type deccription: str
+        :param description: The description of this IDc.
+        :type description: str
         """
-        self._deccription = deccription
+        self._description = description
 
     def to_dict(self):
         """Returns the model properties as a dict"""

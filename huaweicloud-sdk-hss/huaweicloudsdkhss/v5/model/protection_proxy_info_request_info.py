@@ -47,23 +47,23 @@ class ProtectionProxyInfoRequestInfo:
 
         The model defined in huaweicloud sdk
 
-        :param policy_id: 策略ID，新建策略可不填
+        :param policy_id: **参数解释**: 策略ID，新建策略可不填。 **约束限制**: 不涉及 **取值范围**: 字符长度0-64 **默认取值**: 不涉及
         :type policy_id: str
-        :param policy_name: 策略名称，新建防护策略则必填
+        :param policy_name: **参数解释**: 策略名称，新建防护策略则必填 **约束限制**: 不涉及 **取值范围**: 字符长度0-64 **默认取值**: 不涉及
         :type policy_name: str
-        :param protection_mode: 防护动作，新建防护策略则必填。包含如下：   - alarm_and_isolation ：告警并自动隔离。   - alarm_only ：仅告警。
+        :param protection_mode: **参数解释**: 防护动作，新建防护策略则必填 **约束限制**: 不涉及 **取值范围**: 包含如下：   - alarm_and_isolation ：告警并自动隔离。   - alarm_only ：仅告警。 **默认取值**: 不涉及
         :type protection_mode: str
-        :param bait_protection_status: 是否开启诱饵防护，新建防护策略则必填。包含如下1种, 默认为开启防护诱饵防护。   - opened ：开启。   - closed ：关闭。
+        :param bait_protection_status: **参数解释**: 是否开启诱饵防护，新建防护策略则必填。 **约束限制**: 不涉及 **取值范围**: 包含如下1种：   - opened ：开启。 **默认取值**: 不涉及
         :type bait_protection_status: str
-        :param protection_directory: 防护目录，新建防护策略则必填
+        :param protection_directory: **参数解释**: 防护目录，新建防护策略则必填。 **约束限制**: 多个目录请用英文分号隔开，最多支持填写20个防护目录 **取值范围**: 字符长度0-128位，特殊符号只允许使用._-+，不能以空格开头，防护目录长度不得超过256个字符。 **默认取值**: 不涉及 
         :type protection_directory: str
-        :param protection_type: 防护类型，新建防护策略则必填
+        :param protection_type: **参数解释**: 防护文件类型，例如：docx，txt，avi,新建防护策略则必填 **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
         :type protection_type: str
-        :param exclude_directory: 排除目录，可选填
+        :param exclude_directory: **参数解释**: 排除目录(选填) **约束限制**: 多个目录请用英文分号隔开，最多支持填写20个排除目录 **取值范围**: 字符长度0-128位，特殊符号只允许使用._-+，不能以空格开头，防护目录长度不得超过256个字符。 **默认取值**: 不涉及 
         :type exclude_directory: str
-        :param runtime_detection_status: 是否运行时检测，选填。包含如下2种，暂时只有关闭一种状态，为保留字段。   - opened ：开启。   - closed ：关闭。
+        :param runtime_detection_status: **参数解释**: 是否运行时检测 **约束限制**: 不涉及 **取值范围**: 暂时只有关闭一种状态，为预留字段。   - closed ：关闭。 **默认取值**: 不涉及
         :type runtime_detection_status: str
-        :param operating_system: 操作系统，新建防护策略则必填。包含如下：   - Windows : Windows系统   - Linux : Linux系统
+        :param operating_system: **参数解释**: 支持该策略的操作系统，新建防护策略则必填 **约束限制**: 不涉及 **取值范围**: 包含两种：   - Windows : Windows系统   - Linux : Linux系统 **默认取值**: 不涉及
         :type operating_system: str
         :param process_whitelist: 进程白名单
         :type process_whitelist: list[:class:`huaweicloudsdkhss.v5.TrustProcessInfo`]
@@ -108,7 +108,7 @@ class ProtectionProxyInfoRequestInfo:
     def policy_id(self):
         r"""Gets the policy_id of this ProtectionProxyInfoRequestInfo.
 
-        策略ID，新建策略可不填
+        **参数解释**: 策略ID，新建策略可不填。 **约束限制**: 不涉及 **取值范围**: 字符长度0-64 **默认取值**: 不涉及
 
         :return: The policy_id of this ProtectionProxyInfoRequestInfo.
         :rtype: str
@@ -119,7 +119,7 @@ class ProtectionProxyInfoRequestInfo:
     def policy_id(self, policy_id):
         r"""Sets the policy_id of this ProtectionProxyInfoRequestInfo.
 
-        策略ID，新建策略可不填
+        **参数解释**: 策略ID，新建策略可不填。 **约束限制**: 不涉及 **取值范围**: 字符长度0-64 **默认取值**: 不涉及
 
         :param policy_id: The policy_id of this ProtectionProxyInfoRequestInfo.
         :type policy_id: str
@@ -130,7 +130,7 @@ class ProtectionProxyInfoRequestInfo:
     def policy_name(self):
         r"""Gets the policy_name of this ProtectionProxyInfoRequestInfo.
 
-        策略名称，新建防护策略则必填
+        **参数解释**: 策略名称，新建防护策略则必填 **约束限制**: 不涉及 **取值范围**: 字符长度0-64 **默认取值**: 不涉及
 
         :return: The policy_name of this ProtectionProxyInfoRequestInfo.
         :rtype: str
@@ -141,7 +141,7 @@ class ProtectionProxyInfoRequestInfo:
     def policy_name(self, policy_name):
         r"""Sets the policy_name of this ProtectionProxyInfoRequestInfo.
 
-        策略名称，新建防护策略则必填
+        **参数解释**: 策略名称，新建防护策略则必填 **约束限制**: 不涉及 **取值范围**: 字符长度0-64 **默认取值**: 不涉及
 
         :param policy_name: The policy_name of this ProtectionProxyInfoRequestInfo.
         :type policy_name: str
@@ -152,7 +152,7 @@ class ProtectionProxyInfoRequestInfo:
     def protection_mode(self):
         r"""Gets the protection_mode of this ProtectionProxyInfoRequestInfo.
 
-        防护动作，新建防护策略则必填。包含如下：   - alarm_and_isolation ：告警并自动隔离。   - alarm_only ：仅告警。
+        **参数解释**: 防护动作，新建防护策略则必填 **约束限制**: 不涉及 **取值范围**: 包含如下：   - alarm_and_isolation ：告警并自动隔离。   - alarm_only ：仅告警。 **默认取值**: 不涉及
 
         :return: The protection_mode of this ProtectionProxyInfoRequestInfo.
         :rtype: str
@@ -163,7 +163,7 @@ class ProtectionProxyInfoRequestInfo:
     def protection_mode(self, protection_mode):
         r"""Sets the protection_mode of this ProtectionProxyInfoRequestInfo.
 
-        防护动作，新建防护策略则必填。包含如下：   - alarm_and_isolation ：告警并自动隔离。   - alarm_only ：仅告警。
+        **参数解释**: 防护动作，新建防护策略则必填 **约束限制**: 不涉及 **取值范围**: 包含如下：   - alarm_and_isolation ：告警并自动隔离。   - alarm_only ：仅告警。 **默认取值**: 不涉及
 
         :param protection_mode: The protection_mode of this ProtectionProxyInfoRequestInfo.
         :type protection_mode: str
@@ -174,7 +174,7 @@ class ProtectionProxyInfoRequestInfo:
     def bait_protection_status(self):
         r"""Gets the bait_protection_status of this ProtectionProxyInfoRequestInfo.
 
-        是否开启诱饵防护，新建防护策略则必填。包含如下1种, 默认为开启防护诱饵防护。   - opened ：开启。   - closed ：关闭。
+        **参数解释**: 是否开启诱饵防护，新建防护策略则必填。 **约束限制**: 不涉及 **取值范围**: 包含如下1种：   - opened ：开启。 **默认取值**: 不涉及
 
         :return: The bait_protection_status of this ProtectionProxyInfoRequestInfo.
         :rtype: str
@@ -185,7 +185,7 @@ class ProtectionProxyInfoRequestInfo:
     def bait_protection_status(self, bait_protection_status):
         r"""Sets the bait_protection_status of this ProtectionProxyInfoRequestInfo.
 
-        是否开启诱饵防护，新建防护策略则必填。包含如下1种, 默认为开启防护诱饵防护。   - opened ：开启。   - closed ：关闭。
+        **参数解释**: 是否开启诱饵防护，新建防护策略则必填。 **约束限制**: 不涉及 **取值范围**: 包含如下1种：   - opened ：开启。 **默认取值**: 不涉及
 
         :param bait_protection_status: The bait_protection_status of this ProtectionProxyInfoRequestInfo.
         :type bait_protection_status: str
@@ -196,7 +196,7 @@ class ProtectionProxyInfoRequestInfo:
     def protection_directory(self):
         r"""Gets the protection_directory of this ProtectionProxyInfoRequestInfo.
 
-        防护目录，新建防护策略则必填
+        **参数解释**: 防护目录，新建防护策略则必填。 **约束限制**: 多个目录请用英文分号隔开，最多支持填写20个防护目录 **取值范围**: 字符长度0-128位，特殊符号只允许使用._-+，不能以空格开头，防护目录长度不得超过256个字符。 **默认取值**: 不涉及 
 
         :return: The protection_directory of this ProtectionProxyInfoRequestInfo.
         :rtype: str
@@ -207,7 +207,7 @@ class ProtectionProxyInfoRequestInfo:
     def protection_directory(self, protection_directory):
         r"""Sets the protection_directory of this ProtectionProxyInfoRequestInfo.
 
-        防护目录，新建防护策略则必填
+        **参数解释**: 防护目录，新建防护策略则必填。 **约束限制**: 多个目录请用英文分号隔开，最多支持填写20个防护目录 **取值范围**: 字符长度0-128位，特殊符号只允许使用._-+，不能以空格开头，防护目录长度不得超过256个字符。 **默认取值**: 不涉及 
 
         :param protection_directory: The protection_directory of this ProtectionProxyInfoRequestInfo.
         :type protection_directory: str
@@ -218,7 +218,7 @@ class ProtectionProxyInfoRequestInfo:
     def protection_type(self):
         r"""Gets the protection_type of this ProtectionProxyInfoRequestInfo.
 
-        防护类型，新建防护策略则必填
+        **参数解释**: 防护文件类型，例如：docx，txt，avi,新建防护策略则必填 **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
 
         :return: The protection_type of this ProtectionProxyInfoRequestInfo.
         :rtype: str
@@ -229,7 +229,7 @@ class ProtectionProxyInfoRequestInfo:
     def protection_type(self, protection_type):
         r"""Sets the protection_type of this ProtectionProxyInfoRequestInfo.
 
-        防护类型，新建防护策略则必填
+        **参数解释**: 防护文件类型，例如：docx，txt，avi,新建防护策略则必填 **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
 
         :param protection_type: The protection_type of this ProtectionProxyInfoRequestInfo.
         :type protection_type: str
@@ -240,7 +240,7 @@ class ProtectionProxyInfoRequestInfo:
     def exclude_directory(self):
         r"""Gets the exclude_directory of this ProtectionProxyInfoRequestInfo.
 
-        排除目录，可选填
+        **参数解释**: 排除目录(选填) **约束限制**: 多个目录请用英文分号隔开，最多支持填写20个排除目录 **取值范围**: 字符长度0-128位，特殊符号只允许使用._-+，不能以空格开头，防护目录长度不得超过256个字符。 **默认取值**: 不涉及 
 
         :return: The exclude_directory of this ProtectionProxyInfoRequestInfo.
         :rtype: str
@@ -251,7 +251,7 @@ class ProtectionProxyInfoRequestInfo:
     def exclude_directory(self, exclude_directory):
         r"""Sets the exclude_directory of this ProtectionProxyInfoRequestInfo.
 
-        排除目录，可选填
+        **参数解释**: 排除目录(选填) **约束限制**: 多个目录请用英文分号隔开，最多支持填写20个排除目录 **取值范围**: 字符长度0-128位，特殊符号只允许使用._-+，不能以空格开头，防护目录长度不得超过256个字符。 **默认取值**: 不涉及 
 
         :param exclude_directory: The exclude_directory of this ProtectionProxyInfoRequestInfo.
         :type exclude_directory: str
@@ -262,7 +262,7 @@ class ProtectionProxyInfoRequestInfo:
     def runtime_detection_status(self):
         r"""Gets the runtime_detection_status of this ProtectionProxyInfoRequestInfo.
 
-        是否运行时检测，选填。包含如下2种，暂时只有关闭一种状态，为保留字段。   - opened ：开启。   - closed ：关闭。
+        **参数解释**: 是否运行时检测 **约束限制**: 不涉及 **取值范围**: 暂时只有关闭一种状态，为预留字段。   - closed ：关闭。 **默认取值**: 不涉及
 
         :return: The runtime_detection_status of this ProtectionProxyInfoRequestInfo.
         :rtype: str
@@ -273,7 +273,7 @@ class ProtectionProxyInfoRequestInfo:
     def runtime_detection_status(self, runtime_detection_status):
         r"""Sets the runtime_detection_status of this ProtectionProxyInfoRequestInfo.
 
-        是否运行时检测，选填。包含如下2种，暂时只有关闭一种状态，为保留字段。   - opened ：开启。   - closed ：关闭。
+        **参数解释**: 是否运行时检测 **约束限制**: 不涉及 **取值范围**: 暂时只有关闭一种状态，为预留字段。   - closed ：关闭。 **默认取值**: 不涉及
 
         :param runtime_detection_status: The runtime_detection_status of this ProtectionProxyInfoRequestInfo.
         :type runtime_detection_status: str
@@ -284,7 +284,7 @@ class ProtectionProxyInfoRequestInfo:
     def operating_system(self):
         r"""Gets the operating_system of this ProtectionProxyInfoRequestInfo.
 
-        操作系统，新建防护策略则必填。包含如下：   - Windows : Windows系统   - Linux : Linux系统
+        **参数解释**: 支持该策略的操作系统，新建防护策略则必填 **约束限制**: 不涉及 **取值范围**: 包含两种：   - Windows : Windows系统   - Linux : Linux系统 **默认取值**: 不涉及
 
         :return: The operating_system of this ProtectionProxyInfoRequestInfo.
         :rtype: str
@@ -295,7 +295,7 @@ class ProtectionProxyInfoRequestInfo:
     def operating_system(self, operating_system):
         r"""Sets the operating_system of this ProtectionProxyInfoRequestInfo.
 
-        操作系统，新建防护策略则必填。包含如下：   - Windows : Windows系统   - Linux : Linux系统
+        **参数解释**: 支持该策略的操作系统，新建防护策略则必填 **约束限制**: 不涉及 **取值范围**: 包含两种：   - Windows : Windows系统   - Linux : Linux系统 **默认取值**: 不涉及
 
         :param operating_system: The operating_system of this ProtectionProxyInfoRequestInfo.
         :type operating_system: str

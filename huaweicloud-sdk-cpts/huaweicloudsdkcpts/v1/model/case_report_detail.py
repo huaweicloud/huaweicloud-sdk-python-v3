@@ -23,10 +23,10 @@ class CaseReportDetail:
         'average_resp_time_check_point': 'float',
         'average_resp_time_check_res': 'bool',
         'avg_network_traffic': 'float',
-        'avg_rec_bytes': 'int',
+        'avg_rec_bytes': 'float',
         'avg_rec_bytes_check_point': 'float',
         'avg_rec_bytes_check_res': 'bool',
-        'avg_sent_bytes': 'int',
+        'avg_sent_bytes': 'float',
         'avg_sent_bytes_check_point': 'float',
         'avg_sent_bytes_check_res': 'bool',
         'avg_tran_resp_time': 'float',
@@ -424,13 +424,13 @@ class CaseReportDetail:
         :param avg_network_traffic: 平均带宽
         :type avg_network_traffic: float
         :param avg_rec_bytes: 平均下行带宽
-        :type avg_rec_bytes: int
+        :type avg_rec_bytes: float
         :param avg_rec_bytes_check_point: 平均下行带宽检查点
         :type avg_rec_bytes_check_point: float
         :param avg_rec_bytes_check_res: 平均下行带宽检查结果
         :type avg_rec_bytes_check_res: bool
         :param avg_sent_bytes: 平均上行带宽
-        :type avg_sent_bytes: int
+        :type avg_sent_bytes: float
         :param avg_sent_bytes_check_point: 平均上行带宽检查点
         :type avg_sent_bytes_check_point: float
         :param avg_sent_bytes_check_res: 平均上行带宽检查结果
@@ -1517,7 +1517,7 @@ class CaseReportDetail:
         平均下行带宽
 
         :return: The avg_rec_bytes of this CaseReportDetail.
-        :rtype: int
+        :rtype: float
         """
         return self._avg_rec_bytes
 
@@ -1528,7 +1528,7 @@ class CaseReportDetail:
         平均下行带宽
 
         :param avg_rec_bytes: The avg_rec_bytes of this CaseReportDetail.
-        :type avg_rec_bytes: int
+        :type avg_rec_bytes: float
         """
         self._avg_rec_bytes = avg_rec_bytes
 
@@ -1583,7 +1583,7 @@ class CaseReportDetail:
         平均上行带宽
 
         :return: The avg_sent_bytes of this CaseReportDetail.
-        :rtype: int
+        :rtype: float
         """
         return self._avg_sent_bytes
 
@@ -1594,7 +1594,7 @@ class CaseReportDetail:
         平均上行带宽
 
         :param avg_sent_bytes: The avg_sent_bytes of this CaseReportDetail.
-        :type avg_sent_bytes: int
+        :type avg_sent_bytes: float
         """
         self._avg_sent_bytes = avg_sent_bytes
 

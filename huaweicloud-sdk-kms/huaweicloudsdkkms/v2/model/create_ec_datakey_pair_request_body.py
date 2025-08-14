@@ -21,7 +21,9 @@ class CreateEcDatakeyPairRequestBody:
         'key_spec': 'str',
         'with_plain_text': 'bool',
         'additional_authenticated_data': 'str',
-        'sequence': 'str'
+        'sequence': 'str',
+        'pin': 'str',
+        'pin_type': 'str'
     }
 
     attribute_map = {
@@ -29,10 +31,12 @@ class CreateEcDatakeyPairRequestBody:
         'key_spec': 'key_spec',
         'with_plain_text': 'with_plain_text',
         'additional_authenticated_data': 'additional_authenticated_data',
-        'sequence': 'sequence'
+        'sequence': 'sequence',
+        'pin': 'pin',
+        'pin_type': 'pin_type'
     }
 
-    def __init__(self, key_id=None, key_spec=None, with_plain_text=None, additional_authenticated_data=None, sequence=None):
+    def __init__(self, key_id=None, key_spec=None, with_plain_text=None, additional_authenticated_data=None, sequence=None, pin=None, pin_type=None):
         r"""CreateEcDatakeyPairRequestBody
 
         The model defined in huaweicloud sdk
@@ -47,6 +51,10 @@ class CreateEcDatakeyPairRequestBody:
         :type additional_authenticated_data: str
         :param sequence: 请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
         :type sequence: str
+        :param pin: 指定PIN码保护。仅四级密评场景支持该参数。
+        :type pin: str
+        :param pin_type: pin码的类型，默认为“CipherText”，可选“PlainText”。仅四级密评场景支持该参数。
+        :type pin_type: str
         """
         
         
@@ -56,6 +64,8 @@ class CreateEcDatakeyPairRequestBody:
         self._with_plain_text = None
         self._additional_authenticated_data = None
         self._sequence = None
+        self._pin = None
+        self._pin_type = None
         self.discriminator = None
 
         self.key_id = key_id
@@ -66,6 +76,10 @@ class CreateEcDatakeyPairRequestBody:
             self.additional_authenticated_data = additional_authenticated_data
         if sequence is not None:
             self.sequence = sequence
+        if pin is not None:
+            self.pin = pin
+        if pin_type is not None:
+            self.pin_type = pin_type
 
     @property
     def key_id(self):
@@ -176,6 +190,50 @@ class CreateEcDatakeyPairRequestBody:
         :type sequence: str
         """
         self._sequence = sequence
+
+    @property
+    def pin(self):
+        r"""Gets the pin of this CreateEcDatakeyPairRequestBody.
+
+        指定PIN码保护。仅四级密评场景支持该参数。
+
+        :return: The pin of this CreateEcDatakeyPairRequestBody.
+        :rtype: str
+        """
+        return self._pin
+
+    @pin.setter
+    def pin(self, pin):
+        r"""Sets the pin of this CreateEcDatakeyPairRequestBody.
+
+        指定PIN码保护。仅四级密评场景支持该参数。
+
+        :param pin: The pin of this CreateEcDatakeyPairRequestBody.
+        :type pin: str
+        """
+        self._pin = pin
+
+    @property
+    def pin_type(self):
+        r"""Gets the pin_type of this CreateEcDatakeyPairRequestBody.
+
+        pin码的类型，默认为“CipherText”，可选“PlainText”。仅四级密评场景支持该参数。
+
+        :return: The pin_type of this CreateEcDatakeyPairRequestBody.
+        :rtype: str
+        """
+        return self._pin_type
+
+    @pin_type.setter
+    def pin_type(self, pin_type):
+        r"""Sets the pin_type of this CreateEcDatakeyPairRequestBody.
+
+        pin码的类型，默认为“CipherText”，可选“PlainText”。仅四级密评场景支持该参数。
+
+        :param pin_type: The pin_type of this CreateEcDatakeyPairRequestBody.
+        :type pin_type: str
+        """
+        self._pin_type = pin_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

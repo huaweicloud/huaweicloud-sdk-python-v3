@@ -34,7 +34,7 @@ class ListAppsResponse(SdkResponse):
 
         :param total_num: **参数解释**: 总数 **取值范围**: 最小值0，最大值2147483647 
         :type total_num: int
-        :param data_list: 软件列表
+        :param data_list: **参数解释**: 软件列表 **取值范围**: 最小值0，最大值10000 
         :type data_list: list[:class:`huaweicloudsdkhss.v5.AppResponseInfo`]
         """
         
@@ -75,7 +75,7 @@ class ListAppsResponse(SdkResponse):
     def data_list(self):
         r"""Gets the data_list of this ListAppsResponse.
 
-        软件列表
+        **参数解释**: 软件列表 **取值范围**: 最小值0，最大值10000 
 
         :return: The data_list of this ListAppsResponse.
         :rtype: list[:class:`huaweicloudsdkhss.v5.AppResponseInfo`]
@@ -86,7 +86,7 @@ class ListAppsResponse(SdkResponse):
     def data_list(self, data_list):
         r"""Sets the data_list of this ListAppsResponse.
 
-        软件列表
+        **参数解释**: 软件列表 **取值范围**: 最小值0，最大值10000 
 
         :param data_list: The data_list of this ListAppsResponse.
         :type data_list: list[:class:`huaweicloudsdkhss.v5.AppResponseInfo`]

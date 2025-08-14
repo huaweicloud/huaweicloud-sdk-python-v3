@@ -61,39 +61,39 @@ class EventUserResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param user_id: 用户uid
+        :param user_id: **参数解释**： 用户uid **取值范围**： 最小值0，最大值2147483647 
         :type user_id: int
-        :param user_gid: 用户gid
+        :param user_gid: **参数解释**： 用户gid **取值范围**： 最小值0，最大值2147483647 
         :type user_gid: int
-        :param user_name: 用户名称
+        :param user_name: **参数解释**： 用户名称 **取值范围**： 字符长度1-256位 
         :type user_name: str
-        :param user_group_name: 用户组名称
+        :param user_group_name: **参数解释**： 用户组名称 **取值范围**： 字符长度1-256位 
         :type user_group_name: str
-        :param user_home_dir: 用户home目录
+        :param user_home_dir: **参数解释**： 用户home目录 **取值范围**： 字符长度1-256位 
         :type user_home_dir: str
-        :param login_ip: 用户登录ip
+        :param login_ip: **参数解释**： 用户登录IP **取值范围**： 字符长度1-256位 
         :type login_ip: str
-        :param service_type: 服务类型，包含如下:   - system   - mysql   - redis
+        :param service_type: **参数解释**： 服务类型 **取值范围**： - system：系统 - mysql：数据库 - redis：Redis 
         :type service_type: str
-        :param service_port: 登录服务端口
+        :param service_port: **参数解释**： 登录服务端口 **取值范围**： 最小值0，最大值2147483647 
         :type service_port: int
-        :param login_mode: 登录方式
+        :param login_mode: **参数解释**： 登录方式 **取值范围**： 最小值0，最大值2147483647 
         :type login_mode: int
-        :param login_last_time: 用户最后一次登录时间
+        :param login_last_time: **参数解释**： 用户最后一次登录时间 **取值范围**： 最小值0，最大值9223372036854775807 
         :type login_last_time: int
-        :param login_fail_count: 用户登录失败次数
+        :param login_fail_count: **参数解释**： 用户登录失败次数 **取值范围**： 最小值0，最大值2147483647 
         :type login_fail_count: int
-        :param pwd_hash: 口令hash
+        :param pwd_hash: **参数解释**： 口令hash **取值范围**： 字符长度1-256位 
         :type pwd_hash: str
-        :param pwd_with_fuzzing: 匿名化处理后的口令
+        :param pwd_with_fuzzing: **参数解释**： 匿名化处理后的口令 **取值范围**： 字符长度1-256位 
         :type pwd_with_fuzzing: str
-        :param pwd_used_days: 密码使用的天数
+        :param pwd_used_days: **参数解释**： 密码使用的天数 **取值范围**： 最小值0，最大值2147483647 
         :type pwd_used_days: int
-        :param pwd_min_days: 口令的最短有效期限
+        :param pwd_min_days: **参数解释**： 口令的最短有效期限 **取值范围**： 最小值0，最大值2147483647 
         :type pwd_min_days: int
-        :param pwd_max_days: 口令的最长有效期限
+        :param pwd_max_days: **参数解释**： 口令的最长有效期限 **取值范围**： 最小值0，最大值2147483647 
         :type pwd_max_days: int
-        :param pwd_warn_left_days: 口令无效时提前告警天数
+        :param pwd_warn_left_days: **参数解释**： 口令无效时提前告警天数 **取值范围**： 最小值0，最大值2147483647 
         :type pwd_warn_left_days: int
         """
         
@@ -157,7 +157,7 @@ class EventUserResponseInfo:
     def user_id(self):
         r"""Gets the user_id of this EventUserResponseInfo.
 
-        用户uid
+        **参数解释**： 用户uid **取值范围**： 最小值0，最大值2147483647 
 
         :return: The user_id of this EventUserResponseInfo.
         :rtype: int
@@ -168,7 +168,7 @@ class EventUserResponseInfo:
     def user_id(self, user_id):
         r"""Sets the user_id of this EventUserResponseInfo.
 
-        用户uid
+        **参数解释**： 用户uid **取值范围**： 最小值0，最大值2147483647 
 
         :param user_id: The user_id of this EventUserResponseInfo.
         :type user_id: int
@@ -179,7 +179,7 @@ class EventUserResponseInfo:
     def user_gid(self):
         r"""Gets the user_gid of this EventUserResponseInfo.
 
-        用户gid
+        **参数解释**： 用户gid **取值范围**： 最小值0，最大值2147483647 
 
         :return: The user_gid of this EventUserResponseInfo.
         :rtype: int
@@ -190,7 +190,7 @@ class EventUserResponseInfo:
     def user_gid(self, user_gid):
         r"""Sets the user_gid of this EventUserResponseInfo.
 
-        用户gid
+        **参数解释**： 用户gid **取值范围**： 最小值0，最大值2147483647 
 
         :param user_gid: The user_gid of this EventUserResponseInfo.
         :type user_gid: int
@@ -201,7 +201,7 @@ class EventUserResponseInfo:
     def user_name(self):
         r"""Gets the user_name of this EventUserResponseInfo.
 
-        用户名称
+        **参数解释**： 用户名称 **取值范围**： 字符长度1-256位 
 
         :return: The user_name of this EventUserResponseInfo.
         :rtype: str
@@ -212,7 +212,7 @@ class EventUserResponseInfo:
     def user_name(self, user_name):
         r"""Sets the user_name of this EventUserResponseInfo.
 
-        用户名称
+        **参数解释**： 用户名称 **取值范围**： 字符长度1-256位 
 
         :param user_name: The user_name of this EventUserResponseInfo.
         :type user_name: str
@@ -223,7 +223,7 @@ class EventUserResponseInfo:
     def user_group_name(self):
         r"""Gets the user_group_name of this EventUserResponseInfo.
 
-        用户组名称
+        **参数解释**： 用户组名称 **取值范围**： 字符长度1-256位 
 
         :return: The user_group_name of this EventUserResponseInfo.
         :rtype: str
@@ -234,7 +234,7 @@ class EventUserResponseInfo:
     def user_group_name(self, user_group_name):
         r"""Sets the user_group_name of this EventUserResponseInfo.
 
-        用户组名称
+        **参数解释**： 用户组名称 **取值范围**： 字符长度1-256位 
 
         :param user_group_name: The user_group_name of this EventUserResponseInfo.
         :type user_group_name: str
@@ -245,7 +245,7 @@ class EventUserResponseInfo:
     def user_home_dir(self):
         r"""Gets the user_home_dir of this EventUserResponseInfo.
 
-        用户home目录
+        **参数解释**： 用户home目录 **取值范围**： 字符长度1-256位 
 
         :return: The user_home_dir of this EventUserResponseInfo.
         :rtype: str
@@ -256,7 +256,7 @@ class EventUserResponseInfo:
     def user_home_dir(self, user_home_dir):
         r"""Sets the user_home_dir of this EventUserResponseInfo.
 
-        用户home目录
+        **参数解释**： 用户home目录 **取值范围**： 字符长度1-256位 
 
         :param user_home_dir: The user_home_dir of this EventUserResponseInfo.
         :type user_home_dir: str
@@ -267,7 +267,7 @@ class EventUserResponseInfo:
     def login_ip(self):
         r"""Gets the login_ip of this EventUserResponseInfo.
 
-        用户登录ip
+        **参数解释**： 用户登录IP **取值范围**： 字符长度1-256位 
 
         :return: The login_ip of this EventUserResponseInfo.
         :rtype: str
@@ -278,7 +278,7 @@ class EventUserResponseInfo:
     def login_ip(self, login_ip):
         r"""Sets the login_ip of this EventUserResponseInfo.
 
-        用户登录ip
+        **参数解释**： 用户登录IP **取值范围**： 字符长度1-256位 
 
         :param login_ip: The login_ip of this EventUserResponseInfo.
         :type login_ip: str
@@ -289,7 +289,7 @@ class EventUserResponseInfo:
     def service_type(self):
         r"""Gets the service_type of this EventUserResponseInfo.
 
-        服务类型，包含如下:   - system   - mysql   - redis
+        **参数解释**： 服务类型 **取值范围**： - system：系统 - mysql：数据库 - redis：Redis 
 
         :return: The service_type of this EventUserResponseInfo.
         :rtype: str
@@ -300,7 +300,7 @@ class EventUserResponseInfo:
     def service_type(self, service_type):
         r"""Sets the service_type of this EventUserResponseInfo.
 
-        服务类型，包含如下:   - system   - mysql   - redis
+        **参数解释**： 服务类型 **取值范围**： - system：系统 - mysql：数据库 - redis：Redis 
 
         :param service_type: The service_type of this EventUserResponseInfo.
         :type service_type: str
@@ -311,7 +311,7 @@ class EventUserResponseInfo:
     def service_port(self):
         r"""Gets the service_port of this EventUserResponseInfo.
 
-        登录服务端口
+        **参数解释**： 登录服务端口 **取值范围**： 最小值0，最大值2147483647 
 
         :return: The service_port of this EventUserResponseInfo.
         :rtype: int
@@ -322,7 +322,7 @@ class EventUserResponseInfo:
     def service_port(self, service_port):
         r"""Sets the service_port of this EventUserResponseInfo.
 
-        登录服务端口
+        **参数解释**： 登录服务端口 **取值范围**： 最小值0，最大值2147483647 
 
         :param service_port: The service_port of this EventUserResponseInfo.
         :type service_port: int
@@ -333,7 +333,7 @@ class EventUserResponseInfo:
     def login_mode(self):
         r"""Gets the login_mode of this EventUserResponseInfo.
 
-        登录方式
+        **参数解释**： 登录方式 **取值范围**： 最小值0，最大值2147483647 
 
         :return: The login_mode of this EventUserResponseInfo.
         :rtype: int
@@ -344,7 +344,7 @@ class EventUserResponseInfo:
     def login_mode(self, login_mode):
         r"""Sets the login_mode of this EventUserResponseInfo.
 
-        登录方式
+        **参数解释**： 登录方式 **取值范围**： 最小值0，最大值2147483647 
 
         :param login_mode: The login_mode of this EventUserResponseInfo.
         :type login_mode: int
@@ -355,7 +355,7 @@ class EventUserResponseInfo:
     def login_last_time(self):
         r"""Gets the login_last_time of this EventUserResponseInfo.
 
-        用户最后一次登录时间
+        **参数解释**： 用户最后一次登录时间 **取值范围**： 最小值0，最大值9223372036854775807 
 
         :return: The login_last_time of this EventUserResponseInfo.
         :rtype: int
@@ -366,7 +366,7 @@ class EventUserResponseInfo:
     def login_last_time(self, login_last_time):
         r"""Sets the login_last_time of this EventUserResponseInfo.
 
-        用户最后一次登录时间
+        **参数解释**： 用户最后一次登录时间 **取值范围**： 最小值0，最大值9223372036854775807 
 
         :param login_last_time: The login_last_time of this EventUserResponseInfo.
         :type login_last_time: int
@@ -377,7 +377,7 @@ class EventUserResponseInfo:
     def login_fail_count(self):
         r"""Gets the login_fail_count of this EventUserResponseInfo.
 
-        用户登录失败次数
+        **参数解释**： 用户登录失败次数 **取值范围**： 最小值0，最大值2147483647 
 
         :return: The login_fail_count of this EventUserResponseInfo.
         :rtype: int
@@ -388,7 +388,7 @@ class EventUserResponseInfo:
     def login_fail_count(self, login_fail_count):
         r"""Sets the login_fail_count of this EventUserResponseInfo.
 
-        用户登录失败次数
+        **参数解释**： 用户登录失败次数 **取值范围**： 最小值0，最大值2147483647 
 
         :param login_fail_count: The login_fail_count of this EventUserResponseInfo.
         :type login_fail_count: int
@@ -399,7 +399,7 @@ class EventUserResponseInfo:
     def pwd_hash(self):
         r"""Gets the pwd_hash of this EventUserResponseInfo.
 
-        口令hash
+        **参数解释**： 口令hash **取值范围**： 字符长度1-256位 
 
         :return: The pwd_hash of this EventUserResponseInfo.
         :rtype: str
@@ -410,7 +410,7 @@ class EventUserResponseInfo:
     def pwd_hash(self, pwd_hash):
         r"""Sets the pwd_hash of this EventUserResponseInfo.
 
-        口令hash
+        **参数解释**： 口令hash **取值范围**： 字符长度1-256位 
 
         :param pwd_hash: The pwd_hash of this EventUserResponseInfo.
         :type pwd_hash: str
@@ -421,7 +421,7 @@ class EventUserResponseInfo:
     def pwd_with_fuzzing(self):
         r"""Gets the pwd_with_fuzzing of this EventUserResponseInfo.
 
-        匿名化处理后的口令
+        **参数解释**： 匿名化处理后的口令 **取值范围**： 字符长度1-256位 
 
         :return: The pwd_with_fuzzing of this EventUserResponseInfo.
         :rtype: str
@@ -432,7 +432,7 @@ class EventUserResponseInfo:
     def pwd_with_fuzzing(self, pwd_with_fuzzing):
         r"""Sets the pwd_with_fuzzing of this EventUserResponseInfo.
 
-        匿名化处理后的口令
+        **参数解释**： 匿名化处理后的口令 **取值范围**： 字符长度1-256位 
 
         :param pwd_with_fuzzing: The pwd_with_fuzzing of this EventUserResponseInfo.
         :type pwd_with_fuzzing: str
@@ -443,7 +443,7 @@ class EventUserResponseInfo:
     def pwd_used_days(self):
         r"""Gets the pwd_used_days of this EventUserResponseInfo.
 
-        密码使用的天数
+        **参数解释**： 密码使用的天数 **取值范围**： 最小值0，最大值2147483647 
 
         :return: The pwd_used_days of this EventUserResponseInfo.
         :rtype: int
@@ -454,7 +454,7 @@ class EventUserResponseInfo:
     def pwd_used_days(self, pwd_used_days):
         r"""Sets the pwd_used_days of this EventUserResponseInfo.
 
-        密码使用的天数
+        **参数解释**： 密码使用的天数 **取值范围**： 最小值0，最大值2147483647 
 
         :param pwd_used_days: The pwd_used_days of this EventUserResponseInfo.
         :type pwd_used_days: int
@@ -465,7 +465,7 @@ class EventUserResponseInfo:
     def pwd_min_days(self):
         r"""Gets the pwd_min_days of this EventUserResponseInfo.
 
-        口令的最短有效期限
+        **参数解释**： 口令的最短有效期限 **取值范围**： 最小值0，最大值2147483647 
 
         :return: The pwd_min_days of this EventUserResponseInfo.
         :rtype: int
@@ -476,7 +476,7 @@ class EventUserResponseInfo:
     def pwd_min_days(self, pwd_min_days):
         r"""Sets the pwd_min_days of this EventUserResponseInfo.
 
-        口令的最短有效期限
+        **参数解释**： 口令的最短有效期限 **取值范围**： 最小值0，最大值2147483647 
 
         :param pwd_min_days: The pwd_min_days of this EventUserResponseInfo.
         :type pwd_min_days: int
@@ -487,7 +487,7 @@ class EventUserResponseInfo:
     def pwd_max_days(self):
         r"""Gets the pwd_max_days of this EventUserResponseInfo.
 
-        口令的最长有效期限
+        **参数解释**： 口令的最长有效期限 **取值范围**： 最小值0，最大值2147483647 
 
         :return: The pwd_max_days of this EventUserResponseInfo.
         :rtype: int
@@ -498,7 +498,7 @@ class EventUserResponseInfo:
     def pwd_max_days(self, pwd_max_days):
         r"""Sets the pwd_max_days of this EventUserResponseInfo.
 
-        口令的最长有效期限
+        **参数解释**： 口令的最长有效期限 **取值范围**： 最小值0，最大值2147483647 
 
         :param pwd_max_days: The pwd_max_days of this EventUserResponseInfo.
         :type pwd_max_days: int
@@ -509,7 +509,7 @@ class EventUserResponseInfo:
     def pwd_warn_left_days(self):
         r"""Gets the pwd_warn_left_days of this EventUserResponseInfo.
 
-        口令无效时提前告警天数
+        **参数解释**： 口令无效时提前告警天数 **取值范围**： 最小值0，最大值2147483647 
 
         :return: The pwd_warn_left_days of this EventUserResponseInfo.
         :rtype: int
@@ -520,7 +520,7 @@ class EventUserResponseInfo:
     def pwd_warn_left_days(self, pwd_warn_left_days):
         r"""Sets the pwd_warn_left_days of this EventUserResponseInfo.
 
-        口令无效时提前告警天数
+        **参数解释**： 口令无效时提前告警天数 **取值范围**： 最小值0，最大值2147483647 
 
         :param pwd_warn_left_days: The pwd_warn_left_days of this EventUserResponseInfo.
         :type pwd_warn_left_days: int

@@ -40,9 +40,9 @@ class ListPermissionSetProvisioningStatusRequest:
 
         :param x_security_token: 如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
         :type x_security_token: str
-        :param instance_id: IAM身份中心实例的全局唯一标识符（ID）。
+        :param instance_id: IAM Identity Center实例的全局唯一标识符（ID）
         :type instance_id: str
-        :param limit: 每个请求返回的最大结果数
+        :param limit: 每个请求返回的最大结果数。
         :type limit: int
         :param marker: 分页标记
         :type marker: str
@@ -95,7 +95,7 @@ class ListPermissionSetProvisioningStatusRequest:
     def instance_id(self):
         r"""Gets the instance_id of this ListPermissionSetProvisioningStatusRequest.
 
-        IAM身份中心实例的全局唯一标识符（ID）。
+        IAM Identity Center实例的全局唯一标识符（ID）
 
         :return: The instance_id of this ListPermissionSetProvisioningStatusRequest.
         :rtype: str
@@ -106,7 +106,7 @@ class ListPermissionSetProvisioningStatusRequest:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this ListPermissionSetProvisioningStatusRequest.
 
-        IAM身份中心实例的全局唯一标识符（ID）。
+        IAM Identity Center实例的全局唯一标识符（ID）
 
         :param instance_id: The instance_id of this ListPermissionSetProvisioningStatusRequest.
         :type instance_id: str
@@ -117,7 +117,7 @@ class ListPermissionSetProvisioningStatusRequest:
     def limit(self):
         r"""Gets the limit of this ListPermissionSetProvisioningStatusRequest.
 
-        每个请求返回的最大结果数
+        每个请求返回的最大结果数。
 
         :return: The limit of this ListPermissionSetProvisioningStatusRequest.
         :rtype: int
@@ -128,7 +128,7 @@ class ListPermissionSetProvisioningStatusRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListPermissionSetProvisioningStatusRequest.
 
-        每个请求返回的最大结果数
+        每个请求返回的最大结果数。
 
         :param limit: The limit of this ListPermissionSetProvisioningStatusRequest.
         :type limit: int

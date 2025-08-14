@@ -43,7 +43,7 @@ class BatchStartProtectionRequestInfo:
         :type operating_system: str
         :param ransom_protection_status: 勒索防护是否开启，包含如下：   - closed ：关闭。   - opened ：开启。   若选择开启，protection_policy_id必填一项
         :type ransom_protection_status: str
-        :param protection_policy_id: 防护策略ID,若ransom_protection_status为opened,则该字段必选
+        :param protection_policy_id: 防护策略ID，若ransom_protection_status为opened，则该字段必选
         :type protection_policy_id: str
         :param backup_protection_status: 是否服务器备份，包含如下：   - closed ：关闭。   - opened ：开启。   若选择开启服务器备份，则vault_id必填
         :type backup_protection_status: str
@@ -120,7 +120,7 @@ class BatchStartProtectionRequestInfo:
     def protection_policy_id(self):
         r"""Gets the protection_policy_id of this BatchStartProtectionRequestInfo.
 
-        防护策略ID,若ransom_protection_status为opened,则该字段必选
+        防护策略ID，若ransom_protection_status为opened，则该字段必选
 
         :return: The protection_policy_id of this BatchStartProtectionRequestInfo.
         :rtype: str
@@ -131,7 +131,7 @@ class BatchStartProtectionRequestInfo:
     def protection_policy_id(self, protection_policy_id):
         r"""Sets the protection_policy_id of this BatchStartProtectionRequestInfo.
 
-        防护策略ID,若ransom_protection_status为opened,则该字段必选
+        防护策略ID，若ransom_protection_status为opened，则该字段必选
 
         :param protection_policy_id: The protection_policy_id of this BatchStartProtectionRequestInfo.
         :type protection_policy_id: str

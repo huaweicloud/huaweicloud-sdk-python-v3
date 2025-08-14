@@ -33,7 +33,7 @@ class ServerGroupTagsInfo:
 
         :param server_group_id: 服务器组唯一标识。
         :type server_group_id: str
-        :param tags: 标签列表
+        :param tags: 标签列表。
         :type tags: list[:class:`huaweicloudsdkworkspaceapp.v1.TmsTag`]
         """
         
@@ -74,7 +74,7 @@ class ServerGroupTagsInfo:
     def tags(self):
         r"""Gets the tags of this ServerGroupTagsInfo.
 
-        标签列表
+        标签列表。
 
         :return: The tags of this ServerGroupTagsInfo.
         :rtype: list[:class:`huaweicloudsdkworkspaceapp.v1.TmsTag`]
@@ -85,7 +85,7 @@ class ServerGroupTagsInfo:
     def tags(self, tags):
         r"""Sets the tags of this ServerGroupTagsInfo.
 
-        标签列表
+        标签列表。
 
         :param tags: The tags of this ServerGroupTagsInfo.
         :type tags: list[:class:`huaweicloudsdkworkspaceapp.v1.TmsTag`]

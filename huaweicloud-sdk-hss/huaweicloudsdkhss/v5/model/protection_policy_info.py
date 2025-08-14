@@ -61,11 +61,11 @@ class ProtectionPolicyInfo:
         :type policy_id: str
         :param policy_name: **参数解释**: 防护策略名称 **取值范围**: 字符长度1-128 
         :type policy_name: str
-        :param protection_mode: **参数解释**: 防护动作，包含如下2种。   - alarm_and_isolation ：告警并自动隔离。   - alarm_only ：仅告警。 **取值范围**: 字符长度0-128
+        :param protection_mode: **参数解释**: 防护动作 **取值范围**: 包含如下2种。   - alarm_and_isolation ：告警并自动隔离。   - alarm_only ：仅告警。
         :type protection_mode: str
-        :param bait_protection_status: **参数解释**: 是否开启诱饵防护，包含如下1种, 默认为开启防护诱饵防护。   - opened ：开启。   - closed ：关闭。  **取值范围**: 字符长度0-128
+        :param bait_protection_status: **参数解释**: 是否开启诱饵防护 **取值范围**: 包含如下1种，默认为开启防护诱饵防护。   - opened ：开启。
         :type bait_protection_status: str
-        :param deploy_mode: **参数解释**: 是否开启动态诱饵防护，包含如下2种, 默认为关闭动态诱饵防护。   - opened ：开启。   - closed ：关闭。   **取值范围**: 字符长度0-128
+        :param deploy_mode: **参数解释**: 是否开启动态诱饵防护 **取值范围**: 包含如下2种，默认为关闭动态诱饵防护。   - opened ：开启。   - closed ：关闭。
         :type deploy_mode: str
         :param protection_directory: **参数解释**: 防护目录 **取值范围**: 字符长度1-128 
         :type protection_directory: str
@@ -73,7 +73,7 @@ class ProtectionPolicyInfo:
         :type protection_type: str
         :param exclude_directory: **参数解释**: 排除目录，选填 **取值范围**: 字符长度1-128 
         :type exclude_directory: str
-        :param runtime_detection_status: **参数解释**: 是否运行时检测，包含如下2种，暂时只有关闭一种状态，为保留字段。   - opened ：开启。   - closed ：关闭。 **取值范围**: 字符长度0-128
+        :param runtime_detection_status: **参数解释**: 是否运行时检测 **取值范围**: 包含如下2种，暂时只有关闭一种状态，为保留字段。   - opened ：开启。   - closed ：关闭。
         :type runtime_detection_status: str
         :param runtime_detection_directory: **参数解释**: 运行时检测目录，现在为保留字段 **取值范围**: 字符长度1-128
         :type runtime_detection_directory: str
@@ -83,7 +83,7 @@ class ProtectionPolicyInfo:
         :type operating_system: str
         :param process_whitelist: 进程白名单
         :type process_whitelist: list[:class:`huaweicloudsdkhss.v5.TrustProcessInfo`]
-        :param default_policy: **参数解释**: 是否为默认策略，包含如下2种。   - 0 ：非默认策略。   - 1 ：默认策略 **取值范围**: 取值大小0-10
+        :param default_policy: **参数解释**: 是否为默认策略 **取值范围**: 包含如下2种。   - 0 ：非默认策略。   - 1 ：默认策略
         :type default_policy: int
         :param ai_protection_status: **参数解释**: 是否开启AI勒索防护，包含如下1种, 默认为开启AI勒索防护。   - opened ：开启。   - closed ：关闭。  **取值范围**: 字符长度1-128
         :type ai_protection_status: str
@@ -187,7 +187,7 @@ class ProtectionPolicyInfo:
     def protection_mode(self):
         r"""Gets the protection_mode of this ProtectionPolicyInfo.
 
-        **参数解释**: 防护动作，包含如下2种。   - alarm_and_isolation ：告警并自动隔离。   - alarm_only ：仅告警。 **取值范围**: 字符长度0-128
+        **参数解释**: 防护动作 **取值范围**: 包含如下2种。   - alarm_and_isolation ：告警并自动隔离。   - alarm_only ：仅告警。
 
         :return: The protection_mode of this ProtectionPolicyInfo.
         :rtype: str
@@ -198,7 +198,7 @@ class ProtectionPolicyInfo:
     def protection_mode(self, protection_mode):
         r"""Sets the protection_mode of this ProtectionPolicyInfo.
 
-        **参数解释**: 防护动作，包含如下2种。   - alarm_and_isolation ：告警并自动隔离。   - alarm_only ：仅告警。 **取值范围**: 字符长度0-128
+        **参数解释**: 防护动作 **取值范围**: 包含如下2种。   - alarm_and_isolation ：告警并自动隔离。   - alarm_only ：仅告警。
 
         :param protection_mode: The protection_mode of this ProtectionPolicyInfo.
         :type protection_mode: str
@@ -209,7 +209,7 @@ class ProtectionPolicyInfo:
     def bait_protection_status(self):
         r"""Gets the bait_protection_status of this ProtectionPolicyInfo.
 
-        **参数解释**: 是否开启诱饵防护，包含如下1种, 默认为开启防护诱饵防护。   - opened ：开启。   - closed ：关闭。  **取值范围**: 字符长度0-128
+        **参数解释**: 是否开启诱饵防护 **取值范围**: 包含如下1种，默认为开启防护诱饵防护。   - opened ：开启。
 
         :return: The bait_protection_status of this ProtectionPolicyInfo.
         :rtype: str
@@ -220,7 +220,7 @@ class ProtectionPolicyInfo:
     def bait_protection_status(self, bait_protection_status):
         r"""Sets the bait_protection_status of this ProtectionPolicyInfo.
 
-        **参数解释**: 是否开启诱饵防护，包含如下1种, 默认为开启防护诱饵防护。   - opened ：开启。   - closed ：关闭。  **取值范围**: 字符长度0-128
+        **参数解释**: 是否开启诱饵防护 **取值范围**: 包含如下1种，默认为开启防护诱饵防护。   - opened ：开启。
 
         :param bait_protection_status: The bait_protection_status of this ProtectionPolicyInfo.
         :type bait_protection_status: str
@@ -231,7 +231,7 @@ class ProtectionPolicyInfo:
     def deploy_mode(self):
         r"""Gets the deploy_mode of this ProtectionPolicyInfo.
 
-        **参数解释**: 是否开启动态诱饵防护，包含如下2种, 默认为关闭动态诱饵防护。   - opened ：开启。   - closed ：关闭。   **取值范围**: 字符长度0-128
+        **参数解释**: 是否开启动态诱饵防护 **取值范围**: 包含如下2种，默认为关闭动态诱饵防护。   - opened ：开启。   - closed ：关闭。
 
         :return: The deploy_mode of this ProtectionPolicyInfo.
         :rtype: str
@@ -242,7 +242,7 @@ class ProtectionPolicyInfo:
     def deploy_mode(self, deploy_mode):
         r"""Sets the deploy_mode of this ProtectionPolicyInfo.
 
-        **参数解释**: 是否开启动态诱饵防护，包含如下2种, 默认为关闭动态诱饵防护。   - opened ：开启。   - closed ：关闭。   **取值范围**: 字符长度0-128
+        **参数解释**: 是否开启动态诱饵防护 **取值范围**: 包含如下2种，默认为关闭动态诱饵防护。   - opened ：开启。   - closed ：关闭。
 
         :param deploy_mode: The deploy_mode of this ProtectionPolicyInfo.
         :type deploy_mode: str
@@ -319,7 +319,7 @@ class ProtectionPolicyInfo:
     def runtime_detection_status(self):
         r"""Gets the runtime_detection_status of this ProtectionPolicyInfo.
 
-        **参数解释**: 是否运行时检测，包含如下2种，暂时只有关闭一种状态，为保留字段。   - opened ：开启。   - closed ：关闭。 **取值范围**: 字符长度0-128
+        **参数解释**: 是否运行时检测 **取值范围**: 包含如下2种，暂时只有关闭一种状态，为保留字段。   - opened ：开启。   - closed ：关闭。
 
         :return: The runtime_detection_status of this ProtectionPolicyInfo.
         :rtype: str
@@ -330,7 +330,7 @@ class ProtectionPolicyInfo:
     def runtime_detection_status(self, runtime_detection_status):
         r"""Sets the runtime_detection_status of this ProtectionPolicyInfo.
 
-        **参数解释**: 是否运行时检测，包含如下2种，暂时只有关闭一种状态，为保留字段。   - opened ：开启。   - closed ：关闭。 **取值范围**: 字符长度0-128
+        **参数解释**: 是否运行时检测 **取值范围**: 包含如下2种，暂时只有关闭一种状态，为保留字段。   - opened ：开启。   - closed ：关闭。
 
         :param runtime_detection_status: The runtime_detection_status of this ProtectionPolicyInfo.
         :type runtime_detection_status: str
@@ -429,7 +429,7 @@ class ProtectionPolicyInfo:
     def default_policy(self):
         r"""Gets the default_policy of this ProtectionPolicyInfo.
 
-        **参数解释**: 是否为默认策略，包含如下2种。   - 0 ：非默认策略。   - 1 ：默认策略 **取值范围**: 取值大小0-10
+        **参数解释**: 是否为默认策略 **取值范围**: 包含如下2种。   - 0 ：非默认策略。   - 1 ：默认策略
 
         :return: The default_policy of this ProtectionPolicyInfo.
         :rtype: int
@@ -440,7 +440,7 @@ class ProtectionPolicyInfo:
     def default_policy(self, default_policy):
         r"""Sets the default_policy of this ProtectionPolicyInfo.
 
-        **参数解释**: 是否为默认策略，包含如下2种。   - 0 ：非默认策略。   - 1 ：默认策略 **取值范围**: 取值大小0-10
+        **参数解释**: 是否为默认策略 **取值范围**: 包含如下2种。   - 0 ：非默认策略。   - 1 ：默认策略
 
         :param default_policy: The default_policy of this ProtectionPolicyInfo.
         :type default_policy: int

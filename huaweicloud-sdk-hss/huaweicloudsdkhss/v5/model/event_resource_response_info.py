@@ -77,55 +77,55 @@ class EventResourceResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param domain_id: 租户账号ID
+        :param domain_id: **参数解释**： 租户账号ID **取值范围**： 字符长度1-256位 
         :type domain_id: str
-        :param project_id: 项目ID
+        :param project_id: **参数解释**： 项目ID **取值范围**： 字符长度1-256位 
         :type project_id: str
-        :param enterprise_project_id: 企业项目ID
+        :param enterprise_project_id: **参数解释**： 企业项目ID **取值范围**： 字符长度1-256位 
         :type enterprise_project_id: str
-        :param region_name: Region名称
+        :param region_name: **参数解释**： Region名称 **取值范围**： 字符长度1-256位 
         :type region_name: str
-        :param vpc_id: VPC ID
+        :param vpc_id: **参数解释**： VPC ID **取值范围**： 字符长度1-256位 
         :type vpc_id: str
-        :param cloud_id: 云主机ID
+        :param cloud_id: **参数解释**： 云主机ID **取值范围**： 字符长度1-256位 
         :type cloud_id: str
-        :param vm_name: 虚拟机名称
+        :param vm_name: **参数解释**： 虚拟机名称 **取值范围**： 字符长度1-256位 
         :type vm_name: str
-        :param vm_uuid: 虚拟机UUID，即主机ID
+        :param vm_uuid: **参数解释**： 虚拟机UUID，即主机ID **取值范围**： 字符长度1-256位 
         :type vm_uuid: str
-        :param container_id: 容器ID
+        :param container_id: **参数解释**： 容器ID **取值范围**： 字符长度1-256位 
         :type container_id: str
-        :param container_status: 容器状态
+        :param container_status: **参数解释**： 容器状态 **取值范围**： 字符长度1-256位 
         :type container_status: str
-        :param pod_uid: pod uid
+        :param pod_uid: **参数解释**： pod uid **取值范围**： 字符长度1-256位 
         :type pod_uid: str
-        :param pod_name: pod name
+        :param pod_name: **参数解释**： pod name **取值范围**： 字符长度1-256位 
         :type pod_name: str
-        :param namespace: namespace
+        :param namespace: **参数解释**： namespace **取值范围**： 字符长度1-256位 
         :type namespace: str
-        :param cluster_id: 集群id
+        :param cluster_id: **参数解释**： 集群ID **取值范围**： 字符长度1-256位 
         :type cluster_id: str
-        :param cluster_name: 集群名称
+        :param cluster_name: **参数解释**： 集群名称 **取值范围**： 字符长度1-256位 
         :type cluster_name: str
-        :param image_id: 镜像ID
+        :param image_id: **参数解释**： 镜像ID **取值范围**： 字符长度1-256位 
         :type image_id: str
-        :param image_name: 镜像名称
+        :param image_name: **参数解释**： 镜像名称 **取值范围**： 字符长度1-256位 
         :type image_name: str
-        :param host_attr: 主机属性
+        :param host_attr: **参数解释**： 主机属性 **取值范围**： 字符长度1-256位 
         :type host_attr: str
-        :param service: 业务服务
+        :param service: **参数解释**： 业务服务 **取值范围**： 字符长度1-256位 
         :type service: str
-        :param micro_service: 微服务
+        :param micro_service: **参数解释**： 微服务 **取值范围**： 字符长度1-256位 
         :type micro_service: str
-        :param sys_arch: 系统CPU架构
+        :param sys_arch: **参数解释**： 系统CPU架构 **取值范围**： 字符长度1-256位 
         :type sys_arch: str
-        :param os_bit: 操作系统位数
+        :param os_bit: **参数解释**： 操作系统位数 **取值范围**： 字符长度1-256位 
         :type os_bit: str
-        :param os_type: 操作系统类型
+        :param os_type: **参数解释**： 操作系统类型 **取值范围**： 字符长度1-256位 
         :type os_type: str
-        :param os_name: 操作系统名称
+        :param os_name: **参数解释**： 操作系统名称 **取值范围**： 字符长度1-256位 
         :type os_name: str
-        :param os_version: 操作系统版本
+        :param os_version: **参数解释**： 操作系统版本 **取值范围**： 字符长度1-256位 
         :type os_version: str
         """
         
@@ -213,7 +213,7 @@ class EventResourceResponseInfo:
     def domain_id(self):
         r"""Gets the domain_id of this EventResourceResponseInfo.
 
-        租户账号ID
+        **参数解释**： 租户账号ID **取值范围**： 字符长度1-256位 
 
         :return: The domain_id of this EventResourceResponseInfo.
         :rtype: str
@@ -224,7 +224,7 @@ class EventResourceResponseInfo:
     def domain_id(self, domain_id):
         r"""Sets the domain_id of this EventResourceResponseInfo.
 
-        租户账号ID
+        **参数解释**： 租户账号ID **取值范围**： 字符长度1-256位 
 
         :param domain_id: The domain_id of this EventResourceResponseInfo.
         :type domain_id: str
@@ -235,7 +235,7 @@ class EventResourceResponseInfo:
     def project_id(self):
         r"""Gets the project_id of this EventResourceResponseInfo.
 
-        项目ID
+        **参数解释**： 项目ID **取值范围**： 字符长度1-256位 
 
         :return: The project_id of this EventResourceResponseInfo.
         :rtype: str
@@ -246,7 +246,7 @@ class EventResourceResponseInfo:
     def project_id(self, project_id):
         r"""Sets the project_id of this EventResourceResponseInfo.
 
-        项目ID
+        **参数解释**： 项目ID **取值范围**： 字符长度1-256位 
 
         :param project_id: The project_id of this EventResourceResponseInfo.
         :type project_id: str
@@ -257,7 +257,7 @@ class EventResourceResponseInfo:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this EventResourceResponseInfo.
 
-        企业项目ID
+        **参数解释**： 企业项目ID **取值范围**： 字符长度1-256位 
 
         :return: The enterprise_project_id of this EventResourceResponseInfo.
         :rtype: str
@@ -268,7 +268,7 @@ class EventResourceResponseInfo:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this EventResourceResponseInfo.
 
-        企业项目ID
+        **参数解释**： 企业项目ID **取值范围**： 字符长度1-256位 
 
         :param enterprise_project_id: The enterprise_project_id of this EventResourceResponseInfo.
         :type enterprise_project_id: str
@@ -279,7 +279,7 @@ class EventResourceResponseInfo:
     def region_name(self):
         r"""Gets the region_name of this EventResourceResponseInfo.
 
-        Region名称
+        **参数解释**： Region名称 **取值范围**： 字符长度1-256位 
 
         :return: The region_name of this EventResourceResponseInfo.
         :rtype: str
@@ -290,7 +290,7 @@ class EventResourceResponseInfo:
     def region_name(self, region_name):
         r"""Sets the region_name of this EventResourceResponseInfo.
 
-        Region名称
+        **参数解释**： Region名称 **取值范围**： 字符长度1-256位 
 
         :param region_name: The region_name of this EventResourceResponseInfo.
         :type region_name: str
@@ -301,7 +301,7 @@ class EventResourceResponseInfo:
     def vpc_id(self):
         r"""Gets the vpc_id of this EventResourceResponseInfo.
 
-        VPC ID
+        **参数解释**： VPC ID **取值范围**： 字符长度1-256位 
 
         :return: The vpc_id of this EventResourceResponseInfo.
         :rtype: str
@@ -312,7 +312,7 @@ class EventResourceResponseInfo:
     def vpc_id(self, vpc_id):
         r"""Sets the vpc_id of this EventResourceResponseInfo.
 
-        VPC ID
+        **参数解释**： VPC ID **取值范围**： 字符长度1-256位 
 
         :param vpc_id: The vpc_id of this EventResourceResponseInfo.
         :type vpc_id: str
@@ -323,7 +323,7 @@ class EventResourceResponseInfo:
     def cloud_id(self):
         r"""Gets the cloud_id of this EventResourceResponseInfo.
 
-        云主机ID
+        **参数解释**： 云主机ID **取值范围**： 字符长度1-256位 
 
         :return: The cloud_id of this EventResourceResponseInfo.
         :rtype: str
@@ -334,7 +334,7 @@ class EventResourceResponseInfo:
     def cloud_id(self, cloud_id):
         r"""Sets the cloud_id of this EventResourceResponseInfo.
 
-        云主机ID
+        **参数解释**： 云主机ID **取值范围**： 字符长度1-256位 
 
         :param cloud_id: The cloud_id of this EventResourceResponseInfo.
         :type cloud_id: str
@@ -345,7 +345,7 @@ class EventResourceResponseInfo:
     def vm_name(self):
         r"""Gets the vm_name of this EventResourceResponseInfo.
 
-        虚拟机名称
+        **参数解释**： 虚拟机名称 **取值范围**： 字符长度1-256位 
 
         :return: The vm_name of this EventResourceResponseInfo.
         :rtype: str
@@ -356,7 +356,7 @@ class EventResourceResponseInfo:
     def vm_name(self, vm_name):
         r"""Sets the vm_name of this EventResourceResponseInfo.
 
-        虚拟机名称
+        **参数解释**： 虚拟机名称 **取值范围**： 字符长度1-256位 
 
         :param vm_name: The vm_name of this EventResourceResponseInfo.
         :type vm_name: str
@@ -367,7 +367,7 @@ class EventResourceResponseInfo:
     def vm_uuid(self):
         r"""Gets the vm_uuid of this EventResourceResponseInfo.
 
-        虚拟机UUID，即主机ID
+        **参数解释**： 虚拟机UUID，即主机ID **取值范围**： 字符长度1-256位 
 
         :return: The vm_uuid of this EventResourceResponseInfo.
         :rtype: str
@@ -378,7 +378,7 @@ class EventResourceResponseInfo:
     def vm_uuid(self, vm_uuid):
         r"""Sets the vm_uuid of this EventResourceResponseInfo.
 
-        虚拟机UUID，即主机ID
+        **参数解释**： 虚拟机UUID，即主机ID **取值范围**： 字符长度1-256位 
 
         :param vm_uuid: The vm_uuid of this EventResourceResponseInfo.
         :type vm_uuid: str
@@ -389,7 +389,7 @@ class EventResourceResponseInfo:
     def container_id(self):
         r"""Gets the container_id of this EventResourceResponseInfo.
 
-        容器ID
+        **参数解释**： 容器ID **取值范围**： 字符长度1-256位 
 
         :return: The container_id of this EventResourceResponseInfo.
         :rtype: str
@@ -400,7 +400,7 @@ class EventResourceResponseInfo:
     def container_id(self, container_id):
         r"""Sets the container_id of this EventResourceResponseInfo.
 
-        容器ID
+        **参数解释**： 容器ID **取值范围**： 字符长度1-256位 
 
         :param container_id: The container_id of this EventResourceResponseInfo.
         :type container_id: str
@@ -411,7 +411,7 @@ class EventResourceResponseInfo:
     def container_status(self):
         r"""Gets the container_status of this EventResourceResponseInfo.
 
-        容器状态
+        **参数解释**： 容器状态 **取值范围**： 字符长度1-256位 
 
         :return: The container_status of this EventResourceResponseInfo.
         :rtype: str
@@ -422,7 +422,7 @@ class EventResourceResponseInfo:
     def container_status(self, container_status):
         r"""Sets the container_status of this EventResourceResponseInfo.
 
-        容器状态
+        **参数解释**： 容器状态 **取值范围**： 字符长度1-256位 
 
         :param container_status: The container_status of this EventResourceResponseInfo.
         :type container_status: str
@@ -433,7 +433,7 @@ class EventResourceResponseInfo:
     def pod_uid(self):
         r"""Gets the pod_uid of this EventResourceResponseInfo.
 
-        pod uid
+        **参数解释**： pod uid **取值范围**： 字符长度1-256位 
 
         :return: The pod_uid of this EventResourceResponseInfo.
         :rtype: str
@@ -444,7 +444,7 @@ class EventResourceResponseInfo:
     def pod_uid(self, pod_uid):
         r"""Sets the pod_uid of this EventResourceResponseInfo.
 
-        pod uid
+        **参数解释**： pod uid **取值范围**： 字符长度1-256位 
 
         :param pod_uid: The pod_uid of this EventResourceResponseInfo.
         :type pod_uid: str
@@ -455,7 +455,7 @@ class EventResourceResponseInfo:
     def pod_name(self):
         r"""Gets the pod_name of this EventResourceResponseInfo.
 
-        pod name
+        **参数解释**： pod name **取值范围**： 字符长度1-256位 
 
         :return: The pod_name of this EventResourceResponseInfo.
         :rtype: str
@@ -466,7 +466,7 @@ class EventResourceResponseInfo:
     def pod_name(self, pod_name):
         r"""Sets the pod_name of this EventResourceResponseInfo.
 
-        pod name
+        **参数解释**： pod name **取值范围**： 字符长度1-256位 
 
         :param pod_name: The pod_name of this EventResourceResponseInfo.
         :type pod_name: str
@@ -477,7 +477,7 @@ class EventResourceResponseInfo:
     def namespace(self):
         r"""Gets the namespace of this EventResourceResponseInfo.
 
-        namespace
+        **参数解释**： namespace **取值范围**： 字符长度1-256位 
 
         :return: The namespace of this EventResourceResponseInfo.
         :rtype: str
@@ -488,7 +488,7 @@ class EventResourceResponseInfo:
     def namespace(self, namespace):
         r"""Sets the namespace of this EventResourceResponseInfo.
 
-        namespace
+        **参数解释**： namespace **取值范围**： 字符长度1-256位 
 
         :param namespace: The namespace of this EventResourceResponseInfo.
         :type namespace: str
@@ -499,7 +499,7 @@ class EventResourceResponseInfo:
     def cluster_id(self):
         r"""Gets the cluster_id of this EventResourceResponseInfo.
 
-        集群id
+        **参数解释**： 集群ID **取值范围**： 字符长度1-256位 
 
         :return: The cluster_id of this EventResourceResponseInfo.
         :rtype: str
@@ -510,7 +510,7 @@ class EventResourceResponseInfo:
     def cluster_id(self, cluster_id):
         r"""Sets the cluster_id of this EventResourceResponseInfo.
 
-        集群id
+        **参数解释**： 集群ID **取值范围**： 字符长度1-256位 
 
         :param cluster_id: The cluster_id of this EventResourceResponseInfo.
         :type cluster_id: str
@@ -521,7 +521,7 @@ class EventResourceResponseInfo:
     def cluster_name(self):
         r"""Gets the cluster_name of this EventResourceResponseInfo.
 
-        集群名称
+        **参数解释**： 集群名称 **取值范围**： 字符长度1-256位 
 
         :return: The cluster_name of this EventResourceResponseInfo.
         :rtype: str
@@ -532,7 +532,7 @@ class EventResourceResponseInfo:
     def cluster_name(self, cluster_name):
         r"""Sets the cluster_name of this EventResourceResponseInfo.
 
-        集群名称
+        **参数解释**： 集群名称 **取值范围**： 字符长度1-256位 
 
         :param cluster_name: The cluster_name of this EventResourceResponseInfo.
         :type cluster_name: str
@@ -543,7 +543,7 @@ class EventResourceResponseInfo:
     def image_id(self):
         r"""Gets the image_id of this EventResourceResponseInfo.
 
-        镜像ID
+        **参数解释**： 镜像ID **取值范围**： 字符长度1-256位 
 
         :return: The image_id of this EventResourceResponseInfo.
         :rtype: str
@@ -554,7 +554,7 @@ class EventResourceResponseInfo:
     def image_id(self, image_id):
         r"""Sets the image_id of this EventResourceResponseInfo.
 
-        镜像ID
+        **参数解释**： 镜像ID **取值范围**： 字符长度1-256位 
 
         :param image_id: The image_id of this EventResourceResponseInfo.
         :type image_id: str
@@ -565,7 +565,7 @@ class EventResourceResponseInfo:
     def image_name(self):
         r"""Gets the image_name of this EventResourceResponseInfo.
 
-        镜像名称
+        **参数解释**： 镜像名称 **取值范围**： 字符长度1-256位 
 
         :return: The image_name of this EventResourceResponseInfo.
         :rtype: str
@@ -576,7 +576,7 @@ class EventResourceResponseInfo:
     def image_name(self, image_name):
         r"""Sets the image_name of this EventResourceResponseInfo.
 
-        镜像名称
+        **参数解释**： 镜像名称 **取值范围**： 字符长度1-256位 
 
         :param image_name: The image_name of this EventResourceResponseInfo.
         :type image_name: str
@@ -587,7 +587,7 @@ class EventResourceResponseInfo:
     def host_attr(self):
         r"""Gets the host_attr of this EventResourceResponseInfo.
 
-        主机属性
+        **参数解释**： 主机属性 **取值范围**： 字符长度1-256位 
 
         :return: The host_attr of this EventResourceResponseInfo.
         :rtype: str
@@ -598,7 +598,7 @@ class EventResourceResponseInfo:
     def host_attr(self, host_attr):
         r"""Sets the host_attr of this EventResourceResponseInfo.
 
-        主机属性
+        **参数解释**： 主机属性 **取值范围**： 字符长度1-256位 
 
         :param host_attr: The host_attr of this EventResourceResponseInfo.
         :type host_attr: str
@@ -609,7 +609,7 @@ class EventResourceResponseInfo:
     def service(self):
         r"""Gets the service of this EventResourceResponseInfo.
 
-        业务服务
+        **参数解释**： 业务服务 **取值范围**： 字符长度1-256位 
 
         :return: The service of this EventResourceResponseInfo.
         :rtype: str
@@ -620,7 +620,7 @@ class EventResourceResponseInfo:
     def service(self, service):
         r"""Sets the service of this EventResourceResponseInfo.
 
-        业务服务
+        **参数解释**： 业务服务 **取值范围**： 字符长度1-256位 
 
         :param service: The service of this EventResourceResponseInfo.
         :type service: str
@@ -631,7 +631,7 @@ class EventResourceResponseInfo:
     def micro_service(self):
         r"""Gets the micro_service of this EventResourceResponseInfo.
 
-        微服务
+        **参数解释**： 微服务 **取值范围**： 字符长度1-256位 
 
         :return: The micro_service of this EventResourceResponseInfo.
         :rtype: str
@@ -642,7 +642,7 @@ class EventResourceResponseInfo:
     def micro_service(self, micro_service):
         r"""Sets the micro_service of this EventResourceResponseInfo.
 
-        微服务
+        **参数解释**： 微服务 **取值范围**： 字符长度1-256位 
 
         :param micro_service: The micro_service of this EventResourceResponseInfo.
         :type micro_service: str
@@ -653,7 +653,7 @@ class EventResourceResponseInfo:
     def sys_arch(self):
         r"""Gets the sys_arch of this EventResourceResponseInfo.
 
-        系统CPU架构
+        **参数解释**： 系统CPU架构 **取值范围**： 字符长度1-256位 
 
         :return: The sys_arch of this EventResourceResponseInfo.
         :rtype: str
@@ -664,7 +664,7 @@ class EventResourceResponseInfo:
     def sys_arch(self, sys_arch):
         r"""Sets the sys_arch of this EventResourceResponseInfo.
 
-        系统CPU架构
+        **参数解释**： 系统CPU架构 **取值范围**： 字符长度1-256位 
 
         :param sys_arch: The sys_arch of this EventResourceResponseInfo.
         :type sys_arch: str
@@ -675,7 +675,7 @@ class EventResourceResponseInfo:
     def os_bit(self):
         r"""Gets the os_bit of this EventResourceResponseInfo.
 
-        操作系统位数
+        **参数解释**： 操作系统位数 **取值范围**： 字符长度1-256位 
 
         :return: The os_bit of this EventResourceResponseInfo.
         :rtype: str
@@ -686,7 +686,7 @@ class EventResourceResponseInfo:
     def os_bit(self, os_bit):
         r"""Sets the os_bit of this EventResourceResponseInfo.
 
-        操作系统位数
+        **参数解释**： 操作系统位数 **取值范围**： 字符长度1-256位 
 
         :param os_bit: The os_bit of this EventResourceResponseInfo.
         :type os_bit: str
@@ -697,7 +697,7 @@ class EventResourceResponseInfo:
     def os_type(self):
         r"""Gets the os_type of this EventResourceResponseInfo.
 
-        操作系统类型
+        **参数解释**： 操作系统类型 **取值范围**： 字符长度1-256位 
 
         :return: The os_type of this EventResourceResponseInfo.
         :rtype: str
@@ -708,7 +708,7 @@ class EventResourceResponseInfo:
     def os_type(self, os_type):
         r"""Sets the os_type of this EventResourceResponseInfo.
 
-        操作系统类型
+        **参数解释**： 操作系统类型 **取值范围**： 字符长度1-256位 
 
         :param os_type: The os_type of this EventResourceResponseInfo.
         :type os_type: str
@@ -719,7 +719,7 @@ class EventResourceResponseInfo:
     def os_name(self):
         r"""Gets the os_name of this EventResourceResponseInfo.
 
-        操作系统名称
+        **参数解释**： 操作系统名称 **取值范围**： 字符长度1-256位 
 
         :return: The os_name of this EventResourceResponseInfo.
         :rtype: str
@@ -730,7 +730,7 @@ class EventResourceResponseInfo:
     def os_name(self, os_name):
         r"""Sets the os_name of this EventResourceResponseInfo.
 
-        操作系统名称
+        **参数解释**： 操作系统名称 **取值范围**： 字符长度1-256位 
 
         :param os_name: The os_name of this EventResourceResponseInfo.
         :type os_name: str
@@ -741,7 +741,7 @@ class EventResourceResponseInfo:
     def os_version(self):
         r"""Gets the os_version of this EventResourceResponseInfo.
 
-        操作系统版本
+        **参数解释**： 操作系统版本 **取值范围**： 字符长度1-256位 
 
         :return: The os_version of this EventResourceResponseInfo.
         :rtype: str
@@ -752,7 +752,7 @@ class EventResourceResponseInfo:
     def os_version(self, os_version):
         r"""Sets the os_version of this EventResourceResponseInfo.
 
-        操作系统版本
+        **参数解释**： 操作系统版本 **取值范围**： 字符长度1-256位 
 
         :param os_version: The os_version of this EventResourceResponseInfo.
         :type os_version: str

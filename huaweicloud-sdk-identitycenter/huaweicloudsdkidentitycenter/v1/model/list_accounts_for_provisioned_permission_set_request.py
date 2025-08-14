@@ -42,15 +42,15 @@ class ListAccountsForProvisionedPermissionSetRequest:
 
         :param x_security_token: 如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
         :type x_security_token: str
-        :param instance_id: IAM身份中心实例的全局唯一标识符（ID）。
+        :param instance_id: IAM Identity Center实例的全局唯一标识符（ID）
         :type instance_id: str
         :param permission_set_id: 权限集的全局唯一标识符（ID）
         :type permission_set_id: str
-        :param limit: 每个请求返回的最大结果数
+        :param limit: 每个请求返回的最大结果数。
         :type limit: int
         :param marker: 分页标记
         :type marker: str
-        :param provisioning_status: 权限集分配状态.
+        :param provisioning_status: 权限集分配状态。
         :type provisioning_status: str
         """
         
@@ -101,7 +101,7 @@ class ListAccountsForProvisionedPermissionSetRequest:
     def instance_id(self):
         r"""Gets the instance_id of this ListAccountsForProvisionedPermissionSetRequest.
 
-        IAM身份中心实例的全局唯一标识符（ID）。
+        IAM Identity Center实例的全局唯一标识符（ID）
 
         :return: The instance_id of this ListAccountsForProvisionedPermissionSetRequest.
         :rtype: str
@@ -112,7 +112,7 @@ class ListAccountsForProvisionedPermissionSetRequest:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this ListAccountsForProvisionedPermissionSetRequest.
 
-        IAM身份中心实例的全局唯一标识符（ID）。
+        IAM Identity Center实例的全局唯一标识符（ID）
 
         :param instance_id: The instance_id of this ListAccountsForProvisionedPermissionSetRequest.
         :type instance_id: str
@@ -145,7 +145,7 @@ class ListAccountsForProvisionedPermissionSetRequest:
     def limit(self):
         r"""Gets the limit of this ListAccountsForProvisionedPermissionSetRequest.
 
-        每个请求返回的最大结果数
+        每个请求返回的最大结果数。
 
         :return: The limit of this ListAccountsForProvisionedPermissionSetRequest.
         :rtype: int
@@ -156,7 +156,7 @@ class ListAccountsForProvisionedPermissionSetRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListAccountsForProvisionedPermissionSetRequest.
 
-        每个请求返回的最大结果数
+        每个请求返回的最大结果数。
 
         :param limit: The limit of this ListAccountsForProvisionedPermissionSetRequest.
         :type limit: int
@@ -189,7 +189,7 @@ class ListAccountsForProvisionedPermissionSetRequest:
     def provisioning_status(self):
         r"""Gets the provisioning_status of this ListAccountsForProvisionedPermissionSetRequest.
 
-        权限集分配状态.
+        权限集分配状态。
 
         :return: The provisioning_status of this ListAccountsForProvisionedPermissionSetRequest.
         :rtype: str
@@ -200,7 +200,7 @@ class ListAccountsForProvisionedPermissionSetRequest:
     def provisioning_status(self, provisioning_status):
         r"""Sets the provisioning_status of this ListAccountsForProvisionedPermissionSetRequest.
 
-        权限集分配状态.
+        权限集分配状态。
 
         :param provisioning_status: The provisioning_status of this ListAccountsForProvisionedPermissionSetRequest.
         :type provisioning_status: str

@@ -32,7 +32,7 @@ class ListSecurityEventsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total_num: 告警事件总数
+        :param total_num: **参数解释**： 告警事件总数 **取值范围**： 最小值0，最大值2147483647 
         :type total_num: int
         :param data_list: 事件列表详情
         :type data_list: list[:class:`huaweicloudsdkhss.v5.EventManagementResponseInfo`]
@@ -53,7 +53,7 @@ class ListSecurityEventsResponse(SdkResponse):
     def total_num(self):
         r"""Gets the total_num of this ListSecurityEventsResponse.
 
-        告警事件总数
+        **参数解释**： 告警事件总数 **取值范围**： 最小值0，最大值2147483647 
 
         :return: The total_num of this ListSecurityEventsResponse.
         :rtype: int
@@ -64,7 +64,7 @@ class ListSecurityEventsResponse(SdkResponse):
     def total_num(self, total_num):
         r"""Sets the total_num of this ListSecurityEventsResponse.
 
-        告警事件总数
+        **参数解释**： 告警事件总数 **取值范围**： 最小值0，最大值2147483647 
 
         :param total_num: The total_num of this ListSecurityEventsResponse.
         :type total_num: int

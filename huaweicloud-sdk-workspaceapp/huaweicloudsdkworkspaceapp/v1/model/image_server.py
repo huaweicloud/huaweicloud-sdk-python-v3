@@ -77,11 +77,11 @@ class ImageServer:
         :type status: :class:`huaweicloudsdkworkspaceapp.v1.ImageServerStatus`
         :param authorize_accounts: 应用组授权用户， * 限制用户类型：&#39;USER&#39; - 用户
         :type authorize_accounts: list[:class:`huaweicloudsdkworkspaceapp.v1.ImageAccountInfo`]
-        :param create_time: 镜像实例创建时间
+        :param create_time: 镜像实例创建时间。
         :type create_time: datetime
-        :param update_time: 更新时间
+        :param update_time: 更新时间。
         :type update_time: datetime
-        :param enterprise_project_id: 企业项目ID,仅企业项目需配置(字段为空或者0表示使用默认default企业项目)
+        :param enterprise_project_id: 企业项目ID,仅企业项目需配置(字段为空或者0表示使用默认default企业项目)。
         :type enterprise_project_id: str
         """
         
@@ -370,7 +370,7 @@ class ImageServer:
     def create_time(self):
         r"""Gets the create_time of this ImageServer.
 
-        镜像实例创建时间
+        镜像实例创建时间。
 
         :return: The create_time of this ImageServer.
         :rtype: datetime
@@ -381,7 +381,7 @@ class ImageServer:
     def create_time(self, create_time):
         r"""Sets the create_time of this ImageServer.
 
-        镜像实例创建时间
+        镜像实例创建时间。
 
         :param create_time: The create_time of this ImageServer.
         :type create_time: datetime
@@ -392,7 +392,7 @@ class ImageServer:
     def update_time(self):
         r"""Gets the update_time of this ImageServer.
 
-        更新时间
+        更新时间。
 
         :return: The update_time of this ImageServer.
         :rtype: datetime
@@ -403,7 +403,7 @@ class ImageServer:
     def update_time(self, update_time):
         r"""Sets the update_time of this ImageServer.
 
-        更新时间
+        更新时间。
 
         :param update_time: The update_time of this ImageServer.
         :type update_time: datetime
@@ -414,7 +414,7 @@ class ImageServer:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this ImageServer.
 
-        企业项目ID,仅企业项目需配置(字段为空或者0表示使用默认default企业项目)
+        企业项目ID,仅企业项目需配置(字段为空或者0表示使用默认default企业项目)。
 
         :return: The enterprise_project_id of this ImageServer.
         :rtype: str
@@ -425,7 +425,7 @@ class ImageServer:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this ImageServer.
 
-        企业项目ID,仅企业项目需配置(字段为空或者0表示使用默认default企业项目)
+        企业项目ID,仅企业项目需配置(字段为空或者0表示使用默认default企业项目)。
 
         :param enterprise_project_id: The enterprise_project_id of this ImageServer.
         :type enterprise_project_id: str

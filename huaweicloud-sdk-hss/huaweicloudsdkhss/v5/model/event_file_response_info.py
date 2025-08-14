@@ -69,47 +69,47 @@ class EventFileResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param file_path: 文件路径
+        :param file_path: **参数解释**： 文件路径 **取值范围**： 字符长度1-256位 
         :type file_path: str
-        :param file_alias: 文件别名
+        :param file_alias: **参数解释**： 文件别名 **取值范围**： 字符长度1-256位 
         :type file_alias: str
-        :param file_size: 文件大小
+        :param file_size: **参数解释**： 文件大小 **取值范围**： 最小值0，最大值2147483647 
         :type file_size: int
-        :param file_mtime: 文件最后一次修改时间
+        :param file_mtime: **参数解释**： 文件最后一次修改时间 **取值范围**： 最小值0，最大值9223372036854775807 
         :type file_mtime: int
-        :param file_atime: 文件最后一次访问时间
+        :param file_atime: **参数解释**： 文件最后一次访问时间 **取值范围**： 最小值0，最大值9223372036854775807 
         :type file_atime: int
-        :param file_ctime: 文件最后一次状态改变时间
+        :param file_ctime: **参数解释**： 文件最后一次状态改变时间 **取值范围**： 最小值0，最大值9223372036854775807 
         :type file_ctime: int
-        :param file_hash: 文件hash,当前为sha256
+        :param file_hash: **参数解释**： 文件hash,当前为sha256 **取值范围**： 字符长度1-256位 
         :type file_hash: str
-        :param file_md5: 文件md5
+        :param file_md5: **参数解释**： 文件md5 **取值范围**： 字符长度1-256位 
         :type file_md5: str
-        :param file_sha256: 文件sha256
+        :param file_sha256: **参数解释**： 文件sha256 **取值范围**： 字符长度1-256位 
         :type file_sha256: str
-        :param file_type: 文件类型
+        :param file_type: **参数解释**： 文件类型 **取值范围**： 字符长度1-256位 
         :type file_type: str
-        :param file_content: 文件内容
+        :param file_content: **参数解释**： 文件内容 **取值范围**： 字符长度1-256位 
         :type file_content: str
-        :param file_attr: 文件属性
+        :param file_attr: **参数解释**： 文件属性 **取值范围**： 字符长度1-256位 
         :type file_attr: str
-        :param file_operation: 文件操作类型
+        :param file_operation: **参数解释**： 文件操作类型 **取值范围**： 最小值0，最大值2147483647 
         :type file_operation: int
-        :param file_action: 文件动作
+        :param file_action: **参数解释**： 文件动作 **取值范围**： 字符长度1-256位 
         :type file_action: str
-        :param file_change_attr: 变更前后的属性
+        :param file_change_attr: **参数解释**： 变更前后的属性 **取值范围**： 字符长度1-256位 
         :type file_change_attr: str
-        :param file_new_path: 新文件路径
+        :param file_new_path: **参数解释**： 新文件路径 **取值范围**： 字符长度1-256位 
         :type file_new_path: str
-        :param file_desc: 文件描述
+        :param file_desc: **参数解释**： 文件描述 **取值范围**： 字符长度1-256位 
         :type file_desc: str
-        :param file_key_word: 文件关键字
+        :param file_key_word: **参数解释**： 文件关键字 **取值范围**： 字符长度1-256位 
         :type file_key_word: str
-        :param is_dir: 是否目录
+        :param is_dir: **参数解释**： 是否目录 **取值范围**： - true：是目录 - false：不是目录 
         :type is_dir: bool
-        :param fd_info: 文件句柄信息
+        :param fd_info: **参数解释**： 文件句柄信息 **取值范围**： 字符长度1-256位 
         :type fd_info: str
-        :param fd_count: 文件句柄数量
+        :param fd_count: **参数解释**： 文件句柄数量 **取值范围**： 最小值0，最大值2147483647 
         :type fd_count: int
         """
         
@@ -185,7 +185,7 @@ class EventFileResponseInfo:
     def file_path(self):
         r"""Gets the file_path of this EventFileResponseInfo.
 
-        文件路径
+        **参数解释**： 文件路径 **取值范围**： 字符长度1-256位 
 
         :return: The file_path of this EventFileResponseInfo.
         :rtype: str
@@ -196,7 +196,7 @@ class EventFileResponseInfo:
     def file_path(self, file_path):
         r"""Sets the file_path of this EventFileResponseInfo.
 
-        文件路径
+        **参数解释**： 文件路径 **取值范围**： 字符长度1-256位 
 
         :param file_path: The file_path of this EventFileResponseInfo.
         :type file_path: str
@@ -207,7 +207,7 @@ class EventFileResponseInfo:
     def file_alias(self):
         r"""Gets the file_alias of this EventFileResponseInfo.
 
-        文件别名
+        **参数解释**： 文件别名 **取值范围**： 字符长度1-256位 
 
         :return: The file_alias of this EventFileResponseInfo.
         :rtype: str
@@ -218,7 +218,7 @@ class EventFileResponseInfo:
     def file_alias(self, file_alias):
         r"""Sets the file_alias of this EventFileResponseInfo.
 
-        文件别名
+        **参数解释**： 文件别名 **取值范围**： 字符长度1-256位 
 
         :param file_alias: The file_alias of this EventFileResponseInfo.
         :type file_alias: str
@@ -229,7 +229,7 @@ class EventFileResponseInfo:
     def file_size(self):
         r"""Gets the file_size of this EventFileResponseInfo.
 
-        文件大小
+        **参数解释**： 文件大小 **取值范围**： 最小值0，最大值2147483647 
 
         :return: The file_size of this EventFileResponseInfo.
         :rtype: int
@@ -240,7 +240,7 @@ class EventFileResponseInfo:
     def file_size(self, file_size):
         r"""Sets the file_size of this EventFileResponseInfo.
 
-        文件大小
+        **参数解释**： 文件大小 **取值范围**： 最小值0，最大值2147483647 
 
         :param file_size: The file_size of this EventFileResponseInfo.
         :type file_size: int
@@ -251,7 +251,7 @@ class EventFileResponseInfo:
     def file_mtime(self):
         r"""Gets the file_mtime of this EventFileResponseInfo.
 
-        文件最后一次修改时间
+        **参数解释**： 文件最后一次修改时间 **取值范围**： 最小值0，最大值9223372036854775807 
 
         :return: The file_mtime of this EventFileResponseInfo.
         :rtype: int
@@ -262,7 +262,7 @@ class EventFileResponseInfo:
     def file_mtime(self, file_mtime):
         r"""Sets the file_mtime of this EventFileResponseInfo.
 
-        文件最后一次修改时间
+        **参数解释**： 文件最后一次修改时间 **取值范围**： 最小值0，最大值9223372036854775807 
 
         :param file_mtime: The file_mtime of this EventFileResponseInfo.
         :type file_mtime: int
@@ -273,7 +273,7 @@ class EventFileResponseInfo:
     def file_atime(self):
         r"""Gets the file_atime of this EventFileResponseInfo.
 
-        文件最后一次访问时间
+        **参数解释**： 文件最后一次访问时间 **取值范围**： 最小值0，最大值9223372036854775807 
 
         :return: The file_atime of this EventFileResponseInfo.
         :rtype: int
@@ -284,7 +284,7 @@ class EventFileResponseInfo:
     def file_atime(self, file_atime):
         r"""Sets the file_atime of this EventFileResponseInfo.
 
-        文件最后一次访问时间
+        **参数解释**： 文件最后一次访问时间 **取值范围**： 最小值0，最大值9223372036854775807 
 
         :param file_atime: The file_atime of this EventFileResponseInfo.
         :type file_atime: int
@@ -295,7 +295,7 @@ class EventFileResponseInfo:
     def file_ctime(self):
         r"""Gets the file_ctime of this EventFileResponseInfo.
 
-        文件最后一次状态改变时间
+        **参数解释**： 文件最后一次状态改变时间 **取值范围**： 最小值0，最大值9223372036854775807 
 
         :return: The file_ctime of this EventFileResponseInfo.
         :rtype: int
@@ -306,7 +306,7 @@ class EventFileResponseInfo:
     def file_ctime(self, file_ctime):
         r"""Sets the file_ctime of this EventFileResponseInfo.
 
-        文件最后一次状态改变时间
+        **参数解释**： 文件最后一次状态改变时间 **取值范围**： 最小值0，最大值9223372036854775807 
 
         :param file_ctime: The file_ctime of this EventFileResponseInfo.
         :type file_ctime: int
@@ -317,7 +317,7 @@ class EventFileResponseInfo:
     def file_hash(self):
         r"""Gets the file_hash of this EventFileResponseInfo.
 
-        文件hash,当前为sha256
+        **参数解释**： 文件hash,当前为sha256 **取值范围**： 字符长度1-256位 
 
         :return: The file_hash of this EventFileResponseInfo.
         :rtype: str
@@ -328,7 +328,7 @@ class EventFileResponseInfo:
     def file_hash(self, file_hash):
         r"""Sets the file_hash of this EventFileResponseInfo.
 
-        文件hash,当前为sha256
+        **参数解释**： 文件hash,当前为sha256 **取值范围**： 字符长度1-256位 
 
         :param file_hash: The file_hash of this EventFileResponseInfo.
         :type file_hash: str
@@ -339,7 +339,7 @@ class EventFileResponseInfo:
     def file_md5(self):
         r"""Gets the file_md5 of this EventFileResponseInfo.
 
-        文件md5
+        **参数解释**： 文件md5 **取值范围**： 字符长度1-256位 
 
         :return: The file_md5 of this EventFileResponseInfo.
         :rtype: str
@@ -350,7 +350,7 @@ class EventFileResponseInfo:
     def file_md5(self, file_md5):
         r"""Sets the file_md5 of this EventFileResponseInfo.
 
-        文件md5
+        **参数解释**： 文件md5 **取值范围**： 字符长度1-256位 
 
         :param file_md5: The file_md5 of this EventFileResponseInfo.
         :type file_md5: str
@@ -361,7 +361,7 @@ class EventFileResponseInfo:
     def file_sha256(self):
         r"""Gets the file_sha256 of this EventFileResponseInfo.
 
-        文件sha256
+        **参数解释**： 文件sha256 **取值范围**： 字符长度1-256位 
 
         :return: The file_sha256 of this EventFileResponseInfo.
         :rtype: str
@@ -372,7 +372,7 @@ class EventFileResponseInfo:
     def file_sha256(self, file_sha256):
         r"""Sets the file_sha256 of this EventFileResponseInfo.
 
-        文件sha256
+        **参数解释**： 文件sha256 **取值范围**： 字符长度1-256位 
 
         :param file_sha256: The file_sha256 of this EventFileResponseInfo.
         :type file_sha256: str
@@ -383,7 +383,7 @@ class EventFileResponseInfo:
     def file_type(self):
         r"""Gets the file_type of this EventFileResponseInfo.
 
-        文件类型
+        **参数解释**： 文件类型 **取值范围**： 字符长度1-256位 
 
         :return: The file_type of this EventFileResponseInfo.
         :rtype: str
@@ -394,7 +394,7 @@ class EventFileResponseInfo:
     def file_type(self, file_type):
         r"""Sets the file_type of this EventFileResponseInfo.
 
-        文件类型
+        **参数解释**： 文件类型 **取值范围**： 字符长度1-256位 
 
         :param file_type: The file_type of this EventFileResponseInfo.
         :type file_type: str
@@ -405,7 +405,7 @@ class EventFileResponseInfo:
     def file_content(self):
         r"""Gets the file_content of this EventFileResponseInfo.
 
-        文件内容
+        **参数解释**： 文件内容 **取值范围**： 字符长度1-256位 
 
         :return: The file_content of this EventFileResponseInfo.
         :rtype: str
@@ -416,7 +416,7 @@ class EventFileResponseInfo:
     def file_content(self, file_content):
         r"""Sets the file_content of this EventFileResponseInfo.
 
-        文件内容
+        **参数解释**： 文件内容 **取值范围**： 字符长度1-256位 
 
         :param file_content: The file_content of this EventFileResponseInfo.
         :type file_content: str
@@ -427,7 +427,7 @@ class EventFileResponseInfo:
     def file_attr(self):
         r"""Gets the file_attr of this EventFileResponseInfo.
 
-        文件属性
+        **参数解释**： 文件属性 **取值范围**： 字符长度1-256位 
 
         :return: The file_attr of this EventFileResponseInfo.
         :rtype: str
@@ -438,7 +438,7 @@ class EventFileResponseInfo:
     def file_attr(self, file_attr):
         r"""Sets the file_attr of this EventFileResponseInfo.
 
-        文件属性
+        **参数解释**： 文件属性 **取值范围**： 字符长度1-256位 
 
         :param file_attr: The file_attr of this EventFileResponseInfo.
         :type file_attr: str
@@ -449,7 +449,7 @@ class EventFileResponseInfo:
     def file_operation(self):
         r"""Gets the file_operation of this EventFileResponseInfo.
 
-        文件操作类型
+        **参数解释**： 文件操作类型 **取值范围**： 最小值0，最大值2147483647 
 
         :return: The file_operation of this EventFileResponseInfo.
         :rtype: int
@@ -460,7 +460,7 @@ class EventFileResponseInfo:
     def file_operation(self, file_operation):
         r"""Sets the file_operation of this EventFileResponseInfo.
 
-        文件操作类型
+        **参数解释**： 文件操作类型 **取值范围**： 最小值0，最大值2147483647 
 
         :param file_operation: The file_operation of this EventFileResponseInfo.
         :type file_operation: int
@@ -471,7 +471,7 @@ class EventFileResponseInfo:
     def file_action(self):
         r"""Gets the file_action of this EventFileResponseInfo.
 
-        文件动作
+        **参数解释**： 文件动作 **取值范围**： 字符长度1-256位 
 
         :return: The file_action of this EventFileResponseInfo.
         :rtype: str
@@ -482,7 +482,7 @@ class EventFileResponseInfo:
     def file_action(self, file_action):
         r"""Sets the file_action of this EventFileResponseInfo.
 
-        文件动作
+        **参数解释**： 文件动作 **取值范围**： 字符长度1-256位 
 
         :param file_action: The file_action of this EventFileResponseInfo.
         :type file_action: str
@@ -493,7 +493,7 @@ class EventFileResponseInfo:
     def file_change_attr(self):
         r"""Gets the file_change_attr of this EventFileResponseInfo.
 
-        变更前后的属性
+        **参数解释**： 变更前后的属性 **取值范围**： 字符长度1-256位 
 
         :return: The file_change_attr of this EventFileResponseInfo.
         :rtype: str
@@ -504,7 +504,7 @@ class EventFileResponseInfo:
     def file_change_attr(self, file_change_attr):
         r"""Sets the file_change_attr of this EventFileResponseInfo.
 
-        变更前后的属性
+        **参数解释**： 变更前后的属性 **取值范围**： 字符长度1-256位 
 
         :param file_change_attr: The file_change_attr of this EventFileResponseInfo.
         :type file_change_attr: str
@@ -515,7 +515,7 @@ class EventFileResponseInfo:
     def file_new_path(self):
         r"""Gets the file_new_path of this EventFileResponseInfo.
 
-        新文件路径
+        **参数解释**： 新文件路径 **取值范围**： 字符长度1-256位 
 
         :return: The file_new_path of this EventFileResponseInfo.
         :rtype: str
@@ -526,7 +526,7 @@ class EventFileResponseInfo:
     def file_new_path(self, file_new_path):
         r"""Sets the file_new_path of this EventFileResponseInfo.
 
-        新文件路径
+        **参数解释**： 新文件路径 **取值范围**： 字符长度1-256位 
 
         :param file_new_path: The file_new_path of this EventFileResponseInfo.
         :type file_new_path: str
@@ -537,7 +537,7 @@ class EventFileResponseInfo:
     def file_desc(self):
         r"""Gets the file_desc of this EventFileResponseInfo.
 
-        文件描述
+        **参数解释**： 文件描述 **取值范围**： 字符长度1-256位 
 
         :return: The file_desc of this EventFileResponseInfo.
         :rtype: str
@@ -548,7 +548,7 @@ class EventFileResponseInfo:
     def file_desc(self, file_desc):
         r"""Sets the file_desc of this EventFileResponseInfo.
 
-        文件描述
+        **参数解释**： 文件描述 **取值范围**： 字符长度1-256位 
 
         :param file_desc: The file_desc of this EventFileResponseInfo.
         :type file_desc: str
@@ -559,7 +559,7 @@ class EventFileResponseInfo:
     def file_key_word(self):
         r"""Gets the file_key_word of this EventFileResponseInfo.
 
-        文件关键字
+        **参数解释**： 文件关键字 **取值范围**： 字符长度1-256位 
 
         :return: The file_key_word of this EventFileResponseInfo.
         :rtype: str
@@ -570,7 +570,7 @@ class EventFileResponseInfo:
     def file_key_word(self, file_key_word):
         r"""Sets the file_key_word of this EventFileResponseInfo.
 
-        文件关键字
+        **参数解释**： 文件关键字 **取值范围**： 字符长度1-256位 
 
         :param file_key_word: The file_key_word of this EventFileResponseInfo.
         :type file_key_word: str
@@ -581,7 +581,7 @@ class EventFileResponseInfo:
     def is_dir(self):
         r"""Gets the is_dir of this EventFileResponseInfo.
 
-        是否目录
+        **参数解释**： 是否目录 **取值范围**： - true：是目录 - false：不是目录 
 
         :return: The is_dir of this EventFileResponseInfo.
         :rtype: bool
@@ -592,7 +592,7 @@ class EventFileResponseInfo:
     def is_dir(self, is_dir):
         r"""Sets the is_dir of this EventFileResponseInfo.
 
-        是否目录
+        **参数解释**： 是否目录 **取值范围**： - true：是目录 - false：不是目录 
 
         :param is_dir: The is_dir of this EventFileResponseInfo.
         :type is_dir: bool
@@ -603,7 +603,7 @@ class EventFileResponseInfo:
     def fd_info(self):
         r"""Gets the fd_info of this EventFileResponseInfo.
 
-        文件句柄信息
+        **参数解释**： 文件句柄信息 **取值范围**： 字符长度1-256位 
 
         :return: The fd_info of this EventFileResponseInfo.
         :rtype: str
@@ -614,7 +614,7 @@ class EventFileResponseInfo:
     def fd_info(self, fd_info):
         r"""Sets the fd_info of this EventFileResponseInfo.
 
-        文件句柄信息
+        **参数解释**： 文件句柄信息 **取值范围**： 字符长度1-256位 
 
         :param fd_info: The fd_info of this EventFileResponseInfo.
         :type fd_info: str
@@ -625,7 +625,7 @@ class EventFileResponseInfo:
     def fd_count(self):
         r"""Gets the fd_count of this EventFileResponseInfo.
 
-        文件句柄数量
+        **参数解释**： 文件句柄数量 **取值范围**： 最小值0，最大值2147483647 
 
         :return: The fd_count of this EventFileResponseInfo.
         :rtype: int
@@ -636,7 +636,7 @@ class EventFileResponseInfo:
     def fd_count(self, fd_count):
         r"""Sets the fd_count of this EventFileResponseInfo.
 
-        文件句柄数量
+        **参数解释**： 文件句柄数量 **取值范围**： 最小值0，最大值2147483647 
 
         :param fd_count: The fd_count of this EventFileResponseInfo.
         :type fd_count: int

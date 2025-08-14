@@ -17,29 +17,36 @@ class CustomOptions:
     sensitive_list = []
 
     openapi_types = {
-        'custom_configuration1_rule': 'str'
+        'custom_configuration1_rule': 'str',
+        'rail_transparent_config': 'RailTransparentConfig'
     }
 
     attribute_map = {
-        'custom_configuration1_rule': 'custom_configuration1_rule'
+        'custom_configuration1_rule': 'custom_configuration1_rule',
+        'rail_transparent_config': 'rail_transparent_config'
     }
 
-    def __init__(self, custom_configuration1_rule=None):
+    def __init__(self, custom_configuration1_rule=None, rail_transparent_config=None):
         r"""CustomOptions
 
         The model defined in huaweicloud sdk
 
         :param custom_configuration1_rule: 配置项1内容。
         :type custom_configuration1_rule: str
+        :param rail_transparent_config: 
+        :type rail_transparent_config: :class:`huaweicloudsdkworkspaceapp.v1.RailTransparentConfig`
         """
         
         
 
         self._custom_configuration1_rule = None
+        self._rail_transparent_config = None
         self.discriminator = None
 
         if custom_configuration1_rule is not None:
             self.custom_configuration1_rule = custom_configuration1_rule
+        if rail_transparent_config is not None:
+            self.rail_transparent_config = rail_transparent_config
 
     @property
     def custom_configuration1_rule(self):
@@ -62,6 +69,24 @@ class CustomOptions:
         :type custom_configuration1_rule: str
         """
         self._custom_configuration1_rule = custom_configuration1_rule
+
+    @property
+    def rail_transparent_config(self):
+        r"""Gets the rail_transparent_config of this CustomOptions.
+
+        :return: The rail_transparent_config of this CustomOptions.
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.RailTransparentConfig`
+        """
+        return self._rail_transparent_config
+
+    @rail_transparent_config.setter
+    def rail_transparent_config(self, rail_transparent_config):
+        r"""Sets the rail_transparent_config of this CustomOptions.
+
+        :param rail_transparent_config: The rail_transparent_config of this CustomOptions.
+        :type rail_transparent_config: :class:`huaweicloudsdkworkspaceapp.v1.RailTransparentConfig`
+        """
+        self._rail_transparent_config = rail_transparent_config
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -39,9 +39,9 @@ class AddBaselineWhiteListRequestBody:
 
         :param os_type: 基线检查的操作系统 - Linux - Windows
         :type os_type: str
-        :param rule_type: 基线检查白名单的规则范围 - specific_host 部分主机 - all_host      全部主机
+        :param rule_type: 基线检查白名单的规则范围 - specific_host：部分主机 - all_host：全部主机
         :type rule_type: str
-        :param host_id_list: rule_type为specific_host时,该字段为待添加的白名单主机id列表, rule_type为all_host时无该字段
+        :param host_id_list: rule_type为specific_host时，该字段为待添加的白名单主机id列表，rule_type为all_host时无该字段
         :type host_id_list: list[str]
         :param rule_list: 待添加的白名单的检查项列表
         :type rule_list: list[:class:`huaweicloudsdkhss.v5.AddBaselineWhiteListRequestBodyRuleList`]
@@ -92,7 +92,7 @@ class AddBaselineWhiteListRequestBody:
     def rule_type(self):
         r"""Gets the rule_type of this AddBaselineWhiteListRequestBody.
 
-        基线检查白名单的规则范围 - specific_host 部分主机 - all_host      全部主机
+        基线检查白名单的规则范围 - specific_host：部分主机 - all_host：全部主机
 
         :return: The rule_type of this AddBaselineWhiteListRequestBody.
         :rtype: str
@@ -103,7 +103,7 @@ class AddBaselineWhiteListRequestBody:
     def rule_type(self, rule_type):
         r"""Sets the rule_type of this AddBaselineWhiteListRequestBody.
 
-        基线检查白名单的规则范围 - specific_host 部分主机 - all_host      全部主机
+        基线检查白名单的规则范围 - specific_host：部分主机 - all_host：全部主机
 
         :param rule_type: The rule_type of this AddBaselineWhiteListRequestBody.
         :type rule_type: str
@@ -114,7 +114,7 @@ class AddBaselineWhiteListRequestBody:
     def host_id_list(self):
         r"""Gets the host_id_list of this AddBaselineWhiteListRequestBody.
 
-        rule_type为specific_host时,该字段为待添加的白名单主机id列表, rule_type为all_host时无该字段
+        rule_type为specific_host时，该字段为待添加的白名单主机id列表，rule_type为all_host时无该字段
 
         :return: The host_id_list of this AddBaselineWhiteListRequestBody.
         :rtype: list[str]
@@ -125,7 +125,7 @@ class AddBaselineWhiteListRequestBody:
     def host_id_list(self, host_id_list):
         r"""Sets the host_id_list of this AddBaselineWhiteListRequestBody.
 
-        rule_type为specific_host时,该字段为待添加的白名单主机id列表, rule_type为all_host时无该字段
+        rule_type为specific_host时，该字段为待添加的白名单主机id列表，rule_type为all_host时无该字段
 
         :param host_id_list: The host_id_list of this AddBaselineWhiteListRequestBody.
         :type host_id_list: list[str]

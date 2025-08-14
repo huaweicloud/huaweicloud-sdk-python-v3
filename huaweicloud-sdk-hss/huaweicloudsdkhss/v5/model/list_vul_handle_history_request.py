@@ -59,25 +59,25 @@ class ListVulHandleHistoryRequest:
 
         :param enterprise_project_id: 企业项目ID
         :type enterprise_project_id: str
-        :param status: 漏洞状态,包含如下:   - vul_status_unfix : 未处理   - vul_status_ignored : 已忽略   - vul_status_verified : 验证中   - vul_status_fixing : 修复中   - vul_status_fixed : 修复成功   - vul_status_reboot : 修复成功待重启   - vul_status_failed : 修复失败   - vul_status_fix_after_reboot : 请重启主机再次修复
+        :param status: 漏洞状态，包含如下：   - vul_status_unfix：未处理   - vul_status_ignored：已忽略   - vul_status_verified：验证中   - vul_status_fixing：修复中   - vul_status_fixed：修复成功   - vul_status_reboot：修复成功待重启   - vul_status_failed：修复失败   - vul_status_fix_after_reboot：请重启主机再次修复
         :type status: list[str]
         :param vul_id: 漏洞ID
         :type vul_id: str
-        :param vul_type: 漏洞类型,包含如下:   - linux_vul : Linux漏洞   - windows_vul : Windows漏洞   - web_cms : Web-CMS漏洞   - app_vul : 应用漏洞   - urgent_vul : 应急漏洞
+        :param vul_type: 漏洞类型，包含如下:   - linux_vul：Linux漏洞   - windows_vul：Windows漏洞   - web_cms：Web-CMS漏洞   - app_vul：应用漏洞   - urgent_vul：应急漏洞
         :type vul_type: str
-        :param asset_value: 资产重要性,包含如下:   - important : 重要资产   - common  : 一般资产   - test  : 测试资产
+        :param asset_value: 资产重要性，包含如下:   - important：重要资产   - common：一般资产   - test：测试资产
         :type asset_value: str
         :param group_name: 服务器组
         :type group_name: str
         :param host_name: 服务器名称
         :type host_name: str
-        :param host_ip: 服务器IP。
+        :param host_ip: 服务器IP
         :type host_ip: str
-        :param cluster_id: 集群ID。
+        :param cluster_id: 集群ID
         :type cluster_id: str
-        :param sort_key: 排序字段，包含如下:   - handle_time : 处置时间
+        :param sort_key: 排序字段，包含如下：   - handle_time：处置时间
         :type sort_key: str
-        :param sort_dir: 排序顺序，若sort_key不为空,设置返回结果按照sort_key升序或降序排序,默认降序排序,包含如下:   - asc : 升序   - desc : 降序
+        :param sort_dir: 排序顺序，若sort_key不为空，设置返回结果按照sort_key升序或降序排序，默认降序排序，包含如下：   - asc：升序   - desc：降序
         :type sort_dir: str
         :param public_ip: 服务器公网IP
         :type public_ip: str
@@ -162,7 +162,7 @@ class ListVulHandleHistoryRequest:
     def status(self):
         r"""Gets the status of this ListVulHandleHistoryRequest.
 
-        漏洞状态,包含如下:   - vul_status_unfix : 未处理   - vul_status_ignored : 已忽略   - vul_status_verified : 验证中   - vul_status_fixing : 修复中   - vul_status_fixed : 修复成功   - vul_status_reboot : 修复成功待重启   - vul_status_failed : 修复失败   - vul_status_fix_after_reboot : 请重启主机再次修复
+        漏洞状态，包含如下：   - vul_status_unfix：未处理   - vul_status_ignored：已忽略   - vul_status_verified：验证中   - vul_status_fixing：修复中   - vul_status_fixed：修复成功   - vul_status_reboot：修复成功待重启   - vul_status_failed：修复失败   - vul_status_fix_after_reboot：请重启主机再次修复
 
         :return: The status of this ListVulHandleHistoryRequest.
         :rtype: list[str]
@@ -173,7 +173,7 @@ class ListVulHandleHistoryRequest:
     def status(self, status):
         r"""Sets the status of this ListVulHandleHistoryRequest.
 
-        漏洞状态,包含如下:   - vul_status_unfix : 未处理   - vul_status_ignored : 已忽略   - vul_status_verified : 验证中   - vul_status_fixing : 修复中   - vul_status_fixed : 修复成功   - vul_status_reboot : 修复成功待重启   - vul_status_failed : 修复失败   - vul_status_fix_after_reboot : 请重启主机再次修复
+        漏洞状态，包含如下：   - vul_status_unfix：未处理   - vul_status_ignored：已忽略   - vul_status_verified：验证中   - vul_status_fixing：修复中   - vul_status_fixed：修复成功   - vul_status_reboot：修复成功待重启   - vul_status_failed：修复失败   - vul_status_fix_after_reboot：请重启主机再次修复
 
         :param status: The status of this ListVulHandleHistoryRequest.
         :type status: list[str]
@@ -206,7 +206,7 @@ class ListVulHandleHistoryRequest:
     def vul_type(self):
         r"""Gets the vul_type of this ListVulHandleHistoryRequest.
 
-        漏洞类型,包含如下:   - linux_vul : Linux漏洞   - windows_vul : Windows漏洞   - web_cms : Web-CMS漏洞   - app_vul : 应用漏洞   - urgent_vul : 应急漏洞
+        漏洞类型，包含如下:   - linux_vul：Linux漏洞   - windows_vul：Windows漏洞   - web_cms：Web-CMS漏洞   - app_vul：应用漏洞   - urgent_vul：应急漏洞
 
         :return: The vul_type of this ListVulHandleHistoryRequest.
         :rtype: str
@@ -217,7 +217,7 @@ class ListVulHandleHistoryRequest:
     def vul_type(self, vul_type):
         r"""Sets the vul_type of this ListVulHandleHistoryRequest.
 
-        漏洞类型,包含如下:   - linux_vul : Linux漏洞   - windows_vul : Windows漏洞   - web_cms : Web-CMS漏洞   - app_vul : 应用漏洞   - urgent_vul : 应急漏洞
+        漏洞类型，包含如下:   - linux_vul：Linux漏洞   - windows_vul：Windows漏洞   - web_cms：Web-CMS漏洞   - app_vul：应用漏洞   - urgent_vul：应急漏洞
 
         :param vul_type: The vul_type of this ListVulHandleHistoryRequest.
         :type vul_type: str
@@ -228,7 +228,7 @@ class ListVulHandleHistoryRequest:
     def asset_value(self):
         r"""Gets the asset_value of this ListVulHandleHistoryRequest.
 
-        资产重要性,包含如下:   - important : 重要资产   - common  : 一般资产   - test  : 测试资产
+        资产重要性，包含如下:   - important：重要资产   - common：一般资产   - test：测试资产
 
         :return: The asset_value of this ListVulHandleHistoryRequest.
         :rtype: str
@@ -239,7 +239,7 @@ class ListVulHandleHistoryRequest:
     def asset_value(self, asset_value):
         r"""Sets the asset_value of this ListVulHandleHistoryRequest.
 
-        资产重要性,包含如下:   - important : 重要资产   - common  : 一般资产   - test  : 测试资产
+        资产重要性，包含如下:   - important：重要资产   - common：一般资产   - test：测试资产
 
         :param asset_value: The asset_value of this ListVulHandleHistoryRequest.
         :type asset_value: str
@@ -294,7 +294,7 @@ class ListVulHandleHistoryRequest:
     def host_ip(self):
         r"""Gets the host_ip of this ListVulHandleHistoryRequest.
 
-        服务器IP。
+        服务器IP
 
         :return: The host_ip of this ListVulHandleHistoryRequest.
         :rtype: str
@@ -305,7 +305,7 @@ class ListVulHandleHistoryRequest:
     def host_ip(self, host_ip):
         r"""Sets the host_ip of this ListVulHandleHistoryRequest.
 
-        服务器IP。
+        服务器IP
 
         :param host_ip: The host_ip of this ListVulHandleHistoryRequest.
         :type host_ip: str
@@ -316,7 +316,7 @@ class ListVulHandleHistoryRequest:
     def cluster_id(self):
         r"""Gets the cluster_id of this ListVulHandleHistoryRequest.
 
-        集群ID。
+        集群ID
 
         :return: The cluster_id of this ListVulHandleHistoryRequest.
         :rtype: str
@@ -327,7 +327,7 @@ class ListVulHandleHistoryRequest:
     def cluster_id(self, cluster_id):
         r"""Sets the cluster_id of this ListVulHandleHistoryRequest.
 
-        集群ID。
+        集群ID
 
         :param cluster_id: The cluster_id of this ListVulHandleHistoryRequest.
         :type cluster_id: str
@@ -338,7 +338,7 @@ class ListVulHandleHistoryRequest:
     def sort_key(self):
         r"""Gets the sort_key of this ListVulHandleHistoryRequest.
 
-        排序字段，包含如下:   - handle_time : 处置时间
+        排序字段，包含如下：   - handle_time：处置时间
 
         :return: The sort_key of this ListVulHandleHistoryRequest.
         :rtype: str
@@ -349,7 +349,7 @@ class ListVulHandleHistoryRequest:
     def sort_key(self, sort_key):
         r"""Sets the sort_key of this ListVulHandleHistoryRequest.
 
-        排序字段，包含如下:   - handle_time : 处置时间
+        排序字段，包含如下：   - handle_time：处置时间
 
         :param sort_key: The sort_key of this ListVulHandleHistoryRequest.
         :type sort_key: str
@@ -360,7 +360,7 @@ class ListVulHandleHistoryRequest:
     def sort_dir(self):
         r"""Gets the sort_dir of this ListVulHandleHistoryRequest.
 
-        排序顺序，若sort_key不为空,设置返回结果按照sort_key升序或降序排序,默认降序排序,包含如下:   - asc : 升序   - desc : 降序
+        排序顺序，若sort_key不为空，设置返回结果按照sort_key升序或降序排序，默认降序排序，包含如下：   - asc：升序   - desc：降序
 
         :return: The sort_dir of this ListVulHandleHistoryRequest.
         :rtype: str
@@ -371,7 +371,7 @@ class ListVulHandleHistoryRequest:
     def sort_dir(self, sort_dir):
         r"""Sets the sort_dir of this ListVulHandleHistoryRequest.
 
-        排序顺序，若sort_key不为空,设置返回结果按照sort_key升序或降序排序,默认降序排序,包含如下:   - asc : 升序   - desc : 降序
+        排序顺序，若sort_key不为空，设置返回结果按照sort_key升序或降序排序，默认降序排序，包含如下：   - asc：升序   - desc：降序
 
         :param sort_dir: The sort_dir of this ListVulHandleHistoryRequest.
         :type sort_dir: str

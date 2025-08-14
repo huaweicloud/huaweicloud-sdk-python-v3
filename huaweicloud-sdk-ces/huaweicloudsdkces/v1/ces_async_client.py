@@ -883,6 +883,8 @@ class CesAsyncClient(Client):
         query_params = []
         if 'event_type' in local_var_params:
             query_params.append(('event_type', local_var_params['event_type']))
+        if 'sub_event_type' in local_var_params:
+            query_params.append(('sub_event_type', local_var_params['sub_event_type']))
         if 'event_source' in local_var_params:
             query_params.append(('event_source', local_var_params['event_source']))
         if 'event_level' in local_var_params:
@@ -964,6 +966,8 @@ class CesAsyncClient(Client):
         query_params = []
         if 'event_type' in local_var_params:
             query_params.append(('event_type', local_var_params['event_type']))
+        if 'sub_event_type' in local_var_params:
+            query_params.append(('sub_event_type', local_var_params['sub_event_type']))
         if 'event_name' in local_var_params:
             query_params.append(('event_name', local_var_params['event_name']))
         if '_from' in local_var_params:

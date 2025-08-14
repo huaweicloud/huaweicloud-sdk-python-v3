@@ -57,7 +57,7 @@ class NodeDetectRiskResponseInfo:
         :type node_total_num: int
         :param cluster_id: 集群id
         :type cluster_id: str
-        :param charging_mode: 付费模式 | on_demand 按需 free 免费
+        :param charging_mode: 付费模式包括： - on_demand：按需 - free：免费
         :type charging_mode: str
         """
         
@@ -248,7 +248,7 @@ class NodeDetectRiskResponseInfo:
     def charging_mode(self):
         r"""Gets the charging_mode of this NodeDetectRiskResponseInfo.
 
-        付费模式 | on_demand 按需 free 免费
+        付费模式包括： - on_demand：按需 - free：免费
 
         :return: The charging_mode of this NodeDetectRiskResponseInfo.
         :rtype: str
@@ -259,7 +259,7 @@ class NodeDetectRiskResponseInfo:
     def charging_mode(self, charging_mode):
         r"""Sets the charging_mode of this NodeDetectRiskResponseInfo.
 
-        付费模式 | on_demand 按需 free 免费
+        付费模式包括： - on_demand：按需 - free：免费
 
         :param charging_mode: The charging_mode of this NodeDetectRiskResponseInfo.
         :type charging_mode: str

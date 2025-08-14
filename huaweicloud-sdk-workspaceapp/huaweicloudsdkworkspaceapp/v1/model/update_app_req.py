@@ -24,7 +24,8 @@ class UpdateAppReq:
         'description': 'str',
         'command_param': 'str',
         'state': 'AppStateEnum',
-        'sandbox_enable': 'bool'
+        'sandbox_enable': 'bool',
+        'app_extended_info': 'AppExtendedInfo'
     }
 
     attribute_map = {
@@ -35,10 +36,11 @@ class UpdateAppReq:
         'description': 'description',
         'command_param': 'command_param',
         'state': 'state',
-        'sandbox_enable': 'sandbox_enable'
+        'sandbox_enable': 'sandbox_enable',
+        'app_extended_info': 'app_extended_info'
     }
 
-    def __init__(self, name=None, version=None, execute_path=None, work_path=None, description=None, command_param=None, state=None, sandbox_enable=None):
+    def __init__(self, name=None, version=None, execute_path=None, work_path=None, description=None, command_param=None, state=None, sandbox_enable=None, app_extended_info=None):
         r"""UpdateAppReq
 
         The model defined in huaweicloud sdk
@@ -59,6 +61,8 @@ class UpdateAppReq:
         :type state: :class:`huaweicloudsdkworkspaceapp.v1.AppStateEnum`
         :param sandbox_enable: 是否使用沙箱模式运行，取值为： - false: 表示不以沙箱模式运行 - true: 表示以沙箱模式运行
         :type sandbox_enable: bool
+        :param app_extended_info: 
+        :type app_extended_info: :class:`huaweicloudsdkworkspaceapp.v1.AppExtendedInfo`
         """
         
         
@@ -71,6 +75,7 @@ class UpdateAppReq:
         self._command_param = None
         self._state = None
         self._sandbox_enable = None
+        self._app_extended_info = None
         self.discriminator = None
 
         if name is not None:
@@ -89,6 +94,8 @@ class UpdateAppReq:
             self.state = state
         if sandbox_enable is not None:
             self.sandbox_enable = sandbox_enable
+        if app_extended_info is not None:
+            self.app_extended_info = app_extended_info
 
     @property
     def name(self):
@@ -261,6 +268,24 @@ class UpdateAppReq:
         :type sandbox_enable: bool
         """
         self._sandbox_enable = sandbox_enable
+
+    @property
+    def app_extended_info(self):
+        r"""Gets the app_extended_info of this UpdateAppReq.
+
+        :return: The app_extended_info of this UpdateAppReq.
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.AppExtendedInfo`
+        """
+        return self._app_extended_info
+
+    @app_extended_info.setter
+    def app_extended_info(self, app_extended_info):
+        r"""Sets the app_extended_info of this UpdateAppReq.
+
+        :param app_extended_info: The app_extended_info of this UpdateAppReq.
+        :type app_extended_info: :class:`huaweicloudsdkworkspaceapp.v1.AppExtendedInfo`
+        """
+        self._app_extended_info = app_extended_info
 
     def to_dict(self):
         """Returns the model properties as a dict"""

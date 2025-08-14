@@ -20,6 +20,7 @@ class ShowAssetResponse(SdkResponse):
     openapi_types = {
         'project_id': 'str',
         'asset_id': 'str',
+        'produce_id': 'str',
         'asset_name': 'str',
         'asset_description': 'str',
         'app_user_id': 'str',
@@ -43,6 +44,7 @@ class ShowAssetResponse(SdkResponse):
     attribute_map = {
         'project_id': 'project_id',
         'asset_id': 'asset_id',
+        'produce_id': 'produce_id',
         'asset_name': 'asset_name',
         'asset_description': 'asset_description',
         'app_user_id': 'app_user_id',
@@ -63,7 +65,7 @@ class ShowAssetResponse(SdkResponse):
         'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, project_id=None, asset_id=None, asset_name=None, asset_description=None, app_user_id=None, create_time=None, update_time=None, asset_type=None, asset_state=None, fail_type=None, block_reason_code=None, reason=None, tags=None, asset_extra_meta=None, system_properties=None, files=None, asset_order=None, supported_service=None, auto_operation_config=None, x_request_id=None):
+    def __init__(self, project_id=None, asset_id=None, produce_id=None, asset_name=None, asset_description=None, app_user_id=None, create_time=None, update_time=None, asset_type=None, asset_state=None, fail_type=None, block_reason_code=None, reason=None, tags=None, asset_extra_meta=None, system_properties=None, files=None, asset_order=None, supported_service=None, auto_operation_config=None, x_request_id=None):
         r"""ShowAssetResponse
 
         The model defined in huaweicloud sdk
@@ -72,6 +74,8 @@ class ShowAssetResponse(SdkResponse):
         :type project_id: str
         :param asset_id: 资产ID。
         :type asset_id: str
+        :param produce_id: ai标识ID。
+        :type produce_id: str
         :param asset_name: 资产名称。
         :type asset_name: str
         :param asset_description: 资产描述。
@@ -114,6 +118,7 @@ class ShowAssetResponse(SdkResponse):
 
         self._project_id = None
         self._asset_id = None
+        self._produce_id = None
         self._asset_name = None
         self._asset_description = None
         self._app_user_id = None
@@ -138,6 +143,8 @@ class ShowAssetResponse(SdkResponse):
             self.project_id = project_id
         if asset_id is not None:
             self.asset_id = asset_id
+        if produce_id is not None:
+            self.produce_id = produce_id
         if asset_name is not None:
             self.asset_name = asset_name
         if asset_description is not None:
@@ -218,6 +225,28 @@ class ShowAssetResponse(SdkResponse):
         :type asset_id: str
         """
         self._asset_id = asset_id
+
+    @property
+    def produce_id(self):
+        r"""Gets the produce_id of this ShowAssetResponse.
+
+        ai标识ID。
+
+        :return: The produce_id of this ShowAssetResponse.
+        :rtype: str
+        """
+        return self._produce_id
+
+    @produce_id.setter
+    def produce_id(self, produce_id):
+        r"""Sets the produce_id of this ShowAssetResponse.
+
+        ai标识ID。
+
+        :param produce_id: The produce_id of this ShowAssetResponse.
+        :type produce_id: str
+        """
+        self._produce_id = produce_id
 
     @property
     def asset_name(self):

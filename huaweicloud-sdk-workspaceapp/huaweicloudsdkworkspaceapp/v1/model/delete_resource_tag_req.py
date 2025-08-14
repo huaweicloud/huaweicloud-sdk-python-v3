@@ -29,7 +29,7 @@ class DeleteResourceTagReq:
 
         The model defined in huaweicloud sdk
 
-        :param tags: 标签列表
+        :param tags: 标签列表。
         :type tags: list[:class:`huaweicloudsdkworkspaceapp.v1.TmsTag`]
         """
         
@@ -45,7 +45,7 @@ class DeleteResourceTagReq:
     def tags(self):
         r"""Gets the tags of this DeleteResourceTagReq.
 
-        标签列表
+        标签列表。
 
         :return: The tags of this DeleteResourceTagReq.
         :rtype: list[:class:`huaweicloudsdkworkspaceapp.v1.TmsTag`]
@@ -56,7 +56,7 @@ class DeleteResourceTagReq:
     def tags(self, tags):
         r"""Sets the tags of this DeleteResourceTagReq.
 
-        标签列表
+        标签列表。
 
         :param tags: The tags of this DeleteResourceTagReq.
         :type tags: list[:class:`huaweicloudsdkworkspaceapp.v1.TmsTag`]

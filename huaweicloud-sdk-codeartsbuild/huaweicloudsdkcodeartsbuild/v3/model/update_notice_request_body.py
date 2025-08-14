@@ -19,16 +19,20 @@ class UpdateNoticeRequestBody:
     openapi_types = {
         'notice_type': 'str',
         'enabled_event_type_names': 'list[str]',
-        'param_config': 'str'
+        'send_switch': 'str',
+        'param_config': 'str',
+        'use_project_notice': 'str'
     }
 
     attribute_map = {
         'notice_type': 'notice_type',
         'enabled_event_type_names': 'enabled_event_type_names',
-        'param_config': 'param_config'
+        'send_switch': 'send_switch',
+        'param_config': 'param_config',
+        'use_project_notice': 'use_project_notice'
     }
 
-    def __init__(self, notice_type=None, enabled_event_type_names=None, param_config=None):
+    def __init__(self, notice_type=None, enabled_event_type_names=None, send_switch=None, param_config=None, use_project_notice=None):
         r"""UpdateNoticeRequestBody
 
         The model defined in huaweicloud sdk
@@ -37,21 +41,31 @@ class UpdateNoticeRequestBody:
         :type notice_type: str
         :param enabled_event_type_names: 开启的通知的种类
         :type enabled_event_type_names: list[str]
+        :param send_switch: 是否开启消息通知。
+        :type send_switch: str
         :param param_config: 通知参数配置
         :type param_config: str
+        :param use_project_notice: 是否使用项目级消息通知设置。
+        :type use_project_notice: str
         """
         
         
 
         self._notice_type = None
         self._enabled_event_type_names = None
+        self._send_switch = None
         self._param_config = None
+        self._use_project_notice = None
         self.discriminator = None
 
         self.notice_type = notice_type
         self.enabled_event_type_names = enabled_event_type_names
+        if send_switch is not None:
+            self.send_switch = send_switch
         if param_config is not None:
             self.param_config = param_config
+        if use_project_notice is not None:
+            self.use_project_notice = use_project_notice
 
     @property
     def notice_type(self):
@@ -98,6 +112,28 @@ class UpdateNoticeRequestBody:
         self._enabled_event_type_names = enabled_event_type_names
 
     @property
+    def send_switch(self):
+        r"""Gets the send_switch of this UpdateNoticeRequestBody.
+
+        是否开启消息通知。
+
+        :return: The send_switch of this UpdateNoticeRequestBody.
+        :rtype: str
+        """
+        return self._send_switch
+
+    @send_switch.setter
+    def send_switch(self, send_switch):
+        r"""Sets the send_switch of this UpdateNoticeRequestBody.
+
+        是否开启消息通知。
+
+        :param send_switch: The send_switch of this UpdateNoticeRequestBody.
+        :type send_switch: str
+        """
+        self._send_switch = send_switch
+
+    @property
     def param_config(self):
         r"""Gets the param_config of this UpdateNoticeRequestBody.
 
@@ -118,6 +154,28 @@ class UpdateNoticeRequestBody:
         :type param_config: str
         """
         self._param_config = param_config
+
+    @property
+    def use_project_notice(self):
+        r"""Gets the use_project_notice of this UpdateNoticeRequestBody.
+
+        是否使用项目级消息通知设置。
+
+        :return: The use_project_notice of this UpdateNoticeRequestBody.
+        :rtype: str
+        """
+        return self._use_project_notice
+
+    @use_project_notice.setter
+    def use_project_notice(self, use_project_notice):
+        r"""Sets the use_project_notice of this UpdateNoticeRequestBody.
+
+        是否使用项目级消息通知设置。
+
+        :param use_project_notice: The use_project_notice of this UpdateNoticeRequestBody.
+        :type use_project_notice: str
+        """
+        self._use_project_notice = use_project_notice
 
     def to_dict(self):
         """Returns the model properties as a dict"""

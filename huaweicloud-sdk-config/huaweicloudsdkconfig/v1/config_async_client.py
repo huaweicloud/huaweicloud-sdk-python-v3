@@ -2755,6 +2755,139 @@ class ConfigAsyncClient(Client):
 
         return http_info
 
+    def collect_policy_assignments_states_summary_async(self, request):
+        r"""查询规则的合规总结
+
+        根据规则ID查询此规则的合规总结
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CollectPolicyAssignmentsStatesSummary
+        :type request: :class:`huaweicloudsdkconfig.v1.CollectPolicyAssignmentsStatesSummaryRequest`
+        :rtype: :class:`huaweicloudsdkconfig.v1.CollectPolicyAssignmentsStatesSummaryResponse`
+        """
+        http_info = self._collect_policy_assignments_states_summary_http_info(request)
+        return self._call_api(**http_info)
+
+    def collect_policy_assignments_states_summary_async_invoker(self, request):
+        http_info = self._collect_policy_assignments_states_summary_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _collect_policy_assignments_states_summary_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/resource-manager/domains/{domain_id}/policy-assignments/{policy_assignment_id}/policy-states/summary",
+            "request_type": request.__class__.__name__,
+            "response_type": "CollectPolicyAssignmentsStatesSummaryResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'policy_assignment_id' in local_var_params:
+            path_params['policy_assignment_id'] = local_var_params['policy_assignment_id']
+
+        query_params = []
+        if 'resource_name' in local_var_params:
+            query_params.append(('resource_name', local_var_params['resource_name']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['PkiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def collect_policy_states_summary_async(self, request):
+        r"""查询用户的合规总结
+
+        查询用户的合规总结
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CollectPolicyStatesSummary
+        :type request: :class:`huaweicloudsdkconfig.v1.CollectPolicyStatesSummaryRequest`
+        :rtype: :class:`huaweicloudsdkconfig.v1.CollectPolicyStatesSummaryResponse`
+        """
+        http_info = self._collect_policy_states_summary_http_info(request)
+        return self._call_api(**http_info)
+
+    def collect_policy_states_summary_async_invoker(self, request):
+        http_info = self._collect_policy_states_summary_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _collect_policy_states_summary_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/resource-manager/domains/{domain_id}/policy-states/summary",
+            "request_type": request.__class__.__name__,
+            "response_type": "CollectPolicyStatesSummaryResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'tags' in local_var_params:
+            query_params.append(('tags', local_var_params['tags']))
+            collection_formats['tags'] = 'multi'
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['PkiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def collect_remediation_execution_statuses_summary_async(self, request):
         r"""列举修正最新记录
 
@@ -2814,6 +2947,77 @@ class ConfigAsyncClient(Client):
             ['application/json'])
 
         auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def collect_resources_policy_states_summary_async(self, request):
+        r"""查询用户资源的合规总结
+
+        查询用户资源的合规总结
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CollectResourcesPolicyStatesSummary
+        :type request: :class:`huaweicloudsdkconfig.v1.CollectResourcesPolicyStatesSummaryRequest`
+        :rtype: :class:`huaweicloudsdkconfig.v1.CollectResourcesPolicyStatesSummaryResponse`
+        """
+        http_info = self._collect_resources_policy_states_summary_http_info(request)
+        return self._call_api(**http_info)
+
+    def collect_resources_policy_states_summary_async_invoker(self, request):
+        http_info = self._collect_resources_policy_states_summary_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _collect_resources_policy_states_summary_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/resource-manager/domains/{domain_id}/resources/policy-states/summary",
+            "request_type": request.__class__.__name__,
+            "response_type": "CollectResourcesPolicyStatesSummaryResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'resource_id' in local_var_params:
+            query_params.append(('resource_id', local_var_params['resource_id']))
+        if 'resource_name' in local_var_params:
+            query_params.append(('resource_name', local_var_params['resource_name']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['PkiTokenAuth']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -5713,6 +5917,75 @@ class ConfigAsyncClient(Client):
             query_params.append(('resource_deleted', local_var_params['resource_deleted']))
 
         header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['PkiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_all_providers_async(self, request):
+        r"""列举所有已对接的云服务
+
+        查询所有已对接Config的云服务、资源。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListAllProviders
+        :type request: :class:`huaweicloudsdkconfig.v1.ListAllProvidersRequest`
+        :rtype: :class:`huaweicloudsdkconfig.v1.ListAllProvidersResponse`
+        """
+        http_info = self._list_all_providers_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_all_providers_async_invoker(self, request):
+        http_info = self._list_all_providers_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_all_providers_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/resource-manager/domains/{domain_id}/all-providers",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAllProvidersResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
 
         form_params = {}
 

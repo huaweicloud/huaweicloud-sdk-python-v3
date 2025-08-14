@@ -35,9 +35,9 @@ class InstanceMetadataEntryDto:
 
         The model defined in huaweicloud sdk
 
-        :param identity_store_id: 关联到IAM身份中心实例的身份源的全局唯一标识符（ID）
+        :param identity_store_id: 关联到IAM身份中心实例的身份源的全局唯一标识符（ID）。
         :type identity_store_id: str
-        :param instance_id: IAM身份中心实例的全局唯一标识符（ID）
+        :param instance_id: Identity Center实例的全局唯一标识符（ID）
         :type instance_id: str
         :param alias: 用户为身份源标识符定义的别名
         :type alias: str
@@ -64,7 +64,7 @@ class InstanceMetadataEntryDto:
     def identity_store_id(self):
         r"""Gets the identity_store_id of this InstanceMetadataEntryDto.
 
-        关联到IAM身份中心实例的身份源的全局唯一标识符（ID）
+        关联到IAM身份中心实例的身份源的全局唯一标识符（ID）。
 
         :return: The identity_store_id of this InstanceMetadataEntryDto.
         :rtype: str
@@ -75,7 +75,7 @@ class InstanceMetadataEntryDto:
     def identity_store_id(self, identity_store_id):
         r"""Sets the identity_store_id of this InstanceMetadataEntryDto.
 
-        关联到IAM身份中心实例的身份源的全局唯一标识符（ID）
+        关联到IAM身份中心实例的身份源的全局唯一标识符（ID）。
 
         :param identity_store_id: The identity_store_id of this InstanceMetadataEntryDto.
         :type identity_store_id: str
@@ -86,7 +86,7 @@ class InstanceMetadataEntryDto:
     def instance_id(self):
         r"""Gets the instance_id of this InstanceMetadataEntryDto.
 
-        IAM身份中心实例的全局唯一标识符（ID）
+        Identity Center实例的全局唯一标识符（ID）
 
         :return: The instance_id of this InstanceMetadataEntryDto.
         :rtype: str
@@ -97,7 +97,7 @@ class InstanceMetadataEntryDto:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this InstanceMetadataEntryDto.
 
-        IAM身份中心实例的全局唯一标识符（ID）
+        Identity Center实例的全局唯一标识符（ID）
 
         :param instance_id: The instance_id of this InstanceMetadataEntryDto.
         :type instance_id: str

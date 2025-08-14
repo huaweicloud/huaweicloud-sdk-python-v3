@@ -53,7 +53,7 @@ class ImageRiskConfigsCheckRulesResponseInfo:
         :type check_rule_name: str
         :param check_rule_id: 检查项ID
         :type check_rule_id: str
-        :param scan_result: 检测结果，包含如下：   - pass    通过   - failed  未通过
+        :param scan_result: 检测结果，包含如下：   - pass：通过   - failed：未通过
         :type scan_result: str
         """
         
@@ -219,7 +219,7 @@ class ImageRiskConfigsCheckRulesResponseInfo:
     def scan_result(self):
         r"""Gets the scan_result of this ImageRiskConfigsCheckRulesResponseInfo.
 
-        检测结果，包含如下：   - pass    通过   - failed  未通过
+        检测结果，包含如下：   - pass：通过   - failed：未通过
 
         :return: The scan_result of this ImageRiskConfigsCheckRulesResponseInfo.
         :rtype: str
@@ -230,7 +230,7 @@ class ImageRiskConfigsCheckRulesResponseInfo:
     def scan_result(self, scan_result):
         r"""Sets the scan_result of this ImageRiskConfigsCheckRulesResponseInfo.
 
-        检测结果，包含如下：   - pass    通过   - failed  未通过
+        检测结果，包含如下：   - pass：通过   - failed：未通过
 
         :param scan_result: The scan_result of this ImageRiskConfigsCheckRulesResponseInfo.
         :type scan_result: str

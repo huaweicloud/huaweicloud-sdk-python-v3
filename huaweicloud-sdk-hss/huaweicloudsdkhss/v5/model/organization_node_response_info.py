@@ -43,7 +43,7 @@ class OrganizationNodeResponseInfo:
         :type parent_id: str
         :param id: 节点Id
         :type id: str
-        :param urn: 组织的统一资源名称,格式：organizations::{management_account_id}:xxxxx:{org_id}/xxxxxxxx。
+        :param urn: 组织的统一资源名称，格式：organizations::{management_account_id}:xxxxx:{org_id}/xxxxxxxx。
         :type urn: str
         :param name: 名称
         :type name: str
@@ -124,7 +124,7 @@ class OrganizationNodeResponseInfo:
     def urn(self):
         r"""Gets the urn of this OrganizationNodeResponseInfo.
 
-        组织的统一资源名称,格式：organizations::{management_account_id}:xxxxx:{org_id}/xxxxxxxx。
+        组织的统一资源名称，格式：organizations::{management_account_id}:xxxxx:{org_id}/xxxxxxxx。
 
         :return: The urn of this OrganizationNodeResponseInfo.
         :rtype: str
@@ -135,7 +135,7 @@ class OrganizationNodeResponseInfo:
     def urn(self, urn):
         r"""Sets the urn of this OrganizationNodeResponseInfo.
 
-        组织的统一资源名称,格式：organizations::{management_account_id}:xxxxx:{org_id}/xxxxxxxx。
+        组织的统一资源名称，格式：organizations::{management_account_id}:xxxxx:{org_id}/xxxxxxxx。
 
         :param urn: The urn of this OrganizationNodeResponseInfo.
         :type urn: str

@@ -19,6 +19,7 @@ class ListEventDetailRequest:
     openapi_types = {
         'event_name': 'str',
         'event_type': 'str',
+        'sub_event_type': 'str',
         'event_source': 'str',
         'event_level': 'str',
         'event_user': 'str',
@@ -32,6 +33,7 @@ class ListEventDetailRequest:
     attribute_map = {
         'event_name': 'event_name',
         'event_type': 'event_type',
+        'sub_event_type': 'sub_event_type',
         'event_source': 'event_source',
         'event_level': 'event_level',
         'event_user': 'event_user',
@@ -42,7 +44,7 @@ class ListEventDetailRequest:
         'limit': 'limit'
     }
 
-    def __init__(self, event_name=None, event_type=None, event_source=None, event_level=None, event_user=None, event_state=None, _from=None, to=None, start=None, limit=None):
+    def __init__(self, event_name=None, event_type=None, sub_event_type=None, event_source=None, event_level=None, event_user=None, event_state=None, _from=None, to=None, start=None, limit=None):
         r"""ListEventDetailRequest
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class ListEventDetailRequest:
         :type event_name: str
         :param event_type: 事件类型，值为EVENT.SYS或EVENT.CUSTOM，EVENT.SYS表示系统事件，EVENT.CUSTOM表示自定义事件。
         :type event_type: str
+        :param sub_event_type: 事件子类。 枚举类型：SUB_EVENT.OPS为运维事件，SUB_EVENT.PLAN为计划事件，SUB_EVENT.CUSTOM为自定义事件。
+        :type sub_event_type: str
         :param event_source: 事件名称，值为系统产生的事件名称，或用户自定义上报的事件名称。
         :type event_source: str
         :param event_level: 事件的级别，值为Critical，Major，Minor，Info；Critical为紧急，Major为重要，Minor为次要，Info为提示。
@@ -73,6 +77,7 @@ class ListEventDetailRequest:
 
         self._event_name = None
         self._event_type = None
+        self._sub_event_type = None
         self._event_source = None
         self._event_level = None
         self._event_user = None
@@ -85,6 +90,8 @@ class ListEventDetailRequest:
 
         self.event_name = event_name
         self.event_type = event_type
+        if sub_event_type is not None:
+            self.sub_event_type = sub_event_type
         if event_source is not None:
             self.event_source = event_source
         if event_level is not None:
@@ -145,6 +152,28 @@ class ListEventDetailRequest:
         :type event_type: str
         """
         self._event_type = event_type
+
+    @property
+    def sub_event_type(self):
+        r"""Gets the sub_event_type of this ListEventDetailRequest.
+
+        事件子类。 枚举类型：SUB_EVENT.OPS为运维事件，SUB_EVENT.PLAN为计划事件，SUB_EVENT.CUSTOM为自定义事件。
+
+        :return: The sub_event_type of this ListEventDetailRequest.
+        :rtype: str
+        """
+        return self._sub_event_type
+
+    @sub_event_type.setter
+    def sub_event_type(self, sub_event_type):
+        r"""Sets the sub_event_type of this ListEventDetailRequest.
+
+        事件子类。 枚举类型：SUB_EVENT.OPS为运维事件，SUB_EVENT.PLAN为计划事件，SUB_EVENT.CUSTOM为自定义事件。
+
+        :param sub_event_type: The sub_event_type of this ListEventDetailRequest.
+        :type sub_event_type: str
+        """
+        self._sub_event_type = sub_event_type
 
     @property
     def event_source(self):

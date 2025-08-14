@@ -39,9 +39,9 @@ class ServicePortInfo:
 
         :param desc: 服务名称
         :type desc: str
-        :param type: 类型，可取值集合[http,https]
+        :param type: 类型，可取值集合[http，https]
         :type type: str
-        :param protocol: 默认tcp。可取值集合[tcp,udp]
+        :param protocol: 默认tcp。可取值集合[tcp，udp]
         :type protocol: str
         :param user_port: 用户端口
         :type user_port: int
@@ -92,7 +92,7 @@ class ServicePortInfo:
     def type(self):
         r"""Gets the type of this ServicePortInfo.
 
-        类型，可取值集合[http,https]
+        类型，可取值集合[http，https]
 
         :return: The type of this ServicePortInfo.
         :rtype: str
@@ -103,7 +103,7 @@ class ServicePortInfo:
     def type(self, type):
         r"""Sets the type of this ServicePortInfo.
 
-        类型，可取值集合[http,https]
+        类型，可取值集合[http，https]
 
         :param type: The type of this ServicePortInfo.
         :type type: str
@@ -114,7 +114,7 @@ class ServicePortInfo:
     def protocol(self):
         r"""Gets the protocol of this ServicePortInfo.
 
-        默认tcp。可取值集合[tcp,udp]
+        默认tcp。可取值集合[tcp，udp]
 
         :return: The protocol of this ServicePortInfo.
         :rtype: str
@@ -125,7 +125,7 @@ class ServicePortInfo:
     def protocol(self, protocol):
         r"""Sets the protocol of this ServicePortInfo.
 
-        默认tcp。可取值集合[tcp,udp]
+        默认tcp。可取值集合[tcp，udp]
 
         :param protocol: The protocol of this ServicePortInfo.
         :type protocol: str

@@ -20,6 +20,7 @@ class ListAppGroupAuthorizationRequest:
         'limit': 'int',
         'offset': 'int',
         'app_group_id': 'str',
+        'account_id': 'str',
         'account': 'str',
         'account_type': 'str'
     }
@@ -28,21 +29,24 @@ class ListAppGroupAuthorizationRequest:
         'limit': 'limit',
         'offset': 'offset',
         'app_group_id': 'app_group_id',
+        'account_id': 'account_id',
         'account': 'account',
         'account_type': 'account_type'
     }
 
-    def __init__(self, limit=None, offset=None, app_group_id=None, account=None, account_type=None):
+    def __init__(self, limit=None, offset=None, app_group_id=None, account_id=None, account=None, account_type=None):
         r"""ListAppGroupAuthorizationRequest
 
         The model defined in huaweicloud sdk
 
-        :param limit: 单次查询的大小[1-100]。
+        :param limit: 单次查询的大小[1-100]，默认值10。
         :type limit: int
-        :param offset: 查询的偏移量。
+        :param offset: 查询的偏移量，默认值0。
         :type offset: int
         :param app_group_id: 应用组ID。
         :type app_group_id: str
+        :param account_id: 应用授权的用户(组)ID，精确查询。
+        :type account_id: str
         :param account: 应用授权的用户(组)名称，精确查询。
         :type account: str
         :param account_type: 应用授权的用户(组)类型： * &#39;USER&#39; - 用户 * &#39;USER_GROUP&#39; - 用户组
@@ -54,6 +58,7 @@ class ListAppGroupAuthorizationRequest:
         self._limit = None
         self._offset = None
         self._app_group_id = None
+        self._account_id = None
         self._account = None
         self._account_type = None
         self.discriminator = None
@@ -64,6 +69,8 @@ class ListAppGroupAuthorizationRequest:
             self.offset = offset
         if app_group_id is not None:
             self.app_group_id = app_group_id
+        if account_id is not None:
+            self.account_id = account_id
         if account is not None:
             self.account = account
         if account_type is not None:
@@ -73,7 +80,7 @@ class ListAppGroupAuthorizationRequest:
     def limit(self):
         r"""Gets the limit of this ListAppGroupAuthorizationRequest.
 
-        单次查询的大小[1-100]。
+        单次查询的大小[1-100]，默认值10。
 
         :return: The limit of this ListAppGroupAuthorizationRequest.
         :rtype: int
@@ -84,7 +91,7 @@ class ListAppGroupAuthorizationRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListAppGroupAuthorizationRequest.
 
-        单次查询的大小[1-100]。
+        单次查询的大小[1-100]，默认值10。
 
         :param limit: The limit of this ListAppGroupAuthorizationRequest.
         :type limit: int
@@ -95,7 +102,7 @@ class ListAppGroupAuthorizationRequest:
     def offset(self):
         r"""Gets the offset of this ListAppGroupAuthorizationRequest.
 
-        查询的偏移量。
+        查询的偏移量，默认值0。
 
         :return: The offset of this ListAppGroupAuthorizationRequest.
         :rtype: int
@@ -106,7 +113,7 @@ class ListAppGroupAuthorizationRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListAppGroupAuthorizationRequest.
 
-        查询的偏移量。
+        查询的偏移量，默认值0。
 
         :param offset: The offset of this ListAppGroupAuthorizationRequest.
         :type offset: int
@@ -134,6 +141,28 @@ class ListAppGroupAuthorizationRequest:
         :type app_group_id: str
         """
         self._app_group_id = app_group_id
+
+    @property
+    def account_id(self):
+        r"""Gets the account_id of this ListAppGroupAuthorizationRequest.
+
+        应用授权的用户(组)ID，精确查询。
+
+        :return: The account_id of this ListAppGroupAuthorizationRequest.
+        :rtype: str
+        """
+        return self._account_id
+
+    @account_id.setter
+    def account_id(self, account_id):
+        r"""Sets the account_id of this ListAppGroupAuthorizationRequest.
+
+        应用授权的用户(组)ID，精确查询。
+
+        :param account_id: The account_id of this ListAppGroupAuthorizationRequest.
+        :type account_id: str
+        """
+        self._account_id = account_id
 
     @property
     def account(self):

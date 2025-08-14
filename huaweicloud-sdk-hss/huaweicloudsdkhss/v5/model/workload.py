@@ -37,7 +37,7 @@ class Workload:
         :type workload_id: str
         :param workload_name: 工作负载名称
         :type workload_name: str
-        :param workload_type: 工作负载类型,包含如下：   - deployments：无状态负载   - statefulsets：有状态负载   - daemonsets：守护进程表
+        :param workload_type: 工作负载类型，包含如下：   - deployments：无状态负载   - statefulsets：有状态负载   - daemonsets：守护进程表
         :type workload_type: str
         """
         
@@ -100,7 +100,7 @@ class Workload:
     def workload_type(self):
         r"""Gets the workload_type of this Workload.
 
-        工作负载类型,包含如下：   - deployments：无状态负载   - statefulsets：有状态负载   - daemonsets：守护进程表
+        工作负载类型，包含如下：   - deployments：无状态负载   - statefulsets：有状态负载   - daemonsets：守护进程表
 
         :return: The workload_type of this Workload.
         :rtype: str
@@ -111,7 +111,7 @@ class Workload:
     def workload_type(self, workload_type):
         r"""Sets the workload_type of this Workload.
 
-        工作负载类型,包含如下：   - deployments：无状态负载   - statefulsets：有状态负载   - daemonsets：守护进程表
+        工作负载类型，包含如下：   - deployments：无状态负载   - statefulsets：有状态负载   - daemonsets：守护进程表
 
         :param workload_type: The workload_type of this Workload.
         :type workload_type: str

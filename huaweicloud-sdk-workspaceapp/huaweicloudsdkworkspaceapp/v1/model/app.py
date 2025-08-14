@@ -34,7 +34,9 @@ class App:
         'publisher': 'str',
         'icon_url': 'str',
         'publishable': 'bool',
-        'sandbox_enable': 'bool'
+        'sandbox_enable': 'bool',
+        'is_pre_boot': 'bool',
+        'app_extended_info': 'AppExtendedInfo'
     }
 
     attribute_map = {
@@ -55,10 +57,12 @@ class App:
         'publisher': 'publisher',
         'icon_url': 'icon_url',
         'publishable': 'publishable',
-        'sandbox_enable': 'sandbox_enable'
+        'sandbox_enable': 'sandbox_enable',
+        'is_pre_boot': 'is_pre_boot',
+        'app_extended_info': 'app_extended_info'
     }
 
-    def __init__(self, id=None, name=None, version=None, command_param=None, execute_path=None, work_path=None, icon_path=None, icon_index=None, description=None, app_group_id=None, state=None, tenant_id=None, publish_at=None, source_type=None, publisher=None, icon_url=None, publishable=None, sandbox_enable=None):
+    def __init__(self, id=None, name=None, version=None, command_param=None, execute_path=None, work_path=None, icon_path=None, icon_index=None, description=None, app_group_id=None, state=None, tenant_id=None, publish_at=None, source_type=None, publisher=None, icon_url=None, publishable=None, sandbox_enable=None, is_pre_boot=None, app_extended_info=None):
         r"""App
 
         The model defined in huaweicloud sdk
@@ -99,6 +103,10 @@ class App:
         :type publishable: bool
         :param sandbox_enable: 是否使用沙箱模式运行，取值为： - false: 表示不以沙箱模式运行。 - true: 表示以沙箱模式运行。
         :type sandbox_enable: bool
+        :param is_pre_boot: 是否开启应用预开，取值为： - false: 表示关闭应用预开。 - true: 表示开启应用预开。
+        :type is_pre_boot: bool
+        :param app_extended_info: 
+        :type app_extended_info: :class:`huaweicloudsdkworkspaceapp.v1.AppExtendedInfo`
         """
         
         
@@ -121,6 +129,8 @@ class App:
         self._icon_url = None
         self._publishable = None
         self._sandbox_enable = None
+        self._is_pre_boot = None
+        self._app_extended_info = None
         self.discriminator = None
 
         if id is not None:
@@ -159,6 +169,10 @@ class App:
             self.publishable = publishable
         if sandbox_enable is not None:
             self.sandbox_enable = sandbox_enable
+        if is_pre_boot is not None:
+            self.is_pre_boot = is_pre_boot
+        if app_extended_info is not None:
+            self.app_extended_info = app_extended_info
 
     @property
     def id(self):
@@ -551,6 +565,46 @@ class App:
         :type sandbox_enable: bool
         """
         self._sandbox_enable = sandbox_enable
+
+    @property
+    def is_pre_boot(self):
+        r"""Gets the is_pre_boot of this App.
+
+        是否开启应用预开，取值为： - false: 表示关闭应用预开。 - true: 表示开启应用预开。
+
+        :return: The is_pre_boot of this App.
+        :rtype: bool
+        """
+        return self._is_pre_boot
+
+    @is_pre_boot.setter
+    def is_pre_boot(self, is_pre_boot):
+        r"""Sets the is_pre_boot of this App.
+
+        是否开启应用预开，取值为： - false: 表示关闭应用预开。 - true: 表示开启应用预开。
+
+        :param is_pre_boot: The is_pre_boot of this App.
+        :type is_pre_boot: bool
+        """
+        self._is_pre_boot = is_pre_boot
+
+    @property
+    def app_extended_info(self):
+        r"""Gets the app_extended_info of this App.
+
+        :return: The app_extended_info of this App.
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.AppExtendedInfo`
+        """
+        return self._app_extended_info
+
+    @app_extended_info.setter
+    def app_extended_info(self, app_extended_info):
+        r"""Sets the app_extended_info of this App.
+
+        :param app_extended_info: The app_extended_info of this App.
+        :type app_extended_info: :class:`huaweicloudsdkworkspaceapp.v1.AppExtendedInfo`
+        """
+        self._app_extended_info = app_extended_info
 
     def to_dict(self):
         """Returns the model properties as a dict"""

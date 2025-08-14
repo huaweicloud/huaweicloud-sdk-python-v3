@@ -32,7 +32,7 @@ class ListAccountsForProvisionedPermissionSetResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param account_ids: 账号ID列表
+        :param account_ids: 账户ID列表
         :type account_ids: list[str]
         :param page_info: 
         :type page_info: :class:`huaweicloudsdkidentitycenter.v1.PageInfoDto`
@@ -53,7 +53,7 @@ class ListAccountsForProvisionedPermissionSetResponse(SdkResponse):
     def account_ids(self):
         r"""Gets the account_ids of this ListAccountsForProvisionedPermissionSetResponse.
 
-        账号ID列表
+        账户ID列表
 
         :return: The account_ids of this ListAccountsForProvisionedPermissionSetResponse.
         :rtype: list[str]
@@ -64,7 +64,7 @@ class ListAccountsForProvisionedPermissionSetResponse(SdkResponse):
     def account_ids(self, account_ids):
         r"""Sets the account_ids of this ListAccountsForProvisionedPermissionSetResponse.
 
-        账号ID列表
+        账户ID列表
 
         :param account_ids: The account_ids of this ListAccountsForProvisionedPermissionSetResponse.
         :type account_ids: list[str]

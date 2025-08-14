@@ -18,54 +18,76 @@ class AttachManagedRoleToPermissionSetRequest:
     sensitive_list.append('x_security_token')
 
     openapi_types = {
+        'x_security_token': 'str',
         'instance_id': 'str',
         'permission_set_id': 'str',
-        'x_security_token': 'str',
         'body': 'ResourceAttachManagedPolicyToPermissionSetReqBody'
     }
 
     attribute_map = {
+        'x_security_token': 'X-Security-Token',
         'instance_id': 'instance_id',
         'permission_set_id': 'permission_set_id',
-        'x_security_token': 'X-Security-Token',
         'body': 'body'
     }
 
-    def __init__(self, instance_id=None, permission_set_id=None, x_security_token=None, body=None):
+    def __init__(self, x_security_token=None, instance_id=None, permission_set_id=None, body=None):
         r"""AttachManagedRoleToPermissionSetRequest
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: IAM身份中心实例的全局唯一标识符（ID）。
+        :param x_security_token: 如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
+        :type x_security_token: str
+        :param instance_id: IAM Identity Center实例的全局唯一标识符（ID）
         :type instance_id: str
         :param permission_set_id: 权限集的全局唯一标识符（ID）
         :type permission_set_id: str
-        :param x_security_token: 如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
-        :type x_security_token: str
         :param body: Body of the AttachManagedRoleToPermissionSetRequest
         :type body: :class:`huaweicloudsdkidentitycenter.v1.ResourceAttachManagedPolicyToPermissionSetReqBody`
         """
         
         
 
+        self._x_security_token = None
         self._instance_id = None
         self._permission_set_id = None
-        self._x_security_token = None
         self._body = None
         self.discriminator = None
 
-        self.instance_id = instance_id
-        self.permission_set_id = permission_set_id
         if x_security_token is not None:
             self.x_security_token = x_security_token
+        self.instance_id = instance_id
+        self.permission_set_id = permission_set_id
         if body is not None:
             self.body = body
+
+    @property
+    def x_security_token(self):
+        r"""Gets the x_security_token of this AttachManagedRoleToPermissionSetRequest.
+
+        如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
+
+        :return: The x_security_token of this AttachManagedRoleToPermissionSetRequest.
+        :rtype: str
+        """
+        return self._x_security_token
+
+    @x_security_token.setter
+    def x_security_token(self, x_security_token):
+        r"""Sets the x_security_token of this AttachManagedRoleToPermissionSetRequest.
+
+        如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
+
+        :param x_security_token: The x_security_token of this AttachManagedRoleToPermissionSetRequest.
+        :type x_security_token: str
+        """
+        self._x_security_token = x_security_token
 
     @property
     def instance_id(self):
         r"""Gets the instance_id of this AttachManagedRoleToPermissionSetRequest.
 
-        IAM身份中心实例的全局唯一标识符（ID）。
+        IAM Identity Center实例的全局唯一标识符（ID）
 
         :return: The instance_id of this AttachManagedRoleToPermissionSetRequest.
         :rtype: str
@@ -76,7 +98,7 @@ class AttachManagedRoleToPermissionSetRequest:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this AttachManagedRoleToPermissionSetRequest.
 
-        IAM身份中心实例的全局唯一标识符（ID）。
+        IAM Identity Center实例的全局唯一标识符（ID）
 
         :param instance_id: The instance_id of this AttachManagedRoleToPermissionSetRequest.
         :type instance_id: str
@@ -104,28 +126,6 @@ class AttachManagedRoleToPermissionSetRequest:
         :type permission_set_id: str
         """
         self._permission_set_id = permission_set_id
-
-    @property
-    def x_security_token(self):
-        r"""Gets the x_security_token of this AttachManagedRoleToPermissionSetRequest.
-
-        如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
-
-        :return: The x_security_token of this AttachManagedRoleToPermissionSetRequest.
-        :rtype: str
-        """
-        return self._x_security_token
-
-    @x_security_token.setter
-    def x_security_token(self, x_security_token):
-        r"""Sets the x_security_token of this AttachManagedRoleToPermissionSetRequest.
-
-        如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
-
-        :param x_security_token: The x_security_token of this AttachManagedRoleToPermissionSetRequest.
-        :type x_security_token: str
-        """
-        self._x_security_token = x_security_token
 
     @property
     def body(self):

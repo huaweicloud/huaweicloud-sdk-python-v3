@@ -5961,7 +5961,7 @@ class AosClient(Client):
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
-        response_headers = ["Location"]
+        response_headers = ["Location", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])

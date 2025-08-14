@@ -31,9 +31,9 @@ class RepairPriorityListInfo:
 
         The model defined in huaweicloud sdk
 
-        :param repair_priority: 修复优先级 Critical 紧急 High 高 Medium 中 Low 低
+        :param repair_priority: **参数解释**: 修复优先级 **取值范围**: - Critical：紧急 - High：高 - Medium：中 - Low：低 
         :type repair_priority: str
-        :param host_num: 当前修复优先级对应的主机数量
+        :param host_num: **参数解释**: 当前修复优先级对应的主机数量 **取值范围**: 取值0-2147483647 
         :type host_num: int
         """
         
@@ -52,7 +52,7 @@ class RepairPriorityListInfo:
     def repair_priority(self):
         r"""Gets the repair_priority of this RepairPriorityListInfo.
 
-        修复优先级 Critical 紧急 High 高 Medium 中 Low 低
+        **参数解释**: 修复优先级 **取值范围**: - Critical：紧急 - High：高 - Medium：中 - Low：低 
 
         :return: The repair_priority of this RepairPriorityListInfo.
         :rtype: str
@@ -63,7 +63,7 @@ class RepairPriorityListInfo:
     def repair_priority(self, repair_priority):
         r"""Sets the repair_priority of this RepairPriorityListInfo.
 
-        修复优先级 Critical 紧急 High 高 Medium 中 Low 低
+        **参数解释**: 修复优先级 **取值范围**: - Critical：紧急 - High：高 - Medium：中 - Low：低 
 
         :param repair_priority: The repair_priority of this RepairPriorityListInfo.
         :type repair_priority: str
@@ -74,7 +74,7 @@ class RepairPriorityListInfo:
     def host_num(self):
         r"""Gets the host_num of this RepairPriorityListInfo.
 
-        当前修复优先级对应的主机数量
+        **参数解释**: 当前修复优先级对应的主机数量 **取值范围**: 取值0-2147483647 
 
         :return: The host_num of this RepairPriorityListInfo.
         :rtype: int
@@ -85,7 +85,7 @@ class RepairPriorityListInfo:
     def host_num(self, host_num):
         r"""Sets the host_num of this RepairPriorityListInfo.
 
-        当前修复优先级对应的主机数量
+        **参数解释**: 当前修复优先级对应的主机数量 **取值范围**: 取值0-2147483647 
 
         :param host_num: The host_num of this RepairPriorityListInfo.
         :type host_num: int

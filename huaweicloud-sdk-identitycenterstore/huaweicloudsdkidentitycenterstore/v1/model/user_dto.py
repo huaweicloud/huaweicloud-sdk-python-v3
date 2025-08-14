@@ -101,7 +101,7 @@ class UserDto:
         :type timezone: str
         :param title: 用户头衔
         :type title: str
-        :param user_id: 身份源中IAM身份中心用户的全局唯一标识符（ID）
+        :param user_id: 身份源中IdentityCenter用户的全局唯一标识符（ID）
         :type user_id: str
         :param user_name: 用户名，用于标识用户的唯一字符串
         :type user_name: str
@@ -492,7 +492,7 @@ class UserDto:
     def user_id(self):
         r"""Gets the user_id of this UserDto.
 
-        身份源中IAM身份中心用户的全局唯一标识符（ID）
+        身份源中IdentityCenter用户的全局唯一标识符（ID）
 
         :return: The user_id of this UserDto.
         :rtype: str
@@ -503,7 +503,7 @@ class UserDto:
     def user_id(self, user_id):
         r"""Sets the user_id of this UserDto.
 
-        身份源中IAM身份中心用户的全局唯一标识符（ID）
+        身份源中IdentityCenter用户的全局唯一标识符（ID）
 
         :param user_id: The user_id of this UserDto.
         :type user_id: str

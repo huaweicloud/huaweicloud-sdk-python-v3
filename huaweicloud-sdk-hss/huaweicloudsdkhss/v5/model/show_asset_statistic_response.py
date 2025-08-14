@@ -52,29 +52,29 @@ class ShowAssetStatisticResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param account_num: 主机账号数量
+        :param account_num: **参数解释**： 主机账号数量 **取值范围**： 最小值0，最大值2147483647 
         :type account_num: int
-        :param port_num: 开放端口数量
+        :param port_num: **参数解释**： 开放端口数量 **取值范围**： 最小值0，最大值2147483647 
         :type port_num: int
-        :param process_num: 进程数量
+        :param process_num: **参数解释**： 进程数量 **取值范围**： 最小值0，最大值2147483647 
         :type process_num: int
-        :param app_num: 软件数量
+        :param app_num: **参数解释**： 软件数量 **取值范围**： 最小值0，最大值2147483647 
         :type app_num: int
-        :param auto_launch_num: 自启动进程数量
+        :param auto_launch_num: **参数解释**： 自启动进程数量 **取值范围**： 最小值0，最大值2147483647 
         :type auto_launch_num: int
-        :param web_framework_num: web框架数量
+        :param web_framework_num: **参数解释**： web框架数量 **取值范围**： 最小值0，最大值2147483647 
         :type web_framework_num: int
-        :param web_site_num: Web站点数量
+        :param web_site_num: **参数解释**： Web站点数量 **取值范围**： 最小值0，最大值2147483647 
         :type web_site_num: int
-        :param jar_package_num: Jar包数量
+        :param jar_package_num: **参数解释**： Jar包数量 **取值范围**： 最小值0，最大值2147483647 
         :type jar_package_num: int
-        :param kernel_module_num: 内核模块数量
+        :param kernel_module_num: **参数解释**： 内核模块数量 **取值范围**： 最小值0，最大值2147483647 
         :type kernel_module_num: int
-        :param web_service_num: web服务数量
+        :param web_service_num: **参数解释**： web服务数量 **取值范围**： 最小值0，最大值2147483647 
         :type web_service_num: int
-        :param web_app_num: web应用数量
+        :param web_app_num: **参数解释**： web应用数量 **取值范围**： 最小值0，最大值2147483647 
         :type web_app_num: int
-        :param database_num: 数据库数量
+        :param database_num: **参数解释**： 数据库数量 **取值范围**： 最小值0，最大值2147483647 
         :type database_num: int
         """
         
@@ -123,7 +123,7 @@ class ShowAssetStatisticResponse(SdkResponse):
     def account_num(self):
         r"""Gets the account_num of this ShowAssetStatisticResponse.
 
-        主机账号数量
+        **参数解释**： 主机账号数量 **取值范围**： 最小值0，最大值2147483647 
 
         :return: The account_num of this ShowAssetStatisticResponse.
         :rtype: int
@@ -134,7 +134,7 @@ class ShowAssetStatisticResponse(SdkResponse):
     def account_num(self, account_num):
         r"""Sets the account_num of this ShowAssetStatisticResponse.
 
-        主机账号数量
+        **参数解释**： 主机账号数量 **取值范围**： 最小值0，最大值2147483647 
 
         :param account_num: The account_num of this ShowAssetStatisticResponse.
         :type account_num: int
@@ -145,7 +145,7 @@ class ShowAssetStatisticResponse(SdkResponse):
     def port_num(self):
         r"""Gets the port_num of this ShowAssetStatisticResponse.
 
-        开放端口数量
+        **参数解释**： 开放端口数量 **取值范围**： 最小值0，最大值2147483647 
 
         :return: The port_num of this ShowAssetStatisticResponse.
         :rtype: int
@@ -156,7 +156,7 @@ class ShowAssetStatisticResponse(SdkResponse):
     def port_num(self, port_num):
         r"""Sets the port_num of this ShowAssetStatisticResponse.
 
-        开放端口数量
+        **参数解释**： 开放端口数量 **取值范围**： 最小值0，最大值2147483647 
 
         :param port_num: The port_num of this ShowAssetStatisticResponse.
         :type port_num: int
@@ -167,7 +167,7 @@ class ShowAssetStatisticResponse(SdkResponse):
     def process_num(self):
         r"""Gets the process_num of this ShowAssetStatisticResponse.
 
-        进程数量
+        **参数解释**： 进程数量 **取值范围**： 最小值0，最大值2147483647 
 
         :return: The process_num of this ShowAssetStatisticResponse.
         :rtype: int
@@ -178,7 +178,7 @@ class ShowAssetStatisticResponse(SdkResponse):
     def process_num(self, process_num):
         r"""Sets the process_num of this ShowAssetStatisticResponse.
 
-        进程数量
+        **参数解释**： 进程数量 **取值范围**： 最小值0，最大值2147483647 
 
         :param process_num: The process_num of this ShowAssetStatisticResponse.
         :type process_num: int
@@ -189,7 +189,7 @@ class ShowAssetStatisticResponse(SdkResponse):
     def app_num(self):
         r"""Gets the app_num of this ShowAssetStatisticResponse.
 
-        软件数量
+        **参数解释**： 软件数量 **取值范围**： 最小值0，最大值2147483647 
 
         :return: The app_num of this ShowAssetStatisticResponse.
         :rtype: int
@@ -200,7 +200,7 @@ class ShowAssetStatisticResponse(SdkResponse):
     def app_num(self, app_num):
         r"""Sets the app_num of this ShowAssetStatisticResponse.
 
-        软件数量
+        **参数解释**： 软件数量 **取值范围**： 最小值0，最大值2147483647 
 
         :param app_num: The app_num of this ShowAssetStatisticResponse.
         :type app_num: int
@@ -211,7 +211,7 @@ class ShowAssetStatisticResponse(SdkResponse):
     def auto_launch_num(self):
         r"""Gets the auto_launch_num of this ShowAssetStatisticResponse.
 
-        自启动进程数量
+        **参数解释**： 自启动进程数量 **取值范围**： 最小值0，最大值2147483647 
 
         :return: The auto_launch_num of this ShowAssetStatisticResponse.
         :rtype: int
@@ -222,7 +222,7 @@ class ShowAssetStatisticResponse(SdkResponse):
     def auto_launch_num(self, auto_launch_num):
         r"""Sets the auto_launch_num of this ShowAssetStatisticResponse.
 
-        自启动进程数量
+        **参数解释**： 自启动进程数量 **取值范围**： 最小值0，最大值2147483647 
 
         :param auto_launch_num: The auto_launch_num of this ShowAssetStatisticResponse.
         :type auto_launch_num: int
@@ -233,7 +233,7 @@ class ShowAssetStatisticResponse(SdkResponse):
     def web_framework_num(self):
         r"""Gets the web_framework_num of this ShowAssetStatisticResponse.
 
-        web框架数量
+        **参数解释**： web框架数量 **取值范围**： 最小值0，最大值2147483647 
 
         :return: The web_framework_num of this ShowAssetStatisticResponse.
         :rtype: int
@@ -244,7 +244,7 @@ class ShowAssetStatisticResponse(SdkResponse):
     def web_framework_num(self, web_framework_num):
         r"""Sets the web_framework_num of this ShowAssetStatisticResponse.
 
-        web框架数量
+        **参数解释**： web框架数量 **取值范围**： 最小值0，最大值2147483647 
 
         :param web_framework_num: The web_framework_num of this ShowAssetStatisticResponse.
         :type web_framework_num: int
@@ -255,7 +255,7 @@ class ShowAssetStatisticResponse(SdkResponse):
     def web_site_num(self):
         r"""Gets the web_site_num of this ShowAssetStatisticResponse.
 
-        Web站点数量
+        **参数解释**： Web站点数量 **取值范围**： 最小值0，最大值2147483647 
 
         :return: The web_site_num of this ShowAssetStatisticResponse.
         :rtype: int
@@ -266,7 +266,7 @@ class ShowAssetStatisticResponse(SdkResponse):
     def web_site_num(self, web_site_num):
         r"""Sets the web_site_num of this ShowAssetStatisticResponse.
 
-        Web站点数量
+        **参数解释**： Web站点数量 **取值范围**： 最小值0，最大值2147483647 
 
         :param web_site_num: The web_site_num of this ShowAssetStatisticResponse.
         :type web_site_num: int
@@ -277,7 +277,7 @@ class ShowAssetStatisticResponse(SdkResponse):
     def jar_package_num(self):
         r"""Gets the jar_package_num of this ShowAssetStatisticResponse.
 
-        Jar包数量
+        **参数解释**： Jar包数量 **取值范围**： 最小值0，最大值2147483647 
 
         :return: The jar_package_num of this ShowAssetStatisticResponse.
         :rtype: int
@@ -288,7 +288,7 @@ class ShowAssetStatisticResponse(SdkResponse):
     def jar_package_num(self, jar_package_num):
         r"""Sets the jar_package_num of this ShowAssetStatisticResponse.
 
-        Jar包数量
+        **参数解释**： Jar包数量 **取值范围**： 最小值0，最大值2147483647 
 
         :param jar_package_num: The jar_package_num of this ShowAssetStatisticResponse.
         :type jar_package_num: int
@@ -299,7 +299,7 @@ class ShowAssetStatisticResponse(SdkResponse):
     def kernel_module_num(self):
         r"""Gets the kernel_module_num of this ShowAssetStatisticResponse.
 
-        内核模块数量
+        **参数解释**： 内核模块数量 **取值范围**： 最小值0，最大值2147483647 
 
         :return: The kernel_module_num of this ShowAssetStatisticResponse.
         :rtype: int
@@ -310,7 +310,7 @@ class ShowAssetStatisticResponse(SdkResponse):
     def kernel_module_num(self, kernel_module_num):
         r"""Sets the kernel_module_num of this ShowAssetStatisticResponse.
 
-        内核模块数量
+        **参数解释**： 内核模块数量 **取值范围**： 最小值0，最大值2147483647 
 
         :param kernel_module_num: The kernel_module_num of this ShowAssetStatisticResponse.
         :type kernel_module_num: int
@@ -321,7 +321,7 @@ class ShowAssetStatisticResponse(SdkResponse):
     def web_service_num(self):
         r"""Gets the web_service_num of this ShowAssetStatisticResponse.
 
-        web服务数量
+        **参数解释**： web服务数量 **取值范围**： 最小值0，最大值2147483647 
 
         :return: The web_service_num of this ShowAssetStatisticResponse.
         :rtype: int
@@ -332,7 +332,7 @@ class ShowAssetStatisticResponse(SdkResponse):
     def web_service_num(self, web_service_num):
         r"""Sets the web_service_num of this ShowAssetStatisticResponse.
 
-        web服务数量
+        **参数解释**： web服务数量 **取值范围**： 最小值0，最大值2147483647 
 
         :param web_service_num: The web_service_num of this ShowAssetStatisticResponse.
         :type web_service_num: int
@@ -343,7 +343,7 @@ class ShowAssetStatisticResponse(SdkResponse):
     def web_app_num(self):
         r"""Gets the web_app_num of this ShowAssetStatisticResponse.
 
-        web应用数量
+        **参数解释**： web应用数量 **取值范围**： 最小值0，最大值2147483647 
 
         :return: The web_app_num of this ShowAssetStatisticResponse.
         :rtype: int
@@ -354,7 +354,7 @@ class ShowAssetStatisticResponse(SdkResponse):
     def web_app_num(self, web_app_num):
         r"""Sets the web_app_num of this ShowAssetStatisticResponse.
 
-        web应用数量
+        **参数解释**： web应用数量 **取值范围**： 最小值0，最大值2147483647 
 
         :param web_app_num: The web_app_num of this ShowAssetStatisticResponse.
         :type web_app_num: int
@@ -365,7 +365,7 @@ class ShowAssetStatisticResponse(SdkResponse):
     def database_num(self):
         r"""Gets the database_num of this ShowAssetStatisticResponse.
 
-        数据库数量
+        **参数解释**： 数据库数量 **取值范围**： 最小值0，最大值2147483647 
 
         :return: The database_num of this ShowAssetStatisticResponse.
         :rtype: int
@@ -376,7 +376,7 @@ class ShowAssetStatisticResponse(SdkResponse):
     def database_num(self, database_num):
         r"""Sets the database_num of this ShowAssetStatisticResponse.
 
-        数据库数量
+        **参数解释**： 数据库数量 **取值范围**： 最小值0，最大值2147483647 
 
         :param database_num: The database_num of this ShowAssetStatisticResponse.
         :type database_num: int

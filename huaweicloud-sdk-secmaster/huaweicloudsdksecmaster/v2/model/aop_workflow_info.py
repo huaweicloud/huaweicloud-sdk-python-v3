@@ -30,7 +30,7 @@ class AopWorkflowInfo:
         'workspace_id': 'str',
         'version_id': 'str',
         'current_approval_version_id': 'str',
-        'current_rejected_versoin_id': 'str',
+        'current_rejected_version_id': 'str',
         'aop_type': 'str',
         'engine_type': 'str',
         'dataclass_id': 'str'
@@ -50,13 +50,13 @@ class AopWorkflowInfo:
         'workspace_id': 'workspace_id',
         'version_id': 'version_id',
         'current_approval_version_id': 'current_approval_version_id',
-        'current_rejected_versoin_id': 'current_rejected_versoin_id',
+        'current_rejected_version_id': 'current_rejected_version_id',
         'aop_type': 'aop_type',
         'engine_type': 'engine_type',
         'dataclass_id': 'dataclass_id'
     }
 
-    def __init__(self, id=None, name=None, description=None, project_id=None, owner_id=None, creator_id=None, edit_role=None, use_role=None, approve_role=None, enabled=None, workspace_id=None, version_id=None, current_approval_version_id=None, current_rejected_versoin_id=None, aop_type=None, engine_type=None, dataclass_id=None):
+    def __init__(self, id=None, name=None, description=None, project_id=None, owner_id=None, creator_id=None, edit_role=None, use_role=None, approve_role=None, enabled=None, workspace_id=None, version_id=None, current_approval_version_id=None, current_rejected_version_id=None, aop_type=None, engine_type=None, dataclass_id=None):
         r"""AopWorkflowInfo
 
         The model defined in huaweicloud sdk
@@ -87,8 +87,8 @@ class AopWorkflowInfo:
         :type version_id: str
         :param current_approval_version_id: 当前待审核版本号
         :type current_approval_version_id: str
-        :param current_rejected_versoin_id: 当前拒绝的版本号
-        :type current_rejected_versoin_id: str
+        :param current_rejected_version_id: 当前拒绝的版本号
+        :type current_rejected_version_id: str
         :param aop_type: aop的类型有以下的值     NORMAL, 通用     SURVEY, 调查     HEMOSTASIS,止血     EASE;缓解
         :type aop_type: str
         :param engine_type: 引擎的类型分为共享版和专项版
@@ -112,7 +112,7 @@ class AopWorkflowInfo:
         self._workspace_id = None
         self._version_id = None
         self._current_approval_version_id = None
-        self._current_rejected_versoin_id = None
+        self._current_rejected_version_id = None
         self._aop_type = None
         self._engine_type = None
         self._dataclass_id = None
@@ -144,8 +144,8 @@ class AopWorkflowInfo:
             self.version_id = version_id
         if current_approval_version_id is not None:
             self.current_approval_version_id = current_approval_version_id
-        if current_rejected_versoin_id is not None:
-            self.current_rejected_versoin_id = current_rejected_versoin_id
+        if current_rejected_version_id is not None:
+            self.current_rejected_version_id = current_rejected_version_id
         if aop_type is not None:
             self.aop_type = aop_type
         if engine_type is not None:
@@ -440,26 +440,26 @@ class AopWorkflowInfo:
         self._current_approval_version_id = current_approval_version_id
 
     @property
-    def current_rejected_versoin_id(self):
-        r"""Gets the current_rejected_versoin_id of this AopWorkflowInfo.
+    def current_rejected_version_id(self):
+        r"""Gets the current_rejected_version_id of this AopWorkflowInfo.
 
         当前拒绝的版本号
 
-        :return: The current_rejected_versoin_id of this AopWorkflowInfo.
+        :return: The current_rejected_version_id of this AopWorkflowInfo.
         :rtype: str
         """
-        return self._current_rejected_versoin_id
+        return self._current_rejected_version_id
 
-    @current_rejected_versoin_id.setter
-    def current_rejected_versoin_id(self, current_rejected_versoin_id):
-        r"""Sets the current_rejected_versoin_id of this AopWorkflowInfo.
+    @current_rejected_version_id.setter
+    def current_rejected_version_id(self, current_rejected_version_id):
+        r"""Sets the current_rejected_version_id of this AopWorkflowInfo.
 
         当前拒绝的版本号
 
-        :param current_rejected_versoin_id: The current_rejected_versoin_id of this AopWorkflowInfo.
-        :type current_rejected_versoin_id: str
+        :param current_rejected_version_id: The current_rejected_version_id of this AopWorkflowInfo.
+        :type current_rejected_version_id: str
         """
-        self._current_rejected_versoin_id = current_rejected_versoin_id
+        self._current_rejected_version_id = current_rejected_version_id
 
     @property
     def aop_type(self):

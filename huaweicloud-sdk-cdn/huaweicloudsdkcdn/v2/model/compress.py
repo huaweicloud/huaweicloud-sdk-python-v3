@@ -19,16 +19,20 @@ class Compress:
     openapi_types = {
         'status': 'str',
         'type': 'str',
-        'file_type': 'str'
+        'file_type': 'str',
+        'compress_min_length': 'int',
+        'compress_max_length': 'int'
     }
 
     attribute_map = {
         'status': 'status',
         'type': 'type',
-        'file_type': 'file_type'
+        'file_type': 'file_type',
+        'compress_min_length': 'compress_min_length',
+        'compress_max_length': 'compress_max_length'
     }
 
-    def __init__(self, status=None, type=None, file_type=None):
+    def __init__(self, status=None, type=None, file_type=None, compress_min_length=None, compress_max_length=None):
         r"""Compress
 
         The model defined in huaweicloud sdk
@@ -39,6 +43,10 @@ class Compress:
         :type type: str
         :param file_type: 压缩格式，内容总长度不可超过200个字符，  多种格式用“,”分割，每组内容不可超过50个字符， 开启状态下，首次传空时默认值为.js,.html,.css,.xml,.json,.shtml,.htm，否则为上次设置的结果。
         :type file_type: str
+        :param compress_min_length: 压缩区间最小范围
+        :type compress_min_length: int
+        :param compress_max_length: 压缩区间最大范围
+        :type compress_max_length: int
         """
         
         
@@ -46,6 +54,8 @@ class Compress:
         self._status = None
         self._type = None
         self._file_type = None
+        self._compress_min_length = None
+        self._compress_max_length = None
         self.discriminator = None
 
         self.status = status
@@ -53,6 +63,10 @@ class Compress:
             self.type = type
         if file_type is not None:
             self.file_type = file_type
+        if compress_min_length is not None:
+            self.compress_min_length = compress_min_length
+        if compress_max_length is not None:
+            self.compress_max_length = compress_max_length
 
     @property
     def status(self):
@@ -119,6 +133,50 @@ class Compress:
         :type file_type: str
         """
         self._file_type = file_type
+
+    @property
+    def compress_min_length(self):
+        r"""Gets the compress_min_length of this Compress.
+
+        压缩区间最小范围
+
+        :return: The compress_min_length of this Compress.
+        :rtype: int
+        """
+        return self._compress_min_length
+
+    @compress_min_length.setter
+    def compress_min_length(self, compress_min_length):
+        r"""Sets the compress_min_length of this Compress.
+
+        压缩区间最小范围
+
+        :param compress_min_length: The compress_min_length of this Compress.
+        :type compress_min_length: int
+        """
+        self._compress_min_length = compress_min_length
+
+    @property
+    def compress_max_length(self):
+        r"""Gets the compress_max_length of this Compress.
+
+        压缩区间最大范围
+
+        :return: The compress_max_length of this Compress.
+        :rtype: int
+        """
+        return self._compress_max_length
+
+    @compress_max_length.setter
+    def compress_max_length(self, compress_max_length):
+        r"""Sets the compress_max_length of this Compress.
+
+        压缩区间最大范围
+
+        :param compress_max_length: The compress_max_length of this Compress.
+        :type compress_max_length: int
+        """
+        self._compress_max_length = compress_max_length
 
     def to_dict(self):
         """Returns the model properties as a dict"""

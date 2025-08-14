@@ -59,7 +59,7 @@ class JobDetail:
         :type end_time: datetime
         :param expected_end_time: 云服务预估的Job处理结束时间，只针对job有效，针对子job无效。
         :type expected_end_time: datetime
-        :param execute_code: Job执行结果码
+        :param execute_code: Job执行结果码。
         :type execute_code: str
         :param execute_message: Job执行结果描述，以及每个SubJob的执行结果描述。
         :type execute_message: str
@@ -255,7 +255,7 @@ class JobDetail:
     def execute_code(self):
         r"""Gets the execute_code of this JobDetail.
 
-        Job执行结果码
+        Job执行结果码。
 
         :return: The execute_code of this JobDetail.
         :rtype: str
@@ -266,7 +266,7 @@ class JobDetail:
     def execute_code(self, execute_code):
         r"""Sets the execute_code of this JobDetail.
 
-        Job执行结果码
+        Job执行结果码。
 
         :param execute_code: The execute_code of this JobDetail.
         :type execute_code: str

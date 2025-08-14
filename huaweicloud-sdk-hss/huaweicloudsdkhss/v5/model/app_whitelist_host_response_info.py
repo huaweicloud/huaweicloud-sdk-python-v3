@@ -43,17 +43,17 @@ class AppWhitelistHostResponseInfo:
 
         :param agent_id: **参数解释**: Agent ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
         :type agent_id: str
-        :param host_id: **参数解释**: 服务器ID **取值范围**: 字符长度1-64位 
+        :param host_id: **参数解释**： 主机ID **取值范围**： 字符长度1-64位 
         :type host_id: str
         :param host_name: **参数解释**: 服务器名称 **取值范围**: 字符长度1-256位 
         :type host_name: str
-        :param public_ip: 弹性公网IP地址
+        :param public_ip: **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位 
         :type public_ip: str
-        :param private_ip: 服务器私有IP
+        :param private_ip: **参数解释**： 服务器私有IP **取值范围**： 字符长度1-128位 
         :type private_ip: str
         :param asset_value: **参数解释**: Agent ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
         :type asset_value: str
-        :param os_type: 操作系统类型，包含如下2种。   - Linux ：Linux。   - Windows ：Windows。
+        :param os_type: **参数解释**： 操作系统类型 **取值范围**： - Linux：Linux。 - Windows：Windows。 
         :type os_type: str
         """
         
@@ -109,7 +109,7 @@ class AppWhitelistHostResponseInfo:
     def host_id(self):
         r"""Gets the host_id of this AppWhitelistHostResponseInfo.
 
-        **参数解释**: 服务器ID **取值范围**: 字符长度1-64位 
+        **参数解释**： 主机ID **取值范围**： 字符长度1-64位 
 
         :return: The host_id of this AppWhitelistHostResponseInfo.
         :rtype: str
@@ -120,7 +120,7 @@ class AppWhitelistHostResponseInfo:
     def host_id(self, host_id):
         r"""Sets the host_id of this AppWhitelistHostResponseInfo.
 
-        **参数解释**: 服务器ID **取值范围**: 字符长度1-64位 
+        **参数解释**： 主机ID **取值范围**： 字符长度1-64位 
 
         :param host_id: The host_id of this AppWhitelistHostResponseInfo.
         :type host_id: str
@@ -153,7 +153,7 @@ class AppWhitelistHostResponseInfo:
     def public_ip(self):
         r"""Gets the public_ip of this AppWhitelistHostResponseInfo.
 
-        弹性公网IP地址
+        **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位 
 
         :return: The public_ip of this AppWhitelistHostResponseInfo.
         :rtype: str
@@ -164,7 +164,7 @@ class AppWhitelistHostResponseInfo:
     def public_ip(self, public_ip):
         r"""Sets the public_ip of this AppWhitelistHostResponseInfo.
 
-        弹性公网IP地址
+        **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位 
 
         :param public_ip: The public_ip of this AppWhitelistHostResponseInfo.
         :type public_ip: str
@@ -175,7 +175,7 @@ class AppWhitelistHostResponseInfo:
     def private_ip(self):
         r"""Gets the private_ip of this AppWhitelistHostResponseInfo.
 
-        服务器私有IP
+        **参数解释**： 服务器私有IP **取值范围**： 字符长度1-128位 
 
         :return: The private_ip of this AppWhitelistHostResponseInfo.
         :rtype: str
@@ -186,7 +186,7 @@ class AppWhitelistHostResponseInfo:
     def private_ip(self, private_ip):
         r"""Sets the private_ip of this AppWhitelistHostResponseInfo.
 
-        服务器私有IP
+        **参数解释**： 服务器私有IP **取值范围**： 字符长度1-128位 
 
         :param private_ip: The private_ip of this AppWhitelistHostResponseInfo.
         :type private_ip: str
@@ -219,7 +219,7 @@ class AppWhitelistHostResponseInfo:
     def os_type(self):
         r"""Gets the os_type of this AppWhitelistHostResponseInfo.
 
-        操作系统类型，包含如下2种。   - Linux ：Linux。   - Windows ：Windows。
+        **参数解释**： 操作系统类型 **取值范围**： - Linux：Linux。 - Windows：Windows。 
 
         :return: The os_type of this AppWhitelistHostResponseInfo.
         :rtype: str
@@ -230,7 +230,7 @@ class AppWhitelistHostResponseInfo:
     def os_type(self, os_type):
         r"""Sets the os_type of this AppWhitelistHostResponseInfo.
 
-        操作系统类型，包含如下2种。   - Linux ：Linux。   - Windows ：Windows。
+        **参数解释**： 操作系统类型 **取值范围**： - Linux：Linux。 - Windows：Windows。 
 
         :param os_type: The os_type of this AppWhitelistHostResponseInfo.
         :type os_type: str

@@ -41,9 +41,9 @@ class ListPublishedAppRequest:
 
         :param app_group_id: 应用组ID。
         :type app_group_id: str
-        :param limit: 单次查询的大小[1-100]。
+        :param limit: 单次查询的大小[1-100]，默认值10。
         :type limit: int
-        :param offset: 查询的偏移量。
+        :param offset: 查询的偏移量，默认值0。
         :type offset: int
         :param name: 应用名称。
         :type name: str
@@ -101,7 +101,7 @@ class ListPublishedAppRequest:
     def limit(self):
         r"""Gets the limit of this ListPublishedAppRequest.
 
-        单次查询的大小[1-100]。
+        单次查询的大小[1-100]，默认值10。
 
         :return: The limit of this ListPublishedAppRequest.
         :rtype: int
@@ -112,7 +112,7 @@ class ListPublishedAppRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListPublishedAppRequest.
 
-        单次查询的大小[1-100]。
+        单次查询的大小[1-100]，默认值10。
 
         :param limit: The limit of this ListPublishedAppRequest.
         :type limit: int
@@ -123,7 +123,7 @@ class ListPublishedAppRequest:
     def offset(self):
         r"""Gets the offset of this ListPublishedAppRequest.
 
-        查询的偏移量。
+        查询的偏移量，默认值0。
 
         :return: The offset of this ListPublishedAppRequest.
         :rtype: int
@@ -134,7 +134,7 @@ class ListPublishedAppRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListPublishedAppRequest.
 
-        查询的偏移量。
+        查询的偏移量，默认值0。
 
         :param offset: The offset of this ListPublishedAppRequest.
         :type offset: int

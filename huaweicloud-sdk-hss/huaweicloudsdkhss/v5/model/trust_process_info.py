@@ -31,9 +31,9 @@ class TrustProcessInfo:
 
         The model defined in huaweicloud sdk
 
-        :param path: 进程路径
+        :param path: **参数解释**: 进程路径 **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及
         :type path: str
-        :param hash: 进程hash
+        :param hash: **参数解释**: 进程hash **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及
         :type hash: str
         """
         
@@ -52,7 +52,7 @@ class TrustProcessInfo:
     def path(self):
         r"""Gets the path of this TrustProcessInfo.
 
-        进程路径
+        **参数解释**: 进程路径 **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及
 
         :return: The path of this TrustProcessInfo.
         :rtype: str
@@ -63,7 +63,7 @@ class TrustProcessInfo:
     def path(self, path):
         r"""Sets the path of this TrustProcessInfo.
 
-        进程路径
+        **参数解释**: 进程路径 **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及
 
         :param path: The path of this TrustProcessInfo.
         :type path: str
@@ -74,7 +74,7 @@ class TrustProcessInfo:
     def hash(self):
         r"""Gets the hash of this TrustProcessInfo.
 
-        进程hash
+        **参数解释**: 进程hash **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及
 
         :return: The hash of this TrustProcessInfo.
         :rtype: str
@@ -85,7 +85,7 @@ class TrustProcessInfo:
     def hash(self, hash):
         r"""Sets the hash of this TrustProcessInfo.
 
-        进程hash
+        **参数解释**: 进程hash **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及
 
         :param hash: The hash of this TrustProcessInfo.
         :type hash: str

@@ -51,13 +51,13 @@ class CheckFeatureRuleInfo:
         :type chk_feature_desc: str
         :param feature_configure: 检测特性规则配置信息
         :type feature_configure: str
-        :param protective_action: 防护动作,包含如下 -1 检测   -2 检测并阻断/拦截
+        :param protective_action: 防护动作，包含如下 -1 检测   -2 检测并阻断/拦截
         :type protective_action: int
-        :param optional_protective_action: 可选防护动作,包含如下 -1 检测   -2 检测并阻断/拦截   -3 都可以
+        :param optional_protective_action: 可选防护动作，包含如下 -1 检测   -2 检测并阻断/拦截   -3 都可以
         :type optional_protective_action: int
-        :param enabled: 开启状态,包含如下 -0 开启 -1 关闭
+        :param enabled: 开启状态，包含如下 -0 开启 -1 关闭
         :type enabled: int
-        :param editable: 是否可编辑配置信息,包含如下 -0 否   -1 是
+        :param editable: 是否可编辑配置信息，包含如下 -0 否   -1 是
         :type editable: int
         """
         
@@ -182,7 +182,7 @@ class CheckFeatureRuleInfo:
     def protective_action(self):
         r"""Gets the protective_action of this CheckFeatureRuleInfo.
 
-        防护动作,包含如下 -1 检测   -2 检测并阻断/拦截
+        防护动作，包含如下 -1 检测   -2 检测并阻断/拦截
 
         :return: The protective_action of this CheckFeatureRuleInfo.
         :rtype: int
@@ -193,7 +193,7 @@ class CheckFeatureRuleInfo:
     def protective_action(self, protective_action):
         r"""Sets the protective_action of this CheckFeatureRuleInfo.
 
-        防护动作,包含如下 -1 检测   -2 检测并阻断/拦截
+        防护动作，包含如下 -1 检测   -2 检测并阻断/拦截
 
         :param protective_action: The protective_action of this CheckFeatureRuleInfo.
         :type protective_action: int
@@ -204,7 +204,7 @@ class CheckFeatureRuleInfo:
     def optional_protective_action(self):
         r"""Gets the optional_protective_action of this CheckFeatureRuleInfo.
 
-        可选防护动作,包含如下 -1 检测   -2 检测并阻断/拦截   -3 都可以
+        可选防护动作，包含如下 -1 检测   -2 检测并阻断/拦截   -3 都可以
 
         :return: The optional_protective_action of this CheckFeatureRuleInfo.
         :rtype: int
@@ -215,7 +215,7 @@ class CheckFeatureRuleInfo:
     def optional_protective_action(self, optional_protective_action):
         r"""Sets the optional_protective_action of this CheckFeatureRuleInfo.
 
-        可选防护动作,包含如下 -1 检测   -2 检测并阻断/拦截   -3 都可以
+        可选防护动作，包含如下 -1 检测   -2 检测并阻断/拦截   -3 都可以
 
         :param optional_protective_action: The optional_protective_action of this CheckFeatureRuleInfo.
         :type optional_protective_action: int
@@ -226,7 +226,7 @@ class CheckFeatureRuleInfo:
     def enabled(self):
         r"""Gets the enabled of this CheckFeatureRuleInfo.
 
-        开启状态,包含如下 -0 开启 -1 关闭
+        开启状态，包含如下 -0 开启 -1 关闭
 
         :return: The enabled of this CheckFeatureRuleInfo.
         :rtype: int
@@ -237,7 +237,7 @@ class CheckFeatureRuleInfo:
     def enabled(self, enabled):
         r"""Sets the enabled of this CheckFeatureRuleInfo.
 
-        开启状态,包含如下 -0 开启 -1 关闭
+        开启状态，包含如下 -0 开启 -1 关闭
 
         :param enabled: The enabled of this CheckFeatureRuleInfo.
         :type enabled: int
@@ -248,7 +248,7 @@ class CheckFeatureRuleInfo:
     def editable(self):
         r"""Gets the editable of this CheckFeatureRuleInfo.
 
-        是否可编辑配置信息,包含如下 -0 否   -1 是
+        是否可编辑配置信息，包含如下 -0 否   -1 是
 
         :return: The editable of this CheckFeatureRuleInfo.
         :rtype: int
@@ -259,7 +259,7 @@ class CheckFeatureRuleInfo:
     def editable(self, editable):
         r"""Sets the editable of this CheckFeatureRuleInfo.
 
-        是否可编辑配置信息,包含如下 -0 否   -1 是
+        是否可编辑配置信息，包含如下 -0 否   -1 是
 
         :param editable: The editable of this CheckFeatureRuleInfo.
         :type editable: int

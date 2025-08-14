@@ -35,7 +35,7 @@ class WtpProtectDirResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param protect_dir_list: protect dir list
+        :param protect_dir_list: 防护目录列表
         :type protect_dir_list: list[:class:`huaweicloudsdkhss.v5.WtpProtectHostDirResponseInfo`]
         :param exclue_file_type: 排除文件类型
         :type exclue_file_type: str
@@ -66,7 +66,7 @@ class WtpProtectDirResponseInfo:
     def protect_dir_list(self):
         r"""Gets the protect_dir_list of this WtpProtectDirResponseInfo.
 
-        protect dir list
+        防护目录列表
 
         :return: The protect_dir_list of this WtpProtectDirResponseInfo.
         :rtype: list[:class:`huaweicloudsdkhss.v5.WtpProtectHostDirResponseInfo`]
@@ -77,7 +77,7 @@ class WtpProtectDirResponseInfo:
     def protect_dir_list(self, protect_dir_list):
         r"""Sets the protect_dir_list of this WtpProtectDirResponseInfo.
 
-        protect dir list
+        防护目录列表
 
         :param protect_dir_list: The protect_dir_list of this WtpProtectDirResponseInfo.
         :type protect_dir_list: list[:class:`huaweicloudsdkhss.v5.WtpProtectHostDirResponseInfo`]

@@ -39,7 +39,7 @@ class BackupTriggerInfo:
         :type id: str
         :param name: **参数解释**: 调度器名称 **取值范围**: 字符长度0-256 
         :type name: str
-        :param type: **参数解释**: 调度器类型,目前只支持 time,定时调度。 **取值范围**: 字符长度0-256 
+        :param type: **参数解释**: 调度器类型，目前只支持time，定时调度。 **取值范围**: 字符长度0-256 
         :type type: str
         :param properties: 
         :type properties: :class:`huaweicloudsdkhss.v5.BackupTriggerPropertiesInfo`
@@ -110,7 +110,7 @@ class BackupTriggerInfo:
     def type(self):
         r"""Gets the type of this BackupTriggerInfo.
 
-        **参数解释**: 调度器类型,目前只支持 time,定时调度。 **取值范围**: 字符长度0-256 
+        **参数解释**: 调度器类型，目前只支持time，定时调度。 **取值范围**: 字符长度0-256 
 
         :return: The type of this BackupTriggerInfo.
         :rtype: str
@@ -121,7 +121,7 @@ class BackupTriggerInfo:
     def type(self, type):
         r"""Sets the type of this BackupTriggerInfo.
 
-        **参数解释**: 调度器类型,目前只支持 time,定时调度。 **取值范围**: 字符长度0-256 
+        **参数解释**: 调度器类型，目前只支持time，定时调度。 **取值范围**: 字符长度0-256 
 
         :param type: The type of this BackupTriggerInfo.
         :type type: str

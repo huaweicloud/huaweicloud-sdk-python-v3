@@ -34,7 +34,7 @@ class ListImageJobsResponse(SdkResponse):
 
         :param count: 总数。
         :type count: int
-        :param items: 任务信息列表，返回列表条目数量上限为分页的最大上限值
+        :param items: 任务信息列表，返回列表条目数量上限为分页的最大上限值。
         :type items: list[:class:`huaweicloudsdkworkspaceapp.v1.ImageJobInfo`]
         """
         
@@ -75,7 +75,7 @@ class ListImageJobsResponse(SdkResponse):
     def items(self):
         r"""Gets the items of this ListImageJobsResponse.
 
-        任务信息列表，返回列表条目数量上限为分页的最大上限值
+        任务信息列表，返回列表条目数量上限为分页的最大上限值。
 
         :return: The items of this ListImageJobsResponse.
         :rtype: list[:class:`huaweicloudsdkworkspaceapp.v1.ImageJobInfo`]
@@ -86,7 +86,7 @@ class ListImageJobsResponse(SdkResponse):
     def items(self, items):
         r"""Sets the items of this ListImageJobsResponse.
 
-        任务信息列表，返回列表条目数量上限为分页的最大上限值
+        任务信息列表，返回列表条目数量上限为分页的最大上限值。
 
         :param items: The items of this ListImageJobsResponse.
         :type items: list[:class:`huaweicloudsdkworkspaceapp.v1.ImageJobInfo`]

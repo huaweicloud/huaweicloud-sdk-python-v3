@@ -116,13 +116,13 @@ class CreateServerGroupResponse(SdkResponse):
         :type extra_session_size: int
         :param app_type: 
         :type app_type: :class:`huaweicloudsdkworkspaceapp.v1.AppTypeEnum`
-        :param create_time: 服务器组创建时间
+        :param create_time: 服务器组创建时间。
         :type create_time: datetime
-        :param update_time: 服务器组更新时间
+        :param update_time: 服务器组更新时间。
         :type update_time: datetime
         :param storage_mount_policy: 
         :type storage_mount_policy: :class:`huaweicloudsdkworkspaceapp.v1.StorageFolderMountType`
-        :param enterprise_project_id: 企业项目ID(0表示默认企业项目Id)
+        :param enterprise_project_id: 企业项目ID(0表示默认企业项目Id)。
         :type enterprise_project_id: str
         :param primary_server_group_ids: 主服务器组id列表。
         :type primary_server_group_ids: list[str]
@@ -130,9 +130,9 @@ class CreateServerGroupResponse(SdkResponse):
         :type secondary_server_group_ids: list[str]
         :param server_group_status: 服务器是否处于启用状态，true表示处于启用状态 false表示处于禁用状态。
         :type server_group_status: bool
-        :param site_type: 站点类型 - CENTER/IES
+        :param site_type: 站点类型 - CENTER/IES。
         :type site_type: str
-        :param site_id: 站点id
+        :param site_id: 站点id。
         :type site_id: str
         :param app_server_flavor_count: 服务器配置总数量。
         :type app_server_flavor_count: int
@@ -148,7 +148,7 @@ class CreateServerGroupResponse(SdkResponse):
         :type subnet_name: str
         :param scaling_policy: 
         :type scaling_policy: :class:`huaweicloudsdkworkspaceapp.v1.ScalingPolicy`
-        :param tags: 标签信息
+        :param tags: 标签信息。
         :type tags: list[:class:`huaweicloudsdkworkspaceapp.v1.TmsTag`]
         :param ou_name: 默认组织名称。
         :type ou_name: str
@@ -526,7 +526,7 @@ class CreateServerGroupResponse(SdkResponse):
     def create_time(self):
         r"""Gets the create_time of this CreateServerGroupResponse.
 
-        服务器组创建时间
+        服务器组创建时间。
 
         :return: The create_time of this CreateServerGroupResponse.
         :rtype: datetime
@@ -537,7 +537,7 @@ class CreateServerGroupResponse(SdkResponse):
     def create_time(self, create_time):
         r"""Sets the create_time of this CreateServerGroupResponse.
 
-        服务器组创建时间
+        服务器组创建时间。
 
         :param create_time: The create_time of this CreateServerGroupResponse.
         :type create_time: datetime
@@ -548,7 +548,7 @@ class CreateServerGroupResponse(SdkResponse):
     def update_time(self):
         r"""Gets the update_time of this CreateServerGroupResponse.
 
-        服务器组更新时间
+        服务器组更新时间。
 
         :return: The update_time of this CreateServerGroupResponse.
         :rtype: datetime
@@ -559,7 +559,7 @@ class CreateServerGroupResponse(SdkResponse):
     def update_time(self, update_time):
         r"""Sets the update_time of this CreateServerGroupResponse.
 
-        服务器组更新时间
+        服务器组更新时间。
 
         :param update_time: The update_time of this CreateServerGroupResponse.
         :type update_time: datetime
@@ -588,7 +588,7 @@ class CreateServerGroupResponse(SdkResponse):
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this CreateServerGroupResponse.
 
-        企业项目ID(0表示默认企业项目Id)
+        企业项目ID(0表示默认企业项目Id)。
 
         :return: The enterprise_project_id of this CreateServerGroupResponse.
         :rtype: str
@@ -599,7 +599,7 @@ class CreateServerGroupResponse(SdkResponse):
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this CreateServerGroupResponse.
 
-        企业项目ID(0表示默认企业项目Id)
+        企业项目ID(0表示默认企业项目Id)。
 
         :param enterprise_project_id: The enterprise_project_id of this CreateServerGroupResponse.
         :type enterprise_project_id: str
@@ -676,7 +676,7 @@ class CreateServerGroupResponse(SdkResponse):
     def site_type(self):
         r"""Gets the site_type of this CreateServerGroupResponse.
 
-        站点类型 - CENTER/IES
+        站点类型 - CENTER/IES。
 
         :return: The site_type of this CreateServerGroupResponse.
         :rtype: str
@@ -687,7 +687,7 @@ class CreateServerGroupResponse(SdkResponse):
     def site_type(self, site_type):
         r"""Sets the site_type of this CreateServerGroupResponse.
 
-        站点类型 - CENTER/IES
+        站点类型 - CENTER/IES。
 
         :param site_type: The site_type of this CreateServerGroupResponse.
         :type site_type: str
@@ -698,7 +698,7 @@ class CreateServerGroupResponse(SdkResponse):
     def site_id(self):
         r"""Gets the site_id of this CreateServerGroupResponse.
 
-        站点id
+        站点id。
 
         :return: The site_id of this CreateServerGroupResponse.
         :rtype: str
@@ -709,7 +709,7 @@ class CreateServerGroupResponse(SdkResponse):
     def site_id(self, site_id):
         r"""Sets the site_id of this CreateServerGroupResponse.
 
-        站点id
+        站点id。
 
         :param site_id: The site_id of this CreateServerGroupResponse.
         :type site_id: str
@@ -866,7 +866,7 @@ class CreateServerGroupResponse(SdkResponse):
     def tags(self):
         r"""Gets the tags of this CreateServerGroupResponse.
 
-        标签信息
+        标签信息。
 
         :return: The tags of this CreateServerGroupResponse.
         :rtype: list[:class:`huaweicloudsdkworkspaceapp.v1.TmsTag`]
@@ -877,7 +877,7 @@ class CreateServerGroupResponse(SdkResponse):
     def tags(self, tags):
         r"""Sets the tags of this CreateServerGroupResponse.
 
-        标签信息
+        标签信息。
 
         :param tags: The tags of this CreateServerGroupResponse.
         :type tags: list[:class:`huaweicloudsdkworkspaceapp.v1.TmsTag`]

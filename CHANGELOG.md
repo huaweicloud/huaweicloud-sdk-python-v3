@@ -1,3 +1,650 @@
+# 3.1.162 2025-08-14
+
+### HuaweiCloud SDK BMS
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListBareMetalServers**
+    - changes of response param
+      - `+ servers.metadata.EcmResStatus`
+  - **ListBareMetalServerDetails**
+    - changes of response param
+      - `+ server.metadata.EcmResStatus`
+
+### HuaweiCloud SDK CC
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListSupportBindingConnectionBandwidths**
+    - changes of request param
+      - `* binding_service: optional -> required`
+
+### HuaweiCloud SDK CDN
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowDomainFullConfig**
+    - changes of response param
+      - `+ configs.compress.compress_min_length`
+      - `+ configs.compress.compress_max_length`
+  - **UpdateDomainFullConfig**
+    - changes of request param
+      - `+ configs.compress.compress_min_length`
+      - `+ configs.compress.compress_max_length`
+
+### HuaweiCloud SDK CES
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListEvents**
+    - changes of request param
+      - `+ sub_event_type`
+    - changes of response param
+      - `+ events.sub_event_type`
+  - **CreateEvents**
+    - changes of request param
+      - `+ detail.sub_event_type`
+  - **ListEventDetail**
+    - changes of request param
+      - `+ sub_event_type`
+    - changes of response param
+      - `+ sub_event_type`
+
+### HuaweiCloud SDK CES
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListAlarmRules**
+    - changes of response param
+      - `+ alarms.tags`
+
+### HuaweiCloud SDK CloudDC
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListIDcs**
+    - changes of response param
+      - `+ idcs.description`
+      - `- idcs.deccription`
+  - **CreateInstance**
+    - changes of request param
+      - `* metadata: list<Metadata> -> map<string, string>`
+
+### HuaweiCloud SDK COC
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the APIs `ListAssessTask`, `CreateAssessTask`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK CodeArtsBuild
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowProjectPermission**
+    - changes of response param
+      - `+ result.delete_permission`
+      - `+ result.view_permission`
+      - `+ result.execute_permission`
+      - `+ result.copy_permission`
+      - `+ result.forbidden_permission`
+      - `+ result.manager_permission`
+      - `+ result.role_ids`
+      - `+ result.role_names`
+  - **UpdateNotice**
+    - changes of request param
+      - `+ send_switch`
+      - `+ use_project_notice`
+  - **ListRecommendOfficialTemplate**
+    - changes of response param
+      - `+ result.items.template.actions`
+      - `+ result.items.template.auto_update_sub_module`
+      - `+ result.items.template.image`
+      - `+ result.items.template.image_source`
+      - `* result.items.template: object<QueryTemplate> -> object<QueryTemplateVo>`
+  - **ListCustomTemplate**
+    - changes of response param
+      - `+ result.items.template.actions`
+      - `+ result.items.template.auto_update_sub_module`
+      - `+ result.items.template.image`
+      - `+ result.items.template.image_source`
+      - `* result.items.template: object<QueryTemplate> -> object<QueryTemplateVo>`
+  - **ListTemplates**
+    - changes of response param
+      - `+ result.items.template.actions`
+      - `+ result.items.template.auto_update_sub_module`
+      - `+ result.items.template.image`
+      - `+ result.items.template.image_source`
+      - `* result.items.template: object<QueryTemplate> -> object<QueryTemplateVo>`
+
+### HuaweiCloud SDK Config
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the APIs `ListAllProviders`, `CollectPolicyAssignmentsStatesSummary`, `CollectPolicyStatesSummary`, `CollectResourcesPolicyStatesSummary`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK CPTS
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **DebugCase**
+    - changes of request param
+      - `+ type`
+  - **ShowMergeReportLogsOutline**
+    - changes of response param
+      - `* result.outline.network_traffic.min_network_traffic: int32 -> double`
+  - **ShowMergeCaseDetail**
+    - changes of response param
+      - `* result.detail.customTransactions.avgRecBytes: int32 -> double`
+      - `* result.detail.customTransactions.avgSentBytes: int32 -> double`
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the API `ListSecuritySensitiveDataDetails`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DLI
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdateElasticResourcePoolQueue**
+    - changes of request param
+      - `+ queue_scaling_policies.inherit_elastic_resource_pool_max_cu`
+  - **ListElasticResourcePoolQueues**
+    - changes of response param
+      - `+ queues.queue_scaling_policies.inherit_elastic_resource_pool_max_cu`
+
+### HuaweiCloud SDK HSS
+
+- _API Version_
+  - V5
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the API `BatchUploadFiles`
+  - **ListProtectionServer**
+    - changes of response param
+      - `+ data_list.ransom_protection_fail_reason`
+      - `+ data_list.failed_decoy_dir`
+  - **ListRansomwareProtectionNodes**
+    - changes of response param
+      - `+ data_list.ransom_protection_fail_reason`
+      - `+ data_list.failed_decoy_dir`
+
+### HuaweiCloud SDK IdentityCenter
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the following APIs:
+    - `DescribeRegisteredRegions`
+    - `RegisterRegion`
+    - `GetIdentityCenterServiceStatus`
+    - `StartIdentityCenter`
+    - `DeleteIdentityCenter`
+    - `ListIdentityStoreAssociation`
+    - `GetSsoConfiguration`
+    - `UpdateSsoConfiguration`
+    - `GetMfaDeviceManagementForIdentityStore`
+    - `PutMfaDeviceManagementForIdentityStore`
+    - `CreateAlias`
+    - `DisassociateProfile`
+    - `GetPermissionSetSummary`
+    - `GetHaConfiguration`
+    - `UpdateHaConfiguration`
+    - `ListAccountAssignmentsForPrincipal`
+    - `ListApplicationInstances`
+    - `CreateApplicationInstance`
+    - `ListCatalogApplications`
+    - `ListApplicationProviders`
+    - `ListApplicationTemplates`
+    - `ListApplicationAssignments`
+    - `CreateApplicationAssignment`
+    - `DeleteApplicationAssignment`
+    - `GetApplicationAssignmentConfiguration`
+    - `UpdateApplicationInstanceDisplayData`
+    - `ImportApplicationInstanceServiceProviderMetadata`
+    - `UpdateApplicationInstanceResponseConfiguration`
+    - `UpdateApplicationInstanceResponseSchemaConfiguration`
+    - `UpdateApplicationInstanceServiceProviderConfiguration`
+    - `UpdateApplicationInstanceStatus`
+    - `UpdateApplicationInstanceActiveCertificate`
+    - `DeleteApplicationInstanceCertificate`
+    - `UpdateApplicationInstanceSecurityConfiguration`
+    - `DescribeApplication`
+    - `ListApplications`
+    - `ListApplicationInstanceCertificates`
+    - `CreateApplicationInstanceCertificate`
+    - `GetApplicationInstance`
+    - `DeleteApplicationInstance`
+    - `DescribeApplicationProvider`
+    - `ListProfiles`
+    - `DeleteProfile`
+    - `ListApplicationAssignmentsForPrincipal`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK IdentityCenterStore
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the following APIs:
+    - `DescribeUsers`
+    - `DescribeGroups`
+    - `ResetPwdMode`
+    - `EnableUser`
+    - `DisableUser`
+    - `VerifyEmail`
+    - `RegisterMfaDeviceForUser`
+    - `BatchListMfaDevicesForUser`
+    - `UpdateMfaDeviceForUser`
+    - `DeleteMfaDeviceForUser`
+    - `ListExternalIdPConfigurationsForDirectory`
+    - `CreateExternalIdPConfigurationForDirectory`
+    - `EnableExternalIdPConfigurationForDirectory`
+    - `DisableExternalIdPConfigurationForDirectory`
+    - `GetSpConfigurationForDirectory`
+    - `UpdateExternalIdPConfigurationForDirectory`
+    - `DeleteExternalIdPConfigurationForDirectory`
+    - `ListExternalIdPCertificates`
+    - `ImportExternalIdPCertificate`
+    - `DeleteExternalIdPCertificate`
+    - `ListProvisioningTenants`
+    - `CreateProvisioningTenant`
+    - `DeleteProvisioningTenant`
+    - `ListBearerTokens`
+    - `CreateBearerToken`
+    - `DeleteBearerToken`
+    - `ListSessions`
+    - `BatchDeleteSessions`
+    - `GetIdentityStoreSummary`
+    - `DescribePasswordPolicy`
+    - `UpdatePasswordPolicy`
+    - `ListSpCertificates`
+    - `CreateSpCertificate`
+    - `DeleteSpCertificate`
+    - `UpdateSpActiveCertificate`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK IoTDA
+
+- _API Version_
+  - V5
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdateCertificate**
+    - changes of request param
+      - `+ ocsp_enable`
+      - `+ ocsp_ssl_enable`
+      - `+ ocsp_server_ca_id`
+    - changes of response param
+      - `+ ocsp_enable`
+      - `+ ocsp_server_ca_id`
+      - `+ ocsp_ssl_enable`
+  - **AddCertificate**
+    - changes of response param
+      - `+ ocsp_enable`
+      - `+ ocsp_server_ca_id`
+      - `+ ocsp_ssl_enable`
+  - **ListCertificates**
+    - changes of response param
+      - `+ ocsp_enable`
+      - `+ ocsp_server_ca_id`
+      - `+ ocsp_ssl_enable`
+      - `+ certificates.ocsp_enable`
+      - `+ certificates.ocsp_server_ca_id`
+      - `+ certificates.ocsp_ssl_enable`
+
+### HuaweiCloud SDK KMS
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the API `CreatePin`
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateDatakey**
+    - changes of request param
+      - `+ pin`
+      - `+ pin_type`
+      - `+ key_spec: enum value [SM4,HMAC_256,HMAC_384,HMAC_512,HMAC_SM3]`
+  - **CreateDatakeyWithoutPlaintext**
+    - changes of request param
+      - `+ pin`
+      - `+ pin_type`
+      - `+ key_spec: enum value [SM4,HMAC_256,HMAC_384,HMAC_512,HMAC_SM3]`
+  - **CreateEcDatakeyPair**
+    - changes of request param
+      - `+ pin`
+      - `+ pin_type`
+  - **EncryptDatakey**
+    - changes of request param
+      - `+ pin`
+      - `+ pin_type`
+      - `+ key_spec`
+  - **CreateKey**
+    - changes of request param
+      - `+ vm_id`
+    - changes of response param
+      - `+ key_info.region_id`
+  - **ListKeyStores**
+    - changes of response param
+      - `+ keystores.cluster_id`
+  - **CreateKeyStore**
+    - changes of request param
+      - `+ cluster_id`
+      - `+ keystore_type`
+  - **ShowKeyStore**
+    - changes of response param
+      - `+ keystore.cluster_id`
+
+### HuaweiCloud SDK MetaStudio
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the following APIs:
+    - `DownloadTemplate`
+    - `DownloadResultFile`
+    - `SearchTask`
+    - `ShowTask`
+    - `DeleteTask`
+    - `ImportResource`
+    - `ExportResource`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListTtscVocabularyGroups**
+    - changes of request param
+      - `+ limit`
+      - `+ offset`
+      - `+ group_id`
+  - **ShowAsset**
+    - changes of response param
+      - `+ produce_id`
+  - **UpdateDigitalAsset**
+    - changes of response param
+      - `+ produce_id`
+  - **CreateDigitalAsset**
+    - changes of response param
+      - `+ produce_id`
+  - **ListAssets**
+    - changes of response param
+      - `+ produce_id`
+      - `+ assets.produce_id`
+
+### HuaweiCloud SDK SecMaster
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListWorkflows**
+    - changes of response param
+      - `+ data.current_rejected_version_id`
+      - `- data.current_rejected_versoin_id`
+
+### HuaweiCloud SDK SMS
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowServer**
+    - changes of response param
+      - `+ current_task.subtask_info`
+  - **ListTasks**
+    - changes of response param
+      - `+ tasks.subtask_info`
+  - **ShowTask**
+    - changes of response param
+      - `+ subtask_info`
+  - **ListServers**
+    - changes of response param
+      - `+ source_servers.current_task.subtask_info`
+
+### HuaweiCloud SDK VPN
+
+- _API Version_
+  - V5
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListVpnConnections**
+    - changes of response param
+      - `- vpn_connections.policy_rules.rule_index`
+  - **CreateVpnConnection**
+    - changes of request param
+      - `- vpn_connection.policy_rules.rule_index`
+    - changes of response param
+      - `- vpn_connection.policy_rules.rule_index`
+  - **BatchCreateVpnConnection**
+    - changes of request param
+      - `- vpn_connections.policy_rules.rule_index`
+    - changes of response param
+      - `- vpn_connections.policy_rules.rule_index`
+  - **ShowVpnConnection**
+    - changes of response param
+      - `- vpn_connection.policy_rules.rule_index`
+  - **UpdateVpnConnection**
+    - changes of request param
+      - `- vpn_connection.policy_rules.rule_index`
+    - changes of response param
+      - `- vpn_connection.policy_rules.rule_index`
+
+### HuaweiCloud SDK WorkspaceApp
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the following APIs:
+    - `UpdatePreBootPolicy`
+    - `ShowAppWarehouseBucket`
+    - `BindAppWarehouseBucket`
+    - `ListProjectConfigs`
+    - `ShowProjectConfig`
+    - `ListCloudStorage`
+    - `CreateCloudStorage`
+    - `DeleteCloudStorage`
+    - `BatchDeleteCloudStorage`
+    - `CreateUserFolderAssignment`
+    - `UpdateCloudUserFolderAssignment`
+    - `DeleteCloudStorageAttachment`
+    - `ListCloudStorageAssignment`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowAppDetail**
+    - changes of response param
+      - `+ app_extended_info`
+      - `+ is_pre_boot`
+  - **UpdateApp**
+    - changes of request param
+      - `+ app_extended_info`
+    - changes of response param
+      - `+ app_extended_info`
+      - `+ is_pre_boot`
+  - **UploadAppIcon**
+    - changes of response param
+      - `+ app_extended_info`
+      - `+ is_pre_boot`
+  - **UpdateWarehouseApp**
+    - changes of request param
+      - `+ app_extended_info`
+  - **ShowPublishableApp**
+    - changes of response param
+      - `+ app_extended_info`
+      - `+ is_pre_boot`
+      - `+ items.is_pre_boot`
+      - `+ items.app_extended_info`
+  - **ListPublishedApp**
+    - changes of response param
+      - `+ app_extended_info`
+      - `+ is_pre_boot`
+      - `+ items.is_pre_boot`
+      - `+ items.app_extended_info`
+  - **PublishApp**
+    - changes of request param
+      - `+ items.app_extended_info`
+    - changes of response param
+      - `+ app_extended_info`
+      - `+ is_pre_boot`
+      - `+ items.is_pre_boot`
+      - `+ items.app_extended_info`
+  - **ListAppGroupAuthorization**
+    - changes of request param
+      - `+ account_id`
+  - **CreateWarehouseApp**
+    - changes of request param
+      - `+ app_extended_info`
+    - changes of response param
+      - `+ app_extended_info`
+  - **ListWarehouseApps**
+    - changes of response param
+      - `+ app_extended_info`
+      - `+ items.app_extended_info`
+  - **ShowServer**
+    - changes of response param
+      - `+ job_type: enum value [BATCH_INSTALL_APP]`
+      - `+ task_status: enum value [installing_app,install_app_failed]`
+  - **ListServers**
+    - changes of response param
+      - `+ items.job_type: enum value [BATCH_INSTALL_APP]`
+      - `+ items.task_status: enum value [installing_app,install_app_failed]`
+  - **ShowJobDetail**
+    - changes of response param
+      - `+ job_type: enum value [BATCH_INSTALL_APP]`
+  - **ShowOriginalPolicyInfo**
+    - changes of response param
+      - `+ policies.cloud_storage`
+      - `+ policies.user_profile`
+      - `+ policies.custom.options.rail_transparent_config`
+  - **ListPolicyOfPolicyGroup**
+    - changes of response param
+      - `+ policies.cloud_storage`
+      - `+ policies.user_profile`
+      - `+ policies.custom.options.rail_transparent_config`
+  - **ListPolicyGroup**
+    - changes of response param
+      - `+ items.policies.cloud_storage`
+      - `+ items.policies.user_profile`
+      - `+ items.policies.custom.options.rail_transparent_config`
+  - **CreatePolicyGroup**
+    - changes of request param
+      - `+ policy_group.policies.cloud_storage`
+      - `+ policy_group.policies.user_profile`
+      - `+ policy_group.policies.custom.options.rail_transparent_config`
+  - **ShowPolicyGroup**
+    - changes of response param
+      - `+ policy_group.policies.cloud_storage`
+      - `+ policy_group.policies.user_profile`
+      - `+ policy_group.policies.custom.options.rail_transparent_config`
+  - **UpdatePolicyGroup**
+    - changes of request param
+      - `+ policy_group.policies.cloud_storage`
+      - `+ policy_group.policies.user_profile`
+      - `+ policy_group.policies.custom.options.rail_transparent_config`
+  - **ListPolicyGroupDetailInfo**
+    - changes of response param
+      - `+ items.policies.cloud_storage`
+      - `+ items.policies.user_profile`
+      - `+ items.policies.custom.options.rail_transparent_config`
+  - **ListPolicyTemplate**
+    - changes of response param
+      - `+ items.policies.cloud_storage`
+      - `+ items.policies.user_profile`
+      - `+ items.policies.custom.options.rail_transparent_config`
+  - **CreatePolicyTemplate**
+    - changes of request param
+      - `+ policy_group.policies.cloud_storage`
+      - `+ policy_group.policies.user_profile`
+      - `+ policy_group.policies.custom.options.rail_transparent_config`
+  - **UpdatePolicyTemplate**
+    - changes of request param
+      - `+ policy_group.policies.cloud_storage`
+      - `+ policy_group.policies.user_profile`
+      - `+ policy_group.policies.custom.options.rail_transparent_config`
+
 # 3.1.161 2025-08-07
 
 ### HuaweiCloud SDK AOM

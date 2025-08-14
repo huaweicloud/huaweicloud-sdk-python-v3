@@ -31,9 +31,9 @@ class ProtectionServerInfoBackupError:
 
         The model defined in huaweicloud sdk
 
-        :param error_code: 错误编码，包含如下2种。   - 0 ：无错误信息。   - 1 ：已綁定至其它存储库，无法开启备份。   - 2 ：备份库已超过最大限额。   - 3 ：CBR接口调用异常。
+        :param error_code: **参数解释**: 错误编码 **取值范围**: 包含如下4种。   - 0 ：无错误信息。   - 1 ：已綁定至其它存储库，无法开启备份。   - 2 ：备份库已超过最大限额。   - 3 ：CBR接口调用异常。
         :type error_code: int
-        :param error_description: 错误描述
+        :param error_description: **参数解释**: 错误描述 **取值范围**: 字符长度1-128 
         :type error_description: str
         """
         
@@ -52,7 +52,7 @@ class ProtectionServerInfoBackupError:
     def error_code(self):
         r"""Gets the error_code of this ProtectionServerInfoBackupError.
 
-        错误编码，包含如下2种。   - 0 ：无错误信息。   - 1 ：已綁定至其它存储库，无法开启备份。   - 2 ：备份库已超过最大限额。   - 3 ：CBR接口调用异常。
+        **参数解释**: 错误编码 **取值范围**: 包含如下4种。   - 0 ：无错误信息。   - 1 ：已綁定至其它存储库，无法开启备份。   - 2 ：备份库已超过最大限额。   - 3 ：CBR接口调用异常。
 
         :return: The error_code of this ProtectionServerInfoBackupError.
         :rtype: int
@@ -63,7 +63,7 @@ class ProtectionServerInfoBackupError:
     def error_code(self, error_code):
         r"""Sets the error_code of this ProtectionServerInfoBackupError.
 
-        错误编码，包含如下2种。   - 0 ：无错误信息。   - 1 ：已綁定至其它存储库，无法开启备份。   - 2 ：备份库已超过最大限额。   - 3 ：CBR接口调用异常。
+        **参数解释**: 错误编码 **取值范围**: 包含如下4种。   - 0 ：无错误信息。   - 1 ：已綁定至其它存储库，无法开启备份。   - 2 ：备份库已超过最大限额。   - 3 ：CBR接口调用异常。
 
         :param error_code: The error_code of this ProtectionServerInfoBackupError.
         :type error_code: int
@@ -74,7 +74,7 @@ class ProtectionServerInfoBackupError:
     def error_description(self):
         r"""Gets the error_description of this ProtectionServerInfoBackupError.
 
-        错误描述
+        **参数解释**: 错误描述 **取值范围**: 字符长度1-128 
 
         :return: The error_description of this ProtectionServerInfoBackupError.
         :rtype: str
@@ -85,7 +85,7 @@ class ProtectionServerInfoBackupError:
     def error_description(self, error_description):
         r"""Sets the error_description of this ProtectionServerInfoBackupError.
 
-        错误描述
+        **参数解释**: 错误描述 **取值范围**: 字符长度1-128 
 
         :param error_description: The error_description of this ProtectionServerInfoBackupError.
         :type error_description: str

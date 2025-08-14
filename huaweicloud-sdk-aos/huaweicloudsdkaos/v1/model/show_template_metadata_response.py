@@ -40,7 +40,7 @@ class ShowTemplateMetadataResponse(SdkResponse):
 
         :param template_id: 模板的唯一ID，由模板服务随机生成
         :type template_id: str
-        :param template_name: 用户希望创建的模板名称
+        :param template_name: 模板（Template）的名字。此名字在domain_id+region下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。
         :type template_name: str
         :param template_description: 模板的描述。可用于客户识别自己的模板
         :type template_description: str
@@ -92,7 +92,7 @@ class ShowTemplateMetadataResponse(SdkResponse):
     def template_name(self):
         r"""Gets the template_name of this ShowTemplateMetadataResponse.
 
-        用户希望创建的模板名称
+        模板（Template）的名字。此名字在domain_id+region下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。
 
         :return: The template_name of this ShowTemplateMetadataResponse.
         :rtype: str
@@ -103,7 +103,7 @@ class ShowTemplateMetadataResponse(SdkResponse):
     def template_name(self, template_name):
         r"""Sets the template_name of this ShowTemplateMetadataResponse.
 
-        用户希望创建的模板名称
+        模板（Template）的名字。此名字在domain_id+region下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。
 
         :param template_name: The template_name of this ShowTemplateMetadataResponse.
         :type template_name: str

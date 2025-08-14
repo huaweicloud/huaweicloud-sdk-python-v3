@@ -31,7 +31,7 @@ class ScalingPolicyBySession:
 
         The model defined in huaweicloud sdk
 
-        :param session_usage_threshold: 分组的总会话使用率(达到改阈值后扩容)。
+        :param session_usage_threshold: 分组的总会话使用率(达到该阈值后扩容)。
         :type session_usage_threshold: int
         :param shrink_after_session_idle_minutes: 给定时间内无会话连接的的实例进行释放。
         :type shrink_after_session_idle_minutes: int
@@ -50,7 +50,7 @@ class ScalingPolicyBySession:
     def session_usage_threshold(self):
         r"""Gets the session_usage_threshold of this ScalingPolicyBySession.
 
-        分组的总会话使用率(达到改阈值后扩容)。
+        分组的总会话使用率(达到该阈值后扩容)。
 
         :return: The session_usage_threshold of this ScalingPolicyBySession.
         :rtype: int
@@ -61,7 +61,7 @@ class ScalingPolicyBySession:
     def session_usage_threshold(self, session_usage_threshold):
         r"""Sets the session_usage_threshold of this ScalingPolicyBySession.
 
-        分组的总会话使用率(达到改阈值后扩容)。
+        分组的总会话使用率(达到该阈值后扩容)。
 
         :param session_usage_threshold: The session_usage_threshold of this ScalingPolicyBySession.
         :type session_usage_threshold: int

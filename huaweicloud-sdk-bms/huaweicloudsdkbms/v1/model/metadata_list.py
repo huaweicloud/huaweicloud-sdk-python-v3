@@ -17,6 +17,7 @@ class MetadataList:
     sensitive_list = []
 
     openapi_types = {
+        'ecm_res_status': 'str',
         'charging_mode': 'str',
         'metering_order_id': 'str',
         'metering_product_id': 'str',
@@ -34,6 +35,7 @@ class MetadataList:
     }
 
     attribute_map = {
+        'ecm_res_status': 'EcmResStatus',
         'charging_mode': 'chargingMode',
         'metering_order_id': 'metering.order_id',
         'metering_product_id': 'metering.product_id',
@@ -50,11 +52,13 @@ class MetadataList:
         'os_bit': 'os_bit'
     }
 
-    def __init__(self, charging_mode=None, metering_order_id=None, metering_product_id=None, vpc_id=None, metering_image_id=None, metering_imagetype=None, baremetal_port_id_list=None, metering_resourcespeccode=None, metering_resourcetype=None, image_name=None, op_svc_userid=None, os_type=None, bms_support_evs=None, os_bit=None):
+    def __init__(self, ecm_res_status=None, charging_mode=None, metering_order_id=None, metering_product_id=None, vpc_id=None, metering_image_id=None, metering_imagetype=None, baremetal_port_id_list=None, metering_resourcespeccode=None, metering_resourcetype=None, image_name=None, op_svc_userid=None, os_type=None, bms_support_evs=None, os_bit=None):
         r"""MetadataList
 
         The model defined in huaweicloud sdk
 
+        :param ecm_res_status: 裸机的冻结状态
+        :type ecm_res_status: str
         :param charging_mode: 裸金属服务器的计费类型。1：按包年包月计费（即prePaid：预付费方式）。
         :type charging_mode: str
         :param metering_order_id: 按“包年/包月”计费的裸金属服务器对应的订单ID。
@@ -87,6 +91,7 @@ class MetadataList:
         
         
 
+        self._ecm_res_status = None
         self._charging_mode = None
         self._metering_order_id = None
         self._metering_product_id = None
@@ -103,6 +108,8 @@ class MetadataList:
         self._os_bit = None
         self.discriminator = None
 
+        if ecm_res_status is not None:
+            self.ecm_res_status = ecm_res_status
         if charging_mode is not None:
             self.charging_mode = charging_mode
         if metering_order_id is not None:
@@ -131,6 +138,28 @@ class MetadataList:
             self.bms_support_evs = bms_support_evs
         if os_bit is not None:
             self.os_bit = os_bit
+
+    @property
+    def ecm_res_status(self):
+        r"""Gets the ecm_res_status of this MetadataList.
+
+        裸机的冻结状态
+
+        :return: The ecm_res_status of this MetadataList.
+        :rtype: str
+        """
+        return self._ecm_res_status
+
+    @ecm_res_status.setter
+    def ecm_res_status(self, ecm_res_status):
+        r"""Sets the ecm_res_status of this MetadataList.
+
+        裸机的冻结状态
+
+        :param ecm_res_status: The ecm_res_status of this MetadataList.
+        :type ecm_res_status: str
+        """
+        self._ecm_res_status = ecm_res_status
 
     @property
     def charging_mode(self):

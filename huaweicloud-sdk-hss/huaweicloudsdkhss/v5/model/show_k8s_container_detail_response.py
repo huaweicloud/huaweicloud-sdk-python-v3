@@ -52,7 +52,7 @@ class ShowK8sContainerDetailResponse(SdkResponse):
         :type service_port_list: list[:class:`huaweicloudsdkhss.v5.ServicePortInfo`]
         :param enable_simulate: 数据仿真，默认关闭。开启后将在沙箱中注入仿真数据 - open : 开启 - close : 关闭
         :type enable_simulate: str
-        :param hosts: 沙箱域名 使用 &#39;,&#39; 隔开
+        :param hosts: 沙箱域名，域名之间使用 &#39;,&#39; 隔开
         :type hosts: str
         :param extra: 
         :type extra: :class:`huaweicloudsdkhss.v5.ContainerExtraInfo`
@@ -198,7 +198,7 @@ class ShowK8sContainerDetailResponse(SdkResponse):
     def hosts(self):
         r"""Gets the hosts of this ShowK8sContainerDetailResponse.
 
-        沙箱域名 使用 ',' 隔开
+        沙箱域名，域名之间使用 ',' 隔开
 
         :return: The hosts of this ShowK8sContainerDetailResponse.
         :rtype: str
@@ -209,7 +209,7 @@ class ShowK8sContainerDetailResponse(SdkResponse):
     def hosts(self, hosts):
         r"""Sets the hosts of this ShowK8sContainerDetailResponse.
 
-        沙箱域名 使用 ',' 隔开
+        沙箱域名，域名之间使用 ',' 隔开
 
         :param hosts: The hosts of this ShowK8sContainerDetailResponse.
         :type hosts: str

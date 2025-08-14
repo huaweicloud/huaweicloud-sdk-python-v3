@@ -63,7 +63,7 @@ class ListRaspEventsRequest:
         :type app_type: str
         :param severity: 告警级别 |- 告警级别，包含如下1种。 - 0 ：Info级别告警 - 1 ：Low级别告警 - 2 ：Medium级别告警 - 3 ：High级别告警 - 4 ：Critical级别告警
         :type severity: str
-        :param attack_tag: 攻击标识 |- 攻击标识，包含如下6种。 - 1 ：Attack Success  攻击成功 - 2 ：Attack Attempt  攻击尝试 - 3 ：Attack Blocked  攻击被阻断 - 4 ：Abnormal Behavior  异常行为 - 5 ：Collapsible Host  主机失陷 - 6 ：System Vulnerability  系统脆弱性
+        :param attack_tag: 攻击标识 |- 攻击标识，包含如下6种。 - Attack Success：攻击成功 - Attack Attempt：攻击尝试 - Attack Blocked：攻击被阻断 - Abnormal Behavior：异常行为 - Collapsible Host：主机失陷 - System Vulnerability：系统脆弱性
         :type attack_tag: str
         :param protect_status: 防护状态，包含如下2种。   - closed ：未开启。   - opened ：防护中。
         :type protect_status: str
@@ -279,7 +279,7 @@ class ListRaspEventsRequest:
     def attack_tag(self):
         r"""Gets the attack_tag of this ListRaspEventsRequest.
 
-        攻击标识 |- 攻击标识，包含如下6种。 - 1 ：Attack Success  攻击成功 - 2 ：Attack Attempt  攻击尝试 - 3 ：Attack Blocked  攻击被阻断 - 4 ：Abnormal Behavior  异常行为 - 5 ：Collapsible Host  主机失陷 - 6 ：System Vulnerability  系统脆弱性
+        攻击标识 |- 攻击标识，包含如下6种。 - Attack Success：攻击成功 - Attack Attempt：攻击尝试 - Attack Blocked：攻击被阻断 - Abnormal Behavior：异常行为 - Collapsible Host：主机失陷 - System Vulnerability：系统脆弱性
 
         :return: The attack_tag of this ListRaspEventsRequest.
         :rtype: str
@@ -290,7 +290,7 @@ class ListRaspEventsRequest:
     def attack_tag(self, attack_tag):
         r"""Sets the attack_tag of this ListRaspEventsRequest.
 
-        攻击标识 |- 攻击标识，包含如下6种。 - 1 ：Attack Success  攻击成功 - 2 ：Attack Attempt  攻击尝试 - 3 ：Attack Blocked  攻击被阻断 - 4 ：Abnormal Behavior  异常行为 - 5 ：Collapsible Host  主机失陷 - 6 ：System Vulnerability  系统脆弱性
+        攻击标识 |- 攻击标识，包含如下6种。 - Attack Success：攻击成功 - Attack Attempt：攻击尝试 - Attack Blocked：攻击被阻断 - Abnormal Behavior：异常行为 - Collapsible Host：主机失陷 - System Vulnerability：系统脆弱性
 
         :param attack_tag: The attack_tag of this ListRaspEventsRequest.
         :type attack_tag: str

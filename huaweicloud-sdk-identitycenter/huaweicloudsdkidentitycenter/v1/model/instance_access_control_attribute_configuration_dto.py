@@ -29,7 +29,7 @@ class InstanceAccessControlAttributeConfigurationDto:
 
         The model defined in huaweicloud sdk
 
-        :param access_control_attributes: IAM身份中心实例中ABAC配置的属性
+        :param access_control_attributes: IAM Identity Center实例中ABAC配置的属性
         :type access_control_attributes: list[:class:`huaweicloudsdkidentitycenter.v1.AccessControlAttributeDto`]
         """
         
@@ -44,7 +44,7 @@ class InstanceAccessControlAttributeConfigurationDto:
     def access_control_attributes(self):
         r"""Gets the access_control_attributes of this InstanceAccessControlAttributeConfigurationDto.
 
-        IAM身份中心实例中ABAC配置的属性
+        IAM Identity Center实例中ABAC配置的属性
 
         :return: The access_control_attributes of this InstanceAccessControlAttributeConfigurationDto.
         :rtype: list[:class:`huaweicloudsdkidentitycenter.v1.AccessControlAttributeDto`]
@@ -55,7 +55,7 @@ class InstanceAccessControlAttributeConfigurationDto:
     def access_control_attributes(self, access_control_attributes):
         r"""Sets the access_control_attributes of this InstanceAccessControlAttributeConfigurationDto.
 
-        IAM身份中心实例中ABAC配置的属性
+        IAM Identity Center实例中ABAC配置的属性
 
         :param access_control_attributes: The access_control_attributes of this InstanceAccessControlAttributeConfigurationDto.
         :type access_control_attributes: list[:class:`huaweicloudsdkidentitycenter.v1.AccessControlAttributeDto`]

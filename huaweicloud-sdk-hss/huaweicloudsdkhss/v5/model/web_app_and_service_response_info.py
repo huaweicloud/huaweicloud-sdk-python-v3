@@ -75,9 +75,9 @@ class WebAppAndServiceResponseInfo:
         :type version: str
         :param agent_id: agent_id
         :type agent_id: str
-        :param install_path: install_path
+        :param install_path: 安装路径
         :type install_path: str
-        :param config_path: config_path 配置文件路径
+        :param config_path: 配置文件路径
         :type config_path: str
         :param uid: uid
         :type uid: int
@@ -266,7 +266,7 @@ class WebAppAndServiceResponseInfo:
     def install_path(self):
         r"""Gets the install_path of this WebAppAndServiceResponseInfo.
 
-        install_path
+        安装路径
 
         :return: The install_path of this WebAppAndServiceResponseInfo.
         :rtype: str
@@ -277,7 +277,7 @@ class WebAppAndServiceResponseInfo:
     def install_path(self, install_path):
         r"""Sets the install_path of this WebAppAndServiceResponseInfo.
 
-        install_path
+        安装路径
 
         :param install_path: The install_path of this WebAppAndServiceResponseInfo.
         :type install_path: str
@@ -288,7 +288,7 @@ class WebAppAndServiceResponseInfo:
     def config_path(self):
         r"""Gets the config_path of this WebAppAndServiceResponseInfo.
 
-        config_path 配置文件路径
+        配置文件路径
 
         :return: The config_path of this WebAppAndServiceResponseInfo.
         :rtype: str
@@ -299,7 +299,7 @@ class WebAppAndServiceResponseInfo:
     def config_path(self, config_path):
         r"""Sets the config_path of this WebAppAndServiceResponseInfo.
 
-        config_path 配置文件路径
+        配置文件路径
 
         :param config_path: The config_path of this WebAppAndServiceResponseInfo.
         :type config_path: str

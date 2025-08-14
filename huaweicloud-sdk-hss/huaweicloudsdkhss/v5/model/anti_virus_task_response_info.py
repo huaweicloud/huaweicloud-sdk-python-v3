@@ -63,7 +63,7 @@ class AntiVirusTaskResponseInfo:
         :type scan_type: str
         :param start_type: 启动类型，包含如下:   - now : 立即启动   - later : 稍后启动   - period : 周期启动
         :type start_type: str
-        :param action: 处置动作，包含如下:   - auto ：自动处置   - manual : 人工处置
+        :param action: 处置动作，包含如下:   - auto：自动处置   - manual：人工处置
         :type action: str
         :param start_time: 启动时间，毫秒
         :type start_time: int
@@ -224,7 +224,7 @@ class AntiVirusTaskResponseInfo:
     def action(self):
         r"""Gets the action of this AntiVirusTaskResponseInfo.
 
-        处置动作，包含如下:   - auto ：自动处置   - manual : 人工处置
+        处置动作，包含如下:   - auto：自动处置   - manual：人工处置
 
         :return: The action of this AntiVirusTaskResponseInfo.
         :rtype: str
@@ -235,7 +235,7 @@ class AntiVirusTaskResponseInfo:
     def action(self, action):
         r"""Sets the action of this AntiVirusTaskResponseInfo.
 
-        处置动作，包含如下:   - auto ：自动处置   - manual : 人工处置
+        处置动作，包含如下:   - auto：自动处置   - manual：人工处置
 
         :param action: The action of this AntiVirusTaskResponseInfo.
         :type action: str

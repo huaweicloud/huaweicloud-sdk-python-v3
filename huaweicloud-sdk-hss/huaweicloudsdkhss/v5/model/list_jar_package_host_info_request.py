@@ -43,21 +43,21 @@ class ListJarPackageHostInfoRequest:
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
+        :param enterprise_project_id: **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
         :type enterprise_project_id: str
-        :param file_name: 文件名称
+        :param file_name: **参数解释**: 文件名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
         :type file_name: str
-        :param category: 类别，包含如下:   - host : 主机   - container : 容器
+        :param category: **参数解释**: 类别 **约束限制**: 不涉及 **取值范围**: - host：主机 - container：容器  **默认取值**: 不涉及 
         :type category: str
-        :param host_name: 服务器名称
+        :param host_name: **参数解释**: 服务器名称 **约束限制**: 不涉及 **取值范围**: 字符长度0-64位 **默认取值**: 不涉及 
         :type host_name: str
-        :param host_ip: 服务器IP
+        :param host_ip: **参数解释**: 服务器IP **约束限制**: 不涉及 **取值范围**: 字符长度0-64位 **默认取值**: 不涉及 
         :type host_ip: str
-        :param limit: 每页显示数量
+        :param limit: **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
         :type limit: int
-        :param offset: 偏移量：指定返回记录的开始位置
+        :param offset: **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 默认为0 
         :type offset: int
-        :param part_match: 是否模糊匹配，默认false表示精确匹配
+        :param part_match: **参数解释**: 是否模糊匹配 **约束限制**: 不涉及 **取值范围**: - true：模糊匹配 - false：精确匹配  **默认取值**: false 
         :type part_match: bool
         """
         
@@ -93,7 +93,7 @@ class ListJarPackageHostInfoRequest:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this ListJarPackageHostInfoRequest.
 
-        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
+        **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
 
         :return: The enterprise_project_id of this ListJarPackageHostInfoRequest.
         :rtype: str
@@ -104,7 +104,7 @@ class ListJarPackageHostInfoRequest:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this ListJarPackageHostInfoRequest.
 
-        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
+        **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
 
         :param enterprise_project_id: The enterprise_project_id of this ListJarPackageHostInfoRequest.
         :type enterprise_project_id: str
@@ -115,7 +115,7 @@ class ListJarPackageHostInfoRequest:
     def file_name(self):
         r"""Gets the file_name of this ListJarPackageHostInfoRequest.
 
-        文件名称
+        **参数解释**: 文件名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
 
         :return: The file_name of this ListJarPackageHostInfoRequest.
         :rtype: str
@@ -126,7 +126,7 @@ class ListJarPackageHostInfoRequest:
     def file_name(self, file_name):
         r"""Sets the file_name of this ListJarPackageHostInfoRequest.
 
-        文件名称
+        **参数解释**: 文件名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
 
         :param file_name: The file_name of this ListJarPackageHostInfoRequest.
         :type file_name: str
@@ -137,7 +137,7 @@ class ListJarPackageHostInfoRequest:
     def category(self):
         r"""Gets the category of this ListJarPackageHostInfoRequest.
 
-        类别，包含如下:   - host : 主机   - container : 容器
+        **参数解释**: 类别 **约束限制**: 不涉及 **取值范围**: - host：主机 - container：容器  **默认取值**: 不涉及 
 
         :return: The category of this ListJarPackageHostInfoRequest.
         :rtype: str
@@ -148,7 +148,7 @@ class ListJarPackageHostInfoRequest:
     def category(self, category):
         r"""Sets the category of this ListJarPackageHostInfoRequest.
 
-        类别，包含如下:   - host : 主机   - container : 容器
+        **参数解释**: 类别 **约束限制**: 不涉及 **取值范围**: - host：主机 - container：容器  **默认取值**: 不涉及 
 
         :param category: The category of this ListJarPackageHostInfoRequest.
         :type category: str
@@ -159,7 +159,7 @@ class ListJarPackageHostInfoRequest:
     def host_name(self):
         r"""Gets the host_name of this ListJarPackageHostInfoRequest.
 
-        服务器名称
+        **参数解释**: 服务器名称 **约束限制**: 不涉及 **取值范围**: 字符长度0-64位 **默认取值**: 不涉及 
 
         :return: The host_name of this ListJarPackageHostInfoRequest.
         :rtype: str
@@ -170,7 +170,7 @@ class ListJarPackageHostInfoRequest:
     def host_name(self, host_name):
         r"""Sets the host_name of this ListJarPackageHostInfoRequest.
 
-        服务器名称
+        **参数解释**: 服务器名称 **约束限制**: 不涉及 **取值范围**: 字符长度0-64位 **默认取值**: 不涉及 
 
         :param host_name: The host_name of this ListJarPackageHostInfoRequest.
         :type host_name: str
@@ -181,7 +181,7 @@ class ListJarPackageHostInfoRequest:
     def host_ip(self):
         r"""Gets the host_ip of this ListJarPackageHostInfoRequest.
 
-        服务器IP
+        **参数解释**: 服务器IP **约束限制**: 不涉及 **取值范围**: 字符长度0-64位 **默认取值**: 不涉及 
 
         :return: The host_ip of this ListJarPackageHostInfoRequest.
         :rtype: str
@@ -192,7 +192,7 @@ class ListJarPackageHostInfoRequest:
     def host_ip(self, host_ip):
         r"""Sets the host_ip of this ListJarPackageHostInfoRequest.
 
-        服务器IP
+        **参数解释**: 服务器IP **约束限制**: 不涉及 **取值范围**: 字符长度0-64位 **默认取值**: 不涉及 
 
         :param host_ip: The host_ip of this ListJarPackageHostInfoRequest.
         :type host_ip: str
@@ -203,7 +203,7 @@ class ListJarPackageHostInfoRequest:
     def limit(self):
         r"""Gets the limit of this ListJarPackageHostInfoRequest.
 
-        每页显示数量
+        **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
 
         :return: The limit of this ListJarPackageHostInfoRequest.
         :rtype: int
@@ -214,7 +214,7 @@ class ListJarPackageHostInfoRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListJarPackageHostInfoRequest.
 
-        每页显示数量
+        **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
 
         :param limit: The limit of this ListJarPackageHostInfoRequest.
         :type limit: int
@@ -225,7 +225,7 @@ class ListJarPackageHostInfoRequest:
     def offset(self):
         r"""Gets the offset of this ListJarPackageHostInfoRequest.
 
-        偏移量：指定返回记录的开始位置
+        **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 默认为0 
 
         :return: The offset of this ListJarPackageHostInfoRequest.
         :rtype: int
@@ -236,7 +236,7 @@ class ListJarPackageHostInfoRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListJarPackageHostInfoRequest.
 
-        偏移量：指定返回记录的开始位置
+        **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 默认为0 
 
         :param offset: The offset of this ListJarPackageHostInfoRequest.
         :type offset: int
@@ -247,7 +247,7 @@ class ListJarPackageHostInfoRequest:
     def part_match(self):
         r"""Gets the part_match of this ListJarPackageHostInfoRequest.
 
-        是否模糊匹配，默认false表示精确匹配
+        **参数解释**: 是否模糊匹配 **约束限制**: 不涉及 **取值范围**: - true：模糊匹配 - false：精确匹配  **默认取值**: false 
 
         :return: The part_match of this ListJarPackageHostInfoRequest.
         :rtype: bool
@@ -258,7 +258,7 @@ class ListJarPackageHostInfoRequest:
     def part_match(self, part_match):
         r"""Sets the part_match of this ListJarPackageHostInfoRequest.
 
-        是否模糊匹配，默认false表示精确匹配
+        **参数解释**: 是否模糊匹配 **约束限制**: 不涉及 **取值范围**: - true：模糊匹配 - false：精确匹配  **默认取值**: false 
 
         :param part_match: The part_match of this ListJarPackageHostInfoRequest.
         :type part_match: bool

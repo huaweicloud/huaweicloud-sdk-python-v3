@@ -47,25 +47,25 @@ class ProtectionInfoRequestInfo:
 
         The model defined in huaweicloud sdk
 
-        :param operating_system: 需要开启防护的主机的操作系统，包含如下：   - Windows : Windows系统   - Linux : Linux系统
+        :param operating_system: **参数解释**: 策略支持的操作系统 **约束限制**: 不涉及 **取值范围**: 包含如下：   - Windows : Windows系统   - Linux : Linux系统 **默认取值**: 不涉及
         :type operating_system: str
-        :param ransom_protection_status: 勒索防护是否开启，包含如下：   - closed ：关闭。   - opened ：开启。   若选择开启，protection_policy_id或者create_protection_policy必填一项
+        :param ransom_protection_status: **参数解释**: 勒索防护是否开启，若开启勒索病毒防护，则必填protection_policy_id或者create_protection_policy其中一项。 **约束限制**: 不涉及 **取值范围**: 包含如下：   - closed ：关闭。   - opened ：开启。 **默认取值**: 不涉及
         :type ransom_protection_status: str
-        :param protection_policy_id: 勒索防护策略ID,若选择已有策略防护,则该字段必选
+        :param protection_policy_id: **参数解释**: 勒索防护策略ID，若开启勒索防护，选择已有策略防护，则该字段必选。 **约束限制**: 不涉及 **取值范围**: 字符长度0-64 **默认取值**: 不涉及 
         :type protection_policy_id: str
         :param create_protection_policy: 
         :type create_protection_policy: :class:`huaweicloudsdkhss.v5.ProtectionProxyInfoRequestInfo`
-        :param backup_protection_status: 是否服务器备份，包含如下：   - closed ：关闭。   - opened ：开启。   若选择开启服务器备份，则backup_cycle必填
+        :param backup_protection_status: **参数解释**: 是否服务器备份，若选择开启服务器备份，则backup_cycle必填 **约束限制**: 不涉及 **取值范围**: 包含如下：   - closed ：关闭。   - opened ：开启。 **默认取值**: 不涉及
         :type backup_protection_status: str
         :param backup_resources: 
         :type backup_resources: :class:`huaweicloudsdkhss.v5.BackupResources`
-        :param backup_policy_id: 备份策略ID
+        :param backup_policy_id: **参数解释**: 备份策略ID **约束限制**: 不涉及 **取值范围**: 字符长度0-64 **默认取值**: 不涉及 
         :type backup_policy_id: str
         :param backup_cycle: 
         :type backup_cycle: :class:`huaweicloudsdkhss.v5.UpdateBackupPolicyRequestInfo1`
-        :param agent_id_list: 开启防护的Agent id列表
+        :param agent_id_list: **参数解释**: 开启防护的Agent id列表 **约束限制**: 不涉及 **取值范围**: 列表条数0-64 **默认取值**: 不涉及 
         :type agent_id_list: list[str]
-        :param host_id_list: 开启防护的host id列表
+        :param host_id_list: **参数解释**: 开启防护的host id列表 **约束限制**: 不涉及 **取值范围**: 列表条数0-64 **默认取值**: 不涉及 
         :type host_id_list: list[str]
         """
         
@@ -103,7 +103,7 @@ class ProtectionInfoRequestInfo:
     def operating_system(self):
         r"""Gets the operating_system of this ProtectionInfoRequestInfo.
 
-        需要开启防护的主机的操作系统，包含如下：   - Windows : Windows系统   - Linux : Linux系统
+        **参数解释**: 策略支持的操作系统 **约束限制**: 不涉及 **取值范围**: 包含如下：   - Windows : Windows系统   - Linux : Linux系统 **默认取值**: 不涉及
 
         :return: The operating_system of this ProtectionInfoRequestInfo.
         :rtype: str
@@ -114,7 +114,7 @@ class ProtectionInfoRequestInfo:
     def operating_system(self, operating_system):
         r"""Sets the operating_system of this ProtectionInfoRequestInfo.
 
-        需要开启防护的主机的操作系统，包含如下：   - Windows : Windows系统   - Linux : Linux系统
+        **参数解释**: 策略支持的操作系统 **约束限制**: 不涉及 **取值范围**: 包含如下：   - Windows : Windows系统   - Linux : Linux系统 **默认取值**: 不涉及
 
         :param operating_system: The operating_system of this ProtectionInfoRequestInfo.
         :type operating_system: str
@@ -125,7 +125,7 @@ class ProtectionInfoRequestInfo:
     def ransom_protection_status(self):
         r"""Gets the ransom_protection_status of this ProtectionInfoRequestInfo.
 
-        勒索防护是否开启，包含如下：   - closed ：关闭。   - opened ：开启。   若选择开启，protection_policy_id或者create_protection_policy必填一项
+        **参数解释**: 勒索防护是否开启，若开启勒索病毒防护，则必填protection_policy_id或者create_protection_policy其中一项。 **约束限制**: 不涉及 **取值范围**: 包含如下：   - closed ：关闭。   - opened ：开启。 **默认取值**: 不涉及
 
         :return: The ransom_protection_status of this ProtectionInfoRequestInfo.
         :rtype: str
@@ -136,7 +136,7 @@ class ProtectionInfoRequestInfo:
     def ransom_protection_status(self, ransom_protection_status):
         r"""Sets the ransom_protection_status of this ProtectionInfoRequestInfo.
 
-        勒索防护是否开启，包含如下：   - closed ：关闭。   - opened ：开启。   若选择开启，protection_policy_id或者create_protection_policy必填一项
+        **参数解释**: 勒索防护是否开启，若开启勒索病毒防护，则必填protection_policy_id或者create_protection_policy其中一项。 **约束限制**: 不涉及 **取值范围**: 包含如下：   - closed ：关闭。   - opened ：开启。 **默认取值**: 不涉及
 
         :param ransom_protection_status: The ransom_protection_status of this ProtectionInfoRequestInfo.
         :type ransom_protection_status: str
@@ -147,7 +147,7 @@ class ProtectionInfoRequestInfo:
     def protection_policy_id(self):
         r"""Gets the protection_policy_id of this ProtectionInfoRequestInfo.
 
-        勒索防护策略ID,若选择已有策略防护,则该字段必选
+        **参数解释**: 勒索防护策略ID，若开启勒索防护，选择已有策略防护，则该字段必选。 **约束限制**: 不涉及 **取值范围**: 字符长度0-64 **默认取值**: 不涉及 
 
         :return: The protection_policy_id of this ProtectionInfoRequestInfo.
         :rtype: str
@@ -158,7 +158,7 @@ class ProtectionInfoRequestInfo:
     def protection_policy_id(self, protection_policy_id):
         r"""Sets the protection_policy_id of this ProtectionInfoRequestInfo.
 
-        勒索防护策略ID,若选择已有策略防护,则该字段必选
+        **参数解释**: 勒索防护策略ID，若开启勒索防护，选择已有策略防护，则该字段必选。 **约束限制**: 不涉及 **取值范围**: 字符长度0-64 **默认取值**: 不涉及 
 
         :param protection_policy_id: The protection_policy_id of this ProtectionInfoRequestInfo.
         :type protection_policy_id: str
@@ -187,7 +187,7 @@ class ProtectionInfoRequestInfo:
     def backup_protection_status(self):
         r"""Gets the backup_protection_status of this ProtectionInfoRequestInfo.
 
-        是否服务器备份，包含如下：   - closed ：关闭。   - opened ：开启。   若选择开启服务器备份，则backup_cycle必填
+        **参数解释**: 是否服务器备份，若选择开启服务器备份，则backup_cycle必填 **约束限制**: 不涉及 **取值范围**: 包含如下：   - closed ：关闭。   - opened ：开启。 **默认取值**: 不涉及
 
         :return: The backup_protection_status of this ProtectionInfoRequestInfo.
         :rtype: str
@@ -198,7 +198,7 @@ class ProtectionInfoRequestInfo:
     def backup_protection_status(self, backup_protection_status):
         r"""Sets the backup_protection_status of this ProtectionInfoRequestInfo.
 
-        是否服务器备份，包含如下：   - closed ：关闭。   - opened ：开启。   若选择开启服务器备份，则backup_cycle必填
+        **参数解释**: 是否服务器备份，若选择开启服务器备份，则backup_cycle必填 **约束限制**: 不涉及 **取值范围**: 包含如下：   - closed ：关闭。   - opened ：开启。 **默认取值**: 不涉及
 
         :param backup_protection_status: The backup_protection_status of this ProtectionInfoRequestInfo.
         :type backup_protection_status: str
@@ -227,7 +227,7 @@ class ProtectionInfoRequestInfo:
     def backup_policy_id(self):
         r"""Gets the backup_policy_id of this ProtectionInfoRequestInfo.
 
-        备份策略ID
+        **参数解释**: 备份策略ID **约束限制**: 不涉及 **取值范围**: 字符长度0-64 **默认取值**: 不涉及 
 
         :return: The backup_policy_id of this ProtectionInfoRequestInfo.
         :rtype: str
@@ -238,7 +238,7 @@ class ProtectionInfoRequestInfo:
     def backup_policy_id(self, backup_policy_id):
         r"""Sets the backup_policy_id of this ProtectionInfoRequestInfo.
 
-        备份策略ID
+        **参数解释**: 备份策略ID **约束限制**: 不涉及 **取值范围**: 字符长度0-64 **默认取值**: 不涉及 
 
         :param backup_policy_id: The backup_policy_id of this ProtectionInfoRequestInfo.
         :type backup_policy_id: str
@@ -267,7 +267,7 @@ class ProtectionInfoRequestInfo:
     def agent_id_list(self):
         r"""Gets the agent_id_list of this ProtectionInfoRequestInfo.
 
-        开启防护的Agent id列表
+        **参数解释**: 开启防护的Agent id列表 **约束限制**: 不涉及 **取值范围**: 列表条数0-64 **默认取值**: 不涉及 
 
         :return: The agent_id_list of this ProtectionInfoRequestInfo.
         :rtype: list[str]
@@ -278,7 +278,7 @@ class ProtectionInfoRequestInfo:
     def agent_id_list(self, agent_id_list):
         r"""Sets the agent_id_list of this ProtectionInfoRequestInfo.
 
-        开启防护的Agent id列表
+        **参数解释**: 开启防护的Agent id列表 **约束限制**: 不涉及 **取值范围**: 列表条数0-64 **默认取值**: 不涉及 
 
         :param agent_id_list: The agent_id_list of this ProtectionInfoRequestInfo.
         :type agent_id_list: list[str]
@@ -289,7 +289,7 @@ class ProtectionInfoRequestInfo:
     def host_id_list(self):
         r"""Gets the host_id_list of this ProtectionInfoRequestInfo.
 
-        开启防护的host id列表
+        **参数解释**: 开启防护的host id列表 **约束限制**: 不涉及 **取值范围**: 列表条数0-64 **默认取值**: 不涉及 
 
         :return: The host_id_list of this ProtectionInfoRequestInfo.
         :rtype: list[str]
@@ -300,7 +300,7 @@ class ProtectionInfoRequestInfo:
     def host_id_list(self, host_id_list):
         r"""Sets the host_id_list of this ProtectionInfoRequestInfo.
 
-        开启防护的host id列表
+        **参数解释**: 开启防护的host id列表 **约束限制**: 不涉及 **取值范围**: 列表条数0-64 **默认取值**: 不涉及 
 
         :param host_id_list: The host_id_list of this ProtectionInfoRequestInfo.
         :type host_id_list: list[str]

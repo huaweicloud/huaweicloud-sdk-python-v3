@@ -41,7 +41,7 @@ class ListPolicyGroupRequest:
         :type limit: int
         :param policy_group_name: 根据策略组名字过滤结果。
         :type policy_group_name: str
-        :param policy_group_type: 根据策略组类型名字过滤结果。
+        :param policy_group_type: 根据策略组类型名字过滤结果, 0:VM类, 4:策略模板。
         :type policy_group_type: int
         """
         
@@ -132,7 +132,7 @@ class ListPolicyGroupRequest:
     def policy_group_type(self):
         r"""Gets the policy_group_type of this ListPolicyGroupRequest.
 
-        根据策略组类型名字过滤结果。
+        根据策略组类型名字过滤结果, 0:VM类, 4:策略模板。
 
         :return: The policy_group_type of this ListPolicyGroupRequest.
         :rtype: int
@@ -143,7 +143,7 @@ class ListPolicyGroupRequest:
     def policy_group_type(self, policy_group_type):
         r"""Sets the policy_group_type of this ListPolicyGroupRequest.
 
-        根据策略组类型名字过滤结果。
+        根据策略组类型名字过滤结果, 0:VM类, 4:策略模板。
 
         :param policy_group_type: The policy_group_type of this ListPolicyGroupRequest.
         :type policy_group_type: int

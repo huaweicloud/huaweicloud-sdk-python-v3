@@ -25,6 +25,7 @@ class EventItemDetail:
         'event_level': 'str',
         'event_user': 'str',
         'event_type': 'str',
+        'sub_event_type': 'str',
         'dimensions': 'list[MetricsDimension]'
     }
 
@@ -37,10 +38,11 @@ class EventItemDetail:
         'event_level': 'event_level',
         'event_user': 'event_user',
         'event_type': 'event_type',
+        'sub_event_type': 'sub_event_type',
         'dimensions': 'dimensions'
     }
 
-    def __init__(self, content=None, group_id=None, resource_id=None, resource_name=None, event_state=None, event_level=None, event_user=None, event_type=None, dimensions=None):
+    def __init__(self, content=None, group_id=None, resource_id=None, resource_name=None, event_state=None, event_level=None, event_user=None, event_type=None, sub_event_type=None, dimensions=None):
         r"""EventItemDetail
 
         The model defined in huaweicloud sdk
@@ -61,6 +63,8 @@ class EventItemDetail:
         :type event_user: str
         :param event_type: 事件类型。 枚举类型，EVENT.SYS或EVENT.CUSTOM，EVENT.SYS为系统事件，用户自已不能上报，只能传EVENT.CUSTOM。
         :type event_type: str
+        :param sub_event_type: 事件子类。 枚举类型：SUB_EVENT.OPS为运维事件，SUB_EVENT.PLAN为计划事件，SUB_EVENT.CUSTOM为自定义事件。
+        :type sub_event_type: str
         :param dimensions: 一个或者多个资源维度。
         :type dimensions: list[:class:`huaweicloudsdkces.v1.MetricsDimension`]
         """
@@ -75,6 +79,7 @@ class EventItemDetail:
         self._event_level = None
         self._event_user = None
         self._event_type = None
+        self._sub_event_type = None
         self._dimensions = None
         self.discriminator = None
 
@@ -94,6 +99,8 @@ class EventItemDetail:
             self.event_user = event_user
         if event_type is not None:
             self.event_type = event_type
+        if sub_event_type is not None:
+            self.sub_event_type = sub_event_type
         if dimensions is not None:
             self.dimensions = dimensions
 
@@ -272,6 +279,28 @@ class EventItemDetail:
         :type event_type: str
         """
         self._event_type = event_type
+
+    @property
+    def sub_event_type(self):
+        r"""Gets the sub_event_type of this EventItemDetail.
+
+        事件子类。 枚举类型：SUB_EVENT.OPS为运维事件，SUB_EVENT.PLAN为计划事件，SUB_EVENT.CUSTOM为自定义事件。
+
+        :return: The sub_event_type of this EventItemDetail.
+        :rtype: str
+        """
+        return self._sub_event_type
+
+    @sub_event_type.setter
+    def sub_event_type(self, sub_event_type):
+        r"""Sets the sub_event_type of this EventItemDetail.
+
+        事件子类。 枚举类型：SUB_EVENT.OPS为运维事件，SUB_EVENT.PLAN为计划事件，SUB_EVENT.CUSTOM为自定义事件。
+
+        :param sub_event_type: The sub_event_type of this EventItemDetail.
+        :type sub_event_type: str
+        """
+        self._sub_event_type = sub_event_type
 
     @property
     def dimensions(self):

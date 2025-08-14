@@ -35,9 +35,9 @@ class LoginWhiteIpResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param enabled: 白名单启用状态, 包含如下:   - true : 已启用   - false : 已禁用
+        :param enabled: 白名单启用状态，包含如下：   - true：已启用   - false：已禁用
         :type enabled: bool
-        :param white_ip: 白名单IP或IP网段,IP网段由IP地址和掩码组成,以&#39;/&#39;连接。
+        :param white_ip: 白名单IP或IP网段，IP网段由IP地址和掩码组成，以‘/’连接。
         :type white_ip: str
         :param total_num: 服务器ID总数
         :type total_num: int
@@ -66,7 +66,7 @@ class LoginWhiteIpResponseInfo:
     def enabled(self):
         r"""Gets the enabled of this LoginWhiteIpResponseInfo.
 
-        白名单启用状态, 包含如下:   - true : 已启用   - false : 已禁用
+        白名单启用状态，包含如下：   - true：已启用   - false：已禁用
 
         :return: The enabled of this LoginWhiteIpResponseInfo.
         :rtype: bool
@@ -77,7 +77,7 @@ class LoginWhiteIpResponseInfo:
     def enabled(self, enabled):
         r"""Sets the enabled of this LoginWhiteIpResponseInfo.
 
-        白名单启用状态, 包含如下:   - true : 已启用   - false : 已禁用
+        白名单启用状态，包含如下：   - true：已启用   - false：已禁用
 
         :param enabled: The enabled of this LoginWhiteIpResponseInfo.
         :type enabled: bool
@@ -88,7 +88,7 @@ class LoginWhiteIpResponseInfo:
     def white_ip(self):
         r"""Gets the white_ip of this LoginWhiteIpResponseInfo.
 
-        白名单IP或IP网段,IP网段由IP地址和掩码组成,以'/'连接。
+        白名单IP或IP网段，IP网段由IP地址和掩码组成，以‘/’连接。
 
         :return: The white_ip of this LoginWhiteIpResponseInfo.
         :rtype: str
@@ -99,7 +99,7 @@ class LoginWhiteIpResponseInfo:
     def white_ip(self, white_ip):
         r"""Sets the white_ip of this LoginWhiteIpResponseInfo.
 
-        白名单IP或IP网段,IP网段由IP地址和掩码组成,以'/'连接。
+        白名单IP或IP网段，IP网段由IP地址和掩码组成，以‘/’连接。
 
         :param white_ip: The white_ip of this LoginWhiteIpResponseInfo.
         :type white_ip: str

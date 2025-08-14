@@ -25,7 +25,8 @@ class CreateWarehouseAppReq:
         'version_name': 'str',
         'appfile_store_path': 'str',
         'app_icon': 'str',
-        'app_file_size': 'int'
+        'app_file_size': 'int',
+        'app_extended_info': 'AppExtendedInfo'
     }
 
     attribute_map = {
@@ -37,10 +38,11 @@ class CreateWarehouseAppReq:
         'version_name': 'version_name',
         'appfile_store_path': 'appfile_store_path',
         'app_icon': 'app_icon',
-        'app_file_size': 'app_file_size'
+        'app_file_size': 'app_file_size',
+        'app_extended_info': 'app_extended_info'
     }
 
-    def __init__(self, app_name=None, app_category=None, os_type=None, version_id=None, app_description=None, version_name=None, appfile_store_path=None, app_icon=None, app_file_size=None):
+    def __init__(self, app_name=None, app_category=None, os_type=None, version_id=None, app_description=None, version_name=None, appfile_store_path=None, app_icon=None, app_file_size=None, app_extended_info=None):
         r"""CreateWarehouseAppReq
 
         The model defined in huaweicloud sdk
@@ -63,6 +65,8 @@ class CreateWarehouseAppReq:
         :type app_icon: str
         :param app_file_size: 应用文件大小，单位为KB。
         :type app_file_size: int
+        :param app_extended_info: 
+        :type app_extended_info: :class:`huaweicloudsdkworkspaceapp.v1.AppExtendedInfo`
         """
         
         
@@ -76,6 +80,7 @@ class CreateWarehouseAppReq:
         self._appfile_store_path = None
         self._app_icon = None
         self._app_file_size = None
+        self._app_extended_info = None
         self.discriminator = None
 
         self.app_name = app_name
@@ -90,6 +95,8 @@ class CreateWarehouseAppReq:
             self.app_icon = app_icon
         if app_file_size is not None:
             self.app_file_size = app_file_size
+        if app_extended_info is not None:
+            self.app_extended_info = app_extended_info
 
     @property
     def app_name(self):
@@ -280,6 +287,24 @@ class CreateWarehouseAppReq:
         :type app_file_size: int
         """
         self._app_file_size = app_file_size
+
+    @property
+    def app_extended_info(self):
+        r"""Gets the app_extended_info of this CreateWarehouseAppReq.
+
+        :return: The app_extended_info of this CreateWarehouseAppReq.
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.AppExtendedInfo`
+        """
+        return self._app_extended_info
+
+    @app_extended_info.setter
+    def app_extended_info(self, app_extended_info):
+        r"""Sets the app_extended_info of this CreateWarehouseAppReq.
+
+        :param app_extended_info: The app_extended_info of this CreateWarehouseAppReq.
+        :type app_extended_info: :class:`huaweicloudsdkworkspaceapp.v1.AppExtendedInfo`
+        """
+        self._app_extended_info = app_extended_info
 
     def to_dict(self):
         """Returns the model properties as a dict"""

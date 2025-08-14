@@ -22,6 +22,7 @@ class KeystoreDetails:
         'keystore_alias': 'str',
         'keystore_type': 'str',
         'hsm_cluster_id': 'str',
+        'cluster_id': 'str',
         'create_time': 'str'
     }
 
@@ -31,10 +32,11 @@ class KeystoreDetails:
         'keystore_alias': 'keystore_alias',
         'keystore_type': 'keystore_type',
         'hsm_cluster_id': 'hsm_cluster_id',
+        'cluster_id': 'cluster_id',
         'create_time': 'create_time'
     }
 
-    def __init__(self, keystore_id=None, domain_id=None, keystore_alias=None, keystore_type=None, hsm_cluster_id=None, create_time=None):
+    def __init__(self, keystore_id=None, domain_id=None, keystore_alias=None, keystore_type=None, hsm_cluster_id=None, cluster_id=None, create_time=None):
         r"""KeystoreDetails
 
         The model defined in huaweicloud sdk
@@ -49,6 +51,8 @@ class KeystoreDetails:
         :type keystore_type: str
         :param hsm_cluster_id: DHSM集群id，要求集群当前未创建专属密钥库
         :type hsm_cluster_id: str
+        :param cluster_id: 集群ID。当类型为DEFAULT时，cluster_id为”0”。当类型为DHSM时，cluster_id为hsm_cluster_id。当类型为CDMS时，默认密码卡集群，集群ID为“1”。自定义密码卡集群，为cdms_cluster_id
+        :type cluster_id: str
         :param create_time: 密钥库创建时间，UTC时间戳。
         :type create_time: str
         """
@@ -60,6 +64,7 @@ class KeystoreDetails:
         self._keystore_alias = None
         self._keystore_type = None
         self._hsm_cluster_id = None
+        self._cluster_id = None
         self._create_time = None
         self.discriminator = None
 
@@ -73,6 +78,8 @@ class KeystoreDetails:
             self.keystore_type = keystore_type
         if hsm_cluster_id is not None:
             self.hsm_cluster_id = hsm_cluster_id
+        if cluster_id is not None:
+            self.cluster_id = cluster_id
         if create_time is not None:
             self.create_time = create_time
 
@@ -185,6 +192,28 @@ class KeystoreDetails:
         :type hsm_cluster_id: str
         """
         self._hsm_cluster_id = hsm_cluster_id
+
+    @property
+    def cluster_id(self):
+        r"""Gets the cluster_id of this KeystoreDetails.
+
+        集群ID。当类型为DEFAULT时，cluster_id为”0”。当类型为DHSM时，cluster_id为hsm_cluster_id。当类型为CDMS时，默认密码卡集群，集群ID为“1”。自定义密码卡集群，为cdms_cluster_id
+
+        :return: The cluster_id of this KeystoreDetails.
+        :rtype: str
+        """
+        return self._cluster_id
+
+    @cluster_id.setter
+    def cluster_id(self, cluster_id):
+        r"""Sets the cluster_id of this KeystoreDetails.
+
+        集群ID。当类型为DEFAULT时，cluster_id为”0”。当类型为DHSM时，cluster_id为hsm_cluster_id。当类型为CDMS时，默认密码卡集群，集群ID为“1”。自定义密码卡集群，为cdms_cluster_id
+
+        :param cluster_id: The cluster_id of this KeystoreDetails.
+        :type cluster_id: str
+        """
+        self._cluster_id = cluster_id
 
     @property
     def create_time(self):

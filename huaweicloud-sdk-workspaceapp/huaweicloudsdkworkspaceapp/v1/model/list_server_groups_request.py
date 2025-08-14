@@ -43,9 +43,9 @@ class ListServerGroupsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param offset: 查询的偏移量。
+        :param offset: 查询的偏移量，默认值0。
         :type offset: int
-        :param limit: 查询的数量，值区间[1-100]。
+        :param limit: 查询的数量，值区间[1-100]，默认值10。
         :type limit: int
         :param server_group_name: 服务器组名称。
         :type server_group_name: str
@@ -55,7 +55,7 @@ class ListServerGroupsRequest:
         :type app_type: str
         :param tags: 查询tag字段中包含该值的服务器组。
         :type tags: str
-        :param enterprise_project_id: 企业项目ID(字段为空或者0表示使用默认default企业项目)
+        :param enterprise_project_id: 企业项目ID(字段为空或者0表示使用默认default企业项目)。
         :type enterprise_project_id: str
         :param is_secondary_server_group: 是否为备服务器组，不传默认查所有： true : 是备服务器组。 false: 主服务器组，默认。
         :type is_secondary_server_group: str
@@ -94,7 +94,7 @@ class ListServerGroupsRequest:
     def offset(self):
         r"""Gets the offset of this ListServerGroupsRequest.
 
-        查询的偏移量。
+        查询的偏移量，默认值0。
 
         :return: The offset of this ListServerGroupsRequest.
         :rtype: int
@@ -105,7 +105,7 @@ class ListServerGroupsRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListServerGroupsRequest.
 
-        查询的偏移量。
+        查询的偏移量，默认值0。
 
         :param offset: The offset of this ListServerGroupsRequest.
         :type offset: int
@@ -116,7 +116,7 @@ class ListServerGroupsRequest:
     def limit(self):
         r"""Gets the limit of this ListServerGroupsRequest.
 
-        查询的数量，值区间[1-100]。
+        查询的数量，值区间[1-100]，默认值10。
 
         :return: The limit of this ListServerGroupsRequest.
         :rtype: int
@@ -127,7 +127,7 @@ class ListServerGroupsRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListServerGroupsRequest.
 
-        查询的数量，值区间[1-100]。
+        查询的数量，值区间[1-100]，默认值10。
 
         :param limit: The limit of this ListServerGroupsRequest.
         :type limit: int
@@ -226,7 +226,7 @@ class ListServerGroupsRequest:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this ListServerGroupsRequest.
 
-        企业项目ID(字段为空或者0表示使用默认default企业项目)
+        企业项目ID(字段为空或者0表示使用默认default企业项目)。
 
         :return: The enterprise_project_id of this ListServerGroupsRequest.
         :rtype: str
@@ -237,7 +237,7 @@ class ListServerGroupsRequest:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this ListServerGroupsRequest.
 
-        企业项目ID(字段为空或者0表示使用默认default企业项目)
+        企业项目ID(字段为空或者0表示使用默认default企业项目)。
 
         :param enterprise_project_id: The enterprise_project_id of this ListServerGroupsRequest.
         :type enterprise_project_id: str

@@ -59,23 +59,23 @@ class IsolatedFileResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param os_type: 操作系统类型，包含如下2种。   - Linux ：Linux。   - Windows ：Windows。
+        :param os_type: **参数解释**： 操作系统类型 **取值范围**： - Linux：Linux。 - Windows：Windows。 
         :type os_type: str
-        :param host_id: **参数解释**: 服务器ID **取值范围**: 字符长度1-64位 
+        :param host_id: **参数解释**： 主机ID **取值范围**： 字符长度1-64位 
         :type host_id: str
         :param host_name: **参数解释**: 服务器名称 **取值范围**: 字符长度1-256位 
         :type host_name: str
-        :param file_hash: 文件哈希
+        :param file_hash: **参数解释**： 文件哈希 **取值范围**： 字符长度1-256位 
         :type file_hash: str
-        :param file_path: 文件路径
+        :param file_path: **参数解释**： 文件路径 **取值范围**： 字符长度1-256位 
         :type file_path: str
-        :param file_attr: 文件属性
+        :param file_attr: **参数解释**： 文件属性 **取值范围**： 字符长度1-256位 
         :type file_attr: str
         :param isolation_status: 隔离状态，包含如下:   - isolated : 已隔离   - restored : 已恢复   - isolating : 已下发隔离任务   - restoring : 已下发恢复任务
         :type isolation_status: str
-        :param private_ip: 服务器私有IP
+        :param private_ip: **参数解释**： 服务器私有IP **取值范围**： 字符长度1-128位 
         :type private_ip: str
-        :param public_ip: 弹性公网IP地址
+        :param public_ip: **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位 
         :type public_ip: str
         :param asset_value: 资产重要性，包含如下3种   - important ：重要资产   - common ：一般资产   - test ：测试资产
         :type asset_value: str
@@ -85,7 +85,7 @@ class IsolatedFileResponseInfo:
         :type agent_version: str
         :param isolate_source: 隔离来源，包含如下:   - event : 安全告警事件   - antivirus : 病毒查杀
         :type isolate_source: str
-        :param event_name: 事件名称
+        :param event_name: **参数解释**： 事件名称 **取值范围**： 字符长度1-256位 
         :type event_name: str
         :param agent_event_info: 
         :type agent_event_info: :class:`huaweicloudsdkhss.v5.IsolateEventResponseInfo`
@@ -134,7 +134,7 @@ class IsolatedFileResponseInfo:
     def os_type(self):
         r"""Gets the os_type of this IsolatedFileResponseInfo.
 
-        操作系统类型，包含如下2种。   - Linux ：Linux。   - Windows ：Windows。
+        **参数解释**： 操作系统类型 **取值范围**： - Linux：Linux。 - Windows：Windows。 
 
         :return: The os_type of this IsolatedFileResponseInfo.
         :rtype: str
@@ -145,7 +145,7 @@ class IsolatedFileResponseInfo:
     def os_type(self, os_type):
         r"""Sets the os_type of this IsolatedFileResponseInfo.
 
-        操作系统类型，包含如下2种。   - Linux ：Linux。   - Windows ：Windows。
+        **参数解释**： 操作系统类型 **取值范围**： - Linux：Linux。 - Windows：Windows。 
 
         :param os_type: The os_type of this IsolatedFileResponseInfo.
         :type os_type: str
@@ -156,7 +156,7 @@ class IsolatedFileResponseInfo:
     def host_id(self):
         r"""Gets the host_id of this IsolatedFileResponseInfo.
 
-        **参数解释**: 服务器ID **取值范围**: 字符长度1-64位 
+        **参数解释**： 主机ID **取值范围**： 字符长度1-64位 
 
         :return: The host_id of this IsolatedFileResponseInfo.
         :rtype: str
@@ -167,7 +167,7 @@ class IsolatedFileResponseInfo:
     def host_id(self, host_id):
         r"""Sets the host_id of this IsolatedFileResponseInfo.
 
-        **参数解释**: 服务器ID **取值范围**: 字符长度1-64位 
+        **参数解释**： 主机ID **取值范围**： 字符长度1-64位 
 
         :param host_id: The host_id of this IsolatedFileResponseInfo.
         :type host_id: str
@@ -200,7 +200,7 @@ class IsolatedFileResponseInfo:
     def file_hash(self):
         r"""Gets the file_hash of this IsolatedFileResponseInfo.
 
-        文件哈希
+        **参数解释**： 文件哈希 **取值范围**： 字符长度1-256位 
 
         :return: The file_hash of this IsolatedFileResponseInfo.
         :rtype: str
@@ -211,7 +211,7 @@ class IsolatedFileResponseInfo:
     def file_hash(self, file_hash):
         r"""Sets the file_hash of this IsolatedFileResponseInfo.
 
-        文件哈希
+        **参数解释**： 文件哈希 **取值范围**： 字符长度1-256位 
 
         :param file_hash: The file_hash of this IsolatedFileResponseInfo.
         :type file_hash: str
@@ -222,7 +222,7 @@ class IsolatedFileResponseInfo:
     def file_path(self):
         r"""Gets the file_path of this IsolatedFileResponseInfo.
 
-        文件路径
+        **参数解释**： 文件路径 **取值范围**： 字符长度1-256位 
 
         :return: The file_path of this IsolatedFileResponseInfo.
         :rtype: str
@@ -233,7 +233,7 @@ class IsolatedFileResponseInfo:
     def file_path(self, file_path):
         r"""Sets the file_path of this IsolatedFileResponseInfo.
 
-        文件路径
+        **参数解释**： 文件路径 **取值范围**： 字符长度1-256位 
 
         :param file_path: The file_path of this IsolatedFileResponseInfo.
         :type file_path: str
@@ -244,7 +244,7 @@ class IsolatedFileResponseInfo:
     def file_attr(self):
         r"""Gets the file_attr of this IsolatedFileResponseInfo.
 
-        文件属性
+        **参数解释**： 文件属性 **取值范围**： 字符长度1-256位 
 
         :return: The file_attr of this IsolatedFileResponseInfo.
         :rtype: str
@@ -255,7 +255,7 @@ class IsolatedFileResponseInfo:
     def file_attr(self, file_attr):
         r"""Sets the file_attr of this IsolatedFileResponseInfo.
 
-        文件属性
+        **参数解释**： 文件属性 **取值范围**： 字符长度1-256位 
 
         :param file_attr: The file_attr of this IsolatedFileResponseInfo.
         :type file_attr: str
@@ -288,7 +288,7 @@ class IsolatedFileResponseInfo:
     def private_ip(self):
         r"""Gets the private_ip of this IsolatedFileResponseInfo.
 
-        服务器私有IP
+        **参数解释**： 服务器私有IP **取值范围**： 字符长度1-128位 
 
         :return: The private_ip of this IsolatedFileResponseInfo.
         :rtype: str
@@ -299,7 +299,7 @@ class IsolatedFileResponseInfo:
     def private_ip(self, private_ip):
         r"""Sets the private_ip of this IsolatedFileResponseInfo.
 
-        服务器私有IP
+        **参数解释**： 服务器私有IP **取值范围**： 字符长度1-128位 
 
         :param private_ip: The private_ip of this IsolatedFileResponseInfo.
         :type private_ip: str
@@ -310,7 +310,7 @@ class IsolatedFileResponseInfo:
     def public_ip(self):
         r"""Gets the public_ip of this IsolatedFileResponseInfo.
 
-        弹性公网IP地址
+        **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位 
 
         :return: The public_ip of this IsolatedFileResponseInfo.
         :rtype: str
@@ -321,7 +321,7 @@ class IsolatedFileResponseInfo:
     def public_ip(self, public_ip):
         r"""Sets the public_ip of this IsolatedFileResponseInfo.
 
-        弹性公网IP地址
+        **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位 
 
         :param public_ip: The public_ip of this IsolatedFileResponseInfo.
         :type public_ip: str
@@ -420,7 +420,7 @@ class IsolatedFileResponseInfo:
     def event_name(self):
         r"""Gets the event_name of this IsolatedFileResponseInfo.
 
-        事件名称
+        **参数解释**： 事件名称 **取值范围**： 字符长度1-256位 
 
         :return: The event_name of this IsolatedFileResponseInfo.
         :rtype: str
@@ -431,7 +431,7 @@ class IsolatedFileResponseInfo:
     def event_name(self, event_name):
         r"""Sets the event_name of this IsolatedFileResponseInfo.
 
-        事件名称
+        **参数解释**： 事件名称 **取值范围**： 字符长度1-256位 
 
         :param event_name: The event_name of this IsolatedFileResponseInfo.
         :type event_name: str

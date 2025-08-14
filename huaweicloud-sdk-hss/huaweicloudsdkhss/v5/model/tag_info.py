@@ -31,9 +31,9 @@ class TagInfo:
 
         The model defined in huaweicloud sdk
 
-        :param key: 键。最大长度128个unicode字符。 key不能为空
+        :param key: **参数解释**： 键 **取值范围**: 最大长度128个unicode字符。 key不能为空
         :type key: str
-        :param value: 值。最大长度255个unicode字符。
+        :param value: **参数解释**： 值 **取值范围**: 最大长度255个unicode字符。
         :type value: str
         """
         
@@ -52,7 +52,7 @@ class TagInfo:
     def key(self):
         r"""Gets the key of this TagInfo.
 
-        键。最大长度128个unicode字符。 key不能为空
+        **参数解释**： 键 **取值范围**: 最大长度128个unicode字符。 key不能为空
 
         :return: The key of this TagInfo.
         :rtype: str
@@ -63,7 +63,7 @@ class TagInfo:
     def key(self, key):
         r"""Sets the key of this TagInfo.
 
-        键。最大长度128个unicode字符。 key不能为空
+        **参数解释**： 键 **取值范围**: 最大长度128个unicode字符。 key不能为空
 
         :param key: The key of this TagInfo.
         :type key: str
@@ -74,7 +74,7 @@ class TagInfo:
     def value(self):
         r"""Gets the value of this TagInfo.
 
-        值。最大长度255个unicode字符。
+        **参数解释**： 值 **取值范围**: 最大长度255个unicode字符。
 
         :return: The value of this TagInfo.
         :rtype: str
@@ -85,7 +85,7 @@ class TagInfo:
     def value(self, value):
         r"""Sets the value of this TagInfo.
 
-        值。最大长度255个unicode字符。
+        **参数解释**： 值 **取值范围**: 最大长度255个unicode字符。
 
         :param value: The value of this TagInfo.
         :type value: str

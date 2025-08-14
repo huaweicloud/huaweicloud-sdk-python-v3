@@ -119,9 +119,9 @@ class CreateServerGroupReq:
         :type extra_session_type: :class:`huaweicloudsdkworkspaceapp.v1.ExtraSessionTypeEnum`
         :param extra_session_size: 付费会话数，单位/个。
         :type extra_session_size: int
-        :param tags: 标签信息，最多包含20个key,不允许重复
+        :param tags: 标签信息，最多包含20个key,不允许重复。
         :type tags: list[:class:`huaweicloudsdkworkspaceapp.v1.TmsTag`]
-        :param enterprise_project_id: 企业项目ID,仅企业项目需配置(字段为空或者0表示使用默认default企业项目)
+        :param enterprise_project_id: 企业项目ID,仅企业项目需配置(字段为空或者0表示使用默认default企业项目)。
         :type enterprise_project_id: str
         :param primary_server_group_id: 主服务器组id,绑定主服务器组，则创建的是备服务器。
         :type primary_server_group_id: str
@@ -638,7 +638,7 @@ class CreateServerGroupReq:
     def tags(self):
         r"""Gets the tags of this CreateServerGroupReq.
 
-        标签信息，最多包含20个key,不允许重复
+        标签信息，最多包含20个key,不允许重复。
 
         :return: The tags of this CreateServerGroupReq.
         :rtype: list[:class:`huaweicloudsdkworkspaceapp.v1.TmsTag`]
@@ -649,7 +649,7 @@ class CreateServerGroupReq:
     def tags(self, tags):
         r"""Sets the tags of this CreateServerGroupReq.
 
-        标签信息，最多包含20个key,不允许重复
+        标签信息，最多包含20个key,不允许重复。
 
         :param tags: The tags of this CreateServerGroupReq.
         :type tags: list[:class:`huaweicloudsdkworkspaceapp.v1.TmsTag`]
@@ -660,7 +660,7 @@ class CreateServerGroupReq:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this CreateServerGroupReq.
 
-        企业项目ID,仅企业项目需配置(字段为空或者0表示使用默认default企业项目)
+        企业项目ID,仅企业项目需配置(字段为空或者0表示使用默认default企业项目)。
 
         :return: The enterprise_project_id of this CreateServerGroupReq.
         :rtype: str
@@ -671,7 +671,7 @@ class CreateServerGroupReq:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this CreateServerGroupReq.
 
-        企业项目ID,仅企业项目需配置(字段为空或者0表示使用默认default企业项目)
+        企业项目ID,仅企业项目需配置(字段为空或者0表示使用默认default企业项目)。
 
         :param enterprise_project_id: The enterprise_project_id of this CreateServerGroupReq.
         :type enterprise_project_id: str

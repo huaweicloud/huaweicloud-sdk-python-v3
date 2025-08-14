@@ -43,7 +43,7 @@ class CreateAntiVirusTaskRequestInfo:
         :type task_id: str
         :param scan_type: 任务类型，包含如下:   - quick ：快速扫描   - full : 全盘扫描   - custom : 自定义扫描
         :type scan_type: str
-        :param action: 处置动作，包含如下:   - auto ：自动处置   - manual : 人工处置
+        :param action: 处置动作，包含如下:   - auto：自动处置   - manual：人工处置
         :type action: str
         :param host_ids: 策略管理主机列表
         :type host_ids: list[str]
@@ -135,7 +135,7 @@ class CreateAntiVirusTaskRequestInfo:
     def action(self):
         r"""Gets the action of this CreateAntiVirusTaskRequestInfo.
 
-        处置动作，包含如下:   - auto ：自动处置   - manual : 人工处置
+        处置动作，包含如下:   - auto：自动处置   - manual：人工处置
 
         :return: The action of this CreateAntiVirusTaskRequestInfo.
         :rtype: str
@@ -146,7 +146,7 @@ class CreateAntiVirusTaskRequestInfo:
     def action(self, action):
         r"""Sets the action of this CreateAntiVirusTaskRequestInfo.
 
-        处置动作，包含如下:   - auto ：自动处置   - manual : 人工处置
+        处置动作，包含如下:   - auto：自动处置   - manual：人工处置
 
         :param action: The action of this CreateAntiVirusTaskRequestInfo.
         :type action: str

@@ -79,7 +79,7 @@ class ExportVulsRequest:
         :type limit: int
         :param offset: 偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
         :type offset: int
-        :param repair_priority: 修复优先级 Critical 紧急 High  高 Medium 中 Low 低
+        :param repair_priority: 修复优先级 Critical：紧急 High：高 Medium：中 Low：低
         :type repair_priority: str
         :param handle_status: 处置状态，包含如下:   - unhandled ：未处理   - handled : 已处理
         :type handle_status: str
@@ -353,7 +353,7 @@ class ExportVulsRequest:
     def repair_priority(self):
         r"""Gets the repair_priority of this ExportVulsRequest.
 
-        修复优先级 Critical 紧急 High  高 Medium 中 Low 低
+        修复优先级 Critical：紧急 High：高 Medium：中 Low：低
 
         :return: The repair_priority of this ExportVulsRequest.
         :rtype: str
@@ -364,7 +364,7 @@ class ExportVulsRequest:
     def repair_priority(self, repair_priority):
         r"""Sets the repair_priority of this ExportVulsRequest.
 
-        修复优先级 Critical 紧急 High  高 Medium 中 Low 低
+        修复优先级 Critical：紧急 High：高 Medium：中 Low：低
 
         :param repair_priority: The repair_priority of this ExportVulsRequest.
         :type repair_priority: str

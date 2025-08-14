@@ -45,19 +45,19 @@ class AppWhitelistEventDetailResInfo:
 
         :param agent_id: **参数解释**: Agent ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
         :type agent_id: str
-        :param process_pid: 进程ID
+        :param process_pid: **参数解释**： 进程ID **取值范围**： 最小值0，最大值2147483647 
         :type process_pid: int
-        :param file_hash: 文件哈希
+        :param file_hash: **参数解释**： 文件哈希 **取值范围**： 字符长度1-256位 
         :type file_hash: str
-        :param file_path: 文件路径
+        :param file_path: **参数解释**： 文件路径 **取值范围**： 字符长度1-256位 
         :type file_path: str
-        :param file_attr: 文件属性
+        :param file_attr: **参数解释**： 文件属性 **取值范围**： 字符长度1-256位 
         :type file_attr: str
-        :param private_ip: 服务器私有IP
+        :param private_ip: **参数解释**： 服务器私有IP **取值范围**： 字符长度1-128位 
         :type private_ip: str
-        :param login_ip: 登录源IP
+        :param login_ip: **参数解释**： 登录源IP **取值范围**： 字符长度1-256位 
         :type login_ip: str
-        :param login_user_name: 登录用户名
+        :param login_user_name: **参数解释**： 登录用户名 **取值范围**： 字符长度1-256位 
         :type login_user_name: str
         """
         
@@ -116,7 +116,7 @@ class AppWhitelistEventDetailResInfo:
     def process_pid(self):
         r"""Gets the process_pid of this AppWhitelistEventDetailResInfo.
 
-        进程ID
+        **参数解释**： 进程ID **取值范围**： 最小值0，最大值2147483647 
 
         :return: The process_pid of this AppWhitelistEventDetailResInfo.
         :rtype: int
@@ -127,7 +127,7 @@ class AppWhitelistEventDetailResInfo:
     def process_pid(self, process_pid):
         r"""Sets the process_pid of this AppWhitelistEventDetailResInfo.
 
-        进程ID
+        **参数解释**： 进程ID **取值范围**： 最小值0，最大值2147483647 
 
         :param process_pid: The process_pid of this AppWhitelistEventDetailResInfo.
         :type process_pid: int
@@ -138,7 +138,7 @@ class AppWhitelistEventDetailResInfo:
     def file_hash(self):
         r"""Gets the file_hash of this AppWhitelistEventDetailResInfo.
 
-        文件哈希
+        **参数解释**： 文件哈希 **取值范围**： 字符长度1-256位 
 
         :return: The file_hash of this AppWhitelistEventDetailResInfo.
         :rtype: str
@@ -149,7 +149,7 @@ class AppWhitelistEventDetailResInfo:
     def file_hash(self, file_hash):
         r"""Sets the file_hash of this AppWhitelistEventDetailResInfo.
 
-        文件哈希
+        **参数解释**： 文件哈希 **取值范围**： 字符长度1-256位 
 
         :param file_hash: The file_hash of this AppWhitelistEventDetailResInfo.
         :type file_hash: str
@@ -160,7 +160,7 @@ class AppWhitelistEventDetailResInfo:
     def file_path(self):
         r"""Gets the file_path of this AppWhitelistEventDetailResInfo.
 
-        文件路径
+        **参数解释**： 文件路径 **取值范围**： 字符长度1-256位 
 
         :return: The file_path of this AppWhitelistEventDetailResInfo.
         :rtype: str
@@ -171,7 +171,7 @@ class AppWhitelistEventDetailResInfo:
     def file_path(self, file_path):
         r"""Sets the file_path of this AppWhitelistEventDetailResInfo.
 
-        文件路径
+        **参数解释**： 文件路径 **取值范围**： 字符长度1-256位 
 
         :param file_path: The file_path of this AppWhitelistEventDetailResInfo.
         :type file_path: str
@@ -182,7 +182,7 @@ class AppWhitelistEventDetailResInfo:
     def file_attr(self):
         r"""Gets the file_attr of this AppWhitelistEventDetailResInfo.
 
-        文件属性
+        **参数解释**： 文件属性 **取值范围**： 字符长度1-256位 
 
         :return: The file_attr of this AppWhitelistEventDetailResInfo.
         :rtype: str
@@ -193,7 +193,7 @@ class AppWhitelistEventDetailResInfo:
     def file_attr(self, file_attr):
         r"""Sets the file_attr of this AppWhitelistEventDetailResInfo.
 
-        文件属性
+        **参数解释**： 文件属性 **取值范围**： 字符长度1-256位 
 
         :param file_attr: The file_attr of this AppWhitelistEventDetailResInfo.
         :type file_attr: str
@@ -204,7 +204,7 @@ class AppWhitelistEventDetailResInfo:
     def private_ip(self):
         r"""Gets the private_ip of this AppWhitelistEventDetailResInfo.
 
-        服务器私有IP
+        **参数解释**： 服务器私有IP **取值范围**： 字符长度1-128位 
 
         :return: The private_ip of this AppWhitelistEventDetailResInfo.
         :rtype: str
@@ -215,7 +215,7 @@ class AppWhitelistEventDetailResInfo:
     def private_ip(self, private_ip):
         r"""Sets the private_ip of this AppWhitelistEventDetailResInfo.
 
-        服务器私有IP
+        **参数解释**： 服务器私有IP **取值范围**： 字符长度1-128位 
 
         :param private_ip: The private_ip of this AppWhitelistEventDetailResInfo.
         :type private_ip: str
@@ -226,7 +226,7 @@ class AppWhitelistEventDetailResInfo:
     def login_ip(self):
         r"""Gets the login_ip of this AppWhitelistEventDetailResInfo.
 
-        登录源IP
+        **参数解释**： 登录源IP **取值范围**： 字符长度1-256位 
 
         :return: The login_ip of this AppWhitelistEventDetailResInfo.
         :rtype: str
@@ -237,7 +237,7 @@ class AppWhitelistEventDetailResInfo:
     def login_ip(self, login_ip):
         r"""Sets the login_ip of this AppWhitelistEventDetailResInfo.
 
-        登录源IP
+        **参数解释**： 登录源IP **取值范围**： 字符长度1-256位 
 
         :param login_ip: The login_ip of this AppWhitelistEventDetailResInfo.
         :type login_ip: str
@@ -248,7 +248,7 @@ class AppWhitelistEventDetailResInfo:
     def login_user_name(self):
         r"""Gets the login_user_name of this AppWhitelistEventDetailResInfo.
 
-        登录用户名
+        **参数解释**： 登录用户名 **取值范围**： 字符长度1-256位 
 
         :return: The login_user_name of this AppWhitelistEventDetailResInfo.
         :rtype: str
@@ -259,7 +259,7 @@ class AppWhitelistEventDetailResInfo:
     def login_user_name(self, login_user_name):
         r"""Sets the login_user_name of this AppWhitelistEventDetailResInfo.
 
-        登录用户名
+        **参数解释**： 登录用户名 **取值范围**： 字符长度1-256位 
 
         :param login_user_name: The login_user_name of this AppWhitelistEventDetailResInfo.
         :type login_user_name: str

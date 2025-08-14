@@ -67,7 +67,7 @@ class ListIsolatedFileRequest:
         :type private_ip: str
         :param public_ip: 服务器公网IP
         :type public_ip: str
-        :param file_hash: 文件hash,当前为sha256
+        :param file_hash: 文件hash，当前为sha256
         :type file_hash: str
         :param asset_value: 资产重要性，包含如下3种   - important ：重要资产   - common ：一般资产   - test ：测试资产
         :type asset_value: str
@@ -75,7 +75,7 @@ class ListIsolatedFileRequest:
         :type offset: int
         :param limit: 每页显示个数
         :type limit: int
-        :param isolation_status: 隔离状态，包含如下:   - isolated : 已隔离   - restored : 已恢复   - isolating : 已下发隔离任务   - restoring : 已下发恢复任务
+        :param isolation_status: 隔离状态，包含如下:   - isolated：已隔离   - restored：已恢复   - isolating：已下发隔离任务   - restoring：已下发恢复任务
         :type isolation_status: str
         :param last_days: 查询时间范围天数，与自定义查询时间begin_time，end_time互斥
         :type last_days: int
@@ -268,7 +268,7 @@ class ListIsolatedFileRequest:
     def file_hash(self):
         r"""Gets the file_hash of this ListIsolatedFileRequest.
 
-        文件hash,当前为sha256
+        文件hash，当前为sha256
 
         :return: The file_hash of this ListIsolatedFileRequest.
         :rtype: str
@@ -279,7 +279,7 @@ class ListIsolatedFileRequest:
     def file_hash(self, file_hash):
         r"""Sets the file_hash of this ListIsolatedFileRequest.
 
-        文件hash,当前为sha256
+        文件hash，当前为sha256
 
         :param file_hash: The file_hash of this ListIsolatedFileRequest.
         :type file_hash: str
@@ -356,7 +356,7 @@ class ListIsolatedFileRequest:
     def isolation_status(self):
         r"""Gets the isolation_status of this ListIsolatedFileRequest.
 
-        隔离状态，包含如下:   - isolated : 已隔离   - restored : 已恢复   - isolating : 已下发隔离任务   - restoring : 已下发恢复任务
+        隔离状态，包含如下:   - isolated：已隔离   - restored：已恢复   - isolating：已下发隔离任务   - restoring：已下发恢复任务
 
         :return: The isolation_status of this ListIsolatedFileRequest.
         :rtype: str
@@ -367,7 +367,7 @@ class ListIsolatedFileRequest:
     def isolation_status(self, isolation_status):
         r"""Sets the isolation_status of this ListIsolatedFileRequest.
 
-        隔离状态，包含如下:   - isolated : 已隔离   - restored : 已恢复   - isolating : 已下发隔离任务   - restoring : 已下发恢复任务
+        隔离状态，包含如下:   - isolated：已隔离   - restored：已恢复   - isolating：已下发隔离任务   - restoring：已下发恢复任务
 
         :param isolation_status: The isolation_status of this ListIsolatedFileRequest.
         :type isolation_status: str

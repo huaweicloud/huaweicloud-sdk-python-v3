@@ -57,7 +57,7 @@ class CreateServices:
 
         :param availability_zone: 可用分区。 &gt; - 将服务创建到指定的可用分区，如果不指定则使用系统随机的可用分区。 &gt; - 获取方式详见可用区管理ListAvailabilityZone：\&quot;GET  /v1/{project_id}/availability-zone\&quot;。
         :type availability_zone: str
-        :param data_volumes: 数据盘
+        :param data_volumes: 数据盘。
         :type data_volumes: list[:class:`huaweicloudsdkworkspaceapp.v1.Volume`]
         :param nics: 网卡信息，该字段当前未使用。
         :type nics: list[:class:`huaweicloudsdkworkspaceapp.v1.Nic`]
@@ -153,7 +153,7 @@ class CreateServices:
     def data_volumes(self):
         r"""Gets the data_volumes of this CreateServices.
 
-        数据盘
+        数据盘。
 
         :return: The data_volumes of this CreateServices.
         :rtype: list[:class:`huaweicloudsdkworkspaceapp.v1.Volume`]
@@ -164,7 +164,7 @@ class CreateServices:
     def data_volumes(self, data_volumes):
         r"""Sets the data_volumes of this CreateServices.
 
-        数据盘
+        数据盘。
 
         :param data_volumes: The data_volumes of this CreateServices.
         :type data_volumes: list[:class:`huaweicloudsdkworkspaceapp.v1.Volume`]

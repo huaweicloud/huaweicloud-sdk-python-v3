@@ -37,11 +37,11 @@ class AddLoginWhiteListRequestInfo:
 
         The model defined in huaweicloud sdk
 
-        :param private_ip: 服务器私有IP
+        :param private_ip: **参数解释**： 服务器私有IP **取值范围**： 字符长度1-128位 
         :type private_ip: str
-        :param login_ip: 登录源IP
+        :param login_ip: **参数解释**： 登录源IP **取值范围**： 字符长度1-256位 
         :type login_ip: str
-        :param login_user_name: 登录用户名
+        :param login_user_name: **参数解释**： 登录用户名 **取值范围**： 字符长度1-256位 
         :type login_user_name: str
         :param remarks: 备注
         :type remarks: str
@@ -70,7 +70,7 @@ class AddLoginWhiteListRequestInfo:
     def private_ip(self):
         r"""Gets the private_ip of this AddLoginWhiteListRequestInfo.
 
-        服务器私有IP
+        **参数解释**： 服务器私有IP **取值范围**： 字符长度1-128位 
 
         :return: The private_ip of this AddLoginWhiteListRequestInfo.
         :rtype: str
@@ -81,7 +81,7 @@ class AddLoginWhiteListRequestInfo:
     def private_ip(self, private_ip):
         r"""Sets the private_ip of this AddLoginWhiteListRequestInfo.
 
-        服务器私有IP
+        **参数解释**： 服务器私有IP **取值范围**： 字符长度1-128位 
 
         :param private_ip: The private_ip of this AddLoginWhiteListRequestInfo.
         :type private_ip: str
@@ -92,7 +92,7 @@ class AddLoginWhiteListRequestInfo:
     def login_ip(self):
         r"""Gets the login_ip of this AddLoginWhiteListRequestInfo.
 
-        登录源IP
+        **参数解释**： 登录源IP **取值范围**： 字符长度1-256位 
 
         :return: The login_ip of this AddLoginWhiteListRequestInfo.
         :rtype: str
@@ -103,7 +103,7 @@ class AddLoginWhiteListRequestInfo:
     def login_ip(self, login_ip):
         r"""Sets the login_ip of this AddLoginWhiteListRequestInfo.
 
-        登录源IP
+        **参数解释**： 登录源IP **取值范围**： 字符长度1-256位 
 
         :param login_ip: The login_ip of this AddLoginWhiteListRequestInfo.
         :type login_ip: str
@@ -114,7 +114,7 @@ class AddLoginWhiteListRequestInfo:
     def login_user_name(self):
         r"""Gets the login_user_name of this AddLoginWhiteListRequestInfo.
 
-        登录用户名
+        **参数解释**： 登录用户名 **取值范围**： 字符长度1-256位 
 
         :return: The login_user_name of this AddLoginWhiteListRequestInfo.
         :rtype: str
@@ -125,7 +125,7 @@ class AddLoginWhiteListRequestInfo:
     def login_user_name(self, login_user_name):
         r"""Sets the login_user_name of this AddLoginWhiteListRequestInfo.
 
-        登录用户名
+        **参数解释**： 登录用户名 **取值范围**： 字符长度1-256位 
 
         :param login_user_name: The login_user_name of this AddLoginWhiteListRequestInfo.
         :type login_user_name: str

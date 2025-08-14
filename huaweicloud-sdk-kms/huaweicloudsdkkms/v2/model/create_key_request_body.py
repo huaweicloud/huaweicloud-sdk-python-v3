@@ -24,7 +24,8 @@ class CreateKeyRequestBody:
         'origin': 'str',
         'enterprise_project_id': 'str',
         'sequence': 'str',
-        'keystore_id': 'str'
+        'keystore_id': 'str',
+        'vm_id': 'str'
     }
 
     attribute_map = {
@@ -35,10 +36,11 @@ class CreateKeyRequestBody:
         'origin': 'origin',
         'enterprise_project_id': 'enterprise_project_id',
         'sequence': 'sequence',
-        'keystore_id': 'keystore_id'
+        'keystore_id': 'keystore_id',
+        'vm_id': 'vm_id'
     }
 
-    def __init__(self, key_alias=None, key_spec=None, key_usage=None, key_description=None, origin=None, enterprise_project_id=None, sequence=None, keystore_id=None):
+    def __init__(self, key_alias=None, key_spec=None, key_usage=None, key_description=None, origin=None, enterprise_project_id=None, sequence=None, keystore_id=None, vm_id=None):
         r"""CreateKeyRequestBody
 
         The model defined in huaweicloud sdk
@@ -57,8 +59,10 @@ class CreateKeyRequestBody:
         :type enterprise_project_id: str
         :param sequence: 请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
         :type sequence: str
-        :param keystore_id: 密钥库ID，默认使用KMS默认密钥库
+        :param keystore_id: 密钥库ID，默认为0，使用KMS默认密钥库；设置为1，则指定管理面CDMS集群；设置为2，则指定租户面共享CDMS集群；若需指定其他CDMS集群，需先执行创建密钥库操作
         :type keystore_id: str
+        :param vm_id: 虚机ID，密钥创建的虚机，仅四级密评场景生效
+        :type vm_id: str
         """
         
         
@@ -71,6 +75,7 @@ class CreateKeyRequestBody:
         self._enterprise_project_id = None
         self._sequence = None
         self._keystore_id = None
+        self._vm_id = None
         self.discriminator = None
 
         self.key_alias = key_alias
@@ -88,6 +93,8 @@ class CreateKeyRequestBody:
             self.sequence = sequence
         if keystore_id is not None:
             self.keystore_id = keystore_id
+        if vm_id is not None:
+            self.vm_id = vm_id
 
     @property
     def key_alias(self):
@@ -247,7 +254,7 @@ class CreateKeyRequestBody:
     def keystore_id(self):
         r"""Gets the keystore_id of this CreateKeyRequestBody.
 
-        密钥库ID，默认使用KMS默认密钥库
+        密钥库ID，默认为0，使用KMS默认密钥库；设置为1，则指定管理面CDMS集群；设置为2，则指定租户面共享CDMS集群；若需指定其他CDMS集群，需先执行创建密钥库操作
 
         :return: The keystore_id of this CreateKeyRequestBody.
         :rtype: str
@@ -258,12 +265,34 @@ class CreateKeyRequestBody:
     def keystore_id(self, keystore_id):
         r"""Sets the keystore_id of this CreateKeyRequestBody.
 
-        密钥库ID，默认使用KMS默认密钥库
+        密钥库ID，默认为0，使用KMS默认密钥库；设置为1，则指定管理面CDMS集群；设置为2，则指定租户面共享CDMS集群；若需指定其他CDMS集群，需先执行创建密钥库操作
 
         :param keystore_id: The keystore_id of this CreateKeyRequestBody.
         :type keystore_id: str
         """
         self._keystore_id = keystore_id
+
+    @property
+    def vm_id(self):
+        r"""Gets the vm_id of this CreateKeyRequestBody.
+
+        虚机ID，密钥创建的虚机，仅四级密评场景生效
+
+        :return: The vm_id of this CreateKeyRequestBody.
+        :rtype: str
+        """
+        return self._vm_id
+
+    @vm_id.setter
+    def vm_id(self, vm_id):
+        r"""Sets the vm_id of this CreateKeyRequestBody.
+
+        虚机ID，密钥创建的虚机，仅四级密评场景生效
+
+        :param vm_id: The vm_id of this CreateKeyRequestBody.
+        :type vm_id: str
+        """
+        self._vm_id = vm_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -1,3 +1,650 @@
+# 3.1.162 2025-08-14
+
+### HuaweiCloud SDK BMS
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListBareMetalServers**
+    - 响应参数变更
+      - `+ servers.metadata.EcmResStatus`
+  - **ListBareMetalServerDetails**
+    - 响应参数变更
+      - `+ server.metadata.EcmResStatus`
+
+### HuaweiCloud SDK CC
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListSupportBindingConnectionBandwidths**
+    - 请求参数变更
+      - `* binding_service: optional -> required`
+
+### HuaweiCloud SDK CDN
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowDomainFullConfig**
+    - 响应参数变更
+      - `+ configs.compress.compress_min_length`
+      - `+ configs.compress.compress_max_length`
+  - **UpdateDomainFullConfig**
+    - 请求参数变更
+      - `+ configs.compress.compress_min_length`
+      - `+ configs.compress.compress_max_length`
+
+### HuaweiCloud SDK CES
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListEvents**
+    - 请求参数变更
+      - `+ sub_event_type`
+    - 响应参数变更
+      - `+ events.sub_event_type`
+  - **CreateEvents**
+    - 请求参数变更
+      - `+ detail.sub_event_type`
+  - **ListEventDetail**
+    - 请求参数变更
+      - `+ sub_event_type`
+    - 响应参数变更
+      - `+ sub_event_type`
+
+### HuaweiCloud SDK CES
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListAlarmRules**
+    - 响应参数变更
+      - `+ alarms.tags`
+
+### HuaweiCloud SDK CloudDC
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListIDcs**
+    - 响应参数变更
+      - `+ idcs.description`
+      - `- idcs.deccription`
+  - **CreateInstance**
+    - 请求参数变更
+      - `* metadata: list<Metadata> -> map<string, string>`
+
+### HuaweiCloud SDK COC
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持接口`ListAssessTask`、`CreateAssessTask`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK CodeArtsBuild
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowProjectPermission**
+    - 响应参数变更
+      - `+ result.delete_permission`
+      - `+ result.view_permission`
+      - `+ result.execute_permission`
+      - `+ result.copy_permission`
+      - `+ result.forbidden_permission`
+      - `+ result.manager_permission`
+      - `+ result.role_ids`
+      - `+ result.role_names`
+  - **UpdateNotice**
+    - 请求参数变更
+      - `+ send_switch`
+      - `+ use_project_notice`
+  - **ListRecommendOfficialTemplate**
+    - 响应参数变更
+      - `+ result.items.template.actions`
+      - `+ result.items.template.auto_update_sub_module`
+      - `+ result.items.template.image`
+      - `+ result.items.template.image_source`
+      - `* result.items.template: object<QueryTemplate> -> object<QueryTemplateVo>`
+  - **ListCustomTemplate**
+    - 响应参数变更
+      - `+ result.items.template.actions`
+      - `+ result.items.template.auto_update_sub_module`
+      - `+ result.items.template.image`
+      - `+ result.items.template.image_source`
+      - `* result.items.template: object<QueryTemplate> -> object<QueryTemplateVo>`
+  - **ListTemplates**
+    - 响应参数变更
+      - `+ result.items.template.actions`
+      - `+ result.items.template.auto_update_sub_module`
+      - `+ result.items.template.image`
+      - `+ result.items.template.image_source`
+      - `* result.items.template: object<QueryTemplate> -> object<QueryTemplateVo>`
+
+### HuaweiCloud SDK Config
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持接口`ListAllProviders`、`CollectPolicyAssignmentsStatesSummary`、`CollectPolicyStatesSummary`、`CollectResourcesPolicyStatesSummary`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK CPTS
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **DebugCase**
+    - 请求参数变更
+      - `+ type`
+  - **ShowMergeReportLogsOutline**
+    - 响应参数变更
+      - `* result.outline.network_traffic.min_network_traffic: int32 -> double`
+  - **ShowMergeCaseDetail**
+    - 响应参数变更
+      - `* result.detail.customTransactions.avgRecBytes: int32 -> double`
+      - `* result.detail.customTransactions.avgSentBytes: int32 -> double`
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持接口`ListSecuritySensitiveDataDetails`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DLI
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpdateElasticResourcePoolQueue**
+    - 请求参数变更
+      - `+ queue_scaling_policies.inherit_elastic_resource_pool_max_cu`
+  - **ListElasticResourcePoolQueues**
+    - 响应参数变更
+      - `+ queues.queue_scaling_policies.inherit_elastic_resource_pool_max_cu`
+
+### HuaweiCloud SDK HSS
+
+- _接口版本_
+  - V5
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除接口`BatchUploadFiles`
+  - **ListProtectionServer**
+    - 响应参数变更
+      - `+ data_list.ransom_protection_fail_reason`
+      - `+ data_list.failed_decoy_dir`
+  - **ListRansomwareProtectionNodes**
+    - 响应参数变更
+      - `+ data_list.ransom_protection_fail_reason`
+      - `+ data_list.failed_decoy_dir`
+
+### HuaweiCloud SDK IdentityCenter
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持以下接口：
+    - `DescribeRegisteredRegions`
+    - `RegisterRegion`
+    - `GetIdentityCenterServiceStatus`
+    - `StartIdentityCenter`
+    - `DeleteIdentityCenter`
+    - `ListIdentityStoreAssociation`
+    - `GetSsoConfiguration`
+    - `UpdateSsoConfiguration`
+    - `GetMfaDeviceManagementForIdentityStore`
+    - `PutMfaDeviceManagementForIdentityStore`
+    - `CreateAlias`
+    - `DisassociateProfile`
+    - `GetPermissionSetSummary`
+    - `GetHaConfiguration`
+    - `UpdateHaConfiguration`
+    - `ListAccountAssignmentsForPrincipal`
+    - `ListApplicationInstances`
+    - `CreateApplicationInstance`
+    - `ListCatalogApplications`
+    - `ListApplicationProviders`
+    - `ListApplicationTemplates`
+    - `ListApplicationAssignments`
+    - `CreateApplicationAssignment`
+    - `DeleteApplicationAssignment`
+    - `GetApplicationAssignmentConfiguration`
+    - `UpdateApplicationInstanceDisplayData`
+    - `ImportApplicationInstanceServiceProviderMetadata`
+    - `UpdateApplicationInstanceResponseConfiguration`
+    - `UpdateApplicationInstanceResponseSchemaConfiguration`
+    - `UpdateApplicationInstanceServiceProviderConfiguration`
+    - `UpdateApplicationInstanceStatus`
+    - `UpdateApplicationInstanceActiveCertificate`
+    - `DeleteApplicationInstanceCertificate`
+    - `UpdateApplicationInstanceSecurityConfiguration`
+    - `DescribeApplication`
+    - `ListApplications`
+    - `ListApplicationInstanceCertificates`
+    - `CreateApplicationInstanceCertificate`
+    - `GetApplicationInstance`
+    - `DeleteApplicationInstance`
+    - `DescribeApplicationProvider`
+    - `ListProfiles`
+    - `DeleteProfile`
+    - `ListApplicationAssignmentsForPrincipal`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK IdentityCenterStore
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持以下接口：
+    - `DescribeUsers`
+    - `DescribeGroups`
+    - `ResetPwdMode`
+    - `EnableUser`
+    - `DisableUser`
+    - `VerifyEmail`
+    - `RegisterMfaDeviceForUser`
+    - `BatchListMfaDevicesForUser`
+    - `UpdateMfaDeviceForUser`
+    - `DeleteMfaDeviceForUser`
+    - `ListExternalIdPConfigurationsForDirectory`
+    - `CreateExternalIdPConfigurationForDirectory`
+    - `EnableExternalIdPConfigurationForDirectory`
+    - `DisableExternalIdPConfigurationForDirectory`
+    - `GetSpConfigurationForDirectory`
+    - `UpdateExternalIdPConfigurationForDirectory`
+    - `DeleteExternalIdPConfigurationForDirectory`
+    - `ListExternalIdPCertificates`
+    - `ImportExternalIdPCertificate`
+    - `DeleteExternalIdPCertificate`
+    - `ListProvisioningTenants`
+    - `CreateProvisioningTenant`
+    - `DeleteProvisioningTenant`
+    - `ListBearerTokens`
+    - `CreateBearerToken`
+    - `DeleteBearerToken`
+    - `ListSessions`
+    - `BatchDeleteSessions`
+    - `GetIdentityStoreSummary`
+    - `DescribePasswordPolicy`
+    - `UpdatePasswordPolicy`
+    - `ListSpCertificates`
+    - `CreateSpCertificate`
+    - `DeleteSpCertificate`
+    - `UpdateSpActiveCertificate`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK IoTDA
+
+- _接口版本_
+  - V5
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpdateCertificate**
+    - 请求参数变更
+      - `+ ocsp_enable`
+      - `+ ocsp_ssl_enable`
+      - `+ ocsp_server_ca_id`
+    - 响应参数变更
+      - `+ ocsp_enable`
+      - `+ ocsp_server_ca_id`
+      - `+ ocsp_ssl_enable`
+  - **AddCertificate**
+    - 响应参数变更
+      - `+ ocsp_enable`
+      - `+ ocsp_server_ca_id`
+      - `+ ocsp_ssl_enable`
+  - **ListCertificates**
+    - 响应参数变更
+      - `+ ocsp_enable`
+      - `+ ocsp_server_ca_id`
+      - `+ ocsp_ssl_enable`
+      - `+ certificates.ocsp_enable`
+      - `+ certificates.ocsp_server_ca_id`
+      - `+ certificates.ocsp_ssl_enable`
+
+### HuaweiCloud SDK KMS
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 支持接口`CreatePin`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateDatakey**
+    - 请求参数变更
+      - `+ pin`
+      - `+ pin_type`
+      - `+ key_spec: enum value [SM4,HMAC_256,HMAC_384,HMAC_512,HMAC_SM3]`
+  - **CreateDatakeyWithoutPlaintext**
+    - 请求参数变更
+      - `+ pin`
+      - `+ pin_type`
+      - `+ key_spec: enum value [SM4,HMAC_256,HMAC_384,HMAC_512,HMAC_SM3]`
+  - **CreateEcDatakeyPair**
+    - 请求参数变更
+      - `+ pin`
+      - `+ pin_type`
+  - **EncryptDatakey**
+    - 请求参数变更
+      - `+ pin`
+      - `+ pin_type`
+      - `+ key_spec`
+  - **CreateKey**
+    - 请求参数变更
+      - `+ vm_id`
+    - 响应参数变更
+      - `+ key_info.region_id`
+  - **ListKeyStores**
+    - 响应参数变更
+      - `+ keystores.cluster_id`
+  - **CreateKeyStore**
+    - 请求参数变更
+      - `+ cluster_id`
+      - `+ keystore_type`
+  - **ShowKeyStore**
+    - 响应参数变更
+      - `+ keystore.cluster_id`
+
+### HuaweiCloud SDK MetaStudio
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持以下接口：
+    - `DownloadTemplate`
+    - `DownloadResultFile`
+    - `SearchTask`
+    - `ShowTask`
+    - `DeleteTask`
+    - `ImportResource`
+    - `ExportResource`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListTtscVocabularyGroups**
+    - 请求参数变更
+      - `+ limit`
+      - `+ offset`
+      - `+ group_id`
+  - **ShowAsset**
+    - 响应参数变更
+      - `+ produce_id`
+  - **UpdateDigitalAsset**
+    - 响应参数变更
+      - `+ produce_id`
+  - **CreateDigitalAsset**
+    - 响应参数变更
+      - `+ produce_id`
+  - **ListAssets**
+    - 响应参数变更
+      - `+ produce_id`
+      - `+ assets.produce_id`
+
+### HuaweiCloud SDK SecMaster
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListWorkflows**
+    - 响应参数变更
+      - `+ data.current_rejected_version_id`
+      - `- data.current_rejected_versoin_id`
+
+### HuaweiCloud SDK SMS
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowServer**
+    - 响应参数变更
+      - `+ current_task.subtask_info`
+  - **ListTasks**
+    - 响应参数变更
+      - `+ tasks.subtask_info`
+  - **ShowTask**
+    - 响应参数变更
+      - `+ subtask_info`
+  - **ListServers**
+    - 响应参数变更
+      - `+ source_servers.current_task.subtask_info`
+
+### HuaweiCloud SDK VPN
+
+- _接口版本_
+  - V5
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListVpnConnections**
+    - 响应参数变更
+      - `- vpn_connections.policy_rules.rule_index`
+  - **CreateVpnConnection**
+    - 请求参数变更
+      - `- vpn_connection.policy_rules.rule_index`
+    - 响应参数变更
+      - `- vpn_connection.policy_rules.rule_index`
+  - **BatchCreateVpnConnection**
+    - 请求参数变更
+      - `- vpn_connections.policy_rules.rule_index`
+    - 响应参数变更
+      - `- vpn_connections.policy_rules.rule_index`
+  - **ShowVpnConnection**
+    - 响应参数变更
+      - `- vpn_connection.policy_rules.rule_index`
+  - **UpdateVpnConnection**
+    - 请求参数变更
+      - `- vpn_connection.policy_rules.rule_index`
+    - 响应参数变更
+      - `- vpn_connection.policy_rules.rule_index`
+
+### HuaweiCloud SDK WorkspaceApp
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持以下接口：
+    - `UpdatePreBootPolicy`
+    - `ShowAppWarehouseBucket`
+    - `BindAppWarehouseBucket`
+    - `ListProjectConfigs`
+    - `ShowProjectConfig`
+    - `ListCloudStorage`
+    - `CreateCloudStorage`
+    - `DeleteCloudStorage`
+    - `BatchDeleteCloudStorage`
+    - `CreateUserFolderAssignment`
+    - `UpdateCloudUserFolderAssignment`
+    - `DeleteCloudStorageAttachment`
+    - `ListCloudStorageAssignment`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowAppDetail**
+    - 响应参数变更
+      - `+ app_extended_info`
+      - `+ is_pre_boot`
+  - **UpdateApp**
+    - 请求参数变更
+      - `+ app_extended_info`
+    - 响应参数变更
+      - `+ app_extended_info`
+      - `+ is_pre_boot`
+  - **UploadAppIcon**
+    - 响应参数变更
+      - `+ app_extended_info`
+      - `+ is_pre_boot`
+  - **UpdateWarehouseApp**
+    - 请求参数变更
+      - `+ app_extended_info`
+  - **ShowPublishableApp**
+    - 响应参数变更
+      - `+ app_extended_info`
+      - `+ is_pre_boot`
+      - `+ items.is_pre_boot`
+      - `+ items.app_extended_info`
+  - **ListPublishedApp**
+    - 响应参数变更
+      - `+ app_extended_info`
+      - `+ is_pre_boot`
+      - `+ items.is_pre_boot`
+      - `+ items.app_extended_info`
+  - **PublishApp**
+    - 请求参数变更
+      - `+ items.app_extended_info`
+    - 响应参数变更
+      - `+ app_extended_info`
+      - `+ is_pre_boot`
+      - `+ items.is_pre_boot`
+      - `+ items.app_extended_info`
+  - **ListAppGroupAuthorization**
+    - 请求参数变更
+      - `+ account_id`
+  - **CreateWarehouseApp**
+    - 请求参数变更
+      - `+ app_extended_info`
+    - 响应参数变更
+      - `+ app_extended_info`
+  - **ListWarehouseApps**
+    - 响应参数变更
+      - `+ app_extended_info`
+      - `+ items.app_extended_info`
+  - **ShowServer**
+    - 响应参数变更
+      - `+ job_type: enum value [BATCH_INSTALL_APP]`
+      - `+ task_status: enum value [installing_app,install_app_failed]`
+  - **ListServers**
+    - 响应参数变更
+      - `+ items.job_type: enum value [BATCH_INSTALL_APP]`
+      - `+ items.task_status: enum value [installing_app,install_app_failed]`
+  - **ShowJobDetail**
+    - 响应参数变更
+      - `+ job_type: enum value [BATCH_INSTALL_APP]`
+  - **ShowOriginalPolicyInfo**
+    - 响应参数变更
+      - `+ policies.cloud_storage`
+      - `+ policies.user_profile`
+      - `+ policies.custom.options.rail_transparent_config`
+  - **ListPolicyOfPolicyGroup**
+    - 响应参数变更
+      - `+ policies.cloud_storage`
+      - `+ policies.user_profile`
+      - `+ policies.custom.options.rail_transparent_config`
+  - **ListPolicyGroup**
+    - 响应参数变更
+      - `+ items.policies.cloud_storage`
+      - `+ items.policies.user_profile`
+      - `+ items.policies.custom.options.rail_transparent_config`
+  - **CreatePolicyGroup**
+    - 请求参数变更
+      - `+ policy_group.policies.cloud_storage`
+      - `+ policy_group.policies.user_profile`
+      - `+ policy_group.policies.custom.options.rail_transparent_config`
+  - **ShowPolicyGroup**
+    - 响应参数变更
+      - `+ policy_group.policies.cloud_storage`
+      - `+ policy_group.policies.user_profile`
+      - `+ policy_group.policies.custom.options.rail_transparent_config`
+  - **UpdatePolicyGroup**
+    - 请求参数变更
+      - `+ policy_group.policies.cloud_storage`
+      - `+ policy_group.policies.user_profile`
+      - `+ policy_group.policies.custom.options.rail_transparent_config`
+  - **ListPolicyGroupDetailInfo**
+    - 响应参数变更
+      - `+ items.policies.cloud_storage`
+      - `+ items.policies.user_profile`
+      - `+ items.policies.custom.options.rail_transparent_config`
+  - **ListPolicyTemplate**
+    - 响应参数变更
+      - `+ items.policies.cloud_storage`
+      - `+ items.policies.user_profile`
+      - `+ items.policies.custom.options.rail_transparent_config`
+  - **CreatePolicyTemplate**
+    - 请求参数变更
+      - `+ policy_group.policies.cloud_storage`
+      - `+ policy_group.policies.user_profile`
+      - `+ policy_group.policies.custom.options.rail_transparent_config`
+  - **UpdatePolicyTemplate**
+    - 请求参数变更
+      - `+ policy_group.policies.cloud_storage`
+      - `+ policy_group.policies.user_profile`
+      - `+ policy_group.policies.custom.options.rail_transparent_config`
+
 # 3.1.161 2025-08-07
 
 ### HuaweiCloud SDK AOM

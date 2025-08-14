@@ -29,7 +29,7 @@ class ContainerExtraLinuxInfo:
 
         The model defined in huaweicloud sdk
 
-        :param os: 操作系统: - ubt : ubuntu - centos : centos - debian, - redhat, - opensuse, - kylin - uos - euleros
+        :param os: 操作系统: - ubt : ubuntu - centos : centos - debian - redhat - opensuse - kylin - uos - euleros
         :type os: str
         """
         
@@ -45,7 +45,7 @@ class ContainerExtraLinuxInfo:
     def os(self):
         r"""Gets the os of this ContainerExtraLinuxInfo.
 
-        操作系统: - ubt : ubuntu - centos : centos - debian, - redhat, - opensuse, - kylin - uos - euleros
+        操作系统: - ubt : ubuntu - centos : centos - debian - redhat - opensuse - kylin - uos - euleros
 
         :return: The os of this ContainerExtraLinuxInfo.
         :rtype: str
@@ -56,7 +56,7 @@ class ContainerExtraLinuxInfo:
     def os(self, os):
         r"""Sets the os of this ContainerExtraLinuxInfo.
 
-        操作系统: - ubt : ubuntu - centos : centos - debian, - redhat, - opensuse, - kylin - uos - euleros
+        操作系统: - ubt : ubuntu - centos : centos - debian - redhat - opensuse - kylin - uos - euleros
 
         :param os: The os of this ContainerExtraLinuxInfo.
         :type os: str

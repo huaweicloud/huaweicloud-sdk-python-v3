@@ -53,7 +53,7 @@ class UpdateProtectionPolicyInfoRequestInfo:
 
         The model defined in huaweicloud sdk
 
-        :param policy_id: **参数解释**: 策略ID **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
+        :param policy_id: **参数解释**: 需要修改的防护策略ID，您可以通过[查询勒索病毒的防护策略列表](ListProtectionPolicy.xml)接口获取ID。 **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
         :type policy_id: str
         :param policy_name: **参数解释**: 策略名称 **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
         :type policy_name: str
@@ -61,23 +61,23 @@ class UpdateProtectionPolicyInfoRequestInfo:
         :type protection_mode: str
         :param bait_protection_status: **参数解释**: 是否开启诱饵防护 **约束限制**: 不涉及 **取值范围**:   - opened ：开启。 **默认取值**: 不涉及 
         :type bait_protection_status: str
-        :param deploy_mode: **参数解释**: 是否开启动态诱饵，包含如下2种, 默认为关闭防护动态诱饵防护。 **约束限制**: 不涉及 **取值范围**: 包含两种：   - opened ：开启。   - closed ：关闭。   **默认取值**: closed 
+        :param deploy_mode: **参数解释**: 是否开启动态诱饵 **约束限制**: 不涉及 **取值范围**: 包含两种：   - opened ：开启。   - closed ：关闭。   **默认取值**: closed 
         :type deploy_mode: str
-        :param protection_directory: **参数解释**: 防护目录,多个目录请用英文分号隔开，最多支持填写20个防护目录 **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
+        :param protection_directory: **参数解释**: 防护目录 **约束限制**: 多个目录请用英文分号隔开，最多支持填写20个防护目录 **取值范围**: 字符长度0-128位，特殊符号只允许使用._-+，不能以空格开头，防护目录长度不得超过256个字符。 **默认取值**: 不涉及 
         :type protection_directory: str
-        :param protection_type: **参数解释**: 防护文件类型，例如：docx，txt，avi **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及         
+        :param protection_type: **参数解释**: 防护文件类型，例如：docx，txt，avi **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
         :type protection_type: str
-        :param exclude_directory: **参数解释**: 排除目录(选填)，多个目录请用英文分号隔开，最多支持填写20个排除目录 **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及    
+        :param exclude_directory: **参数解释**: 排除目录(选填) **约束限制**: 多个目录请用英文分号隔开，最多支持填写20个排除目录 **取值范围**: 字符长度0-128位，特殊符号只允许使用._-+，不能以空格开头，防护目录长度不得超过256个字符。 **默认取值**: 不涉及 
         :type exclude_directory: str
-        :param agent_id_list: **参数解释**: 开启了此勒索防护策略的agent的id列表 **约束限制**: 不涉及 **取值范围**: 列表最大1000条，字符长度0-128位 **默认取值**: 不涉及  
+        :param agent_id_list: **参数解释**: 开启了此勒索防护策略的agent的id列表 **约束限制**: 不涉及 **取值范围**: 列表最大1000条 **默认取值**: 不涉及 
         :type agent_id_list: list[str]
         :param operating_system: **参数解释**: 支持该策略的操作系统 **约束限制**: 不涉及 **取值范围**: 包含两种：   - Windows : Windows系统   - Linux : Linux系统 **默认取值**: 不涉及
         :type operating_system: str
-        :param runtime_detection_status: **参数解释**: 是否运行时检测，包含如下2种，暂时只有关闭一种状态，为保留字段。   - opened ：开启。   - closed ：关闭。 **约束限制**: 不涉及 **取值范围**: 包含两种： 不涉及 **默认取值**: 不涉及
+        :param runtime_detection_status: **参数解释**: 是否运行时检测 **约束限制**: 不涉及 **取值范围**: 包含如下2种，暂时只有关闭一种状态，为保留字段。   - opened ：开启。   - closed ：关闭。 **默认取值**: 不涉及
         :type runtime_detection_status: str
         :param process_whitelist: 进程白名单
         :type process_whitelist: list[:class:`huaweicloudsdkhss.v5.TrustProcessInfo`]
-        :param ai_protection_status: **参数解释**: 是否开启AI勒索防护，包含如下2种, 默认为关闭AI勒索防护。当前只有Windows系统涉及 **约束限制**: 不涉及 **取值范围**: 包含两种：   - opened ：开启。   - closed ：关闭。 **默认取值**: closed
+        :param ai_protection_status: **参数解释**: 是否开启AI勒索防护，包含如下2种。 **约束限制**: 当前只有Windows系统涉及 **取值范围**: 包含两种：   - opened ：开启。   - closed ：关闭。 **默认取值**: closed
         :type ai_protection_status: str
         """
         
@@ -123,7 +123,7 @@ class UpdateProtectionPolicyInfoRequestInfo:
     def policy_id(self):
         r"""Gets the policy_id of this UpdateProtectionPolicyInfoRequestInfo.
 
-        **参数解释**: 策略ID **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
+        **参数解释**: 需要修改的防护策略ID，您可以通过[查询勒索病毒的防护策略列表](ListProtectionPolicy.xml)接口获取ID。 **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
 
         :return: The policy_id of this UpdateProtectionPolicyInfoRequestInfo.
         :rtype: str
@@ -134,7 +134,7 @@ class UpdateProtectionPolicyInfoRequestInfo:
     def policy_id(self, policy_id):
         r"""Sets the policy_id of this UpdateProtectionPolicyInfoRequestInfo.
 
-        **参数解释**: 策略ID **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
+        **参数解释**: 需要修改的防护策略ID，您可以通过[查询勒索病毒的防护策略列表](ListProtectionPolicy.xml)接口获取ID。 **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
 
         :param policy_id: The policy_id of this UpdateProtectionPolicyInfoRequestInfo.
         :type policy_id: str
@@ -211,7 +211,7 @@ class UpdateProtectionPolicyInfoRequestInfo:
     def deploy_mode(self):
         r"""Gets the deploy_mode of this UpdateProtectionPolicyInfoRequestInfo.
 
-        **参数解释**: 是否开启动态诱饵，包含如下2种, 默认为关闭防护动态诱饵防护。 **约束限制**: 不涉及 **取值范围**: 包含两种：   - opened ：开启。   - closed ：关闭。   **默认取值**: closed 
+        **参数解释**: 是否开启动态诱饵 **约束限制**: 不涉及 **取值范围**: 包含两种：   - opened ：开启。   - closed ：关闭。   **默认取值**: closed 
 
         :return: The deploy_mode of this UpdateProtectionPolicyInfoRequestInfo.
         :rtype: str
@@ -222,7 +222,7 @@ class UpdateProtectionPolicyInfoRequestInfo:
     def deploy_mode(self, deploy_mode):
         r"""Sets the deploy_mode of this UpdateProtectionPolicyInfoRequestInfo.
 
-        **参数解释**: 是否开启动态诱饵，包含如下2种, 默认为关闭防护动态诱饵防护。 **约束限制**: 不涉及 **取值范围**: 包含两种：   - opened ：开启。   - closed ：关闭。   **默认取值**: closed 
+        **参数解释**: 是否开启动态诱饵 **约束限制**: 不涉及 **取值范围**: 包含两种：   - opened ：开启。   - closed ：关闭。   **默认取值**: closed 
 
         :param deploy_mode: The deploy_mode of this UpdateProtectionPolicyInfoRequestInfo.
         :type deploy_mode: str
@@ -233,7 +233,7 @@ class UpdateProtectionPolicyInfoRequestInfo:
     def protection_directory(self):
         r"""Gets the protection_directory of this UpdateProtectionPolicyInfoRequestInfo.
 
-        **参数解释**: 防护目录,多个目录请用英文分号隔开，最多支持填写20个防护目录 **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
+        **参数解释**: 防护目录 **约束限制**: 多个目录请用英文分号隔开，最多支持填写20个防护目录 **取值范围**: 字符长度0-128位，特殊符号只允许使用._-+，不能以空格开头，防护目录长度不得超过256个字符。 **默认取值**: 不涉及 
 
         :return: The protection_directory of this UpdateProtectionPolicyInfoRequestInfo.
         :rtype: str
@@ -244,7 +244,7 @@ class UpdateProtectionPolicyInfoRequestInfo:
     def protection_directory(self, protection_directory):
         r"""Sets the protection_directory of this UpdateProtectionPolicyInfoRequestInfo.
 
-        **参数解释**: 防护目录,多个目录请用英文分号隔开，最多支持填写20个防护目录 **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
+        **参数解释**: 防护目录 **约束限制**: 多个目录请用英文分号隔开，最多支持填写20个防护目录 **取值范围**: 字符长度0-128位，特殊符号只允许使用._-+，不能以空格开头，防护目录长度不得超过256个字符。 **默认取值**: 不涉及 
 
         :param protection_directory: The protection_directory of this UpdateProtectionPolicyInfoRequestInfo.
         :type protection_directory: str
@@ -255,7 +255,7 @@ class UpdateProtectionPolicyInfoRequestInfo:
     def protection_type(self):
         r"""Gets the protection_type of this UpdateProtectionPolicyInfoRequestInfo.
 
-        **参数解释**: 防护文件类型，例如：docx，txt，avi **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及         
+        **参数解释**: 防护文件类型，例如：docx，txt，avi **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
 
         :return: The protection_type of this UpdateProtectionPolicyInfoRequestInfo.
         :rtype: str
@@ -266,7 +266,7 @@ class UpdateProtectionPolicyInfoRequestInfo:
     def protection_type(self, protection_type):
         r"""Sets the protection_type of this UpdateProtectionPolicyInfoRequestInfo.
 
-        **参数解释**: 防护文件类型，例如：docx，txt，avi **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及         
+        **参数解释**: 防护文件类型，例如：docx，txt，avi **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
 
         :param protection_type: The protection_type of this UpdateProtectionPolicyInfoRequestInfo.
         :type protection_type: str
@@ -277,7 +277,7 @@ class UpdateProtectionPolicyInfoRequestInfo:
     def exclude_directory(self):
         r"""Gets the exclude_directory of this UpdateProtectionPolicyInfoRequestInfo.
 
-        **参数解释**: 排除目录(选填)，多个目录请用英文分号隔开，最多支持填写20个排除目录 **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及    
+        **参数解释**: 排除目录(选填) **约束限制**: 多个目录请用英文分号隔开，最多支持填写20个排除目录 **取值范围**: 字符长度0-128位，特殊符号只允许使用._-+，不能以空格开头，防护目录长度不得超过256个字符。 **默认取值**: 不涉及 
 
         :return: The exclude_directory of this UpdateProtectionPolicyInfoRequestInfo.
         :rtype: str
@@ -288,7 +288,7 @@ class UpdateProtectionPolicyInfoRequestInfo:
     def exclude_directory(self, exclude_directory):
         r"""Sets the exclude_directory of this UpdateProtectionPolicyInfoRequestInfo.
 
-        **参数解释**: 排除目录(选填)，多个目录请用英文分号隔开，最多支持填写20个排除目录 **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及    
+        **参数解释**: 排除目录(选填) **约束限制**: 多个目录请用英文分号隔开，最多支持填写20个排除目录 **取值范围**: 字符长度0-128位，特殊符号只允许使用._-+，不能以空格开头，防护目录长度不得超过256个字符。 **默认取值**: 不涉及 
 
         :param exclude_directory: The exclude_directory of this UpdateProtectionPolicyInfoRequestInfo.
         :type exclude_directory: str
@@ -299,7 +299,7 @@ class UpdateProtectionPolicyInfoRequestInfo:
     def agent_id_list(self):
         r"""Gets the agent_id_list of this UpdateProtectionPolicyInfoRequestInfo.
 
-        **参数解释**: 开启了此勒索防护策略的agent的id列表 **约束限制**: 不涉及 **取值范围**: 列表最大1000条，字符长度0-128位 **默认取值**: 不涉及  
+        **参数解释**: 开启了此勒索防护策略的agent的id列表 **约束限制**: 不涉及 **取值范围**: 列表最大1000条 **默认取值**: 不涉及 
 
         :return: The agent_id_list of this UpdateProtectionPolicyInfoRequestInfo.
         :rtype: list[str]
@@ -310,7 +310,7 @@ class UpdateProtectionPolicyInfoRequestInfo:
     def agent_id_list(self, agent_id_list):
         r"""Sets the agent_id_list of this UpdateProtectionPolicyInfoRequestInfo.
 
-        **参数解释**: 开启了此勒索防护策略的agent的id列表 **约束限制**: 不涉及 **取值范围**: 列表最大1000条，字符长度0-128位 **默认取值**: 不涉及  
+        **参数解释**: 开启了此勒索防护策略的agent的id列表 **约束限制**: 不涉及 **取值范围**: 列表最大1000条 **默认取值**: 不涉及 
 
         :param agent_id_list: The agent_id_list of this UpdateProtectionPolicyInfoRequestInfo.
         :type agent_id_list: list[str]
@@ -343,7 +343,7 @@ class UpdateProtectionPolicyInfoRequestInfo:
     def runtime_detection_status(self):
         r"""Gets the runtime_detection_status of this UpdateProtectionPolicyInfoRequestInfo.
 
-        **参数解释**: 是否运行时检测，包含如下2种，暂时只有关闭一种状态，为保留字段。   - opened ：开启。   - closed ：关闭。 **约束限制**: 不涉及 **取值范围**: 包含两种： 不涉及 **默认取值**: 不涉及
+        **参数解释**: 是否运行时检测 **约束限制**: 不涉及 **取值范围**: 包含如下2种，暂时只有关闭一种状态，为保留字段。   - opened ：开启。   - closed ：关闭。 **默认取值**: 不涉及
 
         :return: The runtime_detection_status of this UpdateProtectionPolicyInfoRequestInfo.
         :rtype: str
@@ -354,7 +354,7 @@ class UpdateProtectionPolicyInfoRequestInfo:
     def runtime_detection_status(self, runtime_detection_status):
         r"""Sets the runtime_detection_status of this UpdateProtectionPolicyInfoRequestInfo.
 
-        **参数解释**: 是否运行时检测，包含如下2种，暂时只有关闭一种状态，为保留字段。   - opened ：开启。   - closed ：关闭。 **约束限制**: 不涉及 **取值范围**: 包含两种： 不涉及 **默认取值**: 不涉及
+        **参数解释**: 是否运行时检测 **约束限制**: 不涉及 **取值范围**: 包含如下2种，暂时只有关闭一种状态，为保留字段。   - opened ：开启。   - closed ：关闭。 **默认取值**: 不涉及
 
         :param runtime_detection_status: The runtime_detection_status of this UpdateProtectionPolicyInfoRequestInfo.
         :type runtime_detection_status: str
@@ -387,7 +387,7 @@ class UpdateProtectionPolicyInfoRequestInfo:
     def ai_protection_status(self):
         r"""Gets the ai_protection_status of this UpdateProtectionPolicyInfoRequestInfo.
 
-        **参数解释**: 是否开启AI勒索防护，包含如下2种, 默认为关闭AI勒索防护。当前只有Windows系统涉及 **约束限制**: 不涉及 **取值范围**: 包含两种：   - opened ：开启。   - closed ：关闭。 **默认取值**: closed
+        **参数解释**: 是否开启AI勒索防护，包含如下2种。 **约束限制**: 当前只有Windows系统涉及 **取值范围**: 包含两种：   - opened ：开启。   - closed ：关闭。 **默认取值**: closed
 
         :return: The ai_protection_status of this UpdateProtectionPolicyInfoRequestInfo.
         :rtype: str
@@ -398,7 +398,7 @@ class UpdateProtectionPolicyInfoRequestInfo:
     def ai_protection_status(self, ai_protection_status):
         r"""Sets the ai_protection_status of this UpdateProtectionPolicyInfoRequestInfo.
 
-        **参数解释**: 是否开启AI勒索防护，包含如下2种, 默认为关闭AI勒索防护。当前只有Windows系统涉及 **约束限制**: 不涉及 **取值范围**: 包含两种：   - opened ：开启。   - closed ：关闭。 **默认取值**: closed
+        **参数解释**: 是否开启AI勒索防护，包含如下2种。 **约束限制**: 当前只有Windows系统涉及 **取值范围**: 包含两种：   - opened ：开启。   - closed ：关闭。 **默认取值**: closed
 
         :param ai_protection_status: The ai_protection_status of this UpdateProtectionPolicyInfoRequestInfo.
         :type ai_protection_status: str

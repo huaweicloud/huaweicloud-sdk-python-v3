@@ -21,7 +21,9 @@ class CreateDatakeyRequestBody:
         'key_spec': 'str',
         'datakey_length': 'str',
         'additional_authenticated_data': 'str',
-        'sequence': 'str'
+        'sequence': 'str',
+        'pin': 'str',
+        'pin_type': 'str'
     }
 
     attribute_map = {
@@ -29,17 +31,19 @@ class CreateDatakeyRequestBody:
         'key_spec': 'key_spec',
         'datakey_length': 'datakey_length',
         'additional_authenticated_data': 'additional_authenticated_data',
-        'sequence': 'sequence'
+        'sequence': 'sequence',
+        'pin': 'pin',
+        'pin_type': 'pin_type'
     }
 
-    def __init__(self, key_id=None, key_spec=None, datakey_length=None, additional_authenticated_data=None, sequence=None):
+    def __init__(self, key_id=None, key_spec=None, datakey_length=None, additional_authenticated_data=None, sequence=None, pin=None, pin_type=None):
         r"""CreateDatakeyRequestBody
 
         The model defined in huaweicloud sdk
 
         :param key_id: 密钥ID，36字节，满足正则匹配“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”。 例如：0d0466b0-e727-4d9c-b35d-f84bb474a37f。
         :type key_id: str
-        :param key_spec: 指定生成的密钥bit位长度。有效值：AES_256、AES_128。  - AES_256：表示256比特的对称密钥。  - AES_128：表示128比特的对称密钥。 说明：  datakey_length和key_spec二选一。   - 若datakey_length和key_spec都为空，默认生成256bit的密钥。   - 若datakey_length和key_spec都指定了值，仅datakey_length生效。
+        :param key_spec: 指定生成的密钥bit位长度。有效值：AES_256、AES_128、SM4、HMAC_256、HMAC_384、HMAC_512、HMAC_SM3。  - AES_256：表示256比特的对称密钥。  - AES_128：表示128比特的对称密钥。  - SM4：表示SM4密钥。  - HMAC_256：表示HMAC_256密钥。  - HMAC_384：表示HMAC_384密钥。  - HMAC_512：表示HMAC_512密钥。  - HMAC_SM3：表示HMAC_SM3密钥。     说明：  datakey_length和key_spec二选一。   - 若datakey_length和key_spec都为空，默认生成256bit的密钥。   - 若datakey_length和key_spec都指定了值，仅datakey_length生效。
         :type key_spec: str
         :param datakey_length: 密钥bit位长度。取值为8的倍数，取值范围为8~8192。 说明：  datakey_length和key_spec二选一。   - 若datakey_length和key_spec都为空，默认生成256bit的密钥。   - 若datakey_length和key_spec都指定了值，仅datakey_length生效。
         :type datakey_length: str
@@ -47,6 +51,10 @@ class CreateDatakeyRequestBody:
         :type additional_authenticated_data: str
         :param sequence: 请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
         :type sequence: str
+        :param pin: pin码，用于数据密钥的认证，仅四级密评场景生效
+        :type pin: str
+        :param pin_type: pin码的类型，默认为“CipherText”： - PlainText：表示明文pin - CipherText：表示密文pin
+        :type pin_type: str
         """
         
         
@@ -56,6 +64,8 @@ class CreateDatakeyRequestBody:
         self._datakey_length = None
         self._additional_authenticated_data = None
         self._sequence = None
+        self._pin = None
+        self._pin_type = None
         self.discriminator = None
 
         self.key_id = key_id
@@ -67,6 +77,10 @@ class CreateDatakeyRequestBody:
             self.additional_authenticated_data = additional_authenticated_data
         if sequence is not None:
             self.sequence = sequence
+        if pin is not None:
+            self.pin = pin
+        if pin_type is not None:
+            self.pin_type = pin_type
 
     @property
     def key_id(self):
@@ -94,7 +108,7 @@ class CreateDatakeyRequestBody:
     def key_spec(self):
         r"""Gets the key_spec of this CreateDatakeyRequestBody.
 
-        指定生成的密钥bit位长度。有效值：AES_256、AES_128。  - AES_256：表示256比特的对称密钥。  - AES_128：表示128比特的对称密钥。 说明：  datakey_length和key_spec二选一。   - 若datakey_length和key_spec都为空，默认生成256bit的密钥。   - 若datakey_length和key_spec都指定了值，仅datakey_length生效。
+        指定生成的密钥bit位长度。有效值：AES_256、AES_128、SM4、HMAC_256、HMAC_384、HMAC_512、HMAC_SM3。  - AES_256：表示256比特的对称密钥。  - AES_128：表示128比特的对称密钥。  - SM4：表示SM4密钥。  - HMAC_256：表示HMAC_256密钥。  - HMAC_384：表示HMAC_384密钥。  - HMAC_512：表示HMAC_512密钥。  - HMAC_SM3：表示HMAC_SM3密钥。     说明：  datakey_length和key_spec二选一。   - 若datakey_length和key_spec都为空，默认生成256bit的密钥。   - 若datakey_length和key_spec都指定了值，仅datakey_length生效。
 
         :return: The key_spec of this CreateDatakeyRequestBody.
         :rtype: str
@@ -105,7 +119,7 @@ class CreateDatakeyRequestBody:
     def key_spec(self, key_spec):
         r"""Sets the key_spec of this CreateDatakeyRequestBody.
 
-        指定生成的密钥bit位长度。有效值：AES_256、AES_128。  - AES_256：表示256比特的对称密钥。  - AES_128：表示128比特的对称密钥。 说明：  datakey_length和key_spec二选一。   - 若datakey_length和key_spec都为空，默认生成256bit的密钥。   - 若datakey_length和key_spec都指定了值，仅datakey_length生效。
+        指定生成的密钥bit位长度。有效值：AES_256、AES_128、SM4、HMAC_256、HMAC_384、HMAC_512、HMAC_SM3。  - AES_256：表示256比特的对称密钥。  - AES_128：表示128比特的对称密钥。  - SM4：表示SM4密钥。  - HMAC_256：表示HMAC_256密钥。  - HMAC_384：表示HMAC_384密钥。  - HMAC_512：表示HMAC_512密钥。  - HMAC_SM3：表示HMAC_SM3密钥。     说明：  datakey_length和key_spec二选一。   - 若datakey_length和key_spec都为空，默认生成256bit的密钥。   - 若datakey_length和key_spec都指定了值，仅datakey_length生效。
 
         :param key_spec: The key_spec of this CreateDatakeyRequestBody.
         :type key_spec: str
@@ -177,6 +191,50 @@ class CreateDatakeyRequestBody:
         :type sequence: str
         """
         self._sequence = sequence
+
+    @property
+    def pin(self):
+        r"""Gets the pin of this CreateDatakeyRequestBody.
+
+        pin码，用于数据密钥的认证，仅四级密评场景生效
+
+        :return: The pin of this CreateDatakeyRequestBody.
+        :rtype: str
+        """
+        return self._pin
+
+    @pin.setter
+    def pin(self, pin):
+        r"""Sets the pin of this CreateDatakeyRequestBody.
+
+        pin码，用于数据密钥的认证，仅四级密评场景生效
+
+        :param pin: The pin of this CreateDatakeyRequestBody.
+        :type pin: str
+        """
+        self._pin = pin
+
+    @property
+    def pin_type(self):
+        r"""Gets the pin_type of this CreateDatakeyRequestBody.
+
+        pin码的类型，默认为“CipherText”： - PlainText：表示明文pin - CipherText：表示密文pin
+
+        :return: The pin_type of this CreateDatakeyRequestBody.
+        :rtype: str
+        """
+        return self._pin_type
+
+    @pin_type.setter
+    def pin_type(self, pin_type):
+        r"""Sets the pin_type of this CreateDatakeyRequestBody.
+
+        pin码的类型，默认为“CipherText”： - PlainText：表示明文pin - CipherText：表示密文pin
+
+        :param pin_type: The pin_type of this CreateDatakeyRequestBody.
+        :type pin_type: str
+        """
+        self._pin_type = pin_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

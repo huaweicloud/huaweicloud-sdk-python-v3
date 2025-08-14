@@ -19,6 +19,7 @@ class EventInfo:
     openapi_types = {
         'event_name': 'str',
         'event_type': 'str',
+        'sub_event_type': 'str',
         'event_count': 'int',
         'latest_occur_time': 'int',
         'latest_event_source': 'str'
@@ -27,12 +28,13 @@ class EventInfo:
     attribute_map = {
         'event_name': 'event_name',
         'event_type': 'event_type',
+        'sub_event_type': 'sub_event_type',
         'event_count': 'event_count',
         'latest_occur_time': 'latest_occur_time',
         'latest_event_source': 'latest_event_source'
     }
 
-    def __init__(self, event_name=None, event_type=None, event_count=None, latest_occur_time=None, latest_event_source=None):
+    def __init__(self, event_name=None, event_type=None, sub_event_type=None, event_count=None, latest_occur_time=None, latest_event_source=None):
         r"""EventInfo
 
         The model defined in huaweicloud sdk
@@ -41,6 +43,8 @@ class EventInfo:
         :type event_name: str
         :param event_type: 事件类型。
         :type event_type: str
+        :param sub_event_type: 事件子类。 枚举类型：SUB_EVENT.OPS为运维事件，SUB_EVENT.PLAN为计划事件，SUB_EVENT.CUSTOM为自定义事件。
+        :type sub_event_type: str
         :param event_count: 选择查询的时间范围内，此事件发生的数量。
         :type event_count: int
         :param latest_occur_time: 此事件最近一次发生的时间。
@@ -53,6 +57,7 @@ class EventInfo:
 
         self._event_name = None
         self._event_type = None
+        self._sub_event_type = None
         self._event_count = None
         self._latest_occur_time = None
         self._latest_event_source = None
@@ -62,6 +67,8 @@ class EventInfo:
             self.event_name = event_name
         if event_type is not None:
             self.event_type = event_type
+        if sub_event_type is not None:
+            self.sub_event_type = sub_event_type
         if event_count is not None:
             self.event_count = event_count
         if latest_occur_time is not None:
@@ -112,6 +119,28 @@ class EventInfo:
         :type event_type: str
         """
         self._event_type = event_type
+
+    @property
+    def sub_event_type(self):
+        r"""Gets the sub_event_type of this EventInfo.
+
+        事件子类。 枚举类型：SUB_EVENT.OPS为运维事件，SUB_EVENT.PLAN为计划事件，SUB_EVENT.CUSTOM为自定义事件。
+
+        :return: The sub_event_type of this EventInfo.
+        :rtype: str
+        """
+        return self._sub_event_type
+
+    @sub_event_type.setter
+    def sub_event_type(self, sub_event_type):
+        r"""Sets the sub_event_type of this EventInfo.
+
+        事件子类。 枚举类型：SUB_EVENT.OPS为运维事件，SUB_EVENT.PLAN为计划事件，SUB_EVENT.CUSTOM为自定义事件。
+
+        :param sub_event_type: The sub_event_type of this EventInfo.
+        :type sub_event_type: str
+        """
+        self._sub_event_type = sub_event_type
 
     @property
     def event_count(self):

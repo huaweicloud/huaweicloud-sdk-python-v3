@@ -65,43 +65,43 @@ class ContainerBaseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param id: ID
+        :param id: **参数解释**: ID **取值范围**: 字符长度0-255位 
         :type id: str
-        :param region_id: 区域
+        :param region_id: **参数解释**: 区域 **取值范围**: 字符长度0-255位 
         :type region_id: str
-        :param container_id: 容器ID
+        :param container_id: **参数解释**: 容器ID **取值范围**: 字符长度0-255位 
         :type container_id: str
-        :param container_name: 容器名称
+        :param container_name: **参数解释**: 容器名称 **取值范围**: 字符长度0-255位 
         :type container_name: str
-        :param image_name: 镜像名称
+        :param image_name: **参数解释**: 镜像名称 **取值范围**: 字符长度0-255位 
         :type image_name: str
-        :param status: 容器状态，包含以下几种： -Running 运行中 -Terminated 终止 -Waiting 等待
+        :param status: **参数解释**: 容器状态 **取值范围**: - Running：运行中。 - Terminated：终止。 - Waiting：等待。 
         :type status: str
-        :param create_time: 创建时间
+        :param create_time: **参数解释**: 创建时间 **取值范围**: 取值0-4071095999000 
         :type create_time: int
-        :param cpu_limit: cpu限制
+        :param cpu_limit: **参数解释**: cpu限制 **取值范围**: 字符长度0-64位 
         :type cpu_limit: str
-        :param memory_limit: 内存限制
+        :param memory_limit: **参数解释**: 内存限制 **取值范围**: 字符长度0-64位 
         :type memory_limit: str
-        :param restart_count: 重启次数
+        :param restart_count: **参数解释**: 重启次数 **取值范围**: 取值0-20 
         :type restart_count: int
-        :param pod_name: 所属pod名称
+        :param pod_name: **参数解释**: 所属pod名称 **取值范围**: 字符长度0-64位 
         :type pod_name: str
-        :param cluster_name: 所属集群
+        :param cluster_name: **参数解释**: 所属集群 **取值范围**: 字符长度0-64位 
         :type cluster_name: str
-        :param cluster_id: 集群id
+        :param cluster_id: **参数解释**: 集群id **取值范围**: 字符长度0-64位 
         :type cluster_id: str
-        :param cluster_type: 集群类型，包含以下几种： -k8s 原生集群 -cce CCE集群 -ali 阿里云集群 -tencent 腾讯云集群 -azure 微软云集群 -aws 亚马逊集群 -self_built_hw 华为云自建集群 -self_built_idc IDC自建集群
+        :param cluster_type: **参数解释**: 集群类型 **取值范围**: - k8s：原生集群。 - cce：CCE集群。 - ali：阿里云集群。 - tencent：腾讯云集群。 - azure：微软云集群。 - aws：亚马逊集群。 - self_built_hw：华为云自建集群。 - self_built_idc：IDC自建集群。 
         :type cluster_type: str
-        :param risky: 是否有风险
+        :param risky: **参数解释**: 是否有风险 **取值范围**: true和false，true代表有风险，false代表无风险 
         :type risky: bool
-        :param low_risk: 低危风险数量
+        :param low_risk: **参数解释**: 低危风险数量 **取值范围**: 取值0-2147483647 
         :type low_risk: int
-        :param medium_risk: 中危风险数量
+        :param medium_risk: **参数解释**: 中危风险数量 **取值范围**: 取值0-2147483647 
         :type medium_risk: int
-        :param high_risk: 高危风险数量
+        :param high_risk: **参数解释**: 高危风险数量 **取值范围**: 取值0-2147483647 
         :type high_risk: int
-        :param fatal_risk: 致命风险数量
+        :param fatal_risk: **参数解释**: 致命风险数量 **取值范围**: 取值0-2147483647 
         :type fatal_risk: int
         """
         
@@ -171,7 +171,7 @@ class ContainerBaseInfo:
     def id(self):
         r"""Gets the id of this ContainerBaseInfo.
 
-        ID
+        **参数解释**: ID **取值范围**: 字符长度0-255位 
 
         :return: The id of this ContainerBaseInfo.
         :rtype: str
@@ -182,7 +182,7 @@ class ContainerBaseInfo:
     def id(self, id):
         r"""Sets the id of this ContainerBaseInfo.
 
-        ID
+        **参数解释**: ID **取值范围**: 字符长度0-255位 
 
         :param id: The id of this ContainerBaseInfo.
         :type id: str
@@ -193,7 +193,7 @@ class ContainerBaseInfo:
     def region_id(self):
         r"""Gets the region_id of this ContainerBaseInfo.
 
-        区域
+        **参数解释**: 区域 **取值范围**: 字符长度0-255位 
 
         :return: The region_id of this ContainerBaseInfo.
         :rtype: str
@@ -204,7 +204,7 @@ class ContainerBaseInfo:
     def region_id(self, region_id):
         r"""Sets the region_id of this ContainerBaseInfo.
 
-        区域
+        **参数解释**: 区域 **取值范围**: 字符长度0-255位 
 
         :param region_id: The region_id of this ContainerBaseInfo.
         :type region_id: str
@@ -215,7 +215,7 @@ class ContainerBaseInfo:
     def container_id(self):
         r"""Gets the container_id of this ContainerBaseInfo.
 
-        容器ID
+        **参数解释**: 容器ID **取值范围**: 字符长度0-255位 
 
         :return: The container_id of this ContainerBaseInfo.
         :rtype: str
@@ -226,7 +226,7 @@ class ContainerBaseInfo:
     def container_id(self, container_id):
         r"""Sets the container_id of this ContainerBaseInfo.
 
-        容器ID
+        **参数解释**: 容器ID **取值范围**: 字符长度0-255位 
 
         :param container_id: The container_id of this ContainerBaseInfo.
         :type container_id: str
@@ -237,7 +237,7 @@ class ContainerBaseInfo:
     def container_name(self):
         r"""Gets the container_name of this ContainerBaseInfo.
 
-        容器名称
+        **参数解释**: 容器名称 **取值范围**: 字符长度0-255位 
 
         :return: The container_name of this ContainerBaseInfo.
         :rtype: str
@@ -248,7 +248,7 @@ class ContainerBaseInfo:
     def container_name(self, container_name):
         r"""Sets the container_name of this ContainerBaseInfo.
 
-        容器名称
+        **参数解释**: 容器名称 **取值范围**: 字符长度0-255位 
 
         :param container_name: The container_name of this ContainerBaseInfo.
         :type container_name: str
@@ -259,7 +259,7 @@ class ContainerBaseInfo:
     def image_name(self):
         r"""Gets the image_name of this ContainerBaseInfo.
 
-        镜像名称
+        **参数解释**: 镜像名称 **取值范围**: 字符长度0-255位 
 
         :return: The image_name of this ContainerBaseInfo.
         :rtype: str
@@ -270,7 +270,7 @@ class ContainerBaseInfo:
     def image_name(self, image_name):
         r"""Sets the image_name of this ContainerBaseInfo.
 
-        镜像名称
+        **参数解释**: 镜像名称 **取值范围**: 字符长度0-255位 
 
         :param image_name: The image_name of this ContainerBaseInfo.
         :type image_name: str
@@ -281,7 +281,7 @@ class ContainerBaseInfo:
     def status(self):
         r"""Gets the status of this ContainerBaseInfo.
 
-        容器状态，包含以下几种： -Running 运行中 -Terminated 终止 -Waiting 等待
+        **参数解释**: 容器状态 **取值范围**: - Running：运行中。 - Terminated：终止。 - Waiting：等待。 
 
         :return: The status of this ContainerBaseInfo.
         :rtype: str
@@ -292,7 +292,7 @@ class ContainerBaseInfo:
     def status(self, status):
         r"""Sets the status of this ContainerBaseInfo.
 
-        容器状态，包含以下几种： -Running 运行中 -Terminated 终止 -Waiting 等待
+        **参数解释**: 容器状态 **取值范围**: - Running：运行中。 - Terminated：终止。 - Waiting：等待。 
 
         :param status: The status of this ContainerBaseInfo.
         :type status: str
@@ -303,7 +303,7 @@ class ContainerBaseInfo:
     def create_time(self):
         r"""Gets the create_time of this ContainerBaseInfo.
 
-        创建时间
+        **参数解释**: 创建时间 **取值范围**: 取值0-4071095999000 
 
         :return: The create_time of this ContainerBaseInfo.
         :rtype: int
@@ -314,7 +314,7 @@ class ContainerBaseInfo:
     def create_time(self, create_time):
         r"""Sets the create_time of this ContainerBaseInfo.
 
-        创建时间
+        **参数解释**: 创建时间 **取值范围**: 取值0-4071095999000 
 
         :param create_time: The create_time of this ContainerBaseInfo.
         :type create_time: int
@@ -325,7 +325,7 @@ class ContainerBaseInfo:
     def cpu_limit(self):
         r"""Gets the cpu_limit of this ContainerBaseInfo.
 
-        cpu限制
+        **参数解释**: cpu限制 **取值范围**: 字符长度0-64位 
 
         :return: The cpu_limit of this ContainerBaseInfo.
         :rtype: str
@@ -336,7 +336,7 @@ class ContainerBaseInfo:
     def cpu_limit(self, cpu_limit):
         r"""Sets the cpu_limit of this ContainerBaseInfo.
 
-        cpu限制
+        **参数解释**: cpu限制 **取值范围**: 字符长度0-64位 
 
         :param cpu_limit: The cpu_limit of this ContainerBaseInfo.
         :type cpu_limit: str
@@ -347,7 +347,7 @@ class ContainerBaseInfo:
     def memory_limit(self):
         r"""Gets the memory_limit of this ContainerBaseInfo.
 
-        内存限制
+        **参数解释**: 内存限制 **取值范围**: 字符长度0-64位 
 
         :return: The memory_limit of this ContainerBaseInfo.
         :rtype: str
@@ -358,7 +358,7 @@ class ContainerBaseInfo:
     def memory_limit(self, memory_limit):
         r"""Sets the memory_limit of this ContainerBaseInfo.
 
-        内存限制
+        **参数解释**: 内存限制 **取值范围**: 字符长度0-64位 
 
         :param memory_limit: The memory_limit of this ContainerBaseInfo.
         :type memory_limit: str
@@ -369,7 +369,7 @@ class ContainerBaseInfo:
     def restart_count(self):
         r"""Gets the restart_count of this ContainerBaseInfo.
 
-        重启次数
+        **参数解释**: 重启次数 **取值范围**: 取值0-20 
 
         :return: The restart_count of this ContainerBaseInfo.
         :rtype: int
@@ -380,7 +380,7 @@ class ContainerBaseInfo:
     def restart_count(self, restart_count):
         r"""Sets the restart_count of this ContainerBaseInfo.
 
-        重启次数
+        **参数解释**: 重启次数 **取值范围**: 取值0-20 
 
         :param restart_count: The restart_count of this ContainerBaseInfo.
         :type restart_count: int
@@ -391,7 +391,7 @@ class ContainerBaseInfo:
     def pod_name(self):
         r"""Gets the pod_name of this ContainerBaseInfo.
 
-        所属pod名称
+        **参数解释**: 所属pod名称 **取值范围**: 字符长度0-64位 
 
         :return: The pod_name of this ContainerBaseInfo.
         :rtype: str
@@ -402,7 +402,7 @@ class ContainerBaseInfo:
     def pod_name(self, pod_name):
         r"""Sets the pod_name of this ContainerBaseInfo.
 
-        所属pod名称
+        **参数解释**: 所属pod名称 **取值范围**: 字符长度0-64位 
 
         :param pod_name: The pod_name of this ContainerBaseInfo.
         :type pod_name: str
@@ -413,7 +413,7 @@ class ContainerBaseInfo:
     def cluster_name(self):
         r"""Gets the cluster_name of this ContainerBaseInfo.
 
-        所属集群
+        **参数解释**: 所属集群 **取值范围**: 字符长度0-64位 
 
         :return: The cluster_name of this ContainerBaseInfo.
         :rtype: str
@@ -424,7 +424,7 @@ class ContainerBaseInfo:
     def cluster_name(self, cluster_name):
         r"""Sets the cluster_name of this ContainerBaseInfo.
 
-        所属集群
+        **参数解释**: 所属集群 **取值范围**: 字符长度0-64位 
 
         :param cluster_name: The cluster_name of this ContainerBaseInfo.
         :type cluster_name: str
@@ -435,7 +435,7 @@ class ContainerBaseInfo:
     def cluster_id(self):
         r"""Gets the cluster_id of this ContainerBaseInfo.
 
-        集群id
+        **参数解释**: 集群id **取值范围**: 字符长度0-64位 
 
         :return: The cluster_id of this ContainerBaseInfo.
         :rtype: str
@@ -446,7 +446,7 @@ class ContainerBaseInfo:
     def cluster_id(self, cluster_id):
         r"""Sets the cluster_id of this ContainerBaseInfo.
 
-        集群id
+        **参数解释**: 集群id **取值范围**: 字符长度0-64位 
 
         :param cluster_id: The cluster_id of this ContainerBaseInfo.
         :type cluster_id: str
@@ -457,7 +457,7 @@ class ContainerBaseInfo:
     def cluster_type(self):
         r"""Gets the cluster_type of this ContainerBaseInfo.
 
-        集群类型，包含以下几种： -k8s 原生集群 -cce CCE集群 -ali 阿里云集群 -tencent 腾讯云集群 -azure 微软云集群 -aws 亚马逊集群 -self_built_hw 华为云自建集群 -self_built_idc IDC自建集群
+        **参数解释**: 集群类型 **取值范围**: - k8s：原生集群。 - cce：CCE集群。 - ali：阿里云集群。 - tencent：腾讯云集群。 - azure：微软云集群。 - aws：亚马逊集群。 - self_built_hw：华为云自建集群。 - self_built_idc：IDC自建集群。 
 
         :return: The cluster_type of this ContainerBaseInfo.
         :rtype: str
@@ -468,7 +468,7 @@ class ContainerBaseInfo:
     def cluster_type(self, cluster_type):
         r"""Sets the cluster_type of this ContainerBaseInfo.
 
-        集群类型，包含以下几种： -k8s 原生集群 -cce CCE集群 -ali 阿里云集群 -tencent 腾讯云集群 -azure 微软云集群 -aws 亚马逊集群 -self_built_hw 华为云自建集群 -self_built_idc IDC自建集群
+        **参数解释**: 集群类型 **取值范围**: - k8s：原生集群。 - cce：CCE集群。 - ali：阿里云集群。 - tencent：腾讯云集群。 - azure：微软云集群。 - aws：亚马逊集群。 - self_built_hw：华为云自建集群。 - self_built_idc：IDC自建集群。 
 
         :param cluster_type: The cluster_type of this ContainerBaseInfo.
         :type cluster_type: str
@@ -479,7 +479,7 @@ class ContainerBaseInfo:
     def risky(self):
         r"""Gets the risky of this ContainerBaseInfo.
 
-        是否有风险
+        **参数解释**: 是否有风险 **取值范围**: true和false，true代表有风险，false代表无风险 
 
         :return: The risky of this ContainerBaseInfo.
         :rtype: bool
@@ -490,7 +490,7 @@ class ContainerBaseInfo:
     def risky(self, risky):
         r"""Sets the risky of this ContainerBaseInfo.
 
-        是否有风险
+        **参数解释**: 是否有风险 **取值范围**: true和false，true代表有风险，false代表无风险 
 
         :param risky: The risky of this ContainerBaseInfo.
         :type risky: bool
@@ -501,7 +501,7 @@ class ContainerBaseInfo:
     def low_risk(self):
         r"""Gets the low_risk of this ContainerBaseInfo.
 
-        低危风险数量
+        **参数解释**: 低危风险数量 **取值范围**: 取值0-2147483647 
 
         :return: The low_risk of this ContainerBaseInfo.
         :rtype: int
@@ -512,7 +512,7 @@ class ContainerBaseInfo:
     def low_risk(self, low_risk):
         r"""Sets the low_risk of this ContainerBaseInfo.
 
-        低危风险数量
+        **参数解释**: 低危风险数量 **取值范围**: 取值0-2147483647 
 
         :param low_risk: The low_risk of this ContainerBaseInfo.
         :type low_risk: int
@@ -523,7 +523,7 @@ class ContainerBaseInfo:
     def medium_risk(self):
         r"""Gets the medium_risk of this ContainerBaseInfo.
 
-        中危风险数量
+        **参数解释**: 中危风险数量 **取值范围**: 取值0-2147483647 
 
         :return: The medium_risk of this ContainerBaseInfo.
         :rtype: int
@@ -534,7 +534,7 @@ class ContainerBaseInfo:
     def medium_risk(self, medium_risk):
         r"""Sets the medium_risk of this ContainerBaseInfo.
 
-        中危风险数量
+        **参数解释**: 中危风险数量 **取值范围**: 取值0-2147483647 
 
         :param medium_risk: The medium_risk of this ContainerBaseInfo.
         :type medium_risk: int
@@ -545,7 +545,7 @@ class ContainerBaseInfo:
     def high_risk(self):
         r"""Gets the high_risk of this ContainerBaseInfo.
 
-        高危风险数量
+        **参数解释**: 高危风险数量 **取值范围**: 取值0-2147483647 
 
         :return: The high_risk of this ContainerBaseInfo.
         :rtype: int
@@ -556,7 +556,7 @@ class ContainerBaseInfo:
     def high_risk(self, high_risk):
         r"""Sets the high_risk of this ContainerBaseInfo.
 
-        高危风险数量
+        **参数解释**: 高危风险数量 **取值范围**: 取值0-2147483647 
 
         :param high_risk: The high_risk of this ContainerBaseInfo.
         :type high_risk: int
@@ -567,7 +567,7 @@ class ContainerBaseInfo:
     def fatal_risk(self):
         r"""Gets the fatal_risk of this ContainerBaseInfo.
 
-        致命风险数量
+        **参数解释**: 致命风险数量 **取值范围**: 取值0-2147483647 
 
         :return: The fatal_risk of this ContainerBaseInfo.
         :rtype: int
@@ -578,7 +578,7 @@ class ContainerBaseInfo:
     def fatal_risk(self, fatal_risk):
         r"""Sets the fatal_risk of this ContainerBaseInfo.
 
-        致命风险数量
+        **参数解释**: 致命风险数量 **取值范围**: 取值0-2147483647 
 
         :param fatal_risk: The fatal_risk of this ContainerBaseInfo.
         :type fatal_risk: int

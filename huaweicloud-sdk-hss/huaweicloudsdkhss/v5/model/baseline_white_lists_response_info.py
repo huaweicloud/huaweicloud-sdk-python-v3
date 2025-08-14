@@ -47,7 +47,7 @@ class BaselineWhiteListsResponseInfo:
 
         :param id: 基线白名单标识
         :type id: str
-        :param rule_type: 基线检查白名单的规则范围 - specific_host 部分主机 - all_host      全部主机
+        :param rule_type: 基线检查白名单的规则范围 - specific_host：部分主机 - all_host：全部主机
         :type rule_type: str
         :param os_type: 基线检查的操作系统 - Linux - Windows
         :type os_type: str
@@ -123,7 +123,7 @@ class BaselineWhiteListsResponseInfo:
     def rule_type(self):
         r"""Gets the rule_type of this BaselineWhiteListsResponseInfo.
 
-        基线检查白名单的规则范围 - specific_host 部分主机 - all_host      全部主机
+        基线检查白名单的规则范围 - specific_host：部分主机 - all_host：全部主机
 
         :return: The rule_type of this BaselineWhiteListsResponseInfo.
         :rtype: str
@@ -134,7 +134,7 @@ class BaselineWhiteListsResponseInfo:
     def rule_type(self, rule_type):
         r"""Sets the rule_type of this BaselineWhiteListsResponseInfo.
 
-        基线检查白名单的规则范围 - specific_host 部分主机 - all_host      全部主机
+        基线检查白名单的规则范围 - specific_host：部分主机 - all_host：全部主机
 
         :param rule_type: The rule_type of this BaselineWhiteListsResponseInfo.
         :type rule_type: str

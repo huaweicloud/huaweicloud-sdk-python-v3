@@ -32,7 +32,7 @@ class ShowServerGroupTagResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param tags: 标签列表
+        :param tags: 标签列表。
         :type tags: list[:class:`huaweicloudsdkworkspaceapp.v1.TmsTag`]
         :param sys_tags: 仅op_service权限才可以获取此字段，非op_service场景不能返回此字段，目前只包含一个resource_tag结构体。 &gt; - key：_sys_enterprise_project_id。 &gt; - value：企业项目id，0表示默认企业项目。
         :type sys_tags: list[:class:`huaweicloudsdkworkspaceapp.v1.TmsTag`]
@@ -53,7 +53,7 @@ class ShowServerGroupTagResponse(SdkResponse):
     def tags(self):
         r"""Gets the tags of this ShowServerGroupTagResponse.
 
-        标签列表
+        标签列表。
 
         :return: The tags of this ShowServerGroupTagResponse.
         :rtype: list[:class:`huaweicloudsdkworkspaceapp.v1.TmsTag`]
@@ -64,7 +64,7 @@ class ShowServerGroupTagResponse(SdkResponse):
     def tags(self, tags):
         r"""Sets the tags of this ShowServerGroupTagResponse.
 
-        标签列表
+        标签列表。
 
         :param tags: The tags of this ShowServerGroupTagResponse.
         :type tags: list[:class:`huaweicloudsdkworkspaceapp.v1.TmsTag`]

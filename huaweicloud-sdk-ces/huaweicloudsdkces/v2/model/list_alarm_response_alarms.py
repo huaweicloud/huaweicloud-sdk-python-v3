@@ -34,7 +34,8 @@ class ListAlarmResponseAlarms:
         'enterprise_project_id': 'str',
         'alarm_template_id': 'str',
         'product_name': 'str',
-        'resource_level': 'str'
+        'resource_level': 'str',
+        'tags': 'list[ResourceTag]'
     }
 
     attribute_map = {
@@ -55,10 +56,11 @@ class ListAlarmResponseAlarms:
         'enterprise_project_id': 'enterprise_project_id',
         'alarm_template_id': 'alarm_template_id',
         'product_name': 'product_name',
-        'resource_level': 'resource_level'
+        'resource_level': 'resource_level',
+        'tags': 'tags'
     }
 
-    def __init__(self, alarm_id=None, name=None, description=None, namespace=None, policies=None, resources=None, type=None, enabled=None, notification_enabled=None, alarm_notifications=None, ok_notifications=None, notification_begin_time=None, notification_end_time=None, effective_timezone=None, enterprise_project_id=None, alarm_template_id=None, product_name=None, resource_level=None):
+    def __init__(self, alarm_id=None, name=None, description=None, namespace=None, policies=None, resources=None, type=None, enabled=None, notification_enabled=None, alarm_notifications=None, ok_notifications=None, notification_begin_time=None, notification_end_time=None, effective_timezone=None, enterprise_project_id=None, alarm_template_id=None, product_name=None, resource_level=None, tags=None):
         r"""ListAlarmResponseAlarms
 
         The model defined in huaweicloud sdk
@@ -99,6 +101,8 @@ class ListAlarmResponseAlarms:
         :type product_name: str
         :param resource_level: 产品层级跨纬规则需要指明为产品层级规则，resource_level取值为product即为产品层级跨纬规则，不填或者取值为dimension则为旧的规则类型
         :type resource_level: str
+        :param tags: 租户标签列表
+        :type tags: list[:class:`huaweicloudsdkces.v2.ResourceTag`]
         """
         
         
@@ -121,6 +125,7 @@ class ListAlarmResponseAlarms:
         self._alarm_template_id = None
         self._product_name = None
         self._resource_level = None
+        self._tags = None
         self.discriminator = None
 
         if alarm_id is not None:
@@ -159,6 +164,8 @@ class ListAlarmResponseAlarms:
             self.product_name = product_name
         if resource_level is not None:
             self.resource_level = resource_level
+        if tags is not None:
+            self.tags = tags
 
     @property
     def alarm_id(self):
@@ -551,6 +558,28 @@ class ListAlarmResponseAlarms:
         :type resource_level: str
         """
         self._resource_level = resource_level
+
+    @property
+    def tags(self):
+        r"""Gets the tags of this ListAlarmResponseAlarms.
+
+        租户标签列表
+
+        :return: The tags of this ListAlarmResponseAlarms.
+        :rtype: list[:class:`huaweicloudsdkces.v2.ResourceTag`]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        r"""Sets the tags of this ListAlarmResponseAlarms.
+
+        租户标签列表
+
+        :param tags: The tags of this ListAlarmResponseAlarms.
+        :type tags: list[:class:`huaweicloudsdkces.v2.ResourceTag`]
+        """
+        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

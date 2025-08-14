@@ -59,7 +59,7 @@ class ListAntivirusHandleHistoryRequest:
 
         The model defined in huaweicloud sdk
 
-        :param region: Region ID
+        :param region: **参数解释**: 区域ID，用于查询目的区域内的资产。获取方式请参见[获取区域ID](hss_02_0026.xml)。 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
         :type region: str
         :param enterprise_project_id: **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
         :type enterprise_project_id: str
@@ -71,7 +71,7 @@ class ListAntivirusHandleHistoryRequest:
         :type malware_name: str
         :param file_path: 文件路径
         :type file_path: str
-        :param severity_list: 威胁等级，包含如下:   - Low : 低危   - Medium : 中危   - High : 高危   - Critical : 致命
+        :param severity_list: 威胁等级，包含如下:   - Low：低危   - Medium：中危   - High：高危   - Critical：致命
         :type severity_list: list[str]
         :param host_name: **参数解释**: 服务器名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
         :type host_name: str
@@ -81,7 +81,7 @@ class ListAntivirusHandleHistoryRequest:
         :type public_ip: str
         :param asset_value: 资产重要性，包含如下3种   - important ：重要资产   - common ：一般资产   - test ：测试资产
         :type asset_value: str
-        :param handle_method: 处理方式，包含如下:   - mark_as_handled : 手动处理   - ignore : 忽略   - add_to_alarm_whitelist : 加入告警白名单   - isolate_and_kill : 隔离文件   - unhandle : 取消手动处理   - do_not_ignore : 取消忽略   - remove_from_alarm_whitelist : 删除告警白名单   - do_not_isolate_or_kill : 取消隔离文件
+        :param handle_method: 处理方式，包含如下:   - mark_as_handled：手动处理   - ignore：忽略   - add_to_alarm_whitelist：加入告警白名单   - isolate_and_kill：隔离文件   - unhandle：取消手动处理   - do_not_ignore：取消忽略   - remove_from_alarm_whitelist：删除告警白名单   - do_not_isolate_or_kill：取消隔离文件
         :type handle_method: str
         :param user_name: 用户名
         :type user_name: str
@@ -148,7 +148,7 @@ class ListAntivirusHandleHistoryRequest:
     def region(self):
         r"""Gets the region of this ListAntivirusHandleHistoryRequest.
 
-        Region ID
+        **参数解释**: 区域ID，用于查询目的区域内的资产。获取方式请参见[获取区域ID](hss_02_0026.xml)。 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
 
         :return: The region of this ListAntivirusHandleHistoryRequest.
         :rtype: str
@@ -159,7 +159,7 @@ class ListAntivirusHandleHistoryRequest:
     def region(self, region):
         r"""Sets the region of this ListAntivirusHandleHistoryRequest.
 
-        Region ID
+        **参数解释**: 区域ID，用于查询目的区域内的资产。获取方式请参见[获取区域ID](hss_02_0026.xml)。 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
 
         :param region: The region of this ListAntivirusHandleHistoryRequest.
         :type region: str
@@ -280,7 +280,7 @@ class ListAntivirusHandleHistoryRequest:
     def severity_list(self):
         r"""Gets the severity_list of this ListAntivirusHandleHistoryRequest.
 
-        威胁等级，包含如下:   - Low : 低危   - Medium : 中危   - High : 高危   - Critical : 致命
+        威胁等级，包含如下:   - Low：低危   - Medium：中危   - High：高危   - Critical：致命
 
         :return: The severity_list of this ListAntivirusHandleHistoryRequest.
         :rtype: list[str]
@@ -291,7 +291,7 @@ class ListAntivirusHandleHistoryRequest:
     def severity_list(self, severity_list):
         r"""Sets the severity_list of this ListAntivirusHandleHistoryRequest.
 
-        威胁等级，包含如下:   - Low : 低危   - Medium : 中危   - High : 高危   - Critical : 致命
+        威胁等级，包含如下:   - Low：低危   - Medium：中危   - High：高危   - Critical：致命
 
         :param severity_list: The severity_list of this ListAntivirusHandleHistoryRequest.
         :type severity_list: list[str]
@@ -390,7 +390,7 @@ class ListAntivirusHandleHistoryRequest:
     def handle_method(self):
         r"""Gets the handle_method of this ListAntivirusHandleHistoryRequest.
 
-        处理方式，包含如下:   - mark_as_handled : 手动处理   - ignore : 忽略   - add_to_alarm_whitelist : 加入告警白名单   - isolate_and_kill : 隔离文件   - unhandle : 取消手动处理   - do_not_ignore : 取消忽略   - remove_from_alarm_whitelist : 删除告警白名单   - do_not_isolate_or_kill : 取消隔离文件
+        处理方式，包含如下:   - mark_as_handled：手动处理   - ignore：忽略   - add_to_alarm_whitelist：加入告警白名单   - isolate_and_kill：隔离文件   - unhandle：取消手动处理   - do_not_ignore：取消忽略   - remove_from_alarm_whitelist：删除告警白名单   - do_not_isolate_or_kill：取消隔离文件
 
         :return: The handle_method of this ListAntivirusHandleHistoryRequest.
         :rtype: str
@@ -401,7 +401,7 @@ class ListAntivirusHandleHistoryRequest:
     def handle_method(self, handle_method):
         r"""Sets the handle_method of this ListAntivirusHandleHistoryRequest.
 
-        处理方式，包含如下:   - mark_as_handled : 手动处理   - ignore : 忽略   - add_to_alarm_whitelist : 加入告警白名单   - isolate_and_kill : 隔离文件   - unhandle : 取消手动处理   - do_not_ignore : 取消忽略   - remove_from_alarm_whitelist : 删除告警白名单   - do_not_isolate_or_kill : 取消隔离文件
+        处理方式，包含如下:   - mark_as_handled：手动处理   - ignore：忽略   - add_to_alarm_whitelist：加入告警白名单   - isolate_and_kill：隔离文件   - unhandle：取消手动处理   - do_not_ignore：取消忽略   - remove_from_alarm_whitelist：删除告警白名单   - do_not_isolate_or_kill：取消隔离文件
 
         :param handle_method: The handle_method of this ListAntivirusHandleHistoryRequest.
         :type handle_method: str

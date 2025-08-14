@@ -35,7 +35,7 @@ class GroupMembershipItem:
 
         The model defined in huaweicloud sdk
 
-        :param group_id: 身份源中IAM身份中心用户组的全局唯一标识符（ID）
+        :param group_id: 身份源中IdentityCenter用户组的全局唯一标识符（ID）
         :type group_id: str
         :param identity_store_id: 身份源的全局唯一标识符（ID）
         :type identity_store_id: str
@@ -66,7 +66,7 @@ class GroupMembershipItem:
     def group_id(self):
         r"""Gets the group_id of this GroupMembershipItem.
 
-        身份源中IAM身份中心用户组的全局唯一标识符（ID）
+        身份源中IdentityCenter用户组的全局唯一标识符（ID）
 
         :return: The group_id of this GroupMembershipItem.
         :rtype: str
@@ -77,7 +77,7 @@ class GroupMembershipItem:
     def group_id(self, group_id):
         r"""Sets the group_id of this GroupMembershipItem.
 
-        身份源中IAM身份中心用户组的全局唯一标识符（ID）
+        身份源中IdentityCenter用户组的全局唯一标识符（ID）
 
         :param group_id: The group_id of this GroupMembershipItem.
         :type group_id: str

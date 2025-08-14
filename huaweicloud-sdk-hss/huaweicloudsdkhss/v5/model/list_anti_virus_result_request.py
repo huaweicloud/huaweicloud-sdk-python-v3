@@ -67,9 +67,9 @@ class ListAntiVirusResultRequest:
         :type private_ip: str
         :param public_ip: 服务器公网IP
         :type public_ip: str
-        :param handle_status: 处置状态，包含如下:   - unhandled ：未处理   - handled : 已处理
+        :param handle_status: 处置状态，包含如下:   - unhandled：未处理   - handled：已处理
         :type handle_status: str
-        :param severity_list: 威胁等级，包含如下:   - Low : 低危   - Medium : 中危   - High : 高危   - Critical : 致命
+        :param severity_list: 威胁等级，包含如下:   - Low：低危   - Medium：中危   - High：高危   - Critical：致命
         :type severity_list: list[str]
         :param asset_value: 资产重要性，包含如下3种   - important ：重要资产   - common ：一般资产   - test ：测试资产
         :type asset_value: str
@@ -77,7 +77,7 @@ class ListAntiVirusResultRequest:
         :type malware_name: str
         :param file_path: 文件路径
         :type file_path: str
-        :param file_hash: 文件hash,当前为sha256
+        :param file_hash: 文件hash，当前为sha256
         :type file_hash: str
         :param task_name: 任务名称
         :type task_name: str
@@ -266,7 +266,7 @@ class ListAntiVirusResultRequest:
     def handle_status(self):
         r"""Gets the handle_status of this ListAntiVirusResultRequest.
 
-        处置状态，包含如下:   - unhandled ：未处理   - handled : 已处理
+        处置状态，包含如下:   - unhandled：未处理   - handled：已处理
 
         :return: The handle_status of this ListAntiVirusResultRequest.
         :rtype: str
@@ -277,7 +277,7 @@ class ListAntiVirusResultRequest:
     def handle_status(self, handle_status):
         r"""Sets the handle_status of this ListAntiVirusResultRequest.
 
-        处置状态，包含如下:   - unhandled ：未处理   - handled : 已处理
+        处置状态，包含如下:   - unhandled：未处理   - handled：已处理
 
         :param handle_status: The handle_status of this ListAntiVirusResultRequest.
         :type handle_status: str
@@ -288,7 +288,7 @@ class ListAntiVirusResultRequest:
     def severity_list(self):
         r"""Gets the severity_list of this ListAntiVirusResultRequest.
 
-        威胁等级，包含如下:   - Low : 低危   - Medium : 中危   - High : 高危   - Critical : 致命
+        威胁等级，包含如下:   - Low：低危   - Medium：中危   - High：高危   - Critical：致命
 
         :return: The severity_list of this ListAntiVirusResultRequest.
         :rtype: list[str]
@@ -299,7 +299,7 @@ class ListAntiVirusResultRequest:
     def severity_list(self, severity_list):
         r"""Sets the severity_list of this ListAntiVirusResultRequest.
 
-        威胁等级，包含如下:   - Low : 低危   - Medium : 中危   - High : 高危   - Critical : 致命
+        威胁等级，包含如下:   - Low：低危   - Medium：中危   - High：高危   - Critical：致命
 
         :param severity_list: The severity_list of this ListAntiVirusResultRequest.
         :type severity_list: list[str]
@@ -376,7 +376,7 @@ class ListAntiVirusResultRequest:
     def file_hash(self):
         r"""Gets the file_hash of this ListAntiVirusResultRequest.
 
-        文件hash,当前为sha256
+        文件hash，当前为sha256
 
         :return: The file_hash of this ListAntiVirusResultRequest.
         :rtype: str
@@ -387,7 +387,7 @@ class ListAntiVirusResultRequest:
     def file_hash(self, file_hash):
         r"""Sets the file_hash of this ListAntiVirusResultRequest.
 
-        文件hash,当前为sha256
+        文件hash，当前为sha256
 
         :param file_hash: The file_hash of this ListAntiVirusResultRequest.
         :type file_hash: str

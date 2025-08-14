@@ -65,7 +65,7 @@ class AntiVirusResultResponseInfo:
         :type malware_type: str
         :param malware_name: 病毒名称
         :type malware_name: str
-        :param severity: 威胁等级，包含如下:   - Low : 低危   - Medium : 中危   - High : 高危   - Critical : 致命
+        :param severity: 威胁等级，包含如下:   - Low：低危   - Medium：中危   - High：高危   - Critical：致命
         :type severity: str
         :param task_id: 任务ID
         :type task_id: str
@@ -77,11 +77,11 @@ class AntiVirusResultResponseInfo:
         :type resource_info: :class:`huaweicloudsdkhss.v5.ResultResourceResponseInfo`
         :param event_type: 事件类型
         :type event_type: int
-        :param occur_time: 发生时间，毫秒
+        :param occur_time: **参数解释**： 发生时间，毫秒 **取值范围**： 最小值0，最大值9223372036854775807 
         :type occur_time: int
-        :param handle_status: 处置状态，包含如下:   - unhandled：未处理   - handled: 已处理
+        :param handle_status: **参数解释**： 处理状态 **取值范围**： - unhandled：未处理 - handled：已处理 
         :type handle_status: str
-        :param handle_method: 处理方式，包含如下:   - mark_as_handled : 手动处理   - ignore : 忽略   - add_to_alarm_whitelist : 加入告警白名单   - isolate_and_kill : 隔离文件
+        :param handle_method: 处理方式，包含如下:   - mark_as_handled：手动处理   - ignore：忽略   - add_to_alarm_whitelist：加入告警白名单   - isolate_and_kill：隔离文件
         :type handle_method: str
         :param memo: 备注信息
         :type memo: str
@@ -216,7 +216,7 @@ class AntiVirusResultResponseInfo:
     def severity(self):
         r"""Gets the severity of this AntiVirusResultResponseInfo.
 
-        威胁等级，包含如下:   - Low : 低危   - Medium : 中危   - High : 高危   - Critical : 致命
+        威胁等级，包含如下:   - Low：低危   - Medium：中危   - High：高危   - Critical：致命
 
         :return: The severity of this AntiVirusResultResponseInfo.
         :rtype: str
@@ -227,7 +227,7 @@ class AntiVirusResultResponseInfo:
     def severity(self, severity):
         r"""Sets the severity of this AntiVirusResultResponseInfo.
 
-        威胁等级，包含如下:   - Low : 低危   - Medium : 中危   - High : 高危   - Critical : 致命
+        威胁等级，包含如下:   - Low：低危   - Medium：中危   - High：高危   - Critical：致命
 
         :param severity: The severity of this AntiVirusResultResponseInfo.
         :type severity: str
@@ -340,7 +340,7 @@ class AntiVirusResultResponseInfo:
     def occur_time(self):
         r"""Gets the occur_time of this AntiVirusResultResponseInfo.
 
-        发生时间，毫秒
+        **参数解释**： 发生时间，毫秒 **取值范围**： 最小值0，最大值9223372036854775807 
 
         :return: The occur_time of this AntiVirusResultResponseInfo.
         :rtype: int
@@ -351,7 +351,7 @@ class AntiVirusResultResponseInfo:
     def occur_time(self, occur_time):
         r"""Sets the occur_time of this AntiVirusResultResponseInfo.
 
-        发生时间，毫秒
+        **参数解释**： 发生时间，毫秒 **取值范围**： 最小值0，最大值9223372036854775807 
 
         :param occur_time: The occur_time of this AntiVirusResultResponseInfo.
         :type occur_time: int
@@ -362,7 +362,7 @@ class AntiVirusResultResponseInfo:
     def handle_status(self):
         r"""Gets the handle_status of this AntiVirusResultResponseInfo.
 
-        处置状态，包含如下:   - unhandled：未处理   - handled: 已处理
+        **参数解释**： 处理状态 **取值范围**： - unhandled：未处理 - handled：已处理 
 
         :return: The handle_status of this AntiVirusResultResponseInfo.
         :rtype: str
@@ -373,7 +373,7 @@ class AntiVirusResultResponseInfo:
     def handle_status(self, handle_status):
         r"""Sets the handle_status of this AntiVirusResultResponseInfo.
 
-        处置状态，包含如下:   - unhandled：未处理   - handled: 已处理
+        **参数解释**： 处理状态 **取值范围**： - unhandled：未处理 - handled：已处理 
 
         :param handle_status: The handle_status of this AntiVirusResultResponseInfo.
         :type handle_status: str
@@ -384,7 +384,7 @@ class AntiVirusResultResponseInfo:
     def handle_method(self):
         r"""Gets the handle_method of this AntiVirusResultResponseInfo.
 
-        处理方式，包含如下:   - mark_as_handled : 手动处理   - ignore : 忽略   - add_to_alarm_whitelist : 加入告警白名单   - isolate_and_kill : 隔离文件
+        处理方式，包含如下:   - mark_as_handled：手动处理   - ignore：忽略   - add_to_alarm_whitelist：加入告警白名单   - isolate_and_kill：隔离文件
 
         :return: The handle_method of this AntiVirusResultResponseInfo.
         :rtype: str
@@ -395,7 +395,7 @@ class AntiVirusResultResponseInfo:
     def handle_method(self, handle_method):
         r"""Sets the handle_method of this AntiVirusResultResponseInfo.
 
-        处理方式，包含如下:   - mark_as_handled : 手动处理   - ignore : 忽略   - add_to_alarm_whitelist : 加入告警白名单   - isolate_and_kill : 隔离文件
+        处理方式，包含如下:   - mark_as_handled：手动处理   - ignore：忽略   - add_to_alarm_whitelist：加入告警白名单   - isolate_and_kill：隔离文件
 
         :param handle_method: The handle_method of this AntiVirusResultResponseInfo.
         :type handle_method: str

@@ -32,9 +32,9 @@ class ListProtectionPolicyResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total_num: 策略总数
+        :param total_num: **参数解释**: 策略总数 **取值范围**: 取值0-2097152 
         :type total_num: int
-        :param data_list: 查询防护策略列表
+        :param data_list: **参数解释**: 查询防护策略列表 **取值范围**: 取值0-2097152 
         :type data_list: list[:class:`huaweicloudsdkhss.v5.ProtectionPolicyInfo`]
         """
         
@@ -53,7 +53,7 @@ class ListProtectionPolicyResponse(SdkResponse):
     def total_num(self):
         r"""Gets the total_num of this ListProtectionPolicyResponse.
 
-        策略总数
+        **参数解释**: 策略总数 **取值范围**: 取值0-2097152 
 
         :return: The total_num of this ListProtectionPolicyResponse.
         :rtype: int
@@ -64,7 +64,7 @@ class ListProtectionPolicyResponse(SdkResponse):
     def total_num(self, total_num):
         r"""Sets the total_num of this ListProtectionPolicyResponse.
 
-        策略总数
+        **参数解释**: 策略总数 **取值范围**: 取值0-2097152 
 
         :param total_num: The total_num of this ListProtectionPolicyResponse.
         :type total_num: int
@@ -75,7 +75,7 @@ class ListProtectionPolicyResponse(SdkResponse):
     def data_list(self):
         r"""Gets the data_list of this ListProtectionPolicyResponse.
 
-        查询防护策略列表
+        **参数解释**: 查询防护策略列表 **取值范围**: 取值0-2097152 
 
         :return: The data_list of this ListProtectionPolicyResponse.
         :rtype: list[:class:`huaweicloudsdkhss.v5.ProtectionPolicyInfo`]
@@ -86,7 +86,7 @@ class ListProtectionPolicyResponse(SdkResponse):
     def data_list(self, data_list):
         r"""Sets the data_list of this ListProtectionPolicyResponse.
 
-        查询防护策略列表
+        **参数解释**: 查询防护策略列表 **取值范围**: 取值0-2097152 
 
         :param data_list: The data_list of this ListProtectionPolicyResponse.
         :type data_list: list[:class:`huaweicloudsdkhss.v5.ProtectionPolicyInfo`]

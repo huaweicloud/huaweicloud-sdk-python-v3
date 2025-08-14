@@ -29,7 +29,7 @@ class BatchRejoinDomainReq:
 
         The model defined in huaweicloud sdk
 
-        :param items: 批量唯一标识请求列表，一次请求数量区间 [1, 20]
+        :param items: 批量唯一标识请求列表，一次请求数量区间 [1, 20]。
         :type items: list[str]
         """
         
@@ -44,7 +44,7 @@ class BatchRejoinDomainReq:
     def items(self):
         r"""Gets the items of this BatchRejoinDomainReq.
 
-        批量唯一标识请求列表，一次请求数量区间 [1, 20]
+        批量唯一标识请求列表，一次请求数量区间 [1, 20]。
 
         :return: The items of this BatchRejoinDomainReq.
         :rtype: list[str]
@@ -55,7 +55,7 @@ class BatchRejoinDomainReq:
     def items(self, items):
         r"""Sets the items of this BatchRejoinDomainReq.
 
-        批量唯一标识请求列表，一次请求数量区间 [1, 20]
+        批量唯一标识请求列表，一次请求数量区间 [1, 20]。
 
         :param items: The items of this BatchRejoinDomainReq.
         :type items: list[str]

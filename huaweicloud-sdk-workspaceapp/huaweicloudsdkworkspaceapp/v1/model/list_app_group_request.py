@@ -41,15 +41,15 @@ class ListAppGroupRequest:
 
         The model defined in huaweicloud sdk
 
-        :param limit: 单次查询的大小[1-100]。
+        :param limit: 单次查询的大小[1-100]，默认值10。
         :type limit: int
-        :param offset: 查询的偏移量。
+        :param offset: 查询的偏移量，默认值0。
         :type offset: int
         :param app_server_group_id: 应用服务器组ID。
         :type app_server_group_id: str
         :param app_group_id: 应用组ID。
         :type app_group_id: str
-        :param name: 应用组名称
+        :param name: 应用组名称。
         :type name: str
         :param authorization_type: 授权类型： * &#x60;APP&#x60; - 应用 * &#x60;APP_GROUP&#x60; - 应用组
         :type authorization_type: str
@@ -87,7 +87,7 @@ class ListAppGroupRequest:
     def limit(self):
         r"""Gets the limit of this ListAppGroupRequest.
 
-        单次查询的大小[1-100]。
+        单次查询的大小[1-100]，默认值10。
 
         :return: The limit of this ListAppGroupRequest.
         :rtype: int
@@ -98,7 +98,7 @@ class ListAppGroupRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListAppGroupRequest.
 
-        单次查询的大小[1-100]。
+        单次查询的大小[1-100]，默认值10。
 
         :param limit: The limit of this ListAppGroupRequest.
         :type limit: int
@@ -109,7 +109,7 @@ class ListAppGroupRequest:
     def offset(self):
         r"""Gets the offset of this ListAppGroupRequest.
 
-        查询的偏移量。
+        查询的偏移量，默认值0。
 
         :return: The offset of this ListAppGroupRequest.
         :rtype: int
@@ -120,7 +120,7 @@ class ListAppGroupRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListAppGroupRequest.
 
-        查询的偏移量。
+        查询的偏移量，默认值0。
 
         :param offset: The offset of this ListAppGroupRequest.
         :type offset: int
@@ -175,7 +175,7 @@ class ListAppGroupRequest:
     def name(self):
         r"""Gets the name of this ListAppGroupRequest.
 
-        应用组名称
+        应用组名称。
 
         :return: The name of this ListAppGroupRequest.
         :rtype: str
@@ -186,7 +186,7 @@ class ListAppGroupRequest:
     def name(self, name):
         r"""Sets the name of this ListAppGroupRequest.
 
-        应用组名称
+        应用组名称。
 
         :param name: The name of this ListAppGroupRequest.
         :type name: str

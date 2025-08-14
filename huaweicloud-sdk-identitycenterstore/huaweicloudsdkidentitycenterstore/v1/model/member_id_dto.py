@@ -29,7 +29,7 @@ class MemberIdDto:
 
         The model defined in huaweicloud sdk
 
-        :param user_id: 身份源中IAM身份中心用户的全局唯一标识符（ID）
+        :param user_id: 身份源中IdentityCenter用户的全局唯一标识符（ID）
         :type user_id: str
         """
         
@@ -44,7 +44,7 @@ class MemberIdDto:
     def user_id(self):
         r"""Gets the user_id of this MemberIdDto.
 
-        身份源中IAM身份中心用户的全局唯一标识符（ID）
+        身份源中IdentityCenter用户的全局唯一标识符（ID）
 
         :return: The user_id of this MemberIdDto.
         :rtype: str
@@ -55,7 +55,7 @@ class MemberIdDto:
     def user_id(self, user_id):
         r"""Sets the user_id of this MemberIdDto.
 
-        身份源中IAM身份中心用户的全局唯一标识符（ID）
+        身份源中IdentityCenter用户的全局唯一标识符（ID）
 
         :param user_id: The user_id of this MemberIdDto.
         :type user_id: str

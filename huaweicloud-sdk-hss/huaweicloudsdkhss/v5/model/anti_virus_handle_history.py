@@ -63,23 +63,23 @@ class AntiVirusHandleHistory:
         :type malware_type: str
         :param malware_name: 病毒名称
         :type malware_name: str
-        :param severity: 威胁等级，包含如下:   - Security：安全   - Low: 低危   - Medium: 中危   - High: 高危   - Critical: 危急
+        :param severity: **参数解释**： 威胁等级 **取值范围**： - Security：安全 - Low：低危 - Medium：中危 - High：高危 - Critical：危急 
         :type severity: str
-        :param file_path: 文件路径
+        :param file_path: **参数解释**： 文件路径 **取值范围**： 字符长度1-256位 
         :type file_path: str
         :param host_name: **参数解释**: 服务器名称 **取值范围**: 字符长度1-256位 
         :type host_name: str
-        :param private_ip: 服务器私有IP
+        :param private_ip: **参数解释**： 服务器私有IP **取值范围**： 字符长度1-128位 
         :type private_ip: str
-        :param public_ip: 弹性公网IP地址
+        :param public_ip: **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位 
         :type public_ip: str
         :param asset_value: 资产重要性，包含如下3种   - important ：重要资产   - common ：一般资产   - test ：测试资产
         :type asset_value: str
-        :param occur_time: 发生时间，毫秒
+        :param occur_time: **参数解释**： 发生时间，毫秒 **取值范围**： 最小值0，最大值9223372036854775807 
         :type occur_time: int
-        :param handle_status: 处置状态，包含如下:   - unhandled：未处理   - handled: 已处理
+        :param handle_status: **参数解释**： 处理状态 **取值范围**： - unhandled：未处理 - handled：已处理 
         :type handle_status: str
-        :param handle_method: 处理方式，包含如下:   - mark_as_handled : 手动处理   - ignore : 忽略   - add_to_alarm_whitelist : 加入告警白名单   - isolate_and_kill : 隔离文件
+        :param handle_method: 处理方式，包含如下:   - mark_as_handled：手动处理   - ignore：忽略   - add_to_alarm_whitelist：加入告警白名单   - isolate_and_kill：隔离文件
         :type handle_method: str
         :param notes: 备注信息
         :type notes: str
@@ -209,7 +209,7 @@ class AntiVirusHandleHistory:
     def severity(self):
         r"""Gets the severity of this AntiVirusHandleHistory.
 
-        威胁等级，包含如下:   - Security：安全   - Low: 低危   - Medium: 中危   - High: 高危   - Critical: 危急
+        **参数解释**： 威胁等级 **取值范围**： - Security：安全 - Low：低危 - Medium：中危 - High：高危 - Critical：危急 
 
         :return: The severity of this AntiVirusHandleHistory.
         :rtype: str
@@ -220,7 +220,7 @@ class AntiVirusHandleHistory:
     def severity(self, severity):
         r"""Sets the severity of this AntiVirusHandleHistory.
 
-        威胁等级，包含如下:   - Security：安全   - Low: 低危   - Medium: 中危   - High: 高危   - Critical: 危急
+        **参数解释**： 威胁等级 **取值范围**： - Security：安全 - Low：低危 - Medium：中危 - High：高危 - Critical：危急 
 
         :param severity: The severity of this AntiVirusHandleHistory.
         :type severity: str
@@ -231,7 +231,7 @@ class AntiVirusHandleHistory:
     def file_path(self):
         r"""Gets the file_path of this AntiVirusHandleHistory.
 
-        文件路径
+        **参数解释**： 文件路径 **取值范围**： 字符长度1-256位 
 
         :return: The file_path of this AntiVirusHandleHistory.
         :rtype: str
@@ -242,7 +242,7 @@ class AntiVirusHandleHistory:
     def file_path(self, file_path):
         r"""Sets the file_path of this AntiVirusHandleHistory.
 
-        文件路径
+        **参数解释**： 文件路径 **取值范围**： 字符长度1-256位 
 
         :param file_path: The file_path of this AntiVirusHandleHistory.
         :type file_path: str
@@ -275,7 +275,7 @@ class AntiVirusHandleHistory:
     def private_ip(self):
         r"""Gets the private_ip of this AntiVirusHandleHistory.
 
-        服务器私有IP
+        **参数解释**： 服务器私有IP **取值范围**： 字符长度1-128位 
 
         :return: The private_ip of this AntiVirusHandleHistory.
         :rtype: str
@@ -286,7 +286,7 @@ class AntiVirusHandleHistory:
     def private_ip(self, private_ip):
         r"""Sets the private_ip of this AntiVirusHandleHistory.
 
-        服务器私有IP
+        **参数解释**： 服务器私有IP **取值范围**： 字符长度1-128位 
 
         :param private_ip: The private_ip of this AntiVirusHandleHistory.
         :type private_ip: str
@@ -297,7 +297,7 @@ class AntiVirusHandleHistory:
     def public_ip(self):
         r"""Gets the public_ip of this AntiVirusHandleHistory.
 
-        弹性公网IP地址
+        **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位 
 
         :return: The public_ip of this AntiVirusHandleHistory.
         :rtype: str
@@ -308,7 +308,7 @@ class AntiVirusHandleHistory:
     def public_ip(self, public_ip):
         r"""Sets the public_ip of this AntiVirusHandleHistory.
 
-        弹性公网IP地址
+        **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位 
 
         :param public_ip: The public_ip of this AntiVirusHandleHistory.
         :type public_ip: str
@@ -341,7 +341,7 @@ class AntiVirusHandleHistory:
     def occur_time(self):
         r"""Gets the occur_time of this AntiVirusHandleHistory.
 
-        发生时间，毫秒
+        **参数解释**： 发生时间，毫秒 **取值范围**： 最小值0，最大值9223372036854775807 
 
         :return: The occur_time of this AntiVirusHandleHistory.
         :rtype: int
@@ -352,7 +352,7 @@ class AntiVirusHandleHistory:
     def occur_time(self, occur_time):
         r"""Sets the occur_time of this AntiVirusHandleHistory.
 
-        发生时间，毫秒
+        **参数解释**： 发生时间，毫秒 **取值范围**： 最小值0，最大值9223372036854775807 
 
         :param occur_time: The occur_time of this AntiVirusHandleHistory.
         :type occur_time: int
@@ -363,7 +363,7 @@ class AntiVirusHandleHistory:
     def handle_status(self):
         r"""Gets the handle_status of this AntiVirusHandleHistory.
 
-        处置状态，包含如下:   - unhandled：未处理   - handled: 已处理
+        **参数解释**： 处理状态 **取值范围**： - unhandled：未处理 - handled：已处理 
 
         :return: The handle_status of this AntiVirusHandleHistory.
         :rtype: str
@@ -374,7 +374,7 @@ class AntiVirusHandleHistory:
     def handle_status(self, handle_status):
         r"""Sets the handle_status of this AntiVirusHandleHistory.
 
-        处置状态，包含如下:   - unhandled：未处理   - handled: 已处理
+        **参数解释**： 处理状态 **取值范围**： - unhandled：未处理 - handled：已处理 
 
         :param handle_status: The handle_status of this AntiVirusHandleHistory.
         :type handle_status: str
@@ -385,7 +385,7 @@ class AntiVirusHandleHistory:
     def handle_method(self):
         r"""Gets the handle_method of this AntiVirusHandleHistory.
 
-        处理方式，包含如下:   - mark_as_handled : 手动处理   - ignore : 忽略   - add_to_alarm_whitelist : 加入告警白名单   - isolate_and_kill : 隔离文件
+        处理方式，包含如下:   - mark_as_handled：手动处理   - ignore：忽略   - add_to_alarm_whitelist：加入告警白名单   - isolate_and_kill：隔离文件
 
         :return: The handle_method of this AntiVirusHandleHistory.
         :rtype: str
@@ -396,7 +396,7 @@ class AntiVirusHandleHistory:
     def handle_method(self, handle_method):
         r"""Sets the handle_method of this AntiVirusHandleHistory.
 
-        处理方式，包含如下:   - mark_as_handled : 手动处理   - ignore : 忽略   - add_to_alarm_whitelist : 加入告警白名单   - isolate_and_kill : 隔离文件
+        处理方式，包含如下:   - mark_as_handled：手动处理   - ignore：忽略   - add_to_alarm_whitelist：加入告警白名单   - isolate_and_kill：隔离文件
 
         :param handle_method: The handle_method of this AntiVirusHandleHistory.
         :type handle_method: str

@@ -47,7 +47,7 @@ class ListPolicyGroupRequest:
         :type limit: int
         :param group_name: **参数解释**: 策略组名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
         :type group_name: str
-        :param container_mode: **参数解释**: 是否只查询容器版策略组 **约束限制**: 不涉及 **取值范围**: true: 只查询容器版策略组 false: 查询全部策略组 **默认取值**: false 
+        :param container_mode: **参数解释**: 是否只查询容器版策略组 **约束限制**: 不涉及 **取值范围**: - true: 只查询容器版策略组 - false: 查询全部策略组 **默认取值**: false 
         :type container_mode: bool
         :param group_id: **参数解释**: 策略组ID **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
         :type group_id: str
@@ -168,7 +168,7 @@ class ListPolicyGroupRequest:
     def container_mode(self):
         r"""Gets the container_mode of this ListPolicyGroupRequest.
 
-        **参数解释**: 是否只查询容器版策略组 **约束限制**: 不涉及 **取值范围**: true: 只查询容器版策略组 false: 查询全部策略组 **默认取值**: false 
+        **参数解释**: 是否只查询容器版策略组 **约束限制**: 不涉及 **取值范围**: - true: 只查询容器版策略组 - false: 查询全部策略组 **默认取值**: false 
 
         :return: The container_mode of this ListPolicyGroupRequest.
         :rtype: bool
@@ -179,7 +179,7 @@ class ListPolicyGroupRequest:
     def container_mode(self, container_mode):
         r"""Sets the container_mode of this ListPolicyGroupRequest.
 
-        **参数解释**: 是否只查询容器版策略组 **约束限制**: 不涉及 **取值范围**: true: 只查询容器版策略组 false: 查询全部策略组 **默认取值**: false 
+        **参数解释**: 是否只查询容器版策略组 **约束限制**: 不涉及 **取值范围**: - true: 只查询容器版策略组 - false: 查询全部策略组 **默认取值**: false 
 
         :param container_mode: The container_mode of this ListPolicyGroupRequest.
         :type container_mode: bool

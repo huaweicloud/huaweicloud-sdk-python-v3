@@ -36,7 +36,7 @@ class ListInstancesRequest:
 
         :param x_security_token: 如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
         :type x_security_token: str
-        :param limit: 每个请求返回的最大结果数
+        :param limit: 每个请求返回的最大结果数。
         :type limit: int
         :param marker: 分页标记
         :type marker: str
@@ -82,7 +82,7 @@ class ListInstancesRequest:
     def limit(self):
         r"""Gets the limit of this ListInstancesRequest.
 
-        每个请求返回的最大结果数
+        每个请求返回的最大结果数。
 
         :return: The limit of this ListInstancesRequest.
         :rtype: int
@@ -93,7 +93,7 @@ class ListInstancesRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListInstancesRequest.
 
-        每个请求返回的最大结果数
+        每个请求返回的最大结果数。
 
         :param limit: The limit of this ListInstancesRequest.
         :type limit: int

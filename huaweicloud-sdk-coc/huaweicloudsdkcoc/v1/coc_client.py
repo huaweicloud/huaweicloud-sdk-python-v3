@@ -559,6 +559,143 @@ class CocClient(Client):
 
         return http_info
 
+    def create_assess_task(self, request):
+        r"""创建应用评估任务
+
+        创建应用评估任务
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateAssessTask
+        :type request: :class:`huaweicloudsdkcoc.v1.CreateAssessTaskRequest`
+        :rtype: :class:`huaweicloudsdkcoc.v1.CreateAssessTaskResponse`
+        """
+        http_info = self._create_assess_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_assess_task_invoker(self, request):
+        http_info = self._create_assess_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_assess_task_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/assess-tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAssessTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_assess_task(self, request):
+        r"""分页查询评估任务列表
+
+        分页查询评估任务列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListAssessTask
+        :type request: :class:`huaweicloudsdkcoc.v1.ListAssessTaskRequest`
+        :rtype: :class:`huaweicloudsdkcoc.v1.ListAssessTaskResponse`
+        """
+        http_info = self._list_assess_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_assess_task_invoker(self, request):
+        http_info = self._list_assess_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_assess_task_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/assess-tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAssessTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'application_id' in local_var_params:
+            query_params.append(('application_id', local_var_params['application_id']))
+        if 'assess_status_list' in local_var_params:
+            query_params.append(('assess_status_list', local_var_params['assess_status_list']))
+            collection_formats['assess_status_list'] = 'csv'
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def update_change(self, request):
         r"""UpdateChange 更新变更单
 

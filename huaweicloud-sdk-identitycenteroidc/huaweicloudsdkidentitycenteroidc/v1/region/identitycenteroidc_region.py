@@ -36,6 +36,10 @@ class IdentityCenterOIDCRegion:
                         "https://oidc.cn-south-1.myhuaweicloud.com")
     CN_SOUTHWEST_2 = Region("cn-southwest-2",
                         "https://oidc.cn-southwest-2.myhuaweicloud.com")
+    AF_NORTH_1 = Region("af-north-1",
+                        "https://oidc.af-north-1.myhuaweicloud.com")
+    AP_SOUTHEAST_5 = Region("ap-southeast-5",
+                        "https://oidc.ap-southeast-5.myhuaweicloud.com")
 
     static_fields = {
         "cn-east-3": CN_EAST_3,
@@ -53,6 +57,8 @@ class IdentityCenterOIDCRegion:
         "sa-brazil-1": SA_BRAZIL_1,
         "cn-south-1": CN_SOUTH_1,
         "cn-southwest-2": CN_SOUTHWEST_2,
+        "af-north-1": AF_NORTH_1,
+        "ap-southeast-5": AP_SOUTHEAST_5,
     }
 
     @classmethod

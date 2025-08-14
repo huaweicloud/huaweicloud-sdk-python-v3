@@ -32,7 +32,7 @@ class ListProcessesHostResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total_num: 主机统计信息总数,
+        :param total_num: 主机统计信息总数
         :type total_num: int
         :param data_list: 主机统计信息列表
         :type data_list: list[:class:`huaweicloudsdkhss.v5.ProcessesHostResponseInfo`]
@@ -53,7 +53,7 @@ class ListProcessesHostResponse(SdkResponse):
     def total_num(self):
         r"""Gets the total_num of this ListProcessesHostResponse.
 
-        主机统计信息总数,
+        主机统计信息总数
 
         :return: The total_num of this ListProcessesHostResponse.
         :rtype: int
@@ -64,7 +64,7 @@ class ListProcessesHostResponse(SdkResponse):
     def total_num(self, total_num):
         r"""Sets the total_num of this ListProcessesHostResponse.
 
-        主机统计信息总数,
+        主机统计信息总数
 
         :param total_num: The total_num of this ListProcessesHostResponse.
         :type total_num: int

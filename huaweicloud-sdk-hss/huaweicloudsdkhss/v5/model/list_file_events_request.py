@@ -53,9 +53,9 @@ class ListFileEventsRequest:
         :type enterprise_project_id: str
         :param host_name: **参数解释**: 服务器名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
         :type host_name: str
-        :param begin_time: **参数解释**: 开始时间，13位时间戳 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值9223372036854775807 **默认取值**: 
+        :param begin_time: **参数解释**: 开始时间，13位时间戳 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值9223372036854775807 **默认取值**: 不涉及 
         :type begin_time: int
-        :param end_time: **参数解释**: 结束时间，13位时间戳 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值9223372036854775807 **默认取值**: 
+        :param end_time: **参数解释**: 结束时间，13位时间戳 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值9223372036854775807 **默认取值**: 不涉及 
         :type end_time: int
         :param file_name: 文件名称
         :type file_name: str
@@ -157,7 +157,7 @@ class ListFileEventsRequest:
     def begin_time(self):
         r"""Gets the begin_time of this ListFileEventsRequest.
 
-        **参数解释**: 开始时间，13位时间戳 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值9223372036854775807 **默认取值**: 
+        **参数解释**: 开始时间，13位时间戳 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值9223372036854775807 **默认取值**: 不涉及 
 
         :return: The begin_time of this ListFileEventsRequest.
         :rtype: int
@@ -168,7 +168,7 @@ class ListFileEventsRequest:
     def begin_time(self, begin_time):
         r"""Sets the begin_time of this ListFileEventsRequest.
 
-        **参数解释**: 开始时间，13位时间戳 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值9223372036854775807 **默认取值**: 
+        **参数解释**: 开始时间，13位时间戳 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值9223372036854775807 **默认取值**: 不涉及 
 
         :param begin_time: The begin_time of this ListFileEventsRequest.
         :type begin_time: int
@@ -179,7 +179,7 @@ class ListFileEventsRequest:
     def end_time(self):
         r"""Gets the end_time of this ListFileEventsRequest.
 
-        **参数解释**: 结束时间，13位时间戳 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值9223372036854775807 **默认取值**: 
+        **参数解释**: 结束时间，13位时间戳 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值9223372036854775807 **默认取值**: 不涉及 
 
         :return: The end_time of this ListFileEventsRequest.
         :rtype: int
@@ -190,7 +190,7 @@ class ListFileEventsRequest:
     def end_time(self, end_time):
         r"""Sets the end_time of this ListFileEventsRequest.
 
-        **参数解释**: 结束时间，13位时间戳 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值9223372036854775807 **默认取值**: 
+        **参数解释**: 结束时间，13位时间戳 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值9223372036854775807 **默认取值**: 不涉及 
 
         :param end_time: The end_time of this ListFileEventsRequest.
         :type end_time: int

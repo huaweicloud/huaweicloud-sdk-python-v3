@@ -42,15 +42,15 @@ class ListAccountAssignmentsRequest:
 
         :param x_security_token: 如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
         :type x_security_token: str
-        :param instance_id: IAM身份中心实例的全局唯一标识符（ID）。
+        :param instance_id: IAM Identity Center实例的全局唯一标识符（ID）
         :type instance_id: str
-        :param limit: 每个请求返回的最大结果数
+        :param limit: 每个请求返回的最大结果数。
         :type limit: int
         :param marker: 分页标记
         :type marker: str
-        :param account_id: 账号的唯一身份标识
+        :param account_id: The identifier of the account from which to list the assignments.
         :type account_id: str
-        :param permission_set_id: 指定权限集的唯一身份标识.
+        :param permission_set_id: The identifier of the permission set from which to list assignments.
         :type permission_set_id: str
         """
         
@@ -101,7 +101,7 @@ class ListAccountAssignmentsRequest:
     def instance_id(self):
         r"""Gets the instance_id of this ListAccountAssignmentsRequest.
 
-        IAM身份中心实例的全局唯一标识符（ID）。
+        IAM Identity Center实例的全局唯一标识符（ID）
 
         :return: The instance_id of this ListAccountAssignmentsRequest.
         :rtype: str
@@ -112,7 +112,7 @@ class ListAccountAssignmentsRequest:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this ListAccountAssignmentsRequest.
 
-        IAM身份中心实例的全局唯一标识符（ID）。
+        IAM Identity Center实例的全局唯一标识符（ID）
 
         :param instance_id: The instance_id of this ListAccountAssignmentsRequest.
         :type instance_id: str
@@ -123,7 +123,7 @@ class ListAccountAssignmentsRequest:
     def limit(self):
         r"""Gets the limit of this ListAccountAssignmentsRequest.
 
-        每个请求返回的最大结果数
+        每个请求返回的最大结果数。
 
         :return: The limit of this ListAccountAssignmentsRequest.
         :rtype: int
@@ -134,7 +134,7 @@ class ListAccountAssignmentsRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListAccountAssignmentsRequest.
 
-        每个请求返回的最大结果数
+        每个请求返回的最大结果数。
 
         :param limit: The limit of this ListAccountAssignmentsRequest.
         :type limit: int
@@ -167,7 +167,7 @@ class ListAccountAssignmentsRequest:
     def account_id(self):
         r"""Gets the account_id of this ListAccountAssignmentsRequest.
 
-        账号的唯一身份标识
+        The identifier of the account from which to list the assignments.
 
         :return: The account_id of this ListAccountAssignmentsRequest.
         :rtype: str
@@ -178,7 +178,7 @@ class ListAccountAssignmentsRequest:
     def account_id(self, account_id):
         r"""Sets the account_id of this ListAccountAssignmentsRequest.
 
-        账号的唯一身份标识
+        The identifier of the account from which to list the assignments.
 
         :param account_id: The account_id of this ListAccountAssignmentsRequest.
         :type account_id: str
@@ -189,7 +189,7 @@ class ListAccountAssignmentsRequest:
     def permission_set_id(self):
         r"""Gets the permission_set_id of this ListAccountAssignmentsRequest.
 
-        指定权限集的唯一身份标识.
+        The identifier of the permission set from which to list assignments.
 
         :return: The permission_set_id of this ListAccountAssignmentsRequest.
         :rtype: str
@@ -200,7 +200,7 @@ class ListAccountAssignmentsRequest:
     def permission_set_id(self, permission_set_id):
         r"""Sets the permission_set_id of this ListAccountAssignmentsRequest.
 
-        指定权限集的唯一身份标识.
+        The identifier of the permission set from which to list assignments.
 
         :param permission_set_id: The permission_set_id of this ListAccountAssignmentsRequest.
         :type permission_set_id: str

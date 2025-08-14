@@ -49,7 +49,7 @@ class UpdateWebTamperHostPolicyRequestInfo:
         :type timing_off_config_info: :class:`huaweicloudsdkhss.v5.WebTamperTimingOffConfigInfoRequestInfo`
         :param enable_rasp_protect: 动态网页防篡改开启状态
         :type enable_rasp_protect: bool
-        :param rasp_path: rasp path
+        :param rasp_path: 动态网页防篡改的Tomcat bin目录
         :type rasp_path: str
         :param enable_privileged_process: 特权进程状态
         :type enable_privileged_process: bool
@@ -167,7 +167,7 @@ class UpdateWebTamperHostPolicyRequestInfo:
     def rasp_path(self):
         r"""Gets the rasp_path of this UpdateWebTamperHostPolicyRequestInfo.
 
-        rasp path
+        动态网页防篡改的Tomcat bin目录
 
         :return: The rasp_path of this UpdateWebTamperHostPolicyRequestInfo.
         :rtype: str
@@ -178,7 +178,7 @@ class UpdateWebTamperHostPolicyRequestInfo:
     def rasp_path(self, rasp_path):
         r"""Sets the rasp_path of this UpdateWebTamperHostPolicyRequestInfo.
 
-        rasp path
+        动态网页防篡改的Tomcat bin目录
 
         :param rasp_path: The rasp_path of this UpdateWebTamperHostPolicyRequestInfo.
         :type rasp_path: str

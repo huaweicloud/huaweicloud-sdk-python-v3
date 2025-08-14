@@ -29,7 +29,7 @@ class EnableAutoRollbackPrimitiveTypeHolder:
 
         The model defined in huaweicloud sdk
 
-        :param enable_auto_rollback: 自动回滚的标识位，如果不传默认为false，即默认不开启资源栈自动回滚（自动回滚开启后，如果部署失败，则会自动回滚，并返回上一个稳定状态）  *在UpdateStack API中，如果该参数未在RequestBody中给予，则不会对资源栈的自动回滚属性进行更新* *该属性与使用模板导入资源功能互斥，如果堆栈的自动回滚设置为true，则不允许部署包含导入资源的模板*
+        :param enable_auto_rollback: 自动回滚的标识位，如果不传默认为false，即默认不开启资源栈自动回滚（自动回滚开启后，如果部署失败，则会自动回滚，并返回上一个稳定状态）  *在UpdateStack API中，如果该参数未在RequestBody中给予，则不会对资源栈的自动回滚属性进行更新* *该属性与使用模板导入资源功能互斥，如果资源栈的自动回滚设置为true，则不允许部署包含导入资源的模板*
         :type enable_auto_rollback: bool
         """
         
@@ -45,7 +45,7 @@ class EnableAutoRollbackPrimitiveTypeHolder:
     def enable_auto_rollback(self):
         r"""Gets the enable_auto_rollback of this EnableAutoRollbackPrimitiveTypeHolder.
 
-        自动回滚的标识位，如果不传默认为false，即默认不开启资源栈自动回滚（自动回滚开启后，如果部署失败，则会自动回滚，并返回上一个稳定状态）  *在UpdateStack API中，如果该参数未在RequestBody中给予，则不会对资源栈的自动回滚属性进行更新* *该属性与使用模板导入资源功能互斥，如果堆栈的自动回滚设置为true，则不允许部署包含导入资源的模板*
+        自动回滚的标识位，如果不传默认为false，即默认不开启资源栈自动回滚（自动回滚开启后，如果部署失败，则会自动回滚，并返回上一个稳定状态）  *在UpdateStack API中，如果该参数未在RequestBody中给予，则不会对资源栈的自动回滚属性进行更新* *该属性与使用模板导入资源功能互斥，如果资源栈的自动回滚设置为true，则不允许部署包含导入资源的模板*
 
         :return: The enable_auto_rollback of this EnableAutoRollbackPrimitiveTypeHolder.
         :rtype: bool
@@ -56,7 +56,7 @@ class EnableAutoRollbackPrimitiveTypeHolder:
     def enable_auto_rollback(self, enable_auto_rollback):
         r"""Sets the enable_auto_rollback of this EnableAutoRollbackPrimitiveTypeHolder.
 
-        自动回滚的标识位，如果不传默认为false，即默认不开启资源栈自动回滚（自动回滚开启后，如果部署失败，则会自动回滚，并返回上一个稳定状态）  *在UpdateStack API中，如果该参数未在RequestBody中给予，则不会对资源栈的自动回滚属性进行更新* *该属性与使用模板导入资源功能互斥，如果堆栈的自动回滚设置为true，则不允许部署包含导入资源的模板*
+        自动回滚的标识位，如果不传默认为false，即默认不开启资源栈自动回滚（自动回滚开启后，如果部署失败，则会自动回滚，并返回上一个稳定状态）  *在UpdateStack API中，如果该参数未在RequestBody中给予，则不会对资源栈的自动回滚属性进行更新* *该属性与使用模板导入资源功能互斥，如果资源栈的自动回滚设置为true，则不允许部署包含导入资源的模板*
 
         :param enable_auto_rollback: The enable_auto_rollback of this EnableAutoRollbackPrimitiveTypeHolder.
         :type enable_auto_rollback: bool

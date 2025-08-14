@@ -44,17 +44,17 @@ class ListPermissionSetsRequest:
 
         :param x_security_token: 如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
         :type x_security_token: str
-        :param instance_id: IAM身份中心实例的全局唯一标识符（ID）。
+        :param instance_id: IAM Identity Center实例的全局唯一标识符（ID）
         :type instance_id: str
-        :param limit: 每个请求返回的最大结果数
+        :param limit: 每个请求返回的最大结果数。
         :type limit: int
         :param marker: 分页标记
         :type marker: str
-        :param permission_set_id: 权限集的全局唯一标识符（ID）
+        :param permission_set_id: 权限集的全局唯一标识符（ID）。
         :type permission_set_id: str
-        :param permission_urn: 权限集urn
+        :param permission_urn: 权限集的全局唯一URN。
         :type permission_urn: str
-        :param name: 权限集名称
+        :param name: 权限集名称。
         :type name: str
         """
         
@@ -109,7 +109,7 @@ class ListPermissionSetsRequest:
     def instance_id(self):
         r"""Gets the instance_id of this ListPermissionSetsRequest.
 
-        IAM身份中心实例的全局唯一标识符（ID）。
+        IAM Identity Center实例的全局唯一标识符（ID）
 
         :return: The instance_id of this ListPermissionSetsRequest.
         :rtype: str
@@ -120,7 +120,7 @@ class ListPermissionSetsRequest:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this ListPermissionSetsRequest.
 
-        IAM身份中心实例的全局唯一标识符（ID）。
+        IAM Identity Center实例的全局唯一标识符（ID）
 
         :param instance_id: The instance_id of this ListPermissionSetsRequest.
         :type instance_id: str
@@ -131,7 +131,7 @@ class ListPermissionSetsRequest:
     def limit(self):
         r"""Gets the limit of this ListPermissionSetsRequest.
 
-        每个请求返回的最大结果数
+        每个请求返回的最大结果数。
 
         :return: The limit of this ListPermissionSetsRequest.
         :rtype: int
@@ -142,7 +142,7 @@ class ListPermissionSetsRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListPermissionSetsRequest.
 
-        每个请求返回的最大结果数
+        每个请求返回的最大结果数。
 
         :param limit: The limit of this ListPermissionSetsRequest.
         :type limit: int
@@ -175,7 +175,7 @@ class ListPermissionSetsRequest:
     def permission_set_id(self):
         r"""Gets the permission_set_id of this ListPermissionSetsRequest.
 
-        权限集的全局唯一标识符（ID）
+        权限集的全局唯一标识符（ID）。
 
         :return: The permission_set_id of this ListPermissionSetsRequest.
         :rtype: str
@@ -186,7 +186,7 @@ class ListPermissionSetsRequest:
     def permission_set_id(self, permission_set_id):
         r"""Sets the permission_set_id of this ListPermissionSetsRequest.
 
-        权限集的全局唯一标识符（ID）
+        权限集的全局唯一标识符（ID）。
 
         :param permission_set_id: The permission_set_id of this ListPermissionSetsRequest.
         :type permission_set_id: str
@@ -197,7 +197,7 @@ class ListPermissionSetsRequest:
     def permission_urn(self):
         r"""Gets the permission_urn of this ListPermissionSetsRequest.
 
-        权限集urn
+        权限集的全局唯一URN。
 
         :return: The permission_urn of this ListPermissionSetsRequest.
         :rtype: str
@@ -208,7 +208,7 @@ class ListPermissionSetsRequest:
     def permission_urn(self, permission_urn):
         r"""Sets the permission_urn of this ListPermissionSetsRequest.
 
-        权限集urn
+        权限集的全局唯一URN。
 
         :param permission_urn: The permission_urn of this ListPermissionSetsRequest.
         :type permission_urn: str
@@ -219,7 +219,7 @@ class ListPermissionSetsRequest:
     def name(self):
         r"""Gets the name of this ListPermissionSetsRequest.
 
-        权限集名称
+        权限集名称。
 
         :return: The name of this ListPermissionSetsRequest.
         :rtype: str
@@ -230,7 +230,7 @@ class ListPermissionSetsRequest:
     def name(self, name):
         r"""Sets the name of this ListPermissionSetsRequest.
 
-        权限集名称
+        权限集名称。
 
         :param name: The name of this ListPermissionSetsRequest.
         :type name: str

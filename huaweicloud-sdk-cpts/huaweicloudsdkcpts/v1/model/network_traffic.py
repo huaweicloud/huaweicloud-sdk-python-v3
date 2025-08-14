@@ -21,7 +21,7 @@ class NetworkTraffic:
         'max_down_stream': 'int',
         'max_network_traffic': 'int',
         'max_upstream': 'int',
-        'min_network_traffic': 'int'
+        'min_network_traffic': 'float'
     }
 
     attribute_map = {
@@ -46,7 +46,7 @@ class NetworkTraffic:
         :param max_upstream: 最大上行带宽
         :type max_upstream: int
         :param min_network_traffic: 最小网络流量
-        :type min_network_traffic: int
+        :type min_network_traffic: float
         """
         
         
@@ -164,7 +164,7 @@ class NetworkTraffic:
         最小网络流量
 
         :return: The min_network_traffic of this NetworkTraffic.
-        :rtype: int
+        :rtype: float
         """
         return self._min_network_traffic
 
@@ -175,7 +175,7 @@ class NetworkTraffic:
         最小网络流量
 
         :param min_network_traffic: The min_network_traffic of this NetworkTraffic.
-        :type min_network_traffic: int
+        :type min_network_traffic: float
         """
         self._min_network_traffic = min_network_traffic
 

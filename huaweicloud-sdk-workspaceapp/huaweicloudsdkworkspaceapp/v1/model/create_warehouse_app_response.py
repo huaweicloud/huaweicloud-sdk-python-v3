@@ -35,7 +35,8 @@ class CreateWarehouseAppResponse(SdkResponse):
         'verify_time': 'datetime',
         'verify_status': 'VerifyStatusEnum',
         'verify_comment': 'str',
-        'app_icon': 'str'
+        'app_icon': 'str',
+        'app_extended_info': 'AppExtendedInfo'
     }
 
     attribute_map = {
@@ -56,10 +57,11 @@ class CreateWarehouseAppResponse(SdkResponse):
         'verify_time': 'verify_time',
         'verify_status': 'verify_status',
         'verify_comment': 'verify_comment',
-        'app_icon': 'app_icon'
+        'app_icon': 'app_icon',
+        'app_extended_info': 'app_extended_info'
     }
 
-    def __init__(self, id=None, app_id=None, tenant_id=None, app_name=None, app_category=None, os_type=None, version_id=None, version_name=None, appfile_store_path=None, app_file_size=None, app_description=None, appicon_store_path=None, create_time=None, modify_time=None, verify_time=None, verify_status=None, verify_comment=None, app_icon=None):
+    def __init__(self, id=None, app_id=None, tenant_id=None, app_name=None, app_category=None, os_type=None, version_id=None, version_name=None, appfile_store_path=None, app_file_size=None, app_description=None, appicon_store_path=None, create_time=None, modify_time=None, verify_time=None, verify_status=None, verify_comment=None, app_icon=None, app_extended_info=None):
         r"""CreateWarehouseAppResponse
 
         The model defined in huaweicloud sdk
@@ -100,6 +102,8 @@ class CreateWarehouseAppResponse(SdkResponse):
         :type verify_comment: str
         :param app_icon: app的图标文件。
         :type app_icon: str
+        :param app_extended_info: 
+        :type app_extended_info: :class:`huaweicloudsdkworkspaceapp.v1.AppExtendedInfo`
         """
         
         super(CreateWarehouseAppResponse, self).__init__()
@@ -122,6 +126,7 @@ class CreateWarehouseAppResponse(SdkResponse):
         self._verify_status = None
         self._verify_comment = None
         self._app_icon = None
+        self._app_extended_info = None
         self.discriminator = None
 
         if id is not None:
@@ -160,6 +165,8 @@ class CreateWarehouseAppResponse(SdkResponse):
             self.verify_comment = verify_comment
         if app_icon is not None:
             self.app_icon = app_icon
+        if app_extended_info is not None:
+            self.app_extended_info = app_extended_info
 
     @property
     def id(self):
@@ -544,6 +551,24 @@ class CreateWarehouseAppResponse(SdkResponse):
         :type app_icon: str
         """
         self._app_icon = app_icon
+
+    @property
+    def app_extended_info(self):
+        r"""Gets the app_extended_info of this CreateWarehouseAppResponse.
+
+        :return: The app_extended_info of this CreateWarehouseAppResponse.
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.AppExtendedInfo`
+        """
+        return self._app_extended_info
+
+    @app_extended_info.setter
+    def app_extended_info(self, app_extended_info):
+        r"""Sets the app_extended_info of this CreateWarehouseAppResponse.
+
+        :param app_extended_info: The app_extended_info of this CreateWarehouseAppResponse.
+        :type app_extended_info: :class:`huaweicloudsdkworkspaceapp.v1.AppExtendedInfo`
+        """
+        self._app_extended_info = app_extended_info
 
     def to_dict(self):
         """Returns the model properties as a dict"""

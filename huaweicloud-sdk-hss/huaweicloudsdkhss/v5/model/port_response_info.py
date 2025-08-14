@@ -49,11 +49,11 @@ class PortResponseInfo:
         :type host_id: str
         :param laddr: **参数解释**: 监听ip **取值范围**: 字符长度1-128位 
         :type laddr: str
-        :param status: **参数解释**: 端口状态 **取值范围**: normal: 正常 danger: 危险 unknown: 未知 
+        :param status: **参数解释**: 端口状态 **取值范围**: - normal: 正常 - danger: 危险 - unknown: 未知 
         :type status: str
         :param port: **参数解释**: 端口号 **取值范围**: 最小值0，最大值65535 
         :type port: int
-        :param type: **参数解释**: 端口类型：目前包括TCP，UDP两种 **取值范围**: TCP: TCP类型的端口 UDP: UDP类型的端口 
+        :param type: **参数解释**: 端口类型：目前包括TCP，UDP两种 **取值范围**: - TCP: TCP类型的端口 - UDP: UDP类型的端口 
         :type type: str
         :param pid: **参数解释**: 进程ID **取值范围**: 最小值1，最大值65535 
         :type pid: int
@@ -61,7 +61,7 @@ class PortResponseInfo:
         :type path: str
         :param agent_id: **参数解释**: Agent ID **取值范围**: 字符长度1-64位 
         :type agent_id: str
-        :param container_id: **参数解释**: 容器 ID **取值范围**: 字符长度0-128位 
+        :param container_id: **参数解释**: 容器ID **取值范围**: 字符长度0-128位 
         :type container_id: str
         """
         
@@ -145,7 +145,7 @@ class PortResponseInfo:
     def status(self):
         r"""Gets the status of this PortResponseInfo.
 
-        **参数解释**: 端口状态 **取值范围**: normal: 正常 danger: 危险 unknown: 未知 
+        **参数解释**: 端口状态 **取值范围**: - normal: 正常 - danger: 危险 - unknown: 未知 
 
         :return: The status of this PortResponseInfo.
         :rtype: str
@@ -156,7 +156,7 @@ class PortResponseInfo:
     def status(self, status):
         r"""Sets the status of this PortResponseInfo.
 
-        **参数解释**: 端口状态 **取值范围**: normal: 正常 danger: 危险 unknown: 未知 
+        **参数解释**: 端口状态 **取值范围**: - normal: 正常 - danger: 危险 - unknown: 未知 
 
         :param status: The status of this PortResponseInfo.
         :type status: str
@@ -189,7 +189,7 @@ class PortResponseInfo:
     def type(self):
         r"""Gets the type of this PortResponseInfo.
 
-        **参数解释**: 端口类型：目前包括TCP，UDP两种 **取值范围**: TCP: TCP类型的端口 UDP: UDP类型的端口 
+        **参数解释**: 端口类型：目前包括TCP，UDP两种 **取值范围**: - TCP: TCP类型的端口 - UDP: UDP类型的端口 
 
         :return: The type of this PortResponseInfo.
         :rtype: str
@@ -200,7 +200,7 @@ class PortResponseInfo:
     def type(self, type):
         r"""Sets the type of this PortResponseInfo.
 
-        **参数解释**: 端口类型：目前包括TCP，UDP两种 **取值范围**: TCP: TCP类型的端口 UDP: UDP类型的端口 
+        **参数解释**: 端口类型：目前包括TCP，UDP两种 **取值范围**: - TCP: TCP类型的端口 - UDP: UDP类型的端口 
 
         :param type: The type of this PortResponseInfo.
         :type type: str
@@ -277,7 +277,7 @@ class PortResponseInfo:
     def container_id(self):
         r"""Gets the container_id of this PortResponseInfo.
 
-        **参数解释**: 容器 ID **取值范围**: 字符长度0-128位 
+        **参数解释**: 容器ID **取值范围**: 字符长度0-128位 
 
         :return: The container_id of this PortResponseInfo.
         :rtype: str
@@ -288,7 +288,7 @@ class PortResponseInfo:
     def container_id(self, container_id):
         r"""Sets the container_id of this PortResponseInfo.
 
-        **参数解释**: 容器 ID **取值范围**: 字符长度0-128位 
+        **参数解释**: 容器ID **取值范围**: 字符长度0-128位 
 
         :param container_id: The container_id of this PortResponseInfo.
         :type container_id: str

@@ -39,15 +39,15 @@ class ListAuthorizationMailRecordRequest:
 
         The model defined in huaweicloud sdk
 
-        :param limit: 单次查询的大小[1-100]。
+        :param limit: 单次查询的大小[1-100]，默认值10。
         :type limit: int
-        :param offset: 查询的偏移量。
+        :param offset: 查询的偏移量，默认值0。
         :type offset: int
         :param app_group_id: 应用组ID。
         :type app_group_id: str
         :param account: 用户(组)名称。
         :type account: str
-        :param mail_send_type: 授权类型： - ADD_GROUP_AUTHORIZATION 添加组授权 - DEL_GROUP_AUTHORIZATION 删除组授权
+        :param mail_send_type: 授权类型： - ADD_GROUP_AUTHORIZATION 添加组授权 - DEL_GROUP_AUTHORIZATION 删除组授权。
         :type mail_send_type: str
         :param mail_send_result: 邮件发送结果(SUCCESS|FAIL)。
         :type mail_send_result: str
@@ -79,7 +79,7 @@ class ListAuthorizationMailRecordRequest:
     def limit(self):
         r"""Gets the limit of this ListAuthorizationMailRecordRequest.
 
-        单次查询的大小[1-100]。
+        单次查询的大小[1-100]，默认值10。
 
         :return: The limit of this ListAuthorizationMailRecordRequest.
         :rtype: int
@@ -90,7 +90,7 @@ class ListAuthorizationMailRecordRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListAuthorizationMailRecordRequest.
 
-        单次查询的大小[1-100]。
+        单次查询的大小[1-100]，默认值10。
 
         :param limit: The limit of this ListAuthorizationMailRecordRequest.
         :type limit: int
@@ -101,7 +101,7 @@ class ListAuthorizationMailRecordRequest:
     def offset(self):
         r"""Gets the offset of this ListAuthorizationMailRecordRequest.
 
-        查询的偏移量。
+        查询的偏移量，默认值0。
 
         :return: The offset of this ListAuthorizationMailRecordRequest.
         :rtype: int
@@ -112,7 +112,7 @@ class ListAuthorizationMailRecordRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListAuthorizationMailRecordRequest.
 
-        查询的偏移量。
+        查询的偏移量，默认值0。
 
         :param offset: The offset of this ListAuthorizationMailRecordRequest.
         :type offset: int
@@ -167,7 +167,7 @@ class ListAuthorizationMailRecordRequest:
     def mail_send_type(self):
         r"""Gets the mail_send_type of this ListAuthorizationMailRecordRequest.
 
-        授权类型： - ADD_GROUP_AUTHORIZATION 添加组授权 - DEL_GROUP_AUTHORIZATION 删除组授权
+        授权类型： - ADD_GROUP_AUTHORIZATION 添加组授权 - DEL_GROUP_AUTHORIZATION 删除组授权。
 
         :return: The mail_send_type of this ListAuthorizationMailRecordRequest.
         :rtype: str
@@ -178,7 +178,7 @@ class ListAuthorizationMailRecordRequest:
     def mail_send_type(self, mail_send_type):
         r"""Sets the mail_send_type of this ListAuthorizationMailRecordRequest.
 
-        授权类型： - ADD_GROUP_AUTHORIZATION 添加组授权 - DEL_GROUP_AUTHORIZATION 删除组授权
+        授权类型： - ADD_GROUP_AUTHORIZATION 添加组授权 - DEL_GROUP_AUTHORIZATION 删除组授权。
 
         :param mail_send_type: The mail_send_type of this ListAuthorizationMailRecordRequest.
         :type mail_send_type: str

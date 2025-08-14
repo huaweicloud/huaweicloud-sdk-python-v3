@@ -59,9 +59,9 @@ class AuthorizationMail:
         :type app_group_id: str
         :param app_group_name: 应用组名称。
         :type app_group_name: str
-        :param mail_send_type: 授权类型： - ADD_GROUP_AUTHORIZATION 添加组授权邮件 - DEL_GROUP_AUTHORIZATION 删除组授权邮件 - ADD_GROUP_AUTHORIZATION_SMS 添加组授权短信 - DEL_GROUP_AUTHORIZATION_SMS 删除组授权短信
+        :param mail_send_type: 授权类型： - ADD_GROUP_AUTHORIZATION 添加组授权邮件 - DEL_GROUP_AUTHORIZATION 删除组授权邮件 - ADD_GROUP_AUTHORIZATION_SMS 添加组授权短信 - DEL_GROUP_AUTHORIZATION_SMS 删除组授权短信。
         :type mail_send_type: str
-        :param mail_send_result: 发送结果。 - SUEECESS -发送成功 - FAIL -发送失败
+        :param mail_send_result: 发送结果。 - SUEECESS -发送成功 - FAIL -发送失败。
         :type mail_send_result: str
         :param error_msg: 报错信息。
         :type error_msg: str
@@ -235,7 +235,7 @@ class AuthorizationMail:
     def mail_send_type(self):
         r"""Gets the mail_send_type of this AuthorizationMail.
 
-        授权类型： - ADD_GROUP_AUTHORIZATION 添加组授权邮件 - DEL_GROUP_AUTHORIZATION 删除组授权邮件 - ADD_GROUP_AUTHORIZATION_SMS 添加组授权短信 - DEL_GROUP_AUTHORIZATION_SMS 删除组授权短信
+        授权类型： - ADD_GROUP_AUTHORIZATION 添加组授权邮件 - DEL_GROUP_AUTHORIZATION 删除组授权邮件 - ADD_GROUP_AUTHORIZATION_SMS 添加组授权短信 - DEL_GROUP_AUTHORIZATION_SMS 删除组授权短信。
 
         :return: The mail_send_type of this AuthorizationMail.
         :rtype: str
@@ -246,7 +246,7 @@ class AuthorizationMail:
     def mail_send_type(self, mail_send_type):
         r"""Sets the mail_send_type of this AuthorizationMail.
 
-        授权类型： - ADD_GROUP_AUTHORIZATION 添加组授权邮件 - DEL_GROUP_AUTHORIZATION 删除组授权邮件 - ADD_GROUP_AUTHORIZATION_SMS 添加组授权短信 - DEL_GROUP_AUTHORIZATION_SMS 删除组授权短信
+        授权类型： - ADD_GROUP_AUTHORIZATION 添加组授权邮件 - DEL_GROUP_AUTHORIZATION 删除组授权邮件 - ADD_GROUP_AUTHORIZATION_SMS 添加组授权短信 - DEL_GROUP_AUTHORIZATION_SMS 删除组授权短信。
 
         :param mail_send_type: The mail_send_type of this AuthorizationMail.
         :type mail_send_type: str
@@ -257,7 +257,7 @@ class AuthorizationMail:
     def mail_send_result(self):
         r"""Gets the mail_send_result of this AuthorizationMail.
 
-        发送结果。 - SUEECESS -发送成功 - FAIL -发送失败
+        发送结果。 - SUEECESS -发送成功 - FAIL -发送失败。
 
         :return: The mail_send_result of this AuthorizationMail.
         :rtype: str
@@ -268,7 +268,7 @@ class AuthorizationMail:
     def mail_send_result(self, mail_send_result):
         r"""Sets the mail_send_result of this AuthorizationMail.
 
-        发送结果。 - SUEECESS -发送成功 - FAIL -发送失败
+        发送结果。 - SUEECESS -发送成功 - FAIL -发送失败。
 
         :param mail_send_result: The mail_send_result of this AuthorizationMail.
         :type mail_send_result: str

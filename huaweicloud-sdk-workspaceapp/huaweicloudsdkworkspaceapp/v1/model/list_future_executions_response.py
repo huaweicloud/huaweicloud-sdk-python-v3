@@ -34,7 +34,7 @@ class ListFutureExecutionsResponse(SdkResponse):
 
         :param future_executions: 未来执行的具体时间列表。
         :type future_executions: list[str]
-        :param time_zone: 时区
+        :param time_zone: 时区。
         :type time_zone: str
         """
         
@@ -75,7 +75,7 @@ class ListFutureExecutionsResponse(SdkResponse):
     def time_zone(self):
         r"""Gets the time_zone of this ListFutureExecutionsResponse.
 
-        时区
+        时区。
 
         :return: The time_zone of this ListFutureExecutionsResponse.
         :rtype: str
@@ -86,7 +86,7 @@ class ListFutureExecutionsResponse(SdkResponse):
     def time_zone(self, time_zone):
         r"""Sets the time_zone of this ListFutureExecutionsResponse.
 
-        时区
+        时区。
 
         :param time_zone: The time_zone of this ListFutureExecutionsResponse.
         :type time_zone: str

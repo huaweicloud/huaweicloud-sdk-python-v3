@@ -40,11 +40,11 @@ class ListTagResourcesRequest:
 
         :param x_security_token: 如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
         :type x_security_token: str
-        :param resource_type: 资源类型 identitycenter:permissionset（权限集）
+        :param resource_type: 资源类型 identitycenter:permissionset权限集
         :type resource_type: str
         :param resource_id: 权限集的唯一标识符（ID）。
         :type resource_id: str
-        :param limit: 每个请求返回的最大结果数
+        :param limit: 每个请求返回的最大结果数。
         :type limit: int
         :param marker: 分页标记
         :type marker: str
@@ -94,7 +94,7 @@ class ListTagResourcesRequest:
     def resource_type(self):
         r"""Gets the resource_type of this ListTagResourcesRequest.
 
-        资源类型 identitycenter:permissionset（权限集）
+        资源类型 identitycenter:permissionset权限集
 
         :return: The resource_type of this ListTagResourcesRequest.
         :rtype: str
@@ -105,7 +105,7 @@ class ListTagResourcesRequest:
     def resource_type(self, resource_type):
         r"""Sets the resource_type of this ListTagResourcesRequest.
 
-        资源类型 identitycenter:permissionset（权限集）
+        资源类型 identitycenter:permissionset权限集
 
         :param resource_type: The resource_type of this ListTagResourcesRequest.
         :type resource_type: str
@@ -138,7 +138,7 @@ class ListTagResourcesRequest:
     def limit(self):
         r"""Gets the limit of this ListTagResourcesRequest.
 
-        每个请求返回的最大结果数
+        每个请求返回的最大结果数。
 
         :return: The limit of this ListTagResourcesRequest.
         :rtype: int
@@ -149,7 +149,7 @@ class ListTagResourcesRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListTagResourcesRequest.
 
-        每个请求返回的最大结果数
+        每个请求返回的最大结果数。
 
         :param limit: The limit of this ListTagResourcesRequest.
         :type limit: int
