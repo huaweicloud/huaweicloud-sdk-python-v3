@@ -18,13 +18,13 @@ class CustomerIpsVO:
 
     openapi_types = {
         'action': 'int',
+        'group_id': 'str',
         'affected_os': 'int',
         'attack_type': 'int',
         'config_status': 'int',
         'contents': 'list[IpsContent]',
         'direction': 'int',
         'dst_port': 'Port',
-        'group_id': 'str',
         'ips_cfw_id': 'str',
         'ips_id': 'str',
         'ips_name': 'str',
@@ -36,13 +36,13 @@ class CustomerIpsVO:
 
     attribute_map = {
         'action': 'action',
+        'group_id': 'group_id',
         'affected_os': 'affected_os',
         'attack_type': 'attack_type',
         'config_status': 'config_status',
         'contents': 'contents',
         'direction': 'direction',
         'dst_port': 'dst_port',
-        'group_id': 'group_id',
         'ips_cfw_id': 'ips_cfw_id',
         'ips_id': 'ips_id',
         'ips_name': 'ips_name',
@@ -52,13 +52,15 @@ class CustomerIpsVO:
         'src_port': 'src_port'
     }
 
-    def __init__(self, action=None, affected_os=None, attack_type=None, config_status=None, contents=None, direction=None, dst_port=None, group_id=None, ips_cfw_id=None, ips_id=None, ips_name=None, protocol=None, severity=None, software=None, src_port=None):
+    def __init__(self, action=None, group_id=None, affected_os=None, attack_type=None, config_status=None, contents=None, direction=None, dst_port=None, ips_cfw_id=None, ips_id=None, ips_name=None, protocol=None, severity=None, software=None, src_port=None):
         r"""CustomerIpsVO
 
         The model defined in huaweicloud sdk
 
         :param action: **参数解释**： 动作 **取值范围**： 0：只记录日志，1：重置/拦截
         :type action: int
+        :param group_id: **参数解释**： 防火墙集群id **取值范围**： 不涉及
+        :type group_id: str
         :param affected_os: **参数解释**： 影响操作系统 **取值范围**： 0 any、1 Windows、2 Linux、3 FreeBSD、4 Solaris、5 other Unix、6 网络设备、7 Mac OS、8 ios、9 android、10 others
         :type affected_os: int
         :param attack_type: **参数解释**： 攻击类型 **取值范围**： 1：访问控制、2：漏洞扫描、3：邮件攻击、4：漏洞攻击、5：Web攻击、6：密码攻击、7：劫持攻击、8：协议异常、9：特洛伊木马、10：蠕虫、11：缓冲区溢出、12：黑客工具、13：间谍软件、14：DDos泛洪、15：应用层DDos攻击、16：其他可疑行为、17：可疑DNS活动、18：网络钓鱼、19：垃圾邮件、20：其他攻击
@@ -71,8 +73,6 @@ class CustomerIpsVO:
         :type direction: int
         :param dst_port: 
         :type dst_port: :class:`huaweicloudsdkcfw.v1.Port`
-        :param group_id: **参数解释**： 防火墙集群id **取值范围**： 不涉及
-        :type group_id: str
         :param ips_cfw_id: **参数解释**： cfw侧自定义IPS规则id **约束限制**： 不涉及 **取值范围**： 32位UUID **默认取值**： 不涉及
         :type ips_cfw_id: str
         :param ips_id: **参数解释**： ips规则id **取值范围**： 不涉及
@@ -92,13 +92,13 @@ class CustomerIpsVO:
         
 
         self._action = None
+        self._group_id = None
         self._affected_os = None
         self._attack_type = None
         self._config_status = None
         self._contents = None
         self._direction = None
         self._dst_port = None
-        self._group_id = None
         self._ips_cfw_id = None
         self._ips_id = None
         self._ips_name = None
@@ -110,6 +110,8 @@ class CustomerIpsVO:
 
         if action is not None:
             self.action = action
+        if group_id is not None:
+            self.group_id = group_id
         if affected_os is not None:
             self.affected_os = affected_os
         if attack_type is not None:
@@ -122,8 +124,6 @@ class CustomerIpsVO:
             self.direction = direction
         if dst_port is not None:
             self.dst_port = dst_port
-        if group_id is not None:
-            self.group_id = group_id
         if ips_cfw_id is not None:
             self.ips_cfw_id = ips_cfw_id
         if ips_id is not None:
@@ -160,6 +160,28 @@ class CustomerIpsVO:
         :type action: int
         """
         self._action = action
+
+    @property
+    def group_id(self):
+        r"""Gets the group_id of this CustomerIpsVO.
+
+        **参数解释**： 防火墙集群id **取值范围**： 不涉及
+
+        :return: The group_id of this CustomerIpsVO.
+        :rtype: str
+        """
+        return self._group_id
+
+    @group_id.setter
+    def group_id(self, group_id):
+        r"""Sets the group_id of this CustomerIpsVO.
+
+        **参数解释**： 防火墙集群id **取值范围**： 不涉及
+
+        :param group_id: The group_id of this CustomerIpsVO.
+        :type group_id: str
+        """
+        self._group_id = group_id
 
     @property
     def affected_os(self):
@@ -288,28 +310,6 @@ class CustomerIpsVO:
         :type dst_port: :class:`huaweicloudsdkcfw.v1.Port`
         """
         self._dst_port = dst_port
-
-    @property
-    def group_id(self):
-        r"""Gets the group_id of this CustomerIpsVO.
-
-        **参数解释**： 防火墙集群id **取值范围**： 不涉及
-
-        :return: The group_id of this CustomerIpsVO.
-        :rtype: str
-        """
-        return self._group_id
-
-    @group_id.setter
-    def group_id(self, group_id):
-        r"""Sets the group_id of this CustomerIpsVO.
-
-        **参数解释**： 防火墙集群id **取值范围**： 不涉及
-
-        :param group_id: The group_id of this CustomerIpsVO.
-        :type group_id: str
-        """
-        self._group_id = group_id
 
     @property
     def ips_cfw_id(self):

@@ -53,31 +53,31 @@ class TrustedIpAddressDto:
 
         The model defined in huaweicloud sdk
 
-        :param id: 关联结果
+        :param id: **参数解释：** 白名单id。
         :type id: str
-        :param repository_id: 仓库id
+        :param repository_id: **参数解释：** 仓库id。
         :type repository_id: int
-        :param ip_range: ip范围
+        :param ip_range: **参数解释：** ip范围。
         :type ip_range: str
-        :param ip_type: 格式类型，指定ip，ip范围，CIDR
+        :param ip_type: **参数解释：** 格式类型。 - 0，表示指定ip。 - 1，表示ip范围。 - 2，表示CIDR。
         :type ip_type: int
-        :param ip_start: 起始ip
+        :param ip_start: **参数解释：** 起始ip。
         :type ip_start: str
-        :param ip_end: 结束ip
+        :param ip_end: **参数解释：** 结束ip。
         :type ip_end: str
-        :param view_flag: 是否允许访问代码仓库
+        :param view_flag: **参数解释：** 是否允许访问代码仓库。 - 0，表示禁止访问。 - 1，表示允许访问。
         :type view_flag: int
-        :param download_flag: 是否允许下载代码
+        :param download_flag: **参数解释：** 是否允许下载代码。 - 0，表示禁止下载。 - 1，表示允许下载。
         :type download_flag: int
-        :param upload_flag: 是否允许提交代码
+        :param upload_flag: **参数解释：** 是否允许提交代码。 - 0，表示禁止提交。 - 1，表示允许提交。
         :type upload_flag: int
-        :param remark: 备注
+        :param remark: **参数解释：** 备注。 **取值范围：** 字符串长度不少于0，不超过200。
         :type remark: str
-        :param created_at: 创建时间
+        :param created_at: **参数解释：** 创建时间。 **参数解释：** MMM dd, yyyy hh:mm:ss a            
         :type created_at: str
-        :param updated_at: 更新时间
+        :param updated_at: **参数解释：** 更新时间。 **参数解释：** MMM dd, yyyy hh:mm:ss a
         :type updated_at: str
-        :param order_flag: 排序
+        :param order_flag: **参数解释：** 排序。 - 0，表示默认规则。 - 1，表示自定义规则。
         :type order_flag: int
         """
         
@@ -129,7 +129,7 @@ class TrustedIpAddressDto:
     def id(self):
         r"""Gets the id of this TrustedIpAddressDto.
 
-        关联结果
+        **参数解释：** 白名单id。
 
         :return: The id of this TrustedIpAddressDto.
         :rtype: str
@@ -140,7 +140,7 @@ class TrustedIpAddressDto:
     def id(self, id):
         r"""Sets the id of this TrustedIpAddressDto.
 
-        关联结果
+        **参数解释：** 白名单id。
 
         :param id: The id of this TrustedIpAddressDto.
         :type id: str
@@ -151,7 +151,7 @@ class TrustedIpAddressDto:
     def repository_id(self):
         r"""Gets the repository_id of this TrustedIpAddressDto.
 
-        仓库id
+        **参数解释：** 仓库id。
 
         :return: The repository_id of this TrustedIpAddressDto.
         :rtype: int
@@ -162,7 +162,7 @@ class TrustedIpAddressDto:
     def repository_id(self, repository_id):
         r"""Sets the repository_id of this TrustedIpAddressDto.
 
-        仓库id
+        **参数解释：** 仓库id。
 
         :param repository_id: The repository_id of this TrustedIpAddressDto.
         :type repository_id: int
@@ -173,7 +173,7 @@ class TrustedIpAddressDto:
     def ip_range(self):
         r"""Gets the ip_range of this TrustedIpAddressDto.
 
-        ip范围
+        **参数解释：** ip范围。
 
         :return: The ip_range of this TrustedIpAddressDto.
         :rtype: str
@@ -184,7 +184,7 @@ class TrustedIpAddressDto:
     def ip_range(self, ip_range):
         r"""Sets the ip_range of this TrustedIpAddressDto.
 
-        ip范围
+        **参数解释：** ip范围。
 
         :param ip_range: The ip_range of this TrustedIpAddressDto.
         :type ip_range: str
@@ -195,7 +195,7 @@ class TrustedIpAddressDto:
     def ip_type(self):
         r"""Gets the ip_type of this TrustedIpAddressDto.
 
-        格式类型，指定ip，ip范围，CIDR
+        **参数解释：** 格式类型。 - 0，表示指定ip。 - 1，表示ip范围。 - 2，表示CIDR。
 
         :return: The ip_type of this TrustedIpAddressDto.
         :rtype: int
@@ -206,7 +206,7 @@ class TrustedIpAddressDto:
     def ip_type(self, ip_type):
         r"""Sets the ip_type of this TrustedIpAddressDto.
 
-        格式类型，指定ip，ip范围，CIDR
+        **参数解释：** 格式类型。 - 0，表示指定ip。 - 1，表示ip范围。 - 2，表示CIDR。
 
         :param ip_type: The ip_type of this TrustedIpAddressDto.
         :type ip_type: int
@@ -217,7 +217,7 @@ class TrustedIpAddressDto:
     def ip_start(self):
         r"""Gets the ip_start of this TrustedIpAddressDto.
 
-        起始ip
+        **参数解释：** 起始ip。
 
         :return: The ip_start of this TrustedIpAddressDto.
         :rtype: str
@@ -228,7 +228,7 @@ class TrustedIpAddressDto:
     def ip_start(self, ip_start):
         r"""Sets the ip_start of this TrustedIpAddressDto.
 
-        起始ip
+        **参数解释：** 起始ip。
 
         :param ip_start: The ip_start of this TrustedIpAddressDto.
         :type ip_start: str
@@ -239,7 +239,7 @@ class TrustedIpAddressDto:
     def ip_end(self):
         r"""Gets the ip_end of this TrustedIpAddressDto.
 
-        结束ip
+        **参数解释：** 结束ip。
 
         :return: The ip_end of this TrustedIpAddressDto.
         :rtype: str
@@ -250,7 +250,7 @@ class TrustedIpAddressDto:
     def ip_end(self, ip_end):
         r"""Sets the ip_end of this TrustedIpAddressDto.
 
-        结束ip
+        **参数解释：** 结束ip。
 
         :param ip_end: The ip_end of this TrustedIpAddressDto.
         :type ip_end: str
@@ -261,7 +261,7 @@ class TrustedIpAddressDto:
     def view_flag(self):
         r"""Gets the view_flag of this TrustedIpAddressDto.
 
-        是否允许访问代码仓库
+        **参数解释：** 是否允许访问代码仓库。 - 0，表示禁止访问。 - 1，表示允许访问。
 
         :return: The view_flag of this TrustedIpAddressDto.
         :rtype: int
@@ -272,7 +272,7 @@ class TrustedIpAddressDto:
     def view_flag(self, view_flag):
         r"""Sets the view_flag of this TrustedIpAddressDto.
 
-        是否允许访问代码仓库
+        **参数解释：** 是否允许访问代码仓库。 - 0，表示禁止访问。 - 1，表示允许访问。
 
         :param view_flag: The view_flag of this TrustedIpAddressDto.
         :type view_flag: int
@@ -283,7 +283,7 @@ class TrustedIpAddressDto:
     def download_flag(self):
         r"""Gets the download_flag of this TrustedIpAddressDto.
 
-        是否允许下载代码
+        **参数解释：** 是否允许下载代码。 - 0，表示禁止下载。 - 1，表示允许下载。
 
         :return: The download_flag of this TrustedIpAddressDto.
         :rtype: int
@@ -294,7 +294,7 @@ class TrustedIpAddressDto:
     def download_flag(self, download_flag):
         r"""Sets the download_flag of this TrustedIpAddressDto.
 
-        是否允许下载代码
+        **参数解释：** 是否允许下载代码。 - 0，表示禁止下载。 - 1，表示允许下载。
 
         :param download_flag: The download_flag of this TrustedIpAddressDto.
         :type download_flag: int
@@ -305,7 +305,7 @@ class TrustedIpAddressDto:
     def upload_flag(self):
         r"""Gets the upload_flag of this TrustedIpAddressDto.
 
-        是否允许提交代码
+        **参数解释：** 是否允许提交代码。 - 0，表示禁止提交。 - 1，表示允许提交。
 
         :return: The upload_flag of this TrustedIpAddressDto.
         :rtype: int
@@ -316,7 +316,7 @@ class TrustedIpAddressDto:
     def upload_flag(self, upload_flag):
         r"""Sets the upload_flag of this TrustedIpAddressDto.
 
-        是否允许提交代码
+        **参数解释：** 是否允许提交代码。 - 0，表示禁止提交。 - 1，表示允许提交。
 
         :param upload_flag: The upload_flag of this TrustedIpAddressDto.
         :type upload_flag: int
@@ -327,7 +327,7 @@ class TrustedIpAddressDto:
     def remark(self):
         r"""Gets the remark of this TrustedIpAddressDto.
 
-        备注
+        **参数解释：** 备注。 **取值范围：** 字符串长度不少于0，不超过200。
 
         :return: The remark of this TrustedIpAddressDto.
         :rtype: str
@@ -338,7 +338,7 @@ class TrustedIpAddressDto:
     def remark(self, remark):
         r"""Sets the remark of this TrustedIpAddressDto.
 
-        备注
+        **参数解释：** 备注。 **取值范围：** 字符串长度不少于0，不超过200。
 
         :param remark: The remark of this TrustedIpAddressDto.
         :type remark: str
@@ -349,7 +349,7 @@ class TrustedIpAddressDto:
     def created_at(self):
         r"""Gets the created_at of this TrustedIpAddressDto.
 
-        创建时间
+        **参数解释：** 创建时间。 **参数解释：** MMM dd, yyyy hh:mm:ss a            
 
         :return: The created_at of this TrustedIpAddressDto.
         :rtype: str
@@ -360,7 +360,7 @@ class TrustedIpAddressDto:
     def created_at(self, created_at):
         r"""Sets the created_at of this TrustedIpAddressDto.
 
-        创建时间
+        **参数解释：** 创建时间。 **参数解释：** MMM dd, yyyy hh:mm:ss a            
 
         :param created_at: The created_at of this TrustedIpAddressDto.
         :type created_at: str
@@ -371,7 +371,7 @@ class TrustedIpAddressDto:
     def updated_at(self):
         r"""Gets the updated_at of this TrustedIpAddressDto.
 
-        更新时间
+        **参数解释：** 更新时间。 **参数解释：** MMM dd, yyyy hh:mm:ss a
 
         :return: The updated_at of this TrustedIpAddressDto.
         :rtype: str
@@ -382,7 +382,7 @@ class TrustedIpAddressDto:
     def updated_at(self, updated_at):
         r"""Sets the updated_at of this TrustedIpAddressDto.
 
-        更新时间
+        **参数解释：** 更新时间。 **参数解释：** MMM dd, yyyy hh:mm:ss a
 
         :param updated_at: The updated_at of this TrustedIpAddressDto.
         :type updated_at: str
@@ -393,7 +393,7 @@ class TrustedIpAddressDto:
     def order_flag(self):
         r"""Gets the order_flag of this TrustedIpAddressDto.
 
-        排序
+        **参数解释：** 排序。 - 0，表示默认规则。 - 1，表示自定义规则。
 
         :return: The order_flag of this TrustedIpAddressDto.
         :rtype: int
@@ -404,7 +404,7 @@ class TrustedIpAddressDto:
     def order_flag(self, order_flag):
         r"""Sets the order_flag of this TrustedIpAddressDto.
 
-        排序
+        **参数解释：** 排序。 - 0，表示默认规则。 - 1，表示自定义规则。
 
         :param order_flag: The order_flag of this TrustedIpAddressDto.
         :type order_flag: int

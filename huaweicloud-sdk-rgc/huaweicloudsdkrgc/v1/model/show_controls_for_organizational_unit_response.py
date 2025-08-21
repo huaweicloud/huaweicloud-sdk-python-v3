@@ -42,7 +42,7 @@ class ShowControlsForOrganizationalUnitResponse(SdkResponse):
         :type control: :class:`huaweicloudsdkrgc.v1.EnabledControl`
         :param regions: 区域信息。
         :type regions: list[:class:`huaweicloudsdkrgc.v1.RegionConfigurationList`]
-        :param state: 是否允许启用控制策略。
+        :param state: 状态。
         :type state: str
         :param message: 状态说明。
         :type message: str
@@ -114,7 +114,7 @@ class ShowControlsForOrganizationalUnitResponse(SdkResponse):
     def state(self):
         r"""Gets the state of this ShowControlsForOrganizationalUnitResponse.
 
-        是否允许启用控制策略。
+        状态。
 
         :return: The state of this ShowControlsForOrganizationalUnitResponse.
         :rtype: str
@@ -125,7 +125,7 @@ class ShowControlsForOrganizationalUnitResponse(SdkResponse):
     def state(self, state):
         r"""Sets the state of this ShowControlsForOrganizationalUnitResponse.
 
-        是否允许启用控制策略。
+        状态。
 
         :param state: The state of this ShowControlsForOrganizationalUnitResponse.
         :type state: str

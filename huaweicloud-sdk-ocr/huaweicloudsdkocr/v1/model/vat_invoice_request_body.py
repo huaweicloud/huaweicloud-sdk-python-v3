@@ -21,7 +21,8 @@ class VatInvoiceRequestBody:
         'url': 'str',
         'advanced_mode': 'bool',
         'return_text_location': 'bool',
-        'page_num': 'int'
+        'page_num': 'int',
+        'ofd_to_image_mode': 'bool'
     }
 
     attribute_map = {
@@ -29,10 +30,11 @@ class VatInvoiceRequestBody:
         'url': 'url',
         'advanced_mode': 'advanced_mode',
         'return_text_location': 'return_text_location',
-        'page_num': 'page_num'
+        'page_num': 'page_num',
+        'ofd_to_image_mode': 'ofd_to_image_mode'
     }
 
-    def __init__(self, image=None, url=None, advanced_mode=None, return_text_location=None, page_num=None):
+    def __init__(self, image=None, url=None, advanced_mode=None, return_text_location=None, page_num=None, ofd_to_image_mode=None):
         r"""VatInvoiceRequestBody
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class VatInvoiceRequestBody:
         :type return_text_location: bool
         :param page_num: 页码，默认为1，返回第一页结果。如果传参不大于PDF页数，则返回对应PDF页的结果。 
         :type page_num: int
+        :param ofd_to_image_mode: OFD转图片的模式开关。针对输入文件为OFD时，有两种处理方案： 方案一：直接解析OFD文件，并提取结构化信息 方案二：转成图片后再进行识别，该方案更鲁棒，但是时延会显著增加 取值范围包括： •  false：选择方案一 •  true：选择方案二 未传入该参数时默认为false，即选择方案一。 
+        :type ofd_to_image_mode: bool
         """
         
         
@@ -56,6 +60,7 @@ class VatInvoiceRequestBody:
         self._advanced_mode = None
         self._return_text_location = None
         self._page_num = None
+        self._ofd_to_image_mode = None
         self.discriminator = None
 
         if image is not None:
@@ -68,6 +73,8 @@ class VatInvoiceRequestBody:
             self.return_text_location = return_text_location
         if page_num is not None:
             self.page_num = page_num
+        if ofd_to_image_mode is not None:
+            self.ofd_to_image_mode = ofd_to_image_mode
 
     @property
     def image(self):
@@ -178,6 +185,28 @@ class VatInvoiceRequestBody:
         :type page_num: int
         """
         self._page_num = page_num
+
+    @property
+    def ofd_to_image_mode(self):
+        r"""Gets the ofd_to_image_mode of this VatInvoiceRequestBody.
+
+        OFD转图片的模式开关。针对输入文件为OFD时，有两种处理方案： 方案一：直接解析OFD文件，并提取结构化信息 方案二：转成图片后再进行识别，该方案更鲁棒，但是时延会显著增加 取值范围包括： •  false：选择方案一 •  true：选择方案二 未传入该参数时默认为false，即选择方案一。 
+
+        :return: The ofd_to_image_mode of this VatInvoiceRequestBody.
+        :rtype: bool
+        """
+        return self._ofd_to_image_mode
+
+    @ofd_to_image_mode.setter
+    def ofd_to_image_mode(self, ofd_to_image_mode):
+        r"""Sets the ofd_to_image_mode of this VatInvoiceRequestBody.
+
+        OFD转图片的模式开关。针对输入文件为OFD时，有两种处理方案： 方案一：直接解析OFD文件，并提取结构化信息 方案二：转成图片后再进行识别，该方案更鲁棒，但是时延会显著增加 取值范围包括： •  false：选择方案一 •  true：选择方案二 未传入该参数时默认为false，即选择方案一。 
+
+        :param ofd_to_image_mode: The ofd_to_image_mode of this VatInvoiceRequestBody.
+        :type ofd_to_image_mode: bool
+        """
+        self._ofd_to_image_mode = ofd_to_image_mode
 
     def to_dict(self):
         """Returns the model properties as a dict"""

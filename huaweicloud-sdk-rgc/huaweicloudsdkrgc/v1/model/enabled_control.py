@@ -43,7 +43,7 @@ class EnabledControl:
 
         The model defined in huaweicloud sdk
 
-        :param manage_account_id: 管理纳管账号ID。
+        :param manage_account_id: 管理员账号ID。
         :type manage_account_id: str
         :param control_identifier: 控制策略标识。
         :type control_identifier: str
@@ -55,7 +55,7 @@ class EnabledControl:
         :type control_objective: str
         :param behavior: 控制策略类型。包括主动性控制策略Proactive、检测性控制策略Detective、预防性控制策略Preventive。
         :type behavior: str
-        :param owner: 纳管账号的创建来源，包括CUSTOM和RGC。
+        :param owner: 控制策略来源。
         :type owner: str
         :param regional_preference: 区域选项，取值有两种分别是：区域的regional和全局的global。
         :type regional_preference: str
@@ -94,7 +94,7 @@ class EnabledControl:
     def manage_account_id(self):
         r"""Gets the manage_account_id of this EnabledControl.
 
-        管理纳管账号ID。
+        管理员账号ID。
 
         :return: The manage_account_id of this EnabledControl.
         :rtype: str
@@ -105,7 +105,7 @@ class EnabledControl:
     def manage_account_id(self, manage_account_id):
         r"""Sets the manage_account_id of this EnabledControl.
 
-        管理纳管账号ID。
+        管理员账号ID。
 
         :param manage_account_id: The manage_account_id of this EnabledControl.
         :type manage_account_id: str
@@ -226,7 +226,7 @@ class EnabledControl:
     def owner(self):
         r"""Gets the owner of this EnabledControl.
 
-        纳管账号的创建来源，包括CUSTOM和RGC。
+        控制策略来源。
 
         :return: The owner of this EnabledControl.
         :rtype: str
@@ -237,7 +237,7 @@ class EnabledControl:
     def owner(self, owner):
         r"""Sets the owner of this EnabledControl.
 
-        纳管账号的创建来源，包括CUSTOM和RGC。
+        控制策略来源。
 
         :param owner: The owner of this EnabledControl.
         :type owner: str

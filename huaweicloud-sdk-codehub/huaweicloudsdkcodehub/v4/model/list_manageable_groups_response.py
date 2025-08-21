@@ -18,45 +18,38 @@ class ListManageableGroupsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'list[GroupsManageableDto]',
-        'x_total': 'str'
+        'body': 'list[ManageableGroupDto]'
     }
 
     attribute_map = {
-        'body': 'body',
-        'x_total': 'X-Total'
+        'body': 'body'
     }
 
-    def __init__(self, body=None, x_total=None):
+    def __init__(self, body=None):
         r"""ListManageableGroupsResponse
 
         The model defined in huaweicloud sdk
 
-        :param body: 仓库ip白名单列表
-        :type body: list[:class:`huaweicloudsdkcodehub.v4.GroupsManageableDto`]
-        :param x_total: 
-        :type x_total: str
+        :param body: 拥有管理权限的代码组列表
+        :type body: list[:class:`huaweicloudsdkcodehub.v4.ManageableGroupDto`]
         """
         
         super(ListManageableGroupsResponse, self).__init__()
 
         self._body = None
-        self._x_total = None
         self.discriminator = None
 
         if body is not None:
             self.body = body
-        if x_total is not None:
-            self.x_total = x_total
 
     @property
     def body(self):
         r"""Gets the body of this ListManageableGroupsResponse.
 
-        仓库ip白名单列表
+        拥有管理权限的代码组列表
 
         :return: The body of this ListManageableGroupsResponse.
-        :rtype: list[:class:`huaweicloudsdkcodehub.v4.GroupsManageableDto`]
+        :rtype: list[:class:`huaweicloudsdkcodehub.v4.ManageableGroupDto`]
         """
         return self._body
 
@@ -64,30 +57,12 @@ class ListManageableGroupsResponse(SdkResponse):
     def body(self, body):
         r"""Sets the body of this ListManageableGroupsResponse.
 
-        仓库ip白名单列表
+        拥有管理权限的代码组列表
 
         :param body: The body of this ListManageableGroupsResponse.
-        :type body: list[:class:`huaweicloudsdkcodehub.v4.GroupsManageableDto`]
+        :type body: list[:class:`huaweicloudsdkcodehub.v4.ManageableGroupDto`]
         """
         self._body = body
-
-    @property
-    def x_total(self):
-        r"""Gets the x_total of this ListManageableGroupsResponse.
-
-        :return: The x_total of this ListManageableGroupsResponse.
-        :rtype: str
-        """
-        return self._x_total
-
-    @x_total.setter
-    def x_total(self, x_total):
-        r"""Sets the x_total of this ListManageableGroupsResponse.
-
-        :param x_total: The x_total of this ListManageableGroupsResponse.
-        :type x_total: str
-        """
-        self._x_total = x_total
 
     def to_dict(self):
         """Returns the model properties as a dict"""

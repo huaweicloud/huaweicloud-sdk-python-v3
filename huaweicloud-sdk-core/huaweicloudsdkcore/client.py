@@ -114,14 +114,18 @@ class ClientBuilder(Generic[T]):
         self._region = region
         return self
 
-    def with_endpoint(self, endpoint):
+    def with_endpoint(self, *args, **kwargs):
         """
         :param endpoint: Endpoint for ClientBuilder
         :type endpoint: str
         """
-        warnings.warn("As of 3.1.27, because of the support of the multi-endpoint feature, use with_endpoints instead",
-                      DeprecationWarning)
-        return self.with_endpoints([endpoint])
+        endpoint = kwargs.get('endpoint')
+        if endpoint:
+            self._endpoints = [endpoint]
+        else:
+            self._endpoints = list(args)
+        return self
+
 
     def with_endpoints(self, endpoints):
         self._endpoints = endpoints

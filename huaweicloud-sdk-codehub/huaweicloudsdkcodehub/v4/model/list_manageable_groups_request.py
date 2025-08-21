@@ -35,13 +35,13 @@ class ListManageableGroupsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param project_id: 项目id
+        :param project_id: **参数解释：** 项目的32位uuid，项目唯一标识，通过[[查询项目列表](https://support.huaweicloud.com/api-projectman/ListProjectsV4.html)](tag:hws)[[查询项目列表](https://support.huaweicloud.com/intl/en-us/api-projectman/ListProjectsV4.html)](tag:hws_hk)[查询项目列表](tag:hcs,hcs_sm)接口查询项目列表获取。 **取值范围：** 字符串长度32。
         :type project_id: str
-        :param scope: 创建资源类型，group 代码组，repository仓库
+        :param scope: **参数解释：** 创建资源类型。 **约束限制：** - group 代码组。 - repository仓库。
         :type scope: str
-        :param offset: 偏移量
+        :param offset: **参数解释：** 偏移量，从0开始。
         :type offset: int
-        :param limit: 返回数量
+        :param limit: **参数解释：** 返回数量。
         :type limit: int
         """
         
@@ -65,7 +65,7 @@ class ListManageableGroupsRequest:
     def project_id(self):
         r"""Gets the project_id of this ListManageableGroupsRequest.
 
-        项目id
+        **参数解释：** 项目的32位uuid，项目唯一标识，通过[[查询项目列表](https://support.huaweicloud.com/api-projectman/ListProjectsV4.html)](tag:hws)[[查询项目列表](https://support.huaweicloud.com/intl/en-us/api-projectman/ListProjectsV4.html)](tag:hws_hk)[查询项目列表](tag:hcs,hcs_sm)接口查询项目列表获取。 **取值范围：** 字符串长度32。
 
         :return: The project_id of this ListManageableGroupsRequest.
         :rtype: str
@@ -76,7 +76,7 @@ class ListManageableGroupsRequest:
     def project_id(self, project_id):
         r"""Sets the project_id of this ListManageableGroupsRequest.
 
-        项目id
+        **参数解释：** 项目的32位uuid，项目唯一标识，通过[[查询项目列表](https://support.huaweicloud.com/api-projectman/ListProjectsV4.html)](tag:hws)[[查询项目列表](https://support.huaweicloud.com/intl/en-us/api-projectman/ListProjectsV4.html)](tag:hws_hk)[查询项目列表](tag:hcs,hcs_sm)接口查询项目列表获取。 **取值范围：** 字符串长度32。
 
         :param project_id: The project_id of this ListManageableGroupsRequest.
         :type project_id: str
@@ -87,7 +87,7 @@ class ListManageableGroupsRequest:
     def scope(self):
         r"""Gets the scope of this ListManageableGroupsRequest.
 
-        创建资源类型，group 代码组，repository仓库
+        **参数解释：** 创建资源类型。 **约束限制：** - group 代码组。 - repository仓库。
 
         :return: The scope of this ListManageableGroupsRequest.
         :rtype: str
@@ -98,7 +98,7 @@ class ListManageableGroupsRequest:
     def scope(self, scope):
         r"""Sets the scope of this ListManageableGroupsRequest.
 
-        创建资源类型，group 代码组，repository仓库
+        **参数解释：** 创建资源类型。 **约束限制：** - group 代码组。 - repository仓库。
 
         :param scope: The scope of this ListManageableGroupsRequest.
         :type scope: str
@@ -109,7 +109,7 @@ class ListManageableGroupsRequest:
     def offset(self):
         r"""Gets the offset of this ListManageableGroupsRequest.
 
-        偏移量
+        **参数解释：** 偏移量，从0开始。
 
         :return: The offset of this ListManageableGroupsRequest.
         :rtype: int
@@ -120,7 +120,7 @@ class ListManageableGroupsRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListManageableGroupsRequest.
 
-        偏移量
+        **参数解释：** 偏移量，从0开始。
 
         :param offset: The offset of this ListManageableGroupsRequest.
         :type offset: int
@@ -131,7 +131,7 @@ class ListManageableGroupsRequest:
     def limit(self):
         r"""Gets the limit of this ListManageableGroupsRequest.
 
-        返回数量
+        **参数解释：** 返回数量。
 
         :return: The limit of this ListManageableGroupsRequest.
         :rtype: int
@@ -142,7 +142,7 @@ class ListManageableGroupsRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListManageableGroupsRequest.
 
-        返回数量
+        **参数解释：** 返回数量。
 
         :param limit: The limit of this ListManageableGroupsRequest.
         :type limit: int

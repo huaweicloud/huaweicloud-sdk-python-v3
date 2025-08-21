@@ -35,13 +35,13 @@ class BatchCreateApplicationViewRequestBodyApplicationList:
 
         The model defined in huaweicloud sdk
 
-        :param name: 名称
+        :param name: **参数解释：** 应用名称。 **约束限制：** 不涉及。 **取值范围：** 由中文、英文字母、数字、中划线、下划线组成，长度在3~50个字符之间。 **默认取值：** 不涉及。
         :type name: str
-        :param description: 描述
+        :param description: **参数解释：** 应用描述。 **约束限制：** 不涉及。 **取值范围：** 字符串，长度在0到256个字符之间。 **默认取值：** 不涉及。
         :type description: str
-        :param parent_name: 父节点名称
+        :param parent_name: **参数解释：** 父节点名称。 **约束限制：** 不涉及。 **取值范围：** 字符串，长度3到50个字符。 **默认取值：** 不涉及。
         :type parent_name: str
-        :param level: 层级，从1开始
+        :param level: **参数解释：** 层级，默认应用层级为1，子应用层级为2。 **约束限制：** 不涉及。 **取值范围：** - 1：应用层级。 - 2：子应用层级。 **默认取值：** 默认应用层级为1。
         :type level: str
         """
         
@@ -66,7 +66,7 @@ class BatchCreateApplicationViewRequestBodyApplicationList:
     def name(self):
         r"""Gets the name of this BatchCreateApplicationViewRequestBodyApplicationList.
 
-        名称
+        **参数解释：** 应用名称。 **约束限制：** 不涉及。 **取值范围：** 由中文、英文字母、数字、中划线、下划线组成，长度在3~50个字符之间。 **默认取值：** 不涉及。
 
         :return: The name of this BatchCreateApplicationViewRequestBodyApplicationList.
         :rtype: str
@@ -77,7 +77,7 @@ class BatchCreateApplicationViewRequestBodyApplicationList:
     def name(self, name):
         r"""Sets the name of this BatchCreateApplicationViewRequestBodyApplicationList.
 
-        名称
+        **参数解释：** 应用名称。 **约束限制：** 不涉及。 **取值范围：** 由中文、英文字母、数字、中划线、下划线组成，长度在3~50个字符之间。 **默认取值：** 不涉及。
 
         :param name: The name of this BatchCreateApplicationViewRequestBodyApplicationList.
         :type name: str
@@ -88,7 +88,7 @@ class BatchCreateApplicationViewRequestBodyApplicationList:
     def description(self):
         r"""Gets the description of this BatchCreateApplicationViewRequestBodyApplicationList.
 
-        描述
+        **参数解释：** 应用描述。 **约束限制：** 不涉及。 **取值范围：** 字符串，长度在0到256个字符之间。 **默认取值：** 不涉及。
 
         :return: The description of this BatchCreateApplicationViewRequestBodyApplicationList.
         :rtype: str
@@ -99,7 +99,7 @@ class BatchCreateApplicationViewRequestBodyApplicationList:
     def description(self, description):
         r"""Sets the description of this BatchCreateApplicationViewRequestBodyApplicationList.
 
-        描述
+        **参数解释：** 应用描述。 **约束限制：** 不涉及。 **取值范围：** 字符串，长度在0到256个字符之间。 **默认取值：** 不涉及。
 
         :param description: The description of this BatchCreateApplicationViewRequestBodyApplicationList.
         :type description: str
@@ -110,7 +110,7 @@ class BatchCreateApplicationViewRequestBodyApplicationList:
     def parent_name(self):
         r"""Gets the parent_name of this BatchCreateApplicationViewRequestBodyApplicationList.
 
-        父节点名称
+        **参数解释：** 父节点名称。 **约束限制：** 不涉及。 **取值范围：** 字符串，长度3到50个字符。 **默认取值：** 不涉及。
 
         :return: The parent_name of this BatchCreateApplicationViewRequestBodyApplicationList.
         :rtype: str
@@ -121,7 +121,7 @@ class BatchCreateApplicationViewRequestBodyApplicationList:
     def parent_name(self, parent_name):
         r"""Sets the parent_name of this BatchCreateApplicationViewRequestBodyApplicationList.
 
-        父节点名称
+        **参数解释：** 父节点名称。 **约束限制：** 不涉及。 **取值范围：** 字符串，长度3到50个字符。 **默认取值：** 不涉及。
 
         :param parent_name: The parent_name of this BatchCreateApplicationViewRequestBodyApplicationList.
         :type parent_name: str
@@ -132,7 +132,7 @@ class BatchCreateApplicationViewRequestBodyApplicationList:
     def level(self):
         r"""Gets the level of this BatchCreateApplicationViewRequestBodyApplicationList.
 
-        层级，从1开始
+        **参数解释：** 层级，默认应用层级为1，子应用层级为2。 **约束限制：** 不涉及。 **取值范围：** - 1：应用层级。 - 2：子应用层级。 **默认取值：** 默认应用层级为1。
 
         :return: The level of this BatchCreateApplicationViewRequestBodyApplicationList.
         :rtype: str
@@ -143,7 +143,7 @@ class BatchCreateApplicationViewRequestBodyApplicationList:
     def level(self, level):
         r"""Sets the level of this BatchCreateApplicationViewRequestBodyApplicationList.
 
-        层级，从1开始
+        **参数解释：** 层级，默认应用层级为1，子应用层级为2。 **约束限制：** 不涉及。 **取值范围：** - 1：应用层级。 - 2：子应用层级。 **默认取值：** 默认应用层级为1。
 
         :param level: The level of this BatchCreateApplicationViewRequestBodyApplicationList.
         :type level: str

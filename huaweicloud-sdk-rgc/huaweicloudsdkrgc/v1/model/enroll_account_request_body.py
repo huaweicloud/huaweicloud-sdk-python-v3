@@ -31,7 +31,7 @@ class EnrollAccountRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param parent_organizational_unit_id: 注册OU 标识。
+        :param parent_organizational_unit_id: 父注册OU ID。
         :type parent_organizational_unit_id: str
         :param blueprint: 
         :type blueprint: :class:`huaweicloudsdkrgc.v1.Blueprint`
@@ -51,7 +51,7 @@ class EnrollAccountRequestBody:
     def parent_organizational_unit_id(self):
         r"""Gets the parent_organizational_unit_id of this EnrollAccountRequestBody.
 
-        注册OU 标识。
+        父注册OU ID。
 
         :return: The parent_organizational_unit_id of this EnrollAccountRequestBody.
         :rtype: str
@@ -62,7 +62,7 @@ class EnrollAccountRequestBody:
     def parent_organizational_unit_id(self, parent_organizational_unit_id):
         r"""Sets the parent_organizational_unit_id of this EnrollAccountRequestBody.
 
-        注册OU 标识。
+        父注册OU ID。
 
         :param parent_organizational_unit_id: The parent_organizational_unit_id of this EnrollAccountRequestBody.
         :type parent_organizational_unit_id: str

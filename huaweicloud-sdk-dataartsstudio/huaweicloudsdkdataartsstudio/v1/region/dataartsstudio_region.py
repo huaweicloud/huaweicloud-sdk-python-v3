@@ -56,6 +56,8 @@ class DataArtsStudioRegion:
                         "https://dayu.ru-moscow-1.myhuaweicloud.com")
     MY_KUALALUMPUR_1 = Region("my-kualalumpur-1",
                         "https://dayu.my-kualalumpur-1.myhuaweicloud.com")
+    CN_EAST_4 = Region("cn-east-4",
+                        "https://dayu.cn-east-4.myhuaweicloud.com")
 
     static_fields = {
         "cn-north-1": CN_NORTH_1,
@@ -83,6 +85,7 @@ class DataArtsStudioRegion:
         "cn-north-11": CN_NORTH_11,
         "ru-moscow-1": RU_MOSCOW_1,
         "my-kualalumpur-1": MY_KUALALUMPUR_1,
+        "cn-east-4": CN_EAST_4,
     }
 
     @classmethod

@@ -31,9 +31,9 @@ class ListTenantTrustedIpAddressesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param offset: 偏移量
+        :param offset: **参数解释：** 偏移量，从0开始。
         :type offset: int
-        :param limit: 返回数量
+        :param limit: **参数解释：** 返回数量。
         :type limit: int
         """
         
@@ -52,7 +52,7 @@ class ListTenantTrustedIpAddressesRequest:
     def offset(self):
         r"""Gets the offset of this ListTenantTrustedIpAddressesRequest.
 
-        偏移量
+        **参数解释：** 偏移量，从0开始。
 
         :return: The offset of this ListTenantTrustedIpAddressesRequest.
         :rtype: int
@@ -63,7 +63,7 @@ class ListTenantTrustedIpAddressesRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListTenantTrustedIpAddressesRequest.
 
-        偏移量
+        **参数解释：** 偏移量，从0开始。
 
         :param offset: The offset of this ListTenantTrustedIpAddressesRequest.
         :type offset: int
@@ -74,7 +74,7 @@ class ListTenantTrustedIpAddressesRequest:
     def limit(self):
         r"""Gets the limit of this ListTenantTrustedIpAddressesRequest.
 
-        返回数量
+        **参数解释：** 返回数量。
 
         :return: The limit of this ListTenantTrustedIpAddressesRequest.
         :rtype: int
@@ -85,7 +85,7 @@ class ListTenantTrustedIpAddressesRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListTenantTrustedIpAddressesRequest.
 
-        返回数量
+        **参数解释：** 返回数量。
 
         :param limit: The limit of this ListTenantTrustedIpAddressesRequest.
         :type limit: int

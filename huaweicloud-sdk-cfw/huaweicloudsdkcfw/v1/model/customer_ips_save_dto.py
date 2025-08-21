@@ -24,8 +24,8 @@ class CustomerIpsSaveDto:
         'direction': 'int',
         'dst_port': 'Port',
         'fw_instance_id': 'str',
-        'ips_name': 'str',
         'object_id': 'str',
+        'ips_name': 'str',
         'protocol': 'int',
         'severity': 'int',
         'software': 'int',
@@ -40,15 +40,15 @@ class CustomerIpsSaveDto:
         'direction': 'direction',
         'dst_port': 'dst_port',
         'fw_instance_id': 'fw_instance_id',
-        'ips_name': 'ips_name',
         'object_id': 'object_id',
+        'ips_name': 'ips_name',
         'protocol': 'protocol',
         'severity': 'severity',
         'software': 'software',
         'src_port': 'src_port'
     }
 
-    def __init__(self, action_type=None, affected_os=None, attack_type=None, contents=None, direction=None, dst_port=None, fw_instance_id=None, ips_name=None, object_id=None, protocol=None, severity=None, software=None, src_port=None):
+    def __init__(self, action_type=None, affected_os=None, attack_type=None, contents=None, direction=None, dst_port=None, fw_instance_id=None, object_id=None, ips_name=None, protocol=None, severity=None, software=None, src_port=None):
         r"""CustomerIpsSaveDto
 
         The model defined in huaweicloud sdk
@@ -67,10 +67,10 @@ class CustomerIpsSaveDto:
         :type dst_port: :class:`huaweicloudsdkcfw.v1.Port`
         :param fw_instance_id: **参数解释**： 防火墙ID，用户创建防火墙实例后产生的唯一ID，配置后可区分不同防火墙，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取 **约束限制**： 不涉及 **取值范围**： 32位UUID **默认取值**： 不涉及
         :type fw_instance_id: str
-        :param ips_name: **参数解释**： ips规则名称 **取值范围**： 不涉及
-        :type ips_name: str
         :param object_id: **参数解释**： 防护对象ID，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志ID，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得 **约束限制**： type为0时，object_id为互联网边界防护对象ID，type为1时，object_id为VPC边界防护对象ID，type可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得 **取值范围**： 32位UUID **默认取值**： 不涉及
         :type object_id: str
+        :param ips_name: **参数解释**： ips规则名称 **取值范围**： 不涉及
+        :type ips_name: str
         :param protocol: **参数解释**： 协议类型 **取值范围**： 1 FTP、2 TELNET、3 SMTP、4 DNS_TCP、5 DNS_UDP、6 DHCP、7 TFTP、8 FINGER、9 HTTP、10 POP3、11 SUNRPC_TCP、12 SUNRPC_UDP、13 NNTP、14 MSRPC_TCP、15 MSRPC_UDP、16 NETBIOS_NAME_TCP、17 NETBIOS_NAME_UDP、18 NETBIOS_SMB、19 NETBIOS_DATAGRAM、20 IMAP4、21 SNMP、22 LDAP、23 MSSQL、24 ORACLE
         :type protocol: int
         :param severity: **参数解释**： 严重程度 **取值范围**： critical：致命，high：高危，medium:中危，low:低危
@@ -90,8 +90,8 @@ class CustomerIpsSaveDto:
         self._direction = None
         self._dst_port = None
         self._fw_instance_id = None
-        self._ips_name = None
         self._object_id = None
+        self._ips_name = None
         self._protocol = None
         self._severity = None
         self._software = None
@@ -105,8 +105,9 @@ class CustomerIpsSaveDto:
         self.direction = direction
         self.dst_port = dst_port
         self.fw_instance_id = fw_instance_id
+        if object_id is not None:
+            self.object_id = object_id
         self.ips_name = ips_name
-        self.object_id = object_id
         self.protocol = protocol
         self.severity = severity
         self.software = software
@@ -263,28 +264,6 @@ class CustomerIpsSaveDto:
         self._fw_instance_id = fw_instance_id
 
     @property
-    def ips_name(self):
-        r"""Gets the ips_name of this CustomerIpsSaveDto.
-
-        **参数解释**： ips规则名称 **取值范围**： 不涉及
-
-        :return: The ips_name of this CustomerIpsSaveDto.
-        :rtype: str
-        """
-        return self._ips_name
-
-    @ips_name.setter
-    def ips_name(self, ips_name):
-        r"""Sets the ips_name of this CustomerIpsSaveDto.
-
-        **参数解释**： ips规则名称 **取值范围**： 不涉及
-
-        :param ips_name: The ips_name of this CustomerIpsSaveDto.
-        :type ips_name: str
-        """
-        self._ips_name = ips_name
-
-    @property
     def object_id(self):
         r"""Gets the object_id of this CustomerIpsSaveDto.
 
@@ -305,6 +284,28 @@ class CustomerIpsSaveDto:
         :type object_id: str
         """
         self._object_id = object_id
+
+    @property
+    def ips_name(self):
+        r"""Gets the ips_name of this CustomerIpsSaveDto.
+
+        **参数解释**： ips规则名称 **取值范围**： 不涉及
+
+        :return: The ips_name of this CustomerIpsSaveDto.
+        :rtype: str
+        """
+        return self._ips_name
+
+    @ips_name.setter
+    def ips_name(self, ips_name):
+        r"""Sets the ips_name of this CustomerIpsSaveDto.
+
+        **参数解释**： ips规则名称 **取值范围**： 不涉及
+
+        :param ips_name: The ips_name of this CustomerIpsSaveDto.
+        :type ips_name: str
+        """
+        self._ips_name = ips_name
 
     @property
     def protocol(self):

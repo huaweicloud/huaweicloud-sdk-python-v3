@@ -40,9 +40,9 @@ class ShowLandingZoneIdentityCenterResponse(SdkResponse):
         :type identity_store_id: str
         :param user_portal_url: Identity Center登录URL。
         :type user_portal_url: str
-        :param permission_sets: 
+        :param permission_sets: Identity Center权限集。
         :type permission_sets: list[:class:`huaweicloudsdkrgc.v1.PermissionSet`]
-        :param groups: 
+        :param groups: Identity Center用户组。
         :type groups: list[:class:`huaweicloudsdkrgc.v1.IdentityCenterGroup`]
         """
         
@@ -111,6 +111,8 @@ class ShowLandingZoneIdentityCenterResponse(SdkResponse):
     def permission_sets(self):
         r"""Gets the permission_sets of this ShowLandingZoneIdentityCenterResponse.
 
+        Identity Center权限集。
+
         :return: The permission_sets of this ShowLandingZoneIdentityCenterResponse.
         :rtype: list[:class:`huaweicloudsdkrgc.v1.PermissionSet`]
         """
@@ -119,6 +121,8 @@ class ShowLandingZoneIdentityCenterResponse(SdkResponse):
     @permission_sets.setter
     def permission_sets(self, permission_sets):
         r"""Sets the permission_sets of this ShowLandingZoneIdentityCenterResponse.
+
+        Identity Center权限集。
 
         :param permission_sets: The permission_sets of this ShowLandingZoneIdentityCenterResponse.
         :type permission_sets: list[:class:`huaweicloudsdkrgc.v1.PermissionSet`]
@@ -129,6 +133,8 @@ class ShowLandingZoneIdentityCenterResponse(SdkResponse):
     def groups(self):
         r"""Gets the groups of this ShowLandingZoneIdentityCenterResponse.
 
+        Identity Center用户组。
+
         :return: The groups of this ShowLandingZoneIdentityCenterResponse.
         :rtype: list[:class:`huaweicloudsdkrgc.v1.IdentityCenterGroup`]
         """
@@ -137,6 +143,8 @@ class ShowLandingZoneIdentityCenterResponse(SdkResponse):
     @groups.setter
     def groups(self, groups):
         r"""Sets the groups of this ShowLandingZoneIdentityCenterResponse.
+
+        Identity Center用户组。
 
         :param groups: The groups of this ShowLandingZoneIdentityCenterResponse.
         :type groups: list[:class:`huaweicloudsdkrgc.v1.IdentityCenterGroup`]

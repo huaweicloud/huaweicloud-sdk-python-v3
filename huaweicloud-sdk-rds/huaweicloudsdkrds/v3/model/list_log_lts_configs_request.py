@@ -45,7 +45,7 @@ class ListLogLtsConfigsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param engine: 引擎。
+        :param engine: 引擎，暂只支持mysql。
         :type engine: str
         :param enterprise_project_id: 企业项目ID。默认为空。
         :type enterprise_project_id: str
@@ -100,7 +100,7 @@ class ListLogLtsConfigsRequest:
     def engine(self):
         r"""Gets the engine of this ListLogLtsConfigsRequest.
 
-        引擎。
+        引擎，暂只支持mysql。
 
         :return: The engine of this ListLogLtsConfigsRequest.
         :rtype: str
@@ -111,7 +111,7 @@ class ListLogLtsConfigsRequest:
     def engine(self, engine):
         r"""Sets the engine of this ListLogLtsConfigsRequest.
 
-        引擎。
+        引擎，暂只支持mysql。
 
         :param engine: The engine of this ListLogLtsConfigsRequest.
         :type engine: str

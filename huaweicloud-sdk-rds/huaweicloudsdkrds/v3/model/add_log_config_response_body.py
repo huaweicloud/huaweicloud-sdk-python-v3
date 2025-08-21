@@ -29,7 +29,7 @@ class AddLogConfigResponseBody:
 
         The model defined in huaweicloud sdk
 
-        :param log_configs: 实例日志配置信息。
+        :param log_configs: 实例日志配置信息，最多20条。
         :type log_configs: list[:class:`huaweicloudsdkrds.v3.AddLogConfigs`]
         """
         
@@ -44,7 +44,7 @@ class AddLogConfigResponseBody:
     def log_configs(self):
         r"""Gets the log_configs of this AddLogConfigResponseBody.
 
-        实例日志配置信息。
+        实例日志配置信息，最多20条。
 
         :return: The log_configs of this AddLogConfigResponseBody.
         :rtype: list[:class:`huaweicloudsdkrds.v3.AddLogConfigs`]
@@ -55,7 +55,7 @@ class AddLogConfigResponseBody:
     def log_configs(self, log_configs):
         r"""Sets the log_configs of this AddLogConfigResponseBody.
 
-        实例日志配置信息。
+        实例日志配置信息，最多20条。
 
         :param log_configs: The log_configs of this AddLogConfigResponseBody.
         :type log_configs: list[:class:`huaweicloudsdkrds.v3.AddLogConfigs`]

@@ -31,7 +31,7 @@ class Port:
 
         The model defined in huaweicloud sdk
 
-        :param port_type: **参数解释**： 端口类型，-1 Any，0 包含，1 排除 **取值范围**： 不涉及
+        :param port_type: **参数解释**： 端口类型 **取值范围**： -1 Any，0 包含，1 排除
         :type port_type: int
         :param ports: **参数解释**： 端口 **取值范围**： 不涉及
         :type ports: str
@@ -52,7 +52,7 @@ class Port:
     def port_type(self):
         r"""Gets the port_type of this Port.
 
-        **参数解释**： 端口类型，-1 Any，0 包含，1 排除 **取值范围**： 不涉及
+        **参数解释**： 端口类型 **取值范围**： -1 Any，0 包含，1 排除
 
         :return: The port_type of this Port.
         :rtype: int
@@ -63,7 +63,7 @@ class Port:
     def port_type(self, port_type):
         r"""Sets the port_type of this Port.
 
-        **参数解释**： 端口类型，-1 Any，0 包含，1 排除 **取值范围**： 不涉及
+        **参数解释**： 端口类型 **取值范围**： -1 Any，0 包含，1 排除
 
         :param port_type: The port_type of this Port.
         :type port_type: int

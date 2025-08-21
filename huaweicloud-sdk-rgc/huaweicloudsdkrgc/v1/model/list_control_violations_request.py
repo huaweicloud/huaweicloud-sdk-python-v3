@@ -31,7 +31,7 @@ class ListControlViolationsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param account_id: 账户ID。
+        :param account_id: 纳管账号ID。
         :type account_id: str
         :param organizational_unit_id: 注册OU ID。
         :type organizational_unit_id: str
@@ -52,7 +52,7 @@ class ListControlViolationsRequest:
     def account_id(self):
         r"""Gets the account_id of this ListControlViolationsRequest.
 
-        账户ID。
+        纳管账号ID。
 
         :return: The account_id of this ListControlViolationsRequest.
         :rtype: str
@@ -63,7 +63,7 @@ class ListControlViolationsRequest:
     def account_id(self, account_id):
         r"""Sets the account_id of this ListControlViolationsRequest.
 
-        账户ID。
+        纳管账号ID。
 
         :param account_id: The account_id of this ListControlViolationsRequest.
         :type account_id: str

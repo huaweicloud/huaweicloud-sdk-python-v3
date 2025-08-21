@@ -19,18 +19,18 @@ class ListImagesRequest:
     openapi_types = {
         'cluster_id': 'str',
         'upgrade_type': 'str',
-        'start': 'str',
+        'offset': 'str',
         'limit': 'str'
     }
 
     attribute_map = {
         'cluster_id': 'cluster_id',
         'upgrade_type': 'upgrade_type',
-        'start': 'start',
+        'offset': 'offset',
         'limit': 'limit'
     }
 
-    def __init__(self, cluster_id=None, upgrade_type=None, start=None, limit=None):
+    def __init__(self, cluster_id=None, upgrade_type=None, offset=None, limit=None):
         r"""ListImagesRequest
 
         The model defined in huaweicloud sdk
@@ -39,8 +39,8 @@ class ListImagesRequest:
         :type cluster_id: str
         :param upgrade_type: 升级目标版本类型： - same：相同版本。 - cross： 跨版本。
         :type upgrade_type: str
-        :param start: 指定查询起始值，默认值为0。
-        :type start: str
+        :param offset: 指定查询起始值，默认值为0。
+        :type offset: str
         :param limit: 指定查询个数，默认值为10。
         :type limit: str
         """
@@ -49,14 +49,14 @@ class ListImagesRequest:
 
         self._cluster_id = None
         self._upgrade_type = None
-        self._start = None
+        self._offset = None
         self._limit = None
         self.discriminator = None
 
         self.cluster_id = cluster_id
         self.upgrade_type = upgrade_type
-        if start is not None:
-            self.start = start
+        if offset is not None:
+            self.offset = offset
         if limit is not None:
             self.limit = limit
 
@@ -105,26 +105,26 @@ class ListImagesRequest:
         self._upgrade_type = upgrade_type
 
     @property
-    def start(self):
-        r"""Gets the start of this ListImagesRequest.
+    def offset(self):
+        r"""Gets the offset of this ListImagesRequest.
 
         指定查询起始值，默认值为0。
 
-        :return: The start of this ListImagesRequest.
+        :return: The offset of this ListImagesRequest.
         :rtype: str
         """
-        return self._start
+        return self._offset
 
-    @start.setter
-    def start(self, start):
-        r"""Sets the start of this ListImagesRequest.
+    @offset.setter
+    def offset(self, offset):
+        r"""Sets the offset of this ListImagesRequest.
 
         指定查询起始值，默认值为0。
 
-        :param start: The start of this ListImagesRequest.
-        :type start: str
+        :param offset: The offset of this ListImagesRequest.
+        :type offset: str
         """
-        self._start = start
+        self._offset = offset
 
     @property
     def limit(self):

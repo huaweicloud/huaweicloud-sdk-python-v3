@@ -21,6 +21,8 @@ from huaweicloudsdkcss.v1.model.bind_public_req_eip import BindPublicReqEip
 from huaweicloudsdkcss.v1.model.bind_public_req_eip_band_width import BindPublicReqEipBandWidth
 from huaweicloudsdkcss.v1.model.bind_public_req_eip_req import BindPublicReqEipReq
 from huaweicloudsdkcss.v1.model.certificates_resource import CertificatesResource
+from huaweicloudsdkcss.v1.model.change_cluster_subnet_request import ChangeClusterSubnetRequest
+from huaweicloudsdkcss.v1.model.change_cluster_subnet_response import ChangeClusterSubnetResponse
 from huaweicloudsdkcss.v1.model.change_mode_req import ChangeModeReq
 from huaweicloudsdkcss.v1.model.change_mode_request import ChangeModeRequest
 from huaweicloudsdkcss.v1.model.change_mode_response import ChangeModeResponse
@@ -28,6 +30,7 @@ from huaweicloudsdkcss.v1.model.change_security_group_req import ChangeSecurityG
 from huaweicloudsdkcss.v1.model.change_security_group_request import ChangeSecurityGroupRequest
 from huaweicloudsdkcss.v1.model.change_security_group_response import ChangeSecurityGroupResponse
 from huaweicloudsdkcss.v1.model.close_kibana_public_req import CloseKibanaPublicReq
+from huaweicloudsdkcss.v1.model.cluster_change_main_subnet import ClusterChangeMainSubnet
 from huaweicloudsdkcss.v1.model.cluster_detail_datastore import ClusterDetailDatastore
 from huaweicloudsdkcss.v1.model.cluster_detail_failed_reasons import ClusterDetailFailedReasons
 from huaweicloudsdkcss.v1.model.cluster_detail_instances import ClusterDetailInstances

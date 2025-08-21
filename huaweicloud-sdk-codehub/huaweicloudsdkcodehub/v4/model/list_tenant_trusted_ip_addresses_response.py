@@ -32,7 +32,7 @@ class ListTenantTrustedIpAddressesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param body: 租户ip白名单列表
+        :param body: 
         :type body: list[:class:`huaweicloudsdkcodehub.v4.TenantTrustedIpAddressDto`]
         :param x_total: 
         :type x_total: str
@@ -53,8 +53,6 @@ class ListTenantTrustedIpAddressesResponse(SdkResponse):
     def body(self):
         r"""Gets the body of this ListTenantTrustedIpAddressesResponse.
 
-        租户ip白名单列表
-
         :return: The body of this ListTenantTrustedIpAddressesResponse.
         :rtype: list[:class:`huaweicloudsdkcodehub.v4.TenantTrustedIpAddressDto`]
         """
@@ -63,8 +61,6 @@ class ListTenantTrustedIpAddressesResponse(SdkResponse):
     @body.setter
     def body(self, body):
         r"""Sets the body of this ListTenantTrustedIpAddressesResponse.
-
-        租户ip白名单列表
 
         :param body: The body of this ListTenantTrustedIpAddressesResponse.
         :type body: list[:class:`huaweicloudsdkcodehub.v4.TenantTrustedIpAddressDto`]

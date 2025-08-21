@@ -23,6 +23,7 @@ class ShowPolicyAssignmentResponse(SdkResponse):
         'name': 'str',
         'description': 'str',
         'policy_filter': 'PolicyFilterDefinition',
+        'policy_filter_v2': 'PolicyFilterDefinitionV2',
         'period': 'str',
         'state': 'str',
         'created': 'str',
@@ -42,6 +43,7 @@ class ShowPolicyAssignmentResponse(SdkResponse):
         'name': 'name',
         'description': 'description',
         'policy_filter': 'policy_filter',
+        'policy_filter_v2': 'policy_filter_v2',
         'period': 'period',
         'state': 'state',
         'created': 'created',
@@ -55,7 +57,7 @@ class ShowPolicyAssignmentResponse(SdkResponse):
         'target_id': 'target_id'
     }
 
-    def __init__(self, policy_assignment_type=None, id=None, name=None, description=None, policy_filter=None, period=None, state=None, created=None, updated=None, policy_definition_id=None, custom_policy=None, parameters=None, tags=None, created_by=None, target_type=None, target_id=None):
+    def __init__(self, policy_assignment_type=None, id=None, name=None, description=None, policy_filter=None, policy_filter_v2=None, period=None, state=None, created=None, updated=None, policy_definition_id=None, custom_policy=None, parameters=None, tags=None, created_by=None, target_type=None, target_id=None):
         r"""ShowPolicyAssignmentResponse
 
         The model defined in huaweicloud sdk
@@ -70,6 +72,8 @@ class ShowPolicyAssignmentResponse(SdkResponse):
         :type description: str
         :param policy_filter: 
         :type policy_filter: :class:`huaweicloudsdkconfig.v1.PolicyFilterDefinition`
+        :param policy_filter_v2: 
+        :type policy_filter_v2: :class:`huaweicloudsdkconfig.v1.PolicyFilterDefinitionV2`
         :param period: 触发周期值，可选值：One_Hour, Three_Hours, Six_Hours, Twelve_Hours, TwentyFour_Hours
         :type period: str
         :param state: 规则状态
@@ -101,6 +105,7 @@ class ShowPolicyAssignmentResponse(SdkResponse):
         self._name = None
         self._description = None
         self._policy_filter = None
+        self._policy_filter_v2 = None
         self._period = None
         self._state = None
         self._created = None
@@ -124,6 +129,8 @@ class ShowPolicyAssignmentResponse(SdkResponse):
             self.description = description
         if policy_filter is not None:
             self.policy_filter = policy_filter
+        if policy_filter_v2 is not None:
+            self.policy_filter_v2 = policy_filter_v2
         if period is not None:
             self.period = period
         if state is not None:
@@ -252,6 +259,24 @@ class ShowPolicyAssignmentResponse(SdkResponse):
         :type policy_filter: :class:`huaweicloudsdkconfig.v1.PolicyFilterDefinition`
         """
         self._policy_filter = policy_filter
+
+    @property
+    def policy_filter_v2(self):
+        r"""Gets the policy_filter_v2 of this ShowPolicyAssignmentResponse.
+
+        :return: The policy_filter_v2 of this ShowPolicyAssignmentResponse.
+        :rtype: :class:`huaweicloudsdkconfig.v1.PolicyFilterDefinitionV2`
+        """
+        return self._policy_filter_v2
+
+    @policy_filter_v2.setter
+    def policy_filter_v2(self, policy_filter_v2):
+        r"""Sets the policy_filter_v2 of this ShowPolicyAssignmentResponse.
+
+        :param policy_filter_v2: The policy_filter_v2 of this ShowPolicyAssignmentResponse.
+        :type policy_filter_v2: :class:`huaweicloudsdkconfig.v1.PolicyFilterDefinitionV2`
+        """
+        self._policy_filter_v2 = policy_filter_v2
 
     @property
     def period(self):

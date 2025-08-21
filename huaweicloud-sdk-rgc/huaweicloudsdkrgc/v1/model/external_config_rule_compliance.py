@@ -37,7 +37,7 @@ class ExternalConfigRuleCompliance:
         :type rule_name: str
         :param status: 合规状态。
         :type status: str
-        :param control_id: 控制策略ID。
+        :param control_id: 外部规则ID。
         :type control_id: str
         """
         
@@ -103,7 +103,7 @@ class ExternalConfigRuleCompliance:
     def control_id(self):
         r"""Gets the control_id of this ExternalConfigRuleCompliance.
 
-        控制策略ID。
+        外部规则ID。
 
         :return: The control_id of this ExternalConfigRuleCompliance.
         :rtype: str
@@ -114,7 +114,7 @@ class ExternalConfigRuleCompliance:
     def control_id(self, control_id):
         r"""Sets the control_id of this ExternalConfigRuleCompliance.
 
-        控制策略ID。
+        外部规则ID。
 
         :param control_id: The control_id of this ExternalConfigRuleCompliance.
         :type control_id: str

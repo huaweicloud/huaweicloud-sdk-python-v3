@@ -24,6 +24,18 @@ class CodeHubRegion:
                         "https://codehub-ext.sa-brazil-1.myhuaweicloud.com")
     LA_NORTH_2 = Region("la-north-2",
                         "https://codehub-ext.la-north-2.myhuaweicloud.com")
+    AP_SOUTHEAST_3 = Region("ap-southeast-3",
+                        "https://codehub-ext.ap-southeast-3.myhuaweicloud.com")
+    LA_SOUTH_2 = Region("la-south-2",
+                        "https://codeartsrepo-ext.la-south-2.myhuaweicloud.com")
+    ME_EAST_1 = Region("me-east-1",
+                        "https://repo.me-east-1.myhuaweicloud.com")
+    TR_WEST_1 = Region("tr-west-1",
+                        "https://codeartsrepo-ext.tr-west-1.myhuaweicloud.com")
+    AF_SOUTH_1 = Region("af-south-1",
+                        "https://repo.af-south-1.myhuaweicloud.com")
+    AF_NORTH_1 = Region("af-north-1",
+                        "https://repo.af-north-1.myhuaweicloud.com")
 
     static_fields = {
         "cn-east-2": CN_EAST_2,
@@ -35,6 +47,12 @@ class CodeHubRegion:
         "cn-southwest-2": CN_SOUTHWEST_2,
         "sa-brazil-1": SA_BRAZIL_1,
         "la-north-2": LA_NORTH_2,
+        "ap-southeast-3": AP_SOUTHEAST_3,
+        "la-south-2": LA_SOUTH_2,
+        "me-east-1": ME_EAST_1,
+        "tr-west-1": TR_WEST_1,
+        "af-south-1": AF_SOUTH_1,
+        "af-north-1": AF_NORTH_1,
     }
 
     @classmethod

@@ -43,17 +43,17 @@ class ShowTrafficTrendRequest:
 
         The model defined in huaweicloud sdk
 
-        :param fw_instance_id: **参数解释**： 防火墙ID，用户创建防火墙实例后产生的唯一ID，配置后可区分不同防火墙，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取 **约束限制**： 不涉及 **取值范围**： 32位UUID **默认取值**： 不涉及 
+        :param fw_instance_id: **参数解释**： 防火墙ID，用户创建防火墙实例后产生的唯一ID，配置后可区分不同防火墙，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取 **约束限制**： 不涉及 **取值范围**： 32位UUID **默认取值**： 不涉及
         :type fw_instance_id: str
-        :param range: **参数解释**： 时间范围  **约束限制**： 不涉及 **取值范围**： 0为近一时 1近一天 2近七天   **默认取值**： 不涉及 
+        :param range: **参数解释**： 时间范围  **约束限制**： 不涉及 **取值范围**： 0为近一时 1近一天 2近七天   **默认取值**： 不涉及
         :type range: int
-        :param log_type: **参数解释**： 日志类型 **约束限制**： 不涉及 **取值范围**： internet为南北向日志、nat为nat场景日志，vpc为东西向日志，vgw为vgw场景日志 **默认取值**： 不涉及 
+        :param log_type: **参数解释**： 日志类型 **约束限制**： 不涉及 **取值范围**： internet为南北向日志、nat为nat场景日志，vpc为东西向日志，vgw为vgw场景日志 **默认取值**： 不涉及
         :type log_type: str
-        :param start_time: **参数解释**： 开始时间 **约束限制**： 不涉及 **取值范围**： 毫秒级时间戳 **默认取值**： 不涉及 
+        :param start_time: **参数解释**： 开始时间 **约束限制**： 不涉及 **取值范围**： 毫秒级时间戳 **默认取值**： 不涉及
         :type start_time: int
-        :param end_time: **参数解释**： 结束时间 **约束限制**： 不涉及 **取值范围**： 毫秒级时间戳 **默认取值**： 不涉及 
+        :param end_time: **参数解释**： 结束时间 **约束限制**： 不涉及 **取值范围**： 毫秒级时间戳 **默认取值**： 不涉及
         :type end_time: int
-        :param vgw_id: **参数解释**： VGW ID **约束限制**： 不涉及 **取值范围**： 32位UUID **默认取值**： 不涉及 
+        :param vgw_id: **参数解释**： VGW ID **约束限制**： 不涉及 **取值范围**： 32位UUID **默认取值**： 不涉及
         :type vgw_id: list[str]
         :param agg_type: **参数解释**： 聚合类型 **约束限制**： 不涉及 **取值范围**： avg为平均值 max为最大值 **默认取值**： 不涉及
         :type agg_type: str
@@ -91,7 +91,7 @@ class ShowTrafficTrendRequest:
     def fw_instance_id(self):
         r"""Gets the fw_instance_id of this ShowTrafficTrendRequest.
 
-        **参数解释**： 防火墙ID，用户创建防火墙实例后产生的唯一ID，配置后可区分不同防火墙，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取 **约束限制**： 不涉及 **取值范围**： 32位UUID **默认取值**： 不涉及 
+        **参数解释**： 防火墙ID，用户创建防火墙实例后产生的唯一ID，配置后可区分不同防火墙，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取 **约束限制**： 不涉及 **取值范围**： 32位UUID **默认取值**： 不涉及
 
         :return: The fw_instance_id of this ShowTrafficTrendRequest.
         :rtype: str
@@ -102,7 +102,7 @@ class ShowTrafficTrendRequest:
     def fw_instance_id(self, fw_instance_id):
         r"""Sets the fw_instance_id of this ShowTrafficTrendRequest.
 
-        **参数解释**： 防火墙ID，用户创建防火墙实例后产生的唯一ID，配置后可区分不同防火墙，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取 **约束限制**： 不涉及 **取值范围**： 32位UUID **默认取值**： 不涉及 
+        **参数解释**： 防火墙ID，用户创建防火墙实例后产生的唯一ID，配置后可区分不同防火墙，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取 **约束限制**： 不涉及 **取值范围**： 32位UUID **默认取值**： 不涉及
 
         :param fw_instance_id: The fw_instance_id of this ShowTrafficTrendRequest.
         :type fw_instance_id: str
@@ -113,7 +113,7 @@ class ShowTrafficTrendRequest:
     def range(self):
         r"""Gets the range of this ShowTrafficTrendRequest.
 
-        **参数解释**： 时间范围  **约束限制**： 不涉及 **取值范围**： 0为近一时 1近一天 2近七天   **默认取值**： 不涉及 
+        **参数解释**： 时间范围  **约束限制**： 不涉及 **取值范围**： 0为近一时 1近一天 2近七天   **默认取值**： 不涉及
 
         :return: The range of this ShowTrafficTrendRequest.
         :rtype: int
@@ -124,7 +124,7 @@ class ShowTrafficTrendRequest:
     def range(self, range):
         r"""Sets the range of this ShowTrafficTrendRequest.
 
-        **参数解释**： 时间范围  **约束限制**： 不涉及 **取值范围**： 0为近一时 1近一天 2近七天   **默认取值**： 不涉及 
+        **参数解释**： 时间范围  **约束限制**： 不涉及 **取值范围**： 0为近一时 1近一天 2近七天   **默认取值**： 不涉及
 
         :param range: The range of this ShowTrafficTrendRequest.
         :type range: int
@@ -135,7 +135,7 @@ class ShowTrafficTrendRequest:
     def log_type(self):
         r"""Gets the log_type of this ShowTrafficTrendRequest.
 
-        **参数解释**： 日志类型 **约束限制**： 不涉及 **取值范围**： internet为南北向日志、nat为nat场景日志，vpc为东西向日志，vgw为vgw场景日志 **默认取值**： 不涉及 
+        **参数解释**： 日志类型 **约束限制**： 不涉及 **取值范围**： internet为南北向日志、nat为nat场景日志，vpc为东西向日志，vgw为vgw场景日志 **默认取值**： 不涉及
 
         :return: The log_type of this ShowTrafficTrendRequest.
         :rtype: str
@@ -146,7 +146,7 @@ class ShowTrafficTrendRequest:
     def log_type(self, log_type):
         r"""Sets the log_type of this ShowTrafficTrendRequest.
 
-        **参数解释**： 日志类型 **约束限制**： 不涉及 **取值范围**： internet为南北向日志、nat为nat场景日志，vpc为东西向日志，vgw为vgw场景日志 **默认取值**： 不涉及 
+        **参数解释**： 日志类型 **约束限制**： 不涉及 **取值范围**： internet为南北向日志、nat为nat场景日志，vpc为东西向日志，vgw为vgw场景日志 **默认取值**： 不涉及
 
         :param log_type: The log_type of this ShowTrafficTrendRequest.
         :type log_type: str
@@ -157,7 +157,7 @@ class ShowTrafficTrendRequest:
     def start_time(self):
         r"""Gets the start_time of this ShowTrafficTrendRequest.
 
-        **参数解释**： 开始时间 **约束限制**： 不涉及 **取值范围**： 毫秒级时间戳 **默认取值**： 不涉及 
+        **参数解释**： 开始时间 **约束限制**： 不涉及 **取值范围**： 毫秒级时间戳 **默认取值**： 不涉及
 
         :return: The start_time of this ShowTrafficTrendRequest.
         :rtype: int
@@ -168,7 +168,7 @@ class ShowTrafficTrendRequest:
     def start_time(self, start_time):
         r"""Sets the start_time of this ShowTrafficTrendRequest.
 
-        **参数解释**： 开始时间 **约束限制**： 不涉及 **取值范围**： 毫秒级时间戳 **默认取值**： 不涉及 
+        **参数解释**： 开始时间 **约束限制**： 不涉及 **取值范围**： 毫秒级时间戳 **默认取值**： 不涉及
 
         :param start_time: The start_time of this ShowTrafficTrendRequest.
         :type start_time: int
@@ -179,7 +179,7 @@ class ShowTrafficTrendRequest:
     def end_time(self):
         r"""Gets the end_time of this ShowTrafficTrendRequest.
 
-        **参数解释**： 结束时间 **约束限制**： 不涉及 **取值范围**： 毫秒级时间戳 **默认取值**： 不涉及 
+        **参数解释**： 结束时间 **约束限制**： 不涉及 **取值范围**： 毫秒级时间戳 **默认取值**： 不涉及
 
         :return: The end_time of this ShowTrafficTrendRequest.
         :rtype: int
@@ -190,7 +190,7 @@ class ShowTrafficTrendRequest:
     def end_time(self, end_time):
         r"""Sets the end_time of this ShowTrafficTrendRequest.
 
-        **参数解释**： 结束时间 **约束限制**： 不涉及 **取值范围**： 毫秒级时间戳 **默认取值**： 不涉及 
+        **参数解释**： 结束时间 **约束限制**： 不涉及 **取值范围**： 毫秒级时间戳 **默认取值**： 不涉及
 
         :param end_time: The end_time of this ShowTrafficTrendRequest.
         :type end_time: int
@@ -201,7 +201,7 @@ class ShowTrafficTrendRequest:
     def vgw_id(self):
         r"""Gets the vgw_id of this ShowTrafficTrendRequest.
 
-        **参数解释**： VGW ID **约束限制**： 不涉及 **取值范围**： 32位UUID **默认取值**： 不涉及 
+        **参数解释**： VGW ID **约束限制**： 不涉及 **取值范围**： 32位UUID **默认取值**： 不涉及
 
         :return: The vgw_id of this ShowTrafficTrendRequest.
         :rtype: list[str]
@@ -212,7 +212,7 @@ class ShowTrafficTrendRequest:
     def vgw_id(self, vgw_id):
         r"""Sets the vgw_id of this ShowTrafficTrendRequest.
 
-        **参数解释**： VGW ID **约束限制**： 不涉及 **取值范围**： 32位UUID **默认取值**： 不涉及 
+        **参数解释**： VGW ID **约束限制**： 不涉及 **取值范围**： 32位UUID **默认取值**： 不涉及
 
         :param vgw_id: The vgw_id of this ShowTrafficTrendRequest.
         :type vgw_id: list[str]

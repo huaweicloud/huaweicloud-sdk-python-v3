@@ -35,7 +35,7 @@ class GaussDBforNoSQLRegion:
     CN_EAST_4 = Region("cn-east-4",
                         "https://gaussdb-nosql.cn-east-4.myhuaweicloud.com")
     CN_SOUTH_4 = Region("cn-south-4",
-                        "https://nosql-gemini.cn-south-4.myhuaweicloud.com")
+                        "https://gaussdb-nosql.cn-south-4.myhuaweicloud.com")
     CN_SOUTHWEST_3 = Region("cn-southwest-3",
                         "https://gaussdb-nosql.cn-southwest-3.myhuaweicloud.com")
     TR_WEST_1 = Region("tr-west-1",

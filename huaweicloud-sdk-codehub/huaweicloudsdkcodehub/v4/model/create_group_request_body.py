@@ -53,8 +53,7 @@ class CreateGroupRequestBody:
         self._description = None
         self.discriminator = None
 
-        if name is not None:
-            self.name = name
+        self.name = name
         if parent_id is not None:
             self.parent_id = parent_id
         if visibility is not None:

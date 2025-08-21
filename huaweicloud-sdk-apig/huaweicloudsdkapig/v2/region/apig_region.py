@@ -56,6 +56,24 @@ class ApigRegion:
                         "https://apig.eu-west-0.myhuaweicloud.com")
     RU_MOSCOW_1 = Region("ru-moscow-1",
                         "https://apig.ru-moscow-1.myhuaweicloud.com")
+    CN_SOUTH_4 = Region("cn-south-4",
+                        "https://apig.cn-south-4.myhuaweicloud.com")
+    CN_EAST_5 = Region("cn-east-5",
+                        "https://apig.cn-east-5.myhuaweicloud.com")
+    CN_NORTH_12 = Region("cn-north-12",
+                        "https://apig.cn-north-12.myhuaweicloud.com")
+    CN_EAST_4 = Region("cn-east-4",
+                        "https://apig.cn-east-4.myhuaweicloud.com")
+    CN_SOUTHWEST_3 = Region("cn-southwest-3",
+                        "https://apig.cn-southwest-3.myhuaweicloud.com")
+    CN_SOUTH_2 = Region("cn-south-2",
+                        "https://apig.cn-south-2.myhuaweicloud.com")
+    CN_NORTH_11 = Region("cn-north-11",
+                        "https://apig.cn-north-11.myhuaweicloud.com")
+    AP_SOUTHEAST_5 = Region("ap-southeast-5",
+                        "https://apig.ap-southeast-5.myhuaweicloud.com")
+    AF_NORTH_1 = Region("af-north-1",
+                        "https://apig.af-north-1.myhuaweicloud.com")
 
     static_fields = {
         "cn-north-4": CN_NORTH_4,
@@ -83,6 +101,15 @@ class ApigRegion:
         "my-kualalumpur-1": MY_KUALALUMPUR_1,
         "eu-west-0": EU_WEST_0,
         "ru-moscow-1": RU_MOSCOW_1,
+        "cn-south-4": CN_SOUTH_4,
+        "cn-east-5": CN_EAST_5,
+        "cn-north-12": CN_NORTH_12,
+        "cn-east-4": CN_EAST_4,
+        "cn-southwest-3": CN_SOUTHWEST_3,
+        "cn-south-2": CN_SOUTH_2,
+        "cn-north-11": CN_NORTH_11,
+        "ap-southeast-5": AP_SOUTHEAST_5,
+        "af-north-1": AF_NORTH_1,
     }
 
     @classmethod

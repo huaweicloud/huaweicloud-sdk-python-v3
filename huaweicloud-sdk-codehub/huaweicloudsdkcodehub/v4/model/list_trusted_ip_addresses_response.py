@@ -32,7 +32,7 @@ class ListTrustedIpAddressesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param body: 仓库ip白名单列表
+        :param body: 
         :type body: list[:class:`huaweicloudsdkcodehub.v4.TrustedIpAddressDto`]
         :param x_total: 
         :type x_total: str
@@ -53,8 +53,6 @@ class ListTrustedIpAddressesResponse(SdkResponse):
     def body(self):
         r"""Gets the body of this ListTrustedIpAddressesResponse.
 
-        仓库ip白名单列表
-
         :return: The body of this ListTrustedIpAddressesResponse.
         :rtype: list[:class:`huaweicloudsdkcodehub.v4.TrustedIpAddressDto`]
         """
@@ -63,8 +61,6 @@ class ListTrustedIpAddressesResponse(SdkResponse):
     @body.setter
     def body(self, body):
         r"""Sets the body of this ListTrustedIpAddressesResponse.
-
-        仓库ip白名单列表
 
         :param body: The body of this ListTrustedIpAddressesResponse.
         :type body: list[:class:`huaweicloudsdkcodehub.v4.TrustedIpAddressDto`]

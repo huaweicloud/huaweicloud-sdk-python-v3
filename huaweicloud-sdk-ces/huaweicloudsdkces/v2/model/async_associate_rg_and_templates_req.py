@@ -55,9 +55,9 @@ class AsyncAssociateRGAndTemplatesReq:
         :type alarm_notifications: list[:class:`huaweicloudsdkces.v2.Notification`]
         :param ok_notifications: 告警恢复通知列表
         :type ok_notifications: list[:class:`huaweicloudsdkces.v2.Notification`]
-        :param notification_begin_time: 告警通知开启时间
+        :param notification_begin_time: **参数解释**： 每天告警通知的开始时间。 **约束限制**： 不涉及。 **取值范围**： 长度为[1,64]个字符。 **默认取值**： 不涉及。 
         :type notification_begin_time: str
-        :param notification_end_time: 告警通知关闭时间
+        :param notification_end_time: **参数解释**： 每天告警通知的结束时间。 **约束限制**： 不涉及。 **取值范围**： 长度为[1,64]个字符。 **默认取值**： 不涉及。 
         :type notification_end_time: str
         :param effective_timezone: 时区，形如：\&quot;GMT-08:00\&quot;、\&quot;GMT+08:00\&quot;、\&quot;GMT+0:00\&quot;
         :type effective_timezone: str
@@ -194,7 +194,7 @@ class AsyncAssociateRGAndTemplatesReq:
     def notification_begin_time(self):
         r"""Gets the notification_begin_time of this AsyncAssociateRGAndTemplatesReq.
 
-        告警通知开启时间
+        **参数解释**： 每天告警通知的开始时间。 **约束限制**： 不涉及。 **取值范围**： 长度为[1,64]个字符。 **默认取值**： 不涉及。 
 
         :return: The notification_begin_time of this AsyncAssociateRGAndTemplatesReq.
         :rtype: str
@@ -205,7 +205,7 @@ class AsyncAssociateRGAndTemplatesReq:
     def notification_begin_time(self, notification_begin_time):
         r"""Sets the notification_begin_time of this AsyncAssociateRGAndTemplatesReq.
 
-        告警通知开启时间
+        **参数解释**： 每天告警通知的开始时间。 **约束限制**： 不涉及。 **取值范围**： 长度为[1,64]个字符。 **默认取值**： 不涉及。 
 
         :param notification_begin_time: The notification_begin_time of this AsyncAssociateRGAndTemplatesReq.
         :type notification_begin_time: str
@@ -216,7 +216,7 @@ class AsyncAssociateRGAndTemplatesReq:
     def notification_end_time(self):
         r"""Gets the notification_end_time of this AsyncAssociateRGAndTemplatesReq.
 
-        告警通知关闭时间
+        **参数解释**： 每天告警通知的结束时间。 **约束限制**： 不涉及。 **取值范围**： 长度为[1,64]个字符。 **默认取值**： 不涉及。 
 
         :return: The notification_end_time of this AsyncAssociateRGAndTemplatesReq.
         :rtype: str
@@ -227,7 +227,7 @@ class AsyncAssociateRGAndTemplatesReq:
     def notification_end_time(self, notification_end_time):
         r"""Sets the notification_end_time of this AsyncAssociateRGAndTemplatesReq.
 
-        告警通知关闭时间
+        **参数解释**： 每天告警通知的结束时间。 **约束限制**： 不涉及。 **取值范围**： 长度为[1,64]个字符。 **默认取值**： 不涉及。 
 
         :param notification_end_time: The notification_end_time of this AsyncAssociateRGAndTemplatesReq.
         :type notification_end_time: str

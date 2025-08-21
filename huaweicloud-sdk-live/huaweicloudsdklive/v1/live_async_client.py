@@ -229,6 +229,73 @@ class LiveAsyncClient(Client):
 
         return http_info
 
+    def create_flow_output_async(self, request):
+        r"""创建转推输出
+
+        创建转推输出
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateFlowOutput
+        :type request: :class:`huaweicloudsdklive.v1.CreateFlowOutputRequest`
+        :rtype: :class:`huaweicloudsdklive.v1.CreateFlowOutputResponse`
+        """
+        http_info = self._create_flow_output_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_flow_output_async_invoker(self, request):
+        http_info = self._create_flow_output_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_flow_output_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/flows/outputs",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateFlowOutputResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'flow_id' in local_var_params:
+            query_params.append(('flow_id', local_var_params['flow_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=utf-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_flows_async(self, request):
         r"""创建流
 
@@ -1114,6 +1181,73 @@ class LiveAsyncClient(Client):
         query_params = []
         if 'flow_id' in local_var_params:
             query_params.append(('flow_id', local_var_params['flow_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_flow_output_async(self, request):
+        r"""删除转推输出
+
+        删除转推输出
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteFlowOutput
+        :type request: :class:`huaweicloudsdklive.v1.DeleteFlowOutputRequest`
+        :rtype: :class:`huaweicloudsdklive.v1.DeleteFlowOutputResponse`
+        """
+        http_info = self._delete_flow_output_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_flow_output_async_invoker(self, request):
+        http_info = self._delete_flow_output_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_flow_output_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/flows/outputs",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteFlowOutputResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'flow_id' in local_var_params:
+            query_params.append(('flow_id', local_var_params['flow_id']))
+        if 'output_name' in local_var_params:
+            query_params.append(('output_name', local_var_params['output_name']))
 
         header_params = {}
 
@@ -2654,6 +2788,75 @@ class LiveAsyncClient(Client):
 
         return http_info
 
+    def modify_flow_output_async(self, request):
+        r"""更新转推输出
+
+        更新转推输出
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ModifyFlowOutput
+        :type request: :class:`huaweicloudsdklive.v1.ModifyFlowOutputRequest`
+        :rtype: :class:`huaweicloudsdklive.v1.ModifyFlowOutputResponse`
+        """
+        http_info = self._modify_flow_output_http_info(request)
+        return self._call_api(**http_info)
+
+    def modify_flow_output_async_invoker(self, request):
+        http_info = self._modify_flow_output_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _modify_flow_output_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/flows/outputs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ModifyFlowOutputResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'flow_id' in local_var_params:
+            query_params.append(('flow_id', local_var_params['flow_id']))
+        if 'output_name' in local_var_params:
+            query_params.append(('output_name', local_var_params['output_name']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=utf-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def modify_flow_sources_async(self, request):
         r"""修改流来源
 
@@ -3155,6 +3358,75 @@ class LiveAsyncClient(Client):
         query_params = []
         if 'flow_id' in local_var_params:
             query_params.append(('flow_id', local_var_params['flow_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_output_info_async(self, request):
+        r"""查询转推输出
+
+        查询转推输出
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowOutputInfo
+        :type request: :class:`huaweicloudsdklive.v1.ShowOutputInfoRequest`
+        :rtype: :class:`huaweicloudsdklive.v1.ShowOutputInfoResponse`
+        """
+        http_info = self._show_output_info_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_output_info_async_invoker(self, request):
+        http_info = self._show_output_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_output_info_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/flows/outputs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowOutputInfoResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'data_display' in local_var_params:
+            query_params.append(('data_display', local_var_params['data_display']))
+        if 'flow_id' in local_var_params:
+            query_params.append(('flow_id', local_var_params['flow_id']))
+        if 'output_name' in local_var_params:
+            query_params.append(('output_name', local_var_params['output_name']))
 
         header_params = {}
 
@@ -4396,6 +4668,136 @@ class LiveAsyncClient(Client):
             "resource_path": "/v1/{project_id}/template/transcodings",
             "request_type": request.__class__.__name__,
             "response_type": "UpdateTranscodingsTemplateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json; charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_ces_dims_info_async(self, request):
+        r"""维度配置信息查询
+
+        新增维度配置信息查询API
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListCesDimsInfo
+        :type request: :class:`huaweicloudsdklive.v1.ListCesDimsInfoRequest`
+        :rtype: :class:`huaweicloudsdklive.v1.ListCesDimsInfoResponse`
+        """
+        http_info = self._list_ces_dims_info_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_ces_dims_info_async_invoker(self, request):
+        http_info = self._list_ces_dims_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_ces_dims_info_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/ott/dims-info",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCesDimsInfoResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'namespace' in local_var_params:
+            query_params.append(('namespace', local_var_params['namespace']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_ces_instance_async(self, request):
+        r"""实例查询
+
+        新增实例查询API
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListCesInstance
+        :type request: :class:`huaweicloudsdklive.v1.ListCesInstanceRequest`
+        :rtype: :class:`huaweicloudsdklive.v1.ListCesInstanceResponse`
+        """
+        http_info = self._list_ces_instance_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_ces_instance_async_invoker(self, request):
+        http_info = self._list_ces_instance_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_ces_instance_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/ott/instances",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCesInstanceResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}

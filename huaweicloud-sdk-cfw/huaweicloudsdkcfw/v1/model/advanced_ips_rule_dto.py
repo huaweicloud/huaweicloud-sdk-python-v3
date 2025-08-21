@@ -49,7 +49,7 @@ class AdvancedIpsRuleDto:
         :type object_id: str
         :param param: 包含特殊参数的JSON字符串
         :type param: str
-        :param status: 
+        :param status: 开关状态：0表示关闭、1表示开启
         :type status: int
         """
         
@@ -190,6 +190,8 @@ class AdvancedIpsRuleDto:
     def status(self):
         r"""Gets the status of this AdvancedIpsRuleDto.
 
+        开关状态：0表示关闭、1表示开启
+
         :return: The status of this AdvancedIpsRuleDto.
         :rtype: int
         """
@@ -198,6 +200,8 @@ class AdvancedIpsRuleDto:
     @status.setter
     def status(self, status):
         r"""Sets the status of this AdvancedIpsRuleDto.
+
+        开关状态：0表示关闭、1表示开启
 
         :param status: The status of this AdvancedIpsRuleDto.
         :type status: int

@@ -41,7 +41,7 @@ class DriftDetail:
 
         The model defined in huaweicloud sdk
 
-        :param managed_account_id: 管理纳管账号ID。
+        :param managed_account_id: 管理员账号ID。
         :type managed_account_id: str
         :param drift_type: 漂移类型。
         :type drift_type: str
@@ -87,7 +87,7 @@ class DriftDetail:
     def managed_account_id(self):
         r"""Gets the managed_account_id of this DriftDetail.
 
-        管理纳管账号ID。
+        管理员账号ID。
 
         :return: The managed_account_id of this DriftDetail.
         :rtype: str
@@ -98,7 +98,7 @@ class DriftDetail:
     def managed_account_id(self, managed_account_id):
         r"""Sets the managed_account_id of this DriftDetail.
 
-        管理纳管账号ID。
+        管理员账号ID。
 
         :param managed_account_id: The managed_account_id of this DriftDetail.
         :type managed_account_id: str

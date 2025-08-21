@@ -30,7 +30,7 @@ class UpdateManagedAccountResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param operation_id: 创建账号、纳管账号、纳管注册OU的操作ID。
+        :param operation_id: 创建账号、纳管账号、注册OU的操作ID。
         :type operation_id: str
         """
         
@@ -46,7 +46,7 @@ class UpdateManagedAccountResponse(SdkResponse):
     def operation_id(self):
         r"""Gets the operation_id of this UpdateManagedAccountResponse.
 
-        创建账号、纳管账号、纳管注册OU的操作ID。
+        创建账号、纳管账号、注册OU的操作ID。
 
         :return: The operation_id of this UpdateManagedAccountResponse.
         :rtype: str
@@ -57,7 +57,7 @@ class UpdateManagedAccountResponse(SdkResponse):
     def operation_id(self, operation_id):
         r"""Sets the operation_id of this UpdateManagedAccountResponse.
 
-        创建账号、纳管账号、纳管注册OU的操作ID。
+        创建账号、纳管账号、注册OU的操作ID。
 
         :param operation_id: The operation_id of this UpdateManagedAccountResponse.
         :type operation_id: str

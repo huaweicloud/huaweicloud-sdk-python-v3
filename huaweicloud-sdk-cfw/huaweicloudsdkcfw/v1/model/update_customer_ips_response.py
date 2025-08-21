@@ -18,47 +18,47 @@ class UpdateCustomerIpsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'object'
+        'data': 'UpdateCustomerIpsRespData'
     }
 
     attribute_map = {
-        'body': 'body'
+        'data': 'data'
     }
 
-    def __init__(self, body=None):
+    def __init__(self, data=None):
         r"""UpdateCustomerIpsResponse
 
         The model defined in huaweicloud sdk
 
-        :param body: 
-        :type body: object
+        :param data: 
+        :type data: :class:`huaweicloudsdkcfw.v1.UpdateCustomerIpsRespData`
         """
         
         super(UpdateCustomerIpsResponse, self).__init__()
 
-        self._body = None
+        self._data = None
         self.discriminator = None
 
-        if body is not None:
-            self.body = body
+        if data is not None:
+            self.data = data
 
     @property
-    def body(self):
-        r"""Gets the body of this UpdateCustomerIpsResponse.
+    def data(self):
+        r"""Gets the data of this UpdateCustomerIpsResponse.
 
-        :return: The body of this UpdateCustomerIpsResponse.
-        :rtype: object
+        :return: The data of this UpdateCustomerIpsResponse.
+        :rtype: :class:`huaweicloudsdkcfw.v1.UpdateCustomerIpsRespData`
         """
-        return self._body
+        return self._data
 
-    @body.setter
-    def body(self, body):
-        r"""Sets the body of this UpdateCustomerIpsResponse.
+    @data.setter
+    def data(self, data):
+        r"""Sets the data of this UpdateCustomerIpsResponse.
 
-        :param body: The body of this UpdateCustomerIpsResponse.
-        :type body: object
+        :param data: The data of this UpdateCustomerIpsResponse.
+        :type data: :class:`huaweicloudsdkcfw.v1.UpdateCustomerIpsRespData`
         """
-        self._body = body
+        self._data = data
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -17,24 +17,24 @@ class ListClustersDetailsRequest:
     sensitive_list = []
 
     openapi_types = {
-        'start': 'int',
+        'offset': 'int',
         'limit': 'int',
         'datastore_type': 'str'
     }
 
     attribute_map = {
-        'start': 'start',
+        'offset': 'offset',
         'limit': 'limit',
         'datastore_type': 'datastoreType'
     }
 
-    def __init__(self, start=None, limit=None, datastore_type=None):
+    def __init__(self, offset=None, limit=None, datastore_type=None):
         r"""ListClustersDetailsRequest
 
         The model defined in huaweicloud sdk
 
-        :param start: 指定查询起始值，默认值为1，即从第1个集群开始查询。
-        :type start: int
+        :param offset: 指定查询起始值，默认值为1，即从第1个集群开始查询。
+        :type offset: int
         :param limit: 指定查询个数，默认值为10，即一次查询10个集群信息。
         :type limit: int
         :param datastore_type: 指定查询的集群引擎类型。
@@ -43,39 +43,39 @@ class ListClustersDetailsRequest:
         
         
 
-        self._start = None
+        self._offset = None
         self._limit = None
         self._datastore_type = None
         self.discriminator = None
 
-        if start is not None:
-            self.start = start
+        if offset is not None:
+            self.offset = offset
         if limit is not None:
             self.limit = limit
         if datastore_type is not None:
             self.datastore_type = datastore_type
 
     @property
-    def start(self):
-        r"""Gets the start of this ListClustersDetailsRequest.
+    def offset(self):
+        r"""Gets the offset of this ListClustersDetailsRequest.
 
         指定查询起始值，默认值为1，即从第1个集群开始查询。
 
-        :return: The start of this ListClustersDetailsRequest.
+        :return: The offset of this ListClustersDetailsRequest.
         :rtype: int
         """
-        return self._start
+        return self._offset
 
-    @start.setter
-    def start(self, start):
-        r"""Sets the start of this ListClustersDetailsRequest.
+    @offset.setter
+    def offset(self, offset):
+        r"""Sets the offset of this ListClustersDetailsRequest.
 
         指定查询起始值，默认值为1，即从第1个集群开始查询。
 
-        :param start: The start of this ListClustersDetailsRequest.
-        :type start: int
+        :param offset: The offset of this ListClustersDetailsRequest.
+        :type offset: int
         """
-        self._start = start
+        self._offset = offset
 
     @property
     def limit(self):

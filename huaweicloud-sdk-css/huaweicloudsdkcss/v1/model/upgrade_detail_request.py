@@ -18,27 +18,27 @@ class UpgradeDetailRequest:
 
     openapi_types = {
         'cluster_id': 'str',
-        'start': 'int',
+        'offset': 'int',
         'limit': 'int',
         'action_mode': 'str'
     }
 
     attribute_map = {
         'cluster_id': 'cluster_id',
-        'start': 'start',
+        'offset': 'offset',
         'limit': 'limit',
         'action_mode': 'action_mode'
     }
 
-    def __init__(self, cluster_id=None, start=None, limit=None, action_mode=None):
+    def __init__(self, cluster_id=None, offset=None, limit=None, action_mode=None):
         r"""UpgradeDetailRequest
 
         The model defined in huaweicloud sdk
 
         :param cluster_id: 待升级的集群的ID。
         :type cluster_id: str
-        :param start: 偏移量。 偏移量为一个大于0小于终端节点服务总个数的整数， 表示从偏移量后面的终端节点服务开始查询。
-        :type start: int
+        :param offset: 偏移量。 偏移量为一个大于0小于终端节点服务总个数的整数， 表示从偏移量后面的终端节点服务开始查询。
+        :type offset: int
         :param limit: 查询返回终端节点服务的连接列表限制每页个数，即每页返回的个数。
         :type limit: int
         :param action_mode: 查询升级行为。 - 查询集群版本升级详情：不填写该参数。 - 查询切换AZ详情：当前仅支持AZ_MIGRATION。
@@ -48,14 +48,14 @@ class UpgradeDetailRequest:
         
 
         self._cluster_id = None
-        self._start = None
+        self._offset = None
         self._limit = None
         self._action_mode = None
         self.discriminator = None
 
         self.cluster_id = cluster_id
-        if start is not None:
-            self.start = start
+        if offset is not None:
+            self.offset = offset
         if limit is not None:
             self.limit = limit
         if action_mode is not None:
@@ -84,26 +84,26 @@ class UpgradeDetailRequest:
         self._cluster_id = cluster_id
 
     @property
-    def start(self):
-        r"""Gets the start of this UpgradeDetailRequest.
+    def offset(self):
+        r"""Gets the offset of this UpgradeDetailRequest.
 
         偏移量。 偏移量为一个大于0小于终端节点服务总个数的整数， 表示从偏移量后面的终端节点服务开始查询。
 
-        :return: The start of this UpgradeDetailRequest.
+        :return: The offset of this UpgradeDetailRequest.
         :rtype: int
         """
-        return self._start
+        return self._offset
 
-    @start.setter
-    def start(self, start):
-        r"""Sets the start of this UpgradeDetailRequest.
+    @offset.setter
+    def offset(self, offset):
+        r"""Sets the offset of this UpgradeDetailRequest.
 
         偏移量。 偏移量为一个大于0小于终端节点服务总个数的整数， 表示从偏移量后面的终端节点服务开始查询。
 
-        :param start: The start of this UpgradeDetailRequest.
-        :type start: int
+        :param offset: The offset of this UpgradeDetailRequest.
+        :type offset: int
         """
-        self._start = start
+        self._offset = offset
 
     @property
     def limit(self):

@@ -38,7 +38,7 @@ class ShowAvailableUpdatesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param baseline_update_available: Landing Zone基础配置是否可用。
+        :param baseline_update_available: 用户当前的Landing Zone版本是否为最新版本。
         :type baseline_update_available: bool
         :param control_update_available: 当前账号下是否有新的控制策略。
         :type control_update_available: bool
@@ -74,7 +74,7 @@ class ShowAvailableUpdatesResponse(SdkResponse):
     def baseline_update_available(self):
         r"""Gets the baseline_update_available of this ShowAvailableUpdatesResponse.
 
-        Landing Zone基础配置是否可用。
+        用户当前的Landing Zone版本是否为最新版本。
 
         :return: The baseline_update_available of this ShowAvailableUpdatesResponse.
         :rtype: bool
@@ -85,7 +85,7 @@ class ShowAvailableUpdatesResponse(SdkResponse):
     def baseline_update_available(self, baseline_update_available):
         r"""Sets the baseline_update_available of this ShowAvailableUpdatesResponse.
 
-        Landing Zone基础配置是否可用。
+        用户当前的Landing Zone版本是否为最新版本。
 
         :param baseline_update_available: The baseline_update_available of this ShowAvailableUpdatesResponse.
         :type baseline_update_available: bool

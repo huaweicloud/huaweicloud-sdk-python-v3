@@ -100,6 +100,7 @@ from huaweicloudsdkconfig.v1.model.disable_policy_assignment_request import Disa
 from huaweicloudsdkconfig.v1.model.disable_policy_assignment_response import DisablePolicyAssignmentResponse
 from huaweicloudsdkconfig.v1.model.enable_policy_assignment_request import EnablePolicyAssignmentRequest
 from huaweicloudsdkconfig.v1.model.enable_policy_assignment_response import EnablePolicyAssignmentResponse
+from huaweicloudsdkconfig.v1.model.filter_tag_detail import FilterTagDetail
 from huaweicloudsdkconfig.v1.model.frozen_status import FrozenStatus
 from huaweicloudsdkconfig.v1.model.grouped_resource_count import GroupedResourceCount
 from huaweicloudsdkconfig.v1.model.history_item import HistoryItem
@@ -189,6 +190,7 @@ from huaweicloudsdkconfig.v1.model.policy_compliance_summary_unit import PolicyC
 from huaweicloudsdkconfig.v1.model.policy_definition import PolicyDefinition
 from huaweicloudsdkconfig.v1.model.policy_definition_default_resource_types import PolicyDefinitionDefaultResourceTypes
 from huaweicloudsdkconfig.v1.model.policy_filter_definition import PolicyFilterDefinition
+from huaweicloudsdkconfig.v1.model.policy_filter_definition_v2 import PolicyFilterDefinitionV2
 from huaweicloudsdkconfig.v1.model.policy_parameter_definition import PolicyParameterDefinition
 from huaweicloudsdkconfig.v1.model.policy_parameter_value import PolicyParameterValue
 from huaweicloudsdkconfig.v1.model.policy_resource import PolicyResource

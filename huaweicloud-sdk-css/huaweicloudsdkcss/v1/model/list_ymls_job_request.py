@@ -18,25 +18,25 @@ class ListYmlsJobRequest:
 
     openapi_types = {
         'cluster_id': 'str',
-        'start': 'int',
+        'offset': 'int',
         'limit': 'int'
     }
 
     attribute_map = {
         'cluster_id': 'cluster_id',
-        'start': 'start',
+        'offset': 'offset',
         'limit': 'limit'
     }
 
-    def __init__(self, cluster_id=None, start=None, limit=None):
+    def __init__(self, cluster_id=None, offset=None, limit=None):
         r"""ListYmlsJobRequest
 
         The model defined in huaweicloud sdk
 
         :param cluster_id: 指定查询集群ID。
         :type cluster_id: str
-        :param start: 指定查询起始值，默认值为1，即从第1个任务开始查询。
-        :type start: int
+        :param offset: 指定查询起始值，默认值为1，即从第1个任务开始查询。
+        :type offset: int
         :param limit: 指定查询个数，默认值为10，即一次查询10个任务信息。
         :type limit: int
         """
@@ -44,13 +44,13 @@ class ListYmlsJobRequest:
         
 
         self._cluster_id = None
-        self._start = None
+        self._offset = None
         self._limit = None
         self.discriminator = None
 
         self.cluster_id = cluster_id
-        if start is not None:
-            self.start = start
+        if offset is not None:
+            self.offset = offset
         if limit is not None:
             self.limit = limit
 
@@ -77,26 +77,26 @@ class ListYmlsJobRequest:
         self._cluster_id = cluster_id
 
     @property
-    def start(self):
-        r"""Gets the start of this ListYmlsJobRequest.
+    def offset(self):
+        r"""Gets the offset of this ListYmlsJobRequest.
 
         指定查询起始值，默认值为1，即从第1个任务开始查询。
 
-        :return: The start of this ListYmlsJobRequest.
+        :return: The offset of this ListYmlsJobRequest.
         :rtype: int
         """
-        return self._start
+        return self._offset
 
-    @start.setter
-    def start(self, start):
-        r"""Sets the start of this ListYmlsJobRequest.
+    @offset.setter
+    def offset(self, offset):
+        r"""Sets the offset of this ListYmlsJobRequest.
 
         指定查询起始值，默认值为1，即从第1个任务开始查询。
 
-        :param start: The start of this ListYmlsJobRequest.
-        :type start: int
+        :param offset: The offset of this ListYmlsJobRequest.
+        :type offset: int
         """
-        self._start = start
+        self._offset = offset
 
     @property
     def limit(self):

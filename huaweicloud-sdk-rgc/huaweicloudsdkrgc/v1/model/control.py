@@ -69,11 +69,11 @@ class Control:
         :type framework: list[str]
         :param service: 控制策略所属服务。
         :type service: str
-        :param implementation: 服务控制策略（SCP），配置规则。
+        :param implementation: 策略类别。
         :type implementation: str
         :param behavior: 控制策略类型。包括主动性控制策略Proactive、检测性控制策略Detective、预防性控制策略Preventive。
         :type behavior: str
-        :param owner: 纳管账号的创建来源，包括CUSTOM和RGC。
+        :param owner: 控制策略来源。
         :type owner: str
         :param severity: 控制策略严重性。
         :type severity: str
@@ -290,7 +290,7 @@ class Control:
     def implementation(self):
         r"""Gets the implementation of this Control.
 
-        服务控制策略（SCP），配置规则。
+        策略类别。
 
         :return: The implementation of this Control.
         :rtype: str
@@ -301,7 +301,7 @@ class Control:
     def implementation(self, implementation):
         r"""Sets the implementation of this Control.
 
-        服务控制策略（SCP），配置规则。
+        策略类别。
 
         :param implementation: The implementation of this Control.
         :type implementation: str
@@ -334,7 +334,7 @@ class Control:
     def owner(self):
         r"""Gets the owner of this Control.
 
-        纳管账号的创建来源，包括CUSTOM和RGC。
+        控制策略来源。
 
         :return: The owner of this Control.
         :rtype: str
@@ -345,7 +345,7 @@ class Control:
     def owner(self, owner):
         r"""Sets the owner of this Control.
 
-        纳管账号的创建来源，包括CUSTOM和RGC。
+        控制策略来源。
 
         :param owner: The owner of this Control.
         :type owner: str

@@ -17,7 +17,7 @@ class DisableControlRequest:
     sensitive_list = []
 
     openapi_types = {
-        'body': 'ControlOperateReqBody'
+        'body': 'DisableControlOperateReqBody'
     }
 
     attribute_map = {
@@ -30,7 +30,7 @@ class DisableControlRequest:
         The model defined in huaweicloud sdk
 
         :param body: Body of the DisableControlRequest
-        :type body: :class:`huaweicloudsdkrgc.v1.ControlOperateReqBody`
+        :type body: :class:`huaweicloudsdkrgc.v1.DisableControlOperateReqBody`
         """
         
         
@@ -46,7 +46,7 @@ class DisableControlRequest:
         r"""Gets the body of this DisableControlRequest.
 
         :return: The body of this DisableControlRequest.
-        :rtype: :class:`huaweicloudsdkrgc.v1.ControlOperateReqBody`
+        :rtype: :class:`huaweicloudsdkrgc.v1.DisableControlOperateReqBody`
         """
         return self._body
 
@@ -55,7 +55,7 @@ class DisableControlRequest:
         r"""Sets the body of this DisableControlRequest.
 
         :param body: The body of this DisableControlRequest.
-        :type body: :class:`huaweicloudsdkrgc.v1.ControlOperateReqBody`
+        :type body: :class:`huaweicloudsdkrgc.v1.DisableControlOperateReqBody`
         """
         self._body = body
 

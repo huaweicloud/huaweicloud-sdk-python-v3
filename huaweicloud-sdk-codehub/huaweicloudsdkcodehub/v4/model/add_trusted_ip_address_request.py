@@ -31,7 +31,7 @@ class AddTrustedIpAddressRequest:
 
         The model defined in huaweicloud sdk
 
-        :param id: 仓库id
+        :param id: **参数解释：** 仓库id，代码仓首页，Repository ID后的数字Id。
         :type id: int
         :param body: Body of the AddTrustedIpAddressRequest
         :type body: :class:`huaweicloudsdkcodehub.v4.AddTrustedIpAddressRequestBody`
@@ -51,7 +51,7 @@ class AddTrustedIpAddressRequest:
     def id(self):
         r"""Gets the id of this AddTrustedIpAddressRequest.
 
-        仓库id
+        **参数解释：** 仓库id，代码仓首页，Repository ID后的数字Id。
 
         :return: The id of this AddTrustedIpAddressRequest.
         :rtype: int
@@ -62,7 +62,7 @@ class AddTrustedIpAddressRequest:
     def id(self, id):
         r"""Sets the id of this AddTrustedIpAddressRequest.
 
-        仓库id
+        **参数解释：** 仓库id，代码仓首页，Repository ID后的数字Id。
 
         :param id: The id of this AddTrustedIpAddressRequest.
         :type id: int

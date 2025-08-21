@@ -30,7 +30,7 @@ class DeleteGroupResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param body: 
+        :param body: 删除结果
         :type body: str
         """
         
@@ -46,6 +46,8 @@ class DeleteGroupResponse(SdkResponse):
     def body(self):
         r"""Gets the body of this DeleteGroupResponse.
 
+        删除结果
+
         :return: The body of this DeleteGroupResponse.
         :rtype: str
         """
@@ -54,6 +56,8 @@ class DeleteGroupResponse(SdkResponse):
     @body.setter
     def body(self, body):
         r"""Sets the body of this DeleteGroupResponse.
+
+        删除结果
 
         :param body: The body of this DeleteGroupResponse.
         :type body: str

@@ -2,11 +2,11 @@
 
 import six
 
-from huaweicloudsdkcore.sdk_response import SdkResponse
+from huaweicloudsdkcore.sdk_stream_response import SdkStreamResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class ShowRepositoryArchiveResponse(SdkResponse):
+class ShowRepositoryArchiveResponse(SdkStreamResponse):
 
     """
     Attributes:
@@ -23,14 +23,14 @@ class ShowRepositoryArchiveResponse(SdkResponse):
     attribute_map = {
     }
 
-    def __init__(self):
+    def __init__(self, response):
         r"""ShowRepositoryArchiveResponse
 
         The model defined in huaweicloud sdk
 
         """
         
-        super(ShowRepositoryArchiveResponse, self).__init__()
+        super(ShowRepositoryArchiveResponse, self).__init__(response)
         self.discriminator = None
 
     def to_dict(self):

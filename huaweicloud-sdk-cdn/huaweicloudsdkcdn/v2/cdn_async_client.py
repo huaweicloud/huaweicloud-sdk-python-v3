@@ -33,6 +33,73 @@ class CdnAsyncClient(Client):
 
         return client_builder
 
+    def apply_domain_template_async(self, request):
+        r"""应用域名模板。
+
+        应用域名模板。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ApplyDomainTemplate
+        :type request: :class:`huaweicloudsdkcdn.v2.ApplyDomainTemplateRequest`
+        :rtype: :class:`huaweicloudsdkcdn.v2.ApplyDomainTemplateResponse`
+        """
+        http_info = self._apply_domain_template_http_info(request)
+        return self._call_api(**http_info)
+
+    def apply_domain_template_async_invoker(self, request):
+        http_info = self._apply_domain_template_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _apply_domain_template_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/cdn/configuration/templates/{tml_id}/apply",
+            "request_type": request.__class__.__name__,
+            "response_type": "ApplyDomainTemplateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'tml_id' in local_var_params:
+            path_params['tml_id'] = local_var_params['tml_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def batch_copy_domain_async(self, request):
         r"""批量域名复制
 
@@ -279,6 +346,71 @@ class CdnAsyncClient(Client):
             body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_domain_template_async(self, request):
+        r"""创建域名模板。
+
+        创建域名模板。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateDomainTemplate
+        :type request: :class:`huaweicloudsdkcdn.v2.CreateDomainTemplateRequest`
+        :rtype: :class:`huaweicloudsdkcdn.v2.CreateDomainTemplateResponse`
+        """
+        http_info = self._create_domain_template_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_domain_template_async_invoker(self, request):
+        http_info = self._create_domain_template_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_domain_template_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/cdn/configuration/templates",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDomainTemplateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -681,6 +813,71 @@ class CdnAsyncClient(Client):
             body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_domain_template_async(self, request):
+        r"""删除域名模板。
+
+        删除域名模板。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteDomainTemplate
+        :type request: :class:`huaweicloudsdkcdn.v2.DeleteDomainTemplateRequest`
+        :rtype: :class:`huaweicloudsdkcdn.v2.DeleteDomainTemplateResponse`
+        """
+        http_info = self._delete_domain_template_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_domain_template_async_invoker(self, request):
+        http_info = self._delete_domain_template_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_domain_template_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1.0/cdn/configuration/templates/{tml_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDomainTemplateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'tml_id' in local_var_params:
+            path_params['tml_id'] = local_var_params['tml_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -1587,6 +1784,79 @@ class CdnAsyncClient(Client):
 
         return http_info
 
+    def show_applied_template_record_async(self, request):
+        r"""查询域名模板应用记录。
+
+        查询域名模板应用记录。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowAppliedTemplateRecord
+        :type request: :class:`huaweicloudsdkcdn.v2.ShowAppliedTemplateRecordRequest`
+        :rtype: :class:`huaweicloudsdkcdn.v2.ShowAppliedTemplateRecordResponse`
+        """
+        http_info = self._show_applied_template_record_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_applied_template_record_async_invoker(self, request):
+        http_info = self._show_applied_template_record_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_applied_template_record_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/cdn/configuration/tml-apply-records",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAppliedTemplateRecordResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'tml_id' in local_var_params:
+            query_params.append(('tml_id', local_var_params['tml_id']))
+        if 'tml_name' in local_var_params:
+            query_params.append(('tml_name', local_var_params['tml_name']))
+        if 'operator_id' in local_var_params:
+            query_params.append(('operator_id', local_var_params['operator_id']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_bandwidth_calc_async(self, request):
         r"""查询域名带宽峰值类数据
 
@@ -2125,6 +2395,79 @@ class CdnAsyncClient(Client):
             query_params.append(('service_area', local_var_params['service_area']))
         if 'enterprise_project_id' in local_var_params:
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_domain_template_async(self, request):
+        r"""查询域名模板列表
+
+        查询域名模板列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowDomainTemplate
+        :type request: :class:`huaweicloudsdkcdn.v2.ShowDomainTemplateRequest`
+        :rtype: :class:`huaweicloudsdkcdn.v2.ShowDomainTemplateResponse`
+        """
+        http_info = self._show_domain_template_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_domain_template_async_invoker(self, request):
+        http_info = self._show_domain_template_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_domain_template_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/cdn/configuration/templates",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDomainTemplateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'tml_name' in local_var_params:
+            query_params.append(('tml_name', local_var_params['tml_name']))
+        if 'tml_id' in local_var_params:
+            query_params.append(('tml_id', local_var_params['tml_id']))
+        if 'tml_type' in local_var_params:
+            query_params.append(('tml_type', local_var_params['tml_type']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
 
         header_params = {}
 
@@ -3021,6 +3364,73 @@ class CdnAsyncClient(Client):
             body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_domain_template_async(self, request):
+        r"""修改域名模板。
+
+        修改域名模板。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateDomainTemplate
+        :type request: :class:`huaweicloudsdkcdn.v2.UpdateDomainTemplateRequest`
+        :rtype: :class:`huaweicloudsdkcdn.v2.UpdateDomainTemplateResponse`
+        """
+        http_info = self._update_domain_template_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_domain_template_async_invoker(self, request):
+        http_info = self._update_domain_template_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_domain_template_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1.0/cdn/configuration/templates/{tml_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDomainTemplateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'tml_id' in local_var_params:
+            path_params['tml_id'] = local_var_params['tml_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])

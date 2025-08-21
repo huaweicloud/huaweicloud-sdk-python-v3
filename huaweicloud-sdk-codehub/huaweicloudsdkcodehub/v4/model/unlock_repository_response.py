@@ -30,7 +30,7 @@ class UnlockRepositoryResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param locked: 锁定状态
+        :param locked: 锁定状态 - true 已锁定 - false 未锁定 
         :type locked: str
         """
         
@@ -46,7 +46,7 @@ class UnlockRepositoryResponse(SdkResponse):
     def locked(self):
         r"""Gets the locked of this UnlockRepositoryResponse.
 
-        锁定状态
+        锁定状态 - true 已锁定 - false 未锁定 
 
         :return: The locked of this UnlockRepositoryResponse.
         :rtype: str
@@ -57,7 +57,7 @@ class UnlockRepositoryResponse(SdkResponse):
     def locked(self, locked):
         r"""Sets the locked of this UnlockRepositoryResponse.
 
-        锁定状态
+        锁定状态 - true 已锁定 - false 未锁定 
 
         :param locked: The locked of this UnlockRepositoryResponse.
         :type locked: str

@@ -9,6 +9,10 @@ from huaweicloudsdkcdn.v2.model.access_area_filter import AccessAreaFilter
 from huaweicloudsdkcdn.v2.model.access_control import AccessControl
 from huaweicloudsdkcdn.v2.model.account_config_modify_request import AccountConfigModifyRequest
 from huaweicloudsdkcdn.v2.model.actions import Actions
+from huaweicloudsdkcdn.v2.model.apply_domain_template_request import ApplyDomainTemplateRequest
+from huaweicloudsdkcdn.v2.model.apply_domain_template_response import ApplyDomainTemplateResponse
+from huaweicloudsdkcdn.v2.model.apply_record import ApplyRecord
+from huaweicloudsdkcdn.v2.model.apply_tml_detail import ApplyTmlDetail
 from huaweicloudsdkcdn.v2.model.back_sources import BackSources
 from huaweicloudsdkcdn.v2.model.batch_copy_configs import BatchCopyConfigs
 from huaweicloudsdkcdn.v2.model.batch_copy_d_request_body import BatchCopyDRequestBody
@@ -42,6 +46,8 @@ from huaweicloudsdkcdn.v2.model.create_domain_request import CreateDomainRequest
 from huaweicloudsdkcdn.v2.model.create_domain_request_body import CreateDomainRequestBody
 from huaweicloudsdkcdn.v2.model.create_domain_response import CreateDomainResponse
 from huaweicloudsdkcdn.v2.model.create_domain_response_body_content import CreateDomainResponseBodyContent
+from huaweicloudsdkcdn.v2.model.create_domain_template_request import CreateDomainTemplateRequest
+from huaweicloudsdkcdn.v2.model.create_domain_template_response import CreateDomainTemplateResponse
 from huaweicloudsdkcdn.v2.model.create_preheating_tasks_request import CreatePreheatingTasksRequest
 from huaweicloudsdkcdn.v2.model.create_preheating_tasks_response import CreatePreheatingTasksResponse
 from huaweicloudsdkcdn.v2.model.create_refresh_tasks_request import CreateRefreshTasksRequest
@@ -55,10 +61,13 @@ from huaweicloudsdkcdn.v2.model.create_share_cache_groups_response import Create
 from huaweicloudsdkcdn.v2.model.create_tags_request import CreateTagsRequest
 from huaweicloudsdkcdn.v2.model.create_tags_request_body import CreateTagsRequestBody
 from huaweicloudsdkcdn.v2.model.create_tags_response import CreateTagsResponse
+from huaweicloudsdkcdn.v2.model.create_template_request_body import CreateTemplateRequestBody
 from huaweicloudsdkcdn.v2.model.criteria import Criteria
 from huaweicloudsdkcdn.v2.model.custom_args import CustomArgs
 from huaweicloudsdkcdn.v2.model.delete_domain_request import DeleteDomainRequest
 from huaweicloudsdkcdn.v2.model.delete_domain_response import DeleteDomainResponse
+from huaweicloudsdkcdn.v2.model.delete_domain_template_request import DeleteDomainTemplateRequest
+from huaweicloudsdkcdn.v2.model.delete_domain_template_response import DeleteDomainTemplateResponse
 from huaweicloudsdkcdn.v2.model.delete_rule_new_request import DeleteRuleNewRequest
 from huaweicloudsdkcdn.v2.model.delete_rule_new_response import DeleteRuleNewResponse
 from huaweicloudsdkcdn.v2.model.delete_share_cache_groups_request import DeleteShareCacheGroupsRequest
@@ -85,6 +94,7 @@ from huaweicloudsdkcdn.v2.model.error_code_cache_engine import ErrorCodeCacheEng
 from huaweicloudsdkcdn.v2.model.error_code_redirect_rules import ErrorCodeRedirectRules
 from huaweicloudsdkcdn.v2.model.flexible_origins import FlexibleOrigins
 from huaweicloudsdkcdn.v2.model.flexible_origins_engine import FlexibleOriginsEngine
+from huaweicloudsdkcdn.v2.model.flow_limit_strategy import FlowLimitStrategy
 from huaweicloudsdkcdn.v2.model.force_redirect import ForceRedirect
 from huaweicloudsdkcdn.v2.model.force_redirect_config import ForceRedirectConfig
 from huaweicloudsdkcdn.v2.model.full_update_rules_request import FullUpdateRulesRequest
@@ -129,11 +139,14 @@ from huaweicloudsdkcdn.v2.model.request_limit_rules import RequestLimitRules
 from huaweicloudsdkcdn.v2.model.request_limit_rules_engine import RequestLimitRulesEngine
 from huaweicloudsdkcdn.v2.model.request_url_rewrite import RequestUrlRewrite
 from huaweicloudsdkcdn.v2.model.request_url_rewrite_engine import RequestUrlRewriteEngine
+from huaweicloudsdkcdn.v2.model.resource import Resource
 from huaweicloudsdkcdn.v2.model.rule_response import RuleResponse
 from huaweicloudsdkcdn.v2.model.set_charge_modes_body import SetChargeModesBody
 from huaweicloudsdkcdn.v2.model.set_charge_modes_request import SetChargeModesRequest
 from huaweicloudsdkcdn.v2.model.set_charge_modes_response import SetChargeModesResponse
 from huaweicloudsdkcdn.v2.model.share_cache_groups_record import ShareCacheGroupsRecord
+from huaweicloudsdkcdn.v2.model.show_applied_template_record_request import ShowAppliedTemplateRecordRequest
+from huaweicloudsdkcdn.v2.model.show_applied_template_record_response import ShowAppliedTemplateRecordResponse
 from huaweicloudsdkcdn.v2.model.show_bandwidth_calc_request import ShowBandwidthCalcRequest
 from huaweicloudsdkcdn.v2.model.show_bandwidth_calc_response import ShowBandwidthCalcResponse
 from huaweicloudsdkcdn.v2.model.show_certificates_https_info_request import ShowCertificatesHttpsInfoRequest
@@ -148,6 +161,8 @@ from huaweicloudsdkcdn.v2.model.show_domain_location_stats_request import ShowDo
 from huaweicloudsdkcdn.v2.model.show_domain_location_stats_response import ShowDomainLocationStatsResponse
 from huaweicloudsdkcdn.v2.model.show_domain_stats_request import ShowDomainStatsRequest
 from huaweicloudsdkcdn.v2.model.show_domain_stats_response import ShowDomainStatsResponse
+from huaweicloudsdkcdn.v2.model.show_domain_template_request import ShowDomainTemplateRequest
+from huaweicloudsdkcdn.v2.model.show_domain_template_response import ShowDomainTemplateResponse
 from huaweicloudsdkcdn.v2.model.show_history_task_details_request import ShowHistoryTaskDetailsRequest
 from huaweicloudsdkcdn.v2.model.show_history_task_details_response import ShowHistoryTaskDetailsResponse
 from huaweicloudsdkcdn.v2.model.show_history_tasks_request import ShowHistoryTasksRequest
@@ -177,6 +192,9 @@ from huaweicloudsdkcdn.v2.model.sources_domain_config import SourcesDomainConfig
 from huaweicloudsdkcdn.v2.model.sources_request_body import SourcesRequestBody
 from huaweicloudsdkcdn.v2.model.tag_map import TagMap
 from huaweicloudsdkcdn.v2.model.tasks_object import TasksObject
+from huaweicloudsdkcdn.v2.model.template_apply_request_body import TemplateApplyRequestBody
+from huaweicloudsdkcdn.v2.model.template_configs import TemplateConfigs
+from huaweicloudsdkcdn.v2.model.template_item import TemplateItem
 from huaweicloudsdkcdn.v2.model.top_refer_summary import TopReferSummary
 from huaweicloudsdkcdn.v2.model.top_url_summary import TopUrlSummary
 from huaweicloudsdkcdn.v2.model.update_domain_full_config_request import UpdateDomainFullConfigRequest
@@ -187,6 +205,8 @@ from huaweicloudsdkcdn.v2.model.update_domain_multi_certificates_request_body_co
 from huaweicloudsdkcdn.v2.model.update_domain_multi_certificates_response import UpdateDomainMultiCertificatesResponse
 from huaweicloudsdkcdn.v2.model.update_domain_multi_certificates_response_body_content import UpdateDomainMultiCertificatesResponseBodyContent
 from huaweicloudsdkcdn.v2.model.update_domain_multi_certificates_response_body_result import UpdateDomainMultiCertificatesResponseBodyResult
+from huaweicloudsdkcdn.v2.model.update_domain_template_request import UpdateDomainTemplateRequest
+from huaweicloudsdkcdn.v2.model.update_domain_template_response import UpdateDomainTemplateResponse
 from huaweicloudsdkcdn.v2.model.update_full_rule_request import UpdateFullRuleRequest
 from huaweicloudsdkcdn.v2.model.update_full_rule_response import UpdateFullRuleResponse
 from huaweicloudsdkcdn.v2.model.update_private_bucket_access_body import UpdatePrivateBucketAccessBody

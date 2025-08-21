@@ -24,8 +24,8 @@ class EngineReference:
         'subnet_cidr_v6': 'str',
         'subnet_gateway': 'str',
         'public_ip_id': 'str',
-        'service_limit': 'int',
-        'instance_limit': 'int',
+        'service_limit': 'str',
+        'instance_limit': 'str',
         'inputs': 'dict(str, str)'
     }
 
@@ -62,9 +62,9 @@ class EngineReference:
         :param public_ip_id: 微服务引擎公网地址ID
         :type public_ip_id: str
         :param service_limit: 微服务引擎可支持的微服务总数
-        :type service_limit: int
+        :type service_limit: str
         :param instance_limit: 微服务引擎可支持的实例总数
-        :type instance_limit: int
+        :type instance_limit: str
         :param inputs: 微服务引擎附加参数
         :type inputs: dict(str, str)
         """
@@ -265,7 +265,7 @@ class EngineReference:
         微服务引擎可支持的微服务总数
 
         :return: The service_limit of this EngineReference.
-        :rtype: int
+        :rtype: str
         """
         return self._service_limit
 
@@ -276,7 +276,7 @@ class EngineReference:
         微服务引擎可支持的微服务总数
 
         :param service_limit: The service_limit of this EngineReference.
-        :type service_limit: int
+        :type service_limit: str
         """
         self._service_limit = service_limit
 
@@ -287,7 +287,7 @@ class EngineReference:
         微服务引擎可支持的实例总数
 
         :return: The instance_limit of this EngineReference.
-        :rtype: int
+        :rtype: str
         """
         return self._instance_limit
 
@@ -298,7 +298,7 @@ class EngineReference:
         微服务引擎可支持的实例总数
 
         :param instance_limit: The instance_limit of this EngineReference.
-        :type instance_limit: int
+        :type instance_limit: str
         """
         self._instance_limit = instance_limit
 

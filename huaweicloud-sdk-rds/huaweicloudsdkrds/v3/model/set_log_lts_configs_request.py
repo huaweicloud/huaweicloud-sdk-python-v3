@@ -33,7 +33,7 @@ class SetLogLtsConfigsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param engine: 引擎。
+        :param engine: 引擎，暂只支持mysql。
         :type engine: str
         :param x_language: 语言。
         :type x_language: str
@@ -58,7 +58,7 @@ class SetLogLtsConfigsRequest:
     def engine(self):
         r"""Gets the engine of this SetLogLtsConfigsRequest.
 
-        引擎。
+        引擎，暂只支持mysql。
 
         :return: The engine of this SetLogLtsConfigsRequest.
         :rtype: str
@@ -69,7 +69,7 @@ class SetLogLtsConfigsRequest:
     def engine(self, engine):
         r"""Sets the engine of this SetLogLtsConfigsRequest.
 
-        引擎。
+        引擎，暂只支持mysql。
 
         :param engine: The engine of this SetLogLtsConfigsRequest.
         :type engine: str

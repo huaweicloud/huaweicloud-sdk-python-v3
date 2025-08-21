@@ -55,33 +55,33 @@ class TenantTrustedIpAddressDto:
 
         The model defined in huaweicloud sdk
 
-        :param id: 关联结果
+        :param id: **参数解释：** ip白名单id。
         :type id: str
-        :param user_id: 用户id
+        :param user_id: **参数解释：** 用户id。
         :type user_id: int
-        :param domain_id: 租户id
+        :param domain_id: **参数解释：** 租户id。
         :type domain_id: str
-        :param ip_range: ip范围
+        :param ip_range: **参数解释：** ip范围。
         :type ip_range: str
-        :param ip_type: 格式类型，指定ip，ip范围，CIDR
+        :param ip_type: **参数解释：** 格式类型。 - 0，表示指定IP。 - 1，表示ip范围。 - 2，表示CIDR。
         :type ip_type: int
-        :param ip_start: 起始ip
+        :param ip_start: **参数解释：** 起始ip。
         :type ip_start: str
-        :param ip_end: 结束ip
+        :param ip_end: **参数解释：** 结束ip。
         :type ip_end: str
-        :param view_flag: 是否允许访问代码仓库
+        :param view_flag: **参数解释：** 是否允许访问代码仓库。 - 0，表示禁止访问。 - 1，表示允许访问。
         :type view_flag: int
-        :param download_flag: 是否允许下载代码
+        :param download_flag: **参数解释：** 是否允许下载代码。 - 0，表示禁止下载。 - 1，表示允许下载。
         :type download_flag: int
-        :param upload_flag: 是否允许提交代码
+        :param upload_flag: **参数解释：** 是否允许提交代码。 - 0，表示禁止提交。 - 1，表示允许提交。
         :type upload_flag: int
-        :param remark: 备注
+        :param remark: **参数解释：** 备注。 **取值范围：** 字符串长度不少于0，不超过200。  
         :type remark: str
-        :param created_at: 创建时间
+        :param created_at: **参数解释：** 创建时间。 **参数解释：** MMM dd, yyyy hh:mm:ss a   
         :type created_at: str
-        :param updated_at: 更新时间
+        :param updated_at: **参数解释：** 更新时间。 **参数解释：** MMM dd, yyyy hh:mm:ss a   
         :type updated_at: str
-        :param order_flag: 排序
+        :param order_flag: **参数解释：** 排序。 - 0，表示默认规则。 - 1，表示自定义规则。
         :type order_flag: int
         """
         
@@ -136,7 +136,7 @@ class TenantTrustedIpAddressDto:
     def id(self):
         r"""Gets the id of this TenantTrustedIpAddressDto.
 
-        关联结果
+        **参数解释：** ip白名单id。
 
         :return: The id of this TenantTrustedIpAddressDto.
         :rtype: str
@@ -147,7 +147,7 @@ class TenantTrustedIpAddressDto:
     def id(self, id):
         r"""Sets the id of this TenantTrustedIpAddressDto.
 
-        关联结果
+        **参数解释：** ip白名单id。
 
         :param id: The id of this TenantTrustedIpAddressDto.
         :type id: str
@@ -158,7 +158,7 @@ class TenantTrustedIpAddressDto:
     def user_id(self):
         r"""Gets the user_id of this TenantTrustedIpAddressDto.
 
-        用户id
+        **参数解释：** 用户id。
 
         :return: The user_id of this TenantTrustedIpAddressDto.
         :rtype: int
@@ -169,7 +169,7 @@ class TenantTrustedIpAddressDto:
     def user_id(self, user_id):
         r"""Sets the user_id of this TenantTrustedIpAddressDto.
 
-        用户id
+        **参数解释：** 用户id。
 
         :param user_id: The user_id of this TenantTrustedIpAddressDto.
         :type user_id: int
@@ -180,7 +180,7 @@ class TenantTrustedIpAddressDto:
     def domain_id(self):
         r"""Gets the domain_id of this TenantTrustedIpAddressDto.
 
-        租户id
+        **参数解释：** 租户id。
 
         :return: The domain_id of this TenantTrustedIpAddressDto.
         :rtype: str
@@ -191,7 +191,7 @@ class TenantTrustedIpAddressDto:
     def domain_id(self, domain_id):
         r"""Sets the domain_id of this TenantTrustedIpAddressDto.
 
-        租户id
+        **参数解释：** 租户id。
 
         :param domain_id: The domain_id of this TenantTrustedIpAddressDto.
         :type domain_id: str
@@ -202,7 +202,7 @@ class TenantTrustedIpAddressDto:
     def ip_range(self):
         r"""Gets the ip_range of this TenantTrustedIpAddressDto.
 
-        ip范围
+        **参数解释：** ip范围。
 
         :return: The ip_range of this TenantTrustedIpAddressDto.
         :rtype: str
@@ -213,7 +213,7 @@ class TenantTrustedIpAddressDto:
     def ip_range(self, ip_range):
         r"""Sets the ip_range of this TenantTrustedIpAddressDto.
 
-        ip范围
+        **参数解释：** ip范围。
 
         :param ip_range: The ip_range of this TenantTrustedIpAddressDto.
         :type ip_range: str
@@ -224,7 +224,7 @@ class TenantTrustedIpAddressDto:
     def ip_type(self):
         r"""Gets the ip_type of this TenantTrustedIpAddressDto.
 
-        格式类型，指定ip，ip范围，CIDR
+        **参数解释：** 格式类型。 - 0，表示指定IP。 - 1，表示ip范围。 - 2，表示CIDR。
 
         :return: The ip_type of this TenantTrustedIpAddressDto.
         :rtype: int
@@ -235,7 +235,7 @@ class TenantTrustedIpAddressDto:
     def ip_type(self, ip_type):
         r"""Sets the ip_type of this TenantTrustedIpAddressDto.
 
-        格式类型，指定ip，ip范围，CIDR
+        **参数解释：** 格式类型。 - 0，表示指定IP。 - 1，表示ip范围。 - 2，表示CIDR。
 
         :param ip_type: The ip_type of this TenantTrustedIpAddressDto.
         :type ip_type: int
@@ -246,7 +246,7 @@ class TenantTrustedIpAddressDto:
     def ip_start(self):
         r"""Gets the ip_start of this TenantTrustedIpAddressDto.
 
-        起始ip
+        **参数解释：** 起始ip。
 
         :return: The ip_start of this TenantTrustedIpAddressDto.
         :rtype: str
@@ -257,7 +257,7 @@ class TenantTrustedIpAddressDto:
     def ip_start(self, ip_start):
         r"""Sets the ip_start of this TenantTrustedIpAddressDto.
 
-        起始ip
+        **参数解释：** 起始ip。
 
         :param ip_start: The ip_start of this TenantTrustedIpAddressDto.
         :type ip_start: str
@@ -268,7 +268,7 @@ class TenantTrustedIpAddressDto:
     def ip_end(self):
         r"""Gets the ip_end of this TenantTrustedIpAddressDto.
 
-        结束ip
+        **参数解释：** 结束ip。
 
         :return: The ip_end of this TenantTrustedIpAddressDto.
         :rtype: str
@@ -279,7 +279,7 @@ class TenantTrustedIpAddressDto:
     def ip_end(self, ip_end):
         r"""Sets the ip_end of this TenantTrustedIpAddressDto.
 
-        结束ip
+        **参数解释：** 结束ip。
 
         :param ip_end: The ip_end of this TenantTrustedIpAddressDto.
         :type ip_end: str
@@ -290,7 +290,7 @@ class TenantTrustedIpAddressDto:
     def view_flag(self):
         r"""Gets the view_flag of this TenantTrustedIpAddressDto.
 
-        是否允许访问代码仓库
+        **参数解释：** 是否允许访问代码仓库。 - 0，表示禁止访问。 - 1，表示允许访问。
 
         :return: The view_flag of this TenantTrustedIpAddressDto.
         :rtype: int
@@ -301,7 +301,7 @@ class TenantTrustedIpAddressDto:
     def view_flag(self, view_flag):
         r"""Sets the view_flag of this TenantTrustedIpAddressDto.
 
-        是否允许访问代码仓库
+        **参数解释：** 是否允许访问代码仓库。 - 0，表示禁止访问。 - 1，表示允许访问。
 
         :param view_flag: The view_flag of this TenantTrustedIpAddressDto.
         :type view_flag: int
@@ -312,7 +312,7 @@ class TenantTrustedIpAddressDto:
     def download_flag(self):
         r"""Gets the download_flag of this TenantTrustedIpAddressDto.
 
-        是否允许下载代码
+        **参数解释：** 是否允许下载代码。 - 0，表示禁止下载。 - 1，表示允许下载。
 
         :return: The download_flag of this TenantTrustedIpAddressDto.
         :rtype: int
@@ -323,7 +323,7 @@ class TenantTrustedIpAddressDto:
     def download_flag(self, download_flag):
         r"""Sets the download_flag of this TenantTrustedIpAddressDto.
 
-        是否允许下载代码
+        **参数解释：** 是否允许下载代码。 - 0，表示禁止下载。 - 1，表示允许下载。
 
         :param download_flag: The download_flag of this TenantTrustedIpAddressDto.
         :type download_flag: int
@@ -334,7 +334,7 @@ class TenantTrustedIpAddressDto:
     def upload_flag(self):
         r"""Gets the upload_flag of this TenantTrustedIpAddressDto.
 
-        是否允许提交代码
+        **参数解释：** 是否允许提交代码。 - 0，表示禁止提交。 - 1，表示允许提交。
 
         :return: The upload_flag of this TenantTrustedIpAddressDto.
         :rtype: int
@@ -345,7 +345,7 @@ class TenantTrustedIpAddressDto:
     def upload_flag(self, upload_flag):
         r"""Sets the upload_flag of this TenantTrustedIpAddressDto.
 
-        是否允许提交代码
+        **参数解释：** 是否允许提交代码。 - 0，表示禁止提交。 - 1，表示允许提交。
 
         :param upload_flag: The upload_flag of this TenantTrustedIpAddressDto.
         :type upload_flag: int
@@ -356,7 +356,7 @@ class TenantTrustedIpAddressDto:
     def remark(self):
         r"""Gets the remark of this TenantTrustedIpAddressDto.
 
-        备注
+        **参数解释：** 备注。 **取值范围：** 字符串长度不少于0，不超过200。  
 
         :return: The remark of this TenantTrustedIpAddressDto.
         :rtype: str
@@ -367,7 +367,7 @@ class TenantTrustedIpAddressDto:
     def remark(self, remark):
         r"""Sets the remark of this TenantTrustedIpAddressDto.
 
-        备注
+        **参数解释：** 备注。 **取值范围：** 字符串长度不少于0，不超过200。  
 
         :param remark: The remark of this TenantTrustedIpAddressDto.
         :type remark: str
@@ -378,7 +378,7 @@ class TenantTrustedIpAddressDto:
     def created_at(self):
         r"""Gets the created_at of this TenantTrustedIpAddressDto.
 
-        创建时间
+        **参数解释：** 创建时间。 **参数解释：** MMM dd, yyyy hh:mm:ss a   
 
         :return: The created_at of this TenantTrustedIpAddressDto.
         :rtype: str
@@ -389,7 +389,7 @@ class TenantTrustedIpAddressDto:
     def created_at(self, created_at):
         r"""Sets the created_at of this TenantTrustedIpAddressDto.
 
-        创建时间
+        **参数解释：** 创建时间。 **参数解释：** MMM dd, yyyy hh:mm:ss a   
 
         :param created_at: The created_at of this TenantTrustedIpAddressDto.
         :type created_at: str
@@ -400,7 +400,7 @@ class TenantTrustedIpAddressDto:
     def updated_at(self):
         r"""Gets the updated_at of this TenantTrustedIpAddressDto.
 
-        更新时间
+        **参数解释：** 更新时间。 **参数解释：** MMM dd, yyyy hh:mm:ss a   
 
         :return: The updated_at of this TenantTrustedIpAddressDto.
         :rtype: str
@@ -411,7 +411,7 @@ class TenantTrustedIpAddressDto:
     def updated_at(self, updated_at):
         r"""Sets the updated_at of this TenantTrustedIpAddressDto.
 
-        更新时间
+        **参数解释：** 更新时间。 **参数解释：** MMM dd, yyyy hh:mm:ss a   
 
         :param updated_at: The updated_at of this TenantTrustedIpAddressDto.
         :type updated_at: str
@@ -422,7 +422,7 @@ class TenantTrustedIpAddressDto:
     def order_flag(self):
         r"""Gets the order_flag of this TenantTrustedIpAddressDto.
 
-        排序
+        **参数解释：** 排序。 - 0，表示默认规则。 - 1，表示自定义规则。
 
         :return: The order_flag of this TenantTrustedIpAddressDto.
         :rtype: int
@@ -433,7 +433,7 @@ class TenantTrustedIpAddressDto:
     def order_flag(self, order_flag):
         r"""Sets the order_flag of this TenantTrustedIpAddressDto.
 
-        排序
+        **参数解释：** 排序。 - 0，表示默认规则。 - 1，表示自定义规则。
 
         :param order_flag: The order_flag of this TenantTrustedIpAddressDto.
         :type order_flag: int

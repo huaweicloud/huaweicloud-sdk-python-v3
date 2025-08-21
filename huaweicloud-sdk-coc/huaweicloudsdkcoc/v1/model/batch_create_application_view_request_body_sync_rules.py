@@ -31,9 +31,9 @@ class BatchCreateApplicationViewRequestBodySyncRules:
 
         The model defined in huaweicloud sdk
 
-        :param ep_id: 企业项目id
+        :param ep_id: **参数解释：** 企业项目id。 **约束限制：** 不涉及。 **取值范围：** 请选择[[企业管理](https://support.huaweicloud.com/usermanual-em/em_eps_qs_0400.html)](tag:hws)[[企业管理](https://support.huaweicloud.com/intl/zh-cn/usermanual-em/em_eps_qs_0400.html)](tag:hws_hk)中存在的项目ID。 **默认取值：** 不涉及。
         :type ep_id: str
-        :param rule_tags: 关联标签
+        :param rule_tags: **参数解释：** 关联标签。 **约束限制：** 不涉及。 **取值范围：** 可自定义。 **默认取值：** 不涉及。
         :type rule_tags: str
         """
         
@@ -52,7 +52,7 @@ class BatchCreateApplicationViewRequestBodySyncRules:
     def ep_id(self):
         r"""Gets the ep_id of this BatchCreateApplicationViewRequestBodySyncRules.
 
-        企业项目id
+        **参数解释：** 企业项目id。 **约束限制：** 不涉及。 **取值范围：** 请选择[[企业管理](https://support.huaweicloud.com/usermanual-em/em_eps_qs_0400.html)](tag:hws)[[企业管理](https://support.huaweicloud.com/intl/zh-cn/usermanual-em/em_eps_qs_0400.html)](tag:hws_hk)中存在的项目ID。 **默认取值：** 不涉及。
 
         :return: The ep_id of this BatchCreateApplicationViewRequestBodySyncRules.
         :rtype: str
@@ -63,7 +63,7 @@ class BatchCreateApplicationViewRequestBodySyncRules:
     def ep_id(self, ep_id):
         r"""Sets the ep_id of this BatchCreateApplicationViewRequestBodySyncRules.
 
-        企业项目id
+        **参数解释：** 企业项目id。 **约束限制：** 不涉及。 **取值范围：** 请选择[[企业管理](https://support.huaweicloud.com/usermanual-em/em_eps_qs_0400.html)](tag:hws)[[企业管理](https://support.huaweicloud.com/intl/zh-cn/usermanual-em/em_eps_qs_0400.html)](tag:hws_hk)中存在的项目ID。 **默认取值：** 不涉及。
 
         :param ep_id: The ep_id of this BatchCreateApplicationViewRequestBodySyncRules.
         :type ep_id: str
@@ -74,7 +74,7 @@ class BatchCreateApplicationViewRequestBodySyncRules:
     def rule_tags(self):
         r"""Gets the rule_tags of this BatchCreateApplicationViewRequestBodySyncRules.
 
-        关联标签
+        **参数解释：** 关联标签。 **约束限制：** 不涉及。 **取值范围：** 可自定义。 **默认取值：** 不涉及。
 
         :return: The rule_tags of this BatchCreateApplicationViewRequestBodySyncRules.
         :rtype: str
@@ -85,7 +85,7 @@ class BatchCreateApplicationViewRequestBodySyncRules:
     def rule_tags(self, rule_tags):
         r"""Sets the rule_tags of this BatchCreateApplicationViewRequestBodySyncRules.
 
-        关联标签
+        **参数解释：** 关联标签。 **约束限制：** 不涉及。 **取值范围：** 可自定义。 **默认取值：** 不涉及。
 
         :param rule_tags: The rule_tags of this BatchCreateApplicationViewRequestBodySyncRules.
         :type rule_tags: str

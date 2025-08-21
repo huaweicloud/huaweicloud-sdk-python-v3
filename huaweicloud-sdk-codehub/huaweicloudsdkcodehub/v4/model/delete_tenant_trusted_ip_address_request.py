@@ -29,7 +29,7 @@ class DeleteTenantTrustedIpAddressRequest:
 
         The model defined in huaweicloud sdk
 
-        :param ip_id: ip的id
+        :param ip_id: **参数解释：** ip白名单id。
         :type ip_id: int
         """
         
@@ -44,7 +44,7 @@ class DeleteTenantTrustedIpAddressRequest:
     def ip_id(self):
         r"""Gets the ip_id of this DeleteTenantTrustedIpAddressRequest.
 
-        ip的id
+        **参数解释：** ip白名单id。
 
         :return: The ip_id of this DeleteTenantTrustedIpAddressRequest.
         :rtype: int
@@ -55,7 +55,7 @@ class DeleteTenantTrustedIpAddressRequest:
     def ip_id(self, ip_id):
         r"""Sets the ip_id of this DeleteTenantTrustedIpAddressRequest.
 
-        ip的id
+        **参数解释：** ip白名单id。
 
         :param ip_id: The ip_id of this DeleteTenantTrustedIpAddressRequest.
         :type ip_id: int

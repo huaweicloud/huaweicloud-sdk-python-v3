@@ -33,11 +33,11 @@ class BatchCreateApplicationViewRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param application_list: 应用列表
+        :param application_list: **参数解释：** 应用信息组成的列表。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type application_list: list[:class:`huaweicloudsdkcoc.v1.BatchCreateApplicationViewRequestBodyApplicationList`]
-        :param component_list: 组件列表
+        :param component_list: **参数解释：** 组件信息组成的列表。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type component_list: list[:class:`huaweicloudsdkcoc.v1.BatchCreateApplicationViewRequestBodyComponentList`]
-        :param group_list: 分组列表
+        :param group_list: **参数解释：** 分组信息组成的列表。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type group_list: list[:class:`huaweicloudsdkcoc.v1.BatchCreateApplicationViewRequestBodyGroupList`]
         """
         
@@ -58,7 +58,7 @@ class BatchCreateApplicationViewRequestBody:
     def application_list(self):
         r"""Gets the application_list of this BatchCreateApplicationViewRequestBody.
 
-        应用列表
+        **参数解释：** 应用信息组成的列表。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The application_list of this BatchCreateApplicationViewRequestBody.
         :rtype: list[:class:`huaweicloudsdkcoc.v1.BatchCreateApplicationViewRequestBodyApplicationList`]
@@ -69,7 +69,7 @@ class BatchCreateApplicationViewRequestBody:
     def application_list(self, application_list):
         r"""Sets the application_list of this BatchCreateApplicationViewRequestBody.
 
-        应用列表
+        **参数解释：** 应用信息组成的列表。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param application_list: The application_list of this BatchCreateApplicationViewRequestBody.
         :type application_list: list[:class:`huaweicloudsdkcoc.v1.BatchCreateApplicationViewRequestBodyApplicationList`]
@@ -80,7 +80,7 @@ class BatchCreateApplicationViewRequestBody:
     def component_list(self):
         r"""Gets the component_list of this BatchCreateApplicationViewRequestBody.
 
-        组件列表
+        **参数解释：** 组件信息组成的列表。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The component_list of this BatchCreateApplicationViewRequestBody.
         :rtype: list[:class:`huaweicloudsdkcoc.v1.BatchCreateApplicationViewRequestBodyComponentList`]
@@ -91,7 +91,7 @@ class BatchCreateApplicationViewRequestBody:
     def component_list(self, component_list):
         r"""Sets the component_list of this BatchCreateApplicationViewRequestBody.
 
-        组件列表
+        **参数解释：** 组件信息组成的列表。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param component_list: The component_list of this BatchCreateApplicationViewRequestBody.
         :type component_list: list[:class:`huaweicloudsdkcoc.v1.BatchCreateApplicationViewRequestBodyComponentList`]
@@ -102,7 +102,7 @@ class BatchCreateApplicationViewRequestBody:
     def group_list(self):
         r"""Gets the group_list of this BatchCreateApplicationViewRequestBody.
 
-        分组列表
+        **参数解释：** 分组信息组成的列表。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The group_list of this BatchCreateApplicationViewRequestBody.
         :rtype: list[:class:`huaweicloudsdkcoc.v1.BatchCreateApplicationViewRequestBodyGroupList`]
@@ -113,7 +113,7 @@ class BatchCreateApplicationViewRequestBody:
     def group_list(self, group_list):
         r"""Sets the group_list of this BatchCreateApplicationViewRequestBody.
 
-        分组列表
+        **参数解释：** 分组信息组成的列表。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param group_list: The group_list of this BatchCreateApplicationViewRequestBody.
         :type group_list: list[:class:`huaweicloudsdkcoc.v1.BatchCreateApplicationViewRequestBodyGroupList`]

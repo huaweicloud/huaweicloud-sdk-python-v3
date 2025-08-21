@@ -960,7 +960,7 @@ class LakeFormationClient(Client):
     def _create_agency_http_info(cls, request):
         http_info = {
             "method": "POST",
-            "resource_path": "/v1/{project_id}/agency",
+            "resource_path": "/v2/agency",
             "request_type": request.__class__.__name__,
             "response_type": "CreateAgencyResponse"
             }
@@ -1025,7 +1025,7 @@ class LakeFormationClient(Client):
     def _delete_agency_http_info(cls, request):
         http_info = {
             "method": "DELETE",
-            "resource_path": "/v1/{project_id}/agency",
+            "resource_path": "/v2/agency",
             "request_type": request.__class__.__name__,
             "response_type": "DeleteAgencyResponse"
             }
@@ -1090,7 +1090,7 @@ class LakeFormationClient(Client):
     def _show_agency_http_info(cls, request):
         http_info = {
             "method": "GET",
-            "resource_path": "/v1/{project_id}/agency",
+            "resource_path": "/v2/agency",
             "request_type": request.__class__.__name__,
             "response_type": "ShowAgencyResponse"
             }
@@ -2628,7 +2628,7 @@ class LakeFormationClient(Client):
     def _create_agreement_http_info(cls, request):
         http_info = {
             "method": "POST",
-            "resource_path": "/v1/{project_id}/agreement",
+            "resource_path": "/v2/agreement",
             "request_type": request.__class__.__name__,
             "response_type": "CreateAgreementResponse"
             }
@@ -2693,7 +2693,7 @@ class LakeFormationClient(Client):
     def _delete_agreement_http_info(cls, request):
         http_info = {
             "method": "DELETE",
-            "resource_path": "/v1/{project_id}/agreement",
+            "resource_path": "/v2/agreement",
             "request_type": request.__class__.__name__,
             "response_type": "DeleteAgreementResponse"
             }
@@ -2819,7 +2819,7 @@ class LakeFormationClient(Client):
     def _show_agreement_http_info(cls, request):
         http_info = {
             "method": "GET",
-            "resource_path": "/v1/{project_id}/agreement",
+            "resource_path": "/v2/agreement",
             "request_type": request.__class__.__name__,
             "response_type": "ShowAgreementResponse"
             }

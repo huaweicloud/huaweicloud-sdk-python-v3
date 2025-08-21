@@ -58,9 +58,9 @@ class ShowControlResponse(SdkResponse):
 
         :param identifier: 控制策略ID。
         :type identifier: str
-        :param implementation: 服务控制策略（SCP），配置规则。
+        :param implementation: 策略类别。
         :type implementation: str
-        :param guidance: 控制策略必须性。
+        :param guidance: 实施建议。
         :type guidance: str
         :param resource: 治理资源。
         :type resource: list[str]
@@ -76,7 +76,7 @@ class ShowControlResponse(SdkResponse):
         :type artifacts: list[:class:`huaweicloudsdkrgc.v1.Artifact`]
         :param aliases: 控制策略别名。
         :type aliases: list[str]
-        :param owner: 纳管账号的创建来源，包括CUSTOM和RGC。
+        :param owner: 控制策略来源。
         :type owner: str
         :param severity: 控制策略严重性。
         :type severity: str
@@ -159,7 +159,7 @@ class ShowControlResponse(SdkResponse):
     def implementation(self):
         r"""Gets the implementation of this ShowControlResponse.
 
-        服务控制策略（SCP），配置规则。
+        策略类别。
 
         :return: The implementation of this ShowControlResponse.
         :rtype: str
@@ -170,7 +170,7 @@ class ShowControlResponse(SdkResponse):
     def implementation(self, implementation):
         r"""Sets the implementation of this ShowControlResponse.
 
-        服务控制策略（SCP），配置规则。
+        策略类别。
 
         :param implementation: The implementation of this ShowControlResponse.
         :type implementation: str
@@ -181,7 +181,7 @@ class ShowControlResponse(SdkResponse):
     def guidance(self):
         r"""Gets the guidance of this ShowControlResponse.
 
-        控制策略必须性。
+        实施建议。
 
         :return: The guidance of this ShowControlResponse.
         :rtype: str
@@ -192,7 +192,7 @@ class ShowControlResponse(SdkResponse):
     def guidance(self, guidance):
         r"""Sets the guidance of this ShowControlResponse.
 
-        控制策略必须性。
+        实施建议。
 
         :param guidance: The guidance of this ShowControlResponse.
         :type guidance: str
@@ -357,7 +357,7 @@ class ShowControlResponse(SdkResponse):
     def owner(self):
         r"""Gets the owner of this ShowControlResponse.
 
-        纳管账号的创建来源，包括CUSTOM和RGC。
+        控制策略来源。
 
         :return: The owner of this ShowControlResponse.
         :rtype: str
@@ -368,7 +368,7 @@ class ShowControlResponse(SdkResponse):
     def owner(self, owner):
         r"""Sets the owner of this ShowControlResponse.
 
-        纳管账号的创建来源，包括CUSTOM和RGC。
+        控制策略来源。
 
         :param owner: The owner of this ShowControlResponse.
         :type owner: str

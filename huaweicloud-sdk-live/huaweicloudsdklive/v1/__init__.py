@@ -5,6 +5,7 @@ from __future__ import absolute_import
 from huaweicloudsdklive.v1.live_client import LiveClient
 from huaweicloudsdklive.v1.live_async_client import LiveAsyncClient
 
+from huaweicloudsdklive.v1.model.add_flow_outputs_request import AddFlowOutputsRequest
 from huaweicloudsdklive.v1.model.app_quality_info import AppQualityInfo
 from huaweicloudsdklive.v1.model.audio_selector_hls_selection import AudioSelectorHlsSelection
 from huaweicloudsdklive.v1.model.audio_selector_lang_selection import AudioSelectorLangSelection
@@ -14,10 +15,16 @@ from huaweicloudsdklive.v1.model.batch_show_ip_belongs_request import BatchShowI
 from huaweicloudsdklive.v1.model.batch_show_ip_belongs_response import BatchShowIpBelongsResponse
 from huaweicloudsdklive.v1.model.callback_url import CallbackUrl
 from huaweicloudsdklive.v1.model.cdn_ip import CdnIp
+from huaweicloudsdklive.v1.model.ces_dims_item import CesDimsItem
+from huaweicloudsdklive.v1.model.ces_dims_item_display import CesDimsItemDisplay
+from huaweicloudsdklive.v1.model.ces_dims_item_display_id import CesDimsItemDisplayId
+from huaweicloudsdklive.v1.model.ces_query_resp_query import CesQueryRespQuery
 from huaweicloudsdklive.v1.model.create_domain_mapping_request import CreateDomainMappingRequest
 from huaweicloudsdklive.v1.model.create_domain_mapping_response import CreateDomainMappingResponse
 from huaweicloudsdklive.v1.model.create_domain_request import CreateDomainRequest
 from huaweicloudsdklive.v1.model.create_domain_response import CreateDomainResponse
+from huaweicloudsdklive.v1.model.create_flow_output_request import CreateFlowOutputRequest
+from huaweicloudsdklive.v1.model.create_flow_output_response import CreateFlowOutputResponse
 from huaweicloudsdklive.v1.model.create_flows_request import CreateFlowsRequest
 from huaweicloudsdklive.v1.model.create_flows_request_body import CreateFlowsRequestBody
 from huaweicloudsdklive.v1.model.create_flows_response import CreateFlowsResponse
@@ -59,6 +66,8 @@ from huaweicloudsdklive.v1.model.delete_domain_mapping_request import DeleteDoma
 from huaweicloudsdklive.v1.model.delete_domain_mapping_response import DeleteDomainMappingResponse
 from huaweicloudsdklive.v1.model.delete_domain_request import DeleteDomainRequest
 from huaweicloudsdklive.v1.model.delete_domain_response import DeleteDomainResponse
+from huaweicloudsdklive.v1.model.delete_flow_output_request import DeleteFlowOutputRequest
+from huaweicloudsdklive.v1.model.delete_flow_output_response import DeleteFlowOutputResponse
 from huaweicloudsdklive.v1.model.delete_flow_request import DeleteFlowRequest
 from huaweicloudsdklive.v1.model.delete_flow_response import DeleteFlowResponse
 from huaweicloudsdklive.v1.model.delete_harvest_task_request import DeleteHarvestTaskRequest
@@ -94,6 +103,7 @@ from huaweicloudsdklive.v1.model.flow_detail_resp_body import FlowDetailRespBody
 from huaweicloudsdklive.v1.model.flow_output import FlowOutput
 from huaweicloudsdklive.v1.model.flow_source import FlowSource
 from huaweicloudsdklive.v1.model.flow_source_decryption import FlowSourceDecryption
+from huaweicloudsdklive.v1.model.flows_output import FlowsOutput
 from huaweicloudsdklive.v1.model.geo_blocking_config_info import GeoBlockingConfigInfo
 from huaweicloudsdklive.v1.model.gm_certificate_info import GmCertificateInfo
 from huaweicloudsdklive.v1.model.hls_record_config import HLSRecordConfig
@@ -104,6 +114,16 @@ from huaweicloudsdklive.v1.model.ip_auth_info import IPAuthInfo
 from huaweicloudsdklive.v1.model.input_audio_selector import InputAudioSelector
 from huaweicloudsdklive.v1.model.input_stream_info import InputStreamInfo
 from huaweicloudsdklive.v1.model.key_chain_info import KeyChainInfo
+from huaweicloudsdklive.v1.model.list_ces_dims_info_request import ListCesDimsInfoRequest
+from huaweicloudsdklive.v1.model.list_ces_dims_info_response import ListCesDimsInfoResponse
+from huaweicloudsdklive.v1.model.list_ces_instance_request import ListCesInstanceRequest
+from huaweicloudsdklive.v1.model.list_ces_instance_request_body import ListCesInstanceRequestBody
+from huaweicloudsdklive.v1.model.list_ces_instance_request_body_query import ListCesInstanceRequestBodyQuery
+from huaweicloudsdklive.v1.model.list_ces_instance_response import ListCesInstanceResponse
+from huaweicloudsdklive.v1.model.list_ces_instance_rsp_body_audio import ListCesInstanceRspBodyAudio
+from huaweicloudsdklive.v1.model.list_ces_instance_rsp_body_instances import ListCesInstanceRspBodyInstances
+from huaweicloudsdklive.v1.model.list_ces_instance_rsp_body_medialive_mpc import ListCesInstanceRspBodyMedialiveMpc
+from huaweicloudsdklive.v1.model.list_ces_instance_rsp_body_pipeline import ListCesInstanceRspBodyPipeline
 from huaweicloudsdklive.v1.model.list_delay_config_request import ListDelayConfigRequest
 from huaweicloudsdklive.v1.model.list_delay_config_response import ListDelayConfigResponse
 from huaweicloudsdklive.v1.model.list_flow_resp_item import ListFlowRespItem
@@ -144,6 +164,8 @@ from huaweicloudsdklive.v1.model.live_snapshot_config import LiveSnapshotConfig
 from huaweicloudsdklive.v1.model.log_info import LogInfo
 from huaweicloudsdklive.v1.model.mp4_record_config import MP4RecordConfig
 from huaweicloudsdklive.v1.model.modify_delay_config import ModifyDelayConfig
+from huaweicloudsdklive.v1.model.modify_flow_output_request import ModifyFlowOutputRequest
+from huaweicloudsdklive.v1.model.modify_flow_output_response import ModifyFlowOutputResponse
 from huaweicloudsdklive.v1.model.modify_flow_sources_request import ModifyFlowSourcesRequest
 from huaweicloudsdklive.v1.model.modify_flow_sources_request_body import ModifyFlowSourcesRequestBody
 from huaweicloudsdklive.v1.model.modify_flow_sources_response import ModifyFlowSourcesResponse
@@ -214,6 +236,8 @@ from huaweicloudsdklive.v1.model.show_domain_request import ShowDomainRequest
 from huaweicloudsdklive.v1.model.show_domain_response import ShowDomainResponse
 from huaweicloudsdklive.v1.model.show_flow_detail_request import ShowFlowDetailRequest
 from huaweicloudsdklive.v1.model.show_flow_detail_response import ShowFlowDetailResponse
+from huaweicloudsdklive.v1.model.show_output_info_request import ShowOutputInfoRequest
+from huaweicloudsdklive.v1.model.show_output_info_response import ShowOutputInfoResponse
 from huaweicloudsdklive.v1.model.show_pull_sources_config_request import ShowPullSourcesConfigRequest
 from huaweicloudsdklive.v1.model.show_pull_sources_config_response import ShowPullSourcesConfigResponse
 from huaweicloudsdklive.v1.model.show_record_callback_config_request import ShowRecordCallbackConfigRequest
@@ -243,6 +267,7 @@ from huaweicloudsdklive.v1.model.update_domain_key_chain_request import UpdateDo
 from huaweicloudsdklive.v1.model.update_domain_key_chain_response import UpdateDomainKeyChainResponse
 from huaweicloudsdklive.v1.model.update_domain_request import UpdateDomainRequest
 from huaweicloudsdklive.v1.model.update_domain_response import UpdateDomainResponse
+from huaweicloudsdklive.v1.model.update_flow_output_request_body import UpdateFlowOutputRequestBody
 from huaweicloudsdklive.v1.model.update_geo_blocking_config_request import UpdateGeoBlockingConfigRequest
 from huaweicloudsdklive.v1.model.update_geo_blocking_config_response import UpdateGeoBlockingConfigResponse
 from huaweicloudsdklive.v1.model.update_harvest_job_status_request import UpdateHarvestJobStatusRequest

@@ -19,16 +19,20 @@ class UpdateSnapshotSettingReq:
     openapi_types = {
         'bucket': 'str',
         'agency': 'str',
-        'base_path': 'str'
+        'base_path': 'str',
+        'max_snapshot_bytes_per_seconds': 'str',
+        'max_restore_bytes_per_seconds': 'str'
     }
 
     attribute_map = {
         'bucket': 'bucket',
         'agency': 'agency',
-        'base_path': 'base_path'
+        'base_path': 'base_path',
+        'max_snapshot_bytes_per_seconds': 'maxSnapshotBytesPerSeconds',
+        'max_restore_bytes_per_seconds': 'maxRestoreBytesPerSeconds'
     }
 
-    def __init__(self, bucket=None, agency=None, base_path=None):
+    def __init__(self, bucket=None, agency=None, base_path=None, max_snapshot_bytes_per_seconds=None, max_restore_bytes_per_seconds=None):
         r"""UpdateSnapshotSettingReq
 
         The model defined in huaweicloud sdk
@@ -39,6 +43,10 @@ class UpdateSnapshotSettingReq:
         :type agency: str
         :param base_path: 快照在OBS桶中的存放路径。
         :type base_path: str
+        :param max_snapshot_bytes_per_seconds: 配置每个节点的最大备份速率（每秒），即当备份的速率超过该值时会被限流，避免速率太大导致资源占用过高，影响系统稳定性。实际备份速率不一定能达到该值，会受OBS、磁盘等影响。
+        :type max_snapshot_bytes_per_seconds: str
+        :param max_restore_bytes_per_seconds: 配置每个节点的最大恢复速率（每秒），即当恢复的速率超过该值时会被限流，避免速率太大导致资源占用过高，影响系统稳定性。实际恢复速率不一定能达到该值，会受OBS、磁盘等影响。
+        :type max_restore_bytes_per_seconds: str
         """
         
         
@@ -46,11 +54,17 @@ class UpdateSnapshotSettingReq:
         self._bucket = None
         self._agency = None
         self._base_path = None
+        self._max_snapshot_bytes_per_seconds = None
+        self._max_restore_bytes_per_seconds = None
         self.discriminator = None
 
         self.bucket = bucket
         self.agency = agency
         self.base_path = base_path
+        if max_snapshot_bytes_per_seconds is not None:
+            self.max_snapshot_bytes_per_seconds = max_snapshot_bytes_per_seconds
+        if max_restore_bytes_per_seconds is not None:
+            self.max_restore_bytes_per_seconds = max_restore_bytes_per_seconds
 
     @property
     def bucket(self):
@@ -117,6 +131,50 @@ class UpdateSnapshotSettingReq:
         :type base_path: str
         """
         self._base_path = base_path
+
+    @property
+    def max_snapshot_bytes_per_seconds(self):
+        r"""Gets the max_snapshot_bytes_per_seconds of this UpdateSnapshotSettingReq.
+
+        配置每个节点的最大备份速率（每秒），即当备份的速率超过该值时会被限流，避免速率太大导致资源占用过高，影响系统稳定性。实际备份速率不一定能达到该值，会受OBS、磁盘等影响。
+
+        :return: The max_snapshot_bytes_per_seconds of this UpdateSnapshotSettingReq.
+        :rtype: str
+        """
+        return self._max_snapshot_bytes_per_seconds
+
+    @max_snapshot_bytes_per_seconds.setter
+    def max_snapshot_bytes_per_seconds(self, max_snapshot_bytes_per_seconds):
+        r"""Sets the max_snapshot_bytes_per_seconds of this UpdateSnapshotSettingReq.
+
+        配置每个节点的最大备份速率（每秒），即当备份的速率超过该值时会被限流，避免速率太大导致资源占用过高，影响系统稳定性。实际备份速率不一定能达到该值，会受OBS、磁盘等影响。
+
+        :param max_snapshot_bytes_per_seconds: The max_snapshot_bytes_per_seconds of this UpdateSnapshotSettingReq.
+        :type max_snapshot_bytes_per_seconds: str
+        """
+        self._max_snapshot_bytes_per_seconds = max_snapshot_bytes_per_seconds
+
+    @property
+    def max_restore_bytes_per_seconds(self):
+        r"""Gets the max_restore_bytes_per_seconds of this UpdateSnapshotSettingReq.
+
+        配置每个节点的最大恢复速率（每秒），即当恢复的速率超过该值时会被限流，避免速率太大导致资源占用过高，影响系统稳定性。实际恢复速率不一定能达到该值，会受OBS、磁盘等影响。
+
+        :return: The max_restore_bytes_per_seconds of this UpdateSnapshotSettingReq.
+        :rtype: str
+        """
+        return self._max_restore_bytes_per_seconds
+
+    @max_restore_bytes_per_seconds.setter
+    def max_restore_bytes_per_seconds(self, max_restore_bytes_per_seconds):
+        r"""Sets the max_restore_bytes_per_seconds of this UpdateSnapshotSettingReq.
+
+        配置每个节点的最大恢复速率（每秒），即当恢复的速率超过该值时会被限流，避免速率太大导致资源占用过高，影响系统稳定性。实际恢复速率不一定能达到该值，会受OBS、磁盘等影响。
+
+        :param max_restore_bytes_per_seconds: The max_restore_bytes_per_seconds of this UpdateSnapshotSettingReq.
+        :type max_restore_bytes_per_seconds: str
+        """
+        self._max_restore_bytes_per_seconds = max_restore_bytes_per_seconds
 
     def to_dict(self):
         """Returns the model properties as a dict"""

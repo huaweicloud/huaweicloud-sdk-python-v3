@@ -1,3 +1,640 @@
+# 3.1.163 2025-08-21
+
+### HuaweiCloud SDK CDN
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 支持以下接口：
+    - `ShowDomainTemplate`
+    - `CreateDomainTemplate`
+    - `UpdateDomainTemplate`
+    - `DeleteDomainTemplate`
+    - `ApplyDomainTemplate`
+    - `ShowAppliedTemplateRecord`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK CFW
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持以下接口：
+    - `ShowEwAssociatedVpc`
+    - `ShowEwAssociatedEr`
+    - `ShowLogsCount`
+    - `ShowFlowDetail`
+    - `ShowFlowTop`
+    - `ListFlowStatistic`
+    - `ShowFlowTrend`
+    - `ShowAttackDetail`
+    - `ShowAttackTop`
+    - `ShowAccessDetail`
+    - `ListLogs`
+    - `ExportLogs`
+    - `ListAccounts`
+    - `EnableMultiAccount`
+    - `ListOrganizationAccounts`
+    - `ListOrganizationTree`
+    - `ListReportProfiles`
+    - `CreateReportProfile`
+    - `ShowReportProfile`
+    - `UpdateReportProfile`
+    - `DeleteReportProfile`
+    - `ShowFirewallReport`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListCustomerIps**
+    - 请求参数变更
+      - `+ ips_id`
+    - 响应参数变更
+      - `+ data`
+  - **ChangeEastWestFirewallStatus**
+    - 请求参数变更
+      - `- enterprise_project_id`
+      - `- fw_instance_id`
+  - **UpdateCustomerIps**
+    - 响应参数变更
+      - `+ data`
+  - **ShowCustomerIpsInfo**
+    - 响应参数变更
+      - `- data.action: enum value [0,1]`
+      - `- data.affected_os: enum value [0,1,2,3,4,5,6,7,8,9,10]`
+  - **ListAttackStatistic**
+    - 请求参数变更
+      - `+ size`
+
+### HuaweiCloud SDK COC
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持接口`CountMultiCloudResources`、`SyncMultiCloudResource`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListResources**
+    - 请求参数变更
+      - `+ ip_list`
+      - `+ is_collected`
+      - `+ flavor_name`
+      - `+ charging_mode`
+      - `+ offset`
+      - `+ enterprise_project_id`
+      - `+ order_field`
+      - `+ direction`
+      - `+ show_associated_groups`
+      - `+ operable`
+      - `+ create_since`
+      - `+ create_until`
+    - 响应参数变更
+      - `- data`
+  - **BatchCreateApplicationView**
+    - 请求参数变更
+      - `+ group_list.application_name`
+      - `+ group_list.component_name`
+      - `+ group_list.vendor`
+      - `+ group_list.relation_configurations`
+      - `+ group_list.related_domain_id`
+      - `+ group_list.sync_mode: enum value [MANUAL,AUTO]`
+
+### HuaweiCloud SDK CodeHub
+
+- _接口版本_
+  - V4
+- _新增特性_
+  - 支持以下接口：
+    - `TransferGroup`
+    - `DownloadArchive`
+    - `ListSubmodules`
+    - `AddSubmodule`
+    - `ShowBlobs`
+    - `ShowCommitStatistics`
+    - `ShowRepositoryStatisticsStatus`
+    - `ListRepositoryLanguages`
+    - `ListRepositoryEvents`
+    - `ListRepositoryUserGroups`
+    - `ListMembers`
+    - `AddRepositoryMembers`
+    - `ListBranches`
+    - `CreateBranch`
+    - `ListTags`
+    - `CreateTag`
+    - `ShowTag`
+    - `DeleteTag`
+    - `ListTrees`
+    - `CreateFile`
+    - `ShowReadmeFile`
+    - `ShowFile`
+    - `UpdateFile`
+    - `DeleteFile`
+    - `ShowBranch`
+    - `UpdateBranchName`
+    - `DeleteBranch`
+    - `ShowRefCompare`
+    - `ShowDiffLines`
+    - `ShowNotificationSubscription`
+    - `UpdateNotificationSubscription`
+    - `ShowNotificationSubscriptionsStatus`
+    - `ShowRepositoryPermissionInheritEnabled`
+    - `UpdateRepositoryPermissionInheritEnabled`
+    - `ListLatestPipelineJobs`
+    - `ListPipelineJobs`
+    - `ListProjectWebhooks`
+    - `AddProjectWebhook`
+    - `ShowProjectWebhook`
+    - `UpdateProjectWebhook`
+    - `RemoveProjectWebhook`
+    - `ListRepositoryWebhooks`
+    - `AddRepositoryWebhook`
+    - `ShowRepositoryWebhook`
+    - `UpdateRepositoryWebhook`
+    - `RemoveRepositoryWebhook`
+    - `ShowActualHeadPipeline`
+    - `CheckDeployKey`
+    - `RemoveDeployKey`
+    - `ShowRemoteMirror`
+    - `StartRemoteMirrorSynchronization`
+    - `ShowMergeRequestVotesDetail`
+    - `UpdateMergeRequestVote`
+    - `DeleteMergeRequestVote`
+    - `ShowMergeRequestDiscussion`
+    - `ListRepositoryReviews`
+    - `ListMergeRequestDiscussions`
+    - `CreateMergeRequestDiscussion`
+    - `CreateMergeRequestDiscussionResponse`
+    - `UpdateMergeRequestDiscussion`
+    - `ListRepositoryReviewAuthors`
+    - `ShowMergeRequestDetail`
+    - `UpdateMergeRequest`
+    - `ShowMergeableStateOuter`
+    - `MergeMergeRequest`
+    - `ListRepositoryMergeRequests`
+    - `CreateMergeRequest`
+    - `ShowRepositoryMergeRequestsStatistic`
+    - `ListMergeRequestApproverSettings`
+    - `CreateMergeRequestApproverSetting`
+    - `UpdateMergeRequestApproverSetting`
+    - `DeleteMergeRequestApproverSetting`
+    - `ListMergeRequestCommits`
+    - `ListMergeRequestChangesTrees`
+    - `ListMergeRequestChanges`
+    - `ListCommitAssociatedMergeRequests`
+    - `ListMergeRequestParticipants`
+    - `CreateCommitRevert`
+    - `ShowCommitDiffMetadata`
+    - `ListCommitAssociatedRefs`
+    - `ShowCommitFileDiff`
+    - `ShowCommit`
+    - `CreateCommit`
+    - `ShowDiffCommit`
+    - `ImportMergeRequest`
+    - `ShowBranchConflict`
+    - `ShowMergeRequestSetting`
+    - `UpdateMergeRequestSetting`
+    - `ShowGroupMergeRequestSetting`
+    - `ShowProjectMergeRequestSetting`
+    - `ListMergeRequestTemplates`
+    - `CreateMergeRequestTemplate`
+    - `ListDiscussionTemplates`
+    - `ShowMergeRequestTemplate`
+    - `UpdateMergeRequestTemplate`
+    - `DeleteMergeRequestTemplate`
+    - `CreateReviewSetting`
+    - `ShowReviewSetting`
+    - `ListDefaultReviewCategories`
+    - `ListGroupMergeRequestApproverSettings`
+    - `CreateGroupMergeRequestApproverSetting`
+    - `ListProjectMergeRequestApproverSettings`
+    - `CreateProjectMergeRequestApproverSetting`
+    - `UpdateGroupMergeRequestApproverSetting`
+    - `DeleteGroupMergeRequestApproverSetting`
+    - `UpdateProjectMergeRequestApproverSetting`
+    - `DeleteProjectMergeRequestApproverSetting`
+    - `ListGroupMergeRequestValidAssignedCandidates`
+    - `ListProjectMergeRequestCanBeAssignedUsers`
+    - `ListGroupMergeRequestCanBeAssignedReviewers`
+    - `ListProjectMergeRequestCanBeAssignedReviewers`
+    - `ListMergeRequestApprovers`
+    - `ListMergeRequestReviewers`
+    - `UpdateMergeRequestApprovers`
+    - `UpdateMergeRequestReviewers`
+    - `ApprovalMergeRequest`
+    - `ReviewMergeRequest`
+    - `ShowGroupReviewSettings`
+    - `UpdateGroupReviewSettings`
+    - `ShowProjectReviewSettings`
+    - `UpdateProjectReviewSettings`
+    - `ShowGroupNoteRequiredAttributes`
+    - `UpdateGroupNoteRequiredAttributes`
+    - `ListProjectNoteRequiredAttributes`
+    - `UpdateProjectNoteRequiredAttributes`
+    - `ShowNoteRequiredAttributes`
+    - `UpdateNoteRequiredAttributes`
+    - `ListMergeRequestValidAssignedCandidates`
+    - `RebaseMergeRequestForOpenApi`
+    - `ResolveMergeRequestConflicts`
+    - `ListMergeRequestConflictFiles`
+    - `ShowAverageEvaluation`
+    - `ShowMergeRequestCommentsByLine`
+    - `DownloadBlobsRaw`
+    - `ListFiles`
+    - `ShowFileContent`
+    - `ListFileBlameLines`
+    - `ListFileUpperTreeEntries`
+    - `ListRepositoryFilePushPermissions`
+    - `BatchUpdateRepositoryFilePushPermissions`
+    - `CreateFilePushPermission`
+    - `BatchDeleteRepositoryFilePushPermissions`
+    - `ShowResourcePermissions`
+    - `ShowGroupSettingsInheritCfg`
+    - `ShowGroupPermissionInheritEnabled`
+    - `ShowProjectMemberSetting`
+    - `ShowProjectGeneralPolicy`
+    - `ShowGroupGeneralPolicy`
+    - `ListGroupPermissionResources`
+    - `ListUserGpgKeys`
+    - `ListUserKeys`
+    - `AddSshKey`
+    - `SendUserEmailVerifyCode`
+    - `ShowUserEmails`
+    - `UpdateUserEmails`
+    - `ShowGroupWatermark`
+    - `UpdateGroupWatermark`
+    - `ListGroups`
+    - `ListGroupMembers`
+    - `ListGroupAddableMembers`
+    - `ShowHttpsPasswordSetting`
+    - `UpdateHttpsPasswordSetting`
+    - `ListProductPermissionResourcesGrantedUsers`
+    - `ListProjectSubgroupsAndRepositories`
+    - `DeleteSshKey`
+    - `ListGroupAddableUserGroups`
+    - `ListImpersonationTokens`
+    - `ListGroupSubgroupsAndRepositories`
+    - `ShowGroupsInherit`
+    - `CreateRepositorySystemLabels`
+    - `ListRepositoryLabels`
+    - `CreateRepositoryLabel`
+    - `UpdateRepositoryLabel`
+    - `DeleteRepositoryLabel`
+    - `ListProtectedBranches`
+    - `BatchUpdateProtectedBranches`
+    - `BatchCreateProtectedBranch`
+    - `BatchDeleteProtectedBranches`
+    - `ShowProtectedBranch`
+    - `UpdateProtectedBranch`
+    - `DeleteProtectedBranch`
+    - `ListProtectedTags`
+    - `BatchUpdateProtectedTags`
+    - `BatchCreateProtectedTags`
+    - `BatchDeleteProtectedTags`
+    - `ShowProtectedTag`
+    - `UpdateProtectedTag`
+    - `DeleteProtectedTag`
+    - `ListRepositoryTemplates`
+    - `ShowRepositoryInheritSettingSource`
+    - `CreateDir`
+    - `ListRepositoryContributors`
+    - `ShowRepositoryInheritSetting`
+    - `UpdateRepositoryInheritSetting`
+    - `AssociateRemoteMirror`
+    - `ShowRepositoryGeneralPolicy`
+    - `UpdateRepositoryGeneralPolicy`
+    - `ShowRepositoryGeneralCommitRule`
+    - `ListRepositoryCommitRules`
+    - `ListPersonalRepositoryImportRecords`
+    - `ShowLastPushEventInRepository`
+    - `ShowRepositoryStatisticsSummary`
+    - `ShowUserRefPermission`
+    - `ShowRepository`
+    - `ListCurrentUserRepositories`
+    - `ListRepositoryForks`
+    - `CheckGroupDeployKey`
+    - `ListRepositoryDeployKeys`
+    - `ListGroupDeployKeys`
+    - `ListProjectDeployKeys`
+    - `ListBranchRelatedWorkItems`
+    - `ListRepositoryWorkItems`
+    - `ShowProjectWatermark`
+    - `UpdateProjectWatermark`
+    - `ShowRepositoryWatermark`
+    - `UpdateRepositoryWatermark`
+    - `ListRepositoryWebhookLogs`
+    - `ShowRepositoryWebhookLog`
+    - `ListProjectWebhookLogs`
+    - `ShowProjectWebhookLog`
+    - `ListGroupWebhookLogs`
+    - `ShowGroupWebhookLog`
+    - `ListGroupWebhooks`
+    - `AddGroupWebhook`
+    - `ShowGroupWebhook`
+    - `UpdateGroupWebhook`
+    - `RemoveGroupWebhook`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListTrustedIpAddresses**
+    - 响应参数变更
+      - `+ ip_type: enum value [0,1,2]`
+      - `+ view_flag: enum value [0,1]`
+      - `+ download_flag: enum value [0,1]`
+      - `+ upload_flag: enum value [0,1]`
+      - `+ order_flag: enum value [0,1]`
+  - **AddTrustedIpAddress**
+    - 响应参数变更
+      - `+ ip_type: enum value [0,1,2]`
+      - `+ view_flag: enum value [0,1]`
+      - `+ download_flag: enum value [0,1]`
+      - `+ upload_flag: enum value [0,1]`
+      - `+ order_flag: enum value [0,1]`
+  - **UpdateTrustedIpAddress**
+    - 响应参数变更
+      - `+ ip_type: enum value [0,1,2]`
+      - `+ view_flag: enum value [0,1]`
+      - `+ download_flag: enum value [0,1]`
+      - `+ upload_flag: enum value [0,1]`
+      - `+ order_flag: enum value [0,1]`
+  - **ListTenantTrustedIpAddresses**
+    - 响应参数变更
+      - `+ ip_type: enum value [0,1,2]`
+      - `+ view_flag: enum value [0,1]`
+      - `+ download_flag: enum value [0,1]`
+      - `+ upload_flag: enum value [0,1]`
+      - `+ order_flag: enum value [0,1]`
+  - **AddTenantTrustedIpAddress**
+    - 响应参数变更
+      - `+ ip_type: enum value [0,1,2]`
+      - `+ view_flag: enum value [0,1]`
+      - `+ download_flag: enum value [0,1]`
+      - `+ upload_flag: enum value [0,1]`
+      - `+ order_flag: enum value [0,1]`
+  - **UpdateTenantTrustedIpAddress**
+    - 响应参数变更
+      - `+ ip_type: enum value [0,1,2]`
+      - `+ view_flag: enum value [0,1]`
+      - `+ download_flag: enum value [0,1]`
+      - `+ upload_flag: enum value [0,1]`
+      - `+ order_flag: enum value [0,1]`
+  - **LockRepository**
+    - 响应参数变更
+      - `+ locked: enum value [true,false]`
+  - **UnlockRepository**
+    - 响应参数变更
+      - `+ locked: enum value [true,false]`
+  - **ListManageableGroups**
+    - 响应参数变更
+      - `* : list<GroupsManageableDto> -> list<ManageableGroupDto>`
+
+### HuaweiCloud SDK Config
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowPolicyAssignment**
+    - 响应参数变更
+      - `+ policy_filter_v2`
+  - **UpdatePolicyAssignment**
+    - 响应参数变更
+      - `+ policy_filter_v2`
+  - **ShowAggregatePolicyAssignmentDetail**
+    - 响应参数变更
+      - `+ policy_filter_v2`
+  - **CreatePolicyAssignments**
+    - 响应参数变更
+      - `+ policy_filter_v2`
+  - **ListPolicyAssignments**
+    - 响应参数变更
+      - `+ policy_filter_v2`
+      - `+ value.policy_filter_v2`
+  - **CollectPolicyAssignmentsStatesSummary**
+    - 响应参数变更
+      - `+ policy_filter_v2`
+      - `+ policy_assignment.policy_filter_v2`
+  - **CollectPolicyStatesSummary**
+    - 响应参数变更
+      - `+ policy_filter_v2`
+      - `+ policy_assignments.policy_assignment.policy_filter_v2`
+
+### HuaweiCloud SDK CSE
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListEngines**
+    - 响应参数变更
+      - `* data.reference.serviceLimit: int32 -> string`
+      - `* data.reference.instanceLimit: int32 -> string`
+  - **ShowEngine**
+    - 响应参数变更
+      - `* reference.serviceLimit: int32 -> string`
+      - `* reference.instanceLimit: int32 -> string`
+
+### HuaweiCloud SDK CSS
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持接口`ChangeClusterSubnet`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpdateSnapshotSetting**
+    - 请求参数变更
+      - `+ maxSnapshotBytesPerSeconds`
+      - `+ maxRestoreBytesPerSeconds`
+  - **ListImages**
+    - 请求参数变更
+      - `+ offset`
+      - `- start`
+  - **ListPipelines**
+    - 请求参数变更
+      - `+ offset`
+      - `- start`
+  - **ListActions**
+    - 请求参数变更
+      - `+ offset`
+      - `- start`
+  - **ListCerts**
+    - 请求参数变更
+      - `+ offset`
+      - `- start`
+  - **ListLogsJob**
+    - 请求参数变更
+      - `+ offset`
+      - `- start`
+  - **ShowVpcepConnection**
+    - 请求参数变更
+      - `+ offset`
+      - `- start`
+  - **ListYmlsJob**
+    - 请求参数变更
+      - `+ offset`
+      - `- start`
+  - **ListAiOps**
+    - 请求参数变更
+      - `+ offset`
+      - `- start`
+  - **UpgradeDetail**
+    - 请求参数变更
+      - `+ offset`
+      - `- start`
+  - **ListConfs**
+    - 请求参数变更
+      - `+ offset`
+      - `- start`
+  - **ListClustersDetails**
+    - 请求参数变更
+      - `+ offset`
+      - `- start`
+  - **CreateCluster**
+    - 请求参数变更
+      - `+ cluster.backupStrategy.frequency`
+      - `+ cluster.backupStrategy.maxSnapshotBytesPerSeconds`
+      - `+ cluster.backupStrategy.maxRestoreBytesPerSeconds`
+
+### HuaweiCloud SDK CSS
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateCluster**
+    - 请求参数变更
+      - `+ cluster.backupStrategy.frequency`
+      - `+ cluster.backupStrategy.maxSnapshotBytesPerSeconds`
+      - `+ cluster.backupStrategy.maxRestoreBytesPerSeconds`
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持接口`ImportDataMapLineage`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DGC
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除以下接口：
+    - `ListConnections`
+    - `CreateConnection`
+    - `ShowConnection`
+    - `UpdateConnection`
+    - `DeleteConnction`
+    - `ListSupplementdata`
+    - `CreateSupplementdata`
+    - `StopSupplementdata`
+    - `ExportConnections`
+    - `ImportConnections`
+  - **ExportJobList**
+    - 请求参数变更
+      - `+ obsPath`
+      - `+ exportStatus`
+
+### HuaweiCloud SDK ECS
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowRecycleBin**
+    - 响应参数变更
+      - `+ project_id`
+      - `+ switch`
+      - `+ policy`
+      - `- recycle_bin`
+
+### HuaweiCloud SDK Live
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持以下接口：
+    - `ShowOutputInfo`
+    - `ModifyFlowOutput`
+    - `CreateFlowOutput`
+    - `DeleteFlowOutput`
+    - `ListCesDimsInfo`
+    - `ListCesInstance`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK OCR
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **RecognizeVatInvoice**
+    - 请求参数变更
+      - `+ ofd_to_image_mode`
+
+### HuaweiCloud SDK RDS
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **SetLogLtsConfigs**
+    - 请求参数变更
+      - `+ engine: enum value [postgresql,sqlserver]`
+  - **DeleteLogLtsConfigs**
+    - 请求参数变更
+      - `+ engine: enum value [postgresql,sqlserver]`
+  - **ListLogLtsConfigs**
+    - 请求参数变更
+      - `+ engine: enum value [postgresql,sqlserver]`
+
+### HuaweiCloud SDK RGC
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持接口`ShowBestPracticeAccountInfo`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **DisableControl**
+    - 请求参数变更
+      - `- parameters`
+      - `* body: object<ControlOperateReqBody> -> object<DisableControlOperateReqBody>`
+
 # 3.1.162 2025-08-14
 
 ### HuaweiCloud SDK BMS

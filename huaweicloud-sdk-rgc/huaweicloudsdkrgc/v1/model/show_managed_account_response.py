@@ -64,9 +64,9 @@ class ShowManagedAccountResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param landing_zone_version: Landing Zone版本。
+        :param landing_zone_version: 纳管账号的Landing Zone版本。
         :type landing_zone_version: str
-        :param manage_account_id: 管理纳管账号ID。
+        :param manage_account_id: 管理员账号ID。
         :type manage_account_id: str
         :param account_id: 纳管账号ID。
         :type account_id: str
@@ -96,9 +96,9 @@ class ShowManagedAccountResponse(SdkResponse):
         :type is_blueprint_has_multi_account_resource: bool
         :param regions: 区域信息。
         :type regions: list[:class:`huaweicloudsdkrgc.v1.RegionManagedList`]
-        :param created_at: 组织里某个注册OU下的纳管账号被创建的时间。
+        :param created_at: 纳管账号的创建时间。
         :type created_at: datetime
-        :param updated_at: 组织里某个注册OU下的纳管账号最后一次更新的时间。
+        :param updated_at: 纳管账号的更新时间。
         :type updated_at: datetime
         """
         
@@ -165,7 +165,7 @@ class ShowManagedAccountResponse(SdkResponse):
     def landing_zone_version(self):
         r"""Gets the landing_zone_version of this ShowManagedAccountResponse.
 
-        Landing Zone版本。
+        纳管账号的Landing Zone版本。
 
         :return: The landing_zone_version of this ShowManagedAccountResponse.
         :rtype: str
@@ -176,7 +176,7 @@ class ShowManagedAccountResponse(SdkResponse):
     def landing_zone_version(self, landing_zone_version):
         r"""Sets the landing_zone_version of this ShowManagedAccountResponse.
 
-        Landing Zone版本。
+        纳管账号的Landing Zone版本。
 
         :param landing_zone_version: The landing_zone_version of this ShowManagedAccountResponse.
         :type landing_zone_version: str
@@ -187,7 +187,7 @@ class ShowManagedAccountResponse(SdkResponse):
     def manage_account_id(self):
         r"""Gets the manage_account_id of this ShowManagedAccountResponse.
 
-        管理纳管账号ID。
+        管理员账号ID。
 
         :return: The manage_account_id of this ShowManagedAccountResponse.
         :rtype: str
@@ -198,7 +198,7 @@ class ShowManagedAccountResponse(SdkResponse):
     def manage_account_id(self, manage_account_id):
         r"""Sets the manage_account_id of this ShowManagedAccountResponse.
 
-        管理纳管账号ID。
+        管理员账号ID。
 
         :param manage_account_id: The manage_account_id of this ShowManagedAccountResponse.
         :type manage_account_id: str
@@ -517,7 +517,7 @@ class ShowManagedAccountResponse(SdkResponse):
     def created_at(self):
         r"""Gets the created_at of this ShowManagedAccountResponse.
 
-        组织里某个注册OU下的纳管账号被创建的时间。
+        纳管账号的创建时间。
 
         :return: The created_at of this ShowManagedAccountResponse.
         :rtype: datetime
@@ -528,7 +528,7 @@ class ShowManagedAccountResponse(SdkResponse):
     def created_at(self, created_at):
         r"""Sets the created_at of this ShowManagedAccountResponse.
 
-        组织里某个注册OU下的纳管账号被创建的时间。
+        纳管账号的创建时间。
 
         :param created_at: The created_at of this ShowManagedAccountResponse.
         :type created_at: datetime
@@ -539,7 +539,7 @@ class ShowManagedAccountResponse(SdkResponse):
     def updated_at(self):
         r"""Gets the updated_at of this ShowManagedAccountResponse.
 
-        组织里某个注册OU下的纳管账号最后一次更新的时间。
+        纳管账号的更新时间。
 
         :return: The updated_at of this ShowManagedAccountResponse.
         :rtype: datetime
@@ -550,7 +550,7 @@ class ShowManagedAccountResponse(SdkResponse):
     def updated_at(self, updated_at):
         r"""Sets the updated_at of this ShowManagedAccountResponse.
 
-        组织里某个注册OU下的纳管账号最后一次更新的时间。
+        纳管账号的更新时间。
 
         :param updated_at: The updated_at of this ShowManagedAccountResponse.
         :type updated_at: datetime

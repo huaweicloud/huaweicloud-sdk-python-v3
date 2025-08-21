@@ -18,15 +18,17 @@ class ExportJobRequest:
 
     openapi_types = {
         'workspace': 'str',
-        'job_name': 'str'
+        'job_name': 'str',
+        'body': 'ExportJobsReq'
     }
 
     attribute_map = {
         'workspace': 'workspace',
-        'job_name': 'job_name'
+        'job_name': 'job_name',
+        'body': 'body'
     }
 
-    def __init__(self, workspace=None, job_name=None):
+    def __init__(self, workspace=None, job_name=None, body=None):
         r"""ExportJobRequest
 
         The model defined in huaweicloud sdk
@@ -35,17 +37,22 @@ class ExportJobRequest:
         :type workspace: str
         :param job_name: 作业名称.
         :type job_name: str
+        :param body: Body of the ExportJobRequest
+        :type body: :class:`huaweicloudsdkdgc.v1.ExportJobsReq`
         """
         
         
 
         self._workspace = None
         self._job_name = None
+        self._body = None
         self.discriminator = None
 
         if workspace is not None:
             self.workspace = workspace
         self.job_name = job_name
+        if body is not None:
+            self.body = body
 
     @property
     def workspace(self):
@@ -90,6 +97,24 @@ class ExportJobRequest:
         :type job_name: str
         """
         self._job_name = job_name
+
+    @property
+    def body(self):
+        r"""Gets the body of this ExportJobRequest.
+
+        :return: The body of this ExportJobRequest.
+        :rtype: :class:`huaweicloudsdkdgc.v1.ExportJobsReq`
+        """
+        return self._body
+
+    @body.setter
+    def body(self, body):
+        r"""Sets the body of this ExportJobRequest.
+
+        :param body: The body of this ExportJobRequest.
+        :type body: :class:`huaweicloudsdkdgc.v1.ExportJobsReq`
+        """
+        self._body = body
 
     def to_dict(self):
         """Returns the model properties as a dict"""

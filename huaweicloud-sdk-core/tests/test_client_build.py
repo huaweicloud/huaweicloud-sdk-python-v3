@@ -103,5 +103,16 @@ def test_add_stream_handler_to_sdk_logger():
     logger.removeHandler(logger.handlers[0])
 
 
+def test_client_with_endpoint():
+    builder = ClientBuilder(Client).with_endpoint(endpoint="endpoint")
+    assert getattr(builder, "_endpoints") == ["endpoint"]
+
+    builder = ClientBuilder(Client).with_endpoint("endpoint")
+    assert getattr(builder, "_endpoints") == ["endpoint"]
+
+    builder = ClientBuilder(Client).with_endpoint("endpoint1", "endpoint2")
+    assert getattr(builder, "_endpoints") == ["endpoint1", "endpoint2"]
+
+
 if __name__ == "__main__":
     pytest.main()

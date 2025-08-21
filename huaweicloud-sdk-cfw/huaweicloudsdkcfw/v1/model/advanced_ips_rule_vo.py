@@ -45,7 +45,7 @@ class AdvancedIpsRuleVo:
         :type ips_rule_type: int
         :param param: 包含特殊参数的JSON字符串
         :type param: str
-        :param status: 
+        :param status: 开关状态：0表示关闭、1表示开启
         :type status: int
         """
         
@@ -161,6 +161,8 @@ class AdvancedIpsRuleVo:
     def status(self):
         r"""Gets the status of this AdvancedIpsRuleVo.
 
+        开关状态：0表示关闭、1表示开启
+
         :return: The status of this AdvancedIpsRuleVo.
         :rtype: int
         """
@@ -169,6 +171,8 @@ class AdvancedIpsRuleVo:
     @status.setter
     def status(self, status):
         r"""Sets the status of this AdvancedIpsRuleVo.
+
+        开关状态：0表示关闭、1表示开启
 
         :param status: The status of this AdvancedIpsRuleVo.
         :type status: int

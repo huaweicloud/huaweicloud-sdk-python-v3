@@ -30,7 +30,7 @@ class ShowTemplateDeployParamsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param variables: 
+        :param variables: 模板的部署参数。
         :type variables: list[:class:`huaweicloudsdkrgc.v1.TemplateParamVariable`]
         """
         
@@ -46,6 +46,8 @@ class ShowTemplateDeployParamsResponse(SdkResponse):
     def variables(self):
         r"""Gets the variables of this ShowTemplateDeployParamsResponse.
 
+        模板的部署参数。
+
         :return: The variables of this ShowTemplateDeployParamsResponse.
         :rtype: list[:class:`huaweicloudsdkrgc.v1.TemplateParamVariable`]
         """
@@ -54,6 +56,8 @@ class ShowTemplateDeployParamsResponse(SdkResponse):
     @variables.setter
     def variables(self, variables):
         r"""Sets the variables of this ShowTemplateDeployParamsResponse.
+
+        模板的部署参数。
 
         :param variables: The variables of this ShowTemplateDeployParamsResponse.
         :type variables: list[:class:`huaweicloudsdkrgc.v1.TemplateParamVariable`]

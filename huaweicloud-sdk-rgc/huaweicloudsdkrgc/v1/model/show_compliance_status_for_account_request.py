@@ -33,7 +33,7 @@ class ShowComplianceStatusForAccountRequest:
 
         :param managed_account_id: 纳管账号ID。
         :type managed_account_id: str
-        :param control_id: 启用的控制策略信息。
+        :param control_id: 控制策略ID。
         :type control_id: str
         """
         
@@ -73,7 +73,7 @@ class ShowComplianceStatusForAccountRequest:
     def control_id(self):
         r"""Gets the control_id of this ShowComplianceStatusForAccountRequest.
 
-        启用的控制策略信息。
+        控制策略ID。
 
         :return: The control_id of this ShowComplianceStatusForAccountRequest.
         :rtype: str
@@ -84,7 +84,7 @@ class ShowComplianceStatusForAccountRequest:
     def control_id(self, control_id):
         r"""Sets the control_id of this ShowComplianceStatusForAccountRequest.
 
-        启用的控制策略信息。
+        控制策略ID。
 
         :param control_id: The control_id of this ShowComplianceStatusForAccountRequest.
         :type control_id: str

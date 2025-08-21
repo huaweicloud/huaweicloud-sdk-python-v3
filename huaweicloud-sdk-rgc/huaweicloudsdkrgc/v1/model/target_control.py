@@ -53,7 +53,7 @@ class TargetControl:
 
         The model defined in huaweicloud sdk
 
-        :param manage_account_id: 管理纳管账号ID。
+        :param manage_account_id: 管理员账号ID。
         :type manage_account_id: str
         :param control_identifier: 控制策略标识。
         :type control_identifier: str
@@ -69,7 +69,7 @@ class TargetControl:
         :type control_objective: str
         :param behavior: 控制策略类型。包括主动性控制策略Proactive、检测性控制策略Detective、预防性控制策略Preventive。
         :type behavior: str
-        :param owner: 纳管账号的创建来源，包括CUSTOM和RGC。
+        :param owner: 控制策略来源。
         :type owner: str
         :param regional_preference: 区域选项，取值有两种分别是：区域的regional和全局的global。
         :type regional_preference: str
@@ -77,7 +77,7 @@ class TargetControl:
         :type guidance: str
         :param service: 控制策略所属服务。
         :type service: str
-        :param implementation: 服务控制策略（SCP），配置规则。
+        :param implementation: 策略类别。
         :type implementation: str
         """
         
@@ -129,7 +129,7 @@ class TargetControl:
     def manage_account_id(self):
         r"""Gets the manage_account_id of this TargetControl.
 
-        管理纳管账号ID。
+        管理员账号ID。
 
         :return: The manage_account_id of this TargetControl.
         :rtype: str
@@ -140,7 +140,7 @@ class TargetControl:
     def manage_account_id(self, manage_account_id):
         r"""Sets the manage_account_id of this TargetControl.
 
-        管理纳管账号ID。
+        管理员账号ID。
 
         :param manage_account_id: The manage_account_id of this TargetControl.
         :type manage_account_id: str
@@ -305,7 +305,7 @@ class TargetControl:
     def owner(self):
         r"""Gets the owner of this TargetControl.
 
-        纳管账号的创建来源，包括CUSTOM和RGC。
+        控制策略来源。
 
         :return: The owner of this TargetControl.
         :rtype: str
@@ -316,7 +316,7 @@ class TargetControl:
     def owner(self, owner):
         r"""Sets the owner of this TargetControl.
 
-        纳管账号的创建来源，包括CUSTOM和RGC。
+        控制策略来源。
 
         :param owner: The owner of this TargetControl.
         :type owner: str
@@ -393,7 +393,7 @@ class TargetControl:
     def implementation(self):
         r"""Gets the implementation of this TargetControl.
 
-        服务控制策略（SCP），配置规则。
+        策略类别。
 
         :return: The implementation of this TargetControl.
         :rtype: str
@@ -404,7 +404,7 @@ class TargetControl:
     def implementation(self, implementation):
         r"""Sets the implementation of this TargetControl.
 
-        服务控制策略（SCP），配置规则。
+        策略类别。
 
         :param implementation: The implementation of this TargetControl.
         :type implementation: str

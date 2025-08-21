@@ -33,9 +33,9 @@ class UpdateTrustedIpAddressRequest:
 
         The model defined in huaweicloud sdk
 
-        :param id: 仓库id
+        :param id: **参数解释：** 仓库id，代码仓首页，Repository ID后的数字Id。
         :type id: int
-        :param ip_id: ip的id
+        :param ip_id: **参数解释：** ip白名单id。
         :type ip_id: int
         :param body: Body of the UpdateTrustedIpAddressRequest
         :type body: :class:`huaweicloudsdkcodehub.v4.AddTrustedIpAddressRequestBody`
@@ -57,7 +57,7 @@ class UpdateTrustedIpAddressRequest:
     def id(self):
         r"""Gets the id of this UpdateTrustedIpAddressRequest.
 
-        仓库id
+        **参数解释：** 仓库id，代码仓首页，Repository ID后的数字Id。
 
         :return: The id of this UpdateTrustedIpAddressRequest.
         :rtype: int
@@ -68,7 +68,7 @@ class UpdateTrustedIpAddressRequest:
     def id(self, id):
         r"""Sets the id of this UpdateTrustedIpAddressRequest.
 
-        仓库id
+        **参数解释：** 仓库id，代码仓首页，Repository ID后的数字Id。
 
         :param id: The id of this UpdateTrustedIpAddressRequest.
         :type id: int
@@ -79,7 +79,7 @@ class UpdateTrustedIpAddressRequest:
     def ip_id(self):
         r"""Gets the ip_id of this UpdateTrustedIpAddressRequest.
 
-        ip的id
+        **参数解释：** ip白名单id。
 
         :return: The ip_id of this UpdateTrustedIpAddressRequest.
         :rtype: int
@@ -90,7 +90,7 @@ class UpdateTrustedIpAddressRequest:
     def ip_id(self, ip_id):
         r"""Sets the ip_id of this UpdateTrustedIpAddressRequest.
 
-        ip的id
+        **参数解释：** ip白名单id。
 
         :param ip_id: The ip_id of this UpdateTrustedIpAddressRequest.
         :type ip_id: int

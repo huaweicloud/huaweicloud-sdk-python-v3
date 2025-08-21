@@ -46,7 +46,7 @@ class ShowManagedAccountTemplateResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param manage_account_id: 管理纳管账号ID。
+        :param manage_account_id: 管理员账号ID。
         :type manage_account_id: str
         :param account_id: 纳管账号ID。
         :type account_id: str
@@ -102,7 +102,7 @@ class ShowManagedAccountTemplateResponse(SdkResponse):
     def manage_account_id(self):
         r"""Gets the manage_account_id of this ShowManagedAccountTemplateResponse.
 
-        管理纳管账号ID。
+        管理员账号ID。
 
         :return: The manage_account_id of this ShowManagedAccountTemplateResponse.
         :rtype: str
@@ -113,7 +113,7 @@ class ShowManagedAccountTemplateResponse(SdkResponse):
     def manage_account_id(self, manage_account_id):
         r"""Sets the manage_account_id of this ShowManagedAccountTemplateResponse.
 
-        管理纳管账号ID。
+        管理员账号ID。
 
         :param manage_account_id: The manage_account_id of this ShowManagedAccountTemplateResponse.
         :type manage_account_id: str

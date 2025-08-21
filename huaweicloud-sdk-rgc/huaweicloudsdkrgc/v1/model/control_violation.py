@@ -51,9 +51,9 @@ class ControlViolation:
 
         The model defined in huaweicloud sdk
 
-        :param account_id: 控制策略纳管账号ID。
+        :param account_id: 纳管账号ID。
         :type account_id: str
-        :param account_name: 控制策略纳管账号名称。
+        :param account_name: 纳管账号名称。
         :type account_name: str
         :param display_name: 控制策略显示名称。
         :type display_name: str
@@ -122,7 +122,7 @@ class ControlViolation:
     def account_id(self):
         r"""Gets the account_id of this ControlViolation.
 
-        控制策略纳管账号ID。
+        纳管账号ID。
 
         :return: The account_id of this ControlViolation.
         :rtype: str
@@ -133,7 +133,7 @@ class ControlViolation:
     def account_id(self, account_id):
         r"""Sets the account_id of this ControlViolation.
 
-        控制策略纳管账号ID。
+        纳管账号ID。
 
         :param account_id: The account_id of this ControlViolation.
         :type account_id: str
@@ -144,7 +144,7 @@ class ControlViolation:
     def account_name(self):
         r"""Gets the account_name of this ControlViolation.
 
-        控制策略纳管账号名称。
+        纳管账号名称。
 
         :return: The account_name of this ControlViolation.
         :rtype: str
@@ -155,7 +155,7 @@ class ControlViolation:
     def account_name(self, account_name):
         r"""Sets the account_name of this ControlViolation.
 
-        控制策略纳管账号名称。
+        纳管账号名称。
 
         :param account_name: The account_name of this ControlViolation.
         :type account_name: str

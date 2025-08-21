@@ -18,27 +18,27 @@ class ListCertsRequest:
 
     openapi_types = {
         'cluster_id': 'str',
-        'start': 'str',
+        'offset': 'str',
         'limit': 'str',
         'certs_type': 'str'
     }
 
     attribute_map = {
         'cluster_id': 'cluster_id',
-        'start': 'start',
+        'offset': 'offset',
         'limit': 'limit',
         'certs_type': 'certsType'
     }
 
-    def __init__(self, cluster_id=None, start=None, limit=None, certs_type=None):
+    def __init__(self, cluster_id=None, offset=None, limit=None, certs_type=None):
         r"""ListCertsRequest
 
         The model defined in huaweicloud sdk
 
         :param cluster_id: 指定待查询的集群ID。
         :type cluster_id: str
-        :param start: 指定查询起始值，默认值为1，即从第1个证书开始查询。
-        :type start: str
+        :param offset: 指定查询起始值，默认值为1，即从第1个证书开始查询。
+        :type offset: str
         :param limit: 指定查询个数，默认值为10，即一次查询10个证书信息。
         :type limit: str
         :param certs_type: 证书类型。defaultCerts为默认证书类型，不指定查询证书类型默认查找自定义证书列表。
@@ -48,14 +48,14 @@ class ListCertsRequest:
         
 
         self._cluster_id = None
-        self._start = None
+        self._offset = None
         self._limit = None
         self._certs_type = None
         self.discriminator = None
 
         self.cluster_id = cluster_id
-        if start is not None:
-            self.start = start
+        if offset is not None:
+            self.offset = offset
         if limit is not None:
             self.limit = limit
         if certs_type is not None:
@@ -84,26 +84,26 @@ class ListCertsRequest:
         self._cluster_id = cluster_id
 
     @property
-    def start(self):
-        r"""Gets the start of this ListCertsRequest.
+    def offset(self):
+        r"""Gets the offset of this ListCertsRequest.
 
         指定查询起始值，默认值为1，即从第1个证书开始查询。
 
-        :return: The start of this ListCertsRequest.
+        :return: The offset of this ListCertsRequest.
         :rtype: str
         """
-        return self._start
+        return self._offset
 
-    @start.setter
-    def start(self, start):
-        r"""Sets the start of this ListCertsRequest.
+    @offset.setter
+    def offset(self, offset):
+        r"""Sets the offset of this ListCertsRequest.
 
         指定查询起始值，默认值为1，即从第1个证书开始查询。
 
-        :param start: The start of this ListCertsRequest.
-        :type start: str
+        :param offset: The offset of this ListCertsRequest.
+        :type offset: str
         """
-        self._start = start
+        self._offset = offset
 
     @property
     def limit(self):

@@ -50,7 +50,7 @@ class ShowManagedOrganizationalUnitResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param manage_account_id: 管理纳管账号ID。
+        :param manage_account_id: 管理员账号ID。
         :type manage_account_id: str
         :param organizational_unit_id: 注册OU ID。
         :type organizational_unit_id: str
@@ -64,11 +64,11 @@ class ShowManagedOrganizationalUnitResponse(SdkResponse):
         :type parent_organizational_unit_id: str
         :param parent_organizational_unit_name: 父注册OU名称。
         :type parent_organizational_unit_name: str
-        :param created_at: 组织里某个注册OU下的纳管账号被创建的时间。
+        :param created_at: 注册OU的创建时间。
         :type created_at: datetime
-        :param landing_zone_version: Landing Zone版本。
+        :param landing_zone_version: 注册OU的Landing Zone版本。
         :type landing_zone_version: str
-        :param updated_at: 组织里某个注册OU下的纳管账号最后一次更新的时间。
+        :param updated_at: 注册OU的更新时间。
         :type updated_at: datetime
         :param message: 错误信息描述。
         :type message: str
@@ -116,7 +116,7 @@ class ShowManagedOrganizationalUnitResponse(SdkResponse):
     def manage_account_id(self):
         r"""Gets the manage_account_id of this ShowManagedOrganizationalUnitResponse.
 
-        管理纳管账号ID。
+        管理员账号ID。
 
         :return: The manage_account_id of this ShowManagedOrganizationalUnitResponse.
         :rtype: str
@@ -127,7 +127,7 @@ class ShowManagedOrganizationalUnitResponse(SdkResponse):
     def manage_account_id(self, manage_account_id):
         r"""Sets the manage_account_id of this ShowManagedOrganizationalUnitResponse.
 
-        管理纳管账号ID。
+        管理员账号ID。
 
         :param manage_account_id: The manage_account_id of this ShowManagedOrganizationalUnitResponse.
         :type manage_account_id: str
@@ -266,7 +266,7 @@ class ShowManagedOrganizationalUnitResponse(SdkResponse):
     def created_at(self):
         r"""Gets the created_at of this ShowManagedOrganizationalUnitResponse.
 
-        组织里某个注册OU下的纳管账号被创建的时间。
+        注册OU的创建时间。
 
         :return: The created_at of this ShowManagedOrganizationalUnitResponse.
         :rtype: datetime
@@ -277,7 +277,7 @@ class ShowManagedOrganizationalUnitResponse(SdkResponse):
     def created_at(self, created_at):
         r"""Sets the created_at of this ShowManagedOrganizationalUnitResponse.
 
-        组织里某个注册OU下的纳管账号被创建的时间。
+        注册OU的创建时间。
 
         :param created_at: The created_at of this ShowManagedOrganizationalUnitResponse.
         :type created_at: datetime
@@ -288,7 +288,7 @@ class ShowManagedOrganizationalUnitResponse(SdkResponse):
     def landing_zone_version(self):
         r"""Gets the landing_zone_version of this ShowManagedOrganizationalUnitResponse.
 
-        Landing Zone版本。
+        注册OU的Landing Zone版本。
 
         :return: The landing_zone_version of this ShowManagedOrganizationalUnitResponse.
         :rtype: str
@@ -299,7 +299,7 @@ class ShowManagedOrganizationalUnitResponse(SdkResponse):
     def landing_zone_version(self, landing_zone_version):
         r"""Sets the landing_zone_version of this ShowManagedOrganizationalUnitResponse.
 
-        Landing Zone版本。
+        注册OU的Landing Zone版本。
 
         :param landing_zone_version: The landing_zone_version of this ShowManagedOrganizationalUnitResponse.
         :type landing_zone_version: str
@@ -310,7 +310,7 @@ class ShowManagedOrganizationalUnitResponse(SdkResponse):
     def updated_at(self):
         r"""Gets the updated_at of this ShowManagedOrganizationalUnitResponse.
 
-        组织里某个注册OU下的纳管账号最后一次更新的时间。
+        注册OU的更新时间。
 
         :return: The updated_at of this ShowManagedOrganizationalUnitResponse.
         :rtype: datetime
@@ -321,7 +321,7 @@ class ShowManagedOrganizationalUnitResponse(SdkResponse):
     def updated_at(self, updated_at):
         r"""Sets the updated_at of this ShowManagedOrganizationalUnitResponse.
 
-        组织里某个注册OU下的纳管账号最后一次更新的时间。
+        注册OU的更新时间。
 
         :param updated_at: The updated_at of this ShowManagedOrganizationalUnitResponse.
         :type updated_at: datetime

@@ -143,9 +143,9 @@ class VatInvoiceResult:
         :type type: str
         :param invoice_tag: 增值税发票左上角标志。取值包含：通行费、代开、成品油、收购、机动车、旅客运输服务。 当\&quot;advanced_mode\&quot;设置为\&quot;true\&quot;时才返回。 
         :type invoice_tag: str
-        :param sum_amount: 小计金额，当传入多页PDF时返回此字段。 
+        :param sum_amount: 小计金额，当传入为全电发票时返回此字段。 
         :type sum_amount: str
-        :param sum_tax: 小计税额，当传入多页PDF时返回此字段。 
+        :param sum_tax: 小计税额，当传入为全电发票时返回此字段。 
         :type sum_tax: str
         :param serial_number: 发票联次。  当\&quot;advanced_mode\&quot;设置为\&quot;true\&quot;时才返回。 
         :type serial_number: str
@@ -489,7 +489,7 @@ class VatInvoiceResult:
     def sum_amount(self):
         r"""Gets the sum_amount of this VatInvoiceResult.
 
-        小计金额，当传入多页PDF时返回此字段。 
+        小计金额，当传入为全电发票时返回此字段。 
 
         :return: The sum_amount of this VatInvoiceResult.
         :rtype: str
@@ -500,7 +500,7 @@ class VatInvoiceResult:
     def sum_amount(self, sum_amount):
         r"""Sets the sum_amount of this VatInvoiceResult.
 
-        小计金额，当传入多页PDF时返回此字段。 
+        小计金额，当传入为全电发票时返回此字段。 
 
         :param sum_amount: The sum_amount of this VatInvoiceResult.
         :type sum_amount: str
@@ -511,7 +511,7 @@ class VatInvoiceResult:
     def sum_tax(self):
         r"""Gets the sum_tax of this VatInvoiceResult.
 
-        小计税额，当传入多页PDF时返回此字段。 
+        小计税额，当传入为全电发票时返回此字段。 
 
         :return: The sum_tax of this VatInvoiceResult.
         :rtype: str
@@ -522,7 +522,7 @@ class VatInvoiceResult:
     def sum_tax(self, sum_tax):
         r"""Sets the sum_tax of this VatInvoiceResult.
 
-        小计税额，当传入多页PDF时返回此字段。 
+        小计税额，当传入为全电发票时返回此字段。 
 
         :param sum_tax: The sum_tax of this VatInvoiceResult.
         :type sum_tax: str

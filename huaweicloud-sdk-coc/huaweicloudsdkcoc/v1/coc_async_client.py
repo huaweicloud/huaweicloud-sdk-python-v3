@@ -6037,9 +6037,9 @@ class CocAsyncClient(Client):
         return http_info
 
     def batch_create_application_view_async(self, request):
-        r"""批量创建应用视图
+        r"""批量创建应用，分组，组件
 
-        批量创建应用视图
+        批量创建应用，分组，组件。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -6279,6 +6279,147 @@ class CocAsyncClient(Client):
 
         return http_info
 
+    def count_multi_cloud_resources_async(self, request):
+        r"""查询用户在云厂商的资源总数
+
+        查询用户在云厂商（阿里云、AWS、Azure和HCS）的资源总数。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CountMultiCloudResources
+        :type request: :class:`huaweicloudsdkcoc.v1.CountMultiCloudResourcesRequest`
+        :rtype: :class:`huaweicloudsdkcoc.v1.CountMultiCloudResourcesResponse`
+        """
+        http_info = self._count_multi_cloud_resources_http_info(request)
+        return self._call_api(**http_info)
+
+    def count_multi_cloud_resources_async_invoker(self, request):
+        http_info = self._count_multi_cloud_resources_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _count_multi_cloud_resources_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/multicloud-resources/count",
+            "request_type": request.__class__.__name__,
+            "response_type": "CountMultiCloudResourcesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'vendor' in local_var_params:
+            query_params.append(('vendor', local_var_params['vendor']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'resource_id_list' in local_var_params:
+            query_params.append(('resource_id_list', local_var_params['resource_id_list']))
+            collection_formats['resource_id_list'] = 'csv'
+        if 'name_list' in local_var_params:
+            query_params.append(('name_list', local_var_params['name_list']))
+            collection_formats['name_list'] = 'csv'
+        if 'region_id_list' in local_var_params:
+            query_params.append(('region_id_list', local_var_params['region_id_list']))
+            collection_formats['region_id_list'] = 'csv'
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def sync_multi_cloud_resource_async(self, request):
+        r"""手动从云厂商同步用户资源
+
+        手动从云厂商同步用户资源。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for SyncMultiCloudResource
+        :type request: :class:`huaweicloudsdkcoc.v1.SyncMultiCloudResourceRequest`
+        :rtype: :class:`huaweicloudsdkcoc.v1.SyncMultiCloudResourceResponse`
+        """
+        http_info = self._sync_multi_cloud_resource_http_info(request)
+        return self._call_api(**http_info)
+
+    def sync_multi_cloud_resource_async_invoker(self, request):
+        http_info = self._sync_multi_cloud_resource_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _sync_multi_cloud_resource_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/multicloud-resources/sync",
+            "request_type": request.__class__.__name__,
+            "response_type": "SyncMultiCloudResourceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def count_multi_resources_async(self, request):
         r"""查询用户各种资源总数
 
@@ -6350,31 +6491,34 @@ class CocAsyncClient(Client):
 
         return http_info
 
-    def list_resource_async(self, request):
+    def list_resources_async(self, request):
         r"""查询用户所有资源
 
-        查询用户所有资源
+        查询租户所有资源：
+         - 查询租户所有资源等相关信息，便于租户详细了解资源总体情况。
+         - 请求参数provider（云服务名称），type（云资源类型），limit（查询条数）必填，单次最大查询条数：500。
+         - 返回信息包括：资源ID，资源名称，云服务名称，资源类型，项目ID，租户ID，区域ID，企业项目ID，资源标签，资源详细属性，资源ingest属性，uniagentID，uniagent状态，是否托管，是否可运维。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
 
-        :param request: Request instance for ListResource
-        :type request: :class:`huaweicloudsdkcoc.v1.ListResourceRequest`
-        :rtype: :class:`huaweicloudsdkcoc.v1.ListResourceResponse`
+        :param request: Request instance for ListResources
+        :type request: :class:`huaweicloudsdkcoc.v1.ListResourcesRequest`
+        :rtype: :class:`huaweicloudsdkcoc.v1.ListResourcesResponse`
         """
-        http_info = self._list_resource_http_info(request)
+        http_info = self._list_resources_http_info(request)
         return self._call_api(**http_info)
 
-    def list_resource_async_invoker(self, request):
-        http_info = self._list_resource_http_info(request)
+    def list_resources_async_invoker(self, request):
+        http_info = self._list_resources_http_info(request)
         return AsyncInvoker(self, http_info)
 
-    def _list_resource_http_info(self, request):
+    def _list_resources_http_info(self, request):
         http_info = {
             "method": "GET",
             "resource_path": "/v1/resources",
             "request_type": request.__class__.__name__,
-            "response_type": "ListResourceResponse"
+            "response_type": "ListResourcesResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -6397,6 +6541,9 @@ class CocAsyncClient(Client):
         if 'resource_id_list' in local_var_params:
             query_params.append(('resource_id_list', local_var_params['resource_id_list']))
             collection_formats['resource_id_list'] = 'csv'
+        if 'ip_list' in local_var_params:
+            query_params.append(('ip_list', local_var_params['ip_list']))
+            collection_formats['ip_list'] = 'csv'
         if 'name' in local_var_params:
             query_params.append(('name', local_var_params['name']))
         if 'region_id' in local_var_params:
@@ -6433,6 +6580,28 @@ class CocAsyncClient(Client):
             query_params.append(('ep_id', local_var_params['ep_id']))
         if 'is_delegated' in local_var_params:
             query_params.append(('is_delegated', local_var_params['is_delegated']))
+        if 'is_collected' in local_var_params:
+            query_params.append(('is_collected', local_var_params['is_collected']))
+        if 'flavor_name' in local_var_params:
+            query_params.append(('flavor_name', local_var_params['flavor_name']))
+        if 'charging_mode' in local_var_params:
+            query_params.append(('charging_mode', local_var_params['charging_mode']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'order_field' in local_var_params:
+            query_params.append(('order_field', local_var_params['order_field']))
+        if 'direction' in local_var_params:
+            query_params.append(('direction', local_var_params['direction']))
+        if 'show_associated_groups' in local_var_params:
+            query_params.append(('show_associated_groups', local_var_params['show_associated_groups']))
+        if 'operable' in local_var_params:
+            query_params.append(('operable', local_var_params['operable']))
+        if 'create_since' in local_var_params:
+            query_params.append(('create_since', local_var_params['create_since']))
+        if 'create_until' in local_var_params:
+            query_params.append(('create_until', local_var_params['create_until']))
 
         header_params = {}
 

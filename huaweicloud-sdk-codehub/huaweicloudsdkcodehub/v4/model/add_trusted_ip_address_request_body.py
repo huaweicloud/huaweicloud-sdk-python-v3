@@ -41,19 +41,19 @@ class AddTrustedIpAddressRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param ip_type: 格式类型，指定ip，ip范围，CIDR
+        :param ip_type: **参数解释：** 格式类型。 - 0，表示指定ip。 - 1，表示ip范围。 - 2，表示CIDR。
         :type ip_type: int
-        :param ip_start: 起始ip
+        :param ip_start: **参数解释：** 起始ip。
         :type ip_start: str
-        :param ip_end: 结束ip
+        :param ip_end: **参数解释：** 结束ip。
         :type ip_end: str
-        :param view_flag: 是否允许访问代码仓库
+        :param view_flag: **参数解释：** 是否允许访问代码仓库。 - 0，表示禁止访问。 - 1，表示允许访问。
         :type view_flag: int
-        :param download_flag: 是否允许下载代码
+        :param download_flag: **参数解释：** 是否允许下载代码。 - 0，表示禁止下载。 - 1，表示允许下载。
         :type download_flag: int
-        :param upload_flag: 是否允许提交代码
+        :param upload_flag: **参数解释：** 是否允许提交代码。 - 0，表示禁止提交。 - 1，表示允许提交。
         :type upload_flag: int
-        :param remark: 备注
+        :param remark: **参数解释：** 备注。 **取值范围：** 字符串长度不少于0，不超过200。            
         :type remark: str
         """
         
@@ -87,7 +87,7 @@ class AddTrustedIpAddressRequestBody:
     def ip_type(self):
         r"""Gets the ip_type of this AddTrustedIpAddressRequestBody.
 
-        格式类型，指定ip，ip范围，CIDR
+        **参数解释：** 格式类型。 - 0，表示指定ip。 - 1，表示ip范围。 - 2，表示CIDR。
 
         :return: The ip_type of this AddTrustedIpAddressRequestBody.
         :rtype: int
@@ -98,7 +98,7 @@ class AddTrustedIpAddressRequestBody:
     def ip_type(self, ip_type):
         r"""Sets the ip_type of this AddTrustedIpAddressRequestBody.
 
-        格式类型，指定ip，ip范围，CIDR
+        **参数解释：** 格式类型。 - 0，表示指定ip。 - 1，表示ip范围。 - 2，表示CIDR。
 
         :param ip_type: The ip_type of this AddTrustedIpAddressRequestBody.
         :type ip_type: int
@@ -109,7 +109,7 @@ class AddTrustedIpAddressRequestBody:
     def ip_start(self):
         r"""Gets the ip_start of this AddTrustedIpAddressRequestBody.
 
-        起始ip
+        **参数解释：** 起始ip。
 
         :return: The ip_start of this AddTrustedIpAddressRequestBody.
         :rtype: str
@@ -120,7 +120,7 @@ class AddTrustedIpAddressRequestBody:
     def ip_start(self, ip_start):
         r"""Sets the ip_start of this AddTrustedIpAddressRequestBody.
 
-        起始ip
+        **参数解释：** 起始ip。
 
         :param ip_start: The ip_start of this AddTrustedIpAddressRequestBody.
         :type ip_start: str
@@ -131,7 +131,7 @@ class AddTrustedIpAddressRequestBody:
     def ip_end(self):
         r"""Gets the ip_end of this AddTrustedIpAddressRequestBody.
 
-        结束ip
+        **参数解释：** 结束ip。
 
         :return: The ip_end of this AddTrustedIpAddressRequestBody.
         :rtype: str
@@ -142,7 +142,7 @@ class AddTrustedIpAddressRequestBody:
     def ip_end(self, ip_end):
         r"""Sets the ip_end of this AddTrustedIpAddressRequestBody.
 
-        结束ip
+        **参数解释：** 结束ip。
 
         :param ip_end: The ip_end of this AddTrustedIpAddressRequestBody.
         :type ip_end: str
@@ -153,7 +153,7 @@ class AddTrustedIpAddressRequestBody:
     def view_flag(self):
         r"""Gets the view_flag of this AddTrustedIpAddressRequestBody.
 
-        是否允许访问代码仓库
+        **参数解释：** 是否允许访问代码仓库。 - 0，表示禁止访问。 - 1，表示允许访问。
 
         :return: The view_flag of this AddTrustedIpAddressRequestBody.
         :rtype: int
@@ -164,7 +164,7 @@ class AddTrustedIpAddressRequestBody:
     def view_flag(self, view_flag):
         r"""Sets the view_flag of this AddTrustedIpAddressRequestBody.
 
-        是否允许访问代码仓库
+        **参数解释：** 是否允许访问代码仓库。 - 0，表示禁止访问。 - 1，表示允许访问。
 
         :param view_flag: The view_flag of this AddTrustedIpAddressRequestBody.
         :type view_flag: int
@@ -175,7 +175,7 @@ class AddTrustedIpAddressRequestBody:
     def download_flag(self):
         r"""Gets the download_flag of this AddTrustedIpAddressRequestBody.
 
-        是否允许下载代码
+        **参数解释：** 是否允许下载代码。 - 0，表示禁止下载。 - 1，表示允许下载。
 
         :return: The download_flag of this AddTrustedIpAddressRequestBody.
         :rtype: int
@@ -186,7 +186,7 @@ class AddTrustedIpAddressRequestBody:
     def download_flag(self, download_flag):
         r"""Sets the download_flag of this AddTrustedIpAddressRequestBody.
 
-        是否允许下载代码
+        **参数解释：** 是否允许下载代码。 - 0，表示禁止下载。 - 1，表示允许下载。
 
         :param download_flag: The download_flag of this AddTrustedIpAddressRequestBody.
         :type download_flag: int
@@ -197,7 +197,7 @@ class AddTrustedIpAddressRequestBody:
     def upload_flag(self):
         r"""Gets the upload_flag of this AddTrustedIpAddressRequestBody.
 
-        是否允许提交代码
+        **参数解释：** 是否允许提交代码。 - 0，表示禁止提交。 - 1，表示允许提交。
 
         :return: The upload_flag of this AddTrustedIpAddressRequestBody.
         :rtype: int
@@ -208,7 +208,7 @@ class AddTrustedIpAddressRequestBody:
     def upload_flag(self, upload_flag):
         r"""Sets the upload_flag of this AddTrustedIpAddressRequestBody.
 
-        是否允许提交代码
+        **参数解释：** 是否允许提交代码。 - 0，表示禁止提交。 - 1，表示允许提交。
 
         :param upload_flag: The upload_flag of this AddTrustedIpAddressRequestBody.
         :type upload_flag: int
@@ -219,7 +219,7 @@ class AddTrustedIpAddressRequestBody:
     def remark(self):
         r"""Gets the remark of this AddTrustedIpAddressRequestBody.
 
-        备注
+        **参数解释：** 备注。 **取值范围：** 字符串长度不少于0，不超过200。            
 
         :return: The remark of this AddTrustedIpAddressRequestBody.
         :rtype: str
@@ -230,7 +230,7 @@ class AddTrustedIpAddressRequestBody:
     def remark(self, remark):
         r"""Sets the remark of this AddTrustedIpAddressRequestBody.
 
-        备注
+        **参数解释：** 备注。 **取值范围：** 字符串长度不少于0，不超过200。            
 
         :param remark: The remark of this AddTrustedIpAddressRequestBody.
         :type remark: str

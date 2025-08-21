@@ -1,0 +1,44 @@
+# coding: utf-8
+
+from __future__ import absolute_import
+
+# import models into model package
+from huaweicloudsdkdcos.v1.model.access_white_list import AccessWhiteList
+from huaweicloudsdkdcos.v1.model.asset import Asset
+from huaweicloudsdkdcos.v1.model.asset_info import AssetInfo
+from huaweicloudsdkdcos.v1.model.asset_list_request_body import AssetListRequestBody
+from huaweicloudsdkdcos.v1.model.asset_service_details import AssetServiceDetails
+from huaweicloudsdkdcos.v1.model.contact_information import ContactInformation
+from huaweicloudsdkdcos.v1.model.contact_service_details import ContactServiceDetails
+from huaweicloudsdkdcos.v1.model.default_sop import DefaultSop
+from huaweicloudsdkdcos.v1.model.delivery_info import DeliveryInfo
+from huaweicloudsdkdcos.v1.model.device_service_details import DeviceServiceDetails
+from huaweicloudsdkdcos.v1.model.field_entity import FieldEntity
+from huaweicloudsdkdcos.v1.model.list_order_request import ListOrderRequest
+from huaweicloudsdkdcos.v1.model.list_order_response import ListOrderResponse
+from huaweicloudsdkdcos.v1.model.operation_object import OperationObject
+from huaweicloudsdkdcos.v1.model.order_catalogue import OrderCatalogue
+from huaweicloudsdkdcos.v1.model.order_item import OrderItem
+from huaweicloudsdkdcos.v1.model.order_log import OrderLog
+from huaweicloudsdkdcos.v1.model.order_service_details import OrderServiceDetails
+from huaweicloudsdkdcos.v1.model.order_verification import OrderVerification
+from huaweicloudsdkdcos.v1.model.pagination import Pagination
+from huaweicloudsdkdcos.v1.model.save_order_body import SaveOrderBody
+from huaweicloudsdkdcos.v1.model.save_order_request import SaveOrderRequest
+from huaweicloudsdkdcos.v1.model.save_order_response import SaveOrderResponse
+from huaweicloudsdkdcos.v1.model.show_order_catalogue_request import ShowOrderCatalogueRequest
+from huaweicloudsdkdcos.v1.model.show_order_catalogue_response import ShowOrderCatalogueResponse
+from huaweicloudsdkdcos.v1.model.show_order_information_request import ShowOrderInformationRequest
+from huaweicloudsdkdcos.v1.model.show_order_information_response import ShowOrderInformationResponse
+from huaweicloudsdkdcos.v1.model.show_order_request import ShowOrderRequest
+from huaweicloudsdkdcos.v1.model.show_order_response import ShowOrderResponse
+from huaweicloudsdkdcos.v1.model.show_page_asset_list_result_request import ShowPageAssetListResultRequest
+from huaweicloudsdkdcos.v1.model.show_page_asset_list_result_response import ShowPageAssetListResultResponse
+from huaweicloudsdkdcos.v1.model.upload_file_info import UploadFileInfo
+from huaweicloudsdkdcos.v1.model.upload_file_request import UploadFileRequest
+from huaweicloudsdkdcos.v1.model.upload_file_request_body import UploadFileRequestBody
+from huaweicloudsdkdcos.v1.model.upload_file_response import UploadFileResponse
+from huaweicloudsdkdcos.v1.model.user_phone import UserPhone
+from huaweicloudsdkdcos.v1.model.verify_order_request import VerifyOrderRequest
+from huaweicloudsdkdcos.v1.model.verify_order_request_body import VerifyOrderRequestBody
+from huaweicloudsdkdcos.v1.model.verify_order_response import VerifyOrderResponse

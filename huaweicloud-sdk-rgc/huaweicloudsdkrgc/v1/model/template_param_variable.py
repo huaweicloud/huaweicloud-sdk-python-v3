@@ -53,7 +53,7 @@ class TemplateParamVariable:
         :type sensitive: bool
         :param type: 变量类型。
         :type type: str
-        :param validations: 
+        :param validations: 模板的部署参数变量的校验规则。
         :type validations: list[:class:`huaweicloudsdkrgc.v1.TemplateParamVariableValidation`]
         """
         
@@ -219,6 +219,8 @@ class TemplateParamVariable:
     def validations(self):
         r"""Gets the validations of this TemplateParamVariable.
 
+        模板的部署参数变量的校验规则。
+
         :return: The validations of this TemplateParamVariable.
         :rtype: list[:class:`huaweicloudsdkrgc.v1.TemplateParamVariableValidation`]
         """
@@ -227,6 +229,8 @@ class TemplateParamVariable:
     @validations.setter
     def validations(self, validations):
         r"""Sets the validations of this TemplateParamVariable.
+
+        模板的部署参数变量的校验规则。
 
         :param validations: The validations of this TemplateParamVariable.
         :type validations: list[:class:`huaweicloudsdkrgc.v1.TemplateParamVariableValidation`]

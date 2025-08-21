@@ -31,9 +31,9 @@ class BatchCreateApplicationViewRequestBodyComponentList:
 
         The model defined in huaweicloud sdk
 
-        :param name: 名称
+        :param name: **参数解释：** 组件名称。 **约束限制：** 不涉及。 **取值范围：** 由中文、英文字母、数字、中划线、下划线组成，长度在3~50个字符之间。 **默认取值：** 不涉及。
         :type name: str
-        :param parent_name: 父节点code
+        :param parent_name: **参数解释：** 父节点名称。 **约束限制：** 不涉及。 **取值范围：** 字符串，长度3到50个字符。 **默认取值：** 不涉及。
         :type parent_name: str
         """
         
@@ -52,7 +52,7 @@ class BatchCreateApplicationViewRequestBodyComponentList:
     def name(self):
         r"""Gets the name of this BatchCreateApplicationViewRequestBodyComponentList.
 
-        名称
+        **参数解释：** 组件名称。 **约束限制：** 不涉及。 **取值范围：** 由中文、英文字母、数字、中划线、下划线组成，长度在3~50个字符之间。 **默认取值：** 不涉及。
 
         :return: The name of this BatchCreateApplicationViewRequestBodyComponentList.
         :rtype: str
@@ -63,7 +63,7 @@ class BatchCreateApplicationViewRequestBodyComponentList:
     def name(self, name):
         r"""Sets the name of this BatchCreateApplicationViewRequestBodyComponentList.
 
-        名称
+        **参数解释：** 组件名称。 **约束限制：** 不涉及。 **取值范围：** 由中文、英文字母、数字、中划线、下划线组成，长度在3~50个字符之间。 **默认取值：** 不涉及。
 
         :param name: The name of this BatchCreateApplicationViewRequestBodyComponentList.
         :type name: str
@@ -74,7 +74,7 @@ class BatchCreateApplicationViewRequestBodyComponentList:
     def parent_name(self):
         r"""Gets the parent_name of this BatchCreateApplicationViewRequestBodyComponentList.
 
-        父节点code
+        **参数解释：** 父节点名称。 **约束限制：** 不涉及。 **取值范围：** 字符串，长度3到50个字符。 **默认取值：** 不涉及。
 
         :return: The parent_name of this BatchCreateApplicationViewRequestBodyComponentList.
         :rtype: str
@@ -85,7 +85,7 @@ class BatchCreateApplicationViewRequestBodyComponentList:
     def parent_name(self, parent_name):
         r"""Sets the parent_name of this BatchCreateApplicationViewRequestBodyComponentList.
 
-        父节点code
+        **参数解释：** 父节点名称。 **约束限制：** 不涉及。 **取值范围：** 字符串，长度3到50个字符。 **默认取值：** 不涉及。
 
         :param parent_name: The parent_name of this BatchCreateApplicationViewRequestBodyComponentList.
         :type parent_name: str

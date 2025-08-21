@@ -102,6 +102,75 @@ class CssAsyncClient(Client):
 
         return http_info
 
+    def change_cluster_subnet_async(self, request):
+        r"""切换集群子网
+
+        该接口可以在集群创建成功后，切换集群子网，扩容等添加节点场景下使用新子网绑定新增节点。
+        
+        &gt;同VPC下的子网默认网络联通，请确保新子网与您业务系统的网络连通性。另：开启了自动创建ipv6地址的集群只支持切换到开启了ipv6的新子网。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ChangeClusterSubnet
+        :type request: :class:`huaweicloudsdkcss.v1.ChangeClusterSubnetRequest`
+        :rtype: :class:`huaweicloudsdkcss.v1.ChangeClusterSubnetResponse`
+        """
+        http_info = self._change_cluster_subnet_http_info(request)
+        return self._call_api(**http_info)
+
+    def change_cluster_subnet_async_invoker(self, request):
+        http_info = self._change_cluster_subnet_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _change_cluster_subnet_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/subnet/change",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangeClusterSubnetResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def change_mode_async(self, request):
         r"""安全模式修改
 
@@ -1342,8 +1411,8 @@ class CssAsyncClient(Client):
         query_params = []
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
-        if 'start' in local_var_params:
-            query_params.append(('start', local_var_params['start']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
 
         header_params = {}
 
@@ -1407,8 +1476,8 @@ class CssAsyncClient(Client):
         path_params = {}
 
         query_params = []
-        if 'start' in local_var_params:
-            query_params.append(('start', local_var_params['start']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
         if 'datastore_type' in local_var_params:
@@ -1738,8 +1807,8 @@ class CssAsyncClient(Client):
             path_params['upgrade_type'] = local_var_params['upgrade_type']
 
         query_params = []
-        if 'start' in local_var_params:
-            query_params.append(('start', local_var_params['start']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
 
@@ -1807,8 +1876,8 @@ class CssAsyncClient(Client):
             path_params['cluster_id'] = local_var_params['cluster_id']
 
         query_params = []
-        if 'start' in local_var_params:
-            query_params.append(('start', local_var_params['start']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
 
@@ -2071,8 +2140,8 @@ class CssAsyncClient(Client):
             path_params['cluster_id'] = local_var_params['cluster_id']
 
         query_params = []
-        if 'start' in local_var_params:
-            query_params.append(('start', local_var_params['start']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
 
@@ -2869,8 +2938,8 @@ class CssAsyncClient(Client):
             path_params['cluster_id'] = local_var_params['cluster_id']
 
         query_params = []
-        if 'start' in local_var_params:
-            query_params.append(('start', local_var_params['start']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
 
@@ -3637,7 +3706,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def update_az_by_instance_type_async(self, request):
-        r"""切换集群实例AZ
+        r"""切换集群实例可用区
 
         该接口通过指定节点类型切换AZ。
         
@@ -5032,8 +5101,8 @@ class CssAsyncClient(Client):
             path_params['cluster_id'] = local_var_params['cluster_id']
 
         query_params = []
-        if 'start' in local_var_params:
-            query_params.append(('start', local_var_params['start']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
         if 'action_mode' in local_var_params:
@@ -5769,8 +5838,8 @@ class CssAsyncClient(Client):
             path_params['cluster_id'] = local_var_params['cluster_id']
 
         query_params = []
-        if 'start' in local_var_params:
-            query_params.append(('start', local_var_params['start']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
 
@@ -5838,8 +5907,8 @@ class CssAsyncClient(Client):
             path_params['cluster_id'] = local_var_params['cluster_id']
 
         query_params = []
-        if 'start' in local_var_params:
-            query_params.append(('start', local_var_params['start']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
         if 'certs_type' in local_var_params:
@@ -5909,8 +5978,8 @@ class CssAsyncClient(Client):
             path_params['cluster_id'] = local_var_params['cluster_id']
 
         query_params = []
-        if 'start' in local_var_params:
-            query_params.append(('start', local_var_params['start']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
 
@@ -5978,8 +6047,8 @@ class CssAsyncClient(Client):
             path_params['cluster_id'] = local_var_params['cluster_id']
 
         query_params = []
-        if 'start' in local_var_params:
-            query_params.append(('start', local_var_params['start']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
 

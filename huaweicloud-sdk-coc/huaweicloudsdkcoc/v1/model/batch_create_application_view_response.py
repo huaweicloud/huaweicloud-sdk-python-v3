@@ -18,47 +18,109 @@ class BatchCreateApplicationViewResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'object'
+        'application_ids': 'list[str]',
+        'component_ids': 'list[str]',
+        'group_ids': 'list[str]'
     }
 
     attribute_map = {
-        'body': 'body'
+        'application_ids': 'application_ids',
+        'component_ids': 'component_ids',
+        'group_ids': 'group_ids'
     }
 
-    def __init__(self, body=None):
+    def __init__(self, application_ids=None, component_ids=None, group_ids=None):
         r"""BatchCreateApplicationViewResponse
 
         The model defined in huaweicloud sdk
 
-        :param body: 
-        :type body: object
+        :param application_ids: **参数解释：** 应用id列表。 **取值范围：** 不涉及。
+        :type application_ids: list[str]
+        :param component_ids: **参数解释：** 组件id列表。 **取值范围：** 不涉及。
+        :type component_ids: list[str]
+        :param group_ids: **参数解释：** 分组id列表。 **取值范围：** 不涉及。
+        :type group_ids: list[str]
         """
         
         super(BatchCreateApplicationViewResponse, self).__init__()
 
-        self._body = None
+        self._application_ids = None
+        self._component_ids = None
+        self._group_ids = None
         self.discriminator = None
 
-        if body is not None:
-            self.body = body
+        if application_ids is not None:
+            self.application_ids = application_ids
+        if component_ids is not None:
+            self.component_ids = component_ids
+        if group_ids is not None:
+            self.group_ids = group_ids
 
     @property
-    def body(self):
-        r"""Gets the body of this BatchCreateApplicationViewResponse.
+    def application_ids(self):
+        r"""Gets the application_ids of this BatchCreateApplicationViewResponse.
 
-        :return: The body of this BatchCreateApplicationViewResponse.
-        :rtype: object
+        **参数解释：** 应用id列表。 **取值范围：** 不涉及。
+
+        :return: The application_ids of this BatchCreateApplicationViewResponse.
+        :rtype: list[str]
         """
-        return self._body
+        return self._application_ids
 
-    @body.setter
-    def body(self, body):
-        r"""Sets the body of this BatchCreateApplicationViewResponse.
+    @application_ids.setter
+    def application_ids(self, application_ids):
+        r"""Sets the application_ids of this BatchCreateApplicationViewResponse.
 
-        :param body: The body of this BatchCreateApplicationViewResponse.
-        :type body: object
+        **参数解释：** 应用id列表。 **取值范围：** 不涉及。
+
+        :param application_ids: The application_ids of this BatchCreateApplicationViewResponse.
+        :type application_ids: list[str]
         """
-        self._body = body
+        self._application_ids = application_ids
+
+    @property
+    def component_ids(self):
+        r"""Gets the component_ids of this BatchCreateApplicationViewResponse.
+
+        **参数解释：** 组件id列表。 **取值范围：** 不涉及。
+
+        :return: The component_ids of this BatchCreateApplicationViewResponse.
+        :rtype: list[str]
+        """
+        return self._component_ids
+
+    @component_ids.setter
+    def component_ids(self, component_ids):
+        r"""Sets the component_ids of this BatchCreateApplicationViewResponse.
+
+        **参数解释：** 组件id列表。 **取值范围：** 不涉及。
+
+        :param component_ids: The component_ids of this BatchCreateApplicationViewResponse.
+        :type component_ids: list[str]
+        """
+        self._component_ids = component_ids
+
+    @property
+    def group_ids(self):
+        r"""Gets the group_ids of this BatchCreateApplicationViewResponse.
+
+        **参数解释：** 分组id列表。 **取值范围：** 不涉及。
+
+        :return: The group_ids of this BatchCreateApplicationViewResponse.
+        :rtype: list[str]
+        """
+        return self._group_ids
+
+    @group_ids.setter
+    def group_ids(self, group_ids):
+        r"""Sets the group_ids of this BatchCreateApplicationViewResponse.
+
+        **参数解释：** 分组id列表。 **取值范围：** 不涉及。
+
+        :param group_ids: The group_ids of this BatchCreateApplicationViewResponse.
+        :type group_ids: list[str]
+        """
+        self._group_ids = group_ids
 
     def to_dict(self):
         """Returns the model properties as a dict"""

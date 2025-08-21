@@ -18,8 +18,8 @@ class ShowAccessTopRequest:
 
     openapi_types = {
         'fw_instance_id': 'str',
-        'direction': 'str',
         'range': 'int',
+        'direction': 'str',
         'start_time': 'int',
         'end_time': 'int',
         'vgw_id': 'list[str]',
@@ -30,8 +30,8 @@ class ShowAccessTopRequest:
 
     attribute_map = {
         'fw_instance_id': 'fw_instance_id',
-        'direction': 'direction',
         'range': 'range',
+        'direction': 'direction',
         'start_time': 'start_time',
         'end_time': 'end_time',
         'vgw_id': 'vgw_id',
@@ -40,22 +40,22 @@ class ShowAccessTopRequest:
         'rule_id': 'rule_id'
     }
 
-    def __init__(self, fw_instance_id=None, direction=None, range=None, start_time=None, end_time=None, vgw_id=None, log_type=None, item=None, rule_id=None):
+    def __init__(self, fw_instance_id=None, range=None, direction=None, start_time=None, end_time=None, vgw_id=None, log_type=None, item=None, rule_id=None):
         r"""ShowAccessTopRequest
 
         The model defined in huaweicloud sdk
 
-        :param fw_instance_id: **参数解释**： 防火墙ID，用户创建防火墙实例后产生的唯一ID，配置后可区分不同防火墙，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取 **约束限制**： 不涉及 **取值范围**： 32位UUID **默认取值**： 不涉及 
+        :param fw_instance_id: **参数解释**： 防火墙ID，用户创建防火墙实例后产生的唯一ID，配置后可区分不同防火墙，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取 **约束限制**： 不涉及 **取值范围**： 32位UUID **默认取值**： 不涉及
         :type fw_instance_id: str
-        :param direction: **参数解释**： 会话方向 **约束限制**： 不涉及 **取值范围**： in2out为出云方向 out2in为入云方向 **默认取值**： 不涉及 
-        :type direction: str
-        :param range: **参数解释**： 时间范围  **约束限制**： 不涉及 **取值范围**： 0为近一时 1近一天 2近七天   **默认取值**： 不涉及 
+        :param range: **参数解释**： 时间范围  **约束限制**： 不涉及 **取值范围**： 0为近一时 1近一天 2近七天   **默认取值**： 不涉及
         :type range: int
-        :param start_time: **参数解释**： 开始时间 **约束限制**： 不涉及 **取值范围**： 毫秒级时间戳 **默认取值**： 不涉及 
+        :param direction: **参数解释**： 会话方向 **约束限制**： 不涉及 **取值范围**： in2out为出云方向 out2in为入云方向 **默认取值**： 不涉及
+        :type direction: str
+        :param start_time: **参数解释**： 开始时间 **约束限制**： 不涉及 **取值范围**： 毫秒级时间戳 **默认取值**： 不涉及
         :type start_time: int
-        :param end_time: **参数解释**： 结束时间 **约束限制**： 不涉及 **取值范围**： 毫秒级时间戳 **默认取值**： 不涉及 
+        :param end_time: **参数解释**： 结束时间 **约束限制**： 不涉及 **取值范围**： 毫秒级时间戳 **默认取值**： 不涉及
         :type end_time: int
-        :param vgw_id: **参数解释**： VGW ID **约束限制**： 不涉及 **取值范围**： 32位UUID **默认取值**： 不涉及 
+        :param vgw_id: **参数解释**： VGW ID **约束限制**： 不涉及 **取值范围**： 32位UUID **默认取值**： 不涉及
         :type vgw_id: list[str]
         :param log_type: **参数解释**： 日志类型 **约束限制**： 不涉及 **取值范围**： internet为南北向日志、nat为nat场景日志，vpc为东西向日志，vgw为vgw场景日志 **默认取值**： 不涉及
         :type log_type: str
@@ -68,8 +68,8 @@ class ShowAccessTopRequest:
         
 
         self._fw_instance_id = None
-        self._direction = None
         self._range = None
+        self._direction = None
         self._start_time = None
         self._end_time = None
         self._vgw_id = None
@@ -79,10 +79,10 @@ class ShowAccessTopRequest:
         self.discriminator = None
 
         self.fw_instance_id = fw_instance_id
-        if direction is not None:
-            self.direction = direction
         if range is not None:
             self.range = range
+        if direction is not None:
+            self.direction = direction
         if start_time is not None:
             self.start_time = start_time
         if end_time is not None:
@@ -99,7 +99,7 @@ class ShowAccessTopRequest:
     def fw_instance_id(self):
         r"""Gets the fw_instance_id of this ShowAccessTopRequest.
 
-        **参数解释**： 防火墙ID，用户创建防火墙实例后产生的唯一ID，配置后可区分不同防火墙，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取 **约束限制**： 不涉及 **取值范围**： 32位UUID **默认取值**： 不涉及 
+        **参数解释**： 防火墙ID，用户创建防火墙实例后产生的唯一ID，配置后可区分不同防火墙，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取 **约束限制**： 不涉及 **取值范围**： 32位UUID **默认取值**： 不涉及
 
         :return: The fw_instance_id of this ShowAccessTopRequest.
         :rtype: str
@@ -110,7 +110,7 @@ class ShowAccessTopRequest:
     def fw_instance_id(self, fw_instance_id):
         r"""Sets the fw_instance_id of this ShowAccessTopRequest.
 
-        **参数解释**： 防火墙ID，用户创建防火墙实例后产生的唯一ID，配置后可区分不同防火墙，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取 **约束限制**： 不涉及 **取值范围**： 32位UUID **默认取值**： 不涉及 
+        **参数解释**： 防火墙ID，用户创建防火墙实例后产生的唯一ID，配置后可区分不同防火墙，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取 **约束限制**： 不涉及 **取值范围**： 32位UUID **默认取值**： 不涉及
 
         :param fw_instance_id: The fw_instance_id of this ShowAccessTopRequest.
         :type fw_instance_id: str
@@ -118,32 +118,10 @@ class ShowAccessTopRequest:
         self._fw_instance_id = fw_instance_id
 
     @property
-    def direction(self):
-        r"""Gets the direction of this ShowAccessTopRequest.
-
-        **参数解释**： 会话方向 **约束限制**： 不涉及 **取值范围**： in2out为出云方向 out2in为入云方向 **默认取值**： 不涉及 
-
-        :return: The direction of this ShowAccessTopRequest.
-        :rtype: str
-        """
-        return self._direction
-
-    @direction.setter
-    def direction(self, direction):
-        r"""Sets the direction of this ShowAccessTopRequest.
-
-        **参数解释**： 会话方向 **约束限制**： 不涉及 **取值范围**： in2out为出云方向 out2in为入云方向 **默认取值**： 不涉及 
-
-        :param direction: The direction of this ShowAccessTopRequest.
-        :type direction: str
-        """
-        self._direction = direction
-
-    @property
     def range(self):
         r"""Gets the range of this ShowAccessTopRequest.
 
-        **参数解释**： 时间范围  **约束限制**： 不涉及 **取值范围**： 0为近一时 1近一天 2近七天   **默认取值**： 不涉及 
+        **参数解释**： 时间范围  **约束限制**： 不涉及 **取值范围**： 0为近一时 1近一天 2近七天   **默认取值**： 不涉及
 
         :return: The range of this ShowAccessTopRequest.
         :rtype: int
@@ -154,7 +132,7 @@ class ShowAccessTopRequest:
     def range(self, range):
         r"""Sets the range of this ShowAccessTopRequest.
 
-        **参数解释**： 时间范围  **约束限制**： 不涉及 **取值范围**： 0为近一时 1近一天 2近七天   **默认取值**： 不涉及 
+        **参数解释**： 时间范围  **约束限制**： 不涉及 **取值范围**： 0为近一时 1近一天 2近七天   **默认取值**： 不涉及
 
         :param range: The range of this ShowAccessTopRequest.
         :type range: int
@@ -162,10 +140,32 @@ class ShowAccessTopRequest:
         self._range = range
 
     @property
+    def direction(self):
+        r"""Gets the direction of this ShowAccessTopRequest.
+
+        **参数解释**： 会话方向 **约束限制**： 不涉及 **取值范围**： in2out为出云方向 out2in为入云方向 **默认取值**： 不涉及
+
+        :return: The direction of this ShowAccessTopRequest.
+        :rtype: str
+        """
+        return self._direction
+
+    @direction.setter
+    def direction(self, direction):
+        r"""Sets the direction of this ShowAccessTopRequest.
+
+        **参数解释**： 会话方向 **约束限制**： 不涉及 **取值范围**： in2out为出云方向 out2in为入云方向 **默认取值**： 不涉及
+
+        :param direction: The direction of this ShowAccessTopRequest.
+        :type direction: str
+        """
+        self._direction = direction
+
+    @property
     def start_time(self):
         r"""Gets the start_time of this ShowAccessTopRequest.
 
-        **参数解释**： 开始时间 **约束限制**： 不涉及 **取值范围**： 毫秒级时间戳 **默认取值**： 不涉及 
+        **参数解释**： 开始时间 **约束限制**： 不涉及 **取值范围**： 毫秒级时间戳 **默认取值**： 不涉及
 
         :return: The start_time of this ShowAccessTopRequest.
         :rtype: int
@@ -176,7 +176,7 @@ class ShowAccessTopRequest:
     def start_time(self, start_time):
         r"""Sets the start_time of this ShowAccessTopRequest.
 
-        **参数解释**： 开始时间 **约束限制**： 不涉及 **取值范围**： 毫秒级时间戳 **默认取值**： 不涉及 
+        **参数解释**： 开始时间 **约束限制**： 不涉及 **取值范围**： 毫秒级时间戳 **默认取值**： 不涉及
 
         :param start_time: The start_time of this ShowAccessTopRequest.
         :type start_time: int
@@ -187,7 +187,7 @@ class ShowAccessTopRequest:
     def end_time(self):
         r"""Gets the end_time of this ShowAccessTopRequest.
 
-        **参数解释**： 结束时间 **约束限制**： 不涉及 **取值范围**： 毫秒级时间戳 **默认取值**： 不涉及 
+        **参数解释**： 结束时间 **约束限制**： 不涉及 **取值范围**： 毫秒级时间戳 **默认取值**： 不涉及
 
         :return: The end_time of this ShowAccessTopRequest.
         :rtype: int
@@ -198,7 +198,7 @@ class ShowAccessTopRequest:
     def end_time(self, end_time):
         r"""Sets the end_time of this ShowAccessTopRequest.
 
-        **参数解释**： 结束时间 **约束限制**： 不涉及 **取值范围**： 毫秒级时间戳 **默认取值**： 不涉及 
+        **参数解释**： 结束时间 **约束限制**： 不涉及 **取值范围**： 毫秒级时间戳 **默认取值**： 不涉及
 
         :param end_time: The end_time of this ShowAccessTopRequest.
         :type end_time: int
@@ -209,7 +209,7 @@ class ShowAccessTopRequest:
     def vgw_id(self):
         r"""Gets the vgw_id of this ShowAccessTopRequest.
 
-        **参数解释**： VGW ID **约束限制**： 不涉及 **取值范围**： 32位UUID **默认取值**： 不涉及 
+        **参数解释**： VGW ID **约束限制**： 不涉及 **取值范围**： 32位UUID **默认取值**： 不涉及
 
         :return: The vgw_id of this ShowAccessTopRequest.
         :rtype: list[str]
@@ -220,7 +220,7 @@ class ShowAccessTopRequest:
     def vgw_id(self, vgw_id):
         r"""Sets the vgw_id of this ShowAccessTopRequest.
 
-        **参数解释**： VGW ID **约束限制**： 不涉及 **取值范围**： 32位UUID **默认取值**： 不涉及 
+        **参数解释**： VGW ID **约束限制**： 不涉及 **取值范围**： 32位UUID **默认取值**： 不涉及
 
         :param vgw_id: The vgw_id of this ShowAccessTopRequest.
         :type vgw_id: list[str]

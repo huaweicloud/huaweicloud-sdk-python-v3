@@ -296,7 +296,6 @@ from huaweicloudsdkecs.v2.model.pre_paid_server_security_group import PrePaidSer
 from huaweicloudsdkecs.v2.model.pre_paid_server_tag import PrePaidServerTag
 from huaweicloudsdkecs.v2.model.project_flavor_limit import ProjectFlavorLimit
 from huaweicloudsdkecs.v2.model.project_tag import ProjectTag
-from huaweicloudsdkecs.v2.model.recycle_bin import RecycleBin
 from huaweicloudsdkecs.v2.model.recycle_bin_policys import RecycleBinPolicys
 from huaweicloudsdkecs.v2.model.register_server_monitor_request import RegisterServerMonitorRequest
 from huaweicloudsdkecs.v2.model.register_server_monitor_request_body import RegisterServerMonitorRequestBody

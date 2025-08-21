@@ -20,21 +20,27 @@ class CreateClusterBackupStrategyBody:
         'period': 'str',
         'prefix': 'str',
         'keepday': 'int',
+        'frequency': 'str',
         'bucket': 'str',
         'base_path': 'str',
-        'agency': 'str'
+        'agency': 'str',
+        'max_snapshot_bytes_per_seconds': 'str',
+        'max_restore_bytes_per_seconds': 'str'
     }
 
     attribute_map = {
         'period': 'period',
         'prefix': 'prefix',
         'keepday': 'keepday',
+        'frequency': 'frequency',
         'bucket': 'bucket',
         'base_path': 'basePath',
-        'agency': 'agency'
+        'agency': 'agency',
+        'max_snapshot_bytes_per_seconds': 'maxSnapshotBytesPerSeconds',
+        'max_restore_bytes_per_seconds': 'maxRestoreBytesPerSeconds'
     }
 
-    def __init__(self, period=None, prefix=None, keepday=None, bucket=None, base_path=None, agency=None):
+    def __init__(self, period=None, prefix=None, keepday=None, frequency=None, bucket=None, base_path=None, agency=None, max_snapshot_bytes_per_seconds=None, max_restore_bytes_per_seconds=None):
         r"""CreateClusterBackupStrategyBody
 
         The model defined in huaweicloud sdk
@@ -45,12 +51,18 @@ class CreateClusterBackupStrategyBody:
         :type prefix: str
         :param keepday: 自动创建快照的保留天数。取值范围：1-90。
         :type keepday: int
+        :param frequency: 快照速率参数。
+        :type frequency: str
         :param bucket: 备份使用的OBS桶名称。
         :type bucket: str
         :param base_path: 快照在OBS桶中的存放路径。
         :type base_path: str
         :param agency: 委托名称，委托给CSS，允许CSS调用您的其他云服务。  &gt;如果bucket、basePath和agency三个参数同时为空，则系统会自动创建OBS桶和IAM代理（若创建失败，则需要手工配置正确的参数）。
         :type agency: str
+        :param max_snapshot_bytes_per_seconds: 配置每个节点的最大备份速率（每秒），即当备份的速率超过该值时会被限流，避免速率太大导致资源占用过高，影响系统稳定性。实际备份速率不一定能达到该值，会受OBS、磁盘等影响。
+        :type max_snapshot_bytes_per_seconds: str
+        :param max_restore_bytes_per_seconds: 配置每个节点的最大恢复速率（每秒），即当恢复的速率超过该值时会被限流，避免速率太大导致资源占用过高，影响系统稳定性。实际恢复速率不一定能达到该值，会受OBS、磁盘等影响。
+        :type max_restore_bytes_per_seconds: str
         """
         
         
@@ -58,20 +70,29 @@ class CreateClusterBackupStrategyBody:
         self._period = None
         self._prefix = None
         self._keepday = None
+        self._frequency = None
         self._bucket = None
         self._base_path = None
         self._agency = None
+        self._max_snapshot_bytes_per_seconds = None
+        self._max_restore_bytes_per_seconds = None
         self.discriminator = None
 
         self.period = period
         self.prefix = prefix
         self.keepday = keepday
+        if frequency is not None:
+            self.frequency = frequency
         if bucket is not None:
             self.bucket = bucket
         if base_path is not None:
             self.base_path = base_path
         if agency is not None:
             self.agency = agency
+        if max_snapshot_bytes_per_seconds is not None:
+            self.max_snapshot_bytes_per_seconds = max_snapshot_bytes_per_seconds
+        if max_restore_bytes_per_seconds is not None:
+            self.max_restore_bytes_per_seconds = max_restore_bytes_per_seconds
 
     @property
     def period(self):
@@ -140,6 +161,28 @@ class CreateClusterBackupStrategyBody:
         self._keepday = keepday
 
     @property
+    def frequency(self):
+        r"""Gets the frequency of this CreateClusterBackupStrategyBody.
+
+        快照速率参数。
+
+        :return: The frequency of this CreateClusterBackupStrategyBody.
+        :rtype: str
+        """
+        return self._frequency
+
+    @frequency.setter
+    def frequency(self, frequency):
+        r"""Sets the frequency of this CreateClusterBackupStrategyBody.
+
+        快照速率参数。
+
+        :param frequency: The frequency of this CreateClusterBackupStrategyBody.
+        :type frequency: str
+        """
+        self._frequency = frequency
+
+    @property
     def bucket(self):
         r"""Gets the bucket of this CreateClusterBackupStrategyBody.
 
@@ -204,6 +247,50 @@ class CreateClusterBackupStrategyBody:
         :type agency: str
         """
         self._agency = agency
+
+    @property
+    def max_snapshot_bytes_per_seconds(self):
+        r"""Gets the max_snapshot_bytes_per_seconds of this CreateClusterBackupStrategyBody.
+
+        配置每个节点的最大备份速率（每秒），即当备份的速率超过该值时会被限流，避免速率太大导致资源占用过高，影响系统稳定性。实际备份速率不一定能达到该值，会受OBS、磁盘等影响。
+
+        :return: The max_snapshot_bytes_per_seconds of this CreateClusterBackupStrategyBody.
+        :rtype: str
+        """
+        return self._max_snapshot_bytes_per_seconds
+
+    @max_snapshot_bytes_per_seconds.setter
+    def max_snapshot_bytes_per_seconds(self, max_snapshot_bytes_per_seconds):
+        r"""Sets the max_snapshot_bytes_per_seconds of this CreateClusterBackupStrategyBody.
+
+        配置每个节点的最大备份速率（每秒），即当备份的速率超过该值时会被限流，避免速率太大导致资源占用过高，影响系统稳定性。实际备份速率不一定能达到该值，会受OBS、磁盘等影响。
+
+        :param max_snapshot_bytes_per_seconds: The max_snapshot_bytes_per_seconds of this CreateClusterBackupStrategyBody.
+        :type max_snapshot_bytes_per_seconds: str
+        """
+        self._max_snapshot_bytes_per_seconds = max_snapshot_bytes_per_seconds
+
+    @property
+    def max_restore_bytes_per_seconds(self):
+        r"""Gets the max_restore_bytes_per_seconds of this CreateClusterBackupStrategyBody.
+
+        配置每个节点的最大恢复速率（每秒），即当恢复的速率超过该值时会被限流，避免速率太大导致资源占用过高，影响系统稳定性。实际恢复速率不一定能达到该值，会受OBS、磁盘等影响。
+
+        :return: The max_restore_bytes_per_seconds of this CreateClusterBackupStrategyBody.
+        :rtype: str
+        """
+        return self._max_restore_bytes_per_seconds
+
+    @max_restore_bytes_per_seconds.setter
+    def max_restore_bytes_per_seconds(self, max_restore_bytes_per_seconds):
+        r"""Sets the max_restore_bytes_per_seconds of this CreateClusterBackupStrategyBody.
+
+        配置每个节点的最大恢复速率（每秒），即当恢复的速率超过该值时会被限流，避免速率太大导致资源占用过高，影响系统稳定性。实际恢复速率不一定能达到该值，会受OBS、磁盘等影响。
+
+        :param max_restore_bytes_per_seconds: The max_restore_bytes_per_seconds of this CreateClusterBackupStrategyBody.
+        :type max_restore_bytes_per_seconds: str
+        """
+        self._max_restore_bytes_per_seconds = max_restore_bytes_per_seconds
 
     def to_dict(self):
         """Returns the model properties as a dict"""

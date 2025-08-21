@@ -33,7 +33,7 @@ class ListManagedOrganizationalUnitsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param control_id: 启用的控制策略信息。
+        :param control_id: 控制策略ID。
         :type control_id: str
         :param limit: 分页页面的最大值。
         :type limit: int
@@ -59,7 +59,7 @@ class ListManagedOrganizationalUnitsRequest:
     def control_id(self):
         r"""Gets the control_id of this ListManagedOrganizationalUnitsRequest.
 
-        启用的控制策略信息。
+        控制策略ID。
 
         :return: The control_id of this ListManagedOrganizationalUnitsRequest.
         :rtype: str
@@ -70,7 +70,7 @@ class ListManagedOrganizationalUnitsRequest:
     def control_id(self, control_id):
         r"""Sets the control_id of this ListManagedOrganizationalUnitsRequest.
 
-        启用的控制策略信息。
+        控制策略ID。
 
         :param control_id: The control_id of this ListManagedOrganizationalUnitsRequest.
         :type control_id: str

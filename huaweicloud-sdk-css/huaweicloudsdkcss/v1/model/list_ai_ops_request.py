@@ -19,16 +19,16 @@ class ListAiOpsRequest:
     openapi_types = {
         'cluster_id': 'str',
         'limit': 'int',
-        'start': 'int'
+        'offset': 'int'
     }
 
     attribute_map = {
         'cluster_id': 'cluster_id',
         'limit': 'limit',
-        'start': 'start'
+        'offset': 'offset'
     }
 
-    def __init__(self, cluster_id=None, limit=None, start=None):
+    def __init__(self, cluster_id=None, limit=None, offset=None):
         r"""ListAiOpsRequest
 
         The model defined in huaweicloud sdk
@@ -37,22 +37,22 @@ class ListAiOpsRequest:
         :type cluster_id: str
         :param limit: 分页参数，列表当前分页的数量限制。
         :type limit: int
-        :param start: 偏移量。 偏移量为一个大于0小于终端节点服务总个数的整数， 表示从偏移量后面的终端节点服务开始查询。
-        :type start: int
+        :param offset: 偏移量。 偏移量为一个大于0小于终端节点服务总个数的整数， 表示从偏移量后面的终端节点服务开始查询。
+        :type offset: int
         """
         
         
 
         self._cluster_id = None
         self._limit = None
-        self._start = None
+        self._offset = None
         self.discriminator = None
 
         self.cluster_id = cluster_id
         if limit is not None:
             self.limit = limit
-        if start is not None:
-            self.start = start
+        if offset is not None:
+            self.offset = offset
 
     @property
     def cluster_id(self):
@@ -99,26 +99,26 @@ class ListAiOpsRequest:
         self._limit = limit
 
     @property
-    def start(self):
-        r"""Gets the start of this ListAiOpsRequest.
+    def offset(self):
+        r"""Gets the offset of this ListAiOpsRequest.
 
         偏移量。 偏移量为一个大于0小于终端节点服务总个数的整数， 表示从偏移量后面的终端节点服务开始查询。
 
-        :return: The start of this ListAiOpsRequest.
+        :return: The offset of this ListAiOpsRequest.
         :rtype: int
         """
-        return self._start
+        return self._offset
 
-    @start.setter
-    def start(self, start):
-        r"""Sets the start of this ListAiOpsRequest.
+    @offset.setter
+    def offset(self, offset):
+        r"""Sets the offset of this ListAiOpsRequest.
 
         偏移量。 偏移量为一个大于0小于终端节点服务总个数的整数， 表示从偏移量后面的终端节点服务开始查询。
 
-        :param start: The start of this ListAiOpsRequest.
-        :type start: int
+        :param offset: The offset of this ListAiOpsRequest.
+        :type offset: int
         """
-        self._start = start
+        self._offset = offset
 
     def to_dict(self):
         """Returns the model properties as a dict"""

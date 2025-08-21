@@ -31,7 +31,7 @@ class UpdateTenantTrustedIpAddressRequest:
 
         The model defined in huaweicloud sdk
 
-        :param ip_id: ip的ip
+        :param ip_id: **参数解释：** ip白名单id。
         :type ip_id: int
         :param body: Body of the UpdateTenantTrustedIpAddressRequest
         :type body: :class:`huaweicloudsdkcodehub.v4.AddTrustedIpAddressRequestBody`
@@ -51,7 +51,7 @@ class UpdateTenantTrustedIpAddressRequest:
     def ip_id(self):
         r"""Gets the ip_id of this UpdateTenantTrustedIpAddressRequest.
 
-        ip的ip
+        **参数解释：** ip白名单id。
 
         :return: The ip_id of this UpdateTenantTrustedIpAddressRequest.
         :rtype: int
@@ -62,7 +62,7 @@ class UpdateTenantTrustedIpAddressRequest:
     def ip_id(self, ip_id):
         r"""Sets the ip_id of this UpdateTenantTrustedIpAddressRequest.
 
-        ip的ip
+        **参数解释：** ip白名单id。
 
         :param ip_id: The ip_id of this UpdateTenantTrustedIpAddressRequest.
         :type ip_id: int

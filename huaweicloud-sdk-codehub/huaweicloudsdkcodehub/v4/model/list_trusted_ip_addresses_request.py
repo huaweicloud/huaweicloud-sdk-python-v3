@@ -33,11 +33,11 @@ class ListTrustedIpAddressesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param id: 仓库id
+        :param id: **参数解释：** 仓库id，代码仓首页，Repository ID后的数字Id。
         :type id: int
-        :param offset: 偏移量
+        :param offset: **参数解释：** 偏移量，从0开始。
         :type offset: int
-        :param limit: 返回数量
+        :param limit: **参数解释：** 返回数量。
         :type limit: int
         """
         
@@ -58,7 +58,7 @@ class ListTrustedIpAddressesRequest:
     def id(self):
         r"""Gets the id of this ListTrustedIpAddressesRequest.
 
-        仓库id
+        **参数解释：** 仓库id，代码仓首页，Repository ID后的数字Id。
 
         :return: The id of this ListTrustedIpAddressesRequest.
         :rtype: int
@@ -69,7 +69,7 @@ class ListTrustedIpAddressesRequest:
     def id(self, id):
         r"""Sets the id of this ListTrustedIpAddressesRequest.
 
-        仓库id
+        **参数解释：** 仓库id，代码仓首页，Repository ID后的数字Id。
 
         :param id: The id of this ListTrustedIpAddressesRequest.
         :type id: int
@@ -80,7 +80,7 @@ class ListTrustedIpAddressesRequest:
     def offset(self):
         r"""Gets the offset of this ListTrustedIpAddressesRequest.
 
-        偏移量
+        **参数解释：** 偏移量，从0开始。
 
         :return: The offset of this ListTrustedIpAddressesRequest.
         :rtype: int
@@ -91,7 +91,7 @@ class ListTrustedIpAddressesRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListTrustedIpAddressesRequest.
 
-        偏移量
+        **参数解释：** 偏移量，从0开始。
 
         :param offset: The offset of this ListTrustedIpAddressesRequest.
         :type offset: int
@@ -102,7 +102,7 @@ class ListTrustedIpAddressesRequest:
     def limit(self):
         r"""Gets the limit of this ListTrustedIpAddressesRequest.
 
-        返回数量
+        **参数解释：** 返回数量。
 
         :return: The limit of this ListTrustedIpAddressesRequest.
         :rtype: int
@@ -113,7 +113,7 @@ class ListTrustedIpAddressesRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListTrustedIpAddressesRequest.
 
-        返回数量
+        **参数解释：** 返回数量。
 
         :param limit: The limit of this ListTrustedIpAddressesRequest.
         :type limit: int

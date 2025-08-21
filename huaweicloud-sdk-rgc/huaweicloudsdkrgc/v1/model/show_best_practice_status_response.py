@@ -38,7 +38,7 @@ class ShowBestPracticeStatusResponse(SdkResponse):
 
         :param operation_id: 操作Id
         :type operation_id: str
-        :param status: 状态：进行中，成功，成败
+        :param status: 状态：进行中，成功，失败
         :type status: str
         :param percentage_complete: 检测进度
         :type percentage_complete: int
@@ -89,7 +89,7 @@ class ShowBestPracticeStatusResponse(SdkResponse):
     def status(self):
         r"""Gets the status of this ShowBestPracticeStatusResponse.
 
-        状态：进行中，成功，成败
+        状态：进行中，成功，失败
 
         :return: The status of this ShowBestPracticeStatusResponse.
         :rtype: str
@@ -100,7 +100,7 @@ class ShowBestPracticeStatusResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this ShowBestPracticeStatusResponse.
 
-        状态：进行中，成功，成败
+        状态：进行中，成功，失败
 
         :param status: The status of this ShowBestPracticeStatusResponse.
         :type status: str

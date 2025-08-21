@@ -31,9 +31,9 @@ class UnlockRepositoryRequest:
 
         The model defined in huaweicloud sdk
 
-        :param project_id: 项目id
+        :param project_id: **参数解释：** 项目的32位uuid，项目唯一标识，通过[[查询项目列表](https://support.huaweicloud.com/api-projectman/ListProjectsV4.html)](tag:hws)[[查询项目列表](https://support.huaweicloud.com/intl/en-us/api-projectman/ListProjectsV4.html)](tag:hws_hk)[查询项目列表](tag:hcs,hcs_sm)接口查询项目列表获取。 **取值范围：** 字符串长度32。
         :type project_id: str
-        :param repository_id: 仓库的主键id
+        :param repository_id: **参数解释：** 仓库的ID，通过[[查询用户所有仓库](https://support.huaweicloud.com/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws)[[查询用户所有仓库](https://support.huaweicloud.com/intl/en-us/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_hk)[查询项目列表](tag:hcs,hcs_sm)接口查询项目列表获取。 **约束限制：** 不涉及。
         :type repository_id: int
         """
         
@@ -50,7 +50,7 @@ class UnlockRepositoryRequest:
     def project_id(self):
         r"""Gets the project_id of this UnlockRepositoryRequest.
 
-        项目id
+        **参数解释：** 项目的32位uuid，项目唯一标识，通过[[查询项目列表](https://support.huaweicloud.com/api-projectman/ListProjectsV4.html)](tag:hws)[[查询项目列表](https://support.huaweicloud.com/intl/en-us/api-projectman/ListProjectsV4.html)](tag:hws_hk)[查询项目列表](tag:hcs,hcs_sm)接口查询项目列表获取。 **取值范围：** 字符串长度32。
 
         :return: The project_id of this UnlockRepositoryRequest.
         :rtype: str
@@ -61,7 +61,7 @@ class UnlockRepositoryRequest:
     def project_id(self, project_id):
         r"""Sets the project_id of this UnlockRepositoryRequest.
 
-        项目id
+        **参数解释：** 项目的32位uuid，项目唯一标识，通过[[查询项目列表](https://support.huaweicloud.com/api-projectman/ListProjectsV4.html)](tag:hws)[[查询项目列表](https://support.huaweicloud.com/intl/en-us/api-projectman/ListProjectsV4.html)](tag:hws_hk)[查询项目列表](tag:hcs,hcs_sm)接口查询项目列表获取。 **取值范围：** 字符串长度32。
 
         :param project_id: The project_id of this UnlockRepositoryRequest.
         :type project_id: str
@@ -72,7 +72,7 @@ class UnlockRepositoryRequest:
     def repository_id(self):
         r"""Gets the repository_id of this UnlockRepositoryRequest.
 
-        仓库的主键id
+        **参数解释：** 仓库的ID，通过[[查询用户所有仓库](https://support.huaweicloud.com/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws)[[查询用户所有仓库](https://support.huaweicloud.com/intl/en-us/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_hk)[查询项目列表](tag:hcs,hcs_sm)接口查询项目列表获取。 **约束限制：** 不涉及。
 
         :return: The repository_id of this UnlockRepositoryRequest.
         :rtype: int
@@ -83,7 +83,7 @@ class UnlockRepositoryRequest:
     def repository_id(self, repository_id):
         r"""Sets the repository_id of this UnlockRepositoryRequest.
 
-        仓库的主键id
+        **参数解释：** 仓库的ID，通过[[查询用户所有仓库](https://support.huaweicloud.com/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws)[[查询用户所有仓库](https://support.huaweicloud.com/intl/en-us/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_hk)[查询项目列表](tag:hcs,hcs_sm)接口查询项目列表获取。 **约束限制：** 不涉及。
 
         :param repository_id: The repository_id of this UnlockRepositoryRequest.
         :type repository_id: int

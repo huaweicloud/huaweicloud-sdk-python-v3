@@ -33,7 +33,7 @@ class ShowComplianceStatusForOrganizationalUnitRequest:
 
         :param managed_organizational_unit_id: 注册OU ID。
         :type managed_organizational_unit_id: str
-        :param control_id: 启用的控制策略信息。
+        :param control_id: 控制策略ID。
         :type control_id: str
         """
         
@@ -73,7 +73,7 @@ class ShowComplianceStatusForOrganizationalUnitRequest:
     def control_id(self):
         r"""Gets the control_id of this ShowComplianceStatusForOrganizationalUnitRequest.
 
-        启用的控制策略信息。
+        控制策略ID。
 
         :return: The control_id of this ShowComplianceStatusForOrganizationalUnitRequest.
         :rtype: str
@@ -84,7 +84,7 @@ class ShowComplianceStatusForOrganizationalUnitRequest:
     def control_id(self, control_id):
         r"""Sets the control_id of this ShowComplianceStatusForOrganizationalUnitRequest.
 
-        启用的控制策略信息。
+        控制策略ID。
 
         :param control_id: The control_id of this ShowComplianceStatusForOrganizationalUnitRequest.
         :type control_id: str

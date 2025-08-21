@@ -18,7 +18,7 @@ class ListCustomerIpsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'data': 'HttpListCustomerIpsResponseData'
+        'data': 'CustomerIpsPageInfo'
     }
 
     attribute_map = {
@@ -31,7 +31,7 @@ class ListCustomerIpsResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param data: 
-        :type data: :class:`huaweicloudsdkcfw.v1.HttpListCustomerIpsResponseData`
+        :type data: :class:`huaweicloudsdkcfw.v1.CustomerIpsPageInfo`
         """
         
         super(ListCustomerIpsResponse, self).__init__()
@@ -47,7 +47,7 @@ class ListCustomerIpsResponse(SdkResponse):
         r"""Gets the data of this ListCustomerIpsResponse.
 
         :return: The data of this ListCustomerIpsResponse.
-        :rtype: :class:`huaweicloudsdkcfw.v1.HttpListCustomerIpsResponseData`
+        :rtype: :class:`huaweicloudsdkcfw.v1.CustomerIpsPageInfo`
         """
         return self._data
 
@@ -56,7 +56,7 @@ class ListCustomerIpsResponse(SdkResponse):
         r"""Sets the data of this ListCustomerIpsResponse.
 
         :param data: The data of this ListCustomerIpsResponse.
-        :type data: :class:`huaweicloudsdkcfw.v1.HttpListCustomerIpsResponseData`
+        :type data: :class:`huaweicloudsdkcfw.v1.CustomerIpsPageInfo`
         """
         self._data = data
 
