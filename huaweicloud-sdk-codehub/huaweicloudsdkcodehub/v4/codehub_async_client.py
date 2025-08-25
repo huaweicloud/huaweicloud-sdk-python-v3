@@ -9564,6 +9564,71 @@ class CodeHubAsyncClient(Client):
 
         return http_info
 
+    def show_project_settings_inherit_cfg_async(self, request):
+        r"""获取项目继承设置项
+
+        获取项目继承设置项
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowProjectSettingsInheritCfg
+        :type request: :class:`huaweicloudsdkcodehub.v4.ShowProjectSettingsInheritCfgRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.ShowProjectSettingsInheritCfgResponse`
+        """
+        http_info = self._show_project_settings_inherit_cfg_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_project_settings_inherit_cfg_async_invoker(self, request):
+        http_info = self._show_project_settings_inherit_cfg_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_project_settings_inherit_cfg_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/projects/{project_id}/settings-inherit-cfg",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowProjectSettingsInheritCfgResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_project_watermark_async(self, request):
         r"""获取项目水印设置
 
@@ -9608,6 +9673,73 @@ class CodeHubAsyncClient(Client):
         form_params = {}
 
         body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_project_settings_inherit_cfg_async(self, request):
+        r"""更新项目继承设置项
+
+        更新项目继承设置项
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateProjectSettingsInheritCfg
+        :type request: :class:`huaweicloudsdkcodehub.v4.UpdateProjectSettingsInheritCfgRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.UpdateProjectSettingsInheritCfgResponse`
+        """
+        http_info = self._update_project_settings_inherit_cfg_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_project_settings_inherit_cfg_async_invoker(self, request):
+        http_info = self._update_project_settings_inherit_cfg_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_project_settings_inherit_cfg_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v4/projects/{project_id}/settings-inherit-cfg",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateProjectSettingsInheritCfgResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -9897,6 +10029,73 @@ class CodeHubAsyncClient(Client):
 
         return http_info
 
+    def create_project_protected_branches_async(self, request):
+        r"""创建项目下保护分支
+
+        创建项目下保护分支
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateProjectProtectedBranches
+        :type request: :class:`huaweicloudsdkcodehub.v4.CreateProjectProtectedBranchesRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.CreateProjectProtectedBranchesResponse`
+        """
+        http_info = self._create_project_protected_branches_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_project_protected_branches_async_invoker(self, request):
+        http_info = self._create_project_protected_branches_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_project_protected_branches_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v4/projects/{project_id}/protected-branches",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateProjectProtectedBranchesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_protected_branch_async(self, request):
         r"""删除仓库保护分支
 
@@ -9947,6 +10146,81 @@ class CodeHubAsyncClient(Client):
             body = request.get_file_stream()
 
         response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_project_protected_branches_async(self, request):
+        r"""获取项目下保护分支列表
+
+        获取项目下保护分支列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListProjectProtectedBranches
+        :type request: :class:`huaweicloudsdkcodehub.v4.ListProjectProtectedBranchesRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.ListProjectProtectedBranchesResponse`
+        """
+        http_info = self._list_project_protected_branches_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_project_protected_branches_async_invoker(self, request):
+        http_info = self._list_project_protected_branches_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_project_protected_branches_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/projects/{project_id}/protected-branches",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProjectProtectedBranchesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'search' in local_var_params:
+            query_params.append(('search', local_var_params['search']))
+        if 'user_actions' in local_var_params:
+            query_params.append(('user_actions', local_var_params['user_actions']))
+        if 'view' in local_var_params:
+            query_params.append(('view', local_var_params['view']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Total", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])

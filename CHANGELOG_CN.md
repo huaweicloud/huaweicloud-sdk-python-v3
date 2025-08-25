@@ -1,3 +1,32 @@
+# 3.1.164 2025-08-25
+
+### HuaweiCloud SDK CodeHub
+
+- _接口版本_
+  - V4
+- _新增特性_
+  - 支持接口`ListProjectProtectedBranches`、`CreateProjectProtectedBranches`、`ShowProjectSettingsInheritCfg`、`UpdateProjectSettingsInheritCfg`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK RDS
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListDbUsers**
+    - 响应参数变更
+      - `+ users.comment`
+  - **ListSqlserverDbUsers**
+    - 响应参数变更
+      - `+ users.comment`
+
 # 3.1.163 2025-08-21
 
 ### HuaweiCloud SDK CDN

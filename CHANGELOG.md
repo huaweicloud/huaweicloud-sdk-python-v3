@@ -1,3 +1,32 @@
+# 3.1.164 2025-08-25
+
+### HuaweiCloud SDK CodeHub
+
+- _API Version_
+  - V4
+- _Features_
+  - Support the APIs `ListProjectProtectedBranches`, `CreateProjectProtectedBranches`, `ShowProjectSettingsInheritCfg`, `UpdateProjectSettingsInheritCfg`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK RDS
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListDbUsers**
+    - changes of response param
+      - `+ users.comment`
+  - **ListSqlserverDbUsers**
+    - changes of response param
+      - `+ users.comment`
+
 # 3.1.163 2025-08-21
 
 ### HuaweiCloud SDK CDN

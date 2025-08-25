@@ -19,16 +19,18 @@ class UserForList:
     openapi_types = {
         'name': 'str',
         'databases': 'list[DatabaseWithPrivilegeObject]',
-        'hosts': 'list[str]'
+        'hosts': 'list[str]',
+        'comment': 'str'
     }
 
     attribute_map = {
         'name': 'name',
         'databases': 'databases',
-        'hosts': 'hosts'
+        'hosts': 'hosts',
+        'comment': 'comment'
     }
 
-    def __init__(self, name=None, databases=None, hosts=None):
+    def __init__(self, name=None, databases=None, hosts=None, comment=None):
         r"""UserForList
 
         The model defined in huaweicloud sdk
@@ -39,6 +41,8 @@ class UserForList:
         :type databases: list[:class:`huaweicloudsdkrds.v3.DatabaseWithPrivilegeObject`]
         :param hosts: 授权用户登录主机IP列表 • 若IP地址为%，则表示允许所有地址访问MySQL实例。 • 若IP地址为“10.10.10.%”，则表示10.10.10.X的IP地址都可以访问该MySQL实例。 • 支持添加多个IP地址。
         :type hosts: list[str]
+        :param comment: 数据库用户备注
+        :type comment: str
         """
         
         
@@ -46,11 +50,13 @@ class UserForList:
         self._name = None
         self._databases = None
         self._hosts = None
+        self._comment = None
         self.discriminator = None
 
         self.name = name
         self.databases = databases
         self.hosts = hosts
+        self.comment = comment
 
     @property
     def name(self):
@@ -117,6 +123,28 @@ class UserForList:
         :type hosts: list[str]
         """
         self._hosts = hosts
+
+    @property
+    def comment(self):
+        r"""Gets the comment of this UserForList.
+
+        数据库用户备注
+
+        :return: The comment of this UserForList.
+        :rtype: str
+        """
+        return self._comment
+
+    @comment.setter
+    def comment(self, comment):
+        r"""Sets the comment of this UserForList.
+
+        数据库用户备注
+
+        :param comment: The comment of this UserForList.
+        :type comment: str
+        """
+        self._comment = comment
 
     def to_dict(self):
         """Returns the model properties as a dict"""
