@@ -17,14 +17,19 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install setuptools wheel twine
+        pip install setuptools wheel twine build hatchling
     - name: Build packages
       run: |
-        rm -rf huaweicloud-sdk-lms
         for each in $(find "${GITHUB_WORKSPACE}" -maxdepth 1 -mindepth 1 -type d -name "*sdk*")
         do
           cd "${each}" || exit 1
-          python setup.py bdist_wheel
+          if [ -f "pyproject.toml" ]; then
+            python -m build --wheel --no-isolation
+          elif [ -f "setup.py" ]; then
+            python setup.py bdist_wheel
+          else
+            echo "python build failed for ${each}" || exit 1
+          fi
           cp dist/*.whl "${GITHUB_WORKSPACE}"
         done
       shell: bash
