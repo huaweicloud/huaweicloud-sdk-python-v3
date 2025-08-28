@@ -31,9 +31,9 @@ class CreateLoadbalancerAutoscalingOption:
 
         The model defined in huaweicloud sdk
 
-        :param enable: 参数解释：负载均衡器实例弹性扩缩容开关。 [网关型LB不支持该字段。](tag:hws_eu)  取值范围：  - true：开启。  - false：关闭。
+        :param enable: **参数解释**：负载均衡器实例弹性扩缩容开关。  **约束限制**：不涉及  **取值范围**： - true：开启。 - false：关闭。   **默认取值**：不涉及  [网关型LB不支持该字段。](tag:hws_eu)
         :type enable: bool
-        :param min_l7_flavor_id: 参数解释：实例弹性扩缩容的最小七层规格ID。  约束限制： 该字段已经废弃，建议不要使用该字段。
+        :param min_l7_flavor_id: **参数解释**：实例弹性扩缩容的最小七层规格ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type min_l7_flavor_id: str
         """
         
@@ -51,7 +51,7 @@ class CreateLoadbalancerAutoscalingOption:
     def enable(self):
         r"""Gets the enable of this CreateLoadbalancerAutoscalingOption.
 
-        参数解释：负载均衡器实例弹性扩缩容开关。 [网关型LB不支持该字段。](tag:hws_eu)  取值范围：  - true：开启。  - false：关闭。
+        **参数解释**：负载均衡器实例弹性扩缩容开关。  **约束限制**：不涉及  **取值范围**： - true：开启。 - false：关闭。   **默认取值**：不涉及  [网关型LB不支持该字段。](tag:hws_eu)
 
         :return: The enable of this CreateLoadbalancerAutoscalingOption.
         :rtype: bool
@@ -62,7 +62,7 @@ class CreateLoadbalancerAutoscalingOption:
     def enable(self, enable):
         r"""Sets the enable of this CreateLoadbalancerAutoscalingOption.
 
-        参数解释：负载均衡器实例弹性扩缩容开关。 [网关型LB不支持该字段。](tag:hws_eu)  取值范围：  - true：开启。  - false：关闭。
+        **参数解释**：负载均衡器实例弹性扩缩容开关。  **约束限制**：不涉及  **取值范围**： - true：开启。 - false：关闭。   **默认取值**：不涉及  [网关型LB不支持该字段。](tag:hws_eu)
 
         :param enable: The enable of this CreateLoadbalancerAutoscalingOption.
         :type enable: bool
@@ -73,7 +73,7 @@ class CreateLoadbalancerAutoscalingOption:
     def min_l7_flavor_id(self):
         r"""Gets the min_l7_flavor_id of this CreateLoadbalancerAutoscalingOption.
 
-        参数解释：实例弹性扩缩容的最小七层规格ID。  约束限制： 该字段已经废弃，建议不要使用该字段。
+        **参数解释**：实例弹性扩缩容的最小七层规格ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The min_l7_flavor_id of this CreateLoadbalancerAutoscalingOption.
         :rtype: str
@@ -84,7 +84,7 @@ class CreateLoadbalancerAutoscalingOption:
     def min_l7_flavor_id(self, min_l7_flavor_id):
         r"""Sets the min_l7_flavor_id of this CreateLoadbalancerAutoscalingOption.
 
-        参数解释：实例弹性扩缩容的最小七层规格ID。  约束限制： 该字段已经废弃，建议不要使用该字段。
+        **参数解释**：实例弹性扩缩容的最小七层规格ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param min_l7_flavor_id: The min_l7_flavor_id of this CreateLoadbalancerAutoscalingOption.
         :type min_l7_flavor_id: str

@@ -43,10 +43,8 @@ class UpdateRecycleBinPolicyOption:
         self._recycle_threshold_day = None
         self.discriminator = None
 
-        if retention_hour is not None:
-            self.retention_hour = retention_hour
-        if recycle_threshold_day is not None:
-            self.recycle_threshold_day = recycle_threshold_day
+        self.retention_hour = retention_hour
+        self.recycle_threshold_day = recycle_threshold_day
 
     @property
     def retention_hour(self):

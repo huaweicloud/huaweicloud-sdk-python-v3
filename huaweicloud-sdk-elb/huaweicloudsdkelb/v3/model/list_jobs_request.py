@@ -45,23 +45,23 @@ class ListJobsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param limit: 参数解释：每页返回的个数。  取值范围：0-2000  默认取值：2000
+        :param limit: **参数解释**：每页返回的个数。  **约束限制**：不涉及  **取值范围**：0-2000  **默认取值**：2000
         :type limit: int
-        :param marker: 上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
+        :param marker: **参数解释**：上一页最后一条记录的ID。  **约束限制**： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。  **取值范围**：不涉及  **默认取值**：不涉及
         :type marker: str
-        :param page_reverse: 是否反向查询。  取值： - true：查询上一页。 - false：查询下一页，默认。  使用说明： - 必须与limit一起使用。 - 当page_reverse&#x3D;true时，若要查询上一页，marker取值为当前页返回值的previous_marker
+        :param page_reverse: **参数解释**：是否反向查询。  **约束限制**： - 必须与limit一起使用。 - 当page_reverse&#x3D;true时，若要查询上一页，marker取值为当前页返回值的previous_marker。  **取值范围**： - true：查询上一页。 - false：查询下一页。  **默认取值**：false
         :type page_reverse: bool
-        :param job_id: 参数解释：任务ID。
+        :param job_id: **参数解释**：任务ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type job_id: str
-        :param job_type: 参数解释：任务类型。
+        :param job_type: **参数解释**：任务类型。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type job_type: str
-        :param status: 参数解释：任务状态。  取值范围：INIT,RUNNING,FAIL,SUCCESS,ROLLBACKING,COMPLETE,ROLLBACK_FAIL,CANCEL
+        :param status: **参数解释**：任务状态。  **约束限制**：不涉及  **取值范围**：INIT,RUNNING,FAIL,SUCCESS,ROLLBACKING,COMPLETE,ROLLBACK_FAIL,CANCEL  **默认取值**：不涉及
         :type status: str
-        :param error_code: 参数解释： 任务的错误码。
+        :param error_code: **参数解释**：任务的错误码。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type error_code: str
-        :param resource_id: 参数解释：资源ID。
+        :param resource_id: **参数解释**：资源ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type resource_id: str
-        :param begin_time: 参数解释：查询任务的开始时间大于等于传入时间的任务。格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss
+        :param begin_time: **参数解释**：查询任务的开始时间大于等于传入时间的任务。格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type begin_time: str
         """
         
@@ -101,7 +101,7 @@ class ListJobsRequest:
     def limit(self):
         r"""Gets the limit of this ListJobsRequest.
 
-        参数解释：每页返回的个数。  取值范围：0-2000  默认取值：2000
+        **参数解释**：每页返回的个数。  **约束限制**：不涉及  **取值范围**：0-2000  **默认取值**：2000
 
         :return: The limit of this ListJobsRequest.
         :rtype: int
@@ -112,7 +112,7 @@ class ListJobsRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListJobsRequest.
 
-        参数解释：每页返回的个数。  取值范围：0-2000  默认取值：2000
+        **参数解释**：每页返回的个数。  **约束限制**：不涉及  **取值范围**：0-2000  **默认取值**：2000
 
         :param limit: The limit of this ListJobsRequest.
         :type limit: int
@@ -123,7 +123,7 @@ class ListJobsRequest:
     def marker(self):
         r"""Gets the marker of this ListJobsRequest.
 
-        上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
+        **参数解释**：上一页最后一条记录的ID。  **约束限制**： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The marker of this ListJobsRequest.
         :rtype: str
@@ -134,7 +134,7 @@ class ListJobsRequest:
     def marker(self, marker):
         r"""Sets the marker of this ListJobsRequest.
 
-        上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
+        **参数解释**：上一页最后一条记录的ID。  **约束限制**： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param marker: The marker of this ListJobsRequest.
         :type marker: str
@@ -145,7 +145,7 @@ class ListJobsRequest:
     def page_reverse(self):
         r"""Gets the page_reverse of this ListJobsRequest.
 
-        是否反向查询。  取值： - true：查询上一页。 - false：查询下一页，默认。  使用说明： - 必须与limit一起使用。 - 当page_reverse=true时，若要查询上一页，marker取值为当前页返回值的previous_marker
+        **参数解释**：是否反向查询。  **约束限制**： - 必须与limit一起使用。 - 当page_reverse=true时，若要查询上一页，marker取值为当前页返回值的previous_marker。  **取值范围**： - true：查询上一页。 - false：查询下一页。  **默认取值**：false
 
         :return: The page_reverse of this ListJobsRequest.
         :rtype: bool
@@ -156,7 +156,7 @@ class ListJobsRequest:
     def page_reverse(self, page_reverse):
         r"""Sets the page_reverse of this ListJobsRequest.
 
-        是否反向查询。  取值： - true：查询上一页。 - false：查询下一页，默认。  使用说明： - 必须与limit一起使用。 - 当page_reverse=true时，若要查询上一页，marker取值为当前页返回值的previous_marker
+        **参数解释**：是否反向查询。  **约束限制**： - 必须与limit一起使用。 - 当page_reverse=true时，若要查询上一页，marker取值为当前页返回值的previous_marker。  **取值范围**： - true：查询上一页。 - false：查询下一页。  **默认取值**：false
 
         :param page_reverse: The page_reverse of this ListJobsRequest.
         :type page_reverse: bool
@@ -167,7 +167,7 @@ class ListJobsRequest:
     def job_id(self):
         r"""Gets the job_id of this ListJobsRequest.
 
-        参数解释：任务ID。
+        **参数解释**：任务ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The job_id of this ListJobsRequest.
         :rtype: str
@@ -178,7 +178,7 @@ class ListJobsRequest:
     def job_id(self, job_id):
         r"""Sets the job_id of this ListJobsRequest.
 
-        参数解释：任务ID。
+        **参数解释**：任务ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param job_id: The job_id of this ListJobsRequest.
         :type job_id: str
@@ -189,7 +189,7 @@ class ListJobsRequest:
     def job_type(self):
         r"""Gets the job_type of this ListJobsRequest.
 
-        参数解释：任务类型。
+        **参数解释**：任务类型。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The job_type of this ListJobsRequest.
         :rtype: str
@@ -200,7 +200,7 @@ class ListJobsRequest:
     def job_type(self, job_type):
         r"""Sets the job_type of this ListJobsRequest.
 
-        参数解释：任务类型。
+        **参数解释**：任务类型。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param job_type: The job_type of this ListJobsRequest.
         :type job_type: str
@@ -211,7 +211,7 @@ class ListJobsRequest:
     def status(self):
         r"""Gets the status of this ListJobsRequest.
 
-        参数解释：任务状态。  取值范围：INIT,RUNNING,FAIL,SUCCESS,ROLLBACKING,COMPLETE,ROLLBACK_FAIL,CANCEL
+        **参数解释**：任务状态。  **约束限制**：不涉及  **取值范围**：INIT,RUNNING,FAIL,SUCCESS,ROLLBACKING,COMPLETE,ROLLBACK_FAIL,CANCEL  **默认取值**：不涉及
 
         :return: The status of this ListJobsRequest.
         :rtype: str
@@ -222,7 +222,7 @@ class ListJobsRequest:
     def status(self, status):
         r"""Sets the status of this ListJobsRequest.
 
-        参数解释：任务状态。  取值范围：INIT,RUNNING,FAIL,SUCCESS,ROLLBACKING,COMPLETE,ROLLBACK_FAIL,CANCEL
+        **参数解释**：任务状态。  **约束限制**：不涉及  **取值范围**：INIT,RUNNING,FAIL,SUCCESS,ROLLBACKING,COMPLETE,ROLLBACK_FAIL,CANCEL  **默认取值**：不涉及
 
         :param status: The status of this ListJobsRequest.
         :type status: str
@@ -233,7 +233,7 @@ class ListJobsRequest:
     def error_code(self):
         r"""Gets the error_code of this ListJobsRequest.
 
-        参数解释： 任务的错误码。
+        **参数解释**：任务的错误码。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The error_code of this ListJobsRequest.
         :rtype: str
@@ -244,7 +244,7 @@ class ListJobsRequest:
     def error_code(self, error_code):
         r"""Sets the error_code of this ListJobsRequest.
 
-        参数解释： 任务的错误码。
+        **参数解释**：任务的错误码。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param error_code: The error_code of this ListJobsRequest.
         :type error_code: str
@@ -255,7 +255,7 @@ class ListJobsRequest:
     def resource_id(self):
         r"""Gets the resource_id of this ListJobsRequest.
 
-        参数解释：资源ID。
+        **参数解释**：资源ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The resource_id of this ListJobsRequest.
         :rtype: str
@@ -266,7 +266,7 @@ class ListJobsRequest:
     def resource_id(self, resource_id):
         r"""Sets the resource_id of this ListJobsRequest.
 
-        参数解释：资源ID。
+        **参数解释**：资源ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param resource_id: The resource_id of this ListJobsRequest.
         :type resource_id: str
@@ -277,7 +277,7 @@ class ListJobsRequest:
     def begin_time(self):
         r"""Gets the begin_time of this ListJobsRequest.
 
-        参数解释：查询任务的开始时间大于等于传入时间的任务。格式：yyyy-MM-dd'T'HH:mm:ss
+        **参数解释**：查询任务的开始时间大于等于传入时间的任务。格式：yyyy-MM-dd'T'HH:mm:ss  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The begin_time of this ListJobsRequest.
         :rtype: str
@@ -288,7 +288,7 @@ class ListJobsRequest:
     def begin_time(self, begin_time):
         r"""Sets the begin_time of this ListJobsRequest.
 
-        参数解释：查询任务的开始时间大于等于传入时间的任务。格式：yyyy-MM-dd'T'HH:mm:ss
+        **参数解释**：查询任务的开始时间大于等于传入时间的任务。格式：yyyy-MM-dd'T'HH:mm:ss  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param begin_time: The begin_time of this ListJobsRequest.
         :type begin_time: str

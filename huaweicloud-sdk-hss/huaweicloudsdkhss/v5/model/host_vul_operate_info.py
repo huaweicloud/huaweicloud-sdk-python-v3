@@ -31,9 +31,9 @@ class HostVulOperateInfo:
 
         The model defined in huaweicloud sdk
 
-        :param host_id: 主机ID
+        :param host_id: **参数解释**: 主机id **约束限制**: 不涉及 **取值范围**: 字符长度1-64 **默认取值**: 不涉及 
         :type host_id: str
-        :param vul_id_list: 漏洞列表
+        :param vul_id_list: **参数解释**: 漏洞列表 **约束限制**: 不涉及 **取值范围**: 取值1-500 **默认取值**: 不涉及 
         :type vul_id_list: list[str]
         """
         
@@ -50,7 +50,7 @@ class HostVulOperateInfo:
     def host_id(self):
         r"""Gets the host_id of this HostVulOperateInfo.
 
-        主机ID
+        **参数解释**: 主机id **约束限制**: 不涉及 **取值范围**: 字符长度1-64 **默认取值**: 不涉及 
 
         :return: The host_id of this HostVulOperateInfo.
         :rtype: str
@@ -61,7 +61,7 @@ class HostVulOperateInfo:
     def host_id(self, host_id):
         r"""Sets the host_id of this HostVulOperateInfo.
 
-        主机ID
+        **参数解释**: 主机id **约束限制**: 不涉及 **取值范围**: 字符长度1-64 **默认取值**: 不涉及 
 
         :param host_id: The host_id of this HostVulOperateInfo.
         :type host_id: str
@@ -72,7 +72,7 @@ class HostVulOperateInfo:
     def vul_id_list(self):
         r"""Gets the vul_id_list of this HostVulOperateInfo.
 
-        漏洞列表
+        **参数解释**: 漏洞列表 **约束限制**: 不涉及 **取值范围**: 取值1-500 **默认取值**: 不涉及 
 
         :return: The vul_id_list of this HostVulOperateInfo.
         :rtype: list[str]
@@ -83,7 +83,7 @@ class HostVulOperateInfo:
     def vul_id_list(self, vul_id_list):
         r"""Sets the vul_id_list of this HostVulOperateInfo.
 
-        漏洞列表
+        **参数解释**: 漏洞列表 **约束限制**: 不涉及 **取值范围**: 取值1-500 **默认取值**: 不涉及 
 
         :param vul_id_list: The vul_id_list of this HostVulOperateInfo.
         :type vul_id_list: list[str]

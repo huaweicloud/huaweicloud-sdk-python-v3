@@ -29,7 +29,7 @@ class RemoveUserFromGroupReqBody:
 
         The model defined in huaweicloud sdk
 
-        :param user_id: IAM用户ID，长度为1到64个字符，只包含字母、数字和\&quot;-\&quot;的字符串。
+        :param user_id: IAM用户ID。
         :type user_id: str
         """
         
@@ -44,7 +44,7 @@ class RemoveUserFromGroupReqBody:
     def user_id(self):
         r"""Gets the user_id of this RemoveUserFromGroupReqBody.
 
-        IAM用户ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
+        IAM用户ID。
 
         :return: The user_id of this RemoveUserFromGroupReqBody.
         :rtype: str
@@ -55,7 +55,7 @@ class RemoveUserFromGroupReqBody:
     def user_id(self, user_id):
         r"""Sets the user_id of this RemoveUserFromGroupReqBody.
 
-        IAM用户ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
+        IAM用户ID。
 
         :param user_id: The user_id of this RemoveUserFromGroupReqBody.
         :type user_id: str

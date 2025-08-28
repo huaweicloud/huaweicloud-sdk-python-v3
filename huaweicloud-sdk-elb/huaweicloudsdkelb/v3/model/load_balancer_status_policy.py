@@ -37,15 +37,15 @@ class LoadBalancerStatusPolicy:
 
         The model defined in huaweicloud sdk
 
-        :param action: 匹配后动作。  取值： - REDIRECT_TO_POOL：转发到后端服务器组。 - REDIRECT_TO_LISTENER：转发到监听器。
+        :param action: **参数解释**：匹配后动作。  **取值范围**： - REDIRECT_TO_POOL：转发到后端服务器组。 - REDIRECT_TO_LISTENER：转发到监听器。
         :type action: str
-        :param id: 转发策略ID。
+        :param id: **参数解释**：转发策略ID。  **取值范围**：不涉及
         :type id: str
-        :param provisioning_status: 转发策略的配置状态。  取值范围： - ACTIVE: 默认值，表示正常。 [- ERROR: 表示当前策略与同一监听器下的其他策略存在相同的规则配置。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs)
+        :param provisioning_status: **参数解释**：转发策略的配置状态。  **取值范围**： - ACTIVE: 默认值，表示正常。 [- ERROR: 表示当前策略与同一监听器下的其他策略存在相同的规则配置。](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs)
         :type provisioning_status: str
-        :param name: 转发策略名称。
+        :param name: **参数解释**：转发策略名称。  **取值范围**：不涉及
         :type name: str
-        :param rules: 转发规则状态信息。
+        :param rules: **参数解释**：当前转发策略下的所有转发规则状的态信息。
         :type rules: list[:class:`huaweicloudsdkelb.v3.LoadBalancerStatusL7Rule`]
         """
         
@@ -73,7 +73,7 @@ class LoadBalancerStatusPolicy:
     def action(self):
         r"""Gets the action of this LoadBalancerStatusPolicy.
 
-        匹配后动作。  取值： - REDIRECT_TO_POOL：转发到后端服务器组。 - REDIRECT_TO_LISTENER：转发到监听器。
+        **参数解释**：匹配后动作。  **取值范围**： - REDIRECT_TO_POOL：转发到后端服务器组。 - REDIRECT_TO_LISTENER：转发到监听器。
 
         :return: The action of this LoadBalancerStatusPolicy.
         :rtype: str
@@ -84,7 +84,7 @@ class LoadBalancerStatusPolicy:
     def action(self, action):
         r"""Sets the action of this LoadBalancerStatusPolicy.
 
-        匹配后动作。  取值： - REDIRECT_TO_POOL：转发到后端服务器组。 - REDIRECT_TO_LISTENER：转发到监听器。
+        **参数解释**：匹配后动作。  **取值范围**： - REDIRECT_TO_POOL：转发到后端服务器组。 - REDIRECT_TO_LISTENER：转发到监听器。
 
         :param action: The action of this LoadBalancerStatusPolicy.
         :type action: str
@@ -95,7 +95,7 @@ class LoadBalancerStatusPolicy:
     def id(self):
         r"""Gets the id of this LoadBalancerStatusPolicy.
 
-        转发策略ID。
+        **参数解释**：转发策略ID。  **取值范围**：不涉及
 
         :return: The id of this LoadBalancerStatusPolicy.
         :rtype: str
@@ -106,7 +106,7 @@ class LoadBalancerStatusPolicy:
     def id(self, id):
         r"""Sets the id of this LoadBalancerStatusPolicy.
 
-        转发策略ID。
+        **参数解释**：转发策略ID。  **取值范围**：不涉及
 
         :param id: The id of this LoadBalancerStatusPolicy.
         :type id: str
@@ -117,7 +117,7 @@ class LoadBalancerStatusPolicy:
     def provisioning_status(self):
         r"""Gets the provisioning_status of this LoadBalancerStatusPolicy.
 
-        转发策略的配置状态。  取值范围： - ACTIVE: 默认值，表示正常。 [- ERROR: 表示当前策略与同一监听器下的其他策略存在相同的规则配置。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs)
+        **参数解释**：转发策略的配置状态。  **取值范围**： - ACTIVE: 默认值，表示正常。 [- ERROR: 表示当前策略与同一监听器下的其他策略存在相同的规则配置。](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs)
 
         :return: The provisioning_status of this LoadBalancerStatusPolicy.
         :rtype: str
@@ -128,7 +128,7 @@ class LoadBalancerStatusPolicy:
     def provisioning_status(self, provisioning_status):
         r"""Sets the provisioning_status of this LoadBalancerStatusPolicy.
 
-        转发策略的配置状态。  取值范围： - ACTIVE: 默认值，表示正常。 [- ERROR: 表示当前策略与同一监听器下的其他策略存在相同的规则配置。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs)
+        **参数解释**：转发策略的配置状态。  **取值范围**： - ACTIVE: 默认值，表示正常。 [- ERROR: 表示当前策略与同一监听器下的其他策略存在相同的规则配置。](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs)
 
         :param provisioning_status: The provisioning_status of this LoadBalancerStatusPolicy.
         :type provisioning_status: str
@@ -139,7 +139,7 @@ class LoadBalancerStatusPolicy:
     def name(self):
         r"""Gets the name of this LoadBalancerStatusPolicy.
 
-        转发策略名称。
+        **参数解释**：转发策略名称。  **取值范围**：不涉及
 
         :return: The name of this LoadBalancerStatusPolicy.
         :rtype: str
@@ -150,7 +150,7 @@ class LoadBalancerStatusPolicy:
     def name(self, name):
         r"""Sets the name of this LoadBalancerStatusPolicy.
 
-        转发策略名称。
+        **参数解释**：转发策略名称。  **取值范围**：不涉及
 
         :param name: The name of this LoadBalancerStatusPolicy.
         :type name: str
@@ -161,7 +161,7 @@ class LoadBalancerStatusPolicy:
     def rules(self):
         r"""Gets the rules of this LoadBalancerStatusPolicy.
 
-        转发规则状态信息。
+        **参数解释**：当前转发策略下的所有转发规则状的态信息。
 
         :return: The rules of this LoadBalancerStatusPolicy.
         :rtype: list[:class:`huaweicloudsdkelb.v3.LoadBalancerStatusL7Rule`]
@@ -172,7 +172,7 @@ class LoadBalancerStatusPolicy:
     def rules(self, rules):
         r"""Sets the rules of this LoadBalancerStatusPolicy.
 
-        转发规则状态信息。
+        **参数解释**：当前转发策略下的所有转发规则状的态信息。
 
         :param rules: The rules of this LoadBalancerStatusPolicy.
         :type rules: list[:class:`huaweicloudsdkelb.v3.LoadBalancerStatusL7Rule`]

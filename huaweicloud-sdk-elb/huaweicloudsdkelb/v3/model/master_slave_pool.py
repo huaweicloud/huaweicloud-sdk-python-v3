@@ -67,41 +67,41 @@ class MasterSlavePool:
 
         The model defined in huaweicloud sdk
 
-        :param description: 后端服务器组的描述信息。
+        :param description: **参数解释**：后端服务器组的描述信息。  **取值范围**：不涉及
         :type description: str
-        :param id: 后端服务器组的ID。
+        :param id: **参数解释**：后端服务器组的ID。  **取值范围**：不涉及
         :type id: str
-        :param lb_algorithm: 后端服务器组的负载均衡算法。  取值： - ROUND_ROBIN：加权轮询算法。 - LEAST_CONNECTIONS：加权最少连接算法。 - SOURCE_IP：源IP算法。 - QUIC_CID：连接ID算法。  使用说明： - 当该字段的取值为SOURCE_IP或QUIC_CID时，后端服务器组绑定的后端服务器的weight字段无效。 - 只有pool的protocol为QUIC时，才支持QUIC_CID算法。  [不支持QUIC_CID。](tag:tm,hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC_CID。](tag:dt)
+        :param lb_algorithm: **参数解释**：后端服务器组的负载均衡算法。  **取值范围**：不涉及 - ROUND_ROBIN：加权轮询算法。 - LEAST_CONNECTIONS：加权最少连接算法。 - SOURCE_IP：源IP算法。 - QUIC_CID：连接ID算法。  [不支持QUIC_CID。](tag:tm,hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC_CID。](tag:dt)
         :type lb_algorithm: str
-        :param listeners: 后端服务器组关联的监听器ID列表。
+        :param listeners: **参数解释**：后端服务器组关联的监听器ID列表。
         :type listeners: list[:class:`huaweicloudsdkelb.v3.ListenerRef`]
-        :param loadbalancers: 后端服务器组关联的负载均衡器ID列表。
+        :param loadbalancers: **参数解释**：后端服务器组关联的负载均衡器ID列表。
         :type loadbalancers: list[:class:`huaweicloudsdkelb.v3.LoadBalancerRef`]
-        :param members: 后端服务器组中的后端服务器列表。
+        :param members: **参数解释**：后端服务器组中的后端服务器列表。
         :type members: list[:class:`huaweicloudsdkelb.v3.MasterSlaveMember`]
-        :param name: 后端服务器组的名称。
+        :param name: **参数解释**：后端服务器组的名称。  **取值范围**：不涉及
         :type name: str
-        :param project_id: 后端服务器组所在的项目ID。
+        :param project_id: **参数解释**：后端服务器组所在的项目ID。  **取值范围**：不涉及
         :type project_id: str
-        :param protocol: 后端服务器组的后端协议。  取值：TCP、UDP、QUIC、TLS。  使用说明： - listener的protocol为UDP时，pool的protocol必须为UDP或QUIC。 - listener的protocol为TCP时，pool的protocol必须为TCP。 - listener的protocol为TLS时，pool的protocol必须为TLS或TCP。 - 其他协议监听器不支持主备后端服务器组。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC。](tag:dt)
+        :param protocol: **参数解释**：后端服务器组的后端协议。  **取值范围**：不涉及TCP、UDP、QUIC、TLS。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC。](tag:dt)
         :type protocol: str
         :param session_persistence: 
         :type session_persistence: :class:`huaweicloudsdkelb.v3.SessionPersistence`
-        :param ip_version: 后端服务器组支持的IP版本。  [取值： - 共享型：固定为v4； -  独享型：取值dualstack、v4、v6。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。  当协议为HTTP时，ip_version为v4。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs)  [取值：dualstack、v4、v6。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。 当协议为HTTP时，ip_version为v4。](tag:hcso_dt)  [不支持IPv6，只会返回v4。](tag:dt)
+        :param ip_version: **参数解释**：后端服务器组支持的IP版本。  [**取值范围**： - 共享型：固定为v4； - 独享型：取值dualstack、v4。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。当协议为HTTP时，ip_version为v4。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs)  [**取值范围**：dualstack、v4。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。当协议为HTTP时，ip_version为v4。](tag:hcso_dt)  [不支持IPv6，只会返回v4。](tag:dt)
         :type ip_version: str
-        :param created_at: 创建时间。格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，UTC时区。  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt,hk_tm)
+        :param created_at: **参数解释**：创建时间。格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，UTC时区。  **取值范围**：不涉及  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt,hk_tm)
         :type created_at: str
-        :param updated_at: 更新时间。格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，UTC时区。  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt,hk_tm)
+        :param updated_at: **参数解释**：更新时间。格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，UTC时区。  **取值范围**：不涉及  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt,hk_tm)
         :type updated_at: str
-        :param vpc_id: 后端服务器组关联的虚拟私有云的ID。
+        :param vpc_id: **参数解释**：后端服务器组关联的虚拟私有云的ID。  **取值范围**：不涉及
         :type vpc_id: str
-        :param type: 后端服务器组的类型。  取值： - instance：允许任意类型的后端，type指定为该类型时，vpc_id是必选字段。 - ip：只能添加跨VPC后端，type指定为该类型时，vpc_id不允许指定。 - 空字符串（\&quot;\&quot;）：允许任意类型的后端
+        :param type: **参数解释**：后端服务器组的类型。  **取值范围**：不涉及 - instance：允许任意类型的后端，type指定为该类型时，vpc_id是必选字段。 - ip：只能添加IP类型后端，type指定为该类型时，vpc_id不允许指定。 - 空字符串（\&quot;\&quot;）：允许任意类型的后端
         :type type: str
-        :param enterprise_project_id: 后端服务器组的企业项目ID。无论创建什么企业项目，都在默认企业项目下。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
+        :param enterprise_project_id: **参数解释**：资源所属的企业项目ID。  **取值范围**： - \&quot;0\&quot;：表示资源属于default企业项目。 - UUID格式的字符串，表示非默认企业项目。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
         :type enterprise_project_id: str
         :param healthmonitor: 
         :type healthmonitor: :class:`huaweicloudsdkelb.v3.MasterSlaveHealthMonitor`
-        :param any_port_enable: 后端是否开启端口透传。开启后，后端服务器端口与前端监听器端口保持一致。关闭后，请求会转发给后端服务器protocol_port字段指定端口。取值：false不开启，true开启。  使用说明： - 仅QUIC,TCP,UDP的pool支持。
+        :param any_port_enable: **参数解释**：后端是否开启全端口转发。开启后，后端服务器端口与前端监听器端口保持一致。关闭后，请求会转发给后端服务器protocol_port字段指定端口。取值：false 不开启，true 开启。  **取值范围**：不涉及
         :type any_port_enable: bool
         :param connection_drain: 
         :type connection_drain: :class:`huaweicloudsdkelb.v3.ConnectionDrain`
@@ -161,7 +161,7 @@ class MasterSlavePool:
     def description(self):
         r"""Gets the description of this MasterSlavePool.
 
-        后端服务器组的描述信息。
+        **参数解释**：后端服务器组的描述信息。  **取值范围**：不涉及
 
         :return: The description of this MasterSlavePool.
         :rtype: str
@@ -172,7 +172,7 @@ class MasterSlavePool:
     def description(self, description):
         r"""Sets the description of this MasterSlavePool.
 
-        后端服务器组的描述信息。
+        **参数解释**：后端服务器组的描述信息。  **取值范围**：不涉及
 
         :param description: The description of this MasterSlavePool.
         :type description: str
@@ -183,7 +183,7 @@ class MasterSlavePool:
     def id(self):
         r"""Gets the id of this MasterSlavePool.
 
-        后端服务器组的ID。
+        **参数解释**：后端服务器组的ID。  **取值范围**：不涉及
 
         :return: The id of this MasterSlavePool.
         :rtype: str
@@ -194,7 +194,7 @@ class MasterSlavePool:
     def id(self, id):
         r"""Sets the id of this MasterSlavePool.
 
-        后端服务器组的ID。
+        **参数解释**：后端服务器组的ID。  **取值范围**：不涉及
 
         :param id: The id of this MasterSlavePool.
         :type id: str
@@ -205,7 +205,7 @@ class MasterSlavePool:
     def lb_algorithm(self):
         r"""Gets the lb_algorithm of this MasterSlavePool.
 
-        后端服务器组的负载均衡算法。  取值： - ROUND_ROBIN：加权轮询算法。 - LEAST_CONNECTIONS：加权最少连接算法。 - SOURCE_IP：源IP算法。 - QUIC_CID：连接ID算法。  使用说明： - 当该字段的取值为SOURCE_IP或QUIC_CID时，后端服务器组绑定的后端服务器的weight字段无效。 - 只有pool的protocol为QUIC时，才支持QUIC_CID算法。  [不支持QUIC_CID。](tag:tm,hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC_CID。](tag:dt)
+        **参数解释**：后端服务器组的负载均衡算法。  **取值范围**：不涉及 - ROUND_ROBIN：加权轮询算法。 - LEAST_CONNECTIONS：加权最少连接算法。 - SOURCE_IP：源IP算法。 - QUIC_CID：连接ID算法。  [不支持QUIC_CID。](tag:tm,hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC_CID。](tag:dt)
 
         :return: The lb_algorithm of this MasterSlavePool.
         :rtype: str
@@ -216,7 +216,7 @@ class MasterSlavePool:
     def lb_algorithm(self, lb_algorithm):
         r"""Sets the lb_algorithm of this MasterSlavePool.
 
-        后端服务器组的负载均衡算法。  取值： - ROUND_ROBIN：加权轮询算法。 - LEAST_CONNECTIONS：加权最少连接算法。 - SOURCE_IP：源IP算法。 - QUIC_CID：连接ID算法。  使用说明： - 当该字段的取值为SOURCE_IP或QUIC_CID时，后端服务器组绑定的后端服务器的weight字段无效。 - 只有pool的protocol为QUIC时，才支持QUIC_CID算法。  [不支持QUIC_CID。](tag:tm,hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC_CID。](tag:dt)
+        **参数解释**：后端服务器组的负载均衡算法。  **取值范围**：不涉及 - ROUND_ROBIN：加权轮询算法。 - LEAST_CONNECTIONS：加权最少连接算法。 - SOURCE_IP：源IP算法。 - QUIC_CID：连接ID算法。  [不支持QUIC_CID。](tag:tm,hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC_CID。](tag:dt)
 
         :param lb_algorithm: The lb_algorithm of this MasterSlavePool.
         :type lb_algorithm: str
@@ -227,7 +227,7 @@ class MasterSlavePool:
     def listeners(self):
         r"""Gets the listeners of this MasterSlavePool.
 
-        后端服务器组关联的监听器ID列表。
+        **参数解释**：后端服务器组关联的监听器ID列表。
 
         :return: The listeners of this MasterSlavePool.
         :rtype: list[:class:`huaweicloudsdkelb.v3.ListenerRef`]
@@ -238,7 +238,7 @@ class MasterSlavePool:
     def listeners(self, listeners):
         r"""Sets the listeners of this MasterSlavePool.
 
-        后端服务器组关联的监听器ID列表。
+        **参数解释**：后端服务器组关联的监听器ID列表。
 
         :param listeners: The listeners of this MasterSlavePool.
         :type listeners: list[:class:`huaweicloudsdkelb.v3.ListenerRef`]
@@ -249,7 +249,7 @@ class MasterSlavePool:
     def loadbalancers(self):
         r"""Gets the loadbalancers of this MasterSlavePool.
 
-        后端服务器组关联的负载均衡器ID列表。
+        **参数解释**：后端服务器组关联的负载均衡器ID列表。
 
         :return: The loadbalancers of this MasterSlavePool.
         :rtype: list[:class:`huaweicloudsdkelb.v3.LoadBalancerRef`]
@@ -260,7 +260,7 @@ class MasterSlavePool:
     def loadbalancers(self, loadbalancers):
         r"""Sets the loadbalancers of this MasterSlavePool.
 
-        后端服务器组关联的负载均衡器ID列表。
+        **参数解释**：后端服务器组关联的负载均衡器ID列表。
 
         :param loadbalancers: The loadbalancers of this MasterSlavePool.
         :type loadbalancers: list[:class:`huaweicloudsdkelb.v3.LoadBalancerRef`]
@@ -271,7 +271,7 @@ class MasterSlavePool:
     def members(self):
         r"""Gets the members of this MasterSlavePool.
 
-        后端服务器组中的后端服务器列表。
+        **参数解释**：后端服务器组中的后端服务器列表。
 
         :return: The members of this MasterSlavePool.
         :rtype: list[:class:`huaweicloudsdkelb.v3.MasterSlaveMember`]
@@ -282,7 +282,7 @@ class MasterSlavePool:
     def members(self, members):
         r"""Sets the members of this MasterSlavePool.
 
-        后端服务器组中的后端服务器列表。
+        **参数解释**：后端服务器组中的后端服务器列表。
 
         :param members: The members of this MasterSlavePool.
         :type members: list[:class:`huaweicloudsdkelb.v3.MasterSlaveMember`]
@@ -293,7 +293,7 @@ class MasterSlavePool:
     def name(self):
         r"""Gets the name of this MasterSlavePool.
 
-        后端服务器组的名称。
+        **参数解释**：后端服务器组的名称。  **取值范围**：不涉及
 
         :return: The name of this MasterSlavePool.
         :rtype: str
@@ -304,7 +304,7 @@ class MasterSlavePool:
     def name(self, name):
         r"""Sets the name of this MasterSlavePool.
 
-        后端服务器组的名称。
+        **参数解释**：后端服务器组的名称。  **取值范围**：不涉及
 
         :param name: The name of this MasterSlavePool.
         :type name: str
@@ -315,7 +315,7 @@ class MasterSlavePool:
     def project_id(self):
         r"""Gets the project_id of this MasterSlavePool.
 
-        后端服务器组所在的项目ID。
+        **参数解释**：后端服务器组所在的项目ID。  **取值范围**：不涉及
 
         :return: The project_id of this MasterSlavePool.
         :rtype: str
@@ -326,7 +326,7 @@ class MasterSlavePool:
     def project_id(self, project_id):
         r"""Sets the project_id of this MasterSlavePool.
 
-        后端服务器组所在的项目ID。
+        **参数解释**：后端服务器组所在的项目ID。  **取值范围**：不涉及
 
         :param project_id: The project_id of this MasterSlavePool.
         :type project_id: str
@@ -337,7 +337,7 @@ class MasterSlavePool:
     def protocol(self):
         r"""Gets the protocol of this MasterSlavePool.
 
-        后端服务器组的后端协议。  取值：TCP、UDP、QUIC、TLS。  使用说明： - listener的protocol为UDP时，pool的protocol必须为UDP或QUIC。 - listener的protocol为TCP时，pool的protocol必须为TCP。 - listener的protocol为TLS时，pool的protocol必须为TLS或TCP。 - 其他协议监听器不支持主备后端服务器组。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC。](tag:dt)
+        **参数解释**：后端服务器组的后端协议。  **取值范围**：不涉及TCP、UDP、QUIC、TLS。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC。](tag:dt)
 
         :return: The protocol of this MasterSlavePool.
         :rtype: str
@@ -348,7 +348,7 @@ class MasterSlavePool:
     def protocol(self, protocol):
         r"""Sets the protocol of this MasterSlavePool.
 
-        后端服务器组的后端协议。  取值：TCP、UDP、QUIC、TLS。  使用说明： - listener的protocol为UDP时，pool的protocol必须为UDP或QUIC。 - listener的protocol为TCP时，pool的protocol必须为TCP。 - listener的protocol为TLS时，pool的protocol必须为TLS或TCP。 - 其他协议监听器不支持主备后端服务器组。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC。](tag:dt)
+        **参数解释**：后端服务器组的后端协议。  **取值范围**：不涉及TCP、UDP、QUIC、TLS。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC。](tag:dt)
 
         :param protocol: The protocol of this MasterSlavePool.
         :type protocol: str
@@ -377,7 +377,7 @@ class MasterSlavePool:
     def ip_version(self):
         r"""Gets the ip_version of this MasterSlavePool.
 
-        后端服务器组支持的IP版本。  [取值： - 共享型：固定为v4； -  独享型：取值dualstack、v4、v6。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。  当协议为HTTP时，ip_version为v4。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs)  [取值：dualstack、v4、v6。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。 当协议为HTTP时，ip_version为v4。](tag:hcso_dt)  [不支持IPv6，只会返回v4。](tag:dt)
+        **参数解释**：后端服务器组支持的IP版本。  [**取值范围**： - 共享型：固定为v4； - 独享型：取值dualstack、v4。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。当协议为HTTP时，ip_version为v4。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs)  [**取值范围**：dualstack、v4。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。当协议为HTTP时，ip_version为v4。](tag:hcso_dt)  [不支持IPv6，只会返回v4。](tag:dt)
 
         :return: The ip_version of this MasterSlavePool.
         :rtype: str
@@ -388,7 +388,7 @@ class MasterSlavePool:
     def ip_version(self, ip_version):
         r"""Sets the ip_version of this MasterSlavePool.
 
-        后端服务器组支持的IP版本。  [取值： - 共享型：固定为v4； -  独享型：取值dualstack、v4、v6。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。  当协议为HTTP时，ip_version为v4。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs)  [取值：dualstack、v4、v6。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。 当协议为HTTP时，ip_version为v4。](tag:hcso_dt)  [不支持IPv6，只会返回v4。](tag:dt)
+        **参数解释**：后端服务器组支持的IP版本。  [**取值范围**： - 共享型：固定为v4； - 独享型：取值dualstack、v4。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。当协议为HTTP时，ip_version为v4。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs)  [**取值范围**：dualstack、v4。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。当协议为HTTP时，ip_version为v4。](tag:hcso_dt)  [不支持IPv6，只会返回v4。](tag:dt)
 
         :param ip_version: The ip_version of this MasterSlavePool.
         :type ip_version: str
@@ -399,7 +399,7 @@ class MasterSlavePool:
     def created_at(self):
         r"""Gets the created_at of this MasterSlavePool.
 
-        创建时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt,hk_tm)
+        **参数解释**：创建时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。  **取值范围**：不涉及  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt,hk_tm)
 
         :return: The created_at of this MasterSlavePool.
         :rtype: str
@@ -410,7 +410,7 @@ class MasterSlavePool:
     def created_at(self, created_at):
         r"""Sets the created_at of this MasterSlavePool.
 
-        创建时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt,hk_tm)
+        **参数解释**：创建时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。  **取值范围**：不涉及  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt,hk_tm)
 
         :param created_at: The created_at of this MasterSlavePool.
         :type created_at: str
@@ -421,7 +421,7 @@ class MasterSlavePool:
     def updated_at(self):
         r"""Gets the updated_at of this MasterSlavePool.
 
-        更新时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt,hk_tm)
+        **参数解释**：更新时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。  **取值范围**：不涉及  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt,hk_tm)
 
         :return: The updated_at of this MasterSlavePool.
         :rtype: str
@@ -432,7 +432,7 @@ class MasterSlavePool:
     def updated_at(self, updated_at):
         r"""Sets the updated_at of this MasterSlavePool.
 
-        更新时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt,hk_tm)
+        **参数解释**：更新时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。  **取值范围**：不涉及  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt,hk_tm)
 
         :param updated_at: The updated_at of this MasterSlavePool.
         :type updated_at: str
@@ -443,7 +443,7 @@ class MasterSlavePool:
     def vpc_id(self):
         r"""Gets the vpc_id of this MasterSlavePool.
 
-        后端服务器组关联的虚拟私有云的ID。
+        **参数解释**：后端服务器组关联的虚拟私有云的ID。  **取值范围**：不涉及
 
         :return: The vpc_id of this MasterSlavePool.
         :rtype: str
@@ -454,7 +454,7 @@ class MasterSlavePool:
     def vpc_id(self, vpc_id):
         r"""Sets the vpc_id of this MasterSlavePool.
 
-        后端服务器组关联的虚拟私有云的ID。
+        **参数解释**：后端服务器组关联的虚拟私有云的ID。  **取值范围**：不涉及
 
         :param vpc_id: The vpc_id of this MasterSlavePool.
         :type vpc_id: str
@@ -465,7 +465,7 @@ class MasterSlavePool:
     def type(self):
         r"""Gets the type of this MasterSlavePool.
 
-        后端服务器组的类型。  取值： - instance：允许任意类型的后端，type指定为该类型时，vpc_id是必选字段。 - ip：只能添加跨VPC后端，type指定为该类型时，vpc_id不允许指定。 - 空字符串（\"\"）：允许任意类型的后端
+        **参数解释**：后端服务器组的类型。  **取值范围**：不涉及 - instance：允许任意类型的后端，type指定为该类型时，vpc_id是必选字段。 - ip：只能添加IP类型后端，type指定为该类型时，vpc_id不允许指定。 - 空字符串（\"\"）：允许任意类型的后端
 
         :return: The type of this MasterSlavePool.
         :rtype: str
@@ -476,7 +476,7 @@ class MasterSlavePool:
     def type(self, type):
         r"""Sets the type of this MasterSlavePool.
 
-        后端服务器组的类型。  取值： - instance：允许任意类型的后端，type指定为该类型时，vpc_id是必选字段。 - ip：只能添加跨VPC后端，type指定为该类型时，vpc_id不允许指定。 - 空字符串（\"\"）：允许任意类型的后端
+        **参数解释**：后端服务器组的类型。  **取值范围**：不涉及 - instance：允许任意类型的后端，type指定为该类型时，vpc_id是必选字段。 - ip：只能添加IP类型后端，type指定为该类型时，vpc_id不允许指定。 - 空字符串（\"\"）：允许任意类型的后端
 
         :param type: The type of this MasterSlavePool.
         :type type: str
@@ -487,7 +487,7 @@ class MasterSlavePool:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this MasterSlavePool.
 
-        后端服务器组的企业项目ID。无论创建什么企业项目，都在默认企业项目下。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
+        **参数解释**：资源所属的企业项目ID。  **取值范围**： - \"0\"：表示资源属于default企业项目。 - UUID格式的字符串，表示非默认企业项目。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
 
         :return: The enterprise_project_id of this MasterSlavePool.
         :rtype: str
@@ -498,7 +498,7 @@ class MasterSlavePool:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this MasterSlavePool.
 
-        后端服务器组的企业项目ID。无论创建什么企业项目，都在默认企业项目下。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
+        **参数解释**：资源所属的企业项目ID。  **取值范围**： - \"0\"：表示资源属于default企业项目。 - UUID格式的字符串，表示非默认企业项目。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
 
         :param enterprise_project_id: The enterprise_project_id of this MasterSlavePool.
         :type enterprise_project_id: str
@@ -527,7 +527,7 @@ class MasterSlavePool:
     def any_port_enable(self):
         r"""Gets the any_port_enable of this MasterSlavePool.
 
-        后端是否开启端口透传。开启后，后端服务器端口与前端监听器端口保持一致。关闭后，请求会转发给后端服务器protocol_port字段指定端口。取值：false不开启，true开启。  使用说明： - 仅QUIC,TCP,UDP的pool支持。
+        **参数解释**：后端是否开启全端口转发。开启后，后端服务器端口与前端监听器端口保持一致。关闭后，请求会转发给后端服务器protocol_port字段指定端口。取值：false 不开启，true 开启。  **取值范围**：不涉及
 
         :return: The any_port_enable of this MasterSlavePool.
         :rtype: bool
@@ -538,7 +538,7 @@ class MasterSlavePool:
     def any_port_enable(self, any_port_enable):
         r"""Sets the any_port_enable of this MasterSlavePool.
 
-        后端是否开启端口透传。开启后，后端服务器端口与前端监听器端口保持一致。关闭后，请求会转发给后端服务器protocol_port字段指定端口。取值：false不开启，true开启。  使用说明： - 仅QUIC,TCP,UDP的pool支持。
+        **参数解释**：后端是否开启全端口转发。开启后，后端服务器端口与前端监听器端口保持一致。关闭后，请求会转发给后端服务器protocol_port字段指定端口。取值：false 不开启，true 开启。  **取值范围**：不涉及
 
         :param any_port_enable: The any_port_enable of this MasterSlavePool.
         :type any_port_enable: bool

@@ -33,11 +33,11 @@ class RecycleBinResponseBody:
 
         The model defined in huaweicloud sdk
 
-        :param project_id: 参数解释：项目ID。
+        :param project_id: **参数解释**：项目ID。获取方式请参见[获取项目ID](elb_fl_0008.xml)。  **取值范围**：长度为32个字符，由小写字母和数字组成。
         :type project_id: str
         :param policy: 
         :type policy: :class:`huaweicloudsdkelb.v3.RecycleBinPolicy`
-        :param enable: 是否启用回收站。  取值： - true：启用回收站。 - false：不启用回收站。
+        :param enable: **参数解释**：是否启用回收站。  **取值范围**： - true：启用回收站。 - false：不启用回收站。
         :type enable: bool
         """
         
@@ -59,7 +59,7 @@ class RecycleBinResponseBody:
     def project_id(self):
         r"""Gets the project_id of this RecycleBinResponseBody.
 
-        参数解释：项目ID。
+        **参数解释**：项目ID。获取方式请参见[获取项目ID](elb_fl_0008.xml)。  **取值范围**：长度为32个字符，由小写字母和数字组成。
 
         :return: The project_id of this RecycleBinResponseBody.
         :rtype: str
@@ -70,7 +70,7 @@ class RecycleBinResponseBody:
     def project_id(self, project_id):
         r"""Sets the project_id of this RecycleBinResponseBody.
 
-        参数解释：项目ID。
+        **参数解释**：项目ID。获取方式请参见[获取项目ID](elb_fl_0008.xml)。  **取值范围**：长度为32个字符，由小写字母和数字组成。
 
         :param project_id: The project_id of this RecycleBinResponseBody.
         :type project_id: str
@@ -99,7 +99,7 @@ class RecycleBinResponseBody:
     def enable(self):
         r"""Gets the enable of this RecycleBinResponseBody.
 
-        是否启用回收站。  取值： - true：启用回收站。 - false：不启用回收站。
+        **参数解释**：是否启用回收站。  **取值范围**： - true：启用回收站。 - false：不启用回收站。
 
         :return: The enable of this RecycleBinResponseBody.
         :rtype: bool
@@ -110,7 +110,7 @@ class RecycleBinResponseBody:
     def enable(self, enable):
         r"""Sets the enable of this RecycleBinResponseBody.
 
-        是否启用回收站。  取值： - true：启用回收站。 - false：不启用回收站。
+        **参数解释**：是否启用回收站。  **取值范围**： - true：启用回收站。 - false：不启用回收站。
 
         :param enable: The enable of this RecycleBinResponseBody.
         :type enable: bool

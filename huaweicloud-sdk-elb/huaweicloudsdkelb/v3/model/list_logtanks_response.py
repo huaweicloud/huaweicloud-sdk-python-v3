@@ -34,11 +34,11 @@ class ListLogtanksResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param logtanks: 描述信息
+        :param logtanks: **参数解释**：描述信息
         :type logtanks: list[:class:`huaweicloudsdkelb.v3.Logtank`]
         :param page_info: 
         :type page_info: :class:`huaweicloudsdkelb.v3.PageInfo`
-        :param request_id: 请求ID。  注：自动生成 。
+        :param request_id: **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
         :type request_id: str
         """
         
@@ -60,7 +60,7 @@ class ListLogtanksResponse(SdkResponse):
     def logtanks(self):
         r"""Gets the logtanks of this ListLogtanksResponse.
 
-        描述信息
+        **参数解释**：描述信息
 
         :return: The logtanks of this ListLogtanksResponse.
         :rtype: list[:class:`huaweicloudsdkelb.v3.Logtank`]
@@ -71,7 +71,7 @@ class ListLogtanksResponse(SdkResponse):
     def logtanks(self, logtanks):
         r"""Sets the logtanks of this ListLogtanksResponse.
 
-        描述信息
+        **参数解释**：描述信息
 
         :param logtanks: The logtanks of this ListLogtanksResponse.
         :type logtanks: list[:class:`huaweicloudsdkelb.v3.Logtank`]
@@ -100,7 +100,7 @@ class ListLogtanksResponse(SdkResponse):
     def request_id(self):
         r"""Gets the request_id of this ListLogtanksResponse.
 
-        请求ID。  注：自动生成 。
+        **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
 
         :return: The request_id of this ListLogtanksResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class ListLogtanksResponse(SdkResponse):
     def request_id(self, request_id):
         r"""Sets the request_id of this ListLogtanksResponse.
 
-        请求ID。  注：自动生成 。
+        **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
 
         :param request_id: The request_id of this ListLogtanksResponse.
         :type request_id: str

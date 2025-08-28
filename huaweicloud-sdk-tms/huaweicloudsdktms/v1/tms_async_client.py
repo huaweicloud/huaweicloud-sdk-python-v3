@@ -707,6 +707,75 @@ class TmsAsyncClient(Client):
 
         return http_info
 
+    def list_tags_async(self, request):
+        r"""查询标签列表
+
+        查询指定区域和实例类型中租户的所有标签
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListTags
+        :type request: :class:`huaweicloudsdktms.v1.ListTagsRequest`
+        :rtype: :class:`huaweicloudsdktms.v1.ListTagsResponse`
+        """
+        http_info = self._list_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_tags_async_invoker(self, request):
+        http_info = self._list_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_tags_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'resource_types' in local_var_params:
+            query_params.append(('resource_types', local_var_params['resource_types']))
+        if 'project_id' in local_var_params:
+            query_params.append(('project_id', local_var_params['project_id']))
+        if 'tag_types' in local_var_params:
+            query_params.append(('tag_types', local_var_params['tag_types']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_api_version_async(self, request):
         r"""查询API版本号详情
 

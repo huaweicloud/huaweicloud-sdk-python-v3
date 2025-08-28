@@ -83,59 +83,59 @@ class Pool:
 
         The model defined in huaweicloud sdk
 
-        :param admin_state_up: 参数解释：后端服务器组的管理状态。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
+        :param admin_state_up: **参数解释**：后端服务器组的管理状态。只支持设置为true。  **取值范围**：true 启用。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
         :type admin_state_up: bool
         :param az_affinity: 
         :type az_affinity: :class:`huaweicloudsdkelb.v3.AzAffinity`
-        :param description: 参数解释：后端服务器组的描述信息。
+        :param description: **参数解释**：后端服务器组的描述信息。  **取值范围**：不涉及
         :type description: str
-        :param healthmonitor_id: 参数解释：后端服务器组关联的健康检查的ID。
+        :param healthmonitor_id: **参数解释**：后端服务器组关联的健康检查的ID。  **取值范围**：不涉及
         :type healthmonitor_id: str
-        :param id: 参数解释：后端服务器组的ID。
+        :param id: **参数解释**：后端服务器组的ID。  **取值范围**：不涉及
         :type id: str
-        :param lb_algorithm: 参数解释：后端服务器组的负载均衡算法。  约束限制： - 当该字段的取值为SOURCE_IP或QUIC_CID时，后端服务器组绑定的后端服务器的weight字段无效。 - 只有pool的protocol为QUIC时，才支持QUIC_CID算法。  取值范围： - ROUND_ROBIN：加权轮询算法。 - LEAST_CONNECTIONS：加权最少连接算法。 - SOURCE_IP：源IP算法。 - QUIC_CID：连接ID算法。 [- 2_TUPLE_HASH：二元组hash算法，仅IP类型的pool支持。 - 3_TUPLE_HASH：三元组hash算法，仅IP类型的pool支持。 - 5_TUPLE_HASH：五元组hash算法，仅IP类型的pool支持。 - IP型pool不指定该字段时，默认设置为5_TUPLE_HASH。](tag:hws_eu)  [不支持QUIC_CID算法。](tag:hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC_CID。](tag:dt)
+        :param lb_algorithm: **参数解释**：后端服务器组的负载均衡算法。  **取值范围**： - ROUND_ROBIN：加权轮询算法。 - LEAST_CONNECTIONS：加权最少连接算法。 - SOURCE_IP：源IP算法。 - QUIC_CID：连接ID算法。 [- 2_TUPLE_HASH：二元组hash算法，仅IP类型的pool支持。 - 3_TUPLE_HASH：三元组hash算法，仅IP类型的pool支持。 - 5_TUPLE_HASH：五元组hash算法，仅IP类型的pool支持。 - IP型pool不指定该字段时，默认设置为5_TUPLE_HASH。](tag:hws_eu)  [不支持QUIC_CID算法。](tag:hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC_CID。](tag:dt)
         :type lb_algorithm: str
-        :param listeners: 参数解释：后端服务器组关联的监听器ID列表。
+        :param listeners: **参数解释**：后端服务器组关联的监听器ID列表。
         :type listeners: list[:class:`huaweicloudsdkelb.v3.ListenerRef`]
-        :param loadbalancers: 参数解释：后端服务器组关联的负载均衡器ID列表。
+        :param loadbalancers: **参数解释**：后端服务器组关联的负载均衡器ID列表。
         :type loadbalancers: list[:class:`huaweicloudsdkelb.v3.LoadBalancerRef`]
-        :param members: 参数解释：后端服务器组中的后端服务器ID列表。
+        :param members: **参数解释**：后端服务器组中的后端服务器ID列表。
         :type members: list[:class:`huaweicloudsdkelb.v3.MemberRef`]
-        :param name: 参数解释：后端服务器组的名称。
+        :param name: **参数解释**：后端服务器组的名称。  **取值范围**：不涉及
         :type name: str
-        :param project_id: 参数解释：后端服务器组所在的项目ID。
+        :param project_id: **参数解释**：后端服务器组所在的项目ID。  **取值范围**：不涉及
         :type project_id: str
-        :param protocol: 参数解释：后端服务器组的后端协议。  约束限制： - listener的protocol为UDP时，pool的protocol必须为UDP或QUIC。 - listener的protocol为TCP时pool的protocol必须为TCP。 [- listener的protocol为IP时，pool的protocol必须为IP。](tag:hws_eu) - listener的protocol为HTTP时，pool的protocol必须为HTTP。 - listener的protocol为HTTPS时，pool的protocol必须为HTTP、HTTPS或GRPC。 - listener的protocol为TERMINATED_HTTPS时，pool的protocol必须为HTTP。 - listener的protocol为QUIC时，pool的protocol必须为HTTP、HTTPS或GRPC。 - listener的protocol为TLS时，pool的protocol必须为TLS或TCP。 - 若pool的protocol为QUIC，则必须开启session_persistence且type为SOURCE_IP。 - 若pool的protocol为GRPC，关联监听器必须开启HTTP2。 - 若pool的protocol为TCP,则pool的ip_version字段取值必须是4。  取值范围：TCP、UDP、[IP、](tag:hws_eu)TLS、GRPC、HTTP、HTTPS和QUIC。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC。](tag:dt)
+        :param protocol: **参数解释**：后端服务器组的后端协议。  **取值范围**：TCP、UDP、[IP、](tag:hws_eu)TLS、GRPC、HTTP、HTTPS和QUIC。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC。](tag:dt)
         :type protocol: str
         :param session_persistence: 
         :type session_persistence: :class:`huaweicloudsdkelb.v3.SessionPersistence`
-        :param ip_version: 参数解释：后端服务器组支持的IP版本。  [取值范围： - 共享型：固定为v4； - 独享型：取值dualstack、v4。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。当协议为HTTP时，ip_version为v4。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs)  [取值范围：dualstack、v4。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。当协议为HTTP时，ip_version为v4。](tag:hcso_dt)  [不支持IPv6，只会返回v4。](tag:dt)
+        :param ip_version: **参数解释**：后端服务器组支持的IP版本。  [**取值范围**： - 共享型：固定为v4； - 独享型：取值dualstack、v4。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。当协议为HTTP时，ip_version为v4。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs)  [**取值范围**：dualstack、v4。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。当协议为HTTP时，ip_version为v4。](tag:hcso_dt)  [不支持IPv6，只会返回v4。](tag:dt)
         :type ip_version: str
         :param slow_start: 
         :type slow_start: :class:`huaweicloudsdkelb.v3.SlowStart`
-        :param member_deletion_protection_enable: 参数解释：是否开启后端服务器移除保护。开关开启后，不允许从该ELB后端服务器组下移除后端服务器。  约束限制： - 开关开启后，移除member会报错拦截，涉及如下API:   + 级联删除负载均衡器（DELETE /v3/{project_id}/elb/loadbalancers/{loadbalancer_id}/force-elb）   + 级联删除负载均衡器及关联EIP（POST /v3/{project_id}/elb/loadbalancers/{loadbalancer_id}/delete-cascade）   + 级联删除监听器（DELETE /v3/{project_id}/elb/listeners/{listener_id}/force）   + 级联删除后端服务器组（DELETE /v3/{project_id}/elb/pools/{pool_id}/delete-cascade）   + 删除后端服务器（DELETE /v3/{project_id}/elb/pools/{pool_id}/members/{member_id}）   + 批量删除后端服务器（POST /v3/{project_id}/elb/pools/{pool_id}/members/batch-delete）  取值范围：false不开启，true开启。  默认取值：false  &gt; 退场时需要先关闭所有资源的删除保护开关。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)  [荷兰region不支持该字段，请勿使用。](tag:dt)
+        :param member_deletion_protection_enable: **参数解释**：是否开启后端服务器移除保护。开关开启后，不允许从该ELB后端服务器组下移除后端服务器。  **取值范围**：false 不开启，true 开启。  &gt; 退场时需要先关闭所有资源的删除保护开关。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)  [荷兰region不支持该字段，请勿使用。](tag:dt)
         :type member_deletion_protection_enable: bool
-        :param created_at: 参数解释：创建时间。  取值范围：格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，UTC时区。  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt,hk_tm)
+        :param created_at: **参数解释**：创建时间。  **取值范围**：格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，UTC时区。  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt,hk_tm)
         :type created_at: str
-        :param updated_at: 参数解释：更新时间。  取值范围：格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，UTC时区。  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt,hk_tm)
+        :param updated_at: **参数解释**：更新时间。  **取值范围**：格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，UTC时区。  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt,hk_tm)
         :type updated_at: str
-        :param vpc_id: 参数解释：后端服务器组关联的虚拟私有云的ID。
+        :param vpc_id: **参数解释**：后端服务器组关联的虚拟私有云的ID。  **取值范围**：不涉及
         :type vpc_id: str
-        :param type: 参数解释：后端服务器组的类型。  取值范围： - instance：允许任意类型的后端，type指定为该类型时，vpc_id是必选字段。 - ip：只能添加跨VPC后端，type指定为该类型时，vpc_id不允许指定。[pool的protocol为IP时，type不允许设置为ip。](tag:hws_eu)] - 空字符串（\&quot;\&quot;）：允许任意类型的后端
+        :param type: **参数解释**：后端服务器组的类型。  **取值范围**： - instance：允许任意类型的后端，type指定为该类型时，vpc_id是必选字段。 - ip：只能添加IP类型后端，type指定为该类型时，vpc_id不允许指定。[pool的protocol为IP时，type不允许设置为ip。](tag:hws_eu)] - 空字符串（\&quot;\&quot;）：允许任意类型的后端
         :type type: str
-        :param protection_status: 参数解释：修改保护状态,。  取值范围： - nonProtection: 不保护。 - consoleProtection: 控制台修改保护。  默认取值：nonProtection
+        :param protection_status: **参数解释**：修改保护状态,。  **取值范围**： - nonProtection: 不保护。 - consoleProtection: 控制台修改保护。
         :type protection_status: str
-        :param protection_reason: 参数解释：设置保护的原因。作为protection_status的转态设置的原因。  约束限制：仅当protection_status为consoleProtection时有效。  取值范围：除&#39;&lt;&#39;和&#39;&gt;&#39;外通用Unicode字符集字符，最大255个字符。
+        :param protection_reason: **参数解释**：设置保护的原因。作为protection_status的转态设置的原因。  **取值范围**：除&#39;&lt;&#39;和&#39;&gt;&#39;外通用Unicode字符集字符，最大255个字符。
         :type protection_reason: str
-        :param any_port_enable: 参数解释：后端是否开启端口透传。开启后，后端服务器端口与前端监听器端口保持一致。关闭后，请求会转发给后端服务器protocol_port字段指定端口。取值：false不开启，true开启。  约束限制： - 仅QUIC,TCP,UDP的pool支持。  [不支持该字段，请勿使用。](tag:hws_eu,hws_eu_wb,hws_test,dt,hcso_dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,srg,g42,hk_g42)
+        :param any_port_enable: **参数解释**：后端是否开启全端口转发。开启后，后端服务器端口与前端监听器端口保持一致。关闭后，请求会转发给后端服务器protocol_port字段指定端口。取值：false 不开启，true 开启。  **约束限制**： - 仅QUIC,TCP,UDP的pool支持。  [不支持该字段，请勿使用。](tag:hws_eu,hws_eu_wb,hws_test,dt,hcso_dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,srg,g42,hk_g42)
         :type any_port_enable: bool
         :param connection_drain: 
         :type connection_drain: :class:`huaweicloudsdkelb.v3.ConnectionDrain`
-        :param enterprise_project_id: 参数解释：IP地址组所在的企业项目ID。
+        :param enterprise_project_id: **参数解释**：资源所属的企业项目ID。  **取值范围**： - \&quot;0\&quot;：表示资源属于default企业项目。 - UUID格式的字符串，表示非默认企业项目。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
         :type enterprise_project_id: str
         :param pool_health: 
         :type pool_health: :class:`huaweicloudsdkelb.v3.PoolHealth`
-        :param public_border_group: 参数解释：网络公共边界组，如：center。  [不支持该字段，请勿使用。](tag:hws_eu,hws_eu_wb,hws_test,fcs,dt,hcso_dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,srg,g42,hk_g42)
+        :param public_border_group: **参数解释**：公网边界组。  **取值范围**： - center：表示中心站点的公网边界组 - 边缘站点名称：表示边缘站点的公网边界组  [不支持该字段，请勿使用。](tag:hws_eu,hws_eu_wb,hws_test,fcs,dt,hcso_dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,srg,g42,hk_g42)
         :type public_border_group: str
         :param quic_cid_hash_strategy: 
         :type quic_cid_hash_strategy: :class:`huaweicloudsdkelb.v3.QuicCidHashStrategy`
@@ -217,7 +217,7 @@ class Pool:
     def admin_state_up(self):
         r"""Gets the admin_state_up of this Pool.
 
-        参数解释：后端服务器组的管理状态。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
+        **参数解释**：后端服务器组的管理状态。只支持设置为true。  **取值范围**：true 启用。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
 
         :return: The admin_state_up of this Pool.
         :rtype: bool
@@ -228,7 +228,7 @@ class Pool:
     def admin_state_up(self, admin_state_up):
         r"""Sets the admin_state_up of this Pool.
 
-        参数解释：后端服务器组的管理状态。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
+        **参数解释**：后端服务器组的管理状态。只支持设置为true。  **取值范围**：true 启用。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
 
         :param admin_state_up: The admin_state_up of this Pool.
         :type admin_state_up: bool
@@ -257,7 +257,7 @@ class Pool:
     def description(self):
         r"""Gets the description of this Pool.
 
-        参数解释：后端服务器组的描述信息。
+        **参数解释**：后端服务器组的描述信息。  **取值范围**：不涉及
 
         :return: The description of this Pool.
         :rtype: str
@@ -268,7 +268,7 @@ class Pool:
     def description(self, description):
         r"""Sets the description of this Pool.
 
-        参数解释：后端服务器组的描述信息。
+        **参数解释**：后端服务器组的描述信息。  **取值范围**：不涉及
 
         :param description: The description of this Pool.
         :type description: str
@@ -279,7 +279,7 @@ class Pool:
     def healthmonitor_id(self):
         r"""Gets the healthmonitor_id of this Pool.
 
-        参数解释：后端服务器组关联的健康检查的ID。
+        **参数解释**：后端服务器组关联的健康检查的ID。  **取值范围**：不涉及
 
         :return: The healthmonitor_id of this Pool.
         :rtype: str
@@ -290,7 +290,7 @@ class Pool:
     def healthmonitor_id(self, healthmonitor_id):
         r"""Sets the healthmonitor_id of this Pool.
 
-        参数解释：后端服务器组关联的健康检查的ID。
+        **参数解释**：后端服务器组关联的健康检查的ID。  **取值范围**：不涉及
 
         :param healthmonitor_id: The healthmonitor_id of this Pool.
         :type healthmonitor_id: str
@@ -301,7 +301,7 @@ class Pool:
     def id(self):
         r"""Gets the id of this Pool.
 
-        参数解释：后端服务器组的ID。
+        **参数解释**：后端服务器组的ID。  **取值范围**：不涉及
 
         :return: The id of this Pool.
         :rtype: str
@@ -312,7 +312,7 @@ class Pool:
     def id(self, id):
         r"""Sets the id of this Pool.
 
-        参数解释：后端服务器组的ID。
+        **参数解释**：后端服务器组的ID。  **取值范围**：不涉及
 
         :param id: The id of this Pool.
         :type id: str
@@ -323,7 +323,7 @@ class Pool:
     def lb_algorithm(self):
         r"""Gets the lb_algorithm of this Pool.
 
-        参数解释：后端服务器组的负载均衡算法。  约束限制： - 当该字段的取值为SOURCE_IP或QUIC_CID时，后端服务器组绑定的后端服务器的weight字段无效。 - 只有pool的protocol为QUIC时，才支持QUIC_CID算法。  取值范围： - ROUND_ROBIN：加权轮询算法。 - LEAST_CONNECTIONS：加权最少连接算法。 - SOURCE_IP：源IP算法。 - QUIC_CID：连接ID算法。 [- 2_TUPLE_HASH：二元组hash算法，仅IP类型的pool支持。 - 3_TUPLE_HASH：三元组hash算法，仅IP类型的pool支持。 - 5_TUPLE_HASH：五元组hash算法，仅IP类型的pool支持。 - IP型pool不指定该字段时，默认设置为5_TUPLE_HASH。](tag:hws_eu)  [不支持QUIC_CID算法。](tag:hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC_CID。](tag:dt)
+        **参数解释**：后端服务器组的负载均衡算法。  **取值范围**： - ROUND_ROBIN：加权轮询算法。 - LEAST_CONNECTIONS：加权最少连接算法。 - SOURCE_IP：源IP算法。 - QUIC_CID：连接ID算法。 [- 2_TUPLE_HASH：二元组hash算法，仅IP类型的pool支持。 - 3_TUPLE_HASH：三元组hash算法，仅IP类型的pool支持。 - 5_TUPLE_HASH：五元组hash算法，仅IP类型的pool支持。 - IP型pool不指定该字段时，默认设置为5_TUPLE_HASH。](tag:hws_eu)  [不支持QUIC_CID算法。](tag:hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC_CID。](tag:dt)
 
         :return: The lb_algorithm of this Pool.
         :rtype: str
@@ -334,7 +334,7 @@ class Pool:
     def lb_algorithm(self, lb_algorithm):
         r"""Sets the lb_algorithm of this Pool.
 
-        参数解释：后端服务器组的负载均衡算法。  约束限制： - 当该字段的取值为SOURCE_IP或QUIC_CID时，后端服务器组绑定的后端服务器的weight字段无效。 - 只有pool的protocol为QUIC时，才支持QUIC_CID算法。  取值范围： - ROUND_ROBIN：加权轮询算法。 - LEAST_CONNECTIONS：加权最少连接算法。 - SOURCE_IP：源IP算法。 - QUIC_CID：连接ID算法。 [- 2_TUPLE_HASH：二元组hash算法，仅IP类型的pool支持。 - 3_TUPLE_HASH：三元组hash算法，仅IP类型的pool支持。 - 5_TUPLE_HASH：五元组hash算法，仅IP类型的pool支持。 - IP型pool不指定该字段时，默认设置为5_TUPLE_HASH。](tag:hws_eu)  [不支持QUIC_CID算法。](tag:hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC_CID。](tag:dt)
+        **参数解释**：后端服务器组的负载均衡算法。  **取值范围**： - ROUND_ROBIN：加权轮询算法。 - LEAST_CONNECTIONS：加权最少连接算法。 - SOURCE_IP：源IP算法。 - QUIC_CID：连接ID算法。 [- 2_TUPLE_HASH：二元组hash算法，仅IP类型的pool支持。 - 3_TUPLE_HASH：三元组hash算法，仅IP类型的pool支持。 - 5_TUPLE_HASH：五元组hash算法，仅IP类型的pool支持。 - IP型pool不指定该字段时，默认设置为5_TUPLE_HASH。](tag:hws_eu)  [不支持QUIC_CID算法。](tag:hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC_CID。](tag:dt)
 
         :param lb_algorithm: The lb_algorithm of this Pool.
         :type lb_algorithm: str
@@ -345,7 +345,7 @@ class Pool:
     def listeners(self):
         r"""Gets the listeners of this Pool.
 
-        参数解释：后端服务器组关联的监听器ID列表。
+        **参数解释**：后端服务器组关联的监听器ID列表。
 
         :return: The listeners of this Pool.
         :rtype: list[:class:`huaweicloudsdkelb.v3.ListenerRef`]
@@ -356,7 +356,7 @@ class Pool:
     def listeners(self, listeners):
         r"""Sets the listeners of this Pool.
 
-        参数解释：后端服务器组关联的监听器ID列表。
+        **参数解释**：后端服务器组关联的监听器ID列表。
 
         :param listeners: The listeners of this Pool.
         :type listeners: list[:class:`huaweicloudsdkelb.v3.ListenerRef`]
@@ -367,7 +367,7 @@ class Pool:
     def loadbalancers(self):
         r"""Gets the loadbalancers of this Pool.
 
-        参数解释：后端服务器组关联的负载均衡器ID列表。
+        **参数解释**：后端服务器组关联的负载均衡器ID列表。
 
         :return: The loadbalancers of this Pool.
         :rtype: list[:class:`huaweicloudsdkelb.v3.LoadBalancerRef`]
@@ -378,7 +378,7 @@ class Pool:
     def loadbalancers(self, loadbalancers):
         r"""Sets the loadbalancers of this Pool.
 
-        参数解释：后端服务器组关联的负载均衡器ID列表。
+        **参数解释**：后端服务器组关联的负载均衡器ID列表。
 
         :param loadbalancers: The loadbalancers of this Pool.
         :type loadbalancers: list[:class:`huaweicloudsdkelb.v3.LoadBalancerRef`]
@@ -389,7 +389,7 @@ class Pool:
     def members(self):
         r"""Gets the members of this Pool.
 
-        参数解释：后端服务器组中的后端服务器ID列表。
+        **参数解释**：后端服务器组中的后端服务器ID列表。
 
         :return: The members of this Pool.
         :rtype: list[:class:`huaweicloudsdkelb.v3.MemberRef`]
@@ -400,7 +400,7 @@ class Pool:
     def members(self, members):
         r"""Sets the members of this Pool.
 
-        参数解释：后端服务器组中的后端服务器ID列表。
+        **参数解释**：后端服务器组中的后端服务器ID列表。
 
         :param members: The members of this Pool.
         :type members: list[:class:`huaweicloudsdkelb.v3.MemberRef`]
@@ -411,7 +411,7 @@ class Pool:
     def name(self):
         r"""Gets the name of this Pool.
 
-        参数解释：后端服务器组的名称。
+        **参数解释**：后端服务器组的名称。  **取值范围**：不涉及
 
         :return: The name of this Pool.
         :rtype: str
@@ -422,7 +422,7 @@ class Pool:
     def name(self, name):
         r"""Sets the name of this Pool.
 
-        参数解释：后端服务器组的名称。
+        **参数解释**：后端服务器组的名称。  **取值范围**：不涉及
 
         :param name: The name of this Pool.
         :type name: str
@@ -433,7 +433,7 @@ class Pool:
     def project_id(self):
         r"""Gets the project_id of this Pool.
 
-        参数解释：后端服务器组所在的项目ID。
+        **参数解释**：后端服务器组所在的项目ID。  **取值范围**：不涉及
 
         :return: The project_id of this Pool.
         :rtype: str
@@ -444,7 +444,7 @@ class Pool:
     def project_id(self, project_id):
         r"""Sets the project_id of this Pool.
 
-        参数解释：后端服务器组所在的项目ID。
+        **参数解释**：后端服务器组所在的项目ID。  **取值范围**：不涉及
 
         :param project_id: The project_id of this Pool.
         :type project_id: str
@@ -455,7 +455,7 @@ class Pool:
     def protocol(self):
         r"""Gets the protocol of this Pool.
 
-        参数解释：后端服务器组的后端协议。  约束限制： - listener的protocol为UDP时，pool的protocol必须为UDP或QUIC。 - listener的protocol为TCP时pool的protocol必须为TCP。 [- listener的protocol为IP时，pool的protocol必须为IP。](tag:hws_eu) - listener的protocol为HTTP时，pool的protocol必须为HTTP。 - listener的protocol为HTTPS时，pool的protocol必须为HTTP、HTTPS或GRPC。 - listener的protocol为TERMINATED_HTTPS时，pool的protocol必须为HTTP。 - listener的protocol为QUIC时，pool的protocol必须为HTTP、HTTPS或GRPC。 - listener的protocol为TLS时，pool的protocol必须为TLS或TCP。 - 若pool的protocol为QUIC，则必须开启session_persistence且type为SOURCE_IP。 - 若pool的protocol为GRPC，关联监听器必须开启HTTP2。 - 若pool的protocol为TCP,则pool的ip_version字段取值必须是4。  取值范围：TCP、UDP、[IP、](tag:hws_eu)TLS、GRPC、HTTP、HTTPS和QUIC。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC。](tag:dt)
+        **参数解释**：后端服务器组的后端协议。  **取值范围**：TCP、UDP、[IP、](tag:hws_eu)TLS、GRPC、HTTP、HTTPS和QUIC。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC。](tag:dt)
 
         :return: The protocol of this Pool.
         :rtype: str
@@ -466,7 +466,7 @@ class Pool:
     def protocol(self, protocol):
         r"""Sets the protocol of this Pool.
 
-        参数解释：后端服务器组的后端协议。  约束限制： - listener的protocol为UDP时，pool的protocol必须为UDP或QUIC。 - listener的protocol为TCP时pool的protocol必须为TCP。 [- listener的protocol为IP时，pool的protocol必须为IP。](tag:hws_eu) - listener的protocol为HTTP时，pool的protocol必须为HTTP。 - listener的protocol为HTTPS时，pool的protocol必须为HTTP、HTTPS或GRPC。 - listener的protocol为TERMINATED_HTTPS时，pool的protocol必须为HTTP。 - listener的protocol为QUIC时，pool的protocol必须为HTTP、HTTPS或GRPC。 - listener的protocol为TLS时，pool的protocol必须为TLS或TCP。 - 若pool的protocol为QUIC，则必须开启session_persistence且type为SOURCE_IP。 - 若pool的protocol为GRPC，关联监听器必须开启HTTP2。 - 若pool的protocol为TCP,则pool的ip_version字段取值必须是4。  取值范围：TCP、UDP、[IP、](tag:hws_eu)TLS、GRPC、HTTP、HTTPS和QUIC。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC。](tag:dt)
+        **参数解释**：后端服务器组的后端协议。  **取值范围**：TCP、UDP、[IP、](tag:hws_eu)TLS、GRPC、HTTP、HTTPS和QUIC。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC。](tag:dt)
 
         :param protocol: The protocol of this Pool.
         :type protocol: str
@@ -495,7 +495,7 @@ class Pool:
     def ip_version(self):
         r"""Gets the ip_version of this Pool.
 
-        参数解释：后端服务器组支持的IP版本。  [取值范围： - 共享型：固定为v4； - 独享型：取值dualstack、v4。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。当协议为HTTP时，ip_version为v4。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs)  [取值范围：dualstack、v4。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。当协议为HTTP时，ip_version为v4。](tag:hcso_dt)  [不支持IPv6，只会返回v4。](tag:dt)
+        **参数解释**：后端服务器组支持的IP版本。  [**取值范围**： - 共享型：固定为v4； - 独享型：取值dualstack、v4。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。当协议为HTTP时，ip_version为v4。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs)  [**取值范围**：dualstack、v4。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。当协议为HTTP时，ip_version为v4。](tag:hcso_dt)  [不支持IPv6，只会返回v4。](tag:dt)
 
         :return: The ip_version of this Pool.
         :rtype: str
@@ -506,7 +506,7 @@ class Pool:
     def ip_version(self, ip_version):
         r"""Sets the ip_version of this Pool.
 
-        参数解释：后端服务器组支持的IP版本。  [取值范围： - 共享型：固定为v4； - 独享型：取值dualstack、v4。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。当协议为HTTP时，ip_version为v4。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs)  [取值范围：dualstack、v4。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。当协议为HTTP时，ip_version为v4。](tag:hcso_dt)  [不支持IPv6，只会返回v4。](tag:dt)
+        **参数解释**：后端服务器组支持的IP版本。  [**取值范围**： - 共享型：固定为v4； - 独享型：取值dualstack、v4。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。当协议为HTTP时，ip_version为v4。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs)  [**取值范围**：dualstack、v4。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。当协议为HTTP时，ip_version为v4。](tag:hcso_dt)  [不支持IPv6，只会返回v4。](tag:dt)
 
         :param ip_version: The ip_version of this Pool.
         :type ip_version: str
@@ -535,7 +535,7 @@ class Pool:
     def member_deletion_protection_enable(self):
         r"""Gets the member_deletion_protection_enable of this Pool.
 
-        参数解释：是否开启后端服务器移除保护。开关开启后，不允许从该ELB后端服务器组下移除后端服务器。  约束限制： - 开关开启后，移除member会报错拦截，涉及如下API:   + 级联删除负载均衡器（DELETE /v3/{project_id}/elb/loadbalancers/{loadbalancer_id}/force-elb）   + 级联删除负载均衡器及关联EIP（POST /v3/{project_id}/elb/loadbalancers/{loadbalancer_id}/delete-cascade）   + 级联删除监听器（DELETE /v3/{project_id}/elb/listeners/{listener_id}/force）   + 级联删除后端服务器组（DELETE /v3/{project_id}/elb/pools/{pool_id}/delete-cascade）   + 删除后端服务器（DELETE /v3/{project_id}/elb/pools/{pool_id}/members/{member_id}）   + 批量删除后端服务器（POST /v3/{project_id}/elb/pools/{pool_id}/members/batch-delete）  取值范围：false不开启，true开启。  默认取值：false  > 退场时需要先关闭所有资源的删除保护开关。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)  [荷兰region不支持该字段，请勿使用。](tag:dt)
+        **参数解释**：是否开启后端服务器移除保护。开关开启后，不允许从该ELB后端服务器组下移除后端服务器。  **取值范围**：false 不开启，true 开启。  > 退场时需要先关闭所有资源的删除保护开关。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)  [荷兰region不支持该字段，请勿使用。](tag:dt)
 
         :return: The member_deletion_protection_enable of this Pool.
         :rtype: bool
@@ -546,7 +546,7 @@ class Pool:
     def member_deletion_protection_enable(self, member_deletion_protection_enable):
         r"""Sets the member_deletion_protection_enable of this Pool.
 
-        参数解释：是否开启后端服务器移除保护。开关开启后，不允许从该ELB后端服务器组下移除后端服务器。  约束限制： - 开关开启后，移除member会报错拦截，涉及如下API:   + 级联删除负载均衡器（DELETE /v3/{project_id}/elb/loadbalancers/{loadbalancer_id}/force-elb）   + 级联删除负载均衡器及关联EIP（POST /v3/{project_id}/elb/loadbalancers/{loadbalancer_id}/delete-cascade）   + 级联删除监听器（DELETE /v3/{project_id}/elb/listeners/{listener_id}/force）   + 级联删除后端服务器组（DELETE /v3/{project_id}/elb/pools/{pool_id}/delete-cascade）   + 删除后端服务器（DELETE /v3/{project_id}/elb/pools/{pool_id}/members/{member_id}）   + 批量删除后端服务器（POST /v3/{project_id}/elb/pools/{pool_id}/members/batch-delete）  取值范围：false不开启，true开启。  默认取值：false  > 退场时需要先关闭所有资源的删除保护开关。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)  [荷兰region不支持该字段，请勿使用。](tag:dt)
+        **参数解释**：是否开启后端服务器移除保护。开关开启后，不允许从该ELB后端服务器组下移除后端服务器。  **取值范围**：false 不开启，true 开启。  > 退场时需要先关闭所有资源的删除保护开关。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)  [荷兰region不支持该字段，请勿使用。](tag:dt)
 
         :param member_deletion_protection_enable: The member_deletion_protection_enable of this Pool.
         :type member_deletion_protection_enable: bool
@@ -557,7 +557,7 @@ class Pool:
     def created_at(self):
         r"""Gets the created_at of this Pool.
 
-        参数解释：创建时间。  取值范围：格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt,hk_tm)
+        **参数解释**：创建时间。  **取值范围**：格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt,hk_tm)
 
         :return: The created_at of this Pool.
         :rtype: str
@@ -568,7 +568,7 @@ class Pool:
     def created_at(self, created_at):
         r"""Sets the created_at of this Pool.
 
-        参数解释：创建时间。  取值范围：格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt,hk_tm)
+        **参数解释**：创建时间。  **取值范围**：格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt,hk_tm)
 
         :param created_at: The created_at of this Pool.
         :type created_at: str
@@ -579,7 +579,7 @@ class Pool:
     def updated_at(self):
         r"""Gets the updated_at of this Pool.
 
-        参数解释：更新时间。  取值范围：格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt,hk_tm)
+        **参数解释**：更新时间。  **取值范围**：格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt,hk_tm)
 
         :return: The updated_at of this Pool.
         :rtype: str
@@ -590,7 +590,7 @@ class Pool:
     def updated_at(self, updated_at):
         r"""Sets the updated_at of this Pool.
 
-        参数解释：更新时间。  取值范围：格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt,hk_tm)
+        **参数解释**：更新时间。  **取值范围**：格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt,hk_tm)
 
         :param updated_at: The updated_at of this Pool.
         :type updated_at: str
@@ -601,7 +601,7 @@ class Pool:
     def vpc_id(self):
         r"""Gets the vpc_id of this Pool.
 
-        参数解释：后端服务器组关联的虚拟私有云的ID。
+        **参数解释**：后端服务器组关联的虚拟私有云的ID。  **取值范围**：不涉及
 
         :return: The vpc_id of this Pool.
         :rtype: str
@@ -612,7 +612,7 @@ class Pool:
     def vpc_id(self, vpc_id):
         r"""Sets the vpc_id of this Pool.
 
-        参数解释：后端服务器组关联的虚拟私有云的ID。
+        **参数解释**：后端服务器组关联的虚拟私有云的ID。  **取值范围**：不涉及
 
         :param vpc_id: The vpc_id of this Pool.
         :type vpc_id: str
@@ -623,7 +623,7 @@ class Pool:
     def type(self):
         r"""Gets the type of this Pool.
 
-        参数解释：后端服务器组的类型。  取值范围： - instance：允许任意类型的后端，type指定为该类型时，vpc_id是必选字段。 - ip：只能添加跨VPC后端，type指定为该类型时，vpc_id不允许指定。[pool的protocol为IP时，type不允许设置为ip。](tag:hws_eu)] - 空字符串（\"\"）：允许任意类型的后端
+        **参数解释**：后端服务器组的类型。  **取值范围**： - instance：允许任意类型的后端，type指定为该类型时，vpc_id是必选字段。 - ip：只能添加IP类型后端，type指定为该类型时，vpc_id不允许指定。[pool的protocol为IP时，type不允许设置为ip。](tag:hws_eu)] - 空字符串（\"\"）：允许任意类型的后端
 
         :return: The type of this Pool.
         :rtype: str
@@ -634,7 +634,7 @@ class Pool:
     def type(self, type):
         r"""Sets the type of this Pool.
 
-        参数解释：后端服务器组的类型。  取值范围： - instance：允许任意类型的后端，type指定为该类型时，vpc_id是必选字段。 - ip：只能添加跨VPC后端，type指定为该类型时，vpc_id不允许指定。[pool的protocol为IP时，type不允许设置为ip。](tag:hws_eu)] - 空字符串（\"\"）：允许任意类型的后端
+        **参数解释**：后端服务器组的类型。  **取值范围**： - instance：允许任意类型的后端，type指定为该类型时，vpc_id是必选字段。 - ip：只能添加IP类型后端，type指定为该类型时，vpc_id不允许指定。[pool的protocol为IP时，type不允许设置为ip。](tag:hws_eu)] - 空字符串（\"\"）：允许任意类型的后端
 
         :param type: The type of this Pool.
         :type type: str
@@ -645,7 +645,7 @@ class Pool:
     def protection_status(self):
         r"""Gets the protection_status of this Pool.
 
-        参数解释：修改保护状态,。  取值范围： - nonProtection: 不保护。 - consoleProtection: 控制台修改保护。  默认取值：nonProtection
+        **参数解释**：修改保护状态,。  **取值范围**： - nonProtection: 不保护。 - consoleProtection: 控制台修改保护。
 
         :return: The protection_status of this Pool.
         :rtype: str
@@ -656,7 +656,7 @@ class Pool:
     def protection_status(self, protection_status):
         r"""Sets the protection_status of this Pool.
 
-        参数解释：修改保护状态,。  取值范围： - nonProtection: 不保护。 - consoleProtection: 控制台修改保护。  默认取值：nonProtection
+        **参数解释**：修改保护状态,。  **取值范围**： - nonProtection: 不保护。 - consoleProtection: 控制台修改保护。
 
         :param protection_status: The protection_status of this Pool.
         :type protection_status: str
@@ -667,7 +667,7 @@ class Pool:
     def protection_reason(self):
         r"""Gets the protection_reason of this Pool.
 
-        参数解释：设置保护的原因。作为protection_status的转态设置的原因。  约束限制：仅当protection_status为consoleProtection时有效。  取值范围：除'<'和'>'外通用Unicode字符集字符，最大255个字符。
+        **参数解释**：设置保护的原因。作为protection_status的转态设置的原因。  **取值范围**：除'<'和'>'外通用Unicode字符集字符，最大255个字符。
 
         :return: The protection_reason of this Pool.
         :rtype: str
@@ -678,7 +678,7 @@ class Pool:
     def protection_reason(self, protection_reason):
         r"""Sets the protection_reason of this Pool.
 
-        参数解释：设置保护的原因。作为protection_status的转态设置的原因。  约束限制：仅当protection_status为consoleProtection时有效。  取值范围：除'<'和'>'外通用Unicode字符集字符，最大255个字符。
+        **参数解释**：设置保护的原因。作为protection_status的转态设置的原因。  **取值范围**：除'<'和'>'外通用Unicode字符集字符，最大255个字符。
 
         :param protection_reason: The protection_reason of this Pool.
         :type protection_reason: str
@@ -689,7 +689,7 @@ class Pool:
     def any_port_enable(self):
         r"""Gets the any_port_enable of this Pool.
 
-        参数解释：后端是否开启端口透传。开启后，后端服务器端口与前端监听器端口保持一致。关闭后，请求会转发给后端服务器protocol_port字段指定端口。取值：false不开启，true开启。  约束限制： - 仅QUIC,TCP,UDP的pool支持。  [不支持该字段，请勿使用。](tag:hws_eu,hws_eu_wb,hws_test,dt,hcso_dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,srg,g42,hk_g42)
+        **参数解释**：后端是否开启全端口转发。开启后，后端服务器端口与前端监听器端口保持一致。关闭后，请求会转发给后端服务器protocol_port字段指定端口。取值：false 不开启，true 开启。  **约束限制**： - 仅QUIC,TCP,UDP的pool支持。  [不支持该字段，请勿使用。](tag:hws_eu,hws_eu_wb,hws_test,dt,hcso_dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,srg,g42,hk_g42)
 
         :return: The any_port_enable of this Pool.
         :rtype: bool
@@ -700,7 +700,7 @@ class Pool:
     def any_port_enable(self, any_port_enable):
         r"""Sets the any_port_enable of this Pool.
 
-        参数解释：后端是否开启端口透传。开启后，后端服务器端口与前端监听器端口保持一致。关闭后，请求会转发给后端服务器protocol_port字段指定端口。取值：false不开启，true开启。  约束限制： - 仅QUIC,TCP,UDP的pool支持。  [不支持该字段，请勿使用。](tag:hws_eu,hws_eu_wb,hws_test,dt,hcso_dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,srg,g42,hk_g42)
+        **参数解释**：后端是否开启全端口转发。开启后，后端服务器端口与前端监听器端口保持一致。关闭后，请求会转发给后端服务器protocol_port字段指定端口。取值：false 不开启，true 开启。  **约束限制**： - 仅QUIC,TCP,UDP的pool支持。  [不支持该字段，请勿使用。](tag:hws_eu,hws_eu_wb,hws_test,dt,hcso_dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,srg,g42,hk_g42)
 
         :param any_port_enable: The any_port_enable of this Pool.
         :type any_port_enable: bool
@@ -729,7 +729,7 @@ class Pool:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this Pool.
 
-        参数解释：IP地址组所在的企业项目ID。
+        **参数解释**：资源所属的企业项目ID。  **取值范围**： - \"0\"：表示资源属于default企业项目。 - UUID格式的字符串，表示非默认企业项目。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
 
         :return: The enterprise_project_id of this Pool.
         :rtype: str
@@ -740,7 +740,7 @@ class Pool:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this Pool.
 
-        参数解释：IP地址组所在的企业项目ID。
+        **参数解释**：资源所属的企业项目ID。  **取值范围**： - \"0\"：表示资源属于default企业项目。 - UUID格式的字符串，表示非默认企业项目。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
 
         :param enterprise_project_id: The enterprise_project_id of this Pool.
         :type enterprise_project_id: str
@@ -769,7 +769,7 @@ class Pool:
     def public_border_group(self):
         r"""Gets the public_border_group of this Pool.
 
-        参数解释：网络公共边界组，如：center。  [不支持该字段，请勿使用。](tag:hws_eu,hws_eu_wb,hws_test,fcs,dt,hcso_dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,srg,g42,hk_g42)
+        **参数解释**：公网边界组。  **取值范围**： - center：表示中心站点的公网边界组 - 边缘站点名称：表示边缘站点的公网边界组  [不支持该字段，请勿使用。](tag:hws_eu,hws_eu_wb,hws_test,fcs,dt,hcso_dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,srg,g42,hk_g42)
 
         :return: The public_border_group of this Pool.
         :rtype: str
@@ -780,7 +780,7 @@ class Pool:
     def public_border_group(self, public_border_group):
         r"""Sets the public_border_group of this Pool.
 
-        参数解释：网络公共边界组，如：center。  [不支持该字段，请勿使用。](tag:hws_eu,hws_eu_wb,hws_test,fcs,dt,hcso_dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,srg,g42,hk_g42)
+        **参数解释**：公网边界组。  **取值范围**： - center：表示中心站点的公网边界组 - 边缘站点名称：表示边缘站点的公网边界组  [不支持该字段，请勿使用。](tag:hws_eu,hws_eu_wb,hws_test,fcs,dt,hcso_dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,srg,g42,hk_g42)
 
         :param public_border_group: The public_border_group of this Pool.
         :type public_border_group: str

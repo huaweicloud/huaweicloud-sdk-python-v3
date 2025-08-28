@@ -59,37 +59,37 @@ class ListCertificatesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param marker: 上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
+        :param marker: **参数解释**：上一页最后一条记录的ID。  **约束限制**： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。  **取值范围**：不涉及  **默认取值**：不涉及
         :type marker: str
-        :param limit: 参数解释：每页返回的个数。  取值范围：0-2000  默认取值：2000
+        :param limit: **参数解释**：每页返回的个数。  **约束限制**：不涉及  **取值范围**：0-2000  **默认取值**：2000
         :type limit: int
-        :param page_reverse: 是否反向查询。  取值： - true：查询上一页。 - false：查询下一页，默认。  使用说明： - 必须与limit一起使用。 - 当page_reverse&#x3D;true时，若要查询上一页，marker取值为当前页返回值的previous_marker。
+        :param page_reverse: **参数解释**：是否反向查询。  **约束限制**： - 必须与limit一起使用。 - 当page_reverse&#x3D;true时，若要查询上一页，marker取值为当前页返回值的previous_marker。  **取值范围**： - true：查询上一页。 - false：查询下一页。  **默认取值**：false
         :type page_reverse: bool
-        :param id: 证书ID。  支持多值查询，查询条件格式：*id&#x3D;xxx&amp;id&#x3D;xxx*。
+        :param id: **参数解释**：证书ID。 支持多值查询，查询条件格式：*id&#x3D;xxx&amp;id&#x3D;xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type id: list[str]
-        :param name: 证书的名称。  支持多值查询，查询条件格式：*name&#x3D;xxx&amp;name&#x3D;xxx*。
+        :param name: **参数解释**：证书的名称。 支持多值查询，查询条件格式：*name&#x3D;xxx&amp;name&#x3D;xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type name: list[str]
-        :param description: 证书的描述。  支持多值查询，查询条件格式：*description&#x3D;xxx&amp;description&#x3D;xxx*。
+        :param description: **参数解释**：证书的描述。 支持多值查询，查询条件格式：*description&#x3D;xxx&amp;description&#x3D;xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type description: list[str]
-        :param admin_state_up: 证书的管理状态。  不支持该字段，请勿使用。
+        :param admin_state_up: **参数解释**：证书的管理状态。  **约束限制**：不涉及  **取值范围**： - true：表示证书可用。 - false：表示证书不可用。  **默认取值**：不涉及
         :type admin_state_up: bool
-        :param domain: 服务器证书所签域名。该字段仅type为server时有效。  支持多值查询，查询条件格式：domain&#x3D;xxx&amp;domain&#x3D;xxx。
+        :param domain: **参数解释**：服务器证书所签域名。 支持多值查询，查询条件格式：domain&#x3D;xxx&amp;domain&#x3D;xxx。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type domain: list[str]
-        :param type: 证书的类型。分为服务器证书(server)和CA证书(client)。  支持多值查询，查询条件格式：type&#x3D;xxx&amp;type&#x3D;xxx。
+        :param type: **参数解释**：证书的类型。 支持多值查询，查询条件格式：type&#x3D;xxx&amp;type&#x3D;xxx。  **约束限制**：不涉及  **取值范围**： - server：服务器证书。 - client：CA证书。 - server_sm：服务器SM双证书。  **默认取值**：不涉及
         :type type: list[str]
-        :param scm_certificate_id: SCM证书ID。  支持多值查询，查询条件格式：scm_certificate_id&#x3D;xxx&amp;scm_certificate_id&#x3D;xxx。
+        :param scm_certificate_id: **参数解释**：云证书管理服务（CCM）中的证书ID。 支持多值查询，查询条件格式：scm_certificate_id&#x3D;xxx&amp;scm_certificate_id&#x3D;xxx。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type scm_certificate_id: list[str]
-        :param common_name: 证书的主域名。  支持多值查询，查询条件格式：common_name&#x3D;xxx&amp;common_name&#x3D;xxx。
+        :param common_name: **参数解释**：证书的主域名。 支持多值查询，查询条件格式：common_name&#x3D;xxx&amp;common_name&#x3D;xxx。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type common_name: list[str]
-        :param fingerprint: 证书的指纹。  支持多值查询，查询条件格式：fingerprint&#x3D;xxx&amp;fingerprint&#x3D;xxx。
+        :param fingerprint: **参数解释**：证书的指纹。 支持多值查询，查询条件格式：fingerprint&#x3D;xxx&amp;fingerprint&#x3D;xxx。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type fingerprint: list[str]
-        :param source: 证书来源。  支持多值查询，查询条件格式：source&#x3D;xxx&amp;source&#x3D;xxx。
+        :param source: **参数解释**：证书来源。 支持多值查询，查询条件格式：source&#x3D;xxx&amp;source&#x3D;xxx。  **约束限制**：不涉及  **取值范围**： - scm：表示关联云证书管理服务（CCM）中的证书。 - 空值：表示自有证书。  **默认取值**：不涉及
         :type source: list[str]
-        :param protection_status: 修改保护状态。  支持多值查询，查询条件格式：protection_status&#x3D;xxx&amp;protection_status&#x3D;xxx。
+        :param protection_status: **参数解释**：修改保护状态。 支持多值查询，查询条件格式：protection_status&#x3D;xxx&amp;protection_status&#x3D;xxx。  **约束限制**：不涉及  **取值范围**： - nonProtection: 不保护 - consoleProtection: 控制台修改保护，即禁止通过控制台修改。  **默认取值**：不涉及
         :type protection_status: list[str]
-        :param protection_reason: 设置修改保护的原因。  支持多值查询，查询条件格式：protection_reason&#x3D;xxx&amp;protection_reason&#x3D;xxx。
+        :param protection_reason: **参数解释**：设置修改保护的原因。 支持多值查询，查询条件格式：protection_reason&#x3D;xxx&amp;protection_reason&#x3D;xxx。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type protection_reason: list[str]
-        :param enterprise_project_id: 参数解释：所属的企业项目ID。 如果enterprise_project_id不传值，默认查询所有企业项目下的资源，鉴权按照细粒度权限鉴权，必须在用户组下分配elb:certificates:list权限。 如果enterprise_project_id传值，鉴权按照企业项目权限鉴权，分为传入具体eps_id和all_granted_eps两种场景，前者查询指定eps_id的eps下的资源，后者查询的是所有有list权限的eps下的资源。  支持多值查询，查询条件格式： *enterprise_project_id&#x3D;xxx&amp;enterprise_project_id&#x3D;xxx*。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
+        :param enterprise_project_id: **参数解释**：资源所属的企业项目ID。 支持多值查询，查询条件格式： *enterprise_project_id&#x3D;xxx&amp;enterprise_project_id&#x3D;xxx*。  **约束限制**： - 如果enterprise_project_id不传值，默认查询所有企业项目下的资源，鉴权按照细粒度权限鉴权，必须在用户组下分配elb:certificates:list权限。 - 如果enterprise_project_id传值，鉴权按照企业项目权限鉴权，分为传入具体eps_id和all_granted_eps两种场景，前者查询指定eps_id的eps下的资源，后者查询的是所有有list权限的eps下的资源。  **取值范围**：不涉及  **默认取值**：不涉及
         :type enterprise_project_id: list[str]
         """
         
@@ -150,7 +150,7 @@ class ListCertificatesRequest:
     def marker(self):
         r"""Gets the marker of this ListCertificatesRequest.
 
-        上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
+        **参数解释**：上一页最后一条记录的ID。  **约束限制**： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The marker of this ListCertificatesRequest.
         :rtype: str
@@ -161,7 +161,7 @@ class ListCertificatesRequest:
     def marker(self, marker):
         r"""Sets the marker of this ListCertificatesRequest.
 
-        上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
+        **参数解释**：上一页最后一条记录的ID。  **约束限制**： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param marker: The marker of this ListCertificatesRequest.
         :type marker: str
@@ -172,7 +172,7 @@ class ListCertificatesRequest:
     def limit(self):
         r"""Gets the limit of this ListCertificatesRequest.
 
-        参数解释：每页返回的个数。  取值范围：0-2000  默认取值：2000
+        **参数解释**：每页返回的个数。  **约束限制**：不涉及  **取值范围**：0-2000  **默认取值**：2000
 
         :return: The limit of this ListCertificatesRequest.
         :rtype: int
@@ -183,7 +183,7 @@ class ListCertificatesRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListCertificatesRequest.
 
-        参数解释：每页返回的个数。  取值范围：0-2000  默认取值：2000
+        **参数解释**：每页返回的个数。  **约束限制**：不涉及  **取值范围**：0-2000  **默认取值**：2000
 
         :param limit: The limit of this ListCertificatesRequest.
         :type limit: int
@@ -194,7 +194,7 @@ class ListCertificatesRequest:
     def page_reverse(self):
         r"""Gets the page_reverse of this ListCertificatesRequest.
 
-        是否反向查询。  取值： - true：查询上一页。 - false：查询下一页，默认。  使用说明： - 必须与limit一起使用。 - 当page_reverse=true时，若要查询上一页，marker取值为当前页返回值的previous_marker。
+        **参数解释**：是否反向查询。  **约束限制**： - 必须与limit一起使用。 - 当page_reverse=true时，若要查询上一页，marker取值为当前页返回值的previous_marker。  **取值范围**： - true：查询上一页。 - false：查询下一页。  **默认取值**：false
 
         :return: The page_reverse of this ListCertificatesRequest.
         :rtype: bool
@@ -205,7 +205,7 @@ class ListCertificatesRequest:
     def page_reverse(self, page_reverse):
         r"""Sets the page_reverse of this ListCertificatesRequest.
 
-        是否反向查询。  取值： - true：查询上一页。 - false：查询下一页，默认。  使用说明： - 必须与limit一起使用。 - 当page_reverse=true时，若要查询上一页，marker取值为当前页返回值的previous_marker。
+        **参数解释**：是否反向查询。  **约束限制**： - 必须与limit一起使用。 - 当page_reverse=true时，若要查询上一页，marker取值为当前页返回值的previous_marker。  **取值范围**： - true：查询上一页。 - false：查询下一页。  **默认取值**：false
 
         :param page_reverse: The page_reverse of this ListCertificatesRequest.
         :type page_reverse: bool
@@ -216,7 +216,7 @@ class ListCertificatesRequest:
     def id(self):
         r"""Gets the id of this ListCertificatesRequest.
 
-        证书ID。  支持多值查询，查询条件格式：*id=xxx&id=xxx*。
+        **参数解释**：证书ID。 支持多值查询，查询条件格式：*id=xxx&id=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The id of this ListCertificatesRequest.
         :rtype: list[str]
@@ -227,7 +227,7 @@ class ListCertificatesRequest:
     def id(self, id):
         r"""Sets the id of this ListCertificatesRequest.
 
-        证书ID。  支持多值查询，查询条件格式：*id=xxx&id=xxx*。
+        **参数解释**：证书ID。 支持多值查询，查询条件格式：*id=xxx&id=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param id: The id of this ListCertificatesRequest.
         :type id: list[str]
@@ -238,7 +238,7 @@ class ListCertificatesRequest:
     def name(self):
         r"""Gets the name of this ListCertificatesRequest.
 
-        证书的名称。  支持多值查询，查询条件格式：*name=xxx&name=xxx*。
+        **参数解释**：证书的名称。 支持多值查询，查询条件格式：*name=xxx&name=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The name of this ListCertificatesRequest.
         :rtype: list[str]
@@ -249,7 +249,7 @@ class ListCertificatesRequest:
     def name(self, name):
         r"""Sets the name of this ListCertificatesRequest.
 
-        证书的名称。  支持多值查询，查询条件格式：*name=xxx&name=xxx*。
+        **参数解释**：证书的名称。 支持多值查询，查询条件格式：*name=xxx&name=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param name: The name of this ListCertificatesRequest.
         :type name: list[str]
@@ -260,7 +260,7 @@ class ListCertificatesRequest:
     def description(self):
         r"""Gets the description of this ListCertificatesRequest.
 
-        证书的描述。  支持多值查询，查询条件格式：*description=xxx&description=xxx*。
+        **参数解释**：证书的描述。 支持多值查询，查询条件格式：*description=xxx&description=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The description of this ListCertificatesRequest.
         :rtype: list[str]
@@ -271,7 +271,7 @@ class ListCertificatesRequest:
     def description(self, description):
         r"""Sets the description of this ListCertificatesRequest.
 
-        证书的描述。  支持多值查询，查询条件格式：*description=xxx&description=xxx*。
+        **参数解释**：证书的描述。 支持多值查询，查询条件格式：*description=xxx&description=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param description: The description of this ListCertificatesRequest.
         :type description: list[str]
@@ -282,7 +282,7 @@ class ListCertificatesRequest:
     def admin_state_up(self):
         r"""Gets the admin_state_up of this ListCertificatesRequest.
 
-        证书的管理状态。  不支持该字段，请勿使用。
+        **参数解释**：证书的管理状态。  **约束限制**：不涉及  **取值范围**： - true：表示证书可用。 - false：表示证书不可用。  **默认取值**：不涉及
 
         :return: The admin_state_up of this ListCertificatesRequest.
         :rtype: bool
@@ -293,7 +293,7 @@ class ListCertificatesRequest:
     def admin_state_up(self, admin_state_up):
         r"""Sets the admin_state_up of this ListCertificatesRequest.
 
-        证书的管理状态。  不支持该字段，请勿使用。
+        **参数解释**：证书的管理状态。  **约束限制**：不涉及  **取值范围**： - true：表示证书可用。 - false：表示证书不可用。  **默认取值**：不涉及
 
         :param admin_state_up: The admin_state_up of this ListCertificatesRequest.
         :type admin_state_up: bool
@@ -304,7 +304,7 @@ class ListCertificatesRequest:
     def domain(self):
         r"""Gets the domain of this ListCertificatesRequest.
 
-        服务器证书所签域名。该字段仅type为server时有效。  支持多值查询，查询条件格式：domain=xxx&domain=xxx。
+        **参数解释**：服务器证书所签域名。 支持多值查询，查询条件格式：domain=xxx&domain=xxx。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The domain of this ListCertificatesRequest.
         :rtype: list[str]
@@ -315,7 +315,7 @@ class ListCertificatesRequest:
     def domain(self, domain):
         r"""Sets the domain of this ListCertificatesRequest.
 
-        服务器证书所签域名。该字段仅type为server时有效。  支持多值查询，查询条件格式：domain=xxx&domain=xxx。
+        **参数解释**：服务器证书所签域名。 支持多值查询，查询条件格式：domain=xxx&domain=xxx。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param domain: The domain of this ListCertificatesRequest.
         :type domain: list[str]
@@ -326,7 +326,7 @@ class ListCertificatesRequest:
     def type(self):
         r"""Gets the type of this ListCertificatesRequest.
 
-        证书的类型。分为服务器证书(server)和CA证书(client)。  支持多值查询，查询条件格式：type=xxx&type=xxx。
+        **参数解释**：证书的类型。 支持多值查询，查询条件格式：type=xxx&type=xxx。  **约束限制**：不涉及  **取值范围**： - server：服务器证书。 - client：CA证书。 - server_sm：服务器SM双证书。  **默认取值**：不涉及
 
         :return: The type of this ListCertificatesRequest.
         :rtype: list[str]
@@ -337,7 +337,7 @@ class ListCertificatesRequest:
     def type(self, type):
         r"""Sets the type of this ListCertificatesRequest.
 
-        证书的类型。分为服务器证书(server)和CA证书(client)。  支持多值查询，查询条件格式：type=xxx&type=xxx。
+        **参数解释**：证书的类型。 支持多值查询，查询条件格式：type=xxx&type=xxx。  **约束限制**：不涉及  **取值范围**： - server：服务器证书。 - client：CA证书。 - server_sm：服务器SM双证书。  **默认取值**：不涉及
 
         :param type: The type of this ListCertificatesRequest.
         :type type: list[str]
@@ -348,7 +348,7 @@ class ListCertificatesRequest:
     def scm_certificate_id(self):
         r"""Gets the scm_certificate_id of this ListCertificatesRequest.
 
-        SCM证书ID。  支持多值查询，查询条件格式：scm_certificate_id=xxx&scm_certificate_id=xxx。
+        **参数解释**：云证书管理服务（CCM）中的证书ID。 支持多值查询，查询条件格式：scm_certificate_id=xxx&scm_certificate_id=xxx。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The scm_certificate_id of this ListCertificatesRequest.
         :rtype: list[str]
@@ -359,7 +359,7 @@ class ListCertificatesRequest:
     def scm_certificate_id(self, scm_certificate_id):
         r"""Sets the scm_certificate_id of this ListCertificatesRequest.
 
-        SCM证书ID。  支持多值查询，查询条件格式：scm_certificate_id=xxx&scm_certificate_id=xxx。
+        **参数解释**：云证书管理服务（CCM）中的证书ID。 支持多值查询，查询条件格式：scm_certificate_id=xxx&scm_certificate_id=xxx。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param scm_certificate_id: The scm_certificate_id of this ListCertificatesRequest.
         :type scm_certificate_id: list[str]
@@ -370,7 +370,7 @@ class ListCertificatesRequest:
     def common_name(self):
         r"""Gets the common_name of this ListCertificatesRequest.
 
-        证书的主域名。  支持多值查询，查询条件格式：common_name=xxx&common_name=xxx。
+        **参数解释**：证书的主域名。 支持多值查询，查询条件格式：common_name=xxx&common_name=xxx。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The common_name of this ListCertificatesRequest.
         :rtype: list[str]
@@ -381,7 +381,7 @@ class ListCertificatesRequest:
     def common_name(self, common_name):
         r"""Sets the common_name of this ListCertificatesRequest.
 
-        证书的主域名。  支持多值查询，查询条件格式：common_name=xxx&common_name=xxx。
+        **参数解释**：证书的主域名。 支持多值查询，查询条件格式：common_name=xxx&common_name=xxx。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param common_name: The common_name of this ListCertificatesRequest.
         :type common_name: list[str]
@@ -392,7 +392,7 @@ class ListCertificatesRequest:
     def fingerprint(self):
         r"""Gets the fingerprint of this ListCertificatesRequest.
 
-        证书的指纹。  支持多值查询，查询条件格式：fingerprint=xxx&fingerprint=xxx。
+        **参数解释**：证书的指纹。 支持多值查询，查询条件格式：fingerprint=xxx&fingerprint=xxx。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The fingerprint of this ListCertificatesRequest.
         :rtype: list[str]
@@ -403,7 +403,7 @@ class ListCertificatesRequest:
     def fingerprint(self, fingerprint):
         r"""Sets the fingerprint of this ListCertificatesRequest.
 
-        证书的指纹。  支持多值查询，查询条件格式：fingerprint=xxx&fingerprint=xxx。
+        **参数解释**：证书的指纹。 支持多值查询，查询条件格式：fingerprint=xxx&fingerprint=xxx。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param fingerprint: The fingerprint of this ListCertificatesRequest.
         :type fingerprint: list[str]
@@ -414,7 +414,7 @@ class ListCertificatesRequest:
     def source(self):
         r"""Gets the source of this ListCertificatesRequest.
 
-        证书来源。  支持多值查询，查询条件格式：source=xxx&source=xxx。
+        **参数解释**：证书来源。 支持多值查询，查询条件格式：source=xxx&source=xxx。  **约束限制**：不涉及  **取值范围**： - scm：表示关联云证书管理服务（CCM）中的证书。 - 空值：表示自有证书。  **默认取值**：不涉及
 
         :return: The source of this ListCertificatesRequest.
         :rtype: list[str]
@@ -425,7 +425,7 @@ class ListCertificatesRequest:
     def source(self, source):
         r"""Sets the source of this ListCertificatesRequest.
 
-        证书来源。  支持多值查询，查询条件格式：source=xxx&source=xxx。
+        **参数解释**：证书来源。 支持多值查询，查询条件格式：source=xxx&source=xxx。  **约束限制**：不涉及  **取值范围**： - scm：表示关联云证书管理服务（CCM）中的证书。 - 空值：表示自有证书。  **默认取值**：不涉及
 
         :param source: The source of this ListCertificatesRequest.
         :type source: list[str]
@@ -436,7 +436,7 @@ class ListCertificatesRequest:
     def protection_status(self):
         r"""Gets the protection_status of this ListCertificatesRequest.
 
-        修改保护状态。  支持多值查询，查询条件格式：protection_status=xxx&protection_status=xxx。
+        **参数解释**：修改保护状态。 支持多值查询，查询条件格式：protection_status=xxx&protection_status=xxx。  **约束限制**：不涉及  **取值范围**： - nonProtection: 不保护 - consoleProtection: 控制台修改保护，即禁止通过控制台修改。  **默认取值**：不涉及
 
         :return: The protection_status of this ListCertificatesRequest.
         :rtype: list[str]
@@ -447,7 +447,7 @@ class ListCertificatesRequest:
     def protection_status(self, protection_status):
         r"""Sets the protection_status of this ListCertificatesRequest.
 
-        修改保护状态。  支持多值查询，查询条件格式：protection_status=xxx&protection_status=xxx。
+        **参数解释**：修改保护状态。 支持多值查询，查询条件格式：protection_status=xxx&protection_status=xxx。  **约束限制**：不涉及  **取值范围**： - nonProtection: 不保护 - consoleProtection: 控制台修改保护，即禁止通过控制台修改。  **默认取值**：不涉及
 
         :param protection_status: The protection_status of this ListCertificatesRequest.
         :type protection_status: list[str]
@@ -458,7 +458,7 @@ class ListCertificatesRequest:
     def protection_reason(self):
         r"""Gets the protection_reason of this ListCertificatesRequest.
 
-        设置修改保护的原因。  支持多值查询，查询条件格式：protection_reason=xxx&protection_reason=xxx。
+        **参数解释**：设置修改保护的原因。 支持多值查询，查询条件格式：protection_reason=xxx&protection_reason=xxx。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The protection_reason of this ListCertificatesRequest.
         :rtype: list[str]
@@ -469,7 +469,7 @@ class ListCertificatesRequest:
     def protection_reason(self, protection_reason):
         r"""Sets the protection_reason of this ListCertificatesRequest.
 
-        设置修改保护的原因。  支持多值查询，查询条件格式：protection_reason=xxx&protection_reason=xxx。
+        **参数解释**：设置修改保护的原因。 支持多值查询，查询条件格式：protection_reason=xxx&protection_reason=xxx。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param protection_reason: The protection_reason of this ListCertificatesRequest.
         :type protection_reason: list[str]
@@ -480,7 +480,7 @@ class ListCertificatesRequest:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this ListCertificatesRequest.
 
-        参数解释：所属的企业项目ID。 如果enterprise_project_id不传值，默认查询所有企业项目下的资源，鉴权按照细粒度权限鉴权，必须在用户组下分配elb:certificates:list权限。 如果enterprise_project_id传值，鉴权按照企业项目权限鉴权，分为传入具体eps_id和all_granted_eps两种场景，前者查询指定eps_id的eps下的资源，后者查询的是所有有list权限的eps下的资源。  支持多值查询，查询条件格式： *enterprise_project_id=xxx&enterprise_project_id=xxx*。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
+        **参数解释**：资源所属的企业项目ID。 支持多值查询，查询条件格式： *enterprise_project_id=xxx&enterprise_project_id=xxx*。  **约束限制**： - 如果enterprise_project_id不传值，默认查询所有企业项目下的资源，鉴权按照细粒度权限鉴权，必须在用户组下分配elb:certificates:list权限。 - 如果enterprise_project_id传值，鉴权按照企业项目权限鉴权，分为传入具体eps_id和all_granted_eps两种场景，前者查询指定eps_id的eps下的资源，后者查询的是所有有list权限的eps下的资源。  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The enterprise_project_id of this ListCertificatesRequest.
         :rtype: list[str]
@@ -491,7 +491,7 @@ class ListCertificatesRequest:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this ListCertificatesRequest.
 
-        参数解释：所属的企业项目ID。 如果enterprise_project_id不传值，默认查询所有企业项目下的资源，鉴权按照细粒度权限鉴权，必须在用户组下分配elb:certificates:list权限。 如果enterprise_project_id传值，鉴权按照企业项目权限鉴权，分为传入具体eps_id和all_granted_eps两种场景，前者查询指定eps_id的eps下的资源，后者查询的是所有有list权限的eps下的资源。  支持多值查询，查询条件格式： *enterprise_project_id=xxx&enterprise_project_id=xxx*。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
+        **参数解释**：资源所属的企业项目ID。 支持多值查询，查询条件格式： *enterprise_project_id=xxx&enterprise_project_id=xxx*。  **约束限制**： - 如果enterprise_project_id不传值，默认查询所有企业项目下的资源，鉴权按照细粒度权限鉴权，必须在用户组下分配elb:certificates:list权限。 - 如果enterprise_project_id传值，鉴权按照企业项目权限鉴权，分为传入具体eps_id和all_granted_eps两种场景，前者查询指定eps_id的eps下的资源，后者查询的是所有有list权限的eps下的资源。  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param enterprise_project_id: The enterprise_project_id of this ListCertificatesRequest.
         :type enterprise_project_id: list[str]

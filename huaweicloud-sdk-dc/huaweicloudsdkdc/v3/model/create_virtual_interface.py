@@ -24,6 +24,7 @@ class CreateVirtualInterface:
         'service_type': 'str',
         'vlan': 'int',
         'bandwidth': 'int',
+        'priority': 'str',
         'local_gateway_v4_ip': 'str',
         'remote_gateway_v4_ip': 'str',
         'address_family': 'str',
@@ -52,6 +53,7 @@ class CreateVirtualInterface:
         'service_type': 'service_type',
         'vlan': 'vlan',
         'bandwidth': 'bandwidth',
+        'priority': 'priority',
         'local_gateway_v4_ip': 'local_gateway_v4_ip',
         'remote_gateway_v4_ip': 'remote_gateway_v4_ip',
         'address_family': 'address_family',
@@ -72,7 +74,7 @@ class CreateVirtualInterface:
         'tags': 'tags'
     }
 
-    def __init__(self, name=None, description=None, direct_connect_id=None, type=None, service_type=None, vlan=None, bandwidth=None, local_gateway_v4_ip=None, remote_gateway_v4_ip=None, address_family=None, local_gateway_v6_ip=None, remote_gateway_v6_ip=None, vgw_id=None, gateway_id=None, route_mode=None, bgp_asn=None, bgp_md5=None, remote_ep_group=None, service_ep_group=None, enable_bfd=None, enable_nqa=None, lag_id=None, resource_tenant_id=None, enterprise_project_id=None, tags=None):
+    def __init__(self, name=None, description=None, direct_connect_id=None, type=None, service_type=None, vlan=None, bandwidth=None, priority=None, local_gateway_v4_ip=None, remote_gateway_v4_ip=None, address_family=None, local_gateway_v6_ip=None, remote_gateway_v6_ip=None, vgw_id=None, gateway_id=None, route_mode=None, bgp_asn=None, bgp_md5=None, remote_ep_group=None, service_ep_group=None, enable_bfd=None, enable_nqa=None, lag_id=None, resource_tenant_id=None, enterprise_project_id=None, tags=None):
         r"""CreateVirtualInterface
 
         The model defined in huaweicloud sdk
@@ -91,6 +93,8 @@ class CreateVirtualInterface:
         :type vlan: int
         :param bandwidth: 虚拟接口接入带宽
         :type bandwidth: int
+        :param priority: 虚拟接口的优先级，支持两种优先级状态normal和low。 接口优先级相同时表示负载关系，接口优先级不同时表示主备关系，出云流量优先转到优先级更高的normal接口。 目前仅BGP模式接口支持。
+        :type priority: str
         :param local_gateway_v4_ip: 云侧网关IPv4接口地址,如果address_family是IPv4，是必选参数
         :type local_gateway_v4_ip: str
         :param remote_gateway_v4_ip: 客户侧网关IPv4接口地址,如果address_family是IPv4，是必选参数
@@ -138,6 +142,7 @@ class CreateVirtualInterface:
         self._service_type = None
         self._vlan = None
         self._bandwidth = None
+        self._priority = None
         self._local_gateway_v4_ip = None
         self._remote_gateway_v4_ip = None
         self._address_family = None
@@ -169,6 +174,8 @@ class CreateVirtualInterface:
             self.service_type = service_type
         self.vlan = vlan
         self.bandwidth = bandwidth
+        if priority is not None:
+            self.priority = priority
         if local_gateway_v4_ip is not None:
             self.local_gateway_v4_ip = local_gateway_v4_ip
         if remote_gateway_v4_ip is not None:
@@ -356,6 +363,28 @@ class CreateVirtualInterface:
         :type bandwidth: int
         """
         self._bandwidth = bandwidth
+
+    @property
+    def priority(self):
+        r"""Gets the priority of this CreateVirtualInterface.
+
+        虚拟接口的优先级，支持两种优先级状态normal和low。 接口优先级相同时表示负载关系，接口优先级不同时表示主备关系，出云流量优先转到优先级更高的normal接口。 目前仅BGP模式接口支持。
+
+        :return: The priority of this CreateVirtualInterface.
+        :rtype: str
+        """
+        return self._priority
+
+    @priority.setter
+    def priority(self, priority):
+        r"""Sets the priority of this CreateVirtualInterface.
+
+        虚拟接口的优先级，支持两种优先级状态normal和low。 接口优先级相同时表示负载关系，接口优先级不同时表示主备关系，出云流量优先转到优先级更高的normal接口。 目前仅BGP模式接口支持。
+
+        :param priority: The priority of this CreateVirtualInterface.
+        :type priority: str
+        """
+        self._priority = priority
 
     @property
     def local_gateway_v4_ip(self):

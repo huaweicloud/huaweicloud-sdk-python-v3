@@ -35,7 +35,7 @@ class ShowHostAssetManualCollectStatusRequest:
 
         :param enterprise_project_id: **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
         :type enterprise_project_id: str
-        :param type: 资产类型 - web-app：web应用 - web-service：web服务 - web-framwork：web框架 - web-site：web站点  - midware：中间件 - database：数据库 - kernel-module：内核模块
+        :param type: 资产类型 - web-app：web应用 - web-service：web服务 - web-framework：web框架 - web-site：web站点  - midware：中间件 - database：数据库 - kernel-module：内核模块
         :type type: str
         :param host_id: 主机ID
         :type host_id: str
@@ -79,7 +79,7 @@ class ShowHostAssetManualCollectStatusRequest:
     def type(self):
         r"""Gets the type of this ShowHostAssetManualCollectStatusRequest.
 
-        资产类型 - web-app：web应用 - web-service：web服务 - web-framwork：web框架 - web-site：web站点  - midware：中间件 - database：数据库 - kernel-module：内核模块
+        资产类型 - web-app：web应用 - web-service：web服务 - web-framework：web框架 - web-site：web站点  - midware：中间件 - database：数据库 - kernel-module：内核模块
 
         :return: The type of this ShowHostAssetManualCollectStatusRequest.
         :rtype: str
@@ -90,7 +90,7 @@ class ShowHostAssetManualCollectStatusRequest:
     def type(self, type):
         r"""Sets the type of this ShowHostAssetManualCollectStatusRequest.
 
-        资产类型 - web-app：web应用 - web-service：web服务 - web-framwork：web框架 - web-site：web站点  - midware：中间件 - database：数据库 - kernel-module：内核模块
+        资产类型 - web-app：web应用 - web-service：web服务 - web-framework：web框架 - web-site：web站点  - midware：中间件 - database：数据库 - kernel-module：内核模块
 
         :param type: The type of this ShowHostAssetManualCollectStatusRequest.
         :type type: str

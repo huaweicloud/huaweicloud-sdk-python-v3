@@ -34,9 +34,9 @@ class ListSecurityPoliciesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param security_policies: 自定义安全策略列表返回对象。
+        :param security_policies: **参数解释**：自定义安全策略列表返回对象。
         :type security_policies: list[:class:`huaweicloudsdkelb.v3.SecurityPolicy`]
-        :param request_id: 请求ID。  注：自动生成 。
+        :param request_id: **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
         :type request_id: str
         :param page_info: 
         :type page_info: :class:`huaweicloudsdkelb.v3.PageInfo`
@@ -60,7 +60,7 @@ class ListSecurityPoliciesResponse(SdkResponse):
     def security_policies(self):
         r"""Gets the security_policies of this ListSecurityPoliciesResponse.
 
-        自定义安全策略列表返回对象。
+        **参数解释**：自定义安全策略列表返回对象。
 
         :return: The security_policies of this ListSecurityPoliciesResponse.
         :rtype: list[:class:`huaweicloudsdkelb.v3.SecurityPolicy`]
@@ -71,7 +71,7 @@ class ListSecurityPoliciesResponse(SdkResponse):
     def security_policies(self, security_policies):
         r"""Sets the security_policies of this ListSecurityPoliciesResponse.
 
-        自定义安全策略列表返回对象。
+        **参数解释**：自定义安全策略列表返回对象。
 
         :param security_policies: The security_policies of this ListSecurityPoliciesResponse.
         :type security_policies: list[:class:`huaweicloudsdkelb.v3.SecurityPolicy`]
@@ -82,7 +82,7 @@ class ListSecurityPoliciesResponse(SdkResponse):
     def request_id(self):
         r"""Gets the request_id of this ListSecurityPoliciesResponse.
 
-        请求ID。  注：自动生成 。
+        **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
 
         :return: The request_id of this ListSecurityPoliciesResponse.
         :rtype: str
@@ -93,7 +93,7 @@ class ListSecurityPoliciesResponse(SdkResponse):
     def request_id(self, request_id):
         r"""Sets the request_id of this ListSecurityPoliciesResponse.
 
-        请求ID。  注：自动生成 。
+        **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
 
         :param request_id: The request_id of this ListSecurityPoliciesResponse.
         :type request_id: str

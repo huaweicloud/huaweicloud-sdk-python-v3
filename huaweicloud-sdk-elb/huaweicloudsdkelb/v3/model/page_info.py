@@ -33,11 +33,11 @@ class PageInfo:
 
         The model defined in huaweicloud sdk
 
-        :param previous_marker: 参数解释：分页查询结果中第一条记录的ID。通常用于配合page_reverse&#x3D;true查询上一页。
+        :param previous_marker: **参数解释**：分页查询结果中第一条记录的ID。通常用于配合page_reverse&#x3D;true查询上一页。  **取值范围**：不涉及
         :type previous_marker: str
-        :param next_marker: 参数解释：分页查询结果中最后一条记录的ID。通常用于查询下一页。
+        :param next_marker: **参数解释**：分页查询结果中最后一条记录的ID。通常用于查询下一页。  **取值范围**：不涉及
         :type next_marker: str
-        :param current_count: 参数解释：当前的记录数。
+        :param current_count: **参数解释**：当前页返回记录数。  **取值范围**：不涉及
         :type current_count: int
         """
         
@@ -57,7 +57,7 @@ class PageInfo:
     def previous_marker(self):
         r"""Gets the previous_marker of this PageInfo.
 
-        参数解释：分页查询结果中第一条记录的ID。通常用于配合page_reverse=true查询上一页。
+        **参数解释**：分页查询结果中第一条记录的ID。通常用于配合page_reverse=true查询上一页。  **取值范围**：不涉及
 
         :return: The previous_marker of this PageInfo.
         :rtype: str
@@ -68,7 +68,7 @@ class PageInfo:
     def previous_marker(self, previous_marker):
         r"""Sets the previous_marker of this PageInfo.
 
-        参数解释：分页查询结果中第一条记录的ID。通常用于配合page_reverse=true查询上一页。
+        **参数解释**：分页查询结果中第一条记录的ID。通常用于配合page_reverse=true查询上一页。  **取值范围**：不涉及
 
         :param previous_marker: The previous_marker of this PageInfo.
         :type previous_marker: str
@@ -79,7 +79,7 @@ class PageInfo:
     def next_marker(self):
         r"""Gets the next_marker of this PageInfo.
 
-        参数解释：分页查询结果中最后一条记录的ID。通常用于查询下一页。
+        **参数解释**：分页查询结果中最后一条记录的ID。通常用于查询下一页。  **取值范围**：不涉及
 
         :return: The next_marker of this PageInfo.
         :rtype: str
@@ -90,7 +90,7 @@ class PageInfo:
     def next_marker(self, next_marker):
         r"""Sets the next_marker of this PageInfo.
 
-        参数解释：分页查询结果中最后一条记录的ID。通常用于查询下一页。
+        **参数解释**：分页查询结果中最后一条记录的ID。通常用于查询下一页。  **取值范围**：不涉及
 
         :param next_marker: The next_marker of this PageInfo.
         :type next_marker: str
@@ -101,7 +101,7 @@ class PageInfo:
     def current_count(self):
         r"""Gets the current_count of this PageInfo.
 
-        参数解释：当前的记录数。
+        **参数解释**：当前页返回记录数。  **取值范围**：不涉及
 
         :return: The current_count of this PageInfo.
         :rtype: int
@@ -112,7 +112,7 @@ class PageInfo:
     def current_count(self, current_count):
         r"""Sets the current_count of this PageInfo.
 
-        参数解释：当前的记录数。
+        **参数解释**：当前页返回记录数。  **取值范围**：不涉及
 
         :param current_count: The current_count of this PageInfo.
         :type current_count: int

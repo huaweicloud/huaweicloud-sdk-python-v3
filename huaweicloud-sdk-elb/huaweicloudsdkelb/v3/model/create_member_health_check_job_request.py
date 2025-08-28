@@ -31,7 +31,7 @@ class CreateMemberHealthCheckJobRequest:
 
         The model defined in huaweicloud sdk
 
-        :param member_id: 参数解释：后端服务器ID。
+        :param member_id: **参数解释**：后端服务器ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type member_id: str
         :param body: Body of the CreateMemberHealthCheckJobRequest
         :type body: :class:`huaweicloudsdkelb.v3.CreateMemberHealthCheckJobRequestBody`
@@ -51,7 +51,7 @@ class CreateMemberHealthCheckJobRequest:
     def member_id(self):
         r"""Gets the member_id of this CreateMemberHealthCheckJobRequest.
 
-        参数解释：后端服务器ID。
+        **参数解释**：后端服务器ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The member_id of this CreateMemberHealthCheckJobRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class CreateMemberHealthCheckJobRequest:
     def member_id(self, member_id):
         r"""Sets the member_id of this CreateMemberHealthCheckJobRequest.
 
-        参数解释：后端服务器ID。
+        **参数解释**：后端服务器ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param member_id: The member_id of this CreateMemberHealthCheckJobRequest.
         :type member_id: str

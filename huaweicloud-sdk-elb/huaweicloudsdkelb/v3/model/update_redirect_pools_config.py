@@ -31,9 +31,9 @@ class UpdateRedirectPoolsConfig:
 
         The model defined in huaweicloud sdk
 
-        :param pool_id: 参数解释：所在后端服务器组ID。
+        :param pool_id: **参数解释**：所在后端服务器组ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type pool_id: str
-        :param weight: 参数解释：转发策略主机组的权重。请求将根据该权重进行负载分发到不同的主机组。权重值越大，分发的请求越多。权重为0的后端不再接受新的请求。  取值范围：0-100
+        :param weight: **参数解释**：转发策略服务器组的权重。请求将根据该权重进行负载分发到不同的服务器组。权重值越大，分发的请求越多。权重为0的后端不再接受新的请求。  **约束限制**：不涉及  **取值范围**：0-100  **默认取值**：不涉及
         :type weight: str
         """
         
@@ -51,7 +51,7 @@ class UpdateRedirectPoolsConfig:
     def pool_id(self):
         r"""Gets the pool_id of this UpdateRedirectPoolsConfig.
 
-        参数解释：所在后端服务器组ID。
+        **参数解释**：所在后端服务器组ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The pool_id of this UpdateRedirectPoolsConfig.
         :rtype: str
@@ -62,7 +62,7 @@ class UpdateRedirectPoolsConfig:
     def pool_id(self, pool_id):
         r"""Sets the pool_id of this UpdateRedirectPoolsConfig.
 
-        参数解释：所在后端服务器组ID。
+        **参数解释**：所在后端服务器组ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param pool_id: The pool_id of this UpdateRedirectPoolsConfig.
         :type pool_id: str
@@ -73,7 +73,7 @@ class UpdateRedirectPoolsConfig:
     def weight(self):
         r"""Gets the weight of this UpdateRedirectPoolsConfig.
 
-        参数解释：转发策略主机组的权重。请求将根据该权重进行负载分发到不同的主机组。权重值越大，分发的请求越多。权重为0的后端不再接受新的请求。  取值范围：0-100
+        **参数解释**：转发策略服务器组的权重。请求将根据该权重进行负载分发到不同的服务器组。权重值越大，分发的请求越多。权重为0的后端不再接受新的请求。  **约束限制**：不涉及  **取值范围**：0-100  **默认取值**：不涉及
 
         :return: The weight of this UpdateRedirectPoolsConfig.
         :rtype: str
@@ -84,7 +84,7 @@ class UpdateRedirectPoolsConfig:
     def weight(self, weight):
         r"""Sets the weight of this UpdateRedirectPoolsConfig.
 
-        参数解释：转发策略主机组的权重。请求将根据该权重进行负载分发到不同的主机组。权重值越大，分发的请求越多。权重为0的后端不再接受新的请求。  取值范围：0-100
+        **参数解释**：转发策略服务器组的权重。请求将根据该权重进行负载分发到不同的服务器组。权重值越大，分发的请求越多。权重为0的后端不再接受新的请求。  **约束限制**：不涉及  **取值范围**：0-100  **默认取值**：不涉及
 
         :param weight: The weight of this UpdateRedirectPoolsConfig.
         :type weight: str

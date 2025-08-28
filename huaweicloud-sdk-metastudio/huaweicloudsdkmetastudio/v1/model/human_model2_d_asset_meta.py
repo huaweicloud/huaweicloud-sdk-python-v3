@@ -18,6 +18,7 @@ class HumanModel2DAssetMeta:
 
     openapi_types = {
         'is_action_editable': 'bool',
+        'is_live_copy': 'bool',
         'is_real_background': 'bool',
         'support_live': 'bool',
         'model_version': 'str',
@@ -31,6 +32,7 @@ class HumanModel2DAssetMeta:
 
     attribute_map = {
         'is_action_editable': 'is_action_editable',
+        'is_live_copy': 'is_live_copy',
         'is_real_background': 'is_real_background',
         'support_live': 'support_live',
         'model_version': 'model_version',
@@ -42,13 +44,15 @@ class HumanModel2DAssetMeta:
         'voice_asset_id': 'voice_asset_id'
     }
 
-    def __init__(self, is_action_editable=None, is_real_background=None, support_live=None, model_version=None, model_resolution=None, device_names=None, is_with_action_library=None, action_tag_map=None, is_flexus=None, voice_asset_id=None):
+    def __init__(self, is_action_editable=None, is_live_copy=None, is_real_background=None, support_live=None, model_version=None, model_resolution=None, device_names=None, is_with_action_library=None, action_tag_map=None, is_flexus=None, voice_asset_id=None):
         r"""HumanModel2DAssetMeta
 
         The model defined in huaweicloud sdk
 
         :param is_action_editable: **参数解释**： 分身数字人的动作是否可编辑 **约束限制**： 不涉及 **取值范围**： * true: 动作可编辑 * false: 动作不可编辑
         :type is_action_editable: bool
+        :param is_live_copy: **参数解释**： 是否是直播间复刻任务 **约束限制**： 不涉及 **取值范围**： * true: 是直播间复刻任务 * false: 不是直播间复刻任务
+        :type is_live_copy: bool
         :param is_real_background: **参数解释**： 是否是实景分身数字人 **约束限制**： 实景分身数字人不做背景替换。 **取值范围**： * true: 实景分身数字人 * false: 普通分身数字人，不带背景。
         :type is_real_background: bool
         :param support_live: **参数解释**： 是否支持直播 **约束限制**： 不涉及 **取值范围**： * true: 支持直播 * false: 不支持直播。
@@ -72,6 +76,7 @@ class HumanModel2DAssetMeta:
         
 
         self._is_action_editable = None
+        self._is_live_copy = None
         self._is_real_background = None
         self._support_live = None
         self._model_version = None
@@ -85,6 +90,8 @@ class HumanModel2DAssetMeta:
 
         if is_action_editable is not None:
             self.is_action_editable = is_action_editable
+        if is_live_copy is not None:
+            self.is_live_copy = is_live_copy
         if is_real_background is not None:
             self.is_real_background = is_real_background
         if support_live is not None:
@@ -125,6 +132,28 @@ class HumanModel2DAssetMeta:
         :type is_action_editable: bool
         """
         self._is_action_editable = is_action_editable
+
+    @property
+    def is_live_copy(self):
+        r"""Gets the is_live_copy of this HumanModel2DAssetMeta.
+
+        **参数解释**： 是否是直播间复刻任务 **约束限制**： 不涉及 **取值范围**： * true: 是直播间复刻任务 * false: 不是直播间复刻任务
+
+        :return: The is_live_copy of this HumanModel2DAssetMeta.
+        :rtype: bool
+        """
+        return self._is_live_copy
+
+    @is_live_copy.setter
+    def is_live_copy(self, is_live_copy):
+        r"""Sets the is_live_copy of this HumanModel2DAssetMeta.
+
+        **参数解释**： 是否是直播间复刻任务 **约束限制**： 不涉及 **取值范围**： * true: 是直播间复刻任务 * false: 不是直播间复刻任务
+
+        :param is_live_copy: The is_live_copy of this HumanModel2DAssetMeta.
+        :type is_live_copy: bool
+        """
+        self._is_live_copy = is_live_copy
 
     @property
     def is_real_background(self):

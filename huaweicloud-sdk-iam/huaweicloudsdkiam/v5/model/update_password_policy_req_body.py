@@ -43,19 +43,19 @@ class UpdatePasswordPolicyReqBody:
 
         The model defined in huaweicloud sdk
 
-        :param maximum_consecutive_identical_chars: 同一字符连续出现的最大次数。
+        :param maximum_consecutive_identical_chars: 同一字符连续出现的最大次数，取值范围为[0,32]。
         :type maximum_consecutive_identical_chars: int
-        :param minimum_password_age: 密码最短使用时间（分钟）。
+        :param minimum_password_age: 密码最短使用时间（分钟），取值范围为[0,1440]。
         :type minimum_password_age: int
-        :param minimum_password_length: 密码最小字符数。
+        :param minimum_password_length: 密码最小字符数，取值范围为[8,32]。
         :type minimum_password_length: int
-        :param password_reuse_prevention: 密码不能与历史密码重复次数。
+        :param password_reuse_prevention: 密码不能与历史密码重复次数，取值范围为[0,24]。
         :type password_reuse_prevention: int
-        :param password_not_username_or_invert: 密码是否可以是用户名或用户名的反序。
+        :param password_not_username_or_invert: 密码是否可以是用户名或用户名的反序。默认值为true，为true时表示密码不可以是用户名或用户名的反序。
         :type password_not_username_or_invert: bool
-        :param password_validity_period: 密码有效期（天）。
+        :param password_validity_period: 密码有效期（天），取值范围为[0,180]。
         :type password_validity_period: int
-        :param password_char_combination: 至少包含字符种类的个数。
+        :param password_char_combination: 至少包含字符种类的个数，取值范围为[2,4]。
         :type password_char_combination: int
         :param allow_user_to_change_password: 是否允许IAM用户修改自己的密码，不适用于根用户。
         :type allow_user_to_change_password: bool
@@ -94,7 +94,7 @@ class UpdatePasswordPolicyReqBody:
     def maximum_consecutive_identical_chars(self):
         r"""Gets the maximum_consecutive_identical_chars of this UpdatePasswordPolicyReqBody.
 
-        同一字符连续出现的最大次数。
+        同一字符连续出现的最大次数，取值范围为[0,32]。
 
         :return: The maximum_consecutive_identical_chars of this UpdatePasswordPolicyReqBody.
         :rtype: int
@@ -105,7 +105,7 @@ class UpdatePasswordPolicyReqBody:
     def maximum_consecutive_identical_chars(self, maximum_consecutive_identical_chars):
         r"""Sets the maximum_consecutive_identical_chars of this UpdatePasswordPolicyReqBody.
 
-        同一字符连续出现的最大次数。
+        同一字符连续出现的最大次数，取值范围为[0,32]。
 
         :param maximum_consecutive_identical_chars: The maximum_consecutive_identical_chars of this UpdatePasswordPolicyReqBody.
         :type maximum_consecutive_identical_chars: int
@@ -116,7 +116,7 @@ class UpdatePasswordPolicyReqBody:
     def minimum_password_age(self):
         r"""Gets the minimum_password_age of this UpdatePasswordPolicyReqBody.
 
-        密码最短使用时间（分钟）。
+        密码最短使用时间（分钟），取值范围为[0,1440]。
 
         :return: The minimum_password_age of this UpdatePasswordPolicyReqBody.
         :rtype: int
@@ -127,7 +127,7 @@ class UpdatePasswordPolicyReqBody:
     def minimum_password_age(self, minimum_password_age):
         r"""Sets the minimum_password_age of this UpdatePasswordPolicyReqBody.
 
-        密码最短使用时间（分钟）。
+        密码最短使用时间（分钟），取值范围为[0,1440]。
 
         :param minimum_password_age: The minimum_password_age of this UpdatePasswordPolicyReqBody.
         :type minimum_password_age: int
@@ -138,7 +138,7 @@ class UpdatePasswordPolicyReqBody:
     def minimum_password_length(self):
         r"""Gets the minimum_password_length of this UpdatePasswordPolicyReqBody.
 
-        密码最小字符数。
+        密码最小字符数，取值范围为[8,32]。
 
         :return: The minimum_password_length of this UpdatePasswordPolicyReqBody.
         :rtype: int
@@ -149,7 +149,7 @@ class UpdatePasswordPolicyReqBody:
     def minimum_password_length(self, minimum_password_length):
         r"""Sets the minimum_password_length of this UpdatePasswordPolicyReqBody.
 
-        密码最小字符数。
+        密码最小字符数，取值范围为[8,32]。
 
         :param minimum_password_length: The minimum_password_length of this UpdatePasswordPolicyReqBody.
         :type minimum_password_length: int
@@ -160,7 +160,7 @@ class UpdatePasswordPolicyReqBody:
     def password_reuse_prevention(self):
         r"""Gets the password_reuse_prevention of this UpdatePasswordPolicyReqBody.
 
-        密码不能与历史密码重复次数。
+        密码不能与历史密码重复次数，取值范围为[0,24]。
 
         :return: The password_reuse_prevention of this UpdatePasswordPolicyReqBody.
         :rtype: int
@@ -171,7 +171,7 @@ class UpdatePasswordPolicyReqBody:
     def password_reuse_prevention(self, password_reuse_prevention):
         r"""Sets the password_reuse_prevention of this UpdatePasswordPolicyReqBody.
 
-        密码不能与历史密码重复次数。
+        密码不能与历史密码重复次数，取值范围为[0,24]。
 
         :param password_reuse_prevention: The password_reuse_prevention of this UpdatePasswordPolicyReqBody.
         :type password_reuse_prevention: int
@@ -182,7 +182,7 @@ class UpdatePasswordPolicyReqBody:
     def password_not_username_or_invert(self):
         r"""Gets the password_not_username_or_invert of this UpdatePasswordPolicyReqBody.
 
-        密码是否可以是用户名或用户名的反序。
+        密码是否可以是用户名或用户名的反序。默认值为true，为true时表示密码不可以是用户名或用户名的反序。
 
         :return: The password_not_username_or_invert of this UpdatePasswordPolicyReqBody.
         :rtype: bool
@@ -193,7 +193,7 @@ class UpdatePasswordPolicyReqBody:
     def password_not_username_or_invert(self, password_not_username_or_invert):
         r"""Sets the password_not_username_or_invert of this UpdatePasswordPolicyReqBody.
 
-        密码是否可以是用户名或用户名的反序。
+        密码是否可以是用户名或用户名的反序。默认值为true，为true时表示密码不可以是用户名或用户名的反序。
 
         :param password_not_username_or_invert: The password_not_username_or_invert of this UpdatePasswordPolicyReqBody.
         :type password_not_username_or_invert: bool
@@ -204,7 +204,7 @@ class UpdatePasswordPolicyReqBody:
     def password_validity_period(self):
         r"""Gets the password_validity_period of this UpdatePasswordPolicyReqBody.
 
-        密码有效期（天）。
+        密码有效期（天），取值范围为[0,180]。
 
         :return: The password_validity_period of this UpdatePasswordPolicyReqBody.
         :rtype: int
@@ -215,7 +215,7 @@ class UpdatePasswordPolicyReqBody:
     def password_validity_period(self, password_validity_period):
         r"""Sets the password_validity_period of this UpdatePasswordPolicyReqBody.
 
-        密码有效期（天）。
+        密码有效期（天），取值范围为[0,180]。
 
         :param password_validity_period: The password_validity_period of this UpdatePasswordPolicyReqBody.
         :type password_validity_period: int
@@ -226,7 +226,7 @@ class UpdatePasswordPolicyReqBody:
     def password_char_combination(self):
         r"""Gets the password_char_combination of this UpdatePasswordPolicyReqBody.
 
-        至少包含字符种类的个数。
+        至少包含字符种类的个数，取值范围为[2,4]。
 
         :return: The password_char_combination of this UpdatePasswordPolicyReqBody.
         :rtype: int
@@ -237,7 +237,7 @@ class UpdatePasswordPolicyReqBody:
     def password_char_combination(self, password_char_combination):
         r"""Sets the password_char_combination of this UpdatePasswordPolicyReqBody.
 
-        至少包含字符种类的个数。
+        至少包含字符种类的个数，取值范围为[2,4]。
 
         :param password_char_combination: The password_char_combination of this UpdatePasswordPolicyReqBody.
         :type password_char_combination: int

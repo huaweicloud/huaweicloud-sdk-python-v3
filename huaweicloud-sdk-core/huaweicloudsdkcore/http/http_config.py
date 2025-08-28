@@ -29,7 +29,8 @@ class HttpConfig(object):
     def __init__(self, proxy_protocol=None, proxy_host=None, proxy_port=None, proxy_user=None, proxy_password=None,
                  ignore_ssl_verification=False, ssl_ca_cert=None, cert_file=None, key_file=None, timeout=(60, 120),
                  retry_times=0, pool_connections=10, pool_maxsize=10, allow_redirects=False,
-                 ignore_content_type_for_get_request=False, signing_algorithm=SigningAlgorithm.get_default()):
+                 ignore_content_type_for_get_request=False, signing_algorithm=SigningAlgorithm.get_default(),
+                 user_agent=None):
         """
         :param proxy_protocol(optional) : proxy protocol, http or https
         :type proxy_protocol: str
@@ -87,6 +88,9 @@ class HttpConfig(object):
         :param signing_algorithm: signing algorithm of request
          default, value is HMAC_SHA256
         :type signing_algorithm: SigningAlgorithm
+
+        :param user_agent(optional): An optional custom value can be appended to the User-Agent request header.
+        :type user_agent: str
         """
         self._proxy_protocol = proxy_protocol
         self._proxy_host = proxy_host
@@ -107,6 +111,8 @@ class HttpConfig(object):
         self._pool_maxsize = pool_maxsize
         self._ignore_content_type_for_get_request = ignore_content_type_for_get_request
         self._signing_algorithm = signing_algorithm
+
+        self._user_agent = user_agent
 
     @property
     def proxy_protocol(self):
@@ -235,6 +241,14 @@ class HttpConfig(object):
     @signing_algorithm.setter
     def signing_algorithm(self, value):
         self._signing_algorithm = value
+
+    @property
+    def user_agent(self):
+        return self._user_agent
+
+    @user_agent.setter
+    def user_agent(self, value):
+        self._user_agent = value
 
     @property
     def proxy(self):

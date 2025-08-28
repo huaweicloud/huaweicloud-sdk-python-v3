@@ -35,13 +35,13 @@ class SystemSecurityPolicy:
 
         The model defined in huaweicloud sdk
 
-        :param name: 系统安全策略的名称。
+        :param name: **参数解释**：系统安全策略的名称。  **取值范围**：不涉及
         :type name: str
-        :param protocols: 系统安全策略的TLS协议列表。
+        :param protocols: **参数解释**：系统安全策略的TLS协议列表。  **取值范围**：不涉及
         :type protocols: str
-        :param ciphers: 系统安全策略的加密套件列表。
+        :param ciphers: **参数解释**：系统安全策略的加密套件列表。  **取值范围**：不涉及
         :type ciphers: str
-        :param project_id: 项目id。
+        :param project_id: **参数解释**：项目ID。获取方式请参见[获取项目ID](elb_fl_0008.xml)。  **取值范围**：长度为32个字符，由小写字母和数字组成。
         :type project_id: str
         """
         
@@ -62,7 +62,7 @@ class SystemSecurityPolicy:
     def name(self):
         r"""Gets the name of this SystemSecurityPolicy.
 
-        系统安全策略的名称。
+        **参数解释**：系统安全策略的名称。  **取值范围**：不涉及
 
         :return: The name of this SystemSecurityPolicy.
         :rtype: str
@@ -73,7 +73,7 @@ class SystemSecurityPolicy:
     def name(self, name):
         r"""Sets the name of this SystemSecurityPolicy.
 
-        系统安全策略的名称。
+        **参数解释**：系统安全策略的名称。  **取值范围**：不涉及
 
         :param name: The name of this SystemSecurityPolicy.
         :type name: str
@@ -84,7 +84,7 @@ class SystemSecurityPolicy:
     def protocols(self):
         r"""Gets the protocols of this SystemSecurityPolicy.
 
-        系统安全策略的TLS协议列表。
+        **参数解释**：系统安全策略的TLS协议列表。  **取值范围**：不涉及
 
         :return: The protocols of this SystemSecurityPolicy.
         :rtype: str
@@ -95,7 +95,7 @@ class SystemSecurityPolicy:
     def protocols(self, protocols):
         r"""Sets the protocols of this SystemSecurityPolicy.
 
-        系统安全策略的TLS协议列表。
+        **参数解释**：系统安全策略的TLS协议列表。  **取值范围**：不涉及
 
         :param protocols: The protocols of this SystemSecurityPolicy.
         :type protocols: str
@@ -106,7 +106,7 @@ class SystemSecurityPolicy:
     def ciphers(self):
         r"""Gets the ciphers of this SystemSecurityPolicy.
 
-        系统安全策略的加密套件列表。
+        **参数解释**：系统安全策略的加密套件列表。  **取值范围**：不涉及
 
         :return: The ciphers of this SystemSecurityPolicy.
         :rtype: str
@@ -117,7 +117,7 @@ class SystemSecurityPolicy:
     def ciphers(self, ciphers):
         r"""Sets the ciphers of this SystemSecurityPolicy.
 
-        系统安全策略的加密套件列表。
+        **参数解释**：系统安全策略的加密套件列表。  **取值范围**：不涉及
 
         :param ciphers: The ciphers of this SystemSecurityPolicy.
         :type ciphers: str
@@ -128,7 +128,7 @@ class SystemSecurityPolicy:
     def project_id(self):
         r"""Gets the project_id of this SystemSecurityPolicy.
 
-        项目id。
+        **参数解释**：项目ID。获取方式请参见[获取项目ID](elb_fl_0008.xml)。  **取值范围**：长度为32个字符，由小写字母和数字组成。
 
         :return: The project_id of this SystemSecurityPolicy.
         :rtype: str
@@ -139,7 +139,7 @@ class SystemSecurityPolicy:
     def project_id(self, project_id):
         r"""Sets the project_id of this SystemSecurityPolicy.
 
-        项目id。
+        **参数解释**：项目ID。获取方式请参见[获取项目ID](elb_fl_0008.xml)。  **取值范围**：长度为32个字符，由小写字母和数字组成。
 
         :param project_id: The project_id of this SystemSecurityPolicy.
         :type project_id: str

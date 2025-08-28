@@ -31,7 +31,7 @@ class UpdateHealthMonitorRequest:
 
         The model defined in huaweicloud sdk
 
-        :param healthmonitor_id: 健康检查ID
+        :param healthmonitor_id: **参数解释**：健康检查ID  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type healthmonitor_id: str
         :param body: Body of the UpdateHealthMonitorRequest
         :type body: :class:`huaweicloudsdkelb.v3.UpdateHealthMonitorRequestBody`
@@ -51,7 +51,7 @@ class UpdateHealthMonitorRequest:
     def healthmonitor_id(self):
         r"""Gets the healthmonitor_id of this UpdateHealthMonitorRequest.
 
-        健康检查ID
+        **参数解释**：健康检查ID  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The healthmonitor_id of this UpdateHealthMonitorRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class UpdateHealthMonitorRequest:
     def healthmonitor_id(self, healthmonitor_id):
         r"""Sets the healthmonitor_id of this UpdateHealthMonitorRequest.
 
-        健康检查ID
+        **参数解释**：健康检查ID  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param healthmonitor_id: The healthmonitor_id of this UpdateHealthMonitorRequest.
         :type healthmonitor_id: str

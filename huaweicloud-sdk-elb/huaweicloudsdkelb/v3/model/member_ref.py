@@ -29,7 +29,7 @@ class MemberRef:
 
         The model defined in huaweicloud sdk
 
-        :param id: 参数解释：后端服务器ID。
+        :param id: **参数解释**：后端服务器ID。  **取值范围**：不涉及
         :type id: str
         """
         
@@ -44,7 +44,7 @@ class MemberRef:
     def id(self):
         r"""Gets the id of this MemberRef.
 
-        参数解释：后端服务器ID。
+        **参数解释**：后端服务器ID。  **取值范围**：不涉及
 
         :return: The id of this MemberRef.
         :rtype: str
@@ -55,7 +55,7 @@ class MemberRef:
     def id(self, id):
         r"""Sets the id of this MemberRef.
 
-        参数解释：后端服务器ID。
+        **参数解释**：后端服务器ID。  **取值范围**：不涉及
 
         :param id: The id of this MemberRef.
         :type id: str

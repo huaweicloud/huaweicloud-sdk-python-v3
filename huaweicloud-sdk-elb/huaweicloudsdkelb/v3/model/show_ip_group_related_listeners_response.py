@@ -30,7 +30,7 @@ class ShowIpGroupRelatedListenersResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param listeners: IP地址组关联的所有监听器ID列表
+        :param listeners: **参数解释**：IP地址组关联的所有监听器ID列表。
         :type listeners: list[:class:`huaweicloudsdkelb.v3.ListenerRef`]
         """
         
@@ -46,7 +46,7 @@ class ShowIpGroupRelatedListenersResponse(SdkResponse):
     def listeners(self):
         r"""Gets the listeners of this ShowIpGroupRelatedListenersResponse.
 
-        IP地址组关联的所有监听器ID列表
+        **参数解释**：IP地址组关联的所有监听器ID列表。
 
         :return: The listeners of this ShowIpGroupRelatedListenersResponse.
         :rtype: list[:class:`huaweicloudsdkelb.v3.ListenerRef`]
@@ -57,7 +57,7 @@ class ShowIpGroupRelatedListenersResponse(SdkResponse):
     def listeners(self, listeners):
         r"""Sets the listeners of this ShowIpGroupRelatedListenersResponse.
 
-        IP地址组关联的所有监听器ID列表
+        **参数解释**：IP地址组关联的所有监听器ID列表。
 
         :param listeners: The listeners of this ShowIpGroupRelatedListenersResponse.
         :type listeners: list[:class:`huaweicloudsdkelb.v3.ListenerRef`]

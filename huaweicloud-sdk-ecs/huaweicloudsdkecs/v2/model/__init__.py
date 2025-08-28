@@ -80,6 +80,9 @@ from huaweicloudsdkecs.v2.model.change_vpc_response import ChangeVpcResponse
 from huaweicloudsdkecs.v2.model.change_vpc_security_groups import ChangeVpcSecurityGroups
 from huaweicloudsdkecs.v2.model.cloud_server import CloudServer
 from huaweicloudsdkecs.v2.model.cpu_options import CpuOptions
+from huaweicloudsdkecs.v2.model.create_launch_template_request import CreateLaunchTemplateRequest
+from huaweicloudsdkecs.v2.model.create_launch_template_request_body import CreateLaunchTemplateRequestBody
+from huaweicloudsdkecs.v2.model.create_launch_template_response import CreateLaunchTemplateResponse
 from huaweicloudsdkecs.v2.model.create_post_paid_servers_request import CreatePostPaidServersRequest
 from huaweicloudsdkecs.v2.model.create_post_paid_servers_request_body import CreatePostPaidServersRequestBody
 from huaweicloudsdkecs.v2.model.create_post_paid_servers_response import CreatePostPaidServersResponse
@@ -133,6 +136,7 @@ from huaweicloudsdkecs.v2.model.interface_attachment import InterfaceAttachment
 from huaweicloudsdkecs.v2.model.ipv6_bandwidth import Ipv6Bandwidth
 from huaweicloudsdkecs.v2.model.job_entities import JobEntities
 from huaweicloudsdkecs.v2.model.launch_template import LaunchTemplate
+from huaweicloudsdkecs.v2.model.launch_template_option import LaunchTemplateOption
 from huaweicloudsdkecs.v2.model.link import Link
 from huaweicloudsdkecs.v2.model.list_cloud_servers_request import ListCloudServersRequest
 from huaweicloudsdkecs.v2.model.list_cloud_servers_response import ListCloudServersResponse

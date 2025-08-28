@@ -29,7 +29,7 @@ class DecodeAuthorizationMessageReq:
 
         The model defined in huaweicloud sdk
 
-        :param encoded_message: 加密的鉴权失败原因。
+        :param encoded_message: 加密的鉴权失败原因，字符串长度范围[1,10240]。
         :type encoded_message: str
         """
         
@@ -44,7 +44,7 @@ class DecodeAuthorizationMessageReq:
     def encoded_message(self):
         r"""Gets the encoded_message of this DecodeAuthorizationMessageReq.
 
-        加密的鉴权失败原因。
+        加密的鉴权失败原因，字符串长度范围[1,10240]。
 
         :return: The encoded_message of this DecodeAuthorizationMessageReq.
         :rtype: str
@@ -55,7 +55,7 @@ class DecodeAuthorizationMessageReq:
     def encoded_message(self, encoded_message):
         r"""Sets the encoded_message of this DecodeAuthorizationMessageReq.
 
-        加密的鉴权失败原因。
+        加密的鉴权失败原因，字符串长度范围[1,10240]。
 
         :param encoded_message: The encoded_message of this DecodeAuthorizationMessageReq.
         :type encoded_message: str

@@ -63,9 +63,9 @@ class MainJob:
         :type error_msg: str
         :param project_id: 项目ID
         :type project_id: str
-        :param resource_id: 参数解释：资源ID。
+        :param resource_id: **参数解释**：资源ID。
         :type resource_id: str
-        :param sub_jobs: 子任务列表
+        :param sub_jobs: **参数解释**：子任务列表。
         :type sub_jobs: list[:class:`huaweicloudsdkelb.v3.SubJob`]
         """
         
@@ -284,7 +284,7 @@ class MainJob:
     def resource_id(self):
         r"""Gets the resource_id of this MainJob.
 
-        参数解释：资源ID。
+        **参数解释**：资源ID。
 
         :return: The resource_id of this MainJob.
         :rtype: str
@@ -295,7 +295,7 @@ class MainJob:
     def resource_id(self, resource_id):
         r"""Sets the resource_id of this MainJob.
 
-        参数解释：资源ID。
+        **参数解释**：资源ID。
 
         :param resource_id: The resource_id of this MainJob.
         :type resource_id: str
@@ -306,7 +306,7 @@ class MainJob:
     def sub_jobs(self):
         r"""Gets the sub_jobs of this MainJob.
 
-        子任务列表
+        **参数解释**：子任务列表。
 
         :return: The sub_jobs of this MainJob.
         :rtype: list[:class:`huaweicloudsdkelb.v3.SubJob`]
@@ -317,7 +317,7 @@ class MainJob:
     def sub_jobs(self, sub_jobs):
         r"""Sets the sub_jobs of this MainJob.
 
-        子任务列表
+        **参数解释**：子任务列表。
 
         :param sub_jobs: The sub_jobs of this MainJob.
         :type sub_jobs: list[:class:`huaweicloudsdkelb.v3.SubJob`]

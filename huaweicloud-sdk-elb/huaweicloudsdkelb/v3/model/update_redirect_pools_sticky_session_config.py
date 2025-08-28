@@ -31,9 +31,9 @@ class UpdateRedirectPoolsStickySessionConfig:
 
         The model defined in huaweicloud sdk
 
-        :param enable: 参数解释：转发策略主机组会话保持开启的开关。  默认取值：false，表示关闭主机组会话保持。
+        :param enable: **参数解释**：转发策略服务器组会话保持开启的开关。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：false，表示关闭服务器组会话保持。
         :type enable: bool
-        :param timeout: 参数解释：会话保持的时间。  取值范围：1-1440（分钟）  默认取值：1440  [荷兰region不支持QUIC。](tag:dt)
+        :param timeout: **参数解释**：会话保持的时间。  **约束限制**：不涉及  **取值范围**：1-1440（分钟）  **默认取值**：1440  [荷兰region不支持QUIC。](tag:dt)
         :type timeout: int
         """
         
@@ -52,7 +52,7 @@ class UpdateRedirectPoolsStickySessionConfig:
     def enable(self):
         r"""Gets the enable of this UpdateRedirectPoolsStickySessionConfig.
 
-        参数解释：转发策略主机组会话保持开启的开关。  默认取值：false，表示关闭主机组会话保持。
+        **参数解释**：转发策略服务器组会话保持开启的开关。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：false，表示关闭服务器组会话保持。
 
         :return: The enable of this UpdateRedirectPoolsStickySessionConfig.
         :rtype: bool
@@ -63,7 +63,7 @@ class UpdateRedirectPoolsStickySessionConfig:
     def enable(self, enable):
         r"""Sets the enable of this UpdateRedirectPoolsStickySessionConfig.
 
-        参数解释：转发策略主机组会话保持开启的开关。  默认取值：false，表示关闭主机组会话保持。
+        **参数解释**：转发策略服务器组会话保持开启的开关。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：false，表示关闭服务器组会话保持。
 
         :param enable: The enable of this UpdateRedirectPoolsStickySessionConfig.
         :type enable: bool
@@ -74,7 +74,7 @@ class UpdateRedirectPoolsStickySessionConfig:
     def timeout(self):
         r"""Gets the timeout of this UpdateRedirectPoolsStickySessionConfig.
 
-        参数解释：会话保持的时间。  取值范围：1-1440（分钟）  默认取值：1440  [荷兰region不支持QUIC。](tag:dt)
+        **参数解释**：会话保持的时间。  **约束限制**：不涉及  **取值范围**：1-1440（分钟）  **默认取值**：1440  [荷兰region不支持QUIC。](tag:dt)
 
         :return: The timeout of this UpdateRedirectPoolsStickySessionConfig.
         :rtype: int
@@ -85,7 +85,7 @@ class UpdateRedirectPoolsStickySessionConfig:
     def timeout(self, timeout):
         r"""Sets the timeout of this UpdateRedirectPoolsStickySessionConfig.
 
-        参数解释：会话保持的时间。  取值范围：1-1440（分钟）  默认取值：1440  [荷兰region不支持QUIC。](tag:dt)
+        **参数解释**：会话保持的时间。  **约束限制**：不涉及  **取值范围**：1-1440（分钟）  **默认取值**：1440  [荷兰region不支持QUIC。](tag:dt)
 
         :param timeout: The timeout of this UpdateRedirectPoolsStickySessionConfig.
         :type timeout: int

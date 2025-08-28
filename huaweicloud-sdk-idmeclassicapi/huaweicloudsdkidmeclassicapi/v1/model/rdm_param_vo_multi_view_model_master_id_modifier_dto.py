@@ -43,8 +43,7 @@ class RDMParamVOMultiViewModelMasterIdModifierDTO:
         self._application_id = None
         self.discriminator = None
 
-        if params is not None:
-            self.params = params
+        self.params = params
         if application_id is not None:
             self.application_id = application_id
 

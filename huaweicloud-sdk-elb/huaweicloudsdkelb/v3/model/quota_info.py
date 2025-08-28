@@ -35,13 +35,13 @@ class QuotaInfo:
 
         The model defined in huaweicloud sdk
 
-        :param quota_key: 资源类型。  取值：loadbalancer、listener、ipgroup、pool、member、healthmonitor、l7policy、certificate、security_policy、listeners_per_loadbalancer、listeners_per_pool、members_per_pool、condition_per_policy、ipgroup_bindings、ipgroup_max_length、ipgroups_per_listener、pools_per_l7policy、l7policies_per_listener、free_instance_members_per_pool、free_instance_listeners_per_loadbalancer。
+        :param quota_key: **参数解释**：配额类型。  **取值范围**：loadbalancer、listener、ipgroup、pool、member、healthmonitor、l7policy、certificate、security_policy、listeners_per_loadbalancer、listeners_per_pool、members_per_pool、condition_per_policy、ipgroup_bindings、ipgroup_max_length、ipgroups_per_listener、pools_per_l7policy、l7policies_per_listener、free_instance_members_per_pool、free_instance_listeners_per_loadbalancer。
         :type quota_key: str
-        :param quota_limit: 总配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
+        :param quota_limit: **参数解释**：总配额。  **取值范围**： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
         :type quota_limit: int
-        :param used: 已使用配额。
+        :param used: **参数解释**：已使用配额。  **取值范围**：大于等于0。
         :type used: int
-        :param unit: 配额单位。  取值：count，表示个数。
+        :param unit: **参数解释**：配额单位。  **取值范围**：count，表示个数。
         :type unit: str
         """
         
@@ -62,7 +62,7 @@ class QuotaInfo:
     def quota_key(self):
         r"""Gets the quota_key of this QuotaInfo.
 
-        资源类型。  取值：loadbalancer、listener、ipgroup、pool、member、healthmonitor、l7policy、certificate、security_policy、listeners_per_loadbalancer、listeners_per_pool、members_per_pool、condition_per_policy、ipgroup_bindings、ipgroup_max_length、ipgroups_per_listener、pools_per_l7policy、l7policies_per_listener、free_instance_members_per_pool、free_instance_listeners_per_loadbalancer。
+        **参数解释**：配额类型。  **取值范围**：loadbalancer、listener、ipgroup、pool、member、healthmonitor、l7policy、certificate、security_policy、listeners_per_loadbalancer、listeners_per_pool、members_per_pool、condition_per_policy、ipgroup_bindings、ipgroup_max_length、ipgroups_per_listener、pools_per_l7policy、l7policies_per_listener、free_instance_members_per_pool、free_instance_listeners_per_loadbalancer。
 
         :return: The quota_key of this QuotaInfo.
         :rtype: str
@@ -73,7 +73,7 @@ class QuotaInfo:
     def quota_key(self, quota_key):
         r"""Sets the quota_key of this QuotaInfo.
 
-        资源类型。  取值：loadbalancer、listener、ipgroup、pool、member、healthmonitor、l7policy、certificate、security_policy、listeners_per_loadbalancer、listeners_per_pool、members_per_pool、condition_per_policy、ipgroup_bindings、ipgroup_max_length、ipgroups_per_listener、pools_per_l7policy、l7policies_per_listener、free_instance_members_per_pool、free_instance_listeners_per_loadbalancer。
+        **参数解释**：配额类型。  **取值范围**：loadbalancer、listener、ipgroup、pool、member、healthmonitor、l7policy、certificate、security_policy、listeners_per_loadbalancer、listeners_per_pool、members_per_pool、condition_per_policy、ipgroup_bindings、ipgroup_max_length、ipgroups_per_listener、pools_per_l7policy、l7policies_per_listener、free_instance_members_per_pool、free_instance_listeners_per_loadbalancer。
 
         :param quota_key: The quota_key of this QuotaInfo.
         :type quota_key: str
@@ -84,7 +84,7 @@ class QuotaInfo:
     def quota_limit(self):
         r"""Gets the quota_limit of this QuotaInfo.
 
-        总配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
+        **参数解释**：总配额。  **取值范围**： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
 
         :return: The quota_limit of this QuotaInfo.
         :rtype: int
@@ -95,7 +95,7 @@ class QuotaInfo:
     def quota_limit(self, quota_limit):
         r"""Sets the quota_limit of this QuotaInfo.
 
-        总配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
+        **参数解释**：总配额。  **取值范围**： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
 
         :param quota_limit: The quota_limit of this QuotaInfo.
         :type quota_limit: int
@@ -106,7 +106,7 @@ class QuotaInfo:
     def used(self):
         r"""Gets the used of this QuotaInfo.
 
-        已使用配额。
+        **参数解释**：已使用配额。  **取值范围**：大于等于0。
 
         :return: The used of this QuotaInfo.
         :rtype: int
@@ -117,7 +117,7 @@ class QuotaInfo:
     def used(self, used):
         r"""Sets the used of this QuotaInfo.
 
-        已使用配额。
+        **参数解释**：已使用配额。  **取值范围**：大于等于0。
 
         :param used: The used of this QuotaInfo.
         :type used: int
@@ -128,7 +128,7 @@ class QuotaInfo:
     def unit(self):
         r"""Gets the unit of this QuotaInfo.
 
-        配额单位。  取值：count，表示个数。
+        **参数解释**：配额单位。  **取值范围**：count，表示个数。
 
         :return: The unit of this QuotaInfo.
         :rtype: str
@@ -139,7 +139,7 @@ class QuotaInfo:
     def unit(self, unit):
         r"""Sets the unit of this QuotaInfo.
 
-        配额单位。  取值：count，表示个数。
+        **参数解释**：配额单位。  **取值范围**：count，表示个数。
 
         :param unit: The unit of this QuotaInfo.
         :type unit: str

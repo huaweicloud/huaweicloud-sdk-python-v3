@@ -31,9 +31,9 @@ class UpdatePoolSlowStartOption:
 
         The model defined in huaweicloud sdk
 
-        :param enable: 慢启动的开关，默认值：false； true：开启； false：关闭 
+        :param enable: **参数解释**：慢启动的开关。  **约束限制**：不涉及  **取值范围**：true 开启，false 关闭。  **默认取值**：不涉及 
         :type enable: bool
-        :param duration: 慢启动的持续时间，单位：s。默认：30； 取值范围：30~1200
+        :param duration: **参数解释**：慢启动的持续时间。  **约束限制**：不涉及  **取值范围**：30~1200，单位：秒。  **默认取值**：不涉及
         :type duration: int
         """
         
@@ -52,7 +52,7 @@ class UpdatePoolSlowStartOption:
     def enable(self):
         r"""Gets the enable of this UpdatePoolSlowStartOption.
 
-        慢启动的开关，默认值：false； true：开启； false：关闭 
+        **参数解释**：慢启动的开关。  **约束限制**：不涉及  **取值范围**：true 开启，false 关闭。  **默认取值**：不涉及 
 
         :return: The enable of this UpdatePoolSlowStartOption.
         :rtype: bool
@@ -63,7 +63,7 @@ class UpdatePoolSlowStartOption:
     def enable(self, enable):
         r"""Sets the enable of this UpdatePoolSlowStartOption.
 
-        慢启动的开关，默认值：false； true：开启； false：关闭 
+        **参数解释**：慢启动的开关。  **约束限制**：不涉及  **取值范围**：true 开启，false 关闭。  **默认取值**：不涉及 
 
         :param enable: The enable of this UpdatePoolSlowStartOption.
         :type enable: bool
@@ -74,7 +74,7 @@ class UpdatePoolSlowStartOption:
     def duration(self):
         r"""Gets the duration of this UpdatePoolSlowStartOption.
 
-        慢启动的持续时间，单位：s。默认：30； 取值范围：30~1200
+        **参数解释**：慢启动的持续时间。  **约束限制**：不涉及  **取值范围**：30~1200，单位：秒。  **默认取值**：不涉及
 
         :return: The duration of this UpdatePoolSlowStartOption.
         :rtype: int
@@ -85,7 +85,7 @@ class UpdatePoolSlowStartOption:
     def duration(self, duration):
         r"""Sets the duration of this UpdatePoolSlowStartOption.
 
-        慢启动的持续时间，单位：s。默认：30； 取值范围：30~1200
+        **参数解释**：慢启动的持续时间。  **约束限制**：不涉及  **取值范围**：30~1200，单位：秒。  **默认取值**：不涉及
 
         :param duration: The duration of this UpdatePoolSlowStartOption.
         :type duration: int

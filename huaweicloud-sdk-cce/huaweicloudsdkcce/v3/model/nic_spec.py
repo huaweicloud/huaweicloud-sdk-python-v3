@@ -37,7 +37,7 @@ class NicSpec:
 
         :param subnet_id: 网卡所在子网的网络ID。主网卡创建时若未指定subnetId,将使用集群子网。若节点池同时配置了subnetList，则节点池扩容子网以subnetList字段为准。扩展网卡创建时必须指定subnetId。  
         :type subnet_id: str
-        :param fixed_ips: 主网卡的IP将通过fixedIps指定，数量不得大于创建的节点数。fixedIps或ipBlock同时只能指定一个。扩展网卡不支持指定fiexdIps。
+        :param fixed_ips: 主网卡的IP将通过fixedIps指定，数量不得大于创建的节点数。fixedIps或ipBlock同时只能指定一个。扩展网卡不支持指定fixedIps。
         :type fixed_ips: list[str]
         :param ip_block: 主网卡的IP段的CIDR格式，创建的节点IP将属于该IP段内。fixedIps或ipBlock同时只能指定一个。
         :type ip_block: str
@@ -88,7 +88,7 @@ class NicSpec:
     def fixed_ips(self):
         r"""Gets the fixed_ips of this NicSpec.
 
-        主网卡的IP将通过fixedIps指定，数量不得大于创建的节点数。fixedIps或ipBlock同时只能指定一个。扩展网卡不支持指定fiexdIps。
+        主网卡的IP将通过fixedIps指定，数量不得大于创建的节点数。fixedIps或ipBlock同时只能指定一个。扩展网卡不支持指定fixedIps。
 
         :return: The fixed_ips of this NicSpec.
         :rtype: list[str]
@@ -99,7 +99,7 @@ class NicSpec:
     def fixed_ips(self, fixed_ips):
         r"""Sets the fixed_ips of this NicSpec.
 
-        主网卡的IP将通过fixedIps指定，数量不得大于创建的节点数。fixedIps或ipBlock同时只能指定一个。扩展网卡不支持指定fiexdIps。
+        主网卡的IP将通过fixedIps指定，数量不得大于创建的节点数。fixedIps或ipBlock同时只能指定一个。扩展网卡不支持指定fixedIps。
 
         :param fixed_ips: The fixed_ips of this NicSpec.
         :type fixed_ips: list[str]

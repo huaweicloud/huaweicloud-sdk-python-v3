@@ -34,11 +34,11 @@ class ListRecycleBinLoadBalancersResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param loadbalancers: 回收站中的弹性负载均衡器实例列表。
+        :param loadbalancers: **参数解释**：回收站中的弹性负载均衡器实例列表。  **取值范围**：不涉及
         :type loadbalancers: list[:class:`huaweicloudsdkelb.v3.RecycleLoadBalancer`]
         :param page_info: 
         :type page_info: :class:`huaweicloudsdkelb.v3.PageInfo`
-        :param request_id: 请求ID。  注：自动生成 。
+        :param request_id: **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
         :type request_id: str
         """
         
@@ -60,7 +60,7 @@ class ListRecycleBinLoadBalancersResponse(SdkResponse):
     def loadbalancers(self):
         r"""Gets the loadbalancers of this ListRecycleBinLoadBalancersResponse.
 
-        回收站中的弹性负载均衡器实例列表。
+        **参数解释**：回收站中的弹性负载均衡器实例列表。  **取值范围**：不涉及
 
         :return: The loadbalancers of this ListRecycleBinLoadBalancersResponse.
         :rtype: list[:class:`huaweicloudsdkelb.v3.RecycleLoadBalancer`]
@@ -71,7 +71,7 @@ class ListRecycleBinLoadBalancersResponse(SdkResponse):
     def loadbalancers(self, loadbalancers):
         r"""Sets the loadbalancers of this ListRecycleBinLoadBalancersResponse.
 
-        回收站中的弹性负载均衡器实例列表。
+        **参数解释**：回收站中的弹性负载均衡器实例列表。  **取值范围**：不涉及
 
         :param loadbalancers: The loadbalancers of this ListRecycleBinLoadBalancersResponse.
         :type loadbalancers: list[:class:`huaweicloudsdkelb.v3.RecycleLoadBalancer`]
@@ -100,7 +100,7 @@ class ListRecycleBinLoadBalancersResponse(SdkResponse):
     def request_id(self):
         r"""Gets the request_id of this ListRecycleBinLoadBalancersResponse.
 
-        请求ID。  注：自动生成 。
+        **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
 
         :return: The request_id of this ListRecycleBinLoadBalancersResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class ListRecycleBinLoadBalancersResponse(SdkResponse):
     def request_id(self, request_id):
         r"""Sets the request_id of this ListRecycleBinLoadBalancersResponse.
 
-        请求ID。  注：自动生成 。
+        **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
 
         :param request_id: The request_id of this ListRecycleBinLoadBalancersResponse.
         :type request_id: str

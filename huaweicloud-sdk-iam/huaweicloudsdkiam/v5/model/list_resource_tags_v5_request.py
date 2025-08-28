@@ -33,7 +33,7 @@ class ListResourceTagsV5Request:
 
         :param resource_id: 资源ID，长度为1到64个字符，只包含字母、数字和\&quot;-\&quot;的字符串。
         :type resource_id: str
-        :param resource_type: 资源类型，可以为“信任委托”（agency）或“IAM用户”（user）。
+        :param resource_type: 资源类型，可以为“信任委托”（trust agency）或“IAM用户”（user）。
         :type resource_type: str
         """
         
@@ -72,7 +72,7 @@ class ListResourceTagsV5Request:
     def resource_type(self):
         r"""Gets the resource_type of this ListResourceTagsV5Request.
 
-        资源类型，可以为“信任委托”（agency）或“IAM用户”（user）。
+        资源类型，可以为“信任委托”（trust agency）或“IAM用户”（user）。
 
         :return: The resource_type of this ListResourceTagsV5Request.
         :rtype: str
@@ -83,7 +83,7 @@ class ListResourceTagsV5Request:
     def resource_type(self, resource_type):
         r"""Sets the resource_type of this ListResourceTagsV5Request.
 
-        资源类型，可以为“信任委托”（agency）或“IAM用户”（user）。
+        资源类型，可以为“信任委托”（trust agency）或“IAM用户”（user）。
 
         :param resource_type: The resource_type of this ListResourceTagsV5Request.
         :type resource_type: str

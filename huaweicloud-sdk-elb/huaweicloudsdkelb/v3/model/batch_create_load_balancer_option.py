@@ -93,71 +93,71 @@ class BatchCreateLoadBalancerOption:
 
         The model defined in huaweicloud sdk
 
-        :param id: 负载均衡器ID（UUID）。不支持该字段，请勿使用。
+        :param id: **参数解释**：负载均衡器ID（UUID）。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及  不支持该字段，请勿使用。
         :type id: str
-        :param ids: 批创负载均衡器ID的列表（UUID）。不支持该字段，请勿使用。
+        :param ids: **参数解释**：批创负载均衡器ID的列表（UUID）。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及  不支持该字段，请勿使用。
         :type ids: list[str]
-        :param project_id: 负载均衡器所在的项目ID。
+        :param project_id: **参数解释**：项目ID。获取方式请参见[获取项目ID](elb_fl_0008.xml)。  **约束限制**：不涉及  **取值范围**：长度为32个字符，由小写字母和数字组成。  **默认取值**：不涉及
         :type project_id: str
-        :param number: 批量创建负载均衡器的数量
+        :param number: **参数解释**：批量创建负载均衡器的数量。  **约束限制**：不涉及  **取值范围**：1-10  **默认取值**：1
         :type number: int
-        :param name: 负载均衡器的名称。 使用说明： - 当批创负载均衡器数量为1时，负载均衡器的名字即为该传入的值。 - 当批创负载均衡器数量大于1时，负载均衡器的名字在传入的name后加上4位后缀。  例如：批量创建3个负载均衡器，传入name为\&quot;elb-test\&quot;，则三个负载均衡器名字分别为： \&quot;elb-test-0001\&quot;，\&quot;elb-test-0002\&quot;，\&quot;elb-test-0003\&quot;
+        :param name: **参数解释**：负载均衡器的名称。 - 当批创负载均衡器数量为1时，负载均衡器的名字即为该传入的值。 - 当批创负载均衡器数量大于1时，负载均衡器的名字在传入的name后加上4位后缀。例如：批量创建3个负载均衡器，传入name为\&quot;elb-test\&quot;，则三个负载均衡器名字分别为：\&quot;elb-test-0001\&quot;，\&quot;elb-test-0002\&quot;，\&quot;elb-test-0003\&quot;  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type name: str
-        :param description: 负载均衡器的描述。
+        :param description: **参数解释**：负载均衡器的描述。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type description: str
-        :param vip_address: 负载均衡器的IPv4虚拟IP。该地址必须包含在所在子网的IPv4网段内，且未被占用。  使用说明： - 传入vip_address时必须传入vip_subnet_cidr_id。 - 不传入vip_address，但传入vip_subnet_cidr_id，则自动分配IPv4虚拟IP。 - 不传入vip_address，且不传vip_subnet_cidr_id，则不分配虚拟IP，vip_address&#x3D;null。 - 当批量创建的number数量大于1时不支持传入该字段，返回400。
+        :param vip_address: **参数解释**：负载均衡器的IPv4私网IP。该地址必须包含在所在子网的IPv4网段内，且未被占用。  **约束限制**： - 传入vip_address时必须传入vip_subnet_cidr_id。 - 不传入vip_address，但传入vip_subnet_cidr_id，则自动分配IPv4私网IP。 - 不传入vip_address，且不传vip_subnet_cidr_id，则不分配私网IP，vip_address&#x3D;null。 - 当批量创建的number数量大于1时不支持传入该字段，返回400。  **取值范围**：不涉及  **默认取值**：不涉及
         :type vip_address: str
-        :param vip_subnet_cidr_id: 负载均衡器所在子网的IPv4子网ID。若需要创建带IPv4虚拟IP的LB，该字段必须传入。 可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_subnet_id得到。  使用说明： - vpc_id, vip_subnet_cidr_id, ipv6_vip_virsubnet_id不能同时为空，且需要在同一个vpc下。 - 若同时传入vpc_id和vip_subnet_cidr_id， 则vip_subnet_cidr_id对应的子网必须属于vpc_id对应的VPC。
+        :param vip_subnet_cidr_id: **参数解释**：负载均衡器所在子网的IPv4子网ID。若需要创建带IPv4私网IP的LB，该字段必须传入。 可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_subnet_id得到。  **约束限制**： - vpc_id, vip_subnet_cidr_id, ipv6_vip_virsubnet_id不能同时为空，且需要在同一个vpc下。 - 若同时传入vpc_id和vip_subnet_cidr_id，则vip_subnet_cidr_id对应的子网必须属于vpc_id对应的VPC。  **取值范围**：不涉及  **默认取值**：不涉及
         :type vip_subnet_cidr_id: str
-        :param ipv6_vip_virsubnet_id: 双栈类型负载均衡器所在子网的IPv6网络ID。可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_network_id得到。  使用说明： - vpc_id，vip_subnet_cidr_id，ipv6_vip_virsubnet_id不能同时为空，且需要在同一个vpc下。 - 需要对应的子网开启IPv6。 - 批量创建共享型实例时，该字段不允许指定。  [不支持IPv6，请勿使用。](tag:dt)
+        :param ipv6_vip_virsubnet_id: **参数解释**：双栈类型负载均衡器所在子网的IPv6网络ID。 可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_network_id得到。  **约束限制**： - vpc_id，vip_subnet_cidr_id，ipv6_vip_virsubnet_id不能同时为空，且需要在同一个vpc下。 - 需要对应的子网开启IPv6。 - 批量创建共享型实例时，该字段不允许指定。  **取值范围**：不涉及  **默认取值**：不涉及  [不支持IPv6，请勿使用。](tag:dt)
         :type ipv6_vip_virsubnet_id: str
-        :param provider: 负载均衡器的生产者名称。固定为vlb。批量创建共享型实例时，该字段不允许指定。
+        :param provider: **参数解释**：负载均衡器的生产者名称。固定为vlb。  **约束限制**：批量创建共享型实例时，该字段不允许指定。  **取值范围**：不涉及  **默认取值**：不涉及
         :type provider: str
-        :param l4_flavor_id: 网络型规格ID。  [使用说明： - 可以通过GET https://{ELB_Endpoint}/v3/{project_id}/elb/flavors?type&#x3D;L4 响应参数中的id得到。 - 当l4_flavor_id和l7_flavor_id都不传的时，会使用默认flavor （默认flavor根据不同局点有所不同，具体以实际值为准）。 - 当传入的规格类型为L4，表示该实例为固定规格实例，按规格计费。 - 当传入的规格类型为L4_elastic_max，表示该实例为弹性实例，按LCU计费。 - 批量创建共享型实例时，该字段不允许指定。  ](tag:hws,hws_hk,hws_eu,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb)   [网关型LB不支持指定l4_flavor_id。](tag:hws_eu) [只支持设置为l4_flavor.elb.shared。](tag:hcso_dt) [所有LB实例共享带宽，该字段无效，请勿使用。](tag:hcso,srg,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b)
+        :param l4_flavor_id: **参数解释**：网络型规格ID。 可以通过GET https://{ELB_Endpoint}/v3/{project_id}/elb/flavors?type&#x3D;L4 响应参数中的id得到。  **约束限制**： - 当l4_flavor_id和l7_flavor_id都不传的时，会使用默认flavor （默认flavor根据不同局点有所不同，具体以实际值为准）。 - 当传入的规格类型为L4，表示该实例为固定规格实例，按规格计费。 - 当传入的规格类型为L4_elastic_max，表示该实例为弹性实例，按LCU计费。 - 批量创建共享型实例时，该字段不允许指定。  **取值范围**：不涉及  **默认取值**：不涉及  [网关型LB不支持指定l4_flavor_id。](tag:hws_eu) [只支持设置为l4_flavor.elb.shared。](tag:hcso_dt) [所有LB实例共享带宽，该字段无效，请勿使用。](tag:hcso,srg,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b)
         :type l4_flavor_id: str
-        :param l7_flavor_id: 应用型规格ID。  [使用说明： - 可以通过GET https://{ELB_Endpoint}/v3/{project_id}/elb/flavors?type&#x3D;L7 响应参数中的id得到。 - 当l4_flavor_id和l7_flavor_id都不传的时，会使用默认flavor （默认flavor根据不同局点有所不同，具体以实际值为准）。 - 当传入的规格类型为L7，表示该实例为固定规格实例，按规格计费。 - 当传入的规格类型为L7_elastic_max，表示该实例为弹性实例，按LCU计费。 - 批量创建共享型实例时，该字段不允许指定。 ](tag:hws,hws_hk,hws_eu,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb)   [网关型LB不支持指定l7_flavor_id。](tag:hws_eu) [只支持设置为l7_flavor.elb.shared。](tag:hcso_dt) [所有LB实例共享带宽，该字段无效，请勿使用。](tag:hcso,srg,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b)
+        :param l7_flavor_id: **参数解释**：应用型规格ID。 可以通过GET https://{ELB_Endpoint}/v3/{project_id}/elb/flavors?type&#x3D;L7 响应参数中的id得到。  **约束限制**： - 当l4_flavor_id和l7_flavor_id都不传的时，会使用默认flavor （默认flavor根据不同局点有所不同，具体以实际值为准）。 - 当传入的规格类型为L7，表示该实例为固定规格实例，按规格计费。 - 当传入的规格类型为L7_elastic_max，表示该实例为弹性实例，按LCU计费。 - 批量创建共享型实例时，该字段不允许指定。  **取值范围**：不涉及  **默认取值**：不涉及  [网关型LB不支持指定l7_flavor_id。](tag:hws_eu) [只支持设置为l7_flavor.elb.shared。](tag:hcso_dt) [所有LB实例共享带宽，该字段无效，请勿使用。](tag:hcso,srg,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b)
         :type l7_flavor_id: str
-        :param guaranteed: 批量创建的是否是独享型负载均衡器。  取值： - true：独享型。 - false：共享型。  默认：true。
+        :param guaranteed: **参数解释**：批量创建的是否是独享型负载均衡器。  **约束限制**：不涉及  **取值范围**： - true：独享型。 - false：共享型。  **默认取值**：true
         :type guaranteed: bool
-        :param vpc_id: 负载均衡器所在的VPC ID。可以通过GET https://{VPC_Endpoint}/v1/{project_id}/vpcs 响应参数中的id得到。  使用说明： - vpc_id，vip_subnet_cidr_id，ipv6_vip_virsubnet_id不能同时为空，且需要在同一个vpc下。 - 批量创建共享型实例时，该字段不允许指定。
+        :param vpc_id: **参数解释**：负载均衡器所在的VPC ID。 可以通过GET https://{VPC_Endpoint}/v1/{project_id}/vpcs 响应参数中的id得到。  **约束限制**： - vpc_id，vip_subnet_cidr_id，ipv6_vip_virsubnet_id不能同时为空，且需要在同一个vpc下。 - 批量创建共享型实例时，该字段不允许指定。  **取值范围**：不涉及  **默认取值**：不涉及
         :type vpc_id: str
-        :param availability_zone_list: 可用区列表。可通过GET https://{ELB_Endpoint}/v3/{project_id}/elb/availability-zones 接口来查询可用区集合列表。创建负载均衡器时，从查询结果选择某一个可用区集合，并从中选择一个或多个可用区。  使用说明： - 批量创建共享型实例时，该字段不允许指定。
+        :param availability_zone_list: **参数解释**：可用区列表。 可通过GET https://{ELB_Endpoint}/v3/{project_id}/elb/availability-zones 接口来查询可用区集合列表。创建负载均衡器时，从查询结果选择某一个可用区集合，并从中选择一个或多个可用区。  **约束限制**： - 批量创建共享型实例时，该字段不允许指定。  **取值范围**：不涉及  **默认取值**：不涉及
         :type availability_zone_list: list[str]
-        :param enterprise_project_id: 负载均衡器所属的企业项目ID。创建时传入\&quot;\&quot;、\&quot;0\&quot;或不存在的企业项目ID，或者不传则资源属于default企业项目，默认返回\&quot;0\&quot;。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
+        :param enterprise_project_id: **参数解释**：资源所属的企业项目ID。创建时不传则资源属于default企业项目，返回enterprise_project_id&#x3D;\&quot;0\&quot;。  **约束限制**：不能传入空字符串\&quot;\&quot;、\&quot;0\&quot;或不存在的企业项目ID。  **取值范围**：不涉及  **默认取值**：\&quot;0\&quot;  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
         :type enterprise_project_id: str
-        :param tags: 负载均衡的标签列表。示例：\&quot;tags\&quot;:[{\&quot;key\&quot;:\&quot;my_tag\&quot;,\&quot;value\&quot;:\&quot;my_tag_value\&quot;}]
+        :param tags: **参数解释**：负载均衡的标签列表。示例：\&quot;tags\&quot;:[{\&quot;key\&quot;:\&quot;my_tag\&quot;,\&quot;value\&quot;:\&quot;my_tag_value\&quot;}]  **约束限制**：不涉及
         :type tags: list[:class:`huaweicloudsdkelb.v3.Tag`]
-        :param admin_state_up: 参数解释：负载均衡器的启用状态。  取值范围： - true ：启用。 - false：停用。  默认取值：true。  [不支持该字段，请勿使用。](tag:dt)
+        :param admin_state_up: **参数解释**：负载均衡器的启用状态。  **约束限制**：不涉及  **取值范围**： - true ：启用。 - false：停用。  **默认取值**：true。  [不支持该字段，请勿使用。](tag:dt)
         :type admin_state_up: bool
-        :param billing_info: 资源账单信息。  取值范围： - 空：按需计费。 [- 非空：包周期计费，格式为：order_id:product_id:region_id:project_id。如：CS2107161019CDJZZ:OFFI569702121789763584:az1:057ef081eb00d2732fd1c01a9be75e6f](tag:hws)  [不支持该字段，请勿使用。](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,srg,fcs,fcs_vm,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf)
+        :param billing_info: **参数解释**：资源账单信息。  **约束限制**：不涉及  **取值范围**： - 空：按需计费。 [- 非空：包周期计费，格式为：order_id:product_id:region_id:project_id。如：CS2107161019CDJZZ:OFFI569702121789763584:az1:057ef081eb00d2732fd1c01a9be75e6f](tag:hws)  **默认取值**：不涉及  [不支持该字段，请勿使用。](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,srg,fcs,fcs_vm,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf)
         :type billing_info: str
         :param ipv6_bandwidth: 
         :type ipv6_bandwidth: :class:`huaweicloudsdkelb.v3.BandwidthRef`
         :param bandwidth: 
         :type bandwidth: :class:`huaweicloudsdkelb.v3.BandwidthRef`
-        :param publicip_ids: 负载均衡器绑定的公网IP ID。只支持绑定数组中的第一个EIP，其他将被忽略。 当批量创建的number数量大于1时不支持传入该字段，返回400。
+        :param publicip_ids: **参数解释**：负载均衡器绑定的公网IP ID。只支持绑定数组中的第一个EIP，其他将被忽略。 当批量创建的number数量大于1时不支持传入该字段，返回400。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type publicip_ids: list[str]
         :param publicip: 
         :type publicip: :class:`huaweicloudsdkelb.v3.CreateLoadBalancerPublicIpOption`
-        :param elb_virsubnet_ids: 下联面子网的网络ID列表。可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_network_id得到。  若不指定该字段，则按如下规则选择下联面网络： 1. 如果ELB实例开启ipv6，则选择ipv6_vip_virsubnet_id子网对应的网络ID。 2. 如果ELB实例没有开启ipv6，开启ipv4，则选择vip_subnet_cidr_id子网对应的网络ID。 3. 如果ELB实例没有选择私网，只开启公网，则会在当前负载均衡器所在的VPC中任意选一个子网，优选可用IP多的网络。 4. 批量创建共享型实例的场景，该字段不允许指定。  若指定多个下联面子网，则按顺序优先使用第一个子网来为负载均衡器下联面端口分配ip地址。  下联面子网必须属于该LB所在的VPC。
+        :param elb_virsubnet_ids: **参数解释**：下联面子网的网络ID列表。 可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_network_id得到。 若不指定该字段，则按如下规则选择下联面网络： 1. 如果ELB实例开启ipv6，则选择ipv6_vip_virsubnet_id子网对应的网络ID。 2. 如果ELB实例没有开启ipv6，开启ipv4，则选择vip_subnet_cidr_id子网对应的网络ID。 3. 如果ELB实例没有选择私网，只开启公网，则会在当前负载均衡器所在的VPC中任意选一个子网，优选可用IP多的网络。 4. 批量创建共享型实例的场景，该字段不允许指定。 若指定多个下联面子网，则按顺序优先使用第一个子网来为负载均衡器下联面端口分配ip地址。  **约束限制**：下联面子网必须属于该LB所在的VPC。  **取值范围**：不涉及  **默认取值**：不涉及
         :type elb_virsubnet_ids: list[str]
-        :param ip_target_enable: 参数解释：是否启用跨VPC后端转发。 开启跨VPC后端转发后，后端服务器组不仅支持添加云上VPC内的服务器，还支持添加其他VPC、其他公有云、云下数据中心的服务器。  约束限制： - 开启后不能关闭。 - 使用共享VPC的实例使用此特性时，需确保共享资源所有者已开通VPC对等连接，否则通信异常。 [- 仅独享型负载均衡器支持该特性。](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt) [- 网关型LB不支持该特性。](tag:hws_eu)  取值范围： - true：开启。 - false：不开启。  [荷兰region不支持该字段，请勿使用。](tag:dt)
+        :param ip_target_enable: **参数解释**：是否启用IP类型后端转发。 开启IP类型后端转发后，后端服务器组不仅支持添加云上VPC内的服务器，还支持添加其他VPC、其他公有云、云下数据中心的服务器。  **约束限制**： - 开启后不能关闭。 - 使用共享VPC的实例使用此特性时，需确保共享资源所有者已开通VPC对等连接，否则通信异常。 [- 仅独享型负载均衡器支持该特性。](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt) [- 网关型LB不支持该特性。](tag:hws_eu)  **取值范围**： - true：开启。 - false：不开启。  **默认取值**：false  [荷兰region不支持该字段，请勿使用。](tag:dt)
         :type ip_target_enable: bool
-        :param deletion_protection_enable: 是否开启删除保护。 批量创建共享型实例的场景，该字段不允许指定。  取值：false不开启，true开启。默认false不开启。  &gt; 退场时需要先关闭所有资源的删除保护开关。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)  [荷兰region不支持该字段，请勿使用。](tag:dt)
+        :param deletion_protection_enable: **参数解释**：是否开启删除保护。  **约束限制**：批量创建共享型实例的场景，该字段不允许指定。  **取值范围**：false 不开启，true 开启。  **默认取值**：false  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42) [荷兰region不支持该字段，请勿使用。](tag:dt)  &gt; 退场时需要先关闭所有资源的删除保护开关。
         :type deletion_protection_enable: bool
         :param prepaid_options: 
         :type prepaid_options: :class:`huaweicloudsdkelb.v3.PrepaidCreateOption`
         :param autoscaling: 
         :type autoscaling: :class:`huaweicloudsdkelb.v3.CreateLoadbalancerAutoscalingOption`
-        :param waf_failure_action: WAF故障时的流量处理策略。discard:丢弃，forward: 转发到后端（默认）  使用说明：只有绑定了waf的LB实例，该字段才会生效。  [不支持该字段，请勿使用。](tag:hws_eu,hws_test,hcs,hcs_sm,hcso,srg,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b,hcso_dt,dt,ocb,ctc,cmcc,tm,ct,sbc,g42,hws_ocb,hk_sbc,hk_tm,hk_g42)
+        :param waf_failure_action: **参数解释**：WAF故障时的流量处理策略。  **约束限制**：只有绑定了waf的LB实例，该字段才会生效。  **取值范围**： - discard:丢弃 - forward: 转发到后端  **默认取值**：forward  [不支持该字段，请勿使用。](tag:hws_eu,hws_test,hcs,hcs_sm,hcso,srg,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b,hcso_dt,dt,ocb,ctc,cmcc,tm,ct,sbc,g42,hws_ocb,hk_sbc,hk_tm,hk_g42)
         :type waf_failure_action: str
-        :param protection_status: 修改保护状态, 取值： - nonProtection: 不保护，默认值为nonProtection - consoleProtection: 控制台修改保护
+        :param protection_status: **参数解释**：修改保护状态。  **约束限制**：不涉及  **取值范围**： - nonProtection: 不保护。 - consoleProtection: 控制台修改保护。  **默认取值**：nonProtection
         :type protection_status: str
-        :param protection_reason: 参数解释：设置保护的原因。作为protection_status的转态设置的原因。  约束限制：仅当protection_status为consoleProtection时有效。  取值范围：除&lt;和&gt;外通用Unicode字符集字符，最大255个字符。
+        :param protection_reason: **参数解释**：设置保护的原因。作为protection_status的转态设置的原因。  **约束限制**：仅当protection_status为consoleProtection时有效。  **取值范围**：除&lt;和&gt;外通用Unicode字符集字符，最大255个字符。  **默认取值**：不涉及
         :type protection_reason: str
-        :param charge_mode: 创建实例采用的计费模式。flavor: 按实例规格收费，默认值。lcu: 按使用量收费。 批量创建共享型实例时，该字段不允许指定。
+        :param charge_mode: **参数解释**：创建实例采用的计费模式。  **约束限制**：批量创建共享型实例时，该字段不允许指定。  **取值范围**： - flavor：按实例规格收费。 - lcu：按使用量收费。  **默认取值**：flavor
         :type charge_mode: str
-        :param ipv6_vip_address: 双栈类型负载均衡器的IPv6地址。 当批量创建的number数量大于1时不支持传入该字段，返回400。 批量创建共享型实例的场景，该字段不允许指定。 [不支持IPv6，请勿使用。](tag:dt)
+        :param ipv6_vip_address: **参数解释**：双栈类型负载均衡器的IPv6地址。  **约束限制**： - 当批量创建的number数量大于1时不支持传入该字段，返回400。 - 批量创建共享型实例的场景，该字段不允许指定。  **取值范围**：不涉及  **默认取值**：不涉及  [不支持IPv6，请勿使用。](tag:dt)
         :type ipv6_vip_address: str
         """
         
@@ -268,7 +268,7 @@ class BatchCreateLoadBalancerOption:
     def id(self):
         r"""Gets the id of this BatchCreateLoadBalancerOption.
 
-        负载均衡器ID（UUID）。不支持该字段，请勿使用。
+        **参数解释**：负载均衡器ID（UUID）。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及  不支持该字段，请勿使用。
 
         :return: The id of this BatchCreateLoadBalancerOption.
         :rtype: str
@@ -279,7 +279,7 @@ class BatchCreateLoadBalancerOption:
     def id(self, id):
         r"""Sets the id of this BatchCreateLoadBalancerOption.
 
-        负载均衡器ID（UUID）。不支持该字段，请勿使用。
+        **参数解释**：负载均衡器ID（UUID）。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及  不支持该字段，请勿使用。
 
         :param id: The id of this BatchCreateLoadBalancerOption.
         :type id: str
@@ -290,7 +290,7 @@ class BatchCreateLoadBalancerOption:
     def ids(self):
         r"""Gets the ids of this BatchCreateLoadBalancerOption.
 
-        批创负载均衡器ID的列表（UUID）。不支持该字段，请勿使用。
+        **参数解释**：批创负载均衡器ID的列表（UUID）。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及  不支持该字段，请勿使用。
 
         :return: The ids of this BatchCreateLoadBalancerOption.
         :rtype: list[str]
@@ -301,7 +301,7 @@ class BatchCreateLoadBalancerOption:
     def ids(self, ids):
         r"""Sets the ids of this BatchCreateLoadBalancerOption.
 
-        批创负载均衡器ID的列表（UUID）。不支持该字段，请勿使用。
+        **参数解释**：批创负载均衡器ID的列表（UUID）。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及  不支持该字段，请勿使用。
 
         :param ids: The ids of this BatchCreateLoadBalancerOption.
         :type ids: list[str]
@@ -312,7 +312,7 @@ class BatchCreateLoadBalancerOption:
     def project_id(self):
         r"""Gets the project_id of this BatchCreateLoadBalancerOption.
 
-        负载均衡器所在的项目ID。
+        **参数解释**：项目ID。获取方式请参见[获取项目ID](elb_fl_0008.xml)。  **约束限制**：不涉及  **取值范围**：长度为32个字符，由小写字母和数字组成。  **默认取值**：不涉及
 
         :return: The project_id of this BatchCreateLoadBalancerOption.
         :rtype: str
@@ -323,7 +323,7 @@ class BatchCreateLoadBalancerOption:
     def project_id(self, project_id):
         r"""Sets the project_id of this BatchCreateLoadBalancerOption.
 
-        负载均衡器所在的项目ID。
+        **参数解释**：项目ID。获取方式请参见[获取项目ID](elb_fl_0008.xml)。  **约束限制**：不涉及  **取值范围**：长度为32个字符，由小写字母和数字组成。  **默认取值**：不涉及
 
         :param project_id: The project_id of this BatchCreateLoadBalancerOption.
         :type project_id: str
@@ -334,7 +334,7 @@ class BatchCreateLoadBalancerOption:
     def number(self):
         r"""Gets the number of this BatchCreateLoadBalancerOption.
 
-        批量创建负载均衡器的数量
+        **参数解释**：批量创建负载均衡器的数量。  **约束限制**：不涉及  **取值范围**：1-10  **默认取值**：1
 
         :return: The number of this BatchCreateLoadBalancerOption.
         :rtype: int
@@ -345,7 +345,7 @@ class BatchCreateLoadBalancerOption:
     def number(self, number):
         r"""Sets the number of this BatchCreateLoadBalancerOption.
 
-        批量创建负载均衡器的数量
+        **参数解释**：批量创建负载均衡器的数量。  **约束限制**：不涉及  **取值范围**：1-10  **默认取值**：1
 
         :param number: The number of this BatchCreateLoadBalancerOption.
         :type number: int
@@ -356,7 +356,7 @@ class BatchCreateLoadBalancerOption:
     def name(self):
         r"""Gets the name of this BatchCreateLoadBalancerOption.
 
-        负载均衡器的名称。 使用说明： - 当批创负载均衡器数量为1时，负载均衡器的名字即为该传入的值。 - 当批创负载均衡器数量大于1时，负载均衡器的名字在传入的name后加上4位后缀。  例如：批量创建3个负载均衡器，传入name为\"elb-test\"，则三个负载均衡器名字分别为： \"elb-test-0001\"，\"elb-test-0002\"，\"elb-test-0003\"
+        **参数解释**：负载均衡器的名称。 - 当批创负载均衡器数量为1时，负载均衡器的名字即为该传入的值。 - 当批创负载均衡器数量大于1时，负载均衡器的名字在传入的name后加上4位后缀。例如：批量创建3个负载均衡器，传入name为\"elb-test\"，则三个负载均衡器名字分别为：\"elb-test-0001\"，\"elb-test-0002\"，\"elb-test-0003\"  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The name of this BatchCreateLoadBalancerOption.
         :rtype: str
@@ -367,7 +367,7 @@ class BatchCreateLoadBalancerOption:
     def name(self, name):
         r"""Sets the name of this BatchCreateLoadBalancerOption.
 
-        负载均衡器的名称。 使用说明： - 当批创负载均衡器数量为1时，负载均衡器的名字即为该传入的值。 - 当批创负载均衡器数量大于1时，负载均衡器的名字在传入的name后加上4位后缀。  例如：批量创建3个负载均衡器，传入name为\"elb-test\"，则三个负载均衡器名字分别为： \"elb-test-0001\"，\"elb-test-0002\"，\"elb-test-0003\"
+        **参数解释**：负载均衡器的名称。 - 当批创负载均衡器数量为1时，负载均衡器的名字即为该传入的值。 - 当批创负载均衡器数量大于1时，负载均衡器的名字在传入的name后加上4位后缀。例如：批量创建3个负载均衡器，传入name为\"elb-test\"，则三个负载均衡器名字分别为：\"elb-test-0001\"，\"elb-test-0002\"，\"elb-test-0003\"  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param name: The name of this BatchCreateLoadBalancerOption.
         :type name: str
@@ -378,7 +378,7 @@ class BatchCreateLoadBalancerOption:
     def description(self):
         r"""Gets the description of this BatchCreateLoadBalancerOption.
 
-        负载均衡器的描述。
+        **参数解释**：负载均衡器的描述。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The description of this BatchCreateLoadBalancerOption.
         :rtype: str
@@ -389,7 +389,7 @@ class BatchCreateLoadBalancerOption:
     def description(self, description):
         r"""Sets the description of this BatchCreateLoadBalancerOption.
 
-        负载均衡器的描述。
+        **参数解释**：负载均衡器的描述。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param description: The description of this BatchCreateLoadBalancerOption.
         :type description: str
@@ -400,7 +400,7 @@ class BatchCreateLoadBalancerOption:
     def vip_address(self):
         r"""Gets the vip_address of this BatchCreateLoadBalancerOption.
 
-        负载均衡器的IPv4虚拟IP。该地址必须包含在所在子网的IPv4网段内，且未被占用。  使用说明： - 传入vip_address时必须传入vip_subnet_cidr_id。 - 不传入vip_address，但传入vip_subnet_cidr_id，则自动分配IPv4虚拟IP。 - 不传入vip_address，且不传vip_subnet_cidr_id，则不分配虚拟IP，vip_address=null。 - 当批量创建的number数量大于1时不支持传入该字段，返回400。
+        **参数解释**：负载均衡器的IPv4私网IP。该地址必须包含在所在子网的IPv4网段内，且未被占用。  **约束限制**： - 传入vip_address时必须传入vip_subnet_cidr_id。 - 不传入vip_address，但传入vip_subnet_cidr_id，则自动分配IPv4私网IP。 - 不传入vip_address，且不传vip_subnet_cidr_id，则不分配私网IP，vip_address=null。 - 当批量创建的number数量大于1时不支持传入该字段，返回400。  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The vip_address of this BatchCreateLoadBalancerOption.
         :rtype: str
@@ -411,7 +411,7 @@ class BatchCreateLoadBalancerOption:
     def vip_address(self, vip_address):
         r"""Sets the vip_address of this BatchCreateLoadBalancerOption.
 
-        负载均衡器的IPv4虚拟IP。该地址必须包含在所在子网的IPv4网段内，且未被占用。  使用说明： - 传入vip_address时必须传入vip_subnet_cidr_id。 - 不传入vip_address，但传入vip_subnet_cidr_id，则自动分配IPv4虚拟IP。 - 不传入vip_address，且不传vip_subnet_cidr_id，则不分配虚拟IP，vip_address=null。 - 当批量创建的number数量大于1时不支持传入该字段，返回400。
+        **参数解释**：负载均衡器的IPv4私网IP。该地址必须包含在所在子网的IPv4网段内，且未被占用。  **约束限制**： - 传入vip_address时必须传入vip_subnet_cidr_id。 - 不传入vip_address，但传入vip_subnet_cidr_id，则自动分配IPv4私网IP。 - 不传入vip_address，且不传vip_subnet_cidr_id，则不分配私网IP，vip_address=null。 - 当批量创建的number数量大于1时不支持传入该字段，返回400。  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param vip_address: The vip_address of this BatchCreateLoadBalancerOption.
         :type vip_address: str
@@ -422,7 +422,7 @@ class BatchCreateLoadBalancerOption:
     def vip_subnet_cidr_id(self):
         r"""Gets the vip_subnet_cidr_id of this BatchCreateLoadBalancerOption.
 
-        负载均衡器所在子网的IPv4子网ID。若需要创建带IPv4虚拟IP的LB，该字段必须传入。 可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_subnet_id得到。  使用说明： - vpc_id, vip_subnet_cidr_id, ipv6_vip_virsubnet_id不能同时为空，且需要在同一个vpc下。 - 若同时传入vpc_id和vip_subnet_cidr_id， 则vip_subnet_cidr_id对应的子网必须属于vpc_id对应的VPC。
+        **参数解释**：负载均衡器所在子网的IPv4子网ID。若需要创建带IPv4私网IP的LB，该字段必须传入。 可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_subnet_id得到。  **约束限制**： - vpc_id, vip_subnet_cidr_id, ipv6_vip_virsubnet_id不能同时为空，且需要在同一个vpc下。 - 若同时传入vpc_id和vip_subnet_cidr_id，则vip_subnet_cidr_id对应的子网必须属于vpc_id对应的VPC。  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The vip_subnet_cidr_id of this BatchCreateLoadBalancerOption.
         :rtype: str
@@ -433,7 +433,7 @@ class BatchCreateLoadBalancerOption:
     def vip_subnet_cidr_id(self, vip_subnet_cidr_id):
         r"""Sets the vip_subnet_cidr_id of this BatchCreateLoadBalancerOption.
 
-        负载均衡器所在子网的IPv4子网ID。若需要创建带IPv4虚拟IP的LB，该字段必须传入。 可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_subnet_id得到。  使用说明： - vpc_id, vip_subnet_cidr_id, ipv6_vip_virsubnet_id不能同时为空，且需要在同一个vpc下。 - 若同时传入vpc_id和vip_subnet_cidr_id， 则vip_subnet_cidr_id对应的子网必须属于vpc_id对应的VPC。
+        **参数解释**：负载均衡器所在子网的IPv4子网ID。若需要创建带IPv4私网IP的LB，该字段必须传入。 可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_subnet_id得到。  **约束限制**： - vpc_id, vip_subnet_cidr_id, ipv6_vip_virsubnet_id不能同时为空，且需要在同一个vpc下。 - 若同时传入vpc_id和vip_subnet_cidr_id，则vip_subnet_cidr_id对应的子网必须属于vpc_id对应的VPC。  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param vip_subnet_cidr_id: The vip_subnet_cidr_id of this BatchCreateLoadBalancerOption.
         :type vip_subnet_cidr_id: str
@@ -444,7 +444,7 @@ class BatchCreateLoadBalancerOption:
     def ipv6_vip_virsubnet_id(self):
         r"""Gets the ipv6_vip_virsubnet_id of this BatchCreateLoadBalancerOption.
 
-        双栈类型负载均衡器所在子网的IPv6网络ID。可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_network_id得到。  使用说明： - vpc_id，vip_subnet_cidr_id，ipv6_vip_virsubnet_id不能同时为空，且需要在同一个vpc下。 - 需要对应的子网开启IPv6。 - 批量创建共享型实例时，该字段不允许指定。  [不支持IPv6，请勿使用。](tag:dt)
+        **参数解释**：双栈类型负载均衡器所在子网的IPv6网络ID。 可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_network_id得到。  **约束限制**： - vpc_id，vip_subnet_cidr_id，ipv6_vip_virsubnet_id不能同时为空，且需要在同一个vpc下。 - 需要对应的子网开启IPv6。 - 批量创建共享型实例时，该字段不允许指定。  **取值范围**：不涉及  **默认取值**：不涉及  [不支持IPv6，请勿使用。](tag:dt)
 
         :return: The ipv6_vip_virsubnet_id of this BatchCreateLoadBalancerOption.
         :rtype: str
@@ -455,7 +455,7 @@ class BatchCreateLoadBalancerOption:
     def ipv6_vip_virsubnet_id(self, ipv6_vip_virsubnet_id):
         r"""Sets the ipv6_vip_virsubnet_id of this BatchCreateLoadBalancerOption.
 
-        双栈类型负载均衡器所在子网的IPv6网络ID。可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_network_id得到。  使用说明： - vpc_id，vip_subnet_cidr_id，ipv6_vip_virsubnet_id不能同时为空，且需要在同一个vpc下。 - 需要对应的子网开启IPv6。 - 批量创建共享型实例时，该字段不允许指定。  [不支持IPv6，请勿使用。](tag:dt)
+        **参数解释**：双栈类型负载均衡器所在子网的IPv6网络ID。 可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_network_id得到。  **约束限制**： - vpc_id，vip_subnet_cidr_id，ipv6_vip_virsubnet_id不能同时为空，且需要在同一个vpc下。 - 需要对应的子网开启IPv6。 - 批量创建共享型实例时，该字段不允许指定。  **取值范围**：不涉及  **默认取值**：不涉及  [不支持IPv6，请勿使用。](tag:dt)
 
         :param ipv6_vip_virsubnet_id: The ipv6_vip_virsubnet_id of this BatchCreateLoadBalancerOption.
         :type ipv6_vip_virsubnet_id: str
@@ -466,7 +466,7 @@ class BatchCreateLoadBalancerOption:
     def provider(self):
         r"""Gets the provider of this BatchCreateLoadBalancerOption.
 
-        负载均衡器的生产者名称。固定为vlb。批量创建共享型实例时，该字段不允许指定。
+        **参数解释**：负载均衡器的生产者名称。固定为vlb。  **约束限制**：批量创建共享型实例时，该字段不允许指定。  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The provider of this BatchCreateLoadBalancerOption.
         :rtype: str
@@ -477,7 +477,7 @@ class BatchCreateLoadBalancerOption:
     def provider(self, provider):
         r"""Sets the provider of this BatchCreateLoadBalancerOption.
 
-        负载均衡器的生产者名称。固定为vlb。批量创建共享型实例时，该字段不允许指定。
+        **参数解释**：负载均衡器的生产者名称。固定为vlb。  **约束限制**：批量创建共享型实例时，该字段不允许指定。  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param provider: The provider of this BatchCreateLoadBalancerOption.
         :type provider: str
@@ -488,7 +488,7 @@ class BatchCreateLoadBalancerOption:
     def l4_flavor_id(self):
         r"""Gets the l4_flavor_id of this BatchCreateLoadBalancerOption.
 
-        网络型规格ID。  [使用说明： - 可以通过GET https://{ELB_Endpoint}/v3/{project_id}/elb/flavors?type=L4 响应参数中的id得到。 - 当l4_flavor_id和l7_flavor_id都不传的时，会使用默认flavor （默认flavor根据不同局点有所不同，具体以实际值为准）。 - 当传入的规格类型为L4，表示该实例为固定规格实例，按规格计费。 - 当传入的规格类型为L4_elastic_max，表示该实例为弹性实例，按LCU计费。 - 批量创建共享型实例时，该字段不允许指定。  ](tag:hws,hws_hk,hws_eu,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb)   [网关型LB不支持指定l4_flavor_id。](tag:hws_eu) [只支持设置为l4_flavor.elb.shared。](tag:hcso_dt) [所有LB实例共享带宽，该字段无效，请勿使用。](tag:hcso,srg,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b)
+        **参数解释**：网络型规格ID。 可以通过GET https://{ELB_Endpoint}/v3/{project_id}/elb/flavors?type=L4 响应参数中的id得到。  **约束限制**： - 当l4_flavor_id和l7_flavor_id都不传的时，会使用默认flavor （默认flavor根据不同局点有所不同，具体以实际值为准）。 - 当传入的规格类型为L4，表示该实例为固定规格实例，按规格计费。 - 当传入的规格类型为L4_elastic_max，表示该实例为弹性实例，按LCU计费。 - 批量创建共享型实例时，该字段不允许指定。  **取值范围**：不涉及  **默认取值**：不涉及  [网关型LB不支持指定l4_flavor_id。](tag:hws_eu) [只支持设置为l4_flavor.elb.shared。](tag:hcso_dt) [所有LB实例共享带宽，该字段无效，请勿使用。](tag:hcso,srg,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b)
 
         :return: The l4_flavor_id of this BatchCreateLoadBalancerOption.
         :rtype: str
@@ -499,7 +499,7 @@ class BatchCreateLoadBalancerOption:
     def l4_flavor_id(self, l4_flavor_id):
         r"""Sets the l4_flavor_id of this BatchCreateLoadBalancerOption.
 
-        网络型规格ID。  [使用说明： - 可以通过GET https://{ELB_Endpoint}/v3/{project_id}/elb/flavors?type=L4 响应参数中的id得到。 - 当l4_flavor_id和l7_flavor_id都不传的时，会使用默认flavor （默认flavor根据不同局点有所不同，具体以实际值为准）。 - 当传入的规格类型为L4，表示该实例为固定规格实例，按规格计费。 - 当传入的规格类型为L4_elastic_max，表示该实例为弹性实例，按LCU计费。 - 批量创建共享型实例时，该字段不允许指定。  ](tag:hws,hws_hk,hws_eu,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb)   [网关型LB不支持指定l4_flavor_id。](tag:hws_eu) [只支持设置为l4_flavor.elb.shared。](tag:hcso_dt) [所有LB实例共享带宽，该字段无效，请勿使用。](tag:hcso,srg,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b)
+        **参数解释**：网络型规格ID。 可以通过GET https://{ELB_Endpoint}/v3/{project_id}/elb/flavors?type=L4 响应参数中的id得到。  **约束限制**： - 当l4_flavor_id和l7_flavor_id都不传的时，会使用默认flavor （默认flavor根据不同局点有所不同，具体以实际值为准）。 - 当传入的规格类型为L4，表示该实例为固定规格实例，按规格计费。 - 当传入的规格类型为L4_elastic_max，表示该实例为弹性实例，按LCU计费。 - 批量创建共享型实例时，该字段不允许指定。  **取值范围**：不涉及  **默认取值**：不涉及  [网关型LB不支持指定l4_flavor_id。](tag:hws_eu) [只支持设置为l4_flavor.elb.shared。](tag:hcso_dt) [所有LB实例共享带宽，该字段无效，请勿使用。](tag:hcso,srg,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b)
 
         :param l4_flavor_id: The l4_flavor_id of this BatchCreateLoadBalancerOption.
         :type l4_flavor_id: str
@@ -510,7 +510,7 @@ class BatchCreateLoadBalancerOption:
     def l7_flavor_id(self):
         r"""Gets the l7_flavor_id of this BatchCreateLoadBalancerOption.
 
-        应用型规格ID。  [使用说明： - 可以通过GET https://{ELB_Endpoint}/v3/{project_id}/elb/flavors?type=L7 响应参数中的id得到。 - 当l4_flavor_id和l7_flavor_id都不传的时，会使用默认flavor （默认flavor根据不同局点有所不同，具体以实际值为准）。 - 当传入的规格类型为L7，表示该实例为固定规格实例，按规格计费。 - 当传入的规格类型为L7_elastic_max，表示该实例为弹性实例，按LCU计费。 - 批量创建共享型实例时，该字段不允许指定。 ](tag:hws,hws_hk,hws_eu,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb)   [网关型LB不支持指定l7_flavor_id。](tag:hws_eu) [只支持设置为l7_flavor.elb.shared。](tag:hcso_dt) [所有LB实例共享带宽，该字段无效，请勿使用。](tag:hcso,srg,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b)
+        **参数解释**：应用型规格ID。 可以通过GET https://{ELB_Endpoint}/v3/{project_id}/elb/flavors?type=L7 响应参数中的id得到。  **约束限制**： - 当l4_flavor_id和l7_flavor_id都不传的时，会使用默认flavor （默认flavor根据不同局点有所不同，具体以实际值为准）。 - 当传入的规格类型为L7，表示该实例为固定规格实例，按规格计费。 - 当传入的规格类型为L7_elastic_max，表示该实例为弹性实例，按LCU计费。 - 批量创建共享型实例时，该字段不允许指定。  **取值范围**：不涉及  **默认取值**：不涉及  [网关型LB不支持指定l7_flavor_id。](tag:hws_eu) [只支持设置为l7_flavor.elb.shared。](tag:hcso_dt) [所有LB实例共享带宽，该字段无效，请勿使用。](tag:hcso,srg,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b)
 
         :return: The l7_flavor_id of this BatchCreateLoadBalancerOption.
         :rtype: str
@@ -521,7 +521,7 @@ class BatchCreateLoadBalancerOption:
     def l7_flavor_id(self, l7_flavor_id):
         r"""Sets the l7_flavor_id of this BatchCreateLoadBalancerOption.
 
-        应用型规格ID。  [使用说明： - 可以通过GET https://{ELB_Endpoint}/v3/{project_id}/elb/flavors?type=L7 响应参数中的id得到。 - 当l4_flavor_id和l7_flavor_id都不传的时，会使用默认flavor （默认flavor根据不同局点有所不同，具体以实际值为准）。 - 当传入的规格类型为L7，表示该实例为固定规格实例，按规格计费。 - 当传入的规格类型为L7_elastic_max，表示该实例为弹性实例，按LCU计费。 - 批量创建共享型实例时，该字段不允许指定。 ](tag:hws,hws_hk,hws_eu,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb)   [网关型LB不支持指定l7_flavor_id。](tag:hws_eu) [只支持设置为l7_flavor.elb.shared。](tag:hcso_dt) [所有LB实例共享带宽，该字段无效，请勿使用。](tag:hcso,srg,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b)
+        **参数解释**：应用型规格ID。 可以通过GET https://{ELB_Endpoint}/v3/{project_id}/elb/flavors?type=L7 响应参数中的id得到。  **约束限制**： - 当l4_flavor_id和l7_flavor_id都不传的时，会使用默认flavor （默认flavor根据不同局点有所不同，具体以实际值为准）。 - 当传入的规格类型为L7，表示该实例为固定规格实例，按规格计费。 - 当传入的规格类型为L7_elastic_max，表示该实例为弹性实例，按LCU计费。 - 批量创建共享型实例时，该字段不允许指定。  **取值范围**：不涉及  **默认取值**：不涉及  [网关型LB不支持指定l7_flavor_id。](tag:hws_eu) [只支持设置为l7_flavor.elb.shared。](tag:hcso_dt) [所有LB实例共享带宽，该字段无效，请勿使用。](tag:hcso,srg,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b)
 
         :param l7_flavor_id: The l7_flavor_id of this BatchCreateLoadBalancerOption.
         :type l7_flavor_id: str
@@ -532,7 +532,7 @@ class BatchCreateLoadBalancerOption:
     def guaranteed(self):
         r"""Gets the guaranteed of this BatchCreateLoadBalancerOption.
 
-        批量创建的是否是独享型负载均衡器。  取值： - true：独享型。 - false：共享型。  默认：true。
+        **参数解释**：批量创建的是否是独享型负载均衡器。  **约束限制**：不涉及  **取值范围**： - true：独享型。 - false：共享型。  **默认取值**：true
 
         :return: The guaranteed of this BatchCreateLoadBalancerOption.
         :rtype: bool
@@ -543,7 +543,7 @@ class BatchCreateLoadBalancerOption:
     def guaranteed(self, guaranteed):
         r"""Sets the guaranteed of this BatchCreateLoadBalancerOption.
 
-        批量创建的是否是独享型负载均衡器。  取值： - true：独享型。 - false：共享型。  默认：true。
+        **参数解释**：批量创建的是否是独享型负载均衡器。  **约束限制**：不涉及  **取值范围**： - true：独享型。 - false：共享型。  **默认取值**：true
 
         :param guaranteed: The guaranteed of this BatchCreateLoadBalancerOption.
         :type guaranteed: bool
@@ -554,7 +554,7 @@ class BatchCreateLoadBalancerOption:
     def vpc_id(self):
         r"""Gets the vpc_id of this BatchCreateLoadBalancerOption.
 
-        负载均衡器所在的VPC ID。可以通过GET https://{VPC_Endpoint}/v1/{project_id}/vpcs 响应参数中的id得到。  使用说明： - vpc_id，vip_subnet_cidr_id，ipv6_vip_virsubnet_id不能同时为空，且需要在同一个vpc下。 - 批量创建共享型实例时，该字段不允许指定。
+        **参数解释**：负载均衡器所在的VPC ID。 可以通过GET https://{VPC_Endpoint}/v1/{project_id}/vpcs 响应参数中的id得到。  **约束限制**： - vpc_id，vip_subnet_cidr_id，ipv6_vip_virsubnet_id不能同时为空，且需要在同一个vpc下。 - 批量创建共享型实例时，该字段不允许指定。  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The vpc_id of this BatchCreateLoadBalancerOption.
         :rtype: str
@@ -565,7 +565,7 @@ class BatchCreateLoadBalancerOption:
     def vpc_id(self, vpc_id):
         r"""Sets the vpc_id of this BatchCreateLoadBalancerOption.
 
-        负载均衡器所在的VPC ID。可以通过GET https://{VPC_Endpoint}/v1/{project_id}/vpcs 响应参数中的id得到。  使用说明： - vpc_id，vip_subnet_cidr_id，ipv6_vip_virsubnet_id不能同时为空，且需要在同一个vpc下。 - 批量创建共享型实例时，该字段不允许指定。
+        **参数解释**：负载均衡器所在的VPC ID。 可以通过GET https://{VPC_Endpoint}/v1/{project_id}/vpcs 响应参数中的id得到。  **约束限制**： - vpc_id，vip_subnet_cidr_id，ipv6_vip_virsubnet_id不能同时为空，且需要在同一个vpc下。 - 批量创建共享型实例时，该字段不允许指定。  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param vpc_id: The vpc_id of this BatchCreateLoadBalancerOption.
         :type vpc_id: str
@@ -576,7 +576,7 @@ class BatchCreateLoadBalancerOption:
     def availability_zone_list(self):
         r"""Gets the availability_zone_list of this BatchCreateLoadBalancerOption.
 
-        可用区列表。可通过GET https://{ELB_Endpoint}/v3/{project_id}/elb/availability-zones 接口来查询可用区集合列表。创建负载均衡器时，从查询结果选择某一个可用区集合，并从中选择一个或多个可用区。  使用说明： - 批量创建共享型实例时，该字段不允许指定。
+        **参数解释**：可用区列表。 可通过GET https://{ELB_Endpoint}/v3/{project_id}/elb/availability-zones 接口来查询可用区集合列表。创建负载均衡器时，从查询结果选择某一个可用区集合，并从中选择一个或多个可用区。  **约束限制**： - 批量创建共享型实例时，该字段不允许指定。  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The availability_zone_list of this BatchCreateLoadBalancerOption.
         :rtype: list[str]
@@ -587,7 +587,7 @@ class BatchCreateLoadBalancerOption:
     def availability_zone_list(self, availability_zone_list):
         r"""Sets the availability_zone_list of this BatchCreateLoadBalancerOption.
 
-        可用区列表。可通过GET https://{ELB_Endpoint}/v3/{project_id}/elb/availability-zones 接口来查询可用区集合列表。创建负载均衡器时，从查询结果选择某一个可用区集合，并从中选择一个或多个可用区。  使用说明： - 批量创建共享型实例时，该字段不允许指定。
+        **参数解释**：可用区列表。 可通过GET https://{ELB_Endpoint}/v3/{project_id}/elb/availability-zones 接口来查询可用区集合列表。创建负载均衡器时，从查询结果选择某一个可用区集合，并从中选择一个或多个可用区。  **约束限制**： - 批量创建共享型实例时，该字段不允许指定。  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param availability_zone_list: The availability_zone_list of this BatchCreateLoadBalancerOption.
         :type availability_zone_list: list[str]
@@ -598,7 +598,7 @@ class BatchCreateLoadBalancerOption:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this BatchCreateLoadBalancerOption.
 
-        负载均衡器所属的企业项目ID。创建时传入\"\"、\"0\"或不存在的企业项目ID，或者不传则资源属于default企业项目，默认返回\"0\"。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
+        **参数解释**：资源所属的企业项目ID。创建时不传则资源属于default企业项目，返回enterprise_project_id=\"0\"。  **约束限制**：不能传入空字符串\"\"、\"0\"或不存在的企业项目ID。  **取值范围**：不涉及  **默认取值**：\"0\"  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
 
         :return: The enterprise_project_id of this BatchCreateLoadBalancerOption.
         :rtype: str
@@ -609,7 +609,7 @@ class BatchCreateLoadBalancerOption:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this BatchCreateLoadBalancerOption.
 
-        负载均衡器所属的企业项目ID。创建时传入\"\"、\"0\"或不存在的企业项目ID，或者不传则资源属于default企业项目，默认返回\"0\"。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
+        **参数解释**：资源所属的企业项目ID。创建时不传则资源属于default企业项目，返回enterprise_project_id=\"0\"。  **约束限制**：不能传入空字符串\"\"、\"0\"或不存在的企业项目ID。  **取值范围**：不涉及  **默认取值**：\"0\"  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
 
         :param enterprise_project_id: The enterprise_project_id of this BatchCreateLoadBalancerOption.
         :type enterprise_project_id: str
@@ -620,7 +620,7 @@ class BatchCreateLoadBalancerOption:
     def tags(self):
         r"""Gets the tags of this BatchCreateLoadBalancerOption.
 
-        负载均衡的标签列表。示例：\"tags\":[{\"key\":\"my_tag\",\"value\":\"my_tag_value\"}]
+        **参数解释**：负载均衡的标签列表。示例：\"tags\":[{\"key\":\"my_tag\",\"value\":\"my_tag_value\"}]  **约束限制**：不涉及
 
         :return: The tags of this BatchCreateLoadBalancerOption.
         :rtype: list[:class:`huaweicloudsdkelb.v3.Tag`]
@@ -631,7 +631,7 @@ class BatchCreateLoadBalancerOption:
     def tags(self, tags):
         r"""Sets the tags of this BatchCreateLoadBalancerOption.
 
-        负载均衡的标签列表。示例：\"tags\":[{\"key\":\"my_tag\",\"value\":\"my_tag_value\"}]
+        **参数解释**：负载均衡的标签列表。示例：\"tags\":[{\"key\":\"my_tag\",\"value\":\"my_tag_value\"}]  **约束限制**：不涉及
 
         :param tags: The tags of this BatchCreateLoadBalancerOption.
         :type tags: list[:class:`huaweicloudsdkelb.v3.Tag`]
@@ -642,7 +642,7 @@ class BatchCreateLoadBalancerOption:
     def admin_state_up(self):
         r"""Gets the admin_state_up of this BatchCreateLoadBalancerOption.
 
-        参数解释：负载均衡器的启用状态。  取值范围： - true ：启用。 - false：停用。  默认取值：true。  [不支持该字段，请勿使用。](tag:dt)
+        **参数解释**：负载均衡器的启用状态。  **约束限制**：不涉及  **取值范围**： - true ：启用。 - false：停用。  **默认取值**：true。  [不支持该字段，请勿使用。](tag:dt)
 
         :return: The admin_state_up of this BatchCreateLoadBalancerOption.
         :rtype: bool
@@ -653,7 +653,7 @@ class BatchCreateLoadBalancerOption:
     def admin_state_up(self, admin_state_up):
         r"""Sets the admin_state_up of this BatchCreateLoadBalancerOption.
 
-        参数解释：负载均衡器的启用状态。  取值范围： - true ：启用。 - false：停用。  默认取值：true。  [不支持该字段，请勿使用。](tag:dt)
+        **参数解释**：负载均衡器的启用状态。  **约束限制**：不涉及  **取值范围**： - true ：启用。 - false：停用。  **默认取值**：true。  [不支持该字段，请勿使用。](tag:dt)
 
         :param admin_state_up: The admin_state_up of this BatchCreateLoadBalancerOption.
         :type admin_state_up: bool
@@ -664,7 +664,7 @@ class BatchCreateLoadBalancerOption:
     def billing_info(self):
         r"""Gets the billing_info of this BatchCreateLoadBalancerOption.
 
-        资源账单信息。  取值范围： - 空：按需计费。 [- 非空：包周期计费，格式为：order_id:product_id:region_id:project_id。如：CS2107161019CDJZZ:OFFI569702121789763584:az1:057ef081eb00d2732fd1c01a9be75e6f](tag:hws)  [不支持该字段，请勿使用。](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,srg,fcs,fcs_vm,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf)
+        **参数解释**：资源账单信息。  **约束限制**：不涉及  **取值范围**： - 空：按需计费。 [- 非空：包周期计费，格式为：order_id:product_id:region_id:project_id。如：CS2107161019CDJZZ:OFFI569702121789763584:az1:057ef081eb00d2732fd1c01a9be75e6f](tag:hws)  **默认取值**：不涉及  [不支持该字段，请勿使用。](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,srg,fcs,fcs_vm,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf)
 
         :return: The billing_info of this BatchCreateLoadBalancerOption.
         :rtype: str
@@ -675,7 +675,7 @@ class BatchCreateLoadBalancerOption:
     def billing_info(self, billing_info):
         r"""Sets the billing_info of this BatchCreateLoadBalancerOption.
 
-        资源账单信息。  取值范围： - 空：按需计费。 [- 非空：包周期计费，格式为：order_id:product_id:region_id:project_id。如：CS2107161019CDJZZ:OFFI569702121789763584:az1:057ef081eb00d2732fd1c01a9be75e6f](tag:hws)  [不支持该字段，请勿使用。](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,srg,fcs,fcs_vm,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf)
+        **参数解释**：资源账单信息。  **约束限制**：不涉及  **取值范围**： - 空：按需计费。 [- 非空：包周期计费，格式为：order_id:product_id:region_id:project_id。如：CS2107161019CDJZZ:OFFI569702121789763584:az1:057ef081eb00d2732fd1c01a9be75e6f](tag:hws)  **默认取值**：不涉及  [不支持该字段，请勿使用。](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,srg,fcs,fcs_vm,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf)
 
         :param billing_info: The billing_info of this BatchCreateLoadBalancerOption.
         :type billing_info: str
@@ -722,7 +722,7 @@ class BatchCreateLoadBalancerOption:
     def publicip_ids(self):
         r"""Gets the publicip_ids of this BatchCreateLoadBalancerOption.
 
-        负载均衡器绑定的公网IP ID。只支持绑定数组中的第一个EIP，其他将被忽略。 当批量创建的number数量大于1时不支持传入该字段，返回400。
+        **参数解释**：负载均衡器绑定的公网IP ID。只支持绑定数组中的第一个EIP，其他将被忽略。 当批量创建的number数量大于1时不支持传入该字段，返回400。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The publicip_ids of this BatchCreateLoadBalancerOption.
         :rtype: list[str]
@@ -733,7 +733,7 @@ class BatchCreateLoadBalancerOption:
     def publicip_ids(self, publicip_ids):
         r"""Sets the publicip_ids of this BatchCreateLoadBalancerOption.
 
-        负载均衡器绑定的公网IP ID。只支持绑定数组中的第一个EIP，其他将被忽略。 当批量创建的number数量大于1时不支持传入该字段，返回400。
+        **参数解释**：负载均衡器绑定的公网IP ID。只支持绑定数组中的第一个EIP，其他将被忽略。 当批量创建的number数量大于1时不支持传入该字段，返回400。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param publicip_ids: The publicip_ids of this BatchCreateLoadBalancerOption.
         :type publicip_ids: list[str]
@@ -762,7 +762,7 @@ class BatchCreateLoadBalancerOption:
     def elb_virsubnet_ids(self):
         r"""Gets the elb_virsubnet_ids of this BatchCreateLoadBalancerOption.
 
-        下联面子网的网络ID列表。可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_network_id得到。  若不指定该字段，则按如下规则选择下联面网络： 1. 如果ELB实例开启ipv6，则选择ipv6_vip_virsubnet_id子网对应的网络ID。 2. 如果ELB实例没有开启ipv6，开启ipv4，则选择vip_subnet_cidr_id子网对应的网络ID。 3. 如果ELB实例没有选择私网，只开启公网，则会在当前负载均衡器所在的VPC中任意选一个子网，优选可用IP多的网络。 4. 批量创建共享型实例的场景，该字段不允许指定。  若指定多个下联面子网，则按顺序优先使用第一个子网来为负载均衡器下联面端口分配ip地址。  下联面子网必须属于该LB所在的VPC。
+        **参数解释**：下联面子网的网络ID列表。 可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_network_id得到。 若不指定该字段，则按如下规则选择下联面网络： 1. 如果ELB实例开启ipv6，则选择ipv6_vip_virsubnet_id子网对应的网络ID。 2. 如果ELB实例没有开启ipv6，开启ipv4，则选择vip_subnet_cidr_id子网对应的网络ID。 3. 如果ELB实例没有选择私网，只开启公网，则会在当前负载均衡器所在的VPC中任意选一个子网，优选可用IP多的网络。 4. 批量创建共享型实例的场景，该字段不允许指定。 若指定多个下联面子网，则按顺序优先使用第一个子网来为负载均衡器下联面端口分配ip地址。  **约束限制**：下联面子网必须属于该LB所在的VPC。  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The elb_virsubnet_ids of this BatchCreateLoadBalancerOption.
         :rtype: list[str]
@@ -773,7 +773,7 @@ class BatchCreateLoadBalancerOption:
     def elb_virsubnet_ids(self, elb_virsubnet_ids):
         r"""Sets the elb_virsubnet_ids of this BatchCreateLoadBalancerOption.
 
-        下联面子网的网络ID列表。可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_network_id得到。  若不指定该字段，则按如下规则选择下联面网络： 1. 如果ELB实例开启ipv6，则选择ipv6_vip_virsubnet_id子网对应的网络ID。 2. 如果ELB实例没有开启ipv6，开启ipv4，则选择vip_subnet_cidr_id子网对应的网络ID。 3. 如果ELB实例没有选择私网，只开启公网，则会在当前负载均衡器所在的VPC中任意选一个子网，优选可用IP多的网络。 4. 批量创建共享型实例的场景，该字段不允许指定。  若指定多个下联面子网，则按顺序优先使用第一个子网来为负载均衡器下联面端口分配ip地址。  下联面子网必须属于该LB所在的VPC。
+        **参数解释**：下联面子网的网络ID列表。 可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_network_id得到。 若不指定该字段，则按如下规则选择下联面网络： 1. 如果ELB实例开启ipv6，则选择ipv6_vip_virsubnet_id子网对应的网络ID。 2. 如果ELB实例没有开启ipv6，开启ipv4，则选择vip_subnet_cidr_id子网对应的网络ID。 3. 如果ELB实例没有选择私网，只开启公网，则会在当前负载均衡器所在的VPC中任意选一个子网，优选可用IP多的网络。 4. 批量创建共享型实例的场景，该字段不允许指定。 若指定多个下联面子网，则按顺序优先使用第一个子网来为负载均衡器下联面端口分配ip地址。  **约束限制**：下联面子网必须属于该LB所在的VPC。  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param elb_virsubnet_ids: The elb_virsubnet_ids of this BatchCreateLoadBalancerOption.
         :type elb_virsubnet_ids: list[str]
@@ -784,7 +784,7 @@ class BatchCreateLoadBalancerOption:
     def ip_target_enable(self):
         r"""Gets the ip_target_enable of this BatchCreateLoadBalancerOption.
 
-        参数解释：是否启用跨VPC后端转发。 开启跨VPC后端转发后，后端服务器组不仅支持添加云上VPC内的服务器，还支持添加其他VPC、其他公有云、云下数据中心的服务器。  约束限制： - 开启后不能关闭。 - 使用共享VPC的实例使用此特性时，需确保共享资源所有者已开通VPC对等连接，否则通信异常。 [- 仅独享型负载均衡器支持该特性。](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt) [- 网关型LB不支持该特性。](tag:hws_eu)  取值范围： - true：开启。 - false：不开启。  [荷兰region不支持该字段，请勿使用。](tag:dt)
+        **参数解释**：是否启用IP类型后端转发。 开启IP类型后端转发后，后端服务器组不仅支持添加云上VPC内的服务器，还支持添加其他VPC、其他公有云、云下数据中心的服务器。  **约束限制**： - 开启后不能关闭。 - 使用共享VPC的实例使用此特性时，需确保共享资源所有者已开通VPC对等连接，否则通信异常。 [- 仅独享型负载均衡器支持该特性。](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt) [- 网关型LB不支持该特性。](tag:hws_eu)  **取值范围**： - true：开启。 - false：不开启。  **默认取值**：false  [荷兰region不支持该字段，请勿使用。](tag:dt)
 
         :return: The ip_target_enable of this BatchCreateLoadBalancerOption.
         :rtype: bool
@@ -795,7 +795,7 @@ class BatchCreateLoadBalancerOption:
     def ip_target_enable(self, ip_target_enable):
         r"""Sets the ip_target_enable of this BatchCreateLoadBalancerOption.
 
-        参数解释：是否启用跨VPC后端转发。 开启跨VPC后端转发后，后端服务器组不仅支持添加云上VPC内的服务器，还支持添加其他VPC、其他公有云、云下数据中心的服务器。  约束限制： - 开启后不能关闭。 - 使用共享VPC的实例使用此特性时，需确保共享资源所有者已开通VPC对等连接，否则通信异常。 [- 仅独享型负载均衡器支持该特性。](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt) [- 网关型LB不支持该特性。](tag:hws_eu)  取值范围： - true：开启。 - false：不开启。  [荷兰region不支持该字段，请勿使用。](tag:dt)
+        **参数解释**：是否启用IP类型后端转发。 开启IP类型后端转发后，后端服务器组不仅支持添加云上VPC内的服务器，还支持添加其他VPC、其他公有云、云下数据中心的服务器。  **约束限制**： - 开启后不能关闭。 - 使用共享VPC的实例使用此特性时，需确保共享资源所有者已开通VPC对等连接，否则通信异常。 [- 仅独享型负载均衡器支持该特性。](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt) [- 网关型LB不支持该特性。](tag:hws_eu)  **取值范围**： - true：开启。 - false：不开启。  **默认取值**：false  [荷兰region不支持该字段，请勿使用。](tag:dt)
 
         :param ip_target_enable: The ip_target_enable of this BatchCreateLoadBalancerOption.
         :type ip_target_enable: bool
@@ -806,7 +806,7 @@ class BatchCreateLoadBalancerOption:
     def deletion_protection_enable(self):
         r"""Gets the deletion_protection_enable of this BatchCreateLoadBalancerOption.
 
-        是否开启删除保护。 批量创建共享型实例的场景，该字段不允许指定。  取值：false不开启，true开启。默认false不开启。  > 退场时需要先关闭所有资源的删除保护开关。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)  [荷兰region不支持该字段，请勿使用。](tag:dt)
+        **参数解释**：是否开启删除保护。  **约束限制**：批量创建共享型实例的场景，该字段不允许指定。  **取值范围**：false 不开启，true 开启。  **默认取值**：false  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42) [荷兰region不支持该字段，请勿使用。](tag:dt)  > 退场时需要先关闭所有资源的删除保护开关。
 
         :return: The deletion_protection_enable of this BatchCreateLoadBalancerOption.
         :rtype: bool
@@ -817,7 +817,7 @@ class BatchCreateLoadBalancerOption:
     def deletion_protection_enable(self, deletion_protection_enable):
         r"""Sets the deletion_protection_enable of this BatchCreateLoadBalancerOption.
 
-        是否开启删除保护。 批量创建共享型实例的场景，该字段不允许指定。  取值：false不开启，true开启。默认false不开启。  > 退场时需要先关闭所有资源的删除保护开关。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)  [荷兰region不支持该字段，请勿使用。](tag:dt)
+        **参数解释**：是否开启删除保护。  **约束限制**：批量创建共享型实例的场景，该字段不允许指定。  **取值范围**：false 不开启，true 开启。  **默认取值**：false  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42) [荷兰region不支持该字段，请勿使用。](tag:dt)  > 退场时需要先关闭所有资源的删除保护开关。
 
         :param deletion_protection_enable: The deletion_protection_enable of this BatchCreateLoadBalancerOption.
         :type deletion_protection_enable: bool
@@ -864,7 +864,7 @@ class BatchCreateLoadBalancerOption:
     def waf_failure_action(self):
         r"""Gets the waf_failure_action of this BatchCreateLoadBalancerOption.
 
-        WAF故障时的流量处理策略。discard:丢弃，forward: 转发到后端（默认）  使用说明：只有绑定了waf的LB实例，该字段才会生效。  [不支持该字段，请勿使用。](tag:hws_eu,hws_test,hcs,hcs_sm,hcso,srg,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b,hcso_dt,dt,ocb,ctc,cmcc,tm,ct,sbc,g42,hws_ocb,hk_sbc,hk_tm,hk_g42)
+        **参数解释**：WAF故障时的流量处理策略。  **约束限制**：只有绑定了waf的LB实例，该字段才会生效。  **取值范围**： - discard:丢弃 - forward: 转发到后端  **默认取值**：forward  [不支持该字段，请勿使用。](tag:hws_eu,hws_test,hcs,hcs_sm,hcso,srg,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b,hcso_dt,dt,ocb,ctc,cmcc,tm,ct,sbc,g42,hws_ocb,hk_sbc,hk_tm,hk_g42)
 
         :return: The waf_failure_action of this BatchCreateLoadBalancerOption.
         :rtype: str
@@ -875,7 +875,7 @@ class BatchCreateLoadBalancerOption:
     def waf_failure_action(self, waf_failure_action):
         r"""Sets the waf_failure_action of this BatchCreateLoadBalancerOption.
 
-        WAF故障时的流量处理策略。discard:丢弃，forward: 转发到后端（默认）  使用说明：只有绑定了waf的LB实例，该字段才会生效。  [不支持该字段，请勿使用。](tag:hws_eu,hws_test,hcs,hcs_sm,hcso,srg,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b,hcso_dt,dt,ocb,ctc,cmcc,tm,ct,sbc,g42,hws_ocb,hk_sbc,hk_tm,hk_g42)
+        **参数解释**：WAF故障时的流量处理策略。  **约束限制**：只有绑定了waf的LB实例，该字段才会生效。  **取值范围**： - discard:丢弃 - forward: 转发到后端  **默认取值**：forward  [不支持该字段，请勿使用。](tag:hws_eu,hws_test,hcs,hcs_sm,hcso,srg,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b,hcso_dt,dt,ocb,ctc,cmcc,tm,ct,sbc,g42,hws_ocb,hk_sbc,hk_tm,hk_g42)
 
         :param waf_failure_action: The waf_failure_action of this BatchCreateLoadBalancerOption.
         :type waf_failure_action: str
@@ -886,7 +886,7 @@ class BatchCreateLoadBalancerOption:
     def protection_status(self):
         r"""Gets the protection_status of this BatchCreateLoadBalancerOption.
 
-        修改保护状态, 取值： - nonProtection: 不保护，默认值为nonProtection - consoleProtection: 控制台修改保护
+        **参数解释**：修改保护状态。  **约束限制**：不涉及  **取值范围**： - nonProtection: 不保护。 - consoleProtection: 控制台修改保护。  **默认取值**：nonProtection
 
         :return: The protection_status of this BatchCreateLoadBalancerOption.
         :rtype: str
@@ -897,7 +897,7 @@ class BatchCreateLoadBalancerOption:
     def protection_status(self, protection_status):
         r"""Sets the protection_status of this BatchCreateLoadBalancerOption.
 
-        修改保护状态, 取值： - nonProtection: 不保护，默认值为nonProtection - consoleProtection: 控制台修改保护
+        **参数解释**：修改保护状态。  **约束限制**：不涉及  **取值范围**： - nonProtection: 不保护。 - consoleProtection: 控制台修改保护。  **默认取值**：nonProtection
 
         :param protection_status: The protection_status of this BatchCreateLoadBalancerOption.
         :type protection_status: str
@@ -908,7 +908,7 @@ class BatchCreateLoadBalancerOption:
     def protection_reason(self):
         r"""Gets the protection_reason of this BatchCreateLoadBalancerOption.
 
-        参数解释：设置保护的原因。作为protection_status的转态设置的原因。  约束限制：仅当protection_status为consoleProtection时有效。  取值范围：除<和>外通用Unicode字符集字符，最大255个字符。
+        **参数解释**：设置保护的原因。作为protection_status的转态设置的原因。  **约束限制**：仅当protection_status为consoleProtection时有效。  **取值范围**：除<和>外通用Unicode字符集字符，最大255个字符。  **默认取值**：不涉及
 
         :return: The protection_reason of this BatchCreateLoadBalancerOption.
         :rtype: str
@@ -919,7 +919,7 @@ class BatchCreateLoadBalancerOption:
     def protection_reason(self, protection_reason):
         r"""Sets the protection_reason of this BatchCreateLoadBalancerOption.
 
-        参数解释：设置保护的原因。作为protection_status的转态设置的原因。  约束限制：仅当protection_status为consoleProtection时有效。  取值范围：除<和>外通用Unicode字符集字符，最大255个字符。
+        **参数解释**：设置保护的原因。作为protection_status的转态设置的原因。  **约束限制**：仅当protection_status为consoleProtection时有效。  **取值范围**：除<和>外通用Unicode字符集字符，最大255个字符。  **默认取值**：不涉及
 
         :param protection_reason: The protection_reason of this BatchCreateLoadBalancerOption.
         :type protection_reason: str
@@ -930,7 +930,7 @@ class BatchCreateLoadBalancerOption:
     def charge_mode(self):
         r"""Gets the charge_mode of this BatchCreateLoadBalancerOption.
 
-        创建实例采用的计费模式。flavor: 按实例规格收费，默认值。lcu: 按使用量收费。 批量创建共享型实例时，该字段不允许指定。
+        **参数解释**：创建实例采用的计费模式。  **约束限制**：批量创建共享型实例时，该字段不允许指定。  **取值范围**： - flavor：按实例规格收费。 - lcu：按使用量收费。  **默认取值**：flavor
 
         :return: The charge_mode of this BatchCreateLoadBalancerOption.
         :rtype: str
@@ -941,7 +941,7 @@ class BatchCreateLoadBalancerOption:
     def charge_mode(self, charge_mode):
         r"""Sets the charge_mode of this BatchCreateLoadBalancerOption.
 
-        创建实例采用的计费模式。flavor: 按实例规格收费，默认值。lcu: 按使用量收费。 批量创建共享型实例时，该字段不允许指定。
+        **参数解释**：创建实例采用的计费模式。  **约束限制**：批量创建共享型实例时，该字段不允许指定。  **取值范围**： - flavor：按实例规格收费。 - lcu：按使用量收费。  **默认取值**：flavor
 
         :param charge_mode: The charge_mode of this BatchCreateLoadBalancerOption.
         :type charge_mode: str
@@ -952,7 +952,7 @@ class BatchCreateLoadBalancerOption:
     def ipv6_vip_address(self):
         r"""Gets the ipv6_vip_address of this BatchCreateLoadBalancerOption.
 
-        双栈类型负载均衡器的IPv6地址。 当批量创建的number数量大于1时不支持传入该字段，返回400。 批量创建共享型实例的场景，该字段不允许指定。 [不支持IPv6，请勿使用。](tag:dt)
+        **参数解释**：双栈类型负载均衡器的IPv6地址。  **约束限制**： - 当批量创建的number数量大于1时不支持传入该字段，返回400。 - 批量创建共享型实例的场景，该字段不允许指定。  **取值范围**：不涉及  **默认取值**：不涉及  [不支持IPv6，请勿使用。](tag:dt)
 
         :return: The ipv6_vip_address of this BatchCreateLoadBalancerOption.
         :rtype: str
@@ -963,7 +963,7 @@ class BatchCreateLoadBalancerOption:
     def ipv6_vip_address(self, ipv6_vip_address):
         r"""Sets the ipv6_vip_address of this BatchCreateLoadBalancerOption.
 
-        双栈类型负载均衡器的IPv6地址。 当批量创建的number数量大于1时不支持传入该字段，返回400。 批量创建共享型实例的场景，该字段不允许指定。 [不支持IPv6，请勿使用。](tag:dt)
+        **参数解释**：双栈类型负载均衡器的IPv6地址。  **约束限制**： - 当批量创建的number数量大于1时不支持传入该字段，返回400。 - 批量创建共享型实例的场景，该字段不允许指定。  **取值范围**：不涉及  **默认取值**：不涉及  [不支持IPv6，请勿使用。](tag:dt)
 
         :param ipv6_vip_address: The ipv6_vip_address of this BatchCreateLoadBalancerOption.
         :type ipv6_vip_address: str

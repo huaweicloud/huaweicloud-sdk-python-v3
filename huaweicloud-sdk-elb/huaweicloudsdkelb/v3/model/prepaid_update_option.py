@@ -35,13 +35,13 @@ class PrepaidUpdateOption:
 
         The model defined in huaweicloud sdk
 
-        :param auto_pay: 下单订购后，是否自动从客户的账户中支付； true：自动支付； false：不自动支付（默认）。 自动支付时，只能使用账户的现金支付；如果要使用代金券，请选择不自动支付，然后在用户费用中心，选择代金券支付。
+        :param auto_pay: **参数解释**：下单订购后，是否自动从客户的账户中支付。  **约束限制**：自动支付时，只能使用账户的现金支付；如果要使用代金券，请选择不自动支付，然后在用户费用中心，选择代金券支付。  **取值范围**： - true：自动支付。 - false：不自动支付。  **默认取值**：不涉及
         :type auto_pay: bool
-        :param change_mode: 规格变更类型： immediate：即时变更，规格变更立即生效。（默认） delay：续费变更，当前周期结束后变更为目标规格。
+        :param change_mode: **参数解释**：规格变更类型。  **约束限制**：不涉及  **取值范围**： - immediate：即时变更，规格变更立即生效。 - delay：续费变更，当前周期结束后变更为目标规格。  **默认取值**：不涉及
         :type change_mode: str
-        :param period_num: 订购周期数（默认1），取值会随运营策略变化。（仅在change_mode为delay时生效） period_type为month时，为[1,9]， period_type为year时，为[1,3]
+        :param period_num: **参数解释**：订购周期数，取值会随运营策略变化。  **约束限制**：仅在change_mode为delay时生效  **取值范围**： - period_type为month时，为[1,9] - period_type为year时，为[1,3]  **默认取值**：不涉及
         :type period_num: int
-        :param period_type: 订购周期类型，当前支持包月和包年： （仅在change_mode为delay时生效） month：月（默认）； year：年；
+        :param period_type: **参数解释**：订购周期类型。  **约束限制**：仅在change_mode为delay时生效。  **取值范围**： - month：月 - year：年  **默认取值**：不涉及
         :type period_type: str
         """
         
@@ -66,7 +66,7 @@ class PrepaidUpdateOption:
     def auto_pay(self):
         r"""Gets the auto_pay of this PrepaidUpdateOption.
 
-        下单订购后，是否自动从客户的账户中支付； true：自动支付； false：不自动支付（默认）。 自动支付时，只能使用账户的现金支付；如果要使用代金券，请选择不自动支付，然后在用户费用中心，选择代金券支付。
+        **参数解释**：下单订购后，是否自动从客户的账户中支付。  **约束限制**：自动支付时，只能使用账户的现金支付；如果要使用代金券，请选择不自动支付，然后在用户费用中心，选择代金券支付。  **取值范围**： - true：自动支付。 - false：不自动支付。  **默认取值**：不涉及
 
         :return: The auto_pay of this PrepaidUpdateOption.
         :rtype: bool
@@ -77,7 +77,7 @@ class PrepaidUpdateOption:
     def auto_pay(self, auto_pay):
         r"""Sets the auto_pay of this PrepaidUpdateOption.
 
-        下单订购后，是否自动从客户的账户中支付； true：自动支付； false：不自动支付（默认）。 自动支付时，只能使用账户的现金支付；如果要使用代金券，请选择不自动支付，然后在用户费用中心，选择代金券支付。
+        **参数解释**：下单订购后，是否自动从客户的账户中支付。  **约束限制**：自动支付时，只能使用账户的现金支付；如果要使用代金券，请选择不自动支付，然后在用户费用中心，选择代金券支付。  **取值范围**： - true：自动支付。 - false：不自动支付。  **默认取值**：不涉及
 
         :param auto_pay: The auto_pay of this PrepaidUpdateOption.
         :type auto_pay: bool
@@ -88,7 +88,7 @@ class PrepaidUpdateOption:
     def change_mode(self):
         r"""Gets the change_mode of this PrepaidUpdateOption.
 
-        规格变更类型： immediate：即时变更，规格变更立即生效。（默认） delay：续费变更，当前周期结束后变更为目标规格。
+        **参数解释**：规格变更类型。  **约束限制**：不涉及  **取值范围**： - immediate：即时变更，规格变更立即生效。 - delay：续费变更，当前周期结束后变更为目标规格。  **默认取值**：不涉及
 
         :return: The change_mode of this PrepaidUpdateOption.
         :rtype: str
@@ -99,7 +99,7 @@ class PrepaidUpdateOption:
     def change_mode(self, change_mode):
         r"""Sets the change_mode of this PrepaidUpdateOption.
 
-        规格变更类型： immediate：即时变更，规格变更立即生效。（默认） delay：续费变更，当前周期结束后变更为目标规格。
+        **参数解释**：规格变更类型。  **约束限制**：不涉及  **取值范围**： - immediate：即时变更，规格变更立即生效。 - delay：续费变更，当前周期结束后变更为目标规格。  **默认取值**：不涉及
 
         :param change_mode: The change_mode of this PrepaidUpdateOption.
         :type change_mode: str
@@ -110,7 +110,7 @@ class PrepaidUpdateOption:
     def period_num(self):
         r"""Gets the period_num of this PrepaidUpdateOption.
 
-        订购周期数（默认1），取值会随运营策略变化。（仅在change_mode为delay时生效） period_type为month时，为[1,9]， period_type为year时，为[1,3]
+        **参数解释**：订购周期数，取值会随运营策略变化。  **约束限制**：仅在change_mode为delay时生效  **取值范围**： - period_type为month时，为[1,9] - period_type为year时，为[1,3]  **默认取值**：不涉及
 
         :return: The period_num of this PrepaidUpdateOption.
         :rtype: int
@@ -121,7 +121,7 @@ class PrepaidUpdateOption:
     def period_num(self, period_num):
         r"""Sets the period_num of this PrepaidUpdateOption.
 
-        订购周期数（默认1），取值会随运营策略变化。（仅在change_mode为delay时生效） period_type为month时，为[1,9]， period_type为year时，为[1,3]
+        **参数解释**：订购周期数，取值会随运营策略变化。  **约束限制**：仅在change_mode为delay时生效  **取值范围**： - period_type为month时，为[1,9] - period_type为year时，为[1,3]  **默认取值**：不涉及
 
         :param period_num: The period_num of this PrepaidUpdateOption.
         :type period_num: int
@@ -132,7 +132,7 @@ class PrepaidUpdateOption:
     def period_type(self):
         r"""Gets the period_type of this PrepaidUpdateOption.
 
-        订购周期类型，当前支持包月和包年： （仅在change_mode为delay时生效） month：月（默认）； year：年；
+        **参数解释**：订购周期类型。  **约束限制**：仅在change_mode为delay时生效。  **取值范围**： - month：月 - year：年  **默认取值**：不涉及
 
         :return: The period_type of this PrepaidUpdateOption.
         :rtype: str
@@ -143,7 +143,7 @@ class PrepaidUpdateOption:
     def period_type(self, period_type):
         r"""Sets the period_type of this PrepaidUpdateOption.
 
-        订购周期类型，当前支持包月和包年： （仅在change_mode为delay时生效） month：月（默认）； year：年；
+        **参数解释**：订购周期类型。  **约束限制**：仅在change_mode为delay时生效。  **取值范围**： - month：月 - year：年  **默认取值**：不涉及
 
         :param period_type: The period_type of this PrepaidUpdateOption.
         :type period_type: str

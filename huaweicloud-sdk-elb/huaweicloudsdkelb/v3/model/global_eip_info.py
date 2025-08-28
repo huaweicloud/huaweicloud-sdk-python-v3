@@ -33,11 +33,11 @@ class GlobalEipInfo:
 
         The model defined in huaweicloud sdk
 
-        :param global_eip_id: 参数解释：global eip的id
+        :param global_eip_id: **参数解释**：global eip的ID。  **取值范围**：不涉及
         :type global_eip_id: str
-        :param global_eip_address: 参数解释：global eip的ip地址
+        :param global_eip_address: **参数解释**：global eip的ip地址。  **取值范围**：不涉及
         :type global_eip_address: str
-        :param ip_version: 参数解释：IP版本信息。   取值范围： - 4，表示IPv4 - 6，表示IPv6   [不支持IPv6，请勿设置为6。](tag:dt)
+        :param ip_version: **参数解释**：IP版本信息。   **取值范围**： - 4，表示IPv4。 - 6，表示IPv6。  [不支持IPv6，请勿设置为6。](tag:dt)
         :type ip_version: int
         """
         
@@ -59,7 +59,7 @@ class GlobalEipInfo:
     def global_eip_id(self):
         r"""Gets the global_eip_id of this GlobalEipInfo.
 
-        参数解释：global eip的id
+        **参数解释**：global eip的ID。  **取值范围**：不涉及
 
         :return: The global_eip_id of this GlobalEipInfo.
         :rtype: str
@@ -70,7 +70,7 @@ class GlobalEipInfo:
     def global_eip_id(self, global_eip_id):
         r"""Sets the global_eip_id of this GlobalEipInfo.
 
-        参数解释：global eip的id
+        **参数解释**：global eip的ID。  **取值范围**：不涉及
 
         :param global_eip_id: The global_eip_id of this GlobalEipInfo.
         :type global_eip_id: str
@@ -81,7 +81,7 @@ class GlobalEipInfo:
     def global_eip_address(self):
         r"""Gets the global_eip_address of this GlobalEipInfo.
 
-        参数解释：global eip的ip地址
+        **参数解释**：global eip的ip地址。  **取值范围**：不涉及
 
         :return: The global_eip_address of this GlobalEipInfo.
         :rtype: str
@@ -92,7 +92,7 @@ class GlobalEipInfo:
     def global_eip_address(self, global_eip_address):
         r"""Sets the global_eip_address of this GlobalEipInfo.
 
-        参数解释：global eip的ip地址
+        **参数解释**：global eip的ip地址。  **取值范围**：不涉及
 
         :param global_eip_address: The global_eip_address of this GlobalEipInfo.
         :type global_eip_address: str
@@ -103,7 +103,7 @@ class GlobalEipInfo:
     def ip_version(self):
         r"""Gets the ip_version of this GlobalEipInfo.
 
-        参数解释：IP版本信息。   取值范围： - 4，表示IPv4 - 6，表示IPv6   [不支持IPv6，请勿设置为6。](tag:dt)
+        **参数解释**：IP版本信息。   **取值范围**： - 4，表示IPv4。 - 6，表示IPv6。  [不支持IPv6，请勿设置为6。](tag:dt)
 
         :return: The ip_version of this GlobalEipInfo.
         :rtype: int
@@ -114,7 +114,7 @@ class GlobalEipInfo:
     def ip_version(self, ip_version):
         r"""Sets the ip_version of this GlobalEipInfo.
 
-        参数解释：IP版本信息。   取值范围： - 4，表示IPv4 - 6，表示IPv6   [不支持IPv6，请勿设置为6。](tag:dt)
+        **参数解释**：IP版本信息。   **取值范围**： - 4，表示IPv4。 - 6，表示IPv6。  [不支持IPv6，请勿设置为6。](tag:dt)
 
         :param ip_version: The ip_version of this GlobalEipInfo.
         :type ip_version: int

@@ -43,17 +43,17 @@ class UpdateRedirectUrlConfig:
 
         The model defined in huaweicloud sdk
 
-        :param protocol: 参数解释：重定向的协议。  取值范围： - HTTP - HTTPS - ${protocol}，表示继承原值（即与被转发请求保持一致）。
+        :param protocol: **参数解释**：重定向的协议。  **约束限制**：不涉及  **取值范围**： - HTTP - HTTPS - ${protocol}，表示继承原值（即与被转发请求保持一致）。  **默认取值**：不涉及
         :type protocol: str
-        :param host: 参数解释：重定向的主机名。  取值范围：字符串只能包含英文字母、数字、“-”、“.”，必须以字母、数字开头。  默认取值：${host}，表示继承原值（即与被转发请求保持一致）。
+        :param host: **参数解释**：重定向的主机名。  **约束限制**：不涉及  **取值范围**：字符串只能包含英文字母、数字、“-”、“.”，必须以字母、数字开头。  **默认取值**：${host}，表示继承原值（即与被转发请求保持一致）。
         :type host: str
-        :param port: 参数解释：重定向到的端口。  默认取值：${port}表示继承原值（即与被转发请求保持一致）。
+        :param port: **参数解释**：重定向到的端口。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：${port}表示继承原值（即与被转发请求保持一致）。
         :type port: str
-        :param path: 参数解释：重定向的路径。  取值范围：只能包含英文字母、数字、_~&#39;;@^-%#&amp;$.\\*+?,&#x3D;!:|\\/()\\[\\]{}，且必须以\&quot;/\&quot;开头。  默认取值：${path}，表示继承原值（即与被转发请求保持一致）。
+        :param path: **参数解释**：重定向的路径。  **约束限制**：不涉及  **取值范围**：只能包含英文字母、数字、_~&#39;;@^-%#&amp;$.\\*+?,&#x3D;!:|\\/()\\[\\]{}，且必须以\&quot;/\&quot;开头。  **默认取值**：${path}，表示继承原值（即与被转发请求保持一致）。
         :type path: str
-        :param query: 参数解释：重定向的查询字符串。举例如下：  将query设置为：${query}&amp;name&#x3D;my_name，则在转发符合条件的URL （如https://www.example.com:8080/elb?type&#x3D;loadbalancer）时，将会重定向到 https://www.example.com:8080/elb?type&#x3D;loadbalancer&amp;name&#x3D;my_name。在例子中${query}表示type&#x3D;loadbalancer。  取值范围：只能包含英文字母、数字和特殊字符：!$&amp;&#39;()\\*+,-./:;&#x3D;?@^_&#x60;。字母区分大小写。其中$1，$2会匹配请求url通配符星号（\\*）  默认取值：${query}表示继承原值（即与被转发请求保持一致）
+        :param query: **参数解释**：重定向的查询字符串。举例如下： 将query设置为：${query}&amp;name&#x3D;my_name，则在转发符合条件的URL（如https://www.example.com:8080/elb?type&#x3D;loadbalancer）时，将会重定向到https://www.example.com:8080/elb?type&#x3D;loadbalancer&amp;name&#x3D;my_name。在例子中${query}表示type&#x3D;loadbalancer。  **约束限制**：不涉及  **取值范围**：只能包含英文字母、数字和特殊字符：!$&amp;&#39;()\\*+,-./:;&#x3D;?@^_&#x60;。字母区分大小写。其中$1，$2会匹配请求url通配符星号（\\*）  **默认取值**：${query}表示继承原值（即与被转发请求保持一致）
         :type query: str
-        :param status_code: 参数解释：重定向后的返回码。  取值范围： - 301 - 302 - 303 - 307 - 308
+        :param status_code: **参数解释**：重定向后的返回码。  **约束限制**：不涉及  **取值范围**： - 301 - 302 - 303 - 307 - 308  **默认取值**：不涉及
         :type status_code: str
         :param insert_headers_config: 
         :type insert_headers_config: :class:`huaweicloudsdkelb.v3.UpdateInsertHeadersConfig`
@@ -94,7 +94,7 @@ class UpdateRedirectUrlConfig:
     def protocol(self):
         r"""Gets the protocol of this UpdateRedirectUrlConfig.
 
-        参数解释：重定向的协议。  取值范围： - HTTP - HTTPS - ${protocol}，表示继承原值（即与被转发请求保持一致）。
+        **参数解释**：重定向的协议。  **约束限制**：不涉及  **取值范围**： - HTTP - HTTPS - ${protocol}，表示继承原值（即与被转发请求保持一致）。  **默认取值**：不涉及
 
         :return: The protocol of this UpdateRedirectUrlConfig.
         :rtype: str
@@ -105,7 +105,7 @@ class UpdateRedirectUrlConfig:
     def protocol(self, protocol):
         r"""Sets the protocol of this UpdateRedirectUrlConfig.
 
-        参数解释：重定向的协议。  取值范围： - HTTP - HTTPS - ${protocol}，表示继承原值（即与被转发请求保持一致）。
+        **参数解释**：重定向的协议。  **约束限制**：不涉及  **取值范围**： - HTTP - HTTPS - ${protocol}，表示继承原值（即与被转发请求保持一致）。  **默认取值**：不涉及
 
         :param protocol: The protocol of this UpdateRedirectUrlConfig.
         :type protocol: str
@@ -116,7 +116,7 @@ class UpdateRedirectUrlConfig:
     def host(self):
         r"""Gets the host of this UpdateRedirectUrlConfig.
 
-        参数解释：重定向的主机名。  取值范围：字符串只能包含英文字母、数字、“-”、“.”，必须以字母、数字开头。  默认取值：${host}，表示继承原值（即与被转发请求保持一致）。
+        **参数解释**：重定向的主机名。  **约束限制**：不涉及  **取值范围**：字符串只能包含英文字母、数字、“-”、“.”，必须以字母、数字开头。  **默认取值**：${host}，表示继承原值（即与被转发请求保持一致）。
 
         :return: The host of this UpdateRedirectUrlConfig.
         :rtype: str
@@ -127,7 +127,7 @@ class UpdateRedirectUrlConfig:
     def host(self, host):
         r"""Sets the host of this UpdateRedirectUrlConfig.
 
-        参数解释：重定向的主机名。  取值范围：字符串只能包含英文字母、数字、“-”、“.”，必须以字母、数字开头。  默认取值：${host}，表示继承原值（即与被转发请求保持一致）。
+        **参数解释**：重定向的主机名。  **约束限制**：不涉及  **取值范围**：字符串只能包含英文字母、数字、“-”、“.”，必须以字母、数字开头。  **默认取值**：${host}，表示继承原值（即与被转发请求保持一致）。
 
         :param host: The host of this UpdateRedirectUrlConfig.
         :type host: str
@@ -138,7 +138,7 @@ class UpdateRedirectUrlConfig:
     def port(self):
         r"""Gets the port of this UpdateRedirectUrlConfig.
 
-        参数解释：重定向到的端口。  默认取值：${port}表示继承原值（即与被转发请求保持一致）。
+        **参数解释**：重定向到的端口。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：${port}表示继承原值（即与被转发请求保持一致）。
 
         :return: The port of this UpdateRedirectUrlConfig.
         :rtype: str
@@ -149,7 +149,7 @@ class UpdateRedirectUrlConfig:
     def port(self, port):
         r"""Sets the port of this UpdateRedirectUrlConfig.
 
-        参数解释：重定向到的端口。  默认取值：${port}表示继承原值（即与被转发请求保持一致）。
+        **参数解释**：重定向到的端口。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：${port}表示继承原值（即与被转发请求保持一致）。
 
         :param port: The port of this UpdateRedirectUrlConfig.
         :type port: str
@@ -160,7 +160,7 @@ class UpdateRedirectUrlConfig:
     def path(self):
         r"""Gets the path of this UpdateRedirectUrlConfig.
 
-        参数解释：重定向的路径。  取值范围：只能包含英文字母、数字、_~';@^-%#&$.\\*+?,=!:|\\/()\\[\\]{}，且必须以\"/\"开头。  默认取值：${path}，表示继承原值（即与被转发请求保持一致）。
+        **参数解释**：重定向的路径。  **约束限制**：不涉及  **取值范围**：只能包含英文字母、数字、_~';@^-%#&$.\\*+?,=!:|\\/()\\[\\]{}，且必须以\"/\"开头。  **默认取值**：${path}，表示继承原值（即与被转发请求保持一致）。
 
         :return: The path of this UpdateRedirectUrlConfig.
         :rtype: str
@@ -171,7 +171,7 @@ class UpdateRedirectUrlConfig:
     def path(self, path):
         r"""Sets the path of this UpdateRedirectUrlConfig.
 
-        参数解释：重定向的路径。  取值范围：只能包含英文字母、数字、_~';@^-%#&$.\\*+?,=!:|\\/()\\[\\]{}，且必须以\"/\"开头。  默认取值：${path}，表示继承原值（即与被转发请求保持一致）。
+        **参数解释**：重定向的路径。  **约束限制**：不涉及  **取值范围**：只能包含英文字母、数字、_~';@^-%#&$.\\*+?,=!:|\\/()\\[\\]{}，且必须以\"/\"开头。  **默认取值**：${path}，表示继承原值（即与被转发请求保持一致）。
 
         :param path: The path of this UpdateRedirectUrlConfig.
         :type path: str
@@ -182,7 +182,7 @@ class UpdateRedirectUrlConfig:
     def query(self):
         r"""Gets the query of this UpdateRedirectUrlConfig.
 
-        参数解释：重定向的查询字符串。举例如下：  将query设置为：${query}&name=my_name，则在转发符合条件的URL （如https://www.example.com:8080/elb?type=loadbalancer）时，将会重定向到 https://www.example.com:8080/elb?type=loadbalancer&name=my_name。在例子中${query}表示type=loadbalancer。  取值范围：只能包含英文字母、数字和特殊字符：!$&'()\\*+,-./:;=?@^_`。字母区分大小写。其中$1，$2会匹配请求url通配符星号（\\*）  默认取值：${query}表示继承原值（即与被转发请求保持一致）
+        **参数解释**：重定向的查询字符串。举例如下： 将query设置为：${query}&name=my_name，则在转发符合条件的URL（如https://www.example.com:8080/elb?type=loadbalancer）时，将会重定向到https://www.example.com:8080/elb?type=loadbalancer&name=my_name。在例子中${query}表示type=loadbalancer。  **约束限制**：不涉及  **取值范围**：只能包含英文字母、数字和特殊字符：!$&'()\\*+,-./:;=?@^_`。字母区分大小写。其中$1，$2会匹配请求url通配符星号（\\*）  **默认取值**：${query}表示继承原值（即与被转发请求保持一致）
 
         :return: The query of this UpdateRedirectUrlConfig.
         :rtype: str
@@ -193,7 +193,7 @@ class UpdateRedirectUrlConfig:
     def query(self, query):
         r"""Sets the query of this UpdateRedirectUrlConfig.
 
-        参数解释：重定向的查询字符串。举例如下：  将query设置为：${query}&name=my_name，则在转发符合条件的URL （如https://www.example.com:8080/elb?type=loadbalancer）时，将会重定向到 https://www.example.com:8080/elb?type=loadbalancer&name=my_name。在例子中${query}表示type=loadbalancer。  取值范围：只能包含英文字母、数字和特殊字符：!$&'()\\*+,-./:;=?@^_`。字母区分大小写。其中$1，$2会匹配请求url通配符星号（\\*）  默认取值：${query}表示继承原值（即与被转发请求保持一致）
+        **参数解释**：重定向的查询字符串。举例如下： 将query设置为：${query}&name=my_name，则在转发符合条件的URL（如https://www.example.com:8080/elb?type=loadbalancer）时，将会重定向到https://www.example.com:8080/elb?type=loadbalancer&name=my_name。在例子中${query}表示type=loadbalancer。  **约束限制**：不涉及  **取值范围**：只能包含英文字母、数字和特殊字符：!$&'()\\*+,-./:;=?@^_`。字母区分大小写。其中$1，$2会匹配请求url通配符星号（\\*）  **默认取值**：${query}表示继承原值（即与被转发请求保持一致）
 
         :param query: The query of this UpdateRedirectUrlConfig.
         :type query: str
@@ -204,7 +204,7 @@ class UpdateRedirectUrlConfig:
     def status_code(self):
         r"""Gets the status_code of this UpdateRedirectUrlConfig.
 
-        参数解释：重定向后的返回码。  取值范围： - 301 - 302 - 303 - 307 - 308
+        **参数解释**：重定向后的返回码。  **约束限制**：不涉及  **取值范围**： - 301 - 302 - 303 - 307 - 308  **默认取值**：不涉及
 
         :return: The status_code of this UpdateRedirectUrlConfig.
         :rtype: str
@@ -215,7 +215,7 @@ class UpdateRedirectUrlConfig:
     def status_code(self, status_code):
         r"""Sets the status_code of this UpdateRedirectUrlConfig.
 
-        参数解释：重定向后的返回码。  取值范围： - 301 - 302 - 303 - 307 - 308
+        **参数解释**：重定向后的返回码。  **约束限制**：不涉及  **取值范围**： - 301 - 302 - 303 - 307 - 308  **默认取值**：不涉及
 
         :param status_code: The status_code of this UpdateRedirectUrlConfig.
         :type status_code: str

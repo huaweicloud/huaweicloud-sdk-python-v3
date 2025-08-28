@@ -26,7 +26,11 @@ class CustomerAccountChangeRecord:
         'revenue_expense_type': 'str',
         'bill_cycle': 'str',
         'payment_channel_id': 'str',
-        'payment_channel_no': 'str'
+        'payment_channel_no': 'str',
+        'consume_time': 'str',
+        'account_name': 'str',
+        'cloud_service_type_name': 'str',
+        'resource_type_name': 'str'
     }
 
     attribute_map = {
@@ -39,10 +43,14 @@ class CustomerAccountChangeRecord:
         'revenue_expense_type': 'revenue_expense_type',
         'bill_cycle': 'bill_cycle',
         'payment_channel_id': 'payment_channel_id',
-        'payment_channel_no': 'payment_channel_no'
+        'payment_channel_no': 'payment_channel_no',
+        'consume_time': 'consume_time',
+        'account_name': 'account_name',
+        'cloud_service_type_name': 'cloud_service_type_name',
+        'resource_type_name': 'resource_type_name'
     }
 
-    def __init__(self, account_change_id=None, trade_detail_type=None, trade_time=None, trade_id=None, change_amount=None, balance_after_change=None, revenue_expense_type=None, bill_cycle=None, payment_channel_id=None, payment_channel_no=None):
+    def __init__(self, account_change_id=None, trade_detail_type=None, trade_time=None, trade_id=None, change_amount=None, balance_after_change=None, revenue_expense_type=None, bill_cycle=None, payment_channel_id=None, payment_channel_no=None, consume_time=None, account_name=None, cloud_service_type_name=None, resource_type_name=None):
         r"""CustomerAccountChangeRecord
 
         The model defined in huaweicloud sdk
@@ -67,6 +75,14 @@ class CustomerAccountChangeRecord:
         :type payment_channel_id: str
         :param payment_channel_no: |参数名称：交易渠道流水号| |参数约束及描述：交易渠道流水号|
         :type payment_channel_no: str
+        :param consume_time: |参数名称：消费时间| |参数约束及描述：消费时间，UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ。包年/包月：与账单交易时间一致（交易类型为调帐时为账单的计费开始时间和结束时间），按需/分期：为账单的计费开始时间和结束时间。|
+        :type consume_time: str
+        :param account_name: |参数名称：账号名称| |参数约束及描述：账号名称，范围限制：0-128|
+        :type account_name: str
+        :param cloud_service_type_name: |参数名称：云服务类型名称| |参数约束及描述：产品的云服务名称，范围限制：0-200|
+        :type cloud_service_type_name: str
+        :param resource_type_name: |参数名称：资源类型名称，该字段为预留字段。| |参数约束及描述：产品的资源类型名称，范围限制：0-200|
+        :type resource_type_name: str
         """
         
         
@@ -81,6 +97,10 @@ class CustomerAccountChangeRecord:
         self._bill_cycle = None
         self._payment_channel_id = None
         self._payment_channel_no = None
+        self._consume_time = None
+        self._account_name = None
+        self._cloud_service_type_name = None
+        self._resource_type_name = None
         self.discriminator = None
 
         if account_change_id is not None:
@@ -103,6 +123,14 @@ class CustomerAccountChangeRecord:
             self.payment_channel_id = payment_channel_id
         if payment_channel_no is not None:
             self.payment_channel_no = payment_channel_no
+        if consume_time is not None:
+            self.consume_time = consume_time
+        if account_name is not None:
+            self.account_name = account_name
+        if cloud_service_type_name is not None:
+            self.cloud_service_type_name = cloud_service_type_name
+        if resource_type_name is not None:
+            self.resource_type_name = resource_type_name
 
     @property
     def account_change_id(self):
@@ -323,6 +351,94 @@ class CustomerAccountChangeRecord:
         :type payment_channel_no: str
         """
         self._payment_channel_no = payment_channel_no
+
+    @property
+    def consume_time(self):
+        r"""Gets the consume_time of this CustomerAccountChangeRecord.
+
+        |参数名称：消费时间| |参数约束及描述：消费时间，UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ。包年/包月：与账单交易时间一致（交易类型为调帐时为账单的计费开始时间和结束时间），按需/分期：为账单的计费开始时间和结束时间。|
+
+        :return: The consume_time of this CustomerAccountChangeRecord.
+        :rtype: str
+        """
+        return self._consume_time
+
+    @consume_time.setter
+    def consume_time(self, consume_time):
+        r"""Sets the consume_time of this CustomerAccountChangeRecord.
+
+        |参数名称：消费时间| |参数约束及描述：消费时间，UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ。包年/包月：与账单交易时间一致（交易类型为调帐时为账单的计费开始时间和结束时间），按需/分期：为账单的计费开始时间和结束时间。|
+
+        :param consume_time: The consume_time of this CustomerAccountChangeRecord.
+        :type consume_time: str
+        """
+        self._consume_time = consume_time
+
+    @property
+    def account_name(self):
+        r"""Gets the account_name of this CustomerAccountChangeRecord.
+
+        |参数名称：账号名称| |参数约束及描述：账号名称，范围限制：0-128|
+
+        :return: The account_name of this CustomerAccountChangeRecord.
+        :rtype: str
+        """
+        return self._account_name
+
+    @account_name.setter
+    def account_name(self, account_name):
+        r"""Sets the account_name of this CustomerAccountChangeRecord.
+
+        |参数名称：账号名称| |参数约束及描述：账号名称，范围限制：0-128|
+
+        :param account_name: The account_name of this CustomerAccountChangeRecord.
+        :type account_name: str
+        """
+        self._account_name = account_name
+
+    @property
+    def cloud_service_type_name(self):
+        r"""Gets the cloud_service_type_name of this CustomerAccountChangeRecord.
+
+        |参数名称：云服务类型名称| |参数约束及描述：产品的云服务名称，范围限制：0-200|
+
+        :return: The cloud_service_type_name of this CustomerAccountChangeRecord.
+        :rtype: str
+        """
+        return self._cloud_service_type_name
+
+    @cloud_service_type_name.setter
+    def cloud_service_type_name(self, cloud_service_type_name):
+        r"""Sets the cloud_service_type_name of this CustomerAccountChangeRecord.
+
+        |参数名称：云服务类型名称| |参数约束及描述：产品的云服务名称，范围限制：0-200|
+
+        :param cloud_service_type_name: The cloud_service_type_name of this CustomerAccountChangeRecord.
+        :type cloud_service_type_name: str
+        """
+        self._cloud_service_type_name = cloud_service_type_name
+
+    @property
+    def resource_type_name(self):
+        r"""Gets the resource_type_name of this CustomerAccountChangeRecord.
+
+        |参数名称：资源类型名称，该字段为预留字段。| |参数约束及描述：产品的资源类型名称，范围限制：0-200|
+
+        :return: The resource_type_name of this CustomerAccountChangeRecord.
+        :rtype: str
+        """
+        return self._resource_type_name
+
+    @resource_type_name.setter
+    def resource_type_name(self, resource_type_name):
+        r"""Sets the resource_type_name of this CustomerAccountChangeRecord.
+
+        |参数名称：资源类型名称，该字段为预留字段。| |参数约束及描述：产品的资源类型名称，范围限制：0-200|
+
+        :param resource_type_name: The resource_type_name of this CustomerAccountChangeRecord.
+        :type resource_type_name: str
+        """
+        self._resource_type_name = resource_type_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -31,9 +31,9 @@ class UpdateGroupReqBody:
 
         The model defined in huaweicloud sdk
 
-        :param new_group_name: 用户组名，可包含中文、英文、数字、空格、\&quot;_\&quot;、\&quot;-\&quot;、\&quot;{\&quot;和\&quot;}\&quot;的字符串。
+        :param new_group_name: 用户组名，长度为1到128个字符，可包含中文、英文、数字、空格、\&quot;_\&quot;、\&quot;-\&quot;、\&quot;{\&quot;和\&quot;}\&quot;的字符串。
         :type new_group_name: str
-        :param new_group_description: 用户组描述信息，不能包含特定字符\&quot;@\&quot;、\&quot;#\&quot;、\&quot;%\&quot;、\&quot;&amp;\&quot;、\&quot;&lt;\&quot;、\&quot;&gt;\&quot;、\&quot;\\\\\&quot;、\&quot;$\&quot;、\&quot;^\&quot;和\&quot;*\&quot;的字符串。
+        :param new_group_description: 用户组描述信息，长度为0到255字符，不能包含特定字符\&quot;@\&quot;、\&quot;#\&quot;、\&quot;%\&quot;、\&quot;&amp;\&quot;、\&quot;&lt;\&quot;、\&quot;&gt;\&quot;、\&quot;\\\\\&quot;、\&quot;$\&quot;、\&quot;^\&quot;和\&quot;*\&quot;的字符串。
         :type new_group_description: str
         """
         
@@ -52,7 +52,7 @@ class UpdateGroupReqBody:
     def new_group_name(self):
         r"""Gets the new_group_name of this UpdateGroupReqBody.
 
-        用户组名，可包含中文、英文、数字、空格、\"_\"、\"-\"、\"{\"和\"}\"的字符串。
+        用户组名，长度为1到128个字符，可包含中文、英文、数字、空格、\"_\"、\"-\"、\"{\"和\"}\"的字符串。
 
         :return: The new_group_name of this UpdateGroupReqBody.
         :rtype: str
@@ -63,7 +63,7 @@ class UpdateGroupReqBody:
     def new_group_name(self, new_group_name):
         r"""Sets the new_group_name of this UpdateGroupReqBody.
 
-        用户组名，可包含中文、英文、数字、空格、\"_\"、\"-\"、\"{\"和\"}\"的字符串。
+        用户组名，长度为1到128个字符，可包含中文、英文、数字、空格、\"_\"、\"-\"、\"{\"和\"}\"的字符串。
 
         :param new_group_name: The new_group_name of this UpdateGroupReqBody.
         :type new_group_name: str
@@ -74,7 +74,7 @@ class UpdateGroupReqBody:
     def new_group_description(self):
         r"""Gets the new_group_description of this UpdateGroupReqBody.
 
-        用户组描述信息，不能包含特定字符\"@\"、\"#\"、\"%\"、\"&\"、\"<\"、\">\"、\"\\\\\"、\"$\"、\"^\"和\"*\"的字符串。
+        用户组描述信息，长度为0到255字符，不能包含特定字符\"@\"、\"#\"、\"%\"、\"&\"、\"<\"、\">\"、\"\\\\\"、\"$\"、\"^\"和\"*\"的字符串。
 
         :return: The new_group_description of this UpdateGroupReqBody.
         :rtype: str
@@ -85,7 +85,7 @@ class UpdateGroupReqBody:
     def new_group_description(self, new_group_description):
         r"""Sets the new_group_description of this UpdateGroupReqBody.
 
-        用户组描述信息，不能包含特定字符\"@\"、\"#\"、\"%\"、\"&\"、\"<\"、\">\"、\"\\\\\"、\"$\"、\"^\"和\"*\"的字符串。
+        用户组描述信息，长度为0到255字符，不能包含特定字符\"@\"、\"#\"、\"%\"、\"&\"、\"<\"、\">\"、\"\\\\\"、\"$\"、\"^\"和\"*\"的字符串。
 
         :param new_group_description: The new_group_description of this UpdateGroupReqBody.
         :type new_group_description: str

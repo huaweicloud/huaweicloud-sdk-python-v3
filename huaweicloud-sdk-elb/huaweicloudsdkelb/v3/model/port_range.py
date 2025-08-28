@@ -31,9 +31,9 @@ class PortRange:
 
         The model defined in huaweicloud sdk
 
-        :param start_port: 起始端口
+        :param start_port: **参数解释**：起始端口。  **约束限制**：不涉及  **取值范围**：1-65535  **默认取值：不涉及
         :type start_port: int
-        :param end_port: 结束端口，需大于等于起始端口
+        :param end_port: **参数解释**：结束端口，需大于等于起始端口  **约束限制**：不涉及  **取值范围**：1-65535  **默认取值：不涉及
         :type end_port: int
         """
         
@@ -52,7 +52,7 @@ class PortRange:
     def start_port(self):
         r"""Gets the start_port of this PortRange.
 
-        起始端口
+        **参数解释**：起始端口。  **约束限制**：不涉及  **取值范围**：1-65535  **默认取值：不涉及
 
         :return: The start_port of this PortRange.
         :rtype: int
@@ -63,7 +63,7 @@ class PortRange:
     def start_port(self, start_port):
         r"""Sets the start_port of this PortRange.
 
-        起始端口
+        **参数解释**：起始端口。  **约束限制**：不涉及  **取值范围**：1-65535  **默认取值：不涉及
 
         :param start_port: The start_port of this PortRange.
         :type start_port: int
@@ -74,7 +74,7 @@ class PortRange:
     def end_port(self):
         r"""Gets the end_port of this PortRange.
 
-        结束端口，需大于等于起始端口
+        **参数解释**：结束端口，需大于等于起始端口  **约束限制**：不涉及  **取值范围**：1-65535  **默认取值：不涉及
 
         :return: The end_port of this PortRange.
         :rtype: int
@@ -85,7 +85,7 @@ class PortRange:
     def end_port(self, end_port):
         r"""Sets the end_port of this PortRange.
 
-        结束端口，需大于等于起始端口
+        **参数解释**：结束端口，需大于等于起始端口  **约束限制**：不涉及  **取值范围**：1-65535  **默认取值：不涉及
 
         :param end_port: The end_port of this PortRange.
         :type end_port: int

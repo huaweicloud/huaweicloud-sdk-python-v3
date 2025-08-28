@@ -31,7 +31,7 @@ class UpdateLogtankRequest:
 
         The model defined in huaweicloud sdk
 
-        :param logtank_id: 云日志ID。
+        :param logtank_id: **参数解释**：云日志ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type logtank_id: str
         :param body: Body of the UpdateLogtankRequest
         :type body: :class:`huaweicloudsdkelb.v3.UpdateLogtankRequestBody`
@@ -51,7 +51,7 @@ class UpdateLogtankRequest:
     def logtank_id(self):
         r"""Gets the logtank_id of this UpdateLogtankRequest.
 
-        云日志ID。
+        **参数解释**：云日志ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The logtank_id of this UpdateLogtankRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class UpdateLogtankRequest:
     def logtank_id(self, logtank_id):
         r"""Sets the logtank_id of this UpdateLogtankRequest.
 
-        云日志ID。
+        **参数解释**：云日志ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param logtank_id: The logtank_id of this UpdateLogtankRequest.
         :type logtank_id: str

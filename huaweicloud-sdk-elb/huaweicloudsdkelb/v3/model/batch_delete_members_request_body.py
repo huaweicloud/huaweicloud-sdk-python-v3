@@ -29,7 +29,7 @@ class BatchDeleteMembersRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param members: 批量删除后端服务器请求body。
+        :param members: **参数解释**：批量删除后端服务器请求body。  **约束限制**：不涉及
         :type members: list[:class:`huaweicloudsdkelb.v3.BatchDeleteMembersOption`]
         """
         
@@ -44,7 +44,7 @@ class BatchDeleteMembersRequestBody:
     def members(self):
         r"""Gets the members of this BatchDeleteMembersRequestBody.
 
-        批量删除后端服务器请求body。
+        **参数解释**：批量删除后端服务器请求body。  **约束限制**：不涉及
 
         :return: The members of this BatchDeleteMembersRequestBody.
         :rtype: list[:class:`huaweicloudsdkelb.v3.BatchDeleteMembersOption`]
@@ -55,7 +55,7 @@ class BatchDeleteMembersRequestBody:
     def members(self, members):
         r"""Sets the members of this BatchDeleteMembersRequestBody.
 
-        批量删除后端服务器请求body。
+        **参数解释**：批量删除后端服务器请求body。  **约束限制**：不涉及
 
         :param members: The members of this BatchDeleteMembersRequestBody.
         :type members: list[:class:`huaweicloudsdkelb.v3.BatchDeleteMembersOption`]

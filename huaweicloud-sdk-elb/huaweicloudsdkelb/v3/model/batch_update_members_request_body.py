@@ -29,7 +29,7 @@ class BatchUpdateMembersRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param members: 后端服务器对象。
+        :param members: **参数解释**：后端服务器对象。  **约束限制**：不涉及
         :type members: list[:class:`huaweicloudsdkelb.v3.BatchUpdateMembersOption`]
         """
         
@@ -44,7 +44,7 @@ class BatchUpdateMembersRequestBody:
     def members(self):
         r"""Gets the members of this BatchUpdateMembersRequestBody.
 
-        后端服务器对象。
+        **参数解释**：后端服务器对象。  **约束限制**：不涉及
 
         :return: The members of this BatchUpdateMembersRequestBody.
         :rtype: list[:class:`huaweicloudsdkelb.v3.BatchUpdateMembersOption`]
@@ -55,7 +55,7 @@ class BatchUpdateMembersRequestBody:
     def members(self, members):
         r"""Sets the members of this BatchUpdateMembersRequestBody.
 
-        后端服务器对象。
+        **参数解释**：后端服务器对象。  **约束限制**：不涉及
 
         :param members: The members of this BatchUpdateMembersRequestBody.
         :type members: list[:class:`huaweicloudsdkelb.v3.BatchUpdateMembersOption`]

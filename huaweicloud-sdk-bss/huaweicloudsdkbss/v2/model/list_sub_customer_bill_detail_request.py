@@ -73,7 +73,7 @@ class ListSubCustomerBillDetailRequest:
         :type region_code: str
         :param charging_mode: 计费模式。1：包周期3：按需10：预留实例11：节省计划此参数不携带或携带值为空或携带为null时，默认查询所有计费模式下的消费记录；不支持携带值为空串。
         :type charging_mode: int
-        :param bill_detail_type: 账单类型。1：消费-新购 2：消费-续订 3：消费-变更 4：退款-退订 5：消费-使用 8：消费-自动续订 9：调账-补偿 14：消费-服务支持计划月末扣费 16：调账-扣费 18：消费-按月付费 20：退款-变更 23：消费-节省计划抵扣 24：退款-包年/包月转按需 103：消费-按年付费 此参数不携带或携带值为空或携带值为null时，不作为筛选条件；不支持携带值为空串。
+        :param bill_detail_type: 账单类型。1：消费-新购 2：消费-续订 3：消费-变更 4：退款-退订 5：消费-使用 8：消费-自动续订 9：调账-补偿 14：消费-服务支持计划月末扣费 16：调账-扣费 18：消费-按月付费 20：退款-变更 23：消费-节省计划抵扣 24：退款-包年/包月转按需 25：消费-抹零补扣 103：消费-按年付费 此参数不携带或携带值为空或携带值为null时，不作为筛选条件；不支持携带值为空串。
         :type bill_detail_type: int
         :param resource_id: 资源标识。此参数不携带或携带值为空时，不作为筛选条件；携带值为null时，作为筛选条件；不支持携带值为空串。
         :type resource_id: str
@@ -287,7 +287,7 @@ class ListSubCustomerBillDetailRequest:
     def bill_detail_type(self):
         r"""Gets the bill_detail_type of this ListSubCustomerBillDetailRequest.
 
-        账单类型。1：消费-新购 2：消费-续订 3：消费-变更 4：退款-退订 5：消费-使用 8：消费-自动续订 9：调账-补偿 14：消费-服务支持计划月末扣费 16：调账-扣费 18：消费-按月付费 20：退款-变更 23：消费-节省计划抵扣 24：退款-包年/包月转按需 103：消费-按年付费 此参数不携带或携带值为空或携带值为null时，不作为筛选条件；不支持携带值为空串。
+        账单类型。1：消费-新购 2：消费-续订 3：消费-变更 4：退款-退订 5：消费-使用 8：消费-自动续订 9：调账-补偿 14：消费-服务支持计划月末扣费 16：调账-扣费 18：消费-按月付费 20：退款-变更 23：消费-节省计划抵扣 24：退款-包年/包月转按需 25：消费-抹零补扣 103：消费-按年付费 此参数不携带或携带值为空或携带值为null时，不作为筛选条件；不支持携带值为空串。
 
         :return: The bill_detail_type of this ListSubCustomerBillDetailRequest.
         :rtype: int
@@ -298,7 +298,7 @@ class ListSubCustomerBillDetailRequest:
     def bill_detail_type(self, bill_detail_type):
         r"""Sets the bill_detail_type of this ListSubCustomerBillDetailRequest.
 
-        账单类型。1：消费-新购 2：消费-续订 3：消费-变更 4：退款-退订 5：消费-使用 8：消费-自动续订 9：调账-补偿 14：消费-服务支持计划月末扣费 16：调账-扣费 18：消费-按月付费 20：退款-变更 23：消费-节省计划抵扣 24：退款-包年/包月转按需 103：消费-按年付费 此参数不携带或携带值为空或携带值为null时，不作为筛选条件；不支持携带值为空串。
+        账单类型。1：消费-新购 2：消费-续订 3：消费-变更 4：退款-退订 5：消费-使用 8：消费-自动续订 9：调账-补偿 14：消费-服务支持计划月末扣费 16：调账-扣费 18：消费-按月付费 20：退款-变更 23：消费-节省计划抵扣 24：退款-包年/包月转按需 25：消费-抹零补扣 103：消费-按年付费 此参数不携带或携带值为空或携带值为null时，不作为筛选条件；不支持携带值为空串。
 
         :param bill_detail_type: The bill_detail_type of this ListSubCustomerBillDetailRequest.
         :type bill_detail_type: int

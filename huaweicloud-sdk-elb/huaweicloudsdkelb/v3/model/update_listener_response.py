@@ -32,7 +32,7 @@ class UpdateListenerResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param request_id: 参数解释：请求ID。  注：自动生成 。
+        :param request_id: **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
         :type request_id: str
         :param listener: 
         :type listener: :class:`huaweicloudsdkelb.v3.Listener`
@@ -53,7 +53,7 @@ class UpdateListenerResponse(SdkResponse):
     def request_id(self):
         r"""Gets the request_id of this UpdateListenerResponse.
 
-        参数解释：请求ID。  注：自动生成 。
+        **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
 
         :return: The request_id of this UpdateListenerResponse.
         :rtype: str
@@ -64,7 +64,7 @@ class UpdateListenerResponse(SdkResponse):
     def request_id(self, request_id):
         r"""Sets the request_id of this UpdateListenerResponse.
 
-        参数解释：请求ID。  注：自动生成 。
+        **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
 
         :param request_id: The request_id of this UpdateListenerResponse.
         :type request_id: str

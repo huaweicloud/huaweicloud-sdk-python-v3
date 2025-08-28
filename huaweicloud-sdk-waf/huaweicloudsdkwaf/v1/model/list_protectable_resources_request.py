@@ -37,7 +37,7 @@ class ListProtectableResourcesRequest:
         :type vpc_id: str
         :param region: **参数解释：** 租户region **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type region: str
-        :param resource_type: 
+        :param resource_type: **参数解释：** 查询的防护资源类型，目前支持的资源类型为:elb **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** elb
         :type resource_type: str
         """
         
@@ -102,6 +102,8 @@ class ListProtectableResourcesRequest:
     def resource_type(self):
         r"""Gets the resource_type of this ListProtectableResourcesRequest.
 
+        **参数解释：** 查询的防护资源类型，目前支持的资源类型为:elb **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** elb
+
         :return: The resource_type of this ListProtectableResourcesRequest.
         :rtype: str
         """
@@ -110,6 +112,8 @@ class ListProtectableResourcesRequest:
     @resource_type.setter
     def resource_type(self, resource_type):
         r"""Sets the resource_type of this ListProtectableResourcesRequest.
+
+        **参数解释：** 查询的防护资源类型，目前支持的资源类型为:elb **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** elb
 
         :param resource_type: The resource_type of this ListProtectableResourcesRequest.
         :type resource_type: str

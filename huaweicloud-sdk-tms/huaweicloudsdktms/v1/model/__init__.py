@@ -27,6 +27,8 @@ from huaweicloudsdktms.v1.model.list_tag_keys_request import ListTagKeysRequest
 from huaweicloudsdktms.v1.model.list_tag_keys_response import ListTagKeysResponse
 from huaweicloudsdktms.v1.model.list_tag_values_request import ListTagValuesRequest
 from huaweicloudsdktms.v1.model.list_tag_values_response import ListTagValuesResponse
+from huaweicloudsdktms.v1.model.list_tags_request import ListTagsRequest
+from huaweicloudsdktms.v1.model.list_tags_response import ListTagsResponse
 from huaweicloudsdktms.v1.model.modify_prefine_tag import ModifyPrefineTag
 from huaweicloudsdktms.v1.model.page_info_tag_keys import PageInfoTagKeys
 from huaweicloudsdktms.v1.model.page_info_tag_values import PageInfoTagValues
@@ -50,7 +52,9 @@ from huaweicloudsdktms.v1.model.show_tag_quota_response import ShowTagQuotaRespo
 from huaweicloudsdktms.v1.model.tag import Tag
 from huaweicloudsdktms.v1.model.tag_create_response_item import TagCreateResponseItem
 from huaweicloudsdktms.v1.model.tag_delete_response_item import TagDeleteResponseItem
+from huaweicloudsdktms.v1.model.tag_list_error_item import TagListErrorItem
 from huaweicloudsdktms.v1.model.tag_quota import TagQuota
+from huaweicloudsdktms.v1.model.tag_response import TagResponse
 from huaweicloudsdktms.v1.model.tag_vo import TagVo
 from huaweicloudsdktms.v1.model.update_predefine_tags_request import UpdatePredefineTagsRequest
 from huaweicloudsdktms.v1.model.update_predefine_tags_response import UpdatePredefineTagsResponse

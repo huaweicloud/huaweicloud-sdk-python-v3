@@ -31,9 +31,9 @@ class QuicCidHashStrategy:
 
         The model defined in huaweicloud sdk
 
-        :param len: 参数解释：仅当负载均衡算法为QUIC_CID的时候才生效，表示hash的时候取CID的长度。 取值范围：1-20 默认取值：3
+        :param len: **参数解释**：表示hash的时候取CID的长度。  **约束限制**：仅当负载均衡算法为QUIC_CID的时候才生效。  **取值范围**：1-20  **默认取值**：3
         :type len: int
-        :param offset: 参数解释：仅当负载均衡算法为QUIC_CID的时候才生效，表示hash的时候取CID的偏移量。 取值范围：0-19 默认取值：1
+        :param offset: **参数解释**：表示hash的时候取CID的偏移量。  **约束限制**：仅当负载均衡算法为QUIC_CID的时候才生效。  **取值范围**：0-19  **默认取值**：1
         :type offset: int
         """
         
@@ -50,7 +50,7 @@ class QuicCidHashStrategy:
     def len(self):
         r"""Gets the len of this QuicCidHashStrategy.
 
-        参数解释：仅当负载均衡算法为QUIC_CID的时候才生效，表示hash的时候取CID的长度。 取值范围：1-20 默认取值：3
+        **参数解释**：表示hash的时候取CID的长度。  **约束限制**：仅当负载均衡算法为QUIC_CID的时候才生效。  **取值范围**：1-20  **默认取值**：3
 
         :return: The len of this QuicCidHashStrategy.
         :rtype: int
@@ -61,7 +61,7 @@ class QuicCidHashStrategy:
     def len(self, len):
         r"""Sets the len of this QuicCidHashStrategy.
 
-        参数解释：仅当负载均衡算法为QUIC_CID的时候才生效，表示hash的时候取CID的长度。 取值范围：1-20 默认取值：3
+        **参数解释**：表示hash的时候取CID的长度。  **约束限制**：仅当负载均衡算法为QUIC_CID的时候才生效。  **取值范围**：1-20  **默认取值**：3
 
         :param len: The len of this QuicCidHashStrategy.
         :type len: int
@@ -72,7 +72,7 @@ class QuicCidHashStrategy:
     def offset(self):
         r"""Gets the offset of this QuicCidHashStrategy.
 
-        参数解释：仅当负载均衡算法为QUIC_CID的时候才生效，表示hash的时候取CID的偏移量。 取值范围：0-19 默认取值：1
+        **参数解释**：表示hash的时候取CID的偏移量。  **约束限制**：仅当负载均衡算法为QUIC_CID的时候才生效。  **取值范围**：0-19  **默认取值**：1
 
         :return: The offset of this QuicCidHashStrategy.
         :rtype: int
@@ -83,7 +83,7 @@ class QuicCidHashStrategy:
     def offset(self, offset):
         r"""Sets the offset of this QuicCidHashStrategy.
 
-        参数解释：仅当负载均衡算法为QUIC_CID的时候才生效，表示hash的时候取CID的偏移量。 取值范围：0-19 默认取值：1
+        **参数解释**：表示hash的时候取CID的偏移量。  **约束限制**：仅当负载均衡算法为QUIC_CID的时候才生效。  **取值范围**：0-19  **默认取值**：1
 
         :param offset: The offset of this QuicCidHashStrategy.
         :type offset: int

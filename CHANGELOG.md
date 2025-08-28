@@ -1,3 +1,719 @@
+# 3.1.165 2025-08-28
+
+### HuaweiCloud SDK APIG
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowPlugin**
+    - changes of response param
+      - `+ plugin_type: enum value [oidc_auth,jwt_auth]`
+  - **UpdatePlugin**
+    - changes of request param
+      - `+ plugin_type: enum value [oidc_auth,jwt_auth]`
+    - changes of response param
+      - `+ plugin_type: enum value [oidc_auth,jwt_auth]`
+  - **DeleteGatewayResponseTypeV2**
+    - changes of request param
+      - `+ response_type: enum value [OIDC_AUTH_TOKEN_VERIFY_FAIL,OIDC_AUTH_GET_DISCOVERY_ERROR,OIDC_AUTH_CODE_FLOW_FAIL,JWT_AUTH_FAILURE]`
+  - **ShowDetailsOfGatewayResponseTypeV2**
+    - changes of request param
+      - `+ response_type: enum value [OIDC_AUTH_TOKEN_VERIFY_FAIL,OIDC_AUTH_GET_DISCOVERY_ERROR,OIDC_AUTH_CODE_FLOW_FAIL,JWT_AUTH_FAILURE]`
+  - **UpdateGatewayResponseTypeV2**
+    - changes of request param
+      - `+ response_type: enum value [OIDC_AUTH_TOKEN_VERIFY_FAIL,OIDC_AUTH_GET_DISCOVERY_ERROR,OIDC_AUTH_CODE_FLOW_FAIL,JWT_AUTH_FAILURE]`
+  - **CreatePlugin**
+    - changes of request param
+      - `+ plugin_type: enum value [oidc_auth,jwt_auth]`
+    - changes of response param
+      - `+ plugin_type: enum value [oidc_auth,jwt_auth]`
+  - **ListPlugins**
+    - changes of response param
+      - `+ plugins.plugin_type: enum value [oidc_auth,jwt_auth]`
+  - **AttachApiToPlugin**
+    - changes of response param
+      - `+ attached_plugins.plugin_type: enum value [oidc_auth,jwt_auth]`
+  - **AttachPluginToApi**
+    - changes of response param
+      - `+ attached_plugins.plugin_type: enum value [oidc_auth,jwt_auth]`
+  - **ListApiAttachedPlugins**
+    - changes of response param
+      - `+ plugins.plugin_type: enum value [oidc_auth,jwt_auth]`
+  - **ListApiAttachablePlugins**
+    - changes of response param
+      - `+ plugins.plugin_type: enum value [oidc_auth,jwt_auth]`
+
+### HuaweiCloud SDK AS
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the APIs `ShowWarmPool`, `PutWarmPool`, `CloseWarmPool`, `ListWarmPoolInstances`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK BSS
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListCustomerAccountChangeRecords**
+    - changes of response param
+      - `+ records.consume_time`
+      - `+ records.account_name`
+      - `+ records.cloud_service_type_name`
+      - `+ records.resource_type_name`
+
+### HuaweiCloud SDK BSSINTL
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the API `ShowCustomerExpenditureQuota`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK CSS
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdateInstance**
+    - changes of request param
+      - `+ migrateData`
+      - `+ agency`
+  - **UpdateClusterName**
+    - changes of request param
+      - `+ desc`
+  - **UpdateFlavor**
+    - changes of request param
+      - `+ operationType`
+      - `+ needCheckClusterStatus`
+      - `+ clusterLoadCheck`
+  - **UpdateFlavorByType**
+    - changes of request param
+      - `+ operation_type`
+      - `+ need_check_cluster_status`
+      - `+ cluster_load_check`
+  - **UpgradeCore**
+    - changes of request param
+      - `+ cluster_load_check`
+      - `+ batch_size`
+      - `- check_load`
+  - **StartLogs**
+    - changes of request param
+      - `+ auto_enable`
+      - `+ period`
+  - **UpdateSnapshotSetting**
+    - changes of request param
+      - `+ max_snapshot_bytes_per_seconds`
+      - `+ max_restore_bytes_per_seconds`
+      - `+ enable`
+      - `+ indices`
+      - `+ prefix`
+      - `+ period`
+      - `+ keepday`
+      - `+ frequency`
+      - `+ delete_auto`
+      - `- maxSnapshotBytesPerSeconds`
+      - `- maxRestoreBytesPerSeconds`
+  - **CreateAutoCreatePolicy**
+    - changes of request param
+      - `+ frequency`
+  - **UpdateShrinkCluster**
+    - changes of request param
+      - `+ agency_name`
+      - `+ operation_type`
+      - `+ cluster_load_check`
+  - **AddIndependentNode**
+    - changes of request param
+      - `+ is_auto_pay`
+  - **UpdateLogSetting**
+    - changes of request param
+      - `+ index_prefix`
+      - `+ keep_days`
+      - `+ target_cluster_id`
+      - `+ auto_enable`
+      - `+ period`
+  - **ShowLogBackup**
+    - changes of request param
+      - `+ limit`
+      - `+ time_index`
+      - `+ keyword`
+  - **CreateBindPublic**
+    - changes of request param
+      - `+ white_list`
+
+### HuaweiCloud SDK CSS
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **StartAutoCreateSnapshots**
+    - changes of request param
+      - `+ frequency`
+
+### HuaweiCloud SDK DAS
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListTransactions**
+    - changes of response param
+      - `* transaction_info_list.occurrence_time: int32 -> int64`
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListSecuritySensitiveDataDetails**
+    - changes of response param
+      - `+ total`
+      - `+ page_info`
+      - `+ content`
+
+### HuaweiCloud SDK DC
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdateVirtualInterface**
+    - changes of request param
+      - `+ virtual_interface.priority`
+  - **CreateVirtualInterface**
+    - changes of request param
+      - `+ virtual_interface.priority`
+
+### HuaweiCloud SDK ECS
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the API `CreateLaunchTemplate`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK ELB
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateCertificate**
+    - changes of request param
+      - `+ certificate.type: enum value [server_sm]`
+  - **UpdateIpGroup**
+    - changes of request param
+      - `* ipgroup.ip_list: list<UpadateIpGroupIpOption> -> list<UpdateIpGroupIpOption>`
+  - **UpdateIpList**
+    - changes of request param
+      - `* ipgroup.ip_list: list<UpadateIpGroupIpOption> -> list<UpdateIpGroupIpOption>`
+  - **CreateLoadBalancer**
+    - changes of request param
+      - `+ loadbalancer.service_lb_mode: enum value [lb,ep]`
+      - `- loadbalancer.service_lb_mode: enum value [flavor,lcu]`
+
+### HuaweiCloud SDK HSS
+
+- _API Version_
+  - V5
+- _Features_
+  - Support the following APIs:
+    - `ListVulAffectImages`
+    - `HandleImageVulnerability`
+    - `AddPolicyGroup`
+    - `ChangePolicyGroup`
+    - `DeletePolicyGroup`
+    - `ListPlugins`
+    - `ShowMalwareReminders`
+    - `SetMalwareReminders`
+    - `ListMalwareCollectStatus`
+    - `ChangeMalwareCollectStatus`
+    - `ListPluginInstallScript`
+    - `ShowEventAttackTag`
+    - `ListEventAttCk`
+    - `ExportRisks`
+    - `ShowMultiCloudClusterAuth`
+    - `ShowImageUploadCommand`
+    - `ListRegistry`
+    - `AddRegistry`
+    - `ListRegistryStatistics`
+    - `UpdateRegistry`
+    - `DeleteRegistry`
+    - `BatchDeleteRegistry`
+    - `ListImageWhiteLists`
+    - `ShowImageWhiteListDetail`
+    - `ListVulHostApps`
+    - `ShowVulBackupStatistics`
+    - `ListVulHostVaults`
+    - `ListVulHostBackups`
+    - `RestoreVulHostBackup`
+    - `ListImageScanTask`
+    - `ShowRemoteBackupHostInfo`
+    - `SetRemoteBackupInfo`
+    - `ListBackupHostsInfo`
+    - `UpdateBackupHostInfo`
+    - `DeleteBackupHostInfo`
+    - `SetProtectDirSwitchInfo`
+    - `ShowWtpProtectStatistics`
+    - `ShowVulReportData`
+    - `ListVulHostProcess`
+    - `ListHandleVuls`
+    - `ShowPolicySwitchStatus`
+    - `ChangePolicySwitchStatus`
+    - `ShowSecurityCheckClusterReport`
+    - `ListAgentAutoUpgradeStatus`
+    - `ChangeAgentAutoUpgradeStatus`
+    - `ListAutoOpenQuotaStatus`
+    - `ChangeAutoOpenQuotaStatus`
+    - `ListAutoKillVirusStatus`
+    - `StartAutoKillVirusStatus`
+    - `ListLockedStatus`
+    - `ListJarPackageInfo`
+    - `ListKernelModuleInfo`
+    - `ListWebFrameworkInfo`
+    - `ListWebSiteInfo`
+    - `DownloadAssetFile`
+    - `ListImageHandleAffectVulnerabilities`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListKernelModuleHostInfo**
+    - changes of response param
+      - `- data_list.kernel_module_info.first_scan_time`
+      - `* data_list.kernel_module_info.size: int64 -> int32`
+  - **BatchStartWebTamperProtection**
+    - changes of request param
+      - `* timing_off_config_info.timing_range_list: list<TimingRangeConfigInfo> -> list<TimingRangeConfigRequestInfo>`
+  - **ShowWebTamperHostPolicy**
+    - changes of response param
+      - `- protect_dir_info.protect_dir_list.protect_status: enum value [closed,opened,opening,closing,open_failed]`
+  - **UpdateWebTamperHostPolicy**
+    - changes of request param
+      - `* timing_off_config_info.timing_range_list: list<TimingRangeConfigInfo> -> list<TimingRangeConfigRequestInfo>`
+
+### HuaweiCloud SDK IAM
+
+- _API Version_
+  - V5
+- _Features_
+  - Support the APIs `ShowTokenPolicyV5`, `UpdateTokenPolicyV5`
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateAgencyV5**
+    - changes of response param
+      - `* agency: object<Agency> -> object<TrustAgency>`
+
+### HuaweiCloud SDK LTS
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the API `ListLogStreamIndex`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK MetaStudio
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the following APIs:
+    - `CheckVoiceAsset`
+    - `ShowVocabularySwitchConfigs`
+    - `SaveTtscTenantConfigs`
+    - `ShowTtsJob`
+    - `ListDocumentInfo`
+    - `CreateDocument`
+    - `DeleteDocument`
+    - `DownloadDocument`
+    - `UpdateDocument`
+    - `ShowDocumentInfo`
+    - `UpdateDocumentSegmentParam`
+    - `PreviewDocumentSegment`
+    - `StartDocumentSegment`
+    - `ListDocumentSegment`
+    - `UpdateDocumentSegmentInfo`
+    - `ListInstructionLibrary`
+    - `CreateInstructionLibrary`
+    - `ShowInstructionLibrary`
+    - `UpdateInstructionLibrary`
+    - `DeleteInstructionLibrary`
+    - `ListInstruction`
+    - `CreateInstruction`
+    - `ShowInstruction`
+    - `UpdateInstruction`
+    - `DeleteInstruction`
+    - `CreateInteractiveChat`
+    - `ListKnowledgeLibrary`
+    - `CreateKnowledgeLibrary`
+    - `ShowKnowledgeLibrary`
+    - `UpdateKnowledgeLibrary`
+    - `DeleteKnowledgeLibrary`
+    - `CheckRecallKnowledgeLibrary`
+    - `ListLlmConfig`
+    - `CreateLlmConfig`
+    - `ShowLlmConfig`
+    - `UpdateLlmConfig`
+    - `DeleteLlmConfig`
+    - `ListMcpServer`
+    - `CreateMcpServer`
+    - `ShowMcpServer`
+    - `UpdateMcpServer`
+    - `DeleteMcpServer`
+    - `ListPluginConfig`
+    - `CreatePluginConfig`
+    - `ShowPluginConfig`
+    - `UpdatePluginConfig`
+    - `DeletePluginConfig`
+    - `ShowPluginConfigDefaultInfo`
+    - `ListQuestionAnswer`
+    - `CreateQuestionAnswer`
+    - `ShowQuestionAnswer`
+    - `UpdateQuestionAnswer`
+    - `DeleteQuestionAnswer`
+    - `ListRole`
+    - `CreateRole`
+    - `ShowRole`
+    - `UpdateRole`
+    - `DeleteRole`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowAsrVocabulary**
+    - changes of response param
+      - `- language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai]`
+  - **UpdateAsrVocabulary**
+    - changes of request param
+      - `- language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai]`
+    - changes of response param
+      - `- language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai]`
+  - **ShowHotQuestion**
+    - changes of response param
+      - `- language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai]`
+  - **UpdateHotQuestion**
+    - changes of response param
+      - `- language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai]`
+  - **ShowPacifyWords**
+    - changes of response param
+      - `- language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai]`
+  - **UpdatePacifyWords**
+    - changes of response param
+      - `- language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai]`
+  - **UpdatePacifyWordsSwitch**
+    - changes of request param
+      - `- language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai]`
+  - **UpdatePacifyWordsTriggerTime**
+    - changes of request param
+      - `- language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai]`
+  - **ShowWelcomeSpeech**
+    - changes of response param
+      - `- language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai]`
+  - **UpdateWelcomeSpeech**
+    - changes of response param
+      - `- language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai]`
+  - **UpdateWelcomeSpeechSwitch**
+    - changes of request param
+      - `- language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai]`
+  - **CreateAsrVocabulary**
+    - changes of request param
+      - `- language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai]`
+    - changes of response param
+      - `- language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai]`
+  - **ListAsrVocabulary**
+    - changes of response param
+      - `- data.language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai]`
+  - **ShowAsrVocabularyAssociation**
+    - changes of response param
+      - `- data.language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai]`
+  - **StartSmartChatJob**
+    - changes of response param
+      - `- language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai]`
+  - **ShowSmartChatJob**
+    - changes of response param
+      - `- language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai]`
+  - **CreateHotQuestion**
+    - changes of request param
+      - `- language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai]`
+    - changes of response param
+      - `- language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai]`
+  - **ListHotQuestion**
+    - changes of response param
+      - `- data.language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai]`
+  - **ListHotWords**
+    - changes of response param
+      - `- data.language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai]`
+  - **CreateHotWords**
+    - changes of request param
+      - `- sis_hot_words.language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai]`
+    - changes of response param
+      - `- language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai]`
+  - **ShowHotWords**
+    - changes of response param
+      - `- language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai]`
+  - **UpdateHotWords**
+    - changes of request param
+      - `- sis_hot_words.language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai]`
+    - changes of response param
+      - `- language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai]`
+  - **CreatePacifyWords**
+    - changes of request param
+      - `- language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai]`
+    - changes of response param
+      - `- language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai]`
+  - **ListPacifyWords**
+    - changes of response param
+      - `- data.language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai]`
+  - **ListRobot**
+    - changes of response param
+      - `- data.language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai]`
+  - **CreateRobot**
+    - changes of request param
+      - `- language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai]`
+  - **ShowRobot**
+    - changes of response param
+      - `- language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai]`
+  - **UpdateRobot**
+    - changes of request param
+      - `- language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai]`
+  - **CreateWelcomeSpeech**
+    - changes of request param
+      - `- language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai]`
+    - changes of response param
+      - `- language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai]`
+  - **ListWelcomeSpeech**
+    - changes of response param
+      - `- data.language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai]`
+  - **ListDigitalHumanVideo**
+    - changes of request param
+      - `+ job_ids`
+  - **ListSmartChatRooms**
+    - changes of response param
+      - `+ count_client_nums`
+      - `+ count_client_nums_token`
+      - `+ smart_chat_rooms.billing_mode`
+      - `+ smart_chat_rooms.reuse_resource`
+      - `+ smart_chat_rooms.client_nums`
+  - **CreateSmartChatRoom**
+    - changes of request param
+      - `+ billing_mode`
+      - `+ reuse_resource`
+      - `+ client_nums`
+      - `+ video_config.is_vocabulary_config_enable`
+      - `+ layer_config.sequence_no`
+  - **ShowSmartChatRoom**
+    - changes of response param
+      - `+ client_nums`
+      - `+ billing_mode`
+      - `+ reuse_resource`
+      - `+ video_config.is_vocabulary_config_enable`
+      - `+ layer_config.sequence_no`
+  - **UpdateSmartChatRoom**
+    - changes of request param
+      - `+ billing_mode`
+      - `+ reuse_resource`
+      - `+ client_nums`
+      - `+ video_config.is_vocabulary_config_enable`
+      - `+ layer_config.sequence_no`
+    - changes of response param
+      - `+ client_nums`
+      - `+ billing_mode`
+      - `+ reuse_resource`
+      - `+ video_config.is_vocabulary_config_enable`
+      - `+ layer_config.sequence_no`
+  - **ShowSmartLive**
+    - changes of response param
+      - `+ is_ai_mark_on`
+  - **ListJobOperationLog**
+    - changes of response param
+      - `+ operations.external_info.admin_audit_failure_reason`
+  - **ShowAsset**
+    - changes of response param
+      - `+ asset_extra_meta.human_model_2d_meta.is_live_copy`
+  - **UpdateDigitalAsset**
+    - changes of request param
+      - `+ asset_extra_meta.human_model_2d_meta.is_live_copy`
+    - changes of response param
+      - `+ asset_extra_meta.human_model_2d_meta.is_live_copy`
+  - **StartSmartLive**
+    - changes of request param
+      - `+ video_config.is_vocabulary_config_enable`
+  - **ListSmartLive**
+    - changes of response param
+      - `+ is_ai_mark_on`
+      - `+ smart_live_jobs.is_ai_mark_on`
+  - **ListSmartLiveJobs**
+    - changes of response param
+      - `+ is_ai_mark_on`
+      - `+ smart_live_jobs.is_ai_mark_on`
+  - **CreateDigitalAsset**
+    - changes of request param
+      - `+ asset_extra_meta.human_model_2d_meta.is_live_copy`
+  - **ListAssets**
+    - changes of response param
+      - `+ assets.asset_extra_meta.human_model_2d_meta.is_live_copy`
+  - **Create2DDigitalHumanVideo**
+    - changes of request param
+      - `+ video_config.is_vocabulary_config_enable`
+      - `+ shoot_scripts.shoot_script.layer_config.sequence_no`
+  - **Show2DDigitalHumanVideo**
+    - changes of response param
+      - `+ video_config.is_vocabulary_config_enable`
+      - `+ shoot_scripts.shoot_script.layer_config.sequence_no`
+  - **CreatePhotoDigitalHumanVideo**
+    - changes of request param
+      - `+ shoot_scripts.shoot_script.layer_config.sequence_no`
+  - **ShowPhotoDigitalHumanVideo**
+    - changes of response param
+      - `+ shoot_scripts.shoot_script.layer_config.sequence_no`
+  - **CreateSmartLiveRoom**
+    - changes of request param
+      - `+ video_config.is_vocabulary_config_enable`
+      - `+ scene_scripts.layer_config.sequence_no`
+  - **ShowSmartLiveRoom**
+    - changes of response param
+      - `+ video_config.is_vocabulary_config_enable`
+      - `+ scene_scripts.layer_config.sequence_no`
+  - **UpdateSmartLiveRoom**
+    - changes of request param
+      - `+ video_config.is_vocabulary_config_enable`
+      - `+ scene_scripts.layer_config.sequence_no`
+    - changes of response param
+      - `+ video_config.is_vocabulary_config_enable`
+      - `+ scene_scripts.layer_config.sequence_no`
+  - **ListVideoScripts**
+    - changes of response param
+      - `- video_scripts.model_asset_type: enum value [HUMAN_MODEL_3D]`
+  - **CreateVideoScripts**
+    - changes of request param
+      - `- scene_asset_id`
+      - `- model_asset_type: enum value [HUMAN_MODEL_3D]`
+      - `+ video_config.is_vocabulary_config_enable`
+      - `+ shoot_scripts.shoot_script.layer_config.sequence_no`
+  - **ShowVideoScript**
+    - changes of response param
+      - `- scene_asset_id`
+      - `- model_asset_type: enum value [HUMAN_MODEL_3D]`
+      - `+ video_config.is_vocabulary_config_enable`
+      - `+ shoot_scripts.shoot_script.layer_config.sequence_no`
+  - **UpdateVideoScript**
+    - changes of request param
+      - `- scene_asset_id`
+      - `- model_asset_type: enum value [HUMAN_MODEL_3D]`
+      - `+ video_config.is_vocabulary_config_enable`
+      - `+ shoot_scripts.shoot_script.layer_config.sequence_no`
+
+### HuaweiCloud SDK OSM
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the following APIs:
+    - `CreateQuestionInSession`
+    - `CreateSession`
+    - `CreateEvaluate`
+    - `ListFeedbackOption`
+    - `CreateQaFeedbacks`
+    - `CreateAskQuestion`
+    - `ShowQaPairDetail`
+    - `ShowAssociatedQuestions`
+    - `ShowQaPairs`
+    - `ListRecommendWords`
+    - `CreateQaAsk`
+    - `ShowTheme`
+    - `ListArticles`
+    - `ListNotices`
+    - `ListTools`
+
+### HuaweiCloud SDK STS
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the API `AssumeAgency`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK TMS
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the API `ListTags`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK WAF
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the following APIs:
+    - `ConfirmIpReputationRule`
+    - `UpdateIpReputationRule`
+    - `DeleteIpReputationRule`
+    - `ListTopIp`
+    - `ListTopUrl`
+    - `ListResponseCodeTimeline`
+    - `ListBotMTopnRequest`
+    - `ListBotMRequestDistribution`
+    - `ListBotMTimeline`
+    - `ListBotMScoreDistribution`
+    - `CreateIpReputationRule`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
 # 3.1.164 2025-08-25
 
 ### HuaweiCloud SDK CodeHub

@@ -29,7 +29,7 @@ class RuleRef:
 
         The model defined in huaweicloud sdk
 
-        :param id: 参数解释：规则ID。
+        :param id: **参数解释**：规则ID。  **取值范围**：不涉及
         :type id: str
         """
         
@@ -44,7 +44,7 @@ class RuleRef:
     def id(self):
         r"""Gets the id of this RuleRef.
 
-        参数解释：规则ID。
+        **参数解释**：规则ID。  **取值范围**：不涉及
 
         :return: The id of this RuleRef.
         :rtype: str
@@ -55,7 +55,7 @@ class RuleRef:
     def id(self, id):
         r"""Sets the id of this RuleRef.
 
-        参数解释：规则ID。
+        **参数解释**：规则ID。  **取值范围**：不涉及
 
         :param id: The id of this RuleRef.
         :type id: str

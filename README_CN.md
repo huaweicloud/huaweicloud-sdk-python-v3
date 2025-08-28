@@ -221,6 +221,7 @@ if __name__ == "__main__":
     * [3.3 自定义配置](#33-自定义配置-top)
         * [3.3.1 IAM endpoint配置](#331-IAM-endpoint配置-top)
         * [3.3.2 Region配置](#332-Region配置-top)
+    * [3.4 用户代理](#34-用户代理--top)
 * [4. 发送请求并查看响应](#4-发送请求并查看响应-top)
     * [4.1 异常处理](#41-异常处理-top)
     * [4.2 获取响应对象](#42-获取响应对象-top)
@@ -809,6 +810,24 @@ from huaweicloudsdkecs.v2.region.ecs_region import EcsRegion
 
 region1 = EcsRegion.value_of("cn-north-1")
 region2 = EcsRegion.value_of("cn-north-9")
+```
+
+#### 3.4 用户代理 [:top:](#用户手册-top)
+
+从**3.1.165**版本起，默认会在请求头User-Agent中附加额外信息，用于识别客户端调用服务时所使用的SDK语言、客户端库版本以及平台信息等。 User-Agent包含Python版本、操作系统信息，同时会生成一个随机标识符追加到User-Agent信息中。随机标识符会存储在用户主目录下，linux为 `~/.huaweicloud/application_id`，windows为`C:\Users\USER_NAME\.huaweicloud\application_id`。
+
+上述信息将用于保护您及您的用户的华为云账号安全。
+
+您可以通过自定义User-Agent的方式关闭上述行为，自定义User-Agent信息建议长度不超过50个字符，仅可包含ASCII可打印字符：
+
+```python
+http_config = HttpConfig.get_default_config()
+# 追加自定义User-Agent信息，替代默认追加内容
+http_config.user_agent = "custom user agent..."
+
+client = IamClient.new_builder() \
+    .with_http_config(http_config) \
+    .build()
 ```
 
 ### 4. 发送请求并查看响应 [:top:](#用户手册-top)

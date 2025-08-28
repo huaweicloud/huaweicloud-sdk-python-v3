@@ -32,9 +32,9 @@ class ListSystemSecurityPoliciesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param system_security_policies: 系统安全策略列表。
+        :param system_security_policies: **参数解释**：系统安全策略列表。
         :type system_security_policies: list[:class:`huaweicloudsdkelb.v3.SystemSecurityPolicy`]
-        :param request_id: 请求ID。  注：自动生成 。
+        :param request_id: **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
         :type request_id: str
         """
         
@@ -53,7 +53,7 @@ class ListSystemSecurityPoliciesResponse(SdkResponse):
     def system_security_policies(self):
         r"""Gets the system_security_policies of this ListSystemSecurityPoliciesResponse.
 
-        系统安全策略列表。
+        **参数解释**：系统安全策略列表。
 
         :return: The system_security_policies of this ListSystemSecurityPoliciesResponse.
         :rtype: list[:class:`huaweicloudsdkelb.v3.SystemSecurityPolicy`]
@@ -64,7 +64,7 @@ class ListSystemSecurityPoliciesResponse(SdkResponse):
     def system_security_policies(self, system_security_policies):
         r"""Sets the system_security_policies of this ListSystemSecurityPoliciesResponse.
 
-        系统安全策略列表。
+        **参数解释**：系统安全策略列表。
 
         :param system_security_policies: The system_security_policies of this ListSystemSecurityPoliciesResponse.
         :type system_security_policies: list[:class:`huaweicloudsdkelb.v3.SystemSecurityPolicy`]
@@ -75,7 +75,7 @@ class ListSystemSecurityPoliciesResponse(SdkResponse):
     def request_id(self):
         r"""Gets the request_id of this ListSystemSecurityPoliciesResponse.
 
-        请求ID。  注：自动生成 。
+        **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
 
         :return: The request_id of this ListSystemSecurityPoliciesResponse.
         :rtype: str
@@ -86,7 +86,7 @@ class ListSystemSecurityPoliciesResponse(SdkResponse):
     def request_id(self, request_id):
         r"""Sets the request_id of this ListSystemSecurityPoliciesResponse.
 
-        请求ID。  注：自动生成 。
+        **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
 
         :param request_id: The request_id of this ListSystemSecurityPoliciesResponse.
         :type request_id: str

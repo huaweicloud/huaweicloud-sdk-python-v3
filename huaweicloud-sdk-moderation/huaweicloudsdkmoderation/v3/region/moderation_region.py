@@ -15,19 +15,19 @@ class ModerationRegion:
     CN_EAST_3 = Region("cn-east-3",
                         "https://moderation.cn-east-3.myhuaweicloud.com",
                         "https://moderation.cn-east-3.myhuaweicloud.cn")
-    AP_SOUTHEAST_1 = Region("ap-southeast-1",
-                        "https://moderation.ap-southeast-1.myhuaweicloud.com",
-                        "https://moderation.ap-southeast-1.myhuaweicloud.cn")
     AP_SOUTHEAST_3 = Region("ap-southeast-3",
                         "https://moderation.ap-southeast-3.myhuaweicloud.com",
                         "https://moderation.ap-southeast-3.myhuaweicloud.cn")
+    CN_SOUTHWEST_2 = Region("cn-southwest-2",
+                        "https://moderation.cn-southwest-2.myhuaweicloud.com",
+                        "https://moderation.cn-southwest-2.myhuaweicloud.cn")
 
     static_fields = {
         "cn-north-4": CN_NORTH_4,
         "cn-north-1": CN_NORTH_1,
         "cn-east-3": CN_EAST_3,
-        "ap-southeast-1": AP_SOUTHEAST_1,
         "ap-southeast-3": AP_SOUTHEAST_3,
+        "cn-southwest-2": CN_SOUTHWEST_2,
     }
 
     @classmethod

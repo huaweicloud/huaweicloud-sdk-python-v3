@@ -30,7 +30,7 @@ class BatchUpdatePoliciesPriorityResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param request_id: 请求ID。
+        :param request_id: **参数解释**：请求ID。  **取值范围**：不涉及
         :type request_id: str
         """
         
@@ -46,7 +46,7 @@ class BatchUpdatePoliciesPriorityResponse(SdkResponse):
     def request_id(self):
         r"""Gets the request_id of this BatchUpdatePoliciesPriorityResponse.
 
-        请求ID。
+        **参数解释**：请求ID。  **取值范围**：不涉及
 
         :return: The request_id of this BatchUpdatePoliciesPriorityResponse.
         :rtype: str
@@ -57,7 +57,7 @@ class BatchUpdatePoliciesPriorityResponse(SdkResponse):
     def request_id(self, request_id):
         r"""Sets the request_id of this BatchUpdatePoliciesPriorityResponse.
 
-        请求ID。
+        **参数解释**：请求ID。  **取值范围**：不涉及
 
         :param request_id: The request_id of this BatchUpdatePoliciesPriorityResponse.
         :type request_id: str

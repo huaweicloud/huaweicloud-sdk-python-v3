@@ -31,7 +31,7 @@ class PolicyUser:
 
         The model defined in huaweicloud sdk
 
-        :param user_id: IAM用户ID，长度为1到64个字符，只包含字母、数字和\&quot;-\&quot;的字符串。
+        :param user_id: IAM用户ID。
         :type user_id: str
         :param attached_at: 身份策略的附加时间。
         :type attached_at: datetime
@@ -50,7 +50,7 @@ class PolicyUser:
     def user_id(self):
         r"""Gets the user_id of this PolicyUser.
 
-        IAM用户ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
+        IAM用户ID。
 
         :return: The user_id of this PolicyUser.
         :rtype: str
@@ -61,7 +61,7 @@ class PolicyUser:
     def user_id(self, user_id):
         r"""Sets the user_id of this PolicyUser.
 
-        IAM用户ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
+        IAM用户ID。
 
         :param user_id: The user_id of this PolicyUser.
         :type user_id: str

@@ -31,7 +31,7 @@ class UpdatePoolRequest:
 
         The model defined in huaweicloud sdk
 
-        :param pool_id: 参数解释：后端服务器组ID。
+        :param pool_id: **参数解释**：后端服务器组ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type pool_id: str
         :param body: Body of the UpdatePoolRequest
         :type body: :class:`huaweicloudsdkelb.v3.UpdatePoolRequestBody`
@@ -51,7 +51,7 @@ class UpdatePoolRequest:
     def pool_id(self):
         r"""Gets the pool_id of this UpdatePoolRequest.
 
-        参数解释：后端服务器组ID。
+        **参数解释**：后端服务器组ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The pool_id of this UpdatePoolRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class UpdatePoolRequest:
     def pool_id(self, pool_id):
         r"""Sets the pool_id of this UpdatePoolRequest.
 
-        参数解释：后端服务器组ID。
+        **参数解释**：后端服务器组ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param pool_id: The pool_id of this UpdatePoolRequest.
         :type pool_id: str

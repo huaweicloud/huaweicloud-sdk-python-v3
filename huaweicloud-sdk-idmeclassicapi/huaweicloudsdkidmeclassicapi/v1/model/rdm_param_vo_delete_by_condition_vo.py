@@ -45,8 +45,7 @@ class RDMParamVODeleteByConditionVo:
 
         if application_id is not None:
             self.application_id = application_id
-        if params is not None:
-            self.params = params
+        self.params = params
 
     @property
     def application_id(self):

@@ -52,7 +52,7 @@ class ShowElbDetailResponse(SdkResponse):
         :type cacert_name: str
         :param cacert_id: ca证书ID。
         :type cacert_id: str
-        :param elb_enable: elb开关信息。
+        :param elb_enable: 是否开启elb。 - true: 打开elb - false： 关闭elb
         :type elb_enable: bool
         :param authentication_type: 认证方式。
         :type authentication_type: str
@@ -183,7 +183,7 @@ class ShowElbDetailResponse(SdkResponse):
     def elb_enable(self):
         r"""Gets the elb_enable of this ShowElbDetailResponse.
 
-        elb开关信息。
+        是否开启elb。 - true: 打开elb - false： 关闭elb
 
         :return: The elb_enable of this ShowElbDetailResponse.
         :rtype: bool
@@ -194,7 +194,7 @@ class ShowElbDetailResponse(SdkResponse):
     def elb_enable(self, elb_enable):
         r"""Sets the elb_enable of this ShowElbDetailResponse.
 
-        elb开关信息。
+        是否开启elb。 - true: 打开elb - false： 关闭elb
 
         :param elb_enable: The elb_enable of this ShowElbDetailResponse.
         :type elb_enable: bool

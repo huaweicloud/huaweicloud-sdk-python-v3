@@ -235,6 +235,73 @@ class WafAsyncClient(Client):
 
         return http_info
 
+    def confirm_ip_reputation_rule_async(self, request):
+        r"""根据Id查询地理位置防护规则
+
+        根据Id查询IP情报防护规则
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ConfirmIpReputationRule
+        :type request: :class:`huaweicloudsdkwaf.v1.ConfirmIpReputationRuleRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.ConfirmIpReputationRuleResponse`
+        """
+        http_info = self._confirm_ip_reputation_rule_http_info(request)
+        return self._call_api(**http_info)
+
+    def confirm_ip_reputation_rule_async_invoker(self, request):
+        http_info = self._confirm_ip_reputation_rule_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _confirm_ip_reputation_rule_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/waf/policy/{policy_id}/ip-reputation/{rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ConfirmIpReputationRuleResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'policy_id' in local_var_params:
+            path_params['policy_id'] = local_var_params['policy_id']
+        if 'rule_id' in local_var_params:
+            path_params['rule_id'] = local_var_params['rule_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def confirm_policy_antileakage_map_async(self, request):
         r"""SMN告警通知
 
@@ -1282,6 +1349,75 @@ class WafAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_ip_reputation_rule_async(self, request):
+        r"""创建机房IP情报规则
+
+        创建IP情报规则
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateIpReputationRule
+        :type request: :class:`huaweicloudsdkwaf.v1.CreateIpReputationRuleRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.CreateIpReputationRuleResponse`
+        """
+        http_info = self._create_ip_reputation_rule_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_ip_reputation_rule_async_invoker(self, request):
+        http_info = self._create_ip_reputation_rule_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_ip_reputation_rule_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/waf/policy/{policy_id}/ip-reputation",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateIpReputationRuleResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'policy_id' in local_var_params:
+            path_params['policy_id'] = local_var_params['policy_id']
 
         query_params = []
         if 'enterprise_project_id' in local_var_params:
@@ -2608,6 +2744,75 @@ class WafAsyncClient(Client):
 
         return http_info
 
+    def delete_ip_reputation_rule_async(self, request):
+        r"""删除机房IP情报防护规则
+
+        删除IP情报防护规则
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteIpReputationRule
+        :type request: :class:`huaweicloudsdkwaf.v1.DeleteIpReputationRuleRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.DeleteIpReputationRuleResponse`
+        """
+        http_info = self._delete_ip_reputation_rule_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_ip_reputation_rule_async_invoker(self, request):
+        http_info = self._delete_ip_reputation_rule_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_ip_reputation_rule_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/waf/policy/{policy_id}/ip-reputation/{rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteIpReputationRuleResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'policy_id' in local_var_params:
+            path_params['policy_id'] = local_var_params['policy_id']
+        if 'rule_id' in local_var_params:
+            path_params['rule_id'] = local_var_params['rule_id']
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_policy_async(self, request):
         r"""删除防护策略
 
@@ -3352,6 +3557,328 @@ class WafAsyncClient(Client):
             query_params.append(('group_by', local_var_params['group_by']))
         if 'display_option' in local_var_params:
             query_params.append(('display_option', local_var_params['display_option']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_bot_m_request_distribution_async(self, request):
+        r"""查询BotM中bot的请求分布
+
+        查询BotM中bot的请求分布
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListBotMRequestDistribution
+        :type request: :class:`huaweicloudsdkwaf.v1.ListBotMRequestDistributionRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.ListBotMRequestDistributionResponse`
+        """
+        http_info = self._list_bot_m_request_distribution_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_bot_m_request_distribution_async_invoker(self, request):
+        http_info = self._list_bot_m_request_distribution_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_bot_m_request_distribution_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/waf/overviews/bot-manager/bot-request-distribution",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListBotMRequestDistributionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'tenant_id' in local_var_params:
+            query_params.append(('tenant_id', local_var_params['tenant_id']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'hosts' in local_var_params:
+            query_params.append(('hosts', local_var_params['hosts']))
+            collection_formats['hosts'] = 'csv'
+        if 'domains' in local_var_params:
+            query_params.append(('domains', local_var_params['domains']))
+            collection_formats['domains'] = 'csv'
+        if 'region' in local_var_params:
+            query_params.append(('region', local_var_params['region']))
+        if 'site' in local_var_params:
+            query_params.append(('site', local_var_params['site']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_bot_m_score_distribution_async(self, request):
+        r"""查询BotM中bot的评分分布
+
+        查询BotM中bot的评分分布
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListBotMScoreDistribution
+        :type request: :class:`huaweicloudsdkwaf.v1.ListBotMScoreDistributionRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.ListBotMScoreDistributionResponse`
+        """
+        http_info = self._list_bot_m_score_distribution_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_bot_m_score_distribution_async_invoker(self, request):
+        http_info = self._list_bot_m_score_distribution_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_bot_m_score_distribution_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/waf/overviews/bot-manager/bot-score-distribution",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListBotMScoreDistributionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'tenant_id' in local_var_params:
+            query_params.append(('tenant_id', local_var_params['tenant_id']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'hosts' in local_var_params:
+            query_params.append(('hosts', local_var_params['hosts']))
+            collection_formats['hosts'] = 'csv'
+        if 'domains' in local_var_params:
+            query_params.append(('domains', local_var_params['domains']))
+            collection_formats['domains'] = 'csv'
+        if 'region' in local_var_params:
+            query_params.append(('region', local_var_params['region']))
+        if 'site' in local_var_params:
+            query_params.append(('site', local_var_params['site']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_bot_m_timeline_async(self, request):
+        r"""查询BotM中bot的请求时间趋势
+
+        查询BotM中bot的请求时间趋势
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListBotMTimeline
+        :type request: :class:`huaweicloudsdkwaf.v1.ListBotMTimelineRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.ListBotMTimelineResponse`
+        """
+        http_info = self._list_bot_m_timeline_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_bot_m_timeline_async_invoker(self, request):
+        http_info = self._list_bot_m_timeline_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_bot_m_timeline_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/waf/overviews/bot-manager/bot-request-on-timeline",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListBotMTimelineResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'tenant_id' in local_var_params:
+            query_params.append(('tenant_id', local_var_params['tenant_id']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'hosts' in local_var_params:
+            query_params.append(('hosts', local_var_params['hosts']))
+            collection_formats['hosts'] = 'csv'
+        if 'domain' in local_var_params:
+            query_params.append(('domain', local_var_params['domain']))
+        if 'region' in local_var_params:
+            query_params.append(('region', local_var_params['region']))
+        if 'site' in local_var_params:
+            query_params.append(('site', local_var_params['site']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_bot_m_topn_request_async(self, request):
+        r"""查询BotM中top n的bot请求
+
+        查询BotM中topn的bot请求
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListBotMTopnRequest
+        :type request: :class:`huaweicloudsdkwaf.v1.ListBotMTopnRequestRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.ListBotMTopnRequestResponse`
+        """
+        http_info = self._list_bot_m_topn_request_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_bot_m_topn_request_async_invoker(self, request):
+        http_info = self._list_bot_m_topn_request_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_bot_m_topn_request_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/waf/overviews/bot-manager/topn-bot-request",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListBotMTopnRequestResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'tenant_id' in local_var_params:
+            query_params.append(('tenant_id', local_var_params['tenant_id']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'hosts' in local_var_params:
+            query_params.append(('hosts', local_var_params['hosts']))
+            collection_formats['hosts'] = 'csv'
+        if 'topn' in local_var_params:
+            query_params.append(('topn', local_var_params['topn']))
+        if 'region' in local_var_params:
+            query_params.append(('region', local_var_params['region']))
+        if 'site' in local_var_params:
+            query_params.append(('site', local_var_params['site']))
 
         header_params = {}
 
@@ -4976,6 +5503,85 @@ class WafAsyncClient(Client):
 
         return http_info
 
+    def list_response_code_timeline_async(self, request):
+        r"""查询安全统计响应码数据
+
+        查询安全统计响应码数据
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListResponseCodeTimeline
+        :type request: :class:`huaweicloudsdkwaf.v1.ListResponseCodeTimelineRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.ListResponseCodeTimelineResponse`
+        """
+        http_info = self._list_response_code_timeline_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_response_code_timeline_async_invoker(self, request):
+        http_info = self._list_response_code_timeline_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_response_code_timeline_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/waf/overviews/response-code/timeline",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListResponseCodeTimelineResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if '_from' in local_var_params:
+            query_params.append(('from', local_var_params['_from']))
+        if 'to' in local_var_params:
+            query_params.append(('to', local_var_params['to']))
+        if 'hosts' in local_var_params:
+            query_params.append(('hosts', local_var_params['hosts']))
+            collection_formats['hosts'] = 'csv'
+        if 'instances' in local_var_params:
+            query_params.append(('instances', local_var_params['instances']))
+            collection_formats['instances'] = 'csv'
+        if 'response_source' in local_var_params:
+            query_params.append(('response_source', local_var_params['response_source']))
+        if 'group_by' in local_var_params:
+            query_params.append(('group_by', local_var_params['group_by']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_security_report_subscriptions_async(self, request):
         r"""查询安全报告订阅列表
 
@@ -5248,6 +5854,156 @@ class WafAsyncClient(Client):
         if 'hosts' in local_var_params:
             query_params.append(('hosts', local_var_params['hosts']))
             collection_formats['hosts'] = 'csv'
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_top_ip_async(self, request):
+        r"""查询攻击源ip
+
+        查询攻击源ip
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListTopIp
+        :type request: :class:`huaweicloudsdkwaf.v1.ListTopIpRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.ListTopIpResponse`
+        """
+        http_info = self._list_top_ip_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_top_ip_async_invoker(self, request):
+        http_info = self._list_top_ip_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_top_ip_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/waf/overviews/attack/ip",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTopIpResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if '_from' in local_var_params:
+            query_params.append(('from', local_var_params['_from']))
+        if 'to' in local_var_params:
+            query_params.append(('to', local_var_params['to']))
+        if 'top' in local_var_params:
+            query_params.append(('top', local_var_params['top']))
+        if 'hosts' in local_var_params:
+            query_params.append(('hosts', local_var_params['hosts']))
+        if 'instances' in local_var_params:
+            query_params.append(('instances', local_var_params['instances']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_top_url_async(self, request):
+        r"""查询被攻击url
+
+        查询被攻击url
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListTopUrl
+        :type request: :class:`huaweicloudsdkwaf.v1.ListTopUrlRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.ListTopUrlResponse`
+        """
+        http_info = self._list_top_url_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_top_url_async_invoker(self, request):
+        http_info = self._list_top_url_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_top_url_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/waf/overviews/attack/url",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTopUrlResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if '_from' in local_var_params:
+            query_params.append(('from', local_var_params['_from']))
+        if 'to' in local_var_params:
+            query_params.append(('to', local_var_params['to']))
+        if 'top' in local_var_params:
+            query_params.append(('top', local_var_params['top']))
+        if 'hosts' in local_var_params:
+            query_params.append(('hosts', local_var_params['hosts']))
+        if 'instances' in local_var_params:
+            query_params.append(('instances', local_var_params['instances']))
 
         header_params = {}
 
@@ -8339,6 +9095,77 @@ class WafAsyncClient(Client):
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
         if 'action' in local_var_params:
             query_params.append(('action', local_var_params['action']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_ip_reputation_rule_async(self, request):
+        r"""更新机房IP情报防护规则
+
+        更新IP情报防护规则
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateIpReputationRule
+        :type request: :class:`huaweicloudsdkwaf.v1.UpdateIpReputationRuleRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.UpdateIpReputationRuleResponse`
+        """
+        http_info = self._update_ip_reputation_rule_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_ip_reputation_rule_async_invoker(self, request):
+        http_info = self._update_ip_reputation_rule_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_ip_reputation_rule_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/waf/policy/{policy_id}/ip-reputation/{rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateIpReputationRuleResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'policy_id' in local_var_params:
+            path_params['policy_id'] = local_var_params['policy_id']
+        if 'rule_id' in local_var_params:
+            path_params['rule_id'] = local_var_params['rule_id']
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 

@@ -1862,7 +1862,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def delete_log_lts_configs_async(self, request):
-        r"""delete_log_lts_configs
+        r"""解除LTS配置信息
 
         解除LTS配置信息
         
@@ -3207,7 +3207,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def list_errorlog_for_lts_async(self, request):
-        r"""list_errorlog_for_lts
+        r"""查询实例的错误日志数据
 
         查询实例的错误日志数据。
         
@@ -3485,7 +3485,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def list_inspection_histories_async(self, request):
-        r"""list_inspection_histories
+        r"""查询实例大版本升级检查历史
 
         查询实例大版本升级检查历史。
         
@@ -4134,7 +4134,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def list_log_lts_configs_async(self, request):
-        r"""list_log_lts_configs
+        r"""获取LTS配置信息
 
         获取LTS配置信息
         
@@ -4636,7 +4636,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def list_predefined_tag_async(self, request):
-        r"""list_predefined_tag
+        r"""查询预定义标签
 
         查询预定义标签
         
@@ -5258,7 +5258,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def list_simplified_instances_async(self, request):
-        r"""list_simplified_instances
+        r"""获取指定实例详情
 
         获取指定实例详情
         
@@ -5397,7 +5397,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def list_slow_log_statistics_for_lts_async(self, request):
-        r"""list_slow_log_statistics_for_lts
+        r"""查询实例慢日志的统计数据
 
         查询实例慢日志的统计数据。
         
@@ -5620,7 +5620,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def list_slowlog_for_lts_async(self, request):
-        r"""list_slowlog_for_lts
+        r"""查询实例的慢日志数据
 
         查询实例的慢日志数据。
         
@@ -6125,7 +6125,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def list_upgrade_histories_async(self, request):
-        r"""list_upgrade_histories
+        r"""查询实例大版本升级历史信息
 
         查询实例大版本升级历史信息。
         
@@ -7303,7 +7303,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def set_log_lts_configs_async(self, request):
-        r"""set_log_lts_configs
+        r"""关联LTS配置信息
 
         关联LTS配置信息
         
@@ -7987,7 +7987,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def show_available_version_async(self, request):
-        r"""show_available_version
+        r"""查询实例可升级的目标版本
 
         查询实例可升级的目标版本
         
@@ -8460,7 +8460,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def show_domain_name_async(self, request):
-        r"""show_domain_name
+        r"""查询实例ipv4域名
 
         查询实例ipv4域名
         
@@ -9321,7 +9321,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def show_upgrade_db_major_version_status_async(self, request):
-        r"""show_upgrade_db_major_version_status
+        r"""查询大版本检查状态或升级状态
 
         查询大版本检查状态或升级状态。
         
@@ -11168,7 +11168,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def upgrade_db_major_version_async(self, request):
-        r"""upgrade_db_major_version
+        r"""PostgreSQL数据库升级大版本
 
         PostgreSQL数据库升级大版本。
         
@@ -11235,7 +11235,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def upgrade_db_major_version_pre_check_async(self, request):
-        r"""upgrade_db_major_version_pre_check
+        r"""大版本升级前进行升级检查
 
         大版本升级前进行升级检查。
         
@@ -14888,7 +14888,7 @@ class RdsAsyncClient(Client):
         return http_info
 
     def update_db_user_privilege_async(self, request):
-        r"""update_db_user_privilege
+        r"""数据库帐号授权
 
         数据库帐号授权。
         

@@ -35,3 +35,11 @@ def underline_to_camel(underline_format):
         for _s_ in underline_format.split('_'):
             camel_format += _s_.capitalize()
     return camel_format
+
+
+def replace_invalid_character(text):
+    """ Convert non-ASCII printable characters and spaces to underscores. """
+    return ''.join(
+        char if 32 < ord(char) <= 126 else '_'
+        for char in text
+    )

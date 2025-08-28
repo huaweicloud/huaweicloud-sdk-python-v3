@@ -39,17 +39,17 @@ class CreateMasterSlaveMemberOption:
 
         The model defined in huaweicloud sdk
 
-        :param address: 后端服务器对应的IP地址。  使用说明： - 若subnet_cidr_id为空，表示添加跨VPC后端，此时address必须为**私网IPv4**地址。 - 若subnet_cidr_id不为空，表示是一个关联到ECS的后端服务器。 该IP地址必须在subnet_cidr_id对应的子网网段中，可以是**私网IPv4**或IPv6。  [不支持IPv6，请勿设置为IPv6地址。](tag:dt)
+        :param address: **参数解释**：后端服务器对应的IP地址。  **约束限制**： - 若subnet_cidr_id为空，表示添加IP类型后端，此时address必须为**私网IPv4**地址。 - 若subnet_cidr_id不为空，表示是一个关联到ECS的后端服务器。该IP地址必须在subnet_cidr_id对应的子网网段中，可以是**私网IPv4**或IPv6。  **取值范围**：不涉及  **默认取值**：不涉及  [不支持IPv6，请勿设置为IPv6地址。](tag:dt)
         :type address: str
-        :param admin_state_up: 后端服务器的管理状态。  取值：true。  虽然创建、更新请求支持该字段，但实际取值决定于后端服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
+        :param admin_state_up: **参数解释**：后端服务器的管理状态。  **约束限制**：虽然创建、更新请求支持该字段，但实际取值决定于后端服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。  **取值范围**：true 弹性云服务器存在，false 弹性云服务器不存在。  **默认取值**：不涉及
         :type admin_state_up: bool
-        :param name: 后端服务器名称。
+        :param name: **参数解释**：后端服务器名称。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type name: str
-        :param protocol_port: 后端服务器业务端口。 &gt;在开启端口透传的pool下创建member传该字段不生效，可不传该字段。
+        :param protocol_port: **参数解释**：后端服务器业务端口  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及  &gt;在开启端口透传的pool下创建member传该字段不生效，可不传该字段。
         :type protocol_port: int
-        :param subnet_cidr_id: 后端服务器所在的子网ID，可以是子网的IPv4子网ID或IPv6子网ID。  使用说明： - 该子网和关联的负载均衡器的子网必须在同一VPC下。 - 若所属LB的跨VPC后端转发特性已开启，则该字段可以不传，表示添加跨VPC的后端服务器。此时address必须为**私网IPv4**地址，所在的pool的协议必须为UDP/TCP/TLS/HTTP/HTTPS/QUIC/GRPC。  [不支持IPv6，请勿设置为IPv6子网ID。](tag:dt)
+        :param subnet_cidr_id: **参数解释**：后端服务器所在的子网ID，可以是子网的IPv4子网ID或IPv6子网ID。  **约束限制**： - 该子网和关联的负载均衡器的子网必须在同一VPC下。 - 若所属LB的IP类型后端转发特性已开启，则该字段可以不传，表示添加跨VPC的后端服务器。此时address必须为**私网IPv4**地址，所在的pool的协议必须为UDP/TCP/TLS/HTTP/HTTPS/QUIC/GRPC。  **取值范围**：不涉及  **默认取值**：不涉及  [不支持IPv6，请勿设置为IPv6子网ID。](tag:dt)
         :type subnet_cidr_id: str
-        :param role: 后端服务器的主备状态。  取值范围： - master：主后端服务器。 - slave：备后端服务器。
+        :param role: **参数解释**：后端服务器的主备状态。  **约束限制**：不涉及  **取值范围**： - master：主后端服务器。 - slave：备后端服务器。  **默认取值**：不涉及
         :type role: str
         """
         
@@ -78,7 +78,7 @@ class CreateMasterSlaveMemberOption:
     def address(self):
         r"""Gets the address of this CreateMasterSlaveMemberOption.
 
-        后端服务器对应的IP地址。  使用说明： - 若subnet_cidr_id为空，表示添加跨VPC后端，此时address必须为**私网IPv4**地址。 - 若subnet_cidr_id不为空，表示是一个关联到ECS的后端服务器。 该IP地址必须在subnet_cidr_id对应的子网网段中，可以是**私网IPv4**或IPv6。  [不支持IPv6，请勿设置为IPv6地址。](tag:dt)
+        **参数解释**：后端服务器对应的IP地址。  **约束限制**： - 若subnet_cidr_id为空，表示添加IP类型后端，此时address必须为**私网IPv4**地址。 - 若subnet_cidr_id不为空，表示是一个关联到ECS的后端服务器。该IP地址必须在subnet_cidr_id对应的子网网段中，可以是**私网IPv4**或IPv6。  **取值范围**：不涉及  **默认取值**：不涉及  [不支持IPv6，请勿设置为IPv6地址。](tag:dt)
 
         :return: The address of this CreateMasterSlaveMemberOption.
         :rtype: str
@@ -89,7 +89,7 @@ class CreateMasterSlaveMemberOption:
     def address(self, address):
         r"""Sets the address of this CreateMasterSlaveMemberOption.
 
-        后端服务器对应的IP地址。  使用说明： - 若subnet_cidr_id为空，表示添加跨VPC后端，此时address必须为**私网IPv4**地址。 - 若subnet_cidr_id不为空，表示是一个关联到ECS的后端服务器。 该IP地址必须在subnet_cidr_id对应的子网网段中，可以是**私网IPv4**或IPv6。  [不支持IPv6，请勿设置为IPv6地址。](tag:dt)
+        **参数解释**：后端服务器对应的IP地址。  **约束限制**： - 若subnet_cidr_id为空，表示添加IP类型后端，此时address必须为**私网IPv4**地址。 - 若subnet_cidr_id不为空，表示是一个关联到ECS的后端服务器。该IP地址必须在subnet_cidr_id对应的子网网段中，可以是**私网IPv4**或IPv6。  **取值范围**：不涉及  **默认取值**：不涉及  [不支持IPv6，请勿设置为IPv6地址。](tag:dt)
 
         :param address: The address of this CreateMasterSlaveMemberOption.
         :type address: str
@@ -100,7 +100,7 @@ class CreateMasterSlaveMemberOption:
     def admin_state_up(self):
         r"""Gets the admin_state_up of this CreateMasterSlaveMemberOption.
 
-        后端服务器的管理状态。  取值：true。  虽然创建、更新请求支持该字段，但实际取值决定于后端服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
+        **参数解释**：后端服务器的管理状态。  **约束限制**：虽然创建、更新请求支持该字段，但实际取值决定于后端服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。  **取值范围**：true 弹性云服务器存在，false 弹性云服务器不存在。  **默认取值**：不涉及
 
         :return: The admin_state_up of this CreateMasterSlaveMemberOption.
         :rtype: bool
@@ -111,7 +111,7 @@ class CreateMasterSlaveMemberOption:
     def admin_state_up(self, admin_state_up):
         r"""Sets the admin_state_up of this CreateMasterSlaveMemberOption.
 
-        后端服务器的管理状态。  取值：true。  虽然创建、更新请求支持该字段，但实际取值决定于后端服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
+        **参数解释**：后端服务器的管理状态。  **约束限制**：虽然创建、更新请求支持该字段，但实际取值决定于后端服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。  **取值范围**：true 弹性云服务器存在，false 弹性云服务器不存在。  **默认取值**：不涉及
 
         :param admin_state_up: The admin_state_up of this CreateMasterSlaveMemberOption.
         :type admin_state_up: bool
@@ -122,7 +122,7 @@ class CreateMasterSlaveMemberOption:
     def name(self):
         r"""Gets the name of this CreateMasterSlaveMemberOption.
 
-        后端服务器名称。
+        **参数解释**：后端服务器名称。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The name of this CreateMasterSlaveMemberOption.
         :rtype: str
@@ -133,7 +133,7 @@ class CreateMasterSlaveMemberOption:
     def name(self, name):
         r"""Sets the name of this CreateMasterSlaveMemberOption.
 
-        后端服务器名称。
+        **参数解释**：后端服务器名称。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param name: The name of this CreateMasterSlaveMemberOption.
         :type name: str
@@ -144,7 +144,7 @@ class CreateMasterSlaveMemberOption:
     def protocol_port(self):
         r"""Gets the protocol_port of this CreateMasterSlaveMemberOption.
 
-        后端服务器业务端口。 >在开启端口透传的pool下创建member传该字段不生效，可不传该字段。
+        **参数解释**：后端服务器业务端口  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及  >在开启端口透传的pool下创建member传该字段不生效，可不传该字段。
 
         :return: The protocol_port of this CreateMasterSlaveMemberOption.
         :rtype: int
@@ -155,7 +155,7 @@ class CreateMasterSlaveMemberOption:
     def protocol_port(self, protocol_port):
         r"""Sets the protocol_port of this CreateMasterSlaveMemberOption.
 
-        后端服务器业务端口。 >在开启端口透传的pool下创建member传该字段不生效，可不传该字段。
+        **参数解释**：后端服务器业务端口  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及  >在开启端口透传的pool下创建member传该字段不生效，可不传该字段。
 
         :param protocol_port: The protocol_port of this CreateMasterSlaveMemberOption.
         :type protocol_port: int
@@ -166,7 +166,7 @@ class CreateMasterSlaveMemberOption:
     def subnet_cidr_id(self):
         r"""Gets the subnet_cidr_id of this CreateMasterSlaveMemberOption.
 
-        后端服务器所在的子网ID，可以是子网的IPv4子网ID或IPv6子网ID。  使用说明： - 该子网和关联的负载均衡器的子网必须在同一VPC下。 - 若所属LB的跨VPC后端转发特性已开启，则该字段可以不传，表示添加跨VPC的后端服务器。此时address必须为**私网IPv4**地址，所在的pool的协议必须为UDP/TCP/TLS/HTTP/HTTPS/QUIC/GRPC。  [不支持IPv6，请勿设置为IPv6子网ID。](tag:dt)
+        **参数解释**：后端服务器所在的子网ID，可以是子网的IPv4子网ID或IPv6子网ID。  **约束限制**： - 该子网和关联的负载均衡器的子网必须在同一VPC下。 - 若所属LB的IP类型后端转发特性已开启，则该字段可以不传，表示添加跨VPC的后端服务器。此时address必须为**私网IPv4**地址，所在的pool的协议必须为UDP/TCP/TLS/HTTP/HTTPS/QUIC/GRPC。  **取值范围**：不涉及  **默认取值**：不涉及  [不支持IPv6，请勿设置为IPv6子网ID。](tag:dt)
 
         :return: The subnet_cidr_id of this CreateMasterSlaveMemberOption.
         :rtype: str
@@ -177,7 +177,7 @@ class CreateMasterSlaveMemberOption:
     def subnet_cidr_id(self, subnet_cidr_id):
         r"""Sets the subnet_cidr_id of this CreateMasterSlaveMemberOption.
 
-        后端服务器所在的子网ID，可以是子网的IPv4子网ID或IPv6子网ID。  使用说明： - 该子网和关联的负载均衡器的子网必须在同一VPC下。 - 若所属LB的跨VPC后端转发特性已开启，则该字段可以不传，表示添加跨VPC的后端服务器。此时address必须为**私网IPv4**地址，所在的pool的协议必须为UDP/TCP/TLS/HTTP/HTTPS/QUIC/GRPC。  [不支持IPv6，请勿设置为IPv6子网ID。](tag:dt)
+        **参数解释**：后端服务器所在的子网ID，可以是子网的IPv4子网ID或IPv6子网ID。  **约束限制**： - 该子网和关联的负载均衡器的子网必须在同一VPC下。 - 若所属LB的IP类型后端转发特性已开启，则该字段可以不传，表示添加跨VPC的后端服务器。此时address必须为**私网IPv4**地址，所在的pool的协议必须为UDP/TCP/TLS/HTTP/HTTPS/QUIC/GRPC。  **取值范围**：不涉及  **默认取值**：不涉及  [不支持IPv6，请勿设置为IPv6子网ID。](tag:dt)
 
         :param subnet_cidr_id: The subnet_cidr_id of this CreateMasterSlaveMemberOption.
         :type subnet_cidr_id: str
@@ -188,7 +188,7 @@ class CreateMasterSlaveMemberOption:
     def role(self):
         r"""Gets the role of this CreateMasterSlaveMemberOption.
 
-        后端服务器的主备状态。  取值范围： - master：主后端服务器。 - slave：备后端服务器。
+        **参数解释**：后端服务器的主备状态。  **约束限制**：不涉及  **取值范围**： - master：主后端服务器。 - slave：备后端服务器。  **默认取值**：不涉及
 
         :return: The role of this CreateMasterSlaveMemberOption.
         :rtype: str
@@ -199,7 +199,7 @@ class CreateMasterSlaveMemberOption:
     def role(self, role):
         r"""Sets the role of this CreateMasterSlaveMemberOption.
 
-        后端服务器的主备状态。  取值范围： - master：主后端服务器。 - slave：备后端服务器。
+        **参数解释**：后端服务器的主备状态。  **约束限制**：不涉及  **取值范围**： - master：主后端服务器。 - slave：备后端服务器。  **默认取值**：不涉及
 
         :param role: The role of this CreateMasterSlaveMemberOption.
         :type role: str

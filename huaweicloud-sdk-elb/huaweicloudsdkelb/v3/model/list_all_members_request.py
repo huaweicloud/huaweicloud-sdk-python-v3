@@ -57,35 +57,35 @@ class ListAllMembersRequest:
 
         The model defined in huaweicloud sdk
 
-        :param marker: 上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
+        :param marker: **参数解释**：上一页最后一条记录的ID。  **约束限制**： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。  **取值范围**：不涉及  **默认取值**：不涉及
         :type marker: str
-        :param limit: 参数解释：每页返回的个数。  取值范围：0-2000  默认取值：2000
+        :param limit: **参数解释**：每页返回的个数。  **约束限制**：不涉及  **取值范围**：0-2000  **默认取值**：2000
         :type limit: int
-        :param page_reverse: 是否反向查询。  取值： - true：查询上一页。 - false：查询下一页，默认。  使用说明： - 必须与limit一起使用。 - 当page_reverse&#x3D;true时，若要查询上一页，marker取值为当前页返回值的previous_marker。
+        :param page_reverse: **参数解释**：是否反向查询。  **约束限制**： - 必须与limit一起使用。 - 当page_reverse&#x3D;true时，若要查询上一页，marker取值为当前页返回值的previous_marker。  **取值范围**： - true：查询上一页。 - false：查询下一页。  **默认取值**：false
         :type page_reverse: bool
-        :param name: 后端服务器名称。  支持多值查询，查询条件格式：*name&#x3D;xxx&amp;name&#x3D;xxx*。
+        :param name: **参数解释**：后端服务器名称。 支持多值查询，查询条件格式：*name&#x3D;xxx&amp;name&#x3D;xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type name: list[str]
-        :param weight: 后端服务器的权重，请求按权重在同一后端服务器组下的后端服务器间分发。 权重为0的后端不再接受新的请求。 当后端服务器所在的后端服务器组的lb_algorithm的取值为SOURCE_IP时，该字段无效。  支持多值查询，查询条件格式：*weight&#x3D;xxx&amp;weight&#x3D;xxx*。
+        :param weight: **参数解释**：后端服务器的权重，请求按权重在同一后端服务器组下的后端服务器间分发。权重为0的后端不再接受新的请求。当后端服务器所在的后端服务器组的lb_algorithm的取值为SOURCE_IP时，该字段无效。 支持多值查询，查询条件格式：*weight&#x3D;xxx&amp;weight&#x3D;xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type weight: list[int]
-        :param admin_state_up: 后端服务器的管理状态；该字段虽然支持创建、更新，但实际取值决定于member对应的弹性云服务器是否存在。 若存在，该值为true，否则，该值为false。
+        :param admin_state_up: **参数解释**：后端服务器的管理状态。  **约束限制**：不涉及  **取值范围**：true、false  **默认取值**：不涉及
         :type admin_state_up: bool
-        :param subnet_cidr_id: 后端服务器所在的子网ID。该子网和后端服务器关联的负载均衡器的子网必须在同一VPC下。只支持指定IPv4的子网ID。  支持多值查询，查询条件格式：***subnet_cidr_id&#x3D;xxx&amp;subnet_cidr_id&#x3D;xxx*。
+        :param subnet_cidr_id: **参数解释**：后端服务器所在的子网ID。该子网和后端服务器关联的负载均衡器的子网必须在同一VPC下。只支持指定IPv4的子网ID。 支持多值查询，查询条件格式：***subnet_cidr_id&#x3D;xxx&amp;subnet_cidr_id&#x3D;xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type subnet_cidr_id: list[str]
-        :param address: 后端服务器的对应的IP地址，这个IP必须在subnet_cidr_id字段的子网网段中。 例如：192.168.3.11。  支持多值查询，查询条件格式：*address&#x3D;xxx&amp;address&#x3D;xxx*。
+        :param address: **参数解释**：后端服务器的对应的IP地址，这个IP必须在subnet_cidr_id字段的子网网段中。例如：192.168.3.11。 支持多值查询，查询条件格式：*address&#x3D;xxx&amp;address&#x3D;xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type address: list[str]
-        :param protocol_port: 后端服务器端口号。  支持多值查询，查询条件格式：*protocol_port&#x3D;xxx&amp;protocol_port&#x3D;xxx*。
+        :param protocol_port: **参数解释**：后端服务器端口号。 支持多值查询，查询条件格式：*protocol_port&#x3D;xxx&amp;protocol_port&#x3D;xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type protocol_port: list[int]
-        :param id: 后端服务器ID。  支持多值查询，查询条件格式：*id&#x3D;xxx&amp;id&#x3D;xxx*。
+        :param id: **参数解释**：后端服务器ID。 支持多值查询，查询条件格式：*id&#x3D;xxx&amp;id&#x3D;xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type id: list[str]
-        :param operating_status: 后端服务器的健康状态。  取值： - INITIAL：初始化中，表示负载均衡实例配置了健康检查，但查不到数据。 - ONLINE，后端服务器正常运行。 - NO_MONITOR，后端服务器无健康检查。 - OFFLINE，已下线。  支持多值查询，查询条件格式：*operating_status&#x3D;xxx&amp;operating_status&#x3D;*。
+        :param operating_status: **参数解释**：后端服务器的健康状态。 支持多值查询，查询条件格式：*operating_status&#x3D;xxx&amp;operating_status&#x3D;*。  **约束限制**：不涉及  **取值范围**： - NO_MONITOR：后端服务器所在的服务器组没有开启健康检查。 - INITIAL：初始化中，表示负载均衡实例配置了健康检查，但查不到数据。 - ONLINE：后端服务器正常。 - OFFLINE：后端服务器关联的ECS服务器不存在或已关机。 - UNKNOWN：未关联LB实例的pool下的member，或者创建后从未关联ECS的云服务器类型member，状态置为UNKNOWN。  **默认取值**：不涉及
         :type operating_status: list[str]
-        :param enterprise_project_id: 参数解释：所属的企业项目ID。 如果enterprise_project_id不传值，默认查询所有企业项目下的资源，鉴权按照细粒度权限鉴权，必须在用户组下分配elb:members:list权限。 如果enterprise_project_id传值，鉴权按照企业项目权限鉴权，分为传入具体eps_id和all_granted_eps两种场景，前者查询指定eps_id的eps下的资源，后者查询的是所有有list权限的eps下的资源。  支持多值查询，查询条件格式： *enterprise_project_id&#x3D;xxx&amp;enterprise_project_id&#x3D;xxx*。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
+        :param enterprise_project_id: **参数解释**：资源所属的企业项目ID。 支持多值查询，查询条件格式：*enterprise_project_id&#x3D;xxx&amp;enterprise_project_id&#x3D;xxx*。  **约束限制**： - 如果enterprise_project_id不传值，默认查询所有企业项目下的资源，鉴权按照细粒度权限鉴权，必须在用户组下分配elb:members:list权限。 - 如果enterprise_project_id传值，鉴权按照企业项目权限鉴权，分为传入具体eps_id和all_granted_eps两种场景，前者查询指定eps_id的eps下的资源，后者查询的是所有有list权限的eps下的资源。  **取值范围**：不涉及  **默认取值**：不涉及  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
         :type enterprise_project_id: list[str]
-        :param ip_version: IP版本，取值v4、v6。  支持多值查询，查询条件格式：*ip_version&#x3D;xxx&amp;ip_version&#x3D;xxx*。
+        :param ip_version: **参数解释**：IP版本。 支持多值查询，查询条件格式：*ip_version&#x3D;xxx&amp;ip_version&#x3D;xxx*。  **约束限制**：不涉及  **取值范围**：v4、v6  **默认取值**：不涉及
         :type ip_version: list[str]
-        :param pool_id: member所属的服务器组ID  支持多值查询，查询条件格式：*pool_id&#x3D;xxx&amp;pool_id&#x3D;xxx*。
+        :param pool_id: **参数解释**：member所属的服务器组ID。 支持多值查询，查询条件格式：*pool_id&#x3D;xxx&amp;pool_id&#x3D;xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type pool_id: list[str]
-        :param loadbalancer_id: member所属的负载均衡器ID。  支持多值查询，查询条件格式：*loadbalancer_id&#x3D;xxx&amp;loadbalancer_id&#x3D;xxx*。
+        :param loadbalancer_id: **参数解释**：负载均衡器ID。 支持多值查询，查询条件格式：*loadbalancer_id&#x3D;xxx&amp;loadbalancer_id&#x3D;xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type loadbalancer_id: list[str]
         """
         
@@ -143,7 +143,7 @@ class ListAllMembersRequest:
     def marker(self):
         r"""Gets the marker of this ListAllMembersRequest.
 
-        上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
+        **参数解释**：上一页最后一条记录的ID。  **约束限制**： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The marker of this ListAllMembersRequest.
         :rtype: str
@@ -154,7 +154,7 @@ class ListAllMembersRequest:
     def marker(self, marker):
         r"""Sets the marker of this ListAllMembersRequest.
 
-        上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
+        **参数解释**：上一页最后一条记录的ID。  **约束限制**： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param marker: The marker of this ListAllMembersRequest.
         :type marker: str
@@ -165,7 +165,7 @@ class ListAllMembersRequest:
     def limit(self):
         r"""Gets the limit of this ListAllMembersRequest.
 
-        参数解释：每页返回的个数。  取值范围：0-2000  默认取值：2000
+        **参数解释**：每页返回的个数。  **约束限制**：不涉及  **取值范围**：0-2000  **默认取值**：2000
 
         :return: The limit of this ListAllMembersRequest.
         :rtype: int
@@ -176,7 +176,7 @@ class ListAllMembersRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListAllMembersRequest.
 
-        参数解释：每页返回的个数。  取值范围：0-2000  默认取值：2000
+        **参数解释**：每页返回的个数。  **约束限制**：不涉及  **取值范围**：0-2000  **默认取值**：2000
 
         :param limit: The limit of this ListAllMembersRequest.
         :type limit: int
@@ -187,7 +187,7 @@ class ListAllMembersRequest:
     def page_reverse(self):
         r"""Gets the page_reverse of this ListAllMembersRequest.
 
-        是否反向查询。  取值： - true：查询上一页。 - false：查询下一页，默认。  使用说明： - 必须与limit一起使用。 - 当page_reverse=true时，若要查询上一页，marker取值为当前页返回值的previous_marker。
+        **参数解释**：是否反向查询。  **约束限制**： - 必须与limit一起使用。 - 当page_reverse=true时，若要查询上一页，marker取值为当前页返回值的previous_marker。  **取值范围**： - true：查询上一页。 - false：查询下一页。  **默认取值**：false
 
         :return: The page_reverse of this ListAllMembersRequest.
         :rtype: bool
@@ -198,7 +198,7 @@ class ListAllMembersRequest:
     def page_reverse(self, page_reverse):
         r"""Sets the page_reverse of this ListAllMembersRequest.
 
-        是否反向查询。  取值： - true：查询上一页。 - false：查询下一页，默认。  使用说明： - 必须与limit一起使用。 - 当page_reverse=true时，若要查询上一页，marker取值为当前页返回值的previous_marker。
+        **参数解释**：是否反向查询。  **约束限制**： - 必须与limit一起使用。 - 当page_reverse=true时，若要查询上一页，marker取值为当前页返回值的previous_marker。  **取值范围**： - true：查询上一页。 - false：查询下一页。  **默认取值**：false
 
         :param page_reverse: The page_reverse of this ListAllMembersRequest.
         :type page_reverse: bool
@@ -209,7 +209,7 @@ class ListAllMembersRequest:
     def name(self):
         r"""Gets the name of this ListAllMembersRequest.
 
-        后端服务器名称。  支持多值查询，查询条件格式：*name=xxx&name=xxx*。
+        **参数解释**：后端服务器名称。 支持多值查询，查询条件格式：*name=xxx&name=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The name of this ListAllMembersRequest.
         :rtype: list[str]
@@ -220,7 +220,7 @@ class ListAllMembersRequest:
     def name(self, name):
         r"""Sets the name of this ListAllMembersRequest.
 
-        后端服务器名称。  支持多值查询，查询条件格式：*name=xxx&name=xxx*。
+        **参数解释**：后端服务器名称。 支持多值查询，查询条件格式：*name=xxx&name=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param name: The name of this ListAllMembersRequest.
         :type name: list[str]
@@ -231,7 +231,7 @@ class ListAllMembersRequest:
     def weight(self):
         r"""Gets the weight of this ListAllMembersRequest.
 
-        后端服务器的权重，请求按权重在同一后端服务器组下的后端服务器间分发。 权重为0的后端不再接受新的请求。 当后端服务器所在的后端服务器组的lb_algorithm的取值为SOURCE_IP时，该字段无效。  支持多值查询，查询条件格式：*weight=xxx&weight=xxx*。
+        **参数解释**：后端服务器的权重，请求按权重在同一后端服务器组下的后端服务器间分发。权重为0的后端不再接受新的请求。当后端服务器所在的后端服务器组的lb_algorithm的取值为SOURCE_IP时，该字段无效。 支持多值查询，查询条件格式：*weight=xxx&weight=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The weight of this ListAllMembersRequest.
         :rtype: list[int]
@@ -242,7 +242,7 @@ class ListAllMembersRequest:
     def weight(self, weight):
         r"""Sets the weight of this ListAllMembersRequest.
 
-        后端服务器的权重，请求按权重在同一后端服务器组下的后端服务器间分发。 权重为0的后端不再接受新的请求。 当后端服务器所在的后端服务器组的lb_algorithm的取值为SOURCE_IP时，该字段无效。  支持多值查询，查询条件格式：*weight=xxx&weight=xxx*。
+        **参数解释**：后端服务器的权重，请求按权重在同一后端服务器组下的后端服务器间分发。权重为0的后端不再接受新的请求。当后端服务器所在的后端服务器组的lb_algorithm的取值为SOURCE_IP时，该字段无效。 支持多值查询，查询条件格式：*weight=xxx&weight=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param weight: The weight of this ListAllMembersRequest.
         :type weight: list[int]
@@ -253,7 +253,7 @@ class ListAllMembersRequest:
     def admin_state_up(self):
         r"""Gets the admin_state_up of this ListAllMembersRequest.
 
-        后端服务器的管理状态；该字段虽然支持创建、更新，但实际取值决定于member对应的弹性云服务器是否存在。 若存在，该值为true，否则，该值为false。
+        **参数解释**：后端服务器的管理状态。  **约束限制**：不涉及  **取值范围**：true、false  **默认取值**：不涉及
 
         :return: The admin_state_up of this ListAllMembersRequest.
         :rtype: bool
@@ -264,7 +264,7 @@ class ListAllMembersRequest:
     def admin_state_up(self, admin_state_up):
         r"""Sets the admin_state_up of this ListAllMembersRequest.
 
-        后端服务器的管理状态；该字段虽然支持创建、更新，但实际取值决定于member对应的弹性云服务器是否存在。 若存在，该值为true，否则，该值为false。
+        **参数解释**：后端服务器的管理状态。  **约束限制**：不涉及  **取值范围**：true、false  **默认取值**：不涉及
 
         :param admin_state_up: The admin_state_up of this ListAllMembersRequest.
         :type admin_state_up: bool
@@ -275,7 +275,7 @@ class ListAllMembersRequest:
     def subnet_cidr_id(self):
         r"""Gets the subnet_cidr_id of this ListAllMembersRequest.
 
-        后端服务器所在的子网ID。该子网和后端服务器关联的负载均衡器的子网必须在同一VPC下。只支持指定IPv4的子网ID。  支持多值查询，查询条件格式：***subnet_cidr_id=xxx&subnet_cidr_id=xxx*。
+        **参数解释**：后端服务器所在的子网ID。该子网和后端服务器关联的负载均衡器的子网必须在同一VPC下。只支持指定IPv4的子网ID。 支持多值查询，查询条件格式：***subnet_cidr_id=xxx&subnet_cidr_id=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The subnet_cidr_id of this ListAllMembersRequest.
         :rtype: list[str]
@@ -286,7 +286,7 @@ class ListAllMembersRequest:
     def subnet_cidr_id(self, subnet_cidr_id):
         r"""Sets the subnet_cidr_id of this ListAllMembersRequest.
 
-        后端服务器所在的子网ID。该子网和后端服务器关联的负载均衡器的子网必须在同一VPC下。只支持指定IPv4的子网ID。  支持多值查询，查询条件格式：***subnet_cidr_id=xxx&subnet_cidr_id=xxx*。
+        **参数解释**：后端服务器所在的子网ID。该子网和后端服务器关联的负载均衡器的子网必须在同一VPC下。只支持指定IPv4的子网ID。 支持多值查询，查询条件格式：***subnet_cidr_id=xxx&subnet_cidr_id=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param subnet_cidr_id: The subnet_cidr_id of this ListAllMembersRequest.
         :type subnet_cidr_id: list[str]
@@ -297,7 +297,7 @@ class ListAllMembersRequest:
     def address(self):
         r"""Gets the address of this ListAllMembersRequest.
 
-        后端服务器的对应的IP地址，这个IP必须在subnet_cidr_id字段的子网网段中。 例如：192.168.3.11。  支持多值查询，查询条件格式：*address=xxx&address=xxx*。
+        **参数解释**：后端服务器的对应的IP地址，这个IP必须在subnet_cidr_id字段的子网网段中。例如：192.168.3.11。 支持多值查询，查询条件格式：*address=xxx&address=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The address of this ListAllMembersRequest.
         :rtype: list[str]
@@ -308,7 +308,7 @@ class ListAllMembersRequest:
     def address(self, address):
         r"""Sets the address of this ListAllMembersRequest.
 
-        后端服务器的对应的IP地址，这个IP必须在subnet_cidr_id字段的子网网段中。 例如：192.168.3.11。  支持多值查询，查询条件格式：*address=xxx&address=xxx*。
+        **参数解释**：后端服务器的对应的IP地址，这个IP必须在subnet_cidr_id字段的子网网段中。例如：192.168.3.11。 支持多值查询，查询条件格式：*address=xxx&address=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param address: The address of this ListAllMembersRequest.
         :type address: list[str]
@@ -319,7 +319,7 @@ class ListAllMembersRequest:
     def protocol_port(self):
         r"""Gets the protocol_port of this ListAllMembersRequest.
 
-        后端服务器端口号。  支持多值查询，查询条件格式：*protocol_port=xxx&protocol_port=xxx*。
+        **参数解释**：后端服务器端口号。 支持多值查询，查询条件格式：*protocol_port=xxx&protocol_port=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The protocol_port of this ListAllMembersRequest.
         :rtype: list[int]
@@ -330,7 +330,7 @@ class ListAllMembersRequest:
     def protocol_port(self, protocol_port):
         r"""Sets the protocol_port of this ListAllMembersRequest.
 
-        后端服务器端口号。  支持多值查询，查询条件格式：*protocol_port=xxx&protocol_port=xxx*。
+        **参数解释**：后端服务器端口号。 支持多值查询，查询条件格式：*protocol_port=xxx&protocol_port=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param protocol_port: The protocol_port of this ListAllMembersRequest.
         :type protocol_port: list[int]
@@ -341,7 +341,7 @@ class ListAllMembersRequest:
     def id(self):
         r"""Gets the id of this ListAllMembersRequest.
 
-        后端服务器ID。  支持多值查询，查询条件格式：*id=xxx&id=xxx*。
+        **参数解释**：后端服务器ID。 支持多值查询，查询条件格式：*id=xxx&id=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The id of this ListAllMembersRequest.
         :rtype: list[str]
@@ -352,7 +352,7 @@ class ListAllMembersRequest:
     def id(self, id):
         r"""Sets the id of this ListAllMembersRequest.
 
-        后端服务器ID。  支持多值查询，查询条件格式：*id=xxx&id=xxx*。
+        **参数解释**：后端服务器ID。 支持多值查询，查询条件格式：*id=xxx&id=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param id: The id of this ListAllMembersRequest.
         :type id: list[str]
@@ -363,7 +363,7 @@ class ListAllMembersRequest:
     def operating_status(self):
         r"""Gets the operating_status of this ListAllMembersRequest.
 
-        后端服务器的健康状态。  取值： - INITIAL：初始化中，表示负载均衡实例配置了健康检查，但查不到数据。 - ONLINE，后端服务器正常运行。 - NO_MONITOR，后端服务器无健康检查。 - OFFLINE，已下线。  支持多值查询，查询条件格式：*operating_status=xxx&operating_status=*。
+        **参数解释**：后端服务器的健康状态。 支持多值查询，查询条件格式：*operating_status=xxx&operating_status=*。  **约束限制**：不涉及  **取值范围**： - NO_MONITOR：后端服务器所在的服务器组没有开启健康检查。 - INITIAL：初始化中，表示负载均衡实例配置了健康检查，但查不到数据。 - ONLINE：后端服务器正常。 - OFFLINE：后端服务器关联的ECS服务器不存在或已关机。 - UNKNOWN：未关联LB实例的pool下的member，或者创建后从未关联ECS的云服务器类型member，状态置为UNKNOWN。  **默认取值**：不涉及
 
         :return: The operating_status of this ListAllMembersRequest.
         :rtype: list[str]
@@ -374,7 +374,7 @@ class ListAllMembersRequest:
     def operating_status(self, operating_status):
         r"""Sets the operating_status of this ListAllMembersRequest.
 
-        后端服务器的健康状态。  取值： - INITIAL：初始化中，表示负载均衡实例配置了健康检查，但查不到数据。 - ONLINE，后端服务器正常运行。 - NO_MONITOR，后端服务器无健康检查。 - OFFLINE，已下线。  支持多值查询，查询条件格式：*operating_status=xxx&operating_status=*。
+        **参数解释**：后端服务器的健康状态。 支持多值查询，查询条件格式：*operating_status=xxx&operating_status=*。  **约束限制**：不涉及  **取值范围**： - NO_MONITOR：后端服务器所在的服务器组没有开启健康检查。 - INITIAL：初始化中，表示负载均衡实例配置了健康检查，但查不到数据。 - ONLINE：后端服务器正常。 - OFFLINE：后端服务器关联的ECS服务器不存在或已关机。 - UNKNOWN：未关联LB实例的pool下的member，或者创建后从未关联ECS的云服务器类型member，状态置为UNKNOWN。  **默认取值**：不涉及
 
         :param operating_status: The operating_status of this ListAllMembersRequest.
         :type operating_status: list[str]
@@ -385,7 +385,7 @@ class ListAllMembersRequest:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this ListAllMembersRequest.
 
-        参数解释：所属的企业项目ID。 如果enterprise_project_id不传值，默认查询所有企业项目下的资源，鉴权按照细粒度权限鉴权，必须在用户组下分配elb:members:list权限。 如果enterprise_project_id传值，鉴权按照企业项目权限鉴权，分为传入具体eps_id和all_granted_eps两种场景，前者查询指定eps_id的eps下的资源，后者查询的是所有有list权限的eps下的资源。  支持多值查询，查询条件格式： *enterprise_project_id=xxx&enterprise_project_id=xxx*。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
+        **参数解释**：资源所属的企业项目ID。 支持多值查询，查询条件格式：*enterprise_project_id=xxx&enterprise_project_id=xxx*。  **约束限制**： - 如果enterprise_project_id不传值，默认查询所有企业项目下的资源，鉴权按照细粒度权限鉴权，必须在用户组下分配elb:members:list权限。 - 如果enterprise_project_id传值，鉴权按照企业项目权限鉴权，分为传入具体eps_id和all_granted_eps两种场景，前者查询指定eps_id的eps下的资源，后者查询的是所有有list权限的eps下的资源。  **取值范围**：不涉及  **默认取值**：不涉及  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
 
         :return: The enterprise_project_id of this ListAllMembersRequest.
         :rtype: list[str]
@@ -396,7 +396,7 @@ class ListAllMembersRequest:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this ListAllMembersRequest.
 
-        参数解释：所属的企业项目ID。 如果enterprise_project_id不传值，默认查询所有企业项目下的资源，鉴权按照细粒度权限鉴权，必须在用户组下分配elb:members:list权限。 如果enterprise_project_id传值，鉴权按照企业项目权限鉴权，分为传入具体eps_id和all_granted_eps两种场景，前者查询指定eps_id的eps下的资源，后者查询的是所有有list权限的eps下的资源。  支持多值查询，查询条件格式： *enterprise_project_id=xxx&enterprise_project_id=xxx*。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
+        **参数解释**：资源所属的企业项目ID。 支持多值查询，查询条件格式：*enterprise_project_id=xxx&enterprise_project_id=xxx*。  **约束限制**： - 如果enterprise_project_id不传值，默认查询所有企业项目下的资源，鉴权按照细粒度权限鉴权，必须在用户组下分配elb:members:list权限。 - 如果enterprise_project_id传值，鉴权按照企业项目权限鉴权，分为传入具体eps_id和all_granted_eps两种场景，前者查询指定eps_id的eps下的资源，后者查询的是所有有list权限的eps下的资源。  **取值范围**：不涉及  **默认取值**：不涉及  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
 
         :param enterprise_project_id: The enterprise_project_id of this ListAllMembersRequest.
         :type enterprise_project_id: list[str]
@@ -407,7 +407,7 @@ class ListAllMembersRequest:
     def ip_version(self):
         r"""Gets the ip_version of this ListAllMembersRequest.
 
-        IP版本，取值v4、v6。  支持多值查询，查询条件格式：*ip_version=xxx&ip_version=xxx*。
+        **参数解释**：IP版本。 支持多值查询，查询条件格式：*ip_version=xxx&ip_version=xxx*。  **约束限制**：不涉及  **取值范围**：v4、v6  **默认取值**：不涉及
 
         :return: The ip_version of this ListAllMembersRequest.
         :rtype: list[str]
@@ -418,7 +418,7 @@ class ListAllMembersRequest:
     def ip_version(self, ip_version):
         r"""Sets the ip_version of this ListAllMembersRequest.
 
-        IP版本，取值v4、v6。  支持多值查询，查询条件格式：*ip_version=xxx&ip_version=xxx*。
+        **参数解释**：IP版本。 支持多值查询，查询条件格式：*ip_version=xxx&ip_version=xxx*。  **约束限制**：不涉及  **取值范围**：v4、v6  **默认取值**：不涉及
 
         :param ip_version: The ip_version of this ListAllMembersRequest.
         :type ip_version: list[str]
@@ -429,7 +429,7 @@ class ListAllMembersRequest:
     def pool_id(self):
         r"""Gets the pool_id of this ListAllMembersRequest.
 
-        member所属的服务器组ID  支持多值查询，查询条件格式：*pool_id=xxx&pool_id=xxx*。
+        **参数解释**：member所属的服务器组ID。 支持多值查询，查询条件格式：*pool_id=xxx&pool_id=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The pool_id of this ListAllMembersRequest.
         :rtype: list[str]
@@ -440,7 +440,7 @@ class ListAllMembersRequest:
     def pool_id(self, pool_id):
         r"""Sets the pool_id of this ListAllMembersRequest.
 
-        member所属的服务器组ID  支持多值查询，查询条件格式：*pool_id=xxx&pool_id=xxx*。
+        **参数解释**：member所属的服务器组ID。 支持多值查询，查询条件格式：*pool_id=xxx&pool_id=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param pool_id: The pool_id of this ListAllMembersRequest.
         :type pool_id: list[str]
@@ -451,7 +451,7 @@ class ListAllMembersRequest:
     def loadbalancer_id(self):
         r"""Gets the loadbalancer_id of this ListAllMembersRequest.
 
-        member所属的负载均衡器ID。  支持多值查询，查询条件格式：*loadbalancer_id=xxx&loadbalancer_id=xxx*。
+        **参数解释**：负载均衡器ID。 支持多值查询，查询条件格式：*loadbalancer_id=xxx&loadbalancer_id=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The loadbalancer_id of this ListAllMembersRequest.
         :rtype: list[str]
@@ -462,7 +462,7 @@ class ListAllMembersRequest:
     def loadbalancer_id(self, loadbalancer_id):
         r"""Sets the loadbalancer_id of this ListAllMembersRequest.
 
-        member所属的负载均衡器ID。  支持多值查询，查询条件格式：*loadbalancer_id=xxx&loadbalancer_id=xxx*。
+        **参数解释**：负载均衡器ID。 支持多值查询，查询条件格式：*loadbalancer_id=xxx&loadbalancer_id=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param loadbalancer_id: The loadbalancer_id of this ListAllMembersRequest.
         :type loadbalancer_id: list[str]

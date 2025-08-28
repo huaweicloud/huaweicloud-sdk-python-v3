@@ -33,7 +33,7 @@ class AsymmetricSignatureWithDomainId:
 
         :param domain_id: 账号ID。
         :type domain_id: str
-        :param asymmetric_signature_switch: 凭证非对称签名开关。
+        :param asymmetric_signature_switch: 非对称签名开关。
         :type asymmetric_signature_switch: bool
         """
         
@@ -72,7 +72,7 @@ class AsymmetricSignatureWithDomainId:
     def asymmetric_signature_switch(self):
         r"""Gets the asymmetric_signature_switch of this AsymmetricSignatureWithDomainId.
 
-        凭证非对称签名开关。
+        非对称签名开关。
 
         :return: The asymmetric_signature_switch of this AsymmetricSignatureWithDomainId.
         :rtype: bool
@@ -83,7 +83,7 @@ class AsymmetricSignatureWithDomainId:
     def asymmetric_signature_switch(self, asymmetric_signature_switch):
         r"""Sets the asymmetric_signature_switch of this AsymmetricSignatureWithDomainId.
 
-        凭证非对称签名开关。
+        非对称签名开关。
 
         :param asymmetric_signature_switch: The asymmetric_signature_switch of this AsymmetricSignatureWithDomainId.
         :type asymmetric_signature_switch: bool

@@ -37,15 +37,15 @@ class UpdateMemberOption:
 
         The model defined in huaweicloud sdk
 
-        :param admin_state_up: 后端服务器的管理状态。  取值：true、false。  虽然创建、更新请求支持该字段，但实际取值决定于后端服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。  请勿传入该字段。
+        :param admin_state_up: **参数解释**：后端服务器的管理状态。 虽然创建、更新请求支持该字段，但实际取值决定于后端服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。  **约束限制**：请勿传入该字段。  **取值范围**：true、false  **默认取值**：不涉及
         :type admin_state_up: bool
-        :param availability_zone: 参数解释：后端服务器的可用区。  约束限制： 仅支持iptarget类型的后端服务器更新该字段。且后端服务器组开启可用区亲和时，iptarget类型的后端服务器必须配置该字段，且无法更新为\&quot;\&quot;。 取值范围：本region中ECS可选择的可用区。
+        :param availability_zone: **参数解释**：后端服务器的可用区。  **约束限制**： 仅支持IP类型后端服务器更新该字段。且后端服务器组开启可用区亲和时，IP类型后端服务器必须配置该字段，且无法更新为\&quot;\&quot;。  **取值范围**：本region中ECS可选择的可用区。  **默认取值**：不涉及
         :type availability_zone: str
-        :param name: 后端服务器名称。
+        :param name: **参数解释**：后端服务器名称。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type name: str
-        :param weight: 后端服务器的权重，请求将根据pool配置的负载均衡算法和后端服务器的权重进行负载分发。 权重值越大，分发的请求越多。权重为0的后端不再接受新的请求。  取值：0-100，默认1。  使用说明：若所在pool的lb_algorithm取值为SOURCE_IP或QUIC_CID，该字段无效。
+        :param weight: **参数解释**：后端服务器的权重，请求将根据pool配置的负载均衡算法和后端服务器的权重进行负载分发。权重值越大，分发的请求越多。权重为0的后端不再接受新的请求。  **约束限制**：若所在pool的lb_algorithm取值为SOURCE_IP或QUIC_CID，该字段无效。  **取值范围**：0-100  **默认取值**：1
         :type weight: int
-        :param protocol_port: 后端服务器端口。  在开启端口透传的pool下的member，该字段无法更新。  [网关型LB，即pool协议为IP时，protocol_port必须设置为0。](tag:hws_eu)
+        :param protocol_port: **参数解释**：后端服务器端口。  **约束限制**： - 在开启端口透传的pool下的member，该字段无法更新。 [- 网关型LB，即pool协议为IP时，protocol_port必须设置为0。](tag:hws_eu)  **默认取值**：不涉及
         :type protocol_port: int
         """
         
@@ -73,7 +73,7 @@ class UpdateMemberOption:
     def admin_state_up(self):
         r"""Gets the admin_state_up of this UpdateMemberOption.
 
-        后端服务器的管理状态。  取值：true、false。  虽然创建、更新请求支持该字段，但实际取值决定于后端服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。  请勿传入该字段。
+        **参数解释**：后端服务器的管理状态。 虽然创建、更新请求支持该字段，但实际取值决定于后端服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。  **约束限制**：请勿传入该字段。  **取值范围**：true、false  **默认取值**：不涉及
 
         :return: The admin_state_up of this UpdateMemberOption.
         :rtype: bool
@@ -84,7 +84,7 @@ class UpdateMemberOption:
     def admin_state_up(self, admin_state_up):
         r"""Sets the admin_state_up of this UpdateMemberOption.
 
-        后端服务器的管理状态。  取值：true、false。  虽然创建、更新请求支持该字段，但实际取值决定于后端服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。  请勿传入该字段。
+        **参数解释**：后端服务器的管理状态。 虽然创建、更新请求支持该字段，但实际取值决定于后端服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。  **约束限制**：请勿传入该字段。  **取值范围**：true、false  **默认取值**：不涉及
 
         :param admin_state_up: The admin_state_up of this UpdateMemberOption.
         :type admin_state_up: bool
@@ -95,7 +95,7 @@ class UpdateMemberOption:
     def availability_zone(self):
         r"""Gets the availability_zone of this UpdateMemberOption.
 
-        参数解释：后端服务器的可用区。  约束限制： 仅支持iptarget类型的后端服务器更新该字段。且后端服务器组开启可用区亲和时，iptarget类型的后端服务器必须配置该字段，且无法更新为\"\"。 取值范围：本region中ECS可选择的可用区。
+        **参数解释**：后端服务器的可用区。  **约束限制**： 仅支持IP类型后端服务器更新该字段。且后端服务器组开启可用区亲和时，IP类型后端服务器必须配置该字段，且无法更新为\"\"。  **取值范围**：本region中ECS可选择的可用区。  **默认取值**：不涉及
 
         :return: The availability_zone of this UpdateMemberOption.
         :rtype: str
@@ -106,7 +106,7 @@ class UpdateMemberOption:
     def availability_zone(self, availability_zone):
         r"""Sets the availability_zone of this UpdateMemberOption.
 
-        参数解释：后端服务器的可用区。  约束限制： 仅支持iptarget类型的后端服务器更新该字段。且后端服务器组开启可用区亲和时，iptarget类型的后端服务器必须配置该字段，且无法更新为\"\"。 取值范围：本region中ECS可选择的可用区。
+        **参数解释**：后端服务器的可用区。  **约束限制**： 仅支持IP类型后端服务器更新该字段。且后端服务器组开启可用区亲和时，IP类型后端服务器必须配置该字段，且无法更新为\"\"。  **取值范围**：本region中ECS可选择的可用区。  **默认取值**：不涉及
 
         :param availability_zone: The availability_zone of this UpdateMemberOption.
         :type availability_zone: str
@@ -117,7 +117,7 @@ class UpdateMemberOption:
     def name(self):
         r"""Gets the name of this UpdateMemberOption.
 
-        后端服务器名称。
+        **参数解释**：后端服务器名称。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The name of this UpdateMemberOption.
         :rtype: str
@@ -128,7 +128,7 @@ class UpdateMemberOption:
     def name(self, name):
         r"""Sets the name of this UpdateMemberOption.
 
-        后端服务器名称。
+        **参数解释**：后端服务器名称。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param name: The name of this UpdateMemberOption.
         :type name: str
@@ -139,7 +139,7 @@ class UpdateMemberOption:
     def weight(self):
         r"""Gets the weight of this UpdateMemberOption.
 
-        后端服务器的权重，请求将根据pool配置的负载均衡算法和后端服务器的权重进行负载分发。 权重值越大，分发的请求越多。权重为0的后端不再接受新的请求。  取值：0-100，默认1。  使用说明：若所在pool的lb_algorithm取值为SOURCE_IP或QUIC_CID，该字段无效。
+        **参数解释**：后端服务器的权重，请求将根据pool配置的负载均衡算法和后端服务器的权重进行负载分发。权重值越大，分发的请求越多。权重为0的后端不再接受新的请求。  **约束限制**：若所在pool的lb_algorithm取值为SOURCE_IP或QUIC_CID，该字段无效。  **取值范围**：0-100  **默认取值**：1
 
         :return: The weight of this UpdateMemberOption.
         :rtype: int
@@ -150,7 +150,7 @@ class UpdateMemberOption:
     def weight(self, weight):
         r"""Sets the weight of this UpdateMemberOption.
 
-        后端服务器的权重，请求将根据pool配置的负载均衡算法和后端服务器的权重进行负载分发。 权重值越大，分发的请求越多。权重为0的后端不再接受新的请求。  取值：0-100，默认1。  使用说明：若所在pool的lb_algorithm取值为SOURCE_IP或QUIC_CID，该字段无效。
+        **参数解释**：后端服务器的权重，请求将根据pool配置的负载均衡算法和后端服务器的权重进行负载分发。权重值越大，分发的请求越多。权重为0的后端不再接受新的请求。  **约束限制**：若所在pool的lb_algorithm取值为SOURCE_IP或QUIC_CID，该字段无效。  **取值范围**：0-100  **默认取值**：1
 
         :param weight: The weight of this UpdateMemberOption.
         :type weight: int
@@ -161,7 +161,7 @@ class UpdateMemberOption:
     def protocol_port(self):
         r"""Gets the protocol_port of this UpdateMemberOption.
 
-        后端服务器端口。  在开启端口透传的pool下的member，该字段无法更新。  [网关型LB，即pool协议为IP时，protocol_port必须设置为0。](tag:hws_eu)
+        **参数解释**：后端服务器端口。  **约束限制**： - 在开启端口透传的pool下的member，该字段无法更新。 [- 网关型LB，即pool协议为IP时，protocol_port必须设置为0。](tag:hws_eu)  **默认取值**：不涉及
 
         :return: The protocol_port of this UpdateMemberOption.
         :rtype: int
@@ -172,7 +172,7 @@ class UpdateMemberOption:
     def protocol_port(self, protocol_port):
         r"""Sets the protocol_port of this UpdateMemberOption.
 
-        后端服务器端口。  在开启端口透传的pool下的member，该字段无法更新。  [网关型LB，即pool协议为IP时，protocol_port必须设置为0。](tag:hws_eu)
+        **参数解释**：后端服务器端口。  **约束限制**： - 在开启端口透传的pool下的member，该字段无法更新。 [- 网关型LB，即pool协议为IP时，protocol_port必须设置为0。](tag:hws_eu)  **默认取值**：不涉及
 
         :param protocol_port: The protocol_port of this UpdateMemberOption.
         :type protocol_port: int

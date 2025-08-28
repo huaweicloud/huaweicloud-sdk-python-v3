@@ -29,7 +29,7 @@ class ResourceID:
 
         The model defined in huaweicloud sdk
 
-        :param id: 资源ID
+        :param id: **参数解释**：资源ID
         :type id: str
         """
         
@@ -44,7 +44,7 @@ class ResourceID:
     def id(self):
         r"""Gets the id of this ResourceID.
 
-        资源ID
+        **参数解释**：资源ID
 
         :return: The id of this ResourceID.
         :rtype: str
@@ -55,7 +55,7 @@ class ResourceID:
     def id(self, id):
         r"""Sets the id of this ResourceID.
 
-        资源ID
+        **参数解释**：资源ID
 
         :param id: The id of this ResourceID.
         :type id: str

@@ -154,5 +154,23 @@ def test_build_request_with_authorization(mocked_client):
     assert "Authorization" in request.header_params
 
 
+def test_build_request_with_ua_in_headers(mocked_client):
+    request = mocked_client.build_future_request(
+        method="GET",
+        resource_path="/user-agent",
+        path_params={},
+        query_params=[("size", "1")],
+        header_params={"User-Agent": "test"},
+        request_body=None,
+        post_params={},
+        cname=None,
+        response_type=None,
+        collection_formats={},
+        progress_callback=None
+    ).result()
+
+    assert request.header_params.get("User-Agent") == "huaweicloud-usdk-python/3.0; test"
+
+
 if __name__ == '__main__':
     pytest.main()

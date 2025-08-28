@@ -31,9 +31,9 @@ class TimingRangeConfigInfo:
 
         The model defined in huaweicloud sdk
 
-        :param time_range: 时间范围
+        :param time_range: **参数解释**: 自动关闭防护的时间段范围 **取值范围**: 字符长度0-512位 
         :type time_range: str
-        :param description: 描述
+        :param description: **参数解释**: 自动关闭防护的时间段描述 **取值范围**: 字符长度0-512位 
         :type description: str
         """
         
@@ -52,7 +52,7 @@ class TimingRangeConfigInfo:
     def time_range(self):
         r"""Gets the time_range of this TimingRangeConfigInfo.
 
-        时间范围
+        **参数解释**: 自动关闭防护的时间段范围 **取值范围**: 字符长度0-512位 
 
         :return: The time_range of this TimingRangeConfigInfo.
         :rtype: str
@@ -63,7 +63,7 @@ class TimingRangeConfigInfo:
     def time_range(self, time_range):
         r"""Sets the time_range of this TimingRangeConfigInfo.
 
-        时间范围
+        **参数解释**: 自动关闭防护的时间段范围 **取值范围**: 字符长度0-512位 
 
         :param time_range: The time_range of this TimingRangeConfigInfo.
         :type time_range: str
@@ -74,7 +74,7 @@ class TimingRangeConfigInfo:
     def description(self):
         r"""Gets the description of this TimingRangeConfigInfo.
 
-        描述
+        **参数解释**: 自动关闭防护的时间段描述 **取值范围**: 字符长度0-512位 
 
         :return: The description of this TimingRangeConfigInfo.
         :rtype: str
@@ -85,7 +85,7 @@ class TimingRangeConfigInfo:
     def description(self, description):
         r"""Sets the description of this TimingRangeConfigInfo.
 
-        描述
+        **参数解释**: 自动关闭防护的时间段描述 **取值范围**: 字符长度0-512位 
 
         :param description: The description of this TimingRangeConfigInfo.
         :type description: str

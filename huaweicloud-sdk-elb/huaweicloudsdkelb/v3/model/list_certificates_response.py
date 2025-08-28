@@ -34,11 +34,11 @@ class ListCertificatesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param request_id: 请求ID。  注：自动生成 。
+        :param request_id: **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
         :type request_id: str
         :param page_info: 
         :type page_info: :class:`huaweicloudsdkelb.v3.PageInfo`
-        :param certificates: 证书对象列表。
+        :param certificates: **参数解释**：证书对象列表。
         :type certificates: list[:class:`huaweicloudsdkelb.v3.CertificateInfo`]
         """
         
@@ -60,7 +60,7 @@ class ListCertificatesResponse(SdkResponse):
     def request_id(self):
         r"""Gets the request_id of this ListCertificatesResponse.
 
-        请求ID。  注：自动生成 。
+        **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
 
         :return: The request_id of this ListCertificatesResponse.
         :rtype: str
@@ -71,7 +71,7 @@ class ListCertificatesResponse(SdkResponse):
     def request_id(self, request_id):
         r"""Sets the request_id of this ListCertificatesResponse.
 
-        请求ID。  注：自动生成 。
+        **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
 
         :param request_id: The request_id of this ListCertificatesResponse.
         :type request_id: str
@@ -100,7 +100,7 @@ class ListCertificatesResponse(SdkResponse):
     def certificates(self):
         r"""Gets the certificates of this ListCertificatesResponse.
 
-        证书对象列表。
+        **参数解释**：证书对象列表。
 
         :return: The certificates of this ListCertificatesResponse.
         :rtype: list[:class:`huaweicloudsdkelb.v3.CertificateInfo`]
@@ -111,7 +111,7 @@ class ListCertificatesResponse(SdkResponse):
     def certificates(self, certificates):
         r"""Sets the certificates of this ListCertificatesResponse.
 
-        证书对象列表。
+        **参数解释**：证书对象列表。
 
         :param certificates: The certificates of this ListCertificatesResponse.
         :type certificates: list[:class:`huaweicloudsdkelb.v3.CertificateInfo`]

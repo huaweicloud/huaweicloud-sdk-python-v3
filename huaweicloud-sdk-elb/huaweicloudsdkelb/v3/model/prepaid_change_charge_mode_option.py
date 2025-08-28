@@ -39,17 +39,17 @@ class PrepaidChangeChargeModeOption:
 
         The model defined in huaweicloud sdk
 
-        :param include_publicip: 是否连同独享按带宽计费的弹性公网IP一起转包周期。 1. 弹性公网IP转包周期之后可以单独解绑，绑定到其他实例，删除 2. 只有独享且按带宽计费的弹性公网IP才被允许转包周期 默认值：false
+        :param include_publicip: **参数解释**：是否连同独享按带宽计费的弹性公网IP一起转包周期。 弹性公网IP转包周期之后可以单独解绑、绑定到其他实例和删除EIP。  **约束限制**：只有独享且按带宽计费的弹性公网IP才被允许转包周期。  **取值范围**： - true：连同EIP一起转包周期。 - false：仅转ELB，不转EIP。  **默认取值**：false
         :type include_publicip: bool
-        :param publicip_ids: 需要一起按需转包的弹性公网IP的ID。 若include_publicip为false，不能指定该字段。 若include_publicip为true，该字段为未指定时，表示所有绑定的v4 eip都需要一起转包周期。 若include_publicip为true，该字段列表非空，表示只将指定的v4 eip转包。 若include_publicip为true，该字段列表为空，表示不指定任一eip转包，与include_publicip为false等效。
+        :param publicip_ids: **参数解释**：需要一起按需转包的弹性公网IP的ID。  **约束限制**： - 若include_publicip为false，不能指定该字段。 - 若include_publicip为true，该字段为未指定时，表示所有绑定的v4 eip都需要一起转包周期。 - 若include_publicip为true，该字段列表非空，表示只将指定的v4 eip转包。 - 若include_publicip为true，该字段列表为空，表示不指定任一eip转包，与include_publicip为false等效。  **取值范围**：不涉及  **默认取值**：不涉及
         :type publicip_ids: list[str]
-        :param period_type: 订购周期类型，当前支持包月和包年： month：月（默认）； year：年；
+        :param period_type: **参数解释**：订购周期类型。  **约束限制**：不涉及  **取值范围**： - month：月 - year：年  **默认取值**：month
         :type period_type: str
-        :param period_num: 订购周期数（默认1），取值会随运营策略变化。 period_type为month时，为[1,9]， period_type为year时，为[1,3]
+        :param period_num: **参数解释**：订购周期数，取值会随运营策略变化。  **约束限制**：不涉及  **取值范围**： - period_type为month时，为[1,9] - period_type为year时，为[1,3]  **默认取值**：1
         :type period_num: int
-        :param auto_renew: 是否自动续订； true：自动续订 false：不自动续订（默认）
+        :param auto_renew: **参数解释**：是否自动续订。  **约束限制**：不涉及  **取值范围**： - true：自动续订。 - false：不自动续订。  **默认取值**：false
         :type auto_renew: bool
-        :param auto_pay: 下单订购后，是否自动从客户的账户中支付； true：自动支付； false：不自动支付（默认）。 自动支付时，只能使用账户的现金支付；如果要使用代金券，请选择不自动支付，然后在用户费用中心，选择代金券支付。
+        :param auto_pay: **参数解释**：下单订购后，是否自动从客户的账户中支付。  **约束限制**：自动支付时，只能使用账户的现金支付；如果要使用代金券，请选择不自动支付，然后在用户费用中心，选择代金券支付。  **取值范围**： - true：自动支付。 - false：不自动支付。  **默认取值**：false
         :type auto_pay: bool
         """
         
@@ -79,7 +79,7 @@ class PrepaidChangeChargeModeOption:
     def include_publicip(self):
         r"""Gets the include_publicip of this PrepaidChangeChargeModeOption.
 
-        是否连同独享按带宽计费的弹性公网IP一起转包周期。 1. 弹性公网IP转包周期之后可以单独解绑，绑定到其他实例，删除 2. 只有独享且按带宽计费的弹性公网IP才被允许转包周期 默认值：false
+        **参数解释**：是否连同独享按带宽计费的弹性公网IP一起转包周期。 弹性公网IP转包周期之后可以单独解绑、绑定到其他实例和删除EIP。  **约束限制**：只有独享且按带宽计费的弹性公网IP才被允许转包周期。  **取值范围**： - true：连同EIP一起转包周期。 - false：仅转ELB，不转EIP。  **默认取值**：false
 
         :return: The include_publicip of this PrepaidChangeChargeModeOption.
         :rtype: bool
@@ -90,7 +90,7 @@ class PrepaidChangeChargeModeOption:
     def include_publicip(self, include_publicip):
         r"""Sets the include_publicip of this PrepaidChangeChargeModeOption.
 
-        是否连同独享按带宽计费的弹性公网IP一起转包周期。 1. 弹性公网IP转包周期之后可以单独解绑，绑定到其他实例，删除 2. 只有独享且按带宽计费的弹性公网IP才被允许转包周期 默认值：false
+        **参数解释**：是否连同独享按带宽计费的弹性公网IP一起转包周期。 弹性公网IP转包周期之后可以单独解绑、绑定到其他实例和删除EIP。  **约束限制**：只有独享且按带宽计费的弹性公网IP才被允许转包周期。  **取值范围**： - true：连同EIP一起转包周期。 - false：仅转ELB，不转EIP。  **默认取值**：false
 
         :param include_publicip: The include_publicip of this PrepaidChangeChargeModeOption.
         :type include_publicip: bool
@@ -101,7 +101,7 @@ class PrepaidChangeChargeModeOption:
     def publicip_ids(self):
         r"""Gets the publicip_ids of this PrepaidChangeChargeModeOption.
 
-        需要一起按需转包的弹性公网IP的ID。 若include_publicip为false，不能指定该字段。 若include_publicip为true，该字段为未指定时，表示所有绑定的v4 eip都需要一起转包周期。 若include_publicip为true，该字段列表非空，表示只将指定的v4 eip转包。 若include_publicip为true，该字段列表为空，表示不指定任一eip转包，与include_publicip为false等效。
+        **参数解释**：需要一起按需转包的弹性公网IP的ID。  **约束限制**： - 若include_publicip为false，不能指定该字段。 - 若include_publicip为true，该字段为未指定时，表示所有绑定的v4 eip都需要一起转包周期。 - 若include_publicip为true，该字段列表非空，表示只将指定的v4 eip转包。 - 若include_publicip为true，该字段列表为空，表示不指定任一eip转包，与include_publicip为false等效。  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The publicip_ids of this PrepaidChangeChargeModeOption.
         :rtype: list[str]
@@ -112,7 +112,7 @@ class PrepaidChangeChargeModeOption:
     def publicip_ids(self, publicip_ids):
         r"""Sets the publicip_ids of this PrepaidChangeChargeModeOption.
 
-        需要一起按需转包的弹性公网IP的ID。 若include_publicip为false，不能指定该字段。 若include_publicip为true，该字段为未指定时，表示所有绑定的v4 eip都需要一起转包周期。 若include_publicip为true，该字段列表非空，表示只将指定的v4 eip转包。 若include_publicip为true，该字段列表为空，表示不指定任一eip转包，与include_publicip为false等效。
+        **参数解释**：需要一起按需转包的弹性公网IP的ID。  **约束限制**： - 若include_publicip为false，不能指定该字段。 - 若include_publicip为true，该字段为未指定时，表示所有绑定的v4 eip都需要一起转包周期。 - 若include_publicip为true，该字段列表非空，表示只将指定的v4 eip转包。 - 若include_publicip为true，该字段列表为空，表示不指定任一eip转包，与include_publicip为false等效。  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param publicip_ids: The publicip_ids of this PrepaidChangeChargeModeOption.
         :type publicip_ids: list[str]
@@ -123,7 +123,7 @@ class PrepaidChangeChargeModeOption:
     def period_type(self):
         r"""Gets the period_type of this PrepaidChangeChargeModeOption.
 
-        订购周期类型，当前支持包月和包年： month：月（默认）； year：年；
+        **参数解释**：订购周期类型。  **约束限制**：不涉及  **取值范围**： - month：月 - year：年  **默认取值**：month
 
         :return: The period_type of this PrepaidChangeChargeModeOption.
         :rtype: str
@@ -134,7 +134,7 @@ class PrepaidChangeChargeModeOption:
     def period_type(self, period_type):
         r"""Sets the period_type of this PrepaidChangeChargeModeOption.
 
-        订购周期类型，当前支持包月和包年： month：月（默认）； year：年；
+        **参数解释**：订购周期类型。  **约束限制**：不涉及  **取值范围**： - month：月 - year：年  **默认取值**：month
 
         :param period_type: The period_type of this PrepaidChangeChargeModeOption.
         :type period_type: str
@@ -145,7 +145,7 @@ class PrepaidChangeChargeModeOption:
     def period_num(self):
         r"""Gets the period_num of this PrepaidChangeChargeModeOption.
 
-        订购周期数（默认1），取值会随运营策略变化。 period_type为month时，为[1,9]， period_type为year时，为[1,3]
+        **参数解释**：订购周期数，取值会随运营策略变化。  **约束限制**：不涉及  **取值范围**： - period_type为month时，为[1,9] - period_type为year时，为[1,3]  **默认取值**：1
 
         :return: The period_num of this PrepaidChangeChargeModeOption.
         :rtype: int
@@ -156,7 +156,7 @@ class PrepaidChangeChargeModeOption:
     def period_num(self, period_num):
         r"""Sets the period_num of this PrepaidChangeChargeModeOption.
 
-        订购周期数（默认1），取值会随运营策略变化。 period_type为month时，为[1,9]， period_type为year时，为[1,3]
+        **参数解释**：订购周期数，取值会随运营策略变化。  **约束限制**：不涉及  **取值范围**： - period_type为month时，为[1,9] - period_type为year时，为[1,3]  **默认取值**：1
 
         :param period_num: The period_num of this PrepaidChangeChargeModeOption.
         :type period_num: int
@@ -167,7 +167,7 @@ class PrepaidChangeChargeModeOption:
     def auto_renew(self):
         r"""Gets the auto_renew of this PrepaidChangeChargeModeOption.
 
-        是否自动续订； true：自动续订 false：不自动续订（默认）
+        **参数解释**：是否自动续订。  **约束限制**：不涉及  **取值范围**： - true：自动续订。 - false：不自动续订。  **默认取值**：false
 
         :return: The auto_renew of this PrepaidChangeChargeModeOption.
         :rtype: bool
@@ -178,7 +178,7 @@ class PrepaidChangeChargeModeOption:
     def auto_renew(self, auto_renew):
         r"""Sets the auto_renew of this PrepaidChangeChargeModeOption.
 
-        是否自动续订； true：自动续订 false：不自动续订（默认）
+        **参数解释**：是否自动续订。  **约束限制**：不涉及  **取值范围**： - true：自动续订。 - false：不自动续订。  **默认取值**：false
 
         :param auto_renew: The auto_renew of this PrepaidChangeChargeModeOption.
         :type auto_renew: bool
@@ -189,7 +189,7 @@ class PrepaidChangeChargeModeOption:
     def auto_pay(self):
         r"""Gets the auto_pay of this PrepaidChangeChargeModeOption.
 
-        下单订购后，是否自动从客户的账户中支付； true：自动支付； false：不自动支付（默认）。 自动支付时，只能使用账户的现金支付；如果要使用代金券，请选择不自动支付，然后在用户费用中心，选择代金券支付。
+        **参数解释**：下单订购后，是否自动从客户的账户中支付。  **约束限制**：自动支付时，只能使用账户的现金支付；如果要使用代金券，请选择不自动支付，然后在用户费用中心，选择代金券支付。  **取值范围**： - true：自动支付。 - false：不自动支付。  **默认取值**：false
 
         :return: The auto_pay of this PrepaidChangeChargeModeOption.
         :rtype: bool
@@ -200,7 +200,7 @@ class PrepaidChangeChargeModeOption:
     def auto_pay(self, auto_pay):
         r"""Sets the auto_pay of this PrepaidChangeChargeModeOption.
 
-        下单订购后，是否自动从客户的账户中支付； true：自动支付； false：不自动支付（默认）。 自动支付时，只能使用账户的现金支付；如果要使用代金券，请选择不自动支付，然后在用户费用中心，选择代金券支付。
+        **参数解释**：下单订购后，是否自动从客户的账户中支付。  **约束限制**：自动支付时，只能使用账户的现金支付；如果要使用代金券，请选择不自动支付，然后在用户费用中心，选择代金券支付。  **取值范围**： - true：自动支付。 - false：不自动支付。  **默认取值**：false
 
         :param auto_pay: The auto_pay of this PrepaidChangeChargeModeOption.
         :type auto_pay: bool

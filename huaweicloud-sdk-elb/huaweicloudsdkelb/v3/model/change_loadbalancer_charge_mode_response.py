@@ -36,13 +36,13 @@ class ChangeLoadbalancerChargeModeResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param eip_id_list: 转包周期下单成功的EIP ID列表
+        :param eip_id_list: **参数解释**：转包周期下单成功的EIP ID列表。  **取值范围**：不涉及
         :type eip_id_list: list[str]
-        :param loadbalancer_id_list: 转包周期下单成功的LB ID列表
+        :param loadbalancer_id_list: **参数解释**：转包周期下单成功的LB ID列表。  **取值范围**：不涉及
         :type loadbalancer_id_list: list[str]
-        :param order_id: 转包周期订单号
+        :param order_id: **参数解释**：转包周期订单号。  **取值范围**：不涉及
         :type order_id: str
-        :param request_id: 请求的UUIID
+        :param request_id: **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
         :type request_id: str
         """
         
@@ -67,7 +67,7 @@ class ChangeLoadbalancerChargeModeResponse(SdkResponse):
     def eip_id_list(self):
         r"""Gets the eip_id_list of this ChangeLoadbalancerChargeModeResponse.
 
-        转包周期下单成功的EIP ID列表
+        **参数解释**：转包周期下单成功的EIP ID列表。  **取值范围**：不涉及
 
         :return: The eip_id_list of this ChangeLoadbalancerChargeModeResponse.
         :rtype: list[str]
@@ -78,7 +78,7 @@ class ChangeLoadbalancerChargeModeResponse(SdkResponse):
     def eip_id_list(self, eip_id_list):
         r"""Sets the eip_id_list of this ChangeLoadbalancerChargeModeResponse.
 
-        转包周期下单成功的EIP ID列表
+        **参数解释**：转包周期下单成功的EIP ID列表。  **取值范围**：不涉及
 
         :param eip_id_list: The eip_id_list of this ChangeLoadbalancerChargeModeResponse.
         :type eip_id_list: list[str]
@@ -89,7 +89,7 @@ class ChangeLoadbalancerChargeModeResponse(SdkResponse):
     def loadbalancer_id_list(self):
         r"""Gets the loadbalancer_id_list of this ChangeLoadbalancerChargeModeResponse.
 
-        转包周期下单成功的LB ID列表
+        **参数解释**：转包周期下单成功的LB ID列表。  **取值范围**：不涉及
 
         :return: The loadbalancer_id_list of this ChangeLoadbalancerChargeModeResponse.
         :rtype: list[str]
@@ -100,7 +100,7 @@ class ChangeLoadbalancerChargeModeResponse(SdkResponse):
     def loadbalancer_id_list(self, loadbalancer_id_list):
         r"""Sets the loadbalancer_id_list of this ChangeLoadbalancerChargeModeResponse.
 
-        转包周期下单成功的LB ID列表
+        **参数解释**：转包周期下单成功的LB ID列表。  **取值范围**：不涉及
 
         :param loadbalancer_id_list: The loadbalancer_id_list of this ChangeLoadbalancerChargeModeResponse.
         :type loadbalancer_id_list: list[str]
@@ -111,7 +111,7 @@ class ChangeLoadbalancerChargeModeResponse(SdkResponse):
     def order_id(self):
         r"""Gets the order_id of this ChangeLoadbalancerChargeModeResponse.
 
-        转包周期订单号
+        **参数解释**：转包周期订单号。  **取值范围**：不涉及
 
         :return: The order_id of this ChangeLoadbalancerChargeModeResponse.
         :rtype: str
@@ -122,7 +122,7 @@ class ChangeLoadbalancerChargeModeResponse(SdkResponse):
     def order_id(self, order_id):
         r"""Sets the order_id of this ChangeLoadbalancerChargeModeResponse.
 
-        转包周期订单号
+        **参数解释**：转包周期订单号。  **取值范围**：不涉及
 
         :param order_id: The order_id of this ChangeLoadbalancerChargeModeResponse.
         :type order_id: str
@@ -133,7 +133,7 @@ class ChangeLoadbalancerChargeModeResponse(SdkResponse):
     def request_id(self):
         r"""Gets the request_id of this ChangeLoadbalancerChargeModeResponse.
 
-        请求的UUIID
+        **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
 
         :return: The request_id of this ChangeLoadbalancerChargeModeResponse.
         :rtype: str
@@ -144,7 +144,7 @@ class ChangeLoadbalancerChargeModeResponse(SdkResponse):
     def request_id(self, request_id):
         r"""Sets the request_id of this ChangeLoadbalancerChargeModeResponse.
 
-        请求的UUIID
+        **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
 
         :param request_id: The request_id of this ChangeLoadbalancerChargeModeResponse.
         :type request_id: str

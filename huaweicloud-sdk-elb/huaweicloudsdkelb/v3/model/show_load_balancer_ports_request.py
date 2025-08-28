@@ -39,17 +39,17 @@ class ShowLoadBalancerPortsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param loadbalancer_id: 负载均衡器ID。
+        :param loadbalancer_id: **参数解释**：负载均衡器ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type loadbalancer_id: str
-        :param port_id: port id。  支持多值查询，查询条件格式：*port_id&#x3D;xxx&amp;port_id&#x3D;xxx*。
+        :param port_id: **参数解释**：负载均衡器占用的端口ID。  支持多值查询，查询条件格式：*port_id&#x3D;xxx&amp;port_id&#x3D;xxx*。
         :type port_id: list[str]
-        :param ip_address: ipv4 地址。  支持多值查询，查询条件格式：*ip_address&#x3D;xxx&amp;ip_address&#x3D;xxx*。
+        :param ip_address: **参数解释**：负载均衡器占用的私有IPv4地址。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及  支持多值查询，查询条件格式：*ip_address&#x3D;xxx&amp;ip_address&#x3D;xxx*。
         :type ip_address: list[str]
-        :param ipv6_address: ipv6 地址。  支持多值查询，查询条件格式：*ipv6_address&#x3D;xxx&amp;ipv6_address&#x3D;xxx*。
+        :param ipv6_address: **参数解释**：负载均衡器占用的IPv6地址。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及  支持多值查询，查询条件格式：*ipv6_address&#x3D;xxx&amp;ipv6_address&#x3D;xxx*。
         :type ipv6_address: list[str]
-        :param type: port类型。  支持多值查询，查询条件格式：*type&#x3D;xxx&amp;type&#x3D;xxx*。
+        :param type: **参数解释**：子网端口类型。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及  支持多值查询，查询条件格式：*type&#x3D;xxx&amp;type&#x3D;xxx*。
         :type type: list[str]
-        :param virsubnet_id: 虚拟网络id。  支持多值查询，查询条件格式：*virsubnet_id&#x3D;xxx&amp;virsubnet_id&#x3D;xxx*。
+        :param virsubnet_id: **参数解释**：子网端口所在下联面子网网络ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及  支持多值查询，查询条件格式：*virsubnet_id&#x3D;xxx&amp;virsubnet_id&#x3D;xxx*。
         :type virsubnet_id: list[str]
         """
         
@@ -79,7 +79,7 @@ class ShowLoadBalancerPortsRequest:
     def loadbalancer_id(self):
         r"""Gets the loadbalancer_id of this ShowLoadBalancerPortsRequest.
 
-        负载均衡器ID。
+        **参数解释**：负载均衡器ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The loadbalancer_id of this ShowLoadBalancerPortsRequest.
         :rtype: str
@@ -90,7 +90,7 @@ class ShowLoadBalancerPortsRequest:
     def loadbalancer_id(self, loadbalancer_id):
         r"""Sets the loadbalancer_id of this ShowLoadBalancerPortsRequest.
 
-        负载均衡器ID。
+        **参数解释**：负载均衡器ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param loadbalancer_id: The loadbalancer_id of this ShowLoadBalancerPortsRequest.
         :type loadbalancer_id: str
@@ -101,7 +101,7 @@ class ShowLoadBalancerPortsRequest:
     def port_id(self):
         r"""Gets the port_id of this ShowLoadBalancerPortsRequest.
 
-        port id。  支持多值查询，查询条件格式：*port_id=xxx&port_id=xxx*。
+        **参数解释**：负载均衡器占用的端口ID。  支持多值查询，查询条件格式：*port_id=xxx&port_id=xxx*。
 
         :return: The port_id of this ShowLoadBalancerPortsRequest.
         :rtype: list[str]
@@ -112,7 +112,7 @@ class ShowLoadBalancerPortsRequest:
     def port_id(self, port_id):
         r"""Sets the port_id of this ShowLoadBalancerPortsRequest.
 
-        port id。  支持多值查询，查询条件格式：*port_id=xxx&port_id=xxx*。
+        **参数解释**：负载均衡器占用的端口ID。  支持多值查询，查询条件格式：*port_id=xxx&port_id=xxx*。
 
         :param port_id: The port_id of this ShowLoadBalancerPortsRequest.
         :type port_id: list[str]
@@ -123,7 +123,7 @@ class ShowLoadBalancerPortsRequest:
     def ip_address(self):
         r"""Gets the ip_address of this ShowLoadBalancerPortsRequest.
 
-        ipv4 地址。  支持多值查询，查询条件格式：*ip_address=xxx&ip_address=xxx*。
+        **参数解释**：负载均衡器占用的私有IPv4地址。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及  支持多值查询，查询条件格式：*ip_address=xxx&ip_address=xxx*。
 
         :return: The ip_address of this ShowLoadBalancerPortsRequest.
         :rtype: list[str]
@@ -134,7 +134,7 @@ class ShowLoadBalancerPortsRequest:
     def ip_address(self, ip_address):
         r"""Sets the ip_address of this ShowLoadBalancerPortsRequest.
 
-        ipv4 地址。  支持多值查询，查询条件格式：*ip_address=xxx&ip_address=xxx*。
+        **参数解释**：负载均衡器占用的私有IPv4地址。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及  支持多值查询，查询条件格式：*ip_address=xxx&ip_address=xxx*。
 
         :param ip_address: The ip_address of this ShowLoadBalancerPortsRequest.
         :type ip_address: list[str]
@@ -145,7 +145,7 @@ class ShowLoadBalancerPortsRequest:
     def ipv6_address(self):
         r"""Gets the ipv6_address of this ShowLoadBalancerPortsRequest.
 
-        ipv6 地址。  支持多值查询，查询条件格式：*ipv6_address=xxx&ipv6_address=xxx*。
+        **参数解释**：负载均衡器占用的IPv6地址。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及  支持多值查询，查询条件格式：*ipv6_address=xxx&ipv6_address=xxx*。
 
         :return: The ipv6_address of this ShowLoadBalancerPortsRequest.
         :rtype: list[str]
@@ -156,7 +156,7 @@ class ShowLoadBalancerPortsRequest:
     def ipv6_address(self, ipv6_address):
         r"""Sets the ipv6_address of this ShowLoadBalancerPortsRequest.
 
-        ipv6 地址。  支持多值查询，查询条件格式：*ipv6_address=xxx&ipv6_address=xxx*。
+        **参数解释**：负载均衡器占用的IPv6地址。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及  支持多值查询，查询条件格式：*ipv6_address=xxx&ipv6_address=xxx*。
 
         :param ipv6_address: The ipv6_address of this ShowLoadBalancerPortsRequest.
         :type ipv6_address: list[str]
@@ -167,7 +167,7 @@ class ShowLoadBalancerPortsRequest:
     def type(self):
         r"""Gets the type of this ShowLoadBalancerPortsRequest.
 
-        port类型。  支持多值查询，查询条件格式：*type=xxx&type=xxx*。
+        **参数解释**：子网端口类型。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及  支持多值查询，查询条件格式：*type=xxx&type=xxx*。
 
         :return: The type of this ShowLoadBalancerPortsRequest.
         :rtype: list[str]
@@ -178,7 +178,7 @@ class ShowLoadBalancerPortsRequest:
     def type(self, type):
         r"""Sets the type of this ShowLoadBalancerPortsRequest.
 
-        port类型。  支持多值查询，查询条件格式：*type=xxx&type=xxx*。
+        **参数解释**：子网端口类型。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及  支持多值查询，查询条件格式：*type=xxx&type=xxx*。
 
         :param type: The type of this ShowLoadBalancerPortsRequest.
         :type type: list[str]
@@ -189,7 +189,7 @@ class ShowLoadBalancerPortsRequest:
     def virsubnet_id(self):
         r"""Gets the virsubnet_id of this ShowLoadBalancerPortsRequest.
 
-        虚拟网络id。  支持多值查询，查询条件格式：*virsubnet_id=xxx&virsubnet_id=xxx*。
+        **参数解释**：子网端口所在下联面子网网络ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及  支持多值查询，查询条件格式：*virsubnet_id=xxx&virsubnet_id=xxx*。
 
         :return: The virsubnet_id of this ShowLoadBalancerPortsRequest.
         :rtype: list[str]
@@ -200,7 +200,7 @@ class ShowLoadBalancerPortsRequest:
     def virsubnet_id(self, virsubnet_id):
         r"""Sets the virsubnet_id of this ShowLoadBalancerPortsRequest.
 
-        虚拟网络id。  支持多值查询，查询条件格式：*virsubnet_id=xxx&virsubnet_id=xxx*。
+        **参数解释**：子网端口所在下联面子网网络ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及  支持多值查询，查询条件格式：*virsubnet_id=xxx&virsubnet_id=xxx*。
 
         :param virsubnet_id: The virsubnet_id of this ShowLoadBalancerPortsRequest.
         :type virsubnet_id: list[str]

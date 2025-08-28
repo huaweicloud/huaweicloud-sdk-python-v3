@@ -3111,9 +3111,9 @@ class CssClient(Client):
         return http_info
 
     def start_logs(self, request):
-        r"""开启日志功能
+        r"""开启日志备份或日志采集功能
 
-        该接口用于开启日志功能。
+        该接口用于开启集群的日志备份或日志采集功能开关。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3844,9 +3844,9 @@ class CssClient(Client):
         return http_info
 
     def update_cluster_name(self, request):
-        r"""修改集群名称
+        r"""修改集群名称或描述
 
-        该接口用于修改集群名称。
+        该接口用于修改集群名称或描述。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4295,6 +4295,10 @@ class CssClient(Client):
             path_params['instance_id'] = local_var_params['instance_id']
 
         query_params = []
+        if 'migrate_data' in local_var_params:
+            query_params.append(('migrateData', local_var_params['migrate_data']))
+        if 'agency' in local_var_params:
+            query_params.append(('agency', local_var_params['agency']))
 
         header_params = {}
 

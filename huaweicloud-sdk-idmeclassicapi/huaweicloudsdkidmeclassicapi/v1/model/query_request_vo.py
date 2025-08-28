@@ -59,7 +59,7 @@ class QueryRequestVo:
         :type conditions: list[:class:`huaweicloudsdkidmeclassicapi.v1.QueryCondition`]
         :param decrypt: **参数解释：**  是否加密。  **约束限制：**  不涉及。  **取值范围：**  - true：加密。 - false：不加密。  **默认取值：**  不涉及。
         :type decrypt: bool
-        :param entity_type: **参数解释：**  实体类型。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        :param entity_type: **参数解释：**  实体类型。  **约束限制：**  不涉及。  **取值范围：**  - ENTITY：数据实体。 - RRELATION：关系实体。  **默认取值：**  不涉及。
         :type entity_type: str
         :param filter: 
         :type filter: :class:`huaweicloudsdkidmeclassicapi.v1.QueryCondition`
@@ -191,7 +191,7 @@ class QueryRequestVo:
     def entity_type(self):
         r"""Gets the entity_type of this QueryRequestVo.
 
-        **参数解释：**  实体类型。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        **参数解释：**  实体类型。  **约束限制：**  不涉及。  **取值范围：**  - ENTITY：数据实体。 - RRELATION：关系实体。  **默认取值：**  不涉及。
 
         :return: The entity_type of this QueryRequestVo.
         :rtype: str
@@ -202,7 +202,7 @@ class QueryRequestVo:
     def entity_type(self, entity_type):
         r"""Sets the entity_type of this QueryRequestVo.
 
-        **参数解释：**  实体类型。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        **参数解释：**  实体类型。  **约束限制：**  不涉及。  **取值范围：**  - ENTITY：数据实体。 - RRELATION：关系实体。  **默认取值：**  不涉及。
 
         :param entity_type: The entity_type of this QueryRequestVo.
         :type entity_type: str

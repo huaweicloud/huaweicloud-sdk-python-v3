@@ -37,15 +37,15 @@ class Logtank:
 
         The model defined in huaweicloud sdk
 
-        :param id: 云日志ID。
+        :param id: **参数解释**：云日志ID。  **取值范围**：不涉及
         :type id: str
-        :param project_id: 参数解释：项目ID。
+        :param project_id: **参数解释**：项目ID。获取方式请参见[获取项目ID](elb_fl_0008.xml)。  **取值范围**：长度为32个字符，由小写字母和数字组成。
         :type project_id: str
-        :param loadbalancer_id: 负载均衡器ID。
+        :param loadbalancer_id: **参数解释**：负载均衡器ID。  **取值范围**：不涉及
         :type loadbalancer_id: str
-        :param log_group_id: 云日志分组ID。
+        :param log_group_id: **参数解释**：云日志分组ID。  **取值范围**：不涉及
         :type log_group_id: str
-        :param log_topic_id: 云日志主题ID。
+        :param log_topic_id: **参数解释**：云日志主题ID。  **取值范围**：不涉及
         :type log_topic_id: str
         """
         
@@ -68,7 +68,7 @@ class Logtank:
     def id(self):
         r"""Gets the id of this Logtank.
 
-        云日志ID。
+        **参数解释**：云日志ID。  **取值范围**：不涉及
 
         :return: The id of this Logtank.
         :rtype: str
@@ -79,7 +79,7 @@ class Logtank:
     def id(self, id):
         r"""Sets the id of this Logtank.
 
-        云日志ID。
+        **参数解释**：云日志ID。  **取值范围**：不涉及
 
         :param id: The id of this Logtank.
         :type id: str
@@ -90,7 +90,7 @@ class Logtank:
     def project_id(self):
         r"""Gets the project_id of this Logtank.
 
-        参数解释：项目ID。
+        **参数解释**：项目ID。获取方式请参见[获取项目ID](elb_fl_0008.xml)。  **取值范围**：长度为32个字符，由小写字母和数字组成。
 
         :return: The project_id of this Logtank.
         :rtype: str
@@ -101,7 +101,7 @@ class Logtank:
     def project_id(self, project_id):
         r"""Sets the project_id of this Logtank.
 
-        参数解释：项目ID。
+        **参数解释**：项目ID。获取方式请参见[获取项目ID](elb_fl_0008.xml)。  **取值范围**：长度为32个字符，由小写字母和数字组成。
 
         :param project_id: The project_id of this Logtank.
         :type project_id: str
@@ -112,7 +112,7 @@ class Logtank:
     def loadbalancer_id(self):
         r"""Gets the loadbalancer_id of this Logtank.
 
-        负载均衡器ID。
+        **参数解释**：负载均衡器ID。  **取值范围**：不涉及
 
         :return: The loadbalancer_id of this Logtank.
         :rtype: str
@@ -123,7 +123,7 @@ class Logtank:
     def loadbalancer_id(self, loadbalancer_id):
         r"""Sets the loadbalancer_id of this Logtank.
 
-        负载均衡器ID。
+        **参数解释**：负载均衡器ID。  **取值范围**：不涉及
 
         :param loadbalancer_id: The loadbalancer_id of this Logtank.
         :type loadbalancer_id: str
@@ -134,7 +134,7 @@ class Logtank:
     def log_group_id(self):
         r"""Gets the log_group_id of this Logtank.
 
-        云日志分组ID。
+        **参数解释**：云日志分组ID。  **取值范围**：不涉及
 
         :return: The log_group_id of this Logtank.
         :rtype: str
@@ -145,7 +145,7 @@ class Logtank:
     def log_group_id(self, log_group_id):
         r"""Sets the log_group_id of this Logtank.
 
-        云日志分组ID。
+        **参数解释**：云日志分组ID。  **取值范围**：不涉及
 
         :param log_group_id: The log_group_id of this Logtank.
         :type log_group_id: str
@@ -156,7 +156,7 @@ class Logtank:
     def log_topic_id(self):
         r"""Gets the log_topic_id of this Logtank.
 
-        云日志主题ID。
+        **参数解释**：云日志主题ID。  **取值范围**：不涉及
 
         :return: The log_topic_id of this Logtank.
         :rtype: str
@@ -167,7 +167,7 @@ class Logtank:
     def log_topic_id(self, log_topic_id):
         r"""Sets the log_topic_id of this Logtank.
 
-        云日志主题ID。
+        **参数解释**：云日志主题ID。  **取值范围**：不涉及
 
         :param log_topic_id: The log_topic_id of this Logtank.
         :type log_topic_id: str

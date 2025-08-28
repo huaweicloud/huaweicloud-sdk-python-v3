@@ -29,7 +29,7 @@ class CloneLoadbalancerResponseBodyLoadbalancerList:
 
         The model defined in huaweicloud sdk
 
-        :param id: 新实例id
+        :param id: **参数解释**：新实例的ID。  **取值范围**：不涉及
         :type id: str
         """
         
@@ -45,7 +45,7 @@ class CloneLoadbalancerResponseBodyLoadbalancerList:
     def id(self):
         r"""Gets the id of this CloneLoadbalancerResponseBodyLoadbalancerList.
 
-        新实例id
+        **参数解释**：新实例的ID。  **取值范围**：不涉及
 
         :return: The id of this CloneLoadbalancerResponseBodyLoadbalancerList.
         :rtype: str
@@ -56,7 +56,7 @@ class CloneLoadbalancerResponseBodyLoadbalancerList:
     def id(self, id):
         r"""Sets the id of this CloneLoadbalancerResponseBodyLoadbalancerList.
 
-        新实例id
+        **参数解释**：新实例的ID。  **取值范围**：不涉及
 
         :param id: The id of this CloneLoadbalancerResponseBodyLoadbalancerList.
         :type id: str

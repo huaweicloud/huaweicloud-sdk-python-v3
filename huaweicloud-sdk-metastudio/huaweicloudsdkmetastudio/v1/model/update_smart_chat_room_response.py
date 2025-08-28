@@ -25,7 +25,10 @@ class UpdateSmartChatRoomResponse(SdkResponse):
         'voice_config': 'VoiceConfig',
         'voice_config_list': 'list[ChatVoiceConfig]',
         'robot_id': 'str',
+        'billing_mode': 'str',
+        'reuse_resource': 'bool',
         'concurrency': 'int',
+        'client_nums': 'int',
         'default_language': 'str',
         'background_config': 'BackgroundConfigInfo',
         'layer_config': 'list[LayerConfig]',
@@ -50,7 +53,10 @@ class UpdateSmartChatRoomResponse(SdkResponse):
         'voice_config': 'voice_config',
         'voice_config_list': 'voice_config_list',
         'robot_id': 'robot_id',
+        'billing_mode': 'billing_mode',
+        'reuse_resource': 'reuse_resource',
         'concurrency': 'concurrency',
+        'client_nums': 'client_nums',
         'default_language': 'default_language',
         'background_config': 'background_config',
         'layer_config': 'layer_config',
@@ -67,7 +73,7 @@ class UpdateSmartChatRoomResponse(SdkResponse):
         'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, room_name=None, room_description=None, video_config=None, model_asset_id=None, voice_config=None, voice_config_list=None, robot_id=None, concurrency=None, default_language=None, background_config=None, layer_config=None, review_config=None, chat_subtitle_config=None, chat_video_type=None, exit_mute_threshold=None, room_id=None, create_time=None, update_time=None, cover_url=None, is_pool_mode=None, chat_resource_config=None, x_request_id=None):
+    def __init__(self, room_name=None, room_description=None, video_config=None, model_asset_id=None, voice_config=None, voice_config_list=None, robot_id=None, billing_mode=None, reuse_resource=None, concurrency=None, client_nums=None, default_language=None, background_config=None, layer_config=None, review_config=None, chat_subtitle_config=None, chat_video_type=None, exit_mute_threshold=None, room_id=None, create_time=None, update_time=None, cover_url=None, is_pool_mode=None, chat_resource_config=None, x_request_id=None):
         r"""UpdateSmartChatRoomResponse
 
         The model defined in huaweicloud sdk
@@ -86,8 +92,14 @@ class UpdateSmartChatRoomResponse(SdkResponse):
         :type voice_config_list: list[:class:`huaweicloudsdkmetastudio.v1.ChatVoiceConfig`]
         :param robot_id: 机器人ID。获取方法请参考[创建应用](CreateRobot.xml)。
         :type robot_id: str
+        :param billing_mode: 计费模式，默认值CONCURRENCY * CONCURRENCY：并发计费 * CLIENT：按接入端计费 * CLIENT_TOKENS: 按接入端计费（TOKENS）
+        :type billing_mode: str
+        :param reuse_resource: 是否允许使用未分配的并发数（端模式下不能复用），默认不使用。
+        :type reuse_resource: bool
         :param concurrency: **参数解释**： 并发路数。 **约束限制**： 默认没有并发路数，如果不配置并发数量，则无法启动智能交互对话任务。
         :type concurrency: int
+        :param client_nums: **参数解释**： 允许接入终端端数量。
+        :type client_nums: int
         :param default_language: 默认语言，智能交互接口使用。默认值CN。 * CN：简体中文。 * EN：英语。 * ESP：西班牙语（仅海外站点支持） * por：葡萄牙语（仅海外站点支持） * Arabic：阿拉伯语（仅海外站点支持） * Thai：泰语（仅海外站点支持）
         :type default_language: str
         :param background_config: 
@@ -127,7 +139,10 @@ class UpdateSmartChatRoomResponse(SdkResponse):
         self._voice_config = None
         self._voice_config_list = None
         self._robot_id = None
+        self._billing_mode = None
+        self._reuse_resource = None
         self._concurrency = None
+        self._client_nums = None
         self._default_language = None
         self._background_config = None
         self._layer_config = None
@@ -157,8 +172,14 @@ class UpdateSmartChatRoomResponse(SdkResponse):
             self.voice_config_list = voice_config_list
         if robot_id is not None:
             self.robot_id = robot_id
+        if billing_mode is not None:
+            self.billing_mode = billing_mode
+        if reuse_resource is not None:
+            self.reuse_resource = reuse_resource
         if concurrency is not None:
             self.concurrency = concurrency
+        if client_nums is not None:
+            self.client_nums = client_nums
         if default_language is not None:
             self.default_language = default_language
         if background_config is not None:
@@ -335,6 +356,50 @@ class UpdateSmartChatRoomResponse(SdkResponse):
         self._robot_id = robot_id
 
     @property
+    def billing_mode(self):
+        r"""Gets the billing_mode of this UpdateSmartChatRoomResponse.
+
+        计费模式，默认值CONCURRENCY * CONCURRENCY：并发计费 * CLIENT：按接入端计费 * CLIENT_TOKENS: 按接入端计费（TOKENS）
+
+        :return: The billing_mode of this UpdateSmartChatRoomResponse.
+        :rtype: str
+        """
+        return self._billing_mode
+
+    @billing_mode.setter
+    def billing_mode(self, billing_mode):
+        r"""Sets the billing_mode of this UpdateSmartChatRoomResponse.
+
+        计费模式，默认值CONCURRENCY * CONCURRENCY：并发计费 * CLIENT：按接入端计费 * CLIENT_TOKENS: 按接入端计费（TOKENS）
+
+        :param billing_mode: The billing_mode of this UpdateSmartChatRoomResponse.
+        :type billing_mode: str
+        """
+        self._billing_mode = billing_mode
+
+    @property
+    def reuse_resource(self):
+        r"""Gets the reuse_resource of this UpdateSmartChatRoomResponse.
+
+        是否允许使用未分配的并发数（端模式下不能复用），默认不使用。
+
+        :return: The reuse_resource of this UpdateSmartChatRoomResponse.
+        :rtype: bool
+        """
+        return self._reuse_resource
+
+    @reuse_resource.setter
+    def reuse_resource(self, reuse_resource):
+        r"""Sets the reuse_resource of this UpdateSmartChatRoomResponse.
+
+        是否允许使用未分配的并发数（端模式下不能复用），默认不使用。
+
+        :param reuse_resource: The reuse_resource of this UpdateSmartChatRoomResponse.
+        :type reuse_resource: bool
+        """
+        self._reuse_resource = reuse_resource
+
+    @property
     def concurrency(self):
         r"""Gets the concurrency of this UpdateSmartChatRoomResponse.
 
@@ -355,6 +420,28 @@ class UpdateSmartChatRoomResponse(SdkResponse):
         :type concurrency: int
         """
         self._concurrency = concurrency
+
+    @property
+    def client_nums(self):
+        r"""Gets the client_nums of this UpdateSmartChatRoomResponse.
+
+        **参数解释**： 允许接入终端端数量。
+
+        :return: The client_nums of this UpdateSmartChatRoomResponse.
+        :rtype: int
+        """
+        return self._client_nums
+
+    @client_nums.setter
+    def client_nums(self, client_nums):
+        r"""Sets the client_nums of this UpdateSmartChatRoomResponse.
+
+        **参数解释**： 允许接入终端端数量。
+
+        :param client_nums: The client_nums of this UpdateSmartChatRoomResponse.
+        :type client_nums: int
+        """
+        self._client_nums = client_nums
 
     @property
     def default_language(self):

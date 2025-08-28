@@ -40,6 +40,7 @@ def test_http_config():
     http_config.pool_connections = 1
     http_config.pool_maxsize = 1
     http_config.signing_algorithm = SigningAlgorithm.HMAC_SHA256
+    http_config.user_agent = "custom ua"
 
     assert http_config.proxy_protocol == "https"
     assert http_config.proxy_host == "proxy.com"
@@ -57,3 +58,4 @@ def test_http_config():
     assert http_config.pool_maxsize == 1
     assert http_config.signing_algorithm == SigningAlgorithm.HMAC_SHA256
     assert http_config.get_proxy() == {'https': 'https://user:pass@proxy.com:12345'}
+    assert http_config.user_agent == "custom ua"

@@ -39,6 +39,7 @@ class ShowSmartLiveResponse(SdkResponse):
         'live_job_log': 'LiveJobLog',
         'relation_live_platform_info': 'PlatformLiveDetailInfo',
         'used_resource_type': 'str',
+        'is_ai_mark_on': 'bool',
         'x_request_id': 'str'
     }
 
@@ -64,10 +65,11 @@ class ShowSmartLiveResponse(SdkResponse):
         'live_job_log': 'live_job_log',
         'relation_live_platform_info': 'relation_live_platform_info',
         'used_resource_type': 'used_resource_type',
+        'is_ai_mark_on': 'is_ai_mark_on',
         'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, job_id=None, room_id=None, room_name=None, state=None, duration=None, start_time=None, end_time=None, error_info=None, create_time=None, lastupdate_time=None, rtc_room_info=None, live_event_report_url=None, live_event_callback_config=None, rtc_callback_config=None, stream_duration=None, block_reason=None, cover_url=None, co_streamer_config=None, live_job_log=None, relation_live_platform_info=None, used_resource_type=None, x_request_id=None):
+    def __init__(self, job_id=None, room_id=None, room_name=None, state=None, duration=None, start_time=None, end_time=None, error_info=None, create_time=None, lastupdate_time=None, rtc_room_info=None, live_event_report_url=None, live_event_callback_config=None, rtc_callback_config=None, stream_duration=None, block_reason=None, cover_url=None, co_streamer_config=None, live_job_log=None, relation_live_platform_info=None, used_resource_type=None, is_ai_mark_on=None, x_request_id=None):
         r"""ShowSmartLiveResponse
 
         The model defined in huaweicloud sdk
@@ -114,6 +116,8 @@ class ShowSmartLiveResponse(SdkResponse):
         :type relation_live_platform_info: :class:`huaweicloudsdkmetastudio.v1.PlatformLiveDetailInfo`
         :param used_resource_type: 使用的资源类型。 * PERIOD：包周期资源 * ONDEMAND：按需资源 * ONE_TIME：一次性资源 * UNKNOW：未知资源类型。
         :type used_resource_type: str
+        :param is_ai_mark_on: AI标识开关
+        :type is_ai_mark_on: bool
         :param x_request_id: 
         :type x_request_id: str
         """
@@ -141,6 +145,7 @@ class ShowSmartLiveResponse(SdkResponse):
         self._live_job_log = None
         self._relation_live_platform_info = None
         self._used_resource_type = None
+        self._is_ai_mark_on = None
         self._x_request_id = None
         self.discriminator = None
 
@@ -186,6 +191,8 @@ class ShowSmartLiveResponse(SdkResponse):
             self.relation_live_platform_info = relation_live_platform_info
         if used_resource_type is not None:
             self.used_resource_type = used_resource_type
+        if is_ai_mark_on is not None:
+            self.is_ai_mark_on = is_ai_mark_on
         if x_request_id is not None:
             self.x_request_id = x_request_id
 
@@ -622,6 +629,28 @@ class ShowSmartLiveResponse(SdkResponse):
         :type used_resource_type: str
         """
         self._used_resource_type = used_resource_type
+
+    @property
+    def is_ai_mark_on(self):
+        r"""Gets the is_ai_mark_on of this ShowSmartLiveResponse.
+
+        AI标识开关
+
+        :return: The is_ai_mark_on of this ShowSmartLiveResponse.
+        :rtype: bool
+        """
+        return self._is_ai_mark_on
+
+    @is_ai_mark_on.setter
+    def is_ai_mark_on(self, is_ai_mark_on):
+        r"""Sets the is_ai_mark_on of this ShowSmartLiveResponse.
+
+        AI标识开关
+
+        :param is_ai_mark_on: The is_ai_mark_on of this ShowSmartLiveResponse.
+        :type is_ai_mark_on: bool
+        """
+        self._is_ai_mark_on = is_ai_mark_on
 
     @property
     def x_request_id(self):

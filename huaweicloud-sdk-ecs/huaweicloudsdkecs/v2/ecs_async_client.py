@@ -1310,6 +1310,71 @@ class EcsAsyncClient(Client):
 
         return http_info
 
+    def create_launch_template_async(self, request):
+        r"""创建模板
+
+        创建启动模板。将创建一个全新的模板，并自动生成版本号为1的作为默认版本。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateLaunchTemplate
+        :type request: :class:`huaweicloudsdkecs.v2.CreateLaunchTemplateRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.CreateLaunchTemplateResponse`
+        """
+        http_info = self._create_launch_template_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_launch_template_async_invoker(self, request):
+        http_info = self._create_launch_template_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_launch_template_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/launch-templates",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateLaunchTemplateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_post_paid_servers_async(self, request):
         r"""创建云服务器(按需)
 

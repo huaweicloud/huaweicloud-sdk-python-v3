@@ -31,7 +31,7 @@ class UpdateIpGroupRequest:
 
         The model defined in huaweicloud sdk
 
-        :param ipgroup_id: 参数解释：待更新的IP地址组的ID。
+        :param ipgroup_id: **参数解释**：待更新的IP地址组的ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type ipgroup_id: str
         :param body: Body of the UpdateIpGroupRequest
         :type body: :class:`huaweicloudsdkelb.v3.UpdateIpGroupRequestBody`
@@ -51,7 +51,7 @@ class UpdateIpGroupRequest:
     def ipgroup_id(self):
         r"""Gets the ipgroup_id of this UpdateIpGroupRequest.
 
-        参数解释：待更新的IP地址组的ID。
+        **参数解释**：待更新的IP地址组的ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The ipgroup_id of this UpdateIpGroupRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class UpdateIpGroupRequest:
     def ipgroup_id(self, ipgroup_id):
         r"""Sets the ipgroup_id of this UpdateIpGroupRequest.
 
-        参数解释：待更新的IP地址组的ID。
+        **参数解释**：待更新的IP地址组的ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param ipgroup_id: The ipgroup_id of this UpdateIpGroupRequest.
         :type ipgroup_id: str

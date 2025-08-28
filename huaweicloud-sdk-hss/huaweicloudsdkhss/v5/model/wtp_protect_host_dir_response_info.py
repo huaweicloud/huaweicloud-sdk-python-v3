@@ -41,19 +41,19 @@ class WtpProtectHostDirResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param protect_dir: 防护目录
+        :param protect_dir: **参数解释**: 防护目录 **取值范围**: 字符长度0-512位 
         :type protect_dir: str
-        :param exclude_child_dir: 排除子目录
+        :param exclude_child_dir: **参数解释**: 排除子目录 **取值范围**: 字符长度0-512位 
         :type exclude_child_dir: str
-        :param exclude_file_path: 排除文件路径
+        :param exclude_file_path: **参数解释**: 排除文件路径 **取值范围**: 字符长度0-512位 
         :type exclude_file_path: str
         :param exclue_file_path: 排除文件路径
         :type exclue_file_path: str
-        :param local_backup_dir: 本地备份路径
+        :param local_backup_dir: **参数解释**: 本地备份路径 **取值范围**: 字符长度0-512位 
         :type local_backup_dir: str
-        :param protect_status: 防护状态（closed-未开启，opened-防护中，opening-开启中，closing-关闭中，open_failed-防护失败）
+        :param protect_status: **参数解释**: 防护状态 **取值范围**: - closed ：未开启。 - opened ：防护中。 - opening ：开启中。 - closing ：关闭中。 - open_failed ：防护失败。 
         :type protect_status: str
-        :param error: 失败原因
+        :param error: **参数解释**: 失败原因，当防护状态为open_failed时存在失败原因 **取值范围**: 字符长度0-512位 
         :type error: str
         """
         
@@ -87,7 +87,7 @@ class WtpProtectHostDirResponseInfo:
     def protect_dir(self):
         r"""Gets the protect_dir of this WtpProtectHostDirResponseInfo.
 
-        防护目录
+        **参数解释**: 防护目录 **取值范围**: 字符长度0-512位 
 
         :return: The protect_dir of this WtpProtectHostDirResponseInfo.
         :rtype: str
@@ -98,7 +98,7 @@ class WtpProtectHostDirResponseInfo:
     def protect_dir(self, protect_dir):
         r"""Sets the protect_dir of this WtpProtectHostDirResponseInfo.
 
-        防护目录
+        **参数解释**: 防护目录 **取值范围**: 字符长度0-512位 
 
         :param protect_dir: The protect_dir of this WtpProtectHostDirResponseInfo.
         :type protect_dir: str
@@ -109,7 +109,7 @@ class WtpProtectHostDirResponseInfo:
     def exclude_child_dir(self):
         r"""Gets the exclude_child_dir of this WtpProtectHostDirResponseInfo.
 
-        排除子目录
+        **参数解释**: 排除子目录 **取值范围**: 字符长度0-512位 
 
         :return: The exclude_child_dir of this WtpProtectHostDirResponseInfo.
         :rtype: str
@@ -120,7 +120,7 @@ class WtpProtectHostDirResponseInfo:
     def exclude_child_dir(self, exclude_child_dir):
         r"""Sets the exclude_child_dir of this WtpProtectHostDirResponseInfo.
 
-        排除子目录
+        **参数解释**: 排除子目录 **取值范围**: 字符长度0-512位 
 
         :param exclude_child_dir: The exclude_child_dir of this WtpProtectHostDirResponseInfo.
         :type exclude_child_dir: str
@@ -131,7 +131,7 @@ class WtpProtectHostDirResponseInfo:
     def exclude_file_path(self):
         r"""Gets the exclude_file_path of this WtpProtectHostDirResponseInfo.
 
-        排除文件路径
+        **参数解释**: 排除文件路径 **取值范围**: 字符长度0-512位 
 
         :return: The exclude_file_path of this WtpProtectHostDirResponseInfo.
         :rtype: str
@@ -142,7 +142,7 @@ class WtpProtectHostDirResponseInfo:
     def exclude_file_path(self, exclude_file_path):
         r"""Sets the exclude_file_path of this WtpProtectHostDirResponseInfo.
 
-        排除文件路径
+        **参数解释**: 排除文件路径 **取值范围**: 字符长度0-512位 
 
         :param exclude_file_path: The exclude_file_path of this WtpProtectHostDirResponseInfo.
         :type exclude_file_path: str
@@ -175,7 +175,7 @@ class WtpProtectHostDirResponseInfo:
     def local_backup_dir(self):
         r"""Gets the local_backup_dir of this WtpProtectHostDirResponseInfo.
 
-        本地备份路径
+        **参数解释**: 本地备份路径 **取值范围**: 字符长度0-512位 
 
         :return: The local_backup_dir of this WtpProtectHostDirResponseInfo.
         :rtype: str
@@ -186,7 +186,7 @@ class WtpProtectHostDirResponseInfo:
     def local_backup_dir(self, local_backup_dir):
         r"""Sets the local_backup_dir of this WtpProtectHostDirResponseInfo.
 
-        本地备份路径
+        **参数解释**: 本地备份路径 **取值范围**: 字符长度0-512位 
 
         :param local_backup_dir: The local_backup_dir of this WtpProtectHostDirResponseInfo.
         :type local_backup_dir: str
@@ -197,7 +197,7 @@ class WtpProtectHostDirResponseInfo:
     def protect_status(self):
         r"""Gets the protect_status of this WtpProtectHostDirResponseInfo.
 
-        防护状态（closed-未开启，opened-防护中，opening-开启中，closing-关闭中，open_failed-防护失败）
+        **参数解释**: 防护状态 **取值范围**: - closed ：未开启。 - opened ：防护中。 - opening ：开启中。 - closing ：关闭中。 - open_failed ：防护失败。 
 
         :return: The protect_status of this WtpProtectHostDirResponseInfo.
         :rtype: str
@@ -208,7 +208,7 @@ class WtpProtectHostDirResponseInfo:
     def protect_status(self, protect_status):
         r"""Sets the protect_status of this WtpProtectHostDirResponseInfo.
 
-        防护状态（closed-未开启，opened-防护中，opening-开启中，closing-关闭中，open_failed-防护失败）
+        **参数解释**: 防护状态 **取值范围**: - closed ：未开启。 - opened ：防护中。 - opening ：开启中。 - closing ：关闭中。 - open_failed ：防护失败。 
 
         :param protect_status: The protect_status of this WtpProtectHostDirResponseInfo.
         :type protect_status: str
@@ -219,7 +219,7 @@ class WtpProtectHostDirResponseInfo:
     def error(self):
         r"""Gets the error of this WtpProtectHostDirResponseInfo.
 
-        失败原因
+        **参数解释**: 失败原因，当防护状态为open_failed时存在失败原因 **取值范围**: 字符长度0-512位 
 
         :return: The error of this WtpProtectHostDirResponseInfo.
         :rtype: str
@@ -230,7 +230,7 @@ class WtpProtectHostDirResponseInfo:
     def error(self, error):
         r"""Sets the error of this WtpProtectHostDirResponseInfo.
 
-        失败原因
+        **参数解释**: 失败原因，当防护状态为open_failed时存在失败原因 **取值范围**: 字符长度0-512位 
 
         :param error: The error of this WtpProtectHostDirResponseInfo.
         :type error: str

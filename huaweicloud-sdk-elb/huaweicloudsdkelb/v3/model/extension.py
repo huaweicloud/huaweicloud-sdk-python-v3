@@ -31,9 +31,9 @@ class Extension:
 
         The model defined in huaweicloud sdk
 
-        :param ep_id: ep id
+        :param ep_id: **参数解释**：EP ID.  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type ep_id: str
-        :param ep_service_id: ep service id
+        :param ep_service_id: **参数解释**：EP Service ID.  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type ep_service_id: str
         """
         
@@ -52,7 +52,7 @@ class Extension:
     def ep_id(self):
         r"""Gets the ep_id of this Extension.
 
-        ep id
+        **参数解释**：EP ID.  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The ep_id of this Extension.
         :rtype: str
@@ -63,7 +63,7 @@ class Extension:
     def ep_id(self, ep_id):
         r"""Sets the ep_id of this Extension.
 
-        ep id
+        **参数解释**：EP ID.  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param ep_id: The ep_id of this Extension.
         :type ep_id: str
@@ -74,7 +74,7 @@ class Extension:
     def ep_service_id(self):
         r"""Gets the ep_service_id of this Extension.
 
-        ep service id
+        **参数解释**：EP Service ID.  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The ep_service_id of this Extension.
         :rtype: str
@@ -85,7 +85,7 @@ class Extension:
     def ep_service_id(self, ep_service_id):
         r"""Sets the ep_service_id of this Extension.
 
-        ep service id
+        **参数解释**：EP Service ID.  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param ep_service_id: The ep_service_id of this Extension.
         :type ep_service_id: str

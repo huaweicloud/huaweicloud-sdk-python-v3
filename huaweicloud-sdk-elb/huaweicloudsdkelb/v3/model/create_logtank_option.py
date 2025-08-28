@@ -33,11 +33,11 @@ class CreateLogtankOption:
 
         The model defined in huaweicloud sdk
 
-        :param loadbalancer_id: 负载均衡器id
+        :param loadbalancer_id: **参数解释**：负载均衡器ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type loadbalancer_id: str
-        :param log_group_id: 日志组别id，其他（非ELB）服务提供
+        :param log_group_id: **参数解释**：日志组别id，其他（非ELB）服务提供。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type log_group_id: str
-        :param log_topic_id: 日志订阅主题id，其他（非ELB）服务提供
+        :param log_topic_id: **参数解释**：日志订阅主题id，其他（非ELB）服务提供。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type log_topic_id: str
         """
         
@@ -56,7 +56,7 @@ class CreateLogtankOption:
     def loadbalancer_id(self):
         r"""Gets the loadbalancer_id of this CreateLogtankOption.
 
-        负载均衡器id
+        **参数解释**：负载均衡器ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The loadbalancer_id of this CreateLogtankOption.
         :rtype: str
@@ -67,7 +67,7 @@ class CreateLogtankOption:
     def loadbalancer_id(self, loadbalancer_id):
         r"""Sets the loadbalancer_id of this CreateLogtankOption.
 
-        负载均衡器id
+        **参数解释**：负载均衡器ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param loadbalancer_id: The loadbalancer_id of this CreateLogtankOption.
         :type loadbalancer_id: str
@@ -78,7 +78,7 @@ class CreateLogtankOption:
     def log_group_id(self):
         r"""Gets the log_group_id of this CreateLogtankOption.
 
-        日志组别id，其他（非ELB）服务提供
+        **参数解释**：日志组别id，其他（非ELB）服务提供。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The log_group_id of this CreateLogtankOption.
         :rtype: str
@@ -89,7 +89,7 @@ class CreateLogtankOption:
     def log_group_id(self, log_group_id):
         r"""Sets the log_group_id of this CreateLogtankOption.
 
-        日志组别id，其他（非ELB）服务提供
+        **参数解释**：日志组别id，其他（非ELB）服务提供。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param log_group_id: The log_group_id of this CreateLogtankOption.
         :type log_group_id: str
@@ -100,7 +100,7 @@ class CreateLogtankOption:
     def log_topic_id(self):
         r"""Gets the log_topic_id of this CreateLogtankOption.
 
-        日志订阅主题id，其他（非ELB）服务提供
+        **参数解释**：日志订阅主题id，其他（非ELB）服务提供。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The log_topic_id of this CreateLogtankOption.
         :rtype: str
@@ -111,7 +111,7 @@ class CreateLogtankOption:
     def log_topic_id(self, log_topic_id):
         r"""Sets the log_topic_id of this CreateLogtankOption.
 
-        日志订阅主题id，其他（非ELB）服务提供
+        **参数解释**：日志订阅主题id，其他（非ELB）服务提供。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param log_topic_id: The log_topic_id of this CreateLogtankOption.
         :type log_topic_id: str

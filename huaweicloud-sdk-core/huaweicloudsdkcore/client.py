@@ -210,6 +210,10 @@ class ClientBuilder(Generic[T]):
 
         client.with_endpoints(self._endpoints).with_credentials(self._credentials)
 
+        if self._config.user_agent is None:
+            from huaweicloudsdkcore.http.user_agent import user_agent_string
+            self._config.user_agent = user_agent_string
+
         return client
 
 
@@ -330,7 +334,9 @@ class Client(object):
             header_params = http_utils.sanitize_for_serialization(header_params)
             header_params = dict(http_utils.parameters_to_tuples(header_params, collection_formats))
             header_params = {k: str(v) for k, v in header_params.items()}
-        header_params.update(self._agent)
+        header_params.update(
+            {"User-Agent": "; ".join(filter(None, [self._agent["User-Agent"],
+                                                   header_params.get("User-Agent", self._config.user_agent)]))})
         if self.preset_headers:
             header_params.update(self.preset_headers)
         return header_params

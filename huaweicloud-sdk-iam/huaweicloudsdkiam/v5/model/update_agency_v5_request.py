@@ -31,7 +31,7 @@ class UpdateAgencyV5Request:
 
         The model defined in huaweicloud sdk
 
-        :param agency_id: 委托或信任委托ID，长度为1到64个字符，只包含字母、数字和\&quot;-\&quot;的字符串。
+        :param agency_id: 信任委托ID，长度为1到64个字符，只包含字母、数字和\&quot;-\&quot;的字符串。
         :type agency_id: str
         :param body: Body of the UpdateAgencyV5Request
         :type body: :class:`huaweicloudsdkiam.v5.UpdateAgencyReqBody`
@@ -51,7 +51,7 @@ class UpdateAgencyV5Request:
     def agency_id(self):
         r"""Gets the agency_id of this UpdateAgencyV5Request.
 
-        委托或信任委托ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
+        信任委托ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
 
         :return: The agency_id of this UpdateAgencyV5Request.
         :rtype: str
@@ -62,7 +62,7 @@ class UpdateAgencyV5Request:
     def agency_id(self, agency_id):
         r"""Sets the agency_id of this UpdateAgencyV5Request.
 
-        委托或信任委托ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
+        信任委托ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
 
         :param agency_id: The agency_id of this UpdateAgencyV5Request.
         :type agency_id: str

@@ -29,7 +29,7 @@ class ShowFlavorRequest:
 
         The model defined in huaweicloud sdk
 
-        :param flavor_id: 参数解释：规格ID。
+        :param flavor_id: **参数解释**：规格ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type flavor_id: str
         """
         
@@ -44,7 +44,7 @@ class ShowFlavorRequest:
     def flavor_id(self):
         r"""Gets the flavor_id of this ShowFlavorRequest.
 
-        参数解释：规格ID。
+        **参数解释**：规格ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The flavor_id of this ShowFlavorRequest.
         :rtype: str
@@ -55,7 +55,7 @@ class ShowFlavorRequest:
     def flavor_id(self, flavor_id):
         r"""Sets the flavor_id of this ShowFlavorRequest.
 
-        参数解释：规格ID。
+        **参数解释**：规格ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param flavor_id: The flavor_id of this ShowFlavorRequest.
         :type flavor_id: str

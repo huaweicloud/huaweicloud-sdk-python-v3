@@ -81,9 +81,9 @@ class ContainerNodeInfo:
         :type agent_status: str
         :param protect_status: **参数解释**: 防护状态 **取值范围**: 包含如下2种。   - closed ：关闭。   - opened ：开启。 
         :type protect_status: str
-        :param protect_interrupt: **参数解释**: 防护是否中断 **取值范围**:   - ture：防护中断。   - false：防护未中断。 
+        :param protect_interrupt: **参数解释**: 防护是否中断 **取值范围**:   - true：防护中断。   - false：防护未中断。 
         :type protect_interrupt: bool
-        :param protect_degradation: **参数解释**: 防护是否降级 **取值范围**:   - ture：防护降级。   - false：防护未降级。 
+        :param protect_degradation: **参数解释**: 防护是否降级 **取值范围**:   - true：防护降级。   - false：防护未降级。 
         :type protect_degradation: bool
         :param degradation_reason: **参数解释**: 防护降级原因 **取值范围**: 字符长度1-32位 
         :type degradation_reason: str
@@ -317,7 +317,7 @@ class ContainerNodeInfo:
     def protect_interrupt(self):
         r"""Gets the protect_interrupt of this ContainerNodeInfo.
 
-        **参数解释**: 防护是否中断 **取值范围**:   - ture：防护中断。   - false：防护未中断。 
+        **参数解释**: 防护是否中断 **取值范围**:   - true：防护中断。   - false：防护未中断。 
 
         :return: The protect_interrupt of this ContainerNodeInfo.
         :rtype: bool
@@ -328,7 +328,7 @@ class ContainerNodeInfo:
     def protect_interrupt(self, protect_interrupt):
         r"""Sets the protect_interrupt of this ContainerNodeInfo.
 
-        **参数解释**: 防护是否中断 **取值范围**:   - ture：防护中断。   - false：防护未中断。 
+        **参数解释**: 防护是否中断 **取值范围**:   - true：防护中断。   - false：防护未中断。 
 
         :param protect_interrupt: The protect_interrupt of this ContainerNodeInfo.
         :type protect_interrupt: bool
@@ -339,7 +339,7 @@ class ContainerNodeInfo:
     def protect_degradation(self):
         r"""Gets the protect_degradation of this ContainerNodeInfo.
 
-        **参数解释**: 防护是否降级 **取值范围**:   - ture：防护降级。   - false：防护未降级。 
+        **参数解释**: 防护是否降级 **取值范围**:   - true：防护降级。   - false：防护未降级。 
 
         :return: The protect_degradation of this ContainerNodeInfo.
         :rtype: bool
@@ -350,7 +350,7 @@ class ContainerNodeInfo:
     def protect_degradation(self, protect_degradation):
         r"""Sets the protect_degradation of this ContainerNodeInfo.
 
-        **参数解释**: 防护是否降级 **取值范围**:   - ture：防护降级。   - false：防护未降级。 
+        **参数解释**: 防护是否降级 **取值范围**:   - true：防护降级。   - false：防护未降级。 
 
         :param protect_degradation: The protect_degradation of this ContainerNodeInfo.
         :type protect_degradation: bool

@@ -39,17 +39,17 @@ class BatchUpdateMembersOption:
 
         The model defined in huaweicloud sdk
 
-        :param id: 后端服务器ID。 &gt;此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
+        :param id: **参数解释**：后端服务器ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及  &gt;此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
         :type id: str
-        :param availability_zone: 参数解释：后端服务器的可用区。 约束限制：  仅支持iptarget类型的后端服务器设置该字段。且后端服务器组开启可用区亲和时，iptarget类型的后端服务器必须配置该字段为有效非空值。 取值范围：本region中ECS可选择的可用区。
+        :param availability_zone: **参数解释**：后端服务器的可用区。  **约束限制**：仅支持IP类型后端服务器设置该字段。且后端服务器组开启可用区亲和时，IP类型后端服务器必须配置该字段为有效非空值。  **取值范围**：本region中ECS可选择的可用区。  **默认取值**：不涉及
         :type availability_zone: str
-        :param admin_state_up: 后端服务器的管理状态。取值：true、false。  虽然创建、更新请求支持该字段，但实际取值决定于后端服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。  请勿传入该字段。
+        :param admin_state_up: **参数解释**：后端服务器的管理状态。取值：true、false。  **约束限制**：虽然创建、更新请求支持该字段，但实际取值决定于后端服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。  **取值范围**：不涉及  **默认取值**：不涉及  请勿传入该字段。
         :type admin_state_up: bool
-        :param name: 后端服务器名称。
+        :param name: **参数解释**：后端服务器名称。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type name: str
-        :param protocol_port: 后端服务器端口。  在开启端口透传的pool下的member，该字段无法更新。  [网关型LB，即pool协议为IP时，protocol_port必须设置为0。](tag:hws_eu)
+        :param protocol_port: **参数解释**：后端服务器端口。  **约束限制**： - 在开启端口透传的pool下的member，该字段无法更新。 [- 网关型LB，即pool协议为IP时，protocol_port必须设置为0。](tag:hws_eu)  **取值范围**：1-65535  **默认取值**：不涉及
         :type protocol_port: int
-        :param weight: 后端服务器的权重，请求按权重在同一后端服务器组下的后端服务器间分发。权重为0的后端不再接受新的请求。当后端服务器所在的后端服务器组的lb_algorithm的取值为SOURCE_IP时，该字段无效。
+        :param weight: **参数解释**：后端服务器的权重，请求按权重在同一后端服务器组下的后端服务器间分发。权重为0的后端不再接受新的请求。  **约束限制**：当后端服务器所在的后端服务器组的lb_algorithm的取值为SOURCE_IP时，该字段无效。  **取值范围**：0-100  **默认取值**：不涉及
         :type weight: int
         """
         
@@ -79,7 +79,7 @@ class BatchUpdateMembersOption:
     def id(self):
         r"""Gets the id of this BatchUpdateMembersOption.
 
-        后端服务器ID。 >此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
+        **参数解释**：后端服务器ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及  >此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
 
         :return: The id of this BatchUpdateMembersOption.
         :rtype: str
@@ -90,7 +90,7 @@ class BatchUpdateMembersOption:
     def id(self, id):
         r"""Sets the id of this BatchUpdateMembersOption.
 
-        后端服务器ID。 >此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
+        **参数解释**：后端服务器ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及  >此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
 
         :param id: The id of this BatchUpdateMembersOption.
         :type id: str
@@ -101,7 +101,7 @@ class BatchUpdateMembersOption:
     def availability_zone(self):
         r"""Gets the availability_zone of this BatchUpdateMembersOption.
 
-        参数解释：后端服务器的可用区。 约束限制：  仅支持iptarget类型的后端服务器设置该字段。且后端服务器组开启可用区亲和时，iptarget类型的后端服务器必须配置该字段为有效非空值。 取值范围：本region中ECS可选择的可用区。
+        **参数解释**：后端服务器的可用区。  **约束限制**：仅支持IP类型后端服务器设置该字段。且后端服务器组开启可用区亲和时，IP类型后端服务器必须配置该字段为有效非空值。  **取值范围**：本region中ECS可选择的可用区。  **默认取值**：不涉及
 
         :return: The availability_zone of this BatchUpdateMembersOption.
         :rtype: str
@@ -112,7 +112,7 @@ class BatchUpdateMembersOption:
     def availability_zone(self, availability_zone):
         r"""Sets the availability_zone of this BatchUpdateMembersOption.
 
-        参数解释：后端服务器的可用区。 约束限制：  仅支持iptarget类型的后端服务器设置该字段。且后端服务器组开启可用区亲和时，iptarget类型的后端服务器必须配置该字段为有效非空值。 取值范围：本region中ECS可选择的可用区。
+        **参数解释**：后端服务器的可用区。  **约束限制**：仅支持IP类型后端服务器设置该字段。且后端服务器组开启可用区亲和时，IP类型后端服务器必须配置该字段为有效非空值。  **取值范围**：本region中ECS可选择的可用区。  **默认取值**：不涉及
 
         :param availability_zone: The availability_zone of this BatchUpdateMembersOption.
         :type availability_zone: str
@@ -123,7 +123,7 @@ class BatchUpdateMembersOption:
     def admin_state_up(self):
         r"""Gets the admin_state_up of this BatchUpdateMembersOption.
 
-        后端服务器的管理状态。取值：true、false。  虽然创建、更新请求支持该字段，但实际取值决定于后端服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。  请勿传入该字段。
+        **参数解释**：后端服务器的管理状态。取值：true、false。  **约束限制**：虽然创建、更新请求支持该字段，但实际取值决定于后端服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。  **取值范围**：不涉及  **默认取值**：不涉及  请勿传入该字段。
 
         :return: The admin_state_up of this BatchUpdateMembersOption.
         :rtype: bool
@@ -134,7 +134,7 @@ class BatchUpdateMembersOption:
     def admin_state_up(self, admin_state_up):
         r"""Sets the admin_state_up of this BatchUpdateMembersOption.
 
-        后端服务器的管理状态。取值：true、false。  虽然创建、更新请求支持该字段，但实际取值决定于后端服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。  请勿传入该字段。
+        **参数解释**：后端服务器的管理状态。取值：true、false。  **约束限制**：虽然创建、更新请求支持该字段，但实际取值决定于后端服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。  **取值范围**：不涉及  **默认取值**：不涉及  请勿传入该字段。
 
         :param admin_state_up: The admin_state_up of this BatchUpdateMembersOption.
         :type admin_state_up: bool
@@ -145,7 +145,7 @@ class BatchUpdateMembersOption:
     def name(self):
         r"""Gets the name of this BatchUpdateMembersOption.
 
-        后端服务器名称。
+        **参数解释**：后端服务器名称。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The name of this BatchUpdateMembersOption.
         :rtype: str
@@ -156,7 +156,7 @@ class BatchUpdateMembersOption:
     def name(self, name):
         r"""Sets the name of this BatchUpdateMembersOption.
 
-        后端服务器名称。
+        **参数解释**：后端服务器名称。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param name: The name of this BatchUpdateMembersOption.
         :type name: str
@@ -167,7 +167,7 @@ class BatchUpdateMembersOption:
     def protocol_port(self):
         r"""Gets the protocol_port of this BatchUpdateMembersOption.
 
-        后端服务器端口。  在开启端口透传的pool下的member，该字段无法更新。  [网关型LB，即pool协议为IP时，protocol_port必须设置为0。](tag:hws_eu)
+        **参数解释**：后端服务器端口。  **约束限制**： - 在开启端口透传的pool下的member，该字段无法更新。 [- 网关型LB，即pool协议为IP时，protocol_port必须设置为0。](tag:hws_eu)  **取值范围**：1-65535  **默认取值**：不涉及
 
         :return: The protocol_port of this BatchUpdateMembersOption.
         :rtype: int
@@ -178,7 +178,7 @@ class BatchUpdateMembersOption:
     def protocol_port(self, protocol_port):
         r"""Sets the protocol_port of this BatchUpdateMembersOption.
 
-        后端服务器端口。  在开启端口透传的pool下的member，该字段无法更新。  [网关型LB，即pool协议为IP时，protocol_port必须设置为0。](tag:hws_eu)
+        **参数解释**：后端服务器端口。  **约束限制**： - 在开启端口透传的pool下的member，该字段无法更新。 [- 网关型LB，即pool协议为IP时，protocol_port必须设置为0。](tag:hws_eu)  **取值范围**：1-65535  **默认取值**：不涉及
 
         :param protocol_port: The protocol_port of this BatchUpdateMembersOption.
         :type protocol_port: int
@@ -189,7 +189,7 @@ class BatchUpdateMembersOption:
     def weight(self):
         r"""Gets the weight of this BatchUpdateMembersOption.
 
-        后端服务器的权重，请求按权重在同一后端服务器组下的后端服务器间分发。权重为0的后端不再接受新的请求。当后端服务器所在的后端服务器组的lb_algorithm的取值为SOURCE_IP时，该字段无效。
+        **参数解释**：后端服务器的权重，请求按权重在同一后端服务器组下的后端服务器间分发。权重为0的后端不再接受新的请求。  **约束限制**：当后端服务器所在的后端服务器组的lb_algorithm的取值为SOURCE_IP时，该字段无效。  **取值范围**：0-100  **默认取值**：不涉及
 
         :return: The weight of this BatchUpdateMembersOption.
         :rtype: int
@@ -200,7 +200,7 @@ class BatchUpdateMembersOption:
     def weight(self, weight):
         r"""Sets the weight of this BatchUpdateMembersOption.
 
-        后端服务器的权重，请求按权重在同一后端服务器组下的后端服务器间分发。权重为0的后端不再接受新的请求。当后端服务器所在的后端服务器组的lb_algorithm的取值为SOURCE_IP时，该字段无效。
+        **参数解释**：后端服务器的权重，请求按权重在同一后端服务器组下的后端服务器间分发。权重为0的后端不再接受新的请求。  **约束限制**：当后端服务器所在的后端服务器组的lb_algorithm的取值为SOURCE_IP时，该字段无效。  **取值范围**：0-100  **默认取值**：不涉及
 
         :param weight: The weight of this BatchUpdateMembersOption.
         :type weight: int

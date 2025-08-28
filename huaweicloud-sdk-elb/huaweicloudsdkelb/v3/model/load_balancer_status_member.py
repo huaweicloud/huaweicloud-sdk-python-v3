@@ -37,15 +37,15 @@ class LoadBalancerStatusMember:
 
         The model defined in huaweicloud sdk
 
-        :param provisioning_status: 后端服务器配置状态。取值：ACTIVE表示使用中。
+        :param provisioning_status: **参数解释**：后端服务器配置状态。  **取值范围**：ACTIVE表示使用中。
         :type provisioning_status: str
-        :param address: 后端服务器的IP地址。
+        :param address: **参数解释**：后端服务器的IP地址。  **取值范围**：不涉及
         :type address: str
-        :param protocol_port: 后端服务器的端口号。取值范围[1, 65535]。
+        :param protocol_port: **参数解释**：后端服务器的端口号。  **取值范围**：1-65535
         :type protocol_port: int
-        :param id: 后端服务器ID。
+        :param id: **参数解释**：后端服务器ID。  **取值范围**：不涉及
         :type id: str
-        :param operating_status: 后端服务器的操作状态。  取值： - ONLINE：后端服务器正常运行。 - NO_MONITOR：后端服务器健康检查未开启。 - DISABLED：后端服务器不可用。所属负载均衡器或后端服务器组或该后端服务器的admin_state_up&#x3D;false时， 会出现该状态。注意该状态仅在当前接口中返回。 - OFFLINE：关联ECS已下线。
+        :param operating_status: **参数解释**：后端服务器的操作状态。  **取值范围**： - ONLINE：后端服务器正常运行。 - NO_MONITOR：后端服务器健康检查未开启。 - DISABLED：后端服务器不可用。所属负载均衡器或后端服务器组或该后端服务器的admin_state_up&#x3D;false时，会出现该状态。注意该状态仅在当前接口中返回。 - OFFLINE：关联ECS已下线。
         :type operating_status: str
         """
         
@@ -73,7 +73,7 @@ class LoadBalancerStatusMember:
     def provisioning_status(self):
         r"""Gets the provisioning_status of this LoadBalancerStatusMember.
 
-        后端服务器配置状态。取值：ACTIVE表示使用中。
+        **参数解释**：后端服务器配置状态。  **取值范围**：ACTIVE表示使用中。
 
         :return: The provisioning_status of this LoadBalancerStatusMember.
         :rtype: str
@@ -84,7 +84,7 @@ class LoadBalancerStatusMember:
     def provisioning_status(self, provisioning_status):
         r"""Sets the provisioning_status of this LoadBalancerStatusMember.
 
-        后端服务器配置状态。取值：ACTIVE表示使用中。
+        **参数解释**：后端服务器配置状态。  **取值范围**：ACTIVE表示使用中。
 
         :param provisioning_status: The provisioning_status of this LoadBalancerStatusMember.
         :type provisioning_status: str
@@ -95,7 +95,7 @@ class LoadBalancerStatusMember:
     def address(self):
         r"""Gets the address of this LoadBalancerStatusMember.
 
-        后端服务器的IP地址。
+        **参数解释**：后端服务器的IP地址。  **取值范围**：不涉及
 
         :return: The address of this LoadBalancerStatusMember.
         :rtype: str
@@ -106,7 +106,7 @@ class LoadBalancerStatusMember:
     def address(self, address):
         r"""Sets the address of this LoadBalancerStatusMember.
 
-        后端服务器的IP地址。
+        **参数解释**：后端服务器的IP地址。  **取值范围**：不涉及
 
         :param address: The address of this LoadBalancerStatusMember.
         :type address: str
@@ -117,7 +117,7 @@ class LoadBalancerStatusMember:
     def protocol_port(self):
         r"""Gets the protocol_port of this LoadBalancerStatusMember.
 
-        后端服务器的端口号。取值范围[1, 65535]。
+        **参数解释**：后端服务器的端口号。  **取值范围**：1-65535
 
         :return: The protocol_port of this LoadBalancerStatusMember.
         :rtype: int
@@ -128,7 +128,7 @@ class LoadBalancerStatusMember:
     def protocol_port(self, protocol_port):
         r"""Sets the protocol_port of this LoadBalancerStatusMember.
 
-        后端服务器的端口号。取值范围[1, 65535]。
+        **参数解释**：后端服务器的端口号。  **取值范围**：1-65535
 
         :param protocol_port: The protocol_port of this LoadBalancerStatusMember.
         :type protocol_port: int
@@ -139,7 +139,7 @@ class LoadBalancerStatusMember:
     def id(self):
         r"""Gets the id of this LoadBalancerStatusMember.
 
-        后端服务器ID。
+        **参数解释**：后端服务器ID。  **取值范围**：不涉及
 
         :return: The id of this LoadBalancerStatusMember.
         :rtype: str
@@ -150,7 +150,7 @@ class LoadBalancerStatusMember:
     def id(self, id):
         r"""Sets the id of this LoadBalancerStatusMember.
 
-        后端服务器ID。
+        **参数解释**：后端服务器ID。  **取值范围**：不涉及
 
         :param id: The id of this LoadBalancerStatusMember.
         :type id: str
@@ -161,7 +161,7 @@ class LoadBalancerStatusMember:
     def operating_status(self):
         r"""Gets the operating_status of this LoadBalancerStatusMember.
 
-        后端服务器的操作状态。  取值： - ONLINE：后端服务器正常运行。 - NO_MONITOR：后端服务器健康检查未开启。 - DISABLED：后端服务器不可用。所属负载均衡器或后端服务器组或该后端服务器的admin_state_up=false时， 会出现该状态。注意该状态仅在当前接口中返回。 - OFFLINE：关联ECS已下线。
+        **参数解释**：后端服务器的操作状态。  **取值范围**： - ONLINE：后端服务器正常运行。 - NO_MONITOR：后端服务器健康检查未开启。 - DISABLED：后端服务器不可用。所属负载均衡器或后端服务器组或该后端服务器的admin_state_up=false时，会出现该状态。注意该状态仅在当前接口中返回。 - OFFLINE：关联ECS已下线。
 
         :return: The operating_status of this LoadBalancerStatusMember.
         :rtype: str
@@ -172,7 +172,7 @@ class LoadBalancerStatusMember:
     def operating_status(self, operating_status):
         r"""Sets the operating_status of this LoadBalancerStatusMember.
 
-        后端服务器的操作状态。  取值： - ONLINE：后端服务器正常运行。 - NO_MONITOR：后端服务器健康检查未开启。 - DISABLED：后端服务器不可用。所属负载均衡器或后端服务器组或该后端服务器的admin_state_up=false时， 会出现该状态。注意该状态仅在当前接口中返回。 - OFFLINE：关联ECS已下线。
+        **参数解释**：后端服务器的操作状态。  **取值范围**： - ONLINE：后端服务器正常运行。 - NO_MONITOR：后端服务器健康检查未开启。 - DISABLED：后端服务器不可用。所属负载均衡器或后端服务器组或该后端服务器的admin_state_up=false时，会出现该状态。注意该状态仅在当前接口中返回。 - OFFLINE：关联ECS已下线。
 
         :param operating_status: The operating_status of this LoadBalancerStatusMember.
         :type operating_status: str

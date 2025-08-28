@@ -29,7 +29,7 @@ class UserLastLogin:
 
         The model defined in huaweicloud sdk
 
-        :param last_login_at: IAM用户最后登录时间。若不存在则表示从未登录过。
+        :param last_login_at: IAM用户最后登录时间。若为null，则表示从未登录过。
         :type last_login_at: datetime
         """
         
@@ -45,7 +45,7 @@ class UserLastLogin:
     def last_login_at(self):
         r"""Gets the last_login_at of this UserLastLogin.
 
-        IAM用户最后登录时间。若不存在则表示从未登录过。
+        IAM用户最后登录时间。若为null，则表示从未登录过。
 
         :return: The last_login_at of this UserLastLogin.
         :rtype: datetime
@@ -56,7 +56,7 @@ class UserLastLogin:
     def last_login_at(self, last_login_at):
         r"""Sets the last_login_at of this UserLastLogin.
 
-        IAM用户最后登录时间。若不存在则表示从未登录过。
+        IAM用户最后登录时间。若为null，则表示从未登录过。
 
         :param last_login_at: The last_login_at of this UserLastLogin.
         :type last_login_at: datetime

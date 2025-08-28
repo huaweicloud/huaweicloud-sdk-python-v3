@@ -29,7 +29,7 @@ class ShowLogtankRequest:
 
         The model defined in huaweicloud sdk
 
-        :param logtank_id: 云日志ID。
+        :param logtank_id: **参数解释**：云日志ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type logtank_id: str
         """
         
@@ -44,7 +44,7 @@ class ShowLogtankRequest:
     def logtank_id(self):
         r"""Gets the logtank_id of this ShowLogtankRequest.
 
-        云日志ID。
+        **参数解释**：云日志ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The logtank_id of this ShowLogtankRequest.
         :rtype: str
@@ -55,7 +55,7 @@ class ShowLogtankRequest:
     def logtank_id(self, logtank_id):
         r"""Sets the logtank_id of this ShowLogtankRequest.
 
-        云日志ID。
+        **参数解释**：云日志ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param logtank_id: The logtank_id of this ShowLogtankRequest.
         :type logtank_id: str

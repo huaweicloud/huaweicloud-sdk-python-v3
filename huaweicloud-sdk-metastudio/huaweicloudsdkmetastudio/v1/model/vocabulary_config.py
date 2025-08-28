@@ -47,7 +47,7 @@ class VocabularyConfig:
         :type key: str
         :param value: 设置的自定义读法
         :type value: str
-        :param type: TTSS支持配置的词表类型 * CHINESE_G2P:拼音 * PHONETIC_SYMBOL:音标 * CONTINUUM:连读 * ALIAS:别名 * SAY_AS:数字英文读法
+        :param type: TTSS支持配置的词表类型 - CHINESE_G2P：拼音 - PHONETIC_SYMBOL：音标 - CONTINUUM：连读 - ALIAS：别名 - SAY_AS：数字英文读法
         :type type: str
         :param group_id: 分组id
         :type group_id: str
@@ -153,7 +153,7 @@ class VocabularyConfig:
     def type(self):
         r"""Gets the type of this VocabularyConfig.
 
-        TTSS支持配置的词表类型 * CHINESE_G2P:拼音 * PHONETIC_SYMBOL:音标 * CONTINUUM:连读 * ALIAS:别名 * SAY_AS:数字英文读法
+        TTSS支持配置的词表类型 - CHINESE_G2P：拼音 - PHONETIC_SYMBOL：音标 - CONTINUUM：连读 - ALIAS：别名 - SAY_AS：数字英文读法
 
         :return: The type of this VocabularyConfig.
         :rtype: str
@@ -164,7 +164,7 @@ class VocabularyConfig:
     def type(self, type):
         r"""Sets the type of this VocabularyConfig.
 
-        TTSS支持配置的词表类型 * CHINESE_G2P:拼音 * PHONETIC_SYMBOL:音标 * CONTINUUM:连读 * ALIAS:别名 * SAY_AS:数字英文读法
+        TTSS支持配置的词表类型 - CHINESE_G2P：拼音 - PHONETIC_SYMBOL：音标 - CONTINUUM：连读 - ALIAS：别名 - SAY_AS：数字英文读法
 
         :param type: The type of this VocabularyConfig.
         :type type: str

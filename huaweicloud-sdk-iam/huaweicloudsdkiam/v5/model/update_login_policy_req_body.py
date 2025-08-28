@@ -45,23 +45,23 @@ class UpdateLoginPolicyReqBody:
 
         The model defined in huaweicloud sdk
 
-        :param user_validity_period: 如果IAM用户在该值设置的有效期（天）内未登录，则被停用，不适用于根用户。
+        :param user_validity_period: 如果IAM用户在该值设置的有效期（天）内未登录，则被停用，不适用于根用户，取值范围为[0,240]。
         :type user_validity_period: int
         :param custom_info_for_login: 登录提示信息，不能包含特定字符\&quot;@\&quot;、\&quot;#\&quot;、\&quot;%\&quot;、\&quot;&amp;\&quot;、\&quot;&lt;\&quot;、\&quot;&gt;\&quot;、\&quot;\\\\\&quot;、\&quot;$\&quot;、\&quot;^\&quot;和\&quot;*\&quot;的字符串。
         :type custom_info_for_login: str
-        :param lockout_duration: IAM用户登录锁定时长（分钟）。
+        :param lockout_duration: IAM用户登录锁定时长（分钟），取值范围为[15,1440]。
         :type lockout_duration: int
-        :param login_failed_times: 限定时间内登录失败次数。
+        :param login_failed_times: 限定时间内登录失败次数，取值范围为[3,10]。
         :type login_failed_times: int
-        :param period_with_login_failures: 限定时间长度（分钟）。
+        :param period_with_login_failures: 限定时间长度（分钟），取值范围为[15,60]。
         :type period_with_login_failures: int
-        :param session_timeout: 登录会话失效时间。
+        :param session_timeout: 登录会话失效时间，取值范围为[15,1440]。
         :type session_timeout: int
         :param show_recent_login_info: 是否显示最近一次的登录信息。
         :type show_recent_login_info: bool
-        :param allow_address_netmasks: 允许访问的IP地址或网段。
+        :param allow_address_netmasks: 允许访问的IP地址或网段，例如\&quot;xxx.xxx.xxx.xxx/24\&quot;。
         :type allow_address_netmasks: list[:class:`huaweicloudsdkiam.v5.AllowAddressNetmask`]
-        :param allow_ip_ranges: 允许访问的IP地址区间。
+        :param allow_ip_ranges: 允许访问的IP地址区间，取值为IP地址区间，例如\&quot;0.0.0.0-255.255.255.255\&quot;。
         :type allow_ip_ranges: list[:class:`huaweicloudsdkiam.v5.AllowIpRange`]
         """
         
@@ -101,7 +101,7 @@ class UpdateLoginPolicyReqBody:
     def user_validity_period(self):
         r"""Gets the user_validity_period of this UpdateLoginPolicyReqBody.
 
-        如果IAM用户在该值设置的有效期（天）内未登录，则被停用，不适用于根用户。
+        如果IAM用户在该值设置的有效期（天）内未登录，则被停用，不适用于根用户，取值范围为[0,240]。
 
         :return: The user_validity_period of this UpdateLoginPolicyReqBody.
         :rtype: int
@@ -112,7 +112,7 @@ class UpdateLoginPolicyReqBody:
     def user_validity_period(self, user_validity_period):
         r"""Sets the user_validity_period of this UpdateLoginPolicyReqBody.
 
-        如果IAM用户在该值设置的有效期（天）内未登录，则被停用，不适用于根用户。
+        如果IAM用户在该值设置的有效期（天）内未登录，则被停用，不适用于根用户，取值范围为[0,240]。
 
         :param user_validity_period: The user_validity_period of this UpdateLoginPolicyReqBody.
         :type user_validity_period: int
@@ -145,7 +145,7 @@ class UpdateLoginPolicyReqBody:
     def lockout_duration(self):
         r"""Gets the lockout_duration of this UpdateLoginPolicyReqBody.
 
-        IAM用户登录锁定时长（分钟）。
+        IAM用户登录锁定时长（分钟），取值范围为[15,1440]。
 
         :return: The lockout_duration of this UpdateLoginPolicyReqBody.
         :rtype: int
@@ -156,7 +156,7 @@ class UpdateLoginPolicyReqBody:
     def lockout_duration(self, lockout_duration):
         r"""Sets the lockout_duration of this UpdateLoginPolicyReqBody.
 
-        IAM用户登录锁定时长（分钟）。
+        IAM用户登录锁定时长（分钟），取值范围为[15,1440]。
 
         :param lockout_duration: The lockout_duration of this UpdateLoginPolicyReqBody.
         :type lockout_duration: int
@@ -167,7 +167,7 @@ class UpdateLoginPolicyReqBody:
     def login_failed_times(self):
         r"""Gets the login_failed_times of this UpdateLoginPolicyReqBody.
 
-        限定时间内登录失败次数。
+        限定时间内登录失败次数，取值范围为[3,10]。
 
         :return: The login_failed_times of this UpdateLoginPolicyReqBody.
         :rtype: int
@@ -178,7 +178,7 @@ class UpdateLoginPolicyReqBody:
     def login_failed_times(self, login_failed_times):
         r"""Sets the login_failed_times of this UpdateLoginPolicyReqBody.
 
-        限定时间内登录失败次数。
+        限定时间内登录失败次数，取值范围为[3,10]。
 
         :param login_failed_times: The login_failed_times of this UpdateLoginPolicyReqBody.
         :type login_failed_times: int
@@ -189,7 +189,7 @@ class UpdateLoginPolicyReqBody:
     def period_with_login_failures(self):
         r"""Gets the period_with_login_failures of this UpdateLoginPolicyReqBody.
 
-        限定时间长度（分钟）。
+        限定时间长度（分钟），取值范围为[15,60]。
 
         :return: The period_with_login_failures of this UpdateLoginPolicyReqBody.
         :rtype: int
@@ -200,7 +200,7 @@ class UpdateLoginPolicyReqBody:
     def period_with_login_failures(self, period_with_login_failures):
         r"""Sets the period_with_login_failures of this UpdateLoginPolicyReqBody.
 
-        限定时间长度（分钟）。
+        限定时间长度（分钟），取值范围为[15,60]。
 
         :param period_with_login_failures: The period_with_login_failures of this UpdateLoginPolicyReqBody.
         :type period_with_login_failures: int
@@ -211,7 +211,7 @@ class UpdateLoginPolicyReqBody:
     def session_timeout(self):
         r"""Gets the session_timeout of this UpdateLoginPolicyReqBody.
 
-        登录会话失效时间。
+        登录会话失效时间，取值范围为[15,1440]。
 
         :return: The session_timeout of this UpdateLoginPolicyReqBody.
         :rtype: int
@@ -222,7 +222,7 @@ class UpdateLoginPolicyReqBody:
     def session_timeout(self, session_timeout):
         r"""Sets the session_timeout of this UpdateLoginPolicyReqBody.
 
-        登录会话失效时间。
+        登录会话失效时间，取值范围为[15,1440]。
 
         :param session_timeout: The session_timeout of this UpdateLoginPolicyReqBody.
         :type session_timeout: int
@@ -255,7 +255,7 @@ class UpdateLoginPolicyReqBody:
     def allow_address_netmasks(self):
         r"""Gets the allow_address_netmasks of this UpdateLoginPolicyReqBody.
 
-        允许访问的IP地址或网段。
+        允许访问的IP地址或网段，例如\"xxx.xxx.xxx.xxx/24\"。
 
         :return: The allow_address_netmasks of this UpdateLoginPolicyReqBody.
         :rtype: list[:class:`huaweicloudsdkiam.v5.AllowAddressNetmask`]
@@ -266,7 +266,7 @@ class UpdateLoginPolicyReqBody:
     def allow_address_netmasks(self, allow_address_netmasks):
         r"""Sets the allow_address_netmasks of this UpdateLoginPolicyReqBody.
 
-        允许访问的IP地址或网段。
+        允许访问的IP地址或网段，例如\"xxx.xxx.xxx.xxx/24\"。
 
         :param allow_address_netmasks: The allow_address_netmasks of this UpdateLoginPolicyReqBody.
         :type allow_address_netmasks: list[:class:`huaweicloudsdkiam.v5.AllowAddressNetmask`]
@@ -277,7 +277,7 @@ class UpdateLoginPolicyReqBody:
     def allow_ip_ranges(self):
         r"""Gets the allow_ip_ranges of this UpdateLoginPolicyReqBody.
 
-        允许访问的IP地址区间。
+        允许访问的IP地址区间，取值为IP地址区间，例如\"0.0.0.0-255.255.255.255\"。
 
         :return: The allow_ip_ranges of this UpdateLoginPolicyReqBody.
         :rtype: list[:class:`huaweicloudsdkiam.v5.AllowIpRange`]
@@ -288,7 +288,7 @@ class UpdateLoginPolicyReqBody:
     def allow_ip_ranges(self, allow_ip_ranges):
         r"""Sets the allow_ip_ranges of this UpdateLoginPolicyReqBody.
 
-        允许访问的IP地址区间。
+        允许访问的IP地址区间，取值为IP地址区间，例如\"0.0.0.0-255.255.255.255\"。
 
         :param allow_ip_ranges: The allow_ip_ranges of this UpdateLoginPolicyReqBody.
         :type allow_ip_ranges: list[:class:`huaweicloudsdkiam.v5.AllowIpRange`]

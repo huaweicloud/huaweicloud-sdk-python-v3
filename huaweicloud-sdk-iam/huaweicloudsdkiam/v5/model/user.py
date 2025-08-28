@@ -41,7 +41,7 @@ class User:
 
         The model defined in huaweicloud sdk
 
-        :param description: IAM用户描述信息，不能包含特定字符\&quot;@\&quot;、\&quot;#\&quot;、\&quot;%\&quot;、\&quot;&amp;\&quot;、\&quot;&lt;\&quot;、\&quot;&gt;\&quot;、\&quot;\\\\\&quot;、\&quot;$\&quot;、\&quot;^\&quot;和\&quot;*\&quot;的字符串。
+        :param description: IAM用户描述信息，长度为0到255个字符，不能包含特定字符\&quot;@\&quot;、\&quot;#\&quot;、\&quot;%\&quot;、\&quot;&amp;\&quot;、\&quot;&lt;\&quot;、\&quot;&gt;\&quot;、\&quot;\\\\\&quot;、\&quot;$\&quot;、\&quot;^\&quot;和\&quot;*\&quot;的字符串。
         :type description: str
         :param user_name: IAM用户名，长度为1到64个字符，只包含字母、数字、\&quot;_\&quot;、\&quot;-\&quot;、\&quot;.\&quot;和空格的字符串，且首位不能为数字。
         :type user_name: str
@@ -49,7 +49,7 @@ class User:
         :type is_root_user: bool
         :param created_at: IAM用户创建时间。
         :type created_at: datetime
-        :param user_id: IAM用户ID，长度为1到64个字符，只包含字母、数字和\&quot;-\&quot;的字符串。
+        :param user_id: IAM用户ID。
         :type user_id: str
         :param urn: 统一资源名称。
         :type urn: str
@@ -81,7 +81,7 @@ class User:
     def description(self):
         r"""Gets the description of this User.
 
-        IAM用户描述信息，不能包含特定字符\"@\"、\"#\"、\"%\"、\"&\"、\"<\"、\">\"、\"\\\\\"、\"$\"、\"^\"和\"*\"的字符串。
+        IAM用户描述信息，长度为0到255个字符，不能包含特定字符\"@\"、\"#\"、\"%\"、\"&\"、\"<\"、\">\"、\"\\\\\"、\"$\"、\"^\"和\"*\"的字符串。
 
         :return: The description of this User.
         :rtype: str
@@ -92,7 +92,7 @@ class User:
     def description(self, description):
         r"""Sets the description of this User.
 
-        IAM用户描述信息，不能包含特定字符\"@\"、\"#\"、\"%\"、\"&\"、\"<\"、\">\"、\"\\\\\"、\"$\"、\"^\"和\"*\"的字符串。
+        IAM用户描述信息，长度为0到255个字符，不能包含特定字符\"@\"、\"#\"、\"%\"、\"&\"、\"<\"、\">\"、\"\\\\\"、\"$\"、\"^\"和\"*\"的字符串。
 
         :param description: The description of this User.
         :type description: str
@@ -169,7 +169,7 @@ class User:
     def user_id(self):
         r"""Gets the user_id of this User.
 
-        IAM用户ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
+        IAM用户ID。
 
         :return: The user_id of this User.
         :rtype: str
@@ -180,7 +180,7 @@ class User:
     def user_id(self, user_id):
         r"""Sets the user_id of this User.
 
-        IAM用户ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
+        IAM用户ID。
 
         :param user_id: The user_id of this User.
         :type user_id: str

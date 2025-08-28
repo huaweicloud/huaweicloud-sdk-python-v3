@@ -33,11 +33,11 @@ class LoadbalancerFeature:
 
         The model defined in huaweicloud sdk
 
-        :param feature: 参数解释：特性名称。
+        :param feature: **参数解释**：特性名称。  **取值范围**：不涉及
         :type feature: str
-        :param type: 参数解释：特性值(value字段)的类型，如：INT，表示整型。
+        :param type: **参数解释**：特性值(value字段)的类型，如：INT，表示整型。  **取值范围**：不涉及
         :type type: str
-        :param value: 参数解释：特性值。如开关类型的特性取值true/false，表示特性开启关闭；配额类型的特性取值整数，表示限制配额。
+        :param value: **参数解释**：特性值。如开关类型的特性取值true/false，表示特性开启关闭；配额类型的特性取值整数，表示限制配额。  **取值范围**：不涉及
         :type value: str
         """
         
@@ -56,7 +56,7 @@ class LoadbalancerFeature:
     def feature(self):
         r"""Gets the feature of this LoadbalancerFeature.
 
-        参数解释：特性名称。
+        **参数解释**：特性名称。  **取值范围**：不涉及
 
         :return: The feature of this LoadbalancerFeature.
         :rtype: str
@@ -67,7 +67,7 @@ class LoadbalancerFeature:
     def feature(self, feature):
         r"""Sets the feature of this LoadbalancerFeature.
 
-        参数解释：特性名称。
+        **参数解释**：特性名称。  **取值范围**：不涉及
 
         :param feature: The feature of this LoadbalancerFeature.
         :type feature: str
@@ -78,7 +78,7 @@ class LoadbalancerFeature:
     def type(self):
         r"""Gets the type of this LoadbalancerFeature.
 
-        参数解释：特性值(value字段)的类型，如：INT，表示整型。
+        **参数解释**：特性值(value字段)的类型，如：INT，表示整型。  **取值范围**：不涉及
 
         :return: The type of this LoadbalancerFeature.
         :rtype: str
@@ -89,7 +89,7 @@ class LoadbalancerFeature:
     def type(self, type):
         r"""Sets the type of this LoadbalancerFeature.
 
-        参数解释：特性值(value字段)的类型，如：INT，表示整型。
+        **参数解释**：特性值(value字段)的类型，如：INT，表示整型。  **取值范围**：不涉及
 
         :param type: The type of this LoadbalancerFeature.
         :type type: str
@@ -100,7 +100,7 @@ class LoadbalancerFeature:
     def value(self):
         r"""Gets the value of this LoadbalancerFeature.
 
-        参数解释：特性值。如开关类型的特性取值true/false，表示特性开启关闭；配额类型的特性取值整数，表示限制配额。
+        **参数解释**：特性值。如开关类型的特性取值true/false，表示特性开启关闭；配额类型的特性取值整数，表示限制配额。  **取值范围**：不涉及
 
         :return: The value of this LoadbalancerFeature.
         :rtype: str
@@ -111,7 +111,7 @@ class LoadbalancerFeature:
     def value(self, value):
         r"""Sets the value of this LoadbalancerFeature.
 
-        参数解释：特性值。如开关类型的特性取值true/false，表示特性开启关闭；配额类型的特性取值整数，表示限制配额。
+        **参数解释**：特性值。如开关类型的特性取值true/false，表示特性开启关闭；配额类型的特性取值整数，表示限制配额。  **取值范围**：不涉及
 
         :param value: The value of this LoadbalancerFeature.
         :type value: str

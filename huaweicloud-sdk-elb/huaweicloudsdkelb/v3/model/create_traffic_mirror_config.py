@@ -31,9 +31,9 @@ class CreateTrafficMirrorConfig:
 
         The model defined in huaweicloud sdk
 
-        :param target_ids: 流量镜像的目的后端服务器组ID。
+        :param target_ids: **参数解释**：流量镜像的目的后端服务器组ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type target_ids: list[str]
-        :param mirror_request_body_enable: 镜像请求是否携带请求体，默认true。
+        :param mirror_request_body_enable: **参数解释**：镜像请求是否携带请求体，默认true。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type mirror_request_body_enable: bool
         """
         
@@ -52,7 +52,7 @@ class CreateTrafficMirrorConfig:
     def target_ids(self):
         r"""Gets the target_ids of this CreateTrafficMirrorConfig.
 
-        流量镜像的目的后端服务器组ID。
+        **参数解释**：流量镜像的目的后端服务器组ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The target_ids of this CreateTrafficMirrorConfig.
         :rtype: list[str]
@@ -63,7 +63,7 @@ class CreateTrafficMirrorConfig:
     def target_ids(self, target_ids):
         r"""Sets the target_ids of this CreateTrafficMirrorConfig.
 
-        流量镜像的目的后端服务器组ID。
+        **参数解释**：流量镜像的目的后端服务器组ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param target_ids: The target_ids of this CreateTrafficMirrorConfig.
         :type target_ids: list[str]
@@ -74,7 +74,7 @@ class CreateTrafficMirrorConfig:
     def mirror_request_body_enable(self):
         r"""Gets the mirror_request_body_enable of this CreateTrafficMirrorConfig.
 
-        镜像请求是否携带请求体，默认true。
+        **参数解释**：镜像请求是否携带请求体，默认true。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The mirror_request_body_enable of this CreateTrafficMirrorConfig.
         :rtype: bool
@@ -85,7 +85,7 @@ class CreateTrafficMirrorConfig:
     def mirror_request_body_enable(self, mirror_request_body_enable):
         r"""Sets the mirror_request_body_enable of this CreateTrafficMirrorConfig.
 
-        镜像请求是否携带请求体，默认true。
+        **参数解释**：镜像请求是否携带请求体，默认true。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param mirror_request_body_enable: The mirror_request_body_enable of this CreateTrafficMirrorConfig.
         :type mirror_request_body_enable: bool

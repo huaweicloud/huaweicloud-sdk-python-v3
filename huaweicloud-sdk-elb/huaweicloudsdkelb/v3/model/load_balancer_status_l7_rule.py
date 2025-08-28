@@ -33,11 +33,11 @@ class LoadBalancerStatusL7Rule:
 
         The model defined in huaweicloud sdk
 
-        :param id: L7转发规则ID。
+        :param id: **参数解释**：L7转发规则ID。  **取值范围**：不涉及
         :type id: str
-        :param type: 匹配内容类型。  取值： - HOST_NAME：域名匹配。 - PATH：URL路径匹配。  使用说明： 同一个l7policy下创建的所有的l7rule的HOST_NAME不能重复。
+        :param type: **参数解释**：匹配内容类型。  **取值范围**： - HOST_NAME：域名匹配。 - PATH：URL路径匹配。
         :type type: str
-        :param provisioning_status: 转发规则的配置状态。  取值： - ACTIVE：使用中，默认值。 - ERROR：当前规则所属策略与同一监听器下的其他策略存在相同的规则配置。
+        :param provisioning_status: **参数解释**：转发规则的配置状态。  **取值范围**： - ACTIVE：使用中，默认值。 - ERROR：当前规则所属策略与同一监听器下的其他策略存在相同的规则配置。
         :type provisioning_status: str
         """
         
@@ -56,7 +56,7 @@ class LoadBalancerStatusL7Rule:
     def id(self):
         r"""Gets the id of this LoadBalancerStatusL7Rule.
 
-        L7转发规则ID。
+        **参数解释**：L7转发规则ID。  **取值范围**：不涉及
 
         :return: The id of this LoadBalancerStatusL7Rule.
         :rtype: str
@@ -67,7 +67,7 @@ class LoadBalancerStatusL7Rule:
     def id(self, id):
         r"""Sets the id of this LoadBalancerStatusL7Rule.
 
-        L7转发规则ID。
+        **参数解释**：L7转发规则ID。  **取值范围**：不涉及
 
         :param id: The id of this LoadBalancerStatusL7Rule.
         :type id: str
@@ -78,7 +78,7 @@ class LoadBalancerStatusL7Rule:
     def type(self):
         r"""Gets the type of this LoadBalancerStatusL7Rule.
 
-        匹配内容类型。  取值： - HOST_NAME：域名匹配。 - PATH：URL路径匹配。  使用说明： 同一个l7policy下创建的所有的l7rule的HOST_NAME不能重复。
+        **参数解释**：匹配内容类型。  **取值范围**： - HOST_NAME：域名匹配。 - PATH：URL路径匹配。
 
         :return: The type of this LoadBalancerStatusL7Rule.
         :rtype: str
@@ -89,7 +89,7 @@ class LoadBalancerStatusL7Rule:
     def type(self, type):
         r"""Sets the type of this LoadBalancerStatusL7Rule.
 
-        匹配内容类型。  取值： - HOST_NAME：域名匹配。 - PATH：URL路径匹配。  使用说明： 同一个l7policy下创建的所有的l7rule的HOST_NAME不能重复。
+        **参数解释**：匹配内容类型。  **取值范围**： - HOST_NAME：域名匹配。 - PATH：URL路径匹配。
 
         :param type: The type of this LoadBalancerStatusL7Rule.
         :type type: str
@@ -100,7 +100,7 @@ class LoadBalancerStatusL7Rule:
     def provisioning_status(self):
         r"""Gets the provisioning_status of this LoadBalancerStatusL7Rule.
 
-        转发规则的配置状态。  取值： - ACTIVE：使用中，默认值。 - ERROR：当前规则所属策略与同一监听器下的其他策略存在相同的规则配置。
+        **参数解释**：转发规则的配置状态。  **取值范围**： - ACTIVE：使用中，默认值。 - ERROR：当前规则所属策略与同一监听器下的其他策略存在相同的规则配置。
 
         :return: The provisioning_status of this LoadBalancerStatusL7Rule.
         :rtype: str
@@ -111,7 +111,7 @@ class LoadBalancerStatusL7Rule:
     def provisioning_status(self, provisioning_status):
         r"""Sets the provisioning_status of this LoadBalancerStatusL7Rule.
 
-        转发规则的配置状态。  取值： - ACTIVE：使用中，默认值。 - ERROR：当前规则所属策略与同一监听器下的其他策略存在相同的规则配置。
+        **参数解释**：转发规则的配置状态。  **取值范围**： - ACTIVE：使用中，默认值。 - ERROR：当前规则所属策略与同一监听器下的其他策略存在相同的规则配置。
 
         :param provisioning_status: The provisioning_status of this LoadBalancerStatusL7Rule.
         :type provisioning_status: str

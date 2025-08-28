@@ -31,9 +31,9 @@ class DeleteMemberRequest:
 
         The model defined in huaweicloud sdk
 
-        :param pool_id: 参数解释：后端服务器组ID。
+        :param pool_id: **参数解释**：后端服务器组ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type pool_id: str
-        :param member_id: 后端服务器ID。 &gt; 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。  member ID可以通过[查询后端服务器列表](ListMembers.xml)获取。
+        :param member_id: **参数解释**：后端服务器ID。member ID可以通过[查询后端服务器列表](ListMembers.xml)获取。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及  &gt; 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
         :type member_id: str
         """
         
@@ -50,7 +50,7 @@ class DeleteMemberRequest:
     def pool_id(self):
         r"""Gets the pool_id of this DeleteMemberRequest.
 
-        参数解释：后端服务器组ID。
+        **参数解释**：后端服务器组ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The pool_id of this DeleteMemberRequest.
         :rtype: str
@@ -61,7 +61,7 @@ class DeleteMemberRequest:
     def pool_id(self, pool_id):
         r"""Sets the pool_id of this DeleteMemberRequest.
 
-        参数解释：后端服务器组ID。
+        **参数解释**：后端服务器组ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param pool_id: The pool_id of this DeleteMemberRequest.
         :type pool_id: str
@@ -72,7 +72,7 @@ class DeleteMemberRequest:
     def member_id(self):
         r"""Gets the member_id of this DeleteMemberRequest.
 
-        后端服务器ID。 > 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。  member ID可以通过[查询后端服务器列表](ListMembers.xml)获取。
+        **参数解释**：后端服务器ID。member ID可以通过[查询后端服务器列表](ListMembers.xml)获取。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及  > 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
 
         :return: The member_id of this DeleteMemberRequest.
         :rtype: str
@@ -83,7 +83,7 @@ class DeleteMemberRequest:
     def member_id(self, member_id):
         r"""Sets the member_id of this DeleteMemberRequest.
 
-        后端服务器ID。 > 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。  member ID可以通过[查询后端服务器列表](ListMembers.xml)获取。
+        **参数解释**：后端服务器ID。member ID可以通过[查询后端服务器列表](ListMembers.xml)获取。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及  > 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
 
         :param member_id: The member_id of this DeleteMemberRequest.
         :type member_id: str

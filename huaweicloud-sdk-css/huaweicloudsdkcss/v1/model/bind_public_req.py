@@ -18,21 +18,25 @@ class BindPublicReq:
 
     openapi_types = {
         'eip': 'BindPublicReqEip',
+        'white_list': 'str',
         'is_auto_pay': 'int'
     }
 
     attribute_map = {
         'eip': 'eip',
+        'white_list': 'white_list',
         'is_auto_pay': 'is_auto_pay'
     }
 
-    def __init__(self, eip=None, is_auto_pay=None):
+    def __init__(self, eip=None, white_list=None, is_auto_pay=None):
         r"""BindPublicReq
 
         The model defined in huaweicloud sdk
 
         :param eip: 
         :type eip: :class:`huaweicloudsdkcss.v1.BindPublicReqEip`
+        :param white_list: 公网访问控制白名单。
+        :type white_list: str
         :param is_auto_pay: 是否自动支付。下单订购后，是否自动从客户的华为云账户中支付，而不需要客户手动去进行支付。该参数适用于包周期集群。  - 1: 是（会自动选择折扣和优惠券进行优惠，然后自动从客户华为云账户中支付），自动支付失败后会生成订单成功(该订单应付金额是优惠后金额)、但订单状态为“待支付”，等待客户手动支付(手动支付时，客户还可以修改系统自动选择的折扣和优惠券)。  - 0: 否（需要客户手动去支付，客户可以选择折扣和优惠券）。默认值为“0”。
         :type is_auto_pay: int
         """
@@ -40,10 +44,13 @@ class BindPublicReq:
         
 
         self._eip = None
+        self._white_list = None
         self._is_auto_pay = None
         self.discriminator = None
 
         self.eip = eip
+        if white_list is not None:
+            self.white_list = white_list
         if is_auto_pay is not None:
             self.is_auto_pay = is_auto_pay
 
@@ -64,6 +71,28 @@ class BindPublicReq:
         :type eip: :class:`huaweicloudsdkcss.v1.BindPublicReqEip`
         """
         self._eip = eip
+
+    @property
+    def white_list(self):
+        r"""Gets the white_list of this BindPublicReq.
+
+        公网访问控制白名单。
+
+        :return: The white_list of this BindPublicReq.
+        :rtype: str
+        """
+        return self._white_list
+
+    @white_list.setter
+    def white_list(self, white_list):
+        r"""Sets the white_list of this BindPublicReq.
+
+        公网访问控制白名单。
+
+        :param white_list: The white_list of this BindPublicReq.
+        :type white_list: str
+        """
+        self._white_list = white_list
 
     @property
     def is_auto_pay(self):

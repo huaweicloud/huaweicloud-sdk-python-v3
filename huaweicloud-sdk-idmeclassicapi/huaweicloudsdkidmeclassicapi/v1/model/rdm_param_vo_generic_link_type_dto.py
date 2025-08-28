@@ -31,7 +31,7 @@ class RDMParamVOGenericLinkTypeDTO:
 
         The model defined in huaweicloud sdk
 
-        :param application_id: **参数解释**：  应用ID。  **约束限制**：  不涉及。  **取值范围**：  由英文字母和数字组成，且长度为32个字符。  **默认取值**：  不涉及。 
+        :param application_id: **参数解释**：  应用ID。  **约束限制**：  不涉及。  **取值范围**：  由英文字母和数字组成，且长度为32个字符。  **默认取值**：  不涉及。
         :type application_id: str
         :param params: 
         :type params: :class:`huaweicloudsdkidmeclassicapi.v1.GenericLinkTypeDTO`
@@ -45,14 +45,13 @@ class RDMParamVOGenericLinkTypeDTO:
 
         if application_id is not None:
             self.application_id = application_id
-        if params is not None:
-            self.params = params
+        self.params = params
 
     @property
     def application_id(self):
         r"""Gets the application_id of this RDMParamVOGenericLinkTypeDTO.
 
-        **参数解释**：  应用ID。  **约束限制**：  不涉及。  **取值范围**：  由英文字母和数字组成，且长度为32个字符。  **默认取值**：  不涉及。 
+        **参数解释**：  应用ID。  **约束限制**：  不涉及。  **取值范围**：  由英文字母和数字组成，且长度为32个字符。  **默认取值**：  不涉及。
 
         :return: The application_id of this RDMParamVOGenericLinkTypeDTO.
         :rtype: str
@@ -63,7 +62,7 @@ class RDMParamVOGenericLinkTypeDTO:
     def application_id(self, application_id):
         r"""Sets the application_id of this RDMParamVOGenericLinkTypeDTO.
 
-        **参数解释**：  应用ID。  **约束限制**：  不涉及。  **取值范围**：  由英文字母和数字组成，且长度为32个字符。  **默认取值**：  不涉及。 
+        **参数解释**：  应用ID。  **约束限制**：  不涉及。  **取值范围**：  由英文字母和数字组成，且长度为32个字符。  **默认取值**：  不涉及。
 
         :param application_id: The application_id of this RDMParamVOGenericLinkTypeDTO.
         :type application_id: str

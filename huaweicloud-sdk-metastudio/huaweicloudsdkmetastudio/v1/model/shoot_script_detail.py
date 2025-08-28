@@ -53,7 +53,7 @@ class ShootScriptDetail:
         :type audio_duration: float
         :param audio_drive_action_config: 语音驱动时的动作配置。
         :type audio_drive_action_config: list[:class:`huaweicloudsdkmetastudio.v1.AudioDriveActionConfig`]
-        :param audio_drive_file_external_url: 语音驱动音频文件外部下载URL。  &gt; * 需要先申请开通白名单后，才允许通过外部URL的音频文件来驱动分身数字人视频。
+        :param audio_drive_file_external_url: 语音驱动音频文件外部下载URL。  &gt; * 只支持分身数字人视频制作  &gt; * 需要先申请开通白名单后，才允许通过外部URL的音频文件来驱动分身数字人视频。  &gt; * 音频文件需要存放在华为云OBS
         :type audio_drive_file_external_url: str
         :param background_config: 背景配置。
         :type background_config: list[:class:`huaweicloudsdkmetastudio.v1.BackgroundConfigInfo`]
@@ -185,7 +185,7 @@ class ShootScriptDetail:
     def audio_drive_file_external_url(self):
         r"""Gets the audio_drive_file_external_url of this ShootScriptDetail.
 
-        语音驱动音频文件外部下载URL。  > * 需要先申请开通白名单后，才允许通过外部URL的音频文件来驱动分身数字人视频。
+        语音驱动音频文件外部下载URL。  > * 只支持分身数字人视频制作  > * 需要先申请开通白名单后，才允许通过外部URL的音频文件来驱动分身数字人视频。  > * 音频文件需要存放在华为云OBS
 
         :return: The audio_drive_file_external_url of this ShootScriptDetail.
         :rtype: str
@@ -196,7 +196,7 @@ class ShootScriptDetail:
     def audio_drive_file_external_url(self, audio_drive_file_external_url):
         r"""Sets the audio_drive_file_external_url of this ShootScriptDetail.
 
-        语音驱动音频文件外部下载URL。  > * 需要先申请开通白名单后，才允许通过外部URL的音频文件来驱动分身数字人视频。
+        语音驱动音频文件外部下载URL。  > * 只支持分身数字人视频制作  > * 需要先申请开通白名单后，才允许通过外部URL的音频文件来驱动分身数字人视频。  > * 音频文件需要存放在华为云OBS
 
         :param audio_drive_file_external_url: The audio_drive_file_external_url of this ShootScriptDetail.
         :type audio_drive_file_external_url: str

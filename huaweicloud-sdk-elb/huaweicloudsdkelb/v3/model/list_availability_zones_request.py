@@ -31,9 +31,9 @@ class ListAvailabilityZonesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param public_border_group: 参数解释：网络公共边界组。
+        :param public_border_group: **参数解释**：公网边界组。  **约束限制**：不涉及  **取值范围**： - center：表示中心站点的公网边界组 - 边缘站点名称：表示边缘站点的公网边界组  **默认取值**：不涉及
         :type public_border_group: str
-        :param loadbalancer_id: 参数解释：负载均衡器ID。
+        :param loadbalancer_id: **参数解释**：负载均衡器ID。传入可查询对应ELB支持的可用区列表。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type loadbalancer_id: str
         """
         
@@ -52,7 +52,7 @@ class ListAvailabilityZonesRequest:
     def public_border_group(self):
         r"""Gets the public_border_group of this ListAvailabilityZonesRequest.
 
-        参数解释：网络公共边界组。
+        **参数解释**：公网边界组。  **约束限制**：不涉及  **取值范围**： - center：表示中心站点的公网边界组 - 边缘站点名称：表示边缘站点的公网边界组  **默认取值**：不涉及
 
         :return: The public_border_group of this ListAvailabilityZonesRequest.
         :rtype: str
@@ -63,7 +63,7 @@ class ListAvailabilityZonesRequest:
     def public_border_group(self, public_border_group):
         r"""Sets the public_border_group of this ListAvailabilityZonesRequest.
 
-        参数解释：网络公共边界组。
+        **参数解释**：公网边界组。  **约束限制**：不涉及  **取值范围**： - center：表示中心站点的公网边界组 - 边缘站点名称：表示边缘站点的公网边界组  **默认取值**：不涉及
 
         :param public_border_group: The public_border_group of this ListAvailabilityZonesRequest.
         :type public_border_group: str
@@ -74,7 +74,7 @@ class ListAvailabilityZonesRequest:
     def loadbalancer_id(self):
         r"""Gets the loadbalancer_id of this ListAvailabilityZonesRequest.
 
-        参数解释：负载均衡器ID。
+        **参数解释**：负载均衡器ID。传入可查询对应ELB支持的可用区列表。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The loadbalancer_id of this ListAvailabilityZonesRequest.
         :rtype: str
@@ -85,7 +85,7 @@ class ListAvailabilityZonesRequest:
     def loadbalancer_id(self, loadbalancer_id):
         r"""Sets the loadbalancer_id of this ListAvailabilityZonesRequest.
 
-        参数解释：负载均衡器ID。
+        **参数解释**：负载均衡器ID。传入可查询对应ELB支持的可用区列表。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param loadbalancer_id: The loadbalancer_id of this ListAvailabilityZonesRequest.
         :type loadbalancer_id: str

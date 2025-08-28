@@ -105,83 +105,83 @@ class Listener:
 
         The model defined in huaweicloud sdk
 
-        :param admin_state_up: 参数解释：监听器的管理状态。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
+        :param admin_state_up: **参数解释**：监听器的管理状态。  **取值范围**：true
         :type admin_state_up: bool
-        :param client_ca_tls_container_ref: 参数解释：监听器使用的CA证书ID。  约束限制：当且仅当type&#x3D;client时，才会使用该字段对应的证书。
+        :param client_ca_tls_container_ref: **参数解释**：监听器使用的CA证书ID。当且仅当type&#x3D;client时，才会使用该字段对应的证书。  **取值范围**：不涉及
         :type client_ca_tls_container_ref: str
-        :param connection_limit: 参数解释：监听器的最大连接数。  取值范围：-1表示不限制。  默认取值：-1。  不支持该字段，请勿使用。
+        :param connection_limit: **参数解释**：监听器的最大连接数。  **取值范围**：大于等于-1的整数。
         :type connection_limit: int
-        :param created_at: 参数解释：监听器的创建时间。  取值范围：  格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如：2021-07-30T12:03:44Z
+        :param created_at: **参数解释**：监听器的创建时间。  **取值范围**：不涉及 格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如：2021-07-30T12:03:44Z
         :type created_at: str
-        :param default_pool_id: 参数解释：监听器的默认后端服务器组ID。当请求没有匹配的转发策略时，转发到默认后端服务器上处理。
+        :param default_pool_id: **参数解释**：监听器的默认后端服务器组ID。当请求没有匹配的转发策略时，转发到默认后端服务器组上处理。  **取值范围**：不涉及
         :type default_pool_id: str
-        :param default_tls_container_ref: 参数解释：监听器使用的服务器证书ID。
+        :param default_tls_container_ref: **参数解释**：监听器使用的服务器证书ID。  **取值范围**：不涉及
         :type default_tls_container_ref: str
-        :param description: 参数解释：监听器的描述信息。
+        :param description: **参数解释**：监听器的描述信息。  **取值范围**：不涉及
         :type description: str
-        :param http2_enable: 参数解释：客户端与LB之间的HTTPS请求的HTTP2功能的开启状态。 开启后，可提升客户端与LB间的访问性能，但LB与后端服务器间仍采用HTTP1.X协议。  约束限制： - 仅HTTPS协议监听器有效。 - QUIC监听器不能设置该字段，固定返回为true。 - 其他协议的监听器可设置该字段但无效，无论取值如何都不影响监听器正常运行。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt)
+        :param http2_enable: **参数解释**：客户端与LB之间的HTTPS请求的HTTP2功能的开启状态。 开启后，可提升客户端与LB间的访问性能，但LB与后端服务器间仍采用HTTP1.X协议。  **取值范围**：不涉及
         :type http2_enable: bool
-        :param id: 参数解释：监听器ID。
+        :param id: **参数解释**：监听器ID。  **取值范围**：不涉及
         :type id: str
         :param insert_headers: 
         :type insert_headers: :class:`huaweicloudsdkelb.v3.ListenerInsertHeaders`
-        :param loadbalancers: 参数解释：监听器所属的负载均衡器的ID列表。  约束限制：一个监听器只支持关联到一个LB。
+        :param loadbalancers: **参数解释**：监听器所属的负载均衡器的ID列表。实际上一个监听器只支持关联到一个LB。
         :type loadbalancers: list[:class:`huaweicloudsdkelb.v3.LoadBalancerRef`]
-        :param name: 参数解释：监听器的名称。  约束限制：若名称为空，则在控制台的监听器列表无法选择并查看监听器详情。
+        :param name: **参数解释**：监听器的名称。若名称为空，则在控制台的监听器列表无法选择并查看监听器详情。  **取值范围**：不涉及
         :type name: str
-        :param project_id: 参数解释：监听器所在的项目ID。
+        :param project_id: **参数解释**：监听器所在的项目ID。  **取值范围**：不涉及
         :type project_id: str
-        :param enterprise_project_id: 参数解释：企业项目ID。
+        :param enterprise_project_id: **参数解释**：企业项目ID。  **取值范围**：不涉及
         :type enterprise_project_id: str
-        :param protocol: 参数解释：监听器的监听协议。  [取值范围：TCP、UDP、HTTP、HTTPS、TERMINATED_HTTPS、QUIC、TLS。  约束限制： - 共享型LB上的HTTPS监听器只支持设置为TERMINATED_HTTPS， 创建时传入HTTPS将会自动转为TERMINATED_HTTPS。 - 独享型LB上的HTTPS监听器只支持设置为HTTPS，创建时传入TERMINATED_HTTPS将会自动转为HTTPS。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt)  [取值：TCP、UDP、HTTP、HTTPS。](tag:hcso_dt) [取值：TCP、UDP、IP、HTTP、HTTPS。IP为网关型LB上的监听器独有的协议。](tag:hws_eu)  [不支持QUIC。](tag:tm,g42,hk_g42,dt)
+        :param protocol: **参数解释**：监听器的监听协议。  [**取值范围**：TCP、UDP、HTTP、HTTPS、TERMINATED_HTTPS、QUIC、TLS。](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt)  [**取值范围**：TCP、UDP、HTTP、HTTPS。](tag:hcso_dt) [**取值范围**：TCP、UDP、IP、HTTP、HTTPS。IP为网关型LB上的监听器独有的协议。](tag:hws_eu)
         :type protocol: str
-        :param protocol_port: 参数解释：监听器的监听端口。  约束限制： - QUIC监听器端口不能是4789，且不能和UDP监听器端口重复。 - 传0表示开启监听端口范围的能力，此时port_ranges为必填字段。 [-不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt)
+        :param protocol_port: **参数解释**：监听器的监听端口。  **取值范围**：不涉及
         :type protocol_port: int
-        :param sni_container_refs: 参数解释：监听器使用的SNI证书（带域名的服务器证书）ID列表。  约束限制： - QUIC监听器仅支持RSA证书。 - 列表对应的所有SNI证书的域名不允许存在重复。 - 列表对应的所有SNI证书的域名总数不超过200。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt)
+        :param sni_container_refs: **参数解释**：监听器使用的SNI证书（带域名的服务器证书）ID列表。  **取值范围**：不涉及
         :type sni_container_refs: list[str]
-        :param sni_match_algo: 参数解释：监听器使用的SNI证书泛域名匹配方式。  取值范围：longest_suffix表示最长尾缀匹配；wildcard表示标准域名分级匹配。  默认取值：wildcard
+        :param sni_match_algo: **参数解释**：监听器使用的SNI证书泛域名匹配方式。  **取值范围**：longest_suffix表示最长尾缀匹配；wildcard表示标准域名分级匹配。
         :type sni_match_algo: str
-        :param tags: 参数解释：标签列表。
+        :param tags: **参数解释**：标签列表。
         :type tags: list[:class:`huaweicloudsdkelb.v3.Tag`]
-        :param updated_at: 参数解释：监听器的更新时间。  取值范围：  格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如：2021-07-30T12:03:44Z
+        :param updated_at: **参数解释**：监听器的更新时间。  **取值范围**： 格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如：2021-07-30T12:03:44Z
         :type updated_at: str
-        :param tls_ciphers_policy: 参数解释：监听器使用的安全策略。  [取值范围：tls-1-0-inherit、tls-1-0、tls-1-1、 tls-1-2、tls-1-2-strict、tls-1-2-fs、tls-1-0-with-1-3、 tls-1-2-fs-with-1-3、 hybrid-policy-1-0、tls-1-2-strict-no-cbc，默认：tls-1-2。 ](tag:hws,hws_hk,ocb,tlf,ctc,hcso,ct,sbc,tm,cmcc,dt)  [取值范围：tls-1-0、tls-1-1、tls-1-2、 tls-1-2-strict，默认：tls-1-2。](tag:hws_eu,g42,hk_g42,hcso_dt)  [约束限制： - 仅对HTTPS协议类型的监听器且关联LB为独享型时有效。 - QUIC监听器不支持该字段。 - 若同时设置了security_policy_id和tls_ciphers_policy，则仅security_policy_id生效。 - 加密套件的优先顺序为ecc套件、rsa套件、tls1.3协议的套件（即支持ecc又支持rsa） ](tag:hws,hws_hk,hws_eu,ocb,tlf,ctc,hcso,ct,sbc,g42,tm,cmcc,hk_g42,dt)  [约束限制： - 仅对HTTPS协议类型的监听器有效](tag:hcso_dt)  [不支持tls1.3协议的套件。](tag:tm,hws_eu,g42,hk_g42)
+        :param tls_ciphers_policy: **参数解释**：监听器使用的安全策略。  [**取值范围**：tls-1-0-inherit、tls-1-0、tls-1-1、tls-1-2、tls-1-2-strict、tls-1-2-fs、tls-1-0-with-1-3、tls-1-2-fs-with-1-3、hybrid-policy-1-0、tls-1-2-strict-no-cbc，默认：tls-1-2。](tag:hws,hws_hk,ocb,tlf,ctc,hcso,ct,sbc,tm,cmcc,dt)  [**取值范围**：tls-1-0、tls-1-1、tls-1-2、tls-1-2-strict，默认：tls-1-2。](tag:hws_eu,g42,hk_g42,hcso_dt)  [不支持tls1.3协议的套件。](tag:tm,hws_eu,g42,hk_g42)
         :type tls_ciphers_policy: str
-        :param security_policy_id: 参数解释：自定义安全策略的ID。  [约束限制： - 仅对HTTPS协议类型的监听器且关联LB为独享型时有效。 - 若同时设置了security_policy_id和tls_ciphers_policy，则仅security_policy_id生效。 - 加密套件的优先顺序为ecc套件、rsa套件、tls1.3协议的套件（即支持ecc又支持rsa） ](tag:hws,hws_hk,hws_eu,ocb,ctc,hcso,g42,tm,cmcc,hk_g42,dt)  [约束限制： - 仅对HTTPS协议类型的监听器有效](tag:hcso_dt)  [不支持tls1.3协议的套件。](tag:tm,hws_eu,g42,hk_g42)
+        :param security_policy_id: **参数解释**：自定义安全策略的ID。  **取值范围**：不涉及
         :type security_policy_id: str
-        :param enable_member_retry: 参数解释：是否开启后端服务器的重试。  [约束限制： - 若关联是共享型LB，仅在protocol为HTTP、TERMINATED_HTTPS时才能传入该字段。 - 若关联是独享型LB，仅在protocol为HTTP、HTTPS和QUIC时才能传入该字段。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt)  [约束限制： - 仅在protocol为HTTP、HTTPS时才能传入该字段。](tag:hws_eu,hcso_dt)  取值范围：true 开启重试，false 不开启重试。  默认取值：true。  [不支持QUIC。](tag:tm,dt)
+        :param enable_member_retry: **参数解释**：是否开启后端服务器的重试。  **取值范围**：true 开启重试，false 不开启重试。
         :type enable_member_retry: bool
-        :param keepalive_timeout: 参数解释：客户端连接空闲超时时间。在超过keepalive_timeout时长一直没有请求，负载均衡会暂时中断当前连接，直到下一次请求时重新建立新的连接。  约束限制：共享型实例的UDP监听器不支持此字段。  取值范围： - TCP监听器[和IP监听器](tag:hws_eu)：10-4000s，默认值为300s。 - 若为HTTP/HTTPS/TERMINATED_HTTPS监听器，取值范围为（0-4000s）默认值为60s。
+        :param keepalive_timeout: **参数解释**：客户端连接空闲超时时间。在超过keepalive_timeout时长一直没有请求，负载均衡会暂时中断当前连接，直到下一次请求时重新建立新的连接。  **取值范围**： - TCP监听器[和IP监听器](tag:hws_eu)：10-4000s。 - 若为HTTP/HTTPS/TERMINATED_HTTPS监听器，取值范围为：0-4000s。
         :type keepalive_timeout: int
-        :param client_timeout: 参数解释：等待客户端请求超时时间，包括两种情况： - 读取整个客户端请求头的超时时长：如果客户端未在超时时长内发送完整个请求头，则请求将被中断 - 两个连续body体的数据包到达LB的时间间隔，超出client_timeout将会断开连接。  约束限制：仅协议为HTTP/HTTPS的监听器支持该字段。  取值范围：1-300s  默认取值：60s。
+        :param client_timeout: **参数解释**：等待客户端请求超时时间，包括两种情况： - 读取整个客户端请求头的超时时长：如果客户端未在超时时长内发送完整个请求头，则请求将被中断 - 两个连续body体的数据包到达LB的时间间隔，超出client_timeout将会断开连接。  **取值范围**：1-300，单位：秒。
         :type client_timeout: int
-        :param member_timeout: 参数解释：等待后端服务器响应超时时间。请求转发后端服务器后，在等待超时member_timeout时长没有响应，负载均衡将终止等待，并返回HTTP504错误码。  约束限制：仅支持协议为HTTP/HTTPS的监听器。  取值范围：1-300s  默认取值：60s。
+        :param member_timeout: **参数解释**：等待后端服务器响应超时时间。请求转发后端服务器后，在等待超时member_timeout时长没有响应，负载均衡将终止等待，并返回HTTP504错误码。  **取值范围**：1-300，单位：秒。
         :type member_timeout: int
         :param ipgroup: 
         :type ipgroup: :class:`huaweicloudsdkelb.v3.ListenerIpGroup`
-        :param transparent_client_ip_enable: 参数解释：是否透传客户端IP地址。开启后客户端IP地址将透传到后端服务器。 [仅作用于共享型LB的TCP/UDP监听器。  约束限制： - 开启特性后，ELB和后端服务器之间直接使用真实的IP访问，需要确保已正确设置服务器的安全组以及访问控制策略。 - 开启特性后，不支持同一台服务器既作为后端服务器又作为客户端的场景。 - 开启特性后，不支持变更后端服务器规格。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt)   取值范围： - 共享型LB的TCP/UDP监听器可设置为true或false，不传默认为false。 - 共享型LB的HTTP/HTTPS监听器只支持设置为true，不传默认为true。 - 独享型负载均衡器所有协议的监听器只支持设置为true，不传默认为true。  [只设支持置为true，不传默认为true。](tag:hws_eu,hcso_dt)
+        :param transparent_client_ip_enable: **参数解释**：是否透传客户端IP地址。开启后客户端IP地址将透传到后端服务器。 [仅作用于共享型LB的TCP/UDP监听器。](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt)  **取值范围**： - 共享型LB的TCP/UDP监听器可设置为true或false，不传默认为false。 - 共享型LB的HTTP/HTTPS监听器只支持设置为true，不传默认为true。 - 独享型负载均衡器所有协议的监听器只支持设置为true，不传默认为true。
         :type transparent_client_ip_enable: bool
-        :param proxy_protocol_enable: 参数解释：是否开启proxy_protocol。仅TLS监听器可指定，其他协议的监听器该字段不生效，proxy_protocol不开启。
+        :param proxy_protocol_enable: **参数解释**：是否开启proxy_protocol。仅TLS监听器可指定，其他协议的监听器该字段不生效，proxy_protocol不开启。  **取值范围**：true 开启，false 不开启。
         :type proxy_protocol_enable: bool
-        :param enhance_l7policy_enable: 参数解释：是否开启高级转发策略功能。开启高级转发策略后，支持更灵活的转发策略和转发规则设置。  开启后支持如下场景： - 转发策略的action字段支持指定为REDIRECT_TO_URL, FIXED_RESPONSE，即支持URL重定向和响应固定的内容给客户端。 - 转发策略支持指定priority、redirect_url_config、fixed_response_config字段。 - 转发规则rule的type可以指定METHOD, HEADER, QUERY_STRING, SOURCE_IP这几种取值。 - 转发规则rule的type为HOST_NAME时，转发规则rule的value支持通配符*。 - 转发规则支持指定conditions字段。  约束限制： - 开启后不支持关闭。 - 开启高级转发策略后，监听器关联的转发策略的匹配优先级由转发策略的priority字段来决定，不再自动排序。具体说明详见转发策略的priority字段的说明。  取值范围：true开启，false不开启。  默认取值：false。[西南-贵阳一和华南-广州局点，该配置默认true。](tag:hws)  [荷兰region不支持该字段，请勿使用。](tag:dt)
+        :param enhance_l7policy_enable: **参数解释**：是否开启高级转发策略功能。开启高级转发策略后，支持更灵活的转发策略和转发规则设置。 开启后支持如下场景： - 转发策略的action字段支持指定为REDIRECT_TO_URL、FIXED_RESPONSE，即支持URL重定向和响应固定的内容给客户端。 - 转发策略支持指定priority、redirect_url_config、fixed_response_config字段。 - 转发规则rule的type可以指定METHOD, HEADER, QUERY_STRING, SOURCE_IP这几种取值。 - 转发规则rule的type为HOST_NAME时，转发规则rule的value支持通配符*。 - 转发规则支持指定conditions字段。  **取值范围**：true开启，false不开启。
         :type enhance_l7policy_enable: bool
         :param quic_config: 
         :type quic_config: :class:`huaweicloudsdkelb.v3.ListenerQuicConfig`
-        :param protection_status: 参数解释：修改保护状态,   取值范围： - nonProtection: 不保护，默认值为nonProtection - consoleProtection: 控制台修改保护
+        :param protection_status: **参数解释**：修改保护状态。  **取值范围**： - nonProtection: 不保护。 - consoleProtection: 控制台修改保护。
         :type protection_status: str
-        :param protection_reason: 参数解释：设置保护的原因。作为protection_status的转态设置的原因。  约束限制：仅当protection_status为consoleProtection时有效。  取值范围：除&#39;&lt;&#39;和&#39;&gt;&#39;外通用Unicode字符集字符，最大255个字符。
+        :param protection_reason: **参数解释**：设置保护的原因。作为protection_status的转态设置的原因。  **取值范围**：除&#39;&lt;&#39;和&#39;&gt;&#39;外通用Unicode字符集字符，最大255个字符。
         :type protection_reason: str
-        :param gzip_enable: 参数解释：ELB是否开启gzip压缩。  [约束限制：仅HTTP/HTTPS类型监听器支持配置。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt) [约束限制：仅HTTP/HTTPS/QUIC类型监听器支持配置。](tag:hws,hws_hk,hws_test,hcs,hcs_sm,hcso,hk_vdf,srg,fcs,fcs_vm,mix,ocb,ctc,cmcc,ct,sbc,hws_ocb,hk_sbc)  默认取值：false  [不支持该字段，请勿使用。](tag:hws_eu,hws_eu_wb,hws_test,fcs,dt,hcso_dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,srg,g42,hk_g42)
+        :param gzip_enable: **参数解释**：ELB是否开启gzip压缩。  **取值范围**：true开启，false不开启。
         :type gzip_enable: bool
-        :param port_ranges: 参数解释：端口监听范围（闭区间)。  约束限制： - 最多指定10个端口组，每个组范围不可有重叠部分 - 仅当protocol_port为0时可以传入。  [不支持该字段，请勿使用。](tag:hws_eu,hws_eu_wb,hws_test,fcs,dt,hcso_dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,srg,g42,hk_g42)
+        :param port_ranges: **参数解释**：全端口监听，指定端口监听范围（闭区间)。
         :type port_ranges: list[:class:`huaweicloudsdkelb.v3.PortRange`]
-        :param ssl_early_data_enable: 参数解释：监听器0-RTT能力开关  约束限制：仅HTTPS类型监听器支持配置，需要依赖TLSv1.3安全策略协议。  默认取值：false。
+        :param ssl_early_data_enable: **参数解释**：监听器0-RTT能力开关  **约束限制**：仅HTTPS类型监听器支持配置，需要依赖TLSv1.3安全策略协议。
         :type ssl_early_data_enable: bool
-        :param cps: 参数解释：监听器新建限速  约束限制：当该限速值大于LB的限速值时，以LB的限速值生效  取值范围：0-1000000  默认取值：0，表示不限速
+        :param cps: **参数解释**：监听器新建限速。当该限速值大于LB的限速值时，以LB的限速值生效。  **取值范围**：0-1000000
         :type cps: int
-        :param connection: 参数解释：监听器并发限速  约束限制：当该限速值大于LB的限速值时，以LB的限速值生效  取值范围：0-1000000  默认取值：0，表示不限速
+        :param connection: **参数解释**：监听器并发限速。当该限速值大于LB的限速值时，以LB的限速值生效。  **取值范围**：0-1000000
         :type connection: int
-        :param nat64_enable: 参数解释： 监听器地址族转换能力开关，可以实现客户端通过访问LB的IPv4或者IPv6地址，来访问IPv4后端和IPv6后端。  约束限制： 仅对于TCP、UDP协议类型的监听器生效，与transparent_client_ip_enable，获取客户端ip功能开关互斥，开启地址族转换同时需要保证获取客户端ip功能关闭。  取值范围： - true：开启地址族转换功能 - false：关闭地址族转换功能  默认取值：false
+        :param nat64_enable: **参数解释**：监听器地址转换能力开关，可以实现客户端通过访问LB的IPv4或者IPv6地址，来访问IPv4后端和IPv6后端。  **取值范围**： - true：开启地址转换功能。 - false：关闭地址转换功能。
         :type nat64_enable: bool
         """
         
@@ -282,7 +282,7 @@ class Listener:
     def admin_state_up(self):
         r"""Gets the admin_state_up of this Listener.
 
-        参数解释：监听器的管理状态。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
+        **参数解释**：监听器的管理状态。  **取值范围**：true
 
         :return: The admin_state_up of this Listener.
         :rtype: bool
@@ -293,7 +293,7 @@ class Listener:
     def admin_state_up(self, admin_state_up):
         r"""Sets the admin_state_up of this Listener.
 
-        参数解释：监听器的管理状态。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
+        **参数解释**：监听器的管理状态。  **取值范围**：true
 
         :param admin_state_up: The admin_state_up of this Listener.
         :type admin_state_up: bool
@@ -304,7 +304,7 @@ class Listener:
     def client_ca_tls_container_ref(self):
         r"""Gets the client_ca_tls_container_ref of this Listener.
 
-        参数解释：监听器使用的CA证书ID。  约束限制：当且仅当type=client时，才会使用该字段对应的证书。
+        **参数解释**：监听器使用的CA证书ID。当且仅当type=client时，才会使用该字段对应的证书。  **取值范围**：不涉及
 
         :return: The client_ca_tls_container_ref of this Listener.
         :rtype: str
@@ -315,7 +315,7 @@ class Listener:
     def client_ca_tls_container_ref(self, client_ca_tls_container_ref):
         r"""Sets the client_ca_tls_container_ref of this Listener.
 
-        参数解释：监听器使用的CA证书ID。  约束限制：当且仅当type=client时，才会使用该字段对应的证书。
+        **参数解释**：监听器使用的CA证书ID。当且仅当type=client时，才会使用该字段对应的证书。  **取值范围**：不涉及
 
         :param client_ca_tls_container_ref: The client_ca_tls_container_ref of this Listener.
         :type client_ca_tls_container_ref: str
@@ -326,7 +326,7 @@ class Listener:
     def connection_limit(self):
         r"""Gets the connection_limit of this Listener.
 
-        参数解释：监听器的最大连接数。  取值范围：-1表示不限制。  默认取值：-1。  不支持该字段，请勿使用。
+        **参数解释**：监听器的最大连接数。  **取值范围**：大于等于-1的整数。
 
         :return: The connection_limit of this Listener.
         :rtype: int
@@ -337,7 +337,7 @@ class Listener:
     def connection_limit(self, connection_limit):
         r"""Sets the connection_limit of this Listener.
 
-        参数解释：监听器的最大连接数。  取值范围：-1表示不限制。  默认取值：-1。  不支持该字段，请勿使用。
+        **参数解释**：监听器的最大连接数。  **取值范围**：大于等于-1的整数。
 
         :param connection_limit: The connection_limit of this Listener.
         :type connection_limit: int
@@ -348,7 +348,7 @@ class Listener:
     def created_at(self):
         r"""Gets the created_at of this Listener.
 
-        参数解释：监听器的创建时间。  取值范围：  格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如：2021-07-30T12:03:44Z
+        **参数解释**：监听器的创建时间。  **取值范围**：不涉及 格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如：2021-07-30T12:03:44Z
 
         :return: The created_at of this Listener.
         :rtype: str
@@ -359,7 +359,7 @@ class Listener:
     def created_at(self, created_at):
         r"""Sets the created_at of this Listener.
 
-        参数解释：监听器的创建时间。  取值范围：  格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如：2021-07-30T12:03:44Z
+        **参数解释**：监听器的创建时间。  **取值范围**：不涉及 格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如：2021-07-30T12:03:44Z
 
         :param created_at: The created_at of this Listener.
         :type created_at: str
@@ -370,7 +370,7 @@ class Listener:
     def default_pool_id(self):
         r"""Gets the default_pool_id of this Listener.
 
-        参数解释：监听器的默认后端服务器组ID。当请求没有匹配的转发策略时，转发到默认后端服务器上处理。
+        **参数解释**：监听器的默认后端服务器组ID。当请求没有匹配的转发策略时，转发到默认后端服务器组上处理。  **取值范围**：不涉及
 
         :return: The default_pool_id of this Listener.
         :rtype: str
@@ -381,7 +381,7 @@ class Listener:
     def default_pool_id(self, default_pool_id):
         r"""Sets the default_pool_id of this Listener.
 
-        参数解释：监听器的默认后端服务器组ID。当请求没有匹配的转发策略时，转发到默认后端服务器上处理。
+        **参数解释**：监听器的默认后端服务器组ID。当请求没有匹配的转发策略时，转发到默认后端服务器组上处理。  **取值范围**：不涉及
 
         :param default_pool_id: The default_pool_id of this Listener.
         :type default_pool_id: str
@@ -392,7 +392,7 @@ class Listener:
     def default_tls_container_ref(self):
         r"""Gets the default_tls_container_ref of this Listener.
 
-        参数解释：监听器使用的服务器证书ID。
+        **参数解释**：监听器使用的服务器证书ID。  **取值范围**：不涉及
 
         :return: The default_tls_container_ref of this Listener.
         :rtype: str
@@ -403,7 +403,7 @@ class Listener:
     def default_tls_container_ref(self, default_tls_container_ref):
         r"""Sets the default_tls_container_ref of this Listener.
 
-        参数解释：监听器使用的服务器证书ID。
+        **参数解释**：监听器使用的服务器证书ID。  **取值范围**：不涉及
 
         :param default_tls_container_ref: The default_tls_container_ref of this Listener.
         :type default_tls_container_ref: str
@@ -414,7 +414,7 @@ class Listener:
     def description(self):
         r"""Gets the description of this Listener.
 
-        参数解释：监听器的描述信息。
+        **参数解释**：监听器的描述信息。  **取值范围**：不涉及
 
         :return: The description of this Listener.
         :rtype: str
@@ -425,7 +425,7 @@ class Listener:
     def description(self, description):
         r"""Sets the description of this Listener.
 
-        参数解释：监听器的描述信息。
+        **参数解释**：监听器的描述信息。  **取值范围**：不涉及
 
         :param description: The description of this Listener.
         :type description: str
@@ -436,7 +436,7 @@ class Listener:
     def http2_enable(self):
         r"""Gets the http2_enable of this Listener.
 
-        参数解释：客户端与LB之间的HTTPS请求的HTTP2功能的开启状态。 开启后，可提升客户端与LB间的访问性能，但LB与后端服务器间仍采用HTTP1.X协议。  约束限制： - 仅HTTPS协议监听器有效。 - QUIC监听器不能设置该字段，固定返回为true。 - 其他协议的监听器可设置该字段但无效，无论取值如何都不影响监听器正常运行。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt)
+        **参数解释**：客户端与LB之间的HTTPS请求的HTTP2功能的开启状态。 开启后，可提升客户端与LB间的访问性能，但LB与后端服务器间仍采用HTTP1.X协议。  **取值范围**：不涉及
 
         :return: The http2_enable of this Listener.
         :rtype: bool
@@ -447,7 +447,7 @@ class Listener:
     def http2_enable(self, http2_enable):
         r"""Sets the http2_enable of this Listener.
 
-        参数解释：客户端与LB之间的HTTPS请求的HTTP2功能的开启状态。 开启后，可提升客户端与LB间的访问性能，但LB与后端服务器间仍采用HTTP1.X协议。  约束限制： - 仅HTTPS协议监听器有效。 - QUIC监听器不能设置该字段，固定返回为true。 - 其他协议的监听器可设置该字段但无效，无论取值如何都不影响监听器正常运行。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt)
+        **参数解释**：客户端与LB之间的HTTPS请求的HTTP2功能的开启状态。 开启后，可提升客户端与LB间的访问性能，但LB与后端服务器间仍采用HTTP1.X协议。  **取值范围**：不涉及
 
         :param http2_enable: The http2_enable of this Listener.
         :type http2_enable: bool
@@ -458,7 +458,7 @@ class Listener:
     def id(self):
         r"""Gets the id of this Listener.
 
-        参数解释：监听器ID。
+        **参数解释**：监听器ID。  **取值范围**：不涉及
 
         :return: The id of this Listener.
         :rtype: str
@@ -469,7 +469,7 @@ class Listener:
     def id(self, id):
         r"""Sets the id of this Listener.
 
-        参数解释：监听器ID。
+        **参数解释**：监听器ID。  **取值范围**：不涉及
 
         :param id: The id of this Listener.
         :type id: str
@@ -498,7 +498,7 @@ class Listener:
     def loadbalancers(self):
         r"""Gets the loadbalancers of this Listener.
 
-        参数解释：监听器所属的负载均衡器的ID列表。  约束限制：一个监听器只支持关联到一个LB。
+        **参数解释**：监听器所属的负载均衡器的ID列表。实际上一个监听器只支持关联到一个LB。
 
         :return: The loadbalancers of this Listener.
         :rtype: list[:class:`huaweicloudsdkelb.v3.LoadBalancerRef`]
@@ -509,7 +509,7 @@ class Listener:
     def loadbalancers(self, loadbalancers):
         r"""Sets the loadbalancers of this Listener.
 
-        参数解释：监听器所属的负载均衡器的ID列表。  约束限制：一个监听器只支持关联到一个LB。
+        **参数解释**：监听器所属的负载均衡器的ID列表。实际上一个监听器只支持关联到一个LB。
 
         :param loadbalancers: The loadbalancers of this Listener.
         :type loadbalancers: list[:class:`huaweicloudsdkelb.v3.LoadBalancerRef`]
@@ -520,7 +520,7 @@ class Listener:
     def name(self):
         r"""Gets the name of this Listener.
 
-        参数解释：监听器的名称。  约束限制：若名称为空，则在控制台的监听器列表无法选择并查看监听器详情。
+        **参数解释**：监听器的名称。若名称为空，则在控制台的监听器列表无法选择并查看监听器详情。  **取值范围**：不涉及
 
         :return: The name of this Listener.
         :rtype: str
@@ -531,7 +531,7 @@ class Listener:
     def name(self, name):
         r"""Sets the name of this Listener.
 
-        参数解释：监听器的名称。  约束限制：若名称为空，则在控制台的监听器列表无法选择并查看监听器详情。
+        **参数解释**：监听器的名称。若名称为空，则在控制台的监听器列表无法选择并查看监听器详情。  **取值范围**：不涉及
 
         :param name: The name of this Listener.
         :type name: str
@@ -542,7 +542,7 @@ class Listener:
     def project_id(self):
         r"""Gets the project_id of this Listener.
 
-        参数解释：监听器所在的项目ID。
+        **参数解释**：监听器所在的项目ID。  **取值范围**：不涉及
 
         :return: The project_id of this Listener.
         :rtype: str
@@ -553,7 +553,7 @@ class Listener:
     def project_id(self, project_id):
         r"""Sets the project_id of this Listener.
 
-        参数解释：监听器所在的项目ID。
+        **参数解释**：监听器所在的项目ID。  **取值范围**：不涉及
 
         :param project_id: The project_id of this Listener.
         :type project_id: str
@@ -564,7 +564,7 @@ class Listener:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this Listener.
 
-        参数解释：企业项目ID。
+        **参数解释**：企业项目ID。  **取值范围**：不涉及
 
         :return: The enterprise_project_id of this Listener.
         :rtype: str
@@ -575,7 +575,7 @@ class Listener:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this Listener.
 
-        参数解释：企业项目ID。
+        **参数解释**：企业项目ID。  **取值范围**：不涉及
 
         :param enterprise_project_id: The enterprise_project_id of this Listener.
         :type enterprise_project_id: str
@@ -586,7 +586,7 @@ class Listener:
     def protocol(self):
         r"""Gets the protocol of this Listener.
 
-        参数解释：监听器的监听协议。  [取值范围：TCP、UDP、HTTP、HTTPS、TERMINATED_HTTPS、QUIC、TLS。  约束限制： - 共享型LB上的HTTPS监听器只支持设置为TERMINATED_HTTPS， 创建时传入HTTPS将会自动转为TERMINATED_HTTPS。 - 独享型LB上的HTTPS监听器只支持设置为HTTPS，创建时传入TERMINATED_HTTPS将会自动转为HTTPS。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt)  [取值：TCP、UDP、HTTP、HTTPS。](tag:hcso_dt) [取值：TCP、UDP、IP、HTTP、HTTPS。IP为网关型LB上的监听器独有的协议。](tag:hws_eu)  [不支持QUIC。](tag:tm,g42,hk_g42,dt)
+        **参数解释**：监听器的监听协议。  [**取值范围**：TCP、UDP、HTTP、HTTPS、TERMINATED_HTTPS、QUIC、TLS。](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt)  [**取值范围**：TCP、UDP、HTTP、HTTPS。](tag:hcso_dt) [**取值范围**：TCP、UDP、IP、HTTP、HTTPS。IP为网关型LB上的监听器独有的协议。](tag:hws_eu)
 
         :return: The protocol of this Listener.
         :rtype: str
@@ -597,7 +597,7 @@ class Listener:
     def protocol(self, protocol):
         r"""Sets the protocol of this Listener.
 
-        参数解释：监听器的监听协议。  [取值范围：TCP、UDP、HTTP、HTTPS、TERMINATED_HTTPS、QUIC、TLS。  约束限制： - 共享型LB上的HTTPS监听器只支持设置为TERMINATED_HTTPS， 创建时传入HTTPS将会自动转为TERMINATED_HTTPS。 - 独享型LB上的HTTPS监听器只支持设置为HTTPS，创建时传入TERMINATED_HTTPS将会自动转为HTTPS。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt)  [取值：TCP、UDP、HTTP、HTTPS。](tag:hcso_dt) [取值：TCP、UDP、IP、HTTP、HTTPS。IP为网关型LB上的监听器独有的协议。](tag:hws_eu)  [不支持QUIC。](tag:tm,g42,hk_g42,dt)
+        **参数解释**：监听器的监听协议。  [**取值范围**：TCP、UDP、HTTP、HTTPS、TERMINATED_HTTPS、QUIC、TLS。](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt)  [**取值范围**：TCP、UDP、HTTP、HTTPS。](tag:hcso_dt) [**取值范围**：TCP、UDP、IP、HTTP、HTTPS。IP为网关型LB上的监听器独有的协议。](tag:hws_eu)
 
         :param protocol: The protocol of this Listener.
         :type protocol: str
@@ -608,7 +608,7 @@ class Listener:
     def protocol_port(self):
         r"""Gets the protocol_port of this Listener.
 
-        参数解释：监听器的监听端口。  约束限制： - QUIC监听器端口不能是4789，且不能和UDP监听器端口重复。 - 传0表示开启监听端口范围的能力，此时port_ranges为必填字段。 [-不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt)
+        **参数解释**：监听器的监听端口。  **取值范围**：不涉及
 
         :return: The protocol_port of this Listener.
         :rtype: int
@@ -619,7 +619,7 @@ class Listener:
     def protocol_port(self, protocol_port):
         r"""Sets the protocol_port of this Listener.
 
-        参数解释：监听器的监听端口。  约束限制： - QUIC监听器端口不能是4789，且不能和UDP监听器端口重复。 - 传0表示开启监听端口范围的能力，此时port_ranges为必填字段。 [-不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt)
+        **参数解释**：监听器的监听端口。  **取值范围**：不涉及
 
         :param protocol_port: The protocol_port of this Listener.
         :type protocol_port: int
@@ -630,7 +630,7 @@ class Listener:
     def sni_container_refs(self):
         r"""Gets the sni_container_refs of this Listener.
 
-        参数解释：监听器使用的SNI证书（带域名的服务器证书）ID列表。  约束限制： - QUIC监听器仅支持RSA证书。 - 列表对应的所有SNI证书的域名不允许存在重复。 - 列表对应的所有SNI证书的域名总数不超过200。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt)
+        **参数解释**：监听器使用的SNI证书（带域名的服务器证书）ID列表。  **取值范围**：不涉及
 
         :return: The sni_container_refs of this Listener.
         :rtype: list[str]
@@ -641,7 +641,7 @@ class Listener:
     def sni_container_refs(self, sni_container_refs):
         r"""Sets the sni_container_refs of this Listener.
 
-        参数解释：监听器使用的SNI证书（带域名的服务器证书）ID列表。  约束限制： - QUIC监听器仅支持RSA证书。 - 列表对应的所有SNI证书的域名不允许存在重复。 - 列表对应的所有SNI证书的域名总数不超过200。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt)
+        **参数解释**：监听器使用的SNI证书（带域名的服务器证书）ID列表。  **取值范围**：不涉及
 
         :param sni_container_refs: The sni_container_refs of this Listener.
         :type sni_container_refs: list[str]
@@ -652,7 +652,7 @@ class Listener:
     def sni_match_algo(self):
         r"""Gets the sni_match_algo of this Listener.
 
-        参数解释：监听器使用的SNI证书泛域名匹配方式。  取值范围：longest_suffix表示最长尾缀匹配；wildcard表示标准域名分级匹配。  默认取值：wildcard
+        **参数解释**：监听器使用的SNI证书泛域名匹配方式。  **取值范围**：longest_suffix表示最长尾缀匹配；wildcard表示标准域名分级匹配。
 
         :return: The sni_match_algo of this Listener.
         :rtype: str
@@ -663,7 +663,7 @@ class Listener:
     def sni_match_algo(self, sni_match_algo):
         r"""Sets the sni_match_algo of this Listener.
 
-        参数解释：监听器使用的SNI证书泛域名匹配方式。  取值范围：longest_suffix表示最长尾缀匹配；wildcard表示标准域名分级匹配。  默认取值：wildcard
+        **参数解释**：监听器使用的SNI证书泛域名匹配方式。  **取值范围**：longest_suffix表示最长尾缀匹配；wildcard表示标准域名分级匹配。
 
         :param sni_match_algo: The sni_match_algo of this Listener.
         :type sni_match_algo: str
@@ -674,7 +674,7 @@ class Listener:
     def tags(self):
         r"""Gets the tags of this Listener.
 
-        参数解释：标签列表。
+        **参数解释**：标签列表。
 
         :return: The tags of this Listener.
         :rtype: list[:class:`huaweicloudsdkelb.v3.Tag`]
@@ -685,7 +685,7 @@ class Listener:
     def tags(self, tags):
         r"""Sets the tags of this Listener.
 
-        参数解释：标签列表。
+        **参数解释**：标签列表。
 
         :param tags: The tags of this Listener.
         :type tags: list[:class:`huaweicloudsdkelb.v3.Tag`]
@@ -696,7 +696,7 @@ class Listener:
     def updated_at(self):
         r"""Gets the updated_at of this Listener.
 
-        参数解释：监听器的更新时间。  取值范围：  格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如：2021-07-30T12:03:44Z
+        **参数解释**：监听器的更新时间。  **取值范围**： 格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如：2021-07-30T12:03:44Z
 
         :return: The updated_at of this Listener.
         :rtype: str
@@ -707,7 +707,7 @@ class Listener:
     def updated_at(self, updated_at):
         r"""Sets the updated_at of this Listener.
 
-        参数解释：监听器的更新时间。  取值范围：  格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如：2021-07-30T12:03:44Z
+        **参数解释**：监听器的更新时间。  **取值范围**： 格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如：2021-07-30T12:03:44Z
 
         :param updated_at: The updated_at of this Listener.
         :type updated_at: str
@@ -718,7 +718,7 @@ class Listener:
     def tls_ciphers_policy(self):
         r"""Gets the tls_ciphers_policy of this Listener.
 
-        参数解释：监听器使用的安全策略。  [取值范围：tls-1-0-inherit、tls-1-0、tls-1-1、 tls-1-2、tls-1-2-strict、tls-1-2-fs、tls-1-0-with-1-3、 tls-1-2-fs-with-1-3、 hybrid-policy-1-0、tls-1-2-strict-no-cbc，默认：tls-1-2。 ](tag:hws,hws_hk,ocb,tlf,ctc,hcso,ct,sbc,tm,cmcc,dt)  [取值范围：tls-1-0、tls-1-1、tls-1-2、 tls-1-2-strict，默认：tls-1-2。](tag:hws_eu,g42,hk_g42,hcso_dt)  [约束限制： - 仅对HTTPS协议类型的监听器且关联LB为独享型时有效。 - QUIC监听器不支持该字段。 - 若同时设置了security_policy_id和tls_ciphers_policy，则仅security_policy_id生效。 - 加密套件的优先顺序为ecc套件、rsa套件、tls1.3协议的套件（即支持ecc又支持rsa） ](tag:hws,hws_hk,hws_eu,ocb,tlf,ctc,hcso,ct,sbc,g42,tm,cmcc,hk_g42,dt)  [约束限制： - 仅对HTTPS协议类型的监听器有效](tag:hcso_dt)  [不支持tls1.3协议的套件。](tag:tm,hws_eu,g42,hk_g42)
+        **参数解释**：监听器使用的安全策略。  [**取值范围**：tls-1-0-inherit、tls-1-0、tls-1-1、tls-1-2、tls-1-2-strict、tls-1-2-fs、tls-1-0-with-1-3、tls-1-2-fs-with-1-3、hybrid-policy-1-0、tls-1-2-strict-no-cbc，默认：tls-1-2。](tag:hws,hws_hk,ocb,tlf,ctc,hcso,ct,sbc,tm,cmcc,dt)  [**取值范围**：tls-1-0、tls-1-1、tls-1-2、tls-1-2-strict，默认：tls-1-2。](tag:hws_eu,g42,hk_g42,hcso_dt)  [不支持tls1.3协议的套件。](tag:tm,hws_eu,g42,hk_g42)
 
         :return: The tls_ciphers_policy of this Listener.
         :rtype: str
@@ -729,7 +729,7 @@ class Listener:
     def tls_ciphers_policy(self, tls_ciphers_policy):
         r"""Sets the tls_ciphers_policy of this Listener.
 
-        参数解释：监听器使用的安全策略。  [取值范围：tls-1-0-inherit、tls-1-0、tls-1-1、 tls-1-2、tls-1-2-strict、tls-1-2-fs、tls-1-0-with-1-3、 tls-1-2-fs-with-1-3、 hybrid-policy-1-0、tls-1-2-strict-no-cbc，默认：tls-1-2。 ](tag:hws,hws_hk,ocb,tlf,ctc,hcso,ct,sbc,tm,cmcc,dt)  [取值范围：tls-1-0、tls-1-1、tls-1-2、 tls-1-2-strict，默认：tls-1-2。](tag:hws_eu,g42,hk_g42,hcso_dt)  [约束限制： - 仅对HTTPS协议类型的监听器且关联LB为独享型时有效。 - QUIC监听器不支持该字段。 - 若同时设置了security_policy_id和tls_ciphers_policy，则仅security_policy_id生效。 - 加密套件的优先顺序为ecc套件、rsa套件、tls1.3协议的套件（即支持ecc又支持rsa） ](tag:hws,hws_hk,hws_eu,ocb,tlf,ctc,hcso,ct,sbc,g42,tm,cmcc,hk_g42,dt)  [约束限制： - 仅对HTTPS协议类型的监听器有效](tag:hcso_dt)  [不支持tls1.3协议的套件。](tag:tm,hws_eu,g42,hk_g42)
+        **参数解释**：监听器使用的安全策略。  [**取值范围**：tls-1-0-inherit、tls-1-0、tls-1-1、tls-1-2、tls-1-2-strict、tls-1-2-fs、tls-1-0-with-1-3、tls-1-2-fs-with-1-3、hybrid-policy-1-0、tls-1-2-strict-no-cbc，默认：tls-1-2。](tag:hws,hws_hk,ocb,tlf,ctc,hcso,ct,sbc,tm,cmcc,dt)  [**取值范围**：tls-1-0、tls-1-1、tls-1-2、tls-1-2-strict，默认：tls-1-2。](tag:hws_eu,g42,hk_g42,hcso_dt)  [不支持tls1.3协议的套件。](tag:tm,hws_eu,g42,hk_g42)
 
         :param tls_ciphers_policy: The tls_ciphers_policy of this Listener.
         :type tls_ciphers_policy: str
@@ -740,7 +740,7 @@ class Listener:
     def security_policy_id(self):
         r"""Gets the security_policy_id of this Listener.
 
-        参数解释：自定义安全策略的ID。  [约束限制： - 仅对HTTPS协议类型的监听器且关联LB为独享型时有效。 - 若同时设置了security_policy_id和tls_ciphers_policy，则仅security_policy_id生效。 - 加密套件的优先顺序为ecc套件、rsa套件、tls1.3协议的套件（即支持ecc又支持rsa） ](tag:hws,hws_hk,hws_eu,ocb,ctc,hcso,g42,tm,cmcc,hk_g42,dt)  [约束限制： - 仅对HTTPS协议类型的监听器有效](tag:hcso_dt)  [不支持tls1.3协议的套件。](tag:tm,hws_eu,g42,hk_g42)
+        **参数解释**：自定义安全策略的ID。  **取值范围**：不涉及
 
         :return: The security_policy_id of this Listener.
         :rtype: str
@@ -751,7 +751,7 @@ class Listener:
     def security_policy_id(self, security_policy_id):
         r"""Sets the security_policy_id of this Listener.
 
-        参数解释：自定义安全策略的ID。  [约束限制： - 仅对HTTPS协议类型的监听器且关联LB为独享型时有效。 - 若同时设置了security_policy_id和tls_ciphers_policy，则仅security_policy_id生效。 - 加密套件的优先顺序为ecc套件、rsa套件、tls1.3协议的套件（即支持ecc又支持rsa） ](tag:hws,hws_hk,hws_eu,ocb,ctc,hcso,g42,tm,cmcc,hk_g42,dt)  [约束限制： - 仅对HTTPS协议类型的监听器有效](tag:hcso_dt)  [不支持tls1.3协议的套件。](tag:tm,hws_eu,g42,hk_g42)
+        **参数解释**：自定义安全策略的ID。  **取值范围**：不涉及
 
         :param security_policy_id: The security_policy_id of this Listener.
         :type security_policy_id: str
@@ -762,7 +762,7 @@ class Listener:
     def enable_member_retry(self):
         r"""Gets the enable_member_retry of this Listener.
 
-        参数解释：是否开启后端服务器的重试。  [约束限制： - 若关联是共享型LB，仅在protocol为HTTP、TERMINATED_HTTPS时才能传入该字段。 - 若关联是独享型LB，仅在protocol为HTTP、HTTPS和QUIC时才能传入该字段。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt)  [约束限制： - 仅在protocol为HTTP、HTTPS时才能传入该字段。](tag:hws_eu,hcso_dt)  取值范围：true 开启重试，false 不开启重试。  默认取值：true。  [不支持QUIC。](tag:tm,dt)
+        **参数解释**：是否开启后端服务器的重试。  **取值范围**：true 开启重试，false 不开启重试。
 
         :return: The enable_member_retry of this Listener.
         :rtype: bool
@@ -773,7 +773,7 @@ class Listener:
     def enable_member_retry(self, enable_member_retry):
         r"""Sets the enable_member_retry of this Listener.
 
-        参数解释：是否开启后端服务器的重试。  [约束限制： - 若关联是共享型LB，仅在protocol为HTTP、TERMINATED_HTTPS时才能传入该字段。 - 若关联是独享型LB，仅在protocol为HTTP、HTTPS和QUIC时才能传入该字段。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt)  [约束限制： - 仅在protocol为HTTP、HTTPS时才能传入该字段。](tag:hws_eu,hcso_dt)  取值范围：true 开启重试，false 不开启重试。  默认取值：true。  [不支持QUIC。](tag:tm,dt)
+        **参数解释**：是否开启后端服务器的重试。  **取值范围**：true 开启重试，false 不开启重试。
 
         :param enable_member_retry: The enable_member_retry of this Listener.
         :type enable_member_retry: bool
@@ -784,7 +784,7 @@ class Listener:
     def keepalive_timeout(self):
         r"""Gets the keepalive_timeout of this Listener.
 
-        参数解释：客户端连接空闲超时时间。在超过keepalive_timeout时长一直没有请求，负载均衡会暂时中断当前连接，直到下一次请求时重新建立新的连接。  约束限制：共享型实例的UDP监听器不支持此字段。  取值范围： - TCP监听器[和IP监听器](tag:hws_eu)：10-4000s，默认值为300s。 - 若为HTTP/HTTPS/TERMINATED_HTTPS监听器，取值范围为（0-4000s）默认值为60s。
+        **参数解释**：客户端连接空闲超时时间。在超过keepalive_timeout时长一直没有请求，负载均衡会暂时中断当前连接，直到下一次请求时重新建立新的连接。  **取值范围**： - TCP监听器[和IP监听器](tag:hws_eu)：10-4000s。 - 若为HTTP/HTTPS/TERMINATED_HTTPS监听器，取值范围为：0-4000s。
 
         :return: The keepalive_timeout of this Listener.
         :rtype: int
@@ -795,7 +795,7 @@ class Listener:
     def keepalive_timeout(self, keepalive_timeout):
         r"""Sets the keepalive_timeout of this Listener.
 
-        参数解释：客户端连接空闲超时时间。在超过keepalive_timeout时长一直没有请求，负载均衡会暂时中断当前连接，直到下一次请求时重新建立新的连接。  约束限制：共享型实例的UDP监听器不支持此字段。  取值范围： - TCP监听器[和IP监听器](tag:hws_eu)：10-4000s，默认值为300s。 - 若为HTTP/HTTPS/TERMINATED_HTTPS监听器，取值范围为（0-4000s）默认值为60s。
+        **参数解释**：客户端连接空闲超时时间。在超过keepalive_timeout时长一直没有请求，负载均衡会暂时中断当前连接，直到下一次请求时重新建立新的连接。  **取值范围**： - TCP监听器[和IP监听器](tag:hws_eu)：10-4000s。 - 若为HTTP/HTTPS/TERMINATED_HTTPS监听器，取值范围为：0-4000s。
 
         :param keepalive_timeout: The keepalive_timeout of this Listener.
         :type keepalive_timeout: int
@@ -806,7 +806,7 @@ class Listener:
     def client_timeout(self):
         r"""Gets the client_timeout of this Listener.
 
-        参数解释：等待客户端请求超时时间，包括两种情况： - 读取整个客户端请求头的超时时长：如果客户端未在超时时长内发送完整个请求头，则请求将被中断 - 两个连续body体的数据包到达LB的时间间隔，超出client_timeout将会断开连接。  约束限制：仅协议为HTTP/HTTPS的监听器支持该字段。  取值范围：1-300s  默认取值：60s。
+        **参数解释**：等待客户端请求超时时间，包括两种情况： - 读取整个客户端请求头的超时时长：如果客户端未在超时时长内发送完整个请求头，则请求将被中断 - 两个连续body体的数据包到达LB的时间间隔，超出client_timeout将会断开连接。  **取值范围**：1-300，单位：秒。
 
         :return: The client_timeout of this Listener.
         :rtype: int
@@ -817,7 +817,7 @@ class Listener:
     def client_timeout(self, client_timeout):
         r"""Sets the client_timeout of this Listener.
 
-        参数解释：等待客户端请求超时时间，包括两种情况： - 读取整个客户端请求头的超时时长：如果客户端未在超时时长内发送完整个请求头，则请求将被中断 - 两个连续body体的数据包到达LB的时间间隔，超出client_timeout将会断开连接。  约束限制：仅协议为HTTP/HTTPS的监听器支持该字段。  取值范围：1-300s  默认取值：60s。
+        **参数解释**：等待客户端请求超时时间，包括两种情况： - 读取整个客户端请求头的超时时长：如果客户端未在超时时长内发送完整个请求头，则请求将被中断 - 两个连续body体的数据包到达LB的时间间隔，超出client_timeout将会断开连接。  **取值范围**：1-300，单位：秒。
 
         :param client_timeout: The client_timeout of this Listener.
         :type client_timeout: int
@@ -828,7 +828,7 @@ class Listener:
     def member_timeout(self):
         r"""Gets the member_timeout of this Listener.
 
-        参数解释：等待后端服务器响应超时时间。请求转发后端服务器后，在等待超时member_timeout时长没有响应，负载均衡将终止等待，并返回HTTP504错误码。  约束限制：仅支持协议为HTTP/HTTPS的监听器。  取值范围：1-300s  默认取值：60s。
+        **参数解释**：等待后端服务器响应超时时间。请求转发后端服务器后，在等待超时member_timeout时长没有响应，负载均衡将终止等待，并返回HTTP504错误码。  **取值范围**：1-300，单位：秒。
 
         :return: The member_timeout of this Listener.
         :rtype: int
@@ -839,7 +839,7 @@ class Listener:
     def member_timeout(self, member_timeout):
         r"""Sets the member_timeout of this Listener.
 
-        参数解释：等待后端服务器响应超时时间。请求转发后端服务器后，在等待超时member_timeout时长没有响应，负载均衡将终止等待，并返回HTTP504错误码。  约束限制：仅支持协议为HTTP/HTTPS的监听器。  取值范围：1-300s  默认取值：60s。
+        **参数解释**：等待后端服务器响应超时时间。请求转发后端服务器后，在等待超时member_timeout时长没有响应，负载均衡将终止等待，并返回HTTP504错误码。  **取值范围**：1-300，单位：秒。
 
         :param member_timeout: The member_timeout of this Listener.
         :type member_timeout: int
@@ -868,7 +868,7 @@ class Listener:
     def transparent_client_ip_enable(self):
         r"""Gets the transparent_client_ip_enable of this Listener.
 
-        参数解释：是否透传客户端IP地址。开启后客户端IP地址将透传到后端服务器。 [仅作用于共享型LB的TCP/UDP监听器。  约束限制： - 开启特性后，ELB和后端服务器之间直接使用真实的IP访问，需要确保已正确设置服务器的安全组以及访问控制策略。 - 开启特性后，不支持同一台服务器既作为后端服务器又作为客户端的场景。 - 开启特性后，不支持变更后端服务器规格。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt)   取值范围： - 共享型LB的TCP/UDP监听器可设置为true或false，不传默认为false。 - 共享型LB的HTTP/HTTPS监听器只支持设置为true，不传默认为true。 - 独享型负载均衡器所有协议的监听器只支持设置为true，不传默认为true。  [只设支持置为true，不传默认为true。](tag:hws_eu,hcso_dt)
+        **参数解释**：是否透传客户端IP地址。开启后客户端IP地址将透传到后端服务器。 [仅作用于共享型LB的TCP/UDP监听器。](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt)  **取值范围**： - 共享型LB的TCP/UDP监听器可设置为true或false，不传默认为false。 - 共享型LB的HTTP/HTTPS监听器只支持设置为true，不传默认为true。 - 独享型负载均衡器所有协议的监听器只支持设置为true，不传默认为true。
 
         :return: The transparent_client_ip_enable of this Listener.
         :rtype: bool
@@ -879,7 +879,7 @@ class Listener:
     def transparent_client_ip_enable(self, transparent_client_ip_enable):
         r"""Sets the transparent_client_ip_enable of this Listener.
 
-        参数解释：是否透传客户端IP地址。开启后客户端IP地址将透传到后端服务器。 [仅作用于共享型LB的TCP/UDP监听器。  约束限制： - 开启特性后，ELB和后端服务器之间直接使用真实的IP访问，需要确保已正确设置服务器的安全组以及访问控制策略。 - 开启特性后，不支持同一台服务器既作为后端服务器又作为客户端的场景。 - 开启特性后，不支持变更后端服务器规格。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt)   取值范围： - 共享型LB的TCP/UDP监听器可设置为true或false，不传默认为false。 - 共享型LB的HTTP/HTTPS监听器只支持设置为true，不传默认为true。 - 独享型负载均衡器所有协议的监听器只支持设置为true，不传默认为true。  [只设支持置为true，不传默认为true。](tag:hws_eu,hcso_dt)
+        **参数解释**：是否透传客户端IP地址。开启后客户端IP地址将透传到后端服务器。 [仅作用于共享型LB的TCP/UDP监听器。](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt)  **取值范围**： - 共享型LB的TCP/UDP监听器可设置为true或false，不传默认为false。 - 共享型LB的HTTP/HTTPS监听器只支持设置为true，不传默认为true。 - 独享型负载均衡器所有协议的监听器只支持设置为true，不传默认为true。
 
         :param transparent_client_ip_enable: The transparent_client_ip_enable of this Listener.
         :type transparent_client_ip_enable: bool
@@ -890,7 +890,7 @@ class Listener:
     def proxy_protocol_enable(self):
         r"""Gets the proxy_protocol_enable of this Listener.
 
-        参数解释：是否开启proxy_protocol。仅TLS监听器可指定，其他协议的监听器该字段不生效，proxy_protocol不开启。
+        **参数解释**：是否开启proxy_protocol。仅TLS监听器可指定，其他协议的监听器该字段不生效，proxy_protocol不开启。  **取值范围**：true 开启，false 不开启。
 
         :return: The proxy_protocol_enable of this Listener.
         :rtype: bool
@@ -901,7 +901,7 @@ class Listener:
     def proxy_protocol_enable(self, proxy_protocol_enable):
         r"""Sets the proxy_protocol_enable of this Listener.
 
-        参数解释：是否开启proxy_protocol。仅TLS监听器可指定，其他协议的监听器该字段不生效，proxy_protocol不开启。
+        **参数解释**：是否开启proxy_protocol。仅TLS监听器可指定，其他协议的监听器该字段不生效，proxy_protocol不开启。  **取值范围**：true 开启，false 不开启。
 
         :param proxy_protocol_enable: The proxy_protocol_enable of this Listener.
         :type proxy_protocol_enable: bool
@@ -912,7 +912,7 @@ class Listener:
     def enhance_l7policy_enable(self):
         r"""Gets the enhance_l7policy_enable of this Listener.
 
-        参数解释：是否开启高级转发策略功能。开启高级转发策略后，支持更灵活的转发策略和转发规则设置。  开启后支持如下场景： - 转发策略的action字段支持指定为REDIRECT_TO_URL, FIXED_RESPONSE，即支持URL重定向和响应固定的内容给客户端。 - 转发策略支持指定priority、redirect_url_config、fixed_response_config字段。 - 转发规则rule的type可以指定METHOD, HEADER, QUERY_STRING, SOURCE_IP这几种取值。 - 转发规则rule的type为HOST_NAME时，转发规则rule的value支持通配符*。 - 转发规则支持指定conditions字段。  约束限制： - 开启后不支持关闭。 - 开启高级转发策略后，监听器关联的转发策略的匹配优先级由转发策略的priority字段来决定，不再自动排序。具体说明详见转发策略的priority字段的说明。  取值范围：true开启，false不开启。  默认取值：false。[西南-贵阳一和华南-广州局点，该配置默认true。](tag:hws)  [荷兰region不支持该字段，请勿使用。](tag:dt)
+        **参数解释**：是否开启高级转发策略功能。开启高级转发策略后，支持更灵活的转发策略和转发规则设置。 开启后支持如下场景： - 转发策略的action字段支持指定为REDIRECT_TO_URL、FIXED_RESPONSE，即支持URL重定向和响应固定的内容给客户端。 - 转发策略支持指定priority、redirect_url_config、fixed_response_config字段。 - 转发规则rule的type可以指定METHOD, HEADER, QUERY_STRING, SOURCE_IP这几种取值。 - 转发规则rule的type为HOST_NAME时，转发规则rule的value支持通配符*。 - 转发规则支持指定conditions字段。  **取值范围**：true开启，false不开启。
 
         :return: The enhance_l7policy_enable of this Listener.
         :rtype: bool
@@ -923,7 +923,7 @@ class Listener:
     def enhance_l7policy_enable(self, enhance_l7policy_enable):
         r"""Sets the enhance_l7policy_enable of this Listener.
 
-        参数解释：是否开启高级转发策略功能。开启高级转发策略后，支持更灵活的转发策略和转发规则设置。  开启后支持如下场景： - 转发策略的action字段支持指定为REDIRECT_TO_URL, FIXED_RESPONSE，即支持URL重定向和响应固定的内容给客户端。 - 转发策略支持指定priority、redirect_url_config、fixed_response_config字段。 - 转发规则rule的type可以指定METHOD, HEADER, QUERY_STRING, SOURCE_IP这几种取值。 - 转发规则rule的type为HOST_NAME时，转发规则rule的value支持通配符*。 - 转发规则支持指定conditions字段。  约束限制： - 开启后不支持关闭。 - 开启高级转发策略后，监听器关联的转发策略的匹配优先级由转发策略的priority字段来决定，不再自动排序。具体说明详见转发策略的priority字段的说明。  取值范围：true开启，false不开启。  默认取值：false。[西南-贵阳一和华南-广州局点，该配置默认true。](tag:hws)  [荷兰region不支持该字段，请勿使用。](tag:dt)
+        **参数解释**：是否开启高级转发策略功能。开启高级转发策略后，支持更灵活的转发策略和转发规则设置。 开启后支持如下场景： - 转发策略的action字段支持指定为REDIRECT_TO_URL、FIXED_RESPONSE，即支持URL重定向和响应固定的内容给客户端。 - 转发策略支持指定priority、redirect_url_config、fixed_response_config字段。 - 转发规则rule的type可以指定METHOD, HEADER, QUERY_STRING, SOURCE_IP这几种取值。 - 转发规则rule的type为HOST_NAME时，转发规则rule的value支持通配符*。 - 转发规则支持指定conditions字段。  **取值范围**：true开启，false不开启。
 
         :param enhance_l7policy_enable: The enhance_l7policy_enable of this Listener.
         :type enhance_l7policy_enable: bool
@@ -952,7 +952,7 @@ class Listener:
     def protection_status(self):
         r"""Gets the protection_status of this Listener.
 
-        参数解释：修改保护状态,   取值范围： - nonProtection: 不保护，默认值为nonProtection - consoleProtection: 控制台修改保护
+        **参数解释**：修改保护状态。  **取值范围**： - nonProtection: 不保护。 - consoleProtection: 控制台修改保护。
 
         :return: The protection_status of this Listener.
         :rtype: str
@@ -963,7 +963,7 @@ class Listener:
     def protection_status(self, protection_status):
         r"""Sets the protection_status of this Listener.
 
-        参数解释：修改保护状态,   取值范围： - nonProtection: 不保护，默认值为nonProtection - consoleProtection: 控制台修改保护
+        **参数解释**：修改保护状态。  **取值范围**： - nonProtection: 不保护。 - consoleProtection: 控制台修改保护。
 
         :param protection_status: The protection_status of this Listener.
         :type protection_status: str
@@ -974,7 +974,7 @@ class Listener:
     def protection_reason(self):
         r"""Gets the protection_reason of this Listener.
 
-        参数解释：设置保护的原因。作为protection_status的转态设置的原因。  约束限制：仅当protection_status为consoleProtection时有效。  取值范围：除'<'和'>'外通用Unicode字符集字符，最大255个字符。
+        **参数解释**：设置保护的原因。作为protection_status的转态设置的原因。  **取值范围**：除'<'和'>'外通用Unicode字符集字符，最大255个字符。
 
         :return: The protection_reason of this Listener.
         :rtype: str
@@ -985,7 +985,7 @@ class Listener:
     def protection_reason(self, protection_reason):
         r"""Sets the protection_reason of this Listener.
 
-        参数解释：设置保护的原因。作为protection_status的转态设置的原因。  约束限制：仅当protection_status为consoleProtection时有效。  取值范围：除'<'和'>'外通用Unicode字符集字符，最大255个字符。
+        **参数解释**：设置保护的原因。作为protection_status的转态设置的原因。  **取值范围**：除'<'和'>'外通用Unicode字符集字符，最大255个字符。
 
         :param protection_reason: The protection_reason of this Listener.
         :type protection_reason: str
@@ -996,7 +996,7 @@ class Listener:
     def gzip_enable(self):
         r"""Gets the gzip_enable of this Listener.
 
-        参数解释：ELB是否开启gzip压缩。  [约束限制：仅HTTP/HTTPS类型监听器支持配置。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt) [约束限制：仅HTTP/HTTPS/QUIC类型监听器支持配置。](tag:hws,hws_hk,hws_test,hcs,hcs_sm,hcso,hk_vdf,srg,fcs,fcs_vm,mix,ocb,ctc,cmcc,ct,sbc,hws_ocb,hk_sbc)  默认取值：false  [不支持该字段，请勿使用。](tag:hws_eu,hws_eu_wb,hws_test,fcs,dt,hcso_dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,srg,g42,hk_g42)
+        **参数解释**：ELB是否开启gzip压缩。  **取值范围**：true开启，false不开启。
 
         :return: The gzip_enable of this Listener.
         :rtype: bool
@@ -1007,7 +1007,7 @@ class Listener:
     def gzip_enable(self, gzip_enable):
         r"""Sets the gzip_enable of this Listener.
 
-        参数解释：ELB是否开启gzip压缩。  [约束限制：仅HTTP/HTTPS类型监听器支持配置。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt) [约束限制：仅HTTP/HTTPS/QUIC类型监听器支持配置。](tag:hws,hws_hk,hws_test,hcs,hcs_sm,hcso,hk_vdf,srg,fcs,fcs_vm,mix,ocb,ctc,cmcc,ct,sbc,hws_ocb,hk_sbc)  默认取值：false  [不支持该字段，请勿使用。](tag:hws_eu,hws_eu_wb,hws_test,fcs,dt,hcso_dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,srg,g42,hk_g42)
+        **参数解释**：ELB是否开启gzip压缩。  **取值范围**：true开启，false不开启。
 
         :param gzip_enable: The gzip_enable of this Listener.
         :type gzip_enable: bool
@@ -1018,7 +1018,7 @@ class Listener:
     def port_ranges(self):
         r"""Gets the port_ranges of this Listener.
 
-        参数解释：端口监听范围（闭区间)。  约束限制： - 最多指定10个端口组，每个组范围不可有重叠部分 - 仅当protocol_port为0时可以传入。  [不支持该字段，请勿使用。](tag:hws_eu,hws_eu_wb,hws_test,fcs,dt,hcso_dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,srg,g42,hk_g42)
+        **参数解释**：全端口监听，指定端口监听范围（闭区间)。
 
         :return: The port_ranges of this Listener.
         :rtype: list[:class:`huaweicloudsdkelb.v3.PortRange`]
@@ -1029,7 +1029,7 @@ class Listener:
     def port_ranges(self, port_ranges):
         r"""Sets the port_ranges of this Listener.
 
-        参数解释：端口监听范围（闭区间)。  约束限制： - 最多指定10个端口组，每个组范围不可有重叠部分 - 仅当protocol_port为0时可以传入。  [不支持该字段，请勿使用。](tag:hws_eu,hws_eu_wb,hws_test,fcs,dt,hcso_dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,srg,g42,hk_g42)
+        **参数解释**：全端口监听，指定端口监听范围（闭区间)。
 
         :param port_ranges: The port_ranges of this Listener.
         :type port_ranges: list[:class:`huaweicloudsdkelb.v3.PortRange`]
@@ -1040,7 +1040,7 @@ class Listener:
     def ssl_early_data_enable(self):
         r"""Gets the ssl_early_data_enable of this Listener.
 
-        参数解释：监听器0-RTT能力开关  约束限制：仅HTTPS类型监听器支持配置，需要依赖TLSv1.3安全策略协议。  默认取值：false。
+        **参数解释**：监听器0-RTT能力开关  **约束限制**：仅HTTPS类型监听器支持配置，需要依赖TLSv1.3安全策略协议。
 
         :return: The ssl_early_data_enable of this Listener.
         :rtype: bool
@@ -1051,7 +1051,7 @@ class Listener:
     def ssl_early_data_enable(self, ssl_early_data_enable):
         r"""Sets the ssl_early_data_enable of this Listener.
 
-        参数解释：监听器0-RTT能力开关  约束限制：仅HTTPS类型监听器支持配置，需要依赖TLSv1.3安全策略协议。  默认取值：false。
+        **参数解释**：监听器0-RTT能力开关  **约束限制**：仅HTTPS类型监听器支持配置，需要依赖TLSv1.3安全策略协议。
 
         :param ssl_early_data_enable: The ssl_early_data_enable of this Listener.
         :type ssl_early_data_enable: bool
@@ -1062,7 +1062,7 @@ class Listener:
     def cps(self):
         r"""Gets the cps of this Listener.
 
-        参数解释：监听器新建限速  约束限制：当该限速值大于LB的限速值时，以LB的限速值生效  取值范围：0-1000000  默认取值：0，表示不限速
+        **参数解释**：监听器新建限速。当该限速值大于LB的限速值时，以LB的限速值生效。  **取值范围**：0-1000000
 
         :return: The cps of this Listener.
         :rtype: int
@@ -1073,7 +1073,7 @@ class Listener:
     def cps(self, cps):
         r"""Sets the cps of this Listener.
 
-        参数解释：监听器新建限速  约束限制：当该限速值大于LB的限速值时，以LB的限速值生效  取值范围：0-1000000  默认取值：0，表示不限速
+        **参数解释**：监听器新建限速。当该限速值大于LB的限速值时，以LB的限速值生效。  **取值范围**：0-1000000
 
         :param cps: The cps of this Listener.
         :type cps: int
@@ -1084,7 +1084,7 @@ class Listener:
     def connection(self):
         r"""Gets the connection of this Listener.
 
-        参数解释：监听器并发限速  约束限制：当该限速值大于LB的限速值时，以LB的限速值生效  取值范围：0-1000000  默认取值：0，表示不限速
+        **参数解释**：监听器并发限速。当该限速值大于LB的限速值时，以LB的限速值生效。  **取值范围**：0-1000000
 
         :return: The connection of this Listener.
         :rtype: int
@@ -1095,7 +1095,7 @@ class Listener:
     def connection(self, connection):
         r"""Sets the connection of this Listener.
 
-        参数解释：监听器并发限速  约束限制：当该限速值大于LB的限速值时，以LB的限速值生效  取值范围：0-1000000  默认取值：0，表示不限速
+        **参数解释**：监听器并发限速。当该限速值大于LB的限速值时，以LB的限速值生效。  **取值范围**：0-1000000
 
         :param connection: The connection of this Listener.
         :type connection: int
@@ -1106,7 +1106,7 @@ class Listener:
     def nat64_enable(self):
         r"""Gets the nat64_enable of this Listener.
 
-        参数解释： 监听器地址族转换能力开关，可以实现客户端通过访问LB的IPv4或者IPv6地址，来访问IPv4后端和IPv6后端。  约束限制： 仅对于TCP、UDP协议类型的监听器生效，与transparent_client_ip_enable，获取客户端ip功能开关互斥，开启地址族转换同时需要保证获取客户端ip功能关闭。  取值范围： - true：开启地址族转换功能 - false：关闭地址族转换功能  默认取值：false
+        **参数解释**：监听器地址转换能力开关，可以实现客户端通过访问LB的IPv4或者IPv6地址，来访问IPv4后端和IPv6后端。  **取值范围**： - true：开启地址转换功能。 - false：关闭地址转换功能。
 
         :return: The nat64_enable of this Listener.
         :rtype: bool
@@ -1117,7 +1117,7 @@ class Listener:
     def nat64_enable(self, nat64_enable):
         r"""Sets the nat64_enable of this Listener.
 
-        参数解释： 监听器地址族转换能力开关，可以实现客户端通过访问LB的IPv4或者IPv6地址，来访问IPv4后端和IPv6后端。  约束限制： 仅对于TCP、UDP协议类型的监听器生效，与transparent_client_ip_enable，获取客户端ip功能开关互斥，开启地址族转换同时需要保证获取客户端ip功能关闭。  取值范围： - true：开启地址族转换功能 - false：关闭地址族转换功能  默认取值：false
+        **参数解释**：监听器地址转换能力开关，可以实现客户端通过访问LB的IPv4或者IPv6地址，来访问IPv4后端和IPv6后端。  **取值范围**： - true：开启地址转换功能。 - false：关闭地址转换功能。
 
         :param nat64_enable: The nat64_enable of this Listener.
         :type nat64_enable: bool

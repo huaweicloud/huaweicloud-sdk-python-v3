@@ -61,39 +61,39 @@ class ListMembersRequest:
 
         The model defined in huaweicloud sdk
 
-        :param pool_id: 参数解释：后端服务器组ID。
+        :param pool_id: **参数解释**：后端服务器组ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type pool_id: str
-        :param marker: 上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
+        :param marker: **参数解释**：上一页最后一条记录的ID。  **约束限制**： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。  **取值范围**：不涉及  **默认取值**：不涉及
         :type marker: str
-        :param limit: 参数解释：每页返回的个数。  取值范围：0-2000  默认取值：2000
+        :param limit: **参数解释**：每页返回的个数。  **约束限制**：不涉及  **取值范围**：0-2000  **默认取值**：2000
         :type limit: int
-        :param page_reverse: 是否反向查询。  取值： - true：查询上一页。 - false：查询下一页，默认。  使用说明： - 必须与limit一起使用。 - 当page_reverse&#x3D;true时，若要查询上一页，marker取值为当前页返回值的previous_marker。
+        :param page_reverse: **参数解释**：是否反向查询。  **约束限制**： - 必须与limit一起使用。 - 当page_reverse&#x3D;true时，若要查询上一页，marker取值为当前页返回值的previous_marker。  **取值范围**： - true：查询上一页。 - false：查询下一页。  **默认取值**：false
         :type page_reverse: bool
-        :param name: 后端服务器名称。注意：该名称并非ECS名称。  支持多值查询，查询条件格式：*name&#x3D;xxx&amp;name&#x3D;xxx*。
+        :param name: **参数解释**：后端服务器名称。注意：该名称并非ECS名称。 支持多值查询，查询条件格式：*name&#x3D;xxx&amp;name&#x3D;xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type name: list[str]
-        :param weight: 后端服务器的权重，请求将根据pool配置的负载均衡算法和后端服务器的权重进行负载分发。 权重值越大，分发的请求越多。权重为0的后端不再接受新的请求。  取值：0-100。  支持多值查询，查询条件格式：*weight&#x3D;xxx&amp;weight&#x3D;xxx*。
+        :param weight: **参数解释**：后端服务器的权重，请求将根据pool配置的负载均衡算法和后端服务器的权重进行负载分发。 权重值越大，分发的请求越多。权重为0的后端不再接受新的请求。 支持多值查询，查询条件格式：*weight&#x3D;xxx&amp;weight&#x3D;xxx*。  **约束限制**：不涉及  **取值范围**：0-100  **默认取值**：不涉及
         :type weight: list[int]
-        :param admin_state_up: 后端服务器的管理状态。  取值：true、false。  虽然创建、更新请求支持该字段，但实际取值决定于后端服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
+        :param admin_state_up: **参数解释**：后端服务器的管理状态。  **约束限制**：不涉及  **取值范围**：true、false  **默认取值**：不涉及
         :type admin_state_up: bool
-        :param subnet_cidr_id: 后端服务器所在子网的IPv4子网ID或IPv6子网ID。  支持多值查询，查询条件格式：***subnet_cidr_id&#x3D;xxx&amp;subnet_cidr_id&#x3D;xxx*。  [不支持IPv6，请勿设置为IPv6子网ID。](tag:dt)
+        :param subnet_cidr_id: **参数解释**：后端服务器所在子网的IPv4子网ID或IPv6子网ID。 支持多值查询，查询条件格式：***subnet_cidr_id&#x3D;xxx&amp;subnet_cidr_id&#x3D;xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type subnet_cidr_id: list[str]
-        :param address: 后端服务器对应的IPv4或IPv6地址。  支持多值查询，查询条件格式：*address&#x3D;xxx&amp;address&#x3D;xxx*。  [不支持IPv6，请勿设置为IPv6地址。](tag:dt)
+        :param address: **参数解释**：后端服务器对应的IPv4或IPv6地址。 支持多值查询，查询条件格式：*address&#x3D;xxx&amp;address&#x3D;xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type address: list[str]
-        :param protocol_port: 后端服务器业务端口号。  支持多值查询，查询条件格式：*protocol_port&#x3D;xxx&amp;protocol_port&#x3D;xxx*。
+        :param protocol_port: **参数解释**：后端服务器业务端口号。 支持多值查询，查询条件格式：*protocol_port&#x3D;xxx&amp;protocol_port&#x3D;xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type protocol_port: list[int]
-        :param id: 后端服务器ID。  支持多值查询，查询条件格式：*id&#x3D;xxx&amp;id&#x3D;xxx*。
+        :param id: **参数解释**：后端服务器ID。 支持多值查询，查询条件格式：*id&#x3D;xxx&amp;id&#x3D;xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type id: list[str]
-        :param operating_status: 后端服务器的健康状态。  取值： - INITIAL：初始化中，表示负载均衡实例配置了健康检查，但查不到数据。 - ONLINE：后端服务器正常。 - NO_MONITOR：后端服务器所在的服务器组没有健康检查器。 - OFFLINE：后端服务器关联的ECS服务器不存在或已关机。  支持多值查询，查询条件格式：*operating_status&#x3D;xxx&amp;operating_status&#x3D;xxx*。
+        :param operating_status: **参数解释**：后端服务器的健康状态。 支持多值查询，查询条件格式：*operating_status&#x3D;xxx&amp;operating_status&#x3D;xxx*。  **约束限制**：不涉及  **取值范围**： - NO_MONITOR：后端服务器所在的服务器组没有开启健康检查。 - INITIAL：初始化中，表示负载均衡实例配置了健康检查，但查不到数据。 - ONLINE：后端服务器正常。 - OFFLINE：后端服务器关联的ECS服务器不存在或已关机。 - UNKNOWN：未关联LB实例的pool下的member，或者创建后从未关联ECS的云服务器类型member，状态置为UNKNOWN。  **默认取值**：不涉及
         :type operating_status: list[str]
-        :param enterprise_project_id: 参数解释：所属的企业项目ID。 如果enterprise_project_id不传值，默认查询所有企业项目下的资源，鉴权按照细粒度权限鉴权，必须在用户组下分配elb:members:list权限。 如果enterprise_project_id传值，鉴权按照企业项目权限鉴权，分为传入具体eps_id和all_granted_eps两种场景，前者查询指定eps_id的eps下的资源，后者查询的是所有有list权限的eps下的资源。  支持多值查询，查询条件格式： *enterprise_project_id&#x3D;xxx&amp;enterprise_project_id&#x3D;xxx*。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
+        :param enterprise_project_id: **参数解释**：资源所属的企业项目ID。 支持多值查询，查询条件格式：*enterprise_project_id&#x3D;xxx&amp;enterprise_project_id&#x3D;xxx*。  **约束限制**： - 如果enterprise_project_id不传值，默认查询所有企业项目下的资源，鉴权按照细粒度权限鉴权，必须在用户组下分配elb:members:list权限。 - 如果enterprise_project_id传值，鉴权按照企业项目权限鉴权，分为传入具体eps_id和all_granted_eps两种场景，前者查询指定eps_id的eps下的资源，后者查询的是所有有list权限的eps下的资源。  **取值范围**：不涉及  **默认取值**：不涉及  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
         :type enterprise_project_id: list[str]
-        :param ip_version: 当前后端服务器的IP地址版本。取值：v4、v6。
+        :param ip_version: **参数解释**：当前后端服务器的IP地址版本。  **约束限制**：不涉及  **取值范围**：v4、v6。  **默认取值**：不涉及
         :type ip_version: list[str]
-        :param member_type: 后端服务器的类型。  取值： - ip：跨VPC的member。 - instance：关联到ECS的member。  支持多值查询，查询条件格式：*member_type&#x3D;xxx&amp;member_type&#x3D;xxx*。
+        :param member_type: **参数解释**：后端服务器的类型。 支持多值查询，查询条件格式：*member_type&#x3D;xxx&amp;member_type&#x3D;xxx*。  **约束限制**：不涉及  **取值范围**： - ip：跨VPC的member。 - instance：关联到ECS的member。  **默认取值**：不涉及
         :type member_type: list[str]
-        :param instance_id: member关联的ECS实例ID，空表示跨VPC场景的member。  支持多值查询，查询条件格式：*instance_id&#x3D;xxx&amp;instance_id&#x3D;xxx*。
+        :param instance_id: **参数解释**：member关联的ECS实例ID，空表示跨VPC场景的member。 支持多值查询，查询条件格式：*instance_id&#x3D;xxx&amp;instance_id&#x3D;xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type instance_id: list[str]
-        :param availability_zone: 后端服务器的可用区。  支持多值查询，查询条件格式：*availability_zone&#x3D;xxx&amp;availability_zone&#x3D;xxx*。
+        :param availability_zone: **参数解释**：后端服务器的可用区。 支持多值查询，查询条件格式：*availability_zone&#x3D;xxx&amp;availability_zone&#x3D;xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type availability_zone: list[str]
         """
         
@@ -156,7 +156,7 @@ class ListMembersRequest:
     def pool_id(self):
         r"""Gets the pool_id of this ListMembersRequest.
 
-        参数解释：后端服务器组ID。
+        **参数解释**：后端服务器组ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The pool_id of this ListMembersRequest.
         :rtype: str
@@ -167,7 +167,7 @@ class ListMembersRequest:
     def pool_id(self, pool_id):
         r"""Sets the pool_id of this ListMembersRequest.
 
-        参数解释：后端服务器组ID。
+        **参数解释**：后端服务器组ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param pool_id: The pool_id of this ListMembersRequest.
         :type pool_id: str
@@ -178,7 +178,7 @@ class ListMembersRequest:
     def marker(self):
         r"""Gets the marker of this ListMembersRequest.
 
-        上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
+        **参数解释**：上一页最后一条记录的ID。  **约束限制**： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The marker of this ListMembersRequest.
         :rtype: str
@@ -189,7 +189,7 @@ class ListMembersRequest:
     def marker(self, marker):
         r"""Sets the marker of this ListMembersRequest.
 
-        上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
+        **参数解释**：上一页最后一条记录的ID。  **约束限制**： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param marker: The marker of this ListMembersRequest.
         :type marker: str
@@ -200,7 +200,7 @@ class ListMembersRequest:
     def limit(self):
         r"""Gets the limit of this ListMembersRequest.
 
-        参数解释：每页返回的个数。  取值范围：0-2000  默认取值：2000
+        **参数解释**：每页返回的个数。  **约束限制**：不涉及  **取值范围**：0-2000  **默认取值**：2000
 
         :return: The limit of this ListMembersRequest.
         :rtype: int
@@ -211,7 +211,7 @@ class ListMembersRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListMembersRequest.
 
-        参数解释：每页返回的个数。  取值范围：0-2000  默认取值：2000
+        **参数解释**：每页返回的个数。  **约束限制**：不涉及  **取值范围**：0-2000  **默认取值**：2000
 
         :param limit: The limit of this ListMembersRequest.
         :type limit: int
@@ -222,7 +222,7 @@ class ListMembersRequest:
     def page_reverse(self):
         r"""Gets the page_reverse of this ListMembersRequest.
 
-        是否反向查询。  取值： - true：查询上一页。 - false：查询下一页，默认。  使用说明： - 必须与limit一起使用。 - 当page_reverse=true时，若要查询上一页，marker取值为当前页返回值的previous_marker。
+        **参数解释**：是否反向查询。  **约束限制**： - 必须与limit一起使用。 - 当page_reverse=true时，若要查询上一页，marker取值为当前页返回值的previous_marker。  **取值范围**： - true：查询上一页。 - false：查询下一页。  **默认取值**：false
 
         :return: The page_reverse of this ListMembersRequest.
         :rtype: bool
@@ -233,7 +233,7 @@ class ListMembersRequest:
     def page_reverse(self, page_reverse):
         r"""Sets the page_reverse of this ListMembersRequest.
 
-        是否反向查询。  取值： - true：查询上一页。 - false：查询下一页，默认。  使用说明： - 必须与limit一起使用。 - 当page_reverse=true时，若要查询上一页，marker取值为当前页返回值的previous_marker。
+        **参数解释**：是否反向查询。  **约束限制**： - 必须与limit一起使用。 - 当page_reverse=true时，若要查询上一页，marker取值为当前页返回值的previous_marker。  **取值范围**： - true：查询上一页。 - false：查询下一页。  **默认取值**：false
 
         :param page_reverse: The page_reverse of this ListMembersRequest.
         :type page_reverse: bool
@@ -244,7 +244,7 @@ class ListMembersRequest:
     def name(self):
         r"""Gets the name of this ListMembersRequest.
 
-        后端服务器名称。注意：该名称并非ECS名称。  支持多值查询，查询条件格式：*name=xxx&name=xxx*。
+        **参数解释**：后端服务器名称。注意：该名称并非ECS名称。 支持多值查询，查询条件格式：*name=xxx&name=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The name of this ListMembersRequest.
         :rtype: list[str]
@@ -255,7 +255,7 @@ class ListMembersRequest:
     def name(self, name):
         r"""Sets the name of this ListMembersRequest.
 
-        后端服务器名称。注意：该名称并非ECS名称。  支持多值查询，查询条件格式：*name=xxx&name=xxx*。
+        **参数解释**：后端服务器名称。注意：该名称并非ECS名称。 支持多值查询，查询条件格式：*name=xxx&name=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param name: The name of this ListMembersRequest.
         :type name: list[str]
@@ -266,7 +266,7 @@ class ListMembersRequest:
     def weight(self):
         r"""Gets the weight of this ListMembersRequest.
 
-        后端服务器的权重，请求将根据pool配置的负载均衡算法和后端服务器的权重进行负载分发。 权重值越大，分发的请求越多。权重为0的后端不再接受新的请求。  取值：0-100。  支持多值查询，查询条件格式：*weight=xxx&weight=xxx*。
+        **参数解释**：后端服务器的权重，请求将根据pool配置的负载均衡算法和后端服务器的权重进行负载分发。 权重值越大，分发的请求越多。权重为0的后端不再接受新的请求。 支持多值查询，查询条件格式：*weight=xxx&weight=xxx*。  **约束限制**：不涉及  **取值范围**：0-100  **默认取值**：不涉及
 
         :return: The weight of this ListMembersRequest.
         :rtype: list[int]
@@ -277,7 +277,7 @@ class ListMembersRequest:
     def weight(self, weight):
         r"""Sets the weight of this ListMembersRequest.
 
-        后端服务器的权重，请求将根据pool配置的负载均衡算法和后端服务器的权重进行负载分发。 权重值越大，分发的请求越多。权重为0的后端不再接受新的请求。  取值：0-100。  支持多值查询，查询条件格式：*weight=xxx&weight=xxx*。
+        **参数解释**：后端服务器的权重，请求将根据pool配置的负载均衡算法和后端服务器的权重进行负载分发。 权重值越大，分发的请求越多。权重为0的后端不再接受新的请求。 支持多值查询，查询条件格式：*weight=xxx&weight=xxx*。  **约束限制**：不涉及  **取值范围**：0-100  **默认取值**：不涉及
 
         :param weight: The weight of this ListMembersRequest.
         :type weight: list[int]
@@ -288,7 +288,7 @@ class ListMembersRequest:
     def admin_state_up(self):
         r"""Gets the admin_state_up of this ListMembersRequest.
 
-        后端服务器的管理状态。  取值：true、false。  虽然创建、更新请求支持该字段，但实际取值决定于后端服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
+        **参数解释**：后端服务器的管理状态。  **约束限制**：不涉及  **取值范围**：true、false  **默认取值**：不涉及
 
         :return: The admin_state_up of this ListMembersRequest.
         :rtype: bool
@@ -299,7 +299,7 @@ class ListMembersRequest:
     def admin_state_up(self, admin_state_up):
         r"""Sets the admin_state_up of this ListMembersRequest.
 
-        后端服务器的管理状态。  取值：true、false。  虽然创建、更新请求支持该字段，但实际取值决定于后端服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
+        **参数解释**：后端服务器的管理状态。  **约束限制**：不涉及  **取值范围**：true、false  **默认取值**：不涉及
 
         :param admin_state_up: The admin_state_up of this ListMembersRequest.
         :type admin_state_up: bool
@@ -310,7 +310,7 @@ class ListMembersRequest:
     def subnet_cidr_id(self):
         r"""Gets the subnet_cidr_id of this ListMembersRequest.
 
-        后端服务器所在子网的IPv4子网ID或IPv6子网ID。  支持多值查询，查询条件格式：***subnet_cidr_id=xxx&subnet_cidr_id=xxx*。  [不支持IPv6，请勿设置为IPv6子网ID。](tag:dt)
+        **参数解释**：后端服务器所在子网的IPv4子网ID或IPv6子网ID。 支持多值查询，查询条件格式：***subnet_cidr_id=xxx&subnet_cidr_id=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The subnet_cidr_id of this ListMembersRequest.
         :rtype: list[str]
@@ -321,7 +321,7 @@ class ListMembersRequest:
     def subnet_cidr_id(self, subnet_cidr_id):
         r"""Sets the subnet_cidr_id of this ListMembersRequest.
 
-        后端服务器所在子网的IPv4子网ID或IPv6子网ID。  支持多值查询，查询条件格式：***subnet_cidr_id=xxx&subnet_cidr_id=xxx*。  [不支持IPv6，请勿设置为IPv6子网ID。](tag:dt)
+        **参数解释**：后端服务器所在子网的IPv4子网ID或IPv6子网ID。 支持多值查询，查询条件格式：***subnet_cidr_id=xxx&subnet_cidr_id=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param subnet_cidr_id: The subnet_cidr_id of this ListMembersRequest.
         :type subnet_cidr_id: list[str]
@@ -332,7 +332,7 @@ class ListMembersRequest:
     def address(self):
         r"""Gets the address of this ListMembersRequest.
 
-        后端服务器对应的IPv4或IPv6地址。  支持多值查询，查询条件格式：*address=xxx&address=xxx*。  [不支持IPv6，请勿设置为IPv6地址。](tag:dt)
+        **参数解释**：后端服务器对应的IPv4或IPv6地址。 支持多值查询，查询条件格式：*address=xxx&address=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The address of this ListMembersRequest.
         :rtype: list[str]
@@ -343,7 +343,7 @@ class ListMembersRequest:
     def address(self, address):
         r"""Sets the address of this ListMembersRequest.
 
-        后端服务器对应的IPv4或IPv6地址。  支持多值查询，查询条件格式：*address=xxx&address=xxx*。  [不支持IPv6，请勿设置为IPv6地址。](tag:dt)
+        **参数解释**：后端服务器对应的IPv4或IPv6地址。 支持多值查询，查询条件格式：*address=xxx&address=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param address: The address of this ListMembersRequest.
         :type address: list[str]
@@ -354,7 +354,7 @@ class ListMembersRequest:
     def protocol_port(self):
         r"""Gets the protocol_port of this ListMembersRequest.
 
-        后端服务器业务端口号。  支持多值查询，查询条件格式：*protocol_port=xxx&protocol_port=xxx*。
+        **参数解释**：后端服务器业务端口号。 支持多值查询，查询条件格式：*protocol_port=xxx&protocol_port=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The protocol_port of this ListMembersRequest.
         :rtype: list[int]
@@ -365,7 +365,7 @@ class ListMembersRequest:
     def protocol_port(self, protocol_port):
         r"""Sets the protocol_port of this ListMembersRequest.
 
-        后端服务器业务端口号。  支持多值查询，查询条件格式：*protocol_port=xxx&protocol_port=xxx*。
+        **参数解释**：后端服务器业务端口号。 支持多值查询，查询条件格式：*protocol_port=xxx&protocol_port=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param protocol_port: The protocol_port of this ListMembersRequest.
         :type protocol_port: list[int]
@@ -376,7 +376,7 @@ class ListMembersRequest:
     def id(self):
         r"""Gets the id of this ListMembersRequest.
 
-        后端服务器ID。  支持多值查询，查询条件格式：*id=xxx&id=xxx*。
+        **参数解释**：后端服务器ID。 支持多值查询，查询条件格式：*id=xxx&id=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The id of this ListMembersRequest.
         :rtype: list[str]
@@ -387,7 +387,7 @@ class ListMembersRequest:
     def id(self, id):
         r"""Sets the id of this ListMembersRequest.
 
-        后端服务器ID。  支持多值查询，查询条件格式：*id=xxx&id=xxx*。
+        **参数解释**：后端服务器ID。 支持多值查询，查询条件格式：*id=xxx&id=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param id: The id of this ListMembersRequest.
         :type id: list[str]
@@ -398,7 +398,7 @@ class ListMembersRequest:
     def operating_status(self):
         r"""Gets the operating_status of this ListMembersRequest.
 
-        后端服务器的健康状态。  取值： - INITIAL：初始化中，表示负载均衡实例配置了健康检查，但查不到数据。 - ONLINE：后端服务器正常。 - NO_MONITOR：后端服务器所在的服务器组没有健康检查器。 - OFFLINE：后端服务器关联的ECS服务器不存在或已关机。  支持多值查询，查询条件格式：*operating_status=xxx&operating_status=xxx*。
+        **参数解释**：后端服务器的健康状态。 支持多值查询，查询条件格式：*operating_status=xxx&operating_status=xxx*。  **约束限制**：不涉及  **取值范围**： - NO_MONITOR：后端服务器所在的服务器组没有开启健康检查。 - INITIAL：初始化中，表示负载均衡实例配置了健康检查，但查不到数据。 - ONLINE：后端服务器正常。 - OFFLINE：后端服务器关联的ECS服务器不存在或已关机。 - UNKNOWN：未关联LB实例的pool下的member，或者创建后从未关联ECS的云服务器类型member，状态置为UNKNOWN。  **默认取值**：不涉及
 
         :return: The operating_status of this ListMembersRequest.
         :rtype: list[str]
@@ -409,7 +409,7 @@ class ListMembersRequest:
     def operating_status(self, operating_status):
         r"""Sets the operating_status of this ListMembersRequest.
 
-        后端服务器的健康状态。  取值： - INITIAL：初始化中，表示负载均衡实例配置了健康检查，但查不到数据。 - ONLINE：后端服务器正常。 - NO_MONITOR：后端服务器所在的服务器组没有健康检查器。 - OFFLINE：后端服务器关联的ECS服务器不存在或已关机。  支持多值查询，查询条件格式：*operating_status=xxx&operating_status=xxx*。
+        **参数解释**：后端服务器的健康状态。 支持多值查询，查询条件格式：*operating_status=xxx&operating_status=xxx*。  **约束限制**：不涉及  **取值范围**： - NO_MONITOR：后端服务器所在的服务器组没有开启健康检查。 - INITIAL：初始化中，表示负载均衡实例配置了健康检查，但查不到数据。 - ONLINE：后端服务器正常。 - OFFLINE：后端服务器关联的ECS服务器不存在或已关机。 - UNKNOWN：未关联LB实例的pool下的member，或者创建后从未关联ECS的云服务器类型member，状态置为UNKNOWN。  **默认取值**：不涉及
 
         :param operating_status: The operating_status of this ListMembersRequest.
         :type operating_status: list[str]
@@ -420,7 +420,7 @@ class ListMembersRequest:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this ListMembersRequest.
 
-        参数解释：所属的企业项目ID。 如果enterprise_project_id不传值，默认查询所有企业项目下的资源，鉴权按照细粒度权限鉴权，必须在用户组下分配elb:members:list权限。 如果enterprise_project_id传值，鉴权按照企业项目权限鉴权，分为传入具体eps_id和all_granted_eps两种场景，前者查询指定eps_id的eps下的资源，后者查询的是所有有list权限的eps下的资源。  支持多值查询，查询条件格式： *enterprise_project_id=xxx&enterprise_project_id=xxx*。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
+        **参数解释**：资源所属的企业项目ID。 支持多值查询，查询条件格式：*enterprise_project_id=xxx&enterprise_project_id=xxx*。  **约束限制**： - 如果enterprise_project_id不传值，默认查询所有企业项目下的资源，鉴权按照细粒度权限鉴权，必须在用户组下分配elb:members:list权限。 - 如果enterprise_project_id传值，鉴权按照企业项目权限鉴权，分为传入具体eps_id和all_granted_eps两种场景，前者查询指定eps_id的eps下的资源，后者查询的是所有有list权限的eps下的资源。  **取值范围**：不涉及  **默认取值**：不涉及  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
 
         :return: The enterprise_project_id of this ListMembersRequest.
         :rtype: list[str]
@@ -431,7 +431,7 @@ class ListMembersRequest:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this ListMembersRequest.
 
-        参数解释：所属的企业项目ID。 如果enterprise_project_id不传值，默认查询所有企业项目下的资源，鉴权按照细粒度权限鉴权，必须在用户组下分配elb:members:list权限。 如果enterprise_project_id传值，鉴权按照企业项目权限鉴权，分为传入具体eps_id和all_granted_eps两种场景，前者查询指定eps_id的eps下的资源，后者查询的是所有有list权限的eps下的资源。  支持多值查询，查询条件格式： *enterprise_project_id=xxx&enterprise_project_id=xxx*。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
+        **参数解释**：资源所属的企业项目ID。 支持多值查询，查询条件格式：*enterprise_project_id=xxx&enterprise_project_id=xxx*。  **约束限制**： - 如果enterprise_project_id不传值，默认查询所有企业项目下的资源，鉴权按照细粒度权限鉴权，必须在用户组下分配elb:members:list权限。 - 如果enterprise_project_id传值，鉴权按照企业项目权限鉴权，分为传入具体eps_id和all_granted_eps两种场景，前者查询指定eps_id的eps下的资源，后者查询的是所有有list权限的eps下的资源。  **取值范围**：不涉及  **默认取值**：不涉及  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
 
         :param enterprise_project_id: The enterprise_project_id of this ListMembersRequest.
         :type enterprise_project_id: list[str]
@@ -442,7 +442,7 @@ class ListMembersRequest:
     def ip_version(self):
         r"""Gets the ip_version of this ListMembersRequest.
 
-        当前后端服务器的IP地址版本。取值：v4、v6。
+        **参数解释**：当前后端服务器的IP地址版本。  **约束限制**：不涉及  **取值范围**：v4、v6。  **默认取值**：不涉及
 
         :return: The ip_version of this ListMembersRequest.
         :rtype: list[str]
@@ -453,7 +453,7 @@ class ListMembersRequest:
     def ip_version(self, ip_version):
         r"""Sets the ip_version of this ListMembersRequest.
 
-        当前后端服务器的IP地址版本。取值：v4、v6。
+        **参数解释**：当前后端服务器的IP地址版本。  **约束限制**：不涉及  **取值范围**：v4、v6。  **默认取值**：不涉及
 
         :param ip_version: The ip_version of this ListMembersRequest.
         :type ip_version: list[str]
@@ -464,7 +464,7 @@ class ListMembersRequest:
     def member_type(self):
         r"""Gets the member_type of this ListMembersRequest.
 
-        后端服务器的类型。  取值： - ip：跨VPC的member。 - instance：关联到ECS的member。  支持多值查询，查询条件格式：*member_type=xxx&member_type=xxx*。
+        **参数解释**：后端服务器的类型。 支持多值查询，查询条件格式：*member_type=xxx&member_type=xxx*。  **约束限制**：不涉及  **取值范围**： - ip：跨VPC的member。 - instance：关联到ECS的member。  **默认取值**：不涉及
 
         :return: The member_type of this ListMembersRequest.
         :rtype: list[str]
@@ -475,7 +475,7 @@ class ListMembersRequest:
     def member_type(self, member_type):
         r"""Sets the member_type of this ListMembersRequest.
 
-        后端服务器的类型。  取值： - ip：跨VPC的member。 - instance：关联到ECS的member。  支持多值查询，查询条件格式：*member_type=xxx&member_type=xxx*。
+        **参数解释**：后端服务器的类型。 支持多值查询，查询条件格式：*member_type=xxx&member_type=xxx*。  **约束限制**：不涉及  **取值范围**： - ip：跨VPC的member。 - instance：关联到ECS的member。  **默认取值**：不涉及
 
         :param member_type: The member_type of this ListMembersRequest.
         :type member_type: list[str]
@@ -486,7 +486,7 @@ class ListMembersRequest:
     def instance_id(self):
         r"""Gets the instance_id of this ListMembersRequest.
 
-        member关联的ECS实例ID，空表示跨VPC场景的member。  支持多值查询，查询条件格式：*instance_id=xxx&instance_id=xxx*。
+        **参数解释**：member关联的ECS实例ID，空表示跨VPC场景的member。 支持多值查询，查询条件格式：*instance_id=xxx&instance_id=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The instance_id of this ListMembersRequest.
         :rtype: list[str]
@@ -497,7 +497,7 @@ class ListMembersRequest:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this ListMembersRequest.
 
-        member关联的ECS实例ID，空表示跨VPC场景的member。  支持多值查询，查询条件格式：*instance_id=xxx&instance_id=xxx*。
+        **参数解释**：member关联的ECS实例ID，空表示跨VPC场景的member。 支持多值查询，查询条件格式：*instance_id=xxx&instance_id=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param instance_id: The instance_id of this ListMembersRequest.
         :type instance_id: list[str]
@@ -508,7 +508,7 @@ class ListMembersRequest:
     def availability_zone(self):
         r"""Gets the availability_zone of this ListMembersRequest.
 
-        后端服务器的可用区。  支持多值查询，查询条件格式：*availability_zone=xxx&availability_zone=xxx*。
+        **参数解释**：后端服务器的可用区。 支持多值查询，查询条件格式：*availability_zone=xxx&availability_zone=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The availability_zone of this ListMembersRequest.
         :rtype: list[str]
@@ -519,7 +519,7 @@ class ListMembersRequest:
     def availability_zone(self, availability_zone):
         r"""Sets the availability_zone of this ListMembersRequest.
 
-        后端服务器的可用区。  支持多值查询，查询条件格式：*availability_zone=xxx&availability_zone=xxx*。
+        **参数解释**：后端服务器的可用区。 支持多值查询，查询条件格式：*availability_zone=xxx&availability_zone=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param availability_zone: The availability_zone of this ListMembersRequest.
         :type availability_zone: list[str]

@@ -41,7 +41,7 @@ class ShowPageNoticesInfo:
 
         :param page_location: 页面位置
         :type page_location: str
-        :param type: 通知类型，包含如下两种。 - links :超链接 - text  :文本
+        :param type: 通知类型，包含如下两种。 - links：超链接 - text：文本
         :type type: str
         :param content: 通知内容
         :type content: str
@@ -49,7 +49,7 @@ class ShowPageNoticesInfo:
         :type title: str
         :param url: 超链接
         :type url: str
-        :param level: 通知等级，包含如下3种。 - error :紧急 - warn :重要 - prompt :提示
+        :param level: **参数解释** 通知等级 **取值范围** - error：紧急 - warn：重要 - prompt：提示
         :type level: str
         """
         
@@ -102,7 +102,7 @@ class ShowPageNoticesInfo:
     def type(self):
         r"""Gets the type of this ShowPageNoticesInfo.
 
-        通知类型，包含如下两种。 - links :超链接 - text  :文本
+        通知类型，包含如下两种。 - links：超链接 - text：文本
 
         :return: The type of this ShowPageNoticesInfo.
         :rtype: str
@@ -113,7 +113,7 @@ class ShowPageNoticesInfo:
     def type(self, type):
         r"""Sets the type of this ShowPageNoticesInfo.
 
-        通知类型，包含如下两种。 - links :超链接 - text  :文本
+        通知类型，包含如下两种。 - links：超链接 - text：文本
 
         :param type: The type of this ShowPageNoticesInfo.
         :type type: str
@@ -190,7 +190,7 @@ class ShowPageNoticesInfo:
     def level(self):
         r"""Gets the level of this ShowPageNoticesInfo.
 
-        通知等级，包含如下3种。 - error :紧急 - warn :重要 - prompt :提示
+        **参数解释** 通知等级 **取值范围** - error：紧急 - warn：重要 - prompt：提示
 
         :return: The level of this ShowPageNoticesInfo.
         :rtype: str
@@ -201,7 +201,7 @@ class ShowPageNoticesInfo:
     def level(self, level):
         r"""Sets the level of this ShowPageNoticesInfo.
 
-        通知等级，包含如下3种。 - error :紧急 - warn :重要 - prompt :提示
+        **参数解释** 通知等级 **取值范围** - error：紧急 - warn：重要 - prompt：提示
 
         :param level: The level of this ShowPageNoticesInfo.
         :type level: str

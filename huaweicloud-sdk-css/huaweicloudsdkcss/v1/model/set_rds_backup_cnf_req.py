@@ -22,7 +22,8 @@ class SetRDSBackupCnfReq:
         'period': 'str',
         'keepday': 'int',
         'enable': 'str',
-        'delete_auto': 'str'
+        'delete_auto': 'str',
+        'frequency': 'str'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class SetRDSBackupCnfReq:
         'period': 'period',
         'keepday': 'keepday',
         'enable': 'enable',
-        'delete_auto': 'delete_auto'
+        'delete_auto': 'delete_auto',
+        'frequency': 'frequency'
     }
 
-    def __init__(self, indices=None, prefix=None, period=None, keepday=None, enable=None, delete_auto=None):
+    def __init__(self, indices=None, prefix=None, period=None, keepday=None, enable=None, delete_auto=None, frequency=None):
         r"""SetRDSBackupCnfReq
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class SetRDSBackupCnfReq:
         :type enable: str
         :param delete_auto: 表示关闭自动创建快照策略时，是否需要清除所有自动创建的快照。 默认为“false”，表示不会删除之前已自动创建的快照。 设置为true，表示在关闭自动创建快照策略的同时，删除所有已创建的快照。
         :type delete_auto: str
+        :param frequency: 自动创建快照的执行频次。
+        :type frequency: str
         """
         
         
@@ -61,6 +65,7 @@ class SetRDSBackupCnfReq:
         self._keepday = None
         self._enable = None
         self._delete_auto = None
+        self._frequency = None
         self.discriminator = None
 
         if indices is not None:
@@ -74,6 +79,8 @@ class SetRDSBackupCnfReq:
         self.enable = enable
         if delete_auto is not None:
             self.delete_auto = delete_auto
+        if frequency is not None:
+            self.frequency = frequency
 
     @property
     def indices(self):
@@ -206,6 +213,28 @@ class SetRDSBackupCnfReq:
         :type delete_auto: str
         """
         self._delete_auto = delete_auto
+
+    @property
+    def frequency(self):
+        r"""Gets the frequency of this SetRDSBackupCnfReq.
+
+        自动创建快照的执行频次。
+
+        :return: The frequency of this SetRDSBackupCnfReq.
+        :rtype: str
+        """
+        return self._frequency
+
+    @frequency.setter
+    def frequency(self, frequency):
+        r"""Sets the frequency of this SetRDSBackupCnfReq.
+
+        自动创建快照的执行频次。
+
+        :param frequency: The frequency of this SetRDSBackupCnfReq.
+        :type frequency: str
+        """
+        self._frequency = frequency
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -18,15 +18,19 @@ class UpdateInstanceRequest:
 
     openapi_types = {
         'cluster_id': 'str',
-        'instance_id': 'str'
+        'instance_id': 'str',
+        'migrate_data': 'str',
+        'agency': 'str'
     }
 
     attribute_map = {
         'cluster_id': 'cluster_id',
-        'instance_id': 'instance_id'
+        'instance_id': 'instance_id',
+        'migrate_data': 'migrateData',
+        'agency': 'agency'
     }
 
-    def __init__(self, cluster_id=None, instance_id=None):
+    def __init__(self, cluster_id=None, instance_id=None, migrate_data=None, agency=None):
         r"""UpdateInstanceRequest
 
         The model defined in huaweicloud sdk
@@ -35,16 +39,26 @@ class UpdateInstanceRequest:
         :type cluster_id: str
         :param instance_id: 指定替换节点ID。
         :type instance_id: str
+        :param migrate_data: 是否迁移数据。
+        :type migrate_data: str
+        :param agency: 委托名称，委托给CSS服务，允许CSS调用您的其他云服务。
+        :type agency: str
         """
         
         
 
         self._cluster_id = None
         self._instance_id = None
+        self._migrate_data = None
+        self._agency = None
         self.discriminator = None
 
         self.cluster_id = cluster_id
         self.instance_id = instance_id
+        if migrate_data is not None:
+            self.migrate_data = migrate_data
+        if agency is not None:
+            self.agency = agency
 
     @property
     def cluster_id(self):
@@ -89,6 +103,50 @@ class UpdateInstanceRequest:
         :type instance_id: str
         """
         self._instance_id = instance_id
+
+    @property
+    def migrate_data(self):
+        r"""Gets the migrate_data of this UpdateInstanceRequest.
+
+        是否迁移数据。
+
+        :return: The migrate_data of this UpdateInstanceRequest.
+        :rtype: str
+        """
+        return self._migrate_data
+
+    @migrate_data.setter
+    def migrate_data(self, migrate_data):
+        r"""Sets the migrate_data of this UpdateInstanceRequest.
+
+        是否迁移数据。
+
+        :param migrate_data: The migrate_data of this UpdateInstanceRequest.
+        :type migrate_data: str
+        """
+        self._migrate_data = migrate_data
+
+    @property
+    def agency(self):
+        r"""Gets the agency of this UpdateInstanceRequest.
+
+        委托名称，委托给CSS服务，允许CSS调用您的其他云服务。
+
+        :return: The agency of this UpdateInstanceRequest.
+        :rtype: str
+        """
+        return self._agency
+
+    @agency.setter
+    def agency(self, agency):
+        r"""Sets the agency of this UpdateInstanceRequest.
+
+        委托名称，委托给CSS服务，允许CSS调用您的其他云服务。
+
+        :param agency: The agency of this UpdateInstanceRequest.
+        :type agency: str
+        """
+        self._agency = agency
 
     def to_dict(self):
         """Returns the model properties as a dict"""

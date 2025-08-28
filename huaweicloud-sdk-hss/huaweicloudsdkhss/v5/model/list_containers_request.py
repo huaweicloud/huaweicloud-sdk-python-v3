@@ -49,7 +49,7 @@ class ListContainersRequest:
         :type pod_name: str
         :param image_name: **参数解释**: 镜像名称 **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
         :type image_name: str
-        :param cluster_container: **参数解释**: 是否是集群纳管的容器 **约束限制**: 不涉及 **取值范围**:   - ture：是集群纳管的容器。   - false：不是集群纳管的容器。 **默认取值**: false 
+        :param cluster_container: **参数解释**: 是否是集群纳管的容器 **约束限制**: 不涉及 **取值范围**:   - true：是集群纳管的容器。   - false：不是集群纳管的容器。 **默认取值**: false 
         :type cluster_container: bool
         :param limit: **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
         :type limit: int
@@ -175,7 +175,7 @@ class ListContainersRequest:
     def cluster_container(self):
         r"""Gets the cluster_container of this ListContainersRequest.
 
-        **参数解释**: 是否是集群纳管的容器 **约束限制**: 不涉及 **取值范围**:   - ture：是集群纳管的容器。   - false：不是集群纳管的容器。 **默认取值**: false 
+        **参数解释**: 是否是集群纳管的容器 **约束限制**: 不涉及 **取值范围**:   - true：是集群纳管的容器。   - false：不是集群纳管的容器。 **默认取值**: false 
 
         :return: The cluster_container of this ListContainersRequest.
         :rtype: bool
@@ -186,7 +186,7 @@ class ListContainersRequest:
     def cluster_container(self, cluster_container):
         r"""Sets the cluster_container of this ListContainersRequest.
 
-        **参数解释**: 是否是集群纳管的容器 **约束限制**: 不涉及 **取值范围**:   - ture：是集群纳管的容器。   - false：不是集群纳管的容器。 **默认取值**: false 
+        **参数解释**: 是否是集群纳管的容器 **约束限制**: 不涉及 **取值范围**:   - true：是集群纳管的容器。   - false：不是集群纳管的容器。 **默认取值**: false 
 
         :param cluster_container: The cluster_container of this ListContainersRequest.
         :type cluster_container: bool

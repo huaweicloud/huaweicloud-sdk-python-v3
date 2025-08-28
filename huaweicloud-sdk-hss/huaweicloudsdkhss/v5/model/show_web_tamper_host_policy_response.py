@@ -48,23 +48,23 @@ class ShowWebTamperHostPolicyResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param protect_dir_num: 防护目录数
+        :param protect_dir_num: **参数解释**: 防护目录数 **取值范围**: 取值0-50 
         :type protect_dir_num: int
         :param protect_dir_info: 
         :type protect_dir_info: :class:`huaweicloudsdkhss.v5.WtpProtectDirResponseInfo`
-        :param enable_timing_off: 定时开关状态
+        :param enable_timing_off: **参数解释**: 定时开关状态 **取值范围**: - True ：开启定时关闭防护功能。 - False ：未开启定时关闭防护功能。 
         :type enable_timing_off: bool
         :param timing_off_config_info: 
         :type timing_off_config_info: :class:`huaweicloudsdkhss.v5.ListTimingOffConfigInfoResponseInfo`
-        :param enable_rasp_protect: 动态网页防篡改开启状态
+        :param enable_rasp_protect: **参数解释**: 动态网页防篡改开启状态 **取值范围**: - True ：开启动态网页防篡改防护。 - False ：未开启动态网页防篡改防护。 
         :type enable_rasp_protect: bool
-        :param rasp_path: rasp path
+        :param rasp_path: **参数解释**: 动态网页防篡改的Tomcat bin目录 **取值范围**: 字符长度0-512位 
         :type rasp_path: str
-        :param enable_privileged_process: 特权进程状态
+        :param enable_privileged_process: **参数解释**: 特权进程开启状态 **取值范围**: - True ：开启特权进程。 - False ：未开启特权进程。 
         :type enable_privileged_process: bool
-        :param privileged_child_status: 特权进程子进程可信状态
+        :param privileged_child_status: **参数解释**: 特权进程子进程可信状态，需先开启特权进程 **取值范围**: - True ：开启特权进程子进程可信。 - False ：未开启特权进程子进程可信。 
         :type privileged_child_status: bool
-        :param privileged_process_path_list: 特权进程路径集合
+        :param privileged_process_path_list: **参数解释**: 特权进程文件路径列表 **取值范围**: 最少0条，最多10条 
         :type privileged_process_path_list: list[str]
         :param privileged_process_info: 
         :type privileged_process_info: :class:`huaweicloudsdkhss.v5.ListPrivilegedProcessResponseInfo`
@@ -109,7 +109,7 @@ class ShowWebTamperHostPolicyResponse(SdkResponse):
     def protect_dir_num(self):
         r"""Gets the protect_dir_num of this ShowWebTamperHostPolicyResponse.
 
-        防护目录数
+        **参数解释**: 防护目录数 **取值范围**: 取值0-50 
 
         :return: The protect_dir_num of this ShowWebTamperHostPolicyResponse.
         :rtype: int
@@ -120,7 +120,7 @@ class ShowWebTamperHostPolicyResponse(SdkResponse):
     def protect_dir_num(self, protect_dir_num):
         r"""Sets the protect_dir_num of this ShowWebTamperHostPolicyResponse.
 
-        防护目录数
+        **参数解释**: 防护目录数 **取值范围**: 取值0-50 
 
         :param protect_dir_num: The protect_dir_num of this ShowWebTamperHostPolicyResponse.
         :type protect_dir_num: int
@@ -149,7 +149,7 @@ class ShowWebTamperHostPolicyResponse(SdkResponse):
     def enable_timing_off(self):
         r"""Gets the enable_timing_off of this ShowWebTamperHostPolicyResponse.
 
-        定时开关状态
+        **参数解释**: 定时开关状态 **取值范围**: - True ：开启定时关闭防护功能。 - False ：未开启定时关闭防护功能。 
 
         :return: The enable_timing_off of this ShowWebTamperHostPolicyResponse.
         :rtype: bool
@@ -160,7 +160,7 @@ class ShowWebTamperHostPolicyResponse(SdkResponse):
     def enable_timing_off(self, enable_timing_off):
         r"""Sets the enable_timing_off of this ShowWebTamperHostPolicyResponse.
 
-        定时开关状态
+        **参数解释**: 定时开关状态 **取值范围**: - True ：开启定时关闭防护功能。 - False ：未开启定时关闭防护功能。 
 
         :param enable_timing_off: The enable_timing_off of this ShowWebTamperHostPolicyResponse.
         :type enable_timing_off: bool
@@ -189,7 +189,7 @@ class ShowWebTamperHostPolicyResponse(SdkResponse):
     def enable_rasp_protect(self):
         r"""Gets the enable_rasp_protect of this ShowWebTamperHostPolicyResponse.
 
-        动态网页防篡改开启状态
+        **参数解释**: 动态网页防篡改开启状态 **取值范围**: - True ：开启动态网页防篡改防护。 - False ：未开启动态网页防篡改防护。 
 
         :return: The enable_rasp_protect of this ShowWebTamperHostPolicyResponse.
         :rtype: bool
@@ -200,7 +200,7 @@ class ShowWebTamperHostPolicyResponse(SdkResponse):
     def enable_rasp_protect(self, enable_rasp_protect):
         r"""Sets the enable_rasp_protect of this ShowWebTamperHostPolicyResponse.
 
-        动态网页防篡改开启状态
+        **参数解释**: 动态网页防篡改开启状态 **取值范围**: - True ：开启动态网页防篡改防护。 - False ：未开启动态网页防篡改防护。 
 
         :param enable_rasp_protect: The enable_rasp_protect of this ShowWebTamperHostPolicyResponse.
         :type enable_rasp_protect: bool
@@ -211,7 +211,7 @@ class ShowWebTamperHostPolicyResponse(SdkResponse):
     def rasp_path(self):
         r"""Gets the rasp_path of this ShowWebTamperHostPolicyResponse.
 
-        rasp path
+        **参数解释**: 动态网页防篡改的Tomcat bin目录 **取值范围**: 字符长度0-512位 
 
         :return: The rasp_path of this ShowWebTamperHostPolicyResponse.
         :rtype: str
@@ -222,7 +222,7 @@ class ShowWebTamperHostPolicyResponse(SdkResponse):
     def rasp_path(self, rasp_path):
         r"""Sets the rasp_path of this ShowWebTamperHostPolicyResponse.
 
-        rasp path
+        **参数解释**: 动态网页防篡改的Tomcat bin目录 **取值范围**: 字符长度0-512位 
 
         :param rasp_path: The rasp_path of this ShowWebTamperHostPolicyResponse.
         :type rasp_path: str
@@ -233,7 +233,7 @@ class ShowWebTamperHostPolicyResponse(SdkResponse):
     def enable_privileged_process(self):
         r"""Gets the enable_privileged_process of this ShowWebTamperHostPolicyResponse.
 
-        特权进程状态
+        **参数解释**: 特权进程开启状态 **取值范围**: - True ：开启特权进程。 - False ：未开启特权进程。 
 
         :return: The enable_privileged_process of this ShowWebTamperHostPolicyResponse.
         :rtype: bool
@@ -244,7 +244,7 @@ class ShowWebTamperHostPolicyResponse(SdkResponse):
     def enable_privileged_process(self, enable_privileged_process):
         r"""Sets the enable_privileged_process of this ShowWebTamperHostPolicyResponse.
 
-        特权进程状态
+        **参数解释**: 特权进程开启状态 **取值范围**: - True ：开启特权进程。 - False ：未开启特权进程。 
 
         :param enable_privileged_process: The enable_privileged_process of this ShowWebTamperHostPolicyResponse.
         :type enable_privileged_process: bool
@@ -255,7 +255,7 @@ class ShowWebTamperHostPolicyResponse(SdkResponse):
     def privileged_child_status(self):
         r"""Gets the privileged_child_status of this ShowWebTamperHostPolicyResponse.
 
-        特权进程子进程可信状态
+        **参数解释**: 特权进程子进程可信状态，需先开启特权进程 **取值范围**: - True ：开启特权进程子进程可信。 - False ：未开启特权进程子进程可信。 
 
         :return: The privileged_child_status of this ShowWebTamperHostPolicyResponse.
         :rtype: bool
@@ -266,7 +266,7 @@ class ShowWebTamperHostPolicyResponse(SdkResponse):
     def privileged_child_status(self, privileged_child_status):
         r"""Sets the privileged_child_status of this ShowWebTamperHostPolicyResponse.
 
-        特权进程子进程可信状态
+        **参数解释**: 特权进程子进程可信状态，需先开启特权进程 **取值范围**: - True ：开启特权进程子进程可信。 - False ：未开启特权进程子进程可信。 
 
         :param privileged_child_status: The privileged_child_status of this ShowWebTamperHostPolicyResponse.
         :type privileged_child_status: bool
@@ -277,7 +277,7 @@ class ShowWebTamperHostPolicyResponse(SdkResponse):
     def privileged_process_path_list(self):
         r"""Gets the privileged_process_path_list of this ShowWebTamperHostPolicyResponse.
 
-        特权进程路径集合
+        **参数解释**: 特权进程文件路径列表 **取值范围**: 最少0条，最多10条 
 
         :return: The privileged_process_path_list of this ShowWebTamperHostPolicyResponse.
         :rtype: list[str]
@@ -288,7 +288,7 @@ class ShowWebTamperHostPolicyResponse(SdkResponse):
     def privileged_process_path_list(self, privileged_process_path_list):
         r"""Sets the privileged_process_path_list of this ShowWebTamperHostPolicyResponse.
 
-        特权进程路径集合
+        **参数解释**: 特权进程文件路径列表 **取值范围**: 最少0条，最多10条 
 
         :param privileged_process_path_list: The privileged_process_path_list of this ShowWebTamperHostPolicyResponse.
         :type privileged_process_path_list: list[str]

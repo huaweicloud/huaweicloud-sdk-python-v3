@@ -41,19 +41,19 @@ class MemberCheckJobResultItem:
 
         The model defined in huaweicloud sdk
 
-        :param name: 参数解释：检查项名称
+        :param name: **参数解释**：检查项名称。  **取值范围**：不涉及
         :type name: str
-        :param reason: 参数解释：异常原因
+        :param reason: **参数解释**：异常原因。  **取值范围**：不涉及
         :type reason: str
-        :param severity: 参数解释：重要级别，分为Major(严重)和Tips(提示)
+        :param severity: **参数解释**：重要级别，分为Major(严重)和Tips(提示)。  **取值范围**：不涉及
         :type severity: str
-        :param subject: 参数解释：检查类别，config表示配置检查
+        :param subject: **参数解释**：检查类别，config表示配置检查。  **取值范围**：不涉及
         :type subject: str
-        :param job_id: 参数解释：任务ID。
+        :param job_id: **参数解释**：任务ID。  **取值范围**：不涉及
         :type job_id: str
-        :param reason_template: 参数解释：异常原因模板
+        :param reason_template: **参数解释**：异常原因模板。  **取值范围**：不涉及
         :type reason_template: str
-        :param reason_params: 参数解释：异常结果变量参数表，用于结合异常原因模板动态生成异常原因
+        :param reason_params: **参数解释**：异常结果变量参数表，用于结合异常原因模板动态生成异常原因。  **取值范围**：不涉及
         :type reason_params: list[str]
         """
         
@@ -87,7 +87,7 @@ class MemberCheckJobResultItem:
     def name(self):
         r"""Gets the name of this MemberCheckJobResultItem.
 
-        参数解释：检查项名称
+        **参数解释**：检查项名称。  **取值范围**：不涉及
 
         :return: The name of this MemberCheckJobResultItem.
         :rtype: str
@@ -98,7 +98,7 @@ class MemberCheckJobResultItem:
     def name(self, name):
         r"""Sets the name of this MemberCheckJobResultItem.
 
-        参数解释：检查项名称
+        **参数解释**：检查项名称。  **取值范围**：不涉及
 
         :param name: The name of this MemberCheckJobResultItem.
         :type name: str
@@ -109,7 +109,7 @@ class MemberCheckJobResultItem:
     def reason(self):
         r"""Gets the reason of this MemberCheckJobResultItem.
 
-        参数解释：异常原因
+        **参数解释**：异常原因。  **取值范围**：不涉及
 
         :return: The reason of this MemberCheckJobResultItem.
         :rtype: str
@@ -120,7 +120,7 @@ class MemberCheckJobResultItem:
     def reason(self, reason):
         r"""Sets the reason of this MemberCheckJobResultItem.
 
-        参数解释：异常原因
+        **参数解释**：异常原因。  **取值范围**：不涉及
 
         :param reason: The reason of this MemberCheckJobResultItem.
         :type reason: str
@@ -131,7 +131,7 @@ class MemberCheckJobResultItem:
     def severity(self):
         r"""Gets the severity of this MemberCheckJobResultItem.
 
-        参数解释：重要级别，分为Major(严重)和Tips(提示)
+        **参数解释**：重要级别，分为Major(严重)和Tips(提示)。  **取值范围**：不涉及
 
         :return: The severity of this MemberCheckJobResultItem.
         :rtype: str
@@ -142,7 +142,7 @@ class MemberCheckJobResultItem:
     def severity(self, severity):
         r"""Sets the severity of this MemberCheckJobResultItem.
 
-        参数解释：重要级别，分为Major(严重)和Tips(提示)
+        **参数解释**：重要级别，分为Major(严重)和Tips(提示)。  **取值范围**：不涉及
 
         :param severity: The severity of this MemberCheckJobResultItem.
         :type severity: str
@@ -153,7 +153,7 @@ class MemberCheckJobResultItem:
     def subject(self):
         r"""Gets the subject of this MemberCheckJobResultItem.
 
-        参数解释：检查类别，config表示配置检查
+        **参数解释**：检查类别，config表示配置检查。  **取值范围**：不涉及
 
         :return: The subject of this MemberCheckJobResultItem.
         :rtype: str
@@ -164,7 +164,7 @@ class MemberCheckJobResultItem:
     def subject(self, subject):
         r"""Sets the subject of this MemberCheckJobResultItem.
 
-        参数解释：检查类别，config表示配置检查
+        **参数解释**：检查类别，config表示配置检查。  **取值范围**：不涉及
 
         :param subject: The subject of this MemberCheckJobResultItem.
         :type subject: str
@@ -175,7 +175,7 @@ class MemberCheckJobResultItem:
     def job_id(self):
         r"""Gets the job_id of this MemberCheckJobResultItem.
 
-        参数解释：任务ID。
+        **参数解释**：任务ID。  **取值范围**：不涉及
 
         :return: The job_id of this MemberCheckJobResultItem.
         :rtype: str
@@ -186,7 +186,7 @@ class MemberCheckJobResultItem:
     def job_id(self, job_id):
         r"""Sets the job_id of this MemberCheckJobResultItem.
 
-        参数解释：任务ID。
+        **参数解释**：任务ID。  **取值范围**：不涉及
 
         :param job_id: The job_id of this MemberCheckJobResultItem.
         :type job_id: str
@@ -197,7 +197,7 @@ class MemberCheckJobResultItem:
     def reason_template(self):
         r"""Gets the reason_template of this MemberCheckJobResultItem.
 
-        参数解释：异常原因模板
+        **参数解释**：异常原因模板。  **取值范围**：不涉及
 
         :return: The reason_template of this MemberCheckJobResultItem.
         :rtype: str
@@ -208,7 +208,7 @@ class MemberCheckJobResultItem:
     def reason_template(self, reason_template):
         r"""Sets the reason_template of this MemberCheckJobResultItem.
 
-        参数解释：异常原因模板
+        **参数解释**：异常原因模板。  **取值范围**：不涉及
 
         :param reason_template: The reason_template of this MemberCheckJobResultItem.
         :type reason_template: str
@@ -219,7 +219,7 @@ class MemberCheckJobResultItem:
     def reason_params(self):
         r"""Gets the reason_params of this MemberCheckJobResultItem.
 
-        参数解释：异常结果变量参数表，用于结合异常原因模板动态生成异常原因
+        **参数解释**：异常结果变量参数表，用于结合异常原因模板动态生成异常原因。  **取值范围**：不涉及
 
         :return: The reason_params of this MemberCheckJobResultItem.
         :rtype: list[str]
@@ -230,7 +230,7 @@ class MemberCheckJobResultItem:
     def reason_params(self, reason_params):
         r"""Sets the reason_params of this MemberCheckJobResultItem.
 
-        参数解释：异常结果变量参数表，用于结合异常原因模板动态生成异常原因
+        **参数解释**：异常结果变量参数表，用于结合异常原因模板动态生成异常原因。  **取值范围**：不涉及
 
         :param reason_params: The reason_params of this MemberCheckJobResultItem.
         :type reason_params: list[str]

@@ -31,9 +31,9 @@ class CreatePoolSlowStartOption:
 
         The model defined in huaweicloud sdk
 
-        :param enable: 参数解释：慢启动的开关。  取值范围： - true：开启。 - false：关闭。  默认取值：false。 
+        :param enable: **参数解释**：慢启动的开关。  **约束限制**：不涉及  **取值范围**： - true：开启。 - false：关闭。  **默认取值**：false 
         :type enable: bool
-        :param duration: 参数解释：慢启动的持续时间。  取值范围：30-1200，单位：秒。  默认取值：30。
+        :param duration: **参数解释**：慢启动的持续时间。  **约束限制**：不涉及  **取值范围**：30-1200，单位：秒。  **默认取值**：30
         :type duration: int
         """
         
@@ -52,7 +52,7 @@ class CreatePoolSlowStartOption:
     def enable(self):
         r"""Gets the enable of this CreatePoolSlowStartOption.
 
-        参数解释：慢启动的开关。  取值范围： - true：开启。 - false：关闭。  默认取值：false。 
+        **参数解释**：慢启动的开关。  **约束限制**：不涉及  **取值范围**： - true：开启。 - false：关闭。  **默认取值**：false 
 
         :return: The enable of this CreatePoolSlowStartOption.
         :rtype: bool
@@ -63,7 +63,7 @@ class CreatePoolSlowStartOption:
     def enable(self, enable):
         r"""Sets the enable of this CreatePoolSlowStartOption.
 
-        参数解释：慢启动的开关。  取值范围： - true：开启。 - false：关闭。  默认取值：false。 
+        **参数解释**：慢启动的开关。  **约束限制**：不涉及  **取值范围**： - true：开启。 - false：关闭。  **默认取值**：false 
 
         :param enable: The enable of this CreatePoolSlowStartOption.
         :type enable: bool
@@ -74,7 +74,7 @@ class CreatePoolSlowStartOption:
     def duration(self):
         r"""Gets the duration of this CreatePoolSlowStartOption.
 
-        参数解释：慢启动的持续时间。  取值范围：30-1200，单位：秒。  默认取值：30。
+        **参数解释**：慢启动的持续时间。  **约束限制**：不涉及  **取值范围**：30-1200，单位：秒。  **默认取值**：30
 
         :return: The duration of this CreatePoolSlowStartOption.
         :rtype: int
@@ -85,7 +85,7 @@ class CreatePoolSlowStartOption:
     def duration(self, duration):
         r"""Sets the duration of this CreatePoolSlowStartOption.
 
-        参数解释：慢启动的持续时间。  取值范围：30-1200，单位：秒。  默认取值：30。
+        **参数解释**：慢启动的持续时间。  **约束限制**：不涉及  **取值范围**：30-1200，单位：秒。  **默认取值**：30
 
         :param duration: The duration of this CreatePoolSlowStartOption.
         :type duration: int

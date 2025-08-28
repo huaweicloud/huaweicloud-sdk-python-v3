@@ -31,9 +31,9 @@ class RecycleBinPolicy:
 
         The model defined in huaweicloud sdk
 
-        :param recycle_threshold_hour: 允许进入回收站的最小创建时间，不足此时长则删除时不满足进入回收站的条件。
+        :param recycle_threshold_hour: **参数解释**：允许进入回收站的最小创建时间，不足此时长则删除时不满足进入回收站的条件。  **取值范围**：不涉及
         :type recycle_threshold_hour: int
-        :param retention_hour: 进入回收站的最大保留时长。
+        :param retention_hour: **参数解释**：进入回收站的最大保留时长。  **取值范围**：不涉及
         :type retention_hour: int
         """
         
@@ -52,7 +52,7 @@ class RecycleBinPolicy:
     def recycle_threshold_hour(self):
         r"""Gets the recycle_threshold_hour of this RecycleBinPolicy.
 
-        允许进入回收站的最小创建时间，不足此时长则删除时不满足进入回收站的条件。
+        **参数解释**：允许进入回收站的最小创建时间，不足此时长则删除时不满足进入回收站的条件。  **取值范围**：不涉及
 
         :return: The recycle_threshold_hour of this RecycleBinPolicy.
         :rtype: int
@@ -63,7 +63,7 @@ class RecycleBinPolicy:
     def recycle_threshold_hour(self, recycle_threshold_hour):
         r"""Sets the recycle_threshold_hour of this RecycleBinPolicy.
 
-        允许进入回收站的最小创建时间，不足此时长则删除时不满足进入回收站的条件。
+        **参数解释**：允许进入回收站的最小创建时间，不足此时长则删除时不满足进入回收站的条件。  **取值范围**：不涉及
 
         :param recycle_threshold_hour: The recycle_threshold_hour of this RecycleBinPolicy.
         :type recycle_threshold_hour: int
@@ -74,7 +74,7 @@ class RecycleBinPolicy:
     def retention_hour(self):
         r"""Gets the retention_hour of this RecycleBinPolicy.
 
-        进入回收站的最大保留时长。
+        **参数解释**：进入回收站的最大保留时长。  **取值范围**：不涉及
 
         :return: The retention_hour of this RecycleBinPolicy.
         :rtype: int
@@ -85,7 +85,7 @@ class RecycleBinPolicy:
     def retention_hour(self, retention_hour):
         r"""Sets the retention_hour of this RecycleBinPolicy.
 
-        进入回收站的最大保留时长。
+        **参数解释**：进入回收站的最大保留时长。  **取值范围**：不涉及
 
         :param retention_hour: The retention_hour of this RecycleBinPolicy.
         :type retention_hour: int

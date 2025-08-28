@@ -35,13 +35,13 @@ class WtpProtectDirResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param protect_dir_list: 防护目录列表
+        :param protect_dir_list: **参数解释**: 防护目录列表 **取值范围**: 最少0条，最多50条 
         :type protect_dir_list: list[:class:`huaweicloudsdkhss.v5.WtpProtectHostDirResponseInfo`]
         :param exclue_file_type: 排除文件类型
         :type exclue_file_type: str
-        :param exclude_file_type: 排除文件类型
+        :param exclude_file_type: **参数解释**: 排除文件类型 **取值范围**: 字符长度0-512位 
         :type exclude_file_type: str
-        :param protect_mode: 防护模式，包含如下4种   - recovery ：恢复模式   - alarm ：告警模式
+        :param protect_mode: **参数解释**: 防护模式 **取值范围**: - recovery ：拦截模式。 - alarm ：告警模式。 
         :type protect_mode: str
         """
         
@@ -66,7 +66,7 @@ class WtpProtectDirResponseInfo:
     def protect_dir_list(self):
         r"""Gets the protect_dir_list of this WtpProtectDirResponseInfo.
 
-        防护目录列表
+        **参数解释**: 防护目录列表 **取值范围**: 最少0条，最多50条 
 
         :return: The protect_dir_list of this WtpProtectDirResponseInfo.
         :rtype: list[:class:`huaweicloudsdkhss.v5.WtpProtectHostDirResponseInfo`]
@@ -77,7 +77,7 @@ class WtpProtectDirResponseInfo:
     def protect_dir_list(self, protect_dir_list):
         r"""Sets the protect_dir_list of this WtpProtectDirResponseInfo.
 
-        防护目录列表
+        **参数解释**: 防护目录列表 **取值范围**: 最少0条，最多50条 
 
         :param protect_dir_list: The protect_dir_list of this WtpProtectDirResponseInfo.
         :type protect_dir_list: list[:class:`huaweicloudsdkhss.v5.WtpProtectHostDirResponseInfo`]
@@ -110,7 +110,7 @@ class WtpProtectDirResponseInfo:
     def exclude_file_type(self):
         r"""Gets the exclude_file_type of this WtpProtectDirResponseInfo.
 
-        排除文件类型
+        **参数解释**: 排除文件类型 **取值范围**: 字符长度0-512位 
 
         :return: The exclude_file_type of this WtpProtectDirResponseInfo.
         :rtype: str
@@ -121,7 +121,7 @@ class WtpProtectDirResponseInfo:
     def exclude_file_type(self, exclude_file_type):
         r"""Sets the exclude_file_type of this WtpProtectDirResponseInfo.
 
-        排除文件类型
+        **参数解释**: 排除文件类型 **取值范围**: 字符长度0-512位 
 
         :param exclude_file_type: The exclude_file_type of this WtpProtectDirResponseInfo.
         :type exclude_file_type: str
@@ -132,7 +132,7 @@ class WtpProtectDirResponseInfo:
     def protect_mode(self):
         r"""Gets the protect_mode of this WtpProtectDirResponseInfo.
 
-        防护模式，包含如下4种   - recovery ：恢复模式   - alarm ：告警模式
+        **参数解释**: 防护模式 **取值范围**: - recovery ：拦截模式。 - alarm ：告警模式。 
 
         :return: The protect_mode of this WtpProtectDirResponseInfo.
         :rtype: str
@@ -143,7 +143,7 @@ class WtpProtectDirResponseInfo:
     def protect_mode(self, protect_mode):
         r"""Sets the protect_mode of this WtpProtectDirResponseInfo.
 
-        防护模式，包含如下4种   - recovery ：恢复模式   - alarm ：告警模式
+        **参数解释**: 防护模式 **取值范围**: - recovery ：拦截模式。 - alarm ：告警模式。 
 
         :param protect_mode: The protect_mode of this WtpProtectDirResponseInfo.
         :type protect_mode: str

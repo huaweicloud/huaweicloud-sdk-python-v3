@@ -347,7 +347,6 @@ from huaweicloudsdkelb.v3.model.tag import Tag
 from huaweicloudsdkelb.v3.model.target_loadbalancer_param import TargetLoadbalancerParam
 from huaweicloudsdkelb.v3.model.traffic_limit_config import TrafficLimitConfig
 from huaweicloudsdkelb.v3.model.traffic_mirror_config import TrafficMirrorConfig
-from huaweicloudsdkelb.v3.model.upadate_ip_group_ip_option import UpadateIpGroupIpOption
 from huaweicloudsdkelb.v3.model.update_az_affinity import UpdateAzAffinity
 from huaweicloudsdkelb.v3.model.update_certificate_option import UpdateCertificateOption
 from huaweicloudsdkelb.v3.model.update_certificate_request import UpdateCertificateRequest
@@ -360,6 +359,7 @@ from huaweicloudsdkelb.v3.model.update_health_monitor_request_body import Update
 from huaweicloudsdkelb.v3.model.update_health_monitor_response import UpdateHealthMonitorResponse
 from huaweicloudsdkelb.v3.model.update_insert_header_config import UpdateInsertHeaderConfig
 from huaweicloudsdkelb.v3.model.update_insert_headers_config import UpdateInsertHeadersConfig
+from huaweicloudsdkelb.v3.model.update_ip_group_ip_option import UpdateIpGroupIpOption
 from huaweicloudsdkelb.v3.model.update_ip_group_option import UpdateIpGroupOption
 from huaweicloudsdkelb.v3.model.update_ip_group_request import UpdateIpGroupRequest
 from huaweicloudsdkelb.v3.model.update_ip_group_request_body import UpdateIpGroupRequestBody

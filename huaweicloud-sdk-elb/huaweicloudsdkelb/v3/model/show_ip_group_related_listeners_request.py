@@ -29,7 +29,7 @@ class ShowIpGroupRelatedListenersRequest:
 
         The model defined in huaweicloud sdk
 
-        :param ipgroup_id: 参数解释：IP地址组ID。
+        :param ipgroup_id: **参数解释**：IP地址组ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type ipgroup_id: str
         """
         
@@ -44,7 +44,7 @@ class ShowIpGroupRelatedListenersRequest:
     def ipgroup_id(self):
         r"""Gets the ipgroup_id of this ShowIpGroupRelatedListenersRequest.
 
-        参数解释：IP地址组ID。
+        **参数解释**：IP地址组ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The ipgroup_id of this ShowIpGroupRelatedListenersRequest.
         :rtype: str
@@ -55,7 +55,7 @@ class ShowIpGroupRelatedListenersRequest:
     def ipgroup_id(self, ipgroup_id):
         r"""Sets the ipgroup_id of this ShowIpGroupRelatedListenersRequest.
 
-        参数解释：IP地址组ID。
+        **参数解释**：IP地址组ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param ipgroup_id: The ipgroup_id of this ShowIpGroupRelatedListenersRequest.
         :type ipgroup_id: str

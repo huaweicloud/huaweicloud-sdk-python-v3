@@ -57,7 +57,7 @@ class PasswordPolicy:
         :type minimum_password_length: int
         :param password_reuse_prevention: 密码不能与历史密码重复次数。
         :type password_reuse_prevention: int
-        :param password_not_username_or_invert: 密码是否可以是用户名或用户名的反序。
+        :param password_not_username_or_invert: 密码是否可以是用户名或用户名的反序。默认值为true，为true时表示密码不可以是用户名或用户名的反序。
         :type password_not_username_or_invert: bool
         :param password_requirements: 设置密码必须包含的字符要求。
         :type password_requirements: str
@@ -208,7 +208,7 @@ class PasswordPolicy:
     def password_not_username_or_invert(self):
         r"""Gets the password_not_username_or_invert of this PasswordPolicy.
 
-        密码是否可以是用户名或用户名的反序。
+        密码是否可以是用户名或用户名的反序。默认值为true，为true时表示密码不可以是用户名或用户名的反序。
 
         :return: The password_not_username_or_invert of this PasswordPolicy.
         :rtype: bool
@@ -219,7 +219,7 @@ class PasswordPolicy:
     def password_not_username_or_invert(self, password_not_username_or_invert):
         r"""Sets the password_not_username_or_invert of this PasswordPolicy.
 
-        密码是否可以是用户名或用户名的反序。
+        密码是否可以是用户名或用户名的反序。默认值为true，为true时表示密码不可以是用户名或用户名的反序。
 
         :param password_not_username_or_invert: The password_not_username_or_invert of this PasswordPolicy.
         :type password_not_username_or_invert: bool

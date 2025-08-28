@@ -18,7 +18,7 @@ class UpdateIpListOption:
 
     openapi_types = {
         'name': 'str',
-        'ip_list': 'list[UpadateIpGroupIpOption]',
+        'ip_list': 'list[UpdateIpGroupIpOption]',
         'description': 'str'
     }
 
@@ -33,11 +33,11 @@ class UpdateIpListOption:
 
         The model defined in huaweicloud sdk
 
-        :param name: 参数解释：IP地址组的名称
+        :param name: **参数解释**：IP地址组的名称。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type name: str
-        :param ip_list: 参数解释：IP地址组中包含的IP列表。
-        :type ip_list: list[:class:`huaweicloudsdkelb.v3.UpadateIpGroupIpOption`]
-        :param description: 参数解释：IP地址组的描述信息
+        :param ip_list: **参数解释**：IP地址组中包含的IP列表。 只支持添加新的IP地址到IP地址组的IP列表中，或更新已有IP地址的描述。不会删除或修改ip_list中已有的IP地址。  **约束限制**：不涉及
+        :type ip_list: list[:class:`huaweicloudsdkelb.v3.UpdateIpGroupIpOption`]
+        :param description: **参数解释**：备注信息。  **约束限制**：不涉及  **取值范围**：长度为0-255个字符。  **默认取值**：不涉及
         :type description: str
         """
         
@@ -59,7 +59,7 @@ class UpdateIpListOption:
     def name(self):
         r"""Gets the name of this UpdateIpListOption.
 
-        参数解释：IP地址组的名称
+        **参数解释**：IP地址组的名称。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The name of this UpdateIpListOption.
         :rtype: str
@@ -70,7 +70,7 @@ class UpdateIpListOption:
     def name(self, name):
         r"""Sets the name of this UpdateIpListOption.
 
-        参数解释：IP地址组的名称
+        **参数解释**：IP地址组的名称。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param name: The name of this UpdateIpListOption.
         :type name: str
@@ -81,10 +81,10 @@ class UpdateIpListOption:
     def ip_list(self):
         r"""Gets the ip_list of this UpdateIpListOption.
 
-        参数解释：IP地址组中包含的IP列表。
+        **参数解释**：IP地址组中包含的IP列表。 只支持添加新的IP地址到IP地址组的IP列表中，或更新已有IP地址的描述。不会删除或修改ip_list中已有的IP地址。  **约束限制**：不涉及
 
         :return: The ip_list of this UpdateIpListOption.
-        :rtype: list[:class:`huaweicloudsdkelb.v3.UpadateIpGroupIpOption`]
+        :rtype: list[:class:`huaweicloudsdkelb.v3.UpdateIpGroupIpOption`]
         """
         return self._ip_list
 
@@ -92,10 +92,10 @@ class UpdateIpListOption:
     def ip_list(self, ip_list):
         r"""Sets the ip_list of this UpdateIpListOption.
 
-        参数解释：IP地址组中包含的IP列表。
+        **参数解释**：IP地址组中包含的IP列表。 只支持添加新的IP地址到IP地址组的IP列表中，或更新已有IP地址的描述。不会删除或修改ip_list中已有的IP地址。  **约束限制**：不涉及
 
         :param ip_list: The ip_list of this UpdateIpListOption.
-        :type ip_list: list[:class:`huaweicloudsdkelb.v3.UpadateIpGroupIpOption`]
+        :type ip_list: list[:class:`huaweicloudsdkelb.v3.UpdateIpGroupIpOption`]
         """
         self._ip_list = ip_list
 
@@ -103,7 +103,7 @@ class UpdateIpListOption:
     def description(self):
         r"""Gets the description of this UpdateIpListOption.
 
-        参数解释：IP地址组的描述信息
+        **参数解释**：备注信息。  **约束限制**：不涉及  **取值范围**：长度为0-255个字符。  **默认取值**：不涉及
 
         :return: The description of this UpdateIpListOption.
         :rtype: str
@@ -114,7 +114,7 @@ class UpdateIpListOption:
     def description(self, description):
         r"""Sets the description of this UpdateIpListOption.
 
-        参数解释：IP地址组的描述信息
+        **参数解释**：备注信息。  **约束限制**：不涉及  **取值范围**：长度为0-255个字符。  **默认取值**：不涉及
 
         :param description: The description of this UpdateIpListOption.
         :type description: str

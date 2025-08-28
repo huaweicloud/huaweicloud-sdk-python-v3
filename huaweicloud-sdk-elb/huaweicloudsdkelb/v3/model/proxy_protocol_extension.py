@@ -33,9 +33,9 @@ class ProxyProtocolExtension:
 
         The model defined in huaweicloud sdk
 
-        :param vip_address: ipv4 vip地址
+        :param vip_address: **参数解释**：ipv4 vip地址。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type vip_address: str
-        :param ipv6_vip_address: ipv6 vip地址
+        :param ipv6_vip_address: **参数解释**：ipv6 vip地址。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type ipv6_vip_address: str
         :param extension: 
         :type extension: :class:`huaweicloudsdkelb.v3.Extension`
@@ -58,7 +58,7 @@ class ProxyProtocolExtension:
     def vip_address(self):
         r"""Gets the vip_address of this ProxyProtocolExtension.
 
-        ipv4 vip地址
+        **参数解释**：ipv4 vip地址。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The vip_address of this ProxyProtocolExtension.
         :rtype: str
@@ -69,7 +69,7 @@ class ProxyProtocolExtension:
     def vip_address(self, vip_address):
         r"""Sets the vip_address of this ProxyProtocolExtension.
 
-        ipv4 vip地址
+        **参数解释**：ipv4 vip地址。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param vip_address: The vip_address of this ProxyProtocolExtension.
         :type vip_address: str
@@ -80,7 +80,7 @@ class ProxyProtocolExtension:
     def ipv6_vip_address(self):
         r"""Gets the ipv6_vip_address of this ProxyProtocolExtension.
 
-        ipv6 vip地址
+        **参数解释**：ipv6 vip地址。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The ipv6_vip_address of this ProxyProtocolExtension.
         :rtype: str
@@ -91,7 +91,7 @@ class ProxyProtocolExtension:
     def ipv6_vip_address(self, ipv6_vip_address):
         r"""Sets the ipv6_vip_address of this ProxyProtocolExtension.
 
-        ipv6 vip地址
+        **参数解释**：ipv6 vip地址。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param ipv6_vip_address: The ipv6_vip_address of this ProxyProtocolExtension.
         :type ipv6_vip_address: str

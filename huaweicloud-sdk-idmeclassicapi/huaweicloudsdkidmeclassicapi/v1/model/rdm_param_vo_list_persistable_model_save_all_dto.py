@@ -31,9 +31,9 @@ class RDMParamVOListPersistableModelSaveAllDTO:
 
         The model defined in huaweicloud sdk
 
-        :param application_id: **参数解释**：  应用ID。  **约束限制**：  不涉及。  **取值范围**：  由英文字母和数字组成，且长度为32个字符。  **默认取值**：  不涉及。 
+        :param application_id: **参数解释**：  应用ID。  **约束限制**：  不涉及。  **取值范围**：  由英文字母和数字组成，且长度为32个字符。  **默认取值**：  不涉及。
         :type application_id: str
-        :param params: **参数解释：**  请求参数对象。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param params: **参数解释：**  请求参数对象。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
         :type params: list[:class:`huaweicloudsdkidmeclassicapi.v1.PersistableModelSaveAllDTO`]
         """
         
@@ -45,14 +45,13 @@ class RDMParamVOListPersistableModelSaveAllDTO:
 
         if application_id is not None:
             self.application_id = application_id
-        if params is not None:
-            self.params = params
+        self.params = params
 
     @property
     def application_id(self):
         r"""Gets the application_id of this RDMParamVOListPersistableModelSaveAllDTO.
 
-        **参数解释**：  应用ID。  **约束限制**：  不涉及。  **取值范围**：  由英文字母和数字组成，且长度为32个字符。  **默认取值**：  不涉及。 
+        **参数解释**：  应用ID。  **约束限制**：  不涉及。  **取值范围**：  由英文字母和数字组成，且长度为32个字符。  **默认取值**：  不涉及。
 
         :return: The application_id of this RDMParamVOListPersistableModelSaveAllDTO.
         :rtype: str
@@ -63,7 +62,7 @@ class RDMParamVOListPersistableModelSaveAllDTO:
     def application_id(self, application_id):
         r"""Sets the application_id of this RDMParamVOListPersistableModelSaveAllDTO.
 
-        **参数解释**：  应用ID。  **约束限制**：  不涉及。  **取值范围**：  由英文字母和数字组成，且长度为32个字符。  **默认取值**：  不涉及。 
+        **参数解释**：  应用ID。  **约束限制**：  不涉及。  **取值范围**：  由英文字母和数字组成，且长度为32个字符。  **默认取值**：  不涉及。
 
         :param application_id: The application_id of this RDMParamVOListPersistableModelSaveAllDTO.
         :type application_id: str
@@ -74,7 +73,7 @@ class RDMParamVOListPersistableModelSaveAllDTO:
     def params(self):
         r"""Gets the params of this RDMParamVOListPersistableModelSaveAllDTO.
 
-        **参数解释：**  请求参数对象。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  请求参数对象。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :return: The params of this RDMParamVOListPersistableModelSaveAllDTO.
         :rtype: list[:class:`huaweicloudsdkidmeclassicapi.v1.PersistableModelSaveAllDTO`]
@@ -85,7 +84,7 @@ class RDMParamVOListPersistableModelSaveAllDTO:
     def params(self, params):
         r"""Sets the params of this RDMParamVOListPersistableModelSaveAllDTO.
 
-        **参数解释：**  请求参数对象。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  请求参数对象。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :param params: The params of this RDMParamVOListPersistableModelSaveAllDTO.
         :type params: list[:class:`huaweicloudsdkidmeclassicapi.v1.PersistableModelSaveAllDTO`]

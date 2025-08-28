@@ -17,28 +17,35 @@ class UpdateClusterNameReq:
     sensitive_list = []
 
     openapi_types = {
-        'display_name': 'str'
+        'display_name': 'str',
+        'desc': 'str'
     }
 
     attribute_map = {
-        'display_name': 'display_name'
+        'display_name': 'display_name',
+        'desc': 'desc'
     }
 
-    def __init__(self, display_name=None):
+    def __init__(self, display_name=None, desc=None):
         r"""UpdateClusterNameReq
 
         The model defined in huaweicloud sdk
 
         :param display_name: 修改后集群名称。
         :type display_name: str
+        :param desc: 修改后集群描述。
+        :type desc: str
         """
         
         
 
         self._display_name = None
+        self._desc = None
         self.discriminator = None
 
         self.display_name = display_name
+        if desc is not None:
+            self.desc = desc
 
     @property
     def display_name(self):
@@ -61,6 +68,28 @@ class UpdateClusterNameReq:
         :type display_name: str
         """
         self._display_name = display_name
+
+    @property
+    def desc(self):
+        r"""Gets the desc of this UpdateClusterNameReq.
+
+        修改后集群描述。
+
+        :return: The desc of this UpdateClusterNameReq.
+        :rtype: str
+        """
+        return self._desc
+
+    @desc.setter
+    def desc(self, desc):
+        r"""Sets the desc of this UpdateClusterNameReq.
+
+        修改后集群描述。
+
+        :param desc: The desc of this UpdateClusterNameReq.
+        :type desc: str
+        """
+        self._desc = desc
 
     def to_dict(self):
         """Returns the model properties as a dict"""

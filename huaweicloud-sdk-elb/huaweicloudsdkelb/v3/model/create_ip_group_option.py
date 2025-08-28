@@ -37,15 +37,15 @@ class CreateIpGroupOption:
 
         The model defined in huaweicloud sdk
 
-        :param project_id: 参数解释：IP地址组所在的项目ID。
+        :param project_id: **参数解释**：项目ID。获取方式请参见[获取项目ID](elb_fl_0008.xml)。  **约束限制**：不涉及  **取值范围**：长度为32个字符，由小写字母和数字组成。  **默认取值**：不涉及  &gt; 该字段实际无效，最终使用url中的project_id。
         :type project_id: str
-        :param description: 参数解释：IP地址组的描述。
+        :param description: **参数解释**：IP地址组的描述。  **约束限制**：不涉及  **取值范围**：长度为0-255个字符。  **默认取值**：不涉及
         :type description: str
-        :param name: 参数解释：IP地址组的名称。
+        :param name: **参数解释**：IP地址组的名称。  **约束限制**：不涉及  **取值范围**：长度为0-255个字符。  **默认取值**：不涉及
         :type name: str
-        :param ip_list: 参数解释：IP地址组中包含的IP或网段列表。[]表示任意IP。
+        :param ip_list: **参数解释**：IP地址组中的IP列表，支持IPv4和IPv6类型地址。  **约束限制**：不涉及
         :type ip_list: list[:class:`huaweicloudsdkelb.v3.CreateIpGroupIpOption`]
-        :param enterprise_project_id: 参数解释：IP地址组所在的企业项目ID。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
+        :param enterprise_project_id: **参数解释**：资源所属的企业项目ID。创建时不传则资源属于default企业项目，返回enterprise_project_id&#x3D;\&quot;0\&quot;。  **约束限制**：不能传入空字符串\&quot;\&quot;、\&quot;0\&quot;或不存在的企业项目ID。  **取值范围**：不涉及  **默认取值**：\&quot;0\&quot;  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
         :type enterprise_project_id: str
         """
         
@@ -72,7 +72,7 @@ class CreateIpGroupOption:
     def project_id(self):
         r"""Gets the project_id of this CreateIpGroupOption.
 
-        参数解释：IP地址组所在的项目ID。
+        **参数解释**：项目ID。获取方式请参见[获取项目ID](elb_fl_0008.xml)。  **约束限制**：不涉及  **取值范围**：长度为32个字符，由小写字母和数字组成。  **默认取值**：不涉及  > 该字段实际无效，最终使用url中的project_id。
 
         :return: The project_id of this CreateIpGroupOption.
         :rtype: str
@@ -83,7 +83,7 @@ class CreateIpGroupOption:
     def project_id(self, project_id):
         r"""Sets the project_id of this CreateIpGroupOption.
 
-        参数解释：IP地址组所在的项目ID。
+        **参数解释**：项目ID。获取方式请参见[获取项目ID](elb_fl_0008.xml)。  **约束限制**：不涉及  **取值范围**：长度为32个字符，由小写字母和数字组成。  **默认取值**：不涉及  > 该字段实际无效，最终使用url中的project_id。
 
         :param project_id: The project_id of this CreateIpGroupOption.
         :type project_id: str
@@ -94,7 +94,7 @@ class CreateIpGroupOption:
     def description(self):
         r"""Gets the description of this CreateIpGroupOption.
 
-        参数解释：IP地址组的描述。
+        **参数解释**：IP地址组的描述。  **约束限制**：不涉及  **取值范围**：长度为0-255个字符。  **默认取值**：不涉及
 
         :return: The description of this CreateIpGroupOption.
         :rtype: str
@@ -105,7 +105,7 @@ class CreateIpGroupOption:
     def description(self, description):
         r"""Sets the description of this CreateIpGroupOption.
 
-        参数解释：IP地址组的描述。
+        **参数解释**：IP地址组的描述。  **约束限制**：不涉及  **取值范围**：长度为0-255个字符。  **默认取值**：不涉及
 
         :param description: The description of this CreateIpGroupOption.
         :type description: str
@@ -116,7 +116,7 @@ class CreateIpGroupOption:
     def name(self):
         r"""Gets the name of this CreateIpGroupOption.
 
-        参数解释：IP地址组的名称。
+        **参数解释**：IP地址组的名称。  **约束限制**：不涉及  **取值范围**：长度为0-255个字符。  **默认取值**：不涉及
 
         :return: The name of this CreateIpGroupOption.
         :rtype: str
@@ -127,7 +127,7 @@ class CreateIpGroupOption:
     def name(self, name):
         r"""Sets the name of this CreateIpGroupOption.
 
-        参数解释：IP地址组的名称。
+        **参数解释**：IP地址组的名称。  **约束限制**：不涉及  **取值范围**：长度为0-255个字符。  **默认取值**：不涉及
 
         :param name: The name of this CreateIpGroupOption.
         :type name: str
@@ -138,7 +138,7 @@ class CreateIpGroupOption:
     def ip_list(self):
         r"""Gets the ip_list of this CreateIpGroupOption.
 
-        参数解释：IP地址组中包含的IP或网段列表。[]表示任意IP。
+        **参数解释**：IP地址组中的IP列表，支持IPv4和IPv6类型地址。  **约束限制**：不涉及
 
         :return: The ip_list of this CreateIpGroupOption.
         :rtype: list[:class:`huaweicloudsdkelb.v3.CreateIpGroupIpOption`]
@@ -149,7 +149,7 @@ class CreateIpGroupOption:
     def ip_list(self, ip_list):
         r"""Sets the ip_list of this CreateIpGroupOption.
 
-        参数解释：IP地址组中包含的IP或网段列表。[]表示任意IP。
+        **参数解释**：IP地址组中的IP列表，支持IPv4和IPv6类型地址。  **约束限制**：不涉及
 
         :param ip_list: The ip_list of this CreateIpGroupOption.
         :type ip_list: list[:class:`huaweicloudsdkelb.v3.CreateIpGroupIpOption`]
@@ -160,7 +160,7 @@ class CreateIpGroupOption:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this CreateIpGroupOption.
 
-        参数解释：IP地址组所在的企业项目ID。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
+        **参数解释**：资源所属的企业项目ID。创建时不传则资源属于default企业项目，返回enterprise_project_id=\"0\"。  **约束限制**：不能传入空字符串\"\"、\"0\"或不存在的企业项目ID。  **取值范围**：不涉及  **默认取值**：\"0\"  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
 
         :return: The enterprise_project_id of this CreateIpGroupOption.
         :rtype: str
@@ -171,7 +171,7 @@ class CreateIpGroupOption:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this CreateIpGroupOption.
 
-        参数解释：IP地址组所在的企业项目ID。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
+        **参数解释**：资源所属的企业项目ID。创建时不传则资源属于default企业项目，返回enterprise_project_id=\"0\"。  **约束限制**：不能传入空字符串\"\"、\"0\"或不存在的企业项目ID。  **取值范围**：不涉及  **默认取值**：\"0\"  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
 
         :param enterprise_project_id: The enterprise_project_id of this CreateIpGroupOption.
         :type enterprise_project_id: str

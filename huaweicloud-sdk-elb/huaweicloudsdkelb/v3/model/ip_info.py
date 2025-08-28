@@ -31,9 +31,9 @@ class IpInfo:
 
         The model defined in huaweicloud sdk
 
-        :param ip: 参数解释：IP地址组中的IP地址。  [不支持IPv6，请勿设置为IPv6地址。](tag:dt)
+        :param ip: **参数解释**：IP地址组中的IP地址。  **取值范围**：IP地址段格式为ip-ip，例如192.168.1.2-192.168.2.253或者2001:0DB8:02de::0e12-2001:0DB8:02de::0e13，终止IP需要大于起始IP。  [不支持IPv6，请勿设置为IPv6地址。](tag:dt)
         :type ip: str
-        :param description: 参数解释：IP地址组中ip的备注信息。
+        :param description: **参数解释**：IP地址组中ip的备注信息。  **取值范围**：长度为0-255个字符。
         :type description: str
         """
         
@@ -50,7 +50,7 @@ class IpInfo:
     def ip(self):
         r"""Gets the ip of this IpInfo.
 
-        参数解释：IP地址组中的IP地址。  [不支持IPv6，请勿设置为IPv6地址。](tag:dt)
+        **参数解释**：IP地址组中的IP地址。  **取值范围**：IP地址段格式为ip-ip，例如192.168.1.2-192.168.2.253或者2001:0DB8:02de::0e12-2001:0DB8:02de::0e13，终止IP需要大于起始IP。  [不支持IPv6，请勿设置为IPv6地址。](tag:dt)
 
         :return: The ip of this IpInfo.
         :rtype: str
@@ -61,7 +61,7 @@ class IpInfo:
     def ip(self, ip):
         r"""Sets the ip of this IpInfo.
 
-        参数解释：IP地址组中的IP地址。  [不支持IPv6，请勿设置为IPv6地址。](tag:dt)
+        **参数解释**：IP地址组中的IP地址。  **取值范围**：IP地址段格式为ip-ip，例如192.168.1.2-192.168.2.253或者2001:0DB8:02de::0e12-2001:0DB8:02de::0e13，终止IP需要大于起始IP。  [不支持IPv6，请勿设置为IPv6地址。](tag:dt)
 
         :param ip: The ip of this IpInfo.
         :type ip: str
@@ -72,7 +72,7 @@ class IpInfo:
     def description(self):
         r"""Gets the description of this IpInfo.
 
-        参数解释：IP地址组中ip的备注信息。
+        **参数解释**：IP地址组中ip的备注信息。  **取值范围**：长度为0-255个字符。
 
         :return: The description of this IpInfo.
         :rtype: str
@@ -83,7 +83,7 @@ class IpInfo:
     def description(self, description):
         r"""Sets the description of this IpInfo.
 
-        参数解释：IP地址组中ip的备注信息。
+        **参数解释**：IP地址组中ip的备注信息。  **取值范围**：长度为0-255个字符。
 
         :param description: The description of this IpInfo.
         :type description: str

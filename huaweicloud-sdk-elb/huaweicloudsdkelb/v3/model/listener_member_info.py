@@ -31,9 +31,9 @@ class ListenerMemberInfo:
 
         The model defined in huaweicloud sdk
 
-        :param listener_id: 后端服务器关联的监听器id。
+        :param listener_id: **参数解释**：后端服务器关联的监听器ID。  **取值范围**：不涉及
         :type listener_id: str
-        :param operating_status: 后端服务器的健康状态。  取值： - ONLINE：后端服务器正常。 - NO_MONITOR：后端服务器所在的服务器组没有健康检查器。 - OFFLINE：后端服务器关联的ECS服务器不存在或已关机或服务异常。
+        :param operating_status: **参数解释**：后端服务器的健康状态。  **取值范围**： - ONLINE：后端服务器正常。 - NO_MONITOR：后端服务器所在的服务器组没有健康检查器。 - OFFLINE：后端服务器关联的ECS服务器不存在或已关机或服务异常。
         :type operating_status: str
         """
         
@@ -50,7 +50,7 @@ class ListenerMemberInfo:
     def listener_id(self):
         r"""Gets the listener_id of this ListenerMemberInfo.
 
-        后端服务器关联的监听器id。
+        **参数解释**：后端服务器关联的监听器ID。  **取值范围**：不涉及
 
         :return: The listener_id of this ListenerMemberInfo.
         :rtype: str
@@ -61,7 +61,7 @@ class ListenerMemberInfo:
     def listener_id(self, listener_id):
         r"""Sets the listener_id of this ListenerMemberInfo.
 
-        后端服务器关联的监听器id。
+        **参数解释**：后端服务器关联的监听器ID。  **取值范围**：不涉及
 
         :param listener_id: The listener_id of this ListenerMemberInfo.
         :type listener_id: str
@@ -72,7 +72,7 @@ class ListenerMemberInfo:
     def operating_status(self):
         r"""Gets the operating_status of this ListenerMemberInfo.
 
-        后端服务器的健康状态。  取值： - ONLINE：后端服务器正常。 - NO_MONITOR：后端服务器所在的服务器组没有健康检查器。 - OFFLINE：后端服务器关联的ECS服务器不存在或已关机或服务异常。
+        **参数解释**：后端服务器的健康状态。  **取值范围**： - ONLINE：后端服务器正常。 - NO_MONITOR：后端服务器所在的服务器组没有健康检查器。 - OFFLINE：后端服务器关联的ECS服务器不存在或已关机或服务异常。
 
         :return: The operating_status of this ListenerMemberInfo.
         :rtype: str
@@ -83,7 +83,7 @@ class ListenerMemberInfo:
     def operating_status(self, operating_status):
         r"""Sets the operating_status of this ListenerMemberInfo.
 
-        后端服务器的健康状态。  取值： - ONLINE：后端服务器正常。 - NO_MONITOR：后端服务器所在的服务器组没有健康检查器。 - OFFLINE：后端服务器关联的ECS服务器不存在或已关机或服务异常。
+        **参数解释**：后端服务器的健康状态。  **取值范围**： - ONLINE：后端服务器正常。 - NO_MONITOR：后端服务器所在的服务器组没有健康检查器。 - OFFLINE：后端服务器关联的ECS服务器不存在或已关机或服务异常。
 
         :param operating_status: The operating_status of this ListenerMemberInfo.
         :type operating_status: str

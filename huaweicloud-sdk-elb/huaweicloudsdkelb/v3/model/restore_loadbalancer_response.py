@@ -34,11 +34,11 @@ class RestoreLoadbalancerResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param request_id: 请求ID。 注：自动生成 。
+        :param request_id: **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
         :type request_id: str
-        :param type: ELB实例的类型，v2或者v3。
+        :param type: **参数解释**：ELB实例的类型。  **取值范围**： - v2：共享型ELB。 - v3：独享型ELB。
         :type type: str
-        :param job_id: 还原负载均衡器的任务ID。
+        :param job_id: **参数解释**：还原负载均衡器的任务ID。  **取值范围**：不涉及
         :type job_id: str
         """
         
@@ -60,7 +60,7 @@ class RestoreLoadbalancerResponse(SdkResponse):
     def request_id(self):
         r"""Gets the request_id of this RestoreLoadbalancerResponse.
 
-        请求ID。 注：自动生成 。
+        **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
 
         :return: The request_id of this RestoreLoadbalancerResponse.
         :rtype: str
@@ -71,7 +71,7 @@ class RestoreLoadbalancerResponse(SdkResponse):
     def request_id(self, request_id):
         r"""Sets the request_id of this RestoreLoadbalancerResponse.
 
-        请求ID。 注：自动生成 。
+        **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
 
         :param request_id: The request_id of this RestoreLoadbalancerResponse.
         :type request_id: str
@@ -82,7 +82,7 @@ class RestoreLoadbalancerResponse(SdkResponse):
     def type(self):
         r"""Gets the type of this RestoreLoadbalancerResponse.
 
-        ELB实例的类型，v2或者v3。
+        **参数解释**：ELB实例的类型。  **取值范围**： - v2：共享型ELB。 - v3：独享型ELB。
 
         :return: The type of this RestoreLoadbalancerResponse.
         :rtype: str
@@ -93,7 +93,7 @@ class RestoreLoadbalancerResponse(SdkResponse):
     def type(self, type):
         r"""Sets the type of this RestoreLoadbalancerResponse.
 
-        ELB实例的类型，v2或者v3。
+        **参数解释**：ELB实例的类型。  **取值范围**： - v2：共享型ELB。 - v3：独享型ELB。
 
         :param type: The type of this RestoreLoadbalancerResponse.
         :type type: str
@@ -104,7 +104,7 @@ class RestoreLoadbalancerResponse(SdkResponse):
     def job_id(self):
         r"""Gets the job_id of this RestoreLoadbalancerResponse.
 
-        还原负载均衡器的任务ID。
+        **参数解释**：还原负载均衡器的任务ID。  **取值范围**：不涉及
 
         :return: The job_id of this RestoreLoadbalancerResponse.
         :rtype: str
@@ -115,7 +115,7 @@ class RestoreLoadbalancerResponse(SdkResponse):
     def job_id(self, job_id):
         r"""Sets the job_id of this RestoreLoadbalancerResponse.
 
-        还原负载均衡器的任务ID。
+        **参数解释**：还原负载均衡器的任务ID。  **取值范围**：不涉及
 
         :param job_id: The job_id of this RestoreLoadbalancerResponse.
         :type job_id: str

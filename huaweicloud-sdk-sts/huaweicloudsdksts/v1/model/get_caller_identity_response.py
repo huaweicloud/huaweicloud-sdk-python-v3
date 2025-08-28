@@ -34,7 +34,7 @@ class GetCallerIdentityResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param account_id: 华为云账号ID。
+        :param account_id: 账号ID。
         :type account_id: str
         :param principal_urn: 主体URN。
         :type principal_urn: str
@@ -60,7 +60,7 @@ class GetCallerIdentityResponse(SdkResponse):
     def account_id(self):
         r"""Gets the account_id of this GetCallerIdentityResponse.
 
-        华为云账号ID。
+        账号ID。
 
         :return: The account_id of this GetCallerIdentityResponse.
         :rtype: str
@@ -71,7 +71,7 @@ class GetCallerIdentityResponse(SdkResponse):
     def account_id(self, account_id):
         r"""Sets the account_id of this GetCallerIdentityResponse.
 
-        华为云账号ID。
+        账号ID。
 
         :param account_id: The account_id of this GetCallerIdentityResponse.
         :type account_id: str

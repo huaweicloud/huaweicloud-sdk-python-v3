@@ -1,0 +1,347 @@
+# coding: utf-8
+
+import six
+
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
+
+
+class DocumentTaskInfo:
+
+    """
+    Attributes:
+      openapi_types (dict): The key is attribute name
+                            and the value is attribute type.
+      attribute_map (dict): The key is attribute name
+                            and the value is json key in definition.
+    """
+    sensitive_list = []
+
+    openapi_types = {
+        'task_id': 'str',
+        'task_status': 'str',
+        'task_process': 'str',
+        'task_result': 'str',
+        'fail_reason': 'str',
+        'create_time': 'str',
+        'begin_time': 'str',
+        'end_time': 'str',
+        'update_time': 'str'
+    }
+
+    attribute_map = {
+        'task_id': 'task_id',
+        'task_status': 'task_status',
+        'task_process': 'task_process',
+        'task_result': 'task_result',
+        'fail_reason': 'fail_reason',
+        'create_time': 'create_time',
+        'begin_time': 'begin_time',
+        'end_time': 'end_time',
+        'update_time': 'update_time'
+    }
+
+    def __init__(self, task_id=None, task_status=None, task_process=None, task_result=None, fail_reason=None, create_time=None, begin_time=None, end_time=None, update_time=None):
+        r"""DocumentTaskInfo
+
+        The model defined in huaweicloud sdk
+
+        :param task_id: 任务ID
+        :type task_id: str
+        :param task_status: 任务状态
+        :type task_status: str
+        :param task_process: 任务进度
+        :type task_process: str
+        :param task_result: 任务结果
+        :type task_result: str
+        :param fail_reason: 失败原因
+        :type fail_reason: str
+        :param create_time: 任务创建时间。格式遵循：RFC 3339 如\&quot;2021-01-10T08:43:17Z\&quot;。
+        :type create_time: str
+        :param begin_time: 任务开始时间。格式遵循：RFC 3339 如\&quot;2021-01-10T08:43:17Z\&quot;。
+        :type begin_time: str
+        :param end_time: 任务结束时间。格式遵循：RFC 3339 如\&quot;2021-01-10T08:43:17Z\&quot;。
+        :type end_time: str
+        :param update_time: 任务更新时间。格式遵循：RFC 3339 如\&quot;2021-01-10T08:43:17Z\&quot;。
+        :type update_time: str
+        """
+        
+        
+
+        self._task_id = None
+        self._task_status = None
+        self._task_process = None
+        self._task_result = None
+        self._fail_reason = None
+        self._create_time = None
+        self._begin_time = None
+        self._end_time = None
+        self._update_time = None
+        self.discriminator = None
+
+        if task_id is not None:
+            self.task_id = task_id
+        if task_status is not None:
+            self.task_status = task_status
+        if task_process is not None:
+            self.task_process = task_process
+        if task_result is not None:
+            self.task_result = task_result
+        if fail_reason is not None:
+            self.fail_reason = fail_reason
+        if create_time is not None:
+            self.create_time = create_time
+        if begin_time is not None:
+            self.begin_time = begin_time
+        if end_time is not None:
+            self.end_time = end_time
+        if update_time is not None:
+            self.update_time = update_time
+
+    @property
+    def task_id(self):
+        r"""Gets the task_id of this DocumentTaskInfo.
+
+        任务ID
+
+        :return: The task_id of this DocumentTaskInfo.
+        :rtype: str
+        """
+        return self._task_id
+
+    @task_id.setter
+    def task_id(self, task_id):
+        r"""Sets the task_id of this DocumentTaskInfo.
+
+        任务ID
+
+        :param task_id: The task_id of this DocumentTaskInfo.
+        :type task_id: str
+        """
+        self._task_id = task_id
+
+    @property
+    def task_status(self):
+        r"""Gets the task_status of this DocumentTaskInfo.
+
+        任务状态
+
+        :return: The task_status of this DocumentTaskInfo.
+        :rtype: str
+        """
+        return self._task_status
+
+    @task_status.setter
+    def task_status(self, task_status):
+        r"""Sets the task_status of this DocumentTaskInfo.
+
+        任务状态
+
+        :param task_status: The task_status of this DocumentTaskInfo.
+        :type task_status: str
+        """
+        self._task_status = task_status
+
+    @property
+    def task_process(self):
+        r"""Gets the task_process of this DocumentTaskInfo.
+
+        任务进度
+
+        :return: The task_process of this DocumentTaskInfo.
+        :rtype: str
+        """
+        return self._task_process
+
+    @task_process.setter
+    def task_process(self, task_process):
+        r"""Sets the task_process of this DocumentTaskInfo.
+
+        任务进度
+
+        :param task_process: The task_process of this DocumentTaskInfo.
+        :type task_process: str
+        """
+        self._task_process = task_process
+
+    @property
+    def task_result(self):
+        r"""Gets the task_result of this DocumentTaskInfo.
+
+        任务结果
+
+        :return: The task_result of this DocumentTaskInfo.
+        :rtype: str
+        """
+        return self._task_result
+
+    @task_result.setter
+    def task_result(self, task_result):
+        r"""Sets the task_result of this DocumentTaskInfo.
+
+        任务结果
+
+        :param task_result: The task_result of this DocumentTaskInfo.
+        :type task_result: str
+        """
+        self._task_result = task_result
+
+    @property
+    def fail_reason(self):
+        r"""Gets the fail_reason of this DocumentTaskInfo.
+
+        失败原因
+
+        :return: The fail_reason of this DocumentTaskInfo.
+        :rtype: str
+        """
+        return self._fail_reason
+
+    @fail_reason.setter
+    def fail_reason(self, fail_reason):
+        r"""Sets the fail_reason of this DocumentTaskInfo.
+
+        失败原因
+
+        :param fail_reason: The fail_reason of this DocumentTaskInfo.
+        :type fail_reason: str
+        """
+        self._fail_reason = fail_reason
+
+    @property
+    def create_time(self):
+        r"""Gets the create_time of this DocumentTaskInfo.
+
+        任务创建时间。格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
+
+        :return: The create_time of this DocumentTaskInfo.
+        :rtype: str
+        """
+        return self._create_time
+
+    @create_time.setter
+    def create_time(self, create_time):
+        r"""Sets the create_time of this DocumentTaskInfo.
+
+        任务创建时间。格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
+
+        :param create_time: The create_time of this DocumentTaskInfo.
+        :type create_time: str
+        """
+        self._create_time = create_time
+
+    @property
+    def begin_time(self):
+        r"""Gets the begin_time of this DocumentTaskInfo.
+
+        任务开始时间。格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
+
+        :return: The begin_time of this DocumentTaskInfo.
+        :rtype: str
+        """
+        return self._begin_time
+
+    @begin_time.setter
+    def begin_time(self, begin_time):
+        r"""Sets the begin_time of this DocumentTaskInfo.
+
+        任务开始时间。格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
+
+        :param begin_time: The begin_time of this DocumentTaskInfo.
+        :type begin_time: str
+        """
+        self._begin_time = begin_time
+
+    @property
+    def end_time(self):
+        r"""Gets the end_time of this DocumentTaskInfo.
+
+        任务结束时间。格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
+
+        :return: The end_time of this DocumentTaskInfo.
+        :rtype: str
+        """
+        return self._end_time
+
+    @end_time.setter
+    def end_time(self, end_time):
+        r"""Sets the end_time of this DocumentTaskInfo.
+
+        任务结束时间。格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
+
+        :param end_time: The end_time of this DocumentTaskInfo.
+        :type end_time: str
+        """
+        self._end_time = end_time
+
+    @property
+    def update_time(self):
+        r"""Gets the update_time of this DocumentTaskInfo.
+
+        任务更新时间。格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
+
+        :return: The update_time of this DocumentTaskInfo.
+        :rtype: str
+        """
+        return self._update_time
+
+    @update_time.setter
+    def update_time(self, update_time):
+        r"""Sets the update_time of this DocumentTaskInfo.
+
+        任务更新时间。格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
+
+        :param update_time: The update_time of this DocumentTaskInfo.
+        :type update_time: str
+        """
+        self._update_time = update_time
+
+    def to_dict(self):
+        """Returns the model properties as a dict"""
+        result = {}
+
+        for attr, _ in six.iteritems(self.openapi_types):
+            value = getattr(self, attr)
+            if isinstance(value, list):
+                result[attr] = list(map(
+                    lambda x: x.to_dict() if hasattr(x, "to_dict") else x,
+                    value
+                ))
+            elif hasattr(value, "to_dict"):
+                result[attr] = value.to_dict()
+            elif isinstance(value, dict):
+                result[attr] = dict(map(
+                    lambda item: (item[0], item[1].to_dict())
+                    if hasattr(item[1], "to_dict") else item,
+                    value.items()
+                ))
+            else:
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
+
+        return result
+
+    def to_str(self):
+        """Returns the string representation of the model"""
+        import simplejson as json
+        if six.PY2:
+            import sys
+            reload(sys)
+            sys.setdefaultencoding("utf-8")
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
+
+    def __repr__(self):
+        """For `print`"""
+        return self.to_str()
+
+    def __eq__(self, other):
+        """Returns true if both objects are equal"""
+        if not isinstance(other, DocumentTaskInfo):
+            return False
+
+        return self.__dict__ == other.__dict__
+
+    def __ne__(self, other):
+        """Returns true if both objects are not equal"""
+        return not self == other

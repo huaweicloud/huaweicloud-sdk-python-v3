@@ -55,7 +55,7 @@ class VideoScriptBaseInfo:
         :type script_description: str
         :param model_asset_id: 数字人模型资产ID，可以从资产库中查询。
         :type model_asset_id: str
-        :param model_asset_type: 数字人模型类型。  * HUMAN_MODEL_2D：分身数字人 * HUMAN_MODEL_3D：3D数字人
+        :param model_asset_type: 数字人模型类型。  * HUMAN_MODEL_2D：分身数字人
         :type model_asset_type: str
         :param script_cover_url: 剧本封面下载url。
         :type script_cover_url: str
@@ -194,7 +194,7 @@ class VideoScriptBaseInfo:
     def model_asset_type(self):
         r"""Gets the model_asset_type of this VideoScriptBaseInfo.
 
-        数字人模型类型。  * HUMAN_MODEL_2D：分身数字人 * HUMAN_MODEL_3D：3D数字人
+        数字人模型类型。  * HUMAN_MODEL_2D：分身数字人
 
         :return: The model_asset_type of this VideoScriptBaseInfo.
         :rtype: str
@@ -205,7 +205,7 @@ class VideoScriptBaseInfo:
     def model_asset_type(self, model_asset_type):
         r"""Sets the model_asset_type of this VideoScriptBaseInfo.
 
-        数字人模型类型。  * HUMAN_MODEL_2D：分身数字人 * HUMAN_MODEL_3D：3D数字人
+        数字人模型类型。  * HUMAN_MODEL_2D：分身数字人
 
         :param model_asset_type: The model_asset_type of this VideoScriptBaseInfo.
         :type model_asset_type: str

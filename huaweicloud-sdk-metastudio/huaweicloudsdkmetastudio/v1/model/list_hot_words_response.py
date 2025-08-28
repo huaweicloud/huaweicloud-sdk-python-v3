@@ -38,9 +38,9 @@ class ListHotWordsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param offset: 页面起始页,从0开始
+        :param offset: 与第一条数据的偏移量
         :type offset: int
-        :param limit: 每页显示的条目数量
+        :param limit: 页面大小
         :type limit: int
         :param count: 总数量
         :type count: int
@@ -74,7 +74,7 @@ class ListHotWordsResponse(SdkResponse):
     def offset(self):
         r"""Gets the offset of this ListHotWordsResponse.
 
-        页面起始页,从0开始
+        与第一条数据的偏移量
 
         :return: The offset of this ListHotWordsResponse.
         :rtype: int
@@ -85,7 +85,7 @@ class ListHotWordsResponse(SdkResponse):
     def offset(self, offset):
         r"""Sets the offset of this ListHotWordsResponse.
 
-        页面起始页,从0开始
+        与第一条数据的偏移量
 
         :param offset: The offset of this ListHotWordsResponse.
         :type offset: int
@@ -96,7 +96,7 @@ class ListHotWordsResponse(SdkResponse):
     def limit(self):
         r"""Gets the limit of this ListHotWordsResponse.
 
-        每页显示的条目数量
+        页面大小
 
         :return: The limit of this ListHotWordsResponse.
         :rtype: int
@@ -107,7 +107,7 @@ class ListHotWordsResponse(SdkResponse):
     def limit(self, limit):
         r"""Sets the limit of this ListHotWordsResponse.
 
-        每页显示的条目数量
+        页面大小
 
         :param limit: The limit of this ListHotWordsResponse.
         :type limit: int

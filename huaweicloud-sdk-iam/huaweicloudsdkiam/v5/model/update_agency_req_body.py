@@ -31,9 +31,9 @@ class UpdateAgencyReqBody:
 
         The model defined in huaweicloud sdk
 
-        :param max_session_duration: 委托或信任委托最大会话时长，默认为3600秒。
+        :param max_session_duration: 信任委托最大会话时长，默认为3600秒，取值范围为[3600,43200]。
         :type max_session_duration: int
-        :param description: 委托或信任委托描述信息。
+        :param description: 信任委托描述信息。
         :type description: str
         """
         
@@ -52,7 +52,7 @@ class UpdateAgencyReqBody:
     def max_session_duration(self):
         r"""Gets the max_session_duration of this UpdateAgencyReqBody.
 
-        委托或信任委托最大会话时长，默认为3600秒。
+        信任委托最大会话时长，默认为3600秒，取值范围为[3600,43200]。
 
         :return: The max_session_duration of this UpdateAgencyReqBody.
         :rtype: int
@@ -63,7 +63,7 @@ class UpdateAgencyReqBody:
     def max_session_duration(self, max_session_duration):
         r"""Sets the max_session_duration of this UpdateAgencyReqBody.
 
-        委托或信任委托最大会话时长，默认为3600秒。
+        信任委托最大会话时长，默认为3600秒，取值范围为[3600,43200]。
 
         :param max_session_duration: The max_session_duration of this UpdateAgencyReqBody.
         :type max_session_duration: int
@@ -74,7 +74,7 @@ class UpdateAgencyReqBody:
     def description(self):
         r"""Gets the description of this UpdateAgencyReqBody.
 
-        委托或信任委托描述信息。
+        信任委托描述信息。
 
         :return: The description of this UpdateAgencyReqBody.
         :rtype: str
@@ -85,7 +85,7 @@ class UpdateAgencyReqBody:
     def description(self, description):
         r"""Sets the description of this UpdateAgencyReqBody.
 
-        委托或信任委托描述信息。
+        信任委托描述信息。
 
         :param description: The description of this UpdateAgencyReqBody.
         :type description: str

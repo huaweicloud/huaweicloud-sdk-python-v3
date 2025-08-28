@@ -196,6 +196,8 @@ from huaweicloudsdklts.v2.model.list_log_groups_request import ListLogGroupsRequ
 from huaweicloudsdklts.v2.model.list_log_groups_response import ListLogGroupsResponse
 from huaweicloudsdklts.v2.model.list_log_histogram_request import ListLogHistogramRequest
 from huaweicloudsdklts.v2.model.list_log_histogram_response import ListLogHistogramResponse
+from huaweicloudsdklts.v2.model.list_log_stream_index_request import ListLogStreamIndexRequest
+from huaweicloudsdklts.v2.model.list_log_stream_index_response import ListLogStreamIndexResponse
 from huaweicloudsdklts.v2.model.list_log_stream_request import ListLogStreamRequest
 from huaweicloudsdklts.v2.model.list_log_stream_response import ListLogStreamResponse
 from huaweicloudsdklts.v2.model.list_log_streams_request import ListLogStreamsRequest

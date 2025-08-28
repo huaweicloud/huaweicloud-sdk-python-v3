@@ -31,7 +31,7 @@ class CreateL7RuleRequest:
 
         The model defined in huaweicloud sdk
 
-        :param l7policy_id: 参数解释：转发策略ID。
+        :param l7policy_id: **参数解释**：转发策略ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type l7policy_id: str
         :param body: Body of the CreateL7RuleRequest
         :type body: :class:`huaweicloudsdkelb.v3.CreateL7RuleRequestBody`
@@ -51,7 +51,7 @@ class CreateL7RuleRequest:
     def l7policy_id(self):
         r"""Gets the l7policy_id of this CreateL7RuleRequest.
 
-        参数解释：转发策略ID。
+        **参数解释**：转发策略ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The l7policy_id of this CreateL7RuleRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class CreateL7RuleRequest:
     def l7policy_id(self, l7policy_id):
         r"""Sets the l7policy_id of this CreateL7RuleRequest.
 
-        参数解释：转发策略ID。
+        **参数解释**：转发策略ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param l7policy_id: The l7policy_id of this CreateL7RuleRequest.
         :type l7policy_id: str

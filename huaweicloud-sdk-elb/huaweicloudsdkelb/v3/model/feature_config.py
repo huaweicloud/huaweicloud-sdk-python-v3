@@ -49,27 +49,27 @@ class FeatureConfig:
 
         The model defined in huaweicloud sdk
 
-        :param id: 参数解释：配置的ID。
+        :param id: **参数解释**：配置的ID。  **取值范围**：不涉及
         :type id: str
-        :param created_at: 参数解释：创建时间。
+        :param created_at: **参数解释**：创建时间。  **取值范围**：不涉及
         :type created_at: str
-        :param updated_at: 参数解释：更新时间。
+        :param updated_at: **参数解释**：更新时间。  **取值范围**：不涉及
         :type updated_at: str
-        :param service: 参数解释：所属服务，固定ELB。
+        :param service: **参数解释**：所属服务，固定ELB。  **取值范围**：不涉及
         :type service: str
-        :param tenant_id: 参数解释：租户ID，含义同project_id。
+        :param tenant_id: **参数解释**：租户ID，含义同project_id。  **取值范围**：不涉及
         :type tenant_id: str
-        :param feature: 参数解释：特性名称。
+        :param feature: **参数解释**：特性名称。  **取值范围**：不涉及
         :type feature: str
-        :param switch: 参数解释：特性配置启用开关，表示当前配置是否生效。  取值范围： - true：特性配置已生效。 - false: 特性配置未生效。
+        :param switch: **参数解释**：特性配置启用开关，表示当前配置是否生效。  **取值范围**： - true：特性配置已生效。 - false: 特性配置未生效。
         :type switch: bool
-        :param type: 参数解释：特性配置值(value字段)的类型，如：INT，表示整型。
+        :param type: **参数解释**：特性配置值(value字段)的类型，如：INT，表示整型。  **取值范围**：不涉及
         :type type: str
-        :param value: 参数解释：特性配置值。如开关类型的特性配置取值true/false，表示特性开启关闭；配额类型的特性配置取值整数，表示限制配额。
+        :param value: **参数解释**：特性配置值。如开关类型的特性配置取值true/false，表示特性开启关闭；配额类型的特性配置取值整数，表示限制配额。  **取值范围**：不涉及
         :type value: str
-        :param description: 参数解释：特性配置描述。
+        :param description: **参数解释**：特性配置描述。  **取值范围**：不涉及
         :type description: str
-        :param caller: 参数解释：配置创建者。
+        :param caller: **参数解释**：配置创建者。  **取值范围**：不涉及
         :type caller: str
         """
         
@@ -104,7 +104,7 @@ class FeatureConfig:
     def id(self):
         r"""Gets the id of this FeatureConfig.
 
-        参数解释：配置的ID。
+        **参数解释**：配置的ID。  **取值范围**：不涉及
 
         :return: The id of this FeatureConfig.
         :rtype: str
@@ -115,7 +115,7 @@ class FeatureConfig:
     def id(self, id):
         r"""Sets the id of this FeatureConfig.
 
-        参数解释：配置的ID。
+        **参数解释**：配置的ID。  **取值范围**：不涉及
 
         :param id: The id of this FeatureConfig.
         :type id: str
@@ -126,7 +126,7 @@ class FeatureConfig:
     def created_at(self):
         r"""Gets the created_at of this FeatureConfig.
 
-        参数解释：创建时间。
+        **参数解释**：创建时间。  **取值范围**：不涉及
 
         :return: The created_at of this FeatureConfig.
         :rtype: str
@@ -137,7 +137,7 @@ class FeatureConfig:
     def created_at(self, created_at):
         r"""Sets the created_at of this FeatureConfig.
 
-        参数解释：创建时间。
+        **参数解释**：创建时间。  **取值范围**：不涉及
 
         :param created_at: The created_at of this FeatureConfig.
         :type created_at: str
@@ -148,7 +148,7 @@ class FeatureConfig:
     def updated_at(self):
         r"""Gets the updated_at of this FeatureConfig.
 
-        参数解释：更新时间。
+        **参数解释**：更新时间。  **取值范围**：不涉及
 
         :return: The updated_at of this FeatureConfig.
         :rtype: str
@@ -159,7 +159,7 @@ class FeatureConfig:
     def updated_at(self, updated_at):
         r"""Sets the updated_at of this FeatureConfig.
 
-        参数解释：更新时间。
+        **参数解释**：更新时间。  **取值范围**：不涉及
 
         :param updated_at: The updated_at of this FeatureConfig.
         :type updated_at: str
@@ -170,7 +170,7 @@ class FeatureConfig:
     def service(self):
         r"""Gets the service of this FeatureConfig.
 
-        参数解释：所属服务，固定ELB。
+        **参数解释**：所属服务，固定ELB。  **取值范围**：不涉及
 
         :return: The service of this FeatureConfig.
         :rtype: str
@@ -181,7 +181,7 @@ class FeatureConfig:
     def service(self, service):
         r"""Sets the service of this FeatureConfig.
 
-        参数解释：所属服务，固定ELB。
+        **参数解释**：所属服务，固定ELB。  **取值范围**：不涉及
 
         :param service: The service of this FeatureConfig.
         :type service: str
@@ -192,7 +192,7 @@ class FeatureConfig:
     def tenant_id(self):
         r"""Gets the tenant_id of this FeatureConfig.
 
-        参数解释：租户ID，含义同project_id。
+        **参数解释**：租户ID，含义同project_id。  **取值范围**：不涉及
 
         :return: The tenant_id of this FeatureConfig.
         :rtype: str
@@ -203,7 +203,7 @@ class FeatureConfig:
     def tenant_id(self, tenant_id):
         r"""Sets the tenant_id of this FeatureConfig.
 
-        参数解释：租户ID，含义同project_id。
+        **参数解释**：租户ID，含义同project_id。  **取值范围**：不涉及
 
         :param tenant_id: The tenant_id of this FeatureConfig.
         :type tenant_id: str
@@ -214,7 +214,7 @@ class FeatureConfig:
     def feature(self):
         r"""Gets the feature of this FeatureConfig.
 
-        参数解释：特性名称。
+        **参数解释**：特性名称。  **取值范围**：不涉及
 
         :return: The feature of this FeatureConfig.
         :rtype: str
@@ -225,7 +225,7 @@ class FeatureConfig:
     def feature(self, feature):
         r"""Sets the feature of this FeatureConfig.
 
-        参数解释：特性名称。
+        **参数解释**：特性名称。  **取值范围**：不涉及
 
         :param feature: The feature of this FeatureConfig.
         :type feature: str
@@ -236,7 +236,7 @@ class FeatureConfig:
     def switch(self):
         r"""Gets the switch of this FeatureConfig.
 
-        参数解释：特性配置启用开关，表示当前配置是否生效。  取值范围： - true：特性配置已生效。 - false: 特性配置未生效。
+        **参数解释**：特性配置启用开关，表示当前配置是否生效。  **取值范围**： - true：特性配置已生效。 - false: 特性配置未生效。
 
         :return: The switch of this FeatureConfig.
         :rtype: bool
@@ -247,7 +247,7 @@ class FeatureConfig:
     def switch(self, switch):
         r"""Sets the switch of this FeatureConfig.
 
-        参数解释：特性配置启用开关，表示当前配置是否生效。  取值范围： - true：特性配置已生效。 - false: 特性配置未生效。
+        **参数解释**：特性配置启用开关，表示当前配置是否生效。  **取值范围**： - true：特性配置已生效。 - false: 特性配置未生效。
 
         :param switch: The switch of this FeatureConfig.
         :type switch: bool
@@ -258,7 +258,7 @@ class FeatureConfig:
     def type(self):
         r"""Gets the type of this FeatureConfig.
 
-        参数解释：特性配置值(value字段)的类型，如：INT，表示整型。
+        **参数解释**：特性配置值(value字段)的类型，如：INT，表示整型。  **取值范围**：不涉及
 
         :return: The type of this FeatureConfig.
         :rtype: str
@@ -269,7 +269,7 @@ class FeatureConfig:
     def type(self, type):
         r"""Sets the type of this FeatureConfig.
 
-        参数解释：特性配置值(value字段)的类型，如：INT，表示整型。
+        **参数解释**：特性配置值(value字段)的类型，如：INT，表示整型。  **取值范围**：不涉及
 
         :param type: The type of this FeatureConfig.
         :type type: str
@@ -280,7 +280,7 @@ class FeatureConfig:
     def value(self):
         r"""Gets the value of this FeatureConfig.
 
-        参数解释：特性配置值。如开关类型的特性配置取值true/false，表示特性开启关闭；配额类型的特性配置取值整数，表示限制配额。
+        **参数解释**：特性配置值。如开关类型的特性配置取值true/false，表示特性开启关闭；配额类型的特性配置取值整数，表示限制配额。  **取值范围**：不涉及
 
         :return: The value of this FeatureConfig.
         :rtype: str
@@ -291,7 +291,7 @@ class FeatureConfig:
     def value(self, value):
         r"""Sets the value of this FeatureConfig.
 
-        参数解释：特性配置值。如开关类型的特性配置取值true/false，表示特性开启关闭；配额类型的特性配置取值整数，表示限制配额。
+        **参数解释**：特性配置值。如开关类型的特性配置取值true/false，表示特性开启关闭；配额类型的特性配置取值整数，表示限制配额。  **取值范围**：不涉及
 
         :param value: The value of this FeatureConfig.
         :type value: str
@@ -302,7 +302,7 @@ class FeatureConfig:
     def description(self):
         r"""Gets the description of this FeatureConfig.
 
-        参数解释：特性配置描述。
+        **参数解释**：特性配置描述。  **取值范围**：不涉及
 
         :return: The description of this FeatureConfig.
         :rtype: str
@@ -313,7 +313,7 @@ class FeatureConfig:
     def description(self, description):
         r"""Sets the description of this FeatureConfig.
 
-        参数解释：特性配置描述。
+        **参数解释**：特性配置描述。  **取值范围**：不涉及
 
         :param description: The description of this FeatureConfig.
         :type description: str
@@ -324,7 +324,7 @@ class FeatureConfig:
     def caller(self):
         r"""Gets the caller of this FeatureConfig.
 
-        参数解释：配置创建者。
+        **参数解释**：配置创建者。  **取值范围**：不涉及
 
         :return: The caller of this FeatureConfig.
         :rtype: str
@@ -335,7 +335,7 @@ class FeatureConfig:
     def caller(self, caller):
         r"""Sets the caller of this FeatureConfig.
 
-        参数解释：配置创建者。
+        **参数解释**：配置创建者。  **取值范围**：不涉及
 
         :param caller: The caller of this FeatureConfig.
         :type caller: str

@@ -1051,7 +1051,7 @@ class KooMessageClient(Client):
     def _list_aim_template_reports_http_info(cls, request):
         http_info = {
             "method": "POST",
-            "resource_path": "/v1/aim/tempalte-reports/query",
+            "resource_path": "/v1/aim/template-reports/query",
             "request_type": request.__class__.__name__,
             "response_type": "ListAimTemplateReportsResponse"
             }

@@ -39,13 +39,13 @@ class Group:
 
         :param group_id: 用户组ID。
         :type group_id: str
-        :param group_name: 用户组名，可包含中文、英文、数字、空格、\&quot;_\&quot;、\&quot;-\&quot;、\&quot;{\&quot;和\&quot;}\&quot;的字符串。
+        :param group_name: 用户组名，长度为1到128个字符，可包含中文、英文、数字、空格、\&quot;_\&quot;、\&quot;-\&quot;、\&quot;{\&quot;和\&quot;}\&quot;的字符串。
         :type group_name: str
         :param created_at: 用户组创建时间。
         :type created_at: datetime
         :param urn: 统一资源名称。
         :type urn: str
-        :param description: 用户组描述信息，不能包含特定字符\&quot;@\&quot;、\&quot;#\&quot;、\&quot;%\&quot;、\&quot;&amp;\&quot;、\&quot;&lt;\&quot;、\&quot;&gt;\&quot;、\&quot;\\\\\&quot;、\&quot;$\&quot;、\&quot;^\&quot;和\&quot;*\&quot;的字符串。
+        :param description: 用户组描述信息，长度为0到255字符，不能包含特定字符\&quot;@\&quot;、\&quot;#\&quot;、\&quot;%\&quot;、\&quot;&amp;\&quot;、\&quot;&lt;\&quot;、\&quot;&gt;\&quot;、\&quot;\\\\\&quot;、\&quot;$\&quot;、\&quot;^\&quot;和\&quot;*\&quot;的字符串。
         :type description: str
         """
         
@@ -91,7 +91,7 @@ class Group:
     def group_name(self):
         r"""Gets the group_name of this Group.
 
-        用户组名，可包含中文、英文、数字、空格、\"_\"、\"-\"、\"{\"和\"}\"的字符串。
+        用户组名，长度为1到128个字符，可包含中文、英文、数字、空格、\"_\"、\"-\"、\"{\"和\"}\"的字符串。
 
         :return: The group_name of this Group.
         :rtype: str
@@ -102,7 +102,7 @@ class Group:
     def group_name(self, group_name):
         r"""Sets the group_name of this Group.
 
-        用户组名，可包含中文、英文、数字、空格、\"_\"、\"-\"、\"{\"和\"}\"的字符串。
+        用户组名，长度为1到128个字符，可包含中文、英文、数字、空格、\"_\"、\"-\"、\"{\"和\"}\"的字符串。
 
         :param group_name: The group_name of this Group.
         :type group_name: str
@@ -157,7 +157,7 @@ class Group:
     def description(self):
         r"""Gets the description of this Group.
 
-        用户组描述信息，不能包含特定字符\"@\"、\"#\"、\"%\"、\"&\"、\"<\"、\">\"、\"\\\\\"、\"$\"、\"^\"和\"*\"的字符串。
+        用户组描述信息，长度为0到255字符，不能包含特定字符\"@\"、\"#\"、\"%\"、\"&\"、\"<\"、\">\"、\"\\\\\"、\"$\"、\"^\"和\"*\"的字符串。
 
         :return: The description of this Group.
         :rtype: str
@@ -168,7 +168,7 @@ class Group:
     def description(self, description):
         r"""Sets the description of this Group.
 
-        用户组描述信息，不能包含特定字符\"@\"、\"#\"、\"%\"、\"&\"、\"<\"、\">\"、\"\\\\\"、\"$\"、\"^\"和\"*\"的字符串。
+        用户组描述信息，长度为0到255字符，不能包含特定字符\"@\"、\"#\"、\"%\"、\"&\"、\"<\"、\">\"、\"\\\\\"、\"$\"、\"^\"和\"*\"的字符串。
 
         :param description: The description of this Group.
         :type description: str

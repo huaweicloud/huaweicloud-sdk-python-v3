@@ -55,7 +55,7 @@ class ListTtscVocabularyConfigsRequest:
         :type x_request_id: str
         :param x_app_user_id: 第三方用户ID。不允许输入中文。
         :type x_app_user_id: str
-        :param type: 自定义读法类型 CHINESE_G2P：拼音
+        :param type: 自定义读法类型。 - CHINESE_G2P：拼音 - PHONETIC_SYMBOL：音标 - CONTINUUM：连读 - ALIAS：别名 - SAY_AS：数字英文读法
         :type type: str
         :param tts_service_name: 声音模型名称
         :type tts_service_name: str
@@ -166,7 +166,7 @@ class ListTtscVocabularyConfigsRequest:
     def type(self):
         r"""Gets the type of this ListTtscVocabularyConfigsRequest.
 
-        自定义读法类型 CHINESE_G2P：拼音
+        自定义读法类型。 - CHINESE_G2P：拼音 - PHONETIC_SYMBOL：音标 - CONTINUUM：连读 - ALIAS：别名 - SAY_AS：数字英文读法
 
         :return: The type of this ListTtscVocabularyConfigsRequest.
         :rtype: str
@@ -177,7 +177,7 @@ class ListTtscVocabularyConfigsRequest:
     def type(self, type):
         r"""Sets the type of this ListTtscVocabularyConfigsRequest.
 
-        自定义读法类型 CHINESE_G2P：拼音
+        自定义读法类型。 - CHINESE_G2P：拼音 - PHONETIC_SYMBOL：音标 - CONTINUUM：连读 - ALIAS：别名 - SAY_AS：数字英文读法
 
         :param type: The type of this ListTtscVocabularyConfigsRequest.
         :type type: str

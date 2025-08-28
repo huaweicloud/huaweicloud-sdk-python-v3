@@ -34,11 +34,11 @@ class ListFeatureConfigsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param configs: 参数解释：特性配置列表。
+        :param configs: **参数解释**：特性配置列表。
         :type configs: list[:class:`huaweicloudsdkelb.v3.FeatureConfig`]
         :param page_info: 
         :type page_info: :class:`huaweicloudsdkelb.v3.PageInfo`
-        :param request_id: 参数解释：请求ID。  注：自动生成 。
+        :param request_id: **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
         :type request_id: str
         """
         
@@ -60,7 +60,7 @@ class ListFeatureConfigsResponse(SdkResponse):
     def configs(self):
         r"""Gets the configs of this ListFeatureConfigsResponse.
 
-        参数解释：特性配置列表。
+        **参数解释**：特性配置列表。
 
         :return: The configs of this ListFeatureConfigsResponse.
         :rtype: list[:class:`huaweicloudsdkelb.v3.FeatureConfig`]
@@ -71,7 +71,7 @@ class ListFeatureConfigsResponse(SdkResponse):
     def configs(self, configs):
         r"""Sets the configs of this ListFeatureConfigsResponse.
 
-        参数解释：特性配置列表。
+        **参数解释**：特性配置列表。
 
         :param configs: The configs of this ListFeatureConfigsResponse.
         :type configs: list[:class:`huaweicloudsdkelb.v3.FeatureConfig`]
@@ -100,7 +100,7 @@ class ListFeatureConfigsResponse(SdkResponse):
     def request_id(self):
         r"""Gets the request_id of this ListFeatureConfigsResponse.
 
-        参数解释：请求ID。  注：自动生成 。
+        **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
 
         :return: The request_id of this ListFeatureConfigsResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class ListFeatureConfigsResponse(SdkResponse):
     def request_id(self, request_id):
         r"""Sets the request_id of this ListFeatureConfigsResponse.
 
-        参数解释：请求ID。  注：自动生成 。
+        **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
 
         :param request_id: The request_id of this ListFeatureConfigsResponse.
         :type request_id: str

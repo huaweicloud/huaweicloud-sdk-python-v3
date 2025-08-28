@@ -19,16 +19,22 @@ class GetLogBackupReq:
     openapi_types = {
         'instance_name': 'str',
         'level': 'str',
-        'log_type': 'str'
+        'log_type': 'str',
+        'limit': 'int',
+        'time_index': 'str',
+        'keyword': 'str'
     }
 
     attribute_map = {
         'instance_name': 'instance_name',
         'level': 'level',
-        'log_type': 'log_type'
+        'log_type': 'log_type',
+        'limit': 'limit',
+        'time_index': 'time_index',
+        'keyword': 'keyword'
     }
 
-    def __init__(self, instance_name=None, level=None, log_type=None):
+    def __init__(self, instance_name=None, level=None, log_type=None, limit=None, time_index=None, keyword=None):
         r"""GetLogBackupReq
 
         The model defined in huaweicloud sdk
@@ -39,6 +45,12 @@ class GetLogBackupReq:
         :type level: str
         :param log_type: 日志类型。可查询的日志类型为：deprecation，indexingSlow，searchSlow， instance。
         :type log_type: str
+        :param limit: 指定返回日志的条数，默认返回100条，最大返回10000条日志，且日志大小不超过1MB。
+        :type limit: int
+        :param time_index: 返回指定时间之前的日志。
+        :type time_index: str
+        :param keyword: 基于日志内容字段值需要过滤的关键字，注意搜索到的日志包含关键字。
+        :type keyword: str
         """
         
         
@@ -46,11 +58,20 @@ class GetLogBackupReq:
         self._instance_name = None
         self._level = None
         self._log_type = None
+        self._limit = None
+        self._time_index = None
+        self._keyword = None
         self.discriminator = None
 
         self.instance_name = instance_name
         self.level = level
         self.log_type = log_type
+        if limit is not None:
+            self.limit = limit
+        if time_index is not None:
+            self.time_index = time_index
+        if keyword is not None:
+            self.keyword = keyword
 
     @property
     def instance_name(self):
@@ -117,6 +138,72 @@ class GetLogBackupReq:
         :type log_type: str
         """
         self._log_type = log_type
+
+    @property
+    def limit(self):
+        r"""Gets the limit of this GetLogBackupReq.
+
+        指定返回日志的条数，默认返回100条，最大返回10000条日志，且日志大小不超过1MB。
+
+        :return: The limit of this GetLogBackupReq.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        r"""Sets the limit of this GetLogBackupReq.
+
+        指定返回日志的条数，默认返回100条，最大返回10000条日志，且日志大小不超过1MB。
+
+        :param limit: The limit of this GetLogBackupReq.
+        :type limit: int
+        """
+        self._limit = limit
+
+    @property
+    def time_index(self):
+        r"""Gets the time_index of this GetLogBackupReq.
+
+        返回指定时间之前的日志。
+
+        :return: The time_index of this GetLogBackupReq.
+        :rtype: str
+        """
+        return self._time_index
+
+    @time_index.setter
+    def time_index(self, time_index):
+        r"""Sets the time_index of this GetLogBackupReq.
+
+        返回指定时间之前的日志。
+
+        :param time_index: The time_index of this GetLogBackupReq.
+        :type time_index: str
+        """
+        self._time_index = time_index
+
+    @property
+    def keyword(self):
+        r"""Gets the keyword of this GetLogBackupReq.
+
+        基于日志内容字段值需要过滤的关键字，注意搜索到的日志包含关键字。
+
+        :return: The keyword of this GetLogBackupReq.
+        :rtype: str
+        """
+        return self._keyword
+
+    @keyword.setter
+    def keyword(self, keyword):
+        r"""Sets the keyword of this GetLogBackupReq.
+
+        基于日志内容字段值需要过滤的关键字，注意搜索到的日志包含关键字。
+
+        :param keyword: The keyword of this GetLogBackupReq.
+        :type keyword: str
+        """
+        self._keyword = keyword
 
     def to_dict(self):
         """Returns the model properties as a dict"""

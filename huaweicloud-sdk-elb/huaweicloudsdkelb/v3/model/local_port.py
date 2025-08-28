@@ -37,15 +37,15 @@ class LocalPort:
 
         The model defined in huaweicloud sdk
 
-        :param port_id: port ID。
+        :param port_id: **参数解释**：负载均衡器占用的端口ID。  **取值范围**：不涉及
         :type port_id: str
-        :param ip_address: port IPv4地址。
+        :param ip_address: **参数解释**：负载均衡器占用的私有IPv4地址。  **取值范围**：不涉及
         :type ip_address: str
-        :param ipv6_address: port IPv6地址。
+        :param ipv6_address: **参数解释**：负载均衡器占用的IPv6地址。  **取值范围**：不涉及
         :type ipv6_address: str
-        :param type: port 类型。  取值范围： - l4_hc：四层dnat转发时健康检查使用的地址。 - l4 四层fullnat 转发时健康检查及业务转发使用的地址。 - l7 七层健康检查及业务转发使用的地址。
+        :param type: **参数解释**：子网端口类型。  **取值范围**： - l4_hc：四层dnat转发时健康检查使用的地址。 - l4 四层fullnat 转发时健康检查及业务转发使用的地址。 - l7 七层健康检查及业务转发使用的地址。
         :type type: str
-        :param virsubnet_id: port 虚拟子网ID。
+        :param virsubnet_id: **参数解释**：子网端口所在下联面子网网络ID。  **取值范围**：不涉及
         :type virsubnet_id: str
         """
         
@@ -73,7 +73,7 @@ class LocalPort:
     def port_id(self):
         r"""Gets the port_id of this LocalPort.
 
-        port ID。
+        **参数解释**：负载均衡器占用的端口ID。  **取值范围**：不涉及
 
         :return: The port_id of this LocalPort.
         :rtype: str
@@ -84,7 +84,7 @@ class LocalPort:
     def port_id(self, port_id):
         r"""Sets the port_id of this LocalPort.
 
-        port ID。
+        **参数解释**：负载均衡器占用的端口ID。  **取值范围**：不涉及
 
         :param port_id: The port_id of this LocalPort.
         :type port_id: str
@@ -95,7 +95,7 @@ class LocalPort:
     def ip_address(self):
         r"""Gets the ip_address of this LocalPort.
 
-        port IPv4地址。
+        **参数解释**：负载均衡器占用的私有IPv4地址。  **取值范围**：不涉及
 
         :return: The ip_address of this LocalPort.
         :rtype: str
@@ -106,7 +106,7 @@ class LocalPort:
     def ip_address(self, ip_address):
         r"""Sets the ip_address of this LocalPort.
 
-        port IPv4地址。
+        **参数解释**：负载均衡器占用的私有IPv4地址。  **取值范围**：不涉及
 
         :param ip_address: The ip_address of this LocalPort.
         :type ip_address: str
@@ -117,7 +117,7 @@ class LocalPort:
     def ipv6_address(self):
         r"""Gets the ipv6_address of this LocalPort.
 
-        port IPv6地址。
+        **参数解释**：负载均衡器占用的IPv6地址。  **取值范围**：不涉及
 
         :return: The ipv6_address of this LocalPort.
         :rtype: str
@@ -128,7 +128,7 @@ class LocalPort:
     def ipv6_address(self, ipv6_address):
         r"""Sets the ipv6_address of this LocalPort.
 
-        port IPv6地址。
+        **参数解释**：负载均衡器占用的IPv6地址。  **取值范围**：不涉及
 
         :param ipv6_address: The ipv6_address of this LocalPort.
         :type ipv6_address: str
@@ -139,7 +139,7 @@ class LocalPort:
     def type(self):
         r"""Gets the type of this LocalPort.
 
-        port 类型。  取值范围： - l4_hc：四层dnat转发时健康检查使用的地址。 - l4 四层fullnat 转发时健康检查及业务转发使用的地址。 - l7 七层健康检查及业务转发使用的地址。
+        **参数解释**：子网端口类型。  **取值范围**： - l4_hc：四层dnat转发时健康检查使用的地址。 - l4 四层fullnat 转发时健康检查及业务转发使用的地址。 - l7 七层健康检查及业务转发使用的地址。
 
         :return: The type of this LocalPort.
         :rtype: str
@@ -150,7 +150,7 @@ class LocalPort:
     def type(self, type):
         r"""Sets the type of this LocalPort.
 
-        port 类型。  取值范围： - l4_hc：四层dnat转发时健康检查使用的地址。 - l4 四层fullnat 转发时健康检查及业务转发使用的地址。 - l7 七层健康检查及业务转发使用的地址。
+        **参数解释**：子网端口类型。  **取值范围**： - l4_hc：四层dnat转发时健康检查使用的地址。 - l4 四层fullnat 转发时健康检查及业务转发使用的地址。 - l7 七层健康检查及业务转发使用的地址。
 
         :param type: The type of this LocalPort.
         :type type: str
@@ -161,7 +161,7 @@ class LocalPort:
     def virsubnet_id(self):
         r"""Gets the virsubnet_id of this LocalPort.
 
-        port 虚拟子网ID。
+        **参数解释**：子网端口所在下联面子网网络ID。  **取值范围**：不涉及
 
         :return: The virsubnet_id of this LocalPort.
         :rtype: str
@@ -172,7 +172,7 @@ class LocalPort:
     def virsubnet_id(self, virsubnet_id):
         r"""Sets the virsubnet_id of this LocalPort.
 
-        port 虚拟子网ID。
+        **参数解释**：子网端口所在下联面子网网络ID。  **取值范围**：不涉及
 
         :param virsubnet_id: The virsubnet_id of this LocalPort.
         :type virsubnet_id: str

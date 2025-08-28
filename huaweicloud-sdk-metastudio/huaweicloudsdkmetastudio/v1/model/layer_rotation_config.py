@@ -29,7 +29,7 @@ class LayerRotationConfig:
 
         The model defined in huaweicloud sdk
 
-        :param angle: **参数解释**： 旋转角度。 **取值范围**： 角度范围0-360度。 **默认取值**： 0度。 **约束限制**： 以素材中心点旋转。
+        :param angle: **参数解释**： 旋转角度。 **取值范围**： 角度范围0-360度。 **默认取值**： 0度。 **约束限制**： 以素材中心点旋转。 视频素材不支持旋转
         :type angle: int
         """
         
@@ -45,7 +45,7 @@ class LayerRotationConfig:
     def angle(self):
         r"""Gets the angle of this LayerRotationConfig.
 
-        **参数解释**： 旋转角度。 **取值范围**： 角度范围0-360度。 **默认取值**： 0度。 **约束限制**： 以素材中心点旋转。
+        **参数解释**： 旋转角度。 **取值范围**： 角度范围0-360度。 **默认取值**： 0度。 **约束限制**： 以素材中心点旋转。 视频素材不支持旋转
 
         :return: The angle of this LayerRotationConfig.
         :rtype: int
@@ -56,7 +56,7 @@ class LayerRotationConfig:
     def angle(self, angle):
         r"""Sets the angle of this LayerRotationConfig.
 
-        **参数解释**： 旋转角度。 **取值范围**： 角度范围0-360度。 **默认取值**： 0度。 **约束限制**： 以素材中心点旋转。
+        **参数解释**： 旋转角度。 **取值范围**： 角度范围0-360度。 **默认取值**： 0度。 **约束限制**： 以素材中心点旋转。 视频素材不支持旋转
 
         :param angle: The angle of this LayerRotationConfig.
         :type angle: int

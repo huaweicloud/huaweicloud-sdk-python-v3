@@ -75,7 +75,7 @@ class EXAValueViewDTO:
         :type rdm_version: int
         :param tenant: 
         :type tenant: :class:`huaweicloudsdkidmeclassicapi.v1.TenantViewDTO`
-        :param type: **参数解释：**  类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param type: **参数解释：**  扩展属性类型。  **约束限制：**  不涉及。  **取值范围：**  - STRING：文本 - TEXT：长文本 - INTEGER：整型 - LONG：长整型 - DECIMAL：浮点型 - DECIMAL_WITH_PRECISION：浮点型（自定义精度） - FILE：文件 - BOOLEAN：布尔值 - DATE：日期 - ENUM：枚举 - CATEGORY：分类 - URL：URL - REFERENCE_OBJECT：参考对象  **默认取值：**  不涉及。 
         :type type: str
         :param value: **参数解释：**  值。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type value: object
@@ -367,7 +367,7 @@ class EXAValueViewDTO:
     def type(self):
         r"""Gets the type of this EXAValueViewDTO.
 
-        **参数解释：**  类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  扩展属性类型。  **约束限制：**  不涉及。  **取值范围：**  - STRING：文本 - TEXT：长文本 - INTEGER：整型 - LONG：长整型 - DECIMAL：浮点型 - DECIMAL_WITH_PRECISION：浮点型（自定义精度） - FILE：文件 - BOOLEAN：布尔值 - DATE：日期 - ENUM：枚举 - CATEGORY：分类 - URL：URL - REFERENCE_OBJECT：参考对象  **默认取值：**  不涉及。 
 
         :return: The type of this EXAValueViewDTO.
         :rtype: str
@@ -378,7 +378,7 @@ class EXAValueViewDTO:
     def type(self, type):
         r"""Sets the type of this EXAValueViewDTO.
 
-        **参数解释：**  类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  扩展属性类型。  **约束限制：**  不涉及。  **取值范围：**  - STRING：文本 - TEXT：长文本 - INTEGER：整型 - LONG：长整型 - DECIMAL：浮点型 - DECIMAL_WITH_PRECISION：浮点型（自定义精度） - FILE：文件 - BOOLEAN：布尔值 - DATE：日期 - ENUM：枚举 - CATEGORY：分类 - URL：URL - REFERENCE_OBJECT：参考对象  **默认取值：**  不涉及。 
 
         :param type: The type of this EXAValueViewDTO.
         :type type: str

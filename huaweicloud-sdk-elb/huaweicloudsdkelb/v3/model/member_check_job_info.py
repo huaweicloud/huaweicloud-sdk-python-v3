@@ -45,23 +45,23 @@ class MemberCheckJobInfo:
 
         The model defined in huaweicloud sdk
 
-        :param status: 参数解释：processed检查完成，processing检查中，failed检查失败
+        :param status: **参数解释**：processed检查完成，processing检查中，failed检查失败。  **取值范围**：不涉及
         :type status: str
         :param result: 
         :type result: :class:`huaweicloudsdkelb.v3.MemberCheckJobResult`
-        :param created_at: 参数解释：任务创建时间。
+        :param created_at: **参数解释**：任务创建时间。  **取值范围**：不涉及
         :type created_at: str
-        :param updated_at: 参数解释：任务更新时间
+        :param updated_at: **参数解释**：任务更新时间。  **取值范围**：不涉及
         :type updated_at: str
-        :param job_id: 参数解释：任务ID。
+        :param job_id: **参数解释**：任务ID。
         :type job_id: str
-        :param check_item_total_num: 参数解释：检查项总个数
+        :param check_item_total_num: **参数解释**：检查项总个数。  **取值范围**：不涉及
         :type check_item_total_num: int
-        :param check_item_finished_num: 参数解释：已检查完成的检查项个数
+        :param check_item_finished_num: **参数解释**：已检查完成的检查项个数。  **取值范围**：不涉及
         :type check_item_finished_num: int
-        :param listener_id: 参数解释：后端服务器所关联的监听器，查询在该监听器下后端服务器的状态。
+        :param listener_id: **参数解释**：后端服务器所关联的监听器，查询在该监听器下后端服务器的状态。  **取值范围**：不涉及
         :type listener_id: str
-        :param member_id: 参数解释：后端服务器ID。
+        :param member_id: **参数解释**：后端服务器ID。  **取值范围**：不涉及
         :type member_id: str
         """
         
@@ -101,7 +101,7 @@ class MemberCheckJobInfo:
     def status(self):
         r"""Gets the status of this MemberCheckJobInfo.
 
-        参数解释：processed检查完成，processing检查中，failed检查失败
+        **参数解释**：processed检查完成，processing检查中，failed检查失败。  **取值范围**：不涉及
 
         :return: The status of this MemberCheckJobInfo.
         :rtype: str
@@ -112,7 +112,7 @@ class MemberCheckJobInfo:
     def status(self, status):
         r"""Sets the status of this MemberCheckJobInfo.
 
-        参数解释：processed检查完成，processing检查中，failed检查失败
+        **参数解释**：processed检查完成，processing检查中，failed检查失败。  **取值范围**：不涉及
 
         :param status: The status of this MemberCheckJobInfo.
         :type status: str
@@ -141,7 +141,7 @@ class MemberCheckJobInfo:
     def created_at(self):
         r"""Gets the created_at of this MemberCheckJobInfo.
 
-        参数解释：任务创建时间。
+        **参数解释**：任务创建时间。  **取值范围**：不涉及
 
         :return: The created_at of this MemberCheckJobInfo.
         :rtype: str
@@ -152,7 +152,7 @@ class MemberCheckJobInfo:
     def created_at(self, created_at):
         r"""Sets the created_at of this MemberCheckJobInfo.
 
-        参数解释：任务创建时间。
+        **参数解释**：任务创建时间。  **取值范围**：不涉及
 
         :param created_at: The created_at of this MemberCheckJobInfo.
         :type created_at: str
@@ -163,7 +163,7 @@ class MemberCheckJobInfo:
     def updated_at(self):
         r"""Gets the updated_at of this MemberCheckJobInfo.
 
-        参数解释：任务更新时间
+        **参数解释**：任务更新时间。  **取值范围**：不涉及
 
         :return: The updated_at of this MemberCheckJobInfo.
         :rtype: str
@@ -174,7 +174,7 @@ class MemberCheckJobInfo:
     def updated_at(self, updated_at):
         r"""Sets the updated_at of this MemberCheckJobInfo.
 
-        参数解释：任务更新时间
+        **参数解释**：任务更新时间。  **取值范围**：不涉及
 
         :param updated_at: The updated_at of this MemberCheckJobInfo.
         :type updated_at: str
@@ -185,7 +185,7 @@ class MemberCheckJobInfo:
     def job_id(self):
         r"""Gets the job_id of this MemberCheckJobInfo.
 
-        参数解释：任务ID。
+        **参数解释**：任务ID。
 
         :return: The job_id of this MemberCheckJobInfo.
         :rtype: str
@@ -196,7 +196,7 @@ class MemberCheckJobInfo:
     def job_id(self, job_id):
         r"""Sets the job_id of this MemberCheckJobInfo.
 
-        参数解释：任务ID。
+        **参数解释**：任务ID。
 
         :param job_id: The job_id of this MemberCheckJobInfo.
         :type job_id: str
@@ -207,7 +207,7 @@ class MemberCheckJobInfo:
     def check_item_total_num(self):
         r"""Gets the check_item_total_num of this MemberCheckJobInfo.
 
-        参数解释：检查项总个数
+        **参数解释**：检查项总个数。  **取值范围**：不涉及
 
         :return: The check_item_total_num of this MemberCheckJobInfo.
         :rtype: int
@@ -218,7 +218,7 @@ class MemberCheckJobInfo:
     def check_item_total_num(self, check_item_total_num):
         r"""Sets the check_item_total_num of this MemberCheckJobInfo.
 
-        参数解释：检查项总个数
+        **参数解释**：检查项总个数。  **取值范围**：不涉及
 
         :param check_item_total_num: The check_item_total_num of this MemberCheckJobInfo.
         :type check_item_total_num: int
@@ -229,7 +229,7 @@ class MemberCheckJobInfo:
     def check_item_finished_num(self):
         r"""Gets the check_item_finished_num of this MemberCheckJobInfo.
 
-        参数解释：已检查完成的检查项个数
+        **参数解释**：已检查完成的检查项个数。  **取值范围**：不涉及
 
         :return: The check_item_finished_num of this MemberCheckJobInfo.
         :rtype: int
@@ -240,7 +240,7 @@ class MemberCheckJobInfo:
     def check_item_finished_num(self, check_item_finished_num):
         r"""Sets the check_item_finished_num of this MemberCheckJobInfo.
 
-        参数解释：已检查完成的检查项个数
+        **参数解释**：已检查完成的检查项个数。  **取值范围**：不涉及
 
         :param check_item_finished_num: The check_item_finished_num of this MemberCheckJobInfo.
         :type check_item_finished_num: int
@@ -251,7 +251,7 @@ class MemberCheckJobInfo:
     def listener_id(self):
         r"""Gets the listener_id of this MemberCheckJobInfo.
 
-        参数解释：后端服务器所关联的监听器，查询在该监听器下后端服务器的状态。
+        **参数解释**：后端服务器所关联的监听器，查询在该监听器下后端服务器的状态。  **取值范围**：不涉及
 
         :return: The listener_id of this MemberCheckJobInfo.
         :rtype: str
@@ -262,7 +262,7 @@ class MemberCheckJobInfo:
     def listener_id(self, listener_id):
         r"""Sets the listener_id of this MemberCheckJobInfo.
 
-        参数解释：后端服务器所关联的监听器，查询在该监听器下后端服务器的状态。
+        **参数解释**：后端服务器所关联的监听器，查询在该监听器下后端服务器的状态。  **取值范围**：不涉及
 
         :param listener_id: The listener_id of this MemberCheckJobInfo.
         :type listener_id: str
@@ -273,7 +273,7 @@ class MemberCheckJobInfo:
     def member_id(self):
         r"""Gets the member_id of this MemberCheckJobInfo.
 
-        参数解释：后端服务器ID。
+        **参数解释**：后端服务器ID。  **取值范围**：不涉及
 
         :return: The member_id of this MemberCheckJobInfo.
         :rtype: str
@@ -284,7 +284,7 @@ class MemberCheckJobInfo:
     def member_id(self, member_id):
         r"""Sets the member_id of this MemberCheckJobInfo.
 
-        参数解释：后端服务器ID。
+        **参数解释**：后端服务器ID。  **取值范围**：不涉及
 
         :param member_id: The member_id of this MemberCheckJobInfo.
         :type member_id: str

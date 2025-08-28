@@ -127,105 +127,105 @@ class LoadBalancer:
 
         The model defined in huaweicloud sdk
 
-        :param id: 参数解释：负载均衡器ID。
+        :param id: **参数解释**：负载均衡器ID。  **取值范围**：不涉及
         :type id: str
-        :param description: 参数解释：负载均衡器描述信息。
+        :param description: **参数解释**：负载均衡器描述信息。  **取值范围**：不涉及
         :type description: str
-        :param provisioning_status: 参数解释：负载均衡器的配置状态。  取值范围： - ACTIVE：使用中。 - PENDING_DELETE：删除中。
+        :param provisioning_status: **参数解释**：负载均衡器的配置状态。  **取值范围**： - ACTIVE：使用中。 - PENDING_DELETE：删除中。
         :type provisioning_status: str
-        :param admin_state_up: 参数解释：负载均衡器的启用状态。  取值范围： - true ：启用。 - false：停用。  [不支持该字段，请勿使用。](tag:dt)
+        :param admin_state_up: **参数解释**：负载均衡器的启用状态。  **取值范围**： - true ：启用。 - false：停用。  [不支持该字段，请勿使用。](tag:dt)
         :type admin_state_up: bool
-        :param provider: 参数解释：负载均衡器的生产者名称。固定为vlb。
+        :param provider: **参数解释**：负载均衡器的生产者名称。固定为vlb。  **取值范围**：不涉及
         :type provider: str
-        :param pools: 参数解释：负载均衡器直接关联的后端服务器组的ID列表。
+        :param pools: **参数解释**：负载均衡器直接关联的后端服务器组的ID列表。
         :type pools: list[:class:`huaweicloudsdkelb.v3.PoolRef`]
-        :param listeners: 参数解释：负载均衡器关联的监听器的ID列表。
+        :param listeners: **参数解释**：负载均衡器关联的监听器的ID列表。
         :type listeners: list[:class:`huaweicloudsdkelb.v3.ListenerRef`]
-        :param operating_status: 参数解释：负载均衡器的操作状态。  取值范围： - ONLINE：在线。 - FROZEN：已冻结。
+        :param operating_status: **参数解释**：负载均衡器的操作状态。  **取值范围**： - ONLINE：在线。 - FROZEN：已冻结。
         :type operating_status: str
-        :param name: 参数解释：负载均衡器的名称。
+        :param name: **参数解释**：负载均衡器的名称。  **取值范围**：不涉及
         :type name: str
-        :param project_id: 参数解释：负载均衡器所属的项目ID。
+        :param project_id: **参数解释**：负载均衡器所属的项目ID。  **取值范围**：不涉及
         :type project_id: str
-        :param vip_subnet_cidr_id: 参数解释：负载均衡器所在子网的IPv4子网ID，也称为该负载均衡器实例的前端子网。
+        :param vip_subnet_cidr_id: **参数解释**：负载均衡器所在子网的IPv4子网ID，也称为该负载均衡器实例的前端子网。  **取值范围**：不涉及
         :type vip_subnet_cidr_id: str
-        :param vip_address: 参数解释：负载均衡器的IPv4虚拟IP地址。
+        :param vip_address: **参数解释**：负载均衡器的IPv4私网IP地址。  **取值范围**：不涉及
         :type vip_address: str
-        :param vip_port_id: 参数解释：负载均衡器的IPv4对应的port ID。 [创建弹性负载均衡时，会自动为负载均衡创建一个port并关联一个默认的安全组，这个安全组对所有流量不生效。 ](tag:dt,hcso_dt)
+        :param vip_port_id: **参数解释**：负载均衡器的IPv4对应的port ID。 [创建弹性负载均衡时，会自动为负载均衡创建一个port并关联一个默认的安全组，这个安全组对所有流量不生效。 ](tag:dt,hcso_dt)  **取值范围**：不涉及
         :type vip_port_id: str
-        :param tags: 参数解释：负载均衡的标签列表。
+        :param tags: **参数解释**：负载均衡的标签列表。
         :type tags: list[:class:`huaweicloudsdkelb.v3.Tag`]
-        :param created_at: 参数解释：负载均衡器的创建时间。  取值范围： 格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;
+        :param created_at: **参数解释**：负载均衡器的创建时间。  **取值范围**： 格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;
         :type created_at: str
-        :param updated_at: 参数解释：负载均衡器的更新时间。  取值范围; 格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;
+        :param updated_at: **参数解释**：负载均衡器的更新时间。  **取值范围**： 格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;
         :type updated_at: str
-        :param guaranteed: 参数解释：是否独享型LB。  取值范围： - false：共享型。 - true：独享型。
+        :param guaranteed: **参数解释**：是否独享型LB。  **取值范围**： - false：共享型。 - true：独享型。
         :type guaranteed: bool
-        :param vpc_id: 参数解释：负载均衡器所在VPC ID。
+        :param vpc_id: **参数解释**：负载均衡器所在VPC ID。  **取值范围**：不涉及
         :type vpc_id: str
-        :param eips: 参数解释：负载均衡器绑定的EIP。  约束限制：只支持绑定一个EIP。  注：该字段与publicips一致。
+        :param eips: **参数解释**：负载均衡器绑定的EIP。  &gt; 该字段与publicips一致。
         :type eips: list[:class:`huaweicloudsdkelb.v3.EipInfo`]
-        :param ipv6_vip_address: 参数解释：双栈类型负载均衡器的IPv6地址。  [不支持IPv6，请勿使用。](tag:dt)
+        :param ipv6_vip_address: **参数解释**：双栈类型负载均衡器的IPv6地址。  **取值范围**：不涉及  [不支持IPv6，请勿使用。](tag:dt)
         :type ipv6_vip_address: str
-        :param ipv6_vip_virsubnet_id: 参数解释：双栈类型负载均衡器所在子网的IPv6网络ID，也称为该负载均衡器实例的前端子网。  [不支持IPv6，请勿使用。](tag:dt)
+        :param ipv6_vip_virsubnet_id: **参数解释**：双栈类型负载均衡器所在子网的IPv6网络ID，也称为该负载均衡器实例的前端子网。  **取值范围**：不涉及  [不支持IPv6，请勿使用。](tag:dt)
         :type ipv6_vip_virsubnet_id: str
-        :param ipv6_vip_port_id: 参数解释：双栈类型负载均衡器的IPv6对应的port ID。  [不支持IPv6，请勿使用。](tag:dt)
+        :param ipv6_vip_port_id: **参数解释**：双栈类型负载均衡器的IPv6对应的port ID。  **取值范围**：不涉及  [不支持IPv6，请勿使用。](tag:dt)
         :type ipv6_vip_port_id: str
-        :param availability_zone_list: 参数解释：负载均衡器所在的可用区列表。
+        :param availability_zone_list: **参数解释**：负载均衡器所在的可用区列表。  **取值范围**：不涉及
         :type availability_zone_list: list[str]
-        :param enterprise_project_id: 参数解释：企业项目ID。创建时不传则返回\&quot;0\&quot;，表示资源属于default企业项目。  注意：\&quot;0\&quot;并不是真实存在的企业项目ID，在创建、更新和查询时不能作为请求参数传入。  [不支持该字段，请勿使用](tag:dt,hcso_dt)
+        :param enterprise_project_id: **参数解释**：资源所属的企业项目ID。  **取值范围**： - \&quot;0\&quot;：表示资源属于default企业项目。 - UUID格式的字符串，表示非默认企业项目。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
         :type enterprise_project_id: str
-        :param billing_info: 参数解释：资源账单信息。  取值范围： - 空：按需计费。 [- 非空：包周期计费，格式为：order_id:product_id:region_id:project_id。如：CS2107161019CDJZZ:OFFI569702121789763584:az1:057ef081eb00d2732fd1c01a9be75e6f](tag:hws)  [不支持该字段，请勿使用。](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,srg,fcs,fcs_vm,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,ct)
+        :param billing_info: **参数解释**：资源账单信息。  **取值范围**： - 空：按需计费。 [- 非空：包周期计费，格式为：order_id:product_id:region_id:project_id。如：CS2107161019CDJZZ:OFFI569702121789763584:az1:057ef081eb00d2732fd1c01a9be75e6f](tag:hws)  [不支持该字段，请勿使用。](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,srg,fcs,fcs_vm,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,ct)
         :type billing_info: str
-        :param l4_flavor_id: 参数解释：网络型规格ID。  对于弹性扩缩容实例，表示上限规格。  约束限制： - 当传入的规格类型为L4，表示该实例为固定规格实例，按规格计费； - 当传入的规格类型为L4_elastic_max，表示该实例为弹性实例，按LCU计费  [hsco场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hk_vdf,fcs)
+        :param l4_flavor_id: **参数解释**：负载均衡器4层规格ID。 若当前负载均衡器是弹性规格实例，则该字段表示4层上限规格。  **取值范围**：不涉及  [hsco场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hk_vdf,fcs)
         :type l4_flavor_id: str
-        :param l4_scale_flavor_id: 参数解释：四层弹性Flavor ID。  不支持该字段，请勿使用。
+        :param l4_scale_flavor_id: **参数解释**：四层弹性规格ID。  **取值范围**：不涉及  &gt; 该字段已经废弃，请勿使用。
         :type l4_scale_flavor_id: str
-        :param l7_flavor_id: 参数解释：应用型ID。 对于弹性扩缩容实例，表示上限规格ID。  约束限制： - 当传入的规格类型为L7，表示该实例为固定规格实例，按规格计费； - 当传入的规格类型为L7_elastic_max，表示该实例为弹性实例，按LCU计费  [hsco场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hk_vdf,srg,fcs)
+        :param l7_flavor_id: **参数解释**：负载均衡器7层规格ID。 若当前负载均衡器是弹性规格实例，则该字段表示7层上限规格。  **取值范围**：不涉及  [hsco场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hk_vdf,srg,fcs)
         :type l7_flavor_id: str
-        :param l7_scale_flavor_id: 参数解释：七层弹性Flavor ID。  不支持该字段，请勿使用。
+        :param l7_scale_flavor_id: **参数解释**：七层弹性Flavor ID。  **取值范围**：不涉及  &gt; 该字段已经废弃，请勿使用。
         :type l7_scale_flavor_id: str
-        :param gw_flavor_id: 网关型LB的Flavor ID。  [使用说明：当gw_flavor_id不传时，会使用默认gateway flavor （默认gateway flavor根据不同局点有所不同，具体以实际值为准）。 ](tag:hws,hws_hk,hws_eu,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb)  不支持该字段，请勿使用。
+        :param gw_flavor_id: **参数解释**：网关型负载均衡器的规格ID。  **取值范围**：不涉及  不支持该字段，请勿使用。
         :type gw_flavor_id: str
-        :param loadbalancer_type: 参数解释：负载均衡器类别。  取值范围： - gateway 表示网关类型负载均衡器。 - null 表示其他非网关类型负载均衡器。  默认取值：null。  不支持该字段，请勿使用。
+        :param loadbalancer_type: **参数解释**：负载均衡器类别。  **取值范围**： - gateway 表示网关类型负载均衡器。 - null 表示其他非网关类型负载均衡器。  不支持该字段，请勿使用。
         :type loadbalancer_type: str
-        :param publicips: 参数解释：负载均衡器绑定的公网IP。只支持绑定一个公网IP。  注：该字段与eips一致。
+        :param publicips: **参数解释**：负载均衡器绑定的公网IP。  &gt; 该字段与eips一致。
         :type publicips: list[:class:`huaweicloudsdkelb.v3.PublicIpInfo`]
-        :param global_eips: 参数解释：负载均衡器绑定的global eip。  约束限制：只支持绑定一个globaleip。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42,dt,hcso_dt,hk_vdf,srg,fcs,ctc,ocb,hws_ocb)
+        :param global_eips: **参数解释**：负载均衡器绑定的global eip。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42,dt,hcso_dt,hk_vdf,srg,fcs,ctc,ocb,hws_ocb)
         :type global_eips: list[:class:`huaweicloudsdkelb.v3.GlobalEipInfo`]
-        :param elb_virsubnet_ids: 参数解释：下联面子网的网络ID列表。
+        :param elb_virsubnet_ids: **参数解释**：下联面子网的网络ID列表。  **取值范围**：不涉及
         :type elb_virsubnet_ids: list[str]
-        :param elb_virsubnet_type: 参数解释：下联面子网类型。  取值范围： - ipv4：ipv4 - dualstack：双栈
+        :param elb_virsubnet_type: **参数解释**：下联面子网类型。  **取值范围**： - ipv4：仅支持IPv4 - dualstack：双栈，同时支持IPv4和IPv6。
         :type elb_virsubnet_type: str
-        :param ip_target_enable: 参数解释：是否启用跨VPC后端转发。 [开启跨VPC后端转发后，后端服务器组不仅支持添加云上VPC内的服务器，还支持添加其他VPC、其他公有云、云下数据中心的服务器。](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,dt,hcso_dt,hws_eu) [开启跨VPC后端转发后，后端服务器组不仅支持添加云上VPC内的服务器，还支持添加其他VPC、其他云、云下数据中心的服务器。](tag:srg,fcs)  约束限制： - 开启后不能关闭。 - 使用共享VPC的实例使用此特性时，需确保共享资源所有者已开通VPC对等连接，否则通信异常。 [- 仅独享型负载均衡器支持该特性。](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt) [- 网关型LB不支持该特性。](tag:hws_eu)  取值范围： - true：开启。 - false：不开启。  [荷兰region不支持该字段，请勿使用。](tag:dt)
+        :param ip_target_enable: **参数解释**：是否启用IP类型后端转发。 [开启IP类型后端转发后，后端服务器组不仅支持添加云上VPC内的服务器，还支持添加其他VPC、其他公有云、云下数据中心的服务器。](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,dt,hcso_dt,hws_eu) [开启IP类型后端转发后，后端服务器组不仅支持添加云上VPC内的服务器，还支持添加其他VPC、云下数据中心的服务器。](tag:srg,fcs)  **取值范围**： - true：开启。 - false：不开启。  [荷兰region不支持该字段，请勿使用。](tag:dt)
         :type ip_target_enable: bool
-        :param frozen_scene: 参数解释：负载均衡器的冻结场景。 [若负载均衡器有多个冻结场景，用逗号分隔。  取值范围： - POLICE：公安冻结场景。 - ILLEGAL：违规冻结场景。 - VERIFY：客户未实名认证冻结场景。 - PARTNER：合作伙伴冻结（合作伙伴冻结子客户资源）。 - AREAR：欠费冻结场景。](tag:hws,hws_hk)  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42,dt,hcso_dt,ocb,hws_ocb)
+        :param frozen_scene: **参数解释**：负载均衡器的冻结场景。 若负载均衡器有多个冻结场景，用逗号分隔。  **取值范围**： - POLICE：公安冻结场景。 - ILLEGAL：违规冻结场景。 - VERIFY：客户未实名认证冻结场景。 - PARTNER：合作伙伴冻结（合作伙伴冻结子客户资源）。 - AREAR：欠费冻结场景。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42,dt,hcso_dt,ocb,hws_ocb)
         :type frozen_scene: str
-        :param deletion_protection_enable: 参数解释：是否开启删除保护。  约束限制： - 仅当前局点启用删除保护特性后才会返回该字段。 - 退场时需要先关闭所有资源的删除保护开关。  取值范围： - false：不开启。 - true：开启。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)  [荷兰region不支持该字段，请勿使用。](tag:dt)
+        :param deletion_protection_enable: **参数解释**：是否开启删除保护。仅当前局点启用删除保护特性后才会返回该字段。  **取值范围**： - false：不开启。 - true：开启。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)  [荷兰region不支持该字段，请勿使用。](tag:dt)
         :type deletion_protection_enable: bool
         :param autoscaling: 
         :type autoscaling: :class:`huaweicloudsdkelb.v3.AutoscalingRef`
-        :param public_border_group: 参数解释：LB所属AZ组。
+        :param public_border_group: **参数解释**：公网边界组。  **取值范围**： - center：表示中心站点的公网边界组 - 边缘站点名称：表示边缘站点的公网边界组  [不支持该字段，请勿使用。](tag:hws_eu,hws_eu_wb,hws_test,fcs,dt,hcso_dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,srg,g42,hk_g42)
         :type public_border_group: str
-        :param charge_mode: 参数解释：负载均衡器实例的计费模式。  取值范围： - flavor：按规格计费 - lcu：按使用量计费 - 空值：若是共享型表示免费实例。若是独享型则与flavor模式一致，都是按规格计费。  [不支持该字段，请勿使用。](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,fcs,dt,hcso_dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,srg,g42,hk_g42)
+        :param charge_mode: **参数解释**：负载均衡器实例的计费模式。  **取值范围**： - flavor：按规格计费。 - lcu：按使用量计费。 - 空值：若是共享型表示免费实例。若是独享型则与flavor模式一致，都是按规格计费。  [不支持该字段，请勿使用。](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,fcs,dt,hcso_dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,srg,g42,hk_g42)
         :type charge_mode: str
-        :param service_lb_mode: 参数解释：lb 模式，默认为lb，ep模式LB支持跨租户访问。  不支持该字段，请勿使用。
+        :param service_lb_mode: **参数解释**：LB模式。  **取值范围**： - lb：默认模式，不支持跨租户访问。 - ep：ep模式，LB支持跨租户访问。  不支持该字段，请勿使用。
         :type service_lb_mode: str
-        :param instance_type: 参数解释：标识实例归属哪个内部服务。  不支持该字段，请勿使用。
+        :param instance_type: **参数解释**：标识实例归属哪个内部服务。  **取值范围**：不涉及  不支持该字段，请勿使用。
         :type instance_type: str
-        :param instance_id: 参数解释：标识实例绑定内部服务的实例id。  不支持该字段，请勿使用。
+        :param instance_id: **参数解释**：标识实例绑定内部服务的实例ID。  **取值范围**：不涉及  不支持该字段，请勿使用。
         :type instance_id: str
-        :param proxy_protocol_extensions: 参数解释：pp扩展。  不支持该字段，请勿使用。
+        :param proxy_protocol_extensions: **参数解释**：pp扩展。  不支持该字段，请勿使用。
         :type proxy_protocol_extensions: list[:class:`huaweicloudsdkelb.v3.ProxyProtocolExtension`]
-        :param waf_failure_action: 参数解释：WAF故障时的流量处理策略。  约束限制：只有绑定了waf的LB实例，该字段才会生效。  取值范围：discard:丢弃，forward: 转发到后端。  默认取值：forward  [不支持该字段，请勿使用。](tag:hws_eu,hws_test,hcs,hcs_sm,hcso,hk_vdf,srg,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b,hcso_dt,dt,ocb,ctc,cmcc,tm,ct,sbc,g42,hws_ocb,hk_sbc,hk_tm,hk_g42)
+        :param waf_failure_action: **参数解释**：WAF故障时的流量处理策略。  **取值范围**：discard:丢弃，forward: 转发到后端。  [不支持该字段，请勿使用。](tag:hws_eu,hws_test,hcs,hcs_sm,hcso,hk_vdf,srg,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b,hcso_dt,dt,ocb,ctc,cmcc,tm,ct,sbc,g42,hws_ocb,hk_sbc,hk_tm,hk_g42)
         :type waf_failure_action: str
-        :param protection_status: 参数解释：修改保护状态。  取值范围： - nonProtection: 不保护。 - consoleProtection: 控制台修改保护。  默认取值：nonProtection
+        :param protection_status: **参数解释**：修改保护状态。  **取值范围**： - nonProtection：不保护。 - consoleProtection：控制台修改保护。
         :type protection_status: str
-        :param protection_reason: 参数解释：设置保护的原因。作为protection_status的转态设置的原因。  约束限制：仅当protection_status为consoleProtection时有效。  取值范围：除&#39;&lt;&#39;和&#39;&gt;&#39;外通用Unicode字符集字符，最大255个字符。
+        :param protection_reason: **参数解释**：设置保护的原因。作为protection_status的转态设置的原因。  **取值范围**：除&#39;&lt;&#39;和&#39;&gt;&#39;外通用Unicode字符集字符，最大255个字符。
         :type protection_reason: str
-        :param log_group_id: 参数解释：LB所绑定的logtank对应的group id
+        :param log_group_id: **参数解释**：LB所关联的云日志服务（LTS）的日志组ID。  **取值范围**：不涉及
         :type log_group_id: str
-        :param log_topic_id: 参数解释：LB所绑定的logtank对应的topic id
+        :param log_topic_id: **参数解释**：LB所关联的云日志服务（LTS）的日志组下的日志流ID。  **取值范围**：不涉及
         :type log_topic_id: str
         """
         
@@ -353,7 +353,7 @@ class LoadBalancer:
     def id(self):
         r"""Gets the id of this LoadBalancer.
 
-        参数解释：负载均衡器ID。
+        **参数解释**：负载均衡器ID。  **取值范围**：不涉及
 
         :return: The id of this LoadBalancer.
         :rtype: str
@@ -364,7 +364,7 @@ class LoadBalancer:
     def id(self, id):
         r"""Sets the id of this LoadBalancer.
 
-        参数解释：负载均衡器ID。
+        **参数解释**：负载均衡器ID。  **取值范围**：不涉及
 
         :param id: The id of this LoadBalancer.
         :type id: str
@@ -375,7 +375,7 @@ class LoadBalancer:
     def description(self):
         r"""Gets the description of this LoadBalancer.
 
-        参数解释：负载均衡器描述信息。
+        **参数解释**：负载均衡器描述信息。  **取值范围**：不涉及
 
         :return: The description of this LoadBalancer.
         :rtype: str
@@ -386,7 +386,7 @@ class LoadBalancer:
     def description(self, description):
         r"""Sets the description of this LoadBalancer.
 
-        参数解释：负载均衡器描述信息。
+        **参数解释**：负载均衡器描述信息。  **取值范围**：不涉及
 
         :param description: The description of this LoadBalancer.
         :type description: str
@@ -397,7 +397,7 @@ class LoadBalancer:
     def provisioning_status(self):
         r"""Gets the provisioning_status of this LoadBalancer.
 
-        参数解释：负载均衡器的配置状态。  取值范围： - ACTIVE：使用中。 - PENDING_DELETE：删除中。
+        **参数解释**：负载均衡器的配置状态。  **取值范围**： - ACTIVE：使用中。 - PENDING_DELETE：删除中。
 
         :return: The provisioning_status of this LoadBalancer.
         :rtype: str
@@ -408,7 +408,7 @@ class LoadBalancer:
     def provisioning_status(self, provisioning_status):
         r"""Sets the provisioning_status of this LoadBalancer.
 
-        参数解释：负载均衡器的配置状态。  取值范围： - ACTIVE：使用中。 - PENDING_DELETE：删除中。
+        **参数解释**：负载均衡器的配置状态。  **取值范围**： - ACTIVE：使用中。 - PENDING_DELETE：删除中。
 
         :param provisioning_status: The provisioning_status of this LoadBalancer.
         :type provisioning_status: str
@@ -419,7 +419,7 @@ class LoadBalancer:
     def admin_state_up(self):
         r"""Gets the admin_state_up of this LoadBalancer.
 
-        参数解释：负载均衡器的启用状态。  取值范围： - true ：启用。 - false：停用。  [不支持该字段，请勿使用。](tag:dt)
+        **参数解释**：负载均衡器的启用状态。  **取值范围**： - true ：启用。 - false：停用。  [不支持该字段，请勿使用。](tag:dt)
 
         :return: The admin_state_up of this LoadBalancer.
         :rtype: bool
@@ -430,7 +430,7 @@ class LoadBalancer:
     def admin_state_up(self, admin_state_up):
         r"""Sets the admin_state_up of this LoadBalancer.
 
-        参数解释：负载均衡器的启用状态。  取值范围： - true ：启用。 - false：停用。  [不支持该字段，请勿使用。](tag:dt)
+        **参数解释**：负载均衡器的启用状态。  **取值范围**： - true ：启用。 - false：停用。  [不支持该字段，请勿使用。](tag:dt)
 
         :param admin_state_up: The admin_state_up of this LoadBalancer.
         :type admin_state_up: bool
@@ -441,7 +441,7 @@ class LoadBalancer:
     def provider(self):
         r"""Gets the provider of this LoadBalancer.
 
-        参数解释：负载均衡器的生产者名称。固定为vlb。
+        **参数解释**：负载均衡器的生产者名称。固定为vlb。  **取值范围**：不涉及
 
         :return: The provider of this LoadBalancer.
         :rtype: str
@@ -452,7 +452,7 @@ class LoadBalancer:
     def provider(self, provider):
         r"""Sets the provider of this LoadBalancer.
 
-        参数解释：负载均衡器的生产者名称。固定为vlb。
+        **参数解释**：负载均衡器的生产者名称。固定为vlb。  **取值范围**：不涉及
 
         :param provider: The provider of this LoadBalancer.
         :type provider: str
@@ -463,7 +463,7 @@ class LoadBalancer:
     def pools(self):
         r"""Gets the pools of this LoadBalancer.
 
-        参数解释：负载均衡器直接关联的后端服务器组的ID列表。
+        **参数解释**：负载均衡器直接关联的后端服务器组的ID列表。
 
         :return: The pools of this LoadBalancer.
         :rtype: list[:class:`huaweicloudsdkelb.v3.PoolRef`]
@@ -474,7 +474,7 @@ class LoadBalancer:
     def pools(self, pools):
         r"""Sets the pools of this LoadBalancer.
 
-        参数解释：负载均衡器直接关联的后端服务器组的ID列表。
+        **参数解释**：负载均衡器直接关联的后端服务器组的ID列表。
 
         :param pools: The pools of this LoadBalancer.
         :type pools: list[:class:`huaweicloudsdkelb.v3.PoolRef`]
@@ -485,7 +485,7 @@ class LoadBalancer:
     def listeners(self):
         r"""Gets the listeners of this LoadBalancer.
 
-        参数解释：负载均衡器关联的监听器的ID列表。
+        **参数解释**：负载均衡器关联的监听器的ID列表。
 
         :return: The listeners of this LoadBalancer.
         :rtype: list[:class:`huaweicloudsdkelb.v3.ListenerRef`]
@@ -496,7 +496,7 @@ class LoadBalancer:
     def listeners(self, listeners):
         r"""Sets the listeners of this LoadBalancer.
 
-        参数解释：负载均衡器关联的监听器的ID列表。
+        **参数解释**：负载均衡器关联的监听器的ID列表。
 
         :param listeners: The listeners of this LoadBalancer.
         :type listeners: list[:class:`huaweicloudsdkelb.v3.ListenerRef`]
@@ -507,7 +507,7 @@ class LoadBalancer:
     def operating_status(self):
         r"""Gets the operating_status of this LoadBalancer.
 
-        参数解释：负载均衡器的操作状态。  取值范围： - ONLINE：在线。 - FROZEN：已冻结。
+        **参数解释**：负载均衡器的操作状态。  **取值范围**： - ONLINE：在线。 - FROZEN：已冻结。
 
         :return: The operating_status of this LoadBalancer.
         :rtype: str
@@ -518,7 +518,7 @@ class LoadBalancer:
     def operating_status(self, operating_status):
         r"""Sets the operating_status of this LoadBalancer.
 
-        参数解释：负载均衡器的操作状态。  取值范围： - ONLINE：在线。 - FROZEN：已冻结。
+        **参数解释**：负载均衡器的操作状态。  **取值范围**： - ONLINE：在线。 - FROZEN：已冻结。
 
         :param operating_status: The operating_status of this LoadBalancer.
         :type operating_status: str
@@ -529,7 +529,7 @@ class LoadBalancer:
     def name(self):
         r"""Gets the name of this LoadBalancer.
 
-        参数解释：负载均衡器的名称。
+        **参数解释**：负载均衡器的名称。  **取值范围**：不涉及
 
         :return: The name of this LoadBalancer.
         :rtype: str
@@ -540,7 +540,7 @@ class LoadBalancer:
     def name(self, name):
         r"""Sets the name of this LoadBalancer.
 
-        参数解释：负载均衡器的名称。
+        **参数解释**：负载均衡器的名称。  **取值范围**：不涉及
 
         :param name: The name of this LoadBalancer.
         :type name: str
@@ -551,7 +551,7 @@ class LoadBalancer:
     def project_id(self):
         r"""Gets the project_id of this LoadBalancer.
 
-        参数解释：负载均衡器所属的项目ID。
+        **参数解释**：负载均衡器所属的项目ID。  **取值范围**：不涉及
 
         :return: The project_id of this LoadBalancer.
         :rtype: str
@@ -562,7 +562,7 @@ class LoadBalancer:
     def project_id(self, project_id):
         r"""Sets the project_id of this LoadBalancer.
 
-        参数解释：负载均衡器所属的项目ID。
+        **参数解释**：负载均衡器所属的项目ID。  **取值范围**：不涉及
 
         :param project_id: The project_id of this LoadBalancer.
         :type project_id: str
@@ -573,7 +573,7 @@ class LoadBalancer:
     def vip_subnet_cidr_id(self):
         r"""Gets the vip_subnet_cidr_id of this LoadBalancer.
 
-        参数解释：负载均衡器所在子网的IPv4子网ID，也称为该负载均衡器实例的前端子网。
+        **参数解释**：负载均衡器所在子网的IPv4子网ID，也称为该负载均衡器实例的前端子网。  **取值范围**：不涉及
 
         :return: The vip_subnet_cidr_id of this LoadBalancer.
         :rtype: str
@@ -584,7 +584,7 @@ class LoadBalancer:
     def vip_subnet_cidr_id(self, vip_subnet_cidr_id):
         r"""Sets the vip_subnet_cidr_id of this LoadBalancer.
 
-        参数解释：负载均衡器所在子网的IPv4子网ID，也称为该负载均衡器实例的前端子网。
+        **参数解释**：负载均衡器所在子网的IPv4子网ID，也称为该负载均衡器实例的前端子网。  **取值范围**：不涉及
 
         :param vip_subnet_cidr_id: The vip_subnet_cidr_id of this LoadBalancer.
         :type vip_subnet_cidr_id: str
@@ -595,7 +595,7 @@ class LoadBalancer:
     def vip_address(self):
         r"""Gets the vip_address of this LoadBalancer.
 
-        参数解释：负载均衡器的IPv4虚拟IP地址。
+        **参数解释**：负载均衡器的IPv4私网IP地址。  **取值范围**：不涉及
 
         :return: The vip_address of this LoadBalancer.
         :rtype: str
@@ -606,7 +606,7 @@ class LoadBalancer:
     def vip_address(self, vip_address):
         r"""Sets the vip_address of this LoadBalancer.
 
-        参数解释：负载均衡器的IPv4虚拟IP地址。
+        **参数解释**：负载均衡器的IPv4私网IP地址。  **取值范围**：不涉及
 
         :param vip_address: The vip_address of this LoadBalancer.
         :type vip_address: str
@@ -617,7 +617,7 @@ class LoadBalancer:
     def vip_port_id(self):
         r"""Gets the vip_port_id of this LoadBalancer.
 
-        参数解释：负载均衡器的IPv4对应的port ID。 [创建弹性负载均衡时，会自动为负载均衡创建一个port并关联一个默认的安全组，这个安全组对所有流量不生效。 ](tag:dt,hcso_dt)
+        **参数解释**：负载均衡器的IPv4对应的port ID。 [创建弹性负载均衡时，会自动为负载均衡创建一个port并关联一个默认的安全组，这个安全组对所有流量不生效。 ](tag:dt,hcso_dt)  **取值范围**：不涉及
 
         :return: The vip_port_id of this LoadBalancer.
         :rtype: str
@@ -628,7 +628,7 @@ class LoadBalancer:
     def vip_port_id(self, vip_port_id):
         r"""Sets the vip_port_id of this LoadBalancer.
 
-        参数解释：负载均衡器的IPv4对应的port ID。 [创建弹性负载均衡时，会自动为负载均衡创建一个port并关联一个默认的安全组，这个安全组对所有流量不生效。 ](tag:dt,hcso_dt)
+        **参数解释**：负载均衡器的IPv4对应的port ID。 [创建弹性负载均衡时，会自动为负载均衡创建一个port并关联一个默认的安全组，这个安全组对所有流量不生效。 ](tag:dt,hcso_dt)  **取值范围**：不涉及
 
         :param vip_port_id: The vip_port_id of this LoadBalancer.
         :type vip_port_id: str
@@ -639,7 +639,7 @@ class LoadBalancer:
     def tags(self):
         r"""Gets the tags of this LoadBalancer.
 
-        参数解释：负载均衡的标签列表。
+        **参数解释**：负载均衡的标签列表。
 
         :return: The tags of this LoadBalancer.
         :rtype: list[:class:`huaweicloudsdkelb.v3.Tag`]
@@ -650,7 +650,7 @@ class LoadBalancer:
     def tags(self, tags):
         r"""Sets the tags of this LoadBalancer.
 
-        参数解释：负载均衡的标签列表。
+        **参数解释**：负载均衡的标签列表。
 
         :param tags: The tags of this LoadBalancer.
         :type tags: list[:class:`huaweicloudsdkelb.v3.Tag`]
@@ -661,7 +661,7 @@ class LoadBalancer:
     def created_at(self):
         r"""Gets the created_at of this LoadBalancer.
 
-        参数解释：负载均衡器的创建时间。  取值范围： 格式：yyyy-MM-dd'T'HH:mm:ss'Z'
+        **参数解释**：负载均衡器的创建时间。  **取值范围**： 格式：yyyy-MM-dd'T'HH:mm:ss'Z'
 
         :return: The created_at of this LoadBalancer.
         :rtype: str
@@ -672,7 +672,7 @@ class LoadBalancer:
     def created_at(self, created_at):
         r"""Sets the created_at of this LoadBalancer.
 
-        参数解释：负载均衡器的创建时间。  取值范围： 格式：yyyy-MM-dd'T'HH:mm:ss'Z'
+        **参数解释**：负载均衡器的创建时间。  **取值范围**： 格式：yyyy-MM-dd'T'HH:mm:ss'Z'
 
         :param created_at: The created_at of this LoadBalancer.
         :type created_at: str
@@ -683,7 +683,7 @@ class LoadBalancer:
     def updated_at(self):
         r"""Gets the updated_at of this LoadBalancer.
 
-        参数解释：负载均衡器的更新时间。  取值范围; 格式：yyyy-MM-dd'T'HH:mm:ss'Z'
+        **参数解释**：负载均衡器的更新时间。  **取值范围**： 格式：yyyy-MM-dd'T'HH:mm:ss'Z'
 
         :return: The updated_at of this LoadBalancer.
         :rtype: str
@@ -694,7 +694,7 @@ class LoadBalancer:
     def updated_at(self, updated_at):
         r"""Sets the updated_at of this LoadBalancer.
 
-        参数解释：负载均衡器的更新时间。  取值范围; 格式：yyyy-MM-dd'T'HH:mm:ss'Z'
+        **参数解释**：负载均衡器的更新时间。  **取值范围**： 格式：yyyy-MM-dd'T'HH:mm:ss'Z'
 
         :param updated_at: The updated_at of this LoadBalancer.
         :type updated_at: str
@@ -705,7 +705,7 @@ class LoadBalancer:
     def guaranteed(self):
         r"""Gets the guaranteed of this LoadBalancer.
 
-        参数解释：是否独享型LB。  取值范围： - false：共享型。 - true：独享型。
+        **参数解释**：是否独享型LB。  **取值范围**： - false：共享型。 - true：独享型。
 
         :return: The guaranteed of this LoadBalancer.
         :rtype: bool
@@ -716,7 +716,7 @@ class LoadBalancer:
     def guaranteed(self, guaranteed):
         r"""Sets the guaranteed of this LoadBalancer.
 
-        参数解释：是否独享型LB。  取值范围： - false：共享型。 - true：独享型。
+        **参数解释**：是否独享型LB。  **取值范围**： - false：共享型。 - true：独享型。
 
         :param guaranteed: The guaranteed of this LoadBalancer.
         :type guaranteed: bool
@@ -727,7 +727,7 @@ class LoadBalancer:
     def vpc_id(self):
         r"""Gets the vpc_id of this LoadBalancer.
 
-        参数解释：负载均衡器所在VPC ID。
+        **参数解释**：负载均衡器所在VPC ID。  **取值范围**：不涉及
 
         :return: The vpc_id of this LoadBalancer.
         :rtype: str
@@ -738,7 +738,7 @@ class LoadBalancer:
     def vpc_id(self, vpc_id):
         r"""Sets the vpc_id of this LoadBalancer.
 
-        参数解释：负载均衡器所在VPC ID。
+        **参数解释**：负载均衡器所在VPC ID。  **取值范围**：不涉及
 
         :param vpc_id: The vpc_id of this LoadBalancer.
         :type vpc_id: str
@@ -749,7 +749,7 @@ class LoadBalancer:
     def eips(self):
         r"""Gets the eips of this LoadBalancer.
 
-        参数解释：负载均衡器绑定的EIP。  约束限制：只支持绑定一个EIP。  注：该字段与publicips一致。
+        **参数解释**：负载均衡器绑定的EIP。  > 该字段与publicips一致。
 
         :return: The eips of this LoadBalancer.
         :rtype: list[:class:`huaweicloudsdkelb.v3.EipInfo`]
@@ -760,7 +760,7 @@ class LoadBalancer:
     def eips(self, eips):
         r"""Sets the eips of this LoadBalancer.
 
-        参数解释：负载均衡器绑定的EIP。  约束限制：只支持绑定一个EIP。  注：该字段与publicips一致。
+        **参数解释**：负载均衡器绑定的EIP。  > 该字段与publicips一致。
 
         :param eips: The eips of this LoadBalancer.
         :type eips: list[:class:`huaweicloudsdkelb.v3.EipInfo`]
@@ -771,7 +771,7 @@ class LoadBalancer:
     def ipv6_vip_address(self):
         r"""Gets the ipv6_vip_address of this LoadBalancer.
 
-        参数解释：双栈类型负载均衡器的IPv6地址。  [不支持IPv6，请勿使用。](tag:dt)
+        **参数解释**：双栈类型负载均衡器的IPv6地址。  **取值范围**：不涉及  [不支持IPv6，请勿使用。](tag:dt)
 
         :return: The ipv6_vip_address of this LoadBalancer.
         :rtype: str
@@ -782,7 +782,7 @@ class LoadBalancer:
     def ipv6_vip_address(self, ipv6_vip_address):
         r"""Sets the ipv6_vip_address of this LoadBalancer.
 
-        参数解释：双栈类型负载均衡器的IPv6地址。  [不支持IPv6，请勿使用。](tag:dt)
+        **参数解释**：双栈类型负载均衡器的IPv6地址。  **取值范围**：不涉及  [不支持IPv6，请勿使用。](tag:dt)
 
         :param ipv6_vip_address: The ipv6_vip_address of this LoadBalancer.
         :type ipv6_vip_address: str
@@ -793,7 +793,7 @@ class LoadBalancer:
     def ipv6_vip_virsubnet_id(self):
         r"""Gets the ipv6_vip_virsubnet_id of this LoadBalancer.
 
-        参数解释：双栈类型负载均衡器所在子网的IPv6网络ID，也称为该负载均衡器实例的前端子网。  [不支持IPv6，请勿使用。](tag:dt)
+        **参数解释**：双栈类型负载均衡器所在子网的IPv6网络ID，也称为该负载均衡器实例的前端子网。  **取值范围**：不涉及  [不支持IPv6，请勿使用。](tag:dt)
 
         :return: The ipv6_vip_virsubnet_id of this LoadBalancer.
         :rtype: str
@@ -804,7 +804,7 @@ class LoadBalancer:
     def ipv6_vip_virsubnet_id(self, ipv6_vip_virsubnet_id):
         r"""Sets the ipv6_vip_virsubnet_id of this LoadBalancer.
 
-        参数解释：双栈类型负载均衡器所在子网的IPv6网络ID，也称为该负载均衡器实例的前端子网。  [不支持IPv6，请勿使用。](tag:dt)
+        **参数解释**：双栈类型负载均衡器所在子网的IPv6网络ID，也称为该负载均衡器实例的前端子网。  **取值范围**：不涉及  [不支持IPv6，请勿使用。](tag:dt)
 
         :param ipv6_vip_virsubnet_id: The ipv6_vip_virsubnet_id of this LoadBalancer.
         :type ipv6_vip_virsubnet_id: str
@@ -815,7 +815,7 @@ class LoadBalancer:
     def ipv6_vip_port_id(self):
         r"""Gets the ipv6_vip_port_id of this LoadBalancer.
 
-        参数解释：双栈类型负载均衡器的IPv6对应的port ID。  [不支持IPv6，请勿使用。](tag:dt)
+        **参数解释**：双栈类型负载均衡器的IPv6对应的port ID。  **取值范围**：不涉及  [不支持IPv6，请勿使用。](tag:dt)
 
         :return: The ipv6_vip_port_id of this LoadBalancer.
         :rtype: str
@@ -826,7 +826,7 @@ class LoadBalancer:
     def ipv6_vip_port_id(self, ipv6_vip_port_id):
         r"""Sets the ipv6_vip_port_id of this LoadBalancer.
 
-        参数解释：双栈类型负载均衡器的IPv6对应的port ID。  [不支持IPv6，请勿使用。](tag:dt)
+        **参数解释**：双栈类型负载均衡器的IPv6对应的port ID。  **取值范围**：不涉及  [不支持IPv6，请勿使用。](tag:dt)
 
         :param ipv6_vip_port_id: The ipv6_vip_port_id of this LoadBalancer.
         :type ipv6_vip_port_id: str
@@ -837,7 +837,7 @@ class LoadBalancer:
     def availability_zone_list(self):
         r"""Gets the availability_zone_list of this LoadBalancer.
 
-        参数解释：负载均衡器所在的可用区列表。
+        **参数解释**：负载均衡器所在的可用区列表。  **取值范围**：不涉及
 
         :return: The availability_zone_list of this LoadBalancer.
         :rtype: list[str]
@@ -848,7 +848,7 @@ class LoadBalancer:
     def availability_zone_list(self, availability_zone_list):
         r"""Sets the availability_zone_list of this LoadBalancer.
 
-        参数解释：负载均衡器所在的可用区列表。
+        **参数解释**：负载均衡器所在的可用区列表。  **取值范围**：不涉及
 
         :param availability_zone_list: The availability_zone_list of this LoadBalancer.
         :type availability_zone_list: list[str]
@@ -859,7 +859,7 @@ class LoadBalancer:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this LoadBalancer.
 
-        参数解释：企业项目ID。创建时不传则返回\"0\"，表示资源属于default企业项目。  注意：\"0\"并不是真实存在的企业项目ID，在创建、更新和查询时不能作为请求参数传入。  [不支持该字段，请勿使用](tag:dt,hcso_dt)
+        **参数解释**：资源所属的企业项目ID。  **取值范围**： - \"0\"：表示资源属于default企业项目。 - UUID格式的字符串，表示非默认企业项目。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
 
         :return: The enterprise_project_id of this LoadBalancer.
         :rtype: str
@@ -870,7 +870,7 @@ class LoadBalancer:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this LoadBalancer.
 
-        参数解释：企业项目ID。创建时不传则返回\"0\"，表示资源属于default企业项目。  注意：\"0\"并不是真实存在的企业项目ID，在创建、更新和查询时不能作为请求参数传入。  [不支持该字段，请勿使用](tag:dt,hcso_dt)
+        **参数解释**：资源所属的企业项目ID。  **取值范围**： - \"0\"：表示资源属于default企业项目。 - UUID格式的字符串，表示非默认企业项目。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
 
         :param enterprise_project_id: The enterprise_project_id of this LoadBalancer.
         :type enterprise_project_id: str
@@ -881,7 +881,7 @@ class LoadBalancer:
     def billing_info(self):
         r"""Gets the billing_info of this LoadBalancer.
 
-        参数解释：资源账单信息。  取值范围： - 空：按需计费。 [- 非空：包周期计费，格式为：order_id:product_id:region_id:project_id。如：CS2107161019CDJZZ:OFFI569702121789763584:az1:057ef081eb00d2732fd1c01a9be75e6f](tag:hws)  [不支持该字段，请勿使用。](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,srg,fcs,fcs_vm,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,ct)
+        **参数解释**：资源账单信息。  **取值范围**： - 空：按需计费。 [- 非空：包周期计费，格式为：order_id:product_id:region_id:project_id。如：CS2107161019CDJZZ:OFFI569702121789763584:az1:057ef081eb00d2732fd1c01a9be75e6f](tag:hws)  [不支持该字段，请勿使用。](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,srg,fcs,fcs_vm,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,ct)
 
         :return: The billing_info of this LoadBalancer.
         :rtype: str
@@ -892,7 +892,7 @@ class LoadBalancer:
     def billing_info(self, billing_info):
         r"""Sets the billing_info of this LoadBalancer.
 
-        参数解释：资源账单信息。  取值范围： - 空：按需计费。 [- 非空：包周期计费，格式为：order_id:product_id:region_id:project_id。如：CS2107161019CDJZZ:OFFI569702121789763584:az1:057ef081eb00d2732fd1c01a9be75e6f](tag:hws)  [不支持该字段，请勿使用。](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,srg,fcs,fcs_vm,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,ct)
+        **参数解释**：资源账单信息。  **取值范围**： - 空：按需计费。 [- 非空：包周期计费，格式为：order_id:product_id:region_id:project_id。如：CS2107161019CDJZZ:OFFI569702121789763584:az1:057ef081eb00d2732fd1c01a9be75e6f](tag:hws)  [不支持该字段，请勿使用。](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,srg,fcs,fcs_vm,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,ct)
 
         :param billing_info: The billing_info of this LoadBalancer.
         :type billing_info: str
@@ -903,7 +903,7 @@ class LoadBalancer:
     def l4_flavor_id(self):
         r"""Gets the l4_flavor_id of this LoadBalancer.
 
-        参数解释：网络型规格ID。  对于弹性扩缩容实例，表示上限规格。  约束限制： - 当传入的规格类型为L4，表示该实例为固定规格实例，按规格计费； - 当传入的规格类型为L4_elastic_max，表示该实例为弹性实例，按LCU计费  [hsco场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hk_vdf,fcs)
+        **参数解释**：负载均衡器4层规格ID。 若当前负载均衡器是弹性规格实例，则该字段表示4层上限规格。  **取值范围**：不涉及  [hsco场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hk_vdf,fcs)
 
         :return: The l4_flavor_id of this LoadBalancer.
         :rtype: str
@@ -914,7 +914,7 @@ class LoadBalancer:
     def l4_flavor_id(self, l4_flavor_id):
         r"""Sets the l4_flavor_id of this LoadBalancer.
 
-        参数解释：网络型规格ID。  对于弹性扩缩容实例，表示上限规格。  约束限制： - 当传入的规格类型为L4，表示该实例为固定规格实例，按规格计费； - 当传入的规格类型为L4_elastic_max，表示该实例为弹性实例，按LCU计费  [hsco场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hk_vdf,fcs)
+        **参数解释**：负载均衡器4层规格ID。 若当前负载均衡器是弹性规格实例，则该字段表示4层上限规格。  **取值范围**：不涉及  [hsco场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hk_vdf,fcs)
 
         :param l4_flavor_id: The l4_flavor_id of this LoadBalancer.
         :type l4_flavor_id: str
@@ -925,7 +925,7 @@ class LoadBalancer:
     def l4_scale_flavor_id(self):
         r"""Gets the l4_scale_flavor_id of this LoadBalancer.
 
-        参数解释：四层弹性Flavor ID。  不支持该字段，请勿使用。
+        **参数解释**：四层弹性规格ID。  **取值范围**：不涉及  > 该字段已经废弃，请勿使用。
 
         :return: The l4_scale_flavor_id of this LoadBalancer.
         :rtype: str
@@ -936,7 +936,7 @@ class LoadBalancer:
     def l4_scale_flavor_id(self, l4_scale_flavor_id):
         r"""Sets the l4_scale_flavor_id of this LoadBalancer.
 
-        参数解释：四层弹性Flavor ID。  不支持该字段，请勿使用。
+        **参数解释**：四层弹性规格ID。  **取值范围**：不涉及  > 该字段已经废弃，请勿使用。
 
         :param l4_scale_flavor_id: The l4_scale_flavor_id of this LoadBalancer.
         :type l4_scale_flavor_id: str
@@ -947,7 +947,7 @@ class LoadBalancer:
     def l7_flavor_id(self):
         r"""Gets the l7_flavor_id of this LoadBalancer.
 
-        参数解释：应用型ID。 对于弹性扩缩容实例，表示上限规格ID。  约束限制： - 当传入的规格类型为L7，表示该实例为固定规格实例，按规格计费； - 当传入的规格类型为L7_elastic_max，表示该实例为弹性实例，按LCU计费  [hsco场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hk_vdf,srg,fcs)
+        **参数解释**：负载均衡器7层规格ID。 若当前负载均衡器是弹性规格实例，则该字段表示7层上限规格。  **取值范围**：不涉及  [hsco场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hk_vdf,srg,fcs)
 
         :return: The l7_flavor_id of this LoadBalancer.
         :rtype: str
@@ -958,7 +958,7 @@ class LoadBalancer:
     def l7_flavor_id(self, l7_flavor_id):
         r"""Sets the l7_flavor_id of this LoadBalancer.
 
-        参数解释：应用型ID。 对于弹性扩缩容实例，表示上限规格ID。  约束限制： - 当传入的规格类型为L7，表示该实例为固定规格实例，按规格计费； - 当传入的规格类型为L7_elastic_max，表示该实例为弹性实例，按LCU计费  [hsco场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hk_vdf,srg,fcs)
+        **参数解释**：负载均衡器7层规格ID。 若当前负载均衡器是弹性规格实例，则该字段表示7层上限规格。  **取值范围**：不涉及  [hsco场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hk_vdf,srg,fcs)
 
         :param l7_flavor_id: The l7_flavor_id of this LoadBalancer.
         :type l7_flavor_id: str
@@ -969,7 +969,7 @@ class LoadBalancer:
     def l7_scale_flavor_id(self):
         r"""Gets the l7_scale_flavor_id of this LoadBalancer.
 
-        参数解释：七层弹性Flavor ID。  不支持该字段，请勿使用。
+        **参数解释**：七层弹性Flavor ID。  **取值范围**：不涉及  > 该字段已经废弃，请勿使用。
 
         :return: The l7_scale_flavor_id of this LoadBalancer.
         :rtype: str
@@ -980,7 +980,7 @@ class LoadBalancer:
     def l7_scale_flavor_id(self, l7_scale_flavor_id):
         r"""Sets the l7_scale_flavor_id of this LoadBalancer.
 
-        参数解释：七层弹性Flavor ID。  不支持该字段，请勿使用。
+        **参数解释**：七层弹性Flavor ID。  **取值范围**：不涉及  > 该字段已经废弃，请勿使用。
 
         :param l7_scale_flavor_id: The l7_scale_flavor_id of this LoadBalancer.
         :type l7_scale_flavor_id: str
@@ -991,7 +991,7 @@ class LoadBalancer:
     def gw_flavor_id(self):
         r"""Gets the gw_flavor_id of this LoadBalancer.
 
-        网关型LB的Flavor ID。  [使用说明：当gw_flavor_id不传时，会使用默认gateway flavor （默认gateway flavor根据不同局点有所不同，具体以实际值为准）。 ](tag:hws,hws_hk,hws_eu,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb)  不支持该字段，请勿使用。
+        **参数解释**：网关型负载均衡器的规格ID。  **取值范围**：不涉及  不支持该字段，请勿使用。
 
         :return: The gw_flavor_id of this LoadBalancer.
         :rtype: str
@@ -1002,7 +1002,7 @@ class LoadBalancer:
     def gw_flavor_id(self, gw_flavor_id):
         r"""Sets the gw_flavor_id of this LoadBalancer.
 
-        网关型LB的Flavor ID。  [使用说明：当gw_flavor_id不传时，会使用默认gateway flavor （默认gateway flavor根据不同局点有所不同，具体以实际值为准）。 ](tag:hws,hws_hk,hws_eu,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb)  不支持该字段，请勿使用。
+        **参数解释**：网关型负载均衡器的规格ID。  **取值范围**：不涉及  不支持该字段，请勿使用。
 
         :param gw_flavor_id: The gw_flavor_id of this LoadBalancer.
         :type gw_flavor_id: str
@@ -1013,7 +1013,7 @@ class LoadBalancer:
     def loadbalancer_type(self):
         r"""Gets the loadbalancer_type of this LoadBalancer.
 
-        参数解释：负载均衡器类别。  取值范围： - gateway 表示网关类型负载均衡器。 - null 表示其他非网关类型负载均衡器。  默认取值：null。  不支持该字段，请勿使用。
+        **参数解释**：负载均衡器类别。  **取值范围**： - gateway 表示网关类型负载均衡器。 - null 表示其他非网关类型负载均衡器。  不支持该字段，请勿使用。
 
         :return: The loadbalancer_type of this LoadBalancer.
         :rtype: str
@@ -1024,7 +1024,7 @@ class LoadBalancer:
     def loadbalancer_type(self, loadbalancer_type):
         r"""Sets the loadbalancer_type of this LoadBalancer.
 
-        参数解释：负载均衡器类别。  取值范围： - gateway 表示网关类型负载均衡器。 - null 表示其他非网关类型负载均衡器。  默认取值：null。  不支持该字段，请勿使用。
+        **参数解释**：负载均衡器类别。  **取值范围**： - gateway 表示网关类型负载均衡器。 - null 表示其他非网关类型负载均衡器。  不支持该字段，请勿使用。
 
         :param loadbalancer_type: The loadbalancer_type of this LoadBalancer.
         :type loadbalancer_type: str
@@ -1035,7 +1035,7 @@ class LoadBalancer:
     def publicips(self):
         r"""Gets the publicips of this LoadBalancer.
 
-        参数解释：负载均衡器绑定的公网IP。只支持绑定一个公网IP。  注：该字段与eips一致。
+        **参数解释**：负载均衡器绑定的公网IP。  > 该字段与eips一致。
 
         :return: The publicips of this LoadBalancer.
         :rtype: list[:class:`huaweicloudsdkelb.v3.PublicIpInfo`]
@@ -1046,7 +1046,7 @@ class LoadBalancer:
     def publicips(self, publicips):
         r"""Sets the publicips of this LoadBalancer.
 
-        参数解释：负载均衡器绑定的公网IP。只支持绑定一个公网IP。  注：该字段与eips一致。
+        **参数解释**：负载均衡器绑定的公网IP。  > 该字段与eips一致。
 
         :param publicips: The publicips of this LoadBalancer.
         :type publicips: list[:class:`huaweicloudsdkelb.v3.PublicIpInfo`]
@@ -1057,7 +1057,7 @@ class LoadBalancer:
     def global_eips(self):
         r"""Gets the global_eips of this LoadBalancer.
 
-        参数解释：负载均衡器绑定的global eip。  约束限制：只支持绑定一个globaleip。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42,dt,hcso_dt,hk_vdf,srg,fcs,ctc,ocb,hws_ocb)
+        **参数解释**：负载均衡器绑定的global eip。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42,dt,hcso_dt,hk_vdf,srg,fcs,ctc,ocb,hws_ocb)
 
         :return: The global_eips of this LoadBalancer.
         :rtype: list[:class:`huaweicloudsdkelb.v3.GlobalEipInfo`]
@@ -1068,7 +1068,7 @@ class LoadBalancer:
     def global_eips(self, global_eips):
         r"""Sets the global_eips of this LoadBalancer.
 
-        参数解释：负载均衡器绑定的global eip。  约束限制：只支持绑定一个globaleip。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42,dt,hcso_dt,hk_vdf,srg,fcs,ctc,ocb,hws_ocb)
+        **参数解释**：负载均衡器绑定的global eip。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42,dt,hcso_dt,hk_vdf,srg,fcs,ctc,ocb,hws_ocb)
 
         :param global_eips: The global_eips of this LoadBalancer.
         :type global_eips: list[:class:`huaweicloudsdkelb.v3.GlobalEipInfo`]
@@ -1079,7 +1079,7 @@ class LoadBalancer:
     def elb_virsubnet_ids(self):
         r"""Gets the elb_virsubnet_ids of this LoadBalancer.
 
-        参数解释：下联面子网的网络ID列表。
+        **参数解释**：下联面子网的网络ID列表。  **取值范围**：不涉及
 
         :return: The elb_virsubnet_ids of this LoadBalancer.
         :rtype: list[str]
@@ -1090,7 +1090,7 @@ class LoadBalancer:
     def elb_virsubnet_ids(self, elb_virsubnet_ids):
         r"""Sets the elb_virsubnet_ids of this LoadBalancer.
 
-        参数解释：下联面子网的网络ID列表。
+        **参数解释**：下联面子网的网络ID列表。  **取值范围**：不涉及
 
         :param elb_virsubnet_ids: The elb_virsubnet_ids of this LoadBalancer.
         :type elb_virsubnet_ids: list[str]
@@ -1101,7 +1101,7 @@ class LoadBalancer:
     def elb_virsubnet_type(self):
         r"""Gets the elb_virsubnet_type of this LoadBalancer.
 
-        参数解释：下联面子网类型。  取值范围： - ipv4：ipv4 - dualstack：双栈
+        **参数解释**：下联面子网类型。  **取值范围**： - ipv4：仅支持IPv4 - dualstack：双栈，同时支持IPv4和IPv6。
 
         :return: The elb_virsubnet_type of this LoadBalancer.
         :rtype: str
@@ -1112,7 +1112,7 @@ class LoadBalancer:
     def elb_virsubnet_type(self, elb_virsubnet_type):
         r"""Sets the elb_virsubnet_type of this LoadBalancer.
 
-        参数解释：下联面子网类型。  取值范围： - ipv4：ipv4 - dualstack：双栈
+        **参数解释**：下联面子网类型。  **取值范围**： - ipv4：仅支持IPv4 - dualstack：双栈，同时支持IPv4和IPv6。
 
         :param elb_virsubnet_type: The elb_virsubnet_type of this LoadBalancer.
         :type elb_virsubnet_type: str
@@ -1123,7 +1123,7 @@ class LoadBalancer:
     def ip_target_enable(self):
         r"""Gets the ip_target_enable of this LoadBalancer.
 
-        参数解释：是否启用跨VPC后端转发。 [开启跨VPC后端转发后，后端服务器组不仅支持添加云上VPC内的服务器，还支持添加其他VPC、其他公有云、云下数据中心的服务器。](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,dt,hcso_dt,hws_eu) [开启跨VPC后端转发后，后端服务器组不仅支持添加云上VPC内的服务器，还支持添加其他VPC、其他云、云下数据中心的服务器。](tag:srg,fcs)  约束限制： - 开启后不能关闭。 - 使用共享VPC的实例使用此特性时，需确保共享资源所有者已开通VPC对等连接，否则通信异常。 [- 仅独享型负载均衡器支持该特性。](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt) [- 网关型LB不支持该特性。](tag:hws_eu)  取值范围： - true：开启。 - false：不开启。  [荷兰region不支持该字段，请勿使用。](tag:dt)
+        **参数解释**：是否启用IP类型后端转发。 [开启IP类型后端转发后，后端服务器组不仅支持添加云上VPC内的服务器，还支持添加其他VPC、其他公有云、云下数据中心的服务器。](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,dt,hcso_dt,hws_eu) [开启IP类型后端转发后，后端服务器组不仅支持添加云上VPC内的服务器，还支持添加其他VPC、云下数据中心的服务器。](tag:srg,fcs)  **取值范围**： - true：开启。 - false：不开启。  [荷兰region不支持该字段，请勿使用。](tag:dt)
 
         :return: The ip_target_enable of this LoadBalancer.
         :rtype: bool
@@ -1134,7 +1134,7 @@ class LoadBalancer:
     def ip_target_enable(self, ip_target_enable):
         r"""Sets the ip_target_enable of this LoadBalancer.
 
-        参数解释：是否启用跨VPC后端转发。 [开启跨VPC后端转发后，后端服务器组不仅支持添加云上VPC内的服务器，还支持添加其他VPC、其他公有云、云下数据中心的服务器。](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,dt,hcso_dt,hws_eu) [开启跨VPC后端转发后，后端服务器组不仅支持添加云上VPC内的服务器，还支持添加其他VPC、其他云、云下数据中心的服务器。](tag:srg,fcs)  约束限制： - 开启后不能关闭。 - 使用共享VPC的实例使用此特性时，需确保共享资源所有者已开通VPC对等连接，否则通信异常。 [- 仅独享型负载均衡器支持该特性。](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt) [- 网关型LB不支持该特性。](tag:hws_eu)  取值范围： - true：开启。 - false：不开启。  [荷兰region不支持该字段，请勿使用。](tag:dt)
+        **参数解释**：是否启用IP类型后端转发。 [开启IP类型后端转发后，后端服务器组不仅支持添加云上VPC内的服务器，还支持添加其他VPC、其他公有云、云下数据中心的服务器。](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,dt,hcso_dt,hws_eu) [开启IP类型后端转发后，后端服务器组不仅支持添加云上VPC内的服务器，还支持添加其他VPC、云下数据中心的服务器。](tag:srg,fcs)  **取值范围**： - true：开启。 - false：不开启。  [荷兰region不支持该字段，请勿使用。](tag:dt)
 
         :param ip_target_enable: The ip_target_enable of this LoadBalancer.
         :type ip_target_enable: bool
@@ -1145,7 +1145,7 @@ class LoadBalancer:
     def frozen_scene(self):
         r"""Gets the frozen_scene of this LoadBalancer.
 
-        参数解释：负载均衡器的冻结场景。 [若负载均衡器有多个冻结场景，用逗号分隔。  取值范围： - POLICE：公安冻结场景。 - ILLEGAL：违规冻结场景。 - VERIFY：客户未实名认证冻结场景。 - PARTNER：合作伙伴冻结（合作伙伴冻结子客户资源）。 - AREAR：欠费冻结场景。](tag:hws,hws_hk)  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42,dt,hcso_dt,ocb,hws_ocb)
+        **参数解释**：负载均衡器的冻结场景。 若负载均衡器有多个冻结场景，用逗号分隔。  **取值范围**： - POLICE：公安冻结场景。 - ILLEGAL：违规冻结场景。 - VERIFY：客户未实名认证冻结场景。 - PARTNER：合作伙伴冻结（合作伙伴冻结子客户资源）。 - AREAR：欠费冻结场景。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42,dt,hcso_dt,ocb,hws_ocb)
 
         :return: The frozen_scene of this LoadBalancer.
         :rtype: str
@@ -1156,7 +1156,7 @@ class LoadBalancer:
     def frozen_scene(self, frozen_scene):
         r"""Sets the frozen_scene of this LoadBalancer.
 
-        参数解释：负载均衡器的冻结场景。 [若负载均衡器有多个冻结场景，用逗号分隔。  取值范围： - POLICE：公安冻结场景。 - ILLEGAL：违规冻结场景。 - VERIFY：客户未实名认证冻结场景。 - PARTNER：合作伙伴冻结（合作伙伴冻结子客户资源）。 - AREAR：欠费冻结场景。](tag:hws,hws_hk)  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42,dt,hcso_dt,ocb,hws_ocb)
+        **参数解释**：负载均衡器的冻结场景。 若负载均衡器有多个冻结场景，用逗号分隔。  **取值范围**： - POLICE：公安冻结场景。 - ILLEGAL：违规冻结场景。 - VERIFY：客户未实名认证冻结场景。 - PARTNER：合作伙伴冻结（合作伙伴冻结子客户资源）。 - AREAR：欠费冻结场景。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42,dt,hcso_dt,ocb,hws_ocb)
 
         :param frozen_scene: The frozen_scene of this LoadBalancer.
         :type frozen_scene: str
@@ -1167,7 +1167,7 @@ class LoadBalancer:
     def deletion_protection_enable(self):
         r"""Gets the deletion_protection_enable of this LoadBalancer.
 
-        参数解释：是否开启删除保护。  约束限制： - 仅当前局点启用删除保护特性后才会返回该字段。 - 退场时需要先关闭所有资源的删除保护开关。  取值范围： - false：不开启。 - true：开启。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)  [荷兰region不支持该字段，请勿使用。](tag:dt)
+        **参数解释**：是否开启删除保护。仅当前局点启用删除保护特性后才会返回该字段。  **取值范围**： - false：不开启。 - true：开启。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)  [荷兰region不支持该字段，请勿使用。](tag:dt)
 
         :return: The deletion_protection_enable of this LoadBalancer.
         :rtype: bool
@@ -1178,7 +1178,7 @@ class LoadBalancer:
     def deletion_protection_enable(self, deletion_protection_enable):
         r"""Sets the deletion_protection_enable of this LoadBalancer.
 
-        参数解释：是否开启删除保护。  约束限制： - 仅当前局点启用删除保护特性后才会返回该字段。 - 退场时需要先关闭所有资源的删除保护开关。  取值范围： - false：不开启。 - true：开启。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)  [荷兰region不支持该字段，请勿使用。](tag:dt)
+        **参数解释**：是否开启删除保护。仅当前局点启用删除保护特性后才会返回该字段。  **取值范围**： - false：不开启。 - true：开启。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)  [荷兰region不支持该字段，请勿使用。](tag:dt)
 
         :param deletion_protection_enable: The deletion_protection_enable of this LoadBalancer.
         :type deletion_protection_enable: bool
@@ -1207,7 +1207,7 @@ class LoadBalancer:
     def public_border_group(self):
         r"""Gets the public_border_group of this LoadBalancer.
 
-        参数解释：LB所属AZ组。
+        **参数解释**：公网边界组。  **取值范围**： - center：表示中心站点的公网边界组 - 边缘站点名称：表示边缘站点的公网边界组  [不支持该字段，请勿使用。](tag:hws_eu,hws_eu_wb,hws_test,fcs,dt,hcso_dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,srg,g42,hk_g42)
 
         :return: The public_border_group of this LoadBalancer.
         :rtype: str
@@ -1218,7 +1218,7 @@ class LoadBalancer:
     def public_border_group(self, public_border_group):
         r"""Sets the public_border_group of this LoadBalancer.
 
-        参数解释：LB所属AZ组。
+        **参数解释**：公网边界组。  **取值范围**： - center：表示中心站点的公网边界组 - 边缘站点名称：表示边缘站点的公网边界组  [不支持该字段，请勿使用。](tag:hws_eu,hws_eu_wb,hws_test,fcs,dt,hcso_dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,srg,g42,hk_g42)
 
         :param public_border_group: The public_border_group of this LoadBalancer.
         :type public_border_group: str
@@ -1229,7 +1229,7 @@ class LoadBalancer:
     def charge_mode(self):
         r"""Gets the charge_mode of this LoadBalancer.
 
-        参数解释：负载均衡器实例的计费模式。  取值范围： - flavor：按规格计费 - lcu：按使用量计费 - 空值：若是共享型表示免费实例。若是独享型则与flavor模式一致，都是按规格计费。  [不支持该字段，请勿使用。](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,fcs,dt,hcso_dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,srg,g42,hk_g42)
+        **参数解释**：负载均衡器实例的计费模式。  **取值范围**： - flavor：按规格计费。 - lcu：按使用量计费。 - 空值：若是共享型表示免费实例。若是独享型则与flavor模式一致，都是按规格计费。  [不支持该字段，请勿使用。](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,fcs,dt,hcso_dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,srg,g42,hk_g42)
 
         :return: The charge_mode of this LoadBalancer.
         :rtype: str
@@ -1240,7 +1240,7 @@ class LoadBalancer:
     def charge_mode(self, charge_mode):
         r"""Sets the charge_mode of this LoadBalancer.
 
-        参数解释：负载均衡器实例的计费模式。  取值范围： - flavor：按规格计费 - lcu：按使用量计费 - 空值：若是共享型表示免费实例。若是独享型则与flavor模式一致，都是按规格计费。  [不支持该字段，请勿使用。](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,fcs,dt,hcso_dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,srg,g42,hk_g42)
+        **参数解释**：负载均衡器实例的计费模式。  **取值范围**： - flavor：按规格计费。 - lcu：按使用量计费。 - 空值：若是共享型表示免费实例。若是独享型则与flavor模式一致，都是按规格计费。  [不支持该字段，请勿使用。](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,fcs,dt,hcso_dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,srg,g42,hk_g42)
 
         :param charge_mode: The charge_mode of this LoadBalancer.
         :type charge_mode: str
@@ -1251,7 +1251,7 @@ class LoadBalancer:
     def service_lb_mode(self):
         r"""Gets the service_lb_mode of this LoadBalancer.
 
-        参数解释：lb 模式，默认为lb，ep模式LB支持跨租户访问。  不支持该字段，请勿使用。
+        **参数解释**：LB模式。  **取值范围**： - lb：默认模式，不支持跨租户访问。 - ep：ep模式，LB支持跨租户访问。  不支持该字段，请勿使用。
 
         :return: The service_lb_mode of this LoadBalancer.
         :rtype: str
@@ -1262,7 +1262,7 @@ class LoadBalancer:
     def service_lb_mode(self, service_lb_mode):
         r"""Sets the service_lb_mode of this LoadBalancer.
 
-        参数解释：lb 模式，默认为lb，ep模式LB支持跨租户访问。  不支持该字段，请勿使用。
+        **参数解释**：LB模式。  **取值范围**： - lb：默认模式，不支持跨租户访问。 - ep：ep模式，LB支持跨租户访问。  不支持该字段，请勿使用。
 
         :param service_lb_mode: The service_lb_mode of this LoadBalancer.
         :type service_lb_mode: str
@@ -1273,7 +1273,7 @@ class LoadBalancer:
     def instance_type(self):
         r"""Gets the instance_type of this LoadBalancer.
 
-        参数解释：标识实例归属哪个内部服务。  不支持该字段，请勿使用。
+        **参数解释**：标识实例归属哪个内部服务。  **取值范围**：不涉及  不支持该字段，请勿使用。
 
         :return: The instance_type of this LoadBalancer.
         :rtype: str
@@ -1284,7 +1284,7 @@ class LoadBalancer:
     def instance_type(self, instance_type):
         r"""Sets the instance_type of this LoadBalancer.
 
-        参数解释：标识实例归属哪个内部服务。  不支持该字段，请勿使用。
+        **参数解释**：标识实例归属哪个内部服务。  **取值范围**：不涉及  不支持该字段，请勿使用。
 
         :param instance_type: The instance_type of this LoadBalancer.
         :type instance_type: str
@@ -1295,7 +1295,7 @@ class LoadBalancer:
     def instance_id(self):
         r"""Gets the instance_id of this LoadBalancer.
 
-        参数解释：标识实例绑定内部服务的实例id。  不支持该字段，请勿使用。
+        **参数解释**：标识实例绑定内部服务的实例ID。  **取值范围**：不涉及  不支持该字段，请勿使用。
 
         :return: The instance_id of this LoadBalancer.
         :rtype: str
@@ -1306,7 +1306,7 @@ class LoadBalancer:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this LoadBalancer.
 
-        参数解释：标识实例绑定内部服务的实例id。  不支持该字段，请勿使用。
+        **参数解释**：标识实例绑定内部服务的实例ID。  **取值范围**：不涉及  不支持该字段，请勿使用。
 
         :param instance_id: The instance_id of this LoadBalancer.
         :type instance_id: str
@@ -1317,7 +1317,7 @@ class LoadBalancer:
     def proxy_protocol_extensions(self):
         r"""Gets the proxy_protocol_extensions of this LoadBalancer.
 
-        参数解释：pp扩展。  不支持该字段，请勿使用。
+        **参数解释**：pp扩展。  不支持该字段，请勿使用。
 
         :return: The proxy_protocol_extensions of this LoadBalancer.
         :rtype: list[:class:`huaweicloudsdkelb.v3.ProxyProtocolExtension`]
@@ -1328,7 +1328,7 @@ class LoadBalancer:
     def proxy_protocol_extensions(self, proxy_protocol_extensions):
         r"""Sets the proxy_protocol_extensions of this LoadBalancer.
 
-        参数解释：pp扩展。  不支持该字段，请勿使用。
+        **参数解释**：pp扩展。  不支持该字段，请勿使用。
 
         :param proxy_protocol_extensions: The proxy_protocol_extensions of this LoadBalancer.
         :type proxy_protocol_extensions: list[:class:`huaweicloudsdkelb.v3.ProxyProtocolExtension`]
@@ -1339,7 +1339,7 @@ class LoadBalancer:
     def waf_failure_action(self):
         r"""Gets the waf_failure_action of this LoadBalancer.
 
-        参数解释：WAF故障时的流量处理策略。  约束限制：只有绑定了waf的LB实例，该字段才会生效。  取值范围：discard:丢弃，forward: 转发到后端。  默认取值：forward  [不支持该字段，请勿使用。](tag:hws_eu,hws_test,hcs,hcs_sm,hcso,hk_vdf,srg,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b,hcso_dt,dt,ocb,ctc,cmcc,tm,ct,sbc,g42,hws_ocb,hk_sbc,hk_tm,hk_g42)
+        **参数解释**：WAF故障时的流量处理策略。  **取值范围**：discard:丢弃，forward: 转发到后端。  [不支持该字段，请勿使用。](tag:hws_eu,hws_test,hcs,hcs_sm,hcso,hk_vdf,srg,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b,hcso_dt,dt,ocb,ctc,cmcc,tm,ct,sbc,g42,hws_ocb,hk_sbc,hk_tm,hk_g42)
 
         :return: The waf_failure_action of this LoadBalancer.
         :rtype: str
@@ -1350,7 +1350,7 @@ class LoadBalancer:
     def waf_failure_action(self, waf_failure_action):
         r"""Sets the waf_failure_action of this LoadBalancer.
 
-        参数解释：WAF故障时的流量处理策略。  约束限制：只有绑定了waf的LB实例，该字段才会生效。  取值范围：discard:丢弃，forward: 转发到后端。  默认取值：forward  [不支持该字段，请勿使用。](tag:hws_eu,hws_test,hcs,hcs_sm,hcso,hk_vdf,srg,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b,hcso_dt,dt,ocb,ctc,cmcc,tm,ct,sbc,g42,hws_ocb,hk_sbc,hk_tm,hk_g42)
+        **参数解释**：WAF故障时的流量处理策略。  **取值范围**：discard:丢弃，forward: 转发到后端。  [不支持该字段，请勿使用。](tag:hws_eu,hws_test,hcs,hcs_sm,hcso,hk_vdf,srg,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b,hcso_dt,dt,ocb,ctc,cmcc,tm,ct,sbc,g42,hws_ocb,hk_sbc,hk_tm,hk_g42)
 
         :param waf_failure_action: The waf_failure_action of this LoadBalancer.
         :type waf_failure_action: str
@@ -1361,7 +1361,7 @@ class LoadBalancer:
     def protection_status(self):
         r"""Gets the protection_status of this LoadBalancer.
 
-        参数解释：修改保护状态。  取值范围： - nonProtection: 不保护。 - consoleProtection: 控制台修改保护。  默认取值：nonProtection
+        **参数解释**：修改保护状态。  **取值范围**： - nonProtection：不保护。 - consoleProtection：控制台修改保护。
 
         :return: The protection_status of this LoadBalancer.
         :rtype: str
@@ -1372,7 +1372,7 @@ class LoadBalancer:
     def protection_status(self, protection_status):
         r"""Sets the protection_status of this LoadBalancer.
 
-        参数解释：修改保护状态。  取值范围： - nonProtection: 不保护。 - consoleProtection: 控制台修改保护。  默认取值：nonProtection
+        **参数解释**：修改保护状态。  **取值范围**： - nonProtection：不保护。 - consoleProtection：控制台修改保护。
 
         :param protection_status: The protection_status of this LoadBalancer.
         :type protection_status: str
@@ -1383,7 +1383,7 @@ class LoadBalancer:
     def protection_reason(self):
         r"""Gets the protection_reason of this LoadBalancer.
 
-        参数解释：设置保护的原因。作为protection_status的转态设置的原因。  约束限制：仅当protection_status为consoleProtection时有效。  取值范围：除'<'和'>'外通用Unicode字符集字符，最大255个字符。
+        **参数解释**：设置保护的原因。作为protection_status的转态设置的原因。  **取值范围**：除'<'和'>'外通用Unicode字符集字符，最大255个字符。
 
         :return: The protection_reason of this LoadBalancer.
         :rtype: str
@@ -1394,7 +1394,7 @@ class LoadBalancer:
     def protection_reason(self, protection_reason):
         r"""Sets the protection_reason of this LoadBalancer.
 
-        参数解释：设置保护的原因。作为protection_status的转态设置的原因。  约束限制：仅当protection_status为consoleProtection时有效。  取值范围：除'<'和'>'外通用Unicode字符集字符，最大255个字符。
+        **参数解释**：设置保护的原因。作为protection_status的转态设置的原因。  **取值范围**：除'<'和'>'外通用Unicode字符集字符，最大255个字符。
 
         :param protection_reason: The protection_reason of this LoadBalancer.
         :type protection_reason: str
@@ -1405,7 +1405,7 @@ class LoadBalancer:
     def log_group_id(self):
         r"""Gets the log_group_id of this LoadBalancer.
 
-        参数解释：LB所绑定的logtank对应的group id
+        **参数解释**：LB所关联的云日志服务（LTS）的日志组ID。  **取值范围**：不涉及
 
         :return: The log_group_id of this LoadBalancer.
         :rtype: str
@@ -1416,7 +1416,7 @@ class LoadBalancer:
     def log_group_id(self, log_group_id):
         r"""Sets the log_group_id of this LoadBalancer.
 
-        参数解释：LB所绑定的logtank对应的group id
+        **参数解释**：LB所关联的云日志服务（LTS）的日志组ID。  **取值范围**：不涉及
 
         :param log_group_id: The log_group_id of this LoadBalancer.
         :type log_group_id: str
@@ -1427,7 +1427,7 @@ class LoadBalancer:
     def log_topic_id(self):
         r"""Gets the log_topic_id of this LoadBalancer.
 
-        参数解释：LB所绑定的logtank对应的topic id
+        **参数解释**：LB所关联的云日志服务（LTS）的日志组下的日志流ID。  **取值范围**：不涉及
 
         :return: The log_topic_id of this LoadBalancer.
         :rtype: str
@@ -1438,7 +1438,7 @@ class LoadBalancer:
     def log_topic_id(self, log_topic_id):
         r"""Sets the log_topic_id of this LoadBalancer.
 
-        参数解释：LB所绑定的logtank对应的topic id
+        **参数解释**：LB所关联的云日志服务（LTS）的日志组下的日志流ID。  **取值范围**：不涉及
 
         :param log_topic_id: The log_topic_id of this LoadBalancer.
         :type log_topic_id: str

@@ -75,7 +75,7 @@ class QueryResRecordsDetailReq:
         :type res_instance_id: str
         :param charge_mode: 计费模式。 1 : 包年/包月3：按需10：预留实例11：节省计划 此参数不携带或者携带值为null时，返回所有计费模式的资源详单数据记录。
         :type charge_mode: int
-        :param bill_type: 账单类型。1：消费-新购 2：消费-续订 3：消费-变更 4：退款-退订 5：消费-使用 8：消费-自动续订 9：调账-补偿 14：消费-服务支持计划月末扣费 16：调账-扣费 18：消费-按月付费 20：退款-变更 23：消费-节省计划抵扣 24：退款-包年/包月转按需 103：消费-按年付费 此参数不携带或者携带值为null时，返回所有账单类型的资源详单数据记录。
+        :param bill_type: 账单类型。1：消费-新购 2：消费-续订 3：消费-变更 4：退款-退订 5：消费-使用 8：消费-自动续订 9：调账-补偿 14：消费-服务支持计划月末扣费 16：调账-扣费 18：消费-按月付费 20：退款-变更 23：消费-节省计划抵扣 24：退款-包年/包月转按需 25：消费-抹零补扣 103：消费-按年付费 此参数不携带或者携带值为null时，返回所有账单类型的资源详单数据记录。
         :type bill_type: int
         :param enterprise_project_id: 企业项目标识（企业项目ID）。 default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：null其余项目对应ID获取方法请参见[如何获取企业项目ID](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)。此参数不携带或携带值为空串或携带值为null时，不作为筛选条件。
         :type enterprise_project_id: str
@@ -295,7 +295,7 @@ class QueryResRecordsDetailReq:
     def bill_type(self):
         r"""Gets the bill_type of this QueryResRecordsDetailReq.
 
-        账单类型。1：消费-新购 2：消费-续订 3：消费-变更 4：退款-退订 5：消费-使用 8：消费-自动续订 9：调账-补偿 14：消费-服务支持计划月末扣费 16：调账-扣费 18：消费-按月付费 20：退款-变更 23：消费-节省计划抵扣 24：退款-包年/包月转按需 103：消费-按年付费 此参数不携带或者携带值为null时，返回所有账单类型的资源详单数据记录。
+        账单类型。1：消费-新购 2：消费-续订 3：消费-变更 4：退款-退订 5：消费-使用 8：消费-自动续订 9：调账-补偿 14：消费-服务支持计划月末扣费 16：调账-扣费 18：消费-按月付费 20：退款-变更 23：消费-节省计划抵扣 24：退款-包年/包月转按需 25：消费-抹零补扣 103：消费-按年付费 此参数不携带或者携带值为null时，返回所有账单类型的资源详单数据记录。
 
         :return: The bill_type of this QueryResRecordsDetailReq.
         :rtype: int
@@ -306,7 +306,7 @@ class QueryResRecordsDetailReq:
     def bill_type(self, bill_type):
         r"""Sets the bill_type of this QueryResRecordsDetailReq.
 
-        账单类型。1：消费-新购 2：消费-续订 3：消费-变更 4：退款-退订 5：消费-使用 8：消费-自动续订 9：调账-补偿 14：消费-服务支持计划月末扣费 16：调账-扣费 18：消费-按月付费 20：退款-变更 23：消费-节省计划抵扣 24：退款-包年/包月转按需 103：消费-按年付费 此参数不携带或者携带值为null时，返回所有账单类型的资源详单数据记录。
+        账单类型。1：消费-新购 2：消费-续订 3：消费-变更 4：退款-退订 5：消费-使用 8：消费-自动续订 9：调账-补偿 14：消费-服务支持计划月末扣费 16：调账-扣费 18：消费-按月付费 20：退款-变更 23：消费-节省计划抵扣 24：退款-包年/包月转按需 25：消费-抹零补扣 103：消费-按年付费 此参数不携带或者携带值为null时，返回所有账单类型的资源详单数据记录。
 
         :param bill_type: The bill_type of this QueryResRecordsDetailReq.
         :type bill_type: int

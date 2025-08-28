@@ -63,9 +63,9 @@ class SubJob:
         :type error_msg: str
         :param project_id: 项目ID
         :type project_id: str
-        :param resource_id: 参数解释：资源ID。
+        :param resource_id: **参数解释**：资源ID。
         :type resource_id: str
-        :param entities: 任务关联的资源列表
+        :param entities: **参数解释**：任务关联的资源列表。
         :type entities: list[:class:`huaweicloudsdkelb.v3.JobEntities`]
         """
         
@@ -284,7 +284,7 @@ class SubJob:
     def resource_id(self):
         r"""Gets the resource_id of this SubJob.
 
-        参数解释：资源ID。
+        **参数解释**：资源ID。
 
         :return: The resource_id of this SubJob.
         :rtype: str
@@ -295,7 +295,7 @@ class SubJob:
     def resource_id(self, resource_id):
         r"""Sets the resource_id of this SubJob.
 
-        参数解释：资源ID。
+        **参数解释**：资源ID。
 
         :param resource_id: The resource_id of this SubJob.
         :type resource_id: str
@@ -306,7 +306,7 @@ class SubJob:
     def entities(self):
         r"""Gets the entities of this SubJob.
 
-        任务关联的资源列表
+        **参数解释**：任务关联的资源列表。
 
         :return: The entities of this SubJob.
         :rtype: list[:class:`huaweicloudsdkelb.v3.JobEntities`]
@@ -317,7 +317,7 @@ class SubJob:
     def entities(self, entities):
         r"""Sets the entities of this SubJob.
 
-        任务关联的资源列表
+        **参数解释**：任务关联的资源列表。
 
         :param entities: The entities of this SubJob.
         :type entities: list[:class:`huaweicloudsdkelb.v3.JobEntities`]

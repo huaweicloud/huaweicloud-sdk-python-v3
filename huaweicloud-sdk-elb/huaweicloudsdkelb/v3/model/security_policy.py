@@ -45,23 +45,23 @@ class SecurityPolicy:
 
         The model defined in huaweicloud sdk
 
-        :param id: 自定义安全安全策略的id。
+        :param id: **参数解释**：自定义安全策略的ID。  **取值范围**：不涉及
         :type id: str
-        :param project_id: 自定义安全策略的项目id。
+        :param project_id: **参数解释**：自定义安全策略的项目ID。  **取值范围**：不涉及
         :type project_id: str
-        :param name: 自定义安全策略的名称
+        :param name: **参数解释**：自定义安全策略的名称。  **取值范围**：不涉及
         :type name: str
-        :param description: 自定义安全策略的描述。
+        :param description: **参数解释**：自定义安全策略的描述。  **取值范围**：不涉及
         :type description: str
-        :param listeners: 自定义安全策略关联的监听器。
+        :param listeners: **参数解释**：关联的监听器。
         :type listeners: list[:class:`huaweicloudsdkelb.v3.ListenerRef`]
-        :param protocols: 自定义安全策略的TLS协议列表。
+        :param protocols: **参数解释**：自定义安全策略的TLS协议列表。  **取值范围**：不涉及
         :type protocols: list[str]
-        :param ciphers: 自定义安全策略的加密套件列表。
+        :param ciphers: **参数解释**：自定义安全策略的加密套件列表。  **取值范围**：不涉及
         :type ciphers: list[str]
-        :param created_at: 自定义安全策略的创建时间。
+        :param created_at: **参数解释**：创建时间。  **取值范围**：格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，UTC时区。
         :type created_at: str
-        :param updated_at: 自定义安全策略的更新时间。
+        :param updated_at: **参数解释**：更新时间。  **取值范围**：格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，UTC时区。
         :type updated_at: str
         """
         
@@ -92,7 +92,7 @@ class SecurityPolicy:
     def id(self):
         r"""Gets the id of this SecurityPolicy.
 
-        自定义安全安全策略的id。
+        **参数解释**：自定义安全策略的ID。  **取值范围**：不涉及
 
         :return: The id of this SecurityPolicy.
         :rtype: str
@@ -103,7 +103,7 @@ class SecurityPolicy:
     def id(self, id):
         r"""Sets the id of this SecurityPolicy.
 
-        自定义安全安全策略的id。
+        **参数解释**：自定义安全策略的ID。  **取值范围**：不涉及
 
         :param id: The id of this SecurityPolicy.
         :type id: str
@@ -114,7 +114,7 @@ class SecurityPolicy:
     def project_id(self):
         r"""Gets the project_id of this SecurityPolicy.
 
-        自定义安全策略的项目id。
+        **参数解释**：自定义安全策略的项目ID。  **取值范围**：不涉及
 
         :return: The project_id of this SecurityPolicy.
         :rtype: str
@@ -125,7 +125,7 @@ class SecurityPolicy:
     def project_id(self, project_id):
         r"""Sets the project_id of this SecurityPolicy.
 
-        自定义安全策略的项目id。
+        **参数解释**：自定义安全策略的项目ID。  **取值范围**：不涉及
 
         :param project_id: The project_id of this SecurityPolicy.
         :type project_id: str
@@ -136,7 +136,7 @@ class SecurityPolicy:
     def name(self):
         r"""Gets the name of this SecurityPolicy.
 
-        自定义安全策略的名称
+        **参数解释**：自定义安全策略的名称。  **取值范围**：不涉及
 
         :return: The name of this SecurityPolicy.
         :rtype: str
@@ -147,7 +147,7 @@ class SecurityPolicy:
     def name(self, name):
         r"""Sets the name of this SecurityPolicy.
 
-        自定义安全策略的名称
+        **参数解释**：自定义安全策略的名称。  **取值范围**：不涉及
 
         :param name: The name of this SecurityPolicy.
         :type name: str
@@ -158,7 +158,7 @@ class SecurityPolicy:
     def description(self):
         r"""Gets the description of this SecurityPolicy.
 
-        自定义安全策略的描述。
+        **参数解释**：自定义安全策略的描述。  **取值范围**：不涉及
 
         :return: The description of this SecurityPolicy.
         :rtype: str
@@ -169,7 +169,7 @@ class SecurityPolicy:
     def description(self, description):
         r"""Sets the description of this SecurityPolicy.
 
-        自定义安全策略的描述。
+        **参数解释**：自定义安全策略的描述。  **取值范围**：不涉及
 
         :param description: The description of this SecurityPolicy.
         :type description: str
@@ -180,7 +180,7 @@ class SecurityPolicy:
     def listeners(self):
         r"""Gets the listeners of this SecurityPolicy.
 
-        自定义安全策略关联的监听器。
+        **参数解释**：关联的监听器。
 
         :return: The listeners of this SecurityPolicy.
         :rtype: list[:class:`huaweicloudsdkelb.v3.ListenerRef`]
@@ -191,7 +191,7 @@ class SecurityPolicy:
     def listeners(self, listeners):
         r"""Sets the listeners of this SecurityPolicy.
 
-        自定义安全策略关联的监听器。
+        **参数解释**：关联的监听器。
 
         :param listeners: The listeners of this SecurityPolicy.
         :type listeners: list[:class:`huaweicloudsdkelb.v3.ListenerRef`]
@@ -202,7 +202,7 @@ class SecurityPolicy:
     def protocols(self):
         r"""Gets the protocols of this SecurityPolicy.
 
-        自定义安全策略的TLS协议列表。
+        **参数解释**：自定义安全策略的TLS协议列表。  **取值范围**：不涉及
 
         :return: The protocols of this SecurityPolicy.
         :rtype: list[str]
@@ -213,7 +213,7 @@ class SecurityPolicy:
     def protocols(self, protocols):
         r"""Sets the protocols of this SecurityPolicy.
 
-        自定义安全策略的TLS协议列表。
+        **参数解释**：自定义安全策略的TLS协议列表。  **取值范围**：不涉及
 
         :param protocols: The protocols of this SecurityPolicy.
         :type protocols: list[str]
@@ -224,7 +224,7 @@ class SecurityPolicy:
     def ciphers(self):
         r"""Gets the ciphers of this SecurityPolicy.
 
-        自定义安全策略的加密套件列表。
+        **参数解释**：自定义安全策略的加密套件列表。  **取值范围**：不涉及
 
         :return: The ciphers of this SecurityPolicy.
         :rtype: list[str]
@@ -235,7 +235,7 @@ class SecurityPolicy:
     def ciphers(self, ciphers):
         r"""Sets the ciphers of this SecurityPolicy.
 
-        自定义安全策略的加密套件列表。
+        **参数解释**：自定义安全策略的加密套件列表。  **取值范围**：不涉及
 
         :param ciphers: The ciphers of this SecurityPolicy.
         :type ciphers: list[str]
@@ -246,7 +246,7 @@ class SecurityPolicy:
     def created_at(self):
         r"""Gets the created_at of this SecurityPolicy.
 
-        自定义安全策略的创建时间。
+        **参数解释**：创建时间。  **取值范围**：格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。
 
         :return: The created_at of this SecurityPolicy.
         :rtype: str
@@ -257,7 +257,7 @@ class SecurityPolicy:
     def created_at(self, created_at):
         r"""Sets the created_at of this SecurityPolicy.
 
-        自定义安全策略的创建时间。
+        **参数解释**：创建时间。  **取值范围**：格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。
 
         :param created_at: The created_at of this SecurityPolicy.
         :type created_at: str
@@ -268,7 +268,7 @@ class SecurityPolicy:
     def updated_at(self):
         r"""Gets the updated_at of this SecurityPolicy.
 
-        自定义安全策略的更新时间。
+        **参数解释**：更新时间。  **取值范围**：格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。
 
         :return: The updated_at of this SecurityPolicy.
         :rtype: str
@@ -279,7 +279,7 @@ class SecurityPolicy:
     def updated_at(self, updated_at):
         r"""Sets the updated_at of this SecurityPolicy.
 
-        自定义安全策略的更新时间。
+        **参数解释**：更新时间。  **取值范围**：格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。
 
         :param updated_at: The updated_at of this SecurityPolicy.
         :type updated_at: str

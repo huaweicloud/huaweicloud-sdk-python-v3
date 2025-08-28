@@ -43,6 +43,8 @@ from huaweicloudsdkas.v1.model.batch_unprotect_scaling_instances_response import
 from huaweicloudsdkas.v1.model.batch_unset_scaling_instances_stantby_request import BatchUnsetScalingInstancesStantbyRequest
 from huaweicloudsdkas.v1.model.batch_unset_scaling_instances_stantby_response import BatchUnsetScalingInstancesStantbyResponse
 from huaweicloudsdkas.v1.model.callback_life_cycle_hook_option import CallbackLifeCycleHookOption
+from huaweicloudsdkas.v1.model.close_warm_pool_request import CloseWarmPoolRequest
+from huaweicloudsdkas.v1.model.close_warm_pool_response import CloseWarmPoolResponse
 from huaweicloudsdkas.v1.model.create_group_scheduled_task_request import CreateGroupScheduledTaskRequest
 from huaweicloudsdkas.v1.model.create_group_scheduled_task_response import CreateGroupScheduledTaskResponse
 from huaweicloudsdkas.v1.model.create_life_cycle_hook_option import CreateLifeCycleHookOption
@@ -138,6 +140,8 @@ from huaweicloudsdkas.v1.model.list_scaling_tag_infos_by_tenant_id_request impor
 from huaweicloudsdkas.v1.model.list_scaling_tag_infos_by_tenant_id_response import ListScalingTagInfosByTenantIdResponse
 from huaweicloudsdkas.v1.model.list_scaling_v2_policies_request import ListScalingV2PoliciesRequest
 from huaweicloudsdkas.v1.model.list_scaling_v2_policies_response import ListScalingV2PoliciesResponse
+from huaweicloudsdkas.v1.model.list_warm_pool_instances_request import ListWarmPoolInstancesRequest
+from huaweicloudsdkas.v1.model.list_warm_pool_instances_response import ListWarmPoolInstancesResponse
 from huaweicloudsdkas.v1.model.matches import Matches
 from huaweicloudsdkas.v1.model.meta_data import MetaData
 from huaweicloudsdkas.v1.model.modify_lb import ModifyLb
@@ -156,6 +160,9 @@ from huaweicloudsdkas.v1.model.policy_instance_quotas import PolicyInstanceQuota
 from huaweicloudsdkas.v1.model.policy_instance_resources import PolicyInstanceResources
 from huaweicloudsdkas.v1.model.public_ip import PublicIp
 from huaweicloudsdkas.v1.model.publicip_result import PublicipResult
+from huaweicloudsdkas.v1.model.put_warm_pool_option import PutWarmPoolOption
+from huaweicloudsdkas.v1.model.put_warm_pool_request import PutWarmPoolRequest
+from huaweicloudsdkas.v1.model.put_warm_pool_response import PutWarmPoolResponse
 from huaweicloudsdkas.v1.model.query_tags_option import QueryTagsOption
 from huaweicloudsdkas.v1.model.resource_tags import ResourceTags
 from huaweicloudsdkas.v1.model.resources import Resources
@@ -201,6 +208,8 @@ from huaweicloudsdkas.v1.model.show_scaling_policy_request import ShowScalingPol
 from huaweicloudsdkas.v1.model.show_scaling_policy_response import ShowScalingPolicyResponse
 from huaweicloudsdkas.v1.model.show_scaling_v2_policy_request import ShowScalingV2PolicyRequest
 from huaweicloudsdkas.v1.model.show_scaling_v2_policy_response import ShowScalingV2PolicyResponse
+from huaweicloudsdkas.v1.model.show_warm_pool_request import ShowWarmPoolRequest
+from huaweicloudsdkas.v1.model.show_warm_pool_response import ShowWarmPoolResponse
 from huaweicloudsdkas.v1.model.tags_multi_value import TagsMultiValue
 from huaweicloudsdkas.v1.model.tags_single_value import TagsSingleValue
 from huaweicloudsdkas.v1.model.topics import Topics
@@ -221,4 +230,6 @@ from huaweicloudsdkas.v1.model.update_scaling_v2_policy_response import UpdateSc
 from huaweicloudsdkas.v1.model.update_scheduled_task_option import UpdateScheduledTaskOption
 from huaweicloudsdkas.v1.model.version_info import VersionInfo
 from huaweicloudsdkas.v1.model.vm_meta_data import VmMetaData
+from huaweicloudsdkas.v1.model.warm_pool_info import WarmPoolInfo
+from huaweicloudsdkas.v1.model.warm_pool_instance import WarmPoolInstance
 

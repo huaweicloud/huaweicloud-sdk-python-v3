@@ -31,9 +31,9 @@ class ApiVersionInfo:
 
         The model defined in huaweicloud sdk
 
-        :param id: API版本号。  取值：由高到低版本分别为v3，v2，v2.0。
+        :param id: **参数解释**：API版本号。  **取值范围**：由高到低版本分别为v3，v2，v2.0。
         :type id: str
-        :param status: API版本的状态。  取值： - CURRENT：当前版本。 - STABLE：稳定版本。 - DEPRECATED：废弃版本。  说明： 所有支持的API版本中最高版状态为CURRENT，其他版本状态为STABLE。
+        :param status: **参数解释**：API版本的状态。  **取值范围**： - CURRENT：当前版本，当前所支持的API版本中最高的版本。 - STABLE：稳定版本，其他可用版本。 - DEPRECATED：废弃版本。
         :type status: str
         """
         
@@ -50,7 +50,7 @@ class ApiVersionInfo:
     def id(self):
         r"""Gets the id of this ApiVersionInfo.
 
-        API版本号。  取值：由高到低版本分别为v3，v2，v2.0。
+        **参数解释**：API版本号。  **取值范围**：由高到低版本分别为v3，v2，v2.0。
 
         :return: The id of this ApiVersionInfo.
         :rtype: str
@@ -61,7 +61,7 @@ class ApiVersionInfo:
     def id(self, id):
         r"""Sets the id of this ApiVersionInfo.
 
-        API版本号。  取值：由高到低版本分别为v3，v2，v2.0。
+        **参数解释**：API版本号。  **取值范围**：由高到低版本分别为v3，v2，v2.0。
 
         :param id: The id of this ApiVersionInfo.
         :type id: str
@@ -72,7 +72,7 @@ class ApiVersionInfo:
     def status(self):
         r"""Gets the status of this ApiVersionInfo.
 
-        API版本的状态。  取值： - CURRENT：当前版本。 - STABLE：稳定版本。 - DEPRECATED：废弃版本。  说明： 所有支持的API版本中最高版状态为CURRENT，其他版本状态为STABLE。
+        **参数解释**：API版本的状态。  **取值范围**： - CURRENT：当前版本，当前所支持的API版本中最高的版本。 - STABLE：稳定版本，其他可用版本。 - DEPRECATED：废弃版本。
 
         :return: The status of this ApiVersionInfo.
         :rtype: str
@@ -83,7 +83,7 @@ class ApiVersionInfo:
     def status(self, status):
         r"""Sets the status of this ApiVersionInfo.
 
-        API版本的状态。  取值： - CURRENT：当前版本。 - STABLE：稳定版本。 - DEPRECATED：废弃版本。  说明： 所有支持的API版本中最高版状态为CURRENT，其他版本状态为STABLE。
+        **参数解释**：API版本的状态。  **取值范围**： - CURRENT：当前版本，当前所支持的API版本中最高的版本。 - STABLE：稳定版本，其他可用版本。 - DEPRECATED：废弃版本。
 
         :param status: The status of this ApiVersionInfo.
         :type status: str

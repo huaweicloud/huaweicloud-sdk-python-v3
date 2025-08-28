@@ -24,7 +24,6 @@ class VideoScriptsShowInfo:
         'model_asset_type': 'str',
         'voice_config': 'VoiceConfig',
         'video_config': 'VideoConfig',
-        'scene_asset_id': 'str',
         'priv_data': 'str',
         'background_music_config': 'BackgroundMusicConfig',
         'review_config': 'ReviewConfig',
@@ -41,7 +40,6 @@ class VideoScriptsShowInfo:
         'model_asset_type': 'model_asset_type',
         'voice_config': 'voice_config',
         'video_config': 'video_config',
-        'scene_asset_id': 'scene_asset_id',
         'priv_data': 'priv_data',
         'background_music_config': 'background_music_config',
         'review_config': 'review_config',
@@ -50,7 +48,7 @@ class VideoScriptsShowInfo:
         'shoot_scripts': 'shoot_scripts'
     }
 
-    def __init__(self, script_name=None, script_description=None, view_mode=None, model_asset_id=None, model_asset_type=None, voice_config=None, video_config=None, scene_asset_id=None, priv_data=None, background_music_config=None, review_config=None, audio_files=None, action_config=None, shoot_scripts=None):
+    def __init__(self, script_name=None, script_description=None, view_mode=None, model_asset_id=None, model_asset_type=None, voice_config=None, video_config=None, priv_data=None, background_music_config=None, review_config=None, audio_files=None, action_config=None, shoot_scripts=None):
         r"""VideoScriptsShowInfo
 
         The model defined in huaweicloud sdk
@@ -63,14 +61,12 @@ class VideoScriptsShowInfo:
         :type view_mode: str
         :param model_asset_id: **参数解释**： 数字人模型资产ID。 **约束限制**： 不涉及 **取值范围**： 字符长度0-64位。 **默认取值**： 不涉及
         :type model_asset_id: str
-        :param model_asset_type: **参数解释**： 数字人模型类型。 **约束限制**： 不涉及 **取值范围**： * HUMAN_MODEL_2D：分身数字人 * HUMAN_MODEL_3D：3D数字人  **默认取值**： 不涉及
+        :param model_asset_type: **参数解释**： 数字人模型类型。 **约束限制**： 不涉及 **取值范围**： * HUMAN_MODEL_2D：分身数字人  **默认取值**： 不涉及
         :type model_asset_type: str
         :param voice_config: 
         :type voice_config: :class:`huaweicloudsdkmetastudio.v1.VoiceConfig`
         :param video_config: 
         :type video_config: :class:`huaweicloudsdkmetastudio.v1.VideoConfig`
-        :param scene_asset_id: **参数解释**： 场景资产ID。 **约束限制**： 分身数字人视频制作不需要填写该参数。 **取值范围**： 字符长度0-64位 **默认取值**： 不涉及
-        :type scene_asset_id: str
         :param priv_data: **参数解释**： 私有数据，用户填写，原样带回。 **约束限制**： 不涉及 **取值范围**： 字符长度0-8192位 **默认取值**： 不涉及
         :type priv_data: str
         :param background_music_config: 
@@ -94,7 +90,6 @@ class VideoScriptsShowInfo:
         self._model_asset_type = None
         self._voice_config = None
         self._video_config = None
-        self._scene_asset_id = None
         self._priv_data = None
         self._background_music_config = None
         self._review_config = None
@@ -117,8 +112,6 @@ class VideoScriptsShowInfo:
             self.voice_config = voice_config
         if video_config is not None:
             self.video_config = video_config
-        if scene_asset_id is not None:
-            self.scene_asset_id = scene_asset_id
         if priv_data is not None:
             self.priv_data = priv_data
         if background_music_config is not None:
@@ -224,7 +217,7 @@ class VideoScriptsShowInfo:
     def model_asset_type(self):
         r"""Gets the model_asset_type of this VideoScriptsShowInfo.
 
-        **参数解释**： 数字人模型类型。 **约束限制**： 不涉及 **取值范围**： * HUMAN_MODEL_2D：分身数字人 * HUMAN_MODEL_3D：3D数字人  **默认取值**： 不涉及
+        **参数解释**： 数字人模型类型。 **约束限制**： 不涉及 **取值范围**： * HUMAN_MODEL_2D：分身数字人  **默认取值**： 不涉及
 
         :return: The model_asset_type of this VideoScriptsShowInfo.
         :rtype: str
@@ -235,7 +228,7 @@ class VideoScriptsShowInfo:
     def model_asset_type(self, model_asset_type):
         r"""Sets the model_asset_type of this VideoScriptsShowInfo.
 
-        **参数解释**： 数字人模型类型。 **约束限制**： 不涉及 **取值范围**： * HUMAN_MODEL_2D：分身数字人 * HUMAN_MODEL_3D：3D数字人  **默认取值**： 不涉及
+        **参数解释**： 数字人模型类型。 **约束限制**： 不涉及 **取值范围**： * HUMAN_MODEL_2D：分身数字人  **默认取值**： 不涉及
 
         :param model_asset_type: The model_asset_type of this VideoScriptsShowInfo.
         :type model_asset_type: str
@@ -277,28 +270,6 @@ class VideoScriptsShowInfo:
         :type video_config: :class:`huaweicloudsdkmetastudio.v1.VideoConfig`
         """
         self._video_config = video_config
-
-    @property
-    def scene_asset_id(self):
-        r"""Gets the scene_asset_id of this VideoScriptsShowInfo.
-
-        **参数解释**： 场景资产ID。 **约束限制**： 分身数字人视频制作不需要填写该参数。 **取值范围**： 字符长度0-64位 **默认取值**： 不涉及
-
-        :return: The scene_asset_id of this VideoScriptsShowInfo.
-        :rtype: str
-        """
-        return self._scene_asset_id
-
-    @scene_asset_id.setter
-    def scene_asset_id(self, scene_asset_id):
-        r"""Sets the scene_asset_id of this VideoScriptsShowInfo.
-
-        **参数解释**： 场景资产ID。 **约束限制**： 分身数字人视频制作不需要填写该参数。 **取值范围**： 字符长度0-64位 **默认取值**： 不涉及
-
-        :param scene_asset_id: The scene_asset_id of this VideoScriptsShowInfo.
-        :type scene_asset_id: str
-        """
-        self._scene_asset_id = scene_asset_id
 
     @property
     def priv_data(self):

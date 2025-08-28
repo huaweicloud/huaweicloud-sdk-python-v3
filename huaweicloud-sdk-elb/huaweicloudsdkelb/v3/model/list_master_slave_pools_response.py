@@ -34,11 +34,11 @@ class ListMasterSlavePoolsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param request_id: 请求ID。  注：自动生成 。
+        :param request_id: **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
         :type request_id: str
         :param page_info: 
         :type page_info: :class:`huaweicloudsdkelb.v3.PageInfo`
-        :param pools: 后端服务器组列表。
+        :param pools: **参数解释**：后端服务器组列表。
         :type pools: list[:class:`huaweicloudsdkelb.v3.MasterSlavePool`]
         """
         
@@ -60,7 +60,7 @@ class ListMasterSlavePoolsResponse(SdkResponse):
     def request_id(self):
         r"""Gets the request_id of this ListMasterSlavePoolsResponse.
 
-        请求ID。  注：自动生成 。
+        **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
 
         :return: The request_id of this ListMasterSlavePoolsResponse.
         :rtype: str
@@ -71,7 +71,7 @@ class ListMasterSlavePoolsResponse(SdkResponse):
     def request_id(self, request_id):
         r"""Sets the request_id of this ListMasterSlavePoolsResponse.
 
-        请求ID。  注：自动生成 。
+        **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
 
         :param request_id: The request_id of this ListMasterSlavePoolsResponse.
         :type request_id: str
@@ -100,7 +100,7 @@ class ListMasterSlavePoolsResponse(SdkResponse):
     def pools(self):
         r"""Gets the pools of this ListMasterSlavePoolsResponse.
 
-        后端服务器组列表。
+        **参数解释**：后端服务器组列表。
 
         :return: The pools of this ListMasterSlavePoolsResponse.
         :rtype: list[:class:`huaweicloudsdkelb.v3.MasterSlavePool`]
@@ -111,7 +111,7 @@ class ListMasterSlavePoolsResponse(SdkResponse):
     def pools(self, pools):
         r"""Sets the pools of this ListMasterSlavePoolsResponse.
 
-        后端服务器组列表。
+        **参数解释**：后端服务器组列表。
 
         :param pools: The pools of this ListMasterSlavePoolsResponse.
         :type pools: list[:class:`huaweicloudsdkelb.v3.MasterSlavePool`]

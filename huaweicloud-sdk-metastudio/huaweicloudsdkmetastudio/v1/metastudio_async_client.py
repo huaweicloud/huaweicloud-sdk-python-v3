@@ -3286,6 +3286,9 @@ class MetaStudioAsyncClient(Client):
             query_params.append(('job_type', local_var_params['job_type']))
         if 'job_id' in local_var_params:
             query_params.append(('job_id', local_var_params['job_id']))
+        if 'job_ids' in local_var_params:
+            query_params.append(('job_ids', local_var_params['job_ids']))
+            collection_formats['job_ids'] = 'csv'
 
         header_params = {}
         if 'x_app_user_id' in local_var_params:
@@ -3834,6 +3837,767 @@ class MetaStudioAsyncClient(Client):
         form_params = {}
 
         body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_document_async(self, request):
+        r"""上传文档
+
+        该接口用于上传文档。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateDocument
+        :type request: :class:`huaweicloudsdkmetastudio.v1.CreateDocumentRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.CreateDocumentResponse`
+        """
+        http_info = self._create_document_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_document_async_invoker(self, request):
+        http_info = self._create_document_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_document_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/wise-brain-manager/document",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDocumentResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'knowledge_library_id' in local_var_params:
+            query_params.append(('knowledge_library_id', local_var_params['knowledge_library_id']))
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+        if 'file' in local_var_params:
+            form_params['file'] = local_var_params['file']
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['multipart/form-data'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_document_async(self, request):
+        r"""批量删除文档
+
+        该接口用于批量删除文档。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteDocument
+        :type request: :class:`huaweicloudsdkmetastudio.v1.DeleteDocumentRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.DeleteDocumentResponse`
+        """
+        http_info = self._delete_document_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_document_async_invoker(self, request):
+        http_info = self._delete_document_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_document_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/wise-brain-manager/document/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDocumentResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def download_document_async(self, request):
+        r"""下载文档
+
+        该接口用于下载文档。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DownloadDocument
+        :type request: :class:`huaweicloudsdkmetastudio.v1.DownloadDocumentRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.DownloadDocumentResponse`
+        """
+        http_info = self._download_document_http_info(request)
+        return self._call_api(**http_info)
+
+    def download_document_async_invoker(self, request):
+        http_info = self._download_document_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _download_document_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/wise-brain-manager/document/{document_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DownloadDocumentResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'document_id' in local_var_params:
+            path_params['document_id'] = local_var_params['document_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_document_info_async(self, request):
+        r"""查询文档列表
+
+        该接口用于分页查询文档列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListDocumentInfo
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ListDocumentInfoRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ListDocumentInfoResponse`
+        """
+        http_info = self._list_document_info_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_document_info_async_invoker(self, request):
+        http_info = self._list_document_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_document_info_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/wise-brain-manager/document",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDocumentInfoResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'knowledge_library_id' in local_var_params:
+            query_params.append(('knowledge_library_id', local_var_params['knowledge_library_id']))
+        if 'file_name' in local_var_params:
+            query_params.append(('file_name', local_var_params['file_name']))
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_document_info_async(self, request):
+        r"""查询文档详情
+
+        该接口用于查询文档详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowDocumentInfo
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ShowDocumentInfoRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ShowDocumentInfoResponse`
+        """
+        http_info = self._show_document_info_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_document_info_async_invoker(self, request):
+        http_info = self._show_document_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_document_info_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/wise-brain-manager/document/detail/{document_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDocumentInfoResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'document_id' in local_var_params:
+            path_params['document_id'] = local_var_params['document_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_document_async(self, request):
+        r"""修改文档
+
+        该接口用于修改文档
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateDocument
+        :type request: :class:`huaweicloudsdkmetastudio.v1.UpdateDocumentRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.UpdateDocumentResponse`
+        """
+        http_info = self._update_document_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_document_async_invoker(self, request):
+        http_info = self._update_document_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_document_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/wise-brain-manager/document/update/{document_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDocumentResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'document_id' in local_var_params:
+            path_params['document_id'] = local_var_params['document_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+        if 'file' in local_var_params:
+            form_params['file'] = local_var_params['file']
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['multipart/form-data'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_document_segment_async(self, request):
+        r"""分页查询文档分段信息
+
+        该接口用于分页查询文档分段信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListDocumentSegment
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ListDocumentSegmentRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ListDocumentSegmentResponse`
+        """
+        http_info = self._list_document_segment_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_document_segment_async_invoker(self, request):
+        http_info = self._list_document_segment_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_document_segment_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/wise-brain-manager/document-segment/list",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDocumentSegmentResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'document_id' in local_var_params:
+            query_params.append(('document_id', local_var_params['document_id']))
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def preview_document_segment_async(self, request):
+        r"""文档分段效果预览
+
+        该接口用于文档分段效果预览。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for PreviewDocumentSegment
+        :type request: :class:`huaweicloudsdkmetastudio.v1.PreviewDocumentSegmentRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.PreviewDocumentSegmentResponse`
+        """
+        http_info = self._preview_document_segment_http_info(request)
+        return self._call_api(**http_info)
+
+    def preview_document_segment_async_invoker(self, request):
+        http_info = self._preview_document_segment_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _preview_document_segment_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/wise-brain-manager/document-segment/preview",
+            "request_type": request.__class__.__name__,
+            "response_type": "PreviewDocumentSegmentResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'document_id' in local_var_params:
+            query_params.append(('document_id', local_var_params['document_id']))
+        if 'preview_lines' in local_var_params:
+            query_params.append(('preview_lines', local_var_params['preview_lines']))
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def start_document_segment_async(self, request):
+        r"""开始文档分段
+
+        该接口用于开始文档分段任务。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for StartDocumentSegment
+        :type request: :class:`huaweicloudsdkmetastudio.v1.StartDocumentSegmentRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.StartDocumentSegmentResponse`
+        """
+        http_info = self._start_document_segment_http_info(request)
+        return self._call_api(**http_info)
+
+    def start_document_segment_async_invoker(self, request):
+        http_info = self._start_document_segment_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _start_document_segment_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/wise-brain-manager/document-segment/segment",
+            "request_type": request.__class__.__name__,
+            "response_type": "StartDocumentSegmentResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_document_segment_info_async(self, request):
+        r"""修改文档分段内容
+
+        该接口用于文档分段内容。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateDocumentSegmentInfo
+        :type request: :class:`huaweicloudsdkmetastudio.v1.UpdateDocumentSegmentInfoRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.UpdateDocumentSegmentInfoResponse`
+        """
+        http_info = self._update_document_segment_info_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_document_segment_info_async_invoker(self, request):
+        http_info = self._update_document_segment_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_document_segment_info_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/wise-brain-manager/document-segment/update",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDocumentSegmentInfoResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_document_segment_param_async(self, request):
+        r"""更新文档分段配置
+
+        该接口用于更新文档分段配置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateDocumentSegmentParam
+        :type request: :class:`huaweicloudsdkmetastudio.v1.UpdateDocumentSegmentParamRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.UpdateDocumentSegmentParamResponse`
+        """
+        http_info = self._update_document_segment_param_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_document_segment_param_async_invoker(self, request):
+        http_info = self._update_document_segment_param_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_document_segment_param_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/wise-brain-manager/document-segment/{document_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDocumentSegmentParamResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'document_id' in local_var_params:
+            path_params['document_id'] = local_var_params['document_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -4951,6 +5715,690 @@ class MetaStudioAsyncClient(Client):
 
         return http_info
 
+    def create_instruction_library_async(self, request):
+        r"""创建指令集
+
+        该接口用于创建指令集。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateInstructionLibrary
+        :type request: :class:`huaweicloudsdkmetastudio.v1.CreateInstructionLibraryRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.CreateInstructionLibraryResponse`
+        """
+        http_info = self._create_instruction_library_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_instruction_library_async_invoker(self, request):
+        http_info = self._create_instruction_library_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_instruction_library_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/wise-brain-manager/instruction-library",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateInstructionLibraryResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_instruction_library_async(self, request):
+        r"""删除指令集
+
+        该接口用于删除指令集。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteInstructionLibrary
+        :type request: :class:`huaweicloudsdkmetastudio.v1.DeleteInstructionLibraryRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.DeleteInstructionLibraryResponse`
+        """
+        http_info = self._delete_instruction_library_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_instruction_library_async_invoker(self, request):
+        http_info = self._delete_instruction_library_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_instruction_library_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/wise-brain-manager/instruction-library/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteInstructionLibraryResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_instruction_library_async(self, request):
+        r"""查询指令集列表
+
+        该接口用于查询指令集列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListInstructionLibrary
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ListInstructionLibraryRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ListInstructionLibraryResponse`
+        """
+        http_info = self._list_instruction_library_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_instruction_library_async_invoker(self, request):
+        http_info = self._list_instruction_library_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_instruction_library_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/wise-brain-manager/instruction-library",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListInstructionLibraryResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_instruction_library_async(self, request):
+        r"""查询指令集详情
+
+        该接口用于查询指令集详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowInstructionLibrary
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ShowInstructionLibraryRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ShowInstructionLibraryResponse`
+        """
+        http_info = self._show_instruction_library_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_instruction_library_async_invoker(self, request):
+        http_info = self._show_instruction_library_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_instruction_library_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/wise-brain-manager/instruction-library/{instruction_library_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowInstructionLibraryResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instruction_library_id' in local_var_params:
+            path_params['instruction_library_id'] = local_var_params['instruction_library_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_instruction_library_async(self, request):
+        r"""修改指令集
+
+        该接口用于修改指令集。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateInstructionLibrary
+        :type request: :class:`huaweicloudsdkmetastudio.v1.UpdateInstructionLibraryRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.UpdateInstructionLibraryResponse`
+        """
+        http_info = self._update_instruction_library_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_instruction_library_async_invoker(self, request):
+        http_info = self._update_instruction_library_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_instruction_library_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/wise-brain-manager/instruction-library/{instruction_library_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateInstructionLibraryResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instruction_library_id' in local_var_params:
+            path_params['instruction_library_id'] = local_var_params['instruction_library_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_instruction_async(self, request):
+        r"""创建指令
+
+        该接口用于创建指令。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateInstruction
+        :type request: :class:`huaweicloudsdkmetastudio.v1.CreateInstructionRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.CreateInstructionResponse`
+        """
+        http_info = self._create_instruction_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_instruction_async_invoker(self, request):
+        http_info = self._create_instruction_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_instruction_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/wise-brain-manager/instruction",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateInstructionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_instruction_async(self, request):
+        r"""删除指令
+
+        该接口用于删除指令。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteInstruction
+        :type request: :class:`huaweicloudsdkmetastudio.v1.DeleteInstructionRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.DeleteInstructionResponse`
+        """
+        http_info = self._delete_instruction_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_instruction_async_invoker(self, request):
+        http_info = self._delete_instruction_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_instruction_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/wise-brain-manager/instruction/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteInstructionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_instruction_async(self, request):
+        r"""查询指令列表
+
+        该接口用于查询指令列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListInstruction
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ListInstructionRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ListInstructionResponse`
+        """
+        http_info = self._list_instruction_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_instruction_async_invoker(self, request):
+        http_info = self._list_instruction_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_instruction_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/wise-brain-manager/instruction",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListInstructionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'instruction_library_id' in local_var_params:
+            query_params.append(('instruction_library_id', local_var_params['instruction_library_id']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_instruction_async(self, request):
+        r"""查询指令详情
+
+        该接口用于查询指令详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowInstruction
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ShowInstructionRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ShowInstructionResponse`
+        """
+        http_info = self._show_instruction_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_instruction_async_invoker(self, request):
+        http_info = self._show_instruction_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_instruction_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/wise-brain-manager/instruction/{instruction_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowInstructionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instruction_id' in local_var_params:
+            path_params['instruction_id'] = local_var_params['instruction_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_instruction_async(self, request):
+        r"""修改指令
+
+        该接口用于修改指令。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateInstruction
+        :type request: :class:`huaweicloudsdkmetastudio.v1.UpdateInstructionRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.UpdateInstructionResponse`
+        """
+        http_info = self._update_instruction_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_instruction_async_invoker(self, request):
+        http_info = self._update_instruction_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_instruction_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/wise-brain-manager/instruction/{instruction_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateInstructionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instruction_id' in local_var_params:
+            path_params['instruction_id'] = local_var_params['instruction_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_interaction_rule_group_async(self, request):
         r"""创建智能直播间互动规则库
 
@@ -5196,6 +6644,73 @@ class MetaStudioAsyncClient(Client):
         path_params = {}
         if 'group_id' in local_var_params:
             path_params['group_id'] = local_var_params['group_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_interactive_chat_async(self, request):
+        r"""交互助手对话
+
+        该接口用于交互助手对话。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateInteractiveChat
+        :type request: :class:`huaweicloudsdkmetastudio.v1.CreateInteractiveChatRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.CreateInteractiveChatResponse`
+        """
+        http_info = self._create_interactive_chat_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_interactive_chat_async_invoker(self, request):
+        http_info = self._create_interactive_chat_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_interactive_chat_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/wise-brain-manager/chat",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateInteractiveChatResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
 
         query_params = []
 
@@ -5604,6 +7119,418 @@ class MetaStudioAsyncClient(Client):
         path_params = {}
         if 'intent_id' in local_var_params:
             path_params['intent_id'] = local_var_params['intent_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def check_recall_knowledge_library_async(self, request):
+        r"""知识库召回测试
+
+        该接口用于知识库召回测试。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CheckRecallKnowledgeLibrary
+        :type request: :class:`huaweicloudsdkmetastudio.v1.CheckRecallKnowledgeLibraryRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.CheckRecallKnowledgeLibraryResponse`
+        """
+        http_info = self._check_recall_knowledge_library_http_info(request)
+        return self._call_api(**http_info)
+
+    def check_recall_knowledge_library_async_invoker(self, request):
+        http_info = self._check_recall_knowledge_library_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _check_recall_knowledge_library_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/wise-brain-manager/knowledge-library/recall",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckRecallKnowledgeLibraryResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_knowledge_library_async(self, request):
+        r"""创建知识库
+
+        该接口用于创建知识库。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateKnowledgeLibrary
+        :type request: :class:`huaweicloudsdkmetastudio.v1.CreateKnowledgeLibraryRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.CreateKnowledgeLibraryResponse`
+        """
+        http_info = self._create_knowledge_library_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_knowledge_library_async_invoker(self, request):
+        http_info = self._create_knowledge_library_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_knowledge_library_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/wise-brain-manager/knowledge-library",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateKnowledgeLibraryResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_knowledge_library_async(self, request):
+        r"""删除知识库
+
+        该接口用于删除知识库。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteKnowledgeLibrary
+        :type request: :class:`huaweicloudsdkmetastudio.v1.DeleteKnowledgeLibraryRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.DeleteKnowledgeLibraryResponse`
+        """
+        http_info = self._delete_knowledge_library_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_knowledge_library_async_invoker(self, request):
+        http_info = self._delete_knowledge_library_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_knowledge_library_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/wise-brain-manager/knowledge-library/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteKnowledgeLibraryResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_knowledge_library_async(self, request):
+        r"""查询知识库列表
+
+        该接口用于查询知识库列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListKnowledgeLibrary
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ListKnowledgeLibraryRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ListKnowledgeLibraryResponse`
+        """
+        http_info = self._list_knowledge_library_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_knowledge_library_async_invoker(self, request):
+        http_info = self._list_knowledge_library_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_knowledge_library_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/wise-brain-manager/knowledge-library",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListKnowledgeLibraryResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'language' in local_var_params:
+            query_params.append(('language', local_var_params['language']))
+        if 'knowledge_type' in local_var_params:
+            query_params.append(('knowledge_type', local_var_params['knowledge_type']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_knowledge_library_async(self, request):
+        r"""查询知识库详情
+
+        该接口用于查询知识库详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowKnowledgeLibrary
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ShowKnowledgeLibraryRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ShowKnowledgeLibraryResponse`
+        """
+        http_info = self._show_knowledge_library_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_knowledge_library_async_invoker(self, request):
+        http_info = self._show_knowledge_library_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_knowledge_library_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/wise-brain-manager/knowledge-library/{knowledge_library_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowKnowledgeLibraryResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'knowledge_library_id' in local_var_params:
+            path_params['knowledge_library_id'] = local_var_params['knowledge_library_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_knowledge_library_async(self, request):
+        r"""修改知识库
+
+        该接口用于修改知识库。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateKnowledgeLibrary
+        :type request: :class:`huaweicloudsdkmetastudio.v1.UpdateKnowledgeLibraryRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.UpdateKnowledgeLibraryResponse`
+        """
+        http_info = self._update_knowledge_library_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_knowledge_library_async_invoker(self, request):
+        http_info = self._update_knowledge_library_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_knowledge_library_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/wise-brain-manager/knowledge-library/{knowledge_library_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateKnowledgeLibraryResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'knowledge_library_id' in local_var_params:
+            path_params['knowledge_library_id'] = local_var_params['knowledge_library_id']
 
         query_params = []
 
@@ -6930,6 +8857,688 @@ class MetaStudioAsyncClient(Client):
 
         return http_info
 
+    def create_llm_config_async(self, request):
+        r"""创建大语言模型配置
+
+        该接口用于创建大语言模型配置。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateLlmConfig
+        :type request: :class:`huaweicloudsdkmetastudio.v1.CreateLlmConfigRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.CreateLlmConfigResponse`
+        """
+        http_info = self._create_llm_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_llm_config_async_invoker(self, request):
+        http_info = self._create_llm_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_llm_config_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/wise-brain-manager/llm-config",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateLlmConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_llm_config_async(self, request):
+        r"""删除大语言模型配置
+
+        该接口用于删除大语言模型配置。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteLlmConfig
+        :type request: :class:`huaweicloudsdkmetastudio.v1.DeleteLlmConfigRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.DeleteLlmConfigResponse`
+        """
+        http_info = self._delete_llm_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_llm_config_async_invoker(self, request):
+        http_info = self._delete_llm_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_llm_config_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/wise-brain-manager/llm-config/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteLlmConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_llm_config_async(self, request):
+        r"""查询大语言模型配置列表
+
+        该接口用于查询大语言模型配置列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListLlmConfig
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ListLlmConfigRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ListLlmConfigResponse`
+        """
+        http_info = self._list_llm_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_llm_config_async_invoker(self, request):
+        http_info = self._list_llm_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_llm_config_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/wise-brain-manager/llm-config",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListLlmConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_llm_config_async(self, request):
+        r"""查询大语言模型配置详情
+
+        该接口用于查询大语言模型配置详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowLlmConfig
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ShowLlmConfigRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ShowLlmConfigResponse`
+        """
+        http_info = self._show_llm_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_llm_config_async_invoker(self, request):
+        http_info = self._show_llm_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_llm_config_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/wise-brain-manager/llm-config/{llm_config_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowLlmConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'llm_config_id' in local_var_params:
+            path_params['llm_config_id'] = local_var_params['llm_config_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_llm_config_async(self, request):
+        r"""修改大语言模型配置
+
+        该接口用于修改大语言模型配置。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateLlmConfig
+        :type request: :class:`huaweicloudsdkmetastudio.v1.UpdateLlmConfigRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.UpdateLlmConfigResponse`
+        """
+        http_info = self._update_llm_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_llm_config_async_invoker(self, request):
+        http_info = self._update_llm_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_llm_config_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/wise-brain-manager/llm-config/{llm_config_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateLlmConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'llm_config_id' in local_var_params:
+            path_params['llm_config_id'] = local_var_params['llm_config_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_mcp_server_async(self, request):
+        r"""创建MCP服务端对接配置
+
+        该接口用于创建MCP服务端对接配置。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateMcpServer
+        :type request: :class:`huaweicloudsdkmetastudio.v1.CreateMcpServerRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.CreateMcpServerResponse`
+        """
+        http_info = self._create_mcp_server_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_mcp_server_async_invoker(self, request):
+        http_info = self._create_mcp_server_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_mcp_server_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/wise-brain-manager/mcp-server",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateMcpServerResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_mcp_server_async(self, request):
+        r"""删除MCP服务端对接配置
+
+        该接口用于删除MCP服务端对接配置。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteMcpServer
+        :type request: :class:`huaweicloudsdkmetastudio.v1.DeleteMcpServerRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.DeleteMcpServerResponse`
+        """
+        http_info = self._delete_mcp_server_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_mcp_server_async_invoker(self, request):
+        http_info = self._delete_mcp_server_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_mcp_server_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/wise-brain-manager/mcp-server/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteMcpServerResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_mcp_server_async(self, request):
+        r"""查询MCP服务端对接配置列表
+
+        该接口用于查询MCP服务端对接配置列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListMcpServer
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ListMcpServerRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ListMcpServerResponse`
+        """
+        http_info = self._list_mcp_server_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_mcp_server_async_invoker(self, request):
+        http_info = self._list_mcp_server_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_mcp_server_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/wise-brain-manager/mcp-server",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListMcpServerResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_mcp_server_async(self, request):
+        r"""查询MCP服务端对接配置详情
+
+        该接口用于查询MCP服务端对接配置详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowMcpServer
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ShowMcpServerRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ShowMcpServerResponse`
+        """
+        http_info = self._show_mcp_server_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_mcp_server_async_invoker(self, request):
+        http_info = self._show_mcp_server_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_mcp_server_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/wise-brain-manager/mcp-server/{mcp_server_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowMcpServerResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'mcp_server_id' in local_var_params:
+            path_params['mcp_server_id'] = local_var_params['mcp_server_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_mcp_server_async(self, request):
+        r"""修改MCP服务端对接配置
+
+        该接口用于修改MCP服务端对接配置。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateMcpServer
+        :type request: :class:`huaweicloudsdkmetastudio.v1.UpdateMcpServerRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.UpdateMcpServerResponse`
+        """
+        http_info = self._update_mcp_server_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_mcp_server_async_invoker(self, request):
+        http_info = self._update_mcp_server_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_mcp_server_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/wise-brain-manager/mcp-server/{mcp_server_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateMcpServerResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'mcp_server_id' in local_var_params:
+            path_params['mcp_server_id'] = local_var_params['mcp_server_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_once_code_async(self, request):
         r"""创建一次性鉴权码
 
@@ -8102,6 +10711,414 @@ class MetaStudioAsyncClient(Client):
 
         return http_info
 
+    def create_plugin_config_async(self, request):
+        r"""创建插件配置
+
+        该接口用于创建插件配置。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreatePluginConfig
+        :type request: :class:`huaweicloudsdkmetastudio.v1.CreatePluginConfigRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.CreatePluginConfigResponse`
+        """
+        http_info = self._create_plugin_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_plugin_config_async_invoker(self, request):
+        http_info = self._create_plugin_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_plugin_config_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/wise-brain-manager/plugin-config",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePluginConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_plugin_config_async(self, request):
+        r"""删除插件配置
+
+        该接口用于删除插件配置。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeletePluginConfig
+        :type request: :class:`huaweicloudsdkmetastudio.v1.DeletePluginConfigRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.DeletePluginConfigResponse`
+        """
+        http_info = self._delete_plugin_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_plugin_config_async_invoker(self, request):
+        http_info = self._delete_plugin_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_plugin_config_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/wise-brain-manager/plugin-config/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeletePluginConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_plugin_config_async(self, request):
+        r"""查询插件配置列表
+
+        该接口用于查询插件配置列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListPluginConfig
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ListPluginConfigRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ListPluginConfigResponse`
+        """
+        http_info = self._list_plugin_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_plugin_config_async_invoker(self, request):
+        http_info = self._list_plugin_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_plugin_config_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/wise-brain-manager/plugin-config",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPluginConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'plugin_provider' in local_var_params:
+            query_params.append(('plugin_provider', local_var_params['plugin_provider']))
+        if 'plugin_type' in local_var_params:
+            query_params.append(('plugin_type', local_var_params['plugin_type']))
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_plugin_config_async(self, request):
+        r"""查询插件配置详情
+
+        该接口用于查询插件配置详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowPluginConfig
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ShowPluginConfigRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ShowPluginConfigResponse`
+        """
+        http_info = self._show_plugin_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_plugin_config_async_invoker(self, request):
+        http_info = self._show_plugin_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_plugin_config_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/wise-brain-manager/plugin-config/{plugin_config_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPluginConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'plugin_config_id' in local_var_params:
+            path_params['plugin_config_id'] = local_var_params['plugin_config_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_plugin_config_default_info_async(self, request):
+        r"""查询插件配置默认信息
+
+        该接口用于查询插件配置默认信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowPluginConfigDefaultInfo
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ShowPluginConfigDefaultInfoRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ShowPluginConfigDefaultInfoResponse`
+        """
+        http_info = self._show_plugin_config_default_info_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_plugin_config_default_info_async_invoker(self, request):
+        http_info = self._show_plugin_config_default_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_plugin_config_default_info_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/wise-brain-manager/plugin-config-default",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPluginConfigDefaultInfoResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_plugin_config_async(self, request):
+        r"""修改插件配置
+
+        该接口用于修改插件配置。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdatePluginConfig
+        :type request: :class:`huaweicloudsdkmetastudio.v1.UpdatePluginConfigRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.UpdatePluginConfigResponse`
+        """
+        http_info = self._update_plugin_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_plugin_config_async_invoker(self, request):
+        http_info = self._update_plugin_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_plugin_config_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/wise-brain-manager/plugin-config/{plugin_config_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePluginConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'plugin_config_id' in local_var_params:
+            path_params['plugin_config_id'] = local_var_params['plugin_config_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_product_async(self, request):
         r"""创建商品
 
@@ -8524,6 +11541,349 @@ class MetaStudioAsyncClient(Client):
 
         return http_info
 
+    def create_question_answer_async(self, request):
+        r"""创建问答对
+
+        该接口用于创建问答对。一个问答对包含一个标准问题，一个答案，若干个相似问题等。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateQuestionAnswer
+        :type request: :class:`huaweicloudsdkmetastudio.v1.CreateQuestionAnswerRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.CreateQuestionAnswerResponse`
+        """
+        http_info = self._create_question_answer_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_question_answer_async_invoker(self, request):
+        http_info = self._create_question_answer_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_question_answer_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/wise-brain-manager/question-answer",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateQuestionAnswerResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_question_answer_async(self, request):
+        r"""删除问答对
+
+        该接口用于删除问答对。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteQuestionAnswer
+        :type request: :class:`huaweicloudsdkmetastudio.v1.DeleteQuestionAnswerRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.DeleteQuestionAnswerResponse`
+        """
+        http_info = self._delete_question_answer_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_question_answer_async_invoker(self, request):
+        http_info = self._delete_question_answer_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_question_answer_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/wise-brain-manager/question-answer/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteQuestionAnswerResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_question_answer_async(self, request):
+        r"""查询问答对列表
+
+        该接口用于查询问答对列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListQuestionAnswer
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ListQuestionAnswerRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ListQuestionAnswerResponse`
+        """
+        http_info = self._list_question_answer_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_question_answer_async_invoker(self, request):
+        http_info = self._list_question_answer_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_question_answer_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/wise-brain-manager/question-answer",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListQuestionAnswerResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'knowledge_library_id' in local_var_params:
+            query_params.append(('knowledge_library_id', local_var_params['knowledge_library_id']))
+        if 'question' in local_var_params:
+            query_params.append(('question', local_var_params['question']))
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_question_answer_async(self, request):
+        r"""查询问答对详情
+
+        该接口用于查询问答对详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowQuestionAnswer
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ShowQuestionAnswerRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ShowQuestionAnswerResponse`
+        """
+        http_info = self._show_question_answer_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_question_answer_async_invoker(self, request):
+        http_info = self._show_question_answer_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_question_answer_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/wise-brain-manager/question-answer/{question_answer_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowQuestionAnswerResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'question_answer_id' in local_var_params:
+            path_params['question_answer_id'] = local_var_params['question_answer_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_question_answer_async(self, request):
+        r"""修改问答对
+
+        该接口用于修改问答对。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateQuestionAnswer
+        :type request: :class:`huaweicloudsdkmetastudio.v1.UpdateQuestionAnswerRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.UpdateQuestionAnswerResponse`
+        """
+        http_info = self._update_question_answer_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_question_answer_async_invoker(self, request):
+        http_info = self._update_question_answer_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_question_answer_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/wise-brain-manager/question-answer/{question_answer_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateQuestionAnswerResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'question_answer_id' in local_var_params:
+            path_params['question_answer_id'] = local_var_params['question_answer_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_robot_async(self, request):
         r"""创建应用
 
@@ -8901,6 +12261,347 @@ class MetaStudioAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_role_async(self, request):
+        r"""创建角色
+
+        该接口用于创建角色。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateRole
+        :type request: :class:`huaweicloudsdkmetastudio.v1.CreateRoleRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.CreateRoleResponse`
+        """
+        http_info = self._create_role_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_role_async_invoker(self, request):
+        http_info = self._create_role_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_role_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/wise-brain-manager/role",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateRoleResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_role_async(self, request):
+        r"""删除角色
+
+        该接口用于删除角色。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteRole
+        :type request: :class:`huaweicloudsdkmetastudio.v1.DeleteRoleRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.DeleteRoleResponse`
+        """
+        http_info = self._delete_role_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_role_async_invoker(self, request):
+        http_info = self._delete_role_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_role_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/wise-brain-manager/role/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteRoleResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_role_async(self, request):
+        r"""查询角色列表
+
+        该接口用于查询角色列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListRole
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ListRoleRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ListRoleResponse`
+        """
+        http_info = self._list_role_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_role_async_invoker(self, request):
+        http_info = self._list_role_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_role_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/wise-brain-manager/role",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRoleResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_role_async(self, request):
+        r"""查询角色详情
+
+        该接口用于查询角色详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowRole
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ShowRoleRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ShowRoleResponse`
+        """
+        http_info = self._show_role_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_role_async_invoker(self, request):
+        http_info = self._show_role_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_role_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/wise-brain-manager/role/{role_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRoleResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'role_id' in local_var_params:
+            path_params['role_id'] = local_var_params['role_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_role_async(self, request):
+        r"""修改角色
+
+        该接口用于修改角色。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateRole
+        :type request: :class:`huaweicloudsdkmetastudio.v1.UpdateRoleRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.UpdateRoleResponse`
+        """
+        http_info = self._update_role_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_role_async_invoker(self, request):
+        http_info = self._update_role_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_role_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/wise-brain-manager/role/{role_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateRoleResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'role_id' in local_var_params:
+            path_params['role_id'] = local_var_params['role_id']
 
         query_params = []
 
@@ -12625,6 +16326,227 @@ class MetaStudioAsyncClient(Client):
 
         return http_info
 
+    def check_voice_asset_async(self, request):
+        r"""校验音色模型是否可用（自研和第三方音色）
+
+        该接口用于校验音色模型是否可用，模型可用返回模型信息，不可用返回具体不可用的原因
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CheckVoiceAsset
+        :type request: :class:`huaweicloudsdkmetastudio.v1.CheckVoiceAssetRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.CheckVoiceAssetResponse`
+        """
+        http_info = self._check_voice_asset_http_info(request)
+        return self._call_api(**http_info)
+
+    def check_voice_asset_async_invoker(self, request):
+        http_info = self._check_voice_asset_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _check_voice_asset_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/ttsc/check-voice-asset/{voice_asset_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckVoiceAssetResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'voice_asset_id' in local_var_params:
+            path_params['voice_asset_id'] = local_var_params['voice_asset_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_tts_job_async(self, request):
+        r"""获取TTS语音合成任务记录
+
+        该接口用于获取TTS语音合成任务记录。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowTtsJob
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ShowTtsJobRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ShowTtsJobResponse`
+        """
+        http_info = self._show_tts_job_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_tts_job_async_invoker(self, request):
+        http_info = self._show_tts_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_tts_job_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/ttsc/tts-jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTtsJobResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'create_since' in local_var_params:
+            query_params.append(('create_since', local_var_params['create_since']))
+        if 'create_until' in local_var_params:
+            query_params.append(('create_until', local_var_params['create_until']))
+        if 'job_id' in local_var_params:
+            query_params.append(('job_id', local_var_params['job_id']))
+        if 'job_type' in local_var_params:
+            query_params.append(('job_type', local_var_params['job_type']))
+        if 'tts_service_enum' in local_var_params:
+            query_params.append(('tts_service_enum', local_var_params['tts_service_enum']))
+        if 'business_type' in local_var_params:
+            query_params.append(('business_type', local_var_params['business_type']))
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_tts_phonetic_symbol_async(self, request):
+        r"""获取英文单词音标
+
+        根据英文单词返回对应音标列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowTtsPhoneticSymbol
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ShowTtsPhoneticSymbolRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ShowTtsPhoneticSymbolResponse`
+        """
+        http_info = self._show_tts_phonetic_symbol_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_tts_phonetic_symbol_async_invoker(self, request):
+        http_info = self._show_tts_phonetic_symbol_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_tts_phonetic_symbol_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/ttsc/phonetic-symbol",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTtsPhoneticSymbolResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'word' in local_var_params:
+            query_params.append(('word', local_var_params['word']))
+
+        header_params = {}
+        if 'x_request_id' in local_var_params:
+            header_params['X-Request-Id'] = local_var_params['x_request_id']
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_async_tts_job_async(self, request):
         r"""创建TTS异步任务
 
@@ -12748,6 +16670,142 @@ class MetaStudioAsyncClient(Client):
         body = None
         if 'body' in local_var_params:
             body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_async_tts_job_async(self, request):
+        r"""获取TTS异步任务
+
+        该接口用于获取TTS音频文件下载链接。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowAsyncTtsJob
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ShowAsyncTtsJobRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ShowAsyncTtsJobResponse`
+        """
+        http_info = self._show_async_tts_job_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_async_tts_job_async_invoker(self, request):
+        http_info = self._show_async_tts_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_async_tts_job_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/ttsc/async-jobs/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAsyncTtsJobResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_tts_audition_file_async(self, request):
+        r"""获取TTS试听文件
+
+        该接口用于获取TTS试听文件下载链接，返回List中包含当前已生产的试听文件。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowTtsAuditionFile
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ShowTtsAuditionFileRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ShowTtsAuditionFileResponse`
+        """
+        http_info = self._show_tts_audition_file_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_tts_audition_file_async_invoker(self, request):
+        http_info = self._show_tts_audition_file_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_tts_audition_file_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/ttsc/audition-file/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTtsAuditionFileResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_request_id' in local_var_params:
+            header_params['X-Request-Id'] = local_var_params['x_request_id']
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -13213,6 +17271,75 @@ class MetaStudioAsyncClient(Client):
 
         return http_info
 
+    def save_ttsc_tenant_configs_async(self, request):
+        r"""设置租户级配置
+
+        该接口用于设置租户级配置，当前用于租户级自定义读法配置的全局开关。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for SaveTtscTenantConfigs
+        :type request: :class:`huaweicloudsdkmetastudio.v1.SaveTtscTenantConfigsRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.SaveTtscTenantConfigsResponse`
+        """
+        http_info = self._save_ttsc_tenant_configs_http_info(request)
+        return self._call_api(**http_info)
+
+    def save_ttsc_tenant_configs_async_invoker(self, request):
+        http_info = self._save_ttsc_tenant_configs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _save_ttsc_tenant_configs_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/ttsc/tenant-configs",
+            "request_type": request.__class__.__name__,
+            "response_type": "SaveTtscTenantConfigsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_request_id' in local_var_params:
+            header_params['X-Request-Id'] = local_var_params['x_request_id']
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def save_ttsc_vocabulary_configs_async(self, request):
         r"""修改TTS租户级自定义读法配置
 
@@ -13355,167 +17482,31 @@ class MetaStudioAsyncClient(Client):
 
         return http_info
 
-    def show_async_tts_job_async(self, request):
-        r"""获取TTS异步任务
+    def show_vocabulary_switch_configs_async(self, request):
+        r"""获取租户级全局配置
 
-        该接口用于获取TTS音频文件下载链接。
+        该接口用于获取租户级全局配置。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
 
-        :param request: Request instance for ShowAsyncTtsJob
-        :type request: :class:`huaweicloudsdkmetastudio.v1.ShowAsyncTtsJobRequest`
-        :rtype: :class:`huaweicloudsdkmetastudio.v1.ShowAsyncTtsJobResponse`
+        :param request: Request instance for ShowVocabularySwitchConfigs
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ShowVocabularySwitchConfigsRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ShowVocabularySwitchConfigsResponse`
         """
-        http_info = self._show_async_tts_job_http_info(request)
+        http_info = self._show_vocabulary_switch_configs_http_info(request)
         return self._call_api(**http_info)
 
-    def show_async_tts_job_async_invoker(self, request):
-        http_info = self._show_async_tts_job_http_info(request)
+    def show_vocabulary_switch_configs_async_invoker(self, request):
+        http_info = self._show_vocabulary_switch_configs_http_info(request)
         return AsyncInvoker(self, http_info)
 
-    def _show_async_tts_job_http_info(self, request):
+    def _show_vocabulary_switch_configs_http_info(self, request):
         http_info = {
             "method": "GET",
-            "resource_path": "/v1/{project_id}/ttsc/async-jobs/{job_id}",
+            "resource_path": "/v1/{project_id}/ttsc/tenant-configs",
             "request_type": request.__class__.__name__,
-            "response_type": "ShowAsyncTtsJobResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'job_id' in local_var_params:
-            path_params['job_id'] = local_var_params['job_id']
-
-        query_params = []
-
-        header_params = {}
-        if 'x_app_user_id' in local_var_params:
-            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def show_tts_audition_file_async(self, request):
-        r"""获取TTS试听文件
-
-        该接口用于获取TTS试听文件下载链接，返回List中包含当前已生产的试听文件。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ShowTtsAuditionFile
-        :type request: :class:`huaweicloudsdkmetastudio.v1.ShowTtsAuditionFileRequest`
-        :rtype: :class:`huaweicloudsdkmetastudio.v1.ShowTtsAuditionFileResponse`
-        """
-        http_info = self._show_tts_audition_file_http_info(request)
-        return self._call_api(**http_info)
-
-    def show_tts_audition_file_async_invoker(self, request):
-        http_info = self._show_tts_audition_file_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _show_tts_audition_file_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v1/{project_id}/ttsc/audition-file/{job_id}",
-            "request_type": request.__class__.__name__,
-            "response_type": "ShowTtsAuditionFileResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'job_id' in local_var_params:
-            path_params['job_id'] = local_var_params['job_id']
-
-        query_params = []
-
-        header_params = {}
-        if 'x_request_id' in local_var_params:
-            header_params['X-Request-Id'] = local_var_params['x_request_id']
-        if 'x_app_user_id' in local_var_params:
-            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def show_tts_phonetic_symbol_async(self, request):
-        r"""获取英文单词音标
-
-        根据英文单词返回对应音标列表
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ShowTtsPhoneticSymbol
-        :type request: :class:`huaweicloudsdkmetastudio.v1.ShowTtsPhoneticSymbolRequest`
-        :rtype: :class:`huaweicloudsdkmetastudio.v1.ShowTtsPhoneticSymbolResponse`
-        """
-        http_info = self._show_tts_phonetic_symbol_http_info(request)
-        return self._call_api(**http_info)
-
-    def show_tts_phonetic_symbol_async_invoker(self, request):
-        http_info = self._show_tts_phonetic_symbol_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _show_tts_phonetic_symbol_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v1/{project_id}/ttsc/phonetic-symbol",
-            "request_type": request.__class__.__name__,
-            "response_type": "ShowTtsPhoneticSymbolResponse"
+            "response_type": "ShowVocabularySwitchConfigsResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -13531,8 +17522,8 @@ class MetaStudioAsyncClient(Client):
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
-        if 'word' in local_var_params:
-            query_params.append(('word', local_var_params['word']))
+        if 'key' in local_var_params:
+            query_params.append(('key', local_var_params['key']))
 
         header_params = {}
         if 'x_request_id' in local_var_params:

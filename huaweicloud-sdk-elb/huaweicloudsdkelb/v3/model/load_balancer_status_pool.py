@@ -39,17 +39,17 @@ class LoadBalancerStatusPool:
 
         The model defined in huaweicloud sdk
 
-        :param provisioning_status: 后端服务器组的配置状态。  取值： - ACTIVE：使用中。
+        :param provisioning_status: **参数解释**：后端服务器组的配置状态。  **取值范围**： - ACTIVE：使用中。
         :type provisioning_status: str
-        :param name: 后端服务器组名。
+        :param name: **参数解释**：后端服务器组名称。  **取值范围**：不涉及
         :type name: str
         :param healthmonitor: 
         :type healthmonitor: :class:`huaweicloudsdkelb.v3.LoadBalancerStatusHealthMonitor`
-        :param members: 后端服务器状态信息。
+        :param members: **参数解释**：当前后端服务器组下所有后端服务器的状态信息。
         :type members: list[:class:`huaweicloudsdkelb.v3.LoadBalancerStatusMember`]
-        :param id: 参数解释：后端服务器组ID。
+        :param id: **参数解释**：后端服务器组ID。  **取值范围**：不涉及
         :type id: str
-        :param operating_status: 后端服务器组的操作状态。  取值： - ONLINE：创建时默认状态，表后端服务器组正常。 - DEGRADED：该后端服务器组下存在member为的operating_status&#x3D;OFFLINE。 - DISABLED：负载均衡器或后端服务器组的admin_state_up&#x3D;false。  说明： DEGRADED和DISABLED仅在当前接口返回， 查询后端服务器组详情等其他接口返回的operating_status字段不存在这两个状态值。
+        :param operating_status: **参数解释**：后端服务器组的操作状态。  **取值范围**： - ONLINE：创建时默认状态，表后端服务器组正常。 - DEGRADED：该后端服务器组下存在member为的operating_status&#x3D;OFFLINE。 - DISABLED：负载均衡器或后端服务器组的admin_state_up&#x3D;false。  &gt; DEGRADED和DISABLED仅在当前接口返回， 查询后端服务器组详情等其他接口返回的operating_status字段不存在这两个状态值。
         :type operating_status: str
         """
         
@@ -80,7 +80,7 @@ class LoadBalancerStatusPool:
     def provisioning_status(self):
         r"""Gets the provisioning_status of this LoadBalancerStatusPool.
 
-        后端服务器组的配置状态。  取值： - ACTIVE：使用中。
+        **参数解释**：后端服务器组的配置状态。  **取值范围**： - ACTIVE：使用中。
 
         :return: The provisioning_status of this LoadBalancerStatusPool.
         :rtype: str
@@ -91,7 +91,7 @@ class LoadBalancerStatusPool:
     def provisioning_status(self, provisioning_status):
         r"""Sets the provisioning_status of this LoadBalancerStatusPool.
 
-        后端服务器组的配置状态。  取值： - ACTIVE：使用中。
+        **参数解释**：后端服务器组的配置状态。  **取值范围**： - ACTIVE：使用中。
 
         :param provisioning_status: The provisioning_status of this LoadBalancerStatusPool.
         :type provisioning_status: str
@@ -102,7 +102,7 @@ class LoadBalancerStatusPool:
     def name(self):
         r"""Gets the name of this LoadBalancerStatusPool.
 
-        后端服务器组名。
+        **参数解释**：后端服务器组名称。  **取值范围**：不涉及
 
         :return: The name of this LoadBalancerStatusPool.
         :rtype: str
@@ -113,7 +113,7 @@ class LoadBalancerStatusPool:
     def name(self, name):
         r"""Sets the name of this LoadBalancerStatusPool.
 
-        后端服务器组名。
+        **参数解释**：后端服务器组名称。  **取值范围**：不涉及
 
         :param name: The name of this LoadBalancerStatusPool.
         :type name: str
@@ -142,7 +142,7 @@ class LoadBalancerStatusPool:
     def members(self):
         r"""Gets the members of this LoadBalancerStatusPool.
 
-        后端服务器状态信息。
+        **参数解释**：当前后端服务器组下所有后端服务器的状态信息。
 
         :return: The members of this LoadBalancerStatusPool.
         :rtype: list[:class:`huaweicloudsdkelb.v3.LoadBalancerStatusMember`]
@@ -153,7 +153,7 @@ class LoadBalancerStatusPool:
     def members(self, members):
         r"""Sets the members of this LoadBalancerStatusPool.
 
-        后端服务器状态信息。
+        **参数解释**：当前后端服务器组下所有后端服务器的状态信息。
 
         :param members: The members of this LoadBalancerStatusPool.
         :type members: list[:class:`huaweicloudsdkelb.v3.LoadBalancerStatusMember`]
@@ -164,7 +164,7 @@ class LoadBalancerStatusPool:
     def id(self):
         r"""Gets the id of this LoadBalancerStatusPool.
 
-        参数解释：后端服务器组ID。
+        **参数解释**：后端服务器组ID。  **取值范围**：不涉及
 
         :return: The id of this LoadBalancerStatusPool.
         :rtype: str
@@ -175,7 +175,7 @@ class LoadBalancerStatusPool:
     def id(self, id):
         r"""Sets the id of this LoadBalancerStatusPool.
 
-        参数解释：后端服务器组ID。
+        **参数解释**：后端服务器组ID。  **取值范围**：不涉及
 
         :param id: The id of this LoadBalancerStatusPool.
         :type id: str
@@ -186,7 +186,7 @@ class LoadBalancerStatusPool:
     def operating_status(self):
         r"""Gets the operating_status of this LoadBalancerStatusPool.
 
-        后端服务器组的操作状态。  取值： - ONLINE：创建时默认状态，表后端服务器组正常。 - DEGRADED：该后端服务器组下存在member为的operating_status=OFFLINE。 - DISABLED：负载均衡器或后端服务器组的admin_state_up=false。  说明： DEGRADED和DISABLED仅在当前接口返回， 查询后端服务器组详情等其他接口返回的operating_status字段不存在这两个状态值。
+        **参数解释**：后端服务器组的操作状态。  **取值范围**： - ONLINE：创建时默认状态，表后端服务器组正常。 - DEGRADED：该后端服务器组下存在member为的operating_status=OFFLINE。 - DISABLED：负载均衡器或后端服务器组的admin_state_up=false。  > DEGRADED和DISABLED仅在当前接口返回， 查询后端服务器组详情等其他接口返回的operating_status字段不存在这两个状态值。
 
         :return: The operating_status of this LoadBalancerStatusPool.
         :rtype: str
@@ -197,7 +197,7 @@ class LoadBalancerStatusPool:
     def operating_status(self, operating_status):
         r"""Sets the operating_status of this LoadBalancerStatusPool.
 
-        后端服务器组的操作状态。  取值： - ONLINE：创建时默认状态，表后端服务器组正常。 - DEGRADED：该后端服务器组下存在member为的operating_status=OFFLINE。 - DISABLED：负载均衡器或后端服务器组的admin_state_up=false。  说明： DEGRADED和DISABLED仅在当前接口返回， 查询后端服务器组详情等其他接口返回的operating_status字段不存在这两个状态值。
+        **参数解释**：后端服务器组的操作状态。  **取值范围**： - ONLINE：创建时默认状态，表后端服务器组正常。 - DEGRADED：该后端服务器组下存在member为的operating_status=OFFLINE。 - DISABLED：负载均衡器或后端服务器组的admin_state_up=false。  > DEGRADED和DISABLED仅在当前接口返回， 查询后端服务器组详情等其他接口返回的operating_status字段不存在这两个状态值。
 
         :param operating_status: The operating_status of this LoadBalancerStatusPool.
         :type operating_status: str

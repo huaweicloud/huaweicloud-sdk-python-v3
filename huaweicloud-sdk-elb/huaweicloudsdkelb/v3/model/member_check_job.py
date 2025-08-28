@@ -29,7 +29,7 @@ class MemberCheckJob:
 
         The model defined in huaweicloud sdk
 
-        :param job_id: 参数解释：任务ID，根据该任务ID可以查询到任务执行结果。
+        :param job_id: **参数解释**：任务ID，根据该任务ID可以查询到任务执行结果。  **取值范围**：不涉及
         :type job_id: str
         """
         
@@ -45,7 +45,7 @@ class MemberCheckJob:
     def job_id(self):
         r"""Gets the job_id of this MemberCheckJob.
 
-        参数解释：任务ID，根据该任务ID可以查询到任务执行结果。
+        **参数解释**：任务ID，根据该任务ID可以查询到任务执行结果。  **取值范围**：不涉及
 
         :return: The job_id of this MemberCheckJob.
         :rtype: str
@@ -56,7 +56,7 @@ class MemberCheckJob:
     def job_id(self, job_id):
         r"""Sets the job_id of this MemberCheckJob.
 
-        参数解释：任务ID，根据该任务ID可以查询到任务执行结果。
+        **参数解释**：任务ID，根据该任务ID可以查询到任务执行结果。  **取值范围**：不涉及
 
         :param job_id: The job_id of this MemberCheckJob.
         :type job_id: str

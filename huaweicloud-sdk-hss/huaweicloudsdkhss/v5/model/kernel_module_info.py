@@ -29,8 +29,7 @@ class KernelModuleInfo:
         'mtime': 'int',
         'hash': 'str',
         'desc': 'str',
-        'record_time': 'int',
-        'first_scan_time': 'int'
+        'record_time': 'int'
     }
 
     attribute_map = {
@@ -46,43 +45,40 @@ class KernelModuleInfo:
         'mtime': 'mtime',
         'hash': 'hash',
         'desc': 'desc',
-        'record_time': 'record_time',
-        'first_scan_time': 'first_scan_time'
+        'record_time': 'record_time'
     }
 
-    def __init__(self, name=None, file_name=None, version=None, srcversion=None, path=None, size=None, mode=None, uid=None, ctime=None, mtime=None, hash=None, desc=None, record_time=None, first_scan_time=None):
+    def __init__(self, name=None, file_name=None, version=None, srcversion=None, path=None, size=None, mode=None, uid=None, ctime=None, mtime=None, hash=None, desc=None, record_time=None):
         r"""KernelModuleInfo
 
         The model defined in huaweicloud sdk
 
-        :param name: 内核模块名称
+        :param name: **参数解释**: 内核模块名称 **取值范围**: 字符长度0-256 
         :type name: str
-        :param file_name: 文件名称
+        :param file_name: **参数解释**: 文件名称 **取值范围**: 字符长度0-256 
         :type file_name: str
-        :param version: 内核模块版本号
+        :param version: **参数解释**: 内核模块版本号 **取值范围**: 字符长度0-64 
         :type version: str
-        :param srcversion: 源码版本号
+        :param srcversion: **参数解释**: 源码版本号 **取值范围**: 字符长度0-64 
         :type srcversion: str
-        :param path: 文件路径
+        :param path: **参数解释**: 文件路径 **取值范围**: 字符长度0-1024 
         :type path: str
-        :param size: 文件大小
+        :param size: **参数解释**: 文件大小 **取值范围**: 最小值0，最大值2147483647 
         :type size: int
-        :param mode: 文件权限
+        :param mode: **参数解释**: 文件权限 **取值范围**: 字符长度0-32 
         :type mode: str
-        :param uid: 文件用户ID
+        :param uid: **参数解释**: 文件用户ID **取值范围**: 最小值0，最大值2147483647 
         :type uid: int
-        :param ctime: 文件创建时间
+        :param ctime: **参数解释**: 文件创建时间 **取值范围**: 最小值0，最大值2^63-1 
         :type ctime: int
-        :param mtime: 最后修改时间
+        :param mtime: **参数解释**: 最后修改时间 **取值范围**: 最小值0，最大值2^63-1 
         :type mtime: int
-        :param hash: 文件哈希
+        :param hash: **参数解释**: 文件哈希 **取值范围**: 字符长度0-64 
         :type hash: str
-        :param desc: 内核模块描述信息
+        :param desc: **参数解释**: 内核模块描述信息 **取值范围**: 字符长度0-256 
         :type desc: str
-        :param record_time: 扫描时间
+        :param record_time: **参数解释**: 扫描时间 **取值范围**: 最小值0，最大值2^63-1 
         :type record_time: int
-        :param first_scan_time: 首次扫描时间
-        :type first_scan_time: int
         """
         
         
@@ -100,7 +96,6 @@ class KernelModuleInfo:
         self._hash = None
         self._desc = None
         self._record_time = None
-        self._first_scan_time = None
         self.discriminator = None
 
         if name is not None:
@@ -129,14 +124,12 @@ class KernelModuleInfo:
             self.desc = desc
         if record_time is not None:
             self.record_time = record_time
-        if first_scan_time is not None:
-            self.first_scan_time = first_scan_time
 
     @property
     def name(self):
         r"""Gets the name of this KernelModuleInfo.
 
-        内核模块名称
+        **参数解释**: 内核模块名称 **取值范围**: 字符长度0-256 
 
         :return: The name of this KernelModuleInfo.
         :rtype: str
@@ -147,7 +140,7 @@ class KernelModuleInfo:
     def name(self, name):
         r"""Sets the name of this KernelModuleInfo.
 
-        内核模块名称
+        **参数解释**: 内核模块名称 **取值范围**: 字符长度0-256 
 
         :param name: The name of this KernelModuleInfo.
         :type name: str
@@ -158,7 +151,7 @@ class KernelModuleInfo:
     def file_name(self):
         r"""Gets the file_name of this KernelModuleInfo.
 
-        文件名称
+        **参数解释**: 文件名称 **取值范围**: 字符长度0-256 
 
         :return: The file_name of this KernelModuleInfo.
         :rtype: str
@@ -169,7 +162,7 @@ class KernelModuleInfo:
     def file_name(self, file_name):
         r"""Sets the file_name of this KernelModuleInfo.
 
-        文件名称
+        **参数解释**: 文件名称 **取值范围**: 字符长度0-256 
 
         :param file_name: The file_name of this KernelModuleInfo.
         :type file_name: str
@@ -180,7 +173,7 @@ class KernelModuleInfo:
     def version(self):
         r"""Gets the version of this KernelModuleInfo.
 
-        内核模块版本号
+        **参数解释**: 内核模块版本号 **取值范围**: 字符长度0-64 
 
         :return: The version of this KernelModuleInfo.
         :rtype: str
@@ -191,7 +184,7 @@ class KernelModuleInfo:
     def version(self, version):
         r"""Sets the version of this KernelModuleInfo.
 
-        内核模块版本号
+        **参数解释**: 内核模块版本号 **取值范围**: 字符长度0-64 
 
         :param version: The version of this KernelModuleInfo.
         :type version: str
@@ -202,7 +195,7 @@ class KernelModuleInfo:
     def srcversion(self):
         r"""Gets the srcversion of this KernelModuleInfo.
 
-        源码版本号
+        **参数解释**: 源码版本号 **取值范围**: 字符长度0-64 
 
         :return: The srcversion of this KernelModuleInfo.
         :rtype: str
@@ -213,7 +206,7 @@ class KernelModuleInfo:
     def srcversion(self, srcversion):
         r"""Sets the srcversion of this KernelModuleInfo.
 
-        源码版本号
+        **参数解释**: 源码版本号 **取值范围**: 字符长度0-64 
 
         :param srcversion: The srcversion of this KernelModuleInfo.
         :type srcversion: str
@@ -224,7 +217,7 @@ class KernelModuleInfo:
     def path(self):
         r"""Gets the path of this KernelModuleInfo.
 
-        文件路径
+        **参数解释**: 文件路径 **取值范围**: 字符长度0-1024 
 
         :return: The path of this KernelModuleInfo.
         :rtype: str
@@ -235,7 +228,7 @@ class KernelModuleInfo:
     def path(self, path):
         r"""Sets the path of this KernelModuleInfo.
 
-        文件路径
+        **参数解释**: 文件路径 **取值范围**: 字符长度0-1024 
 
         :param path: The path of this KernelModuleInfo.
         :type path: str
@@ -246,7 +239,7 @@ class KernelModuleInfo:
     def size(self):
         r"""Gets the size of this KernelModuleInfo.
 
-        文件大小
+        **参数解释**: 文件大小 **取值范围**: 最小值0，最大值2147483647 
 
         :return: The size of this KernelModuleInfo.
         :rtype: int
@@ -257,7 +250,7 @@ class KernelModuleInfo:
     def size(self, size):
         r"""Sets the size of this KernelModuleInfo.
 
-        文件大小
+        **参数解释**: 文件大小 **取值范围**: 最小值0，最大值2147483647 
 
         :param size: The size of this KernelModuleInfo.
         :type size: int
@@ -268,7 +261,7 @@ class KernelModuleInfo:
     def mode(self):
         r"""Gets the mode of this KernelModuleInfo.
 
-        文件权限
+        **参数解释**: 文件权限 **取值范围**: 字符长度0-32 
 
         :return: The mode of this KernelModuleInfo.
         :rtype: str
@@ -279,7 +272,7 @@ class KernelModuleInfo:
     def mode(self, mode):
         r"""Sets the mode of this KernelModuleInfo.
 
-        文件权限
+        **参数解释**: 文件权限 **取值范围**: 字符长度0-32 
 
         :param mode: The mode of this KernelModuleInfo.
         :type mode: str
@@ -290,7 +283,7 @@ class KernelModuleInfo:
     def uid(self):
         r"""Gets the uid of this KernelModuleInfo.
 
-        文件用户ID
+        **参数解释**: 文件用户ID **取值范围**: 最小值0，最大值2147483647 
 
         :return: The uid of this KernelModuleInfo.
         :rtype: int
@@ -301,7 +294,7 @@ class KernelModuleInfo:
     def uid(self, uid):
         r"""Sets the uid of this KernelModuleInfo.
 
-        文件用户ID
+        **参数解释**: 文件用户ID **取值范围**: 最小值0，最大值2147483647 
 
         :param uid: The uid of this KernelModuleInfo.
         :type uid: int
@@ -312,7 +305,7 @@ class KernelModuleInfo:
     def ctime(self):
         r"""Gets the ctime of this KernelModuleInfo.
 
-        文件创建时间
+        **参数解释**: 文件创建时间 **取值范围**: 最小值0，最大值2^63-1 
 
         :return: The ctime of this KernelModuleInfo.
         :rtype: int
@@ -323,7 +316,7 @@ class KernelModuleInfo:
     def ctime(self, ctime):
         r"""Sets the ctime of this KernelModuleInfo.
 
-        文件创建时间
+        **参数解释**: 文件创建时间 **取值范围**: 最小值0，最大值2^63-1 
 
         :param ctime: The ctime of this KernelModuleInfo.
         :type ctime: int
@@ -334,7 +327,7 @@ class KernelModuleInfo:
     def mtime(self):
         r"""Gets the mtime of this KernelModuleInfo.
 
-        最后修改时间
+        **参数解释**: 最后修改时间 **取值范围**: 最小值0，最大值2^63-1 
 
         :return: The mtime of this KernelModuleInfo.
         :rtype: int
@@ -345,7 +338,7 @@ class KernelModuleInfo:
     def mtime(self, mtime):
         r"""Sets the mtime of this KernelModuleInfo.
 
-        最后修改时间
+        **参数解释**: 最后修改时间 **取值范围**: 最小值0，最大值2^63-1 
 
         :param mtime: The mtime of this KernelModuleInfo.
         :type mtime: int
@@ -356,7 +349,7 @@ class KernelModuleInfo:
     def hash(self):
         r"""Gets the hash of this KernelModuleInfo.
 
-        文件哈希
+        **参数解释**: 文件哈希 **取值范围**: 字符长度0-64 
 
         :return: The hash of this KernelModuleInfo.
         :rtype: str
@@ -367,7 +360,7 @@ class KernelModuleInfo:
     def hash(self, hash):
         r"""Sets the hash of this KernelModuleInfo.
 
-        文件哈希
+        **参数解释**: 文件哈希 **取值范围**: 字符长度0-64 
 
         :param hash: The hash of this KernelModuleInfo.
         :type hash: str
@@ -378,7 +371,7 @@ class KernelModuleInfo:
     def desc(self):
         r"""Gets the desc of this KernelModuleInfo.
 
-        内核模块描述信息
+        **参数解释**: 内核模块描述信息 **取值范围**: 字符长度0-256 
 
         :return: The desc of this KernelModuleInfo.
         :rtype: str
@@ -389,7 +382,7 @@ class KernelModuleInfo:
     def desc(self, desc):
         r"""Sets the desc of this KernelModuleInfo.
 
-        内核模块描述信息
+        **参数解释**: 内核模块描述信息 **取值范围**: 字符长度0-256 
 
         :param desc: The desc of this KernelModuleInfo.
         :type desc: str
@@ -400,7 +393,7 @@ class KernelModuleInfo:
     def record_time(self):
         r"""Gets the record_time of this KernelModuleInfo.
 
-        扫描时间
+        **参数解释**: 扫描时间 **取值范围**: 最小值0，最大值2^63-1 
 
         :return: The record_time of this KernelModuleInfo.
         :rtype: int
@@ -411,34 +404,12 @@ class KernelModuleInfo:
     def record_time(self, record_time):
         r"""Sets the record_time of this KernelModuleInfo.
 
-        扫描时间
+        **参数解释**: 扫描时间 **取值范围**: 最小值0，最大值2^63-1 
 
         :param record_time: The record_time of this KernelModuleInfo.
         :type record_time: int
         """
         self._record_time = record_time
-
-    @property
-    def first_scan_time(self):
-        r"""Gets the first_scan_time of this KernelModuleInfo.
-
-        首次扫描时间
-
-        :return: The first_scan_time of this KernelModuleInfo.
-        :rtype: int
-        """
-        return self._first_scan_time
-
-    @first_scan_time.setter
-    def first_scan_time(self, first_scan_time):
-        r"""Sets the first_scan_time of this KernelModuleInfo.
-
-        首次扫描时间
-
-        :param first_scan_time: The first_scan_time of this KernelModuleInfo.
-        :type first_scan_time: int
-        """
-        self._first_scan_time = first_scan_time
 
     def to_dict(self):
         """Returns the model properties as a dict"""

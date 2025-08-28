@@ -61,7 +61,7 @@ class BaseJob:
         :type error_msg: str
         :param project_id: 项目ID
         :type project_id: str
-        :param resource_id: 参数解释：资源ID。
+        :param resource_id: **参数解释**：资源ID。
         :type resource_id: str
         """
         
@@ -277,7 +277,7 @@ class BaseJob:
     def resource_id(self):
         r"""Gets the resource_id of this BaseJob.
 
-        参数解释：资源ID。
+        **参数解释**：资源ID。
 
         :return: The resource_id of this BaseJob.
         :rtype: str
@@ -288,7 +288,7 @@ class BaseJob:
     def resource_id(self, resource_id):
         r"""Sets the resource_id of this BaseJob.
 
-        参数解释：资源ID。
+        **参数解释**：资源ID。
 
         :param resource_id: The resource_id of this BaseJob.
         :type resource_id: str

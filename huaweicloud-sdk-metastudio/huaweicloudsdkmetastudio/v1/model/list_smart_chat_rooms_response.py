@@ -20,6 +20,8 @@ class ListSmartChatRoomsResponse(SdkResponse):
     openapi_types = {
         'count': 'int',
         'count_concurrency': 'int',
+        'count_client_nums': 'int',
+        'count_client_nums_token': 'int',
         'smart_chat_rooms': 'list[SmartChatRoomBaseInfo]',
         'x_request_id': 'str'
     }
@@ -27,11 +29,13 @@ class ListSmartChatRoomsResponse(SdkResponse):
     attribute_map = {
         'count': 'count',
         'count_concurrency': 'count_concurrency',
+        'count_client_nums': 'count_client_nums',
+        'count_client_nums_token': 'count_client_nums_token',
         'smart_chat_rooms': 'smart_chat_rooms',
         'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, count=None, count_concurrency=None, smart_chat_rooms=None, x_request_id=None):
+    def __init__(self, count=None, count_concurrency=None, count_client_nums=None, count_client_nums_token=None, smart_chat_rooms=None, x_request_id=None):
         r"""ListSmartChatRoomsResponse
 
         The model defined in huaweicloud sdk
@@ -40,6 +44,10 @@ class ListSmartChatRoomsResponse(SdkResponse):
         :type count: int
         :param count_concurrency: **参数解释**： 智能交互对话总并发路数。
         :type count_concurrency: int
+        :param count_client_nums: **参数解释**： 智能交互对话按接入端计费总路数。
+        :type count_client_nums: int
+        :param count_client_nums_token: **参数解释**： 智能交互对话按接入端计费（Token）总路数。
+        :type count_client_nums_token: int
         :param smart_chat_rooms: 智能交互对话列表。
         :type smart_chat_rooms: list[:class:`huaweicloudsdkmetastudio.v1.SmartChatRoomBaseInfo`]
         :param x_request_id: 
@@ -50,6 +58,8 @@ class ListSmartChatRoomsResponse(SdkResponse):
 
         self._count = None
         self._count_concurrency = None
+        self._count_client_nums = None
+        self._count_client_nums_token = None
         self._smart_chat_rooms = None
         self._x_request_id = None
         self.discriminator = None
@@ -58,6 +68,10 @@ class ListSmartChatRoomsResponse(SdkResponse):
             self.count = count
         if count_concurrency is not None:
             self.count_concurrency = count_concurrency
+        if count_client_nums is not None:
+            self.count_client_nums = count_client_nums
+        if count_client_nums_token is not None:
+            self.count_client_nums_token = count_client_nums_token
         if smart_chat_rooms is not None:
             self.smart_chat_rooms = smart_chat_rooms
         if x_request_id is not None:
@@ -106,6 +120,50 @@ class ListSmartChatRoomsResponse(SdkResponse):
         :type count_concurrency: int
         """
         self._count_concurrency = count_concurrency
+
+    @property
+    def count_client_nums(self):
+        r"""Gets the count_client_nums of this ListSmartChatRoomsResponse.
+
+        **参数解释**： 智能交互对话按接入端计费总路数。
+
+        :return: The count_client_nums of this ListSmartChatRoomsResponse.
+        :rtype: int
+        """
+        return self._count_client_nums
+
+    @count_client_nums.setter
+    def count_client_nums(self, count_client_nums):
+        r"""Sets the count_client_nums of this ListSmartChatRoomsResponse.
+
+        **参数解释**： 智能交互对话按接入端计费总路数。
+
+        :param count_client_nums: The count_client_nums of this ListSmartChatRoomsResponse.
+        :type count_client_nums: int
+        """
+        self._count_client_nums = count_client_nums
+
+    @property
+    def count_client_nums_token(self):
+        r"""Gets the count_client_nums_token of this ListSmartChatRoomsResponse.
+
+        **参数解释**： 智能交互对话按接入端计费（Token）总路数。
+
+        :return: The count_client_nums_token of this ListSmartChatRoomsResponse.
+        :rtype: int
+        """
+        return self._count_client_nums_token
+
+    @count_client_nums_token.setter
+    def count_client_nums_token(self, count_client_nums_token):
+        r"""Sets the count_client_nums_token of this ListSmartChatRoomsResponse.
+
+        **参数解释**： 智能交互对话按接入端计费（Token）总路数。
+
+        :param count_client_nums_token: The count_client_nums_token of this ListSmartChatRoomsResponse.
+        :type count_client_nums_token: int
+        """
+        self._count_client_nums_token = count_client_nums_token
 
     @property
     def smart_chat_rooms(self):

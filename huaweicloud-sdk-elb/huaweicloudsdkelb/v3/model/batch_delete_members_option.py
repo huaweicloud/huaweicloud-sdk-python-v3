@@ -33,11 +33,11 @@ class BatchDeleteMembersOption:
 
         The model defined in huaweicloud sdk
 
-        :param id: 需要删除的后端服务器ID。  使用说明： - 若传入id则不能传其他参数，否则报错。  &gt; 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
+        :param id: **参数解释**：需要删除的后端服务器ID。  **约束限制**： - 若传入id则不能传其他参数，否则报错。  **取值范围**：不涉及  **默认取值**：不涉及  &gt; 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
         :type id: str
-        :param address: 后端服务器IP地址。  使用说明： - address和protocol_port必须同时传入。 - 不能同时传入ID字段
+        :param address: **参数解释**：后端服务器IP地址。  **约束限制**： - address和protocol_port必须同时传入。 - 不能同时传入ID字段。  **取值范围**：不涉及  **默认取值**：不涉及
         :type address: str
-        :param protocol_port: 后端服务器端口。  使用说明： - address和protocol_port必须同时传入。 - 不能同时传入ID字段 - 可以传0，用于删除端口透传pool下的member
+        :param protocol_port: **参数解释**：后端服务器端口。  **约束限制**： - address和protocol_port必须同时传入。 - 不能同时传入ID字段。 - 可以传0，用于删除端口透传pool下的member。  **取值范围**：不涉及  **默认取值**：不涉及
         :type protocol_port: int
         """
         
@@ -59,7 +59,7 @@ class BatchDeleteMembersOption:
     def id(self):
         r"""Gets the id of this BatchDeleteMembersOption.
 
-        需要删除的后端服务器ID。  使用说明： - 若传入id则不能传其他参数，否则报错。  > 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
+        **参数解释**：需要删除的后端服务器ID。  **约束限制**： - 若传入id则不能传其他参数，否则报错。  **取值范围**：不涉及  **默认取值**：不涉及  > 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
 
         :return: The id of this BatchDeleteMembersOption.
         :rtype: str
@@ -70,7 +70,7 @@ class BatchDeleteMembersOption:
     def id(self, id):
         r"""Sets the id of this BatchDeleteMembersOption.
 
-        需要删除的后端服务器ID。  使用说明： - 若传入id则不能传其他参数，否则报错。  > 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
+        **参数解释**：需要删除的后端服务器ID。  **约束限制**： - 若传入id则不能传其他参数，否则报错。  **取值范围**：不涉及  **默认取值**：不涉及  > 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
 
         :param id: The id of this BatchDeleteMembersOption.
         :type id: str
@@ -81,7 +81,7 @@ class BatchDeleteMembersOption:
     def address(self):
         r"""Gets the address of this BatchDeleteMembersOption.
 
-        后端服务器IP地址。  使用说明： - address和protocol_port必须同时传入。 - 不能同时传入ID字段
+        **参数解释**：后端服务器IP地址。  **约束限制**： - address和protocol_port必须同时传入。 - 不能同时传入ID字段。  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The address of this BatchDeleteMembersOption.
         :rtype: str
@@ -92,7 +92,7 @@ class BatchDeleteMembersOption:
     def address(self, address):
         r"""Sets the address of this BatchDeleteMembersOption.
 
-        后端服务器IP地址。  使用说明： - address和protocol_port必须同时传入。 - 不能同时传入ID字段
+        **参数解释**：后端服务器IP地址。  **约束限制**： - address和protocol_port必须同时传入。 - 不能同时传入ID字段。  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param address: The address of this BatchDeleteMembersOption.
         :type address: str
@@ -103,7 +103,7 @@ class BatchDeleteMembersOption:
     def protocol_port(self):
         r"""Gets the protocol_port of this BatchDeleteMembersOption.
 
-        后端服务器端口。  使用说明： - address和protocol_port必须同时传入。 - 不能同时传入ID字段 - 可以传0，用于删除端口透传pool下的member
+        **参数解释**：后端服务器端口。  **约束限制**： - address和protocol_port必须同时传入。 - 不能同时传入ID字段。 - 可以传0，用于删除端口透传pool下的member。  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The protocol_port of this BatchDeleteMembersOption.
         :rtype: int
@@ -114,7 +114,7 @@ class BatchDeleteMembersOption:
     def protocol_port(self, protocol_port):
         r"""Sets the protocol_port of this BatchDeleteMembersOption.
 
-        后端服务器端口。  使用说明： - address和protocol_port必须同时传入。 - 不能同时传入ID字段 - 可以传0，用于删除端口透传pool下的member
+        **参数解释**：后端服务器端口。  **约束限制**： - address和protocol_port必须同时传入。 - 不能同时传入ID字段。 - 可以传0，用于删除端口透传pool下的member。  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param protocol_port: The protocol_port of this BatchDeleteMembersOption.
         :type protocol_port: int

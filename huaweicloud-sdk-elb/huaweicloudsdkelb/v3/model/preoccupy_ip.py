@@ -29,7 +29,7 @@ class PreoccupyIp:
 
         The model defined in huaweicloud sdk
 
-        :param total: 预占IP总数
+        :param total: **参数解释**：预占IP总数。  **取值范围**：大于等于0整数。
         :type total: int
         """
         
@@ -44,7 +44,7 @@ class PreoccupyIp:
     def total(self):
         r"""Gets the total of this PreoccupyIp.
 
-        预占IP总数
+        **参数解释**：预占IP总数。  **取值范围**：大于等于0整数。
 
         :return: The total of this PreoccupyIp.
         :rtype: int
@@ -55,7 +55,7 @@ class PreoccupyIp:
     def total(self, total):
         r"""Sets the total of this PreoccupyIp.
 
-        预占IP总数
+        **参数解释**：预占IP总数。  **取值范围**：大于等于0整数。
 
         :param total: The total of this PreoccupyIp.
         :type total: int

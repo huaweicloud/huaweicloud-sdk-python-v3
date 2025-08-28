@@ -51,9 +51,9 @@ class BudgetRecordInfo:
         :type operator: str
         :param budget_type: |参数名称：预算模式| |参数的约束及描述：范围限制：0-10。MONTHLY：月度预算 PACKAGE：一次性预算|
         :type budget_type: str
-        :param partner_corp_name: |参数名称：伙伴名称| |参数的约束及描述：范围限制：0-64|
+        :param partner_corp_name: |参数名称：伙伴名称| |参数的约束及描述：范围限制：0-256|
         :type partner_corp_name: str
-        :param partner_account_name: |参数名称：伙伴账号名| |参数的约束及描述：范围限制：0-256|
+        :param partner_account_name: |参数名称：伙伴账号名| |参数的约束及描述：范围限制：0-128|
         :type partner_account_name: str
         """
         
@@ -197,7 +197,7 @@ class BudgetRecordInfo:
     def partner_corp_name(self):
         r"""Gets the partner_corp_name of this BudgetRecordInfo.
 
-        |参数名称：伙伴名称| |参数的约束及描述：范围限制：0-64|
+        |参数名称：伙伴名称| |参数的约束及描述：范围限制：0-256|
 
         :return: The partner_corp_name of this BudgetRecordInfo.
         :rtype: str
@@ -208,7 +208,7 @@ class BudgetRecordInfo:
     def partner_corp_name(self, partner_corp_name):
         r"""Sets the partner_corp_name of this BudgetRecordInfo.
 
-        |参数名称：伙伴名称| |参数的约束及描述：范围限制：0-64|
+        |参数名称：伙伴名称| |参数的约束及描述：范围限制：0-256|
 
         :param partner_corp_name: The partner_corp_name of this BudgetRecordInfo.
         :type partner_corp_name: str
@@ -219,7 +219,7 @@ class BudgetRecordInfo:
     def partner_account_name(self):
         r"""Gets the partner_account_name of this BudgetRecordInfo.
 
-        |参数名称：伙伴账号名| |参数的约束及描述：范围限制：0-256|
+        |参数名称：伙伴账号名| |参数的约束及描述：范围限制：0-128|
 
         :return: The partner_account_name of this BudgetRecordInfo.
         :rtype: str
@@ -230,7 +230,7 @@ class BudgetRecordInfo:
     def partner_account_name(self, partner_account_name):
         r"""Sets the partner_account_name of this BudgetRecordInfo.
 
-        |参数名称：伙伴账号名| |参数的约束及描述：范围限制：0-256|
+        |参数名称：伙伴账号名| |参数的约束及描述：范围限制：0-128|
 
         :param partner_account_name: The partner_account_name of this BudgetRecordInfo.
         :type partner_account_name: str

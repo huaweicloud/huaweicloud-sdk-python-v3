@@ -34,11 +34,11 @@ class ListL7PoliciesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param request_id: 参数解释：请求ID。  注：自动生成 。
+        :param request_id: **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
         :type request_id: str
         :param page_info: 
         :type page_info: :class:`huaweicloudsdkelb.v3.PageInfo`
-        :param l7policies: 参数解释：转发策略对象列表。
+        :param l7policies: **参数解释**：转发策略对象列表。
         :type l7policies: list[:class:`huaweicloudsdkelb.v3.L7Policy`]
         """
         
@@ -60,7 +60,7 @@ class ListL7PoliciesResponse(SdkResponse):
     def request_id(self):
         r"""Gets the request_id of this ListL7PoliciesResponse.
 
-        参数解释：请求ID。  注：自动生成 。
+        **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
 
         :return: The request_id of this ListL7PoliciesResponse.
         :rtype: str
@@ -71,7 +71,7 @@ class ListL7PoliciesResponse(SdkResponse):
     def request_id(self, request_id):
         r"""Sets the request_id of this ListL7PoliciesResponse.
 
-        参数解释：请求ID。  注：自动生成 。
+        **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
 
         :param request_id: The request_id of this ListL7PoliciesResponse.
         :type request_id: str
@@ -100,7 +100,7 @@ class ListL7PoliciesResponse(SdkResponse):
     def l7policies(self):
         r"""Gets the l7policies of this ListL7PoliciesResponse.
 
-        参数解释：转发策略对象列表。
+        **参数解释**：转发策略对象列表。
 
         :return: The l7policies of this ListL7PoliciesResponse.
         :rtype: list[:class:`huaweicloudsdkelb.v3.L7Policy`]
@@ -111,7 +111,7 @@ class ListL7PoliciesResponse(SdkResponse):
     def l7policies(self, l7policies):
         r"""Sets the l7policies of this ListL7PoliciesResponse.
 
-        参数解释：转发策略对象列表。
+        **参数解释**：转发策略对象列表。
 
         :param l7policies: The l7policies of this ListL7PoliciesResponse.
         :type l7policies: list[:class:`huaweicloudsdkelb.v3.L7Policy`]

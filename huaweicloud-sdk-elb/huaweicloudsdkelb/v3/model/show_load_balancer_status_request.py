@@ -29,7 +29,7 @@ class ShowLoadBalancerStatusRequest:
 
         The model defined in huaweicloud sdk
 
-        :param loadbalancer_id: 负载均衡器ID。
+        :param loadbalancer_id: **参数解释**：负载均衡器ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type loadbalancer_id: str
         """
         
@@ -44,7 +44,7 @@ class ShowLoadBalancerStatusRequest:
     def loadbalancer_id(self):
         r"""Gets the loadbalancer_id of this ShowLoadBalancerStatusRequest.
 
-        负载均衡器ID。
+        **参数解释**：负载均衡器ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The loadbalancer_id of this ShowLoadBalancerStatusRequest.
         :rtype: str
@@ -55,7 +55,7 @@ class ShowLoadBalancerStatusRequest:
     def loadbalancer_id(self, loadbalancer_id):
         r"""Sets the loadbalancer_id of this ShowLoadBalancerStatusRequest.
 
-        负载均衡器ID。
+        **参数解释**：负载均衡器ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param loadbalancer_id: The loadbalancer_id of this ShowLoadBalancerStatusRequest.
         :type loadbalancer_id: str

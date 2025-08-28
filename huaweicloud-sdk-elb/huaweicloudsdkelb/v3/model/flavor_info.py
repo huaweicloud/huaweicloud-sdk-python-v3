@@ -39,17 +39,17 @@ class FlavorInfo:
 
         The model defined in huaweicloud sdk
 
-        :param connection: 参数解释：并发数。单位：个。
+        :param connection: **参数解释**：最大并发连接数。单位：个。  **取值范围**：不涉及
         :type connection: int
-        :param cps: 参数解释：新建数。单位：个。
+        :param cps: **参数解释**：每秒新建连接数。单位：个。  **取值范围**：不涉及
         :type cps: int
-        :param qps: 参数解释：每秒查询数。单位：个。  约束限制：仅7层LB有该指标。
+        :param qps: **参数解释**：每秒查询速率。单位：个。仅7层LB有该指标。  **取值范围**：不涉及
         :type qps: int
-        :param bandwidth: 参数解释：带宽。单位：Kbit/s。
+        :param bandwidth: **参数解释**：带宽。单位：Kbit/s。  **取值范围**：不涉及
         :type bandwidth: int
-        :param lcu: 参数解释：当前flavor对应的lcu数量。单位：个。  &gt; LCU是用来衡量独享型ELB处理性能综合指标，LCU值越大，性能越好。
+        :param lcu: **参数解释**：当前flavor对应的lcu数量。单位：个。  **取值范围**：不涉及  &gt; LCU是用来衡量独享型ELB处理性能综合指标，LCU值越大，性能越好。
         :type lcu: int
-        :param https_cps: 参数解释：https新建连接数。单位：个。  约束限制：仅7层LB有该指标。
+        :param https_cps: **参数解释**：https新建连接数，仅7层LB有该指标。单位：个。  **取值范围**：不涉及
         :type https_cps: int
         """
         
@@ -78,7 +78,7 @@ class FlavorInfo:
     def connection(self):
         r"""Gets the connection of this FlavorInfo.
 
-        参数解释：并发数。单位：个。
+        **参数解释**：最大并发连接数。单位：个。  **取值范围**：不涉及
 
         :return: The connection of this FlavorInfo.
         :rtype: int
@@ -89,7 +89,7 @@ class FlavorInfo:
     def connection(self, connection):
         r"""Sets the connection of this FlavorInfo.
 
-        参数解释：并发数。单位：个。
+        **参数解释**：最大并发连接数。单位：个。  **取值范围**：不涉及
 
         :param connection: The connection of this FlavorInfo.
         :type connection: int
@@ -100,7 +100,7 @@ class FlavorInfo:
     def cps(self):
         r"""Gets the cps of this FlavorInfo.
 
-        参数解释：新建数。单位：个。
+        **参数解释**：每秒新建连接数。单位：个。  **取值范围**：不涉及
 
         :return: The cps of this FlavorInfo.
         :rtype: int
@@ -111,7 +111,7 @@ class FlavorInfo:
     def cps(self, cps):
         r"""Sets the cps of this FlavorInfo.
 
-        参数解释：新建数。单位：个。
+        **参数解释**：每秒新建连接数。单位：个。  **取值范围**：不涉及
 
         :param cps: The cps of this FlavorInfo.
         :type cps: int
@@ -122,7 +122,7 @@ class FlavorInfo:
     def qps(self):
         r"""Gets the qps of this FlavorInfo.
 
-        参数解释：每秒查询数。单位：个。  约束限制：仅7层LB有该指标。
+        **参数解释**：每秒查询速率。单位：个。仅7层LB有该指标。  **取值范围**：不涉及
 
         :return: The qps of this FlavorInfo.
         :rtype: int
@@ -133,7 +133,7 @@ class FlavorInfo:
     def qps(self, qps):
         r"""Sets the qps of this FlavorInfo.
 
-        参数解释：每秒查询数。单位：个。  约束限制：仅7层LB有该指标。
+        **参数解释**：每秒查询速率。单位：个。仅7层LB有该指标。  **取值范围**：不涉及
 
         :param qps: The qps of this FlavorInfo.
         :type qps: int
@@ -144,7 +144,7 @@ class FlavorInfo:
     def bandwidth(self):
         r"""Gets the bandwidth of this FlavorInfo.
 
-        参数解释：带宽。单位：Kbit/s。
+        **参数解释**：带宽。单位：Kbit/s。  **取值范围**：不涉及
 
         :return: The bandwidth of this FlavorInfo.
         :rtype: int
@@ -155,7 +155,7 @@ class FlavorInfo:
     def bandwidth(self, bandwidth):
         r"""Sets the bandwidth of this FlavorInfo.
 
-        参数解释：带宽。单位：Kbit/s。
+        **参数解释**：带宽。单位：Kbit/s。  **取值范围**：不涉及
 
         :param bandwidth: The bandwidth of this FlavorInfo.
         :type bandwidth: int
@@ -166,7 +166,7 @@ class FlavorInfo:
     def lcu(self):
         r"""Gets the lcu of this FlavorInfo.
 
-        参数解释：当前flavor对应的lcu数量。单位：个。  > LCU是用来衡量独享型ELB处理性能综合指标，LCU值越大，性能越好。
+        **参数解释**：当前flavor对应的lcu数量。单位：个。  **取值范围**：不涉及  > LCU是用来衡量独享型ELB处理性能综合指标，LCU值越大，性能越好。
 
         :return: The lcu of this FlavorInfo.
         :rtype: int
@@ -177,7 +177,7 @@ class FlavorInfo:
     def lcu(self, lcu):
         r"""Sets the lcu of this FlavorInfo.
 
-        参数解释：当前flavor对应的lcu数量。单位：个。  > LCU是用来衡量独享型ELB处理性能综合指标，LCU值越大，性能越好。
+        **参数解释**：当前flavor对应的lcu数量。单位：个。  **取值范围**：不涉及  > LCU是用来衡量独享型ELB处理性能综合指标，LCU值越大，性能越好。
 
         :param lcu: The lcu of this FlavorInfo.
         :type lcu: int
@@ -188,7 +188,7 @@ class FlavorInfo:
     def https_cps(self):
         r"""Gets the https_cps of this FlavorInfo.
 
-        参数解释：https新建连接数。单位：个。  约束限制：仅7层LB有该指标。
+        **参数解释**：https新建连接数，仅7层LB有该指标。单位：个。  **取值范围**：不涉及
 
         :return: The https_cps of this FlavorInfo.
         :rtype: int
@@ -199,7 +199,7 @@ class FlavorInfo:
     def https_cps(self, https_cps):
         r"""Sets the https_cps of this FlavorInfo.
 
-        参数解释：https新建连接数。单位：个。  约束限制：仅7层LB有该指标。
+        **参数解释**：https新建连接数，仅7层LB有该指标。单位：个。  **取值范围**：不涉及
 
         :param https_cps: The https_cps of this FlavorInfo.
         :type https_cps: int

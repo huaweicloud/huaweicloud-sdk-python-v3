@@ -31,7 +31,7 @@ class ListRegisteredServicesForAuthSchemaV5Request:
 
         The model defined in huaweicloud sdk
 
-        :param limit: 每页显示的条目数量。
+        :param limit: 每页显示的条目数量，范围为1到200条，默认为100条。
         :type limit: int
         :param marker: 分页标记，长度为4到400个字符，只包含字母、数字、\&quot;+\&quot;、\&quot;/\&quot;、\&quot;&#x3D;\&quot;、\&quot;-\&quot;和\&quot;_\&quot;的字符串。
         :type marker: str
@@ -52,7 +52,7 @@ class ListRegisteredServicesForAuthSchemaV5Request:
     def limit(self):
         r"""Gets the limit of this ListRegisteredServicesForAuthSchemaV5Request.
 
-        每页显示的条目数量。
+        每页显示的条目数量，范围为1到200条，默认为100条。
 
         :return: The limit of this ListRegisteredServicesForAuthSchemaV5Request.
         :rtype: int
@@ -63,7 +63,7 @@ class ListRegisteredServicesForAuthSchemaV5Request:
     def limit(self, limit):
         r"""Sets the limit of this ListRegisteredServicesForAuthSchemaV5Request.
 
-        每页显示的条目数量。
+        每页显示的条目数量，范围为1到200条，默认为100条。
 
         :param limit: The limit of this ListRegisteredServicesForAuthSchemaV5Request.
         :type limit: int

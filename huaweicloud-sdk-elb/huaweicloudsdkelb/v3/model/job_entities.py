@@ -31,9 +31,9 @@ class JobEntities:
 
         The model defined in huaweicloud sdk
 
-        :param resource_id: 子任务关联的资源ID
+        :param resource_id: **参数解释**：子任务关联的资源ID。  **取值范围**：不涉及
         :type resource_id: str
-        :param resource_type: 子任务关联的资源类型
+        :param resource_type: **参数解释**：子任务关联的资源类型。  **取值范围**：不涉及
         :type resource_type: str
         """
         
@@ -52,7 +52,7 @@ class JobEntities:
     def resource_id(self):
         r"""Gets the resource_id of this JobEntities.
 
-        子任务关联的资源ID
+        **参数解释**：子任务关联的资源ID。  **取值范围**：不涉及
 
         :return: The resource_id of this JobEntities.
         :rtype: str
@@ -63,7 +63,7 @@ class JobEntities:
     def resource_id(self, resource_id):
         r"""Sets the resource_id of this JobEntities.
 
-        子任务关联的资源ID
+        **参数解释**：子任务关联的资源ID。  **取值范围**：不涉及
 
         :param resource_id: The resource_id of this JobEntities.
         :type resource_id: str
@@ -74,7 +74,7 @@ class JobEntities:
     def resource_type(self):
         r"""Gets the resource_type of this JobEntities.
 
-        子任务关联的资源类型
+        **参数解释**：子任务关联的资源类型。  **取值范围**：不涉及
 
         :return: The resource_type of this JobEntities.
         :rtype: str
@@ -85,7 +85,7 @@ class JobEntities:
     def resource_type(self, resource_type):
         r"""Sets the resource_type of this JobEntities.
 
-        子任务关联的资源类型
+        **参数解释**：子任务关联的资源类型。  **取值范围**：不涉及
 
         :param resource_type: The resource_type of this JobEntities.
         :type resource_type: str

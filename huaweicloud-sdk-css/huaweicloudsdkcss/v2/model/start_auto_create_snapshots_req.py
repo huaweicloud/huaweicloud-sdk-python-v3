@@ -19,6 +19,7 @@ class StartAutoCreateSnapshotsReq:
     openapi_types = {
         'indices': 'str',
         'keepday': 'int',
+        'frequency': 'str',
         'period': 'str',
         'prefix': 'str'
     }
@@ -26,11 +27,12 @@ class StartAutoCreateSnapshotsReq:
     attribute_map = {
         'indices': 'indices',
         'keepday': 'keepday',
+        'frequency': 'frequency',
         'period': 'period',
         'prefix': 'prefix'
     }
 
-    def __init__(self, indices=None, keepday=None, period=None, prefix=None):
+    def __init__(self, indices=None, keepday=None, frequency=None, period=None, prefix=None):
         r"""StartAutoCreateSnapshotsReq
 
         The model defined in huaweicloud sdk
@@ -39,6 +41,8 @@ class StartAutoCreateSnapshotsReq:
         :type indices: str
         :param keepday: 设置快照保留的天数，范围是1～90。系统在半点时刻会自动删除超过保留天数的快照。
         :type keepday: int
+        :param frequency: 自动创建快照的执行频次。
+        :type frequency: str
         :param period: 每天创建快照的时刻，只支持整点，后面需加上时区，格式为“HH:mm z”，“HH:mm”表示整点时间，“z”表示时区。比如“00:00 GMT+08:00”、“01:00 GMT+08:00”等。
         :type period: str
         :param prefix: 自动创建的快照名称前缀，需要用户自己手动输入。只能包含1~32位小写字母、数字、中划线或者下划线，并且以小写字母开头。
@@ -49,6 +53,7 @@ class StartAutoCreateSnapshotsReq:
 
         self._indices = None
         self._keepday = None
+        self._frequency = None
         self._period = None
         self._prefix = None
         self.discriminator = None
@@ -56,6 +61,8 @@ class StartAutoCreateSnapshotsReq:
         if indices is not None:
             self.indices = indices
         self.keepday = keepday
+        if frequency is not None:
+            self.frequency = frequency
         self.period = period
         self.prefix = prefix
 
@@ -102,6 +109,28 @@ class StartAutoCreateSnapshotsReq:
         :type keepday: int
         """
         self._keepday = keepday
+
+    @property
+    def frequency(self):
+        r"""Gets the frequency of this StartAutoCreateSnapshotsReq.
+
+        自动创建快照的执行频次。
+
+        :return: The frequency of this StartAutoCreateSnapshotsReq.
+        :rtype: str
+        """
+        return self._frequency
+
+    @frequency.setter
+    def frequency(self, frequency):
+        r"""Sets the frequency of this StartAutoCreateSnapshotsReq.
+
+        自动创建快照的执行频次。
+
+        :param frequency: The frequency of this StartAutoCreateSnapshotsReq.
+        :type frequency: str
+        """
+        self._frequency = frequency
 
     @property
     def period(self):

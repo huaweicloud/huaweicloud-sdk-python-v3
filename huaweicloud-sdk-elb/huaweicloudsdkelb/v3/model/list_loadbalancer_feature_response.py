@@ -32,9 +32,9 @@ class ListLoadbalancerFeatureResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param features: 参数解释：ELB实例特性信息列表。
+        :param features: **参数解释**：ELB实例特性信息列表。
         :type features: list[:class:`huaweicloudsdkelb.v3.LoadbalancerFeature`]
-        :param request_id: 参数解释：请求ID。  注：自动生成 。
+        :param request_id: **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
         :type request_id: str
         """
         
@@ -53,7 +53,7 @@ class ListLoadbalancerFeatureResponse(SdkResponse):
     def features(self):
         r"""Gets the features of this ListLoadbalancerFeatureResponse.
 
-        参数解释：ELB实例特性信息列表。
+        **参数解释**：ELB实例特性信息列表。
 
         :return: The features of this ListLoadbalancerFeatureResponse.
         :rtype: list[:class:`huaweicloudsdkelb.v3.LoadbalancerFeature`]
@@ -64,7 +64,7 @@ class ListLoadbalancerFeatureResponse(SdkResponse):
     def features(self, features):
         r"""Sets the features of this ListLoadbalancerFeatureResponse.
 
-        参数解释：ELB实例特性信息列表。
+        **参数解释**：ELB实例特性信息列表。
 
         :param features: The features of this ListLoadbalancerFeatureResponse.
         :type features: list[:class:`huaweicloudsdkelb.v3.LoadbalancerFeature`]
@@ -75,7 +75,7 @@ class ListLoadbalancerFeatureResponse(SdkResponse):
     def request_id(self):
         r"""Gets the request_id of this ListLoadbalancerFeatureResponse.
 
-        参数解释：请求ID。  注：自动生成 。
+        **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
 
         :return: The request_id of this ListLoadbalancerFeatureResponse.
         :rtype: str
@@ -86,7 +86,7 @@ class ListLoadbalancerFeatureResponse(SdkResponse):
     def request_id(self, request_id):
         r"""Sets the request_id of this ListLoadbalancerFeatureResponse.
 
-        参数解释：请求ID。  注：自动生成 。
+        **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
 
         :param request_id: The request_id of this ListLoadbalancerFeatureResponse.
         :type request_id: str

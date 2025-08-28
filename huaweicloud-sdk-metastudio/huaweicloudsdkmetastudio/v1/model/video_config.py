@@ -29,7 +29,8 @@ class VideoConfig:
         'dy': 'int',
         'is_enable_super_resolution': 'bool',
         'is_end_at_first_frame': 'bool',
-        'output_external_url': 'str'
+        'output_external_url': 'str',
+        'is_vocabulary_config_enable': 'bool'
     }
 
     attribute_map = {
@@ -45,17 +46,18 @@ class VideoConfig:
         'dy': 'dy',
         'is_enable_super_resolution': 'is_enable_super_resolution',
         'is_end_at_first_frame': 'is_end_at_first_frame',
-        'output_external_url': 'output_external_url'
+        'output_external_url': 'output_external_url',
+        'is_vocabulary_config_enable': 'is_vocabulary_config_enable'
     }
 
-    def __init__(self, clip_mode=None, codec=None, bitrate=None, width=None, height=None, frame_rate=None, is_subtitle_enable=None, subtitle_config=None, dx=None, dy=None, is_enable_super_resolution=None, is_end_at_first_frame=None, output_external_url=None):
+    def __init__(self, clip_mode=None, codec=None, bitrate=None, width=None, height=None, frame_rate=None, is_subtitle_enable=None, subtitle_config=None, dx=None, dy=None, is_enable_super_resolution=None, is_end_at_first_frame=None, output_external_url=None, is_vocabulary_config_enable=None):
         r"""VideoConfig
 
         The model defined in huaweicloud sdk
 
         :param clip_mode: **参数解释**： 输出视频的剪辑方式。 **约束限制**： 不涉及。 **取值范围**： * RESIZE：视频缩放。 * CROP：视频裁剪。
         :type clip_mode: str
-        :param codec: **参数解释**： 视频编码格式及视频文件格式。 **约束限制**： 仅分身数字人视频制作支持VP8和QTRLE编码。QTRLE编码时文本驱动字符数限制小于1500字，音频驱动音频长度小于5分钟。 QTRLE编码需要先申请开通白名单后才能使用  **取值范围**： * H264：h264编码，输出mp4文件。 * VP8：vp8编码，输出webm文件。 * QTRLE：qtrle ，输出mov文件。  **默认取值**： 不涉及
+        :param codec: **参数解释**： 视频编码格式及视频文件格式。 **约束限制**： 仅分身数字人视频制作支持VP8和QTRLE编码。QTRLE编码时文本驱动字符数限制小于1500字，音频驱动音频长度小于5分钟。 QTRLE编码需要先申请开通白名单后才能使用  **取值范围**： * H264：h264编码，输出mp4文件。 * VP8：vp8编码，输出webm文件。 * QTRLE：qtrle ，输出mov文件。  **默认取值**： H264
         :type codec: str
         :param bitrate: **参数解释**： 输出平均码率。单位：kbps。 **约束限制**： * 分身数字人视频制作采用质量优先，可能会超过设置的码率。 * 分身数字人直播码率范围[1000, 8000]。  **默认取值**： 不涉及
         :type bitrate: int
@@ -79,6 +81,8 @@ class VideoConfig:
         :type is_end_at_first_frame: bool
         :param output_external_url: 视频文件上传的外部URL。  &gt; * 需要先申请开通白名单后，才允许将视频上传到外部URL。
         :type output_external_url: str
+        :param is_vocabulary_config_enable: **参数解释**： 是否应用当前租户的读法配置 **约束限制**： 仅分身数字人视频制作支持。 **取值范围** * true: 开启 * false: 不开启
+        :type is_vocabulary_config_enable: bool
         """
         
         
@@ -96,6 +100,7 @@ class VideoConfig:
         self._is_enable_super_resolution = None
         self._is_end_at_first_frame = None
         self._output_external_url = None
+        self._is_vocabulary_config_enable = None
         self.discriminator = None
 
         if clip_mode is not None:
@@ -121,6 +126,8 @@ class VideoConfig:
             self.is_end_at_first_frame = is_end_at_first_frame
         if output_external_url is not None:
             self.output_external_url = output_external_url
+        if is_vocabulary_config_enable is not None:
+            self.is_vocabulary_config_enable = is_vocabulary_config_enable
 
     @property
     def clip_mode(self):
@@ -148,7 +155,7 @@ class VideoConfig:
     def codec(self):
         r"""Gets the codec of this VideoConfig.
 
-        **参数解释**： 视频编码格式及视频文件格式。 **约束限制**： 仅分身数字人视频制作支持VP8和QTRLE编码。QTRLE编码时文本驱动字符数限制小于1500字，音频驱动音频长度小于5分钟。 QTRLE编码需要先申请开通白名单后才能使用  **取值范围**： * H264：h264编码，输出mp4文件。 * VP8：vp8编码，输出webm文件。 * QTRLE：qtrle ，输出mov文件。  **默认取值**： 不涉及
+        **参数解释**： 视频编码格式及视频文件格式。 **约束限制**： 仅分身数字人视频制作支持VP8和QTRLE编码。QTRLE编码时文本驱动字符数限制小于1500字，音频驱动音频长度小于5分钟。 QTRLE编码需要先申请开通白名单后才能使用  **取值范围**： * H264：h264编码，输出mp4文件。 * VP8：vp8编码，输出webm文件。 * QTRLE：qtrle ，输出mov文件。  **默认取值**： H264
 
         :return: The codec of this VideoConfig.
         :rtype: str
@@ -159,7 +166,7 @@ class VideoConfig:
     def codec(self, codec):
         r"""Sets the codec of this VideoConfig.
 
-        **参数解释**： 视频编码格式及视频文件格式。 **约束限制**： 仅分身数字人视频制作支持VP8和QTRLE编码。QTRLE编码时文本驱动字符数限制小于1500字，音频驱动音频长度小于5分钟。 QTRLE编码需要先申请开通白名单后才能使用  **取值范围**： * H264：h264编码，输出mp4文件。 * VP8：vp8编码，输出webm文件。 * QTRLE：qtrle ，输出mov文件。  **默认取值**： 不涉及
+        **参数解释**： 视频编码格式及视频文件格式。 **约束限制**： 仅分身数字人视频制作支持VP8和QTRLE编码。QTRLE编码时文本驱动字符数限制小于1500字，音频驱动音频长度小于5分钟。 QTRLE编码需要先申请开通白名单后才能使用  **取值范围**： * H264：h264编码，输出mp4文件。 * VP8：vp8编码，输出webm文件。 * QTRLE：qtrle ，输出mov文件。  **默认取值**： H264
 
         :param codec: The codec of this VideoConfig.
         :type codec: str
@@ -403,6 +410,28 @@ class VideoConfig:
         :type output_external_url: str
         """
         self._output_external_url = output_external_url
+
+    @property
+    def is_vocabulary_config_enable(self):
+        r"""Gets the is_vocabulary_config_enable of this VideoConfig.
+
+        **参数解释**： 是否应用当前租户的读法配置 **约束限制**： 仅分身数字人视频制作支持。 **取值范围** * true: 开启 * false: 不开启
+
+        :return: The is_vocabulary_config_enable of this VideoConfig.
+        :rtype: bool
+        """
+        return self._is_vocabulary_config_enable
+
+    @is_vocabulary_config_enable.setter
+    def is_vocabulary_config_enable(self, is_vocabulary_config_enable):
+        r"""Sets the is_vocabulary_config_enable of this VideoConfig.
+
+        **参数解释**： 是否应用当前租户的读法配置 **约束限制**： 仅分身数字人视频制作支持。 **取值范围** * true: 开启 * false: 不开启
+
+        :param is_vocabulary_config_enable: The is_vocabulary_config_enable of this VideoConfig.
+        :type is_vocabulary_config_enable: bool
+        """
+        self._is_vocabulary_config_enable = is_vocabulary_config_enable
 
     def to_dict(self):
         """Returns the model properties as a dict"""

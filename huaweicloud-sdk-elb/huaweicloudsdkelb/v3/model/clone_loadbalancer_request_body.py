@@ -31,7 +31,7 @@ class CloneLoadbalancerRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param count: 参数解释：单次最大复制数量。  取值范围：1-10  默认取值：1
+        :param count: **参数解释**：单次最大复制数量。  **约束限制**：不涉及  **取值范围**：1-10  **默认取值**：1
         :type count: int
         :param target_loadbalancer_param: 
         :type target_loadbalancer_param: :class:`huaweicloudsdkelb.v3.TargetLoadbalancerParam`
@@ -51,7 +51,7 @@ class CloneLoadbalancerRequestBody:
     def count(self):
         r"""Gets the count of this CloneLoadbalancerRequestBody.
 
-        参数解释：单次最大复制数量。  取值范围：1-10  默认取值：1
+        **参数解释**：单次最大复制数量。  **约束限制**：不涉及  **取值范围**：1-10  **默认取值**：1
 
         :return: The count of this CloneLoadbalancerRequestBody.
         :rtype: int
@@ -62,7 +62,7 @@ class CloneLoadbalancerRequestBody:
     def count(self, count):
         r"""Sets the count of this CloneLoadbalancerRequestBody.
 
-        参数解释：单次最大复制数量。  取值范围：1-10  默认取值：1
+        **参数解释**：单次最大复制数量。  **约束限制**：不涉及  **取值范围**：1-10  **默认取值**：1
 
         :param count: The count of this CloneLoadbalancerRequestBody.
         :type count: int

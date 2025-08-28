@@ -35,13 +35,13 @@ class LoadBalancerStatusHealthMonitor:
 
         The model defined in huaweicloud sdk
 
-        :param type: 协议类型。取值：TCP、UDP_CONNECT或HTTP。
+        :param type: **参数解释**：健康检查器协议类型。  **取值范围**：TCP、UDP_CONNECT、HTTP。
         :type type: str
-        :param id: 健康检查器ID。
+        :param id: **参数解释**：健康检查器ID。  **取值范围**：不涉及
         :type id: str
-        :param name: 健康检查器名称。
+        :param name: **参数解释**：健康检查器名称。  **取值范围**：不涉及
         :type name: str
-        :param provisioning_status: 健康检查器的配置状态。取值：ACTIVE表示使用中。
+        :param provisioning_status: **参数解释**：健康检查器的配置状态。  **取值范围**：ACTIVE表示使用中。
         :type provisioning_status: str
         """
         
@@ -66,7 +66,7 @@ class LoadBalancerStatusHealthMonitor:
     def type(self):
         r"""Gets the type of this LoadBalancerStatusHealthMonitor.
 
-        协议类型。取值：TCP、UDP_CONNECT或HTTP。
+        **参数解释**：健康检查器协议类型。  **取值范围**：TCP、UDP_CONNECT、HTTP。
 
         :return: The type of this LoadBalancerStatusHealthMonitor.
         :rtype: str
@@ -77,7 +77,7 @@ class LoadBalancerStatusHealthMonitor:
     def type(self, type):
         r"""Sets the type of this LoadBalancerStatusHealthMonitor.
 
-        协议类型。取值：TCP、UDP_CONNECT或HTTP。
+        **参数解释**：健康检查器协议类型。  **取值范围**：TCP、UDP_CONNECT、HTTP。
 
         :param type: The type of this LoadBalancerStatusHealthMonitor.
         :type type: str
@@ -88,7 +88,7 @@ class LoadBalancerStatusHealthMonitor:
     def id(self):
         r"""Gets the id of this LoadBalancerStatusHealthMonitor.
 
-        健康检查器ID。
+        **参数解释**：健康检查器ID。  **取值范围**：不涉及
 
         :return: The id of this LoadBalancerStatusHealthMonitor.
         :rtype: str
@@ -99,7 +99,7 @@ class LoadBalancerStatusHealthMonitor:
     def id(self, id):
         r"""Sets the id of this LoadBalancerStatusHealthMonitor.
 
-        健康检查器ID。
+        **参数解释**：健康检查器ID。  **取值范围**：不涉及
 
         :param id: The id of this LoadBalancerStatusHealthMonitor.
         :type id: str
@@ -110,7 +110,7 @@ class LoadBalancerStatusHealthMonitor:
     def name(self):
         r"""Gets the name of this LoadBalancerStatusHealthMonitor.
 
-        健康检查器名称。
+        **参数解释**：健康检查器名称。  **取值范围**：不涉及
 
         :return: The name of this LoadBalancerStatusHealthMonitor.
         :rtype: str
@@ -121,7 +121,7 @@ class LoadBalancerStatusHealthMonitor:
     def name(self, name):
         r"""Sets the name of this LoadBalancerStatusHealthMonitor.
 
-        健康检查器名称。
+        **参数解释**：健康检查器名称。  **取值范围**：不涉及
 
         :param name: The name of this LoadBalancerStatusHealthMonitor.
         :type name: str
@@ -132,7 +132,7 @@ class LoadBalancerStatusHealthMonitor:
     def provisioning_status(self):
         r"""Gets the provisioning_status of this LoadBalancerStatusHealthMonitor.
 
-        健康检查器的配置状态。取值：ACTIVE表示使用中。
+        **参数解释**：健康检查器的配置状态。  **取值范围**：ACTIVE表示使用中。
 
         :return: The provisioning_status of this LoadBalancerStatusHealthMonitor.
         :rtype: str
@@ -143,7 +143,7 @@ class LoadBalancerStatusHealthMonitor:
     def provisioning_status(self, provisioning_status):
         r"""Sets the provisioning_status of this LoadBalancerStatusHealthMonitor.
 
-        健康检查器的配置状态。取值：ACTIVE表示使用中。
+        **参数解释**：健康检查器的配置状态。  **取值范围**：ACTIVE表示使用中。
 
         :param provisioning_status: The provisioning_status of this LoadBalancerStatusHealthMonitor.
         :type provisioning_status: str

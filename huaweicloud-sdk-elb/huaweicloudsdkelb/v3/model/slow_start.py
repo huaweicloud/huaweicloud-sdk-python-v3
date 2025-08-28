@@ -31,9 +31,9 @@ class SlowStart:
 
         The model defined in huaweicloud sdk
 
-        :param enable: 参数解释：慢启动的开关。  取值范围： - true：开启。 - false：关闭。  默认取值：false 
+        :param enable: **参数解释**：慢启动的开关。  **取值范围**： - true：开启。 - false：关闭。 
         :type enable: bool
-        :param duration: 参数解释：慢启动的持续时间。  取值范围：30-1200，单位：秒。  默认取值：30
+        :param duration: **参数解释**：慢启动的持续时间。  **取值范围**：30-1200，单位：秒。
         :type duration: int
         """
         
@@ -50,7 +50,7 @@ class SlowStart:
     def enable(self):
         r"""Gets the enable of this SlowStart.
 
-        参数解释：慢启动的开关。  取值范围： - true：开启。 - false：关闭。  默认取值：false 
+        **参数解释**：慢启动的开关。  **取值范围**： - true：开启。 - false：关闭。 
 
         :return: The enable of this SlowStart.
         :rtype: bool
@@ -61,7 +61,7 @@ class SlowStart:
     def enable(self, enable):
         r"""Sets the enable of this SlowStart.
 
-        参数解释：慢启动的开关。  取值范围： - true：开启。 - false：关闭。  默认取值：false 
+        **参数解释**：慢启动的开关。  **取值范围**： - true：开启。 - false：关闭。 
 
         :param enable: The enable of this SlowStart.
         :type enable: bool
@@ -72,7 +72,7 @@ class SlowStart:
     def duration(self):
         r"""Gets the duration of this SlowStart.
 
-        参数解释：慢启动的持续时间。  取值范围：30-1200，单位：秒。  默认取值：30
+        **参数解释**：慢启动的持续时间。  **取值范围**：30-1200，单位：秒。
 
         :return: The duration of this SlowStart.
         :rtype: int
@@ -83,7 +83,7 @@ class SlowStart:
     def duration(self, duration):
         r"""Sets the duration of this SlowStart.
 
-        参数解释：慢启动的持续时间。  取值范围：30-1200，单位：秒。  默认取值：30
+        **参数解释**：慢启动的持续时间。  **取值范围**：30-1200，单位：秒。
 
         :param duration: The duration of this SlowStart.
         :type duration: int

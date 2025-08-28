@@ -34,7 +34,7 @@ class ShowJobResponse(SdkResponse):
 
         :param job: 
         :type job: :class:`huaweicloudsdkelb.v3.MainJob`
-        :param request_id: 请求ID。 注：自动生成 。
+        :param request_id: **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
         :type request_id: str
         """
         
@@ -71,7 +71,7 @@ class ShowJobResponse(SdkResponse):
     def request_id(self):
         r"""Gets the request_id of this ShowJobResponse.
 
-        请求ID。 注：自动生成 。
+        **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
 
         :return: The request_id of this ShowJobResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class ShowJobResponse(SdkResponse):
     def request_id(self, request_id):
         r"""Sets the request_id of this ShowJobResponse.
 
-        请求ID。 注：自动生成 。
+        **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
 
         :param request_id: The request_id of this ShowJobResponse.
         :type request_id: str

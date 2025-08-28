@@ -34,11 +34,11 @@ class ListJobsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param jobs: 任务列表
+        :param jobs: **参数解释**：任务列表。
         :type jobs: list[:class:`huaweicloudsdkelb.v3.MainJob`]
         :param page_info: 
         :type page_info: :class:`huaweicloudsdkelb.v3.PageInfo`
-        :param request_id: 请求ID。 注：自动生成 。
+        :param request_id: **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
         :type request_id: str
         """
         
@@ -60,7 +60,7 @@ class ListJobsResponse(SdkResponse):
     def jobs(self):
         r"""Gets the jobs of this ListJobsResponse.
 
-        任务列表
+        **参数解释**：任务列表。
 
         :return: The jobs of this ListJobsResponse.
         :rtype: list[:class:`huaweicloudsdkelb.v3.MainJob`]
@@ -71,7 +71,7 @@ class ListJobsResponse(SdkResponse):
     def jobs(self, jobs):
         r"""Sets the jobs of this ListJobsResponse.
 
-        任务列表
+        **参数解释**：任务列表。
 
         :param jobs: The jobs of this ListJobsResponse.
         :type jobs: list[:class:`huaweicloudsdkelb.v3.MainJob`]
@@ -100,7 +100,7 @@ class ListJobsResponse(SdkResponse):
     def request_id(self):
         r"""Gets the request_id of this ListJobsResponse.
 
-        请求ID。 注：自动生成 。
+        **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
 
         :return: The request_id of this ListJobsResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class ListJobsResponse(SdkResponse):
     def request_id(self, request_id):
         r"""Sets the request_id of this ListJobsResponse.
 
-        请求ID。 注：自动生成 。
+        **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
 
         :param request_id: The request_id of this ListJobsResponse.
         :type request_id: str

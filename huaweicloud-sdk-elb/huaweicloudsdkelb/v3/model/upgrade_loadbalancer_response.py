@@ -32,9 +32,9 @@ class UpgradeLoadbalancerResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param request_id: 请求ID。 注：自动生成 。
+        :param request_id: **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
         :type request_id: str
-        :param job_id: 升级的任务ID。
+        :param job_id: **参数解释**：升级的任务ID。  **取值范围**：不涉及
         :type job_id: str
         """
         
@@ -53,7 +53,7 @@ class UpgradeLoadbalancerResponse(SdkResponse):
     def request_id(self):
         r"""Gets the request_id of this UpgradeLoadbalancerResponse.
 
-        请求ID。 注：自动生成 。
+        **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
 
         :return: The request_id of this UpgradeLoadbalancerResponse.
         :rtype: str
@@ -64,7 +64,7 @@ class UpgradeLoadbalancerResponse(SdkResponse):
     def request_id(self, request_id):
         r"""Sets the request_id of this UpgradeLoadbalancerResponse.
 
-        请求ID。 注：自动生成 。
+        **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
 
         :param request_id: The request_id of this UpgradeLoadbalancerResponse.
         :type request_id: str
@@ -75,7 +75,7 @@ class UpgradeLoadbalancerResponse(SdkResponse):
     def job_id(self):
         r"""Gets the job_id of this UpgradeLoadbalancerResponse.
 
-        升级的任务ID。
+        **参数解释**：升级的任务ID。  **取值范围**：不涉及
 
         :return: The job_id of this UpgradeLoadbalancerResponse.
         :rtype: str
@@ -86,7 +86,7 @@ class UpgradeLoadbalancerResponse(SdkResponse):
     def job_id(self, job_id):
         r"""Sets the job_id of this UpgradeLoadbalancerResponse.
 
-        升级的任务ID。
+        **参数解释**：升级的任务ID。  **取值范围**：不涉及
 
         :param job_id: The job_id of this UpgradeLoadbalancerResponse.
         :type job_id: str

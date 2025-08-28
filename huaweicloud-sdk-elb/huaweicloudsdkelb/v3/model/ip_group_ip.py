@@ -29,7 +29,7 @@ class IpGroupIp:
 
         The model defined in huaweicloud sdk
 
-        :param ip: 参数解释：IP地址，可以是具体的IP地址或者IP地址段。
+        :param ip: **参数解释**：需要从IP地址组中删除的IP地址，可以是单个IP地址、IP地址段和连续IP地址范围。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type ip: str
         """
         
@@ -44,7 +44,7 @@ class IpGroupIp:
     def ip(self):
         r"""Gets the ip of this IpGroupIp.
 
-        参数解释：IP地址，可以是具体的IP地址或者IP地址段。
+        **参数解释**：需要从IP地址组中删除的IP地址，可以是单个IP地址、IP地址段和连续IP地址范围。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The ip of this IpGroupIp.
         :rtype: str
@@ -55,7 +55,7 @@ class IpGroupIp:
     def ip(self, ip):
         r"""Sets the ip of this IpGroupIp.
 
-        参数解释：IP地址，可以是具体的IP地址或者IP地址段。
+        **参数解释**：需要从IP地址组中删除的IP地址，可以是单个IP地址、IP地址段和连续IP地址范围。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param ip: The ip of this IpGroupIp.
         :type ip: str

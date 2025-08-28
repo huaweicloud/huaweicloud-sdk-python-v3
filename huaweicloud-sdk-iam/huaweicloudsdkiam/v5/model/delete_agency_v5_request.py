@@ -29,7 +29,7 @@ class DeleteAgencyV5Request:
 
         The model defined in huaweicloud sdk
 
-        :param agency_id: 委托或信任委托ID，长度为1到64个字符，只包含字母、数字和\&quot;-\&quot;的字符串。
+        :param agency_id: 信任委托ID，长度为1到64个字符，只包含字母、数字和\&quot;-\&quot;的字符串。
         :type agency_id: str
         """
         
@@ -44,7 +44,7 @@ class DeleteAgencyV5Request:
     def agency_id(self):
         r"""Gets the agency_id of this DeleteAgencyV5Request.
 
-        委托或信任委托ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
+        信任委托ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
 
         :return: The agency_id of this DeleteAgencyV5Request.
         :rtype: str
@@ -55,7 +55,7 @@ class DeleteAgencyV5Request:
     def agency_id(self, agency_id):
         r"""Sets the agency_id of this DeleteAgencyV5Request.
 
-        委托或信任委托ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
+        信任委托ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
 
         :param agency_id: The agency_id of this DeleteAgencyV5Request.
         :type agency_id: str

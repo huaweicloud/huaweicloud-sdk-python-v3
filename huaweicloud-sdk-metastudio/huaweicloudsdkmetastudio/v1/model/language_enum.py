@@ -9,14 +9,8 @@ class LanguageEnum:
     """
     allowed enum values
     """
-    ZH_CN = "zh_CN"
-    EN_US = "en_US"
     CN = "CN"
     EN = "EN"
-    ESP = "ESP"
-    POR = "por"
-    ARABIC = "Arabic"
-    THAI = "Thai"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

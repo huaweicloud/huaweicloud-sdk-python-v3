@@ -18,15 +18,17 @@ class OpExternalInfo:
 
     openapi_types = {
         'review_id_list': 'list[str]',
-        'algorithm_failure_reason': 'str'
+        'algorithm_failure_reason': 'str',
+        'admin_audit_failure_reason': 'str'
     }
 
     attribute_map = {
         'review_id_list': 'review_id_list',
-        'algorithm_failure_reason': 'algorithm_failure_reason'
+        'algorithm_failure_reason': 'algorithm_failure_reason',
+        'admin_audit_failure_reason': 'admin_audit_failure_reason'
     }
 
-    def __init__(self, review_id_list=None, algorithm_failure_reason=None):
+    def __init__(self, review_id_list=None, algorithm_failure_reason=None, admin_audit_failure_reason=None):
         r"""OpExternalInfo
 
         The model defined in huaweicloud sdk
@@ -35,18 +37,23 @@ class OpExternalInfo:
         :type review_id_list: list[str]
         :param algorithm_failure_reason: 算法侧失败原因
         :type algorithm_failure_reason: str
+        :param admin_audit_failure_reason: 管理员驳回的原因
+        :type admin_audit_failure_reason: str
         """
         
         
 
         self._review_id_list = None
         self._algorithm_failure_reason = None
+        self._admin_audit_failure_reason = None
         self.discriminator = None
 
         if review_id_list is not None:
             self.review_id_list = review_id_list
         if algorithm_failure_reason is not None:
             self.algorithm_failure_reason = algorithm_failure_reason
+        if admin_audit_failure_reason is not None:
+            self.admin_audit_failure_reason = admin_audit_failure_reason
 
     @property
     def review_id_list(self):
@@ -91,6 +98,28 @@ class OpExternalInfo:
         :type algorithm_failure_reason: str
         """
         self._algorithm_failure_reason = algorithm_failure_reason
+
+    @property
+    def admin_audit_failure_reason(self):
+        r"""Gets the admin_audit_failure_reason of this OpExternalInfo.
+
+        管理员驳回的原因
+
+        :return: The admin_audit_failure_reason of this OpExternalInfo.
+        :rtype: str
+        """
+        return self._admin_audit_failure_reason
+
+    @admin_audit_failure_reason.setter
+    def admin_audit_failure_reason(self, admin_audit_failure_reason):
+        r"""Sets the admin_audit_failure_reason of this OpExternalInfo.
+
+        管理员驳回的原因
+
+        :param admin_audit_failure_reason: The admin_audit_failure_reason of this OpExternalInfo.
+        :type admin_audit_failure_reason: str
+        """
+        self._admin_audit_failure_reason = admin_audit_failure_reason
 
     def to_dict(self):
         """Returns the model properties as a dict"""

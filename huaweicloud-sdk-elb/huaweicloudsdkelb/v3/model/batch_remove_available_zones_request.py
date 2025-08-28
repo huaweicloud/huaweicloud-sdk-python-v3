@@ -31,7 +31,7 @@ class BatchRemoveAvailableZonesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param loadbalancer_id: 负载均衡器ID。
+        :param loadbalancer_id: **参数解释**：负载均衡器ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type loadbalancer_id: str
         :param body: Body of the BatchRemoveAvailableZonesRequest
         :type body: :class:`huaweicloudsdkelb.v3.BatchRemoveAvailableZonesRequestBody`
@@ -51,7 +51,7 @@ class BatchRemoveAvailableZonesRequest:
     def loadbalancer_id(self):
         r"""Gets the loadbalancer_id of this BatchRemoveAvailableZonesRequest.
 
-        负载均衡器ID。
+        **参数解释**：负载均衡器ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The loadbalancer_id of this BatchRemoveAvailableZonesRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class BatchRemoveAvailableZonesRequest:
     def loadbalancer_id(self, loadbalancer_id):
         r"""Sets the loadbalancer_id of this BatchRemoveAvailableZonesRequest.
 
-        负载均衡器ID。
+        **参数解释**：负载均衡器ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param loadbalancer_id: The loadbalancer_id of this BatchRemoveAvailableZonesRequest.
         :type loadbalancer_id: str

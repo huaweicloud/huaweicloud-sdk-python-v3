@@ -35,13 +35,13 @@ class UpdateSecurityPolicyOption:
 
         The model defined in huaweicloud sdk
 
-        :param name: 自定义安全策略的名称。
+        :param name: **参数解释**：自定义安全策略的名称。  **约束限制**：不涉及  **取值范围**：0到255个字符  **默认取值**：不涉及
         :type name: str
-        :param description: 自定义安全策略的描述信息。
+        :param description: **参数解释**：自定义安全策略的描述信息。  **约束限制**：不涉及  **取值范围**：0到255个字符  **默认取值**：不涉及
         :type description: str
-        :param protocols: 自定义安全策略选择的TLS协议列表。取值：TLSv1, TLSv1.1, TLSv1.2, TLSv1.3
+        :param protocols: **参数解释**：自定义安全策略选择的TLS协议列表。  **约束限制**：不涉及  **取值范围**：TLSv1, TLSv1.1, TLSv1.2, TLSv1.3  **默认取值**：不涉及
         :type protocols: list[str]
-        :param ciphers: 自定义安全策略的加密套件列表。支持以下加密套件：  ECDHE-RSA-AES256-GCM-SHA384,ECDHE-RSA-AES128-GCM-SHA256, ECDHE-ECDSA-AES256-GCM-SHA384,ECDHE-ECDSA-AES128-GCM-SHA256, AES128-GCM-SHA256,AES256-GCM-SHA384,ECDHE-ECDSA-AES128-SHA256, ECDHE-RSA-AES128-SHA256,AES128-SHA256,AES256-SHA256, ECDHE-ECDSA-AES256-SHA384,ECDHE-RSA-AES256-SHA384, ECDHE-ECDSA-AES128-SHA,ECDHE-RSA-AES128-SHA,ECDHE-RSA-AES256-SHA, ECDHE-ECDSA-AES256-SHA,AES128-SHA,AES256-SHA,CAMELLIA128-SHA, DES-CBC3-SHA,CAMELLIA256-SHA,ECDHE-RSA-CHACHA20-POLY1305, ECDHE-ECDSA-CHACHA20-POLY1305,TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384,TLS_CHACHA20_POLY1305_SHA256, TLS_AES_128_CCM_SHA256,TLS_AES_128_CCM_8_SHA256  使用说明： - 协议和加密套件必须匹配，即ciphers中必须至少有一种有与协议匹配的加密套件。  &gt; 协议与加密套件的匹配关系可参考系统安全策略
+        :param ciphers: **参数解释**：自定义安全策略的加密套件列表。  **约束限制**：协议和加密套件必须匹配，即ciphers中必须至少有一种与协议匹配的加密套件。  **取值范围**： ECDHE-RSA-AES256-GCM-SHA384,ECDHE-RSA-AES128-GCM-SHA256, ECDHE-ECDSA-AES256-GCM-SHA384,ECDHE-ECDSA-AES128-GCM-SHA256, AES128-GCM-SHA256,AES256-GCM-SHA384,ECDHE-ECDSA-AES128-SHA256, ECDHE-RSA-AES128-SHA256,AES128-SHA256,AES256-SHA256, ECDHE-ECDSA-AES256-SHA384,ECDHE-RSA-AES256-SHA384, ECDHE-ECDSA-AES128-SHA,ECDHE-RSA-AES128-SHA,ECDHE-RSA-AES256-SHA, ECDHE-ECDSA-AES256-SHA,AES128-SHA,AES256-SHA,CAMELLIA128-SHA, DES-CBC3-SHA,CAMELLIA256-SHA,ECDHE-RSA-CHACHA20-POLY1305, ECDHE-ECDSA-CHACHA20-POLY1305,TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384,TLS_CHACHA20_POLY1305_SHA256, TLS_AES_128_CCM_SHA256,TLS_AES_128_CCM_8_SHA256  **默认取值**：不涉及  &gt; 协议与加密套件的匹配关系可参考系统安全策略
         :type ciphers: list[str]
         """
         
@@ -66,7 +66,7 @@ class UpdateSecurityPolicyOption:
     def name(self):
         r"""Gets the name of this UpdateSecurityPolicyOption.
 
-        自定义安全策略的名称。
+        **参数解释**：自定义安全策略的名称。  **约束限制**：不涉及  **取值范围**：0到255个字符  **默认取值**：不涉及
 
         :return: The name of this UpdateSecurityPolicyOption.
         :rtype: str
@@ -77,7 +77,7 @@ class UpdateSecurityPolicyOption:
     def name(self, name):
         r"""Sets the name of this UpdateSecurityPolicyOption.
 
-        自定义安全策略的名称。
+        **参数解释**：自定义安全策略的名称。  **约束限制**：不涉及  **取值范围**：0到255个字符  **默认取值**：不涉及
 
         :param name: The name of this UpdateSecurityPolicyOption.
         :type name: str
@@ -88,7 +88,7 @@ class UpdateSecurityPolicyOption:
     def description(self):
         r"""Gets the description of this UpdateSecurityPolicyOption.
 
-        自定义安全策略的描述信息。
+        **参数解释**：自定义安全策略的描述信息。  **约束限制**：不涉及  **取值范围**：0到255个字符  **默认取值**：不涉及
 
         :return: The description of this UpdateSecurityPolicyOption.
         :rtype: str
@@ -99,7 +99,7 @@ class UpdateSecurityPolicyOption:
     def description(self, description):
         r"""Sets the description of this UpdateSecurityPolicyOption.
 
-        自定义安全策略的描述信息。
+        **参数解释**：自定义安全策略的描述信息。  **约束限制**：不涉及  **取值范围**：0到255个字符  **默认取值**：不涉及
 
         :param description: The description of this UpdateSecurityPolicyOption.
         :type description: str
@@ -110,7 +110,7 @@ class UpdateSecurityPolicyOption:
     def protocols(self):
         r"""Gets the protocols of this UpdateSecurityPolicyOption.
 
-        自定义安全策略选择的TLS协议列表。取值：TLSv1, TLSv1.1, TLSv1.2, TLSv1.3
+        **参数解释**：自定义安全策略选择的TLS协议列表。  **约束限制**：不涉及  **取值范围**：TLSv1, TLSv1.1, TLSv1.2, TLSv1.3  **默认取值**：不涉及
 
         :return: The protocols of this UpdateSecurityPolicyOption.
         :rtype: list[str]
@@ -121,7 +121,7 @@ class UpdateSecurityPolicyOption:
     def protocols(self, protocols):
         r"""Sets the protocols of this UpdateSecurityPolicyOption.
 
-        自定义安全策略选择的TLS协议列表。取值：TLSv1, TLSv1.1, TLSv1.2, TLSv1.3
+        **参数解释**：自定义安全策略选择的TLS协议列表。  **约束限制**：不涉及  **取值范围**：TLSv1, TLSv1.1, TLSv1.2, TLSv1.3  **默认取值**：不涉及
 
         :param protocols: The protocols of this UpdateSecurityPolicyOption.
         :type protocols: list[str]
@@ -132,7 +132,7 @@ class UpdateSecurityPolicyOption:
     def ciphers(self):
         r"""Gets the ciphers of this UpdateSecurityPolicyOption.
 
-        自定义安全策略的加密套件列表。支持以下加密套件：  ECDHE-RSA-AES256-GCM-SHA384,ECDHE-RSA-AES128-GCM-SHA256, ECDHE-ECDSA-AES256-GCM-SHA384,ECDHE-ECDSA-AES128-GCM-SHA256, AES128-GCM-SHA256,AES256-GCM-SHA384,ECDHE-ECDSA-AES128-SHA256, ECDHE-RSA-AES128-SHA256,AES128-SHA256,AES256-SHA256, ECDHE-ECDSA-AES256-SHA384,ECDHE-RSA-AES256-SHA384, ECDHE-ECDSA-AES128-SHA,ECDHE-RSA-AES128-SHA,ECDHE-RSA-AES256-SHA, ECDHE-ECDSA-AES256-SHA,AES128-SHA,AES256-SHA,CAMELLIA128-SHA, DES-CBC3-SHA,CAMELLIA256-SHA,ECDHE-RSA-CHACHA20-POLY1305, ECDHE-ECDSA-CHACHA20-POLY1305,TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384,TLS_CHACHA20_POLY1305_SHA256, TLS_AES_128_CCM_SHA256,TLS_AES_128_CCM_8_SHA256  使用说明： - 协议和加密套件必须匹配，即ciphers中必须至少有一种有与协议匹配的加密套件。  > 协议与加密套件的匹配关系可参考系统安全策略
+        **参数解释**：自定义安全策略的加密套件列表。  **约束限制**：协议和加密套件必须匹配，即ciphers中必须至少有一种与协议匹配的加密套件。  **取值范围**： ECDHE-RSA-AES256-GCM-SHA384,ECDHE-RSA-AES128-GCM-SHA256, ECDHE-ECDSA-AES256-GCM-SHA384,ECDHE-ECDSA-AES128-GCM-SHA256, AES128-GCM-SHA256,AES256-GCM-SHA384,ECDHE-ECDSA-AES128-SHA256, ECDHE-RSA-AES128-SHA256,AES128-SHA256,AES256-SHA256, ECDHE-ECDSA-AES256-SHA384,ECDHE-RSA-AES256-SHA384, ECDHE-ECDSA-AES128-SHA,ECDHE-RSA-AES128-SHA,ECDHE-RSA-AES256-SHA, ECDHE-ECDSA-AES256-SHA,AES128-SHA,AES256-SHA,CAMELLIA128-SHA, DES-CBC3-SHA,CAMELLIA256-SHA,ECDHE-RSA-CHACHA20-POLY1305, ECDHE-ECDSA-CHACHA20-POLY1305,TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384,TLS_CHACHA20_POLY1305_SHA256, TLS_AES_128_CCM_SHA256,TLS_AES_128_CCM_8_SHA256  **默认取值**：不涉及  > 协议与加密套件的匹配关系可参考系统安全策略
 
         :return: The ciphers of this UpdateSecurityPolicyOption.
         :rtype: list[str]
@@ -143,7 +143,7 @@ class UpdateSecurityPolicyOption:
     def ciphers(self, ciphers):
         r"""Sets the ciphers of this UpdateSecurityPolicyOption.
 
-        自定义安全策略的加密套件列表。支持以下加密套件：  ECDHE-RSA-AES256-GCM-SHA384,ECDHE-RSA-AES128-GCM-SHA256, ECDHE-ECDSA-AES256-GCM-SHA384,ECDHE-ECDSA-AES128-GCM-SHA256, AES128-GCM-SHA256,AES256-GCM-SHA384,ECDHE-ECDSA-AES128-SHA256, ECDHE-RSA-AES128-SHA256,AES128-SHA256,AES256-SHA256, ECDHE-ECDSA-AES256-SHA384,ECDHE-RSA-AES256-SHA384, ECDHE-ECDSA-AES128-SHA,ECDHE-RSA-AES128-SHA,ECDHE-RSA-AES256-SHA, ECDHE-ECDSA-AES256-SHA,AES128-SHA,AES256-SHA,CAMELLIA128-SHA, DES-CBC3-SHA,CAMELLIA256-SHA,ECDHE-RSA-CHACHA20-POLY1305, ECDHE-ECDSA-CHACHA20-POLY1305,TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384,TLS_CHACHA20_POLY1305_SHA256, TLS_AES_128_CCM_SHA256,TLS_AES_128_CCM_8_SHA256  使用说明： - 协议和加密套件必须匹配，即ciphers中必须至少有一种有与协议匹配的加密套件。  > 协议与加密套件的匹配关系可参考系统安全策略
+        **参数解释**：自定义安全策略的加密套件列表。  **约束限制**：协议和加密套件必须匹配，即ciphers中必须至少有一种与协议匹配的加密套件。  **取值范围**： ECDHE-RSA-AES256-GCM-SHA384,ECDHE-RSA-AES128-GCM-SHA256, ECDHE-ECDSA-AES256-GCM-SHA384,ECDHE-ECDSA-AES128-GCM-SHA256, AES128-GCM-SHA256,AES256-GCM-SHA384,ECDHE-ECDSA-AES128-SHA256, ECDHE-RSA-AES128-SHA256,AES128-SHA256,AES256-SHA256, ECDHE-ECDSA-AES256-SHA384,ECDHE-RSA-AES256-SHA384, ECDHE-ECDSA-AES128-SHA,ECDHE-RSA-AES128-SHA,ECDHE-RSA-AES256-SHA, ECDHE-ECDSA-AES256-SHA,AES128-SHA,AES256-SHA,CAMELLIA128-SHA, DES-CBC3-SHA,CAMELLIA256-SHA,ECDHE-RSA-CHACHA20-POLY1305, ECDHE-ECDSA-CHACHA20-POLY1305,TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384,TLS_CHACHA20_POLY1305_SHA256, TLS_AES_128_CCM_SHA256,TLS_AES_128_CCM_8_SHA256  **默认取值**：不涉及  > 协议与加密套件的匹配关系可参考系统安全策略
 
         :param ciphers: The ciphers of this UpdateSecurityPolicyOption.
         :type ciphers: list[str]

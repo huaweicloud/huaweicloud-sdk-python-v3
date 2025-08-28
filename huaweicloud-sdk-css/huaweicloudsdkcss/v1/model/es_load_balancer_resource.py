@@ -51,7 +51,7 @@ class EsLoadBalancerResource:
         :type id: str
         :param name: 负载均衡器名称。
         :type name: str
-        :param guaranteed: 是否独享型LB。 - false：共享型。 - true：独享型。
+        :param guaranteed: Indicates whether the LB is an exclusive LB. - false：共享型。 - true：独享型。
         :type guaranteed: str
         :param billing_info: 资源账单信息 - 空：按需计费。 - 非空：包周期计费。
         :type billing_info: str
@@ -152,7 +152,7 @@ class EsLoadBalancerResource:
     def guaranteed(self):
         r"""Gets the guaranteed of this EsLoadBalancerResource.
 
-        是否独享型LB。 - false：共享型。 - true：独享型。
+        Indicates whether the LB is an exclusive LB. - false：共享型。 - true：独享型。
 
         :return: The guaranteed of this EsLoadBalancerResource.
         :rtype: str
@@ -163,7 +163,7 @@ class EsLoadBalancerResource:
     def guaranteed(self, guaranteed):
         r"""Sets the guaranteed of this EsLoadBalancerResource.
 
-        是否独享型LB。 - false：共享型。 - true：独享型。
+        Indicates whether the LB is an exclusive LB. - false：共享型。 - true：独享型。
 
         :param guaranteed: The guaranteed of this EsLoadBalancerResource.
         :type guaranteed: str

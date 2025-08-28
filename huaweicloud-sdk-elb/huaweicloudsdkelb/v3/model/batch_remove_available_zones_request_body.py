@@ -29,7 +29,7 @@ class BatchRemoveAvailableZonesRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param availability_zone_list: 移除的可用区列表，不能为空。
+        :param availability_zone_list: **参数解释**：要移除的可用区列表。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type availability_zone_list: list[str]
         """
         
@@ -44,7 +44,7 @@ class BatchRemoveAvailableZonesRequestBody:
     def availability_zone_list(self):
         r"""Gets the availability_zone_list of this BatchRemoveAvailableZonesRequestBody.
 
-        移除的可用区列表，不能为空。
+        **参数解释**：要移除的可用区列表。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The availability_zone_list of this BatchRemoveAvailableZonesRequestBody.
         :rtype: list[str]
@@ -55,7 +55,7 @@ class BatchRemoveAvailableZonesRequestBody:
     def availability_zone_list(self, availability_zone_list):
         r"""Sets the availability_zone_list of this BatchRemoveAvailableZonesRequestBody.
 
-        移除的可用区列表，不能为空。
+        **参数解释**：要移除的可用区列表。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param availability_zone_list: The availability_zone_list of this BatchRemoveAvailableZonesRequestBody.
         :type availability_zone_list: list[str]

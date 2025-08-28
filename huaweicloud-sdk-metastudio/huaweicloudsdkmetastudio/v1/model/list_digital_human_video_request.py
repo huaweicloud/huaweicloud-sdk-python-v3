@@ -29,7 +29,8 @@ class ListDigitalHumanVideoRequest:
         'script_id': 'str',
         'asset_name': 'str',
         'job_type': 'str',
-        'job_id': 'str'
+        'job_id': 'str',
+        'job_ids': 'list[str]'
     }
 
     attribute_map = {
@@ -45,10 +46,11 @@ class ListDigitalHumanVideoRequest:
         'script_id': 'script_id',
         'asset_name': 'asset_name',
         'job_type': 'job_type',
-        'job_id': 'job_id'
+        'job_id': 'job_id',
+        'job_ids': 'job_ids'
     }
 
-    def __init__(self, x_app_user_id=None, offset=None, limit=None, state=None, sort_key=None, sort_dir=None, create_until=None, create_since=None, fuzzy_query_field=None, script_id=None, asset_name=None, job_type=None, job_id=None):
+    def __init__(self, x_app_user_id=None, offset=None, limit=None, state=None, sort_key=None, sort_dir=None, create_until=None, create_since=None, fuzzy_query_field=None, script_id=None, asset_name=None, job_type=None, job_id=None, job_ids=None):
         r"""ListDigitalHumanVideoRequest
 
         The model defined in huaweicloud sdk
@@ -79,6 +81,8 @@ class ListDigitalHumanVideoRequest:
         :type job_type: str
         :param job_id: 任务ID。
         :type job_id: str
+        :param job_ids: 批量查询的任务ID
+        :type job_ids: list[str]
         """
         
         
@@ -96,6 +100,7 @@ class ListDigitalHumanVideoRequest:
         self._asset_name = None
         self._job_type = None
         self._job_id = None
+        self._job_ids = None
         self.discriminator = None
 
         if x_app_user_id is not None:
@@ -124,6 +129,8 @@ class ListDigitalHumanVideoRequest:
             self.job_type = job_type
         if job_id is not None:
             self.job_id = job_id
+        if job_ids is not None:
+            self.job_ids = job_ids
 
     @property
     def x_app_user_id(self):
@@ -410,6 +417,28 @@ class ListDigitalHumanVideoRequest:
         :type job_id: str
         """
         self._job_id = job_id
+
+    @property
+    def job_ids(self):
+        r"""Gets the job_ids of this ListDigitalHumanVideoRequest.
+
+        批量查询的任务ID
+
+        :return: The job_ids of this ListDigitalHumanVideoRequest.
+        :rtype: list[str]
+        """
+        return self._job_ids
+
+    @job_ids.setter
+    def job_ids(self, job_ids):
+        r"""Sets the job_ids of this ListDigitalHumanVideoRequest.
+
+        批量查询的任务ID
+
+        :param job_ids: The job_ids of this ListDigitalHumanVideoRequest.
+        :type job_ids: list[str]
+        """
+        self._job_ids = job_ids
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -37,15 +37,15 @@ class MemberStatus:
 
         The model defined in huaweicloud sdk
 
-        :param listener_id: 参数解释：监听器ID
+        :param listener_id: **参数解释**：监听器ID  **取值范围**：不涉及
         :type listener_id: str
-        :param operating_status: 参数解释：后端服务器的健康状态。  取值范围： - ONLINE：后端服务器正常。 - NO_MONITOR：后端服务器所在的服务器组没有健康检查器。 - OFFLINE：后端服务器关联的ECS服务器不存在或已关机。
+        :param operating_status: **参数解释**：后端服务器的健康状态。  **取值范围**： - ONLINE：后端服务器正常。 - NO_MONITOR：后端服务器所在的服务器组没有健康检查器。 - OFFLINE：后端服务器关联的ECS服务器不存在或已关机。
         :type operating_status: str
         :param reason: 
         :type reason: :class:`huaweicloudsdkelb.v3.MemberHealthCheckFailedReason`
-        :param created_at: 创建时间。格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，UTC时区。
+        :param created_at: **参数解释**：创建时间。格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，UTC时区。  **取值范围**：不涉及
         :type created_at: str
-        :param updated_at: 更新时间。格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，UTC时区。
+        :param updated_at: **参数解释**：更新时间。格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，UTC时区。  **取值范围**：不涉及
         :type updated_at: str
         """
         
@@ -71,7 +71,7 @@ class MemberStatus:
     def listener_id(self):
         r"""Gets the listener_id of this MemberStatus.
 
-        参数解释：监听器ID
+        **参数解释**：监听器ID  **取值范围**：不涉及
 
         :return: The listener_id of this MemberStatus.
         :rtype: str
@@ -82,7 +82,7 @@ class MemberStatus:
     def listener_id(self, listener_id):
         r"""Sets the listener_id of this MemberStatus.
 
-        参数解释：监听器ID
+        **参数解释**：监听器ID  **取值范围**：不涉及
 
         :param listener_id: The listener_id of this MemberStatus.
         :type listener_id: str
@@ -93,7 +93,7 @@ class MemberStatus:
     def operating_status(self):
         r"""Gets the operating_status of this MemberStatus.
 
-        参数解释：后端服务器的健康状态。  取值范围： - ONLINE：后端服务器正常。 - NO_MONITOR：后端服务器所在的服务器组没有健康检查器。 - OFFLINE：后端服务器关联的ECS服务器不存在或已关机。
+        **参数解释**：后端服务器的健康状态。  **取值范围**： - ONLINE：后端服务器正常。 - NO_MONITOR：后端服务器所在的服务器组没有健康检查器。 - OFFLINE：后端服务器关联的ECS服务器不存在或已关机。
 
         :return: The operating_status of this MemberStatus.
         :rtype: str
@@ -104,7 +104,7 @@ class MemberStatus:
     def operating_status(self, operating_status):
         r"""Sets the operating_status of this MemberStatus.
 
-        参数解释：后端服务器的健康状态。  取值范围： - ONLINE：后端服务器正常。 - NO_MONITOR：后端服务器所在的服务器组没有健康检查器。 - OFFLINE：后端服务器关联的ECS服务器不存在或已关机。
+        **参数解释**：后端服务器的健康状态。  **取值范围**： - ONLINE：后端服务器正常。 - NO_MONITOR：后端服务器所在的服务器组没有健康检查器。 - OFFLINE：后端服务器关联的ECS服务器不存在或已关机。
 
         :param operating_status: The operating_status of this MemberStatus.
         :type operating_status: str
@@ -133,7 +133,7 @@ class MemberStatus:
     def created_at(self):
         r"""Gets the created_at of this MemberStatus.
 
-        创建时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。
+        **参数解释**：创建时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。  **取值范围**：不涉及
 
         :return: The created_at of this MemberStatus.
         :rtype: str
@@ -144,7 +144,7 @@ class MemberStatus:
     def created_at(self, created_at):
         r"""Sets the created_at of this MemberStatus.
 
-        创建时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。
+        **参数解释**：创建时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。  **取值范围**：不涉及
 
         :param created_at: The created_at of this MemberStatus.
         :type created_at: str
@@ -155,7 +155,7 @@ class MemberStatus:
     def updated_at(self):
         r"""Gets the updated_at of this MemberStatus.
 
-        更新时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。
+        **参数解释**：更新时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。  **取值范围**：不涉及
 
         :return: The updated_at of this MemberStatus.
         :rtype: str
@@ -166,7 +166,7 @@ class MemberStatus:
     def updated_at(self, updated_at):
         r"""Sets the updated_at of this MemberStatus.
 
-        更新时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。
+        **参数解释**：更新时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。  **取值范围**：不涉及
 
         :param updated_at: The updated_at of this MemberStatus.
         :type updated_at: str

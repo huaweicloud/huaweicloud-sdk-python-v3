@@ -55,33 +55,33 @@ class CreateHealthMonitorOption:
 
         The model defined in huaweicloud sdk
 
-        :param admin_state_up: 参数解释：健康检查的管理状态。  取值范围： - true：表示开启健康检查。 - false表示关闭健康检查。  默认取值：true
+        :param admin_state_up: **参数解释**：健康检查的管理状态。  **约束限制**：不涉及  **取值范围**： - true：表示开启健康检查。 - false表示关闭健康检查。  **默认取值**：true
         :type admin_state_up: bool
-        :param delay: 健康检查间隔。取值：1-50s。
+        :param delay: **参数解释**：健康检查间隔。  **约束限制**：不涉及  **取值范围**：1-50，单位：秒。  **默认取值**：true
         :type delay: int
-        :param domain_name: 发送健康检查请求的域名。  取值：以数字或字母开头，只能包含数字、字母、’-’、’.’。  默认为空，表示使用负载均衡器的vip作为http请求的目的地址。  使用说明：当type为HTTP/HTTPS时生效。
+        :param domain_name: **参数解释**：发送健康检查请求的域名。  **约束限制**：当type为HTTP/HTTPS时生效。  **取值范围**：以数字或字母开头，只能包含数字、字母、’-’、’.’。  **默认取值**：默认为空，表示使用负载均衡器的vip作为http请求的目的地址。
         :type domain_name: str
-        :param expected_codes: 期望响应状态码。  取值： - 单值：单个返回码，例如200。 - 列表：多个特定返回码，例如200，202。 - 区间：一个返回码区间，例如200-204。   默认值：若健康检查type为GRPC，则默认值为0,；其他为200。  该字段仅在HTTP/HTTPS/GRPC协议下有效，其他协议可以设置但不会生效。
+        :param expected_codes: **参数解释**：期望响应状态码。  **约束限制**：该字段仅在HTTP/HTTPS/GRPC协议下有效，其他协议可以设置但不会生效。  **取值范围**： - 单值：单个返回码，例如200。 - 列表：多个特定返回码，例如200，202。 - 区间：一个返回码区间，例如200-204。  **默认取值**：若健康检查type为GRPC，则默认值为0，其他为200。
         :type expected_codes: str
-        :param http_method: HTTP请求方法。  取值：GET、HEAD、POST，默认GET。  使用说明：当type为HTTP/HTTPS时生效。
+        :param http_method: **参数解释**：HTTP请求方法。  **约束限制**：当type为HTTP/HTTPS时生效。  **取值范围**：GET、HEAD、POST。  **默认取值**：GET
         :type http_method: str
-        :param max_retries: 健康检查连续成功多少次后，将后端服务器的健康检查状态由OFFLINE判定为ONLINE。取值范围：1-10。
+        :param max_retries: **参数解释**：健康检查连续成功多少次后，将后端服务器的健康检查状态由OFFLINE判定为ONLINE。  **约束限制**：不涉及  **取值范围**：1-10  **默认取值**：不涉及
         :type max_retries: int
-        :param max_retries_down: 健康检查连续失败多少次后，将后端服务器的健康检查状态由ONLINE判定为OFFLINE。取值范围：1-10，默认3。
+        :param max_retries_down: **参数解释**：健康检查连续失败多少次后，将后端服务器的健康检查状态由ONLINE判定为OFFLINE。  **约束限制**：不涉及  **取值范围**：1-10  **默认取值**：3
         :type max_retries_down: int
-        :param monitor_port: 参数解释：健康检查端口号。 约束限制： - 当绑定的pool开启了端口透传功能时，该字段为必填。 [- 当pool协议为IP时，monitor_port必须指定为非0值。](tag:hws_eu) 取值范围：1-65535和null，传null表示使用后端服务器端口号。 默认取值：null
+        :param monitor_port: **参数解释**：健康检查端口号。  **约束限制**： - 当绑定的pool开启了端口透传功能时，该字段为必填。 [- 当pool协议为IP时，monitor_port必须指定为非0值。](tag:hws_eu)  **取值范围**：1-65535和null，传null表示使用后端服务器端口号。  **默认取值**：null
         :type monitor_port: int
-        :param name: 健康检查名称。
+        :param name: **参数解释**：健康检查名称。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type name: str
-        :param pool_id: 健康检查所在的后端服务器组ID
+        :param pool_id: **参数解释**：健康检查所在的后端服务器组ID  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type pool_id: str
-        :param project_id: 健康检查所在的项目ID。
+        :param project_id: **参数解释**：健康检查所在的项目ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type project_id: str
-        :param timeout: 一次健康检查请求的超时时间。  建议该值小于delay的值。
+        :param timeout: **参数解释**：一次健康检查请求的超时时间。建议该值小于delay的值。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type timeout: int
-        :param type: 健康检查请求协议。  取值：TCP、UDP_CONNECT、HTTP、HTTPS、GRPC和TLS。  使用说明： - 若pool的protocol为QUIC，则type只能是UDP_CONNECT。 - 若pool的protocol为UDP，则type只能UDP_CONNECT。 - 若pool的protocol为TCP，则type可以是TCP、HTTP、HTTPS。 [- 若pool的protocol为IP，则type可以是TCP、HTTP、HTTPS。](tag:hws_eu) - 若pool的protocol为HTTP，则type可以是TCP、HTTP、HTTPS、TLS、GRPC。 - 若pool的protocol为HTTPS，则type可以是TCP、HTTP、HTTPS、TLS、GRPC。 - 若pool的protocol为GRPC，则type可以是TCP、HTTP、HTTPS、TLS、GRPC。 - 若pool的protocol为TLS，则type可以是TCP、HTTP、HTTPS、TLS、GRPC。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC。](tag:dt)
+        :param type: **参数解释**：健康检查请求协议。  **约束限制**： - 若pool的protocol为QUIC，则type只能是UDP_CONNECT。 - 若pool的protocol为UDP，则type只能UDP_CONNECT。 - 若pool的protocol为TCP，则type可以是TCP、HTTP、HTTPS。 [- 若pool的protocol为IP，则type可以是TCP、HTTP、HTTPS。](tag:hws_eu) - 若pool的protocol为HTTP，则type可以是TCP、HTTP、HTTPS、TLS、GRPC。 - 若pool的protocol为HTTPS，则type可以是TCP、HTTP、HTTPS、TLS、GRPC。 - 若pool的protocol为GRPC，则type可以是TCP、HTTP、HTTPS、TLS、GRPC。 - 若pool的protocol为TLS，则type可以是TCP、HTTP、HTTPS、TLS、GRPC。 [- 不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt)  **取值范围**：TCP、UDP_CONNECT、HTTP、HTTPS、GRPC和TLS。  **默认取值**：不涉及  [荷兰region不支持QUIC。](tag:dt)
         :type type: str
-        :param url_path: 健康检查请求的请求路径。以\&quot;/\&quot;开头，默认为\&quot;/\&quot;。  支持使用字母、数字和短划线（-）、正斜线（/）、半角句号（.）、百分号（%）、半角问号（?）、井号（#）和and（&amp;）以及扩展字符集_;~!()*[]@$^:&#39;,+  使用说明：当type为HTTP/HTTPS时生效。
+        :param url_path: **参数解释**：健康检查请求的请求路径。以\&quot;/\&quot;开头，默认为\&quot;/\&quot;。  **约束限制**：当type为HTTP/HTTPS时生效。  **取值范围**：支持使用字母、数字和短划线（-）、正斜线（/）、半角句号（.）、百分号（%）、半角问号（?）、井号（#）和and（&amp;）以及扩展字符集_;~!()*[]@$^:&#39;,+  **默认取值**：不涉及
         :type url_path: str
         """
         
@@ -131,7 +131,7 @@ class CreateHealthMonitorOption:
     def admin_state_up(self):
         r"""Gets the admin_state_up of this CreateHealthMonitorOption.
 
-        参数解释：健康检查的管理状态。  取值范围： - true：表示开启健康检查。 - false表示关闭健康检查。  默认取值：true
+        **参数解释**：健康检查的管理状态。  **约束限制**：不涉及  **取值范围**： - true：表示开启健康检查。 - false表示关闭健康检查。  **默认取值**：true
 
         :return: The admin_state_up of this CreateHealthMonitorOption.
         :rtype: bool
@@ -142,7 +142,7 @@ class CreateHealthMonitorOption:
     def admin_state_up(self, admin_state_up):
         r"""Sets the admin_state_up of this CreateHealthMonitorOption.
 
-        参数解释：健康检查的管理状态。  取值范围： - true：表示开启健康检查。 - false表示关闭健康检查。  默认取值：true
+        **参数解释**：健康检查的管理状态。  **约束限制**：不涉及  **取值范围**： - true：表示开启健康检查。 - false表示关闭健康检查。  **默认取值**：true
 
         :param admin_state_up: The admin_state_up of this CreateHealthMonitorOption.
         :type admin_state_up: bool
@@ -153,7 +153,7 @@ class CreateHealthMonitorOption:
     def delay(self):
         r"""Gets the delay of this CreateHealthMonitorOption.
 
-        健康检查间隔。取值：1-50s。
+        **参数解释**：健康检查间隔。  **约束限制**：不涉及  **取值范围**：1-50，单位：秒。  **默认取值**：true
 
         :return: The delay of this CreateHealthMonitorOption.
         :rtype: int
@@ -164,7 +164,7 @@ class CreateHealthMonitorOption:
     def delay(self, delay):
         r"""Sets the delay of this CreateHealthMonitorOption.
 
-        健康检查间隔。取值：1-50s。
+        **参数解释**：健康检查间隔。  **约束限制**：不涉及  **取值范围**：1-50，单位：秒。  **默认取值**：true
 
         :param delay: The delay of this CreateHealthMonitorOption.
         :type delay: int
@@ -175,7 +175,7 @@ class CreateHealthMonitorOption:
     def domain_name(self):
         r"""Gets the domain_name of this CreateHealthMonitorOption.
 
-        发送健康检查请求的域名。  取值：以数字或字母开头，只能包含数字、字母、’-’、’.’。  默认为空，表示使用负载均衡器的vip作为http请求的目的地址。  使用说明：当type为HTTP/HTTPS时生效。
+        **参数解释**：发送健康检查请求的域名。  **约束限制**：当type为HTTP/HTTPS时生效。  **取值范围**：以数字或字母开头，只能包含数字、字母、’-’、’.’。  **默认取值**：默认为空，表示使用负载均衡器的vip作为http请求的目的地址。
 
         :return: The domain_name of this CreateHealthMonitorOption.
         :rtype: str
@@ -186,7 +186,7 @@ class CreateHealthMonitorOption:
     def domain_name(self, domain_name):
         r"""Sets the domain_name of this CreateHealthMonitorOption.
 
-        发送健康检查请求的域名。  取值：以数字或字母开头，只能包含数字、字母、’-’、’.’。  默认为空，表示使用负载均衡器的vip作为http请求的目的地址。  使用说明：当type为HTTP/HTTPS时生效。
+        **参数解释**：发送健康检查请求的域名。  **约束限制**：当type为HTTP/HTTPS时生效。  **取值范围**：以数字或字母开头，只能包含数字、字母、’-’、’.’。  **默认取值**：默认为空，表示使用负载均衡器的vip作为http请求的目的地址。
 
         :param domain_name: The domain_name of this CreateHealthMonitorOption.
         :type domain_name: str
@@ -197,7 +197,7 @@ class CreateHealthMonitorOption:
     def expected_codes(self):
         r"""Gets the expected_codes of this CreateHealthMonitorOption.
 
-        期望响应状态码。  取值： - 单值：单个返回码，例如200。 - 列表：多个特定返回码，例如200，202。 - 区间：一个返回码区间，例如200-204。   默认值：若健康检查type为GRPC，则默认值为0,；其他为200。  该字段仅在HTTP/HTTPS/GRPC协议下有效，其他协议可以设置但不会生效。
+        **参数解释**：期望响应状态码。  **约束限制**：该字段仅在HTTP/HTTPS/GRPC协议下有效，其他协议可以设置但不会生效。  **取值范围**： - 单值：单个返回码，例如200。 - 列表：多个特定返回码，例如200，202。 - 区间：一个返回码区间，例如200-204。  **默认取值**：若健康检查type为GRPC，则默认值为0，其他为200。
 
         :return: The expected_codes of this CreateHealthMonitorOption.
         :rtype: str
@@ -208,7 +208,7 @@ class CreateHealthMonitorOption:
     def expected_codes(self, expected_codes):
         r"""Sets the expected_codes of this CreateHealthMonitorOption.
 
-        期望响应状态码。  取值： - 单值：单个返回码，例如200。 - 列表：多个特定返回码，例如200，202。 - 区间：一个返回码区间，例如200-204。   默认值：若健康检查type为GRPC，则默认值为0,；其他为200。  该字段仅在HTTP/HTTPS/GRPC协议下有效，其他协议可以设置但不会生效。
+        **参数解释**：期望响应状态码。  **约束限制**：该字段仅在HTTP/HTTPS/GRPC协议下有效，其他协议可以设置但不会生效。  **取值范围**： - 单值：单个返回码，例如200。 - 列表：多个特定返回码，例如200，202。 - 区间：一个返回码区间，例如200-204。  **默认取值**：若健康检查type为GRPC，则默认值为0，其他为200。
 
         :param expected_codes: The expected_codes of this CreateHealthMonitorOption.
         :type expected_codes: str
@@ -219,7 +219,7 @@ class CreateHealthMonitorOption:
     def http_method(self):
         r"""Gets the http_method of this CreateHealthMonitorOption.
 
-        HTTP请求方法。  取值：GET、HEAD、POST，默认GET。  使用说明：当type为HTTP/HTTPS时生效。
+        **参数解释**：HTTP请求方法。  **约束限制**：当type为HTTP/HTTPS时生效。  **取值范围**：GET、HEAD、POST。  **默认取值**：GET
 
         :return: The http_method of this CreateHealthMonitorOption.
         :rtype: str
@@ -230,7 +230,7 @@ class CreateHealthMonitorOption:
     def http_method(self, http_method):
         r"""Sets the http_method of this CreateHealthMonitorOption.
 
-        HTTP请求方法。  取值：GET、HEAD、POST，默认GET。  使用说明：当type为HTTP/HTTPS时生效。
+        **参数解释**：HTTP请求方法。  **约束限制**：当type为HTTP/HTTPS时生效。  **取值范围**：GET、HEAD、POST。  **默认取值**：GET
 
         :param http_method: The http_method of this CreateHealthMonitorOption.
         :type http_method: str
@@ -241,7 +241,7 @@ class CreateHealthMonitorOption:
     def max_retries(self):
         r"""Gets the max_retries of this CreateHealthMonitorOption.
 
-        健康检查连续成功多少次后，将后端服务器的健康检查状态由OFFLINE判定为ONLINE。取值范围：1-10。
+        **参数解释**：健康检查连续成功多少次后，将后端服务器的健康检查状态由OFFLINE判定为ONLINE。  **约束限制**：不涉及  **取值范围**：1-10  **默认取值**：不涉及
 
         :return: The max_retries of this CreateHealthMonitorOption.
         :rtype: int
@@ -252,7 +252,7 @@ class CreateHealthMonitorOption:
     def max_retries(self, max_retries):
         r"""Sets the max_retries of this CreateHealthMonitorOption.
 
-        健康检查连续成功多少次后，将后端服务器的健康检查状态由OFFLINE判定为ONLINE。取值范围：1-10。
+        **参数解释**：健康检查连续成功多少次后，将后端服务器的健康检查状态由OFFLINE判定为ONLINE。  **约束限制**：不涉及  **取值范围**：1-10  **默认取值**：不涉及
 
         :param max_retries: The max_retries of this CreateHealthMonitorOption.
         :type max_retries: int
@@ -263,7 +263,7 @@ class CreateHealthMonitorOption:
     def max_retries_down(self):
         r"""Gets the max_retries_down of this CreateHealthMonitorOption.
 
-        健康检查连续失败多少次后，将后端服务器的健康检查状态由ONLINE判定为OFFLINE。取值范围：1-10，默认3。
+        **参数解释**：健康检查连续失败多少次后，将后端服务器的健康检查状态由ONLINE判定为OFFLINE。  **约束限制**：不涉及  **取值范围**：1-10  **默认取值**：3
 
         :return: The max_retries_down of this CreateHealthMonitorOption.
         :rtype: int
@@ -274,7 +274,7 @@ class CreateHealthMonitorOption:
     def max_retries_down(self, max_retries_down):
         r"""Sets the max_retries_down of this CreateHealthMonitorOption.
 
-        健康检查连续失败多少次后，将后端服务器的健康检查状态由ONLINE判定为OFFLINE。取值范围：1-10，默认3。
+        **参数解释**：健康检查连续失败多少次后，将后端服务器的健康检查状态由ONLINE判定为OFFLINE。  **约束限制**：不涉及  **取值范围**：1-10  **默认取值**：3
 
         :param max_retries_down: The max_retries_down of this CreateHealthMonitorOption.
         :type max_retries_down: int
@@ -285,7 +285,7 @@ class CreateHealthMonitorOption:
     def monitor_port(self):
         r"""Gets the monitor_port of this CreateHealthMonitorOption.
 
-        参数解释：健康检查端口号。 约束限制： - 当绑定的pool开启了端口透传功能时，该字段为必填。 [- 当pool协议为IP时，monitor_port必须指定为非0值。](tag:hws_eu) 取值范围：1-65535和null，传null表示使用后端服务器端口号。 默认取值：null
+        **参数解释**：健康检查端口号。  **约束限制**： - 当绑定的pool开启了端口透传功能时，该字段为必填。 [- 当pool协议为IP时，monitor_port必须指定为非0值。](tag:hws_eu)  **取值范围**：1-65535和null，传null表示使用后端服务器端口号。  **默认取值**：null
 
         :return: The monitor_port of this CreateHealthMonitorOption.
         :rtype: int
@@ -296,7 +296,7 @@ class CreateHealthMonitorOption:
     def monitor_port(self, monitor_port):
         r"""Sets the monitor_port of this CreateHealthMonitorOption.
 
-        参数解释：健康检查端口号。 约束限制： - 当绑定的pool开启了端口透传功能时，该字段为必填。 [- 当pool协议为IP时，monitor_port必须指定为非0值。](tag:hws_eu) 取值范围：1-65535和null，传null表示使用后端服务器端口号。 默认取值：null
+        **参数解释**：健康检查端口号。  **约束限制**： - 当绑定的pool开启了端口透传功能时，该字段为必填。 [- 当pool协议为IP时，monitor_port必须指定为非0值。](tag:hws_eu)  **取值范围**：1-65535和null，传null表示使用后端服务器端口号。  **默认取值**：null
 
         :param monitor_port: The monitor_port of this CreateHealthMonitorOption.
         :type monitor_port: int
@@ -307,7 +307,7 @@ class CreateHealthMonitorOption:
     def name(self):
         r"""Gets the name of this CreateHealthMonitorOption.
 
-        健康检查名称。
+        **参数解释**：健康检查名称。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The name of this CreateHealthMonitorOption.
         :rtype: str
@@ -318,7 +318,7 @@ class CreateHealthMonitorOption:
     def name(self, name):
         r"""Sets the name of this CreateHealthMonitorOption.
 
-        健康检查名称。
+        **参数解释**：健康检查名称。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param name: The name of this CreateHealthMonitorOption.
         :type name: str
@@ -329,7 +329,7 @@ class CreateHealthMonitorOption:
     def pool_id(self):
         r"""Gets the pool_id of this CreateHealthMonitorOption.
 
-        健康检查所在的后端服务器组ID
+        **参数解释**：健康检查所在的后端服务器组ID  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The pool_id of this CreateHealthMonitorOption.
         :rtype: str
@@ -340,7 +340,7 @@ class CreateHealthMonitorOption:
     def pool_id(self, pool_id):
         r"""Sets the pool_id of this CreateHealthMonitorOption.
 
-        健康检查所在的后端服务器组ID
+        **参数解释**：健康检查所在的后端服务器组ID  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param pool_id: The pool_id of this CreateHealthMonitorOption.
         :type pool_id: str
@@ -351,7 +351,7 @@ class CreateHealthMonitorOption:
     def project_id(self):
         r"""Gets the project_id of this CreateHealthMonitorOption.
 
-        健康检查所在的项目ID。
+        **参数解释**：健康检查所在的项目ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The project_id of this CreateHealthMonitorOption.
         :rtype: str
@@ -362,7 +362,7 @@ class CreateHealthMonitorOption:
     def project_id(self, project_id):
         r"""Sets the project_id of this CreateHealthMonitorOption.
 
-        健康检查所在的项目ID。
+        **参数解释**：健康检查所在的项目ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param project_id: The project_id of this CreateHealthMonitorOption.
         :type project_id: str
@@ -373,7 +373,7 @@ class CreateHealthMonitorOption:
     def timeout(self):
         r"""Gets the timeout of this CreateHealthMonitorOption.
 
-        一次健康检查请求的超时时间。  建议该值小于delay的值。
+        **参数解释**：一次健康检查请求的超时时间。建议该值小于delay的值。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The timeout of this CreateHealthMonitorOption.
         :rtype: int
@@ -384,7 +384,7 @@ class CreateHealthMonitorOption:
     def timeout(self, timeout):
         r"""Sets the timeout of this CreateHealthMonitorOption.
 
-        一次健康检查请求的超时时间。  建议该值小于delay的值。
+        **参数解释**：一次健康检查请求的超时时间。建议该值小于delay的值。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param timeout: The timeout of this CreateHealthMonitorOption.
         :type timeout: int
@@ -395,7 +395,7 @@ class CreateHealthMonitorOption:
     def type(self):
         r"""Gets the type of this CreateHealthMonitorOption.
 
-        健康检查请求协议。  取值：TCP、UDP_CONNECT、HTTP、HTTPS、GRPC和TLS。  使用说明： - 若pool的protocol为QUIC，则type只能是UDP_CONNECT。 - 若pool的protocol为UDP，则type只能UDP_CONNECT。 - 若pool的protocol为TCP，则type可以是TCP、HTTP、HTTPS。 [- 若pool的protocol为IP，则type可以是TCP、HTTP、HTTPS。](tag:hws_eu) - 若pool的protocol为HTTP，则type可以是TCP、HTTP、HTTPS、TLS、GRPC。 - 若pool的protocol为HTTPS，则type可以是TCP、HTTP、HTTPS、TLS、GRPC。 - 若pool的protocol为GRPC，则type可以是TCP、HTTP、HTTPS、TLS、GRPC。 - 若pool的protocol为TLS，则type可以是TCP、HTTP、HTTPS、TLS、GRPC。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC。](tag:dt)
+        **参数解释**：健康检查请求协议。  **约束限制**： - 若pool的protocol为QUIC，则type只能是UDP_CONNECT。 - 若pool的protocol为UDP，则type只能UDP_CONNECT。 - 若pool的protocol为TCP，则type可以是TCP、HTTP、HTTPS。 [- 若pool的protocol为IP，则type可以是TCP、HTTP、HTTPS。](tag:hws_eu) - 若pool的protocol为HTTP，则type可以是TCP、HTTP、HTTPS、TLS、GRPC。 - 若pool的protocol为HTTPS，则type可以是TCP、HTTP、HTTPS、TLS、GRPC。 - 若pool的protocol为GRPC，则type可以是TCP、HTTP、HTTPS、TLS、GRPC。 - 若pool的protocol为TLS，则type可以是TCP、HTTP、HTTPS、TLS、GRPC。 [- 不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt)  **取值范围**：TCP、UDP_CONNECT、HTTP、HTTPS、GRPC和TLS。  **默认取值**：不涉及  [荷兰region不支持QUIC。](tag:dt)
 
         :return: The type of this CreateHealthMonitorOption.
         :rtype: str
@@ -406,7 +406,7 @@ class CreateHealthMonitorOption:
     def type(self, type):
         r"""Sets the type of this CreateHealthMonitorOption.
 
-        健康检查请求协议。  取值：TCP、UDP_CONNECT、HTTP、HTTPS、GRPC和TLS。  使用说明： - 若pool的protocol为QUIC，则type只能是UDP_CONNECT。 - 若pool的protocol为UDP，则type只能UDP_CONNECT。 - 若pool的protocol为TCP，则type可以是TCP、HTTP、HTTPS。 [- 若pool的protocol为IP，则type可以是TCP、HTTP、HTTPS。](tag:hws_eu) - 若pool的protocol为HTTP，则type可以是TCP、HTTP、HTTPS、TLS、GRPC。 - 若pool的protocol为HTTPS，则type可以是TCP、HTTP、HTTPS、TLS、GRPC。 - 若pool的protocol为GRPC，则type可以是TCP、HTTP、HTTPS、TLS、GRPC。 - 若pool的protocol为TLS，则type可以是TCP、HTTP、HTTPS、TLS、GRPC。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC。](tag:dt)
+        **参数解释**：健康检查请求协议。  **约束限制**： - 若pool的protocol为QUIC，则type只能是UDP_CONNECT。 - 若pool的protocol为UDP，则type只能UDP_CONNECT。 - 若pool的protocol为TCP，则type可以是TCP、HTTP、HTTPS。 [- 若pool的protocol为IP，则type可以是TCP、HTTP、HTTPS。](tag:hws_eu) - 若pool的protocol为HTTP，则type可以是TCP、HTTP、HTTPS、TLS、GRPC。 - 若pool的protocol为HTTPS，则type可以是TCP、HTTP、HTTPS、TLS、GRPC。 - 若pool的protocol为GRPC，则type可以是TCP、HTTP、HTTPS、TLS、GRPC。 - 若pool的protocol为TLS，则type可以是TCP、HTTP、HTTPS、TLS、GRPC。 [- 不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt)  **取值范围**：TCP、UDP_CONNECT、HTTP、HTTPS、GRPC和TLS。  **默认取值**：不涉及  [荷兰region不支持QUIC。](tag:dt)
 
         :param type: The type of this CreateHealthMonitorOption.
         :type type: str
@@ -417,7 +417,7 @@ class CreateHealthMonitorOption:
     def url_path(self):
         r"""Gets the url_path of this CreateHealthMonitorOption.
 
-        健康检查请求的请求路径。以\"/\"开头，默认为\"/\"。  支持使用字母、数字和短划线（-）、正斜线（/）、半角句号（.）、百分号（%）、半角问号（?）、井号（#）和and（&）以及扩展字符集_;~!()*[]@$^:',+  使用说明：当type为HTTP/HTTPS时生效。
+        **参数解释**：健康检查请求的请求路径。以\"/\"开头，默认为\"/\"。  **约束限制**：当type为HTTP/HTTPS时生效。  **取值范围**：支持使用字母、数字和短划线（-）、正斜线（/）、半角句号（.）、百分号（%）、半角问号（?）、井号（#）和and（&）以及扩展字符集_;~!()*[]@$^:',+  **默认取值**：不涉及
 
         :return: The url_path of this CreateHealthMonitorOption.
         :rtype: str
@@ -428,7 +428,7 @@ class CreateHealthMonitorOption:
     def url_path(self, url_path):
         r"""Sets the url_path of this CreateHealthMonitorOption.
 
-        健康检查请求的请求路径。以\"/\"开头，默认为\"/\"。  支持使用字母、数字和短划线（-）、正斜线（/）、半角句号（.）、百分号（%）、半角问号（?）、井号（#）和and（&）以及扩展字符集_;~!()*[]@$^:',+  使用说明：当type为HTTP/HTTPS时生效。
+        **参数解释**：健康检查请求的请求路径。以\"/\"开头，默认为\"/\"。  **约束限制**：当type为HTTP/HTTPS时生效。  **取值范围**：支持使用字母、数字和短划线（-）、正斜线（/）、半角句号（.）、百分号（%）、半角问号（?）、井号（#）和and（&）以及扩展字符集_;~!()*[]@$^:',+  **默认取值**：不涉及
 
         :param url_path: The url_path of this CreateHealthMonitorOption.
         :type url_path: str

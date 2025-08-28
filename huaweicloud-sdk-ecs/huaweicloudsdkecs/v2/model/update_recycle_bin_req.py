@@ -38,8 +38,7 @@ class UpdateRecycleBinReq:
         self._recycle_bin = None
         self.discriminator = None
 
-        if recycle_bin is not None:
-            self.recycle_bin = recycle_bin
+        self.recycle_bin = recycle_bin
 
     @property
     def recycle_bin(self):

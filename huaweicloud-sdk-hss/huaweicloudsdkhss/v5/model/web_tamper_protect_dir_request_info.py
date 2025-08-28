@@ -41,7 +41,7 @@ class WebTamperProtectDirRequestInfo:
         :type exclude_file_type: str
         :param exclue_file_type: 排除文件类型
         :type exclue_file_type: str
-        :param protect_mode: 防护模式，包含如下4种   - recovery ：恢复模式   - alarm ：告警模式
+        :param protect_mode: **参数解释**: 防护模式 **约束限制**: 不涉及 **取值范围**: - recovery ：拦截模式。 - alarm ：告警模式。  **默认取值**: recovery 
         :type protect_mode: str
         """
         
@@ -132,7 +132,7 @@ class WebTamperProtectDirRequestInfo:
     def protect_mode(self):
         r"""Gets the protect_mode of this WebTamperProtectDirRequestInfo.
 
-        防护模式，包含如下4种   - recovery ：恢复模式   - alarm ：告警模式
+        **参数解释**: 防护模式 **约束限制**: 不涉及 **取值范围**: - recovery ：拦截模式。 - alarm ：告警模式。  **默认取值**: recovery 
 
         :return: The protect_mode of this WebTamperProtectDirRequestInfo.
         :rtype: str
@@ -143,7 +143,7 @@ class WebTamperProtectDirRequestInfo:
     def protect_mode(self, protect_mode):
         r"""Sets the protect_mode of this WebTamperProtectDirRequestInfo.
 
-        防护模式，包含如下4种   - recovery ：恢复模式   - alarm ：告警模式
+        **参数解释**: 防护模式 **约束限制**: 不涉及 **取值范围**: - recovery ：拦截模式。 - alarm ：告警模式。  **默认取值**: recovery 
 
         :param protect_mode: The protect_mode of this WebTamperProtectDirRequestInfo.
         :type protect_mode: str

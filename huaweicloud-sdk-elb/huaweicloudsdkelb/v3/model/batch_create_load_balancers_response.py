@@ -36,13 +36,13 @@ class BatchCreateLoadBalancersResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param loadbalancer_ids: 批创负载均衡器ID（UUID）的列表。
+        :param loadbalancer_ids: **参数解释**：批创负载均衡器ID（UUID）的列表。  **取值范围**：不涉及
         :type loadbalancer_ids: list[str]
-        :param job_id: 批量创建负载均衡器的job ID。
+        :param job_id: **参数解释**：批量创建负载均衡器的job ID。  **取值范围**：不涉及
         :type job_id: str
-        :param order_id: 订单号[（只有批量创建包周期实例的场景返回该字段）](tag:hws)  [不支持该字段，请勿使用](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,srg,fcs,fcs_vm,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,ct)
+        :param order_id: **参数解释**：订单号[（只有批量创建包周期实例的场景返回该字段）](tag:hws)  **取值范围**：不涉及  [不支持该字段，请勿使用。](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,srg,fcs,fcs_vm,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,ct)
         :type order_id: str
-        :param request_id: 请求ID。 注：自动生成 。
+        :param request_id: **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
         :type request_id: str
         """
         
@@ -67,7 +67,7 @@ class BatchCreateLoadBalancersResponse(SdkResponse):
     def loadbalancer_ids(self):
         r"""Gets the loadbalancer_ids of this BatchCreateLoadBalancersResponse.
 
-        批创负载均衡器ID（UUID）的列表。
+        **参数解释**：批创负载均衡器ID（UUID）的列表。  **取值范围**：不涉及
 
         :return: The loadbalancer_ids of this BatchCreateLoadBalancersResponse.
         :rtype: list[str]
@@ -78,7 +78,7 @@ class BatchCreateLoadBalancersResponse(SdkResponse):
     def loadbalancer_ids(self, loadbalancer_ids):
         r"""Sets the loadbalancer_ids of this BatchCreateLoadBalancersResponse.
 
-        批创负载均衡器ID（UUID）的列表。
+        **参数解释**：批创负载均衡器ID（UUID）的列表。  **取值范围**：不涉及
 
         :param loadbalancer_ids: The loadbalancer_ids of this BatchCreateLoadBalancersResponse.
         :type loadbalancer_ids: list[str]
@@ -89,7 +89,7 @@ class BatchCreateLoadBalancersResponse(SdkResponse):
     def job_id(self):
         r"""Gets the job_id of this BatchCreateLoadBalancersResponse.
 
-        批量创建负载均衡器的job ID。
+        **参数解释**：批量创建负载均衡器的job ID。  **取值范围**：不涉及
 
         :return: The job_id of this BatchCreateLoadBalancersResponse.
         :rtype: str
@@ -100,7 +100,7 @@ class BatchCreateLoadBalancersResponse(SdkResponse):
     def job_id(self, job_id):
         r"""Sets the job_id of this BatchCreateLoadBalancersResponse.
 
-        批量创建负载均衡器的job ID。
+        **参数解释**：批量创建负载均衡器的job ID。  **取值范围**：不涉及
 
         :param job_id: The job_id of this BatchCreateLoadBalancersResponse.
         :type job_id: str
@@ -111,7 +111,7 @@ class BatchCreateLoadBalancersResponse(SdkResponse):
     def order_id(self):
         r"""Gets the order_id of this BatchCreateLoadBalancersResponse.
 
-        订单号[（只有批量创建包周期实例的场景返回该字段）](tag:hws)  [不支持该字段，请勿使用](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,srg,fcs,fcs_vm,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,ct)
+        **参数解释**：订单号[（只有批量创建包周期实例的场景返回该字段）](tag:hws)  **取值范围**：不涉及  [不支持该字段，请勿使用。](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,srg,fcs,fcs_vm,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,ct)
 
         :return: The order_id of this BatchCreateLoadBalancersResponse.
         :rtype: str
@@ -122,7 +122,7 @@ class BatchCreateLoadBalancersResponse(SdkResponse):
     def order_id(self, order_id):
         r"""Sets the order_id of this BatchCreateLoadBalancersResponse.
 
-        订单号[（只有批量创建包周期实例的场景返回该字段）](tag:hws)  [不支持该字段，请勿使用](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,srg,fcs,fcs_vm,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,ct)
+        **参数解释**：订单号[（只有批量创建包周期实例的场景返回该字段）](tag:hws)  **取值范围**：不涉及  [不支持该字段，请勿使用。](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,srg,fcs,fcs_vm,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,ct)
 
         :param order_id: The order_id of this BatchCreateLoadBalancersResponse.
         :type order_id: str
@@ -133,7 +133,7 @@ class BatchCreateLoadBalancersResponse(SdkResponse):
     def request_id(self):
         r"""Gets the request_id of this BatchCreateLoadBalancersResponse.
 
-        请求ID。 注：自动生成 。
+        **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
 
         :return: The request_id of this BatchCreateLoadBalancersResponse.
         :rtype: str
@@ -144,7 +144,7 @@ class BatchCreateLoadBalancersResponse(SdkResponse):
     def request_id(self, request_id):
         r"""Sets the request_id of this BatchCreateLoadBalancersResponse.
 
-        请求ID。 注：自动生成 。
+        **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
 
         :param request_id: The request_id of this BatchCreateLoadBalancersResponse.
         :type request_id: str

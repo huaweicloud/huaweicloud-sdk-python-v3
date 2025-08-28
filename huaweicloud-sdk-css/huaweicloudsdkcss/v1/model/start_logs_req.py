@@ -20,6 +20,8 @@ class StartLogsReq:
         'agency': 'str',
         'log_base_path': 'str',
         'log_bucket': 'str',
+        'auto_enable': 'bool',
+        'period': 'str',
         'index_prefix': 'str',
         'keep_days': 'int',
         'target_cluster_id': 'str'
@@ -29,12 +31,14 @@ class StartLogsReq:
         'agency': 'agency',
         'log_base_path': 'log_base_path',
         'log_bucket': 'log_bucket',
+        'auto_enable': 'auto_enable',
+        'period': 'period',
         'index_prefix': 'index_prefix',
         'keep_days': 'keep_days',
         'target_cluster_id': 'target_cluster_id'
     }
 
-    def __init__(self, agency=None, log_base_path=None, log_bucket=None, index_prefix=None, keep_days=None, target_cluster_id=None):
+    def __init__(self, agency=None, log_base_path=None, log_bucket=None, auto_enable=None, period=None, index_prefix=None, keep_days=None, target_cluster_id=None):
         r"""StartLogsReq
 
         The model defined in huaweicloud sdk
@@ -45,6 +49,10 @@ class StartLogsReq:
         :type log_base_path: str
         :param log_bucket: 用于存储日志的OBS桶的桶名。
         :type log_bucket: str
+        :param auto_enable: 集群日志是否开启自动备份。
+        :type auto_enable: bool
+        :param period: 集群日志备份开始时间。
+        :type period: str
         :param index_prefix: 保存日志的索引前缀。action等于real_time_log_collect时必选
         :type index_prefix: str
         :param keep_days: 日志保存时间。action等于real_time_log_collect时必选
@@ -58,6 +66,8 @@ class StartLogsReq:
         self._agency = None
         self._log_base_path = None
         self._log_bucket = None
+        self._auto_enable = None
+        self._period = None
         self._index_prefix = None
         self._keep_days = None
         self._target_cluster_id = None
@@ -66,6 +76,10 @@ class StartLogsReq:
         self.agency = agency
         self.log_base_path = log_base_path
         self.log_bucket = log_bucket
+        if auto_enable is not None:
+            self.auto_enable = auto_enable
+        if period is not None:
+            self.period = period
         if index_prefix is not None:
             self.index_prefix = index_prefix
         if keep_days is not None:
@@ -138,6 +152,50 @@ class StartLogsReq:
         :type log_bucket: str
         """
         self._log_bucket = log_bucket
+
+    @property
+    def auto_enable(self):
+        r"""Gets the auto_enable of this StartLogsReq.
+
+        集群日志是否开启自动备份。
+
+        :return: The auto_enable of this StartLogsReq.
+        :rtype: bool
+        """
+        return self._auto_enable
+
+    @auto_enable.setter
+    def auto_enable(self, auto_enable):
+        r"""Sets the auto_enable of this StartLogsReq.
+
+        集群日志是否开启自动备份。
+
+        :param auto_enable: The auto_enable of this StartLogsReq.
+        :type auto_enable: bool
+        """
+        self._auto_enable = auto_enable
+
+    @property
+    def period(self):
+        r"""Gets the period of this StartLogsReq.
+
+        集群日志备份开始时间。
+
+        :return: The period of this StartLogsReq.
+        :rtype: str
+        """
+        return self._period
+
+    @period.setter
+    def period(self, period):
+        r"""Sets the period of this StartLogsReq.
+
+        集群日志备份开始时间。
+
+        :param period: The period of this StartLogsReq.
+        :type period: str
+        """
+        self._period = period
 
     @property
     def index_prefix(self):

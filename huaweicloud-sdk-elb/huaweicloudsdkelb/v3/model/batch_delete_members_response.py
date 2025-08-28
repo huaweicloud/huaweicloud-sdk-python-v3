@@ -32,9 +32,9 @@ class BatchDeleteMembersResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param request_id: 请求ID。  注：自动生成 。
+        :param request_id: **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
         :type request_id: str
-        :param members: 后端服务器对象列表。
+        :param members: **参数解释**：后端服务器对象列表。
         :type members: list[:class:`huaweicloudsdkelb.v3.BatchDeleteMembersState`]
         """
         
@@ -53,7 +53,7 @@ class BatchDeleteMembersResponse(SdkResponse):
     def request_id(self):
         r"""Gets the request_id of this BatchDeleteMembersResponse.
 
-        请求ID。  注：自动生成 。
+        **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
 
         :return: The request_id of this BatchDeleteMembersResponse.
         :rtype: str
@@ -64,7 +64,7 @@ class BatchDeleteMembersResponse(SdkResponse):
     def request_id(self, request_id):
         r"""Sets the request_id of this BatchDeleteMembersResponse.
 
-        请求ID。  注：自动生成 。
+        **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
 
         :param request_id: The request_id of this BatchDeleteMembersResponse.
         :type request_id: str
@@ -75,7 +75,7 @@ class BatchDeleteMembersResponse(SdkResponse):
     def members(self):
         r"""Gets the members of this BatchDeleteMembersResponse.
 
-        后端服务器对象列表。
+        **参数解释**：后端服务器对象列表。
 
         :return: The members of this BatchDeleteMembersResponse.
         :rtype: list[:class:`huaweicloudsdkelb.v3.BatchDeleteMembersState`]
@@ -86,7 +86,7 @@ class BatchDeleteMembersResponse(SdkResponse):
     def members(self, members):
         r"""Sets the members of this BatchDeleteMembersResponse.
 
-        后端服务器对象列表。
+        **参数解释**：后端服务器对象列表。
 
         :param members: The members of this BatchDeleteMembersResponse.
         :type members: list[:class:`huaweicloudsdkelb.v3.BatchDeleteMembersState`]

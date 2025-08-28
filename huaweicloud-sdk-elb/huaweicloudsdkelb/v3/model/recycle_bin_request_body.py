@@ -29,7 +29,7 @@ class RecycleBinRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param enable: 是否启用回收站。  取值： - true：启用回收站。 - false：不启用回收站。
+        :param enable: **参数解释**：是否启用回收站。  **取值范围**： - true：启用回收站。 - false：不启用回收站。
         :type enable: bool
         """
         
@@ -45,7 +45,7 @@ class RecycleBinRequestBody:
     def enable(self):
         r"""Gets the enable of this RecycleBinRequestBody.
 
-        是否启用回收站。  取值： - true：启用回收站。 - false：不启用回收站。
+        **参数解释**：是否启用回收站。  **取值范围**： - true：启用回收站。 - false：不启用回收站。
 
         :return: The enable of this RecycleBinRequestBody.
         :rtype: bool
@@ -56,7 +56,7 @@ class RecycleBinRequestBody:
     def enable(self, enable):
         r"""Sets the enable of this RecycleBinRequestBody.
 
-        是否启用回收站。  取值： - true：启用回收站。 - false：不启用回收站。
+        **参数解释**：是否启用回收站。  **取值范围**： - true：启用回收站。 - false：不启用回收站。
 
         :param enable: The enable of this RecycleBinRequestBody.
         :type enable: bool

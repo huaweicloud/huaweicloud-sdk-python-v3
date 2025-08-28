@@ -35,7 +35,7 @@ class LoginProfile:
 
         The model defined in huaweicloud sdk
 
-        :param user_id: IAM用户ID，长度为1到64个字符，只包含字母、数字和\&quot;-\&quot;的字符串。
+        :param user_id: IAM用户ID。
         :type user_id: str
         :param password_reset_required: IAM用户下次登录时是否需要修改密码。
         :type password_reset_required: bool
@@ -63,7 +63,7 @@ class LoginProfile:
     def user_id(self):
         r"""Gets the user_id of this LoginProfile.
 
-        IAM用户ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
+        IAM用户ID。
 
         :return: The user_id of this LoginProfile.
         :rtype: str
@@ -74,7 +74,7 @@ class LoginProfile:
     def user_id(self, user_id):
         r"""Sets the user_id of this LoginProfile.
 
-        IAM用户ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
+        IAM用户ID。
 
         :param user_id: The user_id of this LoginProfile.
         :type user_id: str

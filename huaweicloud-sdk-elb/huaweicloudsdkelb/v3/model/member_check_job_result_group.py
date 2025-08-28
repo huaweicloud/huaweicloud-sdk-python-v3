@@ -33,11 +33,11 @@ class MemberCheckJobResultGroup:
 
         The model defined in huaweicloud sdk
 
-        :param check_result: 参数解释：检查结果，true表示检查通过，false为检查不通过。
+        :param check_result: **参数解释**：检查结果，true表示检查通过，false为检查不通过。  **取值范围**：不涉及
         :type check_result: bool
-        :param check_items: 参数解释：分组检查项汇总。
+        :param check_items: 
         :type check_items: list[:class:`huaweicloudsdkelb.v3.MemberCheckJobResultItem`]
-        :param check_status: 参数解释：processed检查完成，processing检查中，failed检查失败
+        :param check_status: **参数解释**：processed检查完成，processing检查中，failed检查失败。  **取值范围**：不涉及
         :type check_status: str
         """
         
@@ -59,7 +59,7 @@ class MemberCheckJobResultGroup:
     def check_result(self):
         r"""Gets the check_result of this MemberCheckJobResultGroup.
 
-        参数解释：检查结果，true表示检查通过，false为检查不通过。
+        **参数解释**：检查结果，true表示检查通过，false为检查不通过。  **取值范围**：不涉及
 
         :return: The check_result of this MemberCheckJobResultGroup.
         :rtype: bool
@@ -70,7 +70,7 @@ class MemberCheckJobResultGroup:
     def check_result(self, check_result):
         r"""Sets the check_result of this MemberCheckJobResultGroup.
 
-        参数解释：检查结果，true表示检查通过，false为检查不通过。
+        **参数解释**：检查结果，true表示检查通过，false为检查不通过。  **取值范围**：不涉及
 
         :param check_result: The check_result of this MemberCheckJobResultGroup.
         :type check_result: bool
@@ -81,8 +81,6 @@ class MemberCheckJobResultGroup:
     def check_items(self):
         r"""Gets the check_items of this MemberCheckJobResultGroup.
 
-        参数解释：分组检查项汇总。
-
         :return: The check_items of this MemberCheckJobResultGroup.
         :rtype: list[:class:`huaweicloudsdkelb.v3.MemberCheckJobResultItem`]
         """
@@ -91,8 +89,6 @@ class MemberCheckJobResultGroup:
     @check_items.setter
     def check_items(self, check_items):
         r"""Sets the check_items of this MemberCheckJobResultGroup.
-
-        参数解释：分组检查项汇总。
 
         :param check_items: The check_items of this MemberCheckJobResultGroup.
         :type check_items: list[:class:`huaweicloudsdkelb.v3.MemberCheckJobResultItem`]
@@ -103,7 +99,7 @@ class MemberCheckJobResultGroup:
     def check_status(self):
         r"""Gets the check_status of this MemberCheckJobResultGroup.
 
-        参数解释：processed检查完成，processing检查中，failed检查失败
+        **参数解释**：processed检查完成，processing检查中，failed检查失败。  **取值范围**：不涉及
 
         :return: The check_status of this MemberCheckJobResultGroup.
         :rtype: str
@@ -114,7 +110,7 @@ class MemberCheckJobResultGroup:
     def check_status(self, check_status):
         r"""Sets the check_status of this MemberCheckJobResultGroup.
 
-        参数解释：processed检查完成，processing检查中，failed检查失败
+        **参数解释**：processed检查完成，processing检查中，failed检查失败。  **取值范围**：不涉及
 
         :param check_status: The check_status of this MemberCheckJobResultGroup.
         :type check_status: str

@@ -32,9 +32,9 @@ class ListAvailabilityZonesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param request_id: 参数解释：请求ID。  注：自动生成。
+        :param request_id: **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
         :type request_id: str
-        :param availability_zones: 参数解释：返回创建LB时可使用的可用区集合列表。如：[[az1,az2],[az2,az3]] ,则在创建LB时，只能从其中的一个子列表中选择一个或多个可用区，不能跨列表选择。在上述例子中，不能选择az1和az3。
+        :param availability_zones: **参数解释**：返回创建LB时可使用的可用区集合列表。如：[[az1,az2],[az2,az3]] ,则在创建LB时，只能从其中的一个子列表中选择一个或多个可用区，不能跨列表选择。在上述例子中，不能选择az1和az3。  **取值范围**：不涉及
         :type availability_zones: list[list[AvailabilityZone]]
         """
         
@@ -53,7 +53,7 @@ class ListAvailabilityZonesResponse(SdkResponse):
     def request_id(self):
         r"""Gets the request_id of this ListAvailabilityZonesResponse.
 
-        参数解释：请求ID。  注：自动生成。
+        **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
 
         :return: The request_id of this ListAvailabilityZonesResponse.
         :rtype: str
@@ -64,7 +64,7 @@ class ListAvailabilityZonesResponse(SdkResponse):
     def request_id(self, request_id):
         r"""Sets the request_id of this ListAvailabilityZonesResponse.
 
-        参数解释：请求ID。  注：自动生成。
+        **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
 
         :param request_id: The request_id of this ListAvailabilityZonesResponse.
         :type request_id: str
@@ -75,7 +75,7 @@ class ListAvailabilityZonesResponse(SdkResponse):
     def availability_zones(self):
         r"""Gets the availability_zones of this ListAvailabilityZonesResponse.
 
-        参数解释：返回创建LB时可使用的可用区集合列表。如：[[az1,az2],[az2,az3]] ,则在创建LB时，只能从其中的一个子列表中选择一个或多个可用区，不能跨列表选择。在上述例子中，不能选择az1和az3。
+        **参数解释**：返回创建LB时可使用的可用区集合列表。如：[[az1,az2],[az2,az3]] ,则在创建LB时，只能从其中的一个子列表中选择一个或多个可用区，不能跨列表选择。在上述例子中，不能选择az1和az3。  **取值范围**：不涉及
 
         :return: The availability_zones of this ListAvailabilityZonesResponse.
         :rtype: list[list[AvailabilityZone]]
@@ -86,7 +86,7 @@ class ListAvailabilityZonesResponse(SdkResponse):
     def availability_zones(self, availability_zones):
         r"""Sets the availability_zones of this ListAvailabilityZonesResponse.
 
-        参数解释：返回创建LB时可使用的可用区集合列表。如：[[az1,az2],[az2,az3]] ,则在创建LB时，只能从其中的一个子列表中选择一个或多个可用区，不能跨列表选择。在上述例子中，不能选择az1和az3。
+        **参数解释**：返回创建LB时可使用的可用区集合列表。如：[[az1,az2],[az2,az3]] ,则在创建LB时，只能从其中的一个子列表中选择一个或多个可用区，不能跨列表选择。在上述例子中，不能选择az1和az3。  **取值范围**：不涉及
 
         :param availability_zones: The availability_zones of this ListAvailabilityZonesResponse.
         :type availability_zones: list[list[AvailabilityZone]]

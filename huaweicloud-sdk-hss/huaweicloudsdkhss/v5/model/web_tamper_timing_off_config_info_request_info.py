@@ -18,7 +18,7 @@ class WebTamperTimingOffConfigInfoRequestInfo:
 
     openapi_types = {
         'week_off_list': 'list[int]',
-        'timing_range_list': 'list[TimingRangeConfigInfo]'
+        'timing_range_list': 'list[TimingRangeConfigRequestInfo]'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class WebTamperTimingOffConfigInfoRequestInfo:
         :param week_off_list: 关闭防护周期
         :type week_off_list: list[int]
         :param timing_range_list: 时间段
-        :type timing_range_list: list[:class:`huaweicloudsdkhss.v5.TimingRangeConfigInfo`]
+        :type timing_range_list: list[:class:`huaweicloudsdkhss.v5.TimingRangeConfigRequestInfo`]
         """
         
         
@@ -77,7 +77,7 @@ class WebTamperTimingOffConfigInfoRequestInfo:
         时间段
 
         :return: The timing_range_list of this WebTamperTimingOffConfigInfoRequestInfo.
-        :rtype: list[:class:`huaweicloudsdkhss.v5.TimingRangeConfigInfo`]
+        :rtype: list[:class:`huaweicloudsdkhss.v5.TimingRangeConfigRequestInfo`]
         """
         return self._timing_range_list
 
@@ -88,7 +88,7 @@ class WebTamperTimingOffConfigInfoRequestInfo:
         时间段
 
         :param timing_range_list: The timing_range_list of this WebTamperTimingOffConfigInfoRequestInfo.
-        :type timing_range_list: list[:class:`huaweicloudsdkhss.v5.TimingRangeConfigInfo`]
+        :type timing_range_list: list[:class:`huaweicloudsdkhss.v5.TimingRangeConfigRequestInfo`]
         """
         self._timing_range_list = timing_range_list
 

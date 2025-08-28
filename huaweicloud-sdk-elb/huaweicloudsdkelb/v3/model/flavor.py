@@ -45,23 +45,23 @@ class Flavor:
 
         The model defined in huaweicloud sdk
 
-        :param id: 参数解释：规格ID。
+        :param id: **参数解释**：规格ID。  **取值范围**：不涉及
         :type id: str
         :param info: 
         :type info: :class:`huaweicloudsdkelb.v3.FlavorInfo`
-        :param name: 参数解释：规格名称。  取值范围：  [网络型有如下规格：   - L4_flavor.elb.s1.small: 小型 I   - L4_flavor.elb.s2.small: 小型 II   - L4_flavor.elb.s1.medium: 中型 I   - L4_flavor.elb.s2.medium: 中型 II   - L4_flavor.elb.s1.large: 大型 I   - L4_flavor.elb.s2.large: 大型 II   - L4_flavor.elb.pro.max: 四层弹性规格  应用型有如下规格：   - L7_flavor.elb.s1.small: 小型 I   - L7_flavor.elb.s2.small: 小型 II   - L7_flavor.elb.s1.medium: 中型 I   - L7_flavor.elb.s2.medium: 中型 II   - L7_flavor.elb.s1.large: 大型 I   - L7_flavor.elb.s2.large: 大型 II   - L7_flavor.elb.s1.extra-large: 超大型 I   - L7_flavor.elb.s2.extra-large: 超大型 II   - L7_flavor.elb.pro.max: 七层弹性规格](tag:hws,hws_hk,hws_eu,hws_eu_wb,hws_test,fcs,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,srg,g42,hk_g42)  [网络型有如下规格：   - L4_flavor.elb.s1.small: 小型 I   - L4_flavor.elb.s2.small: 小型 II   - L4_flavor.elb.s1.medium: 中型 I   - L4_flavor.elb.s2.medium: 中型 II   - L4_flavor.elb.s1.large: 大型 I   - L4_flavor.elb.s2.large: 大型 II   - L4_flavor.elb.pro.max: 四层弹性规格  应用型有如下规格：   - L7_flavor.elb.s1.small: 小型 I   - L7_flavor.elb.s2.small: 小型 II   - L7_flavor.elb.s1.medium: 中型 I   - L7_flavor.elb.s2.medium: 中型 II   - L7_flavor.elb.s1.large: 大型 I   - L7_flavor.elb.s2.large: 大型 II   - L7_flavor.elb.pro.s1.small：弹性规格小型I。已不支持，请勿使用。   - L7_flavor.elb.pro.s1.medium：弹性规格中型I。已不支持，请勿使用。   - L7_flavor.elb.pro.s1.large：弹性规格大型I。已不支持，请勿使用。   - L7_flavor.elb.pro.max: 七层弹性规格](tag:dt,hcso_dt)
+        :param name: **参数解释**：规格名称。  **取值范围**： [网络型有如下规格：   - L4_flavor.elb.s1.small: 小型 I   - L4_flavor.elb.s2.small: 小型 II   - L4_flavor.elb.s1.medium: 中型 I   - L4_flavor.elb.s2.medium: 中型 II   - L4_flavor.elb.s1.large: 大型 I   - L4_flavor.elb.s2.large: 大型 II   - L4_flavor.elb.pro.max: 四层弹性规格  应用型有如下规格：   - L7_flavor.elb.s1.small: 小型 I   - L7_flavor.elb.s2.small: 小型 II   - L7_flavor.elb.s1.medium: 中型 I   - L7_flavor.elb.s2.medium: 中型 II   - L7_flavor.elb.s1.large: 大型 I   - L7_flavor.elb.s2.large: 大型 II   - L7_flavor.elb.s1.extra-large: 超大型 I   - L7_flavor.elb.s2.extra-large: 超大型 II   - L7_flavor.elb.pro.max: 七层弹性规格](tag:hws,hws_hk,hws_eu,hws_eu_wb,hws_test,fcs,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,srg,g42,hk_g42) [网络型有如下规格：   - L4_flavor.elb.s1.small: 小型 I   - L4_flavor.elb.s2.small: 小型 II   - L4_flavor.elb.s1.medium: 中型 I   - L4_flavor.elb.s2.medium: 中型 II   - L4_flavor.elb.s1.large: 大型 I   - L4_flavor.elb.s2.large: 大型 II   - L4_flavor.elb.pro.max: 四层弹性规格  应用型有如下规格：   - L7_flavor.elb.s1.small: 小型 I   - L7_flavor.elb.s2.small: 小型 II   - L7_flavor.elb.s1.medium: 中型 I   - L7_flavor.elb.s2.medium: 中型 II   - L7_flavor.elb.s1.large: 大型 I   - L7_flavor.elb.s2.large: 大型 II   - L7_flavor.elb.pro.s1.small：弹性规格小型I。已不支持，请勿使用。   - L7_flavor.elb.pro.s1.medium：弹性规格中型I。已不支持，请勿使用。   - L7_flavor.elb.pro.s1.large：弹性规格大型I。已不支持，请勿使用。   - L7_flavor.elb.pro.max: 七层弹性规格](tag:dt,hcso_dt)
         :type name: str
-        :param shared: 参数解释：是否公共规格。  取值范围： - true表示公共规格，所有租户可见。 - false表示私有规格，为当前租户所有。
+        :param shared: **参数解释**：是否公共规格。  **取值范围**： - true表示公共规格，所有租户可见。 - false表示私有规格，为当前租户所有。
         :type shared: bool
-        :param project_id: 参数解释：项目ID。
+        :param project_id: **参数解释**：项目ID。获取方式请参见[获取项目ID](elb_fl_0008.xml)。  **取值范围**：长度为32个字符，由小写字母和数字组成。
         :type project_id: str
-        :param type: 参数解释：规格类别。  取值范围：   - L4和L7 表示四层网络型和七层应用型flavor。   [- gateway 表示网关型LB的flavor，目前只支持弹性计费类型。当前仅支持欧洲局点。](tag:hws_eu)   - L4_elastic和L7_elastic 表示弹性扩缩容实例的下限规格。已废弃，请勿使用。   - L4_elastic_max、L7_elastic_max[和gateway_elastic_max](tag:hws_eu) 表示弹性扩缩容实例的上限规格。
+        :param type: **参数解释**：规格类别。  **取值范围**：   - L4和L7 表示四层网络型和七层应用型flavor。   [- gateway 表示网关型LB的flavor，目前只支持弹性计费类型。当前仅支持欧洲局点。](tag:hws_eu)   - L4_elastic和L7_elastic 表示弹性扩缩容实例的下限规格。已废弃，请勿使用。   - L4_elastic_max、L7_elastic_max[和gateway_elastic_max](tag:hws_eu) 表示弹性扩缩容实例的上限规格。
         :type type: str
-        :param flavor_sold_out: 参数解释： [是否售罄。](tag:hws) [是否无法购买该规格的LB。](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,fcs,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,srg,ct)  取值范围： - true：[已售罄，将](tag:hws)无法购买该规格的LB。 - false：[未售罄，](tag:hws)可购买该规格的LB。
+        :param flavor_sold_out: **参数解释**：[是否售罄。](tag:hws)[是否无法购买该规格的LB。](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,fcs,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,srg,ct)  **取值范围**： - true：[已售罄，将](tag:hws)无法购买该规格的LB。 - false：[未售罄，](tag:hws)可购买该规格的LB。
         :type flavor_sold_out: bool
-        :param public_border_group: 参数解释：网络公共边界组，如：center
+        :param public_border_group: **参数解释**：公网边界组。  **取值范围**： - center：表示中心站点的公网边界组 - 边缘站点名称：表示边缘站点的公网边界组
         :type public_border_group: str
-        :param category: 参数解释：网络公共边界组编码。  取值范围：0表示center，21表示homezone。
+        :param category: **参数解释**：可用区子类型编码。该字段主要用于区分在边缘场景下，边缘AZ的类型。  **取值范围**：0表示center，21表示homezone，41表示IES。
         :type category: int
         """
         
@@ -94,7 +94,7 @@ class Flavor:
     def id(self):
         r"""Gets the id of this Flavor.
 
-        参数解释：规格ID。
+        **参数解释**：规格ID。  **取值范围**：不涉及
 
         :return: The id of this Flavor.
         :rtype: str
@@ -105,7 +105,7 @@ class Flavor:
     def id(self, id):
         r"""Sets the id of this Flavor.
 
-        参数解释：规格ID。
+        **参数解释**：规格ID。  **取值范围**：不涉及
 
         :param id: The id of this Flavor.
         :type id: str
@@ -134,7 +134,7 @@ class Flavor:
     def name(self):
         r"""Gets the name of this Flavor.
 
-        参数解释：规格名称。  取值范围：  [网络型有如下规格：   - L4_flavor.elb.s1.small: 小型 I   - L4_flavor.elb.s2.small: 小型 II   - L4_flavor.elb.s1.medium: 中型 I   - L4_flavor.elb.s2.medium: 中型 II   - L4_flavor.elb.s1.large: 大型 I   - L4_flavor.elb.s2.large: 大型 II   - L4_flavor.elb.pro.max: 四层弹性规格  应用型有如下规格：   - L7_flavor.elb.s1.small: 小型 I   - L7_flavor.elb.s2.small: 小型 II   - L7_flavor.elb.s1.medium: 中型 I   - L7_flavor.elb.s2.medium: 中型 II   - L7_flavor.elb.s1.large: 大型 I   - L7_flavor.elb.s2.large: 大型 II   - L7_flavor.elb.s1.extra-large: 超大型 I   - L7_flavor.elb.s2.extra-large: 超大型 II   - L7_flavor.elb.pro.max: 七层弹性规格](tag:hws,hws_hk,hws_eu,hws_eu_wb,hws_test,fcs,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,srg,g42,hk_g42)  [网络型有如下规格：   - L4_flavor.elb.s1.small: 小型 I   - L4_flavor.elb.s2.small: 小型 II   - L4_flavor.elb.s1.medium: 中型 I   - L4_flavor.elb.s2.medium: 中型 II   - L4_flavor.elb.s1.large: 大型 I   - L4_flavor.elb.s2.large: 大型 II   - L4_flavor.elb.pro.max: 四层弹性规格  应用型有如下规格：   - L7_flavor.elb.s1.small: 小型 I   - L7_flavor.elb.s2.small: 小型 II   - L7_flavor.elb.s1.medium: 中型 I   - L7_flavor.elb.s2.medium: 中型 II   - L7_flavor.elb.s1.large: 大型 I   - L7_flavor.elb.s2.large: 大型 II   - L7_flavor.elb.pro.s1.small：弹性规格小型I。已不支持，请勿使用。   - L7_flavor.elb.pro.s1.medium：弹性规格中型I。已不支持，请勿使用。   - L7_flavor.elb.pro.s1.large：弹性规格大型I。已不支持，请勿使用。   - L7_flavor.elb.pro.max: 七层弹性规格](tag:dt,hcso_dt)
+        **参数解释**：规格名称。  **取值范围**： [网络型有如下规格：   - L4_flavor.elb.s1.small: 小型 I   - L4_flavor.elb.s2.small: 小型 II   - L4_flavor.elb.s1.medium: 中型 I   - L4_flavor.elb.s2.medium: 中型 II   - L4_flavor.elb.s1.large: 大型 I   - L4_flavor.elb.s2.large: 大型 II   - L4_flavor.elb.pro.max: 四层弹性规格  应用型有如下规格：   - L7_flavor.elb.s1.small: 小型 I   - L7_flavor.elb.s2.small: 小型 II   - L7_flavor.elb.s1.medium: 中型 I   - L7_flavor.elb.s2.medium: 中型 II   - L7_flavor.elb.s1.large: 大型 I   - L7_flavor.elb.s2.large: 大型 II   - L7_flavor.elb.s1.extra-large: 超大型 I   - L7_flavor.elb.s2.extra-large: 超大型 II   - L7_flavor.elb.pro.max: 七层弹性规格](tag:hws,hws_hk,hws_eu,hws_eu_wb,hws_test,fcs,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,srg,g42,hk_g42) [网络型有如下规格：   - L4_flavor.elb.s1.small: 小型 I   - L4_flavor.elb.s2.small: 小型 II   - L4_flavor.elb.s1.medium: 中型 I   - L4_flavor.elb.s2.medium: 中型 II   - L4_flavor.elb.s1.large: 大型 I   - L4_flavor.elb.s2.large: 大型 II   - L4_flavor.elb.pro.max: 四层弹性规格  应用型有如下规格：   - L7_flavor.elb.s1.small: 小型 I   - L7_flavor.elb.s2.small: 小型 II   - L7_flavor.elb.s1.medium: 中型 I   - L7_flavor.elb.s2.medium: 中型 II   - L7_flavor.elb.s1.large: 大型 I   - L7_flavor.elb.s2.large: 大型 II   - L7_flavor.elb.pro.s1.small：弹性规格小型I。已不支持，请勿使用。   - L7_flavor.elb.pro.s1.medium：弹性规格中型I。已不支持，请勿使用。   - L7_flavor.elb.pro.s1.large：弹性规格大型I。已不支持，请勿使用。   - L7_flavor.elb.pro.max: 七层弹性规格](tag:dt,hcso_dt)
 
         :return: The name of this Flavor.
         :rtype: str
@@ -145,7 +145,7 @@ class Flavor:
     def name(self, name):
         r"""Sets the name of this Flavor.
 
-        参数解释：规格名称。  取值范围：  [网络型有如下规格：   - L4_flavor.elb.s1.small: 小型 I   - L4_flavor.elb.s2.small: 小型 II   - L4_flavor.elb.s1.medium: 中型 I   - L4_flavor.elb.s2.medium: 中型 II   - L4_flavor.elb.s1.large: 大型 I   - L4_flavor.elb.s2.large: 大型 II   - L4_flavor.elb.pro.max: 四层弹性规格  应用型有如下规格：   - L7_flavor.elb.s1.small: 小型 I   - L7_flavor.elb.s2.small: 小型 II   - L7_flavor.elb.s1.medium: 中型 I   - L7_flavor.elb.s2.medium: 中型 II   - L7_flavor.elb.s1.large: 大型 I   - L7_flavor.elb.s2.large: 大型 II   - L7_flavor.elb.s1.extra-large: 超大型 I   - L7_flavor.elb.s2.extra-large: 超大型 II   - L7_flavor.elb.pro.max: 七层弹性规格](tag:hws,hws_hk,hws_eu,hws_eu_wb,hws_test,fcs,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,srg,g42,hk_g42)  [网络型有如下规格：   - L4_flavor.elb.s1.small: 小型 I   - L4_flavor.elb.s2.small: 小型 II   - L4_flavor.elb.s1.medium: 中型 I   - L4_flavor.elb.s2.medium: 中型 II   - L4_flavor.elb.s1.large: 大型 I   - L4_flavor.elb.s2.large: 大型 II   - L4_flavor.elb.pro.max: 四层弹性规格  应用型有如下规格：   - L7_flavor.elb.s1.small: 小型 I   - L7_flavor.elb.s2.small: 小型 II   - L7_flavor.elb.s1.medium: 中型 I   - L7_flavor.elb.s2.medium: 中型 II   - L7_flavor.elb.s1.large: 大型 I   - L7_flavor.elb.s2.large: 大型 II   - L7_flavor.elb.pro.s1.small：弹性规格小型I。已不支持，请勿使用。   - L7_flavor.elb.pro.s1.medium：弹性规格中型I。已不支持，请勿使用。   - L7_flavor.elb.pro.s1.large：弹性规格大型I。已不支持，请勿使用。   - L7_flavor.elb.pro.max: 七层弹性规格](tag:dt,hcso_dt)
+        **参数解释**：规格名称。  **取值范围**： [网络型有如下规格：   - L4_flavor.elb.s1.small: 小型 I   - L4_flavor.elb.s2.small: 小型 II   - L4_flavor.elb.s1.medium: 中型 I   - L4_flavor.elb.s2.medium: 中型 II   - L4_flavor.elb.s1.large: 大型 I   - L4_flavor.elb.s2.large: 大型 II   - L4_flavor.elb.pro.max: 四层弹性规格  应用型有如下规格：   - L7_flavor.elb.s1.small: 小型 I   - L7_flavor.elb.s2.small: 小型 II   - L7_flavor.elb.s1.medium: 中型 I   - L7_flavor.elb.s2.medium: 中型 II   - L7_flavor.elb.s1.large: 大型 I   - L7_flavor.elb.s2.large: 大型 II   - L7_flavor.elb.s1.extra-large: 超大型 I   - L7_flavor.elb.s2.extra-large: 超大型 II   - L7_flavor.elb.pro.max: 七层弹性规格](tag:hws,hws_hk,hws_eu,hws_eu_wb,hws_test,fcs,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,srg,g42,hk_g42) [网络型有如下规格：   - L4_flavor.elb.s1.small: 小型 I   - L4_flavor.elb.s2.small: 小型 II   - L4_flavor.elb.s1.medium: 中型 I   - L4_flavor.elb.s2.medium: 中型 II   - L4_flavor.elb.s1.large: 大型 I   - L4_flavor.elb.s2.large: 大型 II   - L4_flavor.elb.pro.max: 四层弹性规格  应用型有如下规格：   - L7_flavor.elb.s1.small: 小型 I   - L7_flavor.elb.s2.small: 小型 II   - L7_flavor.elb.s1.medium: 中型 I   - L7_flavor.elb.s2.medium: 中型 II   - L7_flavor.elb.s1.large: 大型 I   - L7_flavor.elb.s2.large: 大型 II   - L7_flavor.elb.pro.s1.small：弹性规格小型I。已不支持，请勿使用。   - L7_flavor.elb.pro.s1.medium：弹性规格中型I。已不支持，请勿使用。   - L7_flavor.elb.pro.s1.large：弹性规格大型I。已不支持，请勿使用。   - L7_flavor.elb.pro.max: 七层弹性规格](tag:dt,hcso_dt)
 
         :param name: The name of this Flavor.
         :type name: str
@@ -156,7 +156,7 @@ class Flavor:
     def shared(self):
         r"""Gets the shared of this Flavor.
 
-        参数解释：是否公共规格。  取值范围： - true表示公共规格，所有租户可见。 - false表示私有规格，为当前租户所有。
+        **参数解释**：是否公共规格。  **取值范围**： - true表示公共规格，所有租户可见。 - false表示私有规格，为当前租户所有。
 
         :return: The shared of this Flavor.
         :rtype: bool
@@ -167,7 +167,7 @@ class Flavor:
     def shared(self, shared):
         r"""Sets the shared of this Flavor.
 
-        参数解释：是否公共规格。  取值范围： - true表示公共规格，所有租户可见。 - false表示私有规格，为当前租户所有。
+        **参数解释**：是否公共规格。  **取值范围**： - true表示公共规格，所有租户可见。 - false表示私有规格，为当前租户所有。
 
         :param shared: The shared of this Flavor.
         :type shared: bool
@@ -178,7 +178,7 @@ class Flavor:
     def project_id(self):
         r"""Gets the project_id of this Flavor.
 
-        参数解释：项目ID。
+        **参数解释**：项目ID。获取方式请参见[获取项目ID](elb_fl_0008.xml)。  **取值范围**：长度为32个字符，由小写字母和数字组成。
 
         :return: The project_id of this Flavor.
         :rtype: str
@@ -189,7 +189,7 @@ class Flavor:
     def project_id(self, project_id):
         r"""Sets the project_id of this Flavor.
 
-        参数解释：项目ID。
+        **参数解释**：项目ID。获取方式请参见[获取项目ID](elb_fl_0008.xml)。  **取值范围**：长度为32个字符，由小写字母和数字组成。
 
         :param project_id: The project_id of this Flavor.
         :type project_id: str
@@ -200,7 +200,7 @@ class Flavor:
     def type(self):
         r"""Gets the type of this Flavor.
 
-        参数解释：规格类别。  取值范围：   - L4和L7 表示四层网络型和七层应用型flavor。   [- gateway 表示网关型LB的flavor，目前只支持弹性计费类型。当前仅支持欧洲局点。](tag:hws_eu)   - L4_elastic和L7_elastic 表示弹性扩缩容实例的下限规格。已废弃，请勿使用。   - L4_elastic_max、L7_elastic_max[和gateway_elastic_max](tag:hws_eu) 表示弹性扩缩容实例的上限规格。
+        **参数解释**：规格类别。  **取值范围**：   - L4和L7 表示四层网络型和七层应用型flavor。   [- gateway 表示网关型LB的flavor，目前只支持弹性计费类型。当前仅支持欧洲局点。](tag:hws_eu)   - L4_elastic和L7_elastic 表示弹性扩缩容实例的下限规格。已废弃，请勿使用。   - L4_elastic_max、L7_elastic_max[和gateway_elastic_max](tag:hws_eu) 表示弹性扩缩容实例的上限规格。
 
         :return: The type of this Flavor.
         :rtype: str
@@ -211,7 +211,7 @@ class Flavor:
     def type(self, type):
         r"""Sets the type of this Flavor.
 
-        参数解释：规格类别。  取值范围：   - L4和L7 表示四层网络型和七层应用型flavor。   [- gateway 表示网关型LB的flavor，目前只支持弹性计费类型。当前仅支持欧洲局点。](tag:hws_eu)   - L4_elastic和L7_elastic 表示弹性扩缩容实例的下限规格。已废弃，请勿使用。   - L4_elastic_max、L7_elastic_max[和gateway_elastic_max](tag:hws_eu) 表示弹性扩缩容实例的上限规格。
+        **参数解释**：规格类别。  **取值范围**：   - L4和L7 表示四层网络型和七层应用型flavor。   [- gateway 表示网关型LB的flavor，目前只支持弹性计费类型。当前仅支持欧洲局点。](tag:hws_eu)   - L4_elastic和L7_elastic 表示弹性扩缩容实例的下限规格。已废弃，请勿使用。   - L4_elastic_max、L7_elastic_max[和gateway_elastic_max](tag:hws_eu) 表示弹性扩缩容实例的上限规格。
 
         :param type: The type of this Flavor.
         :type type: str
@@ -222,7 +222,7 @@ class Flavor:
     def flavor_sold_out(self):
         r"""Gets the flavor_sold_out of this Flavor.
 
-        参数解释： [是否售罄。](tag:hws) [是否无法购买该规格的LB。](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,fcs,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,srg,ct)  取值范围： - true：[已售罄，将](tag:hws)无法购买该规格的LB。 - false：[未售罄，](tag:hws)可购买该规格的LB。
+        **参数解释**：[是否售罄。](tag:hws)[是否无法购买该规格的LB。](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,fcs,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,srg,ct)  **取值范围**： - true：[已售罄，将](tag:hws)无法购买该规格的LB。 - false：[未售罄，](tag:hws)可购买该规格的LB。
 
         :return: The flavor_sold_out of this Flavor.
         :rtype: bool
@@ -233,7 +233,7 @@ class Flavor:
     def flavor_sold_out(self, flavor_sold_out):
         r"""Sets the flavor_sold_out of this Flavor.
 
-        参数解释： [是否售罄。](tag:hws) [是否无法购买该规格的LB。](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,fcs,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,srg,ct)  取值范围： - true：[已售罄，将](tag:hws)无法购买该规格的LB。 - false：[未售罄，](tag:hws)可购买该规格的LB。
+        **参数解释**：[是否售罄。](tag:hws)[是否无法购买该规格的LB。](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,fcs,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,srg,ct)  **取值范围**： - true：[已售罄，将](tag:hws)无法购买该规格的LB。 - false：[未售罄，](tag:hws)可购买该规格的LB。
 
         :param flavor_sold_out: The flavor_sold_out of this Flavor.
         :type flavor_sold_out: bool
@@ -244,7 +244,7 @@ class Flavor:
     def public_border_group(self):
         r"""Gets the public_border_group of this Flavor.
 
-        参数解释：网络公共边界组，如：center
+        **参数解释**：公网边界组。  **取值范围**： - center：表示中心站点的公网边界组 - 边缘站点名称：表示边缘站点的公网边界组
 
         :return: The public_border_group of this Flavor.
         :rtype: str
@@ -255,7 +255,7 @@ class Flavor:
     def public_border_group(self, public_border_group):
         r"""Sets the public_border_group of this Flavor.
 
-        参数解释：网络公共边界组，如：center
+        **参数解释**：公网边界组。  **取值范围**： - center：表示中心站点的公网边界组 - 边缘站点名称：表示边缘站点的公网边界组
 
         :param public_border_group: The public_border_group of this Flavor.
         :type public_border_group: str
@@ -266,7 +266,7 @@ class Flavor:
     def category(self):
         r"""Gets the category of this Flavor.
 
-        参数解释：网络公共边界组编码。  取值范围：0表示center，21表示homezone。
+        **参数解释**：可用区子类型编码。该字段主要用于区分在边缘场景下，边缘AZ的类型。  **取值范围**：0表示center，21表示homezone，41表示IES。
 
         :return: The category of this Flavor.
         :rtype: int
@@ -277,7 +277,7 @@ class Flavor:
     def category(self, category):
         r"""Sets the category of this Flavor.
 
-        参数解释：网络公共边界组编码。  取值范围：0表示center，21表示homezone。
+        **参数解释**：可用区子类型编码。该字段主要用于区分在边缘场景下，边缘AZ的类型。  **取值范围**：0表示center，21表示homezone，41表示IES。
 
         :param category: The category of this Flavor.
         :type category: int

@@ -31,9 +31,9 @@ class CreateMemberHealthCheckJobOption:
 
         The model defined in huaweicloud sdk
 
-        :param listener_id: 参数解释：后端服务器所关联的监听器，查询在该监听器下后端服务器的状态。
+        :param listener_id: **参数解释**：后端服务器所关联的监听器，查询在该监听器下后端服务器的状态。  **取值范围**：不涉及
         :type listener_id: str
-        :param subject: 参数法解释：检查项。  取值范围： - securityGroup：安全组检查。 - networkAcl：子网ACL配置检查。 - config：健康检查端口配置检查。 - all：所有检查项。
+        :param subject: 参数法解释：检查项。  **取值范围**： - securityGroup：安全组检查。 - networkAcl：子网ACL配置检查。 - config：健康检查端口配置检查。 - all：所有检查项。
         :type subject: str
         """
         
@@ -50,7 +50,7 @@ class CreateMemberHealthCheckJobOption:
     def listener_id(self):
         r"""Gets the listener_id of this CreateMemberHealthCheckJobOption.
 
-        参数解释：后端服务器所关联的监听器，查询在该监听器下后端服务器的状态。
+        **参数解释**：后端服务器所关联的监听器，查询在该监听器下后端服务器的状态。  **取值范围**：不涉及
 
         :return: The listener_id of this CreateMemberHealthCheckJobOption.
         :rtype: str
@@ -61,7 +61,7 @@ class CreateMemberHealthCheckJobOption:
     def listener_id(self, listener_id):
         r"""Sets the listener_id of this CreateMemberHealthCheckJobOption.
 
-        参数解释：后端服务器所关联的监听器，查询在该监听器下后端服务器的状态。
+        **参数解释**：后端服务器所关联的监听器，查询在该监听器下后端服务器的状态。  **取值范围**：不涉及
 
         :param listener_id: The listener_id of this CreateMemberHealthCheckJobOption.
         :type listener_id: str
@@ -72,7 +72,7 @@ class CreateMemberHealthCheckJobOption:
     def subject(self):
         r"""Gets the subject of this CreateMemberHealthCheckJobOption.
 
-        参数法解释：检查项。  取值范围： - securityGroup：安全组检查。 - networkAcl：子网ACL配置检查。 - config：健康检查端口配置检查。 - all：所有检查项。
+        参数法解释：检查项。  **取值范围**： - securityGroup：安全组检查。 - networkAcl：子网ACL配置检查。 - config：健康检查端口配置检查。 - all：所有检查项。
 
         :return: The subject of this CreateMemberHealthCheckJobOption.
         :rtype: str
@@ -83,7 +83,7 @@ class CreateMemberHealthCheckJobOption:
     def subject(self, subject):
         r"""Sets the subject of this CreateMemberHealthCheckJobOption.
 
-        参数法解释：检查项。  取值范围： - securityGroup：安全组检查。 - networkAcl：子网ACL配置检查。 - config：健康检查端口配置检查。 - all：所有检查项。
+        参数法解释：检查项。  **取值范围**： - securityGroup：安全组检查。 - networkAcl：子网ACL配置检查。 - config：健康检查端口配置检查。 - all：所有检查项。
 
         :param subject: The subject of this CreateMemberHealthCheckJobOption.
         :type subject: str

@@ -20,6 +20,7 @@ class LayerConfig:
         'layer_type': 'str',
         'asset_id': 'str',
         'group_id': 'str',
+        'sequence_no': 'int',
         'position': 'LayerPositionConfig',
         'size': 'LayerSizeConfig',
         'rotation': 'LayerRotationConfig',
@@ -32,6 +33,7 @@ class LayerConfig:
         'layer_type': 'layer_type',
         'asset_id': 'asset_id',
         'group_id': 'group_id',
+        'sequence_no': 'sequence_no',
         'position': 'position',
         'size': 'size',
         'rotation': 'rotation',
@@ -40,7 +42,7 @@ class LayerConfig:
         'text_config': 'text_config'
     }
 
-    def __init__(self, layer_type=None, asset_id=None, group_id=None, position=None, size=None, rotation=None, image_config=None, video_config=None, text_config=None):
+    def __init__(self, layer_type=None, asset_id=None, group_id=None, sequence_no=None, position=None, size=None, rotation=None, image_config=None, video_config=None, text_config=None):
         r"""LayerConfig
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class LayerConfig:
         :type asset_id: str
         :param group_id: **参数解释**： 多场景素材编组。同一group_id的素材，在应用全局时共享位置信息。 **约束限制**： 不涉及。 **取值范围**： 字符长度0-64位 **默认取值**： 不涉及
         :type group_id: str
+        :param sequence_no: **参数解释**： 播放到对应的段落，显示对应的图层。该字段向前兼容，可以不填，字段可选。 只支持直播业务。 **约束限制**： 段落sequence_no。 **默认取值**： 不涉及。
+        :type sequence_no: int
         :param position: 
         :type position: :class:`huaweicloudsdkmetastudio.v1.LayerPositionConfig`
         :param size: 
@@ -70,6 +74,7 @@ class LayerConfig:
         self._layer_type = None
         self._asset_id = None
         self._group_id = None
+        self._sequence_no = None
         self._position = None
         self._size = None
         self._rotation = None
@@ -83,6 +88,8 @@ class LayerConfig:
             self.asset_id = asset_id
         if group_id is not None:
             self.group_id = group_id
+        if sequence_no is not None:
+            self.sequence_no = sequence_no
         if position is not None:
             self.position = position
         if size is not None:
@@ -161,6 +168,28 @@ class LayerConfig:
         :type group_id: str
         """
         self._group_id = group_id
+
+    @property
+    def sequence_no(self):
+        r"""Gets the sequence_no of this LayerConfig.
+
+        **参数解释**： 播放到对应的段落，显示对应的图层。该字段向前兼容，可以不填，字段可选。 只支持直播业务。 **约束限制**： 段落sequence_no。 **默认取值**： 不涉及。
+
+        :return: The sequence_no of this LayerConfig.
+        :rtype: int
+        """
+        return self._sequence_no
+
+    @sequence_no.setter
+    def sequence_no(self, sequence_no):
+        r"""Sets the sequence_no of this LayerConfig.
+
+        **参数解释**： 播放到对应的段落，显示对应的图层。该字段向前兼容，可以不填，字段可选。 只支持直播业务。 **约束限制**： 段落sequence_no。 **默认取值**： 不涉及。
+
+        :param sequence_no: The sequence_no of this LayerConfig.
+        :type sequence_no: int
+        """
+        self._sequence_no = sequence_no
 
     @property
     def position(self):

@@ -1,0 +1,197 @@
+# coding: utf-8
+
+import six
+
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
+
+
+class LaunchTemplateOption:
+
+    """
+    Attributes:
+      openapi_types (dict): The key is attribute name
+                            and the value is attribute type.
+      attribute_map (dict): The key is attribute name
+                            and the value is json key in definition.
+    """
+    sensitive_list = []
+
+    openapi_types = {
+        'template_data': 'TemplateData',
+        'name': 'str',
+        'description': 'str',
+        'version_description': 'str'
+    }
+
+    attribute_map = {
+        'template_data': 'template_data',
+        'name': 'name',
+        'description': 'description',
+        'version_description': 'version_description'
+    }
+
+    def __init__(self, template_data=None, name=None, description=None, version_description=None):
+        r"""LaunchTemplateOption
+
+        The model defined in huaweicloud sdk
+
+        :param template_data: 
+        :type template_data: :class:`huaweicloudsdkecs.v2.TemplateData`
+        :param name: 模板名称
+        :type name: str
+        :param description: 模板描述
+        :type description: str
+        :param version_description: 初始第一个版本的版本描述
+        :type version_description: str
+        """
+        
+        
+
+        self._template_data = None
+        self._name = None
+        self._description = None
+        self._version_description = None
+        self.discriminator = None
+
+        if template_data is not None:
+            self.template_data = template_data
+        self.name = name
+        if description is not None:
+            self.description = description
+        if version_description is not None:
+            self.version_description = version_description
+
+    @property
+    def template_data(self):
+        r"""Gets the template_data of this LaunchTemplateOption.
+
+        :return: The template_data of this LaunchTemplateOption.
+        :rtype: :class:`huaweicloudsdkecs.v2.TemplateData`
+        """
+        return self._template_data
+
+    @template_data.setter
+    def template_data(self, template_data):
+        r"""Sets the template_data of this LaunchTemplateOption.
+
+        :param template_data: The template_data of this LaunchTemplateOption.
+        :type template_data: :class:`huaweicloudsdkecs.v2.TemplateData`
+        """
+        self._template_data = template_data
+
+    @property
+    def name(self):
+        r"""Gets the name of this LaunchTemplateOption.
+
+        模板名称
+
+        :return: The name of this LaunchTemplateOption.
+        :rtype: str
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        r"""Sets the name of this LaunchTemplateOption.
+
+        模板名称
+
+        :param name: The name of this LaunchTemplateOption.
+        :type name: str
+        """
+        self._name = name
+
+    @property
+    def description(self):
+        r"""Gets the description of this LaunchTemplateOption.
+
+        模板描述
+
+        :return: The description of this LaunchTemplateOption.
+        :rtype: str
+        """
+        return self._description
+
+    @description.setter
+    def description(self, description):
+        r"""Sets the description of this LaunchTemplateOption.
+
+        模板描述
+
+        :param description: The description of this LaunchTemplateOption.
+        :type description: str
+        """
+        self._description = description
+
+    @property
+    def version_description(self):
+        r"""Gets the version_description of this LaunchTemplateOption.
+
+        初始第一个版本的版本描述
+
+        :return: The version_description of this LaunchTemplateOption.
+        :rtype: str
+        """
+        return self._version_description
+
+    @version_description.setter
+    def version_description(self, version_description):
+        r"""Sets the version_description of this LaunchTemplateOption.
+
+        初始第一个版本的版本描述
+
+        :param version_description: The version_description of this LaunchTemplateOption.
+        :type version_description: str
+        """
+        self._version_description = version_description
+
+    def to_dict(self):
+        """Returns the model properties as a dict"""
+        result = {}
+
+        for attr, _ in six.iteritems(self.openapi_types):
+            value = getattr(self, attr)
+            if isinstance(value, list):
+                result[attr] = list(map(
+                    lambda x: x.to_dict() if hasattr(x, "to_dict") else x,
+                    value
+                ))
+            elif hasattr(value, "to_dict"):
+                result[attr] = value.to_dict()
+            elif isinstance(value, dict):
+                result[attr] = dict(map(
+                    lambda item: (item[0], item[1].to_dict())
+                    if hasattr(item[1], "to_dict") else item,
+                    value.items()
+                ))
+            else:
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
+
+        return result
+
+    def to_str(self):
+        """Returns the string representation of the model"""
+        import simplejson as json
+        if six.PY2:
+            import sys
+            reload(sys)
+            sys.setdefaultencoding("utf-8")
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
+
+    def __repr__(self):
+        """For `print`"""
+        return self.to_str()
+
+    def __eq__(self, other):
+        """Returns true if both objects are equal"""
+        if not isinstance(other, LaunchTemplateOption):
+            return False
+
+        return self.__dict__ == other.__dict__
+
+    def __ne__(self, other):
+        """Returns true if both objects are not equal"""
+        return not self == other

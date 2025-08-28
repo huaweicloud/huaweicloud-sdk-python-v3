@@ -33,11 +33,11 @@ class MemberHealthCheckFailedReason:
 
         The model defined in huaweicloud sdk
 
-        :param reason_code: 参数解释：健康检查异常原因码。 取值范围： - CONNECT_TIMEOUT: 负载均衡健康检查时向后端服务器建立连接超时。 - CONNECT_REFUSED: 负载均衡健康检查时向后端服务器拒绝连接。 - CONNECT_FAILED: 负载均衡健康检查时向后端服务器建立连接失败。 - CONNECT_INTERRUPT: 负载均衡健康检查与后端服务器连接中断。 - SSL_HANDSHAKE_ERROR: 负载均衡健康检查时与后端服务器SSL握手失败。 - RECV_RESPONSE_FAILED: 负载均衡健康检查时从后端服务器接收响应失败。 - RECV_RESPONSE_TIMEOUT: 负载均衡健康检查时从后端服务器接收响应超时。 - SEND_REQUEST_FAILED: 负载均衡健康检查时向后端服务器发送请求失败。 - SEND_REQUEST_TIMEOUT: 负载均衡健康检查时向后端服务器发送请求超时。 - RESPONSE_FORMAT_ERROR: 负载均衡健康检查时从后端服务器接收响应格式错误。 - RESPONSE_MISMATCH: 负载均衡健康检查时从后端服务器接收的响应码与预期配置返回码不一致。
+        :param reason_code: **参数解释**：健康检查异常原因码。  **取值范围**： - CONNECT_TIMEOUT: 负载均衡健康检查时向后端服务器建立连接超时。 - CONNECT_REFUSED: 负载均衡健康检查时向后端服务器拒绝连接。 - CONNECT_FAILED: 负载均衡健康检查时向后端服务器建立连接失败。 - CONNECT_INTERRUPT: 负载均衡健康检查与后端服务器连接中断。 - SSL_HANDSHAKE_ERROR: 负载均衡健康检查时与后端服务器SSL握手失败。 - RECV_RESPONSE_FAILED: 负载均衡健康检查时从后端服务器接收响应失败。 - RECV_RESPONSE_TIMEOUT: 负载均衡健康检查时从后端服务器接收响应超时。 - SEND_REQUEST_FAILED: 负载均衡健康检查时向后端服务器发送请求失败。 - SEND_REQUEST_TIMEOUT: 负载均衡健康检查时向后端服务器发送请求超时。 - RESPONSE_FORMAT_ERROR: 负载均衡健康检查时从后端服务器接收响应格式错误。 - RESPONSE_MISMATCH: 负载均衡健康检查时从后端服务器接收的响应码与预期配置返回码不一致。
         :type reason_code: str
-        :param expected_response: 参数解释：健康检查预期响应状态码。 支持HTTP,HTTPS,GRPC健康检查。 只有reason_code为RESPONSE_MISMATCH时，支持非null取值。  取值范围： - 单值：单个返回码。当type为GRPC时，取值范围为0-99；当type为其他协议时，取值范围为200-599。例如：\&quot;0\&quot;或\&quot;200\&quot;。 - 列表：多个特定返回码，逗号分隔，最多支持5个返回码。例如:\&quot;200,202\&quot;或\&quot;0,1\&quot;。 - 区间：一个返回码区间，区间内\&quot;-\&quot;分隔，区间之间逗号分隔，最多支持5个区间。例如\&quot;200-204,300-399\&quot;或\&quot;0-5,10-12,20-30\&quot;。
+        :param expected_response: **参数解释**：健康检查预期响应状态码。支持HTTP,HTTPS,GRPC健康检查。只有reason_code为RESPONSE_MISMATCH时，支持非null取值。  **取值范围**： - 单值：单个返回码。当type为GRPC时，取值范围为0-99；当type为其他协议时，取值范围为200-599。例如：\&quot;0\&quot;或\&quot;200\&quot;。 - 列表：多个特定返回码，逗号分隔，最多支持5个返回码。例如:\&quot;200,202\&quot;或\&quot;0,1\&quot;。 - 区间：一个返回码区间，区间内\&quot;-\&quot;分隔，区间之间逗号分隔，最多支持5个区间。例如\&quot;200-204,300-399\&quot;或\&quot;0-5,10-12,20-30\&quot;。
         :type expected_response: str
-        :param healthcheck_response: 参数解释：健康检查探测实际响应状态码。 支持HTTP,HTTPS,GRPC健康检查。 只有reason_code为RESPONSE_MISMATCH时，支持非null取值。  取值范围： - 单个返回码。当type为GRPC时，取值范围为0-99；当type为其他协议时，取值范围为200-599。例如：\&quot;0\&quot;或\&quot;200\&quot;。
+        :param healthcheck_response: **参数解释**：健康检查探测实际响应状态码。支持HTTP,HTTPS,GRPC健康检查。只有reason_code为RESPONSE_MISMATCH时，支持非null取值。  **取值范围**： - 单个返回码。当type为GRPC时，取值范围为0-99；当type为其他协议时，取值范围为200-599。例如：\&quot;0\&quot;或\&quot;200\&quot;。
         :type healthcheck_response: str
         """
         
@@ -56,7 +56,7 @@ class MemberHealthCheckFailedReason:
     def reason_code(self):
         r"""Gets the reason_code of this MemberHealthCheckFailedReason.
 
-        参数解释：健康检查异常原因码。 取值范围： - CONNECT_TIMEOUT: 负载均衡健康检查时向后端服务器建立连接超时。 - CONNECT_REFUSED: 负载均衡健康检查时向后端服务器拒绝连接。 - CONNECT_FAILED: 负载均衡健康检查时向后端服务器建立连接失败。 - CONNECT_INTERRUPT: 负载均衡健康检查与后端服务器连接中断。 - SSL_HANDSHAKE_ERROR: 负载均衡健康检查时与后端服务器SSL握手失败。 - RECV_RESPONSE_FAILED: 负载均衡健康检查时从后端服务器接收响应失败。 - RECV_RESPONSE_TIMEOUT: 负载均衡健康检查时从后端服务器接收响应超时。 - SEND_REQUEST_FAILED: 负载均衡健康检查时向后端服务器发送请求失败。 - SEND_REQUEST_TIMEOUT: 负载均衡健康检查时向后端服务器发送请求超时。 - RESPONSE_FORMAT_ERROR: 负载均衡健康检查时从后端服务器接收响应格式错误。 - RESPONSE_MISMATCH: 负载均衡健康检查时从后端服务器接收的响应码与预期配置返回码不一致。
+        **参数解释**：健康检查异常原因码。  **取值范围**： - CONNECT_TIMEOUT: 负载均衡健康检查时向后端服务器建立连接超时。 - CONNECT_REFUSED: 负载均衡健康检查时向后端服务器拒绝连接。 - CONNECT_FAILED: 负载均衡健康检查时向后端服务器建立连接失败。 - CONNECT_INTERRUPT: 负载均衡健康检查与后端服务器连接中断。 - SSL_HANDSHAKE_ERROR: 负载均衡健康检查时与后端服务器SSL握手失败。 - RECV_RESPONSE_FAILED: 负载均衡健康检查时从后端服务器接收响应失败。 - RECV_RESPONSE_TIMEOUT: 负载均衡健康检查时从后端服务器接收响应超时。 - SEND_REQUEST_FAILED: 负载均衡健康检查时向后端服务器发送请求失败。 - SEND_REQUEST_TIMEOUT: 负载均衡健康检查时向后端服务器发送请求超时。 - RESPONSE_FORMAT_ERROR: 负载均衡健康检查时从后端服务器接收响应格式错误。 - RESPONSE_MISMATCH: 负载均衡健康检查时从后端服务器接收的响应码与预期配置返回码不一致。
 
         :return: The reason_code of this MemberHealthCheckFailedReason.
         :rtype: str
@@ -67,7 +67,7 @@ class MemberHealthCheckFailedReason:
     def reason_code(self, reason_code):
         r"""Sets the reason_code of this MemberHealthCheckFailedReason.
 
-        参数解释：健康检查异常原因码。 取值范围： - CONNECT_TIMEOUT: 负载均衡健康检查时向后端服务器建立连接超时。 - CONNECT_REFUSED: 负载均衡健康检查时向后端服务器拒绝连接。 - CONNECT_FAILED: 负载均衡健康检查时向后端服务器建立连接失败。 - CONNECT_INTERRUPT: 负载均衡健康检查与后端服务器连接中断。 - SSL_HANDSHAKE_ERROR: 负载均衡健康检查时与后端服务器SSL握手失败。 - RECV_RESPONSE_FAILED: 负载均衡健康检查时从后端服务器接收响应失败。 - RECV_RESPONSE_TIMEOUT: 负载均衡健康检查时从后端服务器接收响应超时。 - SEND_REQUEST_FAILED: 负载均衡健康检查时向后端服务器发送请求失败。 - SEND_REQUEST_TIMEOUT: 负载均衡健康检查时向后端服务器发送请求超时。 - RESPONSE_FORMAT_ERROR: 负载均衡健康检查时从后端服务器接收响应格式错误。 - RESPONSE_MISMATCH: 负载均衡健康检查时从后端服务器接收的响应码与预期配置返回码不一致。
+        **参数解释**：健康检查异常原因码。  **取值范围**： - CONNECT_TIMEOUT: 负载均衡健康检查时向后端服务器建立连接超时。 - CONNECT_REFUSED: 负载均衡健康检查时向后端服务器拒绝连接。 - CONNECT_FAILED: 负载均衡健康检查时向后端服务器建立连接失败。 - CONNECT_INTERRUPT: 负载均衡健康检查与后端服务器连接中断。 - SSL_HANDSHAKE_ERROR: 负载均衡健康检查时与后端服务器SSL握手失败。 - RECV_RESPONSE_FAILED: 负载均衡健康检查时从后端服务器接收响应失败。 - RECV_RESPONSE_TIMEOUT: 负载均衡健康检查时从后端服务器接收响应超时。 - SEND_REQUEST_FAILED: 负载均衡健康检查时向后端服务器发送请求失败。 - SEND_REQUEST_TIMEOUT: 负载均衡健康检查时向后端服务器发送请求超时。 - RESPONSE_FORMAT_ERROR: 负载均衡健康检查时从后端服务器接收响应格式错误。 - RESPONSE_MISMATCH: 负载均衡健康检查时从后端服务器接收的响应码与预期配置返回码不一致。
 
         :param reason_code: The reason_code of this MemberHealthCheckFailedReason.
         :type reason_code: str
@@ -78,7 +78,7 @@ class MemberHealthCheckFailedReason:
     def expected_response(self):
         r"""Gets the expected_response of this MemberHealthCheckFailedReason.
 
-        参数解释：健康检查预期响应状态码。 支持HTTP,HTTPS,GRPC健康检查。 只有reason_code为RESPONSE_MISMATCH时，支持非null取值。  取值范围： - 单值：单个返回码。当type为GRPC时，取值范围为0-99；当type为其他协议时，取值范围为200-599。例如：\"0\"或\"200\"。 - 列表：多个特定返回码，逗号分隔，最多支持5个返回码。例如:\"200,202\"或\"0,1\"。 - 区间：一个返回码区间，区间内\"-\"分隔，区间之间逗号分隔，最多支持5个区间。例如\"200-204,300-399\"或\"0-5,10-12,20-30\"。
+        **参数解释**：健康检查预期响应状态码。支持HTTP,HTTPS,GRPC健康检查。只有reason_code为RESPONSE_MISMATCH时，支持非null取值。  **取值范围**： - 单值：单个返回码。当type为GRPC时，取值范围为0-99；当type为其他协议时，取值范围为200-599。例如：\"0\"或\"200\"。 - 列表：多个特定返回码，逗号分隔，最多支持5个返回码。例如:\"200,202\"或\"0,1\"。 - 区间：一个返回码区间，区间内\"-\"分隔，区间之间逗号分隔，最多支持5个区间。例如\"200-204,300-399\"或\"0-5,10-12,20-30\"。
 
         :return: The expected_response of this MemberHealthCheckFailedReason.
         :rtype: str
@@ -89,7 +89,7 @@ class MemberHealthCheckFailedReason:
     def expected_response(self, expected_response):
         r"""Sets the expected_response of this MemberHealthCheckFailedReason.
 
-        参数解释：健康检查预期响应状态码。 支持HTTP,HTTPS,GRPC健康检查。 只有reason_code为RESPONSE_MISMATCH时，支持非null取值。  取值范围： - 单值：单个返回码。当type为GRPC时，取值范围为0-99；当type为其他协议时，取值范围为200-599。例如：\"0\"或\"200\"。 - 列表：多个特定返回码，逗号分隔，最多支持5个返回码。例如:\"200,202\"或\"0,1\"。 - 区间：一个返回码区间，区间内\"-\"分隔，区间之间逗号分隔，最多支持5个区间。例如\"200-204,300-399\"或\"0-5,10-12,20-30\"。
+        **参数解释**：健康检查预期响应状态码。支持HTTP,HTTPS,GRPC健康检查。只有reason_code为RESPONSE_MISMATCH时，支持非null取值。  **取值范围**： - 单值：单个返回码。当type为GRPC时，取值范围为0-99；当type为其他协议时，取值范围为200-599。例如：\"0\"或\"200\"。 - 列表：多个特定返回码，逗号分隔，最多支持5个返回码。例如:\"200,202\"或\"0,1\"。 - 区间：一个返回码区间，区间内\"-\"分隔，区间之间逗号分隔，最多支持5个区间。例如\"200-204,300-399\"或\"0-5,10-12,20-30\"。
 
         :param expected_response: The expected_response of this MemberHealthCheckFailedReason.
         :type expected_response: str
@@ -100,7 +100,7 @@ class MemberHealthCheckFailedReason:
     def healthcheck_response(self):
         r"""Gets the healthcheck_response of this MemberHealthCheckFailedReason.
 
-        参数解释：健康检查探测实际响应状态码。 支持HTTP,HTTPS,GRPC健康检查。 只有reason_code为RESPONSE_MISMATCH时，支持非null取值。  取值范围： - 单个返回码。当type为GRPC时，取值范围为0-99；当type为其他协议时，取值范围为200-599。例如：\"0\"或\"200\"。
+        **参数解释**：健康检查探测实际响应状态码。支持HTTP,HTTPS,GRPC健康检查。只有reason_code为RESPONSE_MISMATCH时，支持非null取值。  **取值范围**： - 单个返回码。当type为GRPC时，取值范围为0-99；当type为其他协议时，取值范围为200-599。例如：\"0\"或\"200\"。
 
         :return: The healthcheck_response of this MemberHealthCheckFailedReason.
         :rtype: str
@@ -111,7 +111,7 @@ class MemberHealthCheckFailedReason:
     def healthcheck_response(self, healthcheck_response):
         r"""Sets the healthcheck_response of this MemberHealthCheckFailedReason.
 
-        参数解释：健康检查探测实际响应状态码。 支持HTTP,HTTPS,GRPC健康检查。 只有reason_code为RESPONSE_MISMATCH时，支持非null取值。  取值范围： - 单个返回码。当type为GRPC时，取值范围为0-99；当type为其他协议时，取值范围为200-599。例如：\"0\"或\"200\"。
+        **参数解释**：健康检查探测实际响应状态码。支持HTTP,HTTPS,GRPC健康检查。只有reason_code为RESPONSE_MISMATCH时，支持非null取值。  **取值范围**： - 单个返回码。当type为GRPC时，取值范围为0-99；当type为其他协议时，取值范围为200-599。例如：\"0\"或\"200\"。
 
         :param healthcheck_response: The healthcheck_response of this MemberHealthCheckFailedReason.
         :type healthcheck_response: str

@@ -5,9 +5,16 @@ from __future__ import absolute_import
 from huaweicloudsdksts.v1.sts_client import StsClient
 from huaweicloudsdksts.v1.sts_async_client import StsAsyncClient
 
+from huaweicloudsdksts.v1.model.assume_agency_req_body import AssumeAgencyReqBody
+from huaweicloudsdksts.v1.model.assume_agency_request import AssumeAgencyRequest
+from huaweicloudsdksts.v1.model.assume_agency_response import AssumeAgencyResponse
+from huaweicloudsdksts.v1.model.assumed_agency_dto import AssumedAgencyDto
+from huaweicloudsdksts.v1.model.credentials_dto import CredentialsDto
 from huaweicloudsdksts.v1.model.decode_authorization_message_req import DecodeAuthorizationMessageReq
 from huaweicloudsdksts.v1.model.decode_authorization_message_request import DecodeAuthorizationMessageRequest
 from huaweicloudsdksts.v1.model.decode_authorization_message_response import DecodeAuthorizationMessageResponse
 from huaweicloudsdksts.v1.model.get_caller_identity_request import GetCallerIdentityRequest
 from huaweicloudsdksts.v1.model.get_caller_identity_response import GetCallerIdentityResponse
+from huaweicloudsdksts.v1.model.tag_dto import TagDto
+from huaweicloudsdksts.v1.model.tag_key_dto import TagKeyDto
 

@@ -39,17 +39,17 @@ class CorsConfig:
 
         The model defined in huaweicloud sdk
 
-        :param allow_origin: 参数解释：允许的访问来源列表。支持只配置一个元素*，或配置一个或多个值。  约束限制： - 单个值必须以http://或者https://开头，后边加一个正确的域名或一级泛域名。（例：http://*.test.abc.example.com） - 单个值可以不加端口，也可以指定端口，端口范围：1~65535。
+        :param allow_origin: **参数解释**：允许的访问来源列表。支持只配置一个元素*，或配置一个或多个值。  **约束限制**： - 单个值必须以http://或者https://开头，后边加一个正确的域名或一级泛域名。（例：http://*.test.abc.example.com） - 单个值可以不加端口，也可以指定端口，端口范围：1~65535。
         :type allow_origin: list[str]
-        :param allow_methods: 参数解释：选择跨域访问时允许的 HTTP 方法。
+        :param allow_methods: **参数解释**：选择跨域访问时允许的 HTTP 方法。  **取值范围**：不涉及
         :type allow_methods: list[str]
-        :param allow_headers: 参数解释：允许跨域的 Header 列表。
+        :param allow_headers: **参数解释**：允许跨域的 Header 列表。  **取值范围**：不涉及
         :type allow_headers: list[str]
-        :param expose_headers: 参数解释：允许暴露的Header列表。
+        :param expose_headers: **参数解释**：允许暴露的Header列表。  **取值范围**：不涉及
         :type expose_headers: list[str]
-        :param allow_credentials: 参数解释：是否允许携带凭证信息。  取值范围： - true：是。 - false：否。
+        :param allow_credentials: **参数解释**：是否允许携带凭证信息。  **取值范围**： - true：是。 - false：否。
         :type allow_credentials: bool
-        :param max_age: 参数解释：预检请求在浏览器的最大缓存时间，单位：秒。  取值范围：-1~172800。
+        :param max_age: **参数解释**：预检请求在浏览器的最大缓存时间，单位：秒。  **取值范围**：-1~172800
         :type max_age: int
         """
         
@@ -80,7 +80,7 @@ class CorsConfig:
     def allow_origin(self):
         r"""Gets the allow_origin of this CorsConfig.
 
-        参数解释：允许的访问来源列表。支持只配置一个元素*，或配置一个或多个值。  约束限制： - 单个值必须以http://或者https://开头，后边加一个正确的域名或一级泛域名。（例：http://*.test.abc.example.com） - 单个值可以不加端口，也可以指定端口，端口范围：1~65535。
+        **参数解释**：允许的访问来源列表。支持只配置一个元素*，或配置一个或多个值。  **约束限制**： - 单个值必须以http://或者https://开头，后边加一个正确的域名或一级泛域名。（例：http://*.test.abc.example.com） - 单个值可以不加端口，也可以指定端口，端口范围：1~65535。
 
         :return: The allow_origin of this CorsConfig.
         :rtype: list[str]
@@ -91,7 +91,7 @@ class CorsConfig:
     def allow_origin(self, allow_origin):
         r"""Sets the allow_origin of this CorsConfig.
 
-        参数解释：允许的访问来源列表。支持只配置一个元素*，或配置一个或多个值。  约束限制： - 单个值必须以http://或者https://开头，后边加一个正确的域名或一级泛域名。（例：http://*.test.abc.example.com） - 单个值可以不加端口，也可以指定端口，端口范围：1~65535。
+        **参数解释**：允许的访问来源列表。支持只配置一个元素*，或配置一个或多个值。  **约束限制**： - 单个值必须以http://或者https://开头，后边加一个正确的域名或一级泛域名。（例：http://*.test.abc.example.com） - 单个值可以不加端口，也可以指定端口，端口范围：1~65535。
 
         :param allow_origin: The allow_origin of this CorsConfig.
         :type allow_origin: list[str]
@@ -102,7 +102,7 @@ class CorsConfig:
     def allow_methods(self):
         r"""Gets the allow_methods of this CorsConfig.
 
-        参数解释：选择跨域访问时允许的 HTTP 方法。
+        **参数解释**：选择跨域访问时允许的 HTTP 方法。  **取值范围**：不涉及
 
         :return: The allow_methods of this CorsConfig.
         :rtype: list[str]
@@ -113,7 +113,7 @@ class CorsConfig:
     def allow_methods(self, allow_methods):
         r"""Sets the allow_methods of this CorsConfig.
 
-        参数解释：选择跨域访问时允许的 HTTP 方法。
+        **参数解释**：选择跨域访问时允许的 HTTP 方法。  **取值范围**：不涉及
 
         :param allow_methods: The allow_methods of this CorsConfig.
         :type allow_methods: list[str]
@@ -124,7 +124,7 @@ class CorsConfig:
     def allow_headers(self):
         r"""Gets the allow_headers of this CorsConfig.
 
-        参数解释：允许跨域的 Header 列表。
+        **参数解释**：允许跨域的 Header 列表。  **取值范围**：不涉及
 
         :return: The allow_headers of this CorsConfig.
         :rtype: list[str]
@@ -135,7 +135,7 @@ class CorsConfig:
     def allow_headers(self, allow_headers):
         r"""Sets the allow_headers of this CorsConfig.
 
-        参数解释：允许跨域的 Header 列表。
+        **参数解释**：允许跨域的 Header 列表。  **取值范围**：不涉及
 
         :param allow_headers: The allow_headers of this CorsConfig.
         :type allow_headers: list[str]
@@ -146,7 +146,7 @@ class CorsConfig:
     def expose_headers(self):
         r"""Gets the expose_headers of this CorsConfig.
 
-        参数解释：允许暴露的Header列表。
+        **参数解释**：允许暴露的Header列表。  **取值范围**：不涉及
 
         :return: The expose_headers of this CorsConfig.
         :rtype: list[str]
@@ -157,7 +157,7 @@ class CorsConfig:
     def expose_headers(self, expose_headers):
         r"""Sets the expose_headers of this CorsConfig.
 
-        参数解释：允许暴露的Header列表。
+        **参数解释**：允许暴露的Header列表。  **取值范围**：不涉及
 
         :param expose_headers: The expose_headers of this CorsConfig.
         :type expose_headers: list[str]
@@ -168,7 +168,7 @@ class CorsConfig:
     def allow_credentials(self):
         r"""Gets the allow_credentials of this CorsConfig.
 
-        参数解释：是否允许携带凭证信息。  取值范围： - true：是。 - false：否。
+        **参数解释**：是否允许携带凭证信息。  **取值范围**： - true：是。 - false：否。
 
         :return: The allow_credentials of this CorsConfig.
         :rtype: bool
@@ -179,7 +179,7 @@ class CorsConfig:
     def allow_credentials(self, allow_credentials):
         r"""Sets the allow_credentials of this CorsConfig.
 
-        参数解释：是否允许携带凭证信息。  取值范围： - true：是。 - false：否。
+        **参数解释**：是否允许携带凭证信息。  **取值范围**： - true：是。 - false：否。
 
         :param allow_credentials: The allow_credentials of this CorsConfig.
         :type allow_credentials: bool
@@ -190,7 +190,7 @@ class CorsConfig:
     def max_age(self):
         r"""Gets the max_age of this CorsConfig.
 
-        参数解释：预检请求在浏览器的最大缓存时间，单位：秒。  取值范围：-1~172800。
+        **参数解释**：预检请求在浏览器的最大缓存时间，单位：秒。  **取值范围**：-1~172800
 
         :return: The max_age of this CorsConfig.
         :rtype: int
@@ -201,7 +201,7 @@ class CorsConfig:
     def max_age(self, max_age):
         r"""Sets the max_age of this CorsConfig.
 
-        参数解释：预检请求在浏览器的最大缓存时间，单位：秒。  取值范围：-1~172800。
+        **参数解释**：预检请求在浏览器的最大缓存时间，单位：秒。  **取值范围**：-1~172800
 
         :param max_age: The max_age of this CorsConfig.
         :type max_age: int

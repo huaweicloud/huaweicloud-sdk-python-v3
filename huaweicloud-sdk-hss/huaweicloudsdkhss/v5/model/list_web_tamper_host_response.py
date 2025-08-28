@@ -34,7 +34,7 @@ class ListWebTamperHostResponse(SdkResponse):
 
         :param total_num: **参数解释**: 总数 **取值范围**: 最小值0，最大值2147483647 
         :type total_num: int
-        :param data_list: data list
+        :param data_list: 可开启网页防篡改的服务器列表
         :type data_list: list[:class:`huaweicloudsdkhss.v5.WebTamperHostResponseInfo`]
         """
         
@@ -75,7 +75,7 @@ class ListWebTamperHostResponse(SdkResponse):
     def data_list(self):
         r"""Gets the data_list of this ListWebTamperHostResponse.
 
-        data list
+        可开启网页防篡改的服务器列表
 
         :return: The data_list of this ListWebTamperHostResponse.
         :rtype: list[:class:`huaweicloudsdkhss.v5.WebTamperHostResponseInfo`]
@@ -86,7 +86,7 @@ class ListWebTamperHostResponse(SdkResponse):
     def data_list(self, data_list):
         r"""Sets the data_list of this ListWebTamperHostResponse.
 
-        data list
+        可开启网页防篡改的服务器列表
 
         :param data_list: The data_list of this ListWebTamperHostResponse.
         :type data_list: list[:class:`huaweicloudsdkhss.v5.WebTamperHostResponseInfo`]

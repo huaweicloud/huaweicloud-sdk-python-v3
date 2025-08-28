@@ -20,6 +20,7 @@ class UpdateVirtualInterface:
         'name': 'str',
         'description': 'str',
         'bandwidth': 'int',
+        'priority': 'str',
         'remote_ep_group': 'list[str]',
         'service_ep_group': 'list[str]',
         'enable_bfd': 'bool',
@@ -31,6 +32,7 @@ class UpdateVirtualInterface:
         'name': 'name',
         'description': 'description',
         'bandwidth': 'bandwidth',
+        'priority': 'priority',
         'remote_ep_group': 'remote_ep_group',
         'service_ep_group': 'service_ep_group',
         'enable_bfd': 'enable_bfd',
@@ -38,7 +40,7 @@ class UpdateVirtualInterface:
         'status': 'status'
     }
 
-    def __init__(self, name=None, description=None, bandwidth=None, remote_ep_group=None, service_ep_group=None, enable_bfd=None, enable_nqa=None, status=None):
+    def __init__(self, name=None, description=None, bandwidth=None, priority=None, remote_ep_group=None, service_ep_group=None, enable_bfd=None, enable_nqa=None, status=None):
         r"""UpdateVirtualInterface
 
         The model defined in huaweicloud sdk
@@ -49,6 +51,8 @@ class UpdateVirtualInterface:
         :type description: str
         :param bandwidth: 虚拟接口带宽配置
         :type bandwidth: int
+        :param priority: 虚拟接口的优先级，支持两种优先级状态normal和low。 接口优先级相同时表示负载关系，接口优先级不同时表示主备关系，出云流量优先转到优先级更高的normal接口。 目前仅BGP模式接口支持。
+        :type priority: str
         :param remote_ep_group: 远端子网列表，记录租户侧的cidrs
         :type remote_ep_group: list[str]
         :param service_ep_group: 用于公网专线,用户访问公网服务地址列表。[（预留字段，暂不支持）](tag:dt)
@@ -66,6 +70,7 @@ class UpdateVirtualInterface:
         self._name = None
         self._description = None
         self._bandwidth = None
+        self._priority = None
         self._remote_ep_group = None
         self._service_ep_group = None
         self._enable_bfd = None
@@ -79,6 +84,8 @@ class UpdateVirtualInterface:
             self.description = description
         if bandwidth is not None:
             self.bandwidth = bandwidth
+        if priority is not None:
+            self.priority = priority
         if remote_ep_group is not None:
             self.remote_ep_group = remote_ep_group
         if service_ep_group is not None:
@@ -155,6 +162,28 @@ class UpdateVirtualInterface:
         :type bandwidth: int
         """
         self._bandwidth = bandwidth
+
+    @property
+    def priority(self):
+        r"""Gets the priority of this UpdateVirtualInterface.
+
+        虚拟接口的优先级，支持两种优先级状态normal和low。 接口优先级相同时表示负载关系，接口优先级不同时表示主备关系，出云流量优先转到优先级更高的normal接口。 目前仅BGP模式接口支持。
+
+        :return: The priority of this UpdateVirtualInterface.
+        :rtype: str
+        """
+        return self._priority
+
+    @priority.setter
+    def priority(self, priority):
+        r"""Sets the priority of this UpdateVirtualInterface.
+
+        虚拟接口的优先级，支持两种优先级状态normal和low。 接口优先级相同时表示负载关系，接口优先级不同时表示主备关系，出云流量优先转到优先级更高的normal接口。 目前仅BGP模式接口支持。
+
+        :param priority: The priority of this UpdateVirtualInterface.
+        :type priority: str
+        """
+        self._priority = priority
 
     @property
     def remote_ep_group(self):

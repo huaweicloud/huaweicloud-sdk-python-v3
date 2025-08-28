@@ -28,6 +28,10 @@ class CphRegion:
                         "https://cph.la-south-2.myhuaweicloud.com")
     LA_NORTH_2 = Region("la-north-2",
                         "https://cph.la-north-2.myhuaweicloud.com")
+    AF_NORTH_1 = Region("af-north-1",
+                        "https://cph.af-north-1.myhuaweicloud.com")
+    CN_EAST_4 = Region("cn-east-4",
+                        "https://cph.cn-east-4.myhuaweicloud.com")
 
     static_fields = {
         "ru-northwest-2": RU_NORTHWEST_2,
@@ -41,6 +45,8 @@ class CphRegion:
         "cn-north-9": CN_NORTH_9,
         "la-south-2": LA_SOUTH_2,
         "la-north-2": LA_NORTH_2,
+        "af-north-1": AF_NORTH_1,
+        "cn-east-4": CN_EAST_4,
     }
 
     @classmethod

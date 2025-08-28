@@ -34,11 +34,11 @@ class CloneLoadbalancerResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param loadbalancer_list: 新实例相关信息
+        :param loadbalancer_list: 
         :type loadbalancer_list: list[:class:`huaweicloudsdkelb.v3.CloneLoadbalancerResponseBodyLoadbalancerList`]
-        :param request_id: 请求id
+        :param request_id: **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
         :type request_id: str
-        :param job_id: 实例复制任务id
+        :param job_id: **参数解释**：实例复制任务ID。  **取值范围**：不涉及
         :type job_id: str
         """
         
@@ -60,8 +60,6 @@ class CloneLoadbalancerResponse(SdkResponse):
     def loadbalancer_list(self):
         r"""Gets the loadbalancer_list of this CloneLoadbalancerResponse.
 
-        新实例相关信息
-
         :return: The loadbalancer_list of this CloneLoadbalancerResponse.
         :rtype: list[:class:`huaweicloudsdkelb.v3.CloneLoadbalancerResponseBodyLoadbalancerList`]
         """
@@ -70,8 +68,6 @@ class CloneLoadbalancerResponse(SdkResponse):
     @loadbalancer_list.setter
     def loadbalancer_list(self, loadbalancer_list):
         r"""Sets the loadbalancer_list of this CloneLoadbalancerResponse.
-
-        新实例相关信息
 
         :param loadbalancer_list: The loadbalancer_list of this CloneLoadbalancerResponse.
         :type loadbalancer_list: list[:class:`huaweicloudsdkelb.v3.CloneLoadbalancerResponseBodyLoadbalancerList`]
@@ -82,7 +78,7 @@ class CloneLoadbalancerResponse(SdkResponse):
     def request_id(self):
         r"""Gets the request_id of this CloneLoadbalancerResponse.
 
-        请求id
+        **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
 
         :return: The request_id of this CloneLoadbalancerResponse.
         :rtype: str
@@ -93,7 +89,7 @@ class CloneLoadbalancerResponse(SdkResponse):
     def request_id(self, request_id):
         r"""Sets the request_id of this CloneLoadbalancerResponse.
 
-        请求id
+        **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
 
         :param request_id: The request_id of this CloneLoadbalancerResponse.
         :type request_id: str
@@ -104,7 +100,7 @@ class CloneLoadbalancerResponse(SdkResponse):
     def job_id(self):
         r"""Gets the job_id of this CloneLoadbalancerResponse.
 
-        实例复制任务id
+        **参数解释**：实例复制任务ID。  **取值范围**：不涉及
 
         :return: The job_id of this CloneLoadbalancerResponse.
         :rtype: str
@@ -115,7 +111,7 @@ class CloneLoadbalancerResponse(SdkResponse):
     def job_id(self, job_id):
         r"""Sets the job_id of this CloneLoadbalancerResponse.
 
-        实例复制任务id
+        **参数解释**：实例复制任务ID。  **取值范围**：不涉及
 
         :param job_id: The job_id of this CloneLoadbalancerResponse.
         :type job_id: str

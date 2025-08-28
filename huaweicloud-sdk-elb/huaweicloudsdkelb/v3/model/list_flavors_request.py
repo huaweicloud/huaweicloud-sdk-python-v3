@@ -49,27 +49,27 @@ class ListFlavorsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param marker: 参数解释：上一页最后一条记录的ID。  约束限制： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
+        :param marker: **参数解释**：上一页最后一条记录的ID。  **约束限制**： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。  **取值范围**：不涉及  **默认取值**：不涉及
         :type marker: str
-        :param limit: 参数解释：每页返回的个数。  取值范围：0-2000  默认取值：2000
+        :param limit: **参数解释**：每页返回的个数。  **约束限制**：不涉及  **取值范围**：0-2000  **默认取值**：2000
         :type limit: int
-        :param page_reverse: 参数解释：是否反向查询。  约束限制： - 必须与limit一起使用。 - 当page_reverse&#x3D;true时，若要查询上一页，marker取值为当前页返回值的previous_marker。  取值范围： - true：查询上一页。 - false：查询下一页，默认。
+        :param page_reverse: **参数解释**：是否反向查询。  **约束限制**： - 必须与limit一起使用。 - 当page_reverse&#x3D;true时，若要查询上一页，marker取值为当前页返回值的previous_marker。  **取值范围**： - true：查询上一页。 - false：查询下一页。  **默认取值**：false
         :type page_reverse: bool
-        :param id: 参数解释：规格ID。  支持多值查询，查询条件格式：*id&#x3D;xxx&amp;id&#x3D;xxx*。
+        :param id: **参数解释**：规格ID。 支持多值查询，查询条件格式：*id&#x3D;xxx&amp;id&#x3D;xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type id: list[str]
-        :param name: 参数解释：规格名称。  支持多值查询，查询条件格式：*name&#x3D;xxx&amp;name&#x3D;xxx*。
+        :param name: **参数解释**：规格名称。 支持多值查询，查询条件格式：*name&#x3D;xxx&amp;name&#x3D;xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type name: list[str]
-        :param type: 参数解释：规格类别。  取值范围： - L4和L7 表示四层网络型和七层应用型flavor。 [- gateway 表示网关型LB的flavor，目前只支持弹性计费类型。当前仅支持欧洲局点。](tag:hws_eu) - L4_elastic和L7_elastic 表示弹性扩缩容实例的下限规格。 - L4_elastic_max、L7_elastic_max[和gateway_elastic_max](tag:hws_eu) 表示弹性扩缩容实例的上限规格。  支持多值查询，查询条件格式：*type&#x3D;xxx&amp;type&#x3D;xxx*。
+        :param type: **参数解释**：规格类别。 支持多值查询，查询条件格式：*type&#x3D;xxx&amp;type&#x3D;xxx*。  **约束限制**：不涉及  **取值范围**： - L4和L7 表示四层网络型和七层应用型flavor。 [- gateway 表示网关型LB的flavor，目前只支持弹性计费类型。当前仅支持欧洲局点。](tag:hws_eu) - L4_elastic和L7_elastic 表示弹性扩缩容实例的下限规格。 - L4_elastic_max、L7_elastic_max[和gateway_elastic_max](tag:hws_eu) 表示弹性扩缩容实例的上限规格。  **默认取值**：不涉及
         :type type: list[str]
-        :param shared: 参数解释：是否查询公共规格。  取值范围：true表示公共规格，所有租户可见。false表示私有规格，为当前租户所有。
+        :param shared: **参数解释**：是否查询公共规格。  **约束限制**：不涉及  **取值范围**： - true表示查询公共规格，所有租户可见的规格。 - false表示查询私有规格，当前仅租户可见的规格。  **默认取值**：不涉及
         :type shared: bool
-        :param public_border_group: 站点pbg。  支持多值查询，查询条件格式：*public_border_group&#x3D;xxx&amp;public_border_group&#x3D;xxx*。
+        :param public_border_group: **参数解释**：公网边界组。 支持多值查询，查询条件格式：*public_border_group&#x3D;xxx&amp;public_border_group&#x3D;xxx*。  **约束限制**：不涉及  **取值范围**： - center：表示中心站点的公网边界组 - 边缘站点名称：表示边缘站点的公网边界组  **默认取值**：不涉及
         :type public_border_group: list[str]
-        :param category: 站点category。  支持多值查询，查询条件格式：*category&#x3D;xxx&amp;category&#x3D;xxx*。
+        :param category: **参数解释**：可用区子类型编码。该字段主要用于区分在边缘场景下，边缘AZ的类型。 支持多值查询，查询条件格式：*category&#x3D;xxx&amp;category&#x3D;xxx*。  **约束限制**：不涉及  **取值范围**：0表示center，21表示homezone，41表示IES。  **默认取值**：不涉及
         :type category: list[int]
-        :param list_all: 设置list_all&#x3D;true时，返回当前租户所有的弹性上限规格（l4_elastic_max、l7_elastic_max）。否则只返回该租户弹性上限规格中最大的规格（l4类型优先比较cps指标，然后是带宽；l7类型优先比较https cps指标然后是qps指标）。
+        :param list_all: **参数解释**：是否查询当前租户所有的弹性上限规格。  **约束限制**：不涉及  **取值范围**： - true：查询当前租户所有的弹性上限规格（l4_elastic_max、l7_elastic_max）。 - false：查询租户弹性上限规格中最大的规格（l4类型优先比较cps指标，然后是带宽；l7类型优先比较https cps指标然后是qps指标）。  **默认取值**：不涉及
         :type list_all: bool
-        :param flavor_sold_out: 参数解释： [是否售罄。](tag:hws) [是否无法购买该规格的LB。](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,fcs,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,srg,ct)  取值范围： - true：[已售罄，将](tag:hws)无法购买该规格的LB。 - false：[未售罄，](tag:hws)可购买该规格的LB。
+        :param flavor_sold_out: **参数解释**：[是否售罄。](tag:hws)[是否无法购买该规格的LB。](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,fcs,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,srg,ct)  **约束限制**：不涉及  **取值范围**： - true：[已售罄，将](tag:hws)无法购买该规格的LB。 - false：[未售罄，](tag:hws)可购买该规格的LB。  **默认取值**：不涉及
         :type flavor_sold_out: bool
         """
         
@@ -115,7 +115,7 @@ class ListFlavorsRequest:
     def marker(self):
         r"""Gets the marker of this ListFlavorsRequest.
 
-        参数解释：上一页最后一条记录的ID。  约束限制： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
+        **参数解释**：上一页最后一条记录的ID。  **约束限制**： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The marker of this ListFlavorsRequest.
         :rtype: str
@@ -126,7 +126,7 @@ class ListFlavorsRequest:
     def marker(self, marker):
         r"""Sets the marker of this ListFlavorsRequest.
 
-        参数解释：上一页最后一条记录的ID。  约束限制： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
+        **参数解释**：上一页最后一条记录的ID。  **约束限制**： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param marker: The marker of this ListFlavorsRequest.
         :type marker: str
@@ -137,7 +137,7 @@ class ListFlavorsRequest:
     def limit(self):
         r"""Gets the limit of this ListFlavorsRequest.
 
-        参数解释：每页返回的个数。  取值范围：0-2000  默认取值：2000
+        **参数解释**：每页返回的个数。  **约束限制**：不涉及  **取值范围**：0-2000  **默认取值**：2000
 
         :return: The limit of this ListFlavorsRequest.
         :rtype: int
@@ -148,7 +148,7 @@ class ListFlavorsRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListFlavorsRequest.
 
-        参数解释：每页返回的个数。  取值范围：0-2000  默认取值：2000
+        **参数解释**：每页返回的个数。  **约束限制**：不涉及  **取值范围**：0-2000  **默认取值**：2000
 
         :param limit: The limit of this ListFlavorsRequest.
         :type limit: int
@@ -159,7 +159,7 @@ class ListFlavorsRequest:
     def page_reverse(self):
         r"""Gets the page_reverse of this ListFlavorsRequest.
 
-        参数解释：是否反向查询。  约束限制： - 必须与limit一起使用。 - 当page_reverse=true时，若要查询上一页，marker取值为当前页返回值的previous_marker。  取值范围： - true：查询上一页。 - false：查询下一页，默认。
+        **参数解释**：是否反向查询。  **约束限制**： - 必须与limit一起使用。 - 当page_reverse=true时，若要查询上一页，marker取值为当前页返回值的previous_marker。  **取值范围**： - true：查询上一页。 - false：查询下一页。  **默认取值**：false
 
         :return: The page_reverse of this ListFlavorsRequest.
         :rtype: bool
@@ -170,7 +170,7 @@ class ListFlavorsRequest:
     def page_reverse(self, page_reverse):
         r"""Sets the page_reverse of this ListFlavorsRequest.
 
-        参数解释：是否反向查询。  约束限制： - 必须与limit一起使用。 - 当page_reverse=true时，若要查询上一页，marker取值为当前页返回值的previous_marker。  取值范围： - true：查询上一页。 - false：查询下一页，默认。
+        **参数解释**：是否反向查询。  **约束限制**： - 必须与limit一起使用。 - 当page_reverse=true时，若要查询上一页，marker取值为当前页返回值的previous_marker。  **取值范围**： - true：查询上一页。 - false：查询下一页。  **默认取值**：false
 
         :param page_reverse: The page_reverse of this ListFlavorsRequest.
         :type page_reverse: bool
@@ -181,7 +181,7 @@ class ListFlavorsRequest:
     def id(self):
         r"""Gets the id of this ListFlavorsRequest.
 
-        参数解释：规格ID。  支持多值查询，查询条件格式：*id=xxx&id=xxx*。
+        **参数解释**：规格ID。 支持多值查询，查询条件格式：*id=xxx&id=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The id of this ListFlavorsRequest.
         :rtype: list[str]
@@ -192,7 +192,7 @@ class ListFlavorsRequest:
     def id(self, id):
         r"""Sets the id of this ListFlavorsRequest.
 
-        参数解释：规格ID。  支持多值查询，查询条件格式：*id=xxx&id=xxx*。
+        **参数解释**：规格ID。 支持多值查询，查询条件格式：*id=xxx&id=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param id: The id of this ListFlavorsRequest.
         :type id: list[str]
@@ -203,7 +203,7 @@ class ListFlavorsRequest:
     def name(self):
         r"""Gets the name of this ListFlavorsRequest.
 
-        参数解释：规格名称。  支持多值查询，查询条件格式：*name=xxx&name=xxx*。
+        **参数解释**：规格名称。 支持多值查询，查询条件格式：*name=xxx&name=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The name of this ListFlavorsRequest.
         :rtype: list[str]
@@ -214,7 +214,7 @@ class ListFlavorsRequest:
     def name(self, name):
         r"""Sets the name of this ListFlavorsRequest.
 
-        参数解释：规格名称。  支持多值查询，查询条件格式：*name=xxx&name=xxx*。
+        **参数解释**：规格名称。 支持多值查询，查询条件格式：*name=xxx&name=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param name: The name of this ListFlavorsRequest.
         :type name: list[str]
@@ -225,7 +225,7 @@ class ListFlavorsRequest:
     def type(self):
         r"""Gets the type of this ListFlavorsRequest.
 
-        参数解释：规格类别。  取值范围： - L4和L7 表示四层网络型和七层应用型flavor。 [- gateway 表示网关型LB的flavor，目前只支持弹性计费类型。当前仅支持欧洲局点。](tag:hws_eu) - L4_elastic和L7_elastic 表示弹性扩缩容实例的下限规格。 - L4_elastic_max、L7_elastic_max[和gateway_elastic_max](tag:hws_eu) 表示弹性扩缩容实例的上限规格。  支持多值查询，查询条件格式：*type=xxx&type=xxx*。
+        **参数解释**：规格类别。 支持多值查询，查询条件格式：*type=xxx&type=xxx*。  **约束限制**：不涉及  **取值范围**： - L4和L7 表示四层网络型和七层应用型flavor。 [- gateway 表示网关型LB的flavor，目前只支持弹性计费类型。当前仅支持欧洲局点。](tag:hws_eu) - L4_elastic和L7_elastic 表示弹性扩缩容实例的下限规格。 - L4_elastic_max、L7_elastic_max[和gateway_elastic_max](tag:hws_eu) 表示弹性扩缩容实例的上限规格。  **默认取值**：不涉及
 
         :return: The type of this ListFlavorsRequest.
         :rtype: list[str]
@@ -236,7 +236,7 @@ class ListFlavorsRequest:
     def type(self, type):
         r"""Sets the type of this ListFlavorsRequest.
 
-        参数解释：规格类别。  取值范围： - L4和L7 表示四层网络型和七层应用型flavor。 [- gateway 表示网关型LB的flavor，目前只支持弹性计费类型。当前仅支持欧洲局点。](tag:hws_eu) - L4_elastic和L7_elastic 表示弹性扩缩容实例的下限规格。 - L4_elastic_max、L7_elastic_max[和gateway_elastic_max](tag:hws_eu) 表示弹性扩缩容实例的上限规格。  支持多值查询，查询条件格式：*type=xxx&type=xxx*。
+        **参数解释**：规格类别。 支持多值查询，查询条件格式：*type=xxx&type=xxx*。  **约束限制**：不涉及  **取值范围**： - L4和L7 表示四层网络型和七层应用型flavor。 [- gateway 表示网关型LB的flavor，目前只支持弹性计费类型。当前仅支持欧洲局点。](tag:hws_eu) - L4_elastic和L7_elastic 表示弹性扩缩容实例的下限规格。 - L4_elastic_max、L7_elastic_max[和gateway_elastic_max](tag:hws_eu) 表示弹性扩缩容实例的上限规格。  **默认取值**：不涉及
 
         :param type: The type of this ListFlavorsRequest.
         :type type: list[str]
@@ -247,7 +247,7 @@ class ListFlavorsRequest:
     def shared(self):
         r"""Gets the shared of this ListFlavorsRequest.
 
-        参数解释：是否查询公共规格。  取值范围：true表示公共规格，所有租户可见。false表示私有规格，为当前租户所有。
+        **参数解释**：是否查询公共规格。  **约束限制**：不涉及  **取值范围**： - true表示查询公共规格，所有租户可见的规格。 - false表示查询私有规格，当前仅租户可见的规格。  **默认取值**：不涉及
 
         :return: The shared of this ListFlavorsRequest.
         :rtype: bool
@@ -258,7 +258,7 @@ class ListFlavorsRequest:
     def shared(self, shared):
         r"""Sets the shared of this ListFlavorsRequest.
 
-        参数解释：是否查询公共规格。  取值范围：true表示公共规格，所有租户可见。false表示私有规格，为当前租户所有。
+        **参数解释**：是否查询公共规格。  **约束限制**：不涉及  **取值范围**： - true表示查询公共规格，所有租户可见的规格。 - false表示查询私有规格，当前仅租户可见的规格。  **默认取值**：不涉及
 
         :param shared: The shared of this ListFlavorsRequest.
         :type shared: bool
@@ -269,7 +269,7 @@ class ListFlavorsRequest:
     def public_border_group(self):
         r"""Gets the public_border_group of this ListFlavorsRequest.
 
-        站点pbg。  支持多值查询，查询条件格式：*public_border_group=xxx&public_border_group=xxx*。
+        **参数解释**：公网边界组。 支持多值查询，查询条件格式：*public_border_group=xxx&public_border_group=xxx*。  **约束限制**：不涉及  **取值范围**： - center：表示中心站点的公网边界组 - 边缘站点名称：表示边缘站点的公网边界组  **默认取值**：不涉及
 
         :return: The public_border_group of this ListFlavorsRequest.
         :rtype: list[str]
@@ -280,7 +280,7 @@ class ListFlavorsRequest:
     def public_border_group(self, public_border_group):
         r"""Sets the public_border_group of this ListFlavorsRequest.
 
-        站点pbg。  支持多值查询，查询条件格式：*public_border_group=xxx&public_border_group=xxx*。
+        **参数解释**：公网边界组。 支持多值查询，查询条件格式：*public_border_group=xxx&public_border_group=xxx*。  **约束限制**：不涉及  **取值范围**： - center：表示中心站点的公网边界组 - 边缘站点名称：表示边缘站点的公网边界组  **默认取值**：不涉及
 
         :param public_border_group: The public_border_group of this ListFlavorsRequest.
         :type public_border_group: list[str]
@@ -291,7 +291,7 @@ class ListFlavorsRequest:
     def category(self):
         r"""Gets the category of this ListFlavorsRequest.
 
-        站点category。  支持多值查询，查询条件格式：*category=xxx&category=xxx*。
+        **参数解释**：可用区子类型编码。该字段主要用于区分在边缘场景下，边缘AZ的类型。 支持多值查询，查询条件格式：*category=xxx&category=xxx*。  **约束限制**：不涉及  **取值范围**：0表示center，21表示homezone，41表示IES。  **默认取值**：不涉及
 
         :return: The category of this ListFlavorsRequest.
         :rtype: list[int]
@@ -302,7 +302,7 @@ class ListFlavorsRequest:
     def category(self, category):
         r"""Sets the category of this ListFlavorsRequest.
 
-        站点category。  支持多值查询，查询条件格式：*category=xxx&category=xxx*。
+        **参数解释**：可用区子类型编码。该字段主要用于区分在边缘场景下，边缘AZ的类型。 支持多值查询，查询条件格式：*category=xxx&category=xxx*。  **约束限制**：不涉及  **取值范围**：0表示center，21表示homezone，41表示IES。  **默认取值**：不涉及
 
         :param category: The category of this ListFlavorsRequest.
         :type category: list[int]
@@ -313,7 +313,7 @@ class ListFlavorsRequest:
     def list_all(self):
         r"""Gets the list_all of this ListFlavorsRequest.
 
-        设置list_all=true时，返回当前租户所有的弹性上限规格（l4_elastic_max、l7_elastic_max）。否则只返回该租户弹性上限规格中最大的规格（l4类型优先比较cps指标，然后是带宽；l7类型优先比较https cps指标然后是qps指标）。
+        **参数解释**：是否查询当前租户所有的弹性上限规格。  **约束限制**：不涉及  **取值范围**： - true：查询当前租户所有的弹性上限规格（l4_elastic_max、l7_elastic_max）。 - false：查询租户弹性上限规格中最大的规格（l4类型优先比较cps指标，然后是带宽；l7类型优先比较https cps指标然后是qps指标）。  **默认取值**：不涉及
 
         :return: The list_all of this ListFlavorsRequest.
         :rtype: bool
@@ -324,7 +324,7 @@ class ListFlavorsRequest:
     def list_all(self, list_all):
         r"""Sets the list_all of this ListFlavorsRequest.
 
-        设置list_all=true时，返回当前租户所有的弹性上限规格（l4_elastic_max、l7_elastic_max）。否则只返回该租户弹性上限规格中最大的规格（l4类型优先比较cps指标，然后是带宽；l7类型优先比较https cps指标然后是qps指标）。
+        **参数解释**：是否查询当前租户所有的弹性上限规格。  **约束限制**：不涉及  **取值范围**： - true：查询当前租户所有的弹性上限规格（l4_elastic_max、l7_elastic_max）。 - false：查询租户弹性上限规格中最大的规格（l4类型优先比较cps指标，然后是带宽；l7类型优先比较https cps指标然后是qps指标）。  **默认取值**：不涉及
 
         :param list_all: The list_all of this ListFlavorsRequest.
         :type list_all: bool
@@ -335,7 +335,7 @@ class ListFlavorsRequest:
     def flavor_sold_out(self):
         r"""Gets the flavor_sold_out of this ListFlavorsRequest.
 
-        参数解释： [是否售罄。](tag:hws) [是否无法购买该规格的LB。](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,fcs,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,srg,ct)  取值范围： - true：[已售罄，将](tag:hws)无法购买该规格的LB。 - false：[未售罄，](tag:hws)可购买该规格的LB。
+        **参数解释**：[是否售罄。](tag:hws)[是否无法购买该规格的LB。](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,fcs,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,srg,ct)  **约束限制**：不涉及  **取值范围**： - true：[已售罄，将](tag:hws)无法购买该规格的LB。 - false：[未售罄，](tag:hws)可购买该规格的LB。  **默认取值**：不涉及
 
         :return: The flavor_sold_out of this ListFlavorsRequest.
         :rtype: bool
@@ -346,7 +346,7 @@ class ListFlavorsRequest:
     def flavor_sold_out(self, flavor_sold_out):
         r"""Sets the flavor_sold_out of this ListFlavorsRequest.
 
-        参数解释： [是否售罄。](tag:hws) [是否无法购买该规格的LB。](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,fcs,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,srg,ct)  取值范围： - true：[已售罄，将](tag:hws)无法购买该规格的LB。 - false：[未售罄，](tag:hws)可购买该规格的LB。
+        **参数解释**：[是否售罄。](tag:hws)[是否无法购买该规格的LB。](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,fcs,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,srg,ct)  **约束限制**：不涉及  **取值范围**： - true：[已售罄，将](tag:hws)无法购买该规格的LB。 - false：[未售罄，](tag:hws)可购买该规格的LB。  **默认取值**：不涉及
 
         :param flavor_sold_out: The flavor_sold_out of this ListFlavorsRequest.
         :type flavor_sold_out: bool

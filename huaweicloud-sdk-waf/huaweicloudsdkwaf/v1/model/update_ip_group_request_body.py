@@ -48,7 +48,8 @@ class UpdateIpGroupRequestBody:
         self._description = None
         self.discriminator = None
 
-        self.name = name
+        if name is not None:
+            self.name = name
         self.ips = ips
         if description is not None:
             self.description = description

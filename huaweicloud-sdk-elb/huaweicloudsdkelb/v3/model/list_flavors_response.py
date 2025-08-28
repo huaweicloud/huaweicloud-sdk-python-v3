@@ -34,11 +34,11 @@ class ListFlavorsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param flavors: 参数解释：规格列表。
+        :param flavors: **参数解释**：规格列表。
         :type flavors: list[:class:`huaweicloudsdkelb.v3.Flavor`]
         :param page_info: 
         :type page_info: :class:`huaweicloudsdkelb.v3.PageInfo`
-        :param request_id: 参数解释：请求ID。  注：自动生成 。
+        :param request_id: **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
         :type request_id: str
         """
         
@@ -60,7 +60,7 @@ class ListFlavorsResponse(SdkResponse):
     def flavors(self):
         r"""Gets the flavors of this ListFlavorsResponse.
 
-        参数解释：规格列表。
+        **参数解释**：规格列表。
 
         :return: The flavors of this ListFlavorsResponse.
         :rtype: list[:class:`huaweicloudsdkelb.v3.Flavor`]
@@ -71,7 +71,7 @@ class ListFlavorsResponse(SdkResponse):
     def flavors(self, flavors):
         r"""Sets the flavors of this ListFlavorsResponse.
 
-        参数解释：规格列表。
+        **参数解释**：规格列表。
 
         :param flavors: The flavors of this ListFlavorsResponse.
         :type flavors: list[:class:`huaweicloudsdkelb.v3.Flavor`]
@@ -100,7 +100,7 @@ class ListFlavorsResponse(SdkResponse):
     def request_id(self):
         r"""Gets the request_id of this ListFlavorsResponse.
 
-        参数解释：请求ID。  注：自动生成 。
+        **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
 
         :return: The request_id of this ListFlavorsResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class ListFlavorsResponse(SdkResponse):
     def request_id(self, request_id):
         r"""Sets the request_id of this ListFlavorsResponse.
 
-        参数解释：请求ID。  注：自动生成 。
+        **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
 
         :param request_id: The request_id of this ListFlavorsResponse.
         :type request_id: str

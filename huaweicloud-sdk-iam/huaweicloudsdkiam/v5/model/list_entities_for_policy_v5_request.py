@@ -37,9 +37,9 @@ class ListEntitiesForPolicyV5Request:
 
         :param policy_id: 身份策略ID，长度为1到64个字符，只包含字母、数字和\&quot;-\&quot;的字符串。
         :type policy_id: str
-        :param entity_type: 实体类型。
+        :param entity_type: 实体类型，包含user、 group 和 agency三种类型。
         :type entity_type: str
-        :param limit: 每页显示的条目数量。
+        :param limit: 每页显示的条目数量，范围为1到200条，默认为100条。
         :type limit: int
         :param marker: 分页标记，长度为4到400个字符，只包含字母、数字、\&quot;+\&quot;、\&quot;/\&quot;、\&quot;&#x3D;\&quot;、\&quot;-\&quot;和\&quot;_\&quot;的字符串。
         :type marker: str
@@ -87,7 +87,7 @@ class ListEntitiesForPolicyV5Request:
     def entity_type(self):
         r"""Gets the entity_type of this ListEntitiesForPolicyV5Request.
 
-        实体类型。
+        实体类型，包含user、 group 和 agency三种类型。
 
         :return: The entity_type of this ListEntitiesForPolicyV5Request.
         :rtype: str
@@ -98,7 +98,7 @@ class ListEntitiesForPolicyV5Request:
     def entity_type(self, entity_type):
         r"""Sets the entity_type of this ListEntitiesForPolicyV5Request.
 
-        实体类型。
+        实体类型，包含user、 group 和 agency三种类型。
 
         :param entity_type: The entity_type of this ListEntitiesForPolicyV5Request.
         :type entity_type: str
@@ -109,7 +109,7 @@ class ListEntitiesForPolicyV5Request:
     def limit(self):
         r"""Gets the limit of this ListEntitiesForPolicyV5Request.
 
-        每页显示的条目数量。
+        每页显示的条目数量，范围为1到200条，默认为100条。
 
         :return: The limit of this ListEntitiesForPolicyV5Request.
         :rtype: int
@@ -120,7 +120,7 @@ class ListEntitiesForPolicyV5Request:
     def limit(self, limit):
         r"""Sets the limit of this ListEntitiesForPolicyV5Request.
 
-        每页显示的条目数量。
+        每页显示的条目数量，范围为1到200条，默认为100条。
 
         :param limit: The limit of this ListEntitiesForPolicyV5Request.
         :type limit: int

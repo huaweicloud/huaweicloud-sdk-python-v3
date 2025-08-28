@@ -37,7 +37,8 @@ class SmartLiveJob:
         'co_streamer_config': 'CoStreamerConfig',
         'live_job_log': 'LiveJobLog',
         'relation_live_platform_info': 'PlatformLiveDetailInfo',
-        'used_resource_type': 'str'
+        'used_resource_type': 'str',
+        'is_ai_mark_on': 'bool'
     }
 
     attribute_map = {
@@ -61,10 +62,11 @@ class SmartLiveJob:
         'co_streamer_config': 'co_streamer_config',
         'live_job_log': 'live_job_log',
         'relation_live_platform_info': 'relation_live_platform_info',
-        'used_resource_type': 'used_resource_type'
+        'used_resource_type': 'used_resource_type',
+        'is_ai_mark_on': 'is_ai_mark_on'
     }
 
-    def __init__(self, job_id=None, room_id=None, room_name=None, state=None, duration=None, start_time=None, end_time=None, error_info=None, create_time=None, lastupdate_time=None, rtc_room_info=None, live_event_report_url=None, live_event_callback_config=None, rtc_callback_config=None, stream_duration=None, block_reason=None, cover_url=None, co_streamer_config=None, live_job_log=None, relation_live_platform_info=None, used_resource_type=None):
+    def __init__(self, job_id=None, room_id=None, room_name=None, state=None, duration=None, start_time=None, end_time=None, error_info=None, create_time=None, lastupdate_time=None, rtc_room_info=None, live_event_report_url=None, live_event_callback_config=None, rtc_callback_config=None, stream_duration=None, block_reason=None, cover_url=None, co_streamer_config=None, live_job_log=None, relation_live_platform_info=None, used_resource_type=None, is_ai_mark_on=None):
         r"""SmartLiveJob
 
         The model defined in huaweicloud sdk
@@ -111,6 +113,8 @@ class SmartLiveJob:
         :type relation_live_platform_info: :class:`huaweicloudsdkmetastudio.v1.PlatformLiveDetailInfo`
         :param used_resource_type: 使用的资源类型。 * PERIOD：包周期资源 * ONDEMAND：按需资源 * ONE_TIME：一次性资源 * UNKNOW：未知资源类型。
         :type used_resource_type: str
+        :param is_ai_mark_on: AI标识开关
+        :type is_ai_mark_on: bool
         """
         
         
@@ -136,6 +140,7 @@ class SmartLiveJob:
         self._live_job_log = None
         self._relation_live_platform_info = None
         self._used_resource_type = None
+        self._is_ai_mark_on = None
         self.discriminator = None
 
         if job_id is not None:
@@ -180,6 +185,8 @@ class SmartLiveJob:
             self.relation_live_platform_info = relation_live_platform_info
         if used_resource_type is not None:
             self.used_resource_type = used_resource_type
+        if is_ai_mark_on is not None:
+            self.is_ai_mark_on = is_ai_mark_on
 
     @property
     def job_id(self):
@@ -614,6 +621,28 @@ class SmartLiveJob:
         :type used_resource_type: str
         """
         self._used_resource_type = used_resource_type
+
+    @property
+    def is_ai_mark_on(self):
+        r"""Gets the is_ai_mark_on of this SmartLiveJob.
+
+        AI标识开关
+
+        :return: The is_ai_mark_on of this SmartLiveJob.
+        :rtype: bool
+        """
+        return self._is_ai_mark_on
+
+    @is_ai_mark_on.setter
+    def is_ai_mark_on(self, is_ai_mark_on):
+        r"""Sets the is_ai_mark_on of this SmartLiveJob.
+
+        AI标识开关
+
+        :param is_ai_mark_on: The is_ai_mark_on of this SmartLiveJob.
+        :type is_ai_mark_on: bool
+        """
+        self._is_ai_mark_on = is_ai_mark_on
 
     def to_dict(self):
         """Returns the model properties as a dict"""

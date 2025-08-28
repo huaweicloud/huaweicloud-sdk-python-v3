@@ -185,7 +185,7 @@ class EventProcessResponseInfo:
         :type virt_process_name: str
         :param escape_mode: **参数解释**： 逃逸方式 **取值范围**： 字符长度1-256位 
         :type escape_mode: str
-        :param escape_cmd: **参数解释**： 逃逸后后执行的命令 **取值范围**： 字符长度1-256位 
+        :param escape_cmd: **参数解释**： 逃逸后执行的命令 **取值范围**： 字符长度1-256位 
         :type escape_cmd: str
         :param process_hash: **参数解释**： 进程启动文件hash **取值范围**： 字符长度1-256位 
         :type process_hash: str
@@ -1146,7 +1146,7 @@ class EventProcessResponseInfo:
     def escape_cmd(self):
         r"""Gets the escape_cmd of this EventProcessResponseInfo.
 
-        **参数解释**： 逃逸后后执行的命令 **取值范围**： 字符长度1-256位 
+        **参数解释**： 逃逸后执行的命令 **取值范围**： 字符长度1-256位 
 
         :return: The escape_cmd of this EventProcessResponseInfo.
         :rtype: str
@@ -1157,7 +1157,7 @@ class EventProcessResponseInfo:
     def escape_cmd(self, escape_cmd):
         r"""Sets the escape_cmd of this EventProcessResponseInfo.
 
-        **参数解释**： 逃逸后后执行的命令 **取值范围**： 字符长度1-256位 
+        **参数解释**： 逃逸后执行的命令 **取值范围**： 字符长度1-256位 
 
         :param escape_cmd: The escape_cmd of this EventProcessResponseInfo.
         :type escape_cmd: str

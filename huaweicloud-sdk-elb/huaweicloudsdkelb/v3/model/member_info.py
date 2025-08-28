@@ -71,47 +71,47 @@ class MemberInfo:
 
         The model defined in huaweicloud sdk
 
-        :param id: 后端服务器ID。 &gt; 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
+        :param id: **参数解释**：后端服务器ID。  **取值范围**：不涉及  &gt; 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
         :type id: str
-        :param availability_zone: 后端服务器所在的可用区。
+        :param availability_zone: **参数解释**：后端服务器所在的可用区。  **取值范围**：不涉及
         :type availability_zone: str
-        :param name: 后端服务器名称。注意：该名称并非ECS名称。
+        :param name: **参数解释**：后端服务器名称。注意：该名称并非ECS名称。  **取值范围**：不涉及
         :type name: str
-        :param project_id: 后端服务器所在的项目ID。
+        :param project_id: **参数解释**：后端服务器所在的项目ID。  **取值范围**：不涉及
         :type project_id: str
-        :param pool_id: 所在后端服务器组ID。  不支持该字段，请勿使用。
+        :param pool_id: **参数解释**：所在后端服务器组ID。  **取值范围**：不涉及  不支持该字段，请勿使用。
         :type pool_id: str
-        :param admin_state_up: 后端服务器的管理状态。  取值：true、false。  虽然创建、更新请求支持该字段，但实际取值决定于后端服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
+        :param admin_state_up: **参数解释**：后端服务器的管理状态。虽然创建、更新请求支持该字段，但实际取值决定于后端服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。  **取值范围**：不涉及true、false。
         :type admin_state_up: bool
-        :param subnet_cidr_id: 后端服务器所在的子网，可以是IPv4或IPv6子网。若是IPv4子网，使用对应子网的子网ID（neutron_subnet_id）；若是IPv6子网，使用对应子网的网络ID（neutron_network_id）。  ipv4子网的子网ID可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_subnet_id得到  ipv6子网的网络ID可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_network_id得到  使用说明： - 该子网和关联的负载均衡器的子网必须在同一VPC下。 - 若所属LB的跨VPC后端转发特性已开启，则该字段可以不传，表示添加跨VPC的后端服务器。此时address必须为**私网IPv4**地址，所在的pool的协议必须为UDP/TCP/TLS/HTTP/HTTPS/QUIC/GRPC。 [- 网关型LB，即pool协议为IP时，必须指定该子网，且必须和负载均衡器的子网在同一个VPC下，但不能相同。](tag:hws_eu)  [不支持IPv6，请勿设置为IPv6子网ID。](tag:dt)
+        :param subnet_cidr_id: **参数解释**：后端服务器所在的子网，可以是IPv4或IPv6子网。若是IPv4子网，使用对应子网的子网ID（neutron_subnet_id）；若是IPv6子网，使用对应子网的网络ID（neutron_network_id）。 ipv4子网的子网ID可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_subnet_id得到 ipv6子网的网络ID可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_network_id得到  **取值范围**：不涉及  [不支持IPv6，请勿设置为IPv6子网ID。](tag:dt)
         :type subnet_cidr_id: str
-        :param protocol_port: 后端服务器业务端口。  [网关型LB，即pool协议为IP时，protocol_port必须设置为0。](tag:hws_eu)  &gt;在开启端口透传的pool下创建member传该字段不生效，可不传该字段。
+        :param protocol_port: **参数解释**：后端服务器业务端口。  **取值范围**：不涉及
         :type protocol_port: int
-        :param weight: 后端服务器的权重，请求将根据pool配置的负载均衡算法和后端服务器的权重进行负载分发。 权重值越大，分发的请求越多。权重为0的后端不再接受新的请求。  取值：0-100，默认1。  使用说明：若所在pool的lb_algorithm取值为SOURCE_IP或QUIC_CID，该字段无效。
+        :param weight: **参数解释**：后端服务器的权重，请求将根据pool配置的负载均衡算法和后端服务器的权重进行负载分发。 权重值越大，分发的请求越多。权重为0的后端不再接受新的请求。  **取值范围**：0-100
         :type weight: int
-        :param address: 后端服务器对应的IP地址。  使用说明： - 若subnet_cidr_id为空，表示添加跨VPC后端，此时address必须为**私网IPv4**地址。 - 若subnet_cidr_id不为空，表示是一个关联到ECS的后端服务器。该IP地址必须在subnet_cidr_id对应的子网网段中，可以是**私网IPv4**或IPv6。  [不支持IPv6，请勿设置为IPv6地址。](tag:dt)
+        :param address: **参数解释**：后端服务器对应的IP地址。  **取值范围**： - 若subnet_cidr_id为空，表示添加IP类型后端，此时address必须为**私网IPv4**地址。 - 若subnet_cidr_id不为空，表示关联到非IP类型后端，可以是ECS后端服务器、辅助弹性网卡、bms。该IP地址必须在subnet_cidr_id对应的子网网段中，可以是**私网IPv4**或IPv6。  [不支持IPv6，请勿设置为IPv6地址。](tag:dt)
         :type address: str
-        :param ip_version: 当前后端服务器的IP地址版本，由后端系统自动根据传入的address字段确定。取值：v4、v6。
+        :param ip_version: **参数解释**：当前后端服务器的IP地址版本，由后端系统自动根据传入的address字段确定。  **取值范围**：v4、v6
         :type ip_version: str
-        :param device_owner: 设备所有者。  取值： - 空，表示后端服务器未关联到ECS。 - compute:{az_name}，表示关联到ECS，其中{az_name}表示ECS所在可用区名。 - compute:subeni，表示辅助弹性网卡。  不支持该字段，请勿使用。
+        :param device_owner: **参数解释**：设备所有者。  **取值范围**：不涉及 - 空，表示后端服务器未关联到ECS。 - compute:{az_name}，表示关联到ECS，其中{az_name}表示ECS所在可用区名。 - compute:subeni，表示辅助弹性网卡。  不支持该字段，请勿使用。
         :type device_owner: str
-        :param device_id: 关联的ECS ID，为空表示后端服务器未关联到ECS。  不支持该字段，请勿使用。
+        :param device_id: **参数解释**：关联的ECS ID，为空表示后端服务器未关联到ECS。  **取值范围**：不涉及  不支持该字段，请勿使用。
         :type device_id: str
-        :param operating_status: 后端服务器的健康状态。当status非空时，以status字段中监听器粒度的健康检查状态优先。  取值： - INITIAL：初始化中，表示负载均衡实例配置了健康检查，但查不到数据。 - ONLINE：后端服务器正常。 - NO_MONITOR：后端服务器所在的服务器组没有健康检查器。 - OFFLINE：后端服务器关联的ECS服务器不存在或已关机。
+        :param operating_status: **参数解释**：后端服务器的健康状态。当status非空时，以status字段中监听器粒度的健康检查状态优先。  **取值范围**： - NO_MONITOR：后端服务器所在的服务器组没有开启健康检查。 - INITIAL：初始化中，表示负载均衡实例配置了健康检查，但查不到数据。 - ONLINE：后端服务器正常。 - OFFLINE：后端服务器关联的ECS服务器不存在或已关机。 - UNKNOWN：未关联LB实例的pool下的member，或者创建后从未关联ECS的云服务器类型member，状态置为UNKNOWN。
         :type operating_status: str
-        :param status: 后端服务器监听器粒度的的健康状态。 若绑定的监听器在该字段中，则以该字段中监听器对应的operating_status为准。 若绑定的监听器不在该字段中，则以外层的operating_status为准。
+        :param status: **参数解释**：后端服务器监听器粒度的的健康状态。 若绑定的监听器在该字段中，则以该字段中监听器对应的operating_status为准。 若绑定的监听器不在该字段中，则以外层的operating_status为准。
         :type status: list[:class:`huaweicloudsdkelb.v3.MemberStatus`]
-        :param loadbalancer_id: 所属负载均衡器ID。  不支持该字段，请勿使用。
+        :param loadbalancer_id: **参数解释**：所属负载均衡器ID。  不支持该字段，请勿使用。
         :type loadbalancer_id: str
-        :param loadbalancers: 后端服务器关联的负载均衡器ID列表。  不支持该字段，请勿使用。
+        :param loadbalancers: **参数解释**：后端服务器关联的负载均衡器ID列表。  不支持该字段，请勿使用。
         :type loadbalancers: list[:class:`huaweicloudsdkelb.v3.ResourceID`]
-        :param created_at: 创建时间。格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，UTC时区。  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt,hk_tm)
+        :param created_at: **参数解释**：创建时间。格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，UTC时区。  **取值范围**：不涉及  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt,hk_tm)
         :type created_at: str
-        :param updated_at: 更新时间。格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，UTC时区。  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt,hk_tm)
+        :param updated_at: **参数解释**：更新时间。格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，UTC时区。  **取值范围**：不涉及  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt,hk_tm)
         :type updated_at: str
-        :param member_type: 后端服务器的类型。  取值： - ip：跨VPC的member。 - instance：关联到ECS的member。
+        :param member_type: **参数解释**：后端服务器的类型。  **取值范围**：不涉及 - ip：跨VPC的member。 - instance：关联到ECS的member。
         :type member_type: str
-        :param instance_id: member关联的实例ID。空表示member关联的实例为非真实设备 （如：跨VPC场景）
+        :param instance_id: **参数解释**：member关联的实例ID。空表示member关联的实例为非真实设备 （如：跨VPC场景）。  **取值范围**：不涉及
         :type instance_id: str
         :param reason: 
         :type reason: :class:`huaweicloudsdkelb.v3.MemberHealthCheckFailedReason`
@@ -181,7 +181,7 @@ class MemberInfo:
     def id(self):
         r"""Gets the id of this MemberInfo.
 
-        后端服务器ID。 > 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
+        **参数解释**：后端服务器ID。  **取值范围**：不涉及  > 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
 
         :return: The id of this MemberInfo.
         :rtype: str
@@ -192,7 +192,7 @@ class MemberInfo:
     def id(self, id):
         r"""Sets the id of this MemberInfo.
 
-        后端服务器ID。 > 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
+        **参数解释**：后端服务器ID。  **取值范围**：不涉及  > 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
 
         :param id: The id of this MemberInfo.
         :type id: str
@@ -203,7 +203,7 @@ class MemberInfo:
     def availability_zone(self):
         r"""Gets the availability_zone of this MemberInfo.
 
-        后端服务器所在的可用区。
+        **参数解释**：后端服务器所在的可用区。  **取值范围**：不涉及
 
         :return: The availability_zone of this MemberInfo.
         :rtype: str
@@ -214,7 +214,7 @@ class MemberInfo:
     def availability_zone(self, availability_zone):
         r"""Sets the availability_zone of this MemberInfo.
 
-        后端服务器所在的可用区。
+        **参数解释**：后端服务器所在的可用区。  **取值范围**：不涉及
 
         :param availability_zone: The availability_zone of this MemberInfo.
         :type availability_zone: str
@@ -225,7 +225,7 @@ class MemberInfo:
     def name(self):
         r"""Gets the name of this MemberInfo.
 
-        后端服务器名称。注意：该名称并非ECS名称。
+        **参数解释**：后端服务器名称。注意：该名称并非ECS名称。  **取值范围**：不涉及
 
         :return: The name of this MemberInfo.
         :rtype: str
@@ -236,7 +236,7 @@ class MemberInfo:
     def name(self, name):
         r"""Sets the name of this MemberInfo.
 
-        后端服务器名称。注意：该名称并非ECS名称。
+        **参数解释**：后端服务器名称。注意：该名称并非ECS名称。  **取值范围**：不涉及
 
         :param name: The name of this MemberInfo.
         :type name: str
@@ -247,7 +247,7 @@ class MemberInfo:
     def project_id(self):
         r"""Gets the project_id of this MemberInfo.
 
-        后端服务器所在的项目ID。
+        **参数解释**：后端服务器所在的项目ID。  **取值范围**：不涉及
 
         :return: The project_id of this MemberInfo.
         :rtype: str
@@ -258,7 +258,7 @@ class MemberInfo:
     def project_id(self, project_id):
         r"""Sets the project_id of this MemberInfo.
 
-        后端服务器所在的项目ID。
+        **参数解释**：后端服务器所在的项目ID。  **取值范围**：不涉及
 
         :param project_id: The project_id of this MemberInfo.
         :type project_id: str
@@ -269,7 +269,7 @@ class MemberInfo:
     def pool_id(self):
         r"""Gets the pool_id of this MemberInfo.
 
-        所在后端服务器组ID。  不支持该字段，请勿使用。
+        **参数解释**：所在后端服务器组ID。  **取值范围**：不涉及  不支持该字段，请勿使用。
 
         :return: The pool_id of this MemberInfo.
         :rtype: str
@@ -280,7 +280,7 @@ class MemberInfo:
     def pool_id(self, pool_id):
         r"""Sets the pool_id of this MemberInfo.
 
-        所在后端服务器组ID。  不支持该字段，请勿使用。
+        **参数解释**：所在后端服务器组ID。  **取值范围**：不涉及  不支持该字段，请勿使用。
 
         :param pool_id: The pool_id of this MemberInfo.
         :type pool_id: str
@@ -291,7 +291,7 @@ class MemberInfo:
     def admin_state_up(self):
         r"""Gets the admin_state_up of this MemberInfo.
 
-        后端服务器的管理状态。  取值：true、false。  虽然创建、更新请求支持该字段，但实际取值决定于后端服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
+        **参数解释**：后端服务器的管理状态。虽然创建、更新请求支持该字段，但实际取值决定于后端服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。  **取值范围**：不涉及true、false。
 
         :return: The admin_state_up of this MemberInfo.
         :rtype: bool
@@ -302,7 +302,7 @@ class MemberInfo:
     def admin_state_up(self, admin_state_up):
         r"""Sets the admin_state_up of this MemberInfo.
 
-        后端服务器的管理状态。  取值：true、false。  虽然创建、更新请求支持该字段，但实际取值决定于后端服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
+        **参数解释**：后端服务器的管理状态。虽然创建、更新请求支持该字段，但实际取值决定于后端服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。  **取值范围**：不涉及true、false。
 
         :param admin_state_up: The admin_state_up of this MemberInfo.
         :type admin_state_up: bool
@@ -313,7 +313,7 @@ class MemberInfo:
     def subnet_cidr_id(self):
         r"""Gets the subnet_cidr_id of this MemberInfo.
 
-        后端服务器所在的子网，可以是IPv4或IPv6子网。若是IPv4子网，使用对应子网的子网ID（neutron_subnet_id）；若是IPv6子网，使用对应子网的网络ID（neutron_network_id）。  ipv4子网的子网ID可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_subnet_id得到  ipv6子网的网络ID可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_network_id得到  使用说明： - 该子网和关联的负载均衡器的子网必须在同一VPC下。 - 若所属LB的跨VPC后端转发特性已开启，则该字段可以不传，表示添加跨VPC的后端服务器。此时address必须为**私网IPv4**地址，所在的pool的协议必须为UDP/TCP/TLS/HTTP/HTTPS/QUIC/GRPC。 [- 网关型LB，即pool协议为IP时，必须指定该子网，且必须和负载均衡器的子网在同一个VPC下，但不能相同。](tag:hws_eu)  [不支持IPv6，请勿设置为IPv6子网ID。](tag:dt)
+        **参数解释**：后端服务器所在的子网，可以是IPv4或IPv6子网。若是IPv4子网，使用对应子网的子网ID（neutron_subnet_id）；若是IPv6子网，使用对应子网的网络ID（neutron_network_id）。 ipv4子网的子网ID可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_subnet_id得到 ipv6子网的网络ID可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_network_id得到  **取值范围**：不涉及  [不支持IPv6，请勿设置为IPv6子网ID。](tag:dt)
 
         :return: The subnet_cidr_id of this MemberInfo.
         :rtype: str
@@ -324,7 +324,7 @@ class MemberInfo:
     def subnet_cidr_id(self, subnet_cidr_id):
         r"""Sets the subnet_cidr_id of this MemberInfo.
 
-        后端服务器所在的子网，可以是IPv4或IPv6子网。若是IPv4子网，使用对应子网的子网ID（neutron_subnet_id）；若是IPv6子网，使用对应子网的网络ID（neutron_network_id）。  ipv4子网的子网ID可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_subnet_id得到  ipv6子网的网络ID可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_network_id得到  使用说明： - 该子网和关联的负载均衡器的子网必须在同一VPC下。 - 若所属LB的跨VPC后端转发特性已开启，则该字段可以不传，表示添加跨VPC的后端服务器。此时address必须为**私网IPv4**地址，所在的pool的协议必须为UDP/TCP/TLS/HTTP/HTTPS/QUIC/GRPC。 [- 网关型LB，即pool协议为IP时，必须指定该子网，且必须和负载均衡器的子网在同一个VPC下，但不能相同。](tag:hws_eu)  [不支持IPv6，请勿设置为IPv6子网ID。](tag:dt)
+        **参数解释**：后端服务器所在的子网，可以是IPv4或IPv6子网。若是IPv4子网，使用对应子网的子网ID（neutron_subnet_id）；若是IPv6子网，使用对应子网的网络ID（neutron_network_id）。 ipv4子网的子网ID可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_subnet_id得到 ipv6子网的网络ID可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_network_id得到  **取值范围**：不涉及  [不支持IPv6，请勿设置为IPv6子网ID。](tag:dt)
 
         :param subnet_cidr_id: The subnet_cidr_id of this MemberInfo.
         :type subnet_cidr_id: str
@@ -335,7 +335,7 @@ class MemberInfo:
     def protocol_port(self):
         r"""Gets the protocol_port of this MemberInfo.
 
-        后端服务器业务端口。  [网关型LB，即pool协议为IP时，protocol_port必须设置为0。](tag:hws_eu)  >在开启端口透传的pool下创建member传该字段不生效，可不传该字段。
+        **参数解释**：后端服务器业务端口。  **取值范围**：不涉及
 
         :return: The protocol_port of this MemberInfo.
         :rtype: int
@@ -346,7 +346,7 @@ class MemberInfo:
     def protocol_port(self, protocol_port):
         r"""Sets the protocol_port of this MemberInfo.
 
-        后端服务器业务端口。  [网关型LB，即pool协议为IP时，protocol_port必须设置为0。](tag:hws_eu)  >在开启端口透传的pool下创建member传该字段不生效，可不传该字段。
+        **参数解释**：后端服务器业务端口。  **取值范围**：不涉及
 
         :param protocol_port: The protocol_port of this MemberInfo.
         :type protocol_port: int
@@ -357,7 +357,7 @@ class MemberInfo:
     def weight(self):
         r"""Gets the weight of this MemberInfo.
 
-        后端服务器的权重，请求将根据pool配置的负载均衡算法和后端服务器的权重进行负载分发。 权重值越大，分发的请求越多。权重为0的后端不再接受新的请求。  取值：0-100，默认1。  使用说明：若所在pool的lb_algorithm取值为SOURCE_IP或QUIC_CID，该字段无效。
+        **参数解释**：后端服务器的权重，请求将根据pool配置的负载均衡算法和后端服务器的权重进行负载分发。 权重值越大，分发的请求越多。权重为0的后端不再接受新的请求。  **取值范围**：0-100
 
         :return: The weight of this MemberInfo.
         :rtype: int
@@ -368,7 +368,7 @@ class MemberInfo:
     def weight(self, weight):
         r"""Sets the weight of this MemberInfo.
 
-        后端服务器的权重，请求将根据pool配置的负载均衡算法和后端服务器的权重进行负载分发。 权重值越大，分发的请求越多。权重为0的后端不再接受新的请求。  取值：0-100，默认1。  使用说明：若所在pool的lb_algorithm取值为SOURCE_IP或QUIC_CID，该字段无效。
+        **参数解释**：后端服务器的权重，请求将根据pool配置的负载均衡算法和后端服务器的权重进行负载分发。 权重值越大，分发的请求越多。权重为0的后端不再接受新的请求。  **取值范围**：0-100
 
         :param weight: The weight of this MemberInfo.
         :type weight: int
@@ -379,7 +379,7 @@ class MemberInfo:
     def address(self):
         r"""Gets the address of this MemberInfo.
 
-        后端服务器对应的IP地址。  使用说明： - 若subnet_cidr_id为空，表示添加跨VPC后端，此时address必须为**私网IPv4**地址。 - 若subnet_cidr_id不为空，表示是一个关联到ECS的后端服务器。该IP地址必须在subnet_cidr_id对应的子网网段中，可以是**私网IPv4**或IPv6。  [不支持IPv6，请勿设置为IPv6地址。](tag:dt)
+        **参数解释**：后端服务器对应的IP地址。  **取值范围**： - 若subnet_cidr_id为空，表示添加IP类型后端，此时address必须为**私网IPv4**地址。 - 若subnet_cidr_id不为空，表示关联到非IP类型后端，可以是ECS后端服务器、辅助弹性网卡、bms。该IP地址必须在subnet_cidr_id对应的子网网段中，可以是**私网IPv4**或IPv6。  [不支持IPv6，请勿设置为IPv6地址。](tag:dt)
 
         :return: The address of this MemberInfo.
         :rtype: str
@@ -390,7 +390,7 @@ class MemberInfo:
     def address(self, address):
         r"""Sets the address of this MemberInfo.
 
-        后端服务器对应的IP地址。  使用说明： - 若subnet_cidr_id为空，表示添加跨VPC后端，此时address必须为**私网IPv4**地址。 - 若subnet_cidr_id不为空，表示是一个关联到ECS的后端服务器。该IP地址必须在subnet_cidr_id对应的子网网段中，可以是**私网IPv4**或IPv6。  [不支持IPv6，请勿设置为IPv6地址。](tag:dt)
+        **参数解释**：后端服务器对应的IP地址。  **取值范围**： - 若subnet_cidr_id为空，表示添加IP类型后端，此时address必须为**私网IPv4**地址。 - 若subnet_cidr_id不为空，表示关联到非IP类型后端，可以是ECS后端服务器、辅助弹性网卡、bms。该IP地址必须在subnet_cidr_id对应的子网网段中，可以是**私网IPv4**或IPv6。  [不支持IPv6，请勿设置为IPv6地址。](tag:dt)
 
         :param address: The address of this MemberInfo.
         :type address: str
@@ -401,7 +401,7 @@ class MemberInfo:
     def ip_version(self):
         r"""Gets the ip_version of this MemberInfo.
 
-        当前后端服务器的IP地址版本，由后端系统自动根据传入的address字段确定。取值：v4、v6。
+        **参数解释**：当前后端服务器的IP地址版本，由后端系统自动根据传入的address字段确定。  **取值范围**：v4、v6
 
         :return: The ip_version of this MemberInfo.
         :rtype: str
@@ -412,7 +412,7 @@ class MemberInfo:
     def ip_version(self, ip_version):
         r"""Sets the ip_version of this MemberInfo.
 
-        当前后端服务器的IP地址版本，由后端系统自动根据传入的address字段确定。取值：v4、v6。
+        **参数解释**：当前后端服务器的IP地址版本，由后端系统自动根据传入的address字段确定。  **取值范围**：v4、v6
 
         :param ip_version: The ip_version of this MemberInfo.
         :type ip_version: str
@@ -423,7 +423,7 @@ class MemberInfo:
     def device_owner(self):
         r"""Gets the device_owner of this MemberInfo.
 
-        设备所有者。  取值： - 空，表示后端服务器未关联到ECS。 - compute:{az_name}，表示关联到ECS，其中{az_name}表示ECS所在可用区名。 - compute:subeni，表示辅助弹性网卡。  不支持该字段，请勿使用。
+        **参数解释**：设备所有者。  **取值范围**：不涉及 - 空，表示后端服务器未关联到ECS。 - compute:{az_name}，表示关联到ECS，其中{az_name}表示ECS所在可用区名。 - compute:subeni，表示辅助弹性网卡。  不支持该字段，请勿使用。
 
         :return: The device_owner of this MemberInfo.
         :rtype: str
@@ -434,7 +434,7 @@ class MemberInfo:
     def device_owner(self, device_owner):
         r"""Sets the device_owner of this MemberInfo.
 
-        设备所有者。  取值： - 空，表示后端服务器未关联到ECS。 - compute:{az_name}，表示关联到ECS，其中{az_name}表示ECS所在可用区名。 - compute:subeni，表示辅助弹性网卡。  不支持该字段，请勿使用。
+        **参数解释**：设备所有者。  **取值范围**：不涉及 - 空，表示后端服务器未关联到ECS。 - compute:{az_name}，表示关联到ECS，其中{az_name}表示ECS所在可用区名。 - compute:subeni，表示辅助弹性网卡。  不支持该字段，请勿使用。
 
         :param device_owner: The device_owner of this MemberInfo.
         :type device_owner: str
@@ -445,7 +445,7 @@ class MemberInfo:
     def device_id(self):
         r"""Gets the device_id of this MemberInfo.
 
-        关联的ECS ID，为空表示后端服务器未关联到ECS。  不支持该字段，请勿使用。
+        **参数解释**：关联的ECS ID，为空表示后端服务器未关联到ECS。  **取值范围**：不涉及  不支持该字段，请勿使用。
 
         :return: The device_id of this MemberInfo.
         :rtype: str
@@ -456,7 +456,7 @@ class MemberInfo:
     def device_id(self, device_id):
         r"""Sets the device_id of this MemberInfo.
 
-        关联的ECS ID，为空表示后端服务器未关联到ECS。  不支持该字段，请勿使用。
+        **参数解释**：关联的ECS ID，为空表示后端服务器未关联到ECS。  **取值范围**：不涉及  不支持该字段，请勿使用。
 
         :param device_id: The device_id of this MemberInfo.
         :type device_id: str
@@ -467,7 +467,7 @@ class MemberInfo:
     def operating_status(self):
         r"""Gets the operating_status of this MemberInfo.
 
-        后端服务器的健康状态。当status非空时，以status字段中监听器粒度的健康检查状态优先。  取值： - INITIAL：初始化中，表示负载均衡实例配置了健康检查，但查不到数据。 - ONLINE：后端服务器正常。 - NO_MONITOR：后端服务器所在的服务器组没有健康检查器。 - OFFLINE：后端服务器关联的ECS服务器不存在或已关机。
+        **参数解释**：后端服务器的健康状态。当status非空时，以status字段中监听器粒度的健康检查状态优先。  **取值范围**： - NO_MONITOR：后端服务器所在的服务器组没有开启健康检查。 - INITIAL：初始化中，表示负载均衡实例配置了健康检查，但查不到数据。 - ONLINE：后端服务器正常。 - OFFLINE：后端服务器关联的ECS服务器不存在或已关机。 - UNKNOWN：未关联LB实例的pool下的member，或者创建后从未关联ECS的云服务器类型member，状态置为UNKNOWN。
 
         :return: The operating_status of this MemberInfo.
         :rtype: str
@@ -478,7 +478,7 @@ class MemberInfo:
     def operating_status(self, operating_status):
         r"""Sets the operating_status of this MemberInfo.
 
-        后端服务器的健康状态。当status非空时，以status字段中监听器粒度的健康检查状态优先。  取值： - INITIAL：初始化中，表示负载均衡实例配置了健康检查，但查不到数据。 - ONLINE：后端服务器正常。 - NO_MONITOR：后端服务器所在的服务器组没有健康检查器。 - OFFLINE：后端服务器关联的ECS服务器不存在或已关机。
+        **参数解释**：后端服务器的健康状态。当status非空时，以status字段中监听器粒度的健康检查状态优先。  **取值范围**： - NO_MONITOR：后端服务器所在的服务器组没有开启健康检查。 - INITIAL：初始化中，表示负载均衡实例配置了健康检查，但查不到数据。 - ONLINE：后端服务器正常。 - OFFLINE：后端服务器关联的ECS服务器不存在或已关机。 - UNKNOWN：未关联LB实例的pool下的member，或者创建后从未关联ECS的云服务器类型member，状态置为UNKNOWN。
 
         :param operating_status: The operating_status of this MemberInfo.
         :type operating_status: str
@@ -489,7 +489,7 @@ class MemberInfo:
     def status(self):
         r"""Gets the status of this MemberInfo.
 
-        后端服务器监听器粒度的的健康状态。 若绑定的监听器在该字段中，则以该字段中监听器对应的operating_status为准。 若绑定的监听器不在该字段中，则以外层的operating_status为准。
+        **参数解释**：后端服务器监听器粒度的的健康状态。 若绑定的监听器在该字段中，则以该字段中监听器对应的operating_status为准。 若绑定的监听器不在该字段中，则以外层的operating_status为准。
 
         :return: The status of this MemberInfo.
         :rtype: list[:class:`huaweicloudsdkelb.v3.MemberStatus`]
@@ -500,7 +500,7 @@ class MemberInfo:
     def status(self, status):
         r"""Sets the status of this MemberInfo.
 
-        后端服务器监听器粒度的的健康状态。 若绑定的监听器在该字段中，则以该字段中监听器对应的operating_status为准。 若绑定的监听器不在该字段中，则以外层的operating_status为准。
+        **参数解释**：后端服务器监听器粒度的的健康状态。 若绑定的监听器在该字段中，则以该字段中监听器对应的operating_status为准。 若绑定的监听器不在该字段中，则以外层的operating_status为准。
 
         :param status: The status of this MemberInfo.
         :type status: list[:class:`huaweicloudsdkelb.v3.MemberStatus`]
@@ -511,7 +511,7 @@ class MemberInfo:
     def loadbalancer_id(self):
         r"""Gets the loadbalancer_id of this MemberInfo.
 
-        所属负载均衡器ID。  不支持该字段，请勿使用。
+        **参数解释**：所属负载均衡器ID。  不支持该字段，请勿使用。
 
         :return: The loadbalancer_id of this MemberInfo.
         :rtype: str
@@ -522,7 +522,7 @@ class MemberInfo:
     def loadbalancer_id(self, loadbalancer_id):
         r"""Sets the loadbalancer_id of this MemberInfo.
 
-        所属负载均衡器ID。  不支持该字段，请勿使用。
+        **参数解释**：所属负载均衡器ID。  不支持该字段，请勿使用。
 
         :param loadbalancer_id: The loadbalancer_id of this MemberInfo.
         :type loadbalancer_id: str
@@ -533,7 +533,7 @@ class MemberInfo:
     def loadbalancers(self):
         r"""Gets the loadbalancers of this MemberInfo.
 
-        后端服务器关联的负载均衡器ID列表。  不支持该字段，请勿使用。
+        **参数解释**：后端服务器关联的负载均衡器ID列表。  不支持该字段，请勿使用。
 
         :return: The loadbalancers of this MemberInfo.
         :rtype: list[:class:`huaweicloudsdkelb.v3.ResourceID`]
@@ -544,7 +544,7 @@ class MemberInfo:
     def loadbalancers(self, loadbalancers):
         r"""Sets the loadbalancers of this MemberInfo.
 
-        后端服务器关联的负载均衡器ID列表。  不支持该字段，请勿使用。
+        **参数解释**：后端服务器关联的负载均衡器ID列表。  不支持该字段，请勿使用。
 
         :param loadbalancers: The loadbalancers of this MemberInfo.
         :type loadbalancers: list[:class:`huaweicloudsdkelb.v3.ResourceID`]
@@ -555,7 +555,7 @@ class MemberInfo:
     def created_at(self):
         r"""Gets the created_at of this MemberInfo.
 
-        创建时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt,hk_tm)
+        **参数解释**：创建时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。  **取值范围**：不涉及  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt,hk_tm)
 
         :return: The created_at of this MemberInfo.
         :rtype: str
@@ -566,7 +566,7 @@ class MemberInfo:
     def created_at(self, created_at):
         r"""Sets the created_at of this MemberInfo.
 
-        创建时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt,hk_tm)
+        **参数解释**：创建时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。  **取值范围**：不涉及  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt,hk_tm)
 
         :param created_at: The created_at of this MemberInfo.
         :type created_at: str
@@ -577,7 +577,7 @@ class MemberInfo:
     def updated_at(self):
         r"""Gets the updated_at of this MemberInfo.
 
-        更新时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt,hk_tm)
+        **参数解释**：更新时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。  **取值范围**：不涉及  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt,hk_tm)
 
         :return: The updated_at of this MemberInfo.
         :rtype: str
@@ -588,7 +588,7 @@ class MemberInfo:
     def updated_at(self, updated_at):
         r"""Sets the updated_at of this MemberInfo.
 
-        更新时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt,hk_tm)
+        **参数解释**：更新时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。  **取值范围**：不涉及  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt,hk_tm)
 
         :param updated_at: The updated_at of this MemberInfo.
         :type updated_at: str
@@ -599,7 +599,7 @@ class MemberInfo:
     def member_type(self):
         r"""Gets the member_type of this MemberInfo.
 
-        后端服务器的类型。  取值： - ip：跨VPC的member。 - instance：关联到ECS的member。
+        **参数解释**：后端服务器的类型。  **取值范围**：不涉及 - ip：跨VPC的member。 - instance：关联到ECS的member。
 
         :return: The member_type of this MemberInfo.
         :rtype: str
@@ -610,7 +610,7 @@ class MemberInfo:
     def member_type(self, member_type):
         r"""Sets the member_type of this MemberInfo.
 
-        后端服务器的类型。  取值： - ip：跨VPC的member。 - instance：关联到ECS的member。
+        **参数解释**：后端服务器的类型。  **取值范围**：不涉及 - ip：跨VPC的member。 - instance：关联到ECS的member。
 
         :param member_type: The member_type of this MemberInfo.
         :type member_type: str
@@ -621,7 +621,7 @@ class MemberInfo:
     def instance_id(self):
         r"""Gets the instance_id of this MemberInfo.
 
-        member关联的实例ID。空表示member关联的实例为非真实设备 （如：跨VPC场景）
+        **参数解释**：member关联的实例ID。空表示member关联的实例为非真实设备 （如：跨VPC场景）。  **取值范围**：不涉及
 
         :return: The instance_id of this MemberInfo.
         :rtype: str
@@ -632,7 +632,7 @@ class MemberInfo:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this MemberInfo.
 
-        member关联的实例ID。空表示member关联的实例为非真实设备 （如：跨VPC场景）
+        **参数解释**：member关联的实例ID。空表示member关联的实例为非真实设备 （如：跨VPC场景）。  **取值范围**：不涉及
 
         :param instance_id: The instance_id of this MemberInfo.
         :type instance_id: str

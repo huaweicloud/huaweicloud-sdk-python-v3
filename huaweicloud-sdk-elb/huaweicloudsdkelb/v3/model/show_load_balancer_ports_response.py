@@ -32,9 +32,9 @@ class ShowLoadBalancerPortsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param ports: 当前ELB占用的ports列表。
+        :param ports: **参数解释**：当前ELB占用的子网端口列表。
         :type ports: list[:class:`huaweicloudsdkelb.v3.LocalPort`]
-        :param request_id: 请求ID。  注：自动生成 。
+        :param request_id: **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
         :type request_id: str
         """
         
@@ -53,7 +53,7 @@ class ShowLoadBalancerPortsResponse(SdkResponse):
     def ports(self):
         r"""Gets the ports of this ShowLoadBalancerPortsResponse.
 
-        当前ELB占用的ports列表。
+        **参数解释**：当前ELB占用的子网端口列表。
 
         :return: The ports of this ShowLoadBalancerPortsResponse.
         :rtype: list[:class:`huaweicloudsdkelb.v3.LocalPort`]
@@ -64,7 +64,7 @@ class ShowLoadBalancerPortsResponse(SdkResponse):
     def ports(self, ports):
         r"""Sets the ports of this ShowLoadBalancerPortsResponse.
 
-        当前ELB占用的ports列表。
+        **参数解释**：当前ELB占用的子网端口列表。
 
         :param ports: The ports of this ShowLoadBalancerPortsResponse.
         :type ports: list[:class:`huaweicloudsdkelb.v3.LocalPort`]
@@ -75,7 +75,7 @@ class ShowLoadBalancerPortsResponse(SdkResponse):
     def request_id(self):
         r"""Gets the request_id of this ShowLoadBalancerPortsResponse.
 
-        请求ID。  注：自动生成 。
+        **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
 
         :return: The request_id of this ShowLoadBalancerPortsResponse.
         :rtype: str
@@ -86,7 +86,7 @@ class ShowLoadBalancerPortsResponse(SdkResponse):
     def request_id(self, request_id):
         r"""Sets the request_id of this ShowLoadBalancerPortsResponse.
 
-        请求ID。  注：自动生成 。
+        **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
 
         :param request_id: The request_id of this ShowLoadBalancerPortsResponse.
         :type request_id: str

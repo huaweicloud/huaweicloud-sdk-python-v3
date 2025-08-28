@@ -33,9 +33,9 @@ class ListTimingOffConfigInfoResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param week_off_list: 关闭防护周期
+        :param week_off_list: **参数解释**: 自动关闭防护周期列表 **取值范围**: 最少0条，最多7条 
         :type week_off_list: list[int]
-        :param timing_range_list: 时间段
+        :param timing_range_list: **参数解释**: 自动关闭防护时间段 **取值范围**: 最少0条，最多5条 
         :type timing_range_list: list[:class:`huaweicloudsdkhss.v5.TimingRangeConfigInfo`]
         :param total_num: **参数解释**: 总数 **取值范围**: 最小值0，最大值2147483647 
         :type total_num: int
@@ -59,7 +59,7 @@ class ListTimingOffConfigInfoResponseInfo:
     def week_off_list(self):
         r"""Gets the week_off_list of this ListTimingOffConfigInfoResponseInfo.
 
-        关闭防护周期
+        **参数解释**: 自动关闭防护周期列表 **取值范围**: 最少0条，最多7条 
 
         :return: The week_off_list of this ListTimingOffConfigInfoResponseInfo.
         :rtype: list[int]
@@ -70,7 +70,7 @@ class ListTimingOffConfigInfoResponseInfo:
     def week_off_list(self, week_off_list):
         r"""Sets the week_off_list of this ListTimingOffConfigInfoResponseInfo.
 
-        关闭防护周期
+        **参数解释**: 自动关闭防护周期列表 **取值范围**: 最少0条，最多7条 
 
         :param week_off_list: The week_off_list of this ListTimingOffConfigInfoResponseInfo.
         :type week_off_list: list[int]
@@ -81,7 +81,7 @@ class ListTimingOffConfigInfoResponseInfo:
     def timing_range_list(self):
         r"""Gets the timing_range_list of this ListTimingOffConfigInfoResponseInfo.
 
-        时间段
+        **参数解释**: 自动关闭防护时间段 **取值范围**: 最少0条，最多5条 
 
         :return: The timing_range_list of this ListTimingOffConfigInfoResponseInfo.
         :rtype: list[:class:`huaweicloudsdkhss.v5.TimingRangeConfigInfo`]
@@ -92,7 +92,7 @@ class ListTimingOffConfigInfoResponseInfo:
     def timing_range_list(self, timing_range_list):
         r"""Sets the timing_range_list of this ListTimingOffConfigInfoResponseInfo.
 
-        时间段
+        **参数解释**: 自动关闭防护时间段 **取值范围**: 最少0条，最多5条 
 
         :param timing_range_list: The timing_range_list of this ListTimingOffConfigInfoResponseInfo.
         :type timing_range_list: list[:class:`huaweicloudsdkhss.v5.TimingRangeConfigInfo`]

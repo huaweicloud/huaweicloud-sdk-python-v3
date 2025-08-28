@@ -31,9 +31,9 @@ class ShowL7RuleRequest:
 
         The model defined in huaweicloud sdk
 
-        :param l7policy_id: 7层转发策略。
+        :param l7policy_id: **参数解释**：7层转发策略。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type l7policy_id: str
-        :param l7rule_id: 7层转发规则。
+        :param l7rule_id: **参数解释**：7层转发规则。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type l7rule_id: str
         """
         
@@ -50,7 +50,7 @@ class ShowL7RuleRequest:
     def l7policy_id(self):
         r"""Gets the l7policy_id of this ShowL7RuleRequest.
 
-        7层转发策略。
+        **参数解释**：7层转发策略。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The l7policy_id of this ShowL7RuleRequest.
         :rtype: str
@@ -61,7 +61,7 @@ class ShowL7RuleRequest:
     def l7policy_id(self, l7policy_id):
         r"""Sets the l7policy_id of this ShowL7RuleRequest.
 
-        7层转发策略。
+        **参数解释**：7层转发策略。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param l7policy_id: The l7policy_id of this ShowL7RuleRequest.
         :type l7policy_id: str
@@ -72,7 +72,7 @@ class ShowL7RuleRequest:
     def l7rule_id(self):
         r"""Gets the l7rule_id of this ShowL7RuleRequest.
 
-        7层转发规则。
+        **参数解释**：7层转发规则。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The l7rule_id of this ShowL7RuleRequest.
         :rtype: str
@@ -83,7 +83,7 @@ class ShowL7RuleRequest:
     def l7rule_id(self, l7rule_id):
         r"""Sets the l7rule_id of this ShowL7RuleRequest.
 
-        7层转发规则。
+        **参数解释**：7层转发规则。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param l7rule_id: The l7rule_id of this ShowL7RuleRequest.
         :type l7rule_id: str

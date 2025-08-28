@@ -38,11 +38,11 @@ class CreateLoadBalancerResponse(SdkResponse):
 
         :param loadbalancer: 
         :type loadbalancer: :class:`huaweicloudsdkelb.v3.LoadBalancer`
-        :param loadbalancer_id: 参数解释：负载均衡器的ID。[（包周期场景返回该字段）](tag:hws)  [不支持该字段，请勿使用。](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,srg,fcs,fcs_vm,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,ct)
+        :param loadbalancer_id: **参数解释**：负载均衡器的ID。[（包周期场景返回该字段）](tag:hws)  **取值范围**：不涉及  [不支持该字段，请勿使用。](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,srg,fcs,fcs_vm,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,ct)
         :type loadbalancer_id: str
-        :param order_id: 参数解释：订单号[（包周期场景返回该字段）](tag:hws)  [不支持该字段，请勿使用。](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,srg,fcs,fcs_vm,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,ct)
+        :param order_id: **参数解释**：订单号[（包周期场景返回该字段）](tag:hws)  **取值范围**：不涉及  [不支持该字段，请勿使用。](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,srg,fcs,fcs_vm,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,ct)
         :type order_id: str
-        :param request_id: 参数解释：请求ID。  注：自动生成 。
+        :param request_id: **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
         :type request_id: str
         """
         
@@ -85,7 +85,7 @@ class CreateLoadBalancerResponse(SdkResponse):
     def loadbalancer_id(self):
         r"""Gets the loadbalancer_id of this CreateLoadBalancerResponse.
 
-        参数解释：负载均衡器的ID。[（包周期场景返回该字段）](tag:hws)  [不支持该字段，请勿使用。](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,srg,fcs,fcs_vm,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,ct)
+        **参数解释**：负载均衡器的ID。[（包周期场景返回该字段）](tag:hws)  **取值范围**：不涉及  [不支持该字段，请勿使用。](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,srg,fcs,fcs_vm,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,ct)
 
         :return: The loadbalancer_id of this CreateLoadBalancerResponse.
         :rtype: str
@@ -96,7 +96,7 @@ class CreateLoadBalancerResponse(SdkResponse):
     def loadbalancer_id(self, loadbalancer_id):
         r"""Sets the loadbalancer_id of this CreateLoadBalancerResponse.
 
-        参数解释：负载均衡器的ID。[（包周期场景返回该字段）](tag:hws)  [不支持该字段，请勿使用。](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,srg,fcs,fcs_vm,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,ct)
+        **参数解释**：负载均衡器的ID。[（包周期场景返回该字段）](tag:hws)  **取值范围**：不涉及  [不支持该字段，请勿使用。](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,srg,fcs,fcs_vm,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,ct)
 
         :param loadbalancer_id: The loadbalancer_id of this CreateLoadBalancerResponse.
         :type loadbalancer_id: str
@@ -107,7 +107,7 @@ class CreateLoadBalancerResponse(SdkResponse):
     def order_id(self):
         r"""Gets the order_id of this CreateLoadBalancerResponse.
 
-        参数解释：订单号[（包周期场景返回该字段）](tag:hws)  [不支持该字段，请勿使用。](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,srg,fcs,fcs_vm,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,ct)
+        **参数解释**：订单号[（包周期场景返回该字段）](tag:hws)  **取值范围**：不涉及  [不支持该字段，请勿使用。](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,srg,fcs,fcs_vm,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,ct)
 
         :return: The order_id of this CreateLoadBalancerResponse.
         :rtype: str
@@ -118,7 +118,7 @@ class CreateLoadBalancerResponse(SdkResponse):
     def order_id(self, order_id):
         r"""Sets the order_id of this CreateLoadBalancerResponse.
 
-        参数解释：订单号[（包周期场景返回该字段）](tag:hws)  [不支持该字段，请勿使用。](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,srg,fcs,fcs_vm,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,ct)
+        **参数解释**：订单号[（包周期场景返回该字段）](tag:hws)  **取值范围**：不涉及  [不支持该字段，请勿使用。](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,srg,fcs,fcs_vm,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,ct)
 
         :param order_id: The order_id of this CreateLoadBalancerResponse.
         :type order_id: str
@@ -129,7 +129,7 @@ class CreateLoadBalancerResponse(SdkResponse):
     def request_id(self):
         r"""Gets the request_id of this CreateLoadBalancerResponse.
 
-        参数解释：请求ID。  注：自动生成 。
+        **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
 
         :return: The request_id of this CreateLoadBalancerResponse.
         :rtype: str
@@ -140,7 +140,7 @@ class CreateLoadBalancerResponse(SdkResponse):
     def request_id(self, request_id):
         r"""Sets the request_id of this CreateLoadBalancerResponse.
 
-        参数解释：请求ID。  注：自动生成 。
+        **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
 
         :param request_id: The request_id of this CreateLoadBalancerResponse.
         :type request_id: str

@@ -83,61 +83,61 @@ class ListPoolsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param marker: 上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
+        :param marker: **参数解释**：上一页最后一条记录的ID。  **约束限制**： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。  **取值范围**：不涉及  **默认取值**：不涉及
         :type marker: str
-        :param limit: 参数解释：每页返回的个数。  取值范围：0-2000  默认取值：2000
+        :param limit: **参数解释**：每页返回的个数。  **约束限制**：不涉及  **取值范围**：0-2000  **默认取值**：2000
         :type limit: int
-        :param page_reverse: 是否反向查询。  取值： - true：查询上一页。 - false：查询下一页，默认。  使用说明： - 必须与limit一起使用。 - 当page_reverse&#x3D;true时，若要查询上一页，marker取值为当前页返回值的previous_marker。
+        :param page_reverse: **参数解释**：是否反向查询。  **约束限制**： - 必须与limit一起使用。 - 当page_reverse&#x3D;true时，若要查询上一页，marker取值为当前页返回值的previous_marker。  **取值范围**： - true：查询上一页。 - false：查询下一页。  **默认取值**：false
         :type page_reverse: bool
-        :param description: 后端服务器组的描述信息。  支持多值查询，查询条件格式：*description&#x3D;xxx&amp;description&#x3D;xxx*。
+        :param description: **参数解释**：后端服务器组的描述信息 支持多值查询，查询条件格式：*description&#x3D;xxx&amp;description&#x3D;xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type description: list[str]
-        :param admin_state_up: 后端服务器组的管理状态。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
+        :param admin_state_up: **参数解释**：后端服务器组的管理状态。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
         :type admin_state_up: bool
-        :param healthmonitor_id: 后端服务器组关联的健康检查的ID。  支持多值查询，查询条件格式：*healthmonitor_id&#x3D;xxx&amp;healthmonitor_id&#x3D;xxx*。
+        :param healthmonitor_id: **参数解释**：后端服务器组关联的健康检查的ID。 支持多值查询，查询条件格式：*healthmonitor_id&#x3D;xxx&amp;healthmonitor_id&#x3D;xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type healthmonitor_id: list[str]
-        :param id: 后端服务器组的ID。  支持多值查询，查询条件格式：*id&#x3D;xxx&amp;id&#x3D;xxx*。
+        :param id: **参数解释**：后端服务器组的ID。 支持多值查询，查询条件格式：*id&#x3D;xxx&amp;id&#x3D;xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type id: list[str]
-        :param name: 后端服务器组的名称。  支持多值查询，查询条件格式：*name&#x3D;xxx&amp;name&#x3D;xxx*。
+        :param name: **参数解释**：后端服务器组的名称。 支持多值查询，查询条件格式：*name&#x3D;xxx&amp;name&#x3D;xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type name: list[str]
-        :param loadbalancer_id: 后端服务器组绑定的负载均衡器ID。  支持多值查询，查询条件格式：*loadbalancer_id&#x3D;xxx&amp;loadbalancer_id&#x3D;xxx*。
+        :param loadbalancer_id: **参数解释**：后端服务器组绑定的负载均衡器ID。 支持多值查询，查询条件格式：*loadbalancer_id&#x3D;xxx&amp;loadbalancer_id&#x3D;xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type loadbalancer_id: list[str]
-        :param protocol: 后端服务器组的后端协议。  取值：TCP、UDP、[IP、](tag:hws_eu)TLS、HTTP、HTTPS、QUIC和GRPC。  支持多值查询，查询条件格式：*protocol&#x3D;xxx&amp;protocol&#x3D;xxx*。  [不支持QUIC协议。](tag:hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC。](tag:dt)
+        :param protocol: **参数解释**：后端服务器组的后端协议。 支持多值查询，查询条件格式：*protocol&#x3D;xxx&amp;protocol&#x3D;xxx*。  **约束限制**：不涉及  **取值范围**：TCP、UDP、[IP、](tag:hws_eu)TLS、HTTP、HTTPS、QUIC和GRPC。  **默认取值**：不涉及  [荷兰region不支持QUIC。](tag:dt)
         :type protocol: list[str]
-        :param lb_algorithm: 后端服务器组的负载均衡算法。  取值： - ROUND_ROBIN：加权轮询算法。 - LEAST_CONNECTIONS：加权最少连接算法。 - SOURCE_IP：源IP算法。 - QUIC_CID：连接ID算法。 [- 2_TUPLE_HASH：二元组hash算法，仅IP类型的pool支持。 - 3_TUPLE_HASH：三元组hash算法，仅IP类型的pool支持。 - 5_TUPLE_HASH：五元组hash算法，仅IP类型的pool支持。 - IP型pool不指定该字段时，默认设置为5_TUPLE_HASH。](tag:hws_eu)  支持多值查询，查询条件格式：*lb_algorithm&#x3D;xxx&amp;lb_algorithm&#x3D;xxx*。  [不支持QUIC_CID。](tag:hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC_CID。](tag:dt)
+        :param lb_algorithm: **参数解释**：后端服务器组的负载均衡算法。 支持多值查询，查询条件格式：*lb_algorithm&#x3D;xxx&amp;lb_algorithm&#x3D;xxx*。  **约束限制**：不涉及  **取值范围**： - ROUND_ROBIN：加权轮询算法。 - LEAST_CONNECTIONS：加权最少连接算法。 - SOURCE_IP：源IP算法。 - QUIC_CID：连接ID算法。 [- 2_TUPLE_HASH：二元组hash算法，仅IP类型的pool支持。 - 3_TUPLE_HASH：三元组hash算法，仅IP类型的pool支持。 - 5_TUPLE_HASH：五元组hash算法，仅IP类型的pool支持。 - IP型pool不指定该字段时，默认设置为5_TUPLE_HASH。](tag:hws_eu)  **默认取值**：不涉及
         :type lb_algorithm: list[str]
-        :param enterprise_project_id: 参数解释：所属的企业项目ID。 如果enterprise_project_id不传值，默认查询所有企业项目下的资源，鉴权按照细粒度权限鉴权，必须在用户组下分配elb:pools:list权限。 如果enterprise_project_id传值，鉴权按照企业项目权限鉴权，分为传入具体eps_id和all_granted_eps两种场景，前者查询指定eps_id的eps下的资源，后者查询的是所有有list权限的eps下的资源。  支持多值查询，查询条件格式： *enterprise_project_id&#x3D;xxx&amp;enterprise_project_id&#x3D;xxx*。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
+        :param enterprise_project_id: **参数解释**：资源所属的企业项目ID。 支持多值查询，查询条件格式： *enterprise_project_id&#x3D;xxx&amp;enterprise_project_id&#x3D;xxx*。  **约束限制**： 如果enterprise_project_id不传值，默认查询所有企业项目下的资源，鉴权按照细粒度权限鉴权，必须在用户组下分配elb:pools:list权限。 如果enterprise_project_id传值，鉴权按照企业项目权限鉴权，分为传入具体eps_id和all_granted_eps两种场景，前者查询指定eps_id的eps下的资源，后者查询的是所有有list权限的eps下的资源。  **取值范围**：不涉及  **默认取值**：不涉及  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
         :type enterprise_project_id: list[str]
-        :param ip_version: 后端服务器组支持的IP版本。  支持多值查询，查询条件格式：*ip_version&#x3D;xxx&amp;ip_version&#x3D;xxx*。
+        :param ip_version: **参数解释**：后端服务器组支持的IP版本。 支持多值查询，查询条件格式：*ip_version&#x3D;xxx&amp;ip_version&#x3D;xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type ip_version: list[str]
-        :param member_address: 后端服务器的IP地址。仅用于查询条件，不作为响应参数字段。  支持多值查询，查询条件格式：*member_address&#x3D;xxx&amp;member_address&#x3D;xxx*。
+        :param member_address: **参数解释**：后端服务器的IP地址。仅用于查询条件，不作为响应参数字段。 支持多值查询，查询条件格式：*member_address&#x3D;xxx&amp;member_address&#x3D;xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type member_address: list[str]
-        :param member_device_id: 后端服务器对应的弹性云服务器的ID。仅用于查询条件，不作为响应参数字段。  支持多值查询，查询条件格式：*member_device_id&#x3D;xxx&amp;member_device_id&#x3D;xxx*。
+        :param member_device_id: **参数解释**：后端服务器对应的弹性云服务器的ID。仅用于查询条件，不作为响应参数字段。 支持多值查询，查询条件格式：*member_device_id&#x3D;xxx&amp;member_device_id&#x3D;xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type member_device_id: list[str]
-        :param member_deletion_protection_enable: 是否开启删除保护，false不开启，true开启，不传查询全部。 [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)  [荷兰region不支持该字段，请勿使用。](tag:dt)
+        :param member_deletion_protection_enable: **参数解释**：是否开启删除保护。  **约束限制**：不涉及  **取值范围**：false 不开启，true 开启，不传查询全部。  **默认取值**：不涉及  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)  [荷兰region不支持该字段，请勿使用。](tag:dt)
         :type member_deletion_protection_enable: bool
-        :param listener_id: 关联的监听器ID，包括通过l7policy关联的。  支持多值查询，查询条件格式：*listener_id&#x3D;xxx&amp;listener_id&#x3D;xxx*。
+        :param listener_id: **参数解释**：关联的监听器ID，包括通过l7policy关联的。 支持多值查询，查询条件格式：*listener_id&#x3D;xxx&amp;listener_id&#x3D;xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type listener_id: list[str]
-        :param member_instance_id: 后端服务器ID。仅用于查询条件，不作为响应参数字段。  支持多值查询，查询条件格式：*member_instance_id&#x3D;xxx&amp;member_instance_id&#x3D;xxx*。
+        :param member_instance_id: **参数解释**：后端服务器ID。仅用于查询条件，不作为响应参数字段。 支持多值查询，查询条件格式：*member_instance_id&#x3D;xxx&amp;member_instance_id&#x3D;xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type member_instance_id: list[str]
-        :param vpc_id: 后端服务器组关联的虚拟私有云的ID。
+        :param vpc_id: **参数解释**：后端服务器组关联的虚拟私有云的ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type vpc_id: list[str]
-        :param type: 后端服务器组的类型。  取值： - instance：允许任意类型的后端，type指定为该类型时，vpc_id是必选字段。 - ip：只能添加跨VPC后端，type指定为该类型时，vpc_id不允许指定。 - 空字符串（\&quot;\&quot;）：允许任意类型的后端
+        :param type: **参数解释**：后端服务器组的类型。  **约束限制**：不涉及  **取值范围**： - instance：允许任意类型的后端，type指定为该类型时，vpc_id是必选字段。 - ip：只能添加IP类型后端，type指定为该类型时，vpc_id不允许指定。 - 空字符串（\&quot;\&quot;）：允许任意类型的后端  **默认取值**：不涉及
         :type type: list[str]
-        :param protection_status: 修改保护状态, 取值： - nonProtection: 不保护，默认值为nonProtection - consoleProtection: 控制台修改保护
+        :param protection_status: **参数解释**：修改保护状态,  **约束限制**：不涉及  **取值范围**： - nonProtection: 不保护，默认值为nonProtection - consoleProtection: 控制台修改保护  **默认取值**：不涉及
         :type protection_status: list[str]
-        :param connection_drain: 查询是否开启延迟注销的功能，查询条件格式：*connection_drain&#x3D;true或者*connection_drain&#x3D;false
+        :param connection_drain: **参数解释**：查询是否开启延迟注销的功能，查询条件格式：*connection_drain&#x3D;true或者*connection_drain&#x3D;false  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type connection_drain: bool
-        :param pool_health: 查询是否开启后端全下线转发功能，查询条件格式：*pool_health&#x3D;minimum_healthy_member_count&#x3D;0或者*pool_health&#x3D;minimum_healthy_member_count&#x3D;1
+        :param pool_health: **参数解释**：查询是否开启后端全下线转发功能，查询条件格式：*pool_health&#x3D;minimum_healthy_member_count&#x3D;0或者*pool_health&#x3D;minimum_healthy_member_count&#x3D;1  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type pool_health: str
-        :param any_port_enable: 后端是否开启端口透传。开启后，后端服务器端口与前端监听器端口保持一致。取值：false不开启，true开启。
+        :param any_port_enable: **参数解释**：后端是否开启全端口转发。开启后，后端服务器端口与前端监听器端口保持一致。  **约束限制**：不涉及  **取值范围**：false 不开启，true 开启。  **默认取值**：不涉及
         :type any_port_enable: bool
-        :param public_border_group: 网络公共边界组
+        :param public_border_group: **参数解释**：公网边界组。 支持多值查询，查询条件格式：*public_border_group&#x3D;xxx&amp;public_border_group&#x3D;xxx*。  **约束限制**：不涉及  **取值范围**： - center：表示中心站点的公网边界组 - 边缘站点名称：表示边缘站点的公网边界组  **默认取值**：不涉及
         :type public_border_group: str
-        :param quic_cid_len: 查询相同QUIC CID策略配置的后端服务器组，仅用于查询条件，不作为响应参数字段。 支持多值查询，查询条件格式：*quic_cid_len&#x3D;3&amp;quic_cid_len&#x3D;5*
+        :param quic_cid_len: **参数解释**：查询相同QUIC CID策略配置的后端服务器组，仅用于查询条件，不作为响应参数字段。 支持多值查询，查询条件格式：*quic_cid_len&#x3D;3&amp;quic_cid_len&#x3D;5*  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type quic_cid_len: int
-        :param quic_cid_offset: 查询相同QUIC CID策略配置的后端服务器组，仅用于查询条件，不作为响应参数字段。 支持多值查询，查询条件格式：*quic_cid_offset&#x3D;1&amp;quic_cid_offset&#x3D;3*
+        :param quic_cid_offset: **参数解释**：查询相同QUIC CID策略配置的后端服务器组，仅用于查询条件，不作为响应参数字段。 支持多值查询，查询条件格式：*quic_cid_offset&#x3D;1&amp;quic_cid_offset&#x3D;3*  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type quic_cid_offset: int
-        :param az_affinity: 查询后端服务器组可用区亲和性策略是否开启。示例如下： \&quot;az_affinity\&quot;: {             \&quot;enable\&quot;: \&quot;true\&quot;         }  支持多值查询，查询条件格式：  *az_affinity&#x3D;enable&#x3D;true&amp;az_affinity&#x3D;enable&#x3D;false*。
+        :param az_affinity: **参数解释**：查询后端服务器组可用区亲和性策略是否开启。示例如下： \&quot;az_affinity\&quot;: {             \&quot;enable\&quot;: \&quot;true\&quot;         } 支持多值查询，查询条件格式： *az_affinity&#x3D;enable&#x3D;true&amp;az_affinity&#x3D;enable&#x3D;false*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type az_affinity: list[str]
         """
         
@@ -234,7 +234,7 @@ class ListPoolsRequest:
     def marker(self):
         r"""Gets the marker of this ListPoolsRequest.
 
-        上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
+        **参数解释**：上一页最后一条记录的ID。  **约束限制**： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The marker of this ListPoolsRequest.
         :rtype: str
@@ -245,7 +245,7 @@ class ListPoolsRequest:
     def marker(self, marker):
         r"""Sets the marker of this ListPoolsRequest.
 
-        上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
+        **参数解释**：上一页最后一条记录的ID。  **约束限制**： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param marker: The marker of this ListPoolsRequest.
         :type marker: str
@@ -256,7 +256,7 @@ class ListPoolsRequest:
     def limit(self):
         r"""Gets the limit of this ListPoolsRequest.
 
-        参数解释：每页返回的个数。  取值范围：0-2000  默认取值：2000
+        **参数解释**：每页返回的个数。  **约束限制**：不涉及  **取值范围**：0-2000  **默认取值**：2000
 
         :return: The limit of this ListPoolsRequest.
         :rtype: int
@@ -267,7 +267,7 @@ class ListPoolsRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListPoolsRequest.
 
-        参数解释：每页返回的个数。  取值范围：0-2000  默认取值：2000
+        **参数解释**：每页返回的个数。  **约束限制**：不涉及  **取值范围**：0-2000  **默认取值**：2000
 
         :param limit: The limit of this ListPoolsRequest.
         :type limit: int
@@ -278,7 +278,7 @@ class ListPoolsRequest:
     def page_reverse(self):
         r"""Gets the page_reverse of this ListPoolsRequest.
 
-        是否反向查询。  取值： - true：查询上一页。 - false：查询下一页，默认。  使用说明： - 必须与limit一起使用。 - 当page_reverse=true时，若要查询上一页，marker取值为当前页返回值的previous_marker。
+        **参数解释**：是否反向查询。  **约束限制**： - 必须与limit一起使用。 - 当page_reverse=true时，若要查询上一页，marker取值为当前页返回值的previous_marker。  **取值范围**： - true：查询上一页。 - false：查询下一页。  **默认取值**：false
 
         :return: The page_reverse of this ListPoolsRequest.
         :rtype: bool
@@ -289,7 +289,7 @@ class ListPoolsRequest:
     def page_reverse(self, page_reverse):
         r"""Sets the page_reverse of this ListPoolsRequest.
 
-        是否反向查询。  取值： - true：查询上一页。 - false：查询下一页，默认。  使用说明： - 必须与limit一起使用。 - 当page_reverse=true时，若要查询上一页，marker取值为当前页返回值的previous_marker。
+        **参数解释**：是否反向查询。  **约束限制**： - 必须与limit一起使用。 - 当page_reverse=true时，若要查询上一页，marker取值为当前页返回值的previous_marker。  **取值范围**： - true：查询上一页。 - false：查询下一页。  **默认取值**：false
 
         :param page_reverse: The page_reverse of this ListPoolsRequest.
         :type page_reverse: bool
@@ -300,7 +300,7 @@ class ListPoolsRequest:
     def description(self):
         r"""Gets the description of this ListPoolsRequest.
 
-        后端服务器组的描述信息。  支持多值查询，查询条件格式：*description=xxx&description=xxx*。
+        **参数解释**：后端服务器组的描述信息 支持多值查询，查询条件格式：*description=xxx&description=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The description of this ListPoolsRequest.
         :rtype: list[str]
@@ -311,7 +311,7 @@ class ListPoolsRequest:
     def description(self, description):
         r"""Sets the description of this ListPoolsRequest.
 
-        后端服务器组的描述信息。  支持多值查询，查询条件格式：*description=xxx&description=xxx*。
+        **参数解释**：后端服务器组的描述信息 支持多值查询，查询条件格式：*description=xxx&description=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param description: The description of this ListPoolsRequest.
         :type description: list[str]
@@ -322,7 +322,7 @@ class ListPoolsRequest:
     def admin_state_up(self):
         r"""Gets the admin_state_up of this ListPoolsRequest.
 
-        后端服务器组的管理状态。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
+        **参数解释**：后端服务器组的管理状态。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
 
         :return: The admin_state_up of this ListPoolsRequest.
         :rtype: bool
@@ -333,7 +333,7 @@ class ListPoolsRequest:
     def admin_state_up(self, admin_state_up):
         r"""Sets the admin_state_up of this ListPoolsRequest.
 
-        后端服务器组的管理状态。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
+        **参数解释**：后端服务器组的管理状态。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
 
         :param admin_state_up: The admin_state_up of this ListPoolsRequest.
         :type admin_state_up: bool
@@ -344,7 +344,7 @@ class ListPoolsRequest:
     def healthmonitor_id(self):
         r"""Gets the healthmonitor_id of this ListPoolsRequest.
 
-        后端服务器组关联的健康检查的ID。  支持多值查询，查询条件格式：*healthmonitor_id=xxx&healthmonitor_id=xxx*。
+        **参数解释**：后端服务器组关联的健康检查的ID。 支持多值查询，查询条件格式：*healthmonitor_id=xxx&healthmonitor_id=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The healthmonitor_id of this ListPoolsRequest.
         :rtype: list[str]
@@ -355,7 +355,7 @@ class ListPoolsRequest:
     def healthmonitor_id(self, healthmonitor_id):
         r"""Sets the healthmonitor_id of this ListPoolsRequest.
 
-        后端服务器组关联的健康检查的ID。  支持多值查询，查询条件格式：*healthmonitor_id=xxx&healthmonitor_id=xxx*。
+        **参数解释**：后端服务器组关联的健康检查的ID。 支持多值查询，查询条件格式：*healthmonitor_id=xxx&healthmonitor_id=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param healthmonitor_id: The healthmonitor_id of this ListPoolsRequest.
         :type healthmonitor_id: list[str]
@@ -366,7 +366,7 @@ class ListPoolsRequest:
     def id(self):
         r"""Gets the id of this ListPoolsRequest.
 
-        后端服务器组的ID。  支持多值查询，查询条件格式：*id=xxx&id=xxx*。
+        **参数解释**：后端服务器组的ID。 支持多值查询，查询条件格式：*id=xxx&id=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The id of this ListPoolsRequest.
         :rtype: list[str]
@@ -377,7 +377,7 @@ class ListPoolsRequest:
     def id(self, id):
         r"""Sets the id of this ListPoolsRequest.
 
-        后端服务器组的ID。  支持多值查询，查询条件格式：*id=xxx&id=xxx*。
+        **参数解释**：后端服务器组的ID。 支持多值查询，查询条件格式：*id=xxx&id=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param id: The id of this ListPoolsRequest.
         :type id: list[str]
@@ -388,7 +388,7 @@ class ListPoolsRequest:
     def name(self):
         r"""Gets the name of this ListPoolsRequest.
 
-        后端服务器组的名称。  支持多值查询，查询条件格式：*name=xxx&name=xxx*。
+        **参数解释**：后端服务器组的名称。 支持多值查询，查询条件格式：*name=xxx&name=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The name of this ListPoolsRequest.
         :rtype: list[str]
@@ -399,7 +399,7 @@ class ListPoolsRequest:
     def name(self, name):
         r"""Sets the name of this ListPoolsRequest.
 
-        后端服务器组的名称。  支持多值查询，查询条件格式：*name=xxx&name=xxx*。
+        **参数解释**：后端服务器组的名称。 支持多值查询，查询条件格式：*name=xxx&name=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param name: The name of this ListPoolsRequest.
         :type name: list[str]
@@ -410,7 +410,7 @@ class ListPoolsRequest:
     def loadbalancer_id(self):
         r"""Gets the loadbalancer_id of this ListPoolsRequest.
 
-        后端服务器组绑定的负载均衡器ID。  支持多值查询，查询条件格式：*loadbalancer_id=xxx&loadbalancer_id=xxx*。
+        **参数解释**：后端服务器组绑定的负载均衡器ID。 支持多值查询，查询条件格式：*loadbalancer_id=xxx&loadbalancer_id=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The loadbalancer_id of this ListPoolsRequest.
         :rtype: list[str]
@@ -421,7 +421,7 @@ class ListPoolsRequest:
     def loadbalancer_id(self, loadbalancer_id):
         r"""Sets the loadbalancer_id of this ListPoolsRequest.
 
-        后端服务器组绑定的负载均衡器ID。  支持多值查询，查询条件格式：*loadbalancer_id=xxx&loadbalancer_id=xxx*。
+        **参数解释**：后端服务器组绑定的负载均衡器ID。 支持多值查询，查询条件格式：*loadbalancer_id=xxx&loadbalancer_id=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param loadbalancer_id: The loadbalancer_id of this ListPoolsRequest.
         :type loadbalancer_id: list[str]
@@ -432,7 +432,7 @@ class ListPoolsRequest:
     def protocol(self):
         r"""Gets the protocol of this ListPoolsRequest.
 
-        后端服务器组的后端协议。  取值：TCP、UDP、[IP、](tag:hws_eu)TLS、HTTP、HTTPS、QUIC和GRPC。  支持多值查询，查询条件格式：*protocol=xxx&protocol=xxx*。  [不支持QUIC协议。](tag:hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC。](tag:dt)
+        **参数解释**：后端服务器组的后端协议。 支持多值查询，查询条件格式：*protocol=xxx&protocol=xxx*。  **约束限制**：不涉及  **取值范围**：TCP、UDP、[IP、](tag:hws_eu)TLS、HTTP、HTTPS、QUIC和GRPC。  **默认取值**：不涉及  [荷兰region不支持QUIC。](tag:dt)
 
         :return: The protocol of this ListPoolsRequest.
         :rtype: list[str]
@@ -443,7 +443,7 @@ class ListPoolsRequest:
     def protocol(self, protocol):
         r"""Sets the protocol of this ListPoolsRequest.
 
-        后端服务器组的后端协议。  取值：TCP、UDP、[IP、](tag:hws_eu)TLS、HTTP、HTTPS、QUIC和GRPC。  支持多值查询，查询条件格式：*protocol=xxx&protocol=xxx*。  [不支持QUIC协议。](tag:hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC。](tag:dt)
+        **参数解释**：后端服务器组的后端协议。 支持多值查询，查询条件格式：*protocol=xxx&protocol=xxx*。  **约束限制**：不涉及  **取值范围**：TCP、UDP、[IP、](tag:hws_eu)TLS、HTTP、HTTPS、QUIC和GRPC。  **默认取值**：不涉及  [荷兰region不支持QUIC。](tag:dt)
 
         :param protocol: The protocol of this ListPoolsRequest.
         :type protocol: list[str]
@@ -454,7 +454,7 @@ class ListPoolsRequest:
     def lb_algorithm(self):
         r"""Gets the lb_algorithm of this ListPoolsRequest.
 
-        后端服务器组的负载均衡算法。  取值： - ROUND_ROBIN：加权轮询算法。 - LEAST_CONNECTIONS：加权最少连接算法。 - SOURCE_IP：源IP算法。 - QUIC_CID：连接ID算法。 [- 2_TUPLE_HASH：二元组hash算法，仅IP类型的pool支持。 - 3_TUPLE_HASH：三元组hash算法，仅IP类型的pool支持。 - 5_TUPLE_HASH：五元组hash算法，仅IP类型的pool支持。 - IP型pool不指定该字段时，默认设置为5_TUPLE_HASH。](tag:hws_eu)  支持多值查询，查询条件格式：*lb_algorithm=xxx&lb_algorithm=xxx*。  [不支持QUIC_CID。](tag:hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC_CID。](tag:dt)
+        **参数解释**：后端服务器组的负载均衡算法。 支持多值查询，查询条件格式：*lb_algorithm=xxx&lb_algorithm=xxx*。  **约束限制**：不涉及  **取值范围**： - ROUND_ROBIN：加权轮询算法。 - LEAST_CONNECTIONS：加权最少连接算法。 - SOURCE_IP：源IP算法。 - QUIC_CID：连接ID算法。 [- 2_TUPLE_HASH：二元组hash算法，仅IP类型的pool支持。 - 3_TUPLE_HASH：三元组hash算法，仅IP类型的pool支持。 - 5_TUPLE_HASH：五元组hash算法，仅IP类型的pool支持。 - IP型pool不指定该字段时，默认设置为5_TUPLE_HASH。](tag:hws_eu)  **默认取值**：不涉及
 
         :return: The lb_algorithm of this ListPoolsRequest.
         :rtype: list[str]
@@ -465,7 +465,7 @@ class ListPoolsRequest:
     def lb_algorithm(self, lb_algorithm):
         r"""Sets the lb_algorithm of this ListPoolsRequest.
 
-        后端服务器组的负载均衡算法。  取值： - ROUND_ROBIN：加权轮询算法。 - LEAST_CONNECTIONS：加权最少连接算法。 - SOURCE_IP：源IP算法。 - QUIC_CID：连接ID算法。 [- 2_TUPLE_HASH：二元组hash算法，仅IP类型的pool支持。 - 3_TUPLE_HASH：三元组hash算法，仅IP类型的pool支持。 - 5_TUPLE_HASH：五元组hash算法，仅IP类型的pool支持。 - IP型pool不指定该字段时，默认设置为5_TUPLE_HASH。](tag:hws_eu)  支持多值查询，查询条件格式：*lb_algorithm=xxx&lb_algorithm=xxx*。  [不支持QUIC_CID。](tag:hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC_CID。](tag:dt)
+        **参数解释**：后端服务器组的负载均衡算法。 支持多值查询，查询条件格式：*lb_algorithm=xxx&lb_algorithm=xxx*。  **约束限制**：不涉及  **取值范围**： - ROUND_ROBIN：加权轮询算法。 - LEAST_CONNECTIONS：加权最少连接算法。 - SOURCE_IP：源IP算法。 - QUIC_CID：连接ID算法。 [- 2_TUPLE_HASH：二元组hash算法，仅IP类型的pool支持。 - 3_TUPLE_HASH：三元组hash算法，仅IP类型的pool支持。 - 5_TUPLE_HASH：五元组hash算法，仅IP类型的pool支持。 - IP型pool不指定该字段时，默认设置为5_TUPLE_HASH。](tag:hws_eu)  **默认取值**：不涉及
 
         :param lb_algorithm: The lb_algorithm of this ListPoolsRequest.
         :type lb_algorithm: list[str]
@@ -476,7 +476,7 @@ class ListPoolsRequest:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this ListPoolsRequest.
 
-        参数解释：所属的企业项目ID。 如果enterprise_project_id不传值，默认查询所有企业项目下的资源，鉴权按照细粒度权限鉴权，必须在用户组下分配elb:pools:list权限。 如果enterprise_project_id传值，鉴权按照企业项目权限鉴权，分为传入具体eps_id和all_granted_eps两种场景，前者查询指定eps_id的eps下的资源，后者查询的是所有有list权限的eps下的资源。  支持多值查询，查询条件格式： *enterprise_project_id=xxx&enterprise_project_id=xxx*。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
+        **参数解释**：资源所属的企业项目ID。 支持多值查询，查询条件格式： *enterprise_project_id=xxx&enterprise_project_id=xxx*。  **约束限制**： 如果enterprise_project_id不传值，默认查询所有企业项目下的资源，鉴权按照细粒度权限鉴权，必须在用户组下分配elb:pools:list权限。 如果enterprise_project_id传值，鉴权按照企业项目权限鉴权，分为传入具体eps_id和all_granted_eps两种场景，前者查询指定eps_id的eps下的资源，后者查询的是所有有list权限的eps下的资源。  **取值范围**：不涉及  **默认取值**：不涉及  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
 
         :return: The enterprise_project_id of this ListPoolsRequest.
         :rtype: list[str]
@@ -487,7 +487,7 @@ class ListPoolsRequest:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this ListPoolsRequest.
 
-        参数解释：所属的企业项目ID。 如果enterprise_project_id不传值，默认查询所有企业项目下的资源，鉴权按照细粒度权限鉴权，必须在用户组下分配elb:pools:list权限。 如果enterprise_project_id传值，鉴权按照企业项目权限鉴权，分为传入具体eps_id和all_granted_eps两种场景，前者查询指定eps_id的eps下的资源，后者查询的是所有有list权限的eps下的资源。  支持多值查询，查询条件格式： *enterprise_project_id=xxx&enterprise_project_id=xxx*。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
+        **参数解释**：资源所属的企业项目ID。 支持多值查询，查询条件格式： *enterprise_project_id=xxx&enterprise_project_id=xxx*。  **约束限制**： 如果enterprise_project_id不传值，默认查询所有企业项目下的资源，鉴权按照细粒度权限鉴权，必须在用户组下分配elb:pools:list权限。 如果enterprise_project_id传值，鉴权按照企业项目权限鉴权，分为传入具体eps_id和all_granted_eps两种场景，前者查询指定eps_id的eps下的资源，后者查询的是所有有list权限的eps下的资源。  **取值范围**：不涉及  **默认取值**：不涉及  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
 
         :param enterprise_project_id: The enterprise_project_id of this ListPoolsRequest.
         :type enterprise_project_id: list[str]
@@ -498,7 +498,7 @@ class ListPoolsRequest:
     def ip_version(self):
         r"""Gets the ip_version of this ListPoolsRequest.
 
-        后端服务器组支持的IP版本。  支持多值查询，查询条件格式：*ip_version=xxx&ip_version=xxx*。
+        **参数解释**：后端服务器组支持的IP版本。 支持多值查询，查询条件格式：*ip_version=xxx&ip_version=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The ip_version of this ListPoolsRequest.
         :rtype: list[str]
@@ -509,7 +509,7 @@ class ListPoolsRequest:
     def ip_version(self, ip_version):
         r"""Sets the ip_version of this ListPoolsRequest.
 
-        后端服务器组支持的IP版本。  支持多值查询，查询条件格式：*ip_version=xxx&ip_version=xxx*。
+        **参数解释**：后端服务器组支持的IP版本。 支持多值查询，查询条件格式：*ip_version=xxx&ip_version=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param ip_version: The ip_version of this ListPoolsRequest.
         :type ip_version: list[str]
@@ -520,7 +520,7 @@ class ListPoolsRequest:
     def member_address(self):
         r"""Gets the member_address of this ListPoolsRequest.
 
-        后端服务器的IP地址。仅用于查询条件，不作为响应参数字段。  支持多值查询，查询条件格式：*member_address=xxx&member_address=xxx*。
+        **参数解释**：后端服务器的IP地址。仅用于查询条件，不作为响应参数字段。 支持多值查询，查询条件格式：*member_address=xxx&member_address=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The member_address of this ListPoolsRequest.
         :rtype: list[str]
@@ -531,7 +531,7 @@ class ListPoolsRequest:
     def member_address(self, member_address):
         r"""Sets the member_address of this ListPoolsRequest.
 
-        后端服务器的IP地址。仅用于查询条件，不作为响应参数字段。  支持多值查询，查询条件格式：*member_address=xxx&member_address=xxx*。
+        **参数解释**：后端服务器的IP地址。仅用于查询条件，不作为响应参数字段。 支持多值查询，查询条件格式：*member_address=xxx&member_address=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param member_address: The member_address of this ListPoolsRequest.
         :type member_address: list[str]
@@ -542,7 +542,7 @@ class ListPoolsRequest:
     def member_device_id(self):
         r"""Gets the member_device_id of this ListPoolsRequest.
 
-        后端服务器对应的弹性云服务器的ID。仅用于查询条件，不作为响应参数字段。  支持多值查询，查询条件格式：*member_device_id=xxx&member_device_id=xxx*。
+        **参数解释**：后端服务器对应的弹性云服务器的ID。仅用于查询条件，不作为响应参数字段。 支持多值查询，查询条件格式：*member_device_id=xxx&member_device_id=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The member_device_id of this ListPoolsRequest.
         :rtype: list[str]
@@ -553,7 +553,7 @@ class ListPoolsRequest:
     def member_device_id(self, member_device_id):
         r"""Sets the member_device_id of this ListPoolsRequest.
 
-        后端服务器对应的弹性云服务器的ID。仅用于查询条件，不作为响应参数字段。  支持多值查询，查询条件格式：*member_device_id=xxx&member_device_id=xxx*。
+        **参数解释**：后端服务器对应的弹性云服务器的ID。仅用于查询条件，不作为响应参数字段。 支持多值查询，查询条件格式：*member_device_id=xxx&member_device_id=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param member_device_id: The member_device_id of this ListPoolsRequest.
         :type member_device_id: list[str]
@@ -564,7 +564,7 @@ class ListPoolsRequest:
     def member_deletion_protection_enable(self):
         r"""Gets the member_deletion_protection_enable of this ListPoolsRequest.
 
-        是否开启删除保护，false不开启，true开启，不传查询全部。 [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)  [荷兰region不支持该字段，请勿使用。](tag:dt)
+        **参数解释**：是否开启删除保护。  **约束限制**：不涉及  **取值范围**：false 不开启，true 开启，不传查询全部。  **默认取值**：不涉及  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)  [荷兰region不支持该字段，请勿使用。](tag:dt)
 
         :return: The member_deletion_protection_enable of this ListPoolsRequest.
         :rtype: bool
@@ -575,7 +575,7 @@ class ListPoolsRequest:
     def member_deletion_protection_enable(self, member_deletion_protection_enable):
         r"""Sets the member_deletion_protection_enable of this ListPoolsRequest.
 
-        是否开启删除保护，false不开启，true开启，不传查询全部。 [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)  [荷兰region不支持该字段，请勿使用。](tag:dt)
+        **参数解释**：是否开启删除保护。  **约束限制**：不涉及  **取值范围**：false 不开启，true 开启，不传查询全部。  **默认取值**：不涉及  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)  [荷兰region不支持该字段，请勿使用。](tag:dt)
 
         :param member_deletion_protection_enable: The member_deletion_protection_enable of this ListPoolsRequest.
         :type member_deletion_protection_enable: bool
@@ -586,7 +586,7 @@ class ListPoolsRequest:
     def listener_id(self):
         r"""Gets the listener_id of this ListPoolsRequest.
 
-        关联的监听器ID，包括通过l7policy关联的。  支持多值查询，查询条件格式：*listener_id=xxx&listener_id=xxx*。
+        **参数解释**：关联的监听器ID，包括通过l7policy关联的。 支持多值查询，查询条件格式：*listener_id=xxx&listener_id=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The listener_id of this ListPoolsRequest.
         :rtype: list[str]
@@ -597,7 +597,7 @@ class ListPoolsRequest:
     def listener_id(self, listener_id):
         r"""Sets the listener_id of this ListPoolsRequest.
 
-        关联的监听器ID，包括通过l7policy关联的。  支持多值查询，查询条件格式：*listener_id=xxx&listener_id=xxx*。
+        **参数解释**：关联的监听器ID，包括通过l7policy关联的。 支持多值查询，查询条件格式：*listener_id=xxx&listener_id=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param listener_id: The listener_id of this ListPoolsRequest.
         :type listener_id: list[str]
@@ -608,7 +608,7 @@ class ListPoolsRequest:
     def member_instance_id(self):
         r"""Gets the member_instance_id of this ListPoolsRequest.
 
-        后端服务器ID。仅用于查询条件，不作为响应参数字段。  支持多值查询，查询条件格式：*member_instance_id=xxx&member_instance_id=xxx*。
+        **参数解释**：后端服务器ID。仅用于查询条件，不作为响应参数字段。 支持多值查询，查询条件格式：*member_instance_id=xxx&member_instance_id=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The member_instance_id of this ListPoolsRequest.
         :rtype: list[str]
@@ -619,7 +619,7 @@ class ListPoolsRequest:
     def member_instance_id(self, member_instance_id):
         r"""Sets the member_instance_id of this ListPoolsRequest.
 
-        后端服务器ID。仅用于查询条件，不作为响应参数字段。  支持多值查询，查询条件格式：*member_instance_id=xxx&member_instance_id=xxx*。
+        **参数解释**：后端服务器ID。仅用于查询条件，不作为响应参数字段。 支持多值查询，查询条件格式：*member_instance_id=xxx&member_instance_id=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param member_instance_id: The member_instance_id of this ListPoolsRequest.
         :type member_instance_id: list[str]
@@ -630,7 +630,7 @@ class ListPoolsRequest:
     def vpc_id(self):
         r"""Gets the vpc_id of this ListPoolsRequest.
 
-        后端服务器组关联的虚拟私有云的ID。
+        **参数解释**：后端服务器组关联的虚拟私有云的ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The vpc_id of this ListPoolsRequest.
         :rtype: list[str]
@@ -641,7 +641,7 @@ class ListPoolsRequest:
     def vpc_id(self, vpc_id):
         r"""Sets the vpc_id of this ListPoolsRequest.
 
-        后端服务器组关联的虚拟私有云的ID。
+        **参数解释**：后端服务器组关联的虚拟私有云的ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param vpc_id: The vpc_id of this ListPoolsRequest.
         :type vpc_id: list[str]
@@ -652,7 +652,7 @@ class ListPoolsRequest:
     def type(self):
         r"""Gets the type of this ListPoolsRequest.
 
-        后端服务器组的类型。  取值： - instance：允许任意类型的后端，type指定为该类型时，vpc_id是必选字段。 - ip：只能添加跨VPC后端，type指定为该类型时，vpc_id不允许指定。 - 空字符串（\"\"）：允许任意类型的后端
+        **参数解释**：后端服务器组的类型。  **约束限制**：不涉及  **取值范围**： - instance：允许任意类型的后端，type指定为该类型时，vpc_id是必选字段。 - ip：只能添加IP类型后端，type指定为该类型时，vpc_id不允许指定。 - 空字符串（\"\"）：允许任意类型的后端  **默认取值**：不涉及
 
         :return: The type of this ListPoolsRequest.
         :rtype: list[str]
@@ -663,7 +663,7 @@ class ListPoolsRequest:
     def type(self, type):
         r"""Sets the type of this ListPoolsRequest.
 
-        后端服务器组的类型。  取值： - instance：允许任意类型的后端，type指定为该类型时，vpc_id是必选字段。 - ip：只能添加跨VPC后端，type指定为该类型时，vpc_id不允许指定。 - 空字符串（\"\"）：允许任意类型的后端
+        **参数解释**：后端服务器组的类型。  **约束限制**：不涉及  **取值范围**： - instance：允许任意类型的后端，type指定为该类型时，vpc_id是必选字段。 - ip：只能添加IP类型后端，type指定为该类型时，vpc_id不允许指定。 - 空字符串（\"\"）：允许任意类型的后端  **默认取值**：不涉及
 
         :param type: The type of this ListPoolsRequest.
         :type type: list[str]
@@ -674,7 +674,7 @@ class ListPoolsRequest:
     def protection_status(self):
         r"""Gets the protection_status of this ListPoolsRequest.
 
-        修改保护状态, 取值： - nonProtection: 不保护，默认值为nonProtection - consoleProtection: 控制台修改保护
+        **参数解释**：修改保护状态,  **约束限制**：不涉及  **取值范围**： - nonProtection: 不保护，默认值为nonProtection - consoleProtection: 控制台修改保护  **默认取值**：不涉及
 
         :return: The protection_status of this ListPoolsRequest.
         :rtype: list[str]
@@ -685,7 +685,7 @@ class ListPoolsRequest:
     def protection_status(self, protection_status):
         r"""Sets the protection_status of this ListPoolsRequest.
 
-        修改保护状态, 取值： - nonProtection: 不保护，默认值为nonProtection - consoleProtection: 控制台修改保护
+        **参数解释**：修改保护状态,  **约束限制**：不涉及  **取值范围**： - nonProtection: 不保护，默认值为nonProtection - consoleProtection: 控制台修改保护  **默认取值**：不涉及
 
         :param protection_status: The protection_status of this ListPoolsRequest.
         :type protection_status: list[str]
@@ -696,7 +696,7 @@ class ListPoolsRequest:
     def connection_drain(self):
         r"""Gets the connection_drain of this ListPoolsRequest.
 
-        查询是否开启延迟注销的功能，查询条件格式：*connection_drain=true或者*connection_drain=false
+        **参数解释**：查询是否开启延迟注销的功能，查询条件格式：*connection_drain=true或者*connection_drain=false  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The connection_drain of this ListPoolsRequest.
         :rtype: bool
@@ -707,7 +707,7 @@ class ListPoolsRequest:
     def connection_drain(self, connection_drain):
         r"""Sets the connection_drain of this ListPoolsRequest.
 
-        查询是否开启延迟注销的功能，查询条件格式：*connection_drain=true或者*connection_drain=false
+        **参数解释**：查询是否开启延迟注销的功能，查询条件格式：*connection_drain=true或者*connection_drain=false  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param connection_drain: The connection_drain of this ListPoolsRequest.
         :type connection_drain: bool
@@ -718,7 +718,7 @@ class ListPoolsRequest:
     def pool_health(self):
         r"""Gets the pool_health of this ListPoolsRequest.
 
-        查询是否开启后端全下线转发功能，查询条件格式：*pool_health=minimum_healthy_member_count=0或者*pool_health=minimum_healthy_member_count=1
+        **参数解释**：查询是否开启后端全下线转发功能，查询条件格式：*pool_health=minimum_healthy_member_count=0或者*pool_health=minimum_healthy_member_count=1  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The pool_health of this ListPoolsRequest.
         :rtype: str
@@ -729,7 +729,7 @@ class ListPoolsRequest:
     def pool_health(self, pool_health):
         r"""Sets the pool_health of this ListPoolsRequest.
 
-        查询是否开启后端全下线转发功能，查询条件格式：*pool_health=minimum_healthy_member_count=0或者*pool_health=minimum_healthy_member_count=1
+        **参数解释**：查询是否开启后端全下线转发功能，查询条件格式：*pool_health=minimum_healthy_member_count=0或者*pool_health=minimum_healthy_member_count=1  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param pool_health: The pool_health of this ListPoolsRequest.
         :type pool_health: str
@@ -740,7 +740,7 @@ class ListPoolsRequest:
     def any_port_enable(self):
         r"""Gets the any_port_enable of this ListPoolsRequest.
 
-        后端是否开启端口透传。开启后，后端服务器端口与前端监听器端口保持一致。取值：false不开启，true开启。
+        **参数解释**：后端是否开启全端口转发。开启后，后端服务器端口与前端监听器端口保持一致。  **约束限制**：不涉及  **取值范围**：false 不开启，true 开启。  **默认取值**：不涉及
 
         :return: The any_port_enable of this ListPoolsRequest.
         :rtype: bool
@@ -751,7 +751,7 @@ class ListPoolsRequest:
     def any_port_enable(self, any_port_enable):
         r"""Sets the any_port_enable of this ListPoolsRequest.
 
-        后端是否开启端口透传。开启后，后端服务器端口与前端监听器端口保持一致。取值：false不开启，true开启。
+        **参数解释**：后端是否开启全端口转发。开启后，后端服务器端口与前端监听器端口保持一致。  **约束限制**：不涉及  **取值范围**：false 不开启，true 开启。  **默认取值**：不涉及
 
         :param any_port_enable: The any_port_enable of this ListPoolsRequest.
         :type any_port_enable: bool
@@ -762,7 +762,7 @@ class ListPoolsRequest:
     def public_border_group(self):
         r"""Gets the public_border_group of this ListPoolsRequest.
 
-        网络公共边界组
+        **参数解释**：公网边界组。 支持多值查询，查询条件格式：*public_border_group=xxx&public_border_group=xxx*。  **约束限制**：不涉及  **取值范围**： - center：表示中心站点的公网边界组 - 边缘站点名称：表示边缘站点的公网边界组  **默认取值**：不涉及
 
         :return: The public_border_group of this ListPoolsRequest.
         :rtype: str
@@ -773,7 +773,7 @@ class ListPoolsRequest:
     def public_border_group(self, public_border_group):
         r"""Sets the public_border_group of this ListPoolsRequest.
 
-        网络公共边界组
+        **参数解释**：公网边界组。 支持多值查询，查询条件格式：*public_border_group=xxx&public_border_group=xxx*。  **约束限制**：不涉及  **取值范围**： - center：表示中心站点的公网边界组 - 边缘站点名称：表示边缘站点的公网边界组  **默认取值**：不涉及
 
         :param public_border_group: The public_border_group of this ListPoolsRequest.
         :type public_border_group: str
@@ -784,7 +784,7 @@ class ListPoolsRequest:
     def quic_cid_len(self):
         r"""Gets the quic_cid_len of this ListPoolsRequest.
 
-        查询相同QUIC CID策略配置的后端服务器组，仅用于查询条件，不作为响应参数字段。 支持多值查询，查询条件格式：*quic_cid_len=3&quic_cid_len=5*
+        **参数解释**：查询相同QUIC CID策略配置的后端服务器组，仅用于查询条件，不作为响应参数字段。 支持多值查询，查询条件格式：*quic_cid_len=3&quic_cid_len=5*  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The quic_cid_len of this ListPoolsRequest.
         :rtype: int
@@ -795,7 +795,7 @@ class ListPoolsRequest:
     def quic_cid_len(self, quic_cid_len):
         r"""Sets the quic_cid_len of this ListPoolsRequest.
 
-        查询相同QUIC CID策略配置的后端服务器组，仅用于查询条件，不作为响应参数字段。 支持多值查询，查询条件格式：*quic_cid_len=3&quic_cid_len=5*
+        **参数解释**：查询相同QUIC CID策略配置的后端服务器组，仅用于查询条件，不作为响应参数字段。 支持多值查询，查询条件格式：*quic_cid_len=3&quic_cid_len=5*  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param quic_cid_len: The quic_cid_len of this ListPoolsRequest.
         :type quic_cid_len: int
@@ -806,7 +806,7 @@ class ListPoolsRequest:
     def quic_cid_offset(self):
         r"""Gets the quic_cid_offset of this ListPoolsRequest.
 
-        查询相同QUIC CID策略配置的后端服务器组，仅用于查询条件，不作为响应参数字段。 支持多值查询，查询条件格式：*quic_cid_offset=1&quic_cid_offset=3*
+        **参数解释**：查询相同QUIC CID策略配置的后端服务器组，仅用于查询条件，不作为响应参数字段。 支持多值查询，查询条件格式：*quic_cid_offset=1&quic_cid_offset=3*  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The quic_cid_offset of this ListPoolsRequest.
         :rtype: int
@@ -817,7 +817,7 @@ class ListPoolsRequest:
     def quic_cid_offset(self, quic_cid_offset):
         r"""Sets the quic_cid_offset of this ListPoolsRequest.
 
-        查询相同QUIC CID策略配置的后端服务器组，仅用于查询条件，不作为响应参数字段。 支持多值查询，查询条件格式：*quic_cid_offset=1&quic_cid_offset=3*
+        **参数解释**：查询相同QUIC CID策略配置的后端服务器组，仅用于查询条件，不作为响应参数字段。 支持多值查询，查询条件格式：*quic_cid_offset=1&quic_cid_offset=3*  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param quic_cid_offset: The quic_cid_offset of this ListPoolsRequest.
         :type quic_cid_offset: int
@@ -828,7 +828,7 @@ class ListPoolsRequest:
     def az_affinity(self):
         r"""Gets the az_affinity of this ListPoolsRequest.
 
-        查询后端服务器组可用区亲和性策略是否开启。示例如下： \"az_affinity\": {             \"enable\": \"true\"         }  支持多值查询，查询条件格式：  *az_affinity=enable=true&az_affinity=enable=false*。
+        **参数解释**：查询后端服务器组可用区亲和性策略是否开启。示例如下： \"az_affinity\": {             \"enable\": \"true\"         } 支持多值查询，查询条件格式： *az_affinity=enable=true&az_affinity=enable=false*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The az_affinity of this ListPoolsRequest.
         :rtype: list[str]
@@ -839,7 +839,7 @@ class ListPoolsRequest:
     def az_affinity(self, az_affinity):
         r"""Sets the az_affinity of this ListPoolsRequest.
 
-        查询后端服务器组可用区亲和性策略是否开启。示例如下： \"az_affinity\": {             \"enable\": \"true\"         }  支持多值查询，查询条件格式：  *az_affinity=enable=true&az_affinity=enable=false*。
+        **参数解释**：查询后端服务器组可用区亲和性策略是否开启。示例如下： \"az_affinity\": {             \"enable\": \"true\"         } 支持多值查询，查询条件格式： *az_affinity=enable=true&az_affinity=enable=false*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param az_affinity: The az_affinity of this ListPoolsRequest.
         :type az_affinity: list[str]
