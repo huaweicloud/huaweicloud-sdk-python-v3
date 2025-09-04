@@ -24,6 +24,7 @@ class ShowInstanceResponse(SdkResponse):
         'name': 'str',
         'flavor': 'Flavor',
         'status': 'str',
+        'region_id': 'str',
         'description': 'str',
         'access_infos': 'list[AccessInfo]',
         'create_time': 'str',
@@ -42,6 +43,7 @@ class ShowInstanceResponse(SdkResponse):
         'name': 'name',
         'flavor': 'flavor',
         'status': 'status',
+        'region_id': 'region_id',
         'description': 'description',
         'access_infos': 'access_infos',
         'create_time': 'create_time',
@@ -53,7 +55,7 @@ class ShowInstanceResponse(SdkResponse):
         'additional_params': 'additional_params'
     }
 
-    def __init__(self, instance_type=None, instance_id=None, charge_mode=None, name=None, flavor=None, status=None, description=None, access_infos=None, create_time=None, update_time=None, enterprise_project_id=None, tags=None, order_id=None, operate_window=None, additional_params=None):
+    def __init__(self, instance_type=None, instance_id=None, charge_mode=None, name=None, flavor=None, status=None, region_id=None, description=None, access_infos=None, create_time=None, update_time=None, enterprise_project_id=None, tags=None, order_id=None, operate_window=None, additional_params=None):
         r"""ShowInstanceResponse
 
         The model defined in huaweicloud sdk
@@ -64,25 +66,27 @@ class ShowInstanceResponse(SdkResponse):
         :type instance_id: str
         :param charge_mode: **参数说明**：实例的付费方式。 **取值范围**： - prePaid：包年/包月 - postPaid：按需计费 
         :type charge_mode: str
-        :param name: **参数说明**：实例名称 **取值范围**：由中文字符，英文字母、数字及“_”、“-”组成，且长度为[1-64]个字符。 
+        :param name: **参数说明**：实例名称。 **取值范围**：由中文字符，英文字母、数字及“_”、“-”组成，且长度为[1-64]个字符。 
         :type name: str
         :param flavor: 
         :type flavor: :class:`huaweicloudsdkiotdm.v5.Flavor`
-        :param status: **参数说明**：实例状态。 **取值范围**： - CREATING：实例正在创建 - ACTIVE：实例正常 - FROZEN：实例冻结 - MODIFYING：实例正在变更规格 - FAILED：实例创建失败 
+        :param status: **参数说明**：实例状态。 **取值范围**： - CREATING：实例正在创建 - ACTIVE：实例正常 - FROZEN：实例冻结 - TRADING: 实例正在进行交易 - MODIFYING：实例正在变更规格 - MODIFY_FAILED: 实例变更失败 - FAILED：实例创建失败 
         :type status: str
-        :param description: **参数说明**：设备接入实例的描述信息。 **取值范围**：由中文，字母，数字，句号，逗号，下划线（“_”），中划线（“-”），空格组成，且长度为[1-256]个字符。 
+        :param region_id: **参数说明**：实例所属region。 
+        :type region_id: str
+        :param description: **参数说明**：设备接入实例的描述信息。 **取值范围**：长度不超过256，只允许中文、字母、数字、以及_，,.。、&amp;-等字符的组合。 
         :type description: str
-        :param access_infos: **参数说明**：设备接入实例的接入信息 
+        :param access_infos: **参数说明**：设备接入实例的接入信息。 
         :type access_infos: list[:class:`huaweicloudsdkiotdm.v5.AccessInfo`]
-        :param create_time: **参数说明**：实例的创建时间。时间格式例如：2023-01-28T06:57:52Z 
+        :param create_time: **参数说明**：实例的创建时间。时间格式例如：2023-01-28T06:57:52Z。 
         :type create_time: str
-        :param update_time: **参数说明**：实例的最近一次更新的时间。时间格式例如：2023-01-28T06:57:52Z 
+        :param update_time: **参数说明**：实例的最近一次更新的时间。时间格式例如：2023-01-28T06:57:52Z。 
         :type update_time: str
         :param enterprise_project_id: **参数说明**：企业项目Id。
         :type enterprise_project_id: str
         :param tags: **参数说明**: 设备接入实例的标签信息。如果实例有标签，则会有该字段，否则该字段为空。 
         :type tags: list[:class:`huaweicloudsdkiotdm.v5.Tag`]
-        :param order_id: **参数说明**：订单号，仅包年包月实例返回该参数。[查看订单详情请参考[[查询订单详情](https://support.huaweicloud.com/api-bpconsole/zh-cn_topic_0075746564.html)。]](tag:hws)
+        :param order_id: **参数说明**：订单号，仅包年包月实例返回该参数。[查看订单详情请参考[查询订单详情](https://support.huaweicloud.com/api-bpconsole/zh-cn_topic_0075746564.html)。](tag:hws) 
         :type order_id: str
         :param operate_window: 
         :type operate_window: :class:`huaweicloudsdkiotdm.v5.OperateWindow`
@@ -98,6 +102,7 @@ class ShowInstanceResponse(SdkResponse):
         self._name = None
         self._flavor = None
         self._status = None
+        self._region_id = None
         self._description = None
         self._access_infos = None
         self._create_time = None
@@ -121,6 +126,8 @@ class ShowInstanceResponse(SdkResponse):
             self.flavor = flavor
         if status is not None:
             self.status = status
+        if region_id is not None:
+            self.region_id = region_id
         if description is not None:
             self.description = description
         if access_infos is not None:
@@ -210,7 +217,7 @@ class ShowInstanceResponse(SdkResponse):
     def name(self):
         r"""Gets the name of this ShowInstanceResponse.
 
-        **参数说明**：实例名称 **取值范围**：由中文字符，英文字母、数字及“_”、“-”组成，且长度为[1-64]个字符。 
+        **参数说明**：实例名称。 **取值范围**：由中文字符，英文字母、数字及“_”、“-”组成，且长度为[1-64]个字符。 
 
         :return: The name of this ShowInstanceResponse.
         :rtype: str
@@ -221,7 +228,7 @@ class ShowInstanceResponse(SdkResponse):
     def name(self, name):
         r"""Sets the name of this ShowInstanceResponse.
 
-        **参数说明**：实例名称 **取值范围**：由中文字符，英文字母、数字及“_”、“-”组成，且长度为[1-64]个字符。 
+        **参数说明**：实例名称。 **取值范围**：由中文字符，英文字母、数字及“_”、“-”组成，且长度为[1-64]个字符。 
 
         :param name: The name of this ShowInstanceResponse.
         :type name: str
@@ -250,7 +257,7 @@ class ShowInstanceResponse(SdkResponse):
     def status(self):
         r"""Gets the status of this ShowInstanceResponse.
 
-        **参数说明**：实例状态。 **取值范围**： - CREATING：实例正在创建 - ACTIVE：实例正常 - FROZEN：实例冻结 - MODIFYING：实例正在变更规格 - FAILED：实例创建失败 
+        **参数说明**：实例状态。 **取值范围**： - CREATING：实例正在创建 - ACTIVE：实例正常 - FROZEN：实例冻结 - TRADING: 实例正在进行交易 - MODIFYING：实例正在变更规格 - MODIFY_FAILED: 实例变更失败 - FAILED：实例创建失败 
 
         :return: The status of this ShowInstanceResponse.
         :rtype: str
@@ -261,7 +268,7 @@ class ShowInstanceResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this ShowInstanceResponse.
 
-        **参数说明**：实例状态。 **取值范围**： - CREATING：实例正在创建 - ACTIVE：实例正常 - FROZEN：实例冻结 - MODIFYING：实例正在变更规格 - FAILED：实例创建失败 
+        **参数说明**：实例状态。 **取值范围**： - CREATING：实例正在创建 - ACTIVE：实例正常 - FROZEN：实例冻结 - TRADING: 实例正在进行交易 - MODIFYING：实例正在变更规格 - MODIFY_FAILED: 实例变更失败 - FAILED：实例创建失败 
 
         :param status: The status of this ShowInstanceResponse.
         :type status: str
@@ -269,10 +276,32 @@ class ShowInstanceResponse(SdkResponse):
         self._status = status
 
     @property
+    def region_id(self):
+        r"""Gets the region_id of this ShowInstanceResponse.
+
+        **参数说明**：实例所属region。 
+
+        :return: The region_id of this ShowInstanceResponse.
+        :rtype: str
+        """
+        return self._region_id
+
+    @region_id.setter
+    def region_id(self, region_id):
+        r"""Sets the region_id of this ShowInstanceResponse.
+
+        **参数说明**：实例所属region。 
+
+        :param region_id: The region_id of this ShowInstanceResponse.
+        :type region_id: str
+        """
+        self._region_id = region_id
+
+    @property
     def description(self):
         r"""Gets the description of this ShowInstanceResponse.
 
-        **参数说明**：设备接入实例的描述信息。 **取值范围**：由中文，字母，数字，句号，逗号，下划线（“_”），中划线（“-”），空格组成，且长度为[1-256]个字符。 
+        **参数说明**：设备接入实例的描述信息。 **取值范围**：长度不超过256，只允许中文、字母、数字、以及_，,.。、&-等字符的组合。 
 
         :return: The description of this ShowInstanceResponse.
         :rtype: str
@@ -283,7 +312,7 @@ class ShowInstanceResponse(SdkResponse):
     def description(self, description):
         r"""Sets the description of this ShowInstanceResponse.
 
-        **参数说明**：设备接入实例的描述信息。 **取值范围**：由中文，字母，数字，句号，逗号，下划线（“_”），中划线（“-”），空格组成，且长度为[1-256]个字符。 
+        **参数说明**：设备接入实例的描述信息。 **取值范围**：长度不超过256，只允许中文、字母、数字、以及_，,.。、&-等字符的组合。 
 
         :param description: The description of this ShowInstanceResponse.
         :type description: str
@@ -294,7 +323,7 @@ class ShowInstanceResponse(SdkResponse):
     def access_infos(self):
         r"""Gets the access_infos of this ShowInstanceResponse.
 
-        **参数说明**：设备接入实例的接入信息 
+        **参数说明**：设备接入实例的接入信息。 
 
         :return: The access_infos of this ShowInstanceResponse.
         :rtype: list[:class:`huaweicloudsdkiotdm.v5.AccessInfo`]
@@ -305,7 +334,7 @@ class ShowInstanceResponse(SdkResponse):
     def access_infos(self, access_infos):
         r"""Sets the access_infos of this ShowInstanceResponse.
 
-        **参数说明**：设备接入实例的接入信息 
+        **参数说明**：设备接入实例的接入信息。 
 
         :param access_infos: The access_infos of this ShowInstanceResponse.
         :type access_infos: list[:class:`huaweicloudsdkiotdm.v5.AccessInfo`]
@@ -316,7 +345,7 @@ class ShowInstanceResponse(SdkResponse):
     def create_time(self):
         r"""Gets the create_time of this ShowInstanceResponse.
 
-        **参数说明**：实例的创建时间。时间格式例如：2023-01-28T06:57:52Z 
+        **参数说明**：实例的创建时间。时间格式例如：2023-01-28T06:57:52Z。 
 
         :return: The create_time of this ShowInstanceResponse.
         :rtype: str
@@ -327,7 +356,7 @@ class ShowInstanceResponse(SdkResponse):
     def create_time(self, create_time):
         r"""Sets the create_time of this ShowInstanceResponse.
 
-        **参数说明**：实例的创建时间。时间格式例如：2023-01-28T06:57:52Z 
+        **参数说明**：实例的创建时间。时间格式例如：2023-01-28T06:57:52Z。 
 
         :param create_time: The create_time of this ShowInstanceResponse.
         :type create_time: str
@@ -338,7 +367,7 @@ class ShowInstanceResponse(SdkResponse):
     def update_time(self):
         r"""Gets the update_time of this ShowInstanceResponse.
 
-        **参数说明**：实例的最近一次更新的时间。时间格式例如：2023-01-28T06:57:52Z 
+        **参数说明**：实例的最近一次更新的时间。时间格式例如：2023-01-28T06:57:52Z。 
 
         :return: The update_time of this ShowInstanceResponse.
         :rtype: str
@@ -349,7 +378,7 @@ class ShowInstanceResponse(SdkResponse):
     def update_time(self, update_time):
         r"""Sets the update_time of this ShowInstanceResponse.
 
-        **参数说明**：实例的最近一次更新的时间。时间格式例如：2023-01-28T06:57:52Z 
+        **参数说明**：实例的最近一次更新的时间。时间格式例如：2023-01-28T06:57:52Z。 
 
         :param update_time: The update_time of this ShowInstanceResponse.
         :type update_time: str
@@ -404,7 +433,7 @@ class ShowInstanceResponse(SdkResponse):
     def order_id(self):
         r"""Gets the order_id of this ShowInstanceResponse.
 
-        **参数说明**：订单号，仅包年包月实例返回该参数。[查看订单详情请参考[[查询订单详情](https://support.huaweicloud.com/api-bpconsole/zh-cn_topic_0075746564.html)。]](tag:hws)
+        **参数说明**：订单号，仅包年包月实例返回该参数。[查看订单详情请参考[查询订单详情](https://support.huaweicloud.com/api-bpconsole/zh-cn_topic_0075746564.html)。](tag:hws) 
 
         :return: The order_id of this ShowInstanceResponse.
         :rtype: str
@@ -415,7 +444,7 @@ class ShowInstanceResponse(SdkResponse):
     def order_id(self, order_id):
         r"""Sets the order_id of this ShowInstanceResponse.
 
-        **参数说明**：订单号，仅包年包月实例返回该参数。[查看订单详情请参考[[查询订单详情](https://support.huaweicloud.com/api-bpconsole/zh-cn_topic_0075746564.html)。]](tag:hws)
+        **参数说明**：订单号，仅包年包月实例返回该参数。[查看订单详情请参考[查询订单详情](https://support.huaweicloud.com/api-bpconsole/zh-cn_topic_0075746564.html)。](tag:hws) 
 
         :param order_id: The order_id of this ShowInstanceResponse.
         :type order_id: str

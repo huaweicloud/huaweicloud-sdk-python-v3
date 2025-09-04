@@ -51,7 +51,7 @@ class CreateInstance:
         :type name: str
         :param charge_info: 
         :type charge_info: :class:`huaweicloudsdkiotdm.v5.ChargeInfo`
-        :param description: **参数说明**：设备接入实例的描述信息。 **取值范围**：由中文，字母，数字，句号，逗号，下划线（“_”），中划线（“-”），空格组成，且长度为[1-256]个字符。 
+        :param description: **参数说明**：设备接入实例的描述信息。 **取值范围**：长度不超过256，只允许中文、字母、数字、以及_，,.。、&amp;-等字符的组合 
         :type description: str
         :param enterprise_project_id: **参数说明**：企业项目Id。此字段填写明确的企业项目Id或者0(表示默认企业项目Id)时支持企业项目特性。可以企业项目管理服务中获取。 **取值范围**：长度不超过36，由小写字母[a-f]、数字、连接符（-）的组成。 
         :type enterprise_project_id: str
@@ -170,7 +170,7 @@ class CreateInstance:
     def description(self):
         r"""Gets the description of this CreateInstance.
 
-        **参数说明**：设备接入实例的描述信息。 **取值范围**：由中文，字母，数字，句号，逗号，下划线（“_”），中划线（“-”），空格组成，且长度为[1-256]个字符。 
+        **参数说明**：设备接入实例的描述信息。 **取值范围**：长度不超过256，只允许中文、字母、数字、以及_，,.。、&-等字符的组合 
 
         :return: The description of this CreateInstance.
         :rtype: str
@@ -181,7 +181,7 @@ class CreateInstance:
     def description(self, description):
         r"""Sets the description of this CreateInstance.
 
-        **参数说明**：设备接入实例的描述信息。 **取值范围**：由中文，字母，数字，句号，逗号，下划线（“_”），中划线（“-”），空格组成，且长度为[1-256]个字符。 
+        **参数说明**：设备接入实例的描述信息。 **取值范围**：长度不超过256，只允许中文、字母、数字、以及_，,.。、&-等字符的组合 
 
         :param description: The description of this CreateInstance.
         :type description: str

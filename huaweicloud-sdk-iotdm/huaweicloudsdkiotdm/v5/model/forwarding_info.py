@@ -33,7 +33,7 @@ class ForwardingInfo:
 
         :param eip: **参数说明**：NAT网关绑定的EIP 
         :type eip: str
-        :param enable_snat: **参数说明**：是否启用SNAT配置 **取值范围**： - true: SNAT配置已启用 - false: SNAT配置未启用 
+        :param enable_snat: **参数说明**：是否启用SNAT配置。 **取值范围**： - true: SNAT配置已启用 - false: SNAT配置未启用 
         :type enable_snat: bool
         """
         
@@ -74,7 +74,7 @@ class ForwardingInfo:
     def enable_snat(self):
         r"""Gets the enable_snat of this ForwardingInfo.
 
-        **参数说明**：是否启用SNAT配置 **取值范围**： - true: SNAT配置已启用 - false: SNAT配置未启用 
+        **参数说明**：是否启用SNAT配置。 **取值范围**： - true: SNAT配置已启用 - false: SNAT配置未启用 
 
         :return: The enable_snat of this ForwardingInfo.
         :rtype: bool
@@ -85,7 +85,7 @@ class ForwardingInfo:
     def enable_snat(self, enable_snat):
         r"""Sets the enable_snat of this ForwardingInfo.
 
-        **参数说明**：是否启用SNAT配置 **取值范围**： - true: SNAT配置已启用 - false: SNAT配置未启用 
+        **参数说明**：是否启用SNAT配置。 **取值范围**： - true: SNAT配置已启用 - false: SNAT配置未启用 
 
         :param enable_snat: The enable_snat of this ForwardingInfo.
         :type enable_snat: bool

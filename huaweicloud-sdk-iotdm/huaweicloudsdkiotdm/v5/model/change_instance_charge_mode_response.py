@@ -30,7 +30,7 @@ class ChangeInstanceChargeModeResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param order_id: **参数说明**：订单号。[查看订单详情请参考[查询订单详情](https://support.huaweicloud.com/api-bpconsole/zh-cn_topic_0075746564.html)。](tag:hws)\&quot; 
+        :param order_id: **参数说明**：订单号。[查看订单详情请参考[查询订单详情](https://support.huaweicloud.com/api-bpconsole/zh-cn_topic_0075746564.html)。](tag:hws) 
         :type order_id: str
         """
         
@@ -46,7 +46,7 @@ class ChangeInstanceChargeModeResponse(SdkResponse):
     def order_id(self):
         r"""Gets the order_id of this ChangeInstanceChargeModeResponse.
 
-        **参数说明**：订单号。[查看订单详情请参考[查询订单详情](https://support.huaweicloud.com/api-bpconsole/zh-cn_topic_0075746564.html)。](tag:hws)\" 
+        **参数说明**：订单号。[查看订单详情请参考[查询订单详情](https://support.huaweicloud.com/api-bpconsole/zh-cn_topic_0075746564.html)。](tag:hws) 
 
         :return: The order_id of this ChangeInstanceChargeModeResponse.
         :rtype: str
@@ -57,7 +57,7 @@ class ChangeInstanceChargeModeResponse(SdkResponse):
     def order_id(self, order_id):
         r"""Sets the order_id of this ChangeInstanceChargeModeResponse.
 
-        **参数说明**：订单号。[查看订单详情请参考[查询订单详情](https://support.huaweicloud.com/api-bpconsole/zh-cn_topic_0075746564.html)。](tag:hws)\" 
+        **参数说明**：订单号。[查看订单详情请参考[查询订单详情](https://support.huaweicloud.com/api-bpconsole/zh-cn_topic_0075746564.html)。](tag:hws) 
 
         :param order_id: The order_id of this ChangeInstanceChargeModeResponse.
         :type order_id: str

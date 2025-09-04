@@ -32,7 +32,7 @@ class CreateAppServersResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param job_id: 对于创建云应用服务器命令下发后会返回job_id，通过job_id可以查询任务的执行状态,按需购买返回该参数。
+        :param job_id: [对于创建云应用服务器命令下发后会返回job_id，通过job_id可以查询任务的执行状态,按需购买返回该参数。](tag:HW)[对于创建云应用服务器命令下发后会返回job_id，通过job_id可以查询任务的执行状态。](tag:HCS)
         :type job_id: str
         :param order_id: 订单号，创建包年包月的弹性云服务器时返回该参数。
         :type order_id: str
@@ -53,7 +53,7 @@ class CreateAppServersResponse(SdkResponse):
     def job_id(self):
         r"""Gets the job_id of this CreateAppServersResponse.
 
-        对于创建云应用服务器命令下发后会返回job_id，通过job_id可以查询任务的执行状态,按需购买返回该参数。
+        [对于创建云应用服务器命令下发后会返回job_id，通过job_id可以查询任务的执行状态,按需购买返回该参数。](tag:HW)[对于创建云应用服务器命令下发后会返回job_id，通过job_id可以查询任务的执行状态。](tag:HCS)
 
         :return: The job_id of this CreateAppServersResponse.
         :rtype: str
@@ -64,7 +64,7 @@ class CreateAppServersResponse(SdkResponse):
     def job_id(self, job_id):
         r"""Sets the job_id of this CreateAppServersResponse.
 
-        对于创建云应用服务器命令下发后会返回job_id，通过job_id可以查询任务的执行状态,按需购买返回该参数。
+        [对于创建云应用服务器命令下发后会返回job_id，通过job_id可以查询任务的执行状态,按需购买返回该参数。](tag:HW)[对于创建云应用服务器命令下发后会返回job_id，通过job_id可以查询任务的执行状态。](tag:HCS)
 
         :param job_id: The job_id of this CreateAppServersResponse.
         :type job_id: str

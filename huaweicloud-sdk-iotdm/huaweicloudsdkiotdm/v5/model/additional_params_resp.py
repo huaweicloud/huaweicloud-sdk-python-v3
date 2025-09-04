@@ -37,13 +37,13 @@ class AdditionalParamsResp:
 
         The model defined in huaweicloud sdk
 
-        :param vpc_id: **参数说明**：企业版实例的VPCID 
+        :param vpc_id: **参数说明**：企业版实例的VPCID。 
         :type vpc_id: str
-        :param subnet_id: **参数说明**：企业版实例的子网ID 
+        :param subnet_id: **参数说明**：企业版实例的子网ID。 
         :type subnet_id: str
-        :param security_group_id: **参数说明**：企业版实例的安全组ID 
+        :param security_group_id: **参数说明**：企业版实例的安全组ID。 
         :type security_group_id: str
-        :param ciphering_algorithm: **参数说明**：实例支持的加密算法 **取值范围**： - COMMON_ALGORITHM: 通用加密算法（支持RSA，SHA256等国际通用的密码算法） - SM_ALGORITHM: 支持SM系列商密算法（支持SM2，SM3，SM4等国密算法） 
+        :param ciphering_algorithm: **参数说明**：实例支持的加密算法。 **取值范围**： - COMMON_ALGORITHM: 通用加密算法（支持RSA，SHA256等国际通用的密码算法） - SM_ALGORITHM: 支持SM系列商密算法（支持SM2，SM3，SM4等国密算法） 
         :type ciphering_algorithm: str
         :param forwarding_info: 
         :type forwarding_info: :class:`huaweicloudsdkiotdm.v5.ForwardingInfo`
@@ -73,7 +73,7 @@ class AdditionalParamsResp:
     def vpc_id(self):
         r"""Gets the vpc_id of this AdditionalParamsResp.
 
-        **参数说明**：企业版实例的VPCID 
+        **参数说明**：企业版实例的VPCID。 
 
         :return: The vpc_id of this AdditionalParamsResp.
         :rtype: str
@@ -84,7 +84,7 @@ class AdditionalParamsResp:
     def vpc_id(self, vpc_id):
         r"""Sets the vpc_id of this AdditionalParamsResp.
 
-        **参数说明**：企业版实例的VPCID 
+        **参数说明**：企业版实例的VPCID。 
 
         :param vpc_id: The vpc_id of this AdditionalParamsResp.
         :type vpc_id: str
@@ -95,7 +95,7 @@ class AdditionalParamsResp:
     def subnet_id(self):
         r"""Gets the subnet_id of this AdditionalParamsResp.
 
-        **参数说明**：企业版实例的子网ID 
+        **参数说明**：企业版实例的子网ID。 
 
         :return: The subnet_id of this AdditionalParamsResp.
         :rtype: str
@@ -106,7 +106,7 @@ class AdditionalParamsResp:
     def subnet_id(self, subnet_id):
         r"""Sets the subnet_id of this AdditionalParamsResp.
 
-        **参数说明**：企业版实例的子网ID 
+        **参数说明**：企业版实例的子网ID。 
 
         :param subnet_id: The subnet_id of this AdditionalParamsResp.
         :type subnet_id: str
@@ -117,7 +117,7 @@ class AdditionalParamsResp:
     def security_group_id(self):
         r"""Gets the security_group_id of this AdditionalParamsResp.
 
-        **参数说明**：企业版实例的安全组ID 
+        **参数说明**：企业版实例的安全组ID。 
 
         :return: The security_group_id of this AdditionalParamsResp.
         :rtype: str
@@ -128,7 +128,7 @@ class AdditionalParamsResp:
     def security_group_id(self, security_group_id):
         r"""Sets the security_group_id of this AdditionalParamsResp.
 
-        **参数说明**：企业版实例的安全组ID 
+        **参数说明**：企业版实例的安全组ID。 
 
         :param security_group_id: The security_group_id of this AdditionalParamsResp.
         :type security_group_id: str
@@ -139,7 +139,7 @@ class AdditionalParamsResp:
     def ciphering_algorithm(self):
         r"""Gets the ciphering_algorithm of this AdditionalParamsResp.
 
-        **参数说明**：实例支持的加密算法 **取值范围**： - COMMON_ALGORITHM: 通用加密算法（支持RSA，SHA256等国际通用的密码算法） - SM_ALGORITHM: 支持SM系列商密算法（支持SM2，SM3，SM4等国密算法） 
+        **参数说明**：实例支持的加密算法。 **取值范围**： - COMMON_ALGORITHM: 通用加密算法（支持RSA，SHA256等国际通用的密码算法） - SM_ALGORITHM: 支持SM系列商密算法（支持SM2，SM3，SM4等国密算法） 
 
         :return: The ciphering_algorithm of this AdditionalParamsResp.
         :rtype: str
@@ -150,7 +150,7 @@ class AdditionalParamsResp:
     def ciphering_algorithm(self, ciphering_algorithm):
         r"""Sets the ciphering_algorithm of this AdditionalParamsResp.
 
-        **参数说明**：实例支持的加密算法 **取值范围**： - COMMON_ALGORITHM: 通用加密算法（支持RSA，SHA256等国际通用的密码算法） - SM_ALGORITHM: 支持SM系列商密算法（支持SM2，SM3，SM4等国密算法） 
+        **参数说明**：实例支持的加密算法。 **取值范围**： - COMMON_ALGORITHM: 通用加密算法（支持RSA，SHA256等国际通用的密码算法） - SM_ALGORITHM: 支持SM系列商密算法（支持SM2，SM3，SM4等国密算法） 
 
         :param ciphering_algorithm: The ciphering_algorithm of this AdditionalParamsResp.
         :type ciphering_algorithm: str

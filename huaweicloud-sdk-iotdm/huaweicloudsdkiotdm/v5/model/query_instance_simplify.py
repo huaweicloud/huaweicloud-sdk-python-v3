@@ -55,11 +55,11 @@ class QueryInstanceSimplify:
         :type charge_mode: str
         :param flavor: 
         :type flavor: :class:`huaweicloudsdkiotdm.v5.Flavor`
-        :param status: **参数说明**：实例状态。 **取值范围**： - CREATING：实例正在创建 - ACTIVE：实例正常 - FROZEN：实例冻结 - MODIFYING：实例正在变更规格 - FAILED：实例创建失败 
+        :param status: **参数说明**：实例状态。 **取值范围**： - CREATING：实例正在创建 - ACTIVE：实例正常 - FROZEN：实例冻结 - TRADING: 实例正在进行交易 - MODIFYING：实例正在变更规格 - MODIFY_FAILED: 实例变更失败 - FAILED：实例创建失败 
         :type status: str
-        :param create_time: **参数说明**：实例的创建时间。时间格式例如：2023-01-28T06:57:52Z 
+        :param create_time: **参数说明**：实例的创建时间。时间格式例如：2023-01-28T06:57:52Z。 
         :type create_time: str
-        :param update_time: **参数说明**：实例的最近一次更新的时间。时间格式例如：2023-01-28T06:57:52Z 
+        :param update_time: **参数说明**：实例的最近一次更新的时间。时间格式例如：2023-01-28T06:57:52Z。 
         :type update_time: str
         :param enterprise_project_id: **参数说明**：企业项目Id。
         :type enterprise_project_id: str
@@ -207,7 +207,7 @@ class QueryInstanceSimplify:
     def status(self):
         r"""Gets the status of this QueryInstanceSimplify.
 
-        **参数说明**：实例状态。 **取值范围**： - CREATING：实例正在创建 - ACTIVE：实例正常 - FROZEN：实例冻结 - MODIFYING：实例正在变更规格 - FAILED：实例创建失败 
+        **参数说明**：实例状态。 **取值范围**： - CREATING：实例正在创建 - ACTIVE：实例正常 - FROZEN：实例冻结 - TRADING: 实例正在进行交易 - MODIFYING：实例正在变更规格 - MODIFY_FAILED: 实例变更失败 - FAILED：实例创建失败 
 
         :return: The status of this QueryInstanceSimplify.
         :rtype: str
@@ -218,7 +218,7 @@ class QueryInstanceSimplify:
     def status(self, status):
         r"""Sets the status of this QueryInstanceSimplify.
 
-        **参数说明**：实例状态。 **取值范围**： - CREATING：实例正在创建 - ACTIVE：实例正常 - FROZEN：实例冻结 - MODIFYING：实例正在变更规格 - FAILED：实例创建失败 
+        **参数说明**：实例状态。 **取值范围**： - CREATING：实例正在创建 - ACTIVE：实例正常 - FROZEN：实例冻结 - TRADING: 实例正在进行交易 - MODIFYING：实例正在变更规格 - MODIFY_FAILED: 实例变更失败 - FAILED：实例创建失败 
 
         :param status: The status of this QueryInstanceSimplify.
         :type status: str
@@ -229,7 +229,7 @@ class QueryInstanceSimplify:
     def create_time(self):
         r"""Gets the create_time of this QueryInstanceSimplify.
 
-        **参数说明**：实例的创建时间。时间格式例如：2023-01-28T06:57:52Z 
+        **参数说明**：实例的创建时间。时间格式例如：2023-01-28T06:57:52Z。 
 
         :return: The create_time of this QueryInstanceSimplify.
         :rtype: str
@@ -240,7 +240,7 @@ class QueryInstanceSimplify:
     def create_time(self, create_time):
         r"""Sets the create_time of this QueryInstanceSimplify.
 
-        **参数说明**：实例的创建时间。时间格式例如：2023-01-28T06:57:52Z 
+        **参数说明**：实例的创建时间。时间格式例如：2023-01-28T06:57:52Z。 
 
         :param create_time: The create_time of this QueryInstanceSimplify.
         :type create_time: str
@@ -251,7 +251,7 @@ class QueryInstanceSimplify:
     def update_time(self):
         r"""Gets the update_time of this QueryInstanceSimplify.
 
-        **参数说明**：实例的最近一次更新的时间。时间格式例如：2023-01-28T06:57:52Z 
+        **参数说明**：实例的最近一次更新的时间。时间格式例如：2023-01-28T06:57:52Z。 
 
         :return: The update_time of this QueryInstanceSimplify.
         :rtype: str
@@ -262,7 +262,7 @@ class QueryInstanceSimplify:
     def update_time(self, update_time):
         r"""Sets the update_time of this QueryInstanceSimplify.
 
-        **参数说明**：实例的最近一次更新的时间。时间格式例如：2023-01-28T06:57:52Z 
+        **参数说明**：实例的最近一次更新的时间。时间格式例如：2023-01-28T06:57:52Z。 
 
         :param update_time: The update_time of this QueryInstanceSimplify.
         :type update_time: str

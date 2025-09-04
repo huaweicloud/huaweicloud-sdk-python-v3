@@ -17,28 +17,36 @@ class UploadAppIconRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'data': 'file'
+        'data': 'file',
+        'icon_url': 'str'
     }
 
     attribute_map = {
-        'data': 'data'
+        'data': 'data',
+        'icon_url': 'icon_url'
     }
 
-    def __init__(self, data=None):
+    def __init__(self, data=None, icon_url=None):
         r"""UploadAppIconRequestBody
 
         The model defined in huaweicloud sdk
 
         :param data: 应用图标，png格式，限制大小8KB。
         :type data: :class:`huaweicloudsdkcore.http.formdata.FormFile`
+        :param icon_url: base64编码后的png格式图标。
+        :type icon_url: str
         """
         
         
 
         self._data = None
+        self._icon_url = None
         self.discriminator = None
 
-        self.data = data
+        if data is not None:
+            self.data = data
+        if icon_url is not None:
+            self.icon_url = icon_url
 
     @property
     def data(self):
@@ -61,6 +69,28 @@ class UploadAppIconRequestBody:
         :type data: :class:`huaweicloudsdkcore.http.formdata.FormFile`
         """
         self._data = data
+
+    @property
+    def icon_url(self):
+        r"""Gets the icon_url of this UploadAppIconRequestBody.
+
+        base64编码后的png格式图标。
+
+        :return: The icon_url of this UploadAppIconRequestBody.
+        :rtype: str
+        """
+        return self._icon_url
+
+    @icon_url.setter
+    def icon_url(self, icon_url):
+        r"""Sets the icon_url of this UploadAppIconRequestBody.
+
+        base64编码后的png格式图标。
+
+        :param icon_url: The icon_url of this UploadAppIconRequestBody.
+        :type icon_url: str
+        """
+        self._icon_url = icon_url
 
     def to_dict(self):
         """Returns the model properties as a dict"""

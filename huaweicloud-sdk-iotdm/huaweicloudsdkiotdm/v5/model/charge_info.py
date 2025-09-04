@@ -21,7 +21,8 @@ class ChargeInfo:
         'period_type': 'str',
         'period_num': 'int',
         'is_auto_renew': 'bool',
-        'is_auto_pay': 'bool'
+        'is_auto_pay': 'bool',
+        'promotion_infos': 'str'
     }
 
     attribute_map = {
@@ -29,10 +30,11 @@ class ChargeInfo:
         'period_type': 'period_type',
         'period_num': 'period_num',
         'is_auto_renew': 'is_auto_renew',
-        'is_auto_pay': 'is_auto_pay'
+        'is_auto_pay': 'is_auto_pay',
+        'promotion_infos': 'promotion_infos'
     }
 
-    def __init__(self, charge_mode=None, period_type=None, period_num=None, is_auto_renew=None, is_auto_pay=None):
+    def __init__(self, charge_mode=None, period_type=None, period_num=None, is_auto_renew=None, is_auto_pay=None, promotion_infos=None):
         r"""ChargeInfo
 
         The model defined in huaweicloud sdk
@@ -41,12 +43,14 @@ class ChargeInfo:
         :type charge_mode: str
         :param period_type: **参数说明**：订购设备接入实例的周期类型（包年、包月等）。charge_mode为prePaid时生效，且为必选值。 **取值范围**： - month：包月 - year：包年 
         :type period_type: str
-        :param period_num: **参数说明**：订购设备接入实例的周期数。charge_mode为prePaid时生效，且为必选值。 **取值范围**：period_type&#x3D;month（周期类型为月）时，取值为[1，9]；period_type&#x3D;year（周期类型为年）时，取值为[1，3]\&quot; 
+        :param period_num: **参数说明**：订购设备接入实例的周期数。charge_mode为prePaid时生效，且为必选值。 **取值范围**：period_type&#x3D;month（周期类型为月）时，取值为[1，9]；period_type&#x3D;year（周期类型为年）时，取值为[1，3]\&quot;。 
         :type period_num: int
         :param is_auto_renew: **参数说明**：创建包年/包月实例时可指定，表示是否自动续订，续订的周期和原周期相同，且续订时会自动支付。 **取值范围**： - true：自动续订 - false：默认值，不自动续订 
         :type is_auto_renew: bool
-        :param is_auto_pay: **参数说明**：创建包年/包月实例时可指定，表示是否自动从客户的账户中支付，此字段不影响自动续订的支付方式。 **取值范围**：true - 自动支付，从账户余额自动扣费; false - 默认值，只提交订单不支付。[需要客户参考[\&quot;支付包年/包月产品订单\&quot;](https://support.huaweicloud.com/api-bpconsole/api_order_00016.html#section0)进行支付，或者在华为云官网页面使用进行支付。](tag:hws) 
+        :param is_auto_pay: **参数说明**：创建包年/包月实例时可指定，表示是否自动从客户的账户中支付，此字段不影响自动续订的支付方式。 **取值范围**：true - 自动支付，从账户余额自动扣费; false - 默认值，只提交订单不支付。[需要客户参考[支付包年/包月产品订单](https://support.huaweicloud.com/api-bpconsole/api_order_00016.html#section0)进行支付，或者在华为云官网页面使用进行支付。](tag:hws) 
         :type is_auto_pay: bool
+        :param promotion_infos: **参数说明**：促销信息。 
+        :type promotion_infos: str
         """
         
         
@@ -56,6 +60,7 @@ class ChargeInfo:
         self._period_num = None
         self._is_auto_renew = None
         self._is_auto_pay = None
+        self._promotion_infos = None
         self.discriminator = None
 
         self.charge_mode = charge_mode
@@ -67,6 +72,8 @@ class ChargeInfo:
             self.is_auto_renew = is_auto_renew
         if is_auto_pay is not None:
             self.is_auto_pay = is_auto_pay
+        if promotion_infos is not None:
+            self.promotion_infos = promotion_infos
 
     @property
     def charge_mode(self):
@@ -116,7 +123,7 @@ class ChargeInfo:
     def period_num(self):
         r"""Gets the period_num of this ChargeInfo.
 
-        **参数说明**：订购设备接入实例的周期数。charge_mode为prePaid时生效，且为必选值。 **取值范围**：period_type=month（周期类型为月）时，取值为[1，9]；period_type=year（周期类型为年）时，取值为[1，3]\" 
+        **参数说明**：订购设备接入实例的周期数。charge_mode为prePaid时生效，且为必选值。 **取值范围**：period_type=month（周期类型为月）时，取值为[1，9]；period_type=year（周期类型为年）时，取值为[1，3]\"。 
 
         :return: The period_num of this ChargeInfo.
         :rtype: int
@@ -127,7 +134,7 @@ class ChargeInfo:
     def period_num(self, period_num):
         r"""Sets the period_num of this ChargeInfo.
 
-        **参数说明**：订购设备接入实例的周期数。charge_mode为prePaid时生效，且为必选值。 **取值范围**：period_type=month（周期类型为月）时，取值为[1，9]；period_type=year（周期类型为年）时，取值为[1，3]\" 
+        **参数说明**：订购设备接入实例的周期数。charge_mode为prePaid时生效，且为必选值。 **取值范围**：period_type=month（周期类型为月）时，取值为[1，9]；period_type=year（周期类型为年）时，取值为[1，3]\"。 
 
         :param period_num: The period_num of this ChargeInfo.
         :type period_num: int
@@ -160,7 +167,7 @@ class ChargeInfo:
     def is_auto_pay(self):
         r"""Gets the is_auto_pay of this ChargeInfo.
 
-        **参数说明**：创建包年/包月实例时可指定，表示是否自动从客户的账户中支付，此字段不影响自动续订的支付方式。 **取值范围**：true - 自动支付，从账户余额自动扣费; false - 默认值，只提交订单不支付。[需要客户参考[\"支付包年/包月产品订单\"](https://support.huaweicloud.com/api-bpconsole/api_order_00016.html#section0)进行支付，或者在华为云官网页面使用进行支付。](tag:hws) 
+        **参数说明**：创建包年/包月实例时可指定，表示是否自动从客户的账户中支付，此字段不影响自动续订的支付方式。 **取值范围**：true - 自动支付，从账户余额自动扣费; false - 默认值，只提交订单不支付。[需要客户参考[支付包年/包月产品订单](https://support.huaweicloud.com/api-bpconsole/api_order_00016.html#section0)进行支付，或者在华为云官网页面使用进行支付。](tag:hws) 
 
         :return: The is_auto_pay of this ChargeInfo.
         :rtype: bool
@@ -171,12 +178,34 @@ class ChargeInfo:
     def is_auto_pay(self, is_auto_pay):
         r"""Sets the is_auto_pay of this ChargeInfo.
 
-        **参数说明**：创建包年/包月实例时可指定，表示是否自动从客户的账户中支付，此字段不影响自动续订的支付方式。 **取值范围**：true - 自动支付，从账户余额自动扣费; false - 默认值，只提交订单不支付。[需要客户参考[\"支付包年/包月产品订单\"](https://support.huaweicloud.com/api-bpconsole/api_order_00016.html#section0)进行支付，或者在华为云官网页面使用进行支付。](tag:hws) 
+        **参数说明**：创建包年/包月实例时可指定，表示是否自动从客户的账户中支付，此字段不影响自动续订的支付方式。 **取值范围**：true - 自动支付，从账户余额自动扣费; false - 默认值，只提交订单不支付。[需要客户参考[支付包年/包月产品订单](https://support.huaweicloud.com/api-bpconsole/api_order_00016.html#section0)进行支付，或者在华为云官网页面使用进行支付。](tag:hws) 
 
         :param is_auto_pay: The is_auto_pay of this ChargeInfo.
         :type is_auto_pay: bool
         """
         self._is_auto_pay = is_auto_pay
+
+    @property
+    def promotion_infos(self):
+        r"""Gets the promotion_infos of this ChargeInfo.
+
+        **参数说明**：促销信息。 
+
+        :return: The promotion_infos of this ChargeInfo.
+        :rtype: str
+        """
+        return self._promotion_infos
+
+    @promotion_infos.setter
+    def promotion_infos(self, promotion_infos):
+        r"""Sets the promotion_infos of this ChargeInfo.
+
+        **参数说明**：促销信息。 
+
+        :param promotion_infos: The promotion_infos of this ChargeInfo.
+        :type promotion_infos: str
+        """
+        self._promotion_infos = promotion_infos
 
     def to_dict(self):
         """Returns the model properties as a dict"""

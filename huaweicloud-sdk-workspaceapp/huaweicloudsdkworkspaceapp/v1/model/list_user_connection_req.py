@@ -97,13 +97,13 @@ class ListUserConnectionReq:
         :type wi_ip: str
         :param public_ip: 客户端出口ip。
         :type public_ip: str
-        :param update_time: 登录应用开始时间，格式 2022-10-31 08:07:39。
+        :param update_time: 登录应用开始时间，格式 2022-10-31T08:07:39Z。
         :type update_time: datetime
         :param tenant_id: 租户id。
         :type tenant_id: str
-        :param login_start_time: 登录应用开始时间，格式 2022-10-31 08:07:39。
+        :param login_start_time: 登录应用开始时间，格式 2022-10-31T08:07:39Z。
         :type login_start_time: datetime
-        :param login_end_time: 登录应用结束时间，格式 2022-10-31 08:07:39。
+        :param login_end_time: 登录应用结束时间，格式 2022-10-31T08:07:39Z。
         :type login_end_time: datetime
         :param virtual_ip: 会话虚拟ip。
         :type virtual_ip: str
@@ -508,7 +508,7 @@ class ListUserConnectionReq:
     def update_time(self):
         r"""Gets the update_time of this ListUserConnectionReq.
 
-        登录应用开始时间，格式 2022-10-31 08:07:39。
+        登录应用开始时间，格式 2022-10-31T08:07:39Z。
 
         :return: The update_time of this ListUserConnectionReq.
         :rtype: datetime
@@ -519,7 +519,7 @@ class ListUserConnectionReq:
     def update_time(self, update_time):
         r"""Sets the update_time of this ListUserConnectionReq.
 
-        登录应用开始时间，格式 2022-10-31 08:07:39。
+        登录应用开始时间，格式 2022-10-31T08:07:39Z。
 
         :param update_time: The update_time of this ListUserConnectionReq.
         :type update_time: datetime
@@ -552,7 +552,7 @@ class ListUserConnectionReq:
     def login_start_time(self):
         r"""Gets the login_start_time of this ListUserConnectionReq.
 
-        登录应用开始时间，格式 2022-10-31 08:07:39。
+        登录应用开始时间，格式 2022-10-31T08:07:39Z。
 
         :return: The login_start_time of this ListUserConnectionReq.
         :rtype: datetime
@@ -563,7 +563,7 @@ class ListUserConnectionReq:
     def login_start_time(self, login_start_time):
         r"""Sets the login_start_time of this ListUserConnectionReq.
 
-        登录应用开始时间，格式 2022-10-31 08:07:39。
+        登录应用开始时间，格式 2022-10-31T08:07:39Z。
 
         :param login_start_time: The login_start_time of this ListUserConnectionReq.
         :type login_start_time: datetime
@@ -574,7 +574,7 @@ class ListUserConnectionReq:
     def login_end_time(self):
         r"""Gets the login_end_time of this ListUserConnectionReq.
 
-        登录应用结束时间，格式 2022-10-31 08:07:39。
+        登录应用结束时间，格式 2022-10-31T08:07:39Z。
 
         :return: The login_end_time of this ListUserConnectionReq.
         :rtype: datetime
@@ -585,7 +585,7 @@ class ListUserConnectionReq:
     def login_end_time(self, login_end_time):
         r"""Sets the login_end_time of this ListUserConnectionReq.
 
-        登录应用结束时间，格式 2022-10-31 08:07:39。
+        登录应用结束时间，格式 2022-10-31T08:07:39Z。
 
         :param login_end_time: The login_end_time of this ListUserConnectionReq.
         :type login_end_time: datetime

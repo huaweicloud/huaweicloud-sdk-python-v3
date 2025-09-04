@@ -22,6 +22,7 @@ class AddKeystorePermissionRequestBody:
         'modify': 'bool',
         'usage': 'bool',
         'user_name': 'str',
+        'user_id': 'str',
         'setting': 'bool',
         'can_absent': 'bool'
     }
@@ -32,11 +33,12 @@ class AddKeystorePermissionRequestBody:
         'modify': 'modify',
         'usage': 'usage',
         'user_name': 'user_name',
+        'user_id': 'user_id',
         'setting': 'setting',
         'can_absent': 'can_absent'
     }
 
-    def __init__(self, delete=None, keystore_id=None, modify=None, usage=None, user_name=None, setting=None, can_absent=None):
+    def __init__(self, delete=None, keystore_id=None, modify=None, usage=None, user_name=None, user_id=None, setting=None, can_absent=None):
         r"""AddKeystorePermissionRequestBody
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class AddKeystorePermissionRequestBody:
         :type usage: bool
         :param user_name: 用户名
         :type user_name: str
+        :param user_id: 用户ID
+        :type user_id: str
         :param setting: 是否有设置权限
         :type setting: bool
         :param can_absent: 是否可编辑
@@ -64,6 +68,7 @@ class AddKeystorePermissionRequestBody:
         self._modify = None
         self._usage = None
         self._user_name = None
+        self._user_id = None
         self._setting = None
         self._can_absent = None
         self.discriminator = None
@@ -73,6 +78,8 @@ class AddKeystorePermissionRequestBody:
         self.modify = modify
         self.usage = usage
         self.user_name = user_name
+        if user_id is not None:
+            self.user_id = user_id
         self.setting = setting
         self.can_absent = can_absent
 
@@ -185,6 +192,28 @@ class AddKeystorePermissionRequestBody:
         :type user_name: str
         """
         self._user_name = user_name
+
+    @property
+    def user_id(self):
+        r"""Gets the user_id of this AddKeystorePermissionRequestBody.
+
+        用户ID
+
+        :return: The user_id of this AddKeystorePermissionRequestBody.
+        :rtype: str
+        """
+        return self._user_id
+
+    @user_id.setter
+    def user_id(self, user_id):
+        r"""Sets the user_id of this AddKeystorePermissionRequestBody.
+
+        用户ID
+
+        :param user_id: The user_id of this AddKeystorePermissionRequestBody.
+        :type user_id: str
+        """
+        self._user_id = user_id
 
     @property
     def setting(self):

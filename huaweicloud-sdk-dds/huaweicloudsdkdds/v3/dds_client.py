@@ -2636,6 +2636,69 @@ class DdsClient(Client):
 
         return http_info
 
+    def list_backup_download_policy(self, request):
+        r"""查询备份下载策略
+
+        查询备份下载策略。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListBackupDownloadPolicy
+        :type request: :class:`huaweicloudsdkdds.v3.ListBackupDownloadPolicyRequest`
+        :rtype: :class:`huaweicloudsdkdds.v3.ListBackupDownloadPolicyResponse`
+        """
+        http_info = self._list_backup_download_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_backup_download_policy_invoker(self, request):
+        http_info = self._list_backup_download_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_backup_download_policy_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/backups/download-policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListBackupDownloadPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_backups(self, request):
         r"""查询备份列表
 
@@ -5077,6 +5140,71 @@ class DdsClient(Client):
 
         return http_info
 
+    def save_backup_download_policy(self, request):
+        r"""创建备份下载策略
+
+        创建备份下载策略。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for SaveBackupDownloadPolicy
+        :type request: :class:`huaweicloudsdkdds.v3.SaveBackupDownloadPolicyRequest`
+        :rtype: :class:`huaweicloudsdkdds.v3.SaveBackupDownloadPolicyResponse`
+        """
+        http_info = self._save_backup_download_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def save_backup_download_policy_invoker(self, request):
+        http_info = self._save_backup_download_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _save_backup_download_policy_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/backups/download-policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "SaveBackupDownloadPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def set_auditlog_policy(self, request):
         r"""设置审计日志策略
 
@@ -7395,6 +7523,71 @@ class DdsClient(Client):
         form_params = {}
 
         body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_backup_download_policy(self, request):
+        r"""更新备份下载策略
+
+        更新备份下载策略。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateBackupDownloadPolicy
+        :type request: :class:`huaweicloudsdkdds.v3.UpdateBackupDownloadPolicyRequest`
+        :rtype: :class:`huaweicloudsdkdds.v3.UpdateBackupDownloadPolicyResponse`
+        """
+        http_info = self._update_backup_download_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_backup_download_policy_invoker(self, request):
+        http_info = self._update_backup_download_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_backup_download_policy_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/backups/download-policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateBackupDownloadPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 

@@ -23,7 +23,8 @@ class EpDetail:
         'status': 'int',
         'created_at': 'datetime',
         'updated_at': 'datetime',
-        'type': 'str'
+        'type': 'str',
+        'delete_flag': 'bool'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class EpDetail:
         'status': 'status',
         'created_at': 'created_at',
         'updated_at': 'updated_at',
-        'type': 'type'
+        'type': 'type',
+        'delete_flag': 'delete_flag'
     }
 
-    def __init__(self, id=None, name=None, description=None, status=None, created_at=None, updated_at=None, type=None):
+    def __init__(self, id=None, name=None, description=None, status=None, created_at=None, updated_at=None, type=None, delete_flag=None):
         r"""EpDetail
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class EpDetail:
         :type updated_at: datetime
         :param type: 项目类型： - prod：商用项目 - poc：测试项目
         :type type: str
+        :param delete_flag: 删除标识，false-未删除；true-已删除
+        :type delete_flag: bool
         """
         
         
@@ -66,6 +70,7 @@ class EpDetail:
         self._created_at = None
         self._updated_at = None
         self._type = None
+        self._delete_flag = None
         self.discriminator = None
 
         self.id = id
@@ -75,6 +80,7 @@ class EpDetail:
         self.created_at = created_at
         self.updated_at = updated_at
         self.type = type
+        self.delete_flag = delete_flag
 
     @property
     def id(self):
@@ -229,6 +235,28 @@ class EpDetail:
         :type type: str
         """
         self._type = type
+
+    @property
+    def delete_flag(self):
+        r"""Gets the delete_flag of this EpDetail.
+
+        删除标识，false-未删除；true-已删除
+
+        :return: The delete_flag of this EpDetail.
+        :rtype: bool
+        """
+        return self._delete_flag
+
+    @delete_flag.setter
+    def delete_flag(self, delete_flag):
+        r"""Sets the delete_flag of this EpDetail.
+
+        删除标识，false-未删除；true-已删除
+
+        :param delete_flag: The delete_flag of this EpDetail.
+        :type delete_flag: bool
+        """
+        self._delete_flag = delete_flag
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -39,6 +39,8 @@ from huaweicloudsdkecs.v2.model.batch_delete_server_nics_response import BatchDe
 from huaweicloudsdkecs.v2.model.batch_delete_server_tags_request import BatchDeleteServerTagsRequest
 from huaweicloudsdkecs.v2.model.batch_delete_server_tags_request_body import BatchDeleteServerTagsRequestBody
 from huaweicloudsdkecs.v2.model.batch_delete_server_tags_response import BatchDeleteServerTagsResponse
+from huaweicloudsdkecs.v2.model.batch_detach_volumes_request import BatchDetachVolumesRequest
+from huaweicloudsdkecs.v2.model.batch_detach_volumes_response import BatchDetachVolumesResponse
 from huaweicloudsdkecs.v2.model.batch_reboot_servers_request import BatchRebootServersRequest
 from huaweicloudsdkecs.v2.model.batch_reboot_servers_request_body import BatchRebootServersRequestBody
 from huaweicloudsdkecs.v2.model.batch_reboot_servers_response import BatchRebootServersResponse
@@ -46,6 +48,10 @@ from huaweicloudsdkecs.v2.model.batch_reboot_severs_option import BatchRebootSev
 from huaweicloudsdkecs.v2.model.batch_reset_servers_password_request import BatchResetServersPasswordRequest
 from huaweicloudsdkecs.v2.model.batch_reset_servers_password_request_body import BatchResetServersPasswordRequestBody
 from huaweicloudsdkecs.v2.model.batch_reset_servers_password_response import BatchResetServersPasswordResponse
+from huaweicloudsdkecs.v2.model.batch_resize_servers_option import BatchResizeServersOption
+from huaweicloudsdkecs.v2.model.batch_resize_servers_req import BatchResizeServersReq
+from huaweicloudsdkecs.v2.model.batch_resize_servers_request import BatchResizeServersRequest
+from huaweicloudsdkecs.v2.model.batch_resize_servers_response import BatchResizeServersResponse
 from huaweicloudsdkecs.v2.model.batch_start_servers_option import BatchStartServersOption
 from huaweicloudsdkecs.v2.model.batch_start_servers_request import BatchStartServersRequest
 from huaweicloudsdkecs.v2.model.batch_start_servers_request_body import BatchStartServersRequestBody
@@ -123,6 +129,10 @@ from huaweicloudsdkecs.v2.model.enclave_options import EnclaveOptions
 from huaweicloudsdkecs.v2.model.event_response import EventResponse
 from huaweicloudsdkecs.v2.model.event_response_execute_options import EventResponseExecuteOptions
 from huaweicloudsdkecs.v2.model.event_response_source import EventResponseSource
+from huaweicloudsdkecs.v2.model.execute_server_dump_request import ExecuteServerDumpRequest
+from huaweicloudsdkecs.v2.model.execute_server_dump_response import ExecuteServerDumpResponse
+from huaweicloudsdkecs.v2.model.execute_server_redeploy_request import ExecuteServerRedeployRequest
+from huaweicloudsdkecs.v2.model.execute_server_redeploy_response import ExecuteServerRedeployResponse
 from huaweicloudsdkecs.v2.model.fault import Fault
 from huaweicloudsdkecs.v2.model.flavor import Flavor
 from huaweicloudsdkecs.v2.model.flavor_extra_spec import FlavorExtraSpec
@@ -300,6 +310,7 @@ from huaweicloudsdkecs.v2.model.pre_paid_server_security_group import PrePaidSer
 from huaweicloudsdkecs.v2.model.pre_paid_server_tag import PrePaidServerTag
 from huaweicloudsdkecs.v2.model.project_flavor_limit import ProjectFlavorLimit
 from huaweicloudsdkecs.v2.model.project_tag import ProjectTag
+from huaweicloudsdkecs.v2.model.promotion import Promotion
 from huaweicloudsdkecs.v2.model.recycle_bin_policys import RecycleBinPolicys
 from huaweicloudsdkecs.v2.model.register_server_monitor_request import RegisterServerMonitorRequest
 from huaweicloudsdkecs.v2.model.register_server_monitor_request_body import RegisterServerMonitorRequestBody
@@ -357,6 +368,8 @@ from huaweicloudsdkecs.v2.model.server_tag import ServerTag
 from huaweicloudsdkecs.v2.model.server_tag_match import ServerTagMatch
 from huaweicloudsdkecs.v2.model.server_tags import ServerTags
 from huaweicloudsdkecs.v2.model.server_volume_attachment import ServerVolumeAttachment
+from huaweicloudsdkecs.v2.model.show_appendable_volume_quota_request import ShowAppendableVolumeQuotaRequest
+from huaweicloudsdkecs.v2.model.show_appendable_volume_quota_response import ShowAppendableVolumeQuotaResponse
 from huaweicloudsdkecs.v2.model.show_job_request import ShowJobRequest
 from huaweicloudsdkecs.v2.model.show_job_response import ShowJobResponse
 from huaweicloudsdkecs.v2.model.show_metadata_options_request import ShowMetadataOptionsRequest
@@ -431,4 +444,5 @@ from huaweicloudsdkecs.v2.model.update_server_request_body import UpdateServerRe
 from huaweicloudsdkecs.v2.model.update_server_response import UpdateServerResponse
 from huaweicloudsdkecs.v2.model.update_server_result import UpdateServerResult
 from huaweicloudsdkecs.v2.model.volume_attach import VolumeAttach
+from huaweicloudsdkecs.v2.model.volume_batch_detach_request import VolumeBatchDetachRequest
 

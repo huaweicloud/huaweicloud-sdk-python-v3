@@ -43,7 +43,7 @@ class EcsNetWork:
 
         The model defined in huaweicloud sdk
 
-        :param addr: IP地址信息。
+        :param addr: IP地址信息
         :type addr: str
         :param version: IP地址类型： &#x60;4&#x60; - IPV4 &#x60;6&#x60; - IPV6
         :type version: int
@@ -94,7 +94,7 @@ class EcsNetWork:
     def addr(self):
         r"""Gets the addr of this EcsNetWork.
 
-        IP地址信息。
+        IP地址信息
 
         :return: The addr of this EcsNetWork.
         :rtype: str
@@ -105,7 +105,7 @@ class EcsNetWork:
     def addr(self, addr):
         r"""Sets the addr of this EcsNetWork.
 
-        IP地址信息。
+        IP地址信息
 
         :param addr: The addr of this EcsNetWork.
         :type addr: str

@@ -31,7 +31,7 @@ class Match:
 
         The model defined in huaweicloud sdk
 
-        :param key: 键。取值范围为policy , organizational-unit, account。
+        :param key: 键。第一期限定为resource_name,后续扩展。
         :type key: str
         :param value: 值。每个值最大长度255个字符。
         :type value: str
@@ -50,7 +50,7 @@ class Match:
     def key(self):
         r"""Gets the key of this Match.
 
-        键。取值范围为policy , organizational-unit, account。
+        键。第一期限定为resource_name,后续扩展。
 
         :return: The key of this Match.
         :rtype: str
@@ -61,7 +61,7 @@ class Match:
     def key(self, key):
         r"""Sets the key of this Match.
 
-        键。取值范围为policy , organizational-unit, account。
+        键。第一期限定为resource_name,后续扩展。
 
         :param key: The key of this Match.
         :type key: str

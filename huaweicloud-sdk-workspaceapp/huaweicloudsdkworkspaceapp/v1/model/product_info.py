@@ -127,7 +127,7 @@ class ProductInfo:
         :type package_type: str
         :param series_type: 系列类型。
         :type series_type: str
-        :param expire_time: 产品套餐过期时间,产品将在改时间点后逐步下架。
+        :param expire_time: 产品套餐过期时间,产品将在该时间点后逐步下架。
         :type expire_time: datetime
         :param support_gpu_type: 产品套餐支持的GPU类型。
         :type support_gpu_type: str
@@ -748,7 +748,7 @@ class ProductInfo:
     def expire_time(self):
         r"""Gets the expire_time of this ProductInfo.
 
-        产品套餐过期时间,产品将在改时间点后逐步下架。
+        产品套餐过期时间,产品将在该时间点后逐步下架。
 
         :return: The expire_time of this ProductInfo.
         :rtype: datetime
@@ -759,7 +759,7 @@ class ProductInfo:
     def expire_time(self, expire_time):
         r"""Sets the expire_time of this ProductInfo.
 
-        产品套餐过期时间,产品将在改时间点后逐步下架。
+        产品套餐过期时间,产品将在该时间点后逐步下架。
 
         :param expire_time: The expire_time of this ProductInfo.
         :type expire_time: datetime

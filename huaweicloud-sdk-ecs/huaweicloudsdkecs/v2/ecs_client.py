@@ -645,6 +645,72 @@ class EcsClient(Client):
 
         return http_info
 
+    def batch_detach_volumes(self, request):
+        r"""批量卸载卷
+
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchDetachVolumes
+        :type request: :class:`huaweicloudsdkecs.v2.BatchDetachVolumesRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.BatchDetachVolumesResponse`
+        """
+        http_info = self._batch_detach_volumes_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_detach_volumes_invoker(self, request):
+        http_info = self._batch_detach_volumes_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_detach_volumes_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/batchaction/detachvolumes/{volume_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDetachVolumesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'volume_id' in local_var_params:
+            path_params['volume_id'] = local_var_params['volume_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def batch_reboot_servers(self, request):
         r"""批量重启云服务器
 
@@ -735,6 +801,71 @@ class EcsClient(Client):
             "resource_path": "/v1/{project_id}/cloudservers/os-reset-passwords",
             "request_type": request.__class__.__name__,
             "response_type": "BatchResetServersPasswordResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_resize_servers(self, request):
+        r"""批量变更云服务器规格
+
+        批量变更云服务器规格
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchResizeServers
+        :type request: :class:`huaweicloudsdkecs.v2.BatchResizeServersRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.BatchResizeServersResponse`
+        """
+        http_info = self._batch_resize_servers_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_resize_servers_invoker(self, request):
+        http_info = self._batch_resize_servers_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_resize_servers_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cloudservers/batch-resize",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchResizeServersResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -2197,6 +2328,136 @@ class EcsClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def execute_server_dump(self, request):
+        r"""触发云服务器内核dump
+
+        触发云服务器内核dump
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ExecuteServerDump
+        :type request: :class:`huaweicloudsdkecs.v2.ExecuteServerDumpRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.ExecuteServerDumpResponse`
+        """
+        http_info = self._execute_server_dump_http_info(request)
+        return self._call_api(**http_info)
+
+    def execute_server_dump_invoker(self, request):
+        http_info = self._execute_server_dump_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _execute_server_dump_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cloudservers/{server_id}/actions/trigger-crash-dump",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExecuteServerDumpResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'server_id' in local_var_params:
+            path_params['server_id'] = local_var_params['server_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def execute_server_redeploy(self, request):
+        r"""重部署云服务器
+
+        重部署云服务器
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ExecuteServerRedeploy
+        :type request: :class:`huaweicloudsdkecs.v2.ExecuteServerRedeployRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.ExecuteServerRedeployResponse`
+        """
+        http_info = self._execute_server_redeploy_http_info(request)
+        return self._call_api(**http_info)
+
+    def execute_server_redeploy_invoker(self, request):
+        http_info = self._execute_server_redeploy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _execute_server_redeploy_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cloudservers/{server_id}/actions/redeploy",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExecuteServerRedeployResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'server_id' in local_var_params:
+            path_params['server_id'] = local_var_params['server_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -5046,6 +5307,71 @@ class EcsClient(Client):
             "resource_path": "/v1/{project_id}/recycle-bin/cloudservers/{server_id}/actions/revert",
             "request_type": request.__class__.__name__,
             "response_type": "RevertRecycleBinServerResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'server_id' in local_var_params:
+            path_params['server_id'] = local_var_params['server_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_appendable_volume_quota(self, request):
+        r"""查询包周期虚拟机可以追加卷数量
+
+        查询包周期虚拟机可以追加卷数量
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowAppendableVolumeQuota
+        :type request: :class:`huaweicloudsdkecs.v2.ShowAppendableVolumeQuotaRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.ShowAppendableVolumeQuotaResponse`
+        """
+        http_info = self._show_appendable_volume_quota_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_appendable_volume_quota_invoker(self, request):
+        http_info = self._show_appendable_volume_quota_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_appendable_volume_quota_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cloudservers/{server_id}/appendvolumequota",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAppendableVolumeQuotaResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}

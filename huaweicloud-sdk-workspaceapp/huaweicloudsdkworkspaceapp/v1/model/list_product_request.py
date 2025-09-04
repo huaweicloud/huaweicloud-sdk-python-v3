@@ -45,7 +45,7 @@ class ListProductRequest:
         :type product_id: str
         :param flavor_id: 如果不为空，将按规格ID进行过滤后返回。
         :type flavor_id: str
-        :param availability_zone: 可用分区，如果不为空，将按可用分区进行过滤后返回。 - 获取方式详见可用区管理ListAvailabilityZone：\&quot;GET  /v1/{project_id}/availability-zone\&quot;。
+        :param availability_zone: 可用分区，如果不为空，将按可用分区进行过滤后返回。 - [获取方式详见可用区管理ListAvailabilityZone：\&quot;GET  /v1/{project_id}/availability-zone\&quot;。](tag:HW)[获取方式详见可用区管理ListAvailabilityZone：\&quot;GET  /v1/{project_id}/availability-zone/summary\&quot;。](tag:HCS)
         :type availability_zone: str
         :param os_type: 产品套餐的操作系统类型，当前支持：Windows。 - Linux - Windows - Other
         :type os_type: str
@@ -131,7 +131,7 @@ class ListProductRequest:
     def availability_zone(self):
         r"""Gets the availability_zone of this ListProductRequest.
 
-        可用分区，如果不为空，将按可用分区进行过滤后返回。 - 获取方式详见可用区管理ListAvailabilityZone：\"GET  /v1/{project_id}/availability-zone\"。
+        可用分区，如果不为空，将按可用分区进行过滤后返回。 - [获取方式详见可用区管理ListAvailabilityZone：\"GET  /v1/{project_id}/availability-zone\"。](tag:HW)[获取方式详见可用区管理ListAvailabilityZone：\"GET  /v1/{project_id}/availability-zone/summary\"。](tag:HCS)
 
         :return: The availability_zone of this ListProductRequest.
         :rtype: str
@@ -142,7 +142,7 @@ class ListProductRequest:
     def availability_zone(self, availability_zone):
         r"""Sets the availability_zone of this ListProductRequest.
 
-        可用分区，如果不为空，将按可用分区进行过滤后返回。 - 获取方式详见可用区管理ListAvailabilityZone：\"GET  /v1/{project_id}/availability-zone\"。
+        可用分区，如果不为空，将按可用分区进行过滤后返回。 - [获取方式详见可用区管理ListAvailabilityZone：\"GET  /v1/{project_id}/availability-zone\"。](tag:HW)[获取方式详见可用区管理ListAvailabilityZone：\"GET  /v1/{project_id}/availability-zone/summary\"。](tag:HCS)
 
         :param availability_zone: The availability_zone of this ListProductRequest.
         :type availability_zone: str

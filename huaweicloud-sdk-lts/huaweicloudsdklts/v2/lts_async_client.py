@@ -524,6 +524,8 @@ class LtsAsyncClient(Client):
         path_params = {}
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 

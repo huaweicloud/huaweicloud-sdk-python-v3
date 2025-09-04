@@ -61,7 +61,7 @@ class CreateAppServerReq:
         :type type: str
         :param server_group_id: 服务器组唯一标识。
         :type server_group_id: str
-        :param availability_zone: 可用分区。 &gt; - 将服务创建到指定的可用分区，如果不指定则使用系统随机的可用分区。 &gt; - 获取方式详见可用区管理ListAvailabilityZone：\&quot;GET  /v1/{project_id}/availability-zone\&quot;。
+        :param availability_zone: 可用分区。 &gt; - [将服务创建到指定的可用分区，如果不指定则使用系统随机的可用分区](tag:HW)[将服务创建到指定的可用分区](tag:HCS)。 &gt; - [获取方式详见可用区管理ListAvailabilityZone：\&quot;GET  /v1/{project_id}/availability-zone\&quot;。](tag:HW)[获取方式详见可用区管理ListAvailabilityZone：\&quot;GET  /v1/{project_id}/availability-zone/summary\&quot;。](tag:HCS)
         :type availability_zone: str
         :param subscription_num: 订购数量。
         :type subscription_num: int
@@ -180,7 +180,7 @@ class CreateAppServerReq:
     def availability_zone(self):
         r"""Gets the availability_zone of this CreateAppServerReq.
 
-        可用分区。 > - 将服务创建到指定的可用分区，如果不指定则使用系统随机的可用分区。 > - 获取方式详见可用区管理ListAvailabilityZone：\"GET  /v1/{project_id}/availability-zone\"。
+        可用分区。 > - [将服务创建到指定的可用分区，如果不指定则使用系统随机的可用分区](tag:HW)[将服务创建到指定的可用分区](tag:HCS)。 > - [获取方式详见可用区管理ListAvailabilityZone：\"GET  /v1/{project_id}/availability-zone\"。](tag:HW)[获取方式详见可用区管理ListAvailabilityZone：\"GET  /v1/{project_id}/availability-zone/summary\"。](tag:HCS)
 
         :return: The availability_zone of this CreateAppServerReq.
         :rtype: str
@@ -191,7 +191,7 @@ class CreateAppServerReq:
     def availability_zone(self, availability_zone):
         r"""Sets the availability_zone of this CreateAppServerReq.
 
-        可用分区。 > - 将服务创建到指定的可用分区，如果不指定则使用系统随机的可用分区。 > - 获取方式详见可用区管理ListAvailabilityZone：\"GET  /v1/{project_id}/availability-zone\"。
+        可用分区。 > - [将服务创建到指定的可用分区，如果不指定则使用系统随机的可用分区](tag:HW)[将服务创建到指定的可用分区](tag:HCS)。 > - [获取方式详见可用区管理ListAvailabilityZone：\"GET  /v1/{project_id}/availability-zone\"。](tag:HW)[获取方式详见可用区管理ListAvailabilityZone：\"GET  /v1/{project_id}/availability-zone/summary\"。](tag:HCS)
 
         :param availability_zone: The availability_zone of this CreateAppServerReq.
         :type availability_zone: str

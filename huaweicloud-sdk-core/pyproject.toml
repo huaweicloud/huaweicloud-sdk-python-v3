@@ -1,0 +1,56 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "huaweicloudsdkcore"
+version = "3.1.166"
+description = "HuaweiCloud SDK Python Core"
+readme = "README_PYPI.md"
+authors = [
+    { name = "HuaweiCloud SDK", email = "hwcloudsdk@huawei.com" }
+]
+license = "Apache-2.0"
+requires-python = ">=3.6"
+keywords = ["huaweicloud", "sdk", "core"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development"
+]
+dependencies = [
+    "requests-toolbelt>=0.10.1",
+    "six>=1.16.0",
+    "simplejson>=3.18.0",
+    "PyYAML>=5.4.1",
+    "pyasn1>=0.5.0",
+    "certifi>=2022.12.7",
+    "typing_extensions",
+    "pymongo",
+    "defusedxml"
+]
+
+[project.urls]
+Homepage = "https://github.com/huaweicloud/huaweicloud-sdk-python-v3"
+
+[project.optional-dependencies]
+test = [
+    "pytest",
+    "pytest-cov",
+    "pytest-mock",
+    "requests-mock",
+    "responses"
+]
+
+[tool.hatch.build]
+exclude = [
+    "tests/"
+]

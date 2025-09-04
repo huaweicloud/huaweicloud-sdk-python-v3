@@ -19,7 +19,7 @@ class UpdateInstanceGroupRequest:
     openapi_types = {
         'engine': 'str',
         'instance_id': 'str',
-        'body': 'GroupCreateReq'
+        'body': 'BatchModifyGroupDescriptionReq'
     }
 
     attribute_map = {
@@ -38,7 +38,7 @@ class UpdateInstanceGroupRequest:
         :param instance_id: 实例ID。
         :type instance_id: str
         :param body: Body of the UpdateInstanceGroupRequest
-        :type body: :class:`huaweicloudsdkkafka.v2.GroupCreateReq`
+        :type body: :class:`huaweicloudsdkkafka.v2.BatchModifyGroupDescriptionReq`
         """
         
         
@@ -102,7 +102,7 @@ class UpdateInstanceGroupRequest:
         r"""Gets the body of this UpdateInstanceGroupRequest.
 
         :return: The body of this UpdateInstanceGroupRequest.
-        :rtype: :class:`huaweicloudsdkkafka.v2.GroupCreateReq`
+        :rtype: :class:`huaweicloudsdkkafka.v2.BatchModifyGroupDescriptionReq`
         """
         return self._body
 
@@ -111,7 +111,7 @@ class UpdateInstanceGroupRequest:
         r"""Sets the body of this UpdateInstanceGroupRequest.
 
         :param body: The body of this UpdateInstanceGroupRequest.
-        :type body: :class:`huaweicloudsdkkafka.v2.GroupCreateReq`
+        :type body: :class:`huaweicloudsdkkafka.v2.BatchModifyGroupDescriptionReq`
         """
         self._body = body
 

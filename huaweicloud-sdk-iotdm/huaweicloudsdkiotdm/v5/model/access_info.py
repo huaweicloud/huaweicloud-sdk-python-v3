@@ -45,21 +45,21 @@ class AccessInfo:
 
         The model defined in huaweicloud sdk
 
-        :param type: **参数说明**：接入地址的类型，如应用接入的HTTPS协议的取值为：APP_HTTPS，设备接入的MQTT协议的取值为：DEVICE_MQTT **取值范围**： - APP_HTTPS：应用接入HTTPS协议 - APP_AMQP：应用接入AMQP协议 - APP_MQTT：应用接入MQTT协议 - DEVICE_COAP：设备接入COAP协议 - DEVICE_MQTT：设备接入MQTT协议 - DEVICE_HTTPS：设备接入HTTPS协议 
+        :param type: **参数说明**：接入地址的类型，如应用接入的HTTPS协议的取值为：APP_HTTPS，设备接入的MQTT协议的取值为：DEVICE_MQTT。 **取值范围**： - APP_HTTPS：应用接入HTTPS协议 - APP_AMQP：应用接入AMQP协议 - APP_MQTT：应用接入MQTT协议 - DEVICE_COAP：设备接入COAP协议 - DEVICE_MQTT：设备接入MQTT协议 - DEVICE_HTTPS：设备接入HTTPS协议 
         :type type: str
-        :param port: **参数说明**：实例的应用/设备的安全接入端口 
+        :param port: **参数说明**：实例的应用/设备的安全接入端口。 
         :type port: int
         :param non_tls_port: **参数说明**：实例的应用/设备的非安全接入端口。返回null时表示该类型的接入地址不支持非安全端口接入。 
         :type non_tls_port: int
         :param websocket_port: **参数说明**：基于WebSocket的MQTT接入端口。返回null时表示该类型的接入地址不支持WebSocket端口接入。 
         :type websocket_port: int
-        :param domain_name: **参数说明**：实例的接入域名 
+        :param domain_name: **参数说明**：实例的接入域名。 
         :type domain_name: str
-        :param private_addresses: **参数说明**：实例的私网接入地址列表 
+        :param private_addresses: **参数说明**：实例的私网接入地址列表。 
         :type private_addresses: list[str]
-        :param public_address: **参数说明**：实例的公网接入地址 
+        :param public_address: **参数说明**：实例的公网接入地址。 
         :type public_address: list[str]
-        :param ipv6_address: **参数说明**：实例的ipv6接入地址列表 
+        :param ipv6_address: **参数说明**：实例的ipv6接入地址列表。 
         :type ipv6_address: list[str]
         :param ip_whitelist: 
         :type ip_whitelist: :class:`huaweicloudsdkiotdm.v5.IPWhiteList`
@@ -101,7 +101,7 @@ class AccessInfo:
     def type(self):
         r"""Gets the type of this AccessInfo.
 
-        **参数说明**：接入地址的类型，如应用接入的HTTPS协议的取值为：APP_HTTPS，设备接入的MQTT协议的取值为：DEVICE_MQTT **取值范围**： - APP_HTTPS：应用接入HTTPS协议 - APP_AMQP：应用接入AMQP协议 - APP_MQTT：应用接入MQTT协议 - DEVICE_COAP：设备接入COAP协议 - DEVICE_MQTT：设备接入MQTT协议 - DEVICE_HTTPS：设备接入HTTPS协议 
+        **参数说明**：接入地址的类型，如应用接入的HTTPS协议的取值为：APP_HTTPS，设备接入的MQTT协议的取值为：DEVICE_MQTT。 **取值范围**： - APP_HTTPS：应用接入HTTPS协议 - APP_AMQP：应用接入AMQP协议 - APP_MQTT：应用接入MQTT协议 - DEVICE_COAP：设备接入COAP协议 - DEVICE_MQTT：设备接入MQTT协议 - DEVICE_HTTPS：设备接入HTTPS协议 
 
         :return: The type of this AccessInfo.
         :rtype: str
@@ -112,7 +112,7 @@ class AccessInfo:
     def type(self, type):
         r"""Sets the type of this AccessInfo.
 
-        **参数说明**：接入地址的类型，如应用接入的HTTPS协议的取值为：APP_HTTPS，设备接入的MQTT协议的取值为：DEVICE_MQTT **取值范围**： - APP_HTTPS：应用接入HTTPS协议 - APP_AMQP：应用接入AMQP协议 - APP_MQTT：应用接入MQTT协议 - DEVICE_COAP：设备接入COAP协议 - DEVICE_MQTT：设备接入MQTT协议 - DEVICE_HTTPS：设备接入HTTPS协议 
+        **参数说明**：接入地址的类型，如应用接入的HTTPS协议的取值为：APP_HTTPS，设备接入的MQTT协议的取值为：DEVICE_MQTT。 **取值范围**： - APP_HTTPS：应用接入HTTPS协议 - APP_AMQP：应用接入AMQP协议 - APP_MQTT：应用接入MQTT协议 - DEVICE_COAP：设备接入COAP协议 - DEVICE_MQTT：设备接入MQTT协议 - DEVICE_HTTPS：设备接入HTTPS协议 
 
         :param type: The type of this AccessInfo.
         :type type: str
@@ -123,7 +123,7 @@ class AccessInfo:
     def port(self):
         r"""Gets the port of this AccessInfo.
 
-        **参数说明**：实例的应用/设备的安全接入端口 
+        **参数说明**：实例的应用/设备的安全接入端口。 
 
         :return: The port of this AccessInfo.
         :rtype: int
@@ -134,7 +134,7 @@ class AccessInfo:
     def port(self, port):
         r"""Sets the port of this AccessInfo.
 
-        **参数说明**：实例的应用/设备的安全接入端口 
+        **参数说明**：实例的应用/设备的安全接入端口。 
 
         :param port: The port of this AccessInfo.
         :type port: int
@@ -189,7 +189,7 @@ class AccessInfo:
     def domain_name(self):
         r"""Gets the domain_name of this AccessInfo.
 
-        **参数说明**：实例的接入域名 
+        **参数说明**：实例的接入域名。 
 
         :return: The domain_name of this AccessInfo.
         :rtype: str
@@ -200,7 +200,7 @@ class AccessInfo:
     def domain_name(self, domain_name):
         r"""Sets the domain_name of this AccessInfo.
 
-        **参数说明**：实例的接入域名 
+        **参数说明**：实例的接入域名。 
 
         :param domain_name: The domain_name of this AccessInfo.
         :type domain_name: str
@@ -211,7 +211,7 @@ class AccessInfo:
     def private_addresses(self):
         r"""Gets the private_addresses of this AccessInfo.
 
-        **参数说明**：实例的私网接入地址列表 
+        **参数说明**：实例的私网接入地址列表。 
 
         :return: The private_addresses of this AccessInfo.
         :rtype: list[str]
@@ -222,7 +222,7 @@ class AccessInfo:
     def private_addresses(self, private_addresses):
         r"""Sets the private_addresses of this AccessInfo.
 
-        **参数说明**：实例的私网接入地址列表 
+        **参数说明**：实例的私网接入地址列表。 
 
         :param private_addresses: The private_addresses of this AccessInfo.
         :type private_addresses: list[str]
@@ -233,7 +233,7 @@ class AccessInfo:
     def public_address(self):
         r"""Gets the public_address of this AccessInfo.
 
-        **参数说明**：实例的公网接入地址 
+        **参数说明**：实例的公网接入地址。 
 
         :return: The public_address of this AccessInfo.
         :rtype: list[str]
@@ -244,7 +244,7 @@ class AccessInfo:
     def public_address(self, public_address):
         r"""Sets the public_address of this AccessInfo.
 
-        **参数说明**：实例的公网接入地址 
+        **参数说明**：实例的公网接入地址。 
 
         :param public_address: The public_address of this AccessInfo.
         :type public_address: list[str]
@@ -255,7 +255,7 @@ class AccessInfo:
     def ipv6_address(self):
         r"""Gets the ipv6_address of this AccessInfo.
 
-        **参数说明**：实例的ipv6接入地址列表 
+        **参数说明**：实例的ipv6接入地址列表。 
 
         :return: The ipv6_address of this AccessInfo.
         :rtype: list[str]
@@ -266,7 +266,7 @@ class AccessInfo:
     def ipv6_address(self, ipv6_address):
         r"""Sets the ipv6_address of this AccessInfo.
 
-        **参数说明**：实例的ipv6接入地址列表 
+        **参数说明**：实例的ipv6接入地址列表。 
 
         :param ipv6_address: The ipv6_address of this AccessInfo.
         :type ipv6_address: list[str]

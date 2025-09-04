@@ -1651,6 +1651,79 @@ class CloudtestClient(Client):
 
         return http_info
 
+    def delete_cache_file(self, request):
+        r"""删除附件
+
+        删除附件
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteCacheFile
+        :type request: :class:`huaweicloudsdkcloudtest.v1.DeleteCacheFileRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.DeleteCacheFileResponse`
+        """
+        http_info = self._delete_cache_file_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_cache_file_invoker(self, request):
+        http_info = self._delete_cache_file_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_cache_file_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v4/{project_id}/resources/temp-attachments",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteCacheFileResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+        if 'file_path' in local_var_params:
+            query_params.append(('file_path', local_var_params['file_path']))
+        if 'uri' in local_var_params:
+            query_params.append(('uri', local_var_params['uri']))
+        if 'parent_uri' in local_var_params:
+            query_params.append(('parent_uri', local_var_params['parent_uri']))
+        if 'bak_up' in local_var_params:
+            query_params.append(('bak_up', local_var_params['bak_up']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_facotr_by_id(self, request):
         r"""删除因子
 
@@ -1894,6 +1967,77 @@ class CloudtestClient(Client):
         query_params = []
         if 'version_uri' in local_var_params:
             query_params.append(('version_uri', local_var_params['version_uri']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_test_report_custom_detail_by_uri(self, request):
+        r"""删除测试报告自定义模块
+
+        删除测试报告自定义模块
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteTestReportCustomDetailByUri
+        :type request: :class:`huaweicloudsdkcloudtest.v1.DeleteTestReportCustomDetailByUriRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.DeleteTestReportCustomDetailByUriResponse`
+        """
+        http_info = self._delete_test_report_custom_detail_by_uri_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_test_report_custom_detail_by_uri_invoker(self, request):
+        http_info = self._delete_test_report_custom_detail_by_uri_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_test_report_custom_detail_by_uri_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v4/{project_id}/versions/{version_uri}/test-reports/{report_uri}/custom-infos/{custom_info_uri}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTestReportCustomDetailByUriResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'version_uri' in local_var_params:
+            path_params['version_uri'] = local_var_params['version_uri']
+        if 'report_uri' in local_var_params:
+            path_params['report_uri'] = local_var_params['report_uri']
+        if 'custom_info_uri' in local_var_params:
+            path_params['custom_info_uri'] = local_var_params['custom_info_uri']
+
+        query_params = []
 
         header_params = {}
 
@@ -3036,6 +3180,71 @@ class CloudtestClient(Client):
             "resource_path": "/GT3KServer/v4/iterators/batch-query",
             "request_type": request.__class__.__name__,
             "response_type": "ListIteratorsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_iterators_info(self, request):
+        r"""查询迭代计划列表，包含统计信息，对版本强校验
+
+        查询迭代计划列表，包含统计信息，对版本强校验
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListIteratorsInfo
+        :type request: :class:`huaweicloudsdkcloudtest.v1.ListIteratorsInfoRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ListIteratorsInfoResponse`
+        """
+        http_info = self._list_iterators_info_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_iterators_info_invoker(self, request):
+        http_info = self._list_iterators_info_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_iterators_info_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v4/iterators/info/batch-query",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListIteratorsInfoResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -5166,6 +5375,77 @@ class CloudtestClient(Client):
         path_params = {}
         if 'service_id' in local_var_params:
             path_params['service_id'] = local_var_params['service_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def save_test_report_custom_detail(self, request):
+        r"""创建测试报告自定义模块
+
+        创建测试报告自定义模块
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for SaveTestReportCustomDetail
+        :type request: :class:`huaweicloudsdkcloudtest.v1.SaveTestReportCustomDetailRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.SaveTestReportCustomDetailResponse`
+        """
+        http_info = self._save_test_report_custom_detail_http_info(request)
+        return self._call_api(**http_info)
+
+    def save_test_report_custom_detail_invoker(self, request):
+        http_info = self._save_test_report_custom_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _save_test_report_custom_detail_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v4/{project_id}/versions/{version_uri}/test-reports/{report_uri}/custom-infos",
+            "request_type": request.__class__.__name__,
+            "response_type": "SaveTestReportCustomDetailResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'version_uri' in local_var_params:
+            path_params['version_uri'] = local_var_params['version_uri']
+        if 'report_uri' in local_var_params:
+            path_params['report_uri'] = local_var_params['report_uri']
 
         query_params = []
 
@@ -9131,6 +9411,79 @@ class CloudtestClient(Client):
 
         return http_info
 
+    def update_test_report_custom_detail_by_uri(self, request):
+        r"""修改测试报告自定义模块
+
+        修改测试报告自定义模块
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateTestReportCustomDetailByUri
+        :type request: :class:`huaweicloudsdkcloudtest.v1.UpdateTestReportCustomDetailByUriRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.UpdateTestReportCustomDetailByUriResponse`
+        """
+        http_info = self._update_test_report_custom_detail_by_uri_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_test_report_custom_detail_by_uri_invoker(self, request):
+        http_info = self._update_test_report_custom_detail_by_uri_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_test_report_custom_detail_by_uri_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v4/{project_id}/versions/{version_uri}/test-reports/{report_uri}/custom-infos/{custom_info_uri}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateTestReportCustomDetailByUriResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'version_uri' in local_var_params:
+            path_params['version_uri'] = local_var_params['version_uri']
+        if 'report_uri' in local_var_params:
+            path_params['report_uri'] = local_var_params['report_uri']
+        if 'custom_info_uri' in local_var_params:
+            path_params['custom_info_uri'] = local_var_params['custom_info_uri']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def update_user_dns_mapping(self, request):
         r"""更新用户DNS映射
 
@@ -9251,6 +9604,81 @@ class CloudtestClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def upload_cache_file(self, request):
+        r"""上传附件
+
+        上传附件
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UploadCacheFile
+        :type request: :class:`huaweicloudsdkcloudtest.v1.UploadCacheFileRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.UploadCacheFileResponse`
+        """
+        http_info = self._upload_cache_file_http_info(request)
+        return self._call_api(**http_info)
+
+    def upload_cache_file_invoker(self, request):
+        http_info = self._upload_cache_file_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _upload_cache_file_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v4/{project_id}/resources/temp-attachments",
+            "request_type": request.__class__.__name__,
+            "response_type": "UploadCacheFileResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+        if 'override' in local_var_params:
+            query_params.append(('override', local_var_params['override']))
+        if 'parent_type' in local_var_params:
+            query_params.append(('parent_type', local_var_params['parent_type']))
+        if 'parent_uri' in local_var_params:
+            query_params.append(('parent_uri', local_var_params['parent_uri']))
+
+        header_params = {}
+
+        form_params = {}
+        if 'file' in local_var_params:
+            form_params['file'] = local_var_params['file']
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['multipart/form-data'])
 
         auth_settings = ['apig-auth-iam']
 

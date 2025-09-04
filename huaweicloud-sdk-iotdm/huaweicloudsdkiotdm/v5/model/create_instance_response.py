@@ -58,17 +58,17 @@ class CreateInstanceResponse(SdkResponse):
         :type name: str
         :param flavor: 
         :type flavor: :class:`huaweicloudsdkiotdm.v5.Flavor`
-        :param status: **参数说明**：实例状态。 **取值范围**： - CREATING：实例正在创建 - ACTIVE：实例正常 - FROZEN：实例冻结 - MODIFYING：实例正在变更规格 - FAILED：实例创建失败 
+        :param status: **参数说明**：实例状态。 **取值范围**： - CREATING：实例正在创建 - ACTIVE：实例正常 - FROZEN：实例冻结 - TRADING: 实例正在进行交易 - MODIFYING：实例正在变更规格 - MODIFY_FAILED: 实例变更失败 - FAILED：实例创建失败 
         :type status: str
         :param charge_info: 
         :type charge_info: :class:`huaweicloudsdkiotdm.v5.ChargeInfo`
-        :param description: **参数说明**：设备接入实例的描述信息。 **取值范围**：由中文，字母，数字，句号，逗号，下划线（“_”），中划线（“-”），空格组成，且长度为[0-256]个字符。 
+        :param description: **参数说明**：设备接入实例的描述信息。 **取值范围**：长度不超过256，只允许中文、字母、数字、以及_，,.。、&amp;-等字符的组合。 
         :type description: str
         :param enterprise_project_id: **参数说明**：企业项目Id。
         :type enterprise_project_id: str
         :param tags: **参数说明**: 设备接入实例的标签信息。如果实例有标签，则会有该字段，否则该字段为空。 
         :type tags: list[:class:`huaweicloudsdkiotdm.v5.Tag`]
-        :param order_id: **参数说明**：订单号，创建包年包月实例时返回该参数。[查看订单详情请参考[查询订单详情](https://support.huaweicloud.com/api-bpconsole/zh-cn_topic_0075746564.html)。](tag:hws)\&quot; 
+        :param order_id: **参数说明**：订单号，创建包年包月实例时返回该参数。[查看订单详情请参考[查询订单详情](https://support.huaweicloud.com/api-bpconsole/zh-cn_topic_0075746564.html)。](tag:hws) 
         :type order_id: str
         :param additional_params: 
         :type additional_params: :class:`huaweicloudsdkiotdm.v5.AdditionalParams`
@@ -200,7 +200,7 @@ class CreateInstanceResponse(SdkResponse):
     def status(self):
         r"""Gets the status of this CreateInstanceResponse.
 
-        **参数说明**：实例状态。 **取值范围**： - CREATING：实例正在创建 - ACTIVE：实例正常 - FROZEN：实例冻结 - MODIFYING：实例正在变更规格 - FAILED：实例创建失败 
+        **参数说明**：实例状态。 **取值范围**： - CREATING：实例正在创建 - ACTIVE：实例正常 - FROZEN：实例冻结 - TRADING: 实例正在进行交易 - MODIFYING：实例正在变更规格 - MODIFY_FAILED: 实例变更失败 - FAILED：实例创建失败 
 
         :return: The status of this CreateInstanceResponse.
         :rtype: str
@@ -211,7 +211,7 @@ class CreateInstanceResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this CreateInstanceResponse.
 
-        **参数说明**：实例状态。 **取值范围**： - CREATING：实例正在创建 - ACTIVE：实例正常 - FROZEN：实例冻结 - MODIFYING：实例正在变更规格 - FAILED：实例创建失败 
+        **参数说明**：实例状态。 **取值范围**： - CREATING：实例正在创建 - ACTIVE：实例正常 - FROZEN：实例冻结 - TRADING: 实例正在进行交易 - MODIFYING：实例正在变更规格 - MODIFY_FAILED: 实例变更失败 - FAILED：实例创建失败 
 
         :param status: The status of this CreateInstanceResponse.
         :type status: str
@@ -240,7 +240,7 @@ class CreateInstanceResponse(SdkResponse):
     def description(self):
         r"""Gets the description of this CreateInstanceResponse.
 
-        **参数说明**：设备接入实例的描述信息。 **取值范围**：由中文，字母，数字，句号，逗号，下划线（“_”），中划线（“-”），空格组成，且长度为[0-256]个字符。 
+        **参数说明**：设备接入实例的描述信息。 **取值范围**：长度不超过256，只允许中文、字母、数字、以及_，,.。、&-等字符的组合。 
 
         :return: The description of this CreateInstanceResponse.
         :rtype: str
@@ -251,7 +251,7 @@ class CreateInstanceResponse(SdkResponse):
     def description(self, description):
         r"""Sets the description of this CreateInstanceResponse.
 
-        **参数说明**：设备接入实例的描述信息。 **取值范围**：由中文，字母，数字，句号，逗号，下划线（“_”），中划线（“-”），空格组成，且长度为[0-256]个字符。 
+        **参数说明**：设备接入实例的描述信息。 **取值范围**：长度不超过256，只允许中文、字母、数字、以及_，,.。、&-等字符的组合。 
 
         :param description: The description of this CreateInstanceResponse.
         :type description: str
@@ -306,7 +306,7 @@ class CreateInstanceResponse(SdkResponse):
     def order_id(self):
         r"""Gets the order_id of this CreateInstanceResponse.
 
-        **参数说明**：订单号，创建包年包月实例时返回该参数。[查看订单详情请参考[查询订单详情](https://support.huaweicloud.com/api-bpconsole/zh-cn_topic_0075746564.html)。](tag:hws)\" 
+        **参数说明**：订单号，创建包年包月实例时返回该参数。[查看订单详情请参考[查询订单详情](https://support.huaweicloud.com/api-bpconsole/zh-cn_topic_0075746564.html)。](tag:hws) 
 
         :return: The order_id of this CreateInstanceResponse.
         :rtype: str
@@ -317,7 +317,7 @@ class CreateInstanceResponse(SdkResponse):
     def order_id(self, order_id):
         r"""Sets the order_id of this CreateInstanceResponse.
 
-        **参数说明**：订单号，创建包年包月实例时返回该参数。[查看订单详情请参考[查询订单详情](https://support.huaweicloud.com/api-bpconsole/zh-cn_topic_0075746564.html)。](tag:hws)\" 
+        **参数说明**：订单号，创建包年包月实例时返回该参数。[查看订单详情请参考[查询订单详情](https://support.huaweicloud.com/api-bpconsole/zh-cn_topic_0075746564.html)。](tag:hws) 
 
         :param order_id: The order_id of this CreateInstanceResponse.
         :type order_id: str

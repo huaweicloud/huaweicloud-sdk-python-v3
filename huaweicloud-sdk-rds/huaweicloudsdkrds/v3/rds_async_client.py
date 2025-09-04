@@ -3826,6 +3826,8 @@ class RdsAsyncClient(Client):
             query_params.append(('limit', local_var_params['limit']))
         if 'tags' in local_var_params:
             query_params.append(('tags', local_var_params['tags']))
+        if 'group_type' in local_var_params:
+            query_params.append(('group_type', local_var_params['group_type']))
 
         header_params = {}
         if 'x_language' in local_var_params:

@@ -37,7 +37,7 @@ class ServerAddressNetWork:
 
         The model defined in huaweicloud sdk
 
-        :param addr: IP地址信息。
+        :param addr: IP地址信息
         :type addr: str
         :param version: IP地址类型： &#x60;4&#x60; - IPV4 &#x60;6&#x60; - IPV6
         :type version: int
@@ -73,7 +73,7 @@ class ServerAddressNetWork:
     def addr(self):
         r"""Gets the addr of this ServerAddressNetWork.
 
-        IP地址信息。
+        IP地址信息
 
         :return: The addr of this ServerAddressNetWork.
         :rtype: str
@@ -84,7 +84,7 @@ class ServerAddressNetWork:
     def addr(self, addr):
         r"""Sets the addr of this ServerAddressNetWork.
 
-        IP地址信息。
+        IP地址信息
 
         :param addr: The addr of this ServerAddressNetWork.
         :type addr: str

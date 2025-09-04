@@ -17,29 +17,87 @@ class CreateAppServersRequest:
     sensitive_list = []
 
     openapi_types = {
+        'x_linked_id': 'str',
+        'service_transaction_id': 'str',
         'body': 'CreateAppServerReq'
     }
 
     attribute_map = {
+        'x_linked_id': 'X-Linked-Id',
+        'service_transaction_id': 'Service-Transaction-Id',
         'body': 'body'
     }
 
-    def __init__(self, body=None):
+    def __init__(self, x_linked_id=None, service_transaction_id=None, body=None):
         r"""CreateAppServersRequest
 
         The model defined in huaweicloud sdk
 
+        :param x_linked_id: 交易组件调用时下发的关联ID。
+        :type x_linked_id: str
+        :param service_transaction_id: CBC接口回调时，请求头里带上的业务ID 包周期场景必填 按需场景无。
+        :type service_transaction_id: str
         :param body: Body of the CreateAppServersRequest
         :type body: :class:`huaweicloudsdkworkspaceapp.v1.CreateAppServerReq`
         """
         
         
 
+        self._x_linked_id = None
+        self._service_transaction_id = None
         self._body = None
         self.discriminator = None
 
+        if x_linked_id is not None:
+            self.x_linked_id = x_linked_id
+        if service_transaction_id is not None:
+            self.service_transaction_id = service_transaction_id
         if body is not None:
             self.body = body
+
+    @property
+    def x_linked_id(self):
+        r"""Gets the x_linked_id of this CreateAppServersRequest.
+
+        交易组件调用时下发的关联ID。
+
+        :return: The x_linked_id of this CreateAppServersRequest.
+        :rtype: str
+        """
+        return self._x_linked_id
+
+    @x_linked_id.setter
+    def x_linked_id(self, x_linked_id):
+        r"""Sets the x_linked_id of this CreateAppServersRequest.
+
+        交易组件调用时下发的关联ID。
+
+        :param x_linked_id: The x_linked_id of this CreateAppServersRequest.
+        :type x_linked_id: str
+        """
+        self._x_linked_id = x_linked_id
+
+    @property
+    def service_transaction_id(self):
+        r"""Gets the service_transaction_id of this CreateAppServersRequest.
+
+        CBC接口回调时，请求头里带上的业务ID 包周期场景必填 按需场景无。
+
+        :return: The service_transaction_id of this CreateAppServersRequest.
+        :rtype: str
+        """
+        return self._service_transaction_id
+
+    @service_transaction_id.setter
+    def service_transaction_id(self, service_transaction_id):
+        r"""Sets the service_transaction_id of this CreateAppServersRequest.
+
+        CBC接口回调时，请求头里带上的业务ID 包周期场景必填 按需场景无。
+
+        :param service_transaction_id: The service_transaction_id of this CreateAppServersRequest.
+        :type service_transaction_id: str
+        """
+        self._service_transaction_id = service_transaction_id
 
     @property
     def body(self):

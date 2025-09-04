@@ -17,29 +17,58 @@ class CreateLogGroupRequest:
     sensitive_list = []
 
     openapi_types = {
+        'enterprise_project_id': 'str',
         'body': 'CreateLogGroupParams'
     }
 
     attribute_map = {
+        'enterprise_project_id': 'enterprise_project_id',
         'body': 'body'
     }
 
-    def __init__(self, body=None):
+    def __init__(self, enterprise_project_id=None, body=None):
         r"""CreateLogGroupRequest
 
         The model defined in huaweicloud sdk
 
+        :param enterprise_project_id: **参数解释：** 企业项目ID。获取方式请参见：[获取企业项目ID]。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** default。
+        :type enterprise_project_id: str
         :param body: Body of the CreateLogGroupRequest
         :type body: :class:`huaweicloudsdklts.v2.CreateLogGroupParams`
         """
         
         
 
+        self._enterprise_project_id = None
         self._body = None
         self.discriminator = None
 
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
         if body is not None:
             self.body = body
+
+    @property
+    def enterprise_project_id(self):
+        r"""Gets the enterprise_project_id of this CreateLogGroupRequest.
+
+        **参数解释：** 企业项目ID。获取方式请参见：[获取企业项目ID]。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** default。
+
+        :return: The enterprise_project_id of this CreateLogGroupRequest.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        r"""Sets the enterprise_project_id of this CreateLogGroupRequest.
+
+        **参数解释：** 企业项目ID。获取方式请参见：[获取企业项目ID]。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** default。
+
+        :param enterprise_project_id: The enterprise_project_id of this CreateLogGroupRequest.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     @property
     def body(self):

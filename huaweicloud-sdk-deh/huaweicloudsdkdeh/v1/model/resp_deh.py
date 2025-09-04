@@ -18,27 +18,27 @@ class RespDeh:
 
     openapi_types = {
         'resource_id': 'str',
-        'resouce_detail': 'str',
+        'resource_detail': 'str',
         'tags': 'list[ResourceTag]',
         'resource_name': 'str'
     }
 
     attribute_map = {
         'resource_id': 'resource_id',
-        'resouce_detail': 'resouce_detail',
+        'resource_detail': 'resource_detail',
         'tags': 'tags',
         'resource_name': 'resource_name'
     }
 
-    def __init__(self, resource_id=None, resouce_detail=None, tags=None, resource_name=None):
+    def __init__(self, resource_id=None, resource_detail=None, tags=None, resource_name=None):
         r"""RespDeh
 
         The model defined in huaweicloud sdk
 
         :param resource_id: 专属主机ID。
         :type resource_id: str
-        :param resouce_detail: 专属主机详情。  该字段用于后续扩展，默认为空。
-        :type resouce_detail: str
+        :param resource_detail: 专属主机详情。  该字段用于后续扩展，默认为空。
+        :type resource_detail: str
         :param tags: 标签列表。
         :type tags: list[:class:`huaweicloudsdkdeh.v1.ResourceTag`]
         :param resource_name: 资源名称。
@@ -48,13 +48,13 @@ class RespDeh:
         
 
         self._resource_id = None
-        self._resouce_detail = None
+        self._resource_detail = None
         self._tags = None
         self._resource_name = None
         self.discriminator = None
 
         self.resource_id = resource_id
-        self.resouce_detail = resouce_detail
+        self.resource_detail = resource_detail
         self.tags = tags
         self.resource_name = resource_name
 
@@ -81,26 +81,26 @@ class RespDeh:
         self._resource_id = resource_id
 
     @property
-    def resouce_detail(self):
-        r"""Gets the resouce_detail of this RespDeh.
+    def resource_detail(self):
+        r"""Gets the resource_detail of this RespDeh.
 
         专属主机详情。  该字段用于后续扩展，默认为空。
 
-        :return: The resouce_detail of this RespDeh.
+        :return: The resource_detail of this RespDeh.
         :rtype: str
         """
-        return self._resouce_detail
+        return self._resource_detail
 
-    @resouce_detail.setter
-    def resouce_detail(self, resouce_detail):
-        r"""Sets the resouce_detail of this RespDeh.
+    @resource_detail.setter
+    def resource_detail(self, resource_detail):
+        r"""Sets the resource_detail of this RespDeh.
 
         专属主机详情。  该字段用于后续扩展，默认为空。
 
-        :param resouce_detail: The resouce_detail of this RespDeh.
-        :type resouce_detail: str
+        :param resource_detail: The resource_detail of this RespDeh.
+        :type resource_detail: str
         """
-        self._resouce_detail = resouce_detail
+        self._resource_detail = resource_detail
 
     @property
     def tags(self):

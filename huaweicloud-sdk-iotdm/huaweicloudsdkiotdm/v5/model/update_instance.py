@@ -37,9 +37,9 @@ class UpdateInstance:
 
         The model defined in huaweicloud sdk
 
-        :param name: **参数说明**：实例名称 **取值范围**：由中文字符，英文字母、数字及“_”、“-”组成，且长度为[1-64]个字符。 
+        :param name: **参数说明**：实例名称。 **取值范围**：由中文字符，英文字母、数字及“_”、“-”组成，且长度为[1-64]个字符。 
         :type name: str
-        :param description: **参数说明**：设备接入实例的描述信息。 **取值范围**：由中文，字母，数字，句号，逗号，下划线（“_”），中划线（“-”），空格组成，且长度为[1-256]个字符。 
+        :param description: **参数说明**：设备接入实例的描述信息。 **取值范围**：长度不超过256，只允许中文、字母、数字、以及_，,.。、&amp;-等字符的组合 
         :type description: str
         :param operate_window: 
         :type operate_window: :class:`huaweicloudsdkiotdm.v5.OperateWindow`
@@ -73,7 +73,7 @@ class UpdateInstance:
     def name(self):
         r"""Gets the name of this UpdateInstance.
 
-        **参数说明**：实例名称 **取值范围**：由中文字符，英文字母、数字及“_”、“-”组成，且长度为[1-64]个字符。 
+        **参数说明**：实例名称。 **取值范围**：由中文字符，英文字母、数字及“_”、“-”组成，且长度为[1-64]个字符。 
 
         :return: The name of this UpdateInstance.
         :rtype: str
@@ -84,7 +84,7 @@ class UpdateInstance:
     def name(self, name):
         r"""Sets the name of this UpdateInstance.
 
-        **参数说明**：实例名称 **取值范围**：由中文字符，英文字母、数字及“_”、“-”组成，且长度为[1-64]个字符。 
+        **参数说明**：实例名称。 **取值范围**：由中文字符，英文字母、数字及“_”、“-”组成，且长度为[1-64]个字符。 
 
         :param name: The name of this UpdateInstance.
         :type name: str
@@ -95,7 +95,7 @@ class UpdateInstance:
     def description(self):
         r"""Gets the description of this UpdateInstance.
 
-        **参数说明**：设备接入实例的描述信息。 **取值范围**：由中文，字母，数字，句号，逗号，下划线（“_”），中划线（“-”），空格组成，且长度为[1-256]个字符。 
+        **参数说明**：设备接入实例的描述信息。 **取值范围**：长度不超过256，只允许中文、字母、数字、以及_，,.。、&-等字符的组合 
 
         :return: The description of this UpdateInstance.
         :rtype: str
@@ -106,7 +106,7 @@ class UpdateInstance:
     def description(self, description):
         r"""Sets the description of this UpdateInstance.
 
-        **参数说明**：设备接入实例的描述信息。 **取值范围**：由中文，字母，数字，句号，逗号，下划线（“_”），中划线（“-”），空格组成，且长度为[1-256]个字符。 
+        **参数说明**：设备接入实例的描述信息。 **取值范围**：长度不超过256，只允许中文、字母、数字、以及_，,.。、&-等字符的组合 
 
         :param description: The description of this UpdateInstance.
         :type description: str

@@ -64,6 +64,12 @@ class CesRegion:
                         "https://ces.my-kualalumpur-1.myhuaweicloud.com")
     AP_SOUTHEAST_5 = Region("ap-southeast-5",
                         "https://ces.ap-southeast-5.myhuaweicloud.com")
+    CN_NORTH_12 = Region("cn-north-12",
+                        "https://ces.cn-north-12.myhuaweicloud.com")
+    CN_NORTH_11 = Region("cn-north-11",
+                        "https://ces.cn-north-11.myhuaweicloud.com")
+    CN_SOUTHWEST_3 = Region("cn-southwest-3",
+                        "https://ces.cn-southwest-3.myhuaweicloud.com")
 
     static_fields = {
         "af-south-1": AF_SOUTH_1,
@@ -95,6 +101,9 @@ class CesRegion:
         "af-north-1": AF_NORTH_1,
         "my-kualalumpur-1": MY_KUALALUMPUR_1,
         "ap-southeast-5": AP_SOUTHEAST_5,
+        "cn-north-12": CN_NORTH_12,
+        "cn-north-11": CN_NORTH_11,
+        "cn-southwest-3": CN_SOUTHWEST_3,
     }
 
     @classmethod

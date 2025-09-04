@@ -39,15 +39,15 @@ class AdditionalParams:
 
         The model defined in huaweicloud sdk
 
-        :param vpc_id: **参数说明**：企业版实例的VPCID 
+        :param vpc_id: **参数说明**：企业版实例的VPCID。 
         :type vpc_id: str
-        :param subnet_id: **参数说明**：企业版实例的子网ID 
+        :param subnet_id: **参数说明**：企业版实例的子网ID。 
         :type subnet_id: str
-        :param security_group_id: **参数说明**：企业版实例的安全组ID。请确保所选安全组已放通22端口（Linux SSH登录），3389端口（Windows远程登录）和ICMP协议（Ping） 
+        :param security_group_id: **参数说明**：企业版实例的安全组ID。请确保所选安全组已放通22端口（Linux SSH登录），3389端口（Windows远程登录）和ICMP协议（Ping）。 
         :type security_group_id: str
-        :param smn_topic_urn: **参数说明**：SMN的topic urn, 当企业版实例创建成功时，平台将通过该topic发送通知 
+        :param smn_topic_urn: **参数说明**：SMN的topic urn, 当企业版实例创建成功时，平台将通过该topic发送通知。 
         :type smn_topic_urn: str
-        :param ciphering_algorithm: **参数说明**：实例支持的加密算法 **取值范围**： - COMMON_ALGORITHM: 通用加密算法（支持RSA，SHA256等国际通用的密码算法） - SM_ALGORITHM: 支持SM系列商密算法（支持SM2，SM3，SM4等国密算法） 
+        :param ciphering_algorithm: **参数说明**：实例支持的加密算法。 **取值范围**： - COMMON_ALGORITHM: 通用加密算法（支持RSA，SHA256等国际通用的密码算法） - SM_ALGORITHM: 支持SM系列商密算法（支持SM2，SM3，SM4等国密算法） 
         :type ciphering_algorithm: str
         :param port_info: 
         :type port_info: :class:`huaweicloudsdkiotdm.v5.Port`
@@ -76,7 +76,7 @@ class AdditionalParams:
     def vpc_id(self):
         r"""Gets the vpc_id of this AdditionalParams.
 
-        **参数说明**：企业版实例的VPCID 
+        **参数说明**：企业版实例的VPCID。 
 
         :return: The vpc_id of this AdditionalParams.
         :rtype: str
@@ -87,7 +87,7 @@ class AdditionalParams:
     def vpc_id(self, vpc_id):
         r"""Sets the vpc_id of this AdditionalParams.
 
-        **参数说明**：企业版实例的VPCID 
+        **参数说明**：企业版实例的VPCID。 
 
         :param vpc_id: The vpc_id of this AdditionalParams.
         :type vpc_id: str
@@ -98,7 +98,7 @@ class AdditionalParams:
     def subnet_id(self):
         r"""Gets the subnet_id of this AdditionalParams.
 
-        **参数说明**：企业版实例的子网ID 
+        **参数说明**：企业版实例的子网ID。 
 
         :return: The subnet_id of this AdditionalParams.
         :rtype: str
@@ -109,7 +109,7 @@ class AdditionalParams:
     def subnet_id(self, subnet_id):
         r"""Sets the subnet_id of this AdditionalParams.
 
-        **参数说明**：企业版实例的子网ID 
+        **参数说明**：企业版实例的子网ID。 
 
         :param subnet_id: The subnet_id of this AdditionalParams.
         :type subnet_id: str
@@ -120,7 +120,7 @@ class AdditionalParams:
     def security_group_id(self):
         r"""Gets the security_group_id of this AdditionalParams.
 
-        **参数说明**：企业版实例的安全组ID。请确保所选安全组已放通22端口（Linux SSH登录），3389端口（Windows远程登录）和ICMP协议（Ping） 
+        **参数说明**：企业版实例的安全组ID。请确保所选安全组已放通22端口（Linux SSH登录），3389端口（Windows远程登录）和ICMP协议（Ping）。 
 
         :return: The security_group_id of this AdditionalParams.
         :rtype: str
@@ -131,7 +131,7 @@ class AdditionalParams:
     def security_group_id(self, security_group_id):
         r"""Sets the security_group_id of this AdditionalParams.
 
-        **参数说明**：企业版实例的安全组ID。请确保所选安全组已放通22端口（Linux SSH登录），3389端口（Windows远程登录）和ICMP协议（Ping） 
+        **参数说明**：企业版实例的安全组ID。请确保所选安全组已放通22端口（Linux SSH登录），3389端口（Windows远程登录）和ICMP协议（Ping）。 
 
         :param security_group_id: The security_group_id of this AdditionalParams.
         :type security_group_id: str
@@ -142,7 +142,7 @@ class AdditionalParams:
     def smn_topic_urn(self):
         r"""Gets the smn_topic_urn of this AdditionalParams.
 
-        **参数说明**：SMN的topic urn, 当企业版实例创建成功时，平台将通过该topic发送通知 
+        **参数说明**：SMN的topic urn, 当企业版实例创建成功时，平台将通过该topic发送通知。 
 
         :return: The smn_topic_urn of this AdditionalParams.
         :rtype: str
@@ -153,7 +153,7 @@ class AdditionalParams:
     def smn_topic_urn(self, smn_topic_urn):
         r"""Sets the smn_topic_urn of this AdditionalParams.
 
-        **参数说明**：SMN的topic urn, 当企业版实例创建成功时，平台将通过该topic发送通知 
+        **参数说明**：SMN的topic urn, 当企业版实例创建成功时，平台将通过该topic发送通知。 
 
         :param smn_topic_urn: The smn_topic_urn of this AdditionalParams.
         :type smn_topic_urn: str
@@ -164,7 +164,7 @@ class AdditionalParams:
     def ciphering_algorithm(self):
         r"""Gets the ciphering_algorithm of this AdditionalParams.
 
-        **参数说明**：实例支持的加密算法 **取值范围**： - COMMON_ALGORITHM: 通用加密算法（支持RSA，SHA256等国际通用的密码算法） - SM_ALGORITHM: 支持SM系列商密算法（支持SM2，SM3，SM4等国密算法） 
+        **参数说明**：实例支持的加密算法。 **取值范围**： - COMMON_ALGORITHM: 通用加密算法（支持RSA，SHA256等国际通用的密码算法） - SM_ALGORITHM: 支持SM系列商密算法（支持SM2，SM3，SM4等国密算法） 
 
         :return: The ciphering_algorithm of this AdditionalParams.
         :rtype: str
@@ -175,7 +175,7 @@ class AdditionalParams:
     def ciphering_algorithm(self, ciphering_algorithm):
         r"""Sets the ciphering_algorithm of this AdditionalParams.
 
-        **参数说明**：实例支持的加密算法 **取值范围**： - COMMON_ALGORITHM: 通用加密算法（支持RSA，SHA256等国际通用的密码算法） - SM_ALGORITHM: 支持SM系列商密算法（支持SM2，SM3，SM4等国密算法） 
+        **参数说明**：实例支持的加密算法。 **取值范围**： - COMMON_ALGORITHM: 通用加密算法（支持RSA，SHA256等国际通用的密码算法） - SM_ALGORITHM: 支持SM系列商密算法（支持SM2，SM3，SM4等国密算法） 
 
         :param ciphering_algorithm: The ciphering_algorithm of this AdditionalParams.
         :type ciphering_algorithm: str

@@ -171,6 +171,73 @@ class GaussDBAsyncClient(Client):
 
         return http_info
 
+    def batch_upgrade_databases_async(self, request):
+        r"""批量实例小版本升级
+
+        批量实例小版本升级
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchUpgradeDatabases
+        :type request: :class:`huaweicloudsdkgaussdb.v3.BatchUpgradeDatabasesRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.BatchUpgradeDatabasesResponse`
+        """
+        http_info = self._batch_upgrade_databases_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_upgrade_databases_async_invoker(self, request):
+        http_info = self._batch_upgrade_databases_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_upgrade_databases_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/database-version/upgrade",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchUpgradeDatabasesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def cancel_gauss_my_sql_instance_eip_async(self, request):
         r"""解绑弹性公网IP
 
@@ -1336,6 +1403,75 @@ class GaussDBAsyncClient(Client):
 
         return http_info
 
+    def create_proxy_dns_name_async(self, request):
+        r"""开启proxy内网DNS
+
+        开启proxy内网DNS。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateProxyDnsName
+        :type request: :class:`huaweicloudsdkgaussdb.v3.CreateProxyDnsNameRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.CreateProxyDnsNameResponse`
+        """
+        http_info = self._create_proxy_dns_name_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_proxy_dns_name_async_invoker(self, request):
+        http_info = self._create_proxy_dns_name_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_proxy_dns_name_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/proxy/{proxy_id}/dns",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateProxyDnsNameResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'proxy_id' in local_var_params:
+            path_params['proxy_id'] = local_var_params['proxy_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_restore_tables_async(self, request):
         r"""表级时间点恢复
 
@@ -2018,6 +2154,75 @@ class GaussDBAsyncClient(Client):
 
         return http_info
 
+    def delete_proxy_private_dns_name_async(self, request):
+        r"""删除proxy内网dns
+
+        删除proxy内网dns。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteProxyPrivateDnsName
+        :type request: :class:`huaweicloudsdkgaussdb.v3.DeleteProxyPrivateDnsNameRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.DeleteProxyPrivateDnsNameResponse`
+        """
+        http_info = self._delete_proxy_private_dns_name_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_proxy_private_dns_name_async_invoker(self, request):
+        http_info = self._delete_proxy_private_dns_name_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_proxy_private_dns_name_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/proxy/{proxy_id}/dns",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteProxyPrivateDnsNameResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'proxy_id' in local_var_params:
+            path_params['proxy_id'] = local_var_params['proxy_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_schedule_tas_k_async(self, request):
         r"""删除定时任务
 
@@ -2686,6 +2891,81 @@ class GaussDBAsyncClient(Client):
             query_params.append(('start_time', local_var_params['start_time']))
         if 'end_time' in local_var_params:
             query_params.append(('end_time', local_var_params['end_time']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_audit_logs_async(self, request):
+        r"""获取审计日志列表
+
+        获取审计日志列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListAuditLogs
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ListAuditLogsRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ListAuditLogsResponse`
+        """
+        http_info = self._list_audit_logs_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_audit_logs_async_invoker(self, request):
+        http_info = self._list_audit_logs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_audit_logs_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/audit-logs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAuditLogsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
         if 'x_language' in local_var_params:
@@ -5206,6 +5486,75 @@ class GaussDBAsyncClient(Client):
 
         return http_info
 
+    def set_audit_log_policy_async(self, request):
+        r"""设置审计日志策略
+
+        设置审计日志策略。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for SetAuditLogPolicy
+        :type request: :class:`huaweicloudsdkgaussdb.v3.SetAuditLogPolicyRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.SetAuditLogPolicyResponse`
+        """
+        http_info = self._set_audit_log_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def set_audit_log_policy_async_invoker(self, request):
+        http_info = self._set_audit_log_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _set_audit_log_policy_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/audit-log-policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetAuditLogPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def set_gauss_my_sql_proxy_weight_async(self, request):
         r"""设置读写分离权重
 
@@ -5505,6 +5854,142 @@ class GaussDBAsyncClient(Client):
             "resource_path": "/v3/{project_id}/instance/{instance_id}/audit-log/switch-status",
             "request_type": request.__class__.__name__,
             "response_type": "ShowAuditLogResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_audit_log_download_link_async(self, request):
+        r"""生成审计日志下载链接
+
+        生成审计日志下载链接。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowAuditLogDownloadLink
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ShowAuditLogDownloadLinkRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowAuditLogDownloadLinkResponse`
+        """
+        http_info = self._show_audit_log_download_link_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_audit_log_download_link_async_invoker(self, request):
+        http_info = self._show_audit_log_download_link_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_audit_log_download_link_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/audit-log-link",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAuditLogDownloadLinkResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_audit_log_policy_async(self, request):
+        r"""查询审计日志策略
+
+        查询审计日志策略。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowAuditLogPolicy
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ShowAuditLogPolicyRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowAuditLogPolicyResponse`
+        """
+        http_info = self._show_audit_log_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_audit_log_policy_async_invoker(self, request):
+        http_info = self._show_audit_log_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_audit_log_policy_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/audit-log-policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAuditLogPolicyResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -5857,6 +6342,75 @@ class GaussDBAsyncClient(Client):
         path_params = {}
         if 'dedicated_resource_id' in local_var_params:
             path_params['dedicated_resource_id'] = local_var_params['dedicated_resource_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_error_log_download_link_async(self, request):
+        r"""错误日志下载
+
+        错误日志下载。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowErrorLogDownloadLink
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ShowErrorLogDownloadLinkRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowErrorLogDownloadLinkResponse`
+        """
+        http_info = self._show_error_log_download_link_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_error_log_download_link_async_invoker(self, request):
+        http_info = self._show_error_log_download_link_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_error_log_download_link_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/{node_id}/errorlog-download",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowErrorLogDownloadLinkResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'node_id' in local_var_params:
+            path_params['node_id'] = local_var_params['node_id']
 
         query_params = []
 
@@ -7351,6 +7905,75 @@ class GaussDBAsyncClient(Client):
 
         return http_info
 
+    def show_proxy_flavors_by_az_code_async(self, request):
+        r"""根据azCode查询数据库代理规格信息
+
+        根据azCode查询数据库代理规格信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowProxyFlavorsByAzCode
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ShowProxyFlavorsByAzCodeRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowProxyFlavorsByAzCodeResponse`
+        """
+        http_info = self._show_proxy_flavors_by_az_code_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_proxy_flavors_by_az_code_async_invoker(self, request):
+        http_info = self._show_proxy_flavors_by_az_code_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_proxy_flavors_by_az_code_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/proxy/flavors",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowProxyFlavorsByAzCodeResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'az_codes' in local_var_params:
+            query_params.append(('az_codes', local_var_params['az_codes']))
+        if 'proxy_engine_name' in local_var_params:
+            query_params.append(('proxy_engine_name', local_var_params['proxy_engine_name']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_proxy_ipgroup_async(self, request):
         r"""查询代理实例访问控制
 
@@ -7951,6 +8574,77 @@ class GaussDBAsyncClient(Client):
             query_params.append(('node_id', local_var_params['node_id']))
         if 'sql_type' in local_var_params:
             query_params.append(('sql_type', local_var_params['sql_type']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_table_meta_info_async(self, request):
+        r"""查询实例库表信息
+
+        查询实例库表信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowTableMetaInfo
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ShowTableMetaInfoRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowTableMetaInfoResponse`
+        """
+        http_info = self._show_table_meta_info_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_table_meta_info_async_invoker(self, request):
+        http_info = self._show_table_meta_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_table_meta_info_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/table-info",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTableMetaInfoResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'database_name' in local_var_params:
+            query_params.append(('database_name', local_var_params['database_name']))
+        if 'table_name' in local_var_params:
+            query_params.append(('table_name', local_var_params['table_name']))
 
         header_params = {}
         if 'x_language' in local_var_params:
@@ -9952,6 +10646,77 @@ class GaussDBAsyncClient(Client):
             "resource_path": "/v3/{project_id}/instances/{instance_id}/proxy/{proxy_id}/port",
             "request_type": request.__class__.__name__,
             "response_type": "UpdateProxyPortResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'proxy_id' in local_var_params:
+            path_params['proxy_id'] = local_var_params['proxy_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_proxy_private_dns_name_async(self, request):
+        r"""修改proxy内网dns
+
+        修改proxy内网dns
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateProxyPrivateDnsName
+        :type request: :class:`huaweicloudsdkgaussdb.v3.UpdateProxyPrivateDnsNameRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateProxyPrivateDnsNameResponse`
+        """
+        http_info = self._update_proxy_private_dns_name_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_proxy_private_dns_name_async_invoker(self, request):
+        http_info = self._update_proxy_private_dns_name_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_proxy_private_dns_name_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/proxy/{proxy_id}/dns",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateProxyPrivateDnsNameResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -12622,6 +13387,73 @@ class GaussDBAsyncClient(Client):
 
         return http_info
 
+    def list_instance_node_async(self, request):
+        r"""查询节点信息
+
+        查询节点信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListInstanceNode
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ListInstanceNodeRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ListInstanceNodeResponse`
+        """
+        http_info = self._list_instance_node_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_instance_node_async_invoker(self, request):
+        http_info = self._list_instance_node_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_instance_node_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/starrocks/nodes",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListInstanceNodeResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_star_rocks_data_bases_async(self, request):
         r"""查询StarRocks数据库
 
@@ -13069,6 +13901,75 @@ class GaussDBAsyncClient(Client):
             "resource_path": "/v3/{project_id}/instances/{instance_id}/starrocks/databases/replication",
             "request_type": request.__class__.__name__,
             "response_type": "ModifyDataSyncResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def modify_star_rocks_security_group_async(self, request):
+        r"""修改StarRocks安全组
+
+        修改StarRocks安全组。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ModifyStarRocksSecurityGroup
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ModifyStarRocksSecurityGroupRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ModifyStarRocksSecurityGroupResponse`
+        """
+        http_info = self._modify_star_rocks_security_group_http_info(request)
+        return self._call_api(**http_info)
+
+    def modify_star_rocks_security_group_async_invoker(self, request):
+        http_info = self._modify_star_rocks_security_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _modify_star_rocks_security_group_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/starrocks/security-group",
+            "request_type": request.__class__.__name__,
+            "response_type": "ModifyStarRocksSecurityGroupResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -13931,6 +14832,296 @@ class GaussDBAsyncClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_htap_error_log_detail_async(self, request):
+        r"""查询错误日志
+
+        获取内核错误日志信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowHtapErrorLogDetail
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ShowHtapErrorLogDetailRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowHtapErrorLogDetailResponse`
+        """
+        http_info = self._show_htap_error_log_detail_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_htap_error_log_detail_async_invoker(self, request):
+        http_info = self._show_htap_error_log_detail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_htap_error_log_detail_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/starrocks/error-logs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowHtapErrorLogDetailResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_htap_lts_config_async(self, request):
+        r"""查询实例LTS日志配置列表
+
+        查询实例LTS日志配置列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowHtapLtsConfig
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ShowHtapLtsConfigRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowHtapLtsConfigResponse`
+        """
+        http_info = self._show_htap_lts_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_htap_lts_config_async_invoker(self, request):
+        http_info = self._show_htap_lts_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_htap_lts_config_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/starrocks/instances/logs/lts-configs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowHtapLtsConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'instance_id' in local_var_params:
+            query_params.append(('instance_id', local_var_params['instance_id']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'instance_name' in local_var_params:
+            query_params.append(('instance_name', local_var_params['instance_name']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_instance_databases_for_htap_async(self, request):
+        r"""查询HTAP主实例数据库
+
+        查询HTAP主实例数据库。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowInstanceDatabasesForHtap
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ShowInstanceDatabasesForHtapRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowInstanceDatabasesForHtapResponse`
+        """
+        http_info = self._show_instance_databases_for_htap_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_instance_databases_for_htap_async_invoker(self, request):
+        http_info = self._show_instance_databases_for_htap_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_instance_databases_for_htap_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/htap/databases",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowInstanceDatabasesForHtapResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_instance_tables_for_htap_async(self, request):
+        r"""查询HTAP主实例数据库表列表
+
+        查询HTAP主实例数据表列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowInstanceTablesForHtap
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ShowInstanceTablesForHtapRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowInstanceTablesForHtapResponse`
+        """
+        http_info = self._show_instance_tables_for_htap_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_instance_tables_for_htap_async_invoker(self, request):
+        http_info = self._show_instance_tables_for_htap_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_instance_tables_for_htap_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/htap/tables",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowInstanceTablesForHtapResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 

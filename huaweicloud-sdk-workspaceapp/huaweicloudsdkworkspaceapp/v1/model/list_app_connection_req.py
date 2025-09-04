@@ -101,9 +101,9 @@ class ListAppConnectionReq:
         :type public_ip: str
         :param tenant_id: 租户id。
         :type tenant_id: str
-        :param brokering_start_time: 登录应用开始时间，格式 2022-10-31 08:07:39。
+        :param brokering_start_time: 登录应用开始时间，格式 2022-10-31T08:07:39Z。
         :type brokering_start_time: datetime
-        :param brokering_end_time: 登录应用结束时间，格式 2022-10-31 08:07:39。
+        :param brokering_end_time: 登录应用结束时间，格式 2022-10-31T08:07:39Z。
         :type brokering_end_time: datetime
         :param virtual_ip: 会话虚拟ip。
         :type virtual_ip: str
@@ -552,7 +552,7 @@ class ListAppConnectionReq:
     def brokering_start_time(self):
         r"""Gets the brokering_start_time of this ListAppConnectionReq.
 
-        登录应用开始时间，格式 2022-10-31 08:07:39。
+        登录应用开始时间，格式 2022-10-31T08:07:39Z。
 
         :return: The brokering_start_time of this ListAppConnectionReq.
         :rtype: datetime
@@ -563,7 +563,7 @@ class ListAppConnectionReq:
     def brokering_start_time(self, brokering_start_time):
         r"""Sets the brokering_start_time of this ListAppConnectionReq.
 
-        登录应用开始时间，格式 2022-10-31 08:07:39。
+        登录应用开始时间，格式 2022-10-31T08:07:39Z。
 
         :param brokering_start_time: The brokering_start_time of this ListAppConnectionReq.
         :type brokering_start_time: datetime
@@ -574,7 +574,7 @@ class ListAppConnectionReq:
     def brokering_end_time(self):
         r"""Gets the brokering_end_time of this ListAppConnectionReq.
 
-        登录应用结束时间，格式 2022-10-31 08:07:39。
+        登录应用结束时间，格式 2022-10-31T08:07:39Z。
 
         :return: The brokering_end_time of this ListAppConnectionReq.
         :rtype: datetime
@@ -585,7 +585,7 @@ class ListAppConnectionReq:
     def brokering_end_time(self, brokering_end_time):
         r"""Sets the brokering_end_time of this ListAppConnectionReq.
 
-        登录应用结束时间，格式 2022-10-31 08:07:39。
+        登录应用结束时间，格式 2022-10-31T08:07:39Z。
 
         :param brokering_end_time: The brokering_end_time of this ListAppConnectionReq.
         :type brokering_end_time: datetime

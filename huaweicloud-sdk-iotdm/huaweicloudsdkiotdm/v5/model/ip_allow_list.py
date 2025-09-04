@@ -31,9 +31,9 @@ class IpAllowList:
 
         The model defined in huaweicloud sdk
 
-        :param address: **参数说明**：白名单ip地址 
+        :param address: **参数说明**：白名单ip地址。 
         :type address: str
-        :param description: **参数说明**：描述 
+        :param description: **参数说明**：描述。 
         :type description: str
         """
         
@@ -51,7 +51,7 @@ class IpAllowList:
     def address(self):
         r"""Gets the address of this IpAllowList.
 
-        **参数说明**：白名单ip地址 
+        **参数说明**：白名单ip地址。 
 
         :return: The address of this IpAllowList.
         :rtype: str
@@ -62,7 +62,7 @@ class IpAllowList:
     def address(self, address):
         r"""Sets the address of this IpAllowList.
 
-        **参数说明**：白名单ip地址 
+        **参数说明**：白名单ip地址。 
 
         :param address: The address of this IpAllowList.
         :type address: str
@@ -73,7 +73,7 @@ class IpAllowList:
     def description(self):
         r"""Gets the description of this IpAllowList.
 
-        **参数说明**：描述 
+        **参数说明**：描述。 
 
         :return: The description of this IpAllowList.
         :rtype: str
@@ -84,7 +84,7 @@ class IpAllowList:
     def description(self, description):
         r"""Sets the description of this IpAllowList.
 
-        **参数说明**：描述 
+        **参数说明**：描述。 
 
         :param description: The description of this IpAllowList.
         :type description: str

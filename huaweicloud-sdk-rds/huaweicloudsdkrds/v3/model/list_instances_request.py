@@ -27,7 +27,8 @@ class ListInstancesRequest:
         'subnet_id': 'str',
         'offset': 'int',
         'limit': 'int',
-        'tags': 'str'
+        'tags': 'str',
+        'group_type': 'str'
     }
 
     attribute_map = {
@@ -41,10 +42,11 @@ class ListInstancesRequest:
         'subnet_id': 'subnet_id',
         'offset': 'offset',
         'limit': 'limit',
-        'tags': 'tags'
+        'tags': 'tags',
+        'group_type': 'group_type'
     }
 
-    def __init__(self, x_language=None, id=None, name=None, type=None, datastore_type=None, eps_id=None, vpc_id=None, subnet_id=None, offset=None, limit=None, tags=None):
+    def __init__(self, x_language=None, id=None, name=None, type=None, datastore_type=None, eps_id=None, vpc_id=None, subnet_id=None, offset=None, limit=None, tags=None, group_type=None):
         r"""ListInstancesRequest
 
         The model defined in huaweicloud sdk
@@ -71,6 +73,8 @@ class ListInstancesRequest:
         :type limit: int
         :param tags: 根据实例标签键值对进行查询。 {key}表示标签键，不可以为空或重复。最大长度127个unicode字符。key不能为空或者空字符串，不能为空格，使用之前先trim前后半角空格。不能包含+/?#&amp;&#x3D;,%特殊字符。 {value}表示标签值，可以为空。最大长度255个unicode字符，使用之前先trim 前后半角空格。不能包含+/?#&amp;&#x3D;,%特殊字符。如果value为空，则表示any_value（查询任意value）。 如果同时使用多个标签键值对进行查询，中间使用逗号分隔开，最多包含10组。
         :type tags: str
+        :param group_type: 查询flexusrds实例，传flexus。其他场景不传。
+        :type group_type: str
         """
         
         
@@ -86,6 +90,7 @@ class ListInstancesRequest:
         self._offset = None
         self._limit = None
         self._tags = None
+        self._group_type = None
         self.discriminator = None
 
         if x_language is not None:
@@ -110,6 +115,8 @@ class ListInstancesRequest:
             self.limit = limit
         if tags is not None:
             self.tags = tags
+        if group_type is not None:
+            self.group_type = group_type
 
     @property
     def x_language(self):
@@ -352,6 +359,28 @@ class ListInstancesRequest:
         :type tags: str
         """
         self._tags = tags
+
+    @property
+    def group_type(self):
+        r"""Gets the group_type of this ListInstancesRequest.
+
+        查询flexusrds实例，传flexus。其他场景不传。
+
+        :return: The group_type of this ListInstancesRequest.
+        :rtype: str
+        """
+        return self._group_type
+
+    @group_type.setter
+    def group_type(self, group_type):
+        r"""Sets the group_type of this ListInstancesRequest.
+
+        查询flexusrds实例，传flexus。其他场景不传。
+
+        :param group_type: The group_type of this ListInstancesRequest.
+        :type group_type: str
+        """
+        self._group_type = group_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

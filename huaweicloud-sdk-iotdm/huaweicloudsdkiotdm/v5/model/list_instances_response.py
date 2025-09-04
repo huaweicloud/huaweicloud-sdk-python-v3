@@ -34,11 +34,11 @@ class ListInstancesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param count: 设备接入实例的总数
+        :param count: **参数说明**：设备接入实例的总数。 
         :type count: int
-        :param marker: 本次分页查询结果中最后一条记录的ID，可在下一次分页查询时使用
+        :param marker: **参数说明**：本次分页查询结果中最后一条记录的ID，可在下一次分页查询时使用。 
         :type marker: str
-        :param instances: 设备接入实例的详情列表
+        :param instances: **参数说明**：设备接入实例的详情列表。 
         :type instances: list[:class:`huaweicloudsdkiotdm.v5.QueryInstanceSimplify`]
         """
         
@@ -60,7 +60,7 @@ class ListInstancesResponse(SdkResponse):
     def count(self):
         r"""Gets the count of this ListInstancesResponse.
 
-        设备接入实例的总数
+        **参数说明**：设备接入实例的总数。 
 
         :return: The count of this ListInstancesResponse.
         :rtype: int
@@ -71,7 +71,7 @@ class ListInstancesResponse(SdkResponse):
     def count(self, count):
         r"""Sets the count of this ListInstancesResponse.
 
-        设备接入实例的总数
+        **参数说明**：设备接入实例的总数。 
 
         :param count: The count of this ListInstancesResponse.
         :type count: int
@@ -82,7 +82,7 @@ class ListInstancesResponse(SdkResponse):
     def marker(self):
         r"""Gets the marker of this ListInstancesResponse.
 
-        本次分页查询结果中最后一条记录的ID，可在下一次分页查询时使用
+        **参数说明**：本次分页查询结果中最后一条记录的ID，可在下一次分页查询时使用。 
 
         :return: The marker of this ListInstancesResponse.
         :rtype: str
@@ -93,7 +93,7 @@ class ListInstancesResponse(SdkResponse):
     def marker(self, marker):
         r"""Sets the marker of this ListInstancesResponse.
 
-        本次分页查询结果中最后一条记录的ID，可在下一次分页查询时使用
+        **参数说明**：本次分页查询结果中最后一条记录的ID，可在下一次分页查询时使用。 
 
         :param marker: The marker of this ListInstancesResponse.
         :type marker: str
@@ -104,7 +104,7 @@ class ListInstancesResponse(SdkResponse):
     def instances(self):
         r"""Gets the instances of this ListInstancesResponse.
 
-        设备接入实例的详情列表
+        **参数说明**：设备接入实例的详情列表。 
 
         :return: The instances of this ListInstancesResponse.
         :rtype: list[:class:`huaweicloudsdkiotdm.v5.QueryInstanceSimplify`]
@@ -115,7 +115,7 @@ class ListInstancesResponse(SdkResponse):
     def instances(self, instances):
         r"""Sets the instances of this ListInstancesResponse.
 
-        设备接入实例的详情列表
+        **参数说明**：设备接入实例的详情列表。 
 
         :param instances: The instances of this ListInstancesResponse.
         :type instances: list[:class:`huaweicloudsdkiotdm.v5.QueryInstanceSimplify`]

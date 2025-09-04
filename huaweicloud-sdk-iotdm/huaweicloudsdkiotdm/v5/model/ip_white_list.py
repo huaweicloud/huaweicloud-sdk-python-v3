@@ -31,9 +31,9 @@ class IPWhiteList:
 
         The model defined in huaweicloud sdk
 
-        :param enable: **参数说明**：启用Ip白名单访问控制 
+        :param enable: **参数说明**：启用Ip白名单访问控制。 
         :type enable: bool
-        :param allow_list: 允许访问企业版实例的IP地址列表 
+        :param allow_list: **参数说明**：允许访问企业版实例的IP地址列表。 
         :type allow_list: list[:class:`huaweicloudsdkiotdm.v5.IpAllowList`]
         """
         
@@ -51,7 +51,7 @@ class IPWhiteList:
     def enable(self):
         r"""Gets the enable of this IPWhiteList.
 
-        **参数说明**：启用Ip白名单访问控制 
+        **参数说明**：启用Ip白名单访问控制。 
 
         :return: The enable of this IPWhiteList.
         :rtype: bool
@@ -62,7 +62,7 @@ class IPWhiteList:
     def enable(self, enable):
         r"""Sets the enable of this IPWhiteList.
 
-        **参数说明**：启用Ip白名单访问控制 
+        **参数说明**：启用Ip白名单访问控制。 
 
         :param enable: The enable of this IPWhiteList.
         :type enable: bool
@@ -73,7 +73,7 @@ class IPWhiteList:
     def allow_list(self):
         r"""Gets the allow_list of this IPWhiteList.
 
-        允许访问企业版实例的IP地址列表 
+        **参数说明**：允许访问企业版实例的IP地址列表。 
 
         :return: The allow_list of this IPWhiteList.
         :rtype: list[:class:`huaweicloudsdkiotdm.v5.IpAllowList`]
@@ -84,7 +84,7 @@ class IPWhiteList:
     def allow_list(self, allow_list):
         r"""Sets the allow_list of this IPWhiteList.
 
-        允许访问企业版实例的IP地址列表 
+        **参数说明**：允许访问企业版实例的IP地址列表。 
 
         :param allow_list: The allow_list of this IPWhiteList.
         :type allow_list: list[:class:`huaweicloudsdkiotdm.v5.IpAllowList`]

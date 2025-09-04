@@ -30,7 +30,7 @@ class ResizeInstanceResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param order_id: **参数说明**：订单号，修改包年包月实例时返回该参数，修改按需实例时返回为空。查看订单详情请参考[[查询订单详情](https://support.huaweicloud.com/api-bpconsole/zh-cn_topic_0075746564.html)]\&quot; 
+        :param order_id: **参数说明**：订单号，修改包年包月实例时返回该参数，修改按需实例时返回为空。[查看订单详情请参考[查询订单详情](https://support.huaweicloud.com/api-bpconsole/zh-cn_topic_0075746564.html)。](tag:hws) 
         :type order_id: str
         """
         
@@ -46,7 +46,7 @@ class ResizeInstanceResponse(SdkResponse):
     def order_id(self):
         r"""Gets the order_id of this ResizeInstanceResponse.
 
-        **参数说明**：订单号，修改包年包月实例时返回该参数，修改按需实例时返回为空。查看订单详情请参考[[查询订单详情](https://support.huaweicloud.com/api-bpconsole/zh-cn_topic_0075746564.html)]\" 
+        **参数说明**：订单号，修改包年包月实例时返回该参数，修改按需实例时返回为空。[查看订单详情请参考[查询订单详情](https://support.huaweicloud.com/api-bpconsole/zh-cn_topic_0075746564.html)。](tag:hws) 
 
         :return: The order_id of this ResizeInstanceResponse.
         :rtype: str
@@ -57,7 +57,7 @@ class ResizeInstanceResponse(SdkResponse):
     def order_id(self, order_id):
         r"""Sets the order_id of this ResizeInstanceResponse.
 
-        **参数说明**：订单号，修改包年包月实例时返回该参数，修改按需实例时返回为空。查看订单详情请参考[[查询订单详情](https://support.huaweicloud.com/api-bpconsole/zh-cn_topic_0075746564.html)]\" 
+        **参数说明**：订单号，修改包年包月实例时返回该参数，修改按需实例时返回为空。[查看订单详情请参考[查询订单详情](https://support.huaweicloud.com/api-bpconsole/zh-cn_topic_0075746564.html)。](tag:hws) 
 
         :param order_id: The order_id of this ResizeInstanceResponse.
         :type order_id: str

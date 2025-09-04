@@ -28,7 +28,9 @@ class Policies:
         'bandwidth': 'Bandwidth',
         'custom': 'PoliciesCustom',
         'cloud_storage': 'PoliciesCloudStorage',
-        'user_profile': 'PoliciesUserProfile'
+        'user_profile': 'PoliciesUserProfile',
+        'url_redirection': 'PoliciesUrlRedirection',
+        'folder_redirection': 'PoliciesFolderRedirection'
     }
 
     attribute_map = {
@@ -43,10 +45,12 @@ class Policies:
         'bandwidth': 'bandwidth',
         'custom': 'custom',
         'cloud_storage': 'cloud_storage',
-        'user_profile': 'user_profile'
+        'user_profile': 'user_profile',
+        'url_redirection': 'url_redirection',
+        'folder_redirection': 'folder_redirection'
     }
 
-    def __init__(self, peripherals=None, audio=None, client=None, display=None, file_and_clipboard=None, session=None, virtual_channel=None, keyboard_mouse=None, bandwidth=None, custom=None, cloud_storage=None, user_profile=None):
+    def __init__(self, peripherals=None, audio=None, client=None, display=None, file_and_clipboard=None, session=None, virtual_channel=None, keyboard_mouse=None, bandwidth=None, custom=None, cloud_storage=None, user_profile=None, url_redirection=None, folder_redirection=None):
         r"""Policies
 
         The model defined in huaweicloud sdk
@@ -75,6 +79,10 @@ class Policies:
         :type cloud_storage: :class:`huaweicloudsdkworkspaceapp.v1.PoliciesCloudStorage`
         :param user_profile: 
         :type user_profile: :class:`huaweicloudsdkworkspaceapp.v1.PoliciesUserProfile`
+        :param url_redirection: 
+        :type url_redirection: :class:`huaweicloudsdkworkspaceapp.v1.PoliciesUrlRedirection`
+        :param folder_redirection: 
+        :type folder_redirection: :class:`huaweicloudsdkworkspaceapp.v1.PoliciesFolderRedirection`
         """
         
         
@@ -91,6 +99,8 @@ class Policies:
         self._custom = None
         self._cloud_storage = None
         self._user_profile = None
+        self._url_redirection = None
+        self._folder_redirection = None
         self.discriminator = None
 
         if peripherals is not None:
@@ -117,6 +127,10 @@ class Policies:
             self.cloud_storage = cloud_storage
         if user_profile is not None:
             self.user_profile = user_profile
+        if url_redirection is not None:
+            self.url_redirection = url_redirection
+        if folder_redirection is not None:
+            self.folder_redirection = folder_redirection
 
     @property
     def peripherals(self):
@@ -333,6 +347,42 @@ class Policies:
         :type user_profile: :class:`huaweicloudsdkworkspaceapp.v1.PoliciesUserProfile`
         """
         self._user_profile = user_profile
+
+    @property
+    def url_redirection(self):
+        r"""Gets the url_redirection of this Policies.
+
+        :return: The url_redirection of this Policies.
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.PoliciesUrlRedirection`
+        """
+        return self._url_redirection
+
+    @url_redirection.setter
+    def url_redirection(self, url_redirection):
+        r"""Sets the url_redirection of this Policies.
+
+        :param url_redirection: The url_redirection of this Policies.
+        :type url_redirection: :class:`huaweicloudsdkworkspaceapp.v1.PoliciesUrlRedirection`
+        """
+        self._url_redirection = url_redirection
+
+    @property
+    def folder_redirection(self):
+        r"""Gets the folder_redirection of this Policies.
+
+        :return: The folder_redirection of this Policies.
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.PoliciesFolderRedirection`
+        """
+        return self._folder_redirection
+
+    @folder_redirection.setter
+    def folder_redirection(self, folder_redirection):
+        r"""Sets the folder_redirection of this Policies.
+
+        :param folder_redirection: The folder_redirection of this Policies.
+        :type folder_redirection: :class:`huaweicloudsdkworkspaceapp.v1.PoliciesFolderRedirection`
+        """
+        self._folder_redirection = folder_redirection
 
     def to_dict(self):
         """Returns the model properties as a dict"""

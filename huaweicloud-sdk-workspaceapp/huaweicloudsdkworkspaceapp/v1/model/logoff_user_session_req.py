@@ -47,7 +47,7 @@ class LogoffUserSessionReq:
         :type message: str
         :param title: 弹框标题。
         :type title: str
-        :param delay_time: 延迟多长时间注销会话。
+        :param delay_time: 延迟多长时间注销会话， 单位：秒。
         :type delay_time: int
         :param transaction_id: 事务id，用作客户端日志定位跟踪。
         :type transaction_id: str
@@ -63,8 +63,7 @@ class LogoffUserSessionReq:
         self._transaction_id = None
         self.discriminator = None
 
-        if session_ids is not None:
-            self.session_ids = session_ids
+        self.session_ids = session_ids
         self.message_type = message_type
         if message is not None:
             self.message = message
@@ -166,7 +165,7 @@ class LogoffUserSessionReq:
     def delay_time(self):
         r"""Gets the delay_time of this LogoffUserSessionReq.
 
-        延迟多长时间注销会话。
+        延迟多长时间注销会话， 单位：秒。
 
         :return: The delay_time of this LogoffUserSessionReq.
         :rtype: int
@@ -177,7 +176,7 @@ class LogoffUserSessionReq:
     def delay_time(self, delay_time):
         r"""Sets the delay_time of this LogoffUserSessionReq.
 
-        延迟多长时间注销会话。
+        延迟多长时间注销会话， 单位：秒。
 
         :param delay_time: The delay_time of this LogoffUserSessionReq.
         :type delay_time: int

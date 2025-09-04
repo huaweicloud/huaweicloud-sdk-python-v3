@@ -37,7 +37,7 @@ class ChangeInstanceChargeMode:
 
         :param period_type: **参数说明**：订购设备接入实例的周期类型（包年、包月等）。charge_mode为prePaid时生效，且为必选值。 **取值范围**： - month：包月 - year：包年 
         :type period_type: str
-        :param period_num: **参数说明**：订购设备接入实例的周期数。charge_mode为prePaid时生效，且为必选值。 **取值范围**：period_type&#x3D;month（周期类型为月）时，取值为[1，9]；period_type&#x3D;year（周期类型为年）时，取值为[1，3]\&quot; 
+        :param period_num: **参数说明**：订购设备接入实例的周期数。charge_mode为prePaid时生效，且为必选值。 **取值范围**：period_type&#x3D;month（周期类型为月）时，取值为[1，9]；period_type&#x3D;year（周期类型为年）时，取值为[1，3]\&quot;。 
         :type period_num: int
         :param is_auto_renew: **参数说明**：创建包年/包月实例时可指定，表示是否自动续订，续订的周期和原周期相同，且续订时会自动支付。 **取值范围**： - true：自动续订 - false：默认值，不自动续订 
         :type is_auto_renew: bool
@@ -86,7 +86,7 @@ class ChangeInstanceChargeMode:
     def period_num(self):
         r"""Gets the period_num of this ChangeInstanceChargeMode.
 
-        **参数说明**：订购设备接入实例的周期数。charge_mode为prePaid时生效，且为必选值。 **取值范围**：period_type=month（周期类型为月）时，取值为[1，9]；period_type=year（周期类型为年）时，取值为[1，3]\" 
+        **参数说明**：订购设备接入实例的周期数。charge_mode为prePaid时生效，且为必选值。 **取值范围**：period_type=month（周期类型为月）时，取值为[1，9]；period_type=year（周期类型为年）时，取值为[1，3]\"。 
 
         :return: The period_num of this ChangeInstanceChargeMode.
         :rtype: int
@@ -97,7 +97,7 @@ class ChangeInstanceChargeMode:
     def period_num(self, period_num):
         r"""Sets the period_num of this ChangeInstanceChargeMode.
 
-        **参数说明**：订购设备接入实例的周期数。charge_mode为prePaid时生效，且为必选值。 **取值范围**：period_type=month（周期类型为月）时，取值为[1，9]；period_type=year（周期类型为年）时，取值为[1，3]\" 
+        **参数说明**：订购设备接入实例的周期数。charge_mode为prePaid时生效，且为必选值。 **取值范围**：period_type=month（周期类型为月）时，取值为[1，9]；period_type=year（周期类型为年）时，取值为[1，3]\"。 
 
         :param period_num: The period_num of this ChangeInstanceChargeMode.
         :type period_num: int

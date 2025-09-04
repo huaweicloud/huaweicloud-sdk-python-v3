@@ -29,7 +29,7 @@ class UnbindInstanceTags:
 
         The model defined in huaweicloud sdk
 
-        :param tags: 实例标签
+        :param tags: **参数说明**：实例标签。 
         :type tags: list[:class:`huaweicloudsdkiotdm.v5.Tag`]
         """
         
@@ -44,7 +44,7 @@ class UnbindInstanceTags:
     def tags(self):
         r"""Gets the tags of this UnbindInstanceTags.
 
-        实例标签
+        **参数说明**：实例标签。 
 
         :return: The tags of this UnbindInstanceTags.
         :rtype: list[:class:`huaweicloudsdkiotdm.v5.Tag`]
@@ -55,7 +55,7 @@ class UnbindInstanceTags:
     def tags(self, tags):
         r"""Sets the tags of this UnbindInstanceTags.
 
-        实例标签
+        **参数说明**：实例标签。 
 
         :param tags: The tags of this UnbindInstanceTags.
         :type tags: list[:class:`huaweicloudsdkiotdm.v5.Tag`]

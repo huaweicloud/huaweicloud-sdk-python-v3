@@ -38,8 +38,8 @@ class CloudStorageAssignmentCreateInfo:
         'attach': 'attach',
         'attach_id': 'attach_id',
         'attach_type': 'attach_type',
-        'error_message': 'errorMessage',
-        'is_success': 'isSuccess'
+        'error_message': 'error_message',
+        'is_success': 'is_success'
     }
 
     def __init__(self, id=None, region_id=None, tenant_id=None, domain_id=None, folder_name=None, attach=None, attach_id=None, attach_type=None, error_message=None, is_success=None):

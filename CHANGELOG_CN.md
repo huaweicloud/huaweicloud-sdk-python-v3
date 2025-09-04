@@ -1,3 +1,391 @@
+# 3.1.166 2025-09-04
+
+### HuaweiCloud SDK AS
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持接口`UpdateScalingConfig`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK CDN
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 支持以下接口：
+    - `ShowStatsConfigs`
+    - `SetStatsConfig`
+    - `ListDomainClientStats`
+    - `ListCdnDomainTopOriginUrl`
+    - `ListCdnDomainTopIps`
+    - `ListCdnDomainTopUas`
+    - `ListSubscriptionTasks`
+    - `CreateSubscriptionTask`
+    - `UpdateSubscriptionTask`
+    - `DeleteSubscriptionTask`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK Cloudtest
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持以下接口：
+    - `UploadCacheFile`
+    - `DeleteCacheFile`
+    - `ListIteratorsInfo`
+    - `SaveTestReportCustomDetail`
+    - `UpdateTestReportCustomDetailByUri`
+    - `DeleteTestReportCustomDetailByUri`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK CodeArtsBuild
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持以下接口：
+    - `ShowAvailableInnerSpec`
+    - `ShowPackageSpecCountDown`
+    - `AddFavouriteCustomTemplate`
+    - `RemoverFavouriteCustomTemplate`
+    - `ShowTemplate`
+    - `ApplyProjectPermission`
+    - `BatchUpdateJobRolePermission`
+    - `CheckJobInternal`
+    - `BatchDeleteBuildJobs`
+    - `ListEndPoints`
+    - `UpdateJobGroup`
+    - `ListGroupTree`
+    - `SwitchedPacket`
+    - `MoveGroup`
+    - `DeleteGroup`
+    - `CreateJobGroup`
+    - `ShowBuildDetails`
+    - `ShowDomainStatus`
+    - `ShowDomainsStatuses`
+    - `ShowUserChargeType`
+    - `UpdateNewNoticeNew`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **AddKeystorePermission**
+    - 请求参数变更
+      - `+ user_id`
+
+### HuaweiCloud SDK DAS
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持以下接口：
+    - `ChangeFullDeadLockSwitch`
+    - `ShowFullDeadLockSwitch`
+    - `ShowFullDeadLockList`
+    - `ShowLatestDeadLockSnapshot`
+    - `ListSnapshots`
+    - `CreateSnapshots`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DDS
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持接口`ListBackupDownloadPolicy`、`UpdateBackupDownloadPolicy`、`SaveBackupDownloadPolicy`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DeH
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListDedicatedHostsByTags**
+    - 响应参数变更
+      - `+ resources.resource_detail`
+      - `- resources.resouce_detail`
+
+### HuaweiCloud SDK ECS
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 支持以下接口：
+    - `ExecuteServerRedeploy`
+    - `BatchResizeServers`
+    - `ShowAppendableVolumeQuota`
+    - `BatchDetachVolumes`
+    - `ExecuteServerDump`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK EPS
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListEnterpriseProject**
+    - 响应参数变更
+      - `+ enterprise_projects.delete_flag`
+  - **CreateEnterpriseProject**
+    - 响应参数变更
+      - `+ enterprise_project.delete_flag`
+  - **ShowEnterpriseProject**
+    - 响应参数变更
+      - `+ enterprise_project.delete_flag`
+  - **UpdateEnterpriseProject**
+    - 响应参数变更
+      - `+ enterprise_project.delete_flag`
+
+### HuaweiCloud SDK GaussDB
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持以下接口：
+    - `ShowProxyFlavorsByAzCode`
+    - `ShowErrorLogDownloadLink`
+    - `ListAuditLogs`
+    - `ShowAuditLogPolicy`
+    - `SetAuditLogPolicy`
+    - `ShowAuditLogDownloadLink`
+    - `ShowTableMetaInfo`
+    - `BatchUpgradeDatabases`
+    - `ShowInstanceDatabasesForHtap`
+    - `ShowHtapErrorLogDetail`
+    - `ModifyStarRocksSecurityGroup`
+    - `ShowHtapLtsConfig`
+    - `ListInstanceNode`
+    - `ShowInstanceTablesForHtap`
+    - `UpdateProxyPrivateDnsName`
+    - `CreateProxyDnsName`
+    - `DeleteProxyPrivateDnsName`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持接口`ExportSlowSql`、`ListSchemaAndTable`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK IoTDA
+
+- _接口版本_
+  - V5
+- _新增特性_
+  - 支持以下接口：
+    - `ListDeviceCertificate`
+    - `ShowDeviceCertificate`
+    - `UpdateDeviceCertificate`
+    - `DeleteDeviceCertificate`
+    - `ListDeviceByDeviceCertificate`
+    - `ListHarmonySoftBus`
+    - `AddHarmonySoftBus`
+    - `ShowHarmonySoftBus`
+    - `DeleteHarmonySoftBus`
+    - `CreateSyncHarmonySoftBus`
+    - `ResetHarmonySoftBusKey`
+    - `ListDeviceAuthenticationTemplates`
+    - `CreateDeviceAuthenticationTemplate`
+    - `ShowDeviceAuthenticationTemplate`
+    - `UpdateDeviceAuthenticationTemplate`
+    - `DeleteDeviceAuthenticationTemplate`
+    - `ListSecurityProfiles`
+    - `CreateSecurityProfile`
+    - `ShowSecurityProfile`
+    - `UpdateSecurityProfile`
+    - `DeleteSecurityProfile`
+    - `DeleteDeviceShadow`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK IoTDM
+
+- _接口版本_
+  - V5
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateInstance**
+    - 请求参数变更
+      - `+ charge_info.promotion_infos`
+      - `+ additional_params.port_info.app_mqtts_port`
+    - 响应参数变更
+      - `+ charge_info.promotion_infos`
+      - `+ additional_params.port_info.app_mqtts_port`
+  - **ShowInstance**
+    - 响应参数变更
+      - `+ region_id`
+  - **UpdateInstance**
+    - 响应参数变更
+      - `+ region_id`
+
+### HuaweiCloud SDK Kafka
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpdateInstanceGroup**
+    - 请求参数变更
+      - `+ groups`
+      - `- group_name`
+      - `- group_desc`
+      - `* body: object<GroupCreateReq> -> object<BatchModifyGroupDescriptionReq>`
+
+### HuaweiCloud SDK LTS
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateLogGroup**
+    - 请求参数变更
+      - `+ enterprise_project_id`
+
+### HuaweiCloud SDK RDS
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListInstances**
+    - 请求参数变更
+      - `+ group_type`
+
+### HuaweiCloud SDK WorkspaceApp
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持以下接口：
+    - `CheckAppGroup`
+    - `ExportAppConnection`
+    - `ExportUserConnection`
+    - `ExportSessions`
+    - `ShowHdaUpgradeFlag`
+    - `ValidateServerGroup`
+    - `ShowPrivacyStatement`
+    - `SignPrivacyStatement`
+    - `CountImageSubJobs`
+    - `ResetUserProfile`
+    - `ListFoldersAndFiles`
+    - `TransferFile`
+    - `TransferFilePre`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UploadAppIcon**
+    - 请求参数变更
+      - `+ icon_url`
+  - **ShowServer**
+    - 响应参数变更
+      - `+ job_type: enum value [INSTALL_CES_AGENT,UNINSTALL_CES_AGENT]`
+  - **CreateAppServers**
+    - 请求参数变更
+      - `+ X-Linked-Id`
+      - `+ Service-Transaction-Id`
+  - **CreateUserFolderAssignment**
+    - 响应参数变更
+      - `+ items.error_message`
+      - `+ items.is_success`
+      - `- items.errorMessage`
+      - `- items.isSuccess`
+  - **ListServers**
+    - 响应参数变更
+      - `+ items.job_type: enum value [INSTALL_CES_AGENT,UNINSTALL_CES_AGENT]`
+  - **ShowJobDetail**
+    - 响应参数变更
+      - `+ job_type: enum value [INSTALL_CES_AGENT,UNINSTALL_CES_AGENT]`
+  - **ShowOriginalPolicyInfo**
+    - 响应参数变更
+      - `+ policies.url_redirection`
+      - `+ policies.folder_redirection`
+  - **ListPolicyOfPolicyGroup**
+    - 响应参数变更
+      - `+ policies.url_redirection`
+      - `+ policies.folder_redirection`
+  - **ListPolicyGroup**
+    - 响应参数变更
+      - `+ total_count`
+      - `+ items.policies.url_redirection`
+      - `+ items.policies.folder_redirection`
+  - **CreatePolicyGroup**
+    - 请求参数变更
+      - `+ policy_group.policies.url_redirection`
+      - `+ policy_group.policies.folder_redirection`
+  - **ShowPolicyGroup**
+    - 响应参数变更
+      - `+ policy_group.policies.url_redirection`
+      - `+ policy_group.policies.folder_redirection`
+  - **UpdatePolicyGroup**
+    - 请求参数变更
+      - `+ policy_group.policies.url_redirection`
+      - `+ policy_group.policies.folder_redirection`
+  - **ListPolicyGroupDetailInfo**
+    - 响应参数变更
+      - `+ items.policies.url_redirection`
+      - `+ items.policies.folder_redirection`
+  - **ListPolicyTemplate**
+    - 响应参数变更
+      - `+ items.policies.url_redirection`
+      - `+ items.policies.folder_redirection`
+  - **CreatePolicyTemplate**
+    - 请求参数变更
+      - `+ policy_group.policies.url_redirection`
+      - `+ policy_group.policies.folder_redirection`
+  - **UpdatePolicyTemplate**
+    - 请求参数变更
+      - `+ policy_group.policies.url_redirection`
+      - `+ policy_group.policies.folder_redirection`
+
 # 3.1.165 2025-08-28
 
 ### HuaweiCloud SDK APIG

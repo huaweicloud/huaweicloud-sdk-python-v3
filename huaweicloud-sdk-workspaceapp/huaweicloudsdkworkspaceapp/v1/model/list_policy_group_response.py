@@ -19,21 +19,25 @@ class ListPolicyGroupResponse(SdkResponse):
 
     openapi_types = {
         'count': 'int',
+        'total_count': 'int',
         'items': 'list[PolicyGroup]'
     }
 
     attribute_map = {
         'count': 'count',
+        'total_count': 'total_count',
         'items': 'items'
     }
 
-    def __init__(self, count=None, items=None):
+    def __init__(self, count=None, total_count=None, items=None):
         r"""ListPolicyGroupResponse
 
         The model defined in huaweicloud sdk
 
         :param count: 总数。
         :type count: int
+        :param total_count: 去除条件查询影响的策略总数量。
+        :type total_count: int
         :param items: 策略组列表，返回列表条目数量上限为分页的最大上限值。
         :type items: list[:class:`huaweicloudsdkworkspaceapp.v1.PolicyGroup`]
         """
@@ -41,11 +45,14 @@ class ListPolicyGroupResponse(SdkResponse):
         super(ListPolicyGroupResponse, self).__init__()
 
         self._count = None
+        self._total_count = None
         self._items = None
         self.discriminator = None
 
         if count is not None:
             self.count = count
+        if total_count is not None:
+            self.total_count = total_count
         if items is not None:
             self.items = items
 
@@ -70,6 +77,28 @@ class ListPolicyGroupResponse(SdkResponse):
         :type count: int
         """
         self._count = count
+
+    @property
+    def total_count(self):
+        r"""Gets the total_count of this ListPolicyGroupResponse.
+
+        去除条件查询影响的策略总数量。
+
+        :return: The total_count of this ListPolicyGroupResponse.
+        :rtype: int
+        """
+        return self._total_count
+
+    @total_count.setter
+    def total_count(self, total_count):
+        r"""Sets the total_count of this ListPolicyGroupResponse.
+
+        去除条件查询影响的策略总数量。
+
+        :param total_count: The total_count of this ListPolicyGroupResponse.
+        :type total_count: int
+        """
+        self._total_count = total_count
 
     @property
     def items(self):
