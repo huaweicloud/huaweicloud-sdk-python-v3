@@ -25,10 +25,8 @@ jobs:
           cd "${each}" || exit 1
           if [ -f "pyproject.toml" ]; then
             python -m build --wheel --no-isolation
-          elif [ -f "setup.py" ]; then
-            python setup.py bdist_wheel
           else
-            echo "python build failed for ${each}" || exit 1
+            echo "python build failed for ${each}, pyproject.toml not found" || exit 1
           fi
           cp dist/*.whl "${GITHUB_WORKSPACE}"
         done
