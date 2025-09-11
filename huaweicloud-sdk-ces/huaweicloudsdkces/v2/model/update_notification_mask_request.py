@@ -31,7 +31,7 @@ class UpdateNotificationMaskRequest:
 
         The model defined in huaweicloud sdk
 
-        :param notification_mask_id: 屏蔽规则ID
+        :param notification_mask_id: **参数解释**： 屏蔽规则ID。    **约束限制**： 不涉及。 **取值范围**： 只能包含字母、数字，长度为[1,64]个字符。           **默认取值**： 不涉及。 
         :type notification_mask_id: str
         :param body: Body of the UpdateNotificationMaskRequest
         :type body: :class:`huaweicloudsdkces.v2.UpdateNotificationMasksRequestBody`
@@ -51,7 +51,7 @@ class UpdateNotificationMaskRequest:
     def notification_mask_id(self):
         r"""Gets the notification_mask_id of this UpdateNotificationMaskRequest.
 
-        屏蔽规则ID
+        **参数解释**： 屏蔽规则ID。    **约束限制**： 不涉及。 **取值范围**： 只能包含字母、数字，长度为[1,64]个字符。           **默认取值**： 不涉及。 
 
         :return: The notification_mask_id of this UpdateNotificationMaskRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class UpdateNotificationMaskRequest:
     def notification_mask_id(self, notification_mask_id):
         r"""Sets the notification_mask_id of this UpdateNotificationMaskRequest.
 
-        屏蔽规则ID
+        **参数解释**： 屏蔽规则ID。    **约束限制**： 不涉及。 **取值范围**： 只能包含字母、数字，长度为[1,64]个字符。           **默认取值**： 不涉及。 
 
         :param notification_mask_id: The notification_mask_id of this UpdateNotificationMaskRequest.
         :type notification_mask_id: str

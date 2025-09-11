@@ -55,7 +55,7 @@ class CreateInstanceRequestBody:
         :type name: str
         :param description: 企业仓库实例描述
         :type description: str
-        :param spec: 企业仓库实例规格，目前支持基础版(swr.ee.basic)，企业版(swr.ee.professional)
+        :param spec: 企业仓库实例规格，目前支持企业版(swr.ee.professional)
         :type spec: str
         :param vpc_id: 用户虚拟私有云ID
         :type vpc_id: str
@@ -159,7 +159,7 @@ class CreateInstanceRequestBody:
     def spec(self):
         r"""Gets the spec of this CreateInstanceRequestBody.
 
-        企业仓库实例规格，目前支持基础版(swr.ee.basic)，企业版(swr.ee.professional)
+        企业仓库实例规格，目前支持企业版(swr.ee.professional)
 
         :return: The spec of this CreateInstanceRequestBody.
         :rtype: str
@@ -170,7 +170,7 @@ class CreateInstanceRequestBody:
     def spec(self, spec):
         r"""Sets the spec of this CreateInstanceRequestBody.
 
-        企业仓库实例规格，目前支持基础版(swr.ee.basic)，企业版(swr.ee.professional)
+        企业仓库实例规格，目前支持企业版(swr.ee.professional)
 
         :param spec: The spec of this CreateInstanceRequestBody.
         :type spec: str

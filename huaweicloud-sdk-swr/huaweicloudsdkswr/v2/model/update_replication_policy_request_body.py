@@ -49,7 +49,7 @@ class UpdateReplicationPolicyRequestBody:
 
         :param name: 策略名称, 1-256字符组成，只能包含英文大小写、数字、汉字、中划线和下划线。
         :type name: str
-        :param description: 策略描述描述
+        :param description: 策略描述
         :type description: str
         :param src_registry: 
         :type src_registry: :class:`huaweicloudsdkswr.v2.ReplicationRegistry`
@@ -65,7 +65,7 @@ class UpdateReplicationPolicyRequestBody:
         :type trigger: :class:`huaweicloudsdkswr.v2.TriggerConfig`
         :param override: 是否覆盖，默认为false
         :type override: bool
-        :param enabled: 是否使用，默认为false
+        :param enabled: 是否启用，默认为false
         :type enabled: bool
         """
         
@@ -125,7 +125,7 @@ class UpdateReplicationPolicyRequestBody:
     def description(self):
         r"""Gets the description of this UpdateReplicationPolicyRequestBody.
 
-        策略描述描述
+        策略描述
 
         :return: The description of this UpdateReplicationPolicyRequestBody.
         :rtype: str
@@ -136,7 +136,7 @@ class UpdateReplicationPolicyRequestBody:
     def description(self, description):
         r"""Sets the description of this UpdateReplicationPolicyRequestBody.
 
-        策略描述描述
+        策略描述
 
         :param description: The description of this UpdateReplicationPolicyRequestBody.
         :type description: str
@@ -289,7 +289,7 @@ class UpdateReplicationPolicyRequestBody:
     def enabled(self):
         r"""Gets the enabled of this UpdateReplicationPolicyRequestBody.
 
-        是否使用，默认为false
+        是否启用，默认为false
 
         :return: The enabled of this UpdateReplicationPolicyRequestBody.
         :rtype: bool
@@ -300,7 +300,7 @@ class UpdateReplicationPolicyRequestBody:
     def enabled(self, enabled):
         r"""Sets the enabled of this UpdateReplicationPolicyRequestBody.
 
-        是否使用，默认为false
+        是否启用，默认为false
 
         :param enabled: The enabled of this UpdateReplicationPolicyRequestBody.
         :type enabled: bool

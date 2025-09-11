@@ -18,7 +18,7 @@ class ListCesTargetProjectTagsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'tags': 'list[Tag]'
+        'tags': 'list[TagResp]'
     }
 
     attribute_map = {
@@ -30,8 +30,8 @@ class ListCesTargetProjectTagsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param tags: 租户标签列表
-        :type tags: list[:class:`huaweicloudsdkces.v2.Tag`]
+        :param tags: **参数解释**： 租户标签列表。 
+        :type tags: list[:class:`huaweicloudsdkces.v2.TagResp`]
         """
         
         super(ListCesTargetProjectTagsResponse, self).__init__()
@@ -46,10 +46,10 @@ class ListCesTargetProjectTagsResponse(SdkResponse):
     def tags(self):
         r"""Gets the tags of this ListCesTargetProjectTagsResponse.
 
-        租户标签列表
+        **参数解释**： 租户标签列表。 
 
         :return: The tags of this ListCesTargetProjectTagsResponse.
-        :rtype: list[:class:`huaweicloudsdkces.v2.Tag`]
+        :rtype: list[:class:`huaweicloudsdkces.v2.TagResp`]
         """
         return self._tags
 
@@ -57,10 +57,10 @@ class ListCesTargetProjectTagsResponse(SdkResponse):
     def tags(self, tags):
         r"""Sets the tags of this ListCesTargetProjectTagsResponse.
 
-        租户标签列表
+        **参数解释**： 租户标签列表。 
 
         :param tags: The tags of this ListCesTargetProjectTagsResponse.
-        :type tags: list[:class:`huaweicloudsdkces.v2.Tag`]
+        :type tags: list[:class:`huaweicloudsdkces.v2.TagResp`]
         """
         self._tags = tags
 

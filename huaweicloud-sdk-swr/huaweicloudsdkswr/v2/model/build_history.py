@@ -45,11 +45,11 @@ class BuildHistory:
         :type created_by: str
         :param empty_layer: 是否空层
         :type empty_layer: bool
-        :param media_type: 层格式
+        :param media_type: 镜像层格式
         :type media_type: str
-        :param size: 层大小
+        :param size: 镜像层大小
         :type size: int
-        :param digest: 层sha256信息
+        :param digest: 镜像层sha256信息
         :type digest: str
         """
         
@@ -140,7 +140,7 @@ class BuildHistory:
     def media_type(self):
         r"""Gets the media_type of this BuildHistory.
 
-        层格式
+        镜像层格式
 
         :return: The media_type of this BuildHistory.
         :rtype: str
@@ -151,7 +151,7 @@ class BuildHistory:
     def media_type(self, media_type):
         r"""Sets the media_type of this BuildHistory.
 
-        层格式
+        镜像层格式
 
         :param media_type: The media_type of this BuildHistory.
         :type media_type: str
@@ -162,7 +162,7 @@ class BuildHistory:
     def size(self):
         r"""Gets the size of this BuildHistory.
 
-        层大小
+        镜像层大小
 
         :return: The size of this BuildHistory.
         :rtype: int
@@ -173,7 +173,7 @@ class BuildHistory:
     def size(self, size):
         r"""Sets the size of this BuildHistory.
 
-        层大小
+        镜像层大小
 
         :param size: The size of this BuildHistory.
         :type size: int
@@ -184,7 +184,7 @@ class BuildHistory:
     def digest(self):
         r"""Gets the digest of this BuildHistory.
 
-        层sha256信息
+        镜像层sha256信息
 
         :return: The digest of this BuildHistory.
         :rtype: str
@@ -195,7 +195,7 @@ class BuildHistory:
     def digest(self, digest):
         r"""Sets the digest of this BuildHistory.
 
-        层sha256信息
+        镜像层sha256信息
 
         :param digest: The digest of this BuildHistory.
         :type digest: str

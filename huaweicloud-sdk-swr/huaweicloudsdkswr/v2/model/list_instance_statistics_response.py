@@ -78,7 +78,7 @@ class ListInstanceStatisticsResponse(SdkResponse):
         :type replica_policy_quota: int
         :param retention_policy_quota: 镜像老化策略的配额
         :type retention_policy_quota: int
-        :param notify_policy_quota: 触发器策略的配额
+        :param notify_policy_quota: 触发器的配额
         :type notify_policy_quota: int
         :param replica_registry_quota: 镜像同步的目标仓库配额
         :type replica_registry_quota: int
@@ -88,7 +88,7 @@ class ListInstanceStatisticsResponse(SdkResponse):
         :type replica_policy_count: int
         :param retention_policy_count: 镜像老化策略的总数
         :type retention_policy_count: int
-        :param notify_policy_count: 触发器策略的总数
+        :param notify_policy_count: 触发器的总数
         :type notify_policy_count: int
         :param replica_registry_count: 镜像同步策略的目标仓库总数
         :type replica_registry_count: int
@@ -319,7 +319,7 @@ class ListInstanceStatisticsResponse(SdkResponse):
     def notify_policy_quota(self):
         r"""Gets the notify_policy_quota of this ListInstanceStatisticsResponse.
 
-        触发器策略的配额
+        触发器的配额
 
         :return: The notify_policy_quota of this ListInstanceStatisticsResponse.
         :rtype: int
@@ -330,7 +330,7 @@ class ListInstanceStatisticsResponse(SdkResponse):
     def notify_policy_quota(self, notify_policy_quota):
         r"""Sets the notify_policy_quota of this ListInstanceStatisticsResponse.
 
-        触发器策略的配额
+        触发器的配额
 
         :param notify_policy_quota: The notify_policy_quota of this ListInstanceStatisticsResponse.
         :type notify_policy_quota: int
@@ -429,7 +429,7 @@ class ListInstanceStatisticsResponse(SdkResponse):
     def notify_policy_count(self):
         r"""Gets the notify_policy_count of this ListInstanceStatisticsResponse.
 
-        触发器策略的总数
+        触发器的总数
 
         :return: The notify_policy_count of this ListInstanceStatisticsResponse.
         :rtype: int
@@ -440,7 +440,7 @@ class ListInstanceStatisticsResponse(SdkResponse):
     def notify_policy_count(self, notify_policy_count):
         r"""Sets the notify_policy_count of this ListInstanceStatisticsResponse.
 
-        触发器策略的总数
+        触发器的总数
 
         :param notify_policy_count: The notify_policy_count of this ListInstanceStatisticsResponse.
         :type notify_policy_count: int

@@ -144,8 +144,7 @@ class CreateInstancePeriodRequest:
             self.tags = tags
         if promotion_info is not None:
             self.promotion_info = promotion_info
-        if is_auto_renew is not None:
-            self.is_auto_renew = is_auto_renew
+        self.is_auto_renew = is_auto_renew
 
     @property
     def name(self):

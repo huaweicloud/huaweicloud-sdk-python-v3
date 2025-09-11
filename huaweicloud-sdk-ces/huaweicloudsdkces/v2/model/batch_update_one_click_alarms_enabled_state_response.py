@@ -30,7 +30,7 @@ class BatchUpdateOneClickAlarmsEnabledStateResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param alarm_ids: 成功启停的告警规则ID列表
+        :param alarm_ids: **参数解释**： 成功启停的告警规则ID列表。 
         :type alarm_ids: list[str]
         """
         
@@ -46,7 +46,7 @@ class BatchUpdateOneClickAlarmsEnabledStateResponse(SdkResponse):
     def alarm_ids(self):
         r"""Gets the alarm_ids of this BatchUpdateOneClickAlarmsEnabledStateResponse.
 
-        成功启停的告警规则ID列表
+        **参数解释**： 成功启停的告警规则ID列表。 
 
         :return: The alarm_ids of this BatchUpdateOneClickAlarmsEnabledStateResponse.
         :rtype: list[str]
@@ -57,7 +57,7 @@ class BatchUpdateOneClickAlarmsEnabledStateResponse(SdkResponse):
     def alarm_ids(self, alarm_ids):
         r"""Sets the alarm_ids of this BatchUpdateOneClickAlarmsEnabledStateResponse.
 
-        成功启停的告警规则ID列表
+        **参数解释**： 成功启停的告警规则ID列表。 
 
         :param alarm_ids: The alarm_ids of this BatchUpdateOneClickAlarmsEnabledStateResponse.
         :type alarm_ids: list[str]

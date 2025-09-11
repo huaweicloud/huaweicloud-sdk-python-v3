@@ -45,7 +45,7 @@ class CreateDatabaseRequestDatabase:
 
         The model defined in huaweicloud sdk
 
-        :param db_classification: 数据库分类 - ECS:自建数据库
+        :param db_classification: 数据库分类 - RDS: RDS数据库 - ECS:自建数据库
         :type db_classification: str
         :param name: 数据库名称
         :type name: str
@@ -93,7 +93,7 @@ class CreateDatabaseRequestDatabase:
     def db_classification(self):
         r"""Gets the db_classification of this CreateDatabaseRequestDatabase.
 
-        数据库分类 - ECS:自建数据库
+        数据库分类 - RDS: RDS数据库 - ECS:自建数据库
 
         :return: The db_classification of this CreateDatabaseRequestDatabase.
         :rtype: str
@@ -104,7 +104,7 @@ class CreateDatabaseRequestDatabase:
     def db_classification(self, db_classification):
         r"""Sets the db_classification of this CreateDatabaseRequestDatabase.
 
-        数据库分类 - ECS:自建数据库
+        数据库分类 - RDS: RDS数据库 - ECS:自建数据库
 
         :param db_classification: The db_classification of this CreateDatabaseRequestDatabase.
         :type db_classification: str

@@ -44,7 +44,7 @@ class ShowCrossCloudDisasterInstanceMonitorResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: 实例id。
+        :param instance_id: **参数解释**: 实例ID。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
         :type instance_id: str
         :param status: 容灾状态。
         :type status: str
@@ -95,7 +95,7 @@ class ShowCrossCloudDisasterInstanceMonitorResponse(SdkResponse):
     def instance_id(self):
         r"""Gets the instance_id of this ShowCrossCloudDisasterInstanceMonitorResponse.
 
-        实例id。
+        **参数解释**: 实例ID。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
 
         :return: The instance_id of this ShowCrossCloudDisasterInstanceMonitorResponse.
         :rtype: str
@@ -106,7 +106,7 @@ class ShowCrossCloudDisasterInstanceMonitorResponse(SdkResponse):
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this ShowCrossCloudDisasterInstanceMonitorResponse.
 
-        实例id。
+        **参数解释**: 实例ID。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
 
         :param instance_id: The instance_id of this ShowCrossCloudDisasterInstanceMonitorResponse.
         :type instance_id: str

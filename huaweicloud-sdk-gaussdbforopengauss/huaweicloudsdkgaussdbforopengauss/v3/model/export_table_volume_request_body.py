@@ -39,17 +39,17 @@ class ExportTableVolumeRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param database_name: **参数解释**: 数据库名称。 **约束限制**: 不涉及 **取值范围**: 不涉及 **默认取值**: 不涉及。 
+        :param database_name: **参数解释**: 数据库名称。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
         :type database_name: str
-        :param schema_names: **参数解释**: schema名称。 **约束限制**: 不涉及 **取值范围**: 不涉及 **默认取值**: 不涉及。 
+        :param schema_names: **参数解释**: schema名称。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
         :type schema_names: list[str]
-        :param table_name: **参数解释**:   表名称。 **约束限制**: 不涉及 **取值范围**: 不涉及 **默认取值**: 不涉及。 
+        :param table_name: **参数解释**: 表名称。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
         :type table_name: str
-        :param user_name: **参数解释**: 表所属用户名称。 **约束限制**: 不涉及 **取值范围**: 不涉及 **默认取值**: 不涉及。 
+        :param user_name: **参数解释**: 表所属用户名称。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
         :type user_name: str
-        :param sort_key: **参数解释**: 排序字段。 **约束限制**: 不涉及 **取值范围**: 不涉及 **默认取值**: 不涉及。 
+        :param sort_key: **参数解释**: 排序字段。 **约束限制**: 不涉及。 **取值范围**: - table_size：表的大小。 - id：表ID。 - table_name：表名称。 - table_owner：表所属用户名称。 - database_name：数据库名称。 - schema_name：schema名称。 - is_part_type：表或者索引是否具有分区表的性质。 - is_hash_cluster_key：是否包含hash分区列信息。 - tuples：表中行的数目。 - create_time：创建时间。 - update_time：修改时间。 - average_size：表大小平均值(totalsize/DN个数，该值为平均分布的理想情况下，表在各DN占用空间大小)。 - max_ratio：单DN表大小最大值占比（表在各DN占用空间的最大值/totalsize）。 - min_ratio：单DN表大小最小值占比（表在各DN占用空间的最小值/totalsize）。 - skew_size：表分布倾斜值（单DN表大小最大值 - 单DN表大小最小值）。 - skew_ratio：表分布倾斜率（skewsize/totalsize）。 - skew_stddev：表分布标准方差（在表大小一定的情况下，该值越大表明表的整体分布情况越倾斜）。  **默认取值** 不涉及。 
         :type sort_key: str
-        :param sort_order: **参数解释**: 排序方法。 **约束限制**: 不涉及 **取值范围**: 不涉及 **默认取值**: 不涉及。 
+        :param sort_order: **参数解释** 实时会话统计排序方式。 **约束限制**: 不涉及。 **取值范围** - ASC：根据sort_key值升序。 - DESC：根据sort_key值降序。  **默认取值** ASC 
         :type sort_order: str
         """
         
@@ -78,7 +78,7 @@ class ExportTableVolumeRequestBody:
     def database_name(self):
         r"""Gets the database_name of this ExportTableVolumeRequestBody.
 
-        **参数解释**: 数据库名称。 **约束限制**: 不涉及 **取值范围**: 不涉及 **默认取值**: 不涉及。 
+        **参数解释**: 数据库名称。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
 
         :return: The database_name of this ExportTableVolumeRequestBody.
         :rtype: str
@@ -89,7 +89,7 @@ class ExportTableVolumeRequestBody:
     def database_name(self, database_name):
         r"""Sets the database_name of this ExportTableVolumeRequestBody.
 
-        **参数解释**: 数据库名称。 **约束限制**: 不涉及 **取值范围**: 不涉及 **默认取值**: 不涉及。 
+        **参数解释**: 数据库名称。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
 
         :param database_name: The database_name of this ExportTableVolumeRequestBody.
         :type database_name: str
@@ -100,7 +100,7 @@ class ExportTableVolumeRequestBody:
     def schema_names(self):
         r"""Gets the schema_names of this ExportTableVolumeRequestBody.
 
-        **参数解释**: schema名称。 **约束限制**: 不涉及 **取值范围**: 不涉及 **默认取值**: 不涉及。 
+        **参数解释**: schema名称。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
 
         :return: The schema_names of this ExportTableVolumeRequestBody.
         :rtype: list[str]
@@ -111,7 +111,7 @@ class ExportTableVolumeRequestBody:
     def schema_names(self, schema_names):
         r"""Sets the schema_names of this ExportTableVolumeRequestBody.
 
-        **参数解释**: schema名称。 **约束限制**: 不涉及 **取值范围**: 不涉及 **默认取值**: 不涉及。 
+        **参数解释**: schema名称。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
 
         :param schema_names: The schema_names of this ExportTableVolumeRequestBody.
         :type schema_names: list[str]
@@ -122,7 +122,7 @@ class ExportTableVolumeRequestBody:
     def table_name(self):
         r"""Gets the table_name of this ExportTableVolumeRequestBody.
 
-        **参数解释**:   表名称。 **约束限制**: 不涉及 **取值范围**: 不涉及 **默认取值**: 不涉及。 
+        **参数解释**: 表名称。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
 
         :return: The table_name of this ExportTableVolumeRequestBody.
         :rtype: str
@@ -133,7 +133,7 @@ class ExportTableVolumeRequestBody:
     def table_name(self, table_name):
         r"""Sets the table_name of this ExportTableVolumeRequestBody.
 
-        **参数解释**:   表名称。 **约束限制**: 不涉及 **取值范围**: 不涉及 **默认取值**: 不涉及。 
+        **参数解释**: 表名称。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
 
         :param table_name: The table_name of this ExportTableVolumeRequestBody.
         :type table_name: str
@@ -144,7 +144,7 @@ class ExportTableVolumeRequestBody:
     def user_name(self):
         r"""Gets the user_name of this ExportTableVolumeRequestBody.
 
-        **参数解释**: 表所属用户名称。 **约束限制**: 不涉及 **取值范围**: 不涉及 **默认取值**: 不涉及。 
+        **参数解释**: 表所属用户名称。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
 
         :return: The user_name of this ExportTableVolumeRequestBody.
         :rtype: str
@@ -155,7 +155,7 @@ class ExportTableVolumeRequestBody:
     def user_name(self, user_name):
         r"""Sets the user_name of this ExportTableVolumeRequestBody.
 
-        **参数解释**: 表所属用户名称。 **约束限制**: 不涉及 **取值范围**: 不涉及 **默认取值**: 不涉及。 
+        **参数解释**: 表所属用户名称。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
 
         :param user_name: The user_name of this ExportTableVolumeRequestBody.
         :type user_name: str
@@ -166,7 +166,7 @@ class ExportTableVolumeRequestBody:
     def sort_key(self):
         r"""Gets the sort_key of this ExportTableVolumeRequestBody.
 
-        **参数解释**: 排序字段。 **约束限制**: 不涉及 **取值范围**: 不涉及 **默认取值**: 不涉及。 
+        **参数解释**: 排序字段。 **约束限制**: 不涉及。 **取值范围**: - table_size：表的大小。 - id：表ID。 - table_name：表名称。 - table_owner：表所属用户名称。 - database_name：数据库名称。 - schema_name：schema名称。 - is_part_type：表或者索引是否具有分区表的性质。 - is_hash_cluster_key：是否包含hash分区列信息。 - tuples：表中行的数目。 - create_time：创建时间。 - update_time：修改时间。 - average_size：表大小平均值(totalsize/DN个数，该值为平均分布的理想情况下，表在各DN占用空间大小)。 - max_ratio：单DN表大小最大值占比（表在各DN占用空间的最大值/totalsize）。 - min_ratio：单DN表大小最小值占比（表在各DN占用空间的最小值/totalsize）。 - skew_size：表分布倾斜值（单DN表大小最大值 - 单DN表大小最小值）。 - skew_ratio：表分布倾斜率（skewsize/totalsize）。 - skew_stddev：表分布标准方差（在表大小一定的情况下，该值越大表明表的整体分布情况越倾斜）。  **默认取值** 不涉及。 
 
         :return: The sort_key of this ExportTableVolumeRequestBody.
         :rtype: str
@@ -177,7 +177,7 @@ class ExportTableVolumeRequestBody:
     def sort_key(self, sort_key):
         r"""Sets the sort_key of this ExportTableVolumeRequestBody.
 
-        **参数解释**: 排序字段。 **约束限制**: 不涉及 **取值范围**: 不涉及 **默认取值**: 不涉及。 
+        **参数解释**: 排序字段。 **约束限制**: 不涉及。 **取值范围**: - table_size：表的大小。 - id：表ID。 - table_name：表名称。 - table_owner：表所属用户名称。 - database_name：数据库名称。 - schema_name：schema名称。 - is_part_type：表或者索引是否具有分区表的性质。 - is_hash_cluster_key：是否包含hash分区列信息。 - tuples：表中行的数目。 - create_time：创建时间。 - update_time：修改时间。 - average_size：表大小平均值(totalsize/DN个数，该值为平均分布的理想情况下，表在各DN占用空间大小)。 - max_ratio：单DN表大小最大值占比（表在各DN占用空间的最大值/totalsize）。 - min_ratio：单DN表大小最小值占比（表在各DN占用空间的最小值/totalsize）。 - skew_size：表分布倾斜值（单DN表大小最大值 - 单DN表大小最小值）。 - skew_ratio：表分布倾斜率（skewsize/totalsize）。 - skew_stddev：表分布标准方差（在表大小一定的情况下，该值越大表明表的整体分布情况越倾斜）。  **默认取值** 不涉及。 
 
         :param sort_key: The sort_key of this ExportTableVolumeRequestBody.
         :type sort_key: str
@@ -188,7 +188,7 @@ class ExportTableVolumeRequestBody:
     def sort_order(self):
         r"""Gets the sort_order of this ExportTableVolumeRequestBody.
 
-        **参数解释**: 排序方法。 **约束限制**: 不涉及 **取值范围**: 不涉及 **默认取值**: 不涉及。 
+        **参数解释** 实时会话统计排序方式。 **约束限制**: 不涉及。 **取值范围** - ASC：根据sort_key值升序。 - DESC：根据sort_key值降序。  **默认取值** ASC 
 
         :return: The sort_order of this ExportTableVolumeRequestBody.
         :rtype: str
@@ -199,7 +199,7 @@ class ExportTableVolumeRequestBody:
     def sort_order(self, sort_order):
         r"""Sets the sort_order of this ExportTableVolumeRequestBody.
 
-        **参数解释**: 排序方法。 **约束限制**: 不涉及 **取值范围**: 不涉及 **默认取值**: 不涉及。 
+        **参数解释** 实时会话统计排序方式。 **约束限制**: 不涉及。 **取值范围** - ASC：根据sort_key值升序。 - DESC：根据sort_key值降序。  **默认取值** ASC 
 
         :param sort_order: The sort_order of this ExportTableVolumeRequestBody.
         :type sort_order: str

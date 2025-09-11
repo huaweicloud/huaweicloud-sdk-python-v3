@@ -29,7 +29,7 @@ class WidgetIdItem:
 
         The model defined in huaweicloud sdk
 
-        :param widget_id: 视图id
+        :param widget_id: **参数解释** 视图id **取值范围** 字符串必须以wg开头，包含22个字母和数字，长度为24个字符。 
         :type widget_id: str
         """
         
@@ -45,7 +45,7 @@ class WidgetIdItem:
     def widget_id(self):
         r"""Gets the widget_id of this WidgetIdItem.
 
-        视图id
+        **参数解释** 视图id **取值范围** 字符串必须以wg开头，包含22个字母和数字，长度为24个字符。 
 
         :return: The widget_id of this WidgetIdItem.
         :rtype: str
@@ -56,7 +56,7 @@ class WidgetIdItem:
     def widget_id(self, widget_id):
         r"""Sets the widget_id of this WidgetIdItem.
 
-        视图id
+        **参数解释** 视图id **取值范围** 字符串必须以wg开头，包含22个字母和数字，长度为24个字符。 
 
         :param widget_id: The widget_id of this WidgetIdItem.
         :type widget_id: str

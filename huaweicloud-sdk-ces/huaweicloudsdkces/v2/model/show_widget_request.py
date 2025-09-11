@@ -29,7 +29,7 @@ class ShowWidgetRequest:
 
         The model defined in huaweicloud sdk
 
-        :param widget_id: 监控视图id
+        :param widget_id: **参数解释**: 监控视图id。 **约束限制**: 不涉及。 **取值范围**: 字符串必须以wg开头，包含22个字母和数字，长度为24个字符。 **默认取值**: 不涉及。 
         :type widget_id: str
         """
         
@@ -44,7 +44,7 @@ class ShowWidgetRequest:
     def widget_id(self):
         r"""Gets the widget_id of this ShowWidgetRequest.
 
-        监控视图id
+        **参数解释**: 监控视图id。 **约束限制**: 不涉及。 **取值范围**: 字符串必须以wg开头，包含22个字母和数字，长度为24个字符。 **默认取值**: 不涉及。 
 
         :return: The widget_id of this ShowWidgetRequest.
         :rtype: str
@@ -55,7 +55,7 @@ class ShowWidgetRequest:
     def widget_id(self, widget_id):
         r"""Sets the widget_id of this ShowWidgetRequest.
 
-        监控视图id
+        **参数解释**: 监控视图id。 **约束限制**: 不涉及。 **取值范围**: 字符串必须以wg开头，包含22个字母和数字，长度为24个字符。 **默认取值**: 不涉及。 
 
         :param widget_id: The widget_id of this ShowWidgetRequest.
         :type widget_id: str

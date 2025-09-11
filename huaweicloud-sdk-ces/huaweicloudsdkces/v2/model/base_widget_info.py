@@ -25,7 +25,7 @@ class BaseWidgetInfo:
         'view': 'str',
         'metric_display_mode': 'str',
         'properties': 'BaseWidgetInfoProperties',
-        'location': 'UpdateWidgetInfoLocation',
+        'location': 'BaseWidgetInfoLocation',
         'unit': 'str'
     }
 
@@ -47,25 +47,25 @@ class BaseWidgetInfo:
 
         The model defined in huaweicloud sdk
 
-        :param group_id: 视图分区id
+        :param group_id: **参数解释** 视图分组id **约束限制** 不涉及           **取值范围** 字符串必须以dg开头，包含22个字母和数字，长度为24个字符 **默认取值** 不涉及 
         :type group_id: str
-        :param metrics: 指标列表
+        :param metrics: **参数解释** 指标列表 **约束限制** 包含的指标数量最多为200个，最少为1个 
         :type metrics: list[:class:`huaweicloudsdkces.v2.WidgetMetric`]
-        :param title: 监控视图标题
+        :param title: **参数解释** 监控视图标题 **约束限制** 不涉及           **取值范围** 长度为[1,128]个字符，允许包括以下内容：1、中文汉字；2、拉丁字母；3、英文大小写字母；4、数字(0-9)；5、符号： ” \&quot; ≤ &lt; &gt; &amp; % _ : / ; “ &#39; ? + , ~ ， （ ） º ( ) [ . - **默认取值** 不涉及 
         :type title: str
-        :param threshold: 监控视图指标的阈值
+        :param threshold: **参数解释** 监控视图指标的阈值 **约束限制** 不涉及   **取值范围** 最小值为0，最大值为1.7976931348623157e+308 **默认取值** 不涉及 
         :type threshold: float
-        :param threshold_enabled: 阈值是否展示，true:展示，false:不展示
+        :param threshold_enabled: **参数解释** 阈值是否展示 **约束限制** 不涉及   **取值范围** - true:展示 - false:不展示 **默认取值** 不涉及 
         :type threshold_enabled: bool
-        :param view: 监控视图图表类型, bar条形图，line折线图，bar_chart柱状图，table表格，circular_bar环形柱状图，area_chart面积图
+        :param view: **参数解释** 监控视图图表类型 **约束限制** 不涉及   **取值范围** - bar:条形图 - line:折线图 - bar_chart:柱状图 - table:表格 - circular_bar:环形柱状图 - area_chart:面积图 **默认取值** 不涉及 
         :type view: str
-        :param metric_display_mode: 指标展示类型，single 单指标展示，multiple 多指标展示
+        :param metric_display_mode: **参数解释** 指标展示类型 **约束限制** 不涉及   **取值范围** - single:单指标展示 - multiple:多指标展示 **默认取值** 不涉及 
         :type metric_display_mode: str
         :param properties: 
         :type properties: :class:`huaweicloudsdkces.v2.BaseWidgetInfoProperties`
         :param location: 
-        :type location: :class:`huaweicloudsdkces.v2.UpdateWidgetInfoLocation`
-        :param unit: 单位
+        :type location: :class:`huaweicloudsdkces.v2.BaseWidgetInfoLocation`
+        :param unit: **参数解释** 单位 **约束限制** 不涉及 **取值范围** 长度为[0,32]个字符 **默认取值** 不涉及 
         :type unit: str
         """
         
@@ -102,7 +102,7 @@ class BaseWidgetInfo:
     def group_id(self):
         r"""Gets the group_id of this BaseWidgetInfo.
 
-        视图分区id
+        **参数解释** 视图分组id **约束限制** 不涉及           **取值范围** 字符串必须以dg开头，包含22个字母和数字，长度为24个字符 **默认取值** 不涉及 
 
         :return: The group_id of this BaseWidgetInfo.
         :rtype: str
@@ -113,7 +113,7 @@ class BaseWidgetInfo:
     def group_id(self, group_id):
         r"""Sets the group_id of this BaseWidgetInfo.
 
-        视图分区id
+        **参数解释** 视图分组id **约束限制** 不涉及           **取值范围** 字符串必须以dg开头，包含22个字母和数字，长度为24个字符 **默认取值** 不涉及 
 
         :param group_id: The group_id of this BaseWidgetInfo.
         :type group_id: str
@@ -124,7 +124,7 @@ class BaseWidgetInfo:
     def metrics(self):
         r"""Gets the metrics of this BaseWidgetInfo.
 
-        指标列表
+        **参数解释** 指标列表 **约束限制** 包含的指标数量最多为200个，最少为1个 
 
         :return: The metrics of this BaseWidgetInfo.
         :rtype: list[:class:`huaweicloudsdkces.v2.WidgetMetric`]
@@ -135,7 +135,7 @@ class BaseWidgetInfo:
     def metrics(self, metrics):
         r"""Sets the metrics of this BaseWidgetInfo.
 
-        指标列表
+        **参数解释** 指标列表 **约束限制** 包含的指标数量最多为200个，最少为1个 
 
         :param metrics: The metrics of this BaseWidgetInfo.
         :type metrics: list[:class:`huaweicloudsdkces.v2.WidgetMetric`]
@@ -146,7 +146,7 @@ class BaseWidgetInfo:
     def title(self):
         r"""Gets the title of this BaseWidgetInfo.
 
-        监控视图标题
+        **参数解释** 监控视图标题 **约束限制** 不涉及           **取值范围** 长度为[1,128]个字符，允许包括以下内容：1、中文汉字；2、拉丁字母；3、英文大小写字母；4、数字(0-9)；5、符号： ” \" ≤ < > & % _ : / ; “ ' ? + , ~ ， （ ） º ( ) [ . - **默认取值** 不涉及 
 
         :return: The title of this BaseWidgetInfo.
         :rtype: str
@@ -157,7 +157,7 @@ class BaseWidgetInfo:
     def title(self, title):
         r"""Sets the title of this BaseWidgetInfo.
 
-        监控视图标题
+        **参数解释** 监控视图标题 **约束限制** 不涉及           **取值范围** 长度为[1,128]个字符，允许包括以下内容：1、中文汉字；2、拉丁字母；3、英文大小写字母；4、数字(0-9)；5、符号： ” \" ≤ < > & % _ : / ; “ ' ? + , ~ ， （ ） º ( ) [ . - **默认取值** 不涉及 
 
         :param title: The title of this BaseWidgetInfo.
         :type title: str
@@ -168,7 +168,7 @@ class BaseWidgetInfo:
     def threshold(self):
         r"""Gets the threshold of this BaseWidgetInfo.
 
-        监控视图指标的阈值
+        **参数解释** 监控视图指标的阈值 **约束限制** 不涉及   **取值范围** 最小值为0，最大值为1.7976931348623157e+308 **默认取值** 不涉及 
 
         :return: The threshold of this BaseWidgetInfo.
         :rtype: float
@@ -179,7 +179,7 @@ class BaseWidgetInfo:
     def threshold(self, threshold):
         r"""Sets the threshold of this BaseWidgetInfo.
 
-        监控视图指标的阈值
+        **参数解释** 监控视图指标的阈值 **约束限制** 不涉及   **取值范围** 最小值为0，最大值为1.7976931348623157e+308 **默认取值** 不涉及 
 
         :param threshold: The threshold of this BaseWidgetInfo.
         :type threshold: float
@@ -190,7 +190,7 @@ class BaseWidgetInfo:
     def threshold_enabled(self):
         r"""Gets the threshold_enabled of this BaseWidgetInfo.
 
-        阈值是否展示，true:展示，false:不展示
+        **参数解释** 阈值是否展示 **约束限制** 不涉及   **取值范围** - true:展示 - false:不展示 **默认取值** 不涉及 
 
         :return: The threshold_enabled of this BaseWidgetInfo.
         :rtype: bool
@@ -201,7 +201,7 @@ class BaseWidgetInfo:
     def threshold_enabled(self, threshold_enabled):
         r"""Sets the threshold_enabled of this BaseWidgetInfo.
 
-        阈值是否展示，true:展示，false:不展示
+        **参数解释** 阈值是否展示 **约束限制** 不涉及   **取值范围** - true:展示 - false:不展示 **默认取值** 不涉及 
 
         :param threshold_enabled: The threshold_enabled of this BaseWidgetInfo.
         :type threshold_enabled: bool
@@ -212,7 +212,7 @@ class BaseWidgetInfo:
     def view(self):
         r"""Gets the view of this BaseWidgetInfo.
 
-        监控视图图表类型, bar条形图，line折线图，bar_chart柱状图，table表格，circular_bar环形柱状图，area_chart面积图
+        **参数解释** 监控视图图表类型 **约束限制** 不涉及   **取值范围** - bar:条形图 - line:折线图 - bar_chart:柱状图 - table:表格 - circular_bar:环形柱状图 - area_chart:面积图 **默认取值** 不涉及 
 
         :return: The view of this BaseWidgetInfo.
         :rtype: str
@@ -223,7 +223,7 @@ class BaseWidgetInfo:
     def view(self, view):
         r"""Sets the view of this BaseWidgetInfo.
 
-        监控视图图表类型, bar条形图，line折线图，bar_chart柱状图，table表格，circular_bar环形柱状图，area_chart面积图
+        **参数解释** 监控视图图表类型 **约束限制** 不涉及   **取值范围** - bar:条形图 - line:折线图 - bar_chart:柱状图 - table:表格 - circular_bar:环形柱状图 - area_chart:面积图 **默认取值** 不涉及 
 
         :param view: The view of this BaseWidgetInfo.
         :type view: str
@@ -234,7 +234,7 @@ class BaseWidgetInfo:
     def metric_display_mode(self):
         r"""Gets the metric_display_mode of this BaseWidgetInfo.
 
-        指标展示类型，single 单指标展示，multiple 多指标展示
+        **参数解释** 指标展示类型 **约束限制** 不涉及   **取值范围** - single:单指标展示 - multiple:多指标展示 **默认取值** 不涉及 
 
         :return: The metric_display_mode of this BaseWidgetInfo.
         :rtype: str
@@ -245,7 +245,7 @@ class BaseWidgetInfo:
     def metric_display_mode(self, metric_display_mode):
         r"""Sets the metric_display_mode of this BaseWidgetInfo.
 
-        指标展示类型，single 单指标展示，multiple 多指标展示
+        **参数解释** 指标展示类型 **约束限制** 不涉及   **取值范围** - single:单指标展示 - multiple:多指标展示 **默认取值** 不涉及 
 
         :param metric_display_mode: The metric_display_mode of this BaseWidgetInfo.
         :type metric_display_mode: str
@@ -275,7 +275,7 @@ class BaseWidgetInfo:
         r"""Gets the location of this BaseWidgetInfo.
 
         :return: The location of this BaseWidgetInfo.
-        :rtype: :class:`huaweicloudsdkces.v2.UpdateWidgetInfoLocation`
+        :rtype: :class:`huaweicloudsdkces.v2.BaseWidgetInfoLocation`
         """
         return self._location
 
@@ -284,7 +284,7 @@ class BaseWidgetInfo:
         r"""Sets the location of this BaseWidgetInfo.
 
         :param location: The location of this BaseWidgetInfo.
-        :type location: :class:`huaweicloudsdkces.v2.UpdateWidgetInfoLocation`
+        :type location: :class:`huaweicloudsdkces.v2.BaseWidgetInfoLocation`
         """
         self._location = location
 
@@ -292,7 +292,7 @@ class BaseWidgetInfo:
     def unit(self):
         r"""Gets the unit of this BaseWidgetInfo.
 
-        单位
+        **参数解释** 单位 **约束限制** 不涉及 **取值范围** 长度为[0,32]个字符 **默认取值** 不涉及 
 
         :return: The unit of this BaseWidgetInfo.
         :rtype: str
@@ -303,7 +303,7 @@ class BaseWidgetInfo:
     def unit(self, unit):
         r"""Sets the unit of this BaseWidgetInfo.
 
-        单位
+        **参数解释** 单位 **约束限制** 不涉及 **取值范围** 长度为[0,32]个字符 **默认取值** 不涉及 
 
         :param unit: The unit of this BaseWidgetInfo.
         :type unit: str

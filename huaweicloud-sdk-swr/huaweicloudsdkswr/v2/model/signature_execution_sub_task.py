@@ -25,8 +25,8 @@ class SignatureExecutionSubTask:
         'digest': 'str',
         'status': 'str',
         'status_text': 'str',
-        'created_at': 'datetime',
-        'updated_at': 'datetime'
+        'created_at': 'str',
+        'updated_at': 'str'
     }
 
     attribute_map = {
@@ -64,9 +64,9 @@ class SignatureExecutionSubTask:
         :param status_text: 状态详情信息
         :type status_text: str
         :param created_at: 创建时间
-        :type created_at: datetime
+        :type created_at: str
         :param updated_at: 更新时间
-        :type updated_at: datetime
+        :type updated_at: str
         """
         
         
@@ -287,7 +287,7 @@ class SignatureExecutionSubTask:
         创建时间
 
         :return: The created_at of this SignatureExecutionSubTask.
-        :rtype: datetime
+        :rtype: str
         """
         return self._created_at
 
@@ -298,7 +298,7 @@ class SignatureExecutionSubTask:
         创建时间
 
         :param created_at: The created_at of this SignatureExecutionSubTask.
-        :type created_at: datetime
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -309,7 +309,7 @@ class SignatureExecutionSubTask:
         更新时间
 
         :return: The updated_at of this SignatureExecutionSubTask.
-        :rtype: datetime
+        :rtype: str
         """
         return self._updated_at
 
@@ -320,7 +320,7 @@ class SignatureExecutionSubTask:
         更新时间
 
         :param updated_at: The updated_at of this SignatureExecutionSubTask.
-        :type updated_at: datetime
+        :type updated_at: str
         """
         self._updated_at = updated_at
 

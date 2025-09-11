@@ -33,7 +33,7 @@ class BatchDeleteDashboardRespInfo:
 
         The model defined in huaweicloud sdk
 
-        :param dashboard_id: 监控看板id
+        :param dashboard_id: **参数描述**： 监控看板id **约束限制** 不涉及 **取值范围** 以db开头，包含22个字母和数字，长度为24个字符 **默认取值** 不涉及 
         :type dashboard_id: str
         :param ret_status: 处理结果, successful: 成功, error: 失败
         :type ret_status: str
@@ -59,7 +59,7 @@ class BatchDeleteDashboardRespInfo:
     def dashboard_id(self):
         r"""Gets the dashboard_id of this BatchDeleteDashboardRespInfo.
 
-        监控看板id
+        **参数描述**： 监控看板id **约束限制** 不涉及 **取值范围** 以db开头，包含22个字母和数字，长度为24个字符 **默认取值** 不涉及 
 
         :return: The dashboard_id of this BatchDeleteDashboardRespInfo.
         :rtype: str
@@ -70,7 +70,7 @@ class BatchDeleteDashboardRespInfo:
     def dashboard_id(self, dashboard_id):
         r"""Sets the dashboard_id of this BatchDeleteDashboardRespInfo.
 
-        监控看板id
+        **参数描述**： 监控看板id **约束限制** 不涉及 **取值范围** 以db开头，包含22个字母和数字，长度为24个字符 **默认取值** 不涉及 
 
         :param dashboard_id: The dashboard_id of this BatchDeleteDashboardRespInfo.
         :type dashboard_id: str

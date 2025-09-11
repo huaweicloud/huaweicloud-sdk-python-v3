@@ -18,7 +18,7 @@ class ListAlarmRuleResourcesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'resources': 'list[list[Dimension]]',
+        'resources': 'list[list[DimensionResp]]',
         'count': 'int'
     }
 
@@ -32,9 +32,9 @@ class ListAlarmRuleResourcesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param resources: 资源信息
-        :type resources: list[list[Dimension]]
-        :param count: 资源总数
+        :param resources: **参数解释**： 资源信息。 
+        :type resources: list[list[DimensionResp]]
+        :param count: **参数解释**： 资源总数。 **取值范围**： [0,2147483647] 
         :type count: int
         """
         
@@ -53,10 +53,10 @@ class ListAlarmRuleResourcesResponse(SdkResponse):
     def resources(self):
         r"""Gets the resources of this ListAlarmRuleResourcesResponse.
 
-        资源信息
+        **参数解释**： 资源信息。 
 
         :return: The resources of this ListAlarmRuleResourcesResponse.
-        :rtype: list[list[Dimension]]
+        :rtype: list[list[DimensionResp]]
         """
         return self._resources
 
@@ -64,10 +64,10 @@ class ListAlarmRuleResourcesResponse(SdkResponse):
     def resources(self, resources):
         r"""Sets the resources of this ListAlarmRuleResourcesResponse.
 
-        资源信息
+        **参数解释**： 资源信息。 
 
         :param resources: The resources of this ListAlarmRuleResourcesResponse.
-        :type resources: list[list[Dimension]]
+        :type resources: list[list[DimensionResp]]
         """
         self._resources = resources
 
@@ -75,7 +75,7 @@ class ListAlarmRuleResourcesResponse(SdkResponse):
     def count(self):
         r"""Gets the count of this ListAlarmRuleResourcesResponse.
 
-        资源总数
+        **参数解释**： 资源总数。 **取值范围**： [0,2147483647] 
 
         :return: The count of this ListAlarmRuleResourcesResponse.
         :rtype: int
@@ -86,7 +86,7 @@ class ListAlarmRuleResourcesResponse(SdkResponse):
     def count(self, count):
         r"""Sets the count of this ListAlarmRuleResourcesResponse.
 
-        资源总数
+        **参数解释**： 资源总数。 **取值范围**： [0,2147483647] 
 
         :param count: The count of this ListAlarmRuleResourcesResponse.
         :type count: int

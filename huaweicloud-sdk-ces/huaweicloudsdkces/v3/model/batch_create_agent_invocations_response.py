@@ -30,7 +30,7 @@ class BatchCreateAgentInvocationsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param invocations: 创建任务的信息列表
+        :param invocations: **参数解释**: 创建任务的信息列表 **取值范围**: 数组长度范围为[0,100] 
         :type invocations: list[:class:`huaweicloudsdkces.v3.BatchCreateInvocationInfo`]
         """
         
@@ -46,7 +46,7 @@ class BatchCreateAgentInvocationsResponse(SdkResponse):
     def invocations(self):
         r"""Gets the invocations of this BatchCreateAgentInvocationsResponse.
 
-        创建任务的信息列表
+        **参数解释**: 创建任务的信息列表 **取值范围**: 数组长度范围为[0,100] 
 
         :return: The invocations of this BatchCreateAgentInvocationsResponse.
         :rtype: list[:class:`huaweicloudsdkces.v3.BatchCreateInvocationInfo`]
@@ -57,7 +57,7 @@ class BatchCreateAgentInvocationsResponse(SdkResponse):
     def invocations(self, invocations):
         r"""Sets the invocations of this BatchCreateAgentInvocationsResponse.
 
-        创建任务的信息列表
+        **参数解释**: 创建任务的信息列表 **取值范围**: 数组长度范围为[0,100] 
 
         :param invocations: The invocations of this BatchCreateAgentInvocationsResponse.
         :type invocations: list[:class:`huaweicloudsdkces.v3.BatchCreateInvocationInfo`]

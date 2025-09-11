@@ -33,7 +33,7 @@ class DeleteInstanceDemandRequest:
 
         The model defined in huaweicloud sdk
 
-        :param id: 实例ID。可在查询实例列表接口的ID字段获取。
+        :param id: **参数解释**： 实例ID。可通过查询实例列表接口ID字段获取 **约束限制**： 不涉及 **取值范围**： 以查询实例列表接口值为准，字符长度32-64。 **默认取值**： 不涉及 
         :type id: str
         :param delete_publicip: 是否删除弹性IP
         :type delete_publicip: bool
@@ -58,7 +58,7 @@ class DeleteInstanceDemandRequest:
     def id(self):
         r"""Gets the id of this DeleteInstanceDemandRequest.
 
-        实例ID。可在查询实例列表接口的ID字段获取。
+        **参数解释**： 实例ID。可通过查询实例列表接口ID字段获取 **约束限制**： 不涉及 **取值范围**： 以查询实例列表接口值为准，字符长度32-64。 **默认取值**： 不涉及 
 
         :return: The id of this DeleteInstanceDemandRequest.
         :rtype: str
@@ -69,7 +69,7 @@ class DeleteInstanceDemandRequest:
     def id(self, id):
         r"""Sets the id of this DeleteInstanceDemandRequest.
 
-        实例ID。可在查询实例列表接口的ID字段获取。
+        **参数解释**： 实例ID。可通过查询实例列表接口ID字段获取 **约束限制**： 不涉及 **取值范围**： 以查询实例列表接口值为准，字符长度32-64。 **默认取值**： 不涉及 
 
         :param id: The id of this DeleteInstanceDemandRequest.
         :type id: str

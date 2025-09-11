@@ -33,11 +33,11 @@ class ResourceGroupTagRelation:
 
         The model defined in huaweicloud sdk
 
-        :param key: TMS标签键规范。
+        :param key: **参数解释** TMS标签键规范 **约束限制** 不涉及 **取值范围** 长度为[1,128]个字符 **默认取值** 不涉及 
         :type key: str
-        :param operator: tag操作符，含义是标签key与value的关系。   include表示包含   prefix表示前缀   suffix表示后缀   notInclude表示不包含   equal表示相等   当operator为equal，value为空字符串时表示为全部   all表示全部 
+        :param operator: **参数解释** tag操作符，含义是标签key与value的关系 **约束限制** 不涉及 **取值范围** - include: 表示包含 - prefix: 表示前缀 - suffix: 表示后缀 - notInclude: 表示不包含 - equal: 表示相等，当operator为equal，value为空字符串时表示为全部 - all: 表示全部 **默认取值** 不涉及 
         :type operator: str
-        :param value: TMS标签值规范。
+        :param value: **参数解释** TMS标签值规范 **约束限制** 不涉及 **取值范围** 长度为[0，255]个字符 **默认取值** 不涉及 
         :type value: str
         """
         
@@ -58,7 +58,7 @@ class ResourceGroupTagRelation:
     def key(self):
         r"""Gets the key of this ResourceGroupTagRelation.
 
-        TMS标签键规范。
+        **参数解释** TMS标签键规范 **约束限制** 不涉及 **取值范围** 长度为[1,128]个字符 **默认取值** 不涉及 
 
         :return: The key of this ResourceGroupTagRelation.
         :rtype: str
@@ -69,7 +69,7 @@ class ResourceGroupTagRelation:
     def key(self, key):
         r"""Sets the key of this ResourceGroupTagRelation.
 
-        TMS标签键规范。
+        **参数解释** TMS标签键规范 **约束限制** 不涉及 **取值范围** 长度为[1,128]个字符 **默认取值** 不涉及 
 
         :param key: The key of this ResourceGroupTagRelation.
         :type key: str
@@ -80,7 +80,7 @@ class ResourceGroupTagRelation:
     def operator(self):
         r"""Gets the operator of this ResourceGroupTagRelation.
 
-        tag操作符，含义是标签key与value的关系。   include表示包含   prefix表示前缀   suffix表示后缀   notInclude表示不包含   equal表示相等   当operator为equal，value为空字符串时表示为全部   all表示全部 
+        **参数解释** tag操作符，含义是标签key与value的关系 **约束限制** 不涉及 **取值范围** - include: 表示包含 - prefix: 表示前缀 - suffix: 表示后缀 - notInclude: 表示不包含 - equal: 表示相等，当operator为equal，value为空字符串时表示为全部 - all: 表示全部 **默认取值** 不涉及 
 
         :return: The operator of this ResourceGroupTagRelation.
         :rtype: str
@@ -91,7 +91,7 @@ class ResourceGroupTagRelation:
     def operator(self, operator):
         r"""Sets the operator of this ResourceGroupTagRelation.
 
-        tag操作符，含义是标签key与value的关系。   include表示包含   prefix表示前缀   suffix表示后缀   notInclude表示不包含   equal表示相等   当operator为equal，value为空字符串时表示为全部   all表示全部 
+        **参数解释** tag操作符，含义是标签key与value的关系 **约束限制** 不涉及 **取值范围** - include: 表示包含 - prefix: 表示前缀 - suffix: 表示后缀 - notInclude: 表示不包含 - equal: 表示相等，当operator为equal，value为空字符串时表示为全部 - all: 表示全部 **默认取值** 不涉及 
 
         :param operator: The operator of this ResourceGroupTagRelation.
         :type operator: str
@@ -102,7 +102,7 @@ class ResourceGroupTagRelation:
     def value(self):
         r"""Gets the value of this ResourceGroupTagRelation.
 
-        TMS标签值规范。
+        **参数解释** TMS标签值规范 **约束限制** 不涉及 **取值范围** 长度为[0，255]个字符 **默认取值** 不涉及 
 
         :return: The value of this ResourceGroupTagRelation.
         :rtype: str
@@ -113,7 +113,7 @@ class ResourceGroupTagRelation:
     def value(self, value):
         r"""Sets the value of this ResourceGroupTagRelation.
 
-        TMS标签值规范。
+        **参数解释** TMS标签值规范 **约束限制** 不涉及 **取值范围** 长度为[0，255]个字符 **默认取值** 不涉及 
 
         :param value: The value of this ResourceGroupTagRelation.
         :type value: str

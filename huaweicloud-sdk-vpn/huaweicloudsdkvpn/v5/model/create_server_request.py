@@ -24,7 +24,8 @@ class CreateServerRequest:
         'server_certificate': 'CreateServerRequestServerCertificate',
         'client_ca_certificates': 'list[CreateServerRequestClientCaCertificates]',
         'ssl_options': 'CreateServerRequestSslOptions',
-        'dns_servers': 'list[str]'
+        'dns_servers': 'list[str]',
+        'idp_name': 'str'
     }
 
     attribute_map = {
@@ -35,10 +36,11 @@ class CreateServerRequest:
         'server_certificate': 'server_certificate',
         'client_ca_certificates': 'client_ca_certificates',
         'ssl_options': 'ssl_options',
-        'dns_servers': 'dns_servers'
+        'dns_servers': 'dns_servers',
+        'idp_name': 'idp_name'
     }
 
-    def __init__(self, tunnel_protocol=None, client_cidr=None, local_subnets=None, client_auth_type=None, server_certificate=None, client_ca_certificates=None, ssl_options=None, dns_servers=None):
+    def __init__(self, tunnel_protocol=None, client_cidr=None, local_subnets=None, client_auth_type=None, server_certificate=None, client_ca_certificates=None, ssl_options=None, dns_servers=None, idp_name=None):
         r"""CreateServerRequest
 
         The model defined in huaweicloud sdk
@@ -59,6 +61,8 @@ class CreateServerRequest:
         :type ssl_options: :class:`huaweicloudsdkvpn.v5.CreateServerRequestSslOptions`
         :param dns_servers: DNS服务器列表，最多两个DNS
         :type dns_servers: list[str]
+        :param idp_name: 身份提供商名称。
+        :type idp_name: str
         """
         
         
@@ -71,6 +75,7 @@ class CreateServerRequest:
         self._client_ca_certificates = None
         self._ssl_options = None
         self._dns_servers = None
+        self._idp_name = None
         self.discriminator = None
 
         if tunnel_protocol is not None:
@@ -87,6 +92,8 @@ class CreateServerRequest:
             self.ssl_options = ssl_options
         if dns_servers is not None:
             self.dns_servers = dns_servers
+        if idp_name is not None:
+            self.idp_name = idp_name
 
     @property
     def tunnel_protocol(self):
@@ -255,6 +262,28 @@ class CreateServerRequest:
         :type dns_servers: list[str]
         """
         self._dns_servers = dns_servers
+
+    @property
+    def idp_name(self):
+        r"""Gets the idp_name of this CreateServerRequest.
+
+        身份提供商名称。
+
+        :return: The idp_name of this CreateServerRequest.
+        :rtype: str
+        """
+        return self._idp_name
+
+    @idp_name.setter
+    def idp_name(self, idp_name):
+        r"""Sets the idp_name of this CreateServerRequest.
+
+        身份提供商名称。
+
+        :param idp_name: The idp_name of this CreateServerRequest.
+        :type idp_name: str
+        """
+        self._idp_name = idp_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

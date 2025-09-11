@@ -37,15 +37,15 @@ class ListDashboardInfosRequest:
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_id: 企业项目Id
+        :param enterprise_id: **参数解释**： 企业项目ID。 **约束限制**： 不涉及。 **取值范围**： 只能包含小写字母、数字、“-”、“_”，可以自定义企业项目ID，长度为36个字符。也可以为0（代表默认企业项目ID），all_granted_eps（代表所有企业项目ID）。           **默认取值**： 不涉及。 
         :type enterprise_id: str
-        :param is_favorite: 指定企业项目下监控看板是否收藏，true:收藏，false:未收藏，填此参数时，enterprise_id必填
+        :param is_favorite: **参数解释**： 指定企业项目下监控看板是否收藏。 **约束限制**： 填此参数时，enterprise_id必填。 **取值范围**： - true:收藏 - false:未收藏          **默认取值**： 不涉及。 
         :type is_favorite: bool
-        :param dashboard_name: 监控看板名称
+        :param dashboard_name: **参数解释**： 监控看板名称。 **约束限制**： 不涉及。 **取值范围**： 长度为[1,128]个字符，只允许中文、英文、数字0-9、_和-          **默认取值**： 不涉及。 
         :type dashboard_name: str
-        :param dashboard_id: 监控看板id
+        :param dashboard_id: **参数解释**： 监控看板id。 **约束限制**： 不涉及。 **取值范围**： 以db开头，包含22个字母和数字，长度为24个字符 **默认取值**： 不涉及。 
         :type dashboard_id: str
-        :param dashboard_type: 监控看板类型, monitor_dashboard表示监控大盘,other表示自定义看板
+        :param dashboard_type: **参数解释**： 监控看板类型。 **约束限制**： 不涉及。 **取值范围**： - monitor_dashboard:表示监控大盘 - other:表示自定义看板 **默认取值**： 不涉及。 
         :type dashboard_type: str
         """
         
@@ -73,7 +73,7 @@ class ListDashboardInfosRequest:
     def enterprise_id(self):
         r"""Gets the enterprise_id of this ListDashboardInfosRequest.
 
-        企业项目Id
+        **参数解释**： 企业项目ID。 **约束限制**： 不涉及。 **取值范围**： 只能包含小写字母、数字、“-”、“_”，可以自定义企业项目ID，长度为36个字符。也可以为0（代表默认企业项目ID），all_granted_eps（代表所有企业项目ID）。           **默认取值**： 不涉及。 
 
         :return: The enterprise_id of this ListDashboardInfosRequest.
         :rtype: str
@@ -84,7 +84,7 @@ class ListDashboardInfosRequest:
     def enterprise_id(self, enterprise_id):
         r"""Sets the enterprise_id of this ListDashboardInfosRequest.
 
-        企业项目Id
+        **参数解释**： 企业项目ID。 **约束限制**： 不涉及。 **取值范围**： 只能包含小写字母、数字、“-”、“_”，可以自定义企业项目ID，长度为36个字符。也可以为0（代表默认企业项目ID），all_granted_eps（代表所有企业项目ID）。           **默认取值**： 不涉及。 
 
         :param enterprise_id: The enterprise_id of this ListDashboardInfosRequest.
         :type enterprise_id: str
@@ -95,7 +95,7 @@ class ListDashboardInfosRequest:
     def is_favorite(self):
         r"""Gets the is_favorite of this ListDashboardInfosRequest.
 
-        指定企业项目下监控看板是否收藏，true:收藏，false:未收藏，填此参数时，enterprise_id必填
+        **参数解释**： 指定企业项目下监控看板是否收藏。 **约束限制**： 填此参数时，enterprise_id必填。 **取值范围**： - true:收藏 - false:未收藏          **默认取值**： 不涉及。 
 
         :return: The is_favorite of this ListDashboardInfosRequest.
         :rtype: bool
@@ -106,7 +106,7 @@ class ListDashboardInfosRequest:
     def is_favorite(self, is_favorite):
         r"""Sets the is_favorite of this ListDashboardInfosRequest.
 
-        指定企业项目下监控看板是否收藏，true:收藏，false:未收藏，填此参数时，enterprise_id必填
+        **参数解释**： 指定企业项目下监控看板是否收藏。 **约束限制**： 填此参数时，enterprise_id必填。 **取值范围**： - true:收藏 - false:未收藏          **默认取值**： 不涉及。 
 
         :param is_favorite: The is_favorite of this ListDashboardInfosRequest.
         :type is_favorite: bool
@@ -117,7 +117,7 @@ class ListDashboardInfosRequest:
     def dashboard_name(self):
         r"""Gets the dashboard_name of this ListDashboardInfosRequest.
 
-        监控看板名称
+        **参数解释**： 监控看板名称。 **约束限制**： 不涉及。 **取值范围**： 长度为[1,128]个字符，只允许中文、英文、数字0-9、_和-          **默认取值**： 不涉及。 
 
         :return: The dashboard_name of this ListDashboardInfosRequest.
         :rtype: str
@@ -128,7 +128,7 @@ class ListDashboardInfosRequest:
     def dashboard_name(self, dashboard_name):
         r"""Sets the dashboard_name of this ListDashboardInfosRequest.
 
-        监控看板名称
+        **参数解释**： 监控看板名称。 **约束限制**： 不涉及。 **取值范围**： 长度为[1,128]个字符，只允许中文、英文、数字0-9、_和-          **默认取值**： 不涉及。 
 
         :param dashboard_name: The dashboard_name of this ListDashboardInfosRequest.
         :type dashboard_name: str
@@ -139,7 +139,7 @@ class ListDashboardInfosRequest:
     def dashboard_id(self):
         r"""Gets the dashboard_id of this ListDashboardInfosRequest.
 
-        监控看板id
+        **参数解释**： 监控看板id。 **约束限制**： 不涉及。 **取值范围**： 以db开头，包含22个字母和数字，长度为24个字符 **默认取值**： 不涉及。 
 
         :return: The dashboard_id of this ListDashboardInfosRequest.
         :rtype: str
@@ -150,7 +150,7 @@ class ListDashboardInfosRequest:
     def dashboard_id(self, dashboard_id):
         r"""Sets the dashboard_id of this ListDashboardInfosRequest.
 
-        监控看板id
+        **参数解释**： 监控看板id。 **约束限制**： 不涉及。 **取值范围**： 以db开头，包含22个字母和数字，长度为24个字符 **默认取值**： 不涉及。 
 
         :param dashboard_id: The dashboard_id of this ListDashboardInfosRequest.
         :type dashboard_id: str
@@ -161,7 +161,7 @@ class ListDashboardInfosRequest:
     def dashboard_type(self):
         r"""Gets the dashboard_type of this ListDashboardInfosRequest.
 
-        监控看板类型, monitor_dashboard表示监控大盘,other表示自定义看板
+        **参数解释**： 监控看板类型。 **约束限制**： 不涉及。 **取值范围**： - monitor_dashboard:表示监控大盘 - other:表示自定义看板 **默认取值**： 不涉及。 
 
         :return: The dashboard_type of this ListDashboardInfosRequest.
         :rtype: str
@@ -172,7 +172,7 @@ class ListDashboardInfosRequest:
     def dashboard_type(self, dashboard_type):
         r"""Sets the dashboard_type of this ListDashboardInfosRequest.
 
-        监控看板类型, monitor_dashboard表示监控大盘,other表示自定义看板
+        **参数解释**： 监控看板类型。 **约束限制**： 不涉及。 **取值范围**： - monitor_dashboard:表示监控大盘 - other:表示自定义看板 **默认取值**： 不涉及。 
 
         :param dashboard_type: The dashboard_type of this ListDashboardInfosRequest.
         :type dashboard_type: str

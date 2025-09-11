@@ -4613,9 +4613,9 @@ class SwrAsyncClient(Client):
         return http_info
 
     def create_instance_webhook_async(self, request):
-        r"""创建触发器策略
+        r"""创建触发器
 
-        创建触发器策略
+        创建触发器
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4958,9 +4958,9 @@ class SwrAsyncClient(Client):
         return http_info
 
     def delete_instance_artifact_async(self, request):
-        r"""删除制品
+        r"""删除制品版本
 
-        删除制品
+        删除制品版本
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -5704,10 +5704,81 @@ class SwrAsyncClient(Client):
 
         return http_info
 
-    def delete_instance_webhook_async(self, request):
-        r"""删除触发器策略
+    def delete_instance_tag_async(self, request):
+        r"""删除制品的Tag
 
-        删除触发器策略
+        删除制品Tag
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteInstanceTag
+        :type request: :class:`huaweicloudsdkswr.v2.DeleteInstanceTagRequest`
+        :rtype: :class:`huaweicloudsdkswr.v2.DeleteInstanceTagResponse`
+        """
+        http_info = self._delete_instance_tag_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_instance_tag_async_invoker(self, request):
+        http_info = self._delete_instance_tag_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_instance_tag_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/instances/{instance_id}/namespaces/{namespace_name}/repositories/{repository_name}/tags/{tag_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteInstanceTagResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'namespace_name' in local_var_params:
+            path_params['namespace_name'] = local_var_params['namespace_name']
+        if 'repository_name' in local_var_params:
+            path_params['repository_name'] = local_var_params['repository_name']
+        if 'tag_name' in local_var_params:
+            path_params['tag_name'] = local_var_params['tag_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_instance_webhook_async(self, request):
+        r"""删除触发器
+
+        删除触发器
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -6543,7 +6614,7 @@ class SwrAsyncClient(Client):
     def list_instance_all_artifacts_async(self, request):
         r"""获取仓库实例的所有制品版本列表
 
-        获取仓库实例的所有制品版本列表（此接口只在企业仓库实例版本大于25.6.0以上的版本才支持）
+        获取仓库实例的所有制品版本列表
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -8431,9 +8502,9 @@ class SwrAsyncClient(Client):
         return http_info
 
     def list_instance_webhooks_async(self, request):
-        r"""获取触发器策略列表
+        r"""获取触发器列表
 
-        获取触发器策略列表
+        获取触发器列表
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -8859,9 +8930,9 @@ class SwrAsyncClient(Client):
         return http_info
 
     def show_instance_artifact_async(self, request):
-        r"""获取制品详情
+        r"""获取制品版本详情
 
-        获取制品详情
+        获取制品版本详情
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -9740,9 +9811,9 @@ class SwrAsyncClient(Client):
         return http_info
 
     def show_instance_webhook_async(self, request):
-        r"""获取触发器策略详情
+        r"""获取触发器详情
 
-        获取触发器策略详情
+        获取触发器详情
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -10156,7 +10227,7 @@ class SwrAsyncClient(Client):
     def update_instance_endpoint_policy_async(self, request):
         r"""更新公网访问白名单
 
-        更新公网访问白名单，更新为全量更新方式
+        更新公网访问白名单，更新方式为全量更新方式
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -10710,9 +10781,9 @@ class SwrAsyncClient(Client):
         return http_info
 
     def update_instance_webhook_async(self, request):
-        r"""修改触发器策略
+        r"""修改触发器
 
-        修改触发器策略
+        修改触发器
         
         Please refer to HUAWEI cloud API Explorer for details.
 

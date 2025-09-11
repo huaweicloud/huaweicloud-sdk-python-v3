@@ -51,7 +51,7 @@ class ListNotificationMaskRequestBody:
         :type relation_type: :class:`huaweicloudsdkces.v2.ListRelationType`
         :param relation_ids: 关联编号（目前是告警规则ID）
         :type relation_ids: list[str]
-        :param metric_name: 资源的监控指标名称，必须以字母开头，只能包含0-9/a-z/A-Z/_，字符长度最短为1，最大为64；如：弹性云服务器中的监控指标cpu_util，表示弹性服务器的CPU使用率；文档数据库中的指标mongo001_command_ps，表示command执行频率；各服务的指标名称可查看：“[服务指标名称](ces_03_0059.xml)”。
+        :param metric_name: **参数解释**： 资源的监控指标名称，各服务的指标名称可查看：“[服务指标名称](ces_03_0059.xml)”。 **约束限制**： 不涉及。 **取值范围**： 必须以字母开头，只能包含0-9/a-z/A-Z/_/-。字符长度最短为1，最大为96。如：弹性云服务器中的监控指标cpu_util，表示弹性服务器的CPU使用率；文档数据库中的指标mongo001_command_ps，表示command执行频率。         **默认取值**： 不涉及。 
         :type metric_name: str
         :param resource_level: dimension: 子维度,product: 云产品
         :type resource_level: str
@@ -63,7 +63,7 @@ class ListNotificationMaskRequestBody:
         :type mask_status: str
         :param resource_id: 资源维度值,提供一个维度的资源ID即可,可选
         :type resource_id: str
-        :param namespace: 查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”
+        :param namespace: **参数解释**： 查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”。 **约束限制**： 不涉及。 **取值范围**： 格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_。字符串的长度必须在 3 到 32个字符之间。 **默认取值**： 不涉及。 
         :type namespace: str
         :param dimensions: 资源的维度信息
         :type dimensions: list[:class:`huaweicloudsdkces.v2.ResourceDimension`]
@@ -146,7 +146,7 @@ class ListNotificationMaskRequestBody:
     def metric_name(self):
         r"""Gets the metric_name of this ListNotificationMaskRequestBody.
 
-        资源的监控指标名称，必须以字母开头，只能包含0-9/a-z/A-Z/_，字符长度最短为1，最大为64；如：弹性云服务器中的监控指标cpu_util，表示弹性服务器的CPU使用率；文档数据库中的指标mongo001_command_ps，表示command执行频率；各服务的指标名称可查看：“[服务指标名称](ces_03_0059.xml)”。
+        **参数解释**： 资源的监控指标名称，各服务的指标名称可查看：“[服务指标名称](ces_03_0059.xml)”。 **约束限制**： 不涉及。 **取值范围**： 必须以字母开头，只能包含0-9/a-z/A-Z/_/-。字符长度最短为1，最大为96。如：弹性云服务器中的监控指标cpu_util，表示弹性服务器的CPU使用率；文档数据库中的指标mongo001_command_ps，表示command执行频率。         **默认取值**： 不涉及。 
 
         :return: The metric_name of this ListNotificationMaskRequestBody.
         :rtype: str
@@ -157,7 +157,7 @@ class ListNotificationMaskRequestBody:
     def metric_name(self, metric_name):
         r"""Sets the metric_name of this ListNotificationMaskRequestBody.
 
-        资源的监控指标名称，必须以字母开头，只能包含0-9/a-z/A-Z/_，字符长度最短为1，最大为64；如：弹性云服务器中的监控指标cpu_util，表示弹性服务器的CPU使用率；文档数据库中的指标mongo001_command_ps，表示command执行频率；各服务的指标名称可查看：“[服务指标名称](ces_03_0059.xml)”。
+        **参数解释**： 资源的监控指标名称，各服务的指标名称可查看：“[服务指标名称](ces_03_0059.xml)”。 **约束限制**： 不涉及。 **取值范围**： 必须以字母开头，只能包含0-9/a-z/A-Z/_/-。字符长度最短为1，最大为96。如：弹性云服务器中的监控指标cpu_util，表示弹性服务器的CPU使用率；文档数据库中的指标mongo001_command_ps，表示command执行频率。         **默认取值**： 不涉及。 
 
         :param metric_name: The metric_name of this ListNotificationMaskRequestBody.
         :type metric_name: str
@@ -278,7 +278,7 @@ class ListNotificationMaskRequestBody:
     def namespace(self):
         r"""Gets the namespace of this ListNotificationMaskRequestBody.
 
-        查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”
+        **参数解释**： 查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”。 **约束限制**： 不涉及。 **取值范围**： 格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_。字符串的长度必须在 3 到 32个字符之间。 **默认取值**： 不涉及。 
 
         :return: The namespace of this ListNotificationMaskRequestBody.
         :rtype: str
@@ -289,7 +289,7 @@ class ListNotificationMaskRequestBody:
     def namespace(self, namespace):
         r"""Sets the namespace of this ListNotificationMaskRequestBody.
 
-        查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”
+        **参数解释**： 查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”。 **约束限制**： 不涉及。 **取值范围**： 格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_。字符串的长度必须在 3 到 32个字符之间。 **默认取值**： 不涉及。 
 
         :param namespace: The namespace of this ListNotificationMaskRequestBody.
         :type namespace: str

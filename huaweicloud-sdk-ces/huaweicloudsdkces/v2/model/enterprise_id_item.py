@@ -29,7 +29,7 @@ class EnterpriseIdItem:
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_id: 企业项目Id
+        :param enterprise_id: **参数解释** 企业项目ID **约束限制** 不涉及 **取值范围** 只能包含小写字母、数字、“-”、“_”，可以自定义企业项目ID，长度为36个字符。也可以为0（代表默认企业项目ID）。 **默认取值** 不涉及 
         :type enterprise_id: str
         """
         
@@ -45,7 +45,7 @@ class EnterpriseIdItem:
     def enterprise_id(self):
         r"""Gets the enterprise_id of this EnterpriseIdItem.
 
-        企业项目Id
+        **参数解释** 企业项目ID **约束限制** 不涉及 **取值范围** 只能包含小写字母、数字、“-”、“_”，可以自定义企业项目ID，长度为36个字符。也可以为0（代表默认企业项目ID）。 **默认取值** 不涉及 
 
         :return: The enterprise_id of this EnterpriseIdItem.
         :rtype: str
@@ -56,7 +56,7 @@ class EnterpriseIdItem:
     def enterprise_id(self, enterprise_id):
         r"""Sets the enterprise_id of this EnterpriseIdItem.
 
-        企业项目Id
+        **参数解释** 企业项目ID **约束限制** 不涉及 **取值范围** 只能包含小写字母、数字、“-”、“_”，可以自定义企业项目ID，长度为36个字符。也可以为0（代表默认企业项目ID）。 **默认取值** 不涉及 
 
         :param enterprise_id: The enterprise_id of this EnterpriseIdItem.
         :type enterprise_id: str

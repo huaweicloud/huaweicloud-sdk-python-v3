@@ -29,7 +29,7 @@ class BatchDeleteAlarmsRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param alarm_ids: 需要批量删除的告警规则的ID列表
+        :param alarm_ids: **参数解释**： 需要批量删除的告警规则的ID列表。 **约束限制**： 告警规则ID最多为10个，最少为1个。 
         :type alarm_ids: list[str]
         """
         
@@ -44,7 +44,7 @@ class BatchDeleteAlarmsRequestBody:
     def alarm_ids(self):
         r"""Gets the alarm_ids of this BatchDeleteAlarmsRequestBody.
 
-        需要批量删除的告警规则的ID列表
+        **参数解释**： 需要批量删除的告警规则的ID列表。 **约束限制**： 告警规则ID最多为10个，最少为1个。 
 
         :return: The alarm_ids of this BatchDeleteAlarmsRequestBody.
         :rtype: list[str]
@@ -55,7 +55,7 @@ class BatchDeleteAlarmsRequestBody:
     def alarm_ids(self, alarm_ids):
         r"""Sets the alarm_ids of this BatchDeleteAlarmsRequestBody.
 
-        需要批量删除的告警规则的ID列表
+        **参数解释**： 需要批量删除的告警规则的ID列表。 **约束限制**： 告警规则ID最多为10个，最少为1个。 
 
         :param alarm_ids: The alarm_ids of this BatchDeleteAlarmsRequestBody.
         :type alarm_ids: list[str]

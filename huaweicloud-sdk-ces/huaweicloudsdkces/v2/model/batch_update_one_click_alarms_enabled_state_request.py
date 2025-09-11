@@ -31,7 +31,7 @@ class BatchUpdateOneClickAlarmsEnabledStateRequest:
 
         The model defined in huaweicloud sdk
 
-        :param one_click_alarm_id: 一键告警ID
+        :param one_click_alarm_id: **参数解释**： 一键告警ID。 **约束限制**： 不涉及。 **取值范围**： 只能为字母或者数字，字符长度为[1,64] **默认取值**： 不涉及。 
         :type one_click_alarm_id: str
         :param body: Body of the BatchUpdateOneClickAlarmsEnabledStateRequest
         :type body: :class:`huaweicloudsdkces.v2.BatchEnableAlarmsRequestBody`
@@ -51,7 +51,7 @@ class BatchUpdateOneClickAlarmsEnabledStateRequest:
     def one_click_alarm_id(self):
         r"""Gets the one_click_alarm_id of this BatchUpdateOneClickAlarmsEnabledStateRequest.
 
-        一键告警ID
+        **参数解释**： 一键告警ID。 **约束限制**： 不涉及。 **取值范围**： 只能为字母或者数字，字符长度为[1,64] **默认取值**： 不涉及。 
 
         :return: The one_click_alarm_id of this BatchUpdateOneClickAlarmsEnabledStateRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class BatchUpdateOneClickAlarmsEnabledStateRequest:
     def one_click_alarm_id(self, one_click_alarm_id):
         r"""Sets the one_click_alarm_id of this BatchUpdateOneClickAlarmsEnabledStateRequest.
 
-        一键告警ID
+        **参数解释**： 一键告警ID。 **约束限制**： 不涉及。 **取值范围**： 只能为字母或者数字，字符长度为[1,64] **默认取值**： 不涉及。 
 
         :param one_click_alarm_id: The one_click_alarm_id of this BatchUpdateOneClickAlarmsEnabledStateRequest.
         :type one_click_alarm_id: str

@@ -17,29 +17,87 @@ class SqlRuleRequest:
     sensitive_list = []
 
     openapi_types = {
+        'page': 'int',
+        'size': 'int',
         'risk_levels': 'str'
     }
 
     attribute_map = {
+        'page': 'page',
+        'size': 'size',
         'risk_levels': 'risk_levels'
     }
 
-    def __init__(self, risk_levels=None):
+    def __init__(self, page=None, size=None, risk_levels=None):
         r"""SqlRuleRequest
 
         The model defined in huaweicloud sdk
 
+        :param page: 当前页
+        :type page: int
+        :param size: 每页大小
+        :type size: int
         :param risk_levels: 风险级别 - HIGH - MEDIUM - LOW - NO_RISK
         :type risk_levels: str
         """
         
         
 
+        self._page = None
+        self._size = None
         self._risk_levels = None
         self.discriminator = None
 
+        if page is not None:
+            self.page = page
+        if size is not None:
+            self.size = size
         if risk_levels is not None:
             self.risk_levels = risk_levels
+
+    @property
+    def page(self):
+        r"""Gets the page of this SqlRuleRequest.
+
+        当前页
+
+        :return: The page of this SqlRuleRequest.
+        :rtype: int
+        """
+        return self._page
+
+    @page.setter
+    def page(self, page):
+        r"""Sets the page of this SqlRuleRequest.
+
+        当前页
+
+        :param page: The page of this SqlRuleRequest.
+        :type page: int
+        """
+        self._page = page
+
+    @property
+    def size(self):
+        r"""Gets the size of this SqlRuleRequest.
+
+        每页大小
+
+        :return: The size of this SqlRuleRequest.
+        :rtype: int
+        """
+        return self._size
+
+    @size.setter
+    def size(self, size):
+        r"""Sets the size of this SqlRuleRequest.
+
+        每页大小
+
+        :param size: The size of this SqlRuleRequest.
+        :type size: int
+        """
+        self._size = size
 
     @property
     def risk_levels(self):

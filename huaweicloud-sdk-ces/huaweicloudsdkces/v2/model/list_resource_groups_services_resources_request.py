@@ -55,7 +55,7 @@ class ListResourceGroupsServicesResourcesRequest:
         :type group_id: str
         :param service: 服务类别，如SYS.ECS
         :type service: str
-        :param dim_name: 资源维度信息，多个维度按字母序使用逗号分割
+        :param dim_name: 资源维度信息，多个维度按字母序使用逗号分隔
         :type dim_name: str
         :param limit: 分页查询时每页的条目数，取值[1,100]，默认值为100
         :type limit: str
@@ -164,7 +164,7 @@ class ListResourceGroupsServicesResourcesRequest:
     def dim_name(self):
         r"""Gets the dim_name of this ListResourceGroupsServicesResourcesRequest.
 
-        资源维度信息，多个维度按字母序使用逗号分割
+        资源维度信息，多个维度按字母序使用逗号分隔
 
         :return: The dim_name of this ListResourceGroupsServicesResourcesRequest.
         :rtype: str
@@ -175,7 +175,7 @@ class ListResourceGroupsServicesResourcesRequest:
     def dim_name(self, dim_name):
         r"""Sets the dim_name of this ListResourceGroupsServicesResourcesRequest.
 
-        资源维度信息，多个维度按字母序使用逗号分割
+        资源维度信息，多个维度按字母序使用逗号分隔
 
         :param dim_name: The dim_name of this ListResourceGroupsServicesResourcesRequest.
         :type dim_name: str

@@ -55,7 +55,7 @@ class RuleRiskResponseRules:
         :type status: str
         :param rank: 风险规则优先级。数字越小优先级越高。
         :type rank: int
-        :param risk_level: 风险级别 - LOW - MEDIUM - HIGH - NO_RISK]
+        :param risk_level: 风险级别 - LOW - MEDIUM - HIGH - NO_RISK
         :type risk_level: str
         :param rule_type: 规则类型
         :type rule_type: str
@@ -222,7 +222,7 @@ class RuleRiskResponseRules:
     def risk_level(self):
         r"""Gets the risk_level of this RuleRiskResponseRules.
 
-        风险级别 - LOW - MEDIUM - HIGH - NO_RISK]
+        风险级别 - LOW - MEDIUM - HIGH - NO_RISK
 
         :return: The risk_level of this RuleRiskResponseRules.
         :rtype: str
@@ -233,7 +233,7 @@ class RuleRiskResponseRules:
     def risk_level(self, risk_level):
         r"""Sets the risk_level of this RuleRiskResponseRules.
 
-        风险级别 - LOW - MEDIUM - HIGH - NO_RISK]
+        风险级别 - LOW - MEDIUM - HIGH - NO_RISK
 
         :param risk_level: The risk_level of this RuleRiskResponseRules.
         :type risk_level: str

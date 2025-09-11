@@ -33,11 +33,11 @@ class ExtensionInfo:
 
         The model defined in huaweicloud sdk
 
-        :param name: 插件名称
+        :param name: **参数解释**: 插件名称 **取值范围**: 数组长度为[1,64] 
         :type name: str
-        :param status: 插件状态, none未安装，running运行中，stopped已停止，fault故障（进程异常），unknown故障（连接异常）
+        :param status: **参数解释**:  插件状态 **取值范围**: - none: 未安装 - running: 运行中 - stopped: 已停止 - fault: 故障（进程异常） - unknown: 故障（连接异常） 
         :type status: str
-        :param version: 插件版本
+        :param version: **参数解释**: 插件版本 **取值范围**: 数组长度为[1,32] 
         :type version: str
         """
         
@@ -59,7 +59,7 @@ class ExtensionInfo:
     def name(self):
         r"""Gets the name of this ExtensionInfo.
 
-        插件名称
+        **参数解释**: 插件名称 **取值范围**: 数组长度为[1,64] 
 
         :return: The name of this ExtensionInfo.
         :rtype: str
@@ -70,7 +70,7 @@ class ExtensionInfo:
     def name(self, name):
         r"""Sets the name of this ExtensionInfo.
 
-        插件名称
+        **参数解释**: 插件名称 **取值范围**: 数组长度为[1,64] 
 
         :param name: The name of this ExtensionInfo.
         :type name: str
@@ -81,7 +81,7 @@ class ExtensionInfo:
     def status(self):
         r"""Gets the status of this ExtensionInfo.
 
-        插件状态, none未安装，running运行中，stopped已停止，fault故障（进程异常），unknown故障（连接异常）
+        **参数解释**:  插件状态 **取值范围**: - none: 未安装 - running: 运行中 - stopped: 已停止 - fault: 故障（进程异常） - unknown: 故障（连接异常） 
 
         :return: The status of this ExtensionInfo.
         :rtype: str
@@ -92,7 +92,7 @@ class ExtensionInfo:
     def status(self, status):
         r"""Sets the status of this ExtensionInfo.
 
-        插件状态, none未安装，running运行中，stopped已停止，fault故障（进程异常），unknown故障（连接异常）
+        **参数解释**:  插件状态 **取值范围**: - none: 未安装 - running: 运行中 - stopped: 已停止 - fault: 故障（进程异常） - unknown: 故障（连接异常） 
 
         :param status: The status of this ExtensionInfo.
         :type status: str
@@ -103,7 +103,7 @@ class ExtensionInfo:
     def version(self):
         r"""Gets the version of this ExtensionInfo.
 
-        插件版本
+        **参数解释**: 插件版本 **取值范围**: 数组长度为[1,32] 
 
         :return: The version of this ExtensionInfo.
         :rtype: str
@@ -114,7 +114,7 @@ class ExtensionInfo:
     def version(self, version):
         r"""Sets the version of this ExtensionInfo.
 
-        插件版本
+        **参数解释**: 插件版本 **取值范围**: 数组长度为[1,32] 
 
         :param version: The version of this ExtensionInfo.
         :type version: str

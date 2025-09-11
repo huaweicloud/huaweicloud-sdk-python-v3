@@ -18,7 +18,7 @@ class ListDisasterRecoveryRecordResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'records': 'list[RecordInfoResponse]'
+        'records': 'list[RecordInfoResponseResult]'
     }
 
     attribute_map = {
@@ -30,8 +30,8 @@ class ListDisasterRecoveryRecordResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param records: 操作记录
-        :type records: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.RecordInfoResponse`]
+        :param records: **参数解释**: 操作记录。
+        :type records: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.RecordInfoResponseResult`]
         """
         
         super(ListDisasterRecoveryRecordResponse, self).__init__()
@@ -46,10 +46,10 @@ class ListDisasterRecoveryRecordResponse(SdkResponse):
     def records(self):
         r"""Gets the records of this ListDisasterRecoveryRecordResponse.
 
-        操作记录
+        **参数解释**: 操作记录。
 
         :return: The records of this ListDisasterRecoveryRecordResponse.
-        :rtype: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.RecordInfoResponse`]
+        :rtype: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.RecordInfoResponseResult`]
         """
         return self._records
 
@@ -57,10 +57,10 @@ class ListDisasterRecoveryRecordResponse(SdkResponse):
     def records(self, records):
         r"""Sets the records of this ListDisasterRecoveryRecordResponse.
 
-        操作记录
+        **参数解释**: 操作记录。
 
         :param records: The records of this ListDisasterRecoveryRecordResponse.
-        :type records: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.RecordInfoResponse`]
+        :type records: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.RecordInfoResponseResult`]
         """
         self._records = records
 

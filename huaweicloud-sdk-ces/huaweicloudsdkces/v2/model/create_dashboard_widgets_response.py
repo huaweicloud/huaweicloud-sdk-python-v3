@@ -30,7 +30,7 @@ class CreateDashboardWidgetsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param widget_ids: 批量创建监控视图返回结果
+        :param widget_ids: **参数解释** 批量创建监控视图返回结果 
         :type widget_ids: list[str]
         """
         
@@ -46,7 +46,7 @@ class CreateDashboardWidgetsResponse(SdkResponse):
     def widget_ids(self):
         r"""Gets the widget_ids of this CreateDashboardWidgetsResponse.
 
-        批量创建监控视图返回结果
+        **参数解释** 批量创建监控视图返回结果 
 
         :return: The widget_ids of this CreateDashboardWidgetsResponse.
         :rtype: list[str]
@@ -57,7 +57,7 @@ class CreateDashboardWidgetsResponse(SdkResponse):
     def widget_ids(self, widget_ids):
         r"""Sets the widget_ids of this CreateDashboardWidgetsResponse.
 
-        批量创建监控视图返回结果
+        **参数解释** 批量创建监控视图返回结果 
 
         :param widget_ids: The widget_ids of this CreateDashboardWidgetsResponse.
         :type widget_ids: list[str]

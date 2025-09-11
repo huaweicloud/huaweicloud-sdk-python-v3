@@ -57,35 +57,35 @@ class WidgetMetric:
 
         The model defined in huaweicloud sdk
 
-        :param namespace: 服务维度
+        :param namespace: **参数解释** 查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)” **约束限制** 不涉及 **取值范围** 格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_。字符串的长度必须在 3 到 32个字符之间。 **默认取值** 不涉及 
         :type namespace: str
         :param dimensions: 
         :type dimensions: :class:`huaweicloudsdkces.v2.DimensionInfo`
-        :param metric_name: 多个指标名称，用逗号隔开
+        :param metric_name: **参数解释** 多个指标名称 **约束限制** 不涉及 **取值范围** 长度为[1,1080]个字符，多个指标名称之间用逗号隔开 **默认取值** 不涉及 
         :type metric_name: str
-        :param alias: 监控视图的指标别名列表
+        :param alias: **参数解释** 监控视图的指标别名列表 **约束限制** 当资源类型为指定资源时才允许传该参数 
         :type alias: list[str]
         :param extra_info: 
         :type extra_info: :class:`huaweicloudsdkces.v2.ExtraInfo`
-        :param rollup_enable: **参数解释** 是否开启聚合 **约束限制** 当RollupEnable开启时，RollupFilter和RollupDimension必填 **取值范围** true，表示开启聚合；false表示不开启聚合 **默认取值** false 
+        :param rollup_enable: **参数解释** 是否开启聚合 **约束限制** 当rollup_enable开启时，rollup_filter和rollup_dimension必填 **取值范围** - true：表示开启聚合 - false：表示不开启聚合 **默认取值** false 
         :type rollup_enable: bool
         :param rollup_filter: 
         :type rollup_filter: :class:`huaweicloudsdkces.v2.RollupFilter`
-        :param rollup_dimension: 聚合维度
+        :param rollup_dimension: **参数解释** 聚合维度 **约束限制** 不涉及 **取值范围** 长度为[1,32]个字符 **默认取值** 不涉及 
         :type rollup_dimension: str
-        :param last_week_compare_enable: 是否展示同比（上周同一时间）数据，true:展示，false:不展示
+        :param last_week_compare_enable: **参数解释** 是否展示同比（上周同一时间）数据 **约束限制** 不涉及 **取值范围** - true:展示 - false:不展示 **默认取值** 不涉及 
         :type last_week_compare_enable: bool
-        :param yesterday_compare_enable: 是否展示环比（昨天同一时间）数据，true:展示，false:不展示
+        :param yesterday_compare_enable: **参数解释** 是否展示环比（昨天同一时间）数据 **约束限制** 不涉及 **取值范围** - true:展示 - false:不展示 **默认取值** 不涉及 
         :type yesterday_compare_enable: bool
-        :param metric_dimension: 维度名称，多维度用逗号分隔，各服务支持的维度可参考：“[服务维度名称](ces_03_0059.xml)”
+        :param metric_dimension: **参数解释** 维度名称，多维度用逗号分隔，各服务支持的维度可参考：“[服务维度名称](ces_03_0059.xml)”，必须以字母开头，只能包含0-9/a-z/A-Z/_/-，多维度用\&quot;,\&quot;分隔，每个维度的最大长度为32。总长度为[1,131]个字符。目前最大支持4个维度。举例：单维度场景：instance_id；多维度场景：instance_id,disk **约束限制** 不涉及           **取值范围** 长度为[1,131]个字符 **默认取值** 不涉及 
         :type metric_dimension: str
-        :param top_num: 展示数据数量
+        :param top_num: **参数解释** 展示数据数量 **约束限制** 不涉及                 **取值范围** 最小值为1，最大值为200 **默认取值** 不涉及 
         :type top_num: int
-        :param unit: 单位
+        :param unit: **参数解释** 单位 **约束限制** 不涉及 **取值范围** 长度为[0,32]个字符 **默认取值** 不涉及 
         :type unit: str
-        :param order: 排序字段，asc正序，desc倒序
+        :param order: **参数解释** 排序字段 **约束限制** 不涉及                **取值范围** - asc:正序 - desc:倒序 **默认取值** 不涉及 
         :type order: str
-        :param topn_metric_name: 资源的监控指标名称，必须以字母开头，只能包含0-9/a-z/A-Z/_，字符长度最短为1，最大为64；如：弹性云服务器中的监控指标cpu_util，表示弹性服务器的CPU使用率；文档数据库中的指标mongo001_command_ps，表示command执行频率；各服务的指标名称可查看：“[服务指标名称](ces_03_0059.xml)”。
+        :param topn_metric_name: **参数解释** 资源的监控指标名称，必须以字母开头，只能包含0-9/a-z/A-Z/_，字符长度最短为1，最大为64；如：弹性云服务器中的监控指标cpu_util，表示弹性服务器的CPU使用率；文档数据库中的指标mongo001_command_ps，表示command执行频率；各服务的指标名称可查看：“[服务指标名称](ces_03_0059.xml)”。 **约束限制** 不涉及 **取值范围** 长度为[1,96]个字符 **默认取值** 不涉及 
         :type topn_metric_name: str
         """
         
@@ -140,7 +140,7 @@ class WidgetMetric:
     def namespace(self):
         r"""Gets the namespace of this WidgetMetric.
 
-        服务维度
+        **参数解释** 查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)” **约束限制** 不涉及 **取值范围** 格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_。字符串的长度必须在 3 到 32个字符之间。 **默认取值** 不涉及 
 
         :return: The namespace of this WidgetMetric.
         :rtype: str
@@ -151,7 +151,7 @@ class WidgetMetric:
     def namespace(self, namespace):
         r"""Sets the namespace of this WidgetMetric.
 
-        服务维度
+        **参数解释** 查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)” **约束限制** 不涉及 **取值范围** 格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_。字符串的长度必须在 3 到 32个字符之间。 **默认取值** 不涉及 
 
         :param namespace: The namespace of this WidgetMetric.
         :type namespace: str
@@ -180,7 +180,7 @@ class WidgetMetric:
     def metric_name(self):
         r"""Gets the metric_name of this WidgetMetric.
 
-        多个指标名称，用逗号隔开
+        **参数解释** 多个指标名称 **约束限制** 不涉及 **取值范围** 长度为[1,1080]个字符，多个指标名称之间用逗号隔开 **默认取值** 不涉及 
 
         :return: The metric_name of this WidgetMetric.
         :rtype: str
@@ -191,7 +191,7 @@ class WidgetMetric:
     def metric_name(self, metric_name):
         r"""Sets the metric_name of this WidgetMetric.
 
-        多个指标名称，用逗号隔开
+        **参数解释** 多个指标名称 **约束限制** 不涉及 **取值范围** 长度为[1,1080]个字符，多个指标名称之间用逗号隔开 **默认取值** 不涉及 
 
         :param metric_name: The metric_name of this WidgetMetric.
         :type metric_name: str
@@ -202,7 +202,7 @@ class WidgetMetric:
     def alias(self):
         r"""Gets the alias of this WidgetMetric.
 
-        监控视图的指标别名列表
+        **参数解释** 监控视图的指标别名列表 **约束限制** 当资源类型为指定资源时才允许传该参数 
 
         :return: The alias of this WidgetMetric.
         :rtype: list[str]
@@ -213,7 +213,7 @@ class WidgetMetric:
     def alias(self, alias):
         r"""Sets the alias of this WidgetMetric.
 
-        监控视图的指标别名列表
+        **参数解释** 监控视图的指标别名列表 **约束限制** 当资源类型为指定资源时才允许传该参数 
 
         :param alias: The alias of this WidgetMetric.
         :type alias: list[str]
@@ -242,7 +242,7 @@ class WidgetMetric:
     def rollup_enable(self):
         r"""Gets the rollup_enable of this WidgetMetric.
 
-        **参数解释** 是否开启聚合 **约束限制** 当RollupEnable开启时，RollupFilter和RollupDimension必填 **取值范围** true，表示开启聚合；false表示不开启聚合 **默认取值** false 
+        **参数解释** 是否开启聚合 **约束限制** 当rollup_enable开启时，rollup_filter和rollup_dimension必填 **取值范围** - true：表示开启聚合 - false：表示不开启聚合 **默认取值** false 
 
         :return: The rollup_enable of this WidgetMetric.
         :rtype: bool
@@ -253,7 +253,7 @@ class WidgetMetric:
     def rollup_enable(self, rollup_enable):
         r"""Sets the rollup_enable of this WidgetMetric.
 
-        **参数解释** 是否开启聚合 **约束限制** 当RollupEnable开启时，RollupFilter和RollupDimension必填 **取值范围** true，表示开启聚合；false表示不开启聚合 **默认取值** false 
+        **参数解释** 是否开启聚合 **约束限制** 当rollup_enable开启时，rollup_filter和rollup_dimension必填 **取值范围** - true：表示开启聚合 - false：表示不开启聚合 **默认取值** false 
 
         :param rollup_enable: The rollup_enable of this WidgetMetric.
         :type rollup_enable: bool
@@ -282,7 +282,7 @@ class WidgetMetric:
     def rollup_dimension(self):
         r"""Gets the rollup_dimension of this WidgetMetric.
 
-        聚合维度
+        **参数解释** 聚合维度 **约束限制** 不涉及 **取值范围** 长度为[1,32]个字符 **默认取值** 不涉及 
 
         :return: The rollup_dimension of this WidgetMetric.
         :rtype: str
@@ -293,7 +293,7 @@ class WidgetMetric:
     def rollup_dimension(self, rollup_dimension):
         r"""Sets the rollup_dimension of this WidgetMetric.
 
-        聚合维度
+        **参数解释** 聚合维度 **约束限制** 不涉及 **取值范围** 长度为[1,32]个字符 **默认取值** 不涉及 
 
         :param rollup_dimension: The rollup_dimension of this WidgetMetric.
         :type rollup_dimension: str
@@ -304,7 +304,7 @@ class WidgetMetric:
     def last_week_compare_enable(self):
         r"""Gets the last_week_compare_enable of this WidgetMetric.
 
-        是否展示同比（上周同一时间）数据，true:展示，false:不展示
+        **参数解释** 是否展示同比（上周同一时间）数据 **约束限制** 不涉及 **取值范围** - true:展示 - false:不展示 **默认取值** 不涉及 
 
         :return: The last_week_compare_enable of this WidgetMetric.
         :rtype: bool
@@ -315,7 +315,7 @@ class WidgetMetric:
     def last_week_compare_enable(self, last_week_compare_enable):
         r"""Sets the last_week_compare_enable of this WidgetMetric.
 
-        是否展示同比（上周同一时间）数据，true:展示，false:不展示
+        **参数解释** 是否展示同比（上周同一时间）数据 **约束限制** 不涉及 **取值范围** - true:展示 - false:不展示 **默认取值** 不涉及 
 
         :param last_week_compare_enable: The last_week_compare_enable of this WidgetMetric.
         :type last_week_compare_enable: bool
@@ -326,7 +326,7 @@ class WidgetMetric:
     def yesterday_compare_enable(self):
         r"""Gets the yesterday_compare_enable of this WidgetMetric.
 
-        是否展示环比（昨天同一时间）数据，true:展示，false:不展示
+        **参数解释** 是否展示环比（昨天同一时间）数据 **约束限制** 不涉及 **取值范围** - true:展示 - false:不展示 **默认取值** 不涉及 
 
         :return: The yesterday_compare_enable of this WidgetMetric.
         :rtype: bool
@@ -337,7 +337,7 @@ class WidgetMetric:
     def yesterday_compare_enable(self, yesterday_compare_enable):
         r"""Sets the yesterday_compare_enable of this WidgetMetric.
 
-        是否展示环比（昨天同一时间）数据，true:展示，false:不展示
+        **参数解释** 是否展示环比（昨天同一时间）数据 **约束限制** 不涉及 **取值范围** - true:展示 - false:不展示 **默认取值** 不涉及 
 
         :param yesterday_compare_enable: The yesterday_compare_enable of this WidgetMetric.
         :type yesterday_compare_enable: bool
@@ -348,7 +348,7 @@ class WidgetMetric:
     def metric_dimension(self):
         r"""Gets the metric_dimension of this WidgetMetric.
 
-        维度名称，多维度用逗号分隔，各服务支持的维度可参考：“[服务维度名称](ces_03_0059.xml)”
+        **参数解释** 维度名称，多维度用逗号分隔，各服务支持的维度可参考：“[服务维度名称](ces_03_0059.xml)”，必须以字母开头，只能包含0-9/a-z/A-Z/_/-，多维度用\",\"分隔，每个维度的最大长度为32。总长度为[1,131]个字符。目前最大支持4个维度。举例：单维度场景：instance_id；多维度场景：instance_id,disk **约束限制** 不涉及           **取值范围** 长度为[1,131]个字符 **默认取值** 不涉及 
 
         :return: The metric_dimension of this WidgetMetric.
         :rtype: str
@@ -359,7 +359,7 @@ class WidgetMetric:
     def metric_dimension(self, metric_dimension):
         r"""Sets the metric_dimension of this WidgetMetric.
 
-        维度名称，多维度用逗号分隔，各服务支持的维度可参考：“[服务维度名称](ces_03_0059.xml)”
+        **参数解释** 维度名称，多维度用逗号分隔，各服务支持的维度可参考：“[服务维度名称](ces_03_0059.xml)”，必须以字母开头，只能包含0-9/a-z/A-Z/_/-，多维度用\",\"分隔，每个维度的最大长度为32。总长度为[1,131]个字符。目前最大支持4个维度。举例：单维度场景：instance_id；多维度场景：instance_id,disk **约束限制** 不涉及           **取值范围** 长度为[1,131]个字符 **默认取值** 不涉及 
 
         :param metric_dimension: The metric_dimension of this WidgetMetric.
         :type metric_dimension: str
@@ -370,7 +370,7 @@ class WidgetMetric:
     def top_num(self):
         r"""Gets the top_num of this WidgetMetric.
 
-        展示数据数量
+        **参数解释** 展示数据数量 **约束限制** 不涉及                 **取值范围** 最小值为1，最大值为200 **默认取值** 不涉及 
 
         :return: The top_num of this WidgetMetric.
         :rtype: int
@@ -381,7 +381,7 @@ class WidgetMetric:
     def top_num(self, top_num):
         r"""Sets the top_num of this WidgetMetric.
 
-        展示数据数量
+        **参数解释** 展示数据数量 **约束限制** 不涉及                 **取值范围** 最小值为1，最大值为200 **默认取值** 不涉及 
 
         :param top_num: The top_num of this WidgetMetric.
         :type top_num: int
@@ -392,7 +392,7 @@ class WidgetMetric:
     def unit(self):
         r"""Gets the unit of this WidgetMetric.
 
-        单位
+        **参数解释** 单位 **约束限制** 不涉及 **取值范围** 长度为[0,32]个字符 **默认取值** 不涉及 
 
         :return: The unit of this WidgetMetric.
         :rtype: str
@@ -403,7 +403,7 @@ class WidgetMetric:
     def unit(self, unit):
         r"""Sets the unit of this WidgetMetric.
 
-        单位
+        **参数解释** 单位 **约束限制** 不涉及 **取值范围** 长度为[0,32]个字符 **默认取值** 不涉及 
 
         :param unit: The unit of this WidgetMetric.
         :type unit: str
@@ -414,7 +414,7 @@ class WidgetMetric:
     def order(self):
         r"""Gets the order of this WidgetMetric.
 
-        排序字段，asc正序，desc倒序
+        **参数解释** 排序字段 **约束限制** 不涉及                **取值范围** - asc:正序 - desc:倒序 **默认取值** 不涉及 
 
         :return: The order of this WidgetMetric.
         :rtype: str
@@ -425,7 +425,7 @@ class WidgetMetric:
     def order(self, order):
         r"""Sets the order of this WidgetMetric.
 
-        排序字段，asc正序，desc倒序
+        **参数解释** 排序字段 **约束限制** 不涉及                **取值范围** - asc:正序 - desc:倒序 **默认取值** 不涉及 
 
         :param order: The order of this WidgetMetric.
         :type order: str
@@ -436,7 +436,7 @@ class WidgetMetric:
     def topn_metric_name(self):
         r"""Gets the topn_metric_name of this WidgetMetric.
 
-        资源的监控指标名称，必须以字母开头，只能包含0-9/a-z/A-Z/_，字符长度最短为1，最大为64；如：弹性云服务器中的监控指标cpu_util，表示弹性服务器的CPU使用率；文档数据库中的指标mongo001_command_ps，表示command执行频率；各服务的指标名称可查看：“[服务指标名称](ces_03_0059.xml)”。
+        **参数解释** 资源的监控指标名称，必须以字母开头，只能包含0-9/a-z/A-Z/_，字符长度最短为1，最大为64；如：弹性云服务器中的监控指标cpu_util，表示弹性服务器的CPU使用率；文档数据库中的指标mongo001_command_ps，表示command执行频率；各服务的指标名称可查看：“[服务指标名称](ces_03_0059.xml)”。 **约束限制** 不涉及 **取值范围** 长度为[1,96]个字符 **默认取值** 不涉及 
 
         :return: The topn_metric_name of this WidgetMetric.
         :rtype: str
@@ -447,7 +447,7 @@ class WidgetMetric:
     def topn_metric_name(self, topn_metric_name):
         r"""Sets the topn_metric_name of this WidgetMetric.
 
-        资源的监控指标名称，必须以字母开头，只能包含0-9/a-z/A-Z/_，字符长度最短为1，最大为64；如：弹性云服务器中的监控指标cpu_util，表示弹性服务器的CPU使用率；文档数据库中的指标mongo001_command_ps，表示command执行频率；各服务的指标名称可查看：“[服务指标名称](ces_03_0059.xml)”。
+        **参数解释** 资源的监控指标名称，必须以字母开头，只能包含0-9/a-z/A-Z/_，字符长度最短为1，最大为64；如：弹性云服务器中的监控指标cpu_util，表示弹性服务器的CPU使用率；文档数据库中的指标mongo001_command_ps，表示command执行频率；各服务的指标名称可查看：“[服务指标名称](ces_03_0059.xml)”。 **约束限制** 不涉及 **取值范围** 长度为[1,96]个字符 **默认取值** 不涉及 
 
         :param topn_metric_name: The topn_metric_name of this WidgetMetric.
         :type topn_metric_name: str

@@ -33,11 +33,11 @@ class ProductResource:
 
         The model defined in huaweicloud sdk
 
-        :param product_name: 资源所属的云产品，一般由\&quot;服务命名空间,服务首层维度名称\&quot;组成，如\&quot;SYS.ECS,instance_id\&quot;
+        :param product_name: **参数解释** 资源所属的云产品，一般由\&quot;服务命名空间,服务首层维度名称\&quot;组成，如\&quot;SYS.ECS,instance_id\&quot; **约束限制** 不涉及 **取值范围** 长度[0,128]个字符 **默认取值** 不涉及 
         :type product_name: str
-        :param namespace: 查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”
+        :param namespace: **参数解释** 查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)” **约束限制** 不涉及 **取值范围** 格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_。字符串的长度必须在 3 到 32个字符之间。 **默认取值** 不涉及 
         :type namespace: str
-        :param product_instances: 产品实例详情
+        :param product_instances: **参数解释** 产品实例详情 **约束限制** 不涉及 **取值范围** 不超过1000个实例 
         :type product_instances: list[:class:`huaweicloudsdkces.v2.ProductInstance`]
         """
         
@@ -56,7 +56,7 @@ class ProductResource:
     def product_name(self):
         r"""Gets the product_name of this ProductResource.
 
-        资源所属的云产品，一般由\"服务命名空间,服务首层维度名称\"组成，如\"SYS.ECS,instance_id\"
+        **参数解释** 资源所属的云产品，一般由\"服务命名空间,服务首层维度名称\"组成，如\"SYS.ECS,instance_id\" **约束限制** 不涉及 **取值范围** 长度[0,128]个字符 **默认取值** 不涉及 
 
         :return: The product_name of this ProductResource.
         :rtype: str
@@ -67,7 +67,7 @@ class ProductResource:
     def product_name(self, product_name):
         r"""Sets the product_name of this ProductResource.
 
-        资源所属的云产品，一般由\"服务命名空间,服务首层维度名称\"组成，如\"SYS.ECS,instance_id\"
+        **参数解释** 资源所属的云产品，一般由\"服务命名空间,服务首层维度名称\"组成，如\"SYS.ECS,instance_id\" **约束限制** 不涉及 **取值范围** 长度[0,128]个字符 **默认取值** 不涉及 
 
         :param product_name: The product_name of this ProductResource.
         :type product_name: str
@@ -78,7 +78,7 @@ class ProductResource:
     def namespace(self):
         r"""Gets the namespace of this ProductResource.
 
-        查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”
+        **参数解释** 查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)” **约束限制** 不涉及 **取值范围** 格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_。字符串的长度必须在 3 到 32个字符之间。 **默认取值** 不涉及 
 
         :return: The namespace of this ProductResource.
         :rtype: str
@@ -89,7 +89,7 @@ class ProductResource:
     def namespace(self, namespace):
         r"""Sets the namespace of this ProductResource.
 
-        查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”
+        **参数解释** 查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)” **约束限制** 不涉及 **取值范围** 格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_。字符串的长度必须在 3 到 32个字符之间。 **默认取值** 不涉及 
 
         :param namespace: The namespace of this ProductResource.
         :type namespace: str
@@ -100,7 +100,7 @@ class ProductResource:
     def product_instances(self):
         r"""Gets the product_instances of this ProductResource.
 
-        产品实例详情
+        **参数解释** 产品实例详情 **约束限制** 不涉及 **取值范围** 不超过1000个实例 
 
         :return: The product_instances of this ProductResource.
         :rtype: list[:class:`huaweicloudsdkces.v2.ProductInstance`]
@@ -111,7 +111,7 @@ class ProductResource:
     def product_instances(self, product_instances):
         r"""Sets the product_instances of this ProductResource.
 
-        产品实例详情
+        **参数解释** 产品实例详情 **约束限制** 不涉及 **取值范围** 不超过1000个实例 
 
         :param product_instances: The product_instances of this ProductResource.
         :type product_instances: list[:class:`huaweicloudsdkces.v2.ProductInstance`]

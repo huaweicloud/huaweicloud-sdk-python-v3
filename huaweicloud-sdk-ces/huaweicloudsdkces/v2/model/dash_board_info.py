@@ -49,27 +49,27 @@ class DashBoardInfo:
 
         The model defined in huaweicloud sdk
 
-        :param dashboard_id: 监控看板id
+        :param dashboard_id: **参数描述**： 监控看板id **取值范围** 以db开头，包含22个字母和数字，长度为24个字符 
         :type dashboard_id: str
-        :param dashboard_name: 自定义监控看板名称
+        :param dashboard_name: **参数解释** 自定义监控看板名称 **取值范围** 长度为[1,128]个字符，只允许中文、英文、数字0-9、_和- 
         :type dashboard_name: str
-        :param enterprise_id: 企业项目Id
+        :param enterprise_id: **参数解释** 企业项目ID **取值范围** 只能包含小写字母、数字、“-”、“_”，可以自定义企业项目ID，长度为36个字符。也可以为0（代表默认企业项目ID）。 
         :type enterprise_id: str
-        :param row_widget_num: 监控视图展示模式，0表示自定义坐标，1代表每行一个
+        :param row_widget_num: **参数解释** 每行展示视图数量 **取值范围** - 0:表示自定义坐标 - 1:代表每行1个视图 - 2:代表每行2个视图 - 3:代表每行3个视图 
         :type row_widget_num: int
-        :param is_favorite: 监控看板是否标记收藏, true: 收藏, false: 未收藏
+        :param is_favorite: **参数解释** 监控看板是否标记收藏 **取值范围** - true: 收藏, - false: 未收藏 
         :type is_favorite: bool
-        :param creator_name: 监控看板的创建用户名
+        :param creator_name: **参数解释** 监控看板的创建用户名 **取值范围** 长度为[1,128]个字符，只允许中文、英文、数字0-9、_和- 
         :type creator_name: str
-        :param create_time: 监控看板创建时间
+        :param create_time: **参数解释** 监控看板创建时间 **取值范围** 最小值为1111111111111，最大值为9999999999999 
         :type create_time: int
-        :param widgets_num: 看板下的视图总数
+        :param widgets_num: **参数解释** 看板下的视图总数 **取值范围** 最小值为0，最大值为50 
         :type widgets_num: int
-        :param namespace: 命名空间
+        :param namespace: **参数解释** 查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)” **取值范围** 格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_。字符串的长度必须在 3 到 32个字符之间。 
         :type namespace: str
-        :param sub_product: 子产品标识
+        :param sub_product: **参数解释** 子产品标识 **取值范围** 长度为[1,128]个字符 
         :type sub_product: str
-        :param dashboard_template_id: 监控大盘模板id
+        :param dashboard_template_id: **参数解释** 监控大盘模板id **取值范围** 以mb开头，包含22个字母和数字，长度为24个字符 
         :type dashboard_template_id: str
         """
         
@@ -115,7 +115,7 @@ class DashBoardInfo:
     def dashboard_id(self):
         r"""Gets the dashboard_id of this DashBoardInfo.
 
-        监控看板id
+        **参数描述**： 监控看板id **取值范围** 以db开头，包含22个字母和数字，长度为24个字符 
 
         :return: The dashboard_id of this DashBoardInfo.
         :rtype: str
@@ -126,7 +126,7 @@ class DashBoardInfo:
     def dashboard_id(self, dashboard_id):
         r"""Sets the dashboard_id of this DashBoardInfo.
 
-        监控看板id
+        **参数描述**： 监控看板id **取值范围** 以db开头，包含22个字母和数字，长度为24个字符 
 
         :param dashboard_id: The dashboard_id of this DashBoardInfo.
         :type dashboard_id: str
@@ -137,7 +137,7 @@ class DashBoardInfo:
     def dashboard_name(self):
         r"""Gets the dashboard_name of this DashBoardInfo.
 
-        自定义监控看板名称
+        **参数解释** 自定义监控看板名称 **取值范围** 长度为[1,128]个字符，只允许中文、英文、数字0-9、_和- 
 
         :return: The dashboard_name of this DashBoardInfo.
         :rtype: str
@@ -148,7 +148,7 @@ class DashBoardInfo:
     def dashboard_name(self, dashboard_name):
         r"""Sets the dashboard_name of this DashBoardInfo.
 
-        自定义监控看板名称
+        **参数解释** 自定义监控看板名称 **取值范围** 长度为[1,128]个字符，只允许中文、英文、数字0-9、_和- 
 
         :param dashboard_name: The dashboard_name of this DashBoardInfo.
         :type dashboard_name: str
@@ -159,7 +159,7 @@ class DashBoardInfo:
     def enterprise_id(self):
         r"""Gets the enterprise_id of this DashBoardInfo.
 
-        企业项目Id
+        **参数解释** 企业项目ID **取值范围** 只能包含小写字母、数字、“-”、“_”，可以自定义企业项目ID，长度为36个字符。也可以为0（代表默认企业项目ID）。 
 
         :return: The enterprise_id of this DashBoardInfo.
         :rtype: str
@@ -170,7 +170,7 @@ class DashBoardInfo:
     def enterprise_id(self, enterprise_id):
         r"""Sets the enterprise_id of this DashBoardInfo.
 
-        企业项目Id
+        **参数解释** 企业项目ID **取值范围** 只能包含小写字母、数字、“-”、“_”，可以自定义企业项目ID，长度为36个字符。也可以为0（代表默认企业项目ID）。 
 
         :param enterprise_id: The enterprise_id of this DashBoardInfo.
         :type enterprise_id: str
@@ -181,7 +181,7 @@ class DashBoardInfo:
     def row_widget_num(self):
         r"""Gets the row_widget_num of this DashBoardInfo.
 
-        监控视图展示模式，0表示自定义坐标，1代表每行一个
+        **参数解释** 每行展示视图数量 **取值范围** - 0:表示自定义坐标 - 1:代表每行1个视图 - 2:代表每行2个视图 - 3:代表每行3个视图 
 
         :return: The row_widget_num of this DashBoardInfo.
         :rtype: int
@@ -192,7 +192,7 @@ class DashBoardInfo:
     def row_widget_num(self, row_widget_num):
         r"""Sets the row_widget_num of this DashBoardInfo.
 
-        监控视图展示模式，0表示自定义坐标，1代表每行一个
+        **参数解释** 每行展示视图数量 **取值范围** - 0:表示自定义坐标 - 1:代表每行1个视图 - 2:代表每行2个视图 - 3:代表每行3个视图 
 
         :param row_widget_num: The row_widget_num of this DashBoardInfo.
         :type row_widget_num: int
@@ -203,7 +203,7 @@ class DashBoardInfo:
     def is_favorite(self):
         r"""Gets the is_favorite of this DashBoardInfo.
 
-        监控看板是否标记收藏, true: 收藏, false: 未收藏
+        **参数解释** 监控看板是否标记收藏 **取值范围** - true: 收藏, - false: 未收藏 
 
         :return: The is_favorite of this DashBoardInfo.
         :rtype: bool
@@ -214,7 +214,7 @@ class DashBoardInfo:
     def is_favorite(self, is_favorite):
         r"""Sets the is_favorite of this DashBoardInfo.
 
-        监控看板是否标记收藏, true: 收藏, false: 未收藏
+        **参数解释** 监控看板是否标记收藏 **取值范围** - true: 收藏, - false: 未收藏 
 
         :param is_favorite: The is_favorite of this DashBoardInfo.
         :type is_favorite: bool
@@ -225,7 +225,7 @@ class DashBoardInfo:
     def creator_name(self):
         r"""Gets the creator_name of this DashBoardInfo.
 
-        监控看板的创建用户名
+        **参数解释** 监控看板的创建用户名 **取值范围** 长度为[1,128]个字符，只允许中文、英文、数字0-9、_和- 
 
         :return: The creator_name of this DashBoardInfo.
         :rtype: str
@@ -236,7 +236,7 @@ class DashBoardInfo:
     def creator_name(self, creator_name):
         r"""Sets the creator_name of this DashBoardInfo.
 
-        监控看板的创建用户名
+        **参数解释** 监控看板的创建用户名 **取值范围** 长度为[1,128]个字符，只允许中文、英文、数字0-9、_和- 
 
         :param creator_name: The creator_name of this DashBoardInfo.
         :type creator_name: str
@@ -247,7 +247,7 @@ class DashBoardInfo:
     def create_time(self):
         r"""Gets the create_time of this DashBoardInfo.
 
-        监控看板创建时间
+        **参数解释** 监控看板创建时间 **取值范围** 最小值为1111111111111，最大值为9999999999999 
 
         :return: The create_time of this DashBoardInfo.
         :rtype: int
@@ -258,7 +258,7 @@ class DashBoardInfo:
     def create_time(self, create_time):
         r"""Sets the create_time of this DashBoardInfo.
 
-        监控看板创建时间
+        **参数解释** 监控看板创建时间 **取值范围** 最小值为1111111111111，最大值为9999999999999 
 
         :param create_time: The create_time of this DashBoardInfo.
         :type create_time: int
@@ -269,7 +269,7 @@ class DashBoardInfo:
     def widgets_num(self):
         r"""Gets the widgets_num of this DashBoardInfo.
 
-        看板下的视图总数
+        **参数解释** 看板下的视图总数 **取值范围** 最小值为0，最大值为50 
 
         :return: The widgets_num of this DashBoardInfo.
         :rtype: int
@@ -280,7 +280,7 @@ class DashBoardInfo:
     def widgets_num(self, widgets_num):
         r"""Sets the widgets_num of this DashBoardInfo.
 
-        看板下的视图总数
+        **参数解释** 看板下的视图总数 **取值范围** 最小值为0，最大值为50 
 
         :param widgets_num: The widgets_num of this DashBoardInfo.
         :type widgets_num: int
@@ -291,7 +291,7 @@ class DashBoardInfo:
     def namespace(self):
         r"""Gets the namespace of this DashBoardInfo.
 
-        命名空间
+        **参数解释** 查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)” **取值范围** 格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_。字符串的长度必须在 3 到 32个字符之间。 
 
         :return: The namespace of this DashBoardInfo.
         :rtype: str
@@ -302,7 +302,7 @@ class DashBoardInfo:
     def namespace(self, namespace):
         r"""Sets the namespace of this DashBoardInfo.
 
-        命名空间
+        **参数解释** 查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)” **取值范围** 格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_。字符串的长度必须在 3 到 32个字符之间。 
 
         :param namespace: The namespace of this DashBoardInfo.
         :type namespace: str
@@ -313,7 +313,7 @@ class DashBoardInfo:
     def sub_product(self):
         r"""Gets the sub_product of this DashBoardInfo.
 
-        子产品标识
+        **参数解释** 子产品标识 **取值范围** 长度为[1,128]个字符 
 
         :return: The sub_product of this DashBoardInfo.
         :rtype: str
@@ -324,7 +324,7 @@ class DashBoardInfo:
     def sub_product(self, sub_product):
         r"""Sets the sub_product of this DashBoardInfo.
 
-        子产品标识
+        **参数解释** 子产品标识 **取值范围** 长度为[1,128]个字符 
 
         :param sub_product: The sub_product of this DashBoardInfo.
         :type sub_product: str
@@ -335,7 +335,7 @@ class DashBoardInfo:
     def dashboard_template_id(self):
         r"""Gets the dashboard_template_id of this DashBoardInfo.
 
-        监控大盘模板id
+        **参数解释** 监控大盘模板id **取值范围** 以mb开头，包含22个字母和数字，长度为24个字符 
 
         :return: The dashboard_template_id of this DashBoardInfo.
         :rtype: str
@@ -346,7 +346,7 @@ class DashBoardInfo:
     def dashboard_template_id(self, dashboard_template_id):
         r"""Sets the dashboard_template_id of this DashBoardInfo.
 
-        监控大盘模板id
+        **参数解释** 监控大盘模板id **取值范围** 以mb开头，包含22个字母和数字，长度为24个字符 
 
         :param dashboard_template_id: The dashboard_template_id of this DashBoardInfo.
         :type dashboard_template_id: str

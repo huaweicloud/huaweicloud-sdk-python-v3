@@ -69,11 +69,11 @@ class ListNotificationMaskRespNotificationMasks:
 
         :param notification_mask_id: 屏蔽规则ID
         :type notification_mask_id: str
-        :param mask_name: 屏蔽规则名称，只能为字母、数字、汉字、-、_，最大长度为64
+        :param mask_name: **参数解释**： 屏蔽规则名称。    **约束限制**： 不涉及。 **取值范围**： 只能为字母、数字、汉字、-、_，长度为[1,64]个字符。      **默认取值**： 不涉及。 
         :type mask_name: str
         :param relation_type: 
         :type relation_type: :class:`huaweicloudsdkces.v2.RelationType`
-        :param relation_id: 关联编号
+        :param relation_id: **参数解释**： 关联ID       **约束限制**： 不涉及。 **取值范围**： 取值为告警规则ID、告警策略ID。只能包含字母、数字、“-”，长度为[1,64]个字符。      **默认取值**： 不涉及。 
         :type relation_id: str
         :param resource_type: 
         :type resource_type: :class:`huaweicloudsdkces.v2.MaskResourceType`
@@ -95,15 +95,15 @@ class ListNotificationMaskRespNotificationMasks:
         :type create_time: int
         :param update_time: 告警屏蔽的更新时间，UNIX时间戳，单位毫秒。
         :type update_time: int
-        :param start_date: 屏蔽起始日期，yyyy-MM-dd。
+        :param start_date: **参数解释**： 屏蔽起始日期。           **约束限制**： 不涉及。 **取值范围**： 字符长度为10，格式为：yyyy-MM-dd           **默认取值**： 不涉及。 
         :type start_date: date
-        :param start_time: 屏蔽起始时间，HH:mm:ss。
+        :param start_time: **参数解释**： 屏蔽起始时间。          **约束限制**： 不涉及。 **取值范围**： 字符长度为8，格式为：HH:mm:ss         **默认取值**： 不涉及。 
         :type start_time: str
-        :param end_date: 屏蔽截止日期，yyyy-MM-dd。
+        :param end_date: **参数解释**： 屏蔽截止日期。           **约束限制**： 不涉及。 **取值范围**： 字符长度为10，格式为：yyyy-MM-dd           **默认取值**： 不涉及。 
         :type end_date: date
-        :param end_time: 屏蔽截止时间，HH:mm:ss。
+        :param end_time: **参数解释**： 屏蔽截止时间。          **约束限制**： 不涉及。 **取值范围**： 字符长度为8，格式为：HH:mm:ss         **默认取值**： 不涉及。 
         :type end_time: str
-        :param effective_timezone: 时区，形如：\&quot;GMT-08:00\&quot;、\&quot;GMT+08:00\&quot;、\&quot;GMT+0:00\&quot;
+        :param effective_timezone: **参数解释**： 时区，形如：\&quot;GMT-08:00\&quot;、\&quot;GMT+08:00\&quot;、\&quot;GMT+0:00\&quot;。    **约束限制**： 不涉及。 **取值范围**： 长度为[1,16]个字符。           **默认取值**： 不涉及。 
         :type effective_timezone: str
         :param policies: 告警策略列表。
         :type policies: list[:class:`huaweicloudsdkces.v2.PoliciesInListResp`]
@@ -196,7 +196,7 @@ class ListNotificationMaskRespNotificationMasks:
     def mask_name(self):
         r"""Gets the mask_name of this ListNotificationMaskRespNotificationMasks.
 
-        屏蔽规则名称，只能为字母、数字、汉字、-、_，最大长度为64
+        **参数解释**： 屏蔽规则名称。    **约束限制**： 不涉及。 **取值范围**： 只能为字母、数字、汉字、-、_，长度为[1,64]个字符。      **默认取值**： 不涉及。 
 
         :return: The mask_name of this ListNotificationMaskRespNotificationMasks.
         :rtype: str
@@ -207,7 +207,7 @@ class ListNotificationMaskRespNotificationMasks:
     def mask_name(self, mask_name):
         r"""Sets the mask_name of this ListNotificationMaskRespNotificationMasks.
 
-        屏蔽规则名称，只能为字母、数字、汉字、-、_，最大长度为64
+        **参数解释**： 屏蔽规则名称。    **约束限制**： 不涉及。 **取值范围**： 只能为字母、数字、汉字、-、_，长度为[1,64]个字符。      **默认取值**： 不涉及。 
 
         :param mask_name: The mask_name of this ListNotificationMaskRespNotificationMasks.
         :type mask_name: str
@@ -236,7 +236,7 @@ class ListNotificationMaskRespNotificationMasks:
     def relation_id(self):
         r"""Gets the relation_id of this ListNotificationMaskRespNotificationMasks.
 
-        关联编号
+        **参数解释**： 关联ID       **约束限制**： 不涉及。 **取值范围**： 取值为告警规则ID、告警策略ID。只能包含字母、数字、“-”，长度为[1,64]个字符。      **默认取值**： 不涉及。 
 
         :return: The relation_id of this ListNotificationMaskRespNotificationMasks.
         :rtype: str
@@ -247,7 +247,7 @@ class ListNotificationMaskRespNotificationMasks:
     def relation_id(self, relation_id):
         r"""Sets the relation_id of this ListNotificationMaskRespNotificationMasks.
 
-        关联编号
+        **参数解释**： 关联ID       **约束限制**： 不涉及。 **取值范围**： 取值为告警规则ID、告警策略ID。只能包含字母、数字、“-”，长度为[1,64]个字符。      **默认取值**： 不涉及。 
 
         :param relation_id: The relation_id of this ListNotificationMaskRespNotificationMasks.
         :type relation_id: str
@@ -466,7 +466,7 @@ class ListNotificationMaskRespNotificationMasks:
     def start_date(self):
         r"""Gets the start_date of this ListNotificationMaskRespNotificationMasks.
 
-        屏蔽起始日期，yyyy-MM-dd。
+        **参数解释**： 屏蔽起始日期。           **约束限制**： 不涉及。 **取值范围**： 字符长度为10，格式为：yyyy-MM-dd           **默认取值**： 不涉及。 
 
         :return: The start_date of this ListNotificationMaskRespNotificationMasks.
         :rtype: date
@@ -477,7 +477,7 @@ class ListNotificationMaskRespNotificationMasks:
     def start_date(self, start_date):
         r"""Sets the start_date of this ListNotificationMaskRespNotificationMasks.
 
-        屏蔽起始日期，yyyy-MM-dd。
+        **参数解释**： 屏蔽起始日期。           **约束限制**： 不涉及。 **取值范围**： 字符长度为10，格式为：yyyy-MM-dd           **默认取值**： 不涉及。 
 
         :param start_date: The start_date of this ListNotificationMaskRespNotificationMasks.
         :type start_date: date
@@ -488,7 +488,7 @@ class ListNotificationMaskRespNotificationMasks:
     def start_time(self):
         r"""Gets the start_time of this ListNotificationMaskRespNotificationMasks.
 
-        屏蔽起始时间，HH:mm:ss。
+        **参数解释**： 屏蔽起始时间。          **约束限制**： 不涉及。 **取值范围**： 字符长度为8，格式为：HH:mm:ss         **默认取值**： 不涉及。 
 
         :return: The start_time of this ListNotificationMaskRespNotificationMasks.
         :rtype: str
@@ -499,7 +499,7 @@ class ListNotificationMaskRespNotificationMasks:
     def start_time(self, start_time):
         r"""Sets the start_time of this ListNotificationMaskRespNotificationMasks.
 
-        屏蔽起始时间，HH:mm:ss。
+        **参数解释**： 屏蔽起始时间。          **约束限制**： 不涉及。 **取值范围**： 字符长度为8，格式为：HH:mm:ss         **默认取值**： 不涉及。 
 
         :param start_time: The start_time of this ListNotificationMaskRespNotificationMasks.
         :type start_time: str
@@ -510,7 +510,7 @@ class ListNotificationMaskRespNotificationMasks:
     def end_date(self):
         r"""Gets the end_date of this ListNotificationMaskRespNotificationMasks.
 
-        屏蔽截止日期，yyyy-MM-dd。
+        **参数解释**： 屏蔽截止日期。           **约束限制**： 不涉及。 **取值范围**： 字符长度为10，格式为：yyyy-MM-dd           **默认取值**： 不涉及。 
 
         :return: The end_date of this ListNotificationMaskRespNotificationMasks.
         :rtype: date
@@ -521,7 +521,7 @@ class ListNotificationMaskRespNotificationMasks:
     def end_date(self, end_date):
         r"""Sets the end_date of this ListNotificationMaskRespNotificationMasks.
 
-        屏蔽截止日期，yyyy-MM-dd。
+        **参数解释**： 屏蔽截止日期。           **约束限制**： 不涉及。 **取值范围**： 字符长度为10，格式为：yyyy-MM-dd           **默认取值**： 不涉及。 
 
         :param end_date: The end_date of this ListNotificationMaskRespNotificationMasks.
         :type end_date: date
@@ -532,7 +532,7 @@ class ListNotificationMaskRespNotificationMasks:
     def end_time(self):
         r"""Gets the end_time of this ListNotificationMaskRespNotificationMasks.
 
-        屏蔽截止时间，HH:mm:ss。
+        **参数解释**： 屏蔽截止时间。          **约束限制**： 不涉及。 **取值范围**： 字符长度为8，格式为：HH:mm:ss         **默认取值**： 不涉及。 
 
         :return: The end_time of this ListNotificationMaskRespNotificationMasks.
         :rtype: str
@@ -543,7 +543,7 @@ class ListNotificationMaskRespNotificationMasks:
     def end_time(self, end_time):
         r"""Sets the end_time of this ListNotificationMaskRespNotificationMasks.
 
-        屏蔽截止时间，HH:mm:ss。
+        **参数解释**： 屏蔽截止时间。          **约束限制**： 不涉及。 **取值范围**： 字符长度为8，格式为：HH:mm:ss         **默认取值**： 不涉及。 
 
         :param end_time: The end_time of this ListNotificationMaskRespNotificationMasks.
         :type end_time: str
@@ -554,7 +554,7 @@ class ListNotificationMaskRespNotificationMasks:
     def effective_timezone(self):
         r"""Gets the effective_timezone of this ListNotificationMaskRespNotificationMasks.
 
-        时区，形如：\"GMT-08:00\"、\"GMT+08:00\"、\"GMT+0:00\"
+        **参数解释**： 时区，形如：\"GMT-08:00\"、\"GMT+08:00\"、\"GMT+0:00\"。    **约束限制**： 不涉及。 **取值范围**： 长度为[1,16]个字符。           **默认取值**： 不涉及。 
 
         :return: The effective_timezone of this ListNotificationMaskRespNotificationMasks.
         :rtype: str
@@ -565,7 +565,7 @@ class ListNotificationMaskRespNotificationMasks:
     def effective_timezone(self, effective_timezone):
         r"""Sets the effective_timezone of this ListNotificationMaskRespNotificationMasks.
 
-        时区，形如：\"GMT-08:00\"、\"GMT+08:00\"、\"GMT+0:00\"
+        **参数解释**： 时区，形如：\"GMT-08:00\"、\"GMT+08:00\"、\"GMT+0:00\"。    **约束限制**： 不涉及。 **取值范围**： 长度为[1,16]个字符。           **默认取值**： 不涉及。 
 
         :param effective_timezone: The effective_timezone of this ListNotificationMaskRespNotificationMasks.
         :type effective_timezone: str

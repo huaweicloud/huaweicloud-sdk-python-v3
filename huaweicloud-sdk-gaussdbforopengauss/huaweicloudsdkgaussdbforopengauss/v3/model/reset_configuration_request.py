@@ -33,7 +33,7 @@ class ResetConfigurationRequest:
 
         :param config_id: 需重置的参数模板ID。
         :type config_id: str
-        :param x_language: 语言。
+        :param x_language: **参数解释**: 语言。 **约束限制**: 不涉及。 **取值范围**:   - zh-cn   - en-us  **默认取值**: en-us
         :type x_language: str
         """
         
@@ -73,7 +73,7 @@ class ResetConfigurationRequest:
     def x_language(self):
         r"""Gets the x_language of this ResetConfigurationRequest.
 
-        语言。
+        **参数解释**: 语言。 **约束限制**: 不涉及。 **取值范围**:   - zh-cn   - en-us  **默认取值**: en-us
 
         :return: The x_language of this ResetConfigurationRequest.
         :rtype: str
@@ -84,7 +84,7 @@ class ResetConfigurationRequest:
     def x_language(self, x_language):
         r"""Sets the x_language of this ResetConfigurationRequest.
 
-        语言。
+        **参数解释**: 语言。 **约束限制**: 不涉及。 **取值范围**:   - zh-cn   - en-us  **默认取值**: en-us
 
         :param x_language: The x_language of this ResetConfigurationRequest.
         :type x_language: str

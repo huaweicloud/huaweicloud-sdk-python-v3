@@ -55,7 +55,7 @@ class AuditSqlRequest:
 
         :param time: 
         :type time: :class:`huaweicloudsdkdbss.v1.AuditSqlRequestTime`
-        :param risk_levels: 风险级别 - HIGH - MEDIUM - LOW - NO_RISK
+        :param risk_levels: 风险级别 - HIGH：高 - MEDIUM：中 - LOW：低 - NO_RISK：无
         :type risk_levels: str
         :param client_ip: 客户端IP
         :type client_ip: str
@@ -117,12 +117,9 @@ class AuditSqlRequest:
             self.sql_statement = sql_statement
         if sql_response is not None:
             self.sql_response = sql_response
-        if page is not None:
-            self.page = page
-        if size is not None:
-            self.size = size
-        if time_order is not None:
-            self.time_order = time_order
+        self.page = page
+        self.size = size
+        self.time_order = time_order
 
     @property
     def time(self):
@@ -146,7 +143,7 @@ class AuditSqlRequest:
     def risk_levels(self):
         r"""Gets the risk_levels of this AuditSqlRequest.
 
-        风险级别 - HIGH - MEDIUM - LOW - NO_RISK
+        风险级别 - HIGH：高 - MEDIUM：中 - LOW：低 - NO_RISK：无
 
         :return: The risk_levels of this AuditSqlRequest.
         :rtype: str
@@ -157,7 +154,7 @@ class AuditSqlRequest:
     def risk_levels(self, risk_levels):
         r"""Sets the risk_levels of this AuditSqlRequest.
 
-        风险级别 - HIGH - MEDIUM - LOW - NO_RISK
+        风险级别 - HIGH：高 - MEDIUM：中 - LOW：低 - NO_RISK：无
 
         :param risk_levels: The risk_levels of this AuditSqlRequest.
         :type risk_levels: str

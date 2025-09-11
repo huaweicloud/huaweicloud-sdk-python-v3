@@ -60,6 +60,10 @@ class WafRegion:
                         "https://waf.ru-moscow-1.myhuaweicloud.com")
     AP_SOUTHEAST_4 = Region("ap-southeast-4",
                         "https://waf.ap-southeast-4.myhuaweicloud.com")
+    AP_SOUTHEAST_5 = Region("ap-southeast-5",
+                        "https://waf.ap-southeast-5.myhuaweicloud.com")
+    AF_NORTH_1 = Region("af-north-1",
+                        "https://waf.af-north-1.myhuaweicloud.com")
 
     static_fields = {
         "cn-north-1": CN_NORTH_1,
@@ -89,6 +93,8 @@ class WafRegion:
         "eu-west-101": EU_WEST_101,
         "ru-moscow-1": RU_MOSCOW_1,
         "ap-southeast-4": AP_SOUTHEAST_4,
+        "ap-southeast-5": AP_SOUTHEAST_5,
+        "af-north-1": AF_NORTH_1,
     }
 
     @classmethod

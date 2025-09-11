@@ -47,25 +47,25 @@ class BaseWidgetInfoProperties:
 
         The model defined in huaweicloud sdk
 
-        :param filter: 聚合类型，目前只有TopN这一种类型，折线图不支持该参数
+        :param filter: **参数解释** 聚合类型 **约束限制** 折线图不支持该参数 **取值范围** 目前只有TopN这一种类型 **默认取值** 不涉及 
         :type filter: str
-        :param top_n: Top前N个；折线图时为随机展示的时序数据条数
+        :param top_n: **参数解释** Top前N个；折线图时为随机展示的时序数据条数 **约束限制** 不涉及               **取值范围** 最小值为1，最大值为2147483647 **默认取值** 100 
         :type top_n: int
-        :param order: 排序字段，asc正序，desc倒序，折线图不支持该参数
+        :param order: **参数解释** 排序字段 **约束限制** 折线图不支持该参数   **取值范围** - asc:正序 - desc:倒序 **默认取值** 不涉及 
         :type order: str
-        :param description: 监控视图的描述信息
+        :param description: **参数解释** 监控视图的描述信息 **约束限制** 不涉及                 **取值范围** 长度为[0,200]个字符 **默认取值** 不涉及 
         :type description: str
-        :param last_week_compare_enable: 是否展示同比（上周同一时间）数据，true:展示，false:不展示
+        :param last_week_compare_enable: **参数解释** 是否展示同比（上周同一时间）数据 **约束限制** 不涉及                 **取值范围** - true:展示 - false:不展示 **默认取值** 不涉及 
         :type last_week_compare_enable: bool
-        :param yesterday_compare_enable: 是否展示环比（昨天同一时间）数据，true:展示，false:不展示
+        :param yesterday_compare_enable: **参数解释** 是否展示环比（昨天同一时间）数据 **约束限制** 不涉及                 **取值范围** - true:展示 - false:不展示 **默认取值** 不涉及 
         :type yesterday_compare_enable: bool
-        :param legend_location: 图例位置标记，hide表示隐藏图例，right表示图例放在监控视图右侧，bottom表示图例放在监控视图底部，表格不支持该参数
+        :param legend_location: **参数解释** 图例位置标记 **约束限制** 表格不支持该参数                 **取值范围** - hide:表示隐藏图例 - right:表示图例放在监控视图右侧 - bottom:表示图例放在监控视图底部 **默认取值** 不涉及 
         :type legend_location: str
-        :param legend_values: 当前时序数据需要在图例中展示的统计值名称列表，表格不支持该参数；条形图和柱状图仅支持配置当前值
+        :param legend_values: **参数解释** 当前时序数据需要在图例中展示的统计值名称列表 **约束限制** 表格不支持该参数；条形图和柱状图仅支持配置当前值 
         :type legend_values: list[str]
-        :param thresholds: 监控视图的阈值辅助线配置
+        :param thresholds: **参数解释** 监控视图的阈值辅助线配置 **约束限制** 不涉及 
         :type thresholds: list[:class:`huaweicloudsdkces.v2.ThresholdInfo`]
-        :param is_all_compare_enable: 同比环比总开关是否生效;true:生效；false:不生效
+        :param is_all_compare_enable: **参数解释** 同比环比总开关是否生效 **约束限制** 不涉及               **取值范围** - true:生效 - false:不生效 **默认取值** 不涉及 
         :type is_all_compare_enable: bool
         """
         
@@ -108,7 +108,7 @@ class BaseWidgetInfoProperties:
     def filter(self):
         r"""Gets the filter of this BaseWidgetInfoProperties.
 
-        聚合类型，目前只有TopN这一种类型，折线图不支持该参数
+        **参数解释** 聚合类型 **约束限制** 折线图不支持该参数 **取值范围** 目前只有TopN这一种类型 **默认取值** 不涉及 
 
         :return: The filter of this BaseWidgetInfoProperties.
         :rtype: str
@@ -119,7 +119,7 @@ class BaseWidgetInfoProperties:
     def filter(self, filter):
         r"""Sets the filter of this BaseWidgetInfoProperties.
 
-        聚合类型，目前只有TopN这一种类型，折线图不支持该参数
+        **参数解释** 聚合类型 **约束限制** 折线图不支持该参数 **取值范围** 目前只有TopN这一种类型 **默认取值** 不涉及 
 
         :param filter: The filter of this BaseWidgetInfoProperties.
         :type filter: str
@@ -130,7 +130,7 @@ class BaseWidgetInfoProperties:
     def top_n(self):
         r"""Gets the top_n of this BaseWidgetInfoProperties.
 
-        Top前N个；折线图时为随机展示的时序数据条数
+        **参数解释** Top前N个；折线图时为随机展示的时序数据条数 **约束限制** 不涉及               **取值范围** 最小值为1，最大值为2147483647 **默认取值** 100 
 
         :return: The top_n of this BaseWidgetInfoProperties.
         :rtype: int
@@ -141,7 +141,7 @@ class BaseWidgetInfoProperties:
     def top_n(self, top_n):
         r"""Sets the top_n of this BaseWidgetInfoProperties.
 
-        Top前N个；折线图时为随机展示的时序数据条数
+        **参数解释** Top前N个；折线图时为随机展示的时序数据条数 **约束限制** 不涉及               **取值范围** 最小值为1，最大值为2147483647 **默认取值** 100 
 
         :param top_n: The top_n of this BaseWidgetInfoProperties.
         :type top_n: int
@@ -152,7 +152,7 @@ class BaseWidgetInfoProperties:
     def order(self):
         r"""Gets the order of this BaseWidgetInfoProperties.
 
-        排序字段，asc正序，desc倒序，折线图不支持该参数
+        **参数解释** 排序字段 **约束限制** 折线图不支持该参数   **取值范围** - asc:正序 - desc:倒序 **默认取值** 不涉及 
 
         :return: The order of this BaseWidgetInfoProperties.
         :rtype: str
@@ -163,7 +163,7 @@ class BaseWidgetInfoProperties:
     def order(self, order):
         r"""Sets the order of this BaseWidgetInfoProperties.
 
-        排序字段，asc正序，desc倒序，折线图不支持该参数
+        **参数解释** 排序字段 **约束限制** 折线图不支持该参数   **取值范围** - asc:正序 - desc:倒序 **默认取值** 不涉及 
 
         :param order: The order of this BaseWidgetInfoProperties.
         :type order: str
@@ -174,7 +174,7 @@ class BaseWidgetInfoProperties:
     def description(self):
         r"""Gets the description of this BaseWidgetInfoProperties.
 
-        监控视图的描述信息
+        **参数解释** 监控视图的描述信息 **约束限制** 不涉及                 **取值范围** 长度为[0,200]个字符 **默认取值** 不涉及 
 
         :return: The description of this BaseWidgetInfoProperties.
         :rtype: str
@@ -185,7 +185,7 @@ class BaseWidgetInfoProperties:
     def description(self, description):
         r"""Sets the description of this BaseWidgetInfoProperties.
 
-        监控视图的描述信息
+        **参数解释** 监控视图的描述信息 **约束限制** 不涉及                 **取值范围** 长度为[0,200]个字符 **默认取值** 不涉及 
 
         :param description: The description of this BaseWidgetInfoProperties.
         :type description: str
@@ -196,7 +196,7 @@ class BaseWidgetInfoProperties:
     def last_week_compare_enable(self):
         r"""Gets the last_week_compare_enable of this BaseWidgetInfoProperties.
 
-        是否展示同比（上周同一时间）数据，true:展示，false:不展示
+        **参数解释** 是否展示同比（上周同一时间）数据 **约束限制** 不涉及                 **取值范围** - true:展示 - false:不展示 **默认取值** 不涉及 
 
         :return: The last_week_compare_enable of this BaseWidgetInfoProperties.
         :rtype: bool
@@ -207,7 +207,7 @@ class BaseWidgetInfoProperties:
     def last_week_compare_enable(self, last_week_compare_enable):
         r"""Sets the last_week_compare_enable of this BaseWidgetInfoProperties.
 
-        是否展示同比（上周同一时间）数据，true:展示，false:不展示
+        **参数解释** 是否展示同比（上周同一时间）数据 **约束限制** 不涉及                 **取值范围** - true:展示 - false:不展示 **默认取值** 不涉及 
 
         :param last_week_compare_enable: The last_week_compare_enable of this BaseWidgetInfoProperties.
         :type last_week_compare_enable: bool
@@ -218,7 +218,7 @@ class BaseWidgetInfoProperties:
     def yesterday_compare_enable(self):
         r"""Gets the yesterday_compare_enable of this BaseWidgetInfoProperties.
 
-        是否展示环比（昨天同一时间）数据，true:展示，false:不展示
+        **参数解释** 是否展示环比（昨天同一时间）数据 **约束限制** 不涉及                 **取值范围** - true:展示 - false:不展示 **默认取值** 不涉及 
 
         :return: The yesterday_compare_enable of this BaseWidgetInfoProperties.
         :rtype: bool
@@ -229,7 +229,7 @@ class BaseWidgetInfoProperties:
     def yesterday_compare_enable(self, yesterday_compare_enable):
         r"""Sets the yesterday_compare_enable of this BaseWidgetInfoProperties.
 
-        是否展示环比（昨天同一时间）数据，true:展示，false:不展示
+        **参数解释** 是否展示环比（昨天同一时间）数据 **约束限制** 不涉及                 **取值范围** - true:展示 - false:不展示 **默认取值** 不涉及 
 
         :param yesterday_compare_enable: The yesterday_compare_enable of this BaseWidgetInfoProperties.
         :type yesterday_compare_enable: bool
@@ -240,7 +240,7 @@ class BaseWidgetInfoProperties:
     def legend_location(self):
         r"""Gets the legend_location of this BaseWidgetInfoProperties.
 
-        图例位置标记，hide表示隐藏图例，right表示图例放在监控视图右侧，bottom表示图例放在监控视图底部，表格不支持该参数
+        **参数解释** 图例位置标记 **约束限制** 表格不支持该参数                 **取值范围** - hide:表示隐藏图例 - right:表示图例放在监控视图右侧 - bottom:表示图例放在监控视图底部 **默认取值** 不涉及 
 
         :return: The legend_location of this BaseWidgetInfoProperties.
         :rtype: str
@@ -251,7 +251,7 @@ class BaseWidgetInfoProperties:
     def legend_location(self, legend_location):
         r"""Sets the legend_location of this BaseWidgetInfoProperties.
 
-        图例位置标记，hide表示隐藏图例，right表示图例放在监控视图右侧，bottom表示图例放在监控视图底部，表格不支持该参数
+        **参数解释** 图例位置标记 **约束限制** 表格不支持该参数                 **取值范围** - hide:表示隐藏图例 - right:表示图例放在监控视图右侧 - bottom:表示图例放在监控视图底部 **默认取值** 不涉及 
 
         :param legend_location: The legend_location of this BaseWidgetInfoProperties.
         :type legend_location: str
@@ -262,7 +262,7 @@ class BaseWidgetInfoProperties:
     def legend_values(self):
         r"""Gets the legend_values of this BaseWidgetInfoProperties.
 
-        当前时序数据需要在图例中展示的统计值名称列表，表格不支持该参数；条形图和柱状图仅支持配置当前值
+        **参数解释** 当前时序数据需要在图例中展示的统计值名称列表 **约束限制** 表格不支持该参数；条形图和柱状图仅支持配置当前值 
 
         :return: The legend_values of this BaseWidgetInfoProperties.
         :rtype: list[str]
@@ -273,7 +273,7 @@ class BaseWidgetInfoProperties:
     def legend_values(self, legend_values):
         r"""Sets the legend_values of this BaseWidgetInfoProperties.
 
-        当前时序数据需要在图例中展示的统计值名称列表，表格不支持该参数；条形图和柱状图仅支持配置当前值
+        **参数解释** 当前时序数据需要在图例中展示的统计值名称列表 **约束限制** 表格不支持该参数；条形图和柱状图仅支持配置当前值 
 
         :param legend_values: The legend_values of this BaseWidgetInfoProperties.
         :type legend_values: list[str]
@@ -284,7 +284,7 @@ class BaseWidgetInfoProperties:
     def thresholds(self):
         r"""Gets the thresholds of this BaseWidgetInfoProperties.
 
-        监控视图的阈值辅助线配置
+        **参数解释** 监控视图的阈值辅助线配置 **约束限制** 不涉及 
 
         :return: The thresholds of this BaseWidgetInfoProperties.
         :rtype: list[:class:`huaweicloudsdkces.v2.ThresholdInfo`]
@@ -295,7 +295,7 @@ class BaseWidgetInfoProperties:
     def thresholds(self, thresholds):
         r"""Sets the thresholds of this BaseWidgetInfoProperties.
 
-        监控视图的阈值辅助线配置
+        **参数解释** 监控视图的阈值辅助线配置 **约束限制** 不涉及 
 
         :param thresholds: The thresholds of this BaseWidgetInfoProperties.
         :type thresholds: list[:class:`huaweicloudsdkces.v2.ThresholdInfo`]
@@ -306,7 +306,7 @@ class BaseWidgetInfoProperties:
     def is_all_compare_enable(self):
         r"""Gets the is_all_compare_enable of this BaseWidgetInfoProperties.
 
-        同比环比总开关是否生效;true:生效；false:不生效
+        **参数解释** 同比环比总开关是否生效 **约束限制** 不涉及               **取值范围** - true:生效 - false:不生效 **默认取值** 不涉及 
 
         :return: The is_all_compare_enable of this BaseWidgetInfoProperties.
         :rtype: bool
@@ -317,7 +317,7 @@ class BaseWidgetInfoProperties:
     def is_all_compare_enable(self, is_all_compare_enable):
         r"""Sets the is_all_compare_enable of this BaseWidgetInfoProperties.
 
-        同比环比总开关是否生效;true:生效；false:不生效
+        **参数解释** 同比环比总开关是否生效 **约束限制** 不涉及               **取值范围** - true:生效 - false:不生效 **默认取值** 不涉及 
 
         :param is_all_compare_enable: The is_all_compare_enable of this BaseWidgetInfoProperties.
         :type is_all_compare_enable: bool

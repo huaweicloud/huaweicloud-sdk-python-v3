@@ -37,7 +37,7 @@ class Target:
 
         The model defined in huaweicloud sdk
 
-        :param type: 触发器类型，可选http
+        :param type: 触发类型，可选http
         :type type: str
         :param address: 触发地址，不可修改
         :type address: str
@@ -70,7 +70,7 @@ class Target:
     def type(self):
         r"""Gets the type of this Target.
 
-        触发器类型，可选http
+        触发类型，可选http
 
         :return: The type of this Target.
         :rtype: str
@@ -81,7 +81,7 @@ class Target:
     def type(self, type):
         r"""Sets the type of this Target.
 
-        触发器类型，可选http
+        触发类型，可选http
 
         :param type: The type of this Target.
         :type type: str

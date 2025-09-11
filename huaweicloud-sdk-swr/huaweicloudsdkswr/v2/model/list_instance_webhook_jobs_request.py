@@ -43,7 +43,7 @@ class ListInstanceWebhookJobsRequest:
         :type instance_id: str
         :param namespace_name: 命名空间名称
         :type namespace_name: str
-        :param policy_id: 触发器策略ID
+        :param policy_id: 触发器ID
         :type policy_id: int
         :param offset: 起始索引，默认值为0。**注意：offset和limit参数需要配套使用，offset必须为0或者为limit的倍数。**
         :type offset: int
@@ -121,7 +121,7 @@ class ListInstanceWebhookJobsRequest:
     def policy_id(self):
         r"""Gets the policy_id of this ListInstanceWebhookJobsRequest.
 
-        触发器策略ID
+        触发器ID
 
         :return: The policy_id of this ListInstanceWebhookJobsRequest.
         :rtype: int
@@ -132,7 +132,7 @@ class ListInstanceWebhookJobsRequest:
     def policy_id(self, policy_id):
         r"""Sets the policy_id of this ListInstanceWebhookJobsRequest.
 
-        触发器策略ID
+        触发器ID
 
         :param policy_id: The policy_id of this ListInstanceWebhookJobsRequest.
         :type policy_id: int

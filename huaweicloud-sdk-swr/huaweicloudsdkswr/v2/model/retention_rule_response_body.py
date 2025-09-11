@@ -45,7 +45,7 @@ class RetentionRuleResponseBody:
 
         The model defined in huaweicloud sdk
 
-        :param id: 
+        :param id: 镜像老化策略ID
         :type id: int
         :param priority: 预留字段，目前只支持0
         :type priority: int
@@ -101,6 +101,8 @@ class RetentionRuleResponseBody:
     def id(self):
         r"""Gets the id of this RetentionRuleResponseBody.
 
+        镜像老化策略ID
+
         :return: The id of this RetentionRuleResponseBody.
         :rtype: int
         """
@@ -109,6 +111,8 @@ class RetentionRuleResponseBody:
     @id.setter
     def id(self, id):
         r"""Sets the id of this RetentionRuleResponseBody.
+
+        镜像老化策略ID
 
         :param id: The id of this RetentionRuleResponseBody.
         :type id: int

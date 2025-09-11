@@ -33,9 +33,9 @@ class DeleteDatabaseRequest:
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: 实例ID。
+        :param instance_id: **参数解释**: 实例ID，此参数是用户创建实例的唯一标识。 **约束限制**: 不涉及。 **取值范围**: 只能由英文字母、数字组成，且长度为36个字符。 **默认取值**: 不涉及。
         :type instance_id: str
-        :param x_language: 语言。默认值：en-us。
+        :param x_language: **参数解释**: 语言。 **约束限制**: 不涉及。 **取值范围**:   - zh-cn   - en-us  **默认取值**: en-us
         :type x_language: str
         :param database_name: 数据库库名称。
         :type database_name: str
@@ -57,7 +57,7 @@ class DeleteDatabaseRequest:
     def instance_id(self):
         r"""Gets the instance_id of this DeleteDatabaseRequest.
 
-        实例ID。
+        **参数解释**: 实例ID，此参数是用户创建实例的唯一标识。 **约束限制**: 不涉及。 **取值范围**: 只能由英文字母、数字组成，且长度为36个字符。 **默认取值**: 不涉及。
 
         :return: The instance_id of this DeleteDatabaseRequest.
         :rtype: str
@@ -68,7 +68,7 @@ class DeleteDatabaseRequest:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this DeleteDatabaseRequest.
 
-        实例ID。
+        **参数解释**: 实例ID，此参数是用户创建实例的唯一标识。 **约束限制**: 不涉及。 **取值范围**: 只能由英文字母、数字组成，且长度为36个字符。 **默认取值**: 不涉及。
 
         :param instance_id: The instance_id of this DeleteDatabaseRequest.
         :type instance_id: str
@@ -79,7 +79,7 @@ class DeleteDatabaseRequest:
     def x_language(self):
         r"""Gets the x_language of this DeleteDatabaseRequest.
 
-        语言。默认值：en-us。
+        **参数解释**: 语言。 **约束限制**: 不涉及。 **取值范围**:   - zh-cn   - en-us  **默认取值**: en-us
 
         :return: The x_language of this DeleteDatabaseRequest.
         :rtype: str
@@ -90,7 +90,7 @@ class DeleteDatabaseRequest:
     def x_language(self, x_language):
         r"""Sets the x_language of this DeleteDatabaseRequest.
 
-        语言。默认值：en-us。
+        **参数解释**: 语言。 **约束限制**: 不涉及。 **取值范围**:   - zh-cn   - en-us  **默认取值**: en-us
 
         :param x_language: The x_language of this DeleteDatabaseRequest.
         :type x_language: str

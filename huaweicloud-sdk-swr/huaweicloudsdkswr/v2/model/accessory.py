@@ -23,7 +23,7 @@ class Accessory:
         'size': 'int',
         'digest': 'str',
         'type': 'str',
-        'created_at': 'datetime'
+        'created_at': 'str'
     }
 
     attribute_map = {
@@ -45,7 +45,7 @@ class Accessory:
         :type id: int
         :param artifact_id: 附件制品ID
         :type artifact_id: int
-        :param subject_artifact_id: 附件所属制品ID.
+        :param subject_artifact_id: 附件所属的父制品ID.
         :type subject_artifact_id: int
         :param size: 附件的大小
         :type size: int
@@ -54,7 +54,7 @@ class Accessory:
         :param type: 附件的类型
         :type type: str
         :param created_at: 附件的创建时间
-        :type created_at: datetime
+        :type created_at: str
         """
         
         
@@ -131,7 +131,7 @@ class Accessory:
     def subject_artifact_id(self):
         r"""Gets the subject_artifact_id of this Accessory.
 
-        附件所属制品ID.
+        附件所属的父制品ID.
 
         :return: The subject_artifact_id of this Accessory.
         :rtype: int
@@ -142,7 +142,7 @@ class Accessory:
     def subject_artifact_id(self, subject_artifact_id):
         r"""Sets the subject_artifact_id of this Accessory.
 
-        附件所属制品ID.
+        附件所属的父制品ID.
 
         :param subject_artifact_id: The subject_artifact_id of this Accessory.
         :type subject_artifact_id: int
@@ -222,7 +222,7 @@ class Accessory:
         附件的创建时间
 
         :return: The created_at of this Accessory.
-        :rtype: datetime
+        :rtype: str
         """
         return self._created_at
 
@@ -233,7 +233,7 @@ class Accessory:
         附件的创建时间
 
         :param created_at: The created_at of this Accessory.
-        :type created_at: datetime
+        :type created_at: str
         """
         self._created_at = created_at
 

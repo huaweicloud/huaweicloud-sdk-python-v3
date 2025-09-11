@@ -55,7 +55,7 @@ class BatchUpdateNotificationMasksRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param mask_name: 屏蔽规则名称，只能为字母、数字、汉字、-、_，最大长度为64
+        :param mask_name: **参数解释**： 屏蔽规则名称。    **约束限制**： 不涉及。 **取值范围**： 只能为字母、数字、汉字、-、_，长度为[1,64]个字符。      **默认取值**： 不涉及。 
         :type mask_name: str
         :param relation_type: 
         :type relation_type: :class:`huaweicloudsdkces.v2.RelationType`
@@ -73,15 +73,15 @@ class BatchUpdateNotificationMasksRequestBody:
         :type product_name: str
         :param mask_type: 
         :type mask_type: :class:`huaweicloudsdkces.v2.MaskType`
-        :param start_date: 屏蔽起始日期，yyyy-MM-dd。
+        :param start_date: **参数解释**： 屏蔽起始日期。           **约束限制**： 不涉及。 **取值范围**： 字符长度为10，格式为：yyyy-MM-dd           **默认取值**： 不涉及。 
         :type start_date: date
-        :param start_time: 屏蔽起始时间，HH:mm:ss。
+        :param start_time: **参数解释**： 屏蔽起始时间。          **约束限制**： 不涉及。 **取值范围**： 字符长度为8，格式为：HH:mm:ss         **默认取值**： 不涉及。 
         :type start_time: str
-        :param end_date: 屏蔽截止日期，yyyy-MM-dd。
+        :param end_date: **参数解释**： 屏蔽截止日期。           **约束限制**： 不涉及。 **取值范围**： 字符长度为10，格式为：yyyy-MM-dd           **默认取值**： 不涉及。 
         :type end_date: date
-        :param end_time: 屏蔽截止时间，HH:mm:ss。
+        :param end_time: **参数解释**： 屏蔽截止时间。          **约束限制**： 不涉及。 **取值范围**： 字符长度为8，格式为：HH:mm:ss         **默认取值**： 不涉及。 
         :type end_time: str
-        :param effective_timezone: 时区，形如：\&quot;GMT-08:00\&quot;、\&quot;GMT+08:00\&quot;、\&quot;GMT+0:00\&quot;
+        :param effective_timezone: **参数解释**： 时区，形如：\&quot;GMT-08:00\&quot;、\&quot;GMT+08:00\&quot;、\&quot;GMT+0:00\&quot;。    **约束限制**： 不涉及。 **取值范围**： 长度为[1,16]个字符。           **默认取值**： 不涉及。 
         :type effective_timezone: str
         """
         
@@ -133,7 +133,7 @@ class BatchUpdateNotificationMasksRequestBody:
     def mask_name(self):
         r"""Gets the mask_name of this BatchUpdateNotificationMasksRequestBody.
 
-        屏蔽规则名称，只能为字母、数字、汉字、-、_，最大长度为64
+        **参数解释**： 屏蔽规则名称。    **约束限制**： 不涉及。 **取值范围**： 只能为字母、数字、汉字、-、_，长度为[1,64]个字符。      **默认取值**： 不涉及。 
 
         :return: The mask_name of this BatchUpdateNotificationMasksRequestBody.
         :rtype: str
@@ -144,7 +144,7 @@ class BatchUpdateNotificationMasksRequestBody:
     def mask_name(self, mask_name):
         r"""Sets the mask_name of this BatchUpdateNotificationMasksRequestBody.
 
-        屏蔽规则名称，只能为字母、数字、汉字、-、_，最大长度为64
+        **参数解释**： 屏蔽规则名称。    **约束限制**： 不涉及。 **取值范围**： 只能为字母、数字、汉字、-、_，长度为[1,64]个字符。      **默认取值**： 不涉及。 
 
         :param mask_name: The mask_name of this BatchUpdateNotificationMasksRequestBody.
         :type mask_name: str
@@ -323,7 +323,7 @@ class BatchUpdateNotificationMasksRequestBody:
     def start_date(self):
         r"""Gets the start_date of this BatchUpdateNotificationMasksRequestBody.
 
-        屏蔽起始日期，yyyy-MM-dd。
+        **参数解释**： 屏蔽起始日期。           **约束限制**： 不涉及。 **取值范围**： 字符长度为10，格式为：yyyy-MM-dd           **默认取值**： 不涉及。 
 
         :return: The start_date of this BatchUpdateNotificationMasksRequestBody.
         :rtype: date
@@ -334,7 +334,7 @@ class BatchUpdateNotificationMasksRequestBody:
     def start_date(self, start_date):
         r"""Sets the start_date of this BatchUpdateNotificationMasksRequestBody.
 
-        屏蔽起始日期，yyyy-MM-dd。
+        **参数解释**： 屏蔽起始日期。           **约束限制**： 不涉及。 **取值范围**： 字符长度为10，格式为：yyyy-MM-dd           **默认取值**： 不涉及。 
 
         :param start_date: The start_date of this BatchUpdateNotificationMasksRequestBody.
         :type start_date: date
@@ -345,7 +345,7 @@ class BatchUpdateNotificationMasksRequestBody:
     def start_time(self):
         r"""Gets the start_time of this BatchUpdateNotificationMasksRequestBody.
 
-        屏蔽起始时间，HH:mm:ss。
+        **参数解释**： 屏蔽起始时间。          **约束限制**： 不涉及。 **取值范围**： 字符长度为8，格式为：HH:mm:ss         **默认取值**： 不涉及。 
 
         :return: The start_time of this BatchUpdateNotificationMasksRequestBody.
         :rtype: str
@@ -356,7 +356,7 @@ class BatchUpdateNotificationMasksRequestBody:
     def start_time(self, start_time):
         r"""Sets the start_time of this BatchUpdateNotificationMasksRequestBody.
 
-        屏蔽起始时间，HH:mm:ss。
+        **参数解释**： 屏蔽起始时间。          **约束限制**： 不涉及。 **取值范围**： 字符长度为8，格式为：HH:mm:ss         **默认取值**： 不涉及。 
 
         :param start_time: The start_time of this BatchUpdateNotificationMasksRequestBody.
         :type start_time: str
@@ -367,7 +367,7 @@ class BatchUpdateNotificationMasksRequestBody:
     def end_date(self):
         r"""Gets the end_date of this BatchUpdateNotificationMasksRequestBody.
 
-        屏蔽截止日期，yyyy-MM-dd。
+        **参数解释**： 屏蔽截止日期。           **约束限制**： 不涉及。 **取值范围**： 字符长度为10，格式为：yyyy-MM-dd           **默认取值**： 不涉及。 
 
         :return: The end_date of this BatchUpdateNotificationMasksRequestBody.
         :rtype: date
@@ -378,7 +378,7 @@ class BatchUpdateNotificationMasksRequestBody:
     def end_date(self, end_date):
         r"""Sets the end_date of this BatchUpdateNotificationMasksRequestBody.
 
-        屏蔽截止日期，yyyy-MM-dd。
+        **参数解释**： 屏蔽截止日期。           **约束限制**： 不涉及。 **取值范围**： 字符长度为10，格式为：yyyy-MM-dd           **默认取值**： 不涉及。 
 
         :param end_date: The end_date of this BatchUpdateNotificationMasksRequestBody.
         :type end_date: date
@@ -389,7 +389,7 @@ class BatchUpdateNotificationMasksRequestBody:
     def end_time(self):
         r"""Gets the end_time of this BatchUpdateNotificationMasksRequestBody.
 
-        屏蔽截止时间，HH:mm:ss。
+        **参数解释**： 屏蔽截止时间。          **约束限制**： 不涉及。 **取值范围**： 字符长度为8，格式为：HH:mm:ss         **默认取值**： 不涉及。 
 
         :return: The end_time of this BatchUpdateNotificationMasksRequestBody.
         :rtype: str
@@ -400,7 +400,7 @@ class BatchUpdateNotificationMasksRequestBody:
     def end_time(self, end_time):
         r"""Sets the end_time of this BatchUpdateNotificationMasksRequestBody.
 
-        屏蔽截止时间，HH:mm:ss。
+        **参数解释**： 屏蔽截止时间。          **约束限制**： 不涉及。 **取值范围**： 字符长度为8，格式为：HH:mm:ss         **默认取值**： 不涉及。 
 
         :param end_time: The end_time of this BatchUpdateNotificationMasksRequestBody.
         :type end_time: str
@@ -411,7 +411,7 @@ class BatchUpdateNotificationMasksRequestBody:
     def effective_timezone(self):
         r"""Gets the effective_timezone of this BatchUpdateNotificationMasksRequestBody.
 
-        时区，形如：\"GMT-08:00\"、\"GMT+08:00\"、\"GMT+0:00\"
+        **参数解释**： 时区，形如：\"GMT-08:00\"、\"GMT+08:00\"、\"GMT+0:00\"。    **约束限制**： 不涉及。 **取值范围**： 长度为[1,16]个字符。           **默认取值**： 不涉及。 
 
         :return: The effective_timezone of this BatchUpdateNotificationMasksRequestBody.
         :rtype: str
@@ -422,7 +422,7 @@ class BatchUpdateNotificationMasksRequestBody:
     def effective_timezone(self, effective_timezone):
         r"""Sets the effective_timezone of this BatchUpdateNotificationMasksRequestBody.
 
-        时区，形如：\"GMT-08:00\"、\"GMT+08:00\"、\"GMT+0:00\"
+        **参数解释**： 时区，形如：\"GMT-08:00\"、\"GMT+08:00\"、\"GMT+0:00\"。    **约束限制**： 不涉及。 **取值范围**： 长度为[1,16]个字符。           **默认取值**： 不涉及。 
 
         :param effective_timezone: The effective_timezone of this BatchUpdateNotificationMasksRequestBody.
         :type effective_timezone: str

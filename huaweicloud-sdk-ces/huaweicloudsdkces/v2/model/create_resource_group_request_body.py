@@ -53,29 +53,29 @@ class CreateResourceGroupRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param group_name: 资源分组的名称，只能为字母、数字、汉字、-、_，最大长度为128
+        :param group_name: **参数解释** 资源分组的名称 **约束限制** 不涉及 **取值范围** 只能为字母、数字、汉字、-或_，长度为[1,128]个字符 **默认取值** 不涉及 
         :type group_name: str
-        :param enterprise_project_id: 资源分组归属企业项目ID
+        :param enterprise_project_id: **参数解释** 资源分组归属企业项目ID **约束限制** 不涉及 **取值范围** 由数字、字母和-组成，或者为0（默认企业项目ID）。 **默认取值** 不涉及 
         :type enterprise_project_id: str
-        :param type: 资源分组添加资源方式，取值只能为EPS（同步企业项目）,TAG（标签动态匹配）,NAME（实例名称）,不传为手动添加
+        :param type: **参数解释** 资源分组添加资源方式 **约束限制** 不涉及 **取值范围** 取值只能为EPS（同步企业项目），TAG（标签动态匹配），NAME（实例名称），COMB（组合匹配），不传为手动添加。 **默认取值** 不涉及 
         :type type: str
-        :param tags: 标签动态匹配时的关联标签,type为TAG时必传
+        :param tags: **参数解释** 标签动态匹配时的关联标签。 **约束限制** type为TAG时必传，不超过50个标签。 
         :type tags: list[:class:`huaweicloudsdkces.v2.ResourceGroupTagRelation`]
-        :param association_ep_ids: 该资源分组内包含的资源来源的企业项目ID，type为EPS时必传
+        :param association_ep_ids: **参数解释** 该资源分组内包含的资源来源的企业项目ID。 **约束限制** type为EPS时必传，不超过50个企业项目ID。 
         :type association_ep_ids: list[str]
-        :param providers: 云服务名称,格式为\&quot;dcs,ecs\&quot;,支持的云服务providers请参考《配置审计API参考》中的\&quot;支持的服务和资源类型\&quot;章节
+        :param providers: **参数解释** 云服务名称,格式为\&quot;dcs,ecs\&quot;,支持的云服务providers请参考《配置审计API参考》中的\&quot;支持的服务和资源类型\&quot;章节 **约束限制** 不涉及 **取值范围** 长度为[0,512]个字符 **默认取值** 不涉及 
         :type providers: str
-        :param enterprise_project_id_and_tags: 匹配企业项目或匹配标签参数
+        :param enterprise_project_id_and_tags: **参数解释** 匹配企业项目或匹配标签参数。 **约束限制** 不超过50个条件。 
         :type enterprise_project_id_and_tags: list[:class:`huaweicloudsdkces.v2.EnterpriseProjectIdAndTags`]
-        :param resources: 手动创建时的资源详情
+        :param resources: **参数解释** 手动创建时的资源详情。 **约束限制** 不超过1000个资源。 
         :type resources: list[:class:`huaweicloudsdkces.v2.Resource`]
-        :param product_resources: 手动创建，选择资源层级为云产品时的资源详情
+        :param product_resources: **参数解释** 手动创建，选择资源层级为云产品时的资源详情。 **约束限制** 不超过50个资源。 
         :type product_resources: list[:class:`huaweicloudsdkces.v2.ProductResource`]
-        :param instances: 实例名称匹配参数
+        :param instances: **参数解释** 实例名称匹配参数。 **约束限制** type为NAME时必传，不超过50个实例。 
         :type instances: list[:class:`huaweicloudsdkces.v2.Instance`]
-        :param product_names: 创建资源层级为云产品时的云产品的取值，一般由\&quot;服务命名空间,服务首层维度名称\&quot;组成，如\&quot;SYS.ECS,instance_id\&quot;。多个云产品则用“;”隔开，如\&quot;SERVICE.BMS,instance_id;SYS.ECS,instance_id\&quot;。
+        :param product_names: **参数解释** 创建资源层级为云产品时的云产品的取值，一般由\&quot;服务命名空间,服务首层维度名称\&quot;组成，如\&quot;SYS.ECS,instance_id\&quot;。多个云产品则用“;”隔开，如\&quot;SERVICE.BMS,instance_id;SYS.ECS,instance_id\&quot;。 **约束限制** 不涉及。 **取值范围** 长度[0,10240]个字符 **默认取值** 不涉及。
         :type product_names: str
-        :param resource_level: 资源层级，资源生效范围。选择云产品，则云产品及其子层级均可进入该资源分组，选择子维度，则只生效具体的子维度 product 云产品 dimension 子维度 
+        :param resource_level: **参数解释** 资源层级，资源生效范围。选择云产品，则云产品及其子层级均可进入该资源分组，选择子维度，则只生效具体的子维度。 **约束限制** 不涉及。 **取值范围** - product: 云产品 - dimension: 子维度 **默认取值** 不涉及。 
         :type resource_level: str
         :param comb_relation: 
         :type comb_relation: :class:`huaweicloudsdkces.v2.CombRelation`
@@ -128,7 +128,7 @@ class CreateResourceGroupRequestBody:
     def group_name(self):
         r"""Gets the group_name of this CreateResourceGroupRequestBody.
 
-        资源分组的名称，只能为字母、数字、汉字、-、_，最大长度为128
+        **参数解释** 资源分组的名称 **约束限制** 不涉及 **取值范围** 只能为字母、数字、汉字、-或_，长度为[1,128]个字符 **默认取值** 不涉及 
 
         :return: The group_name of this CreateResourceGroupRequestBody.
         :rtype: str
@@ -139,7 +139,7 @@ class CreateResourceGroupRequestBody:
     def group_name(self, group_name):
         r"""Sets the group_name of this CreateResourceGroupRequestBody.
 
-        资源分组的名称，只能为字母、数字、汉字、-、_，最大长度为128
+        **参数解释** 资源分组的名称 **约束限制** 不涉及 **取值范围** 只能为字母、数字、汉字、-或_，长度为[1,128]个字符 **默认取值** 不涉及 
 
         :param group_name: The group_name of this CreateResourceGroupRequestBody.
         :type group_name: str
@@ -150,7 +150,7 @@ class CreateResourceGroupRequestBody:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this CreateResourceGroupRequestBody.
 
-        资源分组归属企业项目ID
+        **参数解释** 资源分组归属企业项目ID **约束限制** 不涉及 **取值范围** 由数字、字母和-组成，或者为0（默认企业项目ID）。 **默认取值** 不涉及 
 
         :return: The enterprise_project_id of this CreateResourceGroupRequestBody.
         :rtype: str
@@ -161,7 +161,7 @@ class CreateResourceGroupRequestBody:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this CreateResourceGroupRequestBody.
 
-        资源分组归属企业项目ID
+        **参数解释** 资源分组归属企业项目ID **约束限制** 不涉及 **取值范围** 由数字、字母和-组成，或者为0（默认企业项目ID）。 **默认取值** 不涉及 
 
         :param enterprise_project_id: The enterprise_project_id of this CreateResourceGroupRequestBody.
         :type enterprise_project_id: str
@@ -172,7 +172,7 @@ class CreateResourceGroupRequestBody:
     def type(self):
         r"""Gets the type of this CreateResourceGroupRequestBody.
 
-        资源分组添加资源方式，取值只能为EPS（同步企业项目）,TAG（标签动态匹配）,NAME（实例名称）,不传为手动添加
+        **参数解释** 资源分组添加资源方式 **约束限制** 不涉及 **取值范围** 取值只能为EPS（同步企业项目），TAG（标签动态匹配），NAME（实例名称），COMB（组合匹配），不传为手动添加。 **默认取值** 不涉及 
 
         :return: The type of this CreateResourceGroupRequestBody.
         :rtype: str
@@ -183,7 +183,7 @@ class CreateResourceGroupRequestBody:
     def type(self, type):
         r"""Sets the type of this CreateResourceGroupRequestBody.
 
-        资源分组添加资源方式，取值只能为EPS（同步企业项目）,TAG（标签动态匹配）,NAME（实例名称）,不传为手动添加
+        **参数解释** 资源分组添加资源方式 **约束限制** 不涉及 **取值范围** 取值只能为EPS（同步企业项目），TAG（标签动态匹配），NAME（实例名称），COMB（组合匹配），不传为手动添加。 **默认取值** 不涉及 
 
         :param type: The type of this CreateResourceGroupRequestBody.
         :type type: str
@@ -194,7 +194,7 @@ class CreateResourceGroupRequestBody:
     def tags(self):
         r"""Gets the tags of this CreateResourceGroupRequestBody.
 
-        标签动态匹配时的关联标签,type为TAG时必传
+        **参数解释** 标签动态匹配时的关联标签。 **约束限制** type为TAG时必传，不超过50个标签。 
 
         :return: The tags of this CreateResourceGroupRequestBody.
         :rtype: list[:class:`huaweicloudsdkces.v2.ResourceGroupTagRelation`]
@@ -205,7 +205,7 @@ class CreateResourceGroupRequestBody:
     def tags(self, tags):
         r"""Sets the tags of this CreateResourceGroupRequestBody.
 
-        标签动态匹配时的关联标签,type为TAG时必传
+        **参数解释** 标签动态匹配时的关联标签。 **约束限制** type为TAG时必传，不超过50个标签。 
 
         :param tags: The tags of this CreateResourceGroupRequestBody.
         :type tags: list[:class:`huaweicloudsdkces.v2.ResourceGroupTagRelation`]
@@ -216,7 +216,7 @@ class CreateResourceGroupRequestBody:
     def association_ep_ids(self):
         r"""Gets the association_ep_ids of this CreateResourceGroupRequestBody.
 
-        该资源分组内包含的资源来源的企业项目ID，type为EPS时必传
+        **参数解释** 该资源分组内包含的资源来源的企业项目ID。 **约束限制** type为EPS时必传，不超过50个企业项目ID。 
 
         :return: The association_ep_ids of this CreateResourceGroupRequestBody.
         :rtype: list[str]
@@ -227,7 +227,7 @@ class CreateResourceGroupRequestBody:
     def association_ep_ids(self, association_ep_ids):
         r"""Sets the association_ep_ids of this CreateResourceGroupRequestBody.
 
-        该资源分组内包含的资源来源的企业项目ID，type为EPS时必传
+        **参数解释** 该资源分组内包含的资源来源的企业项目ID。 **约束限制** type为EPS时必传，不超过50个企业项目ID。 
 
         :param association_ep_ids: The association_ep_ids of this CreateResourceGroupRequestBody.
         :type association_ep_ids: list[str]
@@ -238,7 +238,7 @@ class CreateResourceGroupRequestBody:
     def providers(self):
         r"""Gets the providers of this CreateResourceGroupRequestBody.
 
-        云服务名称,格式为\"dcs,ecs\",支持的云服务providers请参考《配置审计API参考》中的\"支持的服务和资源类型\"章节
+        **参数解释** 云服务名称,格式为\"dcs,ecs\",支持的云服务providers请参考《配置审计API参考》中的\"支持的服务和资源类型\"章节 **约束限制** 不涉及 **取值范围** 长度为[0,512]个字符 **默认取值** 不涉及 
 
         :return: The providers of this CreateResourceGroupRequestBody.
         :rtype: str
@@ -249,7 +249,7 @@ class CreateResourceGroupRequestBody:
     def providers(self, providers):
         r"""Sets the providers of this CreateResourceGroupRequestBody.
 
-        云服务名称,格式为\"dcs,ecs\",支持的云服务providers请参考《配置审计API参考》中的\"支持的服务和资源类型\"章节
+        **参数解释** 云服务名称,格式为\"dcs,ecs\",支持的云服务providers请参考《配置审计API参考》中的\"支持的服务和资源类型\"章节 **约束限制** 不涉及 **取值范围** 长度为[0,512]个字符 **默认取值** 不涉及 
 
         :param providers: The providers of this CreateResourceGroupRequestBody.
         :type providers: str
@@ -260,7 +260,7 @@ class CreateResourceGroupRequestBody:
     def enterprise_project_id_and_tags(self):
         r"""Gets the enterprise_project_id_and_tags of this CreateResourceGroupRequestBody.
 
-        匹配企业项目或匹配标签参数
+        **参数解释** 匹配企业项目或匹配标签参数。 **约束限制** 不超过50个条件。 
 
         :return: The enterprise_project_id_and_tags of this CreateResourceGroupRequestBody.
         :rtype: list[:class:`huaweicloudsdkces.v2.EnterpriseProjectIdAndTags`]
@@ -271,7 +271,7 @@ class CreateResourceGroupRequestBody:
     def enterprise_project_id_and_tags(self, enterprise_project_id_and_tags):
         r"""Sets the enterprise_project_id_and_tags of this CreateResourceGroupRequestBody.
 
-        匹配企业项目或匹配标签参数
+        **参数解释** 匹配企业项目或匹配标签参数。 **约束限制** 不超过50个条件。 
 
         :param enterprise_project_id_and_tags: The enterprise_project_id_and_tags of this CreateResourceGroupRequestBody.
         :type enterprise_project_id_and_tags: list[:class:`huaweicloudsdkces.v2.EnterpriseProjectIdAndTags`]
@@ -282,7 +282,7 @@ class CreateResourceGroupRequestBody:
     def resources(self):
         r"""Gets the resources of this CreateResourceGroupRequestBody.
 
-        手动创建时的资源详情
+        **参数解释** 手动创建时的资源详情。 **约束限制** 不超过1000个资源。 
 
         :return: The resources of this CreateResourceGroupRequestBody.
         :rtype: list[:class:`huaweicloudsdkces.v2.Resource`]
@@ -293,7 +293,7 @@ class CreateResourceGroupRequestBody:
     def resources(self, resources):
         r"""Sets the resources of this CreateResourceGroupRequestBody.
 
-        手动创建时的资源详情
+        **参数解释** 手动创建时的资源详情。 **约束限制** 不超过1000个资源。 
 
         :param resources: The resources of this CreateResourceGroupRequestBody.
         :type resources: list[:class:`huaweicloudsdkces.v2.Resource`]
@@ -304,7 +304,7 @@ class CreateResourceGroupRequestBody:
     def product_resources(self):
         r"""Gets the product_resources of this CreateResourceGroupRequestBody.
 
-        手动创建，选择资源层级为云产品时的资源详情
+        **参数解释** 手动创建，选择资源层级为云产品时的资源详情。 **约束限制** 不超过50个资源。 
 
         :return: The product_resources of this CreateResourceGroupRequestBody.
         :rtype: list[:class:`huaweicloudsdkces.v2.ProductResource`]
@@ -315,7 +315,7 @@ class CreateResourceGroupRequestBody:
     def product_resources(self, product_resources):
         r"""Sets the product_resources of this CreateResourceGroupRequestBody.
 
-        手动创建，选择资源层级为云产品时的资源详情
+        **参数解释** 手动创建，选择资源层级为云产品时的资源详情。 **约束限制** 不超过50个资源。 
 
         :param product_resources: The product_resources of this CreateResourceGroupRequestBody.
         :type product_resources: list[:class:`huaweicloudsdkces.v2.ProductResource`]
@@ -326,7 +326,7 @@ class CreateResourceGroupRequestBody:
     def instances(self):
         r"""Gets the instances of this CreateResourceGroupRequestBody.
 
-        实例名称匹配参数
+        **参数解释** 实例名称匹配参数。 **约束限制** type为NAME时必传，不超过50个实例。 
 
         :return: The instances of this CreateResourceGroupRequestBody.
         :rtype: list[:class:`huaweicloudsdkces.v2.Instance`]
@@ -337,7 +337,7 @@ class CreateResourceGroupRequestBody:
     def instances(self, instances):
         r"""Sets the instances of this CreateResourceGroupRequestBody.
 
-        实例名称匹配参数
+        **参数解释** 实例名称匹配参数。 **约束限制** type为NAME时必传，不超过50个实例。 
 
         :param instances: The instances of this CreateResourceGroupRequestBody.
         :type instances: list[:class:`huaweicloudsdkces.v2.Instance`]
@@ -348,7 +348,7 @@ class CreateResourceGroupRequestBody:
     def product_names(self):
         r"""Gets the product_names of this CreateResourceGroupRequestBody.
 
-        创建资源层级为云产品时的云产品的取值，一般由\"服务命名空间,服务首层维度名称\"组成，如\"SYS.ECS,instance_id\"。多个云产品则用“;”隔开，如\"SERVICE.BMS,instance_id;SYS.ECS,instance_id\"。
+        **参数解释** 创建资源层级为云产品时的云产品的取值，一般由\"服务命名空间,服务首层维度名称\"组成，如\"SYS.ECS,instance_id\"。多个云产品则用“;”隔开，如\"SERVICE.BMS,instance_id;SYS.ECS,instance_id\"。 **约束限制** 不涉及。 **取值范围** 长度[0,10240]个字符 **默认取值** 不涉及。
 
         :return: The product_names of this CreateResourceGroupRequestBody.
         :rtype: str
@@ -359,7 +359,7 @@ class CreateResourceGroupRequestBody:
     def product_names(self, product_names):
         r"""Sets the product_names of this CreateResourceGroupRequestBody.
 
-        创建资源层级为云产品时的云产品的取值，一般由\"服务命名空间,服务首层维度名称\"组成，如\"SYS.ECS,instance_id\"。多个云产品则用“;”隔开，如\"SERVICE.BMS,instance_id;SYS.ECS,instance_id\"。
+        **参数解释** 创建资源层级为云产品时的云产品的取值，一般由\"服务命名空间,服务首层维度名称\"组成，如\"SYS.ECS,instance_id\"。多个云产品则用“;”隔开，如\"SERVICE.BMS,instance_id;SYS.ECS,instance_id\"。 **约束限制** 不涉及。 **取值范围** 长度[0,10240]个字符 **默认取值** 不涉及。
 
         :param product_names: The product_names of this CreateResourceGroupRequestBody.
         :type product_names: str
@@ -370,7 +370,7 @@ class CreateResourceGroupRequestBody:
     def resource_level(self):
         r"""Gets the resource_level of this CreateResourceGroupRequestBody.
 
-        资源层级，资源生效范围。选择云产品，则云产品及其子层级均可进入该资源分组，选择子维度，则只生效具体的子维度 product 云产品 dimension 子维度 
+        **参数解释** 资源层级，资源生效范围。选择云产品，则云产品及其子层级均可进入该资源分组，选择子维度，则只生效具体的子维度。 **约束限制** 不涉及。 **取值范围** - product: 云产品 - dimension: 子维度 **默认取值** 不涉及。 
 
         :return: The resource_level of this CreateResourceGroupRequestBody.
         :rtype: str
@@ -381,7 +381,7 @@ class CreateResourceGroupRequestBody:
     def resource_level(self, resource_level):
         r"""Sets the resource_level of this CreateResourceGroupRequestBody.
 
-        资源层级，资源生效范围。选择云产品，则云产品及其子层级均可进入该资源分组，选择子维度，则只生效具体的子维度 product 云产品 dimension 子维度 
+        **参数解释** 资源层级，资源生效范围。选择云产品，则云产品及其子层级均可进入该资源分组，选择子维度，则只生效具体的子维度。 **约束限制** 不涉及。 **取值范围** - product: 云产品 - dimension: 子维度 **默认取值** 不涉及。 
 
         :param resource_level: The resource_level of this CreateResourceGroupRequestBody.
         :type resource_level: str

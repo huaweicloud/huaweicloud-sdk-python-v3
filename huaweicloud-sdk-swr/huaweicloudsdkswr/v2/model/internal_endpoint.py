@@ -31,7 +31,7 @@ class InternalEndpoint:
         'description': 'str',
         'status': 'str',
         'status_text': 'str',
-        'created_at': 'datetime'
+        'created_at': 'str'
     }
 
     attribute_map = {
@@ -86,7 +86,7 @@ class InternalEndpoint:
         :param status_text: 访问控制的状态信息
         :type status_text: str
         :param created_at: 访问控制的创建时间
-        :type created_at: datetime
+        :type created_at: str
         """
         
         
@@ -454,7 +454,7 @@ class InternalEndpoint:
         访问控制的创建时间
 
         :return: The created_at of this InternalEndpoint.
-        :rtype: datetime
+        :rtype: str
         """
         return self._created_at
 
@@ -465,7 +465,7 @@ class InternalEndpoint:
         访问控制的创建时间
 
         :param created_at: The created_at of this InternalEndpoint.
-        :type created_at: datetime
+        :type created_at: str
         """
         self._created_at = created_at
 

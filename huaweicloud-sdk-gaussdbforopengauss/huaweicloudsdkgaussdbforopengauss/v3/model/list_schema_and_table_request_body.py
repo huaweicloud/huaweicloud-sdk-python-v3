@@ -31,9 +31,9 @@ class ListSchemaAndTableRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param sql_text: SQL文本
+        :param sql_text: **参数解释**: SQL文本。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
         :type sql_text: str
-        :param instance_id: 实例ID
+        :param instance_id: **参数解释**: 实例ID。 **约束限制**: 不涉及。 **取值范围**: 只能由英文字母、数字组成，且长度为36个字符。 **默认取值**: 不涉及。
         :type instance_id: str
         """
         
@@ -44,13 +44,14 @@ class ListSchemaAndTableRequestBody:
         self.discriminator = None
 
         self.sql_text = sql_text
-        self.instance_id = instance_id
+        if instance_id is not None:
+            self.instance_id = instance_id
 
     @property
     def sql_text(self):
         r"""Gets the sql_text of this ListSchemaAndTableRequestBody.
 
-        SQL文本
+        **参数解释**: SQL文本。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
 
         :return: The sql_text of this ListSchemaAndTableRequestBody.
         :rtype: str
@@ -61,7 +62,7 @@ class ListSchemaAndTableRequestBody:
     def sql_text(self, sql_text):
         r"""Sets the sql_text of this ListSchemaAndTableRequestBody.
 
-        SQL文本
+        **参数解释**: SQL文本。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
 
         :param sql_text: The sql_text of this ListSchemaAndTableRequestBody.
         :type sql_text: str
@@ -72,7 +73,7 @@ class ListSchemaAndTableRequestBody:
     def instance_id(self):
         r"""Gets the instance_id of this ListSchemaAndTableRequestBody.
 
-        实例ID
+        **参数解释**: 实例ID。 **约束限制**: 不涉及。 **取值范围**: 只能由英文字母、数字组成，且长度为36个字符。 **默认取值**: 不涉及。
 
         :return: The instance_id of this ListSchemaAndTableRequestBody.
         :rtype: str
@@ -83,7 +84,7 @@ class ListSchemaAndTableRequestBody:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this ListSchemaAndTableRequestBody.
 
-        实例ID
+        **参数解释**: 实例ID。 **约束限制**: 不涉及。 **取值范围**: 只能由英文字母、数字组成，且长度为36个字符。 **默认取值**: 不涉及。
 
         :param instance_id: The instance_id of this ListSchemaAndTableRequestBody.
         :type instance_id: str

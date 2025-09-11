@@ -55,33 +55,33 @@ class InvocationInfo:
 
         The model defined in huaweicloud sdk
 
-        :param invocation_id: 任务id
+        :param invocation_id: **参数解释**: 任务id **取值范围**: 以字母或数字开头，后续可以包含字母、数字、下划线（_）或连字符（-），长度至少为1，且不允许出现其他字符 
         :type invocation_id: str
-        :param instance_id: 主机id
+        :param instance_id: **参数解释**: 主机id **取值范围**: 1到64个字符的字符串，且只包含字母、数字和连字符 
         :type instance_id: str
-        :param instance_name: 主机名称
+        :param instance_name: **参数解释**: 主机名称 **取值范围**: 字符串长度范围为[1,128] 
         :type instance_name: str
-        :param instance_type: 主机类型，ECS弹性云服务器，BMS裸金属服务器
+        :param instance_type: **参数解释**: 主机类型，仅支持ECS弹性云服务器和BMS裸金属服务器 **取值范围**: - ECS: 弹性云服务器 - BMS：裸金属服务器 
         :type instance_type: str
-        :param intranet_ips: 内网ip列表
+        :param intranet_ips: **参数解释**: 内网ip列表 **取值范围**: 返回数组长度为[0,10]，数组内元素格式为：长度为1到15个字符的字符串，其中每个字符可以是数字（0-9）或任意其他单个字符 
         :type intranet_ips: list[str]
-        :param elastic_ips: 弹性公网ip列表
+        :param elastic_ips: **参数解释**: 弹性公网ip列表 **取值范围**: 返回数组长度为[0,10]，数组内元素格式为：长度为1到15个字符的字符串，其中每个字符可以是数字（0-9）或任意其他单个字符 
         :type elastic_ips: list[str]
-        :param invocation_type: 任务类型(INSTALL 安装，UPDATE升级，ROLLBACK回滚，RETRY重试)
+        :param invocation_type: **参数解释**: 任务类型 **取值范围**: - INSTALL：安装 - UPDATE：升级 - ROLLBACK：回滚 - RETRY：重试 
         :type invocation_type: str
-        :param invocation_status: 任务状态，PENDING 待执行，RUNNING 运行中，TIMEOUT 超时，FAILED 失败，SUCCEEDED 成功，CANCELED 取消，ROLLBACKED已回退
+        :param invocation_status: **参数解释**: 任务状态 **取值范围**: - PENDING：待执行 - RUNNING：运行中 - TIMEOUT：超时 - FAILED：失败 - SUCCEEDED：成功 - CANCELED：取消 - ROLLBACKED：已回退 
         :type invocation_status: str
-        :param invocation_target: 任务对象，目前支持telescope
+        :param invocation_target: **参数解释**: 任务对象, 支持telescope监控 **取值范围**: - telescope: 主机监控插件telescope 
         :type invocation_target: str
-        :param create_time: 任务创建时间
+        :param create_time: **参数解释**: 任务创建时间 **取值范围**: 数字范围为[1111111111111,9999999999999] 
         :type create_time: int
-        :param update_time: 任务更新时间
+        :param update_time: **参数解释**: 任务更新时间 **取值范围**: 数字范围为[1111111111111,9999999999999] 
         :type update_time: int
-        :param current_version: 当前版本
+        :param current_version: **参数解释**: 当前版本 **取值范围**: 字符串长度范围为[1,64] 
         :type current_version: str
-        :param target_version: 目标版本
+        :param target_version: **参数解释**: 目标版本 **取值范围**: 字符串长度范围为[1,64] 
         :type target_version: str
-        :param result_msg: 任务执行结果信息
+        :param result_msg: **参数解释**: 任务执行结果信息 **取值范围**: 字符串长度范围为[1,5000] 
         :type result_msg: str
         """
         
@@ -136,7 +136,7 @@ class InvocationInfo:
     def invocation_id(self):
         r"""Gets the invocation_id of this InvocationInfo.
 
-        任务id
+        **参数解释**: 任务id **取值范围**: 以字母或数字开头，后续可以包含字母、数字、下划线（_）或连字符（-），长度至少为1，且不允许出现其他字符 
 
         :return: The invocation_id of this InvocationInfo.
         :rtype: str
@@ -147,7 +147,7 @@ class InvocationInfo:
     def invocation_id(self, invocation_id):
         r"""Sets the invocation_id of this InvocationInfo.
 
-        任务id
+        **参数解释**: 任务id **取值范围**: 以字母或数字开头，后续可以包含字母、数字、下划线（_）或连字符（-），长度至少为1，且不允许出现其他字符 
 
         :param invocation_id: The invocation_id of this InvocationInfo.
         :type invocation_id: str
@@ -158,7 +158,7 @@ class InvocationInfo:
     def instance_id(self):
         r"""Gets the instance_id of this InvocationInfo.
 
-        主机id
+        **参数解释**: 主机id **取值范围**: 1到64个字符的字符串，且只包含字母、数字和连字符 
 
         :return: The instance_id of this InvocationInfo.
         :rtype: str
@@ -169,7 +169,7 @@ class InvocationInfo:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this InvocationInfo.
 
-        主机id
+        **参数解释**: 主机id **取值范围**: 1到64个字符的字符串，且只包含字母、数字和连字符 
 
         :param instance_id: The instance_id of this InvocationInfo.
         :type instance_id: str
@@ -180,7 +180,7 @@ class InvocationInfo:
     def instance_name(self):
         r"""Gets the instance_name of this InvocationInfo.
 
-        主机名称
+        **参数解释**: 主机名称 **取值范围**: 字符串长度范围为[1,128] 
 
         :return: The instance_name of this InvocationInfo.
         :rtype: str
@@ -191,7 +191,7 @@ class InvocationInfo:
     def instance_name(self, instance_name):
         r"""Sets the instance_name of this InvocationInfo.
 
-        主机名称
+        **参数解释**: 主机名称 **取值范围**: 字符串长度范围为[1,128] 
 
         :param instance_name: The instance_name of this InvocationInfo.
         :type instance_name: str
@@ -202,7 +202,7 @@ class InvocationInfo:
     def instance_type(self):
         r"""Gets the instance_type of this InvocationInfo.
 
-        主机类型，ECS弹性云服务器，BMS裸金属服务器
+        **参数解释**: 主机类型，仅支持ECS弹性云服务器和BMS裸金属服务器 **取值范围**: - ECS: 弹性云服务器 - BMS：裸金属服务器 
 
         :return: The instance_type of this InvocationInfo.
         :rtype: str
@@ -213,7 +213,7 @@ class InvocationInfo:
     def instance_type(self, instance_type):
         r"""Sets the instance_type of this InvocationInfo.
 
-        主机类型，ECS弹性云服务器，BMS裸金属服务器
+        **参数解释**: 主机类型，仅支持ECS弹性云服务器和BMS裸金属服务器 **取值范围**: - ECS: 弹性云服务器 - BMS：裸金属服务器 
 
         :param instance_type: The instance_type of this InvocationInfo.
         :type instance_type: str
@@ -224,7 +224,7 @@ class InvocationInfo:
     def intranet_ips(self):
         r"""Gets the intranet_ips of this InvocationInfo.
 
-        内网ip列表
+        **参数解释**: 内网ip列表 **取值范围**: 返回数组长度为[0,10]，数组内元素格式为：长度为1到15个字符的字符串，其中每个字符可以是数字（0-9）或任意其他单个字符 
 
         :return: The intranet_ips of this InvocationInfo.
         :rtype: list[str]
@@ -235,7 +235,7 @@ class InvocationInfo:
     def intranet_ips(self, intranet_ips):
         r"""Sets the intranet_ips of this InvocationInfo.
 
-        内网ip列表
+        **参数解释**: 内网ip列表 **取值范围**: 返回数组长度为[0,10]，数组内元素格式为：长度为1到15个字符的字符串，其中每个字符可以是数字（0-9）或任意其他单个字符 
 
         :param intranet_ips: The intranet_ips of this InvocationInfo.
         :type intranet_ips: list[str]
@@ -246,7 +246,7 @@ class InvocationInfo:
     def elastic_ips(self):
         r"""Gets the elastic_ips of this InvocationInfo.
 
-        弹性公网ip列表
+        **参数解释**: 弹性公网ip列表 **取值范围**: 返回数组长度为[0,10]，数组内元素格式为：长度为1到15个字符的字符串，其中每个字符可以是数字（0-9）或任意其他单个字符 
 
         :return: The elastic_ips of this InvocationInfo.
         :rtype: list[str]
@@ -257,7 +257,7 @@ class InvocationInfo:
     def elastic_ips(self, elastic_ips):
         r"""Sets the elastic_ips of this InvocationInfo.
 
-        弹性公网ip列表
+        **参数解释**: 弹性公网ip列表 **取值范围**: 返回数组长度为[0,10]，数组内元素格式为：长度为1到15个字符的字符串，其中每个字符可以是数字（0-9）或任意其他单个字符 
 
         :param elastic_ips: The elastic_ips of this InvocationInfo.
         :type elastic_ips: list[str]
@@ -268,7 +268,7 @@ class InvocationInfo:
     def invocation_type(self):
         r"""Gets the invocation_type of this InvocationInfo.
 
-        任务类型(INSTALL 安装，UPDATE升级，ROLLBACK回滚，RETRY重试)
+        **参数解释**: 任务类型 **取值范围**: - INSTALL：安装 - UPDATE：升级 - ROLLBACK：回滚 - RETRY：重试 
 
         :return: The invocation_type of this InvocationInfo.
         :rtype: str
@@ -279,7 +279,7 @@ class InvocationInfo:
     def invocation_type(self, invocation_type):
         r"""Sets the invocation_type of this InvocationInfo.
 
-        任务类型(INSTALL 安装，UPDATE升级，ROLLBACK回滚，RETRY重试)
+        **参数解释**: 任务类型 **取值范围**: - INSTALL：安装 - UPDATE：升级 - ROLLBACK：回滚 - RETRY：重试 
 
         :param invocation_type: The invocation_type of this InvocationInfo.
         :type invocation_type: str
@@ -290,7 +290,7 @@ class InvocationInfo:
     def invocation_status(self):
         r"""Gets the invocation_status of this InvocationInfo.
 
-        任务状态，PENDING 待执行，RUNNING 运行中，TIMEOUT 超时，FAILED 失败，SUCCEEDED 成功，CANCELED 取消，ROLLBACKED已回退
+        **参数解释**: 任务状态 **取值范围**: - PENDING：待执行 - RUNNING：运行中 - TIMEOUT：超时 - FAILED：失败 - SUCCEEDED：成功 - CANCELED：取消 - ROLLBACKED：已回退 
 
         :return: The invocation_status of this InvocationInfo.
         :rtype: str
@@ -301,7 +301,7 @@ class InvocationInfo:
     def invocation_status(self, invocation_status):
         r"""Sets the invocation_status of this InvocationInfo.
 
-        任务状态，PENDING 待执行，RUNNING 运行中，TIMEOUT 超时，FAILED 失败，SUCCEEDED 成功，CANCELED 取消，ROLLBACKED已回退
+        **参数解释**: 任务状态 **取值范围**: - PENDING：待执行 - RUNNING：运行中 - TIMEOUT：超时 - FAILED：失败 - SUCCEEDED：成功 - CANCELED：取消 - ROLLBACKED：已回退 
 
         :param invocation_status: The invocation_status of this InvocationInfo.
         :type invocation_status: str
@@ -312,7 +312,7 @@ class InvocationInfo:
     def invocation_target(self):
         r"""Gets the invocation_target of this InvocationInfo.
 
-        任务对象，目前支持telescope
+        **参数解释**: 任务对象, 支持telescope监控 **取值范围**: - telescope: 主机监控插件telescope 
 
         :return: The invocation_target of this InvocationInfo.
         :rtype: str
@@ -323,7 +323,7 @@ class InvocationInfo:
     def invocation_target(self, invocation_target):
         r"""Sets the invocation_target of this InvocationInfo.
 
-        任务对象，目前支持telescope
+        **参数解释**: 任务对象, 支持telescope监控 **取值范围**: - telescope: 主机监控插件telescope 
 
         :param invocation_target: The invocation_target of this InvocationInfo.
         :type invocation_target: str
@@ -334,7 +334,7 @@ class InvocationInfo:
     def create_time(self):
         r"""Gets the create_time of this InvocationInfo.
 
-        任务创建时间
+        **参数解释**: 任务创建时间 **取值范围**: 数字范围为[1111111111111,9999999999999] 
 
         :return: The create_time of this InvocationInfo.
         :rtype: int
@@ -345,7 +345,7 @@ class InvocationInfo:
     def create_time(self, create_time):
         r"""Sets the create_time of this InvocationInfo.
 
-        任务创建时间
+        **参数解释**: 任务创建时间 **取值范围**: 数字范围为[1111111111111,9999999999999] 
 
         :param create_time: The create_time of this InvocationInfo.
         :type create_time: int
@@ -356,7 +356,7 @@ class InvocationInfo:
     def update_time(self):
         r"""Gets the update_time of this InvocationInfo.
 
-        任务更新时间
+        **参数解释**: 任务更新时间 **取值范围**: 数字范围为[1111111111111,9999999999999] 
 
         :return: The update_time of this InvocationInfo.
         :rtype: int
@@ -367,7 +367,7 @@ class InvocationInfo:
     def update_time(self, update_time):
         r"""Sets the update_time of this InvocationInfo.
 
-        任务更新时间
+        **参数解释**: 任务更新时间 **取值范围**: 数字范围为[1111111111111,9999999999999] 
 
         :param update_time: The update_time of this InvocationInfo.
         :type update_time: int
@@ -378,7 +378,7 @@ class InvocationInfo:
     def current_version(self):
         r"""Gets the current_version of this InvocationInfo.
 
-        当前版本
+        **参数解释**: 当前版本 **取值范围**: 字符串长度范围为[1,64] 
 
         :return: The current_version of this InvocationInfo.
         :rtype: str
@@ -389,7 +389,7 @@ class InvocationInfo:
     def current_version(self, current_version):
         r"""Sets the current_version of this InvocationInfo.
 
-        当前版本
+        **参数解释**: 当前版本 **取值范围**: 字符串长度范围为[1,64] 
 
         :param current_version: The current_version of this InvocationInfo.
         :type current_version: str
@@ -400,7 +400,7 @@ class InvocationInfo:
     def target_version(self):
         r"""Gets the target_version of this InvocationInfo.
 
-        目标版本
+        **参数解释**: 目标版本 **取值范围**: 字符串长度范围为[1,64] 
 
         :return: The target_version of this InvocationInfo.
         :rtype: str
@@ -411,7 +411,7 @@ class InvocationInfo:
     def target_version(self, target_version):
         r"""Sets the target_version of this InvocationInfo.
 
-        目标版本
+        **参数解释**: 目标版本 **取值范围**: 字符串长度范围为[1,64] 
 
         :param target_version: The target_version of this InvocationInfo.
         :type target_version: str
@@ -422,7 +422,7 @@ class InvocationInfo:
     def result_msg(self):
         r"""Gets the result_msg of this InvocationInfo.
 
-        任务执行结果信息
+        **参数解释**: 任务执行结果信息 **取值范围**: 字符串长度范围为[1,5000] 
 
         :return: The result_msg of this InvocationInfo.
         :rtype: str
@@ -433,7 +433,7 @@ class InvocationInfo:
     def result_msg(self, result_msg):
         r"""Sets the result_msg of this InvocationInfo.
 
-        任务执行结果信息
+        **参数解释**: 任务执行结果信息 **取值范围**: 字符串长度范围为[1,5000] 
 
         :param result_msg: The result_msg of this InvocationInfo.
         :type result_msg: str

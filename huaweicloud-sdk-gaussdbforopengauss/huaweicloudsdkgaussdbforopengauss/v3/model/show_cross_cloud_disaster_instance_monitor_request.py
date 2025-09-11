@@ -33,7 +33,7 @@ class ShowCrossCloudDisasterInstanceMonitorRequest:
 
         The model defined in huaweicloud sdk
 
-        :param x_language: 语言。
+        :param x_language: **参数解释**: 语言。 **约束限制**: 不涉及。 **取值范围**:   - zh-cn   - en-us  **默认取值**: en-us
         :type x_language: str
         :param instance_id: 实例id。
         :type instance_id: str
@@ -58,7 +58,7 @@ class ShowCrossCloudDisasterInstanceMonitorRequest:
     def x_language(self):
         r"""Gets the x_language of this ShowCrossCloudDisasterInstanceMonitorRequest.
 
-        语言。
+        **参数解释**: 语言。 **约束限制**: 不涉及。 **取值范围**:   - zh-cn   - en-us  **默认取值**: en-us
 
         :return: The x_language of this ShowCrossCloudDisasterInstanceMonitorRequest.
         :rtype: str
@@ -69,7 +69,7 @@ class ShowCrossCloudDisasterInstanceMonitorRequest:
     def x_language(self, x_language):
         r"""Sets the x_language of this ShowCrossCloudDisasterInstanceMonitorRequest.
 
-        语言。
+        **参数解释**: 语言。 **约束限制**: 不涉及。 **取值范围**:   - zh-cn   - en-us  **默认取值**: en-us
 
         :param x_language: The x_language of this ShowCrossCloudDisasterInstanceMonitorRequest.
         :type x_language: str

@@ -29,7 +29,7 @@ class ListCesTargetProjectTagsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param resource_type: 资源类型。CES-alarm：告警规则
+        :param resource_type: **参数解释**： 资源类型。     **约束限制**： 不涉及。 **取值范围**： 只能为CES-alarm，代表告警规则。长度[1,32]个字符。      **默认取值**： 不涉及。 
         :type resource_type: str
         """
         
@@ -44,7 +44,7 @@ class ListCesTargetProjectTagsRequest:
     def resource_type(self):
         r"""Gets the resource_type of this ListCesTargetProjectTagsRequest.
 
-        资源类型。CES-alarm：告警规则
+        **参数解释**： 资源类型。     **约束限制**： 不涉及。 **取值范围**： 只能为CES-alarm，代表告警规则。长度[1,32]个字符。      **默认取值**： 不涉及。 
 
         :return: The resource_type of this ListCesTargetProjectTagsRequest.
         :rtype: str
@@ -55,7 +55,7 @@ class ListCesTargetProjectTagsRequest:
     def resource_type(self, resource_type):
         r"""Sets the resource_type of this ListCesTargetProjectTagsRequest.
 
-        资源类型。CES-alarm：告警规则
+        **参数解释**： 资源类型。     **约束限制**： 不涉及。 **取值范围**： 只能为CES-alarm，代表告警规则。长度[1,32]个字符。      **默认取值**： 不涉及。 
 
         :param resource_type: The resource_type of this ListCesTargetProjectTagsRequest.
         :type resource_type: str

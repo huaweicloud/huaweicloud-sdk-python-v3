@@ -65,7 +65,7 @@ class CreateReplicationPolicyRequestBody:
         :type trigger: :class:`huaweicloudsdkswr.v2.TriggerConfig`
         :param override: 是否覆盖，默认为false
         :type override: bool
-        :param enabled: 是否使用，默认为false
+        :param enabled: 是否启用，默认为false
         :type enabled: bool
         """
         
@@ -289,7 +289,7 @@ class CreateReplicationPolicyRequestBody:
     def enabled(self):
         r"""Gets the enabled of this CreateReplicationPolicyRequestBody.
 
-        是否使用，默认为false
+        是否启用，默认为false
 
         :return: The enabled of this CreateReplicationPolicyRequestBody.
         :rtype: bool
@@ -300,7 +300,7 @@ class CreateReplicationPolicyRequestBody:
     def enabled(self, enabled):
         r"""Sets the enabled of this CreateReplicationPolicyRequestBody.
 
-        是否使用，默认为false
+        是否启用，默认为false
 
         :param enabled: The enabled of this CreateReplicationPolicyRequestBody.
         :type enabled: bool

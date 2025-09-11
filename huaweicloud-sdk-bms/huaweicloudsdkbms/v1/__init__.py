@@ -17,6 +17,7 @@ from huaweicloudsdkbms.v1.model.attach_baremetal_server_volume_request import At
 from huaweicloudsdkbms.v1.model.attach_baremetal_server_volume_response import AttachBaremetalServerVolumeResponse
 from huaweicloudsdkbms.v1.model.attach_volume_body import AttachVolumeBody
 from huaweicloudsdkbms.v1.model.band_width import BandWidth
+from huaweicloudsdkbms.v1.model.bare_metal_modify_port_request import BareMetalModifyPortRequest
 from huaweicloudsdkbms.v1.model.baremetal_server_tag import BaremetalServerTag
 from huaweicloudsdkbms.v1.model.batch_create_baremetal_server_tags_request import BatchCreateBaremetalServerTagsRequest
 from huaweicloudsdkbms.v1.model.batch_create_baremetal_server_tags_request_body import BatchCreateBaremetalServerTagsRequestBody
@@ -65,6 +66,7 @@ from huaweicloudsdkbms.v1.model.fixed_ips import FixedIps
 from huaweicloudsdkbms.v1.model.flavor_detail_infos import FlavorDetailInfos
 from huaweicloudsdkbms.v1.model.flavor_info import FlavorInfo
 from huaweicloudsdkbms.v1.model.flavor_infos import FlavorInfos
+from huaweicloudsdkbms.v1.model.flavor_resource import FlavorResource
 from huaweicloudsdkbms.v1.model.flavors_resp import FlavorsResp
 from huaweicloudsdkbms.v1.model.gpu_info import GpuInfo
 from huaweicloudsdkbms.v1.model.image import Image
@@ -85,6 +87,8 @@ from huaweicloudsdkbms.v1.model.meta_data_info import MetaDataInfo
 from huaweicloudsdkbms.v1.model.metadata_infos import MetadataInfos
 from huaweicloudsdkbms.v1.model.metadata_install import MetadataInstall
 from huaweicloudsdkbms.v1.model.metadata_list import MetadataList
+from huaweicloudsdkbms.v1.model.modify_vm_nic_request import ModifyVmNicRequest
+from huaweicloudsdkbms.v1.model.modify_vm_nic_response import ModifyVmNicResponse
 from huaweicloudsdkbms.v1.model.nics import Nics
 from huaweicloudsdkbms.v1.model.os_change_req import OSChangeReq
 from huaweicloudsdkbms.v1.model.os_change import OsChange
@@ -120,6 +124,8 @@ from huaweicloudsdkbms.v1.model.server_os_scheduler_hints import ServerOsSchedul
 from huaweicloudsdkbms.v1.model.server_remote_console import ServerRemoteConsole
 from huaweicloudsdkbms.v1.model.servers_info_type import ServersInfoType
 from huaweicloudsdkbms.v1.model.servers_list import ServersList
+from huaweicloudsdkbms.v1.model.show_available_resource_request import ShowAvailableResourceRequest
+from huaweicloudsdkbms.v1.model.show_available_resource_response import ShowAvailableResourceResponse
 from huaweicloudsdkbms.v1.model.show_baremetal_server_interface_attachments_request import ShowBaremetalServerInterfaceAttachmentsRequest
 from huaweicloudsdkbms.v1.model.show_baremetal_server_interface_attachments_response import ShowBaremetalServerInterfaceAttachmentsResponse
 from huaweicloudsdkbms.v1.model.show_baremetal_server_tags_request import ShowBaremetalServerTagsRequest

@@ -35,13 +35,13 @@ class MetricExtraInfo:
 
         The model defined in huaweicloud sdk
 
-        :param origin_metric_name: 原始指标名称
+        :param origin_metric_name: **参数解释**： 原始指标名称。 **约束限制**： 不涉及。 **取值范围**： 长度为[0,4096]个字符。          **默认取值**： 不涉及。 
         :type origin_metric_name: str
-        :param metric_prefix: 指标名称前缀
+        :param metric_prefix: **参数解释**： 指标名称前缀。 **约束限制**： 不涉及。 **取值范围**： 长度为[0,4096]个字符。          **默认取值**： 不涉及。 
         :type metric_prefix: str
-        :param custom_proc_name: 用户进程名称
+        :param custom_proc_name: **参数解释**： 用户进程名称。 **约束限制**： 不涉及。 **取值范围**： 长度为[0,250]个字符。          **默认取值**： 不涉及。 
         :type custom_proc_name: str
-        :param metric_type: 指标类型
+        :param metric_type: **参数解释**： 指标类型。 **约束限制**： 不涉及。 **取值范围**： 长度为[0,32]个字符。          **默认取值**： 不涉及。 
         :type metric_type: str
         """
         
@@ -65,7 +65,7 @@ class MetricExtraInfo:
     def origin_metric_name(self):
         r"""Gets the origin_metric_name of this MetricExtraInfo.
 
-        原始指标名称
+        **参数解释**： 原始指标名称。 **约束限制**： 不涉及。 **取值范围**： 长度为[0,4096]个字符。          **默认取值**： 不涉及。 
 
         :return: The origin_metric_name of this MetricExtraInfo.
         :rtype: str
@@ -76,7 +76,7 @@ class MetricExtraInfo:
     def origin_metric_name(self, origin_metric_name):
         r"""Sets the origin_metric_name of this MetricExtraInfo.
 
-        原始指标名称
+        **参数解释**： 原始指标名称。 **约束限制**： 不涉及。 **取值范围**： 长度为[0,4096]个字符。          **默认取值**： 不涉及。 
 
         :param origin_metric_name: The origin_metric_name of this MetricExtraInfo.
         :type origin_metric_name: str
@@ -87,7 +87,7 @@ class MetricExtraInfo:
     def metric_prefix(self):
         r"""Gets the metric_prefix of this MetricExtraInfo.
 
-        指标名称前缀
+        **参数解释**： 指标名称前缀。 **约束限制**： 不涉及。 **取值范围**： 长度为[0,4096]个字符。          **默认取值**： 不涉及。 
 
         :return: The metric_prefix of this MetricExtraInfo.
         :rtype: str
@@ -98,7 +98,7 @@ class MetricExtraInfo:
     def metric_prefix(self, metric_prefix):
         r"""Sets the metric_prefix of this MetricExtraInfo.
 
-        指标名称前缀
+        **参数解释**： 指标名称前缀。 **约束限制**： 不涉及。 **取值范围**： 长度为[0,4096]个字符。          **默认取值**： 不涉及。 
 
         :param metric_prefix: The metric_prefix of this MetricExtraInfo.
         :type metric_prefix: str
@@ -109,7 +109,7 @@ class MetricExtraInfo:
     def custom_proc_name(self):
         r"""Gets the custom_proc_name of this MetricExtraInfo.
 
-        用户进程名称
+        **参数解释**： 用户进程名称。 **约束限制**： 不涉及。 **取值范围**： 长度为[0,250]个字符。          **默认取值**： 不涉及。 
 
         :return: The custom_proc_name of this MetricExtraInfo.
         :rtype: str
@@ -120,7 +120,7 @@ class MetricExtraInfo:
     def custom_proc_name(self, custom_proc_name):
         r"""Sets the custom_proc_name of this MetricExtraInfo.
 
-        用户进程名称
+        **参数解释**： 用户进程名称。 **约束限制**： 不涉及。 **取值范围**： 长度为[0,250]个字符。          **默认取值**： 不涉及。 
 
         :param custom_proc_name: The custom_proc_name of this MetricExtraInfo.
         :type custom_proc_name: str
@@ -131,7 +131,7 @@ class MetricExtraInfo:
     def metric_type(self):
         r"""Gets the metric_type of this MetricExtraInfo.
 
-        指标类型
+        **参数解释**： 指标类型。 **约束限制**： 不涉及。 **取值范围**： 长度为[0,32]个字符。          **默认取值**： 不涉及。 
 
         :return: The metric_type of this MetricExtraInfo.
         :rtype: str
@@ -142,7 +142,7 @@ class MetricExtraInfo:
     def metric_type(self, metric_type):
         r"""Sets the metric_type of this MetricExtraInfo.
 
-        指标类型
+        **参数解释**： 指标类型。 **约束限制**： 不涉及。 **取值范围**： 长度为[0,32]个字符。          **默认取值**： 不涉及。 
 
         :param metric_type: The metric_type of this MetricExtraInfo.
         :type metric_type: str

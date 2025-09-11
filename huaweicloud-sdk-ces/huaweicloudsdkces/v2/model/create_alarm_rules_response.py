@@ -30,7 +30,7 @@ class CreateAlarmRulesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param alarm_id: 告警规则id，以al开头，包含22个数字或字母
+        :param alarm_id: **参数解释**： 告警规则id。     **约束限制**： 不涉及。 **取值范围**： 以al开头，后跟22个数字或字母。           **默认取值**： 不涉及。 
         :type alarm_id: str
         """
         
@@ -46,7 +46,7 @@ class CreateAlarmRulesResponse(SdkResponse):
     def alarm_id(self):
         r"""Gets the alarm_id of this CreateAlarmRulesResponse.
 
-        告警规则id，以al开头，包含22个数字或字母
+        **参数解释**： 告警规则id。     **约束限制**： 不涉及。 **取值范围**： 以al开头，后跟22个数字或字母。           **默认取值**： 不涉及。 
 
         :return: The alarm_id of this CreateAlarmRulesResponse.
         :rtype: str
@@ -57,7 +57,7 @@ class CreateAlarmRulesResponse(SdkResponse):
     def alarm_id(self, alarm_id):
         r"""Sets the alarm_id of this CreateAlarmRulesResponse.
 
-        告警规则id，以al开头，包含22个数字或字母
+        **参数解释**： 告警规则id。     **约束限制**： 不涉及。 **取值范围**： 以al开头，后跟22个数字或字母。           **默认取值**： 不涉及。 
 
         :param alarm_id: The alarm_id of this CreateAlarmRulesResponse.
         :type alarm_id: str

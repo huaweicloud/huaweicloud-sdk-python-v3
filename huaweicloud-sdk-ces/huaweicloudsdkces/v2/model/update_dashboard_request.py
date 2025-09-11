@@ -31,7 +31,7 @@ class UpdateDashboardRequest:
 
         The model defined in huaweicloud sdk
 
-        :param dashboard_id: 监控看板id，以db开头，包含22个字母和数字例：db16564943172807wjOmoLyn&#39;
+        :param dashboard_id: **参数解释**: 监控看板id **约束限制**: 不涉及。 **取值范围**: 以db开头，包含22个字母和数字，长度为24个字符 **默认取值**: 不涉及。 
         :type dashboard_id: str
         :param body: Body of the UpdateDashboardRequest
         :type body: :class:`huaweicloudsdkces.v2.UpdateDashboardRequestBody`
@@ -51,7 +51,7 @@ class UpdateDashboardRequest:
     def dashboard_id(self):
         r"""Gets the dashboard_id of this UpdateDashboardRequest.
 
-        监控看板id，以db开头，包含22个字母和数字例：db16564943172807wjOmoLyn'
+        **参数解释**: 监控看板id **约束限制**: 不涉及。 **取值范围**: 以db开头，包含22个字母和数字，长度为24个字符 **默认取值**: 不涉及。 
 
         :return: The dashboard_id of this UpdateDashboardRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class UpdateDashboardRequest:
     def dashboard_id(self, dashboard_id):
         r"""Sets the dashboard_id of this UpdateDashboardRequest.
 
-        监控看板id，以db开头，包含22个字母和数字例：db16564943172807wjOmoLyn'
+        **参数解释**: 监控看板id **约束限制**: 不涉及。 **取值范围**: 以db开头，包含22个字母和数字，长度为24个字符 **默认取值**: 不涉及。 
 
         :param dashboard_id: The dashboard_id of this UpdateDashboardRequest.
         :type dashboard_id: str

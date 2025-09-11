@@ -24,8 +24,8 @@ class SignatureExecutionTask:
         'status_text': 'str',
         'namespace': 'str',
         'repository': 'str',
-        'created_at': 'datetime',
-        'updated_at': 'datetime'
+        'created_at': 'str',
+        'updated_at': 'str'
     }
 
     attribute_map = {
@@ -60,9 +60,9 @@ class SignatureExecutionTask:
         :param repository: 镜像仓库名称
         :type repository: str
         :param created_at: 创建时间
-        :type created_at: datetime
+        :type created_at: str
         :param updated_at: 更新时间
-        :type updated_at: datetime
+        :type updated_at: str
         """
         
         
@@ -258,7 +258,7 @@ class SignatureExecutionTask:
         创建时间
 
         :return: The created_at of this SignatureExecutionTask.
-        :rtype: datetime
+        :rtype: str
         """
         return self._created_at
 
@@ -269,7 +269,7 @@ class SignatureExecutionTask:
         创建时间
 
         :param created_at: The created_at of this SignatureExecutionTask.
-        :type created_at: datetime
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -280,7 +280,7 @@ class SignatureExecutionTask:
         更新时间
 
         :return: The updated_at of this SignatureExecutionTask.
-        :rtype: datetime
+        :rtype: str
         """
         return self._updated_at
 
@@ -291,7 +291,7 @@ class SignatureExecutionTask:
         更新时间
 
         :param updated_at: The updated_at of this SignatureExecutionTask.
-        :type updated_at: datetime
+        :type updated_at: str
         """
         self._updated_at = updated_at
 

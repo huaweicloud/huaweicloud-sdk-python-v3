@@ -47,7 +47,7 @@ class Job:
 
         :param id: 任务ID
         :type id: int
-        :param policy_id: 触发器策略ID
+        :param policy_id: 触发器ID
         :type policy_id: int
         :param event_type: 事件类型
         :type event_type: str
@@ -114,7 +114,7 @@ class Job:
     def policy_id(self):
         r"""Gets the policy_id of this Job.
 
-        触发器策略ID
+        触发器ID
 
         :return: The policy_id of this Job.
         :rtype: int
@@ -125,7 +125,7 @@ class Job:
     def policy_id(self, policy_id):
         r"""Sets the policy_id of this Job.
 
-        触发器策略ID
+        触发器ID
 
         :param policy_id: The policy_id of this Job.
         :type policy_id: int

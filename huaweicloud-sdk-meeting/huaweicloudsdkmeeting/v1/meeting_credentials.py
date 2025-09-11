@@ -127,7 +127,7 @@ class MeetingCredentials(Credentials):
                 nonce = str(uuid.uuid4())
                 # 签名信息有效期（10分钟）
                 expire_time = int(time.time()) + 60 * 10
-                authorization = "HMAC-SHA256 signature=" + self._sign_hmac256(expire_time, nonce)
+                authorization = "HMAC-SHA256 signature=" + self._sign_hmac256(expire_time, nonce) + ",access=" + six.ensure_str(base64.b64encode(self._app_id.encode('utf-8')))
                 body = {"appId": self._app_id, "userId": self._user_id, "corpId": self._corp_id,
                         "expireTime": expire_time, "nonce": nonce, "clientType": 72, "deptCode": self._dept_code}
                 sdk_request = SdkRequest('POST', 'https', request.host, [], '/v2/usg/acs/auth/appauth', [],

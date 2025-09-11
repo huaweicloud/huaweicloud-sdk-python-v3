@@ -51,7 +51,7 @@ class UpdateRegistryRequestBody:
         :type name: str
         :param description: 目标仓库描述
         :type description: str
-        :param type: 仓库类型，swr-pro(开源harbor仓库)、swr-pro-internal(SWR企业版仓库)、huawei-SWR(SWR共享版仓库)
+        :param type: 仓库类型，swr-pro(开源harbor仓库)、swr-pro-internal(SWR企业版仓库)、huawei-SWR(SWR基础版仓库)
         :type type: str
         :param project_id: 企业仓库实例所属的项目ID，当type为swr-pro-internal时必填
         :type project_id: str
@@ -147,7 +147,7 @@ class UpdateRegistryRequestBody:
     def type(self):
         r"""Gets the type of this UpdateRegistryRequestBody.
 
-        仓库类型，swr-pro(开源harbor仓库)、swr-pro-internal(SWR企业版仓库)、huawei-SWR(SWR共享版仓库)
+        仓库类型，swr-pro(开源harbor仓库)、swr-pro-internal(SWR企业版仓库)、huawei-SWR(SWR基础版仓库)
 
         :return: The type of this UpdateRegistryRequestBody.
         :rtype: str
@@ -158,7 +158,7 @@ class UpdateRegistryRequestBody:
     def type(self, type):
         r"""Sets the type of this UpdateRegistryRequestBody.
 
-        仓库类型，swr-pro(开源harbor仓库)、swr-pro-internal(SWR企业版仓库)、huawei-SWR(SWR共享版仓库)
+        仓库类型，swr-pro(开源harbor仓库)、swr-pro-internal(SWR企业版仓库)、huawei-SWR(SWR基础版仓库)
 
         :param type: The type of this UpdateRegistryRequestBody.
         :type type: str

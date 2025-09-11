@@ -5412,6 +5412,71 @@ class EcsClient(Client):
 
         return http_info
 
+    def show_flavor_capacity(self, request):
+        r"""查询flavor的容量
+
+        查询flavor的容量
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowFlavorCapacity
+        :type request: :class:`huaweicloudsdkecs.v2.ShowFlavorCapacityRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.ShowFlavorCapacityResponse`
+        """
+        http_info = self._show_flavor_capacity_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_flavor_capacity_invoker(self, request):
+        http_info = self._show_flavor_capacity_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_flavor_capacity_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cloudservers/flavors/{flavor_id}/resources",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowFlavorCapacityResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'flavor_id' in local_var_params:
+            path_params['flavor_id'] = local_var_params['flavor_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_metadata_options(self, request):
         r"""查询云服务器元数据配置
 
@@ -5632,6 +5697,71 @@ class EcsClient(Client):
             "resource_path": "/v1/{project_id}/cloudservers/{server_id}",
             "request_type": request.__class__.__name__,
             "response_type": "ShowServerResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'server_id' in local_var_params:
+            path_params['server_id'] = local_var_params['server_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_server_attachable_nic_num(self, request):
+        r"""查询虚拟机可挂载网卡
+
+        查询虚拟机可挂载网卡
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowServerAttachableNicNum
+        :type request: :class:`huaweicloudsdkecs.v2.ShowServerAttachableNicNumRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.ShowServerAttachableNicNumResponse`
+        """
+        http_info = self._show_server_attachable_nic_num_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_server_attachable_nic_num_invoker(self, request):
+        http_info = self._show_server_attachable_nic_num_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_server_attachable_nic_num_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cloudservers/{server_id}/os-interface_extension",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowServerAttachableNicNumResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}

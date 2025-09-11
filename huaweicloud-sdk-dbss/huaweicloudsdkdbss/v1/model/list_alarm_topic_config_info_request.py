@@ -29,7 +29,7 @@ class ListAlarmTopicConfigInfoRequest:
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: 实例ID
+        :param instance_id: **参数解释**： 实例ID。可通过查询实例列表接口ID字段获取 **约束限制**： 不涉及 **取值范围**： 以查询实例列表接口值为准，字符长度32-64。 **默认取值**： 不涉及 
         :type instance_id: str
         """
         
@@ -44,7 +44,7 @@ class ListAlarmTopicConfigInfoRequest:
     def instance_id(self):
         r"""Gets the instance_id of this ListAlarmTopicConfigInfoRequest.
 
-        实例ID
+        **参数解释**： 实例ID。可通过查询实例列表接口ID字段获取 **约束限制**： 不涉及 **取值范围**： 以查询实例列表接口值为准，字符长度32-64。 **默认取值**： 不涉及 
 
         :return: The instance_id of this ListAlarmTopicConfigInfoRequest.
         :rtype: str
@@ -55,7 +55,7 @@ class ListAlarmTopicConfigInfoRequest:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this ListAlarmTopicConfigInfoRequest.
 
-        实例ID
+        **参数解释**： 实例ID。可通过查询实例列表接口ID字段获取 **约束限制**： 不涉及 **取值范围**： 以查询实例列表接口值为准，字符长度32-64。 **默认取值**： 不涉及 
 
         :param instance_id: The instance_id of this ListAlarmTopicConfigInfoRequest.
         :type instance_id: str

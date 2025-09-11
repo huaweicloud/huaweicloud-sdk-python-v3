@@ -53,7 +53,7 @@ class ScheduleTaskDetail:
         :type create_time: str
         :param start_time: 任务开始时间,格式为yyyy-mm-ddThh:mm:ssZ。
         :type start_time: str
-        :param instance_id: 实例ID。
+        :param instance_id: **参数解释**: 实例ID。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
         :type instance_id: str
         :param instance_name: 实例名称。
         :type instance_name: str
@@ -204,7 +204,7 @@ class ScheduleTaskDetail:
     def instance_id(self):
         r"""Gets the instance_id of this ScheduleTaskDetail.
 
-        实例ID。
+        **参数解释**: 实例ID。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
 
         :return: The instance_id of this ScheduleTaskDetail.
         :rtype: str
@@ -215,7 +215,7 @@ class ScheduleTaskDetail:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this ScheduleTaskDetail.
 
-        实例ID。
+        **参数解释**: 实例ID。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
 
         :param instance_id: The instance_id of this ScheduleTaskDetail.
         :type instance_id: str

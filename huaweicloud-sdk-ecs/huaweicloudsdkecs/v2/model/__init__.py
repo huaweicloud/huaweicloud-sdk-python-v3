@@ -18,6 +18,7 @@ from huaweicloudsdkecs.v2.model.attach_server_volume_option import AttachServerV
 from huaweicloudsdkecs.v2.model.attach_server_volume_request import AttachServerVolumeRequest
 from huaweicloudsdkecs.v2.model.attach_server_volume_request_body import AttachServerVolumeRequestBody
 from huaweicloudsdkecs.v2.model.attach_server_volume_response import AttachServerVolumeResponse
+from huaweicloudsdkecs.v2.model.attachable_quantity_for_nic import AttachableQuantityForNic
 from huaweicloudsdkecs.v2.model.batch_add_server_nic_option import BatchAddServerNicOption
 from huaweicloudsdkecs.v2.model.batch_add_server_nics_request import BatchAddServerNicsRequest
 from huaweicloudsdkecs.v2.model.batch_add_server_nics_request_body import BatchAddServerNicsRequestBody
@@ -132,6 +133,7 @@ from huaweicloudsdkecs.v2.model.execute_server_dump_response import ExecuteServe
 from huaweicloudsdkecs.v2.model.execute_server_redeploy_request import ExecuteServerRedeployRequest
 from huaweicloudsdkecs.v2.model.execute_server_redeploy_response import ExecuteServerRedeployResponse
 from huaweicloudsdkecs.v2.model.fault import Fault
+from huaweicloudsdkecs.v2.model.fixed_ip import FixedIp
 from huaweicloudsdkecs.v2.model.flavor import Flavor
 from huaweicloudsdkecs.v2.model.flavor_extra_spec import FlavorExtraSpec
 from huaweicloudsdkecs.v2.model.flavor_link import FlavorLink
@@ -143,6 +145,7 @@ from huaweicloudsdkecs.v2.model.hypervisor import Hypervisor
 from huaweicloudsdkecs.v2.model.image import Image
 from huaweicloudsdkecs.v2.model.interface_attachable_quantity import InterfaceAttachableQuantity
 from huaweicloudsdkecs.v2.model.interface_attachment import InterfaceAttachment
+from huaweicloudsdkecs.v2.model.interface_ext import InterfaceExt
 from huaweicloudsdkecs.v2.model.ipv6_bandwidth import Ipv6Bandwidth
 from huaweicloudsdkecs.v2.model.job_entities import JobEntities
 from huaweicloudsdkecs.v2.model.launch_template import LaunchTemplate
@@ -309,6 +312,7 @@ from huaweicloudsdkecs.v2.model.pre_paid_server_tag import PrePaidServerTag
 from huaweicloudsdkecs.v2.model.project_flavor_limit import ProjectFlavorLimit
 from huaweicloudsdkecs.v2.model.project_tag import ProjectTag
 from huaweicloudsdkecs.v2.model.promotion import Promotion
+from huaweicloudsdkecs.v2.model.query_flavor_capacity_az_info import QueryFlavorCapacityAzInfo
 from huaweicloudsdkecs.v2.model.recycle_bin_policys import RecycleBinPolicys
 from huaweicloudsdkecs.v2.model.register_server_monitor_request import RegisterServerMonitorRequest
 from huaweicloudsdkecs.v2.model.register_server_monitor_request_body import RegisterServerMonitorRequestBody
@@ -368,6 +372,8 @@ from huaweicloudsdkecs.v2.model.server_tags import ServerTags
 from huaweicloudsdkecs.v2.model.server_volume_attachment import ServerVolumeAttachment
 from huaweicloudsdkecs.v2.model.show_appendable_volume_quota_request import ShowAppendableVolumeQuotaRequest
 from huaweicloudsdkecs.v2.model.show_appendable_volume_quota_response import ShowAppendableVolumeQuotaResponse
+from huaweicloudsdkecs.v2.model.show_flavor_capacity_request import ShowFlavorCapacityRequest
+from huaweicloudsdkecs.v2.model.show_flavor_capacity_response import ShowFlavorCapacityResponse
 from huaweicloudsdkecs.v2.model.show_job_request import ShowJobRequest
 from huaweicloudsdkecs.v2.model.show_job_response import ShowJobResponse
 from huaweicloudsdkecs.v2.model.show_metadata_options_request import ShowMetadataOptionsRequest
@@ -376,6 +382,8 @@ from huaweicloudsdkecs.v2.model.show_recycle_bin_request import ShowRecycleBinRe
 from huaweicloudsdkecs.v2.model.show_recycle_bin_response import ShowRecycleBinResponse
 from huaweicloudsdkecs.v2.model.show_reset_password_flag_request import ShowResetPasswordFlagRequest
 from huaweicloudsdkecs.v2.model.show_reset_password_flag_response import ShowResetPasswordFlagResponse
+from huaweicloudsdkecs.v2.model.show_server_attachable_nic_num_request import ShowServerAttachableNicNumRequest
+from huaweicloudsdkecs.v2.model.show_server_attachable_nic_num_response import ShowServerAttachableNicNumResponse
 from huaweicloudsdkecs.v2.model.show_server_block_device_request import ShowServerBlockDeviceRequest
 from huaweicloudsdkecs.v2.model.show_server_block_device_response import ShowServerBlockDeviceResponse
 from huaweicloudsdkecs.v2.model.show_server_group_request import ShowServerGroupRequest

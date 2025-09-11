@@ -31,7 +31,7 @@ class CountResourceInstanceByTagRequest:
 
         The model defined in huaweicloud sdk
 
-        :param resource_type: 资源类型。 - auditInstance
+        :param resource_type: **参数解释**：  资源类型。 **约束限制**： 不涉及 **取值范围**：  - auditInstance: 审计  **默认取值**： 不涉及 
         :type resource_type: str
         :param body: Body of the CountResourceInstanceByTagRequest
         :type body: :class:`huaweicloudsdkdbss.v1.ResourceInstanceTagRequest`
@@ -51,7 +51,7 @@ class CountResourceInstanceByTagRequest:
     def resource_type(self):
         r"""Gets the resource_type of this CountResourceInstanceByTagRequest.
 
-        资源类型。 - auditInstance
+        **参数解释**：  资源类型。 **约束限制**： 不涉及 **取值范围**：  - auditInstance: 审计  **默认取值**： 不涉及 
 
         :return: The resource_type of this CountResourceInstanceByTagRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class CountResourceInstanceByTagRequest:
     def resource_type(self, resource_type):
         r"""Sets the resource_type of this CountResourceInstanceByTagRequest.
 
-        资源类型。 - auditInstance
+        **参数解释**：  资源类型。 **约束限制**： 不涉及 **取值范围**：  - auditInstance: 审计  **默认取值**： 不涉及 
 
         :param resource_type: The resource_type of this CountResourceInstanceByTagRequest.
         :type resource_type: str

@@ -19,7 +19,7 @@ class ResourcesInListResp:
     openapi_types = {
         'resource_group_id': 'str',
         'resource_group_name': 'str',
-        'dimensions': 'list[MetricDimension]'
+        'dimensions': 'list[MetricDimensionResp]'
     }
 
     attribute_map = {
@@ -33,12 +33,12 @@ class ResourcesInListResp:
 
         The model defined in huaweicloud sdk
 
-        :param resource_group_id: 资源分组ID，监控范围为资源分组时存在该值
+        :param resource_group_id: **参数解释**： 资源分组ID，监控范围为资源分组时存在该值。 **取值范围**： 以rg开头，后跟22个字母或数字。 
         :type resource_group_id: str
-        :param resource_group_name: 资源分组名称，监控范围为资源分组时存在该值
+        :param resource_group_name: **参数解释**： 资源分组名称，监控范围为资源分组时存在该值。 **取值范围**： 长度为[1,128]个字符。 
         :type resource_group_name: str
-        :param dimensions: 维度信息
-        :type dimensions: list[:class:`huaweicloudsdkces.v2.MetricDimension`]
+        :param dimensions: **参数解释**： 维度信息。 
+        :type dimensions: list[:class:`huaweicloudsdkces.v2.MetricDimensionResp`]
         """
         
         
@@ -59,7 +59,7 @@ class ResourcesInListResp:
     def resource_group_id(self):
         r"""Gets the resource_group_id of this ResourcesInListResp.
 
-        资源分组ID，监控范围为资源分组时存在该值
+        **参数解释**： 资源分组ID，监控范围为资源分组时存在该值。 **取值范围**： 以rg开头，后跟22个字母或数字。 
 
         :return: The resource_group_id of this ResourcesInListResp.
         :rtype: str
@@ -70,7 +70,7 @@ class ResourcesInListResp:
     def resource_group_id(self, resource_group_id):
         r"""Sets the resource_group_id of this ResourcesInListResp.
 
-        资源分组ID，监控范围为资源分组时存在该值
+        **参数解释**： 资源分组ID，监控范围为资源分组时存在该值。 **取值范围**： 以rg开头，后跟22个字母或数字。 
 
         :param resource_group_id: The resource_group_id of this ResourcesInListResp.
         :type resource_group_id: str
@@ -81,7 +81,7 @@ class ResourcesInListResp:
     def resource_group_name(self):
         r"""Gets the resource_group_name of this ResourcesInListResp.
 
-        资源分组名称，监控范围为资源分组时存在该值
+        **参数解释**： 资源分组名称，监控范围为资源分组时存在该值。 **取值范围**： 长度为[1,128]个字符。 
 
         :return: The resource_group_name of this ResourcesInListResp.
         :rtype: str
@@ -92,7 +92,7 @@ class ResourcesInListResp:
     def resource_group_name(self, resource_group_name):
         r"""Sets the resource_group_name of this ResourcesInListResp.
 
-        资源分组名称，监控范围为资源分组时存在该值
+        **参数解释**： 资源分组名称，监控范围为资源分组时存在该值。 **取值范围**： 长度为[1,128]个字符。 
 
         :param resource_group_name: The resource_group_name of this ResourcesInListResp.
         :type resource_group_name: str
@@ -103,10 +103,10 @@ class ResourcesInListResp:
     def dimensions(self):
         r"""Gets the dimensions of this ResourcesInListResp.
 
-        维度信息
+        **参数解释**： 维度信息。 
 
         :return: The dimensions of this ResourcesInListResp.
-        :rtype: list[:class:`huaweicloudsdkces.v2.MetricDimension`]
+        :rtype: list[:class:`huaweicloudsdkces.v2.MetricDimensionResp`]
         """
         return self._dimensions
 
@@ -114,10 +114,10 @@ class ResourcesInListResp:
     def dimensions(self, dimensions):
         r"""Sets the dimensions of this ResourcesInListResp.
 
-        维度信息
+        **参数解释**： 维度信息。 
 
         :param dimensions: The dimensions of this ResourcesInListResp.
-        :type dimensions: list[:class:`huaweicloudsdkces.v2.MetricDimension`]
+        :type dimensions: list[:class:`huaweicloudsdkces.v2.MetricDimensionResp`]
         """
         self._dimensions = dimensions
 

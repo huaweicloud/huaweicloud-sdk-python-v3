@@ -31,9 +31,9 @@ class ProductMetric:
 
         The model defined in huaweicloud sdk
 
-        :param dimension_name: 按云产品维度屏蔽时的指标维度信息，有多个时用\&quot;,\&quot;连接
+        :param dimension_name: **参数解释**： 按云产品维度屏蔽时的指标维度信息。    **约束限制**： 不涉及。 **取值范围**： 长度为[0,128]个字符，有多个时用\&quot;,\&quot;连接。    **默认取值**： 不涉及。 
         :type dimension_name: str
-        :param metric_name: 资源的监控指标名称，必须以字母开头，只能包含0-9/a-z/A-Z/_，字符长度最短为1，最大为64；如：弹性云服务器中的监控指标cpu_util，表示弹性服务器的CPU使用率；文档数据库中的指标mongo001_command_ps，表示command执行频率；各服务的指标名称可查看：“[服务指标名称](ces_03_0059.xml)”。
+        :param metric_name: **参数解释**： 资源的监控指标名称，各服务的指标名称可查看：“[服务指标名称](ces_03_0059.xml)”。 **约束限制**： 不涉及。 **取值范围**： 必须以字母开头，只能包含0-9/a-z/A-Z/_/-。字符长度最短为1，最大为96。如：弹性云服务器中的监控指标cpu_util，表示弹性服务器的CPU使用率；文档数据库中的指标mongo001_command_ps，表示command执行频率。         **默认取值**： 不涉及。 
         :type metric_name: str
         """
         
@@ -50,7 +50,7 @@ class ProductMetric:
     def dimension_name(self):
         r"""Gets the dimension_name of this ProductMetric.
 
-        按云产品维度屏蔽时的指标维度信息，有多个时用\",\"连接
+        **参数解释**： 按云产品维度屏蔽时的指标维度信息。    **约束限制**： 不涉及。 **取值范围**： 长度为[0,128]个字符，有多个时用\",\"连接。    **默认取值**： 不涉及。 
 
         :return: The dimension_name of this ProductMetric.
         :rtype: str
@@ -61,7 +61,7 @@ class ProductMetric:
     def dimension_name(self, dimension_name):
         r"""Sets the dimension_name of this ProductMetric.
 
-        按云产品维度屏蔽时的指标维度信息，有多个时用\",\"连接
+        **参数解释**： 按云产品维度屏蔽时的指标维度信息。    **约束限制**： 不涉及。 **取值范围**： 长度为[0,128]个字符，有多个时用\",\"连接。    **默认取值**： 不涉及。 
 
         :param dimension_name: The dimension_name of this ProductMetric.
         :type dimension_name: str
@@ -72,7 +72,7 @@ class ProductMetric:
     def metric_name(self):
         r"""Gets the metric_name of this ProductMetric.
 
-        资源的监控指标名称，必须以字母开头，只能包含0-9/a-z/A-Z/_，字符长度最短为1，最大为64；如：弹性云服务器中的监控指标cpu_util，表示弹性服务器的CPU使用率；文档数据库中的指标mongo001_command_ps，表示command执行频率；各服务的指标名称可查看：“[服务指标名称](ces_03_0059.xml)”。
+        **参数解释**： 资源的监控指标名称，各服务的指标名称可查看：“[服务指标名称](ces_03_0059.xml)”。 **约束限制**： 不涉及。 **取值范围**： 必须以字母开头，只能包含0-9/a-z/A-Z/_/-。字符长度最短为1，最大为96。如：弹性云服务器中的监控指标cpu_util，表示弹性服务器的CPU使用率；文档数据库中的指标mongo001_command_ps，表示command执行频率。         **默认取值**： 不涉及。 
 
         :return: The metric_name of this ProductMetric.
         :rtype: str
@@ -83,7 +83,7 @@ class ProductMetric:
     def metric_name(self, metric_name):
         r"""Sets the metric_name of this ProductMetric.
 
-        资源的监控指标名称，必须以字母开头，只能包含0-9/a-z/A-Z/_，字符长度最短为1，最大为64；如：弹性云服务器中的监控指标cpu_util，表示弹性服务器的CPU使用率；文档数据库中的指标mongo001_command_ps，表示command执行频率；各服务的指标名称可查看：“[服务指标名称](ces_03_0059.xml)”。
+        **参数解释**： 资源的监控指标名称，各服务的指标名称可查看：“[服务指标名称](ces_03_0059.xml)”。 **约束限制**： 不涉及。 **取值范围**： 必须以字母开头，只能包含0-9/a-z/A-Z/_/-。字符长度最短为1，最大为96。如：弹性云服务器中的监控指标cpu_util，表示弹性服务器的CPU使用率；文档数据库中的指标mongo001_command_ps，表示command执行频率。         **默认取值**： 不涉及。 
 
         :param metric_name: The metric_name of this ProductMetric.
         :type metric_name: str

@@ -2675,6 +2675,138 @@ class GaClient(Client):
 
         return http_info
 
+    def list_all_pops(self, request):
+        r"""查询pop列表
+
+        查询pop列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListAllPops
+        :type request: :class:`huaweicloudsdkga.v1.ListAllPopsRequest`
+        :rtype: :class:`huaweicloudsdkga.v1.ListAllPopsResponse`
+        """
+        http_info = self._list_all_pops_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_all_pops_invoker(self, request):
+        http_info = self._list_all_pops_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_all_pops_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/pops",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAllPopsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_tenant_quotas(self, request):
+        r"""查询配额列表
+
+        查询配额列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListTenantQuotas
+        :type request: :class:`huaweicloudsdkga.v1.ListTenantQuotasRequest`
+        :rtype: :class:`huaweicloudsdkga.v1.ListTenantQuotasResponse`
+        """
+        http_info = self._list_tenant_quotas_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_tenant_quotas_invoker(self, request):
+        http_info = self._list_tenant_quotas_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_tenant_quotas_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{domain_id}/ga/quotas",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTenantQuotasResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'domain_id' in local_var_params:
+            path_params['domain_id'] = local_var_params['domain_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_regions(self, request):
         r"""查询区域列表
 

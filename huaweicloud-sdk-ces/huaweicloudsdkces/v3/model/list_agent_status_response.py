@@ -30,7 +30,7 @@ class ListAgentStatusResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param agent_status: agent插件状态列表
+        :param agent_status: **参数解释**: agent插件状态列表 **取值范围**: 数组长度为[1,2000] 
         :type agent_status: list[:class:`huaweicloudsdkces.v3.AgentStatusInfo`]
         """
         
@@ -46,7 +46,7 @@ class ListAgentStatusResponse(SdkResponse):
     def agent_status(self):
         r"""Gets the agent_status of this ListAgentStatusResponse.
 
-        agent插件状态列表
+        **参数解释**: agent插件状态列表 **取值范围**: 数组长度为[1,2000] 
 
         :return: The agent_status of this ListAgentStatusResponse.
         :rtype: list[:class:`huaweicloudsdkces.v3.AgentStatusInfo`]
@@ -57,7 +57,7 @@ class ListAgentStatusResponse(SdkResponse):
     def agent_status(self, agent_status):
         r"""Sets the agent_status of this ListAgentStatusResponse.
 
-        agent插件状态列表
+        **参数解释**: agent插件状态列表 **取值范围**: 数组长度为[1,2000] 
 
         :param agent_status: The agent_status of this ListAgentStatusResponse.
         :type agent_status: list[:class:`huaweicloudsdkces.v3.AgentStatusInfo`]

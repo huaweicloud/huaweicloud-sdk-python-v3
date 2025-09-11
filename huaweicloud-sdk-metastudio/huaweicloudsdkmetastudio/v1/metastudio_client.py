@@ -638,420 +638,6 @@ class MetaStudioClient(Client):
 
         return http_info
 
-    def create_asr_vocabulary(self, request):
-        r"""创建热词表
-
-        该接口用于创建热词表。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for CreateAsrVocabulary
-        :type request: :class:`huaweicloudsdkmetastudio.v1.CreateAsrVocabularyRequest`
-        :rtype: :class:`huaweicloudsdkmetastudio.v1.CreateAsrVocabularyResponse`
-        """
-        http_info = self._create_asr_vocabulary_http_info(request)
-        return self._call_api(**http_info)
-
-    def create_asr_vocabulary_invoker(self, request):
-        http_info = self._create_asr_vocabulary_http_info(request)
-        return SyncInvoker(self, http_info)
-
-    @classmethod
-    def _create_asr_vocabulary_http_info(cls, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v1/{project_id}/digital-human-chat/asr-vocabulary",
-            "request_type": request.__class__.__name__,
-            "response_type": "CreateAsrVocabularyResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-        if 'x_app_user_id' in local_var_params:
-            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["X-Request-Id", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def delete_asr_vocabulary(self, request):
-        r"""删除热词表
-
-        该接口用于删除热词表。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for DeleteAsrVocabulary
-        :type request: :class:`huaweicloudsdkmetastudio.v1.DeleteAsrVocabularyRequest`
-        :rtype: :class:`huaweicloudsdkmetastudio.v1.DeleteAsrVocabularyResponse`
-        """
-        http_info = self._delete_asr_vocabulary_http_info(request)
-        return self._call_api(**http_info)
-
-    def delete_asr_vocabulary_invoker(self, request):
-        http_info = self._delete_asr_vocabulary_http_info(request)
-        return SyncInvoker(self, http_info)
-
-    @classmethod
-    def _delete_asr_vocabulary_http_info(cls, request):
-        http_info = {
-            "method": "DELETE",
-            "resource_path": "/v1/{project_id}/digital-human-chat/asr-vocabulary/{asr_vocabulary_id}",
-            "request_type": request.__class__.__name__,
-            "response_type": "DeleteAsrVocabularyResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'asr_vocabulary_id' in local_var_params:
-            path_params['asr_vocabulary_id'] = local_var_params['asr_vocabulary_id']
-
-        query_params = []
-
-        header_params = {}
-        if 'x_app_user_id' in local_var_params:
-            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["X-Request-Id", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def list_asr_vocabulary(self, request):
-        r"""查询热词表列表
-
-        该接口用于查询热词表列表。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for ListAsrVocabulary
-        :type request: :class:`huaweicloudsdkmetastudio.v1.ListAsrVocabularyRequest`
-        :rtype: :class:`huaweicloudsdkmetastudio.v1.ListAsrVocabularyResponse`
-        """
-        http_info = self._list_asr_vocabulary_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_asr_vocabulary_invoker(self, request):
-        http_info = self._list_asr_vocabulary_http_info(request)
-        return SyncInvoker(self, http_info)
-
-    @classmethod
-    def _list_asr_vocabulary_http_info(cls, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v1/{project_id}/digital-human-chat/asr-vocabulary",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListAsrVocabularyResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-        if 'vocabulary_type' in local_var_params:
-            query_params.append(('vocabulary_type', local_var_params['vocabulary_type']))
-        if 'language' in local_var_params:
-            query_params.append(('language', local_var_params['language']))
-
-        header_params = {}
-        if 'x_app_user_id' in local_var_params:
-            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["X-Request-Id", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def show_asr_vocabulary(self, request):
-        r"""查询热词表详情
-
-        该接口用于查询热词表详情。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for ShowAsrVocabulary
-        :type request: :class:`huaweicloudsdkmetastudio.v1.ShowAsrVocabularyRequest`
-        :rtype: :class:`huaweicloudsdkmetastudio.v1.ShowAsrVocabularyResponse`
-        """
-        http_info = self._show_asr_vocabulary_http_info(request)
-        return self._call_api(**http_info)
-
-    def show_asr_vocabulary_invoker(self, request):
-        http_info = self._show_asr_vocabulary_http_info(request)
-        return SyncInvoker(self, http_info)
-
-    @classmethod
-    def _show_asr_vocabulary_http_info(cls, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v1/{project_id}/digital-human-chat/asr-vocabulary/{asr_vocabulary_id}",
-            "request_type": request.__class__.__name__,
-            "response_type": "ShowAsrVocabularyResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'asr_vocabulary_id' in local_var_params:
-            path_params['asr_vocabulary_id'] = local_var_params['asr_vocabulary_id']
-
-        query_params = []
-
-        header_params = {}
-        if 'x_app_user_id' in local_var_params:
-            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["X-Request-Id", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def show_asr_vocabulary_association(self, request):
-        r"""查询热词表关联详情
-
-        该接口用于查询热词表关联详情。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for ShowAsrVocabularyAssociation
-        :type request: :class:`huaweicloudsdkmetastudio.v1.ShowAsrVocabularyAssociationRequest`
-        :rtype: :class:`huaweicloudsdkmetastudio.v1.ShowAsrVocabularyAssociationResponse`
-        """
-        http_info = self._show_asr_vocabulary_association_http_info(request)
-        return self._call_api(**http_info)
-
-    def show_asr_vocabulary_association_invoker(self, request):
-        http_info = self._show_asr_vocabulary_association_http_info(request)
-        return SyncInvoker(self, http_info)
-
-    @classmethod
-    def _show_asr_vocabulary_association_http_info(cls, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v1/{project_id}/digital-human-chat/asr-vocabulary/association/{asr_vocabulary_id}",
-            "request_type": request.__class__.__name__,
-            "response_type": "ShowAsrVocabularyAssociationResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'asr_vocabulary_id' in local_var_params:
-            path_params['asr_vocabulary_id'] = local_var_params['asr_vocabulary_id']
-
-        query_params = []
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-
-        header_params = {}
-        if 'x_app_user_id' in local_var_params:
-            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["X-Request-Id", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def update_asr_vocabulary(self, request):
-        r"""修改热词表
-
-        该接口用于修改热词表。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for UpdateAsrVocabulary
-        :type request: :class:`huaweicloudsdkmetastudio.v1.UpdateAsrVocabularyRequest`
-        :rtype: :class:`huaweicloudsdkmetastudio.v1.UpdateAsrVocabularyResponse`
-        """
-        http_info = self._update_asr_vocabulary_http_info(request)
-        return self._call_api(**http_info)
-
-    def update_asr_vocabulary_invoker(self, request):
-        http_info = self._update_asr_vocabulary_http_info(request)
-        return SyncInvoker(self, http_info)
-
-    @classmethod
-    def _update_asr_vocabulary_http_info(cls, request):
-        http_info = {
-            "method": "PUT",
-            "resource_path": "/v1/{project_id}/digital-human-chat/asr-vocabulary/{asr_vocabulary_id}",
-            "request_type": request.__class__.__name__,
-            "response_type": "UpdateAsrVocabularyResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'asr_vocabulary_id' in local_var_params:
-            path_params['asr_vocabulary_id'] = local_var_params['asr_vocabulary_id']
-
-        query_params = []
-
-        header_params = {}
-        if 'x_app_user_id' in local_var_params:
-            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["X-Request-Id", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
     def delete_task(self, request):
         r"""删除导入导出任务
 
@@ -14894,6 +14480,134 @@ class MetaStudioClient(Client):
         form_params = {}
 
         body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def sign_agreement(self, request):
+        r"""签署云服务声明
+
+        签署云服务声明。调用此接口前请知悉[[metastudio隐私协议](https://www.huaweicloud.com/declaration/tsa_metastudio.html)](tag:hws)[[metastudio隐私协议](https://www.huaweicloud.com/intl/en-us/declaration-sg/tsa-metastudio.html)](tag:hws_hk)。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for SignAgreement
+        :type request: :class:`huaweicloudsdkmetastudio.v1.SignAgreementRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.SignAgreementResponse`
+        """
+        http_info = self._sign_agreement_http_info(request)
+        return self._call_api(**http_info)
+
+    def sign_agreement_invoker(self, request):
+        http_info = self._sign_agreement_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _sign_agreement_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/tenants/service-agreements/signed",
+            "request_type": request.__class__.__name__,
+            "response_type": "SignAgreementResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def sign_special_agreement(self, request):
+        r"""签署特殊云服务声明
+
+        签署特殊云服务声明,目前可签署自动支付协议。开启自动支付协议之后,调用下单接口时，华为云将进行自动扣费。若因账户余额不足导致扣费失败，系统会生成待支付订单，您可前往费用中心-我的订单查看，届时您需手动完成支付。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for SignSpecialAgreement
+        :type request: :class:`huaweicloudsdkmetastudio.v1.SignSpecialAgreementRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.SignSpecialAgreementResponse`
+        """
+        http_info = self._sign_special_agreement_http_info(request)
+        return self._call_api(**http_info)
+
+    def sign_special_agreement_invoker(self, request):
+        http_info = self._sign_special_agreement_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _sign_special_agreement_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/tenants/special-agreements/signed",
+            "request_type": request.__class__.__name__,
+            "response_type": "SignSpecialAgreementResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 

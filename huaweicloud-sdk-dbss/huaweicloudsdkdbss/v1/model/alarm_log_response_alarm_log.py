@@ -59,7 +59,7 @@ class AlarmLogResponseAlarmLog:
         :type alarm_fix_time: str
         :param alarm_status: 告警确认状态 - DONE: 已确认 - UNDO: 未确认
         :type alarm_status: str
-        :param alarm_risk: 告警风险等级 - LOW - MEDIUM - HIGH
+        :param alarm_risk: 告警风险等级 - LOW：低 - MEDIUM：中 - HIGH：高
         :type alarm_risk: str
         :param alarm_description: 告警描述信息
         :type alarm_description: str
@@ -255,7 +255,7 @@ class AlarmLogResponseAlarmLog:
     def alarm_risk(self):
         r"""Gets the alarm_risk of this AlarmLogResponseAlarmLog.
 
-        告警风险等级 - LOW - MEDIUM - HIGH
+        告警风险等级 - LOW：低 - MEDIUM：中 - HIGH：高
 
         :return: The alarm_risk of this AlarmLogResponseAlarmLog.
         :rtype: str
@@ -266,7 +266,7 @@ class AlarmLogResponseAlarmLog:
     def alarm_risk(self, alarm_risk):
         r"""Sets the alarm_risk of this AlarmLogResponseAlarmLog.
 
-        告警风险等级 - LOW - MEDIUM - HIGH
+        告警风险等级 - LOW：低 - MEDIUM：中 - HIGH：高
 
         :param alarm_risk: The alarm_risk of this AlarmLogResponseAlarmLog.
         :type alarm_risk: str

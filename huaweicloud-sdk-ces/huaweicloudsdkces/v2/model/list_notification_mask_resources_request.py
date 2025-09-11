@@ -33,7 +33,7 @@ class ListNotificationMaskResourcesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param notification_mask_id: 屏蔽规则ID
+        :param notification_mask_id: **参数解释**： 屏蔽规则ID。    **约束限制**： 不涉及。 **取值范围**： 只能包含字母、数字，长度为[1,64]个字符。           **默认取值**： 不涉及。 
         :type notification_mask_id: str
         :param offset: 分页偏移量
         :type offset: int
@@ -58,7 +58,7 @@ class ListNotificationMaskResourcesRequest:
     def notification_mask_id(self):
         r"""Gets the notification_mask_id of this ListNotificationMaskResourcesRequest.
 
-        屏蔽规则ID
+        **参数解释**： 屏蔽规则ID。    **约束限制**： 不涉及。 **取值范围**： 只能包含字母、数字，长度为[1,64]个字符。           **默认取值**： 不涉及。 
 
         :return: The notification_mask_id of this ListNotificationMaskResourcesRequest.
         :rtype: str
@@ -69,7 +69,7 @@ class ListNotificationMaskResourcesRequest:
     def notification_mask_id(self, notification_mask_id):
         r"""Sets the notification_mask_id of this ListNotificationMaskResourcesRequest.
 
-        屏蔽规则ID
+        **参数解释**： 屏蔽规则ID。    **约束限制**： 不涉及。 **取值范围**： 只能包含字母、数字，长度为[1,64]个字符。           **默认取值**： 不涉及。 
 
         :param notification_mask_id: The notification_mask_id of this ListNotificationMaskResourcesRequest.
         :type notification_mask_id: str

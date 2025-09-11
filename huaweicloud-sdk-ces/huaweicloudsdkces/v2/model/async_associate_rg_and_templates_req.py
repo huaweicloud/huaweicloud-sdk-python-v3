@@ -49,19 +49,19 @@ class AsyncAssociateRGAndTemplatesReq:
 
         :param template_ids: 告警模板编号列表，当ID列表为空时，将删除该资源分组已关联的告警模板所创建的告警规则
         :type template_ids: list[str]
-        :param notification_enabled: 是否开启告警通知。true:开启，false:关闭。
+        :param notification_enabled: **参数解释**： 是否开启告警通知。     **约束限制**： 不涉及。 **取值范围**： 布尔值。 - true:开启。 - false:关闭。 **默认取值**： true 
         :type notification_enabled: bool
         :param alarm_notifications: 告警触发通知列表
         :type alarm_notifications: list[:class:`huaweicloudsdkces.v2.Notification`]
         :param ok_notifications: 告警恢复通知列表
         :type ok_notifications: list[:class:`huaweicloudsdkces.v2.Notification`]
-        :param notification_begin_time: **参数解释**： 每天告警通知的开始时间。 **约束限制**： 不涉及。 **取值范围**： 长度为[1,64]个字符。 **默认取值**： 不涉及。 
+        :param notification_begin_time: **参数解释**： 告警通知开启时间。    **约束限制**： 不涉及。 **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。           **默认取值**： 不涉及。 
         :type notification_begin_time: str
-        :param notification_end_time: **参数解释**： 每天告警通知的结束时间。 **约束限制**： 不涉及。 **取值范围**： 长度为[1,64]个字符。 **默认取值**： 不涉及。 
+        :param notification_end_time: **参数解释**： 告警通知关闭时间。    **约束限制**： 不涉及。 **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。           **默认取值**： 不涉及。 
         :type notification_end_time: str
-        :param effective_timezone: 时区，形如：\&quot;GMT-08:00\&quot;、\&quot;GMT+08:00\&quot;、\&quot;GMT+0:00\&quot;
+        :param effective_timezone: **参数解释**： 时区，形如：\&quot;GMT-08:00\&quot;、\&quot;GMT+08:00\&quot;、\&quot;GMT+0:00\&quot;。    **约束限制**： 不涉及。 **取值范围**： 长度为[1,16]个字符。           **默认取值**： 不涉及。 
         :type effective_timezone: str
-        :param enterprise_project_id: 企业项目ID
+        :param enterprise_project_id: **参数解释**： 企业项目ID。     **约束限制**： 不涉及。 **取值范围**： 只能包含小写字母、数字、“-”。           **默认取值**： 不涉及。 
         :type enterprise_project_id: str
         :param notification_manner: NOTIFICATION_GROUP(通知组)/TOPIC_SUBSCRIPTION(主题订阅)/NOTIFICATION_POLICY(通知策略)
         :type notification_manner: str
@@ -128,7 +128,7 @@ class AsyncAssociateRGAndTemplatesReq:
     def notification_enabled(self):
         r"""Gets the notification_enabled of this AsyncAssociateRGAndTemplatesReq.
 
-        是否开启告警通知。true:开启，false:关闭。
+        **参数解释**： 是否开启告警通知。     **约束限制**： 不涉及。 **取值范围**： 布尔值。 - true:开启。 - false:关闭。 **默认取值**： true 
 
         :return: The notification_enabled of this AsyncAssociateRGAndTemplatesReq.
         :rtype: bool
@@ -139,7 +139,7 @@ class AsyncAssociateRGAndTemplatesReq:
     def notification_enabled(self, notification_enabled):
         r"""Sets the notification_enabled of this AsyncAssociateRGAndTemplatesReq.
 
-        是否开启告警通知。true:开启，false:关闭。
+        **参数解释**： 是否开启告警通知。     **约束限制**： 不涉及。 **取值范围**： 布尔值。 - true:开启。 - false:关闭。 **默认取值**： true 
 
         :param notification_enabled: The notification_enabled of this AsyncAssociateRGAndTemplatesReq.
         :type notification_enabled: bool
@@ -194,7 +194,7 @@ class AsyncAssociateRGAndTemplatesReq:
     def notification_begin_time(self):
         r"""Gets the notification_begin_time of this AsyncAssociateRGAndTemplatesReq.
 
-        **参数解释**： 每天告警通知的开始时间。 **约束限制**： 不涉及。 **取值范围**： 长度为[1,64]个字符。 **默认取值**： 不涉及。 
+        **参数解释**： 告警通知开启时间。    **约束限制**： 不涉及。 **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。           **默认取值**： 不涉及。 
 
         :return: The notification_begin_time of this AsyncAssociateRGAndTemplatesReq.
         :rtype: str
@@ -205,7 +205,7 @@ class AsyncAssociateRGAndTemplatesReq:
     def notification_begin_time(self, notification_begin_time):
         r"""Sets the notification_begin_time of this AsyncAssociateRGAndTemplatesReq.
 
-        **参数解释**： 每天告警通知的开始时间。 **约束限制**： 不涉及。 **取值范围**： 长度为[1,64]个字符。 **默认取值**： 不涉及。 
+        **参数解释**： 告警通知开启时间。    **约束限制**： 不涉及。 **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。           **默认取值**： 不涉及。 
 
         :param notification_begin_time: The notification_begin_time of this AsyncAssociateRGAndTemplatesReq.
         :type notification_begin_time: str
@@ -216,7 +216,7 @@ class AsyncAssociateRGAndTemplatesReq:
     def notification_end_time(self):
         r"""Gets the notification_end_time of this AsyncAssociateRGAndTemplatesReq.
 
-        **参数解释**： 每天告警通知的结束时间。 **约束限制**： 不涉及。 **取值范围**： 长度为[1,64]个字符。 **默认取值**： 不涉及。 
+        **参数解释**： 告警通知关闭时间。    **约束限制**： 不涉及。 **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。           **默认取值**： 不涉及。 
 
         :return: The notification_end_time of this AsyncAssociateRGAndTemplatesReq.
         :rtype: str
@@ -227,7 +227,7 @@ class AsyncAssociateRGAndTemplatesReq:
     def notification_end_time(self, notification_end_time):
         r"""Sets the notification_end_time of this AsyncAssociateRGAndTemplatesReq.
 
-        **参数解释**： 每天告警通知的结束时间。 **约束限制**： 不涉及。 **取值范围**： 长度为[1,64]个字符。 **默认取值**： 不涉及。 
+        **参数解释**： 告警通知关闭时间。    **约束限制**： 不涉及。 **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。           **默认取值**： 不涉及。 
 
         :param notification_end_time: The notification_end_time of this AsyncAssociateRGAndTemplatesReq.
         :type notification_end_time: str
@@ -238,7 +238,7 @@ class AsyncAssociateRGAndTemplatesReq:
     def effective_timezone(self):
         r"""Gets the effective_timezone of this AsyncAssociateRGAndTemplatesReq.
 
-        时区，形如：\"GMT-08:00\"、\"GMT+08:00\"、\"GMT+0:00\"
+        **参数解释**： 时区，形如：\"GMT-08:00\"、\"GMT+08:00\"、\"GMT+0:00\"。    **约束限制**： 不涉及。 **取值范围**： 长度为[1,16]个字符。           **默认取值**： 不涉及。 
 
         :return: The effective_timezone of this AsyncAssociateRGAndTemplatesReq.
         :rtype: str
@@ -249,7 +249,7 @@ class AsyncAssociateRGAndTemplatesReq:
     def effective_timezone(self, effective_timezone):
         r"""Sets the effective_timezone of this AsyncAssociateRGAndTemplatesReq.
 
-        时区，形如：\"GMT-08:00\"、\"GMT+08:00\"、\"GMT+0:00\"
+        **参数解释**： 时区，形如：\"GMT-08:00\"、\"GMT+08:00\"、\"GMT+0:00\"。    **约束限制**： 不涉及。 **取值范围**： 长度为[1,16]个字符。           **默认取值**： 不涉及。 
 
         :param effective_timezone: The effective_timezone of this AsyncAssociateRGAndTemplatesReq.
         :type effective_timezone: str
@@ -260,7 +260,7 @@ class AsyncAssociateRGAndTemplatesReq:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this AsyncAssociateRGAndTemplatesReq.
 
-        企业项目ID
+        **参数解释**： 企业项目ID。     **约束限制**： 不涉及。 **取值范围**： 只能包含小写字母、数字、“-”。           **默认取值**： 不涉及。 
 
         :return: The enterprise_project_id of this AsyncAssociateRGAndTemplatesReq.
         :rtype: str
@@ -271,7 +271,7 @@ class AsyncAssociateRGAndTemplatesReq:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this AsyncAssociateRGAndTemplatesReq.
 
-        企业项目ID
+        **参数解释**： 企业项目ID。     **约束限制**： 不涉及。 **取值范围**： 只能包含小写字母、数字、“-”。           **默认取值**： 不涉及。 
 
         :param enterprise_project_id: The enterprise_project_id of this AsyncAssociateRGAndTemplatesReq.
         :type enterprise_project_id: str

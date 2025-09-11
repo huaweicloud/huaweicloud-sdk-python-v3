@@ -41,7 +41,7 @@ class UpdateImmutableRuleBody:
 
         :param priority: 优先级，默认值为0
         :type priority: int
-        :param disabled: 不可变规则是否生效，默认值为false
+        :param disabled: 不可变策略是否生效，默认值为false
         :type disabled: bool
         :param action: 预留字段，支持填immutable
         :type action: str
@@ -100,7 +100,7 @@ class UpdateImmutableRuleBody:
     def disabled(self):
         r"""Gets the disabled of this UpdateImmutableRuleBody.
 
-        不可变规则是否生效，默认值为false
+        不可变策略是否生效，默认值为false
 
         :return: The disabled of this UpdateImmutableRuleBody.
         :rtype: bool
@@ -111,7 +111,7 @@ class UpdateImmutableRuleBody:
     def disabled(self, disabled):
         r"""Sets the disabled of this UpdateImmutableRuleBody.
 
-        不可变规则是否生效，默认值为false
+        不可变策略是否生效，默认值为false
 
         :param disabled: The disabled of this UpdateImmutableRuleBody.
         :type disabled: bool

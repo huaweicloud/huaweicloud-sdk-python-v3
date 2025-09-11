@@ -37,7 +37,7 @@ class ListBindedEipsRequest:
 
         :param x_language: 语言
         :type x_language: str
-        :param instance_id: 实例ID。
+        :param instance_id: **参数解释**: 实例ID，此参数是用户创建实例的唯一标识。 **约束限制**: 不涉及。 **取值范围**: 只能由英文字母、数字组成，且长度为36个字符。 **默认取值**: 不涉及。
         :type instance_id: str
         :param offset: 索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
         :type offset: int
@@ -87,7 +87,7 @@ class ListBindedEipsRequest:
     def instance_id(self):
         r"""Gets the instance_id of this ListBindedEipsRequest.
 
-        实例ID。
+        **参数解释**: 实例ID，此参数是用户创建实例的唯一标识。 **约束限制**: 不涉及。 **取值范围**: 只能由英文字母、数字组成，且长度为36个字符。 **默认取值**: 不涉及。
 
         :return: The instance_id of this ListBindedEipsRequest.
         :rtype: str
@@ -98,7 +98,7 @@ class ListBindedEipsRequest:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this ListBindedEipsRequest.
 
-        实例ID。
+        **参数解释**: 实例ID，此参数是用户创建实例的唯一标识。 **约束限制**: 不涉及。 **取值范围**: 只能由英文字母、数字组成，且长度为36个字符。 **默认取值**: 不涉及。
 
         :param instance_id: The instance_id of this ListBindedEipsRequest.
         :type instance_id: str

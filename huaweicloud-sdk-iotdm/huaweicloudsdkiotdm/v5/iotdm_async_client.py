@@ -33,6 +33,77 @@ class IoTDMAsyncClient(Client):
 
         return client_builder
 
+    def list_instance_flavors_async(self, request):
+        r"""查询实例规格列表
+
+        用户可以调用此接口查询设备接入服务支持的实例规格列表。支持的实例规格请参见[[产品规格说明](https://support.huaweicloud.com/productdesc-iothub/iot_04_0014.html)](tag:hws)[[产品规格说明](https://support.huaweicloud.com/intl/zh-cn/productdesc-iothub/iot_04_0014.html)](tag:hws_hk)。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListInstanceFlavors
+        :type request: :class:`huaweicloudsdkiotdm.v5.ListInstanceFlavorsRequest`
+        :rtype: :class:`huaweicloudsdkiotdm.v5.ListInstanceFlavorsResponse`
+        """
+        http_info = self._list_instance_flavors_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_instance_flavors_async_invoker(self, request):
+        http_info = self._list_instance_flavors_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_instance_flavors_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/iot/{project_id}/iotda-instances/flavors",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListInstanceFlavorsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'instance_type' in local_var_params:
+            query_params.append(('instance_type', local_var_params['instance_type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def bind_instance_tags_async(self, request):
         r"""添加实例标签
 
@@ -627,6 +698,211 @@ class IoTDMAsyncClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_instance_tasks_async(self, request):
+        r"""查询实例任务列表
+
+        用户可以调用此接口查询设备接入实例任务列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListInstanceTasks
+        :type request: :class:`huaweicloudsdkiotdm.v5.ListInstanceTasksRequest`
+        :rtype: :class:`huaweicloudsdkiotdm.v5.ListInstanceTasksResponse`
+        """
+        http_info = self._list_instance_tasks_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_instance_tasks_async_invoker(self, request):
+        http_info = self._list_instance_tasks_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_instance_tasks_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/iot/{project_id}/iotda-instances/{instance_id}/tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListInstanceTasksResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def retry_instance_task_async(self, request):
+        r"""重试实例任务
+
+        用户可以调用此接口对运行失败的实例任务进行重试。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for RetryInstanceTask
+        :type request: :class:`huaweicloudsdkiotdm.v5.RetryInstanceTaskRequest`
+        :rtype: :class:`huaweicloudsdkiotdm.v5.RetryInstanceTaskResponse`
+        """
+        http_info = self._retry_instance_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def retry_instance_task_async_invoker(self, request):
+        http_info = self._retry_instance_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _retry_instance_task_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/iot/{project_id}/iotda-instances/{instance_id}/tasks/{task_id}/retry",
+            "request_type": request.__class__.__name__,
+            "response_type": "RetryInstanceTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_instance_task_async(self, request):
+        r"""查询实例任务详情
+
+        用户可以调用此接口查询设备接入实例任务详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowInstanceTask
+        :type request: :class:`huaweicloudsdkiotdm.v5.ShowInstanceTaskRequest`
+        :rtype: :class:`huaweicloudsdkiotdm.v5.ShowInstanceTaskResponse`
+        """
+        http_info = self._show_instance_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_instance_task_async_invoker(self, request):
+        http_info = self._show_instance_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_instance_task_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/iot/{project_id}/iotda-instances/{instance_id}/tasks/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowInstanceTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 

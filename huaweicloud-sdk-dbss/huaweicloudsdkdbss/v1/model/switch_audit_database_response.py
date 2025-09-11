@@ -30,7 +30,7 @@ class SwitchAuditDatabaseResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param status: 响应状态
+        :param status: 状态  - SUCCESS:成功  - FAILED:失败
         :type status: str
         """
         
@@ -46,7 +46,7 @@ class SwitchAuditDatabaseResponse(SdkResponse):
     def status(self):
         r"""Gets the status of this SwitchAuditDatabaseResponse.
 
-        响应状态
+        状态  - SUCCESS:成功  - FAILED:失败
 
         :return: The status of this SwitchAuditDatabaseResponse.
         :rtype: str
@@ -57,7 +57,7 @@ class SwitchAuditDatabaseResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this SwitchAuditDatabaseResponse.
 
-        响应状态
+        状态  - SUCCESS:成功  - FAILED:失败
 
         :param status: The status of this SwitchAuditDatabaseResponse.
         :type status: str

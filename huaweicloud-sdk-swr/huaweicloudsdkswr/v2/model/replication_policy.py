@@ -57,7 +57,7 @@ class ReplicationPolicy:
         :type id: int
         :param name: 策略名称
         :type name: str
-        :param description: 策略描述描述
+        :param description: 策略描述
         :type description: str
         :param src_registry: 
         :type src_registry: :class:`huaweicloudsdkswr.v2.ReplicationRegistry`
@@ -67,13 +67,13 @@ class ReplicationPolicy:
         :type dest_namespace: str
         :param filters: 源资源过滤器
         :type filters: list[:class:`huaweicloudsdkswr.v2.Filter`]
-        :param repo_scope_mode: repo的范围模式
+        :param repo_scope_mode: repo过滤类型
         :type repo_scope_mode: str
         :param trigger: 
         :type trigger: :class:`huaweicloudsdkswr.v2.TriggerConfig`
         :param override: 是否覆盖
         :type override: bool
-        :param enabled: 是否使用
+        :param enabled: 是否启用
         :type enabled: bool
         :param created_at: 创建时间
         :type created_at: str
@@ -173,7 +173,7 @@ class ReplicationPolicy:
     def description(self):
         r"""Gets the description of this ReplicationPolicy.
 
-        策略描述描述
+        策略描述
 
         :return: The description of this ReplicationPolicy.
         :rtype: str
@@ -184,7 +184,7 @@ class ReplicationPolicy:
     def description(self, description):
         r"""Sets the description of this ReplicationPolicy.
 
-        策略描述描述
+        策略描述
 
         :param description: The description of this ReplicationPolicy.
         :type description: str
@@ -275,7 +275,7 @@ class ReplicationPolicy:
     def repo_scope_mode(self):
         r"""Gets the repo_scope_mode of this ReplicationPolicy.
 
-        repo的范围模式
+        repo过滤类型
 
         :return: The repo_scope_mode of this ReplicationPolicy.
         :rtype: str
@@ -286,7 +286,7 @@ class ReplicationPolicy:
     def repo_scope_mode(self, repo_scope_mode):
         r"""Sets the repo_scope_mode of this ReplicationPolicy.
 
-        repo的范围模式
+        repo过滤类型
 
         :param repo_scope_mode: The repo_scope_mode of this ReplicationPolicy.
         :type repo_scope_mode: str
@@ -337,7 +337,7 @@ class ReplicationPolicy:
     def enabled(self):
         r"""Gets the enabled of this ReplicationPolicy.
 
-        是否使用
+        是否启用
 
         :return: The enabled of this ReplicationPolicy.
         :rtype: bool
@@ -348,7 +348,7 @@ class ReplicationPolicy:
     def enabled(self, enabled):
         r"""Sets the enabled of this ReplicationPolicy.
 
-        是否使用
+        是否启用
 
         :param enabled: The enabled of this ReplicationPolicy.
         :type enabled: bool

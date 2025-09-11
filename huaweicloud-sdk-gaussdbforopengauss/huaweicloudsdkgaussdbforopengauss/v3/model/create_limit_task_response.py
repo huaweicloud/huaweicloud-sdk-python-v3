@@ -90,7 +90,7 @@ class CreateLimitTaskResponse(SdkResponse):
         :type key_words: str
         :param status: 限流任务状态，当前支持：CREATING，UPDATEING，DELETING，WAIT_EXCUTE，EXCUTING，TIME_OVER，DELETED，CREATE_FAILED，UPDATE_FAILED，DELETE_FAILED，EXCEPTION，NODE_SHUT_DOWN。
         :type status: str
-        :param instance_id: 实例id。
+        :param instance_id: **参数解释**: 实例ID。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
         :type instance_id: str
         :param rule_name: 规则名。
         :type rule_name: str
@@ -391,7 +391,7 @@ class CreateLimitTaskResponse(SdkResponse):
     def instance_id(self):
         r"""Gets the instance_id of this CreateLimitTaskResponse.
 
-        实例id。
+        **参数解释**: 实例ID。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
 
         :return: The instance_id of this CreateLimitTaskResponse.
         :rtype: str
@@ -402,7 +402,7 @@ class CreateLimitTaskResponse(SdkResponse):
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this CreateLimitTaskResponse.
 
-        实例id。
+        **参数解释**: 实例ID。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
 
         :param instance_id: The instance_id of this CreateLimitTaskResponse.
         :type instance_id: str

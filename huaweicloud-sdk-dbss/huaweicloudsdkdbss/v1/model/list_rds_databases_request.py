@@ -33,11 +33,11 @@ class ListRdsDatabasesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param db_type: 数据库类型 - MYSQL - POSTGRESQL - SQLSERVER - TAURUS - DWS - MARIADB - GAUSSDBOPENGAUSS
+        :param db_type: **参数解释**： 数据库类型 **约束限制**： 区分大小写，只能传递取值范围内的值 **取值范围**：   - MYSQL   - ORACLE   - POSTGRESQL   - SQLSERVER   - DAMENG   - TAURUS   - DWS   - KINGBASE   - MARIADB   - GAUSSDBOPENGAUSS **默认取值**： 不涉及 
         :type db_type: str
-        :param offset: 偏移量，从第一条数据偏移offset条数据后开始查询，默认为0。
+        :param offset: **参数解释**： 分页偏移量，从第一条数据偏移offset条数据后开始查询 **约束限制**： 仅支持大于等于0的整数 **取值范围**： 大于等于0 **默认取值**： 默认值为0 
         :type offset: str
-        :param limit: 查询记录数，默认为100。
+        :param limit: **参数解释**： 每页查询记录数。 **约束限制**： 仅支持大于0的整数 **取值范围**： 大于0小于等于10000 **默认取值**： 默认值为100 
         :type limit: str
         """
         
@@ -58,7 +58,7 @@ class ListRdsDatabasesRequest:
     def db_type(self):
         r"""Gets the db_type of this ListRdsDatabasesRequest.
 
-        数据库类型 - MYSQL - POSTGRESQL - SQLSERVER - TAURUS - DWS - MARIADB - GAUSSDBOPENGAUSS
+        **参数解释**： 数据库类型 **约束限制**： 区分大小写，只能传递取值范围内的值 **取值范围**：   - MYSQL   - ORACLE   - POSTGRESQL   - SQLSERVER   - DAMENG   - TAURUS   - DWS   - KINGBASE   - MARIADB   - GAUSSDBOPENGAUSS **默认取值**： 不涉及 
 
         :return: The db_type of this ListRdsDatabasesRequest.
         :rtype: str
@@ -69,7 +69,7 @@ class ListRdsDatabasesRequest:
     def db_type(self, db_type):
         r"""Sets the db_type of this ListRdsDatabasesRequest.
 
-        数据库类型 - MYSQL - POSTGRESQL - SQLSERVER - TAURUS - DWS - MARIADB - GAUSSDBOPENGAUSS
+        **参数解释**： 数据库类型 **约束限制**： 区分大小写，只能传递取值范围内的值 **取值范围**：   - MYSQL   - ORACLE   - POSTGRESQL   - SQLSERVER   - DAMENG   - TAURUS   - DWS   - KINGBASE   - MARIADB   - GAUSSDBOPENGAUSS **默认取值**： 不涉及 
 
         :param db_type: The db_type of this ListRdsDatabasesRequest.
         :type db_type: str
@@ -80,7 +80,7 @@ class ListRdsDatabasesRequest:
     def offset(self):
         r"""Gets the offset of this ListRdsDatabasesRequest.
 
-        偏移量，从第一条数据偏移offset条数据后开始查询，默认为0。
+        **参数解释**： 分页偏移量，从第一条数据偏移offset条数据后开始查询 **约束限制**： 仅支持大于等于0的整数 **取值范围**： 大于等于0 **默认取值**： 默认值为0 
 
         :return: The offset of this ListRdsDatabasesRequest.
         :rtype: str
@@ -91,7 +91,7 @@ class ListRdsDatabasesRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListRdsDatabasesRequest.
 
-        偏移量，从第一条数据偏移offset条数据后开始查询，默认为0。
+        **参数解释**： 分页偏移量，从第一条数据偏移offset条数据后开始查询 **约束限制**： 仅支持大于等于0的整数 **取值范围**： 大于等于0 **默认取值**： 默认值为0 
 
         :param offset: The offset of this ListRdsDatabasesRequest.
         :type offset: str
@@ -102,7 +102,7 @@ class ListRdsDatabasesRequest:
     def limit(self):
         r"""Gets the limit of this ListRdsDatabasesRequest.
 
-        查询记录数，默认为100。
+        **参数解释**： 每页查询记录数。 **约束限制**： 仅支持大于0的整数 **取值范围**： 大于0小于等于10000 **默认取值**： 默认值为100 
 
         :return: The limit of this ListRdsDatabasesRequest.
         :rtype: str
@@ -113,7 +113,7 @@ class ListRdsDatabasesRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListRdsDatabasesRequest.
 
-        查询记录数，默认为100。
+        **参数解释**： 每页查询记录数。 **约束限制**： 仅支持大于0的整数 **取值范围**： 大于0小于等于10000 **默认取值**： 默认值为100 
 
         :param limit: The limit of this ListRdsDatabasesRequest.
         :type limit: str

@@ -27,6 +27,7 @@ class ShowServerResponse:
         'client_ca_certificates': 'list[QueryClientCaCertificateBody]',
         'ssl_options': 'ShowServerResponseSslOptions',
         'dns_servers': 'list[str]',
+        'idp_name': 'str',
         'status': 'str',
         'created_at': 'datetime',
         'updated_at': 'datetime'
@@ -43,12 +44,13 @@ class ShowServerResponse:
         'client_ca_certificates': 'client_ca_certificates',
         'ssl_options': 'ssl_options',
         'dns_servers': 'dns_servers',
+        'idp_name': 'idp_name',
         'status': 'status',
         'created_at': 'created_at',
         'updated_at': 'updated_at'
     }
 
-    def __init__(self, id=None, p2c_vgw_id=None, client_cidr=None, local_subnets=None, client_auth_type=None, tunnel_protocol=None, server_certificate=None, client_ca_certificates=None, ssl_options=None, dns_servers=None, status=None, created_at=None, updated_at=None):
+    def __init__(self, id=None, p2c_vgw_id=None, client_cidr=None, local_subnets=None, client_auth_type=None, tunnel_protocol=None, server_certificate=None, client_ca_certificates=None, ssl_options=None, dns_servers=None, idp_name=None, status=None, created_at=None, updated_at=None):
         r"""ShowServerResponse
 
         The model defined in huaweicloud sdk
@@ -73,6 +75,8 @@ class ShowServerResponse:
         :type ssl_options: :class:`huaweicloudsdkvpn.v5.ShowServerResponseSslOptions`
         :param dns_servers: DNS服务器列表
         :type dns_servers: list[str]
+        :param idp_name: 身份提供商名称。
+        :type idp_name: str
         :param status: 服务端状态
         :type status: str
         :param created_at: 创建时间
@@ -93,6 +97,7 @@ class ShowServerResponse:
         self._client_ca_certificates = None
         self._ssl_options = None
         self._dns_servers = None
+        self._idp_name = None
         self._status = None
         self._created_at = None
         self._updated_at = None
@@ -118,6 +123,8 @@ class ShowServerResponse:
             self.ssl_options = ssl_options
         if dns_servers is not None:
             self.dns_servers = dns_servers
+        if idp_name is not None:
+            self.idp_name = idp_name
         if status is not None:
             self.status = status
         if created_at is not None:
@@ -336,6 +343,28 @@ class ShowServerResponse:
         :type dns_servers: list[str]
         """
         self._dns_servers = dns_servers
+
+    @property
+    def idp_name(self):
+        r"""Gets the idp_name of this ShowServerResponse.
+
+        身份提供商名称。
+
+        :return: The idp_name of this ShowServerResponse.
+        :rtype: str
+        """
+        return self._idp_name
+
+    @idp_name.setter
+    def idp_name(self, idp_name):
+        r"""Sets the idp_name of this ShowServerResponse.
+
+        身份提供商名称。
+
+        :param idp_name: The idp_name of this ShowServerResponse.
+        :type idp_name: str
+        """
+        self._idp_name = idp_name
 
     @property
     def status(self):

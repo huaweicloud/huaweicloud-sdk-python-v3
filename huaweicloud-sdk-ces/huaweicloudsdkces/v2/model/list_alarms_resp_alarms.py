@@ -59,13 +59,13 @@ class ListAlarmsRespAlarms:
 
         The model defined in huaweicloud sdk
 
-        :param alarm_id: 告警规则id，以al开头，包含22个数字或字母
+        :param alarm_id: **参数解释**： 告警规则id。     **约束限制**： 不涉及。 **取值范围**： 以al开头，后跟22个数字或字母。           **默认取值**： 不涉及。 
         :type alarm_id: str
-        :param name: 告警名称, 只能包含0-9/a-z/A-Z/_/-或汉字，长度1-128
+        :param name: **参数解释**： 告警名称。 **约束限制**： 不涉及。 **取值范围**： 只能包含0-9/a-z/A-Z/_/-或汉字，长度[1，128]个字符。           **默认取值**： 不涉及。 
         :type name: str
-        :param description: 告警描述，长度0-256
+        :param description: **参数解释**： 告警描述。     **约束限制**： 不涉及。 **取值范围**： 长度为[0,256]个字符。        **默认取值**： 不涉及。 
         :type description: str
-        :param namespace: 查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”
+        :param namespace: **参数解释**： 查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”。 **约束限制**： 不涉及。 **取值范围**： 格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_。字符串的长度必须在 3 到 32个字符之间。 **默认取值**： 不涉及。 
         :type namespace: str
         :param policies: 告警策略
         :type policies: list[:class:`huaweicloudsdkces.v2.OneClickAlarmPolicy`]
@@ -73,19 +73,19 @@ class ListAlarmsRespAlarms:
         :type resources: list[:class:`huaweicloudsdkces.v2.ResourcesInListResp`]
         :param type: 
         :type type: :class:`huaweicloudsdkces.v2.AlarmType`
-        :param enabled: 是否开启告警规则。true:开启，false:关闭。
+        :param enabled: **参数解释**： 是否开启告警规则。     **约束限制**： 不涉及。 **取值范围**： 布尔值。 - true:开启。 - false:关闭。 **默认取值**： true 
         :type enabled: bool
-        :param notification_enabled: 是否开启告警通知。true:开启，false:关闭。
+        :param notification_enabled: **参数解释**： 是否开启告警通知。     **约束限制**： 不涉及。 **取值范围**： 布尔值。 - true:开启。 - false:关闭。 **默认取值**： true 
         :type notification_enabled: bool
-        :param alarm_notifications: **参数解释**： 触发告警时，通知组/主题订阅的信息。 **约束限制**： 不涉及。 **取值范围**： 告警触发的动作数量最多为10个。 **默认取值**： 不涉及。 
+        :param alarm_notifications: **参数解释**： 触发告警时，通知组/主题订阅的信息。 **约束限制**： 不涉及。 **取值范围**： 包含的通知信息的数量最多为10个。 **默认取值**： 不涉及。 
         :type alarm_notifications: list[:class:`huaweicloudsdkces.v2.Notification`]
-        :param ok_notifications: **参数解释**： 告警恢复时，通知组/主题订阅的信息。 **约束限制**： 不涉及。 **取值范围**： 告警恢复触发的动作数量最多为10个。 **默认取值**： 不涉及。 
+        :param ok_notifications: **参数解释**： 告警恢复时，通知组/主题订阅的信息。 **约束限制**： 不涉及。 **取值范围**： 包含的通知信息的数量最多为10个。 **默认取值**： 不涉及。 
         :type ok_notifications: list[:class:`huaweicloudsdkces.v2.Notification`]
-        :param notification_begin_time: **参数解释**： 每天告警通知的开始时间。 **约束限制**： 不涉及。 **取值范围**： 长度为[1,64]个字符。 **默认取值**： 不涉及。 
+        :param notification_begin_time: **参数解释**： 告警通知开启时间。    **约束限制**： 不涉及。 **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。           **默认取值**： 不涉及。 
         :type notification_begin_time: str
-        :param notification_end_time: **参数解释**： 每天告警通知的结束时间。 **约束限制**： 不涉及。 **取值范围**： 长度为[1,64]个字符。 **默认取值**： 不涉及。 
+        :param notification_end_time: **参数解释**： 告警通知关闭时间。    **约束限制**： 不涉及。 **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。           **默认取值**： 不涉及。 
         :type notification_end_time: str
-        :param effective_timezone: 时区，形如：\&quot;GMT-08:00\&quot;、\&quot;GMT+08:00\&quot;、\&quot;GMT+0:00\&quot;
+        :param effective_timezone: **参数解释**： 时区，形如：\&quot;GMT-08:00\&quot;、\&quot;GMT+08:00\&quot;、\&quot;GMT+0:00\&quot;。    **约束限制**： 不涉及。 **取值范围**： 长度为[1,16]个字符。           **默认取值**： 不涉及。 
         :type effective_timezone: str
         :param notification_manner: NOTIFICATION_GROUP(通知组)/TOPIC_SUBSCRIPTION(主题订阅)/NOTIFICATION_POLICY(通知策略)
         :type notification_manner: str
@@ -150,7 +150,7 @@ class ListAlarmsRespAlarms:
     def alarm_id(self):
         r"""Gets the alarm_id of this ListAlarmsRespAlarms.
 
-        告警规则id，以al开头，包含22个数字或字母
+        **参数解释**： 告警规则id。     **约束限制**： 不涉及。 **取值范围**： 以al开头，后跟22个数字或字母。           **默认取值**： 不涉及。 
 
         :return: The alarm_id of this ListAlarmsRespAlarms.
         :rtype: str
@@ -161,7 +161,7 @@ class ListAlarmsRespAlarms:
     def alarm_id(self, alarm_id):
         r"""Sets the alarm_id of this ListAlarmsRespAlarms.
 
-        告警规则id，以al开头，包含22个数字或字母
+        **参数解释**： 告警规则id。     **约束限制**： 不涉及。 **取值范围**： 以al开头，后跟22个数字或字母。           **默认取值**： 不涉及。 
 
         :param alarm_id: The alarm_id of this ListAlarmsRespAlarms.
         :type alarm_id: str
@@ -172,7 +172,7 @@ class ListAlarmsRespAlarms:
     def name(self):
         r"""Gets the name of this ListAlarmsRespAlarms.
 
-        告警名称, 只能包含0-9/a-z/A-Z/_/-或汉字，长度1-128
+        **参数解释**： 告警名称。 **约束限制**： 不涉及。 **取值范围**： 只能包含0-9/a-z/A-Z/_/-或汉字，长度[1，128]个字符。           **默认取值**： 不涉及。 
 
         :return: The name of this ListAlarmsRespAlarms.
         :rtype: str
@@ -183,7 +183,7 @@ class ListAlarmsRespAlarms:
     def name(self, name):
         r"""Sets the name of this ListAlarmsRespAlarms.
 
-        告警名称, 只能包含0-9/a-z/A-Z/_/-或汉字，长度1-128
+        **参数解释**： 告警名称。 **约束限制**： 不涉及。 **取值范围**： 只能包含0-9/a-z/A-Z/_/-或汉字，长度[1，128]个字符。           **默认取值**： 不涉及。 
 
         :param name: The name of this ListAlarmsRespAlarms.
         :type name: str
@@ -194,7 +194,7 @@ class ListAlarmsRespAlarms:
     def description(self):
         r"""Gets the description of this ListAlarmsRespAlarms.
 
-        告警描述，长度0-256
+        **参数解释**： 告警描述。     **约束限制**： 不涉及。 **取值范围**： 长度为[0,256]个字符。        **默认取值**： 不涉及。 
 
         :return: The description of this ListAlarmsRespAlarms.
         :rtype: str
@@ -205,7 +205,7 @@ class ListAlarmsRespAlarms:
     def description(self, description):
         r"""Sets the description of this ListAlarmsRespAlarms.
 
-        告警描述，长度0-256
+        **参数解释**： 告警描述。     **约束限制**： 不涉及。 **取值范围**： 长度为[0,256]个字符。        **默认取值**： 不涉及。 
 
         :param description: The description of this ListAlarmsRespAlarms.
         :type description: str
@@ -216,7 +216,7 @@ class ListAlarmsRespAlarms:
     def namespace(self):
         r"""Gets the namespace of this ListAlarmsRespAlarms.
 
-        查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”
+        **参数解释**： 查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”。 **约束限制**： 不涉及。 **取值范围**： 格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_。字符串的长度必须在 3 到 32个字符之间。 **默认取值**： 不涉及。 
 
         :return: The namespace of this ListAlarmsRespAlarms.
         :rtype: str
@@ -227,7 +227,7 @@ class ListAlarmsRespAlarms:
     def namespace(self, namespace):
         r"""Sets the namespace of this ListAlarmsRespAlarms.
 
-        查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”
+        **参数解释**： 查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”。 **约束限制**： 不涉及。 **取值范围**： 格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_。字符串的长度必须在 3 到 32个字符之间。 **默认取值**： 不涉及。 
 
         :param namespace: The namespace of this ListAlarmsRespAlarms.
         :type namespace: str
@@ -300,7 +300,7 @@ class ListAlarmsRespAlarms:
     def enabled(self):
         r"""Gets the enabled of this ListAlarmsRespAlarms.
 
-        是否开启告警规则。true:开启，false:关闭。
+        **参数解释**： 是否开启告警规则。     **约束限制**： 不涉及。 **取值范围**： 布尔值。 - true:开启。 - false:关闭。 **默认取值**： true 
 
         :return: The enabled of this ListAlarmsRespAlarms.
         :rtype: bool
@@ -311,7 +311,7 @@ class ListAlarmsRespAlarms:
     def enabled(self, enabled):
         r"""Sets the enabled of this ListAlarmsRespAlarms.
 
-        是否开启告警规则。true:开启，false:关闭。
+        **参数解释**： 是否开启告警规则。     **约束限制**： 不涉及。 **取值范围**： 布尔值。 - true:开启。 - false:关闭。 **默认取值**： true 
 
         :param enabled: The enabled of this ListAlarmsRespAlarms.
         :type enabled: bool
@@ -322,7 +322,7 @@ class ListAlarmsRespAlarms:
     def notification_enabled(self):
         r"""Gets the notification_enabled of this ListAlarmsRespAlarms.
 
-        是否开启告警通知。true:开启，false:关闭。
+        **参数解释**： 是否开启告警通知。     **约束限制**： 不涉及。 **取值范围**： 布尔值。 - true:开启。 - false:关闭。 **默认取值**： true 
 
         :return: The notification_enabled of this ListAlarmsRespAlarms.
         :rtype: bool
@@ -333,7 +333,7 @@ class ListAlarmsRespAlarms:
     def notification_enabled(self, notification_enabled):
         r"""Sets the notification_enabled of this ListAlarmsRespAlarms.
 
-        是否开启告警通知。true:开启，false:关闭。
+        **参数解释**： 是否开启告警通知。     **约束限制**： 不涉及。 **取值范围**： 布尔值。 - true:开启。 - false:关闭。 **默认取值**： true 
 
         :param notification_enabled: The notification_enabled of this ListAlarmsRespAlarms.
         :type notification_enabled: bool
@@ -344,7 +344,7 @@ class ListAlarmsRespAlarms:
     def alarm_notifications(self):
         r"""Gets the alarm_notifications of this ListAlarmsRespAlarms.
 
-        **参数解释**： 触发告警时，通知组/主题订阅的信息。 **约束限制**： 不涉及。 **取值范围**： 告警触发的动作数量最多为10个。 **默认取值**： 不涉及。 
+        **参数解释**： 触发告警时，通知组/主题订阅的信息。 **约束限制**： 不涉及。 **取值范围**： 包含的通知信息的数量最多为10个。 **默认取值**： 不涉及。 
 
         :return: The alarm_notifications of this ListAlarmsRespAlarms.
         :rtype: list[:class:`huaweicloudsdkces.v2.Notification`]
@@ -355,7 +355,7 @@ class ListAlarmsRespAlarms:
     def alarm_notifications(self, alarm_notifications):
         r"""Sets the alarm_notifications of this ListAlarmsRespAlarms.
 
-        **参数解释**： 触发告警时，通知组/主题订阅的信息。 **约束限制**： 不涉及。 **取值范围**： 告警触发的动作数量最多为10个。 **默认取值**： 不涉及。 
+        **参数解释**： 触发告警时，通知组/主题订阅的信息。 **约束限制**： 不涉及。 **取值范围**： 包含的通知信息的数量最多为10个。 **默认取值**： 不涉及。 
 
         :param alarm_notifications: The alarm_notifications of this ListAlarmsRespAlarms.
         :type alarm_notifications: list[:class:`huaweicloudsdkces.v2.Notification`]
@@ -366,7 +366,7 @@ class ListAlarmsRespAlarms:
     def ok_notifications(self):
         r"""Gets the ok_notifications of this ListAlarmsRespAlarms.
 
-        **参数解释**： 告警恢复时，通知组/主题订阅的信息。 **约束限制**： 不涉及。 **取值范围**： 告警恢复触发的动作数量最多为10个。 **默认取值**： 不涉及。 
+        **参数解释**： 告警恢复时，通知组/主题订阅的信息。 **约束限制**： 不涉及。 **取值范围**： 包含的通知信息的数量最多为10个。 **默认取值**： 不涉及。 
 
         :return: The ok_notifications of this ListAlarmsRespAlarms.
         :rtype: list[:class:`huaweicloudsdkces.v2.Notification`]
@@ -377,7 +377,7 @@ class ListAlarmsRespAlarms:
     def ok_notifications(self, ok_notifications):
         r"""Sets the ok_notifications of this ListAlarmsRespAlarms.
 
-        **参数解释**： 告警恢复时，通知组/主题订阅的信息。 **约束限制**： 不涉及。 **取值范围**： 告警恢复触发的动作数量最多为10个。 **默认取值**： 不涉及。 
+        **参数解释**： 告警恢复时，通知组/主题订阅的信息。 **约束限制**： 不涉及。 **取值范围**： 包含的通知信息的数量最多为10个。 **默认取值**： 不涉及。 
 
         :param ok_notifications: The ok_notifications of this ListAlarmsRespAlarms.
         :type ok_notifications: list[:class:`huaweicloudsdkces.v2.Notification`]
@@ -388,7 +388,7 @@ class ListAlarmsRespAlarms:
     def notification_begin_time(self):
         r"""Gets the notification_begin_time of this ListAlarmsRespAlarms.
 
-        **参数解释**： 每天告警通知的开始时间。 **约束限制**： 不涉及。 **取值范围**： 长度为[1,64]个字符。 **默认取值**： 不涉及。 
+        **参数解释**： 告警通知开启时间。    **约束限制**： 不涉及。 **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。           **默认取值**： 不涉及。 
 
         :return: The notification_begin_time of this ListAlarmsRespAlarms.
         :rtype: str
@@ -399,7 +399,7 @@ class ListAlarmsRespAlarms:
     def notification_begin_time(self, notification_begin_time):
         r"""Sets the notification_begin_time of this ListAlarmsRespAlarms.
 
-        **参数解释**： 每天告警通知的开始时间。 **约束限制**： 不涉及。 **取值范围**： 长度为[1,64]个字符。 **默认取值**： 不涉及。 
+        **参数解释**： 告警通知开启时间。    **约束限制**： 不涉及。 **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。           **默认取值**： 不涉及。 
 
         :param notification_begin_time: The notification_begin_time of this ListAlarmsRespAlarms.
         :type notification_begin_time: str
@@ -410,7 +410,7 @@ class ListAlarmsRespAlarms:
     def notification_end_time(self):
         r"""Gets the notification_end_time of this ListAlarmsRespAlarms.
 
-        **参数解释**： 每天告警通知的结束时间。 **约束限制**： 不涉及。 **取值范围**： 长度为[1,64]个字符。 **默认取值**： 不涉及。 
+        **参数解释**： 告警通知关闭时间。    **约束限制**： 不涉及。 **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。           **默认取值**： 不涉及。 
 
         :return: The notification_end_time of this ListAlarmsRespAlarms.
         :rtype: str
@@ -421,7 +421,7 @@ class ListAlarmsRespAlarms:
     def notification_end_time(self, notification_end_time):
         r"""Sets the notification_end_time of this ListAlarmsRespAlarms.
 
-        **参数解释**： 每天告警通知的结束时间。 **约束限制**： 不涉及。 **取值范围**： 长度为[1,64]个字符。 **默认取值**： 不涉及。 
+        **参数解释**： 告警通知关闭时间。    **约束限制**： 不涉及。 **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。           **默认取值**： 不涉及。 
 
         :param notification_end_time: The notification_end_time of this ListAlarmsRespAlarms.
         :type notification_end_time: str
@@ -432,7 +432,7 @@ class ListAlarmsRespAlarms:
     def effective_timezone(self):
         r"""Gets the effective_timezone of this ListAlarmsRespAlarms.
 
-        时区，形如：\"GMT-08:00\"、\"GMT+08:00\"、\"GMT+0:00\"
+        **参数解释**： 时区，形如：\"GMT-08:00\"、\"GMT+08:00\"、\"GMT+0:00\"。    **约束限制**： 不涉及。 **取值范围**： 长度为[1,16]个字符。           **默认取值**： 不涉及。 
 
         :return: The effective_timezone of this ListAlarmsRespAlarms.
         :rtype: str
@@ -443,7 +443,7 @@ class ListAlarmsRespAlarms:
     def effective_timezone(self, effective_timezone):
         r"""Sets the effective_timezone of this ListAlarmsRespAlarms.
 
-        时区，形如：\"GMT-08:00\"、\"GMT+08:00\"、\"GMT+0:00\"
+        **参数解释**： 时区，形如：\"GMT-08:00\"、\"GMT+08:00\"、\"GMT+0:00\"。    **约束限制**： 不涉及。 **取值范围**： 长度为[1,16]个字符。           **默认取值**： 不涉及。 
 
         :param effective_timezone: The effective_timezone of this ListAlarmsRespAlarms.
         :type effective_timezone: str

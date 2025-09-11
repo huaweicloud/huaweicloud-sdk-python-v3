@@ -31,9 +31,9 @@ class ListAuditInstancesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param offset: 偏移量，默认0。
+        :param offset: **参数解释**： 分页偏移量，从第一条数据偏移offset条数据后开始查询 **约束限制**： 仅支持大于等于0的整数 **取值范围**： 大于等于0 **默认取值**： 默认值为0 
         :type offset: str
-        :param limit: 查询记录数，默认100，最大1000。
+        :param limit: 查询记录数
         :type limit: str
         """
         
@@ -52,7 +52,7 @@ class ListAuditInstancesRequest:
     def offset(self):
         r"""Gets the offset of this ListAuditInstancesRequest.
 
-        偏移量，默认0。
+        **参数解释**： 分页偏移量，从第一条数据偏移offset条数据后开始查询 **约束限制**： 仅支持大于等于0的整数 **取值范围**： 大于等于0 **默认取值**： 默认值为0 
 
         :return: The offset of this ListAuditInstancesRequest.
         :rtype: str
@@ -63,7 +63,7 @@ class ListAuditInstancesRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListAuditInstancesRequest.
 
-        偏移量，默认0。
+        **参数解释**： 分页偏移量，从第一条数据偏移offset条数据后开始查询 **约束限制**： 仅支持大于等于0的整数 **取值范围**： 大于等于0 **默认取值**： 默认值为0 
 
         :param offset: The offset of this ListAuditInstancesRequest.
         :type offset: str
@@ -74,7 +74,7 @@ class ListAuditInstancesRequest:
     def limit(self):
         r"""Gets the limit of this ListAuditInstancesRequest.
 
-        查询记录数，默认100，最大1000。
+        查询记录数
 
         :return: The limit of this ListAuditInstancesRequest.
         :rtype: str
@@ -85,7 +85,7 @@ class ListAuditInstancesRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListAuditInstancesRequest.
 
-        查询记录数，默认100，最大1000。
+        查询记录数
 
         :param limit: The limit of this ListAuditInstancesRequest.
         :type limit: str

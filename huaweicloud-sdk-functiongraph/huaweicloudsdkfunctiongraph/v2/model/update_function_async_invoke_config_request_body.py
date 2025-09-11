@@ -20,17 +20,25 @@ class UpdateFunctionAsyncInvokeConfigRequestBody:
         'max_async_event_age_in_seconds': 'int',
         'max_async_retry_attempts': 'int',
         'destination_config': 'FuncAsyncDestinationConfig',
-        'enable_async_status_log': 'bool'
+        'enable_async_status_log': 'bool',
+        'log_group_id': 'str',
+        'log_stream_id': 'str',
+        'log_group_name': 'str',
+        'log_stream_name': 'str'
     }
 
     attribute_map = {
         'max_async_event_age_in_seconds': 'max_async_event_age_in_seconds',
         'max_async_retry_attempts': 'max_async_retry_attempts',
         'destination_config': 'destination_config',
-        'enable_async_status_log': 'enable_async_status_log'
+        'enable_async_status_log': 'enable_async_status_log',
+        'log_group_id': 'log_group_id',
+        'log_stream_id': 'log_stream_id',
+        'log_group_name': 'log_group_name',
+        'log_stream_name': 'log_stream_name'
     }
 
-    def __init__(self, max_async_event_age_in_seconds=None, max_async_retry_attempts=None, destination_config=None, enable_async_status_log=None):
+    def __init__(self, max_async_event_age_in_seconds=None, max_async_retry_attempts=None, destination_config=None, enable_async_status_log=None, log_group_id=None, log_stream_id=None, log_group_name=None, log_stream_name=None):
         r"""UpdateFunctionAsyncInvokeConfigRequestBody
 
         The model defined in huaweicloud sdk
@@ -43,6 +51,14 @@ class UpdateFunctionAsyncInvokeConfigRequestBody:
         :type destination_config: :class:`huaweicloudsdkfunctiongraph.v2.FuncAsyncDestinationConfig`
         :param enable_async_status_log: 开启异步调用状态持久化
         :type enable_async_status_log: bool
+        :param log_group_id: 自定义日志查询组id。
+        :type log_group_id: str
+        :param log_stream_id: 自定义日志查询流id。
+        :type log_stream_id: str
+        :param log_group_name: 自定义日志查询组名称。
+        :type log_group_name: str
+        :param log_stream_name: 自定义日志查询流名称。
+        :type log_stream_name: str
         """
         
         
@@ -51,6 +67,10 @@ class UpdateFunctionAsyncInvokeConfigRequestBody:
         self._max_async_retry_attempts = None
         self._destination_config = None
         self._enable_async_status_log = None
+        self._log_group_id = None
+        self._log_stream_id = None
+        self._log_group_name = None
+        self._log_stream_name = None
         self.discriminator = None
 
         if max_async_event_age_in_seconds is not None:
@@ -61,6 +81,14 @@ class UpdateFunctionAsyncInvokeConfigRequestBody:
             self.destination_config = destination_config
         if enable_async_status_log is not None:
             self.enable_async_status_log = enable_async_status_log
+        if log_group_id is not None:
+            self.log_group_id = log_group_id
+        if log_stream_id is not None:
+            self.log_stream_id = log_stream_id
+        if log_group_name is not None:
+            self.log_group_name = log_group_name
+        if log_stream_name is not None:
+            self.log_stream_name = log_stream_name
 
     @property
     def max_async_event_age_in_seconds(self):
@@ -145,6 +173,94 @@ class UpdateFunctionAsyncInvokeConfigRequestBody:
         :type enable_async_status_log: bool
         """
         self._enable_async_status_log = enable_async_status_log
+
+    @property
+    def log_group_id(self):
+        r"""Gets the log_group_id of this UpdateFunctionAsyncInvokeConfigRequestBody.
+
+        自定义日志查询组id。
+
+        :return: The log_group_id of this UpdateFunctionAsyncInvokeConfigRequestBody.
+        :rtype: str
+        """
+        return self._log_group_id
+
+    @log_group_id.setter
+    def log_group_id(self, log_group_id):
+        r"""Sets the log_group_id of this UpdateFunctionAsyncInvokeConfigRequestBody.
+
+        自定义日志查询组id。
+
+        :param log_group_id: The log_group_id of this UpdateFunctionAsyncInvokeConfigRequestBody.
+        :type log_group_id: str
+        """
+        self._log_group_id = log_group_id
+
+    @property
+    def log_stream_id(self):
+        r"""Gets the log_stream_id of this UpdateFunctionAsyncInvokeConfigRequestBody.
+
+        自定义日志查询流id。
+
+        :return: The log_stream_id of this UpdateFunctionAsyncInvokeConfigRequestBody.
+        :rtype: str
+        """
+        return self._log_stream_id
+
+    @log_stream_id.setter
+    def log_stream_id(self, log_stream_id):
+        r"""Sets the log_stream_id of this UpdateFunctionAsyncInvokeConfigRequestBody.
+
+        自定义日志查询流id。
+
+        :param log_stream_id: The log_stream_id of this UpdateFunctionAsyncInvokeConfigRequestBody.
+        :type log_stream_id: str
+        """
+        self._log_stream_id = log_stream_id
+
+    @property
+    def log_group_name(self):
+        r"""Gets the log_group_name of this UpdateFunctionAsyncInvokeConfigRequestBody.
+
+        自定义日志查询组名称。
+
+        :return: The log_group_name of this UpdateFunctionAsyncInvokeConfigRequestBody.
+        :rtype: str
+        """
+        return self._log_group_name
+
+    @log_group_name.setter
+    def log_group_name(self, log_group_name):
+        r"""Sets the log_group_name of this UpdateFunctionAsyncInvokeConfigRequestBody.
+
+        自定义日志查询组名称。
+
+        :param log_group_name: The log_group_name of this UpdateFunctionAsyncInvokeConfigRequestBody.
+        :type log_group_name: str
+        """
+        self._log_group_name = log_group_name
+
+    @property
+    def log_stream_name(self):
+        r"""Gets the log_stream_name of this UpdateFunctionAsyncInvokeConfigRequestBody.
+
+        自定义日志查询流名称。
+
+        :return: The log_stream_name of this UpdateFunctionAsyncInvokeConfigRequestBody.
+        :rtype: str
+        """
+        return self._log_stream_name
+
+    @log_stream_name.setter
+    def log_stream_name(self, log_stream_name):
+        r"""Sets the log_stream_name of this UpdateFunctionAsyncInvokeConfigRequestBody.
+
+        自定义日志查询流名称。
+
+        :param log_stream_name: The log_stream_name of this UpdateFunctionAsyncInvokeConfigRequestBody.
+        :type log_stream_name: str
+        """
+        self._log_stream_name = log_stream_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

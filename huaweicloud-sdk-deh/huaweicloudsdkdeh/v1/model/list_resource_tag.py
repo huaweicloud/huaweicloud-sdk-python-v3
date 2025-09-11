@@ -18,33 +18,33 @@ class ListResourceTag:
 
     openapi_types = {
         'key': 'str',
-        'value': 'list[str]'
+        'values': 'list[str]'
     }
 
     attribute_map = {
         'key': 'key',
-        'value': 'value'
+        'values': 'values'
     }
 
-    def __init__(self, key=None, value=None):
+    def __init__(self, key=None, values=None):
         r"""ListResourceTag
 
         The model defined in huaweicloud sdk
 
         :param key: 标签键。
         :type key: str
-        :param value: 标签值列表\&quot;。
-        :type value: list[str]
+        :param values: 标签值列表\&quot;。
+        :type values: list[str]
         """
         
         
 
         self._key = None
-        self._value = None
+        self._values = None
         self.discriminator = None
 
         self.key = key
-        self.value = value
+        self.values = values
 
     @property
     def key(self):
@@ -69,26 +69,26 @@ class ListResourceTag:
         self._key = key
 
     @property
-    def value(self):
-        r"""Gets the value of this ListResourceTag.
+    def values(self):
+        r"""Gets the values of this ListResourceTag.
 
         标签值列表\"。
 
-        :return: The value of this ListResourceTag.
+        :return: The values of this ListResourceTag.
         :rtype: list[str]
         """
-        return self._value
+        return self._values
 
-    @value.setter
-    def value(self, value):
-        r"""Sets the value of this ListResourceTag.
+    @values.setter
+    def values(self, values):
+        r"""Sets the values of this ListResourceTag.
 
         标签值列表\"。
 
-        :param value: The value of this ListResourceTag.
-        :type value: list[str]
+        :param values: The values of this ListResourceTag.
+        :type values: list[str]
         """
-        self._value = value
+        self._values = values
 
     def to_dict(self):
         """Returns the model properties as a dict"""

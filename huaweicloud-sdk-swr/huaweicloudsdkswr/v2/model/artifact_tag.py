@@ -21,8 +21,8 @@ class ArtifactTag:
         'repository_id': 'int',
         'artifact_id': 'int',
         'name': 'str',
-        'push_time': 'datetime',
-        'pull_time': 'datetime'
+        'push_time': 'str',
+        'pull_time': 'str'
     }
 
     attribute_map = {
@@ -48,9 +48,9 @@ class ArtifactTag:
         :param name: tag名称
         :type name: str
         :param push_time: tag的上传时间
-        :type push_time: datetime
+        :type push_time: str
         :param pull_time: tag的下载时间
-        :type pull_time: datetime
+        :type pull_time: str
         """
         
         
@@ -171,7 +171,7 @@ class ArtifactTag:
         tag的上传时间
 
         :return: The push_time of this ArtifactTag.
-        :rtype: datetime
+        :rtype: str
         """
         return self._push_time
 
@@ -182,7 +182,7 @@ class ArtifactTag:
         tag的上传时间
 
         :param push_time: The push_time of this ArtifactTag.
-        :type push_time: datetime
+        :type push_time: str
         """
         self._push_time = push_time
 
@@ -193,7 +193,7 @@ class ArtifactTag:
         tag的下载时间
 
         :return: The pull_time of this ArtifactTag.
-        :rtype: datetime
+        :rtype: str
         """
         return self._pull_time
 
@@ -204,7 +204,7 @@ class ArtifactTag:
         tag的下载时间
 
         :param pull_time: The pull_time of this ArtifactTag.
-        :type pull_time: datetime
+        :type pull_time: str
         """
         self._pull_time = pull_time
 

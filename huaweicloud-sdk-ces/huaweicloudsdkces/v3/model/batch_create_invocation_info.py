@@ -37,15 +37,15 @@ class BatchCreateInvocationInfo:
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: 机器id
+        :param instance_id: **参数解释**: 机器id **取值范围**: 1到64个字符的字符串，且只包含字母、数字和连字符 
         :type instance_id: str
-        :param invocation_id: 任务id
+        :param invocation_id: **参数解释**: 任务id **取值范围**: 1到64个字符的字符串，且只包含字母、数字和连字符 
         :type invocation_id: str
-        :param ret_status: 任务结果, successful成功，error失败
+        :param ret_status: **参数解释**: 任务结果, successful成功，error失败 **取值范围**: - successful: 成功 - error: 失败 
         :type ret_status: str
-        :param error_code: 错误码
+        :param error_code: **参数解释**: 错误码 **取值范围**: 以\&quot;invocationmgr.\&quot;开头且后跟4位数字的完整字符串 
         :type error_code: str
-        :param error_msg: 错误信息
+        :param error_msg: **参数解释**: 错误信息 **取值范围**: 数组长度范围为[1,128] 
         :type error_msg: str
         """
         
@@ -73,7 +73,7 @@ class BatchCreateInvocationInfo:
     def instance_id(self):
         r"""Gets the instance_id of this BatchCreateInvocationInfo.
 
-        机器id
+        **参数解释**: 机器id **取值范围**: 1到64个字符的字符串，且只包含字母、数字和连字符 
 
         :return: The instance_id of this BatchCreateInvocationInfo.
         :rtype: str
@@ -84,7 +84,7 @@ class BatchCreateInvocationInfo:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this BatchCreateInvocationInfo.
 
-        机器id
+        **参数解释**: 机器id **取值范围**: 1到64个字符的字符串，且只包含字母、数字和连字符 
 
         :param instance_id: The instance_id of this BatchCreateInvocationInfo.
         :type instance_id: str
@@ -95,7 +95,7 @@ class BatchCreateInvocationInfo:
     def invocation_id(self):
         r"""Gets the invocation_id of this BatchCreateInvocationInfo.
 
-        任务id
+        **参数解释**: 任务id **取值范围**: 1到64个字符的字符串，且只包含字母、数字和连字符 
 
         :return: The invocation_id of this BatchCreateInvocationInfo.
         :rtype: str
@@ -106,7 +106,7 @@ class BatchCreateInvocationInfo:
     def invocation_id(self, invocation_id):
         r"""Sets the invocation_id of this BatchCreateInvocationInfo.
 
-        任务id
+        **参数解释**: 任务id **取值范围**: 1到64个字符的字符串，且只包含字母、数字和连字符 
 
         :param invocation_id: The invocation_id of this BatchCreateInvocationInfo.
         :type invocation_id: str
@@ -117,7 +117,7 @@ class BatchCreateInvocationInfo:
     def ret_status(self):
         r"""Gets the ret_status of this BatchCreateInvocationInfo.
 
-        任务结果, successful成功，error失败
+        **参数解释**: 任务结果, successful成功，error失败 **取值范围**: - successful: 成功 - error: 失败 
 
         :return: The ret_status of this BatchCreateInvocationInfo.
         :rtype: str
@@ -128,7 +128,7 @@ class BatchCreateInvocationInfo:
     def ret_status(self, ret_status):
         r"""Sets the ret_status of this BatchCreateInvocationInfo.
 
-        任务结果, successful成功，error失败
+        **参数解释**: 任务结果, successful成功，error失败 **取值范围**: - successful: 成功 - error: 失败 
 
         :param ret_status: The ret_status of this BatchCreateInvocationInfo.
         :type ret_status: str
@@ -139,7 +139,7 @@ class BatchCreateInvocationInfo:
     def error_code(self):
         r"""Gets the error_code of this BatchCreateInvocationInfo.
 
-        错误码
+        **参数解释**: 错误码 **取值范围**: 以\"invocationmgr.\"开头且后跟4位数字的完整字符串 
 
         :return: The error_code of this BatchCreateInvocationInfo.
         :rtype: str
@@ -150,7 +150,7 @@ class BatchCreateInvocationInfo:
     def error_code(self, error_code):
         r"""Sets the error_code of this BatchCreateInvocationInfo.
 
-        错误码
+        **参数解释**: 错误码 **取值范围**: 以\"invocationmgr.\"开头且后跟4位数字的完整字符串 
 
         :param error_code: The error_code of this BatchCreateInvocationInfo.
         :type error_code: str
@@ -161,7 +161,7 @@ class BatchCreateInvocationInfo:
     def error_msg(self):
         r"""Gets the error_msg of this BatchCreateInvocationInfo.
 
-        错误信息
+        **参数解释**: 错误信息 **取值范围**: 数组长度范围为[1,128] 
 
         :return: The error_msg of this BatchCreateInvocationInfo.
         :rtype: str
@@ -172,7 +172,7 @@ class BatchCreateInvocationInfo:
     def error_msg(self, error_msg):
         r"""Sets the error_msg of this BatchCreateInvocationInfo.
 
-        错误信息
+        **参数解释**: 错误信息 **取值范围**: 数组长度范围为[1,128] 
 
         :param error_msg: The error_msg of this BatchCreateInvocationInfo.
         :type error_msg: str

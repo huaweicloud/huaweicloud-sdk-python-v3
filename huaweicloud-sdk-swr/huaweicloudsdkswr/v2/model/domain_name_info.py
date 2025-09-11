@@ -55,7 +55,7 @@ class DomainNameInfo:
         :type instance_id: str
         :param type: 域名类型(default/custom)
         :type type: str
-        :param domain_name: 域名，只能由字母、数字、中划线、星号组成， 星号只能在开头，中划线不能在开头或末 尾，至少包含两个字符串，单个字符串不 超过63个字符，字符串间以点分割，且总 长度不超过100个字符。例如： example.com 或 *example.com。
+        :param domain_name: 域名，只能由字母、数字、中划线、星号组成， 星号只能在开头，中划线不能在开头或末 尾，至少包含两个字符串，单个字符串不 超过63个字符，字符串间以点分割，且总 长度不超过100个字符。例如： example.com 或 *.example.com。
         :type domain_name: str
         :param certificate_id: SCM服务的证书ID
         :type certificate_id: str
@@ -211,7 +211,7 @@ class DomainNameInfo:
     def domain_name(self):
         r"""Gets the domain_name of this DomainNameInfo.
 
-        域名，只能由字母、数字、中划线、星号组成， 星号只能在开头，中划线不能在开头或末 尾，至少包含两个字符串，单个字符串不 超过63个字符，字符串间以点分割，且总 长度不超过100个字符。例如： example.com 或 *example.com。
+        域名，只能由字母、数字、中划线、星号组成， 星号只能在开头，中划线不能在开头或末 尾，至少包含两个字符串，单个字符串不 超过63个字符，字符串间以点分割，且总 长度不超过100个字符。例如： example.com 或 *.example.com。
 
         :return: The domain_name of this DomainNameInfo.
         :rtype: str
@@ -222,7 +222,7 @@ class DomainNameInfo:
     def domain_name(self, domain_name):
         r"""Sets the domain_name of this DomainNameInfo.
 
-        域名，只能由字母、数字、中划线、星号组成， 星号只能在开头，中划线不能在开头或末 尾，至少包含两个字符串，单个字符串不 超过63个字符，字符串间以点分割，且总 长度不超过100个字符。例如： example.com 或 *example.com。
+        域名，只能由字母、数字、中划线、星号组成， 星号只能在开头，中划线不能在开头或末 尾，至少包含两个字符串，单个字符串不 超过63个字符，字符串间以点分割，且总 长度不超过100个字符。例如： example.com 或 *.example.com。
 
         :param domain_name: The domain_name of this DomainNameInfo.
         :type domain_name: str

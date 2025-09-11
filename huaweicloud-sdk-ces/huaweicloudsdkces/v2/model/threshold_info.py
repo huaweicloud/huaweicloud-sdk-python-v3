@@ -31,9 +31,9 @@ class ThresholdInfo:
 
         The model defined in huaweicloud sdk
 
-        :param threshold: 监控视图辅助线的阈值
+        :param threshold: **参数解释** 监控视图辅助线的阈值 **约束限制** 不涉及 **取值范围** 最小值为0，最大值为2147483647 **默认取值** 不涉及 
         :type threshold: float
-        :param threshold_color: 监控视图辅助线的颜色,\&quot;#B50E65\&quot;紫色,\&quot;#F23030\&quot;红色,\&quot;#FF8800\&quot;橙色,\&quot;#F2E70C\&quot;黄色
+        :param threshold_color: **参数解释** 监控视图辅助线的颜色 **约束限制** 不涉及           **取值范围** - \&quot;#B50E65\&quot;:紫色 - \&quot;#F23030\&quot;:红色 - \&quot;#FF8800\&quot;:橙色 - \&quot;#F2E70C\&quot;:黄色 **默认取值** 不涉及 
         :type threshold_color: str
         """
         
@@ -50,7 +50,7 @@ class ThresholdInfo:
     def threshold(self):
         r"""Gets the threshold of this ThresholdInfo.
 
-        监控视图辅助线的阈值
+        **参数解释** 监控视图辅助线的阈值 **约束限制** 不涉及 **取值范围** 最小值为0，最大值为2147483647 **默认取值** 不涉及 
 
         :return: The threshold of this ThresholdInfo.
         :rtype: float
@@ -61,7 +61,7 @@ class ThresholdInfo:
     def threshold(self, threshold):
         r"""Sets the threshold of this ThresholdInfo.
 
-        监控视图辅助线的阈值
+        **参数解释** 监控视图辅助线的阈值 **约束限制** 不涉及 **取值范围** 最小值为0，最大值为2147483647 **默认取值** 不涉及 
 
         :param threshold: The threshold of this ThresholdInfo.
         :type threshold: float
@@ -72,7 +72,7 @@ class ThresholdInfo:
     def threshold_color(self):
         r"""Gets the threshold_color of this ThresholdInfo.
 
-        监控视图辅助线的颜色,\"#B50E65\"紫色,\"#F23030\"红色,\"#FF8800\"橙色,\"#F2E70C\"黄色
+        **参数解释** 监控视图辅助线的颜色 **约束限制** 不涉及           **取值范围** - \"#B50E65\":紫色 - \"#F23030\":红色 - \"#FF8800\":橙色 - \"#F2E70C\":黄色 **默认取值** 不涉及 
 
         :return: The threshold_color of this ThresholdInfo.
         :rtype: str
@@ -83,7 +83,7 @@ class ThresholdInfo:
     def threshold_color(self, threshold_color):
         r"""Sets the threshold_color of this ThresholdInfo.
 
-        监控视图辅助线的颜色,\"#B50E65\"紫色,\"#F23030\"红色,\"#FF8800\"橙色,\"#F2E70C\"黄色
+        **参数解释** 监控视图辅助线的颜色 **约束限制** 不涉及           **取值范围** - \"#B50E65\":紫色 - \"#F23030\":红色 - \"#FF8800\":橙色 - \"#F2E70C\":黄色 **默认取值** 不涉及 
 
         :param threshold_color: The threshold_color of this ThresholdInfo.
         :type threshold_color: str

@@ -49,7 +49,8 @@ class CreateMessageTemplateRequestBody:
         self.discriminator = None
 
         self.message_template_name = message_template_name
-        self.protocol = protocol
+        if protocol is not None:
+            self.protocol = protocol
         self.content = content
 
     @property

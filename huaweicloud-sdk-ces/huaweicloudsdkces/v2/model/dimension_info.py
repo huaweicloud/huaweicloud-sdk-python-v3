@@ -33,11 +33,11 @@ class DimensionInfo:
 
         The model defined in huaweicloud sdk
 
-        :param name: 维度名称，多维度用逗号分隔，各服务支持的维度可参考：“[服务维度名称](ces_03_0059.xml)”
+        :param name: **参数描述**： 维度名称。 **约束限制** 不涉及 **取值范围**： 多维度用逗号分隔，各服务支持的维度可参考：“[服务维度名称](ces_03_0059.xml)”。必须以字母开头，只能包含0-9/a-z/A-Z/_/-，多维度用\&quot;,\&quot;分隔，每个维度的最大长度为32。总长度为[1,131]个字符。目前最大支持4个维度。举例：单维度场景：instance_id；多维度场景：instance_id,disk **默认取值** 不涉及 
         :type name: str
-        :param filter_type: 资源类型, all_instances: 全部资源, specific_instances: 指定资源
+        :param filter_type: **参数描述**： 资源类型。 **约束限制** 不涉及 **取值范围**： - all_instances: 全部资源 - specific_instances: 指定资源 **默认取值** 不涉及 
         :type filter_type: str
-        :param values: 维度值列表
+        :param values: **参数描述**： 维度值列表。 **约束限制** 不涉及 
         :type values: list[str]
         """
         
@@ -57,7 +57,7 @@ class DimensionInfo:
     def name(self):
         r"""Gets the name of this DimensionInfo.
 
-        维度名称，多维度用逗号分隔，各服务支持的维度可参考：“[服务维度名称](ces_03_0059.xml)”
+        **参数描述**： 维度名称。 **约束限制** 不涉及 **取值范围**： 多维度用逗号分隔，各服务支持的维度可参考：“[服务维度名称](ces_03_0059.xml)”。必须以字母开头，只能包含0-9/a-z/A-Z/_/-，多维度用\",\"分隔，每个维度的最大长度为32。总长度为[1,131]个字符。目前最大支持4个维度。举例：单维度场景：instance_id；多维度场景：instance_id,disk **默认取值** 不涉及 
 
         :return: The name of this DimensionInfo.
         :rtype: str
@@ -68,7 +68,7 @@ class DimensionInfo:
     def name(self, name):
         r"""Sets the name of this DimensionInfo.
 
-        维度名称，多维度用逗号分隔，各服务支持的维度可参考：“[服务维度名称](ces_03_0059.xml)”
+        **参数描述**： 维度名称。 **约束限制** 不涉及 **取值范围**： 多维度用逗号分隔，各服务支持的维度可参考：“[服务维度名称](ces_03_0059.xml)”。必须以字母开头，只能包含0-9/a-z/A-Z/_/-，多维度用\",\"分隔，每个维度的最大长度为32。总长度为[1,131]个字符。目前最大支持4个维度。举例：单维度场景：instance_id；多维度场景：instance_id,disk **默认取值** 不涉及 
 
         :param name: The name of this DimensionInfo.
         :type name: str
@@ -79,7 +79,7 @@ class DimensionInfo:
     def filter_type(self):
         r"""Gets the filter_type of this DimensionInfo.
 
-        资源类型, all_instances: 全部资源, specific_instances: 指定资源
+        **参数描述**： 资源类型。 **约束限制** 不涉及 **取值范围**： - all_instances: 全部资源 - specific_instances: 指定资源 **默认取值** 不涉及 
 
         :return: The filter_type of this DimensionInfo.
         :rtype: str
@@ -90,7 +90,7 @@ class DimensionInfo:
     def filter_type(self, filter_type):
         r"""Sets the filter_type of this DimensionInfo.
 
-        资源类型, all_instances: 全部资源, specific_instances: 指定资源
+        **参数描述**： 资源类型。 **约束限制** 不涉及 **取值范围**： - all_instances: 全部资源 - specific_instances: 指定资源 **默认取值** 不涉及 
 
         :param filter_type: The filter_type of this DimensionInfo.
         :type filter_type: str
@@ -101,7 +101,7 @@ class DimensionInfo:
     def values(self):
         r"""Gets the values of this DimensionInfo.
 
-        维度值列表
+        **参数描述**： 维度值列表。 **约束限制** 不涉及 
 
         :return: The values of this DimensionInfo.
         :rtype: list[str]
@@ -112,7 +112,7 @@ class DimensionInfo:
     def values(self, values):
         r"""Sets the values of this DimensionInfo.
 
-        维度值列表
+        **参数描述**： 维度值列表。 **约束限制** 不涉及 
 
         :param values: The values of this DimensionInfo.
         :type values: list[str]

@@ -33,11 +33,11 @@ class AgentStatusInfo:
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: 机器id
+        :param instance_id: **参数解释**: 机器id **取值范围**: 1到64个字符的字符串，且只包含字母、数字和连字符 
         :type instance_id: str
-        :param uniagent_status: uniagent运行状态,none无，running运行中，silent静默中，unknown故障
+        :param uniagent_status: **参数解释**: uniagent运行状态 **取值范围**: - none: 未安装 - running: 运行中 - silent: 静默状态，用于大规模插件异常时，紧急规避的一种措施，现象是kill掉telescope，只保留uniagent的心跳功能 - unknown: 心跳故障，不上报心跳数据，属于连接丢失故障 
         :type uniagent_status: str
-        :param extensions: 插件信息列表
+        :param extensions: **参数解释**: 插件信息列表 **取值范围**: 数组长度为[1,10] 
         :type extensions: list[:class:`huaweicloudsdkces.v3.ExtensionInfo`]
         """
         
@@ -59,7 +59,7 @@ class AgentStatusInfo:
     def instance_id(self):
         r"""Gets the instance_id of this AgentStatusInfo.
 
-        机器id
+        **参数解释**: 机器id **取值范围**: 1到64个字符的字符串，且只包含字母、数字和连字符 
 
         :return: The instance_id of this AgentStatusInfo.
         :rtype: str
@@ -70,7 +70,7 @@ class AgentStatusInfo:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this AgentStatusInfo.
 
-        机器id
+        **参数解释**: 机器id **取值范围**: 1到64个字符的字符串，且只包含字母、数字和连字符 
 
         :param instance_id: The instance_id of this AgentStatusInfo.
         :type instance_id: str
@@ -81,7 +81,7 @@ class AgentStatusInfo:
     def uniagent_status(self):
         r"""Gets the uniagent_status of this AgentStatusInfo.
 
-        uniagent运行状态,none无，running运行中，silent静默中，unknown故障
+        **参数解释**: uniagent运行状态 **取值范围**: - none: 未安装 - running: 运行中 - silent: 静默状态，用于大规模插件异常时，紧急规避的一种措施，现象是kill掉telescope，只保留uniagent的心跳功能 - unknown: 心跳故障，不上报心跳数据，属于连接丢失故障 
 
         :return: The uniagent_status of this AgentStatusInfo.
         :rtype: str
@@ -92,7 +92,7 @@ class AgentStatusInfo:
     def uniagent_status(self, uniagent_status):
         r"""Sets the uniagent_status of this AgentStatusInfo.
 
-        uniagent运行状态,none无，running运行中，silent静默中，unknown故障
+        **参数解释**: uniagent运行状态 **取值范围**: - none: 未安装 - running: 运行中 - silent: 静默状态，用于大规模插件异常时，紧急规避的一种措施，现象是kill掉telescope，只保留uniagent的心跳功能 - unknown: 心跳故障，不上报心跳数据，属于连接丢失故障 
 
         :param uniagent_status: The uniagent_status of this AgentStatusInfo.
         :type uniagent_status: str
@@ -103,7 +103,7 @@ class AgentStatusInfo:
     def extensions(self):
         r"""Gets the extensions of this AgentStatusInfo.
 
-        插件信息列表
+        **参数解释**: 插件信息列表 **取值范围**: 数组长度为[1,10] 
 
         :return: The extensions of this AgentStatusInfo.
         :rtype: list[:class:`huaweicloudsdkces.v3.ExtensionInfo`]
@@ -114,7 +114,7 @@ class AgentStatusInfo:
     def extensions(self, extensions):
         r"""Sets the extensions of this AgentStatusInfo.
 
-        插件信息列表
+        **参数解释**: 插件信息列表 **取值范围**: 数组长度为[1,10] 
 
         :param extensions: The extensions of this AgentStatusInfo.
         :type extensions: list[:class:`huaweicloudsdkces.v3.ExtensionInfo`]

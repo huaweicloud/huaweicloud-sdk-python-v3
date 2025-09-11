@@ -30,7 +30,7 @@ class ListSchemaAndTableResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param database_tables: 数据库表信息列表
+        :param database_tables: **参数解释**: 数据库表信息列表。
         :type database_tables: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.DatabaseSchemaTableResult`]
         """
         
@@ -46,7 +46,7 @@ class ListSchemaAndTableResponse(SdkResponse):
     def database_tables(self):
         r"""Gets the database_tables of this ListSchemaAndTableResponse.
 
-        数据库表信息列表
+        **参数解释**: 数据库表信息列表。
 
         :return: The database_tables of this ListSchemaAndTableResponse.
         :rtype: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.DatabaseSchemaTableResult`]
@@ -57,7 +57,7 @@ class ListSchemaAndTableResponse(SdkResponse):
     def database_tables(self, database_tables):
         r"""Sets the database_tables of this ListSchemaAndTableResponse.
 
-        数据库表信息列表
+        **参数解释**: 数据库表信息列表。
 
         :param database_tables: The database_tables of this ListSchemaAndTableResponse.
         :type database_tables: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.DatabaseSchemaTableResult`]

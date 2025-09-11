@@ -33,11 +33,11 @@ class ResourceNameItem:
 
         The model defined in huaweicloud sdk
 
-        :param resource_name: 资源名称条件值
+        :param resource_name: **参数解释** 资源名称条件值 **约束限制** 不涉及 **取值范围** 长度[0,128]个字符 **默认取值** 不涉及 
         :type resource_name: str
-        :param operator: 实例操作符，含义是真实资源的名称与资源名称条件值的运算关系。   include表示包含   prefix表示前缀   suffix表示后缀   notInclude表示不包含   equal表示相等   all表示全部 
+        :param operator: **参数解释** 实例操作符，含义是真实资源的名称与资源名称条件值的运算关系。 **约束限制** 不涉及 **取值范围** - include: 表示包含 - prefix: 表示前缀 - suffix: 表示后缀 - notInclude: 表示不包含 - equal: 表示相等 - all: 表示全部 **默认取值** 不涉及 
         :type operator: str
-        :param resource_name_is_ignore_case: 资源名称忽略大小写
+        :param resource_name_is_ignore_case: **参数解释** 资源名称忽略大小写 **约束限制** 不涉及 **取值范围** - true: 名称忽略大小写 - false: 名称不忽略大小写 **默认取值** false 
         :type resource_name_is_ignore_case: bool
         """
         
@@ -58,7 +58,7 @@ class ResourceNameItem:
     def resource_name(self):
         r"""Gets the resource_name of this ResourceNameItem.
 
-        资源名称条件值
+        **参数解释** 资源名称条件值 **约束限制** 不涉及 **取值范围** 长度[0,128]个字符 **默认取值** 不涉及 
 
         :return: The resource_name of this ResourceNameItem.
         :rtype: str
@@ -69,7 +69,7 @@ class ResourceNameItem:
     def resource_name(self, resource_name):
         r"""Sets the resource_name of this ResourceNameItem.
 
-        资源名称条件值
+        **参数解释** 资源名称条件值 **约束限制** 不涉及 **取值范围** 长度[0,128]个字符 **默认取值** 不涉及 
 
         :param resource_name: The resource_name of this ResourceNameItem.
         :type resource_name: str
@@ -80,7 +80,7 @@ class ResourceNameItem:
     def operator(self):
         r"""Gets the operator of this ResourceNameItem.
 
-        实例操作符，含义是真实资源的名称与资源名称条件值的运算关系。   include表示包含   prefix表示前缀   suffix表示后缀   notInclude表示不包含   equal表示相等   all表示全部 
+        **参数解释** 实例操作符，含义是真实资源的名称与资源名称条件值的运算关系。 **约束限制** 不涉及 **取值范围** - include: 表示包含 - prefix: 表示前缀 - suffix: 表示后缀 - notInclude: 表示不包含 - equal: 表示相等 - all: 表示全部 **默认取值** 不涉及 
 
         :return: The operator of this ResourceNameItem.
         :rtype: str
@@ -91,7 +91,7 @@ class ResourceNameItem:
     def operator(self, operator):
         r"""Sets the operator of this ResourceNameItem.
 
-        实例操作符，含义是真实资源的名称与资源名称条件值的运算关系。   include表示包含   prefix表示前缀   suffix表示后缀   notInclude表示不包含   equal表示相等   all表示全部 
+        **参数解释** 实例操作符，含义是真实资源的名称与资源名称条件值的运算关系。 **约束限制** 不涉及 **取值范围** - include: 表示包含 - prefix: 表示前缀 - suffix: 表示后缀 - notInclude: 表示不包含 - equal: 表示相等 - all: 表示全部 **默认取值** 不涉及 
 
         :param operator: The operator of this ResourceNameItem.
         :type operator: str
@@ -102,7 +102,7 @@ class ResourceNameItem:
     def resource_name_is_ignore_case(self):
         r"""Gets the resource_name_is_ignore_case of this ResourceNameItem.
 
-        资源名称忽略大小写
+        **参数解释** 资源名称忽略大小写 **约束限制** 不涉及 **取值范围** - true: 名称忽略大小写 - false: 名称不忽略大小写 **默认取值** false 
 
         :return: The resource_name_is_ignore_case of this ResourceNameItem.
         :rtype: bool
@@ -113,7 +113,7 @@ class ResourceNameItem:
     def resource_name_is_ignore_case(self, resource_name_is_ignore_case):
         r"""Sets the resource_name_is_ignore_case of this ResourceNameItem.
 
-        资源名称忽略大小写
+        **参数解释** 资源名称忽略大小写 **约束限制** 不涉及 **取值范围** - true: 名称忽略大小写 - false: 名称不忽略大小写 **默认取值** false 
 
         :param resource_name_is_ignore_case: The resource_name_is_ignore_case of this ResourceNameItem.
         :type resource_name_is_ignore_case: bool

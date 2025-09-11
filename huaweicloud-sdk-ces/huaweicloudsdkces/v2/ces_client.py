@@ -624,6 +624,71 @@ class CesClient(Client):
 
         return http_info
 
+    def batch_list_specified_metric_data(self, request):
+        r"""批量查询指标数据
+
+        批量查询指标数据
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchListSpecifiedMetricData
+        :type request: :class:`huaweicloudsdkces.v2.BatchListSpecifiedMetricDataRequest`
+        :rtype: :class:`huaweicloudsdkces.v2.BatchListSpecifiedMetricDataResponse`
+        """
+        http_info = self._batch_list_specified_metric_data_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_list_specified_metric_data_invoker(self, request):
+        http_info = self._batch_list_specified_metric_data_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_list_specified_metric_data_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/batch-query-metric-data",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchListSpecifiedMetricDataResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def batch_update_notification_mask_time(self, request):
         r"""批量修改告警通知屏蔽规则的屏蔽时间
 
@@ -1545,9 +1610,9 @@ class CesClient(Client):
         return http_info
 
     def list_agent_dimension_info(self, request):
-        r"""查询主机监控维度指标信息
+        r"""查询主机监控原始维度值
 
-        根据ECS/BMS资源ID查询磁盘、挂载点、进程、显卡、RAID控制器维度指标信息；维度NPU已经为原始值，不需要调用该接口进行额外查询获取指标信息
+        根据ECS/BMS资源ID及特殊维度值(仅支持磁盘、挂载点、进程、显卡、RAID控制器)查询该特殊维度对应的原始维度值；其他维度无需调用该接口
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2048,6 +2113,8 @@ class CesClient(Client):
             query_params.append(('template_type', local_var_params['template_type']))
         if 'template_name' in local_var_params:
             query_params.append(('template_name', local_var_params['template_name']))
+        if 'product_name' in local_var_params:
+            query_params.append(('product_name', local_var_params['product_name']))
 
         header_params = {}
 

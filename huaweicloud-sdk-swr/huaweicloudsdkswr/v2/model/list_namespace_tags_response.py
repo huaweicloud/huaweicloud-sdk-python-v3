@@ -30,7 +30,7 @@ class ListNamespaceTagsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param tags: 项目下资源标签列表
+        :param tags: 标签列表
         :type tags: list[:class:`huaweicloudsdkswr.v2.ProjectTag`]
         """
         
@@ -46,7 +46,7 @@ class ListNamespaceTagsResponse(SdkResponse):
     def tags(self):
         r"""Gets the tags of this ListNamespaceTagsResponse.
 
-        项目下资源标签列表
+        标签列表
 
         :return: The tags of this ListNamespaceTagsResponse.
         :rtype: list[:class:`huaweicloudsdkswr.v2.ProjectTag`]
@@ -57,7 +57,7 @@ class ListNamespaceTagsResponse(SdkResponse):
     def tags(self, tags):
         r"""Sets the tags of this ListNamespaceTagsResponse.
 
-        项目下资源标签列表
+        标签列表
 
         :param tags: The tags of this ListNamespaceTagsResponse.
         :type tags: list[:class:`huaweicloudsdkswr.v2.ProjectTag`]

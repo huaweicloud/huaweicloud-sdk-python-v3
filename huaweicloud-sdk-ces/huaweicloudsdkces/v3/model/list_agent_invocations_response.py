@@ -32,9 +32,9 @@ class ListAgentInvocationsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param invocations: 任务列表
+        :param invocations: **参数解释**: 任务列表 **取值范围**: 返回数组长度为[0,100] 
         :type invocations: list[:class:`huaweicloudsdkces.v3.InvocationInfo`]
-        :param count: 任务列表总量
+        :param count: **参数解释**: 任务列表总量 **取值范围**: 数字范围为[0,9999999999999] 
         :type count: int
         """
         
@@ -53,7 +53,7 @@ class ListAgentInvocationsResponse(SdkResponse):
     def invocations(self):
         r"""Gets the invocations of this ListAgentInvocationsResponse.
 
-        任务列表
+        **参数解释**: 任务列表 **取值范围**: 返回数组长度为[0,100] 
 
         :return: The invocations of this ListAgentInvocationsResponse.
         :rtype: list[:class:`huaweicloudsdkces.v3.InvocationInfo`]
@@ -64,7 +64,7 @@ class ListAgentInvocationsResponse(SdkResponse):
     def invocations(self, invocations):
         r"""Sets the invocations of this ListAgentInvocationsResponse.
 
-        任务列表
+        **参数解释**: 任务列表 **取值范围**: 返回数组长度为[0,100] 
 
         :param invocations: The invocations of this ListAgentInvocationsResponse.
         :type invocations: list[:class:`huaweicloudsdkces.v3.InvocationInfo`]
@@ -75,7 +75,7 @@ class ListAgentInvocationsResponse(SdkResponse):
     def count(self):
         r"""Gets the count of this ListAgentInvocationsResponse.
 
-        任务列表总量
+        **参数解释**: 任务列表总量 **取值范围**: 数字范围为[0,9999999999999] 
 
         :return: The count of this ListAgentInvocationsResponse.
         :rtype: int
@@ -86,7 +86,7 @@ class ListAgentInvocationsResponse(SdkResponse):
     def count(self, count):
         r"""Sets the count of this ListAgentInvocationsResponse.
 
-        任务列表总量
+        **参数解释**: 任务列表总量 **取值范围**: 数字范围为[0,9999999999999] 
 
         :param count: The count of this ListAgentInvocationsResponse.
         :type count: int

@@ -19,15 +19,19 @@ class ShowVmMonitorResponse(SdkResponse):
 
     openapi_types = {
         'datapoints': 'list[Datapoint]',
-        'metric_name': 'str'
+        'metric_name': 'str',
+        'max': 'float',
+        'average': 'float'
     }
 
     attribute_map = {
         'datapoints': 'datapoints',
-        'metric_name': 'metric_name'
+        'metric_name': 'metric_name',
+        'max': 'max',
+        'average': 'average'
     }
 
-    def __init__(self, datapoints=None, metric_name=None):
+    def __init__(self, datapoints=None, metric_name=None, max=None, average=None):
         r"""ShowVmMonitorResponse
 
         The model defined in huaweicloud sdk
@@ -36,18 +40,28 @@ class ShowVmMonitorResponse(SdkResponse):
         :type datapoints: list[:class:`huaweicloudsdkcpcs.v1.Datapoint`]
         :param metric_name: 指标名称，比如:cpu_util
         :type metric_name: str
+        :param max: 最大值，未计算默认为0
+        :type max: float
+        :param average: 平均值，未计算默认为0
+        :type average: float
         """
         
         super(ShowVmMonitorResponse, self).__init__()
 
         self._datapoints = None
         self._metric_name = None
+        self._max = None
+        self._average = None
         self.discriminator = None
 
         if datapoints is not None:
             self.datapoints = datapoints
         if metric_name is not None:
             self.metric_name = metric_name
+        if max is not None:
+            self.max = max
+        if average is not None:
+            self.average = average
 
     @property
     def datapoints(self):
@@ -92,6 +106,50 @@ class ShowVmMonitorResponse(SdkResponse):
         :type metric_name: str
         """
         self._metric_name = metric_name
+
+    @property
+    def max(self):
+        r"""Gets the max of this ShowVmMonitorResponse.
+
+        最大值，未计算默认为0
+
+        :return: The max of this ShowVmMonitorResponse.
+        :rtype: float
+        """
+        return self._max
+
+    @max.setter
+    def max(self, max):
+        r"""Sets the max of this ShowVmMonitorResponse.
+
+        最大值，未计算默认为0
+
+        :param max: The max of this ShowVmMonitorResponse.
+        :type max: float
+        """
+        self._max = max
+
+    @property
+    def average(self):
+        r"""Gets the average of this ShowVmMonitorResponse.
+
+        平均值，未计算默认为0
+
+        :return: The average of this ShowVmMonitorResponse.
+        :rtype: float
+        """
+        return self._average
+
+    @average.setter
+    def average(self, average):
+        r"""Sets the average of this ShowVmMonitorResponse.
+
+        平均值，未计算默认为0
+
+        :param average: The average of this ShowVmMonitorResponse.
+        :type average: float
+        """
+        self._average = average
 
     def to_dict(self):
         """Returns the model properties as a dict"""

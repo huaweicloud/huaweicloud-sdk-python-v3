@@ -29,7 +29,7 @@ class ExpandInstanceStorage:
 
         The model defined in huaweicloud sdk
 
-        :param new_size: **参数解释**：   磁盘扩容后单节点有效存储容量（GB/节点）。   该容量必须大于当前单节点有效容量，小于等于集群规格支持的单节点最大容量，扩容容量为规格支持的步长倍数。  集群规格配置详情可根据 [集群规格详情](ShowClusterFlavor.xml) 查询。    **约束限制**：    不涉及。   **取值范围**：   不涉及。   **默认取值**：   不涉及。
+        :param new_size: **参数解释**：   磁盘扩容后单节点有效存储容量（GB/节点）。    该容量必须大于当前单节点有效容量，小于等于集群规格支持的单节点最大容量，扩容容量为规格支持的步长倍数。  集群规格配置详情可根据 [集群规格详情](ShowClusterFlavor.xml) 查询。     **约束限制**：    不涉及。   **取值范围**：    不涉及。   **默认取值**：    不涉及。
         :type new_size: int
         """
         
@@ -44,7 +44,7 @@ class ExpandInstanceStorage:
     def new_size(self):
         r"""Gets the new_size of this ExpandInstanceStorage.
 
-        **参数解释**：   磁盘扩容后单节点有效存储容量（GB/节点）。   该容量必须大于当前单节点有效容量，小于等于集群规格支持的单节点最大容量，扩容容量为规格支持的步长倍数。  集群规格配置详情可根据 [集群规格详情](ShowClusterFlavor.xml) 查询。    **约束限制**：    不涉及。   **取值范围**：   不涉及。   **默认取值**：   不涉及。
+        **参数解释**：   磁盘扩容后单节点有效存储容量（GB/节点）。    该容量必须大于当前单节点有效容量，小于等于集群规格支持的单节点最大容量，扩容容量为规格支持的步长倍数。  集群规格配置详情可根据 [集群规格详情](ShowClusterFlavor.xml) 查询。     **约束限制**：    不涉及。   **取值范围**：    不涉及。   **默认取值**：    不涉及。
 
         :return: The new_size of this ExpandInstanceStorage.
         :rtype: int
@@ -55,7 +55,7 @@ class ExpandInstanceStorage:
     def new_size(self, new_size):
         r"""Sets the new_size of this ExpandInstanceStorage.
 
-        **参数解释**：   磁盘扩容后单节点有效存储容量（GB/节点）。   该容量必须大于当前单节点有效容量，小于等于集群规格支持的单节点最大容量，扩容容量为规格支持的步长倍数。  集群规格配置详情可根据 [集群规格详情](ShowClusterFlavor.xml) 查询。    **约束限制**：    不涉及。   **取值范围**：   不涉及。   **默认取值**：   不涉及。
+        **参数解释**：   磁盘扩容后单节点有效存储容量（GB/节点）。    该容量必须大于当前单节点有效容量，小于等于集群规格支持的单节点最大容量，扩容容量为规格支持的步长倍数。  集群规格配置详情可根据 [集群规格详情](ShowClusterFlavor.xml) 查询。     **约束限制**：    不涉及。   **取值范围**：    不涉及。   **默认取值**：    不涉及。
 
         :param new_size: The new_size of this ExpandInstanceStorage.
         :type new_size: int

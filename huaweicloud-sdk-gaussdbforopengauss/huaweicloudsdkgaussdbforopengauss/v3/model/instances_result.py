@@ -43,7 +43,7 @@ class InstancesResult:
 
         :param instance_name: 实例名称。
         :type instance_name: str
-        :param instance_id: 实例id。
+        :param instance_id: **参数解释**: 实例ID。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
         :type instance_id: str
         :param volume_type: 存储类型。
         :type volume_type: str
@@ -109,7 +109,7 @@ class InstancesResult:
     def instance_id(self):
         r"""Gets the instance_id of this InstancesResult.
 
-        实例id。
+        **参数解释**: 实例ID。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
 
         :return: The instance_id of this InstancesResult.
         :rtype: str
@@ -120,7 +120,7 @@ class InstancesResult:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this InstancesResult.
 
-        实例id。
+        **参数解释**: 实例ID。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
 
         :param instance_id: The instance_id of this InstancesResult.
         :type instance_id: str

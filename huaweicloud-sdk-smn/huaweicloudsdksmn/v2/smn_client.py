@@ -304,6 +304,138 @@ class SmnClient(Client):
 
         return http_info
 
+    def batch_delete_subscriptions(self, request):
+        r"""批量删除订阅
+
+        批量删除订阅，每个订阅终端的删除结果在响应体中依次展示。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchDeleteSubscriptions
+        :type request: :class:`huaweicloudsdksmn.v2.BatchDeleteSubscriptionsRequest`
+        :rtype: :class:`huaweicloudsdksmn.v2.BatchDeleteSubscriptionsResponse`
+        """
+        http_info = self._batch_delete_subscriptions_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_subscriptions_invoker(self, request):
+        http_info = self._batch_delete_subscriptions_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_delete_subscriptions_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/notifications/subscriptions",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteSubscriptionsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_delete_subscriptions_by_topic(self, request):
+        r"""批量删除指定主题的订阅
+
+        批量删除指定主题的订阅，每个订阅终端的删除结果在响应体中依次展示。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchDeleteSubscriptionsByTopic
+        :type request: :class:`huaweicloudsdksmn.v2.BatchDeleteSubscriptionsByTopicRequest`
+        :rtype: :class:`huaweicloudsdksmn.v2.BatchDeleteSubscriptionsByTopicResponse`
+        """
+        http_info = self._batch_delete_subscriptions_by_topic_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_subscriptions_by_topic_invoker(self, request):
+        http_info = self._batch_delete_subscriptions_by_topic_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_delete_subscriptions_by_topic_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/notifications/topics/{topic_urn}/subscriptions",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteSubscriptionsByTopicResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'topic_urn' in local_var_params:
+            path_params['topic_urn'] = local_var_params['topic_urn']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def batch_delete_subscriptions_filter_polices(self, request):
         r"""批量删除订阅过滤策略
 
@@ -472,6 +604,75 @@ class SmnClient(Client):
             path_params['subscription_urn'] = local_var_params['subscription_urn']
 
         query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def confirm_subscription(self, request):
+        r"""确认订阅
+
+        确认订阅主题消息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ConfirmSubscription
+        :type request: :class:`huaweicloudsdksmn.v2.ConfirmSubscriptionRequest`
+        :rtype: :class:`huaweicloudsdksmn.v2.ConfirmSubscriptionResponse`
+        """
+        http_info = self._confirm_subscription_http_info(request)
+        return self._call_api(**http_info)
+
+    def confirm_subscription_invoker(self, request):
+        http_info = self._confirm_subscription_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _confirm_subscription_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/rest/v2/notifications/subscription/confirm",
+            "request_type": request.__class__.__name__,
+            "response_type": "ConfirmSubscriptionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'topic_urn' in local_var_params:
+            query_params.append(('topic_urn', local_var_params['topic_urn']))
+        if 'endpoint' in local_var_params:
+            query_params.append(('endpoint', local_var_params['endpoint']))
+        if 'token' in local_var_params:
+            query_params.append(('token', local_var_params['token']))
 
         header_params = {}
 
@@ -1102,6 +1303,73 @@ class SmnClient(Client):
 
         return http_info
 
+    def delete_subscriptions_by_topic(self, request):
+        r"""删除指定主题的订阅
+
+        删除指定主题的订阅
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteSubscriptionsByTopic
+        :type request: :class:`huaweicloudsdksmn.v2.DeleteSubscriptionsByTopicRequest`
+        :rtype: :class:`huaweicloudsdksmn.v2.DeleteSubscriptionsByTopicResponse`
+        """
+        http_info = self._delete_subscriptions_by_topic_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_subscriptions_by_topic_invoker(self, request):
+        http_info = self._delete_subscriptions_by_topic_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_subscriptions_by_topic_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/notifications/topics/{topic_urn}/subscriptions/{subscription_urn}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteSubscriptionsByTopicResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'topic_urn' in local_var_params:
+            path_params['topic_urn'] = local_var_params['topic_urn']
+        if 'subscription_urn' in local_var_params:
+            path_params['subscription_urn'] = local_var_params['subscription_urn']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_topic(self, request):
         r"""删除主题
 
@@ -1270,6 +1538,134 @@ class SmnClient(Client):
         path_params = {}
         if 'topic_urn' in local_var_params:
             path_params['topic_urn'] = local_var_params['topic_urn']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def download_http_cert(self, request):
+        r"""下载证书
+
+        下载http消息校验证书
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DownloadHttpCert
+        :type request: :class:`huaweicloudsdksmn.v2.DownloadHttpCertRequest`
+        :rtype: :class:`huaweicloudsdksmn.v2.DownloadHttpCertResponse`
+        """
+        http_info = self._download_http_cert_http_info(request)
+        return self._call_api(**http_info)
+
+    def download_http_cert_invoker(self, request):
+        http_info = self._download_http_cert_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _download_http_cert_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/smn/{certificate_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DownloadHttpCertResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'certificate_id' in local_var_params:
+            path_params['certificate_id'] = local_var_params['certificate_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["content-type", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_cloud_service(self, request):
+        r"""查询授权云服务列表
+
+        查询授权云服务列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListCloudService
+        :type request: :class:`huaweicloudsdksmn.v2.ListCloudServiceRequest`
+        :rtype: :class:`huaweicloudsdksmn.v2.ListCloudServiceResponse`
+        """
+        http_info = self._list_cloud_service_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_cloud_service_invoker(self, request):
+        http_info = self._list_cloud_service_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_cloud_service_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/notifications/cloud_service",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCloudServiceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
 
         query_params = []
 
@@ -1536,6 +1932,69 @@ class SmnClient(Client):
         path_params = {}
         if 'resource_type' in local_var_params:
             path_params['resource_type'] = local_var_params['resource_type']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_protocols(self, request):
+        r"""查询协议列表
+
+        查询SMN支持的协议列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListProtocols
+        :type request: :class:`huaweicloudsdksmn.v2.ListProtocolsRequest`
+        :rtype: :class:`huaweicloudsdksmn.v2.ListProtocolsResponse`
+        """
+        http_info = self._list_protocols_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_protocols_invoker(self, request):
+        http_info = self._list_protocols_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_protocols_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/notifications/protocols",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProtocolsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
 
         query_params = []
 
@@ -2498,6 +2957,71 @@ class SmnClient(Client):
             path_params['topic_urn'] = local_var_params['topic_urn']
 
         query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def unsubscribe_subscription(self, request):
+        r"""取消订阅
+
+        取消订阅主题
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UnsubscribeSubscription
+        :type request: :class:`huaweicloudsdksmn.v2.UnsubscribeSubscriptionRequest`
+        :rtype: :class:`huaweicloudsdksmn.v2.UnsubscribeSubscriptionResponse`
+        """
+        http_info = self._unsubscribe_subscription_http_info(request)
+        return self._call_api(**http_info)
+
+    def unsubscribe_subscription_invoker(self, request):
+        http_info = self._unsubscribe_subscription_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _unsubscribe_subscription_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/rest/v2/notifications/subscription/unsubscribe",
+            "request_type": request.__class__.__name__,
+            "response_type": "UnsubscribeSubscriptionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'subscription_urn' in local_var_params:
+            query_params.append(('subscription_urn', local_var_params['subscription_urn']))
 
         header_params = {}
 

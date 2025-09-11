@@ -18,7 +18,7 @@ class Condition:
 
     openapi_types = {
         'enterprise_project_id': 'str',
-        'instance_name': 'ResourceNameItem',
+        'instance_name': 'CombResourceName',
         'tag': 'ResourceGroupTagRelation'
     }
 
@@ -33,10 +33,10 @@ class Condition:
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 企业项目ID
+        :param enterprise_project_id: **参数解释** 企业项目ID **约束限制** 不涉及 **取值范围** 由数字、字母和-组成，或者为0（默认企业项目ID） **默认取值** 不涉及 
         :type enterprise_project_id: str
         :param instance_name: 
-        :type instance_name: :class:`huaweicloudsdkces.v2.ResourceNameItem`
+        :type instance_name: :class:`huaweicloudsdkces.v2.CombResourceName`
         :param tag: 
         :type tag: :class:`huaweicloudsdkces.v2.ResourceGroupTagRelation`
         """
@@ -59,7 +59,7 @@ class Condition:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this Condition.
 
-        企业项目ID
+        **参数解释** 企业项目ID **约束限制** 不涉及 **取值范围** 由数字、字母和-组成，或者为0（默认企业项目ID） **默认取值** 不涉及 
 
         :return: The enterprise_project_id of this Condition.
         :rtype: str
@@ -70,7 +70,7 @@ class Condition:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this Condition.
 
-        企业项目ID
+        **参数解释** 企业项目ID **约束限制** 不涉及 **取值范围** 由数字、字母和-组成，或者为0（默认企业项目ID） **默认取值** 不涉及 
 
         :param enterprise_project_id: The enterprise_project_id of this Condition.
         :type enterprise_project_id: str
@@ -82,7 +82,7 @@ class Condition:
         r"""Gets the instance_name of this Condition.
 
         :return: The instance_name of this Condition.
-        :rtype: :class:`huaweicloudsdkces.v2.ResourceNameItem`
+        :rtype: :class:`huaweicloudsdkces.v2.CombResourceName`
         """
         return self._instance_name
 
@@ -91,7 +91,7 @@ class Condition:
         r"""Sets the instance_name of this Condition.
 
         :param instance_name: The instance_name of this Condition.
-        :type instance_name: :class:`huaweicloudsdkces.v2.ResourceNameItem`
+        :type instance_name: :class:`huaweicloudsdkces.v2.CombResourceName`
         """
         self._instance_name = instance_name
 

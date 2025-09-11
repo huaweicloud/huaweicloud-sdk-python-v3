@@ -30,7 +30,7 @@ class ShowClusterAccessKeyListResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param result: 
+        :param result: 已授权的访问密钥列表
         :type result: list[:class:`huaweicloudsdkcpcs.v1.ShowClusterAccessKeyListResponseBodyResult`]
         """
         
@@ -46,6 +46,8 @@ class ShowClusterAccessKeyListResponse(SdkResponse):
     def result(self):
         r"""Gets the result of this ShowClusterAccessKeyListResponse.
 
+        已授权的访问密钥列表
+
         :return: The result of this ShowClusterAccessKeyListResponse.
         :rtype: list[:class:`huaweicloudsdkcpcs.v1.ShowClusterAccessKeyListResponseBodyResult`]
         """
@@ -54,6 +56,8 @@ class ShowClusterAccessKeyListResponse(SdkResponse):
     @result.setter
     def result(self, result):
         r"""Sets the result of this ShowClusterAccessKeyListResponse.
+
+        已授权的访问密钥列表
 
         :param result: The result of this ShowClusterAccessKeyListResponse.
         :type result: list[:class:`huaweicloudsdkcpcs.v1.ShowClusterAccessKeyListResponseBodyResult`]

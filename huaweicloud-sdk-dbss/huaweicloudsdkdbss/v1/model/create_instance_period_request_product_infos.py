@@ -45,7 +45,7 @@ class CreateInstancePeriodRequestProductInfos:
         :type resource_type: str
         :param resource_spec_code: 资源规格： - dbss.bypassaudit.low - dbss.bypassaudit.medium - dbss.bypassaudit.high
         :type resource_spec_code: str
-        :param product_spec_desc: 产品规格描述。json字符串格式 ：{\&quot;specDesc\&quot;:{\&quot;zh-cn\&quot;:{\&quot;key1\&quot;:\&quot;value1\&quot;},\&quot;en-us\&quot;:{\&quot;key1\&quot;:\&quot;value1\&quot;}}}。key和value为用户自定义希望展示的产品描述信息。
+        :param product_spec_desc: 产品规格描述。json字符串格式 ：{\&quot;specDesc\&quot;:{\&quot;zh-cn\&quot;:{\&quot;key1\&quot;:\&quot;value1\&quot;},\&quot;en-us\&quot;:{\&quot;key1\&quot;:\&quot;value1\&quot;}}}
         :type product_spec_desc: str
         """
         
@@ -157,7 +157,7 @@ class CreateInstancePeriodRequestProductInfos:
     def product_spec_desc(self):
         r"""Gets the product_spec_desc of this CreateInstancePeriodRequestProductInfos.
 
-        产品规格描述。json字符串格式 ：{\"specDesc\":{\"zh-cn\":{\"key1\":\"value1\"},\"en-us\":{\"key1\":\"value1\"}}}。key和value为用户自定义希望展示的产品描述信息。
+        产品规格描述。json字符串格式 ：{\"specDesc\":{\"zh-cn\":{\"key1\":\"value1\"},\"en-us\":{\"key1\":\"value1\"}}}
 
         :return: The product_spec_desc of this CreateInstancePeriodRequestProductInfos.
         :rtype: str
@@ -168,7 +168,7 @@ class CreateInstancePeriodRequestProductInfos:
     def product_spec_desc(self, product_spec_desc):
         r"""Sets the product_spec_desc of this CreateInstancePeriodRequestProductInfos.
 
-        产品规格描述。json字符串格式 ：{\"specDesc\":{\"zh-cn\":{\"key1\":\"value1\"},\"en-us\":{\"key1\":\"value1\"}}}。key和value为用户自定义希望展示的产品描述信息。
+        产品规格描述。json字符串格式 ：{\"specDesc\":{\"zh-cn\":{\"key1\":\"value1\"},\"en-us\":{\"key1\":\"value1\"}}}
 
         :param product_spec_desc: The product_spec_desc of this CreateInstancePeriodRequestProductInfos.
         :type product_spec_desc: str

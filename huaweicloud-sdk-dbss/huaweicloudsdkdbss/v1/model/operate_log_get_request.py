@@ -63,18 +63,15 @@ class OperateLogGetRequest:
         self._size = None
         self.discriminator = None
 
-        if time is not None:
-            self.time = time
+        self.time = time
         if user_name is not None:
             self.user_name = user_name
         if action is not None:
             self.action = action
         if result is not None:
             self.result = result
-        if page is not None:
-            self.page = page
-        if size is not None:
-            self.size = size
+        self.page = page
+        self.size = size
 
     @property
     def time(self):

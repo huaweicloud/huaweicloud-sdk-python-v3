@@ -19,8 +19,8 @@ class UpdateAlarmNotificationsResponse(SdkResponse):
 
     openapi_types = {
         'notification_enabled': 'bool',
-        'alarm_notifications': 'list[Notification]',
-        'ok_notifications': 'list[Notification]',
+        'alarm_notifications': 'list[NotificationResp]',
+        'ok_notifications': 'list[NotificationResp]',
         'notification_begin_time': 'str',
         'notification_end_time': 'str'
     }
@@ -38,15 +38,15 @@ class UpdateAlarmNotificationsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param notification_enabled: 是否开启告警通知。true:开启，false:关闭。
+        :param notification_enabled: **参数解释**： 是否开启告警通知。     **取值范围**： 布尔值。 - true:开启。 - false:关闭。 
         :type notification_enabled: bool
-        :param alarm_notifications: **参数解释**： 触发告警时，通知组/主题订阅的信息。 **约束限制**： 不涉及。 **取值范围**： 告警触发的动作数量最多为10个。 **默认取值**： 不涉及。 
-        :type alarm_notifications: list[:class:`huaweicloudsdkces.v2.Notification`]
-        :param ok_notifications: **参数解释**： 告警恢复时，通知组/主题订阅的信息。 **约束限制**： 不涉及。 **取值范围**： 告警恢复触发的动作数量最多为10个。 **默认取值**： 不涉及。 
-        :type ok_notifications: list[:class:`huaweicloudsdkces.v2.Notification`]
-        :param notification_begin_time: **参数解释**： 每天告警通知的开始时间。 **约束限制**： 不涉及。 **取值范围**： 长度为[1,64]个字符。 **默认取值**： 不涉及。 
+        :param alarm_notifications: **参数解释**： 触发告警时，通知组/主题订阅的信息。 **取值范围**： 包含的通知信息的数量最多为10个。 
+        :type alarm_notifications: list[:class:`huaweicloudsdkces.v2.NotificationResp`]
+        :param ok_notifications: **参数解释**： 告警恢复时，通知组/主题订阅的信息。 **取值范围**： 包含的通知信息的数量最多为10个。 
+        :type ok_notifications: list[:class:`huaweicloudsdkces.v2.NotificationResp`]
+        :param notification_begin_time: **参数解释**： 告警通知开启时间。    **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。 
         :type notification_begin_time: str
-        :param notification_end_time: **参数解释**： 每天告警通知的结束时间。 **约束限制**： 不涉及。 **取值范围**： 长度为[1,64]个字符。 **默认取值**： 不涉及。 
+        :param notification_end_time: **参数解释**： 告警通知关闭时间。    **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。 
         :type notification_end_time: str
         """
         
@@ -74,7 +74,7 @@ class UpdateAlarmNotificationsResponse(SdkResponse):
     def notification_enabled(self):
         r"""Gets the notification_enabled of this UpdateAlarmNotificationsResponse.
 
-        是否开启告警通知。true:开启，false:关闭。
+        **参数解释**： 是否开启告警通知。     **取值范围**： 布尔值。 - true:开启。 - false:关闭。 
 
         :return: The notification_enabled of this UpdateAlarmNotificationsResponse.
         :rtype: bool
@@ -85,7 +85,7 @@ class UpdateAlarmNotificationsResponse(SdkResponse):
     def notification_enabled(self, notification_enabled):
         r"""Sets the notification_enabled of this UpdateAlarmNotificationsResponse.
 
-        是否开启告警通知。true:开启，false:关闭。
+        **参数解释**： 是否开启告警通知。     **取值范围**： 布尔值。 - true:开启。 - false:关闭。 
 
         :param notification_enabled: The notification_enabled of this UpdateAlarmNotificationsResponse.
         :type notification_enabled: bool
@@ -96,10 +96,10 @@ class UpdateAlarmNotificationsResponse(SdkResponse):
     def alarm_notifications(self):
         r"""Gets the alarm_notifications of this UpdateAlarmNotificationsResponse.
 
-        **参数解释**： 触发告警时，通知组/主题订阅的信息。 **约束限制**： 不涉及。 **取值范围**： 告警触发的动作数量最多为10个。 **默认取值**： 不涉及。 
+        **参数解释**： 触发告警时，通知组/主题订阅的信息。 **取值范围**： 包含的通知信息的数量最多为10个。 
 
         :return: The alarm_notifications of this UpdateAlarmNotificationsResponse.
-        :rtype: list[:class:`huaweicloudsdkces.v2.Notification`]
+        :rtype: list[:class:`huaweicloudsdkces.v2.NotificationResp`]
         """
         return self._alarm_notifications
 
@@ -107,10 +107,10 @@ class UpdateAlarmNotificationsResponse(SdkResponse):
     def alarm_notifications(self, alarm_notifications):
         r"""Sets the alarm_notifications of this UpdateAlarmNotificationsResponse.
 
-        **参数解释**： 触发告警时，通知组/主题订阅的信息。 **约束限制**： 不涉及。 **取值范围**： 告警触发的动作数量最多为10个。 **默认取值**： 不涉及。 
+        **参数解释**： 触发告警时，通知组/主题订阅的信息。 **取值范围**： 包含的通知信息的数量最多为10个。 
 
         :param alarm_notifications: The alarm_notifications of this UpdateAlarmNotificationsResponse.
-        :type alarm_notifications: list[:class:`huaweicloudsdkces.v2.Notification`]
+        :type alarm_notifications: list[:class:`huaweicloudsdkces.v2.NotificationResp`]
         """
         self._alarm_notifications = alarm_notifications
 
@@ -118,10 +118,10 @@ class UpdateAlarmNotificationsResponse(SdkResponse):
     def ok_notifications(self):
         r"""Gets the ok_notifications of this UpdateAlarmNotificationsResponse.
 
-        **参数解释**： 告警恢复时，通知组/主题订阅的信息。 **约束限制**： 不涉及。 **取值范围**： 告警恢复触发的动作数量最多为10个。 **默认取值**： 不涉及。 
+        **参数解释**： 告警恢复时，通知组/主题订阅的信息。 **取值范围**： 包含的通知信息的数量最多为10个。 
 
         :return: The ok_notifications of this UpdateAlarmNotificationsResponse.
-        :rtype: list[:class:`huaweicloudsdkces.v2.Notification`]
+        :rtype: list[:class:`huaweicloudsdkces.v2.NotificationResp`]
         """
         return self._ok_notifications
 
@@ -129,10 +129,10 @@ class UpdateAlarmNotificationsResponse(SdkResponse):
     def ok_notifications(self, ok_notifications):
         r"""Sets the ok_notifications of this UpdateAlarmNotificationsResponse.
 
-        **参数解释**： 告警恢复时，通知组/主题订阅的信息。 **约束限制**： 不涉及。 **取值范围**： 告警恢复触发的动作数量最多为10个。 **默认取值**： 不涉及。 
+        **参数解释**： 告警恢复时，通知组/主题订阅的信息。 **取值范围**： 包含的通知信息的数量最多为10个。 
 
         :param ok_notifications: The ok_notifications of this UpdateAlarmNotificationsResponse.
-        :type ok_notifications: list[:class:`huaweicloudsdkces.v2.Notification`]
+        :type ok_notifications: list[:class:`huaweicloudsdkces.v2.NotificationResp`]
         """
         self._ok_notifications = ok_notifications
 
@@ -140,7 +140,7 @@ class UpdateAlarmNotificationsResponse(SdkResponse):
     def notification_begin_time(self):
         r"""Gets the notification_begin_time of this UpdateAlarmNotificationsResponse.
 
-        **参数解释**： 每天告警通知的开始时间。 **约束限制**： 不涉及。 **取值范围**： 长度为[1,64]个字符。 **默认取值**： 不涉及。 
+        **参数解释**： 告警通知开启时间。    **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。 
 
         :return: The notification_begin_time of this UpdateAlarmNotificationsResponse.
         :rtype: str
@@ -151,7 +151,7 @@ class UpdateAlarmNotificationsResponse(SdkResponse):
     def notification_begin_time(self, notification_begin_time):
         r"""Sets the notification_begin_time of this UpdateAlarmNotificationsResponse.
 
-        **参数解释**： 每天告警通知的开始时间。 **约束限制**： 不涉及。 **取值范围**： 长度为[1,64]个字符。 **默认取值**： 不涉及。 
+        **参数解释**： 告警通知开启时间。    **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。 
 
         :param notification_begin_time: The notification_begin_time of this UpdateAlarmNotificationsResponse.
         :type notification_begin_time: str
@@ -162,7 +162,7 @@ class UpdateAlarmNotificationsResponse(SdkResponse):
     def notification_end_time(self):
         r"""Gets the notification_end_time of this UpdateAlarmNotificationsResponse.
 
-        **参数解释**： 每天告警通知的结束时间。 **约束限制**： 不涉及。 **取值范围**： 长度为[1,64]个字符。 **默认取值**： 不涉及。 
+        **参数解释**： 告警通知关闭时间。    **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。 
 
         :return: The notification_end_time of this UpdateAlarmNotificationsResponse.
         :rtype: str
@@ -173,7 +173,7 @@ class UpdateAlarmNotificationsResponse(SdkResponse):
     def notification_end_time(self, notification_end_time):
         r"""Sets the notification_end_time of this UpdateAlarmNotificationsResponse.
 
-        **参数解释**： 每天告警通知的结束时间。 **约束限制**： 不涉及。 **取值范围**： 长度为[1,64]个字符。 **默认取值**： 不涉及。 
+        **参数解释**： 告警通知关闭时间。    **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。 
 
         :param notification_end_time: The notification_end_time of this UpdateAlarmNotificationsResponse.
         :type notification_end_time: str

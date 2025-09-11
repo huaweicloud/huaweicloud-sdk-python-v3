@@ -18,12 +18,16 @@ class TmsRegion:
     RU_MOSCOW_1 = Region("ru-moscow-1",
                         "https://tms.ru-moscow-1.myhuaweicloud.com",
                         "https://tms.ru-moscow-1.myhuaweicloud.cn")
+    MY_KUALALUMPUR_1 = Region("my-kualalumpur-1",
+                        "https://tms.my-kualalumpur-1.myhuaweicloud.com",
+                        "https://tms.my-kualalumpur-1.myhuaweicloud.cn")
 
     static_fields = {
         "cn-north-4": CN_NORTH_4,
         "ap-southeast-1": AP_SOUTHEAST_1,
         "eu-west-101": EU_WEST_101,
         "ru-moscow-1": RU_MOSCOW_1,
+        "my-kualalumpur-1": MY_KUALALUMPUR_1,
     }
 
     @classmethod

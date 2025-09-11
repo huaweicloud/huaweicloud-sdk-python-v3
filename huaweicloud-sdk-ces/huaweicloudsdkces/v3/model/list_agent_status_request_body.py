@@ -35,13 +35,13 @@ class ListAgentStatusRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param instance_ids: 机器实例id列表
+        :param instance_ids: **参数解释**: 机器实例id列表 **约束限制**: 包含的机器实例id最多为2000个，最少为1个 
         :type instance_ids: list[str]
-        :param uniagent_status: uniagent运行状态，不传查所有状态,none无，running运行中，silent静默中，unknown故障
+        :param uniagent_status: **参数解释**: uniagent运行状态，不传值则查出所有状态 **约束限制**: 不涉及。 **取值范围**: - none: 未安装 - running: 运行中 - silent: 静默状态，用于大规模插件异常时，紧急规避的一种措施，现象是kill掉telescope，只保留uniagent的心跳功能 - unknown: 心跳故障，不上报心跳数据，属于连接丢失故障 **默认取值**: 不涉及 
         :type uniagent_status: str
-        :param extension_name: 插件名称，不传查所有插件，目前仅支持telescope
+        :param extension_name: **参数解释**: 插件名称，不传查所有插件 **约束限制**: 当前仅支持查询telescope插件 **取值范围**: - telescope: 主机监控插件telescope **默认取值**: telescope 
         :type extension_name: str
-        :param extension_status: 插件状态，不传查所有状态, none未安装，running运行中，stopped已停止，fault故障（进程异常），unknown故障（连接异常）
+        :param extension_status: **参数解释**: 插件状态，不传查所有状态  **约束限制**: 不涉及 **取值范围**: - none: 未安装 - running: 运行中 - stopped：已停止 - fault: 进程故障，应该运行的插件，没运行，属于客户端故障 - unknown: 心跳故障，不上报心跳数据，属于连接丢失故障 **默认取值**: 不涉及 
         :type extension_status: str
         """
         
@@ -65,7 +65,7 @@ class ListAgentStatusRequestBody:
     def instance_ids(self):
         r"""Gets the instance_ids of this ListAgentStatusRequestBody.
 
-        机器实例id列表
+        **参数解释**: 机器实例id列表 **约束限制**: 包含的机器实例id最多为2000个，最少为1个 
 
         :return: The instance_ids of this ListAgentStatusRequestBody.
         :rtype: list[str]
@@ -76,7 +76,7 @@ class ListAgentStatusRequestBody:
     def instance_ids(self, instance_ids):
         r"""Sets the instance_ids of this ListAgentStatusRequestBody.
 
-        机器实例id列表
+        **参数解释**: 机器实例id列表 **约束限制**: 包含的机器实例id最多为2000个，最少为1个 
 
         :param instance_ids: The instance_ids of this ListAgentStatusRequestBody.
         :type instance_ids: list[str]
@@ -87,7 +87,7 @@ class ListAgentStatusRequestBody:
     def uniagent_status(self):
         r"""Gets the uniagent_status of this ListAgentStatusRequestBody.
 
-        uniagent运行状态，不传查所有状态,none无，running运行中，silent静默中，unknown故障
+        **参数解释**: uniagent运行状态，不传值则查出所有状态 **约束限制**: 不涉及。 **取值范围**: - none: 未安装 - running: 运行中 - silent: 静默状态，用于大规模插件异常时，紧急规避的一种措施，现象是kill掉telescope，只保留uniagent的心跳功能 - unknown: 心跳故障，不上报心跳数据，属于连接丢失故障 **默认取值**: 不涉及 
 
         :return: The uniagent_status of this ListAgentStatusRequestBody.
         :rtype: str
@@ -98,7 +98,7 @@ class ListAgentStatusRequestBody:
     def uniagent_status(self, uniagent_status):
         r"""Sets the uniagent_status of this ListAgentStatusRequestBody.
 
-        uniagent运行状态，不传查所有状态,none无，running运行中，silent静默中，unknown故障
+        **参数解释**: uniagent运行状态，不传值则查出所有状态 **约束限制**: 不涉及。 **取值范围**: - none: 未安装 - running: 运行中 - silent: 静默状态，用于大规模插件异常时，紧急规避的一种措施，现象是kill掉telescope，只保留uniagent的心跳功能 - unknown: 心跳故障，不上报心跳数据，属于连接丢失故障 **默认取值**: 不涉及 
 
         :param uniagent_status: The uniagent_status of this ListAgentStatusRequestBody.
         :type uniagent_status: str
@@ -109,7 +109,7 @@ class ListAgentStatusRequestBody:
     def extension_name(self):
         r"""Gets the extension_name of this ListAgentStatusRequestBody.
 
-        插件名称，不传查所有插件，目前仅支持telescope
+        **参数解释**: 插件名称，不传查所有插件 **约束限制**: 当前仅支持查询telescope插件 **取值范围**: - telescope: 主机监控插件telescope **默认取值**: telescope 
 
         :return: The extension_name of this ListAgentStatusRequestBody.
         :rtype: str
@@ -120,7 +120,7 @@ class ListAgentStatusRequestBody:
     def extension_name(self, extension_name):
         r"""Sets the extension_name of this ListAgentStatusRequestBody.
 
-        插件名称，不传查所有插件，目前仅支持telescope
+        **参数解释**: 插件名称，不传查所有插件 **约束限制**: 当前仅支持查询telescope插件 **取值范围**: - telescope: 主机监控插件telescope **默认取值**: telescope 
 
         :param extension_name: The extension_name of this ListAgentStatusRequestBody.
         :type extension_name: str
@@ -131,7 +131,7 @@ class ListAgentStatusRequestBody:
     def extension_status(self):
         r"""Gets the extension_status of this ListAgentStatusRequestBody.
 
-        插件状态，不传查所有状态, none未安装，running运行中，stopped已停止，fault故障（进程异常），unknown故障（连接异常）
+        **参数解释**: 插件状态，不传查所有状态  **约束限制**: 不涉及 **取值范围**: - none: 未安装 - running: 运行中 - stopped：已停止 - fault: 进程故障，应该运行的插件，没运行，属于客户端故障 - unknown: 心跳故障，不上报心跳数据，属于连接丢失故障 **默认取值**: 不涉及 
 
         :return: The extension_status of this ListAgentStatusRequestBody.
         :rtype: str
@@ -142,7 +142,7 @@ class ListAgentStatusRequestBody:
     def extension_status(self, extension_status):
         r"""Sets the extension_status of this ListAgentStatusRequestBody.
 
-        插件状态，不传查所有状态, none未安装，running运行中，stopped已停止，fault故障（进程异常），unknown故障（连接异常）
+        **参数解释**: 插件状态，不传查所有状态  **约束限制**: 不涉及 **取值范围**: - none: 未安装 - running: 运行中 - stopped：已停止 - fault: 进程故障，应该运行的插件，没运行，属于客户端故障 - unknown: 心跳故障，不上报心跳数据，属于连接丢失故障 **默认取值**: 不涉及 
 
         :param extension_status: The extension_status of this ListAgentStatusRequestBody.
         :type extension_status: str

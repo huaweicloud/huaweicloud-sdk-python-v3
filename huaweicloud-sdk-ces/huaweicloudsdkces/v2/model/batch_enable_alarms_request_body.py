@@ -31,9 +31,9 @@ class BatchEnableAlarmsRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param alarm_ids: 需要批量启停的告警规则的ID列表
+        :param alarm_ids: **参数解释**： 需要批量启停的告警规则的ID列表。 **约束限制**： 告警规则的ID的数量最多为100个，最少1个。 
         :type alarm_ids: list[str]
-        :param alarm_enabled: 是否开启告警规则。true:开启，false:关闭。
+        :param alarm_enabled: **参数解释**： 是否开启告警规则。     **约束限制**： 不涉及。 **取值范围**： 布尔值。 - true:开启。 - false:关闭。 **默认取值**： true 
         :type alarm_enabled: bool
         """
         
@@ -50,7 +50,7 @@ class BatchEnableAlarmsRequestBody:
     def alarm_ids(self):
         r"""Gets the alarm_ids of this BatchEnableAlarmsRequestBody.
 
-        需要批量启停的告警规则的ID列表
+        **参数解释**： 需要批量启停的告警规则的ID列表。 **约束限制**： 告警规则的ID的数量最多为100个，最少1个。 
 
         :return: The alarm_ids of this BatchEnableAlarmsRequestBody.
         :rtype: list[str]
@@ -61,7 +61,7 @@ class BatchEnableAlarmsRequestBody:
     def alarm_ids(self, alarm_ids):
         r"""Sets the alarm_ids of this BatchEnableAlarmsRequestBody.
 
-        需要批量启停的告警规则的ID列表
+        **参数解释**： 需要批量启停的告警规则的ID列表。 **约束限制**： 告警规则的ID的数量最多为100个，最少1个。 
 
         :param alarm_ids: The alarm_ids of this BatchEnableAlarmsRequestBody.
         :type alarm_ids: list[str]
@@ -72,7 +72,7 @@ class BatchEnableAlarmsRequestBody:
     def alarm_enabled(self):
         r"""Gets the alarm_enabled of this BatchEnableAlarmsRequestBody.
 
-        是否开启告警规则。true:开启，false:关闭。
+        **参数解释**： 是否开启告警规则。     **约束限制**： 不涉及。 **取值范围**： 布尔值。 - true:开启。 - false:关闭。 **默认取值**： true 
 
         :return: The alarm_enabled of this BatchEnableAlarmsRequestBody.
         :rtype: bool
@@ -83,7 +83,7 @@ class BatchEnableAlarmsRequestBody:
     def alarm_enabled(self, alarm_enabled):
         r"""Sets the alarm_enabled of this BatchEnableAlarmsRequestBody.
 
-        是否开启告警规则。true:开启，false:关闭。
+        **参数解释**： 是否开启告警规则。     **约束限制**： 不涉及。 **取值范围**： 布尔值。 - true:开启。 - false:关闭。 **默认取值**： true 
 
         :param alarm_enabled: The alarm_enabled of this BatchEnableAlarmsRequestBody.
         :type alarm_enabled: bool

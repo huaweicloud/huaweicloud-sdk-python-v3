@@ -35,11 +35,11 @@ class UpdateAlarmTemplateRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param template_name: 告警模板的名称，以字母或汉字开头，可包含字母、数字、汉字、_、-，长度范围[1,128]
+        :param template_name: **参数解释**： 告警模板的名称。 **约束限制**： 不涉及。 **取值范围**： 以字母或汉字开头，可包含字母、数字、汉字、_、-，长度为[1,128]个字符。           **默认取值**： 不涉及。 
         :type template_name: str
-        :param template_type: **参数解释**： 自定义告警模板类型 **约束限制**： 当template_type为0或者不选时，policies中的dimension_name必填。当template_type为2时，dimension_name为空。 **取值范围**： 枚举值。0：指标；2： 事件。 **默认取值**： 0 
+        :param template_type: 自定义告警模板类型 0：指标 2： 事件
         :type template_type: int
-        :param template_description: 告警模板的描述，长度范围[0,256]，该字段默认值为空字符串
+        :param template_description: **参数解释**： 告警模板的描述     **约束限制**： 不涉及。 **取值范围**： 长度范围[0,256]。          **默认取值**： 空字符串。 
         :type template_description: str
         :param policies: 告警模板策略列表
         :type policies: list[:class:`huaweicloudsdkces.v2.Policies`]
@@ -64,7 +64,7 @@ class UpdateAlarmTemplateRequestBody:
     def template_name(self):
         r"""Gets the template_name of this UpdateAlarmTemplateRequestBody.
 
-        告警模板的名称，以字母或汉字开头，可包含字母、数字、汉字、_、-，长度范围[1,128]
+        **参数解释**： 告警模板的名称。 **约束限制**： 不涉及。 **取值范围**： 以字母或汉字开头，可包含字母、数字、汉字、_、-，长度为[1,128]个字符。           **默认取值**： 不涉及。 
 
         :return: The template_name of this UpdateAlarmTemplateRequestBody.
         :rtype: str
@@ -75,7 +75,7 @@ class UpdateAlarmTemplateRequestBody:
     def template_name(self, template_name):
         r"""Sets the template_name of this UpdateAlarmTemplateRequestBody.
 
-        告警模板的名称，以字母或汉字开头，可包含字母、数字、汉字、_、-，长度范围[1,128]
+        **参数解释**： 告警模板的名称。 **约束限制**： 不涉及。 **取值范围**： 以字母或汉字开头，可包含字母、数字、汉字、_、-，长度为[1,128]个字符。           **默认取值**： 不涉及。 
 
         :param template_name: The template_name of this UpdateAlarmTemplateRequestBody.
         :type template_name: str
@@ -86,7 +86,7 @@ class UpdateAlarmTemplateRequestBody:
     def template_type(self):
         r"""Gets the template_type of this UpdateAlarmTemplateRequestBody.
 
-        **参数解释**： 自定义告警模板类型 **约束限制**： 当template_type为0或者不选时，policies中的dimension_name必填。当template_type为2时，dimension_name为空。 **取值范围**： 枚举值。0：指标；2： 事件。 **默认取值**： 0 
+        自定义告警模板类型 0：指标 2： 事件
 
         :return: The template_type of this UpdateAlarmTemplateRequestBody.
         :rtype: int
@@ -97,7 +97,7 @@ class UpdateAlarmTemplateRequestBody:
     def template_type(self, template_type):
         r"""Sets the template_type of this UpdateAlarmTemplateRequestBody.
 
-        **参数解释**： 自定义告警模板类型 **约束限制**： 当template_type为0或者不选时，policies中的dimension_name必填。当template_type为2时，dimension_name为空。 **取值范围**： 枚举值。0：指标；2： 事件。 **默认取值**： 0 
+        自定义告警模板类型 0：指标 2： 事件
 
         :param template_type: The template_type of this UpdateAlarmTemplateRequestBody.
         :type template_type: int
@@ -108,7 +108,7 @@ class UpdateAlarmTemplateRequestBody:
     def template_description(self):
         r"""Gets the template_description of this UpdateAlarmTemplateRequestBody.
 
-        告警模板的描述，长度范围[0,256]，该字段默认值为空字符串
+        **参数解释**： 告警模板的描述     **约束限制**： 不涉及。 **取值范围**： 长度范围[0,256]。          **默认取值**： 空字符串。 
 
         :return: The template_description of this UpdateAlarmTemplateRequestBody.
         :rtype: str
@@ -119,7 +119,7 @@ class UpdateAlarmTemplateRequestBody:
     def template_description(self, template_description):
         r"""Sets the template_description of this UpdateAlarmTemplateRequestBody.
 
-        告警模板的描述，长度范围[0,256]，该字段默认值为空字符串
+        **参数解释**： 告警模板的描述     **约束限制**： 不涉及。 **取值范围**： 长度范围[0,256]。          **默认取值**： 空字符串。 
 
         :param template_description: The template_description of this UpdateAlarmTemplateRequestBody.
         :type template_description: str

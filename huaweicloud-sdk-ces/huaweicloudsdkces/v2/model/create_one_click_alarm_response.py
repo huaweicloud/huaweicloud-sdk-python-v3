@@ -30,7 +30,7 @@ class CreateOneClickAlarmResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param one_click_alarm_id: 一键告警ID
+        :param one_click_alarm_id: **参数解释**： 一键告警ID。 **约束限制**： 不涉及。 **取值范围**： 只能为字母或者数字，字符长度为[1,64] **默认取值**： 不涉及。 
         :type one_click_alarm_id: str
         """
         
@@ -46,7 +46,7 @@ class CreateOneClickAlarmResponse(SdkResponse):
     def one_click_alarm_id(self):
         r"""Gets the one_click_alarm_id of this CreateOneClickAlarmResponse.
 
-        一键告警ID
+        **参数解释**： 一键告警ID。 **约束限制**： 不涉及。 **取值范围**： 只能为字母或者数字，字符长度为[1,64] **默认取值**： 不涉及。 
 
         :return: The one_click_alarm_id of this CreateOneClickAlarmResponse.
         :rtype: str
@@ -57,7 +57,7 @@ class CreateOneClickAlarmResponse(SdkResponse):
     def one_click_alarm_id(self, one_click_alarm_id):
         r"""Sets the one_click_alarm_id of this CreateOneClickAlarmResponse.
 
-        一键告警ID
+        **参数解释**： 一键告警ID。 **约束限制**： 不涉及。 **取值范围**： 只能为字母或者数字，字符长度为[1,64] **默认取值**： 不涉及。 
 
         :param one_click_alarm_id: The one_click_alarm_id of this CreateOneClickAlarmResponse.
         :type one_click_alarm_id: str

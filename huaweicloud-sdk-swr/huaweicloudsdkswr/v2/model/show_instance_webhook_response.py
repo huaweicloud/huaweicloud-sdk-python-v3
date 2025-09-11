@@ -54,15 +54,15 @@ class ShowInstanceWebhookResponse(SdkResponse):
 
         :param id: 触发器ID
         :type id: int
-        :param name: 触发器策略名称
+        :param name: 触发器名称
         :type name: str
-        :param description: 触发器策略描述
+        :param description: 触发器描述
         :type description: str
         :param targets: 触发目标
         :type targets: list[:class:`huaweicloudsdkswr.v2.Target`]
         :param event_types: 事件类型
         :type event_types: list[str]
-        :param enabled: 是否使用，可选true或false
+        :param enabled: 是否启用，可选true或false
         :type enabled: bool
         :param namespace_id: 命名空间ID
         :type namespace_id: int
@@ -145,7 +145,7 @@ class ShowInstanceWebhookResponse(SdkResponse):
     def name(self):
         r"""Gets the name of this ShowInstanceWebhookResponse.
 
-        触发器策略名称
+        触发器名称
 
         :return: The name of this ShowInstanceWebhookResponse.
         :rtype: str
@@ -156,7 +156,7 @@ class ShowInstanceWebhookResponse(SdkResponse):
     def name(self, name):
         r"""Sets the name of this ShowInstanceWebhookResponse.
 
-        触发器策略名称
+        触发器名称
 
         :param name: The name of this ShowInstanceWebhookResponse.
         :type name: str
@@ -167,7 +167,7 @@ class ShowInstanceWebhookResponse(SdkResponse):
     def description(self):
         r"""Gets the description of this ShowInstanceWebhookResponse.
 
-        触发器策略描述
+        触发器描述
 
         :return: The description of this ShowInstanceWebhookResponse.
         :rtype: str
@@ -178,7 +178,7 @@ class ShowInstanceWebhookResponse(SdkResponse):
     def description(self, description):
         r"""Sets the description of this ShowInstanceWebhookResponse.
 
-        触发器策略描述
+        触发器描述
 
         :param description: The description of this ShowInstanceWebhookResponse.
         :type description: str
@@ -233,7 +233,7 @@ class ShowInstanceWebhookResponse(SdkResponse):
     def enabled(self):
         r"""Gets the enabled of this ShowInstanceWebhookResponse.
 
-        是否使用，可选true或false
+        是否启用，可选true或false
 
         :return: The enabled of this ShowInstanceWebhookResponse.
         :rtype: bool
@@ -244,7 +244,7 @@ class ShowInstanceWebhookResponse(SdkResponse):
     def enabled(self, enabled):
         r"""Sets the enabled of this ShowInstanceWebhookResponse.
 
-        是否使用，可选true或false
+        是否启用，可选true或false
 
         :param enabled: The enabled of this ShowInstanceWebhookResponse.
         :type enabled: bool

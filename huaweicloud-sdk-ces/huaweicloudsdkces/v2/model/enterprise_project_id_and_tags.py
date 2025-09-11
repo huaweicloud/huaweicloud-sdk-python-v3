@@ -31,7 +31,7 @@ class EnterpriseProjectIdAndTags:
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 企业项目ID
+        :param enterprise_project_id: **参数解释** 企业项目ID **约束限制** 不涉及 **取值范围** 由字母、数字、_和-组成，长度为[1,128]个字符 **默认取值** 不涉及 
         :type enterprise_project_id: str
         :param tag: 
         :type tag: :class:`huaweicloudsdkces.v2.ResourceGroupTagRelation`
@@ -52,7 +52,7 @@ class EnterpriseProjectIdAndTags:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this EnterpriseProjectIdAndTags.
 
-        企业项目ID
+        **参数解释** 企业项目ID **约束限制** 不涉及 **取值范围** 由字母、数字、_和-组成，长度为[1,128]个字符 **默认取值** 不涉及 
 
         :return: The enterprise_project_id of this EnterpriseProjectIdAndTags.
         :rtype: str
@@ -63,7 +63,7 @@ class EnterpriseProjectIdAndTags:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this EnterpriseProjectIdAndTags.
 
-        企业项目ID
+        **参数解释** 企业项目ID **约束限制** 不涉及 **取值范围** 由字母、数字、_和-组成，长度为[1,128]个字符 **默认取值** 不涉及 
 
         :param enterprise_project_id: The enterprise_project_id of this EnterpriseProjectIdAndTags.
         :type enterprise_project_id: str

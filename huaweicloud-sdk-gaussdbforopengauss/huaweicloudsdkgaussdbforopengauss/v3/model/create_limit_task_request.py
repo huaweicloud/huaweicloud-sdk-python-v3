@@ -31,7 +31,7 @@ class CreateLimitTaskRequest:
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: 实例ID。
+        :param instance_id: **参数解释**: 实例ID，此参数是用户创建实例的唯一标识。 **约束限制**: 不涉及。 **取值范围**: 只能由英文字母、数字组成，且长度为36个字符。 **默认取值**: 不涉及。
         :type instance_id: str
         :param body: Body of the CreateLimitTaskRequest
         :type body: :class:`huaweicloudsdkgaussdbforopengauss.v3.CreateLimitTaskRequestBody`
@@ -51,7 +51,7 @@ class CreateLimitTaskRequest:
     def instance_id(self):
         r"""Gets the instance_id of this CreateLimitTaskRequest.
 
-        实例ID。
+        **参数解释**: 实例ID，此参数是用户创建实例的唯一标识。 **约束限制**: 不涉及。 **取值范围**: 只能由英文字母、数字组成，且长度为36个字符。 **默认取值**: 不涉及。
 
         :return: The instance_id of this CreateLimitTaskRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class CreateLimitTaskRequest:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this CreateLimitTaskRequest.
 
-        实例ID。
+        **参数解释**: 实例ID，此参数是用户创建实例的唯一标识。 **约束限制**: 不涉及。 **取值范围**: 只能由英文字母、数字组成，且长度为36个字符。 **默认取值**: 不涉及。
 
         :param instance_id: The instance_id of this CreateLimitTaskRequest.
         :type instance_id: str

@@ -65,43 +65,43 @@ class PostAlarmsReqV2:
 
         The model defined in huaweicloud sdk
 
-        :param name: 告警名称, 只能包含0-9/a-z/A-Z/_/-或汉字，长度1-128
+        :param name: **参数解释**： 告警名称。 **约束限制**： 不涉及。 **取值范围**： 只能包含0-9/a-z/A-Z/_/-或汉字，长度[1，128]个字符。           **默认取值**： 不涉及。 
         :type name: str
-        :param description: 告警描述，长度0-256
+        :param description: **参数解释**： 告警描述。     **约束限制**： 不涉及。 **取值范围**： 长度为[0,256]个字符。        **默认取值**： 不涉及。 
         :type description: str
-        :param namespace: 查询服务的命名空间，各服务命名空间请参考“[服务命名名称](ces_03_0059.xml)”
+        :param namespace: **参数解释**： 查询服务的命名空间，各服务命名空间请参考“[服务命名名称](ces_03_0059.xml)”。    **约束限制**： 不涉及。 **取值范围**： 格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_。字符串的长度在 0 到 32个字符之间。        **默认取值**： 不涉及。 
         :type namespace: str
-        :param resource_group_id: 资源分组ID，以rg开头，后跟22位由字母或数字组成的字符串
+        :param resource_group_id: **参数解释**： 资源分组ID     **约束限制**： 不涉及。  **取值范围**： 以rg开头，后跟22位由字母或数字组成的字符串。长度为[2,24]个字符。       **默认取值**： 不涉及。 
         :type resource_group_id: str
-        :param resources: 资源列表，告警规则类型为全部资源、资源分组时，资源维度值传空；告警规则类型为指定资源时，资源维度值必填，可以同时指定监控多个资源。
+        :param resources: **参数解释**： 资源列表。 **约束限制**： 告警规则类型为全部资源、资源分组时，资源维度值传空；告警规则类型为指定资源时，资源维度值必填，可以同时指定监控多个资源。 最多可以指定1000个资源维度。 
         :type resources: list[list[Dimension]]
-        :param policies: 告警策略，当alarm_template_id字段为空时必填，不为空时不填
+        :param policies: **参数解释**： 告警策略。 **约束限制**： 当alarm_template_id字段为空时必填，不为空时不填。最多包含50个策略。 
         :type policies: list[:class:`huaweicloudsdkces.v2.Policy`]
         :param type: 
         :type type: :class:`huaweicloudsdkces.v2.AlarmType`
-        :param alarm_notifications: **参数解释**： 触发告警时，通知组/主题订阅的信息。 **约束限制**： 不涉及。 **取值范围**： 告警触发的动作数量最多为10个。 **默认取值**： 不涉及。 
+        :param alarm_notifications: **参数解释**： 触发告警时，通知组/主题订阅的信息。 **约束限制**： 不涉及。 **取值范围**： 包含的通知信息的数量最多为10个。 **默认取值**： 不涉及。 
         :type alarm_notifications: list[:class:`huaweicloudsdkces.v2.Notification`]
-        :param ok_notifications: **参数解释**： 告警恢复时，通知组/主题订阅的信息。 **约束限制**： 不涉及。 **取值范围**： 告警恢复触发的动作数量最多为10个。 **默认取值**： 不涉及。 
+        :param ok_notifications: **参数解释**： 告警恢复时，通知组/主题订阅的信息。 **约束限制**： 不涉及。 **取值范围**： 包含的通知信息的数量最多为10个。 **默认取值**： 不涉及。 
         :type ok_notifications: list[:class:`huaweicloudsdkces.v2.Notification`]
-        :param notification_begin_time: **参数解释**： 每天告警通知的开始时间。 **约束限制**： 不涉及。 **取值范围**： 长度为[1,64]个字符。 **默认取值**： 不涉及。 
+        :param notification_begin_time: **参数解释**： 告警通知开启时间。    **约束限制**： 不涉及。 **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。           **默认取值**： 不涉及。 
         :type notification_begin_time: str
-        :param notification_end_time: **参数解释**： 每天告警通知的结束时间。 **约束限制**： 不涉及。 **取值范围**： 长度为[1,64]个字符。 **默认取值**： 不涉及。 
+        :param notification_end_time: **参数解释**： 告警通知关闭时间。    **约束限制**： 不涉及。 **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。           **默认取值**： 不涉及。 
         :type notification_end_time: str
-        :param effective_timezone: 时区，形如：\&quot;GMT-08:00\&quot;、\&quot;GMT+08:00\&quot;、\&quot;GMT+0:00\&quot;
+        :param effective_timezone: **参数解释**： 时区，形如：\&quot;GMT-08:00\&quot;、\&quot;GMT+08:00\&quot;、\&quot;GMT+0:00\&quot;。    **约束限制**： 不涉及。 **取值范围**： 长度为[1,16]个字符。           **默认取值**： 不涉及。 
         :type effective_timezone: str
-        :param enterprise_project_id: 企业项目ID
+        :param enterprise_project_id: **参数解释**： 企业项目ID。     **约束限制**： 不涉及。 **取值范围**： 只能包含小写字母、数字、“-”。           **默认取值**： 不涉及。 
         :type enterprise_project_id: str
-        :param enabled: 是否开启告警规则。true:开启，false:关闭。
+        :param enabled: **参数解释**： 是否开启告警规则。     **约束限制**： 不涉及。 **取值范围**： 布尔值。 - true:开启。 - false:关闭。 **默认取值**： true 
         :type enabled: bool
-        :param notification_enabled: 是否开启告警通知。true:开启，false:关闭。
+        :param notification_enabled: **参数解释**： 是否开启告警通知。     **约束限制**： 不涉及。 **取值范围**： 布尔值。 - true:开启。 - false:关闭。 **默认取值**： true 
         :type notification_enabled: bool
-        :param alarm_template_id: 告警规则关联告警模板ID，如果传了，告警规则关联的策略会和告警模板策略联动变化
+        :param alarm_template_id: **参数解释**： 告警规则关联告警模板ID，如果传了，告警规则关联的策略会和告警模板策略联动变化。     **约束限制**： 不涉及。 **取值范围**： 以at开头，只包含字母、数字，长度为[2,64]个字符。          **默认取值**： 不涉及。 
         :type alarm_template_id: str
-        :param tags: 租户标签列表
+        :param tags: **参数解释**： 租户标签列表。 **约束限制**： 最多包含20个标签。 
         :type tags: list[:class:`huaweicloudsdkces.v2.ResourceTag`]
-        :param product_name: 产品层级跨纬规则创建时需要指明的规则产品名称，一般由\&quot;服务命名空间,服务首层维度名称\&quot;组成，如\&quot;SYS.ECS,instance_id\&quot;
+        :param product_name: **参数解释**： 产品层级跨维规则创建时需要指明的规则产品名称，一般由\&quot;服务命名空间,服务首层维度名称\&quot;组成，如\&quot;SYS.ECS,instance_id\&quot;。 **约束限制**： 不涉及。 **取值范围**： 长度为[0,128]个字符。          **默认取值**： 不涉及。 
         :type product_name: str
-        :param resource_level: 产品层级跨纬规则创建时需要指明为产品层级规则，resource_level取值为product即为产品层级跨纬规则，不填或者取值为dimension则为旧的规则类型
+        :param resource_level: **参数解释**： 产品层级跨维规则创建时需要指明为产品层级规则，resource_level取值为product即为云产品类型，不填或者取值为dimension则为子维度类型。 **约束限制**： 不涉及。 **取值范围**： 枚举值。 - product：云产品。 - dimension：子维度。 **默认取值**： 子维度。 
         :type resource_level: str
         """
         
@@ -165,7 +165,7 @@ class PostAlarmsReqV2:
     def name(self):
         r"""Gets the name of this PostAlarmsReqV2.
 
-        告警名称, 只能包含0-9/a-z/A-Z/_/-或汉字，长度1-128
+        **参数解释**： 告警名称。 **约束限制**： 不涉及。 **取值范围**： 只能包含0-9/a-z/A-Z/_/-或汉字，长度[1，128]个字符。           **默认取值**： 不涉及。 
 
         :return: The name of this PostAlarmsReqV2.
         :rtype: str
@@ -176,7 +176,7 @@ class PostAlarmsReqV2:
     def name(self, name):
         r"""Sets the name of this PostAlarmsReqV2.
 
-        告警名称, 只能包含0-9/a-z/A-Z/_/-或汉字，长度1-128
+        **参数解释**： 告警名称。 **约束限制**： 不涉及。 **取值范围**： 只能包含0-9/a-z/A-Z/_/-或汉字，长度[1，128]个字符。           **默认取值**： 不涉及。 
 
         :param name: The name of this PostAlarmsReqV2.
         :type name: str
@@ -187,7 +187,7 @@ class PostAlarmsReqV2:
     def description(self):
         r"""Gets the description of this PostAlarmsReqV2.
 
-        告警描述，长度0-256
+        **参数解释**： 告警描述。     **约束限制**： 不涉及。 **取值范围**： 长度为[0,256]个字符。        **默认取值**： 不涉及。 
 
         :return: The description of this PostAlarmsReqV2.
         :rtype: str
@@ -198,7 +198,7 @@ class PostAlarmsReqV2:
     def description(self, description):
         r"""Sets the description of this PostAlarmsReqV2.
 
-        告警描述，长度0-256
+        **参数解释**： 告警描述。     **约束限制**： 不涉及。 **取值范围**： 长度为[0,256]个字符。        **默认取值**： 不涉及。 
 
         :param description: The description of this PostAlarmsReqV2.
         :type description: str
@@ -209,7 +209,7 @@ class PostAlarmsReqV2:
     def namespace(self):
         r"""Gets the namespace of this PostAlarmsReqV2.
 
-        查询服务的命名空间，各服务命名空间请参考“[服务命名名称](ces_03_0059.xml)”
+        **参数解释**： 查询服务的命名空间，各服务命名空间请参考“[服务命名名称](ces_03_0059.xml)”。    **约束限制**： 不涉及。 **取值范围**： 格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_。字符串的长度在 0 到 32个字符之间。        **默认取值**： 不涉及。 
 
         :return: The namespace of this PostAlarmsReqV2.
         :rtype: str
@@ -220,7 +220,7 @@ class PostAlarmsReqV2:
     def namespace(self, namespace):
         r"""Sets the namespace of this PostAlarmsReqV2.
 
-        查询服务的命名空间，各服务命名空间请参考“[服务命名名称](ces_03_0059.xml)”
+        **参数解释**： 查询服务的命名空间，各服务命名空间请参考“[服务命名名称](ces_03_0059.xml)”。    **约束限制**： 不涉及。 **取值范围**： 格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_。字符串的长度在 0 到 32个字符之间。        **默认取值**： 不涉及。 
 
         :param namespace: The namespace of this PostAlarmsReqV2.
         :type namespace: str
@@ -231,7 +231,7 @@ class PostAlarmsReqV2:
     def resource_group_id(self):
         r"""Gets the resource_group_id of this PostAlarmsReqV2.
 
-        资源分组ID，以rg开头，后跟22位由字母或数字组成的字符串
+        **参数解释**： 资源分组ID     **约束限制**： 不涉及。  **取值范围**： 以rg开头，后跟22位由字母或数字组成的字符串。长度为[2,24]个字符。       **默认取值**： 不涉及。 
 
         :return: The resource_group_id of this PostAlarmsReqV2.
         :rtype: str
@@ -242,7 +242,7 @@ class PostAlarmsReqV2:
     def resource_group_id(self, resource_group_id):
         r"""Sets the resource_group_id of this PostAlarmsReqV2.
 
-        资源分组ID，以rg开头，后跟22位由字母或数字组成的字符串
+        **参数解释**： 资源分组ID     **约束限制**： 不涉及。  **取值范围**： 以rg开头，后跟22位由字母或数字组成的字符串。长度为[2,24]个字符。       **默认取值**： 不涉及。 
 
         :param resource_group_id: The resource_group_id of this PostAlarmsReqV2.
         :type resource_group_id: str
@@ -253,7 +253,7 @@ class PostAlarmsReqV2:
     def resources(self):
         r"""Gets the resources of this PostAlarmsReqV2.
 
-        资源列表，告警规则类型为全部资源、资源分组时，资源维度值传空；告警规则类型为指定资源时，资源维度值必填，可以同时指定监控多个资源。
+        **参数解释**： 资源列表。 **约束限制**： 告警规则类型为全部资源、资源分组时，资源维度值传空；告警规则类型为指定资源时，资源维度值必填，可以同时指定监控多个资源。 最多可以指定1000个资源维度。 
 
         :return: The resources of this PostAlarmsReqV2.
         :rtype: list[list[Dimension]]
@@ -264,7 +264,7 @@ class PostAlarmsReqV2:
     def resources(self, resources):
         r"""Sets the resources of this PostAlarmsReqV2.
 
-        资源列表，告警规则类型为全部资源、资源分组时，资源维度值传空；告警规则类型为指定资源时，资源维度值必填，可以同时指定监控多个资源。
+        **参数解释**： 资源列表。 **约束限制**： 告警规则类型为全部资源、资源分组时，资源维度值传空；告警规则类型为指定资源时，资源维度值必填，可以同时指定监控多个资源。 最多可以指定1000个资源维度。 
 
         :param resources: The resources of this PostAlarmsReqV2.
         :type resources: list[list[Dimension]]
@@ -275,7 +275,7 @@ class PostAlarmsReqV2:
     def policies(self):
         r"""Gets the policies of this PostAlarmsReqV2.
 
-        告警策略，当alarm_template_id字段为空时必填，不为空时不填
+        **参数解释**： 告警策略。 **约束限制**： 当alarm_template_id字段为空时必填，不为空时不填。最多包含50个策略。 
 
         :return: The policies of this PostAlarmsReqV2.
         :rtype: list[:class:`huaweicloudsdkces.v2.Policy`]
@@ -286,7 +286,7 @@ class PostAlarmsReqV2:
     def policies(self, policies):
         r"""Sets the policies of this PostAlarmsReqV2.
 
-        告警策略，当alarm_template_id字段为空时必填，不为空时不填
+        **参数解释**： 告警策略。 **约束限制**： 当alarm_template_id字段为空时必填，不为空时不填。最多包含50个策略。 
 
         :param policies: The policies of this PostAlarmsReqV2.
         :type policies: list[:class:`huaweicloudsdkces.v2.Policy`]
@@ -315,7 +315,7 @@ class PostAlarmsReqV2:
     def alarm_notifications(self):
         r"""Gets the alarm_notifications of this PostAlarmsReqV2.
 
-        **参数解释**： 触发告警时，通知组/主题订阅的信息。 **约束限制**： 不涉及。 **取值范围**： 告警触发的动作数量最多为10个。 **默认取值**： 不涉及。 
+        **参数解释**： 触发告警时，通知组/主题订阅的信息。 **约束限制**： 不涉及。 **取值范围**： 包含的通知信息的数量最多为10个。 **默认取值**： 不涉及。 
 
         :return: The alarm_notifications of this PostAlarmsReqV2.
         :rtype: list[:class:`huaweicloudsdkces.v2.Notification`]
@@ -326,7 +326,7 @@ class PostAlarmsReqV2:
     def alarm_notifications(self, alarm_notifications):
         r"""Sets the alarm_notifications of this PostAlarmsReqV2.
 
-        **参数解释**： 触发告警时，通知组/主题订阅的信息。 **约束限制**： 不涉及。 **取值范围**： 告警触发的动作数量最多为10个。 **默认取值**： 不涉及。 
+        **参数解释**： 触发告警时，通知组/主题订阅的信息。 **约束限制**： 不涉及。 **取值范围**： 包含的通知信息的数量最多为10个。 **默认取值**： 不涉及。 
 
         :param alarm_notifications: The alarm_notifications of this PostAlarmsReqV2.
         :type alarm_notifications: list[:class:`huaweicloudsdkces.v2.Notification`]
@@ -337,7 +337,7 @@ class PostAlarmsReqV2:
     def ok_notifications(self):
         r"""Gets the ok_notifications of this PostAlarmsReqV2.
 
-        **参数解释**： 告警恢复时，通知组/主题订阅的信息。 **约束限制**： 不涉及。 **取值范围**： 告警恢复触发的动作数量最多为10个。 **默认取值**： 不涉及。 
+        **参数解释**： 告警恢复时，通知组/主题订阅的信息。 **约束限制**： 不涉及。 **取值范围**： 包含的通知信息的数量最多为10个。 **默认取值**： 不涉及。 
 
         :return: The ok_notifications of this PostAlarmsReqV2.
         :rtype: list[:class:`huaweicloudsdkces.v2.Notification`]
@@ -348,7 +348,7 @@ class PostAlarmsReqV2:
     def ok_notifications(self, ok_notifications):
         r"""Sets the ok_notifications of this PostAlarmsReqV2.
 
-        **参数解释**： 告警恢复时，通知组/主题订阅的信息。 **约束限制**： 不涉及。 **取值范围**： 告警恢复触发的动作数量最多为10个。 **默认取值**： 不涉及。 
+        **参数解释**： 告警恢复时，通知组/主题订阅的信息。 **约束限制**： 不涉及。 **取值范围**： 包含的通知信息的数量最多为10个。 **默认取值**： 不涉及。 
 
         :param ok_notifications: The ok_notifications of this PostAlarmsReqV2.
         :type ok_notifications: list[:class:`huaweicloudsdkces.v2.Notification`]
@@ -359,7 +359,7 @@ class PostAlarmsReqV2:
     def notification_begin_time(self):
         r"""Gets the notification_begin_time of this PostAlarmsReqV2.
 
-        **参数解释**： 每天告警通知的开始时间。 **约束限制**： 不涉及。 **取值范围**： 长度为[1,64]个字符。 **默认取值**： 不涉及。 
+        **参数解释**： 告警通知开启时间。    **约束限制**： 不涉及。 **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。           **默认取值**： 不涉及。 
 
         :return: The notification_begin_time of this PostAlarmsReqV2.
         :rtype: str
@@ -370,7 +370,7 @@ class PostAlarmsReqV2:
     def notification_begin_time(self, notification_begin_time):
         r"""Sets the notification_begin_time of this PostAlarmsReqV2.
 
-        **参数解释**： 每天告警通知的开始时间。 **约束限制**： 不涉及。 **取值范围**： 长度为[1,64]个字符。 **默认取值**： 不涉及。 
+        **参数解释**： 告警通知开启时间。    **约束限制**： 不涉及。 **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。           **默认取值**： 不涉及。 
 
         :param notification_begin_time: The notification_begin_time of this PostAlarmsReqV2.
         :type notification_begin_time: str
@@ -381,7 +381,7 @@ class PostAlarmsReqV2:
     def notification_end_time(self):
         r"""Gets the notification_end_time of this PostAlarmsReqV2.
 
-        **参数解释**： 每天告警通知的结束时间。 **约束限制**： 不涉及。 **取值范围**： 长度为[1,64]个字符。 **默认取值**： 不涉及。 
+        **参数解释**： 告警通知关闭时间。    **约束限制**： 不涉及。 **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。           **默认取值**： 不涉及。 
 
         :return: The notification_end_time of this PostAlarmsReqV2.
         :rtype: str
@@ -392,7 +392,7 @@ class PostAlarmsReqV2:
     def notification_end_time(self, notification_end_time):
         r"""Sets the notification_end_time of this PostAlarmsReqV2.
 
-        **参数解释**： 每天告警通知的结束时间。 **约束限制**： 不涉及。 **取值范围**： 长度为[1,64]个字符。 **默认取值**： 不涉及。 
+        **参数解释**： 告警通知关闭时间。    **约束限制**： 不涉及。 **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。           **默认取值**： 不涉及。 
 
         :param notification_end_time: The notification_end_time of this PostAlarmsReqV2.
         :type notification_end_time: str
@@ -403,7 +403,7 @@ class PostAlarmsReqV2:
     def effective_timezone(self):
         r"""Gets the effective_timezone of this PostAlarmsReqV2.
 
-        时区，形如：\"GMT-08:00\"、\"GMT+08:00\"、\"GMT+0:00\"
+        **参数解释**： 时区，形如：\"GMT-08:00\"、\"GMT+08:00\"、\"GMT+0:00\"。    **约束限制**： 不涉及。 **取值范围**： 长度为[1,16]个字符。           **默认取值**： 不涉及。 
 
         :return: The effective_timezone of this PostAlarmsReqV2.
         :rtype: str
@@ -414,7 +414,7 @@ class PostAlarmsReqV2:
     def effective_timezone(self, effective_timezone):
         r"""Sets the effective_timezone of this PostAlarmsReqV2.
 
-        时区，形如：\"GMT-08:00\"、\"GMT+08:00\"、\"GMT+0:00\"
+        **参数解释**： 时区，形如：\"GMT-08:00\"、\"GMT+08:00\"、\"GMT+0:00\"。    **约束限制**： 不涉及。 **取值范围**： 长度为[1,16]个字符。           **默认取值**： 不涉及。 
 
         :param effective_timezone: The effective_timezone of this PostAlarmsReqV2.
         :type effective_timezone: str
@@ -425,7 +425,7 @@ class PostAlarmsReqV2:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this PostAlarmsReqV2.
 
-        企业项目ID
+        **参数解释**： 企业项目ID。     **约束限制**： 不涉及。 **取值范围**： 只能包含小写字母、数字、“-”。           **默认取值**： 不涉及。 
 
         :return: The enterprise_project_id of this PostAlarmsReqV2.
         :rtype: str
@@ -436,7 +436,7 @@ class PostAlarmsReqV2:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this PostAlarmsReqV2.
 
-        企业项目ID
+        **参数解释**： 企业项目ID。     **约束限制**： 不涉及。 **取值范围**： 只能包含小写字母、数字、“-”。           **默认取值**： 不涉及。 
 
         :param enterprise_project_id: The enterprise_project_id of this PostAlarmsReqV2.
         :type enterprise_project_id: str
@@ -447,7 +447,7 @@ class PostAlarmsReqV2:
     def enabled(self):
         r"""Gets the enabled of this PostAlarmsReqV2.
 
-        是否开启告警规则。true:开启，false:关闭。
+        **参数解释**： 是否开启告警规则。     **约束限制**： 不涉及。 **取值范围**： 布尔值。 - true:开启。 - false:关闭。 **默认取值**： true 
 
         :return: The enabled of this PostAlarmsReqV2.
         :rtype: bool
@@ -458,7 +458,7 @@ class PostAlarmsReqV2:
     def enabled(self, enabled):
         r"""Sets the enabled of this PostAlarmsReqV2.
 
-        是否开启告警规则。true:开启，false:关闭。
+        **参数解释**： 是否开启告警规则。     **约束限制**： 不涉及。 **取值范围**： 布尔值。 - true:开启。 - false:关闭。 **默认取值**： true 
 
         :param enabled: The enabled of this PostAlarmsReqV2.
         :type enabled: bool
@@ -469,7 +469,7 @@ class PostAlarmsReqV2:
     def notification_enabled(self):
         r"""Gets the notification_enabled of this PostAlarmsReqV2.
 
-        是否开启告警通知。true:开启，false:关闭。
+        **参数解释**： 是否开启告警通知。     **约束限制**： 不涉及。 **取值范围**： 布尔值。 - true:开启。 - false:关闭。 **默认取值**： true 
 
         :return: The notification_enabled of this PostAlarmsReqV2.
         :rtype: bool
@@ -480,7 +480,7 @@ class PostAlarmsReqV2:
     def notification_enabled(self, notification_enabled):
         r"""Sets the notification_enabled of this PostAlarmsReqV2.
 
-        是否开启告警通知。true:开启，false:关闭。
+        **参数解释**： 是否开启告警通知。     **约束限制**： 不涉及。 **取值范围**： 布尔值。 - true:开启。 - false:关闭。 **默认取值**： true 
 
         :param notification_enabled: The notification_enabled of this PostAlarmsReqV2.
         :type notification_enabled: bool
@@ -491,7 +491,7 @@ class PostAlarmsReqV2:
     def alarm_template_id(self):
         r"""Gets the alarm_template_id of this PostAlarmsReqV2.
 
-        告警规则关联告警模板ID，如果传了，告警规则关联的策略会和告警模板策略联动变化
+        **参数解释**： 告警规则关联告警模板ID，如果传了，告警规则关联的策略会和告警模板策略联动变化。     **约束限制**： 不涉及。 **取值范围**： 以at开头，只包含字母、数字，长度为[2,64]个字符。          **默认取值**： 不涉及。 
 
         :return: The alarm_template_id of this PostAlarmsReqV2.
         :rtype: str
@@ -502,7 +502,7 @@ class PostAlarmsReqV2:
     def alarm_template_id(self, alarm_template_id):
         r"""Sets the alarm_template_id of this PostAlarmsReqV2.
 
-        告警规则关联告警模板ID，如果传了，告警规则关联的策略会和告警模板策略联动变化
+        **参数解释**： 告警规则关联告警模板ID，如果传了，告警规则关联的策略会和告警模板策略联动变化。     **约束限制**： 不涉及。 **取值范围**： 以at开头，只包含字母、数字，长度为[2,64]个字符。          **默认取值**： 不涉及。 
 
         :param alarm_template_id: The alarm_template_id of this PostAlarmsReqV2.
         :type alarm_template_id: str
@@ -513,7 +513,7 @@ class PostAlarmsReqV2:
     def tags(self):
         r"""Gets the tags of this PostAlarmsReqV2.
 
-        租户标签列表
+        **参数解释**： 租户标签列表。 **约束限制**： 最多包含20个标签。 
 
         :return: The tags of this PostAlarmsReqV2.
         :rtype: list[:class:`huaweicloudsdkces.v2.ResourceTag`]
@@ -524,7 +524,7 @@ class PostAlarmsReqV2:
     def tags(self, tags):
         r"""Sets the tags of this PostAlarmsReqV2.
 
-        租户标签列表
+        **参数解释**： 租户标签列表。 **约束限制**： 最多包含20个标签。 
 
         :param tags: The tags of this PostAlarmsReqV2.
         :type tags: list[:class:`huaweicloudsdkces.v2.ResourceTag`]
@@ -535,7 +535,7 @@ class PostAlarmsReqV2:
     def product_name(self):
         r"""Gets the product_name of this PostAlarmsReqV2.
 
-        产品层级跨纬规则创建时需要指明的规则产品名称，一般由\"服务命名空间,服务首层维度名称\"组成，如\"SYS.ECS,instance_id\"
+        **参数解释**： 产品层级跨维规则创建时需要指明的规则产品名称，一般由\"服务命名空间,服务首层维度名称\"组成，如\"SYS.ECS,instance_id\"。 **约束限制**： 不涉及。 **取值范围**： 长度为[0,128]个字符。          **默认取值**： 不涉及。 
 
         :return: The product_name of this PostAlarmsReqV2.
         :rtype: str
@@ -546,7 +546,7 @@ class PostAlarmsReqV2:
     def product_name(self, product_name):
         r"""Sets the product_name of this PostAlarmsReqV2.
 
-        产品层级跨纬规则创建时需要指明的规则产品名称，一般由\"服务命名空间,服务首层维度名称\"组成，如\"SYS.ECS,instance_id\"
+        **参数解释**： 产品层级跨维规则创建时需要指明的规则产品名称，一般由\"服务命名空间,服务首层维度名称\"组成，如\"SYS.ECS,instance_id\"。 **约束限制**： 不涉及。 **取值范围**： 长度为[0,128]个字符。          **默认取值**： 不涉及。 
 
         :param product_name: The product_name of this PostAlarmsReqV2.
         :type product_name: str
@@ -557,7 +557,7 @@ class PostAlarmsReqV2:
     def resource_level(self):
         r"""Gets the resource_level of this PostAlarmsReqV2.
 
-        产品层级跨纬规则创建时需要指明为产品层级规则，resource_level取值为product即为产品层级跨纬规则，不填或者取值为dimension则为旧的规则类型
+        **参数解释**： 产品层级跨维规则创建时需要指明为产品层级规则，resource_level取值为product即为云产品类型，不填或者取值为dimension则为子维度类型。 **约束限制**： 不涉及。 **取值范围**： 枚举值。 - product：云产品。 - dimension：子维度。 **默认取值**： 子维度。 
 
         :return: The resource_level of this PostAlarmsReqV2.
         :rtype: str
@@ -568,7 +568,7 @@ class PostAlarmsReqV2:
     def resource_level(self, resource_level):
         r"""Sets the resource_level of this PostAlarmsReqV2.
 
-        产品层级跨纬规则创建时需要指明为产品层级规则，resource_level取值为product即为产品层级跨纬规则，不填或者取值为dimension则为旧的规则类型
+        **参数解释**： 产品层级跨维规则创建时需要指明为产品层级规则，resource_level取值为product即为云产品类型，不填或者取值为dimension则为子维度类型。 **约束限制**： 不涉及。 **取值范围**： 枚举值。 - product：云产品。 - dimension：子维度。 **默认取值**： 子维度。 
 
         :param resource_level: The resource_level of this PostAlarmsReqV2.
         :type resource_level: str

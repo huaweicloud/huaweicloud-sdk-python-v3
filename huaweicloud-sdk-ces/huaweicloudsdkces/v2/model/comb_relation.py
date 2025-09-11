@@ -31,9 +31,9 @@ class CombRelation:
 
         The model defined in huaweicloud sdk
 
-        :param logical_operator: 逻辑运算符  ALL 所有条件匹配成功  ANY 任意条件匹配成功 
+        :param logical_operator: **参数解释** 逻辑运算符。 **约束限制** 不涉及。 **取值范围** - ALL: 所有条件匹配成功。 - ANY: 任意条件匹配成功。 **默认取值** 不涉及。 
         :type logical_operator: str
-        :param conditions: 组合匹配资源分组的匹配条件
+        :param conditions: **参数解释** 组合匹配资源分组的匹配条件。 **约束限制** 不超过50个条件。 
         :type conditions: list[:class:`huaweicloudsdkces.v2.Condition`]
         """
         
@@ -50,7 +50,7 @@ class CombRelation:
     def logical_operator(self):
         r"""Gets the logical_operator of this CombRelation.
 
-        逻辑运算符  ALL 所有条件匹配成功  ANY 任意条件匹配成功 
+        **参数解释** 逻辑运算符。 **约束限制** 不涉及。 **取值范围** - ALL: 所有条件匹配成功。 - ANY: 任意条件匹配成功。 **默认取值** 不涉及。 
 
         :return: The logical_operator of this CombRelation.
         :rtype: str
@@ -61,7 +61,7 @@ class CombRelation:
     def logical_operator(self, logical_operator):
         r"""Sets the logical_operator of this CombRelation.
 
-        逻辑运算符  ALL 所有条件匹配成功  ANY 任意条件匹配成功 
+        **参数解释** 逻辑运算符。 **约束限制** 不涉及。 **取值范围** - ALL: 所有条件匹配成功。 - ANY: 任意条件匹配成功。 **默认取值** 不涉及。 
 
         :param logical_operator: The logical_operator of this CombRelation.
         :type logical_operator: str
@@ -72,7 +72,7 @@ class CombRelation:
     def conditions(self):
         r"""Gets the conditions of this CombRelation.
 
-        组合匹配资源分组的匹配条件
+        **参数解释** 组合匹配资源分组的匹配条件。 **约束限制** 不超过50个条件。 
 
         :return: The conditions of this CombRelation.
         :rtype: list[:class:`huaweicloudsdkces.v2.Condition`]
@@ -83,7 +83,7 @@ class CombRelation:
     def conditions(self, conditions):
         r"""Sets the conditions of this CombRelation.
 
-        组合匹配资源分组的匹配条件
+        **参数解释** 组合匹配资源分组的匹配条件。 **约束限制** 不超过50个条件。 
 
         :param conditions: The conditions of this CombRelation.
         :type conditions: list[:class:`huaweicloudsdkces.v2.Condition`]

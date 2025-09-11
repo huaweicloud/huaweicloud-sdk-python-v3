@@ -31,9 +31,9 @@ class Resource:
 
         The model defined in huaweicloud sdk
 
-        :param namespace: 查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”
+        :param namespace: **参数解释** 查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)” **约束限制** 不涉及 **取值范围** 格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_。字符串的长度必须在 3 到 32个字符之间。 **默认取值** 不涉及 
         :type namespace: str
-        :param dimensions: 资源的维度信息
+        :param dimensions: **参数解释** 资源的维度信息 **约束限制** 不超过4个维度 
         :type dimensions: list[:class:`huaweicloudsdkces.v2.ResourceDimension`]
         """
         
@@ -50,7 +50,7 @@ class Resource:
     def namespace(self):
         r"""Gets the namespace of this Resource.
 
-        查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”
+        **参数解释** 查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)” **约束限制** 不涉及 **取值范围** 格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_。字符串的长度必须在 3 到 32个字符之间。 **默认取值** 不涉及 
 
         :return: The namespace of this Resource.
         :rtype: str
@@ -61,7 +61,7 @@ class Resource:
     def namespace(self, namespace):
         r"""Sets the namespace of this Resource.
 
-        查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”
+        **参数解释** 查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)” **约束限制** 不涉及 **取值范围** 格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_。字符串的长度必须在 3 到 32个字符之间。 **默认取值** 不涉及 
 
         :param namespace: The namespace of this Resource.
         :type namespace: str
@@ -72,7 +72,7 @@ class Resource:
     def dimensions(self):
         r"""Gets the dimensions of this Resource.
 
-        资源的维度信息
+        **参数解释** 资源的维度信息 **约束限制** 不超过4个维度 
 
         :return: The dimensions of this Resource.
         :rtype: list[:class:`huaweicloudsdkces.v2.ResourceDimension`]
@@ -83,7 +83,7 @@ class Resource:
     def dimensions(self, dimensions):
         r"""Sets the dimensions of this Resource.
 
-        资源的维度信息
+        **参数解释** 资源的维度信息 **约束限制** 不超过4个维度 
 
         :param dimensions: The dimensions of this Resource.
         :type dimensions: list[:class:`huaweicloudsdkces.v2.ResourceDimension`]

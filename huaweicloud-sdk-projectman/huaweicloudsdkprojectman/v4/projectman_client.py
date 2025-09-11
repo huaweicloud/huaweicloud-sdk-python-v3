@@ -1903,6 +1903,219 @@ class ProjectManClient(Client):
 
         return http_info
 
+    def create_ipd_project_issue(self, request):
+        r"""创建工作项
+
+        创建IPD项目的工作项
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateIpdProjectIssue
+        :type request: :class:`huaweicloudsdkprojectman.v4.CreateIpdProjectIssueRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.CreateIpdProjectIssueResponse`
+        """
+        http_info = self._create_ipd_project_issue_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_ipd_project_issue_invoker(self, request):
+        http_info = self._create_ipd_project_issue_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_ipd_project_issue_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/ipdprojectservice/projects/{project_id}/issues",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateIpdProjectIssueResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_ipd_project_issue_attachment(self, request):
+        r"""上传issue附件
+
+        上传issue附件
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateIpdProjectIssueAttachment
+        :type request: :class:`huaweicloudsdkprojectman.v4.CreateIpdProjectIssueAttachmentRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.CreateIpdProjectIssueAttachmentResponse`
+        """
+        http_info = self._create_ipd_project_issue_attachment_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_ipd_project_issue_attachment_invoker(self, request):
+        http_info = self._create_ipd_project_issue_attachment_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_ipd_project_issue_attachment_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/ipdprojectservice/projects/{project_id}/issues/{issue_id}/attachments/upload",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateIpdProjectIssueAttachmentResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'issue_id' in local_var_params:
+            path_params['issue_id'] = local_var_params['issue_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+        if 'attachment' in local_var_params:
+            form_params['attachment'] = local_var_params['attachment']
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['multipart/form-data'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_ipd_project_issues(self, request):
+        r"""查询项目工作项列表
+
+        查询Ipd项目的工作项列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListIpdProjectIssues
+        :type request: :class:`huaweicloudsdkprojectman.v4.ListIpdProjectIssuesRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.ListIpdProjectIssuesResponse`
+        """
+        http_info = self._list_ipd_project_issues_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_ipd_project_issues_invoker(self, request):
+        http_info = self._list_ipd_project_issues_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_ipd_project_issues_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/ipdprojectservice/projects/{project_id}/issues/query",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListIpdProjectIssuesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+        if 'is_backlog' in local_var_params:
+            query_params.append(('is_backlog', local_var_params['is_backlog']))
+        if 'issue_type' in local_var_params:
+            query_params.append(('issue_type', local_var_params['issue_type']))
+        if 'src_domain_id' in local_var_params:
+            query_params.append(('src_domain_id', local_var_params['src_domain_id']))
+        if 'view' in local_var_params:
+            query_params.append(('view', local_var_params['view']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_issue_fields(self, request):
         r"""查询字段模板列表
 
@@ -2301,6 +2514,410 @@ class ProjectManClient(Client):
             ['application/json'])
 
         auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def download_ipd_issue_attachment(self, request):
+        r"""根据ID下载工作项附件
+
+        根据ID下载工作项附件
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DownloadIpdIssueAttachment
+        :type request: :class:`huaweicloudsdkprojectman.v4.DownloadIpdIssueAttachmentRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.DownloadIpdIssueAttachmentResponse`
+        """
+        http_info = self._download_ipd_issue_attachment_http_info(request)
+        return self._call_api(**http_info)
+
+    def download_ipd_issue_attachment_invoker(self, request):
+        http_info = self._download_ipd_issue_attachment_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _download_ipd_issue_attachment_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/ipdprojectservice/projects/{project_id}/attachments/download/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DownloadIpdIssueAttachmentResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_ipd_attachment_by_work_item_id(self, request):
+        r"""查询工作项附件列表
+
+        查询工作项附件列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowIpdAttachmentByWorkItemId
+        :type request: :class:`huaweicloudsdkprojectman.v4.ShowIpdAttachmentByWorkItemIdRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.ShowIpdAttachmentByWorkItemIdResponse`
+        """
+        http_info = self._show_ipd_attachment_by_work_item_id_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_ipd_attachment_by_work_item_id_invoker(self, request):
+        http_info = self._show_ipd_attachment_by_work_item_id_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_ipd_attachment_by_work_item_id_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/ipdprojectservice/projects/{project_id}/attachments",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowIpdAttachmentByWorkItemIdResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+        if 'issue_id' in local_var_params:
+            query_params.append(('issue_id', local_var_params['issue_id']))
+        if 'source_project_id' in local_var_params:
+            query_params.append(('source_project_id', local_var_params['source_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_scrum_plan_to_project(self, request):
+        r"""新增需求规划
+
+        新增需求规划
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateScrumPlanToProject
+        :type request: :class:`huaweicloudsdkprojectman.v4.CreateScrumPlanToProjectRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.CreateScrumPlanToProjectResponse`
+        """
+        http_info = self._create_scrum_plan_to_project_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_scrum_plan_to_project_invoker(self, request):
+        http_info = self._create_scrum_plan_to_project_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_scrum_plan_to_project_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/plan/{project_id}/management",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateScrumPlanToProjectResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_scrum_plan_in_project(self, request):
+        r"""删除规划(支持批量)
+
+        删除规划(支持批量)
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteScrumPlanInProject
+        :type request: :class:`huaweicloudsdkprojectman.v4.DeleteScrumPlanInProjectRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.DeleteScrumPlanInProjectResponse`
+        """
+        http_info = self._delete_scrum_plan_in_project_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_scrum_plan_in_project_invoker(self, request):
+        http_info = self._delete_scrum_plan_in_project_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_scrum_plan_in_project_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/plan/{project_id}/management",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteScrumPlanInProjectResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_scrum_plans_by_condition(self, request):
+        r"""查询项目下当前用户可见的所有规划，分页
+
+        查询项目下当前用户可见的所有规划，分页
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowScrumPlansByCondition
+        :type request: :class:`huaweicloudsdkprojectman.v4.ShowScrumPlansByConditionRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.ShowScrumPlansByConditionResponse`
+        """
+        http_info = self._show_scrum_plans_by_condition_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_scrum_plans_by_condition_invoker(self, request):
+        http_info = self._show_scrum_plans_by_condition_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_scrum_plans_by_condition_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/plan/{project_id}/managements",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowScrumPlansByConditionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_scrum_plan_in_project(self, request):
+        r"""更新需求规划
+
+        更新需求规划
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateScrumPlanInProject
+        :type request: :class:`huaweicloudsdkprojectman.v4.UpdateScrumPlanInProjectRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.UpdateScrumPlanInProjectResponse`
+        """
+        http_info = self._update_scrum_plan_in_project_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_scrum_plan_in_project_invoker(self, request):
+        http_info = self._update_scrum_plan_in_project_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_scrum_plan_in_project_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/plan/{project_id}/management/{plan_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateScrumPlanInProjectResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'plan_id' in local_var_params:
+            path_params['plan_id'] = local_var_params['plan_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -5654,6 +6271,69 @@ class ProjectManClient(Client):
             ['multipart/form-data'])
 
         auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_scrum_issue_severities(self, request):
+        r"""查询所有的严重程度
+
+        查询所有的严重程度
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowScrumIssueSeverities
+        :type request: :class:`huaweicloudsdkprojectman.v4.ShowScrumIssueSeveritiesRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.ShowScrumIssueSeveritiesResponse`
+        """
+        http_info = self._show_scrum_issue_severities_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_scrum_issue_severities_invoker(self, request):
+        http_info = self._show_scrum_issue_severities_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_scrum_issue_severities_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/issue-severity/all",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowScrumIssueSeveritiesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats

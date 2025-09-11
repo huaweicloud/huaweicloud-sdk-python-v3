@@ -30,7 +30,7 @@ class CreateImmutableRuleResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param id: 规则ID
+        :param id: 策略ID
         :type id: int
         """
         
@@ -46,7 +46,7 @@ class CreateImmutableRuleResponse(SdkResponse):
     def id(self):
         r"""Gets the id of this CreateImmutableRuleResponse.
 
-        规则ID
+        策略ID
 
         :return: The id of this CreateImmutableRuleResponse.
         :rtype: int
@@ -57,7 +57,7 @@ class CreateImmutableRuleResponse(SdkResponse):
     def id(self, id):
         r"""Sets the id of this CreateImmutableRuleResponse.
 
-        规则ID
+        策略ID
 
         :param id: The id of this CreateImmutableRuleResponse.
         :type id: int

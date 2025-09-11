@@ -43,21 +43,21 @@ class BatchCreateInvocationRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param instance_ids: 主机id列表（INSTALL和UPDATE时必须）
+        :param instance_ids: **参数解释**: 主机id列表（INSTALL和UPDATE时必须） **取值范围**: 数组长度范围为[1,100] 
         :type instance_ids: list[str]
-        :param invocation_type: 任务类型，INSTALL 安装，UPDATE升级，ROLLBACK回退，RETRY重试，SET_REMOTE_INSTALL_HOST设置远程安装主机，REMOTE_INSTALL执行远程安装
+        :param invocation_type: **参数解释**: 任务类型 **取值范围**: - INSTALL：安装 - UPDATE：升级 - ROLLBACK：回滚 - RETRY：重试 - SET_REMOTE_INSTALLER：设置远程安装主机 - REMOTE_INSTALL：执行远程安装 
         :type invocation_type: str
-        :param invocation_target: 任务对象，目前仅支持telescope
+        :param invocation_target: **参数解释**: 任务对象，目前仅支持telescope **取值范围**: - telescope：主机监控插件telescope 
         :type invocation_target: str
-        :param invocation_ids: 任务ID列表（ROLLBACK和RETRY时必须）
+        :param invocation_ids: **参数解释**: 任务ID列表（ROLLBACK和RETRY时必须） **取值范围**: 数组长度范围为[1,100] 
         :type invocation_ids: list[str]
-        :param version_type: 插件升级时需要选择升级“基础版本”还是“增强版本”，传值“BASIC_VERSION”表示升级成基础版本，传值“ADVANCE_VERSION”表示升级成增强版本
+        :param version_type: **参数解释**: 插件升级时需要选择升级“基础版本”还是“增强版本” **取值范围**: - BASIC_VERSION: 升级成基础版本 - ADVANCE_VERSION: 升级成增强版本 
         :type version_type: str
-        :param origin: Agent任务接口调用源，CES表示由Console调用，APICOM_BMS表示由裸金属服务器调用，ADMIN_SERVER表示由运维平台调用
+        :param origin: **参数解释**: Agent任务接口调用源 **取值范围**: - CES: 由Console调用 - APICOM_BMS: 由裸金属服务器调用 - ADMIN_SERVER: 由运维平台调用 
         :type origin: str
-        :param version: 版本号
+        :param version: **参数解释**: 版本号 **取值范围**: 数组长度范围为[0,64] 
         :type version: str
-        :param remote_install_meta: 创建远程安装任务时需要下发的被安装主机相关信息
+        :param remote_install_meta: **参数解释**: 创建远程安装任务时需要下发的被安装主机相关信息 **取值范围**: 数组长度范围为[0,100] 
         :type remote_install_meta: list[:class:`huaweicloudsdkces.v3.RemoteInstallHostInfo`]
         """
         
@@ -93,7 +93,7 @@ class BatchCreateInvocationRequestBody:
     def instance_ids(self):
         r"""Gets the instance_ids of this BatchCreateInvocationRequestBody.
 
-        主机id列表（INSTALL和UPDATE时必须）
+        **参数解释**: 主机id列表（INSTALL和UPDATE时必须） **取值范围**: 数组长度范围为[1,100] 
 
         :return: The instance_ids of this BatchCreateInvocationRequestBody.
         :rtype: list[str]
@@ -104,7 +104,7 @@ class BatchCreateInvocationRequestBody:
     def instance_ids(self, instance_ids):
         r"""Sets the instance_ids of this BatchCreateInvocationRequestBody.
 
-        主机id列表（INSTALL和UPDATE时必须）
+        **参数解释**: 主机id列表（INSTALL和UPDATE时必须） **取值范围**: 数组长度范围为[1,100] 
 
         :param instance_ids: The instance_ids of this BatchCreateInvocationRequestBody.
         :type instance_ids: list[str]
@@ -115,7 +115,7 @@ class BatchCreateInvocationRequestBody:
     def invocation_type(self):
         r"""Gets the invocation_type of this BatchCreateInvocationRequestBody.
 
-        任务类型，INSTALL 安装，UPDATE升级，ROLLBACK回退，RETRY重试，SET_REMOTE_INSTALL_HOST设置远程安装主机，REMOTE_INSTALL执行远程安装
+        **参数解释**: 任务类型 **取值范围**: - INSTALL：安装 - UPDATE：升级 - ROLLBACK：回滚 - RETRY：重试 - SET_REMOTE_INSTALLER：设置远程安装主机 - REMOTE_INSTALL：执行远程安装 
 
         :return: The invocation_type of this BatchCreateInvocationRequestBody.
         :rtype: str
@@ -126,7 +126,7 @@ class BatchCreateInvocationRequestBody:
     def invocation_type(self, invocation_type):
         r"""Sets the invocation_type of this BatchCreateInvocationRequestBody.
 
-        任务类型，INSTALL 安装，UPDATE升级，ROLLBACK回退，RETRY重试，SET_REMOTE_INSTALL_HOST设置远程安装主机，REMOTE_INSTALL执行远程安装
+        **参数解释**: 任务类型 **取值范围**: - INSTALL：安装 - UPDATE：升级 - ROLLBACK：回滚 - RETRY：重试 - SET_REMOTE_INSTALLER：设置远程安装主机 - REMOTE_INSTALL：执行远程安装 
 
         :param invocation_type: The invocation_type of this BatchCreateInvocationRequestBody.
         :type invocation_type: str
@@ -137,7 +137,7 @@ class BatchCreateInvocationRequestBody:
     def invocation_target(self):
         r"""Gets the invocation_target of this BatchCreateInvocationRequestBody.
 
-        任务对象，目前仅支持telescope
+        **参数解释**: 任务对象，目前仅支持telescope **取值范围**: - telescope：主机监控插件telescope 
 
         :return: The invocation_target of this BatchCreateInvocationRequestBody.
         :rtype: str
@@ -148,7 +148,7 @@ class BatchCreateInvocationRequestBody:
     def invocation_target(self, invocation_target):
         r"""Sets the invocation_target of this BatchCreateInvocationRequestBody.
 
-        任务对象，目前仅支持telescope
+        **参数解释**: 任务对象，目前仅支持telescope **取值范围**: - telescope：主机监控插件telescope 
 
         :param invocation_target: The invocation_target of this BatchCreateInvocationRequestBody.
         :type invocation_target: str
@@ -159,7 +159,7 @@ class BatchCreateInvocationRequestBody:
     def invocation_ids(self):
         r"""Gets the invocation_ids of this BatchCreateInvocationRequestBody.
 
-        任务ID列表（ROLLBACK和RETRY时必须）
+        **参数解释**: 任务ID列表（ROLLBACK和RETRY时必须） **取值范围**: 数组长度范围为[1,100] 
 
         :return: The invocation_ids of this BatchCreateInvocationRequestBody.
         :rtype: list[str]
@@ -170,7 +170,7 @@ class BatchCreateInvocationRequestBody:
     def invocation_ids(self, invocation_ids):
         r"""Sets the invocation_ids of this BatchCreateInvocationRequestBody.
 
-        任务ID列表（ROLLBACK和RETRY时必须）
+        **参数解释**: 任务ID列表（ROLLBACK和RETRY时必须） **取值范围**: 数组长度范围为[1,100] 
 
         :param invocation_ids: The invocation_ids of this BatchCreateInvocationRequestBody.
         :type invocation_ids: list[str]
@@ -181,7 +181,7 @@ class BatchCreateInvocationRequestBody:
     def version_type(self):
         r"""Gets the version_type of this BatchCreateInvocationRequestBody.
 
-        插件升级时需要选择升级“基础版本”还是“增强版本”，传值“BASIC_VERSION”表示升级成基础版本，传值“ADVANCE_VERSION”表示升级成增强版本
+        **参数解释**: 插件升级时需要选择升级“基础版本”还是“增强版本” **取值范围**: - BASIC_VERSION: 升级成基础版本 - ADVANCE_VERSION: 升级成增强版本 
 
         :return: The version_type of this BatchCreateInvocationRequestBody.
         :rtype: str
@@ -192,7 +192,7 @@ class BatchCreateInvocationRequestBody:
     def version_type(self, version_type):
         r"""Sets the version_type of this BatchCreateInvocationRequestBody.
 
-        插件升级时需要选择升级“基础版本”还是“增强版本”，传值“BASIC_VERSION”表示升级成基础版本，传值“ADVANCE_VERSION”表示升级成增强版本
+        **参数解释**: 插件升级时需要选择升级“基础版本”还是“增强版本” **取值范围**: - BASIC_VERSION: 升级成基础版本 - ADVANCE_VERSION: 升级成增强版本 
 
         :param version_type: The version_type of this BatchCreateInvocationRequestBody.
         :type version_type: str
@@ -203,7 +203,7 @@ class BatchCreateInvocationRequestBody:
     def origin(self):
         r"""Gets the origin of this BatchCreateInvocationRequestBody.
 
-        Agent任务接口调用源，CES表示由Console调用，APICOM_BMS表示由裸金属服务器调用，ADMIN_SERVER表示由运维平台调用
+        **参数解释**: Agent任务接口调用源 **取值范围**: - CES: 由Console调用 - APICOM_BMS: 由裸金属服务器调用 - ADMIN_SERVER: 由运维平台调用 
 
         :return: The origin of this BatchCreateInvocationRequestBody.
         :rtype: str
@@ -214,7 +214,7 @@ class BatchCreateInvocationRequestBody:
     def origin(self, origin):
         r"""Sets the origin of this BatchCreateInvocationRequestBody.
 
-        Agent任务接口调用源，CES表示由Console调用，APICOM_BMS表示由裸金属服务器调用，ADMIN_SERVER表示由运维平台调用
+        **参数解释**: Agent任务接口调用源 **取值范围**: - CES: 由Console调用 - APICOM_BMS: 由裸金属服务器调用 - ADMIN_SERVER: 由运维平台调用 
 
         :param origin: The origin of this BatchCreateInvocationRequestBody.
         :type origin: str
@@ -225,7 +225,7 @@ class BatchCreateInvocationRequestBody:
     def version(self):
         r"""Gets the version of this BatchCreateInvocationRequestBody.
 
-        版本号
+        **参数解释**: 版本号 **取值范围**: 数组长度范围为[0,64] 
 
         :return: The version of this BatchCreateInvocationRequestBody.
         :rtype: str
@@ -236,7 +236,7 @@ class BatchCreateInvocationRequestBody:
     def version(self, version):
         r"""Sets the version of this BatchCreateInvocationRequestBody.
 
-        版本号
+        **参数解释**: 版本号 **取值范围**: 数组长度范围为[0,64] 
 
         :param version: The version of this BatchCreateInvocationRequestBody.
         :type version: str
@@ -247,7 +247,7 @@ class BatchCreateInvocationRequestBody:
     def remote_install_meta(self):
         r"""Gets the remote_install_meta of this BatchCreateInvocationRequestBody.
 
-        创建远程安装任务时需要下发的被安装主机相关信息
+        **参数解释**: 创建远程安装任务时需要下发的被安装主机相关信息 **取值范围**: 数组长度范围为[0,100] 
 
         :return: The remote_install_meta of this BatchCreateInvocationRequestBody.
         :rtype: list[:class:`huaweicloudsdkces.v3.RemoteInstallHostInfo`]
@@ -258,7 +258,7 @@ class BatchCreateInvocationRequestBody:
     def remote_install_meta(self, remote_install_meta):
         r"""Sets the remote_install_meta of this BatchCreateInvocationRequestBody.
 
-        创建远程安装任务时需要下发的被安装主机相关信息
+        **参数解释**: 创建远程安装任务时需要下发的被安装主机相关信息 **取值范围**: 数组长度范围为[0,100] 
 
         :param remote_install_meta: The remote_install_meta of this BatchCreateInvocationRequestBody.
         :type remote_install_meta: list[:class:`huaweicloudsdkces.v3.RemoteInstallHostInfo`]

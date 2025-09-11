@@ -30,7 +30,7 @@ class BatchEnableAlarmRulesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param alarm_ids: 成功启停的告警规则ID列表
+        :param alarm_ids: **参数解释**： 成功启停的告警规则ID列表。 
         :type alarm_ids: list[str]
         """
         
@@ -46,7 +46,7 @@ class BatchEnableAlarmRulesResponse(SdkResponse):
     def alarm_ids(self):
         r"""Gets the alarm_ids of this BatchEnableAlarmRulesResponse.
 
-        成功启停的告警规则ID列表
+        **参数解释**： 成功启停的告警规则ID列表。 
 
         :return: The alarm_ids of this BatchEnableAlarmRulesResponse.
         :rtype: list[str]
@@ -57,7 +57,7 @@ class BatchEnableAlarmRulesResponse(SdkResponse):
     def alarm_ids(self, alarm_ids):
         r"""Sets the alarm_ids of this BatchEnableAlarmRulesResponse.
 
-        成功启停的告警规则ID列表
+        **参数解释**： 成功启停的告警规则ID列表。 
 
         :param alarm_ids: The alarm_ids of this BatchEnableAlarmRulesResponse.
         :type alarm_ids: list[str]

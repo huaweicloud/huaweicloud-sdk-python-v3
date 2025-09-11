@@ -55,29 +55,29 @@ class OneClickAlarmPolicy:
 
         :param alarm_policy_id: 告警策略ID。
         :type alarm_policy_id: str
-        :param metric_name: 资源的监控指标名称，必须以字母开头，只能包含0-9/a-z/A-Z/_，字符长度最短为1，最大为64；如：弹性云服务器中的监控指标cpu_util，表示弹性服务器的CPU使用率；文档数据库中的指标mongo001_command_ps，表示command执行频率；各服务的指标名称可查看：“[服务指标名称](ces_03_0059.xml)”。
+        :param metric_name: **参数解释**： 资源的监控指标名称，各服务的指标名称可查看：“[服务指标名称](ces_03_0059.xml)”。 **约束限制**： 不涉及。 **取值范围**： 必须以字母开头，只能包含0-9/a-z/A-Z/_/-。字符长度最短为1，最大为96。如：弹性云服务器中的监控指标cpu_util，表示弹性服务器的CPU使用率；文档数据库中的指标mongo001_command_ps，表示command执行频率。         **默认取值**： 不涉及。 
         :type metric_name: str
         :param period: 
         :type period: :class:`huaweicloudsdkces.v2.Period`
-        :param filter: 聚合方式。average： 平均值，variance：方差，min：最小值，max：最大值，sum：求和，tp99：99百分位数，tp95：95百分位数，tp90：90百分位数
+        :param filter: **参数解释**： 聚合方式。         **约束限制**： 不涉及。 **取值范围**： average： 平均值，variance：方差，min：最小值，max：最大值，sum：求和。           **默认取值**： 不涉及。 
         :type filter: str
-        :param comparison_operator: 阈值符号, 支持的值为(&gt;|&lt;|&gt;&#x3D;|&lt;&#x3D;|&#x3D;|!&#x3D;|cycle_decrease|cycle_increase|cycle_wave);cycle_decrease为环比下降,cycle_increase为环比上升,cycle_wave为环比波动； 指标告警可以使用的阈值符号有&gt;、&gt;&#x3D;、&lt;、&lt;&#x3D;、&#x3D;、!&#x3D;、cycle_decrease、cycle_increase、cycle_wave； 事件告警可以使用的阈值符号为&gt;、&gt;&#x3D;、&lt;、&lt;&#x3D;、&#x3D;、!&#x3D;； 
+        :param comparison_operator: **参数解释**： 阈值符号。     **约束限制**： 指标告警可以使用的阈值符号有&gt;、&gt;&#x3D;、&lt;、&lt;&#x3D;、&#x3D;、!&#x3D;、cycle_decrease、cycle_increase、cycle_wave； 事件告警可以使用的阈值符号为&gt;、&gt;&#x3D;、&lt;、&lt;&#x3D;、&#x3D;、!&#x3D;。 **取值范围**： 支持的值为(&gt;|&lt;|&gt;&#x3D;|&lt;&#x3D;|&#x3D;|!&#x3D;|cycle_decrease|cycle_increase|cycle_wave);cycle_decrease为环比下降,cycle_increase为环比上升,cycle_wave为环比波动。           **默认取值**： 不涉及。 
         :type comparison_operator: str
-        :param value: 告警阈值。单一阈值时value和alarm_level配对使用，当hierarchical_value和value同时使用时以hierarchical_value为准。 具体阈值取值请参见附录中各服务监控指标中取值范围，如支持监控的服务列表中ECS的CPU使用率cpu_util取值范围可配置80。 [具体阈值取值请参见附录中各服务监控指标中取值范围，如[支持监控的服务列表](ces_03_0059.xml)中ECS的CPU使用率cpu_util取值范围可配置80。] 
+        :param value: **参数解释**： 告警阈值。具体阈值取值请参见附录中各服务监控指标中取值范围。    **约束限制**： 单一阈值时value和alarm_level配对使用，当hierarchical_value和value同时使用时以hierarchical_value为准。 **取值范围**： 最小值为-1.7976931348623157e+108，最大值为1.7976931348623157e+108。           **默认取值**： 不涉及。 
         :type value: float
         :param hierarchical_value: 
         :type hierarchical_value: :class:`huaweicloudsdkces.v2.HierarchicalValue`
-        :param unit: 数据的单位。
+        :param unit: **参数解释**： 数据的单位。    **约束限制**： 不涉及。 **取值范围**： 长度为[0,32]个字符。         **默认取值**： 不涉及。 
         :type unit: str
-        :param count: 告警连续触发次数，事件告警时参数值为1~180（包括1和180）；指标告警和站点告警时，次数采用枚举值，枚举值分别为：1、2、3、4、5、10、15、30、60、90、120、180
+        :param count: **参数解释**： 告警连续触发次数。     **约束限制**： 不涉及。 **取值范围**： 事件告警时参数值为1~180（包括1和180）；指标告警和站点告警时，次数采用枚举值，枚举值分别为：1、2、3、4、5、10、15、30、60、90、120、180。          **默认取值**： 不涉及。 
         :type count: int
         :param suppress_duration: 
         :type suppress_duration: :class:`huaweicloudsdkces.v2.SuppressDuration`
-        :param level: 告警级别, 1为紧急，2为重要，3为次要，4为提示。默认值为2。
+        :param level: **参数解释**： 告警级别。    **约束限制**： 不涉及。 **取值范围**： 只能为1、2、3、4。1为紧急，2为重要，3为次要，4为提示。         **默认取值**： 2 
         :type level: int
         :param enabled: 是否启用一键告警。true:开启，false：关闭。
         :type enabled: bool
-        :param selected_unit: 用户在页面中选择的指标单位， 用于后续指标数据回显和计算
+        :param selected_unit: **参数解释**： 用户在页面中选择的指标单位， 用于后续指标数据回显和计算。     **约束限制**： 不涉及。 **取值范围**： 长度为[0,64]个字符。        **默认取值**： 不涉及。 
         :type selected_unit: str
         """
         
@@ -143,7 +143,7 @@ class OneClickAlarmPolicy:
     def metric_name(self):
         r"""Gets the metric_name of this OneClickAlarmPolicy.
 
-        资源的监控指标名称，必须以字母开头，只能包含0-9/a-z/A-Z/_，字符长度最短为1，最大为64；如：弹性云服务器中的监控指标cpu_util，表示弹性服务器的CPU使用率；文档数据库中的指标mongo001_command_ps，表示command执行频率；各服务的指标名称可查看：“[服务指标名称](ces_03_0059.xml)”。
+        **参数解释**： 资源的监控指标名称，各服务的指标名称可查看：“[服务指标名称](ces_03_0059.xml)”。 **约束限制**： 不涉及。 **取值范围**： 必须以字母开头，只能包含0-9/a-z/A-Z/_/-。字符长度最短为1，最大为96。如：弹性云服务器中的监控指标cpu_util，表示弹性服务器的CPU使用率；文档数据库中的指标mongo001_command_ps，表示command执行频率。         **默认取值**： 不涉及。 
 
         :return: The metric_name of this OneClickAlarmPolicy.
         :rtype: str
@@ -154,7 +154,7 @@ class OneClickAlarmPolicy:
     def metric_name(self, metric_name):
         r"""Sets the metric_name of this OneClickAlarmPolicy.
 
-        资源的监控指标名称，必须以字母开头，只能包含0-9/a-z/A-Z/_，字符长度最短为1，最大为64；如：弹性云服务器中的监控指标cpu_util，表示弹性服务器的CPU使用率；文档数据库中的指标mongo001_command_ps，表示command执行频率；各服务的指标名称可查看：“[服务指标名称](ces_03_0059.xml)”。
+        **参数解释**： 资源的监控指标名称，各服务的指标名称可查看：“[服务指标名称](ces_03_0059.xml)”。 **约束限制**： 不涉及。 **取值范围**： 必须以字母开头，只能包含0-9/a-z/A-Z/_/-。字符长度最短为1，最大为96。如：弹性云服务器中的监控指标cpu_util，表示弹性服务器的CPU使用率；文档数据库中的指标mongo001_command_ps，表示command执行频率。         **默认取值**： 不涉及。 
 
         :param metric_name: The metric_name of this OneClickAlarmPolicy.
         :type metric_name: str
@@ -183,7 +183,7 @@ class OneClickAlarmPolicy:
     def filter(self):
         r"""Gets the filter of this OneClickAlarmPolicy.
 
-        聚合方式。average： 平均值，variance：方差，min：最小值，max：最大值，sum：求和，tp99：99百分位数，tp95：95百分位数，tp90：90百分位数
+        **参数解释**： 聚合方式。         **约束限制**： 不涉及。 **取值范围**： average： 平均值，variance：方差，min：最小值，max：最大值，sum：求和。           **默认取值**： 不涉及。 
 
         :return: The filter of this OneClickAlarmPolicy.
         :rtype: str
@@ -194,7 +194,7 @@ class OneClickAlarmPolicy:
     def filter(self, filter):
         r"""Sets the filter of this OneClickAlarmPolicy.
 
-        聚合方式。average： 平均值，variance：方差，min：最小值，max：最大值，sum：求和，tp99：99百分位数，tp95：95百分位数，tp90：90百分位数
+        **参数解释**： 聚合方式。         **约束限制**： 不涉及。 **取值范围**： average： 平均值，variance：方差，min：最小值，max：最大值，sum：求和。           **默认取值**： 不涉及。 
 
         :param filter: The filter of this OneClickAlarmPolicy.
         :type filter: str
@@ -205,7 +205,7 @@ class OneClickAlarmPolicy:
     def comparison_operator(self):
         r"""Gets the comparison_operator of this OneClickAlarmPolicy.
 
-        阈值符号, 支持的值为(>|<|>=|<=|=|!=|cycle_decrease|cycle_increase|cycle_wave);cycle_decrease为环比下降,cycle_increase为环比上升,cycle_wave为环比波动； 指标告警可以使用的阈值符号有>、>=、<、<=、=、!=、cycle_decrease、cycle_increase、cycle_wave； 事件告警可以使用的阈值符号为>、>=、<、<=、=、!=； 
+        **参数解释**： 阈值符号。     **约束限制**： 指标告警可以使用的阈值符号有>、>=、<、<=、=、!=、cycle_decrease、cycle_increase、cycle_wave； 事件告警可以使用的阈值符号为>、>=、<、<=、=、!=。 **取值范围**： 支持的值为(>|<|>=|<=|=|!=|cycle_decrease|cycle_increase|cycle_wave);cycle_decrease为环比下降,cycle_increase为环比上升,cycle_wave为环比波动。           **默认取值**： 不涉及。 
 
         :return: The comparison_operator of this OneClickAlarmPolicy.
         :rtype: str
@@ -216,7 +216,7 @@ class OneClickAlarmPolicy:
     def comparison_operator(self, comparison_operator):
         r"""Sets the comparison_operator of this OneClickAlarmPolicy.
 
-        阈值符号, 支持的值为(>|<|>=|<=|=|!=|cycle_decrease|cycle_increase|cycle_wave);cycle_decrease为环比下降,cycle_increase为环比上升,cycle_wave为环比波动； 指标告警可以使用的阈值符号有>、>=、<、<=、=、!=、cycle_decrease、cycle_increase、cycle_wave； 事件告警可以使用的阈值符号为>、>=、<、<=、=、!=； 
+        **参数解释**： 阈值符号。     **约束限制**： 指标告警可以使用的阈值符号有>、>=、<、<=、=、!=、cycle_decrease、cycle_increase、cycle_wave； 事件告警可以使用的阈值符号为>、>=、<、<=、=、!=。 **取值范围**： 支持的值为(>|<|>=|<=|=|!=|cycle_decrease|cycle_increase|cycle_wave);cycle_decrease为环比下降,cycle_increase为环比上升,cycle_wave为环比波动。           **默认取值**： 不涉及。 
 
         :param comparison_operator: The comparison_operator of this OneClickAlarmPolicy.
         :type comparison_operator: str
@@ -227,7 +227,7 @@ class OneClickAlarmPolicy:
     def value(self):
         r"""Gets the value of this OneClickAlarmPolicy.
 
-        告警阈值。单一阈值时value和alarm_level配对使用，当hierarchical_value和value同时使用时以hierarchical_value为准。 具体阈值取值请参见附录中各服务监控指标中取值范围，如支持监控的服务列表中ECS的CPU使用率cpu_util取值范围可配置80。 [具体阈值取值请参见附录中各服务监控指标中取值范围，如[支持监控的服务列表](ces_03_0059.xml)中ECS的CPU使用率cpu_util取值范围可配置80。] 
+        **参数解释**： 告警阈值。具体阈值取值请参见附录中各服务监控指标中取值范围。    **约束限制**： 单一阈值时value和alarm_level配对使用，当hierarchical_value和value同时使用时以hierarchical_value为准。 **取值范围**： 最小值为-1.7976931348623157e+108，最大值为1.7976931348623157e+108。           **默认取值**： 不涉及。 
 
         :return: The value of this OneClickAlarmPolicy.
         :rtype: float
@@ -238,7 +238,7 @@ class OneClickAlarmPolicy:
     def value(self, value):
         r"""Sets the value of this OneClickAlarmPolicy.
 
-        告警阈值。单一阈值时value和alarm_level配对使用，当hierarchical_value和value同时使用时以hierarchical_value为准。 具体阈值取值请参见附录中各服务监控指标中取值范围，如支持监控的服务列表中ECS的CPU使用率cpu_util取值范围可配置80。 [具体阈值取值请参见附录中各服务监控指标中取值范围，如[支持监控的服务列表](ces_03_0059.xml)中ECS的CPU使用率cpu_util取值范围可配置80。] 
+        **参数解释**： 告警阈值。具体阈值取值请参见附录中各服务监控指标中取值范围。    **约束限制**： 单一阈值时value和alarm_level配对使用，当hierarchical_value和value同时使用时以hierarchical_value为准。 **取值范围**： 最小值为-1.7976931348623157e+108，最大值为1.7976931348623157e+108。           **默认取值**： 不涉及。 
 
         :param value: The value of this OneClickAlarmPolicy.
         :type value: float
@@ -267,7 +267,7 @@ class OneClickAlarmPolicy:
     def unit(self):
         r"""Gets the unit of this OneClickAlarmPolicy.
 
-        数据的单位。
+        **参数解释**： 数据的单位。    **约束限制**： 不涉及。 **取值范围**： 长度为[0,32]个字符。         **默认取值**： 不涉及。 
 
         :return: The unit of this OneClickAlarmPolicy.
         :rtype: str
@@ -278,7 +278,7 @@ class OneClickAlarmPolicy:
     def unit(self, unit):
         r"""Sets the unit of this OneClickAlarmPolicy.
 
-        数据的单位。
+        **参数解释**： 数据的单位。    **约束限制**： 不涉及。 **取值范围**： 长度为[0,32]个字符。         **默认取值**： 不涉及。 
 
         :param unit: The unit of this OneClickAlarmPolicy.
         :type unit: str
@@ -289,7 +289,7 @@ class OneClickAlarmPolicy:
     def count(self):
         r"""Gets the count of this OneClickAlarmPolicy.
 
-        告警连续触发次数，事件告警时参数值为1~180（包括1和180）；指标告警和站点告警时，次数采用枚举值，枚举值分别为：1、2、3、4、5、10、15、30、60、90、120、180
+        **参数解释**： 告警连续触发次数。     **约束限制**： 不涉及。 **取值范围**： 事件告警时参数值为1~180（包括1和180）；指标告警和站点告警时，次数采用枚举值，枚举值分别为：1、2、3、4、5、10、15、30、60、90、120、180。          **默认取值**： 不涉及。 
 
         :return: The count of this OneClickAlarmPolicy.
         :rtype: int
@@ -300,7 +300,7 @@ class OneClickAlarmPolicy:
     def count(self, count):
         r"""Sets the count of this OneClickAlarmPolicy.
 
-        告警连续触发次数，事件告警时参数值为1~180（包括1和180）；指标告警和站点告警时，次数采用枚举值，枚举值分别为：1、2、3、4、5、10、15、30、60、90、120、180
+        **参数解释**： 告警连续触发次数。     **约束限制**： 不涉及。 **取值范围**： 事件告警时参数值为1~180（包括1和180）；指标告警和站点告警时，次数采用枚举值，枚举值分别为：1、2、3、4、5、10、15、30、60、90、120、180。          **默认取值**： 不涉及。 
 
         :param count: The count of this OneClickAlarmPolicy.
         :type count: int
@@ -329,7 +329,7 @@ class OneClickAlarmPolicy:
     def level(self):
         r"""Gets the level of this OneClickAlarmPolicy.
 
-        告警级别, 1为紧急，2为重要，3为次要，4为提示。默认值为2。
+        **参数解释**： 告警级别。    **约束限制**： 不涉及。 **取值范围**： 只能为1、2、3、4。1为紧急，2为重要，3为次要，4为提示。         **默认取值**： 2 
 
         :return: The level of this OneClickAlarmPolicy.
         :rtype: int
@@ -340,7 +340,7 @@ class OneClickAlarmPolicy:
     def level(self, level):
         r"""Sets the level of this OneClickAlarmPolicy.
 
-        告警级别, 1为紧急，2为重要，3为次要，4为提示。默认值为2。
+        **参数解释**： 告警级别。    **约束限制**： 不涉及。 **取值范围**： 只能为1、2、3、4。1为紧急，2为重要，3为次要，4为提示。         **默认取值**： 2 
 
         :param level: The level of this OneClickAlarmPolicy.
         :type level: int
@@ -373,7 +373,7 @@ class OneClickAlarmPolicy:
     def selected_unit(self):
         r"""Gets the selected_unit of this OneClickAlarmPolicy.
 
-        用户在页面中选择的指标单位， 用于后续指标数据回显和计算
+        **参数解释**： 用户在页面中选择的指标单位， 用于后续指标数据回显和计算。     **约束限制**： 不涉及。 **取值范围**： 长度为[0,64]个字符。        **默认取值**： 不涉及。 
 
         :return: The selected_unit of this OneClickAlarmPolicy.
         :rtype: str
@@ -384,7 +384,7 @@ class OneClickAlarmPolicy:
     def selected_unit(self, selected_unit):
         r"""Sets the selected_unit of this OneClickAlarmPolicy.
 
-        用户在页面中选择的指标单位， 用于后续指标数据回显和计算
+        **参数解释**： 用户在页面中选择的指标单位， 用于后续指标数据回显和计算。     **约束限制**： 不涉及。 **取值范围**： 长度为[0,64]个字符。        **默认取值**： 不涉及。 
 
         :param selected_unit: The selected_unit of this OneClickAlarmPolicy.
         :type selected_unit: str

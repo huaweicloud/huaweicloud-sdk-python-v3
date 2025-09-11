@@ -19,15 +19,17 @@ class ListAuditRuleRisksResponse(SdkResponse):
 
     openapi_types = {
         'rules': 'list[RuleRiskResponseRules]',
-        'total': 'int'
+        'total': 'int',
+        'customize_total': 'int'
     }
 
     attribute_map = {
         'rules': 'rules',
-        'total': 'total'
+        'total': 'total',
+        'customize_total': 'customize_total'
     }
 
-    def __init__(self, rules=None, total=None):
+    def __init__(self, rules=None, total=None, customize_total=None):
         r"""ListAuditRuleRisksResponse
 
         The model defined in huaweicloud sdk
@@ -36,18 +38,23 @@ class ListAuditRuleRisksResponse(SdkResponse):
         :type rules: list[:class:`huaweicloudsdkdbss.v1.RuleRiskResponseRules`]
         :param total: 总数
         :type total: int
+        :param customize_total: 自定义规则总数
+        :type customize_total: int
         """
         
         super(ListAuditRuleRisksResponse, self).__init__()
 
         self._rules = None
         self._total = None
+        self._customize_total = None
         self.discriminator = None
 
         if rules is not None:
             self.rules = rules
         if total is not None:
             self.total = total
+        if customize_total is not None:
+            self.customize_total = customize_total
 
     @property
     def rules(self):
@@ -92,6 +99,28 @@ class ListAuditRuleRisksResponse(SdkResponse):
         :type total: int
         """
         self._total = total
+
+    @property
+    def customize_total(self):
+        r"""Gets the customize_total of this ListAuditRuleRisksResponse.
+
+        自定义规则总数
+
+        :return: The customize_total of this ListAuditRuleRisksResponse.
+        :rtype: int
+        """
+        return self._customize_total
+
+    @customize_total.setter
+    def customize_total(self, customize_total):
+        r"""Sets the customize_total of this ListAuditRuleRisksResponse.
+
+        自定义规则总数
+
+        :param customize_total: The customize_total of this ListAuditRuleRisksResponse.
+        :type customize_total: int
+        """
+        self._customize_total = customize_total
 
     def to_dict(self):
         """Returns the model properties as a dict"""

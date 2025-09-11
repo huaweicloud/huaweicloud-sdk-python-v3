@@ -33,11 +33,11 @@ class ListAlarmRuleResourcesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param alarm_id: Alarm实例ID
+        :param alarm_id: **参数解释**： 告警规则ID。 **约束限制**： 不涉及。 **取值范围**： 以al开头，后跟22位的字母或数字。          **默认取值**： 不涉及。 
         :type alarm_id: str
-        :param offset: 分页偏移量
+        :param offset: **参数描述**： 分页偏移量。 **约束限制**： 不涉及。 **取值范围**： 最小值为0，最大值为10000。 **默认取值**： 0 
         :type offset: int
-        :param limit: 分页大小
+        :param limit: **参数描述**： 分页大小。 **约束限制**： 不涉及。 **取值范围**： 最小值为1，最大值为100。 **默认取值**： 10 
         :type limit: int
         """
         
@@ -58,7 +58,7 @@ class ListAlarmRuleResourcesRequest:
     def alarm_id(self):
         r"""Gets the alarm_id of this ListAlarmRuleResourcesRequest.
 
-        Alarm实例ID
+        **参数解释**： 告警规则ID。 **约束限制**： 不涉及。 **取值范围**： 以al开头，后跟22位的字母或数字。          **默认取值**： 不涉及。 
 
         :return: The alarm_id of this ListAlarmRuleResourcesRequest.
         :rtype: str
@@ -69,7 +69,7 @@ class ListAlarmRuleResourcesRequest:
     def alarm_id(self, alarm_id):
         r"""Sets the alarm_id of this ListAlarmRuleResourcesRequest.
 
-        Alarm实例ID
+        **参数解释**： 告警规则ID。 **约束限制**： 不涉及。 **取值范围**： 以al开头，后跟22位的字母或数字。          **默认取值**： 不涉及。 
 
         :param alarm_id: The alarm_id of this ListAlarmRuleResourcesRequest.
         :type alarm_id: str
@@ -80,7 +80,7 @@ class ListAlarmRuleResourcesRequest:
     def offset(self):
         r"""Gets the offset of this ListAlarmRuleResourcesRequest.
 
-        分页偏移量
+        **参数描述**： 分页偏移量。 **约束限制**： 不涉及。 **取值范围**： 最小值为0，最大值为10000。 **默认取值**： 0 
 
         :return: The offset of this ListAlarmRuleResourcesRequest.
         :rtype: int
@@ -91,7 +91,7 @@ class ListAlarmRuleResourcesRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListAlarmRuleResourcesRequest.
 
-        分页偏移量
+        **参数描述**： 分页偏移量。 **约束限制**： 不涉及。 **取值范围**： 最小值为0，最大值为10000。 **默认取值**： 0 
 
         :param offset: The offset of this ListAlarmRuleResourcesRequest.
         :type offset: int
@@ -102,7 +102,7 @@ class ListAlarmRuleResourcesRequest:
     def limit(self):
         r"""Gets the limit of this ListAlarmRuleResourcesRequest.
 
-        分页大小
+        **参数描述**： 分页大小。 **约束限制**： 不涉及。 **取值范围**： 最小值为1，最大值为100。 **默认取值**： 10 
 
         :return: The limit of this ListAlarmRuleResourcesRequest.
         :rtype: int
@@ -113,7 +113,7 @@ class ListAlarmRuleResourcesRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListAlarmRuleResourcesRequest.
 
-        分页大小
+        **参数描述**： 分页大小。 **约束限制**： 不涉及。 **取值范围**： 最小值为1，最大值为100。 **默认取值**： 10 
 
         :param limit: The limit of this ListAlarmRuleResourcesRequest.
         :type limit: int

@@ -69,7 +69,7 @@ class UpdateWidgetInfo:
         :type properties: :class:`huaweicloudsdkces.v2.UpdateWidgetInfoProperties`
         :param location: 
         :type location: :class:`huaweicloudsdkces.v2.UpdateWidgetInfoLocation`
-        :param unit: 单位
+        :param unit: **参数解释** 单位 **约束限制** 不涉及 **取值范围** 长度为[0,32]个字符 **默认取值** 不涉及 
         :type unit: str
         """
         
@@ -326,7 +326,7 @@ class UpdateWidgetInfo:
     def unit(self):
         r"""Gets the unit of this UpdateWidgetInfo.
 
-        单位
+        **参数解释** 单位 **约束限制** 不涉及 **取值范围** 长度为[0,32]个字符 **默认取值** 不涉及 
 
         :return: The unit of this UpdateWidgetInfo.
         :rtype: str
@@ -337,7 +337,7 @@ class UpdateWidgetInfo:
     def unit(self, unit):
         r"""Sets the unit of this UpdateWidgetInfo.
 
-        单位
+        **参数解释** 单位 **约束限制** 不涉及 **取值范围** 长度为[0,32]个字符 **默认取值** 不涉及 
 
         :param unit: The unit of this UpdateWidgetInfo.
         :type unit: str

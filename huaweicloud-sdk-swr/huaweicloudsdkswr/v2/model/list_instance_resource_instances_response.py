@@ -32,9 +32,9 @@ class ListInstanceResourceInstancesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param resources: 资源实例列表
+        :param resources: 资源列表
         :type resources: list[:class:`huaweicloudsdkswr.v2.Resource`]
-        :param total_count: 资源实例数量
+        :param total_count: 资源数量
         :type total_count: int
         """
         
@@ -53,7 +53,7 @@ class ListInstanceResourceInstancesResponse(SdkResponse):
     def resources(self):
         r"""Gets the resources of this ListInstanceResourceInstancesResponse.
 
-        资源实例列表
+        资源列表
 
         :return: The resources of this ListInstanceResourceInstancesResponse.
         :rtype: list[:class:`huaweicloudsdkswr.v2.Resource`]
@@ -64,7 +64,7 @@ class ListInstanceResourceInstancesResponse(SdkResponse):
     def resources(self, resources):
         r"""Sets the resources of this ListInstanceResourceInstancesResponse.
 
-        资源实例列表
+        资源列表
 
         :param resources: The resources of this ListInstanceResourceInstancesResponse.
         :type resources: list[:class:`huaweicloudsdkswr.v2.Resource`]
@@ -75,7 +75,7 @@ class ListInstanceResourceInstancesResponse(SdkResponse):
     def total_count(self):
         r"""Gets the total_count of this ListInstanceResourceInstancesResponse.
 
-        资源实例数量
+        资源数量
 
         :return: The total_count of this ListInstanceResourceInstancesResponse.
         :rtype: int
@@ -86,7 +86,7 @@ class ListInstanceResourceInstancesResponse(SdkResponse):
     def total_count(self, total_count):
         r"""Sets the total_count of this ListInstanceResourceInstancesResponse.
 
-        资源实例数量
+        资源数量
 
         :param total_count: The total_count of this ListInstanceResourceInstancesResponse.
         :type total_count: int

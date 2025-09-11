@@ -18,7 +18,7 @@ class ListAlarmRulePoliciesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'policies': 'list[ListPolicy]',
+        'policies': 'list[ListPolicyResp]',
         'count': 'int'
     }
 
@@ -32,9 +32,9 @@ class ListAlarmRulePoliciesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param policies: 策略信息
-        :type policies: list[:class:`huaweicloudsdkces.v2.ListPolicy`]
-        :param count: 指定告警规则对应的策略总数
+        :param policies: **参数解释**： 告警策略信息列表。 
+        :type policies: list[:class:`huaweicloudsdkces.v2.ListPolicyResp`]
+        :param count: **参数解释**： 指定告警规则对应的策略总数。 **取值范围**： 0-100 
         :type count: int
         """
         
@@ -53,10 +53,10 @@ class ListAlarmRulePoliciesResponse(SdkResponse):
     def policies(self):
         r"""Gets the policies of this ListAlarmRulePoliciesResponse.
 
-        策略信息
+        **参数解释**： 告警策略信息列表。 
 
         :return: The policies of this ListAlarmRulePoliciesResponse.
-        :rtype: list[:class:`huaweicloudsdkces.v2.ListPolicy`]
+        :rtype: list[:class:`huaweicloudsdkces.v2.ListPolicyResp`]
         """
         return self._policies
 
@@ -64,10 +64,10 @@ class ListAlarmRulePoliciesResponse(SdkResponse):
     def policies(self, policies):
         r"""Sets the policies of this ListAlarmRulePoliciesResponse.
 
-        策略信息
+        **参数解释**： 告警策略信息列表。 
 
         :param policies: The policies of this ListAlarmRulePoliciesResponse.
-        :type policies: list[:class:`huaweicloudsdkces.v2.ListPolicy`]
+        :type policies: list[:class:`huaweicloudsdkces.v2.ListPolicyResp`]
         """
         self._policies = policies
 
@@ -75,7 +75,7 @@ class ListAlarmRulePoliciesResponse(SdkResponse):
     def count(self):
         r"""Gets the count of this ListAlarmRulePoliciesResponse.
 
-        指定告警规则对应的策略总数
+        **参数解释**： 指定告警规则对应的策略总数。 **取值范围**： 0-100 
 
         :return: The count of this ListAlarmRulePoliciesResponse.
         :rtype: int
@@ -86,7 +86,7 @@ class ListAlarmRulePoliciesResponse(SdkResponse):
     def count(self, count):
         r"""Sets the count of this ListAlarmRulePoliciesResponse.
 
-        指定告警规则对应的策略总数
+        **参数解释**： 指定告警规则对应的策略总数。 **取值范围**： 0-100 
 
         :param count: The count of this ListAlarmRulePoliciesResponse.
         :type count: int

@@ -22,7 +22,7 @@ class ResourceInstanceTagRequest:
         'tags': 'list[TagKeyValuesBean]',
         'tags_any': 'list[TagKeyValuesBean]',
         'not_tags_any': 'list[TagKeyValuesBean]',
-        'sys_tags': 'TagKeyValuesBean',
+        'sys_tags': 'list[TagKeyValuesBean]',
         'without_any_tag': 'bool'
     }
 
@@ -51,8 +51,8 @@ class ResourceInstanceTagRequest:
         :type tags_any: list[:class:`huaweicloudsdkdbss.v1.TagKeyValuesBean`]
         :param not_tags_any: 不包含任意标签，最多包含50个key，每个key下面的value最多10个, 每个key对应的value可以为空数组但结构体不能缺失。Key不能重复，同一个key中values不能重复。结果返回不包含标签的资源列表，key之间是或的关系，key-value结构中value是或的关系。无过滤条件时返回全量数据
         :type not_tags_any: list[:class:`huaweicloudsdkdbss.v1.TagKeyValuesBean`]
-        :param sys_tags: 
-        :type sys_tags: :class:`huaweicloudsdkdbss.v1.TagKeyValuesBean`
+        :param sys_tags: 仅op_service权限可以使用此字段做资源实例过滤条件。 目前TMS调用时只包含一个tag结构体。 key：_sys_enterprise_project_id value：企业项目id列表 目前TMS调用时，key下面只包含一个value。0表示默认企业项目 sys_tags和租户标签过滤条件（without_any_tag 、tags、tags_any、not_tags、not_tags_any）不能同时使用 无sys_tags时按照tag接口处理，无tag过滤条件时返回全量数据
+        :type sys_tags: list[:class:`huaweicloudsdkdbss.v1.TagKeyValuesBean`]
         :param without_any_tag: 不包含任意一个标签，该字段为true时查询所有不带标签的资源，此时忽略 “tags”、“tags_any”、“not_tags”、“not_tags_any”字段
         :type without_any_tag: bool
         """
@@ -197,8 +197,10 @@ class ResourceInstanceTagRequest:
     def sys_tags(self):
         r"""Gets the sys_tags of this ResourceInstanceTagRequest.
 
+        仅op_service权限可以使用此字段做资源实例过滤条件。 目前TMS调用时只包含一个tag结构体。 key：_sys_enterprise_project_id value：企业项目id列表 目前TMS调用时，key下面只包含一个value。0表示默认企业项目 sys_tags和租户标签过滤条件（without_any_tag 、tags、tags_any、not_tags、not_tags_any）不能同时使用 无sys_tags时按照tag接口处理，无tag过滤条件时返回全量数据
+
         :return: The sys_tags of this ResourceInstanceTagRequest.
-        :rtype: :class:`huaweicloudsdkdbss.v1.TagKeyValuesBean`
+        :rtype: list[:class:`huaweicloudsdkdbss.v1.TagKeyValuesBean`]
         """
         return self._sys_tags
 
@@ -206,8 +208,10 @@ class ResourceInstanceTagRequest:
     def sys_tags(self, sys_tags):
         r"""Sets the sys_tags of this ResourceInstanceTagRequest.
 
+        仅op_service权限可以使用此字段做资源实例过滤条件。 目前TMS调用时只包含一个tag结构体。 key：_sys_enterprise_project_id value：企业项目id列表 目前TMS调用时，key下面只包含一个value。0表示默认企业项目 sys_tags和租户标签过滤条件（without_any_tag 、tags、tags_any、not_tags、not_tags_any）不能同时使用 无sys_tags时按照tag接口处理，无tag过滤条件时返回全量数据
+
         :param sys_tags: The sys_tags of this ResourceInstanceTagRequest.
-        :type sys_tags: :class:`huaweicloudsdkdbss.v1.TagKeyValuesBean`
+        :type sys_tags: list[:class:`huaweicloudsdkdbss.v1.TagKeyValuesBean`]
         """
         self._sys_tags = sys_tags
 

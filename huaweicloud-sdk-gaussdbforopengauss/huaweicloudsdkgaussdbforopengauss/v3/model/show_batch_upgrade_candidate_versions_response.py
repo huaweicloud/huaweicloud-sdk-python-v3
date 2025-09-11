@@ -21,8 +21,8 @@ class ShowBatchUpgradeCandidateVersionsResponse(SdkResponse):
         'upgrade_type_list': 'list[UpgradeTypeInfo]',
         'target_version': 'str',
         'upgrade_candidate_versions': 'list[str]',
-        'hotfix_upgrade_infos': 'list[HotfixInfo]',
-        'hotfix_rollback_infos': 'list[HotfixInfo]'
+        'hotfix_upgrade_infos': 'list[HotfixInfoResult]',
+        'hotfix_rollback_infos': 'list[HotfixInfoResult]'
     }
 
     attribute_map = {
@@ -45,9 +45,9 @@ class ShowBatchUpgradeCandidateVersionsResponse(SdkResponse):
         :param upgrade_candidate_versions: 可以升级的版本，包括大小版本。
         :type upgrade_candidate_versions: list[str]
         :param hotfix_upgrade_infos: 可以升级的热补丁信息。
-        :type hotfix_upgrade_infos: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.HotfixInfo`]
+        :type hotfix_upgrade_infos: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.HotfixInfoResult`]
         :param hotfix_rollback_infos: 可以回滚的热补丁信息。
-        :type hotfix_rollback_infos: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.HotfixInfo`]
+        :type hotfix_rollback_infos: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.HotfixInfoResult`]
         """
         
         super(ShowBatchUpgradeCandidateVersionsResponse, self).__init__()
@@ -143,7 +143,7 @@ class ShowBatchUpgradeCandidateVersionsResponse(SdkResponse):
         可以升级的热补丁信息。
 
         :return: The hotfix_upgrade_infos of this ShowBatchUpgradeCandidateVersionsResponse.
-        :rtype: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.HotfixInfo`]
+        :rtype: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.HotfixInfoResult`]
         """
         return self._hotfix_upgrade_infos
 
@@ -154,7 +154,7 @@ class ShowBatchUpgradeCandidateVersionsResponse(SdkResponse):
         可以升级的热补丁信息。
 
         :param hotfix_upgrade_infos: The hotfix_upgrade_infos of this ShowBatchUpgradeCandidateVersionsResponse.
-        :type hotfix_upgrade_infos: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.HotfixInfo`]
+        :type hotfix_upgrade_infos: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.HotfixInfoResult`]
         """
         self._hotfix_upgrade_infos = hotfix_upgrade_infos
 
@@ -165,7 +165,7 @@ class ShowBatchUpgradeCandidateVersionsResponse(SdkResponse):
         可以回滚的热补丁信息。
 
         :return: The hotfix_rollback_infos of this ShowBatchUpgradeCandidateVersionsResponse.
-        :rtype: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.HotfixInfo`]
+        :rtype: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.HotfixInfoResult`]
         """
         return self._hotfix_rollback_infos
 
@@ -176,7 +176,7 @@ class ShowBatchUpgradeCandidateVersionsResponse(SdkResponse):
         可以回滚的热补丁信息。
 
         :param hotfix_rollback_infos: The hotfix_rollback_infos of this ShowBatchUpgradeCandidateVersionsResponse.
-        :type hotfix_rollback_infos: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.HotfixInfo`]
+        :type hotfix_rollback_infos: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.HotfixInfoResult`]
         """
         self._hotfix_rollback_infos = hotfix_rollback_infos
 

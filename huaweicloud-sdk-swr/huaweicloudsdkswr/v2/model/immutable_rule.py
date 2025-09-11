@@ -45,15 +45,15 @@ class ImmutableRule:
 
         The model defined in huaweicloud sdk
 
-        :param id: 不可变规则ID
+        :param id: 不可变策略ID
         :type id: int
-        :param namespace_id: 
+        :param namespace_id: 命名空间ID
         :type namespace_id: int
-        :param namespace_name: 
+        :param namespace_name: 命名空间名称
         :type namespace_name: str
-        :param priority: 
+        :param priority: 优先级，保留字段
         :type priority: int
-        :param disabled: 不可变规则是否生效
+        :param disabled: 不可变策略是否生效
         :type disabled: bool
         :param action: 预留字段，仅支持填immutable
         :type action: str
@@ -101,7 +101,7 @@ class ImmutableRule:
     def id(self):
         r"""Gets the id of this ImmutableRule.
 
-        不可变规则ID
+        不可变策略ID
 
         :return: The id of this ImmutableRule.
         :rtype: int
@@ -112,7 +112,7 @@ class ImmutableRule:
     def id(self, id):
         r"""Sets the id of this ImmutableRule.
 
-        不可变规则ID
+        不可变策略ID
 
         :param id: The id of this ImmutableRule.
         :type id: int
@@ -123,6 +123,8 @@ class ImmutableRule:
     def namespace_id(self):
         r"""Gets the namespace_id of this ImmutableRule.
 
+        命名空间ID
+
         :return: The namespace_id of this ImmutableRule.
         :rtype: int
         """
@@ -131,6 +133,8 @@ class ImmutableRule:
     @namespace_id.setter
     def namespace_id(self, namespace_id):
         r"""Sets the namespace_id of this ImmutableRule.
+
+        命名空间ID
 
         :param namespace_id: The namespace_id of this ImmutableRule.
         :type namespace_id: int
@@ -141,6 +145,8 @@ class ImmutableRule:
     def namespace_name(self):
         r"""Gets the namespace_name of this ImmutableRule.
 
+        命名空间名称
+
         :return: The namespace_name of this ImmutableRule.
         :rtype: str
         """
@@ -149,6 +155,8 @@ class ImmutableRule:
     @namespace_name.setter
     def namespace_name(self, namespace_name):
         r"""Sets the namespace_name of this ImmutableRule.
+
+        命名空间名称
 
         :param namespace_name: The namespace_name of this ImmutableRule.
         :type namespace_name: str
@@ -159,6 +167,8 @@ class ImmutableRule:
     def priority(self):
         r"""Gets the priority of this ImmutableRule.
 
+        优先级，保留字段
+
         :return: The priority of this ImmutableRule.
         :rtype: int
         """
@@ -167,6 +177,8 @@ class ImmutableRule:
     @priority.setter
     def priority(self, priority):
         r"""Sets the priority of this ImmutableRule.
+
+        优先级，保留字段
 
         :param priority: The priority of this ImmutableRule.
         :type priority: int
@@ -177,7 +189,7 @@ class ImmutableRule:
     def disabled(self):
         r"""Gets the disabled of this ImmutableRule.
 
-        不可变规则是否生效
+        不可变策略是否生效
 
         :return: The disabled of this ImmutableRule.
         :rtype: bool
@@ -188,7 +200,7 @@ class ImmutableRule:
     def disabled(self, disabled):
         r"""Sets the disabled of this ImmutableRule.
 
-        不可变规则是否生效
+        不可变策略是否生效
 
         :param disabled: The disabled of this ImmutableRule.
         :type disabled: bool

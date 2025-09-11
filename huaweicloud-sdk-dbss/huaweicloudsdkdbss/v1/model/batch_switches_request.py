@@ -43,10 +43,8 @@ class BatchSwitchesRequest:
         self._status = None
         self.discriminator = None
 
-        if ids is not None:
-            self.ids = ids
-        if status is not None:
-            self.status = status
+        self.ids = ids
+        self.status = status
 
     @property
     def ids(self):

@@ -19,14 +19,14 @@ class WidgetInfoWithId:
     openapi_types = {
         'widget_id': 'str',
         'group_id': 'str',
-        'metrics': 'list[WidgetMetric]',
+        'metrics': 'list[WidgetMetricResp]',
         'title': 'str',
         'threshold': 'float',
         'threshold_enabled': 'bool',
         'view': 'str',
         'metric_display_mode': 'str',
-        'properties': 'BaseWidgetInfoProperties',
-        'location': 'UpdateWidgetInfoLocation',
+        'properties': 'BaseWidgetInfoRespProperties',
+        'location': 'BaseWidgetInfoRespLocation',
         'unit': 'str',
         'create_time': 'int'
     }
@@ -51,29 +51,29 @@ class WidgetInfoWithId:
 
         The model defined in huaweicloud sdk
 
-        :param widget_id: 视图id
+        :param widget_id: **参数解释** 视图id **取值范围** 字符串必须以wg开头，包含22个字母和数字，长度为24个字符。 
         :type widget_id: str
-        :param group_id: 视图分区id
+        :param group_id: **参数解释** 视图分组id **取值范围** 字符串必须以dg开头，包含22个字母和数字，长度为24个字符或者为default，default代表不分组 
         :type group_id: str
-        :param metrics: 指标列表
-        :type metrics: list[:class:`huaweicloudsdkces.v2.WidgetMetric`]
-        :param title: 监控视图标题
+        :param metrics: **参数解释** 指标列表 
+        :type metrics: list[:class:`huaweicloudsdkces.v2.WidgetMetricResp`]
+        :param title: **参数解释** 监控视图标题 **取值范围** 长度为[1,128]个字符，允许包括以下内容：1、中文汉字；2、拉丁字母；3、英文大小写字母；4、数字(0-9)；5、符号： ” \&quot; ≤ &lt; &gt; &amp; % _ : / ; “ &#39; ? + , ~ ， （ ） º ( ) [ . - 
         :type title: str
-        :param threshold: 监控视图指标的阈值
+        :param threshold: **参数解释** 监控视图指标的阈值 **取值范围** 最小值为0，最大值为1.7976931348623157e+308 
         :type threshold: float
-        :param threshold_enabled: 阈值是否展示，true:展示，false:不展示
+        :param threshold_enabled: **参数解释** 阈值是否展示 **取值范围** - true:展示 - false:不展示 
         :type threshold_enabled: bool
-        :param view: 监控视图图表类型, bar条形图，line折线图，bar_chart柱状图，table表格，circular_bar环形柱状图，area_chart面积图
+        :param view: **参数解释** 监控视图图表类型 **取值范围** - bar:条形图 - line:折线图 - bar_chart:柱状图 - table:表格 - circular_bar:环形柱状图 - area_chart:面积图 
         :type view: str
-        :param metric_display_mode: 指标展示类型，single 单指标展示，multiple 多指标展示
+        :param metric_display_mode: **参数解释** 指标展示类型 **取值范围** - single:单指标展示 - multiple:多指标展示 
         :type metric_display_mode: str
         :param properties: 
-        :type properties: :class:`huaweicloudsdkces.v2.BaseWidgetInfoProperties`
+        :type properties: :class:`huaweicloudsdkces.v2.BaseWidgetInfoRespProperties`
         :param location: 
-        :type location: :class:`huaweicloudsdkces.v2.UpdateWidgetInfoLocation`
-        :param unit: 单位
+        :type location: :class:`huaweicloudsdkces.v2.BaseWidgetInfoRespLocation`
+        :param unit: **参数解释** 单位 **取值范围** 长度为[0,32]个字符 
         :type unit: str
-        :param create_time: 监控看板创建时间
+        :param create_time: **参数解释** 监控看板创建时间 **取值范围** 最小值为1111111111111，最大值为9999999999999 
         :type create_time: int
         """
         
@@ -97,16 +97,22 @@ class WidgetInfoWithId:
             self.widget_id = widget_id
         if group_id is not None:
             self.group_id = group_id
-        self.metrics = metrics
-        self.title = title
+        if metrics is not None:
+            self.metrics = metrics
+        if title is not None:
+            self.title = title
         if threshold is not None:
             self.threshold = threshold
-        self.threshold_enabled = threshold_enabled
-        self.view = view
-        self.metric_display_mode = metric_display_mode
+        if threshold_enabled is not None:
+            self.threshold_enabled = threshold_enabled
+        if view is not None:
+            self.view = view
+        if metric_display_mode is not None:
+            self.metric_display_mode = metric_display_mode
         if properties is not None:
             self.properties = properties
-        self.location = location
+        if location is not None:
+            self.location = location
         if unit is not None:
             self.unit = unit
         if create_time is not None:
@@ -116,7 +122,7 @@ class WidgetInfoWithId:
     def widget_id(self):
         r"""Gets the widget_id of this WidgetInfoWithId.
 
-        视图id
+        **参数解释** 视图id **取值范围** 字符串必须以wg开头，包含22个字母和数字，长度为24个字符。 
 
         :return: The widget_id of this WidgetInfoWithId.
         :rtype: str
@@ -127,7 +133,7 @@ class WidgetInfoWithId:
     def widget_id(self, widget_id):
         r"""Sets the widget_id of this WidgetInfoWithId.
 
-        视图id
+        **参数解释** 视图id **取值范围** 字符串必须以wg开头，包含22个字母和数字，长度为24个字符。 
 
         :param widget_id: The widget_id of this WidgetInfoWithId.
         :type widget_id: str
@@ -138,7 +144,7 @@ class WidgetInfoWithId:
     def group_id(self):
         r"""Gets the group_id of this WidgetInfoWithId.
 
-        视图分区id
+        **参数解释** 视图分组id **取值范围** 字符串必须以dg开头，包含22个字母和数字，长度为24个字符或者为default，default代表不分组 
 
         :return: The group_id of this WidgetInfoWithId.
         :rtype: str
@@ -149,7 +155,7 @@ class WidgetInfoWithId:
     def group_id(self, group_id):
         r"""Sets the group_id of this WidgetInfoWithId.
 
-        视图分区id
+        **参数解释** 视图分组id **取值范围** 字符串必须以dg开头，包含22个字母和数字，长度为24个字符或者为default，default代表不分组 
 
         :param group_id: The group_id of this WidgetInfoWithId.
         :type group_id: str
@@ -160,10 +166,10 @@ class WidgetInfoWithId:
     def metrics(self):
         r"""Gets the metrics of this WidgetInfoWithId.
 
-        指标列表
+        **参数解释** 指标列表 
 
         :return: The metrics of this WidgetInfoWithId.
-        :rtype: list[:class:`huaweicloudsdkces.v2.WidgetMetric`]
+        :rtype: list[:class:`huaweicloudsdkces.v2.WidgetMetricResp`]
         """
         return self._metrics
 
@@ -171,10 +177,10 @@ class WidgetInfoWithId:
     def metrics(self, metrics):
         r"""Sets the metrics of this WidgetInfoWithId.
 
-        指标列表
+        **参数解释** 指标列表 
 
         :param metrics: The metrics of this WidgetInfoWithId.
-        :type metrics: list[:class:`huaweicloudsdkces.v2.WidgetMetric`]
+        :type metrics: list[:class:`huaweicloudsdkces.v2.WidgetMetricResp`]
         """
         self._metrics = metrics
 
@@ -182,7 +188,7 @@ class WidgetInfoWithId:
     def title(self):
         r"""Gets the title of this WidgetInfoWithId.
 
-        监控视图标题
+        **参数解释** 监控视图标题 **取值范围** 长度为[1,128]个字符，允许包括以下内容：1、中文汉字；2、拉丁字母；3、英文大小写字母；4、数字(0-9)；5、符号： ” \" ≤ < > & % _ : / ; “ ' ? + , ~ ， （ ） º ( ) [ . - 
 
         :return: The title of this WidgetInfoWithId.
         :rtype: str
@@ -193,7 +199,7 @@ class WidgetInfoWithId:
     def title(self, title):
         r"""Sets the title of this WidgetInfoWithId.
 
-        监控视图标题
+        **参数解释** 监控视图标题 **取值范围** 长度为[1,128]个字符，允许包括以下内容：1、中文汉字；2、拉丁字母；3、英文大小写字母；4、数字(0-9)；5、符号： ” \" ≤ < > & % _ : / ; “ ' ? + , ~ ， （ ） º ( ) [ . - 
 
         :param title: The title of this WidgetInfoWithId.
         :type title: str
@@ -204,7 +210,7 @@ class WidgetInfoWithId:
     def threshold(self):
         r"""Gets the threshold of this WidgetInfoWithId.
 
-        监控视图指标的阈值
+        **参数解释** 监控视图指标的阈值 **取值范围** 最小值为0，最大值为1.7976931348623157e+308 
 
         :return: The threshold of this WidgetInfoWithId.
         :rtype: float
@@ -215,7 +221,7 @@ class WidgetInfoWithId:
     def threshold(self, threshold):
         r"""Sets the threshold of this WidgetInfoWithId.
 
-        监控视图指标的阈值
+        **参数解释** 监控视图指标的阈值 **取值范围** 最小值为0，最大值为1.7976931348623157e+308 
 
         :param threshold: The threshold of this WidgetInfoWithId.
         :type threshold: float
@@ -226,7 +232,7 @@ class WidgetInfoWithId:
     def threshold_enabled(self):
         r"""Gets the threshold_enabled of this WidgetInfoWithId.
 
-        阈值是否展示，true:展示，false:不展示
+        **参数解释** 阈值是否展示 **取值范围** - true:展示 - false:不展示 
 
         :return: The threshold_enabled of this WidgetInfoWithId.
         :rtype: bool
@@ -237,7 +243,7 @@ class WidgetInfoWithId:
     def threshold_enabled(self, threshold_enabled):
         r"""Sets the threshold_enabled of this WidgetInfoWithId.
 
-        阈值是否展示，true:展示，false:不展示
+        **参数解释** 阈值是否展示 **取值范围** - true:展示 - false:不展示 
 
         :param threshold_enabled: The threshold_enabled of this WidgetInfoWithId.
         :type threshold_enabled: bool
@@ -248,7 +254,7 @@ class WidgetInfoWithId:
     def view(self):
         r"""Gets the view of this WidgetInfoWithId.
 
-        监控视图图表类型, bar条形图，line折线图，bar_chart柱状图，table表格，circular_bar环形柱状图，area_chart面积图
+        **参数解释** 监控视图图表类型 **取值范围** - bar:条形图 - line:折线图 - bar_chart:柱状图 - table:表格 - circular_bar:环形柱状图 - area_chart:面积图 
 
         :return: The view of this WidgetInfoWithId.
         :rtype: str
@@ -259,7 +265,7 @@ class WidgetInfoWithId:
     def view(self, view):
         r"""Sets the view of this WidgetInfoWithId.
 
-        监控视图图表类型, bar条形图，line折线图，bar_chart柱状图，table表格，circular_bar环形柱状图，area_chart面积图
+        **参数解释** 监控视图图表类型 **取值范围** - bar:条形图 - line:折线图 - bar_chart:柱状图 - table:表格 - circular_bar:环形柱状图 - area_chart:面积图 
 
         :param view: The view of this WidgetInfoWithId.
         :type view: str
@@ -270,7 +276,7 @@ class WidgetInfoWithId:
     def metric_display_mode(self):
         r"""Gets the metric_display_mode of this WidgetInfoWithId.
 
-        指标展示类型，single 单指标展示，multiple 多指标展示
+        **参数解释** 指标展示类型 **取值范围** - single:单指标展示 - multiple:多指标展示 
 
         :return: The metric_display_mode of this WidgetInfoWithId.
         :rtype: str
@@ -281,7 +287,7 @@ class WidgetInfoWithId:
     def metric_display_mode(self, metric_display_mode):
         r"""Sets the metric_display_mode of this WidgetInfoWithId.
 
-        指标展示类型，single 单指标展示，multiple 多指标展示
+        **参数解释** 指标展示类型 **取值范围** - single:单指标展示 - multiple:多指标展示 
 
         :param metric_display_mode: The metric_display_mode of this WidgetInfoWithId.
         :type metric_display_mode: str
@@ -293,7 +299,7 @@ class WidgetInfoWithId:
         r"""Gets the properties of this WidgetInfoWithId.
 
         :return: The properties of this WidgetInfoWithId.
-        :rtype: :class:`huaweicloudsdkces.v2.BaseWidgetInfoProperties`
+        :rtype: :class:`huaweicloudsdkces.v2.BaseWidgetInfoRespProperties`
         """
         return self._properties
 
@@ -302,7 +308,7 @@ class WidgetInfoWithId:
         r"""Sets the properties of this WidgetInfoWithId.
 
         :param properties: The properties of this WidgetInfoWithId.
-        :type properties: :class:`huaweicloudsdkces.v2.BaseWidgetInfoProperties`
+        :type properties: :class:`huaweicloudsdkces.v2.BaseWidgetInfoRespProperties`
         """
         self._properties = properties
 
@@ -311,7 +317,7 @@ class WidgetInfoWithId:
         r"""Gets the location of this WidgetInfoWithId.
 
         :return: The location of this WidgetInfoWithId.
-        :rtype: :class:`huaweicloudsdkces.v2.UpdateWidgetInfoLocation`
+        :rtype: :class:`huaweicloudsdkces.v2.BaseWidgetInfoRespLocation`
         """
         return self._location
 
@@ -320,7 +326,7 @@ class WidgetInfoWithId:
         r"""Sets the location of this WidgetInfoWithId.
 
         :param location: The location of this WidgetInfoWithId.
-        :type location: :class:`huaweicloudsdkces.v2.UpdateWidgetInfoLocation`
+        :type location: :class:`huaweicloudsdkces.v2.BaseWidgetInfoRespLocation`
         """
         self._location = location
 
@@ -328,7 +334,7 @@ class WidgetInfoWithId:
     def unit(self):
         r"""Gets the unit of this WidgetInfoWithId.
 
-        单位
+        **参数解释** 单位 **取值范围** 长度为[0,32]个字符 
 
         :return: The unit of this WidgetInfoWithId.
         :rtype: str
@@ -339,7 +345,7 @@ class WidgetInfoWithId:
     def unit(self, unit):
         r"""Sets the unit of this WidgetInfoWithId.
 
-        单位
+        **参数解释** 单位 **取值范围** 长度为[0,32]个字符 
 
         :param unit: The unit of this WidgetInfoWithId.
         :type unit: str
@@ -350,7 +356,7 @@ class WidgetInfoWithId:
     def create_time(self):
         r"""Gets the create_time of this WidgetInfoWithId.
 
-        监控看板创建时间
+        **参数解释** 监控看板创建时间 **取值范围** 最小值为1111111111111，最大值为9999999999999 
 
         :return: The create_time of this WidgetInfoWithId.
         :rtype: int
@@ -361,7 +367,7 @@ class WidgetInfoWithId:
     def create_time(self, create_time):
         r"""Sets the create_time of this WidgetInfoWithId.
 
-        监控看板创建时间
+        **参数解释** 监控看板创建时间 **取值范围** 最小值为1111111111111，最大值为9999999999999 
 
         :param create_time: The create_time of this WidgetInfoWithId.
         :type create_time: int

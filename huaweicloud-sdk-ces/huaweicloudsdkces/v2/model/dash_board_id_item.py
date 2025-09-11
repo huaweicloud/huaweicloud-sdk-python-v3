@@ -29,7 +29,7 @@ class DashBoardIdItem:
 
         The model defined in huaweicloud sdk
 
-        :param dashboard_id: 监控看板id
+        :param dashboard_id: **参数描述**： 监控看板id **约束限制** 不涉及 **取值范围** 以db开头，包含22个字母和数字，长度为24个字符 **默认取值** 不涉及 
         :type dashboard_id: str
         """
         
@@ -45,7 +45,7 @@ class DashBoardIdItem:
     def dashboard_id(self):
         r"""Gets the dashboard_id of this DashBoardIdItem.
 
-        监控看板id
+        **参数描述**： 监控看板id **约束限制** 不涉及 **取值范围** 以db开头，包含22个字母和数字，长度为24个字符 **默认取值** 不涉及 
 
         :return: The dashboard_id of this DashBoardIdItem.
         :rtype: str
@@ -56,7 +56,7 @@ class DashBoardIdItem:
     def dashboard_id(self, dashboard_id):
         r"""Sets the dashboard_id of this DashBoardIdItem.
 
-        监控看板id
+        **参数描述**： 监控看板id **约束限制** 不涉及 **取值范围** 以db开头，包含22个字母和数字，长度为24个字符 **默认取值** 不涉及 
 
         :param dashboard_id: The dashboard_id of this DashBoardIdItem.
         :type dashboard_id: str

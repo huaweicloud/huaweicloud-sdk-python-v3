@@ -81,6 +81,8 @@ from huaweicloudsdkga.v1.model.ip_group_detail import IpGroupDetail
 from huaweicloudsdkga.v1.model.ip_info import IpInfo
 from huaweicloudsdkga.v1.model.list_accelerators_request import ListAcceleratorsRequest
 from huaweicloudsdkga.v1.model.list_accelerators_response import ListAcceleratorsResponse
+from huaweicloudsdkga.v1.model.list_all_pops_request import ListAllPopsRequest
+from huaweicloudsdkga.v1.model.list_all_pops_response import ListAllPopsResponse
 from huaweicloudsdkga.v1.model.list_endpoint_groups_request import ListEndpointGroupsRequest
 from huaweicloudsdkga.v1.model.list_endpoint_groups_response import ListEndpointGroupsResponse
 from huaweicloudsdkga.v1.model.list_endpoints_request import ListEndpointsRequest
@@ -100,6 +102,9 @@ from huaweicloudsdkga.v1.model.list_resources_by_tag_request_body import ListRes
 from huaweicloudsdkga.v1.model.list_resources_by_tag_response import ListResourcesByTagResponse
 from huaweicloudsdkga.v1.model.list_tags_request import ListTagsRequest
 from huaweicloudsdkga.v1.model.list_tags_response import ListTagsResponse
+from huaweicloudsdkga.v1.model.list_tenant_quotas_request import ListTenantQuotasRequest
+from huaweicloudsdkga.v1.model.list_tenant_quotas_response import ListTenantQuotasResponse
+from huaweicloudsdkga.v1.model.list_tenant_quotas_response_body_quotas import ListTenantQuotasResponseBodyQuotas
 from huaweicloudsdkga.v1.model.listener_access_control_policy import ListenerAccessControlPolicy
 from huaweicloudsdkga.v1.model.listener_access_control_type import ListenerAccessControlType
 from huaweicloudsdkga.v1.model.listener_detail import ListenerDetail
@@ -108,7 +113,9 @@ from huaweicloudsdkga.v1.model.logtank_detail import LogtankDetail
 from huaweicloudsdkga.v1.model.logtank_resource_type import LogtankResourceType
 from huaweicloudsdkga.v1.model.match import Match
 from huaweicloudsdkga.v1.model.page_info import PageInfo
+from huaweicloudsdkga.v1.model.pop_outer_detail import PopOuterDetail
 from huaweicloudsdkga.v1.model.port_range import PortRange
+from huaweicloudsdkga.v1.model.quota_outer_resource import QuotaOuterResource
 from huaweicloudsdkga.v1.model.region import Region
 from huaweicloudsdkga.v1.model.remove_ip_group_ip_request import RemoveIpGroupIpRequest
 from huaweicloudsdkga.v1.model.remove_ip_group_ip_request_body import RemoveIpGroupIpRequestBody

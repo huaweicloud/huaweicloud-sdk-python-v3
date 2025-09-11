@@ -18,35 +18,42 @@ class CreateAlarmTemplateResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'template_id': 'str'
+        'template_id': 'str',
+        'overwrite_result': 'OverwriteResultResp'
     }
 
     attribute_map = {
-        'template_id': 'template_id'
+        'template_id': 'template_id',
+        'overwrite_result': 'overwrite_result'
     }
 
-    def __init__(self, template_id=None):
+    def __init__(self, template_id=None, overwrite_result=None):
         r"""CreateAlarmTemplateResponse
 
         The model defined in huaweicloud sdk
 
-        :param template_id: 告警模板的ID，以at开头，后跟字母、数字，长度最长为64
+        :param template_id: **参数解释**： 告警模板的ID。     **约束限制**： 不涉及。 **取值范围**： 以at开头，后跟字母、数字，长度为[2,64]个字符。           **默认取值**： 不涉及。 
         :type template_id: str
+        :param overwrite_result: 
+        :type overwrite_result: :class:`huaweicloudsdkces.v2.OverwriteResultResp`
         """
         
         super(CreateAlarmTemplateResponse, self).__init__()
 
         self._template_id = None
+        self._overwrite_result = None
         self.discriminator = None
 
         if template_id is not None:
             self.template_id = template_id
+        if overwrite_result is not None:
+            self.overwrite_result = overwrite_result
 
     @property
     def template_id(self):
         r"""Gets the template_id of this CreateAlarmTemplateResponse.
 
-        告警模板的ID，以at开头，后跟字母、数字，长度最长为64
+        **参数解释**： 告警模板的ID。     **约束限制**： 不涉及。 **取值范围**： 以at开头，后跟字母、数字，长度为[2,64]个字符。           **默认取值**： 不涉及。 
 
         :return: The template_id of this CreateAlarmTemplateResponse.
         :rtype: str
@@ -57,12 +64,30 @@ class CreateAlarmTemplateResponse(SdkResponse):
     def template_id(self, template_id):
         r"""Sets the template_id of this CreateAlarmTemplateResponse.
 
-        告警模板的ID，以at开头，后跟字母、数字，长度最长为64
+        **参数解释**： 告警模板的ID。     **约束限制**： 不涉及。 **取值范围**： 以at开头，后跟字母、数字，长度为[2,64]个字符。           **默认取值**： 不涉及。 
 
         :param template_id: The template_id of this CreateAlarmTemplateResponse.
         :type template_id: str
         """
         self._template_id = template_id
+
+    @property
+    def overwrite_result(self):
+        r"""Gets the overwrite_result of this CreateAlarmTemplateResponse.
+
+        :return: The overwrite_result of this CreateAlarmTemplateResponse.
+        :rtype: :class:`huaweicloudsdkces.v2.OverwriteResultResp`
+        """
+        return self._overwrite_result
+
+    @overwrite_result.setter
+    def overwrite_result(self, overwrite_result):
+        r"""Sets the overwrite_result of this CreateAlarmTemplateResponse.
+
+        :param overwrite_result: The overwrite_result of this CreateAlarmTemplateResponse.
+        :type overwrite_result: :class:`huaweicloudsdkces.v2.OverwriteResultResp`
+        """
+        self._overwrite_result = overwrite_result
 
     def to_dict(self):
         """Returns the model properties as a dict"""

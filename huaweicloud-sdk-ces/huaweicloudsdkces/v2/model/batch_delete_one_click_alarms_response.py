@@ -30,7 +30,7 @@ class BatchDeleteOneClickAlarmsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param one_click_alarm_ids: 成功删除的一键告警ID列表
+        :param one_click_alarm_ids: **参数解释**： 成功删除的一键告警ID列表。 
         :type one_click_alarm_ids: list[str]
         """
         
@@ -46,7 +46,7 @@ class BatchDeleteOneClickAlarmsResponse(SdkResponse):
     def one_click_alarm_ids(self):
         r"""Gets the one_click_alarm_ids of this BatchDeleteOneClickAlarmsResponse.
 
-        成功删除的一键告警ID列表
+        **参数解释**： 成功删除的一键告警ID列表。 
 
         :return: The one_click_alarm_ids of this BatchDeleteOneClickAlarmsResponse.
         :rtype: list[str]
@@ -57,7 +57,7 @@ class BatchDeleteOneClickAlarmsResponse(SdkResponse):
     def one_click_alarm_ids(self, one_click_alarm_ids):
         r"""Sets the one_click_alarm_ids of this BatchDeleteOneClickAlarmsResponse.
 
-        成功删除的一键告警ID列表
+        **参数解释**： 成功删除的一键告警ID列表。 
 
         :param one_click_alarm_ids: The one_click_alarm_ids of this BatchDeleteOneClickAlarmsResponse.
         :type one_click_alarm_ids: list[str]

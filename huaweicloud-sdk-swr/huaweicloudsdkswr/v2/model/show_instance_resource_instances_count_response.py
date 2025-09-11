@@ -30,7 +30,7 @@ class ShowInstanceResourceInstancesCountResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total_count: 资源实例数量
+        :param total_count: 资源数量
         :type total_count: int
         """
         
@@ -46,7 +46,7 @@ class ShowInstanceResourceInstancesCountResponse(SdkResponse):
     def total_count(self):
         r"""Gets the total_count of this ShowInstanceResourceInstancesCountResponse.
 
-        资源实例数量
+        资源数量
 
         :return: The total_count of this ShowInstanceResourceInstancesCountResponse.
         :rtype: int
@@ -57,7 +57,7 @@ class ShowInstanceResourceInstancesCountResponse(SdkResponse):
     def total_count(self, total_count):
         r"""Sets the total_count of this ShowInstanceResourceInstancesCountResponse.
 
-        资源实例数量
+        资源数量
 
         :param total_count: The total_count of this ShowInstanceResourceInstancesCountResponse.
         :type total_count: int

@@ -1,3 +1,788 @@
+# 3.1.167 2025-09-11
+
+### HuaweiCloud SDK BMS
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the APIs `ModifyVmNic`, `ShowAvailableResource`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK CES
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the API `BatchListSpecifiedMetricData`
+- _Bug Fix_
+  - None
+- _Change_
+  - **BatchDeleteAlarmRules**
+    - changes of response param
+      - `* alarm_ids: list<AlarmID> -> list<AlarmIDResp>`
+  - **BatchEnableAlarmRules**
+    - changes of response param
+      - `* alarm_ids: list<AlarmID> -> list<AlarmIDResp>`
+  - **ListAlarmRuleResources**
+    - changes of response param
+      - `* resources: list<list<Dimension>> -> list<list<DimensionResp>>`
+  - **UpdateDashboard**
+    - changes of request param
+      - `* extend_info.from: int32 -> int64`
+      - `* extend_info.to: int32 -> int64`
+  - **BatchUpdateOneClickAlarmsEnabledState**
+    - changes of response param
+      - `* alarm_ids: list<AlarmID> -> list<AlarmIDResp>`
+  - **BatchDeleteOneClickAlarms**
+    - changes of response param
+      - `* one_click_alarm_ids: list<OneClickAlarmID> -> list<OneClickAlarmIDResp>`
+  - **ListCesTargetProjectTags**
+    - changes of response param
+      - `* tags: list<Tag> -> list<TagResp>`
+  - **ListAlarmRulePolicies**
+    - changes of response param
+      - `+ policies.period: enum value [0,1,300,1200,3600,14400,86400]`
+      - `+ policies.suppress_duration: enum value [0,300,600,900,1800,3600,10800,21600,43200,86400]`
+      - `* policies.extra_info: object<MetricExtraInfo> -> object<MetricExtraInfoResp>`
+      - `* policies.hierarchical_value: object<HierarchicalValue> -> object<HierarchicalValueResp>`
+      - `* policies: list<ListPolicy> -> list<ListPolicyResp>`
+  - **UpdateAlarmRulePolicies**
+    - changes of request param
+      - `- policies`
+      - `* policies: list<UpdatePolicy> -> list<UpdatePolicyReq>`
+    - changes of response param
+      - `* policies.extra_info: object<MetricExtraInfo> -> object<MetricExtraInfoResp>`
+      - `* policies.hierarchical_value: object<HierarchicalValue> -> object<HierarchicalValueResp>`
+      - `* policies: list<UpdatePolicy> -> list<UpdatePolicyResp>`
+  - **ListAlarmTemplates**
+    - changes of request param
+      - `+ product_name`
+  - **CreateAlarmTemplate**
+    - changes of request param
+      - `+ policies.extra_info`
+      - `+ policies.selected_unit`
+      - `+ policies.type`
+    - changes of response param
+      - `+ overwrite_result`
+  - **UpdateAlarmTemplate**
+    - changes of request param
+      - `+ policies.extra_info`
+      - `+ policies.selected_unit`
+      - `+ policies.type`
+  - **ShowWidget**
+    - changes of response param
+      - `* properties.thresholds: list<ThresholdInfo> -> list<ThresholdInfoResp>`
+      - `* metrics.dimensions: object<DimensionInfo> -> object<DimensionInfoResp>`
+      - `* metrics.extra_info: object<ExtraInfo> -> object<ExtraInfoResp>`
+      - `* metrics: list<WidgetMetric> -> list<WidgetMetricResp>`
+  - **ListAlarmRules**
+    - changes of response param
+      - `* alarms.ok_notifications: list<Notification> -> list<NotificationResp>`
+      - `+ alarms.policies.enabled`
+      - `* alarms.resources.dimensions: list<MetricDimension> -> list<MetricDimensionResp>`
+      - `* alarms.alarm_notifications.notification_list: list<SMNUrn> -> list<SMNUrnResp>`
+      - `* alarms.alarm_notifications: list<Notification> -> list<NotificationResp>`
+  - **CreateAlarmRules**
+    - changes of request param
+      - `+ policies.enabled`
+  - **UpdateAlarmNotifications**
+    - changes of response param
+      - `* ok_notifications: list<Notification> -> list<NotificationResp>`
+      - `* alarm_notifications.notification_list: list<SMNUrn> -> list<SMNUrnResp>`
+      - `* alarm_notifications: list<Notification> -> list<NotificationResp>`
+  - **ListDashboardWidgets**
+    - changes of response param
+      - `* widgets.properties.thresholds: list<ThresholdInfo> -> list<ThresholdInfoResp>`
+      - `* widgets.metrics.dimensions: object<DimensionInfo> -> object<DimensionInfoResp>`
+      - `* widgets.metrics.extra_info: object<ExtraInfo> -> object<ExtraInfoResp>`
+      - `* widgets.metrics: list<WidgetMetric> -> list<WidgetMetricResp>`
+  - **CreateOneClickAlarm**
+    - changes of request param
+      - `+ enabled_alarm_ids`
+      - `+ one_click_update_alarms.type: enum value [EVENT.SYS,EVENT.CUSTOM,DNSHealthCheck,RESOURCE_GROUP,MULTI_INSTANCE,ALL_INSTANCE]`
+      - `+ one_click_update_alarms.policies.enabled`
+  - **ListOneClickAlarmRules**
+    - changes of response param
+      - `* alarms.resources.dimensions: list<MetricDimension> -> list<MetricDimensionResp>`
+
+### HuaweiCloud SDK CES
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **BatchCreateAgentInvocations**
+    - changes of request param
+      - `+ invocation_type: enum value [SET_REMOTE_INSTALLER]`
+      - `- invocation_type: enum value [SET_REMOTE_INSTALL_HOST]`
+
+### HuaweiCloud SDK CPCS
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowVmMonitor**
+    - changes of response param
+      - `+ average`
+      - `+ max`
+  - **ShowAppAccessKeyList**
+    - changes of response param
+      - `+ total_num`
+
+### HuaweiCloud SDK DBSS
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the following APIs:
+    - `UpdateAuditRiskBucketPath`
+    - `ShowServerVersion`
+    - `UpdateAuditTaskStatus`
+    - `ShowAuditStatistics`
+    - `ShowSqlDetail`
+    - `CountSqlStatistics`
+    - `CountSessionStatistics`
+    - `CountOperationStatistics`
+    - `CountInjectionStatistics`
+    - `CountSqlTrendStatistics`
+    - `CountRiskTrendStatistics`
+    - `CountDbAccountSession`
+    - `CountDbClientSession`
+    - `ShowInstanceMonitorInfo`
+    - `ShowAuditTaskStatus`
+    - `SetAuditInstanceTimeZone`
+    - `ConfirmUpgradeAudit`
+    - `ShowAuditUpgradeStatus`
+    - `ShowSensitiveResultSwitch`
+    - `SetSensitiveResultSwitch`
+    - `ShowSensitiveMaskSwitch`
+    - `SetSensitiveSwitch`
+    - `SetSensitiveMaskRuleSwitch`
+    - `UpdateSensitiveMaskRule`
+    - `DeleteSensitiveRules`
+    - `ListAuditSensitiveMasksNew`
+    - `CreateSensitiveMaskRule`
+    - `DeleteAuditScope`
+    - `UpdateAuditScopeRule`
+    - `BatchDeleteAuditScope`
+    - `SetAuditScopeRuleSwitch`
+    - `ListAuditRuleScopesNew`
+    - `CreateAuditScopeRule`
+    - `ShowInstanceQuota`
+    - `SetRiskRuleRank`
+    - `DeleteAuditRuleRisk`
+    - `ListAuditRuleRisksNew`
+    - `CreateAuditRiskRule`
+    - `UpdateAuditSqlRule`
+    - `DeleteAuditRuleSql`
+    - `SetSqlRuleRank`
+    - `CreateAuditSqlRule`
+    - `SetAuditSqlRuleSwitch`
+    - `CreateAuditDbAgent`
+    - `BatchSetAuditAlarmLogStatus`
+    - `SetAuditAlarmLogStatus`
+    - `DeleteAuditAlarmLog`
+    - `ListAuditBackupRiskTemplates`
+    - `ShowAuditBackRiskTemplate`
+    - `ShowBackupRiskBucketPath`
+    - `SetAuditBackupRiskSwitch`
+    - `ListInstances`
+    - `UpdateDbOmInstanceName`
+    - `UnbindDbOmEip`
+    - `BindDbOmEip`
+    - `ChangeDbOmSecurityGroup`
+    - `ResetDbOmPassword`
+    - `ShowAuditRuleRiskNew`
+    - `SetRiskOperationPolicy`
+    - `RebootDbOmInstance`
+    - `StopDbOmInstance`
+    - `StartDbOmInstance`
+    - `DeleteDbOmInstance`
+    - `CreateDbOmInstancePeriod`
+    - `ListDbEncryptInstances`
+    - `UpdateDbEncryptInstanceName`
+    - `UnbindDbEncryptEip`
+    - `BindDbEncryptEip`
+    - `ChangeDbEncryptSecurityGroup`
+    - `ResetDbEncryptPassword`
+    - `RebootDbEncryptInstance`
+    - `StopDbEncryptInstance`
+    - `StartDbEncryptInstance`
+    - `DeleteDbEncryptInstance`
+    - `CreateDbEncryptInstancePeriod`
+    - `ListAuditBackupInfo`
+    - `SetAuditBackupSwitch`
+    - `ShowAuditBackupStatus`
+    - `RetryAuditBackupTask`
+    - `RestoreAuditBackup`
+    - `ListAuditObsBuckets`
+    - `DeleteAuditBackupTask`
+    - `SetAuditAutoBackupTemplate`
+    - `ListAuditReportTemplates`
+    - `DeleteAuditReport`
+    - `DownloadAuditReport`
+    - `UpdateAuditTopicReportSchedulerConfig`
+    - `ShowAuditTopicReportSchedulerConfig`
+    - `ListAuditReports`
+    - `CreateReport`
+    - `UpdateAuditWhitelist`
+    - `DeleteAuditWhitelist`
+    - `ListWhitelists`
+    - `BatchAddAuditWhitelist`
+    - `ListAuditTags`
+    - `ListAlarmTopicConfigInfoNew`
+    - `SetAlarmTopicConfigInfoNew`
+    - `SwitchRiskRuleNew`
+    - `ListAuditInstancesNew`
+    - `DeleteInstancesNew`
+    - `ShowAuditQuotaNew`
+    - `ListEcsSpecificationNew`
+    - `ListAvailabilityZoneInfosNew`
+    - `ListAuditInstanceJobsNew`
+    - `ListAuditOperateLogsNew`
+    - `ListSqlInjectionRulesNew`
+    - `CreateInstancesPeriodOrderNew`
+    - `UpdateAuditSecurityGroupNew`
+    - `SwitchAgentNew`
+    - `ListAuditDatabasesNew`
+    - `AddAuditDatabaseNew`
+    - `AddRdsDatabaseNew`
+    - `DeleteAuditDatabaseNew`
+    - `UploadAuditDbConfig`
+    - `SwitchAuditDatabaseNew`
+    - `DownloadAuditAgentNew`
+    - `DeleteAuditAgentNew`
+    - `ListAuditTrendHistory`
+    - `StartAuditInstanceNew`
+    - `StopAuditInstanceNew`
+    - `RebootAuditInstanceNew`
+    - `UpdateAuditInstanceNew`
+    - `ListAuditAlarmLogNew`
+    - `ListAuditSqlsNew`
+    - `ListAuditAgentNew`
+    - `AddAuditAgentNew`
+- _Bug Fix_
+  - None
+- _Change_
+  - Deprecate the following APIs:
+    - `ListAlarmTopicConfigInfo`
+    - `SetAlarmTopicConfigInfo`
+    - `SwitchRiskRule`
+    - `ShowAuditQuota`
+    - `ListSqlInjectionRules`
+    - `ListAuditRuleRisks`
+    - `ShowAuditRuleRisk`
+    - `ListAuditSensitiveMasks`
+    - `UpdateAuditSecurityGroup`
+    - `AddRdsNoAgentDatabase`
+    - `SwitchAgent`
+    - `AddAuditDatabase`
+    - `AddRdsDatabase`
+    - `DeleteAuditDatabase`
+    - `SwitchAuditDatabase`
+    - `DownloadAuditAgent`
+    - `DeleteAuditAgent`
+    - `StartAuditInstance`
+    - `StopAuditInstance`
+    - `RebootAuditInstance`
+    - `UpdateAuditInstance`
+    - `ListAuditAlarmLog`
+    - `ListAuditSqls`
+    - `ListAuditAgent`
+    - `AddAuditAgent`
+    - `DeleteInstances`
+    - `ListAuditInstances`
+    - `ListEcsSpecification`
+    - `ListAvailabilityZoneInfos`
+    - `ListAuditInstanceJobs`
+    - `ListAuditOperateLogs`
+    - `ListAuditRuleScopes`
+    - `CreateInstancesPeriodOrder`
+    - `ListAuditDatabases`
+  - **ListSqlInjectionRules**
+    - changes of request param
+      - `+ page`
+      - `+ size`
+  - **ListAuditRuleRisks**
+    - changes of response param
+      - `+ customize_total`
+  - **ListRdsDatabases**
+    - changes of request param
+      - `+ db_type: enum value [ORACLE,DAMENG,KINGBASE]`
+  - **ListAuditAlarmLog**
+    - changes of request param
+      - `+ time.time_range: enum value [HOUR,THREE_HOUR,TWELVE_HOUR,DAY,WEEK,MONTH]`
+      - `- time.time_range: enum value [ HOUR, THREE_HOUR, TWELVE_HOUR, DAY, WEEK, MONTH;]`
+      - `* risk: string -> list<string>`
+  - **ListAuditSqls**
+    - changes of request param
+      - `- risk_levels: enum value [HIGH,MEDIUM,LOW,NO_RISK]`
+  - **AddAuditAgent**
+    - changes of request param
+      - `- mode: enum value [0,1]`
+      - `- agent_type: enum value [APP,DB]`
+  - **ListAuditOperateLogs**
+    - changes of request param
+      - `- action: enum value [CREATE,DELETE,DOWNLOAD,UPDATE]`
+      - `- time.time_range: enum value [HALF_HOUR, HOUR, THREE_HOUR, TWELVE_HOUR, DAY, WEEK, MONTH]`
+  - **ListResourceInstanceByTag**
+    - changes of request param
+      - `* sys_tags: object<TagKeyValuesBean> -> list<TagKeyValuesBean>`
+  - **CountResourceInstanceByTag**
+    - changes of request param
+      - `* sys_tags: object<TagKeyValuesBean> -> list<TagKeyValuesBean>`
+
+### HuaweiCloud SDK DeH
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListDedicatedHostTags**
+    - changes of response param
+      - `+ tags.values`
+      - `- tags.value`
+
+### HuaweiCloud SDK ECS
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the APIs `ShowServerAttachableNicNum`, `ShowFlavorCapacity`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK eiHealth
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the following APIs:
+    - `ExecuteAssetAction`
+    - `ListStar`
+    - `UpdateStar`
+    - `DeleteStar`
+    - `QuoteInstance`
+    - `ListInstance`
+    - `CreateInstance`
+    - `ShowInstance`
+    - `DeleteInstance`
+    - `ListDatabaseData`
+    - `ImportDatabaseData`
+    - `CreateDatabaseData`
+    - `UpdateDatabaseData`
+    - `DeleteDatabaseData`
+    - `ImportTemplate`
+    - `UploadTemplate`
+    - `ListTemplate`
+    - `CreateTemplate`
+    - `ShowTemplate`
+    - `DeleteTemplate`
+    - `DeleteBackup`
+    - `ShowBackupPath`
+    - `RestoreBackup`
+    - `ListBackup`
+    - `CreateBackup`
+    - `SubscribeData`
+    - `ShowDataPolicy`
+    - `UpdateDataPolicy`
+    - `UpdateDataPathPolicy`
+    - `PublishData`
+    - `ListCheckpoint`
+    - `DownloadDataJobLog`
+    - `PublishImage`
+    - `BatchDeleteTag`
+    - `ListLabelPage`
+    - `CreateLabelPage`
+    - `DeleteLabelPage`
+    - `BatchDeleteMember`
+    - `ShowProjectTracker`
+    - `UpdateProjectTracker`
+    - `ShowProjectTrace`
+    - `ShowProjectTraceData`
+    - `DownloadDataTrace`
+    - `CreateStudy`
+    - `DeleteStudy`
+    - `ListStudyJob`
+    - `CreateStudyJob`
+    - `ListStudy`
+    - `ShowExtremumInfo`
+    - `Show3dStructureContent`
+    - `ListComputingResources`
+    - `CreateComputingResource`
+    - `DeleteComputingResource`
+    - `ShowLeftQuota`
+    - `ListComputingResourceFlavors`
+    - `StopNode`
+    - `RebootNode`
+    - `StartNode`
+    - `ShowSchedule`
+    - `UpdateSchedule`
+    - `ShowBmsDevices`
+    - `ShowEvsQuota`
+    - `ListDatabaseResourceFlavor`
+    - `DeleteDatabaseResource`
+    - `ListDatabaseResource`
+    - `CreateDatabaseResource`
+    - `ShowJobConfig`
+    - `UpdateJobConfig`
+    - `ListMessage`
+    - `ListMessageStatistics`
+    - `ShowMessageReceiveConfig`
+    - `UpdateMessageReceiveConfig`
+    - `CheckEmailConnection`
+    - `ShowMessageEmailConfig`
+    - `UpdateMessageEmailConfig`
+    - `DeleteMessageEmailConfig`
+    - `ShowMessageClearRule`
+    - `UpdateMessageClearRuleRequestBody`
+    - `ListNotice`
+    - `BatchDeleteNotice`
+    - `BatchUpdateNotice`
+    - `ListNodeLabel`
+    - `BatchUpdateNodeLabel`
+    - `ListPresetLabel`
+    - `ShowResourceMetricData`
+    - `BatchDownloadResourceStatData`
+    - `ListStorageResources`
+    - `ListArchiveConfigs`
+    - `UpdateArchiveConfig`
+    - `PublishApp`
+    - `ListAutoJob`
+    - `CreateAutoJob`
+    - `ShowAutoJob`
+    - `UpdateAutoJob`
+    - `DeleteAutoJob`
+    - `StartAutoJob`
+    - `StopAutoJob`
+    - `PublishWorkflow`
+    - `ListWorkflowStatistic`
+    - `CreateCpiTask`
+    - `ShowCpiTaskResult`
+    - `CreateGenerationTask`
+    - `ShowGenerationTaskResult`
+    - `CreateOptimizationTask`
+    - `ShowOptimizationTaskResult`
+    - `CreateSearchTask`
+    - `ShowSearchTaskResult`
+    - `CreateSynthesisTask`
+    - `ShowSynthesisTaskResult`
+    - `CreateCustomPropsTask`
+    - `ShowCustomPropsTaskResult`
+    - `ListScaleOutPolicy`
+    - `CreateScaleOutPolicy`
+    - `ShowScaleOutPolicy`
+    - `UpdateScaleOutPolicy`
+    - `DeleteScaleOutPolicy`
+    - `StartScaleOutPolicy`
+    - `StopScaleOutPolicy`
+    - `ShowScaleInPolicy`
+    - `UpdateScaleInPolicy`
+    - `ListNodes`
+    - `ListScalingHistory`
+    - `ListPolicyEvents`
+    - `InstallNextflow`
+    - `ShowNextflow`
+    - `UninstallNextflow`
+    - `CleanNextflowCache`
+    - `ListNextflowVersion`
+    - `ListNextflowJob`
+    - `CreateNextflowJob`
+    - `ShowNextflowJob`
+    - `DeleteNextflowJob`
+    - `RetryNextflowJob`
+    - `ShowNextflowJobLog`
+    - `StopNextflowJob`
+    - `ShowNextflowJobReports`
+    - `ListNextflowTask`
+    - `ShowNextflowTaskDetail`
+    - `ShowNextflowTaskLog`
+    - `ListNextflowWorkflow`
+    - `CreateNextflowWorkflow`
+    - `ShowNextflowWorkflow`
+    - `UpdateNextflowWorkflow`
+    - `DeleteNextflowWorkflow`
+    - `CreateSynthesisJob`
+    - `ShowSynthesisJob`
+    - `UpdateAssetVersion`
+    - `DeleteAssetVersion`
+
+### HuaweiCloud SDK FunctionGraph
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateFunction**
+    - changes of request param
+      - `* mount_config.mount_user.user_id: string -> int32`
+      - `* mount_config.mount_user.user_group_id: string -> int32`
+    - changes of response param
+      - `* mount_config.mount_user.user_id: string -> int32`
+      - `* mount_config.mount_user.user_group_id: string -> int32`
+  - **ShowFunctionConfig**
+    - changes of response param
+      - `* mount_config.mount_user.user_id: string -> int32`
+      - `* mount_config.mount_user.user_group_id: string -> int32`
+  - **UpdateFunctionConfig**
+    - changes of request param
+      - `* mount_config.mount_user.user_id: string -> int32`
+      - `* mount_config.mount_user.user_group_id: string -> int32`
+    - changes of response param
+      - `* mount_config.mount_user.user_id: string -> int32`
+      - `* mount_config.mount_user.user_group_id: string -> int32`
+  - **UpdateFunctionMaxInstanceConfig**
+    - changes of response param
+      - `* mount_config.mount_user.user_id: string -> int32`
+      - `* mount_config.mount_user.user_group_id: string -> int32`
+  - **UpdateFunctionAsyncInvokeConfig**
+    - changes of request param
+      - `+ log_group_id`
+      - `+ log_stream_id`
+      - `+ log_group_name`
+      - `+ log_stream_name`
+  - **CreateFunctionVersion**
+    - changes of response param
+      - `* mount_config.mount_user.user_id: string -> int32`
+      - `* mount_config.mount_user.user_group_id: string -> int32`
+
+### HuaweiCloud SDK GA
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the APIs `ListAllPops`, `ListTenantQuotas`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the following APIs:
+    - `UpdateRedistributionControl`
+    - `ListTopSqls`
+    - `ListSlowSqls`
+    - `ListSqlExcuteNodes`
+    - `ShowInstanceMetricData`
+    - `StopSession`
+    - `ListTableDefinitions`
+    - `ListEnhanceFullSqlStatistics`
+    - `ShowSessionOverview`
+    - `ListSessionStatistics`
+    - `ListTableDefinition`
+    - `ListHbaInfoHistory`
+    - `ListHbaInfos`
+    - `ModifyHbaConf`
+    - `AddHbaConfs`
+    - `DeleteHbaConfs`
+    - `ListReadonlyNodes`
+    - `CreateReadonlyNodes`
+    - `DeleteReadonlyNodes`
+    - `SwitchReplica`
+    - `ShowMetricNames`
+    - `ShowInstancesStatistics`
+    - `ListLtsConfigs`
+    - `BindLtsConfig`
+    - `UnbindLtsConfig`
+    - `ShowSlowSqlPlan`
+    - `ShowSlowSqlStack`
+    - `ListKeyViewExecuteNode`
+    - `ListSlowSqlDetails`
+    - `ListDatabaseSchemaTables`
+    - `RestoreHbaInfo`
+    - `ListDatabaseVolumeSummary`
+    - `ShowAlarmStatistics`
+    - `ListMetricDatas`
+    - `CollectWdrSnapshot`
+    - `ShowWdrSnapshotStatus`
+    - `SwitchWdrSnapshotStatus`
+    - `CreateWdrSnapshot`
+    - `StopFreeSession`
+    - `ListRealTimeSessions`
+    - `ShowGlobalSlowSqlDetail`
+    - `ListKmsTdeKey`
+    - `SwitchKmsTde`
+    - `ShowKmsKeyDetail`
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateDatabase**
+    - changes of request param
+      - `- x-auth-token`
+  - **ExportSlowSql**
+    - changes of request param
+      - `+ sort_key: enum value [table_size,id,table_name,table_owner,database_name,schema_name,is_part_type,is_hash_cluster_key,tuples,create_time,update_time,average_size,max_ratio,min_ratio,skew_size,skew_ratio,skew_stddev]`
+      - `+ sort_order: enum value [ASC,DESC]`
+  - **ListConfigurationsDiff**
+    - changes of request param
+      - `- x-auth-token`
+  - **ListDisasterRecoveryRecord**
+    - changes of response param
+      - `* records: list<RecordInfoResponse> -> list<RecordInfoResponseResult>`
+  - **ShowBatchUpgradeCandidateVersions**
+    - changes of response param
+      - `* hotfix_upgrade_infos: list<HotfixInfo> -> list<HotfixInfoResult>`
+
+### HuaweiCloud SDK IoTDM
+
+- _API Version_
+  - V5
+- _Features_
+  - Support the APIs `ListInstanceTasks`, `ShowInstanceTask`, `RetryInstanceTask`, `ListInstanceFlavors`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK MetaStudio
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the APIs `SignAgreement`, `SignSpecialAgreement`
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the following APIs:
+    - `ListAsrVocabulary`
+    - `CreateAsrVocabulary`
+    - `ShowAsrVocabulary`
+    - `UpdateAsrVocabulary`
+    - `DeleteAsrVocabulary`
+    - `ShowAsrVocabularyAssociation`
+
+### HuaweiCloud SDK ProjectMan
+
+- _API Version_
+  - V4
+- _Features_
+  - Support the following APIs:
+    - `ShowScrumIssueSeverities`
+    - `CreateScrumPlanToProject`
+    - `DeleteScrumPlanInProject`
+    - `ShowScrumPlansByCondition`
+    - `UpdateScrumPlanInProject`
+    - `ListIpdProjectIssues`
+    - `CreateIpdProjectIssue`
+    - `CreateIpdProjectIssueAttachment`
+    - `ShowIpdAttachmentByWorkItemId`
+    - `DownloadIpdIssueAttachment`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK SMN
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the following APIs:
+    - `ConfirmSubscription`
+    - `UnsubscribeSubscription`
+    - `ListProtocols`
+    - `ListCloudService`
+    - `DownloadHttpCert`
+    - `DeleteSubscriptionsByTopic`
+    - `BatchDeleteSubscriptions`
+    - `BatchDeleteSubscriptionsByTopic`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK SWR
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the API `DeleteInstanceTag`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowInstanceInternalEndpoint**
+    - changes of response param
+      - `* created_at: date-time -> string`
+  - **ListInstanceInternalEndpoints**
+    - changes of response param
+      - `* internal_endpoints.created_at: date-time -> string`
+  - **ListAuditLogs**
+    - changes of response param
+      - `* audit_logs.op_time: date-time -> string`
+  - **ListInstanceSignPolicyExecTasks**
+    - changes of response param
+      - `* tasks.created_at: date-time -> string`
+      - `* tasks.updated_at: date-time -> string`
+  - **ListInstanceSignatureExecutionSubtasks**
+    - changes of response param
+      - `* sub_tasks.created_at: date-time -> string`
+      - `* sub_tasks.updated_at: date-time -> string`
+  - **ShowInstanceArtifact**
+    - changes of response param
+      - `* tags.push_time: date-time -> string`
+      - `* tags.pull_time: date-time -> string`
+  - **ListInstanceAccessories**
+    - changes of response param
+      - `* accessories.created_at: date-time -> string`
+  - **ListInstanceArtifacts**
+    - changes of response param
+      - `* artifacts.tags.push_time: date-time -> string`
+      - `* artifacts.tags.pull_time: date-time -> string`
+  - **ListInstanceAllArtifacts**
+    - changes of response param
+      - `* artifacts.tags.push_time: date-time -> string`
+      - `* artifacts.tags.pull_time: date-time -> string`
+
+### HuaweiCloud SDK VPN
+
+- _API Version_
+  - V5
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdateVpnServer**
+    - changes of request param
+      - `+ vpn_server.idp_name`
+      - `+ vpn_server.client_auth_type: enum value [IAM,FEDERATED]`
+  - **CreateVpnServer**
+    - changes of request param
+      - `+ vpn_server.idp_name`
+      - `+ vpn_server.client_auth_type: enum value [IAM,FEDERATED]`
+  - **ListVpnServersByVgw**
+    - changes of response param
+      - `+ vpn_servers.idp_name`
+  - **ListVpnServersByProject**
+    - changes of response param
+      - `+ vpn_servers.idp_name`
+
 # 3.1.166 2025-09-04
 
 ### HuaweiCloud SDK AS

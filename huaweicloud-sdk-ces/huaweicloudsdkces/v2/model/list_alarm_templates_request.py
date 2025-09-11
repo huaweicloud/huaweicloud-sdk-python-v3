@@ -22,7 +22,8 @@ class ListAlarmTemplatesRequest:
         'namespace': 'str',
         'dim_name': 'str',
         'template_type': 'str',
-        'template_name': 'str'
+        'template_name': 'str',
+        'product_name': 'str'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class ListAlarmTemplatesRequest:
         'namespace': 'namespace',
         'dim_name': 'dim_name',
         'template_type': 'template_type',
-        'template_name': 'template_name'
+        'template_name': 'template_name',
+        'product_name': 'product_name'
     }
 
-    def __init__(self, offset=None, limit=None, namespace=None, dim_name=None, template_type=None, template_name=None):
+    def __init__(self, offset=None, limit=None, namespace=None, dim_name=None, template_type=None, template_name=None, product_name=None):
         r"""ListAlarmTemplatesRequest
 
         The model defined in huaweicloud sdk
@@ -45,12 +47,14 @@ class ListAlarmTemplatesRequest:
         :type limit: int
         :param namespace: 查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”
         :type namespace: str
-        :param dim_name: 资源维度，多维度用\&quot;,\&quot;分割，只能包含0-9、a-z、A-Z、_、-、#、/、(、），每个维度的最大长度为32。字符串总长度最小为1，最大为131。
+        :param dim_name: 资源维度，必须以字母开头，多维度用\&quot;,\&quot;分隔，只能包含0-9/a-z/A-Z/_/-，每个维度的最大长度为32
         :type dim_name: str
         :param template_type: 模板类型(system代表默认指标模板，custom代表自定义指标模板，system_event代表默认事件模板，custom_event代表自定义事件模板，system_custom_event代表全部事件模板),不传返回全部指标模板
         :type template_type: str
         :param template_name: 告警模板的名称，以字母或汉字开头，可包含字母、数字、汉字、_、-，长度范围[1,128]，支持模糊匹配
         :type template_name: str
+        :param product_name: 支持按照产品名称粒度进行查询告警模板，产品名称一般由\&quot;服务命名空间,服务首层维度名称\&quot;组成，如\&quot;SYS.ECS,instance_id\&quot;
+        :type product_name: str
         """
         
         
@@ -61,6 +65,7 @@ class ListAlarmTemplatesRequest:
         self._dim_name = None
         self._template_type = None
         self._template_name = None
+        self._product_name = None
         self.discriminator = None
 
         if offset is not None:
@@ -75,6 +80,8 @@ class ListAlarmTemplatesRequest:
             self.template_type = template_type
         if template_name is not None:
             self.template_name = template_name
+        if product_name is not None:
+            self.product_name = product_name
 
     @property
     def offset(self):
@@ -146,7 +153,7 @@ class ListAlarmTemplatesRequest:
     def dim_name(self):
         r"""Gets the dim_name of this ListAlarmTemplatesRequest.
 
-        资源维度，多维度用\",\"分割，只能包含0-9、a-z、A-Z、_、-、#、/、(、），每个维度的最大长度为32。字符串总长度最小为1，最大为131。
+        资源维度，必须以字母开头，多维度用\",\"分隔，只能包含0-9/a-z/A-Z/_/-，每个维度的最大长度为32
 
         :return: The dim_name of this ListAlarmTemplatesRequest.
         :rtype: str
@@ -157,7 +164,7 @@ class ListAlarmTemplatesRequest:
     def dim_name(self, dim_name):
         r"""Sets the dim_name of this ListAlarmTemplatesRequest.
 
-        资源维度，多维度用\",\"分割，只能包含0-9、a-z、A-Z、_、-、#、/、(、），每个维度的最大长度为32。字符串总长度最小为1，最大为131。
+        资源维度，必须以字母开头，多维度用\",\"分隔，只能包含0-9/a-z/A-Z/_/-，每个维度的最大长度为32
 
         :param dim_name: The dim_name of this ListAlarmTemplatesRequest.
         :type dim_name: str
@@ -207,6 +214,28 @@ class ListAlarmTemplatesRequest:
         :type template_name: str
         """
         self._template_name = template_name
+
+    @property
+    def product_name(self):
+        r"""Gets the product_name of this ListAlarmTemplatesRequest.
+
+        支持按照产品名称粒度进行查询告警模板，产品名称一般由\"服务命名空间,服务首层维度名称\"组成，如\"SYS.ECS,instance_id\"
+
+        :return: The product_name of this ListAlarmTemplatesRequest.
+        :rtype: str
+        """
+        return self._product_name
+
+    @product_name.setter
+    def product_name(self, product_name):
+        r"""Sets the product_name of this ListAlarmTemplatesRequest.
+
+        支持按照产品名称粒度进行查询告警模板，产品名称一般由\"服务命名空间,服务首层维度名称\"组成，如\"SYS.ECS,instance_id\"
+
+        :param product_name: The product_name of this ListAlarmTemplatesRequest.
+        :type product_name: str
+        """
+        self._product_name = product_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

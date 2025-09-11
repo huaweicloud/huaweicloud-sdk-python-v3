@@ -35,7 +35,7 @@ class ListInstanceAllArtifactsRequest:
 
         :param instance_id: 企业仓库实例ID
         :type instance_id: str
-        :param marker: 分页查询时的查询标记，使用上一次接口调用返回的nextMarker值。默认值为1。**注意：marker和limit参数需要配套使用。**
+        :param marker: 分页查询时的查询标记，使用上一次接口调用返回的next_marker值。默认值为1。**注意：marker和limit参数需要配套使用。**
         :type marker: int
         :param limit: 返回条数，默认为10，最大值为100。**注意：marker和limit参数需要配套使用。**
         :type limit: int
@@ -80,7 +80,7 @@ class ListInstanceAllArtifactsRequest:
     def marker(self):
         r"""Gets the marker of this ListInstanceAllArtifactsRequest.
 
-        分页查询时的查询标记，使用上一次接口调用返回的nextMarker值。默认值为1。**注意：marker和limit参数需要配套使用。**
+        分页查询时的查询标记，使用上一次接口调用返回的next_marker值。默认值为1。**注意：marker和limit参数需要配套使用。**
 
         :return: The marker of this ListInstanceAllArtifactsRequest.
         :rtype: int
@@ -91,7 +91,7 @@ class ListInstanceAllArtifactsRequest:
     def marker(self, marker):
         r"""Sets the marker of this ListInstanceAllArtifactsRequest.
 
-        分页查询时的查询标记，使用上一次接口调用返回的nextMarker值。默认值为1。**注意：marker和limit参数需要配套使用。**
+        分页查询时的查询标记，使用上一次接口调用返回的next_marker值。默认值为1。**注意：marker和limit参数需要配套使用。**
 
         :param marker: The marker of this ListInstanceAllArtifactsRequest.
         :type marker: int

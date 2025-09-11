@@ -37,7 +37,7 @@ class ShowInstanceWebhookRequest:
         :type instance_id: str
         :param namespace_name: 命名空间名称
         :type namespace_name: str
-        :param policy_id: 触发器策略ID
+        :param policy_id: 触发器ID
         :type policy_id: int
         """
         
@@ -100,7 +100,7 @@ class ShowInstanceWebhookRequest:
     def policy_id(self):
         r"""Gets the policy_id of this ShowInstanceWebhookRequest.
 
-        触发器策略ID
+        触发器ID
 
         :return: The policy_id of this ShowInstanceWebhookRequest.
         :rtype: int
@@ -111,7 +111,7 @@ class ShowInstanceWebhookRequest:
     def policy_id(self, policy_id):
         r"""Sets the policy_id of this ShowInstanceWebhookRequest.
 
-        触发器策略ID
+        触发器ID
 
         :param policy_id: The policy_id of this ShowInstanceWebhookRequest.
         :type policy_id: int

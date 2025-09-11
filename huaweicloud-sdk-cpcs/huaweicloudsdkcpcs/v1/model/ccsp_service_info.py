@@ -35,11 +35,11 @@ class CcspServiceInfo:
 
         The model defined in huaweicloud sdk
 
-        :param cluster_num: 当前租户拥有的专属密码服务集群数量
+        :param cluster_num: 当前租户拥有的密码服务集群数量
         :type cluster_num: int
-        :param instance_num: 当前租户拥有的专属密码服务实例数量
+        :param instance_num: 当前租户拥有的密码服务实例数量
         :type instance_num: int
-        :param instance_quota: 当前租户的可创建的专属密码服务实例配额数
+        :param instance_quota: 当前租户的可创建的密码服务实例配额数
         :type instance_quota: int
         :param instance_distribution: 
         :type instance_distribution: :class:`huaweicloudsdkcpcs.v1.InstanceDistribution`
@@ -62,7 +62,7 @@ class CcspServiceInfo:
     def cluster_num(self):
         r"""Gets the cluster_num of this CcspServiceInfo.
 
-        当前租户拥有的专属密码服务集群数量
+        当前租户拥有的密码服务集群数量
 
         :return: The cluster_num of this CcspServiceInfo.
         :rtype: int
@@ -73,7 +73,7 @@ class CcspServiceInfo:
     def cluster_num(self, cluster_num):
         r"""Sets the cluster_num of this CcspServiceInfo.
 
-        当前租户拥有的专属密码服务集群数量
+        当前租户拥有的密码服务集群数量
 
         :param cluster_num: The cluster_num of this CcspServiceInfo.
         :type cluster_num: int
@@ -84,7 +84,7 @@ class CcspServiceInfo:
     def instance_num(self):
         r"""Gets the instance_num of this CcspServiceInfo.
 
-        当前租户拥有的专属密码服务实例数量
+        当前租户拥有的密码服务实例数量
 
         :return: The instance_num of this CcspServiceInfo.
         :rtype: int
@@ -95,7 +95,7 @@ class CcspServiceInfo:
     def instance_num(self, instance_num):
         r"""Sets the instance_num of this CcspServiceInfo.
 
-        当前租户拥有的专属密码服务实例数量
+        当前租户拥有的密码服务实例数量
 
         :param instance_num: The instance_num of this CcspServiceInfo.
         :type instance_num: int
@@ -106,7 +106,7 @@ class CcspServiceInfo:
     def instance_quota(self):
         r"""Gets the instance_quota of this CcspServiceInfo.
 
-        当前租户的可创建的专属密码服务实例配额数
+        当前租户的可创建的密码服务实例配额数
 
         :return: The instance_quota of this CcspServiceInfo.
         :rtype: int
@@ -117,7 +117,7 @@ class CcspServiceInfo:
     def instance_quota(self, instance_quota):
         r"""Sets the instance_quota of this CcspServiceInfo.
 
-        当前租户的可创建的专属密码服务实例配额数
+        当前租户的可创建的密码服务实例配额数
 
         :param instance_quota: The instance_quota of this CcspServiceInfo.
         :type instance_quota: int

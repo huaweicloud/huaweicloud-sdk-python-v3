@@ -49,7 +49,7 @@ class UpdateWebhookPolicyRequestBody:
         :type scope_rules: list[:class:`huaweicloudsdkswr.v2.ScopeRule`]
         :param event_types: 触发器触发条件，当前支持PUSH_ARTIFACT
         :type event_types: list[str]
-        :param enabled: 是否使用
+        :param enabled: 是否启用
         :type enabled: bool
         """
         
@@ -186,7 +186,7 @@ class UpdateWebhookPolicyRequestBody:
     def enabled(self):
         r"""Gets the enabled of this UpdateWebhookPolicyRequestBody.
 
-        是否使用
+        是否启用
 
         :return: The enabled of this UpdateWebhookPolicyRequestBody.
         :rtype: bool
@@ -197,7 +197,7 @@ class UpdateWebhookPolicyRequestBody:
     def enabled(self, enabled):
         r"""Sets the enabled of this UpdateWebhookPolicyRequestBody.
 
-        是否使用
+        是否启用
 
         :param enabled: The enabled of this UpdateWebhookPolicyRequestBody.
         :type enabled: bool

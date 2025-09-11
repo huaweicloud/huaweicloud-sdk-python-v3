@@ -22,7 +22,7 @@ class AuditLog:
         'resource_type': 'str',
         'resource': 'str',
         'username': 'str',
-        'op_time': 'datetime'
+        'op_time': 'str'
     }
 
     attribute_map = {
@@ -39,7 +39,7 @@ class AuditLog:
 
         The model defined in huaweicloud sdk
 
-        :param id: audit log ID
+        :param id: Audit log ID
         :type id: int
         :param operation: 操作(e.g., create, update, delete)
         :type operation: str
@@ -50,7 +50,7 @@ class AuditLog:
         :param username: 用户ID
         :type username: str
         :param op_time: 操作时间
-        :type op_time: datetime
+        :type op_time: str
         """
         
         
@@ -80,7 +80,7 @@ class AuditLog:
     def id(self):
         r"""Gets the id of this AuditLog.
 
-        audit log ID
+        Audit log ID
 
         :return: The id of this AuditLog.
         :rtype: int
@@ -91,7 +91,7 @@ class AuditLog:
     def id(self, id):
         r"""Sets the id of this AuditLog.
 
-        audit log ID
+        Audit log ID
 
         :param id: The id of this AuditLog.
         :type id: int
@@ -193,7 +193,7 @@ class AuditLog:
         操作时间
 
         :return: The op_time of this AuditLog.
-        :rtype: datetime
+        :rtype: str
         """
         return self._op_time
 
@@ -204,7 +204,7 @@ class AuditLog:
         操作时间
 
         :param op_time: The op_time of this AuditLog.
-        :type op_time: datetime
+        :type op_time: str
         """
         self._op_time = op_time
 

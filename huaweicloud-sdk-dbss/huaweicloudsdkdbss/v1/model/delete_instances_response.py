@@ -30,7 +30,7 @@ class DeleteInstancesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param result: 响应状态
+        :param result: 操作结果  - success: 成功  - failed: 失败
         :type result: str
         """
         
@@ -46,7 +46,7 @@ class DeleteInstancesResponse(SdkResponse):
     def result(self):
         r"""Gets the result of this DeleteInstancesResponse.
 
-        响应状态
+        操作结果  - success: 成功  - failed: 失败
 
         :return: The result of this DeleteInstancesResponse.
         :rtype: str
@@ -57,7 +57,7 @@ class DeleteInstancesResponse(SdkResponse):
     def result(self, result):
         r"""Sets the result of this DeleteInstancesResponse.
 
-        响应状态
+        操作结果  - success: 成功  - failed: 失败
 
         :param result: The result of this DeleteInstancesResponse.
         :type result: str

@@ -18,7 +18,7 @@ class UpdateAlarmRulePoliciesRequest:
 
     openapi_types = {
         'alarm_id': 'str',
-        'body': 'PoliciesReqV2'
+        'body': 'UpdateAlarmRulePoliciesReqBodyV2'
     }
 
     attribute_map = {
@@ -31,10 +31,10 @@ class UpdateAlarmRulePoliciesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param alarm_id: Alarm实例ID
+        :param alarm_id: **参数解释**： 告警规则ID。 **约束限制**： 不涉及。 **取值范围**： 以al开头，只能由大写字母、小写字母、数字组成，且长度为24个字符。           **默认取值**： 不涉及。 
         :type alarm_id: str
         :param body: Body of the UpdateAlarmRulePoliciesRequest
-        :type body: :class:`huaweicloudsdkces.v2.PoliciesReqV2`
+        :type body: :class:`huaweicloudsdkces.v2.UpdateAlarmRulePoliciesReqBodyV2`
         """
         
         
@@ -51,7 +51,7 @@ class UpdateAlarmRulePoliciesRequest:
     def alarm_id(self):
         r"""Gets the alarm_id of this UpdateAlarmRulePoliciesRequest.
 
-        Alarm实例ID
+        **参数解释**： 告警规则ID。 **约束限制**： 不涉及。 **取值范围**： 以al开头，只能由大写字母、小写字母、数字组成，且长度为24个字符。           **默认取值**： 不涉及。 
 
         :return: The alarm_id of this UpdateAlarmRulePoliciesRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class UpdateAlarmRulePoliciesRequest:
     def alarm_id(self, alarm_id):
         r"""Sets the alarm_id of this UpdateAlarmRulePoliciesRequest.
 
-        Alarm实例ID
+        **参数解释**： 告警规则ID。 **约束限制**： 不涉及。 **取值范围**： 以al开头，只能由大写字母、小写字母、数字组成，且长度为24个字符。           **默认取值**： 不涉及。 
 
         :param alarm_id: The alarm_id of this UpdateAlarmRulePoliciesRequest.
         :type alarm_id: str
@@ -74,7 +74,7 @@ class UpdateAlarmRulePoliciesRequest:
         r"""Gets the body of this UpdateAlarmRulePoliciesRequest.
 
         :return: The body of this UpdateAlarmRulePoliciesRequest.
-        :rtype: :class:`huaweicloudsdkces.v2.PoliciesReqV2`
+        :rtype: :class:`huaweicloudsdkces.v2.UpdateAlarmRulePoliciesReqBodyV2`
         """
         return self._body
 
@@ -83,7 +83,7 @@ class UpdateAlarmRulePoliciesRequest:
         r"""Sets the body of this UpdateAlarmRulePoliciesRequest.
 
         :param body: The body of this UpdateAlarmRulePoliciesRequest.
-        :type body: :class:`huaweicloudsdkces.v2.PoliciesReqV2`
+        :type body: :class:`huaweicloudsdkces.v2.UpdateAlarmRulePoliciesReqBodyV2`
         """
         self._body = body
 

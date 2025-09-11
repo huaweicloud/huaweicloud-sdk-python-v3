@@ -29,7 +29,7 @@ class BatchDeleteOneClickAlarmsRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param one_click_alarm_ids: 需要批量删除的一键告警ID列表
+        :param one_click_alarm_ids: **参数解释**： 需要批量删除的一键告警ID列表。 **约束限制**： 一键告警ID数量最多为100个，至少1个。 
         :type one_click_alarm_ids: list[str]
         """
         
@@ -44,7 +44,7 @@ class BatchDeleteOneClickAlarmsRequestBody:
     def one_click_alarm_ids(self):
         r"""Gets the one_click_alarm_ids of this BatchDeleteOneClickAlarmsRequestBody.
 
-        需要批量删除的一键告警ID列表
+        **参数解释**： 需要批量删除的一键告警ID列表。 **约束限制**： 一键告警ID数量最多为100个，至少1个。 
 
         :return: The one_click_alarm_ids of this BatchDeleteOneClickAlarmsRequestBody.
         :rtype: list[str]
@@ -55,7 +55,7 @@ class BatchDeleteOneClickAlarmsRequestBody:
     def one_click_alarm_ids(self, one_click_alarm_ids):
         r"""Sets the one_click_alarm_ids of this BatchDeleteOneClickAlarmsRequestBody.
 
-        需要批量删除的一键告警ID列表
+        **参数解释**： 需要批量删除的一键告警ID列表。 **约束限制**： 一键告警ID数量最多为100个，至少1个。 
 
         :param one_click_alarm_ids: The one_click_alarm_ids of this BatchDeleteOneClickAlarmsRequestBody.
         :type one_click_alarm_ids: list[str]

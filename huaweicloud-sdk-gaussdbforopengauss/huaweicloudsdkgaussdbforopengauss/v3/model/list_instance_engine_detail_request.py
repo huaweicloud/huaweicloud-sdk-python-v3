@@ -33,7 +33,7 @@ class ListInstanceEngineDetailRequest:
 
         The model defined in huaweicloud sdk
 
-        :param x_language: 语言。
+        :param x_language: **参数解释**: 语言。 **约束限制**: 不涉及。 **取值范围**:   - zh-cn   - en-us  **默认取值**: en-us
         :type x_language: str
         :param offset: 索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
         :type offset: int
@@ -59,7 +59,7 @@ class ListInstanceEngineDetailRequest:
     def x_language(self):
         r"""Gets the x_language of this ListInstanceEngineDetailRequest.
 
-        语言。
+        **参数解释**: 语言。 **约束限制**: 不涉及。 **取值范围**:   - zh-cn   - en-us  **默认取值**: en-us
 
         :return: The x_language of this ListInstanceEngineDetailRequest.
         :rtype: str
@@ -70,7 +70,7 @@ class ListInstanceEngineDetailRequest:
     def x_language(self, x_language):
         r"""Sets the x_language of this ListInstanceEngineDetailRequest.
 
-        语言。
+        **参数解释**: 语言。 **约束限制**: 不涉及。 **取值范围**:   - zh-cn   - en-us  **默认取值**: en-us
 
         :param x_language: The x_language of this ListInstanceEngineDetailRequest.
         :type x_language: str

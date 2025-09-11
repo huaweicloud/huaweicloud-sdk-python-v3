@@ -39,17 +39,17 @@ class RemoteInstallHostInfo:
 
         The model defined in huaweicloud sdk
 
-        :param instance_name: 被远程安装的主机名称
+        :param instance_name: **参数解释**: 被远程安装的主机名称 **取值范围**: 数组长度范围为[1,128] 
         :type instance_name: str
-        :param remote_ip: 被远程安装的主机IP
+        :param remote_ip: **参数解释**: 被远程安装的主机IP **取值范围**: 仅由数字(0-9)和小数点(.)组成的字符串，字符串长度为[1,15] 
         :type remote_ip: str
-        :param user_name: 被远程安装的主机的登录用户名
+        :param user_name: **参数解释**: 被远程安装的主机的登录用户名 **取值范围**: 数组长度范围为[1,16] 
         :type user_name: str
-        :param port: 被远程安装的主机的登录端口
+        :param port: **参数解释**: 被远程安装的主机的登录端口 **取值范围**: 数组长度范围为[1,5] 
         :type port: str
-        :param password: 被远程安装的主机的登录密码
+        :param password: **参数解释**: 被远程安装的主机的登录密码 **取值范围**: 数组长度范围为[1,3000] 
         :type password: str
-        :param remote_use_pem: 被远程安装的主机远程连接是否采用秘钥方式（false时为密码方式）
+        :param remote_use_pem: **参数解释**: 被远程安装的主机远程连接是否采用密钥方式（false时为密码方式） **取值范围**: - false: 密码方式 - true: 密钥方式 
         :type remote_use_pem: bool
         """
         
@@ -80,7 +80,7 @@ class RemoteInstallHostInfo:
     def instance_name(self):
         r"""Gets the instance_name of this RemoteInstallHostInfo.
 
-        被远程安装的主机名称
+        **参数解释**: 被远程安装的主机名称 **取值范围**: 数组长度范围为[1,128] 
 
         :return: The instance_name of this RemoteInstallHostInfo.
         :rtype: str
@@ -91,7 +91,7 @@ class RemoteInstallHostInfo:
     def instance_name(self, instance_name):
         r"""Sets the instance_name of this RemoteInstallHostInfo.
 
-        被远程安装的主机名称
+        **参数解释**: 被远程安装的主机名称 **取值范围**: 数组长度范围为[1,128] 
 
         :param instance_name: The instance_name of this RemoteInstallHostInfo.
         :type instance_name: str
@@ -102,7 +102,7 @@ class RemoteInstallHostInfo:
     def remote_ip(self):
         r"""Gets the remote_ip of this RemoteInstallHostInfo.
 
-        被远程安装的主机IP
+        **参数解释**: 被远程安装的主机IP **取值范围**: 仅由数字(0-9)和小数点(.)组成的字符串，字符串长度为[1,15] 
 
         :return: The remote_ip of this RemoteInstallHostInfo.
         :rtype: str
@@ -113,7 +113,7 @@ class RemoteInstallHostInfo:
     def remote_ip(self, remote_ip):
         r"""Sets the remote_ip of this RemoteInstallHostInfo.
 
-        被远程安装的主机IP
+        **参数解释**: 被远程安装的主机IP **取值范围**: 仅由数字(0-9)和小数点(.)组成的字符串，字符串长度为[1,15] 
 
         :param remote_ip: The remote_ip of this RemoteInstallHostInfo.
         :type remote_ip: str
@@ -124,7 +124,7 @@ class RemoteInstallHostInfo:
     def user_name(self):
         r"""Gets the user_name of this RemoteInstallHostInfo.
 
-        被远程安装的主机的登录用户名
+        **参数解释**: 被远程安装的主机的登录用户名 **取值范围**: 数组长度范围为[1,16] 
 
         :return: The user_name of this RemoteInstallHostInfo.
         :rtype: str
@@ -135,7 +135,7 @@ class RemoteInstallHostInfo:
     def user_name(self, user_name):
         r"""Sets the user_name of this RemoteInstallHostInfo.
 
-        被远程安装的主机的登录用户名
+        **参数解释**: 被远程安装的主机的登录用户名 **取值范围**: 数组长度范围为[1,16] 
 
         :param user_name: The user_name of this RemoteInstallHostInfo.
         :type user_name: str
@@ -146,7 +146,7 @@ class RemoteInstallHostInfo:
     def port(self):
         r"""Gets the port of this RemoteInstallHostInfo.
 
-        被远程安装的主机的登录端口
+        **参数解释**: 被远程安装的主机的登录端口 **取值范围**: 数组长度范围为[1,5] 
 
         :return: The port of this RemoteInstallHostInfo.
         :rtype: str
@@ -157,7 +157,7 @@ class RemoteInstallHostInfo:
     def port(self, port):
         r"""Sets the port of this RemoteInstallHostInfo.
 
-        被远程安装的主机的登录端口
+        **参数解释**: 被远程安装的主机的登录端口 **取值范围**: 数组长度范围为[1,5] 
 
         :param port: The port of this RemoteInstallHostInfo.
         :type port: str
@@ -168,7 +168,7 @@ class RemoteInstallHostInfo:
     def password(self):
         r"""Gets the password of this RemoteInstallHostInfo.
 
-        被远程安装的主机的登录密码
+        **参数解释**: 被远程安装的主机的登录密码 **取值范围**: 数组长度范围为[1,3000] 
 
         :return: The password of this RemoteInstallHostInfo.
         :rtype: str
@@ -179,7 +179,7 @@ class RemoteInstallHostInfo:
     def password(self, password):
         r"""Sets the password of this RemoteInstallHostInfo.
 
-        被远程安装的主机的登录密码
+        **参数解释**: 被远程安装的主机的登录密码 **取值范围**: 数组长度范围为[1,3000] 
 
         :param password: The password of this RemoteInstallHostInfo.
         :type password: str
@@ -190,7 +190,7 @@ class RemoteInstallHostInfo:
     def remote_use_pem(self):
         r"""Gets the remote_use_pem of this RemoteInstallHostInfo.
 
-        被远程安装的主机远程连接是否采用秘钥方式（false时为密码方式）
+        **参数解释**: 被远程安装的主机远程连接是否采用密钥方式（false时为密码方式） **取值范围**: - false: 密码方式 - true: 密钥方式 
 
         :return: The remote_use_pem of this RemoteInstallHostInfo.
         :rtype: bool
@@ -201,7 +201,7 @@ class RemoteInstallHostInfo:
     def remote_use_pem(self, remote_use_pem):
         r"""Sets the remote_use_pem of this RemoteInstallHostInfo.
 
-        被远程安装的主机远程连接是否采用秘钥方式（false时为密码方式）
+        **参数解释**: 被远程安装的主机远程连接是否采用密钥方式（false时为密码方式） **取值范围**: - false: 密码方式 - true: 密钥方式 
 
         :param remote_use_pem: The remote_use_pem of this RemoteInstallHostInfo.
         :type remote_use_pem: bool

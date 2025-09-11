@@ -35,7 +35,7 @@ class ListRecycleInstancesDetailsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param x_language: 语言。默认值：en-us。
+        :param x_language: **参数解释**: 语言。 **约束限制**: 不涉及。 **取值范围**:   - zh-cn   - en-us  **默认取值**: en-us
         :type x_language: str
         :param instance_name: 实例名称。
         :type instance_name: str
@@ -66,7 +66,7 @@ class ListRecycleInstancesDetailsRequest:
     def x_language(self):
         r"""Gets the x_language of this ListRecycleInstancesDetailsRequest.
 
-        语言。默认值：en-us。
+        **参数解释**: 语言。 **约束限制**: 不涉及。 **取值范围**:   - zh-cn   - en-us  **默认取值**: en-us
 
         :return: The x_language of this ListRecycleInstancesDetailsRequest.
         :rtype: str
@@ -77,7 +77,7 @@ class ListRecycleInstancesDetailsRequest:
     def x_language(self, x_language):
         r"""Sets the x_language of this ListRecycleInstancesDetailsRequest.
 
-        语言。默认值：en-us。
+        **参数解释**: 语言。 **约束限制**: 不涉及。 **取值范围**:   - zh-cn   - en-us  **默认取值**: en-us
 
         :param x_language: The x_language of this ListRecycleInstancesDetailsRequest.
         :type x_language: str

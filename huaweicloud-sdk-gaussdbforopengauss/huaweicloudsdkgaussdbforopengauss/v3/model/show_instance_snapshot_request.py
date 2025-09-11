@@ -35,7 +35,7 @@ class ShowInstanceSnapshotRequest:
 
         The model defined in huaweicloud sdk
 
-        :param x_language: 语言。默认值：en-us。
+        :param x_language: **参数解释**: 语言。 **约束限制**: 不涉及。 **取值范围**:   - zh-cn   - en-us  **默认取值**: en-us
         :type x_language: str
         :param instance_id: 原实例ID。  (instance_id 、restore_time为一组)
         :type instance_id: str
@@ -66,7 +66,7 @@ class ShowInstanceSnapshotRequest:
     def x_language(self):
         r"""Gets the x_language of this ShowInstanceSnapshotRequest.
 
-        语言。默认值：en-us。
+        **参数解释**: 语言。 **约束限制**: 不涉及。 **取值范围**:   - zh-cn   - en-us  **默认取值**: en-us
 
         :return: The x_language of this ShowInstanceSnapshotRequest.
         :rtype: str
@@ -77,7 +77,7 @@ class ShowInstanceSnapshotRequest:
     def x_language(self, x_language):
         r"""Sets the x_language of this ShowInstanceSnapshotRequest.
 
-        语言。默认值：en-us。
+        **参数解释**: 语言。 **约束限制**: 不涉及。 **取值范围**:   - zh-cn   - en-us  **默认取值**: en-us
 
         :param x_language: The x_language of this ShowInstanceSnapshotRequest.
         :type x_language: str

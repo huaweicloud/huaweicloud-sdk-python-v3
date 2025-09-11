@@ -41,19 +41,19 @@ class ListAgentInvocationsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: 主机id
+        :param instance_id: **参数解释**: 主机id **约束限制**: 不涉及 **取值范围**: 1到64个字符的字符串，且只包含字母、数字和连字符 **默认取值**: 不涉及 
         :type instance_id: str
-        :param instance_type: 主机类型，ECS弹性云服务器，BMS裸金属服务器
+        :param instance_type: **参数解释**: 主机类型，仅支持ECS弹性云服务器和BMS裸金属服务器 **约束限制**: 不涉及 **取值范围**: - ECS: 弹性云服务器 - BMS：裸金属服务器 **默认取值**: 不涉及 
         :type instance_type: str
-        :param invocation_id: 任务id
+        :param invocation_id: **参数解释**: 任务id **约束限制**: 不涉及 **取值范围**: 以字母或数字开头，后续可包含字母、数字、下划线或连字符的字符串，长度至少为 1 **默认取值**: 不涉及 
         :type invocation_id: str
-        :param invocation_type: 任务类型, INSTALL安装, UPDATE升级, ROLLBACK回退，RETRY重试，SET_REMOTE_INSTALLER设置远程安装主机，REMOTE_INSTALL执行远程安装
+        :param invocation_type: **参数解释**: 任务类型, 仅包含：INSTALL安装, UPDATE升级, ROLLBACK回退，RETRY重试，SET_REMOTE_INSTALLER设置远程安装主机，REMOTE_INSTALL执行远程安装。 **约束限制**: 不涉及。 **取值范围**: - INSTALL：安装 - UPDATE：升级 - ROLLBACK：回退 - RETRY：重试 - SET_REMOTE_INSTALLER：设置远程安装主机 - REMOTE_INSTALL：执行远程安装 **默认取值**: 不涉及 
         :type invocation_type: str
-        :param invocation_target: 任务对象, 支持 telescope监控
+        :param invocation_target: **参数解释**: 任务对象, 支持telescope监控 **约束限制**: 不涉及。 **取值范围**: - telescope: 主机监控插件telescope **默认取值**: telescope。 
         :type invocation_target: str
-        :param offset: 分页偏移量
+        :param offset: **参数解释**: 分页偏移量 **约束限制**: 不涉及 **取值范围**: 数字范围为[0,9999999999999] **默认取值**: 0 
         :type offset: int
-        :param limit: 分页大小
+        :param limit: **参数解释**: 分页大小。 **约束限制**: 不涉及。 **取值范围**: 数字范围为[1,100] **默认取值**: 100 
         :type limit: int
         """
         
@@ -87,7 +87,7 @@ class ListAgentInvocationsRequest:
     def instance_id(self):
         r"""Gets the instance_id of this ListAgentInvocationsRequest.
 
-        主机id
+        **参数解释**: 主机id **约束限制**: 不涉及 **取值范围**: 1到64个字符的字符串，且只包含字母、数字和连字符 **默认取值**: 不涉及 
 
         :return: The instance_id of this ListAgentInvocationsRequest.
         :rtype: str
@@ -98,7 +98,7 @@ class ListAgentInvocationsRequest:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this ListAgentInvocationsRequest.
 
-        主机id
+        **参数解释**: 主机id **约束限制**: 不涉及 **取值范围**: 1到64个字符的字符串，且只包含字母、数字和连字符 **默认取值**: 不涉及 
 
         :param instance_id: The instance_id of this ListAgentInvocationsRequest.
         :type instance_id: str
@@ -109,7 +109,7 @@ class ListAgentInvocationsRequest:
     def instance_type(self):
         r"""Gets the instance_type of this ListAgentInvocationsRequest.
 
-        主机类型，ECS弹性云服务器，BMS裸金属服务器
+        **参数解释**: 主机类型，仅支持ECS弹性云服务器和BMS裸金属服务器 **约束限制**: 不涉及 **取值范围**: - ECS: 弹性云服务器 - BMS：裸金属服务器 **默认取值**: 不涉及 
 
         :return: The instance_type of this ListAgentInvocationsRequest.
         :rtype: str
@@ -120,7 +120,7 @@ class ListAgentInvocationsRequest:
     def instance_type(self, instance_type):
         r"""Sets the instance_type of this ListAgentInvocationsRequest.
 
-        主机类型，ECS弹性云服务器，BMS裸金属服务器
+        **参数解释**: 主机类型，仅支持ECS弹性云服务器和BMS裸金属服务器 **约束限制**: 不涉及 **取值范围**: - ECS: 弹性云服务器 - BMS：裸金属服务器 **默认取值**: 不涉及 
 
         :param instance_type: The instance_type of this ListAgentInvocationsRequest.
         :type instance_type: str
@@ -131,7 +131,7 @@ class ListAgentInvocationsRequest:
     def invocation_id(self):
         r"""Gets the invocation_id of this ListAgentInvocationsRequest.
 
-        任务id
+        **参数解释**: 任务id **约束限制**: 不涉及 **取值范围**: 以字母或数字开头，后续可包含字母、数字、下划线或连字符的字符串，长度至少为 1 **默认取值**: 不涉及 
 
         :return: The invocation_id of this ListAgentInvocationsRequest.
         :rtype: str
@@ -142,7 +142,7 @@ class ListAgentInvocationsRequest:
     def invocation_id(self, invocation_id):
         r"""Sets the invocation_id of this ListAgentInvocationsRequest.
 
-        任务id
+        **参数解释**: 任务id **约束限制**: 不涉及 **取值范围**: 以字母或数字开头，后续可包含字母、数字、下划线或连字符的字符串，长度至少为 1 **默认取值**: 不涉及 
 
         :param invocation_id: The invocation_id of this ListAgentInvocationsRequest.
         :type invocation_id: str
@@ -153,7 +153,7 @@ class ListAgentInvocationsRequest:
     def invocation_type(self):
         r"""Gets the invocation_type of this ListAgentInvocationsRequest.
 
-        任务类型, INSTALL安装, UPDATE升级, ROLLBACK回退，RETRY重试，SET_REMOTE_INSTALLER设置远程安装主机，REMOTE_INSTALL执行远程安装
+        **参数解释**: 任务类型, 仅包含：INSTALL安装, UPDATE升级, ROLLBACK回退，RETRY重试，SET_REMOTE_INSTALLER设置远程安装主机，REMOTE_INSTALL执行远程安装。 **约束限制**: 不涉及。 **取值范围**: - INSTALL：安装 - UPDATE：升级 - ROLLBACK：回退 - RETRY：重试 - SET_REMOTE_INSTALLER：设置远程安装主机 - REMOTE_INSTALL：执行远程安装 **默认取值**: 不涉及 
 
         :return: The invocation_type of this ListAgentInvocationsRequest.
         :rtype: str
@@ -164,7 +164,7 @@ class ListAgentInvocationsRequest:
     def invocation_type(self, invocation_type):
         r"""Sets the invocation_type of this ListAgentInvocationsRequest.
 
-        任务类型, INSTALL安装, UPDATE升级, ROLLBACK回退，RETRY重试，SET_REMOTE_INSTALLER设置远程安装主机，REMOTE_INSTALL执行远程安装
+        **参数解释**: 任务类型, 仅包含：INSTALL安装, UPDATE升级, ROLLBACK回退，RETRY重试，SET_REMOTE_INSTALLER设置远程安装主机，REMOTE_INSTALL执行远程安装。 **约束限制**: 不涉及。 **取值范围**: - INSTALL：安装 - UPDATE：升级 - ROLLBACK：回退 - RETRY：重试 - SET_REMOTE_INSTALLER：设置远程安装主机 - REMOTE_INSTALL：执行远程安装 **默认取值**: 不涉及 
 
         :param invocation_type: The invocation_type of this ListAgentInvocationsRequest.
         :type invocation_type: str
@@ -175,7 +175,7 @@ class ListAgentInvocationsRequest:
     def invocation_target(self):
         r"""Gets the invocation_target of this ListAgentInvocationsRequest.
 
-        任务对象, 支持 telescope监控
+        **参数解释**: 任务对象, 支持telescope监控 **约束限制**: 不涉及。 **取值范围**: - telescope: 主机监控插件telescope **默认取值**: telescope。 
 
         :return: The invocation_target of this ListAgentInvocationsRequest.
         :rtype: str
@@ -186,7 +186,7 @@ class ListAgentInvocationsRequest:
     def invocation_target(self, invocation_target):
         r"""Sets the invocation_target of this ListAgentInvocationsRequest.
 
-        任务对象, 支持 telescope监控
+        **参数解释**: 任务对象, 支持telescope监控 **约束限制**: 不涉及。 **取值范围**: - telescope: 主机监控插件telescope **默认取值**: telescope。 
 
         :param invocation_target: The invocation_target of this ListAgentInvocationsRequest.
         :type invocation_target: str
@@ -197,7 +197,7 @@ class ListAgentInvocationsRequest:
     def offset(self):
         r"""Gets the offset of this ListAgentInvocationsRequest.
 
-        分页偏移量
+        **参数解释**: 分页偏移量 **约束限制**: 不涉及 **取值范围**: 数字范围为[0,9999999999999] **默认取值**: 0 
 
         :return: The offset of this ListAgentInvocationsRequest.
         :rtype: int
@@ -208,7 +208,7 @@ class ListAgentInvocationsRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListAgentInvocationsRequest.
 
-        分页偏移量
+        **参数解释**: 分页偏移量 **约束限制**: 不涉及 **取值范围**: 数字范围为[0,9999999999999] **默认取值**: 0 
 
         :param offset: The offset of this ListAgentInvocationsRequest.
         :type offset: int
@@ -219,7 +219,7 @@ class ListAgentInvocationsRequest:
     def limit(self):
         r"""Gets the limit of this ListAgentInvocationsRequest.
 
-        分页大小
+        **参数解释**: 分页大小。 **约束限制**: 不涉及。 **取值范围**: 数字范围为[1,100] **默认取值**: 100 
 
         :return: The limit of this ListAgentInvocationsRequest.
         :rtype: int
@@ -230,7 +230,7 @@ class ListAgentInvocationsRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListAgentInvocationsRequest.
 
-        分页大小
+        **参数解释**: 分页大小。 **约束限制**: 不涉及。 **取值范围**: 数字范围为[1,100] **默认取值**: 100 
 
         :param limit: The limit of this ListAgentInvocationsRequest.
         :type limit: int

@@ -42,13 +42,13 @@ class ShowAlarmTemplateResponse(SdkResponse):
 
         :param template_id: 告警模板的ID，以at开头，后跟字母、数字，长度最长为64
         :type template_id: str
-        :param template_name: 告警模板的名称，以字母或汉字开头，可包含字母、数字、汉字、_、-，长度范围[1,128]
+        :param template_name: **参数解释**： 告警模板的名称。 **约束限制**： 不涉及。 **取值范围**： 以字母或汉字开头，可包含字母、数字、汉字、_、-，长度为[1,128]个字符。           **默认取值**： 不涉及。 
         :type template_name: str
         :param template_type: 
         :type template_type: :class:`huaweicloudsdkces.v2.TemplateType`
         :param create_time: 告警模板的创建时间
         :type create_time: datetime
-        :param template_description: 告警模板的描述，长度范围[0,256]，该字段默认值为空字符串
+        :param template_description: **参数解释**： 告警模板的描述     **约束限制**： 不涉及。 **取值范围**： 长度范围[0,256]。          **默认取值**： 空字符串。 
         :type template_description: str
         :param policies: 告警模板策略列表
         :type policies: list[:class:`huaweicloudsdkces.v2.AlarmTemplatePolicies`]
@@ -103,7 +103,7 @@ class ShowAlarmTemplateResponse(SdkResponse):
     def template_name(self):
         r"""Gets the template_name of this ShowAlarmTemplateResponse.
 
-        告警模板的名称，以字母或汉字开头，可包含字母、数字、汉字、_、-，长度范围[1,128]
+        **参数解释**： 告警模板的名称。 **约束限制**： 不涉及。 **取值范围**： 以字母或汉字开头，可包含字母、数字、汉字、_、-，长度为[1,128]个字符。           **默认取值**： 不涉及。 
 
         :return: The template_name of this ShowAlarmTemplateResponse.
         :rtype: str
@@ -114,7 +114,7 @@ class ShowAlarmTemplateResponse(SdkResponse):
     def template_name(self, template_name):
         r"""Sets the template_name of this ShowAlarmTemplateResponse.
 
-        告警模板的名称，以字母或汉字开头，可包含字母、数字、汉字、_、-，长度范围[1,128]
+        **参数解释**： 告警模板的名称。 **约束限制**： 不涉及。 **取值范围**： 以字母或汉字开头，可包含字母、数字、汉字、_、-，长度为[1,128]个字符。           **默认取值**： 不涉及。 
 
         :param template_name: The template_name of this ShowAlarmTemplateResponse.
         :type template_name: str
@@ -165,7 +165,7 @@ class ShowAlarmTemplateResponse(SdkResponse):
     def template_description(self):
         r"""Gets the template_description of this ShowAlarmTemplateResponse.
 
-        告警模板的描述，长度范围[0,256]，该字段默认值为空字符串
+        **参数解释**： 告警模板的描述     **约束限制**： 不涉及。 **取值范围**： 长度范围[0,256]。          **默认取值**： 空字符串。 
 
         :return: The template_description of this ShowAlarmTemplateResponse.
         :rtype: str
@@ -176,7 +176,7 @@ class ShowAlarmTemplateResponse(SdkResponse):
     def template_description(self, template_description):
         r"""Sets the template_description of this ShowAlarmTemplateResponse.
 
-        告警模板的描述，长度范围[0,256]，该字段默认值为空字符串
+        **参数解释**： 告警模板的描述     **约束限制**： 不涉及。 **取值范围**： 长度范围[0,256]。          **默认取值**： 空字符串。 
 
         :param template_description: The template_description of this ShowAlarmTemplateResponse.
         :type template_description: str

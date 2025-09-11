@@ -32,9 +32,9 @@ class ListInstanceWebhooksResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param policies: 触发器策略列表
+        :param policies: 触发器列表
         :type policies: list[:class:`huaweicloudsdkswr.v2.WebhookPolicyDetail`]
-        :param total: 触发器策略总数
+        :param total: 触发器总数
         :type total: int
         """
         
@@ -53,7 +53,7 @@ class ListInstanceWebhooksResponse(SdkResponse):
     def policies(self):
         r"""Gets the policies of this ListInstanceWebhooksResponse.
 
-        触发器策略列表
+        触发器列表
 
         :return: The policies of this ListInstanceWebhooksResponse.
         :rtype: list[:class:`huaweicloudsdkswr.v2.WebhookPolicyDetail`]
@@ -64,7 +64,7 @@ class ListInstanceWebhooksResponse(SdkResponse):
     def policies(self, policies):
         r"""Sets the policies of this ListInstanceWebhooksResponse.
 
-        触发器策略列表
+        触发器列表
 
         :param policies: The policies of this ListInstanceWebhooksResponse.
         :type policies: list[:class:`huaweicloudsdkswr.v2.WebhookPolicyDetail`]
@@ -75,7 +75,7 @@ class ListInstanceWebhooksResponse(SdkResponse):
     def total(self):
         r"""Gets the total of this ListInstanceWebhooksResponse.
 
-        触发器策略总数
+        触发器总数
 
         :return: The total of this ListInstanceWebhooksResponse.
         :rtype: int
@@ -86,7 +86,7 @@ class ListInstanceWebhooksResponse(SdkResponse):
     def total(self, total):
         r"""Sets the total of this ListInstanceWebhooksResponse.
 
-        触发器策略总数
+        触发器总数
 
         :param total: The total of this ListInstanceWebhooksResponse.
         :type total: int

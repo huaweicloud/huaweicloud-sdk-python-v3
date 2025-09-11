@@ -16,6 +16,8 @@ class CcmRegion:
                         "https://ccm.eu-west-101.myhuaweicloud.com")
     RU_MOSCOW_1 = Region("ru-moscow-1",
                         "https://ccm.ru-moscow-1.myhuaweicloud.com")
+    MY_KUALALUMPUR_1 = Region("my-kualalumpur-1",
+                        "https://ccm.my-kualalumpur-1.myhuaweicloud.com")
 
     static_fields = {
         "cn-north-4": CN_NORTH_4,
@@ -23,6 +25,7 @@ class CcmRegion:
         "sa-brazil-1": SA_BRAZIL_1,
         "eu-west-101": EU_WEST_101,
         "ru-moscow-1": RU_MOSCOW_1,
+        "my-kualalumpur-1": MY_KUALALUMPUR_1,
     }
 
     @classmethod

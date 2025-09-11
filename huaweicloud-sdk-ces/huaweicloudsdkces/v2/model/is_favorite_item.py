@@ -29,7 +29,7 @@ class IsFavoriteItem:
 
         The model defined in huaweicloud sdk
 
-        :param is_favorite: 监控看板是否标记收藏, true: 收藏, false: 未收藏
+        :param is_favorite: **参数解释** 监控看板是否标记收藏 **取值范围** - true: 收藏, - false: 未收藏 
         :type is_favorite: bool
         """
         
@@ -45,7 +45,7 @@ class IsFavoriteItem:
     def is_favorite(self):
         r"""Gets the is_favorite of this IsFavoriteItem.
 
-        监控看板是否标记收藏, true: 收藏, false: 未收藏
+        **参数解释** 监控看板是否标记收藏 **取值范围** - true: 收藏, - false: 未收藏 
 
         :return: The is_favorite of this IsFavoriteItem.
         :rtype: bool
@@ -56,7 +56,7 @@ class IsFavoriteItem:
     def is_favorite(self, is_favorite):
         r"""Sets the is_favorite of this IsFavoriteItem.
 
-        监控看板是否标记收藏, true: 收藏, false: 未收藏
+        **参数解释** 监控看板是否标记收藏 **取值范围** - true: 收藏, - false: 未收藏 
 
         :param is_favorite: The is_favorite of this IsFavoriteItem.
         :type is_favorite: bool

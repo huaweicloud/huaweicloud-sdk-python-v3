@@ -31,9 +31,9 @@ class DatabaseSchemaTableResult:
 
         The model defined in huaweicloud sdk
 
-        :param table_name: 表名称
+        :param table_name: **参数解释**: 表名称。 **取值范围**: 不涉及。
         :type table_name: str
-        :param schema_name: schema名称
+        :param schema_name: **参数解释**: schema名称。 **取值范围**: 不涉及。
         :type schema_name: str
         """
         
@@ -52,7 +52,7 @@ class DatabaseSchemaTableResult:
     def table_name(self):
         r"""Gets the table_name of this DatabaseSchemaTableResult.
 
-        表名称
+        **参数解释**: 表名称。 **取值范围**: 不涉及。
 
         :return: The table_name of this DatabaseSchemaTableResult.
         :rtype: str
@@ -63,7 +63,7 @@ class DatabaseSchemaTableResult:
     def table_name(self, table_name):
         r"""Sets the table_name of this DatabaseSchemaTableResult.
 
-        表名称
+        **参数解释**: 表名称。 **取值范围**: 不涉及。
 
         :param table_name: The table_name of this DatabaseSchemaTableResult.
         :type table_name: str
@@ -74,7 +74,7 @@ class DatabaseSchemaTableResult:
     def schema_name(self):
         r"""Gets the schema_name of this DatabaseSchemaTableResult.
 
-        schema名称
+        **参数解释**: schema名称。 **取值范围**: 不涉及。
 
         :return: The schema_name of this DatabaseSchemaTableResult.
         :rtype: str
@@ -85,7 +85,7 @@ class DatabaseSchemaTableResult:
     def schema_name(self, schema_name):
         r"""Sets the schema_name of this DatabaseSchemaTableResult.
 
-        schema名称
+        **参数解释**: schema名称。 **取值范围**: 不涉及。
 
         :param schema_name: The schema_name of this DatabaseSchemaTableResult.
         :type schema_name: str

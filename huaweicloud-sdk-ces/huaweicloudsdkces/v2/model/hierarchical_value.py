@@ -35,13 +35,13 @@ class HierarchicalValue:
 
         The model defined in huaweicloud sdk
 
-        :param critical: 紧急级别的阈值
+        :param critical: **参数解释**： 紧急级别的阈值。 **约束限制**： 不涉及。 **取值范围**： [-1.7976931348623157e+108, 1.7976931348623157e+108]           **默认取值**： 不涉及。 
         :type critical: float
-        :param major: 重要级别的阈值
+        :param major: **参数解释**： 重要级别的阈值。 **约束限制**： 不涉及。 **取值范围**： [-1.7976931348623157e+108, 1.7976931348623157e+108]           **默认取值**： 不涉及。 
         :type major: float
-        :param minor: 次要级别的阈值
+        :param minor: **参数解释**： 次要级别的阈值。 **约束限制**： 不涉及。 **取值范围**： [-1.7976931348623157e+108, 1.7976931348623157e+108]           **默认取值**： 不涉及。 
         :type minor: float
-        :param info: 提示级别的阈值
+        :param info: **参数解释**： 提示级别的阈值。 **约束限制**： 不涉及。 **取值范围**： [-1.7976931348623157e+108, 1.7976931348623157e+108]           **默认取值**： 不涉及。 
         :type info: float
         """
         
@@ -66,7 +66,7 @@ class HierarchicalValue:
     def critical(self):
         r"""Gets the critical of this HierarchicalValue.
 
-        紧急级别的阈值
+        **参数解释**： 紧急级别的阈值。 **约束限制**： 不涉及。 **取值范围**： [-1.7976931348623157e+108, 1.7976931348623157e+108]           **默认取值**： 不涉及。 
 
         :return: The critical of this HierarchicalValue.
         :rtype: float
@@ -77,7 +77,7 @@ class HierarchicalValue:
     def critical(self, critical):
         r"""Sets the critical of this HierarchicalValue.
 
-        紧急级别的阈值
+        **参数解释**： 紧急级别的阈值。 **约束限制**： 不涉及。 **取值范围**： [-1.7976931348623157e+108, 1.7976931348623157e+108]           **默认取值**： 不涉及。 
 
         :param critical: The critical of this HierarchicalValue.
         :type critical: float
@@ -88,7 +88,7 @@ class HierarchicalValue:
     def major(self):
         r"""Gets the major of this HierarchicalValue.
 
-        重要级别的阈值
+        **参数解释**： 重要级别的阈值。 **约束限制**： 不涉及。 **取值范围**： [-1.7976931348623157e+108, 1.7976931348623157e+108]           **默认取值**： 不涉及。 
 
         :return: The major of this HierarchicalValue.
         :rtype: float
@@ -99,7 +99,7 @@ class HierarchicalValue:
     def major(self, major):
         r"""Sets the major of this HierarchicalValue.
 
-        重要级别的阈值
+        **参数解释**： 重要级别的阈值。 **约束限制**： 不涉及。 **取值范围**： [-1.7976931348623157e+108, 1.7976931348623157e+108]           **默认取值**： 不涉及。 
 
         :param major: The major of this HierarchicalValue.
         :type major: float
@@ -110,7 +110,7 @@ class HierarchicalValue:
     def minor(self):
         r"""Gets the minor of this HierarchicalValue.
 
-        次要级别的阈值
+        **参数解释**： 次要级别的阈值。 **约束限制**： 不涉及。 **取值范围**： [-1.7976931348623157e+108, 1.7976931348623157e+108]           **默认取值**： 不涉及。 
 
         :return: The minor of this HierarchicalValue.
         :rtype: float
@@ -121,7 +121,7 @@ class HierarchicalValue:
     def minor(self, minor):
         r"""Sets the minor of this HierarchicalValue.
 
-        次要级别的阈值
+        **参数解释**： 次要级别的阈值。 **约束限制**： 不涉及。 **取值范围**： [-1.7976931348623157e+108, 1.7976931348623157e+108]           **默认取值**： 不涉及。 
 
         :param minor: The minor of this HierarchicalValue.
         :type minor: float
@@ -132,7 +132,7 @@ class HierarchicalValue:
     def info(self):
         r"""Gets the info of this HierarchicalValue.
 
-        提示级别的阈值
+        **参数解释**： 提示级别的阈值。 **约束限制**： 不涉及。 **取值范围**： [-1.7976931348623157e+108, 1.7976931348623157e+108]           **默认取值**： 不涉及。 
 
         :return: The info of this HierarchicalValue.
         :rtype: float
@@ -143,7 +143,7 @@ class HierarchicalValue:
     def info(self, info):
         r"""Sets the info of this HierarchicalValue.
 
-        提示级别的阈值
+        **参数解释**： 提示级别的阈值。 **约束限制**： 不涉及。 **取值范围**： [-1.7976931348623157e+108, 1.7976931348623157e+108]           **默认取值**： 不涉及。 
 
         :param info: The info of this HierarchicalValue.
         :type info: float

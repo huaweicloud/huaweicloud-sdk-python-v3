@@ -18,7 +18,7 @@ class ListAlarmRulesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'alarms': 'list[ListAlarmResponseAlarms]',
+        'alarms': 'list[ListAlarmRespBodyAlarms]',
         'count': 'int'
     }
 
@@ -32,9 +32,9 @@ class ListAlarmRulesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param alarms: 告警规则列表
-        :type alarms: list[:class:`huaweicloudsdkces.v2.ListAlarmResponseAlarms`]
-        :param count: 告警规则总数
+        :param alarms: **参数解释**： 告警规则列表。 **取值范围**： 长度为[1,100]个字符。 
+        :type alarms: list[:class:`huaweicloudsdkces.v2.ListAlarmRespBodyAlarms`]
+        :param count: **参数解释**： 告警规则总数。 **取值范围**： [0,10000] 
         :type count: int
         """
         
@@ -53,10 +53,10 @@ class ListAlarmRulesResponse(SdkResponse):
     def alarms(self):
         r"""Gets the alarms of this ListAlarmRulesResponse.
 
-        告警规则列表
+        **参数解释**： 告警规则列表。 **取值范围**： 长度为[1,100]个字符。 
 
         :return: The alarms of this ListAlarmRulesResponse.
-        :rtype: list[:class:`huaweicloudsdkces.v2.ListAlarmResponseAlarms`]
+        :rtype: list[:class:`huaweicloudsdkces.v2.ListAlarmRespBodyAlarms`]
         """
         return self._alarms
 
@@ -64,10 +64,10 @@ class ListAlarmRulesResponse(SdkResponse):
     def alarms(self, alarms):
         r"""Sets the alarms of this ListAlarmRulesResponse.
 
-        告警规则列表
+        **参数解释**： 告警规则列表。 **取值范围**： 长度为[1,100]个字符。 
 
         :param alarms: The alarms of this ListAlarmRulesResponse.
-        :type alarms: list[:class:`huaweicloudsdkces.v2.ListAlarmResponseAlarms`]
+        :type alarms: list[:class:`huaweicloudsdkces.v2.ListAlarmRespBodyAlarms`]
         """
         self._alarms = alarms
 
@@ -75,7 +75,7 @@ class ListAlarmRulesResponse(SdkResponse):
     def count(self):
         r"""Gets the count of this ListAlarmRulesResponse.
 
-        告警规则总数
+        **参数解释**： 告警规则总数。 **取值范围**： [0,10000] 
 
         :return: The count of this ListAlarmRulesResponse.
         :rtype: int
@@ -86,7 +86,7 @@ class ListAlarmRulesResponse(SdkResponse):
     def count(self, count):
         r"""Sets the count of this ListAlarmRulesResponse.
 
-        告警规则总数
+        **参数解释**： 告警规则总数。 **取值范围**： [0,10000] 
 
         :param count: The count of this ListAlarmRulesResponse.
         :type count: int
