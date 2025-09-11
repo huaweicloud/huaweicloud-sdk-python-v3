@@ -25,10 +25,10 @@ jobs:
           cd "${each}" || exit 1
           if [ -f "pyproject.toml" ]; then
             python -m build --wheel --no-isolation
+            cp dist/*.whl "${GITHUB_WORKSPACE}"
           else
-            echo "python build failed for ${each}, pyproject.toml not found" || exit 1
+            echo "::warning::pyproject.toml not found for ${each}, skip build"
           fi
-          cp dist/*.whl "${GITHUB_WORKSPACE}"
         done
       shell: bash
     - name: Publish packages
